@@ -98,7 +98,7 @@ const config: Config = {
           items: [ { to: '/docs/charlie-kirk', label: 'Charlie Kirk', position: 'left' } ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} ACT 3 AI, Inc. All rights reserved.`,
     },
     prism: {
       theme: prismThemes.github,
