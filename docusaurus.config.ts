@@ -41,27 +41,14 @@ const config: Config = {
       'classic',
       {
         docs: {
+          routeBasePath: '/',
           sidebarPath: './sidebars.ts',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
             'https://github.com/ACT3ai/hollywood-whitepaper',
         },
-        blog: {
-          showReadingTime: true,
-          feedOptions: {
-            type: ['rss', 'atom'],
-            xslt: true,
-          },
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/ACT3ai/hollywood-whitepaper',
-          // Useful options to enforce blogging best practices
-          onInlineTags: 'warn',
-          onInlineAuthors: 'warn',
-          onUntruncatedBlogPosts: 'warn',
-        },
+        blog: false,
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -81,24 +68,10 @@ const config: Config = {
         alt: 'My Site Logo',
         src: 'img/logo.svg',
       },
-      items: [ { to: '/docs/charlie-kirk', label: 'Charlie Kirk', position: 'left' } ],
+      items: [ { to: '/', label: 'Charlie Kirk', position: 'left' } ],
     },
     footer: {
       style: 'dark',
-      links: [
-        {
-          title: 'Docs',
-          items: [ { to: '/docs/charlie-kirk', label: 'Charlie Kirk', position: 'left' } ],
-        },
-        {
-          title: 'Community',
-          items: [ { to: '/docs/charlie-kirk', label: 'Charlie Kirk', position: 'left' } ],
-        },
-        {
-          title: 'More',
-          items: [ { to: '/docs/charlie-kirk', label: 'Charlie Kirk', position: 'left' } ],
-        },
-      ],
       copyright: `Copyright © ${new Date().getFullYear()} ACT 3 AI, Inc. All rights reserved.`,
     },
     prism: {
