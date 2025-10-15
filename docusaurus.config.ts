@@ -48,7 +48,10 @@ const config: Config = {
           editUrl:
             'https://github.com/ACT3ai/hollywood-whitepaper',
         },
-        blog: false,
+        blog: {
+          showReadingTime: true,
+          editUrl: 'https://github.com/ACT3ai/charlie-kirk',
+        },
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -68,7 +71,11 @@ const config: Config = {
         alt: 'My Site Logo',
         src: 'img/logo.svg',
       },
-      items: [ { to: '/', label: 'Charlie Kirk', position: 'left' } ],
+      items: [
+        { to: '/', label: 'Charlie Kirk', position: 'left' },
+        { to: '/topics', label: 'Topics', position: 'left' },
+        { to: '/blog', label: 'Blog', position: 'left' },
+      ],
     },
     footer: {
       style: 'dark',
