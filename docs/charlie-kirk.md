@@ -40,7 +40,6 @@ Minimal placeholder content to bootstrap the site.
 ### Theories & Groups
 - [Conspiracy Theories](/conspiracy_theories/overview) - Various conspiracy theories and analysis
 - [Organizations & Groups](/organizations_groups/overview) - Related organizations and groups
-- [Social Media Companies](/social_media_companies/overview) - Platform responses and policies
 
 ### Locations & Other
 - [Property & Locations](/property_locations/overview) - Physical locations and properties

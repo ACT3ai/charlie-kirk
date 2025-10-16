@@ -51,7 +51,6 @@ const sidebars: SidebarsConfig = {
           items: [
             'conspiracy_theories/overview',
             'organizations_groups/overview',
-            'social_media_companies/overview',
           ],
         },
         {

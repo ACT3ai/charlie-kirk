@@ -58,7 +58,6 @@ This section represents ongoing analysis of social media response to the Charlie
 
 ## Related Sections
 
-- [Social Media Companies](../social_media_companies/overview.md) - Social media company analysis
 - [Media Response](../media_response/overview.md) - Related media response analysis
 - [Timeline Events](../timeline_events/overview.md) - Related timeline analysis
 

@@ -12,7 +12,6 @@ The Security and Law Enforcement section contains comprehensive analysis and doc
 
 ### Enforcement Actions
 - [Visa Revocation Celebrations](visa_revocation_celebrations.md) - Visa revocation celebrations analysis
-- [Online Celebration Crackdown](online_celebration_crackdown.md) - Online celebration crackdown analysis
 
 ## Key Areas of Investigation
 

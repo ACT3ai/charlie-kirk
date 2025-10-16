@@ -39,7 +39,6 @@ This section represents ongoing analysis of technology and surveillance aspects 
 
 ## Related Sections
 
-- [Social Media Companies](../social_media_companies/overview.md) - Digital platform analysis
 - [Government Organizations](../government_organizations/overview.md) - Government surveillance analysis
 - [Timeline Events](../timeline_events/overview.md) - Related timeline analysis
 
