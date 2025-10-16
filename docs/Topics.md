@@ -12,7 +12,7 @@ This page contains a comprehensive list of all topics related to the Charlie Kir
 
 ## Investigation Topics
 
-### Social Media and Online Analysis
+### [Social Media and Online Analysis](/social_media_analysis/overview)
 - Based Sam Parker Posts
 - Diligent Denizen Posts 1
 - Diligent Denizen Posts 2
@@ -34,7 +34,7 @@ This page contains a comprehensive list of all topics related to the Charlie Kir
 - YouTube Videos
 - Social Media Coverage
 
-### Aircraft and Flight Analysis
+### [Aircraft and Flight Analysis](/aircraft_flight_analysis/overview)
 - N1098L Plane
 - SU BND Plane
 - SU BTT Plane
@@ -43,12 +43,12 @@ This page contains a comprehensive list of all topics related to the Charlie Kir
 - Egypt Flight Departure
 - Flight Records
 
-### Technology and Surveillance
+### [Technology and Surveillance](/technology_surveillance/overview)
 - Drones Research
 - Google Search Deletion
 - Provo Airport Badge Access
 
-### Key Individuals
+### [Key Individuals](/key_individuals/overview)
 - Tyler Robinson
 - Tyler Robinson Girlfriend
 - Charlie Kirk Girlfriend Investigation
@@ -64,7 +64,7 @@ This page contains a comprehensive list of all topics related to the Charlie Kir
 - Yair Netanyahu Presence
 - Erika Kirk Medal Acceptance
 
-### Organizations and Groups
+### [Organizations and Groups](/organizations_groups/overview)
 - Faith Freedom Coalition
 - Latino Coalition Israel
 - Philos Project Funding
@@ -78,7 +78,7 @@ This page contains a comprehensive list of all topics related to the Charlie Kir
 - Donald Trump Support
 - Turning Point USA Founder
 
-### Timeline and Events
+### [Timeline and Events](/timeline_events/overview)
 - July 18th Decision Timeline
 - Military Meeting July 20th
 - Nebraska Army Base Meeting
@@ -93,7 +93,7 @@ This page contains a comprehensive list of all topics related to the Charlie Kir
 - Post Assassination Investigations
 - October 15th 2025
 
-### Legal and Investigation
+### [Legal and Investigation](/legal_investigation/overview)
 - FBI Witness Intimidation
 - Parent Attorney Selection
 - FBI Local Law Enforcement
@@ -101,14 +101,14 @@ This page contains a comprehensive list of all topics related to the Charlie Kir
 - Assassination Investigation
 - Official Statements
 
-### Property and Locations
+### [Property and Locations](/property_locations/overview)
 - University House Ownership
 - Palentire House Connection
 - Utah Valley University Event
 - Orem Utah Location
 - Public Speaking Event
 
-### Political Context
+### [Political Context](/political_context/overview)
 - Pro Israel Movement Exit Tweet
 - White House Off Record Meeting
 - Woke Right Defamation
@@ -120,7 +120,7 @@ This page contains a comprehensive list of all topics related to the Charlie Kir
 - U.S. State Department
 - State Department Response
 
-### Media and Public Response
+### [Media and Public Response](/media_response/overview)
 - Guardian Kirk Beliefs
 - Leaked Kirk Texts
 - Israeli Agenda Criticism
@@ -136,7 +136,7 @@ This page contains a comprehensive list of all topics related to the Charlie Kir
 - Mainstream Media
 - Alternative Media
 
-### Conspiracy Theories and Analysis
+### [Conspiracy Theories and Analysis](/conspiracy_theories/overview)
 - Mossad Involvement Theories
 - Israeli Intelligence Theories
 - Foreign Government Involvement
@@ -146,7 +146,7 @@ This page contains a comprehensive list of all topics related to the Charlie Kir
 - Foreign Intelligence
 - Government Agencies
 
-### Campus and University
+### [Campus and University](/campus_university/overview)
 - UVU Posts
 - Campus Security
 - University Response
@@ -154,13 +154,13 @@ This page contains a comprehensive list of all topics related to the Charlie Kir
 - Faculty Statements
 - Administration Response
 
-### Security and Law Enforcement
+### [Security and Law Enforcement](/security_law_enforcement/overview)
 - Law Enforcement Response
 - Security Measures
 - Visa Revocation Celebrations
 - Online Celebration Crackdown
 
-### Analysis and Documentation
+### [Analysis and Documentation](/analysis_documentation/overview)
 - Charlie Kirk Assassination Overview
 - Heinous Act Description
 - Shockwaves Political Landscape
