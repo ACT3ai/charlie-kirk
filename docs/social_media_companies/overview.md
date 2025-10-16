@@ -6,21 +6,8 @@ The Social Media Companies section contains comprehensive analysis and documenta
 
 ## Available Documents
 
-### Major Platforms
-- [Google](google.md) - Google platform analysis and response
-- [YouTube](youtube.md) - YouTube platform analysis and response
-- [X Platform](x_platform.md) - X platform (formerly Twitter) analysis and response
-- [TikTok](tiktok.md) - TikTok platform analysis and response
-- [Facebook](facebook.md) - Facebook platform analysis and response
-
-### Additional Platforms
-- [Instagram](instagram.md) - Instagram platform analysis and response
-- [LinkedIn](linkedin.md) - LinkedIn platform analysis and response
-- [Reddit](reddit.md) - Reddit platform analysis and response
-- [Discord](discord.md) - Discord platform analysis and response
-- [Telegram](telegram.md) - Telegram platform analysis and response
-- [WhatsApp](whatsapp.md) - WhatsApp platform analysis and response
-- [Meta](meta.md) - Meta platform analysis and response
+### Platform Analysis
+- All platform-specific analysis files have been removed as they contained generic censorship content not related to the Charlie Kirk assassination investigation.
 
 ## Key Areas of Investigation
 

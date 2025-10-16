@@ -8,13 +8,11 @@ The Social Media Analysis section contains comprehensive analysis and documentat
 
 ### General Social Media Coverage
 - [Social Media Coverage](social_media_coverage.md) - Comprehensive social media coverage analysis
-- [Live Stream Censorship](live_stream_censorship.md) - Live stream censorship analysis
 - [Social Media Posts](social_media_posts.md) - Social media posts analysis
 
 ### Platform-Specific Analysis
 - [Twitter Analysis](twitter_analysis.md) - Twitter platform analysis
 - [YouTube Videos](youtube_videos.md) - YouTube video analysis
-- [X Platform Posts](x_platform_posts.md) - X platform posts analysis
 
 ### Individual User Analysis
 - [Based Sam Parker Posts](based_sam_parker_posts.md) - Based Sam Parker posts analysis
