@@ -122,9 +122,9 @@ REASONING: His powerful [30-06 Mauser 98 gun] would have destroyed his neck. And
 
 ### Topic Areas
 
-- [After](<./Topics3/After/overview>)
-- [Before](<./Topics3/Before/overview>)
-- [CIA](<./Topics3/CIA/overview>)
+- [After](</Topics3/After/overview>)
+- [Before](</docs/Topics3/Before/overview>)
+- [CIA](<Topics3/CIA/overview>)
 - [Drones](<./Topics3/Drones/overview>)
 - [FBI](<./Topics3/FBI/overview>)
 - [Israel](<./Topics3/Israel/overview>)
