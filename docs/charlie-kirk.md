@@ -23,11 +23,14 @@ REASONING: His powerful [30-06 Mauser 98 gun] would have destroyed his neck. And
 
 ## Tyler Robinson didn't do it
 - REASONING: His powerful [30-06 Mauser 98 gun] would have destroyed his neck. And caused [Blood all over the Tent]. Tyler Robinson didn't kill Charlie Kirk.
+- Other Actors, taking Action before: [Google Searches]
+- Motive: d
 - Details: [Everything about Tyle Robinson], [Gun], [Walkin Path], [Girlfriend], [Case & Trial]
 
 
 ## Vote
 - Coming soon
+- [Vote] with
 
 
 ## How To Fix (5 steps)
@@ -37,13 +40,43 @@ REASONING: His powerful [30-06 Mauser 98 gun] would have destroyed his neck. And
 - TSUSA: Ethically Aligned with Charlie Kirk. Fixes...
 
 
+## TRUTH LIST (Government Hides)
+- Autopsy
+- Video footage: UVU Video footage
+- Spy Plane
+- Intelligent recruited him. Girlfriend links to intelligence.
+- Communication with intelligent (or anyone else) with Tyler
+- All known intelligence about foreign country (or US intelligence) doing prep-work
+- Who was involved with planes. Or visits. Or meetings
+- Gov is required to list what Evidence (or information) was Destroyed or "lost"
+- More: x
 
 
-- [FBI]: [(Possible) Cover-up], [Which]
-- [FBI]: [(Possible) Cover-up], [Which]
+## Motive
+- Pass Law: #1 Force information disclosed.  #2 Fix Cover-up Law by Autopsy
+- Vote out Cover-Up Politicians
+- Ask Churches to Ensure Justice Happens
+- TSUSA: Ethically Aligned with Charlie Kirk. Fixes...
 
-- [FBI]: [(Possible) Cover-up], [Which]
 
+## Areas of Investigation
+- [FBI]: [(Possible) Cover-up], [Conneticut]
+- [Planes]: [Drone Launching N1098L], [Leadership Plane]
+- [TPUSA]: [Security Team], [Employees], [Donors]
+- [Suspects (List)]: [Tyler Robinson], [CIA], [Israel]
+- [Possible Shootering Locations]: [Close Up], [South Stairs], [Tyler Robinson Shooting], [Drone], [Other]
+- [Locations]: [UVU Courtyard], [Tent], [Tyler Location]
+- [Maps]
+- [Videos]
+- [Photos]
+- [Podcast / YouTube Analysis]
+- [After]: [Tyler After], [Tent Construction], [Medical]
+- [Before]: [Suspect Before Actions], [Leadership Plane], [Spy Plane]
+- [Medical]: [(Possible) Cover-up], [Which]
+
+
+
+## Citizen Investigators: X / Podcasts / YouTube / etc.
 
 
 ## Investigation Topics
@@ -81,3 +114,5 @@ REASONING: His powerful [30-06 Mauser 98 gun] would have destroyed his neck. And
 ### Locations & Other
 - [Property & Locations](/property_locations/overview) - Physical locations and properties
 - [Other Topics](/other_topics/overview) - Additional related topics and analysis
+
+How Holons work.
