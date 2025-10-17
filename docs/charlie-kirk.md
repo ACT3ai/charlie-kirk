@@ -120,6 +120,12 @@ REASONING: His powerful [30-06 Mauser 98 gun] would have destroyed his neck. And
 
 📊 **[Individual Topic Analyses](/topic-analyses)** - Direct links to all 128 detailed topic analysis files with comprehensive research and evidence.
 
+[After](</Topics3/After/overview>) foo
+[Before](</docs/Topics3/Before/overview>) bar
+[CIA](<Topics3/CIA/overview>) dude.
+
+
+
 ### Topic Areas
 
 - [After](</Topics3/After/overview>)
