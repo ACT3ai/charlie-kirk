@@ -184,4 +184,4 @@ REASONING: His powerful [30-06 Mauser 98 gun] would have destroyed his neck. And
 - [Property & Locations](/property_locations/overview) - Physical locations and properties
 - [Other Topics](/other_topics/overview) - Additional related topics and analysis
 
-How Holons work.
+How Holons work.<!-- GitHub Pages refresh trigger: Fri Oct 17 14:36:17 PDT 2025 -->
