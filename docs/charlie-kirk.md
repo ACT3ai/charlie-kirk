@@ -5,9 +5,46 @@ slug: /
 sidebar_label: Charlie Kirk
 ---
 
-# Charlie Kirk � Getting Started
 
-Minimal placeholder content to bootstrap the site.
+# Who Assassinated Charlie Kirk
+
+## Tyler Robinson didn't do it
+- REASONING: His powerful [30-06 Mauser 98 gun] would have destroyed his neck. And caused [Blood all over the Tent]. Tyler Robinson didn't kill Charlie Kirk.
+- Details: [Everything about Tyle Robinson], [Gun], [Walkin Path], [Girlfriend], [Case & Trial]
+
+
+## Biggest "Question Marks" that conclude others could likely be involved:
+- d
+
+REASONING: His powerful [30-06 Mauser 98 gun] would have destroyed his neck. And caused [Blood all over the Tent]. Tyler Robinson didn't kill Charlie Kirk.
+- Details: [Everything about Tyle Robinson], [Gun], [Walkin Path], [Girlfriend], [Case & Trial]
+
+
+
+## Tyler Robinson didn't do it
+- REASONING: His powerful [30-06 Mauser 98 gun] would have destroyed his neck. And caused [Blood all over the Tent]. Tyler Robinson didn't kill Charlie Kirk.
+- Details: [Everything about Tyle Robinson], [Gun], [Walkin Path], [Girlfriend], [Case & Trial]
+
+
+## Vote
+- Coming soon
+
+
+## How To Fix (5 steps)
+- Pass Law: #1 Force information disclosed.  #2 Fix Cover-up Law by Autopsy
+- Vote out Cover-Up Politicians
+- Ask Churches to Ensure Justice Happens
+- TSUSA: Ethically Aligned with Charlie Kirk. Fixes...
+
+
+
+
+- [FBI]: [(Possible) Cover-up], [Which]
+- [FBI]: [(Possible) Cover-up], [Which]
+
+- [FBI]: [(Possible) Cover-up], [Which]
+
+
 
 ## Investigation Topics
 
