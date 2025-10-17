@@ -105,7 +105,7 @@ REASONING: His powerful [30-06 Mauser 98 gun] would have destroyed his neck. And
 - [List of Individuals]
 - [Possible Distraction Patsys]
 - [UVU Campus]
-- [censorship]
+- [Censorship]
 
 
 ## Citizen Investigators: X / Podcasts / YouTube / etc.
@@ -119,6 +119,34 @@ REASONING: His powerful [30-06 Mauser 98 gun] would have destroyed his neck. And
 📋 **[View All Investigation Topics](/topics)** - Comprehensive list of 128 topics related to the Charlie Kirk assassination investigation, September 10th, 2025 events, plane flights, drones, and UVU university.
 
 📊 **[Individual Topic Analyses](/topic-analyses)** - Direct links to all 128 detailed topic analysis files with comprehensive research and evidence.
+
+### Topic Areas
+
+- [After](<./Topics3/After/overview>)
+- [Before](<./Topics3/Before/overview>)
+- [CIA](<./Topics3/CIA/overview>)
+- [Drones](<./Topics3/Drones/overview>)
+- [FBI](<./Topics3/FBI/overview>)
+- [Israel](<./Topics3/Israel/overview>)
+- [Location](<./Topics3/Location/overview>)
+- [Locations](<./Topics3/Locations/overview>)
+- [Maps](<./Topics3/Maps/overview>)
+- [Medical](<./Topics3/Medical/overview>)
+- [Other](<./Topics3/Other/overview>)
+- [Photos](<./Topics3/Photos/overview>)
+- [Planes](<./Topics3/Planes/overview>)
+- [Podcast / YouTube Analysis](<./Topics3/Podcast_YouTube_Analysis/overview>)
+- [Possible Shootering Locations](<./Topics3/Possible Shootering Locations/overview>)
+- [(Possible) Cover-up](<./Topics3/Possible_) _Cover-up/overview>)
+- [South Stairs](<./Topics3/South Stairs/overview>)
+- [Suspect Before Actions](<./Topics3/Suspect Before Actions/overview>)
+- [Suspects (List)](<./Topics3/Suspects (List)/overview>)
+- [Timeline](<./Topics3/Timeline/overview>)
+- [TPUSA](<./Topics3/TPUSA/overview>)
+- [Tyler Robinson](<./Topics3/Tyler Robinson/overview>)
+- [Tyler Robinson Shooting](<./Topics3/Tyler Robinson Shooting/overview>)
+- [Videos](<./Topics3/Videos/overview>)
+- [Which](<./Topics3/Which/overview>)
 
 ## Investigation Sections
 
