@@ -1,5 +1,12 @@
-# GitHub Pages Force Refresh
+# Charlie Kirk Investigation
 
-This file was created to force GitHub Pages to rebuild at Fri Oct 17 14:59:26 PDT 2025
+Welcome to the Charlie Kirk assassination investigation documentation.
 
-If you can see this, GitHub Pages is working!
+## Main Document
+[Read the full investigation document](charlie-kirk.md)
+
+## Topics
+- [Topics3 Directory](Topics3/)
+
+---
+*This site was last updated: $(date)*
