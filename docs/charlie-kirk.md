@@ -8,6 +8,8 @@ sidebar_label: Charlie Kirk
 
 # Who Assassinated Charlie Kirk
 
+v2
+
 ## Tyler Robinson didn't do it
 - REASONING: His powerful [30-06 Mauser 98 gun] would have destroyed his neck. And caused [Blood all over the Tent]. Tyler Robinson didn't kill Charlie Kirk.
 - Details: [Everything about Tyle Robinson], [Gun], [Walkin Path], [Girlfriend], [Case & Trial]
@@ -72,9 +74,9 @@ REASONING: His powerful [30-06 Mauser 98 gun] would have destroyed his neck. And
 
 
 ## Areas of Investigation
-- [FBI]: [(Possible) Cover-up], [Conneticut]
+- [FBI](./Topics3/FBI/overview): [(Possible) Cover-up], [Conneticut]
 - [Planes]: [Drone Launching N1098L], [Leadership Plane]
-- [TPUSA]: [Security Team], [Employees], [Donors]
+- [TPUSA](Topics3/TPUSA/overview): [Security Team], [Employees], [Donors]
 - [Suspects (List)]: [Tyler Robinson], [CIA], [Israel]
 - [Possible Shootering Locations]: [Close Up], [South Stairs], [Tyler Robinson Shooting], [Drone], [Other]
 - [Locations]: [UVU Courtyard], [Tent], [Tyler Location]
@@ -133,7 +135,7 @@ REASONING: His powerful [30-06 Mauser 98 gun] would have destroyed his neck. And
 - [Before](/docs/Topics3/Before/overview)
 - [CIA](Topics3/CIA/overview)
 - [Drones](<./Topics3/Drones/overview>)
-- [FBI](<./Topics3/FBI/overview>)
+- [FBI](./Topics3/FBI/overview)
 - [Israel](<./Topics3/Israel/overview>)
 - [Location](<./Topics3/Location/overview>)
 - [Locations](<./Topics3/Locations/overview>)
