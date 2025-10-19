@@ -1,31 +1,20 @@
 # Who Assassinated Charlie Kirk
-
 v3
 
 ## Tyler Robinson didn't do it
 - REASONING: His powerful [30-06 Mauser 98 gun] would have destroyed his neck. And caused [Blood all over the Tent]. Tyler Robinson didn't kill Charlie Kirk.
 - Details: [Everything about Tyle Robinson], [Gun], [Walkin Path], [Girlfriend], [Case & Trial]
-- Motive: d
+- [Motive](Motive/overview.md): 
 - Details: [Everything about Tyle Robinson](/Tyler/overview.md), [Gun](/Gun_Bullet/overview.md), [Walkin Path](/Tyler/Travel.md), [Girlfriend](/Tyler/Girlfriend/overview.md), [Case & Trial](/Tyler/Trial/overview.md)
 
 
-## >
-- d
-
-REASONING: His powerful [30-06 Mauser 98 gun] would have destroyed his neck. And caused [Blood all over the Tent]. Tyler Robinson didn't kill Charlie Kirk.
-- Details: [Everything about Tyle Robinson], [Gun], [Walkin Path], [Girlfriend], [Case & Trial]
-
-
 ## Biggest "Question Marks" that conclude others could likely be involved:
-- d
-
 REASONING: His powerful [30-06 Mauser 98 gun] would have destroyed his neck. And caused [Blood all over the Tent]. Tyler Robinson didn't kill Charlie Kirk.
 - Details: [Everything about Tyle Robinson], [Gun], [Walkin Path], [Girlfriend], [Case & Trial]
-
 
 
 ## Tyler Robinson
-- REASONING: His powerful [30-06 Mauser 98 gun](/Gun_Bullet/overview.md) would have destroyed his neck. And caused [Blood all over the Tent]. Tyler Robinson didn't kill Charlie Kirk.
+- REASONING: His powerful [30-06 Mauser 98 gun](/Gun_Bullet/overview.md) would have destroyed his neck. And caused [Blood all over the Tent]. Tyler Robinson didn't kill [Charlie Kirk](/Charlie/overview.md).
 - Other Actors, taking Action before: [Google Searches](/GoogleSearches/overview.md)
 
 
@@ -36,34 +25,30 @@ REASONING: His powerful [30-06 Mauser 98 gun] would have destroyed his neck. And
 
 ## How To Fix (5 steps)
 - [Pass Law: #1 Force information disclosed](/Fix/Law1.md).  [#2 Fix Cover-up Law by Autopsy](/Fix/Law2.md)
-- Vote out Cover-Up Politicians(/Fix/Politicians.md)
-- Ask Churches to Ensure Justice Happens(/Fix/Churches.md)
-- TSUSA: Ethically Aligned with Charlie Kirk. Fixes...(/Fix/TSUSA.md)
+- [Vote out Cover-Up Politicians](/Fix/Politicians.md)
+- [Ask Churches to Ensure Justice Happens](/Fix/Churches.md)
+- [TPUSA](TPUSA/TPUSA.md): [Ethically Aligned with Charlie Kirk. Fixes...](Fix/TPUSA.md)
 
 
 ## TRUTH LIST (Government Hides)
-- [Autopsy](/Charlie/Autopsy.md)
-- [Video footage](/cameras/security/overview.md): [UVU Video footage](/cameras/security/UVU_Security_Cameras.md)
-- [Spy Plane](/Planes/N1098L/overview.md)
-- [Intelligent recruited him](/Tyler/Recruited.md). Girlfriend links to intelligence.
-- [Communication with intelligent (or anyone else) with Tyler](/intelligence/overview.md)
-- [All known intelligence about foreign country](/intelligence/overview.md) (or US intelligence) doing prep-work
+- [Autopsy](Charlie/Autopsy.md)
+- [Video footage](cameras/security/overview.md): [UVU Video footage](Cameras/security/UVU_Security_Cameras.md)
+- [Spy Plane](Planes/N1098L/overview.md)
+- [Intelligent recruited him](Tyler/Recruited.md). Girlfriend links to intelligence.
+- [Communication with intelligent (or anyone else) with Tyler](/Intelligence/overview.md)
+- [All known intelligence about foreign country](/Intelligence/overview.md) (or US intelligence) doing prep-work
 - Who was involved with [planes](/Planes/N1098L/overview.md). Or visits. Or meetings
 - Gov is required to list what [Evidence](/gov/overview.md) (or information) was Destroyed or "lost"
 - More: x
 
 
 ## Motive
-- [Motive](/Motive/overview.md)
+- [Motive](Motive/overview.md)
 
-
-[After](</Topics3/After/overview>) foo
-[Before](</docs/Topics3/Before/overview>) bar
-[CIA](<Topics3/CIA/overview>) dude.
 
 
 ## Areas of Investigation
-- [FBI](./Topics3/FBI/overview.md): [(Possible) Cover-up], [Conneticut]
+- [FBI](FBI/overview.md): [(Possible) Cover-up], [Connecticut](FBI/Connecticut.md)
 - [Planes]: [Drone Launching N1098L], [Leadership Plane]
 - [TPUSA](Topics3/TPUSA/overview.md): [Security Team], [Employees], [Donors]
 - [Suspects (List)]: [Tyler Robinson], [CIA], [Israel]
