@@ -31,14 +31,14 @@ REASONING: His powerful [30-06 Mauser 98 gun] would have destroyed his neck. And
 
 ## Vote
 - Coming soon
-- [Vote] with
+- [Vote](/Vote/overview.md) with
 
 
 ## How To Fix (5 steps)
-- [Pass Law: #1 Force information disclosed](/Fix/Law1.md).  #2 Fix Cover-up Law by Autopsy
-- Vote out Cover-Up Politicians
-- Ask Churches to Ensure Justice Happens
-- TSUSA: Ethically Aligned with Charlie Kirk. Fixes...
+- [Pass Law: #1 Force information disclosed](/Fix/Law1.md).  [#2 Fix Cover-up Law by Autopsy](/Fix/Law2.md)
+- Vote out Cover-Up Politicians(/Fix/Politicians.md)
+- Ask Churches to Ensure Justice Happens(/Fix/Churches.md)
+- TSUSA: Ethically Aligned with Charlie Kirk. Fixes...(/Fix/TSUSA.md)
 
 
 ## TRUTH LIST (Government Hides)
