@@ -43,7 +43,7 @@ REASONING: His powerful [30-06 Mauser 98 gun] would have destroyed his neck. And
 
 
 ## How To Fix (5 steps)
-- Pass Law: #1 Force information disclosed.  #2 Fix Cover-up Law by Autopsy
+- [Pass Law: #1 Force information disclosed](/Fix/Law1.md).  #2 Fix Cover-up Law by Autopsy
 - Vote out Cover-Up Politicians
 - Ask Churches to Ensure Justice Happens
 - TSUSA: Ethically Aligned with Charlie Kirk. Fixes...
