@@ -1,20 +1,12 @@
----
-id: charlie-kirk
-title: Charlie Kirk
-slug: /
-sidebar_label: Charlie Kirk
----
-
-
 # Who Assassinated Charlie Kirk
 
-v2
+v3
 
 ## Tyler Robinson didn't do it
 - REASONING: His powerful [30-06 Mauser 98 gun] would have destroyed his neck. And caused [Blood all over the Tent]. Tyler Robinson didn't kill Charlie Kirk.
 - Details: [Everything about Tyle Robinson], [Gun], [Walkin Path], [Girlfriend], [Case & Trial]
 - Motive: d
-- Details: [Everything about Tyle Robinson], [Gun], [Walkin Path], [Girlfriend], [Case & Trial]
+- Details: [Everything about Tyle Robinson](/Tyler_Robinson/overview.md), [Gun](/Gun_Bullet/overview.md), [Walkin Path](/Tyler_Robinson/Travel.md), [Girlfriend](/Tyler_Robinson/Girlfriend/overview.md), [Case & Trial](/Tyler_Robinson/Trial/overview.md)
 
 
 ## >
@@ -33,8 +25,8 @@ REASONING: His powerful [30-06 Mauser 98 gun] would have destroyed his neck. And
 
 
 ## Tyler Robinson
-- REASONING: His powerful [30-06 Mauser 98 gun] would have destroyed his neck. And caused [Blood all over the Tent]. Tyler Robinson didn't kill Charlie Kirk.
-- Other Actors, taking Action before: [Google Searches]
+- REASONING: His powerful [30-06 Mauser 98 gun](/Gun_Bullet/overview.md) would have destroyed his neck. And caused [Blood all over the Tent]. Tyler Robinson didn't kill Charlie Kirk.
+- Other Actors, taking Action before: [Google Searches](/GoogleSearches/overview.md)
 
 
 ## Vote
