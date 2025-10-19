@@ -65,30 +65,26 @@ REASONING: His powerful [30-06 Mauser 98 gun] would have destroyed his neck. And
 ## Areas of Investigation
 - [FBI](./Topics3/FBI/overview.md): [(Possible) Cover-up], [Conneticut]
 - [Planes]: [Drone Launching N1098L], [Leadership Plane]
-- [TPUSA](Topics3/TPUSA/overview): [Security Team], [Employees], [Donors]
+- [TPUSA](Topics3/TPUSA/overview.md): [Security Team], [Employees], [Donors]
 - [Suspects (List)]: [Tyler Robinson], [CIA], [Israel]
 - [Possible Shootering Locations]: [Close Up], [South Stairs], [Tyler Robinson Shooting], [Drone], [Other]
 - [Locations]: [UVU Courtyard], [Tent], [Tyler Location]
-- [Maps](maps/overview.md)
-- [Videos] - [Location]
-- [Photos] - [Location]
-- [Podcast / YouTube Analysis]
-- [After]: [Tyler After], [Tent Construction], [Medical]
-- [Before]: [Suspect Before Actions], [Leadership Plane], [Spy Plane]
-- [Medical]: [(Possible) Cover-up], [Which]
-- [Timeline]: [Timeline 2024 & 2025], [Which]
+- [Maps](Maps/overview.md)
+- [Videos](Videos/overview.md) - [Location](Locations/overview.md)
+- [Photos](Photos/overview.md) - [Location]
+- [Podcast / YouTube Analysis](Influencers/overview.md)
+- [After](After/overview.md): [Tyler After], [Tent Construction](Tent/overview.md), [Medical](Medical/overview.md)
+- [Before](Before/overview.md): [Suspect Before Actions], [Leadership Plane](Plane/Leadership/overview.md), [Spy Plane](Plane/N1098L/overview.md)
+- [Medical](Medical/overview.md): [(Possible) Cover-up]
+- [Timeline](Timeline/overview.md): [Timeline 2024 & 2025](Timeline/overview.md)
 
 
 ## Charlie Kirk
 - [Leadership into d]
-- Vote out Cover-Up Politicians
-- Ask Churches to Ensure Justice Happens
-- TSUSA: Ethically Aligned with Charlie Kirk. Fixes...
 
 
 ## Importance & Value of Charlie Kirk
 - Family man
-- Nice & Ethical man
 - Critical Leader
 - Bridge
 
