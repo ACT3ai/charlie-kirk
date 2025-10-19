@@ -83,7 +83,7 @@ REASONING: His powerful [30-06 Mauser 98 gun] would have destroyed his neck. And
 - [List of Individuals](/People/overview.md)
 - [Possible Distraction Patsys](/Patsys/overview.md)
 - [UVU Campus](/UVU/maps.md)
-- [Censorship](/Media/Censorship.md)
+- [Censorship](/Censorship/Censorship.md)
 
 
 ## Citizen Investigators: X / Podcasts / YouTube / etc.
