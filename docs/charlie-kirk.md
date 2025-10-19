@@ -42,22 +42,19 @@ REASONING: His powerful [30-06 Mauser 98 gun] would have destroyed his neck. And
 
 
 ## TRUTH LIST (Government Hides)
-- Autopsy
-- Video footage: UVU Video footage
-- Spy Plane
-- Intelligent recruited him. Girlfriend links to intelligence.
-- Communication with intelligent (or anyone else) with Tyler
-- All known intelligence about foreign country (or US intelligence) doing prep-work
-- Who was involved with planes. Or visits. Or meetings
-- Gov is required to list what Evidence (or information) was Destroyed or "lost"
+- [Autopsy](/Charlie/Autopsy.md)
+- [Video footage](/cameras/security/overview.md): [UVU Video footage](/cameras/security/UVU_Security_Cameras.md)
+- [Spy Plane](/Planes/N1098L/overview.md)
+- [Intelligent recruited him](/Tyler_Robinson/Recruited.md). Girlfriend links to intelligence.
+- [Communication with intelligent (or anyone else) with Tyler](/intelligence/overview.md)
+- [All known intelligence about foreign country](/intelligence/overview.md) (or US intelligence) doing prep-work
+- Who was involved with [planes](/Planes/N1098L/overview.md). Or visits. Or meetings
+- Gov is required to list what [Evidence](/gov/overview.md) (or information) was Destroyed or "lost"
 - More: x
 
 
 ## Motive
-- Pass Law: #1 Force information disclosed.  #2 Fix Cover-up Law by Autopsy
-- Vote out Cover-Up Politicians
-- Ask Churches to Ensure Justice Happens
-- TSUSA: Ethically Aligned with Charlie Kirk. Fixes...
+- [Motive](/Motive/overview.md)
 
 
 [After](</Topics3/After/overview>) foo
@@ -66,13 +63,13 @@ REASONING: His powerful [30-06 Mauser 98 gun] would have destroyed his neck. And
 
 
 ## Areas of Investigation
-- [FBI](./Topics3/FBI/overview): [(Possible) Cover-up], [Conneticut]
+- [FBI](./Topics3/FBI/overview.md): [(Possible) Cover-up], [Conneticut]
 - [Planes]: [Drone Launching N1098L], [Leadership Plane]
 - [TPUSA](Topics3/TPUSA/overview): [Security Team], [Employees], [Donors]
 - [Suspects (List)]: [Tyler Robinson], [CIA], [Israel]
 - [Possible Shootering Locations]: [Close Up], [South Stairs], [Tyler Robinson Shooting], [Drone], [Other]
 - [Locations]: [UVU Courtyard], [Tent], [Tyler Location]
-- [Maps]
+- [Maps](maps/overview.md)
 - [Videos] - [Location]
 - [Photos] - [Location]
 - [Podcast / YouTube Analysis]
