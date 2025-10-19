@@ -48,3 +48,15 @@ The SCOPE OF the Tyler Robinson case GAG ORDER is UNPRECEDENTED in Utah.
 
 Over 3,000 witnesses, "associates" of the case, attorneys, family members, & even press are subject to the order, threatened with potential "Contempt of Court" charges & jail time for speaking. 
 
+
+## Court Update: Voluminous Evidence and Broad Gag Order (Sep 29, 2025)
+
+- Prosecutors told 4th District Court there is a voluminous body of discovery; Utah County will produce evidence to the defense.
+- Thousands of potential eyewitnesses to the Sept. 10 UVU shooting are still being identified; many remain unknown.
+- Judge Tony Graf affirmed a broad gag order barring anyone associated with the case from speaking to media; as witnesses are identified, their information must be conveyed to comply with the order.
+- Tyler Robinson, 22, appeared virtually; charges include aggravated murder, obstruction of justice, felony discharge causing serious bodily injury, witness tampering, and committing a violent offense in the presence of a child. Federal charges remain possible.
+- Defense team led by Kathyn Nester entered a formal appearance; next in-person hearing set for Oct. 30; courthouse security was heightened.
+- The case has drawn national attention, including comments from President Trump; Judge Graf emphasized an impartial process and protection of constitutional rights.
+- Utah Valley University initiated an independent review of the campus shooting.
+
+Source: Court hearing coverage by Ben Winslow and Michael Martin (Sep 29, 2025).
