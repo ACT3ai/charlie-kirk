@@ -6,7 +6,7 @@ v3
 - REASONING: His powerful [30-06 Mauser 98 gun] would have destroyed his neck. And caused [Blood all over the Tent]. Tyler Robinson didn't kill Charlie Kirk.
 - Details: [Everything about Tyle Robinson], [Gun], [Walkin Path], [Girlfriend], [Case & Trial]
 - Motive: d
-- Details: [Everything about Tyle Robinson](/Tyler_Robinson/overview.md), [Gun](/Gun_Bullet/overview.md), [Walkin Path](/Tyler_Robinson/Travel.md), [Girlfriend](/Tyler_Robinson/Girlfriend/overview.md), [Case & Trial](/Tyler_Robinson/Trial/overview.md)
+- Details: [Everything about Tyle Robinson](/Tyler/overview.md), [Gun](/Gun_Bullet/overview.md), [Walkin Path](/Tyler/Travel.md), [Girlfriend](/Tyler/Girlfriend/overview.md), [Case & Trial](/Tyler/Trial/overview.md)
 
 
 ## >
@@ -45,7 +45,7 @@ REASONING: His powerful [30-06 Mauser 98 gun] would have destroyed his neck. And
 - [Autopsy](/Charlie/Autopsy.md)
 - [Video footage](/cameras/security/overview.md): [UVU Video footage](/cameras/security/UVU_Security_Cameras.md)
 - [Spy Plane](/Planes/N1098L/overview.md)
-- [Intelligent recruited him](/Tyler_Robinson/Recruited.md). Girlfriend links to intelligence.
+- [Intelligent recruited him](/Tyler/Recruited.md). Girlfriend links to intelligence.
 - [Communication with intelligent (or anyone else) with Tyler](/intelligence/overview.md)
 - [All known intelligence about foreign country](/intelligence/overview.md) (or US intelligence) doing prep-work
 - Who was involved with [planes](/Planes/N1098L/overview.md). Or visits. Or meetings
@@ -85,7 +85,8 @@ REASONING: His powerful [30-06 Mauser 98 gun] would have destroyed his neck. And
 
 ## Importance & Value of Charlie Kirk
 - Family man
-- Critical Leader
+- [Nice & Ethical man](Charlie/overview.md)
+- [Critical Leader]
 - Bridge
 
 
@@ -94,16 +95,16 @@ REASONING: His powerful [30-06 Mauser 98 gun] would have destroyed his neck. And
 
 
 ## Other in Investigation
-- [List of Individuals]
-- [Possible Distraction Patsys]
-- [UVU Campus]
-- [Censorship]
+- [List of Individuals](/People/overview.md)
+- [Possible Distraction Patsys](/Patsys/overview.md)
+- [UVU Campus](/UVU/maps.md)
+- [Censorship](/Media/Censorship.md)
 
 
 ## Citizen Investigators: X / Podcasts / YouTube / etc.
-- On Podcasts
-- On X
-- On YouTube
+- [On Podcasts](/Influencers/podcasts.md)
+- [On X](/Influencers/x.md)
+- [On YouTube](/Influencers/youtube.md)
 
 
 ## Investigation Topics
@@ -116,10 +117,10 @@ REASONING: His powerful [30-06 Mauser 98 gun] would have destroyed his neck. And
 
 ### Topic Areas
 
-- [After](/Topics3/After/overview)
-- [Before](/docs/Topics3/Before/overview)
-- [CIA](Topics3/CIA/overview)
-- [Drones](<./Topics3/Drones/overview>)
+- [After](After/overview.md)
+- [Before](Before/overview.md)
+- [CIA](CIA/overview.md)
+- [Drones](Drones/overview.md)
 - [FBI](./Topics3/FBI/overview)
 - [Israel](<./Topics3/Israel/overview>)
 - [Location](<./Topics3/Location/overview>)
@@ -136,11 +137,11 @@ REASONING: His powerful [30-06 Mauser 98 gun] would have destroyed his neck. And
 - [Suspect Before Actions](<./Topics3/Suspect Before Actions/overview>)
 - [Suspects (List)](<./Topics3/Suspects (List)/overview>)
 - [Timeline](<./Topics3/Timeline/overview>)
-- [TPUSA](<./Topics3/TPUSA/overview>)
-- [Tyler Robinson](<./Topics3/Tyler Robinson/overview>)
-- [Tyler Robinson Shooting](<./Topics3/Tyler Robinson Shooting/overview>)
-- [Videos](<./Topics3/Videos/overview>)
-- [Which](<./Topics3/Which/overview>)
+- [TPUSA](TPUSA/overview.md)
+- [Tyler Robinson](Tyler/overview>)
+- [Tyler Robinson Shooting](<Tyler/shooting/overview.md)
+- [Videos](Videos/overview.md)
+
 
 ## Investigation Sections
 
