@@ -5,6 +5,7 @@ const sidebars: SidebarsConfig = {
     'charlie-kirk',
     'Topics',
     'Topic-Analyses',
+    'Topics3/overview',
     {
       type: 'category',
       label: 'Investigation Sections',

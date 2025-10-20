@@ -94,9 +94,9 @@ REASONING: His powerful [30-06 Mauser 98 gun] would have destroyed his neck. And
 
 ## Investigation Topics
 
-📋 **[View All Investigation Topics](/topics)** - Comprehensive list of 128 topics related to the Charlie Kirk assassination investigation, September 10th, 2025 events, plane flights, drones, and UVU university.
+📋 **[View All Investigation Topics](/Topics)** - Comprehensive list of 128 topics related to the Charlie Kirk assassination investigation, September 10th, 2025 events, plane flights, drones, and UVU university.
 
-📊 **[Individual Topic Analyses](/topic-analyses)** - Direct links to all 128 detailed topic analysis files with comprehensive research and evidence.
+📊 **[Individual Topic Analyses](/Topic-Analyses)** - Direct links to all 128 detailed topic analysis files with comprehensive research and evidence.
 
 
 
@@ -123,7 +123,7 @@ REASONING: His powerful [30-06 Mauser 98 gun] would have destroyed his neck. And
 - [Suspects (List)](<./Topics3/Suspects (List)/overview>)
 - [Timeline](<./Topics3/Timeline/overview>)
 - [TPUSA](TPUSA/overview.md)
-- [Tyler Robinson](Tyler/overview>)
+- [Tyler Robinson](Tyler/overview.md)
 - [Tyler Robinson Shooting](Tyler/shooting/overview.md)
 - [Videos](Videos/overview.md)
 
