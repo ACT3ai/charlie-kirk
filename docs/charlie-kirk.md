@@ -27,16 +27,16 @@ REASONING: His powerful [30-06 Mauser 98 gun] would have destroyed his neck. And
 - [Pass Law: #1 Force information disclosed](/Fix/Law1.md).  [#2 Fix Cover-up Law by Autopsy](/Fix/Law2.md)
 - [Vote out Cover-Up Politicians](/Fix/Politicians.md)
 - [Ask Churches to Ensure Justice Happens](/Fix/Churches.md)
-- [TPUSA](TPUSA/TPUSA.md): [Ethically Aligned with Charlie Kirk. Fixes...](Fix/TPUSA.md)
+- [TPUSA](TPUSA/TPUSA.md): [Ethically Aligned with Charlie Kirk. Fixes...](Fix/TSUSA.md)
 
 
 ## TRUTH LIST (Government Hides)
 - [Autopsy](Charlie/Autopsy.md)
-- [Video footage](cameras/security/overview.md): [UVU Video footage](Cameras/security/UVU_Security_Cameras.md)
+- [Video footage](cameras/security/overview.md): [UVU Video footage](cameras/security/UVU_Security_Cameras.md)
 - [Spy Plane](Planes/N1098L/overview.md)
 - [Intelligent recruited him](Tyler/Recruited.md). Girlfriend links to intelligence.
-- [Communication with intelligent (or anyone else) with Tyler](/Intelligence/overview.md)
-- [All known intelligence about foreign country](/Intelligence/overview.md) (or US intelligence) doing prep-work
+- [Communication with intelligent (or anyone else) with Tyler](/intelligence/overview.md)
+- [All known intelligence about foreign country](/intelligence/overview.md) (or US intelligence) doing prep-work
 - Who was involved with [planes](/Planes/N1098L/overview.md). Or visits. Or meetings
 - Gov is required to list what [Evidence](/gov/overview.md) (or information) was Destroyed or "lost"
 - More: x
@@ -54,7 +54,7 @@ REASONING: His powerful [30-06 Mauser 98 gun] would have destroyed his neck. And
 - [Suspects (List)]: [Tyler Robinson], [CIA], [Israel]
 - [Possible Shootering Locations]: [Close Up], [South Stairs], [Tyler Robinson Shooting], [Drone], [Other]
 - [Locations]: [UVU Courtyard], [Tent], [Tyler Location]
-- [Maps](Maps/overview.md)
+- [Maps](maps/overview.md)
 - [Videos](Videos/overview.md) - [Location](Locations/overview.md)
 - [Photos](Photos/overview.md) - [Location]
 - [Podcast / YouTube Analysis](Influencers/overview.md)
@@ -83,7 +83,7 @@ REASONING: His powerful [30-06 Mauser 98 gun] would have destroyed his neck. And
 - [List of Individuals](/People/overview.md)
 - [Possible Distraction Patsys](/Patsys/overview.md)
 - [UVU Campus](/UVU/maps.md)
-- [Censorship](/Censorship/Censorship.md)
+- [Censorship](/Censorship/overview.md)
 
 
 ## Citizen Investigators: X / Podcasts / YouTube / etc.
@@ -124,7 +124,7 @@ REASONING: His powerful [30-06 Mauser 98 gun] would have destroyed his neck. And
 - [Timeline](<./Topics3/Timeline/overview>)
 - [TPUSA](TPUSA/overview.md)
 - [Tyler Robinson](Tyler/overview>)
-- [Tyler Robinson Shooting](<Tyler/shooting/overview.md)
+- [Tyler Robinson Shooting](Tyler/shooting/overview.md)
 - [Videos](Videos/overview.md)
 
 

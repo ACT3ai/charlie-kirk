@@ -75,7 +75,7 @@ Use these peer sections to explore detailed evidence threads that intersect with
 4. [Medical](/Medical/overview.md) – Emergency response, medical examiner context, and contested claims.
 5. [Planes](/Planes/N1098L/overview.md) – Low-altitude flight reports and aircraft analyses.
 6. [Videos](/Videos/overview.md) – Public footage, line-of-sight debates, and audio-visual forensics.
-7. [Maps](/Maps/overview.md) – Spatial relationships: stage, rooftops, approach vectors, and sightlines.
+7. [Maps](/maps/overview.md) – Spatial relationships: stage, rooftops, approach vectors, and sightlines.
 8. [Before](/Before/overview.md) – Context setting prior to the event.
 9. [After](/After/overview.md) – Immediate responses, site changes, and media/legal developments.
 10. [Tyler Robinson](/Tyler/overview.md) – The accused, defense posture, and alternative claims.
