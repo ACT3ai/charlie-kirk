@@ -6,7 +6,9 @@ Welcome to the Charlie Kirk assassination investigation documentation.
 [Read the full investigation document](charlie-kirk.md)
 
 ## Topics
-- [Topics3 Directory](Topics3/)
+- [Topics Overview](/Topics) - Comprehensive list of investigation topics
+- [Topic Analyses](/Topic-Analyses) - Detailed analysis files
+- [Topics3 Directory](Topics3/overview) - Additional topic categories
 
 ---
 *This site was last updated: $(date)*

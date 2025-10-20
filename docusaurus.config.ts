@@ -73,7 +73,9 @@ const config: Config = {
       },
       items: [
         { to: '/', label: 'Charlie Kirk', position: 'left' },
-        { to: '/topics', label: 'Topics', position: 'left' },
+        { to: '/Topics', label: 'Topics', position: 'left' },
+        { to: '/Topic-Analyses', label: 'Analyses', position: 'left' },
+        { to: '/Topics3/overview', label: 'Topics3', position: 'left' },
         { to: '/blog', label: 'Blog', position: 'left' },
       ],
     },
