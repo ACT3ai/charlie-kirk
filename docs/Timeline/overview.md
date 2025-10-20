@@ -46,6 +46,8 @@
 
 
 ## Timeline on 2025: Full Detail
+- Jul 11–13: Megyn Kelly & Charlie Kirk at TPUSA SAS (Tampa, FL) ([YouTube](https://www.youtube.com/watch?v=ccRNaLGavf8)).
+- Jul 16: Ami's House podcast: Inside the Turning Point USA Fallout ([YouTube](https://www.youtube.com/watch?v=8HkNMTNHsa8)).
 - Jul 18: Research notes assert a decision point to assassinate Kirk in Utah.
 - Jul 20: Egyptian Air Force Gulfstream (SU-BTT) reportedly makes its first U.S. trip (to a U.S. Army base in Nebraska); same day, a military meeting with foreign leaders occurs on U.S. soil.
 - Jul 31: WH meeting organized by Faith & Freedom Coalition, Latino Coalition for Israel, and the Philos Project on confronting “woke-right” narratives; attendees reportedly include Ralph Reed, Luke Moon, Mario Bramnick, Yehuda Kaploun, and Yair Netanyahu. TPUSA not present.
@@ -57,6 +59,7 @@
 - Sep 10 (12:23 PM MDT): Assassination occurs at UVU; subsequent low-altitude activity by N1098L reported after the shooting.
 - Sep 10 (evening): Private jet N888KG departs PVU, disables ADS-B during flight, later returns.
 - Sep 11: SU-BTT departs the U.S. to Egypt.
+- Sep 19: Demystifying the Mossad with ex–Mossad chief Yossi Cohen ([YouTube](https://www.youtube.com/watch?v=qpGPZHdil1E), [Apple Podcasts](https://podcasts.apple.com/uy/podcast/demystifying-the-mossad-with-ex-mossad-chief-yossi-cohen/id1589871008?i=1000727438458)).
 
 ## Timeline on 2024: Full Detail
 - Dec 2024: Research notes cite early Google searches for locations and key figures tied to the case.
