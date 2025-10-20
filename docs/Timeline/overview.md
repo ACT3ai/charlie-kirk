@@ -1,17 +1,35 @@
 # Timeline
 
-## Overview
-This directory contains timeline analysis and chronological information related to the Charlie Kirk incident.
+## Timeline
+* Timeline on Sept 10th: [Summary], [Full Detail]
+* Timeline: 2025: [Summary], [Full Detail]
+* Timeline: 2024: [Summary], [Full Detail]
 
-## Key Areas
-- Timeline 2024 & 2025
-- Chronological events
-- Sequence analysis
-- Time-based evidence
-- Event correlation
+## Timeline on Sept 10th: Summary
+- x
+- y
 
-## Status
-- [ ] Initial research
-- [ ] Evidence collection
-- [ ] Analysis
-- [ ] Documentation
+
+## Timeline on 2025: Summary
+- x
+- y
+
+## Timeline on 2024: Summary
+- x
+- y
+
+
+
+## Timeline on Sept 10th: Full Detail
+- x
+- y
+
+
+## Timeline on 2025: Full Detail
+- x
+- y
+
+## Timeline on 2024: Full Detail
+- x
+- y
+

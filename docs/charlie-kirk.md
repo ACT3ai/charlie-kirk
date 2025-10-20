@@ -102,6 +102,7 @@ REASONING: His powerful [30-06 Mauser 98 gun] would have destroyed his neck. And
 
 ### Topic Areas
 
+- [Influencers](Influencers/overview.md), [X](Influencers/x.md), [Podcasts](Influencers/podcasts.md), [YouTube](Influencers/YouTube.md)
 - [After](After/overview.md)
 - [Before](Before/overview.md)
 - [CIA](CIA/overview.md)
