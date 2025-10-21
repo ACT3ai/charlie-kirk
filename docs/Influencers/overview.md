@@ -7,6 +7,7 @@ This document contains information about podcast coverage of the Charlie Kirk in
 * Dec 19-24, 2024: AmericaFest 2024: December 2025 Turning Point USA
   * Tucker Carlson talke dabout Epstein may have been involved in a blackmail operation potentially on behalf of foreign intelligence services (possibly Israel's Mossad).
   * Tucker Carlson (closing the first night), Donald J. Trump, Ben Shapiro, Glenn Beck, Patrick Bet-David, Donald Trump Jr., Dr. Ben Carson, Steve Bannon, Rob Schneider, and others
+  * https://www.youtube.com/watch?v=0aLXZj-oBLE
   * https://www.youtube.com/watch?v=1oU0pGTGuDY
   * https://www.youtube.com/playlist?list=PLnZT7Gz_VSN520UilgmZqikvi3n1MsuZR
   * https://www.youtube.com/playlist?list=PLuXXbBFpPc0lhc6PfJae8Rav-gMNpmeuL
