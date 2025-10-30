@@ -7,48 +7,67 @@ v3.5
 - Details: [Everything about Tyle Robinson](/Tyler/overview.md), [Gun](/Gun_Bullet/overview.md), [Walkin Path](/Tyler/Travel.md), [Girlfriend](/Tyler/Girlfriend/overview.md), [Case & Trial](/Tyler/Trial/overview.md)
 
 
-| Column 1 | Column 2 | Column 3 |
-|-----------|-----------|-----------|
-| * Apple   | * Eagle   | * Iron    |
-| * Banana  | * [Vote](/Vote/overview.md)  | * Jade    |
-| * Cherry  | * Goose   | * Kite    |
-| * Date    | * Hawk    | * [Vote](/Vote/overview.md)   |
-
 
 ## Biggest "Question Marks" that conclude others could likely be involved:
 REASONING: His powerful [30-06 Mauser 98 gun] would have destroyed his neck. And caused [Blood all over the Tent]. Tyler Robinson didn't kill Charlie Kirk.
 - Details: [Everything about Tyle Robinson], [Gun], [Walkin Path], [Girlfriend], [Case & Trial]
 
 <div style={{ display: "flex", justifyContent: "space-between", gap: "2rem" }}>
-
   <div style={{ flex: 1 }}>
-  
-  * Apple  
-  * [Vote](/Vote/overview.md)  
-  * Cherry  
-  * Date  
-  
+  * [Charlie Kirk](/Charlie/overview.md]
+  * [Real Killer](/Killer/overview.md)  
+  * [Timeline](Timeline/overview.md) 
+  * [Motive](Motive/overview.md) 
+  * [Israel](</Israel/overview.md>)
+  * [Autopsy](Charlie/Autopsy.md)
   </div>
-
   <div style={{ flex: 1 }}>
-  
-  * Eagle  
   * [Vote](/Vote/overview.md)  
-  * Goose  
-  * Hawk  
-  
+  * [Bad Laws](/Fix/overview.md)
+  * [Bad Politicians](/Fix/Politicians.md)
+  * [Maps](maps/overview.md)  
+  * [Censorship](/Censorship/overview.md)
+  * [FBI](FBI/overview.md) (Cover up / Bad Behavior)
   </div>
-
   <div style={{ flex: 1 }}>
-  
-  * Iron  
-  * Jade  
-  * [Vote](/Vote/overview.md)  
-  * Lime  
-  
+  * [Tyle Robinson](/Tyler/overview.md) 
+  * [Possible Shootering Locations](Shooting_Locations/overview.md) 
+  * [Videos](Videos/overview.md)  
+  * [Photos](Photos/overview.md)  
+  * [UVU](UVU/overview.md) & [Locations](/Locations/overview.md)
+  * [Medical](Medical/overview.md) 
   </div>
-
 </div>
+
+<div style={{ display: "flex", justifyContent: "space-between", gap: "2rem" }}>
+  <div style={{ flex: 1 }}>
+  * [Before](Before/overview.md)  
+  * [After](After/overview.md)  
+  * [List of Individuals](/People/overview.md)
+  * [Media Articles](/media/overview.md)
+  * [(Possible) Cover-up](CoverUp/overview.md)
+  * [TPUSA](TPUSA/overview.md)
+  </div>
+  <div style={{ flex: 1 }}>
+  * [UVU Courtyard](/UVU/Courtyward.md) & [Tent](Tent/overview.md)
+  * [Theories](/Theories/overview.md)
+  * [On Podcasts](/Influencers/podcasts.md)
+  * [Influencers](Influencers/overview.md): On [X](/Influencers/x.md), [Podcasts](/Influencers/Podcasts.md), [YouTube](Influencers/youtube.md)
+  * [CIA](CIA/overview.md) 
+  * [Drones](Drones/overview.md)
+  </div>
+  <div style={{ flex: 1 }}>
+  * [Tyler Robinson Shooting](Tyler/shooting/overview.md)
+  * [Tyler Before](</Tyler/Before.md>)
+  * [Videos](Videos/overview.md)  
+  * [Photos](Photos/overview.md)  
+  * [Planes](/Planes/overview.md)
+  * [Other](</Other/overview.md>)
+  </div>
+</div>
+
+  * [TPUSA](Topics3/TPUSA/overview.md)
+
 
 ## Tyler Robinson
 - REASONING: His powerful [30-06 Mauser 98 gun](/Gun_Bullet/overview.md) would have destroyed his neck. And caused [Blood all over the Tent]. Tyler Robinson didn't kill [Charlie Kirk](/Charlie/overview.md).
