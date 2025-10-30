@@ -2,16 +2,53 @@
 v3.5
 
 ## Tyler Robinson didn't do it
-- REASONING: His powerful [30-06 Mauser 98 gun](/Gun_Bullet/overview.md) would have destroyed his neck. And caused [Blood all over the Tent](Courtyard/Tent.md). [Tyler Robinson](Tyler/overview.md) didn't kill [Charlie Kirk](Charlie/overview.md).
-- Details: [Everything about Tyle Robinson](Tyler/overview.md), [Gun](Gun_Bullet/overview.md), [Walkin Path], [Girlfriend], [Case & Trial](Trial/overview.md)
-- [Motive](Motive/overview.md): 
+- REASONING: His powerful [30-06 Mauser 98 gun](/Gun_Bullet/overview.md) would have destroyed [Charlie Kirk](/Charlie/overview.md)'s neck. And would have caused [Blood all over the Tent](Courtyard/Tent.md). [Tyler Robinson](/Tyler/overview.md) didn't kill [Charlie Kirk](/Charlie/overview.md).
+- [Motive](/Motive/overview.md): 
 - Details: [Everything about Tyle Robinson](/Tyler/overview.md), [Gun](/Gun_Bullet/overview.md), [Walkin Path](/Tyler/Travel.md), [Girlfriend](/Tyler/Girlfriend/overview.md), [Case & Trial](/Tyler/Trial/overview.md)
+
+
+| Column 1 | Column 2 | Column 3 |
+|-----------|-----------|-----------|
+| * Apple   | * Eagle   | * Iron    |
+| * Banana  | * [Vote](/Vote/overview.md)  | * Jade    |
+| * Cherry  | * Goose   | * Kite    |
+| * Date    | * Hawk    | * [Vote](/Vote/overview.md)   |
 
 
 ## Biggest "Question Marks" that conclude others could likely be involved:
 REASONING: His powerful [30-06 Mauser 98 gun] would have destroyed his neck. And caused [Blood all over the Tent]. Tyler Robinson didn't kill Charlie Kirk.
 - Details: [Everything about Tyle Robinson], [Gun], [Walkin Path], [Girlfriend], [Case & Trial]
 
+<div style={{ display: "flex", justifyContent: "space-between", gap: "2rem" }}>
+
+  <div style={{ flex: 1 }}>
+  
+  * Apple  
+  * [Vote](/Vote/overview.md)  
+  * Cherry  
+  * Date  
+  
+  </div>
+
+  <div style={{ flex: 1 }}>
+  
+  * Eagle  
+  * [Vote](/Vote/overview.md)  
+  * Goose  
+  * Hawk  
+  
+  </div>
+
+  <div style={{ flex: 1 }}>
+  
+  * Iron  
+  * Jade  
+  * [Vote](/Vote/overview.md)  
+  * Lime  
+  
+  </div>
+
+</div>
 
 ## Tyler Robinson
 - REASONING: His powerful [30-06 Mauser 98 gun](/Gun_Bullet/overview.md) would have destroyed his neck. And caused [Blood all over the Tent]. Tyler Robinson didn't kill [Charlie Kirk](/Charlie/overview.md).
