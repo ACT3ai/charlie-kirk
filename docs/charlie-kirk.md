@@ -1,5 +1,5 @@
 # Who Assassinated Charlie Kirk
-v3.6
+v3.7
 
 ## Tyler Robinson didn't do it
 - Details: [Everything about Tyle Robinson](Tyler/overview.md), [Gun](Gun_Bullet/overview.md), [Walkin Path], [Girlfriend], [Case & Trial](Tyler/Trial/overview.md)
