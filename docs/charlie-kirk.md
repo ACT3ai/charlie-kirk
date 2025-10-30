@@ -105,114 +105,53 @@ REASONING: His powerful [30-06 Mauser 98 gun] would have destroyed his neck. And
 
 ## Areas of Investigation
 - [FBI](FBI/overview.md): [(Possible) Cover-up], [Connecticut](FBI/Connecticut.md)
-- [Planes]: [Drone Launching N1098L], [Leadership Plane]
 - [TPUSA](Topics3/TPUSA/overview.md): [Security Team], [Employees], [Donors]
-- [Suspects (List)]: [Tyler Robinson], [CIA], [Israel]
-- [Possible Shootering Locations]: [Close Up], [South Stairs], [Tyler Robinson Shooting], [Drone], [Other]
-- [Locations]: [UVU Courtyard], [Tent], [Tyler Location]
-- [Maps](maps/overview.md)
-- [Videos](Videos/overview.md) - [Location](Locations/overview.md)
-- [Photos](Photos/overview.md) - [Location]
-- [Podcast / YouTube Analysis](Influencers/overview.md)
 - [After](After/overview.md): [Tyler After], [Tent Construction](Tent/overview.md), [Medical](Medical/overview.md)
 - [Before](Before/overview.md): [Suspect Before Actions], [Leadership Plane](Plane/Leadership/overview.md), [Spy Plane](Plane/N1098L/overview.md)
-- [Medical](Medical/overview.md): [(Possible) Cover-up]
-- [Timeline](Timeline/overview.md): [Timeline 2024 & 2025](Timeline/overview.md)
 
 
 ## Charlie Kirk
-- [Leadership into d]
+<div style={{ display: "flex", justifyContent: "space-between", gap: "2rem" }}>
+  <div style={{ flex: 1 }}>
+  * [Charlie Kirk](/Charlie/overview.md]
+  * [Timeline](Timeline/overview.md) 
+  * [Autopsy](Charlie/Autopsy.md)
+  </div>
+  <div style={{ flex: 1 }}>
+  * [TPUSA](TPUSA/overview.md)
+  * [Media Articles on him](/media/charlie.md)
+  </div>
+  <div style={{ flex: 1 }}>
+  * [Charlie Videos](Videos/charlie.md)  
+  * [Charlie Photos](Photos/charlie.md)  
+  * [Medical](Medical/overview.md) 
+  </div>
+</div>
 
 
-## Importance & Value of Charlie Kirk
-- Family man
-- [Nice & Ethical man](Charlie/overview.md)
-- [Critical Leader]
-- Bridge
+
+
+## Charlie Kirk: An incredible man
+Charlie Kirl was an amazing man. A [Family man](Charlie/Family_man.md), [Nice & Ethical man](Charlie/overview.md), and
+[Political Leader](Charlie/Political_Leader.md)
 
 
 ## Investigation Thesis
 - TBD
 
 
-## Other in Investigation
-- [List of Individuals](/People/overview.md)
-- [Possible Distraction Patsys](/Patsys/overview.md)
-- [UVU Campus](/UVU/maps.md)
-- [Censorship](/Censorship/overview.md)
-
 
 ## Citizen Investigators: X / Podcasts / YouTube / etc.
-- [On Podcasts](/Influencers/podcasts.md)
-- [On X](/Influencers/x.md)
-- [On YouTube](/Influencers/youtube.md)
+Citizen Investigators & [Influencers](/Influencers/overview.md). including [Podcasts](/Influencers/podcasts.md),
+[X Influencers](/Influencers/x.md), and [YouTube Influencers](/Influencers/youtube.md).
 
 
-## Investigation Topics
-
-📋 **[View All Investigation Topics](/Topics)** - Comprehensive list of 128 topics related to the Charlie Kirk assassination investigation, September 10th, 2025 events, plane flights, drones, and UVU university.
-
-📊 **[Individual Topic Analyses](/Topic-Analyses)** - Direct links to all 128 detailed topic analysis files with comprehensive research and evidence.
-
-
-
-### Topic Areas
-
+### To Organize
 - [Influencers](Influencers/overview.md), [X](Influencers/x.md), [Podcasts](Influencers/podcasts.md), [YouTube](Influencers/youtube.md)
-- [After](After/overview.md)
-- [Before](Before/overview.md)
-- [CIA](CIA/overview.md)
-- [Drones](Drones/overview.md)
-- [FBI](./Topics3/FBI/overview)
-- [Israel](<./Topics3/Israel/overview>)
-- [Location](<./Topics3/Location/overview>)
-- [Locations](<./Topics3/Locations/overview>)
-- [Maps](<./Topics3/Maps/overview>)
-- [Medical](<./Topics3/Medical/overview>)
-- [Other](<./Topics3/Other/overview>)
-- [Photos](<./Topics3/Photos/overview>)
-- [Planes](<./Topics3/Planes/overview>)
-- [Podcast / YouTube Analysis](<./Topics3/Podcast_YouTube_Analysis/overview>)
-- [Possible Shootering Locations](<./Topics3/Possible Shootering Locations/overview>)
-- [(Possible) Cover-up](<./Topics3/Possible_) _Cover-up/overview>)
 - [South Stairs](<./Topics3/South Stairs/overview>)
-- [Suspect Before Actions](<./Topics3/Suspect Before Actions/overview>)
-- [Suspects (List)](<./Topics3/Suspects (List)/overview>)
-- [Timeline](<./Topics3/Timeline/overview>)
-- [TPUSA](TPUSA/overview.md)
-- [Tyler Robinson](Tyler/overview.md)
-- [Tyler Robinson Shooting](Tyler/shooting/overview.md)
-- [Videos](Videos/overview.md)
-
-
-## Investigation Sections
-
-### Core Analysis
-- [Analysis Documentation](/analysis_documentation/overview) - Comprehensive analysis and documentation
-- [Timeline Events](/timeline_events/overview) - Chronological sequence of events
-- [Key Individuals](/key_individuals/overview) - People involved in the investigation
-
-### Technical Analysis
-- [Aircraft Flight Analysis](/aircraft_flight_analysis/overview) - Flight records and aircraft investigations
-- [Technology & Surveillance](/technology_surveillance/overview) - Drones, surveillance, and technical evidence
-- [Social Media Analysis](/social_media_analysis/overview) - Online posts, platforms, and digital evidence
-
-### Institutional Analysis
+- [Possible Distraction Patsys](/Patsys/overview.md)
 - [Government Organizations](/government_organizations/overview) - FBI, CIA, DOJ, and other agencies
 - [Legal Investigation](/legal_investigation/overview) - Legal proceedings and evidence handling
 - [Security & Law Enforcement](/security_law_enforcement/overview) - Security measures and law enforcement response
-
-### Context & Response
-- [Political Context](/political_context/overview) - Political environment and implications
-- [Media Response](/media_response/overview) - News coverage and media analysis
-- [Campus & University](/campus_university/overview) - UVU and educational institution responses
-
-### Theories & Groups
-- [Conspiracy Theories](/conspiracy_theories/overview) - Various conspiracy theories and analysis
 - [Organizations & Groups](/organizations_groups/overview) - Related organizations and groups
-
-### Locations & Other
 - [Property & Locations](/property_locations/overview) - Physical locations and properties
-- [Other Topics](/other_topics/overview) - Additional related topics and analysis
-
-How Holons work.<!-- GitHub Pages refresh trigger: Fri Oct 17 14:36:17 PDT 2025 -->
