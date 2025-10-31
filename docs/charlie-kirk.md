@@ -14,7 +14,7 @@ REASONING: His powerful [30-06 Mauser 98 gun] would have destroyed his neck. And
 
 <div style={{ display: "flex", justifyContent: "space-between", gap: "2rem" }}>
   <div style={{ flex: 1 }}>
-  * [Charlie Kirk](/Charlie/overview.md]
+  * [Charlie Kirk](/Charlie/overview.md)
   * [Real Killer](/Killer/overview.md)  
   * [Timeline](Timeline/overview.md) 
   * [Motive](Motive/overview.md) 
@@ -44,7 +44,7 @@ REASONING: His powerful [30-06 Mauser 98 gun] would have destroyed his neck. And
   * [Before](Before/overview.md)  
   * [After](After/overview.md)  
   * [List of Individuals](/People/overview.md)
-  * [Media Articles](/media/overview.md)
+  * [Media Articles](/Media/overview.md)
   * [(Possible) Cover-up](CoverUp/overview.md)
   * [TPUSA](TPUSA/overview.md)
   </div>
@@ -52,7 +52,7 @@ REASONING: His powerful [30-06 Mauser 98 gun] would have destroyed his neck. And
   * [UVU Courtyard](/UVU/Courtyward.md) & [Tent](Tent/overview.md)
   * [Theories](/Theories/overview.md)
   * [On Podcasts](/Influencers/podcasts.md)
-  * [Influencers](Influencers/overview.md): On [X](/Influencers/x.md), [Podcasts](/Influencers/Podcasts.md), [YouTube](Influencers/youtube.md)
+  * [Influencers](Influencers/overview.md): On [X](/Influencers/x.md), [Podcasts](/Influencers/podcasts.md), [YouTube](Influencers/youtube.md)
   * [CIA](CIA/overview.md) 
   * [Drones](Drones/overview.md)
   </div>
@@ -113,17 +113,17 @@ REASONING: His powerful [30-06 Mauser 98 gun] would have destroyed his neck. And
 ## Charlie Kirk
 <div style={{ display: "flex", justifyContent: "space-between", gap: "2rem" }}>
   <div style={{ flex: 1 }}>
-  * [Charlie Kirk](/Charlie/overview.md]
+  * [Charlie Kirk](/Charlie/overview.md)
   * [Timeline](Timeline/overview.md) 
   * [Autopsy](Charlie/Autopsy.md)
   </div>
   <div style={{ flex: 1 }}>
   * [TPUSA](TPUSA/overview.md)
-  * [Media Articles on him](/media/charlie.md)
+  * [Media Articles on him](/Media/overview.md)
   </div>
   <div style={{ flex: 1 }}>
-  * [Charlie Videos](Videos/charlie.md)  
-  * [Charlie Photos](Photos/charlie.md)  
+  * [Charlie Videos](/Videos/overview.md)  
+  * [Charlie Photos](/Photos/overview.md)  
   * [Medical](Medical/overview.md) 
   </div>
 </div>
@@ -132,8 +132,8 @@ REASONING: His powerful [30-06 Mauser 98 gun] would have destroyed his neck. And
 
 
 ## Charlie Kirk: An incredible man
-Charlie Kirl was an amazing man. A [Family man](Charlie/Family_man.md), [Nice & Ethical man](Charlie/overview.md), and
-[Political Leader](Charlie/Political_Leader.md)
+Charlie Kirl was an amazing man. A [Nice & Ethical man](/Charlie/overview.md), and
+[Political Leader](/Charlie/overview.md)
 
 
 ## Investigation Thesis
