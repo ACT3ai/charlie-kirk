@@ -1,20 +1,10 @@
 # Charlie Kirk
 
-## Overview
-This directory contains comprehensive information about Charlie Kirk, his character, and his importance.
+## Introduction
 
-## Key Areas
-- Personal background
-- Character analysis
-- Leadership qualities
-- Ethical values
-- Legacy and impact
+If Tyler Robinson didn't act alone—or didn't do it at all—then understanding who else might have been involved requires understanding Charlie Kirk himself: why he mattered, who might have wanted him silenced, and what was happening in his life and work in the weeks before September 10, 2025.
 
-## Status
-- [ ] Initial research
-- [ ] Evidence collection
-- [ ] Analysis
-- [ ] Documentation
+This section examines Charlie as the victim and central figure in the Utah Valley University event. It explores his political significance, his reportedly shifting positions on key issues in mid-2025, the potential motives of various actors who may have viewed him as a threat, and the security circumstances that day. The analysis synthesizes public sources, analyst reports, and citizen research, maintaining appropriate skepticism on contested claims while documenting the investigative questions that point toward coordinated action beyond a lone shooter.
 
 ## Purpose of this Section (Charlie)
 
