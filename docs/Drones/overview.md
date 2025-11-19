@@ -36,8 +36,8 @@ Answers to these questions would help clarify whether drones played only benign 
 
 ## Related sections
 
-- `Planes` – for detailed discussion of aircraft movements and alleged drone‑deployment scenarios.
-- `Timeline` and `Maps` – for situating drone activity in time and space relative to the event.
-- `Videos` and `Killer` – for analyses that rely on aerial or elevated perspectives to support or challenge shooter‑location theories.
+- [Planes](/Planes/overview.md) – for detailed discussion of aircraft movements and alleged drone‑deployment scenarios.
+- [Timeline](/Timeline/overview.md) and [Maps](maps/overview.md) – for situating drone activity in time and space relative to the event.
+- [Videos](/Videos/overview.md) and [Killer](/Killer/overview.md) – for analyses that rely on aerial or elevated perspectives to support or challenge shooter‑location theories.
 
 As with all technical topics in this project, readers should look for **consistent, well‑documented evidence** and be cautious about drawing strong conclusions where data are incomplete or contested.

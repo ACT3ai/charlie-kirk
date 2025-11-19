@@ -52,4 +52,12 @@ Because this topic can easily slide from policy analysis into broad accusations,
 - Aggregated “connection lists” can highlight patterns worth examining but can also **overstate significance** if not grounded in concrete, verifiable links to planning or execution of the crime.
 - Assigning responsibility based on geopolitical motive alone risks unfairly stigmatizing entire communities or institutions without solid proof.
 
-Readers should therefore treat this Israel section as a guide to how and why Israel appears in the project’s materials—not as a verdict about who is responsible. For deeper context, see related sections on `Charlie`, `Motive`, `TPUSA`, `Planes`, and `Real Killer`, which explore how Israel‑related themes intersect with timelines, donors, and competing theories.
+Readers should therefore treat this Israel section as a guide to how and why Israel appears in the project’s materials—not as a verdict about who is responsible. For deeper context, see related sections on [Charlie](/Charlie/overview.md), [Motive](/Motive/overview.md), [TPUSA](/TPUSA/overview.md), [Planes](/Planes/overview.md), and [Real Killer](/Killer/overview.md), which explore how Israel‑related themes intersect with timelines, donors, and competing theories.
+
+## Level_3 Pages within this Section
+
+The following in-depth pages expand on specific Israel‑related themes and should be consulted alongside this overview:
+
+- [Reported Charlie Kirk Quotes About Israel and Donors (Claims)](Charlie_Quotes_Israel.md)
+- [Reported Israeli Search‑Pattern and IP Activity (Claims)](Israeli_Search_Patterns_Claims.md)
+- [Alleged Israeli Presence and Connectivity at UVU and in the Case (Claims)](Israeli_Presence_And_Connectivity_Claims.md)

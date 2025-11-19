@@ -56,3 +56,9 @@ From an investigative standpoint, several questions remain open and would benefi
 - Are there any **redacted or summarized autopsy findings** that could be made public without violating SB0082 but that would help resolve key ballistic and medical disputes?
 
 As with the rest of this project, any updates to this page should clearly separate **established facts** (from court filings, official releases, or authenticated documents) from **claims, theories, and concerns** drawn from media and citizen‑research commentary.
+
+## Level_3 Pages within this Section
+
+The following in-depth page currently expands on a key subtopic related to the autopsy and should be consulted alongside this overview:
+
+- [Utah Autopsy Law, Medical‑Examiner Practices, and Commentary (Claims)](Autopsy_Law_Practices.md)

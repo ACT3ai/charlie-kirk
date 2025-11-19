@@ -30,7 +30,7 @@ Beyond the immediate campus, maps help situate:
 - **Flight paths of aircraft** like N1098L and various Egyptian‑registered planes, including their proximity to UVU and the broader region.
 +- **Regional geography**, such as distances between airports, cities, and other points of interest that appear in the research file.
 
-For detailed discussion of specific aircraft and their movements, see `Planes/overview.md` and related pages.
+For detailed discussion of specific aircraft and their movements, see [Planes](/Planes/overview.md) and related pages.
 
 ## How to use this section
 
@@ -40,4 +40,4 @@ Readers can use the Maps section to:
 - Cross‑check narrative claims against **distances and travel times**.
 - Understand how different shooter‑location or travel theories fit—or fail to fit—the geography.
 
-As more diagrams, screenshots, or 3D reconstructions are added, they can be linked from this page to provide visual context for the analysis in sections like `Timeline`, `Shooting_Locations`, `Tyler_Robinson`, and `Planes`.
+As more diagrams, screenshots, or 3D reconstructions are added, they can be linked from this page to provide visual context for the analysis in sections like [Timeline](/Timeline/overview.md), [Shooting Locations](/Shooting_Locations/overview.md), [Tyler Robinson](/Tyler_Robinson/overview.md), and [Planes](/Planes/overview.md).

@@ -15,7 +15,7 @@ v3.7
 
 
 ## Biggest "Question Marks" that conclude others could likely be involved:
-REASONING: His powerful [30-06 Mauser 98 gun] would have destroyed his neck. And caused [Blood all over the Tent]. Tyler Robinson didn't kill Charlie Kirk.
+REASONING: His powerful [30-06 Mauser 98 gun](/Gun_Bullet/overview.md) would have destroyed his neck. And caused [Blood all over the Tent](Tent/overview.md). Tyler Robinson didn't kill [Charlie Kirk](/Charlie/overview.md).
  
 
 <div style={{ display: "flex", justifyContent: "space-between", gap: "2rem" }}>
@@ -24,7 +24,7 @@ REASONING: His powerful [30-06 Mauser 98 gun] would have destroyed his neck. And
   * [Real Killer](/Killer/overview.md)  
   * [Timeline](Timeline/overview.md) 
   * [Motive](Motive/overview.md) 
-  * [Israel](</Israel/overview.md>)
+  * [Israel](/Israel/overview.md)
   * [Autopsy](Charlie/Autopsy.md)
   </div>
   <div style={{ flex: 1 }}>
@@ -64,17 +64,17 @@ REASONING: His powerful [30-06 Mauser 98 gun] would have destroyed his neck. And
   </div>
   <div style={{ flex: 1 }}>
   * [Tyler Robinson Shooting](Tyler/shooting/overview.md)
-  * [Tyler Before](</Tyler/Before.md>)
+  * [Tyler Before](/Tyler/Before.md)
   * [Videos](Videos/overview.md)  
   * [Photos](Photos/overview.md)  
   * [Planes](/Planes/overview.md)
-  * [Other](</Other/overview.md>)
+  * [Other](/Other/overview.md)
   </div>
 </div>
 
 
 ## Tyler Robinson
-- REASONING: His powerful [30-06 Mauser 98 gun](/Gun_Bullet/overview.md) would have destroyed his neck. And caused [Blood all over the Tent]. Tyler Robinson didn't kill [Charlie Kirk](/Charlie/overview.md).
+- REASONING: His powerful [30-06 Mauser 98 gun](/Gun_Bullet/overview.md) would have destroyed his neck. And caused [Blood all over the Tent](Tent/overview.md). Tyler Robinson didn't kill [Charlie Kirk](/Charlie/overview.md).
 - Other Actors, taking Action before: [Google Searches](/GoogleSearches/overview.md)
 
 
@@ -94,7 +94,7 @@ REASONING: His powerful [30-06 Mauser 98 gun] would have destroyed his neck. And
 - [Autopsy](Charlie/Autopsy.md)
 - [Video footage](cameras/security/overview.md): [UVU Video footage](cameras/security/UVU_Security_Cameras.md)
 - [Spy Plane](Planes/N1098L/overview.md)
-- [Intelligent recruited him](Tyler_Robinson/Recruited.md). Girlfriend links to intelligence.
+- [Intelligent recruited him](Tyler_Robinson/Recruited.md). [Girlfriend](Tyler_Robinson/Girlfriend/overview.md) links to [intelligence](/intelligence/overview.md).
 - [Communication with intelligent (or anyone else) with Tyler](/intelligence/overview.md)
 - [All known intelligence about foreign country](/intelligence/overview.md) (or US intelligence) doing prep-work
 - Who was involved with [planes](/Planes/N1098L/overview.md). Or visits. Or meetings
@@ -108,10 +108,10 @@ REASONING: His powerful [30-06 Mauser 98 gun] would have destroyed his neck. And
 
 
 ## Areas of Investigation
-- [FBI](FBI/overview.md): [(Possible) Cover-up], [Connecticut](FBI/Connecticut.md)
-- [TPUSA](Topics3/TPUSA/overview.md): [Security Team], [Employees], [Donors]
-- [After](After/overview.md): [Tyler After], [Tent Construction](Tent/overview.md), [Medical](Medical/overview.md)
-- [Before](Before/overview.md): [Suspect Before Actions], [Leadership Plane](Plane/Leadership/overview.md), [Spy Plane](Plane/N1098L/overview.md)
+- [FBI](FBI/overview.md): [(Possible) Cover-up](CoverUp/overview.md), [Connecticut](FBI/Connecticut.md)
+- [TPUSA](Topics3/TPUSA/overview.md): [Security Team](Topics3/TPUSA/overview.md), [Employees](Topics3/TPUSA/overview.md), [Donors](Topics3/TPUSA/overview.md)
+- [After](After/overview.md): [Tyler After](Topics3/After/overview.md), [Tent Construction](Tent/overview.md), [Medical](Medical/overview.md)
+- [Before](Before/overview.md): [Suspect Before Actions](<Topics3/Suspect Before Actions/overview.md>), [Leadership Plane](Plane/Leadership/overview.md), [Spy Plane](Plane/N1098L/overview.md)
 
 
 ## Charlie Kirk
@@ -152,10 +152,10 @@ Citizen Investigators & [Influencers](/Influencers/overview.md). including [Podc
 
 ### To Organize
 - [Influencers](Influencers/overview.md), [X](Influencers/x.md), [Podcasts](Influencers/podcasts.md), [YouTube](Influencers/youtube.md)
-- [South Stairs](<./Topics3/South Stairs/overview>)
+- [South Stairs](<./Topics3/South Stairs/overview.md>)
 - [Possible Distraction Patsys](/Patsys/overview.md)
-- [Government Organizations](/government_organizations/overview) - FBI, CIA, DOJ, and other agencies
-- [Legal Investigation](/legal_investigation/overview) - Legal proceedings and evidence handling
-- [Security & Law Enforcement](/security_law_enforcement/overview) - Security measures and law enforcement response
-- [Organizations & Groups](/organizations_groups/overview) - Related organizations and groups
-- [Property & Locations](/property_locations/overview) - Physical locations and properties
+- [Government Organizations](/government_organizations/overview.md) - FBI, CIA, DOJ, and other agencies
+- [Legal Investigation](/legal_investigation/overview.md) - Legal proceedings and evidence handling
+- [Security & Law Enforcement](/security_law_enforcement/overview.md) - Security measures and law enforcement response
+- [Organizations & Groups](/organizations_groups/overview.md) - Related organizations and groups
+- [Property & Locations](/property_locations/overview.md) - Physical locations and properties

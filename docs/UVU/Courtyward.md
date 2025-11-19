@@ -32,4 +32,4 @@ The UVU courtyard is where many investigative threads converge:
 - Security and law‑enforcement questions—such as patrol patterns, rooftop checks, and perimeter control—play out in and around the courtyard.
 - Drone and aircraft analyses often reference how aerial views relate to the courtyard layout and crowd distribution.
 
-For more detailed technical discussion, see related sections on `Tent`, `Shooting_Locations`, `Timeline`, `Tyler_Robinson`, and `Planes`.
+For more detailed technical discussion, see related sections on [Tent](/Tent/overview.md), [Shooting Locations](/Shooting_Locations/overview.md), [Timeline](/Timeline/overview.md), [Tyler Robinson](/Tyler_Robinson/overview.md), and [Planes](/Planes/overview.md).

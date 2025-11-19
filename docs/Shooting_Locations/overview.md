@@ -12,7 +12,7 @@ In the official narrative and charging documents, Tyler Robinson is alleged to h
 - The presence of a high‑powered rifle attributed to Robinson, recovered in a nearby area.
 - Timing and movement claims about how he accessed and left the roof.
 
-Sections such as `Tyler_Robinson`, `Timeline`, and `Maps` explore the details and challenges associated with this account.
+Sections such as [Tyler Robinson](/Tyler_Robinson/overview.md), [Timeline](/Timeline/overview.md), and [Maps](maps/overview.md) explore the details and challenges associated with this account.
 
 ## Tent‑adjacent or interior shooter (claims)
 
@@ -22,7 +22,7 @@ One major alternative theory suggests the fatal shot came from **inside or immed
 - Video and still images are examined for possible reflections, flashes, or casing behavior near the tent fabric and equipment.
 - The tent’s structure and the nearby tunnel and courtyard features are used to argue for specific concealed positions.
 
-These ideas are developed further in the `Tent`, `Killer`, and `Videos` sections and remain contested.
+These ideas are developed further in the [Tent](/Tent/overview.md), [Killer](/Killer/overview.md), and [Videos](/Videos/overview.md) sections and remain contested.
 
 ## Vehicle‑based shooter (claims)
 
@@ -45,8 +45,8 @@ Maps and 3D reconstructions are especially important for evaluating whether thes
 
 ## How this section relates to other pages
 
-- For detailed spatial context, see `Maps`, `UVU Courtyard`, and `Locations`.
-- For ballistics, medical, and acoustic analysis, see `Medical`, `Charlie/Autopsy`, and `Theories`.
-- For broader narrative and motive considerations tied to shooter‑location debates, see `Killer`, `Motive`, and `Timeline`.
+- For detailed spatial context, see [Maps](maps/overview.md), [UVU Courtyard](/UVU/Courtyward.md), and [Locations](/Locations/overview.md).
+- For ballistics, medical, and acoustic analysis, see [Medical](/Medical/overview.md), [Charlie Kirk Autopsy](Charlie/Autopsy.md), and [Theories](/Theories/overview.md).
+- For broader narrative and motive considerations tied to shooter‑location debates, see [Killer](/Killer/overview.md), [Motive](/Motive/overview.md), and [Timeline](/Timeline/overview.md).
 
 Readers should use this page as a **conceptual index** of shooter‑location theories and follow links to topic‑specific sections to evaluate the underlying evidence.

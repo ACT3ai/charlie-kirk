@@ -5,7 +5,7 @@ This section covers **medical, forensic, and hospital‑related questions** surr
 
 ## Key medical and forensic topics
 
-The `Medical` section is structured around several focused pages:
+The [Medical](/Medical/overview.md) section is structured around several focused pages:
 
 - **Autopsy and medical examiner framework** – see [autopsy_and_medical_examiner.md](./autopsy_and_medical_examiner.md) for discussion of autopsy practices, legal constraints, and reported questions about what has and has not been released.
 - **Hospital and emergency response** – see [hospital_and_emergency_response.md](./hospital_and_emergency_response.md) for analyses of transport decisions, facility capabilities, and how the response aligns with standard trauma protocols.
@@ -24,5 +24,5 @@ Medical and forensic questions are central because they can clarify or challenge
 - The **timing and adequacy of emergency care**, including whether different choices could have altered outcomes.
 - How wound characteristics relate to proposed **weapons, devices, or shooter locations**.
 
-To place medical analysis in context, readers should consider it alongside sections such as `Timeline`, `Shooting_Locations`, `Charlie/Autopsy`, and `Killer`. As more verified medical information becomes available through official channels, this section can be updated to reflect a clearer evidentiary picture while preserving the distinction between evidence and theory.
+To place medical analysis in context, readers should consider it alongside sections such as [Timeline](/Timeline/overview.md), [Shooting Locations](/Shooting_Locations/overview.md), [Charlie Kirk Autopsy](Charlie/Autopsy.md), and [Killer](/Killer/overview.md). As more verified medical information becomes available through official channels, the evidentiary picture should become clearer while preserving the distinction between evidence and theory.
 

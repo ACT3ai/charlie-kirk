@@ -62,4 +62,13 @@ Across all of these categories, several cautionary points apply:
 - **Multiple motives can coexist** – Personal grievance, ideological conflict, and strategic interests may overlap; different individuals or groups might have had different reasons to care about Charlie’s trajectory.
 - **Attribution requires evidence** – Assigning responsibility based on motive alone risks serious error and potential injustice, especially when living individuals and organizations are involved.
 
-Readers should therefore treat this Motive section as a map of **what has been claimed and why people think it matters**, not as a verdict on who is guilty. For deeper context, see related sections on `Charlie`, `Tyler Robinson`, `TPUSA`, `Israel`, and `Real Killer`, which explore how these motive ideas intersect with timelines, evidence, and competing narratives.
+Readers should therefore treat this Motive section as a map of **what has been claimed and why people think it matters**, not as a verdict on who is guilty. For deeper context, see related sections on [Charlie](/Charlie/overview.md), [Tyler Robinson](/Tyler_Robinson/overview.md), [TPUSA](/TPUSA/overview.md), [Israel](/Israel/overview.md), and [Real Killer](/Killer/overview.md), which explore how these motive ideas intersect with timelines, evidence, and competing narratives.
+
+## Level_3 Pages within this Section
+
+The following in-depth pages expand on key motive themes and should be consulted alongside this overview:
+
+- [Donor Pressure, Israel, and Foreign‑Policy Motive Theories (Claims)](Donors_Israel_ForeignPolicy.md)
+- [Geopolitical and Intelligence‑Service Motive Theories (Claims)](Geopolitical_Intel_Service_Theories.md)
+- [Institutional, Media, and Organizational Motive Dynamics (Claims)](Institutional_Media_Organizational_Dynamics.md)
+- [Tyler Robinson’s Alleged Personal and Ideological Motives (As Reported)](Tyler_Robinson_Alleged_Motive.md)

@@ -31,7 +31,7 @@ TPUSA’s role in arranging security and production for the UVU event has been s
 - Commentators have raised questions about **camera placement, drone usage, and rooftop/tunnel monitoring**, including whether TPUSA‑controlled cameras and drones captured footage that has not yet been fully released to the public.
 - There are allegations and debates about whether security staffing, training, or coordination were adequate, and whether any last‑minute changes may have affected Charlie’s vulnerability on the day of the event.
 
-These issues are explored in more detail in sections such as `Security & Law Enforcement`, `Shooting Locations`, `Planes`, and `Tent`; this page simply highlights TPUSA’s role in those discussions.
+These issues are explored in more detail in sections such as [Security & Law Enforcement](/security_law_enforcement/overview.md), [Shooting Locations](/Shooting_Locations/overview.md), [Planes](/Planes/overview.md), and [Tent](/Tent/overview.md); this page simply highlights TPUSA’s role in those discussions.
 
 ## Donors, funding, and internal tension (claims)
 
@@ -47,8 +47,8 @@ These points are based on a mix of public statements, leaked messages, and comme
 
 To understand TPUSA’s place in the broader investigation, readers may want to explore:
 
-- `Charlie` – for how TPUSA shaped his public role and why changes in his views mattered.
-- `Motive` and `Israel` – for discussions of donor and geopolitical dynamics that intersect with TPUSA.
-- `Security & Law Enforcement`, `Planes`, and `Tent` – for analyses that touch on event production, security posture, and technical aspects of the shooting.
+- [Charlie](/Charlie/overview.md) – for how TPUSA shaped his public role and why changes in his views mattered.
+- [Motive](/Motive/overview.md) and [Israel](/Israel/overview.md) – for discussions of donor and geopolitical dynamics that intersect with TPUSA.
+- [Security & Law Enforcement](/security_law_enforcement/overview.md), [Planes](/Planes/overview.md), and [Tent](/Tent/overview.md) – for analyses that touch on event production, security posture, and technical aspects of the shooting.
 
-This overview is intended as a **starting point**: as more verified information about TPUSA’s internal decisions, security contracts, and donor relationships becomes available, additional detail can be added here or in dedicated subpages.
+This overview gives readers a **starting point** for understanding TPUSA’s role; as more verified information about TPUSA’s internal decisions, security contracts, and donor relationships becomes available, detailed subpages can provide deeper analysis.

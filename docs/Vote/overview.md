@@ -21,7 +21,7 @@ The case has prompted discussion about laws that affect **access to information 
 - Proposed or existing **social‑media and online‑speech regulations** that could impact public discussion of sensitive investigations.
 - Rules around **public records requests, transparency, and data retention** for law enforcement and related agencies.
 
-Rather than accepting slogans, voters can review how candidates and parties **explain and vote on specific bills**, and whether they support reforms that balance privacy, due process, and the public’s right to know. See also: `Fix/Law1.md` and `Fix/Law2.md` for law‑focused ideas discussed in this project.
+Rather than accepting slogans, voters can review how candidates and parties **explain and vote on specific bills**, and whether they support reforms that balance privacy, due process, and the public’s right to know. See also: [Law1](Fix/Law1.md) and [Law2](Fix/Law2.md) for law‑focused ideas discussed in this project.
 
 ## Holding officials accountable (claims vs. evidence)
 
