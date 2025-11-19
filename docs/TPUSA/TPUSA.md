@@ -12,7 +12,7 @@ Publicly available information and commentary indicate that TPUSA:
 - Positioned Charlie as the primary public face, with other senior figures supporting fundraising, strategic partnerships, and program development.
 - Relied on a combination of full‑time staff, contractors, and volunteers to plan and execute events like the UVU appearance.
 
-After Charlie’s death, media and internal communications referenced shifts in leadership responsibilities and public representation, which are discussed in more detail in the `TPUSA` overview and `Charlie` sections.
+After Charlie’s death, media and internal communications referenced shifts in leadership responsibilities and public representation, which are discussed in more detail in the [TPUSA overview](/TPUSA/overview.md) and [Charlie](/Charlie/overview.md) sections.
 
 ## Security and event operations (claims)
 
@@ -39,15 +39,15 @@ These narratives should be cross‑checked against formal financial disclosures,
 Several TPUSA‑associated individuals and sponsor representatives appear in footage and commentary surrounding the event and its aftermath:
 
 - **Event staff and sponsor liaisons** who were present near the stage or in logistics roles have been identified and discussed in various online analyses.
-- Some of these individuals are cited in connection with **security decisions, camera operations, or post‑event communications**, but public reporting stops short of establishing direct culpability for the attack itself.
-- Many of the names and roles are better understood in their topical contexts—for example, under `Security & Law Enforcement`, `Videos`, or `Killer`—rather than as standalone profiles here.
+-- Some of these individuals are cited in connection with **security decisions, camera operations, or post‑event communications**, but public reporting stops short of establishing direct culpability for the attack itself.
+- Many of the names and roles are better understood in their topical contexts—for example, under [Security & Law Enforcement](/security_law_enforcement/overview.md), [Videos](/Videos/overview.md), or [Killer](/Killer/overview.md)—rather than as standalone profiles here.
 
 Listing every staff member or sponsor here would be impractical; instead, this page emphasizes how TPUSA’s organizational web connects to the broader investigation.
 
 ## How this page relates to the broader project
 
-- For Charlie’s personal relationship to TPUSA and how his evolving views affected the organization, see `Charlie` and `Motive`.
-- For security‑specific analysis involving TPUSA events, see `Security & Law Enforcement`, `Shooting Locations`, `Planes`, and `Tent`.
-- For donor and geopolitical themes that intersect with TPUSA, see `Israel`, `Motive`, and `Killer`.
+- For Charlie’s personal relationship to TPUSA and how his evolving views affected the organization, see [Charlie](/Charlie/overview.md) and [Motive](/Motive/overview.md).
+- For security‑specific analysis involving TPUSA events, see [Security & Law Enforcement](/security_law_enforcement/overview.md), [Shooting Locations](/Shooting_Locations/overview.md), [Planes](/Planes/overview.md), and [Tent](/Tent/overview.md).
+- For donor and geopolitical themes that intersect with TPUSA, see [Israel](/Israel/overview.md), [Motive](/Motive/overview.md), and [Killer](/Killer/overview.md).
 
-As additional verified information becomes available—such as official statements, contracts, or audited reports—this page can be updated to reflect a clearer picture of TPUSA’s internal decision‑making while maintaining a clear distinction between **documented facts** and **speculation or theory**.
+As additional verified information becomes available—such as official statements, contracts, or audited reports—a clearer picture of TPUSA’s internal decision‑making may emerge, while maintaining a clear distinction between **documented facts** and **speculation or theory**.

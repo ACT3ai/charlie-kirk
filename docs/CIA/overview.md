@@ -36,8 +36,8 @@ At present, publicly available information does not resolve these questions; thi
 
 ## Related sections
 
-- `Planes` and `Drones` – for technical discussion of aircraft and UAV capabilities and movements.
-- `Israel`, `Motive`, and `Killer` – for geopolitical and operational theories that sometimes intersect with CIA references.
-- `FBI` and `legal_investigation` – for institutional and investigative context at the federal level.
+- [Planes](/Planes/overview.md) and [Drones](/Drones/overview.md) – for technical discussion of aircraft and UAV capabilities and movements.
+- [Israel](/Israel/overview.md), [Motive](/Motive/overview.md), and [Killer](/Killer/overview.md) – for geopolitical and operational theories that sometimes intersect with CIA references.
+- [FBI](/FBI/overview.md) and [Legal Investigation](/legal_investigation/overview.md) – for institutional and investigative context at the federal level.
 
 Readers should approach all intelligence‑service theories with a heightened emphasis on **verification, proportionality, and caution**, recognizing both the complexity of national‑security work and the dangers of attributing grave actions without solid proof.

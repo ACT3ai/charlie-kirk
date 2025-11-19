@@ -8,7 +8,7 @@ This page provides context about **Utah Valley University (UVU)** as the host si
 
 Relevant parts of the UVU campus include:
 
-- The **courtyard and tent area** where the event took place, described further in `UVU Courtyard` and `Tent` pages.
+- The **courtyard and tent area** where the event took place, described further in [UVU Courtyard](/UVU/Courtyward.md) and [Tent](/Tent/overview.md) pages.
 - Surrounding **buildings, rooftops, stairwells, and tunnels** that provide vantage points and movement routes for attendees, staff, and security.
 - Nearby **parking and access roads**, which play roles in movement timelines for attendees, emergency responders, and vehicles of interest.
 
@@ -22,7 +22,7 @@ According to public reporting and commentary:
 - Campus security responsibilities focused on **perimeter control, crowd management, and facility oversight**, while close‑protection and production were primarily handled by non‑university entities.
 - After the incident, UVU reportedly initiated an **independent review of the campus shooting**, examining its own procedures and response.
 
-These roles are discussed in more detail in `security_law_enforcement` and `TPUSA` sections.
+These roles are discussed in more detail in [Security & Law Enforcement](/security_law_enforcement/overview.md) and [TPUSA](/TPUSA/overview.md) sections.
 
 ## UVU in timelines and investigative threads
 
@@ -32,12 +32,12 @@ UVU appears throughout the investigation in several ways:
 - As the backdrop for **camera and footage discussions**, including campus surveillance and any on‑site recording systems.
 - As the site of subsequent **crime‑scene handling and construction work**, which some commentators argue may have affected evidence preservation.
 
-For detailed chronological context, see `Timeline` and `timeline_events`. For site‑specific analyses, see `Maps`, `Shooting_Locations`, and `Planes`.
+For detailed chronological context, see [Timeline](/Timeline/overview.md) and [Timeline Events](/timeline_events/overview.md). For site‑specific analyses, see [Maps](maps/overview.md), [Shooting Locations](/Shooting_Locations/overview.md), and [Planes](/Planes/overview.md).
 
 ## How this section connects to other topics
 
 The UVU section is meant to orient readers to the **institutional and physical setting** of the event. For deeper dives:
 
-- See `UVU Courtyard` and `Tent` for detailed discussion of the immediate event area.
-- See `security_law_enforcement` and `FBI` for law‑enforcement coordination and investigative posture.
-- See `Medical`, `After`, and `Cover-up` for questions about response, site changes, and transparency.
+- See [UVU Courtyard](/UVU/Courtyward.md) and [Tent](/Tent/overview.md) for detailed discussion of the immediate event area.
+- See [Security & Law Enforcement](/security_law_enforcement/overview.md) and [FBI](/FBI/overview.md) for law‑enforcement coordination and investigative posture.
+- See [Medical](/Medical/overview.md), [After](/After/overview.md), and [Cover-up](CoverUp/overview.md) for questions about response, site changes, and transparency.

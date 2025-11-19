@@ -1,6 +1,6 @@
 ## Censorship and Speech Concerns
 
-This page provides a high‑level overview of **censorship and speech‑related issues** that have been raised in connection with the Charlie Kirk case. It focuses on how laws, platform policies, and court orders may impact what information is available to the public. For a more detailed treatment of specific allegations and examples, see the `Media/Censorship.md` page.
+This page provides a high‑level overview of **censorship and speech‑related issues** that have been raised in connection with the Charlie Kirk case. It focuses on how laws, platform policies, and court orders may impact what information is available to the public. For a more detailed treatment of specific allegations and examples, see the [Media Censorship](Media/Censorship.md) page.
 
 Key themes include:
 
@@ -15,6 +15,6 @@ These issues are important because they shape what journalists, researchers, and
 
 Readers interested in this topic are encouraged to:
 
-- Review the `Media` section for how different outlets and commentators have covered the case.
-- Consult `Media/Censorship.md` for a deeper look at alleged takedowns, gag orders, and legislative debates.
+- Review the [Media](Media/overview.md) section for how different outlets and commentators have covered the case.
+- Consult [Media Censorship](Media/Censorship.md) for a deeper look at alleged takedowns, gag orders, and legislative debates.
 - Consider both the **benefits and risks** of regulatory and judicial tools that affect what can be shared publicly about active investigations.

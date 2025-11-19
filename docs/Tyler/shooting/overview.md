@@ -11,7 +11,7 @@ According to charging documents and mainstream reporting, the official account i
 - He fired the fatal shot toward Charlie from this elevated position during the UVU event, after which he left the roof and later hid or abandoned the weapon in a nearby area.
 - Physical evidence (such as the recovered rifle and forensic links) and his reported movements are used to support this narrative.
 
-This account is elaborated across sections like `Tyler_Robinson`, `Timeline`, and `Shooting_Locations`.
+This account is elaborated across sections like [Tyler Robinson](/Tyler_Robinson/overview.md), [Timeline](/Timeline/overview.md), and [Shooting Locations](/Shooting_Locations/overview.md).
 
 ## Key questions and challenges (claims)
 
@@ -31,7 +31,7 @@ The debate over Tyler’s alleged shooting role is closely linked to broader sho
 - The existence of **multiple shots or devices**—if demonstrated—could suggest scenarios where Robinson was not the only actor, or where his role differed from official characterizations.
 - Even under the official narrative, there may be questions about whether others helped plan, enable, or exploit the incident.
 
-For these reasons, `Tyler Shooting` should be read alongside `Theories`, `Killer`, `Tent`, and `Drones`.
+For these reasons, [Tyler Shooting](/Tyler/shooting/overview.md) should be read alongside [Theories](/Theories/overview.md), [Killer](/Killer/overview.md), [Tent](/Tent/overview.md), and [Drones](/Drones/overview.md).
 
 ## How to use this section
 

@@ -12,7 +12,7 @@ Looking further back, several strands of context are often mentioned:
 - The broader geopolitical climate, including debates over Middle East policy, national security, and domestic extremism that framed how different stakeholders viewed Charlie and his platform.
 - Early online activity and search patterns—reported by investigators and commentators—suggesting that locations, people, or organizations later tied to the case were being researched well before 2025. These items are cited as possible signs of long‑term interest, not as proof of a specific plot.
 
-For more detailed discussion of Charlie’s background and political positioning, see the `Charlie` and `Motive` sections.
+For more detailed discussion of Charlie’s background and political positioning, see the [Charlie](/Charlie/overview.md) and [Motive](/Motive/overview.md) sections.
 
 ## Early and mid‑2025: building tension (claims)
 
@@ -40,6 +40,14 @@ This section is intended as a **bridge between background and the day‑of timel
 
 - It connects long‑term context (Charlie’s role, donor relationships, geopolitical debates) to specific pre‑event actions and travel.
 - It helps readers understand why certain actors, aircraft, locations, and conversations are seen as relevant when assessing motive and planning.
-- It points toward other sections—such as `Timeline`, `Charlie`, `Motive`, `Israel`, `Planes`, and `Tyler Robinson`—where the individual threads are explored in greater detail.
+- It points toward other sections—such as [Timeline](/Timeline/overview.md), [Charlie](/Charlie/overview.md), [Motive](/Motive/overview.md), [Israel](/Israel/overview.md), [Planes](/Planes/overview.md), and [Tyler Robinson](/Tyler_Robinson/overview.md)—where the individual threads are explored in greater detail.
 
-As more primary information becomes available, this page can be refined to distinguish more clearly between **documented pre‑event facts** and **still‑unverified claims or interpretations** about what happened before September 10, 2025.
+As more primary information becomes available, it should become easier to distinguish between **documented pre‑event facts** and **still‑unverified claims or interpretations** about what happened before September 10, 2025.
+
+## Level_3 Pages within this Section
+
+The following in-depth pages expand on specific “before” themes and should be consulted alongside this overview:
+
+- [2025 Political Pressure and Key Meetings Before UVU (Claims)](Political_Pressure_And_Meetings_2025.md)
+- [Pre‑Event Flights and Travel Around Utah (Claims)](PreEvent_Flights_And_Travel.md)
+- [Reported Pre‑Event Searches and Reconnaissance (Claims)](PreEvent_Searches_And_Recon.md)

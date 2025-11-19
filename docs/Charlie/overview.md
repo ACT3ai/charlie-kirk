@@ -81,7 +81,7 @@ The project’s materials catalog several quotes attributed to Charlie regarding
 - Lines like **“I’m going to have to stop supporting Israel…”** and **“you’ve left me no choice but to leave the pro‑Israel cause,”** used by commentators to argue that he was making a significant public and private break from prior positions.
 - A widely circulated remark about Gaza, summarized as **“I have got to be careful how I say this—they are going to ethnically cleanse Gaza,”** drawn from video and social‑media excerpts.
 
-These quotes are included not to endorse any particular narrative, but because they heavily influence public theories about motive and perceived risk around Charlie. For an assessment of their authenticity and context, readers should consult the original source materials (linked in sections such as `Media`, `Censorship`, and `Israel`) and any future legal or investigative findings that address them directly.
+These quotes are included not to endorse any particular narrative, but because they heavily influence public theories about motive and perceived risk around Charlie. For an assessment of their authenticity and context, readers should consult the original source materials (linked in sections such as [Media](/Media/overview.md), [Censorship](/Censorship/overview.md), and [Israel](/Israel/overview.md)) and any future legal or investigative findings that address them directly.
 
 ## Related Sections (Peer Level_2 topics)
 
@@ -104,9 +104,10 @@ These pages provide the factual scaffolding and contested interpretations that i
 
 ## Level_3 Pages within this Section
 
-The following in-depth page currently expands on a key subtopic related to Charlie and should be consulted alongside this overview:
+The following in-depth pages currently expand on key subtopics related to Charlie and should be consulted alongside this overview:
 
 - [Autopsy](Autopsy.md)
+- [Charlie, Israel, Donors, and Motive Claims](Israel_Donors_Motive.md)
 
 ## Working Questions and Next Steps
 
@@ -116,4 +117,4 @@ The following in-depth page currently expands on a key subtopic related to Charl
 - Map how media narratives evolved in the first 24–72 hours, including how statements about Charlie’s role and significance influenced public understanding of motive.
 - Track institutional disclosures (medical, legal, and law enforcement) and reconcile them with independently compiled timelines.
 
-As additional evidence is authenticated or released, this page should be updated to reflect clarified facts while maintaining a clear separation between established information and still-contested claims.
+As additional evidence is authenticated or released, readers will be able to rely on a clearer set of facts while still distinguishing them from contested claims.

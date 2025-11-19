@@ -6,15 +6,15 @@
 * Timeline: 2024: [Summary](#timeline-on-2024-summary), [Full Detail](#timeline-on-2024-full-detail)
 
 ## Timeline on Sept 10th: Summary
-- 8:07–11:49 AM MDT: Tyler Robinson observed on multiple cameras near UVU; outfit change reported.
-- ~11:47 AM MDT: U.S. Army ISR jet N1098L (HADES) conducts a low-altitude pass near Utah Lake (timing varies in reports).
-- 12:23 PM MDT: Shot fired during UVU event; first police report logged at 12:26 PM MDT.
-- ~12:24–12:48 PM MDT: N1098L executes another low-altitude maneuver after the shooting (exact minute disputed).
-- Evening: Private jet N888KG departs PVU and disables ADS-B mid-flight before later returning.
+- 8:07–11:49 AM MDT: Tyler Robinson observed on multiple cameras near UVU; outfit change reported (as summarized from doorbell and security footage).
+- ~11:47 AM MDT: U.S. Army ISR jet N1098L (HADES) is reported by aviation trackers to conduct a low-altitude pass near Utah Lake (timing varies in sources).
+- 12:23 PM MDT: Shot fired during UVU event (time derived from public police audio and media); first police report logged at 12:26 PM MDT.
+- ~12:24–12:48 PM MDT: N1098L reportedly executes another low-altitude maneuver after the shooting (exact minute disputed).
+- Evening (claims): Private jet N888KG departs PVU and, according to flight-tracking commentary, disables ADS-B mid-flight before later returning.
 
 
 ## Timeline on 2025: Summary
-- Jul 18: Alleged decision made to kill Kirk.
+- Jul 18 (claims): Some commentators speculate that a decision to target Kirk in Utah may have been made around this date; this is not supported by public official records.
 - Jul 20: Egyptian Air Force SU-BTT’s first U.S. trip; same-day military/foreign leaders meeting in U.S.
 - Jul 31: WH meeting (Faith & Freedom, Latino Coalition for Israel, Philos Project) on Israel narrative.
 - Early Aug (~Aug 4): Hamptons “intervention” confronting Kirk.
@@ -48,7 +48,7 @@
 ## Timeline on 2025: Full Detail
 - Jul 11–13: Megyn Kelly & Charlie Kirk at TPUSA SAS (Tampa, FL) ([YouTube](https://www.youtube.com/watch?v=ccRNaLGavf8)).
 - Jul 16: Ami's House podcast: Inside the Turning Point USA Fallout ([YouTube](https://www.youtube.com/watch?v=8HkNMTNHsa8)).
-- Jul 18: Research notes assert a decision point to assassinate Kirk in Utah.
+- Jul 18 (claims): Some online commentators assert that around this date a decision to "murder Charlie Kirk in Utah" was made; this is a speculative interpretation based on patterns in later commentary and has not been confirmed in any official proceeding.
 - Jul 20: Egyptian Air Force Gulfstream (SU-BTT) reportedly makes its first U.S. trip (to a U.S. Army base in Nebraska); same day, a military meeting with foreign leaders occurs on U.S. soil.
 - Jul 31: WH meeting organized by Faith & Freedom Coalition, Latino Coalition for Israel, and the Philos Project on confronting “woke-right” narratives; attendees reportedly include Ralph Reed, Luke Moon, Mario Bramnick, Yehuda Kaploun, and Yair Netanyahu. TPUSA not present.
 - Early Aug (~Aug 4): “Hamptons intervention” where pro-Israel figures confront Kirk (names reported include Pesach Wolicki, Josh Hammer, Seth Dillon, Bill Ackman, Natasha Hausdorff).
@@ -62,7 +62,15 @@
 - Sep 19: Demystifying the Mossad with ex–Mossad chief Yossi Cohen ([YouTube](https://www.youtube.com/watch?v=qpGPZHdil1E), [Apple Podcasts](https://podcasts.apple.com/uy/podcast/demystifying-the-mossad-with-ex-mossad-chief-yossi-cohen/id1589871008?i=1000727438458)).
 
 ## Timeline on 2024: Full Detail
-- Dec 2024: Research notes cite early Google searches for locations and key figures tied to the case.
-- Dec 8–14, 2024: Reported spike (from Israel) in searches for Kathryn N. Nester, later defense counsel for Tyler Robinson, per the research document.
-- Aug 2024: Notes reference searches related to “Utah Valley University buildings,” suggesting early reconnaissance interest.
+- Dec 2024 (claims): Citizen‑research analyses of Google Trends report early search interest for locations and key figures later tied to the case.
+- Dec 8–14, 2024 (claims): Commentators highlight a reported spike (from Israel) in searches for Kathryn N. Nester, later defense counsel for Tyler Robinson, based on Google Trends screenshots.
+- Aug 2024 (claims): Notes reference searches related to “Utah Valley University buildings” and similar terms, interpreted by some as early reconnaissance interest.
+
+## Level_3 Pages within this Section
+
+The following in-depth pages expand on specific timeline layers and should be consulted alongside this overview:
+
+- [September 10, 2025 – Day‑of Timeline (Reported Facts and Claims)](Sept_10_2025.md)
+- [2025 Context Timeline (Claims and Reported Events)](Year_2025.md)
+- [2024 Pre‑Event Timeline (Searches and Early Signals – Claims)](Year_2024.md)
 

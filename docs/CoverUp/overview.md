@@ -22,7 +22,7 @@ Concerns about cover‑up also intersect with medical and autopsy issues:
 - Some allege that the handling of Charlie’s body and the issuance of the death certificate may have prioritized speed over maximal forensic documentation, though official records have not yet been released to confirm or refute these claims.
 - Questions about **hospital selection and routing**, and about how medical decisions were made and communicated, add to perceptions that important medical information remains opaque.
 
-These issues are examined in more depth on the `Charlie/Autopsy` and `Medical` pages; here they are noted because limited access to medical evidence is often cited as a potential mechanism of cover‑up.
+These issues are examined in more depth on the [Charlie Kirk Autopsy](Charlie/Autopsy.md) and [Medical](/Medical/overview.md) pages; here they are noted because limited access to medical evidence is often cited as a potential mechanism of cover‑up.
 
 ## Digital evidence, footage, and records (claims)
 
@@ -32,7 +32,7 @@ Multiple threads of commentary point to concerns about digital and documentary e
 - **Official camera and drone footage** – There are ongoing calls for complete, unedited releases from TPUSA cameras, campus surveillance, and any drones that recorded the event. Partial releases and carefully edited compilations are viewed by some as selective disclosure.
 - **Document and log access** – Questions remain about how easily investigators, the defense, and the public can access key records such as flight logs, security rosters, and internal communications that might clarify timelines and roles.
 
-These concerns are closely related to topics covered under `Media`, `Censorship`, `Planes`, and `Timeline`.
+These concerns are closely related to topics covered under [Media](/Media/overview.md), [Censorship](/Censorship/overview.md), [Planes](/Planes/overview.md), and [Timeline](/Timeline/overview.md).
 
 ## Institutional actions and perception of obstruction (claims)
 
@@ -46,8 +46,8 @@ These interpretations remain contested. Supporters of the institutions involved 
 
 ## How to use this section
 
-This `(Possible) Cover‑up` page is best read as a **catalogue of concerns and patterns** rather than as a verdict:
+This [Possible Cover‑up](CoverUp/overview.md) page is best read as a **catalogue of concerns and patterns** rather than as a verdict:
 
 - Use it to understand why some observers believe that evidence may have been obscured or mishandled.
-- Follow links to related sections—`After`, `Autopsy`, `Medical`, `Media`, `Censorship`, `Planes`, `Security & Law Enforcement`, and `legal_investigation`—for more detailed discussion of each theme.
+- Follow links to related sections—[After](/After/overview.md), [Autopsy](Charlie/Autopsy.md), [Medical](/Medical/overview.md), [Media](/Media/overview.md), [Censorship](/Censorship/overview.md), [Planes](/Planes/overview.md), [Security & Law Enforcement](/security_law_enforcement/overview.md), and [Legal Investigation](/legal_investigation/overview.md)—for more detailed discussion of each theme.
 - Keep in mind that serious accusations require strong, verifiable evidence; until such evidence is publicly available and evaluated in proper forums, all cover‑up theories should remain framed as **hypotheses, not conclusions**.

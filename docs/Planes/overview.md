@@ -12,7 +12,7 @@ One major area of interest involves a **U.S.-linked surveillance aircraft** whos
 - Commentary suggests that the aircraft may have been part of an **intelligence, surveillance, and reconnaissance (ISR) program**, potentially capable of deploying or coordinating with drones.
 - These movements are used in some theories to argue for a higher level of operational sophistication and possible coordination with ground activity.
 
-For detailed technical discussion of this aircraft and related telemetry, see the dedicated subpages under `Planes` (such as those covering specific tail numbers).
+For detailed technical discussion of this aircraft and related telemetry, see the dedicated subpages under [Planes](/Planes/overview.md) (such as those covering specific tail numbers).
 
 ## Foreign and VIP flights (claims)
 
@@ -32,4 +32,4 @@ Aircraft and flight paths matter because they can inform questions such as:
 - Do any flight patterns suggest **unusual or unexplained behavior**, such as low‑altitude passes or transponder deactivation near critical times?
 - How do claimed aviation activities correlate with **timelines, drone theories, and ground‑level events**?
 
-The `Planes` section should be read in conjunction with `Drones`, `Timeline`, `Maps`, `Killer`, and `CIA`, which together provide context for evaluating aviation‑related claims.
+The [Planes](/Planes/overview.md) section should be read in conjunction with [Drones](/Drones/overview.md), [Timeline](/Timeline/overview.md), [Maps](maps/overview.md), [Killer](/Killer/overview.md), and [CIA](/CIA/overview.md), which together provide context for evaluating aviation‑related claims.

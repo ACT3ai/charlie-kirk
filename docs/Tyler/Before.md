@@ -20,7 +20,7 @@ Public commentary and investigative threads also discuss Tyler’s **social and 
 
 - Allegations about participation in **online communities**, including gaming platforms and chat groups, where political views and grievances may have been discussed.
 - Claims that he consumed or shared content related to **current events, ideology, or specific public figures**, sometimes cited to support competing narratives about his beliefs.
-- References to friendships and relationships, including those covered more fully in the `Girlfriend` and `Recruited` pages, which explore how his personal connections may have influenced his thinking.
+- References to friendships and relationships, including those covered more fully in the [Girlfriend](Tyler_Robinson/Girlfriend/overview.md) and [Recruited](Tyler_Robinson/Recruited.md) pages, which explore how his personal connections may have influenced his thinking.
 
 These details are often based on screenshots, interviews, or third‑party descriptions and should be treated as claims until verified by primary evidence.
 
@@ -32,4 +32,4 @@ From an investigative perspective, pre‑incident information about Tyler is rel
 - Are there indications that he may have been **influenced, manipulated, or monitored** by others in ways that complicate that narrative?
 - How do his reported views, activities, and relationships connect to the broader themes of the case, including motive and possible coordination?
 
-For detailed discussions of specific aspects of his background and associations, see `Tyler_Robinson/overview.md`, `Girlfriend`, `Recruited`, and `Travel`.
+For detailed discussions of specific aspects of his background and associations, see [Tyler Robinson](/Tyler_Robinson/overview.md), [Girlfriend](Tyler_Robinson/Girlfriend/overview.md), [Recruited](Tyler_Robinson/Recruited.md), and [Travel](Tyler/Travel.md).

@@ -42,11 +42,11 @@ Several reports and testimonies referenced in this project allege that:
 - Social‑media platforms have taken down or restricted certain posts, videos, or accounts discussing the case, sometimes without clear explanation.
 - Broad **gag orders and legal constraints** limit what lawyers, witnesses, and even some media can say publicly while the case is pending.
 
-These concerns are explored in more detail on the `Media/Censorship` page, which covers both legal and platform‑level mechanisms that can restrict information flow.
+These concerns are explored in more detail on the [Media Censorship](Media/Censorship.md) page, which covers both legal and platform‑level mechanisms that can restrict information flow.
 
 ## Related pages
 
 - [Media Censorship](./Censorship.md) – Specific allegations and examples of content removal, legal gag orders, and other information‑control issues.
-- `Timeline`, `Charlie`, `Motive`, `Killer`, and `TPUSA` – Sections where media reports and investigative pieces are frequently cited and analyzed.
+- [Timeline](/Timeline/overview.md), [Charlie](/Charlie/overview.md), [Motive](/Motive/overview.md), [Killer](/Killer/overview.md), and [TPUSA](/TPUSA/overview.md) – Sections where media reports and investigative pieces are frequently cited and analyzed.
 
 Together, these pages help readers understand not only **what** has been reported about the case, but also **who is reporting it, how, and with what limitations or biases**.

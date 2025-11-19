@@ -1,7 +1,7 @@
 # Locations
 
 ## Overview
-This page provides a high‑level guide to the **key locations** that appear throughout the Charlie Kirk investigation. It is not an exhaustive atlas, but a way to understand how different places—campus sites, hospitals, airports, businesses, and residential addresses—fit into the broader narrative. Specific location details are developed in topic‑focused sections such as `UVU`, `Maps`, `Planes`, and `Tyler_Robinson`.
+This page provides a high‑level guide to the **key locations** that appear throughout the Charlie Kirk investigation. It is not an exhaustive atlas, but a way to understand how different places—campus sites, hospitals, airports, businesses, and residential addresses—fit into the broader narrative. Specific location details are developed in topic‑focused sections such as [UVU](/UVU/overview.md), [Maps](maps/overview.md), [Planes](/Planes/overview.md), and [Tyler Robinson](/Tyler_Robinson/overview.md).
 
 ## Core locations
 
@@ -27,9 +27,9 @@ These locations are used to test whether specific travel paths, meeting claims, 
 
 Readers should use this Locations page as a **navigation aid**:
 
-- For maps and spatial relationships, see `maps/overview.md` and related diagrams.
-- For campus‑specific details, see `UVU` and `UVU Courtyard`.
-- For aviation and long‑distance movements, see `Planes` and associated subpages.
-- For individual‑focused movement and residential addresses, see `Tyler_Robinson` and `Travel`.
+- For maps and spatial relationships, see [Maps](maps/overview.md) and related diagrams.
+- For campus‑specific details, see [UVU](/UVU/overview.md) and [UVU Courtyard](/UVU/Courtyward.md).
+- For aviation and long‑distance movements, see [Planes](/Planes/overview.md) and associated subpages.
+- For individual‑focused movement and residential addresses, see [Tyler Robinson](/Tyler_Robinson/overview.md) and [Travel](/Tyler/Travel.md).
 
 Location information is most useful when combined with timelines, video evidence, and verified records. As more precise or newly verified location data becomes available, it can be incorporated into the relevant topic pages and referenced from here.

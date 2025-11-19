@@ -11,14 +11,14 @@ The official narrative, as reflected in charges and mainstream reporting, holds 
 - Tyler Robinson acted as a **lone shooter**, firing from a rooftop position with a high‑powered bolt‑action rifle.
 - The investigation and prosecution focus on his personal and ideological motives, his movements on the day of the event, and physical evidence tying him to the weapon and scene.
 
-This theory is elaborated in sections such as `Tyler_Robinson`, `Timeline`, and `Medical`.
+This theory is elaborated in sections such as [Tyler Robinson](/Tyler_Robinson/overview.md), [Timeline](/Timeline/overview.md), and [Medical](/Medical/overview.md).
 
 ## Alternative shooter‑location theories (claims)
 
 Several alternative theories question the rooftop origin of the fatal shot and propose different locations instead:
 
-- **Tent‑based shooter** – The idea that a shooter, or a remotely operated weapon, was positioned inside or immediately behind the tent, with audio, casing behavior, and reflections cited as clues. See: `Tent`, `Killer`, and `Videos`.
-- **Vehicle‑based shooter** – Theories involving a nearby van or vehicle, sometimes tied to laser reflections or hatch movements seen in footage. See: `Killer` and `Shooting_Locations`.
+- **Tent‑based shooter** – The idea that a shooter, or a remotely operated weapon, was positioned inside or immediately behind the tent, with audio, casing behavior, and reflections cited as clues. See: [Tent](/Tent/overview.md), [Killer](/Killer/overview.md), and [Videos](/Videos/overview.md).
+- **Vehicle‑based shooter** – Theories involving a nearby van or vehicle, sometimes tied to laser reflections or hatch movements seen in footage. See: [Killer](/Killer/overview.md) and [Shooting Locations](/Shooting_Locations/overview.md).
 - **Other elevated positions** – Hypotheses about balconies, stairwells, or other building vantage points offering a different angle of fire than the official rooftop narrative.
 
 These theories rely on technical analyses and must be weighed against ballistic, medical, and timing evidence.
@@ -31,7 +31,7 @@ Another cluster of theories suggests that **intelligence services or foreign act
 - Specific references are made to foreign policy disputes, donor dynamics, and flight patterns involving specialized aircraft, with questions about who would have the capability and motivation to plan such an operation.
 - These theories often mention intelligence‑linked programs, training centers, or alliances as part of a larger context.
 
-For more detail, see `CIA`, `Planes`, `Israel`, `Motive`, and `Killer`. All such ideas should be approached with caution and a demand for verifiable evidence.
+For more detail, see [CIA](/CIA/overview.md), [Planes](/Planes/overview.md), [Israel](/Israel/overview.md), [Motive](/Motive/overview.md), and [Killer](/Killer/overview.md). All such ideas should be approached with caution and a demand for verifiable evidence.
 
 ## Device and unconventional‑weapon theories (claims)
 
@@ -41,7 +41,7 @@ Some theories focus less on who fired and more on **what kind of weapon or devic
 - Ideas about **explosive or modified equipment** (for example, audio or microphone‑related devices) that could have contributed to injury patterns or masked the sound of the shot.
 - Speculation about drones or other platforms being used to deliver or guide a shot, tied to analyses of aerial activity and audio signatures.
 
-These theories intersect with sections on `Drones`, `Planes`, `Medical`, and `Killer` and are highly speculative without direct physical or documentary proof.
+These theories intersect with sections on [Drones](/Drones/overview.md), [Planes](/Planes/overview.md), [Medical](/Medical/overview.md), and [Killer](/Killer/overview.md) and are highly speculative without direct physical or documentary proof.
 
 ## How to read and compare theories
 
@@ -51,4 +51,4 @@ When reviewing these theories, readers are encouraged to:
 - Compare timelines, ballistics, and spatial analyses across theories to see which are internally coherent and which conflict with established facts.
 - Avoid assuming that criticism of the official narrative automatically validates any particular alternative; each theory must stand or fall on its own evidence.
 
-This `Theories` page is intended as a navigation aid: start here to see the landscape of ideas, then follow links to topic‑specific sections to evaluate the details.
+This [Theories](/Theories/overview.md) page is intended as a navigation aid: start here to see the landscape of ideas, then follow links to topic‑specific sections to evaluate the details.
