@@ -1,0 +1,41 @@
+##########################################################
+# PerShot (Scene)  Set Deep Analysis
+#
+#
+##########################################################
+
+These are the LEVEL_2_DIR to process:
+* CIA
+* CoverUp
+* motive
+* Tent
+* UVU
+
+There is DOCS_PARENT_DIR which is the directory: ~/BGit/act3/charlie-kirk/docs/
+There is KEYWORDS_PARENT_DIR which is the directory: ~/BGit/act3/charlie-kirk/keywords/
+
+Repeat the following for each LEVEL_2_DIR in the LEVEL_2_DIR list above. As you process one, store 
+   that one into the variable into THIS_LEVEL_2_DIR:
+* If directories are missing to get the file path, create the directory.
+* Delete the file: KEYWORDS_PARENT_DIR/THIS_LEVEL_2_DIR.keywords
+* Create this file: KEYWORDS_PARENT_DIR/THIS_LEVEL_2_DIR.keywords.  We will save the content below into that file.
+* Create the list of keywords to "Level 3" that this Level 2 should go to.
+* Save in this .keywords file, a yaml. It has an array of "Keywords". Each entry is a "Keyword". 
+* The yaml property Label is the phrase to a Level 3.  It has "_" instead of spaces. No special characters.
+
+* The yaml property's value is the description of this.
+
+
+
+What are Level 2:
+* These are areas of the Charlie Kirk assassination investigation. Biggest areas of it.
+* The list of level 2 are the links are already listed in the document: ~/BGit/act3/charlie-kirk/docs/index.md
+* These are the biggest areas of the investigation.
+
+What are Level 3:
+* Underneath each Level 2 are the lower level topics under there.  Each of these are Level 3.
+* The goal of this is to map out all of the Level 3 areas.
+* Look at the content that needs to be explained.
+* This document explains the data behind what happened: ~/BGit/act3/charlie-kirk/Research/bry_research.txt
+
+
