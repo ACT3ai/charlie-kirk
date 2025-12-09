@@ -47,5 +47,6 @@ Rules for LEVEL_3 in AFTER_OUTPUT_FILE.
 * The name of the Level 3 is almost never "overview.md" because that is for the Level 2 page.
 * The file for a topic is a markdown file (.md)
 * An example of a Level 3 "TPUSA Employees" (TPUSA_Employees) topic content page is: SITE_DOC_ROOT/TPUSA/employees.md. Where this parent is "Level 2" "TPUSA"
-
+* Under Level_3_Hierarchy, there should only be LEVEL_3_For_REVIEW_AI_Created, LEVEL_3_APPROVED, LEVEL_3_REJECTED. If there are any LEVEL_2_For_REVIEW_AI_Created, LEVEL_2_APPROVED, LEVEL_2_REJECTED, then remove those and figure out where the content under them goes.
+* Get rid of Level_3_Topics.
 

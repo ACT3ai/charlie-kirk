@@ -4,10 +4,7 @@
 # Approved items are confirmed by user
 # Rejected items should not be added
 
-LEVEL_2_For_REVIEW_AI_Created:
-
-
-LEVEL_2_APPROVED:
+LEVEL_1_For_REVIEW_AI_Created:
   - People
   - Media
   - Israel
@@ -40,9 +37,9 @@ LEVEL_2_APPROVED:
   - Patsys
   - GoogleSearches
 
+LEVEL_1_APPROVED: []
 
-LEVEL_2_REJECTED: []
-
+LEVEL_1_REJECTED: []
 
 Level_2_Hierarchy:
 
@@ -58,37 +55,8 @@ Level_2_Hierarchy:
       - Legal_Team_Members
       - Plane_Crew_And_Aviation
       - Construction_Workers
-      - Pro_Israel_Confrontation_Figures
-      - Media_Personalities_Covering_Case
-      - Foreign_Dignitary_Claims
-      - University_Officials
     LEVEL_2_APPROVED: []
     LEVEL_2_REJECTED: []
-    
-    Level_3_For_REVIEW_AI_Created:
-      - Phil_Lyman
-      - Beau_Mason_DPS_Commissioner
-      - Andrew_Zenger_Hospital_CEO
-      - Rabbi_Pesach_Wolicki
-      - Josh_Hammer
-      - Seth_Dillon
-      - Natasha_Hausdorff
-      - Candace_Owens
-      - Tucker_Carlson
-      - Baron_Coleman
-      - MonkeyWerx
-      - Egyptian_Foreign_Dignitary
-      - UVU_Chief_Jeff_Long
-      - Mehtab_Syed_Former_FBI_SAC
-      - Robert_Bohls_FBI_SAC
-      - Angela_Hammond_Medical_Examiner
-      - Ralph_Reed
-      - Luke_Moon
-      - Apostle_Mario_Bramnick
-      - Yehuda_Kaploun
-      - Yair_Netanyahu
-    LEVEL_3_APPROVED: []
-    LEVEL_3_REJECTED: []
     Level_3_Topics:
       Central_Figures:
         file: "Central_Figures.md"
@@ -133,33 +101,8 @@ Level_2_Hierarchy:
       - Mainstream_News_Coverage
       - Video_Deletion_Claims
       - Live_Stream_Interruptions
-      - Google_Trends_Investigations
-      - Witness_Video_Analysis
     LEVEL_2_APPROVED: []
     LEVEL_2_REJECTED: []
-    Level_3_For_REVIEW_AI_Created:
-      - Baron_Coleman_YouTube
-      - Candace_Owens_Investigation
-      - MonkeyWerx_Plane_Analysis
-      - Tucker_Carlson_Coverage
-      - Jimmy_Dore_Coverage
-      - LeonJakeB_YouTube_Witness
-      - Ammermazing_Twitter_Research
-      - Tai_Norman_Operation_322
-      - George_Webb_Analysis
-      - Ian_Carroll_Coverage
-      - Healthranger_Posts
-      - Hustlebitch_Posts
-      - JG_CSTT_Drone_Analysis
-      - John_Cullen_Posts
-      - Diligent_Denizen_Analysis
-      - Project_Constitu_Investigation
-      - Based_Sam_Parker_Posts
-      - Zeb_Boykin_Posts
-      - Ryan_Matta_Media_Posts
-      - Steven_Denoon_Analysis
-    LEVEL_3_APPROVED: []
-    LEVEL_3_REJECTED: []
     Level_3_Topics:
       Censorship:
         file: "Censorship.md"
@@ -207,40 +150,8 @@ Level_2_Hierarchy:
       - Plane_SU_BTT_Egyptian
       - Mossad_Theories
       - Pro_Israel_Figures_And_Confrontations
-      - France_Connection
-      - Egypt_Connection
-      - Chain_Of_Evil_Theory
-      - Wilmington_DE_Operations
-      - AIPAC_Political_Control
     LEVEL_2_APPROVED: []
     LEVEL_2_REJECTED: []
-    Level_3_For_REVIEW_AI_Created:
-      - France_PM_Meeting_Trump
-      - French_Legionnaires_Claims
-      - Paris_Flight_Origins
-      - France_Candace_Owens_Connection
-      - Egypt_Classified_Tech_Deal
-      - Egypt_Foreign_Dignitary
-      - Egypt_Saudi_Tech_Sales
-      - Epstein_Mossad_Connection
-      - Chain_Of_Evil_Structure
-      - Iran_War_Lobbying
-      - Philos_Project_Paul_Singer
-      - Latino_Coalition_Israel
-      - Faith_Freedom_Coalition
-      - Wilmington_Classified_Building
-      - AIPAC_Congress_Control
-      - Blackmail_Material_Claims
-      - Church_Leadership_Control
-      - Tucker_Carlson_Threat
-      - December_2025_TPUSA_Talks
-      - CornerShot_Weapon_Theory
-      - Tent_Shooter_Theory
-      - Israeli_9mm_Round_Claims
-      - IR_Laser_Scope_Claims
-      - Nebraska_Army_Base_Meeting
-    LEVEL_3_APPROVED: []
-    LEVEL_3_REJECTED: []
     Level_3_Topics:
       Charlie_Quotes_Israel:
         file: "Charlie_Quotes_Israel.md"
@@ -300,41 +211,8 @@ Level_2_Hierarchy:
       - Patsy_Theory
       - CIA_Utah_State_Connection
       - DSA_Funding_Claims
-      - Capture_And_Arrest
-      - Missing_Four_Years
-      - St_George_Residence
-      - Online_Digital_Footprint
-      - Camera_Footage_Evidence
     LEVEL_2_APPROVED: []
     LEVEL_2_REJECTED: []
-    Level_3_For_REVIEW_AI_Created:
-      - Capture_Details_Parents_Warned
-      - Four_Year_Gap_Investigation
-      - 3419_S_River_Road_Townhouse
-      - Lance_Twiggs_Israeli_Searches
-      - Discord_Activity_Tracking
-      - Reddit_Activity_Tracking
-      - LDS_Mormon_Background
-      - Construction_Site_Black_Figure
-      - Roof_Access_Investigation
-      - Ring_Camera_8_07_AM
-      - WYZE_Camera_8_23_AM
-      - UVU_Surveillance_8_29_AM
-      - Outfit_Change_Timeline
-      - 11_44_AM_Ring_Camera
-      - 12_23_Shooting_Time
-      - 12_27_Roof_Jumping
-      - Jailhouse_Conditions
-      - $20K_Girlfriend_Deposits
-      - AOC_Mamdani_DSA_Links
-      - Pellet_Gun_Man
-      - Mauser_98_Serial_Number
-      - Wooded_Area_Gun_Recovery
-      - Utah_State_University_Enrollment
-      - Center_Anticipatory_Intelligence
-      - $2_4M_US_Israel_Research
-    LEVEL_3_APPROVED: []
-    LEVEL_3_REJECTED: []
     Level_3_Topics:
       Recruited:
         file: "Recruited.md"
@@ -402,41 +280,8 @@ Level_2_Hierarchy:
       - Integrity_Security_Solutions
       - Video_Suppression_Claims
       - State_Farm_Stadium_Reservation
-      - Campus_Security_Failures
-      - AMFEST_Events
-      - Sponsor_Connections
-      - Post_Assassination_Narrative_Control
     LEVEL_2_APPROVED: []
     LEVEL_2_REJECTED: []
-    Level_3_For_REVIEW_AI_Created:
-      - Cooper_Brown_TPUSA
-      - Yrefy_Sponsor_Laine_Schoneberger
-      - AMFEST_Tucker_Carlson_July_20
-      - Doge_TPUSA_Connection
-      - UVU_Police_Chief_Jeff_Long
-      - Six_Campus_Officers
-      - No_Rooftop_Checks
-      - No_Drone_Deployment_UVU
-      - Un_Eff_America_Hunter_Kozak
-      - Banned_Credentials_Revoked
-      - Pro_Bono_Attorney_Offers_Refused
-      - Steven_Crowder_Package_Ready
-      - Trans_Gun_Violence_Question_Trigger
-      - Fox_News_1_4_Hour_Replacement
-      - TPUSA_Birthday_Video_October_14
-      - Drone_Footage_Contradiction
-      - Frank_Turek_Drone_Warning
-      - FBI_Footage_Gag_Claims
-      - 4K_Camera_Selective_Release
-      - Red_Zone_Cameras_Withheld
-      - May_2025_Stadium_Reservation
-      - Greg_Schaffer_SSG_2022
-      - White_Shirt_Agents_Eyewitness
-      - No_Bodycams_Security
-      - Subcontractor_Obstruction_Probe
-      - Scene_Cleanup_Chain_Custody
-    LEVEL_3_APPROVED: []
-    LEVEL_3_REJECTED: []
     Level_3_Topics:
       Overview_And_Mission:
         file: "overview.md"
