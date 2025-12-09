@@ -6,7 +6,7 @@ sidebar_position: 1
 ---
 
 # Who Assassinated Charlie Kirk
-v3.7
+v3.8
 
 ## Tyler Robinson didn't do it
 - [Motive](/Motive/overview.md) 
