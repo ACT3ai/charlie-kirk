@@ -18,37 +18,34 @@ These are the LEVEL_2 Parts of the hierarchy to process:
 * TPUSA
 
 * Do the following steps for each LEVEL_2 in the list above.
-  * Update AFTER_OUTPUT_FILE in the LEVEL_1_For_REVIEW_AI_Created with anything that should be added there.
   * Update AFTER_OUTPUT_FILE in the LEVEL_2_For_REVIEW_AI_Created with anything that should be added there.
-  * Scope
+  * Update AFTER_OUTPUT_FILE in the LEVEL_3_For_REVIEW_AI_Created with anything that should be added there.
+  * Add any that should be added.
+  * d
 
-
-
-
-Rules for LEVEL_1 in AFTER_OUTPUT_FILE.
-* This includes: LEVEL_1_For_REVIEW_AI_Created, LEVEL_1_APPROVED, LEVEL_1_REJECTED.
-* Don't remove any existing values in LEVEL_1_For_REVIEW_AI_Created.
-* When you add more values to LEVEL_1_For_REVIEW_AI_Created, don't create any that are duplicates in LEVEL_1_APPROVED or LEVEL_1_REJECTED.
-* "Level 1" will be directory names under SITE_DOC_ROOT.
-* SITE_DOC_ROOT/index.md has the homepage for the site. It includes Level 1 links in there that go out to the Level 1 pages.
-* Don't add or modify LEVEL_1_APPROVED or LEVEL_1_REJECTED.
 
 
 
 Rules for LEVEL_2 in AFTER_OUTPUT_FILE.
-* This includes: Level_2_Hierarchy and under it. Such as  LEVEL_2_For_REVIEW_AI_Created, LEVEL_2_APPROVED, LEVEL_2_REJECTED.
+* This includes: LEVEL_2_For_REVIEW_AI_Created, LEVEL_2_APPROVED, LEVEL_2_REJECTED.
 * Don't remove any existing values in LEVEL_2_For_REVIEW_AI_Created.
 * When you add more values to LEVEL_2_For_REVIEW_AI_Created, don't create any that are duplicates in LEVEL_2_APPROVED or LEVEL_2_REJECTED.
-* This is supposed to be the Level 1 directories of the site (under SITE_DOC_ROOT)
-* Don't add or modify LEVEL_2_APPROVED or LEVEL_2_REJECTED.
-* Level 2 content are often pages (instead of directories) (but not always)
+* "Level 2" will be directory names under SITE_DOC_ROOT.
+* SITE_DOC_ROOT/index.md has the homepage for the site. It includes Level 2 links in there that go out to the Level 2 pages.
 * An example of a Level 2 topic is "TPUSA". That Level 2 directory is SITE_DOC_ROOT/TPUSA/.  The page for that level 2 is often "overview.md" in that Level 2 directory, and in this example it is SITE_DOC_ROOT/TPUSA/overview.md.
+* Don't add or modify LEVEL_2_APPROVED or LEVEL_2_REJECTED.
 
 
-Rules for LEVEL_3 Topics in AFTER_OUTPUT_FILE.
+
+Rules for LEVEL_3 in AFTER_OUTPUT_FILE.
+* This includes: Level_3_Hierarchy and under it. Such as  LEVEL_3_For_REVIEW_AI_Created, LEVEL_3_APPROVED, LEVEL_3_REJECTED.
+* Don't remove any existing values in LEVEL_3_For_REVIEW_AI_Created.
+* When you add more values to LEVEL_3_For_REVIEW_AI_Created, don't create any that are duplicates in LEVEL_3_APPROVED or LEVEL_3_REJECTED.
+* Don't add or modify LEVEL_3_APPROVED or LEVEL_3_REJECTED.
+* Level 3 content are often pages (instead of directories) (but not always)
 * The Level 3 content is often a markdown page in the directory for the Level 2 that is it's parent.
 * The name of the Level 3 is almost never "overview.md" because that is for the Level 2 page.
 * The file for a topic is a markdown file (.md)
-* An example of a Level 3 "TPUSA Employees" (TPUSA_Employees) topic content page is: SITE_DOC_ROOT/TPUSA/employees.md
+* An example of a Level 3 "TPUSA Employees" (TPUSA_Employees) topic content page is: SITE_DOC_ROOT/TPUSA/employees.md. Where this parent is "Level 2" "TPUSA"
 
 

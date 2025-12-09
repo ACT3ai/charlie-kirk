@@ -1,0 +1,333 @@
+# Content Structure for Charlie Kirk Website
+# This file tracks Level 1, Level 2, and Level 3 content hierarchy
+# AI-suggested items go into For_REVIEW sections
+# Approved items are confirmed by user
+# Rejected items should not be added
+
+LEVEL_1_For_REVIEW_AI_Created:
+  - People
+  - Media
+  - Israel
+  - Tyler_Robinson
+  - TPUSA
+  - Motive
+  - Timeline
+  - Charlie
+  - Killer
+  - Vote
+  - Fix
+  - Censorship
+  - FBI
+  - CIA
+  - Drones
+  - Videos
+  - Photos
+  - UVU
+  - Locations
+  - Medical
+  - Before
+  - After
+  - CoverUp
+  - Theories
+  - Influencers
+  - Planes
+  - Gun_Bullet
+  - Tent
+  - Shooting_Locations
+  - Patsys
+  - GoogleSearches
+
+LEVEL_1_APPROVED: []
+
+LEVEL_1_REJECTED: []
+
+Level_2_Hierarchy:
+
+  People:
+    LEVEL_2_For_REVIEW_AI_Created:
+      - Central_Figures
+      - Families_And_Close_Associates
+      - Officials_And_Institutions
+      - Witnesses_Security_And_CitizenInvestigators
+      - Security_Personnel
+      - Possible_Patsys_And_Suspects
+      - Medical_Personnel
+      - Legal_Team_Members
+      - Plane_Crew_And_Aviation
+      - Construction_Workers
+    LEVEL_2_APPROVED: []
+    LEVEL_2_REJECTED: []
+    Level_3_Topics:
+      Central_Figures:
+        file: "Central_Figures.md"
+        description: "Key individuals central to the case - Charlie Kirk and Tyler Robinson"
+      Families_And_Close_Associates:
+        file: "Families_And_Close_Associates.md"
+        description: "Family members and close associates of Charlie and Tyler"
+      Officials_And_Institutions:
+        file: "Officials_And_Institutions.md"
+        description: "Government officials, FBI agents, judges, medical examiners"
+      Witnesses_Security_And_CitizenInvestigators:
+        file: "Witnesses_Security_And_CitizenInvestigators.md"
+        description: "Event witnesses, security staff, and online investigators"
+      Security_Personnel:
+        file: "Security_Personnel.md"
+        description: "Rick Cutler, Dan Flood, Frank Turek, Laine Schoneberger, Brian Harpole, Greg Schaffer"
+      Possible_Patsys_And_Suspects:
+        file: "Possible_Patsys_And_Suspects.md"
+        description: "George Zinn, Russell Kennington, Zachariah Qureshi, Hunter Kozak"
+      Medical_Personnel:
+        file: "Medical_Personnel.md"
+        description: "Dr. Deirdre Amaro, Timpanogos surgeons, hospital staff"
+      Legal_Team_Members:
+        file: "Legal_Team_Members.md"
+        description: "Kathryn Nester, Michael Burt, Richard Novak, Judge Tony Graf"
+      Plane_Crew_And_Aviation:
+        file: "Plane_Crew_And_Aviation.md"
+        description: "N1098L crew, SU-BTT connections, N888KG operators"
+      Construction_Workers:
+        file: "Construction_Workers.md"
+        description: "Daniel Merrell, construction companies that paved over crime scene"
+
+  Media:
+    LEVEL_2_For_REVIEW_AI_Created:
+      - Censorship
+      - Articles_And_Coverage
+      - Social_Media_Analysis
+      - Influencer_Coverage
+      - X_Twitter_Investigators
+      - Podcast_Coverage
+      - YouTube_Analysis
+      - Mainstream_News_Coverage
+      - Video_Deletion_Claims
+      - Live_Stream_Interruptions
+    LEVEL_2_APPROVED: []
+    LEVEL_2_REJECTED: []
+    Level_3_Topics:
+      Censorship:
+        file: "Censorship.md"
+        description: "Media censorship, gag orders, and information control"
+      Articles_And_Coverage:
+        file: "Articles_And_Coverage.md"
+        description: "News articles and media coverage from various outlets"
+      Social_Media_Analysis:
+        file: "Social_Media_Analysis.md"
+        description: "Social media posts and citizen analysis"
+      Influencer_Coverage:
+        file: "Influencer_Coverage.md"
+        description: "Coverage by online influencers and content creators"
+      X_Twitter_Investigators:
+        file: "X_Twitter_Investigators.md"
+        description: "@ProjectConstitu, @BasedSamParker, @I_am_Cullen, @RealCandaceO"
+      Podcast_Coverage:
+        file: "Podcast_Coverage.md"
+        description: "Podcast discussions and investigations of the case"
+      YouTube_Analysis:
+        file: "YouTube_Analysis.md"
+        description: "YouTube videos analyzing evidence and theories"
+      Mainstream_News_Coverage:
+        file: "Mainstream_News_Coverage.md"
+        description: "Fox News, CNN, and other traditional media coverage"
+      Video_Deletion_Claims:
+        file: "Video_Deletion_Claims.md"
+        description: "Claims of witnesses' video footage being deleted"
+      Live_Stream_Interruptions:
+        file: "Live_Stream_Interruptions.md"
+        description: "Reports of live streams being cut during the event"
+
+  Israel:
+    LEVEL_2_For_REVIEW_AI_Created:
+      - Charlie_Quotes_Israel
+      - Israeli_Presence_And_Connectivity_Claims
+      - Israeli_Search_Patterns_Claims
+      - Motive_And_Political_Context
+      - Timeline_Of_Israel_Related_Events
+      - Donor_Pressure_And_Funding
+      - Hamptons_Meeting
+      - White_House_Meeting_July_31
+      - Netanyahu_Connections
+      - NSA_Cellphone_Claims
+      - Plane_SU_BTT_Egyptian
+      - Mossad_Theories
+      - Pro_Israel_Figures_And_Confrontations
+    LEVEL_2_APPROVED: []
+    LEVEL_2_REJECTED: []
+    Level_3_Topics:
+      Charlie_Quotes_Israel:
+        file: "Charlie_Quotes_Israel.md"
+        description: "Charlie Kirk's statements questioning Israel, 'They will kill me' quote"
+      Israeli_Presence_And_Connectivity_Claims:
+        file: "Israeli_Presence_And_Connectivity_Claims.md"
+        description: "12 Israeli cellphones at UVU (NSA claims), Israeli presence theories"
+      Israeli_Search_Patterns_Claims:
+        file: "Israeli_Search_Patterns_Claims.md"
+        description: "Google Trends from Israeli IPs for surgeons, officials, attorneys"
+      Motive_And_Political_Context:
+        file: "Motive_And_Political_Context.md"
+        description: "Political motivations, Israel's control of TPUSA, Gaza criticism"
+      Timeline_Of_Israel_Related_Events:
+        file: "Timeline_Of_Israel_Related_Events.md"
+        description: "Timeline from July 18-Sept 11, 2025"
+      Donor_Pressure_And_Funding:
+        file: "Donor_Pressure_And_Funding.md"
+        description: "Pro-Israel donor threats, funding withdrawal, Netanyahu's offer"
+      Hamptons_Meeting:
+        file: "Hamptons_Meeting.md"
+        description: "August 4 intervention with Rabbi Wolicki, Josh Hammer, Seth Dillon, Bill Ackman"
+      White_House_Meeting_July_31:
+        file: "White_House_Meeting_July_31.md"
+        description: "July 31 meeting with Faith & Freedom Coalition, Charlie absent"
+      Netanyahu_Connections:
+        file: "Netanyahu_Connections.md"
+        description: "Netanyahu's son Yair, Netanyahu's tweets, meeting requests"
+      NSA_Cellphone_Claims:
+        file: "NSA_Cellphone_Claims.md"
+        description: "NSA detected 12 Israeli registered cellphones at shooting site"
+      Plane_SU_BTT_Egyptian:
+        file: "Plane_SU_BTT_Egyptian.md"
+        description: "Egyptian Gulfstream 4SP, July 20 and Sept 4-11 flights"
+      Mossad_Theories:
+        file: "Mossad_Theories.md"
+        description: "Theories about Mossad involvement, CornerShot weapon claims"
+      Pro_Israel_Figures_And_Confrontations:
+        file: "Pro_Israel_Figures_And_Confrontations.md"
+        description: "Bill Ackman, Shapiro, Loomer, other pro-Israel confrontations"
+
+  Tyler_Robinson:
+    LEVEL_2_For_REVIEW_AI_Created:
+      - Recruited
+      - Travel
+      - Girlfriend
+      - Trial
+      - Background_And_History
+      - Timeline_Day_Of_Shooting
+      - Evidence_And_Contradictions
+      - Dairy_Queen_Timeline
+      - Clothing_Changes
+      - Defense_Attorneys
+      - Parents_And_Family
+      - Ballistics_Contradictions
+      - Gun_And_Weapon_Issues
+      - Patsy_Theory
+      - CIA_Utah_State_Connection
+      - DSA_Funding_Claims
+    LEVEL_2_APPROVED: []
+    LEVEL_2_REJECTED: []
+    Level_3_Topics:
+      Recruited:
+        file: "Recruited.md"
+        description: "Claims about intelligence recruitment, CIA Center for Anticipatory Intelligence"
+      Travel:
+        file: "Travel.md"
+        description: "Travel path from UVU to Dairy Queen to St George"
+      Girlfriend:
+        file: "Girlfriend/overview.md"
+        description: "Lance Twiggs, transgender partner, intelligence connections"
+      Trial:
+        file: "Trial/overview.md"
+        description: "Legal proceedings, Judge Graf, gag orders, jailhouse informant"
+      Background_And_History:
+        file: "Background_And_History.md"
+        description: "Tyler Robinson's background, Utah State, missing 4 years"
+      Timeline_Day_Of_Shooting:
+        file: "Timeline_Day_Of_Shooting.md"
+        description: "8:07 AM to 6:38 PM timeline with camera footage"
+      Evidence_And_Contradictions:
+        file: "Evidence_And_Contradictions.md"
+        description: "30-06 wound pattern mismatch, alternative shooter theories"
+      Dairy_Queen_Timeline:
+        file: "Dairy_Queen_Timeline.md"
+        description: "6:38 PM Dairy Queen sighting, 15 minute timeline issues"
+      Clothing_Changes:
+        file: "Clothing_Changes.md"
+        description: "Multiple outfit changes, maroon shirt to jeans to different clothes"
+      Defense_Attorneys:
+        file: "Defense_Attorneys.md"
+        description: "Kathryn Nester Google searches from Israel, $750K+ cost"
+      Parents_And_Family:
+        file: "Parents_And_Family.md"
+        description: "Parents refusing pro bono attorneys, father's construction company"
+      Ballistics_Contradictions:
+        file: "Ballistics_Contradictions.md"
+        description: "30-06 Mauser 98 would destroy neck, blood spatter issues"
+      Gun_And_Weapon_Issues:
+        file: "Gun_And_Weapon_Issues.md"
+        description: "Bolt action rifle recovery, no serial number claims"
+      Patsy_Theory:
+        file: "Patsy_Theory.md"
+        description: "Tyler as patsy for real shooters, multiple people involved"
+      CIA_Utah_State_Connection:
+        file: "CIA_Utah_State_Connection.md"
+        description: "Center for Anticipatory Intelligence, $2.4M US-Israel research funding"
+      DSA_Funding_Claims:
+        file: "DSA_Funding_Claims.md"
+        description: "$50K wire transfers, DSA-linked accounts, AOC connections"
+
+  TPUSA:
+    LEVEL_2_For_REVIEW_AI_Created:
+      - Overview_And_Mission
+      - Security_Team
+      - Employees
+      - Donors
+      - Events_And_Activities
+      - Leadership_Changes
+      - Relationship_With_Israel
+      - Memorial_Service
+      - Drone_And_Camera_Footage
+      - Tyler_Bowyer_Claims
+      - Replacement_Leadership
+      - Security_Arrangements_UVU
+      - Integrity_Security_Solutions
+      - Video_Suppression_Claims
+      - State_Farm_Stadium_Reservation
+    LEVEL_2_APPROVED: []
+    LEVEL_2_REJECTED: []
+    Level_3_Topics:
+      Overview_And_Mission:
+        file: "overview.md"
+        description: "Turning Point USA overview, mission, and Charlie's role"
+      TPUSA_Content:
+        file: "TPUSA.md"
+        description: "General TPUSA information and content"
+      Security_Team:
+        file: "Security_Team.md"
+        description: "Private security personnel at UVU event"
+      Employees:
+        file: "Employees.md"
+        description: "TPUSA employees, staff changes post-assassination"
+      Donors:
+        file: "Donors.md"
+        description: "Pro-Israel donors, funding threats, Bill Ackman connections"
+      Events_And_Activities:
+        file: "Events_And_Activities.md"
+        description: "TPUSA events, UVU event logistics"
+      Leadership_Changes:
+        file: "Leadership_Changes.md"
+        description: "Replacement appearing on Fox within 1-4 hours"
+      Relationship_With_Israel:
+        file: "Relationship_With_Israel.md"
+        description: "TPUSA's pro-Israel alignment, donor pressure"
+      Memorial_Service:
+        file: "Memorial_Service.md"
+        description: "State Farm Stadium memorial service details"
+      Drone_And_Camera_Footage:
+        file: "Drone_And_Camera_Footage.md"
+        description: "TPUSA drones, 4K footage, selective release claims"
+      Tyler_Bowyer_Claims:
+        file: "Tyler_Bowyer_Claims.md"
+        description: "Tyler Bowyer's birthday video contradictions, FBI warnings"
+      Replacement_Leadership:
+        file: "Replacement_Leadership.md"
+        description: "Who took over, how quickly, Fox News appearances"
+      Security_Arrangements_UVU:
+        file: "Security_Arrangements_UVU.md"
+        description: "Hybrid security model, UVU police, rooftop monitoring failures"
+      Integrity_Security_Solutions:
+        file: "Integrity_Security_Solutions.md"
+        description: "Rockhouse Integrity Group, Brian Harpole, Greg Schaffer, no bodycams"
+      Video_Suppression_Claims:
+        file: "Video_Suppression_Claims.md"
+        description: "FBI requests not to release footage, selective editing"
+      State_Farm_Stadium_Reservation:
+        file: "State_Farm_Stadium_Reservation.md"
+        description: "Memorial venue reserved in May 2025, months before assassination"
