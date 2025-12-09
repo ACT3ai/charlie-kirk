@@ -38,24 +38,47 @@ Level_3_Hierarchy:
   # the 3rd yaml level, such as "Recruited" is the Key_Label for the Level 3 page.
   # The yaml value for that is the title for it.
 
-  ## LAYER 2 Tyler
-  LEVEL_3_For_REVIEW_AI_Created:
+  ## CATEGORIES For Level 2 Tyler
+  LEVEL_3_CATEGORIES_FOR_REVIEW:
     - Level_2: "Tyler"
       - Recruited: "Recruited"
           Link: "/Tyler/Recruited.md"
           Describe: "Describe the meaning here. 3 sentences or less, be succinct."
 
 
-  LEVEL_3_APPROVED:
+  LEVEL_3_CATEGORIES_APPROVED:
     - Level_2: "Tyler"
       - Girlfriend: "Girlfriend"
           Link: "/Tyler/Girlfriend.md"
           Describe: "Describe the meaning here. 3 sentences or less, be succinct."
 
-  LEVEL_3_REJECTED:
+  LEVEL_3_CATEGORIES_REJECTED:
     - Level_2: "Tyler"
       - Girlfriend: "Bad Bad"
           Link: "/Tyler/Bad_Bad.md"
+
+
+
+  ## ITEMS For Level 2 Tyler
+  Level_3_ITEMS_For_REVIEW_AI_Created:
+    - Level_2: "Tyler"
+      - Recruited: "Recruited"
+          Link: "/Tyler/Recruited.md"
+          Describe: "Describe the meaning here. 3 sentences or less, be succinct."
+
+
+  Level_3_ITEMS_APPROVED:
+    - Level_2: "Tyler"
+      - Girlfriend: "Girlfriend"
+          Link: "/Tyler/Girlfriend.md"
+          Describe: "Describe the meaning here. 3 sentences or less, be succinct."
+
+  Level_3_ITEMS_REJECTED:
+    - Level_2: "Tyler"
+      - Girlfriend: "Bad Bad"
+          Link: "/Tyler/Bad_Bad.md"
+
+
 
 
 # SWAP
