@@ -17,8 +17,17 @@ This is the AFTER_OUTPUT_FILE:
 
 ########### INPUT FILES ##############################
 Import the file contents from all files in this directory. Understanding them will be required when doing everything else.
-~/BGit/act3/charlie-kirk//knowledge/
+~/BGit/act3/charlie-kirk/knowledge/
 
+
+
+########### INPUT FILES ##############################
+This website is a Docusaurus website of markdown files.
+The root directory of the Docusaurus website is.
+SITE_ROOT = ~/BGit/act3/charlie-kirk/
+
+The content for Level 1 and below is in:
+SITE_DOC_ROOT = ~/BGit/act3/charlie-kirk/docs/
 
 
 

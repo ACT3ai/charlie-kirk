@@ -1,41 +1,54 @@
 ##########################################################
-# PerShot (Scene)  Set Deep Analysis
+# CS_After.yaml.  Update this file with the changes below.
 #
 #
 ##########################################################
 
-These are the LEVEL_2_DIR to process:
+* The first thing to do is, if the file AFTER_OUTPUT_FILE  exists, then delete the file BEFORE_OUTPUT_FILE.
+* Then copy the file AFTER_OUTPUT_FILE to the filename BEFORE_OUTPUT_FILE.
+
+######## Task #############
+* Make these changes to the file AFTER_OUTPUT_FILE: 
+
+These are the LEVEL_2 Parts of the hierarchy to process:
 * People
 * Media
 * Israel
 * Tyler_Robinson
 * TPUSA
 
-There is DOCS_PARENT_DIR which is the directory: ~/BGit/act3/charlie-kirk/docs/
-There is KEYWORDS_PARENT_DIR which is the directory: ~/BGit/act3/charlie-kirk/keywords/
-
-Repeat the following for each LEVEL_2_DIR in the LEVEL_2_DIR list above. As you process one, store 
-   that one into the variable into THIS_LEVEL_2_DIR:
-* If directories are missing to get the file path, create the directory.
-* Delete the file: KEYWORDS_PARENT_DIR/THIS_LEVEL_2_DIR.keywords
-* Create this file: KEYWORDS_PARENT_DIR/THIS_LEVEL_2_DIR.keywords.  We will save the content below into that file.
-* Create the list of keywords to "Level 3" that this Level 2 should go to.
-* Save in this .keywords file, a yaml. It has an array of "Keywords". Each entry is a "Keyword". 
-* The yaml property Label is the phrase to a Level 3.  It has "_" instead of spaces. No special characters.
-
-* The yaml property's value is the description of this.
+* Do the following steps for each LEVEL_2 in the list above.
+  * Update AFTER_OUTPUT_FILE in the LEVEL_1_For_REVIEW_AI_Created with anything that should be added there.
+  * Update AFTER_OUTPUT_FILE in the LEVEL_2_For_REVIEW_AI_Created with anything that should be added there.
+  * Scope
 
 
 
-What are Level 2:
-* These are areas of the Charlie Kirk assassination investigation. Biggest areas of it.
-* The list of level 2 are the links are already listed in the document: ~/BGit/act3/charlie-kirk/docs/index.md
-* These are the biggest areas of the investigation.
 
-What are Level 3:
-* Underneath each Level 2 are the lower level topics under there.  Each of these are Level 3.
-* The goal of this is to map out all of the Level 3 areas.
-* Look at the content that needs to be explained.
-* This document explains the data behind what happened: ~/BGit/act3/charlie-kirk/Research/bry_research.txt
+Rules for LEVEL_1 in AFTER_OUTPUT_FILE.
+* This includes: LEVEL_1_For_REVIEW_AI_Created, LEVEL_1_APPROVED, LEVEL_1_REJECTED.
+* Don't remove any existing values in LEVEL_1_For_REVIEW_AI_Created.
+* When you add more values to LEVEL_1_For_REVIEW_AI_Created, don't create any that are duplicates in LEVEL_1_APPROVED or LEVEL_1_REJECTED.
+* "Level 1" will be directory names under SITE_DOC_ROOT.
+* SITE_DOC_ROOT/index.md has the homepage for the site. It includes Level 1 links in there that go out to the Level 1 pages.
+* Don't add or modify LEVEL_1_APPROVED or LEVEL_1_REJECTED.
+
+
+
+Rules for LEVEL_2 in AFTER_OUTPUT_FILE.
+* This includes: Level_2_Hierarchy and under it. Such as  LEVEL_2_For_REVIEW_AI_Created, LEVEL_2_APPROVED, LEVEL_2_REJECTED.
+* Don't remove any existing values in LEVEL_2_For_REVIEW_AI_Created.
+* When you add more values to LEVEL_2_For_REVIEW_AI_Created, don't create any that are duplicates in LEVEL_2_APPROVED or LEVEL_2_REJECTED.
+* This is supposed to be the Level 1 directories of the site (under SITE_DOC_ROOT)
+* Don't add or modify LEVEL_2_APPROVED or LEVEL_2_REJECTED.
+* Level 2 content are often pages (instead of directories) (but not always)
+* An example of a Level 2 topic is "TPUSA". That Level 2 directory is SITE_DOC_ROOT/TPUSA/.  The page for that level 2 is often "overview.md" in that Level 2 directory, and in this example it is SITE_DOC_ROOT/TPUSA/overview.md.
+
+
+Rules for LEVEL_3 Topics in AFTER_OUTPUT_FILE.
+* The Level 3 content is often a markdown page in the directory for the Level 2 that is it's parent.
+* The name of the Level 3 is almost never "overview.md" because that is for the Level 2 page.
+* The file for a topic is a markdown file (.md)
+* An example of a Level 3 "TPUSA Employees" (TPUSA_Employees) topic content page is: SITE_DOC_ROOT/TPUSA/employees.md
 
 
