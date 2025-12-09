@@ -98,7 +98,9 @@ Level_3_Hierarchy:
   # The yaml value for that is the title for it.
 
   ## CATEGORIES For Level 2
-  LEVEL_3_CATEGORIES_FOR_REVIEW:
+  LEVEL_3_CATEGORIES_FOR_REVIEW: []
+
+  LEVEL_3_CATEGORIES_APPROVED:
     - Level_2: "People"
       - Key_Label: "Central_Figures"
           Title: "Central Figures"
@@ -309,7 +311,6 @@ Level_3_Hierarchy:
           Link: "/TPUSA/Video_Suppression_Claims.md"
           Describe: "Claims of FBI pressure not to release full footage from event"
 
-  LEVEL_3_CATEGORIES_APPROVED: []
 
   LEVEL_3_CATEGORIES_REJECTED: []
 
@@ -742,6 +743,10 @@ Level_3_Hierarchy:
           Describe: "Funding and research connections"
 
     - Level_2: "TPUSA"
+      - Key_Label: "Overview_And_Mission"
+          Title: "Overview And Mission"
+          Link: "/TPUSA/Overview_And_Mission.md"
+          Describe: "Turning Point USA overview, mission, and Charlie's role"
       - Key_Label: "Security_Team"
           Title: "Security Team"
           Link: "/TPUSA/Security_Team.md"
@@ -758,6 +763,22 @@ Level_3_Hierarchy:
           Title: "Events And Activities"
           Link: "/TPUSA/Events_And_Activities.md"
           Describe: "TPUSA events, UVU event logistics"
+      - Key_Label: "Leadership_Changes"
+          Title: "Leadership Changes"
+          Link: "/TPUSA/Leadership_Changes.md"
+          Describe: "Replacement appearing on Fox within 1-4 hours"
+      - Key_Label: "Relationship_With_Israel"
+          Title: "Relationship With Israel"
+          Link: "/TPUSA/Relationship_With_Israel.md"
+          Describe: "TPUSA's pro-Israel alignment, donor pressure"
+      - Key_Label: "Memorial_Service"
+          Title: "Memorial Service"
+          Link: "/TPUSA/Memorial_Service.md"
+          Describe: "State Farm Stadium memorial service details"
+      - Key_Label: "Drone_And_Camera_Footage"
+          Title: "Drone And Camera Footage"
+          Link: "/TPUSA/Drone_And_Camera_Footage.md"
+          Describe: "TPUSA drones, 4K footage, selective release claims"
       - Key_Label: "Tyler_Bowyer_Claims"
           Title: "Tyler Bowyer Claims"
           Link: "/TPUSA/Tyler_Bowyer_Claims.md"
@@ -766,10 +787,18 @@ Level_3_Hierarchy:
           Title: "Replacement Leadership"
           Link: "/TPUSA/Replacement_Leadership.md"
           Describe: "Who took over, how quickly, Fox News appearances"
+      - Key_Label: "Security_Arrangements_UVU"
+          Title: "Security Arrangements UVU"
+          Link: "/TPUSA/Security_Arrangements_UVU.md"
+          Describe: "Hybrid security model, UVU police, rooftop monitoring failures"
       - Key_Label: "Integrity_Security_Solutions"
           Title: "Integrity Security Solutions"
           Link: "/TPUSA/Integrity_Security_Solutions.md"
           Describe: "Rockhouse Integrity Group, Brian Harpole, Greg Schaffer, no bodycams"
+      - Key_Label: "Video_Suppression_Claims"
+          Title: "Video Suppression Claims"
+          Link: "/TPUSA/Video_Suppression_Claims.md"
+          Describe: "FBI requests not to release footage, selective editing"
       - Key_Label: "State_Farm_Stadium_Reservation"
           Title: "State Farm Stadium Reservation"
           Link: "/TPUSA/State_Farm_Stadium_Reservation.md"
