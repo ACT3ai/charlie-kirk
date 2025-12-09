@@ -97,8 +97,8 @@ Level_3_Hierarchy:
   # the 3rd yaml level, such as "Recruited" is the Key_Label for the Level 3 page.
   # The yaml value for that is the title for it.
 
-  ## People - Level 3 For Review
-  LEVEL_3_For_REVIEW_AI_Created:
+  ## CATEGORIES For Level 2
+  LEVEL_3_CATEGORIES_FOR_REVIEW:
     - Level_2: "People"
       - Central_Figures: "Central Figures"
           Link: "/People/Central_Figures.md"
@@ -139,6 +139,14 @@ Level_3_Hierarchy:
       - Construction_Workers: "Construction Workers"
           Link: "/People/Construction_Workers.md"
           Describe: "Daniel Merrell, construction companies that paved over crime scene"
+
+  LEVEL_3_CATEGORIES_APPROVED: []
+
+  LEVEL_3_CATEGORIES_REJECTED: []
+
+
+  ## ITEMS For Level 2
+  Level_3_ITEMS_For_REVIEW_AI_Created:
     - Level_2: "People"
       - Phil_Lyman: "Phil Lyman"
           Link: "/People/Phil_Lyman.md"
@@ -872,9 +880,9 @@ Level_3_Hierarchy:
           Link: "/TPUSA/Scene_Cleanup_Chain_Custody.md"
           Describe: "Evidence handling and preservation"
 
-  LEVEL_3_APPROVED: []
+  Level_3_ITEMS_APPROVED: []
 
-  LEVEL_3_REJECTED: []
+  Level_3_ITEMS_REJECTED: []
 
 
 # SWAP
