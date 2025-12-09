@@ -41,20 +41,23 @@ Level_3_Hierarchy:
   ## CATEGORIES For Level 2 Tyler
   LEVEL_3_CATEGORIES_FOR_REVIEW:
     - Level_2: "Tyler"
-      - Recruited: "Recruited"
+      - Key_Label: "Recruited"
+          Title: "Recruited"
           Link: "/Tyler/Recruited.md"
           Describe: "Describe the meaning here. 3 sentences or less, be succinct."
 
 
   LEVEL_3_CATEGORIES_APPROVED:
     - Level_2: "Tyler"
-      - Girlfriend: "Girlfriend"
+      - Key_Label: "Girlfriend"
+          Title: "Girlfriend"
           Link: "/Tyler/Girlfriend.md"
           Describe: "Describe the meaning here. 3 sentences or less, be succinct."
 
   LEVEL_3_CATEGORIES_REJECTED:
     - Level_2: "Tyler"
-      - Girlfriend: "Bad Bad"
+      - Key_Label: "Bad Bad"
+          Title: "Bad Bad"
           Link: "/Tyler/Bad_Bad.md"
 
 
@@ -62,20 +65,23 @@ Level_3_Hierarchy:
   ## ITEMS For Level 2 Tyler
   Level_3_ITEMS_For_REVIEW_AI_Created:
     - Level_2: "Tyler"
-      - Recruited: "Recruited"
+      - Key_Label: "Recruited"
+          Title: "Recruited"
           Link: "/Tyler/Recruited.md"
           Describe: "Describe the meaning here. 3 sentences or less, be succinct."
 
 
   Level_3_ITEMS_APPROVED:
     - Level_2: "Tyler"
-      - Girlfriend: "Girlfriend"
+      - Key_Label: "Girlfriend"
+          Title: "Girlfriend"
           Link: "/Tyler/Girlfriend.md"
           Describe: "Describe the meaning here. 3 sentences or less, be succinct."
 
   Level_3_ITEMS_REJECTED:
     - Level_2: "Tyler"
-      - Girlfriend: "Bad Bad"
+      - Key_Label: "Bad Bad"
+          Title: "Bad Bad"
           Link: "/Tyler/Bad_Bad.md"
 
 

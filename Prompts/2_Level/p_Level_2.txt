@@ -55,6 +55,9 @@ Rules for LEVEL_3 in AFTER_OUTPUT_FILE.
 * Don't add or modify any of these:
       LEVEL_3_CATEGORIES_APPROVED, LEVEL_3_CATEGORIES_REJECTED, 
       Level_3_ITEMS_APPROVED, Level_3_ITEMS_REJECTED. 
+* Under "Level_2", list all "Key_Label"'s in the array. Don't repeat "Level_2" until switching between these higher level categories (LEVEL_3_CATEGORIES_APPROVED vs LEVEL_3_CATEGORIES_REJECTED, etc)
+
+
 
 * Level 3 content are often pages (instead of directories) (but not always)
 * The Level 3 content is often a markdown page in the directory for the Level 2 that is it's parent.
