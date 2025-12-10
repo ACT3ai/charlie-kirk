@@ -37,6 +37,32 @@ Level_2_Hierarchy:
         Link: "/organizations_groups/overview.md"
     - property_locations: "Property & Locations"
         Link: "/property_locations/overview.md"
+    - cameras: "Cameras"
+        Link: "/cameras/security/overview.md"
+    - aircraft_flight_analysis: "Aircraft Flight Analysis"
+        Link: "/aircraft_flight_analysis/overview.md"
+    - analysis_documentation: "Analysis Documentation"
+        Link: "/analysis_documentation/overview.md"
+    - campus_university: "Campus University"
+        Link: "/campus_university/overview.md"
+    - conspiracy_theories: "Conspiracy Theories"
+        Link: "/conspiracy_theories/overview.md"
+    - key_individuals: "Key Individuals"
+        Link: "/key_individuals/overview.md"
+    - media_response: "Media Response"
+        Link: "/media_response/overview.md"
+    - other_topics: "Other Topics"
+        Link: "/other_topics/overview.md"
+    - Plane: "Plane"
+        Link: "/Plane/Leadership/overview.md"
+    - political_context: "Political Context"
+        Link: "/political_context/overview.md"
+    - social_media_analysis: "Social Media Analysis"
+        Link: "/social_media_analysis/overview.md"
+    - technology_surveillance: "Technology Surveillance"
+        Link: "/technology_surveillance/overview.md"
+    - timeline_events: "Timeline Events"
+        Link: "/timeline_events/overview.md"
 
   LEVEL_2_APPROVED:
     - People: "People"
@@ -161,18 +187,18 @@ Level_3_Hierarchy:
           Link: "/People/Construction_Workers.md"
           Describe: "Daniel Merrell and construction companies that paved over UVU crime scene evidence"
 
-    - Level_2: "Tyler"
+    - Level_2: "Tyler_Robinson"
       - Key_Label: "Girlfriend"
           Title: "Tyler Robinson Girlfriend"
-          Link: "/Tyler/Girlfriend/overview.md"
+          Link: "/Tyler_Robinson/Girlfriend/overview.md"
           Describe: "Personal information about Tyler Robinson's girlfriend, relationship details, and potential involvement in assassination investigation"
       - Key_Label: "shooting"
           Title: "Tyler Robinson Shooting"
-          Link: "/Tyler/shooting/overview.md"
+          Link: "/Tyler_Robinson/shooting/overview.md"
           Describe: "Official narrative vs. alternative accounts of Tyler Robinson's alleged shooting role, rooftop narrative challenges, ballistics analysis"
       - Key_Label: "Trial"
           Title: "Tyler Robinson Trial"
-          Link: "/Tyler/Trial/overview.md"
+          Link: "/Tyler_Robinson/Trial/overview.md"
           Describe: "Legal proceedings, court documents, witness testimony, and trial outcomes for Tyler Robinson assassination case"
 
   LEVEL_3_CATEGORIES_APPROVED: []
@@ -403,20 +429,6 @@ Level_3_Hierarchy:
           Link: "/Media/Steven_Denoon_Analysis.md"
           Describe: "Steven Denoon's independent investigation and analysis of assassination conspiracy theories"
 
-    - Level_2: "Tyler"
-      - Key_Label: "Before"
-          Title: "Tyler Before"
-          Link: "/Tyler/Before.md"
-          Describe: "Tyler Robinson's pre-incident background, education, social activities, and online life before UVU assassination event"
-      - Key_Label: "Recruited"
-          Title: "Tyler Robinson Recruited"
-          Link: "/Tyler/Recruited.md"
-          Describe: "Allegations about intelligence agency monitoring and recruitment of Tyler Robinson, unverified theories about CIA connections"
-      - Key_Label: "Travel"
-          Title: "Tyler Robinson Travel"
-          Link: "/Tyler/Travel.md"
-          Describe: "Movement timeline and travel patterns of Tyler Robinson related to assassination incident, day-of movements and location data"
-
     - Level_2: "Israel"
       - Key_Label: "Charlie_Quotes_Israel"
           Title: "Charlie Quotes on Israel"
@@ -588,6 +600,10 @@ Level_3_Hierarchy:
           Describe: "Egyptian plane stop at Minot military base for classified tech transfer approval"
 
     - Level_2: "Tyler_Robinson"
+      - Key_Label: "Before"
+          Title: "Tyler Before"
+          Link: "/Tyler_Robinson/Before.md"
+          Describe: "Tyler Robinson's pre-incident background, education, social activities, and online life before UVU assassination event"
       - Key_Label: "Recruited"
           Title: "Recruited"
           Link: "/Tyler_Robinson/Recruited.md"
@@ -1606,6 +1622,89 @@ Level_3_Hierarchy:
           Title: "Attorney Hospital CEO Searches"
           Link: "/GoogleSearches/Attorney_Hospital_CEO_Searches.md"
           Describe: "Pre-assassination searches for defense attorneys, hospital CEO Andrew Zenger from Israeli IPs"
+
+    - Level_2: "maps"
+      # No Level 3 files found - only overview.md exists
+
+    - Level_2: "Tyler"
+      - Key_Label: "Before"
+          Title: "Tyler Before"
+          Link: "/Tyler/Before.md"
+          Describe: "Tyler Robinson's background, education, social and online activities before the UVU assassination event"
+      - Key_Label: "Recruited"
+          Title: "Tyler Robinson Recruited"
+          Link: "/Tyler/Recruited.md"
+          Describe: "Claims and evidence regarding Tyler Robinson's alleged recruitment by intelligence agencies"
+      - Key_Label: "Travel"
+          Title: "Tyler Robinson Travel"
+          Link: "/Tyler/Travel.md"
+          Describe: "Tyler Robinson's travel patterns, movements, and timeline related to the assassination incident"
+
+    - Level_2: "Other"
+      # No Level 3 files found - only overview.md exists
+
+    - Level_2: "intelligence"
+      # No Level 3 files found - only overview.md exists
+
+    - Level_2: "gov"
+      # No Level 3 files found - only overview.md exists
+
+    - Level_2: "government_organizations"
+      # No Level 3 files found - only overview.md exists
+
+    - Level_2: "legal_investigation"
+      # No Level 3 files found - only overview.md exists
+
+    - Level_2: "security_law_enforcement"
+      # No Level 3 files found - only overview.md exists
+
+    - Level_2: "organizations_groups"
+      # No Level 3 files found - only overview.md exists
+
+    - Level_2: "property_locations"
+      # No Level 3 files found - only overview.md exists
+
+    - Level_2: "cameras"
+      - Key_Label: "UVU_Security_Cameras"
+          Title: "UVU Security Cameras"
+          Link: "/cameras/security/UVU_Security_Cameras.md"
+          Describe: "UVU campus security camera systems, footage availability, and coverage areas relevant to assassination investigation"
+
+    - Level_2: "aircraft_flight_analysis"
+      # No Level 3 files found - only overview.md exists
+
+    - Level_2: "analysis_documentation"
+      # No Level 3 files found - only overview.md exists
+
+    - Level_2: "campus_university"
+      # No Level 3 files found - only overview.md exists
+
+    - Level_2: "conspiracy_theories"
+      # No Level 3 files found - only overview.md exists
+
+    - Level_2: "key_individuals"
+      # No Level 3 files found - only overview.md exists
+
+    - Level_2: "media_response"
+      # No Level 3 files found - only overview.md exists
+
+    - Level_2: "other_topics"
+      # No Level 3 files found - only overview.md exists
+
+    - Level_2: "Plane"
+      # Subdirectory structure exists (Leadership, N1098L) but only overview.md files found
+
+    - Level_2: "political_context"
+      # No Level 3 files found - only overview.md exists
+
+    - Level_2: "social_media_analysis"
+      # No Level 3 files found - only overview.md exists
+
+    - Level_2: "technology_surveillance"
+      # No Level 3 files found - only overview.md exists
+
+    - Level_2: "timeline_events"
+      # No Level 3 files found - only overview.md exists
 
   Level_3_ITEMS_APPROVED: []
 

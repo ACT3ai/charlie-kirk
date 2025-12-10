@@ -16,7 +16,27 @@ Level_2_Hierarchy:
   # the 2nd yaml level, such as "List_of_Individuals" is the Key_Label for the Level 2 page.
   # The yaml value for that is the title for it.
   # Under there can be Link or URL on the value of the markdown link.
-  LEVEL_2_For_REVIEW_AI_Created: []
+  LEVEL_2_For_REVIEW_AI_Created:
+    - maps: "Maps"
+        Link: "/maps/overview.md"
+    - Tyler: "Tyler"
+        Link: "/Tyler/overview.md"
+    - Other: "Other"
+        Link: "/Other/overview.md"
+    - intelligence: "Intelligence"
+        Link: "/intelligence/overview.md"
+    - gov: "Government Evidence"
+        Link: "/gov/overview.md"
+    - government_organizations: "Government Organizations"
+        Link: "/government_organizations/overview.md"
+    - legal_investigation: "Legal Investigation"
+        Link: "/legal_investigation/overview.md"
+    - security_law_enforcement: "Security & Law Enforcement"
+        Link: "/security_law_enforcement/overview.md"
+    - organizations_groups: "Organizations & Groups"
+        Link: "/organizations_groups/overview.md"
+    - property_locations: "Property & Locations"
+        Link: "/property_locations/overview.md"
 
   LEVEL_2_APPROVED:
     - People: "People"
@@ -140,6 +160,20 @@ Level_3_Hierarchy:
           Title: "Construction Workers"
           Link: "/People/Construction_Workers.md"
           Describe: "Daniel Merrell and construction companies that paved over UVU crime scene evidence"
+
+    - Level_2: "Tyler"
+      - Key_Label: "Girlfriend"
+          Title: "Tyler Robinson Girlfriend"
+          Link: "/Tyler/Girlfriend/overview.md"
+          Describe: "Personal information about Tyler Robinson's girlfriend, relationship details, and potential involvement in assassination investigation"
+      - Key_Label: "shooting"
+          Title: "Tyler Robinson Shooting"
+          Link: "/Tyler/shooting/overview.md"
+          Describe: "Official narrative vs. alternative accounts of Tyler Robinson's alleged shooting role, rooftop narrative challenges, ballistics analysis"
+      - Key_Label: "Trial"
+          Title: "Tyler Robinson Trial"
+          Link: "/Tyler/Trial/overview.md"
+          Describe: "Legal proceedings, court documents, witness testimony, and trial outcomes for Tyler Robinson assassination case"
 
   LEVEL_3_CATEGORIES_APPROVED: []
 
@@ -368,6 +402,20 @@ Level_3_Hierarchy:
           Title: "Steven Denoon Analysis"
           Link: "/Media/Steven_Denoon_Analysis.md"
           Describe: "Steven Denoon's independent investigation and analysis of assassination conspiracy theories"
+
+    - Level_2: "Tyler"
+      - Key_Label: "Before"
+          Title: "Tyler Before"
+          Link: "/Tyler/Before.md"
+          Describe: "Tyler Robinson's pre-incident background, education, social activities, and online life before UVU assassination event"
+      - Key_Label: "Recruited"
+          Title: "Tyler Robinson Recruited"
+          Link: "/Tyler/Recruited.md"
+          Describe: "Allegations about intelligence agency monitoring and recruitment of Tyler Robinson, unverified theories about CIA connections"
+      - Key_Label: "Travel"
+          Title: "Tyler Robinson Travel"
+          Link: "/Tyler/Travel.md"
+          Describe: "Movement timeline and travel patterns of Tyler Robinson related to assassination incident, day-of movements and location data"
 
     - Level_2: "Israel"
       - Key_Label: "Charlie_Quotes_Israel"
