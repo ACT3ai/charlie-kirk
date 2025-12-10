@@ -37,7 +37,7 @@ REASONING: His powerful [30-06 Mauser 98 gun](/Gun_Bullet/overview.md) would hav
   </div>
   <div style={{ flex: 1 }}>
   * [Tyler Robinson](/Tyler_Robinson/overview.md) 
-  * [Possible Shootering Locations](Shooting_Locations/overview.md) 
+  * [Possible Shooting Locations](Shooting_Locations/overview.md) 
   * [Videos](Videos/overview.md)  
   * [Photos](Photos/overview.md)  
   * [UVU](UVU/overview.md) & [Locations](/Locations/overview.md)
