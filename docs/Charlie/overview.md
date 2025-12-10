@@ -22,6 +22,23 @@ At a high level, the compiled research portrays Charlie Kirk as a nationally inf
 
 For deeper dives into specific evidence and technical threads referenced here, see Related Sections below.
 
+<div style={{ display: "flex", justifyContent: "space-between", gap: "2rem" }}>
+  <div style={{ flex: 1 }}>
+  * [Charlie Kirk](/Charlie/overview.md)
+  * [Timeline](/Timeline/overview.md)
+  * [Autopsy](/Charlie/Autopsy.md)
+  </div>
+  <div style={{ flex: 1 }}>
+  * [TPUSA](/TPUSA/overview.md)
+  * [Media Articles on him](/Media/overview.md)
+  </div>
+  <div style={{ flex: 1 }}>
+  * [Charlie Videos](/Videos/overview.md)
+  * [Charlie Photos](/Photos/overview.md)
+  * [Medical](/Medical/overview.md)
+  </div>
+</div>
+
 ## Context and Significance
 
 Charlie’s public profile grew through TPUSA, campus events, media appearances, and alliances with prominent conservative figures. The research here asserts that by mid–2025, he may have been reassessing aspects of his long-standing posture toward Israel and U.S. foreign policy. Supporters and commentators cited in the compiled files characterize this as an inflection point that potentially altered donor relationships and media dynamics around him. In this framing, his influence among university audiences and emerging conservative leaders made his messaging consequential not just for movement branding but for institutional and geopolitical interests.
