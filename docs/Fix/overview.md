@@ -2,7 +2,7 @@
 
 ## Overview
 
-This page summarizes **proposed reforms and areas for change** that have been discussed in connection with the Charlie Kirk case. These ideas reflect what commentators and citizen‑investigators believe could improve transparency, accountability, and justice in future incidents; they are not legal advice and may not represent a consensus view. Where possible, related Level 3 pages (such as [Law1](Fix/Law1.md), [Law2](Fix/Law2.md), and [Politicians](Fix/Politicians.md)) explore specific proposals in more depth.
+This page summarizes **proposed reforms and areas for change** that have been discussed in connection with the Charlie Kirk case. These ideas reflect what commentators and citizen‑investigators believe could improve transparency, accountability, and justice in future incidents; they are not legal advice and may not represent a consensus view. Where possible, related Level 3 pages (such as [Law1](Fix/Law1.md), [Law2](Fix/Law2.md), and [Politicians](Fix/Politicans.md)) explore specific proposals in more depth.
 
 ## Legal and policy reforms (claims)
 
@@ -22,7 +22,7 @@ Another cluster of proposals centers on **political leadership and oversight**:
 - Assessing **appointments and oversight** of key roles (such as law‑enforcement leadership, medical‑examiner positions, and judicial assignments) to ensure they are perceived as credible and independent.
 - Supporting efforts to **strengthen checks and balances** between branches of government and between levels of law enforcement, so that no single office can unilaterally control information flow in sensitive cases.
 
-The page [Politicians](Fix/Politicians.md) focuses more specifically on arguments advanced by commentators about voting and political accountability in this context.
+The page [Politicians](Fix/Politicans.md) focuses more specifically on arguments advanced by commentators about voting and political accountability in this context.
 
 ## Institutional practice and culture
 

@@ -86,7 +86,7 @@ This page complements other reform discussions:
 
 - [TPUSA](TPUSA/overview.md) – broader background on the organization’s role in Charlie’s life and in the investigation.
 - [Fix Overview](Fix/overview.md) – high‑level summary of legal, policy, and institutional reforms suggested by commentators.
-- [Politicians](Fix/Politicians.md) and [Churches](Fix/Churches.md) – civic and community‑level approaches to accountability.
+- [Politicians](Fix/Politicans.md) and [Churches](Fix/Churches.md) – civic and community‑level approaches to accountability.
 
 Together, these ideas invite readers to think about how organizations, not just governments, can adopt structures and
 habits that reduce the risk of injustice and help maintain public trust when tragedies occur.

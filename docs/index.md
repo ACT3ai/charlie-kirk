@@ -30,7 +30,7 @@ REASONING: His powerful [30-06 Mauser 98 gun](/Gun_Bullet/overview.md) would hav
   <div style={{ flex: 1 }}>
   * [Vote](/Vote/overview.md)  
   * [Bad Laws](/Fix/overview.md)
-  * [Bad Politicians](/Fix/Politicians.md)
+  * [Politicians](/Fix/Politicans.md)
   * [Maps](maps/overview.md)  
   * [Censorship](/Censorship/overview.md)
   * [FBI](FBI/overview.md) (Cover up / Bad Behavior)
@@ -85,7 +85,7 @@ REASONING: His powerful [30-06 Mauser 98 gun](/Gun_Bullet/overview.md) would hav
 
 ## How To Fix (5 steps)
 - [Pass Law: #1 Force information disclosed](/Fix/Law1.md).  [#2 Fix Cover-up Law by Autopsy](/Fix/Law2.md)
-- [Vote out Cover-Up Politicians](/Fix/Politicians.md)
+- [Vote out Cover-Up Politicians](/Fix/Politicans.md)
 - [Ask Churches to Ensure Justice Happens](/Fix/Churches.md)
 - [TPUSA](TPUSA/TPUSA.md): [Ethically Aligned with Charlie Kirk. Fixes...](Fix/TSUSA.md)
 

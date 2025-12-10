@@ -101,7 +101,7 @@ Any “Law 1” style proposal would need to balance these factors carefully.
 This conceptual law ties into other reform‑oriented topics:
 
 - [Law2](Fix/Law2.md) – ideas about autopsy and medical‑examiner transparency in light of recent legislation.
-- [Politicians](Fix/Politicians.md) – how voters might evaluate officials’ records on transparency and oversight.
+- [Politicians](Fix/Politicans.md) – how voters might evaluate officials' records on transparency and oversight.
 - [Fix Overview](Fix/overview.md) – broader summaries of reform themes that have emerged from the research corpus.
 
 All of these pages describe **ideas and claims** advanced by commentators; they are provided here to organize discussion about

@@ -62,7 +62,7 @@ truth and neighbor‑love regardless of the outcome.
 This page complements other reform‑oriented discussions:
 
 - [Fix Overview](Fix/overview.md) – high‑level summary of legal, institutional, and cultural proposals.
-- [Politicians](Fix/Politicians.md) – ideas about evaluating public officials’ records on transparency and oversight.
+- [Politicians](Fix/Politicans.md) – ideas about evaluating public officials' records on transparency and oversight.
 - [TPUSA / TSUSA](Fix/TSUSA.md) – suggestions for how organizations can align policies and governance with ethical commitments.
 
 Together, these pages invite readers to think about how **law, institutions, and communities of faith** might all contribute to
