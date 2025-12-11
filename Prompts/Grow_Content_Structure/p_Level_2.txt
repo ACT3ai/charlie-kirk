@@ -56,10 +56,9 @@ Rules for LEVEL_3 in AFTER_OUTPUT_FILE.
 * When you add more values to LEVEL_3_CATEGORIES_FOR_REVIEW, don't create any that are duplicates in LEVEL_3_CATEGORIES_APPROVED or LEVEL_3_CATEGORIES_REJECTED.
   * Same with Level_3_ITEMS_For_REVIEW_AI_Created, Level_3_ITEMS_APPROVED, Level_3_ITEMS_REJECTED
 * Don't add or modify any of these:
-      LEVEL_3_CATEGORIES_APPROVED, LEVEL_3_CATEGORIES_REJECTED, 
-      Level_3_ITEMS_APPROVED, Level_3_ITEMS_REJECTED. 
+      LEVEL_3_CATEGORIES_APPROVED, LEVEL_3_CATEGORIES_REJECTED,
+      Level_3_ITEMS_APPROVED, Level_3_ITEMS_REJECTED.
 * Under "Level_2", list all "Key_Label"'s in the array. Don't repeat "Level_2" until switching between these higher level categories (LEVEL_3_CATEGORIES_APPROVED vs LEVEL_3_CATEGORIES_REJECTED, etc)
-* Make sure yaml value for yaml property "Describe" to be written to match the Charlie Kirk assassination investigation case specific to the part of the investigation related to the value in "Key_Label" yaml property.
 
 
 
