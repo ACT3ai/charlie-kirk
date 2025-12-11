@@ -16,9 +16,9 @@
  * Options:
  *   -i, --input <dir>     Input directory (default: ../to_transcribe)
  *   -o, --output <dir>    Output directory (default: ../transcribed_out)
- *   -m, --model <model>   Whisper model (base, small, medium, large-v3)
+ *   -m, --model <model>   Whisper model (base, small, medium, large-v3) (default: large-v3)
  *   -l, --language <lang> Language override (e.g., en, es, fr)
- *   --verbose             Verbose logging
+ *   --quiet               Disable progress output (progress shown by default)
  *   --dry-run             Show what would be done without executing
  *   -h, --help            Show help
  */
@@ -32,9 +32,9 @@ const os = require('os');
 const CONFIG = {
   inputDir: null,
   outputDir: null,
-  model: 'base',
+  model: 'large-v3',
   language: null,
-  verbose: false,
+  showProgress: true,
   dryRun: false,
   whisperCommand: 'whisper',
   ffmpegCommand: 'ffmpeg',
@@ -59,13 +59,15 @@ function log(message, type = 'info') {
     success: `${colors.green}✓${colors.reset}`,
     error: `${colors.red}✗${colors.reset}`,
     warn: `${colors.yellow}⚠${colors.reset}`,
-    verbose: `${colors.cyan}→${colors.reset}`
+    progress: `${colors.cyan}→${colors.reset}`
   }[type] || '';
 
-  console.log(`${prefix} ${message}`);
-
-  if (CONFIG.verbose && type === 'verbose') {
-    console.log(`  ${colors.cyan}[${timestamp}]${colors.reset} ${message}`);
+  // Always show info, success, error, and warn
+  if (type !== 'progress') {
+    console.log(`${prefix} ${message}`);
+  } else if (CONFIG.showProgress) {
+    // Only show progress messages if showProgress is enabled
+    console.log(`${prefix} ${message}`);
   }
 }
 
@@ -79,16 +81,17 @@ ${colors.cyan}Usage:${colors.reset}
 ${colors.cyan}Options:${colors.reset}
   -i, --input <dir>     Input directory (default: ../to_transcribe)
   -o, --output <dir>    Output directory (default: ../transcribed_out)
-  -m, --model <model>   Whisper model: base, small, medium, large-v3 (default: base)
+  -m, --model <model>   Whisper model: base, small, medium, large-v3 (default: large-v3)
   -l, --language <lang> Language override (e.g., en, es, fr)
-  --verbose             Enable verbose logging
+  --quiet               Disable progress output (progress is shown by default)
   --dry-run             Show what would be done without executing
   -h, --help            Show this help message
 
 ${colors.cyan}Examples:${colors.reset}
   node transcribe.js
-  node transcribe.js -m medium --verbose
-  node transcribe.js -i ./audio -o ./transcripts -m large-v3
+  node transcribe.js -m medium
+  node transcribe.js -i ./audio -o ./transcripts --quiet
+  node transcribe.js -m base -l en
 
 ${colors.cyan}Prerequisites:${colors.reset}
   ${colors.yellow}macOS:${colors.reset}
@@ -134,8 +137,8 @@ function parseArgs() {
         CONFIG.language = args[++i];
         break;
 
-      case '--verbose':
-        CONFIG.verbose = true;
+      case '--quiet':
+        CONFIG.showProgress = false;
         break;
 
       case '--dry-run':
@@ -211,8 +214,8 @@ function ensureDirectories() {
     fs.mkdirSync(CONFIG.outputDir, { recursive: true });
   }
 
-  log(`Input directory: ${CONFIG.inputDir}`, 'verbose');
-  log(`Output directory: ${CONFIG.outputDir}`, 'verbose');
+  log(`Input directory: ${CONFIG.inputDir}`, 'progress');
+  log(`Output directory: ${CONFIG.outputDir}`, 'progress');
 }
 
 function getAudioFiles() {
@@ -226,8 +229,8 @@ function getAudioFiles() {
 
   log(`Found ${audioFiles.length} file(s) to process`, 'info');
 
-  if (CONFIG.verbose) {
-    audioFiles.forEach(file => log(`  - ${file}`, 'verbose'));
+  if (CONFIG.showProgress) {
+    audioFiles.forEach(file => log(`  - ${file}`, 'progress'));
   }
 
   return audioFiles;
@@ -270,7 +273,7 @@ function transcribeFile(inputFile) {
     args.push('--output_format', 'txt');
     args.push('--output_dir', CONFIG.outputDir);
 
-    log(`Command: ${CONFIG.whisperCommand} ${args.join(' ')}`, 'verbose');
+    log(`Command: ${CONFIG.whisperCommand} ${args.join(' ')}`, 'progress');
 
     const startTime = Date.now();
     const whisperProcess = spawn(CONFIG.whisperCommand, args);
@@ -280,17 +283,17 @@ function transcribeFile(inputFile) {
 
     whisperProcess.stdout.on('data', (data) => {
       stdout += data.toString();
-      if (CONFIG.verbose) {
+      if (CONFIG.showProgress) {
         process.stdout.write(data);
       } else {
-        // Show progress dots
+        // Show progress dots even when quiet
         process.stdout.write('.');
       }
     });
 
     whisperProcess.stderr.on('data', (data) => {
       stderr += data.toString();
-      if (CONFIG.verbose) {
+      if (CONFIG.showProgress) {
         process.stderr.write(data);
       }
     });
@@ -298,7 +301,7 @@ function transcribeFile(inputFile) {
     whisperProcess.on('close', (code) => {
       const duration = ((Date.now() - startTime) / 1000).toFixed(2);
 
-      if (!CONFIG.verbose) {
+      if (!CONFIG.showProgress) {
         process.stdout.write('\n');
       }
 
@@ -326,7 +329,7 @@ function transcribeFile(inputFile) {
           const stats = fs.statSync(actualOutput);
           log(`✓ Transcription complete in ${duration}s`, 'success');
           log(`  Output: ${actualOutput}`, 'success');
-          log(`  Size: ${(stats.size / 1024).toFixed(2)} KB`, 'verbose');
+          log(`  Size: ${(stats.size / 1024).toFixed(2)} KB`, 'progress');
 
           // Add metadata header to the output file
           const originalContent = fs.readFileSync(actualOutput, 'utf8');
@@ -400,7 +403,7 @@ async function processAllFiles() {
   }
   log('='.repeat(60), 'info');
 
-  if (CONFIG.verbose) {
+  if (CONFIG.showProgress) {
     console.log('\nDetailed results:');
     console.log(JSON.stringify(results, null, 2));
   }
@@ -424,7 +427,7 @@ async function main() {
     log('\n✓ All done!', 'success');
   } catch (error) {
     log(`\n✗ Error: ${error.message}`, 'error');
-    if (CONFIG.verbose) {
+    if (CONFIG.showProgress) {
       console.error(error);
     }
     process.exit(1);
