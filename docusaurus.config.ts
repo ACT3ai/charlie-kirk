@@ -66,17 +66,18 @@ const config: Config = {
       respectPrefersColorScheme: true,
     },
     navbar: {
-      title: 'My Site',
+      title: 'Home',
       logo: {
         alt: 'My Site Logo',
         src: 'img/logo.svg',
       },
       items: [
-        { to: '/', label: 'Charlie Kirk', position: 'left' },
-        { to: '/Topics', label: 'Topics', position: 'left' },
-        { to: '/Topic-Analyses', label: 'Analyses', position: 'left' },
-        { to: '/Topics3/overview', label: 'Topics3', position: 'left' },
-        { to: '/blog', label: 'Blog', position: 'left' },
+        { href: 'https://act3TV.com/Charlie_Kirk/', label: 'Charlie Kirk Movie', position: 'left' },
+        { to: '/Fix/overview', label: 'Fix Laws', position: 'left' },
+        { to: '/Topic-Analyses', label: 'Proof not Tyler', position: 'left' },
+        { to: '/Topics3/overview', label: 'Proof Intel Services', position: 'left' },
+        { to: '/CoverUp/overview', label: 'Cover Up', position: 'left' },
+        { to: '/your-actions-fix-it', label: 'Your Actions Fix It', position: 'left' },
       ],
     },
     footer: {
