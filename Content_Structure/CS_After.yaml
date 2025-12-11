@@ -97,6 +97,12 @@ Level_2_Hierarchy:
         Link: "/CIA/overview.md"
     - Court: "Court"
         Link: "/Court/overview.md"
+    - Your_Actions_Fix_It: "Your Actions Fix It"
+        Link: "/Your_Actions_Fix_It/overview.md"
+    - Proof_Intel_Services: "Proof Intel Services"
+        Link: "/Proof_Intel_Services/overview.md"
+    - Proof_Not_Tyler: "Proof Not Tyler"
+        Link: "/Proof_Not_Tyler/overview.md"
     - Drones: "Drones"
         Link: "/Drones/overview.md"
     - Videos: "Videos"
@@ -1357,16 +1363,16 @@ Level_3_Hierarchy:
     - Level_2: "Other"
       # No Level 3 files found - only overview.md exists
 
-    - Level_2: "intelligence"
+    - Level_2: "Intelligence_Services"
       # No Level 3 files found - only overview.md exists
 
     - Level_2: "gov"
       # No Level 3 files found - only overview.md exists
 
-    - Level_2: "government_organizations"
+    - Level_2: "Governments"
       # No Level 3 files found - only overview.md exists
 
-    - Level_2: "legal_investigation"
+    - Level_2: "Legal"
       # No Level 3 files found - only overview.md exists
 
     - Level_2: "security_law_enforcement"
@@ -1375,7 +1381,7 @@ Level_3_Hierarchy:
     - Level_2: "organizations_groups"
       # No Level 3 files found - only overview.md exists
 
-    - Level_2: "property_locations"
+    - Level_2: "Locations"
       # No Level 3 files found - only overview.md exists
 
     - Level_2: "cameras"
@@ -1383,22 +1389,22 @@ Level_3_Hierarchy:
           Title: "UVU Security Cameras"
           Link: "/cameras/security/UVU_Security_Cameras.md"
 
-    - Level_2: "aircraft_flight_analysis"
+    - Level_2: "Planes"
       # No Level 3 files found - only overview.md exists
 
     - Level_2: "analysis_documentation"
       # No Level 3 files found - only overview.md exists
 
-    - Level_2: "campus_university"
+    - Level_2: "UVU_University"
       # No Level 3 files found - only overview.md exists
 
-    - Level_2: "conspiracy_theories"
+    - Level_2: "Theories"
       # No Level 3 files found - only overview.md exists
 
     - Level_2: "key_individuals"
       # No Level 3 files found - only overview.md exists
 
-    - Level_2: "media_response"
+    - Level_2: "News"
       # No Level 3 files found - only overview.md exists
 
     - Level_2: "other_topics"
@@ -1407,13 +1413,13 @@ Level_3_Hierarchy:
     - Level_2: "Plane"
       # Subdirectory structure exists (Leadership, N1098L) but only overview.md files found
 
-    - Level_2: "social_media_analysis"
+    - Level_2: "Social_Media"
       # No Level 3 files found - only overview.md exists
 
     - Level_2: "technology_surveillance"
       # No Level 3 files found - only overview.md exists
 
-    - Level_2: "timeline_events"
+    - Level_2: "Timeline"
       # No Level 3 files found - only overview.md exists
 
   Level_3_ITEMS_APPROVED: []
