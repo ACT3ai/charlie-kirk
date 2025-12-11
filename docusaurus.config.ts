@@ -74,10 +74,10 @@ const config: Config = {
       items: [
         { href: 'https://act3TV.com/Charlie_Kirk/', label: 'Charlie Kirk Movie', position: 'left' },
         { to: '/Fix/overview', label: 'Fix Laws', position: 'left' },
-        { to: '/Topic-Analyses', label: 'Proof not Tyler', position: 'left' },
-        { to: '/Topics3/overview', label: 'Proof Intel Services', position: 'left' },
+        { to: '/Proof_Not_Tyler/overview', label: 'Proof Not Tyler', position: 'left' },
+        { to: '/Proof_Intel_Services/overview', label: 'Proof Intel Services', position: 'left' },
         { to: '/CoverUp/overview', label: 'Cover Up', position: 'left' },
-        { to: '/your-actions-fix-it', label: 'Your Actions Fix It', position: 'left' },
+        { to: '/Your_Actions_Fix_It/overview', label: 'Your Actions Fix It', position: 'left' },
       ],
     },
     footer: {
