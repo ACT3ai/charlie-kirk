@@ -17,6 +17,9 @@ Level_2_Hierarchy:
   # The yaml value for that is the title for it.
   # Under there can be Link or URL on the value of the markdown link.
   LEVEL_2_For_REVIEW_AI_Created:
+
+
+  LEVEL_2_APPROVED:
     - maps: "Maps"
         Link: "/maps/overview.md"
     - Tyler: "Tyler"
@@ -64,7 +67,8 @@ Level_2_Hierarchy:
     - timeline_events: "Timeline Events"
         Link: "/timeline_events/overview.md"
 
-  LEVEL_2_APPROVED:
+
+
     - People: "People"
         Link: "/People/overview.md"
     - Media: "Media"
