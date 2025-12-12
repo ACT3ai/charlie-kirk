@@ -6,6 +6,8 @@
 
 * When doing a change, see if the destination of the change already exists. In that case, combine the two into the unified final location. Make sure there aren't any duplicate entries in Level 2 or Level 3 in the final Yaml.
 
+
+
 ##########################
 # Changes
 
@@ -35,14 +37,21 @@
   * From: "Charlie".  To: "Charlie Kirk"
 
 
-* Change under Level_2 Categories "People". 
-  * From: "Witnesses, Security & Citizen Investigators".  To: "Citizen Investigators"
-  * From: "Possible Patsys And Suspects".  To: "Suspects"
-  * From: "Legal Team Members".  To: "Legal People"
-  * From: "Possible Patsys And Suspects".  To: "Suspects"
-  * From: "Possible Patsys And Suspects".  To: "Suspects"
-  * From: "Possible Patsys And Suspects".  To: "Suspects"
-  * From: "Possible Patsys And Suspects".  To: "Suspects"
+* Change under Level_2 Categories "Israel". 
+  * From: "Israeli Presence And Connectivity Claims".  To: "List of Charlie breaking from Israel Narrative Control"
+  * From: "Israeli Search Patterns Claims".  To: "Israelis at UVU"
+  * From: "Motive And Political Context".  To: "Mossad History of Assassinations"
+  * From: "Timeline of Israel Related Events".  To: "Timeline wrt Israel"
+  * From: "Donor Pressure".  To: "Donors"
+  * From: "Netanyahu Connections".  To: "Benjamin Netanyahu"
+  * From: "Pro-Israel Figures And Confrontations".  To: "Pro-Israel Figures"
+  * From: "France Connection".  To: "France to Israel Connections"
+  * From: "Egypt Connection".  To: "Egypt to Israel Connection"
+  * From: "Donor Pressure".  To: "Donors"
+  * From: "Donor Pressure".  To: "Donors"
+  * From: "Donor Pressure".  To: "Donors"
+  * From: "Donor Pressure".  To: "Donors"
+
 
 
 
@@ -53,10 +62,26 @@
   * Delete: "Political Context"
 
 
+* Delete in Level_3 "Israel".  Only delete these under "Israel" Level 2. Don't delete them from any other Level_2.
+  * Delete Level 3: "NSA Cellphone Claims", "Plane SU-BTT Egyptian", "Mossad Theories", "Chain Of Evil Theory", "Wilmington DE Operations"
+  * Delete Level 3:  "France PM Meeting Trump", "AIPAC Political Control", "Wilmington DE Operations"
+  * Delete Level 3:  
+  * Delete Level 3:  
+  * Delete Level 3:  
+  
+  
+  
+
 
 * Delete in Level_3 "Locations".  
   * Delete Level 3: "Construction Site" and "Ballistics Medical Contradictions"
 
+
+##########################
+# Add or Imporve CATEGORIES under a Level 2.
+
+* This is to ADD or IMPROVE the Level 2 CATEGORIES under "Media"
+* Make these Categories: "News", "Podcasters", "Influencers", "X Influencers", "Instagram Influencers", "YouTubers"
 
 
 ##########################
