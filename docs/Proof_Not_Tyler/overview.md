@@ -22,7 +22,7 @@ Concerns about the official narrative also intersect with witness accounts and e
 - **Timeline discrepancies** – Analysis of when shots were fired, when Tyler was apprehended, and when Charlie was struck, with some arguing that the official timeline contains unexplained gaps.
 - **Security camera footage** – Calls for complete, unedited releases from all available cameras to verify positions and movements of all individuals at the time of the shooting.
 
-These observations are examined in more depth on related pages such as [Timeline](/Timeline/overview.md), [Witnesses](/Witnesses/overview.md), and [Before](/Before/overview.md).
+These observations are examined in more depth on related pages such as [Timeline](/Timeline/overview.md), [Witnesses](/People/Witnesses_Security_And_CitizenInvestigators), and [Before](/Before/overview.md).
 
 ## Alternative theories and suspects (claims)
 
