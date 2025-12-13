@@ -29,6 +29,7 @@
   * From: "Timeline Events".  To: "Timeline"
   * From: "Tyler".  To: "Tyler Robinson"
   * From: "Charlie".  To: "Charlie Kirk"
+  * From: "Gun_Bullet".  To: "Gun"
 
 
 
@@ -58,6 +59,7 @@
   * From: "Timeline Day Of Shooting".  To: "Timeline (Tyler Robinson)"
   * From: "xxxx".  To: "yyyy"
 
+* Change under Level_2 Categories "Planes". 
 
 
 
@@ -95,7 +97,9 @@
 
 * This is to ADD or IMPROVE the Level 2 CATEGORIES under "Media"
 * Make these Categories: "News", "Podcasters", "Influencers", "X Influencers", "Instagram Influencers", "YouTubers"
-
+* If there are duplicates between "For_REVIEW_AI" and "_APPROVED" or "_REJECTED" 
+  then remove the duplicates. The highest priority version to keep is _REJECTED,
+  second is _APPROVED.
 
 ##########################
 # Add:
@@ -106,7 +110,35 @@
   * Add: "Your Actions Fix It"
   * Add: "Proof Intel Services"
   * Add: "Proof Not Tyler"
+  * Add: "Bullet"
+  * Add: "Ballistics"
 
+
+* Add these Level_2 Categories in "Planes":  (If they aren't in there already)
+  * Add: "SU-BND (Blue plane) (Egyptian Plane)"
+  * Add: "SU-BTU (Egyptian Plane)"
+  * Add: "SU-BTU (Egyptian Plane)"
+  * Add: "SU-BTV (Egyptian Plane)"
+  * Add: "SU-BGM (Egyptian Plane)"
+  * Add: "N888KG (US)"
+  * Add: "N59906 (MARC, Private Image Collection)"
+  * Add: "N40JD (Beechcraft)"
+
+  * Add: "99-0404"
+  * Add: "T7ELL"
+  * Add: "EJM36"
+
+
+
+
+* Add these Level_2 Categories in "Court":  (If they aren't in there already)
+  * Add: "Court Case", "Judge", "Court Files"
+  * Add: "Prosecutors", "Defense Lawyers"
+  * Add: "Missing Discovery", "Discovery"
+  * Add: "Expert Witnessses", "Missing Expert Witnesses"
+  * Add: "Evidence (Included)", "Evidence (Missing)"
+  * Add: "Cover-up Risks", "Sealed Records", "Gag Order"
+  
 
 * Add these Level_2 Categories in "People":  (If they aren't in there already)
   * Add: "Distraction People"
