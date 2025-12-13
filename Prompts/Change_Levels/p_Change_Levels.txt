@@ -100,6 +100,10 @@
 * If there are duplicates between "For_REVIEW_AI" and "_APPROVED" or "_REJECTED" 
   then remove the duplicates. The highest priority version to keep is _REJECTED,
   second is _APPROVED.
+* Do NOT "remove duplicates" if the "Level_2" is under one of the "LEVEL_3_...".
+  * Example, if "Tyler Robinson" it is under "LEVEL_2_APPROVED"
+
+
 
 ##########################
 # Add:
@@ -123,7 +127,6 @@
   * Add: "N888KG (US)"
   * Add: "N59906 (MARC, Private Image Collection)"
   * Add: "N40JD (Beechcraft)"
-
   * Add: "99-0404"
   * Add: "T7ELL"
   * Add: "EJM36"
