@@ -2,7 +2,7 @@ name: Build and Deploy (GitHub Pages)
 
 on:
   push:
-    branches: [ main ]
+    branches: [main]
   workflow_dispatch:
 
 permissions:
@@ -23,10 +23,13 @@ jobs:
         with:
           node-version: 20
       - run: npm ci
-      - run: npm run build   # produces ./build or ./dist
+      - run: npm run build # produces ./build or ./dist
+        env:
+          DOCUSAURUS_URL: ${{ vars.DOCUSAURUS_URL }}
+          DOCUSAURUS_BASE_URL: ${{ vars.DOCUSAURUS_BASE_URL }}
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: ./build      # or ./dist (match your framework)
+          path: ./build # or ./dist (match your framework)
   deploy:
     needs: build
     runs-on: ubuntu-latest
@@ -36,4 +39,3 @@ jobs:
     steps:
       - id: deployment
         uses: actions/deploy-pages@v4
-
