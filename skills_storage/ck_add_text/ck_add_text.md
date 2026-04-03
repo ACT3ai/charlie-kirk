@@ -73,7 +73,11 @@ STEP 3: Decide placement
   - Do NOT insert in the middle of existing content.
 * If creating a new section:
   - Place it immediately AFTER the most related existing section.
-  - Use the section header format described above.
+  - MANDATORY: Before writing any content, FIRST insert a section header line
+    using the equal-sign format. Example:
+      =============== Your Section Title ==================
+    The header MUST appear before any new content. Never add content without
+    its own section header when creating a new section.
   - Choose a short, descriptive title matching the style of existing headers.
 
 STEP 4: Insert the text
