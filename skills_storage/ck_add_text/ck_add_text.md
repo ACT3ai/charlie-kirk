@@ -12,7 +12,33 @@ This text may come from an X post, a news article, a transcript, personal notes,
 or any other source. Your job is to insert it into the correct place in the file,
 preserving all existing content.
 
-CK_FILE is file ~/BGit/Bryan_git/charlie-kirk/Charlie_Kirk.txt
+
+============================
+DIRECTORY CONTEXT
+============================
+
+ROOT_DIR dir is ~/BGit/Bryan_git/charlie-kirk
+
+This is the Charlie Kirk assassination investigation repo (September 10, 2025,
+Utah Valley University). It has two layers:
+
+  * Private layer: everything OUTSIDE of {ROOT_DIR}/site/ — research notes,
+    people profiles, raw data, prompts, PDFs, and the master investigation file.
+    This content is never published to the website.
+
+  * Public layer: everything INSIDE {ROOT_DIR}/site/ — the Docusaurus static
+    site published at https://whoassassinatedcharliekirk.com.
+
+Key directories:
+  {ROOT_DIR}/Charlie_Kirk.txt     — Master investigation file (this skill's target)
+  {ROOT_DIR}/Details/             — Private people profiles, one subdir per person
+  {ROOT_DIR}/Research/            — Raw research (PDFs/, raw/, Topics/)
+  {ROOT_DIR}/knowledge/           — Synthesized write-ups and analysis
+  {ROOT_DIR}/Prompts/             — AI generation prompts
+  {ROOT_DIR}/site/docs/           — Public Docusaurus pages (302+ files)
+  {ROOT_DIR}/skills_storage/      — Skill source files (symlinked to ~/.claude/commands/)
+
+CK_FILE is file {ROOT_DIR}/Charlie_Kirk.txt
 
 
 ============================
