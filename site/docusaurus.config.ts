@@ -11,6 +11,7 @@ const config: Config = {
   title: "My Site",
   tagline: "Dinosaurs are cool",
   favicon: "img/favicon.ico",
+  staticDirectories: ["internals/static"],
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
@@ -54,8 +55,11 @@ const config: Config = {
           showReadingTime: true,
           editUrl: "https://github.com/ACT3ai/charlie-kirk",
         },
+        pages: {
+          path: "internals/src/pages",
+        },
         theme: {
-          customCss: "./src/css/custom.css",
+          customCss: "./internals/src/css/custom.css",
         },
       } satisfies Preset.Options,
     ],

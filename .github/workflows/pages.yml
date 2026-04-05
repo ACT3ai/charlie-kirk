@@ -17,19 +17,22 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: site
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
           node-version: 20
       - run: npm ci
-      - run: npm run build # produces ./build or ./dist
+      - run: npm run build
         env:
           DOCUSAURUS_URL: ${{ vars.DOCUSAURUS_URL }}
           DOCUSAURUS_BASE_URL: ${{ vars.DOCUSAURUS_BASE_URL }}
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: ./build # or ./dist (match your framework)
+          path: site/build
   deploy:
     needs: build
     runs-on: ubuntu-latest
