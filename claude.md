@@ -83,6 +83,16 @@ assassination investigation (September 10, 2025, Utah Valley University).
     build/                    # Static site output (generated)
     node_modules/             # NPM dependencies (generated)
 
+  IPFS/                       # PRIVATE: IPFS-pinned evidence files
+    ipfs.txt                  # Commands to pull and pin all files on any IPFS node.
+                              # Run the three-line blocks to: download each file,
+                              # add it to your local IPFS node, and pin it so you
+                              # rebroadcast it to other peers. See == IPFS == below.
+    Blake Bednarz UVU original Metadata Report from my file.txt
+    Blake Bednarz UVU video_forensic_information_sheet.pdf
+    videos/                   # Large video files — gitignored, not in the repo.
+      Blake Bednarz UVU original.MP4  (~3 GB; pull via IPFS CID in ipfs.txt)
+
   Details/                    # PRIVATE: One markdown file per person investigated
     {Person_Name}/            # Directory per person with research files
       {Person_Name}.md        # Main profile
@@ -337,3 +347,48 @@ individuals) should include:
 
 If status is unknown, web search to determine before adding the page. For living
 persons, all content on that page must follow defamation rules above.
+
+
+== IPFS ==
+
+The IPFS/ directory holds evidence files published to the InterPlanetary File
+System so they cannot be censored or taken down.
+
+  IPFS/
+    ipfs.txt                  — Run this to pull and pin all files (see below)
+    Blake Bednarz UVU original Metadata Report from my file.txt
+    Blake Bednarz UVU video_forensic_information_sheet.pdf
+    videos/                   — Gitignored. Large video files live here locally
+                                but are NOT committed to the repo. Pull via IPFS.
+      Blake Bednarz UVU original.MP4
+
+=== How ipfs.txt works ===
+
+ipfs.txt contains three commands per file:
+
+  ipfs get <CID>           — Downloads the file from the IPFS network to the
+                             current directory.
+  ipfs add "<filename>"    — Adds the downloaded file to your local IPFS node,
+                             confirming the same CID.
+  ipfs pin add <CID>       — Pins the file so it is never garbage-collected from
+                             your node and you rebroadcast it to other peers.
+
+To use on a new machine (requires IPFS installed and daemon running):
+
+  cd IPFS/
+  # Run each block in ipfs.txt sequentially.
+  # The video block downloads ~3 GB — allow time.
+
+The videos/ directory is gitignored because the MP4 is ~3 GB. Anyone who wants
+the video pulls it via the CID in ipfs.txt rather than from git.
+
+=== CIDs ===
+
+  Blake Bednarz UVU original Metadata Report from my file.txt
+    QmaXvzn9BSV44J9bLgvi9ZTz7uKNPmyqzErZgR4gEiaApL
+
+  Blake Bednarz UVU video_forensic_information_sheet.pdf
+    QmUT8ZdgWfDsk38NPBytTWsshbwwcnwNEqoDo4HCUXWjTJ
+
+  videos/Blake Bednarz UVU original.MP4
+    QmP2eKb15evsp4wWAJZaLXxq8wtXrLNEvoRSTzvm3sWYBc
