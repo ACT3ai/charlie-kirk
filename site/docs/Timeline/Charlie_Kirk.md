@@ -1,0 +1,38 @@
+---
+id: Charlie_Kirk
+title: Charlie Kirk Timeline
+sidebar_label: Charlie Kirk
+---
+
+# Charlie Kirk Timeline
+
+Timeline of key events in Charlie Kirk's life and activities leading up to and including the September 10, 2025 assassination at Utah Valley University.
+
+## 2025: Summary
+
+- Jul 11–13: Kirk appears at TPUSA Student Action Summit (Tampa, FL) with Megyn Kelly.
+- Jul 16: Ami's House podcast covers the "TPUSA Fallout."
+- Early Aug (~Aug 4): "Hamptons intervention" — pro-Israel figures reportedly confront Kirk about his public statements on the Israel-Gaza conflict.
+- Sep 8: Kirk posts publicly about distancing from the pro-Israel movement.
+- Sep 9: During a contentious meeting, Kirk texts, "They are going to kill me."
+- Sep 10 (12:23 PM MDT): Charlie Kirk is assassinated at Utah Valley University.
+
+## 2025: Full Detail
+
+- Jul 11–13: Megyn Kelly & Charlie Kirk at TPUSA SAS (Tampa, FL) ([YouTube](https://www.youtube.com/watch?v=ccRNaLGavf8)).
+- Jul 16: Ami's House podcast: Inside the Turning Point USA Fallout ([YouTube](https://www.youtube.com/watch?v=8HkNMTNHsa8)).
+- Jul 18 (claims): Some online commentators assert that around this date a decision to target Kirk was made; this is speculative and not confirmed in any official proceeding.
+- Jul 31: WH meeting organized by Faith & Freedom Coalition, Latino Coalition for Israel, and the Philos Project on confronting "woke-right" narratives; attendees reportedly include Ralph Reed, Luke Moon, Mario Bramnick, Yehuda Kaploun, and Yair Netanyahu. TPUSA not present.
+- Early Aug (~Aug 4): "Hamptons intervention" where pro-Israel figures confront Kirk (names reported include Pesach Wolicki, Josh Hammer, Seth Dillon, Bill Ackman, Natasha Hausdorff).
+- Sep 8: Kirk posts about distancing from the pro-Israel movement.
+- Sep 9: During a contentious meeting, Kirk texts, "They are going to kill me."
+- Sep 10 (12:23 PM MDT): Assassination occurs at UVU.
+- Sep 10 (evening): Private jet N888KG departs PVU, disables ADS-B during flight, later returns.
+
+## See Also
+
+- [Timeline Overview](/Timeline/overview)
+- [Timeline 2025](/Timeline/2025)
+- [Tyler Robinson Timeline](/Timeline/Tyler_Robinson)
+- [Charlie Kirk Overview](/Charlie/overview)
+- [Motive Overview](/Motive/overview)
