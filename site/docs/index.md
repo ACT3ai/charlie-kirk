@@ -21,6 +21,7 @@ REASONING: His powerful [30-06 Mauser 98 gun](/Gun_Bullet/overview.md) would hav
 <div style={{ display: "flex", justifyContent: "space-between", gap: "2rem" }}>
   <div style={{ flex: 1 }}>
   * [Charlie Kirk](/Charlie/overview.md)
+  * [Court](/Tyler_Robinson/Trial/overview.md)
   * [Real Killer](/Killer/overview.md)  
   * [Timeline](Timeline/overview.md) 
   * [Motive](Motive/overview.md) 
@@ -30,6 +31,7 @@ REASONING: His powerful [30-06 Mauser 98 gun](/Gun_Bullet/overview.md) would hav
   <div style={{ flex: 1 }}>
   * [Vote](/Vote/overview.md)  
   * [Bad Laws](/Fix/overview.md)
+  * [Trial](/Tyler_Robinson/Trial/overview.md)
   * [Politicians](/Fix/Politicans.md)
   * [Maps](maps/overview.md)  
   * [Censorship](/Censorship/overview.md)
