@@ -392,3 +392,13 @@ the video pulls it via the CID in ipfs.txt rather than from git.
 
   videos/Blake Bednarz UVU original.MP4
     QmP2eKb15evsp4wWAJZaLXxq8wtXrLNEvoRSTzvm3sWYBc
+
+~/BGit/Bryan_git/charlie-kirk/Research/PDFs
+Above is where to store the PDFs. Especially when we host them on a page 
+
+
+~/BGit/Bryan_git/charlie-kirk/prompts/Assess_Manual.md
+This is the assessment manual. This is what we're going to assess everything against.
+
+That will be the writing skill. That will mean what pages are laid out this way or that way. Always read this into the context menu, making sure we're aligning pages with these guidelines. 
+
