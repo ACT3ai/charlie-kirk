@@ -75,11 +75,11 @@ Sources from the National Counter-Terrorism Center suggest:
 - **Collateral Damage**: Willingness to harm bystanders
 
 ### Internal Betrayal
-Claims of internal TPUSA involvement:
-- **Erika Kirk**: Widow refusing autopsy to hide details
-- **TPUSA Funds**: Inheritance of $81 million organization
-- **Security Team**: Possible involvement of protection detail
-- **Donor Pressure**: Pro-Israel donors threatening funding cuts
+Claims of internal TPUSA involvement that have circulated in public commentary (all unverified — not findings of fact):
+- **Erika Kirk**: Widow (some commentators have alleged questions about autopsy decisions — these allegations are unverified and do not constitute a finding that she acted improperly)
+- **TPUSA Funds**: Reported organizational assets and succession questions
+- **Security Team**: Some commentators have questioned security arrangements — alleged intentional involvement in any attack is unverified speculation
+- **Donor Pressure**: Some reports describe pro-Israel donor pressure as context for motive theories (unverified)
 
 ## International Aircraft Analysis
 

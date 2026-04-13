@@ -1,96 +1,36 @@
-# Tyler Robinson Girlfriend Investigation
+# Tyler Robinson's Partner: Public Reporting Context
+
+:::caution Legal Disclaimer
+Nothing on this page constitutes a finding of wrongdoing, criminal conduct, or ethical violation by Tyler Robinson's partner or any other living person. **Tyler Robinson's partner has not been charged with any crime** and is not alleged by law enforcement to have participated in or had advance knowledge of any attack. All references to "potential involvement," "knowledge of plans," or "participation" are unverified speculative claims from public commentary and should not be treated as facts. This investigation does not allege that this individual had any role in, knowledge of, or involvement in Charlie Kirk's death.
+:::
 
 ## Introduction
 
-The investigation into Tyler Robinson's girlfriend has become a significant aspect of the Charlie Kirk assassination case. This document examines her role, background, and potential involvement in the events surrounding the assassination.
+Tyler Robinson's partner (publicly identified in some media as **Lance Twiggs**) has been mentioned in public reporting and commentary about Tyler Robinson's personal background and motivations. This page summarizes what has been **publicly reported**, with careful attention to what is established versus what is alleged.
 
-## Personal Background
+## What Public Reporting Establishes (As Reported)
 
-### Relationship to Tyler Robinson
-- **Relationship**: Girlfriend of accused assassin Tyler Robinson
-- **Duration**: Length of relationship unknown
-- **Age**: Similar age to Robinson (19)
-- **Location**: Local to Orem, Utah area
-- **Background**: Personal and family background
+According to mainstream media coverage and court-connected reporting:
 
-### Investigation Details
-- **Questioning**: FBI questioning and interviews
-- **Evidence**: Evidence related to her involvement
-- **Timeline**: Timeline of her activities
-- **Knowledge**: Knowledge of Robinson's plans
-- **Cooperation**: Level of cooperation with investigation
+- Tyler Robinson is reported to have had a partner whose relationship is discussed as part of motive narratives in the official case
+- Media accounts have referenced the partner's identity and personal circumstances in connection with coverage of Tyler Robinson's alleged state of mind
+- **No charges have been filed against this individual. They are not an accused party in any legal proceeding related to this case.**
 
-## Potential Involvement
+## Claims in Citizen-Research Commentary (Unverified Allegations)
 
-### Knowledge of Plans
-- **Awareness**: Knowledge of assassination plans
-- **Participation**: Participation in planning
-- **Support**: Support for Robinson's actions
-- **Cover-up**: Participation in cover-up
-- **Evidence**: Evidence of involvement
+Some citizen-research threads and online commentary have made additional speculative claims about this individual:
 
-### Investigation Focus
-- **Digital Evidence**: Digital communications and evidence
-- **Witness Testimony**: Testimony about Robinson
-- **Timeline**: Timeline of events and activities
-- **Motivation**: Understanding of motivation
-- **Planning**: Knowledge of planning process
+- Some accounts have alleged knowledge of plans or some level of awareness of Robinson's intentions — **these are unverified, contested claims**
+- Such allegations have not been established in court, are not supported by official charging documents, and should be treated as speculation
 
-## Legal Status
+**Attributing criminal knowledge, participation, or planning to this individual based on unverified online commentary would be both factually unsupported and potentially defamatory.**
 
-### Charges
-- **Current Status**: No known charges
-- **Investigation**: Ongoing investigation
-- **Cooperation**: Level of cooperation
-- **Legal Representation**: Legal representation
-- **Rights**: Legal rights and protections
+## How This Connects to the Investigation
 
-### Evidence Issues
-- **Sealed Evidence**: Digital forensics sealed until March 2026
-- **Classified Information**: Government secrets protected
-- **Witness Protection**: Limited witness cooperation
-- **Cover-up**: Evidence of cover-up operations
-- **Truth Suppression**: Suppression of truth
+This individual's name appears in this investigation because they feature in media and legal coverage of the Tyler Robinson case. Their mention here reflects that coverage — it makes no accusation and draws no conclusions.
 
-## Media Coverage
-
-### Initial Coverage
-- **Breaking News**: Initial media coverage
-- **Identification**: Identification and background
-- **Investigation**: Coverage of investigation
-- **Public Reaction**: Public reaction and response
-- **Privacy**: Privacy concerns and protection
-
-### Ongoing Coverage
-- **Investigation**: Ongoing investigation coverage
-- **Legal Proceedings**: Coverage of legal proceedings
-- **Evidence**: Media coverage of evidence
-- **Conspiracy Theories**: Coverage of conspiracy theories
-- **Public Opinion**: Public opinion and reaction
-
-## Investigation Challenges
-
-### Evidence Access
-- **Sealed Evidence**: Limited access to evidence
-- **Classified Information**: Government secrets protected
-- **Witness Cooperation**: Limited witness cooperation
-- **Cover-up**: Systematic cover-up operations
-- **Truth Suppression**: Suppression of truth
-
-### Government Response
-- **Official Narrative**: Promotion of false official narrative
-- **Cover-up**: Continued cover-up operations
-- **Censorship**: Censorship of information
-- **Intimidation**: Intimidation of witnesses and investigators
-- **Truth Suppression**: Suppression of truth
-
-## Conclusion
-
-The investigation into Tyler Robinson's girlfriend represents an important aspect of understanding the full scope of the Charlie Kirk assassination case. Her potential knowledge and involvement could provide crucial insights into the planning and execution of the assassination.
+For broader context, see [Tyler Robinson](/Tyler_Robinson/overview.md) and [Motive](/Motive/overview.md).
 
 ## Sources
-- FBI investigation reports
-- Media reports and analysis
-- Legal records and court documents
-- Investigation reports and evidence
-- Witness testimony and research
+- Mainstream media coverage of the Tyler Robinson case
+- Court-connected public reporting

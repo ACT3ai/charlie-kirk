@@ -1,80 +1,28 @@
-# Yair Netanyahu Presence
+# Yair Netanyahu: Claims in Public Commentary
+
+:::caution Legal Disclaimer
+Nothing on this page constitutes a finding of wrongdoing, criminal conduct, or ethical violation by Yair Netanyahu or any other living person. Yair Netanyahu is **not accused** of involvement in Charlie Kirk's death. All references to alleged presence, meetings, or connections are drawn from unverified public commentary and must be treated as unproven claims. This investigation does not allege that Yair Netanyahu had any role in, knowledge of, or involvement in Charlie Kirk's death.
+:::
 
 ## Introduction
 
-Yair Netanyahu, the son of Israeli Prime Minister Benjamin Netanyahu, has been identified as a key figure in the events surrounding Charlie Kirk's assassination. This document examines his role, background, and potential involvement in this complex case.
+Yair Netanyahu is the son of Israeli Prime Minister Benjamin Netanyahu. His name has appeared in some public commentary and citizen-investigation threads in connection with the Charlie Kirk case. This page summarizes what has been **claimed in public commentary only** — not what has been established as fact.
 
-## Personal Background
+## Claims in Public Commentary (Unverified Allegations)
 
-### Family Connections
-- **Father**: Son of Israeli Prime Minister Benjamin Netanyahu
-- **Political Influence**: Political influence and connections
-- **Public Profile**: Public presence and media appearances
-- **Background**: Educational and professional background
-- **Location**: Location and residence
+Some commentators and citizen investigators have claimed or speculated:
 
-### Relationship to Charlie Kirk
-- **Connection**: Connection to Charlie Kirk
-- **Meetings**: Meetings and interactions
-- **Timeline**: Timeline of relationship
-- **Influence**: Influence on Kirk's views
-- **Controversy**: Controversy surrounding relationship
+- That Yair Netanyahu was allegedly present at or near certain events connected to Charlie Kirk or associated figures in 2025
+- These claims originate from social media posts, X/Twitter threads, and independent video analyses — not from official sources or verified reporting
+- No official investigation has established or alleged that Yair Netanyahu had any connection to the events of September 10, 2025
 
-## Investigation Details
+**These are unverified allegations from public commentary and should not be treated as facts.**
 
-### FBI Investigation
-- **Questioning**: FBI questioning and interviews
-- **Evidence**: Evidence related to his involvement
-- **Timeline**: Timeline of his activities
-- **Knowledge**: Knowledge of Kirk's activities
-- **Cooperation**: Level of cooperation with investigation
+## Why His Name Appears in This Investigation
 
-### Political Context
-- **Israeli Politics**: Connection to Israeli politics
-- **U.S.-Israel Relations**: Role in U.S.-Israel relations
-- **Intelligence**: Possible intelligence connections
-- **Diplomatic**: Diplomatic connections and influence
-- **Cover-up**: Possible cover-up involvement
+Commentators have cited his name in the context of broader theories about Israeli political connections. This page documents that his name appears in such commentary — it does not validate those theories or make any accusation against him.
 
-## Potential Involvement
-
-### Knowledge of Events
-- **Awareness**: Knowledge of threats against Kirk
-- **Warning Signs**: Warning signs and indicators
-- **Communication**: Communication about threats
-- **Protection**: Role in protection and security
-- **Planning**: Knowledge of planning process
-
-### Investigation Focus
-- **Digital Evidence**: Digital communications and evidence
-- **Witness Testimony**: Testimony about Kirk
-- **Timeline**: Timeline of events and activities
-- **Motivation**: Understanding of motivation
-- **Planning**: Knowledge of planning process
-
-## International Implications
-
-### Israeli Government
-- **Government Connection**: Connection to Israeli government
-- **Intelligence**: Possible intelligence connections
-- **Diplomatic**: Diplomatic connections and influence
-- **Cover-up**: Possible cover-up involvement
-- **International**: International implications
-
-### U.S.-Israel Relations
-- **Diplomatic Relations**: Impact on diplomatic relations
-- **Intelligence Cooperation**: Intelligence cooperation
-- **Political Influence**: Political influence and power
-- **Cover-up**: Cover-up operations
-- **Truth Suppression**: Suppression of truth
-
-## Conclusion
-
-Yair Netanyahu's presence in the Charlie Kirk assassination case represents a significant aspect of understanding the international and political dynamics surrounding the assassination. His connections to Israeli politics and intelligence create serious questions about foreign involvement.
+For broader context, see [Israel](/Israel/overview.md) and [Motive](/Motive/overview.md).
 
 ## Sources
-- FBI investigation reports
-- Media reports and analysis
-- Israeli government records
-- Investigation reports and evidence
-- Witness testimony and research
+- Publicly available X/Twitter commentary and citizen-investigation content (as cited across the site)

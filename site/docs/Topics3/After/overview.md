@@ -4,7 +4,7 @@
 This directory contains information about events and developments that occurred after the Charlie Kirk incident.
 
 ## Goal
-To analyze post-assassination events to prove the existence of a coordinated cover-up operation, including the quick "scrubbing" of the crime scene, Erika Kirk's refusal to allow an autopsy, the sealing of evidence until 2026, and the suppression of information about international aircraft involvement. This includes documenting how government agencies and media worked together to maintain the Tyler Robinson patsy narrative and hide evidence of the true assassins.
+To document and examine post-event developments and claims raised in public reporting, including reported rapid changes to the crime scene, reported questions about autopsy decisions, reported sealing of evidence, and reported questions about international aircraft activity. This includes examining public commentary that raises questions about how government agencies and media framed the Tyler Robinson case and whether alternative evidence was adequately investigated. **Note: Nothing on this page constitutes a finding that a cover-up occurred, that any individual or agency acted improperly, or that any person other than Tyler Robinson (the officially charged suspect) was responsible. All references to alleged concealment, alternative perpetrators, or coordinated activity are unproven claims drawn from public commentary and must be treated as such.**
 
 ## Key Areas
 - Immediate aftermath

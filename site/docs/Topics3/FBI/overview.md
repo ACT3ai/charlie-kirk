@@ -4,7 +4,7 @@
 This directory contains information and analysis related to FBI involvement in the Charlie Kirk incident.
 
 ## Goal
-To investigate the FBI's role in potentially covering up evidence of the true assassin and the sophisticated intelligence operation behind Charlie Kirk's assassination, including their classification of the case as domestic terrorism to avoid investigating foreign involvement. This includes analyzing their evidence handling, witness intimidation tactics, and possible coordination with other intelligence agencies to suppress information about the international aircraft, drone operations, and Israeli/Egyptian intelligence involvement.
+To document and examine questions and claims raised in public commentary about the FBI's role in the Charlie Kirk investigation, including questions about case classification, evidence handling decisions, and the scope of the investigation. This includes documenting publicly reported concerns and citizen-investigator claims about what evidence has or has not been investigated. **Note: Nothing on this page constitutes a finding that the FBI covered up evidence, that any FBI agent engaged in witness intimidation, or that the FBI coordinated with foreign intelligence services. These are unverified allegations from public commentary, not established facts. Accusing law enforcement officers of crimes without evidence is both unfair and potentially defamatory.**
 
 ## Key Areas
 - FBI investigation details

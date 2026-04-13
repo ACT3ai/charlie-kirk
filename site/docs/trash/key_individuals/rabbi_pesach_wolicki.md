@@ -1,64 +1,28 @@
-# Rabbi Pesach Wolicki
+# Rabbi Pesach Wolicki: Public Commentary Context
+
+:::caution Legal Disclaimer
+Nothing on this page constitutes a finding of wrongdoing, criminal conduct, or ethical violation by Rabbi Pesach Wolicki or any other living person. Rabbi Wolicki is **not accused** of involvement in Charlie Kirk's death. All references to meetings or interactions are drawn from publicly reported commentary and must be treated as unverified claims. This investigation does not allege that Rabbi Wolicki had any role in, knowledge of, or involvement in Charlie Kirk's death.
+:::
 
 ## Introduction
 
-Rabbi Pesach Wolicki has been identified as a key figure in the events surrounding Charlie Kirk's assassination. This document examines his role, background, and potential involvement in the complex case.
+Rabbi Pesach Wolicki is a religious leader who has been mentioned in public commentary in connection with pro-Israel outreach and discussions about the so-called "Hamptons intervention" — a reported meeting in summer 2025 involving various figures in pro-Israel circles and Charlie Kirk.
 
-## Personal Background
+His name appears in this investigation solely because it has been mentioned in publicly reported accounts of that meeting. **Being mentioned in connection with a reported meeting does not imply involvement in any crime or wrongdoing.**
 
-### Religious Leadership
-- **Position**: Rabbi and religious leader
-- **Background**: Educational and religious background
-- **Community**: Community involvement and leadership
-- **Public Profile**: Public presence and media appearances
-- **Political Views**: Political views and affiliations
+## Public Reporting Context (As Reported in Commentary)
 
-### Relationship to Charlie Kirk
-- **Connection**: Connection to Charlie Kirk
-- **Meetings**: Meetings and interactions
-- **Timeline**: Timeline of relationship
-- **Influence**: Influence on Kirk's views
-- **Controversy**: Controversy surrounding relationship
+According to commentary that has circulated on X/Twitter and in independent media:
 
-## Investigation Details
+- Some accounts reference Rabbi Wolicki as one of several individuals allegedly present at or associated with a reported summer 2025 meeting involving pro-Israel figures and Charlie Kirk
+- The nature, content, and significance of any such meeting are based entirely on third-party accounts; no primary sources have been independently verified
+- These reports do not establish any connection between Rabbi Wolicki and events on September 10, 2025
 
-### FBI Investigation
-- **Questioning**: FBI questioning and interviews
-- **Evidence**: Evidence related to his involvement
-- **Timeline**: Timeline of his activities
-- **Knowledge**: Knowledge of Kirk's activities
-- **Cooperation**: Level of cooperation with investigation
+## Why His Name Appears in This Investigation
 
-### Religious Context
-- **Religious Views**: Religious views and positions
-- **Political Stance**: Political stance and affiliations
-- **Community Role**: Role in religious community
-- **Influence**: Influence on political views
-- **Controversy**: Controversy surrounding views
+His name appears in this investigation because commentators have cited him in discussions about pre-event context. This page documents what has been reported — it draws no conclusions and makes no accusations.
 
-## Potential Involvement
-
-### Knowledge of Events
-- **Awareness**: Knowledge of threats against Kirk
-- **Warning Signs**: Warning signs and indicators
-- **Communication**: Communication about threats
-- **Protection**: Role in protection and security
-- **Planning**: Knowledge of planning process
-
-### Investigation Focus
-- **Digital Evidence**: Digital communications and evidence
-- **Witness Testimony**: Testimony about Kirk
-- **Timeline**: Timeline of events and activities
-- **Motivation**: Understanding of motivation
-- **Planning**: Knowledge of planning process
-
-## Conclusion
-
-Rabbi Pesach Wolicki's role in the Charlie Kirk assassination case represents an important aspect of understanding the religious and political dynamics surrounding the assassination.
+For broader context, see [Israel](/Israel/overview.md) and [Motive](/Motive/overview.md).
 
 ## Sources
-- FBI investigation reports
-- Media reports and analysis
-- Religious community records
-- Investigation reports and evidence
-- Witness testimony and research
+- Publicly available X/Twitter commentary and independent media reports (as cited across the site)

@@ -1,52 +1,50 @@
-# Erika Kirk: Widow and TPUSA Successor
+# Erika Kirk: Charlie Kirk's Widow (Context and Public Reporting)
+
+:::caution Legal Disclaimer
+This page compiles publicly reported information and claims that have circulated in media and commentary. **Nothing on this page constitutes a finding of wrongdoing, criminal conduct, or ethical violation by Erika Kirk or any other living person.** All references to alleged decisions, motives, or actions are drawn from unverified public commentary and must be treated as unproven allegations. This investigation does not claim that Erika Kirk participated in, knew about, or had any role in Charlie Kirk's death. Any person named on this site is presumed innocent.
+:::
 
 ## Introduction
 
-Erika Kirk, the widow of Charlie Kirk, has become a central figure in the aftermath of his assassination. This document examines her role in the investigation, her inheritance of TPUSA, and the controversies surrounding her response to the assassination.
+Erika Kirk is the widow of Charlie Kirk. Following his death on September 10, 2025, she has been mentioned in media coverage and public commentary in connection with TPUSA leadership succession and decisions made in the aftermath of his death. This page summarizes what has been **publicly reported**, not what has been proven.
 
 ## Personal Background
 
 ### Relationship to Charlie Kirk
 - **Marriage**: Wife of Charlie Kirk
-- **Duration**: Length of marriage unknown
-- **Public Profile**: Limited public presence before assassination
-- **Family**: Family background and connections
-- **Education**: Educational background
+- **Public Profile**: Limited public presence prior to September 2025
+- **Subsequent Role**: Reportedly took on organizational responsibilities at TPUSA following his death
 
-## TPUSA Inheritance
+## TPUSA Leadership (As Reported)
 
-### Financial Inheritance
-- **Organization Value**: $81 million TPUSA organization
-- **Control**: Taking control of TPUSA operations
-- **Decision Making**: Role in organizational decisions
-- **Leadership**: Leadership of organization
-- **Future Direction**: Direction of organization
+Some reports and commentators have noted:
 
-## Investigation Response
+- TPUSA has been reported to be a large organization with significant operational assets
+- Following Charlie Kirk's death, questions were raised in public commentary about organizational succession
+- Erika Kirk reportedly assumed or was associated with leadership responsibilities — the exact nature, scope, and timing of any such role is not independently verified here
 
-### Autopsy Refusal
-- **Decision**: Refusal to allow autopsy
-- **Reasons**: Stated reasons for refusal
-- **Controversy**: Controversy surrounding decision
-- **Implications**: Implications for investigation
-- **Cover-up**: Allegations of cover-up
+These points reflect what has been **reported in media and public commentary**, not verified organizational facts.
 
-## Controversies and Allegations
+## Questions Raised in Public Commentary (Unverified Allegations)
 
-### Cover-up Allegations
-- **Evidence Hiding**: Allegations of hiding evidence
-- **Investigation Interference**: Allegations of investigation interference
-- **Truth Suppression**: Allegations of truth suppression
-- **Family Pressure**: Allegations of family pressure
-- **Financial Motive**: Allegations of financial motive
+Some commentators in online discussions have raised questions about decisions made in the immediate aftermath of Charlie Kirk's death, including questions about autopsy and memorial arrangements. **These are unverified allegations and questions raised by third parties, not findings of fact:**
 
-## Conclusion
+- Some online sources have alleged or questioned whether a full independent autopsy was conducted; the facts of what occurred, who made decisions, and on what basis are not independently established here
+- Questions about the circumstances of cremation have been raised in some commentary; the accuracy of these claims has not been independently verified
 
-Erika Kirk's role in the aftermath of Charlie Kirk's assassination has been controversial and complex. Her inheritance of TPUSA, refusal to allow an autopsy, and response to the investigation have raised serious questions about her involvement and motives.
+The investigation treats these as **open questions reported in public commentary**, not as established facts or findings against any individual.
+
+## Public Appearances (As Reported)
+
+- Erika Kirk has appeared at public events related to TPUSA and in memorial contexts following Charlie Kirk's death
+- Media reports have covered her public statements and appearances
+
+## How This Page Relates to the Investigation
+
+References to Erika Kirk appear in this investigation solely because her name appears in public reporting and commentary about events following Charlie Kirk's death. Her presence in this investigation **does not imply** that she committed any crime, acted unethically, or had any knowledge of or involvement in his death.
+
+For context on TPUSA as an organization, see [TPUSA](/TPUSA/overview.md). For general framing of the investigation's approach to living individuals, see [People](/People/overview.md).
 
 ## Sources
-- Media reports and interviews
-- TPUSA organizational records
-- Investigation reports and evidence
+- Media reports and interviews (as cited in individual sections across the site)
 - Public statements and appearances
-- Legal records and court documents

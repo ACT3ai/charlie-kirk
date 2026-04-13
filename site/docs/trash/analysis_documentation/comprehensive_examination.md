@@ -141,16 +141,16 @@ Sources from the NCTC suggest:
 ### Internal Betrayal Theories
 
 #### TPUSA Internal Involvement
-Claims of internal TPUSA involvement include:
-- **Erika Kirk**: Widow refusing autopsy to hide details
-- **TPUSA Funds**: Inheritance of $81 million organization
-- **Security Team**: Possible involvement of protection detail
-- **Donor Pressure**: Pro-Israel donors threatening funding cuts
+Claims of internal TPUSA involvement that have circulated in public commentary (all unverified — not findings of fact):
+- **Erika Kirk**: Widow (some commentators have alleged questions about autopsy decisions — these allegations are unverified and do not constitute a finding that she acted improperly)
+- **TPUSA Funds**: Reported organizational assets and succession questions
+- **Security Team**: Some commentators have questioned security arrangements — alleged intentional involvement in any attack is unverified speculation
+- **Donor Pressure**: Some reports describe pro-Israel donor pressure as context for motive theories (unverified)
 
-#### Evidence Supporting Internal Theories
-- **No Autopsy**: Family refused autopsy, body cremated quickly
-- **TPUSA Control**: Erika Kirk took control of operations
-- **Security Lapses**: Possible intentional security failures
+#### Claims Cited in Internal Theories (Unverified — Not Established Facts)
+- **Autopsy**: Some commentators have alleged that an independent autopsy was not conducted — the actual circumstances and any decisions made by family are not independently established here
+- **TPUSA Succession**: Erika Kirk reportedly assumed organizational responsibilities — the nature and scope of this role is unverified
+- **Security Questions**: Some commentators have raised questions about whether security arrangements met prior event standards — allegations of intentional failure are unverified
 - **Donor Influence**: Pressure from pro-Israel donors
 
 ## Technical Analysis

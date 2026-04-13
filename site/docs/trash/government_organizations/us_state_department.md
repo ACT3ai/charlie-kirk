@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The assassination of Charlie Kirk on September 10, 2025, at Utah Valley University has raised significant questions about the U.S. State Department's response and potential involvement in this complex case. This document examines the State Department's official response, diplomatic implications, and potential connections to the assassination.
+The death of Charlie Kirk on September 10, 2025, at Utah Valley University has prompted public commentary and questions about the U.S. State Department's response and the diplomatic dimensions of the case. This document examines what has been reported about the State Department's official response and diplomatic context. **Note: Nothing on this page constitutes a finding that the State Department was involved in, covered up, or had advance knowledge of Charlie Kirk's death. Claims of government involvement are unverified allegations from public commentary.**
 
 ## Official State Department Response
 

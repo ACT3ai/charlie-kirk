@@ -1,8 +1,12 @@
 # Government Organizations Overview
 
+:::caution Legal Disclaimer
+Nothing in this section constitutes a finding that any government agency, department, or individual government employee committed crimes, engaged in a cover-up, or participated in wrongdoing related to Charlie Kirk's death. All claims of government involvement, cover-up activity, or evidence suppression are unverified allegations drawn from public commentary. No specific government official or employee is accused of wrongdoing. These pages document what has been alleged in public commentary — not what has been proven.
+:::
+
 ## Introduction
 
-The Government Organizations section contains comprehensive analysis and documentation of various government agencies, departments, and organizations involved in or related to the Charlie Kirk assassination case. This section examines government responses, investigations, and potential involvement in the case.
+The Government Organizations section compiles public commentary, citizen-investigator claims, and questions raised about various government agencies in connection with the Charlie Kirk assassination case. This section examines what has been reported and alleged in public discourse — not established findings about government responses or actions.
 
 ## Available Documents
 

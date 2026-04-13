@@ -4,7 +4,7 @@
 This directory contains information about Turning Point USA (TPUSA) and its connection to the Charlie Kirk incident.
 
 ## Goal
-To investigate potential internal betrayal within TPUSA, including Erika Kirk's refusal to allow an autopsy, the organization's $81 million inheritance, and possible security team involvement in the assassination. This includes analyzing donor pressure from pro-Israel supporters, security lapses that may have been intentional, and the organization's response to Charlie Kirk's changing stance on Israel that may have triggered the assassination.
+To examine claims and allegations raised in public reporting about potential internal dynamics within TPUSA, including reported questions about autopsy decisions, the organization's reported $81 million valuation and succession, and allegations raised by some commentators about security arrangements. This includes analyzing reported donor pressure from pro-Israel supporters, questions raised about whether security arrangements met prior event standards, and the organization's reported response to Charlie Kirk's changing stance on Israel. **Note: Nothing on this page constitutes a finding of wrongdoing by TPUSA, Erika Kirk, any security personnel, or any other individual. All references to alleged actions are unproven claims drawn from public commentary and must be treated as such.**
 
 ## Key Areas
 - Organization details

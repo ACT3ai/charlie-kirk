@@ -4,7 +4,7 @@
 This directory contains medical information and analysis related to the Charlie Kirk incident.
 
 ## Goal
-To investigate the medical evidence and cover-up surrounding Charlie Kirk's death, including Erika Kirk's refusal to allow an autopsy, the quick cremation of the body, and the suppression of medical reports that could reveal the true method of assassination. This includes analyzing injury patterns, medical evidence, and health records to prove that the assassination involved advanced technology and sophisticated methods that contradict the official Tyler Robinson narrative.
+To examine medical evidence and questions raised in public reporting about the circumstances of Charlie Kirk's death, including reported claims about autopsy decisions, reported timelines around cremation, and allegations by some commentators about access to medical records. This includes analyzing publicly available information about injury patterns and medical evidence to evaluate whether the evidence is consistent with or raises questions about the official Tyler Robinson narrative. **Note: Nothing on this page constitutes a finding of wrongdoing by any family member, medical professional, hospital, or official. All references to alleged decisions or suppression are unproven claims drawn from public commentary and must be treated as such. Questions raised on this page do not imply that any person acted improperly.**
 
 ## Key Areas
 - Medical reports
