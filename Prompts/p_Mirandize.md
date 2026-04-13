@@ -2,14 +2,14 @@ ROOT_DIR dir is ~/BGit/Bryan_git/charlie-kirk
 
 SITE_DIR dir is {ROOT_DIR}/site
 DOCS_DIR dir is {SITE_DIR}/docs
-STATIC_DIR dir is {SITE_DIR}/static
+REAL_STATIC_DIR dir is {SITE_DIR}/internals/static
 
 INDEX_FILE is file {DOCS_DIR}/index.md
 TRIAL_OVERVIEW is file {DOCS_DIR}/Tyler_Robinson/Trial/overview.md
 TIMELINE_OVERVIEW is file {DOCS_DIR}/Timeline/overview.md
 MIRANDIZE_FILE is file {DOCS_DIR}/Tyler_Robinson/Trial/Mirandizing.mdx
 DISCOVERY_PAGE is file {DOCS_DIR}/Tyler_Robinson/Trial/Discovery_Mirandizing_Body_Cam.mdx
-COURT_STATIC_DIR dir is {STATIC_DIR}/court_docs
+COURT_STATIC_DIR dir is {REAL_STATIC_DIR}/court_docs
 COURT_PDF_SRC dir is ~/_Mirror/Politics/Charlie_Kirk_DB/Court/Files_2026_PDF
 COURT_MD_SRC dir is ~/_Mirror/Politics/Charlie_Kirk_DB/Court/Files_2026_Markdown
 MIRANDIZE_REASONING is file ~/_Mirror/Politics/Charlie_Kirk_DB/Court/Mirandize/timeline_Reasoning.md
@@ -19,6 +19,21 @@ KEY_LEGAL_PDF is file {COURT_PDF_SRC}/{KEY_LEGAL_DOC}.pdf
 KEY_LEGAL_MD is file {COURT_MD_SRC}/{KEY_LEGAL_DOC}.md
 KEY_LEGAL_PDF_DEST is file {COURT_STATIC_DIR}/{KEY_LEGAL_DOC}.pdf
 KEY_LEGAL_MD_DEST is file {DOCS_DIR}/Tyler_Robinson/Trial/{KEY_LEGAL_DOC}.md
+
+MIRROR_MIRANDIZE_DIR dir is ~/_Mirror/Politics/Charlie_Kirk_DB/Court/Mirandize
+COURT_MIRANDIZE_DOCS_DIR dir is {DOCS_DIR}/court/mirandize
+COURT_MIRANDIZE_STATIC_DIR dir is {REAL_STATIC_DIR}/court/mirandize
+GROK_PDF_SRC is file {MIRROR_MIRANDIZE_DIR}/Grok.pdf
+GROK_PDF_DEST is file {COURT_MIRANDIZE_STATIC_DIR}/Grok.pdf
+AFFIDAVIT_PDF_SRC is file {MIRROR_MIRANDIZE_DIR}/robinson-affidavit-of-probable-cause (1).pdf
+AFFIDAVIT_PDF_DEST is file {COURT_MIRANDIZE_STATIC_DIR}/robinson-affidavit-of-probable-cause.pdf
+IMAGE_MIRANDIZED_SRC is file {MIRROR_MIRANDIZE_DIR}/Mirandized_Sept_11_.png
+IMAGE_SEPT11_GROK_SRC is file {MIRROR_MIRANDIZE_DIR}/Sept_11_Grok.png
+COURT_MIRANDIZE_OVERVIEW is file {COURT_MIRANDIZE_DOCS_DIR}/overview.mdx
+COURT_MIRANDIZE_GROK_PDF is file {COURT_MIRANDIZE_DOCS_DIR}/grok-analysis.mdx
+COURT_MIRANDIZE_AFFIDAVIT is file {COURT_MIRANDIZE_DOCS_DIR}/probable-cause-affidavit.mdx
+COURT_MIRANDIZE_IMG1 is file {COURT_MIRANDIZE_DOCS_DIR}/mirandized-sept-11-image.mdx
+COURT_MIRANDIZE_IMG2 is file {COURT_MIRANDIZE_DOCS_DIR}/sept-11-grok-image.mdx
 
 ============================
 GOAL
@@ -452,6 +467,263 @@ Mirandizing.mdx declaration: September 11
 PDF copied to static: yes
 Markdown source copied: yes
 All existing content intact: yes
+============================
+
+============================
+STAGE 10 — COURT/MIRANDIZE DIRECTORY SETUP
+============================
+
+This stage creates the court/mirandize section: a standalone evidence hub for all Mirandizing
+source documents. It is separate from the Tyler_Robinson/Trial/ pages above and lives at
+docs/court/mirandize/.
+
+STEP 10A — Create directories:
+  * mkdir -p {COURT_MIRANDIZE_DOCS_DIR}
+  * mkdir -p {COURT_MIRANDIZE_STATIC_DIR}
+
+STEP 10B — Copy files from mirror to static:
+  * cp "{GROK_PDF_SRC}" "{GROK_PDF_DEST}"
+  * cp "{AFFIDAVIT_PDF_SRC}" "{AFFIDAVIT_PDF_DEST}"
+    (note: rename to remove the space and parenthetical in the filename)
+  * cp "{IMAGE_MIRANDIZED_SRC}" "{COURT_MIRANDIZE_STATIC_DIR}/Mirandized_Sept_11_.png"
+  * cp "{IMAGE_SEPT11_GROK_SRC}" "{COURT_MIRANDIZE_STATIC_DIR}/Sept_11_Grok.png"
+
+STEP 10C — Confirm all four files exist in {COURT_MIRANDIZE_STATIC_DIR}.
+
+Output to stdout:
+============================
+STAGE 10 COMPLETE
+Static dir created: {COURT_MIRANDIZE_STATIC_DIR}
+Docs dir created: {COURT_MIRANDIZE_DOCS_DIR}
+Grok.pdf copied: yes
+robinson-affidavit-of-probable-cause.pdf copied: yes
+Mirandized_Sept_11_.png copied: yes
+Sept_11_Grok.png copied: yes
+============================
+
+============================
+STAGE 11 — OCR IMAGE FILES
+============================
+
+Use tesseract (brew-installed at /opt/homebrew/bin/tesseract) to extract text from each PNG.
+Output as plain text. Save the OCR output alongside the page creation in Stage 13.
+
+STEP 11A — OCR Mirandized_Sept_11_.png:
+  Command: tesseract {COURT_MIRANDIZE_STATIC_DIR}/Mirandized_Sept_11_.png /tmp/Mirandized_Sept_11_ocr
+  Read output from /tmp/Mirandized_Sept_11_ocr.txt.
+  Save content as MIRANDIZED_OCR variable for use in Stage 13.
+
+STEP 11B — OCR Sept_11_Grok.png:
+  Command: tesseract {COURT_MIRANDIZE_STATIC_DIR}/Sept_11_Grok.png /tmp/Sept_11_Grok_ocr
+  Read output from /tmp/Sept_11_Grok_ocr.txt.
+  Save content as SEPT11_GROK_OCR variable for use in Stage 13.
+
+OCR tips:
+  * If tesseract output is garbled, run again with --psm 6 (assume single block of text)
+  * Clean up obvious OCR artifacts (broken words, extra line breaks) before embedding in MDX
+  * Preserve the substance of the text; do not paraphrase
+
+Output to stdout:  STAGE 11 COMPLETE — OCR extracted for both images
+
+============================
+STAGE 12 — CREATE PDF PAGES (full-page iframe)
+============================
+
+Create two MDX pages that each host a single PDF in a full-page iframe viewer.
+Both pages use an <iframe> with style={{width: '100%', height: '90vh', border: 'none', display: 'block'}}.
+This ensures the PDF fills the visible viewport height without scrolling the outer page.
+
+STEP 12A — Create {COURT_MIRANDIZE_GROK_PDF}:
+
+  Frontmatter:
+    id: grok-analysis
+    title: "Grok AI Analysis: Mirandizing Date"
+    sidebar_label: "Grok Analysis (PDF)"
+    sidebar_position: 2
+
+  Sections:
+  * Brief intro (3-5 sentences): what this PDF is, who produced it, what it analyzes
+    (Bates 003996-R2, September 11 vs September 12 timeline, 6:25 PM Miranda reading)
+  * Download link: [Download Grok Analysis PDF](/court/mirandize/Grok.pdf)
+  * Full-page iframe:
+      <iframe
+        src="/court/mirandize/Grok.pdf"
+        style={{width: '100%', height: '90vh', border: 'none', display: 'block'}}
+        title="Grok Analysis: Mirandizing Date"
+      />
+  * Related pages section linking to all other court/mirandize pages
+
+STEP 12B — Create {COURT_MIRANDIZE_AFFIDAVIT}:
+
+  Frontmatter:
+    id: probable-cause-affidavit
+    title: "Probable Cause Affidavit (Police Booking)"
+    sidebar_label: "Probable Cause Affidavit"
+    sidebar_position: 3
+
+  Sections:
+  * Brief intro: what this is (the police-side booking document), key language about
+    "September 12 early morning hours" referring to Utah County investigators arriving later
+  * Download link: [Download Probable Cause Affidavit PDF](/court/mirandize/robinson-affidavit-of-probable-cause.pdf)
+  * Full-page iframe:
+      <iframe
+        src="/court/mirandize/robinson-affidavit-of-probable-cause.pdf"
+        style={{width: '100%', height: '90vh', border: 'none', display: 'block'}}
+        title="Robinson Probable Cause Affidavit"
+      />
+  * Key points section (3-5 bullets explaining how this document relates to the timeline)
+  * Related pages section linking to all other court/mirandize pages
+
+Use defamation-safe language throughout. Robinson is charged, not convicted.
+
+Output to stdout:
+============================
+STAGE 12 COMPLETE
+Grok PDF page created: {COURT_MIRANDIZE_GROK_PDF}
+Affidavit PDF page created: {COURT_MIRANDIZE_AFFIDAVIT}
+iframe height: 90vh (full page)
+============================
+
+============================
+STAGE 13 — CREATE IMAGE PAGES (image + OCR text)
+============================
+
+Create two MDX pages. Each page:
+  * Displays the image full-width (max-width 900px, centered)
+  * Includes the OCR text extracted in Stage 11 as a styled blockquote
+  * Includes analysis notes explaining what the image shows and why it matters
+  * Links to all other court/mirandize pages
+
+STEP 13A — Create {COURT_MIRANDIZE_IMG1} (Mirandized_Sept_11_.png):
+
+  Frontmatter:
+    id: mirandized-sept-11-image
+    title: "Image: Mirandized Sept 11 — Bates 003996-R2 Reference"
+    sidebar_label: "Mirandized Sept 11 (Image)"
+    sidebar_position: 4
+
+  Image element:
+    <img
+      src="/court/mirandize/Mirandized_Sept_11_.png"
+      alt="Screenshot: Mirandized Sept 11 — Bates 003996-R2 reference"
+      style={{width: '100%', maxWidth: '900px', display: 'block', margin: '0 auto 2rem'}}
+    />
+
+  OCR section: paste {MIRANDIZED_OCR} verbatim as a blockquote
+  Analysis notes: explain Bates 003996-R2, the 03:36:53 internal timestamp, the two separate
+    events shown (Sept 11 Miranda encounter vs Sept 12 formal arrest at 4:00 AM)
+
+STEP 13B — Create {COURT_MIRANDIZE_IMG2} (Sept_11_Grok.png):
+
+  Frontmatter:
+    id: sept-11-grok-image
+    title: "Image: Sept 11 Grok Screenshot — Bates 003996-R2 Analysis"
+    sidebar_label: "Sept 11 Grok (Image)"
+    sidebar_position: 5
+
+  Image element:
+    <img
+      src="/court/mirandize/Sept_11_Grok.png"
+      alt="Screenshot: Sept 11 Grok analysis of Bates 003996-R2"
+      style={{width: '100%', maxWidth: '900px', display: 'block', margin: '0 auto 2rem'}}
+    />
+
+  OCR section: paste {SEPT11_GROK_OCR} verbatim as a blockquote
+  Analysis notes: explain what Bates 003996-R2 is, the 6:25 PM MDT Sept 11 Miranda time,
+    the Baron Coleman coverage, why the Discord timing (7:57 PM Sept 11) matters relative
+    to the Miranda reading
+
+Output to stdout:
+============================
+STAGE 13 COMPLETE
+Mirandized Sept 11 image page: {COURT_MIRANDIZE_IMG1}
+Sept 11 Grok image page: {COURT_MIRANDIZE_IMG2}
+OCR text embedded: both images
+============================
+
+============================
+STAGE 14 — CREATE COURT/MIRANDIZE OVERVIEW PAGE
+============================
+
+Create {COURT_MIRANDIZE_OVERVIEW}.
+This is the hub/landing page for the court/mirandize section. It lists all documents and
+images in a two-column layout (modeled on the two-column version of the three-column flex
+layout used on the site's index.md page).
+
+Frontmatter:
+  id: mirandize-overview
+  title: "Mirandizing — Court Evidence"
+  sidebar_label: "Mirandize Overview"
+  sidebar_position: 1
+
+Structure:
+
+SECTION 1 — Introduction (3-5 sentences):
+  State the central question (September 11 vs September 12).
+  Note that this section collects the primary source documents on both sides.
+  Include defamation-safe framing (Robinson is charged, not convicted).
+
+SECTION 2 — Two-column bullet list (MDX flex layout):
+
+  <div style={{ display: "flex", justifyContent: "space-between", gap: "2rem" }}>
+    <div style={{ flex: 1 }}>
+  
+  **PDF Documents**
+  
+    * [Grok Analysis PDF](./grok-analysis) — description
+    * [Probable Cause Affidavit](./probable-cause-affidavit) — description
+  
+    </div>
+    <div style={{ flex: 1 }}>
+  
+  **Images & Screenshots**
+  
+    * [Mirandized Sept 11 (Image)](./mirandized-sept-11-image) — description
+    * [Sept 11 Grok (Image)](./sept-11-grok-image) — description
+  
+    </div>
+  </div>
+
+SECTION 3 — Key Facts:
+  Bullet list of 5-6 key facts: Bates 003996-R2 identity, 6:25 PM MDT timestamp, 03:36:53
+  internal timestamp, invocation of counsel at 6:26 PM, Discord messages at 7:57 PM Sept 11,
+  and the Utah County investigator arrival distinction.
+
+SECTION 4 — Related Investigation Pages:
+  Links to Tyler_Robinson/Trial/overview, the Mirandizing analysis page, and the Discovery page.
+
+Output to stdout:
+============================
+STAGE 14 COMPLETE
+Overview page created: {COURT_MIRANDIZE_OVERVIEW}
+Two-column layout: PDF docs left, images right
+Key facts: 6 bullets
+Related links: 3
+============================
+
+============================
+STAGE 15 — VERIFY COURT/MIRANDIZE SECTION
+============================
+
+* Confirm {COURT_MIRANDIZE_STATIC_DIR} contains 4 files: Grok.pdf, robinson-affidavit-of-probable-cause.pdf,
+  Mirandized_Sept_11_.png, Sept_11_Grok.png.
+* Re-read {COURT_MIRANDIZE_OVERVIEW}. Confirm two-column layout and all 4 sub-page links present.
+* Re-read {COURT_MIRANDIZE_GROK_PDF}. Confirm iframe present with height: '90vh'.
+* Re-read {COURT_MIRANDIZE_AFFIDAVIT}. Confirm iframe present with height: '90vh'.
+* Re-read {COURT_MIRANDIZE_IMG1}. Confirm image element and OCR blockquote present.
+* Re-read {COURT_MIRANDIZE_IMG2}. Confirm image element and OCR blockquote present.
+* All pages use defamation-safe language (Robinson charged, not convicted).
+* No existing content in Tyler_Robinson/Trial/ was modified.
+
+Output to stdout:
+============================
+STAGE 15 COMPLETE
+Static files present: 4
+Overview page: verified
+PDF pages (iframe 90vh): 2 verified
+Image pages (OCR embedded): 2 verified
+Defamation-safe language: yes
+No regressions in Trial/: confirmed
 ============================
 
 ============================
