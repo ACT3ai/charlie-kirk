@@ -8,8 +8,8 @@ const siteUrl = process.env.DOCUSAURUS_URL ?? "https://whoassassinatedcharliekir
 const baseUrl = process.env.DOCUSAURUS_BASE_URL ?? "/";
 
 const config: Config = {
-  title: "My Site",
-  tagline: "Dinosaurs are cool",
+  title: "Who Assassinated Charlie Kirk",
+  tagline: "Investigating the September 10, 2025 assassination at Utah Valley University",
   favicon: "img/favicon.ico",
   staticDirectories: ["internals/static"],
 
@@ -49,7 +49,7 @@ const config: Config = {
           sidebarPath: "./sidebars.ts",
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl: "https://github.com/ACT3ai/hollywood-whitepaper",
+          editUrl: "https://github.com/ACT3ai/charlie-kirk",
         },
         blog: {
           showReadingTime: true,
