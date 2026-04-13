@@ -116,7 +116,7 @@ Case: State of Utah v. Tyler Alexander Robinson, Case No. 251403576
 ## Source Documents
 
 - **Defense motion 3_30_26** (`3_30_26_Redacted_Motion_To_Exclude_Cameras.md`) — Filed March 30, 2026. Motion to exclude electronic media cameras from court proceedings. Contains verbatim Miranda encounter transcript (Bates 003996-R2) and explicit statement of September 11 surrender date (lines 541–547, 3257–3290).
-- **Probable Cause Affidavit** (`9_16_25_Probable_Cause_Affidavit.md`) — Filed September 16, 2025. Signed by Officer Brian Davis (UTBDAVIS), Utah Attorney General. Probable Cause ID: 189904. Establishes formal arrest at 4:00 AM September 12; describes investigator encounter in Washington County on September 12 early morning hours.
+- **Probable Cause Affidavit** — Filed September 16, 2025. Signed by Officer Brian Davis (UTBDAVIS), Utah Attorney General. Probable Cause ID: 189904. Establishes formal arrest at 4:00 AM September 12; describes investigator encounter in Washington County on September 12 early morning hours. → [View / Download PDF](/Timeline/Tyler_Robinson/Affidavit_Probable_Cause)
 
 ---
 

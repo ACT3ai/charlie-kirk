@@ -6,7 +6,6 @@ sidebar_position: 1
 ---
 
 # Who Assassinated Charlie Kirk
-v3.8
 
 ## Tyler Robinson didn't do it
 - [Motive](/Motive/overview.md) 
@@ -161,3 +160,5 @@ Citizen Investigators & [Influencers](/Influencers/overview.md). including [Podc
 - [Security & Law Enforcement](/security_law_enforcement/overview.md) - Security measures and law enforcement response
 - [Organizations & Groups](/organizations_groups/overview.md) - Related organizations and groups
 - [Property & Locations](/property_locations/overview.md) - Physical locations and properties
+
+v3.8

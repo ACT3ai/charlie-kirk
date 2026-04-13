@@ -72,13 +72,12 @@ const config: Config = {
       respectPrefersColorScheme: true,
     },
     navbar: {
-      title: "Home",
+      title: "Who Assassinated Charlie Kirk",
       logo: {
         alt: "My Site Logo",
         src: "img/logo.svg",
       },
       items: [
-        { href: "https://act3TV.com/Charlie_Kirk/", label: "Charlie Kirk Movie", position: "left" },
         { to: "/Fix/overview", label: "Fix Laws", position: "left" },
         { to: "/Proof_Not_Tyler/overview", label: "Proof Not Tyler", position: "left" },
         { to: "/Proof_Intel_Services/overview", label: "Proof Intel Services", position: "left" },
