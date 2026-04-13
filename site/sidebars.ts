@@ -12,6 +12,8 @@ const sidebars: SidebarsConfig = {
         'Timeline/Charlie_Kirk',
         'Timeline/Sept_8_to_13',
         'Timeline/Tyler_Robinson/2025_Sept',
+        'Timeline/Tyler_Robinson/Mirandizing',
+        'Timeline/Tyler_Robinson/Affidavit_Probable_Cause',
       ],
     },
     'Topics',

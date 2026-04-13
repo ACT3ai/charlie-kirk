@@ -11,6 +11,7 @@ sidebar_position: 5
   <a className="button button--secondary" href="/Timeline/overview">Timeline Overview</a>
   <a className="button button--secondary" href="/Timeline/Tyler_Robinson">Tyler Robinson Timeline</a>
   <a className="button button--secondary" href="/Timeline/Tyler_Robinson/2025_Sept">Sept 8–13 Detail</a>
+  <a className="button button--primary" href="/Timeline/Tyler_Robinson/Affidavit_Probable_Cause">📄 Affidavit of Probable Cause (PDF)</a>
 </div>
 
 **Key finding:** Tyler Robinson was Mirandized at **6:25 PM on September 11, 2025** — not September 12.
