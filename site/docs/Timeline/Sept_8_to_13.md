@@ -1,0 +1,156 @@
+---
+id: Sept_8_to_13
+title: "September 8–13, 2025: Full Timeline"
+sidebar_label: "Sept 8–13"
+sidebar_position: 3
+---
+
+# September 8–13, 2025: Full Timeline
+
+<div style={{display:'flex',gap:'0.6rem',flexWrap:'wrap',marginBottom:'1.5rem'}}>
+  <a className="button button--secondary" href="/Timeline/overview">Timeline Overview</a>
+</div>
+
+All times Mountain Time (MT). Events are drawn from court filings, surveillance records,
+law enforcement statements, and public reporting. Claims and unverified accounts are noted.
+
+---
+
+## September 8, 2025
+
+- Charlie Kirk posts publicly about distancing from the pro-Israel movement.
+
+---
+
+## September 9, 2025
+
+- Kirk attends a contentious meeting. During or after, Kirk reportedly texts associates:
+  "They are going to kill me."
+
+---
+
+## September 10, 2025
+
+**Before the shooting**
+
+- 7:08 AM: Plane tail SU-BTT (Egyptian Air Force Gulfstream) departs Utah for Wilmington, DE.
+- 8:07 AM: Ring doorbell camera captures Tyler Robinson walking on S 800 W toward UVU campus,
+  wearing a maroon shirt and light-colored shorts.
+- 8:23 AM: WYZE camera captures Robinson near W 880 S.
+- 8:29 AM: UVU surveillance records Robinson arriving on campus in a gray Dodge Challenger.
+- 9:57 AM: Robinson seen again — outfit has changed to jeans and a long-sleeve shirt.
+- ~11:47 AM: U.S. Army ISR jet N1098L (HADES) reported at low altitude near Utah Lake
+  prior to the shooting (exact minute disputed in sources).
+- 11:44 AM: Ring camera shows Robinson on W 800 S.
+- 11:49 AM: Ring camera shows Robinson walking toward campus again.
+- 11:50 AM: UVU surveillance first captures the Suspect on the north side of campus.
+  Dark hat, sunglasses, black shirt with American flag and eagle graphic, dark jeans,
+  white/gray Chuck Taylor shoes, dark backpack. Distinctive stiff-right-leg gait.
+- 12:02 PM: Suspect enters Losee Center through southeast corner doors.
+- 12:15 PM: Suspect seen walking up stairs toward rooftop area.
+- 12:17 PM: Suspect climbs over a short wall onto the Losee Center rooftop. Crouches down.
+- 12:22 PM: Suspect stands up and runs across the rooftop toward the west edge. Takes prone position.
+
+**The shooting**
+
+- 12:23 PM: Charlie Kirk is shot while speaking into a microphone at the UVU courtyard event.
+  Kirk is hit in the neck, falls to his left. Suspect immediately stands and sprints north
+  across the rooftop. Suspect lowers himself off the northeast corner and drops to the grass below.
+- 12:24 PM: Suspect runs north across Campus Drive. Investigators later discover a Mauser Model 98
+  .30-06 bolt-action rifle wrapped in a dark towel in a wooded area north of campus.
+  Cartridge casings with engraved inscriptions found with the rifle.
+- 12:26 PM: Regional law enforcement receives first reports of the shooting.
+- 12:35 PM: Officer reports suspect description: jeans, black shirt, black mask, long rifle.
+- 12:39 PM: First FBI agents arrive and secure the scene.
+- 12:48 PM: UVU issues campus emergency alert regarding a shot fired toward a visiting speaker.
+- 1:02 PM: President Trump shares news of the shooting on Truth Social.
+- 1:37 PM: UVU closes campus and urges evacuation.
+- 2:01 PM: UVU instructs remaining persons to secure in place.
+- 2:40 PM: President Trump confirms Charlie Kirk's death on Truth Social.
+- 4:00 PM: Governor Spencer Cox holds a press conference calling it a "political assassination."
+- 4:21 PM: FBI Director Kash Patel announces a subject is in custody — premature and incorrect;
+  two unrelated individuals had been briefly detained.
+- 5:59 PM: Kash Patel corrects the earlier statement; detained subject released.
+- 7:59 PM: FBI releases video footage showing the alleged shooter jumping off the rooftop and
+  fleeing campus.
+- ~12:24–12:48 PM: N1098L reportedly executes another low-altitude maneuver after the shot.
+- Evening: Private jet N888KG departs Provo Municipal Airport; ADS-B transponder disabled
+  mid-flight, later reappears before returning to PVU.
+
+Kirk is transported to Timpanogos Regional Hospital in Orem and pronounced deceased.
+
+---
+
+## September 11, 2025
+
+- 6:00 AM: President Trump appears on Fox & Friends, stating "with a high degree of certainty"
+  that Kirk's suspected killer is in custody. (Robinson has not yet surrendered.)
+- 7:00 AM: Officials announce overnight forensic breakthroughs: the Mauser .30-06 rifle,
+  footwear impressions, palm print, and forearm impression recovered.
+- 7:15 AM: Robinson's gray Dodge Challenger appears on surveillance at a Maverik gas station
+  in Cedar City, Utah — ~215 miles south of Orem, on the route to Washington County.
+  Robinson pays by credit card and drives away within 3 minutes.
+- 9:58 AM: FBI Salt Lake City publicly releases first two photos of the person of interest.
+- 10:44 AM: FBI announces a $100,000 reward for information.
+- 6:17 PM: FBI releases additional photos of the person of interest.
+- 6:25 PM: Tyler Robinson is read his Miranda rights by law enforcement.
+  Robinson acknowledges each right with an affirmative response ("Mm-hmm").
+  When asked to proceed with questioning, Robinson invokes his right to counsel:
+  "I would like to speak with my legal counsel. I'm hoping for a fellow in Utah named Doug Terry."
+  Source: Defense motion 3_30_26, Bates 003996-R2. See [Mirandizing](/Tyler_Robinson/Trial/overview).
+- 6:26 PM: Robinson states the attorney's office is closed for the night and invokes right to
+  remain silent: "Until I've had the opportunity to speak with someone, I would like to remain silent."
+- 7:30 PM: Press conference with Governor Cox: over 7,000 tips received, nearly 200 completed
+  interviews. Suspect photos and surveillance video shown publicly.
+- 7:45 PM (approx.): Air Force Two carrying Charlie Kirk's casket lands at Phoenix Sky Harbor
+  Airport. Widow Erika Kirk, VP JD Vance, and Second Lady Usha Vance aboard.
+- 7:57 PM: Discord messages allegedly posted by Tyler Robinson under username zealous_moneky_55095:
+  "Hey guys, I have bad news for you all. It was me at UVU yesterday. Im sorry for all of this.
+  Im surrendering through a sheriff friend in a few moments." and "thanks for all the good times
+  and laughs." — approximately 1.5 hours after the 6:25 PM Mirandizing.
+- 8:02–8:04 PM: Washington County Sheriff Brooksby receives a call from a retired detective
+  family friend: "I know who the Charlie Kirk shooter is. He's in Washington County now, and
+  we're working on trying to get him to come in voluntarily."
+- ~9:50 PM: Robinson, his father, and the retired detective drive to the Washington County
+  Sheriff's Office in Hurricane, Utah.
+- 10:00 PM: Utah County booking sheet records Robinson's arrest time as approximately 10:00 PM.
+  FBI states custody time was "around 10 PM."
+- 10:26 PM: Tyler Robinson arrives at the Washington County Sheriff's Office accompanied by
+  his parents. Placed uncuffed on a couch with his parents, given water. Not questioned for
+  approximately 2.5 hours while lead investigators travel from Utah County.
+- Evening: SU-BTT departs the U.S. to Egypt — one day after the assassination.
+
+---
+
+## September 12, 2025
+
+- ~12:30 AM: After approximately 2.5 hours at the Washington County Sheriff's Office, Robinson
+  is transferred to FBI custody. Utah County investigators (including Officer Brian Davis) have
+  made the approximately 3.25–4 hour drive from Utah County.
+- 4:00 AM: Official arrest time per Utah County booking sheet. Robinson booked at Utah County
+  Jail in Spanish Fork, Utah. Charges: Aggravated Murder (F1), Felony Discharge of a Firearm
+  Causing Serious Bodily Injury (F1), Obstruction of Justice (F2). Held without bail.
+- 7:18 AM: Probable Cause formally entered by Officer Brian Davis (Utah AG, UTBDAVIS).
+  Probable Cause ID: 189904.
+- Morning: Utah State Bureau of Investigation issues a request for records from Discord relating
+  to Robinson's username and chat history.
+- 5:00 PM: Utah County official press release issued announcing Robinson's arrest, stating formal
+  charges would be filed by noon September 16.
+
+---
+
+## September 13, 2025
+
+- Public reporting on the arrest continues. No major new law enforcement developments publicly
+  confirmed on this date in available sources.
+- Ongoing national media coverage of the assassination and Robinson's arrest.
+
+---
+
+## See Also
+
+- [Tyler Robinson: Sept 8–13](/Timeline/Tyler_Robinson/2025_Sept)
+- [Charlie Kirk Timeline](/Timeline/Charlie_Kirk)
+- [Tyler Robinson Trial](/Tyler_Robinson/Trial/overview)
+- [Mirandizing: When Did It Happen?](/Tyler_Robinson/Trial/overview)
+- [Full Tyler Robinson Timeline](/Timeline/Tyler_Robinson)

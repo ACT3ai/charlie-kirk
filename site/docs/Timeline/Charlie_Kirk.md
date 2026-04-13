@@ -2,9 +2,14 @@
 id: Charlie_Kirk
 title: Charlie Kirk Timeline
 sidebar_label: Charlie Kirk
+sidebar_position: 2
 ---
 
 # Charlie Kirk Timeline
+
+<div style={{display:'flex',gap:'0.6rem',flexWrap:'wrap',marginBottom:'1.5rem'}}>
+  <a className="button button--secondary" href="/Timeline/overview">Timeline Overview</a>
+</div>
 
 Timeline of key events in Charlie Kirk's life and activities leading up to and including the September 10, 2025 assassination at Utah Valley University.
 

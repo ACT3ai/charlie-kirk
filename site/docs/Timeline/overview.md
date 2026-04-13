@@ -1,4 +1,17 @@
-# Timeline
+---
+id: overview
+title: Timeline Overview
+sidebar_label: Timeline Overview
+sidebar_position: 1
+---
+
+# Timeline Overview
+
+<div style={{display:'flex',gap:'0.6rem',flexWrap:'wrap',marginBottom:'1.5rem'}}>
+  <a className="button button--primary" href="/Timeline/Charlie_Kirk">Charlie Kirk</a>
+  <a className="button button--primary" href="/Timeline/Sept_8_to_13">Sept 8–13</a>
+  <a className="button button--primary" href="/Timeline/Tyler_Robinson/2025_Sept">Tyler: Sept 8–13</a>
+</div>
 
 ## Timeline
 * Timeline on Sept 10th: [Summary](#timeline-on-sept-10th-summary), [Full Detail](#timeline-on-sept-10th-full-detail)

@@ -3,6 +3,17 @@ import type {SidebarsConfig} from '@docusaurus/plugin-content-docs';
 const sidebars: SidebarsConfig = {
   docs: [
     'charlie-kirk',
+    {
+      type: 'category',
+      label: 'Timeline',
+      collapsed: false,
+      items: [
+        'Timeline/overview',
+        'Timeline/Charlie_Kirk',
+        'Timeline/Sept_8_to_13',
+        'Timeline/Tyler_Robinson/2025_Sept',
+      ],
+    },
     'Topics',
     'Topic-Analyses',
     'Topics3/overview',
