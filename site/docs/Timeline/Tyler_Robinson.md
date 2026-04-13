@@ -2,52 +2,97 @@
 id: Tyler_Robinson
 title: Tyler Robinson Timeline
 sidebar_label: Tyler Robinson
+sidebar_position: 3
 ---
 
 # Tyler Robinson Timeline
 
-Timeline of Tyler Robinson's documented movements and events in the Charlie Kirk assassination case.
+<div style={{display:'flex',gap:'0.6rem',flexWrap:'wrap',marginBottom:'1.5rem'}}>
+  <a className="button button--secondary" href="/Timeline/overview">Timeline Overview</a>
+  <a className="button button--secondary" href="/Timeline/Tyler_Robinson/2025_Sept">Hour-by-Hour: Sept 8–13</a>
+  <a className="button button--secondary" href="/Timeline/Tyler_Robinson/Mirandizing">Mirandizing Analysis</a>
+</div>
 
-## September 10, 2025 — Day-of Summary
+Timeline of Tyler Robinson's documented movements across the Charlie Kirk assassination case.
+All times Mountain Time (MT).
 
-- 8:07 AM: Ring camera shows Robinson walking on S 800 W toward campus.
-- 8:23 AM: WYZE camera captures Robinson driving on W 880 S.
-- 8:29 AM: UVU surveillance records Robinson driving on campus.
-- 9:57 AM: WYZE camera captures Robinson walking on W 880 S.
-- Outfit change noted: transition to jeans and a long-sleeve shirt before late-morning sightings.
-- 11:44 AM: Ring camera shows Robinson walking on W 800 S.
-- 11:49 AM: Ring camera shows Robinson walking on S 800 W toward campus again.
-- 12:23 PM: Shot fired; Robinson identified as suspect by law enforcement.
-- Afternoon–Evening: Reports of a Dairy Queen sighting in Orem; accounts conflict on timing.
+---
 
-## September 10, 2025 — Full Detail
+## September 9, 2025
 
-- 8:07 AM: Ring camera shows Tyler Robinson walking on S 800 W toward campus.
-- 8:23 AM: WYZE camera captures Robinson driving on W 880 S.
-- 8:29 AM: UVU surveillance records Robinson driving on campus.
-- 9:57 AM: WYZE camera captures Robinson walking on W 880 S.
-- Outfit change noted: transition to jeans and a long-sleeve shirt before late-morning sightings.
-- 11:44 AM: Ring camera shows Robinson walking on W 800 S.
-- 11:49 AM: Ring camera shows Robinson walking on S 800 W toward campus again.
-- ~11:47 AM: HADES N1098L reported at low altitude near Utah Lake prior to the shooting (exact minute disputed in sources).
-- 12:23 PM: Shot fired during UVU event; first report logged at 12:26 PM.
-- ~12:24–12:48 PM: N1098L conducts a second low-altitude maneuver after the shot.
-- Afternoon–Evening: Reports of a Dairy Queen sighting in Orem; accounts conflict on timing (claims of 12:38 PM vs 6:38 PM MDT).
-- Robinson apprehended; Mirandized per court record.
+- High-pressure meeting involving Charlie Kirk. Kirk reportedly texted others: **"THEY ARE GOING TO KILL ME."**
 
-## Legal Proceedings
+---
 
-- Case: State of Utah v. Tyler Alexander Robinson (Case No. 251403576)
-- Robinson faces charges stemming from the September 10, 2025 shooting.
-- Pre-trial motions and hearings ongoing as of 2026.
+## September 10, 2025 — Summary
 
-## Subtopics
+- **7:08 AM** — SU-BTT (Egyptian Air Force Gulfstream) departs Utah for Wilmington.
+- **8:07 AM** — Robinson on Ring camera, S 800 W, maroon shirt, light shorts, heading toward campus.
+- **8:29 AM** — Robinson arrives UVU in gray Dodge Challenger. No backpack visible.
+- **9:57 AM** — Robinson on WYZE camera; outfit now changed to jeans and long sleeve shirt.
+- **11:50 AM** — Robinson (now in black eagle-graphic shirt, dark jeans, Chuck Taylors, dark backpack) on UVU surveillance near Campus Drive. Distinctive stiff right leg gait.
+- **12:02 PM** — Robinson enters Losee Center (southeast doors).
+- **12:17 PM** — Robinson climbs to rooftop of Losee Center.
+- **12:22 PM** — Robinson lays in prone shooting position at west edge of rooftop.
+- **12:23 PM** — Charlie Kirk shot in neck in courtyard below. Robinson sprints north, drops off rooftop, flees.
+- **12:35 PM** — Mauser Model 98 .30-06 bolt action rifle found wrapped in dark towel in wooded area north of campus. Inscribed cartridge casings found nearby.
+- **12:39 PM** — First FBI agents arrive.
+- **4:21 PM** — FBI Director Kash Patel (incorrectly) announces suspect in custody.
+- **Evening** — Robinson texts partner: *"My dad wants photos of the rifle."* / *"I had enough of his hatred."*
 
-- [September 2025 — Tyler Robinson Month Detail](/Timeline/Tyler_Robinson/2025_Sept)
-- [Mirandizing](/Timeline/Tyler_Robinson/Mirandizing)
+---
+
+## September 11, 2025 — Summary
+
+- **7:15 AM** — Robinson's gray Dodge Challenger on surveillance at Maverik gas station, Cedar City (~215 miles south, on route to Washington County). Pays by credit card.
+- **9:58 AM** — FBI releases first photos of person of interest.
+- **10:44 AM** — FBI announces $100,000 reward.
+- **6:25 PM** — Robinson is **Mirandized**. Invokes right to counsel (Doug Terry) and right to remain silent. No questioning occurs.
+- **7:57 PM** — Discord post allegedly by Robinson: *"It was me at UVU yesterday. Im surrendering through a sheriff friend in a few moments."*
+- **~9:50 PM** — Robinson, his father, and retired detective drive to Washington County Sheriff's Office in Hurricane, UT.
+- **10:26 PM** — Robinson arrives at Washington County Sheriff's Office. Placed uncuffed on couch with parents. Waits ~2.5 hours for Utah County investigators to arrive.
+
+---
+
+## September 12, 2025 — Summary
+
+- **~12:30 AM** — Utah County investigators arrive; Robinson transferred to FBI custody.
+- **4:00 AM** — Formal arrest. Booked at Utah County Jail, Spanish Fork. Charges: Aggravated Murder (1°F), Felony Discharge of Firearm (1°F), Obstruction of Justice (2°F). Held without bail.
+- **7:18 AM** — Probable Cause entered by Officer Brian Davis (Utah AG). Probable Cause ID: 189904.
+- **5:00 PM** — Utah County public press release confirming arrest.
+
+---
+
+## September 16, 2025
+
+- Formal charges filed. Notice of Intent to Seek Death Penalty filed.
+- Pretrial Protective Order issued.
+- Affidavit of Probable Cause submitted by Officer Brian Davis.
+
+---
+
+## Case Details
+
+| Field | Value |
+|---|---|
+| Case | State of Utah v. Tyler Alexander Robinson |
+| Case No. | 251403576 |
+| Charges | Aggravated Murder (1°F), Felony Discharge (1°F), Obstruction (2°F) |
+| Bail | Held without bail |
+| Death Penalty | Notice of Intent filed Sep 16, 2025 |
+| Status | Pre-trial proceedings ongoing as of 2026 |
+
+---
+
+## Detailed Sub-Pages
+
+- [Hour-by-Hour: September 8–13](/Timeline/Tyler_Robinson/2025_Sept) — Complete minute-by-minute detail across all days
+- [Mirandizing — Legal Analysis](/Timeline/Tyler_Robinson/Mirandizing) — Verbatim court record; legal reasoning establishing September 11 as the Miranda date
 
 ## See Also
 
 - [Timeline Overview](/Timeline/overview)
+- [Timeline 2025](/Timeline/2025)
 - [Charlie Kirk Timeline](/Timeline/Charlie_Kirk)
 - [Everything About Tyler Robinson](/Tyler_Robinson/overview)
+- [Case & Trial](/Tyler_Robinson/Trial/overview)
