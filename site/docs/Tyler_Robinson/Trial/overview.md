@@ -1,5 +1,11 @@
 # Tyler Robinson Trial
 
+<div style={{display:'flex',gap:'0.6rem',flexWrap:'wrap',marginBottom:'1.5rem'}}>
+  <a className="button button--secondary" href="/Timeline/Tyler_Robinson/Mirandizing">Mirandizing</a>
+  <a className="button button--secondary" href="/Timeline/Tyler_Robinson/2025_Sept">Sept 8–13 Timeline</a>
+  <a className="button button--secondary" href="/Timeline/Tyler_Robinson">Tyler Robinson Timeline</a>
+</div>
+
 ## Overview
 This directory summarizes public reporting and commentary about Tyler Robinson's legal proceedings and trial related to the Charlie Kirk incident. It is not a substitute for official court records or legal advice; readers should consult original filings, transcripts, and orders for authoritative information.
 
