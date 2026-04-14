@@ -31,6 +31,16 @@ Investigators should review her September and October 2025 episodes for any dire
 
 **Status:** Megyn Kelly — Alive
 
+## Megyn Kelly and Charlie Kirk — Tampa, July 2025: Watch
+
+<div style={{float:'right', width:'48%', marginLeft:'1.5rem', marginBottom:'1rem'}}>
+<iframe width="100%" style={{aspectRatio:'16/9'}}
+  src="https://www.youtube.com/embed/ccRNaLGavf8"
+  frameborder="0" allowfullscreen />
+</div>
+
+**TPUSA Student Action Summit — Tampa, July 11–13, 2025.** Megyn Kelly and Charlie Kirk together at the last TPUSA event before his death at which Kelly was present. This footage documents their working relationship and the TPUSA environment two months before the assassination. Kelly also interviewed Erika Kirk (Charlie's widow) in November 2025, and FBI Director Kash Patel in December 2025, for the most thorough mainstream-adjacent coverage of the case.
+
 <div style={{clear:'both'}} />
 
 ## Related Areas

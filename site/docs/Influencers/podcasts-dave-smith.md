@@ -34,6 +34,16 @@ See the full law text: [Law 4: Trusted Investigators](../Fix/overview)
 
 **Status:** Dave Smith — Alive
 
+## "Thoughts on Charlie Kirk": Watch
+
+<div style={{float:'right', width:'48%', marginLeft:'1.5rem', marginBottom:'1rem'}}>
+<iframe width="100%" style={{aspectRatio:'16/9'}}
+  src="https://www.youtube.com/embed/0ykbt_WGOZE"
+  frameborder="0" allowfullscreen />
+</div>
+
+**"Thoughts on Charlie Kirk"** — Dave Smith's dedicated episode on the assassination, discussing implications of the killing, institutional distrust, and the case for deeper intel or foreign-country involvement beyond the official FBI lone-shooter narrative.
+
 <div style={{clear:'both'}} />
 
 ## Related Areas

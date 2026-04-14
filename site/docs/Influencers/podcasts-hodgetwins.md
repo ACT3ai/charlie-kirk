@@ -29,6 +29,16 @@ The Hodgetwins provide cultural commentary and audience reach that complements t
 
 **Status:** Keith Hodge — Alive; Kevin Hodge — Alive
 
+## Hodgetwins & Stew Peters on the Kirk Murder: Watch
+
+<div style={{float:'right', width:'48%', marginLeft:'1.5rem', marginBottom:'1rem'}}>
+<iframe width="100%" style={{aspectRatio:'16/9'}}
+  src="https://www.youtube.com/embed/J2DKRfwSt94"
+  frameborder="0" allowfullscreen />
+</div>
+
+**"Charlie Kirk Murder Aftermath — Hodgetwins & Stew Peters Discuss the Charlie Kirk Assassination"** — The Hodgetwins Podcast. This episode features an extended discussion of Israeli intelligence theories, non-traditional motives, and the open questions that mainstream media refused to ask in the immediate aftermath of the September 10, 2025 killing.
+
 <div style={{clear:'both'}} />
 
 ## Related Areas

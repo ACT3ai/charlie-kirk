@@ -36,6 +36,16 @@ See the full law text: [Law 4: Trusted Investigators](../Fix/overview)
 
 **Status:** Candace Owens — Alive
 
+## Episode 287: Watch
+
+<div style={{float:'right', width:'48%', marginLeft:'1.5rem', marginBottom:'1rem'}}>
+<iframe width="100%" style={{aspectRatio:'16/9'}}
+  src="https://www.youtube.com/embed/wcD2khO3rOA"
+  frameborder="0" allowfullscreen />
+</div>
+
+**"The Past Is Prologue: Why Charlie Kirk Was Murdered"** — Candace Owens Episode 287. The most direct and comprehensive podcast breakdown of the Kirk assassination by any major host, published on the Candace Owens YouTube channel.
+
 <div style={{clear:'both'}} />
 
 ## Related Areas

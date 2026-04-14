@@ -32,6 +32,16 @@ Carroll has appeared alongside hosts on programs including the Hodgetwins podcas
 
 **Status:** Ian Carroll — Alive
 
+## "Crime Scene PAVED OVER": Watch
+
+<div style={{float:'right', width:'48%', marginLeft:'1.5rem', marginBottom:'1rem'}}>
+<iframe width="100%" style={{aspectRatio:'16/9'}}
+  src="https://www.youtube.com/embed/X8UKjN5cjvw"
+  frameborder="0" allowfullscreen />
+</div>
+
+**"Charlie Kirk Crime Scene PAVED OVER & SCRUBBED! w/ Ian Carroll"** — The Jimmy Dore Show. Carroll covers the physical destruction of the crime scene at UVU, including the paving-over of the area where Kirk was shot. A CBS reporter on camera confirmed the area was being repaved. This episode is one of the most-watched pieces of investigative coverage of the case.
+
 <div style={{clear:'both'}} />
 
 ## Related Areas

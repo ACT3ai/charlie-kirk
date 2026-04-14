@@ -32,6 +32,16 @@ See the full law text: [Law 4: Trusted Investigators](../Fix/overview)
 
 **Status:** Tucker Carlson — Alive
 
+## Joe Kent Interview: Watch
+
+<div style={{float:'right', width:'48%', marginLeft:'1.5rem', marginBottom:'1rem'}}>
+<iframe width="100%" style={{aspectRatio:'16/9'}}
+  src="https://www.youtube.com/embed/1xTpQ9RHkvk"
+  frameborder="0" allowfullscreen />
+</div>
+
+**"Joe Kent's First Interview After Resigning from the Trump Admin"** — March 18, 2026. Former National Counterterrorism Center Director Joe Kent tells Tucker Carlson he was blocked from investigating foreign involvement in the Kirk assassination. This is the most explosive on-record statement by a government official in the entire case.
+
 <div style={{clear:'both'}} />
 
 ## Related Areas

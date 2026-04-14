@@ -32,6 +32,16 @@ Following Kirk's death, the future of the TPUSA media operation and the Charlie 
 
 **Status:** Charlie Kirk — Deceased (2025)
 
+## Last Major Public Appearance: Watch
+
+<div style={{float:'right', width:'48%', marginLeft:'1.5rem', marginBottom:'1rem'}}>
+<iframe width="100%" style={{aspectRatio:'16/9'}}
+  src="https://www.youtube.com/embed/0pvEGO4W85k"
+  frameborder="0" allowfullscreen />
+</div>
+
+**TPUSA Virginia Tech Event — September 4, 2025.** Charlie Kirk's last documented major public appearance, six days before his assassination at UVU. Megyn Kelly also appeared at this event. This footage is essential investigative context: it documents Kirk's security personnel, surroundings, and public posture in his final week. Researchers should note the security arrangements visible here and compare them to those at UVU on September 10.
+
 <div style={{clear:'both'}} />
 
 ## Related Areas
