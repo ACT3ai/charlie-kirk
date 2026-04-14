@@ -4,25 +4,26 @@ borderRadius:'4px', textDecoration:'none', fontSize:'0.9rem'}}>
 ← Podcasts
 </a>
 
-# Baron
+# Baron Coleman
 
-**Baron** hosts an independent podcast that has covered the Charlie Kirk assassination investigation. The program has been identified by investigators as an important source of analytical coverage that surfaces angles and evidence not found on larger platforms.
+**Baron Coleman** ([@baroncoleman](https://x.com/baroncoleman) on X) is an independent commentator and podcaster who has covered the Charlie Kirk assassination investigation. Coleman's program has been flagged by citizen investigators as an important source of alternative analysis that surfaces angles not found on larger platforms.
 
-## Why This Podcast Matters
+## About Baron Coleman
 
-Independent podcasters like Baron have played a critical role in the Charlie Kirk investigation because mainstream and large-platform conservative media have largely refused to engage with the intelligence-service dimensions of the case. Programs that operate without institutional funding, advertiser pressure, or network relationships are the ones with the editorial freedom to follow evidence where it leads.
+Baron Coleman operates as an independent voice on X (Twitter) and through his podcast, providing commentary on the Charlie Kirk case from outside the institutional conservative media sphere. His approach, according to available coverage, looks at motives beyond the traditional law enforcement narrative — engaging with questions about who had the means, motive, and opportunity to orchestrate the events of September 10, 2025, at Utah Valley University.
 
-Baron's podcast has been flagged by citizen investigators as providing coverage of the CK case that goes beyond surface-level reporting and engages with the structural questions: who controlled security, who had advance knowledge, and what institutional forces have an interest in suppressing the investigation.
+Independent voices like Coleman play a critical role in this investigation because mainstream and large-platform conservative media have largely refused to engage with the intelligence-service dimensions of the case. Programs that operate without institutional funding or advertiser pressure are the ones with editorial freedom to follow evidence where it leads.
+
+## Platform and Coverage
+
+- **X (Twitter):** [@baroncoleman](https://x.com/baroncoleman)
+- Baron Coleman's X presence is the primary way to track his current coverage of the investigation.
 
 ## Research Status
 
-Full episode catalog and platform links for Baron's podcast are still being compiled. If you have specific episode titles, dates, or platform links relevant to the Charlie Kirk investigation, they should be submitted for inclusion in the master investigation file.
+Specific episode titles, dates, and platform links for Baron Coleman's podcast are still being compiled. If you have direct episode links relevant to the Charlie Kirk investigation, submit them using `/ck_add_text` with the URL and relevant content.
 
-## How to Contribute
-
-To add specific episodes, clips, or quotes from Baron's coverage to the investigation record, use the `/ck_add_text` command with the relevant content.
-
-**Status:** Baron — Alive (assumed)
+**Status:** Baron Coleman — Alive (assumed)
 
 <div style={{clear:'both'}} />
 
@@ -33,14 +34,14 @@ marginTop:'0.5rem'}}>
 <div>
 
 * [X accounts driving the investigation](./x)
-* [YouTube channels covering the case](./youtube)
 * [Censorship of the investigation](../Censorship/overview)
+* [Cover-up evidence overview](../CoverUp/overview)
 
 </div>
 <div>
 
 * [Proof Tyler is not the shooter](../Proof_Not_Tyler/overview)
-* [Cover-up evidence overview](../CoverUp/overview)
+* [Motive analysis](../Motive/overview)
 * [Your actions to fix this](../Your_Actions_Fix_It/overview)
 
 </div>

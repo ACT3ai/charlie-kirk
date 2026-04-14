@@ -6,23 +6,31 @@ borderRadius:'4px', textDecoration:'none', fontSize:'0.9rem'}}>
 
 # Candace Owens Show
 
-**Candace Owens** hosts the **Candace Owens Show**, an independent podcast and video program distributed through her own platform and major video sites. She is one of the most widely followed independent conservative commentators in America. Candace Owens is named as a **Designated Trusted Investigator** under the proposed [Law 4: Trusted Investigators](../Fix/overview).
+**Candace Owens** hosts the **Candace** podcast, distributed through her YouTube channel and major podcast platforms. She is one of the most widely followed independent conservative commentators in America and is named as a **Designated Trusted Investigator** under the proposed [Law 4: Trusted Investigators](../Fix/overview).
+
+## Key Episode: "The Past Is Prologue: Why Charlie Kirk Was Murdered"
+
+**Episode 287** is the most direct and comprehensive podcast treatment of the Charlie Kirk assassination by any major host. In this episode, Owens, according to her published statements, openly questioned the FBI's lone-shooter narrative and posited theories about Israeli cellphone signals and potential accomplices beyond Tyler Robinson.
+
+- **Title:** "The Past Is Prologue: Why Charlie Kirk Was Murdered | Candace Ep 287"
+- **YouTube:** [Watch Episode 287](https://www.youtube.com/watch?v=wcD2khO3rOA)
+- **Channel:** [Candace Owens on YouTube](https://www.youtube.com/@CandaceOwensPodcast)
+
+Key claims made by Owens in this episode, per her own statements:
+- The FBI's lone-shooter narrative does not hold up under scrutiny
+- Evidence allegedly pointing to Israeli cellphone signal activity near the UVU campus on September 10, 2025
+- The possibility of accomplices beyond the named suspect
+- Analysis of TPUSA donor pressures and their possible connection to the assassination's political context
 
 ## Why Candace Owens Is Relevant
 
-Candace Owens has unique standing in the Charlie Kirk investigation for several reasons. She was a prominent figure within TPUSA before a public falling-out with the organization, which gives her inside knowledge of TPUSA's operations, personnel, and political relationships. She has used her platform to raise questions about TPUSA leadership and institutional influence that other commentators in the same political orbit will not raise.
+Owens has unique standing in the investigation because she was a prominent figure within TPUSA before a public falling-out with the organization. She has insider knowledge of TPUSA's operations, personnel, and political relationships. That prior access, combined with her editorial independence from the TPUSA network, makes her coverage substantively different from that of hosts who remain within the TPUSA orbit.
 
-Her willingness to take positions that put her in conflict with former allies demonstrates the editorial independence that Law 4 requires. She has covered allegations involving foreign intelligence service influence in American politics and media — a central line of inquiry in the Kirk investigation.
-
-## Standing Within the Investigation
-
-Candace Owens offers the most sustained longitudinal coverage of TPUSA internal dynamics of any major podcaster. Her familiarity with the organization's structure, its funders, and its key personnel provides context that is otherwise difficult to find in public sources. For investigators, her prior statements about TPUSA and its leadership relationships are primary source material.
-
-She has also, reportedly, raised concerns about the circumstances of Charlie Kirk's death and the conduct of TPUSA leadership in the aftermath — though listeners should independently verify specific claims against primary sources.
+She offers the most sustained longitudinal coverage of TPUSA internal dynamics of any major podcaster. Her familiarity with the organization's structure, its funders, and its key personnel provides context that is otherwise difficult to find in public sources.
 
 ## Designated Trusted Investigator — Law 4
 
-Under the proposed Law 4, Candace Owens is one of three civilians designated to lead independent investigation teams. She would receive one FBI team and one Intelligence Community team, authority to select all team members, full access to all agency files, and the power to publicly release findings without government interference. Her designation reflects her inside knowledge of TPUSA and her track record of covering topics major conservative media avoids.
+Under the proposed Law 4, Candace Owens is one of three civilians designated to lead independent investigation teams. She would receive one FBI team and one Intelligence Community team, authority to select all team members, full access to all agency files, and the power to publicly release findings without government interference.
 
 See the full law text: [Law 4: Trusted Investigators](../Fix/overview)
 
@@ -44,7 +52,7 @@ marginTop:'0.5rem'}}>
 <div>
 
 * [Intel services involvement proof](../Proof_Intel_Services/overview)
-* [People: key individuals](../People/overview)
+* [Israel intelligence connections](../Israel/overview)
 * [After the shooting — timeline](../After/overview)
 
 </div>

@@ -4,25 +4,29 @@ borderRadius:'4px', textDecoration:'none', fontSize:'0.9rem'}}>
 ← Podcasts
 </a>
 
-# Tucker Carlson Network
+# Tucker Carlson Podcast
 
-**Tucker Carlson** hosts the Tucker Carlson Network (TCN), an independent media operation he launched after leaving Fox News in 2023. His program reaches an estimated 60–100 million viewers and listeners across video and podcast platforms, making it one of the most widely distributed independent political programs in America. Carlson is named as a **Designated Trusted Investigator** under the proposed [Law 4: Trusted Investigators](../Fix/overview).
+**Tucker Carlson** hosts **The Tucker Carlson Podcast**, an independent program distributed through the Tucker Carlson Network (TCN). His program reaches an estimated 60–100 million viewers and listeners, making it one of the most widely distributed independent political programs in America. Carlson is named as a **Designated Trusted Investigator** under the proposed [Law 4: Trusted Investigators](../Fix/overview).
+
+## Key Episode: Tucker on Charlie Kirk's Assassination (with Joe Kent)
+
+Tucker Carlson hosted former congressional candidate and Army Special Forces veteran **Joe Kent**, who, according to published accounts of the episode, insinuated that the assassination of Charlie Kirk might have been a foreign operation designed to influence U.S. policy regarding Iran. Kent's background in special operations gives his claims about foreign operational patterns particular weight for investigators.
+
+- **Title:** "Tucker on Charlie Kirk's Assassination (with Joe Kent)"
+- **YouTube / Podcast:** [Listen to the episode](https://music.youtube.com/podcast/vWZMxMiujr4)
+- **Channel:** [Tucker Carlson on YouTube](https://www.youtube.com/@TuckerCarlson)
+
+## AmericaFest 2024
+
+At the TPUSA AmericaFest 2024 event (December 19–24, 2024), Carlson reportedly discussed Jeffrey Epstein's alleged involvement in a blackmail operation potentially on behalf of foreign intelligence services. He was the closing speaker on the first night of a conference that also featured Donald Trump, Ben Shapiro, Glenn Beck, Patrick Bet-David, and Steve Bannon. ([YouTube playlist](https://www.youtube.com/playlist?list=PLnZT7Gz_VSN520UilgmZqikvi3n1MsuZR))
 
 ## Why Tucker Carlson Is Relevant
 
-Tucker Carlson has been one of the few high-profile media figures willing to discuss the intersection of foreign intelligence services, political figures, and suspicious deaths. His coverage has repeatedly touched on topics directly relevant to the Charlie Kirk investigation:
-
-- Carlson has discussed allegations that Jeffrey Epstein may have operated a blackmail network on behalf of foreign intelligence services, reportedly including Israel's Mossad — a connection that overlaps with lines of evidence in the Kirk investigation.
-- He has covered government cover-ups, FBI interference in investigations, and intelligence community overreach, all of which are central to understanding what allegedly happened on September 10, 2025.
-- As a former Fox News anchor, Carlson has sources and contacts inside Washington, the intelligence community, and conservative political circles that other independent podcasters do not have.
-
-## Key Coverage
-
-**AmericaFest 2024 (December 19–24, 2024):** At the TPUSA AmericaFest 2024 event, Carlson reportedly discussed Epstein's alleged involvement in a blackmail operation potentially on behalf of foreign intelligence services, according to coverage of the event. He was the closing speaker on the first night of a conference that also featured Donald Trump, Ben Shapiro, Glenn Beck, Patrick Bet-David, and Steve Bannon. ([YouTube playlist](https://www.youtube.com/playlist?list=PLnZT7Gz_VSN520UilgmZqikvi3n1MsuZR))
+Tucker Carlson has been one of the few high-profile media figures willing to discuss the intersection of foreign intelligence services, political figures, and suspicious deaths. His coverage has repeatedly touched on topics directly relevant to the Charlie Kirk investigation — government cover-ups, FBI interference, intelligence community overreach, and the Epstein/Mossad connection. As a former Fox News anchor, he has sources inside Washington and the intelligence community that other independent podcasters do not have.
 
 ## Designated Trusted Investigator — Law 4
 
-Under the proposed Law 4, Tucker Carlson is one of three civilians designated to lead independent investigation teams with full FBI and intelligence community access. The law would give Carlson one FBI team and one Intelligence Community team, authority to select all members, access to all agency files, and the power to publicly release findings. Carlson's inclusion reflects his track record of publishing evidence the government prefers to suppress.
+Under the proposed Law 4, Tucker Carlson is one of three civilians designated to lead independent investigation teams with full FBI and intelligence community access. The law would give Carlson one FBI team and one Intelligence Community team, authority to select all members, access to all agency files, and the power to publicly release findings.
 
 See the full law text: [Law 4: Trusted Investigators](../Fix/overview)
 
@@ -37,7 +41,7 @@ marginTop:'0.5rem'}}>
 <div>
 
 * [Intel services involvement proof](../Proof_Intel_Services/overview)
-* [Israel connections overview](../Israel/overview)
+* [Israel intelligence connections](../Israel/overview)
 * [FBI blocking investigations](../FBI/overview)
 
 </div>
