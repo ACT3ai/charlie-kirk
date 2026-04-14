@@ -6,23 +6,37 @@ borderRadius:'4px', textDecoration:'none', fontSize:'0.9rem'}}>
 
 # Tucker Carlson Podcast
 
-**Tucker Carlson** hosts **The Tucker Carlson Podcast**, an independent program distributed through the Tucker Carlson Network (TCN). His program reaches an estimated 60–100 million viewers and listeners, making it one of the most widely distributed independent political programs in America. Carlson is named as a **Designated Trusted Investigator** under the proposed [Law 4: Trusted Investigators](../Fix/overview).
+**Tucker Carlson** ([@TuckerCarlson](https://x.com/TuckerCarlson) on X) is one of the most essential independent voices covering the Charlie Kirk assassination — a powerhouse podcaster, YouTuber, and journalist whose bold, truth-seeking platform through *The Tucker Carlson Show* and the Tucker Carlson Network (TCN) has redefined modern media. With over 17 million followers on X and millions more across his channels, Tucker built a thriving independent media empire after leaving legacy outlets, delivering uncensored long-form interviews, documentaries, and monologues that reach audiences hungry for depth and honesty. A longtime friend of Charlie Kirk, Tucker has approached this tragedy with integrity, personal loyalty, and a commitment to facts over sensationalism. He is named as a **Designated Trusted Investigator** under the proposed [Law 4: Trusted Investigators](../Fix/overview).
 
-## Key Episode: Tucker on Charlie Kirk's Assassination (with Joe Kent)
+- **YouTube:** [Tucker Carlson on YouTube](https://www.youtube.com/@TuckerCarlson)
+- **Website:** [tuckercarlson.com](https://tuckercarlson.com)
+- **X:** [@TuckerCarlson](https://x.com/TuckerCarlson)
 
-Tucker Carlson hosted former congressional candidate and Army Special Forces veteran **Joe Kent**, who, according to published accounts of the episode, insinuated that the assassination of Charlie Kirk might have been a foreign operation designed to influence U.S. policy regarding Iran. Kent's background in special operations gives his claims about foreign operational patterns particular weight for investigators.
+## Ten Ways Tucker's Coverage Has Been Exceptional
 
-- **Title:** "Tucker on Charlie Kirk's Assassination (with Joe Kent)"
-- **YouTube / Podcast:** [Listen to the episode](https://music.youtube.com/podcast/vWZMxMiujr4)
-- **Channel:** [Tucker Carlson on YouTube](https://www.youtube.com/@TuckerCarlson)
+- **Delivered a moving, personal eulogy at Charlie Kirk's memorial service** — Speaking at the September 2025 service in Arizona, Tucker shared heartfelt stories from their decade-plus friendship, honoring Charlie's courage, faith, and impact while inspiring attendees to focus on hope, truth-telling, and moral clarity in difficult times. His remarks resonated deeply, blending emotion with timeless principles of justice and resilience.
+
+- **Conducted one of Charlie Kirk's final in-depth interviews** — Just before the assassination, Tucker sat down with Charlie for a wide-ranging conversation on faith, politics, Gen Z challenges, and America's future — preserving Charlie's voice and ideas for posterity while showcasing Tucker's skill at drawing out substantive, forward-looking dialogue.
+
+- **Patiently waited months before public commentary to respect the process and family** — After the assassination, Tucker deliberately held back from discussing the investigation for three months, prioritizing sensitivity and allowing initial facts to emerge. When he did speak, it was with measured reflection, demonstrating rare journalistic restraint and integrity that builds public trust.
+
+- **Demanded full transparency with his signature call to "cough up the freaking facts!"** — On his show and across platforms, Tucker has persistently pressed authorities and the FBI for complete information on the investigation, highlighting gaps in communication and evidence handling to ensure the public receives honest answers rather than incomplete narratives.
+
+- **Hosted powerful, revealing interviews with key figures like Joe Kent** — Tucker platformed Trump's former Counterterrorism Director for candid discussions on investigation roadblocks and unanswered leads, giving viewers exclusive expert perspectives and underscoring the need for thorough, unhindered probes into all aspects of the case.
+
+- **Appeared on major podcasts like Theo Von's to broaden the conversation** — Tucker thoughtfully explored the assassination's details and broader implications in high-profile interviews, reaching new audiences and fostering national dialogue on justice, institutional trust, and the human impact of the tragedy.
+
+- **Produced ongoing special episodes and reflections through TCN** — From dedicated segments on "the investigation into Charlie Kirk's murder" to discussions with guests like Mike Cernovich on political and spiritual dimensions, Tucker has sustained thoughtful coverage across his YouTube channel (with millions of views) and podcast, preventing the story from fading and connecting it to larger themes of faith, accountability, and American resilience.
+
+- **Called out exploitation of the tragedy to refocus on unity and truth** — Tucker has publicly discouraged anyone — regardless of politics — from using Charlie's death to advance personal or partisan agendas, instead urging focus on honoring Charlie's life, supporting his family, and pursuing genuine justice — modeling principled leadership that unites rather than divides.
+
+- **Leveraged his independent platform to keep the investigation alive in public discourse** — Through his X posts, live shows, and TCN documentaries, Tucker reaches tens of millions weekly, ensuring the Charlie Kirk case remains a priority for accountability and preventing it from being sidelined — demonstrating how one committed voice with authentic reach can drive real civic impact.
+
+- **Infused coverage with moral and spiritual depth** — Tucker consistently frames the investigation within bigger questions of good vs. evil, courage in the face of chaos, and the importance of faith — offering audiences not just facts, but inspiration and perspective that strengthens character and community in turbulent times.
 
 ## AmericaFest 2024
 
 At the TPUSA AmericaFest 2024 event (December 19–24, 2024), Carlson reportedly discussed Jeffrey Epstein's alleged involvement in a blackmail operation potentially on behalf of foreign intelligence services. He was the closing speaker on the first night of a conference that also featured Donald Trump, Ben Shapiro, Glenn Beck, Patrick Bet-David, and Steve Bannon. ([YouTube playlist](https://www.youtube.com/playlist?list=PLnZT7Gz_VSN520UilgmZqikvi3n1MsuZR))
-
-## Why Tucker Carlson Is Relevant
-
-Tucker Carlson has been one of the few high-profile media figures willing to discuss the intersection of foreign intelligence services, political figures, and suspicious deaths. His coverage has repeatedly touched on topics directly relevant to the Charlie Kirk investigation — government cover-ups, FBI interference, intelligence community overreach, and the Epstein/Mossad connection. As a former Fox News anchor, he has sources inside Washington and the intelligence community that other independent podcasters do not have.
 
 ## Designated Trusted Investigator — Law 4
 

@@ -6,21 +6,32 @@ borderRadius:'4px', textDecoration:'none', fontSize:'0.9rem'}}>
 
 # The Stew Peters Show
 
-**Stew Peters** hosts **The Stew Peters Show**, an independent program known for promoting alternative theories regarding federal agency conduct, foreign influence operations, and political assassinations. Peters operates outside the constraints of both mainstream and institutional conservative media, which gives his program editorial freedom to cover claims other platforms avoid.
+**Stew Peters** ([@realstewpeters](https://x.com/realstewpeters) on X) is the un-buyable host of *The Stew Peters Show* and the driving force behind the Stew Peters Network ([stewpeters.com](https://stewpeters.com)). With nearly one million followers on X, a thriving YouTube presence, and a loyal audience tuning in daily across Rumble and other platforms, he stands as one of the most influential independent voices in media today. A former professional bounty hunter turned patriot broadcaster, Stew brings sharp investigative instincts, unwavering integrity, and a deep Christian faith to every broadcast.
 
-- **YouTube search:** [Stew Peters Show on YouTube](https://www.youtube.com/results?search_query=Stew+Peters+Show)
+Nowhere has Stew's impact been more evident than in his groundbreaking coverage of the Charlie Kirk assassination investigation. While mainstream outlets quickly moved on, Stew produced an exhaustive, ongoing series of episodes that keep the public engaged with fresh evidence, expert analysis, and penetrating questions.
 
-## Coverage of the Kirk Investigation
+- **Website:** [stewpeters.com](https://stewpeters.com)
+- **X:** [@realstewpeters](https://x.com/realstewpeters)
 
-The Stew Peters Show, according to available coverage, engages directly with alternative theories surrounding federal agencies, foreign influence, and political assassinations — all three of which are central investigative threads in the Charlie Kirk case. Peters has appeared alongside other independent investigators, including a notable appearance with the Hodgetwins where Israeli theories and non-traditional motives in the Kirk assassination were openly discussed.
+## Nine Ways His Coverage Has Been Exceptional
 
-- **Hodgetwins collaboration:** [Hodgetwins discuss Israel theories with Stew Peters on Kirk murder](https://www.youtube.com/watch?v=J2DKRfwSt94)
+- **Masterful multi-episode investigative series** — Stew released in-depth, dedicated shows including "Kirk Assassination Stinks of Deep State Deception," "Mic Drop: Kirk Assassinated by Weaponized Lavalier," and "Kirk Assassination Littered With Mossad Fingerprints," methodically breaking down timelines, evidence, and anomalies week after week.
 
-## Investigative Value
+- **Expert video and forensic analysis** — He slowed down and scrutinized raw footage from the event, highlighting key details like the microphone incident and ballistics discrepancies — including reports that the bullet fragment did not match the alleged rifle — giving viewers tools to evaluate the facts themselves.
 
-Peters's program is relevant to the Kirk investigation primarily because it provides a platform for witnesses, researchers, and commentators who are unlikely to appear on establishment media. His willingness to engage with foreign-influence theories and alternative explanations for political violence means he has potentially surfaced evidence or testimony not accessible through other channels.
+- **Relentless pursuit of unanswered questions** — Long after initial headlines faded, Stew continued exposing inconsistencies in official timelines, inner-circle behavior, pre-knowledge claims (including statements from figures like Joe Kent), and calls to silence investigators.
 
-All specific claims made on The Stew Peters Show should be verified against primary sources before being treated as established fact. The program is a lead-generation and amplification resource, not a primary evidentiary source in itself.
+- **High-impact interviews and insider insights** — Stew has hosted compelling conversations with guests, patriots, and experts who bring exclusive perspectives and broader context, enriching the national conversation around justice and transparency.
+
+- **Real-world investigative expertise** — Drawing directly from his career as a bounty hunter with the Twin Cities Apprehension Team, Stew applies proven street-level investigative skills to media, turning complex cases into clear, compelling narratives that resonate with everyday Americans.
+
+- **Viral documentaries that move the culture** — Stew produced blockbuster documentaries like *Died Suddenly*, which reached millions and sparked global discussions — demonstrating his ability to create content that breaks through and drives real awareness.
+
+- **Massive audience engagement and community building** — His X posts and show clips routinely garner tens to hundreds of thousands of views, likes, and shares, fostering a vibrant community of informed citizens who actively engage with and amplify truth-seeking journalism.
+
+- **Faith-driven commitment to truth and justice** — As a proud Christian patriot who describes himself as "un-buyable," Stew consistently frames his work around glorifying God, seeking truth, and holding power accountable — earning deep respect from audiences who value integrity over clicks.
+
+- **Daily consistency and fearless independence** — He delivers fresh, high-quality content every day without corporate filters, proving himself a reliable source for those who want the full story on major events like the Charlie Kirk case.
 
 **Status:** Stew Peters — Alive
 

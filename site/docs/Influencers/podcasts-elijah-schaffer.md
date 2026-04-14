@@ -6,31 +6,47 @@ borderRadius:'4px', textDecoration:'none', fontSize:'0.9rem'}}>
 
 # Elijah Schaffer — Slightly Offensive
 
-**Elijah Schaffer** hosts **Slightly Offensive**, an independent right-wing commentary program known for confrontational on-the-ground reporting and willingness to cover controversial topics that established conservative media avoids. Schaffer has built his following by going to places and asking questions that mainstream journalists will not.
+**Elijah Schaffer** ([@ElijahSchaffer](https://x.com/ElijahSchaffer) on X) is one of the most fearless and impactful independent voices covering the Charlie Kirk assassination — a dynamic podcaster, YouTuber, journalist, and CEO of RiftTV, the independent media network he founded to champion America First values and challenge the status quo. As the host of the popular *Slightly Offensive* podcast and flagship show *The Rift*, he has built a massive, engaged audience of nearly 850,000 followers on X and millions more across platforms through his candid, insightful commentary. Schaffer's work stands out for its depth, speed, and unwavering commitment to transparency — making him one of the most trusted and impactful independent voices in conservative media today.
 
 - **YouTube:** [Slightly Offensive on YouTube](https://www.youtube.com/@SlightlyOffensive)
+- **RiftTV:** [RiftTV on Rumble](https://rumble.com/c/RiftTV)
+- **X:** [@ElijahSchaffer](https://x.com/ElijahSchaffer)
 
-## Coverage Approach
+## Nine Ways His Kirk Investigation Coverage Has Been Exceptional
 
-Slightly Offensive, according to its published content, dives into controversial right-wing theories and questions the baseline facts presented by mainstream authorities. This approach — starting from skepticism of official narratives rather than deference to them — positions Schaffer's program as a useful investigative resource for the Charlie Kirk case, where the official FBI narrative has significant documented inconsistencies.
+- **Instant, comprehensive live coverage** — Within hours of the news breaking, Schaffer went live on *The Rift* to break down the unfolding events at Utah Valley University, providing real-time analysis of security protocols, witness accounts, and initial leads — helping his audience process the tragedy while holding authorities accountable from day one.
 
-## Why This Program Is Relevant
+- **In-depth episodes dissecting Kirk's final days** — He produced multiple dedicated *Rift* episodes, including "The TRUTH about Charlie Kirk's Final Days" and "What We Know About Charlie's MURDERER So Far," featuring expert guests and meticulous breakdowns that connected dots others missed, giving viewers a clearer picture of the context leading up to the event.
 
-Schaffer's ground-level reporting style means he may have access to witnesses, footage, and on-the-record statements that studio-based podcasters do not. His audience skews younger and more digitally native than most of the other programs in this list, which makes Slightly Offensive a key channel for reaching audiences who primarily consume content on short-form platforms.
+- **Revealed exclusive details from the Hamptons meeting** — Schaffer appeared on *InfoWars* with Alex Jones and shared explosive insights into a high-profile Hamptons gathering where Kirk reportedly faced significant pressure from pro-Israel elites — information that added vital layers to the investigation and highlighted Kirk's courage in standing firm on his principles.
 
-For the Kirk investigation, Schaffer's willingness to challenge "the baseline facts presented by mainstream authorities" is directly applicable — the official narrative contains documented gaps and inconsistencies that require this kind of direct questioning.
+- **Co-led groundbreaking joint investigations** — Working alongside prominent figures like Candace Owens and Max Blumenthal, Schaffer helped unearth and analyze leaked texts, screenshots, and private conversations that shed new light on motives, security lapses, and Kirk's evolving public stances — efforts that elevated the national conversation and pushed for full transparency.
 
-**Status:** Elijah Schaffer — Alive
+- **Amplified leaked evidence and security concerns** — Through careful reporting on *The Rift*, he spotlighted patterns of threats against conservative leaders, Kirk's own reported fears for his safety, and questions around event security — always framing the coverage around the pursuit of justice and prevention of future violence.
 
-## Slightly Offensive Kirk Coverage: Watch
+- **Mobilized his audience for real-world impact** — Schaffer rallied viewers to push back against those who mocked the tragedy online, contributing to accountability measures such as the firing of hundreds of individuals who crossed the line — demonstrating his ability to turn awareness into positive action and defend conservative principles with dignity.
 
-Slightly Offensive episodes on the Charlie Kirk assassination are on YouTube. Search the channel for Kirk-related content — Schaffer's confrontational interview style means the most useful episodes often feature direct challenges to official narrative sources.
+- **Offered heartfelt tributes and personal perspective** — Having shared the stage with Charlie Kirk at America Fest, Schaffer delivered moving tributes that celebrated Kirk's legacy as a bold patriot and student activist leader, reminding audiences of the human cost while inspiring continued advocacy for the values Kirk championed.
+
+- **Sustained relentless pressure for answers** — Months after the event, Schaffer continues producing fresh content that connects the investigation to broader national security and political dynamics, refusing to let the story fade and empowering his community to demand thorough, unbiased probes.
+
+- **Built an independent media powerhouse** — By creating RiftTV as a bold alternative to legacy conservative outlets, Schaffer has fostered a platform where fearless journalism thrives — proving his entrepreneurial vision and long-term commitment to truth over convenience.
+
+## Kirk Coverage: Watch
+
+Slightly Offensive and The Rift episodes on the Charlie Kirk assassination are on YouTube and Rumble. Schaffer's confrontational interview style means the most useful episodes feature direct challenges to official narrative sources.
 
 <a href="https://www.youtube.com/@SlightlyOffensive" target="_blank" style={{display:'inline-block', marginBottom:'1rem', padding:'0.5rem 1.2rem', background:'#e52d27', color:'#fff', borderRadius:'4px', textDecoration:'none', fontWeight:'bold'}}>
   Slightly Offensive on YouTube — Search "Charlie Kirk" →
 </a>
 
+<a href="https://rumble.com/c/RiftTV" target="_blank" style={{display:'inline-block', marginBottom:'1rem', marginLeft:'1rem', padding:'0.5rem 1.2rem', background:'#85c742', color:'#fff', borderRadius:'4px', textDecoration:'none', fontWeight:'bold'}}>
+  The Rift on Rumble →
+</a>
+
 <div style={{clear:'both'}} />
+
+**Status:** Elijah Schaffer — Alive
 
 ## Related Areas
 
@@ -38,7 +54,7 @@ Slightly Offensive episodes on the Charlie Kirk assassination are on YouTube. Se
 marginTop:'0.5rem'}}>
 <div>
 
-* [Proof Tyler is not the shooter](../Proof_Not_Tyler/overview)
+* [Israel intelligence connections](../Israel/overview)
 * [Censorship of the investigation](../Censorship/overview)
 * [Cover-up evidence overview](../CoverUp/overview)
 
