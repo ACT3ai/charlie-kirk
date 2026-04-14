@@ -28,8 +28,8 @@ Presence near an event does not establish participation in it. UVU is a large pu
 <div>
 
 * [Campus and university context](../campus_university/overview)
-* [Surveillance camera analysis](../cameras/overview)
-* [Security failures at UVU](../security/overview)
+* [Surveillance camera analysis](../cameras/security/overview)
+* [Security failures at UVU](../security_law_enforcement/overview)
 
 </div>
 <div>

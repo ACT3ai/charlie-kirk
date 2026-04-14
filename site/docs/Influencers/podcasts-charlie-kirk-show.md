@@ -42,7 +42,7 @@ marginTop:'0.5rem'}}>
 
 * [TPUSA organizations involved](../organizations_groups/overview)
 * [Timeline before the shooting](../Before/overview)
-* [Security failures at UVU](../security/overview)
+* [Security failures at UVU](../security_law_enforcement/overview)
 
 </div>
 <div>

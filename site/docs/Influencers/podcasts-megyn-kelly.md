@@ -39,7 +39,7 @@ Investigators should review her September and October 2025 episodes for any dire
 marginTop:'0.5rem'}}>
 <div>
 
-* [Security failures at UVU](../security/overview)
+* [Security failures at UVU](../security_law_enforcement/overview)
 * [Timeline before the shooting](../Before/overview)
 * [TPUSA organizations involved](../organizations_groups/overview)
 

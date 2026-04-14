@@ -37,7 +37,7 @@ Flight data is one of the few areas where **primary records exist** — ADS-B, f
 
 * [Property locations](../property_locations/overview)
 * [Technology and surveillance](../technology_surveillance/overview)
-* [Maps and locations](../Maps/overview)
+* [Maps and locations](../maps/overview)
 
 </div>
 </div>

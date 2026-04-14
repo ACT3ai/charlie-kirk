@@ -6,8 +6,6 @@ The path to justice is to pass these four federal laws. Each one targets a diffe
 
 ## Law 1: FBI & DOJ Disclosure
 
-![FBI & DOJ Disclosure](/img/law-1-doj-fbi.png)
-
 Forces the Department of Justice, FBI, ATF, DHS, FinCEN, and all federal, state, and local law enforcement agencies to disclose every file related to the Charlie Kirk investigation within 30 days. Criminal penalties of up to 10 years apply for withholding and 15 years for destroying records. No presidential override is permitted — compliance is automatic and enforced by a permanent congressional review board.
 
 [**View Law →**](./Law1)
@@ -15,8 +13,6 @@ Forces the Department of Justice, FBI, ATF, DHS, FinCEN, and all federal, state,
 ---
 
 ## Law 2: Intelligence Disclosure
-
-![Intelligence Disclosure](/img/law-2-intel.png)
 
 Compels the full U.S. Intelligence Community — CIA, NSA, DIA, NRO, NGA, military intelligence, and others — to release all information that could identify perpetrators or illuminate the circumstances of the death. Redaction is permitted only for currently active human intelligence source identities and specific live technical collection methods; analytical conclusions must always be disclosed. The same criminal penalties and enforcement mechanisms as Law 1 apply, adapted for the intelligence community's distinct classification framework.
 
@@ -26,8 +22,6 @@ Compels the full U.S. Intelligence Community — CIA, NSA, DIA, NRO, NGA, milita
 
 ## Law 3: Mandate the Investigation
 
-![Mandate the Investigation](/img/law-3-investigate.png)
-
 Requires the FBI and intelligence community to conduct a real, good-faith investigation — not merely release existing records. A dedicated FBI team of at least 20 agents with a $10 million independent budget must investigate every one of the 175 Schedule A items, led by a senior agent with no prior case involvement. An independent external monitor appointed by Congress has authority to direct investigators to pursue neglected leads, and if evidence emerges that a covered agency was itself involved, investigation authority transfers to an independent congressional commission.
 
 [**View Law →**](./Law3)
@@ -35,8 +29,6 @@ Requires the FBI and intelligence community to conduct a real, good-faith invest
 ---
 
 ## Law 4: Trusted Investigators
-
-![Trusted Investigators](/img/law-4-trusted.png)
 
 Establishes independent investigation teams led by three Designated Trusted Investigators: Candace Owens, Dave Smith, and Tucker Carlson. Each receives one FBI team and one Intelligence Community team — six teams total — with sole authority to select members, full access to all agency files and systems, and the power to publicly release findings. Teams operate for a minimum of 24 months, cannot be terminated by any government official, and produce public reports every 90 days addressing all 175 Schedule A items.
 
