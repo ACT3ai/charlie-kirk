@@ -400,5 +400,49 @@ Above is where to store the PDFs. Especially when we host them on a page
 ~/BGit/Bryan_git/charlie-kirk/prompts/Assess_Manual.md
 This is the assessment manual. This is what we're going to assess everything against.
 
-That will be the writing skill. That will mean what pages are laid out this way or that way. Always read this into the context menu, making sure we're aligning pages with these guidelines. 
+That will be the writing skill. That will mean what pages are laid out this way or that way. Always read this into the context menu, making sure we're aligning pages with these guidelines.
+
+
+== Fix Laws Section ==
+
+Public URL: https://whoassassinatedcharliekirk.com/Fix/overview
+Docusaurus location: {SITE_DIR}/docs/Fix/
+
+The Fix section presents the four proposed federal laws as the path to justice
+for the Charlie Kirk assassination. The overview page (Fix/overview.md) is the
+entry point — it lists all four laws with a visual card layout.
+
+=== Overview Page Layout (Fix/overview.md) ===
+
+Each law gets a card with:
+  * Law number + title (4 words or less)
+  * An image representing that law
+  * Three-sentence description
+  * "View Law" button linking to that law's detail page within Fix/
+
+=== Four Laws (titles, 4 words or less) ===
+
+  1. FBI & DOJ Disclosure
+  2. Intelligence Disclosure
+  3. Mandate the Investigation
+  4. Trusted Investigators
+
+=== Directory Ownership ===
+
+  site/docs/Fix/        — PUBLIC Docusaurus UI pages only. Contains:
+                          * overview.md (the four-law card layout page)
+                          * One detail page per law (the full law text for
+                            the public site "View Law" destination)
+
+  laws/                 — PRIVATE research and drafting workspace. Contains
+                          law text drafts, discovery list, supporting research,
+                          people definitions, notes, and analysis. This content
+                          feeds the public Fix/ pages but is NOT itself a
+                          Docusaurus directory. Exception: when the "View Law"
+                          button links to a detailed full-law page, that page
+                          lives in site/docs/Fix/, not in laws/.
+
+Never place Docusaurus UI pages inside laws/. Never place law drafts or
+research notes inside site/docs/Fix/. The laws/ directory is a drafting
+workspace; site/docs/Fix/ is the published output.
 
