@@ -24,6 +24,14 @@ For investigators, any PBD Podcast episode featuring guests with direct knowledg
 
 **Status:** Patrick Bet-David — Alive
 
+## PBD Podcast Kirk Coverage: Watch
+
+The PBD Podcast's most concentrated Kirk assassination coverage is on the Valuetainment YouTube channel. Episode 645 features an extended panel debate on the assassination, bringing together multiple perspectives on the FBI investigation, alternative motives, and the political context of Kirk's death.
+
+<a href="https://www.youtube.com/@PBDPodcast" target="_blank" style={{display:'inline-block', marginBottom:'1rem', padding:'0.5rem 1.2rem', background:'#e52d27', color:'#fff', borderRadius:'4px', textDecoration:'none', fontWeight:'bold'}}>
+  PBD Podcast on YouTube — Search "Charlie Kirk" →
+</a>
+
 <div style={{clear:'both'}} />
 
 ## Related Areas

@@ -24,6 +24,14 @@ Johnson's audience is large and engaged, with strong overlap with the America Fi
 
 **Status:** Benny Johnson — Alive
 
+## The Benny Show Kirk Coverage: Watch
+
+The Benny Show's coverage of the Charlie Kirk assassination is available on YouTube. Benny Johnson's viral-format episodes on the FBI's conduct and the weaponization of investigative agencies in the Kirk case reach a large, young, digitally active audience.
+
+<a href="https://www.youtube.com/@bennyjohnson" target="_blank" style={{display:'inline-block', marginBottom:'1rem', padding:'0.5rem 1.2rem', background:'#e52d27', color:'#fff', borderRadius:'4px', textDecoration:'none', fontWeight:'bold'}}>
+  The Benny Show on YouTube — Search "Charlie Kirk" →
+</a>
+
 <div style={{clear:'both'}} />
 
 ## Related Areas

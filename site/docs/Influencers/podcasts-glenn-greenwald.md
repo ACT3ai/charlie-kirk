@@ -28,6 +28,18 @@ His reporting on the NSA and CIA demonstrates firsthand how agencies operate whe
 
 **Status:** Glenn Greenwald — Alive
 
+## Key Episode: "Charlie Kirk Assassinated" — System Update: Listen
+
+System Update airs exclusively on Rumble. The episode covering the Charlie Kirk assassination — **"Charlie Kirk Assassinated, NATO Alleges Russian Involvement"** — examines the foreign-blame framing immediately following the killing and Greenwald's critique of how intelligence agencies shape early assassination narratives.
+
+<a href="https://www.iheart.com/podcast/269-system-update-with-glenn-g-108762389/episode/charlie-kirk-assassinated-nato-alleges-russian-293741270/" target="_blank" style={{display:'inline-block', marginBottom:'1rem', padding:'0.5rem 1.2rem', background:'#c4173a', color:'#fff', borderRadius:'4px', textDecoration:'none', fontWeight:'bold'}}>
+  Listen on iHeart Radio →
+</a>
+
+<a href="https://www.youtube.com/@GlennGreenwald" target="_blank" style={{display:'inline-block', marginBottom:'1rem', marginLeft:'1rem', padding:'0.5rem 1.2rem', background:'#333', color:'#fff', borderRadius:'4px', textDecoration:'none', fontWeight:'bold'}}>
+  System Update on YouTube →
+</a>
+
 <div style={{clear:'both'}} />
 
 ## Related Areas

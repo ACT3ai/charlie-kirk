@@ -26,6 +26,14 @@ Jones's claims should be evaluated against documented evidence. InfoWars operate
 
 **Status:** Alex Jones — Alive
 
+## InfoWars Kirk Assassination Coverage: Read
+
+Alex Jones and Nick Fuentes jointly investigated the Kirk assassination cover-up on InfoWars, examining which power bloc stood to gain most from his killing. This article is a primary source for the intelligence-service dimension of the case as covered by InfoWars.
+
+<a href="https://www.infowars.com/posts/exclusive-as-evidence-mounts-that-there-is-a-cover-up-of-the-charlie-kirk-assassination-nick-fuentes-alex-jones-investigate-what-power-block-stood-to-gain-the-most-from-his-killing" target="_blank" style={{display:'inline-block', marginBottom:'1rem', padding:'0.5rem 1.2rem', background:'#c0392b', color:'#fff', borderRadius:'4px', textDecoration:'none', fontWeight:'bold'}}>
+  Read on InfoWars: Kirk Cover-Up Investigation →
+</a>
+
 <div style={{clear:'both'}} />
 
 ## Related Areas

@@ -1,3 +1,9 @@
+<a href="./overview" style={{display:'inline-block', marginBottom:'1rem',
+padding:'0.35rem 0.9rem', background:'#1a73e8', color:'#fff',
+borderRadius:'4px', textDecoration:'none', fontSize:'0.9rem'}}>
+← Influencers
+</a>
+
 # Podcast Coverage
 
 The podcasts listed here are the most significant audio and video programs covering the Charlie Kirk assassination investigation. Each host brings a distinct angle — intelligence analysis, investigative reporting, political accountability, or citizen research — that mainstream news has refused to provide.
@@ -5,6 +11,7 @@ The podcasts listed here are the most significant audio and video programs cover
 <div style={{display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: '1rem'}}>
 <div>
 
+* [The Charlie Kirk Show](./podcasts-charlie-kirk-show)
 * [Candace Owens Show](./podcasts-candace-owens)
 * [Megyn Kelly Show](./podcasts-megyn-kelly)
 * [Ian Carroll](./podcasts-ian-carroll)
@@ -21,6 +28,7 @@ The podcasts listed here are the most significant audio and video programs cover
 * [Patrick Bet-David — PBD Podcast](./podcasts-patrick-bet-david)
 * [Elijah Schaffer — Slightly Offensive](./podcasts-elijah-schaffer)
 * [Hodgetwins](./podcasts-hodgetwins)
+* [Shawn Ryan Show](./podcasts-shawn-ryan)
 
 </div>
 <div>
@@ -30,12 +38,12 @@ The podcasts listed here are the most significant audio and video programs cover
 * [Jimmy Dore Show](./podcasts-jimmy-dore)
 * [Stew Peters Show](./podcasts-stew-peters)
 * [Jason Whitlock — Fearless](./podcasts-jason-whitlock)
-* [Project Costa 2](./podcasts-project-costa-2)
+* [Project Constitution](./podcasts-project-constitution)
 
 </div>
 </div>
 
-Podcasts have been the primary venue where the Charlie Kirk assassination has received serious investigative treatment. Mainstream television either ignored the case or framed it as a straightforward campus shooting with a clear suspect. Independent audio and video programs carried the analytical load — asking who controlled security at UVU that day, why federal agencies have blocked independent access to evidence, and what relationships between TPUSA, foreign intelligence networks, and the events of September 10, 2025 remain unexplained publicly. The combined reach of the eighteen programs listed here spans hundreds of millions of listeners and viewers.
+Podcasts have been the primary venue where the Charlie Kirk assassination has received serious investigative treatment. Mainstream television either ignored the case or framed it as a straightforward campus shooting with a clear suspect. Independent audio and video programs carried the analytical load — asking who controlled security at UVU that day, why federal agencies have blocked independent access to evidence, and what relationships between TPUSA, foreign intelligence networks, and the events of September 10, 2025 remain unexplained publicly. The combined reach of the twenty programs listed here spans hundreds of millions of listeners and viewers.
 
 Three of these hosts — Tucker Carlson, Dave Smith, and Candace Owens — are designated as Trusted Investigators under the proposed [Law 4: Trusted Investigators](../Fix/overview). That designation reflects their demonstrated independence from government and institutional control, their track record of pursuing contested evidence, and their willingness to cover intelligence-community angles that co-opted media will not touch. Their podcast coverage is not simply commentary — it is part of an active investigative record that complements formal legal and congressional efforts. Ian Carroll and Glenn Greenwald represent the independent research and press-freedom angles; Joe Rogan and Patrick Bet-David provide the mass-audience amplification that moves evidence into mainstream awareness.
 

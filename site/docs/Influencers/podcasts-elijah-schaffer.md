@@ -22,6 +22,14 @@ For the Kirk investigation, Schaffer's willingness to challenge "the baseline fa
 
 **Status:** Elijah Schaffer — Alive
 
+## Slightly Offensive Kirk Coverage: Watch
+
+Slightly Offensive episodes on the Charlie Kirk assassination are on YouTube. Search the channel for Kirk-related content — Schaffer's confrontational interview style means the most useful episodes often feature direct challenges to official narrative sources.
+
+<a href="https://www.youtube.com/@SlightlyOffensive" target="_blank" style={{display:'inline-block', marginBottom:'1rem', padding:'0.5rem 1.2rem', background:'#e52d27', color:'#fff', borderRadius:'4px', textDecoration:'none', fontWeight:'bold'}}>
+  Slightly Offensive on YouTube — Search "Charlie Kirk" →
+</a>
+
 <div style={{clear:'both'}} />
 
 ## Related Areas

@@ -60,7 +60,7 @@ REASONING: His powerful [30-06 Mauser 98 gun](/Gun_Bullet/overview.md) would hav
   * [Theories](/Theories/overview.md)
   * [On Podcasts](/Influencers/podcasts.md)
   * [Influencers](Influencers/overview.md): On [X](/Influencers/x.md), [Podcasts](/Influencers/podcasts.md), [YouTube](Influencers/youtube.md)
-  * [CIA](CIA/overview.md) 
+  * [U.S. Intelligence](US_Intelligence/overview.md) 
   * [Drones](Drones/overview.md)
   </div>
   <div style={{ flex: 1 }}>

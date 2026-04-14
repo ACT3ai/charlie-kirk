@@ -28,6 +28,16 @@ His experience running the Breitbart News network and advising the Trump White H
 
 **Status:** Steve Bannon — Alive
 
+## War Room Episode 4769 — "The Assassination of Charlie Kirk": Watch
+
+<div style={{float:'right', width:'48%', marginLeft:'1.5rem', marginBottom:'1rem'}}>
+<iframe width="100%" style={{aspectRatio:'16/9'}}
+  src="https://rumble.com/embed/v6yrnyo/"
+  frameborder="0" allowfullscreen />
+</div>
+
+**"Episode 4769 — The Assassination of Charlie Kirk"** — War Room with Steve Bannon. This episode covers the political assassination of Charlie Kirk from the perspective of the America First movement, exploring who stood to gain and whether federal agencies are suppressing the full story. Bannon's deep familiarity with TPUSA leadership and the America First network makes his analysis uniquely informed.
+
 <div style={{clear:'both'}} />
 
 ## Related Areas

@@ -1,3 +1,9 @@
+<a href="/" style={{display:'inline-block', marginBottom:'1rem',
+padding:'0.35rem 0.9rem', background:'#1a73e8', color:'#fff',
+borderRadius:'4px', textDecoration:'none', fontSize:'0.9rem'}}>
+← Home
+</a>
+
 # Israel
 
 This section organizes how Israel, Israeli policy debates, and pro-Israel networks appear in public discussions about Charlie Kirk's life and death. It does **not** claim that any Israeli individual or institution ordered or carried out the killing — it sorts the allegations into distinct threads so readers can evaluate each on its own evidence.

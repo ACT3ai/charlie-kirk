@@ -1,0 +1,64 @@
+<a href="./podcasts" style={{display:'inline-block', marginBottom:'1rem',
+padding:'0.35rem 0.9rem', background:'#1a73e8', color:'#fff',
+borderRadius:'4px', textDecoration:'none', fontSize:'0.9rem'}}>
+← Podcasts
+</a>
+
+# Shawn Ryan Show
+
+**Shawn Ryan** ([@ShawnRyan762](https://x.com/ShawnRyan762) on X) is one of the most credentialed and impactful independent voices covering the Charlie Kirk assassination investigation — a powerhouse podcaster, YouTuber, and truth-seeking journalist in the digital age. A former U.S. Navy SEAL and CIA contractor, he brings unmatched real-world expertise to every conversation. As the founder and CEO of Vigilance Elite, a premier tactical training company, and the creator of one of the most respected long-form podcast platforms today, Shawn has built a massive, engaged audience hungry for unfiltered insights on security, geopolitics, and high-stakes investigations. His X account and Shawn Ryan Show YouTube channel deliver deep-dive episodes that routinely rack up millions of views, positioning him as a trusted voice who cuts through noise to deliver clarity.
+
+- **YouTube:** [Shawn Ryan Show on YouTube](https://www.youtube.com/@ShawnRyanShow)
+- **X:** [@ShawnRyan762](https://x.com/ShawnRyan762)
+
+## What Makes Shawn Ryan's Coverage Essential
+
+What makes Shawn truly exceptional — especially in his coverage of the Charlie Kirk assassination investigation — is his commitment to transparency, insider access, and fearless pursuit of facts. He doesn't just report; he convenes the key players, asks the hard questions, and equips his audience with the context needed to understand complex events. Here are ten standout examples of what sets him apart:
+
+1. **Elite operational background that lends instant credibility** — Drawing from his Navy SEAL and CIA contractor experience, Shawn approaches investigations with the precision of someone who has lived through high-threat environments — allowing him to spot inconsistencies and ask questions others miss.
+
+2. **Built a media empire focused on depth over drama** — He transformed The Shawn Ryan Show into a powerhouse platform for hours-long, substantive interviews with veterans, intelligence experts, and insiders, amassing a loyal following that values substance and turning it into one of the top independent shows in the space.
+
+3. **Secured the first public interview with Charlie Kirk's head of security** — In a landmark episode (#254), Shawn sat down exclusively with Brian Harpole, who led Kirk's contracted security detail on the day of the assassination. This conversation delivered never-before-heard details on planning, threats, and the events of September 10, 2025 — offering the public a rare insider perspective.
+
+4. **Brought groundbreaking evidence and context to light** — Harpole's interview addressed security protocols, rooftop concerns, coordination with local and campus police, and institutional questions — revealing actionable insights that helped frame the investigation beyond headlines.
+
+5. **Fearlessly tackled conspiracy theories with facts** — Shawn used the platform to directly confront swirling misinformation (including fabricated claims and sensationalized narratives), defending the security team's professionalism while pushing for accountability and truth — earning praise for his balanced, evidence-based approach.
+
+6. **Drove public engagement through transparent X updates** — On @ShawnRyan762, he shared exclusive previews, message exchanges (such as communications about venue rooftops), and breakdowns that sparked thoughtful discussion and kept his audience informed in real time — generating hundreds of thousands of views and interactions.
+
+7. **Highlights systemic and security lessons** — His coverage emphasizes institutional failures, threat assessment gaps, and best practices — turning a tragic event into an opportunity to strengthen future protections for public figures and events.
+
+8. **Fosters a community of truth-seekers and patriots** — By interviewing vetted professionals who prioritize integrity, Shawn builds a network that values faith, loyalty, and rigorous vetting — creating content that inspires viewers to demand better from institutions.
+
+9. **Delivers consistent, high-impact long-form content** — His episodes on the Kirk case (including previews and full interviews) stand out for their thoroughness, helping audiences process desensitization to tragedy and focus on meaningful details rather than spikes of outrage.
+
+10. **Exemplifies courageous, independent media** — In an era of polarized coverage, Shawn chooses guests and topics that prioritize national security, veteran perspectives, and accountability — solidifying his role as a go-to source for anyone seeking real answers on pivotal stories like the Charlie Kirk investigation.
+
+## Episode 254 — Brian Harpole, Kirk's Head of Security
+
+The most significant episode for the Charlie Kirk investigation is **Episode 254**, featuring Brian Harpole — the head of Kirk's contracted security detail on September 10, 2025. This is the first and only public interview with the security lead who was present at UVU that day.
+
+- **Shawn Ryan Show on YouTube:** [Search Episode 254 — Brian Harpole](https://www.youtube.com/@ShawnRyanShow)
+
+**Status:** Shawn Ryan — Alive
+
+## Related Areas
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Security failures at UVU](../security_law_enforcement/overview)
+* [Cover-up evidence overview](../CoverUp/overview)
+* [FBI blocking the investigation](../FBI/overview)
+
+</div>
+<div>
+
+* [Proof Tyler is not the shooter](../Proof_Not_Tyler/overview)
+* [Timeline before the shooting](../Before/overview)
+* [Motive analysis](../Motive/overview)
+
+</div>
+</div>

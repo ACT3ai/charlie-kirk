@@ -24,6 +24,14 @@ All specific claims made on The Stew Peters Show should be verified against prim
 
 **Status:** Stew Peters — Alive
 
+## Stew Peters on the Kirk Assassination: Read & Watch
+
+Peters has covered the Kirk assassination extensively on stewpeters.com. His article "Kirk Assassination Stinks of Deep State Deception" is a primary source for the deep state framing of the case. He also appeared with the Hodgetwins (see the [Hodgetwins page](./podcasts-hodgetwins)) in a joint episode discussing Israeli intelligence theories.
+
+<a href="https://stewpeters.com/kirk-assassination-stinks-of-deep-state-deception/" target="_blank" style={{display:'inline-block', marginBottom:'1rem', padding:'0.5rem 1.2rem', background:'#1a1a2e', color:'#fff', borderRadius:'4px', textDecoration:'none', fontWeight:'bold'}}>
+  Read: "Kirk Assassination Stinks of Deep State Deception" →
+</a>
+
 <div style={{clear:'both'}} />
 
 ## Related Areas

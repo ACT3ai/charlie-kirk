@@ -26,6 +26,16 @@ The Jimmy Dore Show is particularly valuable for:
 
 **Status:** Jimmy Dore — Alive
 
+## "WORST LIES YET About Charlie Kirk's Assassination": Watch
+
+<div style={{float:'right', width:'48%', marginLeft:'1.5rem', marginBottom:'1rem'}}>
+<iframe width="100%" style={{aspectRatio:'16/9'}}
+  src="https://rumble.com/embed/v705uyi/"
+  frameborder="0" allowfullscreen />
+</div>
+
+**"WORST LIES YET About Charlie Kirk's Assassination! w/ Ian Carroll"** — The Jimmy Dore Show. Dore brings on Ian Carroll to dismantle the official FBI narrative, focusing on the most glaring inconsistencies and the media's refusal to ask hard questions. This is the crossover episode that bridged left-populist and right-independent investigative audiences.
+
 <div style={{clear:'both'}} />
 
 ## Related Areas

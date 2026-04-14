@@ -1,0 +1,49 @@
+<a href="/" style={{display:'inline-block', marginBottom:'1rem',
+padding:'0.35rem 0.9rem', background:'#1a73e8', color:'#fff',
+borderRadius:'4px', textDecoration:'none', fontSize:'0.9rem'}}>
+← Home
+</a>
+
+# U.S. Intelligence
+
+U.S.-based intelligence agencies — the CIA, FBI, NSA, and allied services — are central to understanding both who may have carried out the Charlie Kirk assassination and why the investigation has been blocked at every turn.
+
+<div style={{display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: '1rem'}}>
+<div>
+
+* [CIA involvement analysis](./cia)
+
+</div>
+<div>
+
+</div>
+<div>
+
+</div>
+</div>
+
+The U.S. intelligence community has the operational capability, institutional motive, and documented history of conducting or enabling operations against domestic political figures perceived as threats to established power. Charlie Kirk was building the largest grassroots conservative organization in American history — one that was increasingly critical of neoconservative foreign policy, intelligence agency overreach, and the bipartisan consensus around military interventionism. That made him a significant target for agencies whose institutional survival depends on maintaining that consensus.
+
+The operational signature of the September 10, 2025 assassination — a single precision shot, immediate narrative control, rapid evidence destruction, aviation assets in the area, and FBI behavior consistent with protecting sources and methods rather than investigating a crime — matches what documented intelligence operations look like when they go wrong or are exposed. Independent investigators have noted that the FBI's conduct after the shooting is more consistent with an agency managing a crime it was aware of than one genuinely trying to solve it.
+
+Start with the CIA page for the specific theories, rogue-faction claims, and documented flight and program connections that tie U.S. intelligence to the events of September 10. The FBI's role in blocking the investigation is covered separately in the [FBI section](../FBI/overview). For the foreign-intelligence dimension — including Mossad and allied services operating in coordination with or parallel to U.S. agencies — see the [Israel](../Israel/overview) and [Intel Services Proof](../Proof_Intel_Services/overview) sections.
+
+## Related Areas
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [FBI blocking the investigation](../FBI/overview)
+* [Israel intelligence connections](../Israel/overview)
+* [Intel services involvement proof](../Proof_Intel_Services/overview)
+
+</div>
+<div>
+
+* [Cover-up evidence overview](../CoverUp/overview)
+* [Planes and aviation assets](../Planes/overview)
+* [Fix the laws — all four proposals](../Fix/overview)
+
+</div>
+</div>

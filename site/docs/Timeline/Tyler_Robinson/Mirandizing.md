@@ -4,6 +4,11 @@ title: Mirandizing of Tyler Robinson
 sidebar_label: Mirandizing
 sidebar_position: 5
 ---
+<a href="./overview" style={{display:'inline-block', marginBottom:'1rem',
+padding:'0.35rem 0.9rem', background:'#1a73e8', color:'#fff',
+borderRadius:'4px', textDecoration:'none', fontSize:'0.9rem'}}>
+← Tyler Robinson
+</a>
 
 # Mirandizing of Tyler Robinson
 

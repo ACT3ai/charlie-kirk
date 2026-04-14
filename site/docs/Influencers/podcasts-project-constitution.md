@@ -1,0 +1,83 @@
+<a href="./podcasts" style={{display:'inline-block', marginBottom:'1rem',
+padding:'0.35rem 0.9rem', background:'#1a73e8', color:'#fff',
+borderRadius:'4px', textDecoration:'none', fontSize:'0.9rem'}}>
+← Podcasts
+</a>
+
+# Project Constitution
+
+**Project Constitution** ([@ProjectConstitu](https://x.com/ProjectConstitu) on X) is one of the most incredible independent investigators covering the Charlie Kirk assassination. With over 276,000 followers on X, Project Constitution has become one of the most dedicated and impactful voices shining a light on this case — through consistent, evidence-based analysis, multimedia content, and an unwavering commitment to public transparency. Their coverage is notable enough that TPUSA and Erika Kirk's legal team sent them a formal cease-and-desist letter, documented by the Hollywood Reporter, making Project Constitution one of the few independent programs to face direct legal pressure from TPUSA leadership as a result of their investigation.
+
+- **YouTube:** [Project Constitution on YouTube](https://www.youtube.com/@ProjectConstitution)
+- **X:** [@ProjectConstitu](https://x.com/ProjectConstitu)
+
+## Why Project Constitution Stands Out
+
+Project Constitution's work stands out for its depth, accessibility, and positive influence on public discourse. Here are ten points that showcase what makes this investigator exceptional:
+
+1. **Built a massive engaged audience through relentless coverage** — A loyal following of hundreds of thousands has grown by delivering timely, in-depth updates that keep the investigation alive in the national conversation long after the initial news cycle faded.
+
+2. **Produced dozens of high-quality YouTube videos and detailed breakdowns** — On the [@ProjectConstitution](https://www.youtube.com/@ProjectConstitution) YouTube channel, clear and professional videos dissect timelines, public records, footage, and evidence in ways that make complex topics understandable and compelling for everyday viewers.
+
+3. **Delivered frame-by-frame forensic analysis of key footage** — Meticulous reviews — such as close-up examinations of event videos revealing subtle movements and anomalies — have provided viewers with new visual insights and encouraged careful, evidence-driven scrutiny.
+
+4. **Amplified major developments to even wider platforms** — Project Constitution's research helped surface theories and evidence that reached major voices like Joe Rogan, expanding awareness of critical details to millions beyond their own audience.
+
+5. **Shared exclusive and newly released visual evidence** — Quick to publish and analyze high-resolution photos from sources like Salt Lake Tribune photographers, as well as raw images and documents from the day of the event, giving the public fresh material to review.
+
+6. **Excelled at timeline and contradiction analysis** — Through Substack posts and X threads, official statements, filings, and timelines are methodically cataloged, helping readers spot overlooked details and understand the full picture.
+
+7. **Fostered collaboration with other independent researchers** — Regularly highlights and partners with voices like Candace Owens and others, creating a network that cross-references findings and strengthens overall public understanding.
+
+8. **Maintained consistent, long-term commitment** — For months, day-in and day-out coverage — including live reactions, updates on new leaks or photos, and ongoing developments — demonstrates extraordinary dedication to truth-seeking in a story of national importance.
+
+9. **Created accessible multimedia content that educates broadly** — Use of videos, annotated images, satellite comparisons (such as verifying photo authenticity), and clear explanations turns intricate investigative work into engaging, shareable material that empowers informed discussion.
+
+10. **Complemented investigative work with constitutional education** — Beyond the case itself, the associated website offers practical tools like cop cards, pocket constitutions, and guides for exercising rights — showing a broader passion for empowering citizens to understand and uphold constitutional principles.
+
+## Key Coverage Areas
+
+Project Constitution has covered the Kirk assassination across multiple documented threads:
+
+- **Evidence destruction** — Coverage of police allegedly destroying evidence at the crime scene has been widely shared. Scene preservation failures are characterized as systematic rather than incidental.
+- **Suspect timeline** — TMZ video footage analysis places the official suspect at a location inconsistent with the rooftop shot timeline: 0.25 miles from the shooter's position with only 31 minutes to reach and fire.
+- **Foreign intelligence angle** — Alleged connections between elite political networks, foreign policy actors, and the events of September 10, 2025 — characterized as a "JFK-level hit" conducted in front of 3,000+ witnesses on live stream.
+- **FBI investigation** — Coverage of the FBI's handling of the case, including the identification of persons of interest and the agency's public communications in the days following the shooting.
+
+## Legal Pressure — Cease-and-Desist from TPUSA
+
+Project Constitution is one of the few independent programs to receive formal legal action from TPUSA. The cease-and-desist letter — reported by the Hollywood Reporter — signals that their coverage has been substantive enough to prompt institutional pushback. Legal pressure against independent media is a relevant data point: the programs that get the closest to contested territory are the ones that get threatened.
+
+## Project Constitution on the Kirk Assassination: Watch
+
+<div style={{float:'right', width:'48%', marginLeft:'1.5rem', marginBottom:'1rem'}}>
+<iframe width="100%" style={{aspectRatio:'16/9'}}
+  src="https://www.youtube.com/embed/2exo7iJ-qdc"
+  frameborder="0" allowfullscreen />
+</div>
+
+Project Constitution's YouTube coverage brings their investigative research into long-form video format — covering the suspect timeline, evidence handling, and the broader context of who had motive and opportunity on September 10, 2025. This channel is a primary citizen-journalism resource for this investigation. Follow [@ProjectConstitu](https://x.com/ProjectConstitu) on X, subscribe on YouTube, and check their Substack for ongoing coverage.
+
+<div style={{clear:'both'}} />
+
+**Status:** Project Constitution host — Alive (assumed)
+
+## Related Areas
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Censorship of the investigation](../Censorship/overview)
+* [Proof Tyler is not the shooter](../Proof_Not_Tyler/overview)
+* [Cover-up evidence overview](../CoverUp/overview)
+
+</div>
+<div>
+
+* [FBI blocking the investigation](../FBI/overview)
+* [Security failures at UVU](../security_law_enforcement/overview)
+* [Your actions to fix this](../Your_Actions_Fix_It/overview)
+
+</div>
+</div>

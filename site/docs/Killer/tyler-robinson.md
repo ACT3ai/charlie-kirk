@@ -1,0 +1,64 @@
+<a href="./overview" style={{display:'inline-block', marginBottom:'1rem',
+padding:'0.35rem 0.9rem', background:'#1a73e8', color:'#fff',
+borderRadius:'4px', textDecoration:'none', fontSize:'0.9rem'}}>
+← Real Killer
+</a>
+
+# Theory: Tyler Robinson — Official Suspect
+
+Tyler Robinson is the individual charged by the State of Utah with the assassination of Charlie Kirk. This page presents both the official case against Robinson and the documented challenges to that case raised by independent investigators. The goal is not to declare Robinson guilty or innocent — that is for a court to determine — but to lay out what the evidence shows and where significant questions remain.
+
+## The Official Account
+
+According to charging documents and official law enforcement statements, Tyler Alexander Robinson, a student, carried a Mauser Model 98 rifle to the UVU campus on September 10, 2025 and fired the fatal shot from an elevated rooftop position during Kirk's outdoor speaking event. Law enforcement identified Robinson as the lone actor and he was subsequently charged with aggravated murder, obstruction of justice, and felony discharge of a firearm.
+
+Robinson reportedly confessed to his father after the shooting. He did not turn himself in voluntarily — contrary to some early press reporting.
+
+## Interesting Claims and Questions Investigators Have Raised
+
+- **The rifle doesn't match the wound** — Independent ballistics analysts and former law enforcement have argued that a Mauser Model 98 chambered in .30-06 fired from rooftop distance would produce a dramatically different wound profile than what has been described. The caliber and velocity would be expected to cause catastrophic tissue destruction inconsistent with the reported injuries. Ian Carroll's "The WRONG RIFLE" video makes this case in detail with ballistics demonstrations.
+
+- **Acoustic timing is wrong for a rooftop shot** — Analysis of available video footage suggests the acoustic signature of the shot — the timing between muzzle blast and impact — is inconsistent with the distance between the attributed rooftop position and the stage. Some investigators argue the shot came from a closer, lower position.
+
+- **Robinson's timeline has gaps** — Reconstructions of Robinson's movements on September 10 show logistical questions about how he reached the rooftop, how long he was there, and what his exit route was. A TMZ video analyzed by Project Constitution reportedly places Robinson 0.25 miles from the shooter's roof position with only 31 minutes before the shot.
+
+- **The "Stairs Guy" and backpack analysis** — Researchers studying footage from the event identified an individual on stairs near the stage whose clothing and backpack are inconsistent with Robinson's documented appearance at surrender. Some investigators argue this figure, not Robinson, was positioned to take the shot.
+
+- **Clothing and appearance changes** — Multiple investigators have documented apparent discrepancies between Robinson's clothing and physical appearance at different points during and after the event. These are treated as potential evidence of a setup or multiple individuals involved.
+
+- **Robinson reportedly did not turn himself in** — Early press coverage stated Robinson turned himself in voluntarily. This was later corrected. The circumstances of his arrest and the role of his father's alleged involvement in the confession are considered relevant to whether the confession was coerced, coached, or genuine.
+
+- **Pre-assassination Google searches** — Baron Coleman and other investigators have reported that search warrants reveal pre-event Google searches potentially relevant to the planning of the assassination. Whether those searches were made by Robinson or by others with access to related devices is a question investigators have raised.
+
+- **Patsy theory** — A significant subset of investigators does not believe Robinson is innocent of all involvement, but argues he was manipulated, recruited, or set up to take responsibility for a killing actually carried out by a more capable actor. The [Patsies and Distraction Actors](./Patsies_Distraction_Actors) page covers this theory in detail.
+
+## What the Evidence Does Not Yet Resolve
+
+The trial of Tyler Robinson — whenever it occurs — will be the first opportunity for independent ballistics, acoustic, and forensic evidence to be tested in a formal adversarial proceeding. Until then, the following remain open:
+
+- Whether the wound profile is consistent with the attributed rifle and distance
+- Whether Robinson had the physical access, time, and capability to occupy the rooftop and fire the shot
+- Whether the acoustic record is consistent with a rooftop origin
+- Whether Robinson acted alone or was assisted, directed, or used by others
+
+**Status:** Tyler Robinson — In custody, awaiting trial
+
+## Related Areas
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Proof Tyler is not the shooter](../Proof_Not_Tyler/overview)
+* [Patsies and Distraction Actors](./Patsies_Distraction_Actors)
+* [Gun and ballistics analysis](../Gun_Bullet/overview)
+
+</div>
+<div>
+
+* [Close-Range Shot Theories](./Close_Range_Theories)
+* [Cover-up evidence overview](../CoverUp/overview)
+* [Timeline of the shooting](../Before/overview)
+
+</div>
+</div>

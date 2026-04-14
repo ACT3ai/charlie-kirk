@@ -28,6 +28,18 @@ If Rogan hosts guests with direct knowledge of the case, that episode would be t
 
 **Status:** Joe Rogan — Alive
 
+## JRE on the Kirk Assassination: Listen
+
+The Joe Rogan Experience is exclusive to Spotify. Episodes covering the Charlie Kirk assassination and the broader question of intelligence agency involvement in American political violence can be found by searching Spotify for "Charlie Kirk" or "Kirk assassination" in the JRE feed.
+
+<a href="https://open.spotify.com/show/4rOoJ6Egrf8K2IrywzwOMk" target="_blank" style={{display:'inline-block', marginBottom:'1rem', padding:'0.5rem 1.2rem', background:'#1DB954', color:'#fff', borderRadius:'4px', textDecoration:'none', fontWeight:'bold'}}>
+  The Joe Rogan Experience on Spotify →
+</a>
+
+<a href="https://www.youtube.com/@joerogan" target="_blank" style={{display:'inline-block', marginBottom:'1rem', marginLeft:'1rem', padding:'0.5rem 1.2rem', background:'#333', color:'#fff', borderRadius:'4px', textDecoration:'none', fontWeight:'bold'}}>
+  Joe Rogan on YouTube →
+</a>
+
 <div style={{clear:'both'}} />
 
 ## Related Areas
