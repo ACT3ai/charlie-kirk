@@ -36,14 +36,14 @@ Start with Dave Smith's debate from the TPUSA Student Action Summit (July 2025) 
 marginTop:'0.5rem'}}>
 <div>
 
-* [YouTube channels covering the case](./youtube)
-* [X accounts driving the investigation](./x)
 * [Cover-up evidence overview](../CoverUp/overview)
+* [FBI blocking the investigation](../FBI/overview)
+* [FBI & DOJ Disclosure — Law 1](../Fix/Law1)
 
 </div>
 <div>
 
-* [FBI blocking independent access](../FBI/overview)
+* [Israel intelligence connections](../Israel/overview)
 * [Intel services involvement proof](../Proof_Intel_Services/overview)
 * [Your actions to fix this](../Your_Actions_Fix_It/overview)
 

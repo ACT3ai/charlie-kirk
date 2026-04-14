@@ -312,3 +312,26 @@ WRITING STYLE ON PAGES
 * Bold for key names, dates, and terms on first use in a section.
 * No markdown headers above H2 (##) inside page body — H1 is the page title only.
 * No emojis unless explicitly requested.
+
+
+============================
+WRITING STYLE ON PAGES
+============================
+
+The page will often have this boilerplate template below content. Assume that we want to get rid of that, but look at those and analyze if we really need them or not. 
+
+
+
+Key Areas
+Podcast episodes
+Host analysis
+Coverage quality
+Evidence presented
+Audience reach
+Status
+ Initial research
+ Evidence collection
+ Analysis
+ Documentation
+Edit this page
+
