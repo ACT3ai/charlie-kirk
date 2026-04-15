@@ -88,7 +88,7 @@ Finally, the posture toward witnesses and local coordination remains central. Cl
 ### Peer Level_2 Topics to Consult
 
 - Aviation and flight analysis: see [Planes/N1098L](../Planes/N1098L/overview) and [Plane/N1098L](../Plane/N1098L/overview) for aircraft specifics, telemetry leads, and recommended forensic steps.
-- Intelligence community context: see [CIA](../CIA/overview) for parallel IC-related assertions and context.
+- Intelligence community context: see [CIA](../US_Intelligence/cia) for parallel IC-related assertions and context.
 - Legal process and investigative posture: see [legal_investigation](../legal_investigation/overview) for subpoenas, warrants, and public charging decisions to date.
 - Security and law enforcement at venue: see [security_law_enforcement](../security_law_enforcement/overview) for coordination, staffing, and vendor relationships.
 - Medical and forensic outcomes: see [Medical](../Medical/overview) for ME notes, ballistic/trauma analysis, and hospital timeline alignment.

@@ -28,3 +28,11 @@
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+/* Hide expand arrow and child items for categories marked no-expand */
+.no-expand-sidebar > .menu__list {
+  display: none !important;
+}
+.no-expand-sidebar > .menu__list-item-collapsible .menu__caret {
+  display: none !important;
+}

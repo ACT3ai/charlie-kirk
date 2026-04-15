@@ -37,7 +37,7 @@ Government evidence questions intersect with many other sections:
 - [Cover-up](/CoverUp/overview) and [After](/After/overview) – for site changes and post‑incident actions viewed as potentially affecting evidence.
 - [Autopsy](/Charlie/Autopsy/overview) and [Medical](/Medical/overview) – for how medical records and autopsy materials are governed by law.
 - [Media Censorship](/Media/Censorship) and [Censorship](/Censorship/overview) – for concerns about access to footage and public information.
-- [FBI](/FBI/overview), [CIA](/CIA/overview), and [Legal Investigation](/legal_investigation/overview) – for institutional roles in collecting, managing, and disclosing evidence.
+- [FBI](/FBI/overview), [CIA](/US_Intelligence/cia), and [Legal Investigation](/legal_investigation/overview) – for institutional roles in collecting, managing, and disclosing evidence.
 
 Readers should treat this page as a **guide to the kinds of evidence‑handling issues being discussed**, not as a conclusion that any particular agency has engaged in deliberate misconduct. Whenever possible, conclusions should be grounded in documented procedures, court filings, and verified records.
 

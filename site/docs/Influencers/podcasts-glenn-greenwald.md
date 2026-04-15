@@ -49,7 +49,7 @@ marginTop:'0.5rem'}}>
 <div>
 
 * [FBI blocking the investigation](../FBI/overview)
-* [CIA involvement analysis](../CIA/overview)
+* [CIA involvement analysis](../US_Intelligence/cia)
 * [Intel services involvement proof](../Proof_Intel_Services/overview)
 
 </div>

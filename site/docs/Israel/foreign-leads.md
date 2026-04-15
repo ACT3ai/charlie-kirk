@@ -26,7 +26,7 @@ Each lead needs primary documents: phone logs, flight manifests, named witnesses
 </div>
 <div>
 
-* [CIA involvement theories](../CIA/overview)
+* [CIA involvement theories](../US_Intelligence/cia)
 * [Legal investigation status](../legal_investigation/overview)
 * [Proof of intel services](../Proof_Intel_Services/overview)
 

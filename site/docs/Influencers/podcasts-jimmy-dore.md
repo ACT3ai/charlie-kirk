@@ -56,7 +56,7 @@ marginTop:'0.5rem'}}>
 <div>
 
 * [FBI blocking the investigation](../FBI/overview)
-* [CIA involvement analysis](../CIA/overview)
+* [CIA involvement analysis](../US_Intelligence/cia)
 * [Censorship of the investigation](../Censorship/overview)
 
 </div>

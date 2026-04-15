@@ -40,7 +40,7 @@ Another cluster of theories suggests that **intelligence services or foreign act
 - Specific references are made to foreign policy disputes, donor dynamics, and flight patterns involving specialized aircraft, with questions about who would have the capability and motivation to plan such an operation.
 - These theories often mention intelligence‑linked programs, training centers, or alliances as part of a larger context.
 
-For more detail, see [CIA](/CIA/overview), [Planes](/Planes/overview), [Israel](/Israel/overview), [Motive](/Motive/overview), and [Killer](/Killer/overview). All such ideas should be approached with caution and a demand for verifiable evidence.
+For more detail, see [CIA](/US_Intelligence/cia), [Planes](/Planes/overview), [Israel](/Israel/overview), [Motive](/Motive/overview), and [Killer](/Killer/overview). All such ideas should be approached with caution and a demand for verifiable evidence.
 
 ## Device and unconventional‑weapon theories (claims)
 

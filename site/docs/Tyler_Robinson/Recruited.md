@@ -65,7 +65,7 @@ marginTop:'0.5rem'}}>
 
 * [Proof Intel Services](/Proof_Intel_Services/overview)
 * [FBI](/FBI/overview)
-* [CIA](/CIA/overview)
+* [CIA](/US_Intelligence/cia)
 
 </div>
 <div>

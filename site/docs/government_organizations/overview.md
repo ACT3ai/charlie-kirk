@@ -17,7 +17,7 @@ This page provides a map of the **major government organizations** that appear i
 Several U.S. federal agencies are mentioned in reporting and commentary, including:
 
 - **FBI** – Referenced as a lead investigative body for the criminal case, with responsibilities for evidence collection, coordination with local law enforcement, and public briefings. See: [FBI](/FBI/overview).
-- **CIA and other intelligence entities** – Discussed in the context of national‑security implications, foreign‑involvement theories, and oversight questions. See: [CIA](/CIA/overview) and [Intelligence](/intelligence/overview).
+- **CIA and other intelligence entities** – Discussed in the context of national‑security implications, foreign‑involvement theories, and oversight questions. See: [CIA](/US_Intelligence/cia) and [Intelligence](/intelligence/overview).
 - **Department of Justice (DOJ)** – Sometimes referenced as the overarching department responsible for federal prosecutions and certain policy decisions.
 
 These agencies appear in both official statements and speculative theories; their actual roles should be assessed using primary documents and formal communications wherever possible.
@@ -57,7 +57,7 @@ marginTop:'0.5rem'}}>
 <div>
 
 * [FBI](/FBI/overview)
-* [CIA](/CIA/overview)
+* [CIA](/US_Intelligence/cia)
 * [Israel](/Israel/overview)
 
 </div>

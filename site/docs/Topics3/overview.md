@@ -18,7 +18,7 @@ Welcome to the Topics3 section of the Charlie Kirk investigation. This directory
 - [Before](/Topics3/Before/overview) - Pre-incident analysis
 
 ### Organizations & Groups
-- [CIA](/Topics3/CIA/overview) - Central Intelligence Agency analysis
+- [CIA](/Topics3/US_Intelligence/cia) - Central Intelligence Agency analysis
 - [FBI](/Topics3/FBI/overview) - Federal Bureau of Investigation analysis
 - [TPUSA](/Topics3/TPUSA/overview) - Turning Point USA analysis
 

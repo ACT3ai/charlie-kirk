@@ -46,7 +46,7 @@ Readers should therefore treat intelligence‑related content as an important **
 marginTop:'0.5rem'}}>
 <div>
 
-* [CIA](/CIA/overview)
+* [CIA](/US_Intelligence/cia)
 * [FBI](/FBI/overview)
 * [Motive](/Motive/overview)
 

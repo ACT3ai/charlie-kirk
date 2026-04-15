@@ -33,7 +33,7 @@ Because of these limitations, search data should be viewed as **contextual clues
 
 - [Motive](/Motive/overview) and [Israel](/Israel/overview) – for discussions where search patterns are invoked as part of broader motive or geopolitical theories.
 - [Medical](/Medical/overview) and [Autopsy](/Charlie/Autopsy/overview) – for references to search activity around medical actors and facilities.
-- [FBI](/FBI/overview), [CIA](/CIA/overview), and [Legal Investigation](/legal_investigation/overview) – for institutional context when search data is cited in relation to government figures or agencies.
+- [FBI](/FBI/overview), [CIA](/US_Intelligence/cia), and [Legal Investigation](/legal_investigation/overview) – for institutional context when search data is cited in relation to government figures or agencies.
 
 As more formal analyses or corroborating records become available, readers will be better able to judge which search‑pattern claims are best supported by evidence.
 
