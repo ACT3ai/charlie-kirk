@@ -377,10 +377,15 @@ SKIP IF: Post has no image attachments.
 
 
 ============================
-X POST STEP 3: DETERMINE SITE SECTION
+X POST STEP 3: ANALYZE POST IN CK INVESTIGATION CONTEXT AND DETERMINE PLACEMENT
 ============================
 
 * ANALYSIS POOL = post text + OCR text (if any) + text block (if provided)
+
+* IMPORTANT: Read the analysis pool carefully in the context of the Charlie Kirk
+  investigation. Understand what specific aspect of the investigation this post
+  relates to — a specific incident, person, evidence category, timeline event,
+  or theory. This understanding drives every placement decision below.
 
 * If SITE_SECTION was provided in the input, use it directly. Resolve to a
   directory under {SITE_DOCS_DIR}.
@@ -410,6 +415,33 @@ X POST STEP 3: DETERMINE SITE SECTION
   Media/        — Media analysis and response
 
 * Store as TARGET_SECTION_DIR.
+
+* LEVEL 2 / LEVEL 3 PAGE DETERMINATION (mandatory for X Post Mode):
+
+  3a. Identify the Level 2 parent page:
+    * The Level 2 page is the overview.md (or equivalent parent nav page)
+      inside {SITE_DOCS_DIR}/{TARGET_SECTION_DIR}/.
+    * Read that Level 2 page. Confirm it exists.
+    * NEVER auto-create a new Level 2 page. If no existing Level 2 page is
+      a reasonable fit, ASK the user:
+        "No existing Level 2 page fits this content well. The closest is
+         {TopicDir}/overview.md. Should I use that, or do you want a new
+         Level 2 page created? (new Level 2 pages are rare)"
+      Wait for the user's response before proceeding.
+
+  3b. Identify or plan the Level 3 page:
+    * List all existing .md and .mdx files in {SITE_DOCS_DIR}/{TARGET_SECTION_DIR}/.
+    * Determine if an existing Level 3 page covers this specific sub-topic.
+      - If YES: plan to add the new content to that existing Level 3 page.
+      - If NO: plan to create a new Level 3 page. Choose a succinct, descriptive
+        filename that captures the distinct sub-topic. Use lowercase-with-hyphens.
+        Examples: uvu-public-contacts.md, fbi-evidence-request-denied.md,
+        drone-sighting-sept-9.md
+    * Store the decision as TARGET_L3_PAGE (existing path or new filename).
+
+  3c. For roughly 95% of X posts, the right placement is: find the best Level 2
+    parent, then create or update a Level 3 page under it. Only in rare cases
+    does content belong directly on a Level 2 page.
 
 * Also determine the best matching section in {CK_FILE} for the add-text step.
   Store as CK_SECTION_NAME.
@@ -679,17 +711,32 @@ SKIP IF: Step 7 was skipped or transcription failed.
 
 
 ============================
-X POST STEP 9: CREATE/UPDATE SITE PAGES WITH EMBEDDED MEDIA
+X POST STEP 9: CREATE/UPDATE LEVEL 3 SITE PAGE WITH EMBEDDED MEDIA
 ============================
 
 SKIP IF: No TARGET_SECTION_DIR was determined in Step 3.
 
-* Determine which page in {SITE_DOCS_DIR}/{TARGET_SECTION_DIR}/ should receive
-  this content. Either:
-  - An existing page that covers this specific topic
-  - A new page if the content warrants one
+This step uses the Level 2 / Level 3 decisions made in Step 3.
 
-* If creating a new page or updating an existing page that needs embedded media
+* 9a. RESOLVE THE TARGET LEVEL 3 PAGE
+
+  Use TARGET_L3_PAGE from Step 3:
+
+  **Case A — Existing Level 3 page:** Read it. Plan to append the new content
+  at an appropriate location (usually at the end, before Related Areas if present).
+
+  **Case B — New Level 3 page:** Create it. Choose a succinct, descriptive
+  filename that captures the distinct sub-topic of this post. Use
+  lowercase-with-hyphens. The filename should make the topic immediately clear.
+  Good examples:
+    * uvu-public-contacts.md
+    * fbi-evidence-request-denied.md
+    * drone-sighting-sept-9.md
+    * erika-kirk-ceo-announcement.md
+
+* 9b. MDX CONVERSION (if media is involved)
+
+  If creating a new page or updating an existing page that needs embedded media
   (video or images), use .mdx format:
 
   - If the target file is .md, convert it to .mdx:
@@ -700,29 +747,39 @@ SKIP IF: No TARGET_SECTION_DIR was determined in Step 3.
 
   - If creating a new page, create it as .mdx from the start
 
-* VIDEO EMBEDDING — use half-width, floated right, with text flowing around it:
-  ```
-  <div style={{float: 'right', width: '48%', maxWidth: '480px', marginLeft: '1.5rem', marginBottom: '1rem'}}>
-    <video controls style={{width: '100%', height: 'auto', display: 'block', borderRadius: '4px'}}>
-      <source src="http://127.0.0.1:8080/ipfs/{CID}" type="video/mp4" />
-      <source src="https://ipfs.io/ipfs/{CID}" type="video/mp4" />
-      <source src="https://dweb.link/ipfs/{CID}" type="video/mp4" />
-      Your browser does not support the video tag.
-    </video>
-    <p style={{fontSize: '0.85rem', color: '#666', marginTop: '0.5rem'}}>
-      <em>{Description}. Source: <a href="{original_url}">@{username} on X</a>, {date}.</em>
-    </p>
-  </div>
-  ```
-  NEVER use cloudflare-ipfs.com — that gateway was shut down in 2024.
-  NEVER use `width="100%"` as an HTML attribute — use style={{width: '100%'}} only.
+* 9c. PAGE CONTENT — NEAR-VERBATIM FROM THE POST
 
-  After the last floated media item, add a clearfix:
-  ```
-  <div style={{clear: 'both'}} />
-  ```
+  IMPORTANT: When the X post or blog post contains substantive text, copy
+  it nearly word for word onto the Level 3 page. Do not summarize,
+  paraphrase, or condense. The goal is to preserve the full informational
+  value of the original post on this page. Only light formatting adjustments
+  are allowed (fixing line breaks, adding attribution, etc.).
 
-* IMAGE EMBEDDING — use half-width, floated right, text flows around it:
+  Page structure for a NEW Level 3 page:
+    - Back button at the very top linking to the parent Level 2 page
+    - Page title (H1) — descriptive of the specific sub-topic
+    - Source attribution block: author, date, link to original post
+    - Full post text (nearly verbatim, attributed: "According to @{username}...")
+    - OCR text if extracted (attributed, nearly verbatim)
+    - Transcription content if available (key quotes and full relevant passages)
+    - Embedded images and/or video (see media embedding rules below)
+    - Follow all defamation rules for living persons
+    - Related Areas section at the bottom
+
+  Page structure when APPENDING to an existing Level 3 page:
+    - Add a ## sub-heading for the new content (e.g., "## @{username} Report, {date}")
+    - Source attribution block
+    - Full post text (nearly verbatim)
+    - Embedded images/video
+    - Keep all existing content intact
+
+* 9d. IMAGE HANDLING
+
+  Images from the post MUST be saved to {ROOT_DIR}/images/ (done in Step 6B)
+  and embedded on the Level 3 page. Do not skip images — they often contain
+  critical evidence (screenshots, documents, photos).
+
+  IMAGE EMBEDDING — use half-width, floated right, text flows around it:
   Single image:
   ```
   <div style={{float: 'right', width: '48%', maxWidth: '480px', marginLeft: '1.5rem', marginBottom: '1rem'}}>
@@ -762,18 +819,43 @@ SKIP IF: No TARGET_SECTION_DIR was determined in Step 3.
   Include fallback gateways as additional <source> tags for video,
   or as a comment noting the fallback URL for images.
 
+* 9e. VIDEO EMBEDDING — use half-width, floated right, with text flowing around it:
+  ```
+  <div style={{float: 'right', width: '48%', maxWidth: '480px', marginLeft: '1.5rem', marginBottom: '1rem'}}>
+    <video controls style={{width: '100%', height: 'auto', display: 'block', borderRadius: '4px'}}>
+      <source src="http://127.0.0.1:8080/ipfs/{CID}" type="video/mp4" />
+      <source src="https://ipfs.io/ipfs/{CID}" type="video/mp4" />
+      <source src="https://dweb.link/ipfs/{CID}" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+    <p style={{fontSize: '0.85rem', color: '#666', marginTop: '0.5rem'}}>
+      <em>{Description}. Source: <a href="{original_url}">@{username} on X</a>, {date}.</em>
+    </p>
+  </div>
+  ```
+  NEVER use cloudflare-ipfs.com — that gateway was shut down in 2024.
+  NEVER use `width="100%"` as an HTML attribute — use style={{width: '100%'}} only.
+
   Always add clearfix div after the last floated element on the page:
   ```
   <div style={{clear: 'both'}} />
   ```
 
-* PAGE CONTENT — alongside the embedded media, add:
-  - Post author and date
-  - Full post text (attributed: "According to @{username}...")
-  - OCR text if extracted (attributed)
-  - Transcription excerpts (key quotes, attributed)
-  - Link to the source X post
-  - Follow all defamation rules for living persons
+* 9f. UPDATE THE LEVEL 2 PAGE TOC — MANDATORY FOR NEW LEVEL 3 PAGES
+
+  If a new Level 3 page was created, immediately update the parent Level 2
+  page's TOC to include a link to the new page:
+
+  * Read the Level 2 page (overview.md or equivalent).
+  * Add a bullet entry for the new Level 3 page in the three-column TOC.
+  * Re-balance columns so heights are equal or off by at most one row.
+  * If the Level 2 page has no TOC yet, create one from scratch including
+    all existing Level 3 pages in that directory plus the new one.
+  * Verify: every .md and .mdx file in the directory (except the Level 2 page)
+    must be linked from the TOC. If any are missing, add them now.
+
+  This step is NOT optional. A Level 3 page without a link from its parent
+  Level 2 page is an orphan and will never be found by readers.
 
 * If the content mentions people who have Details/ profiles, cross-link to them.
 

@@ -6,44 +6,47 @@ borderRadius:'4px', textDecoration:'none', fontSize:'0.9rem'}}>
 
 # UVU
 
-## Overview
+Utah Valley University was the host site of the Charlie Kirk event on September 10, 2025 and plays a central role in understanding both the physical setting and institutional failures surrounding the assassination.
 
-This page provides context about **Utah Valley University (UVU)** as the host site of the event where Charlie Kirk was shot. It summarizes key aspects of the campus environment, security roles, and institutional responses without assigning blame. UVU appears in the investigation both as a physical location (buildings, layouts, access points) and as an institution involved in security, facilities, and post‑incident reviews.
+<div style={{display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: '1rem'}}>
+<div>
 
-## Campus environment and event setting
+* [Pre-Shooting Warnings](./pre-shooting-warnings.mdx) — Two men contacted UVU the night before about "a plan"; a separate message to Kirk was never delivered
+* [UVU Courtyard](./Courtyward) — The courtyard and tent area where the shooting occurred, including post-shooting landscaping
 
-Relevant parts of the UVU campus include:
+</div>
+<div>
 
-- The **courtyard and tent area** where the event took place, described further in [UVU Courtyard](/UVU/Courtyward.md) and [Tent](/Tent/overview.md) pages.
-- Surrounding **buildings, rooftops, stairwells, and tunnels** that provide vantage points and movement routes for attendees, staff, and security.
-- Nearby **parking and access roads**, which play roles in movement timelines for attendees, emergency responders, and vehicles of interest.
+* [UVU Maps](./maps) — Campus maps and layout of the event area
 
-Understanding UVU’s layout is essential for evaluating shooter‑location theories, movement claims, and security decisions.
+</div>
+<div>
 
-## Security and institutional roles (as reported)
+</div>
+</div>
 
-According to public reporting and commentary:
+UVU appears in the investigation both as a physical location — buildings, rooftops, stairwells, access points, and the courtyard where the event took place — and as an institution with security responsibilities, police coordination duties, and emergency response obligations. The GRAMA records obtained by the Daily Caller News Foundation reveal that at least two separate parties tried to raise concerns the day before the shooting, and both were either dismissed or buried.
 
-- UVU provided **campus police and liaison support** for the event, supplementing private security arranged by the organizers.
-- Campus security responsibilities focused on **perimeter control, crowd management, and facility oversight**, while close‑protection and production were primarily handled by non‑university entities.
-- After the incident, UVU reportedly initiated an **independent review of the campus shooting**, examining its own procedures and response.
+The security failures documented in UVU's own records are significant. Six campus police officers covered a crowd of 3,000 people. The joint Public Order Unit that UVU funds with Orem PD was never activated. No ambulance was on site. No outside law enforcement was coordinated. Faculty had never been trained on active shooter protocols. The emergency alerts sent after the shooting contained placeholder text and false information about suspect custody.
 
-These roles are discussed in more detail in [Security & Law Enforcement](/security_law_enforcement/overview.md) and [TPUSA](/TPUSA/overview.md) sections.
+After the assassination, UVU's courtyard was rapidly paved over by a dormant company revived just months earlier, owned by a Utah AG special agent and a former UVU operations staffer. UVU has acknowledged that additional documents exist beyond what was released through the GRAMA request and has refused to release them. These institutional decisions — before, during, and after the shooting — form a critical thread in understanding what happened on September 10.
 
-## UVU in timelines and investigative threads
+## Related Areas
 
-UVU appears throughout the investigation in several ways:
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
 
-- As the central location in the **day‑of timeline**, including arrivals, event start, the moment of the shooting, and emergency response.
-- As the backdrop for **camera and footage discussions**, including campus surveillance and any on‑site recording systems.
-- As the site of subsequent **crime‑scene handling and construction work**, which some commentators argue may have affected evidence preservation.
+* [Timeline of September 8-13](/Timeline/Sept_8_to_13)
+* [FBI Cover-Up Evidence](/FBI/overview)
+* [Security Failures at Event](/security_law_enforcement/overview)
 
-For detailed chronological context, see [Timeline](/Timeline/overview.md) and [Timeline Events](/timeline_events/overview.md). For site‑specific analyses, see [Maps](maps/overview.md), [Shooting Locations](/Shooting_Locations/overview.md), and [Planes](/Planes/overview.md).
+</div>
+<div>
 
-## How this section connects to other topics
+* [Tent and Event Area](/Tent/overview)
+* [Shooting Locations Analysis](/Shooting_Locations/overview)
+* [Cover-Up Evidence](/CoverUp/overview)
 
-The UVU section is meant to orient readers to the **institutional and physical setting** of the event. For deeper dives:
-
-- See [UVU Courtyard](/UVU/Courtyward.md) and [Tent](/Tent/overview.md) for detailed discussion of the immediate event area.
-- See [Security & Law Enforcement](/security_law_enforcement/overview.md) and [FBI](/FBI/overview.md) for law‑enforcement coordination and investigative posture.
-- See [Medical](/Medical/overview.md), [After](/After/overview.md), and [Cover-up](CoverUp/overview.md) for questions about response, site changes, and transparency.
+</div>
+</div>

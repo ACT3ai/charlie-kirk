@@ -51,7 +51,15 @@ const sidebars: SidebarsConfig = {
     'TPUSA/overview',                         //  69  (B2R6 Left + interest 16)
     'Censorship/overview',                    //  67  (B1R6 Center + interest 16)
     'FBI/overview',                           //  64  (B1R7 Center + interest 20)
-    'UVU/overview',                           //  64  (B1R5 Right + interest 14)
+    {                                         //  64  (B1R5 Right + interest 14)
+      type: 'category',
+      label: 'UVU',
+      collapsed: false,
+      items: [
+        'UVU/overview',
+        'UVU/pre-shooting-warnings',
+      ],
+    },
     'Locations/overview',                     //  62  (B1R5 Right + interest 12)
     'Planes/overview',                        //  61  (B2R5 Right + interest 17)
     'Drones/overview',                        //  59  (B2R6 Center + interest 15)
