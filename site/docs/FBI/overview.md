@@ -12,6 +12,20 @@ borderRadius:'4px', textDecoration:'none', fontSize:'0.9rem'}}>
 ## Overview
 This directory contains information about FBI involvement and investigation of the Charlie Kirk incident.
 
+## In This Section
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [FBI Connecticut](./Connecticut)
+
+</div>
+<div>
+
+</div>
+</div>
+
 ## Key Areas
 - FBI investigation
 - Agency involvement
@@ -69,19 +83,19 @@ Finally, the posture toward witnesses and local coordination remains central. Cl
 
 ### Internal Cross-References (Level_3 in this directory)
 
-- FBI Connecticut: see [FBI Connecticut](./Connecticut.md) for regional and inter-office coordination notes.
+- FBI Connecticut: see [FBI Connecticut](./Connecticut) for regional and inter-office coordination notes.
 
 ### Peer Level_2 Topics to Consult
 
-- Aviation and flight analysis: see [Planes/N1098L](../Planes/N1098L/overview.md) and [Plane/N1098L](../Plane/N1098L/overview.md) for aircraft specifics, telemetry leads, and recommended forensic steps.
-- Intelligence community context: see [CIA](../CIA/overview.md) for parallel IC-related assertions and context.
-- Legal process and investigative posture: see [legal_investigation](../legal_investigation/overview.md) for subpoenas, warrants, and public charging decisions to date.
-- Security and law enforcement at venue: see [security_law_enforcement](../security_law_enforcement/overview.md) for coordination, staffing, and vendor relationships.
-- Medical and forensic outcomes: see [Medical](../Medical/overview.md) for ME notes, ballistic/trauma analysis, and hospital timeline alignment.
-- Timeline alignment: see [Timeline](../Timeline/overview.md) and [timeline_events](../timeline_events/overview.md) to reconcile statements with high-fidelity time markers.
-- Media and release patterns: see [media_response](../media_response/overview.md) and [Media/Censorship](../Media/Censorship.md) for public communications and alleged suppression patterns.
-- People and key individuals: see [People](../People/overview.md) and [key_individuals](../key_individuals/overview.md) for bios and roles.
-- Organizations: see [organizations_groups](../organizations_groups/overview.md) and [TPUSA](../TPUSA/overview.md) for institutional linkages and sponsorships.
+- Aviation and flight analysis: see [Planes/N1098L](../Planes/N1098L/overview) and [Plane/N1098L](../Plane/N1098L/overview) for aircraft specifics, telemetry leads, and recommended forensic steps.
+- Intelligence community context: see [CIA](../CIA/overview) for parallel IC-related assertions and context.
+- Legal process and investigative posture: see [legal_investigation](../legal_investigation/overview) for subpoenas, warrants, and public charging decisions to date.
+- Security and law enforcement at venue: see [security_law_enforcement](../security_law_enforcement/overview) for coordination, staffing, and vendor relationships.
+- Medical and forensic outcomes: see [Medical](../Medical/overview) for ME notes, ballistic/trauma analysis, and hospital timeline alignment.
+- Timeline alignment: see [Timeline](../Timeline/overview) and [timeline_events](../timeline_events/overview) to reconcile statements with high-fidelity time markers.
+- Media and release patterns: see [media_response](../media_response/overview) and [Media/Censorship](../Media/Censorship) for public communications and alleged suppression patterns.
+- People and key individuals: see [People](../People/overview) and [key_individuals](../key_individuals/overview) for bios and roles.
+- Organizations: see [organizations_groups](../organizations_groups/overview) and [TPUSA](../TPUSA/overview) for institutional linkages and sponsorships.
 
 ### Notes on Scope and Rigor
 
@@ -89,3 +103,23 @@ Finally, the posture toward witnesses and local coordination remains central. Cl
 - When conflicting accounts exist, list them side-by-side with timestamps, authorship, and the specific claim language used. Do not merge them into a single “blended” account without noting the variance.
 - Prioritize falsifiability: for each strong claim, specify what evidence would disprove it. This improves investigative efficiency and reduces bias.
 - Maintain a clear separation between hypothesis, inference, and verified fact. Color-coding or badges may help in the future; for now, label sections explicitly as “Claim,” “Evidence,” “Open Question,” or “Disposition.”
+
+## Related Areas
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Cover-Up](/CoverUp/overview)
+* [Legal Investigation](/legal_investigation/overview)
+* [Tyler Robinson Trial](/Tyler_Robinson/Trial/overview)
+
+</div>
+<div>
+
+* [Charlie Kirk Autopsy](/Charlie/Autopsy/overview)
+* [After Events](/After/overview)
+* [Proof Intel Services](/Proof_Intel_Services/overview)
+
+</div>
+</div>

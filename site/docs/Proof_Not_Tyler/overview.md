@@ -28,7 +28,7 @@ Concerns about the official narrative also intersect with witness accounts and e
 - **Timeline discrepancies** – Analysis of when shots were fired, when Tyler was apprehended, and when Charlie was struck, with some arguing that the official timeline contains unexplained gaps.
 - **Security camera footage** – Calls for complete, unedited releases from all available cameras to verify positions and movements of all individuals at the time of the shooting.
 
-These observations are examined in more depth on related pages such as [Timeline](/Timeline/overview.md), [Witnesses](/People/Witnesses_Security_And_CitizenInvestigators), and [Before](/Before/overview.md).
+These observations are examined in more depth on related pages such as [Timeline](/Timeline/overview), [Witnesses](/People/Witnesses_Security_And_CitizenInvestigators), and [Before](/Before/overview).
 
 ## Alternative theories and suspects (claims)
 
@@ -38,7 +38,7 @@ Some researchers have proposed alternative explanations for who may have been in
 - **Professional involvement** – Speculation about whether the shooting shows characteristics of professional execution rather than an individual acting alone.
 - **Tyler as patsy** – The hypothesis that Tyler may have been framed, coerced, or positioned to take blame for actions carried out by others.
 
-These theories remain contested and require substantial evidence to validate. They are discussed further in sections on [Intelligence](/intelligence/overview.md), [Security & Law Enforcement](/security_law_enforcement/overview.md), and [Conspiracy Theories](/conspiracy_theories/overview.md).
+These theories remain contested and require substantial evidence to validate. They are discussed further in sections on [Intelligence](/intelligence/overview), [Security & Law Enforcement](/security_law_enforcement/overview), and [Conspiracy Theories](/conspiracy_theories/overview).
 
 ## Institutional responses and questions (claims)
 
@@ -48,12 +48,32 @@ Critics point to certain institutional actions that they argue compound doubts a
 - **Limited access to evidence** – Restrictions on releasing key forensic reports, photographs, and investigative files make independent verification difficult.
 - **Suppression of alternative inquiry** – Allegations that efforts to investigate other possibilities have been discouraged, dismissed, or actively obstructed.
 
-These concerns overlap with topics covered in [CoverUp](/CoverUp/overview.md), [Media](/Media/overview.md), and [Legal Investigation](/legal_investigation/overview.md).
+These concerns overlap with topics covered in [CoverUp](/CoverUp/overview), [Media](/Media/overview), and [Legal Investigation](/legal_investigation/overview).
 
 ## How to use this section
 
-This [Proof Not Tyler](/Proof_Not_Tyler/overview.md) page should be read as a **compilation of challenges to the official narrative** rather than as definitive proof:
+This [Proof Not Tyler](/Proof_Not_Tyler/overview) page should be read as a **compilation of challenges to the official narrative** rather than as definitive proof:
 
 - Use it to understand why some observers question whether Tyler acted alone or at all.
 - Follow links to related sections for more detailed discussion of forensic evidence, witness accounts, and alternative theories.
 - Remember that serious criminal accusations require strong, verifiable evidence presented in proper legal forums; until such evidence is available, all alternative theories should remain framed as **hypotheses requiring further investigation**.
+
+## Related Areas
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Gun & Bullet](/Gun_Bullet/overview)
+* [Medical](/Medical/overview)
+* [Shooting Locations](/Shooting_Locations/overview)
+
+</div>
+<div>
+
+* [Cover-Up Evidence](/CoverUp/overview)
+* [Proof Intel Services](/Proof_Intel_Services/overview)
+* [Timeline](/Timeline/overview)
+
+</div>
+</div>

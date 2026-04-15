@@ -1,0 +1,56 @@
+---
+sidebar_label: "Charlie Kirk Autopsy"
+---
+<a href="../overview" style={{display:'inline-block', marginBottom:'1rem',
+padding:'0.35rem 0.9rem', background:'#1a73e8', color:'#fff',
+borderRadius:'4px', textDecoration:'none', fontSize:'0.9rem'}}>
+← Charlie Kirk
+</a>
+
+# Charlie Kirk Autopsy
+
+The autopsy and medical-examiner process following Charlie Kirk's death on September 10, 2025 remains one of the most contested aspects of the investigation. Questions about whether a full autopsy was performed, which hospital received him, and why key records remain sealed drive much of the public debate about what actually happened at Utah Valley University.
+
+<div style={{display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem'}}>
+<div>
+
+* [No Autopsy Performed (Claims)](./no-autopsy-claims)
+* [Death Certificate Questions](./death-certificate)
+* [Utah Autopsy Law (SB0082)](./autopsy-law-sb0082)
+* [Wound Analysis & Competing Theories](./wound-analysis-theories)
+
+</div>
+<div>
+
+* [Medical Examiner & Surgeons](./medical-examiner-surgeons)
+* [Hospital Choice & Transport](./hospital-choice-transport)
+* [Hospital Scene & EMS Response](./hospital-scene-ems)
+
+</div>
+</div>
+
+The autopsy question sits at the center of nearly every forensic dispute in this case. Without a publicly released autopsy report, competing theories about bullet trajectory, caliber, entry versus exit wound classification, and even whether a firearm was the sole mechanism of injury cannot be resolved through medical evidence. Citizen investigators, media commentators, and defense attorneys have all pointed to the absence of transparent autopsy data as a critical gap that allows speculation to flourish unchecked.
+
+Utah's legal framework compounds the opacity. SB0082, which took effect in May 2025, criminalizes sharing autopsy photographs and restricts access to medical-examiner records. Standard state practice withholds reports during active criminal cases, and death certificates remain restricted for 50 years. These legal constraints mean that even in a case with potential national-security implications, the public and independent experts are largely shut out from reviewing the medical record that would anchor the forensic debate.
+
+The hospital and emergency-response dimensions add further questions. Reports conflict about which hospital received Charlie, whether standard trauma protocol was followed, and what happened inside the emergency room. Claims about signed NDAs, a simultaneous bomb scare, FBI seizure of hospital footage, and EMS personnel blocked from providing aid have all been raised by investigators. Each of these threads is examined in the sub-pages below, with sources attributed and claims clearly labeled.
+
+## Related Areas
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Medical Analysis Overview](/Medical/overview)
+* [Gun & Bullet Analysis](/Gun_Bullet/overview)
+* [Cover-Up Evidence](/CoverUp/overview)
+
+</div>
+<div>
+
+* [FBI Investigation](/FBI/overview)
+* [Israeli Search Patterns (Claims)](/Israel/Israeli_Search_Patterns_Claims)
+* [Tent & Close-Range Theories](/Tent/overview)
+
+</div>
+</div>

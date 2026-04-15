@@ -10,7 +10,7 @@ borderRadius:'4px', textDecoration:'none', fontSize:'0.9rem'}}>
 
 This Level_3 page summarizes **alleged cover‑up actions and anomalies** that citizen investigators believe may obscure who really killed Charlie Kirk. These include rapid physical changes to the crime scene, contested handling of video evidence, and unusual legal or institutional steps. All points are drawn from public posts, videos, articles, and court‑document commentary and should be read as **claims and concerns**, not as proven misconduct.
 
-For a broader treatment of information control and institutions, see [Cover‑Up](/CoverUp/overview.md), [Media Censorship](/Media/Censorship.md), and [Legal Investigation](/legal_investigation/overview.md).
+For a broader treatment of information control and institutions, see [Cover‑Up](/CoverUp/overview), [Media Censorship](/Media/Censorship), and [Legal Investigation](/legal_investigation/overview).
 
 ## Rapid paving and construction at the tent site (claims)
 
@@ -56,7 +56,7 @@ Finally, some cover‑up allegations focus on the **legal environment** around t
 - **Autopsy‑photo law and medical‑record secrecy:**  
   Commentators connect Utah’s **SB0082 Autopsy Photo Amendments** (effective May 7, 2025) with the lack of publicly released autopsy materials in this case, arguing that the law’s timing and strictness make it easier to **keep key forensic details out of public scrutiny**.  
 - **Trial access and jailhouse‑snitch dynamics:**  
-  As noted on the [Patsies and Distraction Actors](Patsies_Distraction_Actors.md) page, the use of a jailhouse witness like **Jaxson Thomas Fox** and the closing of related hearings are cited as additional reasons to suspect **managed narratives** rather than fully open adjudication.
+  As noted on the [Patsies and Distraction Actors](./Patsies_Distraction_Actors) page, the use of a jailhouse witness like **Jaxson Thomas Fox** and the closing of related hearings are cited as additional reasons to suspect **managed narratives** rather than fully open adjudication.
 
 While some level of secrecy is normal in high‑profile active prosecutions, skeptics argue that the **combination** of broad gag orders, closed proceedings, and tightly controlled medical and video evidence **raises reasonable questions** about whether the full truth about the killer is being inappropriately shielded.
 
@@ -68,6 +68,24 @@ Within the “real killer” framework, alleged cover‑up indicators do not by 
 - **Institutional actions**—by law enforcement, courts, and organizations connected to the event—may be unintentionally or deliberately **protecting certain narratives** at the expense of others.  
 - On this view, any serious effort to determine who really killed Charlie would prioritize **full access to raw footage, forensic records, and transparent legal proceedings**, subject to lawful privacy and due‑process protections.
 
-Readers should keep these points in mind when weighing competing theories in [Killer](/Killer/overview.md), [Shooting Locations](/Shooting_Locations/overview.md), [Charlie](/Charlie/overview.md), and [Motive](/Motive/overview.md), always distinguishing between **documented facts**, **procedural choices**, and **interpretive leaps**.
+Readers should keep these points in mind when weighing competing theories in [Killer](/Killer/overview), [Shooting Locations](/Shooting_Locations/overview), [Charlie](/Charlie/overview), and [Motive](/Motive/overview), always distinguishing between **documented facts**, **procedural choices**, and **interpretive leaps**.
 
+## Related Areas
 
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Cover-Up](/CoverUp/overview)
+* [FBI](/FBI/overview)
+* [Censorship](/Censorship/overview)
+
+</div>
+<div>
+
+* [Timeline](/Timeline/overview)
+* [Proof Intel Services](/Proof_Intel_Services/overview)
+* [People](/People/overview)
+
+</div>
+</div>

@@ -16,7 +16,7 @@ This Level_3 page expands on **political, donor, and meeting‑related context i
 
 All items here are presented as **claims or reported context**, not as proof that any meeting or disagreement caused or justified violence.
 
-For broader background, see [Charlie](/Charlie/overview.md), [Motive](/Motive/overview.md), [Israel](/Israel/overview.md), and [Timeline 2025](/Timeline/Year_2025.md).
+For broader background, see [Charlie](/Charlie/overview), [Motive](/Motive/overview), [Israel](/Israel/overview), and [Timeline 2025](/Timeline/Year_2025).
 
 ## Donor and policy friction (claims)
 
@@ -73,7 +73,7 @@ These claims, if eventually corroborated by primary evidence, would indicate tha
 
 ## How these 2025 “before” factors fit into the investigation
 
-Within the [Before](/Before/overview.md), [Motive](/Motive/overview.md), and [Israel](/Israel/overview.md) sections:
+Within the [Before](/Before/overview), [Motive](/Motive/overview), and [Israel](/Israel/overview) sections:
 
 - These events and statements are used to illustrate **why some people think high‑stakes political and donor conflicts surrounded Charlie** in 2025.  
 - They also show how **private and public narratives about Israel and donor pressure** were converging in the weeks before the UVU event.  
@@ -81,4 +81,21 @@ Within the [Before](/Before/overview.md), [Motive](/Motive/overview.md), and [Is
 
 Readers should therefore use this page as a **narrative map of alleged 2025 pressure and meetings**, cross‑checking with primary videos, interviews, and articles wherever possible.
 
+## Related Areas
 
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem', marginTop:'0.5rem'}}>
+<div>
+
+* [Timeline Overview](/Timeline/overview)
+* [Israel Overview](/Israel/overview)
+* [Motive Overview](/Motive/overview)
+
+</div>
+<div>
+
+* [FBI Investigation](/FBI/overview)
+* [Charlie Kirk Autopsy](/Charlie/Autopsy/overview)
+* [Cover-Up Evidence](/CoverUp/overview)
+
+</div>
+</div>

@@ -41,14 +41,34 @@ The area around the tent became a focus of possible cover‑up concerns due to r
 - Some accounts state that **tunnel ceilings or surrounding surfaces were re‑mudded or altered**, potentially affecting any physical traces (such as bullet impacts or residue).
 - There is ongoing debate about whether this work was **pre‑scheduled beautification** or a rapid response directly prompted by the incident.
 
-These points are central to cover‑up discussions in sections like [Cover-up](CoverUp/overview.md), [After](/After/overview.md), and [Maps](maps/overview.md), but official documentation of scheduling and contracts would be needed to resolve them definitively.
+These points are central to cover‑up discussions in sections like [Cover-up](CoverUp/overview), [After](/After/overview), and [Maps](maps/overview), but official documentation of scheduling and contracts would be needed to resolve them definitively.
 
 ## Relationship to other investigative topics
 
 The tent sits at the center of several key questions:
 
-- Shooter location and trajectory analyses (see [Shooting Locations](/Shooting_Locations/overview.md), [Killer](/Killer/overview.md), and [Timeline](/Timeline/overview.md)).
-- Security and camera placement decisions (see [Security & Law Enforcement](/security_law_enforcement/overview.md), [TPUSA](/TPUSA/overview.md), and [Videos](/Videos/overview.md)).
-- Site alteration and evidence‑preservation concerns (see [Cover-up](CoverUp/overview.md), [After](/After/overview.md), and [Maps](maps/overview.md)).
+- Shooter location and trajectory analyses (see [Shooting Locations](/Shooting_Locations/overview), [Killer](/Killer/overview), and [Timeline](/Timeline/overview)).
+- Security and camera placement decisions (see [Security & Law Enforcement](/security_law_enforcement/overview), [TPUSA](/TPUSA/overview), and [Videos](/Videos/overview)).
+- Site alteration and evidence‑preservation concerns (see [Cover-up](CoverUp/overview), [After](/After/overview), and [Maps](maps/overview)).
 
 Readers should use this page as a structural and contextual reference when evaluating more detailed technical work in those topic areas.
+
+## Related Areas
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Shooting Locations](/Shooting_Locations/overview)
+* [UVU](/UVU/overview)
+* [Gun & Bullet](/Gun_Bullet/overview)
+
+</div>
+<div>
+
+* [Cover-Up Evidence](/CoverUp/overview)
+* [Videos](/Videos/overview)
+* [Proof Not Tyler](/Proof_Not_Tyler/overview)
+
+</div>
+</div>

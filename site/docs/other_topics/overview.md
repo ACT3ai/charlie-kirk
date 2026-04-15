@@ -24,3 +24,23 @@ This directory contains additional related topics and analysis for the Charlie K
 - [ ] Evidence collection
 - [ ] Analysis
 - [ ] Documentation
+
+## Related Areas
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Timeline](/Timeline/overview)
+* [Charlie Kirk](/Charlie/overview)
+* [FBI](/FBI/overview)
+
+</div>
+<div>
+
+* [Cover-Up](/CoverUp/overview)
+* [People](/People/overview)
+* [Motive](/Motive/overview)
+
+</div>
+</div>

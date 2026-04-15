@@ -24,3 +24,23 @@ This document contains information about YouTube coverage and videos related to 
 - [ ] Evidence collection
 - [ ] Analysis
 - [ ] Documentation
+
+## Related Areas
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Charlie Kirk overview](../Charlie/overview)
+* [Timeline of events](../Timeline/overview)
+* [Israel intelligence connections](../Israel/overview)
+
+</div>
+<div>
+
+* [Motive analysis](../Motive/overview)
+* [Censorship of the investigation](../Censorship/overview)
+* [Proof Tyler is not the shooter](../Proof_Not_Tyler/overview)
+
+</div>
+</div>

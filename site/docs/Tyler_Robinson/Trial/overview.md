@@ -1,10 +1,10 @@
 ---
 sidebar_label: "Tyler Robinson Trial"
 ---
-<a href="/" style={{display:'inline-block', marginBottom:'1rem',
+<a href="/Tyler_Robinson/overview" style={{display:'inline-block', marginBottom:'1rem',
 padding:'0.35rem 0.9rem', background:'#1a73e8', color:'#fff',
 borderRadius:'4px', textDecoration:'none', fontSize:'0.9rem'}}>
-← Home
+← Tyler Robinson
 </a>
 
 # Tyler Robinson Trial
@@ -76,3 +76,23 @@ Because the case is ongoing and some proceedings are restricted, this page can o
 - [Tyler Robinson Timeline — Overview](/Timeline/Tyler_Robinson) — Multi-day summary spanning Sep 9 through Sep 16 with charges and case details.
 - [Mirandizing — Legal Analysis](/Timeline/Tyler_Robinson/Mirandizing) — Verbatim Miranda transcript (Bates 003996-R2); four-step legal reasoning establishing that Robinson was Mirandized on **September 11** at 6:25 PM, not September 12.
 - [Mirandizing — Court Evidence Documents](/court/mirandize/mirandize-overview) — Primary evidence documents, exhibits, and AI analysis related to the Miranda timing question.
+
+## Related Areas
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [FBI](/FBI/overview)
+* [Cover-Up](/CoverUp/overview)
+* [Proof Not Tyler](/Proof_Not_Tyler/overview)
+
+</div>
+<div>
+
+* [Charlie Kirk](/Charlie/overview)
+* [People](/People/overview)
+* [Gun & Bullet](/Gun_Bullet/overview)
+
+</div>
+</div>

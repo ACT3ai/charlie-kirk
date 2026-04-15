@@ -1,0 +1,69 @@
+<a href="./overview" style={{display:'inline-block', marginBottom:'1rem',
+padding:'0.35rem 0.9rem', background:'#1a73e8', color:'#fff',
+borderRadius:'4px', textDecoration:'none', fontSize:'0.9rem'}}>
+← Charlie Kirk Autopsy
+</a>
+
+# No Autopsy Performed (Claims)
+
+A recurring claim across citizen-investigator circles and media commentary is that no full medical-examiner autopsy was performed on Charlie Kirk after his death on September 10, 2025. This page collects those claims, the legal context cited, and the open questions that remain.
+
+## The Core Claim
+
+Multiple sources compiled in this investigation assert that **Utah law (268-8-205) requires an autopsy for deaths involving gun violence**, yet commentators allege that no standard medical-examiner autopsy was conducted. Instead, according to these claims, a **hospital physician signed the death certificate** and the body was removed from the jurisdiction quickly.
+
+Citizen investigator Ian Carroll and others have stated: "No autopsy. Utah law (268-8-205) REQUIRES it for gun violence. But police audio I uncovered confirm: Death cert signed by hospital doc, body whisked away." This claim has been widely circulated and remains central to cover-up theories.
+
+## What Utah Law Appears to Require
+
+Under Utah's death-investigation statutes, the Office of the Medical Examiner has jurisdiction over deaths that occur under violent, suspicious, or unexplained circumstances. A death by gunshot at a public event would typically fall squarely within mandatory medical-examiner jurisdiction. Commentators argue that bypassing this process — if it was bypassed — would represent a significant departure from standard practice.
+
+## Body Disposition Claims
+
+Several related claims address what happened to Charlie's body after death:
+
+- **Rapid removal:** Multiple sources state the body was "whisked away" from the hospital without the standard medical-examiner chain of custody being followed.
+- **Air Force 2 transport:** Questions have been raised about reports that Charlie's body was flown out on Air Force 2, with investigators asking why presidential aircraft would be involved in transporting the remains.
+- **SUV destroyed:** The SUV used to transport Charlie to the hospital was reportedly "chopped into a thousand pieces" and "melted down," according to commentary compiled in the investigation, eliminating potential forensic evidence from the vehicle interior.
+
+## Why This Matters
+
+If no full autopsy was performed, several critical forensic questions cannot be answered through medical evidence:
+
+- **Bullet trajectory and path** through the body
+- **Caliber determination** from wound characteristics and any recovered fragments
+- **Entry versus exit wound** classification
+- **Presence of additional injuries** not visible externally
+- **Toxicology results** that might reveal other factors
+
+The [ATF firearm analysis](/Gun_Bullet/overview) on the bullet reportedly recovered was **inconclusive** — it could not forensically match the bullet to Tyler Robinson's rifle. Defense attorneys have cited this as exculpatory. A complete autopsy record would provide additional data points for independent ballistic analysis.
+
+## Open Questions
+
+1. Was a full medical-examiner autopsy performed, and if so, by whom and when?
+2. What is the official cause and manner of death as recorded by the medical examiner?
+3. Who authorized the rapid removal of the body from hospital jurisdiction?
+4. What chain-of-custody documentation exists for the body from hospital to final disposition?
+5. Has the defense in *State of Utah v. Tyler Alexander Robinson* (Case No. 251403576) requested access to autopsy findings?
+
+These are questions, not conclusions. Any answers should come from authenticated primary sources — court filings, official medical-examiner statements, or released records.
+
+## Related Areas
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Death Certificate Questions](./death-certificate)
+* [Utah Autopsy Law (SB0082)](./autopsy-law-sb0082)
+* [Tyler Robinson Trial](/Tyler_Robinson/Trial/overview)
+
+</div>
+<div>
+
+* [Proof Not Tyler](/Proof_Not_Tyler/overview)
+* [Law 2: Autopsy Transparency](/Fix/Law2)
+* [Timeline: September 10, 2025](/Timeline/Sept_10_2025)
+
+</div>
+</div>

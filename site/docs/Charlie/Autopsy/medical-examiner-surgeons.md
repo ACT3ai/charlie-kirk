@@ -1,0 +1,77 @@
+<a href="./overview" style={{display:'inline-block', marginBottom:'1rem',
+padding:'0.35rem 0.9rem', background:'#1a73e8', color:'#fff',
+borderRadius:'4px', textDecoration:'none', fontSize:'0.9rem'}}>
+← Charlie Kirk Autopsy
+</a>
+
+# Medical Examiner & Surgeons
+
+This page documents claims about the Utah state medical examiner and hospital surgeons in the context of Charlie Kirk's death, with particular focus on staffing changes and reported pre-event search activity from foreign IP addresses.
+
+## Dr. Deirdre Amaro — New Chief Medical Examiner
+
+According to compiled research, **Dr. Deirdre Amaro** began her role as Utah's full-time chief medical examiner on **July 1, 2025** — approximately two and a half months before Charlie's death on September 10.
+
+Citizen investigators have flagged this timing as noteworthy because:
+
+- She was reportedly **searched from Israeli IP addresses** in the same timeframe that other key figures and locations were being searched
+- Her appointment meant she would be the ME responsible for any high-profile death in Utah during this period
+- The investigation notes describe her as having been "put in place 2 weeks before July Google searches" began targeting Utah-area medical and legal personnel
+
+Whether her appointment has any connection to subsequent events is speculative. New appointments to state ME positions are routine. However, the reported foreign search activity targeting her name has drawn attention.
+
+## Seven Surgeons Searched from Israeli IPs (Claims)
+
+One of the most cited data points in the investigation is the claim that **seven surgeons** at the hospital where Charlie was taken were searched from Israeli IP addresses around **July 14-30, 2025** — approximately seven weeks before the shooting. According to the compiled research:
+
+| Surgeon | Reported Search Date |
+|---------|---------------------|
+| **Richard Rasmussen** | July 14 |
+| **Steven Neilman** | July 18 |
+| **Lee Patterson** | July 19 |
+| **Brian Gill** | July 22 |
+| **Robert Patterson MD** | July 23-24 |
+| **Lee Trotter** | (date not specified) |
+| **William Pugh** | July 30 |
+
+Investigators characterize these searches as "scouting all emergency surgeons at Kirk's hospital" and describe them as part of a broader pattern of pre-event reconnaissance. The same IP addresses are alleged to have searched for the hospital itself, the medical examiner, local judges, and other figures connected to the case.
+
+## Andrew Zenger — Treating Doctor and New CEO
+
+According to compiled notes, **Andrew Zenger** occupies a unique dual role in the case:
+
+- He reportedly **joined the surgical team on August 28**, the day after his name was allegedly searched from Israeli IP addresses on **August 27**
+- He was described as "the doctor that treated Charlie"
+- He was appointed **CEO of the hospital** on August 19, with a start date of August 25
+
+Investigators question whether a newly appointed hospital CEO would also serve on a surgical team and whether the timing of his appointment and the reported Israeli IP search of his name are coincidental.
+
+## Connection to Hospital Choice
+
+The fact that these surgeons and administrators were at **Timpanogos Regional Hospital** — the facility Charlie was taken to despite it being farther away and a lower trauma level than the alternative — connects this page to the [Hospital Choice & Transport](./hospital-choice-transport) analysis. If the hospital was pre-selected, investigators argue, the surgical staff would need to be known in advance.
+
+## Important Caveats
+
+- The "Israeli IP" search claims come from citizen-investigator analysis of Google Trends and related data. The methodology and reliability of these attributions have not been independently verified in court proceedings.
+- Surgeons being searchable online is normal. The claim's significance rests on the **pattern** — multiple surgeons at the same hospital, searched from the same foreign IP addresses, in a concentrated timeframe weeks before the event.
+- None of the named surgeons or Dr. Amaro are accused of wrongdoing. The claims center on who was searching for them and why.
+
+## Related Areas
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Hospital Choice & Transport](./hospital-choice-transport)
+* [Israeli Search Patterns (Claims)](/Israel/Israeli_Search_Patterns_Claims)
+* [Google Searches](/GoogleSearches/overview)
+
+</div>
+<div>
+
+* [Death Certificate Questions](./death-certificate)
+* [Proof Intel Services](/Proof_Intel_Services/overview)
+* [Before: Pre-Event Searches & Recon](/Before/PreEvent_Searches_And_Recon)
+
+</div>
+</div>

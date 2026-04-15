@@ -30,7 +30,7 @@ The case has prompted discussion about laws that affect **access to information 
 - Proposed or existing **social‑media and online‑speech regulations** that could impact public discussion of sensitive investigations.
 - Rules around **public records requests, transparency, and data retention** for law enforcement and related agencies.
 
-Rather than accepting slogans, voters can review how candidates and parties **explain and vote on specific bills**, and whether they support reforms that balance privacy, due process, and the public’s right to know. See also: [Law1](Fix/Law1.md) and [Law2](Fix/Law2.md) for law‑focused ideas discussed in this project.
+Rather than accepting slogans, voters can review how candidates and parties **explain and vote on specific bills**, and whether they support reforms that balance privacy, due process, and the public’s right to know. See also: [Law1](Fix/Law1) and [Law2](Fix/Law2) for law‑focused ideas discussed in this project.
 
 ## Holding officials accountable (claims vs. evidence)
 
@@ -50,3 +50,23 @@ Voting is one tool among many. Other forms of engagement include:
 - Participating in or organizing **peaceful, lawful campaigns** for specific policy changes (for example, strengthening evidence‑preservation rules or whistleblower protections).
 
 These activities can help ensure that concerns raised by the case lead to constructive, evidence‑based improvements rather than reactive or purely partisan responses.
+
+## Related Areas
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Fix](/Fix/overview)
+* [Your Actions Fix It](/Your_Actions_Fix_It/overview)
+* [Charlie Kirk](/Charlie/overview)
+
+</div>
+<div>
+
+* [Cover-Up Evidence](/CoverUp/overview)
+* [Censorship](/Censorship/overview)
+* [FBI](/FBI/overview)
+
+</div>
+</div>

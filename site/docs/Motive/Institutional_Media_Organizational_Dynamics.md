@@ -15,7 +15,7 @@ This Level_3 page elaborates on **motive ideas that involve institutions, media 
 - Media outlets and platforms, and  
 - Entities directly connected to the UVU event (such as TPUSA and its partners).
 
-These are **theories about potential incentives and pressures**, not assertions that any specific institution ordered or carried out an assassination. They should be read alongside [Motive](/Motive/overview.md), [Cover‑Up](/CoverUp/overview.md), and [Media](/Media/overview.md).
+These are **theories about potential incentives and pressures**, not assertions that any specific institution ordered or carried out an assassination. They should be read alongside [Motive](/Motive/overview), [Cover‑Up](/CoverUp/overview), and [Media](/Media/overview).
 
 ## Law‑enforcement and security‑agency incentives (claims)
 
@@ -55,7 +55,7 @@ Media‑ and platform‑related motive theories focus on incentives around **con
 - **Narrative competition and audience capture (claims):**  
   - Different media outlets may frame motives in ways that **resonate with their audiences** (for example, emphasizing lone‑actor stories, foreign plots, or deep‑state themes), which can create an appearance of coordinated messaging even when each outlet is simply prioritizing its own editorial angle.  
 - **Gag orders and legal constraints (as reported/claims):**  
-  - As discussed on [Cover‑Up Indicators](/Killer/Coverup_Indicators.md) and in legal‑commentary Substacks, broad gag orders and closed hearings can limit what lawyers and some media can publicly say, shaping which motive narratives are most visible at a given time.
+  - As discussed on [Cover‑Up Indicators](/Killer/Coverup_Indicators) and in legal‑commentary Substacks, broad gag orders and closed hearings can limit what lawyers and some media can publicly say, shaping which motive narratives are most visible at a given time.
 
 These media‑ecosystem dynamics can strongly influence **which motives people hear about**, without necessarily implying that media organizations themselves had any role in the killing.
 
@@ -74,12 +74,30 @@ These points are important context for understanding why organizations might ado
 
 ## How to interpret institutional and organizational motive theories
 
-Within the [Motive](/Motive/overview.md) framework, institutional, media, and organizational dynamics:
+Within the [Motive](/Motive/overview) framework, institutional, media, and organizational dynamics:
 
 - Help explain **why certain narratives gain prominence** and others remain marginal.  
 - Highlight **non‑violent incentives** (reputation, liability, political positioning) that can nonetheless shape public understanding of the case.  
 - Do **not** establish that any institution or organization directed or carried out the killing; such claims would require strong, specific evidence and due‑process adjudication.
 
-Readers should therefore treat this page as a guide to **how people think about systemic motives**, not as a list of culpable entities. For more detail on specific strands, see [Media](/Media/overview.md), [Cover‑Up](/CoverUp/overview.md), [Charlie](/Charlie/overview.md), and [Real Killer](/Killer/overview.md).
+Readers should therefore treat this page as a guide to **how people think about systemic motives**, not as a list of culpable entities. For more detail on specific strands, see [Media](/Media/overview), [Cover‑Up](/CoverUp/overview), [Charlie](/Charlie/overview), and [Real Killer](/Killer/overview).
 
+## Related Areas
 
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [TPUSA](/TPUSA/overview)
+* [Media](/Media/overview)
+* [FBI Investigation](/FBI/overview)
+
+</div>
+<div>
+
+* [Cover-Up Evidence](/CoverUp/overview)
+* [Censorship](/Censorship/overview)
+* [Timeline](/Timeline/overview)
+
+</div>
+</div>

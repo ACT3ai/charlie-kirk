@@ -12,14 +12,14 @@ This Level_3 page expands on **motive theories that attribute potential responsi
 
 They are inherently **speculative**. No official investigation or court has publicly concluded that any particular foreign intelligence service or U.S. agency ordered or carried out the killing. This page therefore treats these narratives as **claims about possible motives**, not as factual findings.
 
-For a higher‑level summary, see [Motive](/Motive/overview.md), [Planes](/Planes/overview.md), [Drones](/Drones/overview.md), and [Killer](/Killer/overview.md).
+For a higher‑level summary, see [Motive](/Motive/overview), [Planes](/Planes/overview), [Drones](/Drones/overview), and [Killer](/Killer/overview).
 
 ## Why intelligence‑linked motives are discussed (claims)
 
 Commentators who explore intelligence‑service motives typically start from three kinds of observations:
 
 - **Charlie’s reported shift on sensitive foreign‑policy issues (claims):**  
-  - As outlined in [Donor Pressure, Israel, and Foreign‑Policy Motive Theories](/Motive/Donors_Israel_ForeignPolicy.md), some analysts argue that Charlie moved from a consistently pro‑Israel public posture toward a more critical stance on topics such as **Gaza, war policy, and donor influence**.  
+  - As outlined in [Donor Pressure, Israel, and Foreign‑Policy Motive Theories](/Motive/Donors_Israel_ForeignPolicy), some analysts argue that Charlie moved from a consistently pro‑Israel public posture toward a more critical stance on topics such as **Gaza, war policy, and donor influence**.  
   - If accurate, this could, in theory, turn him from a trusted ally into a **potentially unpredictable critic** on issues important to certain states or security services.  
 - **Alleged private warnings and fears (claims):**  
   - Social‑media compilations and talk‑show segments (for example, Candace Owens’ commentaries and X posts citing Harrison Smith’s reporting) describe Charlie as allegedly saying variants of **“they will kill me if I go against Israel”** or **“they are going to kill me”** in the days before his death.  
@@ -80,6 +80,24 @@ When evaluating geopolitical and intelligence‑service motives, several caution
 - **Attribution requires strong evidence:** credible attribution of responsibility to any agency or state requires **robust, verifiable, and preferably declassified evidence**, not just pattern‑matching or historical analogy.  
 - **Risk of unfair harm:** careless repetition of unproven accusations against named agencies, organizations, or communities can cause **serious reputational harm** and fuel prejudice, particularly when tied to nationality, religion, or ethnicity.
 
-For these reasons, this page treats geopolitical and intelligence‑service theories as **context for understanding public suspicion and discourse about motive**, not as a verdict on who is guilty. Readers should cross‑reference [Timeline](/Timeline/overview.md), [Charlie](/Charlie/overview.md), [Planes](/Planes/overview.md), and [Killer](/Killer/overview.md) to see how these ideas intersect with specific evidence and alternative explanations.
+For these reasons, this page treats geopolitical and intelligence‑service theories as **context for understanding public suspicion and discourse about motive**, not as a verdict on who is guilty. Readers should cross‑reference [Timeline](/Timeline/overview), [Charlie](/Charlie/overview), [Planes](/Planes/overview), and [Killer](/Killer/overview) to see how these ideas intersect with specific evidence and alternative explanations.
 
+## Related Areas
 
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Planes](/Planes/overview)
+* [Drones](/Drones/overview)
+* [Proof Intel Services](/Proof_Intel_Services/overview)
+
+</div>
+<div>
+
+* [CIA](/CIA/overview)
+* [FBI Investigation](/FBI/overview)
+* [Israel Connections](/Israel/overview)
+
+</div>
+</div>

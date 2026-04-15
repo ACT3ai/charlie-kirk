@@ -107,7 +107,27 @@ Throughout these debates, it is important to remember that:
 
 The central question raised by citizen‑investigators is whether, in this particular case, the balance between **openness and control**
 has been struck in a way that builds public trust—or whether reforms are needed. For related discussions about legal and policy
-changes, see [Fix Overview](../Fix/overview.md), [Law1](../Fix/Law1.md), and [Law2](../Fix/Law2.md).
+changes, see [Fix Overview](../Fix/overview), [Law1](../Fix/Law1), and [Law2](../Fix/Law2).
+
+## Related Areas
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Censorship](/Censorship/overview)
+* [Cover-Up](/CoverUp/overview)
+* [FBI](/FBI/overview)
+
+</div>
+<div>
+
+* [Proof Intel Services](/Proof_Intel_Services/overview)
+* [People](/People/overview)
+* [Timeline](/Timeline/overview)
+
+</div>
+</div>
 
 ## Court update: discovery and gag order (reported facts)
 

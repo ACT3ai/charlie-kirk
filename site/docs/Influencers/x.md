@@ -24,3 +24,23 @@ This document contains information about X (Twitter) coverage and posts related 
 - [ ] Evidence collection
 - [ ] Analysis
 - [ ] Documentation
+
+## Related Areas
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Censorship of the investigation](../Censorship/overview)
+* [Media response to the death](../media_response/overview)
+* [Cover-up evidence overview](../CoverUp/overview)
+
+</div>
+<div>
+
+* [People involved](../People/overview)
+* [FBI blocking the investigation](../FBI/overview)
+* [Your actions to fix this](../Your_Actions_Fix_It/overview)
+
+</div>
+</div>

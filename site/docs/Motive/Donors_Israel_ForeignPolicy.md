@@ -12,7 +12,7 @@ This Level_3 page expands on **motive theories that focus on Charlie Kirk’s re
 
 All items here reflect **how commentators and citizen‑researchers have framed possible motives**. They are **not** endorsements or factual findings by this project, and they should not be read as proof that any donor, country, or organization ordered or carried out the killing.
 
-For Charlie‑focused context, see [Charlie](/Charlie/overview.md) and [Charlie, Israel, Donors, and Motive Claims](/Charlie/Israel_Donors_Motive.md). For broader motive mapping, see [Motive](/Motive/overview.md).
+For Charlie‑focused context, see [Charlie](/Charlie/overview) and [Charlie, Israel, Donors, and Motive Claims](/Charlie/Israel_Donors_Motive). For broader motive mapping, see [Motive](/Motive/overview).
 
 ## Long‑term pro‑Israel positioning (as reported)
 
@@ -70,12 +70,30 @@ These arguments show how commentators connect **policy disputes** to possible mo
 
 ## How donor/Israel/foreign‑policy motives fit into the larger picture
 
-Within the [Motive](/Motive/overview.md) framework, donor and Israel‑related theories are best understood as **one category of proposed motives among several**:
+Within the [Motive](/Motive/overview) framework, donor and Israel‑related theories are best understood as **one category of proposed motives among several**:
 
 - They highlight **why some people believe powerful interests might have cared deeply about Charlie’s trajectory**.  
 - They rely heavily on **alleged private messages, social‑media compilations, and interpretive readings of public events**, which require careful verification.  
 - They do **not** demonstrate that any specific donor, organization, or foreign government ordered or carried out violence; proving that would require **hard, independently verifiable evidence**, not just a pattern of tension or disagreement.
 
-Readers should approach this page as a structured summary of **what has been claimed and why it is thought to matter**, not as a verdict on who is guilty. For operational and forensic aspects, see [Real Killer](/Killer/overview.md), [Timeline](/Timeline/overview.md), and [Charlie](/Charlie/overview.md).
+Readers should approach this page as a structured summary of **what has been claimed and why it is thought to matter**, not as a verdict on who is guilty. For operational and forensic aspects, see [Real Killer](/Killer/overview), [Timeline](/Timeline/overview), and [Charlie](/Charlie/overview).
 
+## Related Areas
 
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Israel Connections](/Israel/overview)
+* [TPUSA](/TPUSA/overview)
+* [Charlie Kirk](/Charlie/overview)
+
+</div>
+<div>
+
+* [Proof Intel Services](/Proof_Intel_Services/overview)
+* [Timeline](/Timeline/overview)
+* [Cover-Up Evidence](/CoverUp/overview)
+
+</div>
+</div>

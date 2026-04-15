@@ -12,6 +12,17 @@ borderRadius:'4px', textDecoration:'none', fontSize:'0.9rem'}}>
 ## Overview
 This page provides an overview of **Turning Point USA (TPUSA)** as it relates to Charlie Kirk’s life, work, and the questions raised by his death. It does not claim that TPUSA as an organization is responsible for the assassination. Instead, it summarizes what public reporting and commentary say about TPUSA’s structure, security arrangements, donors, and internal dynamics so readers can understand why the organization features prominently in the investigation.
 
+<div style={{display: ‘grid’, gridTemplateColumns: ‘1fr 1fr’, gap: ‘1rem’}}>
+<div>
+
+* [TPUSA Organization](./TPUSA) — Detailed context on TPUSA’s structure, leadership, security, donors, and staff
+
+</div>
+<div>
+
+</div>
+</div>
+
 ## TPUSA’s role and significance
 
 TPUSA is a large youth‑focused conservative organization that:
@@ -40,7 +51,7 @@ TPUSA’s role in arranging security and production for the UVU event has been s
 - Commentators have raised questions about **camera placement, drone usage, and rooftop/tunnel monitoring**, including whether TPUSA‑controlled cameras and drones captured footage that has not yet been fully released to the public.
 - There are allegations and debates about whether security staffing, training, or coordination were adequate, and whether any last‑minute changes may have affected Charlie’s vulnerability on the day of the event.
 
-These issues are explored in more detail in sections such as [Security & Law Enforcement](/security_law_enforcement/overview.md), [Shooting Locations](/Shooting_Locations/overview.md), [Planes](/Planes/overview.md), and [Tent](/Tent/overview.md); this page simply highlights TPUSA’s role in those discussions.
+These issues are explored in more detail in sections such as [Security & Law Enforcement](/security_law_enforcement/overview), [Shooting Locations](/Shooting_Locations/overview), [Planes](/Planes/overview), and [Tent](/Tent/overview); this page simply highlights TPUSA’s role in those discussions.
 
 ## Donors, funding, and internal tension (claims)
 
@@ -56,8 +67,28 @@ These points are based on a mix of public statements, leaked messages, and comme
 
 To understand TPUSA’s place in the broader investigation, readers may want to explore:
 
-- [Charlie](/Charlie/overview.md) – for how TPUSA shaped his public role and why changes in his views mattered.
-- [Motive](/Motive/overview.md) and [Israel](/Israel/overview.md) – for discussions of donor and geopolitical dynamics that intersect with TPUSA.
-- [Security & Law Enforcement](/security_law_enforcement/overview.md), [Planes](/Planes/overview.md), and [Tent](/Tent/overview.md) – for analyses that touch on event production, security posture, and technical aspects of the shooting.
+- [Charlie](/Charlie/overview) – for how TPUSA shaped his public role and why changes in his views mattered.
+- [Motive](/Motive/overview) and [Israel](/Israel/overview) – for discussions of donor and geopolitical dynamics that intersect with TPUSA.
+- [Security & Law Enforcement](/security_law_enforcement/overview), [Planes](/Planes/overview), and [Tent](/Tent/overview) – for analyses that touch on event production, security posture, and technical aspects of the shooting.
 
 This overview gives readers a **starting point** for understanding TPUSA’s role; as more verified information about TPUSA’s internal decisions, security contracts, and donor relationships becomes available, detailed subpages can provide deeper analysis.
+
+## Related Areas
+
+<div style={{display:’grid’, gridTemplateColumns:’1fr 1fr’, gap:’0.5rem 2rem’,
+marginTop:’0.5rem’}}>
+<div>
+
+* [Charlie Kirk](/Charlie/overview)
+* [Motive](/Motive/overview)
+* [Israel](/Israel/overview)
+
+</div>
+<div>
+
+* [Cover-Up Evidence](/CoverUp/overview)
+* [People](/People/overview)
+* [Tent](/Tent/overview)
+
+</div>
+</div>

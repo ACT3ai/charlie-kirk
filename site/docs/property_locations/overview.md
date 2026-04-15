@@ -24,3 +24,23 @@ This directory contains information about physical locations and properties rela
 - [ ] Evidence collection
 - [ ] Analysis
 - [ ] Documentation
+
+## Related Areas
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [UVU](/UVU/overview)
+* [Timeline](/Timeline/overview)
+* [Gun & Bullet](/Gun_Bullet/overview)
+
+</div>
+<div>
+
+* [Planes](/Planes/overview)
+* [Cover-Up](/CoverUp/overview)
+* [Tyler Robinson](/Tyler_Robinson/overview)
+
+</div>
+</div>

@@ -46,7 +46,27 @@ Voters are encouraged to consider **patterns of conduct over time** rather than 
 
 This page ties into broader “fix” themes discussed elsewhere:
 
-- See [Fix Overview](Fix/overview.md) and [Law1](Fix/Law1.md) / [Law2](Fix/Law2.md) for ideas related to law and policy changes.
-- See [Vote](/Vote/overview.md) for a wider discussion of voting and civic engagement in response to the case.
+- See [Fix Overview](./overview) and [Law1](./Law1) / [Law2](./Law2) for ideas related to law and policy changes.
+- See [Vote](/Vote/overview) for a wider discussion of voting and civic engagement in response to the case.
 
 By combining thoughtful voting with constructive policy advocacy, citizens can work toward institutions that are more transparent, accountable, and trusted—regardless of how any single case is ultimately resolved.
+
+## Related Areas
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Your Actions Fix It](/Your_Actions_Fix_It/overview)
+* [Cover Up](/CoverUp/overview)
+* [FBI](/FBI/overview)
+
+</div>
+<div>
+
+* [Proof Intel Services](/Proof_Intel_Services/overview)
+* [TPUSA](/TPUSA/overview)
+* [Media](/Media/overview)
+
+</div>
+</div>

@@ -157,5 +157,25 @@ Kirk is transported to Timpanogos Regional Hospital in Orem and pronounced decea
 - [Tyler Robinson: Sept 8–13](/Timeline/Tyler_Robinson/2025_Sept)
 - [Charlie Kirk Timeline](/Timeline/Charlie_Kirk)
 - [Tyler Robinson Trial](/Tyler_Robinson/Trial/overview)
-- [Mirandizing: When Did It Happen?](/Tyler_Robinson/Trial/overview)
+- [Mirandizing: When Did It Happen?](/Timeline/Tyler_Robinson/Mirandizing)
 - [Full Tyler Robinson Timeline](/Timeline/Tyler_Robinson)
+
+## Related Areas
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Charlie Kirk](/Charlie/overview)
+* [FBI](/FBI/overview)
+* [Proof Not Tyler](/Proof_Not_Tyler/overview)
+
+</div>
+<div>
+
+* [Gun & Bullet](/Gun_Bullet/overview)
+* [Shooting Locations](/Shooting_Locations/overview)
+* [Cover-Up](/CoverUp/overview)
+
+</div>
+</div>

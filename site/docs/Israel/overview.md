@@ -11,23 +11,19 @@ borderRadius:'4px', textDecoration:'none', fontSize:'0.9rem'}}>
 
 This section organizes how Israel, Israeli policy debates, and pro-Israel networks appear in public discussions about Charlie Kirk's life and death. It does **not** claim that any Israeli individual or institution ordered or carried out the killing — it sorts the allegations into distinct threads so readers can evaluate each on its own evidence.
 
-<div style={{display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: '1rem'}}>
+<div style={{display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.5rem 2rem', marginTop: '0.5rem'}}>
 <div>
 
 * [Israel's Motivation to Kill Charlie](./motivation)
 * [Israelis at UVU](./israelis-at-uvu)
 * [Israel Foreign Leads](./foreign-leads)
-
-</div>
-<div>
-
 * [Israel PM](./israel-pm)
 * [Israel Hamptons](./israel-hamptons)
-* [Israel Planes](./israel-planes)
 
 </div>
 <div>
 
+* [Israel Planes](./israel-planes)
 * [Charlie Kirk Quotes on Israel](./Charlie_Quotes_Israel)
 * [Israeli Presence and Connectivity Claims](./Israeli_Presence_And_Connectivity_Claims)
 * [Israeli Search Patterns Claims](./Israeli_Search_Patterns_Claims)
@@ -46,16 +42,16 @@ Readers new to this area should start with **Israel's Motivation to Kill Charlie
 <div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem', marginTop:'0.5rem'}}>
 <div>
 
-* [Motive overview](../Motive/overview)
-* [Proof of intel services](../Proof_Intel_Services/overview)
-* [FBI cover-up](../FBI/overview)
+* [Charlie Kirk](../Charlie/overview)
+* [Google Searches](../GoogleSearches/overview)
+* [Motive](../Motive/overview)
 
 </div>
 <div>
 
-* [Planes and aircraft](../Planes/overview)
-* [Cover-up evidence](../CoverUp/overview)
-* [Charlie Kirk overview](../Charlie/overview)
+* [Proof Intel Services](../Proof_Intel_Services/overview)
+* [Before Events](../Before/overview)
+* [Medical Examiner & Surgeons](../Charlie/Autopsy/medical-examiner-surgeons)
 
 </div>
 </div>

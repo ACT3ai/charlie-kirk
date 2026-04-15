@@ -25,7 +25,7 @@ REASONING: His powerful [30-06 Mauser 98 gun](/Gun_Bullet/overview.md) would hav
   * [Timeline](Timeline/overview.md) 
   * [Motive](Motive/overview.md) 
   * [Israel](/Israel/overview.md)
-  * [Autopsy](Charlie/Autopsy.md)
+  * [Autopsy](Charlie/Autopsy/overview)
   </div>
   <div style={{ flex: 1 }}>
   * [Vote](/Vote/overview.md)  
@@ -92,7 +92,7 @@ REASONING: His powerful [30-06 Mauser 98 gun](/Gun_Bullet/overview.md) would hav
 
 
 ## TRUTH LIST (Government Hides)
-- [Autopsy](Charlie/Autopsy.md)
+- [Autopsy](Charlie/Autopsy/overview)
 - [Video footage](cameras/security/overview.md): [UVU Video footage](cameras/security/UVU_Security_Cameras.md)
 - [Spy Plane](Planes/N1098L/overview.md)
 - [Intelligent recruited him](Tyler_Robinson/Recruited.md). [Girlfriend](Tyler_Robinson/Girlfriend/overview.md) links to [intelligence](/intelligence/overview.md).
@@ -120,7 +120,7 @@ REASONING: His powerful [30-06 Mauser 98 gun](/Gun_Bullet/overview.md) would hav
   <div style={{ flex: 1 }}>
   * [Charlie Kirk](/Charlie/overview.md)
   * [Timeline](Timeline/overview.md) 
-  * [Autopsy](Charlie/Autopsy.md)
+  * [Autopsy](Charlie/Autopsy/overview)
   </div>
   <div style={{ flex: 1 }}>
   * [TPUSA](TPUSA/overview.md)

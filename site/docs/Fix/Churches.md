@@ -54,7 +54,7 @@ Drawing from themes in the research notes, churches and faith‑based groups mig
 - **Education and media literacy** – Helping congregants understand how investigations work, what public‑records laws do, and how to
   critically evaluate online claims.
 - **Civic engagement rooted in conscience** – Encouraging members, as individuals, to contact representatives respectfully about
-  transparency, due process, and reform proposals like those outlined in [Law1](Fix/Law1.md) and [Law2](Fix/Law2.md).
+  transparency, due process, and reform proposals like those outlined in [Law1](./Law1) and [Law2](./Law2).
 - **Support for ethical whistleblowing and reform** – Affirming that those who, in good faith and within the law, raise concerns about
   institutional failures should be heard and protected from retaliation.
 - **Bridge‑building across differences** – Creating spaces where people with different political or theological views can grieve together
@@ -67,9 +67,29 @@ truth and neighbor‑love regardless of the outcome.
 
 This page complements other reform‑oriented discussions:
 
-- [Fix Overview](Fix/overview.md) – high‑level summary of legal, institutional, and cultural proposals.
-- [Politicians](Fix/Politicans.md) – ideas about evaluating public officials' records on transparency and oversight.
-- [TPUSA / TSUSA](Fix/TSUSA.md) – suggestions for how organizations can align policies and governance with ethical commitments.
+- [Fix Overview](./overview) – high‑level summary of legal, institutional, and cultural proposals.
+- [Politicians](./Politicans) – ideas about evaluating public officials' records on transparency and oversight.
+- [TPUSA / TSUSA](./TSUSA) – suggestions for how organizations can align policies and governance with ethical commitments.
 
 Together, these pages invite readers to think about how **law, institutions, and communities of faith** might all contribute to
 more just and trustworthy responses when tragedies occur.
+
+## Related Areas
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Your Actions Fix It](/Your_Actions_Fix_It/overview)
+* [People](/People/overview)
+* [Cover Up](/CoverUp/overview)
+
+</div>
+<div>
+
+* [TPUSA](/TPUSA/overview)
+* [Media](/Media/overview)
+* [Influencers](/Influencers/overview)
+
+</div>
+</div>

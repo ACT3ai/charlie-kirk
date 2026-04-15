@@ -24,3 +24,23 @@ This proposed federal law requires the FBI and U.S. Intelligence Community to co
 Disclosure laws alone are insufficient if agencies can comply by releasing documents while conducting no meaningful investigation. This law closes that gap by mandating investigative action, not just record production.
 
 For related laws, see [Law 1: FBI & DOJ Disclosure](./Law1), [Law 2: Intelligence Disclosure](./Law2), and [Law 4: Trusted Investigators](./Law4).
+
+## Related Areas
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Cover Up](/CoverUp/overview)
+* [FBI](/FBI/overview)
+* [Proof Intel Services](/Proof_Intel_Services/overview)
+
+</div>
+<div>
+
+* [Legal Investigation](/legal_investigation/overview)
+* [Your Actions Fix It](/Your_Actions_Fix_It/overview)
+* [Timeline](/Timeline/overview)
+
+</div>
+</div>

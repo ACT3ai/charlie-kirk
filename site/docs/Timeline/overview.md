@@ -84,13 +84,49 @@ borderRadius:'4px', textDecoration:'none', fontSize:'0.9rem'}}>
 - Dec 8–14, 2024 (claims): Commentators highlight a reported spike (from Israel) in searches for Kathryn N. Nester, later defense counsel for Tyler Robinson, based on Google Trends screenshots.
 - Aug 2024 (claims): Notes reference searches related to “Utah Valley University buildings” and similar terms, interpreted by some as early reconnaissance interest.
 
-## Level_3 Pages within this Section
+## Pages in this Section
 
-The following in-depth pages expand on specific timeline layers and should be consulted alongside this overview:
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
 
-- [September 10, 2025 – Day‑of Timeline (Reported Facts and Claims)](Sept_10_2025.md)
-- [2025 Context Timeline (Claims and Reported Events)](Year_2025.md)
-- [2024 Pre‑Event Timeline (Searches and Early Signals – Claims)](Year_2024.md)
-- [2026 Timeline](2026.md)
-- [Timeline by Year](years.md)
+* [2025 Timeline](/Timeline/2025)
+* [2026 Timeline](/Timeline/2026)
+* [Charlie Kirk Timeline](/Timeline/Charlie_Kirk)
+* [September 10, 2025](/Timeline/Sept_10_2025)
+* [September 8–13](/Timeline/Sept_8_to_13)
+
+</div>
+<div>
+
+* [Tyler Robinson Timeline](/Timeline/Tyler_Robinson)
+* [Year 2024](/Timeline/Year_2024)
+* [Year 2025](/Timeline/Year_2025)
+* [Timeline by Year](/Timeline/years)
+* [Tyler Robinson: Sept 8–13](/Timeline/Tyler_Robinson/2025_Sept)
+* [Affidavit of Probable Cause](/Timeline/Tyler_Robinson/Affidavit_Probable_Cause)
+* [Mirandizing](/Timeline/Tyler_Robinson/Mirandizing)
+
+</div>
+</div>
+
+## Related Areas
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Charlie Kirk](/Charlie/overview)
+* [FBI](/FBI/overview)
+* [Cover-Up](/CoverUp/overview)
+
+</div>
+<div>
+
+* [Proof Not Tyler](/Proof_Not_Tyler/overview)
+* [Planes](/Planes/overview)
+* [Motive](/Motive/overview)
+
+</div>
+</div>
 

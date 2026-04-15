@@ -1,5 +1,5 @@
 ---
-sidebar_label: "Podcast Coverage"
+sidebar_label: "Influencers"
 ---
 <a href="/" style={{display:'inline-block', marginBottom:'1rem',
 padding:'0.35rem 0.9rem', background:'#1a73e8', color:'#fff',
@@ -7,54 +7,71 @@ borderRadius:'4px', textDecoration:'none', fontSize:'0.9rem'}}>
 ← Home
 </a>
 
-# Podcast Coverage
+# Influencers
 
-## Overview
-This document contains information about podcast coverage of the Charlie Kirk investigation.
+Independent media hosts, podcasters, X researchers, and YouTube creators have driven virtually all substantive investigation of the Charlie Kirk assassination. Mainstream television either ignored the case or accepted the FBI's lone-shooter narrative without scrutiny. The combined reach of the programs listed here spans hundreds of millions of listeners and viewers.
 
+<div style={{display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem'}}>
+<div>
 
-* Dec 19-24, 2024: AmericaFest 2024: December 2025 Turning Point USA
-  * Tucker Carlson talke dabout Epstein may have been involved in a blackmail operation potentially on behalf of foreign intelligence services (possibly Israel's Mossad).
-  * Tucker Carlson (closing the first night), Donald J. Trump, Ben Shapiro, Glenn Beck, Patrick Bet-David, Donald Trump Jr., Dr. Ben Carson, Steve Bannon, Rob Schneider, and others
-  * https://www.youtube.com/watch?v=0aLXZj-oBLE
-  * https://www.youtube.com/watch?v=1oU0pGTGuDY
-  * https://www.youtube.com/playlist?list=PLnZT7Gz_VSN520UilgmZqikvi3n1MsuZR
-  * https://www.youtube.com/playlist?list=PLuXXbBFpPc0lhc6PfJae8Rav-gMNpmeuL
+**Podcasts**
 
+* [Podcast Coverage Overview](./podcasts)
+* [The Charlie Kirk Show](./podcasts-charlie-kirk-show)
+* [Candace Owens Show](./podcasts-candace-owens)
+* [Tucker Carlson Podcast](./podcasts-tucker-carlson)
+* [Megyn Kelly Show](./podcasts-megyn-kelly)
+* [Joe Rogan Experience](./podcasts-joe-rogan)
+* [Ian Carroll](./podcasts-ian-carroll)
+* [Dave Smith — Part of the Problem](./podcasts-dave-smith)
+* [Glenn Greenwald — System Update](./podcasts-glenn-greenwald)
+* [Patrick Bet-David — PBD Podcast](./podcasts-patrick-bet-david)
+* [Alex Jones — InfoWars](./podcasts-alex-jones)
+* [Benny Johnson — The Benny Show](./podcasts-benny-johnson)
 
-* July 11-13, 2025: Megyn Kelly & Charlie Kirk on TP USA event. (TPUSA's Student Action Summit (SAS) Tampa, Florida)
-  * https://www.youtube.com/watch?v=ccRNaLGavf8
+</div>
+<div>
 
-* July 11-13, 2025: Dave Smith debated Josh Hammer. US / Israel / Epstein / Mossad. (TPUSA's Student Action Summit (SAS) Tampa, Florida)
-  * https://www.youtube.com/watch?v=w-ng95XlQb4
+**More Podcasts**
 
-* July 16, 2025: Ami's House PODCAST: Inside the Turning Point USA Fallout.  
-  * https://www.youtube.com/watch?v=8HkNMTNHsa8
+* [Baron Coleman](./podcasts-baron)
+* [Shawn Ryan Show](./podcasts-shawn-ryan)
+* [Steve Bannon — War Room](./podcasts-steve-bannon)
+* [Elijah Schaffer — Slightly Offensive](./podcasts-elijah-schaffer)
+* [Jimmy Dore Show](./podcasts-jimmy-dore)
+* [Stew Peters Show](./podcasts-stew-peters)
+* [Hodgetwins](./podcasts-hodgetwins)
+* [Jason Whitlock — Fearless](./podcasts-jason-whitlock)
+* [Project Constitution](./podcasts-project-constitution)
 
-* September 4th 2025: Megyn Kelly & Charlie Kirk on TP USA event (@ Virginia Tech)
-   * https://www.youtube.com/watch?v=0pvEGO4W85k
+**Other Platforms**
 
-* September 19th 2025: Podcast: Demystifying the Mossad with Ex-Mossad Chief Yossi Cohen
-   * https://www.youtube.com/watch?v=qpGPZHdil1E
-   * https://podcasts.apple.com/uy/podcast/demystifying-the-mossad-with-ex-mossad-chief-yossi-cohen/id1589871008?i=1000727438458
+* [X (Twitter) Coverage](./x)
+* [YouTube Coverage](./youtube)
 
+</div>
+</div>
 
+Three of these hosts — Tucker Carlson, Dave Smith, and Candace Owens — are designated as Trusted Investigators under the proposed [Law 4: Trusted Investigators](../Fix/overview). That designation reflects their demonstrated independence from government and institutional control, their track record of pursuing contested evidence, and their willingness to cover intelligence-community angles that co-opted media will not touch.
 
-* Dave Smith Debate with ???: 
+Start with Candace Owens Episode 287 ("The Past Is Prologue: Why Charlie Kirk Was Murdered") for the most direct investigative breakdown. Tucker Carlson's interview with Joe Kent covers the foreign-operation angle. Dave Smith's debate at the TPUSA Student Action Summit articulates the Israel and Mossad connection argument most clearly. Ian Carroll's Liberty Vault playlist and Glenn Greenwald's System Update provide the deepest intelligence-apparatus critique.
 
+## Related Areas
 
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
 
+* [Cover-up evidence overview](../CoverUp/overview)
+* [FBI blocking the investigation](../FBI/overview)
+* [Censorship of the investigation](../Censorship/overview)
 
+</div>
+<div>
 
-## Key Areas
-- Podcast episodes
-- Host analysis
-- Coverage quality
-- Evidence presented
-- Audience reach
+* [Israel intelligence connections](../Israel/overview)
+* [Intel services involvement proof](../Proof_Intel_Services/overview)
+* [Your actions to fix this](../Your_Actions_Fix_It/overview)
 
-## Status
-- [ ] Initial research
-- [ ] Evidence collection
-- [ ] Analysis
-- [ ] Documentation
+</div>
+</div>

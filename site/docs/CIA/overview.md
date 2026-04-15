@@ -43,10 +43,24 @@ From an investigative standpoint, if CIA involvement (or that of any intelligenc
 
 At present, publicly available information does not resolve these questions; this page therefore treats CIA‑related theories as part of the broader set of claims that require careful, evidence‑based scrutiny.
 
-## Related sections
-
-- [Planes](/Planes/overview.md) and [Drones](/Drones/overview.md) – for technical discussion of aircraft and UAV capabilities and movements.
-- [Israel](/Israel/overview.md), [Motive](/Motive/overview.md), and [Killer](/Killer/overview.md) – for geopolitical and operational theories that sometimes intersect with CIA references.
-- [FBI](/FBI/overview.md) and [Legal Investigation](/legal_investigation/overview.md) – for institutional and investigative context at the federal level.
-
 Readers should approach all intelligence‑service theories with a heightened emphasis on **verification, proportionality, and caution**, recognizing both the complexity of national‑security work and the dangers of attributing grave actions without solid proof.
+
+## Related Areas
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [US Intelligence](/US_Intelligence/overview)
+* [FBI](/FBI/overview)
+* [Israel](/Israel/overview)
+
+</div>
+<div>
+
+* [Cover-Up](/CoverUp/overview)
+* [Motive](/Motive/overview)
+* [Proof Intel Services](/Proof_Intel_Services/overview)
+
+</div>
+</div>

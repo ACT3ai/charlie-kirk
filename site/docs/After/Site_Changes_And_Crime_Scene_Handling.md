@@ -16,7 +16,7 @@ This Level_3 page summarizes **claims and concerns about how the physical site a
 
 They are presented here as **claims and observations**, not as proof that any specific person or company intentionally destroyed evidence or participated in a cover‑up.
 
-For related discussion of medical and forensic implications, see [Medical](/Medical/overview.md), [Charlie Kirk Autopsy](../Charlie/Autopsy.md), and [Construction and site changes](../Medical/construction_and_site_changes.md). For cover‑up theories more broadly, see [Cover‑Up](/CoverUp/overview.md) and [Alleged Cover‑Up Indicators Relevant to the “Real Killer” Question](../Killer/Coverup_Indicators.md).
+For related discussion of medical and forensic implications, see [Medical](/Medical/overview), [Charlie Kirk Autopsy](../Charlie/Autopsy/overview), and [Construction and site changes](../Medical/construction_and_site_changes). For cover‑up theories more broadly, see [Cover‑Up](/CoverUp/overview) and [Alleged Cover‑Up Indicators Relevant to the “Real Killer” Question](../Killer/Coverup_Indicators).
 
 ## Timing and nature of post‑event construction (claims)
 
@@ -53,6 +53,24 @@ When considering these post‑event site‑change narratives:
 - **No direct proof of evidence destruction:** Publicly available materials do not, by themselves, establish that key forensic evidence (e.g., bullets, residue) was intentionally removed or that this work violated any legal requirement; such conclusions would require a formal, expert forensic review and access to complete investigative records.  
 - **Separation of roles:** Even if future investigations scrutinize who ordered the work and why, it is important to avoid assuming that contractors or laborers who carried it out were complicit in any wrongdoing.
 
-This page should therefore be read as a summary of **how and why site‑change timing has raised questions**, not as a verdict that the work constituted a cover‑up. For how these concerns intersect with broader post‑event debates, see [After Events](/After/overview.md), [Cover‑Up](/CoverUp/overview.md), and [Medical](/Medical/overview.md).
+This page should therefore be read as a summary of **how and why site‑change timing has raised questions**, not as a verdict that the work constituted a cover‑up. For how these concerns intersect with broader post‑event debates, see [After Events](/After/overview), [Cover‑Up](/CoverUp/overview), and [Medical](/Medical/overview).
 
+## Related Areas
 
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Timeline: September 10, 2025 Events](/Timeline/Sept_10_2025)
+* [Cover-Up Evidence & Indicators](/CoverUp/overview)
+* [UVU Campus Details & Layout](/UVU/overview)
+
+</div>
+<div>
+
+* [Charlie Kirk Autopsy & Forensics](/Charlie/Autopsy/overview)
+* [FBI Investigation & Involvement](/FBI/overview)
+* [Tent & Close-Range Shot Theories](/Tent/overview)
+
+</div>
+</div>

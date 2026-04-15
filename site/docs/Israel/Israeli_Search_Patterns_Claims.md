@@ -12,7 +12,7 @@ This Level_3 page summarizes **claims about Google Trends spikes and other searc
 
 Because tools like Google Trends show **only aggregate, anonymized interest levels**, and do not identify individual users or intent, the patterns described here should be treated as **suggestive but highly speculative**, not as proof that specific Israeli individuals or institutions planned or directed any crime.
 
-For broader context, see [Timeline](/Timeline/overview.md), [Motive](/Motive/overview.md), and [Israel](/Israel/overview.md).
+For broader context, see [Timeline](/Timeline/overview), [Motive](/Motive/overview), and [Israel](/Israel/overview).
 
 ## Reported spikes for case‑related figures and locations (claims)
 
@@ -38,7 +38,7 @@ These observations are based entirely on **aggregate search‑interest charts** 
 Some research threads tie **aircraft‑related search patterns** to Israeli IPs:
 
 - **N1098L / HADES jet (claims):**  
-  - As discussed in [Planes](/Planes/overview.md) and [Planes, Drones, and “Real Killer” Operational Theories](/Killer/Planes_Drones_Theories.md), N1098L is a Bombardier Global 6500 linked to the U.S. Army’s HADES ISR program.  
+  - As discussed in [Planes](/Planes/overview) and [Planes, Drones, and “Real Killer” Operational Theories](/Killer/Planes_Drones_Theories), N1098L is a Bombardier Global 6500 linked to the U.S. Army’s HADES ISR program.  
   - Google Trends screenshots shared by investigators claim that searches from **Israel** for **“N1098L”** spiked around **August 8, 2025**, several weeks before the UVU event, and that this may indicate pre‑event interest in the jet.  
 - **Egyptian aircraft and related terms (claims):**  
   - Similar analyses suggest Israeli‑origin search spikes around **Egyptian tail numbers** (such as SU‑BTT), certain Utah political figures, and contractors mentioned in flight or construction narratives.
@@ -63,6 +63,26 @@ When evaluating claims about Israeli search‑pattern data:
 - **Correlation is not causation:** The fact that interest in a person or term rises before an event does not, by itself, show planning or involvement; it could reflect general news interest, research, or unrelated reasons.  
 - **Risk of unfair inferences:** Emphasizing that searches originated from “Israeli IP addresses” can inadvertently **conflate individuals, VPN users, and entire communities or states**, which raises fairness and defamation concerns if treated as proof of guilt.
 
-For these reasons, this page presents Israeli‑origin search‑pattern claims as **one type of circumstantial context** cited by some investigators, not as hard evidence that any Israeli person or institution was responsible for killing Charlie. Readers should cross‑reference [Timeline](/Timeline/overview.md), [Motive](/Motive/overview.md), and [Planes](/Planes/overview.md) to see how these claims fit into, and are challenged within, the broader discussion.
+For these reasons, this page presents Israeli-origin search-pattern claims as **one type of circumstantial context** cited by some investigators, not as hard evidence that any Israeli person or institution was responsible for killing Charlie. Readers should cross-reference [Timeline](/Timeline/overview), [Motive](/Motive/overview), and [Planes](/Planes/overview) to see how these claims fit into, and are challenged within, the broader discussion.
+
+## Related Areas
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Google Searches](../GoogleSearches/overview)
+* [Timeline](../Timeline/overview)
+* [Planes](../Planes/overview)
+
+</div>
+<div>
+
+* [Motive](../Motive/overview)
+* [FBI](../FBI/overview)
+* [Proof Intel Services](../Proof_Intel_Services/overview)
+
+</div>
+</div>
 
 

@@ -26,7 +26,7 @@ This page consolidates key claims, timelines, and legal notes related to Tyler R
   - 11:44 – Walking on W 800 S (Ring camera)
   - 11:49 – Walking on S 800 W toward campus (Ring camera)
 - Time of shot: many summaries cite 12:23 p.m. MDT, while some references mention 12:27 p.m. The first radio report is often cited as ~12:26 p.m. (per police audio references). This discrepancy is one focus of the investigation.
-- Post-incident: online commentary and social‑media posts reference a claimed sighting of Robinson at a Dairy Queen in Orem at approximately 6:38 p.m. MDT, including an address and clothing description. These items are not independently verified here; they are used as leads for the [Travel](./Travel.md) page.
+- Post-incident: online commentary and social‑media posts reference a claimed sighting of Robinson at a Dairy Queen in Orem at approximately 6:38 p.m. MDT, including an address and clothing description. These items are not independently verified here; they are used as leads for the [Travel](./Travel) page.
 
 ## Weapon and ballistics (claims vs. official narrative)
 - Claimed official narrative item: recovery of a “high-powered bolt-action rifle” (often described in commentary as a Mauser 98 in .30‑06) in a wooded area.
@@ -63,10 +63,41 @@ This page consolidates key claims, timelines, and legal notes related to Tyler R
 ## Notes
 - This page aggregates claims, questions, and references appearing in public reporting, social‑media posts, and citizen‑investigator commentary. Items tagged or described as “claims,” “alleged,” or “hypothesized” are not vetted conclusions. Investigators should rely on primary documents (court filings, official releases, unedited footage) wherever possible.
 
-## Subpages and related topics
-- [Tyler on September 10, 2025](./Tyler_9_10_2025.mdx) – day-of timeline, surveillance footage analysis, and the 25-second movement from shooting position to Losee Center.
-- [Travel and movements](./Travel.md) – claimed routes, timelines, and travel logistics before and after the incident.
-- [Recruitment and intelligence-related claims](./Recruited.md) – allegations and hypotheses about possible intelligence connections; all items are presented as claims, not established fact.
-- [Girlfriend](./Girlfriend/overview.md) – publicly discussed information and claims about Robinson’s girlfriend and what she may have known.
-- [Trial and legal proceedings](./Trial/overview.md) – summaries of public reporting and commentary about the case’s legal process.
-- See the main index and other Level 2 pages (for example, [Timeline](/Timeline/overview.md), [Medical](/Medical/overview.md), [FBI](/FBI/overview.md), [Planes](/Planes/overview.md), and [TPUSA](/TPUSA/overview.md)) for broader context that intersects with Robinson-focused questions.
+## Pages in this Section
+
+<div style={{display:’grid’, gridTemplateColumns:’1fr 1fr’, gap:’0.5rem 2rem’,
+marginTop:’0.5rem’}}>
+<div>
+
+* [Tyler on September 10, 2025](./Tyler_9_10_2025.mdx)
+* [Travel and Movements](./Travel)
+* [Recruitment Claims](./Recruited)
+
+</div>
+<div>
+
+* [Girlfriend](./Girlfriend/overview)
+* [Trial and Legal Proceedings](./Trial/overview)
+
+</div>
+</div>
+
+## Related Areas
+
+<div style={{display:’grid’, gridTemplateColumns:’1fr 1fr’, gap:’0.5rem 2rem’,
+marginTop:’0.5rem’}}>
+<div>
+
+* [Proof Not Tyler](/Proof_Not_Tyler/overview)
+* [FBI](/FBI/overview)
+* [Gun & Bullet](/Gun_Bullet/overview)
+
+</div>
+<div>
+
+* [Cover-Up](/CoverUp/overview)
+* [Timeline](/Timeline/overview)
+* [Motive](/Motive/overview)
+
+</div>
+</div>

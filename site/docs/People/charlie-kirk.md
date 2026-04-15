@@ -45,7 +45,7 @@ Statements attributed to Kirk in the weeks before his death (drawn from X posts,
 For detailed analysis of Charlie Kirk's story, see:
 
 - [Charlie Kirk — Full Section](/Charlie/overview) — comprehensive overview, political significance, day-of context
-- [Autopsy and Medical](/Charlie/Autopsy) — forensic and medical questions
+- [Autopsy and Medical](/Charlie/Autopsy/overview) — forensic and medical questions
 - [Israel, Donors, and Motive](/Charlie/Israel_Donors_Motive) — the donor pressure and foreign policy dimension
 - [Timeline](/Timeline/overview) — full chronological sequence of events
 - [Motive](/Motive/overview) — all motive theories

@@ -24,3 +24,23 @@ This directory contains flight records and aircraft investigations related to th
 - [ ] Evidence collection
 - [ ] Analysis
 - [ ] Documentation
+
+## Related Areas
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Planes](/Planes/overview)
+* [Timeline](/Timeline/overview)
+* [Drones](/Drones/overview)
+
+</div>
+<div>
+
+* [Cover-Up](/CoverUp/overview)
+* [Proof Intel Services](/Proof_Intel_Services/overview)
+* [Israel](/Israel/overview)
+
+</div>
+</div>

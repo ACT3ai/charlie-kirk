@@ -1,3 +1,8 @@
+---
+id: Travel
+title: Tyler Robinson Travel
+sidebar_label: Travel
+---
 <a href="./overview" style={{display:'inline-block', marginBottom:'1rem',
 padding:'0.35rem 0.9rem', background:'#1a73e8', color:'#fff',
 borderRadius:'4px', textDecoration:'none', fontSize:'0.9rem'}}>
@@ -67,3 +72,23 @@ To clarify Robinson’s travel and movements, investigators continue to call for
 - Clarification of the **exact time of the shot**, and synchronized comparison with camera footage and dispatch records.
 
 Until such primary‑source material is comprehensively disclosed and independently reviewed, the travel narrative remains partly reconstructed from media reports and citizen‑investigator analyses, and should be treated accordingly.
+
+## Related Areas
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Shooting Locations](/Shooting_Locations/overview)
+* [Proof Not Tyler](/Proof_Not_Tyler/overview)
+* [Planes](/Planes/overview)
+
+</div>
+<div>
+
+* [FBI](/FBI/overview)
+* [Cover-Up](/CoverUp/overview)
+* [People](/People/overview)
+
+</div>
+</div>

@@ -10,7 +10,7 @@ borderRadius:'4px', textDecoration:'none', fontSize:'0.9rem'}}>
 
 This Level_3 page summarizes **claims that aircraft and drones played a direct or supporting role** in the operation that killed Charlie Kirk. These ideas go beyond the official rooftop rifle account and propose that platforms such as the U.S. Army‑linked HADES jet **N1098L** and multiple Egyptian military aircraft, as well as small unmanned aerial systems, may have been involved in surveillance, electronic interference, or even weapons delivery. All points here reflect **public commentary and citizen‑research threads**, not confirmed findings.
 
-For technical and flight‑path details, see also [Planes](/Planes/overview.md), [N1098L](/Planes/N1098L/overview.md), and [Drones](/Drones/overview.md).
+For technical and flight‑path details, see also [Planes](/Planes/overview), [N1098L](/Planes/N1098L/overview), and [Drones](/Drones/overview).
 
 ## HADES N1098L and U.S. Army ISR jet (claims)
 
@@ -59,12 +59,30 @@ While imaginative, these UAV‑based killer theories currently rest on **circums
 
 ## How aircraft and drone theories fit into “real killer” questions
 
-Within the broader [Real Killer](/Killer/overview.md) framework, aircraft and drone hypotheses serve to:
+Within the broader [Real Killer](/Killer/overview) framework, aircraft and drone hypotheses serve to:
 
 - Propose **alternative delivery mechanisms** (e.g., drone‑fired rounds, remotely operated weapons) that could account for disputed ballistics and acoustics.  
 - Suggest that the operation may have involved **state‑level or contractor‑grade capabilities**, rather than only a local individual with a bolt‑action rifle.  
 - Highlight **information gaps**—such as unreleased radar logs, military coordination records, and full‑resolution drone/aircraft footage—that would be crucial for confirming or rejecting these scenarios.
 
-Readers should cross‑check these claims against more detailed technical material in [Planes](/Planes/overview.md), [N1098L](/Planes/N1098L/overview.md), [Drones](/Drones/overview.md), [Videos](/Videos/overview.md), and [Timeline](/Timeline/overview.md), and maintain a clear distinction between **documented flight data**, **inferred capabilities**, and **speculative operational narratives**.
+Readers should cross‑check these claims against more detailed technical material in [Planes](/Planes/overview), [N1098L](/Planes/N1098L/overview), [Drones](/Drones/overview), [Videos](/Videos/overview), and [Timeline](/Timeline/overview), and maintain a clear distinction between **documented flight data**, **inferred capabilities**, and **speculative operational narratives**.
 
+## Related Areas
 
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Proof Intel Services](/Proof_Intel_Services/overview)
+* [Israel](/Israel/overview)
+* [Shooting Locations](/Shooting_Locations/overview)
+
+</div>
+<div>
+
+* [Timeline](/Timeline/overview)
+* [Cover-Up](/CoverUp/overview)
+* [Gun & Bullet](/Gun_Bullet/overview)
+
+</div>
+</div>

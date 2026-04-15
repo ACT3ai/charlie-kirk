@@ -28,7 +28,7 @@ Together, these sources form a mosaic of how the event unfolded from different v
 Investigators and commentators use video evidence for purposes such as:
 
 - **Timeline reconstruction** – Aligning events (arrival, speech segments, shot, response) with precise timestamps.
-- **Shooter‑location testing** – Comparing visual angles, muzzle flashes, and sound timing to proposed shooter positions in [Shooting Locations](/Shooting_Locations/overview.md) and [Tent](/Tent/overview.md).
+- **Shooter‑location testing** – Comparing visual angles, muzzle flashes, and sound timing to proposed shooter positions in [Shooting Locations](/Shooting_Locations/overview) and [Tent](/Tent/overview).
 - **Movement and behavior analysis** – Examining the movements of specific individuals, vehicles, or security personnel before and after the shot.
 - **Site‑change documentation** – Comparing pre‑ and post‑incident footage to identify alterations in structures, landscaping, or equipment.
 
@@ -40,14 +40,34 @@ Public commentary raises several concerns about how video has been handled:
 
 - Claims that some **high‑quality institutional footage** has not been fully released, or has only been shared in edited form.
 - Reports of **eyewitness videos being deleted or requested to be deleted**, with some individuals stating they retained copies despite such requests.
-- Allegations that certain online postings of video were **removed or limited** by platforms, intersecting with issues discussed in [Media Censorship](Media/Censorship.md) and [Censorship](/Censorship/overview.md).
+- Allegations that certain online postings of video were **removed or limited** by platforms, intersecting with issues discussed in [Media Censorship](Media/Censorship) and [Censorship](/Censorship/overview).
 
 These points remain allegations unless and until corroborated by formal records or official statements.
 
 ## Related sections
 
-- [Security Cameras Overview](cameras/security/overview.md) and [UVU Security Cameras](cameras/security/UVU_Security_Cameras.md) – for security‑system specifics.
-- [Shooting Locations](/Shooting_Locations/overview.md), [Tent](/Tent/overview.md), and [UVU Courtyard](/UVU/Courtyward.md) – for how video informs spatial and trajectory analysis.
-- [Media](Media/overview.md) and [Cover-up](CoverUp/overview.md) – for discussions of how video release and non‑release affect public understanding.
+- [Security Cameras Overview](cameras/security/overview) and [UVU Security Cameras](cameras/security/UVU_Security_Cameras) – for security‑system specifics.
+- [Shooting Locations](/Shooting_Locations/overview), [Tent](/Tent/overview), and [UVU Courtyard](/UVU/Courtyward) – for how video informs spatial and trajectory analysis.
+- [Media](Media/overview) and [Cover-up](CoverUp/overview) – for discussions of how video release and non‑release affect public understanding.
 
 As more footage is authenticated and released, this section can be expanded to incorporate clearer references and links to specific video sources.
+
+## Related Areas
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Shooting Locations](/Shooting_Locations/overview)
+* [Tent](/Tent/overview)
+* [UVU](/UVU/overview)
+
+</div>
+<div>
+
+* [Censorship](/Censorship/overview)
+* [Cover-Up Evidence](/CoverUp/overview)
+* [Timeline](/Timeline/overview)
+
+</div>
+</div>

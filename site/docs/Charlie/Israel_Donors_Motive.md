@@ -10,7 +10,7 @@ borderRadius:'4px', textDecoration:'none', fontSize:'0.9rem'}}>
 
 This Level_3 page compiles **claims and reported context** about Charlie Kirk’s relationship with Israel‑aligned donors, political allies, and foreign‑policy debates in the months before his death. It draws on the compiled research notes for this project, which in turn cite social‑media posts (primarily X/Twitter), video segments, long‑form articles, and Google Trends screenshots as source material. The goal is to organize these materials so readers can see how they inform motive theories without collapsing them into a single, definitive narrative.
 
-For broader framing of motive discussions, see [Motive](/Motive/overview.md) and [Israel](/Israel/overview.md). This page focuses specifically on **Charlie himself**—his reported statements, donor friction, and perceived risk—while flagging where claims remain unverified or contested.
+For broader framing of motive discussions, see [Motive](/Motive/overview) and [Israel](/Israel/overview). This page focuses specifically on **Charlie himself**—his reported statements, donor friction, and perceived risk—while flagging where claims remain unverified or contested.
 
 ## Reported inflection points in Charlie’s Israel posture (claims)
 
@@ -58,7 +58,7 @@ Readers should view this timeline as a **working synthesis of allegations**, not
 Beyond Charlie’s own words, the research notes tie his situation to broader **foreign and intelligence‑service theories**, often referencing flight‑tracking data (e.g., ADS‑B Exchange/Flightradar‑style sites), investigative X threads, and podcast or video breakdowns:
 
 - **Mossad/CIA responsibility claims:**  
-  Several passages argue, as a conclusion, that Mossad or a CIA‑linked faction orchestrated the assassination, citing factors such as alleged drone activity, a U.S. Army HADES spy plane (N1098L), and multiple Egyptian military aircraft near Provo in 2025. These arguments build on technical analyses covered in sections like [Planes](/Planes/overview.md), [Drones](/Drones/overview.md), and [Google Searches](/GoogleSearches/overview.md).
+  Several passages argue, as a conclusion, that Mossad or a CIA‑linked faction orchestrated the assassination, citing factors such as alleged drone activity, a U.S. Army HADES spy plane (N1098L), and multiple Egyptian military aircraft near Provo in 2025. These arguments build on technical analyses covered in sections like [Planes](/Planes/overview), [Drones](/Drones/overview), and [Google Searches](/GoogleSearches/overview).
 - **Security‑detail and TPUSA governance questions (claims):**  
   Notes assert that members of Charlie’s private security had prior links to Netanyahu or Israeli security environments, and that TPUSA internal dynamics (including board members and Charlie’s wife, Erika) may have shifted around the time of his changing views. These are serious allegations and remain unproven; they are included here because they shape how some investigators interpret motive, not because they are established fact.
 - **Institutional posture and leadership changes (claims):**  
@@ -73,6 +73,24 @@ Taken together, the cited materials and sources support **two broad, competing r
 - One view, reflected in mainstream reporting, sees a prominent conservative leader targeted by an alleged lone gunman with personal and ideological grievances.  
 - Another, reflected in this research corpus, sees Charlie as a figure in a high‑stakes struggle over Israel policy, donor influence, and foreign‑policy direction—where his reported willingness to challenge prior alignments could have created powerful enemies.
 
-This page does not choose between those interpretations. Instead, it documents the **specific claims** about Charlie’s words, relationships, and warnings so that readers can evaluate them alongside other evidence. For a wider context on how these ideas fit into the overall case, see [Charlie](/Charlie/overview.md), [Motive](/Motive/overview.md), [Israel](/Israel/overview.md), and [TPUSA](/TPUSA/overview.md).
+This page does not choose between those interpretations. Instead, it documents the **specific claims** about Charlie’s words, relationships, and warnings so that readers can evaluate them alongside other evidence. For a wider context on how these ideas fit into the overall case, see [Charlie](/Charlie/overview), [Motive](/Motive/overview), [Israel](/Israel/overview), and [TPUSA](/TPUSA/overview).
 
+## Related Areas
 
+<div style={{display:’grid’, gridTemplateColumns:’1fr 1fr’, gap:’0.5rem 2rem’,
+marginTop:’0.5rem’}}>
+<div>
+
+* [Israel](/Israel/overview)
+* [Motive](/Motive/overview)
+* [TPUSA](/TPUSA/overview)
+
+</div>
+<div>
+
+* [Timeline](/Timeline/overview)
+* [People](/People/overview)
+* [Proof Intel Services](/Proof_Intel_Services/overview)
+
+</div>
+</div>

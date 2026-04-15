@@ -11,7 +11,7 @@ This page concentrates on **security cameras operated on the UVU campus** that m
 
 ## UVU camera systems and coverage
 
-Key points about UVU’s camera systems include:
+Key points about UVU's camera systems include:
 
 - UVU is reported to have **campus‑wide surveillance** in many common areas, including walkways, parking lots, and building exteriors.
 - Some cameras may have had a view of **approach routes, crowd flows, and certain rooftops or elevated positions**, while others would be more limited.
@@ -31,8 +31,28 @@ These questions reflect the importance of UVU footage in either supporting or ch
 
 ## Relationship to broader video and security topics
 
-- For overall video sources, see [Videos](/Videos/overview.md).
-- For security and law‑enforcement coordination, see [Security & Law Enforcement](/security_law_enforcement/overview.md) and [FBI](/FBI/overview.md).
-- For spatial context, see [UVU](/UVU/overview.md), [UVU Courtyard](/UVU/Courtyward.md), and [Maps](maps/overview.md).
+- For overall video sources, see [Videos](/Videos/overview).
+- For security and law‑enforcement coordination, see [Security & Law Enforcement](/security_law_enforcement/overview) and [FBI](/FBI/overview).
+- For spatial context, see [UVU](/UVU/overview), [UVU Courtyard](/UVU/Courtyward), and [Maps](/maps/overview).
 
-As more details about UVU’s camera systems and specific recordings become public, readers will be able to form a clearer picture of how campus surveillance contributes to understanding the case.
+As more details about UVU's camera systems and specific recordings become public, readers will be able to form a clearer picture of how campus surveillance contributes to understanding the case.
+
+## Related Areas
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [UVU](/UVU/overview)
+* [Timeline](/Timeline/overview)
+* [Gun & Bullet](/Gun_Bullet/overview)
+
+</div>
+<div>
+
+* [Cover-Up](/CoverUp/overview)
+* [Tyler Robinson](/Tyler_Robinson/overview)
+* [FBI](/FBI/overview)
+
+</div>
+</div>

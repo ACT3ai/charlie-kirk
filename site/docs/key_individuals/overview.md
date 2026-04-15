@@ -24,3 +24,23 @@ This directory contains information about people involved in the Charlie Kirk in
 - [ ] Evidence collection
 - [ ] Analysis
 - [ ] Documentation
+
+## Related Areas
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [People](/People/overview)
+* [Charlie Kirk](/Charlie/overview)
+* [Tyler Robinson](/Tyler_Robinson/overview)
+
+</div>
+<div>
+
+* [Motive](/Motive/overview)
+* [Timeline](/Timeline/overview)
+* [FBI](/FBI/overview)
+
+</div>
+</div>

@@ -1,7 +1,12 @@
-<a href="/" style={{display:'inline-block', marginBottom:'1rem',
+---
+id: overview
+title: Tyler Robinson Girlfriend
+sidebar_label: Girlfriend
+---
+<a href="/Tyler_Robinson/overview" style={{display:'inline-block', marginBottom:'1rem',
 padding:'0.35rem 0.9rem', background:'#1a73e8', color:'#fff',
 borderRadius:'4px', textDecoration:'none', fontSize:'0.9rem'}}>
-← Home
+← Tyler Robinson
 </a>
 
 # Tyler Robinson Girlfriend
@@ -62,3 +67,23 @@ Key open questions often raised in investigative discussions include:
 - Are there additional communications (for example, Discord logs or emails) that clarify the dynamic between Robinson and Twiggs before the incident?
 
 Because this topic involves living individuals and sensitive personal history, readers should approach all claims with caution, distinguish clearly between **verified facts** and **speculation**, and rely on official court records and directly sourced reporting wherever possible.
+
+## Related Areas
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Proof Not Tyler](/Proof_Not_Tyler/overview)
+* [FBI](/FBI/overview)
+* [People](/People/overview)
+
+</div>
+<div>
+
+* [Cover-Up](/CoverUp/overview)
+* [Motive](/Motive/overview)
+* [Charlie Kirk](/Charlie/overview)
+
+</div>
+</div>

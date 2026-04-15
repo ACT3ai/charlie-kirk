@@ -54,3 +54,23 @@ This document provides a comprehensive list of all 128 topics related to the Cha
 - [ ] Categorization
 - [ ] Cross-references
 - [ ] Updates
+
+## Related Areas
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Charlie Kirk](/Charlie/overview)
+* [Timeline](/Timeline/overview)
+* [Motive](/Motive/overview)
+
+</div>
+<div>
+
+* [FBI](/FBI/overview)
+* [Israel](/Israel/overview)
+* [Cover-Up](/CoverUp/overview)
+
+</div>
+</div>

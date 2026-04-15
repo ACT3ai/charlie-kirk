@@ -21,7 +21,7 @@ Looking further back, several strands of context are often mentioned:
 - The broader geopolitical climate, including debates over Middle East policy, national security, and domestic extremism that framed how different stakeholders viewed Charlie and his platform.
 - Early online activity and search patterns—reported by investigators and commentators—suggesting that locations, people, or organizations later tied to the case were being researched well before 2025. These items are cited as possible signs of long‑term interest, not as proof of a specific plot.
 
-For more detailed discussion of Charlie’s background and political positioning, see the [Charlie](/Charlie/overview.md) and [Motive](/Motive/overview.md) sections.
+For more detailed discussion of Charlie’s background and political positioning, see the [Charlie](/Charlie/overview) and [Motive](/Motive/overview) sections.
 
 ## Early and mid‑2025: building tension (claims)
 
@@ -49,14 +49,47 @@ This section is intended as a **bridge between background and the day‑of timel
 
 - It connects long‑term context (Charlie’s role, donor relationships, geopolitical debates) to specific pre‑event actions and travel.
 - It helps readers understand why certain actors, aircraft, locations, and conversations are seen as relevant when assessing motive and planning.
-- It points toward other sections—such as [Timeline](/Timeline/overview.md), [Charlie](/Charlie/overview.md), [Motive](/Motive/overview.md), [Israel](/Israel/overview.md), [Planes](/Planes/overview.md), and [Tyler Robinson](/Tyler_Robinson/overview.md)—where the individual threads are explored in greater detail.
+- It points toward other sections—such as [Timeline](/Timeline/overview), [Charlie](/Charlie/overview), [Motive](/Motive/overview), [Israel](/Israel/overview), [Planes](/Planes/overview), and [Tyler Robinson](/Tyler_Robinson/overview)—where the individual threads are explored in greater detail.
 
 As more primary information becomes available, it should become easier to distinguish between **documented pre‑event facts** and **still‑unverified claims or interpretations** about what happened before September 10, 2025.
 
-## Level_3 Pages within this Section
+## Pages in This Section
 
-The following in-depth pages expand on specific “before” themes and should be consulted alongside this overview:
+<div style={{display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem'}}>
+<div>
 
-- [2025 Political Pressure and Key Meetings Before UVU (Claims)](Political_Pressure_And_Meetings_2025.md)
-- [Pre‑Event Flights and Travel Around Utah (Claims)](PreEvent_Flights_And_Travel.md)
-- [Reported Pre‑Event Searches and Reconnaissance (Claims)](PreEvent_Searches_And_Recon.md)
+* [Political Pressure & Meetings 2025](./Political_Pressure_And_Meetings_2025)
+* [Pre-Event Flights & Travel](./PreEvent_Flights_And_Travel)
+
+</div>
+<div>
+
+* [Pre-Event Searches & Recon](./PreEvent_Searches_And_Recon)
+
+</div>
+</div>
+
+**Political Pressure & Meetings 2025** examines the escalating donor friction, White House strategy sessions, and intervention-style meetings in the months before the UVU event. It documents claims about Charlie's growing tensions with pro-Israel allies and the high-level confrontations that commentators cite as important context.
+
+**Pre-Event Flights & Travel** catalogs the unusual aircraft activity around Utah in early September 2025, including Egyptian Air Force flights (SU-BTT), the HADES ISR jet N1098L, and private jet N888KG. These open-source flight-tracking claims are used by researchers to argue that foreign and military-grade aviation assets were present before and during Charlie's visit.
+
+**Pre-Event Searches & Recon** compiles Google Trends data and OSINT analyses showing spikes in search interest for UVU buildings, Utah locations, attorneys, medical personnel, and people in Charlie's orbit well before the event. These patterns are treated as circumstantial evidence of possible advance reconnaissance.
+
+## Related Areas
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem', marginTop:'0.5rem'}}>
+<div>
+
+* [Timeline Overview](/Timeline/overview)
+* [Israel Overview](/Israel/overview)
+* [Planes Overview](/Planes/overview)
+
+</div>
+<div>
+
+* [Motive Overview](/Motive/overview)
+* [FBI Investigation](/FBI/overview)
+* [Cover-Up Evidence](/CoverUp/overview)
+
+</div>
+</div>

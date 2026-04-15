@@ -12,7 +12,7 @@ This Level_3 page compiles **widely circulated quotes attributed to Charlie Kirk
 
 Where possible, this page points to the *types* of original sources cited (e.g., specific X/Twitter users, YouTube clips, and articles); readers should consult those primary materials, where available, to evaluate authenticity and context.
 
-For broader motive analysis, see [Motive](/Motive/overview.md) and [Donor Pressure, Israel, and Foreign‑Policy Motive Theories](/Motive/Donors_Israel_ForeignPolicy.md). For Charlie‑focused synthesis, see [Charlie](/Charlie/overview.md).
+For broader motive analysis, see [Motive](/Motive/overview) and [Donor Pressure, Israel, and Foreign-Policy Motive Theories](/Motive/Donors_Israel_ForeignPolicy). For Charlie-focused synthesis, see [Charlie](/Charlie/overview).
 
 ## “If I go against Israel, they will kill me” (claims)
 
@@ -72,6 +72,26 @@ When considering Charlie’s reported Israel‑related statements:
 - **Context matters:** Even if individual quotes are authentic, their **tone, audience, and circumstances** (e.g., private venting vs. formal policy position) can significantly affect what they reasonably show about motive or risk.  
 - **Avoid over‑attribution:** Strong statements about fear or anger, taken in isolation, **do not prove** that any particular person, donor, or country acted on them.
 
-This page is meant to collect **what has been publicly attributed to Charlie about Israel**, not to decide who believed what or who is guilty. For how these alleged quotes feed into motive narratives, see [Motive](/Motive/overview.md) and [Donor Pressure, Israel, and Foreign‑Policy Motive Theories](/Motive/Donors_Israel_ForeignPolicy.md).
+This page is meant to collect **what has been publicly attributed to Charlie about Israel**, not to decide who believed what or who is guilty. For how these alleged quotes feed into motive narratives, see [Motive](/Motive/overview) and [Donor Pressure, Israel, and Foreign-Policy Motive Theories](/Motive/Donors_Israel_ForeignPolicy).
+
+## Related Areas
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Charlie Kirk](../Charlie/overview)
+* [Motive](../Motive/overview)
+* [Before Events](../Before/overview)
+
+</div>
+<div>
+
+* [People](../People/overview)
+* [Cover-Up](../CoverUp/overview)
+* [Proof Intel Services](../Proof_Intel_Services/overview)
+
+</div>
+</div>
 
 

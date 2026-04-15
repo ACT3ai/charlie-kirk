@@ -1,7 +1,7 @@
 <a href="./overview" style={{display:'inline-block', marginBottom:'1rem',
 padding:'0.35rem 0.9rem', background:'#1a73e8', color:'#fff',
 borderRadius:'4px', textDecoration:'none', fontSize:'0.9rem'}}>
-← Charlie Kirk
+← Charlie Kirk Autopsy
 </a>
 
 # Utah Autopsy Law, Medical‑Examiner Practices, and Commentary (Claims)
@@ -15,7 +15,7 @@ This Level_3 page provides additional context on **Utah autopsy law and standard
 
 Nothing here alleges that any specific person or institution violated the law or deliberately manipulated the autopsy process. Instead, it clarifies **what Utah law appears to require** and how that shapes what the public can see.
 
-For a broader medical‑forensic view, see [Medical](/Medical/overview.md) and its page on [autopsy and the medical examiner](../Medical/autopsy_and_medical_examiner.md).
+For a broader medical‑forensic view, see [Medical](/Medical/overview) and its page on [autopsy and the medical examiner](/Medical/autopsy_and_medical_examiner).
 
 ## SB0082 – Autopsy Photo Amendments (as summarized in public sources)
 
@@ -57,12 +57,32 @@ These are **interpretations and policy criticisms**, not evidence that Utah offi
 
 ## How this legal context fits into autopsy debates
 
-Within the [Charlie Kirk Autopsy](Autopsy.md) and [Medical](/Medical/overview.md) discussions:
+Within the [Charlie Kirk Autopsy](./overview) and [Medical](/Medical/overview) discussions:
 
 - **SB0082 and standard practices explain why outside experts and the public currently lack direct access** to key autopsy materials.  
 - The same lack of access helps explain why **ballistics and wound‑trajectory debates** lean heavily on photos, video, and unofficial medical descriptions.  
 - Any future clarity is likely to depend on **what, if anything, is released through court processes, family decisions, or authorized summaries** under Utah law.
 
-Readers should therefore see this page as background on **why the autopsy record is hard to access**, not as a statement that the law was tailored for or misused in Charlie’s case. For technical medical and ballistic analysis, see [ballistics and wound analysis](../Medical/ballistics_and_wound_analysis.md) and related medical pages.
+Readers should therefore see this page as background on **why the autopsy record is hard to access**, not as a statement that the law was tailored for or misused in Charlie’s case. For technical medical and ballistic analysis, see [ballistics and wound analysis](/Medical/ballistics_and_wound_analysis) and related medical pages.
+
+## Related Areas
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [No Autopsy Performed (Claims)](./no-autopsy-claims)
+* [Death Certificate Questions](./death-certificate)
+* [Law 2: Autopsy Transparency](/Fix/Law2)
+
+</div>
+<div>
+
+* [Cover-Up Evidence](/CoverUp/overview)
+* [Israeli Search Patterns (Claims)](/Israel/Israeli_Search_Patterns_Claims)
+* [Legal Process & Gag Orders](/After/Legal_Process_Gag_Orders_And_Secrecy)
+
+</div>
+</div>
 
 

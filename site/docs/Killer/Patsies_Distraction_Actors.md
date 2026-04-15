@@ -10,7 +10,7 @@ borderRadius:'4px', textDecoration:'none', fontSize:'0.9rem'}}>
 
 This Level_3 page compiles **claims about “patsies,” distraction figures, and questionable witness roles** that appear in citizen‑research threads around the Charlie Kirk case. The idea in these narratives is that, if a more sophisticated operation killed Charlie, some individuals may have been used to **draw attention, shape the storyline, or absorb blame**, without necessarily being the true killer. All references here are to public posts and media segments and should be treated as **unproven allegations and hypotheses**, not findings of guilt.
 
-For broader framing, see [Real Killer](/Killer/overview.md), [Tyler Robinson](/Tyler_Robinson/overview.md), and [Cover‑Up](/CoverUp/overview.md).
+For broader framing, see [Real Killer](/Killer/overview), [Tyler Robinson](/Tyler_Robinson/overview), and [Cover‑Up](/CoverUp/overview).
 
 ## “Mr. Shoot Me” George Zinn (claims)
 
@@ -85,6 +85,24 @@ Taken together, these stories about **patsies and distraction actors** are used 
 - Detained and released individuals (such as Qureshi) and later jailhouse witnesses (like Fox) **help anchor official or semi‑official narratives** that may differ from what actually happened.  
 - Certain high‑visibility eyewitnesses (like Baird) are viewed with suspicion when they appear both close to the event and prominently positioned in later memorials.
 
-These interpretations remain **speculative**. Readers should cross‑reference this page with [Timeline](/Timeline/overview.md), [Videos](/Videos/overview.md), [Tyler Robinson](/Tyler_Robinson/overview.md), and [Cover‑Up](/CoverUp/overview.md), and rely wherever possible on **primary‑source documents, footage, and court records** rather than social‑media commentary alone.
+These interpretations remain **speculative**. Readers should cross‑reference this page with [Timeline](/Timeline/overview), [Videos](/Videos/overview), [Tyler Robinson](/Tyler_Robinson/overview), and [Cover‑Up](/CoverUp/overview), and rely wherever possible on **primary‑source documents, footage, and court records** rather than social‑media commentary alone.
 
+## Related Areas
 
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Proof Not Tyler](/Proof_Not_Tyler/overview)
+* [Tyler Robinson](/Tyler_Robinson/overview)
+* [FBI](/FBI/overview)
+
+</div>
+<div>
+
+* [Cover-Up](/CoverUp/overview)
+* [People](/People/overview)
+* [Motive](/Motive/overview)
+
+</div>
+</div>

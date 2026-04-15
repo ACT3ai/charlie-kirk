@@ -93,7 +93,7 @@ Beyond formal laws, many suggestions involve changes in **institutional practice
 - Enhancing **digital evidence handling**, including clear policies on how citizen footage is collected, preserved, and — when appropriate — shared with the public.
 - Encouraging law enforcement and security organizations to **communicate more clearly and proactively** about what they are doing and why, to counter misinformation and build trust.
 
-These ideas intersect with topic areas such as [Security & Law Enforcement](/security_law_enforcement/overview), [Medical](/Medical/overview), [Autopsy](../Charlie/Autopsy), and [Media Censorship](../Media/Censorship).
+These ideas intersect with topic areas such as [Security & Law Enforcement](/security_law_enforcement/overview), [Medical](/Medical/overview), [Autopsy](../Charlie/Autopsy/overview), and [Media Censorship](../Media/Censorship).
 
 ## Role of Civil Society and Community
 
@@ -104,9 +104,44 @@ Finally, many "fix" proposals emphasize the role of **civil society and communit
 
 Together, these efforts aim to ensure that the lessons drawn from the Charlie Kirk case lead to constructive change rather than deepening cynicism. For related discussions about voting and civic action, see [Vote](/Vote/overview).
 
-## Additional Pages in This Section
+## Pages in This Section
 
-- [Conclusion Logic — Evidence Threshold Standards](./Conclusion_Logic)
-- [Churches — Faith Community Response](./Churches)
-- [TPUSA — Organizational Reform Proposals](./TSUSA)
-- [Politicians — Political Accountability](./Politicans)
+<div style={{display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem'}}>
+<div>
+
+* [Law 1: FBI & DOJ Disclosure](./Law1)
+* [Law 2: Intelligence Disclosure](./Law2)
+* [Law 3: Mandate the Investigation](./Law3)
+* [Law 4: Trusted Investigators](./Law4)
+
+</div>
+<div>
+
+* [Churches — Faith Community Response](./Churches)
+* [Politicians — Political Accountability](./Politicans)
+* [TPUSA — Organizational Reform](./TSUSA)
+
+</div>
+</div>
+
+* [Conclusion Logic — Evidence Threshold Standards](./Conclusion_Logic)
+
+## Related Areas
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Cover Up](/CoverUp/overview)
+* [Proof Intel Services](/Proof_Intel_Services/overview)
+* [Proof Not Tyler](/Proof_Not_Tyler/overview)
+
+</div>
+<div>
+
+* [Your Actions Fix It](/Your_Actions_Fix_It/overview)
+* [FBI](/FBI/overview)
+* [CIA](/CIA/overview)
+
+</div>
+</div>

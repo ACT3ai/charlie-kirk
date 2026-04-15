@@ -24,3 +24,23 @@ This directory contains information about legal proceedings and evidence handlin
 - [ ] Evidence collection
 - [ ] Analysis
 - [ ] Documentation
+
+## Related Areas
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [FBI](/FBI/overview)
+* [Cover-Up](/CoverUp/overview)
+* [Proof Not Tyler](/Proof_Not_Tyler/overview)
+
+</div>
+<div>
+
+* [Tyler Robinson](/Tyler_Robinson/overview)
+* [Timeline](/Timeline/overview)
+* [Autopsy](/Charlie/Autopsy/overview)
+
+</div>
+</div>

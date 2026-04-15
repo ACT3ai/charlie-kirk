@@ -21,3 +21,23 @@ This directory contains information about possible distraction patsies and false
 - [ ] Evidence collection
 - [ ] Analysis
 - [ ] Documentation
+
+## Related Areas
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Proof Not Tyler](/Proof_Not_Tyler/overview)
+* [Proof Intel Services](/Proof_Intel_Services/overview)
+* [FBI](/FBI/overview)
+
+</div>
+<div>
+
+* [Cover-Up Evidence](/CoverUp/overview)
+* [Motive](/Motive/overview)
+* [Timeline](/Timeline/overview)
+
+</div>
+</div>

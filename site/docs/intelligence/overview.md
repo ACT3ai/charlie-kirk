@@ -28,7 +28,7 @@ Several threads involve **digital monitoring and intelligence‑style analysis**
 - References to potential use of **signals intelligence** (such as detection of specific phones or communication patterns) that could indicate who was present or in contact at key times.
 - Discussions of **online communities and platforms** where individuals linked to the case may have interacted, which raise questions about whether and how such spaces were being monitored.
 
-These topics intersect with [Google Searches](/GoogleSearches/overview.md), [Drones](/Drones/overview.md), [Planes](/Planes/overview.md), and [Tyler Robinson Recruited](Tyler_Robinson/Recruited.md).
+These topics intersect with [Google Searches](/GoogleSearches/overview), [Drones](/Drones/overview), [Planes](/Planes/overview), and [Tyler Robinson Recruited](/Tyler_Robinson/Recruited).
 
 ## Distinguishing context from accusation
 
@@ -36,12 +36,26 @@ Because intelligence themes can easily escalate into broad accusations, this sec
 
 - Many references to intelligence services are **contextual**—explaining possible capabilities or historical patterns—rather than direct evidence of involvement.
 - Solid attribution would require **documented operational links**, such as orders, communications, or admissions, none of which are currently public.
-- Oversimplifying complex intelligence narratives into “guilty” vs “innocent” conclusions risks misrepresenting both individuals and institutions.
+- Oversimplifying complex intelligence narratives into "guilty" vs "innocent" conclusions risks misrepresenting both individuals and institutions.
 
 Readers should therefore treat intelligence‑related content as an important **background dimension** of the case, but not as a shortcut to assigning responsibility.
 
-## Related sections
+## Related Areas
 
-- [CIA](/CIA/overview.md) and [FBI](/FBI/overview.md) – for agency‑specific discussions and federal investigative posture.
-- [Motive](/Motive/overview.md), [Israel](/Israel/overview.md), and [Killer](/Killer/overview.md) – for how intelligence themes intersect with geopolitical and operational theories.
-- [Planes](/Planes/overview.md), [Drones](/Drones/overview.md), and [Google Searches](/GoogleSearches/overview.md) – for technical and data‑driven analyses often linked to intelligence capabilities.
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [CIA](/CIA/overview)
+* [FBI](/FBI/overview)
+* [Motive](/Motive/overview)
+
+</div>
+<div>
+
+* [Israel](/Israel/overview)
+* [Planes](/Planes/overview)
+* [Proof Intel Services](/Proof_Intel_Services/overview)
+
+</div>
+</div>

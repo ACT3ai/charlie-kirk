@@ -37,7 +37,7 @@ Collective action sustains attention and creates accountability when individual 
 Democratic participation offers powerful tools for change:
 
 - **Research candidates** – Before elections, investigate how candidates have responded to questions about transparency, police accountability, medical examiner independence, and related issues.
-- **Vote strategically** – Support candidates at all levels who demonstrate commitment to openness, rule of law, and institutional accountability. See [Politicians](/Fix/Politicans.md) for related discussion.
+- **Vote strategically** – Support candidates at all levels who demonstrate commitment to openness, rule of law, and institutional accountability. See [Politicians](/Fix/Politicans) for related discussion.
 - **Ballot initiatives and referenda** – Where available, support or create ballot measures that would strengthen public-records laws, reform autopsy procedures, or enhance oversight mechanisms.
 - **Recall or pressure campaigns** – In cases where elected officials actively obstruct transparency, consider whether lawful recall efforts or public pressure campaigns are appropriate and feasible.
 
@@ -74,7 +74,7 @@ Broader systemic change requires advocacy for specific reforms:
 - **Support law enforcement accountability** – Back measures that enhance oversight of police and security agencies, including body camera requirements, civilian review boards, and whistleblower protections.
 - **Demand aviation and surveillance transparency** – Call for clear rules about disclosure of flight data, drone usage, and other surveillance activities in civilian settings.
 
-These reforms address root causes and help prevent future incidents from being similarly obscured. See [How To Fix](/Fix/overview.md) for detailed discussion of proposed reforms.
+These reforms address root causes and help prevent future incidents from being similarly obscured. See [How To Fix](/Fix/overview) for detailed discussion of proposed reforms.
 
 ## Personal preparation and resilience
 
@@ -89,10 +89,30 @@ Sustained engagement over time is more valuable than intense but short-lived bur
 
 ## How to use this section
 
-This [Your Actions Fix It](/Your_Actions_Fix_It/overview.md) page is designed as a **practical action guide**:
+This [Your Actions Fix It](/Your_Actions_Fix_It/overview) page is designed as a **practical action guide**:
 
 - Choose actions that fit your skills, resources, and circumstances—not everyone can do everything, but everyone can do something.
 - Start with small, achievable steps and build from there as you gain experience and connections.
 - Connect with others whenever possible; collective action is more effective and sustainable than isolated individual efforts.
-- Review related sections—[Fix](/Fix/overview.md), [Politicians](/Fix/Politicans.md), [Vote](/Vote/overview.md)—for additional context and specific reform proposals.
+- Review related sections—[Fix](/Fix/overview), [Politicians](/Fix/Politicans), [Vote](/Vote/overview)—for additional context and specific reform proposals.
 - Remember that your actions matter: citizen engagement has historically been the driving force behind transparency, accountability, and justice reforms.
+
+## Related Areas
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Fix](/Fix/overview)
+* [Charlie Kirk](/Charlie/overview)
+* [Cover-Up Evidence](/CoverUp/overview)
+
+</div>
+<div>
+
+* [Censorship](/Censorship/overview)
+* [FBI](/FBI/overview)
+* [Proof Intel Services](/Proof_Intel_Services/overview)
+
+</div>
+</div>

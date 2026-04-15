@@ -24,3 +24,23 @@ This directory contains information about UVU and educational institution respon
 - [ ] Evidence collection
 - [ ] Analysis
 - [ ] Documentation
+
+## Related Areas
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [UVU](/UVU/overview)
+* [Timeline](/Timeline/overview)
+* [Charlie Kirk](/Charlie/overview)
+
+</div>
+<div>
+
+* [Cover-Up](/CoverUp/overview)
+* [Gun & Bullet](/Gun_Bullet/overview)
+* [Medical](/Medical/overview)
+
+</div>
+</div>

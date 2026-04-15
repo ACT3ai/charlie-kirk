@@ -10,7 +10,7 @@ borderRadius:'4px', textDecoration:'none', fontSize:'0.9rem'}}>
 
 This Level_3 page summarizes **how official sources and mainstream reporting have described Tyler Robinson’s alleged motives**, focusing on personal and ideological factors. It does **not** decide whether those allegations are true; it simply organizes what has been reported in charging documents, court coverage, and media, and contrasts that with how alternative‑theory discussions treat his role.
 
-For fuller context on Tyler himself, see [Tyler Robinson](/Tyler_Robinson/overview.md) and [Tyler Robinson Trial](/Tyler_Robinson/Trial/overview.md). For alternative theories about who may have carried out or enabled the killing, see [Real Killer](/Killer/overview.md).
+For fuller context on Tyler himself, see [Tyler Robinson](/Tyler_Robinson/overview) and [Tyler Robinson Trial](/Tyler_Robinson/Trial/overview). For alternative theories about who may have carried out or enabled the killing, see [Real Killer](/Killer/overview).
 
 ## Official and mainstream descriptions of motive (as reported)
 
@@ -43,7 +43,7 @@ These reinterpretations do not negate the official motive narrative; they illust
 
 ## Cautions about drawing conclusions from alleged motives
 
-When considering Tyler’s alleged motives, several cautionary points from [Motive](/Motive/overview.md) apply especially strongly:
+When considering Tyler’s alleged motives, several cautionary points from [Motive](/Motive/overview) apply especially strongly:
 
 - **Allegations vs. proof:** Prosecutors’ descriptions of motive are part of their case and must be tested in court. They help explain why the state believes Tyler acted, but they are **not convictions**.  
 - **Complex human factors:** Personal grievance, ideological beliefs, and mental‑health issues can coexist and interact in complex ways; reducing any individual to a single motive risks oversimplification.  
@@ -51,4 +51,22 @@ When considering Tyler’s alleged motives, several cautionary points from [Moti
 
 Readers should therefore treat this page as a summary of **how Tyler’s alleged motives are described in official and mainstream narratives**, and use it as one component among many when evaluating the wider case.
 
+## Related Areas
 
+<div style={{display:’grid’, gridTemplateColumns:’1fr 1fr’, gap:’0.5rem 2rem’,
+marginTop:’0.5rem’}}>
+<div>
+
+* [Tyler Robinson](/Tyler_Robinson/overview)
+* [Proof Not Tyler](/Proof_Not_Tyler/overview)
+* [Killer Theories](/Killer/overview)
+
+</div>
+<div>
+
+* [Timeline](/Timeline/overview)
+* [FBI Investigation](/FBI/overview)
+* [Cover-Up Evidence](/CoverUp/overview)
+
+</div>
+</div>

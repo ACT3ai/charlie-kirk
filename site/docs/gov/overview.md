@@ -34,9 +34,29 @@ Understanding the legal framework around records and evidence helps distinguish 
 
 Government evidence questions intersect with many other sections:
 
-- [Cover-up](CoverUp/overview.md) and [After](/After/overview.md) – for site changes and post‑incident actions viewed as potentially affecting evidence.
-- [Autopsy](Charlie/Autopsy.md) and [Medical](/Medical/overview.md) – for how medical records and autopsy materials are governed by law.
-- [Media Censorship](Media/Censorship.md) and [Censorship](/Censorship/overview.md) – for concerns about access to footage and public information.
-- [FBI](/FBI/overview.md), [CIA](/CIA/overview.md), and [Legal Investigation](/legal_investigation/overview.md) – for institutional roles in collecting, managing, and disclosing evidence.
+- [Cover-up](/CoverUp/overview) and [After](/After/overview) – for site changes and post‑incident actions viewed as potentially affecting evidence.
+- [Autopsy](/Charlie/Autopsy/overview) and [Medical](/Medical/overview) – for how medical records and autopsy materials are governed by law.
+- [Media Censorship](/Media/Censorship) and [Censorship](/Censorship/overview) – for concerns about access to footage and public information.
+- [FBI](/FBI/overview), [CIA](/CIA/overview), and [Legal Investigation](/legal_investigation/overview) – for institutional roles in collecting, managing, and disclosing evidence.
 
 Readers should treat this page as a **guide to the kinds of evidence‑handling issues being discussed**, not as a conclusion that any particular agency has engaged in deliberate misconduct. Whenever possible, conclusions should be grounded in documented procedures, court filings, and verified records.
+
+## Related Areas
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [FBI](/FBI/overview)
+* [Cover-Up](/CoverUp/overview)
+* [Charlie Kirk](/Charlie/overview)
+
+</div>
+<div>
+
+* [Proof Intel Services](/Proof_Intel_Services/overview)
+* [Timeline](/Timeline/overview)
+* [Autopsy](/Charlie/Autopsy/overview)
+
+</div>
+</div>

@@ -25,9 +25,9 @@ Public reporting and commentary describe Charlie Kirk as:
 
 Within this project:
 
-- His **biographical and political significance** is outlined in [Charlie](/Charlie/overview.md).  
-- Alleged shifts in his views on Israel, donors, and foreign policy are discussed—cautiously—in [Motive](/Motive/overview.md), [Donor Pressure, Israel, and Foreign‑Policy Motive Theories](/Motive/Donors_Israel_ForeignPolicy.md), and [Israel](/Israel/overview.md).  
-- Medical and forensic questions related to his death are covered in [Charlie Kirk Autopsy](../Charlie/Autopsy.md) and the [Medical](/Medical/overview.md) section.
+- His **biographical and political significance** is outlined in [Charlie](/Charlie/overview).  
+- Alleged shifts in his views on Israel, donors, and foreign policy are discussed—cautiously—in [Motive](/Motive/overview), [Donor Pressure, Israel, and Foreign‑Policy Motive Theories](/Motive/Donors_Israel_ForeignPolicy), and [Israel](/Israel/overview).  
+- Medical and forensic questions related to his death are covered in [Charlie Kirk Autopsy](../Charlie/Autopsy/overview) and the [Medical](/Medical/overview) section.
 
 These sections draw on a mix of **mainstream news, interviews, and online commentary**; readers should always distinguish between well‑documented facts and more speculative claims.
 
@@ -41,10 +41,28 @@ According to official documents and mainstream coverage, Tyler Robinson is:
 
 Within this project:
 
-- Tyler’s publicly described background and legal situation are covered in [Tyler Robinson](/Tyler_Robinson/overview.md) and its subpages (for example, [Travel](/Tyler/Travel.md), [Girlfriend](Tyler_Robinson/Girlfriend/overview.md), and [Trial](Tyler_Robinson/Trial/overview.md)).  
-- Alleged personal and ideological motives are summarized in [Tyler Robinson’s Alleged Personal and Ideological Motives (As Reported)](/Motive/Tyler_Robinson_Alleged_Motive.md).  
-- Alternative theories that suggest he may not have been the sole or actual shooter are explored, as **claims**, in [Real Killer](/Killer/overview.md) and related pages.
+- Tyler’s publicly described background and legal situation are covered in [Tyler Robinson](/Tyler_Robinson/overview) and its subpages (for example, [Travel](/Tyler/Travel), [Girlfriend](Tyler_Robinson/Girlfriend/overview), and [Trial](Tyler_Robinson/Trial/overview)).  
+- Alleged personal and ideological motives are summarized in [Tyler Robinson’s Alleged Personal and Ideological Motives (As Reported)](/Motive/Tyler_Robinson_Alleged_Motive).  
+- Alternative theories that suggest he may not have been the sole or actual shooter are explored, as **claims**, in [Real Killer](/Killer/overview) and related pages.
 
 Mentioning Tyler in this project reflects his central role **in official narratives and public debate**. It does not prejudge the outcome of his case, which must be determined through the courts.
 
+## Related Areas
 
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Charlie Kirk](/Charlie/overview)
+* [Motive Analysis](/Motive/overview)
+* [Timeline](/Timeline/overview)
+
+</div>
+<div>
+
+* [Proof Not Tyler](/Proof_Not_Tyler/overview)
+* [TPUSA](/TPUSA/overview)
+* [Medical](/Medical/overview)
+
+</div>
+</div>

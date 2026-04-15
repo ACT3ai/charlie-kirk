@@ -10,7 +10,7 @@ borderRadius:'4px', textDecoration:'none', fontSize:'0.9rem'}}>
 # Locations
 
 ## Overview
-This page provides a high‑level guide to the **key locations** that appear throughout the Charlie Kirk investigation. It is not an exhaustive atlas, but a way to understand how different places—campus sites, hospitals, airports, businesses, and residential addresses—fit into the broader narrative. Specific location details are developed in topic‑focused sections such as [UVU](/UVU/overview.md), [Maps](maps/overview.md), [Planes](/Planes/overview.md), and [Tyler Robinson](/Tyler_Robinson/overview.md).
+This page provides a high‑level guide to the **key locations** that appear throughout the Charlie Kirk investigation. It is not an exhaustive atlas, but a way to understand how different places—campus sites, hospitals, airports, businesses, and residential addresses—fit into the broader narrative. Specific location details are developed in topic‑focused sections such as [UVU](/UVU/overview), [Maps](maps/overview), [Planes](/Planes/overview), and [Tyler Robinson](/Tyler_Robinson/overview).
 
 ## Core locations
 
@@ -36,9 +36,29 @@ These locations are used to test whether specific travel paths, meeting claims, 
 
 Readers should use this Locations page as a **navigation aid**:
 
-- For maps and spatial relationships, see [Maps](maps/overview.md) and related diagrams.
-- For campus‑specific details, see [UVU](/UVU/overview.md) and [UVU Courtyard](/UVU/Courtyward.md).
-- For aviation and long‑distance movements, see [Planes](/Planes/overview.md) and associated subpages.
-- For individual‑focused movement and residential addresses, see [Tyler Robinson](/Tyler_Robinson/overview.md) and [Travel](/Tyler/Travel.md).
+- For maps and spatial relationships, see [Maps](maps/overview) and related diagrams.
+- For campus‑specific details, see [UVU](/UVU/overview) and [UVU Courtyard](/UVU/Courtyward).
+- For aviation and long‑distance movements, see [Planes](/Planes/overview) and associated subpages.
+- For individual‑focused movement and residential addresses, see [Tyler Robinson](/Tyler_Robinson/overview) and [Travel](/Tyler/Travel).
 
 Location information is most useful when combined with timelines, video evidence, and verified records. As more precise or newly verified location data becomes available, it can be incorporated into the relevant topic pages and referenced from here.
+
+## Related Areas
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Shooting Locations](/Shooting_Locations/overview)
+* [UVU](/UVU/overview)
+* [Tent](/Tent/overview)
+
+</div>
+<div>
+
+* [Timeline](/Timeline/overview)
+* [Charlie Kirk](/Charlie/overview)
+* [Motive](/Motive/overview)
+
+</div>
+</div>

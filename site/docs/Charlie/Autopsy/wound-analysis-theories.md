@@ -1,0 +1,93 @@
+<a href="./overview" style={{display:'inline-block', marginBottom:'1rem',
+padding:'0.35rem 0.9rem', background:'#1a73e8', color:'#fff',
+borderRadius:'4px', textDecoration:'none', fontSize:'0.9rem'}}>
+← Charlie Kirk Autopsy
+</a>
+
+# Wound Analysis & Competing Theories
+
+Without a publicly released autopsy report, the forensic debate about Charlie Kirk's wound has been driven by video analysis, physics arguments, and competing expert interpretations. This page documents the major competing theories and the forensic evidence cited for each.
+
+## The Official Narrative
+
+The prosecution's case in *State of Utah v. Tyler Alexander Robinson* asserts that Charlie was struck by a rifle round fired from an elevated position to the east. The wound is described in public reporting as a **neck wound** that proved fatal.
+
+However, the **ATF firearm analysis** on the bullet recovered from the autopsy was **inconclusive** — it could not forensically match the bullet to Tyler Robinson's rifle. The defense has cited this as exculpatory evidence and has demanded a six-month delay for independent forensic analysis. Multiple DNA profiles were found on evidence and the rifle.
+
+## Entry vs. Exit Wound Debate
+
+A central forensic question is whether the visible wound on the front of Charlie's neck is an **entry wound** or an **exit wound**:
+
+- **Entry wound (front):** Would suggest the shot came from in front of or beside Charlie — inconsistent with the rooftop-to-the-east narrative
+- **Exit wound (front):** Would be consistent with a shot from behind, but investigators question the wound characteristics — a .30-06 round from the east "would have blown his neck out" and would have projected blood onto the white tarp behind him, which reportedly did not occur
+
+The absence of autopsy photographs and detailed wound measurements means this debate cannot be settled through medical evidence alone.
+
+## The Exploding Microphone Theory
+
+**Jon Bray** has advanced a theory that the mechanism of injury was not a rifle bullet but rather a **small concealed explosive charge** in or near the **RODE Wireless PRO lavalier microphone** Charlie was wearing. Key claims:
+
+- **Shirt deformation:** Video analysis shows Charlie's shirt exhibiting a "puff" or blast effect that Bray argues is inconsistent with a bullet impact and consistent with an explosive detonation
+- **Necklace displacement:** Charlie's chain/necklace was "violently displaced" in a trajectory that Bray says matches explosive force, not ballistic impact
+- **Magnetic clasp as projectile:** The mic's magnetic clasp allegedly became a projectile — "a black rectangular object" that Bray claims ejected from the neck area, creating a **rectangular wound** (not a round bullet wound)
+- **Blood timing:** The heaviest blood flow reportedly appeared only **after** the rectangular object fell from the wound, and blood appeared **multiple frames after** the shirt disturbance — Bray argues this sequence is incompatible with a gunshot
+- **No ballistic signatures:** Bray claims video shows "zero evidence of ballistic signatures — shockwave, cavitation, yaw, directional tissue displacement" expected from a .30-06 round
+
+Bray characterizes the RODE device as potentially a "signal/detonator or misdirection" device.
+
+## Decorticate Posturing and Midbrain Injury
+
+Medical experts cited in the investigation have noted that Charlie exhibited **decorticate posturing** — clenched fists and rigid arm positioning — which can only result from a **midbrain injury**. This observation has been used to argue:
+
+- That the wound mechanism involved sufficient force to cause immediate midbrain trauma
+- That "activation of a weapon from high and behind him, creating the exit wound in his left neck, is the only explanation which makes any sense" (according to one cited analysis)
+- That the posturing is consistent with the "pugilist pose" described in explosion-injury literature
+
+**Dr. Chris Martenson** (@peakprosperity) is cited as confirming a "high-speed cavitation event" based on video analysis.
+
+## Pressure Wave and Blood Sequence Analysis
+
+Detailed frame-by-frame video analysis cited in the investigation argues:
+
+- A **violent pressure wave pushes AWAY from the body** — described as inconsistent with an incoming bullet and consistent with an internal or surface detonation
+- **Blood starts AFTER the blast**, not simultaneously — "not bullet behavior"
+- Charlie's **left hand shows cuts consistent with shrapnel**, matching casket photographs
+- The initial frame shows "his shirt exploding & there is ZERO blood or splatter" — in a gunshot, blood and tissue disruption should appear in the initial frame
+- Early reports described "chest caved in" trauma, which later shifted to a "neck-only" narrative
+
+## .30-06 vs. 9mm Debate
+
+The caliber debate involves two primary theories:
+
+- **Official (.30-06):** The prosecution's theory — a high-powered rifle round from distance. Critics argue this would produce massive exit-wound trauma and significant blood spatter on the backdrop, neither of which is visible in available footage.
+- **9mm +P Israeli round (1330 fps):** Some investigators propose a close-range weapon firing a round that "fragments like hell, dumps energy inside" — consistent with a concealed weapon like the Israeli-made CornerShot, allegedly fired from inside the [tent](/Tent/overview).
+
+## What an Autopsy Report Would Resolve
+
+A complete autopsy report with imaging would definitively answer:
+
+- Bullet caliber from wound channel characteristics and any recovered fragments
+- Entry vs. exit classification from wound margin analysis
+- Trajectory through tissue
+- Whether wound characteristics match explosive or ballistic mechanisms
+- Presence of foreign material (mic components, shrapnel) in the wound track
+
+## Related Areas
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Gun & Bullet Analysis](/Gun_Bullet/overview)
+* [Tent & Close-Range Theories](/Tent/overview)
+* [No Autopsy Performed (Claims)](./no-autopsy-claims)
+
+</div>
+<div>
+
+* [Close-Range "Real Killer" Theories](/Killer/Close_Range_Theories)
+* [Ballistics & Wound Analysis](/Medical/ballistics_and_wound_analysis)
+* [Possible Shooter Locations](/Shooting_Locations/overview)
+
+</div>
+</div>

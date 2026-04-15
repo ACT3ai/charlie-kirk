@@ -26,3 +26,23 @@ This proposed federal law establishes independent investigation teams led by thr
 Independent civilian oversight is the final safeguard when government agencies investigate themselves. By embedding trusted civilian investigators with direct access to agency resources and records, this law ensures that even if agencies comply technically with disclosure mandates, the actual findings reach the public.
 
 For related laws, see [Law 1: FBI & DOJ Disclosure](./Law1), [Law 2: Intelligence Disclosure](./Law2), and [Law 3: Mandate the Investigation](./Law3).
+
+## Related Areas
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Cover Up](/CoverUp/overview)
+* [FBI](/FBI/overview)
+* [Proof Intel Services](/Proof_Intel_Services/overview)
+
+</div>
+<div>
+
+* [People](/People/overview)
+* [Your Actions Fix It](/Your_Actions_Fix_It/overview)
+* [Proof Not Tyler](/Proof_Not_Tyler/overview)
+
+</div>
+</div>

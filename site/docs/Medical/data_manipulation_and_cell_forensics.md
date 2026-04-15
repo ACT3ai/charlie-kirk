@@ -31,8 +31,22 @@ This section examines potential data manipulation and cell phone forensics relat
 
 *This section is under development and will be expanded as more information becomes available.*
 
-## Related Documents
+## Related Areas
 
-- [Medical Overview](../Medical/overview.md)
-- [Timeline Events](../timeline_events/overview.md)
-- [Technology Surveillance](../technology_surveillance/overview.md)
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Cover-Up](/CoverUp/overview)
+* [FBI](/FBI/overview)
+* [Timeline](/Timeline/overview)
+
+</div>
+<div>
+
+* [Proof Intel Services](/Proof_Intel_Services/overview)
+* [Israel](/Israel/overview)
+* [Censorship](/Censorship/overview)
+
+</div>
+</div>

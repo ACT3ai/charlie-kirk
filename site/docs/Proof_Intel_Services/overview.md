@@ -28,7 +28,7 @@ Questions have been raised about the presence and actions of various agencies:
 - **Surveillance assets** – Discussion of aircraft, drones, or other monitoring capabilities that were active during the relevant timeframe, including analysis of flight patterns and data collection.
 - **Inter-agency communication** – Examination of how quickly and comprehensively different agencies coordinated their response, with some arguing this suggests prior planning or shared awareness.
 
-These points are explored further in sections on [Intelligence](/intelligence/overview.md), [Planes](/Planes/overview.md), [Drones](/Drones/overview.md), and [Security & Law Enforcement](/security_law_enforcement/overview.md).
+These points are explored further in sections on [Intelligence](/intelligence/overview), [Planes](/Planes/overview), [Drones](/Drones/overview), and [Security & Law Enforcement](/security_law_enforcement/overview).
 
 ## Historical parallels and patterns (claims)
 
@@ -38,7 +38,7 @@ Some researchers draw connections to historical intelligence operations:
 - **Pattern recognition** – Arguments that certain elements of the Charlie Kirk case match operational signatures seen in other controversial events.
 - **Cover and denial** – Discussion of how intelligence agencies typically respond to questions about their involvement, and whether responses in this case fit established patterns.
 
-These historical analyses provide context but do not constitute proof of current involvement. Related discussions appear in [Conspiracy Theories](/conspiracy_theories/overview.md) and [Government Organizations](/government_organizations/overview.md).
+These historical analyses provide context but do not constitute proof of current involvement. Related discussions appear in [Conspiracy Theories](/conspiracy_theories/overview) and [Government Organizations](/government_organizations/overview).
 
 ## Documentary and digital evidence (claims)
 
@@ -48,7 +48,7 @@ Calls for transparency focus on specific categories of potential evidence:
 - **Communications logs** – Requests for inter-agency communications, security briefings, and operational traffic that might clarify who knew what and when.
 - **Personnel records** – Questions about who was assigned to the event in various official and unofficial capacities, and whether standard protocols were followed.
 
-These evidence categories overlap with topics in [Planes](/Planes/overview.md), [Timeline](/Timeline/overview.md), and [CoverUp](/CoverUp/overview.md).
+These evidence categories overlap with topics in [Planes](/Planes/overview), [Timeline](/Timeline/overview), and [CoverUp](/CoverUp/overview).
 
 ## Institutional responses and information control (claims)
 
@@ -58,12 +58,32 @@ Critics point to responses that they argue are consistent with intelligence invo
 - **Media coordination** – Arguments that news coverage showed unusual uniformity in framing and emphasis, possibly suggesting coordinated messaging.
 - **Classification and secrecy** – Use of security classifications, sealed hearings, or restricted access to information that some interpret as protecting intelligence equities rather than legitimate investigative needs.
 
-These patterns are discussed in [Media](/Media/overview.md), [Censorship](/Censorship/overview.md), and [Legal Investigation](/legal_investigation/overview.md).
+These patterns are discussed in [Media](/Media/overview), [Censorship](/Censorship/overview), and [Legal Investigation](/legal_investigation/overview).
 
 ## How to use this section
 
-This [Proof Intel Services](/Proof_Intel_Services/overview.md) page should be read as a **compilation of indicators and questions** rather than as definitive proof:
+This [Proof Intel Services](/Proof_Intel_Services/overview) page should be read as a **compilation of indicators and questions** rather than as definitive proof:
 
 - Use it to understand why some observers believe intelligence or security services may have had advance knowledge or active involvement.
 - Follow links to related sections for detailed examination of specific evidence types, historical patterns, and institutional responses.
 - Keep in mind that intelligence activities are by nature covert and difficult to verify; extraordinary claims require extraordinary evidence, and all assertions here should be evaluated critically and updated as new information becomes available.
+
+## Related Areas
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [FBI](/FBI/overview)
+* [Cover-Up Evidence](/CoverUp/overview)
+* [Israel](/Israel/overview)
+
+</div>
+<div>
+
+* [Drones](/Drones/overview)
+* [Motive](/Motive/overview)
+* [Timeline](/Timeline/overview)
+
+</div>
+</div>

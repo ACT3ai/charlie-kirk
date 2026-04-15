@@ -21,3 +21,23 @@ This document contains maps and location information about the UVU campus relate
 - [ ] Evidence collection
 - [ ] Analysis
 - [ ] Documentation
+
+## Related Areas
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [UVU](/UVU/overview)
+* [Shooting Locations](/Shooting_Locations/overview)
+* [Tent](/Tent/overview)
+
+</div>
+<div>
+
+* [Timeline](/Timeline/overview)
+* [Cover-Up Evidence](/CoverUp/overview)
+* [Videos](/Videos/overview)
+
+</div>
+</div>

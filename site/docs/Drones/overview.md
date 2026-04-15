@@ -43,10 +43,22 @@ Investigators and commentators have identified a number of open questions relate
 
 Answers to these questions would help clarify whether drones played only benign roles (e.g., filming and surveillance) or whether more complex capabilities might be relevant to the investigation.
 
-## Related sections
+## Related Areas
 
-- [Planes](/Planes/overview.md) – for detailed discussion of aircraft movements and alleged drone‑deployment scenarios.
-- [Timeline](/Timeline/overview.md) and [Maps](maps/overview.md) – for situating drone activity in time and space relative to the event.
-- [Videos](/Videos/overview.md) and [Killer](/Killer/overview.md) – for analyses that rely on aerial or elevated perspectives to support or challenge shooter‑location theories.
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
 
-As with all technical topics in this project, readers should look for **consistent, well‑documented evidence** and be cautious about drawing strong conclusions where data are incomplete or contested.
+* [Planes](/Planes/overview)
+* [Tent](/Tent/overview)
+* [UVU Campus](/UVU/overview)
+
+</div>
+<div>
+
+* [Technology & Surveillance](/technology_surveillance/overview)
+* [Shooting Locations](/Shooting_Locations/overview)
+* [Timeline](/Timeline/overview)
+
+</div>
+</div>

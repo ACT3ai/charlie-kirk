@@ -29,3 +29,22 @@ Official claim: a 30‑06 Mauser 98 fired from a rooftop. Counterpoints argue wo
 - Publish ballistic trajectory and tissue damage analysis correlating with medical records.  
 - Reconcile audio crack–thump timing with hypothesized shooter locations.
 
+## Related Areas
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Gun & Bullet](/Gun_Bullet/overview)
+* [Wound Analysis Theories](/Charlie/Autopsy/wound-analysis-theories)
+* [Shooting Locations](/Shooting_Locations/overview)
+
+</div>
+<div>
+
+* [Proof Not Tyler](/Proof_Not_Tyler/overview)
+* [Charlie Kirk Autopsy](/Charlie/Autopsy/overview)
+* [Tent](/Tent/overview)
+
+</div>
+</div>

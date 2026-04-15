@@ -16,7 +16,7 @@ This Level_3 page expands on **post‑event legal developments** that have attra
 
 It draws on **court‑document summaries from legal commentators (for example, Substack analyses by attorneys), local news coverage, and advocacy‑oriented X/Twitter threads**. Nothing here should be read as legal advice or as a conclusion that any judge, lawyer, or institution has acted unlawfully; rather, it summarizes what has been reported and what critics have claimed.
 
-For case‑specific details, see [Tyler Robinson](/Tyler_Robinson/overview.md), [Tyler Robinson Trial](/Tyler_Robinson/Trial/overview.md), and [Legal Investigation](/legal_investigation/overview.md).
+For case‑specific details, see [Tyler Robinson](/Tyler_Robinson/overview), [Tyler Robinson Trial](/Tyler_Robinson/Trial/overview), and [Legal Investigation](/legal_investigation/overview).
 
 ## Tyler Robinson case overview (as reported)
 
@@ -58,12 +58,30 @@ These critiques reflect **opinions about best practices and civil‑liberties co
 
 ## How these legal‑process issues fit into the “After” narrative
 
-Within the [After Events](/After/overview.md), [Legal Investigation](/legal_investigation/overview.md), and [Cover‑Up](/CoverUp/overview.md) sections:
+Within the [After Events](/After/overview), [Legal Investigation](/legal_investigation/overview), and [Cover‑Up](/CoverUp/overview) sections:
 
 - Legal‑process discussions help explain why **much of the evidentiary record (video, forensics, digital data)** remains sealed or restricted while the case is pending.  
 - Gag orders and closed hearings are cited by some as **reasons to suspect institutional opacity**, and by others as **standard tools** in managing sensitive, high‑profile litigation.  
 - Any ultimate assessment of fairness will likely depend on **future appellate review, trial outcomes, and the eventual release of redacted records**, rather than on commentary alone.
 
-Readers should approach this page as a guide to **what has been reported and argued about the legal process**, not as a verdict on whether that process is just or unjust. For more detailed legal analysis, see case‑file summaries and court documents linked in [Tyler Robinson Trial](/Tyler_Robinson/Trial/overview.md) and legal‑commentary sources.
+Readers should approach this page as a guide to **what has been reported and argued about the legal process**, not as a verdict on whether that process is just or unjust. For more detailed legal analysis, see case‑file summaries and court documents linked in [Tyler Robinson Trial](/Tyler_Robinson/Trial/overview) and legal‑commentary sources.
 
+## Related Areas
 
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Tyler Robinson Trial & Court Proceedings](/Tyler_Robinson/Trial/overview)
+* [Cover-Up Evidence & Indicators](/CoverUp/overview)
+* [FBI Investigation & Involvement](/FBI/overview)
+
+</div>
+<div>
+
+* [Charlie Kirk Autopsy & Forensics](/Charlie/Autopsy/overview)
+* [Censorship of Investigation Content](/Censorship/overview)
+* [Law 1: Force FBI & DOJ Disclosure](/Fix/Law1)
+
+</div>
+</div>

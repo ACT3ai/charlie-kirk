@@ -63,6 +63,26 @@ When evaluating these claims:
 - **Demand strong evidence for serious allegations:** Accusing any country or intelligence service of political assassination requires **robust, independently verifiable evidence**, not just correlation or suspicion.  
 - **Avoid collective blame:** Assertions about “Israeli IPs” or “Israeli phones” should not be generalized to **all Israelis, Jews, or Israel‑related institutions**, which would be both inaccurate and unfair.
 
-This page is intended to clarify what has been *claimed* about Israeli presence and connections so that readers can assess those claims critically. For how these ideas tie into motive and operational theories, see [Motive](/Motive/overview.md), [Geopolitical and Intelligence‑Service Motive Theories](/Motive/Geopolitical_Intel_Service_Theories.md), and [Killer](/Killer/overview.md).
+This page is intended to clarify what has been *claimed* about Israeli presence and connections so that readers can assess those claims critically. For how these ideas tie into motive and operational theories, see [Motive](/Motive/overview), [Geopolitical and Intelligence-Service Motive Theories](/Motive/Geopolitical_Intel_Service_Theories), and [Killer](/Killer/overview).
+
+## Related Areas
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [FBI](../FBI/overview)
+* [Proof Intel Services](../Proof_Intel_Services/overview)
+* [Timeline](../Timeline/overview)
+
+</div>
+<div>
+
+* [Google Searches](../GoogleSearches/overview)
+* [Cover-Up](../CoverUp/overview)
+* [People](../People/overview)
+
+</div>
+</div>
 
 

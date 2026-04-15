@@ -16,7 +16,7 @@ This Level_3 page expands on **claims about online searches, reconnaissance, and
 
 Because these tools show **only aggregate, anonymized interest** and not who searched or why, all entries here should be treated as **speculative claims**, not as proof that any specific individual or organization conducted reconnaissance for a plot.
 
-For deeper timeline context, see [Timeline 2024](/Timeline/Year_2024.md), [Timeline 2025](/Timeline/Year_2025.md), and [Reported Israeli Search‑Pattern and IP Activity (Claims)](/Israel/Israeli_Search_Patterns_Claims.md).
+For deeper timeline context, see [Timeline 2024](/Timeline/Year_2024), [Timeline 2025](/Timeline/Year_2025), and [Reported Israeli Search‑Pattern and IP Activity (Claims)](/Israel/Israeli_Search_Patterns_Claims.md).
 
 ## Early location and building‑related searches (claims)
 
@@ -69,6 +69,23 @@ When evaluating these pre‑event search and reconnaissance ideas:
 - **Beware hindsight bias:** Once an event occurs, there is a strong temptation to see **any earlier interest** in related terms as predictive or conspiratorial, even when it might not be.  
 - **Distinguish correlation from causation:** Elevated search interest around people and places later tied to a case can be coincidental, driven by unrelated factors, or reflective of broader political/media attention.
 
-Within the [Before](/Before/overview.md) section, these claims serve to illustrate **why some investigators believe the UVU event was preceded by sustained research and planning**. They do not, on their own, demonstrate that any specific person, group, or country conducted or directed reconnaissance with criminal intent.
+Within the [Before](/Before/overview) section, these claims serve to illustrate **why some investigators believe the UVU event was preceded by sustained research and planning**. They do not, on their own, demonstrate that any specific person, group, or country conducted or directed reconnaissance with criminal intent.
 
+## Related Areas
 
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem', marginTop:'0.5rem'}}>
+<div>
+
+* [Israeli Search Patterns](/Israel/Israeli_Search_Patterns_Claims)
+* [Google Searches](/GoogleSearches/overview)
+* [Timeline Overview](/Timeline/overview)
+
+</div>
+<div>
+
+* [FBI Investigation](/FBI/overview)
+* [Medical Examiner & Surgeons](/Charlie/Autopsy/medical-examiner-surgeons)
+* [Pre-Event Flights & Travel](/Before/PreEvent_Flights_And_Travel)
+
+</div>
+</div>

@@ -42,8 +42,22 @@ Some photographs, especially those that are graphic or closely tied to medical f
 
 Where specific photos are discussed in this project, they are referenced descriptively rather than reproduced unless they are already widely public and appropriate to include.
 
-## Related sections
+## Related Areas
 
-- [Videos](/Videos/overview.md) and [Maps](maps/overview.md) – for combining photographic evidence with motion and spatial context.
-- [Medical](/Medical/overview.md) and [Charlie Kirk Autopsy](Charlie/Autopsy.md) – for how certain images relate to wound and treatment questions.
-- [Cover-up](CoverUp/overview.md) and [After](/After/overview.md) – for discussions about how post‑incident site photos are interpreted in debates about evidence handling.
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Charlie Kirk](/Charlie/overview)
+* [Medical](/Medical/overview)
+* [Charlie Kirk Autopsy](/Charlie/Autopsy/overview)
+
+</div>
+<div>
+
+* [Cover-Up Evidence](/CoverUp/overview)
+* [Timeline](/Timeline/overview)
+* [Tent](/Tent/overview)
+
+</div>
+</div>

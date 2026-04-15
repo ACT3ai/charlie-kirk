@@ -18,7 +18,7 @@ According to mainstream reporting and public case descriptions:
 - This rifle is reportedly linked to Robinson through ownership or family connection and through forensic findings such as DNA or other trace evidence.
 - The rooftop‑shooter narrative relies on this rifle as the weapon used to fire from a significant distance toward the stage.
 
-For the official framing in context, see [Tyler Robinson](/Tyler_Robinson/overview.md), [Tyler Robinson Shooting](/Tyler/shooting/overview.md), and [Timeline](/Timeline/overview.md).
+For the official framing in context, see [Tyler Robinson](/Tyler_Robinson/overview), [Tyler Robinson Shooting](/Tyler/shooting/overview), and [Timeline](/Timeline/overview).
 
 ## Ballistics mismatch concerns (claims)
 
@@ -28,7 +28,7 @@ Independent analysts and commentators raise several **ballistics‑related chall
 - Some medical and forensic interpretations presented in public forums suggest that the observed injury pattern could be more consistent with a **different caliber and energy profile**, possibly from a closer position.
 - These critiques are often tied to medical‑analysis discussions and alternative shooter‑location theories (for example, tent‑adjacent or vehicle‑based shots).
 
-These concerns are explored further in [Bullet caliber, entry/exit path, wound characteristics, alternatives](Medical/ballistics_and_wound_analysis.md) and [Charlie Kirk Autopsy](Charlie/Autopsy.md). They remain contested and depend on detailed forensic data that has not been fully released to the public.
+These concerns are explored further in [Bullet caliber, entry/exit path, wound characteristics, alternatives](/Medical/ballistics_and_wound_analysis) and [Charlie Kirk Autopsy](Charlie/Autopsy/overview). They remain contested and depend on detailed forensic data that has not been fully released to the public.
 
 ## Alternative weapon theories (claims)
 
@@ -44,8 +44,28 @@ These ideas are speculative and should be evaluated in light of any future offic
 
 Gun and bullet questions are deeply intertwined with:
 
-- [Medical](Medical/overview.md) and [Charlie Kirk Autopsy](Charlie/Autopsy.md) – for wound characteristics and medical examiner issues.
-- [Shooting Locations](Shooting_Locations/overview.md) and [Tent](Tent/overview.md) – for geometry and distance considerations.
-- [Killer](Killer/overview.md) and [Theories](Theories/overview.md) – for how weapon-type assumptions affect conclusions about who might have been responsible.
+- [Medical](/Medical/overview) and [Charlie Kirk Autopsy](/Charlie/Autopsy/overview) – for wound characteristics and medical examiner issues.
+- [Shooting Locations](/Shooting_Locations/overview) and [Tent](/Tent/overview) – for geometry and distance considerations.
+- [Killer](/Killer/overview) and [Theories](/Theories/overview) – for how weapon-type assumptions affect conclusions about who might have been responsible.
 
 Readers should treat this page as a **ballistics and weapon‑focused index**, returning to it as new evidence or expert analysis becomes available.
+
+## Related Areas
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Wound Analysis](/Charlie/Autopsy/wound-analysis-theories)
+* [Medical](/Medical/overview)
+* [Shooting Locations](/Shooting_Locations/overview)
+
+</div>
+<div>
+
+* [Proof Not Tyler](/Proof_Not_Tyler/overview)
+* [Killer Theories](/Killer/overview)
+* [Tent](/Tent/overview)
+
+</div>
+</div>

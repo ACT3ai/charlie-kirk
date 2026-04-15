@@ -112,9 +112,29 @@ These safeguards are at least as important as transparency itself.
 
 This conceptual “Law 2” connects directly to:
 
-- [Law1](Fix/Law1.md), which discusses broader information‑disclosure and records‑transparency ideas.
-- [Autopsy](Charlie/Autopsy.md), which focuses specifically on forensic questions raised about the Charlie Kirk case.
-- [Fix Overview](Fix/overview.md), which situates autopsy and medical‑examiner reform among other legal and institutional proposals.
+- [Law 1](./Law1), which discusses broader information‑disclosure and records‑transparency ideas.
+- [Autopsy](/Charlie/Autopsy/overview), which focuses specifically on forensic questions raised about the Charlie Kirk case.
+- [Fix Overview](./overview), which situates autopsy and medical‑examiner reform among other legal and institutional proposals.
 
 As with all pages in this section, the purpose here is to **organize ideas and claims** that have been raised—not to assert that any
 named individual, agency, or country is guilty of a crime or a cover‑up.
+
+## Related Areas
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Medical](/Medical/overview)
+* [Autopsy](/Charlie/Autopsy/overview)
+* [Wound Analysis](/Charlie/Autopsy/wound-analysis-theories)
+
+</div>
+<div>
+
+* [Cover Up](/CoverUp/overview)
+* [FBI](/FBI/overview)
+* [Legal Investigation](/legal_investigation/overview)
+
+</div>
+</div>

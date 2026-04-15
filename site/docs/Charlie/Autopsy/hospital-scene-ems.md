@@ -1,0 +1,98 @@
+<a href="./overview" style={{display:'inline-block', marginBottom:'1rem',
+padding:'0.35rem 0.9rem', background:'#1a73e8', color:'#fff',
+borderRadius:'4px', textDecoration:'none', fontSize:'0.9rem'}}>
+← Charlie Kirk Autopsy
+</a>
+
+# Hospital Scene & EMS Response
+
+This page documents claims about what happened at the hospital after Charlie Kirk's arrival, the EMS response at UVU, and related evidence-handling questions.
+
+## EMS Blocked at UVU (Claims)
+
+One of the most contentious claims is that **EMS personnel were actively blocked from helping Charlie** at the scene. According to compiled research:
+
+- **Dan Harpole** reportedly claimed "EMS personnel were nowhere to be found" — but video evidence contradicts this
+- Dedicated EMS crew members — including **Connor Dority** and his partner — were on scene, "dressed in full gear with walkie-talkies and professional equipment"
+- They approached security personnel, reportedly pleading **"Let us in"**
+- **Security turned them away**, leaving trained medics sidelined while "untrained guards fumbled with just phones in hand"
+- Later clips show EMS finally assisting with rushing Charlie to a vehicle
+
+If accurate, the decision to block trained EMS from providing immediate trauma care to a gunshot victim is a significant departure from standard emergency-response protocol. Investigators ask who gave the order to keep EMS out and why.
+
+## The Cleared Emergency Room
+
+According to claims from hospital workers and investigators:
+
+- When Charlie arrived at the hospital, **the emergency room appeared remarkably empty** — "Where were the usual patients?"
+- The ER had apparently been **cleared** before or around the time of Charlie's arrival
+- Investigators question who has the authority to lock down and clear an ER and whether this was done proactively
+
+An empty ER could indicate standard mass-casualty preparation or VIP protocol. However, some investigators argue the speed and completeness of the clearance suggests **advance coordination or foreknowledge**.
+
+## NDAs Signed at Hospital
+
+According to compiled research citing information from **911 operators and the head of security**:
+
+- **Everyone at the hospital signed NDAs** (non-disclosure agreements) regarding Charlie's care and the events surrounding his arrival
+- This has been described as unusual for a public hospital responding to a shooting victim
+- The NDAs effectively prevent hospital staff from speaking publicly about what they witnessed
+
+## FBI Seizure of Hospital Footage
+
+Multiple sources in the investigation allege that the **FBI was quick to seize interior hospital footage**. This is cited alongside other evidence-handling concerns, including:
+
+- Rapid seizure of surveillance video from the UVU event venue
+- The [destruction of the SUV](/Charlie/Autopsy/no-autopsy-claims) used to transport Charlie
+- Crime-scene alterations at UVU (see [Site Changes & Crime Scene Handling](/After/Site_Changes_And_Crime_Scene_Handling))
+
+## Blood on the Podium
+
+Investigators note that **blood was visible on the podium** where Charlie had been seated — described as "real, not faked." However, there was reportedly **no blood trail** from the podium to the exit point, which is attributed to responders having "compressed the wound carrying him out."
+
+Additional physical evidence includes:
+
+- **Fragments** of the RODE transmitter's glass front face and case fragments photographed scattered across the SUV floorboard and the table where Charlie had been seated
+- **Blood on hands** of a man in an all-black outfit observed at the scene, whose identity and role are disputed
+
+## Connor Romney Henderson
+
+The investigation notes that **Connor Romney Henderson** — described as connected to the Romney family — was employed as an **"Emergency Room Scribe" at Timpanogos Regional Hospital** during summer 2025. Investigators have raised this as a point of interest given the Romney family's political prominence in Utah, though no specific wrongdoing is alleged.
+
+## Mikey McCoy at the Hospital (Claims)
+
+According to accounts compiled from witness video and commentary:
+
+- After the shooting, **Mikey McCoy** left the scene
+- He reportedly went to the hospital, arriving at the **physician parking area**
+- A witness video from a hospital contractor shows him allegedly picking up a "shadowy figure" described variously as a "doctor, insider, or accomplice"
+- The identity and significance of this person remain disputed
+
+## Open Questions
+
+1. Who ordered security to block EMS from accessing Charlie at UVU?
+2. Who authorized the clearing of the ER before Charlie's arrival?
+3. Who required hospital staff to sign NDAs, and under what authority?
+4. Where is the seized hospital surveillance footage, and when will it be available?
+5. What is Connor Romney Henderson's complete account of his shift that evening?
+6. Who was the person Mikey McCoy reportedly picked up from the hospital?
+
+## Related Areas
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Hospital Choice & Transport](./hospital-choice-transport)
+* [No Autopsy Performed (Claims)](./no-autopsy-claims)
+* [FBI Investigation](/FBI/overview)
+
+</div>
+<div>
+
+* [Timeline: September 10, 2025](/Timeline/Sept_10_2025)
+* [Cover-Up Evidence](/CoverUp/overview)
+* [Central Figures in the Case](/People/Central_Figures)
+
+</div>
+</div>

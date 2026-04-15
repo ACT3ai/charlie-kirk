@@ -24,3 +24,22 @@ Claims suggest a secondary mechanism via an explosive in Kirk’s lapel mic or i
 - Correlate audio impulses with video frames to determine origin and propagation.  
 - Validate or refute loudspeaker injection hypotheses.
 
+## Related Areas
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Gun & Bullet](/Gun_Bullet/overview)
+* [Shooting Locations](/Shooting_Locations/overview)
+* [Wound Analysis Theories](/Charlie/Autopsy/wound-analysis-theories)
+
+</div>
+<div>
+
+* [Tent](/Tent/overview)
+* [Proof Not Tyler](/Proof_Not_Tyler/overview)
+* [Cover-Up](/CoverUp/overview)
+
+</div>
+</div>

@@ -76,3 +76,23 @@ borderRadius:'4px', textDecoration:'none', fontSize:'0.9rem'}}>
 - Dec 2024 (claims): Citizen‑research analyses of Google Trends report early search interest for locations and key figures later tied to the case.
 - Dec 8–14, 2024 (claims): Commentators highlight a reported spike (from Israel) in searches for Kathryn N. Nester, later defense counsel for Tyler Robinson, based on Google Trends screenshots.
 - Aug 2024 (claims): Notes reference searches related to "Utah Valley University buildings" and similar terms, interpreted by some as early reconnaissance interest.
+
+## Related Areas
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Charlie Kirk](/Charlie/overview)
+* [FBI](/FBI/overview)
+* [Israel](/Israel/overview)
+
+</div>
+<div>
+
+* [Motive](/Motive/overview)
+* [Planes](/Planes/overview)
+* [Cover-Up](/CoverUp/overview)
+
+</div>
+</div>

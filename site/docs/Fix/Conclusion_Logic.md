@@ -117,3 +117,23 @@ Risk/Engineering/Fraud: #37–38.
 Lead-gen only: #39–41.
 
 If you want, tell me the domains you’ll be working across (e.g., “police + intel + military”), and I’ll trim this into a role-ready checklist with examples and decision trees.
+
+## Related Areas
+
+<div style={{display:’grid’, gridTemplateColumns:’1fr 1fr’, gap:’0.5rem 2rem’,
+marginTop:’0.5rem’}}>
+<div>
+
+* [Proof Intel Services](/Proof_Intel_Services/overview)
+* [Proof Not Tyler](/Proof_Not_Tyler/overview)
+* [Cover Up](/CoverUp/overview)
+
+</div>
+<div>
+
+* [Legal Investigation](/legal_investigation/overview)
+* [FBI](/FBI/overview)
+* [Killer Theories](/Killer/overview)
+
+</div>
+</div>

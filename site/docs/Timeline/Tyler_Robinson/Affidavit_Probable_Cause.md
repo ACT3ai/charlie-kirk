@@ -4,10 +4,10 @@ title: Affidavit of Probable Cause
 sidebar_label: Affidavit of Probable Cause
 sidebar_position: 6
 ---
-<a href="./overview" style={{display:'inline-block', marginBottom:'1rem',
+<a href="/Timeline/Tyler_Robinson" style={{display:'inline-block', marginBottom:'1rem',
 padding:'0.35rem 0.9rem', background:'#1a73e8', color:'#fff',
 borderRadius:'4px', textDecoration:'none', fontSize:'0.9rem'}}>
-← Tyler Robinson
+← Tyler Robinson Timeline
 </a>
 
 # Affidavit of Probable Cause
@@ -33,3 +33,23 @@ describes the investigator encounter in Washington County on September 12 early 
 - [Mirandizing of Tyler Robinson](/Timeline/Tyler_Robinson/Mirandizing)
 - [Tyler Robinson Timeline](/Timeline/Tyler_Robinson)
 - [Case & Trial](/Tyler_Robinson/Trial/overview)
+
+## Related Areas
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [FBI](/FBI/overview)
+* [Cover-Up](/CoverUp/overview)
+* [Proof Not Tyler](/Proof_Not_Tyler/overview)
+
+</div>
+<div>
+
+* [People](/People/overview)
+* [Gun & Bullet](/Gun_Bullet/overview)
+* [Charlie Kirk](/Charlie/overview)
+
+</div>
+</div>

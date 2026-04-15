@@ -1,3 +1,8 @@
+---
+id: Recruited
+title: Tyler Robinson Recruited
+sidebar_label: Recruited
+---
 <a href="./overview" style={{display:'inline-block', marginBottom:'1rem',
 padding:'0.35rem 0.9rem', background:'#1a73e8', color:'#fff',
 borderRadius:'4px', textDecoration:'none', fontSize:'0.9rem'}}>
@@ -51,3 +56,23 @@ For any serious assessment of alleged recruitment or intelligence ties, investig
 - Clear timelines correlating **search interest or monitoring indicators** with key events (such as Google search spikes related to Robinson or his counsel).
 
 Until such material is available, this page should be read as a catalogue of **publicly circulating theories and questions**, not as a declaration that Robinson was in fact recruited by any agency or network.
+
+## Related Areas
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Proof Intel Services](/Proof_Intel_Services/overview)
+* [FBI](/FBI/overview)
+* [CIA](/CIA/overview)
+
+</div>
+<div>
+
+* [Israel](/Israel/overview)
+* [Cover-Up](/CoverUp/overview)
+* [Proof Not Tyler](/Proof_Not_Tyler/overview)
+
+</div>
+</div>

@@ -31,8 +31,28 @@ Because of these limitations, search data should be viewed as **contextual clues
 
 ## Related sections
 
-- [Motive](/Motive/overview.md) and [Israel](/Israel/overview.md) – for discussions where search patterns are invoked as part of broader motive or geopolitical theories.
-- [Medical](/Medical/overview.md) and [Autopsy](Charlie/Autopsy.md) – for references to search activity around medical actors and facilities.
-- [FBI](/FBI/overview.md), [CIA](/CIA/overview.md), and [Legal Investigation](/legal_investigation/overview.md) – for institutional context when search data is cited in relation to government figures or agencies.
+- [Motive](/Motive/overview) and [Israel](/Israel/overview) – for discussions where search patterns are invoked as part of broader motive or geopolitical theories.
+- [Medical](/Medical/overview) and [Autopsy](/Charlie/Autopsy/overview) – for references to search activity around medical actors and facilities.
+- [FBI](/FBI/overview), [CIA](/CIA/overview), and [Legal Investigation](/legal_investigation/overview) – for institutional context when search data is cited in relation to government figures or agencies.
 
 As more formal analyses or corroborating records become available, readers will be better able to judge which search‑pattern claims are best supported by evidence.
+
+## Related Areas
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Israel](/Israel/overview)
+* [Before Events](/Before/overview)
+* [Medical Examiner](/Charlie/Autopsy/medical-examiner-surgeons)
+
+</div>
+<div>
+
+* [Timeline](/Timeline/overview)
+* [FBI](/FBI/overview)
+* [Proof Intel Services](/Proof_Intel_Services/overview)
+
+</div>
+</div>

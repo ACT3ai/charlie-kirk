@@ -22,12 +22,12 @@ Various individuals present at the UVU event have drawn attention because of the
 
 - **Ryne Simmons (as reported/claims):**  
   - In an X/Twitter thread by `@ninoboxer`, Simmons states that he recorded a **close‑up 4K/60fps video** of the shooting and later shared it with the FBI, who allegedly asked him to delete it. He says he retained a copy.  
-  - His account is central to discussions of **video handling and censorship**, covered in [Media Censorship](../Media/Censorship.md) and [Media Narratives and Censorship After the UVU Event](../After/Media_Narratives_And_Censorship_After.md).  
+  - His account is central to discussions of **video handling and censorship**, covered in [Media Censorship](../Media/Censorship) and [Media Narratives and Censorship After the UVU Event](../After/Media_Narratives_And_Censorship_After).  
 - **Skyler Baird (claims):**  
   - Baird appears in multiple video angles near Charlie at the moment of the shot and later at memorial events, sometimes with media access.  
-  - Online commentators have raised questions about his movements and role; these are treated as **speculative claims** in [Patsies and Distraction Actors](../Killer/Patsies_Distraction_Actors.md).  
+  - Online commentators have raised questions about his movements and role; these are treated as **speculative claims** in [Patsies and Distraction Actors](../Killer/Patsies_Distraction_Actors).  
 - **Other unnamed witnesses (as reported/claims):**  
-  - Many other attendees provided interviews to local and national media or shared footage on social platforms. Their contributions are referenced throughout [Videos](/Videos/overview.md), [Shooting Locations](/Shooting_Locations/overview.md), and [Media](/Media/overview.md).
+  - Many other attendees provided interviews to local and national media or shared footage on social platforms. Their contributions are referenced throughout [Videos](/Videos/overview), [Shooting Locations](/Shooting_Locations/overview), and [Media](/Media/overview).
 
 These individuals are important because of **what they saw or recorded**, not because being present implies culpability.
 
@@ -37,10 +37,10 @@ Several people visible near Charlie at the event have been singled out for close
 
 - **Close‑protection and security staff (as reported/claims):**  
   - Names such as **Rick Cutler**, **Laine Schoneberger**, **Dan Flood**, and others appear in analyses of security posture and crowd management.  
-  - Some videos and X/Twitter threads propose detailed theories about specific individuals’ movements (for example, palm‑gun or signaling hypotheses). These theories are explored—explicitly as **claims**—in [Close‑Range “Real Killer” Theories](../Killer/Close_Range_Theories.md) and [Patsies and Distraction Actors](../Killer/Patsies_Distraction_Actors.md).  
+  - Some videos and X/Twitter threads propose detailed theories about specific individuals’ movements (for example, palm‑gun or signaling hypotheses). These theories are explored—explicitly as **claims**—in [Close‑Range “Real Killer” Theories](../Killer/Close_Range_Theories) and [Patsies and Distraction Actors](../Killer/Patsies_Distraction_Actors).  
   - Independent of those theories, these individuals are documented as having **security or staff roles** at or around the event.  
 - **Campus security and UVU staff (as reported):**  
-  - UVU‑affiliated personnel, including **campus police officers** and event staff, appear in crowd‑control roles and logistics. Their presence and actions are discussed in [Security & Law Enforcement](/security_law_enforcement/overview.md) and [Before](/Before/overview.md).
+  - UVU‑affiliated personnel, including **campus police officers** and event staff, appear in crowd‑control roles and logistics. Their presence and actions are discussed in [Security & Law Enforcement](/security_law_enforcement/overview) and [Before](/Before/overview).
 
 Mention of security and staff here serves to **locate their roles in the public record**, not to draw conclusions about responsibility.
 
@@ -50,9 +50,9 @@ A large part of the public understanding of this case has been shaped by **indep
 
 - **Video analysts and researchers (as reported/claims):**  
   - Accounts such as `@ProjectConstitu`, `@JG_CSTT`, `@BlakeBednarz`, and others have produced **flight‑path reconstructions, acoustic studies, 3D site models, and frame‑by‑frame video analyses**.  
-  - Their work is often cited in sections like [Timeline](/Timeline/overview.md), [Planes](/Planes/overview.md), [Drones](/Drones/overview.md), and [Killer](/Killer/overview.md) as examples of **citizen‑driven inquiry**, while being clearly distinguished from official investigations.  
+  - Their work is often cited in sections like [Timeline](/Timeline/overview), [Planes](/Planes/overview), [Drones](/Drones/overview), and [Killer](/Killer/overview) as examples of **citizen‑driven inquiry**, while being clearly distinguished from official investigations.  
 - **Legal and political commentators (as reported/claims):**  
-  - Attorneys and commentators using Substack, podcasts, and X/Twitter (for example, those who analyze gag orders or Google Trends data) have contributed legal and political framing that appears in [Motive](/Motive/overview.md), [Legal Investigation](/legal_investigation/overview.md), and [Media](/Media/overview.md).  
+  - Attorneys and commentators using Substack, podcasts, and X/Twitter (for example, those who analyze gag orders or Google Trends data) have contributed legal and political framing that appears in [Motive](/Motive/overview), [Legal Investigation](/legal_investigation/overview), and [Media](/Media/overview).  
 - **Media figures covering the case (as reported):**  
   - Public figures such as **Candace Owens, Tucker Carlson, Megyn Kelly, and others** have discussed the case on their shows, sometimes sharing texts, clips, or interpretations that significantly influence public narratives.
 
@@ -65,4 +65,22 @@ Use this page as a **navigation aid**:
 - To find where particular people are discussed in context (e.g., witness video, security posture, legal process).  
 - To remember that **being named or analyzed in this project does not imply guilt**; many individuals are included because their public roles or footage are relevant to understanding what happened, not because any court has found them responsible for a crime.
 
+## Related Areas
 
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Killer Theories](/Killer/overview)
+* [Drones](/Drones/overview)
+* [Censorship](/Censorship/overview)
+
+</div>
+<div>
+
+* [Planes](/Planes/overview)
+* [Timeline](/Timeline/overview)
+* [Influencer Coverage](/Influencers/overview)
+
+</div>
+</div>

@@ -21,7 +21,7 @@ One major area of interest involves a **U.S.-linked surveillance aircraft** whos
 - Commentary suggests that the aircraft may have been part of an **intelligence, surveillance, and reconnaissance (ISR) program**, potentially capable of deploying or coordinating with drones.
 - These movements are used in some theories to argue for a higher level of operational sophistication and possible coordination with ground activity.
 
-For detailed technical discussion of this aircraft and related telemetry, see the dedicated subpages under [Planes](/Planes/overview.md) (such as those covering specific tail numbers).
+For detailed technical discussion of this aircraft and related telemetry, see the dedicated subpages under [Planes](/Planes/overview) (such as those covering specific tail numbers).
 
 ## Foreign and VIP flights (claims)
 
@@ -41,4 +41,35 @@ Aircraft and flight paths matter because they can inform questions such as:
 - Do any flight patterns suggest **unusual or unexplained behavior**, such as low‑altitude passes or transponder deactivation near critical times?
 - How do claimed aviation activities correlate with **timelines, drone theories, and ground‑level events**?
 
-The [Planes](/Planes/overview.md) section should be read in conjunction with [Drones](/Drones/overview.md), [Timeline](/Timeline/overview.md), [Maps](maps/overview.md), [Killer](/Killer/overview.md), and [CIA](/CIA/overview.md), which together provide context for evaluating aviation‑related claims.
+## Pages in this Section
+
+<div style={{display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem'}}>
+<div>
+
+* [N1098L Spy Plane](./N1098L/overview)
+
+</div>
+<div>
+
+</div>
+</div>
+
+## Related Areas
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Drones](/Drones/overview)
+* [Timeline](/Timeline/overview)
+* [CIA](/CIA/overview)
+
+</div>
+<div>
+
+* [Killer Theories](/Killer/overview)
+* [Israel Connections](/Israel/overview)
+* [Proof Intel Services](/Proof_Intel_Services/overview)
+
+</div>
+</div>

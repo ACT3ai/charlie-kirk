@@ -16,10 +16,10 @@ Public reporting and commentary refer to several aspects of Charlie’s family l
 
 - **Immediate family:**  
   - News articles and memorial coverage note **Charlie's parents and other close relatives**, who have appeared at public events and in statements reacting to his death.  
-  - Their perspectives and privacy choices (for example, about funeral and grave‑site details) are mentioned in discussions of **grief, memorialization, and security/privacy concerns**, particularly in [After](/After/overview.md) and [Media](/Media/overview.md).  
+  - Their perspectives and privacy choices (for example, about funeral and grave‑site details) are mentioned in discussions of **grief, memorialization, and security/privacy concerns**, particularly in [After](/After/overview) and [Media](/Media/overview).  
 - **Spouse (Erika Kirk, as reported):**  
   - Charlie’s wife, **Erika Kirk**, appears in memorial reporting and in some commentary about TPUSA leadership and event decisions.  
-  - Certain online narratives make claims about her role in TPUSA or security decisions; those claims are treated as **allegations** and, where discussed, are framed cautiously in sections like [TPUSA](/TPUSA/TPUSA.md), [Charlie](/Charlie/overview.md), and [After](/After/overview.md).
+  - Certain online narratives make claims about her role in TPUSA or security decisions; those claims are treated as **allegations** and, where discussed, are framed cautiously in sections like [TPUSA](/TPUSA/TPUSA), [Charlie](/Charlie/overview), and [After](/After/overview).
 
 These references primarily reflect the intense public interest surrounding a high‑profile figure and his family, not any adjudicated findings about their actions.
 
@@ -29,11 +29,11 @@ Tyler’s family and close relationships are also discussed in media and comment
 
 - **Parents and family background (as reported):**  
   - Reports describe Tyler’s upbringing and family situation in Utah, sometimes noting their reactions to his arrest and legal case.  
-  - Some online discussions speculate about family business interests or property ownership; these are treated as **claims** and, where relevant, appear in sections on [Timeline](/Timeline/overview.md), [Before](/Before/overview.md), or [Cover‑Up](/CoverUp/overview.md) as part of broader narratives, not as findings of fact.  
+  - Some online discussions speculate about family business interests or property ownership; these are treated as **claims** and, where relevant, appear in sections on [Timeline](/Timeline/overview), [Before](/Before/overview), or [Cover‑Up](/CoverUp/overview) as part of broader narratives, not as findings of fact.  
 - **Partner (Lance Twiggs, as reported/claims):**  
   - Media articles and online investigations identify **Lance Twiggs** as Tyler’s transgender partner, describing their relationship and shared living arrangements.  
   - Long‑form videos and Substack pieces (for example, YouTube analyses and Discord‑log write‑ups cited by creators like Turkey Tom and others) discuss Lance’s personal struggles and online activity, presenting various interpretations of how this relationship may have influenced Tyler.  
-  - These accounts remain **interpretive and unadjudicated**; they are covered in more detail—always labeled as claims—in [Tyler Robinson](/Tyler_Robinson/overview.md), [Girlfriend](Tyler_Robinson/Girlfriend/overview.md), and [Motive](/Motive/overview.md).
+  - These accounts remain **interpretive and unadjudicated**; they are covered in more detail—always labeled as claims—in [Tyler Robinson](/Tyler_Robinson/overview), [Girlfriend](Tyler_Robinson/Girlfriend/overview), and [Motive](/Motive/overview).
 
 Mention of Tyler’s family and partner in this project is meant to reflect how they appear in **public reporting and legal context**, not to imply guilt or wrongdoing.
 
@@ -43,11 +43,29 @@ Several other individuals are mentioned as **friends, colleagues, or close assoc
 
 - **Friends and confidants (claims):**  
   - Some alleged quotes about Charlie’s fears and donor disputes are said to have been shared with friends, then later publicized via screenshots and commentary (for example, in Candace Owens’ shows or X posts by various users).  
-  - The identities of those friends are typically **not fully disclosed** in public reporting; when they are, their names appear in context‑specific sections such as [Charlie](/Charlie/overview.md) or [Motive](/Motive/overview.md).  
+  - The identities of those friends are typically **not fully disclosed** in public reporting; when they are, their names appear in context‑specific sections such as [Charlie](/Charlie/overview) or [Motive](/Motive/overview).  
 - **TPUSA colleagues and board members (as reported/claims):**  
   - Names of TPUSA board members and senior staff (e.g., Doug DeGroote and others) appear in organizational‑context reporting and online analyses of TPUSA’s internal dynamics after Charlie’s death.  
-  - These discussions are covered in [TPUSA](/TPUSA/TPUSA.md) and [Motive](/Motive/overview.md), where any allegations are clearly separated from confirmed organizational roles.
+  - These discussions are covered in [TPUSA](/TPUSA/TPUSA) and [Motive](/Motive/overview), where any allegations are clearly separated from confirmed organizational roles.
 
 Across all these categories, the guiding principle is to **inform readers about who is cited in public sources and why**, while avoiding any suggestion that mention alone implies responsibility for the crime.
 
+## Related Areas
 
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Charlie Kirk](/Charlie/overview)
+* [TPUSA](/TPUSA/overview)
+* [Motive Analysis](/Motive/overview)
+
+</div>
+<div>
+
+* [Timeline](/Timeline/overview)
+* [Cover-Up Evidence](/CoverUp/overview)
+* [FBI Investigation](/FBI/overview)
+
+</div>
+</div>

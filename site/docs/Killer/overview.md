@@ -11,32 +11,19 @@ borderRadius:'4px', textDecoration:'none', fontSize:'0.9rem'}}>
 
 Who killed Charlie Kirk? These are the theories investigators are pursuing:
 
-<div style={{fontSize:'1.15rem', lineHeight:'2.2', margin:'1rem 0 1.5rem 0'}}>
-
-1. [Israel / Mossad](./israel-mossad)
-2. [US Intelligence](./us-intelligence)
-3. [Tyler Robinson — Official Suspect](./tyler-robinson)
-4. [More Theories](./more-theories)
-
-</div>
-
-<div style={{display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: '1rem'}}>
+<div style={{display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.5rem 2rem', marginTop: '0.5rem'}}>
 <div>
 
 * [Israel / Mossad Theory](./israel-mossad)
 * [US Intelligence Theory](./us-intelligence)
 * [Tyler Robinson — Official Suspect](./tyler-robinson)
+* [More Theories](./more-theories)
 
 </div>
 <div>
 
-* [More Theories](./more-theories)
 * [Close-Range Shot Theories](./Close_Range_Theories)
 * [Patsies and Distraction Actors](./Patsies_Distraction_Actors)
-
-</div>
-<div>
-
 * [Cover-Up Indicators](./Coverup_Indicators)
 * [Planes and Drones Theories](./Planes_Drones_Theories)
 

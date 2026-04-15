@@ -46,3 +46,23 @@ Timeline of key events in Charlie Kirk's life and activities leading up to and i
 - [Tyler Robinson Timeline](/Timeline/Tyler_Robinson)
 - [Charlie Kirk Overview](/Charlie/overview)
 - [Motive Overview](/Motive/overview)
+
+## Related Areas
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Autopsy](/Charlie/Autopsy/overview)
+* [Medical](/Medical/overview)
+* [Israel](/Israel/overview)
+
+</div>
+<div>
+
+* [Tent](/Tent/overview)
+* [Shooting Locations](/Shooting_Locations/overview)
+* [Planes](/Planes/overview)
+
+</div>
+</div>

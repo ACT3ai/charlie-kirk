@@ -4,10 +4,10 @@ title: Mirandizing of Tyler Robinson
 sidebar_label: Mirandizing
 sidebar_position: 5
 ---
-<a href="./overview" style={{display:'inline-block', marginBottom:'1rem',
+<a href="/Timeline/Tyler_Robinson" style={{display:'inline-block', marginBottom:'1rem',
 padding:'0.35rem 0.9rem', background:'#1a73e8', color:'#fff',
 borderRadius:'4px', textDecoration:'none', fontSize:'0.9rem'}}>
-← Tyler Robinson
+← Tyler Robinson Timeline
 </a>
 
 # Mirandizing of Tyler Robinson
@@ -132,3 +132,23 @@ Case: State of Utah v. Tyler Alexander Robinson, Case No. 251403576
 - [Tyler Robinson Timeline](/Timeline/Tyler_Robinson)
 - [Everything About Tyler Robinson](/Tyler_Robinson/overview)
 - [Case & Trial](/Tyler_Robinson/Trial/overview)
+
+## Related Areas
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [FBI](/FBI/overview)
+* [Cover-Up](/CoverUp/overview)
+* [Proof Not Tyler](/Proof_Not_Tyler/overview)
+
+</div>
+<div>
+
+* [Charlie Kirk](/Charlie/overview)
+* [Motive](/Motive/overview)
+* [People](/People/overview)
+
+</div>
+</div>

@@ -15,7 +15,7 @@ This Level_3 page focuses on **how media coverage and information‑control deba
 
 The material here comes from mainstream articles, TV and podcast segments, and X/Twitter, YouTube, and Substack commentary. It should be read as **a map of public discourse**, not as proof that any particular outlet or platform acted with malicious intent.
 
-For more general treatment of media issues, see [Media](/Media/overview.md) and [Media Censorship](../Media/Censorship.md). For how these narratives intersect with responsibility questions, see [Real Killer](/Killer/overview.md) and [Timeline](/Timeline/overview.md).
+For more general treatment of media issues, see [Media](/Media/overview) and [Media Censorship](../Media/Censorship). For how these narratives intersect with responsibility questions, see [Real Killer](/Killer/overview) and [Timeline](/Timeline/overview).
 
 ## Mainstream media framing after the event (as reported)
 
@@ -54,11 +54,11 @@ Post‑event, many discussions center on **claims that important footage or comm
   - Users and commentators report that certain videos, threads, or accounts discussing specific theories (e.g., alternative shooter locations, plane/drones, or intelligence‑service narratives) were flagged or removed by social‑media platforms under their content‑moderation policies.  
   - Platforms typically limit public detail about individual moderation actions, making it hard to independently verify each case.
 
-These censorship concerns are explored in depth in [Media Censorship](../Media/Censorship.md); here they are noted as **significant parts of the post‑event story**, not as conclusive proof of coordinated suppression.
+These censorship concerns are explored in depth in [Media Censorship](../Media/Censorship); here they are noted as **significant parts of the post‑event story**, not as conclusive proof of coordinated suppression.
 
 ## How media and censorship debates shape the “After” landscape
 
-Within the [After Events](/After/overview.md), [Media](/Media/overview.md), and [Cover‑Up](/CoverUp/overview.md) sections:
+Within the [After Events](/After/overview), [Media](/Media/overview), and [Cover‑Up](/CoverUp/overview) sections:
 
 - Media narratives influence **which explanations the public encounters first** (official lone‑actor vs. alternative multi‑actor theories).  
 - Allegations of censorship and content removal fuel **ongoing distrust** and motivate independent archiving of footage and documents.  
@@ -66,4 +66,22 @@ Within the [After Events](/After/overview.md), [Media](/Media/overview.md), and 
 
 Readers should therefore consider not only **what** is being claimed about the case, but also **where and how** it is being reported, and the practical constraints facing both institutions and independent investigators in the post‑event period.
 
+## Related Areas
 
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Media Articles & Coverage Analysis](/Media/overview)
+* [Censorship of Investigation Content](/Censorship/overview)
+* [Media Censorship Deep-Dive Analysis](/Media/Censorship)
+
+</div>
+<div>
+
+* [Influencer & Podcast Coverage](/Influencers/overview)
+* [Cover-Up Evidence & Indicators](/CoverUp/overview)
+* [Candace Owens & Her Role](/People/candace-owens)
+
+</div>
+</div>

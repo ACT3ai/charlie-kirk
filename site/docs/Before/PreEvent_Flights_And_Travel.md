@@ -16,7 +16,7 @@ This Level_3 page summarizes **claims about aircraft and travel activity in the 
 
 These details come from **flight‑tracking data (e.g., ADS‑B Exchange/Flightradar‑style sites), aviation‑spotter discussions, and commentary by media figures** including Candace Owens and various online analysts. They are presented as **claims about possible context**, not as proof that any specific flight was part of a criminal plot.
 
-For more technical treatment, see [Planes](/Planes/overview.md) and [Planes, Drones, and “Real Killer” Operational Theories](/Killer/Planes_Drones_Theories.md). For chronological framing, see [Timeline](/Timeline/overview.md) and [Timeline 2025](/Timeline/Year_2025.md).
+For more technical treatment, see [Planes](/Planes/overview) and [Planes, Drones, and “Real Killer” Operational Theories](/Killer/Planes_Drones_Theories). For chronological framing, see [Timeline](/Timeline/overview) and [Timeline 2025](/Timeline/Year_2025).
 
 ## Egyptian Air Force flights (claims)
 
@@ -40,7 +40,7 @@ The **Bombardier Global 6500 N1098L**, associated in defense reporting with the 
   - Defense outlets such as *The War Zone* have reported on the HADES program’s interest in **air‑launched drones and high‑end ISR** using Global 6500‑class business jets.  
   - Public FAA and ADS‑B data link N1098L to LASAI Aviation II LLC, a contractor involved in special‑mission and ISR work.  
 - **Flight patterns around September 10 (claims):**  
-  - As detailed in [Timeline](/Timeline/Sept_10_2025.md) and [Planes](/Planes/overview.md), citizen‑researchers assert that on September 10 N1098L flew at high altitude but conducted **low‑altitude, low‑speed passes** near Utah Lake and the UVU area, one **before** and one **after** the shooting.  
+  - As detailed in [Timeline](/Timeline/Sept_10_2025) and [Planes](/Planes/overview), citizen‑researchers assert that on September 10 N1098L flew at high altitude but conducted **low‑altitude, low‑speed passes** near Utah Lake and the UVU area, one **before** and one **after** the shooting.  
   - Some threads also reference earlier flights in 2025, including routes to and from military installations, as part of a broader picture of HADES testing.
 
 These claims are used to argue that **U.S. ISR assets were active in the region around the time of the event**, but there is no public official statement that N1098L was tasked in relation to Charlie or the UVU event.
@@ -60,12 +60,29 @@ As with the Egyptian flights, these details are **contextual claims based on ope
 
 ## How pre‑event travel claims fit into the “Before” section
 
-Within the [Before](/Before/overview.md) and [Timeline](/Timeline/overview.md) frameworks:
+Within the [Before](/Before/overview) and [Timeline](/Timeline/overview) frameworks:
 
 - These flights are cited to show that **unusual or high‑level aviation activity coincided with Charlie’s Utah trip**, feeding theories of foreign or military‑grade involvement.  
 - They also illustrate how **open‑source flight‑tracking data can be used to build timelines**, while reminding readers that correlation does not equal causation.  
 - No official investigation has publicly identified any of these flights as part of an assassination plan.
 
-Readers should therefore treat this page as a **summary of claimed travel patterns and aircraft presence before the event**, and cross‑check with more detailed technical and motive discussions in [Planes](/Planes/overview.md), [Motive](/Motive/overview.md), and [Killer](/Killer/overview.md).
+Readers should therefore treat this page as a **summary of claimed travel patterns and aircraft presence before the event**, and cross‑check with more detailed technical and motive discussions in [Planes](/Planes/overview), [Motive](/Motive/overview), and [Killer](/Killer/overview).
 
+## Related Areas
 
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem', marginTop:'0.5rem'}}>
+<div>
+
+* [Planes Overview](/Planes/overview)
+* [Timeline Overview](/Timeline/overview)
+* [Motive Overview](/Motive/overview)
+
+</div>
+<div>
+
+* [Israel Overview](/Israel/overview)
+* [Tyler Robinson](/Tyler_Robinson/overview)
+* [Pre-Event Searches & Recon](/Before/PreEvent_Searches_And_Recon)
+
+</div>
+</div>

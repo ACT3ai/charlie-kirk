@@ -36,3 +36,22 @@ Kirk was treated at Timpanogos Regional Hospital. Questions were raised about no
 - Confirm staff roles and communications with ME office.  
 - Review hospital security logs and chain of custody of any medical evidence.
 
+## Related Areas
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Hospital Choice & Transport](/Charlie/Autopsy/hospital-choice-transport)
+* [Charlie Kirk Autopsy](/Charlie/Autopsy/overview)
+* [Timeline](/Timeline/overview)
+
+</div>
+<div>
+
+* [Israel](/Israel/overview)
+* [Cover-Up](/CoverUp/overview)
+* [People](/People/overview)
+
+</div>
+</div>

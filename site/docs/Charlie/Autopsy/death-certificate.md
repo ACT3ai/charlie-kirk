@@ -1,0 +1,76 @@
+<a href="./overview" style={{display:'inline-block', marginBottom:'1rem',
+padding:'0.35rem 0.9rem', background:'#1a73e8', color:'#fff',
+borderRadius:'4px', textDecoration:'none', fontSize:'0.9rem'}}>
+← Charlie Kirk Autopsy
+</a>
+
+# Death Certificate Questions
+
+The circumstances surrounding Charlie Kirk's death certificate — who signed it, when, and under what authority — are among the most frequently cited concerns in the autopsy debate. This page documents the claims and legal context.
+
+## Hospital Physician vs. Medical Examiner
+
+According to commentary compiled in this investigation, the death certificate was reportedly **signed by a hospital physician** rather than by the state medical examiner following a full autopsy. In standard Utah practice, deaths from gun violence fall under medical-examiner jurisdiction, and the ME's office would typically issue the official cause-of-death determination after autopsy.
+
+Critics argue that having a hospital doctor sign the death certificate — before or instead of a medical-examiner autopsy — short-circuits the forensic process that would normally document bullet trajectory, wound characteristics, and other medically significant findings.
+
+## Utah Death Certificate Restrictions
+
+Under Utah law, certified copies of death certificates are **restricted records** that do not become freely accessible to the public for approximately **50 years**. This means:
+
+- The general public cannot obtain or review the death certificate
+- Only immediate family members, legal representatives, and certain authorized parties can request certified copies
+- The information recorded on the certificate — including cause of death, manner of death, and the certifying physician — is effectively sealed from public scrutiny during the active investigation and for decades afterward
+
+This restriction is standard practice in Utah, not specific to this case. However, commentators note that in a case of this magnitude, the inability to verify even basic death-certificate information contributes to an environment where competing narratives cannot be resolved.
+
+## Sequence of Events (Claims)
+
+Based on compiled research, the alleged sequence was:
+
+1. Charlie was transported to the hospital (see [Hospital Choice & Transport](./hospital-choice-transport))
+2. He was **pronounced deceased** at the hospital — described as "DOA" (dead on arrival) by some accounts
+3. A **hospital physician** reportedly signed the death certificate
+4. The body was **removed from the hospital** rapidly
+5. Reports indicate the body was subsequently **flown out of Utah**, with some claiming transport on Air Force 2
+
+Investigators question whether the medical examiner's office was given adequate access to perform a standard autopsy before the body left the jurisdiction. The speed of body removal is cited as unusual for a homicide investigation.
+
+## Connection to Cover-Up Claims
+
+The death-certificate issue connects to broader cover-up allegations:
+
+- **No public confirmation** of a full medical-examiner autopsy
+- **Rapid body removal** from the jurisdiction
+- **New medical examiner** ([Dr. Deirdre Amaro](./medical-examiner-surgeons)) had started just weeks before, raising questions about institutional continuity
+- **SB0082** ([autopsy law](./autopsy-law-sb0082)) restricting photo and record access took effect months before the death
+
+These data points, taken individually, may have routine explanations. Taken together, commentators argue they form a pattern of reduced transparency around the medical record.
+
+## Open Questions
+
+1. Who specifically signed the death certificate, and what was their role at the hospital?
+2. Was the medical examiner's office notified before the death certificate was signed?
+3. What is the recorded cause and manner of death?
+4. Did the ME's office take custody of the body at any point?
+5. Who authorized and arranged the transport of the body out of Utah?
+
+## Related Areas
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [No Autopsy Performed (Claims)](./no-autopsy-claims)
+* [Medical Examiner & Surgeons](./medical-examiner-surgeons)
+* [Cover-Up Evidence](/CoverUp/overview)
+
+</div>
+<div>
+
+* [After Events](/After/overview)
+* [Law 1: Force Information Disclosure](/Fix/Law1)
+* [Site Changes & Crime Scene Handling](/After/Site_Changes_And_Crime_Scene_Handling)
+
+</div>
+</div>

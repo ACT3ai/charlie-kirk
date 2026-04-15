@@ -1,7 +1,7 @@
-<a href="/" style={{display:'inline-block', marginBottom:'1rem',
+<a href="/Planes/overview" style={{display:'inline-block', marginBottom:'1rem',
 padding:'0.35rem 0.9rem', background:'#1a73e8', color:'#fff',
 borderRadius:'4px', textDecoration:'none', fontSize:'0.9rem'}}>
-← Home
+← Planes
 </a>
 
 # N1098L Spy Plane
@@ -21,3 +21,23 @@ This directory contains information about the N1098L aircraft and its involvemen
 - [ ] Evidence collection
 - [ ] Analysis
 - [ ] Documentation
+
+## Related Areas
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Planes Overview](/Planes/overview)
+* [Drones](/Drones/overview)
+* [CIA](/CIA/overview)
+
+</div>
+<div>
+
+* [Timeline](/Timeline/overview)
+* [Proof Intel Services](/Proof_Intel_Services/overview)
+* [Killer Theories](/Killer/overview)
+
+</div>
+</div>

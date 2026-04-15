@@ -10,7 +10,7 @@ borderRadius:'4px', textDecoration:'none', fontSize:'0.9rem'}}>
 
 This Level_3 page summarizes **close‑range shooter hypotheses** that propose the fatal shot did not come from the distant rooftop position attributed to Tyler Robinson, but from inside or immediately around the tented event area. These ideas rely heavily on frame‑by‑frame video analysis, acoustic arguments, and eyewitness footage circulated on platforms like X, YouTube, Instagram, and Rumble. They should be treated as **claims and lines of inquiry**, not as established fact.
 
-For higher‑level framing, see [Real Killer](/Killer/overview.md) and [Possible Shooter Locations](/Shooting_Locations/overview.md). This page focuses specifically on tent‑adjacent, vehicle‑based, and palm‑gun/CornerShot style theories.
+For higher‑level framing, see [Real Killer](/Killer/overview) and [Possible Shooter Locations](/Shooting_Locations/overview). This page focuses specifically on tent‑adjacent, vehicle‑based, and palm‑gun/CornerShot style theories.
 
 ## Tent shooter and CornerShot‑style weapon (claims)
 
@@ -65,6 +65,26 @@ Across the tent, van, and palm‑gun hypotheses, several **evidence gaps** are r
 - **Comprehensive ballistics and medical documentation** (autopsy, imaging, trajectory reconstructions) to test whether a close‑range pistol‑class round better fits the wound profile than a distant rifle shot.  
 - **High‑fidelity audio** to compare the timing of impact vs. muzzle blast and determine realistic shooter distance ranges.  
 
-Until such materials are released and independently examined, these close‑range theories remain **unproven but persistent lines of inquiry** within the broader “real killer” debate. Readers should cross‑reference this page with [Videos](/Videos/overview.md), [Autopsy](../Charlie/Autopsy.md), [Medical](/Medical/overview.md), and [Shooting Locations](/Shooting_Locations/overview.md) when evaluating claims.
+Until such materials are released and independently examined, these close‑range theories remain **unproven but persistent lines of inquiry** within the broader “real killer” debate. Readers should cross‑reference this page with [Videos](/Videos/overview), [Autopsy](../Charlie/Autopsy/overview), [Medical](/Medical/overview), and [Shooting Locations](/Shooting_Locations/overview) when evaluating claims.
+
+## Related Areas
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Gun & Bullet Analysis](/Gun_Bullet/overview)
+* [Tent](/Tent/overview)
+* [Shooting Locations](/Shooting_Locations/overview)
+
+</div>
+<div>
+
+* [Charlie Kirk Autopsy](/Charlie/Autopsy/overview)
+* [Proof Not Tyler](/Proof_Not_Tyler/overview)
+* [Cover-Up](/CoverUp/overview)
+
+</div>
+</div>
 
 

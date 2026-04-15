@@ -24,3 +24,23 @@ This directory contains information about related organizations and groups invol
 - [ ] Evidence collection
 - [ ] Analysis
 - [ ] Documentation
+
+## Related Areas
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [People](/People/overview)
+* [Israel](/Israel/overview)
+* [Motive](/Motive/overview)
+
+</div>
+<div>
+
+* [FBI](/FBI/overview)
+* [Cover-Up](/CoverUp/overview)
+* [Charlie Kirk](/Charlie/overview)
+
+</div>
+</div>

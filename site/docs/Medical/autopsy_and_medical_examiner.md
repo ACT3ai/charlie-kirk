@@ -34,3 +34,22 @@ Utah uses a state medical examiner system (not coroners). Dr. Deirdre Amaro is l
 - Clarify ME personnel roles and chain of custody for reports and evidence.  
 - Request lawful release of non-restricted summaries per GRAMA.
 
+## Related Areas
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Charlie Kirk Autopsy](/Charlie/Autopsy/overview)
+* [Hospital Choice & Transport](/Charlie/Autopsy/hospital-choice-transport)
+* [Cover-Up](/CoverUp/overview)
+
+</div>
+<div>
+
+* [FBI](/FBI/overview)
+* [Timeline](/Timeline/overview)
+* [Gun & Bullet](/Gun_Bullet/overview)
+
+</div>
+</div>

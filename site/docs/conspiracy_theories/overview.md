@@ -24,3 +24,23 @@ This directory contains various conspiracy theories and analysis related to the 
 - [ ] Evidence collection
 - [ ] Analysis
 - [ ] Documentation
+
+## Related Areas
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Proof Intel Services](/Proof_Intel_Services/overview)
+* [Proof Not Tyler](/Proof_Not_Tyler/overview)
+* [Motive](/Motive/overview)
+
+</div>
+<div>
+
+* [Israel](/Israel/overview)
+* [FBI](/FBI/overview)
+* [Cover-Up](/CoverUp/overview)
+
+</div>
+</div>

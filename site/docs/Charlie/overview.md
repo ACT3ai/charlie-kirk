@@ -31,21 +31,20 @@ At a high level, the compiled research portrays Charlie Kirk as a nationally inf
 
 For deeper dives into specific evidence and technical threads referenced here, see Related Sections below.
 
-<div style={{ display: "flex", justifyContent: "space-between", gap: "2rem" }}>
-  <div style={{ flex: 1 }}>
-  * [Charlie Kirk](/Charlie/overview.md)
-  * [Timeline](/Timeline/overview.md)
-  * [Autopsy](/Charlie/Autopsy.md)
-  </div>
-  <div style={{ flex: 1 }}>
-  * [TPUSA](/TPUSA/overview.md)
-  * [Media Articles on him](/Media/overview.md)
-  </div>
-  <div style={{ flex: 1 }}>
-  * [Charlie Videos](/Videos/overview.md)
-  * [Charlie Photos](/Photos/overview.md)
-  * [Medical](/Medical/overview.md)
-  </div>
+## In This Section
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Charlie Kirk Autopsy (7 sub-pages)](./Autopsy/overview)
+
+</div>
+<div>
+
+* [Israel, Donors & Motive Claims](./Israel_Donors_Motive)
+
+</div>
 </div>
 
 ## Context and Significance
@@ -107,33 +106,27 @@ The project’s materials catalog several quotes attributed to Charlie regarding
 - Lines like **“I’m going to have to stop supporting Israel…”** and **“you’ve left me no choice but to leave the pro‑Israel cause,”** used by commentators to argue that he was making a significant public and private break from prior positions.
 - A widely circulated remark about Gaza, summarized as **“I have got to be careful how I say this—they are going to ethnically cleanse Gaza,”** drawn from video and social‑media excerpts.
 
-These quotes are included not to endorse any particular narrative, but because they heavily influence public theories about motive and perceived risk around Charlie. For an assessment of their authenticity and context, readers should consult the original source materials (linked in sections such as [Media](/Media/overview.md), [Censorship](/Censorship/overview.md), and [Israel](/Israel/overview.md)) and any future legal or investigative findings that address them directly.
+These quotes are included not to endorse any particular narrative, but because they heavily influence public theories about motive and perceived risk around Charlie. For an assessment of their authenticity and context, readers should consult the original source materials (linked in sections such as [Media](/Media/overview), [Censorship](/Censorship/overview), and [Israel](/Israel/overview)) and any future legal or investigative findings that address them directly.
 
-## Related Sections (Peer Level_2 topics)
+## Related Areas
 
-Use these peer sections to explore detailed evidence threads that intersect with Charlie’s story:
+<div style={{display:’grid’, gridTemplateColumns:’1fr 1fr’, gap:’0.5rem 2rem’,
+marginTop:’0.5rem’}}>
+<div>
 
-1. [Timeline](/Timeline/overview.md) – Anchor dates, times, and sequences surrounding key events.
-2. [FBI](/FBI/overview.md) – Institutional posture, leadership changes, and investigative actions as reported.
-3. [CIA](/CIA/overview.md) – Allegations and analyses involving U.S. intelligence theories.
-4. [Medical](/Medical/overview.md) – Emergency response, medical examiner context, and contested claims.
-5. [Planes](/Planes/N1098L/overview.md) – Low-altitude flight reports and aircraft analyses.
-6. [Videos](/Videos/overview.md) – Public footage, line-of-sight debates, and audio-visual forensics.
-7. [Maps](/maps/overview.md) – Spatial relationships: stage, rooftops, approach vectors, and sightlines.
-8. [Before](/Before/overview.md) – Context setting prior to the event.
-9. [After](/After/overview.md) – Immediate responses, site changes, and media/legal developments.
-10. [Tyler Robinson](/Tyler/overview.md) – The accused, defense posture, and alternative claims.
-11. [TPUSA](/TPUSA/TPUSA.md) – Organizational context and leadership questions raised by researchers.
-12. [Google Searches](/GoogleSearches/overview.md) – Reported search activity patterns and their interpretations.
+* [Timeline](/Timeline/overview)
+* [FBI](/FBI/overview)
+* [Motive](/Motive/overview)
 
-These pages provide the factual scaffolding and contested interpretations that inform how Charlie’s significance is understood within the whole investigation.
+</div>
+<div>
 
-## Level_3 Pages within this Section
+* [Israel](/Israel/overview)
+* [TPUSA](/TPUSA/overview)
+* [Medical](/Medical/overview)
 
-The following in-depth pages currently expand on key subtopics related to Charlie and should be consulted alongside this overview:
-
-- [Autopsy](Autopsy.md)
-- [Charlie, Israel, Donors, and Motive Claims](Israel_Donors_Motive.md)
+</div>
+</div>
 
 ## Working Questions and Next Steps
 

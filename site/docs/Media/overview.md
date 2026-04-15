@@ -51,11 +51,43 @@ Several reports and testimonies referenced in this project allege that:
 - Social‑media platforms have taken down or restricted certain posts, videos, or accounts discussing the case, sometimes without clear explanation.
 - Broad **gag orders and legal constraints** limit what lawyers, witnesses, and even some media can say publicly while the case is pending.
 
-These concerns are explored in more detail on the [Media Censorship](Media/Censorship.md) page, which covers both legal and platform‑level mechanisms that can restrict information flow.
+These concerns are explored in more detail on the [Media Censorship](./Censorship) page, which covers both legal and platform‑level mechanisms that can restrict information flow.
+
+## In This Section
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Media Censorship](./Censorship) -- Specific allegations and examples of content removal, legal gag orders, and other information-control issues
+
+</div>
+<div>
+</div>
+</div>
 
 ## Related pages
 
-- [Media Censorship](./Censorship.md) – Specific allegations and examples of content removal, legal gag orders, and other information‑control issues.
-- [Timeline](/Timeline/overview.md), [Charlie](/Charlie/overview.md), [Motive](/Motive/overview.md), [Killer](/Killer/overview.md), and [TPUSA](/TPUSA/overview.md) – Sections where media reports and investigative pieces are frequently cited and analyzed.
+- [Timeline](/Timeline/overview), [Charlie](/Charlie/overview), [Motive](/Motive/overview), [Killer](/Killer/overview), and [TPUSA](/TPUSA/overview) -- Sections where media reports and investigative pieces are frequently cited and analyzed.
 
 Together, these pages help readers understand not only **what** has been reported about the case, but also **who is reporting it, how, and with what limitations or biases**.
+
+## Related Areas
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Censorship](/Censorship/overview)
+* [Cover-Up](/CoverUp/overview)
+* [FBI](/FBI/overview)
+
+</div>
+<div>
+
+* [Charlie Kirk](/Charlie/overview)
+* [Timeline](/Timeline/overview)
+* [Proof Intel Services](/Proof_Intel_Services/overview)
+
+</div>
+</div>

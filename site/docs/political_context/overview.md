@@ -24,3 +24,23 @@ This directory contains information about the political environment and implicat
 - [ ] Evidence collection
 - [ ] Analysis
 - [ ] Documentation
+
+## Related Areas
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Motive](/Motive/overview)
+* [Israel](/Israel/overview)
+* [Charlie Kirk](/Charlie/overview)
+
+</div>
+<div>
+
+* [Cover-Up](/CoverUp/overview)
+* [Proof Intel Services](/Proof_Intel_Services/overview)
+* [People](/People/overview)
+
+</div>
+</div>
