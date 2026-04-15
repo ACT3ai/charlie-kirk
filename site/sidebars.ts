@@ -64,7 +64,7 @@ const sidebars: SidebarsConfig = {
     'Influencers/youtube',                    //  10
     'conspiracy_theories/overview',           //   8
     'aircraft_flight_analysis/overview',      //   8
-    'key_individuals/overview',               //   7
+    // 'key_individuals/overview',            // removed — merged into People/overview
     'legal_investigation/overview',           //   7
     'government_organizations/overview',      //   6
     'campus_university/overview',             //   6

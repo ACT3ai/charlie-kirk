@@ -257,6 +257,181 @@ Both levels:
 
 
 ============================
+REBALANCING LEVEL 2 PAGES
+============================
+
+A Level 2 page is the owner of its Level 3 children. Every Level 2 must have a
+hyperlink table of contents — two columns with links down to the Level 3 pages
+underneath it. Every Level 3 page must have at least one Level 2 parent. If a
+Level 3 page exists without an owning Level 2, either assign it to the correct
+Level 2 or create a new Level 2 to house it.
+
+Rebalancing means re-analyzing a Level 2 section and its children to determine
+whether the current grouping still makes sense given the content that exists
+today. Think of it as clustering. As new information flows in — new evidence,
+new people, new documents — the original Level 3 breakdown may no longer fit
+cleanly. Rebalancing asks: do the existing Level 3 pages still group naturally,
+or has the section outgrown its structure?
+
+
+============================
+WHEN TO REBALANCE
+============================
+
+Rebalance a Level 2 section when any of these are true:
+
+  * The Level 2 TOC has grown past roughly 15-20 Level 3 entries and the list
+    feels unwieldy. A reader scanning 25+ bullets cannot orient quickly.
+  * New content has arrived that does not fit neatly into any existing Level 3
+    topic. It either gets shoe-horned somewhere awkward or sits homeless.
+  * Several Level 3 pages share a clear sub-theme that would benefit from its
+    own grouping — readers would expect to see them together.
+  * The Level 2 page serves a broad category (People, Evidence, Timeline) where
+    the children span diverse sub-areas with no visible structure.
+
+
+============================
+CLUSTERING — CREATING TOPIC GROUPS
+============================
+
+When a Level 2 section has too many Level 3 children, introduce topic clusters.
+A topic cluster is a new intermediate grouping — effectively a new Level 3
+directory that acts as a sub-section, pushing the former Level 3 pages down to
+Level 4 underneath it.
+
+The process:
+
+  1. INVENTORY — List every Level 3 page under the Level 2. Read each one to
+     understand what it covers.
+
+  2. IDENTIFY CLUSTERS — Look for natural groupings. Ask: if a newcomer is
+     trying to learn about this investigation area, what categories would they
+     expect to see? What clusters make sense for this audience?
+
+  3. NAME THE CLUSTERS — Each cluster needs a short, clear phrase name (3-6
+     words) that communicates the grouping to someone unfamiliar with the
+     investigation. The name should be appropriate for the audience coming in
+     to view the content.
+
+  4. ASSIGN PAGES — Place each existing Level 3 page into a cluster. Some
+     pages may not fit any cluster — those stay as direct Level 3 children
+     of the Level 2. Not everything must be clustered.
+
+  5. CREATE THE STRUCTURE — Each cluster becomes a new subdirectory under the
+     Level 2 directory, with its own overview.md (making it a nested Level 2).
+     The former Level 3 pages move into that subdirectory and become Level 3
+     children of the cluster.
+
+  6. UPDATE THE PARENT TOC — The parent Level 2 TOC now lists the cluster
+     names (linking to their overview pages) instead of listing every
+     individual page. The count in the parent TOC shrinks to a manageable
+     number.
+
+Rules for clustering:
+
+  * A cluster should contain at least 3 pages. Do not create a cluster for
+    a single page — that adds a navigation layer with no benefit.
+  * A cluster should not contain more than ~15 pages. If a cluster grows
+    beyond that, it may need its own sub-clusters.
+  * Unclustered pages are fine. Not every page needs to be in a group. A
+    Level 2 TOC can mix cluster links and direct Level 3 links.
+  * The cluster overview.md follows all Level 2 page requirements from this
+    manual: orientation paragraph, three-column TOC of its children, three
+    explanatory paragraphs, Related Areas.
+
+
+============================
+CLUSTERING — WORKED EXAMPLE: PEOPLE
+============================
+
+Suppose the Level 2 section is "People" and it has grown to 100 Level 3 pages,
+each profiling one individual. A TOC of 100 names is unusable. A newcomer
+cannot scan it and find what they need.
+
+Step 1: Look at how these people cluster up. Read the profiles and identify
+commonalities — organizational affiliation, role in the investigation, how
+they connect to the event.
+
+Step 2: Possible clusters emerge:
+
+  * TPUSA — people affiliated with Turning Point USA, the non-profit Charlie
+    Kirk founded. Board members, executives, employees, associated figures.
+  * Law Enforcement — FBI agents, local police, detectives, prosecutors, and
+    other officials involved in the investigation or cover-up.
+  * Witnesses — people who were present at UVU on September 10, 2025, or who
+    have firsthand testimony about events surrounding the assassination.
+  * Influencers — media figures, podcasters, journalists, and online
+    investigators who have covered or amplified the investigation.
+  * Intelligence Connections — individuals linked to intelligence agencies or
+    operations relevant to the case.
+  * Family — Charlie Kirk's family members and their roles in the aftermath.
+
+Step 3: The People/ directory restructures:
+
+  Before (flat):
+    People/
+      overview.md          (Level 2 — 100 bullets in TOC)
+      person_a.md          (Level 3)
+      person_b.md          (Level 3)
+      ... 98 more files
+
+  After (clustered):
+    People/
+      overview.md          (Level 2 — ~8 entries: 6 cluster links + 2 unclustered)
+      TPUSA/
+        overview.md        (nested Level 2 — TOC of TPUSA-affiliated profiles)
+        person_x.md        (now Level 3 under TPUSA)
+        person_y.md
+        ...
+      Law_Enforcement/
+        overview.md
+        agent_a.md
+        detective_b.md
+        ...
+      Witnesses/
+        overview.md
+        witness_1.md
+        witness_2.md
+        ...
+      Influencers/
+        overview.md
+        podcaster_a.md
+        journalist_b.md
+        ...
+      unclustered_person.md  (stays at Level 3 directly under People)
+
+Step 4: The parent People/overview.md TOC now reads:
+
+  * [TPUSA Affiliates](./TPUSA/overview)
+  * [Law Enforcement Officials](./Law_Enforcement/overview)
+  * [Witnesses at UVU](./Witnesses/overview)
+  * [Influencers & Media](./Influencers/overview)
+  * [Intelligence Connections](./Intelligence_Connections/overview)
+  * [Kirk Family Members](./Family/overview)
+  * [Person Who Doesn't Cluster](./unclustered_person)
+
+A newcomer can now scan 7 items instead of 100 and immediately find the
+group they care about. Each cluster overview then provides the detailed
+list within that group.
+
+
+============================
+REBALANCING WITHOUT CLUSTERING
+============================
+
+Not every rebalance requires creating clusters. Sometimes the fix is simpler:
+
+  * A Level 3 page belongs under a different Level 2 — move it.
+  * Two Level 3 pages cover the same sub-topic — merge them.
+  * A Level 3 page has grown so large it should split into multiple pages.
+  * The TOC ordering no longer reflects importance or logical flow — reorder.
+  * New Level 3 pages were added but never linked in the TOC — add them.
+  * Dead links in the TOC point to pages that were removed — clean them up.
+
+These are housekeeping rebalances and do not change the hierarchy depth.
+
+
+============================
 BALANCING THE THREE COLUMNS — WORKED EXAMPLE
 ============================
 

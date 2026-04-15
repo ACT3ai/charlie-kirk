@@ -1,5 +1,5 @@
 ---
-sidebar_label: "List of Individuals"
+sidebar_label: "People"
 ---
 <a href="/" style={{display:'inline-block', marginBottom:'1rem',
 padding:'0.35rem 0.9rem', background:'#1a73e8', color:'#fff',
@@ -7,55 +7,63 @@ borderRadius:'4px', textDecoration:'none', fontSize:'0.9rem'}}>
 ← Home
 </a>
 
-# List of Individuals
+# People
 
-## Overview
-This page provides a high‑level guide to **people and roles frequently mentioned** in connection with the Charlie Kirk case. It does not attempt to profile every individual or to assign guilt. Instead, it groups individuals into categories (victim, accused, investigators, witnesses, officials, and commentators) and points readers to sections where their roles are discussed in more detail. All descriptions here reflect public reporting and commentary and should be read as **context, not verdicts**.
+Profiles of the key individuals connected to the Charlie Kirk assassination investigation — the victim, the accused, family members, witnesses, investigators, and persons of interest whose roles and actions are examined across this site.
 
-## Central figures
+<div style={{display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: '1rem'}}>
+<div>
 
-- **Charlie Kirk** – The victim and central subject of this investigation. Founder and leader within TPUSA, described as a nationally influential conservative organizer. See: [Charlie](/Charlie/overview.md) and [Motive](/Motive/overview.md).
-- **Tyler Robinson** – The accused suspect in official narratives. A young man charged with aggravated murder and other offenses connected to the UVU shooting. See: [Tyler Robinson](/Tyler_Robinson/overview.md) and related subpages ([Travel](/Tyler/Travel.md), [Girlfriend](Tyler_Robinson/Girlfriend/overview.md), [Trial](Tyler_Robinson/Trial/overview.md), [Recruited](Tyler_Robinson/Recruited.md)).
+* [Charlie Kirk](./charlie-kirk)
+* [Tyler Robinson](./tyler-robinson)
+* [Erika Kirk](./erika-kirk)
+* [Candace Owens](./candace-owens)
+* [Tucker Carlson](./tucker-carlson)
+* [Josh Hammer](./josh-hammer)
 
-## Family and close associates (as reported)
+</div>
+<div>
 
-- **Family members and spouse** – Public discussion includes references to Charlie’s family and his wife, particularly around decisions about security, memorial arrangements, and privacy. Claims and commentary about their actions are covered cautiously in sections such as [Charlie](/Charlie/overview.md) and [After](/After/overview.md).
-- **Tyler Robinson’s family and partner** – Reports discuss his parents, background, and his transgender partner, Lance Twiggs, primarily in the context of legal proceedings and alleged communications before and after the event. See: [Tyler Robinson](/Tyler_Robinson/overview.md) and [Girlfriend](Tyler_Robinson/Girlfriend/overview.md).
+* [Rick Cutler](./rick-cutler)
+* [Rob McCoy](./rob-mccoy)
+* [Ian Carroll](./ian-carroll)
+* [Andrew Kolvet](./andrew-kolvet)
+* [Ben Shapiro](./ben-shapiro)
+* [Lance Twiggs](./lance-twiggs)
 
-## Law‑enforcement, legal, and institutional actors (as reported)
+</div>
+<div>
 
-Various officials and institutions appear in coverage of the investigation and trial, including:
+* [Central Figures](./Central_Figures)
+* [Families and Associates](./Families_And_Close_Associates)
+* [Officials and Institutions](./Officials_And_Institutions)
+* [Witnesses and Investigators](./Witnesses_Security_And_CitizenInvestigators)
 
-- **Law‑enforcement leadership and agents** involved in the initial response, ongoing investigation, and public briefings.
-- **Judges and attorneys** associated with Tyler Robinson’s case, including defense counsel and prosecutors, as well as commentary about gag orders and courtroom transparency.
-- **Medical and hospital officials** connected to emergency treatment and autopsy‑related questions.
+</div>
+</div>
 
-These individuals are primarily discussed in sections like [FBI](/FBI/overview.md), [Medical](/Medical/overview.md), [Autopsy](Charlie/Autopsy.md), [Legal Investigation](/legal_investigation/overview.md), and [Tyler Robinson Trial](Tyler_Robinson/Trial/overview.md), where their roles are described based on public records and reporting.
+This section profiles the people who matter most to understanding what happened on September 10, 2025 and why. The investigation involves a victim who was publicly shifting his political positions under intense donor pressure, an accused shooter whose timeline and evidence contain significant inconsistencies, family members whose post-event decisions have drawn scrutiny, and a network of political figures, investigators, and witnesses whose intersecting roles form the connective tissue of the case. Each profile page provides a concise summary and links to the deeper topical sections where that person's involvement is analyzed in detail.
 
-## Witnesses, attendees, and citizen investigators
+The people here fall into distinct categories that reflect their relationship to the event. Charlie Kirk and Tyler Robinson are the central figures — victim and accused. Erika Kirk, Rob McCoy, and Andrew Kolvet were in Charlie's immediate circle and are discussed because of their proximity to key moments. Candace Owens and Ian Carroll represent the citizen investigation effort that has driven public understanding of the case. Tucker Carlson, Josh Hammer, and Ben Shapiro connect to the political and donor dynamics that form the motive theories. Rick Cutler is a person of interest from the event itself whose behavior on video has raised questions.
 
-The event and its aftermath involve a wide range of other people:
+Start with the central figures — Charlie Kirk and Tyler Robinson — for the full picture. If you are following the motive thread, read Candace Owens and Josh Hammer for the donor pressure and intervention timeline. For day-of anomalies, Rick Cutler and Rob McCoy document the specific moments captured on video that citizen investigators consider most significant. The category pages (Central Figures, Families, Officials, Witnesses) provide broader groupings for individuals not yet profiled individually.
 
-- **Event attendees and witnesses** – Individuals present at the UVU event whose footage, testimonies, or interviews have contributed to public understanding and debate.
-- **Citizen investigators and content creators** – Online researchers, commentators, and journalists who have compiled timelines, flight analyses, acoustic studies, and other materials used across this project.
-- **Security and staff** – Members of private security teams, campus security, and event staff whose actions and positions have been scrutinized in various theories.
+## Related Areas
 
-These groups are referenced across many sections ([Videos](/Videos/overview.md), [Shooting Locations](/Shooting_Locations/overview.md), [Security & Law Enforcement](/security_law_enforcement/overview.md), [Media](/Media/overview.md), [Killer](/Killer/overview.md)), and their names and roles are typically introduced in those topic‑specific contexts.
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
 
-## How to use this section
+* [Timeline of Events](/Timeline/overview)
+* [Motive Analysis](/Motive/overview)
+* [Israel Connections](/Israel/overview)
 
-Rather than listing every individual by name, this page is meant to **orient readers to where people appear in the investigation**:
+</div>
+<div>
 
-- Use the topical sections (e.g., [Charlie](/Charlie/overview.md), [Tyler Robinson](/Tyler_Robinson/overview.md), [TPUSA](/TPUSA/overview.md), [FBI](/FBI/overview.md), [Medical](/Medical/overview.md), [Killer](/Killer/overview.md)) to learn about specific individuals in the context most relevant to them.
-- Remember that **mention in this project does not imply wrongdoing**. Many individuals are discussed because they were present, held relevant positions, or were cited in public reporting—not because they have been found responsible for a crime.
+* [Killer Theories](/Killer/overview)
+* [FBI Investigation](/FBI/overview)
+* [Influencer Coverage](/Influencers/overview)
 
-If dedicated profile pages for key individuals or groups become available, they will be linked here for easier navigation.
-
-## Level_3 Pages within this Section
-
-The following in-depth pages expand on the categories introduced here and should be consulted alongside this overview:
-
-- [Central Figures in the Charlie Kirk Case (Context Only)](Central_Figures.md)
-- [Families and Close Associates (Context Only)](Families_And_Close_Associates.md)
-- [Officials and Institutions Frequently Mentioned (Context Only)](Officials_And_Institutions.md)
-- [Witnesses, Security Personnel, and Citizen Investigators (Context Only)](Witnesses_Security_And_CitizenInvestigators.md)
+</div>
+</div>

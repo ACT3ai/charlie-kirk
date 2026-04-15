@@ -1,0 +1,69 @@
+---
+sidebar_label: "Tyler Robinson"
+---
+<a href="./overview" style={{display:'inline-block', marginBottom:'1rem',
+padding:'0.35rem 0.9rem', background:'#1a73e8', color:'#fff',
+borderRadius:'4px', textDecoration:'none', fontSize:'0.9rem'}}>
+← People
+</a>
+
+# Tyler Robinson
+
+**Tyler Robinson** is the individual charged with the assassination of Charlie Kirk on September 10, 2025, at Utah Valley University. He was 22 years old at the time, residing at 3419 S River Rd #73, St. George, Utah.
+
+## Role in the Investigation
+
+Robinson is the officially accused suspect. The investigation examines both the official narrative — that he acted as a lone gunman — and alternative theories that he may have been a patsy, recruited operative, or that the evidence against him contains significant inconsistencies.
+
+## Official Narrative (as reported)
+
+According to the charging documents filed by Officer Brian Davis of the Utah State Bureau of Investigation:
+
+- Robinson was captured on UVU surveillance cameras arriving on campus in a gray Dodge Challenger at approximately 08:29 on September 10, wearing a maroon t-shirt, light shorts, black hat, and light shoes.
+- At approximately 11:50, surveillance captured an individual (described as the suspect) walking across campus toward the Losee Center building.
+- At approximately 12:17, the suspect climbed over a wall onto the Losee Center rooftop.
+- At approximately 12:22, the suspect assumed a prone shooting position on the rooftop edge facing the courtyard.
+- At 12:23, Charlie Kirk was shot. The suspect sprinted north on the rooftop, dropped off the northeast corner, and fled north.
+- A Mauser Model 98, .30-06 caliber bolt-action rifle with a scope was recovered nearby, wrapped in a dark towel. Inscriptions were found on the casings.
+- Robinson turned himself in at the Washington County Sheriff's Office on the evening of September 11, accompanied by his parents and a retired detective family friend.
+
+## Key Investigative Questions
+
+The investigation raises questions including:
+
+- **Clothing changes**: Robinson was observed in different outfits throughout the day. The suspect on the rooftop wore a long-sleeve black shirt with an American flag/eagle print, dark jeans, and Converse shoes — different from what Robinson wore arriving on campus.
+- **Timeline gaps**: Several hours between his campus arrival and the suspect's rooftop appearance lack surveillance documentation.
+- **Mirandizing timeline**: Documents indicate Robinson was reportedly Mirandized at 6:25 PM on September 11 — before the officially reported 8:04 PM call from Sheriff Brooksby, raising questions about when authorities actually learned of his identity.
+- **Discord messages**: The confession messages attributed to Robinson appeared at 7:57 PM on September 11, over an hour after he was reportedly already Mirandized.
+- **Ballistics questions**: Citizen investigators question whether a .30-06 from the rooftop distance matches the observed wound pattern.
+
+## Deeper Coverage
+
+- [Tyler Robinson — Full Section](/Tyler_Robinson/overview) — comprehensive profile and analysis
+- [Day-of Timeline (Sept 10)](/Tyler_Robinson/Tyler_9_10_2025) — surveillance footage analysis
+- [Travel and Movements](/Tyler_Robinson/Travel) — routes before and after the event
+- [Recruitment Theories](/Tyler_Robinson/Recruited) — intelligence connection allegations
+- [Trial and Legal Proceedings](/Tyler_Robinson/Trial/overview) — court case details
+- [Girlfriend / Lance Twiggs](/Tyler_Robinson/Girlfriend/overview) — partner information
+
+**Status:** Alive (incarcerated at Utah County Jail, Spanish Fork, Utah)
+
+## Related Areas
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Charlie Kirk — The Victim](./charlie-kirk)
+* [Proof Not Tyler](/Proof_Not_Tyler/overview)
+* [Killer Theories](/Killer/overview)
+
+</div>
+<div>
+
+* [Court and Trial](/Tyler_Robinson/Trial/overview)
+* [FBI Investigation](/FBI/overview)
+* [Acoustics and Ballistics](/Medical/ballistics_and_wound_analysis)
+
+</div>
+</div>
