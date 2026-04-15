@@ -1,10 +1,10 @@
 ---
 name: ck_add_text
-description: Add new text/notes to the Charlie Kirk investigation file — finds the right section or creates a new one, never removes existing content
+description: Add new text/notes to the Charlie Kirk investigation file — finds the right section or creates a new one, never removes existing content. Also downloads X/Twitter posts, videos, and images.
 invocable: true
 ---
 
-This skill has three modes. Read $ARGUMENTS to decide which mode to run.
+This skill has four modes. Read $ARGUMENTS to decide which mode to run.
 
   IMPROVE MODE — triggered when the argument mentions improving, fixing, assessing,
   or upgrading pages. Examples:
@@ -22,11 +22,21 @@ This skill has three modes. Read $ARGUMENTS to decide which mode to run.
     * "create podcast host pages"
     * "add [topic] pages under [directory]"
 
-  ADD TEXT MODE — triggered when the argument is new text, a URL, a quote, a note,
+  X POST MODE — triggered when the argument contains one or more X/Twitter URLs
+  (URLs containing /status/ from x.com or twitter.com). This mode downloads the
+  post data, any attached videos and images, transcribes videos, and adds all
+  content to both the master investigation file AND the Docusaurus site pages.
+  Examples:
+    * "https://x.com/user/status/1234567890"
+    * Multiple URLs separated by newlines
+    * A URL plus additional notes text
+
+  ADD TEXT MODE — triggered when the argument is new text, a quote, a note,
   or anything else that is raw investigation content to be stored.
 
 If IMPROVE MODE is detected, skip to the IMPROVE MODE section below.
 If CREATE MODE is detected, skip to the CREATE MODE section below.
+If X POST MODE is detected, skip to the X POST MODE section below.
 If ADD TEXT MODE is detected (or the mode is ambiguous), continue with the add-text
 flow immediately below.
 
@@ -68,8 +78,13 @@ Key directories:
   {ROOT_DIR}/Prompts/             — AI generation prompts
   {ROOT_DIR}/site/docs/           — Public Docusaurus pages (302+ files)
   {ROOT_DIR}/skills_storage/      — Skill source files (symlinked to ~/.claude/commands/)
+  {ROOT_DIR}/videos/              — Central video storage (gitignored)
+  {ROOT_DIR}/images/              — Central image storage
+  {ROOT_DIR}/videos_transcription/ — Transcription files for downloaded videos
 
 CK_FILE is file {ROOT_DIR}/Charlie_Kirk.txt
+SITE_DOCS_DIR is dir {ROOT_DIR}/site/docs/
+TRANSCRIBE_JS is file ~/BGit/work/tools/Transcription/Transcribe.js
 
 
 ============================
@@ -111,7 +126,7 @@ The number of equal signs varies slightly but aim for roughly this pattern:
 
 
 ============================
-STEPS
+STEPS (ADD TEXT MODE)
 ============================
 
 STEP 1: Read the file
@@ -149,6 +164,654 @@ STEP 5: Confirm to the user
   - Which section the text was added to (existing or new).
   - The line number range of the insertion.
   - A one-line summary of what was added.
+
+
+============================
+X POST MODE
+============================
+
+This mode processes one or more X/Twitter post URLs. For each URL it:
+  1. Fetches the post data via the X API
+  2. Downloads any video attachments
+  3. Downloads any image attachments
+  4. Pins media to IPFS for permanent hosting
+  5. Transcribes videos automatically
+  6. Adds the post text and transcription to {CK_FILE}
+  7. Creates or updates Docusaurus site pages with embedded media
+  8. Converts .md pages to .mdx when embedding media
+
+
+============================
+X POST STEP 0: PARSE INPUT AND DETECT MULTI-URL MODE
+============================
+
+Parse $ARGUMENTS to identify all components:
+
+**Component 1: One or more X/Twitter URLs**
+* URLs containing /status/ from x.com or twitter.com
+* Examples:
+    https://x.com/redpillb0t/status/2039976250429640891
+    https://twitter.com/someuser/status/1234567890
+
+**Component 2: Video URL**
+* A direct video URL (not an X post URL)
+* If the X post already has a video attachment, this is redundant
+
+**Component 2b: Image URL**
+* A direct image URL (.jpg/.png/.webp/.gif)
+* If the X post already has image attachments, those are handled automatically
+
+**Component 3: Site Section**
+* An optional hint about which site/docs/ directory this content belongs in
+* E.g., "FBI", "CoverUp", "Israel", "Ballistics"
+* If not provided, auto-detect from post content
+
+**Component 4: Text Block**
+* Additional text/notes to add alongside the X post content
+
+**Component 5: Transcribe Video**
+* Transcription is ON BY DEFAULT for all downloaded videos
+* If the input contains "skip transcription" (case-insensitive), set
+  TRANSCRIBE_REQUESTED = false
+* Otherwise TRANSCRIBE_REQUESTED = true
+
+Parse rules:
+
+  1. Split the input into non-empty tokens by line.
+
+  2. Identify each token as one of:
+     - X_URL: a URL containing "/status/" (X.com or Twitter.com post)
+     - DIRECT_VIDEO_URL: a video URL not containing "/status/"
+     - DIRECT_IMAGE_URL: a direct image URL (.jpg/.png/.webp/.gif)
+     - SITE_SECTION: a non-URL token matching a directory name under {SITE_DOCS_DIR}
+     - TEXT_BLOCK: a token that doesn't fit any above category
+     - SKIP_TRANSCRIPTION_FLAG: the phrase "skip transcription" (case-insensitive)
+
+  3. Build a URL_LIST of all X post URLs found.
+
+  4. If a SITE_SECTION is found, it applies to ALL URLs unless a different section
+     is specified per URL (same pairing logic as the text block).
+
+  5. Any TEXT_BLOCK applies to all posts.
+
+* After parsing, output the resolved list:
+  ```
+  ============================================
+  Input Parsed
+  ============================================
+  URLs to process:
+    1. URL: {url}
+       Section hint: {section or "auto-detect"}
+    2. URL: {url}
+       Section hint: {section or "auto-detect"}
+  Direct video URL: {url or "none"}
+  Direct image URL: {url or "none"}
+  Text block: {yes/no — brief summary}
+  Transcribe videos: {yes (default) / no}
+  Mode: {SINGLE POST | MULTI-POST — {count} posts}
+  ============================================
+  ```
+
+* **MULTI-POST MODE**: If 2 or more X post URLs are present, run Steps 1 through 9
+  independently for EACH URL, one at a time.
+  Any global text block applies to ALL posts.
+  Output a divider between each post's processing:
+  ```
+  ############################################
+  Processing Post {n} of {total}: {url}
+  ############################################
+  ```
+
+
+============================
+X POST STEP 1: FETCH THE POST
+============================
+
+SKIP IF: No X/Twitter URL for this post.
+
+* Extract the post ID from the URL. X URLs look like:
+  - https://x.com/{username}/status/{post_id}
+  - https://twitter.com/{username}/status/{post_id}
+  - The post_id is the numeric string after /status/
+
+* Fetch the full post data using xurl with expanded fields:
+  ```bash
+  xurl "/2/tweets/{post_id}?tweet.fields=created_at,author_id,public_metrics,text,entities,conversation_id,lang,note_tweet,attachments&expansions=author_id,attachments.media_keys&user.fields=name,username,description,public_metrics&media.fields=url,preview_image_url,type,width,height,duration_ms,variants" --auth app
+  ```
+
+* If xurl fails or returns an error, inform the user and stop processing this post.
+  (If in multi-post mode, move to the next post.)
+
+* Output to stdout:
+  ```
+  ============================================
+  X Post Fetched: {post_id}
+  ============================================
+  Author: @{username} ({display_name})
+  Date: {created_at}
+  Likes: {like_count} | Retweets: {retweet_count} | Views: {impression_count}
+  Has Video: {yes/no}
+  Has Images: {yes/no — count if yes}
+  -------- POST TEXT --------
+  {full text of post — print every word, no truncation}
+  ---------------------------
+  ============================================
+  ```
+
+* Save a TEMP YAML file to /tmp/ck_xpost_{post_id}.yaml with the raw post data:
+  ```yaml
+  id: '{post_id}'
+  url: '{original_url}'
+  author:
+    username: '{username}'
+    name: '{display_name}'
+    id: '{author_id}'
+  text: |
+    {full text of the post}
+  created_at: '{created_at}'
+  lang: '{lang}'
+  public_metrics:
+    retweet_count: {n}
+    reply_count: {n}
+    like_count: {n}
+    quote_count: {n}
+    bookmark_count: {n}
+    impression_count: {n}
+  attachments:
+    videos:
+      - type: video
+        media_key: '{media_key}'
+        duration_ms: {n}
+        preview_image_url: '{url}'
+        variants:
+          - url: '{variant_url}'
+            content_type: '{type}'
+            bit_rate: {n}
+    images:
+      - type: photo
+        media_key: '{media_key}'
+        url: '{url}'
+        width: {n}
+        height: {n}
+  investigation: 'charlie_kirk'
+  added_date: '{today YYYY-MM-DD}'
+  ```
+
+
+============================
+X POST STEP 2: OCR IMAGES IF POST TEXT IS SPARSE
+============================
+
+SKIP IF: No X post was fetched in Step 1.
+SKIP IF: Post text has 20 or more meaningful words.
+SKIP IF: Post has no image attachments.
+
+* Many high-value posts are memes or screenshots — the real content is IN the image.
+
+* Count meaningful words in the post text (words longer than 2 characters, excluding
+  URLs, @handles, and #hashtags). If fewer than 20, attempt OCR.
+
+* For each image attachment:
+
+  2a. Download to temp:
+    ```bash
+    TMPIMG=$(mktemp /tmp/ck_ocr_XXXXXX.jpg)
+    curl -L -o "$TMPIMG" "{image_url}?format=jpg&name=4096x4096"
+    ```
+
+  2b. Run OCR:
+    ```bash
+    tesseract "$TMPIMG" stdout --psm 3 2>/dev/null
+    ```
+    If tesseract not installed: "tesseract not found. Install with: brew install tesseract"
+    Skip OCR for this image but continue.
+
+  2c. Capture OCR output as OCR_TEXT. If it has more than 5 words:
+    - Output to stdout
+    - Append to the analysis pool for topic matching
+    - Add to temp YAML as ocr_text field
+
+  2d. Clean up: rm -f "$TMPIMG"
+
+* Combine OCR text from all images into one analysis pool.
+
+
+============================
+X POST STEP 3: DETERMINE SITE SECTION
+============================
+
+* ANALYSIS POOL = post text + OCR text (if any) + text block (if provided)
+
+* If SITE_SECTION was provided in the input, use it directly. Resolve to a
+  directory under {SITE_DOCS_DIR}.
+
+* Otherwise, analyze the ANALYSIS POOL to determine which CK investigation topic
+  this post relates to. Match against these topic directories:
+
+  FBI/          — FBI involvement, cover-up, FBI blocking investigations
+  CIA/          — CIA involvement theories
+  Israel/       — Israel connections, Mossad
+  CoverUp/      — Cover-up evidence, destroyed evidence
+  Killer/       — Suspect analysis, Tyler Robinson
+  Gun_Bullet/   — Ballistics, gun, bullet analysis
+  Planes/       — N1098L, SAM flights, SU-BTT
+  Drones/       — Drone sightings
+  cameras/      — Surveillance camera analysis
+  security/     — Security failures at UVU
+  Before/       — Timeline events before the assassination
+  After/        — Timeline events after the assassination
+  People/       — Key individuals
+  Censorship/   — Censorship of the investigation
+  Motive/       — Motive analysis
+  Proof_Intel_Services/ — Intelligence services involvement proof
+  Proof_Not_Tyler/      — Evidence Tyler is not the shooter
+  Fix/          — Legal reform proposals
+  Influencers/  — Influencer coverage
+  Media/        — Media analysis and response
+
+* Store as TARGET_SECTION_DIR.
+
+* Also determine the best matching section in {CK_FILE} for the add-text step.
+  Store as CK_SECTION_NAME.
+
+
+============================
+X POST STEP 4: SAVE POST DATA AS YAML
+============================
+
+SKIP IF: No X post was fetched in Step 1.
+
+* Create directory if needed: {ROOT_DIR}/Research/x_posts/
+
+* Save the post as a YAML file: {ROOT_DIR}/Research/x_posts/{post_id}.yaml
+  Include all fields from the temp YAML plus ocr_text if OCR was performed.
+
+* Delete the temp file:
+  ```bash
+  rm -f /tmp/ck_xpost_{post_id}.yaml
+  ```
+
+
+============================
+X POST STEP 5: ADD POST TEXT TO MASTER INVESTIGATION FILE
+============================
+
+* Follow the same logic as ADD TEXT MODE Steps 1-5, using the post text + OCR text
+  as the content to add.
+
+* Format the insertion block as:
+
+  Source: {original_url}
+  Author: @{username} ({display_name})
+  Date: {created_at}
+  Likes: {like_count} | Retweets: {retweet_count} | Views: {impression_count}
+
+  {full text of post}
+
+  {OCR text if any, prefixed with "[Image text]: "}
+
+* Insert into the matching section of {CK_FILE} (determined in Step 3 as CK_SECTION_NAME).
+  Follow all ADD TEXT MODE rules — purely additive, never remove existing content.
+
+
+============================
+X POST STEP 6: DOWNLOAD VIDEO AND PIN TO IPFS
+============================
+
+SKIP IF: No video is available from the post or from a separate video URL.
+
+* All videos go to the central directory: {ROOT_DIR}/videos/
+  Never store videos inside site/ or individual topic directories.
+
+* First time setup: create directory and .gitignore if they don't exist:
+  ```bash
+  mkdir -p {ROOT_DIR}/videos
+  ```
+  Create {ROOT_DIR}/videos/.gitignore with:
+  ```
+  *.mp4
+  *.mp3
+  *.mkv
+  *.avi
+  *.mov
+  *.wav
+  *.webm
+  ```
+  Also ensure {ROOT_DIR}/.gitignore has a line for videos/:
+  ```
+  videos/
+  ```
+
+* Check for duplicate before downloading:
+
+  If {ROOT_DIR}/videos/manifest.yaml exists, check whether this video already exists
+  by matching source_url or filename starting with post_id.
+
+  **Case A — Already exists locally:** Skip download. Use existing CID. Output:
+    "Video already exists: {filename} (CID: {CID})"
+
+  **Case B — In manifest but missing locally:** Recover from IPFS:
+    ```bash
+    ipfs get --output={ROOT_DIR}/videos/{filename} {CID}
+    ipfs pin add {CID}
+    ```
+
+  **Case C — Not in manifest:** Proceed to download.
+
+* 6a. Download using yt-dlp:
+  ```bash
+  yt-dlp "{video_source_url}" -o "{ROOT_DIR}/videos/{post_id}.%(ext)s"
+  ```
+  If yt-dlp fails, try with cookies or inform the user.
+
+* 6b. Pin to IPFS:
+  ```bash
+  brew services list | grep kubo
+  ```
+  If not running: brew services start kubo
+  ```bash
+  ipfs add --pin {ROOT_DIR}/videos/{filename}
+  ```
+  Capture the CID. Verify: ipfs pin ls {CID}
+
+* 6c. Update manifest — append to {ROOT_DIR}/videos/manifest.yaml:
+  ```yaml
+  - filename: {filename}
+    ipfs_cid: {CID}
+    ipfs_gateway_url: https://ipfs.io/ipfs/{CID}
+    source_url: {source_url}
+    source_author: '@{username}'
+    description: '{brief description from content}'
+    added_date: '{today YYYY-MM-DD}'
+    pinned: true
+  ```
+
+* 6d. Output:
+  ```
+  ============================================
+  Video Downloaded & Pinned to IPFS
+  ============================================
+  File: {ROOT_DIR}/videos/{filename}
+  Size: {file size}
+  IPFS CID: {CID}
+  Gateway: https://ipfs.io/ipfs/{CID}
+  ============================================
+  ```
+
+
+============================
+X POST STEP 6B: DOWNLOAD IMAGES AND PIN TO IPFS
+============================
+
+SKIP IF: No images available from the post or from a separate image URL.
+
+* All images go to: {ROOT_DIR}/images/
+  Never store images inside site/ or individual topic directories.
+
+* First time setup:
+  ```bash
+  mkdir -p {ROOT_DIR}/images
+  ```
+
+* Image URL extraction from X API response:
+  - Images appear in "includes.media" array with type "photo"
+  - For highest quality, append "?format=jpg&name=4096x4096" to the base URL
+  - Record width and height from the API for aspect ratio in embeds
+
+* Check for duplicates: if {ROOT_DIR}/images/manifest.yaml exists, check
+  source_url or filename starting with post_id. Skip if found.
+
+* 6B-a. Download each image:
+  ```bash
+  curl -L -o "{ROOT_DIR}/images/{post_id}_{index}.jpg" "{image_url}?format=jpg&name=4096x4096"
+  ```
+  Where {index} is 1, 2, 3... for multiple images from the same post.
+
+* 6B-b. Pin each image to IPFS:
+  ```bash
+  ipfs add --pin {ROOT_DIR}/images/{filename}
+  ```
+  Capture the CID.
+
+* 6B-c. Update image manifest — append to {ROOT_DIR}/images/manifest.yaml:
+  ```yaml
+  - filename: {filename}
+    ipfs_cid: {CID}
+    ipfs_gateway_url: https://ipfs.io/ipfs/{CID}
+    source_url: {source_url}
+    source_author: '@{username}'
+    description: '{brief description}'
+    width: {width_px}
+    height: {height_px}
+    ocr_text_extracted: {true/false}
+    added_date: '{today YYYY-MM-DD}'
+    pinned: true
+  ```
+
+* 6B-d. Output:
+  ```
+  ============================================
+  Image(s) Downloaded & Pinned to IPFS
+  ============================================
+  Files: {list of filenames}
+  IPFS CIDs: {list of CIDs}
+  OCR performed: {yes/no}
+  ============================================
+  ```
+
+
+============================
+X POST STEP 7: TRANSCRIBE VIDEO
+============================
+
+SKIP IF: TRANSCRIBE_REQUESTED is false (user said "skip transcription").
+SKIP IF: No video was downloaded in Step 6.
+NOTE: Transcription is ON BY DEFAULT for all downloaded videos.
+
+* Create output directory if needed:
+  ```bash
+  mkdir -p {ROOT_DIR}/videos_transcription
+  ```
+
+* Create a temp directory for transcription:
+  ```bash
+  TRANSC_TMPDIR=$(mktemp -d /tmp/ck_transcribe_XXXXXX)
+  ```
+
+* Run the transcription:
+  ```bash
+  cd "$TRANSC_TMPDIR" && node ~/BGit/work/tools/Transcription/Transcribe.js "{ROOT_DIR}/videos/{video_filename}" transcription.txt
+  ```
+
+* Wait for completion. This may take several minutes for long videos.
+
+* Verify output:
+  ```bash
+  ls -la "$TRANSC_TMPDIR/transcription.txt"
+  ```
+
+* If transcription fails, inform the user and continue. Do not block on failure.
+
+* Copy the transcription to the permanent location:
+  ```bash
+  cp "$TRANSC_TMPDIR/transcription.txt" {ROOT_DIR}/videos_transcription/{post_id}.md
+  ```
+
+* Read the transcription into memory.
+
+* Clean up:
+  ```bash
+  rm -rf "$TRANSC_TMPDIR"
+  ```
+
+* Output:
+  ```
+  ============================================
+  Video Transcribed
+  ============================================
+  Video: {video_filename}
+  Transcription: {ROOT_DIR}/videos_transcription/{post_id}.md
+  Word count: {approximate word count}
+  ============================================
+  ```
+
+
+============================
+X POST STEP 8: PROCESS TRANSCRIPTION INTO INVESTIGATION FILE
+============================
+
+SKIP IF: Step 7 was skipped or transcription failed.
+
+* Read the full transcription from {ROOT_DIR}/videos_transcription/{post_id}.md.
+
+* Add the transcription content to {CK_FILE} in the same section as the post text
+  (determined in Step 3). Format the insertion as:
+
+  [Transcription of video from @{username}, {date}]
+  Source: {original_url}
+
+  {transcription text}
+
+* Follow all ADD TEXT MODE rules — purely additive, never remove existing content.
+
+* Analyze the transcription for additional people, facts, quotes, and claims
+  that were not in the post text. Note any new people or topics discovered.
+
+
+============================
+X POST STEP 9: CREATE/UPDATE SITE PAGES WITH EMBEDDED MEDIA
+============================
+
+SKIP IF: No TARGET_SECTION_DIR was determined in Step 3.
+
+* Determine which page in {SITE_DOCS_DIR}/{TARGET_SECTION_DIR}/ should receive
+  this content. Either:
+  - An existing page that covers this specific topic
+  - A new page if the content warrants one
+
+* If creating a new page or updating an existing page that needs embedded media
+  (video or images), use .mdx format:
+
+  - If the target file is .md, convert it to .mdx:
+    1. Rename the file from .md to .mdx
+    2. Search all files under {SITE_DOCS_DIR} for links pointing to the old .md
+       filename and update them to .mdx
+    3. Update sidebars.ts if it references the old filename
+
+  - If creating a new page, create it as .mdx from the start
+
+* VIDEO EMBEDDING — use half-width, floated right, with text flowing around it:
+  ```
+  <div style={{float: 'right', width: '48%', maxWidth: '480px', marginLeft: '1.5rem', marginBottom: '1rem'}}>
+    <video controls style={{width: '100%', height: 'auto', display: 'block', borderRadius: '4px'}}>
+      <source src="http://127.0.0.1:8080/ipfs/{CID}" type="video/mp4" />
+      <source src="https://ipfs.io/ipfs/{CID}" type="video/mp4" />
+      <source src="https://dweb.link/ipfs/{CID}" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+    <p style={{fontSize: '0.85rem', color: '#666', marginTop: '0.5rem'}}>
+      <em>{Description}. Source: <a href="{original_url}">@{username} on X</a>, {date}.</em>
+    </p>
+  </div>
+  ```
+  NEVER use cloudflare-ipfs.com — that gateway was shut down in 2024.
+  NEVER use `width="100%"` as an HTML attribute — use style={{width: '100%'}} only.
+
+  After the last floated media item, add a clearfix:
+  ```
+  <div style={{clear: 'both'}} />
+  ```
+
+* IMAGE EMBEDDING — use half-width, floated right, text flows around it:
+  Single image:
+  ```
+  <div style={{float: 'right', width: '48%', maxWidth: '480px', marginLeft: '1.5rem', marginBottom: '1rem'}}>
+    <img
+      src="http://127.0.0.1:8080/ipfs/{CID}"
+      alt="{description}"
+      style={{width: '100%', height: 'auto', aspectRatio: '{width}/{height}', borderRadius: '4px'}}
+    />
+    <p style={{fontSize: '0.85rem', color: '#666', marginTop: '0.5rem'}}>
+      <em>{Description}. Source: <a href="{original_url}">@{username} on X</a>, {date}.</em>
+    </p>
+  </div>
+  ```
+
+  Multiple images from the same post (up to 4 attachments):
+  ```
+  <div style={{float: 'right', width: '48%', maxWidth: '480px', marginLeft: '1.5rem', marginBottom: '1rem'}}>
+    <div style={{display: 'flex', flexWrap: 'wrap', gap: '0.5rem'}}>
+      <img
+        src="http://127.0.0.1:8080/ipfs/{CID_1}"
+        alt="{description_1}"
+        style={{width: 'calc(50% - 0.25rem)', height: 'auto', aspectRatio: '{w1}/{h1}', borderRadius: '4px'}}
+      />
+      <img
+        src="http://127.0.0.1:8080/ipfs/{CID_2}"
+        alt="{description_2}"
+        style={{width: 'calc(50% - 0.25rem)', height: 'auto', aspectRatio: '{w2}/{h2}', borderRadius: '4px'}}
+      />
+    </div>
+    <p style={{fontSize: '0.85rem', color: '#666', marginTop: '0.5rem'}}>
+      <em>{Description}. Source: <a href="{original_url}">@{username} on X</a>, {date}.</em>
+    </p>
+  </div>
+  ```
+
+  Use local IPFS gateway first (http://127.0.0.1:8080/ipfs/{CID}).
+  Include fallback gateways as additional <source> tags for video,
+  or as a comment noting the fallback URL for images.
+
+  Always add clearfix div after the last floated element on the page:
+  ```
+  <div style={{clear: 'both'}} />
+  ```
+
+* PAGE CONTENT — alongside the embedded media, add:
+  - Post author and date
+  - Full post text (attributed: "According to @{username}...")
+  - OCR text if extracted (attributed)
+  - Transcription excerpts (key quotes, attributed)
+  - Link to the source X post
+  - Follow all defamation rules for living persons
+
+* If the content mentions people who have Details/ profiles, cross-link to them.
+
+
+============================
+X POST STEP 10: FINAL SUMMARY
+============================
+
+* Output a complete summary for this post:
+  ```
+  ============================================
+  ck_add_text X Post Complete — Post {n}/{total}
+  ============================================
+  Post: {post_id} by @{username} on {date}
+  URL: {original_url}
+  Post text (first 100 chars): {preview...}
+  OCR performed: {yes — {word count} words | no}
+  YAML saved: {path}
+  Added to CK_FILE: {section name}, lines {range}
+  Video: {downloaded filename or "none"}
+  Video IPFS CID: {CID or "none"}
+  Images: {downloaded filenames or "none"}
+  Image IPFS CIDs: {CIDs or "none"}
+  Transcription: {yes — saved to {path} | no — not requested | failed}
+  Site pages updated: {list of files modified/created}
+  ============================================
+  ```
+
+* In multi-post mode, after all posts processed:
+  ```
+  ============================================
+  ALL POSTS PROCESSED
+  ============================================
+  Total posts: {n}
+  Successful: {n}
+  Failed (xurl error): {n} — {list URLs}
+  ============================================
+  ```
 
 
 ============================
@@ -203,7 +866,7 @@ IMPROVE STEP 1: Read the page
     as a parent nav page) or Level 3 (a specific topic page linked from a L2 TOC).
 
 IMPROVE STEP 2: If Level 2 — audit the TOC against actual files on disk
-  * List all .md files in the same directory.
+  * List all .md and .mdx files in the same directory.
   * Check: is every existing Level 3 page linked from the TOC?
   * If any are missing from the TOC → add them (fix the TOC in STEP 3).
   * Check: does the TOC link to any files that do not exist? → remove those links.
@@ -239,8 +902,8 @@ IMPROVE STEP 4: Fix each failing item — do not skip any
     [ ] Media items wider than 48% or not floated right → fix inline styles.
     [ ] Missing clearfix after last media item → add the clearfix div.
     [ ] Missing or wrong Related Areas section → add or fix it.
-    [ ] Page is a .typ file → note this to the user; do not rename files, but
-        alert them to convert to .mdx or .md.
+    [ ] Page is a .md that contains embedded media → convert to .mdx and update
+        all links pointing to it.
 
   Both levels:
     [ ] Broken internal links → fix the path to match the actual file location.
@@ -306,6 +969,9 @@ Create Mode builds new Level 3 pages under an existing Level 2 topic and
 immediately updates the Level 2 page's TOC to link to them. It never leaves
 orphan pages — every new page must be reachable from a Level 2 TOC entry.
 
+When creating pages that will contain embedded media (videos, images), create
+them as .mdx files from the start. Otherwise create as .md.
+
 CREATE STEPS
 ------------
 
@@ -314,7 +980,7 @@ CREATE STEP 1: Identify scope
     - Which Level 2 page is the parent (the .md file whose TOC will be updated).
     - What Level 3 pages need to be created (titles, content, file names).
   * Read the parent Level 2 page fully.
-  * List all .md files already in the directory to avoid duplicates.
+  * List all .md and .mdx files already in the directory to avoid duplicates.
 
 CREATE STEP 2: Create each Level 3 page
   * For each new page, write a fully compliant Level 3 file (see assessment manual):
@@ -329,6 +995,7 @@ CREATE STEP 2: Create each Level 3 page
       pointing outside the current section.
   * File naming: use lowercase-with-hyphens, prefixed with the parent topic
     name when pages are siblings in the same directory (e.g., podcasts-tucker-carlson.md).
+  * If the page will contain embedded video or images, use .mdx extension.
 
 CREATE STEP 3: Update the parent Level 2 page TOC — MANDATORY
   After creating all Level 3 pages, immediately update the parent Level 2 page:
@@ -344,8 +1011,8 @@ CREATE STEP 3: Update the parent Level 2 page TOC — MANDATORY
     three explanatory paragraphs, Related Areas), fix them now.
 
 CREATE STEP 4: Verify no orphans
-  * Confirm every .md file in the directory (except the Level 2 page itself) is
-    linked from the Level 2 TOC. If any are missing, add them.
+  * Confirm every .md and .mdx file in the directory (except the Level 2 page itself)
+    is linked from the Level 2 TOC. If any are missing, add them.
 
 CREATE STEP 5: Report
   * List every file created and the Level 2 file updated.
@@ -430,5 +1097,15 @@ IMPORTANT
   (~/BGit/Bryan_git/charlie-kirk/site/docs/). {CK_FILE} and all private files
   outside site/ are read-only.
 
-* In CREATE MODE: this skill writes new .md files under {SITE_DOCS_DIR} and
+* In CREATE MODE: this skill writes new .md/.mdx files under {SITE_DOCS_DIR} and
   updates the parent Level 2 page. {CK_FILE} and all private files are read-only.
+
+* In X POST MODE: this skill writes to:
+  - {CK_FILE} (adding post text and transcriptions)
+  - {ROOT_DIR}/Research/x_posts/ (YAML post data)
+  - {ROOT_DIR}/videos/ (downloaded videos, gitignored)
+  - {ROOT_DIR}/videos_transcription/ (transcription files)
+  - {ROOT_DIR}/images/ (downloaded images)
+  - {ROOT_DIR}/videos/manifest.yaml (video manifest)
+  - {ROOT_DIR}/images/manifest.yaml (image manifest)
+  - {SITE_DOCS_DIR}/ (creating/updating .mdx pages with embedded media)
