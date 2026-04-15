@@ -596,3 +596,118 @@ IMPORTANT
 * When in doubt about whether content is substantive or boilerplate,
   keep it. Better to preserve something unnecessary than delete
   something valuable.
+
+
+============================
+FINAL STAGE: CROSS-SITE HYPERLINKING AUDIT
+============================
+
+Run this stage at the END of Phase 2 (Execution), after all structural
+changes are complete and verified. This stage ensures that any page created
+or modified during this run has proper hyperlinks to other relevant pages
+across the site.
+
+PAGES_CSV is file {ROOT_DIR}/pages.csv
+
+This CSV contains every publicly visible page on the site with columns:
+  page_key, parent_key, level, url_path, file_path, title, sidebar_label,
+  directory, extension, has_frontmatter, line_count
+
+See the == Pages CSV == section in {ROOT_DIR}/CLAUDE.md for full column
+definitions. Key columns:
+  * page_key:   unique identifier (4 words max, underscores, no special chars)
+  * parent_key: page_key of parent page (empty only for Home)
+  * level:      numeric hierarchy level (1=Home, 2=section, 3=child, 4+=deeper)
+
+CROSS-LINK STEP 1: Identify affected pages
+  * Collect the list of all site/docs/ files that were created or modified
+    during the execution phase. These are the pages to audit.
+  * Include both moved pages AND rewritten overview pages.
+
+CROSS-LINK STEP 2: Load the page index
+  * Read {PAGES_CSV} into memory. Build a lookup of url_path -> title for
+    all pages.
+  * Group pages by directory/topic for quick matching.
+  * NOTE: After a rebalance, {PAGES_CSV} may be stale (pages moved, new
+    overviews created). Regenerate it by running the pages.csv generation
+    script at {ROOT_DIR} before loading:
+      cd {ROOT_DIR} && python3 -c "..." (same script that initially built it)
+    Or simply use the files on disk as the authoritative source and rebuild
+    the CSV at the end.
+
+CROSS-LINK STEP 3: Audit each affected page for missing cross-links
+  * For each affected page, read its full content.
+  * Scan the page text for mentions of topics, people, events, or concepts
+    that match OTHER pages in {PAGES_CSV}. Look for:
+      - People names that have their own page (e.g., "Tyler Robinson",
+        "Erika Kirk", "Candace Owens", "Ian Carroll", "Rick Cutler")
+      - Topic keywords that match a page title or directory name (e.g.,
+        "FBI", "drones", "ballistics", "TPUSA", "N1098L", "cover-up",
+        "autopsy", "Israel")
+      - Timeline references that match timeline pages
+      - Location references that match location pages
+      - References to laws (Law 1, Law 2, etc.) that match Fix/ pages
+  * For each match found:
+      - Check if the page already has a hyperlink to that target page.
+      - If NO existing link: flag it as a missing cross-link.
+  * Do NOT flag matches inside:
+      - The Related Areas section (managed separately)
+      - Existing hyperlink text (already linked)
+      - Frontmatter
+      - Image alt text or captions
+      - TOC grid sections (those links are structural, not inline)
+
+CROSS-LINK STEP 4: Add missing cross-links
+  * For each missing cross-link, add a hyperlink at the FIRST meaningful
+    mention of that topic/person in the page body.
+  * Use Docusaurus-style relative links:
+      - Same directory: [Title](./filename)
+      - Different directory: [Title](/url_path)
+  * Only link the FIRST mention — do not hyperlink every occurrence.
+  * Preserve the existing sentence structure. Wrap the existing text in
+    a link rather than inserting new text.
+  * Do NOT add links that would be redundant with the Related Areas section.
+  * Do NOT add links to trash/ pages.
+  * Do NOT add links to Topics3/ pages (legacy duplicates).
+
+CROSS-LINK STEP 5: Rebuild pages.csv
+  * Rebalancing moves files, creates new overviews, and changes the hierarchy.
+    The CSV is now stale. Rebuild it completely:
+      - Walk all .md and .mdx files under {SITE_DOCS_DIR}.
+      - For each file, extract: page_key, parent_key, level, url_path,
+        file_path, title, sidebar_label, directory, extension,
+        has_frontmatter, line_count.
+      - page_key rules: 4 words max, underscores, no special chars. Unique
+        across all pages. Descriptive of the page content.
+      - parent_key: page_key of the nearest ancestor overview page. Walk up
+        the directory tree until finding a directory with overview.md.
+        Home page has empty parent_key.
+      - level: overview at depth N = level N+1, non-overview at depth N =
+        level N+2. Root index.md = level 1.
+  * Write the rebuilt CSV to {PAGES_CSV}.
+  * Verify: all page_keys unique, all parent_keys reference existing
+    page_keys, no non-Home pages with empty parent_key.
+
+CROSS-LINK STEP 6: Report
+  * Output a summary:
+      ```
+      ============================================
+      Cross-Site Hyperlinking Audit
+      ============================================
+      Pages audited: {N}
+      Cross-links added: {N}
+        {page} -> {target} ({reason})
+        ...
+      Pages already well-linked: {N}
+      pages.csv rebuilt: {N} total entries
+        rows added: {N}, rows removed: {N}, rows modified: {N}
+      ============================================
+      ```
+
+CROSS-LINK CONSTRAINTS:
+  * Only modify pages that were already touched during this run.
+  * Never add links to non-existent pages — verify against disk.
+  * Never add links inside code blocks, frontmatter, or HTML attributes.
+  * Keep link text natural — do not change the meaning of sentences.
+  * Skip this stage if {PAGES_CSV} does not exist (output a warning and
+    generate it from scratch instead).

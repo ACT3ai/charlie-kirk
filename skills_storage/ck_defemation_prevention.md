@@ -429,3 +429,100 @@ that fact has been established in court.
 Framing something as a question or an allegation preserves the investigation's
 value while removing the defamation risk. This is how responsible investigative
 journalism has always operated.
+
+
+============================
+FINAL STAGE: CROSS-SITE HYPERLINKING AUDIT
+============================
+
+Run this stage at the END of the defamation scan, after all fixes are applied
+and verified. This stage ensures that any page modified during this run has
+proper hyperlinks to other relevant pages across the site.
+
+PAGES_CSV is file {ROOT_DIR}/pages.csv
+
+This CSV contains every publicly visible page on the site with columns:
+  page_key, parent_key, level, url_path, file_path, title, sidebar_label,
+  directory, extension, has_frontmatter, line_count
+
+See the == Pages CSV == section in {ROOT_DIR}/CLAUDE.md for full column
+definitions. Key columns:
+  * page_key:   unique identifier (4 words max, underscores, no special chars)
+  * parent_key: page_key of parent page (empty only for Home)
+  * level:      numeric hierarchy level (1=Home, 2=section, 3=child, 4+=deeper)
+
+CROSS-LINK STEP 1: Identify affected pages
+  * Collect the list of all site/docs/ files that were modified during this
+    defamation scan run. These are the pages to audit.
+  * If no files were modified, skip this stage entirely.
+
+CROSS-LINK STEP 2: Load the page index
+  * Read {PAGES_CSV} into memory. Build a lookup of url_path -> title for
+    all pages.
+  * Group pages by directory/topic for quick matching.
+
+CROSS-LINK STEP 3: Audit each affected page for missing cross-links
+  * For each affected page, read its full content.
+  * Scan the page text for mentions of topics, people, events, or concepts
+    that match OTHER pages in {PAGES_CSV}. Look for:
+      - People names that have their own page (e.g., "Tyler Robinson",
+        "Erika Kirk", "Candace Owens", "Ian Carroll", "Rick Cutler")
+      - Topic keywords that match a page title or directory name (e.g.,
+        "FBI", "drones", "ballistics", "TPUSA", "N1098L", "cover-up",
+        "autopsy", "Israel")
+      - Timeline references that match timeline pages
+      - Location references that match location pages
+      - References to laws (Law 1, Law 2, etc.) that match Fix/ pages
+  * For each match found:
+      - Check if the page already has a hyperlink to that target page.
+      - If NO existing link: flag it as a missing cross-link.
+  * Do NOT flag matches inside:
+      - The Related Areas section (managed separately)
+      - Existing hyperlink text (already linked)
+      - Frontmatter
+      - Image alt text or captions
+      - Legal disclaimer admonition blocks
+
+CROSS-LINK STEP 4: Add missing cross-links
+  * For each missing cross-link, add a hyperlink at the FIRST meaningful
+    mention of that topic/person in the page body.
+  * Use Docusaurus-style relative links:
+      - Same directory: [Title](./filename)
+      - Different directory: [Title](/url_path)
+  * Only link the FIRST mention — do not hyperlink every occurrence.
+  * Preserve the existing sentence structure. Wrap the existing text in
+    a link rather than inserting new text.
+  * Do NOT add links that would be redundant with the Related Areas section.
+  * Do NOT add links to trash/ pages.
+  * Do NOT add links to Topics3/ pages (legacy duplicates).
+
+CROSS-LINK STEP 5: Update pages.csv
+  * The defamation skill typically modifies existing pages rather than creating
+    new ones. If any pages were modified (title changed, content rewritten),
+    update the corresponding rows in {PAGES_CSV}:
+      - Update title and sidebar_label if they changed.
+      - Update line_count to reflect the new file length.
+  * If the defamation scan caused a file to be renamed (e.g., .md -> .mdx),
+    update file_path and extension.
+
+CROSS-LINK STEP 6: Report
+  * Output a summary:
+      ```
+      ============================================
+      Cross-Site Hyperlinking Audit
+      ============================================
+      Pages audited: {N}
+      Cross-links added: {N}
+        {page} -> {target} ({reason})
+        ...
+      Pages already well-linked: {N}
+      pages.csv updated: {N} rows modified
+      ============================================
+      ```
+
+CROSS-LINK CONSTRAINTS:
+  * Only modify pages that were already touched during this run.
+  * Never add links to non-existent pages — verify against {PAGES_CSV}.
+  * Never add links inside code blocks, frontmatter, or HTML attributes.
+  * Keep link text natural — do not change the meaning of sentences.
+  * Skip this stage if {PAGES_CSV} does not exist (output a warning instead).

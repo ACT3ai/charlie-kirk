@@ -1196,3 +1196,120 @@ IMPORTANT
 * NEVER modify sidebars.ts (site/sidebars.ts) in ANY mode unless the user's
   input text explicitly asks to update the sidebar/left bar. The sidebar
   structure is managed separately and this skill must not touch it.
+
+
+============================
+FINAL STAGE: CROSS-SITE HYPERLINKING AUDIT
+============================
+
+Run this stage at the END of every mode (ADD TEXT, IMPROVE, CREATE, X POST)
+after all other steps are complete. This stage ensures that any page created
+or updated during this run has proper hyperlinks to other relevant pages
+across the site.
+
+PAGES_CSV is file {ROOT_DIR}/pages.csv
+
+This CSV contains every publicly visible page on the site with columns:
+  page_key, parent_key, level, url_path, file_path, title, sidebar_label,
+  directory, extension, has_frontmatter, line_count
+
+See the == Pages CSV == section in {ROOT_DIR}/CLAUDE.md for full column
+definitions. Key columns:
+  * page_key:   unique identifier (4 words max, underscores, no special chars)
+  * parent_key: page_key of parent page (empty only for Home)
+  * level:      numeric hierarchy level (1=Home, 2=section, 3=child, 4+=deeper)
+
+CROSS-LINK STEP 1: Identify affected pages
+  * Collect the list of all site/docs/ files that were created or modified
+    during this run (in any mode). These are the pages to audit.
+  * If no site/docs/ files were touched (e.g., ADD TEXT MODE only wrote to
+    {CK_FILE}), skip this stage entirely.
+
+CROSS-LINK STEP 2: Load the page index
+  * Read {PAGES_CSV} into memory. Build a lookup of url_path -> title for
+    all pages.
+  * Group pages by directory/topic for quick matching.
+
+CROSS-LINK STEP 3: Audit each affected page for missing cross-links
+  * For each affected page, read its full content.
+  * Scan the page text for mentions of topics, people, events, or concepts
+    that match OTHER pages in {PAGES_CSV}. Look for:
+      - People names that have their own page (e.g., "Tyler Robinson",
+        "Erika Kirk", "Candace Owens", "Ian Carroll", "Rick Cutler")
+      - Topic keywords that match a page title or directory name (e.g.,
+        "FBI", "drones", "ballistics", "TPUSA", "N1098L", "cover-up",
+        "autopsy", "Israel")
+      - Timeline references that match timeline pages
+      - Location references that match location pages
+      - References to laws (Law 1, Law 2, etc.) that match Fix/ pages
+  * For each match found:
+      - Check if the page already has a hyperlink to that target page
+        (look for existing markdown links or HTML links pointing to
+        the matching url_path).
+      - If NO existing link: flag it as a missing cross-link.
+  * Do NOT flag matches inside:
+      - The Related Areas section (those are managed separately)
+      - Existing hyperlink text (already linked)
+      - Frontmatter
+      - Image alt text or captions
+
+CROSS-LINK STEP 4: Add missing cross-links
+  * For each missing cross-link, add a hyperlink at the FIRST meaningful
+    mention of that topic/person in the page body.
+  * Use Docusaurus-style relative links:
+      - Same directory: [Title](./filename)
+      - Different directory: [Title](/url_path)
+  * Only link the FIRST mention — do not hyperlink every occurrence.
+  * Preserve the existing sentence structure. Wrap the existing text in
+    a link rather than inserting new text. Example:
+      BEFORE: "The FBI has been blocking independent investigations"
+      AFTER:  "The [FBI](/FBI) has been blocking independent investigations"
+  * If a person is mentioned and has a People/ page:
+      BEFORE: "Candace Owens covered this extensively"
+      AFTER:  "[Candace Owens](/People/candace-owens) covered this extensively"
+  * Do NOT add links that would be redundant with the Related Areas section.
+  * Do NOT add links to trash/ pages.
+  * Do NOT add links to Topics3/ pages (those are legacy duplicates).
+
+CROSS-LINK STEP 5: Update pages.csv
+  * If any NEW pages were created during this run (IMPROVE MODE rarely does
+    this, but CREATE MODE and X POST MODE do):
+      - For each new page, add a row to {PAGES_CSV} with all columns filled in.
+      - Generate a unique page_key: 4 words or less, underscores, no special
+        characters, descriptive enough to distinguish from sibling pages.
+        Check existing page_keys in the CSV to avoid duplicates.
+      - Set parent_key to the page_key of the parent overview page
+        (the overview.md in the same directory, or the nearest ancestor
+        directory that has an overview.md).
+      - Set level based on depth: overview at depth N = level N+1,
+        non-overview at depth N = level N+2.
+  * If any existing pages were MODIFIED (title change, file rename, move):
+      - Update the corresponding row in {PAGES_CSV}.
+      - If a page was moved, update its file_path, url_path, directory,
+        parent_key, and level. Also update any other rows that reference
+        it as their parent_key.
+  * If any pages were DELETED:
+      - Remove the row from {PAGES_CSV}.
+      - Update any orphaned children to point to the nearest valid parent.
+
+CROSS-LINK STEP 6: Report
+  * Output a summary:
+      ```
+      ============================================
+      Cross-Site Hyperlinking Audit
+      ============================================
+      Pages audited: {N}
+      Cross-links added: {N}
+        {page} -> {target} ({reason})
+        ...
+      Pages already well-linked: {N}
+      pages.csv updated: {N} rows added, {N} rows modified, {N} rows removed
+      ============================================
+      ```
+
+CROSS-LINK CONSTRAINTS:
+  * Only modify pages that were already touched during this run.
+  * Never add links to non-existent pages — verify against {PAGES_CSV}.
+  * Never add links inside code blocks, frontmatter, or HTML attributes.
+  * Keep link text natural — do not change the meaning of sentences.
+  * Skip this stage if {PAGES_CSV} does not exist (output a warning instead).

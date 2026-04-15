@@ -31,6 +31,7 @@ assassination investigation (September 10, 2025, Utah Valley University).
                               # quotes, timeline, court data. Managed by /ck_add_text
   README.md                   # Docusaurus setup guide for GitHub
   claude.md                   # This file
+  pages.csv                   # Master index of all public pages (see == Pages CSV == below)
 
   site/                       # PUBLIC: Docusaurus static site
     docusaurus.config.ts      # Site config (domain: whoassassinatedcharliekirk.com)
@@ -133,6 +134,81 @@ assassination investigation (September 10, 2025, Utah Valley University).
 
   .github/workflows/          # GitHub Actions
     pages.yml                 # GitHub Pages deployment
+
+
+== Pages CSV ==
+
+PAGES_CSV is file {ROOT_DIR}/pages.csv
+
+This is the master index of every publicly visible page on the Docusaurus site.
+It acts like a database table where each row is one page. Every skill that
+creates or modifies site pages must keep this file in sync.
+
+Path: {ROOT_DIR}/pages.csv
+
+Columns:
+
+  page_key        Unique identifier for the page (like a database primary key).
+                  String with words and underscores, no special characters.
+                  Four words or less. Descriptive enough to distinguish it from
+                  sibling pages. Examples: Home, FBI, Fix_Law1, Charlie_Autopsy,
+                  Israel_Foreign_Leads, trash_flight_records.
+
+  parent_key      The page_key of this page's parent page. Empty only for the
+                  home page (Level 1). Every other page must have a parent.
+                  The parent is normally one level lower (e.g., a Level 3 page's
+                  parent is the Level 2 overview of the same directory).
+
+  level           Numeric hierarchy level:
+                    1 = Home page (site root index.md) — only one
+                    2 = Section overview pages (overview.md at depth 1)
+                        and root-level standalone pages (Topics.md, etc.)
+                    3 = Section child pages (non-overview at depth 1) and
+                        sub-section overviews (overview.md at depth 2)
+                    4 = Sub-section children (non-overview at depth 2) and
+                        deeper overviews (overview.md at depth 3+)
+                    5+ = Deeper nesting (rare)
+                  A page's parent should normally be one level lower than itself.
+
+  url_path        The public URL path visitors see. Relative to the site root.
+                  Examples: /, /FBI, /Fix/Law1, /People/candace-owens.
+                  Overview pages use the directory path (no /overview suffix).
+
+  file_path       Relative path from the repo root to the markdown file.
+                  Examples: site/docs/index.md, site/docs/FBI/overview.md.
+
+  title           Page title extracted from frontmatter title field or first H1.
+
+  sidebar_label   The label shown in the sidebar navigation. Falls back to title.
+
+  directory       Parent directory path relative to site/docs/. Empty string for
+                  root-level files.
+
+  extension       File extension: md or mdx.
+
+  has_frontmatter Whether the file has YAML frontmatter (yes/no).
+
+  line_count      Total line count of the file.
+
+Maintaining pages.csv:
+
+  * When a skill creates a new page under site/docs/, add a row to pages.csv
+    with all columns filled in. Generate a unique page_key (4 words max,
+    underscores, no special chars). Set parent_key to the page_key of the
+    parent overview page.
+
+  * When a skill modifies a page (title change, file rename, level change),
+    update the corresponding row in pages.csv.
+
+  * When a skill moves or deletes a page, update or remove the row and fix
+    any other rows that reference it as parent_key.
+
+  * The CSV can be regenerated from scratch by walking site/docs/ and
+    extracting metadata from each file. But incremental updates are preferred
+    during skill runs to avoid losing manually adjusted page_keys.
+
+Current stats (as of generation): 364 pages total.
+  Level 1: 1, Level 2: 59, Level 3: 157, Level 4: 147.
 
 
 == Details Directory (People Pages) ==
