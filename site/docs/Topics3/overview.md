@@ -30,21 +30,27 @@ Welcome to the Topics3 section of the Charlie Kirk investigation. This directory
 
 ### Locations & Geography
 - [Locations](/Topics3/Locations/overview) - Location analysis
+- [Location](/Topics3/Location/overview) - Location details
 - [Maps](/Topics3/Maps/overview) - Geographic mapping
 - [South Stairs](/Topics3/South Stairs/overview) - Specific location analysis
+- [Possible Shooting Locations](/Topics3/Possible%20Shootering%20Locations/overview) - Possible shooting locations analysis
 
 ### Key Individuals
 - [Tyler Robinson](/Topics3/Tyler Robinson/overview) - Key individual analysis
-- [Suspects](/Topics3/Suspects (List)/overview) - Suspect analysis
+- [Tyler Robinson Shooting](/Topics3/Tyler%20Robinson%20Shooting/overview) - Shooting event analysis
+- [Suspects](/Topics3/Suspects%20(List)/overview) - Suspect analysis
+- [Charlie Kirk](/Topics3/charlie-kirk) - Charlie Kirk page
 
 ### Timeline & Events
 - [Timeline](/Topics3/Timeline/overview) - Chronological analysis
 - [Podcast YouTube Analysis](/Topics3/Podcast_YouTube_Analysis/overview) - Media analysis
+- [Which](/Topics3/Which/overview) - Factor analysis
 
 ### Other Topics
 - [Medical](/Topics3/Medical/overview) - Medical analysis
 - [Israel](/Topics3/Israel/overview) - International connections
 - [Other](/Topics3/Other/overview) - Miscellaneous topics
+- [Suspect Before Actions](/Topics3/Suspect%20Before%20Actions/overview) - Pre-event suspect actions
 
 ---
 

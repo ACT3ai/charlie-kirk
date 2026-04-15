@@ -91,4 +91,6 @@ The following in-depth pages expand on specific timeline layers and should be co
 - [September 10, 2025 – Day‑of Timeline (Reported Facts and Claims)](Sept_10_2025.md)
 - [2025 Context Timeline (Claims and Reported Events)](Year_2025.md)
 - [2024 Pre‑Event Timeline (Searches and Early Signals – Claims)](Year_2024.md)
+- [2026 Timeline](2026.md)
+- [Timeline by Year](years.md)
 

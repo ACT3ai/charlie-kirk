@@ -75,3 +75,4 @@ Because the case is ongoing and some proceedings are restricted, this page can o
 - [Tyler Robinson: Sept 8–13 — Hour-by-Hour](/Timeline/Tyler_Robinson/2025_Sept) — Complete minute-by-minute timeline of Robinson’s movements Sep 9–12, the shooting, the flight south, surrender, and formal booking at 4:00 AM Sep 12.
 - [Tyler Robinson Timeline — Overview](/Timeline/Tyler_Robinson) — Multi-day summary spanning Sep 9 through Sep 16 with charges and case details.
 - [Mirandizing — Legal Analysis](/Timeline/Tyler_Robinson/Mirandizing) — Verbatim Miranda transcript (Bates 003996-R2); four-step legal reasoning establishing that Robinson was Mirandized on **September 11** at 6:25 PM, not September 12.
+- [Mirandizing — Court Evidence Documents](/court/mirandize/mirandize-overview) — Primary evidence documents, exhibits, and AI analysis related to the Miranda timing question.

@@ -9,27 +9,41 @@ borderRadius:'4px', textDecoration:'none', fontSize:'0.9rem'}}>
 
 # Candace Owens
 
-**Candace Owens** is a conservative commentator, podcast host, and close personal friend of Charlie Kirk. She has emerged as the most prominent independent investigator of his assassination, producing extensive podcast coverage, disclosing previously unknown evidence, and publicly naming individuals and institutions she believes were involved.
+**Candace Owens** is a conservative commentator, podcast host, and close personal friend of Charlie Kirk. She has emerged as the most prominent independent voice investigating his assassination, producing extensive podcast coverage and publicly disclosing previously unknown information about the case.
 
-## Role in the Investigation
+## Background
 
-Owens is both a key witness (she was reportedly informed of threats and possessed direct communications with Charlie) and the leading public voice pressing for a full investigation. Her disclosures have driven multiple investigative threads tracked across this site.
+Owens built a significant media presence through her commentary work, initially gaining attention through Turning Point USA before launching independent media ventures including a show on The Daily Wire and later her own platform. She has a large social media following and produces long-form investigative content.
 
-## Key Contributions to the Investigation
+## Connection to the Investigation
 
-- **Charlie's messages**: Owens revealed private messages from Charlie Kirk stating he "just lost another huge Jewish donor" and that he was "leaving me no choice but to leave the pro-Israel cause." She reported these were sent approximately 48 hours before his death.
-- **Israeli cell phones**: Disclosed the existence of 16 Israeli-registered cell phones present at or near UVU on September 10, information reportedly kept secret by government sources.
-- **Egyptian plane investigation**: Produced detailed analysis of the SU-BTT Egyptian plane's movements, including the claim that it dropped off military contractors with "US Department of Defense Liaison" badges at Provo airport between September 4-10.
-- **"The list"**: According to Owens, Andrew Kolvet informed her at the hospital that she and Tucker Carlson "were on a list."
-- **Threats**: Owens reported receiving threats immediately after the assassination, alongside Tucker Carlson and Ian Carroll.
-- **"The Bride of Charlie" series**: Produced an investigative podcast series examining the aftermath, TPUSA succession, and unanswered questions.
+### Close Personal Friend
+Owens was a close personal friend of Charlie Kirk and has publicly spoken about their relationship and her grief following his death.
+
+### Investigative Journalism
+Owens has produced the most extensive independent media coverage of the Charlie Kirk case, including:
+
+- A multi-part documentary series titled "The Bride of Charlie" examining TPUSA succession and events surrounding September 10
+- Podcast episodes analyzing flight records, including the Egyptian-registered SU-BTT aircraft
+- Disclosure of information about Israeli-registered cell phones reported to have been present near UVU on September 10
+- Interviews with witnesses and people connected to the case
+
+### "The Bride of Charlie" Series
+This multi-part investigative series, available on Owens' YouTube channel, examines the aftermath of Charlie Kirk's death, TPUSA organizational changes, and open questions in the case.
+
+## Organizations
+
+- Candace Owens Show — Host and producer
+- Formerly [TPUSA](/TPUSA/overview) — Communications director
+- Formerly The Daily Wire — Host
 
 ## Deeper Coverage
 
 - [Candace Owens Podcast Coverage](/Influencers/podcasts-candace-owens)
+- [TPUSA Organization](/TPUSA/overview)
 - [Israel Connections](/Israel/overview)
-- [Planes — SU-BTT and Egyptian Flights](/Planes/overview)
-- [Censorship of the Investigation](/Censorship/overview)
+- [Planes](/Planes/overview)
+- [Influencer Coverage](/Influencers/overview)
 
 **Status:** Alive
 
@@ -46,7 +60,7 @@ marginTop:'0.5rem'}}>
 </div>
 <div>
 
-* [Israeli Presence Claims](/Israel/Israeli_Presence_And_Connectivity_Claims)
+* [TPUSA Organization](/TPUSA/overview)
 * [Influencer Coverage](/Influencers/overview)
 * [Motive Analysis](/Motive/overview)
 

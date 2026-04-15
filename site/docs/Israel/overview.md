@@ -11,7 +11,7 @@ borderRadius:'4px', textDecoration:'none', fontSize:'0.9rem'}}>
 
 This section organizes how Israel, Israeli policy debates, and pro-Israel networks appear in public discussions about Charlie Kirk's life and death. It does **not** claim that any Israeli individual or institution ordered or carried out the killing — it sorts the allegations into distinct threads so readers can evaluate each on its own evidence.
 
-<div style={{display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem'}}>
+<div style={{display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: '1rem'}}>
 <div>
 
 * [Israel's Motivation to Kill Charlie](./motivation)
@@ -24,6 +24,13 @@ This section organizes how Israel, Israeli policy debates, and pro-Israel networ
 * [Israel PM](./israel-pm)
 * [Israel Hamptons](./israel-hamptons)
 * [Israel Planes](./israel-planes)
+
+</div>
+<div>
+
+* [Charlie Kirk Quotes on Israel](./Charlie_Quotes_Israel)
+* [Israeli Presence and Connectivity Claims](./Israeli_Presence_And_Connectivity_Claims)
+* [Israeli Search Patterns Claims](./Israeli_Search_Patterns_Claims)
 
 </div>
 </div>

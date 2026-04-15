@@ -62,8 +62,8 @@ marginTop:'0.5rem'}}>
 <div>
 
 * [Court and Trial](/Tyler_Robinson/Trial/overview)
+* [TPUSA Organization](/TPUSA/overview)
 * [FBI Investigation](/FBI/overview)
-* [Acoustics and Ballistics](/Medical/ballistics_and_wound_analysis)
 
 </div>
 </div>

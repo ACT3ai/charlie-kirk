@@ -103,3 +103,10 @@ Finally, many "fix" proposals emphasize the role of **civil society and communit
 - Independent research and watchdog groups can assist by **documenting timelines, collecting public evidence, and pushing for formal inquiries** without resorting to harassment or premature accusations.
 
 Together, these efforts aim to ensure that the lessons drawn from the Charlie Kirk case lead to constructive change rather than deepening cynicism. For related discussions about voting and civic action, see [Vote](/Vote/overview).
+
+## Additional Pages in This Section
+
+- [Conclusion Logic — Evidence Threshold Standards](./Conclusion_Logic)
+- [Churches — Faith Community Response](./Churches)
+- [TPUSA — Organizational Reform Proposals](./TSUSA)
+- [Politicians — Political Accountability](./Politicans)

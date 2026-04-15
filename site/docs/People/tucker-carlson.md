@@ -9,25 +9,33 @@ borderRadius:'4px', textDecoration:'none', fontSize:'0.9rem'}}>
 
 # Tucker Carlson
 
-**Tucker Carlson** is a conservative media figure and commentator who features prominently in the Charlie Kirk investigation due to his political alignment with Kirk's evolving positions, his presence at key TPUSA events, and reports that he was named on a threat list alongside Candace Owens.
+**Tucker Carlson** is a conservative media figure and commentator who features in the Charlie Kirk investigation due to his political alignment with Kirk's evolving positions and his presence at key [TPUSA](/TPUSA/overview) events in 2024-2025.
 
-## Role in the Investigation
+## Background
 
-Carlson is relevant as a figure whose political commentary intersected with the tensions that, according to the investigation, preceded Kirk's assassination. He is also reportedly a target of threats that emerged in the same period.
+Carlson is one of the most recognized figures in American conservative media, having hosted a prime-time show on Fox News before launching an independent media operation. He produces long-form interviews and commentary across multiple platforms.
 
-## Key Connections to the Investigation
+## Connection to the Investigation
 
-- **AmericaFest 2024 (December 2024)**: Carlson spoke at the TPUSA event and discussed Epstein's potential involvement in a blackmail operation possibly on behalf of foreign intelligence services.
-- **TPUSA Student Action Summit (July 14, 2025)**: Carlson spoke at the Tampa event, reportedly saying "go all the way" — interpreted by some commentators as encouragement for Kirk's evolving stance.
-- **Donor friction**: Kirk's private messages reportedly referenced losing "another huge Jewish donor" over not cancelling Tucker Carlson, indicating Carlson's presence at TPUSA events was a point of contention with pro-Israel donors.
-- **"The list"**: According to Candace Owens, Andrew Kolvet told her at the hospital that she and Tucker Carlson "were on a list."
-- **Josh Hammer threat**: According to investigation notes, Josh Hammer publicly called for Tucker Carlson to be "neutralized."
-- **Post-assassination threats**: Candace Owens reported that threats came to Ian Carroll, Tucker Carlson, and herself immediately after the assassination.
+### AmericaFest 2024 (December 2024)
+Carlson spoke at the [TPUSA](/TPUSA/overview) AmericaFest event and discussed topics including the Epstein case and foreign intelligence operations.
+
+### TPUSA Student Action Summit (July 14, 2025)
+Carlson spoke at the Tampa event. His presence at TPUSA events was noted in the context of Charlie Kirk's evolving political positioning in mid-2025.
+
+### Conservative Media Dynamics
+Kirk's private messages reportedly referenced donor friction connected to Tucker Carlson's presence at TPUSA events, indicating Carlson's role was a point of discussion within conservative donor networks.
+
+## Organizations
+
+- Tucker Carlson Network — Founder and host
+- Formerly Fox News — Prime-time host
 
 ## Deeper Coverage
 
 - [Tucker Carlson Podcast Coverage](/Influencers/podcasts-tucker-carlson)
-- [Israel — Donor Pressure and Motive](/Israel/overview)
+- [TPUSA Organization](/TPUSA/overview)
+- [Israel — Donor Dynamics](/Israel/overview)
 - [Motive — Donors and Foreign Policy](/Motive/Donors_Israel_ForeignPolicy)
 
 **Status:** Alive
@@ -40,12 +48,12 @@ marginTop:'0.5rem'}}>
 
 * [Candace Owens](./candace-owens)
 * [Charlie Kirk Profile](./charlie-kirk)
-* [Josh Hammer](./josh-hammer)
+* [TPUSA Organization](/TPUSA/overview)
 
 </div>
 <div>
 
-* [TPUSA Organization](/TPUSA/overview)
+* [Josh Hammer](./josh-hammer)
 * [Censorship](/Censorship/overview)
 * [Influencer Coverage](/Influencers/overview)
 
