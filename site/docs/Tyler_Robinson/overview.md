@@ -61,6 +61,7 @@ This page consolidates key claims, timelines, and legal notes related to Tyler R
 - This page aggregates claims, questions, and references appearing in public reporting, social‑media posts, and citizen‑investigator commentary. Items tagged or described as “claims,” “alleged,” or “hypothesized” are not vetted conclusions. Investigators should rely on primary documents (court filings, official releases, unedited footage) wherever possible.
 
 ## Subpages and related topics
+- [Tyler on September 10, 2025](./Tyler_9_10_2025.mdx) – day-of timeline, surveillance footage analysis, and the 25-second movement from shooting position to Losee Center.
 - [Travel and movements](./Travel.md) – claimed routes, timelines, and travel logistics before and after the incident.
 - [Recruitment and intelligence-related claims](./Recruited.md) – allegations and hypotheses about possible intelligence connections; all items are presented as claims, not established fact.
 - [Girlfriend](./Girlfriend/overview.md) – publicly discussed information and claims about Robinson’s girlfriend and what she may have known.

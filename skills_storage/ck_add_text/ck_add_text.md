@@ -743,7 +743,7 @@ This step uses the Level 2 / Level 3 decisions made in Step 3.
     1. Rename the file from .md to .mdx
     2. Search all files under {SITE_DOCS_DIR} for links pointing to the old .md
        filename and update them to .mdx
-    3. Update sidebars.ts if it references the old filename
+    3. Do NOT modify sidebars.ts — the sidebar is managed separately
 
   - If creating a new page, create it as .mdx from the start
 
@@ -1108,6 +1108,7 @@ CREATE MODE CONSTRAINTS
   * Defamation rules apply to all content written — see assessment manual and
     the CLAUDE.md files in the project for full defamation rules.
   * Only write to files under {SITE_DOCS_DIR}.
+  * NEVER modify sidebars.ts — the sidebar is managed separately.
 
 
 ============================
@@ -1191,3 +1192,7 @@ IMPORTANT
   - {ROOT_DIR}/videos/manifest.yaml (video manifest)
   - {ROOT_DIR}/images/manifest.yaml (image manifest)
   - {SITE_DOCS_DIR}/ (creating/updating .mdx pages with embedded media)
+
+* NEVER modify sidebars.ts (site/sidebars.ts) in ANY mode unless the user's
+  input text explicitly asks to update the sidebar/left bar. The sidebar
+  structure is managed separately and this skill must not touch it.
