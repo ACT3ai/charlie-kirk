@@ -20,55 +20,56 @@ REASONING: His powerful [30-06 Mauser 98 gun](/Gun_Bullet/overview.md) would hav
 <div style={{ display: "flex", justifyContent: "space-between", gap: "2rem" }}>
   <div style={{ flex: 1 }}>
   * [Charlie Kirk](/Charlie/overview.md)
-  * [Court](/Tyler_Robinson/Trial/overview.md)
-  * [Real Killer](/Killer/overview.md)  
-  * [Timeline](Timeline/overview.md) 
-  * [Motive](Motive/overview.md) 
+  * [Real Killer](/Killer/overview.md)
+  * [Timeline](/Timeline/overview.md)
+  * [Motive](/Motive/overview.md)
   * [Israel](/Israel/overview.md)
-  * [Autopsy](Charlie/Autopsy/overview)
-  </div>
-  <div style={{ flex: 1 }}>
-  * [Vote](/Vote/overview.md)  
-  * [Bad Laws](/Fix/overview.md)
+  * [Tyler Robinson](/Tyler_Robinson/overview.md)
   * [Trial](/Tyler_Robinson/Trial/overview.md)
-  * [Politicians](/Fix/Politicans.md)
-  * [Maps](maps/overview.md)  
-  * [Censorship](/Censorship/overview.md)
-  * [FBI](FBI/overview.md) (Cover up / Bad Behavior)
   </div>
   <div style={{ flex: 1 }}>
-  * [Tyler Robinson](/Tyler_Robinson/overview.md) 
-  * [Possible Shooting Locations](Shooting_Locations/overview.md) 
-  * [Videos](Videos/overview.md)  
-  * [Photos](Photos/overview.md)  
-  * [UVU](UVU/overview.md) & [Locations](/Locations/overview.md)
-  * [Medical](Medical/overview.md) 
+  * [Vote](/Vote/overview.md)
+  * [Fix Laws](/Fix/overview.md)
+  * [Maps](/maps/overview.md)
+  * [Censorship](/Censorship/overview.md)
+  * [FBI](/FBI/overview.md)
+  * [Cover-up](/CoverUp/overview.md)
+  * [Proof Not Tyler](/Proof_Not_Tyler/overview.md)
+  </div>
+  <div style={{ flex: 1 }}>
+  * [Shooting Locations](/Shooting_Locations/overview.md)
+  * [Videos](/Videos/overview.md)
+  * [Photos](/Photos/overview.md)
+  * [UVU](/UVU/overview.md)
+  * [Locations](/Locations/overview.md)
+  * [Medical](/Medical/overview.md)
+  * [Gun & Bullet](/Gun_Bullet/overview.md)
   </div>
 </div>
 
 <div style={{ display: "flex", justifyContent: "space-between", gap: "2rem" }}>
   <div style={{ flex: 1 }}>
-  * [Before](Before/overview.md)  
-  * [After](After/overview.md)  
-  * [List of Individuals](/People/overview.md)
-  * [Media Articles](/Media/overview.md)
-  * [(Possible) Cover-up](CoverUp/overview.md)
-  * [TPUSA](TPUSA/overview.md)
+  * [Before](/Before/overview.md)
+  * [After](/After/overview.md)
+  * [People](/People/overview.md)
+  * [Media](/Media/overview.md)
+  * [TPUSA](/TPUSA/overview.md)
+  * [Tent](/Tent/overview.md)
   </div>
   <div style={{ flex: 1 }}>
-  * [UVU Courtyard](/UVU/Courtyward.md) & [Tent](Tent/overview.md)
   * [Theories](/Theories/overview.md)
-  * [On Podcasts](/Influencers/podcasts.md)
-  * [Influencers](Influencers/overview.md): On [X](/Influencers/x.md), [Podcasts](/Influencers/podcasts.md), [YouTube](Influencers/youtube.md)
-  * [U.S. Intelligence](US_Intelligence/overview.md) 
-  * [Drones](Drones/overview.md)
+  * [Influencers](/Influencers/overview.md)
+  * [U.S. Intelligence](/US_Intelligence/overview.md)
+  * [Intelligence](/intelligence/overview.md)
+  * [Drones](/Drones/overview.md)
+  * [Proof Intel Services](/Proof_Intel_Services/overview.md)
   </div>
   <div style={{ flex: 1 }}>
-  * [Tyler Robinson Shooting](Tyler/shooting/overview.md)
-  * [Tyler Before](/Tyler/Before.md)
-  * [Videos](Videos/overview.md)  
-  * [Photos](Photos/overview.md)  
   * [Planes](/Planes/overview.md)
+  * [Cameras](/cameras/security/overview.md)
+  * [Patsys](/Patsys/overview.md)
+  * [Google Searches](/GoogleSearches/overview.md)
+  * [Your Actions Fix It](/Your_Actions_Fix_It/overview.md)
   * [Other](/Other/overview.md)
   </div>
 </div>
@@ -109,27 +110,26 @@ REASONING: His powerful [30-06 Mauser 98 gun](/Gun_Bullet/overview.md) would hav
 
 
 ## Areas of Investigation
-- [FBI](FBI/overview.md): [(Possible) Cover-up](CoverUp/overview.md), [Connecticut](FBI/Connecticut.md)
-- [TPUSA](Topics3/TPUSA/overview.md): [Security Team](Topics3/TPUSA/overview.md), [Employees](Topics3/TPUSA/overview.md), [Donors](Topics3/TPUSA/overview.md)
-- [After](After/overview.md): [Tyler After](Topics3/After/overview.md), [Tent Construction](Tent/overview.md), [Medical](Medical/overview.md)
-- [Before](Before/overview.md): [Suspect Before Actions](<Topics3/Suspect Before Actions/overview.md>), [Leadership Plane](Plane/Leadership/overview.md), [Spy Plane](Plane/N1098L/overview.md)
+- [FBI](FBI/overview.md): [(Possible) Cover-up](CoverUp/overview.md)
+- [TPUSA](TPUSA/overview.md)
+- [After](After/overview.md): [Tent Construction](Tent/overview.md), [Medical](Medical/overview.md)
+- [Before](Before/overview.md): [Spy Plane](Planes/N1098L/overview.md)
 
 
 ## Charlie Kirk
 <div style={{ display: "flex", justifyContent: "space-between", gap: "2rem" }}>
   <div style={{ flex: 1 }}>
   * [Charlie Kirk](/Charlie/overview.md)
-  * [Timeline](Timeline/overview.md) 
-  * [Autopsy](Charlie/Autopsy/overview)
+  * [Timeline](/Timeline/overview.md)
   </div>
   <div style={{ flex: 1 }}>
-  * [TPUSA](TPUSA/overview.md)
-  * [Media Articles on him](/Media/overview.md)
+  * [TPUSA](/TPUSA/overview.md)
+  * [Media](/Media/overview.md)
   </div>
   <div style={{ flex: 1 }}>
-  * [Charlie Videos](/Videos/overview.md)  
-  * [Charlie Photos](/Photos/overview.md)  
-  * [Medical](Medical/overview.md) 
+  * [Videos](/Videos/overview.md)
+  * [Photos](/Photos/overview.md)
+  * [Medical](/Medical/overview.md)
   </div>
 </div>
 
@@ -153,7 +153,6 @@ Citizen Investigators & [Influencers](/Influencers/overview.md). including [Podc
 
 ### To Organize
 - [Influencers](Influencers/overview.md), [X](Influencers/x.md), [Podcasts](Influencers/podcasts.md), [YouTube](Influencers/youtube.md)
-- [South Stairs](<./Topics3/South Stairs/overview.md>)
 - [Possible Distraction Patsys](/Patsys/overview.md)
 - [Government Organizations](/government_organizations/overview.md) - FBI, CIA, DOJ, and other agencies
 - [Legal Investigation](/legal_investigation/overview.md) - Legal proceedings and evidence handling
