@@ -490,10 +490,10 @@ WRITING STYLE ON PAGES
 
 
 ============================
-WRITING STYLE ON PAGES
+BOILERPLATE TEMPLATE REMOVAL
 ============================
 
-The page will often have this boilerplate template below content. Assume that we want to get rid of that, but look at those and analyze if we really need them or not. 
+The page will often have this boilerplate template below content. Assume that we want to get rid of that, but look at those and analyze if we really need them or not.
 
 
 
@@ -823,6 +823,114 @@ Prevention rule:
   into a sibling Level 2) or it is missing content (add Level 3 pages).
   Never ship a Level 2 overview with a single-bullet TOC.
 
+--- Symptom 4: Two-panel card grid showing the section's own overview as one of the cards ---
+
+What a visitor sees:
+  Navigating to /category/{section} (e.g. /category/planes) lands on an
+  auto-generated card grid that shows EXACTLY TWO panels. One panel is
+  labeled with the name of a child subdirectory (e.g. "N1098L"). The OTHER
+  panel is labeled with the SAME name as the section itself (e.g. "Planes").
+  Clicking the second panel ("Planes") navigates the reader to the section's
+  own overview page — meaning the section is presenting its own overview as
+  a sibling card next to its real children. This is disorienting: the reader
+  arrived at the Planes page and is offered a card called "Planes" inside it.
+
+Source-file fingerprint:
+  This is the combination of THREE source-file properties at once:
+
+    1. site/docs/{Section}/_category_.json contains
+         "link": { "type": "generated-index" }
+       which tells Docusaurus to render the directory as a card grid.
+
+    2. The directory contains BOTH an overview.md (or overview.mdx) AND at
+       least one child subdirectory. The card grid lists every child of the
+       directory — files AND subdirectories — as separate cards.
+
+    3. The overview file's frontmatter declares either a `sidebar_label` or
+       a `title` that matches the section name (e.g. sidebar_label: "Planes"
+       inside site/docs/Planes/overview.md). That label becomes the card
+       title for the overview, producing a card named after the section
+       sitting next to the section's other children.
+
+  Concrete reproduction (Planes section, pre-fix):
+    site/docs/Planes/_category_.json -> "type": "generated-index"
+    site/docs/Planes/N1098L/         -> renders as card "N1098L"
+    site/docs/Planes/overview.md     -> sidebar_label "Planes"
+                                        renders as card "Planes"
+    Result at /category/planes: two cards, "N1098L" and "Planes".
+
+How to identify in source:
+  For every directory under site/docs/ whose _category_.json uses
+  "type": "generated-index", run:
+
+    ls site/docs/{Section}/
+
+  If the directory contains an overview.md or overview.mdx in addition to
+  subdirectories, the auto card grid will include the overview as a card.
+  This is always wrong — overviews are meant to be the destination, not a
+  sibling card.
+
+Fix:
+  Same fix as Symptom 1 — replace generated-index with a doc link that
+  points at the overview. Once the section's link goes directly to the
+  overview, /category/{section} is no longer generated and the misleading
+  two-panel grid disappears. Also follow Symptoms 2 and 3 for the overview
+  itself (.mdx extension, populated TOC).
+
+Prevention rule:
+  Any directory that contains an overview.md or overview.mdx must have its
+  _category_.json link set to "type": "doc" pointing at that overview.
+  Never leave a directory with both an overview AND a generated-index link
+  — the overview will leak into the card grid as a sibling of its children.
+
+--- Symptom 5: Duplicate sibling directories with overlapping names ---
+
+What a visitor sees:
+  The left sidebar shows TWO entries with nearly identical names — for
+  example both "Plane" and "Planes" appear at the same nesting level. The
+  reader cannot tell which one is canonical. Clicking either one may lead
+  to a card grid (Symptom 1 / 4) or a stub overview page. The investigation
+  content is split across both directories with no clear ownership rule.
+
+Source-file fingerprint:
+  Two sibling directories under site/docs/ whose names differ only in
+  pluralization, casing, or punctuation:
+
+    site/docs/Plane/        (singular)
+    site/docs/Planes/       (plural)
+
+  OR a duplicate of the same name nested under a parent directory:
+
+    site/docs/Planes/                  (top-level)
+    site/docs/Topics3/Planes/          (nested)
+
+  Both produce sidebar entries. Both may produce /category/{slug} URLs.
+  When labels collide, Docusaurus disambiguates by appending -1, -2 to
+  one of them (e.g. /category/planes and /category/planes-1) — neither
+  URL is the one a reader would guess.
+
+How to identify in source:
+  ls site/docs/ and look for near-duplicate names: singular/plural pairs,
+  CamelCase vs snake_case variants, or the same name appearing under
+  Topics3/ as well as at the top level. Cross-check by grepping for the
+  label string across all _category_.json files:
+
+    grep -R '"label":' site/docs/ | sort | uniq -c -f1 | sort -rn | head
+
+  Any label appearing more than once is a duplicate-sidebar candidate.
+
+Fix:
+  Pick ONE canonical directory per topic. Move all content from the
+  duplicate into the canonical directory, update internal links, update
+  pages.csv rows, then delete the duplicate directory. Update any
+  _category_.json that referenced the deleted directory by id.
+
+Prevention rule:
+  Before creating a new top-level directory under site/docs/, grep for
+  any existing directory whose name differs only in pluralization,
+  casing, or location (e.g. Topics3/{Same}). If a near-duplicate exists,
+  add to the existing directory instead of creating a new one.
+
 --- Combined audit for any Level 2 page ---
 
   [ ] _category_.json uses "type": "doc", not "type": "generated-index".
@@ -833,4 +941,446 @@ Prevention rule:
       on a /category/{name} card grid.
   [ ] The back button at the top renders as a styled pill, with no raw
       {{...}} characters visible in the page body.
+  [ ] If the directory has both an overview.md/.mdx AND child subdirectories,
+      _category_.json link is "type": "doc" (otherwise the overview leaks
+      into the auto card grid as a sibling of its children — Symptom 4).
+  [ ] No sibling directory under site/docs/ shares the same name in
+      singular/plural or near-duplicate form (Symptom 5). Pick one
+      canonical directory per topic.
+  [ ] No duplicate of this directory exists nested under Topics3/ or any
+      other parent (Symptom 5).
+
+--- Multi-page audit recipe ---
+
+When fixing a Level 2 section, do not stop at the first matching directory.
+Run all of these against the entire site/docs/ tree:
+
+  1. List every directory whose name matches or near-matches the section
+     name (singular/plural, casing variants, nested duplicates):
+
+       Glob "**/{Section}*" inside site/docs/
+
+  2. List every _category_.json with a label that matches or near-matches:
+
+       grep -R '"label":' site/docs/ | grep -i {section}
+
+  3. For every hit, check whether _category_.json uses generated-index.
+     Every hit is a candidate page that needs fixing.
+
+  4. Decide which one is canonical. Fix the canonical one per Symptoms 1-4.
+     Either fix or delete the duplicates per Symptom 5.
+
+  5. After deploying, verify on the live site that no /category/{slug}
+     URL exists for the section name or any of its near-duplicates.
+
+  6. Note that fixes to _category_.json do NOT take effect until the
+     Docusaurus static site is rebuilt and redeployed. After merging,
+     run `cd site && npm run build` and push so GitHub Pages picks up
+     the change. A live page that still shows the card grid after a
+     source fix usually means the deploy has not completed.
+
+
+============================
+PROBLEM PATTERNS AT A GLANCE
+============================
+
+This section is the quick-lookup index of every layout/structure anti-pattern
+this manual bans. When assessing a page or section, scan this list first — if
+any of these fingerprints match, stop and fix the pattern before continuing
+with content work. Each pattern below has a full-detail section elsewhere in
+this manual; this is the at-a-glance summary.
+
+  1. CARD GRID — any rendered page that shows clickable card panels (one per
+     child) instead of a hand-authored overview. We never want card grids
+     anywhere on the site. Level 1 and Level 2 are always hand-authored
+     multi-column bullet lists.
+
+  2. GENERATED-INDEX _category_.json — any _category_.json file whose link
+     block uses "type": "generated-index". This is the direct cause of the
+     card grid pattern. Ban outright. See NO _CATEGORY_.JSON FILES below.
+
+  3. _category_.json FILES IN GENERAL — we do not want these files shaping
+     navigation. The sidebar should go to real Level 2 overview pages, not
+     to synthesized /category/{slug} URLs. Prefer deleting _category_.json
+     files entirely wherever possible. See NO _CATEGORY_.JSON FILES below.
+
+  4. DUPLICATE-BY-PLURAL — two sibling directories differing only in
+     pluralization, casing, or punctuation (e.g. site/docs/Plane/ and
+     site/docs/Planes/). Pick one canonical directory and merge the other
+     into it. See DUPLICATE DIRECTORY PATTERN below.
+
+  5. UMBRELLA META-DIRECTORY — directory names like Topics2/, Topics3/,
+     Meta/, Other/, Misc/, aircraft_flight_analysis/ that act as
+     pseudo-parents holding topics which should instead live at the top
+     level of site/docs/. These must not exist. See NO UMBRELLA
+     DIRECTORIES below.
+
+  6. SCATTERED TOPIC CONTENT — the same subject area spread across multiple
+     top-level directories (e.g. plane/flight content under Planes/, Plane/,
+     Topics3/Planes/, aircraft_flight_analysis/ all at once). Consolidate
+     under ONE canonical Level 2 directory. See ONE LEVEL 2 PER TOPIC below.
+
+  7. FILE-NAME ECHOES TOPIC-NAME — a Level 2 directory that contains
+     overview.mdx AND another file with the same name as the directory
+     (e.g. Planes/planes.md alongside Planes/overview.mdx). Either merge
+     that file into overview.mdx or rename it to a distinct Level 3 topic.
+     See FILE-NAME vs TOPIC-NAME COLLISION below.
+
+  8. NON-STANDARD DIRECTORY NAMES — Level 2 directory names that contain
+     spaces, hyphens, mixed punctuation, or special characters. Directory
+     names must be alphanumeric with underscores only. See LEVEL 2 DIRECTORY
+     NAMING below.
+
+  9. STUB OVERVIEW — a Level 2 overview page with a TOC of fewer than 3
+     bullets. Either the section is too narrow to stand alone (merge it)
+     or it is under-populated (add Level 3 pages). See ROOT CAUSE CATALOG
+     Symptom 3 above.
+
+  10. RAW JSX LEAKING AS TEXT — a .md file containing style={{...}} JSX
+      attributes. Fix by renaming to .mdx. See ROOT CAUSE CATALOG Symptom
+      2 above.
+
+
+============================
+NO _CATEGORY_.JSON FILES
+============================
+
+Preferred state: site/docs/ contains NO _category_.json files at all.
+
+Every _category_.json file we have ever touched has either introduced a card
+grid (via generated-index), produced a ghost /category/{slug} URL, or split
+the sidebar away from the real Level 2 overview page. The net value of these
+files is negative. We are moving away from them.
+
+--- Rules ---
+
+  * Do not create new _category_.json files. When adding a new Level 2
+    directory, just create the directory and its overview.mdx file. Docusaurus
+    will resolve sidebar labels from the overview frontmatter.
+
+  * When encountering an existing _category_.json, evaluate whether it can
+    be deleted outright. If the only thing it does is set a label that
+    duplicates the overview's sidebar_label, delete the json — the overview
+    frontmatter is the source of truth.
+
+  * If _category_.json must remain (e.g. it sets a position ordering that
+    cannot be expressed in frontmatter), its link block must be either
+    absent or exactly: "link": { "type": "doc", "id": "{Section}/overview" }
+    and nothing else. NEVER "type": "generated-index".
+
+  * The left sidebar entry for any Level 2 section must navigate directly
+    to the hand-authored overview page for that section. It must never
+    navigate to a /category/{slug} URL. Verify after any change by clicking
+    the sidebar entry on the dev server.
+
+--- Audit ---
+
+  [ ] grep -R "generated-index" site/docs/ returns zero hits.
+  [ ] No /category/{anything} URL is reachable from the live site sidebar.
+  [ ] Any _category_.json that remains contains only layout metadata (position,
+      collapsed) OR a "link": { "type": "doc", ... } entry — never generated-index.
+  [ ] Where a _category_.json exists only to set a label, delete it and let
+      the overview frontmatter carry the label.
+
+--- Relationship to sidebars.ts ---
+
+Sidebar navigation is driven by site/sidebars.ts. Do not modify sidebars.ts
+unless the user explicitly asks to change the sidebar. If a broken sidebar
+entry is caused by _category_.json, fix or delete the _category_.json
+instead. The sidebars.ts file itself is off-limits for this class of fix.
+
+
+============================
+LEVEL 2 DIRECTORY NAMING
+============================
+
+Every Level 2 topic has its own directory directly under site/docs/. The
+directory name IS the topic identifier on the filesystem. The user-facing
+label (sidebar, page title) may differ slightly from the directory name —
+the directory form is a strictly normalized version of the label.
+
+--- Rules for directory names under site/docs/ ---
+
+  * Alphanumeric characters and underscores only. No spaces. No hyphens.
+    No dots (beyond the path separator). No punctuation. No emoji.
+  * Replace every space in the human-readable label with an underscore.
+  * Strip any special character that the label uses for readability
+    (ampersands, slashes, apostrophes, colons, quotes).
+  * Casing: preserve the capitalization of the human label where reasonable
+    (e.g. "Cover Up" -> Cover_Up, "FBI" -> FBI). Do not force snake_case
+    if the label is naturally capitalized.
+  * Keep names compact — 1-3 words when possible. A long label may be
+    abbreviated in the directory form if the abbreviation is unambiguous.
+  * Every Level 2 directory contains an overview.mdx file. That file is
+    the destination the sidebar entry navigates to.
+
+--- Examples ---
+
+  Label "Planes"                  -> site/docs/Planes/
+  Label "Cover Up"                -> site/docs/Cover_Up/
+  Label "FBI Cover-Up"            -> site/docs/FBI/                  (abbrev acceptable)
+  Label "Proof Not Tyler"         -> site/docs/Proof_Not_Tyler/
+  Label "Your Actions Fix It"     -> site/docs/Your_Actions_Fix_It/
+  Label "Intelligence Services"   -> site/docs/Proof_Intel_Services/ (existing canonical)
+
+--- Human label vs directory form ---
+
+The label in the sidebar, the Level 2 page title, and any navbar entry MAY
+contain spaces and readable punctuation. The filesystem path MUST NOT.
+Frontmatter on the overview.mdx carries the human label via title or
+sidebar_label. Example overview.mdx frontmatter:
+
+    ---
+    title: Cover Up
+    sidebar_label: Cover Up
+    ---
+
+The directory is Cover_Up. The label is "Cover Up". Both are correct.
+
+
+============================
+FILE-NAME vs TOPIC-NAME COLLISION
+============================
+
+Problem pattern: a Level 2 directory contains its own overview (overview.mdx)
+AND a separate file whose name matches the directory itself.
+
+Example (anti-pattern):
+  site/docs/Planes/
+    overview.mdx
+    planes.mdx          <-- name collides with the directory
+
+That second file is almost always a symptom of one of these:
+
+  1. Legacy content that was the old Level 2 page, never merged into
+     overview.mdx when overview.mdx was introduced. Duplicate content.
+
+  2. Level 2 content that the author intended to be the entry point but
+     accidentally created alongside overview.mdx.
+
+  3. Content that is genuinely Level 3 but was misnamed — the author
+     meant to call it something more specific than the parent topic.
+
+--- Fix ---
+
+For each colliding file, decide which of the three applies:
+
+  * If it is Level 2 content (orientation, TOC, explanatory paragraphs):
+    merge its content into overview.mdx and delete the colliding file.
+
+  * If it is Level 3 content about a specific sub-topic: rename it to a
+    name that reflects the sub-topic, not the parent. For example,
+    Planes/planes.mdx describing N1098L should become Planes/N1098L/overview.mdx
+    (as its own subdirectory) or Planes/n1098l_analysis.mdx (as a direct
+    Level 3 child).
+
+  * If it duplicates content already in overview.mdx: delete it, then
+    update any internal links that pointed at it to point at the
+    overview instead.
+
+--- Rule ---
+
+A Level 2 directory must never contain a file whose base name (case-
+insensitive, ignoring extension) matches the directory name. The single
+entry-point file is overview.mdx. All other files in the directory are
+Level 3 pages named after their specific sub-topic.
+
+--- Audit ---
+
+  [ ] For every Level 2 directory under site/docs/, no file besides
+      overview.mdx has a name matching the directory name.
+  [ ] Any previously colliding file has either been merged into overview.mdx
+      or renamed to reflect its specific Level 3 sub-topic.
+
+
+============================
+NO UMBRELLA DIRECTORIES (TOPICS2 / TOPICS3 / META / MISC)
+============================
+
+Problem pattern: a pseudo-parent directory under site/docs/ that groups
+multiple Level 2 topics under a meta-heading. Examples:
+
+  site/docs/Topics3/Planes/          (Topics3 as a false parent)
+  site/docs/Meta/Cameras/            (Meta as a false parent)
+  site/docs/Other/Drones/            (Other as a false parent)
+  site/docs/Topics2/                 (numbered meta-category)
+
+These directories must not exist. They push real Level 2 topics down an
+extra layer, break URL conventions, and cause duplicate sidebar entries
+when the same topic also exists at the top level.
+
+--- Why this pattern appears ---
+
+  1. An author created Topics3/ to "organize" Level 2 topics during a
+     restructure, then never moved the content back up to the top level.
+
+  2. An auto-generated directory was created by a bulk import that
+     grouped content thematically one level too deep.
+
+  3. A human-readable meta-label (e.g. "More Topics") was implemented
+     as a directory instead of as a sidebar grouping.
+
+--- Rule ---
+
+Every Level 2 topic lives directly under site/docs/. Period. There are no
+numbered meta-parents (Topics2, Topics3, etc.), no generic catch-all parents
+(Meta, Misc, Other, Extra), and no thematic super-categories. Sidebar
+grouping, when needed, is expressed in sidebars.ts via categories — NOT by
+adding filesystem directories.
+
+--- Fix ---
+
+When encountering an umbrella directory:
+
+  1. For each subdirectory inside the umbrella, move it up to the top
+     level of site/docs/. For example:
+       site/docs/Topics3/Planes/   ->   site/docs/Planes/
+     If the top-level destination already exists, this is ALSO a
+     duplicate-directory problem — see the duplicate-by-plural rules.
+
+  2. Update all internal links that referenced the umbrella path.
+
+  3. Update pages.csv for every moved page (file_path, directory, and
+     url_path columns).
+
+  4. Delete the now-empty umbrella directory.
+
+  5. Never modify sidebars.ts to fix the broken references caused by the
+     move unless the user explicitly asks for a sidebar change. If links
+     break there, report the needed change rather than making it.
+
+--- Audit ---
+
+  [ ] No directory under site/docs/ is named Topics, Topics2, Topics3,
+      Topics4, Meta, Misc, Other, Extra, or any numbered/generic meta-parent.
+  [ ] Every Level 2 topic directory sits directly at the site/docs/ depth.
+  [ ] No Level 2 content is reachable only via a meta-parent path.
+
+
+============================
+ONE LEVEL 2 PER TOPIC — CONSOLIDATE RELATED CONTENT
+============================
+
+Problem pattern: content about one subject area is scattered across
+multiple top-level directories under site/docs/, with no single canonical
+home. The plane/flight subject is the textbook example of this anti-pattern.
+
+Example scatter (anti-pattern):
+  site/docs/Planes/                      (plural, has overview)
+  site/docs/Plane/                       (singular duplicate)
+  site/docs/Topics3/Planes/              (nested under umbrella)
+  site/docs/aircraft_flight_analysis/    (different name, same subject)
+  site/docs/planes-flights/              (hyphenated variant)
+
+Every one of those directories is trying to host plane-related content.
+A reader cannot find what they need. Content is duplicated, contradicted,
+and orphaned.
+
+--- Rule ---
+
+For any broad subject area on the investigation, exactly ONE Level 2
+directory exists as the canonical home. Every aspect of that subject —
+sub-topics, analyses, people, timelines, documents — lives under that
+canonical directory as Level 3 pages or as clusters (see CLUSTERING
+section earlier in this manual).
+
+For planes specifically: site/docs/Planes/ is canonical. Every Level 3
+page about aircraft, flight tracking, transponder data, tail numbers, SAM
+flights, ISR programs, foreign aircraft, low-altitude passes, etc., lives
+under site/docs/Planes/. No other top-level directory under site/docs/
+may host plane content.
+
+--- Fix when scatter is found ---
+
+  1. Pick the canonical directory. Default to the plural form that matches
+     the existing sidebar convention (Planes, People, Drones, Cameras).
+
+  2. Inventory every page in every scatter directory. For each page decide:
+       * Is this content duplicated elsewhere? If yes, keep the best
+         version and delete the duplicates.
+       * Is this content a genuine Level 3 under the canonical Level 2?
+         Move it into the canonical directory.
+       * Is this content not actually about this subject? Move it to
+         the correct Level 2 directory for its real subject.
+
+  3. Merge. Update all internal links. Update pages.csv rows.
+
+  4. Delete the scatter directories once empty.
+
+  5. Verify the canonical Level 2 overview's TOC now lists everything.
+     Rebalance using the CLUSTERING rules if the TOC exceeds ~15-20 bullets.
+
+--- Audit ---
+
+  [ ] Every broad subject on the investigation has exactly one Level 2
+      home directory under site/docs/.
+  [ ] No two top-level directories differ only in pluralization, casing,
+      hyphenation, or near-synonyms (e.g. Planes/ and aircraft_flight_analysis/).
+  [ ] The canonical Level 2 overview's TOC links to every Level 3 page on
+      its subject.
+  [ ] No orphan Level 3 page about the subject exists outside the canonical
+      Level 2 directory.
+
+
+============================
+DUPLICATE DIRECTORY PATTERN (SINGULAR vs PLURAL)
+============================
+
+This is the specific, most common form of the scatter problem. It warrants
+its own named pattern because it happens so often.
+
+Problem pattern: two sibling directories under site/docs/ whose names
+differ only in pluralization (or another trivial variation) and that both
+host content on the same subject.
+
+Examples:
+  Plane/     vs Planes/
+  Person/    vs People/
+  Drone/     vs Drones/
+  Camera/    vs Cameras/
+
+--- Why this happens ---
+
+  1. Two authors created directories independently and did not check for
+     an existing canonical version.
+
+  2. An early draft used the singular; a later reorganization switched to
+     plural but did not delete the singular.
+
+  3. A bulk import generated directories from source data that mixed
+     singular and plural forms.
+
+--- Rule ---
+
+For any subject on the site, pick one form — plural by default — and use
+it everywhere. The non-canonical form must be merged into the canonical
+form and then deleted.
+
+Default canonical form: PLURAL, capitalized, no special characters.
+
+--- Fix ---
+
+  1. Pick the canonical form (default plural).
+  2. Move every page from the non-canonical directory into the canonical
+     directory. Rename pages if their names collided with existing ones.
+  3. Update every internal link that referenced the non-canonical path.
+   4. Update pages.csv rows for every moved page.
+  5. Delete the now-empty non-canonical directory.
+  6. Verify the canonical Level 2 overview's TOC is complete after the merge.
+
+--- Prevention ---
+
+Before creating any new directory under site/docs/, run:
+
+    ls site/docs/ | grep -i {singular_form}
+    ls site/docs/ | grep -i {plural_form}
+
+If either returns a hit, use the existing directory. Do NOT create a
+parallel directory in the other form.
+
+--- Audit ---
+
+  [ ] No singular/plural pair of sibling directories exists under site/docs/.
+  [ ] The canonical plural form is the only directory for its subject.
+  [ ] pages.csv contains no rows referencing the non-canonical form.
 
