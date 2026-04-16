@@ -65,8 +65,8 @@ This page consolidates key claims, timelines, and legal notes related to Tyler R
 
 ## Pages in this Section
 
-<div style={{display:’grid’, gridTemplateColumns:’1fr 1fr’, gap:’0.5rem 2rem’,
-marginTop:’0.5rem’}}>
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
 <div>
 
 * [Tyler on September 10, 2025](./Tyler_9_10_2025.mdx)
@@ -84,8 +84,8 @@ marginTop:’0.5rem’}}>
 
 ## Related Areas
 
-<div style={{display:’grid’, gridTemplateColumns:’1fr 1fr’, gap:’0.5rem 2rem’,
-marginTop:’0.5rem’}}>
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
 <div>
 
 * [Proof Not Tyler](/Proof_Not_Tyler/overview)

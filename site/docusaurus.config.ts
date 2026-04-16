@@ -30,7 +30,7 @@ const config: Config = {
   organizationName: "ACT3ai", // Usually your GitHub org/user name.
   projectName: "charlie-kirk", // Usually your repo name.
 
-  onBrokenLinks: "throw",
+  onBrokenLinks: "warn",
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you

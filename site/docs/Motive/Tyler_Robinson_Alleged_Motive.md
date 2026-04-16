@@ -53,8 +53,8 @@ Readers should therefore treat this page as a summary of **how Tyler’s alleged
 
 ## Related Areas
 
-<div style={{display:’grid’, gridTemplateColumns:’1fr 1fr’, gap:’0.5rem 2rem’,
-marginTop:’0.5rem’}}>
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
 <div>
 
 * [Tyler Robinson](/Tyler_Robinson/overview)

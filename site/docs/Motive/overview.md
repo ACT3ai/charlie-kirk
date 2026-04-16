@@ -75,7 +75,7 @@ Readers should therefore treat this Motive section as a map of **what has been c
 
 ## Pages in this Section
 
-<div style={{display: ‘grid’, gridTemplateColumns: ‘1fr 1fr’, gap: ‘1rem’}}>
+<div style={{display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem'}}>
 <div>
 
 * [Donor Pressure, Israel, and Foreign Policy](./Donors_Israel_ForeignPolicy)
@@ -92,8 +92,8 @@ Readers should therefore treat this Motive section as a map of **what has been c
 
 ## Related Areas
 
-<div style={{display:’grid’, gridTemplateColumns:’1fr 1fr’, gap:’0.5rem 2rem’,
-marginTop:’0.5rem’}}>
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
 <div>
 
 * [Charlie Kirk](/Charlie/overview)

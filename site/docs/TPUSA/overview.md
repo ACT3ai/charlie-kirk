@@ -12,7 +12,7 @@ borderRadius:'4px', textDecoration:'none', fontSize:'0.9rem'}}>
 ## Overview
 This page provides an overview of **Turning Point USA (TPUSA)** as it relates to Charlie Kirk’s life, work, and the questions raised by his death. It does not claim that TPUSA as an organization is responsible for the assassination. Instead, it summarizes what public reporting and commentary say about TPUSA’s structure, security arrangements, donors, and internal dynamics so readers can understand why the organization features prominently in the investigation.
 
-<div style={{display: ‘grid’, gridTemplateColumns: ‘1fr 1fr’, gap: ‘1rem’}}>
+<div style={{display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem'}}>
 <div>
 
 * [TPUSA Organization](./TPUSA) — Detailed context on TPUSA’s structure, leadership, security, donors, and staff
@@ -75,8 +75,8 @@ This overview gives readers a **starting point** for understanding TPUSA’s rol
 
 ## Related Areas
 
-<div style={{display:’grid’, gridTemplateColumns:’1fr 1fr’, gap:’0.5rem 2rem’,
-marginTop:’0.5rem’}}>
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
 <div>
 
 * [Charlie Kirk](/Charlie/overview)
