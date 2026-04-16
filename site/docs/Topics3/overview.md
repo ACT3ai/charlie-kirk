@@ -24,7 +24,7 @@ Welcome to the Topics3 section of the Charlie Kirk investigation. This directory
 
 ### Technical Analysis
 - [Drones](/Topics3/Drones/overview) - Drone surveillance analysis
-- [Planes](/Topics3/Planes/overview) - Aircraft analysis
+- [Planes](/Planes/overview) - Aircraft analysis
 - [Videos](/Topics3/Videos/overview) - Video evidence analysis
 - [Photos](/Topics3/Photos/overview) - Photographic evidence analysis
 

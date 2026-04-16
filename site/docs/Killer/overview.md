@@ -25,7 +25,6 @@ Who killed Charlie Kirk? These are the theories investigators are pursuing:
 * [Close-Range Shot Theories](./Close_Range_Theories)
 * [Patsies and Distraction Actors](./Patsies_Distraction_Actors)
 * [Cover-Up Indicators](./Coverup_Indicators)
-* [Planes and Drones Theories](./Planes_Drones_Theories)
 
 </div>
 </div>

@@ -38,7 +38,7 @@ These observations are based entirely on **aggregate search‑interest charts** 
 Some research threads tie **aircraft‑related search patterns** to Israeli IPs:
 
 - **N1098L / HADES jet (claims):**  
-  - As discussed in [Planes](/Planes/overview) and [Planes, Drones, and “Real Killer” Operational Theories](/Killer/Planes_Drones_Theories), N1098L is a Bombardier Global 6500 linked to the U.S. Army’s HADES ISR program.  
+  - As discussed in [Planes](/Planes/overview) and [N1098L Spy Plane](/Planes/N1098L/overview), N1098L is a Bombardier Global 6500 linked to the U.S. Army’s HADES ISR program.  
   - Google Trends screenshots shared by investigators claim that searches from **Israel** for **“N1098L”** spiked around **August 8, 2025**, several weeks before the UVU event, and that this may indicate pre‑event interest in the jet.  
 - **Egyptian aircraft and related terms (claims):**  
   - Similar analyses suggest Israeli‑origin search spikes around **Egyptian tail numbers** (such as SU‑BTT), certain Utah political figures, and contractors mentioned in flight or construction narratives.

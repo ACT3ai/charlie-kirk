@@ -59,7 +59,6 @@ As more primary information becomes available, it should become easier to distin
 <div>
 
 * [Political Pressure & Meetings 2025](./Political_Pressure_And_Meetings_2025)
-* [Pre-Event Flights & Travel](./PreEvent_Flights_And_Travel)
 
 </div>
 <div>
@@ -71,9 +70,9 @@ As more primary information becomes available, it should become easier to distin
 
 **Political Pressure & Meetings 2025** examines the escalating donor friction, White House strategy sessions, and intervention-style meetings in the months before the UVU event. It documents claims about Charlie's growing tensions with pro-Israel allies and the high-level confrontations that commentators cite as important context.
 
-**Pre-Event Flights & Travel** catalogs the unusual aircraft activity around Utah in early September 2025, including Egyptian Air Force flights (SU-BTT), the HADES ISR jet N1098L, and private jet N888KG. These open-source flight-tracking claims are used by researchers to argue that foreign and military-grade aviation assets were present before and during Charlie's visit.
-
 **Pre-Event Searches & Recon** compiles Google Trends data and OSINT analyses showing spikes in search interest for UVU buildings, Utah locations, attorneys, medical personnel, and people in Charlie's orbit well before the event. These patterns are treated as circumstantial evidence of possible advance reconnaissance.
+
+Pre-event aircraft activity — Egyptian jets (SU-BTT, SU-BND and the broader armada), the HADES ISR jet N1098L, and private jet N888KG — is catalogued on the dedicated [Planes](/Planes/overview) overview and its Level 3 detail pages rather than duplicated in this section.
 
 ## Related Areas
 
