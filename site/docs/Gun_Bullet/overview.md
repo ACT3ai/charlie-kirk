@@ -18,7 +18,7 @@ According to mainstream reporting and public case descriptions:
 - This rifle is reportedly linked to Robinson through ownership or family connection and through forensic findings such as DNA or other trace evidence.
 - The rooftop‑shooter narrative relies on this rifle as the weapon used to fire from a significant distance toward the stage.
 
-For the official framing in context, see [Tyler Robinson](/Tyler_Robinson/overview), [Tyler Robinson Shooting](/Tyler/shooting/overview), and [Timeline](/Timeline/overview).
+For the official framing in context, see [Tyler Robinson](/Tyler_Robinson/overview), [Tyler Robinson Shooting](/Tyler_Robinson/Shooting/overview), and [Timeline](/Timeline/overview).
 
 ## Ballistics mismatch concerns (claims)
 

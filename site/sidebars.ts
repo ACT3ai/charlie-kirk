@@ -21,7 +21,6 @@ const sidebars: SidebarsConfig = {
     {type: 'doc', id: 'After/overview', label: 'After the Shooting'},
     {type: 'doc', id: 'UVU/overview', label: 'UVU Campus'},
     {type: 'doc', id: 'Tent/overview', label: 'The Tent'},
-    {type: 'doc', id: 'Tyler/overview', label: 'Tyler (Suspect)'},
     {type: 'doc', id: 'Theories/overview', label: 'Theories'},
     {type: 'doc', id: 'Timeline/overview', label: 'Timeline'},
     {type: 'doc', id: 'Vote/overview', label: 'Vote'},

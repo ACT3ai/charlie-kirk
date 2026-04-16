@@ -70,12 +70,14 @@ marginTop:'0.5rem'}}>
 <div>
 
 * [Tyler on September 10, 2025](./Tyler_9_10_2025.mdx)
+* [Before the Event](./Before)
 * [Travel and Movements](./Travel)
 * [Recruitment Claims](./Recruited)
 
 </div>
 <div>
 
+* [Shooting](./Shooting/overview)
 * [Girlfriend](./Girlfriend/overview)
 * [Trial and Legal Proceedings](./Trial/overview)
 

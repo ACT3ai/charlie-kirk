@@ -1,10 +1,10 @@
 ---
-sidebar_label: "Tyler Robinson Shooting"
+sidebar_label: "Shooting"
 ---
-<a href="/" style={{display:'inline-block', marginBottom:'1rem',
+<a href="/Tyler_Robinson/overview" style={{display:'inline-block', marginBottom:'1rem',
 padding:'0.35rem 0.9rem', background:'#1a73e8', color:'#fff',
 borderRadius:'4px', textDecoration:'none', fontSize:'0.9rem'}}>
-← Home
+← Tyler Robinson
 </a>
 
 # Tyler Robinson Shooting
@@ -20,7 +20,7 @@ According to charging documents and mainstream reporting, the official account i
 - He fired the fatal shot toward Charlie from this elevated position during the UVU event, after which he left the roof and later hid or abandoned the weapon in a nearby area.
 - Physical evidence (such as the recovered rifle and forensic links) and his reported movements are used to support this narrative.
 
-This account is elaborated across sections like [Tyler Robinson](/Tyler_Robinson/overview.md), [Timeline](/Timeline/overview.md), and [Shooting Locations](/Shooting_Locations/overview.md).
+This account is elaborated across sections like [Tyler Robinson](/Tyler_Robinson/overview), [Timeline](/Timeline/overview), and [Shooting Locations](/Shooting_Locations/overview).
 
 ## Key questions and challenges (claims)
 
@@ -40,7 +40,7 @@ The debate over Tyler’s alleged shooting role is closely linked to broader sho
 - The existence of **multiple shots or devices**—if demonstrated—could suggest scenarios where Robinson was not the only actor, or where his role differed from official characterizations.
 - Even under the official narrative, there may be questions about whether others helped plan, enable, or exploit the incident.
 
-For these reasons, [Tyler Shooting](/Tyler/shooting/overview.md) should be read alongside [Theories](/Theories/overview.md), [Killer](/Killer/overview.md), [Tent](/Tent/overview.md), and [Drones](/Drones/overview.md).
+For these reasons, this page should be read alongside [Theories](/Theories/overview), [Killer](/Killer/overview), [Tent](/Tent/overview), and [Drones](/Drones/overview).
 
 ## How to use this section
 

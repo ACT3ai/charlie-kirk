@@ -39,7 +39,7 @@ Readers should use this Locations page as a **navigation aid**:
 - For maps and spatial relationships, see [Maps](maps/overview) and related diagrams.
 - For campus‑specific details, see [UVU](/UVU/overview) and [UVU Courtyard](/UVU/Courtyward).
 - For aviation and long‑distance movements, see [Planes](/Planes/overview) and associated subpages.
-- For individual‑focused movement and residential addresses, see [Tyler Robinson](/Tyler_Robinson/overview) and [Travel](/Tyler/Travel).
+- For individual‑focused movement and residential addresses, see [Tyler Robinson](/Tyler_Robinson/overview) and [Travel](/Tyler_Robinson/Travel).
 
 Location information is most useful when combined with timelines, video evidence, and verified records. As more precise or newly verified location data becomes available, it can be incorporated into the relevant topic pages and referenced from here.
 

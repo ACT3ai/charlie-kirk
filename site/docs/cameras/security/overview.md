@@ -39,7 +39,7 @@ Security camera footage intersects with:
 
 - [Videos](/Videos/overview) – for a broader look at all video sources, including production and eyewitness footage.
 - [Shooting Locations](/Shooting_Locations/overview), [UVU](/UVU/overview), and [Maps](/maps/overview) – for spatial and trajectory analysis that relies on camera viewpoints.
-- [Tyler Robinson](/Tyler_Robinson/overview), [Tyler Travel](/Tyler/Travel), and [Timeline](/Timeline/overview) – for movement reconstructions that depend on time‑stamped camera sightings.
+- [Tyler Robinson](/Tyler_Robinson/overview), [Tyler Travel](/Tyler_Robinson/Travel), and [Timeline](/Timeline/overview) – for movement reconstructions that depend on time‑stamped camera sightings.
 
 As more information about specific cameras and recordings becomes publicly available, it will be easier to see which locations and time windows are well covered and where gaps remain.
 

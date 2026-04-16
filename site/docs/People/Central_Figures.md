@@ -41,7 +41,7 @@ According to official documents and mainstream coverage, Tyler Robinson is:
 
 Within this project:
 
-- Tyler’s publicly described background and legal situation are covered in [Tyler Robinson](/Tyler_Robinson/overview) and its subpages (for example, [Travel](/Tyler/Travel), [Girlfriend](Tyler_Robinson/Girlfriend/overview), and [Trial](Tyler_Robinson/Trial/overview)).  
+- Tyler’s publicly described background and legal situation are covered in [Tyler Robinson](/Tyler_Robinson/overview) and its subpages (for example, [Travel](/Tyler_Robinson/Travel), [Girlfriend](/Tyler_Robinson/Girlfriend/overview), and [Trial](/Tyler_Robinson/Trial/overview)).  
 - Alleged personal and ideological motives are summarized in [Tyler Robinson’s Alleged Personal and Ideological Motives (As Reported)](/Motive/Tyler_Robinson_Alleged_Motive).  
 - Alternative theories that suggest he may not have been the sole or actual shooter are explored, as **claims**, in [Real Killer](/Killer/overview) and related pages.
 
