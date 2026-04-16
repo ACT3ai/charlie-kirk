@@ -510,3 +510,327 @@ Status
  Documentation
 Edit this page
 
+
+============================
+NO DOCUSAURUS AUTO-CATEGORY CARD PAGES
+============================
+
+Problem pattern we are preventing:
+
+Example URL (the bug we do NOT want):
+  https://whoassassinatedcharliekirk.com/category/planes
+
+When you land on that URL today, Docusaurus renders an auto-generated category
+page. It shows clickable card panels, one per Level 3 child page, with just
+the page title inside each card. No orientation paragraph. No prose. No control
+over layout. Every Level 2 section rendered this way looks the same — a grid
+of boxes — and the reader has to click a card just to see what is inside.
+
+This is wrong. Every Level 2 page must instead be a hand-authored overview
+page with the multi-column bullet list described in this manual.
+
+--- Root cause ---
+
+Docusaurus generates the /category/{name} URL whenever a directory's
+_category_.json (or sidebars.ts category entry) contains:
+
+  "link": { "type": "generated-index" }
+
+That single line tells Docusaurus: "do not use the overview page I wrote —
+auto-render a card grid instead."
+
+Example of the broken config (site/docs/Planes/_category_.json):
+
+  {
+    "label": "Planes",
+    "position": 30,
+    "collapsed": true,
+    "link": {
+      "type": "generated-index"
+    }
+  }
+
+--- Fix ---
+
+Point the category link at the hand-written overview page instead. For the
+Planes example, the overview lives at site/docs/Planes/overview.md, and the
+_category_.json should read:
+
+  {
+    "label": "Planes",
+    "position": 30,
+    "collapsed": true,
+    "link": {
+      "type": "doc",
+      "id": "Planes/overview"
+    }
+  }
+
+After this change, clicking "Planes" in the sidebar (or any link that used to
+land on /category/planes) now loads the hand-authored overview page with its
+multi-column bullet list and three explanatory paragraphs — not the card grid.
+
+--- Audit rule ---
+
+No page under site/docs/ may use "link": { "type": "generated-index" }. Grep
+the repo for that string before publishing. Every hit must be replaced with
+a "type": "doc" link that points at the matching overview page.
+
+  [ ] Ran: grep -R "generated-index" site/docs/ — zero hits.
+  [ ] Every _category_.json with a "link" field points at type: "doc".
+  [ ] Every Level 2 directory has an overview.mdx (or overview.md) file.
+  [ ] No /category/* URLs exist on the live site.
+
+
+============================
+LEVEL 2 USES TWO COLUMNS (NOT THREE)
+============================
+
+This section supersedes the earlier THREE-column guidance for Level 2 pages.
+The home page (Level 1) continues to use three columns. Every Level 2 page
+uses TWO columns.
+
+Why different: the home page is the widest entry point and needs to surface
+the most categories at a glance, so three columns fit. A Level 2 page is one
+click deeper, has fewer Level 3 children, and reads better with two taller
+columns than three short ones. Two columns also leave room in the page
+gutters for the eye to rest, which matters when the reader is already
+oriented inside a section.
+
+--- Pattern reference ---
+
+Mirror the exact multi-column layout used on the home page
+(site/docs/index.md, lines 20-74). Copy that pattern, drop a column, and
+use it on every Level 2 overview page. The bullet-list-inside-a-flex-div
+style is the canonical layout — do not invent a new one.
+
+--- MDX syntax for two equal columns on a Level 2 page ---
+
+  <div style={{ display: "flex", justifyContent: "space-between", gap: "2rem" }}>
+    <div style={{ flex: 1 }}>
+
+  * [Topic A](./topic-a)
+  * [Topic B](./topic-b)
+  * [Topic C](./topic-c)
+  * [Topic D](./topic-d)
+
+    </div>
+    <div style={{ flex: 1 }}>
+
+  * [Topic E](./topic-e)
+  * [Topic F](./topic-f)
+  * [Topic G](./topic-g)
+  * [Topic H](./topic-h)
+
+    </div>
+  </div>
+
+--- Balance rules for two columns ---
+
+  * Distribute bullets left-to-right as you add them. Do not fill the left
+    column completely before starting the right column.
+  * Column heights must be equal or off by at most one row.
+  * If the bullet count is odd, put the extra bullet in the LEFT column.
+  * Example: 9 bullets -> 5 left, 4 right. 10 bullets -> 5 and 5. 11 bullets
+    -> 6 left, 5 right.
+
+--- What else on the Level 2 page stays the same ---
+
+The rest of the Level 2 spec earlier in this manual still applies, with the
+single change that the TOC is TWO columns instead of three:
+
+  * Opens with a one- to two-sentence orientation paragraph.
+  * Two-column bullet list comes immediately after the orientation paragraph.
+  * Exactly three explanatory paragraphs follow the two-column TOC (what,
+    substance, next steps).
+  * Related Areas section at the bottom (still two columns of three links).
+
+
+============================
+ALL UI PAGES MUST BE .MDX
+============================
+
+Every UI page under site/docs/ must use the .mdx extension, not .md. A .md
+file cannot reliably render the inline JSX that the multi-column layout, the
+float-right media blocks, and the styled back button all depend on. The
+moment a page needs a <div style={{...}}>, it has to be .mdx.
+
+Rule: when creating a new UI page, create it as .mdx from the start. When
+encountering an existing .md page that needs any inline JSX (or already
+contains inline JSX, even if it currently renders), convert it to .mdx.
+
+--- How to convert .md to .mdx ---
+
+  1. Rename the file: overview.md -> overview.mdx
+  2. Update any internal link that hardcodes the .md extension. Docusaurus
+     normally resolves by ID so most links will not need changes, but any
+     link like (./overview.md) must become (./overview) or (./overview.mdx).
+  3. Update pages.csv: change the file_path and the extension column for
+     that row.
+  4. If sidebars.ts or _category_.json references the page by file path
+     rather than by doc ID, update that reference.
+  5. Verify by running the dev server: cd site && npm start. The page
+     should render identically, with all JSX blocks now active.
+
+--- Audit rule ---
+
+  [ ] No Level 2 overview page is a .md file. All Level 2 overviews are .mdx.
+  [ ] No Level 3 page that contains inline JSX is a .md file.
+  [ ] pages.csv extension column reflects reality for every row.
+  [ ] No broken links after rename (dev server reports zero warnings).
+
+
+============================
+ROOT CAUSE CATALOG — PLANES LEVEL 2 WORKED EXAMPLE
+============================
+
+This section names the exact patterns in the Docusaurus source files that
+produce the three most common Level 2 bugs. Use it as a diagnostic lookup:
+if you see one of the visible symptoms below on the live site, go hunt for
+the source-file fingerprint that causes it and replace it with the fix.
+
+The Planes section (site/docs/Planes/) is the canonical example because on
+the live site today it exhibits all three symptoms simultaneously. Use it
+as the reference when teaching anyone what the broken state looks like.
+
+--- Symptom 1: Auto-generated card-grid panel buttons ---
+
+What a visitor sees:
+  Navigating to /Planes (via the sidebar or a link that used to point at
+  the overview) lands on a page titled by the category with a grid of
+  clickable card buttons — one card per child page — and nothing else.
+  No orientation paragraph, no two-column TOC, no body prose, no Related
+  Areas. The hand-authored overview.md is never rendered.
+
+Source-file fingerprint:
+  site/docs/Planes/_category_.json contains:
+
+    "link": { "type": "generated-index" }
+
+  This single key tells Docusaurus to synthesize a /category/planes route
+  and render a DocCardList of child pages instead of loading the directory's
+  overview document. Every directory whose _category_.json carries this
+  key will exhibit the same bug.
+
+How to identify in source:
+  grep -R '"type": "generated-index"' site/docs/
+  Every hit is a broken Level 2. Zero hits is the target state.
+
+Fix:
+  Replace the generated-index link with a doc link that points at the
+  directory's hand-authored overview:
+
+    "link": { "type": "doc", "id": "Planes/overview" }
+
+Prevention rule:
+  No _category_.json under site/docs/ may contain
+  "type": "generated-index". CI should fail the build if it finds one.
+
+--- Symptom 2: Visible anchor tag with literal {{...}} in the rendered page ---
+
+What a visitor sees:
+  The back-navigation button at the top of the Level 2 page does not
+  render as a styled blue pill. Instead the reader sees the raw HTML
+  attribute text — including the double-curly-brace expression like
+  style={{display:'inline-block', ...}} — leaking into the page body as
+  visible characters next to the link. The link may still be clickable
+  but the button styling is missing and the page looks broken.
+
+Source-file fingerprint:
+  The file is named overview.md (not overview.mdx) but its contents use
+  JSX-style inline style objects, for example:
+
+    <a href="/" style={{display:'inline-block', marginBottom:'1rem',
+    padding:'0.35rem 0.9rem', background:'#1a73e8', color:'#fff',
+    borderRadius:'4px', textDecoration:'none', fontSize:'0.9rem'}}>
+    ← Home
+    </a>
+
+  Docusaurus parses .md files as Markdown + raw HTML only. The double-
+  curly-brace expression inside style={{...}} is a JSX object literal
+  and is NOT evaluated. The browser then receives style={{...}} as a
+  literal attribute string and either discards the invalid CSS or renders
+  the braces as visible text, depending on the surrounding context.
+  Any <div style={{...}}>, <iframe style={{...}}>, or float-right media
+  block in the same .md file breaks for the same reason.
+
+How to identify in source:
+  grep -REn 'style=\{\{' site/docs/ --include='*.md'
+  Every hit is a .md file using JSX-only syntax. Zero hits is the target
+  state. (Hits inside .mdx files are fine — that is where JSX belongs.)
+
+Fix:
+  Rename the file to .mdx (overview.md -> overview.mdx). Update any hard-
+  coded .md references in sidebars.ts, _category_.json, or internal links.
+  Update the corresponding row in pages.csv (file_path and extension
+  columns). Re-run the dev server and confirm the back button renders as
+  a styled pill.
+
+Prevention rule:
+  Any page containing the substring `style={{` must have the .mdx
+  extension. No Level 2 overview page may be a .md file regardless of
+  content — Level 2 overviews always need the multi-column layout, which
+  requires JSX, which requires .mdx.
+
+--- Symptom 3: Level 2 TOC shows a single bullet (under-populated section) ---
+
+What a visitor sees:
+  Under the "Pages in this Section" heading the multi-column TOC contains
+  only one bullet — in the Planes case, just [N1098L Spy Plane] in the
+  left column with an empty right column. The section looks abandoned.
+  A reader who clicked into Planes expecting a survey of aircraft topics
+  sees one link and nothing else.
+
+Source-file fingerprint:
+  site/docs/Planes/overview.md renders a two-column grid wrapper whose
+  first column contains a single bullet and whose second column is empty:
+
+    <div style={{display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem'}}>
+    <div>
+
+    * [N1098L Spy Plane](./N1098L/overview)
+
+    </div>
+    <div>
+
+    </div>
+    </div>
+
+  The section directory contains only one Level 3 child (N1098L/), so
+  there is nothing else to link. This is a content-coverage problem, not
+  a syntactic one: the Level 2 exists but has not been populated with the
+  sub-topics a reader would expect.
+
+How to identify in source:
+  ls site/docs/{Section}/ — if the directory contains only one non-
+  overview entry, the Level 2 TOC will be a single bullet. Cross-check
+  against the Content Coverage Audit in this manual: what sub-topics
+  would a reader expect to find under this Level 2?
+
+Fix:
+  Do NOT hide the problem by removing the two-column wrapper or by
+  padding the TOC with placeholder links. Treat the thin TOC as a signal
+  that the section needs more Level 3 pages. For Planes specifically,
+  candidate Level 3 pages include: SAM flights, SU-BTT, foreign VIP
+  arrivals, transponder anomalies, Utah Lake low-altitude passes, ISR
+  program context, and each specific tail number mentioned in the
+  investigation. Create those pages, then rebalance the TOC per the
+  LEVEL 2 USES TWO COLUMNS rules earlier in this manual.
+
+Prevention rule:
+  A Level 2 TOC with fewer than 3 bullets is presumptively incomplete.
+  Either the section is too narrow to justify its own Level 2 (merge it
+  into a sibling Level 2) or it is missing content (add Level 3 pages).
+  Never ship a Level 2 overview with a single-bullet TOC.
+
+--- Combined audit for any Level 2 page ---
+
+  [ ] _category_.json uses "type": "doc", not "type": "generated-index".
+  [ ] Overview file extension is .mdx, not .md.
+  [ ] No style={{...}} substrings appear inside any .md file in the section.
+  [ ] The multi-column TOC has at least 3 bullets distributed left-to-right.
+  [ ] Clicking the sidebar entry lands on the hand-authored overview, not
+      on a /category/{name} card grid.
+  [ ] The back button at the top renders as a styled pill, with no raw
+      {{...}} characters visible in the page body.
+

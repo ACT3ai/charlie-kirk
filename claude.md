@@ -473,10 +473,18 @@ the video pulls it via the CID in ipfs.txt rather than from git.
 Above is where to store the PDFs. Especially when we host them on a page 
 
 
-~/BGit/Bryan_git/charlie-kirk/prompts/Assess_Manual.md
-This is the assessment manual. This is what we're going to assess everything against.
+== Assessment Manual ==
 
-That will be the writing skill. That will mean what pages are laid out this way or that way. Always read this into the context menu, making sure we're aligning pages with these guidelines.
+ASSESS_MANUAL is file {ROOT_DIR}/prompts/Assess_Manual.md
+
+This is the assessment manual — the authoritative writing and layout guide for
+every page on the site. It defines how pages should be structured, what the
+writing style should be, and the criteria used to assess whether a page meets
+the site's quality bar.
+
+Always read {ASSESS_MANUAL} into the context window at the start of any task
+that creates, edits, reviews, or restructures site pages. All page work must
+align with these guidelines.
 
 
 == Fix Laws Section ==
