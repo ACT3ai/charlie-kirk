@@ -4,120 +4,105 @@ borderRadius:'4px', textDecoration:'none', fontSize:'0.9rem'}}>
 ← Fix the Laws
 </a>
 
-# Law 2: Autopsy and Medical‑Examiner Transparency
+# Law 2: Intelligence Disclosure
 
 ## Overview
 
-This page expands on ideas loosely described in the project as “Law 2 – Fix Cover‑up Law by Autopsy.”  
-It is a **conceptual policy discussion**, not a claim that any specific doctor, medical‑examiner office, or hospital
-has acted improperly in the Charlie Kirk case or any other matter.
+This page sketches a **policy concept** sometimes referred to in the research corpus as "Law 2 — Intelligence Disclosure." It is not legal advice, and it does not assume that any particular agency, officer, or foreign government has acted unlawfully. It summarizes ideas from commentators who believe that high-profile cases like the Charlie Kirk shooting reveal gaps in how quickly and how fully intelligence-related records are shared with the public after the lawful classification system has been applied.
 
-The central concern raised in the research corpus is that, in high‑profile violent deaths, rules governing autopsies
-and medical‑examiner records can unintentionally:
+The basic goal is to explore how a statute might:
 
-- **Limit independent review** of key forensic questions (for example, bullet trajectory, entry vs. exit wounds), and
-- Fuel public suspicion when details are withheld for long periods, particularly if other aspects of the case are contested.
+- Encourage **timely, responsible disclosure** of intelligence-derived information that could identify perpetrators or illuminate the circumstances of a killing, while
+- Protecting **active sources, methods, ongoing collection operations, and lawful national security interests**.
 
-This page summarizes how some commentators think laws might better balance **privacy, investigative integrity, and transparency**.
+The discussion tracks proposals for a statute modeled on the Epstein Files Transparency Act (Public Law 119-38), adapted for the classification framework that governs the U.S. Intelligence Community.
 
-## Current landscape (as described)
+## Problems this proposal is trying to address (as described)
 
-Compiled research notes—based on public sources such as commentary by Candace Owens, investigative threads by
-accounts like Project Constitution (@ProjectConstitu), and reporting from outlets including The Grayzone and
-the Daily Mail—highlight several points about how autopsy information is typically handled in the U.S. and in
-Utah in particular:
+Across compiled research notes — drawing on public sources such as social-media posts and videos by commentators including Candace Owens and investigative accounts like Project Constitution (@ProjectConstitu), as well as articles from outlets like The Grayzone and the Daily Mail and publicly available legal documents — citizen-investigators repeatedly point to concerns such as:
 
-- Many states, including Utah, use a **centralized medical‑examiner system** rather than county coroners. Autopsy reports and
-  related records are often treated as confidential while a criminal case is active.
-- Death certificates and certified records may be restricted to family and certain authorized parties for decades, with public
-  access delayed by statute.
-- A 2025 Utah law (SB0082, the “Autopsy Photo Amendments,” as described in the notes) is cited as an example of legislation that
-  **criminalizes the sharing of autopsy photographs** outside narrow exceptions, even when public interest in a case is high.
+- **Long classification timelines** — Intelligence records related to domestic political violence can remain classified for decades under default review cycles. Commentators argue that this is appropriate for truly sensitive material but can obscure lessons the public needs when a public figure is killed.
+- **Opaque foreign-liaison traffic** — Research notes raise questions about whether communications between U.S. agencies and foreign partners relating to the Charlie Kirk case exist, and whether structured summaries of such liaison contacts could be released without naming active sources.
+- **Uncertainty about what intelligence products were produced** — Commentators ask whether there are analytical products, threat assessments, or signals-intelligence queries that touch on the case, and whether their existence alone can be acknowledged without compromising current operations.
+- **Concern about "no responsive records" findings** — Citizen researchers cite examples from other cases where agencies reported no responsive records even when contemporaneous evidence suggested otherwise. They propose that statutes require agencies to describe their search methodology and the specific systems queried, not merely their results.
 
-Commentators disagree about whether such rules are appropriate; some emphasize privacy and dignity for victims and families,
-while others argue they can make it harder to check official narratives in controversial cases.
+These themes are presented here as **concerns and claims**, not as adjudicated findings about any specific actor.
 
-## Concerns raised in the Charlie Kirk discussion (claims)
+## Core ideas for an intelligence-disclosure law
 
-Within the project materials, several **claims and questions** recur:
+Commentators in the corpus suggest that a transparency-focused statute for the Intelligence Community might include provisions such as:
 
-- Whether an autopsy was performed, what it concluded about **bullet path and caliber**, and how that aligns with public statements.
-- Whether new restrictions on autopsy photos could make it harder for independent medical experts to assess or explain
-  high‑profile cases to the public.
-- Whether families, through their counsel, should have more options to authorize **limited, expert or public access** to some
-  information when they believe it would aid transparency or accountability.
+### 1. Covered agencies
 
-These are questions being asked by commentators; this page does not take a position on what actually occurred in any real‑world case.
+Follow the statutory definition at 50 U.S.C. § 3003(4) — the Central Intelligence Agency, the National Security Agency, the Defense Intelligence Agency, the National Reconnaissance Office, the National Geospatial-Intelligence Agency, the intelligence elements of the armed forces, the FBI's national security branch, DHS intelligence, the Office of the Director of National Intelligence, and the intelligence components of the Departments of Energy, State, and Treasury. Coverage should match the full statutory community so that responsibility cannot be shifted to an uncovered element.
 
-## Core ideas for an “autopsy transparency” law
+### 2. Categories of products covered
 
-Commenters sketch various possible reforms, which can be grouped into themes:
+Applied to a major homicide investigation, a disclosure law could specifically enumerate:
 
-### 1. Baseline requirement for thorough forensic review
+- **Signals intelligence (SIGINT)** — Query results, metadata reports, and analytical summaries, with source-specific collection methods redacted where necessary.
+- **Human intelligence (HUMINT)** — Analytical products and conclusions, with the identities of currently active sources and their handlers protected under narrow, reviewable exceptions.
+- **Imagery and geospatial intelligence (IMINT / GEOINT)** — Satellite and aerial imagery, and structured analytic products derived from them.
+- **Measurement and signatures intelligence (MASINT)** — Technical collection outputs relevant to electromagnetic events, including any counter-UAS or electronic-warfare activity near a covered incident.
+- **Liaison cable traffic** — Summaries of exchanges with foreign intelligence partners about the case, with sensitive identifying details redacted.
+- **Analytic conclusions** — The bottom-line assessments intelligence analysts produced about the event, which commentators argue should always be disclosable in redacted form because they represent the government's considered judgment.
 
-For certain categories of deaths—such as homicides, suspected assassinations, or deaths of public figures on public property—
-lawmakers could require:
+### 3. Redaction limited to narrowly defined categories
 
-- A **full forensic examination** by a qualified medical examiner or pathologist, unless extraordinary circumstances make this impossible.
-- Preservation of key physical and photographic records for a minimum period, so that courts or commissions can review them later
-  if needed.
+Rather than allowing blanket redactions, a statute could permit withholding only for:
 
-This concept is about ensuring that, where questions are likely to arise, the underlying forensic record is complete.
+- The identities of **currently active human intelligence sources** and the identifiers that would unmask them.
+- **Specific technical collection methods currently in active use**, where disclosure would give adversaries the ability to evade future collection.
+- Information whose release would create a **specific, articulable threat to life**.
 
-### 2. Structured public summaries
+All other content — including analytic conclusions, descriptions of what was learned, and historical collection approaches no longer in use — should be presumed disclosable in redacted form.
 
-Rather than releasing full reports or graphic images to the general public, a law could mandate **non‑graphic public summaries** after
-specified milestones (for example, after charging, after a preliminary hearing, or after trial), such as:
+### 4. Duty to describe the search
 
-- Cause and manner of death (as determined by the medical examiner).
-- A high‑level description of **entry/exit determinations** and general trajectory (for example, “projectile entered from right,
-  exited left side of neck”), without sensational detail.
-- Clarification of whether findings are **consistent or inconsistent** with certain publicly stated scenarios, phrased carefully to
-  avoid prejudicing any jury.
+A recurring idea in the corpus is that agencies should be required to describe **what systems were queried, using what selectors, on what dates**, not merely report whether responsive records were found. This shifts the transparency inquiry from "are there records?" to "did you actually look?" and makes inadequate searches reviewable.
 
-Families could be given a voice in how much detail is appropriate to share, with courts empowered to balance transparency and dignity.
+### 5. Independent review of classification decisions
 
-### 3. Expert‑access provisions
+Commentators propose layered review of any nondisclosure determination:
 
-To enable independent scientific review without turning forensic materials into public spectacle, laws could allow:
+- **First-level review** by the originating agency with documented reasoning.
+- **Second-level review** by an interagency classification review board that includes independent members outside the agency chain of command.
+- **Judicial review** of final denials by a designated federal court with authority to examine materials in camera and order disclosure with appropriate protective measures.
 
-- **Court‑authorized access** to redacted autopsy materials (including some images) for vetted independent experts under protective
-  orders, especially when there are credible disputes about trajectory or weapon type.
-- Procedures for experts to provide **public reports or testimony** that summarize their conclusions without publishing sensitive images.
+### 6. Whistleblower protections
 
-This approach aims to let science be heard while minimizing harm to the family and avoiding misuse of graphic material.
+Any intelligence-disclosure statute needs protections for employees and contractors who lawfully report concerns about over-classification or evidence suppression. Commentators propose:
 
-### 4. Limits on criminalizing disclosure
+- Criminal penalties for retaliation against good-faith reporters.
+- A rebuttable presumption of retaliation when adverse employment actions follow a protected disclosure within a defined window.
+- Confidential reporting channels to an inspector general with independent reporting authority to Congress.
 
-Commentators who are concerned about “cover‑up” risks often argue that laws criminalizing any sharing of autopsy images should:
+### 7. Records preservation at introduction
 
-- Distinguish between **exploitative or sensational distribution** and good‑faith expert or journalistic use subject to clear rules.
-- Include **whistleblower and public‑interest exceptions**, supervised by courts, for examples where evidence of serious misconduct
-  might otherwise be suppressed.
+To prevent pre-enactment destruction, preservation obligations would attach at the time a bill is introduced, not at enactment. Agencies would be required to maintain a forensic audit trail of any records accessed, copied, or deleted from the date of introduction forward.
 
-Any such exceptions would need careful drafting so they are not abused and do not encourage casual sharing of sensitive material.
+## Safeguards and limits
 
-## Safeguards and ethical considerations
+A recurring theme in the corpus, and in broader debates about transparency, is that intelligence-disclosure laws must be paired with genuine safeguards, including:
 
-An autopsy‑related reform should also explicitly protect:
+- **Protection of active sources** — Identifying an active human source can endanger that person's life and compromise current operations; these identities must remain protected unless no reasonable alternative disclosure is possible.
+- **Protection of active technical collection** — Disclosing specific tradecraft currently in use can permit adversaries to evade detection. Redactions here should be specific, not categorical.
+- **Respect for foreign-liaison obligations** — Agreements with foreign partners often constrain disclosure of material they contributed. These constraints should be honored, but they should not be used as a pretext to withhold U.S.-originated analytical conclusions.
+- **Due process in any parallel prosecution** — Disclosure should not undermine a fair trial; courts may need authority to stage disclosures over time.
 
-- **Family wishes and religious beliefs** – The preferences of next‑of‑kin are a critical part of any decision about what can be shared.
-- **Dignity of the deceased** – Transparency should never become an excuse to circulate graphic images unnecessarily.
-- **Integrity of ongoing cases** – Courts and legislatures must ensure that disclosure rules do not undermine fair trials or create
-  undue pressure on juries or witnesses.
-
-These safeguards are at least as important as transparency itself.
+Any "Law 2" style proposal would need to balance these factors carefully and provide reviewable, specific reasons whenever redaction is applied.
 
 ## How this connects to other pages
 
-This conceptual “Law 2” connects directly to:
+This conceptual law ties into other reform-oriented topics:
 
-- [Law 1](./Law1), which discusses broader information‑disclosure and records‑transparency ideas.
-- [Autopsy](/Charlie/Autopsy/overview), which focuses specifically on forensic questions raised about the Charlie Kirk case.
-- [Fix Overview](./overview), which situates autopsy and medical‑examiner reform among other legal and institutional proposals.
+- [Law 1](./Law1) — companion discussion of law-enforcement records disclosure.
+- [Law 3](./Law3) — mandatory investigation provisions that would require agencies to actually pursue leads, not merely disclose existing records.
+- [Law 4](./Law4) — independent civilian investigator oversight to verify that disclosure is complete.
+- [Medical Transparency](./Medical_Transparency) — a separate plan focused specifically on autopsy and medical-examiner records.
+- [Fix Overview](./overview) — broader summaries of reform themes that have emerged from the research corpus.
 
-As with all pages in this section, the purpose here is to **organize ideas and claims** that have been raised—not to assert that any
-named individual, agency, or country is guilty of a crime or a cover‑up.
+All of these pages describe **ideas and claims** advanced by commentators; they are provided here to organize discussion about possible reforms, not to accuse specific individuals or institutions of wrongdoing.
 
 ## Related Areas
 
@@ -125,15 +110,15 @@ named individual, agency, or country is guilty of a crime or a cover‑up.
 marginTop:'0.5rem'}}>
 <div>
 
-* [Medical](/Medical/overview)
-* [Autopsy](/Charlie/Autopsy/overview)
-* [Wound Analysis](/Charlie/Autopsy/wound-analysis-theories)
+* [US Intelligence](/US_Intelligence/cia)
+* [Proof Intel Services](/Proof_Intel_Services/overview)
+* [Cover Up](/CoverUp/overview)
 
 </div>
 <div>
 
-* [Cover Up](/CoverUp/overview)
 * [FBI](/FBI/overview)
+* [Your Actions Fix It](/Your_Actions_Fix_It/overview)
 * [Legal Investigation](/legal_investigation/overview)
 
 </div>

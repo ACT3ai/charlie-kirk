@@ -1,0 +1,146 @@
+---
+sidebar_label: "Media and Journalism Transparency"
+---
+<a href="./overview" style={{display:'inline-block', marginBottom:'1rem',
+padding:'0.35rem 0.9rem', background:'#1a73e8', color:'#fff',
+borderRadius:'4px', textDecoration:'none', fontSize:'0.9rem'}}>
+← Fix the Laws
+</a>
+
+# Media and Journalism Transparency
+
+## Overview
+
+This page sketches a **policy concept** that recurs throughout the research corpus: reforms that could strengthen the ability of journalists, citizen-investigators, and independent researchers to cover high-profile public events and major investigations. It is not legal advice, and it does not assume that any specific outlet, platform, or journalist has suppressed coverage of the Charlie Kirk case. It summarizes ideas from commentators who believe that public trust depends on multiple credible voices being able to report freely.
+
+The basic goal is to explore how a framework might:
+
+- Protect **source confidentiality** for journalists covering sensitive stories.
+- Clarify the **legal status of citizen-investigators** who use public records and open-source methods.
+- Address **platform practices** that can affect the visibility of legitimate reporting.
+
+## Problems this proposal is trying to address (as described)
+
+Commentators in the research corpus argue that several structural issues limit media coverage of difficult stories:
+
+- **Source confidentiality** — Journalists who cover government and corporate conduct depend on confidential sources; the federal protections for journalist-source privilege are uneven, and some jurisdictions offer stronger protections than others.
+- **Subpoena pressure** — Individual journalists and outlets can face subpoenas for newsgathering materials, which commentators argue can have a chilling effect even when the subpoenas are ultimately withdrawn.
+- **Legal risk from investigation** — Citizen-investigators working with public records and open-source materials sometimes face legal threats that effectively deter future work, regardless of whether those threats would succeed in court.
+- **Platform moderation practices** — Changes in platform visibility, monetization, and distribution can affect the reach of coverage in ways that are difficult to observe or evaluate externally.
+- **Consolidation of ownership** — Concentrated media ownership can reduce the diversity of independent editorial perspectives on any given story.
+
+These themes are presented here as **concerns and claims**, not as adjudicated findings about any specific outlet, platform, or journalist.
+
+## Core ideas for a media-transparency framework
+
+Commentators sketch various possible reforms, which can be grouped into themes:
+
+### 1. Federal journalist-shield protection
+
+A federal shield law could provide baseline protection for journalists against compelled disclosure of sources and unpublished materials in federal proceedings, subject to narrowly tailored exceptions. Commentators argue that such protection should:
+
+- Cover both traditional journalists and independent reporters who meet defined criteria.
+- Apply to both civil and criminal proceedings with appropriate safeguards.
+- Require showings of necessity, exhaustion of alternatives, and compelling interest before protections can be overcome.
+
+### 2. Anti-SLAPP protections
+
+A federal anti-SLAPP (strategic lawsuits against public participation) framework could allow for early dismissal of lawsuits brought primarily to harass journalists and commentators over protected speech on matters of public concern, with fee-shifting so that the cost of frivolous litigation falls on those who bring it rather than on the public-interest defendant.
+
+### 3. Standing and definitions for citizen-investigators
+
+Commentators sometimes propose that statutory protections now extended to traditional journalists be expanded to cover **citizen-investigators** who meet defined criteria:
+
+- A documented pattern of public-interest research.
+- A commitment to ethical standards (for example, attribution, correction practices, and respect for privacy).
+- Publication through a persistent outlet with a public identity.
+
+### 4. FOIA and public-records strengthening
+
+Public-records laws (FOIA at the federal level, analogous state laws) are the foundation of much investigative work. A statutory update could:
+
+- Tighten response timelines in cases of demonstrated public interest.
+- Limit categorical redactions in favor of narrow, specific redactions.
+- Make agencies' search methodologies reviewable.
+- Provide for faster judicial review of denials.
+- Apply fee waivers presumptively in public-interest cases.
+
+### 5. Platform transparency
+
+Rather than attempting to regulate content directly, a framework could focus on **transparency about content distribution**. For example:
+
+- Publication of reproducible, standardized metrics on reach for covered public-interest content.
+- Notice to users when their content is subject to visibility limitations, with reasons and appeal rights.
+- Research access for independent academics studying platform practices, subject to privacy protections.
+- Preservation of content and associated metadata relevant to public-interest investigations.
+
+### 6. Newsgathering safety
+
+Physical protections for working journalists can include:
+
+- Clarification that newsgathering at public events is lawful, with reasonable time, place, and manner limitations.
+- Liability for conduct that interferes with lawful newsgathering.
+- Training for public safety personnel on interacting with credentialed and independent reporters.
+
+### 7. Correction and right-of-reply standards
+
+To build public confidence, outlets could be encouraged to adopt transparent correction standards, with prominent placement of corrections and clear procedures for subjects of coverage to request corrections. This is a best-practice framework rather than a speech mandate.
+
+### 8. Protection of subjects of coverage
+
+Press freedom protections should be paired with strong defamation and privacy safeguards. A framework could:
+
+- Clarify standards for good-faith reporting on matters of public concern.
+- Ensure meaningful remedies for defamation, harassment, and doxxing.
+- Balance the public-interest protections for journalists against the personal-interest protections for subjects of coverage.
+
+### 9. Public-interest research access
+
+Qualified researchers could be granted access to otherwise-restricted datasets (with privacy safeguards) for public-interest research, under a formal framework with independent review of research protocols.
+
+### 10. Coordination with other reforms
+
+Media and journalism reforms pair naturally with the disclosure and investigation frameworks described elsewhere in this section. Better public records and better journalist-source protection reinforce each other; neither alone is sufficient.
+
+## Safeguards and limits
+
+Several safeguards are central to any media-transparency approach:
+
+- **Content neutrality** — Reforms should not distinguish between coverage based on its viewpoint or political orientation.
+- **Balance with defamation and privacy** — Press protections must be balanced with meaningful recourse for those defamed or harmed by irresponsible coverage.
+- **Protection of genuine national-security interests** — Classification protections remain legitimate; the question is how they are administered and reviewed, not whether they exist.
+- **Distinguishing journalism from other activity** — Statutory protections should be crafted so that genuine journalism is protected without creating loopholes for activities that are not journalism.
+- **Platform speech rights** — Transparency requirements should be compatible with platforms' own First Amendment interests in editorial judgment.
+
+These safeguards are at least as important as the protections the framework would create.
+
+## How this connects to other pages
+
+This plan ties into other reform-oriented topics:
+
+- [Law 1](./Law1) and [Law 2](./Law2) — disclosure regimes that depend on journalists and citizen-investigators to publicize what is released.
+- [Whistleblower Protections](./Whistleblower) — complementary protections for the sources journalists depend on.
+- [Politicians](./Politicans) — political accountability that depends on credible independent reporting.
+- [Fix Overview](./overview) — broader summaries of reform themes.
+
+As with all pages in this section, the purpose here is to **organize ideas and claims** that have been raised — not to assert that any named individual, outlet, or platform has engaged in unlawful conduct.
+
+## Related Areas
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Media](/Media/overview)
+* [Media Censorship](/Media/Censorship)
+* [Influencers](/Influencers/overview)
+
+</div>
+<div>
+
+* [Censorship](/Censorship/overview)
+* [Your Actions Fix It](/Your_Actions_Fix_It/overview)
+* [Cover Up](/CoverUp/overview)
+
+</div>
+</div>

@@ -4,119 +4,118 @@ borderRadius:'4px', textDecoration:'none', fontSize:'0.9rem'}}>
 ← Fix the Laws
 </a>
 
-Determine Levels on "Current Concluded Assassin" of Charlie Kirk.
+# Conclusion Logic: Evidence Thresholds
 
+## Overview
 
+This page is a **reference guide** to the evidence thresholds that different U.S. legal, administrative, military, and intelligence systems use to decide whether something is serious enough to act on. It is not a claim about any specific person or institution in the Charlie Kirk case. It is intended to help readers engage with the research corpus in a disciplined way, by matching a given claim to the level of confidence the evidence actually supports.
 
-Here’s a cross-domain ladder of common thresholds/labels people use to decide “is this serious enough to act?”—from the highest bar of proof down to the loosest signal. I use U.S.-centric legal/military/intel terms where possible.
+Citizen researchers and commentators sometimes disagree about whether a given piece of evidence amounts to proof, a strong lead, or a hunch. Being clear about which threshold applies makes those conversations more productive and less prone to unfair accusations.
 
-Highest → Lowest Thresholds
+## Cross-domain ladder of thresholds (highest to lowest)
 
-Beyond a reasonable doubt — criminal conviction (jury/verdict).
+The labels below are drawn from U.S. legal, administrative, military, and intelligence practice. Each describes a specific level of confidence used for a specific category of action.
 
-Admission of guilt / guilty plea — criminal case resolution by the defendant’s own admission (still under criminal standard safeguards).
+### Criminal and quasi-criminal
 
-Clear and convincing evidence — heightened civil/administrative standard (e.g., fraud, termination of parental rights, some injunctions, civil commitment).
+- **Beyond a reasonable doubt** — Criminal conviction by jury or bench verdict. The highest standard in U.S. law.
+- **Admission of guilt / guilty plea** — Criminal case resolution by the defendant's own admission, under criminal-standard safeguards.
+- **Indictment** — Probable cause found by a grand jury; a formal criminal charge, not a conviction.
+- **Information** — A prosecutor's charging document relying on probable cause without a grand jury.
+- **Probable cause** — Criminal procedure for arrests, search warrants, and indictments.
+- **Reasonable suspicion / specific and articulable facts** — Brief investigative stops (*Terry*), limited searches; less than probable cause but more than a hunch.
 
-Preponderance of the evidence (“more likely than not”) — ordinary civil liability, most workplace Title VII/Title IX investigations, many protective orders.
+### Civil and administrative
 
-Well-founded fear — asylum standard (risk need not be “more likely than not,” but a reasonable probability).
+- **Clear and convincing evidence** — Heightened civil or administrative standard (for example, fraud, civil commitment, termination of parental rights).
+- **Preponderance of the evidence** — Ordinary civil liability; "more likely than not."
+- **Clear, unequivocal, and convincing** — Used in certain immigration and removal determinations.
+- **Substantial evidence** — Administrative law; enough relevant evidence that a reasonable mind might accept the conclusion.
+- **Well-founded fear** — Asylum standard; risk need not be "more likely than not," but a reasonable probability.
+- **Prima facie case** — Initial showing that, if unrebutted, would meet the elements of a claim.
+- **Preliminary injunction standard** — "Likelihood of success on the merits" plus irreparable harm; varies by circuit.
+- **Some evidence** — Minimal evidentiary floor in certain administrative or disciplinary settings.
+- **Arbitrary and capricious review** — A judicial review standard, not an evidence standard to act, but a high bar to overturn a government decision.
 
-Clear, unequivocal, and convincing — immigration/removal (used in certain deportability determinations).
+### Intelligence and national security
 
-Substantial evidence — administrative law / agency adjudications; enough relevant evidence that a reasonable mind might accept it.
+- **Foreign intelligence probable cause** — FISA targeting standard; probable cause that a target is a foreign power or agent.
+- **National Security Letter / "relevance" standard** — Records "relevant" to an authorized investigation; below probable cause.
+- **Specific and articulable facts** — Pen registers and certain data orders; records sought are relevant to an ongoing investigation.
+- **FBI assessment / preliminary / full investigation tiers** — Internal predicates to open or expand investigations.
+- **Analytic confidence levels** — "High," "moderate," or "low" — intelligence-community tradecraft statements accompanying judgments.
+- **Likelihood language** — "Almost certainly," "likely," "possible" — disciplined signaling in intelligence estimates.
+- **Vetted / validated source** — Intelligence and HUMINT handling labels about source reliability.
 
-Probable cause — criminal procedure: arrests, search warrants, indictments (grand jury standard).
+### Military rules of engagement
 
-Specific and articulable facts / Reasonable suspicion — brief stops (Terry stops), some surveillance/frisk thresholds; lower than probable cause but more than a hunch.
+- **Positive identification (PID)** — Sufficient certainty that a target is a legitimate military objective.
+- **Hostile act / hostile intent** — Observed act or intent authorizing engagement under the law of armed conflict.
+- **Collateral damage estimate** — Structured prediction of civilian harm, used with PID to decide whether to strike.
 
-Reasonable belief — varied use in law enforcement/civil contexts (often similar to reasonable suspicion, depends on statute/policy).
+### Regulatory, compliance, and screening
 
-Credible evidence / Credible information — common trigger to open or escalate an internal or administrative inquiry; not yet weighing opposing evidence.
+- **Materiality (reasonable-investor test)** — Securities and compliance; a fact important enough that a reasonable investor would consider it.
+- **Credible evidence / credible information** — A common trigger to open or escalate an internal or administrative inquiry.
+- **Sanctions designation standards** — "Reasonable basis to believe" or "credible evidence"; standard varies by statute.
+- **Watchlisting / screening criteria** — Inclusion on screening lists under specified risk-based thresholds; distinct from criminal standards.
+- **OFAC "50% rule"** — Compliance action triggered by ownership or control thresholds.
+- **Compliance red flags** — Corporate AML and anti-bribery triggers for enhanced due diligence.
+- **Reasonable consumer expectation** — Advertising and consumer-protection actions.
 
-Prima facie case — initial showing that, if unrebutted, would meet the elements (used in civil litigation and discrimination claims).
+### Media and platforms
 
-Materiality (reasonable investor test) — securities/compliance: a fact important enough that a reasonable investor would consider it.
+- **Two-source / corroboration rule** — Newsroom policy threshold for publishing sensitive claims.
+- **Good-faith belief** — Content-moderation or takedown triggers under terms of service or legal safe harbors.
+- **Derogatory information present / absent** — Vetting, security, and HR review labels.
 
-Indictment (probable cause found by grand jury) — formal criminal charge; not a conviction, but a significant threshold to prosecute.
+### Engineering and risk
 
-Information (prosecutor’s charging document) — formal charge without grand jury; relies on probable cause.
+- **As low as reasonably practicable (ALARP)** — Engineering risk threshold for mitigation.
+- **Risk scoring / anomaly thresholds** — Fraud and abuse triggers; ML scores crossing an action line.
 
-Preliminary injunction likelihood standards — civil: e.g., “likelihood of success on the merits” plus irreparable harm (varies by circuit).
+### Below any action standard
 
-Arbitrary & capricious review — judicial check on agency action: not an evidence standard to act, but a high bar to overturn government decisions.
+- **Tip or lead** — Unverified report; enough to log or screen, not to take coercive action.
+- **Open-source / bystander report** — Initial unvetted claim; may justify triage only.
+- **Hunch or intuition** — Below any action standard; may inform where to look, not justify action.
 
-Some evidence — minimal evidentiary floor in certain administrative or disciplinary settings (e.g., prison discipline).
+## How to use this ladder
 
-Positive Identification (PID) — military ROE: sufficient certainty a target is a legitimate military objective.
+Quick guide by domain:
 
-Hostile act / Hostile intent — military ROE: observed act or intent authorizing engagement consistent with law of armed conflict.
+- **Criminal court** — Conviction or plea; probable cause for arrest or warrant; indictment or information to charge.
+- **Civil court** — Preponderance or clear-and-convincing burden; prima facie to survive early dismissal; preliminary injunction standards for urgent relief.
+- **Administrative or agency action** — Substantial evidence or some evidence; sanctions and watchlist standards as specified by statute.
+- **Police** — Probable cause for arrests and warrants; reasonable suspicion for brief stops.
+- **Intelligence and national security** — FISA probable cause and NSL relevance for records; assessment or preliminary investigation to open; analytic confidence levels for judgments.
+- **Military** — Positive identification and hostile act or intent under rules of engagement; collateral damage estimate.
+- **Compliance and corporate** — Materiality, credible information, red-flag triggers; investigations often proceed under preponderance.
+- **Media and platforms** — Two-source corroboration; good-faith belief.
+- **Risk, engineering, fraud** — ALARP; anomaly thresholds.
+- **Lead generation only** — Tips, bystander reports, hunches.
 
-Collateral Damage Estimate (CDE) with confidence level — military targeting: structured prediction of civilian harm; used with PID/ROE to decide whether to strike.
+## Applying the ladder to the research corpus
 
-Foreign intelligence probable cause — FISA targeting: probable cause a target is a foreign power/agent (criminal PC’s cousin in national security).
+For the Charlie Kirk case, commentators have produced a wide range of claims. Matching each to the right threshold improves the discussion:
 
-National Security Letter / “Relevance” standard — intel/law enforcement: records “relevant” to an authorized investigation (below probable cause).
+- **Documented records and official statements** — Most appropriate to cite as fact, with attribution to the source.
+- **Specific witness accounts and corroborated reporting** — Usefully framed as "reported," with the source named.
+- **Single-source allegations and online claims** — Most appropriately described as claims or allegations pending corroboration.
+- **Hypotheses and theories** — Clearly labeled as such, with the reasoning made explicit.
+- **Hunches and speculation** — Useful for directing further research; not appropriate as the basis for public accusation.
 
-Specific and articulable facts (pen register / some data orders) — shows the records sought are relevant to an ongoing investigation.
+This discipline is especially important when discussing living individuals. The research corpus aims to organize questions and claims — not to assert that any named person is guilty of a crime. When a claim has not yet been proven at the level of the action being urged, the claim should be framed with language matching its actual confidence level.
 
-Assessment → Preliminary → Full investigation (FBI tiers) — internal predicates to open/expand investigations; “assessment” can start with minimal predicate if lawful purpose exists; “full” requires more.
+## How this connects to other pages
 
-Analytic confidence levels (High/Moderate/Low) — intelligence community tradecraft: source reliability and corroboration statements accompanying judgments.
+This reference ties into other reform-oriented topics:
 
-Likelihood language (“almost certainly,” “likely,” “possible”) — intel estimates with stated confidence (not legal proof, but disciplined signaling).
-
-Vetted / Validated source — intelligence/HUMINT handling labels about source reliability/track record.
-
-Derogatory information present/absent — vetting/security/HR: existence of adverse info that may justify action or closer review.
-
-Sanctions designation standards (“reasonable basis to believe” / “credible evidence”) — used in various sanctions/denial regimes to list parties (standard varies by statute/regulation).
-
-Watchlisting / Screening criteria — inclusion on screening lists under specified risk-based thresholds; distinct from criminal standards.
-
-OFAC “50% rule” inference — compliance action triggered by ownership/control thresholds (not an evidence standard per se but a decisive policy threshold).
-
-Compliance “red flags” — corporate AML/ABAC triggers that mandate enhanced due diligence or escalation.
-
-Journalistic two-source/corroboration rule — newsroom policy threshold before publication on sensitive claims.
-
-Platform/community “good-faith belief” — content moderation / takedown triggers under ToS or legal safe harbors.
-
-Reasonable consumer expectation — advertising/UDAP actions; whether claims would mislead a reasonable consumer.
-
-Safety case “as low as reasonably practicable (ALARP)” — engineering risk threshold to justify mitigation level.
-
-Risk scoring / anomaly thresholds — fraud/abuse detection triggers (ML scores crossing an action line).
-
-Tip / Lead — unverified report; often enough to log and screen, but not to take coercive action.
-
-Open-source/bystander report — initial unvetted claim; may justify triage only.
-
-Hunch / Intuition — explicitly below any action standard; may inform where to look, but not justify action.
-
-Quick “use it how?” guide
-
-Criminal court: #1–2 (conviction/plea), #8 (probable cause for arrest/warrant), #14–15 (charge).
-
-Civil court: #3–4 (burden of proof), #16 (injunctions), #12 (prima facie), #7 (review of agency records).
-
-Admin/Agency: #7, #18, #17; plus sanctions/watchlists (#30–31).
-
-Police: #8 (arrest/warrant), #9–10 (stops/frisks).
-
-Intel/NatSec: #22–29 (#23–25 for records/opens; #26–27 for assessments).
-
-Military/ROE: #19–21.
-
-Compliance/Corp: #33, #36, #32; investigations often use #4 or #11.
-
-Media/Platforms: #34–35.
-
-Risk/Engineering/Fraud: #37–38.
-
-Lead-gen only: #39–41.
-
-If you want, tell me the domains you’ll be working across (e.g., “police + intel + military”), and I’ll trim this into a role-ready checklist with examples and decision trees.
+- [Law 1](./Law1) — law-enforcement records disclosure.
+- [Law 2](./Law2) — intelligence-community records disclosure.
+- [Law 3](./Law3) — mandatory investigation.
+- [Law 4](./Law4) — trusted investigator oversight.
+- [Fix Overview](./overview) — broader summaries of reform themes.
 
 ## Related Areas
 

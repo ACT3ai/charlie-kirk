@@ -1,0 +1,158 @@
+---
+sidebar_label: "Digital Evidence Preservation"
+---
+<a href="./overview" style={{display:'inline-block', marginBottom:'1rem',
+padding:'0.35rem 0.9rem', background:'#1a73e8', color:'#fff',
+borderRadius:'4px', textDecoration:'none', fontSize:'0.9rem'}}>
+← Fix the Laws
+</a>
+
+# Digital Evidence Preservation
+
+## Overview
+
+This page sketches a **policy concept** recurring throughout the research corpus: statutory standards for the preservation, chain-of-custody, and handling of digital evidence in major investigations. It is not legal advice, and it does not assume that any specific agency, platform, or individual has destroyed, altered, or improperly handled evidence in the Charlie Kirk case. It summarizes ideas from commentators who believe that digital evidence is now central to modern investigations, and that today's patchwork of rules leaves too many gaps.
+
+The basic goal is to explore how a statute might:
+
+- Require **immediate preservation** of digital evidence when a covered incident occurs.
+- Establish **chain-of-custody standards** that survive the cross-platform nature of modern evidence.
+- Impose **meaningful penalties** for destruction, alteration, or remote deletion during a preservation period.
+
+## Problems this proposal is trying to address (as described)
+
+Commentators in the research corpus argue that modern digital evidence presents distinctive challenges:
+
+- **Distributed storage** — Video and audio of a single incident can live on dozens of phones, cloud backups, venue-camera systems, vehicle dashcams, and platform servers, each with its own retention rules.
+- **Remote deletion** — Some content-management platforms permit central deletion of content from end-user devices, which can remove evidence after the user has already uploaded it.
+- **Automatic overwriting** — Many camera systems overwrite their storage on rolling cycles, sometimes within hours or days.
+- **Inconsistent chain of custody** — Transfers of digital evidence across agencies and platforms can lose metadata essential to verifying authenticity.
+- **Unclear platform obligations** — When a platform holds content that is material to an investigation, its preservation obligations depend on receiving specific legal process; absent that process, content can be quietly purged.
+- **Witness-device evidence** — Bystanders who capture important footage are often left to decide on their own whether and how to preserve it, and may be urged by others — with varying authority — to delete it.
+
+These themes are presented here as **concerns about incentives and historical patterns**, not as adjudicated findings about any specific investigation.
+
+## Core ideas for a digital-evidence preservation law
+
+Commentators sketch various possible reforms, which can be grouped into themes:
+
+### 1. Automatic preservation trigger
+
+For covered incidents (for example, a shooting involving death or serious injury at a public event), a statute could trigger **immediate, automatic preservation obligations** on:
+
+- Venue operators and their security contractors.
+- Event organizers and their subcontractors.
+- Telecommunications and social-media platforms with responsive content, upon notice.
+- Law-enforcement and government agencies coming into possession of responsive material.
+
+The trigger could be defined so that no discretionary preservation letter is required for the baseline preservation duty to attach.
+
+### 2. Preservation duration and scope
+
+The law could specify:
+
+- A **minimum preservation period** (for example, 180 days, extendable by agency or court order).
+- The **scope of preserved material**, including full-resolution originals, metadata, access logs, and any backup copies.
+- A prohibition on **routine overwriting** of covered material during the preservation period.
+- A prohibition on **remote deletion** of covered material from end-user devices during the preservation period.
+
+### 3. Criminal penalties for destruction or alteration
+
+Destroying, altering, or remotely deleting covered material during the preservation period could carry specific criminal penalties, with defined maximum sentences graduated by:
+
+- Intent (reckless vs. intentional).
+- Scale (single item vs. bulk destruction).
+- Actor (private actor vs. official actor).
+
+Commentators argue that meaningful deterrence requires real penalties; civil liability alone may be insufficient where actors expect the missing evidence to make a civil case difficult to prove.
+
+### 4. Chain-of-custody standards
+
+A statute could require standardized chain-of-custody procedures when digital evidence changes hands:
+
+- Cryptographic hashes of each file computed at each transfer.
+- Metadata manifests documenting device, time, location (where lawfully available), and custodian.
+- Sealed, tamper-evident handling for physical media.
+- Independent audit capability for the custody chain.
+
+### 5. Platform preservation obligations
+
+For content hosted by a covered platform (social media, cloud storage, content-management system), the statute could impose a duty, on notice, to:
+
+- Preserve the content in its original form for a defined period.
+- Provide a **certificate of preservation** on request, indicating the preserved content and any deletion attempts during the preservation window.
+- Refrain from **remote deletion** of copies already delivered to users.
+- Disclose, on lawful process, any server-side modifications.
+
+### 6. Witness-evidence protections
+
+For bystander-captured footage, the framework could:
+
+- Clarify that voluntary preservation is legally protected.
+- Prohibit anyone — including officers acting in a non-evidentiary capacity — from requesting deletion of material relevant to an active covered incident.
+- Provide a clear, low-friction channel for submitting witness evidence to law enforcement while retaining a personal copy.
+- Protect witnesses who decline to delete material from retaliation.
+
+### 7. Independent technical review
+
+To verify that chain-of-custody has been preserved, the statute could allow for **independent technical review** by qualified third-party examiners, including the capability to hash-compare files across the custody chain, review access logs, and identify any unexplained discrepancies.
+
+### 8. Notification and transparency
+
+When a covered agency or custodian determines that material has been lost, destroyed, or corrupted, the statute could require:
+
+- Prompt notification to the external oversight body and, as appropriate, to the public.
+- Documentation of the circumstances and the personnel involved.
+- Forensic investigation of the loss, with findings made available to courts and oversight bodies.
+
+### 9. Coordination with federal rules
+
+The statute would need to coordinate with existing federal rules of evidence, civil procedure, and criminal procedure — and with constitutional protections against improper search and seizure — so that preservation duties do not conflict with individual rights or existing court authority.
+
+### 10. Public archive for authenticated records
+
+Commentators sometimes propose that authenticated, publicly releasable records from covered incidents be maintained in a **public archive** indefinitely, so that the historical record of these events is preserved beyond the life of any specific investigation.
+
+## Safeguards and limits
+
+Several safeguards are central to any digital-evidence preservation approach:
+
+- **Personal privacy** — Preservation obligations must be limited in scope and duration so they do not become a general surveillance authority.
+- **Due process** — Any criminal penalty requires traditional elements of mens rea; accidental loss without culpability should not be criminalized.
+- **Proportionality** — Smaller incidents should not trigger the full weight of the preservation framework; tiering keeps obligations manageable.
+- **Platform free expression** — Platform obligations should be structured so that preservation duties do not become a tool for content-based regulation.
+- **Protection for journalists and researchers** — Working with original digital evidence for journalistic or scholarly purposes should be protected within defined safeguards.
+
+These safeguards are at least as important as the preservation duties the framework would create.
+
+## How this connects to other pages
+
+This plan ties into other reform-oriented topics:
+
+- [Law 1](./Law1) — law-enforcement records disclosure that depends on digital evidence being preserved in the first place.
+- [Law 2](./Law2) — intelligence-community records disclosure, including signals-intelligence outputs.
+- [Law 3](./Law3) — mandatory investigation that would rely on intact digital evidence.
+- [Event Security Standards](./Event_Security) — venue- and organizer-level preservation duties.
+- [Fix Overview](./overview) — broader summaries of reform themes.
+
+As with all pages in this section, the purpose here is to **organize ideas and claims** that have been raised — not to assert that any named individual, agency, or platform has destroyed or altered evidence in any specific case.
+
+## Related Areas
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Cameras](/cameras/security/overview)
+* [Videos](/Videos/overview)
+* [Cover Up](/CoverUp/overview)
+
+</div>
+<div>
+
+* [Technology & Surveillance](/technology_surveillance/overview)
+* [FBI](/FBI/overview)
+* [Your Actions Fix It](/Your_Actions_Fix_It/overview)
+
+</div>
+</div>
