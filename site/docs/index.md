@@ -9,12 +9,12 @@ sidebar_position: 1
 
 ## Tyler Robinson didn't do it
 - [Motive](/Motive/overview.md) 
-- Details: [Everything about Tyler Robinson](/Tyler_Robinson/overview.md), [Gun](/Gun_Bullet/overview.md), [Walking Path](/Tyler_Robinson/Travel.md), [Girlfriend](/Tyler_Robinson/Girlfriend/overview.md), [Case & Trial](/Tyler_Robinson/Trial/overview.md)
+- Details: [Everything about Tyler Robinson](/Tyler_Robinson/overview.md), [Gun](/Gun_Bullet/overview), [Walking Path](/Tyler_Robinson/Travel.md), [Girlfriend](/Tyler_Robinson/Girlfriend/overview.md), [Case & Trial](/Tyler_Robinson/Trial/overview.md)
 
 
 
 ## Biggest "Question Marks" that conclude others could likely be involved:
-REASONING: His powerful [30-06 Mauser 98 gun](/Gun_Bullet/overview.md) would have destroyed his neck. And caused [Blood all over the Tent](Tent/overview.md). Tyler Robinson didn't kill [Charlie Kirk](/Charlie/overview.md).
+REASONING: His powerful [30-06 Mauser 98 gun](/Gun_Bullet/overview) would have destroyed his neck. And caused [Blood all over the Tent](Tent/overview.md). Tyler Robinson didn't kill [Charlie Kirk](/Charlie/overview.md).
  
 
 <div style={{ display: "flex", justifyContent: "space-between", gap: "2rem" }}>
@@ -43,7 +43,7 @@ REASONING: His powerful [30-06 Mauser 98 gun](/Gun_Bullet/overview.md) would hav
   * [UVU](/UVU/overview.md)
   * [Locations](/Locations/overview.md)
   * [Medical](/Medical/overview.md)
-  * [Gun & Bullet](/Gun_Bullet/overview.md)
+  * [Gun & Bullet](/Gun_Bullet/overview)
   </div>
 </div>
 
@@ -76,7 +76,7 @@ REASONING: His powerful [30-06 Mauser 98 gun](/Gun_Bullet/overview.md) would hav
 
 
 ## Tyler Robinson
-- REASONING: His powerful [30-06 Mauser 98 gun](/Gun_Bullet/overview.md) would have destroyed his neck. And caused [Blood all over the Tent](Tent/overview.md). Tyler Robinson didn't kill [Charlie Kirk](/Charlie/overview.md).
+- REASONING: His powerful [30-06 Mauser 98 gun](/Gun_Bullet/overview) would have destroyed his neck. And caused [Blood all over the Tent](Tent/overview.md). Tyler Robinson didn't kill [Charlie Kirk](/Charlie/overview.md).
 - Other Actors, taking Action before: [Google Searches](/GoogleSearches/overview.md)
 
 
