@@ -30,6 +30,7 @@ Profiles of the key individuals connected to the Charlie Kirk assassination inve
 * [Andrew Kolvet](./andrew-kolvet)
 * [Ben Shapiro](./ben-shapiro)
 * [Lance Twiggs](./lance-twiggs)
+* [Nate Brooksby](./nate-brooksby)
 
 </div>
 <div>
