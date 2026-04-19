@@ -5,4 +5,6 @@
 
 #2) Bumble Hive Utah hard drive data center. It can expose the Israeli 12 because even if they burn phones because of cross-pollination 
 
-#3) 
+#3) Any U.S. government, federal or local, or any private company that has an NDA or other confidentiality agreement, or any agreement that removes the right for somebody to speak publicly about everything they know about the Charlie Kirk assassination, that requirement is removed. They have full freedom to speak publicly. This includes government employees. This includes anything they work on with classified information. Any information they have about any intelligence service or anybody involved in the assassination, they can speak about publicly. There will be no civil fines or civil penalties. There will be no criminal penalties. There will not be allowed to be any retribution by any company, organization, person, or government. 
+
+#4) no employee, contractor, or anybody is allowed to be limited and prevented and told not to be able to investigate the Charlie Kirk assassination. That includes government employees. There will be a ten-year criminal sentence for any manager or other person attempting to limit their ability to investigate the Charlie Kirk assassination or to talk about it publicly. The amount of time that they take cannot be overly disruptive of their job responsibilities, but it can take some time from their normal typical work week. 
