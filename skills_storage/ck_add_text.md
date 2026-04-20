@@ -81,10 +81,13 @@ Key directories:
   {ROOT_DIR}/videos/              — Central video storage (gitignored)
   {ROOT_DIR}/images/              — Central image storage
   {ROOT_DIR}/videos_transcription/ — Transcription files for downloaded videos
+  {ROOT_DIR}/IPFS/                — IPFS evidence files and pin scripts
+  {ROOT_DIR}/tmp/                 — Batch progress files for multi-URL processing
 
 CK_FILE is file {ROOT_DIR}/Charlie_Kirk.txt
 SITE_DOCS_DIR is dir {ROOT_DIR}/site/docs/
 TRANSCRIBE_JS is file ~/BGit/work/tools/Transcription/Transcribe.js
+TRANSCRIBE_CONFIG is file {ROOT_DIR}/tmp/transcribe_config.yaml
 
 
 ============================
@@ -175,10 +178,12 @@ This mode processes one or more X/Twitter post URLs. For each URL it:
   2. Downloads any video attachments
   3. Downloads any image attachments
   4. Pins media to IPFS for permanent hosting
-  5. Transcribes videos automatically
+  5. Transcribes videos automatically (unless toggled off)
   6. Adds the post text and transcription to {CK_FILE}
   7. Creates or updates Docusaurus site pages with embedded media
   8. Converts .md pages to .mdx when embedding media
+  9. Updates IPFS pin scripts and video indexes
+  10. Adds X post links to every modified page
 
 
 ============================
@@ -204,63 +209,229 @@ Parse $ARGUMENTS to identify all components:
 **Component 3: Site Section**
 * An optional hint about which site/docs/ directory this content belongs in
 * E.g., "FBI", "CoverUp", "Israel", "Ballistics"
-* If not provided, auto-detect from post content
+* If provided, skip auto-detection and use this section for ALL posts
+* If NOT provided, auto-detect per post from post content (Step 3)
 
 **Component 4: Text Block**
 * Additional text/notes to add alongside the X post content
+* Applied after the X post content is processed
 
-**Component 5: Transcribe Video**
-* Transcription is ON BY DEFAULT for all downloaded videos
-* If the input contains "skip transcription" (case-insensitive), set
-  TRANSCRIBE_REQUESTED = false
-* Otherwise TRANSCRIBE_REQUESTED = true
+**Component 5: Video Flags**
+* Video transcription is AUTOMATIC by default for any post that has a video.
+  TRANSCRIBE_REQUESTED = true unless overridden.
+* If the input contains the phrase "skip transcription" or "transcription off"
+  or "no transcription" (case-insensitive), set TRANSCRIBE_REQUESTED = false.
+* If the input contains "transcription on" (case-insensitive), set
+  TRANSCRIBE_REQUESTED = true (this is the default, but useful to re-enable).
+* If the input contains "don't transfer video" or "don't download video" or
+  "no video" (case-insensitive), set SKIP_VIDEO = true. This skips video
+  download (Step 6), transcription (Step 7), and transcription processing
+  (Step 8) entirely. Images are still downloaded unless separately skipped.
+* If SKIP_VIDEO = true, set TRANSCRIBE_REQUESTED = false.
 
-Parse rules:
+**Transcription Toggle Persistence:**
+* Check {TRANSCRIBE_CONFIG} for a saved default:
+  ```yaml
+  transcribe_default: true   # or false
+  ```
+  If the file exists, use its value as the default instead of true.
+  If the file does not exist, the default is true (transcription ON).
+* If the user says "transcription off" or "transcription on" WITHOUT any URLs,
+  update {TRANSCRIBE_CONFIG} and confirm:
+    "Transcription default set to {on/off}. Future videos will {be/not be}
+     transcribed automatically."
+  Then stop — do not proceed to Step 1.
+* If the user provides URLs AND a transcription flag, the flag applies to THIS
+  run only and does NOT change the persisted default.
 
-  1. Split the input into non-empty tokens by line.
+Parse rules for URL pairing (same as holon skill):
+
+  1. Split the input into non-empty tokens by line. Blank lines are separators.
 
   2. Identify each token as one of:
      - X_URL: a URL containing "/status/" (X.com or Twitter.com post)
      - DIRECT_VIDEO_URL: a video URL not containing "/status/"
      - DIRECT_IMAGE_URL: a direct image URL (.jpg/.png/.webp/.gif)
-     - SITE_SECTION: a non-URL token matching a directory name under {SITE_DOCS_DIR}
+     - SITE_SECTION: a non-URL token matching a directory name under {SITE_DOCS_DIR},
+       OR any token that looks like a directory-style name that appears immediately
+       before an X_URL with no intervening blank line
      - TEXT_BLOCK: a token that doesn't fit any above category
-     - SKIP_TRANSCRIPTION_FLAG: the phrase "skip transcription" (case-insensitive)
+     - SKIP_VIDEO_FLAG: "don't transfer video", "don't download video", "no video"
+     - TRANSCRIBE_FLAG: "skip transcription", "transcription off", "no transcription",
+       or "transcription on"
 
-  3. Build a URL_LIST of all X post URLs found.
+  3. Build a PAIRS list. Walk through the token list and pair each X_URL with the
+     SITE_SECTION that immediately precedes it (no blank line between them):
+     - If a SITE_SECTION token appears and the very next non-blank token is an
+       X_URL → they form a named pair:
+         { url: X_URL, section: SITE_SECTION }
+     - If an X_URL has no preceding SITE_SECTION → unnamed pair:
+         { url: X_URL, section: null }
 
-  4. If a SITE_SECTION is found, it applies to ALL URLs unless a different section
-     is specified per URL (same pairing logic as the text block).
+  4. Handle the "one name, many URLs" pattern:
+     If a single SITE_SECTION directly precedes a run of multiple consecutive
+     X_URLs (no blank lines between), assign that section to all URLs in the run.
 
-  5. Any TEXT_BLOCK applies to all posts.
+  5. If a single SITE_SECTION appears in the input but no URL-pairing could be
+     established, treat it as a global default section for ALL unnamed pairs.
 
-* After parsing, output the resolved list:
+  6. Any token that is not an X_URL, SITE_SECTION, DIRECT_VIDEO_URL,
+     DIRECT_IMAGE_URL, SKIP_VIDEO_FLAG, or TRANSCRIBE_FLAG is part of a
+     TEXT_BLOCK and applies to all posts.
+
+* After parsing, output the resolved PAIRS list:
   ```
   ============================================
   Input Parsed
   ============================================
-  URLs to process:
+  Pairs to process:
     1. URL: {url}
-       Section hint: {section or "auto-detect"}
+       Section: {section or "auto-detect"}
     2. URL: {url}
-       Section hint: {section or "auto-detect"}
+       Section: {section or "auto-detect"}
+    ... (one entry per pair)
   Direct video URL: {url or "none"}
   Direct image URL: {url or "none"}
   Text block: {yes/no — brief summary}
-  Transcribe videos: {yes (default) / no}
+  Skip video: {yes/no}
+  Transcribe video: {yes (default) / no}
   Mode: {SINGLE POST | MULTI-POST — {count} posts}
   ============================================
   ```
 
-* **MULTI-POST MODE**: If 2 or more X post URLs are present, run Steps 1 through 9
-  independently for EACH URL, one at a time.
-  Any global text block applies to ALL posts.
-  Output a divider between each post's processing:
+* **MULTI-POST MODE**: If 2 or more X post URLs are present, process them using
+  the checkpoint system described in Step 0B below. Any global text block or
+  transcribe flag applies to ALL posts.
+
+
+============================
+X POST STEP 0B: CHECKPOINT & BATCHING (multi-post mode only)
+============================
+
+SKIP IF: Only 1 X post URL was parsed in Step 0 (single-post mode).
+
+PROGRESS_FILE is file {ROOT_DIR}/tmp/batch_progress.yaml
+
+The checkpoint system ensures that if processing is interrupted (context exhaustion,
+error, user abort), completed work is preserved and processing can resume from where
+it left off.
+
+* 0B-1. Check for an existing progress file at {PROGRESS_FILE}:
+
+  If the file exists, read it. It contains:
+  ```yaml
+  batch_id: '{timestamp}'
+  started: '{YYYY-MM-DD HH:MM}'
+  total_urls: {n}
+  completed:
+    - url: '{url}'
+      post_id: '{id}'
+      section: '{section_dir}'
+      status: 'done'
+  failed:
+    - url: '{url}'
+      error: '{reason}'
+  remaining:
+    - url: '{url}'
+      section: '{paired section or null}'
+  sections_modified: ['FBI', 'CoverUp']
+  pages_created: ['site/docs/FBI/some-page.mdx']
+  pages_modified: ['site/docs/CoverUp/overview.md']
   ```
-  ############################################
-  Processing Post {n} of {total}: {url}
-  ############################################
+
+  Compare the URLs in the progress file against the current PAIRS list:
+  - URLs listed under `completed:` → SKIP these entirely. They are done.
+  - URLs listed under `failed:` → retry them (user is re-running to fix failures).
+  - URLs listed under `remaining:` → process these.
+  - Any URLs in the current PAIRS list that are NOT in the progress file → add them
+    to the processing queue (new URLs added since last run).
+
+  Output:
   ```
+  ============================================
+  Resuming from Checkpoint
+  ============================================
+  Progress file: {PROGRESS_FILE}
+  Previously completed: {n} posts
+  Previously failed: {n} posts (will retry)
+  Remaining to process: {n} posts
+  New URLs not in checkpoint: {n} posts
+  Total to process this run: {n}
+  ============================================
+  ```
+
+* 0B-2. If NO progress file exists, create one:
+  ```bash
+  mkdir -p {ROOT_DIR}/tmp
+  ```
+  Write the initial progress file with all URLs under `remaining:` and empty
+  `completed:` and `failed:` lists. Set batch_id to the current timestamp
+  (YYYYMMDD_HHMMSS format). Set sections_modified, pages_created, and
+  pages_modified to empty lists.
+
+  Output:
+  ```
+  ============================================
+  New Batch Started
+  ============================================
+  Batch ID: {batch_id}
+  Progress file: {PROGRESS_FILE}
+  Total posts to process: {n}
+  ============================================
+  ```
+
+* 0B-3. Build the PROCESSING_QUEUE from the progress file: all URLs that need
+  processing (remaining + failed retries + new URLs). Preserve section pairings
+  from Step 0.
+
+* 0B-4. Process each URL in PROCESSING_QUEUE one at a time. For each URL:
+
+  a. Output a divider:
+    ```
+    ############################################
+    Processing Post {n} of {total}: {url}
+    Section: {paired section or "auto-detect"}
+    Batch progress: {completed_count}/{total_count}
+    ############################################
+    ```
+
+  b. Run Steps 1 through 9 for this URL. Step 10 (final summary) runs ONCE
+     at the end after all URLs are done.
+
+  c. After this URL completes (success or failure), IMMEDIATELY update the
+     progress file:
+     - Move the URL from `remaining:` to `completed:` (if success) or `failed:`
+       (if error), with status details.
+     - If a section was modified, add its name to `sections_modified:` (if not
+       already listed).
+     - Add any created/modified page paths to `pages_created:` / `pages_modified:`.
+     - Write the file to disk. This is the checkpoint — if the conversation dies
+       after this write, the next run picks up from here.
+
+  d. **CONTEXT COMPACTION**: After updating the progress file, mentally release
+     all intermediate data from this URL's processing. Do NOT retain in working
+     memory:
+     - The full xurl API response JSON
+     - The full text of files read during section detection
+     - The full text of site/docs/ files read during Step 9
+     - OCR output text (already saved to YAML)
+     - Transcription text (already saved to evidence file)
+
+     DO retain (needed for deduplication and final summary):
+     - The post_id, author, section, and status (1 line per URL)
+     - List of files created or modified (filenames only, not contents)
+     - Video/image CIDs (needed if a later URL references the same media)
+     - The sections_modified list (needed for final summary)
+
+     This compaction keeps the context window lean. The progress file on disk is
+     the authoritative record — the context window only needs enough to process
+     the current URL and know what was already done.
+
+* 0B-5. **DEDUPLICATION ACROSS BATCH**: Before creating a new Level 3 page in
+  Step 9, check whether a PREVIOUS URL in this batch already created that page.
+  The retained list of files created (from 0B-4d) and the pages_created list in
+  the progress file serve as the check. If the page already exists, update it
+  instead of creating a duplicate.
 
 
 ============================
@@ -280,9 +451,10 @@ SKIP IF: No X/Twitter URL for this post.
   ```
 
 * If xurl fails or returns an error, inform the user and stop processing this post.
-  (If in multi-post mode, move to the next post.)
+  (If in multi-post mode, mark as failed and move to the next post.)
 
-* Output to stdout:
+* Output to stdout — print the FULL POST TEXT so the user can immediately see what
+  was downloaded:
   ```
   ============================================
   X Post Fetched: {post_id}
@@ -298,7 +470,11 @@ SKIP IF: No X/Twitter URL for this post.
   ============================================
   ```
 
-* Save a TEMP YAML file to /tmp/ck_xpost_{post_id}.yaml with the raw post data:
+* Save a TEMP YAML file immediately to /tmp/ck_xpost_{post_id}.yaml with the raw
+  post data. This is a first-pass save before section detection — capture everything
+  including all attachment URLs so nothing is lost if later steps fail.
+
+  TEMP YAML format:
   ```yaml
   id: '{post_id}'
   url: '{original_url}'
@@ -335,7 +511,10 @@ SKIP IF: No X/Twitter URL for this post.
         height: {n}
   investigation: 'charlie_kirk'
   added_date: '{today YYYY-MM-DD}'
+  temp_file: true
   ```
+
+  Output: "Temp YAML saved: /tmp/ck_xpost_{post_id}.yaml"
 
 
 ============================
@@ -367,9 +546,16 @@ SKIP IF: Post has no image attachments.
     Skip OCR for this image but continue.
 
   2c. Capture OCR output as OCR_TEXT. If it has more than 5 words:
-    - Output to stdout
+    - Output the extracted text to stdout:
+      ```
+      ============================================
+      OCR Text Extracted from Image
+      ============================================
+      {OCR_TEXT}
+      ============================================
+      ```
     - Append to the analysis pool for topic matching
-    - Add to temp YAML as ocr_text field
+    - Update the temp YAML to add an ocr_text field
 
   2d. Clean up: rm -f "$TMPIMG"
 
@@ -387,8 +573,8 @@ X POST STEP 3: ANALYZE POST IN CK INVESTIGATION CONTEXT AND DETERMINE PLACEMENT
   relates to — a specific incident, person, evidence category, timeline event,
   or theory. This understanding drives every placement decision below.
 
-* If SITE_SECTION was provided in the input, use it directly. Resolve to a
-  directory under {SITE_DOCS_DIR}.
+* If SITE_SECTION was provided in the input (from Step 0 pairing), use it directly.
+  Resolve to a directory under {SITE_DOCS_DIR}.
 
 * Otherwise, analyze the ANALYSIS POOL to determine which CK investigation topic
   this post relates to. Match against these topic directories:
@@ -455,8 +641,9 @@ SKIP IF: No X post was fetched in Step 1.
 
 * Create directory if needed: {ROOT_DIR}/Research/x_posts/
 
-* Save the post as a YAML file: {ROOT_DIR}/Research/x_posts/{post_id}.yaml
+* Save the post as a final YAML file: {ROOT_DIR}/Research/x_posts/{post_id}.yaml
   Include all fields from the temp YAML plus ocr_text if OCR was performed.
+  Set temp_file: false.
 
 * Delete the temp file:
   ```bash
@@ -490,7 +677,9 @@ X POST STEP 5: ADD POST TEXT TO MASTER INVESTIGATION FILE
 X POST STEP 6: DOWNLOAD VIDEO AND PIN TO IPFS
 ============================
 
-SKIP IF: No video is available from the post or from a separate video URL.
+SKIP IF: SKIP_VIDEO = true — user requested no video transfer.
+SKIP IF: No video is available from the post, from a separate video URL, or from
+  a URL in the text block.
 
 * All videos go to the central directory: {ROOT_DIR}/videos/
   Never store videos inside site/ or individual topic directories.
@@ -514,37 +703,64 @@ SKIP IF: No video is available from the post or from a separate video URL.
   videos/
   ```
 
-* Check for duplicate before downloading:
+* 6-pre. CHECK FOR DUPLICATE before downloading:
 
-  If {ROOT_DIR}/videos/manifest.yaml exists, check whether this video already exists
-  by matching source_url or filename starting with post_id.
+  Read {ROOT_DIR}/videos/manifest.yaml and check whether this video already exists
+  by matching EITHER of these against every entry in the manifest:
+    - source_url matches the X post URL or video URL
+    - filename starts with the post_id
 
-  **Case A — Already exists locally:** Skip download. Use existing CID. Output:
-    "Video already exists: {filename} (CID: {CID})"
+  Also scan {ROOT_DIR}/IPFS/ipfs.txt for the post_id as a secondary check.
 
-  **Case B — In manifest but missing locally:** Recover from IPFS:
-    ```bash
-    ipfs get --output={ROOT_DIR}/videos/{filename} {CID}
-    ipfs pin add {CID}
+  **Case A — Already in manifest AND file exists locally:**
+    SKIP steps 6a through 6e entirely. Use the existing CID and filename for step 6f
+    onward (embedding in site pages). Output:
+    ```
+    ============================================
+    Video Already Exists — Skipping Download
+    ============================================
+    File: {ROOT_DIR}/videos/{manifest_entry.filename}
+    IPFS CID: {manifest_entry.ipfs_cid}
+    Gateway: {manifest_entry.ipfs_gateway_url}
+    Source: {manifest_entry.source_url}
+    ============================================
     ```
 
-  **Case C — Not in manifest:** Proceed to download.
+  **Case B — In manifest but file is MISSING locally:**
+    Recover from IPFS:
+    ```bash
+    mkdir -p {ROOT_DIR}/videos
+    ipfs get --output={ROOT_DIR}/videos/{manifest_entry.filename} {manifest_entry.ipfs_cid}
+    ipfs pin add {manifest_entry.ipfs_cid}
+    ```
+    If IPFS retrieval succeeds, SKIP steps 6a through 6e. Use existing CID for 6f onward.
+    If IPFS retrieval fails, fall through to step 6a and download fresh.
+
+  **Case C — NOT in manifest:**
+    Proceed to step 6a.
 
 * 6a. Download using yt-dlp:
   ```bash
+  mkdir -p {ROOT_DIR}/videos
   yt-dlp "{video_source_url}" -o "{ROOT_DIR}/videos/{post_id}.%(ext)s"
   ```
   If yt-dlp fails, try with cookies or inform the user.
 
 * 6b. Pin to IPFS:
-  ```bash
-  brew services list | grep kubo
-  ```
-  If not running: brew services start kubo
-  ```bash
-  ipfs add --pin {ROOT_DIR}/videos/{filename}
-  ```
-  Capture the CID. Verify: ipfs pin ls {CID}
+  - Ensure the IPFS daemon is running:
+    ```bash
+    brew services list | grep kubo
+    ```
+    If not running: brew services start kubo
+  - Add and pin the video:
+    ```bash
+    ipfs add --pin {ROOT_DIR}/videos/{filename}
+    ```
+  - Capture the CID from the output (e.g. QmWepcax...)
+  - Verify the pin:
+    ```bash
+    ipfs pin ls {CID}
+    ```
 
 * 6c. Update manifest — append to {ROOT_DIR}/videos/manifest.yaml:
   ```yaml
@@ -558,6 +774,44 @@ SKIP IF: No video is available from the post or from a separate video URL.
     pinned: true
   ```
 
+* 6c2. Update {ROOT_DIR}/IPFS/ipfs.txt — append the IPFS commands for this video:
+  ```
+  # {post_id}.mp4 — @{username} · {today YYYY-MM-DD}
+  # {description up to 80 chars}
+  ipfs get {CID}
+  ipfs add "{filename}"
+  ipfs pin add {CID}
+  ```
+  This file is the master IPFS pin script. Anyone who runs these commands on any
+  IPFS node will download and rebroadcast the evidence file.
+
+* 6c3. Create or update {ROOT_DIR}/videos/videos.md — a human-readable index:
+  If the file does not exist, create it with this header:
+  ```markdown
+  # Video Evidence Index
+
+  All videos downloaded from X/Twitter posts related to the Charlie Kirk investigation.
+  Videos are pinned to IPFS for permanent, censorship-resistant hosting.
+
+  ## How to access
+
+  ```sh
+  # Install IPFS: brew install kubo
+  # Start daemon: ipfs daemon
+  # Then run the commands from IPFS/ipfs.txt
+  ```
+
+  ## Video Index
+
+  | File | IPFS CID | Description | Source | Date |
+  |------|----------|-------------|--------|------|
+  ```
+
+  Append a new row to the Video Index table:
+  ```
+  | {filename} | `{CID}` | {description} | [@{username}]({source_url}) | {today} |
+  ```
+
 * 6d. Output:
   ```
   ============================================
@@ -567,6 +821,8 @@ SKIP IF: No video is available from the post or from a separate video URL.
   Size: {file size}
   IPFS CID: {CID}
   Gateway: https://ipfs.io/ipfs/{CID}
+  IPFS commands added to: IPFS/ipfs.txt
+  Video index updated: videos/videos.md
   ============================================
   ```
 
@@ -576,6 +832,8 @@ X POST STEP 6B: DOWNLOAD IMAGES AND PIN TO IPFS
 ============================
 
 SKIP IF: No images available from the post or from a separate image URL.
+NOTE: If Step 2 already downloaded images for OCR from temp paths, those were temp
+  files — images still need to be downloaded fresh to {ROOT_DIR}/images/ here.
 
 * All images go to: {ROOT_DIR}/images/
   Never store images inside site/ or individual topic directories.
@@ -590,8 +848,29 @@ SKIP IF: No images available from the post or from a separate image URL.
   - For highest quality, append "?format=jpg&name=4096x4096" to the base URL
   - Record width and height from the API for aspect ratio in embeds
 
-* Check for duplicates: if {ROOT_DIR}/images/manifest.yaml exists, check
-  source_url or filename starting with post_id. Skip if found.
+* 6B-pre. CHECK FOR DUPLICATE IMAGES before downloading:
+
+  If {ROOT_DIR}/images/manifest.yaml exists, check each image against it:
+    - source_url matches the X post URL or image URL
+    - filename starts with the post_id
+
+  For each image:
+
+  **Case A — In manifest AND file exists locally:**
+    SKIP download and IPFS pin for this image. Use the existing CID for embedding.
+    Output: "Image already exists: {filename} (CID: {cid})"
+
+  **Case B — In manifest but file MISSING locally:**
+    Recover from IPFS:
+    ```bash
+    mkdir -p {ROOT_DIR}/images
+    ipfs get --output={ROOT_DIR}/images/{manifest_entry.filename} {manifest_entry.ipfs_cid}
+    ipfs pin add {manifest_entry.ipfs_cid}
+    ```
+    If retrieval succeeds, use existing CID. If fails, fall through to 6B-a.
+
+  **Case C — NOT in manifest:**
+    Proceed to 6B-a.
 
 * 6B-a. Download each image:
   ```bash
@@ -603,7 +882,7 @@ SKIP IF: No images available from the post or from a separate image URL.
   ```bash
   ipfs add --pin {ROOT_DIR}/images/{filename}
   ```
-  Capture the CID.
+  Capture the CID. Verify: ipfs pin ls {CID}
 
 * 6B-c. Update image manifest — append to {ROOT_DIR}/images/manifest.yaml:
   ```yaml
@@ -620,6 +899,14 @@ SKIP IF: No images available from the post or from a separate image URL.
     pinned: true
   ```
 
+* 6B-c2. Update {ROOT_DIR}/IPFS/ipfs.txt — append IPFS commands for each image:
+  ```
+  # {filename} — @{username} · {today YYYY-MM-DD}
+  ipfs get {CID}
+  ipfs add "{filename}"
+  ipfs pin add {CID}
+  ```
+
 * 6B-d. Output:
   ```
   ============================================
@@ -627,7 +914,8 @@ SKIP IF: No images available from the post or from a separate image URL.
   ============================================
   Files: {list of filenames}
   IPFS CIDs: {list of CIDs}
-  OCR performed: {yes/no}
+  OCR performed: {yes/no — from Step 2}
+  IPFS commands added to: IPFS/ipfs.txt
   ============================================
   ```
 
@@ -636,9 +924,10 @@ SKIP IF: No images available from the post or from a separate image URL.
 X POST STEP 7: TRANSCRIBE VIDEO
 ============================
 
-SKIP IF: TRANSCRIBE_REQUESTED is false (user said "skip transcription").
-SKIP IF: No video was downloaded in Step 6.
-NOTE: Transcription is ON BY DEFAULT for all downloaded videos.
+SKIP IF: TRANSCRIBE_REQUESTED is false.
+SKIP IF: No video was downloaded in Step 6 — inform the user:
+  "Transcription skipped — no video was downloaded."
+NOTE: Transcription is ON BY DEFAULT. The user does NOT need to say "transcribe."
 
 * Create output directory if needed:
   ```bash
@@ -679,7 +968,7 @@ NOTE: Transcription is ON BY DEFAULT for all downloaded videos.
 * Output:
   ```
   ============================================
-  Video Transcribed
+  Video Transcribed (automatic)
   ============================================
   Video: {video_filename}
   Transcription: {ROOT_DIR}/videos_transcription/{post_id}.md
@@ -708,6 +997,13 @@ SKIP IF: Step 7 was skipped or transcription failed.
 
 * Analyze the transcription for additional people, facts, quotes, and claims
   that were not in the post text. Note any new people or topics discovered.
+  These will be used to enrich the site page in Step 9.
+
+* Also save a copy in the evidence directory:
+  ```bash
+  mkdir -p {ROOT_DIR}/Research/evidence
+  cp {ROOT_DIR}/videos_transcription/{post_id}.md {ROOT_DIR}/Research/evidence/{post_id}_transcription.md
+  ```
 
 
 ============================
@@ -733,6 +1029,11 @@ This step uses the Level 2 / Level 3 decisions made in Step 3.
     * fbi-evidence-request-denied.md
     * drone-sighting-sept-9.md
     * erika-kirk-ceo-announcement.md
+
+  **DEDUPLICATION CHECK (multi-post mode):** Before creating a new page, check
+  the pages_created list from the batch progress file and the retained file list.
+  If the same page was already created by a previous URL in this batch, update
+  it instead.
 
 * 9b. MDX CONVERSION (if media is involved)
 
@@ -841,6 +1142,16 @@ This step uses the Level 2 / Level 3 decisions made in Step 3.
   <div style={{clear: 'both'}} />
   ```
 
+* 9e2. TRANSCRIPTION ON PAGE
+
+  If transcription was performed in Step 7, add a "## Transcript Summary" or
+  "## Key Statements" section below the video embed:
+  - Include the most important quotes and claims from the transcription
+  - If the transcription is short (under 500 words), include the full text
+  - Always attribute: "From video testimony by {speaker}, {date}."
+  - Look for NEW people, facts, and topics mentioned only in the video (not in
+    the post text) and include those on the page
+
 * 9f. UPDATE THE LEVEL 2 PAGE TOC — MANDATORY FOR NEW LEVEL 3 PAGES
 
   If a new Level 3 page was created, immediately update the parent Level 2
@@ -857,6 +1168,50 @@ This step uses the Level 2 / Level 3 decisions made in Step 3.
   This step is NOT optional. A Level 3 page without a link from its parent
   Level 2 page is an orphan and will never be found by readers.
 
+* 9g. ADD X POST LINK TO EVERY MODIFIED/CREATED PAGE
+
+  For EACH site page (.md or .mdx) that was modified or created in this step:
+
+  9g-a. Check if the page already has a section titled "## X.com posts:"
+    (case-insensitive match on the heading text).
+
+  9g-b. If the section does NOT exist, add it at the very bottom of the page
+    (but ABOVE the Related Areas section if one exists):
+    ```
+    ## X.com posts:
+    ```
+
+  9g-c. Under the "X.com posts:" heading, append a bullet with a hyperlinked
+    summary of the post. The summary must be 10 words or fewer and describe what
+    the post is about. The link text IS the summary; the URL is the original X
+    post URL. Format:
+    ```
+    * [{10-word-or-less summary of the post}]({original_x_post_url})
+    ```
+    Example:
+    ```
+    * [Whistleblower reveals FBI destroyed CK evidence in 2025](https://x.com/someuser/status/123456)
+    ```
+
+  9g-d. If the section already exists, append the new bullet at the end of the
+    existing bullet list. Do NOT duplicate — if the same URL is already listed,
+    skip it.
+
+  9g-e. Track whether at least one page received the X post link. Set
+    X_LINK_PLACED = true if any page was updated with the link.
+
+* 9g-f. FALLBACK: If X_LINK_PLACED = false (no page received the link):
+  Check if {ROOT_DIR}/Research/collected_links.md exists. If not, create it:
+  ```markdown
+  # Collected Links
+
+  X post links that were processed but not yet assigned to a specific site page.
+  Review these periodically and move them to the appropriate page.
+
+  ## X.com posts:
+  ```
+  Append the bullet to the "X.com posts:" section.
+
 * If the content mentions people who have Details/ profiles, cross-link to them.
 
 
@@ -864,10 +1219,10 @@ This step uses the Level 2 / Level 3 decisions made in Step 3.
 X POST STEP 10: FINAL SUMMARY
 ============================
 
-* Output a complete summary for this post:
+* **SINGLE-POST MODE** — output the post summary:
   ```
   ============================================
-  ck_add_text X Post Complete — Post {n}/{total}
+  ck_add_text X Post Complete
   ============================================
   Post: {post_id} by @{username} on {date}
   URL: {original_url}
@@ -879,19 +1234,57 @@ X POST STEP 10: FINAL SUMMARY
   Video IPFS CID: {CID or "none"}
   Images: {downloaded filenames or "none"}
   Image IPFS CIDs: {CIDs or "none"}
+  Video skipped: {yes — user said no video | no}
   Transcription: {yes — saved to {path} | no — not requested | failed}
   Site pages updated: {list of files modified/created}
+  X post link placed on: {list of pages}
+  IPFS commands added: {yes/no}
   ============================================
   ```
 
-* In multi-post mode, after all posts processed:
+* **MULTI-POST MODE** — after ALL posts and Step 0B loop finishes:
+
+  Read the final state of {PROGRESS_FILE} to build this report:
   ```
   ============================================
-  ALL POSTS PROCESSED
+  ALL POSTS PROCESSED — BATCH COMPLETE
   ============================================
+  Batch ID: {batch_id}
   Total posts: {n}
   Successful: {n}
-  Failed (xurl error): {n} — {list URLs}
+  Failed: {n} — {list URLs with error reasons}
+  Sections modified: {list}
+  Pages created: {list}
+  Pages modified: {list}
+  Videos downloaded: {n}
+  Images downloaded: {n}
+  Transcriptions completed: {n}
+  IPFS pins added: {n}
+  ============================================
+  ```
+
+* **BATCH CLEANUP**: After a successful batch (all posts processed, no remaining):
+  - Rename the progress file to mark it complete:
+    ```bash
+    mv {ROOT_DIR}/tmp/batch_progress.yaml {ROOT_DIR}/tmp/batch_{batch_id}_done.yaml
+    ```
+  - This clears the way for the next batch. Old done files can be deleted manually
+    or kept as a log of past batches.
+
+* **INCOMPLETE BATCH**: If some posts remain unprocessed (context exhaustion,
+  user abort), the progress file stays at {PROGRESS_FILE} with the remaining
+  URLs still listed. Output:
+  ```
+  ============================================
+  BATCH INCOMPLETE — RESUME AVAILABLE
+  ============================================
+  Completed this run: {n}
+  Still remaining: {n}
+  Progress file: {PROGRESS_FILE}
+
+  To resume, run the same command again:
+    /ck_add_text {paste the same URL list}
+  Or just the remaining URLs — completed ones will be auto-skipped.
   ============================================
   ```
 
@@ -1171,7 +1564,7 @@ IMPORTANT
 * If the symlink ~/.claude/commands/ck_add_text.md does not exist, ask the user:
   "The ck_add_text skill symlink is not installed. Create it? (y/n)"
   If yes, run:
-    ln -s ~/BGit/Bryan_git/charlie-kirk/skills_storage/ck_add_text/ck_add_text.md ~/.claude/commands/ck_add_text.md
+    ln -s ~/BGit/Bryan_git/charlie-kirk/skills_storage/ck_add_text.md ~/.claude/commands/ck_add_text.md
 
 * In ADD TEXT MODE: this skill writes only to {CK_FILE}. All other files are
   read-only.
@@ -1186,16 +1579,39 @@ IMPORTANT
 * In X POST MODE: this skill writes to:
   - {CK_FILE} (adding post text and transcriptions)
   - {ROOT_DIR}/Research/x_posts/ (YAML post data)
+  - {ROOT_DIR}/Research/evidence/ (transcription copies)
+  - {ROOT_DIR}/Research/collected_links.md (fallback link collection)
   - {ROOT_DIR}/videos/ (downloaded videos, gitignored)
   - {ROOT_DIR}/videos_transcription/ (transcription files)
   - {ROOT_DIR}/images/ (downloaded images)
   - {ROOT_DIR}/videos/manifest.yaml (video manifest)
   - {ROOT_DIR}/images/manifest.yaml (image manifest)
+  - {ROOT_DIR}/videos/videos.md (human-readable video index)
+  - {ROOT_DIR}/IPFS/ipfs.txt (master IPFS pin script)
+  - {ROOT_DIR}/tmp/batch_progress.yaml (multi-post checkpoint)
+  - {ROOT_DIR}/tmp/transcribe_config.yaml (transcription toggle)
   - {SITE_DOCS_DIR}/ (creating/updating .mdx pages with embedded media)
 
 * NEVER modify sidebars.ts (site/sidebars.ts) in ANY mode unless the user's
   input text explicitly asks to update the sidebar/left bar. The sidebar
   structure is managed separately and this skill must not touch it.
+
+
+============================
+IMPORTANT RULES
+============================
+
+* Always follow the investigation's defamation prevention rules.
+* For ANY living person: never accuse them of crimes or unethical actions.
+  Use attribution language ("according to...", "allegedly", "reportedly").
+  Include denials and counterarguments. Note legitimate roles first.
+* Always use attribution language for claims from social media posts.
+* Never remove existing content — only add to it.
+* Keep the investigation's writing tone: investigative, not conspiratorial.
+* Include counterarguments and denials where relevant.
+* Video embeds: always use CSS style attributes, never HTML width= attribute.
+  Always include height: 'auto' and display: 'block'. Local IPFS gateway first.
+  Never use cloudflare-ipfs.com — shut down in 2024.
 
 
 ============================
