@@ -40,6 +40,26 @@ const config: Config = {
     locales: ["en"],
   },
 
+  plugins: [
+    [
+      "@docusaurus/plugin-client-redirects",
+      {
+        // Redirect every bare directory path to its overview page so external
+        // backlinks like /Fix or /Tyler_Robinson land on real content instead
+        // of GitHub Pages' 301-then-404 chain.
+        createRedirects(existingPath: string) {
+          if (existingPath.endsWith("/overview")) {
+            const parent = existingPath.replace(/\/overview$/, "");
+            if (parent !== "") {
+              return [parent];
+            }
+          }
+          return undefined;
+        },
+      },
+    ],
+  ],
+
   presets: [
     [
       "classic",
@@ -51,10 +71,7 @@ const config: Config = {
           // Remove this to remove the "edit this page" links.
           editUrl: "https://github.com/ACT3ai/charlie-kirk",
         },
-        blog: {
-          showReadingTime: true,
-          editUrl: "https://github.com/ACT3ai/charlie-kirk",
-        },
+        blog: false,
         pages: {
           path: "internals/src/pages",
         },
