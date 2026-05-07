@@ -85,9 +85,11 @@ const config: Config = {
         docs: {
           routeBasePath: "/",
           sidebarPath: "./sidebars.ts",
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl: "https://github.com/ACT3ai/charlie-kirk",
+          // Path to the source file inside the repo. Docs live in site/docs,
+          // and the generated edit URL is appended with the relative path of
+          // each source file. Without /edit/main/site/ every page emitted a
+          // github.com 404 link that GSC was reporting as a broken outbound.
+          editUrl: "https://github.com/ACT3ai/charlie-kirk/edit/main/site/",
           showLastUpdateTime: true,
         },
         blog: false,
