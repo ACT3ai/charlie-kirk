@@ -88,6 +88,7 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl: "https://github.com/ACT3ai/charlie-kirk",
+          showLastUpdateTime: true,
         },
         blog: false,
         pages: {
@@ -95,6 +96,9 @@ const config: Config = {
         },
         theme: {
           customCss: "./internals/src/css/custom.css",
+        },
+        sitemap: {
+          lastmod: "date",
         },
       } satisfies Preset.Options,
     ],
