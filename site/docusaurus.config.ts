@@ -56,6 +56,24 @@ const config: Config = {
           }
           return undefined;
         },
+        // Pages Google still has indexed but that have been moved or removed.
+        // Each entry generates a static HTML stub that meta-refreshes to `to`.
+        redirects: [
+          { from: "/Tyler/overview", to: "/Tyler_Robinson/overview" },
+          { from: "/Tyler/Recruited", to: "/Tyler_Robinson/Recruited" },
+          { from: "/Tyler/Travel", to: "/Tyler_Robinson/Travel" },
+          { from: "/Tyler/Girlfriend/overview", to: "/Tyler_Robinson/Girlfriend/overview" },
+          { from: "/Tyler/Trial/overview", to: "/Tyler_Robinson/Trial/overview" },
+          { from: "/Plane/N1098L/overview", to: "/Planes/N1098L/overview" },
+          { from: "/Plane/Leadership/overview", to: "/Planes/overview" },
+          { from: "/Topics3/Planes/overview", to: "/Planes/overview" },
+          { from: "/aircraft_flight_analysis/overview", to: "/Planes/overview" },
+          { from: "/Killer/Planes_Drones_Theories", to: "/Planes/overview" },
+          { from: "/Israel/israel-planes", to: "/Charlie/Israel_Donors_Motive" },
+          { from: "/Before/PreEvent_Flights_And_Travel", to: "/Before/overview" },
+          { from: "/CIA/overview", to: "/Proof_Intel_Services/overview" },
+          { from: "/Influencers/podcasts-project-costa-2", to: "/Influencers/podcasts-project-constitution" },
+        ],
       },
     ],
   ],
