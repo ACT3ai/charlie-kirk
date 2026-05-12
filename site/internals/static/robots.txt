@@ -1,4 +1,23 @@
 User-agent: *
 Allow: /
 
+# Block search and pagination clutter from being crawled.
+Disallow: /search
+Disallow: /search/
+Disallow: /*?q=
+
+# Sitemap location for Google, Bing, and other crawlers.
 Sitemap: https://whoassassinatedcharliekirk.com/sitemap.xml
+
+# Explicit crawl permissions for major engines.
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /

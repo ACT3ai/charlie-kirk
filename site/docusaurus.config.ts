@@ -7,9 +7,15 @@ import type * as Preset from "@docusaurus/preset-classic";
 const siteUrl = process.env.DOCUSAURUS_URL ?? "https://whoassassinatedcharliekirk.com";
 const baseUrl = process.env.DOCUSAURUS_BASE_URL ?? "/";
 
+const siteTitle = "Who Assassinated Charlie Kirk";
+const siteTagline = "Investigating the September 10, 2025 assassination at Utah Valley University";
+const siteDescription =
+  "Citizen-led investigation into the September 10, 2025 assassination of Charlie Kirk at Utah Valley University: evidence, timelines, suspects, intelligence-service connections, and proposed legal reforms.";
+const socialCard = "img/docusaurus-social-card.jpg";
+
 const config: Config = {
-  title: "Who Assassinated Charlie Kirk",
-  tagline: "Investigating the September 10, 2025 assassination at Utah Valley University",
+  title: siteTitle,
+  tagline: siteTagline,
   favicon: "img/favicon.ico",
   staticDirectories: ["internals/static"],
 
@@ -39,6 +45,79 @@ const config: Config = {
     defaultLocale: "en",
     locales: ["en"],
   },
+
+  // Global head tags for SEO: canonical URL, language, JSON-LD structured data
+  // (Organization + WebSite), and rich social cards. Per-page descriptions are
+  // set via frontmatter and override these defaults.
+  headTags: [
+    {
+      tagName: "link",
+      attributes: {
+        rel: "canonical",
+        href: siteUrl,
+      },
+    },
+    {
+      tagName: "meta",
+      attributes: {
+        name: "robots",
+        content: "index, follow, max-image-preview:large, max-snippet:-1",
+      },
+    },
+    {
+      tagName: "meta",
+      attributes: {
+        name: "author",
+        content: "ACT 3 AI, Inc.",
+      },
+    },
+    {
+      tagName: "meta",
+      attributes: {
+        property: "og:site_name",
+        content: siteTitle,
+      },
+    },
+    {
+      tagName: "meta",
+      attributes: {
+        property: "og:locale",
+        content: "en_US",
+      },
+    },
+    {
+      tagName: "script",
+      attributes: {
+        type: "application/ld+json",
+      },
+      innerHTML: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        name: siteTitle,
+        url: siteUrl,
+        description: siteDescription,
+        inLanguage: "en-US",
+        potentialAction: {
+          "@type": "SearchAction",
+          target: `${siteUrl}/search?q={search_term_string}`,
+          "query-input": "required name=search_term_string",
+        },
+      }),
+    },
+    {
+      tagName: "script",
+      attributes: {
+        type: "application/ld+json",
+      },
+      innerHTML: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        name: "ACT 3 AI, Inc.",
+        url: siteUrl,
+        logo: `${siteUrl}/img/logo.svg`,
+      }),
+    },
+  ],
 
   plugins: [
     [
@@ -100,22 +179,43 @@ const config: Config = {
           customCss: "./internals/src/css/custom.css",
         },
         sitemap: {
+          changefreq: "weekly",
+          priority: 0.5,
           lastmod: "date",
+          ignorePatterns: ["/tags/**"],
+          filename: "sitemap.xml",
         },
       } satisfies Preset.Options,
     ],
   ],
 
   themeConfig: {
-    // Replace with your project's social card
-    image: "img/docusaurus-social-card.jpg",
+    // Default social card used by Open Graph / Twitter when a page has no own image
+    image: socialCard,
+    metadata: [
+      { name: "description", content: siteDescription },
+      {
+        name: "keywords",
+        content:
+          "Charlie Kirk, Charlie Kirk assassination, Charlie Kirk shooting, Utah Valley University, UVU, September 10 2025, Tyler Robinson, TPUSA, Turning Point USA, investigation, intelligence services, cover-up, FBI, CIA, Mossad, who killed Charlie Kirk",
+      },
+      { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: siteTitle },
+      { name: "twitter:description", content: siteDescription },
+      { name: "twitter:image", content: `${siteUrl}/${socialCard}` },
+      { property: "og:type", content: "website" },
+      { property: "og:title", content: siteTitle },
+      { property: "og:description", content: siteDescription },
+      { property: "og:image", content: `${siteUrl}/${socialCard}` },
+      { property: "og:url", content: siteUrl },
+    ],
     colorMode: {
       respectPrefersColorScheme: true,
     },
     navbar: {
       title: "Who Assassinated Charlie Kirk",
       logo: {
-        alt: "My Site Logo",
+        alt: "Who Assassinated Charlie Kirk - investigation site logo",
         src: "img/logo.svg",
       },
       items: [
