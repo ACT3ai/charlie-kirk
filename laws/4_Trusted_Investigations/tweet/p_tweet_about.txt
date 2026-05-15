@@ -1,0 +1,134 @@
+
+ROOT_DIR dir is ~/BGit/Bryan_git/charlie-kirk/laws
+
+LAW_4_DIR dir is {ROOT_DIR}/4_Trusted_Investigations
+
+LAW_4_FILE is file {LAW_4_DIR}/Law_4_Trusted_Investigations.md
+
+THIS_DIR dir is {LAW_4_DIR}/tweet
+
+BACKGROUND_FILE is file {THIS_DIR}/background.txt
+
+OUTPUT_FILE is file {THIS_DIR}/tweet_about.txt
+
+FOCUS_LAW is Law 4 = "Embed Citizen Investigators Inside the Agencies"
+   (the Charlie Kirk Trusted Investigators Act)
+
+THE_FOUR_LAWS are:
+        Law 1 = Force the FBI to Open Its Files (DoJ/FBI Forced Disclosure Act)
+        Law 2 = Force the Spies to Open Their Files (Intelligence Services Disclosure Act)
+        Law 3 = Force Real Investigations (Mandatory Investigation Act)
+        Law 4 = Embed Citizen Investigators Inside the Agencies (Trusted Investigators Act)
+
+==========================================================
+STAGE 1 -- READ THE FOUR LAWS RECURSIVELY
+==========================================================
+
+* Walk up to {ROOT_DIR} and read every file under the four law directories
+  recursively into the context window:
+        {ROOT_DIR}/1_DoJ_FBI/
+        {ROOT_DIR}/2_US_Intel/
+        {ROOT_DIR}/3_Require_to_Investigate/
+        {ROOT_DIR}/4_Trusted_Investigations/
+* Read {LAW_4_FILE} in full -- this is the law the tweet is about.
+* Read {BACKGROUND_FILE} for the short framing of all four laws.
+* Read {ROOT_DIR}/README.md and {ROOT_DIR}/CLAUDE.md for project context.
+* Understand:
+  * What each of the four laws does and how they differ.
+  * Why Law 4 is structurally distinct -- it embeds named trusted public
+    figures (Candace Owens, Dave Smith, Tucker Carlson, Tulsi Gabbard, etc.)
+    INSIDE the FBI and U.S. Intelligence Community with full access, full
+    clearance, independent budgets, and authority to publicly release findings.
+  * Why the citizen investigators model is the unique answer to JFK Records
+    Act and Epstein Files Act failures.
+  * The thesis: Tyler Robinson did not act alone. An intelligence service
+    was involved. These laws force the truth out.
+
+==========================================================
+STAGE 2 -- WRITE THE TWEET TO {OUTPUT_FILE}
+==========================================================
+
+* Output file name MUST be {OUTPUT_FILE}
+  (same filename as this prompt with the "p_" prefix dropped).
+* The tweet is a single piece of writing about Law 4 -- not a generic
+  four-law summary.
+
+----------- THE FIRST 40 WORDS (CRITICAL) -----------
+
+* The first 40 words must perfectly catch attention and explain the stakes.
+* Start with Charlie Kirk.
+* State up-front that four federal laws are being released to force legal
+  disclosure of the truth about his death.
+* The 40 words must:
+  * Anchor the reader in the Charlie Kirk case.
+  * Establish that there are FOUR laws being released.
+  * Make clear the purpose is forced legal disclosure.
+  * Lead the reader straight into the Law 4 explanation.
+
+----------- THE NEXT 200 WORDS (NEXT CRITICAL) -----------
+
+* The next ~200 words must deliver what the reader expects after the hook.
+* Focus the body on Law 4 specifically.
+* You may make ONE brief reference that Law 4 is part of a cluster of four
+  laws -- but the body is about Law 4 alone.
+* Educate a reader who is not ramped up on this investigation:
+  * What Law 4 actually does (embeds named citizen investigators inside
+    the FBI and the Intelligence Community).
+  * Why this model works where prior disclosure laws (JFK, Epstein) failed.
+  * Who the trusted investigators are (a few representative names).
+  * Why it is structurally impossible for the agencies to bury findings
+    when 32 independent teams (16 FBI + 16 IC) are embedded inside them.
+* Quality bar: every sentence earns its place. No fluff. No throat-clearing.
+
+----------- THE BULLET LIST (AFTER THE BODY) -----------
+
+* After the 200-word body, the tweet continues with an asterisk bullet list
+  of the law's key points.
+* Sort the bullets by what a non-ramped-up audience will want to learn
+  about Law 4 FIRST -- highest-impact first, supporting detail later.
+* Bullet length rules (apply strictly):
+  * 7 words or less = ideal
+  * 14 words or less = acceptable
+  * 21 words = approaching too much, avoid
+* Use a separate bullet for each distinct point. Do not pack multiple
+  points into one bullet.
+* Suggested point categories to draw from (pick the strongest, in
+  audience-priority order):
+  * Named citizen investigators with full access
+  * Embedded inside FBI + U.S. Intelligence
+  * 32 independent teams (16 FBI, 16 IC)
+  * Immediate TOP SECRET / SCI clearances
+  * Independent budgets, independent counsel
+  * Authority to publicly release findings
+  * Whistleblower bounty -- minimum $1,000,000 for foreign intel leads
+  * No presidential override allowed
+  * Cannot be terminated by any government official
+  * 90-day public reports on each disclosure item
+  * Up to 15 years prison for interference
+  * Government employees can volunteer secretly, bypassing chain of command
+
+----------- TONE AND VOICE -----------
+
+* Plain, direct, no jargon. Written for citizens, not lawyers.
+* Defamation-safe language throughout: never state as fact that any living
+  person committed a crime. Use "allegedly", "reportedly", "evidence
+  suggests" where claims about individuals are made.
+* The tweet may run longer than a single 280-character X post -- it is
+  designed for a thread or a long-form X post. Write it as one continuous
+  piece of copy.
+
+==========================================================
+OUTPUT
+==========================================================
+
+* Write the finished tweet to {OUTPUT_FILE} ONLY.
+* Do not modify {LAW_4_FILE}, {BACKGROUND_FILE}, or any law file.
+* Do not create any other output file.
+* Confirm at the end which file was written and the final word count of:
+  * the opening 40 words
+  * the body
+  * the bullet list
+
+Output to stdout "============================================="
+Output to stdout "Wrote tweet to {OUTPUT_FILE}"
+Output to stdout "============================================="
