@@ -1,18 +1,18 @@
 
 ROOT_DIR dir is ~/BGit/Bryan_git/charlie-kirk/laws
 
-LAW_1_DIR dir is {ROOT_DIR}/1_DoJ_FBI
+LAW_3_DIR dir is {ROOT_DIR}/3_Require_to_Investigate
 
-LAW_1_FILE is file {LAW_1_DIR}/Law_1_DoJ_FBI.md
+LAW_3_FILE is file {LAW_3_DIR}/Law_3_Require_to_Investigate.md
 
-THIS_DIR dir is {LAW_1_DIR}/tweet
+THIS_DIR dir is {LAW_3_DIR}/tweet
 
 BACKGROUND_FILE is file {ROOT_DIR}/4_Trusted_Investigations/tweet/background.txt
 
-OUTPUT_FILE is file {THIS_DIR}/tweet_num_1.txt
+OUTPUT_FILE is file {THIS_DIR}/tweet_num_3.txt
 
-FOCUS_LAW is Law 1 = "Force the FBI to Open Its Files"
-   (the DoJ/FBI Forced Disclosure Act)
+FOCUS_LAW is Law 3 = "Force Real Investigations"
+   (the Mandatory Investigation Act)
 
 THE_FOUR_LAWS are:
         Law 1 = Force the FBI to Open Its Files (DoJ/FBI Forced Disclosure Act)
@@ -30,17 +30,33 @@ STAGE 1 -- READ THE FOUR LAWS RECURSIVELY
         {ROOT_DIR}/2_US_Intel/
         {ROOT_DIR}/3_Require_to_Investigate/
         {ROOT_DIR}/4_Trusted_Investigations/
-* Read {LAW_1_FILE} in full -- this is the law the tweet is about.
+* Read {LAW_3_FILE} in full -- this is the law the tweet is about.
 * Read {BACKGROUND_FILE} for the short framing of all four laws.
 * Read {ROOT_DIR}/README.md and {ROOT_DIR}/CLAUDE.md for project context.
 * Understand:
   * What each of the four laws does and how they differ.
-  * Why Law 1 is the foundation -- it forces DoJ, FBI, ATF, CBP, TSA, DHS,
-    FinCEN, and all federal/state/local law enforcement to disclose every
-    record tied to the Charlie Kirk investigation within 30 days.
-  * Why Law 1's enforcement teeth (criminal penalties, automatic budget
-    cuts, private right of action, no presidential override, anti-
-    embarrassment clause) are the structural answer to the JFK Records
+  * Why Law 3 is structurally different from Laws 1 and 2 -- it goes
+    beyond disclosure. Laws 1 and 2 force agencies to release existing
+    records. Law 3 forces them to actually CONDUCT a thorough, good-faith
+    investigation. Disclosure alone is not enough if no one investigates
+    the leads.
+  * Why Law 3 mandates a dedicated FBI team of at least 20 agents, a
+    $10 million independent budget, and a lead agent with no prior case
+    involvement.
+  * Why Law 3 requires investigation of every one of the 175 Schedule A
+    items -- including the exploding microphone theory, foreign
+    intelligence involvement, evidence of cover-up, alternative shooter
+    theories, financial connections, psychological operations,
+    pre-planning and foreknowledge, and electronic warfare.
+  * Why Law 3 establishes an independent external monitor appointed by
+    Congress with authority to direct investigators to pursue neglected
+    leads.
+  * Why the conflict-of-interest trigger matters: if evidence emerges
+    that a covered agency was itself involved, investigation authority
+    transfers to an independent congressional commission.
+  * Why Law 3's enforcement teeth (criminal penalties, automatic budget
+    cuts, no presidential override, whistleblower protections, public
+    reporting requirements) are the structural answer to the JFK Records
     Act and Epstein Files Act compliance failures.
   * The thesis: Tyler Robinson did not act alone. An intelligence service
     was involved. These laws force the truth out.
@@ -51,7 +67,7 @@ STAGE 2 -- WRITE THE TWEET TO {OUTPUT_FILE}
 
 * Output file name MUST be {OUTPUT_FILE}
   (same filename as this prompt with the "p_" prefix dropped).
-* The tweet is a single piece of writing about Law 1 -- not a generic
+* The tweet is a single piece of writing about Law 3 -- not a generic
   four-law summary.
 
 ----------- THE FIRST 40 WORDS (CRITICAL) -----------
@@ -63,28 +79,35 @@ STAGE 2 -- WRITE THE TWEET TO {OUTPUT_FILE}
 * The 40 words must:
   * Anchor the reader in the Charlie Kirk case.
   * Establish that there are FOUR laws being released.
-  * Make clear the purpose is forced legal disclosure.
-  * Lead the reader straight into the Law 1 explanation.
+  * Make clear the purpose is forced legal disclosure and real investigation.
+  * Lead the reader straight into the Law 3 explanation.
 
 ----------- THE NEXT 200 WORDS (NEXT CRITICAL) -----------
 
 * The next ~200 words must deliver what the reader expects after the hook.
-* Focus the body on Law 1 specifically.
-* You may make ONE brief reference that Law 1 is part of a cluster of four
-  laws -- but the body is about Law 1 alone.
+* Focus the body on Law 3 specifically.
+* You may make ONE brief reference that Law 3 is part of a cluster of four
+  laws -- but the body is about Law 3 alone.
 * Educate a reader who is not ramped up on this investigation:
-  * What Law 1 actually does (forces DoJ, FBI, and every law enforcement
-    agency to release every record tied to the Charlie Kirk investigation
-    within 30 days, covering all 175 Schedule A items plus a broad catch-all).
-  * Why this model works where prior disclosure laws (JFK, Epstein) failed --
-    real criminal penalties, automatic budget cuts, no presidential override,
-    private right of action for citizens, anti-embarrassment clause, records
-    preservation triggered at bill introduction.
-  * Which agencies are covered (DoJ, FBI, ATF, CBP, TSA, DHS, FinCEN, plus
-    every federal, state, and local law enforcement agency holding records).
-  * Why a disclosure-only law is structurally necessary as the foundation --
-    you cannot investigate, prosecute, or expose anything if the records
-    stay locked inside the agencies that may be implicated.
+  * What Law 3 actually does (forces the FBI and the U.S. Intelligence
+    Community to conduct a thorough, good-faith investigation of the
+    Charlie Kirk assassination -- not merely disclose existing records).
+  * The structural setup (dedicated FBI team of at least 20 agents, a
+    $10 million independent budget, lead agent with no prior case
+    involvement, mandatory investigation of every one of the 175 Schedule
+    A items).
+  * The specific categories Law 3 enumerates (exploding microphone theory,
+    foreign intelligence involvement, evidence of cover-up, alternative
+    shooter theories, financial connections, psychological operations,
+    pre-planning and foreknowledge, electronic warfare).
+  * The independent external monitor appointed by Congress with authority
+    to direct investigators to pursue neglected leads.
+  * The conflict-of-interest trigger -- if evidence emerges that a covered
+    agency was itself involved, investigation authority transfers to an
+    independent congressional commission.
+  * Why disclosure laws alone (JFK Records Act, Epstein Files Act) fail:
+    agencies release records and then nobody pursues the leads. Law 3
+    closes that gap.
 * Quality bar: every sentence earns its place. No fluff. No throat-clearing.
 
 ----------- THE BULLET LIST (AFTER THE BODY) -----------
@@ -92,7 +115,7 @@ STAGE 2 -- WRITE THE TWEET TO {OUTPUT_FILE}
 * After the 200-word body, the tweet continues with an asterisk bullet list
   of the law's key points.
 * Sort the bullets by what a non-ramped-up audience will want to learn
-  about Law 1 FIRST -- highest-impact first, supporting detail later.
+  about Law 3 FIRST -- highest-impact first, supporting detail later.
 * Bullet length rules (apply strictly):
   * 7 words or less = ideal
   * 14 words or less = acceptable
@@ -102,18 +125,21 @@ STAGE 2 -- WRITE THE TWEET TO {OUTPUT_FILE}
 * TWELVE BULLETS OR LESS. Aim for the strongest 8-12.
 * Suggested point categories to draw from (pick the strongest, in
   audience-priority order):
-  * Forces DoJ, FBI, ATF, CBP, TSA, DHS, FinCEN to disclose
-  * 30-day deadline from enactment
-  * Covers all 175 Schedule A items plus broad catch-all
+  * Goes beyond disclosure -- forces real investigation
+  * Dedicated FBI team of at least 20 agents
+  * $10 million independent budget
+  * Lead agent must have no prior case involvement
+  * Investigates every one of the 175 Schedule A items
+  * Investigates the exploding microphone theory
+  * Investigates foreign intelligence involvement
+  * Investigates evidence of cover-up
+  * Investigates pre-planning and foreknowledge
+  * Independent external monitor appointed by Congress
+  * Conflict-of-interest trigger transfers authority if agency implicated
+  * Public reports on every Schedule A item
   * No presidential override allowed
-  * Criminal penalties -- 10 years for withholding
-  * 15 years for destruction of records
-  * Automatic 25% budget cut for non-compliance
-  * Private right of action for citizens
-  * Permanent congressional review board
+  * Criminal penalties for interference
   * Whistleblower protections with treble damages
-  * Records preservation triggered at bill introduction
-  * Anti-embarrassment clause -- no reputational-harm withholding
 
 ----------- DRAFT STAGE AND FEEDBACK ASK -----------
 
@@ -148,7 +174,7 @@ OUTPUT
 ==========================================================
 
 * Write the finished tweet to {OUTPUT_FILE} ONLY.
-* Do not modify {LAW_1_FILE}, {BACKGROUND_FILE}, or any law file.
+* Do not modify {LAW_3_FILE}, {BACKGROUND_FILE}, or any law file.
 * Do not create any other output file.
 * Confirm at the end which file was written and the final word count of:
   * the opening 40 words
