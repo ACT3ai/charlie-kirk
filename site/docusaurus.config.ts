@@ -170,6 +170,14 @@ const config: Config = {
           // github.com 404 link that GSC was reporting as a broken outbound.
           editUrl: "https://github.com/ACT3ai/charlie-kirk/edit/main/site/",
           showLastUpdateTime: true,
+          exclude: [
+            "**/_*.{js,jsx,ts,tsx,md,mdx}",
+            "**/_*/**",
+            "**/*.test.{js,jsx,ts,tsx}",
+            "**/__tests__/**",
+            "**/prompts/**",
+            "**/CLAUDE.md",
+          ],
         },
         blog: false,
         pages: {
