@@ -21,29 +21,31 @@ THE_FOUR_LAWS are:
         Law 4 = Embed Citizen Investigators Inside the Agencies (Trusted Investigators Act)
 
 ==========================================================
-STAGE 1 -- READ THE FOUR LAWS RECURSIVELY
+STAGE 1 -- READ LAW 1 IN FULL
 ==========================================================
 
-* Walk up to {ROOT_DIR} and read every file under the four law directories
-  recursively into the context window:
-        {ROOT_DIR}/1_DoJ_FBI/
-        {ROOT_DIR}/2_US_Intel/
-        {ROOT_DIR}/3_Require_to_Investigate/
-        {ROOT_DIR}/4_Trusted_Investigations/
-* Read {LAW_1_FILE} in full -- this is the law the tweet is about.
-* Read {BACKGROUND_FILE} for the short framing of all four laws.
+* Read {LAW_1_FILE} in full and recursively read every file under
+  {LAW_1_DIR}/ into the context window. This is the law the tweet is about.
+* Read {BACKGROUND_FILE} ONLY for one-sentence framing context that Law 1
+  is part of a four-law cluster. Do not pull body content from the other
+  three laws into the tweet.
 * Read {ROOT_DIR}/README.md and {ROOT_DIR}/CLAUDE.md for project context.
-* Understand:
-  * What each of the four laws does and how they differ.
-  * Why Law 1 is the foundation -- it forces DoJ, FBI, ATF, CBP, TSA, DHS,
-    FinCEN, and all federal/state/local law enforcement to disclose every
-    record tied to the Charlie Kirk investigation within 30 days.
-  * Why Law 1's enforcement teeth (criminal penalties, automatic budget
+* Assume the reader has already seen the other three tweets in this series
+  and already understands the bigger picture. Their reason for opening
+  this tweet is to learn about Law 1 specifically.
+* Understand deeply:
+  * Exactly what Law 1 forces -- DoJ, FBI, ATF, CBP, TSA, DHS, FinCEN,
+    and all federal/state/local law enforcement to disclose every record
+    tied to the Charlie Kirk investigation within 30 days.
+  * The dual-track design: broad catch-all mandate plus the 175 Schedule A
+    items, so agencies cannot hide behind narrow enumeration.
+  * Law 1's enforcement teeth -- criminal penalties, automatic budget
     cuts, private right of action, no presidential override, anti-
-    embarrassment clause) are the structural answer to the JFK Records
-    Act and Epstein Files Act compliance failures.
-  * The thesis: Tyler Robinson did not act alone. An intelligence service
-    was involved. These laws force the truth out.
+    embarrassment clause, whistleblower protections, records preservation
+    triggered at bill introduction -- and why these are the structural
+    answer to the JFK Records Act and Epstein Files Act compliance failures.
+  * The thesis: Tyler Robinson did not act alone. Law 1 forces the records
+    out of the agencies that hold the proof.
 
 ==========================================================
 STAGE 2 -- WRITE THE TWEET TO {OUTPUT_FILE}
@@ -56,23 +58,31 @@ STAGE 2 -- WRITE THE TWEET TO {OUTPUT_FILE}
 
 ----------- THE FIRST 40 WORDS (CRITICAL) -----------
 
-* The first 40 words must perfectly catch attention and explain the stakes.
-* Start with Charlie Kirk.
-* State up-front that four federal laws are being released to force legal
-  disclosure of the truth about his death.
+* The first 40 words must perfectly catch attention and explain the stakes
+  of LAW 1 specifically.
+* Start with Charlie Kirk and pivot straight into what Law 1 forces.
+* Do NOT introduce all four laws here. This is not a generic intro post.
 * The 40 words must:
   * Anchor the reader in the Charlie Kirk case.
-  * Establish that there are FOUR laws being released.
-  * Make clear the purpose is forced legal disclosure.
-  * Lead the reader straight into the Law 1 explanation.
+  * Name Law 1 -- the DoJ/FBI Forced Disclosure Act -- and what it forces.
+  * Make clear the purpose is forced legal disclosure by DoJ, FBI, and
+    every law enforcement agency holding records.
+  * Pull the reader straight into the Law 1 body. No detour into Laws 2-4.
+
+----------- ONE-SENTENCE FOUR-LAW REFERENCE -----------
+
+* Between the 40-word hook and the 200-word body, include exactly ONE
+  sentence noting that Law 1 is the first of four laws in this series.
+* That one sentence is the entire scope of the four-law framing in this
+  tweet. Do not describe Laws 2, 3, or 4 anywhere else in the tweet.
+* The reader has already read the other tweets in this series. They do
+  not need a recap.
 
 ----------- THE NEXT 200 WORDS (NEXT CRITICAL) -----------
 
 * The next ~200 words must deliver what the reader expects after the hook.
-* Focus the body on Law 1 specifically.
-* You may make ONE brief reference that Law 1 is part of a cluster of four
-  laws -- but the body is about Law 1 alone.
-* Educate a reader who is not ramped up on this investigation:
+* 100% focused on Law 1. Do not describe what Laws 2, 3, or 4 do.
+* Educate a reader who wants to understand THIS law:
   * What Law 1 actually does (forces DoJ, FBI, and every law enforcement
     agency to release every record tied to the Charlie Kirk investigation
     within 30 days, covering all 175 Schedule A items plus a broad catch-all).
@@ -86,13 +96,16 @@ STAGE 2 -- WRITE THE TWEET TO {OUTPUT_FILE}
     you cannot investigate, prosecute, or expose anything if the records
     stay locked inside the agencies that may be implicated.
 * Quality bar: every sentence earns its place. No fluff. No throat-clearing.
+* No comparisons to or descriptions of the other three laws in this section.
 
 ----------- THE BULLET LIST (AFTER THE BODY) -----------
 
 * After the 200-word body, the tweet continues with an asterisk bullet list
-  of the law's key points.
-* Sort the bullets by what a non-ramped-up audience will want to learn
-  about Law 1 FIRST -- highest-impact first, supporting detail later.
+  of LAW 1's key points only.
+* Every bullet is about Law 1. Do not include bullets describing Laws 2,
+  3, or 4.
+* Sort the bullets by what the reader will want to learn about Law 1
+  FIRST -- highest-impact first, supporting detail later.
 * Bullet length rules (apply strictly):
   * 7 words or less = ideal
   * 14 words or less = acceptable
