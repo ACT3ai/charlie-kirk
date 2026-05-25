@@ -46,17 +46,12 @@ const config: Config = {
     locales: ["en"],
   },
 
-  // Global head tags for SEO: canonical URL, language, JSON-LD structured data
-  // (Organization + WebSite), and rich social cards. Per-page descriptions are
-  // set via frontmatter and override these defaults.
+  // Global head tags for SEO: language, JSON-LD structured data (Organization +
+  // WebSite), and rich social cards. Per-page descriptions are set via
+  // frontmatter and override these defaults. Canonical URLs are emitted
+  // per-page by Docusaurus automatically — never add a site-wide canonical
+  // here, or every page will canonicalize to the homepage and be deindexed.
   headTags: [
-    {
-      tagName: "link",
-      attributes: {
-        rel: "canonical",
-        href: siteUrl,
-      },
-    },
     {
       tagName: "meta",
       attributes: {
