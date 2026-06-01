@@ -109,7 +109,7 @@ const config: Config = {
         "@type": "Organization",
         name: "ACT 3 AI, Inc.",
         url: siteUrl,
-        logo: `${siteUrl}/img/logo.svg`,
+        logo: `${siteUrl}/img/Header_Charlie.jpeg`,
       }),
     },
   ],
@@ -258,7 +258,7 @@ const config: Config = {
       title: "Who Assassinated Charlie Kirk",
       logo: {
         alt: "Who Assassinated Charlie Kirk - investigation site logo",
-        src: "img/logo.svg",
+        src: "img/Header_Charlie.jpeg",
       },
       items: [
         { to: "/Fix/overview", label: "Fix Laws", position: "left" },
