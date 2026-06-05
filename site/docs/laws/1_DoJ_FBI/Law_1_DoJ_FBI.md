@@ -163,7 +163,7 @@ The Congress finds the following:
    17. All records of witness intimidation including fake therapy sessions and witness suppression (Items #180-#182)
    18. All records related to Brian Harpole (member of Kirk's security detail with foreign security service background) (Item #183)
    19. All records related to hospital routing decisions and FBI blocking a surgeon (Items #183-#186)
-   20. All TPUSA financial records including shell company payments and post-assassination board actions (Items #186-#188)
+   20. All TPUSA financial records, including payments to entities alleged to be shell companies and post-assassination board actions, sufficient to permit investigators to determine whether any financial irregularities or possible fraud occurred (Items #186-#188)
    21. All records from Mosaic Pro Events, the Rode Wireless PRO microphone audio, and Mikey McCoy's mic-up video (Items #188-#191)
    22. All records related to Butch Hibbs at UVU and the Heber City to Nashville flight on AES delivery day (Items #191-#193)
    23. All records of the FBI RAV4 near Robinson and FBI direction of the re-search that located the weapon (Items #193-#195)
@@ -221,7 +221,7 @@ Application Notes:
 - [Witness Intimidation](#witness-intimidation-180-181) (#181–#182)
 - [Security Detail & Foreign Connections](#security-detail--foreign-connections-182) (#183)
 - [Medical & Hospital Records](#medical--hospital-records-183-185) (#184–#186)
-- [TPUSA Financial Fraud](#tpusa-financial-fraud-186-187) (#187–#188)
+- [TPUSA Financial Irregularities or Possible Fraud](#tpusa-financial-irregularities-or-possible-fraud-187-188) (#187–#188)
 - [TPUSA Employee and Contractor Unusual Payments](#tpusa-employee-and-contractor-unusual-payments-188) (#189)
 - [Mosaic Pro Events / AV Equipment](#mosaic-pro-events--av-equipment-189-191) (#190–#192)
 - [Butch Hibbs & Exploding Microphone](#butch-hibbs--exploding-microphone-192-193) (#193–#194)
@@ -358,7 +358,7 @@ Each item in Schedule A is individually mandated for complete disclosure. Partia
 
 * #52: Business Deal Threat to Kirk: Each covered agency shall produce all records relating to any business opportunity discussed with Charlie Kirk from September 1–10, 2025, including allegations that PERSON_3_REDACTED lost $2M when Charlie turned down a deal, the identity of the deal and who offered it, factors Kirk found problematic, and whether Kirk said "they will kill me tomorrow" in connection with the call. Each covered agency shall also produce all records relating to any financial pressure, inducement, or threat connected to business dealings with Kirk in 2025.
 
-* #53: TPUSA Financial Audit by Kirk: Each covered agency shall produce all records relating to Charlie Kirk's request for a DOGE-equivalent audit inside TPUSA, as found in FBI investigation files, and what financial irregularities were found. Each covered agency shall also produce all records relating to any financial misconduct, mismanagement, or irregular transactions at TPUSA discovered during any investigation.
+* #53: TPUSA Financial Audit by Kirk: Each covered agency shall produce all records relating to Charlie Kirk's reported request for a DOGE-equivalent audit inside TPUSA, as found in FBI investigation files, and what financial matters or possible irregularities, if any, were identified during that review. Each covered agency shall also produce all records relating to any alleged or suspected financial misconduct, mismanagement, or irregular transactions at TPUSA that have been the subject of any investigation or inquiry. Nothing in this item shall be construed as a finding or allegation that TPUSA or any person associated with TPUSA engaged in fraud or any other unlawful conduct; the purpose is solely to permit investigators to determine whether any such matters exist.
 
 * #54: TPUSA Leadership Foreign Intel Contact: Each covered agency shall produce all records relating to any communication or meetings between TPUSA managers, executives, or board members with U.S. or foreign intelligence within 12 months before September 11, 2025. Each covered agency shall also produce all records relating to any intelligence service contact with or interest in any TPUSA leadership figure at any time.
 
@@ -714,11 +714,13 @@ Each item in Schedule A is individually mandated for complete disclosure. Partia
 
 * #186: Glass or Plastic Fragments in Transport: Each covered agency shall produce all forensic reports and evidence collection records related to glass or plastic fragments found on the ground near or in the car used to transport Charlie Kirk to the hospital. Each covered agency shall also produce origin analysis of these fragments and whether they are consistent with an exploding device.
 
-### TPUSA Financial Fraud (#187–#188)
+### TPUSA Financial Irregularities or Possible Fraud (#187–#188)
 
-* #187: TPUSA Shell Company Payments: Each covered agency shall produce all financial records, contracts, and communications related to payments by TPUSA to Resource One (DBA for Moore DM Group, a $700M political direct mail conglomerate) — approximately $9M+ paid while TPUSA reported only $1.35M for printing — and Clocktower LLC (dissolved 2022) — $999K for a "research project" with no public deliverables. Each covered agency shall also produce all records of connections to Jake Hoffman, 1Ten LLC, and fake elector schemes, and all records of Erika Kirk's mother's appointment to and service on the TPUSA board.
+The items in this subsection do not allege that TPUSA, Erika Kirk, or any other person or entity has committed fraud or any other unlawful conduct. Their purpose is solely to enable investigators to examine financial records and determine whether any irregularities or possible fraud may exist that warrant further inquiry.
 
-* #188: TPUSA Board Actions Post-Assassination: Each covered agency shall produce all records of TPUSA board meetings, votes, communications, and negotiations between September 10, 2025 (Kirk's death) and September 18, 2025 (Erika Kirk's announcement as CEO). Each covered agency shall produce all records and video documenting the demeanor and conduct of Charlie Kirk's close associates, including Erika Kirk, immediately after the event. Each covered agency shall also produce all records relating to the 8-day gap before Erika's TPUSA CEO announcement, all negotiations with donors, board members, and foreign interests during that period, and all records related to Erika Kirk's speech referencing "evil Do-ERs" (plural) approximately 55 hours after Charlie Kirk's death.
+* #187: TPUSA Payments to Entities Alleged to Be Shell Companies: Each covered agency shall produce all financial records, contracts, and communications related to payments by TPUSA to Resource One (DBA for Moore DM Group, a $700M political direct mail conglomerate) — approximately $9M+ reportedly paid while TPUSA reported only $1.35M for printing — and Clocktower LLC (dissolved 2022) — approximately $999K reportedly paid for a "research project" with no public deliverables. Each covered agency shall also produce all records of any connections to Jake Hoffman, 1Ten LLC, and any alleged fake-elector matters, and all records of Erika Kirk's mother's appointment to and service on the TPUSA board. This item makes no finding or allegation that any payment, entity, or person was involved in fraud or other unlawful conduct; the purpose is solely to allow investigators to determine whether any possible financial irregularities exist.
+
+* #188: TPUSA Board Actions Post-Assassination: Each covered agency shall produce all records of TPUSA board meetings, votes, communications, and any negotiations between September 10, 2025 (Kirk's death) and September 18, 2025 (Erika Kirk's announcement as CEO). Each covered agency shall produce all records and video documenting the publicly observable actions, statements, and demeanor of Charlie Kirk's close associates, including Erika Kirk, in the period immediately after the event. Each covered agency shall also produce all records relating to the approximately 8-day period before Erika Kirk's TPUSA CEO announcement, any communications or negotiations with donors, board members, or foreign-connected parties during that period, and all records related to Erika Kirk's speech referencing "evil Do-ERs" (plural) approximately 55 hours after Charlie Kirk's death. This item makes no finding or allegation that Erika Kirk or any other person engaged in any wrongdoing; the purpose is solely to enable investigators to develop a complete factual record.
 
 ### TPUSA Employee and Contractor Unusual Payments (#189)
 
