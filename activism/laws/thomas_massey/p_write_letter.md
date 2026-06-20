@@ -9,9 +9,12 @@ ENVELOPES_FILE is file {WORK_DIR}/envelops.yaml
 EMAILS_DIR is directory {WORK_DIR}/emails
 
 AUTHOR is Bryan Starbuck
+AUTHOR_PHONE is 425-949-6801
+AUTHOR_EMAIL is Bryan@TheStarbucks.com
+AUTHOR_ADDRESS is 16430 NE 50th, Redmond, WA 98052
 RECIPIENT is Representative Thomas Massie
-CAMPAIGN_SITE is https://whoassassinatedcharliekirk.com
-FIX_OVERVIEW is https://whoassassinatedcharliekirk.com/Fix/overview
+CAMPAIGN_SITE is https://WhoAssassinatedCharlieKirk.com
+FIX_OVERVIEW is https://WhoAssassinatedCharlieKirk.com/Fix/overview
 YOUTUBE_LINK is https://www.youtube.com/watch?v=1RbDMiEReys
 
 ============================
@@ -89,19 +92,28 @@ Open items noted: N
 STAGE 2 — PLAN THE LETTER
 ============================
 
-Decide the letter's structure before writing. A personal letter, top to
-bottom, roughly:
+Decide the letter's structure before writing. READ APPENDIX A (WRITING
+PRIORITIES & ORDERING) FIRST and follow it — it governs what leads and what
+is deferred. A personal letter, top to bottom, roughly:
 
-  1. Sender block + date (top-left, mailing-letter format).
-  2. Recipient block (Rep. Thomas Massie + office address).
+  1. Date only at the top (mailing-letter format). Do NOT put either address
+     block at the top — both the sender's return address and the recipient's
+     office address go at the BOTTOM of the letter (see parts 12-13 below and
+     APPENDIX A, rule A8). Do NOT headline the campaign/website at the top.
+  2. (No recipient block at the top — moved to the bottom.)
   3. Salutation ("Dear Representative Massie,").
-  4. Opening — who I am and why I am writing (AUTHOR_INTRO), kept short
-     and credible.
+  4. Opening — get straight to the point (APPENDIX A): in the FIRST SENTENCE
+     OR TWO, make it unmistakable that I have already WRITTEN four Charlie
+     Kirk laws and that I am asking him to recommend / pass them (or at least
+     propose them). State plainly that the laws are already drafted — he can
+     read them as-is and upgrade them, but the writing is done. NO author
+     biography and NO website ownership in the opening.
   5. Why him — the FRAMING_TONE: betrayed by election fraud, one of the
-     last uncorrupted, fights for the people, not controlled by a puppet
-     master. Honest and serious, not flattering.
-  6. The ask — GOAL_OF_LETTER: champion/sponsor the four laws, or at
-     minimum propose them.
+     last uncorrupted, fights for the people, and is not a controlled
+     politician. Honest and serious, not flattering. (Do NOT use the phrase
+     "puppet master" — see APPENDIX A.)
+  6. The ask in full — GOAL_OF_LETTER: champion/sponsor the four laws, or
+     at minimum propose them.
   7. The forcing-function argument — FORCING_FUNCTION: proposing the laws
      puts every member on record, separates honest from corrupt even
      inside the Republican party.
@@ -110,9 +122,19 @@ bottom, roughly:
      disclosure approach.
   9. The AI tip — THE_AI_TIP: he or his staff can run ChatGPT passes over
      the law text to pressure-test it and build/refine the tiers fast.
- 10. My offer — THE_OFFER: phone calls, answer anything, do the work,
-     help navigate the legislative process and drafting.
- 11. Close — earnest, patriotic sign-off and signature block for {AUTHOR}.
+ 10. Who I am + my offer (placed LATE, per APPENDIX A) — only now introduce
+     AUTHOR (AUTHOR_INTRO), including that I own and run the "Who
+     Assassinated Charlie Kirk" effort and website ({CAMPAIGN_SITE}), and
+     state THE_OFFER: phone calls, answer anything, do the work, help
+     navigate the legislative process and drafting.
+ 11. Close — earnest, patriotic sign-off and signature block for {AUTHOR}
+     (name, {AUTHOR_PHONE}, {AUTHOR_EMAIL}, CamelCase website).
+ 12. Sender's return address block — {AUTHOR} + {AUTHOR_ADDRESS}, placed at
+     the BOTTOM after the signature (per APPENDIX A, rule A8).
+ 13. Recipient address block — "The Honorable Thomas Massie" + the office
+     mailing address, also at the BOTTOM (below or beside the return
+     address), so the page can be folded into a window envelope. Both
+     address blocks live at the bottom, never the top.
 
 Keep it to roughly one to two pages when printed. Every paragraph earns
 its place. No filler.
@@ -124,13 +146,20 @@ STAGE 3 — WRITE THE LETTER
 ============================
 
 Write {LETTER_FILE} following the STAGE 2 plan and satisfying every item
-in CHECKLIST.
+in CHECKLIST. APPLY APPENDIX A (WRITING PRIORITIES & ORDERING): lead with
+the ask to pass/propose the four laws; keep the author's identity and the
+fact that {AUTHOR} owns/runs the campaign website out of the opening and
+place them toward the close.
 
 Required content (all must appear):
   * Addressed to {RECIPIENT}.
   * Framing: betrayed by election fraud; one of the last uncorrupted;
-    fights for the people; not controlled by a puppet master.
+    fights for the people; is not a controlled politician (do NOT use the
+    phrase "puppet master").
   * Clear ASK: champion/sponsor the four laws — or at least propose them.
+  * Authorship stated up front (first sentence or two, per APPENDIX A):
+    {AUTHOR} has already WRITTEN the four laws; they are drafted and ready
+    to read; he can adopt them as-is or upgrade them — the writing is done.
   * Forcing-function rationale, stated explicitly.
   * Introduces {AUTHOR}: technology/engineering background, leading the
     "Who Assassinated Charlie Kirk" effort, heavy citizen investigator of
@@ -160,6 +189,14 @@ blocks on a missing fact:
   * Bryan's background line: a brief, credible technology/engineering
     descriptor only. Do not invent specific employers, titles, dates, or
     credentials that are not stated in {NEEDS_FILE}.
+  * Author signature/contact: these ARE known — do NOT placeholder them.
+    Sign the letter and fill the signature block with:
+        {AUTHOR}
+        {AUTHOR_PHONE}
+        {AUTHOR_EMAIL}
+    Use {AUTHOR_EMAIL} for the email From: line as well (STAGE 9). The
+    return MAILING address is also known ({AUTHOR_ADDRESS}) — fill it in at
+    the BOTTOM of the letter (APPENDIX A, rule A8); do not placeholder it.
   * Massie's office address: insert a clearly marked placeholder block,
     e.g.:
         [Rep. Thomas Massie — confirm current office mailing address]
@@ -191,9 +228,13 @@ is satisfied. Walk the list literally, one box at a time:
 
   [ ] Addressed to Rep. Thomas Massie.
   [ ] Framing present (election fraud betrayal; uncorrupted; fights for
-      the people; no puppet master).
+      the people; not a controlled politician — phrase "puppet master" NOT used).
   [ ] Clear ASK present (champion/sponsor — or at least propose).
+  [ ] Authorship stated in the first sentence or two (Bryan wrote the four
+      laws; already drafted; he can adopt as-is or upgrade) — APPENDIX A.
   [ ] Forcing-function rationale present.
+  [ ] Ordering correct (APPENDIX A): opening leads with the ask; author
+      intro and website ownership appear near the close, NOT the opening.
   [ ] Bryan introduced (background + leading campaign + investigator).
   [ ] Laws link present: {FIX_OVERVIEW}
   [ ] YouTube link present: {YOUTUBE_LINK}
@@ -583,8 +624,20 @@ so each person/title is emailed exactly once.
 CONTENT — adapt the letter into email prose, a little shorter than the
 printed letter, KEEPING every required element from STAGE 3 (the four laws
 by name, the {FIX_OVERVIEW} link, the {YOUTUBE_LINK} video, {AUTHOR}'s
-intro, the offer, the ChatGPT tip, the forcing-function argument). Tailor
-the ask to the recipient's role:
+intro, the offer, the ChatGPT tip, the forcing-function argument).
+
+ORDERING — FOLLOW APPENDIX A (WRITING PRIORITIES & ORDERING). Email is the
+strictest case: get to the point in the FIRST line or two — make clear
+{AUTHOR} has already WRITTEN four Charlie Kirk laws and recommend he pass
+(or at least propose) them (he can read them as-is or upgrade them) — then
+the why-him and forcing-function logic, then the laws + links + video +
+ChatGPT tip. Put WHO {AUTHOR} IS,
+and specifically that {AUTHOR} owns and runs the "Who Assassinated Charlie
+Kirk" website ({CAMPAIGN_SITE}), TOWARD THE END of the email, with the
+offer — never in the opening. The opening must not mention the website,
+the campaign, or self-credentials.
+
+Tailor the ask to the recipient's role:
   * To the Congressman: the full personal ask — champion/sponsor the four
     laws, or at minimum propose them.
   * To a Chief of Staff / Legislative Director: ask them to put this in
@@ -597,7 +650,7 @@ the ask to the recipient's role:
 FILE FORMAT — a valid .eml (RFC-822-style) file per person:
 
     To: "<Name or Title>" <email-if-verified-else-leave-blank>
-    From: Bryan Starbuck <fill before sending>
+    From: {AUTHOR} <{AUTHOR_EMAIL}>
     Subject: <specific, serious subject tailored to the person>
     X-Intended-Recipient: <Name and/or Title, and the office/campaign>
     X-Note: <only when no verified email — say the address is a placeholder
@@ -676,6 +729,11 @@ CONTENT RULES
     {FIX_OVERVIEW}
     {YOUTUBE_LINK}
     {CAMPAIGN_SITE}
+* APPENDIX A (WRITING PRIORITIES & ORDERING) GOVERNS ALL PROSE. Read it
+  before writing the letter (STAGE 3) and the emails (STAGE 9), and obey it:
+  ask first, author/website identity last, no "puppet master", state the
+  laws are already written, and the domain is always displayed in CamelCase
+  (WhoAssassinatedCharlieKirk.com).
 * No emojis. No decorative formatting. Plain, serious letter formatting.
 * This prompt has FOUR outputs, all regenerated each run:
     - {LETTER_FILE}, written from {NEEDS_FILE}.
@@ -693,3 +751,79 @@ CONTENT RULES
 * Every .eml is the email version of the same letter and must still satisfy
   every CHECKLIST item from {NEEDS_FILE}, tailored to its recipient's role.
 * .eml filenames use underscores only — no spaces or special characters.
+
+============================
+APPENDIX A — WRITING PRIORITIES & ORDERING
+============================
+
+This appendix is the authoritative guide for HOW the letter ({LETTER_FILE})
+and the emails ({EMAILS_DIR}/*.eml) are written. Where it conflicts with the
+generic ordering in STAGE 2, this appendix wins. Apply every rule below.
+
+A1. GET TO THE POINT FAST — LEAD WITH THE ASK.
+  * The opening must move immediately to the recommendation. Do not warm up
+    with a biography, a campaign pitch, or credentials.
+  * In the FIRST SENTENCE OR TWO, two things must be unmistakable:
+      (a) {AUTHOR} has already WRITTEN four Charlie Kirk laws, and
+      (b) {AUTHOR} is asking Massie to recommend / pass them (or at minimum
+          formally propose them).
+  * Everything else in the letter supports that opening ask.
+
+A2. THE LAWS ARE ALREADY WRITTEN.
+  * Make clear the four laws are DRAFTED and READY TO READ — he is not being
+    asked to write them from scratch. {AUTHOR} wrote them.
+  * He can adopt them as-is OR upgrade/refine them. Either way the heavy
+    drafting is done; the lift for him is small. Say this plainly and early.
+
+A3. AUTHOR IDENTITY & WEBSITE OWNERSHIP GO LAST — NOT FIRST.
+  * Keep who {AUTHOR} is OUT of the opening. The fact that {AUTHOR} owns and
+    runs the "Who Assassinated Charlie Kirk" website ({CAMPAIGN_SITE}) must
+    appear TOWARD THE END (in the email, near the close with the offer).
+  * The opening must NOT mention the website, the campaign, ownership, or
+    self-credentials. Lead with the laws and the ask; introduce the author
+    afterward as the person who will help carry the work.
+  * This is strictest for the EMAIL: website ownership belongs near the end.
+
+A4. FRAMING WORDS — DO NOT SAY "PUPPET MASTER".
+  * Convey that Massie is NOT a controlled politician — he is one of the very
+    last members of Congress who is not corrupt and not controlled, who has
+    been betrayed by election fraud and still fights for the people.
+  * Express this WITHOUT the phrase "puppet master." Use plain language such
+    as "not a controlled politician" / "not controlled by anyone." The phrase
+    "puppet master" is banned from all output.
+
+A5. DOMAIN NAME — ALWAYS DISPLAY IN CAMELCASE.
+  * Every time the campaign domain appears in any output (letter, emails,
+    signatures, links), capitalize the first letter of each word:
+        WhoAssassinatedCharlieKirk.com
+    (e.g. https://WhoAssassinatedCharlieKirk.com and
+     https://WhoAssassinatedCharlieKirk.com/Fix/overview).
+  * Domains are case-insensitive, so the CamelCase form resolves identically;
+    it is purely for readability. Never write the domain in all-lowercase.
+
+A6. AUTHOR CONTACT IS KNOWN — PLUG IT IN, DO NOT PLACEHOLDER.
+  * Sign every letter and email as {AUTHOR} with the real contact info:
+        Phone: {AUTHOR_PHONE}
+        Email: {AUTHOR_EMAIL}
+  * Use {AUTHOR_EMAIL} in the email From: header. Do not write
+    "fill before sending" for phone or email — those are known.
+  * Only the return MAILING street address may remain a placeholder if it is
+    not supplied.
+
+A7. TONE (unchanged, restated for completeness).
+  * Respectful, direct, patriotic, earnest. One citizen who fights for the
+    country writing to a Congressman who does the same. Never fawning, never
+    form-letter. Defamation-safe per CONTENT RULES.
+
+A8. ADDRESS BLOCKS GO AT THE BOTTOM — NOT THE TOP.
+  * The printed letter ({LETTER_FILE}) opens with only the DATE, then the
+    salutation and the body. Do NOT place any address block at the top.
+  * After the signature, at the BOTTOM of the letter, print BOTH:
+      (a) the sender's return address: {AUTHOR}, {AUTHOR_ADDRESS}, and
+      (b) the recipient's address: "The Honorable Thomas Massie" + the
+          best_for_congress office address from {INFO_FILE}.
+  * {AUTHOR_ADDRESS} is known (16430 NE 50th, Redmond, WA 98052) — fill it
+    in, do not placeholder it. Only the recipient room number carries the
+    usual confirm note.
+  * This applies to the mailed letter. Emails (.eml) have no postal address
+    blocks; they keep headers + body + signature only.
