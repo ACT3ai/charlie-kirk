@@ -85,21 +85,3 @@ To:
   U.S. House of Representatives
   2371 Rayburn House Office Building
   Washington, DC 20515
-
-
-<!--
-BEFORE MAILING — CONFIRM:
-- Sender and recipient address blocks are at the BOTTOM of this letter (per
-  the prompt's APPENDIX A, rule A8). Bryan's return address (16430 NE 50th,
-  Redmond, WA 98052), phone (425-949-6801), and email (Bryan@TheStarbucks.com)
-  are known and filled in.
-- Bryan's professional background line — currently "a technology and engineering
-  background." Replace with a more specific credible line if desired.
-- Recipient office address. Default used here is the D.C. congressional office
-  (best_for_congress in massy_info.yaml): 2371 Rayburn House Office Building,
-  Washington, DC 20515. Confirm the room number against massie.house.gov (some
-  directories still list 2453 RHOB). To mail additional copies, see the full
-  address/title list in massy_info.yaml.
-- Optional: list the four individual law deep-link URLs instead of only the
-  Fix/overview entry point (needs.txt did not supply them).
--->
