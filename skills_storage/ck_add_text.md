@@ -86,7 +86,7 @@ Key directories:
 
 CK_FILE is file {ROOT_DIR}/Charlie_Kirk.txt
 SITE_DOCS_DIR is dir {ROOT_DIR}/site/docs/
-TRANSCRIBE_JS is file ~/BGit/work/tools/Transcription/Transcribe.js
+TRANSCRIBE_JS is file ~/BGit/all/tools/Transcription/Transcribe.js
 TRANSCRIBE_CONFIG is file {ROOT_DIR}/tmp/transcribe_config.yaml
 
 
@@ -941,7 +941,7 @@ NOTE: Transcription is ON BY DEFAULT. The user does NOT need to say "transcribe.
 
 * Run the transcription:
   ```bash
-  cd "$TRANSC_TMPDIR" && node ~/BGit/work/tools/Transcription/Transcribe.js "{ROOT_DIR}/videos/{video_filename}" transcription.txt
+  cd "$TRANSC_TMPDIR" && node ~/BGit/all/tools/Transcription/Transcribe.js "{ROOT_DIR}/videos/{video_filename}" transcription.txt
   ```
 
 * Wait for completion. This may take several minutes for long videos.
