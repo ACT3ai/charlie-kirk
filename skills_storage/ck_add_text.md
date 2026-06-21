@@ -1085,7 +1085,7 @@ This step uses the Level 2 / Level 3 decisions made in Step 3.
   ```
   <div style={{float: 'right', width: '48%', maxWidth: '480px', marginLeft: '1.5rem', marginBottom: '1rem'}}>
     <img
-      src="http://127.0.0.1:8080/ipfs/{CID}"
+      src="https://ipfs.io/ipfs/{CID}"
       alt="{description}"
       style={{width: '100%', height: 'auto', aspectRatio: '{width}/{height}', borderRadius: '4px'}}
     />
@@ -1100,12 +1100,12 @@ This step uses the Level 2 / Level 3 decisions made in Step 3.
   <div style={{float: 'right', width: '48%', maxWidth: '480px', marginLeft: '1.5rem', marginBottom: '1rem'}}>
     <div style={{display: 'flex', flexWrap: 'wrap', gap: '0.5rem'}}>
       <img
-        src="http://127.0.0.1:8080/ipfs/{CID_1}"
+        src="https://ipfs.io/ipfs/{CID_1}"
         alt="{description_1}"
         style={{width: 'calc(50% - 0.25rem)', height: 'auto', aspectRatio: '{w1}/{h1}', borderRadius: '4px'}}
       />
       <img
-        src="http://127.0.0.1:8080/ipfs/{CID_2}"
+        src="https://ipfs.io/ipfs/{CID_2}"
         alt="{description_2}"
         style={{width: 'calc(50% - 0.25rem)', height: 'auto', aspectRatio: '{w2}/{h2}', borderRadius: '4px'}}
       />
@@ -1116,15 +1116,16 @@ This step uses the Level 2 / Level 3 decisions made in Step 3.
   </div>
   ```
 
-  Use local IPFS gateway first (http://127.0.0.1:8080/ipfs/{CID}).
-  Include fallback gateways as additional <source> tags for video,
-  or as a comment noting the fallback URL for images.
+  These pages go PUBLIC — always use a public IPFS gateway, never a localhost /
+  127.0.0.1 URL (a visitor's browser would try a gateway on their own machine and fail).
+  Use https://ipfs.io/ipfs/{CID} as the primary src. For video, add
+  https://dweb.link/ipfs/{CID} as a second <source> fallback; for images, note the
+  dweb.link fallback URL in a comment. The local daemon is only for pinning, not embeds.
 
 * 9e. VIDEO EMBEDDING — use half-width, floated right, with text flowing around it:
   ```
   <div style={{float: 'right', width: '48%', maxWidth: '480px', marginLeft: '1.5rem', marginBottom: '1rem'}}>
     <video controls style={{width: '100%', height: 'auto', display: 'block', borderRadius: '4px'}}>
-      <source src="http://127.0.0.1:8080/ipfs/{CID}" type="video/mp4" />
       <source src="https://ipfs.io/ipfs/{CID}" type="video/mp4" />
       <source src="https://dweb.link/ipfs/{CID}" type="video/mp4" />
       Your browser does not support the video tag.
