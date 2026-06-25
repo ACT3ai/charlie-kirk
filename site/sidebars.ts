@@ -27,7 +27,6 @@ const sidebars: SidebarsConfig = {
     {type: 'doc', id: 'People/overview', label: 'People'},
     {type: 'doc', id: 'Fix/overview', label: 'Fix Laws'},
     {type: 'doc', id: 'Motive/overview', label: 'Motive'},
-    {type: 'doc', id: 'Shooting_Locations/overview', label: 'Shooting Locations'},
     {type: 'doc', id: 'CoverUp/overview', label: 'Cover Up'},
     {type: 'doc', id: 'Influencers/overview', label: 'Influencers'},
     {type: 'doc', id: 'Media/overview', label: 'Media'},
