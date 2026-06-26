@@ -32,7 +32,7 @@ const sidebars: SidebarsConfig = {
     {type: 'doc', id: 'Media/overview', label: 'Media'},
     {type: 'doc', id: 'Videos/overview', label: 'Videos'},
     {type: 'doc', id: 'Israel/overview', label: 'Israel'},
-    {type: 'doc', id: 'Medical/overview', label: 'Autopsy & Medical'},
+    {type: 'doc', id: 'Medical/overview', label: 'Medical'},
     {type: 'doc', id: 'maps/overview', label: 'Maps'},
     {type: 'doc', id: 'US_Intelligence/overview', label: 'U.S. Intelligence'},
     {type: 'doc', id: 'Photos/overview', label: 'Photos'},
