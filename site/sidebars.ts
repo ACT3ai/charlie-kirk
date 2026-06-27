@@ -25,7 +25,6 @@ const sidebars: SidebarsConfig = {
     {type: 'doc', id: 'Tent/overview', label: 'The Tent'},
     {type: 'doc', id: 'Theories/overview', label: 'Theories'},
     {type: 'doc', id: 'Timeline/overview', label: 'Timeline'},
-    {type: 'doc', id: 'Vote/overview', label: 'Vote'},
     {type: 'doc', id: 'People/overview', label: 'People'},
     {type: 'doc', id: 'Fix/overview', label: 'Fix Laws'},
     {type: 'doc', id: 'Motive/overview', label: 'Motive'},
