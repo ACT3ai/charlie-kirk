@@ -51,6 +51,42 @@
 
 **Scope:** Establishes independent investigation teams led by Designated Trusted Investigators: **Candace Owens**, **Dave Smith**, **Joe Kent**, **Tulsi Gabbard**, **Tucker Carlson**, **Steve Bannon**, **Marjorie Taylor Greene**, **Jon Bray**, **Ian Carroll**, **Thomas Massie**, **Matt Gaetz**, **Glenn Greenwald**, **Collin Campbell**, **Baron Coleman**, **Ryan Matta**, **Bryan Starbuck**, and **Megyn Kelly**. Each receives one FBI team and one Intelligence Community team (six teams total). Full access to all records disclosed under Laws 1 and 2, plus independent investigation authority. Minimum 24-month operation. No geographic limitation.
 
+## Related Areas
 
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
 
+* [Fix the Charlie Kirk Situation](/Fix/overview)
+* [FBI](/FBI/overview)
+* [U.S. Intelligence](/US_Intelligence/overview)
 
+</div>
+<div>
+
+* [(Possible) Cover‑up](/CoverUp/overview)
+* [Proof Intel Services](/Proof_Intel_Services/overview)
+* [Your Actions Fix It](/Your_Actions_Fix_It/overview)
+
+</div>
+</div>
+
+## Related
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Charlie Kirk Assassination — Forced Disclosure](/laws/README)
+* [Law 1: Charlie Kirk Investigation - DoJ/FBI Forced Disclosure…](/laws/1_DoJ_FBI/Law_1_DoJ_FBI)
+* [Law 2: Charlie Kirk Investigation - Intelligence Services Dis…](/laws/2_US_Intel/Law_2_US_Intel)
+
+</div>
+<div>
+
+* [Law 3: Charlie Kirk Investigation - Mandatory Investigation Act](/laws/3_Require_to_Investigate/Law_3_Require_to_Investigate)
+* [Law 4: Charlie Kirk Investigation - Trusted Investigators Act](/laws/4_Trusted_Investigations/Law_4_Trusted_Investigations)
+* [Charlie Kirk Files Forced Disclosure -- Threat Analysis & Rec…](/laws/other/Worries_By_Each_4_Laws)
+
+</div>
+</div>

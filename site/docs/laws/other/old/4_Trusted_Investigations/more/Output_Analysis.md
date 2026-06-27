@@ -78,3 +78,43 @@ Six independent teams may duplicate effort.
 2. Add backup congressional appointment authority if all three investigators cannot serve
 3. Consider adding independent legal counsel funded by investigation budget (DONE in Section 2(d))
 4. Ensure investigators' Schedule A tracking is public so citizens can monitor progress
+
+## Related Areas
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Podcast Coverage](/Influencers/overview)
+* [FBI](/FBI/overview)
+* [U.S. Intelligence](/US_Intelligence/overview)
+
+</div>
+<div>
+
+* [Fix the Charlie Kirk Situation](/Fix/overview)
+* [Your Actions Fix It](/Your_Actions_Fix_It/overview)
+* [Intelligence Services](/intelligence/overview)
+
+</div>
+</div>
+
+## Related
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Law 4: Charlie Kirk Investigation - Trusted Investigators Act](/laws/other/old/4_Trusted_Investigations/Law_4_Trusted_Investigations)
+* [Human Requirements: Law 4 - Trusted Investigations](/laws/other/old/4_Trusted_Investigations/more/Human_Requirements)
+* [Notes: Law 4 - Trusted Investigations](/laws/other/old/4_Trusted_Investigations/more/Notes_4_Trusted_Investigations)
+
+</div>
+<div>
+
+* [Law 4: Charlie Kirk Investigation - Trusted Investigators Act](/laws/4_Trusted_Investigations/Law_4_Trusted_Investigations)
+* [Output Analysis: Law 4 - Trusted Investigations](/laws/4_Trusted_Investigations/more/Output_Analysis)
+* [Charlie Kirk Assassination — Forced Disclosure](/laws/README)
+
+</div>
+</div>

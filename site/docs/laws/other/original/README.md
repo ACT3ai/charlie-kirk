@@ -1254,3 +1254,43 @@ General Foreign Intel: January 1, 2023 - present
 * Targets with bullet holes found in the defendant's residence
 * Handwritten note found under keyboard stating intent to "take out Charlie Kirk" (including photograph)
 * Statements from the defendant's mother, father, and family friend about events leading to surrender
+
+## Related Areas
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [(Possible) Cover‑up](/CoverUp/overview)
+* [FBI](/FBI/overview)
+* [U.S. Intelligence](/US_Intelligence/overview)
+
+</div>
+<div>
+
+* [Proof Intel Services](/Proof_Intel_Services/overview)
+* [Government Evidence](/gov/overview)
+* [Fix the Charlie Kirk Situation](/Fix/overview)
+
+</div>
+</div>
+
+## Related
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Discovery — Charlie Kirk Assassination Investigation](/laws/Discovery/README)
+* [Charlie Kirk Assassination — Forced Disclosure](/laws/README)
+* [Charlie Kirk Files Forced Disclosure -- Summary of Four Propo…](/laws/other/old/List_Of_Laws)
+
+</div>
+<div>
+
+* [Charlie Kirk Files Forced Disclosure -- Summary of Four Propo…](/laws/other/List_Of_Laws)
+* [People Involved - Categories for Charlie Kirk Files Forced Di…](/laws/other/people)
+* [Slide 1: The Charlie Kirk Files Forced Disclosure Act](/laws/1_DoJ_FBI/slides/Law_1_Slide_Deck)
+
+</div>
+</div>

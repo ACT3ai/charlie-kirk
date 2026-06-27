@@ -310,3 +310,43 @@ The core assumption: **The U.S. government is actively covering for Israel in th
 4. **Mandatory Declassification with No National Security Blanket (CC-6, L2-1):** Automatic declassification upon enactment, prohibition on reclassification, narrow exceptions only for currently active human source identities, and a 7-day waiver deadline for classification claims. The burden is on the agency to prove grave and imminent harm, not on the public to prove the need for disclosure.
 
 5. **Redundant Independent Oversight (L3-1, L4-6):** The four-layer structure -- Law 1 review board, Law 3 investigation teams with independent oversight board, Law 4 Trusted Investigators, plus private citizens' right of action -- provides redundancy. No single point of failure can block all disclosure. This must be maintained and each layer must have independent enforcement authority.
+
+## Related Areas
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Fix the Charlie Kirk Situation](/Fix/overview)
+* [(Possible) Cover‑up](/CoverUp/overview)
+* [Government Evidence](/gov/overview)
+
+</div>
+<div>
+
+* [Proof Intel Services](/Proof_Intel_Services/overview)
+* [Legal Investigation](/legal_investigation/overview)
+* [Your Actions Fix It](/Your_Actions_Fix_It/overview)
+
+</div>
+</div>
+
+## Related
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Problems, Vulnerabilities, and Recommended Fixes — Comprehens…](/laws/other/analysis/Any_Problems)
+* [Factual Challenges — REMAINING UNFIXED ITEMS](/laws/other/analysis/Challenges)
+* [Charlie Kirk Files Forced Disclosure -- Summary of Four Propo…](/laws/other/List_Of_Laws)
+
+</div>
+<div>
+
+* [Law 1: Charlie Kirk Investigation - DoJ/FBI Forced Disclosure…](/laws/1_DoJ_FBI/Law_1_DoJ_FBI)
+* [Laws Not Complying with Charter (List_Of_Laws.md) -- Comprehe…](/laws/other/analysis/Laws_Not_Complying)
+* [Charlie Kirk Assassination — Forced Disclosure](/laws/README)
+
+</div>
+</div>

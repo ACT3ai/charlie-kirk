@@ -49,3 +49,43 @@ Previous version had no mechanism for what happens when the investigating agency
 - Special Counsel regulations: https://www.law.cornell.edu/cfr/text/28/part-600
 - Church Committee: https://www.senate.gov/about/powers-procedures/investigations/church-committee.htm
 - Charlie Kirk 175 Critical Items: https://github.com/BryanStarbuck/Charlie_Kirk_175_Critical_To_Expose
+
+## Related Areas
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [FBI](/FBI/overview)
+* [U.S. Intelligence](/US_Intelligence/overview)
+* [Intelligence Services](/intelligence/overview)
+
+</div>
+<div>
+
+* [Fix the Charlie Kirk Situation](/Fix/overview)
+* [Legal Investigation](/legal_investigation/overview)
+* [Government Evidence](/gov/overview)
+
+</div>
+</div>
+
+## Related
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Law 3: Charlie Kirk Investigation - Mandatory Investigation Act](/laws/other/old/3_Require_to_Investigate/Law_3_Require_to_Investigate)
+* [Human Requirements: Law 3 - Require Investigation](/laws/other/old/3_Require_to_Investigate/more/Human_Requirements)
+* [Output Analysis: Law 3 - Require Investigation](/laws/other/old/3_Require_to_Investigate/more/Output_Analysis)
+
+</div>
+<div>
+
+* [Law 3: Charlie Kirk Investigation - Mandatory Investigation Act](/laws/3_Require_to_Investigate/Law_3_Require_to_Investigate)
+* [Notes: Law 3 - Require Investigation](/laws/3_Require_to_Investigate/more/Notes_3_Require_to_Investigate)
+* [Charlie Kirk Assassination — Forced Disclosure](/laws/README)
+
+</div>
+</div>

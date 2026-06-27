@@ -498,3 +498,43 @@ Laws 3 and 4 now have: (1) mandatory polygraph requirements for all team members
 8. **Personnel replacement pattern investigation** — Add Schedule A item for suspicious replacement personnel (All Laws)
 9. **Physical safety for Designated Trusted Investigators** — Add U.S. Marshals protection (Law 4)
 10. **Compartmentalization for investigation teams** — Prevent single mole from compromising entire investigation (Laws 3, 4)
+
+## Related Areas
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Fix the Charlie Kirk Situation](/Fix/overview)
+* [(Possible) Cover‑up](/CoverUp/overview)
+* [Government Evidence](/gov/overview)
+
+</div>
+<div>
+
+* [Proof Intel Services](/Proof_Intel_Services/overview)
+* [Legal Investigation](/legal_investigation/overview)
+* [FBI](/FBI/overview)
+
+</div>
+</div>
+
+## Related
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Additional Disclosure Items to Consider](/laws/other/analysis/Any_more_to_Add)
+* [Problems, Vulnerabilities, and Recommended Fixes -- Comprehen…](/laws/other/analysis/Before_Any_Problems)
+* [Factual Challenges — REMAINING UNFIXED ITEMS](/laws/other/analysis/Challenges)
+
+</div>
+<div>
+
+* [Attorney Analysis: Improvements for the Four Charlie Kirk Dis…](/laws/other/analysis/Improve)
+* [Laws Not Complying with Charter (List_Of_Laws.md) -- Comprehe…](/laws/other/analysis/Laws_Not_Complying)
+* [Problems, Vulnerabilities, and Recommended Fixes — FIXED ITEMS](/laws/other/analysis/Fixed/Any_Problems)
+
+</div>
+</div>

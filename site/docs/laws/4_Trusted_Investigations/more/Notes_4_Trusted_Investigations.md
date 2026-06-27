@@ -54,3 +54,43 @@ The major improvement is that Trusted Investigators must specifically pursue the
 - 9/11 Commission: https://www.9-11commission.gov/
 - Special Counsel regulations: https://www.law.cornell.edu/cfr/text/28/part-600
 - Charlie Kirk 175 Critical Items: https://github.com/BryanStarbuck/Charlie_Kirk_175_Critical_To_Expose
+
+## Related Areas
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Fix the Charlie Kirk Situation](/Fix/overview)
+* [Your Actions Fix It](/Your_Actions_Fix_It/overview)
+* [Podcast Coverage](/Influencers/overview)
+
+</div>
+<div>
+
+* [Vote](/Vote/overview)
+* [Proof Intel Services](/Proof_Intel_Services/overview)
+* [Legal Investigation](/legal_investigation/overview)
+
+</div>
+</div>
+
+## Related
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Law 4: Charlie Kirk Investigation - Trusted Investigators Act](/laws/4_Trusted_Investigations/Law_4_Trusted_Investigations)
+* [Human Requirements: Law 4 - Trusted Investigations](/laws/4_Trusted_Investigations/more/Human_Requirements)
+* [Output Analysis: Law 4 - Trusted Investigations](/laws/4_Trusted_Investigations/more/Output_Analysis)
+
+</div>
+<div>
+
+* [Notes: Law 1 - DoJ/FBI Forced Disclosure](/laws/1_DoJ_FBI/more/Notes_1_DoJ_FBI)
+* [Notes: Law 2 - US Intelligence Services Forced Disclosure](/laws/2_US_Intel/more/Notes_2_US_Intel)
+* [Notes: Law 3 - Require Investigation](/laws/3_Require_to_Investigate/more/Notes_3_Require_to_Investigate)
+
+</div>
+</div>

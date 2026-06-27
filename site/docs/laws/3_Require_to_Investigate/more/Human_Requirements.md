@@ -20,3 +20,43 @@ Laws 1 and 2 force disclosure of existing records. This law forces agencies to a
 [Back to README](../../README.md) | [Law Text](Law_3_Require_to_Investigate.md) | [Legal Notes](Notes_3_Require_to_Investigate.md) | [Output Analysis](Output_Analysis.md)
 
 See also: [Law 1 Requirements](../1_DoJ_FBI/Human_Requirements.md) | [Law 2 Requirements](../2_US_Intel/Human_Requirements.md) (disclosure counterparts) | [Law 4 Requirements](../4_Trusted_Investigations/Human_Requirements.md) (trusted oversight)
+
+## Related Areas
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Fix the Charlie Kirk Situation](/Fix/overview)
+* [Legal Investigation](/legal_investigation/overview)
+* [(Possible) Cover‑up](/CoverUp/overview)
+
+</div>
+<div>
+
+* [Government Evidence](/gov/overview)
+* [Your Actions Fix It](/Your_Actions_Fix_It/overview)
+* [Government Organizations](/government_organizations/overview)
+
+</div>
+</div>
+
+## Related
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Law 3: Charlie Kirk Investigation - Mandatory Investigation Act](/laws/3_Require_to_Investigate/Law_3_Require_to_Investigate)
+* [Notes: Law 3 - Require Investigation](/laws/3_Require_to_Investigate/more/Notes_3_Require_to_Investigate)
+* [Output Analysis: Law 3 - Require Investigation](/laws/3_Require_to_Investigate/more/Output_Analysis)
+
+</div>
+<div>
+
+* [Human Requirements: Law 1 - DoJ/FBI Forced Disclosure](/laws/1_DoJ_FBI/more/Human_Requirements)
+* [Human Requirements: Law 2 - US Intelligence Services Forced D…](/laws/2_US_Intel/more/Human_Requirements)
+* [Human Requirements: Law 4 - Trusted Investigations](/laws/4_Trusted_Investigations/more/Human_Requirements)
+
+</div>
+</div>

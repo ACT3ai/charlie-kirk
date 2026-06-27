@@ -54,3 +54,43 @@ The major improvement is that Trusted Investigators must specifically pursue the
 - 9/11 Commission: https://www.9-11commission.gov/
 - Special Counsel regulations: https://www.law.cornell.edu/cfr/text/28/part-600
 - Charlie Kirk 175 Critical Items: https://github.com/BryanStarbuck/Charlie_Kirk_175_Critical_To_Expose
+
+## Related Areas
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Podcast Coverage](/Influencers/overview)
+* [FBI](/FBI/overview)
+* [U.S. Intelligence](/US_Intelligence/overview)
+
+</div>
+<div>
+
+* [Fix the Charlie Kirk Situation](/Fix/overview)
+* [Your Actions Fix It](/Your_Actions_Fix_It/overview)
+* [Intelligence Services](/intelligence/overview)
+
+</div>
+</div>
+
+## Related
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Law 4: Charlie Kirk Investigation - Trusted Investigators Act](/laws/other/old/4_Trusted_Investigations/Law_4_Trusted_Investigations)
+* [Human Requirements: Law 4 - Trusted Investigations](/laws/other/old/4_Trusted_Investigations/more/Human_Requirements)
+* [Output Analysis: Law 4 - Trusted Investigations](/laws/other/old/4_Trusted_Investigations/more/Output_Analysis)
+
+</div>
+<div>
+
+* [Law 4: Charlie Kirk Investigation - Trusted Investigators Act](/laws/4_Trusted_Investigations/Law_4_Trusted_Investigations)
+* [Notes: Law 4 - Trusted Investigations](/laws/4_Trusted_Investigations/more/Notes_4_Trusted_Investigations)
+* [Charlie Kirk Assassination — Forced Disclosure](/laws/README)
+
+</div>
+</div>

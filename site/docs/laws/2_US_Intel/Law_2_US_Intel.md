@@ -1318,3 +1318,42 @@ Peer laws: [Law 1 - DoJ/FBI Disclosure](../1_DoJ_FBI/Law_1_DoJ_FBI.md) | [Law 3 
 
 Precedent: [Epstein Files Transparency Act](../../Existing_Laws/Massie_Epstein_Disclosure/Law_Massie_Epstein_Disclosure.md) | [JFK Records Act](../../Existing_Laws/JFK_Records_Act/Law_JFK_Records_Act.md)
 
+## Related Areas
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Fix the Charlie Kirk Situation](/Fix/overview)
+* [U.S. Intelligence](/US_Intelligence/overview)
+* [Intelligence Services](/intelligence/overview)
+
+</div>
+<div>
+
+* [Proof Intel Services](/Proof_Intel_Services/overview)
+* [(Possible) Cover‑up](/CoverUp/overview)
+* [Government Evidence](/gov/overview)
+
+</div>
+</div>
+
+## Related
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Human Requirements: Law 2 - US Intelligence Services Forced D…](/laws/2_US_Intel/more/Human_Requirements)
+* [Notes: Law 2 - US Intelligence Services Forced Disclosure](/laws/2_US_Intel/more/Notes_2_US_Intel)
+* [Output Analysis: Law 2 - US Intelligence Services Forced Disc…](/laws/2_US_Intel/more/Output_Analysis)
+
+</div>
+<div>
+
+* [Law 1: Charlie Kirk Investigation - DoJ/FBI Forced Disclosure…](/laws/1_DoJ_FBI/Law_1_DoJ_FBI)
+* [Law 3: Charlie Kirk Investigation - Mandatory Investigation Act](/laws/3_Require_to_Investigate/Law_3_Require_to_Investigate)
+* [Law 4: Charlie Kirk Investigation - Trusted Investigators Act](/laws/4_Trusted_Investigations/Law_4_Trusted_Investigations)
+
+</div>
+</div>

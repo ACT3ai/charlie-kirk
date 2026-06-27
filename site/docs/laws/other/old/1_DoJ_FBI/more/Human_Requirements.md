@@ -51,3 +51,43 @@ critical investigative information from the public.
 ---
 
 [Back to README](../../README.md) | [Law Text](Law_1_DoJ_FBI.md) | [Legal Notes](Notes_1_DoJ_FBI.md) | [Output Analysis](Output_Analysis.md)
+
+## Related Areas
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Fix the Charlie Kirk Situation](/Fix/overview)
+* [FBI](/FBI/overview)
+* [(Possible) Cover‑up](/CoverUp/overview)
+
+</div>
+<div>
+
+* [Government Evidence](/gov/overview)
+* [Proof Intel Services](/Proof_Intel_Services/overview)
+* [Your Actions Fix It](/Your_Actions_Fix_It/overview)
+
+</div>
+</div>
+
+## Related
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Law 1: Charlie Kirk Investigation - DoJ/FBI Forced Disclosure…](/laws/other/old/1_DoJ_FBI/Law_1_DoJ_FBI)
+* [Notes: Law 1 - DoJ/FBI Forced Disclosure](/laws/other/old/1_DoJ_FBI/more/Notes_1_DoJ_FBI)
+* [Output Analysis: Law 1 - DoJ/FBI Forced Disclosure](/laws/other/old/1_DoJ_FBI/more/Output_Analysis)
+
+</div>
+<div>
+
+* [Human Requirements: Law 1 - DoJ/FBI Forced Disclosure](/laws/1_DoJ_FBI/more/Human_Requirements)
+* [Human Requirements: Law 2 - US Intelligence Services Forced D…](/laws/other/old/2_US_Intel/more/Human_Requirements)
+* [Human Requirements: Law 3 - Require Investigation](/laws/other/old/3_Require_to_Investigate/more/Human_Requirements)
+
+</div>
+</div>

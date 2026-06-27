@@ -142,3 +142,43 @@ Section 4(c) triggers automatic transfer to a congressional commission if "evide
 
 ### 12. No Conflict of Interest Provisions for Trusted Investigators (Law 4)
 The named investigators face no financial disclosure requirements, recusal standards, or conflict-of-interest rules. **Recommendation:** Require annual financial disclosures and recusal from matters where a personal financial interest exists, modeled on 5 U.S.C. App. (Ethics in Government Act).
+
+## Related Areas
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [FBI](/FBI/overview)
+* [U.S. Intelligence](/US_Intelligence/overview)
+* [Intelligence Services](/intelligence/overview)
+
+</div>
+<div>
+
+* [Fix the Charlie Kirk Situation](/Fix/overview)
+* [Government Evidence](/gov/overview)
+* [(Possible) Cover‑up](/CoverUp/overview)
+
+</div>
+</div>
+
+## Related
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Charlie Kirk Files Forced Disclosure -- Summary of Four Propo…](/laws/other/List_Of_Laws)
+* [Charlie Kirk Assassination — Forced Disclosure](/laws/README)
+* [Charlie_Kirk_175_Critical_To_Expose](/laws/other/original/README)
+
+</div>
+<div>
+
+* [People Involved - Categories for Charlie Kirk Files Forced Di…](/laws/other/people)
+* [Charlie Kirk Files Forced Disclosure -- Threat Analysis & Rec…](/laws/other/Worries_By_Each_4_Laws)
+* [Discovery — Charlie Kirk Assassination Investigation](/laws/Discovery/README)
+
+</div>
+</div>

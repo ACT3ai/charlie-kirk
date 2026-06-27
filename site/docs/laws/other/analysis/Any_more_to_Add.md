@@ -85,3 +85,43 @@ All records relating to Emmanuel Beerer, a German national and former Oracle sof
 ## Notes
 
 These items (#214-#237) were identified by comparing the full investigation notes (Bkup_Charlie_Kirk.txt) against the existing 213 items in Law 1. Each represents a distinct lead, person, or category of evidence that is either not covered at all or not adequately specified in the current disclosure requirements. Some items partially overlap with broader existing categories but contain specific enough details that they warrant explicit enumeration to prevent agencies from claiming the broader category doesn't require this specific disclosure.
+
+## Related Areas
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Fix the Charlie Kirk Situation](/Fix/overview)
+* [(Possible) Cover‑up](/CoverUp/overview)
+* [Government Evidence](/gov/overview)
+
+</div>
+<div>
+
+* [Proof Intel Services](/Proof_Intel_Services/overview)
+* [Legal Investigation](/legal_investigation/overview)
+* [FBI](/FBI/overview)
+
+</div>
+</div>
+
+## Related
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Problems, Vulnerabilities, and Recommended Fixes — Comprehens…](/laws/other/analysis/Any_Problems)
+* [Problems, Vulnerabilities, and Recommended Fixes -- Comprehen…](/laws/other/analysis/Before_Any_Problems)
+* [Factual Challenges — REMAINING UNFIXED ITEMS](/laws/other/analysis/Challenges)
+
+</div>
+<div>
+
+* [Attorney Analysis: Improvements for the Four Charlie Kirk Dis…](/laws/other/analysis/Improve)
+* [Laws Not Complying with Charter (List_Of_Laws.md) -- Comprehe…](/laws/other/analysis/Laws_Not_Complying)
+* [Additional Disclosure Items to Consider (Beyond the 175) — AL…](/laws/other/analysis/Fixed/Any_more_to_Add)
+
+</div>
+</div>
