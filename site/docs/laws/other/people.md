@@ -141,16 +141,16 @@ marginTop:'0.5rem'}}>
 marginTop:'0.5rem'}}>
 <div>
 
-* [Charlie Kirk Assassination — Forced Disclosure](/laws/README)
-* [Charlie_Kirk_175_Critical_To_Expose](/laws/other/original/README)
-* [Discovery — Charlie Kirk Assassination Investigation](/laws/Discovery/README)
+* [Charlie Kirk Assassination — Forced Disclosure](/laws)
+* [Charlie_Kirk_175_Critical_To_Expose](/laws/other/original)
+* [Discovery — Charlie Kirk Assassination Investigation](/laws/Discovery)
 
 </div>
 <div>
 
 * [Charlie Kirk Files Forced Disclosure -- Summary of Four Propo…](/laws/other/old/List_Of_Laws)
 * [Charlie Kirk Files Forced Disclosure -- Summary of Four Propo…](/laws/other/List_Of_Laws)
-* [Law 1: Charlie Kirk Investigation - DoJ/FBI Forced Disclosure…](/laws/1_DoJ_FBI/Law_1_DoJ_FBI)
+* [Law 1: Charlie Kirk Investigation - DoJ/FBI Forced Disclosure…](/laws/DoJ_FBI/Law_1_DoJ_FBI)
 
 </div>
 </div>

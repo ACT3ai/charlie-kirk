@@ -344,9 +344,9 @@ marginTop:'0.5rem'}}>
 </div>
 <div>
 
-* [Law 1: Charlie Kirk Investigation - DoJ/FBI Forced Disclosure…](/laws/1_DoJ_FBI/Law_1_DoJ_FBI)
+* [Law 1: Charlie Kirk Investigation - DoJ/FBI Forced Disclosure…](/laws/DoJ_FBI/Law_1_DoJ_FBI)
 * [Laws Not Complying with Charter (List_Of_Laws.md) -- Comprehe…](/laws/other/analysis/Laws_Not_Complying)
-* [Charlie Kirk Assassination — Forced Disclosure](/laws/README)
+* [Charlie Kirk Assassination — Forced Disclosure](/laws)
 
 </div>
 </div>

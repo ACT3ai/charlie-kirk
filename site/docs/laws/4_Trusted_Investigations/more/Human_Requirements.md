@@ -54,16 +54,16 @@ marginTop:'0.5rem'}}>
 marginTop:'0.5rem'}}>
 <div>
 
-* [Law 4: Charlie Kirk Investigation - Trusted Investigators Act](/laws/4_Trusted_Investigations/Law_4_Trusted_Investigations)
-* [Notes: Law 4 - Trusted Investigations](/laws/4_Trusted_Investigations/more/Notes_4_Trusted_Investigations)
-* [Output Analysis: Law 4 - Trusted Investigations](/laws/4_Trusted_Investigations/more/Output_Analysis)
+* [Law 4: Charlie Kirk Investigation - Trusted Investigators Act](/laws/Trusted_Investigations/Law_4_Trusted_Investigations)
+* [Notes: Law 4 - Trusted Investigations](/laws/Trusted_Investigations/more/Notes_4_Trusted_Investigations)
+* [Output Analysis: Law 4 - Trusted Investigations](/laws/Trusted_Investigations/more/Output_Analysis)
 
 </div>
 <div>
 
-* [Human Requirements: Law 1 - DoJ/FBI Forced Disclosure](/laws/1_DoJ_FBI/more/Human_Requirements)
-* [Human Requirements: Law 2 - US Intelligence Services Forced D…](/laws/2_US_Intel/more/Human_Requirements)
-* [Human Requirements: Law 3 - Require Investigation](/laws/3_Require_to_Investigate/more/Human_Requirements)
+* [Human Requirements: Law 1 - DoJ/FBI Forced Disclosure](/laws/DoJ_FBI/more/Human_Requirements)
+* [Human Requirements: Law 2 - US Intelligence Services Forced D…](/laws/US_Intel/more/Human_Requirements)
+* [Human Requirements: Law 3 - Require Investigation](/laws/Require_to_Investigate/more/Human_Requirements)
 
 </div>
 </div>

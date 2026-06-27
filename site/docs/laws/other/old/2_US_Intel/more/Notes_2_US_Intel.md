@@ -76,16 +76,16 @@ marginTop:'0.5rem'}}>
 marginTop:'0.5rem'}}>
 <div>
 
-* [Law 2: Charlie Kirk Investigation - Intelligence Services Dis…](/laws/other/old/2_US_Intel/Law_2_US_Intel)
-* [Human Requirements: Law 2 - US Intelligence Services Forced D…](/laws/other/old/2_US_Intel/more/Human_Requirements)
-* [Output Analysis: Law 2 - US Intelligence Services Forced Disc…](/laws/other/old/2_US_Intel/more/Output_Analysis)
+* [Law 2: Charlie Kirk Investigation - Intelligence Services Dis…](/laws/other/old/US_Intel/Law_2_US_Intel)
+* [Human Requirements: Law 2 - US Intelligence Services Forced D…](/laws/other/old/US_Intel/more/Human_Requirements)
+* [Output Analysis: Law 2 - US Intelligence Services Forced Disc…](/laws/other/old/US_Intel/more/Output_Analysis)
 
 </div>
 <div>
 
-* [Law 2: Charlie Kirk Investigation - Intelligence Services Dis…](/laws/2_US_Intel/Law_2_US_Intel)
-* [Notes: Law 2 - US Intelligence Services Forced Disclosure](/laws/2_US_Intel/more/Notes_2_US_Intel)
-* [Charlie Kirk Assassination — Forced Disclosure](/laws/README)
+* [Law 2: Charlie Kirk Investigation - Intelligence Services Dis…](/laws/US_Intel/Law_2_US_Intel)
+* [Notes: Law 2 - US Intelligence Services Forced Disclosure](/laws/US_Intel/more/Notes_2_US_Intel)
+* [Charlie Kirk Assassination — Forced Disclosure](/laws)
 
 </div>
 </div>

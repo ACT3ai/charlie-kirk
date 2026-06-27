@@ -88,16 +88,16 @@ marginTop:'0.5rem'}}>
 marginTop:'0.5rem'}}>
 <div>
 
-* [Law 2: Charlie Kirk Investigation - Intelligence Services Dis…](/laws/2_US_Intel/Law_2_US_Intel)
-* [Human Requirements: Law 2 - US Intelligence Services Forced D…](/laws/2_US_Intel/more/Human_Requirements)
-* [Notes: Law 2 - US Intelligence Services Forced Disclosure](/laws/2_US_Intel/more/Notes_2_US_Intel)
+* [Law 2: Charlie Kirk Investigation - Intelligence Services Dis…](/laws/US_Intel/Law_2_US_Intel)
+* [Human Requirements: Law 2 - US Intelligence Services Forced D…](/laws/US_Intel/more/Human_Requirements)
+* [Notes: Law 2 - US Intelligence Services Forced Disclosure](/laws/US_Intel/more/Notes_2_US_Intel)
 
 </div>
 <div>
 
-* [Output Analysis: Law 1 - DoJ/FBI Forced Disclosure](/laws/1_DoJ_FBI/more/Output_Analysis)
-* [Output Analysis: Law 3 - Require Investigation](/laws/3_Require_to_Investigate/more/Output_Analysis)
-* [Output Analysis: Law 4 - Trusted Investigations](/laws/4_Trusted_Investigations/more/Output_Analysis)
+* [Output Analysis: Law 1 - DoJ/FBI Forced Disclosure](/laws/DoJ_FBI/more/Output_Analysis)
+* [Output Analysis: Law 3 - Require Investigation](/laws/Require_to_Investigate/more/Output_Analysis)
+* [Output Analysis: Law 4 - Trusted Investigations](/laws/Trusted_Investigations/more/Output_Analysis)
 
 </div>
 </div>

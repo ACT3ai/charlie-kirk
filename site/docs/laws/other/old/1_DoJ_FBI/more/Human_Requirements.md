@@ -78,16 +78,16 @@ marginTop:'0.5rem'}}>
 marginTop:'0.5rem'}}>
 <div>
 
-* [Law 1: Charlie Kirk Investigation - DoJ/FBI Forced Disclosure…](/laws/other/old/1_DoJ_FBI/Law_1_DoJ_FBI)
-* [Notes: Law 1 - DoJ/FBI Forced Disclosure](/laws/other/old/1_DoJ_FBI/more/Notes_1_DoJ_FBI)
-* [Output Analysis: Law 1 - DoJ/FBI Forced Disclosure](/laws/other/old/1_DoJ_FBI/more/Output_Analysis)
+* [Law 1: Charlie Kirk Investigation - DoJ/FBI Forced Disclosure…](/laws/other/old/DoJ_FBI/Law_1_DoJ_FBI)
+* [Notes: Law 1 - DoJ/FBI Forced Disclosure](/laws/other/old/DoJ_FBI/more/Notes_1_DoJ_FBI)
+* [Output Analysis: Law 1 - DoJ/FBI Forced Disclosure](/laws/other/old/DoJ_FBI/more/Output_Analysis)
 
 </div>
 <div>
 
-* [Human Requirements: Law 1 - DoJ/FBI Forced Disclosure](/laws/1_DoJ_FBI/more/Human_Requirements)
-* [Human Requirements: Law 2 - US Intelligence Services Forced D…](/laws/other/old/2_US_Intel/more/Human_Requirements)
-* [Human Requirements: Law 3 - Require Investigation](/laws/other/old/3_Require_to_Investigate/more/Human_Requirements)
+* [Human Requirements: Law 1 - DoJ/FBI Forced Disclosure](/laws/DoJ_FBI/more/Human_Requirements)
+* [Human Requirements: Law 2 - US Intelligence Services Forced D…](/laws/other/old/US_Intel/more/Human_Requirements)
+* [Human Requirements: Law 3 - Require Investigation](/laws/other/old/Require_to_Investigate/more/Human_Requirements)
 
 </div>
 </div>

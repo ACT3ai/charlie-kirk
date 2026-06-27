@@ -1368,16 +1368,16 @@ marginTop:'0.5rem'}}>
 marginTop:'0.5rem'}}>
 <div>
 
-* [Charlie Kirk Assassination — Forced Disclosure](/laws/README)
-* [Human Requirements: Law 1 - DoJ/FBI Forced Disclosure](/laws/1_DoJ_FBI/more/Human_Requirements)
-* [Notes: Law 1 - DoJ/FBI Forced Disclosure](/laws/1_DoJ_FBI/more/Notes_1_DoJ_FBI)
+* [Charlie Kirk Assassination — Forced Disclosure](/laws)
+* [Human Requirements: Law 1 - DoJ/FBI Forced Disclosure](/laws/DoJ_FBI/more/Human_Requirements)
+* [Notes: Law 1 - DoJ/FBI Forced Disclosure](/laws/DoJ_FBI/more/Notes_1_DoJ_FBI)
 
 </div>
 <div>
 
-* [Output Analysis: Law 1 - DoJ/FBI Forced Disclosure](/laws/1_DoJ_FBI/more/Output_Analysis)
-* [Law 2: Charlie Kirk Investigation - Intelligence Services Dis…](/laws/2_US_Intel/Law_2_US_Intel)
-* [Discovery — Charlie Kirk Assassination Investigation](/laws/Discovery/README)
+* [Output Analysis: Law 1 - DoJ/FBI Forced Disclosure](/laws/DoJ_FBI/more/Output_Analysis)
+* [Law 2: Charlie Kirk Investigation - Intelligence Services Dis…](/laws/US_Intel/Law_2_US_Intel)
+* [Discovery — Charlie Kirk Assassination Investigation](/laws/Discovery)
 
 </div>
 </div>

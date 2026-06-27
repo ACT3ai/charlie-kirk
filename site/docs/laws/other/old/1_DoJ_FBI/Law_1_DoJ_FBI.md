@@ -961,15 +961,15 @@ marginTop:'0.5rem'}}>
 marginTop:'0.5rem'}}>
 <div>
 
-* [Law 1: Charlie Kirk Investigation - DoJ/FBI Forced Disclosure…](/laws/1_DoJ_FBI/Law_1_DoJ_FBI)
-* [Human Requirements: Law 1 - DoJ/FBI Forced Disclosure](/laws/other/old/1_DoJ_FBI/more/Human_Requirements)
-* [Notes: Law 1 - DoJ/FBI Forced Disclosure](/laws/other/old/1_DoJ_FBI/more/Notes_1_DoJ_FBI)
+* [Law 1: Charlie Kirk Investigation - DoJ/FBI Forced Disclosure…](/laws/DoJ_FBI/Law_1_DoJ_FBI)
+* [Human Requirements: Law 1 - DoJ/FBI Forced Disclosure](/laws/other/old/DoJ_FBI/more/Human_Requirements)
+* [Notes: Law 1 - DoJ/FBI Forced Disclosure](/laws/other/old/DoJ_FBI/more/Notes_1_DoJ_FBI)
 
 </div>
 <div>
 
-* [Output Analysis: Law 1 - DoJ/FBI Forced Disclosure](/laws/other/old/1_DoJ_FBI/more/Output_Analysis)
-* [Law 2: Charlie Kirk Investigation - Intelligence Services Dis…](/laws/other/old/2_US_Intel/Law_2_US_Intel)
+* [Output Analysis: Law 1 - DoJ/FBI Forced Disclosure](/laws/other/old/DoJ_FBI/more/Output_Analysis)
+* [Law 2: Charlie Kirk Investigation - Intelligence Services Dis…](/laws/other/old/US_Intel/Law_2_US_Intel)
 * [Charlie Kirk Files Forced Disclosure -- Summary of Four Propo…](/laws/other/old/List_Of_Laws)
 
 </div>

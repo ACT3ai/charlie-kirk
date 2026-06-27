@@ -1281,8 +1281,8 @@ marginTop:'0.5rem'}}>
 marginTop:'0.5rem'}}>
 <div>
 
-* [Discovery — Charlie Kirk Assassination Investigation](/laws/Discovery/README)
-* [Charlie Kirk Assassination — Forced Disclosure](/laws/README)
+* [Discovery — Charlie Kirk Assassination Investigation](/laws/Discovery)
+* [Charlie Kirk Assassination — Forced Disclosure](/laws)
 * [Charlie Kirk Files Forced Disclosure -- Summary of Four Propo…](/laws/other/old/List_Of_Laws)
 
 </div>
@@ -1290,7 +1290,7 @@ marginTop:'0.5rem'}}>
 
 * [Charlie Kirk Files Forced Disclosure -- Summary of Four Propo…](/laws/other/List_Of_Laws)
 * [People Involved - Categories for Charlie Kirk Files Forced Di…](/laws/other/people)
-* [Slide 1: The Charlie Kirk Files Forced Disclosure Act](/laws/1_DoJ_FBI/slides/Law_1_Slide_Deck)
+* [Slide 1: The Charlie Kirk Files Forced Disclosure Act](/laws/DoJ_FBI/slides/Law_1_Slide_Deck)
 
 </div>
 </div>

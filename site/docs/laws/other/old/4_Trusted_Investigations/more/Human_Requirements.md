@@ -54,16 +54,16 @@ marginTop:'0.5rem'}}>
 marginTop:'0.5rem'}}>
 <div>
 
-* [Law 4: Charlie Kirk Investigation - Trusted Investigators Act](/laws/other/old/4_Trusted_Investigations/Law_4_Trusted_Investigations)
-* [Notes: Law 4 - Trusted Investigations](/laws/other/old/4_Trusted_Investigations/more/Notes_4_Trusted_Investigations)
-* [Output Analysis: Law 4 - Trusted Investigations](/laws/other/old/4_Trusted_Investigations/more/Output_Analysis)
+* [Law 4: Charlie Kirk Investigation - Trusted Investigators Act](/laws/other/old/Trusted_Investigations/Law_4_Trusted_Investigations)
+* [Notes: Law 4 - Trusted Investigations](/laws/other/old/Trusted_Investigations/more/Notes_4_Trusted_Investigations)
+* [Output Analysis: Law 4 - Trusted Investigations](/laws/other/old/Trusted_Investigations/more/Output_Analysis)
 
 </div>
 <div>
 
-* [Law 4: Charlie Kirk Investigation - Trusted Investigators Act](/laws/4_Trusted_Investigations/Law_4_Trusted_Investigations)
-* [Human Requirements: Law 4 - Trusted Investigations](/laws/4_Trusted_Investigations/more/Human_Requirements)
-* [Charlie Kirk Assassination — Forced Disclosure](/laws/README)
+* [Law 4: Charlie Kirk Investigation - Trusted Investigators Act](/laws/Trusted_Investigations/Law_4_Trusted_Investigations)
+* [Human Requirements: Law 4 - Trusted Investigations](/laws/Trusted_Investigations/more/Human_Requirements)
+* [Charlie Kirk Assassination — Forced Disclosure](/laws)
 
 </div>
 </div>

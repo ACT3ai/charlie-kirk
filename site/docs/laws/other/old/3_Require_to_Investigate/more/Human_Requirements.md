@@ -47,16 +47,16 @@ marginTop:'0.5rem'}}>
 marginTop:'0.5rem'}}>
 <div>
 
-* [Law 3: Charlie Kirk Investigation - Mandatory Investigation Act](/laws/other/old/3_Require_to_Investigate/Law_3_Require_to_Investigate)
-* [Notes: Law 3 - Require Investigation](/laws/other/old/3_Require_to_Investigate/more/Notes_3_Require_to_Investigate)
-* [Output Analysis: Law 3 - Require Investigation](/laws/other/old/3_Require_to_Investigate/more/Output_Analysis)
+* [Law 3: Charlie Kirk Investigation - Mandatory Investigation Act](/laws/other/old/Require_to_Investigate/Law_3_Require_to_Investigate)
+* [Notes: Law 3 - Require Investigation](/laws/other/old/Require_to_Investigate/more/Notes_3_Require_to_Investigate)
+* [Output Analysis: Law 3 - Require Investigation](/laws/other/old/Require_to_Investigate/more/Output_Analysis)
 
 </div>
 <div>
 
-* [Law 3: Charlie Kirk Investigation - Mandatory Investigation Act](/laws/3_Require_to_Investigate/Law_3_Require_to_Investigate)
-* [Human Requirements: Law 3 - Require Investigation](/laws/3_Require_to_Investigate/more/Human_Requirements)
-* [Charlie Kirk Assassination — Forced Disclosure](/laws/README)
+* [Law 3: Charlie Kirk Investigation - Mandatory Investigation Act](/laws/Require_to_Investigate/Law_3_Require_to_Investigate)
+* [Human Requirements: Law 3 - Require Investigation](/laws/Require_to_Investigate/more/Human_Requirements)
+* [Charlie Kirk Assassination — Forced Disclosure](/laws)
 
 </div>
 </div>
