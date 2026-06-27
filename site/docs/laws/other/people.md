@@ -114,3 +114,43 @@ Any other person, whether named or unnamed in this Act, who possesses informatio
 **Total Categories: 35 (a through ii)**
 
 Note: The current law definition has only 3 categories (a, b, c). This expanded list ensures comprehensive coverage of every type of person who could possess relevant information or have played a role in the events surrounding Charlie Kirk's death on September 10, 2025.
+
+## Related Areas
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [People](/People/overview)
+* [Key Individuals](/key_individuals/overview)
+* [TPUSA](/TPUSA/overview)
+
+</div>
+<div>
+
+* [FBI](/FBI/overview)
+* [U.S. Intelligence](/US_Intelligence/overview)
+* [Intelligence Services](/intelligence/overview)
+
+</div>
+</div>
+
+## Related
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Charlie Kirk Assassination — Forced Disclosure](/laws/README)
+* [Charlie_Kirk_175_Critical_To_Expose](/laws/other/original/README)
+* [Discovery — Charlie Kirk Assassination Investigation](/laws/Discovery/README)
+
+</div>
+<div>
+
+* [Charlie Kirk Files Forced Disclosure -- Summary of Four Propo…](/laws/other/old/List_Of_Laws)
+* [Charlie Kirk Files Forced Disclosure -- Summary of Four Propo…](/laws/other/List_Of_Laws)
+* [Law 1: Charlie Kirk Investigation - DoJ/FBI Forced Disclosure…](/laws/1_DoJ_FBI/Law_1_DoJ_FBI)
+
+</div>
+</div>

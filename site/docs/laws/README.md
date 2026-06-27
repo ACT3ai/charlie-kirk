@@ -159,3 +159,43 @@ This includes other information to disclose that may or may not be related.
 * Was AES explosion intentional? Was it suspicious?
 
 Cl
+
+## Related Areas
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Fix the Charlie Kirk Situation](/Fix/overview)
+* [FBI](/FBI/overview)
+* [U.S. Intelligence](/US_Intelligence/overview)
+
+</div>
+<div>
+
+* [(Possible) Cover‑up](/CoverUp/overview)
+* [Proof Intel Services](/Proof_Intel_Services/overview)
+* [Your Actions Fix It](/Your_Actions_Fix_It/overview)
+
+</div>
+</div>
+
+## Related
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Law 1: Charlie Kirk Investigation - DoJ/FBI Forced Disclosure…](/laws/1_DoJ_FBI/Law_1_DoJ_FBI)
+* [Law 2: Charlie Kirk Investigation - Intelligence Services Dis…](/laws/2_US_Intel/Law_2_US_Intel)
+* [Law 3: Charlie Kirk Investigation - Mandatory Investigation Act](/laws/3_Require_to_Investigate/Law_3_Require_to_Investigate)
+
+</div>
+<div>
+
+* [Law 4: Charlie Kirk Investigation - Trusted Investigators Act](/laws/4_Trusted_Investigations/Law_4_Trusted_Investigations)
+* [Launch: All Four Laws](/laws/explain/all/overview)
+* [Charlie Kirk Files Forced Disclosure -- Summary of Four Propo…](/laws/other/List_Of_Laws)
+
+</div>
+</div>

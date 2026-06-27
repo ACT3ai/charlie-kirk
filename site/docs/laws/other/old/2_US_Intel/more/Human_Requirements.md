@@ -21,3 +21,43 @@ Law 1 covers law enforcement (DOJ/FBI). This law covers intelligence services sp
 [Back to README](../../README.md) | [Law Text](Law_2_US_Intel.md) | [Legal Notes](Notes_2_US_Intel.md) | [Output Analysis](Output_Analysis.md)
 
 See also: [Law 1 Requirements](../1_DoJ_FBI/Human_Requirements.md) (law enforcement counterpart)
+
+## Related Areas
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [U.S. Intelligence](/US_Intelligence/overview)
+* [Intelligence Services](/intelligence/overview)
+* [FBI](/FBI/overview)
+
+</div>
+<div>
+
+* [Government Evidence](/gov/overview)
+* [(Possible) Cover‑up](/CoverUp/overview)
+* [Fix the Charlie Kirk Situation](/Fix/overview)
+
+</div>
+</div>
+
+## Related
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Law 2: Charlie Kirk Investigation - Intelligence Services Dis…](/laws/other/old/2_US_Intel/Law_2_US_Intel)
+* [Notes: Law 2 - US Intelligence Services Forced Disclosure](/laws/other/old/2_US_Intel/more/Notes_2_US_Intel)
+* [Output Analysis: Law 2 - US Intelligence Services Forced Disc…](/laws/other/old/2_US_Intel/more/Output_Analysis)
+
+</div>
+<div>
+
+* [Law 2: Charlie Kirk Investigation - Intelligence Services Dis…](/laws/2_US_Intel/Law_2_US_Intel)
+* [Human Requirements: Law 2 - US Intelligence Services Forced D…](/laws/2_US_Intel/more/Human_Requirements)
+* [Charlie Kirk Assassination — Forced Disclosure](/laws/README)
+
+</div>
+</div>

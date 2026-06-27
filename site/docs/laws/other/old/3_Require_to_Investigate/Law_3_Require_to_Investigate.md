@@ -169,3 +169,43 @@ To require the Federal Bureau of Investigation, all relevant federal and state l
 ## Section 9: Effective Date
 
 This Act shall take effect immediately upon enactment.
+
+## Related Areas
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [FBI](/FBI/overview)
+* [U.S. Intelligence](/US_Intelligence/overview)
+* [Intelligence Services](/intelligence/overview)
+
+</div>
+<div>
+
+* [Fix the Charlie Kirk Situation](/Fix/overview)
+* [Legal Investigation](/legal_investigation/overview)
+* [Government Organizations](/government_organizations/overview)
+
+</div>
+</div>
+
+## Related
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Human Requirements: Law 3 - Require Investigation](/laws/other/old/3_Require_to_Investigate/more/Human_Requirements)
+* [Notes: Law 3 - Require Investigation](/laws/other/old/3_Require_to_Investigate/more/Notes_3_Require_to_Investigate)
+* [Output Analysis: Law 3 - Require Investigation](/laws/other/old/3_Require_to_Investigate/more/Output_Analysis)
+
+</div>
+<div>
+
+* [Law 3: Charlie Kirk Investigation - Mandatory Investigation Act](/laws/3_Require_to_Investigate/Law_3_Require_to_Investigate)
+* [Notes: Law 3 - Require Investigation](/laws/3_Require_to_Investigate/more/Notes_3_Require_to_Investigate)
+* [Charlie Kirk Assassination — Forced Disclosure](/laws/README)
+
+</div>
+</div>

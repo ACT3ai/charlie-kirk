@@ -65,3 +65,43 @@ This approach draws from the Epstein Act's enumeration of specific record catego
 - Roll Call on compliance pursuit: https://rollcall.com/2026/02/02/lawmakers-pursue-full-compliance-with-epstein-transparency-law/
 - Trump JFK EO: https://www.whitehouse.gov/presidential-actions/2025/01/declassification-of-records-concerning-the-assassinations-of-president-john-f-kennedy/
 - Charlie Kirk 175 Critical Items: https://github.com/BryanStarbuck/Charlie_Kirk_175_Critical_To_Expose
+
+## Related Areas
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Fix the Charlie Kirk Situation](/Fix/overview)
+* [FBI](/FBI/overview)
+* [(Possible) Cover‑up](/CoverUp/overview)
+
+</div>
+<div>
+
+* [Government Evidence](/gov/overview)
+* [Proof Intel Services](/Proof_Intel_Services/overview)
+* [Censorship](/Censorship/overview)
+
+</div>
+</div>
+
+## Related
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Law 1: Charlie Kirk Investigation - DoJ/FBI Forced Disclosure…](/laws/1_DoJ_FBI/Law_1_DoJ_FBI)
+* [Human Requirements: Law 1 - DoJ/FBI Forced Disclosure](/laws/1_DoJ_FBI/more/Human_Requirements)
+* [Output Analysis: Law 1 - DoJ/FBI Forced Disclosure](/laws/1_DoJ_FBI/more/Output_Analysis)
+
+</div>
+<div>
+
+* [Charlie Kirk Assassination — Forced Disclosure](/laws/README)
+* [Notes: Law 2 - US Intelligence Services Forced Disclosure](/laws/2_US_Intel/more/Notes_2_US_Intel)
+* [Discovery — Charlie Kirk Assassination Investigation](/laws/Discovery/README)
+
+</div>
+</div>

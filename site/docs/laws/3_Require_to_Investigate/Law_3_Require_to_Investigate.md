@@ -1639,3 +1639,43 @@ For purposes of this Act, the following definitions supplement and are consisten
 Peer laws: [Law 1 - DoJ/FBI Disclosure](../1_DoJ_FBI/Law_1_DoJ_FBI.md) | [Law 2 - US Intel Disclosure](../2_US_Intel/Law_2_US_Intel.md) | [Law 4 - Trusted Investigators](../4_Trusted_Investigations/Law_4_Trusted_Investigations.md)
 
 Precedent: [Epstein Files Transparency Act](../../Existing_Laws/Massie_Epstein_Disclosure/Law_Massie_Epstein_Disclosure.md) | [JFK Records Act](../../Existing_Laws/JFK_Records_Act/Law_JFK_Records_Act.md)
+
+## Related Areas
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Fix the Charlie Kirk Situation](/Fix/overview)
+* [Legal Investigation](/legal_investigation/overview)
+* [(Possible) Cover‑up](/CoverUp/overview)
+
+</div>
+<div>
+
+* [Government Evidence](/gov/overview)
+* [Your Actions Fix It](/Your_Actions_Fix_It/overview)
+* [Government Organizations](/government_organizations/overview)
+
+</div>
+</div>
+
+## Related
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Human Requirements: Law 3 - Require Investigation](/laws/3_Require_to_Investigate/more/Human_Requirements)
+* [Notes: Law 3 - Require Investigation](/laws/3_Require_to_Investigate/more/Notes_3_Require_to_Investigate)
+* [Output Analysis: Law 3 - Require Investigation](/laws/3_Require_to_Investigate/more/Output_Analysis)
+
+</div>
+<div>
+
+* [Law 1: Charlie Kirk Investigation - DoJ/FBI Forced Disclosure…](/laws/1_DoJ_FBI/Law_1_DoJ_FBI)
+* [Law 2: Charlie Kirk Investigation - Intelligence Services Dis…](/laws/2_US_Intel/Law_2_US_Intel)
+* [Law 4: Charlie Kirk Investigation - Trusted Investigators Act](/laws/4_Trusted_Investigations/Law_4_Trusted_Investigations)
+
+</div>
+</div>

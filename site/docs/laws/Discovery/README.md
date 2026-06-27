@@ -1235,3 +1235,43 @@ General Foreign Intel: January 1, 2023 - present
 * Targets with bullet holes found in the defendant's residence
 * Handwritten note found under keyboard stating intent to "take out Charlie Kirk" (including photograph)
 * Statements from the defendant's mother, father, and family friend about events leading to surrender
+
+## Related Areas
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Fix the Charlie Kirk Situation](/Fix/overview)
+* [FBI](/FBI/overview)
+* [(Possible) Cover‑up](/CoverUp/overview)
+
+</div>
+<div>
+
+* [Government Evidence](/gov/overview)
+* [Proof Intel Services](/Proof_Intel_Services/overview)
+* [Legal Investigation](/legal_investigation/overview)
+
+</div>
+</div>
+
+## Related
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Charlie Kirk Assassination — Forced Disclosure](/laws/README)
+* [Law 1: Charlie Kirk Investigation - DoJ/FBI Forced Disclosure…](/laws/1_DoJ_FBI/Law_1_DoJ_FBI)
+* [Law 2: Charlie Kirk Investigation - Intelligence Services Dis…](/laws/2_US_Intel/Law_2_US_Intel)
+
+</div>
+<div>
+
+* [Law 3: Charlie Kirk Investigation - Mandatory Investigation Act](/laws/3_Require_to_Investigate/Law_3_Require_to_Investigate)
+* [Law 4: Charlie Kirk Investigation - Trusted Investigators Act](/laws/4_Trusted_Investigations/Law_4_Trusted_Investigations)
+* [Charlie Kirk Files Forced Disclosure -- Summary of Four Propo…](/laws/other/List_Of_Laws)
+
+</div>
+</div>

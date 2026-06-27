@@ -49,3 +49,43 @@ The dual-track approach:
 - Trump JFK EO: https://www.whitehouse.gov/presidential-actions/2025/01/declassification-of-records-concerning-the-assassinations-of-president-john-f-kennedy/
 - Epstein Act compliance: https://thehill.com/homenews/house/5744386-doj-epstein-files-transparency-act/
 - Charlie Kirk 175 Critical Items: https://github.com/BryanStarbuck/Charlie_Kirk_175_Critical_To_Expose
+
+## Related Areas
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [U.S. Intelligence](/US_Intelligence/overview)
+* [Intelligence Services](/intelligence/overview)
+* [FBI](/FBI/overview)
+
+</div>
+<div>
+
+* [Government Evidence](/gov/overview)
+* [(Possible) Cover‑up](/CoverUp/overview)
+* [Fix the Charlie Kirk Situation](/Fix/overview)
+
+</div>
+</div>
+
+## Related
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Law 2: Charlie Kirk Investigation - Intelligence Services Dis…](/laws/other/old/2_US_Intel/Law_2_US_Intel)
+* [Human Requirements: Law 2 - US Intelligence Services Forced D…](/laws/other/old/2_US_Intel/more/Human_Requirements)
+* [Output Analysis: Law 2 - US Intelligence Services Forced Disc…](/laws/other/old/2_US_Intel/more/Output_Analysis)
+
+</div>
+<div>
+
+* [Law 2: Charlie Kirk Investigation - Intelligence Services Dis…](/laws/2_US_Intel/Law_2_US_Intel)
+* [Notes: Law 2 - US Intelligence Services Forced Disclosure](/laws/2_US_Intel/more/Notes_2_US_Intel)
+* [Charlie Kirk Assassination — Forced Disclosure](/laws/README)
+
+</div>
+</div>

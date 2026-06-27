@@ -588,3 +588,43 @@ The overlap creates litigation opportunities. An agency could argue that the exi
 Members of Congress will balk at $300M+ in mandatory spending for a single investigation. The Epstein Act cost essentially nothing -- it only required disclosure of existing records. The price tag is a political vulnerability.
 
 **Solution:** Consider phased funding: initial appropriation of $100M for the first year, with automatic renewal if the investigation is ongoing. Frame the cost comparison: the Iraq War cost $2 trillion based on faulty intelligence. $300M to investigate whether the same intelligence establishment assassinated a U.S. citizen is proportional.
+
+## Related Areas
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Fix the Charlie Kirk Situation](/Fix/overview)
+* [(Possible) Cover‑up](/CoverUp/overview)
+* [Government Evidence](/gov/overview)
+
+</div>
+<div>
+
+* [Proof Intel Services](/Proof_Intel_Services/overview)
+* [Legal Investigation](/legal_investigation/overview)
+* [FBI](/FBI/overview)
+
+</div>
+</div>
+
+## Related
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Problems, Vulnerabilities, and Recommended Fixes — Comprehens…](/laws/other/analysis/Any_Problems)
+* [Additional Disclosure Items to Consider](/laws/other/analysis/Any_more_to_Add)
+* [Factual Challenges — REMAINING UNFIXED ITEMS](/laws/other/analysis/Challenges)
+
+</div>
+<div>
+
+* [Attorney Analysis: Improvements for the Four Charlie Kirk Dis…](/laws/other/analysis/Improve)
+* [Laws Not Complying with Charter (List_Of_Laws.md) -- Comprehe…](/laws/other/analysis/Laws_Not_Complying)
+* [Charlie Kirk Files Forced Disclosure -- Threat Analysis & Rec…](/laws/other/Worries_By_Each_4_Laws)
+
+</div>
+</div>

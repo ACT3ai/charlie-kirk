@@ -59,3 +59,43 @@ DOJ will resist even after signing.
 2. Add Special Master provision as backup enforcement mechanism
 3. Coordinate with Law 4 for Trusted Investigator access to disclosed materials
 4. Pre-draft discharge petition strategy
+
+## Related Areas
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [FBI](/FBI/overview)
+* [Government Evidence](/gov/overview)
+* [(Possible) Cover‑up](/CoverUp/overview)
+
+</div>
+<div>
+
+* [Government Organizations](/government_organizations/overview)
+* [Fix the Charlie Kirk Situation](/Fix/overview)
+* [Legal Investigation](/legal_investigation/overview)
+
+</div>
+</div>
+
+## Related
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Law 1: Charlie Kirk Investigation - DoJ/FBI Forced Disclosure…](/laws/other/old/1_DoJ_FBI/Law_1_DoJ_FBI)
+* [Human Requirements: Law 1 - DoJ/FBI Forced Disclosure](/laws/other/old/1_DoJ_FBI/more/Human_Requirements)
+* [Notes: Law 1 - DoJ/FBI Forced Disclosure](/laws/other/old/1_DoJ_FBI/more/Notes_1_DoJ_FBI)
+
+</div>
+<div>
+
+* [Law 1: Charlie Kirk Investigation - DoJ/FBI Forced Disclosure…](/laws/1_DoJ_FBI/Law_1_DoJ_FBI)
+* [Output Analysis: Law 1 - DoJ/FBI Forced Disclosure](/laws/1_DoJ_FBI/more/Output_Analysis)
+* [Charlie Kirk Assassination — Forced Disclosure](/laws/README)
+
+</div>
+</div>
