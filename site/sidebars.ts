@@ -37,6 +37,7 @@ const sidebars: SidebarsConfig = {
     {type: 'doc', id: 'maps/overview', label: 'Maps'},
     {type: 'doc', id: 'US_Intelligence/overview', label: 'U.S. Intelligence'},
     {type: 'doc', id: 'Photos/overview', label: 'Photos'},
+    {type: 'doc', id: 'cameras/overview', label: 'Surveillance Cameras'},
     {type: 'doc', id: 'Censorship/overview', label: 'Censorship'},
     {type: 'doc', id: 'FBI/overview', label: 'FBI'},
     {type: 'doc', id: 'Locations/overview', label: 'Locations'},
