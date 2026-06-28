@@ -22,12 +22,48 @@ planes:
 
   - plane:
       identifier: SU-BTT
+      nickname: "Blue plane" (primary jet discussed by Candace Owens)
       aircraft_type: Dassault Falcon 7X
-      operator_owner: Egypt Air Force / Egyptian Government
+      operator_owner: Egypt Air Force / Egyptian Government (Egyptian Air Force / intelligence-linked)
+      role_in_claims: Primary of the two specific Egyptian-registered planes (with SU-BND) alleged to have repeatedly overlapped Erika Kirk's locations/travel.
       y_interesting: |
         Egyptian military/government jet frequently highlighted by Candace Owens (@RealCandaceO) and plane trackers on X. Alleged to have tracked Erika Kirk's (and sometimes Charlie Kirk's) movements extensively from ~2022–2025, with dozens of location overlaps including international flights and ties to Israel/Provo. On/around Sept 10, 2025, activity near Provo; reports of departure from Provo shortly after the assassination and possible drop-off of personnel 6 days prior (Sept 4). X posts amplify Candace Owens' timeline showing patterned behavior around TPUSA events. Theories involve foreign surveillance, possible joint ops with Mossad/Israeli interests (via Saprea links in other planes), or involvement in monitoring Kirk/TPUSA. "Egyptian Plane Armada" refers to this and similar aircraft (e.g., SU-BND) showing repeated proximity. Many X threads call it a "smoking gun" in conspiracy discussions.
-      relevant_dates: Multiple overlaps 2022–Sept 2025; Provo-area activity Sept 10, 2025 (including possible morning departure)
-      tracking_notes: Public ADS-B data shows unusual frequency near targets. X posts include timelines, flight maps, and Candace Owens show clips.
+      overlap_claims: |
+        Cited numbers for SU-BTT + SU-BND overlapping Erika Kirk's locations 2022–Sept 2025 vary across X posts: 73 overlaps, 72 times, 70+, or 68 overlaps (including international trips). One claim specifies that out of 68 overlaps, 29 included Charlie Kirk.
+        Representative quotes:
+        - "72 times those exact planes followed Erika Kirk, not a plane like it, those 2 planes. That is statistically near impossible without intent."
+        - "Two specific Egyptian-registered planes (tail numbers SU-BTT and SU-BND...) showed repeated overlaps with Erika Kirk's locations and travel patterns. These overlaps occurred 73 times between 2022 and September 2025."
+        - "The Egyptian military plane was tracking Erika Kirk NOT Charlie Kirk! Between 2022 and September of 2025, both the blue plane and yellow plane showed 68 overlaps with Erika Kirk's location, including trips she took outside of the country. Out of those 68 instances, 29 of them included Charlie."
+      provo_timeline:
+        arrival: Flew into Provo on 9/4/2025 (6 days before the assassination)
+        departure: Departed the morning of 9/10/2025 (assassination day)
+        note: One X post states it was "on the ground in Provo the day of the hit."
+      us_locations:
+        - location: Wichita, KS
+          detail: SU-BTT (Dassault) made "no fewer than 8 stops." Critics note Wichita is the "Air Capital of the World" with aviation maintenance hubs (e.g., Yingling Aviation for Dassault jets, FAA Part 145 work, ties to Wichita State University / Dassault since 2015), explaining routine stops rather than surveillance.
+        - location: Provo/Orem, UT
+          detail: Arrived ~9/4/2025, departed morning of 9/10/2025. Key focus of assassination-day discussion.
+        - location: Delaware
+          detail: An Egyptian plane (per Candace Owens) landed and stayed the night of 9/10 (assassination day); alleged foreign-dignitary pickup transferred to 920 N King St (joint DHS/FBI/DEA office). See geographic_concentration and criticisms sections below.
+      israel_trips: |
+        Full date list compiled from logs (logs show CAI → CAI or N/A → CAI; users claim transponder blackout and actual Israel landings). Year per source context ~2024/2025:
+          January: Jan 05, Jan 12, Jan 26
+          February: Feb 11, Feb 16, Feb 18, Feb 23
+          March: Mar 18
+          April: Apr 05, Apr 08
+          May: May 27
+          June: Jun 14, Jun 18, Jun 21, Jun 22
+          July: Jul 05, Jul 08 (Two Flights), Jul 13
+          August: Aug 05
+          September: Sep 20 (Two Flights), Sep 21, Sep 30 (Two Flights)
+          October: Oct 13, Oct 21, Oct 22, Oct 26
+          November: Nov 18, Nov 30
+          December: Dec 02, Dec 07
+      corroborated_flights:
+        - date: October 21, 2025
+          detail: SU-BTT flew Cairo to Israel reportedly carrying head of Egyptian intelligence Hassan Rashad, per Israeli Channel 12 News. Cited on X as a corroborated example of the Cairo–Israel routing.
+      relevant_dates: Multiple overlaps 2022–Sept 2025; Provo-area activity Sept 4–10, 2025 (arrival 9/4, departure morning of 9/10)
+      tracking_notes: Public ADS-B data shows unusual frequency near targets. X posts include timelines, flight maps, spreadsheets, and Candace Owens show clips. Israel-trip list compiled by @nihilox and shared by @ProjectConstitu.
       trips:
         - trip_entry:
             start: Provo area, Utah (arrivals noted around early September 2025)
@@ -277,12 +313,23 @@ planes:
 
   - plane:
       identifier: SU-BND
+      nickname: "Yellow plane"
       aircraft_type: Gulfstream (Egyptian government/military)
       operator_owner: Egyptian Government / Air Force
+      role_in_claims: Second of the two specific Egyptian-registered planes (with SU-BTT) alleged to have repeatedly overlapped Erika Kirk's locations/travel.
       y_interesting: |
-        Egyptian government jet frequently mentioned alongside SU-BTT in X discussions and Candace Owens timelines. Alleged overlaps with Erika Kirk's locations (dozens claimed from 2022–2025). One report of it being on the tarmac in Provo around the time of the Sept 10, 2025 assassination. X posts note it for maintenance at Duncan Aviation in Provo. John Cullen (@I_Am_JohnCullen) later dismissed strong association with the assassination, citing long-standing Falcon aircraft maintenance contracts dating back to 1999. Theories (amplified on X) involve foreign surveillance or ops; critics say many claimed overlaps are inaccurate. Part of "Egyptian Plane Armada."
-      relevant_dates: 2022–Sept 2025 overlaps; Provo tarmac/maintenance around Sept 10, 2025
-      tracking_notes: ADS-B data and X OSINT timelines; maintenance context noted.
+        Egyptian government jet frequently mentioned alongside SU-BTT in X discussions and Candace Owens timelines. Alleged overlaps with Erika Kirk's locations (dozens claimed from 2022–2025; grouped with SU-BTT in the 68–73 overlap claims). One report of it being on the tarmac in Provo around the time of the Sept 10, 2025 assassination. X posts note it for maintenance at Duncan Aviation in Provo. John Cullen (@I_Am_JohnCullen) later dismissed strong association with the assassination, citing long-standing Falcon aircraft maintenance contracts dating back to 1999. Theories (amplified on X) involve foreign surveillance or ops; critics say many claimed overlaps are inaccurate. Part of "Egyptian Plane Armada."
+      provo_timeline:
+        on_ground: On the ground in Provo all day 9/10/2025 with transponder/power on the entire day.
+        departure: Departed 9/11/2025.
+        transponder_activity: |
+          Claim (screenshot referenced on X): the plane does not move for days, and its transponder turns ON only THREE times, each matching a key arrival:
+            1. When Erika lands at Provo at 10:05 AM
+            2. When Andrew lands at Scottsdale (alleged pickup of Erika's cell phone) at 1:40 PM
+            3. When Tyler lands at Provo at 2:29 PM
+          Quote: "This Egyptian plane doesn't move for days and transponder ONLY goes on THESE 3 TIMES."
+      relevant_dates: 2022–Sept 2025 overlaps; on ground in Provo all day Sept 10, 2025 (departed Sept 11); maintenance at Duncan Aviation context
+      tracking_notes: ADS-B data and X OSINT timelines; maintenance context noted. Transponder-activity claim tied to specific Erika-related arrivals/departures.
       trips:
         - trip_entry:
             start: Various international / Provo area
@@ -299,9 +346,20 @@ planes:
       aircraft_type: Egyptian government/military jet (part of Armada fleet)
       operator_owner: Egyptian Government / Air Force
       y_interesting: |
-        Part of the Egyptian Plane Armada discussed on X in context of Charlie Kirk assassination theories. Limited specific individual posts beyond general fleet patterns with SU-BTT and SU-BND (tracking overlaps with Kirk family movements, Provo-area activity). Grouped in broader "Armada" scrutiny alongside maintenance and surveillance claims.
-      relevant_dates: 2022–2025 overlaps with Kirk events
-      tracking_notes: Part of fleet ADS-B patterns noted in X OSINT.
+        Part of the Egyptian Plane Armada discussed on X in context of Charlie Kirk assassination theories. Cited as one of five Egyptian planes (with SU-BTT, SU-BND, SU-BTV, SU-BGM) appearing in Provo in the months leading to the assassination. Has its own compiled Israel-trip date list (see israel_trips). Limited specific individual posts beyond general fleet patterns with SU-BTT and SU-BND (tracking overlaps with Kirk family movements, Provo-area activity). Grouped in broader "Armada" scrutiny alongside maintenance and surveillance claims.
+      israel_trips: |
+        Compiled by @nihilox and shared by @ProjectConstitu (same format as SU-BTT):
+          January: Jan 05, Jan 08, Jan 12
+          February: Feb 05, Feb 11, Feb 16, Feb 23
+          March: Mar 02, Mar 25
+          April: Apr 15
+          May: May 10, May 17
+          June: Jun 14 (Two), Jun 21, Jun 24
+          July: Jul 02, Jul 05, Jul 06, Jul 08, Jul 13
+          September: Sep 20
+          December: Dec 14
+      relevant_dates: 2022–2025 overlaps with Kirk events; Provo-area presence in months before Sept 2025
+      tracking_notes: Part of fleet ADS-B patterns noted in X OSINT. Israel-trip list compiled by @nihilox.
       trips:
         - trip_entry:
             start: International routing
@@ -318,9 +376,23 @@ planes:
       aircraft_type: Egyptian government/military jet (part of Armada fleet)
       operator_owner: Egyptian Government / Air Force
       y_interesting: |
-        Part of the Egyptian Plane Armada discussed on X in context of Charlie Kirk assassination theories. Limited specific individual posts beyond general fleet patterns with SU-BTT and SU-BND (tracking overlaps with Kirk family movements, Provo-area activity). Grouped in broader "Armada" scrutiny alongside maintenance and surveillance claims.
-      relevant_dates: 2022–2025 overlaps with Kirk events
-      tracking_notes: Part of fleet ADS-B patterns noted in X OSINT.
+        Part of the Egyptian Plane Armada discussed on X in context of Charlie Kirk assassination theories. Cited as one of five Egyptian planes (with SU-BTT, SU-BND, SU-BTU, SU-BGM) appearing in Provo in the months leading to the assassination. Has its own compiled Israel-trip date list (see israel_trips). Limited specific individual posts beyond general fleet patterns with SU-BTT and SU-BND (tracking overlaps with Kirk family movements, Provo-area activity). Grouped in broader "Armada" scrutiny alongside maintenance and surveillance claims.
+      israel_trips: |
+        Compiled by @nihilox and shared by @ProjectConstitu (same format as SU-BTT):
+          January: Jan 05, Jan 08 (Two), Jan 12 (Two), Jan 14, Jan 21, Jan 28, Jan 29
+          February: Feb 12, Feb 18, Feb 19
+          March: Mar 02, Mar 09
+          April: Apr 08
+          May: May 10
+          June: Jun 17 (Two)
+          July: Jul 06, Jul 15, Jul 19
+          August: Aug 10
+          September: Sep 02, Sep 23, Sep 24
+          October: Oct 01, Oct 29
+          November: Nov 04 (Two), Nov 25
+          December: Dec 04
+      relevant_dates: 2022–2025 overlaps with Kirk events; Provo-area presence in months before Sept 2025
+      tracking_notes: Part of fleet ADS-B patterns noted in X OSINT. Israel-trip list compiled by @nihilox.
       trips:
         - trip_entry:
             start: International routing
@@ -350,6 +422,136 @@ planes:
             start_time: Multiple instances 2022–2025
             destination_time: Event-linked
             other_properties: Part of multi-jet Egyptian government fleet.
+
+  - plane:
+      identifier: SAM650
+      aircraft_type: USAF Special Air Mission aircraft (VIP/government transport)
+      callsign: SAM650
+      operator_owner: US Air Force (Special Air Mission)
+      y_interesting: |
+        Discussed in parallel SAM-flight threads on X tying government VIP aviation to the Charlie Kirk assassination timeline. Cited alongside SAM702 and SAM 99-0404 for "suspicious itineraries" — example routing referenced: Wilmington → Andrews → Nashville — and syncs with Colorado Springs (military/intel hub) and the Fort Huachuca timeline. Presented as part of the broader question of high-level government movement around the event. No official link to the shooting; user theory only.
+      relevant_dates: Around September 8-11, 2025 (event/aftermath window)
+      tracking_notes: Public ADS-B and X OSINT; bundled with SAM702 and SAM 99-0404 in timeline threads.
+      trips:
+        - trip_entry:
+            start: Wilmington area (example routing cited)
+            destination: Joint Base Andrews → Nashville (example routing cited); Colorado Springs sync noted
+            y_interesting: |
+              Suspicious itinerary flagged on X (Wilmington → Andrews → Nashville). Tied to Colorado Springs and Fort Huachuca timelines in related threads.
+            who: US Air Force (Special Air Mission)
+            start_time: September 2025 event window
+            destination_time: Various
+            other_properties: SAM callsign government/VIP transport. Part of SAM-flight cluster scrutiny.
+
+  - plane:
+      identifier: SAM702
+      aircraft_type: USAF Special Air Mission aircraft (VIP/government transport)
+      callsign: SAM702
+      operator_owner: US Air Force (Special Air Mission)
+      y_interesting: |
+        Discussed in parallel SAM-flight threads on X alongside SAM650 and SAM 99-0404. Cited for suspicious itineraries and timeline syncs with Colorado Springs and the Fort Huachuca meetings (alleged Sept 8-9, 2025) one day before the assassination. Theories involve command-and-control / high-level coordination. No official link; user theory only.
+      relevant_dates: Around September 8-11, 2025 (event/aftermath window)
+      tracking_notes: Public ADS-B and X OSINT; bundled with SAM650 and SAM 99-0404 in timeline threads.
+      trips:
+        - trip_entry:
+            start: Various (per OSINT)
+            destination: Colorado Springs / event-area syncs noted
+            y_interesting: |
+              Itinerary flagged on X for timeline sync with Colorado Springs and Fort Huachuca pre-event activity.
+            who: US Air Force (Special Air Mission)
+            start_time: September 2025 event window
+            destination_time: Various
+            other_properties: SAM callsign government/VIP transport. Part of SAM-flight cluster scrutiny.
+
+  - plane:
+      identifier: Pilatus PC-12 (unconfirmed, no tail number)
+      aircraft_type: Pilatus PC-12 (single-engine turboprop)
+      operator_owner: Unknown
+      y_interesting: |
+        Low-confidence mention only. Some X/online discussions reference a Pilatus PC-12 "circling the area" around Orem/Provo on Sept 10, 2025, grouped with the "local planes contracted to do back-and-forth passes" category (alongside ISR/survey types like N1098L and the MARC survey plane N59906). No tail number, operator, flight log, or sourced flight track has been attached to this mention in the available material — it appears as vague secondhand "occasional references" in compilation posts. Captured here so the mention is not lost, but it does NOT meet the public-site sourcing bar and is intentionally not given a Level 3 page. If a tail number or tracked flight surfaces, promote it to a full entry then.
+      relevant_dates: September 10, 2025 (claimed, unverified)
+      tracking_notes: No public ADS-B record, tail number, or specific source identified. Treat as rumor pending a concrete flight track.
+      trips:
+        - trip_entry:
+            start: Unknown
+            destination: Reported circling near Orem/UVU area (unverified)
+            y_interesting: |
+              Vague "circling the area" claim with no supporting flight data. Fits the general "local contracted survey/pattern flying" theme but is uncorroborated and lacks a tail number.
+            who: Unknown
+            start_time: September 10, 2025 (claimed)
+            destination_time: Unknown
+            other_properties: Pilatus PC-12. No identifier; lowest-confidence item in the plane list.
+
+egyptian_overlap_claims_summary:
+  planes_focus: SU-BTT ("blue plane") and SU-BND ("yellow plane") primary; SU-BTU, SU-BTV, SU-BGM cited as additional Armada members (five tails total).
+  time_range: 2022 to September 2025
+  cited_overlap_numbers:
+    - 73 overlaps
+    - 72 times
+    - "70+"
+    - 68 overlaps (including international trips)
+  charlie_subset: Out of 68 overlaps, 29 are claimed to have included Charlie Kirk (the rest attributed to Erika Kirk only).
+  primary_target_claim: Most overlaps attributed to Erika Kirk's locations/travel; planes also cited in cities of TPUSA / TPUSA Faith events and Charlie Kirk appearances.
+  candace_owens_clarification: |
+    Candace Owens (@RealCandaceO) discussed the data on her show, shared screenshots/spreadsheets, called it suspicious, and stated she sent information to the FBI. She clarified that NO ONE claimed Erika or Charlie flew *on* the planes — only that the planes were in the same locations/cities as Erika, Charlie, or TPUSA events. Quote: planes crossed into "so many cities that Charlie or myself or other TPUSA faith people were speaking in."
+  statistical_framing: Proponents call the pattern "statistically near impossible without intent"; critics call the overlap criteria too loose (see criticisms_and_debunkings).
+
+geographic_concentration:
+  states_concentration: Five states cited in one analysis - Missouri, Delaware, Utah, Nebraska, Kansas.
+  key_locations:
+    - location: Provo / Orem, UT
+      detail: Key focus. SU-BTT arrived ~9/4, departed morning 9/10; SU-BND on ground all day 9/10 (transponder/power on), departed 9/11. SU-BTU, SU-BTV, SU-BGM cited in preceding months. Cross-referenced with TPUSA events.
+    - location: Wichita, KS
+      detail: SU-BTT made "no fewer than 8 stops." Critics cite Wichita as the "Air Capital of the World" / Dassault maintenance hub (Yingling Aviation, FAA Part 145) as a routine explanation.
+    - location: Delaware
+      detail: |
+        An Egyptian plane landed and stayed the night of 9/10 (assassination day). Candace Owens posted that "a foreign dignitary was picked up after arriving from Provo the morning of Charlie's assassination on the Egyptian plane, and then transferred to 920 King for some joint operation" - 920 N King St, Wilmington, a joint DHS/FBI/DEA office (building otherwise mostly law firm + eatery).
+    - location: Scottsdale, AZ
+      detail: Cell-phone pickup claims - Andrew alleged to land at Scottsdale 1:40 PM to pick up Erika's cell phone (tied to SU-BND transponder activity).
+    - location: Nashville, TN
+      detail: Mentioned in broader SAM-flight itineraries.
+    - location: Colorado Springs, CO
+      detail: Military/intel hub; linked to SAM flights and Fort Huachuca timeline in related threads.
+    - location: Fort Huachuca, AZ
+      detail: Army intelligence base; alleged pre-event meetings ~Sept 8-9, 2025 (tied to SAM 99-0404, SAM650, SAM702).
+
+israel_connections_context: |
+  Users claim the Egyptian jets routinely fly to Israel with transponders off at certain points, alleging logs are falsified as CAI-CAI (Cairo-Cairo) or N/A-CAI. Full per-plane date lists are recorded under each plane's israel_trips field (SU-BTT, SU-BTV, SU-BTU). One corroborated example cited: SU-BTT flew Cairo to Israel on Oct 21, 2025 reportedly carrying head of Egyptian intelligence Hassan Rashad (per Israeli Channel 12 News). Patterns described by proponents as "consistent and undeniable" and linked to possible joint ops; possible motives floated include geopolitical / Israel ties via the Egypt peace treaty and surveillance of pro-Israel voices. Presented as user theory, not established fact.
+
+criticisms_and_debunkings:
+  - source: "@Liz_Wheeler"
+    point: Loose overlap definition
+    detail: |
+      Spreadsheets used +/- 3 days and the same "region" (50-100 miles), not the same day / same airport. Quote: "When you narrow the parameters to Egyptian planes landing on the same day in the same location, the overlap dwindles to... one. On 9/10 in Utah."
+  - source: Various independent analyses referenced on X
+    point: Data errors
+    detail: UTC vs. local time mistakes (e.g., Provo departure timing), wrong continents/locations (~60-66% of claims allegedly incorrect in some analyses), routine maintenance misinterpreted as surveillance.
+  - source: Critics / aviation context
+    point: Wichita stops are routine
+    detail: Wichita stops explained as normal for Dassault/Falcon jet maintenance, not surveillance.
+  - source: Maintenance contracts
+    point: Long-standing service relationships
+    detail: Duncan Aviation - Egyptian Air Force VIP maintenance contracts; John Cullen (@I_Am_JohnCullen) cited Falcon maintenance contracts dating back to 1999 to dismiss strong assassination association. Transponder issues described as common for certain ops.
+  - source: Erika Kirk responses
+    point: Denials / coincidence framing
+    detail: |
+      Pushed back with flight logs, photos, alibis; denied being in claimed places; pregnancy/hospital references in some counters. Attributed quote: "I actually had no idea there were Egyptian planes... It could very well just be a coincidence." Offered evidence.
+  - source: Grok / general reviews
+    point: No verified strict co-locations
+    detail: Grok responses note public ADS-B data shows activity but no proven surveillance or assassination link; no verified co-locations in strict same-time/same-place terms per some reviews; official investigation focuses on a lone shooter.
+
+source_attribution:
+  key_accounts:
+    - "@RealCandaceO (Candace Owens) - show segments, spreadsheets, FBI submission, Nov-Dec 2025 updates"
+    - "@ProjectConstitu - shared compiled Israel-trip lists"
+    - "@itsmorganariel"
+    - "@We_Are_TheElite"
+    - "@nihilox - credited for data/Israel-trip compilation"
+    - "@Liz_Wheeler - primary critic of overlap methodology"
+    - "@I_Am_JohnCullen (John Cullen) - maintenance-contract counterpoint; ISR plane analysis"
+  data_types: Screenshots of ADS-B / FlightRadar24 / FlightAware data, spreadsheets, flight logs, videos.
+  caveats: Numbers and focus vary across posts (68-73 overlaps; Erika vs. Charlie vs. TPUSA). Patterns debated as surveillance vs. coincidence/maintenance/diplomatic ops. No official confirmation of tracking intent or assassination connection in the compiled discussions. Certain aircraft are subject to ADS-B/FlightRadar24 display limitations.
+  search_pointers: Search X for cited post IDs, the accounts above, or terms like "SU-BTT spreadsheet" / "Egyptian planes Provo." Flight data publicly viewable on FlightRadar24 / ADS-B Exchange.
 
 ISR_Operations_Context: |
   Program-level page linking representative LASAI Global 6500 fleet aircraft including N1098L and N2100L. Focus on US Army ISR/"training" operations. X discussions tie the fleet to surveillance questions around the Sept 10, 2025 Charlie Kirk assassination (low-altitude and post-event activity).
