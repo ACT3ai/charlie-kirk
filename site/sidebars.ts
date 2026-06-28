@@ -24,6 +24,7 @@ const sidebars: SidebarsConfig = {
     {type: 'doc', id: 'UVU/overview', label: 'UVU Campus'},
     {type: 'doc', id: 'TPUSA/overview', label: 'TPUSA'},
     {type: 'doc', id: 'Tent/overview', label: 'The Tent'},
+    {type: 'doc', id: 'Mic/overview', label: 'Microphone'},
     {type: 'doc', id: 'Theories/overview', label: 'Theories'},
     {type: 'doc', id: 'Timeline/overview', label: 'Timeline'},
     {type: 'doc', id: 'People/overview', label: 'People'},
