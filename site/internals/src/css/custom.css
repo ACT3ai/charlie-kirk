@@ -29,6 +29,12 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
+/* Remove the theme breadcrumb bar (home icon > chevron > section) site-wide.
+   The inline blue "← Home" button in page content is unaffected. */
+.theme-doc-breadcrumbs {
+  display: none !important;
+}
+
 /* Hide expand arrow and child items for categories marked no-expand */
 .no-expand-sidebar > .menu__list {
   display: none !important;
