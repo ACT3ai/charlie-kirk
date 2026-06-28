@@ -90,8 +90,8 @@ To require all United States Intelligence Community agencies to release all info
    5. All SIGINT, HUMINT, IMINT, and MASINT products related to foreign intelligence operations in the Utah area
 
 **Aircraft and Surveillance Operations (Items #1, #15, #50, #82-#87, #157-#161):**
-   1. All intelligence regarding Egyptian aircraft SU-BTT, SU-BND, SU-BTU, SU-BTV, SU-BGM, and Egyptian military aircraft T7ELL and EJM36
-   2. All intelligence regarding surveillance aircraft N1098L (HADES spy plane), including who contracted, operated, and received its surveillance feed
+   1. All intelligence regarding Egyptian aircraft [SU-BTT](/Planes/SU-BTT), [SU-BND](/Planes/Egyptian-Armada), [SU-BTU](/Planes/Egyptian-Armada), [SU-BTV](/Planes/Egyptian-Armada), [SU-BGM](/Planes/Egyptian-Armada), and Egyptian military aircraft T7ELL and EJM36
+   2. All intelligence regarding surveillance aircraft [N1098L](/Planes/N1098L/overview) (HADES spy plane), including who contracted, operated, and received its surveillance feed
    3. All intelligence regarding military or civilian drones operating at or near UVU on September 10, 2025
    4. All intelligence regarding U.S. Air Force VIP transport jet 99-0404 (SAM callsign) flights September 8-9, 2025
    5. All intelligence regarding any aircraft on the Schedule A plane list that flew with transponders off
@@ -143,7 +143,7 @@ To require all United States Intelligence Community agencies to release all info
 (a) **Mandatory SIGINT Queries.** Within 30 days of enactment, the National Security Agency shall conduct targeted queries of XKeyscore and all comparable mass surveillance, signals intelligence, and communications intelligence tools, databases, and systems for:
    1. All persons listed in Schedule B (categories P1 through P35), using all known names, aliases, phone numbers, email addresses, and device identifiers
    2. All phone numbers and device identifiers referenced in Schedule A, including but not limited to the approximately 12 foreign-registered cell phones, all foreign roaming phones, and all phones identified through cell tower dumps
-   3. All aircraft tail numbers listed in Schedule A: SU-BTT, SU-BND, SU-BTU, SU-BTV, SU-BGM, N1098L, N888KG, N59906, N560TW, N102DZ, N40JD, N872RA, 99-0404, T7ELL, EJM36, N55906, and N582MM
+   3. All aircraft tail numbers listed in Schedule A: SU-BTT, SU-BND, SU-BTU, SU-BTV, SU-BGM, N1098L, [N888KG](/Planes/N888KG), [N59906](/Planes/N59906), [N560TW](/Planes/N560TW), [N102DZ](/Planes/N102DZ), [N40JD](/Planes/N40JD), [N872RA](/Planes/N872RA), 99-0404, T7ELL, EJM36, [N55906](/Planes/N55906), and N582MM
    4. All addresses and locations referenced in Schedule A, including Fort Huachuca AZ, One Rodney Square Wilmington DE, UVU campus, Provo Municipal Airport, and the AES facility in Nashville
    5. All financial account numbers, wire transfer identifiers, and transaction records referenced in Schedule A
 

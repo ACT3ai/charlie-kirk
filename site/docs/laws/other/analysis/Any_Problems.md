@@ -260,7 +260,7 @@ Laws 3 and 4 now have: (1) mandatory polygraph requirements for all team members
 
 **Problem:** NRO and NGA hold satellite imagery of the UVU campus area. This imagery could show vehicle movements, aircraft positions, and persons at the scene that corroborate or contradict the official narrative. The law requires disclosure of existing intelligence products but does not specifically require searching satellite imagery archives.
 
-**Solution:** Add a Schedule A item requiring NRO/NGA to produce all satellite imagery of the UVU campus and surrounding 10-mile radius from September 8-12, 2025, including any overhead imagery showing aircraft SU-BTT, N1098L, N888KG, or drones.
+**Solution:** Add a Schedule A item requiring NRO/NGA to produce all satellite imagery of the UVU campus and surrounding 10-mile radius from September 8-12, 2025, including any overhead imagery showing aircraft [SU-BTT](/Planes/SU-BTT), [N1098L](/Planes/N1098L/overview), [N888KG](/Planes/N888KG), or drones.
 
 ---
 

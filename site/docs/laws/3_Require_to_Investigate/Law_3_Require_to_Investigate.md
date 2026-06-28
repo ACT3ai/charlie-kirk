@@ -154,9 +154,9 @@ The Congress finds the following:
 
 **Foreign Intelligence Service Involvement:**
    1. The approximately 12 Israeli-registered cell phones at UVU -- identify holders, track locations, determine purpose
-   2. Egyptian aircraft SU-BTT and SU-BND arrivals, passengers, cargo, and activities in Utah
+   2. Egyptian aircraft [SU-BTT](/Planes/SU-BTT) and [SU-BND](/Planes/Egyptian-Armada) arrivals, passengers, cargo, and activities in Utah
    3. Egyptian military contractors with Defense Attache badges at Provo Airport -- identity, activities, connections
-   4. Surveillance aircraft N1098L (HADES spy plane) -- who contracted it, who received the feed, why it was circling before the assassination
+   4. Surveillance aircraft [N1098L](/Planes/N1098L/overview) (HADES spy plane) -- who contracted it, who received the feed, why it was circling before the assassination
    5. Counter-UAS testing at Provo Airport in the days before the assassination
    6. Any foreign intelligence service presence in the security zone at UVU
 
@@ -188,7 +188,7 @@ The Congress finds the following:
    3. Electronic equipment installed at or directed at Lance Twiggs' residence
 
 **Pre-Planning and Foreknowledge:**
-   1. Meetings at Fort Huachuca, AZ (September 1-11, 2025) -- attendees, topics, connection to Kirk, and aircraft N582MM's documented presence at Fort Huachuca on October 4–5, 2025
+   1. Meetings at Fort Huachuca, AZ (September 1-11, 2025) -- attendees, topics, connection to Kirk, and aircraft [N582MM](/Planes/N582MM)'s documented presence at Fort Huachuca on October 4–5, 2025
    2. Meetings at One Rodney Square, Wilmington, DE (September 1-11, 2025)
    3. TPUSA security planning for UVU -- the planning window timeline compared to standard practice for comparable events
    4. Charlie Kirk's communications expressing fear for his life -- who he told, when, exact content
@@ -313,7 +313,7 @@ Each item in Schedule A is individually mandated for complete disclosure. Partia
 
 ### Intelligence Service Discovery (#1–#57)
 
-* #1: Aircraft Records for Listed Planes: The investigation teams shall investigate and produce all records relating to the following aircraft: SU-BTT, SU-BND, SU-BTU, SU-BTV, SU-BGM, N1098L, N888KG, N59906, N560TW, N102DZ, N40JD, N872RA, 99-0404, T7ELL, EJM36, N55906, and N582MM — including location, passengers, crew, cargo, and anyone who flew on them within 2 weeks before or on the day of the assassination. The investigation shall encompass all records related to investigating the assassination or anything peripheral, or any connection to anyone in the Charlie Kirk investigation.
+* #1: Aircraft Records for Listed Planes: The investigation teams shall investigate and produce all records relating to the following aircraft: SU-BTT, SU-BND, [SU-BTU](/Planes/Egyptian-Armada), [SU-BTV](/Planes/Egyptian-Armada), [SU-BGM](/Planes/Egyptian-Armada), N1098L, [N888KG](/Planes/N888KG), [N59906](/Planes/N59906), [N560TW](/Planes/N560TW), [N102DZ](/Planes/N102DZ), [N40JD](/Planes/N40JD), [N872RA](/Planes/N872RA), 99-0404, T7ELL, EJM36, [N55906](/Planes/N55906), and N582MM — including location, passengers, crew, cargo, and anyone who flew on them within 2 weeks before or on the day of the assassination. The investigation shall encompass all records related to investigating the assassination or anything peripheral, or any connection to anyone in the Charlie Kirk investigation.
 
 * #2: Foreign Threats Against Charlie Kirk: The investigation teams shall investigate and produce all records relating to threats, plans, or actions by any foreign intelligence service or country toward assassination of Charlie Kirk, including consideration of such actions, or hiring contractors to carry them out. The investigation shall encompass all records relating to any foreign government or entity that discussed, planned, or considered harm to Charlie Kirk in any capacity.
 

@@ -69,8 +69,8 @@ To require the Department of Justice, the Federal Bureau of Investigation, and a
    5. CBP biometric data for foreign arrivals during the relevant period
 
 **Aircraft Records (Items #81-#86 and related):**
-   1. All flight records, passenger manifests, and crew lists for Egyptian aircraft SU-BTT, SU-BND, SU-BTU, SU-BTV, and SU-BGM
-   2. All records for surveillance aircraft N1098L (HADES spy plane), N59906 (MARC Inc. Piper), N888KG, N560TW, N40JD, N872RA, N102DZ, and N55906
+   1. All flight records, passenger manifests, and crew lists for Egyptian aircraft [SU-BTT](/Planes/SU-BTT), [SU-BND](/Planes/Egyptian-Armada), [SU-BTU](/Planes/Egyptian-Armada), [SU-BTV](/Planes/Egyptian-Armada), and [SU-BGM](/Planes/Egyptian-Armada)
+   2. All records for surveillance aircraft [N1098L](/Planes/N1098L/overview) (HADES spy plane), [N59906](/Planes/N59906) (MARC Inc. Piper), [N888KG](/Planes/N888KG), [N560TW](/Planes/N560TW), [N40JD](/Planes/N40JD), [N872RA](/Planes/N872RA), [N102DZ](/Planes/N102DZ), and [N55906](/Planes/N55906)
    3. All records for U.S. Air Force VIP transport jet 99-0404 (SAM callsign) and Egyptian military aircraft T7ELL and EJM36
    4. CBP inspection records, cargo manifests, and security clearance records for all listed aircraft
    5. Who contracted, paid for, and received data from any surveillance aircraft

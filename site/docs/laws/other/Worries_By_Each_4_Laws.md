@@ -55,7 +55,7 @@ The core assumption: **The U.S. government is actively covering for Israel in th
 
 ### CC-7: Foreign Government Pressure to Suppress
 
-**WORRY:** Israel, Egypt, and France will exert diplomatic pressure to prevent release of records implicating their nationals or intelligence services. Israel will invoke intelligence-sharing agreements, threaten to cut off intelligence cooperation, and mobilize AIPAC to pressure Congress. Egypt will claim diplomatic immunity for the military contractors on SU-BTT. France will invoke its own national security interests regarding DGSE activities.
+**WORRY:** Israel, Egypt, and France will exert diplomatic pressure to prevent release of records implicating their nationals or intelligence services. Israel will invoke intelligence-sharing agreements, threaten to cut off intelligence cooperation, and mobilize AIPAC to pressure Congress. Egypt will claim diplomatic immunity for the military contractors on [SU-BTT](/Planes/SU-BTT). France will invoke its own national security interests regarding DGSE activities.
 
 **FIX:** (1) Explicit statutory override of all intelligence-sharing agreements, MOUs, and diplomatic arrangements (Law 4 has this). (2) Require the Secretary of State to invoke MLATs within 15 days (Law 4 has this). (3) Add a provision that any foreign government refusal to cooperate triggers an automatic public report to Congress naming the refusing government and the specific records requested. (4) Add a "No Diplomatic Immunity for Evidence" clause: no claim of diplomatic immunity, sovereign immunity, or act-of-state doctrine may be used to withhold records from investigation teams.
 

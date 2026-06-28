@@ -19,7 +19,7 @@
 - FOIA and GRAMA requests have been blocked
 - Approximately 12 Israeli-registered cell phones were detected at the shooting site
 - Egyptian military aircraft delivered personnel with Defense Attache badges to Provo Airport days before the assassination
-- A HADES surveillance aircraft (N1098L) was circling 35 minutes before the shooting
+- A HADES surveillance aircraft ([N1098L](/Planes/N1098L/overview)) was circling 35 minutes before the shooting
 - The official narrative does not withstand scrutiny
 
 ---
@@ -262,7 +262,7 @@
 # Slide 20: Intelligence Service Discovery (#1-#56)
 **56 Items Covering Foreign Intel Activity**
 
-- **Aircraft records** for 16+ aircraft including Egyptian planes SU-BTT, SU-BND and HADES spy plane N1098L
+- **Aircraft records** for 16+ aircraft including Egyptian planes [SU-BTT](/Planes/SU-BTT), [SU-BND](/Planes/Egyptian-Armada) and HADES spy plane N1098L
 - **Foreign threats** against Charlie Kirk from any intelligence service or country
 - **Foreigners employed by TPUSA** or with access to TPUSA operations
 - **TPUSA donor contact** with foreign intelligence services
@@ -308,9 +308,9 @@
 # Slide 23: #1 Aircraft Records for Listed Planes
 **16+ Aircraft Connected to the Assassination**
 
-- Egyptian aircraft: **SU-BTT, SU-BND, SU-BTU, SU-BTV, SU-BGM**
+- Egyptian aircraft: **SU-BTT, SU-BND, [SU-BTU](/Planes/Egyptian-Armada), [SU-BTV](/Planes/Egyptian-Armada), [SU-BGM](/Planes/Egyptian-Armada)**
 - HADES spy plane: **N1098L** -- circled UVU 35 minutes before the shooting
-- Surveillance aircraft: **N59906** (MARC Inc. Piper), **N888KG, N560TW, N40JD, N872RA, N102DZ, N55906**
+- Surveillance aircraft: **[N59906](/Planes/N59906)** (MARC Inc. Piper), **[N888KG](/Planes/N888KG), [N560TW](/Planes/N560TW), [N40JD](/Planes/N40JD), [N872RA](/Planes/N872RA), [N102DZ](/Planes/N102DZ), [N55906](/Planes/N55906)**
 - U.S. Air Force VIP transport: **99-0404** (SAM callsign)
 - Egyptian military: **T7ELL, EJM36**
 - Required disclosures: location, passengers, crew, cargo for all aircraft within 2 weeks before and on the day of the assassination

@@ -390,20 +390,20 @@ The investigation shows that an intelligence service is very likely involved wit
   |-------------|------------------------------------------------------------------------------|
   | SU-BTT      | Egyptian-registered Falcon 7X / Gulfstream class (Yellow plane)              |
   | SU-BND      | Egyptian-registered Gulfstream G550 (Blue plane)                             |
-  | SU-BTU      | Egyptian-registered                                                          |
-  | SU-BTV      | Egyptian-registered                                                          |
-  | SU-BGM      | Egyptian-registered Gulfstream IV                                            |
+  | [SU-BTU](/Planes/Egyptian-Armada)      | Egyptian-registered                                                          |
+  | [SU-BTV](/Planes/Egyptian-Armada)      | Egyptian-registered                                                          |
+  | [SU-BGM](/Planes/Egyptian-Armada)      | Egyptian-registered Gulfstream IV                                            |
   | N1098L      | Bombardier Global 6500 - HADES spy plane (operated by LASAI Aviation II LLC) |
-  | N888KG      | Private jet (owned by N888KG LLC, Lehi, Utah)                                |
-  | N59906      | Piper PA-31 Navajo Chieftain (operated by MARC Inc. - surveillance)          |
-  | N560TW      | Cessna Citation XLS twin-jet (owned by T.W. Lewis Aviation LLC)              |
-  | N102DZ      | Charlie Kirk's plane (15-16 passengers)                                      |
-  | N40JD       | Beechcraft Premier I (6 seats)                                              |
-  | N872RA      | Hawker Beechcraft (7 seats)                                                  |
+  | [N888KG](/Planes/N888KG)      | Private jet (owned by N888KG LLC, Lehi, Utah)                                |
+  | [N59906](/Planes/N59906)      | Piper PA-31 Navajo Chieftain (operated by MARC Inc. - surveillance)          |
+  | [N560TW](/Planes/N560TW)      | Cessna Citation XLS twin-jet (owned by T.W. Lewis Aviation LLC)              |
+  | [N102DZ](/Planes/N102DZ)      | Charlie Kirk's plane (15-16 passengers)                                      |
+  | [N40JD](/Planes/N40JD)       | Beechcraft Premier I (6 seats)                                              |
+  | [N872RA](/Planes/N872RA)      | Hawker Beechcraft (7 seats)                                                  |
   | 99-0404     | U.S. Air Force C-37A Gulfstream V VIP jet (SAM - Special Air Mission)        |
   | T7ELL       | Egyptian military plane                                                      |
   | EJM36       | Egyptian military plane                                                      |
-  | N55906      | Mentioned as "other interesting flight"                                      |
+  | [N55906](/Planes/N55906)      | Mentioned as "other interesting flight"                                      |
 
 #2: Does the FBI, DoJ or any of the US intelligence community have any knowledge of threats, plans
   or actions by any foreign intelligence service or country towards assassination of Charlie Kirk?
