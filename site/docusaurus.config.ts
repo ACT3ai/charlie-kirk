@@ -147,6 +147,8 @@ const config: Config = {
           { from: "/Before/PreEvent_Flights_And_Travel", to: "/Before/overview" },
           { from: "/CIA/overview", to: "/Proof_Intel_Services/overview" },
           { from: "/Influencers/podcasts-project-costa-2", to: "/Influencers/podcasts-project-constitution" },
+          { from: "/property_locations/overview", to: "/Locations/overview" },
+          { from: "/property_locations", to: "/Locations/overview" },
         ],
       },
     ],
