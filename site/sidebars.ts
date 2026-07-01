@@ -50,7 +50,7 @@ const sidebars: SidebarsConfig = {
     {type: 'doc', id: 'Proof_Intel_Services/overview', label: 'Proof Intel Services'},
     {type: 'doc', id: 'Fix/overview', label: 'Your Actions Fix It'},
     {type: 'doc', id: 'Gun_Bullet/overview', label: 'Gun & Bullet'},
-    {type: 'doc', id: 'Patsys/overview', label: 'Patsys'},
+    {type: 'doc', id: 'distraction_people/overview', label: 'Distraction People'},
     {type: 'doc', id: 'GoogleSearches/overview', label: 'Google Searches'},
     {type: 'doc', id: 'gov/overview', label: 'Government'},
     {type: 'doc', id: 'key_individuals/overview', label: 'Key Individuals'},
