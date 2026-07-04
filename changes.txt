@@ -1,3 +1,87 @@
+2026_07_04_1505 — intelligence Level 2 expansion (grok_write.mdx workflow)
+
+GROK_QUERY_DIR: ~/T/_ck/grok_query/foreignwave
+
+WHAT: Expanded intelligence from overview+Mossad stub to full foreign-intelligence section with 9 new Level 3 pages. Mapped all 10 grok files to phones, Egyptian jets, Mossad, CornerShot, search OSINT, TPUSA recruitment, French Legion, and Islamabad link. Restructured overview to Assess_Manual three-column TOC (4-4-2). Expanded Mossad with grok linkage table. Cross-links Israel, US_Intelligence, Proof_Intel_Services, CoverUp without duplicating deep dives. Updated planning_grok.yaml, grok_planning.txt, pages.csv (+9 rows, overview+Mossad updated).
+
+GROK → PAGE MAPPING:
+- 1_results.txt → overview + Investigation_Index
+- 2_results.txt → Mossad
+- 3_results.txt → Foreign_Phones_UVU
+- 4_results.txt → Egyptian_Foreign_Ops
+- 5_results.txt → Chinese_Russian_Iranian_Presence
+- 6_results.txt → Islamabad_Serena_Link
+- 7_results.txt → CornerShot_Technology
+- 8_results.txt → Foreign_Search_IP_Patterns
+- 9_results.txt → TPUSA_Foreign_Recruitment
+- 10_results.txt → French_Foreign_Legion_Claims
+
+NEW INTELLIGENCE LEVEL 3 PAGES (9):
+- Investigation_Index, Foreign_Phones_UVU, Egyptian_Foreign_Ops, Chinese_Russian_Iranian_Presence, Islamabad_Serena_Link, CornerShot_Technology, Foreign_Search_IP_Patterns, TPUSA_Foreign_Recruitment, French_Foreign_Legion_Claims
+
+UPDATED: overview.mdx, Mossad.mdx
+
+UI: intelligence/overview in sidebars.ts — no missing entry warning.
+
+TOTAL: 1 Level 2 + 10 Level 3 = 11 intelligence pages.
+
+2026_07_04_1400 — Locations Level 2 expansion (grok_write.mdx workflow)
+
+GROK_QUERY_DIR: ~/T/_ck/grok_query/mapletrail
+
+WHAT: Expanded Locations from sectional two-column index to full Assess_Manual three-column TOC (6-6-4) with 7 new Level 3 pages. Mapped all 10 grok files to crime-scene pins, custody chain, aviation, hospital/court, and property leads. Fixed all Level 3 back buttons to absolute /Locations/overview paths. Updated planning_grok.yaml, grok_planning.txt, pages.csv (+7 rows, overview updated).
+
+GROK → PAGE MAPPING:
+- 1_results.txt → overview + Investigation_Index
+- 2_results.txt → Public-Speaking-Event-UVU
+- 3_results.txt → Provo_Airport
+- 4_results.txt → Washington_County_Sheriff + Utah_County_Jail
+- 5_results.txt → Tyler_Apartment + Cedar_City_Maverik
+- 6_results.txt → Dairy_Queen_Orem
+- 7_results.txt → Construction_Site_785_College
+- 8_results.txt → Wooded_Area_Gun_Recovery + University-House-Ownership + Palentire-House-Connection
+- 9_results.txt → Valhalla + Goat_Island
+- 10_results.txt → Timpanogos_Regional_Hospital + Fourth_District_Court_Provo
+
+NEW LOCATIONS LEVEL 3 PAGES (7):
+- Investigation_Index, Dairy_Queen_Orem, Construction_Site_785_College, Wooded_Area_Gun_Recovery, Cedar_City_Maverik, Timpanogos_Regional_Hospital, Fourth_District_Court_Provo
+
+UPDATED: overview.mdx + 9 pre-existing Level 3 pages (content + back buttons)
+
+UI: Locations/overview in sidebars.ts — no missing entry warning.
+
+TOTAL: 1 Level 2 + 16 Level 3 = 17 Locations pages.
+
+2026_07_04_1452 — GoogleSearches Level 2 expansion (grok_write.mdx workflow)
+
+GROK_QUERY_DIR: ~/T/_ck/grok_query/trendglyph
+
+WHAT: Expanded GoogleSearches from overview-only stub to full section with 14 new Level 3 pages covering Investigation Index, July 20 anchor window, Israel IP patterns, DC metro patterns, Tyler/Lance Twiggs, Kathryn Nester Dec 2024, UVU locations, Timpanogos medical, judges Graf/Lunnen, planes N1098L/N888KG, FBI/DPS, TPUSA/political figures, misc figures, and Trends deletion claims. Restructured overview to Assess_Manual three-column TOC (5-5-4) with three body paragraphs and frontmatter. Updated planning_grok.yaml, grok_planning.txt, pages.csv (+14 rows, overview updated).
+
+NEW GOOGLESEARCHES LEVEL 3 PAGES (14):
+- investigation-index, july-20-2025-anchor, israel-ip-search-patterns, dc-metro-search-patterns, tyler-robinson-lance-twiggs-searches, kathryn-nester-searches, uvu-campus-location-searches, timpanogos-medical-searches, judges-graf-lunnen-searches, planes-search-patterns, fbi-dps-law-enforcement-searches, tpusa-political-figures-searches, misc-figures-searches, trends-deletion-suppression
+
+UPDATED: overview.mdx
+
+UI: GoogleSearches/overview in sidebars.ts — no missing entry warning.
+
+TOTAL: 1 Level 2 + 14 Level 3 = 15 GoogleSearches pages.
+
+2026_07_04_1428 — Gov_Mind_Control Level 2 expansion (grok_write.mdx workflow)
+
+GROK_QUERY_DIR: ~/T/_ck/grok_query/mindglyph
+
+WHAT: Expanded Gov_Mind_Control from 3 Level 3 pages to full section with 8 new Level 3 pages covering Investigation Index, Project Artichoke 1954 memo, Tyler Robinson patsy framework, Discord confession timing, MKUltra 2.0 digital engineering, handler network claims, radicalization vs psyop, and making-a-shooter playbook. Restructured overview from two-column to Assess_Manual three-column TOC (4-4-3). Expanded frey-effect-v2k, mkultra-program, hypnosis-programmed-patsy with Tyler/case cross-links. Updated planning_grok.yaml, grok_planning.txt, pages.csv (+8 rows, overview + 3 pages updated).
+
+NEW GOV_MIND_CONTROL LEVEL 3 PAGES (8):
+- investigation-index, project-artichoke-memo, tyler-robinson-patsy-framework, discord-confession-timing, mkultra-2-digital-engineering, handler-network-claims, radicalization-psyop-claims, making-a-shooter-playbook
+
+UPDATED: overview.mdx, frey-effect-v2k.mdx, mkultra-program.mdx, hypnosis-programmed-patsy.mdx
+
+UI: Gov_Mind_Control/overview in sidebars.ts — no missing entry warning.
+
+TOTAL: 1 Level 2 + 11 Level 3 = 12 Gov_Mind_Control pages.
+
 2026_07_04_1234 — Drones Level 2 expansion (grok_write.mdx workflow)
 
 GROK_QUERY_DIR: ~/T/_ck/grok_query/dronevortex

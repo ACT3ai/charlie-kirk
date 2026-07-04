@@ -1,44 +1,47 @@
 planning:
   run:
     date: "2026-07-04"
-    focus: "Drones Level 2 expansion"
-    input_text: "Level 2 = Drones — create Level 3 pages and expand section"
-    grok_query_dir: "~/T/_ck/grok_query/dronevortex"
-    random_phrase: dronevortex
+    focus: "GoogleSearches Level 2 expansion"
+    input_text: "Level 2 = GoogleSearches — Israel/DC/Virginia Trends before 9/10 for case people places things"
+    grok_query_dir: "~/T/_ck/grok_query/trendglyph"
+    random_phrase: trendglyph
   level2:
-    Drones:
-      path: site/docs/Drones
-      overview: site/docs/Drones/overview.mdx
+    GoogleSearches:
+      path: site/docs/GoogleSearches
+      overview: site/docs/GoogleSearches/overview.mdx
       existing_level3: []
       new_level3:
-        - Investigation_Index
-        - N1098L_Air_Launched_Drones
-        - TPUSA_Production_Drone
-        - Switchblade_DARPA_Claims
-        - Military_Drones_On_Video
-        - UVU_Security_No_Drones
-        - Israeli_Armed_Quadcopter
-        - Butler_PA_Drone_Parallel
-        - Butch_Hibbs_Crowd_Drones
+        - investigation-index
+        - july-20-2025-anchor
+        - israel-ip-search-patterns
+        - dc-metro-search-patterns
+        - tyler-robinson-lance-twiggs-searches
+        - kathryn-nester-searches
+        - uvu-campus-location-searches
+        - timpanogos-medical-searches
+        - judges-graf-lunnen-searches
+        - planes-search-patterns
+        - fbi-dps-law-enforcement-searches
+        - tpusa-political-figures-searches
+        - misc-figures-searches
+        - trends-deletion-suppression
       updates:
         - overview.mdx
       grok_to_page_map:
-        1_results.txt: overview + Investigation_Index
-        2_results.txt: N1098L_Air_Launched_Drones
-        3_results.txt: TPUSA_Production_Drone
-        4_results.txt: Israeli_Armed_Quadcopter
-        5_results.txt: Switchblade_DARPA_Claims
-        6_results.txt: Military_Drones_On_Video
-        7_results.txt: Butler_PA_Drone_Parallel
-        8_results.txt: Butch_Hibbs_Crowd_Drones
-        9_results.txt: UVU_Security_No_Drones
-        10_results.txt: Investigation_Index + cross-link Provo_Airport_Counter_UAS
+        1_results.txt: overview + investigation-index
+        2_results.txt: july-20-2025-anchor
+        3_results.txt: tyler-robinson-lance-twiggs-searches
+        4_results.txt: kathryn-nester-searches
+        5_results.txt: uvu-campus-location-searches
+        6_results.txt: timpanogos-medical-searches
+        7_results.txt: judges-graf-lunnen-searches
+        8_results.txt: fbi-dps-law-enforcement-searches
+        9_results.txt: planes-search-patterns
+        10_results.txt: tpusa-political-figures-searches + misc-figures + trends-deletion
       cross_links:
-        - Planes/N1098L/overview
-        - Proof_Intel_Services/N1098L_HADES_Over_UVU
-        - Proof_Intel_Services/Provo_Airport_Counter_UAS
-        - Security_Team/perimeter-rooftop-failures
-        - TPUSA_Production_Drone
-        - Proof_Not_Tyler/Alternative_Kill_Mechanisms
-        - Mic/overview
-        - Israel/overview
+        - Before/PreEvent_Searches_And_Recon
+        - Israel/Israeli_Search_Patterns_Claims
+        - Medical/israel_google_searches_medical_people
+        - Censorship/Google_Search_Trends_Scrubbing
+        - Tyler_Robinson/Recruited
+        - intelligence/Foreign_Search_IP_Patterns
