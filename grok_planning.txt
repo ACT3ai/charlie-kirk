@@ -1,25 +1,23 @@
-Planes Level 2 Expansion Run — 2026-07-04
+Tyler Robinson Level 2 expansion — 2026-07-04
 
-GOAL: Bring Planes Level 2 into Assess_Manual compliance (three-column TOC, three body
-paragraphs) and add hub + gap pages from Charlie_Kirk.txt and planes.yaml. Section already
-had 31 Level 3 pages; adding 5 focused pages rather than duplicating tail-number coverage.
+INPUT: Build out Tyler_Robinson Level 2 at https://whoassassinatedcharliekirk.com/Tyler_Robinson/overview
 
-SOURCES:
-- planes.yaml (N1098L, SU-BTT, N888KG, N102DZ, armada, SAM flights)
-- Charlie_Kirk.txt: Egypt 5 planes/T7ELL/EJM36, Timing & Planes (Frank Turek 4PM vs Kolvet 4:40),
-  Airport & Planes (SU-BTT 9:05 AM transponder), Egyptian crew La Quinta hotel,
-  Utah Cox Sept 23 Egypt/France Gold Room meetings
-- Existing strong pages: N1098L, SU-BTT, Egyptian-Armada, Following-Charlie-Erika, Israel-Planes
+GROK_QUERY_DIR: ~/T/_ck/grok_query/quietfoxrun (10 query files, RANDOM_PHRASE quietfoxrun)
 
-NEW LEVEL 3 TOPICS (5):
-1. Planes Investigation Index — working memo hub; per-plane "what more can we learn" moved here
-2. Sept10 Flight Timeline — hospital timing, N102DZ 3:31 PM, SU-BTT transponder window
-3. Egyptian Crew Hotel — La Quinta University Parkway Orem, Sept 4–13 booking tip
-4. T7ELL & EJM36 — two additional flagged foreign tails in disclosure laws
-5. Cox Foreign Meetings — Sept 23 Utah governor closed-door Egypt/France intel meetings
+APPROACH:
+- Read Charlie_Kirk.txt Tyler Robinson sections (Stairs Guy, surrender, Discord, family, ATF ballistics)
+- Fan out 10 Grok-target areas: identity mismatch, surrender, Discord, family, weapon, travel, patsy, Twiggs, bodycam, physical feasibility
+- Add 6 new Level 3 pages filling the biggest gaps in the existing 7-page section
+- Restructure overview to Assess_Manual three-column TOC (5-4-4) plus three body paragraphs
+- Fix all back buttons to absolute /Tyler_Robinson/overview paths
+- Update pages.csv (+6 rows, 3 updated descriptions)
 
-UPDATES:
-- overview.mdx — three-column 12-12-12 TOC, trim to orientation + 3 paragraphs + Related Areas
-- Egyptian-Armada.mdx — link T7ELL page, crew hotel, Sept10 timeline
-- Following-Charlie-Erika.mdx — link timeline page
-- SU-BTT.mdx — link Sept10 timeline and crew hotel
+NEW PAGES:
+1. Investigation_Index — memo hub
+2. Stairs_Guy — backpack/clothing/rifle carry mismatch
+3. Surrender — Sept 11 Brooksby, Miranda, bodycam gap
+4. Discord_Messages — 7:57 PM timing, contradictions, prosecution non-use
+5. Family — parents, turn-in, January hearing
+6. Weapon_Rifle — Mauser, ATF inconclusive, trajectory
+
+UPDATED: overview, Before, Shooting, Travel, Tyler_9_10_2025, Recruited (back buttons + content)

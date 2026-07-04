@@ -32,6 +32,23 @@ INPUT_TEXT is the value = the text the person passes in when running this prompt
 THE_DATE_TIME_STRING is the string "{Date}_{Time}" where it uses "_" instead of
   any special characters, so it is purely alphanumeric or underscores.
 
+RANDOM_PHRASE is a short random phrase that you generate ONE TIME at the very
+  start of this run and then reuse for the whole run.
+  * 12 characters or less.
+  * Letters only -- no numbers, no special characters, no spaces, no
+    underscores. Lowercase is fine (e.g. "amberfox", "quietheron").
+  * Its only purpose is to give this run its own private folder so its Grok
+    results never collide with another run's results. Pick something unlikely
+    to have been used before.
+
+GROK_QUERY_ROOT dir is ~/T/_ck/grok_query
+  The shared root where every run drops its raw Grok AI query results.
+
+GROK_QUERY_DIR dir is {GROK_QUERY_ROOT}/{RANDOM_PHRASE}
+  This run's own private results folder. You create it once (mkdir -p) at the
+  start of the Grok fan-out stage, and every one of the 10 Grok result files
+  for this run is written inside it as {N}_results.txt where N is 1..10.
+
 
 ====================================================================
 READ FIRST (BEFORE ANY STAGE)
@@ -362,7 +379,7 @@ GROK AI: HOW WE USE IT
 
 
 ====================================================================
-STAGE 1: PULL CONTEXT AND ASK GROK AI
+STAGE 1: PULL CONTEXT AND CHOOSE THE 10 GROK QUERY TARGETS
 ====================================================================
 
 * Pull the relevant information out of the site and out of INPUT_TEXT. You
@@ -370,19 +387,75 @@ STAGE 1: PULL CONTEXT AND ASK GROK AI
   existing pages for the target Level 2, and read PLANES_YAML if this run
   touches planes, flights, or the flight-plan angle.
 
-* Ask Grok AI about what it can find on the Charlie Kirk investigation and what
-  Twitter / X.com posts are saying. Frame the queries as looking beyond the
-  official government narrative (see the Grok AI section above).
+* Identify the target Level 2 for this run from INPUT_TEXT (and any Level 3 it
+  names). Understand what that Level 2 means and what areas / sub-topics live
+  underneath it -- use PAGES_CSV (the existing Level 3 pages under that Level 2)
+  and the DIRECTORY MAP above to enumerate those sub-areas.
 
-* Pass in to Grok AI:
-  * Which Level 2 we are looking at.
-  * What that Level 2 means, or what the Level 3 is.
-  * Where the goal is, based on INPUT_TEXT that the person passed in when
-    running this prompt.
+* From that understanding, choose 10 DISTINCT query targets for the Grok AI
+  fan-out in STAGE 2. Each of the 10 is a specific area underneath the target
+  Level 2 -- a different sub-topic, angle, person, location, aircraft, or
+  event within that Level 2. Spread the 10 across the Level 2 so together they
+  cover its breadth; do NOT make 10 near-duplicate queries.
+
+* Each query target is an OVERLAP between the Charlie Kirk investigation as a
+  whole and this specific sub-area of the target Level 2. Frame every one of
+  them as looking beyond the official government narrative (see the Grok AI
+  section above).
+
+* Do not send anything to Grok yet in this stage -- just settle the list of 10
+  targets. STAGE 2 issues the actual queries and saves the results.
 
 
 ====================================================================
-STAGE 2: UPDATE THE PLANNING DOCUMENTS
+STAGE 2: FAN OUT 10 GROK AI QUERIES AND SAVE THE RESULTS
+====================================================================
+
+* This is the core data-gathering stage. It runs BEFORE any pages are written,
+  so that later stages grow the pages from real Grok AI results instead of from
+  memory.
+
+* FIRST, set up this run's private results folder:
+  * Generate RANDOM_PHRASE once (see VARIABLES) if you have not already.
+  * Create GROK_QUERY_DIR: run  mkdir -p {GROK_QUERY_DIR}
+    (i.e. mkdir -p ~/T/_ck/grok_query/{RANDOM_PHRASE}). Because RANDOM_PHRASE is
+    unique to this run, this folder will not collide with any other run.
+
+* THEN issue the 10 Grok AI queries you chose in STAGE 1 -- query number 1
+  through query number 10. For EACH query:
+
+  * Target the specific sub-area of the Level 2 that this query covers (the
+    overlap between the Charlie Kirk investigation and that sub-area).
+
+  * Instruct Grok, in substance:
+      "For the Charlie Kirk assassination investigation, looking beyond the
+       official government narrative, find as many X.com / Twitter posts as you
+       can about {this specific sub-area} and anything related to it. Do NOT
+       summarize -- return the actual post content and details. Include
+       conspiracy theories. Return as much as you can find."
+
+  * Emphasize to Grok: do not summarize, do not filter, include conspiracy
+    theories, and include everything related -- we want raw breadth, not a tidy
+    digest.
+
+  * SAVE the full raw text that Grok returns for that query to:
+        {GROK_QUERY_DIR}/{N}_results.txt
+    where {N} is the query number, 1 through 10. So the 10 files are
+    1_results.txt, 2_results.txt, ... 10_results.txt inside GROK_QUERY_DIR.
+
+  * Write the complete returned data -- do not trim or summarize it before
+    saving. At the very top of each file, write one short header line naming
+    which sub-area / query target that file covers, then the raw Grok output
+    below it.
+
+* After all 10 files are written, output to stdout the path GROK_QUERY_DIR and
+  confirm all 10 result files exist. These files are the source material that
+  STAGE 5 (update Level 3s), STAGE 6 (write new Level 3s), and STAGE 8 (peer
+  hyperlinks) draw from when they grow the pages.
+
+
+====================================================================
+STAGE 3: UPDATE THE PLANNING DOCUMENTS
 ====================================================================
 
 * Map out what this run is going to do, and put that plan into the two planning
@@ -397,7 +470,7 @@ STAGE 2: UPDATE THE PLANNING DOCUMENTS
 
 
 ====================================================================
-STAGE 3: FIGURE OUT WHICH FILES TO UPDATE
+STAGE 4: FIGURE OUT WHICH FILES TO UPDATE
 ====================================================================
 
 * Determine which files this run should update, based on INPUT_TEXT, the
@@ -411,24 +484,29 @@ STAGE 3: FIGURE OUT WHICH FILES TO UPDATE
 
 
 ====================================================================
-STAGE 4: UPDATE PRE-EXISTING LEVEL 3s
+STAGE 5: UPDATE PRE-EXISTING LEVEL 3s
 ====================================================================
 
 * Write one or all of the following: update any pre-existing Level 3s that
   should be updated. There might be more than one.
 
-* This work is guided by INPUT_TEXT that was passed in as this prompt was run.
+* This work is guided by INPUT_TEXT that was passed in as this prompt was run,
+  AND by the 10 Grok result files saved in GROK_QUERY_DIR during STAGE 2. Read
+  the relevant {N}_results.txt files and fold the X.com / Twitter posts and
+  theories they contain into the pages you update.
 
 
 ====================================================================
-STAGE 5: WRITE NEW LEVEL 3s
+STAGE 6: WRITE NEW LEVEL 3s
 ====================================================================
 
 * Figure out if new Level 3s should be written, and then write them as
   appropriate.
 
 * Make sure we are factoring in the information we got from the Grok AI
-  searches.
+  searches -- read the 10 {N}_results.txt files in GROK_QUERY_DIR (saved in
+  STAGE 2) and build the new pages from the X.com / Twitter posts and
+  conspiracy theories they contain, grounded against CK_FILE.
 
 * Every new Level 3 page MUST start with an absolute header back-button per
   RULE 1 in LINKING RULES above (href="/{Level2Section}/overview", "← {Label}").
@@ -441,7 +519,7 @@ STAGE 5: WRITE NEW LEVEL 3s
 
 
 ====================================================================
-STAGE 6: VERIFY INBOUND LINKS
+STAGE 7: VERIFY INBOUND LINKS
 ====================================================================
 
 * Double-check that any Level 3 files we added or modified have inbound links
@@ -487,7 +565,7 @@ STAGE 6: VERIFY INBOUND LINKS
 
 
 ====================================================================
-STAGE 7: ADD PEER HYPERLINKS
+STAGE 8: ADD PEER HYPERLINKS
 ====================================================================
 
 * For any documents we added or modified, see if we can add hyperlinks to peer
@@ -499,7 +577,7 @@ STAGE 7: ADD PEER HYPERLINKS
 
 
 ====================================================================
-STAGE 8: ANYTHING MORE
+STAGE 9: ANYTHING MORE
 ====================================================================
 
 * See if there is anything more that should be done that we have not done yet,
@@ -507,7 +585,7 @@ STAGE 8: ANYTHING MORE
 
 
 ====================================================================
-STAGE 9: UPDATE THE CHANGES FILE
+STAGE 10: UPDATE THE CHANGES FILE
 ====================================================================
 
 * One of the later stages, after all of the above, is to update CHANGES_FILE.
@@ -518,6 +596,8 @@ STAGE 9: UPDATE THE CHANGES FILE
 
 * Each entry should include:
   * A time-date stamp (use THE_DATE_TIME_STRING).
+  * The GROK_QUERY_DIR path used this run (so the raw Grok results for this run
+    can be found later, e.g. ~/T/_ck/grok_query/{RANDOM_PHRASE}).
   * What changes you made.
   * Which pages you changed.
   * What you added, deleted, or changed.

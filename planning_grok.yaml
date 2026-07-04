@@ -1,34 +1,33 @@
 planning:
   run:
     date: "2026-07-04"
-    focus: "Planes Level 2 expansion"
-    input_text: "Focus on Planes level 2; create Level 3 topics from CK_FILE and planes.yaml"
+    focus: "Tyler_Robinson Level 2 expansion"
+    input_text: "Level 2 = Tyler Robinson — create Level 3 pages and content"
+    grok_query_dir: "~/T/_ck/grok_query/quietfoxrun"
+    random_phrase: quietfoxrun
   level2:
-    Planes:
-      path: site/docs/Planes
-      overview: site/docs/Planes/overview.mdx
+    Tyler_Robinson:
+      path: site/docs/Tyler_Robinson
+      overview: site/docs/Tyler_Robinson/overview.mdx
       existing_level3:
-        - Following-Charlie-Erika
-        - Israel-Planes
-        - N1098L/overview
-        - Egyptian-Armada
-        - SU-BTT
-        - SU-BND
-        - SU-BTU
-        - SU-BTV
-        - SU-BGM
-        - N1098L
-        - N888KG
-        - SAM-99-0404
-        - ISR-Operations
+        - Before
+        - Tyler_9_10_2025
+        - Travel
+        - Shooting/overview
+        - Girlfriend/overview
+        - Recruited
+        - Trial/overview
       new_level3:
-        - Planes_Investigation_Index
-        - Sept10-Flight-Timeline
-        - Egyptian-Crew-Hotel
-        - T7ELL-EJM36
-        - Cox-Foreign-Meetings
+        - Investigation_Index
+        - Stairs_Guy
+        - Surrender
+        - Discord_Messages
+        - Family
+        - Weapon_Rifle
       updates:
         - overview.mdx
-        - Egyptian-Armada.mdx
-        - Following-Charlie-Erika.mdx
-        - SU-BTT.mdx
+        - Before.mdx
+        - Shooting/overview.mdx
+        - Travel.mdx
+        - Tyler_9_10_2025.mdx
+        - Recruited.mdx
