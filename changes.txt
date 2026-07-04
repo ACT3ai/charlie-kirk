@@ -1,3 +1,73 @@
+2026_07_04_1613 — UVU Level 2 verification pass (grok_write.mdx workflow)
+
+GROK_QUERY_DIR: ~/T/_ck/grok_query/uvuglyph
+
+WHAT: Verified all 10 grok files map to 16 Level 3 pages. Filled Q8/Q10 gaps: AV crew + Cooper Brown + Brayden Glascock on Courtyard; night-before Dan Flood "executed tomorrow" on pre-shooting-warnings; Ballard/Grunander/Candice60896290 trial threads on Investigation_Index and Losee_Center. TOC reconciliation confirmed — all 16 Level 3 files linked in overview (6-6-4). No relative hrefs in UVU section.
+
+GROK → PAGE MAPPING (confirmed):
+- 1_results.txt → overview + UVU_Investigation_Index
+- 2_results.txt → pre-shooting-warnings
+- 3_results.txt → Campus_Security_Gaps
+- 4_results.txt → Courtyward, Tent, maps
+- 5_results.txt → Losee_Center
+- 6_results.txt → Pavers, Hardscape-Specialties
+- 7_results.txt → Administration, Institutional, Faculty, Student, Social
+- 8_results.txt → People cross-links (Courtyard table, Index roster)
+- 9_results.txt → Stingray-Device, CIA-UVU-Profiles
+- 10_results.txt → Losee trial, Investigation_Index, Social trial
+
+UPDATED: pre-shooting-warnings.mdx, Courtyward.mdx, UVU_Investigation_Index.mdx, Losee_Center.mdx
+
+UI: UVU/overview in sidebars.ts — no missing entry warning.
+
+TOTAL: 1 Level 2 + 16 Level 3 = 17 UVU pages.
+
+2026_07_04_1900 — UVU Level 2 expansion second pass (grok_write.mdx workflow)
+
+GROK_QUERY_DIR: ~/T/_ck/grok_query/uvuglyph
+
+WHAT: Second UVU pass mapped all 10 grok files to 16 Level 3 pages + overview. Restructured overview to Assess_Manual 3-column TOC (6-6-4) with People/Witnesses cross-links. Expanded Investigation_Index with People-at-UVU table (19 profiles), grok-query slots, trial row. Physical-site pages (Courtyard, Losee, maps, Tent) gained People/ links and Q4–Q5 content. GRAMA pages expanded with Jeff Long/Brian Harpole/Dan Flood escalation gaps. Trial/Q10 content on Losee and index. ~384 lines added across section (1989→2373).
+
+GROK → PAGE MAPPING:
+- 1_results.txt → overview + UVU_Investigation_Index
+- 2_results.txt → pre-shooting-warnings
+- 3_results.txt → Campus_Security_Gaps
+- 4_results.txt → Courtyward, Tent, maps
+- 5_results.txt → Losee_Center
+- 6_results.txt → Pavers, Hardscape-Specialties
+- 7_results.txt → UVU-Administration-Response, Institutional, Faculty, Student, Social
+- 8_results.txt → People cross-links across courtyard/security/maps/index
+- 9_results.txt → Stingray-Device, CIA-UVU-Profiles
+- 10_results.txt → Losee trial section, Investigation_Index, Social trial
+
+UPDATED: overview.mdx + all 16 Level 3 UVU pages
+
+UI: UVU/overview in sidebars.ts — no missing entry warning.
+
+TOTAL: 1 Level 2 + 16 Level 3 = 17 UVU pages.
+
+2026_07_04_1615 — UVU Level 3 grok expansion pass (uvuglyph queries 6, 7, 9)
+
+GROK_QUERY_DIR: ~/T/_ck/grok_query/uvuglyph
+
+WHAT: Expanded 9 UVU Level 3 pages from grok query results 6_results.txt (pavers/hardscape), 7_results.txt (institutional/admin response), 9_results.txt (stingray/surveillance). Added ballistics/trace-evidence and Tent mic-theory cross-links (CoverUp, FBI/Crime_Scene_Paving, UVU/Tent). Added GRAMA vs @UVU cross-check table, Orem PD/FBI/TPUSA coordination gaps, UVU CCTV/Ring-WYZE/N1098L sections on Stingray page, CNSSI/Rusty Needs defamation-safe framing on CIA profiles. All back buttons remain href="/UVU/overview". Defamation-safe on Tuminez and all living persons.
+
+GROK → PAGE MAPPING:
+- 6_results.txt → Pavers.mdx, Hardscape-Specialties.mdx
+- 7_results.txt → UVU-Administration-Response.mdx, UVU-Institutional-Response.mdx, UVU-Faculty-Statements.mdx, UVU-Student-Reactions.mdx, UVU_Social_Media_Response.mdx
+- 9_results.txt → Stingray-Device.mdx, CIA-UVU-Profiles.mdx
+
+UPDATED (9):
+- site/docs/UVU/Pavers.mdx
+- site/docs/UVU/Hardscape-Specialties.mdx
+- site/docs/UVU/UVU-Administration-Response.mdx
+- site/docs/UVU/UVU-Institutional-Response.mdx
+- site/docs/UVU/UVU-Faculty-Statements.mdx
+- site/docs/UVU/UVU-Student-Reactions.mdx
+- site/docs/UVU/UVU_Social_Media_Response.mdx
+- site/docs/UVU/Stingray-Device.mdx
+- site/docs/UVU/CIA-UVU-Profiles.mdx
+
 2026_07_04_1545 — Motive Level 2 expansion (grok_write.mdx workflow)
 
 GROK_QUERY_DIR: ~/T/_ck/grok_query/motiveglyph
@@ -47,6 +117,32 @@ UPDATED: overview.mdx, Shooting_Locations.mdx, Suspects_Investigation_Index.mdx
 UI WARNING: Suspects/overview on home panel but NOT in sidebars.ts — add left-bar entry if desired.
 
 TOTAL: 1 Level 2 + 6 Level 3 = 7 Suspects pages.
+
+2026_07_04_1830 — People Level 2 expansion (grok_write.mdx workflow)
+
+GROK_QUERY_DIR: ~/T/_ck/grok_query/peopleglyph
+
+WHAT: Expanded People/ from 64-profile section with two-column overview to full hub with Investigation_Index and grok-mapped content across all Level 3 pages. Created 10 grok result files (peopleglyph). Restructured overview to Assess_Manual three-column TOC (22-22-21) with three body paragraphs. Fixed all Level 3 back buttons to absolute /People/overview. Expanded security (Harpole, Flood, Long), TPUSA staff (Mikey, Blake, Kolvet, Rob), witnesses (22), Hamptons circle (16), citizen investigators, tyler-robinson trial addendum. Updated planning_grok.yaml, grok_planning.txt, pages.csv (+1 row, 2 updated).
+
+GROK → PAGE MAPPING:
+- 1_results.txt → overview + Investigation_Index
+- 2_results.txt → charlie-kirk, ben-shapiro, josh-hammer
+- 3_results.txt → tyler-robinson, lance-twiggs, Lance_Twiggs_Family, nate-brooksby
+- 4_results.txt → erika-kirk, rob-mccoy, mikey-mccoy, blake-neff
+- 5_results.txt → brian-harpole, dan-flood, rick-cutler, jeff-long, SUV crew
+- 6_results.txt → 22 witness/videographer/AV pages
+- 7_results.txt → 9 Hamptons donor meeting profiles
+- 8_results.txt → candace-owens, ian-carroll, tucker-carlson
+- 9_results.txt → andrew-kolvet, andrew-sypher, caleb-chilcutt, danny-phillip
+- 10_results.txt → Officials_And_Institutions, nate-brooksby, jeff-long
+
+NEW: Investigation_Index.mdx
+
+UPDATED: overview.mdx, 50+ Level 3 profiles, 4 group pages (Central_Figures, Families, Officials, Witnesses)
+
+UI: People/overview in sidebars.ts — no missing entry warning.
+
+TOTAL: 1 Level 2 + 65 Level 3 = 66 People pages.
 
 2026_07_04_1730 — cameras Level 2 expansion (grok_write.mdx workflow)
 

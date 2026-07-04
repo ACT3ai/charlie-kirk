@@ -1,3 +1,75 @@
+UVU Level 2 expansion (second pass) — 2026-07-04
+
+INPUT: Level 2 = UVU — campus site, GRAMA failures, people at UVU event, Tyler trial evidence, motive/suppression warnings.
+
+GROK_QUERY_DIR: ~/T/_ck/grok_query/uvuglyph (10 files)
+
+RESTRUCTURED: overview — Assess_Manual 3-column TOC (6-6-4) with People + Witnesses cross-links and three body paragraphs.
+
+EXPANDED: All 16 Level 3 pages from uvuglyph fan-out. Investigation_Index — People at UVU table (19 profiles), grok-query slots Q1–Q10, trial row.
+
+GROK → PAGE MAPPING:
+- 1_results.txt → overview + UVU_Investigation_Index
+- 2_results.txt → pre-shooting-warnings
+- 3_results.txt → Campus_Security_Gaps
+- 4_results.txt → Courtyward, Tent, maps
+- 5_results.txt → Losee_Center
+- 6_results.txt → Pavers, Hardscape-Specialties
+- 7_results.txt → UVU-Administration-Response, Institutional, Faculty, Student, Social
+- 8_results.txt → People/ cross-links (courtyard, security, maps, index)
+- 9_results.txt → Stingray-Device, CIA-UVU-Profiles
+- 10_results.txt → Losee trial section, Investigation_Index trial block, Social trial
+
+People profiles linked: Hunter Kozak, Rick Cutler, Brian Harpole, Jeff Long, Dan Flood, Caleb Chilcutt, Jeb Jacobi, Charles McClintock Wilson, Andrew Feraci, etc.
+
+UI: UVU/overview in sidebars.ts — no missing entry warning.
+
+---
+
+People Level 2 expansion — 2026-07-04
+
+INPUT: Level 2 = People — anyone interesting related to Charlie Kirk killing, UVU 9/10/2025, motive to suppress Kirk, Tyler Robinson, trial.
+
+GROK_QUERY_DIR: ~/T/_ck/grok_query/peopleglyph (10 files)
+
+NEW LEVEL 3: People/Investigation_Index — roster hub with grok-query routing tables
+
+RESTRUCTURED: overview — Assess_Manual 3-column TOC (22-22-21), three body paragraphs, Investigation_Index first bullet
+
+EXPANDED: 50+ Level 3 profiles from grok fan-out — security (Harpole, Flood, Long), TPUSA staff (Mikey, Blake, Kolvet), witnesses (22), Hamptons circle (16), central figures (tyler-robinson trial addendum)
+
+BACK BUTTONS: all People Level 3 → href="/People/overview"
+
+GROK → PAGE MAPPING:
+- 1_results.txt → overview + Investigation_Index
+- 2_results.txt → charlie-kirk, ben-shapiro, josh-hammer
+- 3_results.txt → tyler-robinson, lance-twiggs, Lance_Twiggs_Family, nate-brooksby
+- 4_results.txt → erika-kirk, rob-mccoy, mikey-mccoy, blake-neff
+- 5_results.txt → brian-harpole, dan-flood, rick-cutler, jeff-long, SUV crew
+- 6_results.txt → 22 witness/videographer/AV pages
+- 7_results.txt → 9 Hamptons donor meeting profiles
+- 8_results.txt → candace-owens, ian-carroll, tucker-carlson
+- 9_results.txt → andrew-kolvet, andrew-sypher, caleb-chilcutt, danny-phillip
+- 10_results.txt → Officials_And_Institutions, nate-brooksby, jeff-long
+
+UI: People/overview in sidebars.ts — no missing entry warning.
+
+---
+
+UVU Level 2 verification pass — 2026-07-04
+
+INPUT: Level 2 = UVU — campus kill zone, GRAMA, people, trial evidence.
+
+GROK_QUERY_DIR: ~/T/_ck/grok_query/uvuglyph (10 files — prior expansion 1900, gaps filled 1613)
+
+16 LEVEL 3 PAGES — all mapped. Gap fill: Q8 AV crew on Courtyard; Q4 night-before Flood texts on pre-shooting-warnings; Q10 Ballard/Grunander on Index + Losee.
+
+GROK → PAGE MAPPING: see changes.txt 2026_07_04_1613 entry.
+
+UI: UVU in sidebars.ts — no warning.
+
+---
+
 Motive Level 2 expansion — 2026-07-04
 
 INPUT: Level 2 = Motive — anything about why Charlie Kirk was killed.
