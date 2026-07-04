@@ -1,3 +1,29 @@
+2026_07_04_0739 — FBI Level 2 expansion (grok_write.mdx workflow)
+
+WHAT: Expanded FBI Level 2 from 5 thin Level 3 pages to 18 topic-focused pages grounded in Charlie_Kirk.txt and X/citizen-investigator research. Created planning_grok.yaml and grok_planning.txt. Updated pages.csv (+13 new rows, 6 updated descriptions).
+
+NEW FBI LEVEL 3 PAGES (13):
+- Kash_Patel_Briefings — Valhalla, 33 hours, press conference narrative
+- Ballistics_Forensics — ATF report, CBLA, VCM, DNA mixture, defense access
+- Enhanced_Suspect_Photos — post-custody release, enhanced admission
+- Zachariah_Qureshi — premature arrest and release
+- Official_Narrative — confession, father, suicidal, lone-gunman claims
+- Foreign_Leads — Joe Kent NCTC shutdown vs foreign-intel messaging
+- Bomb_Dogs — K-9 standdown claim (Candace Owens attributed)
+- Crime_Scene_Paving — Merrell account, governor + FBI urgency
+- Hospital_Footage_Seizure — Timpanogos surveillance seizure
+- Discovery_Delays — sealed warrants, VCM observation denied
+- Black_Clothing_Photo — sheriff vs FBI photo mismatch
+- CIA_Block — Mike Glover CIA-turned-back claim
+- Gag_Orders — court gag, witness silence, sealed files
+
+UPDATED FBI PAGES:
+- overview.mdx — three-column 6-6-6 TOC per Assess_Manual, expanded body paragraphs
+- FBI_Investigation.mdx — sibling topic index, Qureshi/black-clothing links
+- Witness_Coordination.mdx — no-interview directive, delete-video pattern
+- Evidence_Footage.mdx — cropping, hospital, Archive.is subpoena
+- Connecticut.mdx — expanded from stub (ADL co-location, deployment questions)
+
 2026_07_04_trash_migration — Trash → Level 3 equivalence migration (grok_write workflow)
 
 WHAT: Migrated all substantive content from site/docs/trash/ hierarchy into canonical Level 2/Level 3 pages before trash deletion. Created 43 new Level 3 pages, updated 13 Level 2 overviews, fixed MDX syntax on 24 files, fixed UVU_Social_Media_Response YAML (@UVU quoting), updated pages.csv (+43 rows). Site build verified SUCCESS.
