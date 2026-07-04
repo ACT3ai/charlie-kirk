@@ -1,34 +1,30 @@
-Suspects Level 2 expansion — 2026-07-04
+Gun_Bullet Level 2 expansion — 2026-07-04
 
-INPUT: Level 2 = Suspects — map all Level 3 pages from 10 grok AI result text files.
+INPUT: Level 2 = Gun_Bullet — gun, bullet, .30-06 could not have killed Charlie Kirk.
 
-GROK_QUERY_DIR: ~/T/_ck/grok_query/suspectwave (10 files)
+GROK_QUERY_DIR: ~/T/_ck/grok_query/mauserfox (10 files)
 
 GROK → PAGE MAPPING:
-- 1_results.txt → overview + Suspects_Investigation_Index
-- 2_results.txt → Black_Clothing_Suspect.mdx
-- 3_results.txt → Shooting_Locations.mdx
-- 4_results.txt → Grey_Van_Shooter.mdx
-- 5_results.txt → Rick_Cutler_POI.mdx
-- 6_results.txt → Van_Man_Bednarz.mdx
-- 7_results.txt → Black_Clothing_Suspect supplement (785 College Dr, Fox map, Dairy Queen, press conference)
-- 8_results.txt → Shooting_Locations (Losee affidavit, acoustics, Stairs Guy cross-link)
-- 9_results.txt → Rick_Cutler_POI + Investigation Index (Laine, Phil Lyman, witness list)
-- 10_results.txt → Investigation Index + Black_Clothing (FBI pivot, Fix disclosure)
+- 1_results.txt → overview + Gun_Bullet_Investigation_Index
+- 2_results.txt → Mauser_30_06_Rifle.mdx
+- 3_results.txt → ATF_Fragment_Inconclusive.mdx
+- 4_results.txt → Thirty_06_Energy_Mismatch.mdx
+- 5_results.txt → Wound_Trajectory_Angle.mdx
+- 6_results.txt → Alternative_Calibers_Weapons.mdx
+- 7_results.txt → Gun_Dropped_Location.mdx
+- 8_results.txt → Rifle_Fingerprints_Mismatch.mdx
+- 9_results.txt → Bullet_Stage_Wood.mdx
+- 10_results.txt → ATF supplement (CBLA, VCM, discovery unseal)
 
-NEW LEVEL 3 PAGES (4):
-- Suspects_Investigation_Index — memo hub
-- Grey_Van_Shooter — laser POI under tent tunnel
-- Rick_Cutler_POI — arm puller / SUV framing
-- Van_Man_Bednarz — CumbyWilliam grey van allegations
+NEW LEVEL 3 PAGES (7):
+- Gun_Bullet_Investigation_Index, Mauser_30_06_Rifle, ATF_Fragment_Inconclusive, Thirty_06_Energy_Mismatch, Wound_Trajectory_Angle, Alternative_Calibers_Weapons, Rifle_Fingerprints_Mismatch, Bullet_Stage_Wood
 
 UPDATED:
-- overview.mdx — Assess_Manual three-column TOC (2-2-2), three body paragraphs
-- Black_Clothing_Suspect.mdx — construction address, Fox map, timing, Dairy Queen
-- Shooting_Locations.mdx — Losee angle, van acoustics, 3D sound, scout claims
+- overview.mdx — Assess_Manual 3-3-3 TOC, three paragraphs, energy content moved to Thirty_06 page
+- Gun_Dropped_Location.mdx — affidavit recovery path, ATF cross-links
 
-CROSS-LINKS: FBI/Black_Clothing_Photo, Tyler_Robinson/Stairs_Guy, Project Constitution, Cumby William, Proof Not Tyler, Tent shooter theories
+CROSS-LINKS: Proof_Not_Tyler, Medical ballistics, Tyler Weapon_Rifle, Mic, Law_Enforcement rifle-chain, Suspects Shooting_Locations
 
-UI: Suspects/overview linked from home index.mdx panel — NOT in sidebars.ts (WARNING emitted).
+UI: Gun_Bullet/overview in sidebars.ts — no missing entry warning.
 
-TOTAL: 1 Level 2 + 6 Level 3 = 7 Suspects pages.
+TOTAL: 1 Level 2 + 9 Level 3 = 10 Gun_Bullet pages.

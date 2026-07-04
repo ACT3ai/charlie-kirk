@@ -1,3 +1,31 @@
+2026_07_04_1209 — distraction_people Level 2 expansion (grok_write.mdx workflow)
+
+GROK_QUERY_DIR: ~/T/_ck/grok_query/distractfox
+
+WHAT: Expanded distraction_people from ten Level 3 figure pages to a full section with seven new Level 3 pages (Investigation Index, Distraction Timeline, Rick Cutler, Hunter Kozak, Beau Mason, Black Clothing Figure, Jaxson Thomas Fox). Restructured overview to Assess_Manual three-column TOC (6-6-5) with three body paragraphs and Related Areas. Expanded Zachariah Qureshi (Kash Patel custody timing) and Russell Kennington (GRAMA vs booking, CK gun-same-day threads). Fixed all back buttons to absolute /distraction_people/overview paths. Updated planning_grok.yaml, grok_planning.txt, pages.csv (+7 rows, overview + 2 pages updated).
+
+NEW DISTRACTION_PEOPLE LEVEL 3 PAGES (7):
+- Investigation_Index, Distraction_Timeline, Rick_Cutler, Hunter_Kozak, Beau_Mason, Black_Clothing_Figure, Jaxson_Thomas_Fox
+
+UPDATED: overview.mdx, Zachariah_Qureshi.mdx, Russell_Kennington.mdx, all 10 pre-existing Level 3 back buttons
+
+UI: distraction_people/overview in sidebars.ts — no missing entry warning.
+
+TOTAL: 1 Level 2 + 17 Level 3 = 18 distraction_people pages.
+
+2026_07_04_1150 — Proof_Intel_Services Level 2 expansion (grok_write.mdx workflow)
+
+GROK_QUERY_DIR: ~/T/_ck/grok_query/intelproofx
+
+WHAT: Expanded Proof_Intel_Services from overview-only stub to full section with 12 new Level 3 pages covering Joe Kent NCTC shutdown, NSA Bumblehive Israeli phones, N1098L HADES passes, Egyptian jets at Provo, Counter-UAS contractors, FBI intel cover signatures, UVU Sept 9 foreknowledge, Benny Johnson state actors, Israel motive timeline, foreign weapons routing, and Fort Huachuca Sept 9 meeting. Restructured overview to Assess_Manual three-column TOC (4-4-4) with three body paragraphs; moved Benny Johnson IPFS video to State Actors page. Updated planning_grok.yaml, grok_planning.txt, pages.csv (+12 rows, overview updated).
+
+NEW PROOF_INTEL_SERVICES LEVEL 3 PAGES (12):
+- Investigation_Index, Joe_Kent_Foreign_Inquiry_Shutdown, Israeli_Phones_Bumblehive, N1098L_HADES_Over_UVU, Egyptian_Jets_Provo, Provo_Airport_Counter_UAS, FBI_Intel_Cover_Signatures, UVU_Sept_9_Foreknowledge, State_Actors_Professional_Hit, Israel_Motive_Timeline, Foreign_Weapons_And_Hardware, Fort_Huachuca_Sept_9
+
+UPDATED: overview.mdx
+
+UI: Proof_Intel_Services/overview in sidebars.ts navbar — no missing entry warning.
+
 2026_07_04_1136 — Proof_Not_Tyler Level 2 expansion (grok_write.mdx workflow)
 
 GROK_QUERY_DIR: ~/T/_ck/grok_query/proofnotfox
@@ -10,6 +38,52 @@ NEW PROOF_NOT_TYLER LEVEL 3 PAGES (11):
 UPDATED: overview.mdx
 
 UI: Proof_Not_Tyler/overview in sidebars.ts navbar — no missing entry warning.
+
+2026_07_04_1210 — Gun_Bullet Level 2 expansion (grok_write.mdx workflow)
+
+GROK_QUERY_DIR: ~/T/_ck/grok_query/mauserfox
+
+WHAT: Expanded Gun_Bullet from 1 L3 stub to full section with 7 new Level 3 pages + investigation index. Mapped all 10 grok files. Restructured overview to Assess_Manual 3-3-3 TOC with three body paragraphs; moved HolonCitizen energy charts to Thirty_06_Energy_Mismatch. Core thesis: .30-06 Mauser kill chain fails on ATF inconclusive match, ~3950J energy mismatch, Losee 5-9° trajectory. Updated planning_grok.yaml, grok_planning.txt, pages.csv (+7 rows, 2 updated).
+
+GROK → PAGE MAPPING:
+- 1_results.txt → overview + Gun_Bullet_Investigation_Index
+- 2_results.txt → Mauser_30_06_Rifle.mdx
+- 3_results.txt → ATF_Fragment_Inconclusive.mdx
+- 4_results.txt → Thirty_06_Energy_Mismatch.mdx
+- 5_results.txt → Wound_Trajectory_Angle.mdx
+- 6_results.txt → Alternative_Calibers_Weapons.mdx
+- 7_results.txt → Gun_Dropped_Location.mdx
+- 8_results.txt → Rifle_Fingerprints_Mismatch.mdx
+- 9_results.txt → Bullet_Stage_Wood.mdx
+- 10_results.txt → ATF CBLA/discovery supplement
+
+NEW: Gun_Bullet_Investigation_Index, Mauser_30_06_Rifle, ATF_Fragment_Inconclusive, Thirty_06_Energy_Mismatch, Wound_Trajectory_Angle, Alternative_Calibers_Weapons, Rifle_Fingerprints_Mismatch, Bullet_Stage_Wood
+
+UPDATED: overview.mdx, Gun_Dropped_Location.mdx
+
+UI: Gun_Bullet/overview in sidebars.ts — no missing entry warning.
+
+2026_07_04_1150 — Security_Team Level 2 expansion (grok_write.mdx workflow)
+
+GROK_QUERY_DIR: ~/T/_ck/grok_query/guardiron
+
+WHAT: Expanded all 9 Security_Team Level 3 pages from 10 grok result files (explicit grok_to_page_map). Restructured overview to Assess_Manual three-column TOC (3-3-3) with three body paragraphs. Mapped hybrid ISS/UVU model, SSG vendor switch, Dan Flood SUV/Signal messages, Harpole-Jeff Long rooftop dispute, screening/Hunter Kozak, counter-sniper gaps. Updated planning_grok.yaml, grok_planning.txt, pages.csv (10 rows updated).
+
+GROK → PAGE MAPPING:
+- 1_results.txt → overview
+- 2_results.txt → integrity-security.mdx
+- 3_results.txt → dan-flood.mdx
+- 4_results.txt → brian-harpole.mdx
+- 5_results.txt → bobby-harpole.mdx
+- 6_results.txt → greg-shaffer.mdx
+- 7_results.txt → perimeter-rooftop-failures.mdx
+- 8_results.txt → no-counter-snipers.mdx
+- 9_results.txt → next-event-no-plan.mdx
+- 10_results.txt → screening-credentials.mdx + SUV witnesses
+
+UPDATED ALL: overview, integrity-security, dan-flood, brian-harpole, bobby-harpole, greg-shaffer, perimeter-rooftop-failures, no-counter-snipers, next-event-no-plan, screening-credentials
+
+UI: Security_Team/overview in sidebars.ts — no missing entry warning.
 
 2026_07_04_1136 — Suspects Level 2 expansion (grok_write.mdx workflow)
 

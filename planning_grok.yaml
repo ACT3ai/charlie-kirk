@@ -1,43 +1,43 @@
 planning:
   run:
     date: "2026-07-04"
-    focus: "Suspects Level 2 expansion"
-    input_text: "Level 2 = Suspects — map all Level 3 pages from 10 grok result files"
-    grok_query_dir: "~/T/_ck/grok_query/suspectwave"
-    random_phrase: suspectwave
+    focus: "Gun_Bullet Level 2 expansion"
+    input_text: "Level 2 = Gun_Bullet — gun, bullet, .30-06 could not have killed Charlie Kirk"
+    grok_query_dir: "~/T/_ck/grok_query/mauserfox"
+    random_phrase: mauserfox
   level2:
-    Suspects:
-      path: site/docs/Suspects
-      overview: site/docs/Suspects/overview.mdx
+    Gun_Bullet:
+      path: site/docs/Gun_Bullet
+      overview: site/docs/Gun_Bullet/overview.mdx
       existing_level3:
-        - Black_Clothing_Suspect
-        - Shooting_Locations
+        - Gun_Dropped_Location
       new_level3:
-        - Suspects_Investigation_Index
-        - Grey_Van_Shooter
-        - Rick_Cutler_POI
-        - Van_Man_Bednarz
+        - Gun_Bullet_Investigation_Index
+        - Mauser_30_06_Rifle
+        - ATF_Fragment_Inconclusive
+        - Thirty_06_Energy_Mismatch
+        - Wound_Trajectory_Angle
+        - Alternative_Calibers_Weapons
+        - Rifle_Fingerprints_Mismatch
+        - Bullet_Stage_Wood
       updates:
         - overview.mdx
-        - Black_Clothing_Suspect.mdx
-        - Shooting_Locations.mdx
+        - Gun_Dropped_Location.mdx
       grok_to_page_map:
-        "1_results.txt": "overview + Suspects_Investigation_Index"
-        "2_results.txt": Black_Clothing_Suspect.mdx
-        "3_results.txt": Shooting_Locations.mdx
-        "4_results.txt": Grey_Van_Shooter.mdx
-        "5_results.txt": Rick_Cutler_POI.mdx
-        "6_results.txt": Van_Man_Bednarz.mdx
-        "7_results.txt": "Black_Clothing_Suspect.mdx supplement (construction/K9/Fox map/Dairy Queen)"
-        "8_results.txt": "Shooting_Locations.mdx + cross-link Tyler_Robinson/Stairs_Guy"
-        "9_results.txt": "Rick_Cutler_POI + Suspects_Investigation_Index (Laine, Phil Lyman, witness list)"
-        "10_results.txt": "Suspects_Investigation_Index + Black_Clothing_Suspect (FBI pivot)"
+        "1_results.txt": "overview + Gun_Bullet_Investigation_Index"
+        "2_results.txt": Mauser_30_06_Rifle.mdx
+        "3_results.txt": ATF_Fragment_Inconclusive.mdx
+        "4_results.txt": Thirty_06_Energy_Mismatch.mdx
+        "5_results.txt": Wound_Trajectory_Angle.mdx
+        "6_results.txt": Alternative_Calibers_Weapons.mdx
+        "7_results.txt": Gun_Dropped_Location.mdx
+        "8_results.txt": Rifle_Fingerprints_Mismatch.mdx
+        "9_results.txt": Bullet_Stage_Wood.mdx
+        "10_results.txt": "ATF_Fragment_Inconclusive supplement (CBLA, discovery unseal)"
       cross_links:
-        - FBI/Black_Clothing_Photo
-        - Tyler_Robinson/Stairs_Guy
-        - Influencers/x/project-constitution
-        - Influencers/x/cumby-william
         - Proof_Not_Tyler/overview
-        - Grey_Van_Shooter
-        - Tent/Tent_Shooter_Theories
+        - Medical/ballistics_and_wound_analysis
+        - Tyler_Robinson/Weapon_Rifle
         - Mic/overview
+        - Law_Enforcement/rifle-chain-of-custody
+        - Suspects/Shooting_Locations
