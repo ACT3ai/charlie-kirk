@@ -1,3 +1,29 @@
+2026_07_04_1545 — Motive Level 2 expansion (grok_write.mdx workflow)
+
+GROK_QUERY_DIR: ~/T/_ck/grok_query/motiveglyph
+
+WHAT: Expanded Motive/ from generic stubs to full section with Motive_Investigation_Index hub. Mapped all 10 grok files into Donors_Israel_ForeignPolicy (donor texts, Netanyahu/Pierre/Hamptons, death warnings, Iran/AIPAC), Geopolitical_Intel_Service_Theories (Kent probe, Egyptian plane, SAM-702, shaped charge, ADL rhetoric), Institutional_Media_Organizational_Dynamics (FOX replacement, VFX LA, Erika succession, FARA, gag orders), Tyler_Robinson_Alleged_Motive (patsy reframe, deposits, Discord). Restructured overview to Assess_Manual 3-column TOC (2-2-1) with three body paragraphs. Fixed all back buttons to absolute /Motive/overview. Updated planning_grok.yaml, grok_planning.txt, pages.csv (+1 row, 5 updated).
+
+GROK → PAGE MAPPING:
+- 1_results.txt → overview + Motive_Investigation_Index
+- 2_results.txt → Donors_Israel_ForeignPolicy
+- 3_results.txt → Donors_Israel_ForeignPolicy
+- 4_results.txt → Donors_Israel_ForeignPolicy + Motive_Investigation_Index
+- 5_results.txt → Donors_Israel_ForeignPolicy
+- 6_results.txt → Geopolitical_Intel_Service_Theories
+- 7_results.txt → Institutional_Media_Organizational_Dynamics
+- 8_results.txt → Tyler_Robinson_Alleged_Motive
+- 9_results.txt → Institutional_Media_Organizational_Dynamics
+- 10_results.txt → Geopolitical_Intel + Donors supplement
+
+NEW: Motive_Investigation_Index
+
+UPDATED: overview.mdx, Donors_Israel_ForeignPolicy.mdx, Geopolitical_Intel_Service_Theories.mdx, Institutional_Media_Organizational_Dynamics.mdx, Tyler_Robinson_Alleged_Motive.mdx
+
+UI: Motive/overview in sidebars.ts — no missing entry warning.
+
+TOTAL: 1 Level 2 + 5 Level 3 = 6 Motive pages.
+
 2026_07_04_1531 — Suspects Level 2 verification pass (grok_write.mdx workflow)
 
 GROK_QUERY_DIR: ~/T/_ck/grok_query/suspectwave
