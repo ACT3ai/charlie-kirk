@@ -393,10 +393,21 @@ STAGE 1: PULL CONTEXT AND CHOOSE THE 10 GROK QUERY TARGETS
   and the DIRECTORY MAP above to enumerate those sub-areas.
 
 * From that understanding, choose 10 DISTINCT query targets for the Grok AI
-  fan-out in STAGE 2. Each of the 10 is a specific area underneath the target
-  Level 2 -- a different sub-topic, angle, person, location, aircraft, or
-  event within that Level 2. Spread the 10 across the Level 2 so together they
-  cover its breadth; do NOT make 10 near-duplicate queries.
+  fan-out in STAGE 2.
+
+* RESERVED SLOT (query number 1 is ALWAYS this): one of the 10 slots is NOT a
+  sub-area query. Instead, reserve it for a single broad, whole-investigation
+  query about the Charlie Kirk investigation as a whole. In that query, name
+  which Level 2 we are working on for this run, and ask Grok to find any and all
+  information -- via X.com / Twitter posts -- about the Charlie Kirk
+  investigation and that Level 2. Tell it NOT to summarize, and to give as many
+  details as possible. This slot exists to catch broad, cross-cutting posts that
+  the 9 narrow sub-area queries would miss. See STAGE 2 for the exact wording.
+
+* The OTHER 9 slots are specific areas underneath the target Level 2 -- each a
+  different sub-topic, angle, person, location, aircraft, or event within that
+  Level 2. Spread those 9 across the Level 2 so together they cover its breadth;
+  do NOT make 9 near-duplicate queries.
 
 * Each query target is an OVERLAP between the Charlie Kirk investigation as a
   whole and this specific sub-area of the target Level 2. Frame every one of
@@ -422,7 +433,22 @@ STAGE 2: FAN OUT 10 GROK AI QUERIES AND SAVE THE RESULTS
     unique to this run, this folder will not collide with any other run.
 
 * THEN issue the 10 Grok AI queries you chose in STAGE 1 -- query number 1
-  through query number 10. For EACH query:
+  through query number 10.
+
+* QUERY NUMBER 1 IS THE RESERVED BROAD QUERY (see STAGE 1). It is NOT a
+  sub-area query. Issue it as a single whole-investigation query that names the
+  Level 2 we are working on for this run. Instruct Grok, in substance:
+      "For the Charlie Kirk assassination investigation, looking beyond the
+       official government narrative, we are working on the '{Level2 Name}'
+       area of the investigation. Find any and all information you can -- from
+       X.com / Twitter posts -- about the Charlie Kirk investigation and about
+       {Level2 Name} specifically, and anything related to it. Do NOT
+       summarize. Give as many details as possible: return the actual post
+       content, handles, dates, and links. Include conspiracy theories. Return
+       everything you can find."
+  Save its raw output to {GROK_QUERY_DIR}/1_results.txt like the others.
+
+* FOR EACH OF THE OTHER QUERIES (numbers 2 through 10):
 
   * Target the specific sub-area of the Level 2 that this query covers (the
     overlap between the Charlie Kirk investigation and that sub-area).

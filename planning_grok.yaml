@@ -1,33 +1,51 @@
 planning:
   run:
     date: "2026-07-04"
-    focus: "Tyler_Robinson Level 2 expansion"
-    input_text: "Level 2 = Tyler Robinson — create Level 3 pages and content"
-    grok_query_dir: "~/T/_ck/grok_query/quietfoxrun"
-    random_phrase: quietfoxrun
+    focus: "Medical Level 2 expansion"
+    input_text: "Level 2 = Medical — create Level 3 pages and content"
+    grok_query_dir: "~/T/_ck/grok_query/medamberlake"
+    random_phrase: medamberlake
   level2:
-    Tyler_Robinson:
-      path: site/docs/Tyler_Robinson
-      overview: site/docs/Tyler_Robinson/overview.mdx
+    Medical:
+      path: site/docs/Medical
+      overview: site/docs/Medical/overview.mdx
+      subsections:
+        Autopsy:
+          path: site/docs/Medical/Autopsy
+          level4_count: 5
+        Hospital:
+          path: site/docs/Medical/Hospital
+          level4_count: 3
       existing_level3:
-        - Before
-        - Tyler_9_10_2025
-        - Travel
-        - Shooting/overview
-        - Girlfriend/overview
-        - Recruited
-        - Trial/overview
+        - doctors
+        - hospital_leader
+        - medical_examiner
+        - medical_staff_changes
+        - israel_google_searches_medical_people
+        - charlie_trip_to_hospital
+        - events_at_hospital
+        - doctor_dc_phone_call
+        - hospital_security_cameras_removed
+        - autopsy_report_not_public
+        - trial_and_autopsy_report
+        - hospital_people_and_bullet_claims
+        - ballistics_and_wound_analysis
+        - lapel_mic_and_audio_theories
+        - construction_and_site_changes
+        - utah_autopsy_law_changes
+        - Autopsy/overview
+        - Hospital/overview
       new_level3:
         - Investigation_Index
-        - Stairs_Guy
-        - Surrender
-        - Discord_Messages
-        - Family
-        - Weapon_Rifle
+        - Death_Timeline
+        - Timpanogos_Facility
+        - Witness_Account_Conflicts
       updates:
         - overview.mdx
-        - Before.mdx
-        - Shooting/overview.mdx
-        - Travel.mdx
-        - Tyler_9_10_2025.mdx
-        - Recruited.mdx
+        - ballistics_and_wound_analysis.mdx
+        - lapel_mic_and_audio_theories.mdx
+        - construction_and_site_changes.mdx
+        - Autopsy/overview.mdx
+        - Hospital/overview.mdx
+        - Autopsy/*.mdx
+        - Hospital/*.mdx

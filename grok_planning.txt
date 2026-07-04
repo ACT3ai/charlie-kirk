@@ -1,23 +1,23 @@
-Tyler Robinson Level 2 expansion — 2026-07-04
+Medical Level 2 expansion — 2026-07-04
 
-INPUT: Build out Tyler_Robinson Level 2 at https://whoassassinatedcharliekirk.com/Tyler_Robinson/overview
+INPUT: Build out Medical Level 2 at /Medical/overview
 
-GROK_QUERY_DIR: ~/T/_ck/grok_query/quietfoxrun (10 query files, RANDOM_PHRASE quietfoxrun)
+GROK_QUERY_DIR: ~/T/_ck/grok_query/medamberlake (10 files)
 
-APPROACH:
-- Read Charlie_Kirk.txt Tyler Robinson sections (Stairs Guy, surrender, Discord, family, ATF ballistics)
-- Fan out 10 Grok-target areas: identity mismatch, surrender, Discord, family, weapon, travel, patsy, Twiggs, bodycam, physical feasibility
-- Add 6 new Level 3 pages filling the biggest gaps in the existing 7-page section
-- Restructure overview to Assess_Manual three-column TOC (5-4-4) plus three body paragraphs
-- Fix all back buttons to absolute /Tyler_Robinson/overview paths
-- Update pages.csv (+6 rows, 3 updated descriptions)
+NEW LEVEL 3 PAGES (4):
+- Investigation_Index — medical memo hub
+- Death_Timeline — shot to pronouncement, Jerusalem Post, Mikey call
+- Timpanogos_Facility — Level IV hospital profile, Zenger, surgeon searches
+- Witness_Account_Conflicts — chest vs neck witness testimony
 
-NEW PAGES:
-1. Investigation_Index — memo hub
-2. Stairs_Guy — backpack/clothing/rifle carry mismatch
-3. Surrender — Sept 11 Brooksby, Miranda, bodycam gap
-4. Discord_Messages — 7:57 PM timing, contradictions, prosecution non-use
-5. Family — parents, turn-in, January hearing
-6. Weapon_Rifle — Mauser, ATF inconclusive, trajectory
+EXPANDED THIN PAGES (3):
+- ballistics_and_wound_analysis.mdx — full wound/ATF/CornerShot/mic analysis
+- lapel_mic_and_audio_theories.mdx — medical bridge to Mic section
+- construction_and_site_changes.mdx — paving forensic preservation
 
-UPDATED: overview, Before, Shooting, Travel, Tyler_9_10_2025, Recruited (back buttons + content)
+UPDATED:
+- overview.mdx — three-column TOC 8-7-7, three paragraphs
+- Autopsy/Hospital sub-overviews — links to new pages
+- 8 Level 4 pages — absolute back buttons to subsection overviews
+
+TOTAL: 18 root Level 3 + 2 subsection overviews + 8 Level 4 = 28 Medical pages indexed.
