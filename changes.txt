@@ -1,0 +1,34 @@
+2026_07_04_trash_migration — Trash → Level 3 equivalence migration (grok_write workflow)
+
+WHAT: Migrated all substantive content from site/docs/trash/ hierarchy into canonical Level 2/Level 3 pages before trash deletion. Created 43 new Level 3 pages, updated 13 Level 2 overviews, fixed MDX syntax on 24 files, fixed UVU_Social_Media_Response YAML (@UVU quoting), updated pages.csv (+43 rows). Site build verified SUCCESS.
+
+NEW PAGES BY SECTION:
+- Timeline (3): foreign-leaders-meeting-july-20, nebraska-army-base-july-20, october-15-2025
+- UVU (4): UVU-Administration-Response, UVU-Faculty-Statements, UVU-Student-Reactions, UVU-Institutional-Response
+- Media (9): Candace-Owens-Israel-Controversies, Guardian-Kirk-Beliefs, Israeli-Agenda-Criticism, National-Day-Remembrance, News-Sources-Analysis, Media-Timeline-Compilation, Trump-Votes-Speech, Vance-Mission-Continuation, Wikipedia-Coverage
+- TPUSA (9): Conservative-Activist-Movement, DOGE-TPUSA-Connection, Trump-Support-After-Death, Faith-Freedom-Coalition, Latino-Coalition-Israel, TPUSA-Absence-July-31, TPUSA-Founder-Charlie, Right-Wing-Politics-Context, Progressive-Policy-Opposition
+- Other (5): Evidence-Contradictions, Forensic-Analysis-Gaps, Investigation-Challenges, Witness-Reliability, Psychological-Profiling-Claims
+- Before (6): Free-Speech-Campus-Issues, Heightened-Political-Tensions, MAGA-Antisemitism-Debate, Political-Violence-Debate, State-Department-Response, Woke-Right-Defamation
+- Locations (3): Palentire-House-Connection, Public-Speaking-Event-UVU, University-House-Ownership
+- People (3): apostle-mario-bramnick, yehuda-kaploun, charlie-kirk-girlfriend-claims
+- After (1): Visa-Revocation-Celebrations
+
+OVERVIEWS UPDATED: Timeline, UVU, Media, TPUSA, Other, Before, Locations, People, After; also Timeline/military-meeting-july-20, Timeline/post-assassination-investigations, TPUSA/July_31_Meeting_Without_TPUSA
+
+PRE-EXISTING EQUIVALENTS (no new file; trash maps to live page):
+- analysis_documentation → Topic-Analyses/ (4 L3 + Topic-Analyses.mdx L2)
+- conspiracy_theories → Theories/ + Israel/
+- government_organizations → SPLIT: US_Intelligence, FBI, Legal, CoverUp, Israel
+- key_individuals → People/ (profiles under kebab-case names)
+- legal_investigation → Legal/ (6 pages)
+- social_media_analysis → Influencers/x/ (15 researcher pages)
+- technology_surveillance → Drones/, GoogleSearches/, Locations/Provo_Airport
+- security_law_enforcement → Security_Team/, Law_Enforcement/, After/
+- property_locations → Locations/, UVU/
+- political_context → Before/Political_Pressure_And_Meetings_2025 + Israel
+- organizations_groups (partial) → existing TPUSA pages
+- 12_27_mt_shooting_time → merged into Timeline/12-23-shooting-time
+- social_media_companies → Censorship/overview
+- aircraft_flight_analysis → Planes/ (already empty in trash)
+
+TRASH SAFE TO DELETE: All 131 trash content pages now have Level 3 equivalence in canonical sections.
