@@ -1,35 +1,34 @@
 planning:
   run:
     date: "2026-07-04"
-    focus: "FBI Level 2 expansion"
-    input_text: "Focus on FBI level 2; create many Level 3 topics from CK_FILE and X research"
+    focus: "Planes Level 2 expansion"
+    input_text: "Focus on Planes level 2; create Level 3 topics from CK_FILE and planes.yaml"
   level2:
-    FBI:
-      path: site/docs/FBI
-      overview: site/docs/FBI/overview.mdx
+    Planes:
+      path: site/docs/Planes
+      overview: site/docs/Planes/overview.mdx
       existing_level3:
-        - FBI_Investigation
-        - SLC_Field_Office
-        - Witness_Coordination
-        - Evidence_Footage
-        - Connecticut
+        - Following-Charlie-Erika
+        - Israel-Planes
+        - N1098L/overview
+        - Egyptian-Armada
+        - SU-BTT
+        - SU-BND
+        - SU-BTU
+        - SU-BTV
+        - SU-BGM
+        - N1098L
+        - N888KG
+        - SAM-99-0404
+        - ISR-Operations
       new_level3:
-        - Kash_Patel_Briefings
-        - Ballistics_Forensics
-        - Enhanced_Suspect_Photos
-        - Zachariah_Qureshi
-        - Official_Narrative
-        - Foreign_Leads
-        - Bomb_Dogs
-        - Crime_Scene_Paving
-        - Hospital_Footage_Seizure
-        - Discovery_Delays
-        - Black_Clothing_Photo
-        - CIA_Block
-        - Gag_Orders
+        - Planes_Investigation_Index
+        - Sept10-Flight-Timeline
+        - Egyptian-Crew-Hotel
+        - T7ELL-EJM36
+        - Cox-Foreign-Meetings
       updates:
         - overview.mdx
-        - FBI_Investigation.mdx
-        - Witness_Coordination.mdx
-        - Evidence_Footage.mdx
-        - Connecticut.mdx
+        - Egyptian-Armada.mdx
+        - Following-Charlie-Erika.mdx
+        - SU-BTT.mdx
