@@ -1,3 +1,49 @@
+2026_07_04_1635 — Before Level 2 completion pass (grok_write.mdx verification)
+
+GROK_QUERY_DIR: ~/T/_ck/grok_query/beforeglyph
+
+WHAT: Verified all 10 grok files map to 9 Level 3 pages + overview. Filled remaining Q3 gaps (Hamptons attendee roster on Woke-Right + MAGA) and Q9 gaps (six campus police / ~3000 attendees / no ambulance / no active-shooter training on Free-Speech-Campus-Issues). Updated pages.csv line counts for Heightened (112), Political-Violence (108), State-Department (105), Free-Speech (120), MAGA (99). TOC reconciliation confirmed — all 9 Level 3 files linked in overview 3-3-3 grid. Zero relative hrefs in Before/. Before/overview in sidebars.ts — no UI warning.
+
+GROK → PAGE MAPPING (confirmed):
+- 1_results.txt → overview + Before_Investigation_Index
+- 2_results.txt → Political_Pressure_And_Meetings_2025
+- 3_results.txt → Political_Pressure + Woke-Right-Defamation + MAGA-Antisemitism-Debate
+- 4_results.txt → Political_Pressure + Heightened-Political-Tensions
+- 5_results.txt → Heightened + Planes cross-links
+- 6_results.txt → PreEvent_Searches_And_Recon
+- 7_results.txt → PreEvent + Political_Pressure (July 18)
+- 8_results.txt → Political-Violence-Debate
+- 9_results.txt → Free-Speech-Campus-Issues
+- 10_results.txt → Heightened + State-Department + Epstein/Bowyer (Political_Pressure)
+
+TOTAL: 1 Level 2 overview + 9 Level 3 = 10 Before pages.
+
+2026_07_04_1620 — Before Level 2 expansion (grok_write.mdx workflow)
+
+GROK_QUERY_DIR: ~/T/_ck/grok_query/beforeglyph
+
+WHAT: Expanded Before/ with Before_Investigation_Index hub, 10 grok result files, Assess_Manual overview (3-3-3 TOC + three body paragraphs). Mapped all queries: Political_Pressure (donor meetings, Sept 9 death warnings, Epstein July 12), PreEvent_Searches (Timpanogos surgeon frenzy, July 18, political Google hits), Heightened (aircraft table, Bowyer DOGE, GGLF insurance), Political-Violence (Hammer/Levin pre-rhetoric), State-Department (pre-event diplomatic travel), Free-Speech (GRAMA). Fixed all back buttons to absolute /Before/overview. Updated planning_grok.yaml, grok_planning.txt, pages.csv (+1 row, 9 updated).
+
+GROK → PAGE MAPPING:
+- 1_results.txt → overview + Before_Investigation_Index
+- 2_results.txt → Political_Pressure_And_Meetings_2025
+- 3_results.txt → Political_Pressure + Woke-Right-Defamation + MAGA-Antisemitism-Debate
+- 4_results.txt → Political_Pressure + Heightened-Political-Tensions
+- 5_results.txt → Heightened + Planes cross-links
+- 6_results.txt → PreEvent_Searches_And_Recon
+- 7_results.txt → PreEvent + Political_Pressure
+- 8_results.txt → Political-Violence-Debate
+- 9_results.txt → Free-Speech-Campus-Issues
+- 10_results.txt → Heightened + State-Department + Epstein/Bowyer
+
+NEW: Before_Investigation_Index
+
+UPDATED: overview.mdx + all 8 existing Level 3 pages
+
+UI: Before/overview in sidebars.ts — no missing entry warning.
+
+TOTAL: 1 Level 2 + 9 Level 3 = 10 Before pages.
+
 2026_07_04_1613 — UVU Level 2 verification pass (grok_write.mdx workflow)
 
 GROK_QUERY_DIR: ~/T/_ck/grok_query/uvuglyph
@@ -21,6 +67,32 @@ UPDATED: pre-shooting-warnings.mdx, Courtyward.mdx, UVU_Investigation_Index.mdx,
 UI: UVU/overview in sidebars.ts — no missing entry warning.
 
 TOTAL: 1 Level 2 + 16 Level 3 = 17 UVU pages.
+
+2026_07_04_1930 — After Level 2 expansion (grok_write.mdx workflow)
+
+GROK_QUERY_DIR: ~/T/_ck/grok_query/afterglyph
+
+WHAT: Expanded After/ from 4 thin Level 3 pages to full 8-page hub post-12:23 PM Sept 10 2025. Created Investigation_Index + Sept_11_Surrender_And_Custody + Institutional_Resignations + Memorial_And_TPUSA_Succession. Mapped all 10 grok files. Restructured overview to Assess_Manual 3-column TOC (4-4-3). Fixed all back buttons to /After/overview. Expanded legal (Graf gag, ATF inconclusive, Ballard contempt), paving (Merrell/Cox/Patel), media/censorship (Ryne Simmons, platform suspensions), visa enforcement. ~1176 lines total section.
+
+GROK → PAGE MAPPING:
+- 1_results.txt → overview + Investigation_Index
+- 2_results.txt → Sept_11_Surrender_And_Custody
+- 3_results.txt → Site_Changes_And_Crime_Scene_Handling
+- 4_results.txt → Legal_Process_Gag_Orders_And_Secrecy
+- 5_results.txt → Media_Narratives_And_Censorship_After
+- 6_results.txt → Media_Narratives_And_Censorship_After
+- 7_results.txt → Institutional_Resignations
+- 8_results.txt → Legal_Process (discovery/trial 2026)
+- 9_results.txt → Memorial_And_TPUSA_Succession
+- 10_results.txt → Visa-Revocation-Celebrations
+
+NEW: Investigation_Index, Sept_11_Surrender_And_Custody, Institutional_Resignations, Memorial_And_TPUSA_Succession
+
+UPDATED: overview.mdx, Legal_Process, Site_Changes, Media_Narratives, Visa-Revocation-Celebrations
+
+UI: After/overview in sidebars.ts — no missing entry warning.
+
+TOTAL: 1 Level 2 + 8 Level 3 = 9 After pages.
 
 2026_07_04_1900 — UVU Level 2 expansion second pass (grok_write.mdx workflow)
 

@@ -1,3 +1,31 @@
+After Level 2 expansion — 2026-07-04
+
+INPUT: Level 2 = After — any event after 9/10/2025 12:23 PM MT (surrender, paving, gag orders, media, resignations, trial, memorial, visa).
+
+GROK_QUERY_DIR: ~/T/_ck/grok_query/afterglyph (10 files)
+
+NEW LEVEL 3 (4): Investigation_Index, Sept_11_Surrender_And_Custody, Institutional_Resignations, Memorial_And_TPUSA_Succession
+
+RESTRUCTURED: overview — Assess_Manual 3-column TOC (4-4-3); removed duplicate bottom TOC blocks
+
+EXPANDED: all 8 Level 3 pages from grok fan-out; back buttons → /After/overview
+
+GROK → PAGE MAPPING:
+- 1_results.txt → overview + Investigation_Index
+- 2_results.txt → Sept_11_Surrender_And_Custody
+- 3_results.txt → Site_Changes_And_Crime_Scene_Handling
+- 4_results.txt → Legal_Process_Gag_Orders_And_Secrecy
+- 5_results.txt → Media_Narratives_And_Censorship_After
+- 6_results.txt → Media_Narratives_And_Censorship_After
+- 7_results.txt → Institutional_Resignations
+- 8_results.txt → Legal_Process (discovery/ATF/Ballard)
+- 9_results.txt → Memorial_And_TPUSA_Succession
+- 10_results.txt → Visa-Revocation-Celebrations
+
+UI: After/overview in sidebars.ts — no missing entry warning.
+
+---
+
 UVU Level 2 expansion (second pass) — 2026-07-04
 
 INPUT: Level 2 = UVU — campus site, GRAMA failures, people at UVU event, Tyler trial evidence, motive/suppression warnings.
@@ -53,6 +81,34 @@ GROK → PAGE MAPPING:
 - 10_results.txt → Officials_And_Institutions, nate-brooksby, jeff-long
 
 UI: People/overview in sidebars.ts — no missing entry warning.
+
+---
+
+Before Level 2 expansion — 2026-07-04
+
+INPUT: Level 2 = Before — pre-UVU events, Twitter/X interesting context for Charlie Kirk killing.
+
+GROK_QUERY_DIR: ~/T/_ck/grok_query/beforeglyph (10 files)
+
+NEW: Before_Investigation_Index — chronology table, grok routing memo
+
+EXPANDED: Political_Pressure (meeting chronology, Sept 9, Epstein July 12), PreEvent_Searches (Timpanogos surgeons, July 18, political hits), Heightened (aircraft table, Bowyer/insurance), Political-Violence (Hammer/Levin rhetoric), State-Department (pre-event diplomatic travel)
+
+RESTRUCTURED: overview — Assess_Manual 3-column TOC 3-3-3, three body paragraphs; removed duplicate long Overview blocks
+
+GROK → PAGE MAPPING:
+- 1_results.txt → overview + Before_Investigation_Index
+- 2_results.txt → Political_Pressure_And_Meetings_2025
+- 3_results.txt → Political_Pressure + Woke-Right + MAGA
+- 4_results.txt → Political_Pressure + Heightened
+- 5_results.txt → Heightened + Planes
+- 6_results.txt → PreEvent_Searches_And_Recon
+- 7_results.txt → PreEvent + Political_Pressure
+- 8_results.txt → Political-Violence-Debate
+- 9_results.txt → Free-Speech-Campus-Issues
+- 10_results.txt → Heightened + State-Department + Epstein/Bowyer
+
+UI: Before/overview in sidebars.ts — no warning.
 
 ---
 

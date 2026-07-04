@@ -1,107 +1,75 @@
 planning:
   run:
     date: "2026-07-04"
-    focus: "UVU Level 2 expansion (second pass)"
-    input_text: "Level 2 = UVU — campus kill zone, GRAMA, people at UVU, Tyler trial evidence"
-    grok_query_dir: "~/T/_ck/grok_query/uvuglyph"
-    random_phrase: uvuglyph
+    focus: "After Level 2 expansion"
+    input_text: "Level 2 = After — all events after 12:23 PM Sept 10 2025 MT"
+    grok_query_dir: "~/T/_ck/grok_query/afterglyph"
+    random_phrase: afterglyph
   level2:
-    UVU:
-      path: site/docs/UVU
-      overview: site/docs/UVU/overview.mdx
-      level3_count: 16
-      updates:
-        - overview.mdx — Assess_Manual 3-column TOC 6-6-4
-        - UVU_Investigation_Index — People at UVU table + grok slots + trial row
-        - all 16 Level 3 pages expanded from uvuglyph 10-file fan-out
-      grok_to_page_map:
-        1_results.txt: overview + UVU_Investigation_Index
-        2_results.txt: pre-shooting-warnings
-        3_results.txt: Campus_Security_Gaps
-        4_results.txt: Courtyward + Tent + maps
-        5_results.txt: Losee_Center
-        6_results.txt: Pavers + Hardscape-Specialties
-        7_results.txt: UVU-Administration-Response + Institutional + Faculty + Student + Social
-        8_results.txt: People cross-links across courtyard/security/maps/index
-        9_results.txt: Stingray-Device + CIA-UVU-Profiles
-        10_results.txt: Losee_Center trial section + Investigation_Index + Social trial
-      cross_links:
-        - People/overview
-        - court/overview
-        - Tyler_Robinson/Trial/overview
-        - Witnesses/overview
-        - Israel/NSA_Cellphones_Bumblehive
-  prior_run:
-    date: "2026-07-04"
-    focus: "People Level 2 expansion"
-    input_text: "Level 2 = People — key individuals in Charlie Kirk killing, UVU 9/10/2025, motive/suppression, Tyler Robinson trial"
-    grok_query_dir: "~/T/_ck/grok_query/peopleglyph"
-    random_phrase: peopleglyph
-  level2:
-    People:
-      path: site/docs/People
-      overview: site/docs/People/overview.mdx
-      existing_level3: 64
+    After:
+      path: site/docs/After
+      overview: site/docs/After/overview.mdx
+      level3_count: 8
       new_level3:
         - Investigation_Index
-      updates:
-        - overview.mdx — Assess_Manual 3-column TOC 22-22-21
-        - all back buttons href /People/overview
-        - expanded stubs from grok 10-file fan-out
+        - Sept_11_Surrender_And_Custody
+        - Institutional_Resignations
+        - Memorial_And_TPUSA_Succession
       grok_to_page_map:
         1_results.txt: overview + Investigation_Index
-        2_results.txt: charlie-kirk + ben-shapiro + josh-hammer
-        3_results.txt: tyler-robinson + lance-twiggs + Lance_Twiggs_Family + nate-brooksby
-        4_results.txt: erika-kirk + rob-mccoy + mikey-mccoy + blake-neff
-        5_results.txt: brian-harpole + dan-flood + rick-cutler + jeff-long + SUV crew
-        6_results.txt: witnesses + videographers + AV crew (22 pages)
-        7_results.txt: Hamptons donor meeting circle (9 pages)
-        8_results.txt: candace-owens + ian-carroll + tucker-carlson
-        9_results.txt: andrew-kolvet + andrew-sypher + caleb-chilcutt + danny-phillip
-        10_results.txt: Officials_And_Institutions + nate-brooksby + jeff-long
+        2_results.txt: Sept_11_Surrender_And_Custody
+        3_results.txt: Site_Changes_And_Crime_Scene_Handling
+        4_results.txt: Legal_Process_Gag_Orders_And_Secrecy
+        5_results.txt: Media_Narratives_And_Censorship_After
+        6_results.txt: Media_Narratives_And_Censorship_After
+        7_results.txt: Institutional_Resignations
+        8_results.txt: Legal_Process_Gag_Orders_And_Secrecy
+        9_results.txt: Memorial_And_TPUSA_Succession
+        10_results.txt: Visa-Revocation-Celebrations
       cross_links:
-        - Tyler_Robinson/overview
-        - distraction_people/overview
-        - key_individuals/overview
-        - Security_Team/overview
-        - Israel/israel-hamptons
         - court/overview
+        - Tyler_Robinson/Trial/overview
+        - UVU/overview
+        - CoverUp/overview
   prior_run:
     date: "2026-07-04"
-    focus: "Motive Level 2 expansion"
-    input_text: "Level 2 = Motive — why Charlie Kirk was killed; donor, intel, institutional, Tyler frames"
-    grok_query_dir: "~/T/_ck/grok_query/motiveglyph"
-    random_phrase: motiveglyph
+    focus: "Before Level 2 expansion"
+    input_text: "Level 2 = Before — pre-September 10 events, Twitter-interest context for Charlie Kirk killing"
+    grok_query_dir: "~/T/_ck/grok_query/beforeglyph"
+    random_phrase: beforeglyph
   level2:
-    Motive:
-      path: site/docs/Motive
-      overview: site/docs/Motive/overview.mdx
+    Before:
+      path: site/docs/Before
+      overview: site/docs/Before/overview.mdx
       existing_level3:
-        - Donors_Israel_ForeignPolicy
-        - Geopolitical_Intel_Service_Theories
-        - Institutional_Media_Organizational_Dynamics
-        - Tyler_Robinson_Alleged_Motive
+        - Political_Pressure_And_Meetings_2025
+        - PreEvent_Searches_And_Recon
+        - Heightened-Political-Tensions
+        - Woke-Right-Defamation
+        - MAGA-Antisemitism-Debate
+        - Free-Speech-Campus-Issues
+        - Political-Violence-Debate
+        - State-Department-Response
       new_level3:
-        - Motive_Investigation_Index
+        - Before_Investigation_Index
       updates:
-        - overview.mdx
-        - all back buttons href /Motive/overview
-        - Assess_Manual three-column TOC 2-2-1
+        - overview.mdx — Assess_Manual 3-column TOC 3-3-3
+        - all back buttons href /Before/overview
       grok_to_page_map:
-        1_results.txt: overview + Motive_Investigation_Index
-        2_results.txt: Donors_Israel_ForeignPolicy
-        3_results.txt: Donors_Israel_ForeignPolicy
-        4_results.txt: Donors_Israel_ForeignPolicy + Motive_Investigation_Index
-        5_results.txt: Donors_Israel_ForeignPolicy
-        6_results.txt: Geopolitical_Intel_Service_Theories
-        7_results.txt: Institutional_Media_Organizational_Dynamics
-        8_results.txt: Tyler_Robinson_Alleged_Motive
-        9_results.txt: Institutional_Media_Organizational_Dynamics
-        10_results.txt: Geopolitical_Intel_Service_Theories + Donors supplement
+        1_results.txt: overview + Before_Investigation_Index
+        2_results.txt: Political_Pressure_And_Meetings_2025
+        3_results.txt: Political_Pressure + Woke-Right-Defamation + MAGA-Antisemitism-Debate
+        4_results.txt: Political_Pressure + Heightened-Political-Tensions
+        5_results.txt: Heightened-Political-Tensions + Planes cross-links
+        6_results.txt: PreEvent_Searches_And_Recon
+        7_results.txt: PreEvent_Searches + Political_Pressure (July 18)
+        8_results.txt: Political-Violence-Debate
+        9_results.txt: Free-Speech-Campus-Issues
+        10_results.txt: Heightened + State-Department-Response + Political_Pressure (Epstein/Bowyer)
       cross_links:
-        - Israel/overview
-        - TPUSA/overview
-        - Killer/overview
-        - Charlie/Israel_Donors_Motive
-        - CoverUp/overview
-        - Proof_Intel_Services/overview
+        - Charlie/Pre_Event_Timeline
+        - Motive/overview
+        - UVU/pre-shooting-warnings
+        - GoogleSearches/overview
+        - Planes/overview
+        - Timeline/2025
