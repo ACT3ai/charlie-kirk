@@ -1,3 +1,78 @@
+2026_07_04_1136 — Proof_Not_Tyler Level 2 expansion (grok_write.mdx workflow)
+
+GROK_QUERY_DIR: ~/T/_ck/grok_query/proofnotfox
+
+WHAT: Expanded Proof_Not_Tyler from overview-only stub to full section with 11 new Level 3 pages covering ATF inconclusive ballistics, trajectory/wound mismatch, Canon XA55 acoustic split, gun discovery sequence, stairs guy identity gap, backpack/rifle impossibility, missing GSR tests, Discord/custody timeline conflicts, witness audio conflicts, and alternative kill mechanism routing. Restructured overview to Assess_Manual three-column TOC (4-4-3) with three body paragraphs and YAML frontmatter. Updated planning_grok.yaml, grok_planning.txt, pages.csv (+11 rows, overview updated).
+
+NEW PROOF_NOT_TYLER LEVEL 3 PAGES (11):
+- Investigation_Index, ATF_Inconclusive_Ballistics, Trajectory_Wound_Mismatch, Acoustic_Two_Event_Split, Gun_Discovery_Sequence, Stairs_Guy_Identity_Gap, Backpack_Rifle_Impossibility, No_GSR_And_Physical_Tests, Discord_Custody_Timeline, Witness_Audio_Conflicts, Alternative_Kill_Mechanisms
+
+UPDATED: overview.mdx
+
+UI: Proof_Not_Tyler/overview in sidebars.ts navbar — no missing entry warning.
+
+2026_07_04_1136 — Suspects Level 2 expansion (grok_write.mdx workflow)
+
+GROK_QUERY_DIR: ~/T/_ck/grok_query/suspectwave
+
+WHAT: Expanded Suspects Level 2 from 2 stub Level 3 pages to full section with 4 new Level 3 pages, investigation index hub, and grok_to_page_map for all 10 result files. Restructured overview to Assess_Manual three-column TOC (2-2-2) with three body paragraphs. Expanded Black_Clothing_Suspect (785 College Dr, Fox map, press conference timing, Dairy Queen) and Shooting_Locations (Losee affidavit, 5-9° ballistics, grey van acoustics, troofevades 2m, 3D same-time sound). Updated planning_grok.yaml, grok_planning.txt, pages.csv (+4 rows, 3 updated).
+
+GROK → PAGE MAPPING:
+- 1_results.txt → overview + Suspects_Investigation_Index
+- 2_results.txt → Black_Clothing_Suspect.mdx
+- 3_results.txt → Shooting_Locations.mdx
+- 4_results.txt → Grey_Van_Shooter.mdx
+- 5_results.txt → Rick_Cutler_POI.mdx
+- 6_results.txt → Van_Man_Bednarz.mdx
+- 7_results.txt → Black_Clothing_Suspect supplement
+- 8_results.txt → Shooting_Locations + Stairs_Guy cross-link
+- 9_results.txt → Rick_Cutler_POI + Investigation Index
+- 10_results.txt → Investigation Index + Black_Clothing FBI pivot
+
+NEW SUSPECTS LEVEL 3 PAGES (4):
+- Suspects_Investigation_Index, Grey_Van_Shooter, Rick_Cutler_POI, Van_Man_Bednarz
+
+UPDATED: overview.mdx, Black_Clothing_Suspect.mdx, Shooting_Locations.mdx
+
+UI WARNING: Suspects/overview is on home panel (index.mdx) but NOT in sidebars.ts — add left-bar entry if desired.
+
+2026_07_04_1132 — Tent Level 2 expansion (grok_write.mdx workflow)
+
+GROK_QUERY_DIR: ~/T/_ck/grok_query/tentdirtfox
+
+WHAT: Expanded Tent Level 2 from single overview stub to full section with 9 new Level 3 pages covering paving contractors (Hardscape Specialties LLC, Dan Merrell/Hardscape Utah), state earth-moving workers (American Fork + Provo groundskeepers), Sept 14 paving timeline, site alteration forensics, tent structure under Charlie, inside-tent shooter theories, and unverified other-contractor/dad rumors. Restructured overview to Assess_Manual three-column TOC (3-3-3) with three body paragraphs. Updated planning_grok.yaml, grok_planning.txt, pages.csv (+9 rows, Tent overview updated).
+
+NEW TENT LEVEL 3 PAGES (9):
+- Investigation_Index, Hardscape_Specialties, Daniel_Merrell_Hardscape_Utah, State_Workers_Groundskeepers, Paving_Timeline_Sept_14, Site_Alteration_Evidence, Tent_Structure_Under_Charlie, Tent_Shooter_Theories, Other_Contractors
+
+UPDATED: overview.mdx
+
+UI: Tent/overview in sidebars.ts — no missing entry warning.
+
+2026_07_04_1125 — US_Intelligence Level 2 expansion (grok_write.mdx workflow)
+
+GROK_QUERY_DIR: ~/T/_ck/grok_query/usintelwave
+
+WHAT: Expanded US_Intelligence with investigation hub; restructured overview to Assess_Manual three-column TOC (3-3-3); mapped all 8 Level 3 pages from 10 grok result files (explicit grok_to_page_map in planning_grok.yaml). Fixed back buttons to /US_Intelligence/overview. Updated pages.csv (+1 row, 8 updated descriptions/line counts).
+
+GROK → PAGE MAPPING:
+- 1_results.txt → overview + US_Intelligence_Investigation_Index
+- 2_results.txt → cia.mdx (UVU NSS, Utah State, ARTICHOKE, stevendenoon)
+- 3_results.txt → nsa.mdx (Bumblehive, 12/44 phones, Seruga, alt explanations)
+- 4_results.txt → nctc.mdx (Kash shutdown, Benny Johnson, Butler, local LE block)
+- 5_results.txt → odni.mdx (chain, Russell Brand cabinet)
+- 6_results.txt → joe-kent.mdx (quotes, Kash friction, Joe Kin disambiguation)
+- 7_results.txt → tulsi-gabbard.mdx (Macron reply, Brand cabinet)
+- 8_results.txt → Cabot_alibi.mdx (carpet + SAM-702 Bradley Hansell)
+- 9_results.txt → cia + Cabot + military ISR cross-links
+- 10_results.txt → nctc + joe-kent + Investigation_Index cover-up threads
+
+NEW: US_Intelligence_Investigation_Index
+
+UPDATED ALL L3: cia, nsa, odni, nctc, joe-kent, tulsi-gabbard, Cabot_alibi, overview
+
+UI: US_Intelligence/overview in sidebars.ts — no missing entry warning.
+
 2026_07_04_1100 — Medical Level 2 expansion (grok_write.mdx workflow)
 
 GROK_QUERY_DIR: ~/T/_ck/grok_query/medamberlake

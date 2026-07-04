@@ -1,51 +1,43 @@
 planning:
   run:
     date: "2026-07-04"
-    focus: "Medical Level 2 expansion"
-    input_text: "Level 2 = Medical — create Level 3 pages and content"
-    grok_query_dir: "~/T/_ck/grok_query/medamberlake"
-    random_phrase: medamberlake
+    focus: "Suspects Level 2 expansion"
+    input_text: "Level 2 = Suspects — map all Level 3 pages from 10 grok result files"
+    grok_query_dir: "~/T/_ck/grok_query/suspectwave"
+    random_phrase: suspectwave
   level2:
-    Medical:
-      path: site/docs/Medical
-      overview: site/docs/Medical/overview.mdx
-      subsections:
-        Autopsy:
-          path: site/docs/Medical/Autopsy
-          level4_count: 5
-        Hospital:
-          path: site/docs/Medical/Hospital
-          level4_count: 3
+    Suspects:
+      path: site/docs/Suspects
+      overview: site/docs/Suspects/overview.mdx
       existing_level3:
-        - doctors
-        - hospital_leader
-        - medical_examiner
-        - medical_staff_changes
-        - israel_google_searches_medical_people
-        - charlie_trip_to_hospital
-        - events_at_hospital
-        - doctor_dc_phone_call
-        - hospital_security_cameras_removed
-        - autopsy_report_not_public
-        - trial_and_autopsy_report
-        - hospital_people_and_bullet_claims
-        - ballistics_and_wound_analysis
-        - lapel_mic_and_audio_theories
-        - construction_and_site_changes
-        - utah_autopsy_law_changes
-        - Autopsy/overview
-        - Hospital/overview
+        - Black_Clothing_Suspect
+        - Shooting_Locations
       new_level3:
-        - Investigation_Index
-        - Death_Timeline
-        - Timpanogos_Facility
-        - Witness_Account_Conflicts
+        - Suspects_Investigation_Index
+        - Grey_Van_Shooter
+        - Rick_Cutler_POI
+        - Van_Man_Bednarz
       updates:
         - overview.mdx
-        - ballistics_and_wound_analysis.mdx
-        - lapel_mic_and_audio_theories.mdx
-        - construction_and_site_changes.mdx
-        - Autopsy/overview.mdx
-        - Hospital/overview.mdx
-        - Autopsy/*.mdx
-        - Hospital/*.mdx
+        - Black_Clothing_Suspect.mdx
+        - Shooting_Locations.mdx
+      grok_to_page_map:
+        "1_results.txt": "overview + Suspects_Investigation_Index"
+        "2_results.txt": Black_Clothing_Suspect.mdx
+        "3_results.txt": Shooting_Locations.mdx
+        "4_results.txt": Grey_Van_Shooter.mdx
+        "5_results.txt": Rick_Cutler_POI.mdx
+        "6_results.txt": Van_Man_Bednarz.mdx
+        "7_results.txt": "Black_Clothing_Suspect.mdx supplement (construction/K9/Fox map/Dairy Queen)"
+        "8_results.txt": "Shooting_Locations.mdx + cross-link Tyler_Robinson/Stairs_Guy"
+        "9_results.txt": "Rick_Cutler_POI + Suspects_Investigation_Index (Laine, Phil Lyman, witness list)"
+        "10_results.txt": "Suspects_Investigation_Index + Black_Clothing_Suspect (FBI pivot)"
+      cross_links:
+        - FBI/Black_Clothing_Photo
+        - Tyler_Robinson/Stairs_Guy
+        - Influencers/x/project-constitution
+        - Influencers/x/cumby-william
+        - Proof_Not_Tyler/overview
+        - Grey_Van_Shooter
+        - Tent/Tent_Shooter_Theories
+        - Mic/overview
