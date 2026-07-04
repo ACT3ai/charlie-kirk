@@ -1,3 +1,187 @@
+2026_07_04_1531 — Suspects Level 2 verification pass (grok_write.mdx workflow)
+
+GROK_QUERY_DIR: ~/T/_ck/grok_query/suspectwave
+
+WHAT: Verified all 10 grok result files map to Level 3 pages. Filled mapping gaps from queries 8–10: rooftop "ran before shot" timing (12:23:28 vs 12:23:30) on Shooting_Locations; Tiffany Barker, pistol-crowd checklist, Kash Patel discovery withholding on Investigation_Index; Phil Lyman relation video note. Restructured overview to Assess_Manual three-column TOC (2-2-2). Updated planning_grok.yaml, grok_planning.txt, pages.csv line counts.
+
+GROK → PAGE MAPPING (confirmed):
+- 1_results.txt → overview + Suspects_Investigation_Index
+- 2_results.txt → Black_Clothing_Suspect
+- 3_results.txt → Shooting_Locations
+- 4_results.txt → Grey_Van_Shooter
+- 5_results.txt → Rick_Cutler_POI
+- 6_results.txt → Van_Man_Bednarz
+- 7_results.txt → Black_Clothing_Suspect supplement
+- 8_results.txt → Shooting_Locations + Stairs_Guy cross-link
+- 9_results.txt → Rick_Cutler_POI + Investigation_Index scene POIs
+- 10_results.txt → Investigation_Index + Black_Clothing FBI pivot
+
+UPDATED: overview.mdx, Shooting_Locations.mdx, Suspects_Investigation_Index.mdx
+
+UI WARNING: Suspects/overview on home panel but NOT in sidebars.ts — add left-bar entry if desired.
+
+TOTAL: 1 Level 2 + 6 Level 3 = 7 Suspects pages.
+
+2026_07_04_1730 — cameras Level 2 expansion (grok_write.mdx workflow)
+
+GROK_QUERY_DIR: ~/T/_ck/grok_query/lensglyph
+
+WHAT: Expanded cameras/ from five Level 3 stubs to full Surveillance Cameras hub with Investigation_Index and five new topic pages. Mapped all 10 grok files. Restructured overview to Assess_Manual three-column TOC (4-4-3) with three body paragraphs. Fixed all Level 3 back buttons to absolute /cameras/overview. Cross-linked Censorship, Videos, Photos, Medical, TPUSA, Law_Enforcement, Proof_Not_Tyler without duplicating deep dives. Updated planning_grok.yaml, grok_planning.txt, pages.csv (+6 rows, 6 updated).
+
+GROK → PAGE MAPPING:
+- 1_results.txt → overview + Investigation_Index
+- 2_results.txt → UVU_Surveillance
+- 3_results.txt → Ring
+- 4_results.txt → WYZE
+- 5_results.txt → Tyler_On_Cameras + Tyler_Placeholder
+- 6_results.txt → Eyewitness_Mobile_Video
+- 7_results.txt → Canon_XA55_Broadcast
+- 8_results.txt → TPUSA_Production_Footage
+- 9_results.txt → Merchant_And_Travel_CCTV
+- 10_results.txt → Crime_Scene_Camera_Actions
+
+NEW: Investigation_Index, Eyewitness_Mobile_Video, Canon_XA55_Broadcast, TPUSA_Production_Footage, Merchant_And_Travel_CCTV, Crime_Scene_Camera_Actions
+
+UPDATED: overview.mdx, Ring.mdx, WYZE.mdx, UVU_Surveillance.mdx, Tyler_On_Cameras.mdx, Tyler_Placeholder.mdx
+
+UI: cameras/overview in sidebars.ts — no missing entry warning.
+
+TOTAL: 1 Level 2 + 11 Level 3 = 12 cameras pages.
+
+2026_07_04_1600 — Law_Enforcement Level 2 expansion (grok_write.mdx workflow)
+
+GROK_QUERY_DIR: ~/T/_ck/grok_query/lebadgefox
+
+WHAT: Refocused Law_Enforcement on non-FBI state/local agencies. Added Investigation_Index, Utah County Sheriff (Mike Smith), Utah DPS (Beau Mason). Restructured overview to Assess_Manual three-column TOC (4-4-3) excluding FBI from main nav. Mapped all 10 grok files. Expanded orem-police (Public Order Unit), court-proceedings (county attorney roster). Converted fbi-role and nctc-shutdown to pointer stubs. Updated planning_grok.yaml, grok_planning.txt, pages.csv (+3 rows, 4 updated).
+
+GROK → PAGE MAPPING:
+- 1_results.txt → overview + Investigation_Index
+- 2_results.txt → uvu-campus-police
+- 3_results.txt → orem-police-response
+- 4_results.txt → washington-county-sheriff
+- 5_results.txt → utah-county-sheriff
+- 6_results.txt → utah-dps-beau-mason
+- 7_results.txt → crime-scene-handling
+- 8_results.txt → rifle-chain-of-custody
+- 9_results.txt → suspect-manhunt
+- 10_results.txt → court-proceedings + official-resignations
+
+NEW: Investigation_Index, utah-county-sheriff, utah-dps-beau-mason
+
+UPDATED: overview.mdx, orem-police-response.mdx, court-proceedings.mdx, fbi-role.mdx, nctc-shutdown.mdx
+
+UI: Law_Enforcement/overview in sidebars.ts — no missing entry warning.
+
+TOTAL: 1 Level 2 + 13 Level 3 = 14 Law_Enforcement pages.
+
+2026_07_04_1511 — Media Level 2 expansion (grok_write.mdx workflow)
+
+GROK_QUERY_DIR: ~/T/_ck/grok_query/mediasurge
+
+WHAT: Expanded Media from 15-file section with two-column overview to full 25-page hub. Added 10 new Level 3 pages (investigation index, breaking news, Fox, Utah local, social platforms, broadcast TV, trial press, tabloid/digital, FBI press, TPUSA Fox timing). Rewrote overview to Assess_Manual three-column TOC (9-8-8). Fixed absolute back buttons on 14 existing pages. Synced pages.csv with 18 new rows (10 new pages + 8 existing pages missing from CSV). Cross-links Court, Influencers, Censorship without duplicating deep dives.
+
+GROK → PAGE MAPPING:
+- 1_results.txt → overview + investigation-index
+- 2_results.txt → september-10-breaking-news
+- 3_results.txt → fox-news-coverage
+- 4_results.txt → utah-local-press
+- 5_results.txt → social-media-platforms
+- 6_results.txt → tyler-robinson-trial-press
+- 7_results.txt → broadcast-tv-networks
+- 8_results.txt → tabloid-digital-press
+- 9_results.txt → fbi-press-conference-media
+- 10_results.txt → tpusa-replacement-fox-interview
+
+NEW MEDIA LEVEL 3 (10): investigation-index, september-10-breaking-news, fox-news-coverage, utah-local-press, social-media-platforms, broadcast-tv-networks, tyler-robinson-trial-press, tabloid-digital-press, fbi-press-conference-media, tpusa-replacement-fox-interview
+
+PAGES.CSV: +18 rows; Media overview updated
+
+TOTAL: 1 Level 2 + 25 Level 3 Media pages.
+
+2026_07_04_1457 — court Level 2 expansion (grok_write.mdx workflow)
+
+GROK_QUERY_DIR: ~/T/_ck/grok_query/courtglyph
+
+WHAT: Built court/ from mirandize-only stub to full Court & Trial hub with 13 new Level 3 pages plus mirandize subsection. Mapped all 10 grok files. Restructured overview to Assess_Manual three-column TOC (5-5-4) with three body paragraphs. Cross-links Legal, Law_Enforcement, FBI, Medical, Proof_Not_Tyler, Timeline without duplicating deep dives. Defamation-safe on all living judges and attorneys. Re-parented court_mirandize under Court in pages.csv.
+
+GROK → PAGE MAPPING:
+- 1_results.txt → overview + investigation-index
+- 2_results.txt → judge-tony-graf
+- 3_results.txt → judge-robert-lunnen
+- 4_results.txt → defense-team
+- 5_results.txt → prosecution-team
+- 6_results.txt → discovery-brady-disputes
+- 7_results.txt → gag-orders-sealing
+- 8_results.txt → preliminary-hearing-motions
+- 9_results.txt → ballistics-atf-cbla
+- 10_results.txt → discord-evidence-court + mirandize
+
+NEW COURT LEVEL 3 PAGES (13):
+- investigation-index, case-overview, judge-tony-graf, judge-robert-lunnen, defense-team, prosecution-team, utah-county-jail-custody, discovery-brady-disputes, gag-orders-sealing, preliminary-hearing-motions, ballistics-atf-cbla, jaxson-fox-informant-order, discord-evidence-court
+
+NEW LEVEL 2: court/overview.mdx
+
+UPDATED: mirandize/overview.mdx (back button, Court cross-links)
+
+PAGES.CSV: +14 rows; court_mirandize parent_key Home → Court
+
+WARNING: court/overview has no entry in site/sidebars.ts or home page TOC — add inbound nav when approved.
+
+TOTAL: 1 Level 2 + 13 Level 3 + mirandize subtree (1 L3 + 4 L4) = 19 court-area pages.
+
+2026_07_04_1600 — Law_Enforcement Level 2 expansion (grok_write.mdx workflow)
+
+GROK_QUERY_DIR: ~/T/_ck/grok_query/lebadgefox
+
+WHAT: Refocused Law_Enforcement on non-FBI state/local agencies. Added Investigation_Index, Utah County Sheriff (Mike Smith), Utah DPS (Beau Mason). Restructured overview to Assess_Manual three-column TOC (4-4-3) excluding FBI from main nav. Mapped all 10 grok files. Expanded orem-police (Public Order Unit), court-proceedings (county attorney roster). Converted fbi-role and nctc-shutdown to pointer stubs. Updated planning_grok.yaml, grok_planning.txt, pages.csv (+3 rows, 4 updated).
+
+GROK → PAGE MAPPING:
+- 1_results.txt → overview + Investigation_Index
+- 2_results.txt → uvu-campus-police
+- 3_results.txt → orem-police-response
+- 4_results.txt → washington-county-sheriff
+- 5_results.txt → utah-county-sheriff
+- 6_results.txt → utah-dps-beau-mason
+- 7_results.txt → crime-scene-handling
+- 8_results.txt → rifle-chain-of-custody
+- 9_results.txt → suspect-manhunt
+- 10_results.txt → court-proceedings + official-resignations
+
+NEW: Investigation_Index, utah-county-sheriff, utah-dps-beau-mason
+
+UPDATED: overview.mdx, orem-police-response.mdx, court-proceedings.mdx, fbi-role.mdx, nctc-shutdown.mdx
+
+UI: Law_Enforcement/overview in sidebars.ts — no missing entry warning.
+
+TOTAL: 1 Level 2 + 13 Level 3 = 14 Law_Enforcement pages.
+
+2026_07_04_1530 — key_individuals Level 2 expansion (grok_write.mdx workflow)
+
+GROK_QUERY_DIR: ~/T/_ck/grok_query/keyrosterfox
+
+WHAT: Built key_individuals from placeholder stub to full investigative roster with 10 new Level 3 role-cluster pages. Mapped all 10 grok files. Restructured overview to Assess_Manual three-column TOC (4-3-3) with three body paragraphs. Cross-links People/ profiles and distraction_people/ Security_Team/ without duplicating full bios. Defamation-safe on all living persons.
+
+GROK → PAGE MAPPING:
+- 1_results.txt → overview + Investigation_Index
+- 2_results.txt → Central_Figures
+- 3_results.txt → Security_And_Protection
+- 4_results.txt → Officials_And_Law_Enforcement
+- 5_results.txt → TPUSA_Staff_Sept_10
+- 6_results.txt → Eyewitnesses_And_Workers
+- 7_results.txt → Distraction_And_Early_Suspects
+- 8_results.txt → Donor_Meeting_Circle
+- 9_results.txt → Investigators_And_Media
+- 10_results.txt → Medical_Legal_Periphery
+
+NEW KEY_INDIVIDUALS LEVEL 3 PAGES (10):
+- Investigation_Index, Central_Figures, Security_And_Protection, Officials_And_Law_Enforcement, TPUSA_Staff_Sept_10, Eyewitnesses_And_Workers, Distraction_And_Early_Suspects, Donor_Meeting_Circle, Investigators_And_Media, Medical_Legal_Periphery
+
+UPDATED: overview.mdx
+
+UI: key_individuals/overview in sidebars.ts — no missing entry warning.
+
+TOTAL: 1 Level 2 + 10 Level 3 = 11 key_individuals pages.
+
 2026_07_04_1505 — intelligence Level 2 expansion (grok_write.mdx workflow)
 
 GROK_QUERY_DIR: ~/T/_ck/grok_query/foreignwave

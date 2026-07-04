@@ -1,3 +1,139 @@
+Suspects Level 2 expansion — 2026-07-04 (verification pass)
+
+INPUT: Level 2 = Suspects — anything about alternative suspects, POIs, shooter locations beyond Tyler Robinson.
+
+GROK_QUERY_DIR: ~/T/_ck/grok_query/suspectwave (10 files — prior run 1136, mapping verified 1531)
+
+LEVEL 3 PAGES (6 total):
+- Suspects_Investigation_Index — memo hub, POI table, FBI pivot, crowd checklist
+- Black_Clothing_Suspect — dispatch, Dylan Hope, K9, sheriff/FBI photo mismatch
+- Shooting_Locations — Losee affidavit, ballistics angle, grey van acoustics, ran-before-shot timing
+- Grey_Van_Shooter — laser POI, hatch timing, 4940 Hz
+- Rick_Cutler_POI — arm puller, SUV witness
+- Van_Man_Bednarz — CumbyWilliam grey-van allegations
+
+GROK → PAGE MAPPING:
+- 1_results.txt → overview + Suspects_Investigation_Index
+- 2_results.txt → Black_Clothing_Suspect
+- 3_results.txt → Shooting_Locations
+- 4_results.txt → Grey_Van_Shooter
+- 5_results.txt → Rick_Cutler_POI
+- 6_results.txt → Van_Man_Bednarz
+- 7_results.txt → Black_Clothing_Suspect supplement (Fox map, Dairy Queen, press conference)
+- 8_results.txt → Shooting_Locations (affidavit timeline, ran-before-shot, Google Trends scout)
+- 9_results.txt → Rick_Cutler_POI + Investigation_Index (Lyman, Barker, pistol crowd)
+- 10_results.txt → Investigation_Index + Black_Clothing (FBI pivot, Kash Patel discovery)
+
+UPDATED THIS PASS: overview (3-column TOC), Shooting_Locations (ran-before-shot), Suspects_Investigation_Index (query 9/10 gaps).
+
+UI WARNING: Suspects on home panel (index.mdx) but NOT in sidebars.ts.
+
+---
+
+cameras Level 2 expansion — 2026-07-04
+
+INPUT: Level 2 = cameras — anything about cameras, photos, video, mobile, TPUSA footage, surveillance, Tyler Robinson.
+
+GROK_QUERY_DIR: ~/T/_ck/grok_query/lensglyph (10 files)
+
+NEW LEVEL 3 PAGES (6):
+- Investigation_Index — memo hub + peer pointers
+- Eyewitness_Mobile_Video — Ryne Simmons, Jon Bray, Blake Bednarz
+- Canon_XA55_Broadcast — professional broadcast audio
+- TPUSA_Production_Footage — withheld vs birthday release, drone contradiction
+- Merchant_And_Travel_CCTV — Dairy Queen, Maverik, Washington County lobby
+- Crime_Scene_Camera_Actions — SD cards, camera takedown, badge-man threads
+
+UPDATED: overview (4-4-3 TOC, three body paragraphs), Ring, WYZE, UVU_Surveillance, Tyler_On_Cameras, Tyler_Placeholder — absolute back buttons, grok-mapped expansion.
+
+GROK → PAGE MAPPING:
+- 1_results.txt → overview + Investigation_Index
+- 2_results.txt → UVU_Surveillance
+- 3_results.txt → Ring
+- 4_results.txt → WYZE
+- 5_results.txt → Tyler_On_Cameras + Tyler_Placeholder
+- 6_results.txt → Eyewitness_Mobile_Video
+- 7_results.txt → Canon_XA55_Broadcast
+- 8_results.txt → TPUSA_Production_Footage
+- 9_results.txt → Merchant_And_Travel_CCTV
+- 10_results.txt → Crime_Scene_Camera_Actions
+
+PAGES.CSV: +6 rows, 6 updated line counts/descriptions.
+
+UI: cameras/overview in sidebars.ts — no missing entry warning.
+
+TOTAL: 1 Level 2 + 11 Level 3 = 12 cameras pages.
+
+Media Level 2 expansion — 2026-07-04
+
+INPUT: Level 2 = Media — newspapers, articles, TV, platforms, court case, Tyler Robinson.
+
+GROK_QUERY_DIR: ~/T/_ck/grok_query/mediasurge (10 files)
+
+NEW LEVEL 3 PAGES (10):
+- investigation-index, september-10-breaking-news, fox-news-coverage, utah-local-press, social-media-platforms, broadcast-tv-networks, tyler-robinson-trial-press, tabloid-digital-press, fbi-press-conference-media, tpusa-replacement-fox-interview
+
+UPDATED: overview.mdx — Assess_Manual three-column TOC (9-8-8), three body paragraphs; 14 existing pages back-button fix to /Media/overview; pages.csv +18 rows (10 new + 8 previously missing from CSV).
+
+UI: Media/overview exists — verify sidebars.ts / home TOC entry.
+
+TOTAL: 1 Level 2 + 25 Level 3 Media pages.
+
+court Level 2 expansion — 2026-07-04
+
+INPUT: Level 2 = Court — anything about court, judge, trial, prosecutors, defense, prison, discovery, Tyler Robinson trial.
+
+GROK_QUERY_DIR: ~/T/_ck/grok_query/courtglyph (10 files)
+
+NEW LEVEL 2: court/overview.mdx — Assess_Manual three-column TOC (5-5-4), three body paragraphs, Related Areas.
+
+NEW LEVEL 3 PAGES (13):
+- investigation-index — memo hub + case roster
+- case-overview — State v. Robinson 251403576
+- judge-tony-graf — presiding judge, gag order, contempt
+- judge-robert-lunnen — vacancy before case
+- defense-team — Nester, Burt, Novak, Visser
+- prosecution-team — Gray, Ballard, deputies
+- utah-county-jail-custody — Booking 460956
+- discovery-brady-disputes — FBI/ATF withholding, 600k files
+- gag-orders-sealing — Dec 2025 gag, March 2026 seal fight
+- preliminary-hearing-motions — July 2026 scheduling
+- ballistics-atf-cbla — inconclusive ATF, CBLA, VCM
+- jaxson-fox-informant-order — transport order
+- discord-evidence-court — Miranda vs Discord timeline
+
+UPDATED: mirandize/overview.mdx — back button to /court/overview, Court cross-links.
+
+PAGES.CSV: +14 rows (Court L2 + 13 L3); court_mirandize parent_key Home → Court.
+
+UI WARNING: court not in sidebars.ts or home TOC — needs inbound nav entry.
+
+TOTAL: 1 Level 2 + 13 new Level 3 + 1 mirandize update + 4 existing mirandize Level 4 = 19 court-area pages.
+
+Law_Enforcement Level 2 expansion — 2026-07-04
+
+INPUT: Level 2 = Law_Enforcement — non-FBI police sheriffs DPS prosecutors.
+
+GROK_QUERY_DIR: ~/T/_ck/grok_query/lebadgefox (10 files)
+
+NEW LEVEL 3 PAGES (3):
+- Investigation_Index, utah-county-sheriff, utah-dps-beau-mason
+
+UPDATED: overview (4-4-3 TOC non-FBI), orem-police-response, court-proceedings, fbi-role + nctc-shutdown → pointer stubs
+
+TOTAL: 1 Level 2 + 13 Level 3 = 14 Law_Enforcement pages (11 in main TOC).
+
+key_individuals Level 2 expansion — 2026-07-04
+
+INPUT: Level 2 = key_individuals — anyone peripheral to Charlie Kirk killing.
+
+GROK_QUERY_DIR: ~/T/_ck/grok_query/keyrosterfox (10 files)
+
+NEW LEVEL 3 PAGES (10):
+- Investigation_Index, Central_Figures, Security_And_Protection, Officials_And_Law_Enforcement, TPUSA_Staff_Sept_10, Eyewitnesses_And_Workers, Distraction_And_Early_Suspects, Donor_Meeting_Circle, Investigators_And_Media, Medical_Legal_Periphery
+
+TOTAL: 1 Level 2 + 10 Level 3 = 11 key_individuals pages.
+
 GoogleSearches Level 2 expansion — 2026-07-04
 
 INPUT: Build out GoogleSearches — Israel/DC/Virginia Google Trends before 9/10/2025 for case-related people, places, things

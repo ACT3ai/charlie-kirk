@@ -1,47 +1,43 @@
 planning:
   run:
     date: "2026-07-04"
-    focus: "GoogleSearches Level 2 expansion"
-    input_text: "Level 2 = GoogleSearches — Israel/DC/Virginia Trends before 9/10 for case people places things"
-    grok_query_dir: "~/T/_ck/grok_query/trendglyph"
-    random_phrase: trendglyph
+    focus: "Suspects Level 2 expansion"
+    input_text: "Level 2 = Suspects — alternative suspects and POIs beyond Tyler Robinson"
+    grok_query_dir: "~/T/_ck/grok_query/suspectwave"
+    random_phrase: suspectwave
   level2:
-    GoogleSearches:
-      path: site/docs/GoogleSearches
-      overview: site/docs/GoogleSearches/overview.mdx
-      existing_level3: []
+    Suspects:
+      path: site/docs/Suspects
+      overview: site/docs/Suspects/overview.mdx
+      existing_level3:
+        - Black_Clothing_Suspect
+        - Shooting_Locations
       new_level3:
-        - investigation-index
-        - july-20-2025-anchor
-        - israel-ip-search-patterns
-        - dc-metro-search-patterns
-        - tyler-robinson-lance-twiggs-searches
-        - kathryn-nester-searches
-        - uvu-campus-location-searches
-        - timpanogos-medical-searches
-        - judges-graf-lunnen-searches
-        - planes-search-patterns
-        - fbi-dps-law-enforcement-searches
-        - tpusa-political-figures-searches
-        - misc-figures-searches
-        - trends-deletion-suppression
+        - Suspects_Investigation_Index
+        - Grey_Van_Shooter
+        - Rick_Cutler_POI
+        - Van_Man_Bednarz
       updates:
         - overview.mdx
+        - all back buttons href /Suspects/overview
+        - grok_to_page_map verified 2026-07-04 second pass
       grok_to_page_map:
-        1_results.txt: overview + investigation-index
-        2_results.txt: july-20-2025-anchor
-        3_results.txt: tyler-robinson-lance-twiggs-searches
-        4_results.txt: kathryn-nester-searches
-        5_results.txt: uvu-campus-location-searches
-        6_results.txt: timpanogos-medical-searches
-        7_results.txt: judges-graf-lunnen-searches
-        8_results.txt: fbi-dps-law-enforcement-searches
-        9_results.txt: planes-search-patterns
-        10_results.txt: tpusa-political-figures-searches + misc-figures + trends-deletion
+        1_results.txt: overview + Suspects_Investigation_Index
+        2_results.txt: Black_Clothing_Suspect
+        3_results.txt: Shooting_Locations
+        4_results.txt: Grey_Van_Shooter
+        5_results.txt: Rick_Cutler_POI
+        6_results.txt: Van_Man_Bednarz
+        7_results.txt: Black_Clothing_Suspect supplement
+        8_results.txt: Shooting_Locations + Stairs_Guy cross-link
+        9_results.txt: Rick_Cutler_POI + Investigation_Index scene POIs
+        10_results.txt: Investigation_Index + Black_Clothing FBI pivot
       cross_links:
-        - Before/PreEvent_Searches_And_Recon
-        - Israel/Israeli_Search_Patterns_Claims
-        - Medical/israel_google_searches_medical_people
-        - Censorship/Google_Search_Trends_Scrubbing
-        - Tyler_Robinson/Recruited
-        - intelligence/Foreign_Search_IP_Patterns
+        - Killer/overview
+        - Proof_Not_Tyler/overview
+        - Tyler_Robinson/overview
+        - FBI/Black_Clothing_Photo
+        - distraction_people/overview
+        - Witnesses/overview
+        - Tent/Tent_Shooter_Theories
+        - court/discovery-brady-disputes
