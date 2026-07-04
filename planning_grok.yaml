@@ -1,43 +1,44 @@
 planning:
   run:
     date: "2026-07-04"
-    focus: "Gun_Bullet Level 2 expansion"
-    input_text: "Level 2 = Gun_Bullet — gun, bullet, .30-06 could not have killed Charlie Kirk"
-    grok_query_dir: "~/T/_ck/grok_query/mauserfox"
-    random_phrase: mauserfox
+    focus: "Drones Level 2 expansion"
+    input_text: "Level 2 = Drones — create Level 3 pages and expand section"
+    grok_query_dir: "~/T/_ck/grok_query/dronevortex"
+    random_phrase: dronevortex
   level2:
-    Gun_Bullet:
-      path: site/docs/Gun_Bullet
-      overview: site/docs/Gun_Bullet/overview.mdx
-      existing_level3:
-        - Gun_Dropped_Location
+    Drones:
+      path: site/docs/Drones
+      overview: site/docs/Drones/overview.mdx
+      existing_level3: []
       new_level3:
-        - Gun_Bullet_Investigation_Index
-        - Mauser_30_06_Rifle
-        - ATF_Fragment_Inconclusive
-        - Thirty_06_Energy_Mismatch
-        - Wound_Trajectory_Angle
-        - Alternative_Calibers_Weapons
-        - Rifle_Fingerprints_Mismatch
-        - Bullet_Stage_Wood
+        - Investigation_Index
+        - N1098L_Air_Launched_Drones
+        - TPUSA_Production_Drone
+        - Switchblade_DARPA_Claims
+        - Military_Drones_On_Video
+        - UVU_Security_No_Drones
+        - Israeli_Armed_Quadcopter
+        - Butler_PA_Drone_Parallel
+        - Butch_Hibbs_Crowd_Drones
       updates:
         - overview.mdx
-        - Gun_Dropped_Location.mdx
       grok_to_page_map:
-        "1_results.txt": "overview + Gun_Bullet_Investigation_Index"
-        "2_results.txt": Mauser_30_06_Rifle.mdx
-        "3_results.txt": ATF_Fragment_Inconclusive.mdx
-        "4_results.txt": Thirty_06_Energy_Mismatch.mdx
-        "5_results.txt": Wound_Trajectory_Angle.mdx
-        "6_results.txt": Alternative_Calibers_Weapons.mdx
-        "7_results.txt": Gun_Dropped_Location.mdx
-        "8_results.txt": Rifle_Fingerprints_Mismatch.mdx
-        "9_results.txt": Bullet_Stage_Wood.mdx
-        "10_results.txt": "ATF_Fragment_Inconclusive supplement (CBLA, discovery unseal)"
+        1_results.txt: overview + Investigation_Index
+        2_results.txt: N1098L_Air_Launched_Drones
+        3_results.txt: TPUSA_Production_Drone
+        4_results.txt: Israeli_Armed_Quadcopter
+        5_results.txt: Switchblade_DARPA_Claims
+        6_results.txt: Military_Drones_On_Video
+        7_results.txt: Butler_PA_Drone_Parallel
+        8_results.txt: Butch_Hibbs_Crowd_Drones
+        9_results.txt: UVU_Security_No_Drones
+        10_results.txt: Investigation_Index + cross-link Provo_Airport_Counter_UAS
       cross_links:
-        - Proof_Not_Tyler/overview
-        - Medical/ballistics_and_wound_analysis
-        - Tyler_Robinson/Weapon_Rifle
+        - Planes/N1098L/overview
+        - Proof_Intel_Services/N1098L_HADES_Over_UVU
+        - Proof_Intel_Services/Provo_Airport_Counter_UAS
+        - Security_Team/perimeter-rooftop-failures
+        - TPUSA_Production_Drone
+        - Proof_Not_Tyler/Alternative_Kill_Mechanisms
         - Mic/overview
-        - Law_Enforcement/rifle-chain-of-custody
-        - Suspects/Shooting_Locations
+        - Israel/overview

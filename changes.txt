@@ -1,3 +1,18 @@
+2026_07_04_1234 — Drones Level 2 expansion (grok_write.mdx workflow)
+
+GROK_QUERY_DIR: ~/T/_ck/grok_query/dronevortex
+
+WHAT: Expanded Drones from overview-only stub to full section with 9 new Level 3 pages covering N1098L air-launched drones, TPUSA production drone admissions, Switchblade/DARPA routing, military drones on video, UVU no-security-drones gap, Israeli quadcopter theory, Butler PA parallel, and Butch Hibbs crowd operator threads. Restructured overview to Assess_Manual three-column TOC (3-3-3) with three body paragraphs. Updated planning_grok.yaml, grok_planning.txt, pages.csv (+9 rows, overview updated).
+
+NEW DRONES LEVEL 3 PAGES (9):
+- Investigation_Index, N1098L_Air_Launched_Drones, TPUSA_Production_Drone, Switchblade_DARPA_Claims, Military_Drones_On_Video, UVU_Security_No_Drones, Israeli_Armed_Quadcopter, Butler_PA_Drone_Parallel, Butch_Hibbs_Crowd_Drones
+
+UPDATED: overview.mdx
+
+UI: Drones/overview in sidebars.ts — no missing entry warning.
+
+TOTAL: 1 Level 2 + 9 Level 3 = 10 Drones pages.
+
 2026_07_04_1209 — distraction_people Level 2 expansion (grok_write.mdx workflow)
 
 GROK_QUERY_DIR: ~/T/_ck/grok_query/distractfox
@@ -38,6 +53,30 @@ NEW PROOF_NOT_TYLER LEVEL 3 PAGES (11):
 UPDATED: overview.mdx
 
 UI: Proof_Not_Tyler/overview in sidebars.ts navbar — no missing entry warning.
+
+2026_07_04_1234 — Censorship Level 2 expansion (grok_write.mdx workflow)
+
+GROK_QUERY_DIR: ~/T/_ck/grok_query/silentban
+
+WHAT: Built Censorship from overview-only stub to full section with 9 new Level 3 pages. Mapped all 10 grok files. Restructured overview to Assess_Manual 3-3-3 TOC with three body paragraphs. Cross-links CoverUp/Influencers/Media without duplicating HolonCitizen deep dives. Defamation-safe attribution on TPUSA/bot-farm allegations.
+
+GROK → PAGE MAPPING:
+- 1_results.txt → overview + Censorship_Investigation_Index
+- 2_results.txt → X_Candace_Engagement_Bans.mdx
+- 3_results.txt → Ryne_Simmons_FBI_Video.mdx
+- 4_results.txt → Court_Gag_Orders.mdx
+- 5_results.txt → X_Deboosting_Investigators.mdx
+- 6_results.txt → TPUSA_Legal_Threats.mdx
+- 7_results.txt → Platform_YouTube_Meta.mdx
+- 8_results.txt → Google_Search_Trends_Scrubbing.mdx
+- 9_results.txt → Witness_Footage_Pressure.mdx
+- 10_results.txt → Index supplement (IPFS, Fix, fact-check)
+
+NEW: Censorship_Investigation_Index, X_Candace_Engagement_Bans, X_Deboosting_Investigators, Ryne_Simmons_FBI_Video, Court_Gag_Orders, TPUSA_Legal_Threats, Platform_YouTube_Meta, Google_Search_Trends_Scrubbing, Witness_Footage_Pressure
+
+UPDATED: overview.mdx
+
+UI: Censorship/overview in sidebars.ts — no missing entry warning.
 
 2026_07_04_1210 — Gun_Bullet Level 2 expansion (grok_write.mdx workflow)
 

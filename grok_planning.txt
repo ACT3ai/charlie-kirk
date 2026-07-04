@@ -1,30 +1,23 @@
-Gun_Bullet Level 2 expansion — 2026-07-04
+Drones Level 2 expansion — 2026-07-04
 
-INPUT: Level 2 = Gun_Bullet — gun, bullet, .30-06 could not have killed Charlie Kirk.
+INPUT: Build out Drones — Level 2 = drones; create Level 3 pages and write content for each.
 
-GROK_QUERY_DIR: ~/T/_ck/grok_query/mauserfox (10 files)
+GROK_QUERY_DIR: ~/T/_ck/grok_query/dronevortex (10 files)
 
-GROK → PAGE MAPPING:
-- 1_results.txt → overview + Gun_Bullet_Investigation_Index
-- 2_results.txt → Mauser_30_06_Rifle.mdx
-- 3_results.txt → ATF_Fragment_Inconclusive.mdx
-- 4_results.txt → Thirty_06_Energy_Mismatch.mdx
-- 5_results.txt → Wound_Trajectory_Angle.mdx
-- 6_results.txt → Alternative_Calibers_Weapons.mdx
-- 7_results.txt → Gun_Dropped_Location.mdx
-- 8_results.txt → Rifle_Fingerprints_Mismatch.mdx
-- 9_results.txt → Bullet_Stage_Wood.mdx
-- 10_results.txt → ATF supplement (CBLA, VCM, discovery unseal)
-
-NEW LEVEL 3 PAGES (7):
-- Gun_Bullet_Investigation_Index, Mauser_30_06_Rifle, ATF_Fragment_Inconclusive, Thirty_06_Energy_Mismatch, Wound_Trajectory_Angle, Alternative_Calibers_Weapons, Rifle_Fingerprints_Mismatch, Bullet_Stage_Wood
+NEW LEVEL 3 PAGES (9):
+- Investigation_Index — drone memo hub
+- N1098L_Air_Launched_Drones — HADES drop 9:16 AM, pickup 12:48 PM MT
+- TPUSA_Production_Drone — birthday video, Frank Turek, cease-and-desist admission
+- Switchblade_DARPA_Claims — loitering munition and X-65 airdrop routing
+- Military_Drones_On_Video — 150 mph masking, Blake Bednarz 16 drones
+- UVU_Security_No_Drones — campus police engaged no drones, AP reporting
+- Israeli_Armed_Quadcopter — Gaza-documented tech applied to UVU (unverified)
+- Butler_PA_Drone_Parallel — NCTC same-group allegation vs Butler 2024
+- Butch_Hibbs_Crowd_Drones — Utah operator, Heber City AES flight thread
 
 UPDATED:
-- overview.mdx — Assess_Manual 3-3-3 TOC, three paragraphs, energy content moved to Thirty_06 page
-- Gun_Dropped_Location.mdx — affidavit recovery path, ATF cross-links
+- overview.mdx — Assess_Manual three-column TOC (3-3-3), three body paragraphs, Related Areas
 
-CROSS-LINKS: Proof_Not_Tyler, Medical ballistics, Tyler Weapon_Rifle, Mic, Law_Enforcement rifle-chain, Suspects Shooting_Locations
+UI: Drones/overview in sidebars.ts — no missing entry warning.
 
-UI: Gun_Bullet/overview in sidebars.ts — no missing entry warning.
-
-TOTAL: 1 Level 2 + 9 Level 3 = 10 Gun_Bullet pages.
+TOTAL: 1 Level 2 + 9 Level 3 = 10 Drones pages.
