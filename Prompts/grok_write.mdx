@@ -153,6 +153,48 @@ STRUCTURE: LEVEL 2 page, LEVEL 3 page, LEVEL 4 page
 
 
 ====================================================================
+LINKING RULES (BACK BUTTONS AND INTERNAL LINKS)  --  READ CAREFULLY
+====================================================================
+
+* This Docusaurus site is configured with trailingSlash: false (see
+  site/docusaurus.config.ts). That means a page served at /FBI/FBI_Investigation
+  has NO trailing slash, so the browser treats /FBI/ as its base directory.
+
+* CONSEQUENCE: a raw HTML relative link like <a href="../overview"> from
+  /FBI/FBI_Investigation resolves in the browser to /overview (one level too
+  high), which does NOT exist. This is exactly how the back buttons got broken.
+  NEVER use a relative href in a raw HTML <a> tag.
+
+* RULE 1 -- Header back-button on every Level 3 (and Level 4) page:
+  Use an ABSOLUTE href that points at the Level 2 overview:
+
+      <a href="/{Level2Section}/overview" style={{display:'inline-block',
+      marginBottom:'1rem', padding:'0.35rem 0.9rem', background:'#1a73e8',
+      color:'#fff', borderRadius:'4px', textDecoration:'none',
+      fontSize:'0.9rem'}}>← {Level2 Label}</a>
+
+  Example on any FBI Level 3 page: href="/FBI/overview" with label "← FBI".
+  A sub-section overview (e.g. Medical/Hospital/overview.mdx) points its back
+  button at its PARENT section overview: href="/Medical/overview", "← Medical".
+
+* RULE 2 -- Header back-button on a Level 2 overview page:
+  It points home: <a href="/" ...>← Home</a>. Absolute.
+
+* RULE 3 -- Any raw HTML <a href> anywhere (back buttons, card buttons,
+  "Related Areas" grids, "View Law" buttons) MUST be an absolute path that
+  starts with "/". Never "../" and never a bare "overview".
+
+* RULE 4 -- Markdown links are the exception. A markdown doc-to-doc link like
+  [FBI Investigation](./FBI_Investigation) is fine and preferred, because
+  Docusaurus resolves it against the source FILE path at build time, not
+  against the browser URL. Overview TOC bullets should use this markdown form.
+
+* SELF-CHECK before finishing: grep the files you touched for
+  href="../  -- if any raw HTML anchor uses a relative href, rewrite it to an
+  absolute /{Section}/... path. There must be zero relative raw-HTML hrefs.
+
+
+====================================================================
 DIRECTORY MAP (WHAT LIVES WHERE)
 ====================================================================
 
@@ -388,6 +430,15 @@ STAGE 5: WRITE NEW LEVEL 3s
 * Make sure we are factoring in the information we got from the Grok AI
   searches.
 
+* Every new Level 3 page MUST start with an absolute header back-button per
+  RULE 1 in LINKING RULES above (href="/{Level2Section}/overview", "← {Label}").
+
+* THE MOMENT you create a new Level 3 file, also add its bullet to the Level 2
+  overview's table-of-contents bullet list, in the same edit pass. Do not defer
+  this and do not rely on remembering it later. Use a markdown link of the form
+  [Nice Title](./New_Level3_Filename) placed in the appropriate two-column
+  bullet block. The overview TOC must grow every time the directory grows.
+
 
 ====================================================================
 STAGE 6: VERIFY INBOUND LINKS
@@ -395,6 +446,19 @@ STAGE 6: VERIFY INBOUND LINKS
 
 * Double-check that any Level 3 files we added or modified have inbound links
   from the appropriate level.
+
+* FULL DIRECTORY-VS-TOC RECONCILIATION (do this for every Level 2 directory we
+  touched this run -- do NOT do it from memory):
+  * List every .mdx and .md file in the Level 2 directory (skip overview.* and
+    _category_.json).
+  * For each such file, confirm there is a bullet link to it in that Level 2's
+    overview table of contents.
+  * If any file is not linked, ADD its bullet to the overview TOC now. The
+    overview must link to 100% of the Level 3 documents that live in its
+    directory. This is the step that keeps the Level 2 table of contents
+    growing as new Level 3s are added -- it is not optional.
+  * A quick way to find gaps: for each filename (minus extension), grep the
+    overview for that filename; zero hits means it is missing from the TOC.
 
 * A Level 3 document should have an inbound link from its Level 2. If a Level 3
   does not have an inbound link from its Level 2, add that link to the Level 2.
@@ -414,6 +478,12 @@ STAGE 6: VERIFY INBOUND LINKS
 
 * Output to stdout "WARNING: <what is missing>" for any Level 2 that has no
   inbound UI entry point.
+
+* BACK-BUTTON CHECK: for every file we added or modified, confirm its header
+  back-button (and any other raw HTML <a href>) uses an absolute path per the
+  LINKING RULES. Grep the touched files for  href="../  -- there must be zero
+  matches. Rewrite any relative raw-HTML href to an absolute /{Section}/...
+  path before finishing.
 
 
 ====================================================================
