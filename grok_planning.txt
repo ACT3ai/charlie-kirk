@@ -1,3 +1,69 @@
+Timeline Level 2 expansion — 2026-07-04
+
+INPUT: Level 2 = Timeline — chronological hub; 21 Level 3 pages + 3 Level 4 Tyler sub-pages.
+
+GROK_QUERY_DIR: ~/T/_ck/grok_query/timeglyph (10 files)
+
+NEW LEVEL 3 (1): Investigation_Index
+
+PAGES_CSV: +10 rows (Investigation_Index + 9 previously unindexed Level 3 pages)
+
+RESTRUCTURED: overview — Assess_Manual 3-column TOC (8-7-7); removed embedded summary/full-detail blocks (content lives on Level 3 pages + Investigation_Index)
+
+FIXED: all root Level 3 back buttons href="./overview" → href="/Timeline/overview"
+
+EXPANDED: roof-jumping-timeline + 2026 grok linkage tables
+
+GROK → PAGE MAPPING:
+- 1_results.txt → overview + Investigation_Index
+- 2_results.txt → Sept_10_2025 + 12-23-shooting-time
+- 3_results.txt → Sept_8_to_13 + roof-jumping-timeline
+- 4_results.txt → Tyler_Robinson + Level 4 sub-pages
+- 5_results.txt → july-18-decision + July 20 meeting cluster
+- 6_results.txt → hamptons + high-pressure-sept-9 + kill-me text
+- 7_results.txt → Year hubs (2024/2025/2026/years/2025)
+- 8_results.txt → Charlie_Kirk
+- 9_results.txt → witness-discrepancies + post-assassination-investigations
+- 10_results.txt → october-15-2025 + Planes
+
+UI: Timeline/overview in sidebars.ts — no missing entry warning.
+
+TOTAL: 1 Level 2 + 22 Level 3 + 3 Level 4 = 26 Timeline pages.
+
+---
+
+CoverUp Level 2 expansion — 2026-07-04
+
+INPUT: Level 2 = CoverUp — navbar section; physical scene, foreign-lead shutdown, digital evidence, custody timeline, censorship (17 existing claim pages).
+
+GROK_QUERY_DIR: ~/T/_ck/grok_query/coverglyph (10 files)
+
+NEW LEVEL 3 (1): Investigation_Index
+
+RESTRUCTURED: overview — Assess_Manual 3-column TOC (6-6-6); removed numbered indicator list, Baron Coleman video block, duplicate Related sections; three body paragraphs
+
+FIXED: all 17 Level 3 back buttons href="./overview" → href="/CoverUp/overview"
+
+EXPANDED: WhiteHouse_Halt_IC + Distraction_People grok linkage tables; existing pages already substantive (146–427 lines)
+
+GROK → PAGE MAPPING:
+- 1_results.txt → overview + Investigation_Index
+- 2_results.txt → Dirt_Removed
+- 3_results.txt → Mic_Explosive
+- 4_results.txt → AES_Tennessee_Explosion
+- 5_results.txt → Joe_Kent_Halt + WhiteHouse_Halt_IC
+- 6_results.txt → Google_Censorship + Censorship_Investigators + YouTube/X HolonCitizen
+- 7_results.txt → Israelis_At_UVU
+- 8_results.txt → Videos_Deleted_Remotely + FBI_Asked_Delete_Video
+- 9_results.txt → Utah_Autopsy_Law + Sheriff_Video_Withheld + Custody_Confession_Timeline
+- 10_results.txt → Narrative_Psyop + Distraction_People
+
+UI: CoverUp/overview in sidebars.ts navbar — no missing entry warning.
+
+TOTAL: 1 Level 2 overview + 18 Level 3 = 19 CoverUp pages (~4496 lines).
+
+---
+
 After Level 2 expansion — 2026-07-04
 
 INPUT: Level 2 = After — any event after 9/10/2025 12:23 PM MT (surrender, paving, gag orders, media, resignations, trial, memorial, visa).

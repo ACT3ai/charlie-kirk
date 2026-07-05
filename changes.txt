@@ -1,3 +1,55 @@
+2026_07_04_2030 — Timeline Level 2 expansion (grok_write.mdx workflow)
+
+GROK_QUERY_DIR: ~/T/_ck/grok_query/timeglyph
+
+WHAT: Timeline chronological hub pass — new Investigation_Index, 10 grok result files, Assess_Manual overview restructure (8-7-7 three-column TOC + three body paragraphs). Removed embedded summary/full-detail blocks from overview (content remains on Level 3 pages). Fixed all 21 root Level 3 back buttons to absolute /Timeline/overview. Added pages.csv rows for 9 previously unindexed Level 3 pages + Investigation_Index. Expanded roof-jumping-timeline and 2026 with grok linkage tables. TOC reconciliation — all 22 Level 3 files linked from overview. Zero relative href="./overview" in Timeline root. Tyler charged not convicted. Updated planning_grok.yaml, grok_planning.txt, pages.csv (+10 rows, overview updated).
+
+GROK → PAGE MAPPING:
+- 1_results.txt → overview + Investigation_Index
+- 2_results.txt → Sept_10_2025 + 12-23-shooting-time
+- 3_results.txt → Sept_8_to_13 + roof-jumping-timeline
+- 4_results.txt → Tyler_Robinson + Level 4 sub-pages
+- 5_results.txt → july-18-decision + July 20 meeting cluster
+- 6_results.txt → hamptons + high-pressure-sept-9 + kill-me text
+- 7_results.txt → Year hubs
+- 8_results.txt → Charlie_Kirk
+- 9_results.txt → witness-discrepancies + post-assassination-investigations
+- 10_results.txt → october-15-2025 + Planes
+
+NEW: site/docs/Timeline/Investigation_Index.mdx
+
+PAGES CHANGED: overview.mdx, Investigation_Index.mdx (new), roof-jumping-timeline.mdx, 2026.mdx, all 21 root Level 3 back buttons
+
+TOTAL: 1 Level 2 + 22 Level 3 + 3 Level 4 Tyler sub-pages. Timeline/overview in sidebars.ts — no UI warning.
+
+---
+
+2026_07_04_2000 — CoverUp Level 2 expansion (grok_write.mdx workflow)
+
+GROK_QUERY_DIR: ~/T/_ck/grok_query/coverglyph
+
+WHAT: CoverUp navbar section pass — new Investigation_Index hub, 10 grok result files, Assess_Manual overview restructure (6-6-6 three-column TOC + three body paragraphs). Removed numbered indicator list and duplicate Related blocks from overview. Fixed all 17 Level 3 back buttons from href="./overview" to absolute /CoverUp/overview. Added grok linkage tables to WhiteHouse_Halt_IC and Distraction_People. TOC reconciliation — all 18 Level 3 files linked from overview. Zero relative hrefs in CoverUp/. Defamation-safe throughout; Tyler charged not convicted. Updated planning_grok.yaml, grok_planning.txt, pages.csv (+1 row CoverUp_Investigation_Index, overview + 2 pages updated).
+
+GROK → PAGE MAPPING:
+- 1_results.txt → overview + Investigation_Index
+- 2_results.txt → Dirt_Removed
+- 3_results.txt → Mic_Explosive
+- 4_results.txt → AES_Tennessee_Explosion
+- 5_results.txt → Joe_Kent_Halt + WhiteHouse_Halt_IC
+- 6_results.txt → Google_Censorship + Censorship_Investigators + YouTube/X HolonCitizen
+- 7_results.txt → Israelis_At_UVU
+- 8_results.txt → Videos_Deleted_Remotely + FBI_Asked_Delete_Video
+- 9_results.txt → Utah_Autopsy_Law + Sheriff_Video_Withheld + Custody_Confession_Timeline
+- 10_results.txt → Narrative_Psyop + Distraction_People
+
+NEW: site/docs/CoverUp/Investigation_Index.mdx
+
+PAGES CHANGED: overview.mdx, Investigation_Index.mdx (new), WhiteHouse_Halt_IC.mdx, Distraction_People.mdx, all 17 Level 3 back buttons
+
+TOTAL: 1 Level 2 + 18 Level 3 = 19 CoverUp pages (~4496 lines). CoverUp/overview in sidebars.ts — no UI warning.
+
+---
+
 2026_07_04_1635 — Before Level 2 completion pass (grok_write.mdx verification)
 
 GROK_QUERY_DIR: ~/T/_ck/grok_query/beforeglyph

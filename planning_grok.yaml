@@ -1,75 +1,53 @@
 planning:
   run:
     date: "2026-07-04"
-    focus: "After Level 2 expansion"
-    input_text: "Level 2 = After — all events after 12:23 PM Sept 10 2025 MT"
-    grok_query_dir: "~/T/_ck/grok_query/afterglyph"
-    random_phrase: afterglyph
+    focus: "Timeline Level 2 expansion"
+    input_text: "Level 2 = Timeline — chronological hub pairing Before/After"
+    grok_query_dir: "~/T/_ck/grok_query/timeglyph"
+    random_phrase: timeglyph
   level2:
-    After:
-      path: site/docs/After
-      overview: site/docs/After/overview.mdx
-      level3_count: 8
+    Timeline:
+      path: site/docs/Timeline
+      overview: site/docs/Timeline/overview.mdx
+      level3_count: 22
+      level4_count: 3
       new_level3:
         - Investigation_Index
-        - Sept_11_Surrender_And_Custody
-        - Institutional_Resignations
-        - Memorial_And_TPUSA_Succession
+      pages_csv_added:
+        - july-18-decision
+        - military-meeting-july-20
+        - hamptons-intervention-meeting
+        - high-pressure-meeting-sept-9
+        - they-are-going-to-kill-me-text
+        - 12-23-shooting-time
+        - roof-jumping-timeline
+        - witness-testimony-discrepancies
+        - post-assassination-investigations
+      updates:
+        - overview.mdx — Assess_Manual 3-column TOC 8-7-7; removed embedded full-detail blocks
+        - all root Level 3 back buttons href /Timeline/overview
+        - roof-jumping-timeline + 2026 grok linkage tables
       grok_to_page_map:
         1_results.txt: overview + Investigation_Index
-        2_results.txt: Sept_11_Surrender_And_Custody
-        3_results.txt: Site_Changes_And_Crime_Scene_Handling
-        4_results.txt: Legal_Process_Gag_Orders_And_Secrecy
-        5_results.txt: Media_Narratives_And_Censorship_After
-        6_results.txt: Media_Narratives_And_Censorship_After
-        7_results.txt: Institutional_Resignations
-        8_results.txt: Legal_Process_Gag_Orders_And_Secrecy
-        9_results.txt: Memorial_And_TPUSA_Succession
-        10_results.txt: Visa-Revocation-Celebrations
+        2_results.txt: Sept_10_2025 + 12-23-shooting-time
+        3_results.txt: Sept_8_to_13 + roof-jumping-timeline
+        4_results.txt: Tyler_Robinson + Level 4 sub-pages
+        5_results.txt: july-18-decision + foreign-leaders + nebraska + military-meeting-july-20
+        6_results.txt: hamptons + high-pressure-sept-9 + they-are-going-to-kill-me-text
+        7_results.txt: Year_2024 + Year_2025 + years + 2025 + 2026
+        8_results.txt: Charlie_Kirk
+        9_results.txt: witness-testimony-discrepancies + post-assassination-investigations
+        10_results.txt: october-15-2025 + Planes cross-cut
       cross_links:
+        - Before/overview
+        - After/overview
+        - Planes/overview
         - court/overview
-        - Tyler_Robinson/Trial/overview
         - UVU/overview
         - CoverUp/overview
   prior_run:
     date: "2026-07-04"
-    focus: "Before Level 2 expansion"
-    input_text: "Level 2 = Before — pre-September 10 events, Twitter-interest context for Charlie Kirk killing"
-    grok_query_dir: "~/T/_ck/grok_query/beforeglyph"
-    random_phrase: beforeglyph
-  level2:
-    Before:
-      path: site/docs/Before
-      overview: site/docs/Before/overview.mdx
-      existing_level3:
-        - Political_Pressure_And_Meetings_2025
-        - PreEvent_Searches_And_Recon
-        - Heightened-Political-Tensions
-        - Woke-Right-Defamation
-        - MAGA-Antisemitism-Debate
-        - Free-Speech-Campus-Issues
-        - Political-Violence-Debate
-        - State-Department-Response
-      new_level3:
-        - Before_Investigation_Index
-      updates:
-        - overview.mdx — Assess_Manual 3-column TOC 3-3-3
-        - all back buttons href /Before/overview
-      grok_to_page_map:
-        1_results.txt: overview + Before_Investigation_Index
-        2_results.txt: Political_Pressure_And_Meetings_2025
-        3_results.txt: Political_Pressure + Woke-Right-Defamation + MAGA-Antisemitism-Debate
-        4_results.txt: Political_Pressure + Heightened-Political-Tensions
-        5_results.txt: Heightened-Political-Tensions + Planes cross-links
-        6_results.txt: PreEvent_Searches_And_Recon
-        7_results.txt: PreEvent_Searches + Political_Pressure (July 18)
-        8_results.txt: Political-Violence-Debate
-        9_results.txt: Free-Speech-Campus-Issues
-        10_results.txt: Heightened + State-Department-Response + Political_Pressure (Epstein/Bowyer)
-      cross_links:
-        - Charlie/Pre_Event_Timeline
-        - Motive/overview
-        - UVU/pre-shooting-warnings
-        - GoogleSearches/overview
-        - Planes/overview
-        - Timeline/2025
+    focus: "CoverUp Level 2 expansion"
+    input_text: "Level 2 = CoverUp — navbar cover-up section"
+    grok_query_dir: "~/T/_ck/grok_query/coverglyph"
+    random_phrase: coverglyph
