@@ -60,6 +60,10 @@ DOJ will resist even after signing.
 3. Coordinate with Law 4 for Trusted Investigator access to disclosed materials
 4. Pre-draft discharge petition strategy
 
+## Public demand context (citizen investigators)
+
+X and court-watchers repeatedly cite **withheld FBI/ATF raw files**, sealed digital forensics, and incomplete camera dumps as reasons a **forced-disclosure statute** modeled on Epstein/JFK-style transparency laws is necessary. That political demand is **narrative context** for Law 1; it does not amend the statutory text above.
+
 ## Related Areas
 
 <div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',

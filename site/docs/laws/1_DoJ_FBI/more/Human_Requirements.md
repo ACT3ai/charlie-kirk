@@ -52,6 +52,10 @@ critical investigative information from the public.
 
 [Back to README](../../README.md) | [Law Text](Law_1_DoJ_FBI.md) | [Legal Notes](Notes_1_DoJ_FBI.md) | [Output Analysis](Output_Analysis.md)
 
+## Public demand context (citizen investigators)
+
+X and court-watchers repeatedly cite **withheld FBI/ATF raw files**, sealed digital forensics, and incomplete camera dumps as reasons a **forced-disclosure statute** modeled on Epstein/JFK-style transparency laws is necessary. That political demand is **narrative context** for Law 1; it does not amend the statutory text above.
+
 ## Related Areas
 
 <div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',

@@ -216,6 +216,18 @@ Law 3 S4(c): "reasonable basis to believe" standard, below probable cause.
 ### 12. No Conflict of Interest Provisions for Trusted Investigators (Law 4) — FIXED
 Law 4 S15F: annual financial disclosure, recusal process, prohibition on gifts, penalties for non-disclosure.
 
+
+## Citizen Investigator Claims on X (Forced Disclosure Discourse)
+
+*(Attributed public commentary about transparency demands — does not rewrite statutory text above.)*
+
+Citizen investigators and legislative advocates on X argue that ordinary FOIA and criminal discovery will not force full production in the Charlie Kirk case, citing **JFK Records Act failures** (agencies missing decades of deadlines; reports of large unreviewed FBI caches) and the **Epstein Files Transparency Act** pattern of partial dumps without a Special Master with teeth. Accounts such as **@HolonCitizen** have promoted a four-law package (FBI/DOJ disclosure, IC disclosure, mandatory investigation, trusted civilian investigators) and named figures including Candace Owens, Dave Smith, Tucker Carlson, Ian Carroll, and others as proposed **trusted investigators** under Law 4-style designs — a **policy proposal**, not an enacted statute.
+
+Parallel media clips recirculated by accounts such as **@FurkanGozukara** claim **Candace Owens** has alleged federal discovery obstruction (FBI/ATF files; director-level blocks). Counter-posts argue the Robinson case already has DNA, video, and confession-note material unlike JFK and therefore needs no special act. This page records both the **demand for forced disclosure** and the **official-narrative pushback** so readers can judge whether Schedule A-style lists (FBI 302s, cell data, aircraft, drones, ballistics, AV SD cards) match what X investigators say remains withheld.
+
+Related public pages: [Fix overview](/Fix/overview), [laws landing](/laws), [Discovery](/laws/Discovery), [explain all four laws](/laws/explain/all).
+
+
 ## Related Areas
 
 <div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
