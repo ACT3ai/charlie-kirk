@@ -1,4 +1,4 @@
-# Attorney Analysis: Improvements for the Four Charlie Kirk Disclosure Laws
+# Attorney Analysis: Improvements for the Four [Charlie Kirk](/People/charlie-kirk) Disclosure Laws
 
 **Analyst Role:** Attorney reviewing proposed federal legislation for enforceability, constitutional vulnerability, scope issues, and improvements
 **Scope:** All four laws (Law 1 DoJ/FBI, Law 2 US Intel, Law 3 Mandatory Investigation, Law 4 Trusted Investigators) and the Discovery document
@@ -122,7 +122,7 @@
 
 ### 12. Law 3 Cross-Agency Investigation Structure Has a Circular Problem
 
-**Problem:** Law 3 Section 3B assigns cross-agency investigation responsibilities: FBI investigates CIA, CIA investigates FBI, NSA investigates DIA/NRO/NGA, and the IC team investigates NSA. But if the evidence points to collusion between multiple agencies, the entire cross-investigation framework collapses — you cannot have CIA investigate FBI if both are implicated. The conflict-of-interest trigger (Section 4(c)) transfers authority to a special commission, but only after a written certification and 14-day congressional action period.
+**Problem:** Law 3 Section 3B assigns cross-agency investigation responsibilities: [FBI](/FBI/overview) investigates [CIA](/US_Intelligence/cia), CIA investigates FBI, [NSA](/US_Intelligence/nsa) investigates DIA/NRO/NGA, and the IC team investigates NSA. But if the evidence points to collusion between multiple agencies, the entire cross-investigation framework collapses — you cannot have CIA investigate FBI if both are implicated. The conflict-of-interest trigger (Section 4(c)) transfers authority to a special commission, but only after a written certification and 14-day congressional action period.
 
 **Why it matters:** In a scenario where multiple agencies are implicated (which the underlying investigation theory suggests), the cross-agency framework fails immediately and everything depends on the fallback special commission mechanism, which requires 14 days of congressional action. During those 14 days, implicated agencies could destroy evidence.
 
@@ -146,7 +146,7 @@
 
 **Why it matters:** If a Law 3 or Law 4 investigation team discovers exculpatory evidence (e.g., evidence that another party committed the assassination), and that evidence is not shared with Robinson's defense counsel, it could result in a wrongful conviction. The constitutional Brady obligation applies to prosecutors, not to congressional investigation teams — so there must be an explicit statutory requirement.
 
-**Fix:** Add a mandatory exculpatory disclosure provision to Laws 3 and 4 requiring all investigation teams and Designated Trusted Investigators to share any exculpatory, impeachment, or mitigating evidence with Tyler Robinson's defense counsel within 48 hours of discovery. Harmonize the disclosure timeline across all four laws to 48 hours (not 5 days in Law 1 and 14 days in Law 2).
+**Fix:** Add a mandatory exculpatory disclosure provision to Laws 3 and 4 requiring all investigation teams and Designated Trusted Investigators to share any exculpatory, impeachment, or mitigating evidence with [Tyler Robinson](/People/tyler-robinson)'s defense counsel within 48 hours of discovery. Harmonize the disclosure timeline across all four laws to 48 hours (not 5 days in Law 1 and 14 days in Law 2).
 
 ---
 

@@ -1,21 +1,21 @@
 # Law 4: Charlie Kirk Investigation - Trusted Investigators Act
 
-AUTHOR: Bryan Starbuck (BryanStarbuck@gmail.com)
+AUTHOR: [Bryan Starbuck](/People/bryan-starbuck) (BryanStarbuck@gmail.com)
 
 ## Title
 The Charlie Kirk Trusted Investigators Act
 
 ## Purpose
-To establish independent investigation teams led by designated trusted public figures, embedded within federal law enforcement and intelligence agencies, with full authority to investigate the death of Charlie Kirk -- including all leads identified in the 175 Critical Disclosure Items (Schedule A) -- and to publicly release their findings.
+To establish independent investigation teams led by designated trusted public figures, embedded within federal law enforcement and intelligence agencies, with full authority to investigate the death of [Charlie Kirk](/People/charlie-kirk) -- including all leads identified in the 175 Critical Disclosure Items (Schedule A) -- and to publicly release their findings.
 
 **Disclaimer:** This document does not assert as fact that any individual, organization, or government entity has committed any criminal, illegal, or immoral act. All references to persons and entities are made solely for proposed legislative and legal discovery purposes — to identify what information should be disclosed and investigated through lawful processes. The items listed here are questions for investigation, not conclusions. No statement in this document should be understood as an accusation, allegation, or assertion of wrongdoing against any party. This document exists solely to support public transparency through lawful legislative and judicial processes.
 
 ## Section 1: Definitions
 
 (a) **"Designated Trusted Investigators"** means the following individuals:
-   1. Candace Owens
+   1. [Candace Owens](/People/candace-owens)
    2. Dave Smith
-   3. Tucker Carlson
+   3. [Tucker Carlson](/People/tucker-carlson)
 
 (b) **"Investigation Team"** means the government employees selected to work with a Designated Trusted Investigator.
 
@@ -97,11 +97,11 @@ To establish independent investigation teams led by designated trusted public fi
 
 (a) Each investigation team shall specifically pursue the leads and information identified in Schedule A (175 Critical Disclosure Items), including but not limited to:
 
-   1. **Exploding Microphone Theory:** The DoD contract, the AES facility, the August 25 flight, the microphone evidence, explosive residue, wound characteristics, and the AES factory explosion
+   1. **Exploding Microphone Theory:** The DoD contract, the [AES](/Mic/AES) facility, the August 25 flight, the microphone evidence, explosive residue, wound characteristics, and the AES factory explosion
    2. **Foreign Intelligence Involvement:** Israeli cell phones at UVU, Egyptian aircraft and military contractors, surveillance planes, Counter-UAS testing, foreign nationals in the security zone
    3. **FBI Cover-Up Evidence:** FBI requesting video deletion, remotely deleted videos, crime scene paving, blocked FOIAs, decisions not to charge distraction people
    4. **Alternative Shooter / Evidence Planting:** Rifle chain of custody, K-9 failure, FBI-directed re-search, clothing discrepancies, man in black at construction site, alternative calibers, laser targeting
-   5. **Financial Connections:** Wire transfers to Tyler Robinson and Lance Twiggs, payments to distraction people, foreign financial activity in Utah
+   5. **Financial Connections:** Wire transfers to [Tyler Robinson](/People/tyler-robinson) and [Lance Twiggs](/People/lance-twiggs), payments to distraction people, foreign financial activity in Utah
    6. **Psychological Operations:** Manipulation of Tyler Robinson and Lance Twiggs, handler communications via Discord/Steam/in-game chat, electronic equipment at Lance Twiggs' residence
    7. **Pre-Planning and Foreknowledge:** Fort Huachuca meetings, One Rodney Square meetings, TPUSA security planning anomalies, Charlie Kirk's death threats, the declined business deal, Hampton meeting
    8. **Electronic Warfare:** Cell/internet jamming at UVU, drone video feeds and recipients

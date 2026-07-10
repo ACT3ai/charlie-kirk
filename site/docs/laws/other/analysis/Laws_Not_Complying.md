@@ -10,7 +10,7 @@ This document identifies materially important areas where each of the four laws 
 
 ====================
 
-## LAW 1: The Charlie Kirk Files Forced Disclosure Act -- Law Enforcement
+## LAW 1: The [Charlie Kirk](/People/charlie-kirk) Files Forced Disclosure Act -- Law Enforcement
 
 ### 1. Schedule A Item Count Inconsistency with Charter
 
@@ -65,7 +65,7 @@ The charter instructions state: "We want to have the title, who it's by, the int
 
 ### 6. Stingray/IMSI Catcher Surveillance Not Addressed
 
-**Investigation file reveals:** Claims of a "Stingray" device at UVU the day of the shooting, and allegations TPUSA used IMSI catchers at events for mass surveillance.
+**Investigation file reveals:** Claims of a "Stingray" device at UVU the day of the shooting, and allegations [TPUSA](/TPUSA/overview) used IMSI catchers at events for mass surveillance.
 **Law 1 Schedule A:** No specific item addressing IMSI catchers or cell-site simulators deployed at UVU.
 
 **Recommendation:** Add Schedule A item requiring disclosure of all records relating to any IMSI catcher, cell-site simulator, or StingRay device deployed at or near UVU on September 10, 2025, including who authorized and operated it.
@@ -99,7 +99,7 @@ The charter instructions state: "We want to have the title, who it's by, the int
 **Charter states:** Law 2 scope does not specify a Schedule A count.
 **Law 2 actually states:** 214 Critical Disclosure Items.
 
-Law 2 has one more item than Law 1 (214 vs. 213). The additional items appear to be #209 (MASINT & Satellite Intelligence), #210 (Foreign Digital Surveillance), #211 (AES Explosion Intelligence), #212 (State Official Communications), and #213/214 (Hospital Compromise). However, this means the Schedule A items are not fully harmonized across all four laws -- Law 1 has 213, Law 2 has 214, Law 3 has 208, and Law 4 has 208. The charter does not specify that each law must have the same count, but the inconsistency undermines the "consistent definitions" principle stated in each law's cross-reference section.
+Law 2 has one more item than Law 1 (214 vs. 213). The additional items appear to be #209 (MASINT & Satellite Intelligence), #210 (Foreign Digital Surveillance), #211 ([AES](/Mic/AES) Explosion Intelligence), #212 (State Official Communications), and #213/214 (Hospital Compromise). However, this means the Schedule A items are not fully harmonized across all four laws -- Law 1 has 213, Law 2 has 214, Law 3 has 208, and Law 4 has 208. The charter does not specify that each law must have the same count, but the inconsistency undermines the "consistent definitions" principle stated in each law's cross-reference section.
 
 **Recommendation:** Harmonize Schedule A counts across all four laws, or explicitly state in each law that its Schedule A is the superset applicable to its covered agencies and that numbering differences reflect agency-specific items.
 
@@ -196,7 +196,7 @@ This appears substantially addressed. However, the "reasonable basis to believe"
 ### 3. No Coordination Requirement with Defense Counsel
 
 **Charter implies:** Brady v. Maryland obligations should be extended to all investigation teams.
-**Law 3:** Does not contain a statutory Brady obligation requiring investigation teams to share exculpatory findings with Tyler Robinson's defense team.
+**Law 3:** Does not contain a statutory Brady obligation requiring investigation teams to share exculpatory findings with [Tyler Robinson](/People/tyler-robinson)'s defense team.
 
 **Law 1 Section 12K** and **Law 2 Section 12I** both codify Brady obligations. Law 3, which mandates active investigation (not just disclosure), should have the strongest Brady provision since its teams will be generating new exculpatory evidence through active investigation.
 
@@ -438,7 +438,7 @@ The reporting frequencies should be harmonized. 90 days is more appropriate give
 
 ### C-6. French Connection Insufficiently Addressed
 
-**Investigation file reveals:** Candace Owens claims French government official confirmed assassination team included French legionnaires from the 13th Brigade, $1.5 million paid through Club des Cent, Macron involvement. French President called Trump at 10:45am MT on the day of the shooting.
+**Investigation file reveals:** [Candace Owens](/People/candace-owens) claims French government official confirmed assassination team included French legionnaires from the 13th Brigade, $1.5 million paid through Club des Cent, Macron involvement. French President called Trump at 10:45am MT on the day of the shooting.
 **Laws:** French intelligence (DGSE) is mentioned, French CBP records are covered, but there is no specific Schedule A item addressing the Club des Cent payment, the French legionnaire training connection, or the timing of the Macron-Trump call on September 10.
 
 **Recommendation:** Add Schedule A items specifically addressing: (a) the alleged $1.5M payment through Club des Cent or French bank to Canada; (b) the French legionnaire 13th Brigade connection to the alleged assassin's training; (c) the Macron-Trump phone call at 10:45am MT on September 10, 2025 (approximately 1.5 hours before the shooting).
@@ -465,7 +465,7 @@ The reporting frequencies should be harmonized. 90 days is more appropriate give
 
 ### C-9. Voice-to-Skull / LRAD Technology Investigation Not Addressed
 
-**Investigation file reveals:** Allegations of V.O.G. (Voice of God) LRAD technology, MK Ultra-style conditioning through Discord groups, and Phil Lyman commenting on a CIA Alice in Wonderland conditioning post 2 weeks before the assassination.
+**Investigation file reveals:** Allegations of V.O.G. (Voice of God) LRAD technology, MK Ultra-style conditioning through Discord groups, and [Phil Lyman](/distraction_people/Phil_Lyman) commenting on a [CIA](/US_Intelligence/cia) Alice in Wonderland conditioning post 2 weeks before the assassination.
 **Law 3 Section 3A:** Addresses "psychological operations" but does not specifically address electronic behavioral modification technology.
 
 **Recommendation:** Add investigation lead requiring teams to investigate whether any electronic behavioral modification, V2K (voice-to-skull), LRAD, or similar technology was deployed against Tyler Robinson, and whether his Discord radicalization followed patterns consistent with known intelligence service behavioral modification programs.

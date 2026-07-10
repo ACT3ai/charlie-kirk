@@ -8,7 +8,7 @@
 
 ====================
 
-## LAW 1: The Charlie Kirk Files Forced Disclosure Act -- Law Enforcement
+## LAW 1: The [Charlie Kirk](/People/charlie-kirk) Files Forced Disclosure Act -- Law Enforcement
 
 ### 6. No Protection Against "Slow Rolling" -- Producing Records in Unusable Format — FIXED
 
@@ -66,7 +66,7 @@ Section 4(c): entire investigation transfers (not just agency-involvement aspect
 
 ### 6. No Explicit Subpoena Power for Trusted Investigators Over Private Entities — FIXED
 
-Section 3(c) grants independent subpoena authority. Section 4(a) explicitly lists private entity subpoena power (TPUSA, Mosaic Pro Events, rental companies, hotels, AES, banks, telecoms). Non-compliance triggers same criminal penalties as government agencies.
+Section 3(c) grants independent subpoena authority. Section 4(a) explicitly lists private entity subpoena power ([TPUSA](/TPUSA/overview), Mosaic Pro Events, rental companies, hotels, [AES](/Mic/AES), banks, telecoms). Non-compliance triggers same criminal penalties as government agencies.
 
 ---
 

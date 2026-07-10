@@ -6,7 +6,7 @@ All items #176 through #201 proposed in this analysis have been incorporated int
 
 ---
 
-## Tyler Robinson Defense & Family
+## [Tyler Robinson](/People/tyler-robinson) Defense & Family
 
 **#176: Tyler Robinson Family Statements** — ADDED (Law item #177 in all four laws)
 
@@ -26,7 +26,7 @@ All items #176 through #201 proposed in this analysis have been incorporated int
 
 ## Security Detail & Israeli Connections
 
-**#181: Brian Harpole — Netanyahu Bodyguard on Kirk Detail** — ADDED (Law item #182 in all four laws, titled "Brian Harpole — Foreign Security Background on Kirk Detail")
+**#181: [Brian Harpole](/People/brian-harpole) — Netanyahu Bodyguard on Kirk Detail** — ADDED (Law item #182 in all four laws, titled "Brian Harpole — Foreign Security Background on Kirk Detail")
 
 ---
 
@@ -34,13 +34,13 @@ All items #176 through #201 proposed in this analysis have been incorporated int
 
 **#182: Hospital Routing Decision** — ADDED (Law item #183 in all four laws)
 
-**#183: Surgeon Blocked by FBI** — ADDED (Law item #184 in all four laws)
+**#183: Surgeon Blocked by [FBI](/FBI/overview)** — ADDED (Law item #184 in all four laws)
 
 **#184: Glass or Plastic Fragments in Transport Vehicle** — ADDED (Law item #185 in all four laws)
 
 ---
 
-## TPUSA Financial Fraud
+## [TPUSA](/TPUSA/overview) Financial Fraud
 
 **#185: TPUSA Shell Company Payments** — ADDED (Law item #186 in all four laws)
 
@@ -54,11 +54,11 @@ All items #176 through #201 proposed in this analysis have been incorporated int
 
 **#188: Rode Wireless PRO Microphone Audio** — ADDED (Law item #189 in all four laws)
 
-**#189: Mikey McCoy's Mic-Up Video** — ADDED (Law item #190 in all four laws)
+**#189: [Mikey McCoy](/People/mikey-mccoy)'s Mic-Up Video** — ADDED (Law item #190 in all four laws)
 
 ---
 
-## Butch Hibbs & Exploding Microphone
+## [Butch Hibbs](/People/butch-hibbs) & Exploding Microphone
 
 **#190: Butch Hibbs at UVU Event** — ADDED (Law item #191 in all four laws)
 
@@ -108,7 +108,7 @@ All items #176 through #201 proposed in this analysis have been incorporated int
 
 ---
 
-## AES Factory Explosion
+## [AES](/Mic/AES) Factory Explosion
 
 **#201: AES Factory Explosion Investigation** — ADDED (Law item #202 in all four laws)
 

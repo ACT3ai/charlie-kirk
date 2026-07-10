@@ -2,7 +2,7 @@
 
 ## Core Requirement
 
-Force the Department of Justice (DOJ), Federal Bureau of Investigation (FBI), and any other law enforcement agency -- national or local -- to disclose all files and information they have related to their investigation of Charlie Kirk's death.
+Force the Department of Justice (DOJ), Federal Bureau of Investigation ([FBI](/FBI/overview)), and any other law enforcement agency -- national or local -- to disclose all files and information they have related to their investigation of [Charlie Kirk](/People/charlie-kirk)'s death.
 
 ## Key Points
 
@@ -28,7 +28,7 @@ Anything about domestic or foreign intelligence involvement?
 Anything about any people more involved than Tyler Robinson. 
 All information about the autopsy, including photos and video 
 All information about any evidence destroyed or any destroyed information or files from any covered organization. 
-Any and all information about TPUSA. Anybody and any information from anyone there or anything there that may be related .
+Any and all information about [TPUSA](/TPUSA/overview). Anybody and any information from anyone there or anything there that may be related .
 Don't scope anything to the state of Utah. Make sure anything is scoped across the US and even internationally. 
 
 

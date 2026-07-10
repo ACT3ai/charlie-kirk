@@ -8,7 +8,7 @@
 
 ====================
 
-## LAW 1: The Charlie Kirk Files Forced Disclosure Act -- Law Enforcement
+## LAW 1: The [Charlie Kirk](/People/charlie-kirk) Files Forced Disclosure Act -- Law Enforcement
 
 ### 2. Schedule A Item Count Inconsistency (205 vs 208) — FIXED
 Law 1 Schedule A heading states "208 Critical Disclosure Items" and Section 2(a) references "208 items" consistently throughout. Internal consistency achieved at 208.
@@ -52,7 +52,7 @@ Law 2 includes enforcement with up to 10 years imprisonment for obstruction of f
 ### 1. Schedule A Reference Says 175 — FIXED IN LAW
 Law 3 references 208 items throughout (e.g., Section 2(e)(8)).
 
-### 2. CIA and NSA Mandatory Investigations — ALREADY IMPLEMENTED
+### 2. [CIA](/US_Intelligence/cia) and [NSA](/US_Intelligence/nsa) Mandatory Investigations — ALREADY IMPLEMENTED
 Section 2A (CIA) and Section 2B (NSA) are present and detailed in law.
 
 ### 3. Private Right of Action — ALREADY IMPLEMENTED
@@ -74,7 +74,7 @@ Section 6(a) specifies joint resolution within 30 days, fallback to Judiciary Co
 ## LAW 4: The Charlie Kirk Trusted Investigators Act
 
 ### 1. Team Count Contradiction — FIXED
-Law 4 Section 2(b) explicitly states 34 investigation teams (17 FBI + 17 IC). 17 investigators x 2 teams = 34. Internally consistent.
+Law 4 Section 2(b) explicitly states 34 investigation teams (17 [FBI](/FBI/overview) + 17 IC). 17 investigators x 2 teams = 34. Internally consistent.
 
 ### 2. Schedule A Item Count — FIXED
 Law 4 references 208 items throughout.

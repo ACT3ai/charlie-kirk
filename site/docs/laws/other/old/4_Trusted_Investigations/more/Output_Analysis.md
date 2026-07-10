@@ -32,7 +32,7 @@
 ### Requirement: Illegal to persecute anyone for disclosing
 **MET.** Section 8(b-d) provides criminal penalties, reinstatement, treble damages, and rebuttable presumption.
 
-### Requirement: Trusted people are Candace Owens, Dave Smith, Tucker Carlson
+### Requirement: Trusted people are [Candace Owens](/People/candace-owens), Dave Smith, [Tucker Carlson](/People/tucker-carlson)
 **MET.** Section 1(a) names all three.
 
 ### Requirement: Broadly investigate any and all information

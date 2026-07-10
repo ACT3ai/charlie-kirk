@@ -69,7 +69,7 @@ Section 5(a) makes preservation duty enforceable upon enactment while setting tr
 
 ## 11. Missing Definitions for Key Terms — FIXED
 
-Section 1 now defines: "Investigation" (broadly), "Death of Charlie Kirk" (September 10, 2025, UVU, Orem, Utah), "Disclosure body" (review board under Section 8), "People Involved/People Listed" (35 categories P1-P35 from Schedule B).
+Section 1 now defines: "Investigation" (broadly), "Death of [Charlie Kirk](/People/charlie-kirk)" (September 10, 2025, UVU, Orem, Utah), "Disclosure body" (review board under Section 8), "People Involved/People Listed" (35 categories P1-P35 from Schedule B).
 
 ---
 

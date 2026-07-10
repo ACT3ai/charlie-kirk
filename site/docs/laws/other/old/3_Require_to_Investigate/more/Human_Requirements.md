@@ -2,7 +2,7 @@
 
 ## Core Requirement
 
-Require the FBI, all law enforcement agencies, and U.S. intelligence services to actively investigate the death of Charlie Kirk. Not just disclose existing files -- but conduct a real, thorough investigation.
+Require the FBI, all law enforcement agencies, and U.S. intelligence services to actively investigate the death of [Charlie Kirk](/People/charlie-kirk). Not just disclose existing files -- but conduct a real, thorough investigation.
 
 ## Key Points
 

@@ -2,7 +2,7 @@
 
 **Analyzed by:** Attorney-level review of all four laws against the primary charter (`other/List_Of_Laws.md`) and the full investigative record (`other/Bkup_Charlie_Kirk.txt`)
 **Date:** March 27, 2026
-**Method:** Threat analysis from the perspective of foreign and domestic intelligence services, compromised politicians, and agencies that want to keep the investigation covered up. Each problem is assessed for its ability to sabotage, delay, or undermine the laws' ultimate goal: forcing the full truth about the assassination of Charlie Kirk to come out.
+**Method:** Threat analysis from the perspective of foreign and domestic intelligence services, compromised politicians, and agencies that want to keep the investigation covered up. Each problem is assessed for its ability to sabotage, delay, or undermine the laws' ultimate goal: forcing the full truth about the assassination of [Charlie Kirk](/People/charlie-kirk) to come out.
 
 ---
 
@@ -42,7 +42,7 @@ This is exactly the concern Bryan identified in the prompt: "I worry about this 
 
 **Problem:** The investigation file documents an extensive pattern where powerful foreign and domestic actors suppress investigations whenever foreign intelligence services are implicated:
 
-- Kashyap Patel (FBI Director) "snuffed out efforts" by the Counterterrorism Center to investigate foreign government involvement. The stated reason: it could "provide ammunition to Robinson's defense lawyers."
+- Kashyap Patel ([FBI](/FBI/overview) Director) "snuffed out efforts" by the Counterterrorism Center to investigate foreign government involvement. The stated reason: it could "provide ammunition to Robinson's defense lawyers."
 - JFK assassination: 100,000+ foreign-government-related documents remain unreleased after 60+ years.
 - Epstein files: Records connecting Epstein to foreign intelligence operations heavily redacted.
 - AIPAC's documented influence over Congress: They can pressure members to vote against these laws or attach crippling amendments.
@@ -69,7 +69,7 @@ The "No Foreign Government Exception" provisions (Law 1 Section 4A, Law 2 Sectio
 - Witness videos remotely deleted from phones
 - FBI requesting witnesses delete video
 - Google search evidence deleted
-- AES factory explosion (October 10, 2025) potentially destroying physical evidence of the DoD contract for miniaturized anti-personnel charges
+- [AES](/Mic/AES) factory explosion (October 10, 2025) potentially destroying physical evidence of the DoD contract for miniaturized anti-personnel charges
 - Airport badge access records modified the day after the assassination
 - No proper death certificate filed
 - Body removed from hospital quickly
@@ -185,7 +185,7 @@ Laws 3 and 4 now have: (1) mandatory polygraph requirements for all team members
 
 ### 8. No Provision Requiring Independent Ballistics Testing
 
-**Problem:** All ballistics provisions require disclosure of existing FBI analyses. If the FBI conducted a sham analysis or failed to test key questions (was a 9mm fired? was the microphone explosive? was the shot from the south, not the east?), disclosure of existing records produces nothing useful. Acoustic analysis by independent experts suggests the shot came from the south (teacher's balcony area), not from Tyler Robinson's position to the east.
+**Problem:** All ballistics provisions require disclosure of existing FBI analyses. If the FBI conducted a sham analysis or failed to test key questions (was a 9mm fired? was the microphone explosive? was the shot from the south, not the east?), disclosure of existing records produces nothing useful. Acoustic analysis by independent experts suggests the shot came from the south (teacher's balcony area), not from [Tyler Robinson](/People/tyler-robinson)'s position to the east.
 
 **Solution:** Grant the review board explicit authority to commission independent ballistics, acoustic, explosive residue, and metallurgical testing using experts selected by the board, with an independent budget line item.
 
@@ -248,7 +248,7 @@ Laws 3 and 4 now have: (1) mandatory polygraph requirements for all team members
 
 ---
 
-### 5. Mandatory NSA Database Queries May Be Evaded Through "No Results" Claims
+### 5. Mandatory [NSA](/US_Intelligence/nsa) Database Queries May Be Evaded Through "No Results" Claims
 
 **Problem:** Section 3A mandates NSA run XKeyscore queries on all Schedule A persons, phone numbers, and locations. This is an excellent provision. But NSA could run the queries and return "no responsive results" if the queries are narrowly constructed (e.g., searching only exact-match names rather than phonetic variants, aliases, or associated selectors).
 
@@ -274,7 +274,7 @@ Laws 3 and 4 now have: (1) mandatory polygraph requirements for all team members
 
 ### 8. Mandatory Public Hearing Requirement (Section 9B) Should Include FBI Director
 
-**Problem:** Section 9B requires testimony from CIA Director, NSA Director, DIA Director, and DNI. It does not require the FBI Director to testify under Law 2. While the FBI Director testifies under Law 1, the intelligence-specific hearing should also include the FBI Director given the FBI's Counterintelligence Division is an intelligence agency.
+**Problem:** Section 9B requires testimony from [CIA](/US_Intelligence/cia) Director, NSA Director, DIA Director, and DNI. It does not require the FBI Director to testify under Law 2. While the FBI Director testifies under Law 1, the intelligence-specific hearing should also include the FBI Director given the FBI's Counterintelligence Division is an intelligence agency.
 
 **Solution:** Add the FBI Director to Section 9B's mandatory testimony list.
 
@@ -361,7 +361,7 @@ Laws 3 and 4 now have: (1) mandatory polygraph requirements for all team members
 
 ### 1. Sixteen Designated Trusted Investigators May Create Coordination Problems
 
-**Problem:** The law names 16 Designated Trusted Investigators (Candace Owens, Dave Smith, Joe Kent, Tulsi Gabbard, Tucker Carlson, Steve Bannon, Marjorie Taylor Greene, Jon Bray, Ian Carroll, Thomas Massie, Matt Gaetz, Glenn Greenwald, Collin Campbell, Baron Coleman, Ryan Matta, Megyn Kelly), each with their own FBI and IC teams — 32 total teams. This is an enormous apparatus. Coordination between 16 independent investigators, each with 2 teams, will be difficult. Agencies may exploit this by giving conflicting information to different investigators or creating information chaos.
+**Problem:** The law names 16 Designated Trusted Investigators ([Candace Owens](/People/candace-owens), Dave Smith, Joe Kent, Tulsi Gabbard, [Tucker Carlson](/People/tucker-carlson), Steve Bannon, Marjorie Taylor Greene, [Jon Bray](/People/jon-bray), [Ian Carroll](/People/ian-carroll), Thomas Massie, Matt Gaetz, Glenn Greenwald, Collin Campbell, Baron Coleman, Ryan Matta, Megyn Kelly), each with their own FBI and IC teams — 32 total teams. This is an enormous apparatus. Coordination between 16 independent investigators, each with 2 teams, will be difficult. Agencies may exploit this by giving conflicting information to different investigators or creating information chaos.
 
 **Solution:**
 1. Designate a lead coordinator among the Trusted Investigators (perhaps by their own majority vote) who serves as the primary liaison with the oversight board.
@@ -396,7 +396,7 @@ Laws 3 and 4 now have: (1) mandatory polygraph requirements for all team members
 
 ### 5. No Provision Addressing Physical Safety of Designated Trusted Investigators
 
-**Problem:** The investigation file documents threats to Candace Owens, Tucker Carlson, and others immediately after the assassination. Andrew Kolvet told Candace that she and Tucker "were on a list." Mike Huckabee warned Candace they would "make you disappear." If foreign intelligence services assassinated Charlie Kirk, the Designated Trusted Investigators who are publicly named in this law become high-value targets.
+**Problem:** The investigation file documents threats to Candace Owens, Tucker Carlson, and others immediately after the assassination. [Andrew Kolvet](/People/andrew-kolvet) told Candace that she and Tucker "were on a list." Mike Huckabee warned Candace they would "make you disappear." If foreign intelligence services assassinated Charlie Kirk, the Designated Trusted Investigators who are publicly named in this law become high-value targets.
 
 **Solution:** Add: "Each Designated Trusted Investigator shall be entitled to U.S. Marshals Service protection for the duration of their service and for 2 years following completion. The protection detail shall be selected by the Designated Trusted Investigator, not by any agency being investigated. Funding for protection shall come from the investigation budget, not from the agencies under investigation."
 
@@ -410,7 +410,7 @@ Laws 3 and 4 now have: (1) mandatory polygraph requirements for all team members
 
 ---
 
-### 7. Charter Compliance: Goals File Lists "Bryan Starbuck" as a Designated Trusted Investigator — Verify His Listing
+### 7. Charter Compliance: Goals File Lists "[Bryan Starbuck](/People/bryan-starbuck)" as a Designated Trusted Investigator — Verify His Listing
 
 **Problem:** The goals file lists Bryan Starbuck among the Designated Trusted Investigators. He is the author of all four laws and the investigative record. However, his unique position as drafter of the laws and compiler of the investigative evidence means he is the single person with the most comprehensive understanding of the case. His inclusion is essential.
 
@@ -464,7 +464,7 @@ Laws 3 and 4 now have: (1) mandatory polygraph requirements for all team members
 
 ### Cross-5: The Replacement Personnel Pattern Is Not a Schedule A Item
 
-**Problem:** The investigation file documents a suspicious pattern of personnel replacements in the weeks before the assassination: new FBI SAC (Robert Bohls, August 2025), new judge (Tony Graf, May 2025 appointment), new hospital CEO (Andrew Zenger, started August 25, 2025), new coroner (Angela Hammond, reportedly September 2025). This pattern suggests pre-positioning of controlled personnel. Yet no Schedule A item specifically requires investigation of who initiated these replacements, the selection process, and any connection to the assassination plot.
+**Problem:** The investigation file documents a suspicious pattern of personnel replacements in the weeks before the assassination: new FBI SAC ([Robert Bohls](/People/robert-bohls), August 2025), new judge ([Tony Graf](/court/judge-tony-graf), May 2025 appointment), new hospital CEO (Andrew Zenger, started August 25, 2025), new coroner ([Angela Hammond](/People/angela-hammond), reportedly September 2025). This pattern suggests pre-positioning of controlled personnel. Yet no Schedule A item specifically requires investigation of who initiated these replacements, the selection process, and any connection to the assassination plot.
 
 **Solution:** Add a Schedule A item: "All records relating to the appointment, selection process, and vetting of the following persons who assumed their positions in the months before the assassination: (1) Robert Bohls as FBI SAC Salt Lake City; (2) Tony F. Graf Jr. as Fourth District Court judge; (3) Andrew Zenger as Timpanogos Regional Hospital CEO; (4) Angela Hammond as Utah Medical Examiner. For each, produce all records of who initiated the replacement, the selection criteria, alternative candidates considered, and any communication between the selecting authority and any intelligence service, foreign government, or person connected to the investigation."
 

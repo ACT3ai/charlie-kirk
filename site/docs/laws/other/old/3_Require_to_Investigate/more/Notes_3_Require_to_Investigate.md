@@ -8,7 +8,7 @@
 - Key lesson: Independence must be structural, not just promised
 
 ### Precedent: Church Committee (1975)
-- Senate committee investigated abuses by CIA, NSA, FBI, and IRS
+- Senate committee investigated abuses by [CIA](/US_Intelligence/cia), [NSA](/US_Intelligence/nsa), FBI, and IRS
 - Revealed massive intelligence agency overreach
 - Key lesson: Congressional oversight is essential but insufficient alone
 
@@ -48,7 +48,7 @@ Previous version had no mechanism for what happens when the investigating agency
 ## Sources
 - Special Counsel regulations: https://www.law.cornell.edu/cfr/text/28/part-600
 - Church Committee: https://www.senate.gov/about/powers-procedures/investigations/church-committee.htm
-- Charlie Kirk 175 Critical Items: https://github.com/BryanStarbuck/Charlie_Kirk_175_Critical_To_Expose
+- [Charlie Kirk](/People/charlie-kirk) 175 Critical Items: https://github.com/BryanStarbuck/Charlie_Kirk_175_Critical_To_Expose
 
 ## Related Areas
 

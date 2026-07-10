@@ -53,7 +53,7 @@ The major improvement is that Trusted Investigators must specifically pursue the
 ## Sources
 - 9/11 Commission: https://www.9-11commission.gov/
 - Special Counsel regulations: https://www.law.cornell.edu/cfr/text/28/part-600
-- Charlie Kirk 175 Critical Items: https://github.com/BryanStarbuck/Charlie_Kirk_175_Critical_To_Expose
+- [Charlie Kirk](/People/charlie-kirk) 175 Critical Items: https://github.com/BryanStarbuck/Charlie_Kirk_175_Critical_To_Expose
 
 ## Related Areas
 

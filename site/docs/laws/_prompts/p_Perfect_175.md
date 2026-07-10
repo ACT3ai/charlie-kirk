@@ -15,7 +15,7 @@ LAW_FOCUS_ON_NOW_DIR is law we focus on now and it's directory is in dir 1_DoJ_F
 LAW_FOCUS_ON_NOW_FILE is law we focus on now and it's in the existing file {LAW_FOCUS_ON_NOW_DIR}/Law_{which law}.md
 
 
-* we are creating four laws. These are the Charlie Kirk Files Forced Disclosure laws
+* we are creating four laws. These are the [Charlie Kirk](/People/charlie-kirk) Files Forced Disclosure laws
 * They will include what we call the 175 list. These are a numbered list of areas that we need to make sure are fully disclosed. 
 
 * The file LAW_FOCUS_ON_NOW_FILE already exists. Find the file that already exists. Never create a new file.

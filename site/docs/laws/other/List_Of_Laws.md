@@ -2,7 +2,7 @@
 
 **Project:** Legislative drafting modeled after the Epstein Files Transparency Act (Public Law 119-38)
 **Case:** *State of Utah v. Tyler Alexander Robinson*, Case No. 251403576, Fourth Judicial District Court, Utah County
-**Author:** Bryan Starbuck
+**Author:** [Bryan Starbuck](/People/bryan-starbuck)
 **Date:** March 10, 2026
 
 ---
@@ -12,7 +12,7 @@
 **Directory:** `1_DoJ_FBI/`
 **Primary File:** `Law_1_DoJ_FBI.md`
 
-**Scope:** Forces the Department of Justice, FBI, ATF, CBP, TSA, DHS, FinCEN, and all federal, state, and local law enforcement agencies to disclose all files related to the Charlie Kirk investigation within 30 days of enactment. No geographic limitation -- applies nationwide and internationally where U.S. agencies have jurisdiction or possession of records. Now enumerates 205 specific disclosure items in Schedule A (expanded from the original 175).
+**Scope:** Forces the Department of Justice, FBI, ATF, CBP, TSA, DHS, FinCEN, and all federal, state, and local law enforcement agencies to disclose all files related to the [Charlie Kirk](/People/charlie-kirk) investigation within 30 days of enactment. No geographic limitation -- applies nationwide and internationally where U.S. agencies have jurisdiction or possession of records. Now enumerates 205 specific disclosure items in Schedule A (expanded from the original 175).
 
 
 
@@ -24,7 +24,7 @@
 **Directory:** `2_US_Intel/`
 **Primary File:** `Law_2_US_Intel.md`
 
-**Scope:** Forces all U.S. Intelligence Community agencies as defined by 50 U.S.C. 3003(4) -- CIA, NSA, DIA, NRO, NGA, armed forces intelligence, FBI intelligence division, DHS intelligence, ODNI, and DOE/Treasury/State intelligence elements -- to disclose all information related to the Charlie Kirk investigation within 30 days. Covers all intelligence products: SIGINT, HUMINT, IMINT, MASINT, cable traffic, satellite imagery, and liaison communications. No geographic limitation.
+**Scope:** Forces all U.S. Intelligence Community agencies as defined by 50 U.S.C. 3003(4) -- [CIA](/US_Intelligence/cia), [NSA](/US_Intelligence/nsa), DIA, NRO, NGA, armed forces intelligence, FBI intelligence division, DHS intelligence, ODNI, and DOE/Treasury/State intelligence elements -- to disclose all information related to the Charlie Kirk investigation within 30 days. Covers all intelligence products: SIGINT, HUMINT, IMINT, MASINT, cable traffic, satellite imagery, and liaison communications. No geographic limitation.
 
 
 
@@ -49,7 +49,7 @@
 **Directory:** `4_Trusted_Investigations/`
 **Primary File:** `Law_4_Trusted_Investigations.md`
 
-**Scope:** Establishes independent investigation teams led by Designated Trusted Investigators: **Candace Owens**, **Dave Smith**, **Joe Kent**, **Tulsi Gabbard**, **Tucker Carlson**, **Steve Bannon**, **Marjorie Taylor Greene**, **Jon Bray**, **Ian Carroll**, **Thomas Massie**, **Matt Gaetz**, **Glenn Greenwald**, **Collin Campbell**, **Baron Coleman**, **Ryan Matta**, **Bryan Starbuck**, and **Megyn Kelly**. Each receives one FBI team and one Intelligence Community team (six teams total). Full access to all records disclosed under Laws 1 and 2, plus independent investigation authority. Minimum 24-month operation. No geographic limitation.
+**Scope:** Establishes independent investigation teams led by Designated Trusted Investigators: **[Candace Owens](/People/candace-owens)**, **Dave Smith**, **Joe Kent**, **Tulsi Gabbard**, **[Tucker Carlson](/People/tucker-carlson)**, **Steve Bannon**, **Marjorie Taylor Greene**, **[Jon Bray](/People/jon-bray)**, **[Ian Carroll](/People/ian-carroll)**, **Thomas Massie**, **Matt Gaetz**, **Glenn Greenwald**, **Collin Campbell**, **Baron Coleman**, **Ryan Matta**, **Bryan Starbuck**, and **Megyn Kelly**. Each receives one FBI team and one Intelligence Community team (six teams total). Full access to all records disclosed under Laws 1 and 2, plus independent investigation authority. Minimum 24-month operation. No geographic limitation.
 
 ## Related Areas
 

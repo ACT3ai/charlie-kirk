@@ -5,9 +5,9 @@
 Allow a specific set of trusted individuals to each have their own team within the FBI and within US intelligence to work alongside government investigators. These trusted people and their teams conduct the investigation. Nothing is allowed to stop them. They can release the information.
 
 ## Trusted People
-- Candace Owens
+- [Candace Owens](/People/candace-owens)
 - Dave Smith
-- Tucker Carlson
+- [Tucker Carlson](/People/tucker-carlson)
 
 ## Key Points
 

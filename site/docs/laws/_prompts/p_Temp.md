@@ -16,7 +16,7 @@ LAW_FOCUS_ON_NOW_FILE is law we focus on now and it's in the existing file {LAW_
 
 OUTPUT_FILE is file {ROOT_DIR}/other/people.md
 
-* we are creating four laws. These are the Charlie Kirk Files Forced Disclosure laws
+* we are creating four laws. These are the [Charlie Kirk](/People/charlie-kirk) Files Forced Disclosure laws
 * They will include what we call the 175 list. These are a numbered list of areas that we need to make sure are fully disclosed. 
 
 * The file LAW_FOCUS_ON_NOW_FILE already exists. Find the file that already exists. Never create a new file.
@@ -31,7 +31,7 @@ The Goal of this prompt:
 
 CURRENT_EXAMPLE:
 * "People involved" (PEOPLE_INVOLVED): This definition includes the following:
-   a) All TPUSA employees, executives, board members, and donors of over $5 million. It includes TPUSA external contractors, such as the security team. It includes Erika Kirk. 
+   a) All [TPUSA](/TPUSA/overview) employees, executives, board members, and donors of over $5 million. It includes TPUSA external contractors, such as the security team. It includes [Erika Kirk](/People/erika-kirk). 
    b) The following People in Utah (that were in Utah 9/10/2025 or 2 months before or after): It includes any US or foreign intelligence.  It includes any FBI that were doing anything or in knowledge of anything related to this case.  It includes anyone on UVU compus 9/10/2025.
    c) It includes any FBI, US or foreign intelligence, or anyone (in the USA or outside of the USA) discussing d.
 

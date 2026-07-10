@@ -2,11 +2,11 @@
 
 ## Core Requirement
 
-Force all U.S. Intelligence Services to release all information that could point to any real killer or provide real insights into the investigation of Charlie Kirk's death.
+Force all U.S. Intelligence Services to release all information that could point to any real killer or provide real insights into the investigation of [Charlie Kirk](/People/charlie-kirk)'s death.
 
 ## Key Points
 
-- Applies to ALL parts of U.S. intelligence services (CIA, NSA, DIA, NRO, etc.)
+- Applies to ALL parts of U.S. intelligence services ([CIA](/US_Intelligence/cia), [NSA](/US_Intelligence/nsa), DIA, NRO, etc.)
 - Must release all information that could identify the real killer or elevate the investigation
 - It is a CRIME for anyone in US intelligence or US government to stop any government employee from releasing this information
 - Information cannot disclose sources (methods protection), but must provide the final output/conclusions

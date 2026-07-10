@@ -1,7 +1,7 @@
 # Slide 1: The Charlie Kirk Files Forced Disclosure Act
 **Law 1: Law Enforcement Disclosure**
 
-- **Author:** Bryan Starbuck (BryanStarbuck@gmail.com)
+- **Author:** [Bryan Starbuck](/People/bryan-starbuck) (BryanStarbuck@gmail.com)
 - **Case:** *State of Utah v. Tyler Alexander Robinson* (Case No. 251403576)
 - **Court:** Fourth Judicial District Court, Utah County
 - **Date of Death:** September 10, 2025, at Utah Valley University, Orem, Utah
@@ -13,7 +13,7 @@
 # Slide 2: Why This Law Exists
 **The Problem: A Coverup of Historic Proportions**
 
-- Charlie Kirk, one of America's most prominent conservative figures, was killed at a public university event on September 10, 2025
+- [Charlie Kirk](/People/charlie-kirk), one of America's most prominent conservative figures, was killed at a public university event on September 10, 2025
 - The FBI has been accused of requesting witnesses delete video evidence, and videos were remotely deleted from witness devices
 - The crime scene at UVU was paved over, destroying forensic evidence
 - FOIA and GRAMA requests have been blocked
@@ -138,12 +138,12 @@
 - **P5-P9:** FBI personnel, DOJ prosecutors, state/local law enforcement, judges, defense attorneys
 - **P10-P14:** Intelligence community, foreign operatives, military personnel, aircraft crews, drone operators
 - **P15-P16:** Distraction persons, airport personnel
-- **P17-P19:** TPUSA donors, Kirk's associates, Erika Kirk and family
+- **P17-P19:** TPUSA donors, Kirk's associates, [Erika Kirk](/People/erika-kirk) and family
 - **P20-P22:** Medical personnel, crime scene alteration personnel, witnesses
-- **P23-P24:** Insurance/financial persons, Tyler Robinson's associates
+- **P23-P24:** Insurance/financial persons, [Tyler Robinson](/People/tyler-robinson)'s associates
 - **P25-P27:** Political figures, lobbyists, media with inside knowledge
 - **P28-P31:** AES personnel, rental/lodging staff, telecom employees, UVU staff
-- **P32-P35:** Aircraft passengers, Scott Lazerson connections, religious leaders, catch-all
+- **P32-P35:** Aircraft passengers, [Scott Lazerson](/People/scott-lazerson) connections, religious leaders, catch-all
 
 ---
 
@@ -251,7 +251,7 @@
 | International Liaison | #172-#176 | Tyler Robinson Family | #177-#179 |
 | Witness Intimidation | #180-#181 | Security Detail | #182 |
 | Medical / Hospital | #183-#185 | TPUSA Financial | #186-#187 |
-| Mosaic Pro / AV Equipment | #188-#190 | Butch Hibbs / Exploding Mic | #191-#192 |
+| Mosaic Pro / AV Equipment | #188-#190 | [Butch Hibbs](/People/butch-hibbs) / Exploding Mic | #191-#192 |
 | FBI Conduct at Scene | #193-#194 | Fort Huachuca Meeting | #195 |
 | Kirk's Statements | #197-#199 | Bullet Engravings | #200 |
 | Crime Scene Paving | #201 | AES Factory Explosion | #202 |
@@ -270,7 +270,7 @@
 - **Drone activity** -- both military and civilian -- at UVU on September 10
 - **Meetings at Fort Huachuca** (Army intelligence installation) and One Rodney Square, Wilmington, DE
 - **Israeli cellphones** -- approximately 12 detected at UVU
-- **Psychological operations** on Tyler Robinson or Lance Twiggs
+- **Psychological operations** on Tyler Robinson or [Lance Twiggs](/People/lance-twiggs)
 - **Hampton meeting** (August 3-6, 2025) with intelligence personnel present
 
 ---
@@ -285,7 +285,7 @@
 - **Case opening documentation** -- the investigative plan and scope documents
 - **FBI counterintelligence reports** on foreign intelligence services in Utah (January 2023 to present)
 - **FBI threat assessments** for Charlie Kirk regarding foreign targeting
-- **FBI liaison reports** with CIA, NSA, and DHS
+- **FBI liaison reports** with [CIA](/US_Intelligence/cia), [NSA](/US_Intelligence/nsa), and DHS
 - **FBI surveillance logs** tracking suspected foreign intelligence officers in Utah
 - **All FISA applications and materials** related to foreign nationals connected to the case
 
@@ -386,7 +386,7 @@
 
 - **"Fake Doctor w/Gun"** -- PERSON_179_REDACTED
 - **Pellet gun man** at Joe Vera's Mexican Restaurant, Provo
-- **George Zinn** and others identified as possible distraction operatives
+- **[George Zinn](/distraction_people/George_Zinn)** and others identified as possible distraction operatives
 - A person on video **asking questions to Charlie Kirk** who was also recorded **practicing the same shocked facial expression** beforehand, and who later appeared on **CBS with Erika Kirk**
 - All communications with any government or intelligence service
 - Whether any distraction person was **offered or received money** from any source
@@ -490,7 +490,7 @@
 # Slide 37: #191-#192 Butch Hibbs & Exploding Microphone
 **The Most Explosive Theory**
 
-- **#191:** All records on **Butch Hibbs** (brother of Calvary Chapel pastor Jack Hibbs) at UVU
+- **#191:** All records on **Butch Hibbs** (brother of Calvary Chapel pastor [Jack Hibbs](/People/jack-hibbs)) at UVU
 - Square object in his front right pocket matching dimensions of a **Rode Wireless GO II receiver** (approx. 2x2 inches)
 - His proximity to the sound crew
 - Photos showing his **pocket empty after Kirk was killed**
@@ -964,14 +964,14 @@
 **Comprehensive Definition of "People Involved"**
 
 - **P1:** TPUSA employees, executives, board, contractors, consultants, interns, donors ($5M+/year or $10M+ cumulative)
-- **P2:** TPUSA security detail -- Dan Flood, external contractors, anyone with foreign security service background
+- **P2:** TPUSA security detail -- [Dan Flood](/People/dan-flood), external contractors, anyone with foreign security service background
 - **P3:** Audio engineers, sound crew, AV technicians -- whoever handled Kirk's microphone
 - **P4:** All persons physically present at UVU on September 10, 2025
 - **P5:** All FBI agents, analysts, supervisors assigned to the investigation
 - **P6:** DOJ officials, federal prosecutors with case knowledge
 - **P7:** Utah state, county, and local law enforcement -- Sheriff's Office, Orem PD, UVU campus police
 - **P8:** All judges assigned to the Robinson case, including Judge Tony F. Graf Jr.
-- **P9:** All defense attorneys including Kathryn Nester and Richard Novak
+- **P9:** All defense attorneys including [Kathryn Nester](/People/kathryn-nester) and Richard Novak
 
 ---
 
@@ -979,11 +979,11 @@
 **P10-P17: Intelligence and Military**
 
 - **P10:** All CIA, NSA, DIA, NRO, NCTC, ODNI employees with any knowledge -- includes Joe Kent (NCTC), Tulsi Gabbard (DNI), Kash Patel (FBI Director)
-- **P11:** All foreign intelligence officers, agents, diplomats in Utah (July-November 2025) -- Egyptian GIS, French DGSE, Israeli Mossad, including the 12 Israeli phone holders
+- **P11:** All foreign intelligence officers, agents, diplomats in Utah (July-November 2025) -- Egyptian GIS, French DGSE, Israeli [Mossad](/intelligence/Mossad), including the 12 Israeli phone holders
 - **P12:** All military personnel and defense contractors -- HADES plane crew, Fort Huachuca attendees, DoD contract N0016425PJ538 personnel, French legionnaires
 - **P13:** All pilots, crew, passengers of Egyptian aircraft and other listed planes
 - **P14:** All drone operators at or near UVU, HADES spy plane operators, surveillance plane N59906 operators
-- **P15:** Distraction persons -- "Fake Doctor w/Gun," pellet gun man, George Zinn, "David," "Rick Cutler"
+- **P15:** Distraction persons -- "Fake Doctor w/Gun," pellet gun man, George Zinn, "David," "[Rick Cutler](/People/rick-cutler)"
 - **P16:** Airport staff, TSA, CBP, FBO employees at Provo and SLC airports
 - **P17:** All who attended meetings with Kirk regarding Israel policy, donor pressure -- Hamptons meeting participants
 
@@ -992,14 +992,14 @@
 # Slide 76: Key Categories - Medical, Financial, Witnesses
 **P18-P30: The Broader Circle**
 
-- **P18:** All persons Kirk communicated fears to -- Andrew Kolvet, Frank Turek, Dan Flood, Candace Owens
+- **P18:** All persons Kirk communicated fears to -- [Andrew Kolvet](/People/andrew-kolvet), [Frank Turek](/People/frank-turek), Dan Flood, [Candace Owens](/People/candace-owens)
 - **P19:** Erika Kirk, Kirk's parents, family members with knowledge of threats, insurance, TPUSA succession
 - **P20:** All medical personnel from shooting through burial -- includes surgeon blocked by FBI
-- **P21:** Crime scene alteration personnel -- Hardscape Specialties LLC (Michael Powell, Burton Romrell)
+- **P21:** Crime scene alteration personnel -- [Hardscape Specialties](/UVU/Hardscape-Specialties) LLC ([Michael Powell](/People/michael-powell), [Burton Romrell](/People/burton-romrell))
 - **P22:** All witnesses, videographers -- includes those told by FBI to delete evidence
 - **P23:** Life insurance persons -- GGLF 2023 LLC, estimated $20-50 million payout
 - **P24:** Tyler Robinson, Lance Twiggs, Robinson's family, jail snitch Jaxson Thomas Fox
-- **P25:** Political figures -- Governor Spencer Cox, any briefed members of Congress, Mike Huckabee
+- **P25:** Political figures -- Governor [Spencer Cox](/People/spencer-cox), any briefed members of Congress, Mike Huckabee
 - **P26:** AIPAC, ADL, Heritage Foundation, Philos Project and affiliates
 - **P27:** Media personnel who received early information -- Jerusalem Post announced death before pronouncement
 
@@ -1014,7 +1014,7 @@
 - **P31:** UVU administration, faculty, staff, campus security, facilities personnel
 - **P32:** All passengers and crew on any listed aircraft (July-November 2025)
 - **P33:** Scott Lazerson and all persons who met with or communicated with him
-- **P34:** Religious leaders who communicated with Kirk about Israel policy -- Rob McCoy, Rabbi Pesach Wolicki
+- **P34:** Religious leaders who communicated with Kirk about Israel policy -- [Rob McCoy](/People/rob-mccoy), [Rabbi Pesach Wolicki](/People/rabbi-pesach-wolicki)
 - **P35: ANY OTHER PERSON** who possesses relevant information -- including unnamed persons who received payments to be at UVU, who communicated with foreign intelligence, or who participated in meetings where harm to Kirk was discussed
 
 ---
@@ -1024,7 +1024,7 @@
 
 - **Law 2: Intelligence Services Disclosure Act** -- Forces CIA, NSA, DIA, NRO, NGA, and all intelligence agencies to disclose. Covers what Law 1 cannot reach inside the classified intelligence world. Permits redaction only of active human source identities and specific technical collection methods.
 - **Law 3: Mandatory Investigation Act** -- Goes beyond disclosure to require the FBI to actually conduct a thorough investigation. Mandates a dedicated team of 20+ agents with $10 million budget. Requires investigation of every Schedule A item.
-- **Law 4: Trusted Investigators Act** -- Establishes independent investigation teams led by Candace Owens, Dave Smith, and Tucker Carlson. Six teams total with full access to all agency files. Government employees may volunteer confidentially.
+- **Law 4: Trusted Investigators Act** -- Establishes independent investigation teams led by Candace Owens, Dave Smith, and [Tucker Carlson](/People/tucker-carlson). Six teams total with full access to all agency files. Government employees may volunteer confidentially.
 - **Shared definitions and Schedule A** ensure consistency across all four laws
 
 ---

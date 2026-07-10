@@ -2,7 +2,7 @@
 
 **Project:** Legislative drafting modeled after the Epstein Files Transparency Act (Public Law 119-38)
 **Case:** *State of Utah v. Tyler Alexander Robinson*, Case No. 251403576, Fourth Judicial District Court, Utah County
-**Author:** Bryan Starbuck
+**Author:** [Bryan Starbuck](/People/bryan-starbuck)
 **Date:** March 10, 2026
 
 ---
@@ -12,7 +12,7 @@
 **Directory:** `1_DoJ_FBI/`
 **Primary File:** `Law_1_DoJ_FBI.md`
 
-**Scope:** Forces the Department of Justice, FBI, ATF, CBP, TSA, DHS, FinCEN, and all federal, state, and local law enforcement agencies to disclose all files related to the Charlie Kirk investigation within 30 days of enactment. No geographic limitation -- applies nationwide and internationally where U.S. agencies have jurisdiction or possession of records. Now enumerates 205 specific disclosure items in Schedule A (expanded from the original 175).
+**Scope:** Forces the Department of Justice, FBI, ATF, CBP, TSA, DHS, FinCEN, and all federal, state, and local law enforcement agencies to disclose all files related to the [Charlie Kirk](/People/charlie-kirk) investigation within 30 days of enactment. No geographic limitation -- applies nationwide and internationally where U.S. agencies have jurisdiction or possession of records. Now enumerates 205 specific disclosure items in Schedule A (expanded from the original 175).
 
 **Key Provisions:**
 - **Broad Mandatory Disclosure (Section 2):** Catch-all requiring ALL records within 30 days in searchable/downloadable format. Senior official (Deputy Director or above) must certify under perjury. Comprehensive search of all systems required.
@@ -24,7 +24,7 @@
 - **Independent Oversight (Section 8):** 5-citizen review board appointed by Congress (not President). Full access, subpoena power, permanent until compliance certified. 10-year cooling-off period from covered agencies.
 - **Private Right of Action (Section 9):** Any citizen may sue. Presumption of disclosure. Attorney's fees awarded.
 - **No Presidential Override (Section 11):** President cannot withhold. No executive order can modify.
-- **Prohibition on Classification (Section 12A):** No information related to the Charlie Kirk investigation may be classified, reclassified, or withheld under any classification authority if it pertains to, reveals, or suggests the involvement of, foreknowledge by, or connection to any of the following: any foreign country, any foreign intelligence service, any U.S. intelligence service (including but not limited to the CIA and NSA), the FBI, or any branch or component of the U.S. military. Any existing classification of such information is automatically void upon enactment. Any attempt to classify or reclassify such information constitutes obstruction under Section 7.
+- **Prohibition on Classification (Section 12A):** No information related to the Charlie Kirk investigation may be classified, reclassified, or withheld under any classification authority if it pertains to, reveals, or suggests the involvement of, foreknowledge by, or connection to any of the following: any foreign country, any foreign intelligence service, any U.S. intelligence service (including but not limited to the [CIA](/US_Intelligence/cia) and [NSA](/US_Intelligence/nsa)), the FBI, or any branch or component of the U.S. military. Any existing classification of such information is automatically void upon enactment. Any attempt to classify or reclassify such information constitutes obstruction under Section 7.
 - **State/Local Cooperation (Section 12):** Federal funding suspension for non-compliance.
 
 ---
@@ -62,11 +62,11 @@
 - **Mandatory CIA Investigation (Section 2A):** CIA must open a parallel investigation within 60 days of enactment. Minimum 20 special agents. Senior special agent lead with no prior case involvement. $10M independent budget. Same reporting and duration requirements as the FBI investigation.
 - **Mandatory NSA Investigation (Section 2B):** NSA must open a parallel investigation within 60 days of enactment. Minimum 20 special agents. Senior special agent lead with no prior case involvement. $10M independent budget. Same reporting and duration requirements as the FBI investigation.
   - **Eight mandatory investigation categories (Section 2(d)):**
-    - Exploding microphone theory (DoD contract, AES facility, Heber-Nashville flight, AES explosion, physical evidence)
+    - Exploding microphone theory (DoD contract, [AES](/Mic/AES) facility, Heber-Nashville flight, AES explosion, physical evidence)
     - Foreign intelligence involvement (Israeli cell phones, Egyptian aircraft, HADES spy plane, foreign operatives, Counter-UAS testing)
     - Evidence of cover-up (FBI directing video deletion, crime scene paving, FOIA blocks, remote device wiping)
     - Alternative shooter/weapon planting theories (7 specific leads)
-    - Financial connections (TPUSA donors, foreign financial flows, Scott Lazerson)
+    - Financial connections (TPUSA donors, foreign financial flows, [Scott Lazerson](/People/scott-lazerson))
     - Psychological operations (3 specific leads)
     - Pre-planning/foreknowledge (Kirk's "kill me" texts, Hamptons meeting, Fort Huachuca, Jerusalem Post pre-announcement)
     - Electronic warfare (2 specific leads)
@@ -85,7 +85,7 @@
 **Directory:** `4_Trusted_Investigations/`
 **Primary File:** `Law_4_Trusted_Investigations.md`
 
-**Scope:** Establishes independent investigation teams led by Designated Trusted Investigators: **Candace Owens**, **Dave Smith**, **Joe Kent**, **Tulsi Gabbard**, **Tucker Carlson**, **Steve Bannon**, **Marjorie Taylor Greene**, **Jon Bray**, **Ian Carroll**, **Thomas Massie**, **Matt Gaetz**, **Glenn Greenwald**, **Collin Campbell**, **Baron Coleman**, **Ryan Matta**, **Bryan Starbuck**, and **Megyn Kelly**. Each receives one FBI team and one Intelligence Community team (six teams total). Full access to all records disclosed under Laws 1 and 2, plus independent investigation authority. Minimum 24-month operation. No geographic limitation.
+**Scope:** Establishes independent investigation teams led by Designated Trusted Investigators: **[Candace Owens](/People/candace-owens)**, **Dave Smith**, **Joe Kent**, **Tulsi Gabbard**, **[Tucker Carlson](/People/tucker-carlson)**, **Steve Bannon**, **Marjorie Taylor Greene**, **[Jon Bray](/People/jon-bray)**, **[Ian Carroll](/People/ian-carroll)**, **Thomas Massie**, **Matt Gaetz**, **Glenn Greenwald**, **Collin Campbell**, **Baron Coleman**, **Ryan Matta**, **Bryan Starbuck**, and **Megyn Kelly**. Each receives one FBI team and one Intelligence Community team (six teams total). Full access to all records disclosed under Laws 1 and 2, plus independent investigation authority. Minimum 24-month operation. No geographic limitation.
 
 **Key Provisions:**
 - **Team Establishment (Section 2):** Six total teams (5 FBI + 5 IC). Security clearances mandated by statute within 30 days -- no agency may delay or deny to obstruct. Independent budget for legal counsel, forensic experts, and security.

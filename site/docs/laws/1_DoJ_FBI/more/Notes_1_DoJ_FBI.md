@@ -12,7 +12,7 @@
 ### Precedent: JFK Assassination Records Collection Act of 1992 (Public Law 102-526)
 - Mandated release of all JFK assassination records with 25-year deadline (October 2017)
 - Created the Assassination Records Review Board (ARRB) to oversee compliance
-- **Critical failures:** Nearly 5% of records still redacted as of 2025. CIA and FBI convinced Presidents Obama, Trump, and Biden to continue withholding ~3,500 records past the 2017 deadline. No official was ever prosecuted for non-compliance. ARRB was temporary and expired. Some records confirmed destroyed
+- **Critical failures:** Nearly 5% of records still redacted as of 2025. [CIA](/US_Intelligence/cia) and FBI convinced Presidents Obama, Trump, and Biden to continue withholding ~3,500 records past the 2017 deadline. No official was ever prosecuted for non-compliance. ARRB was temporary and expired. Some records confirmed destroyed
 - **Trump's 2025 Executive Order:** On January 23, 2025, Trump signed an executive order directing declassification of JFK, RFK, and MLK records -- showing that 30+ years later, full compliance has never been achieved
 - **Critical lessons:**
   1. Laws without real penalties are suggestions, not mandates
@@ -25,7 +25,7 @@
 ### Key Improvement: Broad Catch-All Plus Specific Enumeration
 The major structural improvement in this version is the dual-track approach:
 1. **Section 2** provides a broad catch-all requiring disclosure of ALL information related to the investigation -- not limited to any specific list
-2. **Section 3** specifically enumerates the 175 items from the Charlie Kirk disclosure list, so agencies cannot claim ignorance of what is required
+2. **Section 3** specifically enumerates the 175 items from the [Charlie Kirk](/People/charlie-kirk) disclosure list, so agencies cannot claim ignorance of what is required
 3. **Section 3(c)** explicitly states that the specific items do not limit the broad requirement -- both apply concurrently
 
 This approach draws from the Epstein Act's enumeration of specific record categories (Section 2(a)(1)-(8)) while going further with the catch-all provision.

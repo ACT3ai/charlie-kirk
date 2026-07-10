@@ -36,13 +36,13 @@ Act as an attorney. Analyze if this law has any ways to be improved.
 
 
 
-#3: The DoJ & FBI & CIA & US Intel & courts & Judges & Congress cover for Israel.
+#3: The DoJ & FBI & [CIA](/US_Intelligence/cia) & US Intel & courts & Judges & Congress cover for [Israel](/Israel).
 
 They won't release 100,000 pages in US INtel about Israel involved with JFK murder.
 
 They won't release 1 million pages in Jeffrey Epstein and about Israel involved with Jeffrey Epstein crimes.
 
-We must assume they will fight uncovering Israel behind the the decider and carrying out of the assassination of CHarlie Kirk. And/or Israel having the control over making US intel carry out the Charlie Kirk assassination.
+We must assume they will fight uncovering Israel behind the the decider and carrying out of the assassination of CHarlie Kirk. And/or Israel having the control over making US intel carry out the [Charlie Kirk](/People/charlie-kirk) assassination.
 
 
 

@@ -1,6 +1,6 @@
 # Charlie Kirk Assassination — Forced Disclosure
 
-This is about the Charlie Kirk assassination. Citizen investigators find that intelligence-service-level involvement is what investigators keep coming back to.
+This is about the [Charlie Kirk](/People/charlie-kirk) assassination. Citizen investigators find that intelligence-service-level involvement is what investigators keep coming back to.
 
 Our main push is to get a set of laws passed to force file disclosure in the Charlie Kirk assassination:
 
@@ -83,7 +83,7 @@ This includes other information to disclose that may or may not be related.
 
 ### The DoD Contract
 * May 1, 2025: DoD awarded contract N0016425PJ538 for "MINIATURIZED-XS DEMOLITION CHARGES, ANTI PERSONNEL-XS"
-* Recipient: Accurate Energetic Systems (AES), McEwen, Tennessee
+* Recipient: Accurate Energetic Systems ([AES](/Mic/AES)), McEwen, Tennessee
 * Contract value: $440,494
 * Delivery deadline: August 25, 2025
 * Awarding agency: Department of Defense - Department of the Navy - NSWC Crane
@@ -110,7 +110,7 @@ This includes other information to disclose that may or may not be related.
 * Photos show square object (~2x2") in PERSON_25_REDACTED's front right pocket matching Rode Wireless GO II mic dimensions
 * PERSON_25_REDACTED photographed standing with sound crew and person who miked up Kirk
 * Post-killing photos show PERSON_25_REDACTED's pocket empty
-* Potential involvement of Israeli secret service or Mossad in orchestrating an inside hit, drawing parallels to 2024 pager bombs in Lebanon (see [Israeli Cell Phones](1_DoJ_FBI/Law_1_DoJ_FBI.md#israeli-cell-phones-8791))
+* Potential involvement of Israeli secret service or [Mossad](/intelligence/Mossad) in orchestrating an inside hit, drawing parallels to 2024 pager bombs in Lebanon (see [Israeli Cell Phones](1_DoJ_FBI/Law_1_DoJ_FBI.md#israeli-cell-phones-8791))
 
 ### The Microphone Type
 * Kirk wearing lavalier microphone (wireless)
@@ -139,7 +139,7 @@ This includes other information to disclose that may or may not be related.
 * Fragment struck tent roof
 * Shards found on Kirk's clothing
 * Shards found on ground where Kirk was carried
-* Fragments found on SUV floor during hospital transport (Candace Owens photos)
+* Fragments found on SUV floor during hospital transport ([Candace Owens](/People/candace-owens) photos)
 * Kirk's left hand shows cuts consistent with shrapnel (visible in casket photos)
 * Video shows low-speed projectile ejecting downward between Kirk's legs at moment of impact
 

@@ -19,7 +19,7 @@ Items #1-#4, #62-#66, #74-#80, #81-#86, #87-#91, #171-#175 use "whether" and "al
 
 ---
 
-## 3. Connection Between AES Factory Explosion and the Assassination — ADDRESSED
+## 3. Connection Between [AES](/Mic/AES) Factory Explosion and the Assassination — ADDRESSED
 
 Item #202 uses "whether" framing: "all records of whether any investigation examined the connection...whether the explosion destroyed evidence." Requests disclosure, does not assert causation.
 
@@ -31,7 +31,7 @@ Items #105-#112 and #141-#147 frame chain-of-custody and planting questions as r
 
 ---
 
-## 5. Tyler Robinson's Romantic Partner (Lance Twiggs) — ADDRESSED
+## 5. [Tyler Robinson](/People/tyler-robinson)'s Romantic Partner ([Lance Twiggs](/People/lance-twiggs)) — ADDRESSED
 
 Items #176-#178 request records relating to Robinson's associates without making assertions about personal details. Framed as disclosure of investigation records.
 
@@ -43,7 +43,7 @@ Items #28-#31 and #194 use "whether" framing: "all records relating to whether P
 
 ---
 
-## 7. Evidence Deletion by FBI — ADDRESSED
+## 7. Evidence Deletion by [FBI](/FBI/overview) — ADDRESSED
 
 Items #47-#48 and #179-#180 use conditional language: "all records in which any FBI agent requested, pressured, suggested, or directed any witness...to delete or remove video evidence." Does not assert FBI did request deletion — requests disclosure of whether such records exist.
 

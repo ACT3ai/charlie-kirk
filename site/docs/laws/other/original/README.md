@@ -1,6 +1,6 @@
 # Charlie_Kirk_175_Critical_To_Expose
 
-My name is Bryan Starbuck.  I ask Thomas Massie, who created the Epstein Files Forced Disclosure law... to create a parallel law "Charlie Kirk FILES Forced Disclosure Law".
+My name is [Bryan Starbuck](/People/bryan-starbuck).  I ask Thomas Massie, who created the Epstein Files Forced Disclosure law... to create a parallel law "[Charlie Kirk](/People/charlie-kirk) FILES Forced Disclosure Law".
 
 I have been working on WHAT is critical for that law to require disclosure on. Below is that list that should be covered in that law.
 
@@ -81,13 +81,13 @@ More of my critical disclosures are here:
 # List to Disclose
 ## State of Utah v. Tyler Alexander Robinson
 ## Case No. 251403576 | Fourth Judicial District Court, Utah County
-## Judge Derek P. Pullan
+## Judge [Derek P. Pullan](/People/derek-p-pullan)
 
 Everything in this document is about possible scenarios. The goal of the discovery is
 to establish which of these may be a problem.  This document does not make any claim that any
 individual or organization did anything criminal, illegal or immoral. Any references
 are made for the purpose of discovery towards getting information that will get the truth out
-and can help the case of Tyler Robinson be determined NOT guilty.
+and can help the case of [Tyler Robinson](/People/tyler-robinson) be determined NOT guilty.
 
 The goals of discovery are towards establishing one or more of the WHY
 which will give the best defense to Tyler Robinson. They can lead to a court finding of
@@ -128,7 +128,7 @@ from government possession into the court case and history books.
 
 
 (Possible) Linkage #2: The [12 Israeli-registered cellphones](#israeli-cell-phones) at UVU prove foreign intelligence presence.
-    NSA reportedly tracked these phones. If discovery confirms Israeli intelligence
+    [NSA](/US_Intelligence/nsa) reportedly tracked these phones. If discovery confirms Israeli intelligence
     officers were physically present at the assassination scene, it establishes
     that a foreign state actor had operatives in position. Combined with cell
     tower data showing these phones also pinged near Tyler's residence, it proves
@@ -213,7 +213,7 @@ The first section is on a possible exploding Mic theory
 
 ### The DoD Contract
 * May 1, 2025: DoD awarded contract N0016425PJ538 for "MINIATURIZED-XS DEMOLITION CHARGES, ANTI PERSONNEL-XS"
-* Recipient: Accurate Energetic Systems (AES), McEwen, Tennessee
+* Recipient: Accurate Energetic Systems ([AES](/Mic/AES)), McEwen, Tennessee
 * Contract value: $440,494
 * Delivery deadline: August 25, 2025
 * Awarding agency: Department of Defense - Department of the Navy - NSWC Crane
@@ -240,7 +240,7 @@ The first section is on a possible exploding Mic theory
 * Photos show square object (~2x2") in PERSON_25_REDACTED's front right pocket matching Rode Wireless GO II mic dimensions
 * PERSON_25_REDACTED photographed standing with sound crew and person who miked up Kirk
 * Post-killing photos show PERSON_25_REDACTED's pocket empty
-* Potential involvement of Israeli secret service or Mossad in orchestrating an inside hit, drawing parallels to 2024 pager bombs in Lebanon (see [Israeli Cell Phones](#israeli-cell-phones))
+* Potential involvement of Israeli secret service or [Mossad](/intelligence/Mossad) in orchestrating an inside hit, drawing parallels to 2024 pager bombs in Lebanon (see [Israeli Cell Phones](#israeli-cell-phones))
 
 ### The Microphone Type
 * Kirk wearing lavalier microphone (wireless)
@@ -269,7 +269,7 @@ The first section is on a possible exploding Mic theory
 * Fragment struck tent roof
 * Shards found on Kirk's clothing
 * Shards found on ground where Kirk was carried
-* Fragments found on SUV floor during hospital transport (Candace Owens photos)
+* Fragments found on SUV floor during hospital transport ([Candace Owens](/People/candace-owens) photos)
 * Kirk's left hand shows cuts consistent with shrapnel (visible in casket photos)
 * Video shows low-speed projectile ejecting downward between Kirk's legs at moment of impact
 
@@ -486,11 +486,11 @@ The investigation shows that an intelligence service is very likely involved wit
 #18: Any money transfer to Tyler Robinson? Includes (but not limited to) any possible $50,000 in
   wire transfers that flowed through DSA-linked accounts in the months leading to the killing.
   Any knowledge of what it was for? Logistics, travel, and even weapon acquisition.
-#19: Any money transfer to Lance Twiggs? Includes (but not limited to)
+#19: Any money transfer to [Lance Twiggs](/People/lance-twiggs)? Includes (but not limited to)
   any possible $20,000 transfer? Or multiple transfers?
 
 
-#20: Any information about the possible "distraction people". See list below. List: a) PERSON_179_REDACTED = "Fake Doctor w/Gun" (middle name may be "Kim"), b) Pellet gun guy detailed by Provo PD in front of Joe Vera's Mexican Restaurant. 201 W Center St, Provo, UT 84601 with a "Ruger Yukon Magnum .177 Pellet Break Barrel Air Rifle", c) George Zinn, d) PERSON_53_REDACTED, e) Curly hair "David" (Owner of X account @RtothepowerofX) (his name may be "PERSON_139_REDACTED"), or f) any person the police were called on at Urban Pioneer Cafe or Sorenson Molecular Biotechnology Building (35 S Wasatch Dr, Salt Lake City, UT 84112, USA) on that day, g) PERSON_42_REDACTED (May not be his real name): (he may have also used the name "PERSON_42_REDACTED") who was interviewed on TV news, or h) any others.   Any communication
+#20: Any information about the possible "distraction people". See list below. List: a) PERSON_179_REDACTED = "Fake Doctor w/Gun" (middle name may be "Kim"), b) Pellet gun guy detailed by Provo PD in front of Joe Vera's Mexican Restaurant. 201 W Center St, Provo, UT 84601 with a "Ruger Yukon Magnum .177 Pellet Break Barrel Air Rifle", c) [George Zinn](/distraction_people/George_Zinn), d) PERSON_53_REDACTED, e) Curly hair "David" (Owner of X account @RtothepowerofX) (his name may be "PERSON_139_REDACTED"), or f) any person the police were called on at Urban Pioneer Cafe or Sorenson Molecular Biotechnology Building (35 S Wasatch Dr, Salt Lake City, UT 84112, USA) on that day, g) PERSON_42_REDACTED (May not be his real name): (he may have also used the name "PERSON_42_REDACTED") who was interviewed on TV news, or h) any others.   Any communication
     they had (or claimed) with any individual or gov coordinating / communicating / discussion of or payments / or any other interaction. Any claims they made. Any communication / coordination or meetings they had
     with any US or non-US intelligence or governments or anyone that may have communicated to
     them to be there, do anything or possibly talk about being paid. Anything about any of these
@@ -807,7 +807,7 @@ The investigation shows that an intelligence service is very likely involved wit
   wanted Charlie's life ended, wanted / talked about getting him killed, or threatening him.
 #56: Does US Intel or the FBI or DoJ have any information about any threats (or communication about harm, plans
   or consideration) to similar individuals? Specifically any in this list: Marjorie Taylor Greene (including threats to murder her son),
-  Matt Gaetz, Andrew Breitbart, Candace Owens, Tucker Carlson, Thomas Massie.
+  Matt Gaetz, Andrew Breitbart, Candace Owens, [Tucker Carlson](/People/tucker-carlson), Thomas Massie.
 
 
 
@@ -837,7 +837,7 @@ FBI_Counterintelligence: FBI foreign intelligence service investigation files
   * Proves foreign intelligence services were operating in area
 #63: FBI threat assessments for Charlie Kirk: FBI Protective Intelligence. Threat assessments regarding foreign intelligence targeting Kirk.
   * Shows FBI knew of foreign threats before assassination
-#64: FBI liaison reports with CIA/NSA/DHS: FBI Salt Lake City Field Office. All cable traffic and intelligence sharing regarding foreign nationals.
+#64: FBI liaison reports with [CIA](/US_Intelligence/cia)/NSA/DHS: FBI Salt Lake City Field Office. All cable traffic and intelligence sharing regarding foreign nationals.
   * Reveals scope of federal knowledge about foreign actors
 #65: FBI counterintelligence surveillance logs: FBI Counterintelligence Division. Logs tracking suspected foreign intelligence officers in Utah.
   * Documents foreign intelligence officer presence and movements
