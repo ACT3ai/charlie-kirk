@@ -21,6 +21,7 @@ const sidebars: SidebarsConfig = {
     {type: 'doc', id: 'After/overview', label: 'After the Shooting'},
     {type: 'doc', id: 'court/overview', label: 'Court & Trial'},
     {type: 'doc', id: 'Israel/overview', label: 'Israel'},
+    {type: 'doc', id: 'Iran/overview', label: 'Iran War'},
     {type: 'doc', id: 'Mic/overview', label: 'Microphone'},
     {type: 'doc', id: 'Planes/overview', label: 'Planes'},
     {type: 'doc', id: 'UVU/overview', label: 'UVU Campus'},
