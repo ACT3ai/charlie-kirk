@@ -65,6 +65,7 @@ const sidebars: SidebarsConfig = {
     {type: 'doc', id: 'organizations_groups/overview', label: 'Organizations & Groups'},
     {type: 'doc', id: 'Topics3/overview', label: 'Topics3'},
     {type: 'doc', id: 'Topics', label: 'Investigation Topics'},
+    {type: 'doc', id: 'Defamation/overview', label: 'Defamation Cases'},
   ],
 };
 
