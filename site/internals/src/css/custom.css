@@ -58,16 +58,20 @@
 
 /* 1) Use the full browser width. Docusaurus caps the content .container
    at ~1140px (and 1416px on very wide screens), leaving white gutters on
-   the left and right. Remove that cap for this page only. */
+   the left and right. Remove that cap for this page only. This is the one
+   rule that needs :has() (we can't add a class to .container from MDX). */
 .container:has(.ck-full-bleed) {
   max-width: none;
 }
 
 /* 2) Side videos float right with text wrapping around them, but must
    NEVER be wide enough to scroll off the right edge — at any zoom level.
+   The .ck-video / .ck-caption classes exist ONLY on this page, so bare
+   class selectors are already page-scoped and do NOT depend on :has() —
+   the overflow guard therefore works even in browsers that lack :has().
    The figure width is the smaller of 480px and 40% of the content column,
    so it shrinks with the viewport and can never exceed its column. */
-.container:has(.ck-full-bleed) .ck-video {
+.ck-video {
   float: right;
   width: min(480px, 40%);
   max-width: 100%;
@@ -76,14 +80,14 @@
 
 /* The <video> fills its figure and is hard-capped at 100% of it. This is
    the line that guarantees the video can never overflow horizontally. */
-.container:has(.ck-full-bleed) .ck-video video {
+.ck-video video {
   display: block;
   width: 100%;
   max-width: 100%;
   height: auto;
 }
 
-.container:has(.ck-full-bleed) .ck-video .ck-caption {
+.ck-video .ck-caption {
   font-size: 0.85rem;
   color: var(--ifm-color-emphasis-600);
   margin-top: 0.5rem;
@@ -92,7 +96,7 @@
 /* 3) On phones/narrow screens, stop floating — stack the video full width
    so it never crowds the text or overflows. */
 @media (max-width: 768px) {
-  .container:has(.ck-full-bleed) .ck-video {
+  .ck-video {
     float: none;
     width: 100%;
     margin: 1rem 0;
