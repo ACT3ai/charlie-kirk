@@ -17,20 +17,23 @@ keywords:
 image: "/img/docusaurus-social-card.jpg"
 ---
 
+{/* Full-bleed marker: activates the page-specific layout in custom.css
+    (full width + overflow-safe side videos). Scoped via CSS :has(). */}
+<div className="ck-full-bleed" />
+
 <a href="/Suspects/overview" style={{display:'inline-block', marginBottom:'1rem',
 padding:'0.35rem 0.9rem', background:'#1a73e8', color:'#fff',
 borderRadius:'4px', textDecoration:'none', fontSize:'0.9rem'}}>← Suspects</a>
 
 # Black Clothing Suspect — The Man in All Black
 
-<div style={{float: 'right', width: '48%', maxWidth: '480px', marginLeft: '1.5rem', marginBottom: '1rem'}}>
-  <video controls style={{maxWidth: '50vw', maxHeight: '50vh', display: 'block', margin: '1rem auto'}}>
-    <source src="https://ipfs.io/ipfs/Qmcf5Dj8qouWV8m5R9MLWKb3PbqbG6Yoxqisibf9e3dcUT" type="video/mp4" />
+<div className="ck-video">
+  <video controls>
     <source src="https://ipfs.io/ipfs/Qmcf5Dj8qouWV8m5R9MLWKb3PbqbG6Yoxqisibf9e3dcUT" type="video/mp4" />
     <source src="https://dweb.link/ipfs/Qmcf5Dj8qouWV8m5R9MLWKb3PbqbG6Yoxqisibf9e3dcUT" type="video/mp4" />
     Your browser does not support the video tag.
   </video>
-  <p style={{fontSize: '0.85rem', color: '#666', marginTop: '0.5rem'}}>
+  <p className="ck-caption">
     <em>FBI ignored eyewitnesses — short clip. Source: <a href="https://x.com/ProjectConstitu/status/2045871393611395289">@ProjectConstitu on X</a>, April 19, 2026.</em>
   </p>
 </div>
@@ -98,13 +101,13 @@ According to CNN's analysis of the video: "New video appears to show a person ly
 
 ## Resurfaced Video — Man in Black Running From the Scene
 
-<div style={{float: 'right', width: '48%', maxWidth: '480px', marginLeft: '1.5rem', marginBottom: '1rem'}}>
-  <video controls style={{maxWidth: '50vw', maxHeight: '50vh', display: 'block', margin: '1rem auto'}}>
+<div className="ck-video">
+  <video controls>
     <source src="https://ipfs.io/ipfs/QmQKcXQqCGn8hjfMwj7Mycfnzbv8B73sMmHLPYS9TZjSg9" type="video/mp4" />
     <source src="https://dweb.link/ipfs/QmQKcXQqCGn8hjfMwj7Mycfnzbv8B73sMmHLPYS9TZjSg9" type="video/mp4" />
     Your browser does not support the video tag.
   </video>
-  <p style={{fontSize: '0.85rem', color: '#666', marginTop: '0.5rem'}}>
+  <p className="ck-caption">
     <em>Resurfaced 20-second clip — a man in all black running from the UVU crime scene on 9/10, filmed by a witness who said "he's the guy." Source: <a href="https://x.com/ProjectConstitu/status/2075691199575265757">@ProjectConstitu on X</a>, July 10, 2026, amplified by <a href="https://x.com/realhonestash/status/2075740274379112646">@realhonestash</a>.</em>
   </p>
 </div>
@@ -117,18 +120,30 @@ The poster further speculates that the figure resembles Lance Twiggs "particular
 
 The video was amplified by @realhonestash ("It just keeps getting better…"). Whether the running man, the prone rooftop figure, and the person who approached the construction crew are the same individual remains an open question for investigators.
 
+### Full Description of the Resurfaced Footage
+
+According to the circulated account of this footage:
+
+* **The video.** New video has resurfaced showing a man running from the UVU crime scene on September 10, filmed by a witness who reportedly believed he was the real suspect. The man is seen wearing all black, with a black backpack and long dark hair — reportedly matching multiple descriptions from that day.
+* **Dylan Hope's account.** Construction worker [Dylan Hope](/People/dylan-hope) previously described coming into contact with a man right after the shooting who said "someone's been shot." Hope described him as wearing a **black trench coat, black cargo pants, a black COVID mask, black sunglasses, and having long greasy black hair while carrying a small backpack.**
+* **Police dispatch.** That description reportedly also closely matches what was broadcast over police dispatch that day: a suspect wearing all black, a black mask, and **carrying a long gun.**
+* **Rooftop footage.** The only known footage of a person on the roof also reportedly shows someone dressed entirely in black in a **prone position on the Losee building.**
+
+This new video does not appear to show [Tyler Robinson](/Tyler_Robinson/overview). The person who posted the footage speculates that the man bears a resemblance to Lance Twiggs — "particularly in hair length, color, and profile" — but expressly cautions that "the footage is too blurry to make a positive identification." This is presented as an unverified visual comparison and an open question posed to viewers ("Watch the video. Does this look like Lance Twiggs to you… or someone else?"), **not** an identification or an accusation. No living person has been established as the individual in this clip, and the resemblance claim should be treated as citizen commentary only.
+
+If the running man, the prone figure on the roof, and the individual who approached the construction crew are the same person, it would raise serious questions about who was actually at the scene that day. According to the account, the descriptions of the person seen running, the person on the roof, and the individual who approached the construction crew are all reportedly consistent with each other — and inconsistent with Tyler Robinson.
+
 <div style={{clear: 'both'}} />
 
 ## Full Interview: Dylan Hope Speaks Out
 
-<div style={{float: 'right', width: '48%', maxWidth: '480px', marginLeft: '1.5rem', marginBottom: '1rem'}}>
-  <video controls style={{maxWidth: '50vw', maxHeight: '50vh', display: 'block', margin: '1rem auto'}}>
-    <source src="https://ipfs.io/ipfs/QmS8nNNsdoYwnifaEmvk2iH9TLTANJMXTYdssJQY5Toygz" type="video/mp4" />
+<div className="ck-video">
+  <video controls>
     <source src="https://ipfs.io/ipfs/QmS8nNNsdoYwnifaEmvk2iH9TLTANJMXTYdssJQY5Toygz" type="video/mp4" />
     <source src="https://dweb.link/ipfs/QmS8nNNsdoYwnifaEmvk2iH9TLTANJMXTYdssJQY5Toygz" type="video/mp4" />
     Your browser does not support the video tag.
   </video>
-  <p style={{fontSize: '0.85rem', color: '#666', marginTop: '0.5rem'}}>
+  <p className="ck-caption">
     <em>Full interview — construction worker Dylan Hope speaks out. Source: <a href="https://x.com/ProjectConstitu/status/2045871393611395289">@ProjectConstitu on X</a>, April 19, 2026.</em>
   </p>
 </div>

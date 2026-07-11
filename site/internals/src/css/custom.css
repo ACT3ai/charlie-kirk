@@ -42,3 +42,59 @@
 .no-expand-sidebar > .menu__list-item-collapsible .menu__caret {
   display: none !important;
 }
+
+/* ============================================================
+   Full-bleed layout — ONLY the Suspects/Black_Clothing_Suspect page.
+   Every rule below is scoped with :has(.ck-full-bleed), which matches
+   solely the one doc content container that holds the invisible
+   <div className="ck-full-bleed" /> marker placed in that page's MDX.
+   No other page, and not the navbar or footer, is affected.
+   ============================================================ */
+
+/* The marker element renders nothing. */
+.ck-full-bleed {
+  display: none;
+}
+
+/* 1) Use the full browser width. Docusaurus caps the content .container
+   at ~1140px (and 1416px on very wide screens), leaving white gutters on
+   the left and right. Remove that cap for this page only. */
+.container:has(.ck-full-bleed) {
+  max-width: none;
+}
+
+/* 2) Side videos float right with text wrapping around them, but must
+   NEVER be wide enough to scroll off the right edge — at any zoom level.
+   The figure width is the smaller of 480px and 40% of the content column,
+   so it shrinks with the viewport and can never exceed its column. */
+.container:has(.ck-full-bleed) .ck-video {
+  float: right;
+  width: min(480px, 40%);
+  max-width: 100%;
+  margin: 0.25rem 0 1rem 1.5rem;
+}
+
+/* The <video> fills its figure and is hard-capped at 100% of it. This is
+   the line that guarantees the video can never overflow horizontally. */
+.container:has(.ck-full-bleed) .ck-video video {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+.container:has(.ck-full-bleed) .ck-video .ck-caption {
+  font-size: 0.85rem;
+  color: var(--ifm-color-emphasis-600);
+  margin-top: 0.5rem;
+}
+
+/* 3) On phones/narrow screens, stop floating — stack the video full width
+   so it never crowds the text or overflows. */
+@media (max-width: 768px) {
+  .container:has(.ck-full-bleed) .ck-video {
+    float: none;
+    width: 100%;
+    margin: 1rem 0;
+  }
+}
