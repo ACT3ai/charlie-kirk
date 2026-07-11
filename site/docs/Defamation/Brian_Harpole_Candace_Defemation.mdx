@@ -14,7 +14,13 @@ keywords:
   - Middle District of Tennessee
   - public figure
 image: "/img/docusaurus-social-card.jpg"
+hide_table_of_contents: true
 ---
+
+{/* Full-bleed marker: activates the site-wide full-width + text-wrap
+    layout in custom.css (full width + overflow-safe side videos). Scoped
+    via CSS :has(). */}
+<div className="ck-full-bleed" />
 
 <a href="/Defamation/overview" style={{display:'inline-block', marginBottom:'1rem',
 padding:'0.35rem 0.9rem', background:'#1a73e8', color:'#fff',
@@ -28,13 +34,13 @@ borderRadius:'4px', textDecoration:'none', fontSize:'0.9rem'}}>
 
 **Brian Harpole** — [Charlie Kirk](/People/charlie-kirk)'s [security chief](/Security_Team/brian-harpole) on September 10, 2025 — has filed a **defamation lawsuit against commentator [Candace Owens](/People/candace-owens)** in the **U.S. District Court for the Middle District of Tennessee**. The suit places two central figures from the Charlie Kirk story on opposite sides of a courtroom: the man who was in the SUV when Kirk was shot, and the most prominent independent voice covering the assassination.
 
-<div style={{float: 'right', width: '48%', maxWidth: '480px', marginLeft: '1.5rem', marginBottom: '1rem'}}>
-  <video controls style={{width: '100%', height: 'auto', display: 'block', borderRadius: '4px'}}>
+<div className="ck-video ck-video--16x9">
+  <video controls>
     <source src="https://ipfs.io/ipfs/QmZWuQH5Mf1mY5SP2C9HHvRFrSRcp8xLmw8RgKfRXypA9g" type="video/mp4" />
     <source src="https://dweb.link/ipfs/QmZWuQH5Mf1mY5SP2C9HHvRFrSRcp8xLmw8RgKfRXypA9g" type="video/mp4" />
     Your browser does not support the video tag.
   </video>
-  <p style={{fontSize: '0.85rem', color: '#666', marginTop: '0.5rem'}}>
+  <p className="ck-caption">
     <em>Journalist Grace Ashford reports the mass judicial recusal, and includes a clip of Candace Owens describing the public-figure argument. Source: <a href="https://x.com/IGraceAshford/status/2075531573907071094">@IGraceAshford on X</a>, July 10, 2026.</em>
   </p>
 </div>

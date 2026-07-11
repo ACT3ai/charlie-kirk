@@ -10,7 +10,13 @@ keywords:
   - Utah Valley University
   - Witnesses
 image: "/img/docusaurus-social-card.jpg"
+hide_table_of_contents: true
 ---
+
+{/* Full-bleed marker: activates the site-wide full-width + text-wrap
+    layout in custom.css (full width + overflow-safe side videos). Scoped
+    via CSS :has(). */}
+<div className="ck-full-bleed" />
 
 <a href="/" style={{display:'inline-block', marginBottom:'1rem',
 padding:'0.35rem 0.9rem', background:'#1a73e8', color:'#fff',
@@ -41,13 +47,13 @@ Firsthand accounts from people who were at Utah Valley University on September 1
 
 ## Featured clip — a witness account that appears to change
 
-<div style={{float: 'right', width: '48%', maxWidth: '480px', marginLeft: '1.5rem', marginBottom: '1rem'}}>
-  <video controls style={{width: '100%', height: 'auto', display: 'block', borderRadius: '4px'}}>
+<div className="ck-video ck-video--16x9">
+  <video controls>
     <source src="https://ipfs.io/ipfs/QmaH8msKvgBjgsAYUSFegAo7JYCNUQUCeJCv6geZaFTfGC" type="video/mp4" />
     <source src="https://dweb.link/ipfs/QmaH8msKvgBjgsAYUSFegAo7JYCNUQUCeJCv6geZaFTfGC" type="video/mp4" />
     Your browser does not support the video tag.
   </video>
-  <p style={{fontSize: '0.85rem', color: '#666', marginTop: '0.5rem'}}>
+  <p className="ck-caption">
     <em>Compilation of on-camera witness interviews near UVU. Source: <a href="https://x.com/CharlotteLee_88/status/2069566053353463951">@CharlotteLee_88 on X</a>, 2026-06-23.</em>
   </p>
 </div>

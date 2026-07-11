@@ -15,7 +15,13 @@ keywords:
   - Kirk
   - Situation
 image: "/img/docusaurus-social-card.jpg"
+hide_table_of_contents: true
 ---
+
+{/* Full-bleed marker: activates the site-wide full-width + text-wrap
+    layout in custom.css (full width + overflow-safe side videos). Scoped
+    via CSS :has(). */}
+<div className="ck-full-bleed" />
 
 <a href="/" style={{display:'inline-block', marginBottom:'1rem', padding:'0.35rem 0.9rem', background:'#1a73e8', color:'#fff', borderRadius:'4px', textDecoration:'none', fontSize:'0.9rem'}}>← Home</a>
 
@@ -48,11 +54,10 @@ image: "/img/docusaurus-social-card.jpg"
 </div>
 </div>
 
-<div style={{margin: '1.5rem 0', width: '100%', aspectRatio: '16 / 9'}}>
+<div className="ck-video ck-video--16x9">
   <iframe
     src="https://www.youtube.com/embed/1RbDMiEReys"
     title="Fix the Charlie Kirk Situation"
-    style={{width: '100%', height: '100%', border: 0}}
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
     allowFullScreen
   />

@@ -13,7 +13,13 @@ keywords:
   - exploding microphone
   - skeptic counterargument
 image: "/img/docusaurus-social-card.jpg"
+hide_table_of_contents: true
 ---
+
+{/* Full-bleed marker: activates the site-wide full-width + text-wrap
+    layout in custom.css (full width + overflow-safe side videos). Scoped
+    via CSS :has(). */}
+<div className="ck-full-bleed" />
 
 <a href="/Mic/overview" style={{display:'inline-block', marginBottom:'1rem',
 padding:'0.35rem 0.9rem', background:'#1a73e8', color:'#fff',
@@ -23,13 +29,13 @@ borderRadius:'4px', textDecoration:'none', fontSize:'0.9rem'}}>← Mic — Explo
 
 This page presents a video demonstration of what a real **shaped charge** looks like when it detonates. The clip is notable because it was circulated by **skeptics of the [exploding mic theory](./overview)** — not its supporters. Their argument is a counterpoint to the theory documented across the rest of this section: if a shaped charge had detonated on [Charlie Kirk](/People/charlie-kirk), the event footage should show a large smoke and debris signature like the one in this demonstration, and (they argue) it does not. The material below is presented as opposing analysis to give readers both sides.
 
-<div style={{float: 'right', width: '48%', maxWidth: '480px', marginLeft: '1.5rem', marginBottom: '1rem'}}>
-  <video controls style={{width: '100%', height: 'auto', display: 'block', borderRadius: '4px'}}>
+<div className="ck-video ck-video--16x9">
+  <video controls>
     <source src="https://ipfs.io/ipfs/QmbDwwYuPmjPjL84jM2XCum7EFrtc33pjWBhMdKMFCdPXt" type="video/mp4" />
     <source src="https://dweb.link/ipfs/QmbDwwYuPmjPjL84jM2XCum7EFrtc33pjWBhMdKMFCdPXt" type="video/mp4" />
     Your browser does not support the video tag.
   </video>
-  <p style={{fontSize: '0.85rem', color: '#666', marginTop: '0.5rem'}}>
+  <p className="ck-caption">
     <em>Demonstration of a real shaped charge detonating, producing a large smoke cloud. Originally posted by <a href="https://x.com/Trillion0x/status/2070699686961520802">@Trillion0x on X</a> and quote-shared by <a href="https://x.com/troofevades/status/2071072788132118610">@troofevades</a>, June 2026.</em>
   </p>
 </div>

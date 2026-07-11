@@ -44,11 +44,14 @@
 }
 
 /* ============================================================
-   Full-bleed layout — ONLY the Suspects/Black_Clothing_Suspect page.
-   Every rule below is scoped with :has(.ck-full-bleed), which matches
-   solely the one doc content container that holds the invisible
-   <div className="ck-full-bleed" /> marker placed in that page's MDX.
-   No other page, and not the navbar or footer, is affected.
+   Full-bleed layout — SITE-WIDE across every Level 2 & Level 3 page.
+   Each such page carries an invisible <div className="ck-full-bleed" />
+   marker in its MDX plus `hide_table_of_contents: true` in frontmatter.
+   Every rule below is scoped with :has(.ck-full-bleed), so it applies
+   only to doc content containers that hold the marker — the navbar and
+   footer are never affected. Pages without the marker keep the default
+   capped-width Docusaurus layout. This pattern was first proven on the
+   Suspects/Black_Clothing_Suspect page and then rolled out site-wide.
    ============================================================ */
 
 /* The marker element renders nothing. */
@@ -66,9 +69,10 @@
 
 /* 2) Side videos float right with text wrapping around them, but must
    NEVER be wide enough to scroll off the right edge — at any zoom level.
-   The .ck-video / .ck-caption classes exist ONLY on this page, so bare
-   class selectors are already page-scoped and do NOT depend on :has() —
-   the overflow guard therefore works even in browsers that lack :has().
+   The .ck-video / .ck-caption classes are used only inside doc content on
+   pages that opt into videos, so bare class selectors are effectively
+   scoped to article bodies and do NOT depend on :has() — the overflow
+   guard therefore works even in browsers that lack :has().
    The figure width is the smaller of 480px and 40% of the content column,
    so it shrinks with the viewport and can never exceed its column. */
 .ck-video {
@@ -95,6 +99,18 @@
   width: 100%;
   max-width: 100%;
   height: auto;
+}
+
+/* YouTube / X embeds use an <iframe> instead of a <video>. Give it the same
+   fill-the-figure behavior, and a 16:9 box so it never collapses to zero
+   height inside the float. */
+.ck-video iframe {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  aspect-ratio: 16 / 9;
+  height: auto;
+  border: 0;
 }
 
 .ck-video .ck-caption {

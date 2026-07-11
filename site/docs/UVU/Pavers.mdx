@@ -14,7 +14,13 @@ keywords:
   - crime scene paved over
   - cover-up
 image: "/img/docusaurus-social-card.jpg"
+hide_table_of_contents: true
 ---
+
+{/* Full-bleed marker: activates the site-wide full-width + text-wrap
+    layout in custom.css (full width + overflow-safe side videos). Scoped
+    via CSS :has(). */}
+<div className="ck-full-bleed" />
 
 <a href="/UVU/overview" style={{display:'inline-block', marginBottom:'1rem',
 padding:'0.35rem 0.9rem', background:'#1a73e8', color:'#fff',
@@ -30,13 +36,13 @@ The post had 1,919 likes, 683 retweets, 463 bookmarks, and 93,145 views at the t
 
 ## The Twitter post text
 
-<div style={{float: 'right', width: '48%', maxWidth: '480px', marginLeft: '1.5rem', marginBottom: '1rem'}}>
-  <video controls style={{width: '100%', height: 'auto', display: 'block', borderRadius: '4px'}}>
+<div className="ck-video ck-video--16x9">
+  <video controls>
     <source src="https://ipfs.io/ipfs/QmRroFnN6ku7scJcNZXgTprhf8723Zic5oiBiRNogqHTRm" type="video/mp4" />
     <source src="https://dweb.link/ipfs/QmRroFnN6ku7scJcNZXgTprhf8723Zic5oiBiRNogqHTRm" type="video/mp4" />
     Your browser does not support the video tag.
   </video>
-  <p style={{fontSize: '0.85rem', color: '#666', marginTop: '0.5rem'}}>
+  <p className="ck-caption">
     <em>Dan Merrell describes the pave-over call he received and what the on-site coordinators reportedly told him. Source: <a href="https://x.com/ShadowofEzra/status/2057560145379708956">@ShadowofEzra on X</a>, 2026-05-21. Pinned to IPFS at CID <code>QmRroFnN6ku7scJcNZXgTprhf8723Zic5oiBiRNogqHTRm</code>.</em>
   </p>
 </div>

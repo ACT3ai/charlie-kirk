@@ -9,7 +9,13 @@ keywords:
   - Israel donor pressure
   - foreign policy
 image: "/img/docusaurus-social-card.jpg"
+hide_table_of_contents: true
 ---
+
+{/* Full-bleed marker: activates the site-wide full-width + text-wrap
+    layout in custom.css (full width + overflow-safe side videos). Scoped
+    via CSS :has(). */}
+<div className="ck-full-bleed" />
 
 <a href="/" style={{display:'inline-block', marginBottom:'1rem',
 padding:'0.35rem 0.9rem', background:'#1a73e8', color:'#fff',
@@ -56,16 +62,18 @@ reinterpretations. **Motive is not proof** for any living person or institution.
 
 ## The Big Motivation to Kill Charlie Kirk:
 
-<div style={{width: '65%', maxWidth: '65%', margin: '0 auto 1.5rem'}}>
-  <video controls style={{width: '100%', height: 'auto', aspectRatio: '16 / 9', display: 'block', borderRadius: '4px'}}>
+<div className="ck-video ck-video--16x9">
+  <video controls>
     <source src="https://ipfs.io/ipfs/QmS64aK5A7BfPP3C645FLBSQRdXcMCyCtCxddAQixoQ22K" type="video/mp4" />
     <source src="https://dweb.link/ipfs/QmS64aK5A7BfPP3C645FLBSQRdXcMCyCtCxddAQixoQ22K" type="video/mp4" />
     Your browser does not support the video tag.
   </video>
-  <p style={{fontSize: '0.85rem', color: '#666', marginTop: '0.5rem', textAlign: 'center'}}>
+  <p className="ck-caption">
     <em>"Chain of Evil" — tracing the network of donors, influence operations, and foreign intelligence interests behind the case for the Israel/Mossad theory. Hosted on IPFS at CID <code>QmS64aK5A7BfPP3C645FLBSQRdXcMCyCtCxddAQixoQ22K</code> and served via public gateways.</em>
   </p>
 </div>
+
+<div style={{clear: 'both'}} />
 
 ## Laws (Charlie Kirk)
 

@@ -14,7 +14,13 @@ keywords:
   - Baron
   - Coleman
 image: "/img/docusaurus-social-card.jpg"
+hide_table_of_contents: true
 ---
+
+{/* Full-bleed marker: activates the site-wide full-width + text-wrap
+    layout in custom.css (full width + overflow-safe side videos). Scoped
+    via CSS :has(). */}
+<div className="ck-full-bleed" />
 
 <a href="/Influencers/overview" style={{display:'inline-block', marginBottom:'1rem',
 padding:'0.35rem 0.9rem', background:'#1a73e8', color:'#fff',
@@ -22,13 +28,13 @@ borderRadius:'4px', textDecoration:'none', fontSize:'0.9rem'}}>← Influencers</
 
 # Baron Coleman
 
-<div style={{float: 'right', width: '48%', maxWidth: '480px', marginLeft: '1.5rem', marginBottom: '1rem'}}>
-  <video controls style={{width: '100%', height: 'auto', display: 'block', borderRadius: '4px'}}>
+<div className="ck-video ck-video--16x9">
+  <video controls>
     <source src="https://ipfs.io/ipfs/QmYfryta9zQRs6W6qCctfvz4MZjo3p8x7wzCSEVR8mK6KJ" type="video/mp4" />
     <source src="https://dweb.link/ipfs/QmYfryta9zQRs6W6qCctfvz4MZjo3p8x7wzCSEVR8mK6KJ" type="video/mp4" />
     Your browser does not support the video tag.
   </video>
-  <p style={{fontSize: '0.85rem', color: '#666', marginTop: '0.5rem'}}>
+  <p className="ck-caption">
     <em>Baron Coleman argues, in this clip, that the evidence points to a multi-agency cover-up allegedly framing [Tyler Robinson](/People/tyler-robinson) — presented as his reported analysis, not a finding of fact. Source: <a href="https://x.com/IGraceAshford/status/2072021982296551765">clip shared on X</a>. Hosted on IPFS and served via public gateways.</em>
   </p>
 </div>

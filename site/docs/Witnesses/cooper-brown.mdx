@@ -12,7 +12,13 @@ keywords:
   - Cooper Brown
   - Fox News
 image: "/img/docusaurus-social-card.jpg"
+hide_table_of_contents: true
 ---
+
+{/* Full-bleed marker: activates the site-wide full-width + text-wrap
+    layout in custom.css (full width + overflow-safe side videos). Scoped
+    via CSS :has(). */}
+<div className="ck-full-bleed" />
 
 <a href="/Witnesses/overview" style={{display:'inline-block', marginBottom:'1rem',
 padding:'0.35rem 0.9rem', background:'#1a73e8', color:'#fff',
@@ -26,13 +32,13 @@ borderRadius:'4px', textDecoration:'none', fontSize:'0.9rem'}}>← Witnesses</a>
 
 **Source post:** [@DiligentDenizen on X · 2025-10-09](https://x.com/DiligentDenizen/status/1976419242666021122) — 708K views, 10K likes, 2.4K reposts.
 
-<div style={{float: 'right', width: '48%', maxWidth: '480px', marginLeft: '1.5rem', marginBottom: '1rem'}}>
-  <video controls style={{width: '100%', height: 'auto', display: 'block', borderRadius: '4px'}}>
+<div className="ck-video ck-video--16x9">
+  <video controls>
     <source src="https://ipfs.io/ipfs/Qmf13kfzZWzZZdNfpNjiN9HhxN1VCGFvZb7ViGJYtwTHAT" type="video/mp4" />
     <source src="https://dweb.link/ipfs/Qmf13kfzZWzZZdNfpNjiN9HhxN1VCGFvZb7ViGJYtwTHAT" type="video/mp4" />
     Your browser does not support the video tag.
   </video>
-  <p style={{fontSize: '0.85rem', color: '#666', marginTop: '0.5rem'}}>
+  <p className="ck-caption">
     <em>Clip circulated with the identification, including Fox News footage naming Cooper Brown as an "event volunteer." Source: <a href="https://x.com/DiligentDenizen/status/1976419242666021122">@DiligentDenizen on X</a>, 2025-10-09.</em>
   </p>
 </div>

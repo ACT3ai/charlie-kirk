@@ -12,7 +12,13 @@ keywords:
   - shot in the heart
   - shaped charge
 image: "/img/docusaurus-social-card.jpg"
+hide_table_of_contents: true
 ---
+
+{/* Full-bleed marker: activates the site-wide full-width + text-wrap
+    layout in custom.css (full width + overflow-safe side videos). Scoped
+    via CSS :has(). */}
+<div className="ck-full-bleed" />
 
 <a href="/Witnesses/overview" style={{display:'inline-block', marginBottom:'1rem',
 padding:'0.35rem 0.9rem', background:'#1a73e8', color:'#fff',
@@ -31,13 +37,13 @@ left open for the reader.
 
 **Source clip:** [@MuppetMasher on X · 2026-06-23](https://x.com/MuppetMasher/status/2069350461573046382)
 
-<div style={{float: 'right', width: '48%', maxWidth: '480px', marginLeft: '1.5rem', marginBottom: '1rem'}}>
-  <video controls style={{width: '100%', height: 'auto', display: 'block', borderRadius: '4px'}}>
+<div className="ck-video ck-video--16x9">
+  <video controls>
     <source src="https://ipfs.io/ipfs/QmbXGTeP3o1grnNNm5d5cMNsYPWeoXr4TNgkqyVS1U9m8q" type="video/mp4" />
     <source src="https://dweb.link/ipfs/QmbXGTeP3o1grnNNm5d5cMNsYPWeoXr4TNgkqyVS1U9m8q" type="video/mp4" />
     Your browser does not support the video tag.
   </video>
-  <p style={{fontSize: '0.85rem', color: '#666', marginTop: '0.5rem'}}>
+  <p className="ck-caption">
     <em>Compilation of on-camera witness interviews recorded near UVU, including a retired police officer's account. Source: <a href="https://x.com/MuppetMasher/status/2069350461573046382">@MuppetMasher on X</a>, 2026-06-23.</em>
   </p>
 </div>

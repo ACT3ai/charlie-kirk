@@ -17,7 +17,13 @@ keywords:
   - Patel
   - Valhalla
 image: "/img/docusaurus-social-card.jpg"
+hide_table_of_contents: true
 ---
+
+{/* Full-bleed marker: activates the site-wide full-width + text-wrap
+    layout in custom.css (full width + overflow-safe side videos). Scoped
+    via CSS :has(). */}
+<div className="ck-full-bleed" />
 
 <a href="/Videos/overview" style={{display:'inline-block', marginBottom:'1rem',
 padding:'0.35rem 0.9rem', background:'#1a73e8', color:'#fff',
@@ -25,14 +31,13 @@ borderRadius:'4px', textDecoration:'none', fontSize:'0.9rem'}}>← Videos</a>
 
 # Buckley Carlson Dismantles Kash Patel Over the "Valhalla" Comment
 
-<div style={{float: 'right', width: '48%', maxWidth: '480px', marginLeft: '1.5rem', marginBottom: '1rem'}}>
-  <video controls style={{maxWidth: '50vw', maxHeight: '50vh', display: 'block', margin: '1rem auto'}}>
-    <source src="https://ipfs.io/ipfs/QmPqpX8PjTgsPJvdUVn8MmPFBiZ75XxUPfXr8YjWDwjtFq" type="video/mp4" />
+<div className="ck-video ck-video--16x9">
+  <video controls>
     <source src="https://ipfs.io/ipfs/QmPqpX8PjTgsPJvdUVn8MmPFBiZ75XxUPfXr8YjWDwjtFq" type="video/mp4" />
     <source src="https://dweb.link/ipfs/QmPqpX8PjTgsPJvdUVn8MmPFBiZ75XxUPfXr8YjWDwjtFq" type="video/mp4" />
     Your browser does not support the video tag.
   </video>
-  <p style={{fontSize: '0.85rem', color: '#666', marginTop: '0.5rem'}}>
+  <p className="ck-caption">
     <em>Buckley Carlson analyzes Kash Patel's bizarre "Valhalla" comment and the FBI press conference. Source: <a href="https://x.com/FurkanGozukara/status/2046380775579209982?s=20">@FurkanGozukara on X</a>, April 21, 2026.</em>
   </p>
 </div>

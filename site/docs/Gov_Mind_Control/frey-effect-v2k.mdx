@@ -12,7 +12,13 @@ keywords:
   - directed energy
   - Charlie Kirk
 image: "/img/docusaurus-social-card.jpg"
+hide_table_of_contents: true
 ---
+
+{/* Full-bleed marker: activates the site-wide full-width + text-wrap
+    layout in custom.css (full width + overflow-safe side videos). Scoped
+    via CSS :has(). */}
+<div className="ck-full-bleed" />
 
 <a href="/Gov_Mind_Control/overview" style={{display:'inline-block', marginBottom:'1rem',
 padding:'0.35rem 0.9rem', background:'#1a73e8', color:'#fff',
@@ -22,13 +28,13 @@ borderRadius:'4px', textDecoration:'none', fontSize:'0.9rem'}}>
 
 # Frey Effect / V2K (Microwave Hearing)
 
-<div style={{float: 'right', width: '48%', maxWidth: '480px', marginLeft: '1.5rem', marginBottom: '1rem'}}>
-  <video controls style={{width: '100%', height: 'auto', display: 'block', borderRadius: '4px'}}>
+<div className="ck-video ck-video--16x9">
+  <video controls>
     <source src="https://ipfs.io/ipfs/Qmbmk5C2fTbsxtWv4nnPNjsorjy9DRShPi811ZikJ8DvB2" type="video/mp4" />
     <source src="https://dweb.link/ipfs/Qmbmk5C2fTbsxtWv4nnPNjsorjy9DRShPi811ZikJ8DvB2" type="video/mp4" />
     Your browser does not support the video tag.
   </video>
-  <p style={{fontSize: '0.85rem', color: '#666', marginTop: '0.5rem'}}>
+  <p className="ck-caption">
     <em>Live demonstration of beamed, head-localized audio, billed as a demo of CIA / DARPA Project Pandora microwave voice-to-skull technology. Source: <a href="https://x.com/UAPLuigi/status/2071074071404798401">@UAPLuigi on X</a>, June 28, 2026.</em>
   </p>
 </div>

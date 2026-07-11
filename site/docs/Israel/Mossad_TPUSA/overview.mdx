@@ -14,7 +14,13 @@ keywords:
   - Israel connection
   - Joshua Peterson
 image: "/img/docusaurus-social-card.jpg"
+hide_table_of_contents: true
 ---
+
+{/* Full-bleed marker: activates the site-wide full-width + text-wrap
+    layout in custom.css (full width + overflow-safe side videos). Scoped
+    via CSS :has(). */}
+<div className="ck-full-bleed" />
 
 <a href="/Israel/overview" style={{display:'inline-block', marginBottom:'1rem', padding:'0.35rem 0.9rem', background:'#1a73e8', color:'#fff', borderRadius:'4px', textDecoration:'none', fontSize:'0.9rem'}}>← Israel</a>
 
@@ -34,13 +40,13 @@ This reporting comes from **Project Constitution** ([@ProjectConstitu](https://x
 
 ## The reported allegation
 
-<div style={{float:'right', width:'48%', maxWidth:'480px', marginLeft:'1.5rem', marginBottom:'1rem'}}>
-  <video controls style={{width:'100%', height:'auto', display:'block', borderRadius:'4px'}}>
+<div className="ck-video ck-video--16x9">
+  <video controls>
     <source src="https://ipfs.io/ipfs/QmcsVH1Qt1MomvqkB2giLRCtNWQ4tEC3PnEnK5BKnyLZX6" type="video/mp4" />
     <source src="https://dweb.link/ipfs/QmcsVH1Qt1MomvqkB2giLRCtNWQ4tEC3PnEnK5BKnyLZX6" type="video/mp4" />
     Your browser does not support the video tag.
   </video>
-  <p style={{fontSize:'0.85rem', color:'#666', marginTop:'0.5rem'}}>
+  <p className="ck-caption">
     <em>Joshua Peterson video testimony. Published by <strong>Project Constitution</strong> (<a href="https://x.com/ProjectConstitu">@ProjectConstitu</a>). Source: <a href="https://x.com/ProjectConstitu/status/2070467635578294609">@ProjectConstitu on X</a>, 2026-06-26. IPFS CID <code>QmcsVH1Qt1MomvqkB2giLRCtNWQ4tEC3PnEnK5BKnyLZX6</code>.</em>
   </p>
 </div>
@@ -65,13 +71,13 @@ The phrase **"Our Greatest Ally"** is a euphemism that, in this context, is wide
 
 ## Video testimony — Joshua Peterson
 
-<div style={{float:'right', width:'48%', maxWidth:'480px', marginLeft:'1.5rem', marginBottom:'1rem'}}>
-  <video controls style={{width:'100%', height:'auto', display:'block', borderRadius:'4px'}}>
+<div className="ck-video ck-video--16x9">
+  <video controls>
     <source src="https://ipfs.io/ipfs/QmcsVH1Qt1MomvqkB2giLRCtNWQ4tEC3PnEnK5BKnyLZX6" type="video/mp4" />
     <source src="https://dweb.link/ipfs/QmcsVH1Qt1MomvqkB2giLRCtNWQ4tEC3PnEnK5BKnyLZX6" type="video/mp4" />
     Your browser does not support the video tag.
   </video>
-  <p style={{fontSize:'0.85rem', color:'#666', marginTop:'0.5rem'}}>
+  <p className="ck-caption">
     <em>Joshua Peterson video testimony. Reporting and video published by <strong>Project Constitution</strong> (<a href="https://x.com/ProjectConstitu">@ProjectConstitu</a>). Source post: <a href="https://x.com/ProjectConstitu/status/2070467635578294609">@ProjectConstitu on X</a>, 2026-06-26. Hosted on IPFS — CID <code>QmcsVH1Qt1MomvqkB2giLRCtNWQ4tEC3PnEnK5BKnyLZX6</code>.</em>
   </p>
 </div>

@@ -10,7 +10,13 @@ keywords:
   - Astrid Tuminez
   - after assassination
 image: "/img/docusaurus-social-card.jpg"
+hide_table_of_contents: true
 ---
+
+{/* Full-bleed marker: activates the site-wide full-width + text-wrap
+    layout in custom.css (full width + overflow-safe side videos). Scoped
+    via CSS :has(). */}
+<div className="ck-full-bleed" />
 
 <a href="/After/overview" style={{display:'inline-block', marginBottom:'1rem',
 padding:'0.35rem 0.9rem', background:'#1a73e8', color:'#fff',
@@ -46,13 +52,15 @@ Brooksby facilitated the public [Tyler Robinson](/People/tyler-robinson) surrend
 - Commentary ties resignation to [surrender timeline disputes](./Sept_11_Surrender_And_Custody) and [withheld WCSO video](/CoverUp/Sheriff_Video_Withheld).
 - Profile: [People/nate-brooksby](/People/nate-brooksby) · [Law Enforcement resignations](/Law_Enforcement/official-resignations)
 
-<div style={{maxWidth: '480px', marginBottom: '1rem'}}>
-  <video controls style={{maxWidth: '100%', display: 'block'}}>
+<div className="ck-video ck-video--16x9">
+  <video controls>
     <source src="https://ipfs.io/ipfs/Qmb49X85Y7wRdMEi7EgvEvjN3A8rdpZVvLfu2CuiSZwbwR" type="video/mp4" />
     <source src="https://dweb.link/ipfs/Qmb49X85Y7wRdMEi7EgvEvjN3A8rdpZVvLfu2CuiSZwbwR" type="video/mp4" />
+    Your browser does not support the video tag.
   </video>
-  <p style={{fontSize: '0.85rem', color: '#666'}}><em>Brooksby surrender account — <a href="https://x.com/SteveCameronPr1/status/2045116771431321829">@SteveCameronPr1</a></em></p>
+  <p className="ck-caption"><em>Brooksby surrender account — <a href="https://x.com/SteveCameronPr1/status/2045116771431321829">@SteveCameronPr1</a></em></p>
 </div>
+<div style={{clear: 'both'}} />
 
 ## UVU administration
 

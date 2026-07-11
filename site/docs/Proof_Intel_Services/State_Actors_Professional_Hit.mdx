@@ -9,7 +9,13 @@ keywords:
   - professional hit
   - Benny Johnson
 image: "/img/docusaurus-social-card.jpg"
+hide_table_of_contents: true
 ---
+
+{/* Full-bleed marker: activates the site-wide full-width + text-wrap
+    layout in custom.css (full width + overflow-safe side videos). Scoped
+    via CSS :has(). */}
+<div className="ck-full-bleed" />
 
 <a href="/Proof_Intel_Services/overview" style={{display:'inline-block', marginBottom:'1rem',
 padding:'0.35rem 0.9rem', background:'#1a73e8', color:'#fff',
@@ -22,12 +28,13 @@ aftermath management — not a spontaneous campus shooting. The most cited **on-
 in this bucket is commentator **[Benny Johnson](/Influencers/podcasts-benny-johnson)**, who says he is **"very, very close to Charlie and his team."**
 We present **reported statements** only; we do **not** identify which state or agency.
 
-<div style={{float:'right', width:'48%', marginLeft:'1.5rem', marginBottom:'1rem'}}>
-  <video controls style={{width:'100%'}}>
+<div className="ck-video ck-video--16x9">
+  <video controls>
     <source src="https://ipfs.io/ipfs/QmWnQXa9n7UQWEtGHVHMNVr8kmN7gYR9brubAPSj3xR4uD" type="video/mp4" />
     <source src="https://dweb.link/ipfs/QmWnQXa9n7UQWEtGHVHMNVr8kmN7gYR9brubAPSj3xR4uD" type="video/mp4" />
+    Your browser does not support the video tag.
   </video>
-  <p style={{fontSize:'0.85rem', color:'#666'}}>
+  <p className="ck-caption">
     Benny Johnson remarks, via <a href="https://x.com/CatQuestionsAll/status/2071736376215920842">@CatQuestionsAll</a>, June 29, 2026. IPFS CID QmWnQXa9n7UQWEtGHVHMNVr8kmN7gYR9brubAPSj3xR4uD.
   </p>
 </div>

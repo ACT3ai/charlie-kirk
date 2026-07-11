@@ -15,7 +15,13 @@ keywords:
   - AES
   - Elbit Systems
 image: "/img/docusaurus-social-card.jpg"
+hide_table_of_contents: true
 ---
+
+{/* Full-bleed marker: activates the site-wide full-width + text-wrap
+    layout in custom.css (full width + overflow-safe side videos). Scoped
+    via CSS :has(). */}
+<div className="ck-full-bleed" />
 
 <a href="/Mic/overview" style={{display:'inline-block', marginBottom:'1rem',
 padding:'0.35rem 0.9rem', background:'#1a73e8', color:'#fff',
@@ -23,13 +29,13 @@ borderRadius:'4px', textDecoration:'none', fontSize:'0.9rem'}}>← Mic — Explo
 
 # Stew Peters — Broke the AES / Exploding-Mic Connection
 
-<div style={{float: 'right', width: '48%', maxWidth: '480px', marginLeft: '1.5rem', marginBottom: '1rem'}}>
-  <video controls style={{width: '100%', height: 'auto', display: 'block', borderRadius: '4px'}}>
+<div className="ck-video ck-video--16x9">
+  <video controls>
     <source src="https://ipfs.io/ipfs/QmTUAdM2AELmSag6in7A8AypCsSw6NKSQqFJj15gF28ZAj" type="video/mp4" />
     <source src="https://dweb.link/ipfs/QmTUAdM2AELmSag6in7A8AypCsSw6NKSQqFJj15gF28ZAj" type="video/mp4" />
     Your browser does not support the video tag.
   </video>
-  <p style={{fontSize: '0.85rem', color: '#666', marginTop: '0.5rem'}}>
+  <p className="ck-caption">
     <em>Stew Peters lays out his exploding-mic / AES / Elbit Systems thesis. Source: <a href="https://x.com/realstewpeters/status/2069997980002726099">@realstewpeters on X</a>, June 25, 2026.</em>
   </p>
 </div>

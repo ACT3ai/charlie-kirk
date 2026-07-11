@@ -11,7 +11,13 @@ keywords:
   - Nick
   - Witness
 image: "/img/docusaurus-social-card.jpg"
+hide_table_of_contents: true
 ---
+
+{/* Full-bleed marker: activates the site-wide full-width + text-wrap
+    layout in custom.css (full width + overflow-safe side videos). Scoped
+    via CSS :has(). */}
+<div className="ck-full-bleed" />
 
 <a href="/Witnesses/overview" style={{display:'inline-block', marginBottom:'1rem',
 padding:'0.35rem 0.9rem', background:'#1a73e8', color:'#fff',
@@ -25,14 +31,13 @@ A young man identified only as **Nick** is one of the on-the-ground witnesses to
 
 **Source:** [@MuppetMasher on X · 2026-05-11](https://x.com/MuppetMasher/status/2053805778952417528)
 
-<div style={{float: 'right', width: '48%', maxWidth: '480px', marginLeft: '1.5rem', marginBottom: '1rem'}}>
-  <video controls style={{width: '100%', height: 'auto', display: 'block', borderRadius: '4px'}}>
-    <source src="https://ipfs.io/ipfs/QmNjgg3Trjfiq4YEK4XjDur9YyJF1xk8nhAkeCkXMoo41Y" type="video/mp4" />
+<div className="ck-video">
+  <video controls>
     <source src="https://ipfs.io/ipfs/QmNjgg3Trjfiq4YEK4XjDur9YyJF1xk8nhAkeCkXMoo41Y" type="video/mp4" />
     <source src="https://dweb.link/ipfs/QmNjgg3Trjfiq4YEK4XjDur9YyJF1xk8nhAkeCkXMoo41Y" type="video/mp4" />
     Your browser does not support the video tag.
   </video>
-  <p style={{fontSize: '0.85rem', color: '#666', marginTop: '0.5rem'}}>
+  <p className="ck-caption">
     <em>Witness "Nick" interviewed at UVU after the September 10, 2025 shooting. Source: <a href="https://x.com/MuppetMasher/status/2053805778952417528">@MuppetMasher on X</a>, 2026-05-11.</em>
   </p>
 </div>

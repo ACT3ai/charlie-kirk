@@ -14,7 +14,13 @@ keywords:
   - microphone explosion
   - exploding mic theory
 image: "/img/docusaurus-social-card.jpg"
+hide_table_of_contents: true
 ---
+
+{/* Full-bleed marker: activates the site-wide full-width + text-wrap
+    layout in custom.css (full width + overflow-safe side videos). Scoped
+    via CSS :has(). */}
+<div className="ck-full-bleed" />
 
 <a href="/Mic/overview" style={{display:'inline-block', marginBottom:'1rem',
 padding:'0.35rem 0.9rem', background:'#1a73e8', color:'#fff',
@@ -30,13 +36,13 @@ These photos are included here because independent analysts examining them have 
 
 On June 26, 2026, citizen journalist **@DiligentDenizen** posted a short video montage of the [Candace Owens](/People/candace-owens) SUV photos with a new framing. The post reads: *"@RealCandaceO drops new photos from Charlie Kirk assassination that reveals apparent shattered tempered glass (like from a RODE microphone) all over the floor of the SUV that carried him to the hospital. TPUSA hasn't addressed this anomaly. How'd that glass get there?"*
 
-<div style={{float: 'right', width: '48%', maxWidth: '480px', marginLeft: '1.5rem', marginBottom: '1rem'}}>
-  <video controls style={{width: '100%', height: 'auto', display: 'block', borderRadius: '4px'}}>
+<div className="ck-video ck-video--16x9">
+  <video controls>
     <source src="https://ipfs.io/ipfs/QmQ8y9mRxxJfGq8VgGb3LN2aet5MnHnAzLpHaoDobDWeLs" type="video/mp4" />
     <source src="https://dweb.link/ipfs/QmQ8y9mRxxJfGq8VgGb3LN2aet5MnHnAzLpHaoDobDWeLs" type="video/mp4" />
     Your browser does not support the video tag.
   </video>
-  <p style={{fontSize: '0.85rem', color: '#666', marginTop: '0.5rem'}}>
+  <p className="ck-caption">
     <em>12-second montage of the Candace Owens SUV photos, captioned as showing "shattered tempered glass" on the SUV floor. The clip has no spoken audio. Source: <a href="https://x.com/DiligentDenizen/status/2070615710003589174?s=20">@DiligentDenizen on X</a>, June 26, 2026.</em>
   </p>
 </div>

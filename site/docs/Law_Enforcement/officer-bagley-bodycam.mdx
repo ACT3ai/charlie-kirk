@@ -11,7 +11,13 @@ keywords:
   - UVU rooftop
   - Losee Center
 image: "/img/docusaurus-social-card.jpg"
+hide_table_of_contents: true
 ---
+
+{/* Full-bleed marker: activates the site-wide full-width + text-wrap
+    layout in custom.css (full width + overflow-safe side videos). Scoped
+    via CSS :has(). */}
+<div className="ck-full-bleed" />
 
 <a href="/Law_Enforcement/overview" style={{display:'inline-block', marginBottom:'1rem',
 padding:'0.35rem 0.9rem', background:'#1a73e8', color:'#fff',
@@ -21,13 +27,13 @@ borderRadius:'4px', textDecoration:'none', fontSize:'0.9rem'}}>
 
 # Officer Bagley — Body Cam Died on Roof
 
-<div style={{float: 'right', width: '48%', maxWidth: '480px', marginLeft: '1.5rem', marginBottom: '1rem'}}>
-  <video controls style={{width: '100%', height: 'auto', display: 'block', borderRadius: '4px'}}>
+<div className="ck-video ck-video--16x9">
+  <video controls>
     <source src="https://ipfs.io/ipfs/QmbNQzjHMfZpLqKL7uVQxstB7Bw6befeXkQzGdsXNWY9GY" type="video/mp4" />
     <source src="https://dweb.link/ipfs/QmbNQzjHMfZpLqKL7uVQxstB7Bw6befeXkQzGdsXNWY9GY" type="video/mp4" />
     Your browser does not support the video tag.
   </video>
-  <p style={{fontSize: '0.85rem', color: '#666', marginTop: '0.5rem'}}>
+  <p className="ck-caption">
     <em>Clip narrating reported testimony about Officer Bagley's body cam ending while he was still on the roof. Source: <a href="https://x.com/JOKAQARMY1/status/2074257725697970542">@JOKAQARMY1 on X</a>, July 6, 2026.</em>
   </p>
 </div>

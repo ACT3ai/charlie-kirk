@@ -13,7 +13,13 @@ keywords:
   - foreign influence
   - Israel
 image: "/img/docusaurus-social-card.jpg"
+hide_table_of_contents: true
 ---
+
+{/* Full-bleed marker: activates the site-wide full-width + text-wrap
+    layout in custom.css (full width + overflow-safe side videos). Scoped
+    via CSS :has(). */}
+<div className="ck-full-bleed" />
 
 <a href="/" style={{display:'inline-block', marginBottom:'1rem',
 padding:'0.35rem 0.9rem', background:'#1a73e8', color:'#fff',
@@ -87,16 +93,18 @@ separate Netanyahu-bodyguard allegation about [Brian Harpole](/Security_Team/bri
 
 ## Video: Russell Brand on Charlie Kirk and Israel
 
-<div style={{maxWidth: '720px', margin: '1.5rem auto'}}>
-  <video controls style={{width:'100%', height:'auto', display:'block', borderRadius:'4px'}}>
+<div className="ck-video ck-video--16x9">
+  <video controls>
     <source src="https://ipfs.io/ipfs/Qma3dQgv74Lr1W6yipQU8SUZYY7WNch7P18XQ9ah15rTP2" type="video/mp4" />
     <source src="https://dweb.link/ipfs/Qma3dQgv74Lr1W6yipQU8SUZYY7WNch7P18XQ9ah15rTP2" type="video/mp4" />
     Your browser does not support the video tag.
   </video>
-  <p style={{fontSize:'0.85rem', color:'#666', marginTop:'0.5rem', textAlign:'center'}}>
+  <p className="ck-caption">
     <em>Russell Brand — 4:45 monologue (detail page: <a href="./Russell_Brand_Cabinet_Claims">Russell Brand Cabinet Claims</a>). Source: <a href="https://x.com/rustyrockets/status/2055025567255191600">@rustyrockets on X</a>, 2026-05-14. IPFS CID <code>Qma3dQgv74Lr1W6yipQU8SUZYY7WNch7P18XQ9ah15rTP2</code>.</em>
   </p>
 </div>
+
+<div style={{clear: 'both'}} />
 
 ## Laws (Charlie Kirk)
 

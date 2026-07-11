@@ -13,7 +13,13 @@ keywords:
   - Turning Point USA
   - Israel
 image: "/img/docusaurus-social-card.jpg"
+hide_table_of_contents: true
 ---
+
+{/* Full-bleed marker: activates the site-wide full-width + text-wrap
+    layout in custom.css (full width + overflow-safe side videos). Scoped
+    via CSS :has(). */}
+<div className="ck-full-bleed" />
 
 <a href="/Israel/overview" style={{display:'inline-block', marginBottom:'1rem',
 padding:'0.35rem 0.9rem', background:'#1a73e8', color:'#fff',
@@ -25,14 +31,13 @@ This page documents an allegation made by commentator [Stew Peters](https://en.w
 
 ## Source
 
-<div style={{float: 'right', width: '48%', maxWidth: '480px', marginLeft: '1.5rem', marginBottom: '1rem'}}>
-  <video controls style={{width: '100%', height: 'auto', display: 'block', borderRadius: '4px'}}>
-    <source src="https://ipfs.io/ipfs/QmRctS1DC9ZU8U9qzy9FVmCGmLDsCWKgNMgcapzcK5SsSQ" type="video/mp4" />
+<div className="ck-video ck-video--16x9">
+  <video controls>
     <source src="https://ipfs.io/ipfs/QmRctS1DC9ZU8U9qzy9FVmCGmLDsCWKgNMgcapzcK5SsSQ" type="video/mp4" />
     <source src="https://dweb.link/ipfs/QmRctS1DC9ZU8U9qzy9FVmCGmLDsCWKgNMgcapzcK5SsSQ" type="video/mp4" />
     Your browser does not support the video tag.
   </video>
-  <p style={{fontSize: '0.85rem', color: '#666', marginTop: '0.5rem'}}>
+  <p className="ck-caption">
     <em>Stew Peters segment amplified by @FurkanGozukara — 56-second clip. The original Stew Peters program from which the clip was excerpted is not identified in the X post. Source: <a href="https://x.com/FurkanGozukara/status/2055445490003489041">@FurkanGozukara on X</a>, 2026-05-16. Video hosted on IPFS — CID <code>QmRctS1DC9ZU8U9qzy9FVmCGmLDsCWKgNMgcapzcK5SsSQ</code>.</em>
   </p>
 </div>
@@ -44,6 +49,8 @@ The X post from @FurkanGozukara (a 270K-follower account focused on AI tutorials
 > — <a href="https://x.com/FurkanGozukara/status/2055445490003489041">@FurkanGozukara on X</a>, 2026-05-16 (1,203 likes, 497 reposts, 11,630 views as of capture)
 
 The framing language ("BOMBSHELL", "confirms", "massive Zionist conspiracy") is the X poster's framing — not Peters' own. The underlying allegations originate with Peters in the attached video.
+
+<div style={{clear: 'both'}} />
 
 ## Transcript of Peters' Segment
 

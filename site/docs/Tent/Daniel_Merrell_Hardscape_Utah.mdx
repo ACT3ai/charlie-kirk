@@ -9,7 +9,13 @@ keywords:
   - Hardscape Utah
   - paving
 image: "/img/docusaurus-social-card.jpg"
+hide_table_of_contents: true
 ---
+
+{/* Full-bleed marker: activates the site-wide full-width + text-wrap
+    layout in custom.css (full width + overflow-safe side videos). Scoped
+    via CSS :has(). */}
+<div className="ck-full-bleed" />
 
 <a href="/Tent/overview" style={{display:'inline-block', marginBottom:'1rem',
 padding:'0.35rem 0.9rem', background:'#1a73e8', color:'#fff',
@@ -24,12 +30,13 @@ This page summarizes Merrell's **first-person statements** about what on-site co
 reportedly told him. We do **not** assert as fact that the Utah governor or FBI ordered the
 pave-over, and we do **not** accuse Merrell of wrongdoing.
 
-<div style={{float:'right', width:'48%', marginLeft:'1.5rem', marginBottom:'1rem'}}>
-  <video controls style={{width:'100%'}}>
+<div className="ck-video ck-video--16x9">
+  <video controls>
     <source src="https://ipfs.io/ipfs/QmRroFnN6ku7scJcNZXgTprhf8723Zic5oiBiRNogqHTRm" type="video/mp4" />
     <source src="https://dweb.link/ipfs/QmRroFnN6ku7scJcNZXgTprhf8723Zic5oiBiRNogqHTRm" type="video/mp4" />
+    Your browser does not support the video tag.
   </video>
-  <p style={{fontSize:'0.85rem', color:'#666'}}>
+  <p className="ck-caption">
     Merrell on-camera account. Source: @ShadowofEzra, IPFS CID QmRroFnN6ku7scJcNZXgTprhf8723Zic5oiBiRNogqHTRm.
   </p>
 </div>

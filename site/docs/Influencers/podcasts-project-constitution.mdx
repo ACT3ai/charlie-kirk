@@ -14,7 +14,13 @@ keywords:
   - Project
   - Constitution
 image: "/img/docusaurus-social-card.jpg"
+hide_table_of_contents: true
 ---
+
+{/* Full-bleed marker: activates the site-wide full-width + text-wrap
+    layout in custom.css (full width + overflow-safe side videos). Scoped
+    via CSS :has(). */}
+<div className="ck-full-bleed" />
 
 <a href="/Influencers/overview" style={{display:'inline-block', marginBottom:'1rem',
 padding:'0.35rem 0.9rem', background:'#1a73e8', color:'#fff',
@@ -66,10 +72,8 @@ Project Constitution is one of the few independent programs to receive formal le
 
 ## Project Constitution on the Kirk Assassination: Watch
 
-<div style={{float:'right', width:'48%', marginLeft:'1.5rem', marginBottom:'1rem'}}>
-<iframe width="100%" style={{aspectRatio:'16/9'}}
-  src="https://www.youtube.com/embed/2exo7iJ-qdc"
-  frameborder="0" allowfullscreen />
+<div className="ck-video ck-video--16x9">
+<iframe src="https://www.youtube.com/embed/2exo7iJ-qdc" title="Project Constitution on the Kirk Assassination" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen />
 </div>
 
 Project Constitution's YouTube coverage brings their investigative research into long-form video format — covering the suspect timeline, evidence handling, and the broader context of who had motive and opportunity on September 10, 2025. This channel is a primary citizen-journalism resource for this investigation. Follow [@ProjectConstitu](https://x.com/ProjectConstitu) on X, subscribe on YouTube, and check their Substack for ongoing coverage.

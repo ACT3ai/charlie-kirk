@@ -14,7 +14,13 @@ keywords:
   - anti-personnel
   - miniaturized demolition charge
 image: "/img/docusaurus-social-card.jpg"
+hide_table_of_contents: true
 ---
+
+{/* Full-bleed marker: activates the site-wide full-width + text-wrap
+    layout in custom.css (full width + overflow-safe side videos). Scoped
+    via CSS :has(). */}
+<div className="ck-full-bleed" />
 
 <a href="/Mic/overview" style={{display:'inline-block', marginBottom:'1rem',
 padding:'0.35rem 0.9rem', background:'#1a73e8', color:'#fff',
@@ -64,13 +70,13 @@ The [exploding-mic theory](./overview) holds that a small shaped charge or EFP-s
 
 ## Video: The Contract Walkthrough
 
-<div style={{float: 'right', width: '48%', maxWidth: '480px', marginLeft: '1.5rem', marginBottom: '1rem'}}>
-  <video controls style={{width: '100%', height: 'auto', display: 'block', borderRadius: '4px'}}>
+<div className="ck-video ck-video--16x9">
+  <video controls>
     <source src="https://ipfs.io/ipfs/QmWpQUf5HajEXF8SV3ZTSGB377HUruL7GLPUbr7ByHAQkh" type="video/mp4" />
     <source src="https://dweb.link/ipfs/QmWpQUf5HajEXF8SV3ZTSGB377HUruL7GLPUbr7ByHAQkh" type="video/mp4" />
     Your browser does not support the video tag.
   </video>
-  <p style={{fontSize: '0.85rem', color: '#666', marginTop: '0.5rem'}}>
+  <p className="ck-caption">
     <em>@mistressdivy reads the AES contract line ("miniaturized-XS demolition charges, anti-personnel"), the $440,494 amount, and the procurement anomalies she flagged. Source: <a href="https://x.com/mistressdivy/status/2072814926133866634?s=20">@mistressdivy on X</a>, July 2, 2026.</em>
   </p>
 </div>

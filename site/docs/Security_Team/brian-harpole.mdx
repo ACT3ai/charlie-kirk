@@ -10,7 +10,13 @@ keywords:
   - Rockhouse Integrity Group
   - private security
   - ProjectConstitu
+hide_table_of_contents: true
 ---
+
+{/* Full-bleed marker: activates the site-wide full-width + text-wrap
+    layout in custom.css (full width + overflow-safe side videos). Scoped
+    via CSS :has(). */}
+<div className="ck-full-bleed" />
 
 <a href="/Security_Team/overview" style={{display:'inline-block', marginBottom:'1rem',
 padding:'0.35rem 0.9rem', background:'#1a73e8', color:'#fff',
@@ -20,13 +26,13 @@ borderRadius:'4px', textDecoration:'none', fontSize:'0.9rem'}}>
 
 # Brian Harpole
 
-<div style={{float: 'right', width: '48%', maxWidth: '480px', marginLeft: '1.5rem', marginBottom: '1rem'}}>
-  <video controls style={{width: '100%', height: 'auto', display: 'block', borderRadius: '4px'}}>
+<div className="ck-video">
+  <video controls>
     <source src="https://ipfs.io/ipfs/QmZdFUWDekCDBZcETphabnmTW4Y9vYk7EyPUJECsBXuDfo" type="video/mp4" />
     <source src="https://dweb.link/ipfs/QmZdFUWDekCDBZcETphabnmTW4Y9vYk7EyPUJECsBXuDfo" type="video/mp4" />
     Your browser does not support the video tag.
   </video>
-  <p style={{fontSize: '0.85rem', color: '#666', marginTop: '0.5rem'}}>
+  <p className="ck-caption">
     <em>Project Constitution's post on the Harpole family's law-enforcement, Masonic, and funeral-services background. Source: <a href="https://x.com/ProjectConstitu/status/2002152440435781712">@ProjectConstitu on X</a>, Dec 19, 2025. (Video is set to music, with no spoken words.)</em>
   </p>
 </div>
