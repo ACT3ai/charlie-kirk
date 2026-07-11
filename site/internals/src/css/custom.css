@@ -78,6 +78,16 @@
   margin: 0.25rem 0 1rem 1.5rem;
 }
 
+/* The two 16:9 (landscape) videos are 80% larger than the base size
+   (min(480px,40%) x 1.8 = min(864px,72%)). Because .ck-video floats right,
+   the extra width grows toward the LEFT while the right edge stays anchored
+   at the right margin; the 72% cap + max-width:100% keep it from ever
+   overflowing off the right of the page. The middle 9:16 (portrait) video
+   keeps the base .ck-video width and is intentionally NOT given this class. */
+.ck-video--16x9 {
+  width: min(864px, 72%);
+}
+
 /* The <video> fills its figure and is hard-capped at 100% of it. This is
    the line that guarantees the video can never overflow horizontally. */
 .ck-video video {
