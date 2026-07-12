@@ -14,6 +14,9 @@ import type {SidebarsConfig} from '@docusaurus/plugin-content-docs';
 const sidebars: SidebarsConfig = {
   docs: [
     {type: 'doc', id: 'charlie-kirk', label: 'Home'},
+    {type: 'doc', id: 'Tyler_Robinson_Not_Assassin/overview', label: 'Tyler Robinson Not Assassin'},
+    {type: 'doc', id: 'Israel_Main_Suspect/overview', label: 'Israel Main Suspect'},
+    {type: 'doc', id: 'US_Intelligence_Assisted/overview', label: 'US Intelligence Assisted'},
     {type: 'doc', id: 'Charlie/overview', label: 'Charlie Kirk'},
     {type: 'doc', id: 'Before/overview', label: 'Before the Shooting'},
     {type: 'doc', id: 'Tyler_Robinson/overview', label: 'Tyler Robinson'},

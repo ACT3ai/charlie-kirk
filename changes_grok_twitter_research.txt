@@ -1,4 +1,46 @@
 ====================================================================
+20260712_091500 — Three Level-2 hubs: Grok/X research + page growth
+====================================================================
+GROK_RESEARCH_ROOT: ~/T/_ck/grok/
+SHARED: ~/T/_ck/grok/_shared_research_batch1.txt
+SECTIONS:
+  - Tyler_Robinson_Not_Assassin (5 Level 3 + overview)
+  - Israel_Main_Suspect (17 Level 3 + overview)
+  - US_Intelligence_Assisted (6 Level 3 + overview)
+
+WORKFLOW (modified from grok_twitter_research.md + grok_write.mdx):
+  * Per-page X/semantic + keyword research (not full 12-agent partition)
+  * Research files: ~/T/_ck/grok/{Level2}/{page}_research.txt
+  * Additive MDX growth; defamation-safe; absolute back buttons
+  * Preserve TOC on Level 2; Related Areas retained
+
+LINE GROWTH (approx before → after):
+  Tyler L3s: ~99–142 → ~192–219 each
+  Israel L3s: ~85–131 → ~200–226 each
+  US Intel L3s: ~94–128 → ~201–228 each
+  Overviews: body paragraphs deepened with attributed high-signal claims
+
+PAGES TOUCHED: all 28 Level 3 topic pages + 3 Level 2 overviews under:
+  site/docs/Tyler_Robinson_Not_Assassin/
+  site/docs/Israel_Main_Suspect/
+  site/docs/US_Intelligence_Assisted/
+pages.csv line_count refreshed for those rows.
+
+RESEARCH FILE COUNT: 5 + 18 + 6 L3 + 3 overview = 32 research captures
+  (+ shared batch1)
+
+NEW SECTION TYPES ADDED TO L3s (typical):
+  Citizen Investigator Claims on X
+  Official Narrative vs Competing Claims / Counter-Claims
+  Open Questions
+  Timeline Claims (where relevant)
+
+DEFAMATION: no site findings of living-person guilt; Robinson charged/not
+convicted; Israel/intel claims attributed as theories/allegations.
+
+====================================================================
+
+====================================================================
 20260710_141224  ORCHESTRATOR  full 12-agent run  N=944
 ====================================================================
 prompt: prompts/grok_twitter_research.md
