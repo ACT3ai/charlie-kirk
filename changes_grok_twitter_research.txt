@@ -1,4 +1,41 @@
 ====================================================================
+20260712_110622 — Targeted Grok Twitter Research (3 Level-2 sections)
+====================================================================
+Scope: All public pages under:
+  - Tyler_Robinson_Not_Assassin (6)
+  - Israel_Main_Suspect (19)
+  - US_Intelligence_Assisted (7)
+Total: 32 pages (one dedicated X/Grok research query cycle each)
+
+Research root: ~/T/_ck/grok/{Level2}/{token}_research.txt
+  32 research captures written (raw X posts, claims, handles, dates)
+
+Public site growth: site/docs/ only
+  git: 32 files changed, ~786 insertions, ~19 deletions
+  Total lines in section pages: ~6288 → ~7055
+
+Process (per page):
+  1. Read existing MDX
+  2. x_semantic_search + x_keyword_search (+ web when needed)
+  3. Save full raw research file
+  4. Additive integrate (defamation-safe attribution)
+  5. Preserve TOC (L2), back buttons, Related Areas
+
+Key new material themes:
+  Tyler: ATF Karner prelim hearing; soft-point ammo fight; Twiggs channel;
+         no-shot-video; contractor pave claims; mic-clip questions
+  Israel: Shillman $2M donor naming; Seruga 44 phones; FARA/distribution;
+          N59906/HADES flight claims; Blumenthal control claims; Kent/Iran
+  US Intel: PETN-in-wire; AES Rogan dig; Patel Twitter huddle claim;
+            Huachuca Mitch Snow contestation; GRAMA pave texts
+
+Defamation: all new claims attributed; no living-person guilt as site fact;
+Robinson charged not convicted throughout.
+
+Status: 32/32 OK (overview pages grown in-paragraph; L3 new H2s)
+====================================================================
+
+====================================================================
 20260712_091500 — Three Level-2 hubs: Grok/X research + page growth
 ====================================================================
 GROK_RESEARCH_ROOT: ~/T/_ck/grok/
