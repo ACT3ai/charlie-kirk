@@ -32,6 +32,7 @@ const sidebars: SidebarsConfig = {
     {type: 'doc', id: 'TPUSA/overview', label: 'TPUSA'},
     {type: 'doc', id: 'Tent/overview', label: 'The Tent'},
     {type: 'doc', id: 'Theories/overview', label: 'Theories'},
+    {type: 'doc', id: 'Narrative/overview', label: 'Narrative'},
     {type: 'doc', id: 'Timeline/overview', label: 'Timeline'},
     {type: 'doc', id: 'People/overview', label: 'People'},
     {type: 'doc', id: 'intelligence/overview', label: 'Intelligence Services'},
