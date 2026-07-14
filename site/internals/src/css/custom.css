@@ -67,64 +67,92 @@
   max-width: none;
 }
 
-/* 2) Side videos float right with text wrapping around them, but must
-   NEVER be wide enough to scroll off the right edge — at any zoom level.
-   The .ck-video / .ck-caption classes are used only inside doc content on
-   pages that opt into videos, so bare class selectors are effectively
-   scoped to article bodies and do NOT depend on :has() — the overflow
-   guard therefore works even in browsers that lack :has().
-   The figure width is the smaller of 480px and 40% of the content column,
-   so it shrinks with the viewport and can never exceed its column. */
-.ck-video {
+/* 2) Side videos float right with text wrapping around them. SITE RULE: a
+   side video may never be wider than 35% of the MAIN READING AREA (the doc
+   content column, which excludes the left sidebar), and it may never be
+   TALLER than that same 35%-of-width measure either — so a tall (portrait)
+   clip shrinks instead of towering down the page. Aspect ratio is always
+   preserved.
+
+   How the 35% is measured: the doc markdown wrapper is turned into a CSS
+   container (container-type: inline-size) whenever it holds a .ck-video, so
+   the `cqw` unit resolves to 1% of that wrapper's inline size — i.e. 1% of
+   the main content-area width, independent of the left sidebar. `35cqw` is
+   therefore exactly "35% of the main area." This is scoped via :has() to
+   pages that actually carry a side video, so nothing else is affected. */
+.theme-doc-markdown:has(.ck-video) {
+  container-type: inline-size;
+}
+
+/* The figure shrink-wraps its media (fit-content) so no empty gutter is
+   left beside a portrait clip, and is hard-capped at 35% of the main area. */
+.ck-video,
+.ck-video--16x9 {
   float: right;
-  width: min(480px, 40%);
-  max-width: 100%;
+  width: fit-content;
+  max-width: 35cqw;
   margin: 0.25rem 0 1rem 1.5rem;
 }
 
-/* The two 16:9 (landscape) videos are 80% larger than the base size
-   (min(480px,40%) x 1.8 = min(864px,72%)). Because .ck-video floats right,
-   the extra width grows toward the LEFT while the right edge stays anchored
-   at the right margin; the 72% cap + max-width:100% keep it from ever
-   overflowing off the right of the page. The middle 9:16 (portrait) video
-   keeps the base .ck-video width and is intentionally NOT given this class. */
-.ck-video--16x9 {
-  width: min(864px, 72%);
+/* The <video> is capped at 35% of the main-area width in BOTH dimensions.
+   With width/height:auto plus the two max-* limits, the browser's
+   replaced-element sizing keeps the native aspect ratio while honoring both
+   caps — the width cap governs landscape clips, the height cap governs
+   portrait clips, and the smaller wins. `!important` on width/height defeats
+   any inline width:100% left on older embeds so the aspect ratio can never
+   be forced. (The .ck-video--16x9 modifier is now redundant — every side
+   video shares this single 35% cap — but is kept as a harmless alias so
+   existing markup keeps working.) */
+.ck-video video,
+.ck-video--16x9 video {
+  display: block;
+  width: auto !important;
+  height: auto !important;
+  max-width: 35cqw;
+  max-height: 35cqw;
 }
 
-/* The <video> fills its figure and is hard-capped at 100% of it. This is
-   the line that guarantees the video can never overflow horizontally. */
-.ck-video video {
+/* YouTube / X embeds use an <iframe>. A 16:9 box at 35cqw wide is ~19.7cqw
+   tall — already inside the 35% height cap — so a plain width cap suffices. */
+.ck-video iframe,
+.ck-video--16x9 iframe {
   display: block;
-  width: 100%;
+  width: 35cqw;
   max-width: 100%;
-  height: auto;
-}
-
-/* YouTube / X embeds use an <iframe> instead of a <video>. Give it the same
-   fill-the-figure behavior, and a 16:9 box so it never collapses to zero
-   height inside the float. */
-.ck-video iframe {
-  display: block;
-  width: 100%;
-  max-width: 100%;
+  max-height: 35cqw;
   aspect-ratio: 16 / 9;
   height: auto;
   border: 0;
 }
 
-.ck-video .ck-caption {
+.ck-video .ck-caption,
+.ck-video--16x9 .ck-caption {
   font-size: 0.85rem;
   color: var(--ifm-color-emphasis-600);
   margin-top: 0.5rem;
 }
 
 /* 3) On phones/narrow screens, stop floating — stack the video full width
-   so it never crowds the text or overflows. */
+   so it never crowds the text or overflows. The 35% caps are released here
+   because on a phone the "main area" is the whole screen. */
 @media (max-width: 768px) {
-  .ck-video {
+  .ck-video,
+  .ck-video--16x9 {
     float: none;
     width: 100%;
+    max-width: 100%;
     margin: 1rem 0;
+  }
+  .ck-video video,
+  .ck-video--16x9 video {
+    width: 100% !important;
+    height: auto !important;
+    max-width: 100%;
+    max-height: none;
+  }
+  .ck-video iframe,
+  .ck-video--16x9 iframe {
+    width: 100%;
+    max-height: none;
   }
 }
