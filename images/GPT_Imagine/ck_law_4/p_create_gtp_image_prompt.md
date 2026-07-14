@@ -1,6 +1,6 @@
 ROOT_DIR dir is ~/BGit/Bryan_git/charlie-kirk
 
-LAW_DIR dir is {ROOT_DIR}/laws/4_Trusted_Investigations
+LAW_DIR dir is {ROOT_DIR}/site/docs/laws/4_Trusted_Investigations
 
 LAW_FILE is file {LAW_DIR}/Law_4_Trusted_Investigations.md
 

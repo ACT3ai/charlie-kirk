@@ -1,4 +1,5 @@
 ---
+displayed_sidebar: docs
 title: "Goat Island"
 sidebar_label: "Goat Island"
 description: "Goat Island has become a point of investigative interest after it was reportedly found as a desktop photo on Tyler Robinson's computer. Investigators also…"
@@ -12,9 +13,15 @@ keywords:
   - Goat
   - Island
 image: "/img/docusaurus-social-card.jpg"
+hide_table_of_contents: true
 ---
 
-<a href="/Locations" style={{display:'inline-block', marginBottom:'1rem',
+{/* Full-bleed marker: activates the site-wide full-width + text-wrap
+    layout in custom.css (full width + overflow-safe side videos). Scoped
+    via CSS :has(). */}
+<div className="ck-full-bleed" />
+
+<a href="/Locations/overview" style={{display:'inline-block', marginBottom:'1rem',
 padding:'0.35rem 0.9rem', background:'#1a73e8', color:'#fff',
 borderRadius:'4px', textDecoration:'none', fontSize:'0.9rem'}}>← Locations</a>
 
@@ -32,14 +39,13 @@ The poster notes there is no documented proof of any connection. These are inves
 
 ## Tyler Robinson's Desktop Photo
 
-<div style={{float: 'right', width: '48%', maxWidth: '480px', marginLeft: '1.5rem', marginBottom: '1rem'}}>
-  <video controls style={{maxWidth: '50vw', maxHeight: '50vh', display: 'block', margin: '1rem auto'}}>
-    <source src="https://ipfs.io/ipfs/QmSS2HkEaF38xhE25ZsY9FUGmvcwwisnwRgKHxjvkdkZse" type="video/mp4" />
+<div className="ck-video ck-video--16x9">
+  <video controls>
     <source src="https://ipfs.io/ipfs/QmSS2HkEaF38xhE25ZsY9FUGmvcwwisnwRgKHxjvkdkZse" type="video/mp4" />
     <source src="https://dweb.link/ipfs/QmSS2HkEaF38xhE25ZsY9FUGmvcwwisnwRgKHxjvkdkZse" type="video/mp4" />
     Your browser does not support the video tag.
   </video>
-  <p style={{fontSize: '0.85rem', color: '#666', marginTop: '0.5rem'}}>
+  <p className="ck-caption">
     <em>Investigative analysis including Goat Island and Tyler Robinson's desktop. Source: <a href="https://x.com/MJTruthUltra/status/2046416354454990874?s=20">@MJTruthUltra on X</a>, April 21, 2026.</em>
   </p>
 </div>
@@ -56,14 +62,13 @@ No documented evidence has been presented establishing any direct connection bet
 
 ## Kash Patel's "Valhalla" Statement
 
-<div style={{float: 'right', width: '48%', maxWidth: '480px', marginLeft: '1.5rem', marginBottom: '1rem'}}>
-  <video controls style={{maxWidth: '50vw', maxHeight: '50vh', display: 'block', margin: '1rem auto'}}>
-    <source src="https://ipfs.io/ipfs/QmchuzwZemj9rh5Z4fAPVP36KL8fqWYd4UTm5djnJRJZpc" type="video/mp4" />
+<div className="ck-video ck-video--16x9">
+  <video controls>
     <source src="https://ipfs.io/ipfs/QmchuzwZemj9rh5Z4fAPVP36KL8fqWYd4UTm5djnJRJZpc" type="video/mp4" />
     <source src="https://dweb.link/ipfs/QmchuzwZemj9rh5Z4fAPVP36KL8fqWYd4UTm5djnJRJZpc" type="video/mp4" />
     Your browser does not support the video tag.
   </video>
-  <p style={{fontSize: '0.85rem', color: '#666', marginTop: '0.5rem'}}>
+  <p className="ck-caption">
     <em>Kash Patel's press conference "Valhalla" statement. Source: <a href="https://x.com/MJTruthUltra/status/2046416354454990874?s=20">@MJTruthUltra on X</a>, April 21, 2026.</em>
   </p>
 </div>
@@ -82,14 +87,13 @@ See: [Valhalla Danish House](/Locations/Valhalla)
 
 ## Location Analysis Video
 
-<div style={{float: 'right', width: '48%', maxWidth: '480px', marginLeft: '1.5rem', marginBottom: '1rem'}}>
-  <video controls style={{maxWidth: '50vw', maxHeight: '50vh', display: 'block', margin: '1rem auto'}}>
-    <source src="https://ipfs.io/ipfs/QmfJ9f9ymnw6RvHYXzGbnL9rQeHPES7Pi6TQJQnbHqBEzG" type="video/mp4" />
+<div className="ck-video">
+  <video controls>
     <source src="https://ipfs.io/ipfs/QmfJ9f9ymnw6RvHYXzGbnL9rQeHPES7Pi6TQJQnbHqBEzG" type="video/mp4" />
     <source src="https://dweb.link/ipfs/QmfJ9f9ymnw6RvHYXzGbnL9rQeHPES7Pi6TQJQnbHqBEzG" type="video/mp4" />
     Your browser does not support the video tag.
   </video>
-  <p style={{fontSize: '0.85rem', color: '#666', marginTop: '0.5rem'}}>
+  <p className="ck-caption">
     <em>Goat Island and Valhalla Danish House location analysis. Source: <a href="https://x.com/MJTruthUltra/status/2046416354454990874?s=20">@MJTruthUltra on X</a>, April 21, 2026.</em>
   </p>
 </div>
@@ -106,30 +110,30 @@ Investigators are looking at whether these locations have any documented connect
 ## Video Thumbnails
 
 <div style={{display: 'flex', flexWrap: 'wrap', gap: '0.75rem', marginBottom: '1rem'}}>
-  <div style={{flex: '1 1 30%', minWidth: '180px'}}>
+<div style={{flex: '1 1 30%', minWidth: '180px'}}>
     <img
       src="https://ipfs.io/ipfs/QmbZjSe17pqBkg1e93MGLf2VCvR8mrAoUnZNJPfdB8fTG2"
       alt="Kash Patel Valhalla statement — video 1 thumbnail"
       style={{width: '100%', height: 'auto', aspectRatio: '1200/681', borderRadius: '4px'}}
     />
     <p style={{fontSize: '0.8rem', color: '#666', marginTop: '0.3rem'}}>Video 1 — Kash statement</p>
-  </div>
-  <div style={{flex: '1 1 30%', minWidth: '180px'}}>
+</div>
+<div style={{flex: '1 1 30%', minWidth: '180px'}}>
     <img
       src="https://ipfs.io/ipfs/QmXQuJaxwCwoFuYQZtFwB6VAAp1z6odwPV2f4gkFA9Z3GW"
       alt="Goat Island location analysis — video 2 thumbnail"
       style={{width: '100%', height: 'auto', aspectRatio: '1060/1200', borderRadius: '4px'}}
     />
     <p style={{fontSize: '0.8rem', color: '#666', marginTop: '0.3rem'}}>Video 2 — Location analysis</p>
-  </div>
-  <div style={{flex: '1 1 30%', minWidth: '180px'}}>
+</div>
+<div style={{flex: '1 1 30%', minWidth: '180px'}}>
     <img
       src="https://ipfs.io/ipfs/QmVYK5gLMGWeuBYDLGv1RtGcbp4mWoaBiyoNx5wRGBeebN"
       alt="Investigative analysis — video 3 thumbnail"
       style={{width: '100%', height: 'auto', aspectRatio: '1200/675', borderRadius: '4px'}}
     />
     <p style={{fontSize: '0.8rem', color: '#666', marginTop: '0.3rem'}}>Video 3 — Investigative analysis</p>
-  </div>
+</div>
 </div>
 
 <div style={{clear: 'both'}} />
@@ -141,26 +145,58 @@ Investigators are looking at whether these locations have any documented connect
 3. Does the proximity of Goat Island and the Valhalla Danish House have any significance to this investigation?
 4. Have investigators examined whether Tyler Robinson visited either location?
 
+## X.com posts:
+
+* [Kash says "I'll see you in Valhalla" — Goat Island on Tyler's desktop](https://x.com/MJTruthUltra/status/2046416354454990874?s=20)
+
+## Laws (Charlie Kirk)
+
+* The forensic image of Robinson's seized desktop and his phone location history near Goat Island and Valhalla and how "Valhalla" entered Kash Patel's prepared remarks are things that the [Charlie Kirk Investigation Laws](/Fix/overview) may result in powerful truths coming out that aren't out yet.
+
+
+{/* agent4-grow */}
+## Additional X Claims and Counter-Claims (2025–2026)
+
+**@johndk7** (**July 5, 2026**) restated the popular stack: **Kash Patel**’s “see you in Valhalla” tribute plus claims that **Tyler Robinson’s computer** showed an island/resort branded **Valhalla** near **Goat Island** (New Zealand) themes. **@aldamu_jo** (**November 23, 2025**) paired the Valhalla line with sharp criticism of Patel’s broader record. Viral mockery also exists (**@mmpadellan**, **September 12, 2025**).
+
+**Counter-claim:** an **@grok** reply (**July 7, 2026**) stated there is **no credible court-record or reliable reporting confirmation** of a Valhalla/Goat Island map/wallpaper on Robinson’s computer, calling the stack **unverified coincidence narrative** and the Patel line a **metaphorical tribute**. This page keeps **both** the investigative interest and the debunk attempt. **No proven operational connection** between Goat Island geography and the UVU shooting is asserted here.
+
 ## Related Areas
 
 <div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
 marginTop:'0.5rem'}}>
 <div>
 
-* [Valhalla Danish House](/Locations/Valhalla)
-* [Locations](/Locations)
 * [Tyler Robinson](/Tyler_Robinson/overview)
+* [UVU](/UVU/overview)
+* [Maps](/maps/overview)
 
 </div>
 <div>
 
-* [Proof Not Tyler](/Proof_Not_Tyler/overview)
-* [Cover-Up](/CoverUp/overview)
-* [Killer Analysis](/Killer/overview)
+* [Videos](/Videos/overview)
+* [People](/People/overview)
+* [Planes](/Planes/overview)
 
 </div>
 </div>
 
-## X.com posts:
+## Related
 
-* [Kash says "I'll see you in Valhalla" — Goat Island on Tyler's desktop](https://x.com/MJTruthUltra/status/2046416354454990874?s=20)
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Valhalla Danish House](/Locations/Valhalla)
+* [Locations](/Locations/overview)
+* [Buckley Carlson: Kash Patel Valhalla](/Videos/buckley-carlson-kash-patel-valhalla)
+
+</div>
+<div>
+
+* [Theory: Tyler Robinson — Official Suspect](/Killer/tyler-robinson)
+* [Tyler Robinson](/People/tyler-robinson)
+* [Tyler Robinson on September 10, 2025](/Tyler_Robinson/Tyler_9_10_2025)
+
+</div>
+</div>

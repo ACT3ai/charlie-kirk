@@ -29,10 +29,130 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
+/* Remove the theme breadcrumb bar (home icon > chevron > section) site-wide.
+   The inline blue "← Home" button in page content is unaffected. */
+.theme-doc-breadcrumbs {
+  display: none !important;
+}
+
 /* Hide expand arrow and child items for categories marked no-expand */
 .no-expand-sidebar > .menu__list {
   display: none !important;
 }
 .no-expand-sidebar > .menu__list-item-collapsible .menu__caret {
   display: none !important;
+}
+
+/* ============================================================
+   Full-bleed layout — SITE-WIDE across every Level 2 & Level 3 page.
+   Each such page carries an invisible <div className="ck-full-bleed" />
+   marker in its MDX plus `hide_table_of_contents: true` in frontmatter.
+   Every rule below is scoped with :has(.ck-full-bleed), so it applies
+   only to doc content containers that hold the marker — the navbar and
+   footer are never affected. Pages without the marker keep the default
+   capped-width Docusaurus layout. This pattern was first proven on the
+   Suspects/Black_Clothing_Suspect page and then rolled out site-wide.
+   ============================================================ */
+
+/* The marker element renders nothing. */
+.ck-full-bleed {
+  display: none;
+}
+
+/* 1) Use the full browser width. Docusaurus caps the content .container
+   at ~1140px (and 1416px on very wide screens), leaving white gutters on
+   the left and right. Remove that cap for this page only. This is the one
+   rule that needs :has() (we can't add a class to .container from MDX). */
+.container:has(.ck-full-bleed) {
+  max-width: none;
+}
+
+/* 2) Side videos float right with text wrapping around them. SITE RULE: a
+   side video may never be wider than 35% of the MAIN READING AREA (the doc
+   content column, which excludes the left sidebar), and it may never be
+   TALLER than that same 35%-of-width measure either — so a tall (portrait)
+   clip shrinks instead of towering down the page. Aspect ratio is always
+   preserved.
+
+   How the 35% is measured: the doc markdown wrapper is turned into a CSS
+   container (container-type: inline-size) whenever it holds a .ck-video, so
+   the `cqw` unit resolves to 1% of that wrapper's inline size — i.e. 1% of
+   the main content-area width, independent of the left sidebar. `35cqw` is
+   therefore exactly "35% of the main area." This is scoped via :has() to
+   pages that actually carry a side video, so nothing else is affected. */
+.theme-doc-markdown:has(.ck-video) {
+  container-type: inline-size;
+}
+
+/* The figure shrink-wraps its media (fit-content) so no empty gutter is
+   left beside a portrait clip, and is hard-capped at 35% of the main area. */
+.ck-video,
+.ck-video--16x9 {
+  float: right;
+  width: fit-content;
+  max-width: 35cqw;
+  margin: 0.25rem 0 1rem 1.5rem;
+}
+
+/* The <video> is capped at 35% of the main-area width in BOTH dimensions.
+   With width/height:auto plus the two max-* limits, the browser's
+   replaced-element sizing keeps the native aspect ratio while honoring both
+   caps — the width cap governs landscape clips, the height cap governs
+   portrait clips, and the smaller wins. `!important` on width/height defeats
+   any inline width:100% left on older embeds so the aspect ratio can never
+   be forced. (The .ck-video--16x9 modifier is now redundant — every side
+   video shares this single 35% cap — but is kept as a harmless alias so
+   existing markup keeps working.) */
+.ck-video video,
+.ck-video--16x9 video {
+  display: block;
+  width: auto !important;
+  height: auto !important;
+  max-width: 35cqw;
+  max-height: 35cqw;
+}
+
+/* YouTube / X embeds use an <iframe>. A 16:9 box at 35cqw wide is ~19.7cqw
+   tall — already inside the 35% height cap — so a plain width cap suffices. */
+.ck-video iframe,
+.ck-video--16x9 iframe {
+  display: block;
+  width: 35cqw;
+  max-width: 100%;
+  max-height: 35cqw;
+  aspect-ratio: 16 / 9;
+  height: auto;
+  border: 0;
+}
+
+.ck-video .ck-caption,
+.ck-video--16x9 .ck-caption {
+  font-size: 0.85rem;
+  color: var(--ifm-color-emphasis-600);
+  margin-top: 0.5rem;
+}
+
+/* 3) On phones/narrow screens, stop floating — stack the video full width
+   so it never crowds the text or overflows. The 35% caps are released here
+   because on a phone the "main area" is the whole screen. */
+@media (max-width: 768px) {
+  .ck-video,
+  .ck-video--16x9 {
+    float: none;
+    width: 100%;
+    max-width: 100%;
+    margin: 1rem 0;
+  }
+  .ck-video video,
+  .ck-video--16x9 video {
+    width: 100% !important;
+    height: auto !important;
+    max-width: 100%;
+    max-height: none;
+  }
+  .ck-video iframe,
+  .ck-video--16x9 iframe {
+    width: 100%;
+    max-height: none;
+  }
 }

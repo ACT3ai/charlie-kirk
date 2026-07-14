@@ -1,12 +1,12 @@
 # Law 1: Charlie Kirk Investigation - DoJ/FBI Forced Disclosure Act
 
-AUTHOR: Bryan Starbuck (BryanStarbuck@gmail.com)
+AUTHOR: [Bryan Starbuck](/People/bryan-starbuck) (BryanStarbuck@gmail.com)
 
 ## Title
 The Charlie Kirk Files Forced Disclosure Act - Law Enforcement
 
 ## Purpose
-To require the Department of Justice, the Federal Bureau of Investigation, and all federal, state, and local law enforcement agencies to fully and immediately disclose all files, records, communications, and information in their possession related to the investigation of the death of Charlie Kirk, including but not limited to the 207 specific disclosure items enumerated in Schedule A of this Act.
+To require the Department of Justice, the Federal Bureau of Investigation, and all federal, state, and local law enforcement agencies to fully and immediately disclose all files, records, communications, and information in their possession related to the investigation of the death of [Charlie Kirk](/People/charlie-kirk), including but not limited to the 207 specific disclosure items enumerated in Schedule A of this Act.
 
 **Disclaimer:** This document does not assert as fact that any individual, organization, or government entity has committed any criminal, illegal, or immoral act. All references to persons and entities are made solely for proposed legislative and legal discovery purposes — to identify what information should be disclosed and investigated through lawful processes. The items listed here are questions for investigation, not conclusions. No statement in this document should be understood as an accusation, allegation, or assertion of wrongdoing against any party. This document exists solely to support public transparency through lawful legislative and judicial processes.
 
@@ -28,7 +28,7 @@ To require the Department of Justice, the Federal Bureau of Investigation, and a
 
 ## Section 2: Broad Mandatory Disclosure
 
-(a) **Catch-All Requirement.** Within 30 days of enactment, all covered agencies shall produce and make publicly available in a searchable and downloadable format ALL records, documents, communications, and investigative materials in their possession that relate in any way to the investigation of the death of Charlie Kirk, the prosecution of Tyler Robinson, or any matter that could help establish the full truth about the circumstances of Charlie Kirk's death. This requirement is not limited to the specific items enumerated in Schedule A but extends to any and all information that could assist in understanding the investigation.
+(a) **Catch-All Requirement.** Within 30 days of enactment, all covered agencies shall produce and make publicly available in a searchable and downloadable format ALL records, documents, communications, and investigative materials in their possession that relate in any way to the investigation of the death of Charlie Kirk, the prosecution of [Tyler Robinson](/People/tyler-robinson), or any matter that could help establish the full truth about the circumstances of Charlie Kirk's death. This requirement is not limited to the specific items enumerated in Schedule A but extends to any and all information that could assist in understanding the investigation.
 
 (b) No covered agency may claim any privilege, classification, or exemption to withhold covered records, except as narrowly provided in Section 4.
 
@@ -48,7 +48,7 @@ To require the Department of Justice, the Federal Bureau of Investigation, and a
    5. All FBI case opening documentation, investigative plans, and scope documents
    6. All FBI counterintelligence reports on foreign intelligence services operating in Utah (January 2023 to present)
    7. All FBI threat assessments for Charlie Kirk regarding foreign intelligence targeting
-   8. All FBI liaison reports with CIA, NSA, and DHS regarding foreign nationals connected to the case
+   8. All [FBI](/FBI/overview) liaison reports with [CIA](/US_Intelligence/cia), [NSA](/US_Intelligence/nsa), and DHS regarding foreign nationals connected to the case
    9. All FBI counterintelligence surveillance logs tracking suspected foreign intelligence officers in Utah
    10. All FISA applications and materials related to foreign nationals in Utah connected to the case
 
@@ -69,8 +69,8 @@ To require the Department of Justice, the Federal Bureau of Investigation, and a
    5. CBP biometric data for foreign arrivals during the relevant period
 
 **Aircraft Records (Items #81-#86 and related):**
-   1. All flight records, passenger manifests, and crew lists for Egyptian aircraft SU-BTT, SU-BND, SU-BTU, SU-BTV, and SU-BGM
-   2. All records for surveillance aircraft N1098L (HADES spy plane), N59906 (MARC Inc. Piper), N888KG, N560TW, N40JD, N872RA, N102DZ, and N55906
+   1. All flight records, passenger manifests, and crew lists for Egyptian aircraft [SU-BTT](/Planes/SU-BTT), [SU-BND](/Planes/Egyptian-Armada), [SU-BTU](/Planes/Egyptian-Armada), [SU-BTV](/Planes/Egyptian-Armada), and [SU-BGM](/Planes/Egyptian-Armada)
+   2. All records for surveillance aircraft [N1098L](/Planes/N1098L/overview) (HADES spy plane), [N59906](/Planes/N59906) (MARC Inc. Piper), [N888KG](/Planes/N888KG), [N560TW](/Planes/N560TW), [N40JD](/Planes/N40JD), [N872RA](/Planes/N872RA), [N102DZ](/Planes/N102DZ), and [N55906](/Planes/N55906)
    3. All records for U.S. Air Force VIP transport jet 99-0404 (SAM callsign) and Egyptian military aircraft T7ELL and EJM36
    4. CBP inspection records, cargo manifests, and security clearance records for all listed aircraft
    5. Who contracted, paid for, and received data from any surveillance aircraft
@@ -80,7 +80,7 @@ To require the Department of Justice, the Federal Bureau of Investigation, and a
    2. All Suspicious Activity Reports (SARs) for Utah during the relevant period
    3. All Currency Transaction Reports over $10,000 involving foreign nationals
    4. All payment records (credit card, PayPal, Venmo, Zelle) for rental cars, hotels, and any payments to persons present at UVU
-   5. All wire transfers or payments to Tyler Robinson or Lance Twiggs, including any transfers through DSA-linked accounts
+   5. All wire transfers or payments to Tyler Robinson or [Lance Twiggs](/People/lance-twiggs), including any transfers through DSA-linked accounts
    6. FBI financial crimes investigation files related to the case
 
 **Chain of Custody and Physical Evidence (Items #105-#112):**
@@ -126,18 +126,18 @@ To require the Department of Justice, the Federal Bureau of Investigation, and a
    8. All information on Charlie Kirk's communications expressing fear for his life (Item #14)
    9. All information on rental cars used by foreign operatives (Items #42, #124-#129)
    10. All information on psychological operations or manipulation of Tyler Robinson or Lance Twiggs (Item #38)
-   11. All information on foreigners in TPUSA or TPUSA donor communications with foreign intelligence (Items #3-#4, #160-#165)
+   11. All information on foreigners in [TPUSA](/TPUSA/overview) or TPUSA donor communications with foreign intelligence (Items #3-#4, #160-#165)
    12. All information on the Hampton meeting (August 3-6, 2025) (Item #50)
    13. All information on the DoD contract N0016425PJ538 for miniaturized anti-personnel charges delivered August 25, 2025
    14. All information on the AES factory explosion (October 10, 2025) and its connection to the investigation
    15. All information on crime scene alteration, including who authorized paving over the crime scene
    16. All records related to Tyler Robinson's family statements and his claim of knowledge of other perpetrators (Items #176-#178)
    17. All records of witness intimidation including fake therapy sessions and witness suppression (Items #179-#180)
-   18. All records related to Brian Harpole (member of Kirk's security detail with foreign security service background) (Item #181)
+   18. All records related to [Brian Harpole](/People/brian-harpole) (member of Kirk's security detail with foreign security service background) (Item #181)
    19. All records related to hospital routing decisions and FBI blocking a surgeon (Items #182-#184)
    20. All TPUSA financial records including shell company payments and post-assassination board actions (Items #185-#186)
-   21. All records from Mosaic Pro Events, the Rode Wireless PRO microphone audio, and Mikey McCoy's mic-up video (Items #187-#189)
-   22. All records related to Butch Hibbs at UVU and the Heber City to Nashville flight on AES delivery day (Items #190-#191)
+   21. All records from Mosaic Pro Events, the Rode Wireless PRO microphone audio, and [Mikey McCoy](/People/mikey-mccoy)'s mic-up video (Items #187-#189)
+   22. All records related to [Butch Hibbs](/People/butch-hibbs) at UVU and the Heber City to Nashville flight on AES delivery day (Items #190-#191)
    23. All records of the FBI RAV4 near Robinson and FBI direction of the re-search that "found" the weapon (Items #192-#193)
    24. All records of the Fort Huachuca pre-assassination meeting (Item #194)
    25. All records of live stream interruptions at UVU (Item #195)
@@ -266,7 +266,7 @@ Import to apply:
 * "Intelligence" as it relates to FBI and DoJ means that the Intelligence side of the FBI is also required to disclose information on anything related to the Charlie Kirk case or the people involved.
 
 
-"People Listed" (PEOPLE_LISTED): are the set of people information must be disclosed on. It is listed in Schedule B.  A summary:   P1) TPUSA organization, P2) TPUSA security team, P3) Sound/AV/equipment crew, P4) All persons present at UVU 9/10/2025, P5) FBI personnel, P6) DOJ and federal prosecutors, P7) Utah state and local law enforcement, P8) Judges and court personnel, P9) Defense attorneys, P10) US intelligence community personnel, P11) Foreign intelligence operatives and foreign nationals, P12) Military personnel and contractors, P13) Aircraft personnel, P14) Drone and surveillance operators, P15) Distraction persons and persons of interest, P16) Airport and transportation personnel, P17) TPUSA donors and persons who met with Kirk, P18) Kirk's close associates and confidants, P19) Erika Kirk and Kirk family, P20) Medical and hospital personnel, P21) Crime scene alteration personnel, P22) Witnesses and civilian videographers, P23) Life insurance and financial persons, P24) Tyler Robinson's associates, P25) Political figures and government officials, P26) Lobbyists and political organizations, P27) Media and journalists with inside knowledge, P28) AES personnel, P29) Rental car and lodging personnel, P30) Digital platform and telecom personnel, P31) UVU administration and staff, P32) Persons on listed aircraft, P33) Persons connected to Scott Lazerson, P34) Religious leaders, P35) Any other person with relevant information.
+"People Listed" (PEOPLE_LISTED): are the set of people information must be disclosed on. It is listed in Schedule B.  A summary:   P1) TPUSA organization, P2) TPUSA security team, P3) Sound/AV/equipment crew, P4) All persons present at UVU 9/10/2025, P5) FBI personnel, P6) DOJ and federal prosecutors, P7) Utah state and local law enforcement, P8) Judges and court personnel, P9) Defense attorneys, P10) US intelligence community personnel, P11) Foreign intelligence operatives and foreign nationals, P12) Military personnel and contractors, P13) Aircraft personnel, P14) Drone and surveillance operators, P15) Distraction persons and persons of interest, P16) Airport and transportation personnel, P17) TPUSA donors and persons who met with Kirk, P18) Kirk's close associates and confidants, P19) [Erika Kirk](/People/erika-kirk) and Kirk family, P20) Medical and hospital personnel, P21) Crime scene alteration personnel, P22) Witnesses and civilian videographers, P23) Life insurance and financial persons, P24) Tyler Robinson's associates, P25) Political figures and government officials, P26) Lobbyists and political organizations, P27) Media and journalists with inside knowledge, P28) AES personnel, P29) Rental car and lodging personnel, P30) Digital platform and telecom personnel, P31) UVU administration and staff, P32) Persons on listed aircraft, P33) Persons connected to [Scott Lazerson](/People/scott-lazerson), P34) Religious leaders, P35) Any other person with relevant information.
 
 
 ### A Table of Contents
@@ -353,7 +353,7 @@ Each item in Schedule A is individually mandated for complete disclosure. Partia
 
 * #19: Lance Twiggs Financial Transfers: Include all information on any money transfer to Lance Twiggs, including but not limited to any $20,000 transfer or multiple transfers. Also include all information on any financial transactions, gifts, payments, or funding of any kind received by Lance Twiggs from any source during 2024–2025.
 
-* #20: Distraction People Identification and Intel: Include all information about possible "distraction people" present on September 10, 2025, including: PERSON_179_REDACTED ("Fake Doctor w/Gun"), the pellet gun man at Joe Vera's Mexican Restaurant (201 W Center St, Provo), George Zinn, PERSON_53_REDACTED, curly hair "David" (PERSON_139_REDACTED / @RtothepowerofX), persons police were called on at Urban Pioneer Cafe or Sorenson Molecular Biotechnology Building, PERSON_42_REDACTED, and any others — including the person captured on video asking questions to Charlie Kirk who was also recorded beforehand practicing the same shocked facial expression, and who later appeared on CBS with Erika Kirk. Include all communications they had with any individual, government, or intelligence service — including U.S. intelligence or foreign intelligence — all claims they made, and any payments or coordination, including whether any distraction person communicated with, coordinated with, or worked with anybody before the shooting or for the shooting. Include whether any distraction person was ever offered money or received money from any source, and all financial payments they received. Include all records of the question-asker's communications and coordination with any person before and after the event. Also include all information on any person who appeared at or near UVU that day in a manner suggesting coordination or operational purpose.
+* #20: Distraction People Identification and Intel: Include all information about possible "distraction people" present on September 10, 2025, including: PERSON_179_REDACTED ("Fake Doctor w/Gun"), the pellet gun man at Joe Vera's Mexican Restaurant (201 W Center St, Provo), [George Zinn](/distraction_people/George_Zinn), PERSON_53_REDACTED, curly hair "David" (PERSON_139_REDACTED / @RtothepowerofX), persons police were called on at Urban Pioneer Cafe or Sorenson Molecular Biotechnology Building, PERSON_42_REDACTED, and any others — including the person captured on video asking questions to Charlie Kirk who was also recorded beforehand practicing the same shocked facial expression, and who later appeared on CBS with Erika Kirk. Include all communications they had with any individual, government, or intelligence service — including U.S. intelligence or foreign intelligence — all claims they made, and any payments or coordination, including whether any distraction person communicated with, coordinated with, or worked with anybody before the shooting or for the shooting. Include whether any distraction person was ever offered money or received money from any source, and all financial payments they received. Include all records of the question-asker's communications and coordination with any person before and after the event. Also include all information on any person who appeared at or near UVU that day in a manner suggesting coordination or operational purpose.
 
 * #21: Decisions Not to Charge Distraction People: Include all communications, actions, or information about decisions not to charge the distraction people, by whom these decisions were made, and any communications inside FBI, DoJ, U.S. intelligence, or local law enforcement about not charging them. Also include all information on any instructions from any agency or official directing that these individuals not be charged, investigated, or questioned.
 
@@ -425,7 +425,7 @@ Each item in Schedule A is individually mandated for complete disclosure. Partia
 
 * #55: Threats Against Charlie Kirk from Any Source: Include all information from U.S. intelligence about any individuals, governments, or government organizations that wanted Charlie Kirk's life ended, discussed getting him killed, or threatened him. Also include all information on any threat assessment, warning, or intelligence report regarding danger to Charlie Kirk from any source.
 
-* #56: Threats Against Similar Public Figures: Include all information from U.S. intelligence, FBI, or DoJ about threats or communication about harm, plans, or consideration toward: Marjorie Taylor Greene (including threats to murder her son), Matt Gaetz, Andrew Breitbart, Candace Owens, Tucker Carlson, and Thomas Massie. Also include all information on any threat pattern or coordinated targeting of public figures with similar political profiles.
+* #56: Threats Against Similar Public Figures: Include all information from U.S. intelligence, FBI, or DoJ about threats or communication about harm, plans, or consideration toward: Marjorie Taylor Greene (including threats to murder her son), Matt Gaetz, Andrew Breitbart, [Candace Owens](/People/candace-owens), [Tucker Carlson](/People/tucker-carlson), and Thomas Massie. Also include all information on any threat pattern or coordinated targeting of public figures with similar political profiles.
 
 ---
 
@@ -445,7 +445,7 @@ Each item in Schedule A is individually mandated for complete disclosure. Partia
 
 ### FBI Counterintelligence (#62–#66)
 
-* #62: FBI Foreign Intel Reports on Utah: Include all FBI counterintelligence reports on Egyptian GID, French DGSE, Israeli Mossad, and other foreign intelligence operations in Utah from January 2023 to present. Also include all information on any foreign intelligence service activity in the state of Utah during that period.
+* #62: FBI Foreign Intel Reports on Utah: Include all FBI counterintelligence reports on Egyptian GID, French DGSE, Israeli [Mossad](/intelligence/Mossad), and other foreign intelligence operations in Utah from January 2023 to present. Also include all information on any foreign intelligence service activity in the state of Utah during that period.
 
 * #63: FBI Threat Assessments for Kirk: Include all FBI Protective Intelligence threat assessments regarding foreign intelligence targeting of Charlie Kirk. Also include all information on any FBI awareness of foreign threats to Kirk before the assassination.
 
@@ -717,7 +717,7 @@ Each item in Schedule A is individually mandated for complete disclosure. Partia
 
 * #164: Kirk Security Chief Foreign Intel Links: Include all FBI investigation records of Charlie Kirk's head of security regarding foreign intelligence connections. Also include all information on any person in Kirk's security detail who had contact with or ties to any foreign intelligence service.
 
-* #165: Hampton Meeting Foreign Intel Activity: Include all FBI reports on communications, threats, or money from Egyptian, French, or Israeli sources — including any involvement by Benjamin Netanyahu or Emmanuel Macron or their intermediaries — at the Hampton meeting of August 4–6, 2025. Also include all information on any foreign intelligence activity, influence, or presence at any TPUSA donor or leadership meeting during 2025.
+* #165: Hampton Meeting Foreign Intel Activity: Include all FBI reports on communications, threats, or money from Egyptian, French, or Israeli sources — including any involvement by [Benjamin Netanyahu](/People/benjamin-netanyahu) or [Emmanuel Macron](/People/emmanuel-macron) or their intermediaries — at the Hampton meeting of August 4–6, 2025. Also include all information on any foreign intelligence activity, influence, or presence at any TPUSA donor or leadership meeting during 2025.
 
 ---
 
@@ -789,7 +789,7 @@ Each item in Schedule A is individually mandated for complete disclosure. Partia
 
 ### Butch Hibbs & Exploding Microphone (#190–#191)
 
-* #190: Butch Hibbs at UVU Event: Include all records, photographs, video, and communications related to Butch Hibbs (brother of Calvary Chapel pastor Jack Hibbs) at the UVU event on September 10, 2025, specifically the square object in his front right pocket matching the dimensions of a Rode Wireless GO II receiver (approximately 2x2 inches), his proximity to the sound crew, photographs showing his pocket empty after Kirk was killed, and his movements throughout the event. Include all evidence of any kind of explosion that happened within an hour before or an hour and a half after Charlie Kirk died, at or near UVU or any related location. Also include all of Butch Hibbs's communications in the 60 days before and 30 days after the assassination.
+* #190: Butch Hibbs at UVU Event: Include all records, photographs, video, and communications related to Butch Hibbs (brother of Calvary Chapel pastor [Jack Hibbs](/People/jack-hibbs)) at the UVU event on September 10, 2025, specifically the square object in his front right pocket matching the dimensions of a Rode Wireless GO II receiver (approximately 2x2 inches), his proximity to the sound crew, photographs showing his pocket empty after Kirk was killed, and his movements throughout the event. Include all evidence of any kind of explosion that happened within an hour before or an hour and a half after Charlie Kirk died, at or near UVU or any related location. Also include all of Butch Hibbs's communications in the 60 days before and 30 days after the assassination.
 
 * #191: Heber City to Nashville Flight (Aug 25, 2025): Include all records related to the private aircraft flight from Heber City, Utah to John Tune Airport, Nashville, Tennessee on August 25, 2025 — the same day AES delivered the "MINIATURIZED-XS DEMOLITION CHARGES, ANTI PERSONNEL-XS" under DoD contract N0016425PJ538. Also include the passenger manifest, aircraft registration, who chartered or owned the aircraft, and any connection to Butch Hibbs or any person associated with TPUSA, Calvary Chapel, or the Charlie Kirk investigation.
 
@@ -853,21 +853,21 @@ Each item in Schedule A is individually mandated for complete disclosure. Partia
 
 - **P1)** All TPUSA employees, executives, board members, officers, contractors, consultants, and interns — current as of September 10, 2025 and for the 12 months prior. All TPUSA donors who contributed $5 million or more in any single year or $10 million cumulatively. All TPUSA event organizers, logistics personnel, and anyone involved in planning or executing the UVU event on September 10, 2025. Includes Erika Kirk and any person who assumed a leadership role at TPUSA within 30 days of Charlie Kirk's death.
 
-- **P2)** All members of the TPUSA security detail, including head of security Dan Flood, external security contractors, private security firms hired for the UVU event, and any person who provided security services to Charlie Kirk at any event in the 12 months prior to September 10, 2025. Includes anyone on any security advance team that conducted or should have conducted site assessments at UVU. Includes any security personnel with prior employment by any foreign government, foreign leader, or foreign security service.
+- **P2)** All members of the TPUSA security detail, including head of security [Dan Flood](/People/dan-flood), external security contractors, private security firms hired for the UVU event, and any person who provided security services to Charlie Kirk at any event in the 12 months prior to September 10, 2025. Includes anyone on any security advance team that conducted or should have conducted site assessments at UVU. Includes any security personnel with prior employment by any foreign government, foreign leader, or foreign security service.
 
-- **P3)** All audio engineers, sound crew, AV technicians, and equipment handlers at the UVU event on September 10, 2025. Includes whoever provided, handled, or attached the lavalier microphone to Charlie Kirk. Includes Michael Olbert and Terryl Farnsworth. Includes any person who had physical access to the microphone, audio equipment, or stage setup in the 48 hours before the event. Includes any person who removed equipment, SD cards, or recordings from the event.
+- **P3)** All audio engineers, sound crew, AV technicians, and equipment handlers at the UVU event on September 10, 2025. Includes whoever provided, handled, or attached the lavalier microphone to Charlie Kirk. Includes [Michael Olbert](/People/michael-olbert) and [Terryl Farnsworth](/People/terryl-farnsworth). Includes any person who had physical access to the microphone, audio equipment, or stage setup in the 48 hours before the event. Includes any person who removed equipment, SD cards, or recordings from the event.
 
 - **P4)** All persons physically present on the Utah Valley University campus on September 10, 2025, whose identity is known to any law enforcement or intelligence agency. Includes attendees, students, faculty, staff, campus police, visitors, contractors performing work on campus, and any person captured on UVU surveillance cameras that day.
 
-- **P5)** All FBI agents, analysts, supervisors, and support staff assigned to, participating in, consulted on, or possessing knowledge of the Charlie Kirk investigation from September 10, 2025 to present. Includes FBI agents who were physically present at UVU on or after September 10, 2025. Includes FBI agents who contacted witnesses and requested deletion of evidence. Includes the FBI Special Agent in Charge (SAIC) of the Salt Lake City field office (including Mehtab Syed and any successor). Includes any FBI personnel who directed the re-search that located the weapon. Includes any FBI Counterintelligence Division personnel involved in assessing foreign intelligence connections.
+- **P5)** All FBI agents, analysts, supervisors, and support staff assigned to, participating in, consulted on, or possessing knowledge of the Charlie Kirk investigation from September 10, 2025 to present. Includes FBI agents who were physically present at UVU on or after September 10, 2025. Includes FBI agents who contacted witnesses and requested deletion of evidence. Includes the FBI Special Agent in Charge (SAIC) of the Salt Lake City field office (including [Mehtab Syed](/People/mehtab-syed) and any successor). Includes any FBI personnel who directed the re-search that located the weapon. Includes any FBI Counterintelligence Division personnel involved in assessing foreign intelligence connections.
 
 - **P6)** All Department of Justice officials, federal prosecutors, and DOJ staff with knowledge of or involvement in the investigation or prosecution. Includes any DOJ official involved in decisions about what information to share with or withhold from defense counsel, the court, or the public.
 
-- **P7)** All Utah state, county, and local law enforcement officers involved in the response, investigation, or prosecution, including Utah County Sheriff's Office, Orem Police Department, UVU campus police, Provo Police Department, and any other responding agency. Includes all officers who participated in the initial search, K-9 search, and re-search for the weapon. Includes Utah County Attorney Jeffrey S. Gray, Deputy Attorneys Chad E. Grunander, Ryan McBride, Lauren Hunt, David Sturgill, and Christopher D. Ballard.
+- **P7)** All Utah state, county, and local law enforcement officers involved in the response, investigation, or prosecution, including Utah County Sheriff's Office, Orem Police Department, UVU campus police, Provo Police Department, and any other responding agency. Includes all officers who participated in the initial search, K-9 search, and re-search for the weapon. Includes Utah County Attorney [Jeffrey S. Gray](/People/jeffrey-s-gray), Deputy Attorneys [Chad E. Grunander](/People/chad-e-grunander), [Ryan McBride](/People/ryan-mcbride), [Lauren Hunt](/People/lauren-hunt), [David Sturgill](/People/david-sturgill), and [Christopher D. Ballard](/People/christopher-d-ballard).
 
 - **P8)** All judges assigned to State of Utah v. Tyler Alexander Robinson (Case No. 251403576), including Judge Tony F. Graf Jr. and any predecessor or successor judges. Includes Judge Robert Lunnen, whose retirement created the vacancy filled by Graf. Includes any judge or judicial officer involved in issuing warrants, gag orders, or other orders related to the investigation. Includes any person involved in the appointment or selection of judges for this case.
 
-- **P9)** All attorneys representing Tyler Robinson, including Kathryn Nester, Richard Novak, Michael N. Burt, and Staci Visser, and any other counsel of record or consulting attorneys.
+- **P9)** All attorneys representing Tyler Robinson, including [Kathryn Nester](/People/kathryn-nester), Richard Novak, Michael N. Burt, and [Staci Visser](/People/staci-visser), and any other counsel of record or consulting attorneys.
 
 - **P10)** All employees, officers, contractors, and agents of any US intelligence agency — including CIA, NSA, DIA, NRO, NCTC, ODNI — who have any knowledge of, involvement in, or have produced any report, analysis, or communication related to the Charlie Kirk investigation, the UVU event, foreign intelligence activity connected to it, or the blocking of any investigation related to it. Includes Joe Kent (NCTC Director), Tulsi Gabbard (DNI), Kash Patel (FBI Director), and any intelligence official who participated in decisions to limit, block, or control the scope of investigation. Includes any person involved in the HADES spy plane program or drone operations on September 10, 2025.
 
@@ -875,33 +875,33 @@ Each item in Schedule A is individually mandated for complete disclosure. Partia
 
 - **P12)** All US military personnel, defense contractors, and Department of Defense civilians involved in any military activity connected to the investigation. Includes crew and mission personnel of aircraft N1098L (HADES spy plane), including pilots, co-pilots, mission engineers, and observers from LASAI Aviation II LLC and Leidos Aviation Services. Includes any military personnel stationed at or visiting Fort Huachuca, AZ between September 1-11, 2025 who had any connection to matters related to Charlie Kirk. Includes personnel involved in DoD contract N0016425PJ538 for miniaturized anti-personnel charges at NSWC Crane and Accurate Energetic Systems (AES). Includes any person aboard US Air Force VIP transport jet 99-0404 (SAM callsign). Includes French legionnaires present in the US August 2-25, 2025.
 
-- **P13)** All pilots, crew, passengers, and ground handlers associated with Egyptian-registered aircraft SU-BTT, SU-BND, SU-BTU, SU-BTV, SU-BGM, T7ELL, and EJM36 during any flights to or within the United States between May 1, 2025 and November 30, 2025. Includes any "military contractors" who deplaned these aircraft and remained in the US. Includes any person who held "US Department of Defense Liaison" badges. Includes any person involved in Counter-UAS testing at Provo airport September 4-10, 2025. Includes Walid Mahmoud and any other identified passengers.
+- **P13)** All pilots, crew, passengers, and ground handlers associated with Egyptian-registered aircraft SU-BTT, SU-BND, SU-BTU, SU-BTV, SU-BGM, T7ELL, and EJM36 during any flights to or within the United States between May 1, 2025 and November 30, 2025. Includes any "military contractors" who deplaned these aircraft and remained in the US. Includes any person who held "US Department of Defense Liaison" badges. Includes any person involved in Counter-UAS testing at Provo airport September 4-10, 2025. Includes [Walid Mahmoud](/People/walid-mahmoud) and any other identified passengers.
 
 - **P14)** All persons who operated, contracted for, received data from, or had knowledge of any drone — military or civilian — operating at or near UVU on September 10, 2025. Includes operators of the HADES spy plane N1098L and any drones launched or recovered from it. Includes operators of surveillance aircraft N59906 (MARC Inc.). Includes any person who received real-time surveillance feeds from any aerial platform that day.
 
-- **P15)** All persons who were identified as persons of interest, detained, questioned, or arrested at or near UVU on September 10, 2025, other than Tyler Robinson. Specifically includes: Russell Kennington ("Fake Doctor w/Gun"), the pellet gun individual at Joe Vera's Mexican Restaurant, George Zinn ("Mr. Shoot Me"), Zachariah Ahmed Qureshi, the person known as "David" (owner of X account @RtothepowerofX), any person police were called about at Urban Pioneer Cafe or Sorenson Molecular Biotechnology Building that day, the individual known as "Rick Cutler" (arm puller/sunglasses man), and any other person whose presence or behavior was flagged by law enforcement. Includes any person who was considered as an alternate suspect, a possible second shooter, or a distraction operative.
+- **P15)** All persons who were identified as persons of interest, detained, questioned, or arrested at or near UVU on September 10, 2025, other than Tyler Robinson. Specifically includes: [Russell Kennington](/distraction_people/Russell_Kennington) ("Fake Doctor w/Gun"), the pellet gun individual at Joe Vera's Mexican Restaurant, George Zinn ("Mr. Shoot Me"), Zachariah [Ahmed Qureshi](/People/ahmed-qureshi), the person known as "David" (owner of X account @RtothepowerofX), any person police were called about at Urban Pioneer Cafe or Sorenson Molecular Biotechnology Building that day, the individual known as "[Rick Cutler](/People/rick-cutler)" (arm puller/sunglasses man), and any other person whose presence or behavior was flagged by law enforcement. Includes any person who was considered as an alternate suspect, a possible second shooter, or a distraction operative.
 
 - **P16)** All airport staff, TSA agents, CBP officers, FBO employees, ground handlers, and air traffic controllers at Provo Municipal Airport (PVU) and Salt Lake City International Airport (SLC) who handled, interacted with, or had knowledge of Egyptian military aircraft, surveillance aircraft, or any aircraft listed in Schedule A. Includes anyone who granted "no-scan priority clearance" or special security exemptions. Includes anyone who modified badge access lists at Provo airport on or around September 11, 2025.
 
-- **P17)** All persons who attended meetings, calls, or confrontations with Charlie Kirk between July 1, 2025 and September 10, 2025, regarding Israel policy, donor pressure, or TPUSA direction. Specifically includes participants in the Hamptons meeting (August 3-6, 2025), including but not limited to Rabbi Pesach Wolicki, Josh Hammer, Seth Dillon, Bill Ackman, and Natasha Hausdorff. Includes any person who participated in the described "intervention" where Charlie Kirk was confronted by pro-Israel figures. Includes Benjamin Netanyahu, Yair Netanyahu, Emmanuel Macron, and any intermediaries who communicated offers or pressure to Charlie Kirk. Includes participants in the July 31, 2025 White House meeting organized by the Faith & Freedom Coalition, Latino Coalition for Israel, and Philos Project, including Ralph Reed, Luke Moon, Apostle Mario Bramnick, and Yehuda Kaploun.
+- **P17)** All persons who attended meetings, calls, or confrontations with Charlie Kirk between July 1, 2025 and September 10, 2025, regarding Israel policy, donor pressure, or TPUSA direction. Specifically includes participants in the Hamptons meeting (August 3-6, 2025), including but not limited to [Rabbi Pesach Wolicki](/People/rabbi-pesach-wolicki), [Josh Hammer](/People/josh-hammer), [Seth Dillon](/People/seth-dillon), [Bill Ackman](/People/bill-ackman), and [Natasha Hausdorff](/People/natasha-hausdorff). Includes any person who participated in the described "intervention" where Charlie Kirk was confronted by pro-Israel figures. Includes Benjamin Netanyahu, [Yair Netanyahu](/People/yair-netanyahu), Emmanuel Macron, and any intermediaries who communicated offers or pressure to Charlie Kirk. Includes participants in the July 31, 2025 White House meeting organized by the Faith & Freedom Coalition, Latino Coalition for Israel, and Philos Project, including [Ralph Reed](/People/ralph-reed), [Luke Moon](/People/luke-moon), [Apostle Mario Bramnick](/People/apostle-mario-bramnick), and [Yehuda Kaploun](/People/yehuda-kaploun).
 
-- **P18)** All persons to whom Charlie Kirk communicated fears for his life or threats against him. Specifically includes Andrew Kolvet, Frank Turek, Dan Flood, Harrison Smith, and Candace Owens. Includes any person who received texts, Signal messages, Telegram messages, or any other communications from Charlie Kirk expressing concern about being killed or threatened. Includes Blake Neff, Mikey McCoy, Rob McCoy, and any other person in Kirk's inner circle who was present at or communicated about the UVU event.
+- **P18)** All persons to whom Charlie Kirk communicated fears for his life or threats against him. Specifically includes [Andrew Kolvet](/People/andrew-kolvet), [Frank Turek](/People/frank-turek), Dan Flood, [Harrison Smith](/People/harrison-smith), and Candace Owens. Includes any person who received texts, Signal messages, Telegram messages, or any other communications from Charlie Kirk expressing concern about being killed or threatened. Includes [Blake Neff](/People/blake-neff), Mikey McCoy, [Rob McCoy](/People/rob-mccoy), and any other person in Kirk's inner circle who was present at or communicated about the UVU event.
 
 - **P19)** Erika Kirk (Charlie Kirk's wife), Charlie Kirk's parents, and any immediate family member who had knowledge of threats, life insurance policies, communications, or who took actions related to Charlie Kirk's death, his estate, or the succession of TPUSA leadership. Includes any person who communicated with Erika Kirk about TPUSA leadership succession in the 30 days following the death.
 
 - **P20)** All physicians, surgeons, nurses, paramedics, EMTs, hospital staff, and medical examiners who treated, examined, transported, or handled the body of Charlie Kirk from the moment of shooting through burial. Includes the surgeon who was reportedly blocked by FBI from re-entering Charlie Kirk's room. Includes whoever signed the death certificate. Includes anyone involved in the decision regarding whether to perform an autopsy (as required by Utah law 268-8-205 for gun violence deaths).
 
-- **P21)** All persons involved in the decision to pave over the UVU crime scene and all persons who performed the work. Specifically includes employees and owners of Hardscape Specialties LLC (Michael Powell — Utah AG special agent, and Burton Romrell — former UVU operations staff) and Hardscape Utah/Daniel Merrell. Includes any UVU administrator or state official who authorized or ordered the alteration. Includes any person from "Crew GC" or other construction firms involved. Includes the "men who work for the state of Utah" who contacted the contractor.
+- **P21)** All persons involved in the decision to pave over the UVU crime scene and all persons who performed the work. Specifically includes employees and owners of [Hardscape Specialties](/UVU/Hardscape-Specialties) LLC ([Michael Powell](/People/michael-powell) — Utah AG special agent, and [Burton Romrell](/People/burton-romrell) — former UVU operations staff) and Hardscape Utah/Daniel Merrell. Includes any UVU administrator or state official who authorized or ordered the alteration. Includes any person from "Crew GC" or other construction firms involved. Includes the "men who work for the state of Utah" who contacted the contractor.
 
-- **P22)** All persons who witnessed the shooting, recorded video or audio, or were interviewed by law enforcement. Includes any person whose video or recordings were requested to be deleted by FBI agents. Includes any witness who was contacted by FBI and told not to speak publicly or to other law enforcement. Includes witness Dylan Hope (electrician working at adjacent property). Includes Phil Lyman (whose car was parked near the scene). Includes any person subject to or affected by the court gag order.
+- **P22)** All persons who witnessed the shooting, recorded video or audio, or were interviewed by law enforcement. Includes any person whose video or recordings were requested to be deleted by FBI agents. Includes any witness who was contacted by FBI and told not to speak publicly or to other law enforcement. Includes witness [Dylan Hope](/People/dylan-hope) (electrician working at adjacent property). Includes [Phil Lyman](/distraction_people/Phil_Lyman) (whose car was parked near the scene). Includes any person subject to or affected by the court gag order.
 
 - **P23)** All persons involved in the creation, management, beneficiary designation, or payout of any life insurance policy on Charlie Kirk. Includes all persons associated with GGLF 2023 LLC. Includes any insurance company executives or agents who processed claims. Includes any person involved in the $350,000 TPUSA loan related to insurance premiums. Includes any financial advisor, accountant, or banker who handled Charlie Kirk's or TPUSA's finances related to insurance or the estimated $20-50 million payout.
 
 - **P24)** Tyler Robinson, Lance Twiggs (Robinson's girlfriend/live-in partner), Robinson's parents, Robinson's family members, and any person who communicated with, met with, housed, employed, educated, trained, or provided financial support to Tyler Robinson in the 12 months before September 10, 2025. Includes any person who may have psychologically manipulated, radicalized, handled, or directed Robinson. Includes jail snitch Jaxson Thomas Fox. Includes any person who appeared at Robinson's court hearings in October 2025.
 
-- **P25)** All elected officials, appointed officials, and government employees at federal, state, or local level who had knowledge of, involvement in, or communicated about the Charlie Kirk investigation, the UVU event, or related matters. Specifically includes Governor Spencer Cox (Utah), any member of Congress who received briefings, Mike Huckabee (US Ambassador to Israel), and any White House staff or advisors who communicated about the case. Includes any official who made decisions about the scope of investigation, who intervened to block or limit investigations, or who communicated with foreign governments — including the offices of Benjamin Netanyahu and Emmanuel Macron — about the case.
+- **P25)** All elected officials, appointed officials, and government employees at federal, state, or local level who had knowledge of, involvement in, or communicated about the Charlie Kirk investigation, the UVU event, or related matters. Specifically includes Governor [Spencer Cox](/People/spencer-cox) (Utah), any member of Congress who received briefings, Mike Huckabee (US Ambassador to Israel), and any White House staff or advisors who communicated about the case. Includes any official who made decisions about the scope of investigation, who intervened to block or limit investigations, or who communicated with foreign governments — including the offices of Benjamin Netanyahu and Emmanuel Macron — about the case.
 
-- **P26)** All persons affiliated with AIPAC, ADL, Faith & Freedom Coalition, Heritage Foundation, Philos Project, or any other lobbying organization or political advocacy group that communicated about Charlie Kirk's policy positions on Israel, engaged in pressure campaigns directed at Kirk, or had any interaction with any person in this definition related to the investigation. Includes any person connected to the reported "hit" or threats against Candace Owens, Tucker Carlson, or Ian Carroll.
+- **P26)** All persons affiliated with AIPAC, ADL, Faith & Freedom Coalition, Heritage Foundation, Philos Project, or any other lobbying organization or political advocacy group that communicated about Charlie Kirk's policy positions on Israel, engaged in pressure campaigns directed at Kirk, or had any interaction with any person in this definition related to the investigation. Includes any person connected to the reported "hit" or threats against Candace Owens, Tucker Carlson, or [Ian Carroll](/People/ian-carroll).
 
 - **P27)** All journalists, media executives, and media personnel who received early or advance information about Charlie Kirk's death (including the Jerusalem Post, which reportedly announced his death before he was pronounced dead at the hospital). Includes any media person who received leaks, tips, or information from law enforcement or intelligence about the investigation. Includes Charlie Kirk Show producers and staff who were authorized to discuss matters otherwise under gag order.
 
@@ -915,7 +915,7 @@ Each item in Schedule A is individually mandated for complete disclosure. Partia
 
 - **P32)** All passengers, crew, and persons who boarded or deplaned any aircraft listed in Schedule A Item #1 (including SU-BTT, SU-BND, SU-BTU, SU-BTV, SU-BGM, N1098L, N888KG, N59906, N560TW, N102DZ, N40JD, N872RA, 99-0404, T7ELL, EJM36, N55906) at any time between July 1, 2025 and November 30, 2025. Includes all persons on the August 25, 2025 flight from Heber City, UT to John Tune Airport, Nashville, TN. Includes all persons aboard N560TW on its September 10, 2025 flight from Scottsdale to Provo and return.
 
-- **P33)** Scott Lazerson and all persons who met with, communicated with, or traveled with Scott Lazerson between August 1, 2025 and September 15, 2025. Includes Jessica Krauss (House Inhabit), Tami Radabaugh, Sean Parnell, Sean Reyes, and any person Lazerson met with at the Pentagon. Includes any person connected to the SAM flight into Las Vegas on August 25-26, 2025.
+- **P33)** Scott Lazerson and all persons who met with, communicated with, or traveled with Scott Lazerson between August 1, 2025 and September 15, 2025. Includes [Jessica Krauss](/People/jessica-krauss) (House Inhabit), [Tami Radabaugh](/People/tami-radabaugh), [Sean Parnell](/People/sean-parnell), [Sean Reyes](/People/sean-reyes), and any person Lazerson met with at the Pentagon. Includes any person connected to the SAM flight into Las Vegas on August 25-26, 2025.
 
 - **P34)** All religious leaders, pastors, rabbis, or faith organization leaders who communicated with Charlie Kirk, TPUSA, or any person in this definition about Charlie Kirk's Israel policy positions or who participated in meetings or interventions. Includes Rob McCoy (pastor, Calvary Church), Rabbi Pesach Wolicki, and any other clergy involved in pressure campaigns or communications with Kirk in the months before his death.
 
@@ -935,4 +935,42 @@ Peer laws: [Law 2 - US Intel Disclosure](../2_US_Intel/Law_2_US_Intel.md) | [Law
 
 Precedent: [Epstein Files Transparency Act](../../Existing_Laws/Massie_Epstein_Disclosure/Law_Massie_Epstein_Disclosure.md) | [JFK Records Act](../../Existing_Laws/JFK_Records_Act/Law_JFK_Records_Act.md)
 
+## Related Areas
 
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Fix the Charlie Kirk Situation](/Fix/overview)
+* [FBI](/FBI/overview)
+* [(Possible) Cover‑up](/CoverUp/overview)
+
+</div>
+<div>
+
+* [Government Evidence](/gov/overview)
+* [Proof Intel Services](/Proof_Intel_Services/overview)
+* [Your Actions Fix It](/Your_Actions_Fix_It/overview)
+
+</div>
+</div>
+
+## Related
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Law 1: Charlie Kirk Investigation - DoJ/FBI Forced Disclosure…](/laws/DoJ_FBI/Law_1_DoJ_FBI)
+* [Human Requirements: Law 1 - DoJ/FBI Forced Disclosure](/laws/other/old/DoJ_FBI/more/Human_Requirements)
+* [Notes: Law 1 - DoJ/FBI Forced Disclosure](/laws/other/old/DoJ_FBI/more/Notes_1_DoJ_FBI)
+
+</div>
+<div>
+
+* [Output Analysis: Law 1 - DoJ/FBI Forced Disclosure](/laws/other/old/DoJ_FBI/more/Output_Analysis)
+* [Law 2: Charlie Kirk Investigation - Intelligence Services Dis…](/laws/other/old/US_Intel/Law_2_US_Intel)
+* [Charlie Kirk Files Forced Disclosure -- Summary of Four Propo…](/laws/other/old/List_Of_Laws)
+
+</div>
+</div>

@@ -1,4 +1,5 @@
 ---
+displayed_sidebar: docs
 title: "Media Censorship"
 sidebar_label: "Media Censorship"
 description: "This page summarizes claims and concerns about censorship and information suppression related to the Charlie Kirk case. It draws on publicly available…"
@@ -13,9 +14,15 @@ keywords:
   - Media
   - Censorship
 image: "/img/docusaurus-social-card.jpg"
+hide_table_of_contents: true
 ---
 
-<a href="./overview" style={{display:'inline-block', marginBottom:'1rem',
+{/* Full-bleed marker: activates the site-wide full-width + text-wrap
+    layout in custom.css (full width + overflow-safe side videos). Scoped
+    via CSS :has(). */}
+<div className="ck-full-bleed" />
+
+<a href="/Media/overview" style={{display:'inline-block', marginBottom:'1rem',
 padding:'0.35rem 0.9rem', background:'#1a73e8', color:'#fff',
 borderRadius:'4px', textDecoration:'none', fontSize:'0.9rem'}}>← Media</a>
 
@@ -24,18 +31,11 @@ borderRadius:'4px', textDecoration:'none', fontSize:'0.9rem'}}>← Media</a>
 ## Overview
 This page summarizes **claims and concerns about censorship and information suppression** related to the Charlie Kirk case.  
 It draws on publicly available reporting (for example, local court coverage), social‑media posts and videos by commentators such
-as Candace Owens, Project Constitution (@ProjectConstitu), and other independent investigators, as well as first‑person accounts
+as [Candace Owens](/People/candace-owens), Project Constitution (@ProjectConstitu), and other independent investigators, as well as first‑person accounts
 from attendees.  
 
 Nothing here asserts that any specific individual, agency, or company has acted unlawfully; instead, it organizes what people
 have alleged or feared so readers can understand the debate.
-
-## Key Areas
-- Alleged censorship tactics and information loss
-- Court‑ordered gag restrictions and their impact
-- Platform moderation and discovery limits
-- Legislation and policy debates
-- Free‑speech and due‑process considerations
 
 ## Alleged evidence deletion and pressure on witnesses (claims)
 
@@ -45,8 +45,10 @@ Several accounts in the research notes describe **participants saying their foot
   were missing or appeared edited by the time they returned home. These stories are anecdotal and have not been independently
   verified here.
 - One widely discussed witness, Ryne Simmons, stated in a public video that he provided close‑range footage to federal
-  investigators and was asked to delete it from his device. He also said he retained a copy anyway. Commentators argue that,
-  if accurate, such requests raise questions about how evidence preservation and transparency are being balanced.
+  investigators and was asked to delete it from his device. He also said he retained a copy anyway. According to research
+  notes summarizing his account, the clip was a **close‑up shot recorded in 4K at 60 frames per second**, and he described
+  the FBI **calling him several times** to confirm the video had been deleted. Commentators argue that, if accurate, such
+  requests raise questions about how evidence preservation and transparency are being balanced.
 - Critics connect these accounts to a broader narrative that digital traces—videos, social posts, or search results—are
   vulnerable to quiet removal or de‑prioritization in high‑profile cases.
 
@@ -56,9 +58,13 @@ These items are presented as **claims by individuals**, not as adjudicated findi
 
 Legal restrictions have also shaped what can be said publicly about the case:
 
-- A **broad gag order** in the Tyler Robinson proceedings has been reported by local journalists (for example, Ben Winslow and
+- A **broad gag order** in the [Tyler Robinson](/People/tyler-robinson) proceedings has been reported by local journalists (for example, Ben Winslow and
   Michael Martin). According to their coverage, thousands of potential witnesses and associated individuals are barred from
   speaking to the media and could face contempt charges if they violate the order.
+- Commentary in the research notes states the order was issued by **[Judge Tony Graf](/court/judge-tony-graf) on December 16, 2025 on the court's own
+  motion** — that is, neither the prosecution nor the defense requested it — and that it reaches future counsel, staff, and
+  even attorneys in the same firms who are not on the case. Critics describe this scope as unusually broad; supporters view
+  on-the-court's-motion orders as routine in high-profile capital cases.
 - Supporters of the gag order frame it as a way to **protect Robinson’s right to a fair trial** and avoid tainting the jury pool
   in a nationally visible case.
 - Critics argue that the order is **unusually expansive** and may chill lawful speech by witnesses, family members, and even some
@@ -124,26 +130,6 @@ The central question raised by citizen‑investigators is whether, in this parti
 has been struck in a way that builds public trust—or whether reforms are needed. For related discussions about legal and policy
 changes, see [Fix Overview](../Fix/overview), [Law1](../Fix/Law1), and [Law2](../Fix/Law2).
 
-## Related Areas
-
-<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
-marginTop:'0.5rem'}}>
-<div>
-
-* [Censorship](/Censorship/overview)
-* [Cover-Up](/CoverUp/overview)
-* [FBI](/FBI/overview)
-
-</div>
-<div>
-
-* [Proof Intel Services](/Proof_Intel_Services/overview)
-* [People](/People/overview)
-* [Timeline](/Timeline/overview)
-
-</div>
-</div>
-
 ## Court update: discovery and gag order (reported facts)
 
 Public reporting has also documented several **non‑controversial procedural facts** about the Robinson case:
@@ -154,10 +140,40 @@ Public reporting has also documented several **non‑controversial procedural fa
   identified, their information must be conveyed to comply with the order.
 - Tyler Robinson, 22, appeared virtually; charges include aggravated murder, obstruction of justice, felony discharge causing serious
   bodily injury, witness tampering, and committing a violent offense in the presence of a child. Federal charges remain possible.
-- The defense team, led by Kathryn Nester, entered a formal appearance; an in‑person hearing was scheduled, and courthouse security
+- The defense team, led by [Kathryn Nester](/People/kathryn-nester), entered a formal appearance; an in‑person hearing was scheduled, and courthouse security
   was heightened.
 - The case has drawn national attention, including comments from President Trump; Judge Graf emphasized an impartial process and the
   protection of constitutional rights.
 - Utah Valley University initiated an independent review of the campus shooting.
 
 **Source:** Court hearing coverage by Ben Winslow and Michael Martin (Sep 29, 2025).
+
+## Laws (Charlie Kirk)
+
+* Records of FBI agents who asked witnesses to delete videos and the remotely-wiped phone footage and the deleted Google search results tied to the case are things that the [Charlie Kirk Investigation Laws](/Fix/overview) may result in powerful truths coming out that aren't out yet.
+
+
+{/* agent4-grow */}
+## Additional Citizen Investigator Claims on X
+
+Censorship talk on X now layers **three** mechanisms: (1) **court gag orders** limiting parties/witnesses (**Judge Tony Graf** threads); (2) **platform moderation** / alleged deboosting of forensic and foreign-nexus posts; (3) **institutional PR discipline** inside political orgs and legacy outlets that treat alternative ballistics/hospital claims as unpublishable. March 2026 **camera-access wins** are cited as partial pushback. None of these layers, alone, proves a single coordinated plot — but together they explain why citizens archive to **IPFS** and long-form video.
+
+## Related Areas
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Platform & Speech Censorship](/Censorship/overview)
+* [FBI Asked Witness to Delete Video](/CoverUp/FBI_Asked_Delete_Video)
+* [Hospital Security Cameras Removed](/Medical/hospital_security_cameras_removed)
+
+</div>
+<div>
+
+* [Cover-Up Indicators (Real Killer)](/Killer/Coverup_Indicators)
+* [After — Media Narratives](/After/Media_Narratives_And_Censorship_After)
+* [Government Evidence Withheld](/gov/overview)
+
+</div>
+</div>

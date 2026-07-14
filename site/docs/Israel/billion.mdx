@@ -1,4 +1,5 @@
 ---
+displayed_sidebar: docs
 title: "Alleged $1 Billion Israeli Offer (Stew Peters Claim)"
 sidebar_label: "$1B Israeli Offer Claim"
 description: "Stew Peters' allegation, amplified by @FurkanGozukara, that Charlie Kirk rejected an alleged $1 billion offer from an Israeli source and that funds were reportedly accepted by his organization after his death. All claims attributed to Peters; not independently verified."
@@ -12,9 +13,15 @@ keywords:
   - Turning Point USA
   - Israel
 image: "/img/docusaurus-social-card.jpg"
+hide_table_of_contents: true
 ---
 
-<a href="/Israel" style={{display:'inline-block', marginBottom:'1rem',
+{/* Full-bleed marker: activates the site-wide full-width + text-wrap
+    layout in custom.css (full width + overflow-safe side videos). Scoped
+    via CSS :has(). */}
+<div className="ck-full-bleed" />
+
+<a href="/Israel/overview" style={{display:'inline-block', marginBottom:'1rem',
 padding:'0.35rem 0.9rem', background:'#1a73e8', color:'#fff',
 borderRadius:'4px', textDecoration:'none', fontSize:'0.9rem'}}>← Israel</a>
 
@@ -24,14 +31,13 @@ This page documents an allegation made by commentator [Stew Peters](https://en.w
 
 ## Source
 
-<div style={{float: 'right', width: '48%', maxWidth: '480px', marginLeft: '1.5rem', marginBottom: '1rem'}}>
-  <video controls style={{width: '100%', height: 'auto', display: 'block', borderRadius: '4px'}}>
-    <source src="https://ipfs.io/ipfs/QmRctS1DC9ZU8U9qzy9FVmCGmLDsCWKgNMgcapzcK5SsSQ" type="video/mp4" />
+<div className="ck-video ck-video--16x9">
+  <video controls>
     <source src="https://ipfs.io/ipfs/QmRctS1DC9ZU8U9qzy9FVmCGmLDsCWKgNMgcapzcK5SsSQ" type="video/mp4" />
     <source src="https://dweb.link/ipfs/QmRctS1DC9ZU8U9qzy9FVmCGmLDsCWKgNMgcapzcK5SsSQ" type="video/mp4" />
     Your browser does not support the video tag.
   </video>
-  <p style={{fontSize: '0.85rem', color: '#666', marginTop: '0.5rem'}}>
+  <p className="ck-caption">
     <em>Stew Peters segment amplified by @FurkanGozukara — 56-second clip. The original Stew Peters program from which the clip was excerpted is not identified in the X post. Source: <a href="https://x.com/FurkanGozukara/status/2055445490003489041">@FurkanGozukara on X</a>, 2026-05-16. Video hosted on IPFS — CID <code>QmRctS1DC9ZU8U9qzy9FVmCGmLDsCWKgNMgcapzcK5SsSQ</code>.</em>
   </p>
 </div>
@@ -43,6 +49,8 @@ The X post from @FurkanGozukara (a 270K-follower account focused on AI tutorials
 > — <a href="https://x.com/FurkanGozukara/status/2055445490003489041">@FurkanGozukara on X</a>, 2026-05-16 (1,203 likes, 497 reposts, 11,630 views as of capture)
 
 The framing language ("BOMBSHELL", "confirms", "massive Zionist conspiracy") is the X poster's framing — not Peters' own. The underlying allegations originate with Peters in the attached video.
+
+<div style={{clear: 'both'}} />
 
 ## Transcript of Peters' Segment
 
@@ -68,6 +76,16 @@ Each numbered item below is a claim made by Peters in the transcript above. They
 
 6. **Allegation about Erika Kirk.** Peters states, in his own words and explicitly framed as opinion: "it's my opinion that she at minimum had foreknowledge. And I think that it's more likely that she was actually involved with the planning phases and helping to carry that." [Erika Kirk](../People/erika-kirk) is a living person. She has not been charged with any crime in connection with the death of Charlie Kirk. No court has adjudicated this allegation. Peters' statement is his own personal opinion as he labels it. Readers should treat it accordingly and not as a finding of fact.
 
+## Candace Owens: the "Pierre du Pont" identification and the TPUSA COO call
+
+Peters attributes the "Pierre" identification to [Candace Owens](../People/candace-owens). Separately, in her own coverage (cited in the research record as **Episode 303**), Owens reportedly went further than Peters' clip:
+
+- Owens states that **[Justin Streiff](/People/justin-streiff)**, described as the **C.O.O. of TPUSA**, allegedly had a phone call **right after Charlie Kirk was shot** with a person she believes is a **French-American named [Pierre du Pont](/People/pierre-du-pont)**. According to Owens, a potential **billion-dollar partnership** with TPUSA was "on the line."
+- The research record notes the name has been variously rendered as **Pierre Falcone** and **Pierre Samuel du Pont VI** — the latter a member of the prominent American du Pont family (son of Pierre S. du Pont V, grandson of former Delaware Governor Pierre S. "Pete" du Pont IV). These identifications are **investigator hypotheses**, not confirmed facts.
+- Owens' open question, as summarized in the file: *"Why did he call Pierre du Pont as the first call after Charlie is found?"*
+
+Every element here is attributed to **Candace Owens' reporting** and to the compiled research notes. **Justin Streiff** and any person named "Pierre du Pont" are **living persons**. Nothing on this page states that either placed or received any call for an unlawful purpose, or that either had any role in Charlie Kirk's death. The alleged call and "billion-dollar partnership" are **reported allegations** requiring phone records and on-record confirmation before any reliance.
+
 ## What This Page Does and Does Not Assert
 
 * This page **documents** that Stew Peters made the above statements on a video segment amplified to a large audience on X.
@@ -91,27 +109,58 @@ The $150 million / $1 billion figures Peters references should be read against t
 * [Reported Charlie Kirk Quotes About Israel and Donors](./Charlie_Quotes_Israel) — directly quoted material from CK and from those reporting on him.
 * [Charlie, Israel, Donors, and Motive Claims](../Charlie/Israel_Donors_Motive) — the cross-cutting motive page that consolidates donor and pressure narratives.
 
-## Related Areas
-
-<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem', marginTop:'0.5rem'}}>
-<div>
-
-* [Israel Overview](./overview)
-* [Erika Kirk](../People/erika-kirk)
-* [Candace Owens](../People/candace-owens)
-
-</div>
-<div>
-
-* [Motive](../Motive/overview)
-* [Charlie Kirk](../Charlie/overview)
-* [Proof Intel Services](../Proof_Intel_Services/overview)
-
-</div>
-</div>
-
-<div style={{clear: 'both'}} />
-
 ## X.com posts:
 
 * [Stew Peters: Kirk rejected alleged $1B Israeli offer](https://x.com/FurkanGozukara/status/2055445490003489041)
+
+## Laws (Charlie Kirk)
+
+* The identity of the alleged "Pierre" offeror in Israel and TPUSA bank records tracing any accepted funds and CBP entry records for the foreign offeror are things that the [Charlie Kirk Investigation Laws](/Fix/overview) may result in powerful truths coming out that aren't out yet.
+
+## X Discourse and Hearing-Era Claims (Attributed)
+
+For **Alleged $1 Billion Israeli Offer (Stew Peters Claim)**, citizen investigators on X continue to circulate: (1) Carlson's characterization that friends believe Israel-views shifts explain the murder; (2) SIGINT-style **12–16 Israeli-registered phone** claims at UVU and Bumblehive deanonymization stories; (3) Grim Beeper / PETN **capability** analogies; (4) Kent foreign-lead blockage; (5) donor-text and Hamptons-pressure narratives; (6) aggressive counter-posts branding foreign-blame theories as antisemitic blood libel.
+
+**None of the above is a court finding that Israel, Mossad, or any named Israeli or Jewish person killed Charlie Kirk.** Proximity of phones, donor disputes, and capability demonstrations are **investigative questions**. Officially, prosecutors present a domestic lone-suspect case against Tyler Robinson (charged, not convicted).
+
+Primary cross-links: [foreign leads](/Israel/foreign-leads), [NSA cellphones](/Israel/NSA_Cellphones_Bumblehive), [motivation](/Israel/motivation), [Killer Israel/Mossad theory](/Killer/israel-mossad).
+
+## Related Areas
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [TPUSA](/TPUSA/overview)
+* [Motive](/Motive/overview)
+* [Mic — Exploding Mic Theory](/Mic/overview)
+
+</div>
+<div>
+
+* [Intelligence Services](/intelligence/overview)
+* [Media](/Media/overview)
+* [(Possible) Cover‑up](/CoverUp/overview)
+
+</div>
+</div>
+
+## Related
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Israel's Motivation to Kill Charlie](/Israel/motivation)
+* [Israel Foreign Leads](/Israel/foreign-leads)
+* [Reported Charlie Kirk Quotes About Israel and Donors](/Israel/Charlie_Quotes_Israel)
+
+</div>
+<div>
+
+* [Mossad and TPUSA](/Israel/Mossad_TPUSA/overview)
+* [Israel](/Israel/overview)
+* [Israel Hamptons](/Israel/israel-hamptons)
+
+</div>
+</div>

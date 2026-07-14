@@ -1,18 +1,18 @@
 # Law 2: Charlie Kirk Investigation - Intelligence Services Disclosure Act
 
-AUTHOR: Bryan Starbuck (BryanStarbuck@gmail.com)
+AUTHOR: [Bryan Starbuck](/People/bryan-starbuck) (BryanStarbuck@gmail.com)
 
 ## Title
 The Charlie Kirk Files Forced Disclosure Act - Intelligence Services
 
 ## Purpose
-To require all United States Intelligence Community agencies to release all information in their possession that could identify the perpetrator(s) of, or provide substantive insight into, the death of Charlie Kirk, including but not limited to the intelligence-related items enumerated in Schedule A of this Act, while protecting only currently active intelligence sources.
+To require all United States Intelligence Community agencies to release all information in their possession that could identify the perpetrator(s) of, or provide substantive insight into, the death of [Charlie Kirk](/People/charlie-kirk), including but not limited to the intelligence-related items enumerated in Schedule A of this Act, while protecting only currently active intelligence sources.
 
 **Disclaimer:** This document does not assert as fact that any individual, organization, or government entity has committed any criminal, illegal, or immoral act. All references to persons and entities are made solely for proposed legislative and legal discovery purposes — to identify what information should be disclosed and investigated through lawful processes. The items listed here are questions for investigation, not conclusions. No statement in this document should be understood as an accusation, allegation, or assertion of wrongdoing against any party. This document exists solely to support public transparency through lawful legislative and judicial processes.
 
 ## Section 1: Definitions
 
-(a) **"Intelligence Community agencies"** means all agencies and elements of the Intelligence Community as defined in 50 U.S.C. 3003(4), including but not limited to: the Central Intelligence Agency (CIA), the National Security Agency (NSA), the Defense Intelligence Agency (DIA), the National Reconnaissance Office (NRO), the National Geospatial-Intelligence Agency (NGA), intelligence elements of the Armed Forces (including Army Intelligence and Security Command, Naval Criminal Investigative Service, Air Force Office of Special Investigations), the FBI's intelligence division, the Department of Homeland Security's intelligence elements, the Office of the Director of National Intelligence (ODNI), the Department of Energy's intelligence element, the Department of Treasury's intelligence element, the Department of State's Bureau of Intelligence and Research (INR), and any other element of the United States government engaged in intelligence activities.
+(a) **"Intelligence Community agencies"** means all agencies and elements of the Intelligence Community as defined in 50 U.S.C. 3003(4), including but not limited to: the Central Intelligence Agency ([CIA](/US_Intelligence/cia)), the National Security Agency ([NSA](/US_Intelligence/nsa)), the Defense Intelligence Agency (DIA), the National Reconnaissance Office (NRO), the National Geospatial-Intelligence Agency (NGA), intelligence elements of the Armed Forces (including Army Intelligence and Security Command, Naval Criminal Investigative Service, Air Force Office of Special Investigations), the FBI's intelligence division, the Department of Homeland Security's intelligence elements, the Office of the Director of National Intelligence (ODNI), the Department of Energy's intelligence element, the Department of Treasury's intelligence element, the Department of State's Bureau of Intelligence and Research (INR), and any other element of the United States government engaged in intelligence activities.
 
 (b) **"Covered information"** means any intelligence product, analysis, report, communication intercept, surveillance data, satellite imagery, signals intelligence, human intelligence reporting, assessment, cable traffic, or any other information, in any format, that could:
    1. Identify or suggest the identity of any person involved in the death of Charlie Kirk
@@ -22,7 +22,7 @@ To require all United States Intelligence Community agencies to release all info
    5. Relate to any foreign intelligence service activity in the State of Utah during the period January 1, 2025 through December 31, 2025
    6. Relate to threats against Charlie Kirk or similarly situated public figures by any foreign or domestic entity
    7. Relate to any of the specific items enumerated in Schedule A, including but not limited to: foreign aircraft activity (Items #1, #81-#86), Israeli cell phones at UVU (Items #26, #87-#91), electronic jamming (Item #11), drone and surveillance operations (Items #8, #9, #12, #15, #155-#159), foreign intelligence contacts with TPUSA personnel (Items #3-#4, #53, #160-#165), psychological operations (Item #38), and international liaison communications (Items #171-#175)
-   8. Relate to any aspect of the Charlie Kirk investigation, the prosecution of Tyler Robinson, or any matter that could help establish the full truth about the circumstances of Charlie Kirk's death
+   8. Relate to any aspect of the Charlie Kirk investigation, the prosecution of [Tyler Robinson](/People/tyler-robinson), or any matter that could help establish the full truth about the circumstances of Charlie Kirk's death
 
 (c) **"Final output information"** means the conclusions, assessments, and analytical products derived from intelligence activities, excluding only the specific identity of human intelligence sources and specific technical collection methods currently in active use.
 
@@ -41,15 +41,15 @@ To require all United States Intelligence Community agencies to release all info
 (a) In addition to the broad catch-all requirement, the following categories are specifically mandated for disclosure, cross-referencing Schedule A items:
 
 **Foreign Intelligence Service Activity in Utah (Items #2, #26, #55, #62-#66):**
-   1. All intelligence regarding threats, plans, or actions by any foreign intelligence service (including but not limited to Mossad, Egyptian General Intelligence Directorate, French DGSE) toward the assassination of Charlie Kirk
+   1. All intelligence regarding threats, plans, or actions by any foreign intelligence service (including but not limited to [Mossad](/intelligence/Mossad), Egyptian General Intelligence Directorate, French DGSE) toward the assassination of Charlie Kirk
    2. All intelligence regarding foreign intelligence service activity in Utah from January 2023 to present
    3. All intelligence regarding the approximately 12 Israeli-registered cell phones at UVU on September 10, 2025, including NSA tracking data, subscriber identification, and location history
-   4. All intelligence regarding threats or consideration of harm to similarly situated individuals (Marjorie Taylor Greene, Matt Gaetz, Andrew Breitbart, Candace Owens, Tucker Carlson, Thomas Massie)
+   4. All intelligence regarding threats or consideration of harm to similarly situated individuals (Marjorie Taylor Greene, Matt Gaetz, Andrew Breitbart, [Candace Owens](/People/candace-owens), [Tucker Carlson](/People/tucker-carlson), Thomas Massie)
    5. All SIGINT, HUMINT, IMINT, and MASINT products related to foreign intelligence operations in the Utah area
 
 **Aircraft and Surveillance Operations (Items #1, #15, #49, #81-#86, #155-#159):**
-   1. All intelligence regarding Egyptian aircraft SU-BTT, SU-BND, SU-BTU, SU-BTV, SU-BGM, and Egyptian military aircraft T7ELL and EJM36
-   2. All intelligence regarding surveillance aircraft N1098L (HADES spy plane), including who contracted, operated, and received its surveillance feed
+   1. All intelligence regarding Egyptian aircraft [SU-BTT](/Planes/SU-BTT), [SU-BND](/Planes/Egyptian-Armada), [SU-BTU](/Planes/Egyptian-Armada), [SU-BTV](/Planes/Egyptian-Armada), [SU-BGM](/Planes/Egyptian-Armada), and Egyptian military aircraft T7ELL and EJM36
+   2. All intelligence regarding surveillance aircraft [N1098L](/Planes/N1098L/overview) (HADES spy plane), including who contracted, operated, and received its surveillance feed
    3. All intelligence regarding military or civilian drones operating at or near UVU on September 10, 2025
    4. All intelligence regarding U.S. Air Force VIP transport jet 99-0404 (SAM callsign) flights September 8-9, 2025
    5. All intelligence regarding any aircraft on the Schedule A plane list that flew with transponders off
@@ -72,13 +72,13 @@ To require all United States Intelligence Community agencies to release all info
    4. All intelligence regarding Charlie Kirk's DOGE-equivalent audit of TPUSA financial irregularities
 
 **Psychological Operations and Handler Activity (Items #38-#41):**
-   1. All intelligence regarding psychological operations or manipulation of Tyler Robinson or Lance Twiggs
+   1. All intelligence regarding psychological operations or manipulation of Tyler Robinson or [Lance Twiggs](/People/lance-twiggs)
    2. All intelligence regarding any interactions between Tyler Robinson, Lance Twiggs, or their associates with any intelligence service
    3. All intelligence regarding communications via Discord, Steam, in-game voice chat, or encrypted messaging connected to the case
 
 **DoD Contracts and Weapons (Items related to N0016425PJ538):**
    1. All intelligence regarding DoD contract N0016425PJ538 for miniaturized anti-personnel charges
-   2. All intelligence regarding the AES factory explosion (October 10, 2025)
+   2. All intelligence regarding the [AES](/Mic/AES) factory explosion (October 10, 2025)
    3. All intelligence regarding any weaponized microphone or explosive device technology
 
 **International Communications (Items #171-#175):**
@@ -175,3 +175,43 @@ To require all United States Intelligence Community agencies to release all info
 ## Section 11: Effective Date
 
 This Act shall take effect immediately upon enactment. Records preservation requirements (Section 6) take effect upon introduction of this bill.
+
+## Related Areas
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [U.S. Intelligence](/US_Intelligence/overview)
+* [Intelligence Services](/intelligence/overview)
+* [FBI](/FBI/overview)
+
+</div>
+<div>
+
+* [(Possible) Cover‑up](/CoverUp/overview)
+* [Government Evidence](/gov/overview)
+* [Fix the Charlie Kirk Situation](/Fix/overview)
+
+</div>
+</div>
+
+## Related
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Law 2: Charlie Kirk Investigation - Intelligence Services Dis…](/laws/US_Intel/Law_2_US_Intel)
+* [Human Requirements: Law 2 - US Intelligence Services Forced D…](/laws/other/old/US_Intel/more/Human_Requirements)
+* [Notes: Law 2 - US Intelligence Services Forced Disclosure](/laws/other/old/US_Intel/more/Notes_2_US_Intel)
+
+</div>
+<div>
+
+* [Output Analysis: Law 2 - US Intelligence Services Forced Disc…](/laws/other/old/US_Intel/more/Output_Analysis)
+* [Human Requirements: Law 2 - US Intelligence Services Forced D…](/laws/US_Intel/more/Human_Requirements)
+* [Charlie Kirk Assassination — Forced Disclosure](/laws)
+
+</div>
+</div>

@@ -2,7 +2,7 @@
 
 **Analyzed by:** Attorney review of all four laws against the primary charter (`other/List_Of_Laws.md`) and the full investigative record (`other/Bkup_Charlie_Kirk.txt`)
 **Date:** March 26, 2026 (Updated from March 19, 2026 analysis)
-**Method:** Threat analysis from the perspective of foreign and domestic intelligence services, compromised politicians, and agencies that want to keep the investigation covered up. Each problem is assessed for its ability to sabotage, delay, or undermine the laws' ultimate goal: forcing the full truth about the assassination of Charlie Kirk to come out.
+**Method:** Threat analysis from the perspective of foreign and domestic intelligence services, compromised politicians, and agencies that want to keep the investigation covered up. Each problem is assessed for its ability to sabotage, delay, or undermine the laws' ultimate goal: forcing the full truth about the assassination of [Charlie Kirk](/People/charlie-kirk) to come out.
 
 **Note on Updates:** The working versions of all four laws contain significant improvements over the previously committed versions. Many problems from the March 19 analysis have been partially or fully addressed. This updated analysis identifies: (1) problems that remain despite improvements, (2) NEW problems created or revealed by the changes, and (3) the most critical remaining vulnerabilities ranked by threat severity.
 
@@ -37,8 +37,8 @@ The three-judge panel approach is better than a single judge, but the D.C. Distr
 
 **Problem:** The investigation file documents an extensive pattern of cover-up whenever Israeli intelligence is implicated in a U.S. investigation:
 - JFK assassination: 100,000+ Israel-related documents remain unreleased after 60+ years.
-- Epstein files: Records connecting Epstein to Mossad operations heavily redacted.
-- Charlie Kirk case: Kashyap Patel (FBI Director) "snuffed out efforts" by the Counterterrorism Center to investigate foreign government involvement. The stated reason: it could "provide ammunition to Robinson's defense lawyers."
+- Epstein files: Records connecting Epstein to [Mossad](/intelligence/Mossad) operations heavily redacted.
+- [Charlie Kirk](/People/charlie-kirk) case: Kashyap Patel ([FBI](/FBI/overview) Director) "snuffed out efforts" by the Counterterrorism Center to investigate foreign government involvement. The stated reason: it could "provide ammunition to Robinson's defense lawyers."
 - AIPAC's documented influence over Congress: They can pressure members to vote against these laws or attach crippling amendments.
 - The Carbyne 911 system (Israeli intelligence-linked) deployed across Utah, potentially giving real-time access to 911 calls and first responder communications.
 
@@ -63,7 +63,7 @@ The new "No Israel Exception" provisions (Law 2 Section 4A, Law 3 Section 4C-2, 
 - Witness videos remotely deleted from phones
 - FBI requesting witnesses delete video
 - Google search evidence deleted
-- AES factory explosion (October 10, 2025) potentially destroying physical evidence of the DoD contract for miniaturized anti-personnel charges
+- [AES](/Mic/AES) factory explosion (October 10, 2025) potentially destroying physical evidence of the DoD contract for miniaturized anti-personnel charges
 - Airport badge access records modified the day after the assassination
 - No death certificate filed (preventing independent verification)
 - Body removed from hospital quickly with no known burial location
@@ -193,7 +193,7 @@ Provisions (b) and (d) are constitutionally vulnerable:
 
 ### 6. Private Entity Compliance Deadline Creates Aggressive Timeline for Small Entities
 
-**Problem:** Section 2(e) now requires private entities to comply within 30 days of subpoena service, with $100,000/day penalties for non-compliance. For large entities (TPUSA, banks, telecom providers), this is appropriate. But small entities (a rental car counter employee, a hotel) may face genuine logistical challenges in locating records in 30 days, and $100,000/day could force them into bankruptcy rather than compliance.
+**Problem:** Section 2(e) now requires private entities to comply within 30 days of subpoena service, with $100,000/day penalties for non-compliance. For large entities ([TPUSA](/TPUSA/overview), banks, telecom providers), this is appropriate. But small entities (a rental car counter employee, a hotel) may face genuine logistical challenges in locating records in 30 days, and $100,000/day could force them into bankruptcy rather than compliance.
 
 **Status:** FIXED in Law 1 (March 26, 2026). Section 2(e) now includes a Small Entity Extension allowing entities with fewer than 50 employees to petition for a single 30-day extension upon showing good faith compliance efforts. The review board rules within 7 days. Extension not available to entities that have destroyed or altered records.
 
@@ -286,7 +286,7 @@ Provisions (b) and (d) are constitutionally vulnerable:
 
 ---
 
-### 5. No Provision Requiring NSA to Run Targeted Queries
+### 5. No Provision Requiring [NSA](/US_Intelligence/nsa) to Run Targeted Queries
 
 **Problem:** The law requires disclosure of existing intelligence products but does not mandate NSA to conduct targeted queries of its SIGINT databases. If NSA never ran a query on "Charlie Kirk" or the aircraft tail numbers, it can truthfully say "no responsive records exist" even though the raw intercepts are in its databases.
 
@@ -330,7 +330,7 @@ Provisions (b) and (d) are constitutionally vulnerable:
 
 ### 2. Cross-Agency Staffing (Section 3B) Has a Loophole for Digital Access
 
-**Problem:** Section 3B establishes cross-agency investigation (FBI investigates CIA, CIA investigates FBI). The Independent Commission Element gets physically separate office space and independent IT. But the provision does not grant the investigating team administrator-level access to the agency being investigated's databases. The FBI team investigating CIA must ask CIA IT staff to run queries, which allows filtering.
+**Problem:** Section 3B establishes cross-agency investigation (FBI investigates [CIA](/US_Intelligence/cia), CIA investigates FBI). The Independent Commission Element gets physically separate office space and independent IT. But the provision does not grant the investigating team administrator-level access to the agency being investigated's databases. The FBI team investigating CIA must ask CIA IT staff to run queries, which allows filtering.
 
 **Status:** NOT FIXED in the working version. The new "Full Team Independence" provision (Section 4D(f)) extends IT independence to all teams but only for their OWN systems -- not for accessing the target agency's systems.
 
@@ -366,7 +366,7 @@ Provisions (b) and (d) are constitutionally vulnerable:
 
 ### 6. No Brady Obligation Duplicated in Law 3
 
-**Problem:** Law 1 has a statutory Brady obligation (Section 12K). Law 3's investigation teams will discover exculpatory evidence relevant to Tyler Robinson's defense, but Law 3 has no explicit Brady provision requiring investigation teams to produce exculpatory material to Robinson's defense counsel.
+**Problem:** Law 1 has a statutory Brady obligation (Section 12K). Law 3's investigation teams will discover exculpatory evidence relevant to [Tyler Robinson](/People/tyler-robinson)'s defense, but Law 3 has no explicit Brady provision requiring investigation teams to produce exculpatory material to Robinson's defense counsel.
 
 **Status:** NOT FIXED in the working version.
 
@@ -410,7 +410,7 @@ Provisions (b) and (d) are constitutionally vulnerable:
 
 ---
 
-### 2. Named Investigators Include the Author (Bryan Starbuck) -- Political Vulnerability
+### 2. Named Investigators Include the Author ([Bryan Starbuck](/People/bryan-starbuck)) -- Political Vulnerability
 
 **Problem:** The author of all four laws is named as a Designated Trusted Investigator. Opponents will argue the laws were written for personal benefit, undermining legislative credibility.
 
@@ -588,3 +588,55 @@ The overlap creates litigation opportunities. An agency could argue that the exi
 Members of Congress will balk at $300M+ in mandatory spending for a single investigation. The Epstein Act cost essentially nothing -- it only required disclosure of existing records. The price tag is a political vulnerability.
 
 **Solution:** Consider phased funding: initial appropriation of $100M for the first year, with automatic renewal if the investigation is ongoing. Frame the cost comparison: the Iraq War cost $2 trillion based on faulty intelligence. $300M to investigate whether the same intelligence establishment assassinated a U.S. citizen is proportional.
+
+
+## Citizen Investigator Claims on X (Forced Disclosure Discourse)
+
+*(Attributed public commentary about transparency demands — does not rewrite statutory text above.)*
+
+Citizen investigators and legislative advocates on X argue that ordinary FOIA and criminal discovery will not force full production in the Charlie Kirk case, citing **JFK Records Act failures** (agencies missing decades of deadlines; reports of large unreviewed FBI caches) and the **Epstein Files Transparency Act** pattern of partial dumps without a Special Master with teeth. Accounts such as **@HolonCitizen** have promoted a four-law package (FBI/DOJ disclosure, IC disclosure, mandatory investigation, trusted civilian investigators) and named figures including Candace Owens, Dave Smith, Tucker Carlson, Ian Carroll, and others as proposed **trusted investigators** under Law 4-style designs — a **policy proposal**, not an enacted statute.
+
+Parallel media clips recirculated by accounts such as **@FurkanGozukara** claim **Candace Owens** has alleged federal discovery obstruction (FBI/ATF files; director-level blocks). Counter-posts argue the Robinson case already has DNA, video, and confession-note material unlike JFK and therefore needs no special act. This page records both the **demand for forced disclosure** and the **official-narrative pushback** so readers can judge whether Schedule A-style lists (FBI 302s, cell data, aircraft, drones, ballistics, AV SD cards) match what X investigators say remains withheld.
+
+Related public pages: [Fix overview](/Fix/overview), [laws landing](/laws), [Discovery](/laws/Discovery), [explain all four laws](/laws/explain/all).
+
+
+## Related Areas
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Fix the Charlie Kirk Situation](/Fix/overview)
+* [(Possible) Cover‑up](/CoverUp/overview)
+* [Government Evidence](/gov/overview)
+
+</div>
+<div>
+
+* [Proof Intel Services](/Proof_Intel_Services/overview)
+* [Legal Investigation](/legal_investigation/overview)
+* [FBI](/FBI/overview)
+
+</div>
+</div>
+
+## Related
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Problems, Vulnerabilities, and Recommended Fixes — Comprehens…](/laws/other/analysis/Any_Problems)
+* [Additional Disclosure Items to Consider](/laws/other/analysis/Any_more_to_Add)
+* [Factual Challenges — REMAINING UNFIXED ITEMS](/laws/other/analysis/Challenges)
+
+</div>
+<div>
+
+* [Attorney Analysis: Improvements for the Four Charlie Kirk Dis…](/laws/other/analysis/Improve)
+* [Laws Not Complying with Charter (List_Of_Laws.md) -- Comprehe…](/laws/other/analysis/Laws_Not_Complying)
+* [Charlie Kirk Files Forced Disclosure -- Threat Analysis & Rec…](/laws/other/Worries_By_Each_4_Laws)
+
+</div>
+</div>

@@ -27,7 +27,7 @@ Make a slide deck only for this law here.
 
 * Make it 80 slides
 
-Make sure it motivates. Make sure it gives shocking why these laws would make everything jump far forward towards the truth. People aren't necessarily aware of the Charlie Kirk thing. What would be surprising to them is that these laws would be an incredible solution to this main for more progress. 
+Make sure it motivates. Make sure it gives shocking why these laws would make everything jump far forward towards the truth. People aren't necessarily aware of the [Charlie Kirk](/People/charlie-kirk) thing. What would be surprising to them is that these laws would be an incredible solution to this main for more progress. 
 
 What would resonate with Americans since the justice period? 
 

@@ -12,7 +12,7 @@
 ### Precedent: JFK Assassination Records Collection Act of 1992 (Public Law 102-526)
 - Mandated release of all JFK assassination records with 25-year deadline (October 2017)
 - Created the Assassination Records Review Board (ARRB) to oversee compliance
-- **Critical failures:** Nearly 5% of records still redacted as of 2025. CIA and FBI convinced Presidents Obama, Trump, and Biden to continue withholding ~3,500 records past the 2017 deadline. No official was ever prosecuted for non-compliance. ARRB was temporary and expired. Some records confirmed destroyed
+- **Critical failures:** Nearly 5% of records still redacted as of 2025. [CIA](/US_Intelligence/cia) and [FBI](/FBI/overview) convinced Presidents Obama, Trump, and Biden to continue withholding ~3,500 records past the 2017 deadline. No official was ever prosecuted for non-compliance. ARRB was temporary and expired. Some records confirmed destroyed
 - **Trump's 2025 Executive Order:** On January 23, 2025, Trump signed an executive order directing declassification of JFK, RFK, and MLK records -- showing that 30+ years later, full compliance has never been achieved
 - **Critical lessons:**
   1. Laws without real penalties are suggestions, not mandates
@@ -25,7 +25,7 @@
 ### Key Improvement: Broad Catch-All Plus Specific Enumeration
 The major structural improvement in this version is the dual-track approach:
 1. **Section 2** provides a broad catch-all requiring disclosure of ALL information related to the investigation -- not limited to any specific list
-2. **Section 3** specifically enumerates the 175 items from the Charlie Kirk disclosure list, so agencies cannot claim ignorance of what is required
+2. **Section 3** specifically enumerates the 175 items from the [Charlie Kirk](/People/charlie-kirk) disclosure list, so agencies cannot claim ignorance of what is required
 3. **Section 3(c)** explicitly states that the specific items do not limit the broad requirement -- both apply concurrently
 
 This approach draws from the Epstein Act's enumeration of specific record categories (Section 2(a)(1)-(8)) while going further with the catch-all provision.
@@ -65,3 +65,43 @@ This approach draws from the Epstein Act's enumeration of specific record catego
 - Roll Call on compliance pursuit: https://rollcall.com/2026/02/02/lawmakers-pursue-full-compliance-with-epstein-transparency-law/
 - Trump JFK EO: https://www.whitehouse.gov/presidential-actions/2025/01/declassification-of-records-concerning-the-assassinations-of-president-john-f-kennedy/
 - Charlie Kirk 175 Critical Items: https://github.com/BryanStarbuck/Charlie_Kirk_175_Critical_To_Expose
+
+## Related Areas
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Fix the Charlie Kirk Situation](/Fix/overview)
+* [FBI](/FBI/overview)
+* [(Possible) Cover‑up](/CoverUp/overview)
+
+</div>
+<div>
+
+* [Government Evidence](/gov/overview)
+* [Proof Intel Services](/Proof_Intel_Services/overview)
+* [Your Actions Fix It](/Your_Actions_Fix_It/overview)
+
+</div>
+</div>
+
+## Related
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Law 1: Charlie Kirk Investigation - DoJ/FBI Forced Disclosure…](/laws/other/old/DoJ_FBI/Law_1_DoJ_FBI)
+* [Human Requirements: Law 1 - DoJ/FBI Forced Disclosure](/laws/other/old/DoJ_FBI/more/Human_Requirements)
+* [Output Analysis: Law 1 - DoJ/FBI Forced Disclosure](/laws/other/old/DoJ_FBI/more/Output_Analysis)
+
+</div>
+<div>
+
+* [Notes: Law 1 - DoJ/FBI Forced Disclosure](/laws/DoJ_FBI/more/Notes_1_DoJ_FBI)
+* [Notes: Law 2 - US Intelligence Services Forced Disclosure](/laws/other/old/US_Intel/more/Notes_2_US_Intel)
+* [Notes: Law 3 - Require Investigation](/laws/other/old/Require_to_Investigate/more/Notes_3_Require_to_Investigate)
+
+</div>
+</div>

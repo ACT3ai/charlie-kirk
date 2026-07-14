@@ -1,8 +1,8 @@
 # Discovery — Charlie Kirk Assassination Investigation
 
-AUTHOR: Bryan Starbuck (BryanStarbuck@gmail.com)
+AUTHOR: [Bryan Starbuck](/People/bryan-starbuck) (BryanStarbuck@gmail.com)
 
-We would like to have the defense team formally submit this entire list as formal discovery in the case related to the Charlie Kirk assassination.
+We would like to have the defense team formally submit this entire list as formal discovery in the case related to the [Charlie Kirk](/People/charlie-kirk) assassination.
 
 We would like to have the FBI at the federal level and U.S. intelligence both become legally recognized custodial agencies in this matter. We would like to have it established in public documents that [Brady Laws](https://en.wikipedia.org/wiki/Brady_v._Maryland) apply at the FBI federal level and at the U.S. intelligence level — so that the U.S. citizen base can trust in justice, knowing that Brady Laws enforce that these agencies must disclose any and all relevant information. Under Brady Law, they are obligated to hand over all such information to the defense. Any failure to do so constitutes a Brady Law violation.
 
@@ -66,7 +66,7 @@ We would also like the defense team to submit the items below as formal discover
 # List to Disclose
 ## State of Utah v. Tyler Alexander Robinson
 ## Case No. 251403576 | Fourth Judicial District Court, Utah County
-## Judge Derek P. Pullan
+## Judge [Derek P. Pullan](/People/derek-p-pullan)
 
 **Disclaimer:** This document does not assert as fact that any individual, organization, or government entity has committed any criminal, illegal, or immoral act. All references to persons and entities are made solely for proposed legislative and legal discovery purposes — to identify what information should be disclosed and investigated through lawful processes. The items listed here are questions for investigation, not conclusions. No statement in this document should be understood as an accusation, allegation, or assertion of wrongdoing against any party. This document exists solely to support public transparency through lawful legislative and judicial processes.
 
@@ -74,7 +74,7 @@ We would also like the defense team to submit the items below as formal discover
 WHY #1: If an explosion happened with any mic or electronics on Charlie
     Kirk, that would establish another possible cause of death. It also
     can establish other people involved, even indicating that people with
-    power beyond what Tyler Robinson was capable of, were involved. The timing
+    power beyond what [Tyler Robinson](/People/tyler-robinson) was capable of, were involved. The timing
     matching can also show that they controlled Tyler Robinson, all of the way down
     to the timing. It can also cast doubt that he caused the death of Charlie Kirk.
     It can also possibly show that the FBI is doing a cover-up because this information
@@ -104,7 +104,7 @@ from government possession into the court case and history books.
 
 
 (Possible) Linkage #2: The [12 Israeli-registered cellphones](#israeli-cell-phones) at UVU prove foreign intelligence presence.
-    NSA reportedly tracked these phones. If discovery confirms Israeli intelligence
+    [NSA](/US_Intelligence/nsa) reportedly tracked these phones. If discovery confirms Israeli intelligence
     officers were physically present at the assassination scene, it establishes
     that a foreign state actor had operatives in position. Combined with cell
     tower data showing these phones also pinged near Tyler's residence, it proves
@@ -189,7 +189,7 @@ The first section is on a possible exploding Mic theory
 
 ### The DoD Contract
 * May 1, 2025: DoD awarded contract N0016425PJ538 for "MINIATURIZED-XS DEMOLITION CHARGES, ANTI PERSONNEL-XS"
-* Recipient: Accurate Energetic Systems (AES), McEwen, Tennessee
+* Recipient: Accurate Energetic Systems ([AES](/Mic/AES)), McEwen, Tennessee
 * Contract value: $440,494
 * Delivery deadline: August 25, 2025
 * Awarding agency: Department of Defense - Department of the Navy - NSWC Crane
@@ -216,7 +216,7 @@ The first section is on a possible exploding Mic theory
 * Photos show square object (~2x2") in PERSON_25_REDACTED's front right pocket matching Rode Wireless GO II mic dimensions
 * PERSON_25_REDACTED photographed standing with sound crew and person who miked up Kirk
 * Post-killing photos show PERSON_25_REDACTED's pocket empty
-* Potential involvement of Israeli secret service or Mossad in orchestrating an inside hit, drawing parallels to 2024 pager bombs in Lebanon (see [Israeli Cell Phones](#israeli-cell-phones))
+* Potential involvement of Israeli secret service or [Mossad](/intelligence/Mossad) in orchestrating an inside hit, drawing parallels to 2024 pager bombs in Lebanon (see [Israeli Cell Phones](#israeli-cell-phones))
 
 ### The Microphone Type
 * Kirk wearing lavalier microphone (wireless)
@@ -245,7 +245,7 @@ The first section is on a possible exploding Mic theory
 * Fragment struck tent roof
 * Shards found on Kirk's clothing
 * Shards found on ground where Kirk was carried
-* Fragments found on SUV floor during hospital transport (Candace Owens photos)
+* Fragments found on SUV floor during hospital transport ([Candace Owens](/People/candace-owens) photos)
 * Kirk's left hand shows cuts consistent with shrapnel (visible in casket photos)
 * Video shows low-speed projectile ejecting downward between Kirk's legs at moment of impact
 
@@ -390,26 +390,26 @@ The investigation shows that an intelligence service is very likely involved wit
   |-------------|------------------------------------------------------------------------------|
   | SU-BTT      | Egyptian-registered Falcon 7X / Gulfstream class (Yellow plane)              |
   | SU-BND      | Egyptian-registered Gulfstream G550 (Blue plane)                             |
-  | SU-BTU      | Egyptian-registered                                                          |
-  | SU-BTV      | Egyptian-registered                                                          |
-  | SU-BGM      | Egyptian-registered Gulfstream IV                                            |
+  | [SU-BTU](/Planes/Egyptian-Armada)      | Egyptian-registered                                                          |
+  | [SU-BTV](/Planes/Egyptian-Armada)      | Egyptian-registered                                                          |
+  | [SU-BGM](/Planes/Egyptian-Armada)      | Egyptian-registered Gulfstream IV                                            |
   | N1098L      | Bombardier Global 6500 - HADES spy plane (operated by LASAI Aviation II LLC) |
-  | N888KG      | Private jet (owned by N888KG LLC, Lehi, Utah)                                |
-  | N59906      | Piper PA-31 Navajo Chieftain (operated by MARC Inc. - surveillance)          |
-  | N560TW      | Cessna Citation XLS twin-jet (owned by T.W. Lewis Aviation LLC)              |
-  | N102DZ      | Charlie Kirk's plane (15-16 passengers)                                      |
-  | N40JD       | Beechcraft Premier I (6 seats)                                              |
-  | N872RA      | Hawker Beechcraft (7 seats)                                                  |
+  | [N888KG](/Planes/N888KG)      | Private jet (owned by N888KG LLC, Lehi, Utah)                                |
+  | [N59906](/Planes/N59906)      | Piper PA-31 Navajo Chieftain (operated by MARC Inc. - surveillance)          |
+  | [N560TW](/Planes/N560TW)      | Cessna Citation XLS twin-jet (owned by T.W. Lewis Aviation LLC)              |
+  | [N102DZ](/Planes/N102DZ)      | Charlie Kirk's plane (15-16 passengers)                                      |
+  | [N40JD](/Planes/N40JD)       | Beechcraft Premier I (6 seats)                                              |
+  | [N872RA](/Planes/N872RA)      | Hawker Beechcraft (7 seats)                                                  |
   | 99-0404     | U.S. Air Force C-37A Gulfstream V VIP jet (SAM - Special Air Mission)        |
   | T7ELL       | Egyptian military plane                                                      |
   | EJM36       | Egyptian military plane                                                      |
-  | N55906      | Mentioned as "other interesting flight"                                      |
+  | [N55906](/Planes/N55906)      | Mentioned as "other interesting flight"                                      |
 
 #2: Does the FBI, DoJ or any of the US intelligence community have any knowledge of threats, plans
   or actions by any foreign intelligence service or country towards assassination of Charlie Kirk?
   Or considering if they may want to do that. Or making threats or possible plans towards that?
   This includes if a foreign country hired "contractors" to do the work.
-#3: Did TPUSA have any foreigners or anyone who has a citizenship besides USA citizenship?
+#3: Did [TPUSA](/TPUSA/overview) have any foreigners or anyone who has a citizenship besides USA citizenship?
 #4: For the list of TPUSA donors, did any of them have any communication, interaction or meetings with
   any foreign intelligence service within the 3 months before the assassination?
     Does the FBI, DoJ or US intelligence have any documents, investigation information,
@@ -445,7 +445,7 @@ The investigation shows that an intelligence service is very likely involved wit
   * Message to PERSON_2_REDACTED: PERSON_7_REDACTED said "The Left will kill me" (???)
   * PERSON_4_REDACTED: Charlie texted me and said "I know they want me dead. I'm under the gun right now please pray for me"
   * Message to Andrew: "They will kill me".
-  * PERSON_20_REDACTED (Infowars) – went public: Charlie told him days before he feared Israel would be taken out.
+  * PERSON_20_REDACTED (Infowars) – went public: Charlie told him days before he feared [Israel](/Israel) would be taken out.
   * PERSON_3_REDACTED (TPUSA insider) – confirmed Charlie's texts about threats.
   * PERSON_4_REDACTED – went on record: The day before the event Charlie told him directly "they're going to take me out."
   * Charlie texted "During this combative meeting, Kirk reportedly texted others saying, "THEY ARE GOING TO KILL ME"
@@ -464,11 +464,11 @@ The investigation shows that an intelligence service is very likely involved wit
 #18: Any money transfer to Tyler Robinson? Includes (but not limited to) any possible $50,000 in
   wire transfers that flowed through DSA-linked accounts in the months leading to the killing.
   Any knowledge of what it was for? Logistics, travel, and even weapon acquisition.
-#19: Any money transfer to Lance Twiggs? Includes (but not limited to)
+#19: Any money transfer to [Lance Twiggs](/People/lance-twiggs)? Includes (but not limited to)
   any possible $20,000 transfer? Or multiple transfers?
 
 
-#20: Any information about the possible "distraction people". See list below. List: a) PERSON_179_REDACTED = "Fake Doctor w/Gun" (middle name may be "Kim"), b) Pellet gun guy detailed by Provo PD in front of Joe Vera's Mexican Restaurant. 201 W Center St, Provo, UT 84601 with a "Ruger Yukon Magnum .177 Pellet Break Barrel Air Rifle", c) George Zinn, d) PERSON_53_REDACTED, e) Curly hair "David" (Owner of X account @RtothepowerofX) (his name may be "PERSON_139_REDACTED"), or f) any person the police were called on at Urban Pioneer Cafe or Sorenson Molecular Biotechnology Building (35 S Wasatch Dr, Salt Lake City, UT 84112, USA) on that day, g) PERSON_42_REDACTED (May not be his real name): (he may have also used the name "PERSON_42_REDACTED") who was interviewed on TV news, or h) any others.   Any communication
+#20: Any information about the possible "distraction people". See list below. List: a) PERSON_179_REDACTED = "Fake Doctor w/Gun" (middle name may be "Kim"), b) Pellet gun guy detailed by Provo PD in front of Joe Vera's Mexican Restaurant. 201 W Center St, Provo, UT 84601 with a "Ruger Yukon Magnum .177 Pellet Break Barrel Air Rifle", c) [George Zinn](/distraction_people/George_Zinn), d) PERSON_53_REDACTED, e) Curly hair "David" (Owner of X account @RtothepowerofX) (his name may be "PERSON_139_REDACTED"), or f) any person the police were called on at Urban Pioneer Cafe or Sorenson Molecular Biotechnology Building (35 S Wasatch Dr, Salt Lake City, UT 84112, USA) on that day, g) PERSON_42_REDACTED (May not be his real name): (he may have also used the name "PERSON_42_REDACTED") who was interviewed on TV news, or h) any others.   Any communication
     they had (or claimed) with any individual or gov coordinating / communicating / discussion of or payments / or any other interaction. Any claims they made. Any communication / coordination or meetings they had
     with any US or non-US intelligence or governments or anyone that may have communicated to
     them to be there, do anything or possibly talk about being paid. Anything about any of these
@@ -785,7 +785,7 @@ The investigation shows that an intelligence service is very likely involved wit
   wanted Charlie's life ended, wanted / talked about getting him killed, or threatening him.
 #56: Does US Intel or the FBI or DoJ have any information about any threats (or communication about harm, plans
   or consideration) to similar individuals? Specifically any in this list: Marjorie Taylor Greene (including threats to murder her son),
-  Matt Gaetz, Andrew Breitbart, Candace Owens, Tucker Carlson, Thomas Massie.
+  Matt Gaetz, Andrew Breitbart, Candace Owens, [Tucker Carlson](/People/tucker-carlson), Thomas Massie.
 
 **Disclaimer:** This document does not assert as fact that any individual, organization, or government entity has committed any criminal, illegal, or immoral act. All references to persons and entities are made solely for proposed legislative and legal discovery purposes — to identify what information should be disclosed and investigated through lawful processes. The items listed here are questions for investigation, not conclusions. No statement in this document should be understood as an accusation, allegation, or assertion of wrongdoing against any party. This document exists solely to support public transparency through lawful legislative and judicial processes.
 
@@ -814,7 +814,7 @@ FBI_Counterintelligence: FBI foreign intelligence service investigation files
   * Proves foreign intelligence services were operating in area
 #63: FBI threat assessments for Charlie Kirk: FBI Protective Intelligence. Threat assessments regarding foreign intelligence targeting Kirk.
   * Shows FBI knew of foreign threats before assassination
-#64: FBI liaison reports with CIA/NSA/DHS: FBI Salt Lake City Field Office. All cable traffic and intelligence sharing regarding foreign nationals.
+#64: FBI liaison reports with [CIA](/US_Intelligence/cia)/NSA/DHS: FBI Salt Lake City Field Office. All cable traffic and intelligence sharing regarding foreign nationals.
   * Reveals scope of federal knowledge about foreign actors
 #65: FBI counterintelligence surveillance logs: FBI Counterintelligence Division. Logs tracking suspected foreign intelligence officers in Utah.
   * Documents foreign intelligence officer presence and movements
@@ -1235,3 +1235,55 @@ General Foreign Intel: January 1, 2023 - present
 * Targets with bullet holes found in the defendant's residence
 * Handwritten note found under keyboard stating intent to "take out Charlie Kirk" (including photograph)
 * Statements from the defendant's mother, father, and family friend about events leading to surrender
+
+
+## Citizen Investigator Claims on X (Forced Disclosure Discourse)
+
+*(Attributed public commentary about transparency demands — does not rewrite statutory text above.)*
+
+Citizen investigators and legislative advocates on X argue that ordinary FOIA and criminal discovery will not force full production in the Charlie Kirk case, citing **JFK Records Act failures** (agencies missing decades of deadlines; reports of large unreviewed FBI caches) and the **Epstein Files Transparency Act** pattern of partial dumps without a Special Master with teeth. Accounts such as **@HolonCitizen** have promoted a four-law package (FBI/DOJ disclosure, IC disclosure, mandatory investigation, trusted civilian investigators) and named figures including Candace Owens, Dave Smith, Tucker Carlson, Ian Carroll, and others as proposed **trusted investigators** under Law 4-style designs — a **policy proposal**, not an enacted statute.
+
+Parallel media clips recirculated by accounts such as **@FurkanGozukara** claim **Candace Owens** has alleged federal discovery obstruction (FBI/ATF files; director-level blocks). Counter-posts argue the Robinson case already has DNA, video, and confession-note material unlike JFK and therefore needs no special act. This page records both the **demand for forced disclosure** and the **official-narrative pushback** so readers can judge whether Schedule A-style lists (FBI 302s, cell data, aircraft, drones, ballistics, AV SD cards) match what X investigators say remains withheld.
+
+Related public pages: [Fix overview](/Fix/overview), [laws landing](/laws), [Discovery](/laws/Discovery), [explain all four laws](/laws/explain/all).
+
+
+## Related Areas
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Fix the Charlie Kirk Situation](/Fix/overview)
+* [FBI](/FBI/overview)
+* [(Possible) Cover‑up](/CoverUp/overview)
+
+</div>
+<div>
+
+* [Government Evidence](/gov/overview)
+* [Proof Intel Services](/Proof_Intel_Services/overview)
+* [Legal Investigation](/legal_investigation/overview)
+
+</div>
+</div>
+
+## Related
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Charlie Kirk Assassination — Forced Disclosure](/laws)
+* [Law 1: Charlie Kirk Investigation - DoJ/FBI Forced Disclosure…](/laws/DoJ_FBI/Law_1_DoJ_FBI)
+* [Law 2: Charlie Kirk Investigation - Intelligence Services Dis…](/laws/US_Intel/Law_2_US_Intel)
+
+</div>
+<div>
+
+* [Law 3: Charlie Kirk Investigation - Mandatory Investigation Act](/laws/Require_to_Investigate/Law_3_Require_to_Investigate)
+* [Law 4: Charlie Kirk Investigation - Trusted Investigators Act](/laws/Trusted_Investigations/Law_4_Trusted_Investigations)
+* [Charlie Kirk Files Forced Disclosure -- Summary of Four Propo…](/laws/other/List_Of_Laws)
+
+</div>
+</div>

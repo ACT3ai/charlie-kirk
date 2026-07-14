@@ -1,4 +1,4 @@
-# Attorney Analysis: Improvements for the Four Charlie Kirk Disclosure Laws
+# Attorney Analysis: Improvements for the Four [Charlie Kirk](/People/charlie-kirk) Disclosure Laws
 
 **Analyst Role:** Attorney reviewing proposed federal legislation for enforceability, constitutional vulnerability, scope issues, and improvements
 **Scope:** All four laws (Law 1 DoJ/FBI, Law 2 US Intel, Law 3 Mandatory Investigation, Law 4 Trusted Investigators) and the Discovery document
@@ -122,7 +122,7 @@
 
 ### 12. Law 3 Cross-Agency Investigation Structure Has a Circular Problem
 
-**Problem:** Law 3 Section 3B assigns cross-agency investigation responsibilities: FBI investigates CIA, CIA investigates FBI, NSA investigates DIA/NRO/NGA, and the IC team investigates NSA. But if the evidence points to collusion between multiple agencies, the entire cross-investigation framework collapses — you cannot have CIA investigate FBI if both are implicated. The conflict-of-interest trigger (Section 4(c)) transfers authority to a special commission, but only after a written certification and 14-day congressional action period.
+**Problem:** Law 3 Section 3B assigns cross-agency investigation responsibilities: [FBI](/FBI/overview) investigates [CIA](/US_Intelligence/cia), CIA investigates FBI, [NSA](/US_Intelligence/nsa) investigates DIA/NRO/NGA, and the IC team investigates NSA. But if the evidence points to collusion between multiple agencies, the entire cross-investigation framework collapses — you cannot have CIA investigate FBI if both are implicated. The conflict-of-interest trigger (Section 4(c)) transfers authority to a special commission, but only after a written certification and 14-day congressional action period.
 
 **Why it matters:** In a scenario where multiple agencies are implicated (which the underlying investigation theory suggests), the cross-agency framework fails immediately and everything depends on the fallback special commission mechanism, which requires 14 days of congressional action. During those 14 days, implicated agencies could destroy evidence.
 
@@ -146,7 +146,7 @@
 
 **Why it matters:** If a Law 3 or Law 4 investigation team discovers exculpatory evidence (e.g., evidence that another party committed the assassination), and that evidence is not shared with Robinson's defense counsel, it could result in a wrongful conviction. The constitutional Brady obligation applies to prosecutors, not to congressional investigation teams — so there must be an explicit statutory requirement.
 
-**Fix:** Add a mandatory exculpatory disclosure provision to Laws 3 and 4 requiring all investigation teams and Designated Trusted Investigators to share any exculpatory, impeachment, or mitigating evidence with Tyler Robinson's defense counsel within 48 hours of discovery. Harmonize the disclosure timeline across all four laws to 48 hours (not 5 days in Law 1 and 14 days in Law 2).
+**Fix:** Add a mandatory exculpatory disclosure provision to Laws 3 and 4 requiring all investigation teams and Designated Trusted Investigators to share any exculpatory, impeachment, or mitigating evidence with [Tyler Robinson](/People/tyler-robinson)'s defense counsel within 48 hours of discovery. Harmonize the disclosure timeline across all four laws to 48 hours (not 5 days in Law 1 and 14 days in Law 2).
 
 ---
 
@@ -322,3 +322,55 @@ The most urgent fixes, ranked by importance to the laws surviving constitutional
 8. **Whistleblower "directly to public" restructuring** (Item 11) — most likely target for presidential veto
 9. **Private right of action harmonization and addition to Law 3** (Item 7)
 10. **Anti-mootness provision for criminal case resolution** (Item 18)
+
+
+## Citizen Investigator Claims on X (Forced Disclosure Discourse)
+
+*(Attributed public commentary about transparency demands — does not rewrite statutory text above.)*
+
+Citizen investigators and legislative advocates on X argue that ordinary FOIA and criminal discovery will not force full production in the Charlie Kirk case, citing **JFK Records Act failures** (agencies missing decades of deadlines; reports of large unreviewed FBI caches) and the **Epstein Files Transparency Act** pattern of partial dumps without a Special Master with teeth. Accounts such as **@HolonCitizen** have promoted a four-law package (FBI/DOJ disclosure, IC disclosure, mandatory investigation, trusted civilian investigators) and named figures including Candace Owens, Dave Smith, Tucker Carlson, Ian Carroll, and others as proposed **trusted investigators** under Law 4-style designs — a **policy proposal**, not an enacted statute.
+
+Parallel media clips recirculated by accounts such as **@FurkanGozukara** claim **Candace Owens** has alleged federal discovery obstruction (FBI/ATF files; director-level blocks). Counter-posts argue the Robinson case already has DNA, video, and confession-note material unlike JFK and therefore needs no special act. This page records both the **demand for forced disclosure** and the **official-narrative pushback** so readers can judge whether Schedule A-style lists (FBI 302s, cell data, aircraft, drones, ballistics, AV SD cards) match what X investigators say remains withheld.
+
+Related public pages: [Fix overview](/Fix/overview), [laws landing](/laws), [Discovery](/laws/Discovery), [explain all four laws](/laws/explain/all).
+
+
+## Related Areas
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Fix the Charlie Kirk Situation](/Fix/overview)
+* [(Possible) Cover‑up](/CoverUp/overview)
+* [Government Evidence](/gov/overview)
+
+</div>
+<div>
+
+* [Proof Intel Services](/Proof_Intel_Services/overview)
+* [Legal Investigation](/legal_investigation/overview)
+* [FBI](/FBI/overview)
+
+</div>
+</div>
+
+## Related
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Problems, Vulnerabilities, and Recommended Fixes — Comprehens…](/laws/other/analysis/Any_Problems)
+* [Additional Disclosure Items to Consider](/laws/other/analysis/Any_more_to_Add)
+* [Factual Challenges — REMAINING UNFIXED ITEMS](/laws/other/analysis/Challenges)
+
+</div>
+<div>
+
+* [Laws Not Complying with Charter (List_Of_Laws.md) -- Comprehe…](/laws/other/analysis/Laws_Not_Complying)
+* [Attorney Analysis: Improvements for Law 1 (DoJ/FBI Forced Dis…](/laws/other/analysis/Fixed/Improve)
+* [Charlie Kirk Files Forced Disclosure -- Threat Analysis & Rec…](/laws/other/Worries_By_Each_4_Laws)
+
+</div>
+</div>

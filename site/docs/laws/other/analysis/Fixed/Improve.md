@@ -69,7 +69,7 @@ Section 5(a) makes preservation duty enforceable upon enactment while setting tr
 
 ## 11. Missing Definitions for Key Terms — FIXED
 
-Section 1 now defines: "Investigation" (broadly), "Death of Charlie Kirk" (September 10, 2025, UVU, Orem, Utah), "Disclosure body" (review board under Section 8), "People Involved/People Listed" (35 categories P1-P35 from Schedule B).
+Section 1 now defines: "Investigation" (broadly), "Death of [Charlie Kirk](/People/charlie-kirk)" (September 10, 2025, UVU, Orem, Utah), "Disclosure body" (review board under Section 8), "People Involved/People Listed" (35 categories P1-P35 from Schedule B).
 
 ---
 
@@ -215,3 +215,55 @@ Law 3 S4(c): "reasonable basis to believe" standard, below probable cause.
 
 ### 12. No Conflict of Interest Provisions for Trusted Investigators (Law 4) — FIXED
 Law 4 S15F: annual financial disclosure, recusal process, prohibition on gifts, penalties for non-disclosure.
+
+
+## Citizen Investigator Claims on X (Forced Disclosure Discourse)
+
+*(Attributed public commentary about transparency demands — does not rewrite statutory text above.)*
+
+Citizen investigators and legislative advocates on X argue that ordinary FOIA and criminal discovery will not force full production in the Charlie Kirk case, citing **JFK Records Act failures** (agencies missing decades of deadlines; reports of large unreviewed FBI caches) and the **Epstein Files Transparency Act** pattern of partial dumps without a Special Master with teeth. Accounts such as **@HolonCitizen** have promoted a four-law package (FBI/DOJ disclosure, IC disclosure, mandatory investigation, trusted civilian investigators) and named figures including Candace Owens, Dave Smith, Tucker Carlson, Ian Carroll, and others as proposed **trusted investigators** under Law 4-style designs — a **policy proposal**, not an enacted statute.
+
+Parallel media clips recirculated by accounts such as **@FurkanGozukara** claim **Candace Owens** has alleged federal discovery obstruction (FBI/ATF files; director-level blocks). Counter-posts argue the Robinson case already has DNA, video, and confession-note material unlike JFK and therefore needs no special act. This page records both the **demand for forced disclosure** and the **official-narrative pushback** so readers can judge whether Schedule A-style lists (FBI 302s, cell data, aircraft, drones, ballistics, AV SD cards) match what X investigators say remains withheld.
+
+Related public pages: [Fix overview](/Fix/overview), [laws landing](/laws), [Discovery](/laws/Discovery), [explain all four laws](/laws/explain/all).
+
+
+## Related Areas
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Fix the Charlie Kirk Situation](/Fix/overview)
+* [(Possible) Cover‑up](/CoverUp/overview)
+* [Government Evidence](/gov/overview)
+
+</div>
+<div>
+
+* [Proof Intel Services](/Proof_Intel_Services/overview)
+* [Legal Investigation](/legal_investigation/overview)
+* [FBI](/FBI/overview)
+
+</div>
+</div>
+
+## Related
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Problems, Vulnerabilities, and Recommended Fixes — FIXED ITEMS](/laws/other/analysis/Fixed/Any_Problems)
+* [Additional Disclosure Items to Consider (Beyond the 175) — AL…](/laws/other/analysis/Fixed/Any_more_to_Add)
+* [Factual Challenges Analysis — FIXED ITEMS](/laws/other/analysis/Fixed/Challenges)
+
+</div>
+<div>
+
+* [Laws Not Complying with Charter — FIXED / RESOLVED ITEMS](/laws/other/analysis/Fixed/Laws_Not_Complying)
+* [Attorney Analysis: Improvements for the Four Charlie Kirk Dis…](/laws/other/analysis/Improve)
+* [Charlie Kirk Files Forced Disclosure -- Summary of Four Propo…](/laws/other/List_Of_Laws)
+
+</div>
+</div>

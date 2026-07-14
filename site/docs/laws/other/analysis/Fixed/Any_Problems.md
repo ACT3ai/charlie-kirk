@@ -8,7 +8,7 @@
 
 ====================
 
-## LAW 1: The Charlie Kirk Files Forced Disclosure Act -- Law Enforcement
+## LAW 1: The [Charlie Kirk](/People/charlie-kirk) Files Forced Disclosure Act -- Law Enforcement
 
 ### 6. No Protection Against "Slow Rolling" -- Producing Records in Unusable Format — FIXED
 
@@ -66,7 +66,7 @@ Section 4(c): entire investigation transfers (not just agency-involvement aspect
 
 ### 6. No Explicit Subpoena Power for Trusted Investigators Over Private Entities — FIXED
 
-Section 3(c) grants independent subpoena authority. Section 4(a) explicitly lists private entity subpoena power (TPUSA, Mosaic Pro Events, rental companies, hotels, AES, banks, telecoms). Non-compliance triggers same criminal penalties as government agencies.
+Section 3(c) grants independent subpoena authority. Section 4(a) explicitly lists private entity subpoena power ([TPUSA](/TPUSA/overview), Mosaic Pro Events, rental companies, hotels, [AES](/Mic/AES), banks, telecoms). Non-compliance triggers same criminal penalties as government agencies.
 
 ---
 
@@ -101,3 +101,55 @@ All four laws contain Personal Liability sections (Law 1 S14A, Law 2 S12B, Law 3
 ### C-7. Private Right of Action Is Too Slow for Emergency Situations — FIXED
 
 All four laws establish 48-hour emergency response provisions bypassing the 60-day notice requirement. Immediate preservation deadline, automatic presumption of obstruction, emergency court orders with 48-hour ruling requirement.
+
+
+## Citizen Investigator Claims on X (Forced Disclosure Discourse)
+
+*(Attributed public commentary about transparency demands — does not rewrite statutory text above.)*
+
+Citizen investigators and legislative advocates on X argue that ordinary FOIA and criminal discovery will not force full production in the Charlie Kirk case, citing **JFK Records Act failures** (agencies missing decades of deadlines; reports of large unreviewed FBI caches) and the **Epstein Files Transparency Act** pattern of partial dumps without a Special Master with teeth. Accounts such as **@HolonCitizen** have promoted a four-law package (FBI/DOJ disclosure, IC disclosure, mandatory investigation, trusted civilian investigators) and named figures including Candace Owens, Dave Smith, Tucker Carlson, Ian Carroll, and others as proposed **trusted investigators** under Law 4-style designs — a **policy proposal**, not an enacted statute.
+
+Parallel media clips recirculated by accounts such as **@FurkanGozukara** claim **Candace Owens** has alleged federal discovery obstruction (FBI/ATF files; director-level blocks). Counter-posts argue the Robinson case already has DNA, video, and confession-note material unlike JFK and therefore needs no special act. This page records both the **demand for forced disclosure** and the **official-narrative pushback** so readers can judge whether Schedule A-style lists (FBI 302s, cell data, aircraft, drones, ballistics, AV SD cards) match what X investigators say remains withheld.
+
+Related public pages: [Fix overview](/Fix/overview), [laws landing](/laws), [Discovery](/laws/Discovery), [explain all four laws](/laws/explain/all).
+
+
+## Related Areas
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Fix the Charlie Kirk Situation](/Fix/overview)
+* [(Possible) Cover‑up](/CoverUp/overview)
+* [Government Evidence](/gov/overview)
+
+</div>
+<div>
+
+* [Proof Intel Services](/Proof_Intel_Services/overview)
+* [Legal Investigation](/legal_investigation/overview)
+* [FBI](/FBI/overview)
+
+</div>
+</div>
+
+## Related
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Additional Disclosure Items to Consider (Beyond the 175) — AL…](/laws/other/analysis/Fixed/Any_more_to_Add)
+* [Factual Challenges Analysis — FIXED ITEMS](/laws/other/analysis/Fixed/Challenges)
+* [Attorney Analysis: Improvements for Law 1 (DoJ/FBI Forced Dis…](/laws/other/analysis/Fixed/Improve)
+
+</div>
+<div>
+
+* [Laws Not Complying with Charter — FIXED / RESOLVED ITEMS](/laws/other/analysis/Fixed/Laws_Not_Complying)
+* [Problems, Vulnerabilities, and Recommended Fixes — Comprehens…](/laws/other/analysis/Any_Problems)
+* [Charlie Kirk Files Forced Disclosure -- Threat Analysis & Rec…](/laws/other/Worries_By_Each_4_Laws)
+
+</div>
+</div>

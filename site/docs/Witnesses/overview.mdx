@@ -1,4 +1,5 @@
 ---
+displayed_sidebar: docs
 title: "Witnesses"
 sidebar_label: "Witnesses"
 description: "Firsthand accounts from people who were at Utah Valley University on September 10, 2025, when Charlie Kirk was shot. This section collects on-camera and…"
@@ -9,7 +10,13 @@ keywords:
   - Utah Valley University
   - Witnesses
 image: "/img/docusaurus-social-card.jpg"
+hide_table_of_contents: true
 ---
+
+{/* Full-bleed marker: activates the site-wide full-width + text-wrap
+    layout in custom.css (full width + overflow-safe side videos). Scoped
+    via CSS :has(). */}
+<div className="ck-full-bleed" />
 
 <a href="/" style={{display:'inline-block', marginBottom:'1rem',
 padding:'0.35rem 0.9rem', background:'#1a73e8', color:'#fff',
@@ -17,22 +24,53 @@ borderRadius:'4px', textDecoration:'none', fontSize:'0.9rem'}}>← Home</a>
 
 # Witnesses
 
-Firsthand accounts from people who were at Utah Valley University on September 10, 2025, when Charlie Kirk was shot. This section collects on-camera and on-record interviews from named or pseudonymous witnesses and indexes their specific testimony — what they saw, what they heard, and from which direction.
+Firsthand accounts from people who were at Utah Valley University on September 10, 2025, when [Charlie Kirk](/People/charlie-kirk) was shot. This section collects on-camera and on-record interviews from named or pseudonymous witnesses and indexes their specific testimony — what they saw, what they heard, and from which direction.
 
 ## In This Section
 
 <div style={{display: "flex", justifyContent: "space-between", gap: "2rem"}}>
-  <div style={{flex: 1}}>
+<div style={{flex: 1}}>
 
   * [Nick — Loud Pop, Group Cheered, Shot From Right](./Nick)
+  * [Wrong Witnesses — The "Plan" Told in Advance](./wrong_witnesses)
+  * [Shot to the Heart — Repeated Theme & Shaped-Charge Question](./shot-to-the-heart)
 
-  </div>
-  <div style={{flex: 1}}>
+</div>
+<div style={{flex: 1}}>
 
   * [EksAyn Anderson — Front-Row Question](./EksAyn-Anderson)
+  * [Shot in Chest, Then Neck — One Witness, Two Accounts](./Shot_in_Chest_Reversal)
+  * [Cooper Brown — Stopped a Witness on Camera](./cooper-brown)
 
-  </div>
 </div>
+</div>
+
+## Featured clip — a witness account that appears to change
+
+<div className="ck-video ck-video--16x9">
+  <video controls>
+    <source src="https://ipfs.io/ipfs/QmaH8msKvgBjgsAYUSFegAo7JYCNUQUCeJCv6geZaFTfGC" type="video/mp4" />
+    <source src="https://dweb.link/ipfs/QmaH8msKvgBjgsAYUSFegAo7JYCNUQUCeJCv6geZaFTfGC" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+  <p className="ck-caption">
+    <em>Compilation of on-camera witness interviews near UVU. Source: <a href="https://x.com/CharlotteLee_88/status/2069566053353463951">@CharlotteLee_88 on X</a>, 2026-06-23.</em>
+  </p>
+</div>
+
+According to [@CharlotteLee_88](https://x.com/CharlotteLee_88/status/2069566053353463951),
+one of the earliest on-camera witnesses first described Charlie Kirk being shot **in
+the chest** — repeating the chest/heart description several times — then gave a
+**neck-wound** account on a different station roughly an hour later. A separate
+witness in the same lineup describes the neck from the start. The poster frames this
+as a contradiction; this site records the accounts as-given and treats the apparent
+shift as an open question, not an accusation. Witnesses under acute stress routinely
+misremember and revise, and a chest-versus-neck distinction is easy to confuse in a
+chaotic moment. The full clip, verbatim quotes, and the competing readings are laid
+out on the dedicated page: [Shot in Chest, Then Neck](./Shot_in_Chest_Reversal). See
+also the related [Wrong Witnesses](./wrong_witnesses) page.
+
+<div style={{clear: 'both'}} />
 
 ## What this area covers
 
@@ -40,11 +78,30 @@ Witness testimony is the front line of any shooting investigation. This area gat
 
 ## Key patterns to watch
 
-Across the witness interviews collected here, several recurring observations stand out and bear comparison with the official narrative. According to several reported accounts, the sound profile most witnesses describe is closer to "pops," "fireworks," or smaller-calibre or pistol-like reports rather than the heavy crack of a 30-06 rifle (the calibre the alleged Mauser 98 would have produced). Reported descriptions of crowd reaction at the moment of the shot — including a group reportedly cheering near the top of the venue — are also documented here. Where witnesses describe the trajectory of fire, those descriptions are recorded as-stated and cross-referenced against the [Gun & Bullet](/Gun_Bullet/overview) and [Shooting Locations](/Shooting_Locations/overview) sections.
+Across the witness interviews collected here, several recurring observations stand out and bear comparison with the official narrative. According to several reported accounts, the sound profile most witnesses describe is closer to "pops," "fireworks," or smaller-calibre or pistol-like reports rather than the heavy crack of a 30-06 rifle (the calibre the alleged Mauser 98 would have produced). Reported descriptions of crowd reaction at the moment of the shot — including a group reportedly cheering near the top of the venue — are also documented here. Where witnesses describe the trajectory of fire, those descriptions are recorded as-stated and cross-referenced against the [Gun & Bullet](/Gun_Bullet/overview) and [Shooting Locations](/Suspects/Shooting_Locations) sections.
 
 ## How to use this section
 
-Start with any single witness page to read that person's account verbatim and watch the embedded interview. Then compare across witness pages for points where multiple people independently report the same detail — those convergences carry more evidentiary weight than any single account. Where a witness account conflicts with the official report or with other witnesses, the page notes the discrepancy rather than reconciling it; reconciliation is left to the [Proof Not Tyler](/Proof_Not_Tyler/overview) and [Shooting Locations](/Shooting_Locations/overview) pages where multi-source synthesis happens.
+Start with any single witness page to read that person's account verbatim and watch the embedded interview. Then compare across witness pages for points where multiple people independently report the same detail — those convergences carry more evidentiary weight than any single account. Where a witness account conflicts with the official report or with other witnesses, the page notes the discrepancy rather than reconciling it; reconciliation is left to the [Proof Not Tyler](/Proof_Not_Tyler/overview) and [Shooting Locations](/Suspects/Shooting_Locations) pages where multi-source synthesis happens.
+
+## X.com posts:
+
+* [Witness describes chest shot, then neck on second station](https://x.com/CharlotteLee_88/status/2069566053353463951)
+* [Witness interview compilation; "shot to the heart" theme](https://x.com/MuppetMasher/status/2069350461573046382)
+* [Man who stopped a TPUSA witness on camera identified as Cooper Brown](https://x.com/DiligentDenizen/status/1976419242666021122)
+
+## Laws (Charlie Kirk)
+
+* FBI Form 302 interview reports for every witness and removed UVU and traffic camera footage and ballistics showing the true caliber and gunpowder residue are things that the [Charlie Kirk Investigation Laws](/Fix/overview) may result in powerful truths coming out that aren't out yet.
+
+## Pattern Map Citizen Investigators Use
+
+1. **Sound** — pop / fireworks language vs .30-06 crack expectations.
+2. **Wound language** — early heart/chest vs later neck.
+3. **Crowd control** — who silenced or redirected on-camera witnesses.
+4. **Trajectory** — left/right disagreements vs Losee geometry.
+
+Use child pages for named witnesses; keep this overview as the pattern index.
 
 ## Related Areas
 
@@ -52,16 +109,36 @@ Start with any single witness page to read that person's account verbatim and wa
 marginTop:'0.5rem'}}>
 <div>
 
-* [Gun & Bullet — Calibre and Ballistics](/Gun_Bullet/overview)
-* [Shooting Locations — Trajectory Analysis](/Shooting_Locations/overview)
-* [Proof Not Tyler](/Proof_Not_Tyler/overview)
+* [People](/People/overview)
+* [Medical](/Medical/overview)
+* [Gun & Bullet Analysis](/Gun_Bullet/overview)
 
 </div>
 <div>
 
-* [UVU Campus Layout](/UVU/overview)
-* [Tent — Stage Area Evidence](/Tent/overview)
-* [Cameras — Surveillance Footage](/cameras/security/overview)
+* [Mic — Exploding Mic Theory](/Mic/overview)
+* [Real Killer](/Killer/overview)
+* [Suspects](/Suspects/overview)
+
+</div>
+</div>
+
+## Related
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Nick](/Witnesses/Nick)
+* [Shot in Chest Reversal](/Witnesses/Shot_in_Chest_Reversal)
+* [Shot to the Heart](/Witnesses/shot-to-the-heart)
+
+</div>
+<div>
+
+* [Wrong Witnesses](/Witnesses/wrong_witnesses)
+* [EksAyn Anderson](/Witnesses/EksAyn-Anderson)
+* [People](/People/overview)
 
 </div>
 </div>

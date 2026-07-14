@@ -8,7 +8,7 @@
 - Key lesson: Independence must be structural, not just promised
 
 ### Precedent: Church Committee (1975)
-- Senate committee investigated abuses by CIA, NSA, FBI, and IRS
+- Senate committee investigated abuses by [CIA](/US_Intelligence/cia), [NSA](/US_Intelligence/nsa), FBI, and IRS
 - Revealed massive intelligence agency overreach
 - Key lesson: Congressional oversight is essential but insufficient alone
 
@@ -48,4 +48,44 @@ Previous version had no mechanism for what happens when the investigating agency
 ## Sources
 - Special Counsel regulations: https://www.law.cornell.edu/cfr/text/28/part-600
 - Church Committee: https://www.senate.gov/about/powers-procedures/investigations/church-committee.htm
-- Charlie Kirk 175 Critical Items: https://github.com/BryanStarbuck/Charlie_Kirk_175_Critical_To_Expose
+- [Charlie Kirk](/People/charlie-kirk) 175 Critical Items: https://github.com/BryanStarbuck/Charlie_Kirk_175_Critical_To_Expose
+
+## Related Areas
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Fix the Charlie Kirk Situation](/Fix/overview)
+* [Legal Investigation](/legal_investigation/overview)
+* [(Possible) Cover‑up](/CoverUp/overview)
+
+</div>
+<div>
+
+* [Government Evidence](/gov/overview)
+* [Your Actions Fix It](/Your_Actions_Fix_It/overview)
+* [Government Organizations](/government_organizations/overview)
+
+</div>
+</div>
+
+## Related
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Law 3: Charlie Kirk Investigation - Mandatory Investigation Act](/laws/Require_to_Investigate/Law_3_Require_to_Investigate)
+* [Human Requirements: Law 3 - Require Investigation](/laws/Require_to_Investigate/more/Human_Requirements)
+* [Output Analysis: Law 3 - Require Investigation](/laws/Require_to_Investigate/more/Output_Analysis)
+
+</div>
+<div>
+
+* [Notes: Law 1 - DoJ/FBI Forced Disclosure](/laws/DoJ_FBI/more/Notes_1_DoJ_FBI)
+* [Notes: Law 2 - US Intelligence Services Forced Disclosure](/laws/US_Intel/more/Notes_2_US_Intel)
+* [Notes: Law 4 - Trusted Investigations](/laws/Trusted_Investigations/more/Notes_4_Trusted_Investigations)
+
+</div>
+</div>

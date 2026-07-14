@@ -8,7 +8,7 @@
 
 ====================
 
-## LAW 1: The Charlie Kirk Files Forced Disclosure Act -- Law Enforcement
+## LAW 1: The [Charlie Kirk](/People/charlie-kirk) Files Forced Disclosure Act -- Law Enforcement
 
 ### 2. Schedule A Item Count Inconsistency (205 vs 208) — FIXED
 Law 1 Schedule A heading states "208 Critical Disclosure Items" and Section 2(a) references "208 items" consistently throughout. Internal consistency achieved at 208.
@@ -52,7 +52,7 @@ Law 2 includes enforcement with up to 10 years imprisonment for obstruction of f
 ### 1. Schedule A Reference Says 175 — FIXED IN LAW
 Law 3 references 208 items throughout (e.g., Section 2(e)(8)).
 
-### 2. CIA and NSA Mandatory Investigations — ALREADY IMPLEMENTED
+### 2. [CIA](/US_Intelligence/cia) and [NSA](/US_Intelligence/nsa) Mandatory Investigations — ALREADY IMPLEMENTED
 Section 2A (CIA) and Section 2B (NSA) are present and detailed in law.
 
 ### 3. Private Right of Action — ALREADY IMPLEMENTED
@@ -74,7 +74,7 @@ Section 6(a) specifies joint resolution within 30 days, fallback to Judiciary Co
 ## LAW 4: The Charlie Kirk Trusted Investigators Act
 
 ### 1. Team Count Contradiction — FIXED
-Law 4 Section 2(b) explicitly states 34 investigation teams (17 FBI + 17 IC). 17 investigators x 2 teams = 34. Internally consistent.
+Law 4 Section 2(b) explicitly states 34 investigation teams (17 [FBI](/FBI/overview) + 17 IC). 17 investigators x 2 teams = 34. Internally consistent.
 
 ### 2. Schedule A Item Count — FIXED
 Law 4 references 208 items throughout.
@@ -93,3 +93,55 @@ Section 8(b) provides fallback appointment process: if courts hold naming indivi
 
 ### C-2. Schedule A Item Count Inconsistency — FIXED IN LAWS
 All four law files consistently reference 208 items internally. (Charter document still needs global find-and-replace from 175/205 to 208.)
+
+
+## Citizen Investigator Claims on X (Forced Disclosure Discourse)
+
+*(Attributed public commentary about transparency demands — does not rewrite statutory text above.)*
+
+Citizen investigators and legislative advocates on X argue that ordinary FOIA and criminal discovery will not force full production in the Charlie Kirk case, citing **JFK Records Act failures** (agencies missing decades of deadlines; reports of large unreviewed FBI caches) and the **Epstein Files Transparency Act** pattern of partial dumps without a Special Master with teeth. Accounts such as **@HolonCitizen** have promoted a four-law package (FBI/DOJ disclosure, IC disclosure, mandatory investigation, trusted civilian investigators) and named figures including Candace Owens, Dave Smith, Tucker Carlson, Ian Carroll, and others as proposed **trusted investigators** under Law 4-style designs — a **policy proposal**, not an enacted statute.
+
+Parallel media clips recirculated by accounts such as **@FurkanGozukara** claim **Candace Owens** has alleged federal discovery obstruction (FBI/ATF files; director-level blocks). Counter-posts argue the Robinson case already has DNA, video, and confession-note material unlike JFK and therefore needs no special act. This page records both the **demand for forced disclosure** and the **official-narrative pushback** so readers can judge whether Schedule A-style lists (FBI 302s, cell data, aircraft, drones, ballistics, AV SD cards) match what X investigators say remains withheld.
+
+Related public pages: [Fix overview](/Fix/overview), [laws landing](/laws), [Discovery](/laws/Discovery), [explain all four laws](/laws/explain/all).
+
+
+## Related Areas
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Fix the Charlie Kirk Situation](/Fix/overview)
+* [(Possible) Cover‑up](/CoverUp/overview)
+* [Government Evidence](/gov/overview)
+
+</div>
+<div>
+
+* [Proof Intel Services](/Proof_Intel_Services/overview)
+* [Legal Investigation](/legal_investigation/overview)
+* [FBI](/FBI/overview)
+
+</div>
+</div>
+
+## Related
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Problems, Vulnerabilities, and Recommended Fixes — FIXED ITEMS](/laws/other/analysis/Fixed/Any_Problems)
+* [Additional Disclosure Items to Consider (Beyond the 175) — AL…](/laws/other/analysis/Fixed/Any_more_to_Add)
+* [Factual Challenges Analysis — FIXED ITEMS](/laws/other/analysis/Fixed/Challenges)
+
+</div>
+<div>
+
+* [Attorney Analysis: Improvements for Law 1 (DoJ/FBI Forced Dis…](/laws/other/analysis/Fixed/Improve)
+* [Laws Not Complying with Charter (List_Of_Laws.md) -- Comprehe…](/laws/other/analysis/Laws_Not_Complying)
+* [Charlie Kirk Files Forced Disclosure -- Threat Analysis & Rec…](/laws/other/Worries_By_Each_4_Laws)
+
+</div>
+</div>

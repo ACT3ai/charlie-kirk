@@ -1,6 +1,6 @@
 # Charlie Kirk Assassination — Forced Disclosure
 
-This is about the Charlie Kirk assassination. Citizen investigators find that intelligence-service-level involvement is what investigators keep coming back to.
+This is about the [Charlie Kirk](/People/charlie-kirk) assassination. Citizen investigators find that intelligence-service-level involvement is what investigators keep coming back to.
 
 Our main push is to get a set of laws passed to force file disclosure in the Charlie Kirk assassination:
 
@@ -83,7 +83,7 @@ This includes other information to disclose that may or may not be related.
 
 ### The DoD Contract
 * May 1, 2025: DoD awarded contract N0016425PJ538 for "MINIATURIZED-XS DEMOLITION CHARGES, ANTI PERSONNEL-XS"
-* Recipient: Accurate Energetic Systems (AES), McEwen, Tennessee
+* Recipient: Accurate Energetic Systems ([AES](/Mic/AES)), McEwen, Tennessee
 * Contract value: $440,494
 * Delivery deadline: August 25, 2025
 * Awarding agency: Department of Defense - Department of the Navy - NSWC Crane
@@ -110,7 +110,7 @@ This includes other information to disclose that may or may not be related.
 * Photos show square object (~2x2") in PERSON_25_REDACTED's front right pocket matching Rode Wireless GO II mic dimensions
 * PERSON_25_REDACTED photographed standing with sound crew and person who miked up Kirk
 * Post-killing photos show PERSON_25_REDACTED's pocket empty
-* Potential involvement of Israeli secret service or Mossad in orchestrating an inside hit, drawing parallels to 2024 pager bombs in Lebanon (see [Israeli Cell Phones](1_DoJ_FBI/Law_1_DoJ_FBI.md#israeli-cell-phones-8791))
+* Potential involvement of Israeli secret service or [Mossad](/intelligence/Mossad) in orchestrating an inside hit, drawing parallels to 2024 pager bombs in Lebanon (see [Israeli Cell Phones](1_DoJ_FBI/Law_1_DoJ_FBI.md#israeli-cell-phones-8791))
 
 ### The Microphone Type
 * Kirk wearing lavalier microphone (wireless)
@@ -139,7 +139,7 @@ This includes other information to disclose that may or may not be related.
 * Fragment struck tent roof
 * Shards found on Kirk's clothing
 * Shards found on ground where Kirk was carried
-* Fragments found on SUV floor during hospital transport (Candace Owens photos)
+* Fragments found on SUV floor during hospital transport ([Candace Owens](/People/candace-owens) photos)
 * Kirk's left hand shows cuts consistent with shrapnel (visible in casket photos)
 * Video shows low-speed projectile ejecting downward between Kirk's legs at moment of impact
 
@@ -159,3 +159,55 @@ This includes other information to disclose that may or may not be related.
 * Was AES explosion intentional? Was it suspicious?
 
 Cl
+
+
+## Citizen Investigator Claims on X (Forced Disclosure Discourse)
+
+*(Attributed public commentary about transparency demands — does not rewrite statutory text above.)*
+
+Citizen investigators and legislative advocates on X argue that ordinary FOIA and criminal discovery will not force full production in the Charlie Kirk case, citing **JFK Records Act failures** (agencies missing decades of deadlines; reports of large unreviewed FBI caches) and the **Epstein Files Transparency Act** pattern of partial dumps without a Special Master with teeth. Accounts such as **@HolonCitizen** have promoted a four-law package (FBI/DOJ disclosure, IC disclosure, mandatory investigation, trusted civilian investigators) and named figures including Candace Owens, Dave Smith, Tucker Carlson, Ian Carroll, and others as proposed **trusted investigators** under Law 4-style designs — a **policy proposal**, not an enacted statute.
+
+Parallel media clips recirculated by accounts such as **@FurkanGozukara** claim **Candace Owens** has alleged federal discovery obstruction (FBI/ATF files; director-level blocks). Counter-posts argue the Robinson case already has DNA, video, and confession-note material unlike JFK and therefore needs no special act. This page records both the **demand for forced disclosure** and the **official-narrative pushback** so readers can judge whether Schedule A-style lists (FBI 302s, cell data, aircraft, drones, ballistics, AV SD cards) match what X investigators say remains withheld.
+
+Related public pages: [Fix overview](/Fix/overview), [laws landing](/laws), [Discovery](/laws/Discovery), [explain all four laws](/laws/explain/all).
+
+
+## Related Areas
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Fix the Charlie Kirk Situation](/Fix/overview)
+* [FBI](/FBI/overview)
+* [U.S. Intelligence](/US_Intelligence/overview)
+
+</div>
+<div>
+
+* [(Possible) Cover‑up](/CoverUp/overview)
+* [Proof Intel Services](/Proof_Intel_Services/overview)
+* [Your Actions Fix It](/Your_Actions_Fix_It/overview)
+
+</div>
+</div>
+
+## Related
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Law 1: Charlie Kirk Investigation - DoJ/FBI Forced Disclosure…](/laws/DoJ_FBI/Law_1_DoJ_FBI)
+* [Law 2: Charlie Kirk Investigation - Intelligence Services Dis…](/laws/US_Intel/Law_2_US_Intel)
+* [Law 3: Charlie Kirk Investigation - Mandatory Investigation Act](/laws/Require_to_Investigate/Law_3_Require_to_Investigate)
+
+</div>
+<div>
+
+* [Law 4: Charlie Kirk Investigation - Trusted Investigators Act](/laws/Trusted_Investigations/Law_4_Trusted_Investigations)
+* [Launch: All Four Laws](/laws/explain/all/overview)
+* [Charlie Kirk Files Forced Disclosure -- Summary of Four Propo…](/laws/other/List_Of_Laws)
+
+</div>
+</div>

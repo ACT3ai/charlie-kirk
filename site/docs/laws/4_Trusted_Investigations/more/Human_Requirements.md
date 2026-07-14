@@ -5,9 +5,9 @@
 Allow a specific set of trusted individuals to each have their own team within the FBI and within US intelligence to work alongside government investigators. These trusted people and their teams conduct the investigation. Nothing is allowed to stop them. They can release the information.
 
 ## Trusted People
-- Candace Owens
+- [Candace Owens](/People/candace-owens)
 - Dave Smith
-- Tucker Carlson
+- [Tucker Carlson](/People/tucker-carlson)
 
 ## Key Points
 
@@ -27,3 +27,43 @@ Allow a specific set of trusted individuals to each have their own team within t
 [Back to README](../../README.md) | [Law Text](Law_4_Trusted_Investigations.md) | [Legal Notes](Notes_4_Trusted_Investigations.md) | [Output Analysis](Output_Analysis.md)
 
 See also: [Law 1 Requirements](../1_DoJ_FBI/Human_Requirements.md) | [Law 2 Requirements](../2_US_Intel/Human_Requirements.md) | [Law 3 Requirements](../3_Require_to_Investigate/Human_Requirements.md)
+
+## Related Areas
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Fix the Charlie Kirk Situation](/Fix/overview)
+* [Your Actions Fix It](/Your_Actions_Fix_It/overview)
+* [Podcast Coverage](/Influencers/overview)
+
+</div>
+<div>
+
+* [Vote](/Vote/overview)
+* [Proof Intel Services](/Proof_Intel_Services/overview)
+* [Legal Investigation](/legal_investigation/overview)
+
+</div>
+</div>
+
+## Related
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Law 4: Charlie Kirk Investigation - Trusted Investigators Act](/laws/Trusted_Investigations/Law_4_Trusted_Investigations)
+* [Notes: Law 4 - Trusted Investigations](/laws/Trusted_Investigations/more/Notes_4_Trusted_Investigations)
+* [Output Analysis: Law 4 - Trusted Investigations](/laws/Trusted_Investigations/more/Output_Analysis)
+
+</div>
+<div>
+
+* [Human Requirements: Law 1 - DoJ/FBI Forced Disclosure](/laws/DoJ_FBI/more/Human_Requirements)
+* [Human Requirements: Law 2 - US Intelligence Services Forced D…](/laws/US_Intel/more/Human_Requirements)
+* [Human Requirements: Law 3 - Require Investigation](/laws/Require_to_Investigate/more/Human_Requirements)
+
+</div>
+</div>

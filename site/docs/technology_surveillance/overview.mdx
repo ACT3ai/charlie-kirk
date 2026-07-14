@@ -1,4 +1,5 @@
 ---
+displayed_sidebar: docs
 title: "Technology & Surveillance"
 sidebar_label: "Technology & Surveillance"
 description: "This directory contains information about drones, surveillance, and technical evidence related to the Charlie Kirk incident."
@@ -12,7 +13,13 @@ keywords:
   - Technology
   - Surveillance
 image: "/img/docusaurus-social-card.jpg"
+hide_table_of_contents: true
 ---
+
+{/* Full-bleed marker: activates the site-wide full-width + text-wrap
+    layout in custom.css (full width + overflow-safe side videos). Scoped
+    via CSS :has(). */}
+<div className="ck-full-bleed" />
 
 <a href="/" style={{display:'inline-block', marginBottom:'1rem',
 padding:'0.35rem 0.9rem', background:'#1a73e8', color:'#fff',
@@ -21,20 +28,48 @@ borderRadius:'4px', textDecoration:'none', fontSize:'0.9rem'}}>← Home</a>
 # Technology & Surveillance
 
 ## Overview
-This directory contains information about drones, surveillance, and technical evidence related to the Charlie Kirk incident.
+
+This section collects **technical and surveillance claims** around the September 10, 2025 killing of [Charlie Kirk](/People/charlie-kirk) at UVU: drones and UAS footage, camera systems (campus, TPUSA event, municipal Flock), digital forensics (phones, Discord, SD cards), and contested "exotic weapon" theories (IR laser designation, mic-as-device). Official proceedings emphasize a **rooftop rifle** narrative; citizen investigators document **competing technical models**. Neither side is rubber-stamped here.
 
 ## Key Areas
-- Surveillance technology
-- Drone operations
-- Technical evidence
-- Digital forensics
-- Electronic surveillance
+
+- Drone / UAS sightings and foreign-system analogies ([Drones](/Drones/overview))
+- Aircraft and ISR-adjacent flight context ([Planes](/Planes/overview), [N1098L](/Planes/N1098L/overview))
+- Campus and event camera chains; Flock / ALPR coverage gaps
+- Digital forensics: Discord, phones, search history, wiped servers (as alleged)
+- Contested tech theories: IR designators, loitering munitions analogies, mic explosive claims
+
+## Citizen Investigator Claims on X
+
+*(Unverified technical claims from public commentary — not court findings.)*
+
+- **Drone-strike model:** **@ProjectConstitu** and associated long-form videos argue the hit was a **foreign drone / laser-designated** engagement (Spike Firefly / Hero-class analogies, "Cold Sword"-style networked sniper demos, alleged IR paint visible on enhanced phone video). Some threads name an unidentified **TPUSA-adjacent spotter**. These are **high-speculation OSINT narratives** with no court adoption.
+- **Multi-drone / dual-weapon packages:** Later Project Constitution / **@WeAreNotGTM** commentary claimed **multiple military-style drones**, dual wounds (distance + close), and **camera dead zones** built into a "killbox." Treat as **attributed theory**, and cross-check against ballistics pages.
+- **Flock / municipal cameras:** **@realstewpeters** (July 2026) asked why a dense **Flock** camera environment around Provo/Orem produced, in the public case narrative, mainly **grainy stills** and few plate hits. That is a **records-demand question**, not proof of spoliation by itself.
+- **Event-camera seizure timing:** Separate but related tech-chain claims (see [Social Media Analysis](/social_media_analysis)) allege **SD cards pulled within minutes** by event AV staff — a chain-of-custody issue that belongs in both tech and legal tracks.
+- **Mic / RF theories:** Recurring posts claim a **modified wireless microphone** or body-adjacent device, not a .30-06, caused the fatal injury. See [Cover-Up — Mic Explosive](/CoverUp/Mic_Explosive). Official autopsy/ballistics commentary rejects that model; the dispute remains a live citizen topic.
+
+## How to Read Competing Models
+
+| Model | Primary claimed sensor / tool | What would falsify it |
+| --- | --- | --- |
+| Lone rooftop rifle | Mauser .30-06, rooftop pads, DNA/prints | Independent ballistics + multi-angle video contradicting roof origin |
+| Drone / guided slug | UAS footage, IR designator frames | Authenticated flight logs empty + continuous camera coverage of sky clear |
+| Mic / close device | Wound geometry, mic removal video | Medical examiner primary records showing classic rifle wound path |
+| Hybrid / multi-actor | Dead zones + multiple origins | Full synchronized multi-cam release with continuous custody |
+
+Use [Drones](/Drones/overview), [cameras](/cameras/overview), [Gun_Bullet](/Gun_Bullet/overview), and [US Intelligence](/US_Intelligence/overview) for depth.
 
 ## Status
-- [ ] Initial research
-- [ ] Evidence collection
-- [ ] Analysis
-- [ ] Documentation
+
+- [x] Claim inventory started
+- [ ] Authenticated drone flight logs
+- [ ] Full camera matrix (campus + event + municipal)
+- [ ] Independent digital-forensics review
+
+## Laws (Charlie Kirk)
+
+* Electronic signal-jamming records at UVU and NSA XKeyscore queries on the people and phones and drone flight logs with their feed recipients are things that the [Charlie Kirk Investigation Laws](/Fix/overview) may result in powerful truths coming out that aren't out yet.
 
 ## Related Areas
 
@@ -44,14 +79,34 @@ marginTop:'0.5rem'}}>
 
 * [Drones](/Drones/overview)
 * [Planes](/Planes/overview)
-* [FBI](/FBI/overview)
+* [Google Searches](/GoogleSearches/overview)
 
 </div>
 <div>
 
-* [Proof Intel Services](/Proof_Intel_Services/overview)
-* [Cover-Up](/CoverUp/overview)
-* [Timeline](/Timeline/overview)
+* [U.S. Intelligence](/US_Intelligence/overview)
+* [Intelligence Services](/intelligence/overview)
+* [Videos](/Videos/overview)
+
+</div>
+</div>
+
+## Related
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Drones](/Drones/overview)
+* [Planes](/Planes/overview)
+* [ISR Program Context](/Planes/ISR-Operations)
+
+</div>
+<div>
+
+* [Google Searches](/GoogleSearches/overview)
+* [NSA](/US_Intelligence/nsa)
+* [Security Cameras](/cameras/overview)
 
 </div>
 </div>

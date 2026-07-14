@@ -54,3 +54,43 @@ $10M budget and 20-agent team requires appropriations.
 2. Strengthen monitor's authority with subpoena power
 3. Add provision requiring investigators to specifically address each of the 175 items in Schedule A
 4. Coordinate with Law 4 so Trusted Investigators can share findings with the investigation team
+
+## Related Areas
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [FBI](/FBI/overview)
+* [U.S. Intelligence](/US_Intelligence/overview)
+* [Intelligence Services](/intelligence/overview)
+
+</div>
+<div>
+
+* [Fix the Charlie Kirk Situation](/Fix/overview)
+* [Legal Investigation](/legal_investigation/overview)
+* [Government Evidence](/gov/overview)
+
+</div>
+</div>
+
+## Related
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Law 3: Charlie Kirk Investigation - Mandatory Investigation Act](/laws/other/old/Require_to_Investigate/Law_3_Require_to_Investigate)
+* [Human Requirements: Law 3 - Require Investigation](/laws/other/old/Require_to_Investigate/more/Human_Requirements)
+* [Notes: Law 3 - Require Investigation](/laws/other/old/Require_to_Investigate/more/Notes_3_Require_to_Investigate)
+
+</div>
+<div>
+
+* [Law 3: Charlie Kirk Investigation - Mandatory Investigation Act](/laws/Require_to_Investigate/Law_3_Require_to_Investigate)
+* [Output Analysis: Law 3 - Require Investigation](/laws/Require_to_Investigate/more/Output_Analysis)
+* [Charlie Kirk Assassination — Forced Disclosure](/laws)
+
+</div>
+</div>

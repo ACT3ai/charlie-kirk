@@ -445,13 +445,43 @@ SKIP IF: No X/Twitter URL for this post.
   - https://twitter.com/{username}/status/{post_id}
   - The post_id is the numeric string after /status/
 
-* Fetch the full post data using xurl with expanded fields:
+* Fetch the full post data using xurl with expanded fields. The expansions below also
+  pull in any QUOTED tweet and its media — this is essential because media (video or
+  images) is frequently attached to a quoted tweet, not to the post you were given:
   ```bash
-  xurl "/2/tweets/{post_id}?tweet.fields=created_at,author_id,public_metrics,text,entities,conversation_id,lang,note_tweet,attachments&expansions=author_id,attachments.media_keys&user.fields=name,username,description,public_metrics&media.fields=url,preview_image_url,type,width,height,duration_ms,variants" --auth app
+  xurl "/2/tweets/{post_id}?tweet.fields=created_at,author_id,public_metrics,text,entities,conversation_id,lang,note_tweet,attachments,referenced_tweets&expansions=author_id,attachments.media_keys,referenced_tweets.id,referenced_tweets.id.attachments.media_keys,referenced_tweets.id.author_id&user.fields=name,username,description,public_metrics&media.fields=url,preview_image_url,type,width,height,duration_ms,variants" --auth app
   ```
+  With these expansions, a quoted tweet's media appears in `includes.media`, the quoted
+  tweet object in `includes.tweets`, and its author in `includes.users`.
 
 * If xurl fails or returns an error, inform the user and stop processing this post.
   (If in multi-post mode, mark as failed and move to the next post.)
+
+* **RESOLVE THE MEDIA SOURCE (quoted / linked status) — do this BEFORE printing the
+  Has Video / Has Images line, so media is never silently dropped.** Media often does
+  NOT live on the post you were given — it lives in a QUOTED tweet, or in a status URL
+  pasted into the post's text:
+
+  - Set MEDIA_SOURCE_URL = the original post URL and QUOTED_ORIGIN = none by default.
+  - PARENT_HAS_MEDIA = true if `includes.media` contains an entry whose media_key is in
+    THIS post's own `attachments.media_keys`. If true, keep MEDIA_SOURCE_URL = original
+    post URL and skip the rest of this resolution.
+  - If PARENT_HAS_MEDIA is false, find a quoted or linked status, in order:
+      1. QUOTED TWEET: `referenced_tweets` entry with type == "quoted" → QUOTED_ID = its
+         `id`; its media is already in `includes.media` (via the expansions).
+      2. LINKED STATUS: else scan `entities.urls` for the FIRST `expanded_url` matching
+         https://(x|twitter).com/{anyuser}/status/{digits} (ignore ?query) → QUOTED_ID =
+         the digits after /status/.
+      3. If QUOTED_ID came from the linked-status path and its media is not already in
+         `includes.media`, fetch that status with the SAME xurl command (post_id =
+         QUOTED_ID) and read its media, author, and text.
+  - If media was found on the quoted/linked status:
+      * MEDIA_SOURCE_URL = https://x.com/{quoted_username}/status/{QUOTED_ID} — the URL
+        yt-dlp (Step 6) and curl (Step 6B) MUST download from, NOT the parent post.
+      * QUOTED_ORIGIN = @{quoted_username}. Treat the quoted status's video/image
+        attachments as this post's media for Steps 6 and 6B, and merge them into the
+        temp YAML attachments block below.
+  - If no media is found anywhere, the post genuinely has no media.
 
 * Output to stdout — print the FULL POST TEXT so the user can immediately see what
   was downloaded:
@@ -462,8 +492,9 @@ SKIP IF: No X/Twitter URL for this post.
   Author: @{username} ({display_name})
   Date: {created_at}
   Likes: {like_count} | Retweets: {retweet_count} | Views: {impression_count}
-  Has Video: {yes/no}
-  Has Images: {yes/no — count if yes}
+  Has Video: {yes/no — if from a quote/link, write "yes (from quoted {QUOTED_ORIGIN})"}
+  Has Images: {yes/no — count if yes; note "(from quoted {QUOTED_ORIGIN})" if applicable}
+  Media source: {MEDIA_SOURCE_URL — only show if different from the original post URL}
   -------- POST TEXT --------
   {full text of post — print every word, no truncation}
   ---------------------------
@@ -512,6 +543,12 @@ SKIP IF: No X/Twitter URL for this post.
   investigation: 'charlie_kirk'
   added_date: '{today YYYY-MM-DD}'
   temp_file: true
+  # If media came from a quoted/linked status (Step 1 media resolution), fill the
+  # attachments block above with the QUOTED status's media, and record its origin:
+  media_from_quoted_status:
+    quoted_status_id: '{QUOTED_ID or ""}'
+    quoted_status_url: '{MEDIA_SOURCE_URL if from a quote/link, else ""}'
+    quoted_author: '{QUOTED_ORIGIN or ""}'
   ```
 
   Output: "Temp YAML saved: /tmp/ck_xpost_{post_id}.yaml"
@@ -678,8 +715,14 @@ X POST STEP 6: DOWNLOAD VIDEO AND PIN TO IPFS
 ============================
 
 SKIP IF: SKIP_VIDEO = true — user requested no video transfer.
-SKIP IF: No video is available from the post, from a separate video URL, or from
-  a URL in the text block.
+
+**DO NOT skip this step because Step 1 reported "Has Video: no".** The X API's
+`includes.media` block is NOT a reliable signal for quote/repost videos — a true quote
+tweet leaves the media_key on the quoted tweet, so the API returns no media even though a
+video exists. yt-dlp walks quoted AND reposted media itself via GraphQL, straight from the
+post URL. Therefore, whenever SKIP_VIDEO is false, ALWAYS attempt the yt-dlp download below
+against the original post URL — regardless of what Step 1's detection found. Only conclude
+the post has no video if yt-dlp itself finds nothing to download.
 
 * All videos go to the central directory: {ROOT_DIR}/videos/
   Never store videos inside site/ or individual topic directories.
@@ -739,12 +782,18 @@ SKIP IF: No video is available from the post, from a separate video URL, or from
   **Case C — NOT in manifest:**
     Proceed to step 6a.
 
-* 6a. Download using yt-dlp:
+* 6a. Download using yt-dlp. Try the ORIGINAL post URL FIRST — yt-dlp resolves quoted and
+  reposted media on its own, so the post URL alone downloads the video in the vast majority
+  of cases. Only if that downloads nothing and a quoted status was resolved in Step 1, retry
+  against MEDIA_SOURCE_URL:
   ```bash
   mkdir -p {ROOT_DIR}/videos
-  yt-dlp "{video_source_url}" -o "{ROOT_DIR}/videos/{post_id}.%(ext)s"
+  yt-dlp "{original_post_url}" -o "{ROOT_DIR}/videos/{post_id}.%(ext)s" \
+    || yt-dlp "{MEDIA_SOURCE_URL}" -o "{ROOT_DIR}/videos/{post_id}.%(ext)s"
   ```
-  If yt-dlp fails, try with cookies or inform the user.
+  Never gate this on Step 1 detection — attempting the post URL directly is exactly what
+  prevents quote/repost videos from being silently dropped.
+  If both fail, try with cookies or inform the user.
 
 * 6b. Pin to IPFS:
   - Ensure the IPFS daemon is running:
@@ -1085,7 +1134,7 @@ This step uses the Level 2 / Level 3 decisions made in Step 3.
   ```
   <div style={{float: 'right', width: '48%', maxWidth: '480px', marginLeft: '1.5rem', marginBottom: '1rem'}}>
     <img
-      src="http://127.0.0.1:8080/ipfs/{CID}"
+      src="https://ipfs.io/ipfs/{CID}"
       alt="{description}"
       style={{width: '100%', height: 'auto', aspectRatio: '{width}/{height}', borderRadius: '4px'}}
     />
@@ -1100,12 +1149,12 @@ This step uses the Level 2 / Level 3 decisions made in Step 3.
   <div style={{float: 'right', width: '48%', maxWidth: '480px', marginLeft: '1.5rem', marginBottom: '1rem'}}>
     <div style={{display: 'flex', flexWrap: 'wrap', gap: '0.5rem'}}>
       <img
-        src="http://127.0.0.1:8080/ipfs/{CID_1}"
+        src="https://ipfs.io/ipfs/{CID_1}"
         alt="{description_1}"
         style={{width: 'calc(50% - 0.25rem)', height: 'auto', aspectRatio: '{w1}/{h1}', borderRadius: '4px'}}
       />
       <img
-        src="http://127.0.0.1:8080/ipfs/{CID_2}"
+        src="https://ipfs.io/ipfs/{CID_2}"
         alt="{description_2}"
         style={{width: 'calc(50% - 0.25rem)', height: 'auto', aspectRatio: '{w2}/{h2}', borderRadius: '4px'}}
       />
@@ -1116,15 +1165,16 @@ This step uses the Level 2 / Level 3 decisions made in Step 3.
   </div>
   ```
 
-  Use local IPFS gateway first (http://127.0.0.1:8080/ipfs/{CID}).
-  Include fallback gateways as additional <source> tags for video,
-  or as a comment noting the fallback URL for images.
+  These pages go PUBLIC — always use a public IPFS gateway, never a localhost /
+  127.0.0.1 URL (a visitor's browser would try a gateway on their own machine and fail).
+  Use https://ipfs.io/ipfs/{CID} as the primary src. For video, add
+  https://dweb.link/ipfs/{CID} as a second <source> fallback; for images, note the
+  dweb.link fallback URL in a comment. The local daemon is only for pinning, not embeds.
 
 * 9e. VIDEO EMBEDDING — use half-width, floated right, with text flowing around it:
   ```
   <div style={{float: 'right', width: '48%', maxWidth: '480px', marginLeft: '1.5rem', marginBottom: '1rem'}}>
     <video controls style={{width: '100%', height: 'auto', display: 'block', borderRadius: '4px'}}>
-      <source src="http://127.0.0.1:8080/ipfs/{CID}" type="video/mp4" />
       <source src="https://ipfs.io/ipfs/{CID}" type="video/mp4" />
       <source src="https://dweb.link/ipfs/{CID}" type="video/mp4" />
       Your browser does not support the video tag.
@@ -1136,6 +1186,10 @@ This step uses the Level 2 / Level 3 decisions made in Step 3.
   ```
   NEVER use cloudflare-ipfs.com — that gateway was shut down in 2024.
   NEVER use `width="100%"` as an HTML attribute — use style={{width: '100%'}} only.
+
+  If the video or images came from a quoted/linked status (QUOTED_ORIGIN is set), credit
+  the original media poster in the caption, e.g. "Video by {QUOTED_ORIGIN}, quoted by
+  @{username} on X" — link the caption to the original post URL the user gave.
 
   Always add clearfix div after the last floated element on the page:
   ```

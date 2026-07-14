@@ -5,7 +5,7 @@
 ### Precedent: JFK Assassination Records Collection Act of 1992
 - Mandated that all assassination-related records be transferred to the National Archives
 - Created the Assassination Records Review Board (ARRB) to oversee compliance
-- Despite the law, CIA and other agencies delayed disclosure for over 30 years
+- Despite the law, [CIA](/US_Intelligence/cia) and other agencies delayed disclosure for over 30 years
 - Nearly 5% of records still redacted as of 2025
 - **Key lesson:** Intelligence agencies have vast experience circumventing disclosure mandates through delay, over-classification, and legal technicalities
 
@@ -48,4 +48,44 @@ The dual-track approach:
 - JFK Records Act: https://www.congress.gov/bill/102nd-congress/senate-bill/3006
 - Trump JFK EO: https://www.whitehouse.gov/presidential-actions/2025/01/declassification-of-records-concerning-the-assassinations-of-president-john-f-kennedy/
 - Epstein Act compliance: https://thehill.com/homenews/house/5744386-doj-epstein-files-transparency-act/
-- Charlie Kirk 175 Critical Items: https://github.com/BryanStarbuck/Charlie_Kirk_175_Critical_To_Expose
+- [Charlie Kirk](/People/charlie-kirk) 175 Critical Items: https://github.com/BryanStarbuck/Charlie_Kirk_175_Critical_To_Expose
+
+## Related Areas
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [U.S. Intelligence](/US_Intelligence/overview)
+* [Intelligence Services](/intelligence/overview)
+* [FBI](/FBI/overview)
+
+</div>
+<div>
+
+* [Government Evidence](/gov/overview)
+* [(Possible) Cover‑up](/CoverUp/overview)
+* [Fix the Charlie Kirk Situation](/Fix/overview)
+
+</div>
+</div>
+
+## Related
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Law 2: Charlie Kirk Investigation - Intelligence Services Dis…](/laws/other/old/US_Intel/Law_2_US_Intel)
+* [Human Requirements: Law 2 - US Intelligence Services Forced D…](/laws/other/old/US_Intel/more/Human_Requirements)
+* [Output Analysis: Law 2 - US Intelligence Services Forced Disc…](/laws/other/old/US_Intel/more/Output_Analysis)
+
+</div>
+<div>
+
+* [Law 2: Charlie Kirk Investigation - Intelligence Services Dis…](/laws/US_Intel/Law_2_US_Intel)
+* [Notes: Law 2 - US Intelligence Services Forced Disclosure](/laws/US_Intel/more/Notes_2_US_Intel)
+* [Charlie Kirk Assassination — Forced Disclosure](/laws)
+
+</div>
+</div>

@@ -2,7 +2,7 @@
 
 **Project:** Legislative drafting modeled after the Epstein Files Transparency Act (Public Law 119-38)
 **Case:** *State of Utah v. Tyler Alexander Robinson*, Case No. 251403576, Fourth Judicial District Court, Utah County
-**Author:** Bryan Starbuck
+**Author:** [Bryan Starbuck](/People/bryan-starbuck)
 **Date:** March 10, 2026
 
 ---
@@ -12,7 +12,7 @@
 **Directory:** `1_DoJ_FBI/`
 **Primary File:** `Law_1_DoJ_FBI.md`
 
-**Scope:** Forces the Department of Justice, FBI, ATF, CBP, TSA, DHS, FinCEN, and all federal, state, and local law enforcement agencies to disclose all files related to the Charlie Kirk investigation within 30 days of enactment. No geographic limitation -- applies nationwide and internationally where U.S. agencies have jurisdiction or possession of records. Now enumerates 205 specific disclosure items in Schedule A (expanded from the original 175).
+**Scope:** Forces the Department of Justice, FBI, ATF, CBP, TSA, DHS, FinCEN, and all federal, state, and local law enforcement agencies to disclose all files related to the [Charlie Kirk](/People/charlie-kirk) investigation within 30 days of enactment. No geographic limitation -- applies nationwide and internationally where U.S. agencies have jurisdiction or possession of records. Now enumerates 205 specific disclosure items in Schedule A (expanded from the original 175).
 
 
 
@@ -24,7 +24,7 @@
 **Directory:** `2_US_Intel/`
 **Primary File:** `Law_2_US_Intel.md`
 
-**Scope:** Forces all U.S. Intelligence Community agencies as defined by 50 U.S.C. 3003(4) -- CIA, NSA, DIA, NRO, NGA, armed forces intelligence, FBI intelligence division, DHS intelligence, ODNI, and DOE/Treasury/State intelligence elements -- to disclose all information related to the Charlie Kirk investigation within 30 days. Covers all intelligence products: SIGINT, HUMINT, IMINT, MASINT, cable traffic, satellite imagery, and liaison communications. No geographic limitation.
+**Scope:** Forces all U.S. Intelligence Community agencies as defined by 50 U.S.C. 3003(4) -- [CIA](/US_Intelligence/cia), [NSA](/US_Intelligence/nsa), DIA, NRO, NGA, armed forces intelligence, FBI intelligence division, DHS intelligence, ODNI, and DOE/Treasury/State intelligence elements -- to disclose all information related to the Charlie Kirk investigation within 30 days. Covers all intelligence products: SIGINT, HUMINT, IMINT, MASINT, cable traffic, satellite imagery, and liaison communications. No geographic limitation.
 
 
 
@@ -49,8 +49,56 @@
 **Directory:** `4_Trusted_Investigations/`
 **Primary File:** `Law_4_Trusted_Investigations.md`
 
-**Scope:** Establishes independent investigation teams led by Designated Trusted Investigators: **Candace Owens**, **Dave Smith**, **Joe Kent**, **Tulsi Gabbard**, **Tucker Carlson**, **Steve Bannon**, **Marjorie Taylor Greene**, **Jon Bray**, **Ian Carroll**, **Thomas Massie**, **Matt Gaetz**, **Glenn Greenwald**, **Collin Campbell**, **Baron Coleman**, **Ryan Matta**, **Bryan Starbuck**, and **Megyn Kelly**. Each receives one FBI team and one Intelligence Community team (six teams total). Full access to all records disclosed under Laws 1 and 2, plus independent investigation authority. Minimum 24-month operation. No geographic limitation.
+**Scope:** Establishes independent investigation teams led by Designated Trusted Investigators: **[Candace Owens](/People/candace-owens)**, **Dave Smith**, **Joe Kent**, **Tulsi Gabbard**, **[Tucker Carlson](/People/tucker-carlson)**, **Steve Bannon**, **Marjorie Taylor Greene**, **[Jon Bray](/People/jon-bray)**, **[Ian Carroll](/People/ian-carroll)**, **Thomas Massie**, **Matt Gaetz**, **Glenn Greenwald**, **Collin Campbell**, **Baron Coleman**, **Ryan Matta**, **Bryan Starbuck**, and **Megyn Kelly**. Each receives one FBI team and one Intelligence Community team (six teams total). Full access to all records disclosed under Laws 1 and 2, plus independent investigation authority. Minimum 24-month operation. No geographic limitation.
 
 
+## Citizen Investigator Claims on X (Forced Disclosure Discourse)
+
+*(Attributed public commentary about transparency demands — does not rewrite statutory text above.)*
+
+Citizen investigators and legislative advocates on X argue that ordinary FOIA and criminal discovery will not force full production in the Charlie Kirk case, citing **JFK Records Act failures** (agencies missing decades of deadlines; reports of large unreviewed FBI caches) and the **Epstein Files Transparency Act** pattern of partial dumps without a Special Master with teeth. Accounts such as **@HolonCitizen** have promoted a four-law package (FBI/DOJ disclosure, IC disclosure, mandatory investigation, trusted civilian investigators) and named figures including Candace Owens, Dave Smith, Tucker Carlson, Ian Carroll, and others as proposed **trusted investigators** under Law 4-style designs — a **policy proposal**, not an enacted statute.
+
+Parallel media clips recirculated by accounts such as **@FurkanGozukara** claim **Candace Owens** has alleged federal discovery obstruction (FBI/ATF files; director-level blocks). Counter-posts argue the Robinson case already has DNA, video, and confession-note material unlike JFK and therefore needs no special act. This page records both the **demand for forced disclosure** and the **official-narrative pushback** so readers can judge whether Schedule A-style lists (FBI 302s, cell data, aircraft, drones, ballistics, AV SD cards) match what X investigators say remains withheld.
+
+Related public pages: [Fix overview](/Fix/overview), [laws landing](/laws), [Discovery](/laws/Discovery), [explain all four laws](/laws/explain/all).
 
 
+## Related Areas
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Fix the Charlie Kirk Situation](/Fix/overview)
+* [FBI](/FBI/overview)
+* [U.S. Intelligence](/US_Intelligence/overview)
+
+</div>
+<div>
+
+* [(Possible) Cover‑up](/CoverUp/overview)
+* [Proof Intel Services](/Proof_Intel_Services/overview)
+* [Your Actions Fix It](/Your_Actions_Fix_It/overview)
+
+</div>
+</div>
+
+## Related
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Charlie Kirk Assassination — Forced Disclosure](/laws)
+* [Law 1: Charlie Kirk Investigation - DoJ/FBI Forced Disclosure…](/laws/DoJ_FBI/Law_1_DoJ_FBI)
+* [Law 2: Charlie Kirk Investigation - Intelligence Services Dis…](/laws/US_Intel/Law_2_US_Intel)
+
+</div>
+<div>
+
+* [Law 3: Charlie Kirk Investigation - Mandatory Investigation Act](/laws/Require_to_Investigate/Law_3_Require_to_Investigate)
+* [Law 4: Charlie Kirk Investigation - Trusted Investigators Act](/laws/Trusted_Investigations/Law_4_Trusted_Investigations)
+* [Charlie Kirk Files Forced Disclosure -- Threat Analysis & Rec…](/laws/other/Worries_By_Each_4_Laws)
+
+</div>
+</div>

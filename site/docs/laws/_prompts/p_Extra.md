@@ -25,7 +25,7 @@ Your instructions are:
 
 EXTRA LIST:
 
-1 Biometric analysis from FBI-released surveillance images estimating Tyler Robinson’s age as 20-24, based on facial metrics like angular jaw, skin texture, and build proportions.
+1 Biometric analysis from FBI-released surveillance images estimating [Tyler Robinson](/People/tyler-robinson)’s age as 20-24, based on facial metrics like angular jaw, skin texture, and build proportions.
 3 Evidence supporting a coordinated cell operation with at least three actors: the shooter (Tyler), a spotter for logistics, and an exfiltration handler, potentially under quasi-governmental or private military contractor auspices.
 4 The motive appearing scripted, with Tyler’s texts and gun engravings resembling an "internet meme salad" mixed with anti-fascist nods, designed to pin blame on the "radical left" while lacking deeper radicalization traces.
 5 Rapid family cooperation in turning Tyler in, with his roommate under protection and multiple confessions, but early FBI/ATF bulletins on "trans ideology bullets" being quietly retracted.
@@ -33,7 +33,7 @@ EXTRA LIST:
 10 Scrutiny of odd instant messages, in-game communication, discord or text exchanges potentially related to the assassination planning or threats.
 11 Investigation into visitors to Tyler Robinson’s home in the lead-up to the event.
 12 Clarification from investigators that a suspicious plane’s transponder was not deliberately turned off, but showed gaps due to incomplete data in rural areas.
-13 The person asking questions to Charlie Kirk was captured on video practicing the same shocked facial expression beforehand. DId that person coordinate or communicate with anyone before this event or after? He was later on CBS with Erika Kirk. Disclose any and all people related to communication and coordination.
+13 The person asking questions to [Charlie Kirk](/People/charlie-kirk) was captured on video practicing the same shocked facial expression beforehand. DId that person coordinate or communicate with anyone before this event or after? He was later on CBS with [Erika Kirk](/People/erika-kirk). Disclose any and all people related to communication and coordination.
 * Did any of the distraction people work with US intelligence or foreign intelligence or anybody else. Did they communicate, coordinate, or work with anybody before the shooting or for the shooting. Were they ever offered money. Did they ever receive money. Investigate any financial payments that they did receive. 
 * Did Charlie Kirk's heart stop before his neck wound?
 * Was FBI or other law enforcement able to find from acoustic or other investigative means the source of where any bullet that entered his body originated from. 

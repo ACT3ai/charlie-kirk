@@ -1,4 +1,5 @@
 ---
+displayed_sidebar: docs
 title: "Nick — UVU Witness"
 sidebar_label: "Nick"
 description: "A young man identified only as Nick is one of the on-the-ground witnesses to the September 10, 2025 shooting at Utah Valley University. He spoke on camera in…"
@@ -10,9 +11,15 @@ keywords:
   - Nick
   - Witness
 image: "/img/docusaurus-social-card.jpg"
+hide_table_of_contents: true
 ---
 
-<a href="../overview" style={{display:'inline-block', marginBottom:'1rem',
+{/* Full-bleed marker: activates the site-wide full-width + text-wrap
+    layout in custom.css (full width + overflow-safe side videos). Scoped
+    via CSS :has(). */}
+<div className="ck-full-bleed" />
+
+<a href="/Witnesses/overview" style={{display:'inline-block', marginBottom:'1rem',
 padding:'0.35rem 0.9rem', background:'#1a73e8', color:'#fff',
 borderRadius:'4px', textDecoration:'none', fontSize:'0.9rem'}}>← Witnesses</a>
 
@@ -24,14 +31,13 @@ A young man identified only as **Nick** is one of the on-the-ground witnesses to
 
 **Source:** [@MuppetMasher on X · 2026-05-11](https://x.com/MuppetMasher/status/2053805778952417528)
 
-<div style={{float: 'right', width: '48%', maxWidth: '480px', marginLeft: '1.5rem', marginBottom: '1rem'}}>
-  <video controls style={{width: '100%', height: 'auto', display: 'block', borderRadius: '4px'}}>
-    <source src="https://ipfs.io/ipfs/QmNjgg3Trjfiq4YEK4XjDur9YyJF1xk8nhAkeCkXMoo41Y" type="video/mp4" />
+<div className="ck-video">
+  <video controls>
     <source src="https://ipfs.io/ipfs/QmNjgg3Trjfiq4YEK4XjDur9YyJF1xk8nhAkeCkXMoo41Y" type="video/mp4" />
     <source src="https://dweb.link/ipfs/QmNjgg3Trjfiq4YEK4XjDur9YyJF1xk8nhAkeCkXMoo41Y" type="video/mp4" />
     Your browser does not support the video tag.
   </video>
-  <p style={{fontSize: '0.85rem', color: '#666', marginTop: '0.5rem'}}>
+  <p className="ck-caption">
     <em>Witness "Nick" interviewed at UVU after the September 10, 2025 shooting. Source: <a href="https://x.com/MuppetMasher/status/2053805778952417528">@MuppetMasher on X</a>, 2026-05-11.</em>
   </p>
 </div>
@@ -58,7 +64,7 @@ Nick reportedly describes the moment of the shot and the immediate aftermath:
 
 > I'm looking at him and it doesn't even look real, like — when I was on the floor, there were some group of people at the top, they cheered when he got shot. And I was just appalled.
 
-According to Nick's statement, a group of people positioned **at the top** of the venue reportedly cheered at the moment Charlie Kirk was hit. This is a specific, falsifiable claim about crowd reaction at a specific location within the venue. Confirming or refuting it would require event-camera footage from that section of UVU; see [Cameras / Surveillance](/cameras/security/overview) for the broader question of which camera angles have and have not been released.
+According to Nick's statement, a group of people positioned **at the top** of the venue reportedly cheered at the moment [Charlie Kirk](/People/charlie-kirk) was hit. This is a specific, falsifiable claim about crowd reaction at a specific location within the venue. Confirming or refuting it would require event-camera footage from that section of UVU; see [Cameras / Surveillance](/cameras/overview) for the broader question of which camera angles have and have not been released.
 
 ## Trajectory — "the shot came from my left, so his right"
 
@@ -66,11 +72,11 @@ Asked whether he had a direction the shot came from and whether he believed ther
 
 > Yeah, so I was facing towards him and it looked like the shot came from my left — so his right — and it just went through his neck and out the other side. It was gruesome.
 
-This is the trajectory detail that @MuppetMasher flags as "interesting." Nick is facing Kirk; the shot, by his account, comes from **Nick's left**, which is Kirk's **right**, and exits the **other side** of Kirk's neck. Cross-reference this with the trajectory analyses on the [Shooting Locations](/Shooting_Locations/overview) and [Proof Not Tyler](/Proof_Not_Tyler/overview) pages, where the geometry of the official scenario is examined against witness reports.
+This is the trajectory detail that @MuppetMasher flags as "interesting." Nick is facing Kirk; the shot, by his account, comes from **Nick's left**, which is Kirk's **right**, and exits the **other side** of Kirk's neck. Cross-reference this with the trajectory analyses on the [Shooting Locations](/Suspects/Shooting_Locations) and [Proof Not Tyler](/Proof_Not_Tyler/overview) pages, where the geometry of the official scenario is examined against witness reports.
 
 ## Why this account matters
 
-Nick's interview is reportedly one of several witness accounts in which the sound is described as a pop or smaller-calibre report rather than as a heavy rifle shot. The [Gun & Bullet](/Gun_Bullet/overview) page describes the calibre and rifle that the official narrative attributes to the shooting; readers can compare that to the sound profile witnesses report and decide for themselves whether the two are consistent. Compounded with the cheering-group detail and the right-side entry trajectory, Nick's account adds another data point to the ongoing question of whether the [Shooting Locations](/Shooting_Locations/overview) and [Proof Not Tyler](/Proof_Not_Tyler/overview) analyses correctly reflect what happened on the ground.
+Nick's interview is reportedly one of several witness accounts in which the sound is described as a pop or smaller-calibre report rather than as a heavy rifle shot. The [Gun & Bullet](/Gun_Bullet/overview) page describes the calibre and rifle that the official narrative attributes to the shooting; readers can compare that to the sound profile witnesses report and decide for themselves whether the two are consistent. Compounded with the cheering-group detail and the right-side entry trajectory, Nick's account adds another data point to the ongoing question of whether the [Shooting Locations](/Suspects/Shooting_Locations) and [Proof Not Tyler](/Proof_Not_Tyler/overview) analyses correctly reflect what happened on the ground.
 
 ## Full transcript
 
@@ -92,22 +98,57 @@ From video testimony in [@MuppetMasher's X post](https://x.com/MuppetMasher/stat
 
 * [Witness Nick describes loud pop, cheering group, right-side trajectory](https://x.com/MuppetMasher/status/2053805778952417528)
 
+## Laws (Charlie Kirk)
+
+* Nick's full FBI Form 302 interview report and the withheld UVU camera footage showing the cheering group and ballistics on the true caliber and shot trajectory are things that the [Charlie Kirk Investigation Laws](/Fix/overview) may result in powerful truths coming out that aren't out yet.
+
+## Why Nick’s Clip Still Circulates
+
+@MuppetMasher highlighted Nick because:
+
+1. Sound described as a **loud pop**, not a heavy rifle crack — pattern many witnesses share.
+2. Claim of a group **"at the top"** cheering when Kirk was hit.
+3. Trajectory description: from Nick’s left / Kirk’s right through the neck.
+
+These points feed both acoustics debates and crowd-behavior research. They do not, alone, identify
+a second shooter.
+
 ## Related Areas
 
 <div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
 marginTop:'0.5rem'}}>
 <div>
 
-* [Gun & Bullet — 30-06 Calibre and Sound Profile](/Gun_Bullet/overview)
-* [Shooting Locations — Trajectory Analysis](/Shooting_Locations/overview)
-* [Proof Not Tyler](/Proof_Not_Tyler/overview)
+* [Gun & Bullet Analysis](/Gun_Bullet/overview)
+* [Medical](/Medical/overview)
+* [Real Killer](/Killer/overview)
 
 </div>
 <div>
 
-* [Cameras / Surveillance Footage](/cameras/security/overview)
-* [Charlie Kirk Autopsy](/Charlie/Autopsy/overview)
-* [UVU Campus Layout](/UVU/overview)
+* [Mic — Exploding Mic Theory](/Mic/overview)
+* [Suspects](/Suspects/overview)
+* [People](/People/overview)
+
+</div>
+</div>
+
+## Related
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Witnesses](/Witnesses/overview)
+* [Shot in Chest Reversal](/Witnesses/Shot_in_Chest_Reversal)
+* [Shot to the Heart](/Witnesses/shot-to-the-heart)
+
+</div>
+<div>
+
+* [Wrong Witnesses](/Witnesses/wrong_witnesses)
+* [EksAyn Anderson](/Witnesses/EksAyn-Anderson)
+* [Gun & Bullet Analysis](/Gun_Bullet/overview)
 
 </div>
 </div>

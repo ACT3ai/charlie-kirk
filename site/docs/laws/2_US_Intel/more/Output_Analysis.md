@@ -61,3 +61,43 @@
 2. Add Special Master provision as backup enforcement
 3. Coordinate with Law 4 for Trusted Investigator access to classified intelligence
 4. Ensure coordination with Law 1 so both law enforcement and intelligence disclosures are cross-referenced
+
+## Related Areas
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Fix the Charlie Kirk Situation](/Fix/overview)
+* [U.S. Intelligence](/US_Intelligence/overview)
+* [Intelligence Services](/intelligence/overview)
+
+</div>
+<div>
+
+* [Proof Intel Services](/Proof_Intel_Services/overview)
+* [(Possible) Cover‑up](/CoverUp/overview)
+* [Government Evidence](/gov/overview)
+
+</div>
+</div>
+
+## Related
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Law 2: Charlie Kirk Investigation - Intelligence Services Dis…](/laws/US_Intel/Law_2_US_Intel)
+* [Human Requirements: Law 2 - US Intelligence Services Forced D…](/laws/US_Intel/more/Human_Requirements)
+* [Notes: Law 2 - US Intelligence Services Forced Disclosure](/laws/US_Intel/more/Notes_2_US_Intel)
+
+</div>
+<div>
+
+* [Output Analysis: Law 1 - DoJ/FBI Forced Disclosure](/laws/DoJ_FBI/more/Output_Analysis)
+* [Output Analysis: Law 3 - Require Investigation](/laws/Require_to_Investigate/more/Output_Analysis)
+* [Output Analysis: Law 4 - Trusted Investigations](/laws/Trusted_Investigations/more/Output_Analysis)
+
+</div>
+</div>

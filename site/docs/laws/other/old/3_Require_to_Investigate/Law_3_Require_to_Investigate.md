@@ -1,12 +1,12 @@
 # Law 3: Charlie Kirk Investigation - Mandatory Investigation Act
 
-AUTHOR: Bryan Starbuck (BryanStarbuck@gmail.com)
+AUTHOR: [Bryan Starbuck](/People/bryan-starbuck) (BryanStarbuck@gmail.com)
 
 ## Title
 The Charlie Kirk Mandatory Investigation Act
 
 ## Purpose
-To require the Federal Bureau of Investigation, all relevant federal and state law enforcement agencies, and the United States Intelligence Community to conduct a thorough, complete, and good-faith investigation into the death of Charlie Kirk, pursuing all leads including those identified in the 175 Critical Disclosure Items (Schedule A), and to make the findings of such investigation publicly available.
+To require the Federal Bureau of Investigation, all relevant federal and state law enforcement agencies, and the United States Intelligence Community to conduct a thorough, complete, and good-faith investigation into the death of [Charlie Kirk](/People/charlie-kirk), pursuing all leads including those identified in the 175 Critical Disclosure Items (Schedule A), and to make the findings of such investigation publicly available.
 
 **Disclaimer:** This document does not assert as fact that any individual, organization, or government entity has committed any criminal, illegal, or immoral act. All references to persons and entities are made solely for proposed legislative and legal discovery purposes — to identify what information should be disclosed and investigated through lawful processes. The items listed here are questions for investigation, not conclusions. No statement in this document should be understood as an accusation, allegation, or assertion of wrongdoing against any party. This document exists solely to support public transparency through lawful legislative and judicial processes.
 
@@ -46,16 +46,16 @@ To require the Federal Bureau of Investigation, all relevant federal and state l
 
 **Exploding Microphone Theory:**
    1. The DoD contract N0016425PJ538 for miniaturized anti-personnel charges, the chain of custody of delivered devices, and any connection to the assassination
-   2. The August 25, 2025 flight from Heber City to Nashville (near the AES facility)
+   2. The August 25, 2025 flight from Heber City to Nashville (near the [AES](/Mic/AES) facility)
    3. The identity, location, and analysis of the microphone Kirk was wearing, including explosive residue testing
    4. The AES factory explosion (October 10, 2025) and whether it constitutes destruction of evidence
    5. The physical evidence of explosion vs. ballistic wound (shirt fabric movement, pressure wave, fragment evidence, wound characteristics)
 
 **Foreign Intelligence Service Involvement:**
    1. The approximately 12 Israeli-registered cell phones at UVU -- identify holders, track locations, determine purpose
-   2. Egyptian aircraft SU-BTT and SU-BND arrivals, passengers, cargo, and activities in Utah
+   2. Egyptian aircraft [SU-BTT](/Planes/SU-BTT) and [SU-BND](/Planes/Egyptian-Armada) arrivals, passengers, cargo, and activities in Utah
    3. Egyptian military contractors with Defense Attache badges at Provo Airport -- identity, activities, connections
-   4. Surveillance aircraft N1098L (HADES spy plane) -- who contracted it, who received the feed, why it was circling before the assassination
+   4. Surveillance aircraft [N1098L](/Planes/N1098L/overview) (HADES spy plane) -- who contracted it, who received the feed, why it was circling before the assassination
    5. Counter-UAS testing at Provo Airport in the days before the assassination
    6. Any foreign intelligence service presence in the security zone at UVU
 
@@ -69,7 +69,7 @@ To require the Federal Bureau of Investigation, all relevant federal and state l
 **Alternative Shooter / Evidence Planting:**
    1. Chain of custody for the Mauser rifle -- gaps, the K-9 failure to find it, the FBI-directed re-search
    2. DNA and fingerprints on the rifle, trigger, scope, towel, cartridges -- any foreign handler DNA
-   3. Clothing discrepancies between the rooftop figure and Tyler Robinson
+   3. Clothing discrepancies between the rooftop figure and [Tyler Robinson](/People/tyler-robinson)
    4. The man in all black at the construction site -- identity, connection to the case
    5. Ballistics analysis: could a .30-06 have caused the observed wounds? Was another caliber fired?
    6. Laser targeting at UVU on September 10, 2025
@@ -77,7 +77,7 @@ To require the Federal Bureau of Investigation, all relevant federal and state l
 
 **Financial Connections:**
    1. Wire transfers to Tyler Robinson (alleged $50K through DSA-linked accounts)
-   2. Payments to Lance Twiggs (alleged $20K)
+   2. Payments to [Lance Twiggs](/People/lance-twiggs) (alleged $20K)
    3. Financial connections between distraction people and any intelligence service or handler
 
 **Psychological Operations:**
@@ -169,3 +169,43 @@ To require the Federal Bureau of Investigation, all relevant federal and state l
 ## Section 9: Effective Date
 
 This Act shall take effect immediately upon enactment.
+
+## Related Areas
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [FBI](/FBI/overview)
+* [U.S. Intelligence](/US_Intelligence/overview)
+* [Intelligence Services](/intelligence/overview)
+
+</div>
+<div>
+
+* [Fix the Charlie Kirk Situation](/Fix/overview)
+* [Legal Investigation](/legal_investigation/overview)
+* [Government Organizations](/government_organizations/overview)
+
+</div>
+</div>
+
+## Related
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Human Requirements: Law 3 - Require Investigation](/laws/other/old/Require_to_Investigate/more/Human_Requirements)
+* [Notes: Law 3 - Require Investigation](/laws/other/old/Require_to_Investigate/more/Notes_3_Require_to_Investigate)
+* [Output Analysis: Law 3 - Require Investigation](/laws/other/old/Require_to_Investigate/more/Output_Analysis)
+
+</div>
+<div>
+
+* [Law 3: Charlie Kirk Investigation - Mandatory Investigation Act](/laws/Require_to_Investigate/Law_3_Require_to_Investigate)
+* [Notes: Law 3 - Require Investigation](/laws/Require_to_Investigate/more/Notes_3_Require_to_Investigate)
+* [Charlie Kirk Assassination — Forced Disclosure](/laws)
+
+</div>
+</div>

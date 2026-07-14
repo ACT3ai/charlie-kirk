@@ -19,7 +19,7 @@ Items #1-#4, #62-#66, #74-#80, #81-#86, #87-#91, #171-#175 use "whether" and "al
 
 ---
 
-## 3. Connection Between AES Factory Explosion and the Assassination — ADDRESSED
+## 3. Connection Between [AES](/Mic/AES) Factory Explosion and the Assassination — ADDRESSED
 
 Item #202 uses "whether" framing: "all records of whether any investigation examined the connection...whether the explosion destroyed evidence." Requests disclosure, does not assert causation.
 
@@ -31,7 +31,7 @@ Items #105-#112 and #141-#147 frame chain-of-custody and planting questions as r
 
 ---
 
-## 5. Tyler Robinson's Romantic Partner (Lance Twiggs) — ADDRESSED
+## 5. [Tyler Robinson](/People/tyler-robinson)'s Romantic Partner ([Lance Twiggs](/People/lance-twiggs)) — ADDRESSED
 
 Items #176-#178 request records relating to Robinson's associates without making assertions about personal details. Framed as disclosure of investigation records.
 
@@ -43,7 +43,7 @@ Items #28-#31 and #194 use "whether" framing: "all records relating to whether P
 
 ---
 
-## 7. Evidence Deletion by FBI — ADDRESSED
+## 7. Evidence Deletion by [FBI](/FBI/overview) — ADDRESSED
 
 Items #47-#48 and #179-#180 use conditional language: "all records in which any FBI agent requested, pressured, suggested, or directed any witness...to delete or remove video evidence." Does not assert FBI did request deletion — requests disclosure of whether such records exist.
 
@@ -58,3 +58,55 @@ Laws do not make assertions about Robinson's age, background, or psychological s
 ## 10. Hospital and Medical Decisions — ADDRESSED
 
 Items #182-#184 use conditional form: "whether the FBI blocked or prevented any specific surgeon." Records request about potential obstruction, not assertion that it occurred.
+
+
+## Citizen Investigator Claims on X (Forced Disclosure Discourse)
+
+*(Attributed public commentary about transparency demands — does not rewrite statutory text above.)*
+
+Citizen investigators and legislative advocates on X argue that ordinary FOIA and criminal discovery will not force full production in the Charlie Kirk case, citing **JFK Records Act failures** (agencies missing decades of deadlines; reports of large unreviewed FBI caches) and the **Epstein Files Transparency Act** pattern of partial dumps without a Special Master with teeth. Accounts such as **@HolonCitizen** have promoted a four-law package (FBI/DOJ disclosure, IC disclosure, mandatory investigation, trusted civilian investigators) and named figures including Candace Owens, Dave Smith, Tucker Carlson, Ian Carroll, and others as proposed **trusted investigators** under Law 4-style designs — a **policy proposal**, not an enacted statute.
+
+Parallel media clips recirculated by accounts such as **@FurkanGozukara** claim **Candace Owens** has alleged federal discovery obstruction (FBI/ATF files; director-level blocks). Counter-posts argue the Robinson case already has DNA, video, and confession-note material unlike JFK and therefore needs no special act. This page records both the **demand for forced disclosure** and the **official-narrative pushback** so readers can judge whether Schedule A-style lists (FBI 302s, cell data, aircraft, drones, ballistics, AV SD cards) match what X investigators say remains withheld.
+
+Related public pages: [Fix overview](/Fix/overview), [laws landing](/laws), [Discovery](/laws/Discovery), [explain all four laws](/laws/explain/all).
+
+
+## Related Areas
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Fix the Charlie Kirk Situation](/Fix/overview)
+* [(Possible) Cover‑up](/CoverUp/overview)
+* [Government Evidence](/gov/overview)
+
+</div>
+<div>
+
+* [Proof Intel Services](/Proof_Intel_Services/overview)
+* [Legal Investigation](/legal_investigation/overview)
+* [FBI](/FBI/overview)
+
+</div>
+</div>
+
+## Related
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Problems, Vulnerabilities, and Recommended Fixes — FIXED ITEMS](/laws/other/analysis/Fixed/Any_Problems)
+* [Additional Disclosure Items to Consider (Beyond the 175) — AL…](/laws/other/analysis/Fixed/Any_more_to_Add)
+* [Attorney Analysis: Improvements for Law 1 (DoJ/FBI Forced Dis…](/laws/other/analysis/Fixed/Improve)
+
+</div>
+<div>
+
+* [Laws Not Complying with Charter — FIXED / RESOLVED ITEMS](/laws/other/analysis/Fixed/Laws_Not_Complying)
+* [Factual Challenges — REMAINING UNFIXED ITEMS](/laws/other/analysis/Challenges)
+* [Charlie Kirk Files Forced Disclosure -- Threat Analysis & Rec…](/laws/other/Worries_By_Each_4_Laws)
+
+</div>
+</div>

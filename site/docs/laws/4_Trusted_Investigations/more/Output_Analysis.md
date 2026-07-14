@@ -78,3 +78,43 @@ Six independent teams may duplicate effort.
 2. Add backup congressional appointment authority if all three investigators cannot serve
 3. Consider adding independent legal counsel funded by investigation budget (DONE in Section 2(d))
 4. Ensure investigators' Schedule A tracking is public so citizens can monitor progress
+
+## Related Areas
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Fix the Charlie Kirk Situation](/Fix/overview)
+* [Your Actions Fix It](/Your_Actions_Fix_It/overview)
+* [Podcast Coverage](/Influencers/overview)
+
+</div>
+<div>
+
+* [Vote](/Vote/overview)
+* [Proof Intel Services](/Proof_Intel_Services/overview)
+* [Legal Investigation](/legal_investigation/overview)
+
+</div>
+</div>
+
+## Related
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Law 4: Charlie Kirk Investigation - Trusted Investigators Act](/laws/Trusted_Investigations/Law_4_Trusted_Investigations)
+* [Human Requirements: Law 4 - Trusted Investigations](/laws/Trusted_Investigations/more/Human_Requirements)
+* [Notes: Law 4 - Trusted Investigations](/laws/Trusted_Investigations/more/Notes_4_Trusted_Investigations)
+
+</div>
+<div>
+
+* [Output Analysis: Law 1 - DoJ/FBI Forced Disclosure](/laws/DoJ_FBI/more/Output_Analysis)
+* [Output Analysis: Law 2 - US Intelligence Services Forced Disc…](/laws/US_Intel/more/Output_Analysis)
+* [Output Analysis: Law 3 - Require Investigation](/laws/Require_to_Investigate/more/Output_Analysis)
+
+</div>
+</div>

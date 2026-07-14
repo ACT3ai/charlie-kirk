@@ -6,7 +6,7 @@ All items #176 through #201 proposed in this analysis have been incorporated int
 
 ---
 
-## Tyler Robinson Defense & Family
+## [Tyler Robinson](/People/tyler-robinson) Defense & Family
 
 **#176: Tyler Robinson Family Statements** — ADDED (Law item #177 in all four laws)
 
@@ -26,7 +26,7 @@ All items #176 through #201 proposed in this analysis have been incorporated int
 
 ## Security Detail & Israeli Connections
 
-**#181: Brian Harpole — Netanyahu Bodyguard on Kirk Detail** — ADDED (Law item #182 in all four laws, titled "Brian Harpole — Foreign Security Background on Kirk Detail")
+**#181: [Brian Harpole](/People/brian-harpole) — Netanyahu Bodyguard on Kirk Detail** — ADDED (Law item #182 in all four laws, titled "Brian Harpole — Foreign Security Background on Kirk Detail")
 
 ---
 
@@ -34,13 +34,13 @@ All items #176 through #201 proposed in this analysis have been incorporated int
 
 **#182: Hospital Routing Decision** — ADDED (Law item #183 in all four laws)
 
-**#183: Surgeon Blocked by FBI** — ADDED (Law item #184 in all four laws)
+**#183: Surgeon Blocked by [FBI](/FBI/overview)** — ADDED (Law item #184 in all four laws)
 
 **#184: Glass or Plastic Fragments in Transport Vehicle** — ADDED (Law item #185 in all four laws)
 
 ---
 
-## TPUSA Financial Fraud
+## [TPUSA](/TPUSA/overview) Financial Fraud
 
 **#185: TPUSA Shell Company Payments** — ADDED (Law item #186 in all four laws)
 
@@ -54,11 +54,11 @@ All items #176 through #201 proposed in this analysis have been incorporated int
 
 **#188: Rode Wireless PRO Microphone Audio** — ADDED (Law item #189 in all four laws)
 
-**#189: Mikey McCoy's Mic-Up Video** — ADDED (Law item #190 in all four laws)
+**#189: [Mikey McCoy](/People/mikey-mccoy)'s Mic-Up Video** — ADDED (Law item #190 in all four laws)
 
 ---
 
-## Butch Hibbs & Exploding Microphone
+## [Butch Hibbs](/People/butch-hibbs) & Exploding Microphone
 
 **#190: Butch Hibbs at UVU Event** — ADDED (Law item #191 in all four laws)
 
@@ -108,6 +108,58 @@ All items #176 through #201 proposed in this analysis have been incorporated int
 
 ---
 
-## AES Factory Explosion
+## [AES](/Mic/AES) Factory Explosion
 
 **#201: AES Factory Explosion Investigation** — ADDED (Law item #202 in all four laws)
+
+
+## Citizen Investigator Claims on X (Forced Disclosure Discourse)
+
+*(Attributed public commentary about transparency demands — does not rewrite statutory text above.)*
+
+Citizen investigators and legislative advocates on X argue that ordinary FOIA and criminal discovery will not force full production in the Charlie Kirk case, citing **JFK Records Act failures** (agencies missing decades of deadlines; reports of large unreviewed FBI caches) and the **Epstein Files Transparency Act** pattern of partial dumps without a Special Master with teeth. Accounts such as **@HolonCitizen** have promoted a four-law package (FBI/DOJ disclosure, IC disclosure, mandatory investigation, trusted civilian investigators) and named figures including Candace Owens, Dave Smith, Tucker Carlson, Ian Carroll, and others as proposed **trusted investigators** under Law 4-style designs — a **policy proposal**, not an enacted statute.
+
+Parallel media clips recirculated by accounts such as **@FurkanGozukara** claim **Candace Owens** has alleged federal discovery obstruction (FBI/ATF files; director-level blocks). Counter-posts argue the Robinson case already has DNA, video, and confession-note material unlike JFK and therefore needs no special act. This page records both the **demand for forced disclosure** and the **official-narrative pushback** so readers can judge whether Schedule A-style lists (FBI 302s, cell data, aircraft, drones, ballistics, AV SD cards) match what X investigators say remains withheld.
+
+Related public pages: [Fix overview](/Fix/overview), [laws landing](/laws), [Discovery](/laws/Discovery), [explain all four laws](/laws/explain/all).
+
+
+## Related Areas
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Fix the Charlie Kirk Situation](/Fix/overview)
+* [(Possible) Cover‑up](/CoverUp/overview)
+* [Government Evidence](/gov/overview)
+
+</div>
+<div>
+
+* [Proof Intel Services](/Proof_Intel_Services/overview)
+* [Legal Investigation](/legal_investigation/overview)
+* [FBI](/FBI/overview)
+
+</div>
+</div>
+
+## Related
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Problems, Vulnerabilities, and Recommended Fixes — FIXED ITEMS](/laws/other/analysis/Fixed/Any_Problems)
+* [Factual Challenges Analysis — FIXED ITEMS](/laws/other/analysis/Fixed/Challenges)
+* [Attorney Analysis: Improvements for Law 1 (DoJ/FBI Forced Dis…](/laws/other/analysis/Fixed/Improve)
+
+</div>
+<div>
+
+* [Laws Not Complying with Charter — FIXED / RESOLVED ITEMS](/laws/other/analysis/Fixed/Laws_Not_Complying)
+* [Additional Disclosure Items to Consider](/laws/other/analysis/Any_more_to_Add)
+* [Charlie Kirk Files Forced Disclosure -- Summary of Four Propo…](/laws/other/List_Of_Laws)
+
+</div>
+</div>

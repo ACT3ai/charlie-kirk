@@ -2,14 +2,14 @@
 
 **Project:** Legislative drafting modeled after the Epstein Files Transparency Act (Public Law 119-38)
 **Case:** *State of Utah v. Tyler Alexander Robinson*, Case No. 251403576, Fourth Judicial District Court, Utah County
-**Author:** Bryan Starbuck
+**Author:** [Bryan Starbuck](/People/bryan-starbuck)
 **Date:** March 25, 2026
 
 ---
 
 ## Purpose of This Document
 
-This document identifies every way the U.S. government -- including the DoJ, FBI, CIA, NSA, federal courts, and Congress -- could exploit weaknesses in these four proposed laws to avoid full disclosure and investigation. Each worry is drawn from **proven** evasion tactics: the JFK Assassination Records Act (30+ years of presidential overrides, 100,000+ Israel-related documents still withheld), the Epstein Files Transparency Act (DOJ released ~12,285 documents of 6+ million pages by deadline, massive redactions, no enforcement mechanism), and standard FOIA obstruction techniques used by federal agencies daily.
+This document identifies every way the U.S. government -- including the DoJ, [FBI](/FBI/overview), [CIA](/US_Intelligence/cia), [NSA](/US_Intelligence/nsa), federal courts, and Congress -- could exploit weaknesses in these four proposed laws to avoid full disclosure and investigation. Each worry is drawn from **proven** evasion tactics: the JFK Assassination Records Act (30+ years of presidential overrides, 100,000+ Israel-related documents still withheld), the Epstein Files Transparency Act (DOJ released ~12,285 documents of 6+ million pages by deadline, massive redactions, no enforcement mechanism), and standard FOIA obstruction techniques used by federal agencies daily.
 
 The core assumption: **The U.S. government is actively covering for Israel in the Epstein case and will use every available tool to do the same here.** The same institutional forces that kept JFK files sealed for 60+ years, that allowed DOJ to claim "full compliance" with the Epstein Act while withholding 3+ million pages, will be deployed against these laws. Israel's involvement is the third rail -- 100,000+ JFK documents implicating Israel remain unreleased; the Epstein files connecting Mossad are heavily redacted; and the Charlie Kirk investigation already shows Kash Patel shutting down the Counterterrorism Center's foreign involvement probe because it could aid the defense.
 
@@ -55,7 +55,7 @@ The core assumption: **The U.S. government is actively covering for Israel in th
 
 ### CC-7: Foreign Government Pressure to Suppress
 
-**WORRY:** Israel, Egypt, and France will exert diplomatic pressure to prevent release of records implicating their nationals or intelligence services. Israel will invoke intelligence-sharing agreements, threaten to cut off intelligence cooperation, and mobilize AIPAC to pressure Congress. Egypt will claim diplomatic immunity for the military contractors on SU-BTT. France will invoke its own national security interests regarding DGSE activities.
+**WORRY:** Israel, Egypt, and France will exert diplomatic pressure to prevent release of records implicating their nationals or intelligence services. Israel will invoke intelligence-sharing agreements, threaten to cut off intelligence cooperation, and mobilize AIPAC to pressure Congress. Egypt will claim diplomatic immunity for the military contractors on [SU-BTT](/Planes/SU-BTT). France will invoke its own national security interests regarding DGSE activities.
 
 **FIX:** (1) Explicit statutory override of all intelligence-sharing agreements, MOUs, and diplomatic arrangements (Law 4 has this). (2) Require the Secretary of State to invoke MLATs within 15 days (Law 4 has this). (3) Add a provision that any foreign government refusal to cooperate triggers an automatic public report to Congress naming the refusing government and the specific records requested. (4) Add a "No Diplomatic Immunity for Evidence" clause: no claim of diplomatic immunity, sovereign immunity, or act-of-state doctrine may be used to withhold records from investigation teams.
 
@@ -89,7 +89,7 @@ The core assumption: **The U.S. government is actively covering for Israel in th
 
 ### Worry L1-5: Private Entities Destroy Records or Stonewall
 
-**WORRY:** TPUSA (now controlled by Erika Kirk), Mosaic Pro Events, AES (factory exploded), hotels, rental car companies -- all hold critical records. TPUSA has every incentive to destroy records showing financial fraud, foreign intelligence contacts, and the life insurance policy. Private entities will claim attorney-client privilege, trade secrets, or simply refuse to comply and bet that enforcement takes years.
+**WORRY:** [TPUSA](/TPUSA/overview) (now controlled by [Erika Kirk](/People/erika-kirk)), Mosaic Pro Events, [AES](/Mic/AES) (factory exploded), hotels, rental car companies -- all hold critical records. TPUSA has every incentive to destroy records showing financial fraud, foreign intelligence contacts, and the life insurance policy. Private entities will claim attorney-client privilege, trade secrets, or simply refuse to comply and bet that enforcement takes years.
 
 **FIX:** (1) $100,000/day civil penalties for non-compliance (already in Law 1 Section 2(e)). (2) Criminal penalties (same as government agencies) for destruction. (3) Expedited contempt proceedings -- courts must hear motions within 7 days. (4) Require forensic imaging of TPUSA and Mosaic Pro Events systems within 15 days of enactment. (5) Appoint a Special Master with authority to conduct on-site inspections of private entity records.
 
@@ -175,7 +175,7 @@ The core assumption: **The U.S. government is actively covering for Israel in th
 
 ### Worry L3-1: Investigation Teams Conduct "Check-the-Box" Investigations
 
-**WORRY:** Agencies will assign teams that technically comply -- 20 agents, $10 million budget -- but conduct superficial investigations. They'll interview witnesses but ask the wrong questions. They'll review documents but miss the connections. They'll investigate Tyler Robinson's background but never investigate Israeli intelligence activity. This is the Warren Commission model: create the appearance of a thorough investigation while avoiding the truth.
+**WORRY:** Agencies will assign teams that technically comply -- 20 agents, $10 million budget -- but conduct superficial investigations. They'll interview witnesses but ask the wrong questions. They'll review documents but miss the connections. They'll investigate [Tyler Robinson](/People/tyler-robinson)'s background but never investigate Israeli intelligence activity. This is the Warren Commission model: create the appearance of a thorough investigation while avoiding the truth.
 
 **FIX:** (1) The external independent oversight board (Section 6) must have authority to direct investigators to pursue specific leads they are avoiding. (2) Require the investigation teams to address every single Schedule A item individually in their reports, with specific findings or explanation of why they couldn't investigate. (3) Give the oversight board power to replace investigation team leaders who are not conducting good-faith investigations. (4) Require the Trusted Investigators (Law 4) to review the investigation teams' work and publicly identify gaps.
 
@@ -233,7 +233,7 @@ The core assumption: **The U.S. government is actively covering for Israel in th
 
 ### Worry L4-1: Security Clearance Denials Used to Block Investigators
 
-**WORRY:** Despite the law granting immediate interim TS/SCI clearances, agencies will find ways to obstruct. They'll claim the background investigation revealed disqualifying information. They'll delay the paperwork. They'll revoke clearances for "cause." The entire investigation could be paralyzed by clearance games -- especially for investigators like Candace Owens, Tucker Carlson, and Ian Carroll who have been critical of Israel and the intelligence community.
+**WORRY:** Despite the law granting immediate interim TS/SCI clearances, agencies will find ways to obstruct. They'll claim the background investigation revealed disqualifying information. They'll delay the paperwork. They'll revoke clearances for "cause." The entire investigation could be paralyzed by clearance games -- especially for investigators like [Candace Owens](/People/candace-owens), [Tucker Carlson](/People/tucker-carlson), and [Ian Carroll](/People/ian-carroll) who have been critical of Israel and the intelligence community.
 
 **FIX:** (1) Law 4 Section 2(c) already has good protections -- immediate interim clearances, presumption of validity, 14-day expedited judicial review. Strengthen by adding: (2) No agency may deny or delay clearance processing for more than 72 hours. (3) Any denial must be made publicly and the stated reason must be published. (4) The denial standard is "clear and convincing evidence of specific, articulable, and imminent threat to national security unrelated to the investigation" -- this is already in the law and is very strong. (5) Add automatic sanctions for any agency official who files a frivolous clearance denial.
 
@@ -251,7 +251,7 @@ The core assumption: **The U.S. government is actively covering for Israel in th
 
 ### Worry L4-4: Physical Safety of Trusted Investigators and Their Teams
 
-**WORRY:** Charlie Kirk was assassinated. Candace Owens, Tucker Carlson, and others have received death threats. Andrew Kolvet told Candace that she and Tucker "were on a list." Mike Huckabee told Candace "they will make you disappear." The Trusted Investigators and their team members face real physical danger from the same forces that killed Kirk.
+**WORRY:** [Charlie Kirk](/People/charlie-kirk) was assassinated. Candace Owens, Tucker Carlson, and others have received death threats. [Andrew Kolvet](/People/andrew-kolvet) told Candace that she and Tucker "were on a list." Mike Huckabee told Candace "they will make you disappear." The Trusted Investigators and their team members face real physical danger from the same forces that killed Kirk.
 
 **FIX:** (1) Law 4 Section (f-1) provides diplomatic security for international travel -- extend this to domestic operations as well. (2) Provide each Trusted Investigator with a U.S. Marshals Service protective detail funded from the investigation budget, independent of any covered agency. (3) Criminal penalties specifically for threats against Trusted Investigators (already covered under general non-interference provisions, but should be explicitly enumerated). (4) Secure communications and counter-surveillance capabilities for all investigation team members.
 
@@ -310,3 +310,55 @@ The core assumption: **The U.S. government is actively covering for Israel in th
 4. **Mandatory Declassification with No National Security Blanket (CC-6, L2-1):** Automatic declassification upon enactment, prohibition on reclassification, narrow exceptions only for currently active human source identities, and a 7-day waiver deadline for classification claims. The burden is on the agency to prove grave and imminent harm, not on the public to prove the need for disclosure.
 
 5. **Redundant Independent Oversight (L3-1, L4-6):** The four-layer structure -- Law 1 review board, Law 3 investigation teams with independent oversight board, Law 4 Trusted Investigators, plus private citizens' right of action -- provides redundancy. No single point of failure can block all disclosure. This must be maintained and each layer must have independent enforcement authority.
+
+
+## Citizen Investigator Claims on X (Forced Disclosure Discourse)
+
+*(Attributed public commentary about transparency demands — does not rewrite statutory text above.)*
+
+Citizen investigators and legislative advocates on X argue that ordinary FOIA and criminal discovery will not force full production in the Charlie Kirk case, citing **JFK Records Act failures** (agencies missing decades of deadlines; reports of large unreviewed FBI caches) and the **Epstein Files Transparency Act** pattern of partial dumps without a Special Master with teeth. Accounts such as **@HolonCitizen** have promoted a four-law package (FBI/DOJ disclosure, IC disclosure, mandatory investigation, trusted civilian investigators) and named figures including Candace Owens, Dave Smith, Tucker Carlson, Ian Carroll, and others as proposed **trusted investigators** under Law 4-style designs — a **policy proposal**, not an enacted statute.
+
+Parallel media clips recirculated by accounts such as **@FurkanGozukara** claim **Candace Owens** has alleged federal discovery obstruction (FBI/ATF files; director-level blocks). Counter-posts argue the Robinson case already has DNA, video, and confession-note material unlike JFK and therefore needs no special act. This page records both the **demand for forced disclosure** and the **official-narrative pushback** so readers can judge whether Schedule A-style lists (FBI 302s, cell data, aircraft, drones, ballistics, AV SD cards) match what X investigators say remains withheld.
+
+Related public pages: [Fix overview](/Fix/overview), [laws landing](/laws), [Discovery](/laws/Discovery), [explain all four laws](/laws/explain/all).
+
+
+## Related Areas
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Fix the Charlie Kirk Situation](/Fix/overview)
+* [(Possible) Cover‑up](/CoverUp/overview)
+* [Government Evidence](/gov/overview)
+
+</div>
+<div>
+
+* [Proof Intel Services](/Proof_Intel_Services/overview)
+* [Legal Investigation](/legal_investigation/overview)
+* [Your Actions Fix It](/Your_Actions_Fix_It/overview)
+
+</div>
+</div>
+
+## Related
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Problems, Vulnerabilities, and Recommended Fixes — Comprehens…](/laws/other/analysis/Any_Problems)
+* [Factual Challenges — REMAINING UNFIXED ITEMS](/laws/other/analysis/Challenges)
+* [Charlie Kirk Files Forced Disclosure -- Summary of Four Propo…](/laws/other/List_Of_Laws)
+
+</div>
+<div>
+
+* [Law 1: Charlie Kirk Investigation - DoJ/FBI Forced Disclosure…](/laws/DoJ_FBI/Law_1_DoJ_FBI)
+* [Laws Not Complying with Charter (List_Of_Laws.md) -- Comprehe…](/laws/other/analysis/Laws_Not_Complying)
+* [Charlie Kirk Assassination — Forced Disclosure](/laws)
+
+</div>
+</div>
