@@ -35,6 +35,7 @@ const sidebars: SidebarsConfig = {
     {type: 'doc', id: 'Narrative/overview', label: 'Narrative'},
     {type: 'doc', id: 'Timeline/overview', label: 'Timeline'},
     {type: 'doc', id: 'People/overview', label: 'People'},
+    {type: 'doc', id: 'Witnesses/overview', label: 'Witnesses'},
     {type: 'doc', id: 'intelligence/overview', label: 'Intelligence Services'},
     {type: 'doc', id: 'Fix/overview', label: 'New Laws (Fix)'},
     {type: 'doc', id: 'Motive/overview', label: 'Motive'},
