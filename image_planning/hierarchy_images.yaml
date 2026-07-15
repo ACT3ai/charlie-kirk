@@ -5,8 +5,8 @@
 # Nodes marked needs_split exceed the 12-image ceiling and get split on a later pass.
 level_3:
   - level_3:
-      title: "FBI Conduct and Cover Up"
-      _key: FBI_CoverUp
+      title: "FBI"
+      _key: FBI
       number_of_images: 14
       number_of_images_recursive: 24
       needs_split: true   # over the 12 ceiling — split on a later pass
