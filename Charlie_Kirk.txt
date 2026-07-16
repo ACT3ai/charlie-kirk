@@ -952,6 +952,75 @@ Source: https://x.com/realstewpeters/status/2075290171105288315
 
 As part of the investigation, was a Cellebrite extraction performed on Mr. Twiggs' phone? Yes, it was. Did you personally review that extraction? Yes, I have. And according to that extraction, did Mr. Robinson and Mr. Twiggs exchange text messages on September tenth through eleventh, twenty twenty five? Yes, they did. What time was that first text sent, according to the Cellebrite extraction? The first text was September tenth at eleven p.m.
 
+--- Cellebrite / Israeli-tech conflict-of-interest thread (July 2026) ---
+
+The core question X commentators raise: if Israel is treated as a suspect in this investigation, why is
+Israeli-made software extracting and authenticating the evidence in the trial?
+
+Company facts: Cellebrite DI Ltd., founded 1999, headquartered Petah Tikva, Israel. Flagship UFED (Universal
+Forensic Extraction Device) + Physical Analyzer. Extracts messages (including deleted), call logs, app data,
+location history, photos, metadata from locked/encrypted/damaged devices. Sold to police, FBI, border agencies.
+Used in all 50 US states and 150+ countries. Standard in criminal investigations — hashing, chain of custody,
+court-admissible reports. Staff include ex-IDF and ex-Unit 8200 intelligence veterans.
+
+Three Israeli-tech threads commentators stack together:
+1. Cellebrite — extracted Lance Twiggs' phone; recovered the Sept 10-11 Robinson-Twiggs texts including the
+   alleged "note under the keyboard" thread. CONFIRMED in open court via Agent Davis testimony.
+2. BriefCam — Israeli AI video-analytics company, reportedly used on UVU cameras to track Robinson. REPORTED,
+   not verified.
+3. Google Trends spikes from Israeli geographies for case figures before Sept 10. CONTESTED.
+   NOTE: stacking three weak/contested items does not corroborate them. Israel has a large security-tech export
+   industry, so Israeli products appear in police work everywhere, including cases with no Israel angle at all.
+
+The Karen Read precedent (the one item with real substance):
+Cellebrite's parsing of a Google search timestamp ("how long to die in the cold") on a witness's phone was
+disputed; Cellebrite later updated its software to flag certain timestamp artifacts as ambiguous. This shows
+PARSING FALLIBILITY — a derived timestamp presented with more confidence than the data supports.
+It is routinely OVERSTATED as "Cellebrite was found to have altered metadata." A disputed parsing of an
+ambiguous artifact is not alteration of metadata, and the company correcting its software is evidence of a
+working error-correction process, not a tool that can't be checked.
+
+Counterarguments that belong in full:
+* Cellebrite is the industry standard, not an exotic choice. The X claim that it's "not even in the top 10
+  software programs used in trials" is NOT supported — UFED is among the most widely deployed mobile-forensics
+  products in existence. Its absence would be more surprising than its presence.
+* The vendor did not pick itself. Tool selection was made by US investigators (FBI + Utah) under existing agency
+  contracts. Foreign orchestration requires explaining how a choice made by American police becomes an Israeli one.
+* Output is checkable by design — extractions are hash-verified, defense gets the full device image and can
+  re-process it with a different vendor's tool. Fabricated messages would have to survive adversarial re-extraction.
+* Extraction is not authorship. Cellebrite copies and parses what is on a device. Injecting a fabricated message
+  onto a phone before extraction is a different act by a different actor, with no evidence offered.
+
+Claims that break down and should be marked as such:
+* "The texts are proven to be fake" — NO. No court, expert, or public analysis establishes this.
+* "A Cellebrite employee refused to sign the cert and was found with 3 shots to the back of the head, ruled
+  suicide" — circulates prefaced with "a birdie told me." No name, date, location, police report, or reporting.
+  RUMOR. Recorded only to mark it unsupported.
+* "Israel killed Kirk and now wants Robinson convicted" — conclusion stacking; assumes what it needs to prove.
+
+The irony: the fabrication theory requires Cellebrite to be BOTH the instrument of a frame-up AND a tool whose
+output the defense can freely re-verify. Those cannot both be true.
+
+Also noted: the confession-style texts came off the ROOMMATE's phone (Twiggs), not the defendant's — so the chain
+of custody that matters most runs through a third party's device. Twiggs reportedly said Robinson "never mentioned
+Charlie prior or even politics much, if ever," which is a genuine tension with a confession thread and a fair
+defense argument — but it is testimony about memory, not proof of fabrication.
+
+What would resolve it: full UFED extraction report (not courtroom screenshots) with complete metadata; tool
+version/build + hash values; chain of custody for both phones; examiner credentials; independent re-extraction by
+the defense with a non-Cellebrite tool; confirmation of whether BriefCam was used on UVU footage and under what
+authority.
+
+Honest summary: the conflict-of-interest question is fair and worth pressing in court. The evidence that anything
+was actually manipulated is absent. Both statements are true at once.
+
+Site pages created:
+  site/docs/Israel/israeli-tech-in-investigation.mdx  -> /Israel/israeli-tech-in-investigation
+  site/docs/court/Robinson_Phone_Devices.mdx          -> /court/Robinson_Phone_Devices
+Existing related pages: court/Cellebrite, court/Phone_Extraction, court/Twiggs_Phone,
+  CoverUp/Cellebrite_Extraction_Contradiction
+
+
 ============== NSA Bumblehive Data Center can get Israeli 12+ cell phones, even Burners.  ===================
 
 Tony Seruga is saying that the NSA has a giant secret data center in Utah nicknamed Bumblehive. This place sucks up enormous amounts of phone data from everywhere. 
@@ -3832,6 +3901,15 @@ and the soil was excavated (explosive residues).
 ✅Why the feds did not conduct a standard GSR test.
 
 ✅Why Taryl Farnsworth violated the crime scene to take the footage from behind Charlie.
+
+Site page created for this six-item convergence list: site/docs/FBI/Rigged_Mic_Explains_Anomalies.mdx
+  Public URL: /FBI/Rigged_Mic_Explains_Anomalies
+  Each of the six items maps to existing coverage: FBI/Bomb_Dogs, FBI/Crime_Scene_Paving,
+  Mic/exploding-pendant-shaped-charge (necklace residue), Proof_Not_Tyler/Trajectory_Wound_Mismatch (Losee),
+  Proof_Not_Tyler/Gun_Discovery_Sequence (GSR), Censorship/Witness_Footage_Pressure (Farnsworth footage).
+  The necklace "was it for explosive residue?" question also added to Mic/exploding-pendant-shaped-charge.
+  Counterweight kept on the page: cavitation from a high-energy round snaps a necklace with no explosive,
+  and collecting an item off the victim's body is routine. One residue lab result would resolve most of the list.
 
 
 ===============  CUSTOM Polyester Blend Carhartt Shirt  ==================
