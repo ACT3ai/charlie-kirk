@@ -30,6 +30,7 @@ const sidebars: SidebarsConfig = {
     {type: 'doc', id: 'Electrocution/overview', label: 'Electrocution'},
     {type: 'doc', id: 'Planes/overview', label: 'Planes'},
     {type: 'doc', id: 'UVU/overview', label: 'UVU Campus'},
+    {type: 'doc', id: 'Suspicious/overview', label: 'Suspicious'},
     {type: 'doc', id: 'CoverUp/overview', label: 'Cover Up'},
     {type: 'doc', id: 'TPUSA/overview', label: 'TPUSA'},
     {type: 'doc', id: 'Tent/overview', label: 'The Tent'},
