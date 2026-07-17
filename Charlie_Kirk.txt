@@ -952,6 +952,80 @@ Source: https://x.com/realstewpeters/status/2075290171105288315
 
 As part of the investigation, was a Cellebrite extraction performed on Mr. Twiggs' phone? Yes, it was. Did you personally review that extraction? Yes, I have. And according to that extraction, did Mr. Robinson and Mr. Twiggs exchange text messages on September tenth through eleventh, twenty twenty five? Yes, they did. What time was that first text sent, according to the Cellebrite extraction? The first text was September tenth at eleven p.m.
 
+--- Cellebrite / Israeli-tech conflict-of-interest thread (July 2026) ---
+
+The core question X commentators raise: if Israel is treated as a suspect in this investigation, why is
+Israeli-made software extracting and authenticating the evidence in the trial?
+
+Company facts: Cellebrite DI Ltd., founded 1999, headquartered Petah Tikva, Israel. Flagship UFED (Universal
+Forensic Extraction Device) + Physical Analyzer. Extracts messages (including deleted), call logs, app data,
+location history, photos, metadata from locked/encrypted/damaged devices. Sold to police, FBI, border agencies.
+Used in all 50 US states and 150+ countries. Standard in criminal investigations — hashing, chain of custody,
+court-admissible reports. Staff include ex-IDF and ex-Unit 8200 intelligence veterans.
+
+Three Israeli-tech threads commentators stack together:
+1. Cellebrite — extracted Lance Twiggs' phone; recovered the Sept 10-11 Robinson-Twiggs texts including the
+   alleged "note under the keyboard" thread. CONFIRMED in open court via Agent Davis testimony.
+2. BriefCam — Israeli AI video-analytics company, reportedly used on UVU cameras to track Robinson. REPORTED,
+   not verified.
+3. Google Trends spikes from Israeli geographies for case figures before Sept 10. CONTESTED.
+   NOTE: stacking three weak/contested items does not corroborate them. Israel has a large security-tech export
+   industry, so Israeli products appear in police work everywhere, including cases with no Israel angle at all.
+
+The Karen Read precedent (the one item with real substance):
+Cellebrite's parsing of a Google search timestamp ("how long to die in the cold") on a witness's phone was
+disputed; Cellebrite later updated its software to flag certain timestamp artifacts as ambiguous. This shows
+PARSING FALLIBILITY — a derived timestamp presented with more confidence than the data supports.
+It is routinely OVERSTATED as "Cellebrite was found to have altered metadata." A disputed parsing of an
+ambiguous artifact is not alteration of metadata, and the company correcting its software is evidence of a
+working error-correction process, not a tool that can't be checked.
+
+Counterarguments that belong in full:
+* Cellebrite is the industry standard, not an exotic choice. The X claim that it's "not even in the top 10
+  software programs used in trials" is NOT supported — UFED is among the most widely deployed mobile-forensics
+  products in existence. Its absence would be more surprising than its presence.
+* The vendor did not pick itself. Tool selection was made by US investigators (FBI + Utah) under existing agency
+  contracts. Foreign orchestration requires explaining how a choice made by American police becomes an Israeli one.
+* Output is checkable by design — extractions are hash-verified, defense gets the full device image and can
+  re-process it with a different vendor's tool. Fabricated messages would have to survive adversarial re-extraction.
+* Extraction is not authorship. Cellebrite copies and parses what is on a device. Injecting a fabricated message
+  onto a phone before extraction is a different act by a different actor, with no evidence offered.
+
+Claims that break down and should be marked as such:
+* "The texts are proven to be fake" — NO. No court, expert, or public analysis establishes this.
+* "Israel killed Kirk and now wants Robinson convicted" — conclusion stacking; assumes what it needs to prove.
+
+THE DECISIVE FACT: the defense is not challenging the Cellebrite extraction. Robinson's defense team has the full
+data, an obvious incentive to discredit the confession texts, and capital-case resources to hire its own examiner —
+and it is not contesting the authenticity of the Cellebrite evidence. The party best positioned to expose
+fabrication, and most motivated to, is not alleging it. Any planted-evidence theory has to explain that.
+
+The irony: the fabrication theory requires Cellebrite to be BOTH the instrument of a frame-up AND a tool whose
+output the defense can freely re-verify. Those cannot both be true.
+
+SCOPE RULE for this thread: only include where the prosecution or defense actually used Cellebrite, plus the fact
+that the defense is not challenging it. Do not carry unsourced rumors about the company or its employees.
+
+Also noted: the confession-style texts came off the ROOMMATE's phone (Twiggs), not the defendant's — so the chain
+of custody that matters most runs through a third party's device. Twiggs reportedly said Robinson "never mentioned
+Charlie prior or even politics much, if ever," which is a genuine tension with a confession thread and a fair
+defense argument — but it is testimony about memory, not proof of fabrication.
+
+What would resolve it: full UFED extraction report (not courtroom screenshots) with complete metadata; tool
+version/build + hash values; chain of custody for both phones; examiner credentials; independent re-extraction by
+the defense with a non-Cellebrite tool; confirmation of whether BriefCam was used on UVU footage and under what
+authority.
+
+Honest summary: the conflict-of-interest question is fair and worth pressing in court. The evidence that anything
+was actually manipulated is absent. Both statements are true at once.
+
+Site pages created:
+  site/docs/Israel/israeli-tech-in-investigation.mdx  -> /Israel/israeli-tech-in-investigation
+  site/docs/court/Robinson_Phone_Devices.mdx          -> /court/Robinson_Phone_Devices
+Existing related pages: court/Cellebrite, court/Phone_Extraction, court/Twiggs_Phone,
+  CoverUp/Cellebrite_Extraction_Contradiction
+
+
 ============== NSA Bumblehive Data Center can get Israeli 12+ cell phones, even Burners.  ===================
 
 Tony Seruga is saying that the NSA has a giant secret data center in Utah nicknamed Bumblehive. This place sucks up enormous amounts of phone data from everywhere. 
@@ -1016,6 +1090,65 @@ https://www.scribd.com/document/1024574137/Discord-Warrant
 
 https://thepostmillennial.com/revealed-utah-officers-demanded-discord-turn-over-server-records-containing-tyler-robinsons-communication-affidavit#google_vignette
 
+
+
+============== Burnt Object in SUV = RODE Transmitter? (Project Constitution) ===================
+
+Source: https://x.com/ProjectConstitu/status/2077847223082103278
+Author: @ProjectConstitu (Project Constitution)
+Date: 2026-07-16T20:05:57.000Z
+Likes: 225 | Retweets: 70 | Views: 7,301
+Images: 4 (all pinned to IPFS — see images/manifest.yaml)
+
+BOMBSHELL: The Burnt OBJECT In Charlie Kirk's SUV Isn't Just Shirt and Skin — It's Part of the RODE Wireless Mic Transmitter!
+
+Candace was right that a large portion of the burnt object left in the back of the SUV is melted polyester from Charlie's shirt fused with charred skin. But there's more to it. When you examine the clearer photo taken by @michael_vina27 while the vehicle was at the auto auction (not the initial cropped version), a thicker black section on the left side of the object becomes visible. Zoomed in, it appears to contain a melted female audio jack — the exact same type of jack found on the top of the RODE Wireless ME transmitter that Charlie was wearing under his shirt, clipped to his belt.
+
+Even more damning: in the center of the burnt mass is a fragment sticking up with visible writing and a circular symbol. That marking seems to match warning symbols from the modified battery pack that was used inside the RODE mic transmitter.
+
+This strongly suggests the RODE Wireless ME unit itself was involved in the explosion. The device was positioned under Charlie's shirt against his body clipped to his belt on his left side — directly inline with the neck wound. If that transmitter contained a shaped charge or was otherwise modified to detonate, it would explain the catastrophic neck injury far better than a distant rifle shot.
+
+The official narrative still insists this was a clean gunshot from a rooftop. The physical evidence left behind in the SUV is telling a very different story.
+
+Something exploded against Charlie Kirk's body that day. And the remnants of the wireless transmitter appear to still be sitting in that car.
+
+[Image contents — reviewed directly]
+1. "Female Audio Jack?" — red arrows to a circled dark region at the object's left edge, with a RODE Wireless ME TX
+   product photo inset. Posed as a QUESTION, not an assertion. Region is blurred past component recognition.
+2. "SYMBOL FROM LABEL ON MODIFIED BATTERY FROM TRANSMITTER" — a battery pack label (legible: MK1SL, 1200mAh, 4Wh,
+   Sino brand logo, row of standard warning/compliance symbols) with a red line connecting a circular symbol to a
+   circled upright fragment in the burnt mass.
+3. Phone screenshot (IMG_6641.jpg) of the @michael_vina27 auto-auction photo — a screenshot of a video frame, with
+   a caption bar ("didn't have lighte... like grab a box a...") across it.
+4. Unannotated close-up: pale irregular mass, dark scorched edges, small dark protrusions, on dark textured
+   SUV upholstery.
+
+Problems with this claim (recorded so it isn't over-read later):
+* Resolution does not support the identification. A "melted female audio jack" is a specific geometry (barrel,
+  ring, sleeve). What's visible is a dark blurred shape. The post's own question mark concedes this.
+* It's a screenshot of a screenshot — phone screenshot of a video frame of the original photo. Each generation adds
+  JPEG artifacts, and artifacts around high-contrast edges routinely produce shapes that read as structure.
+  Pareidolia is the default risk when zooming into re-compressed imagery.
+* MODEL CONFLICT: this post says RODE Wireless ME. Our site's rode-wireless-mic page identifies the device as the
+  Wireless PRO, and the Butch Hibbs pocket-object dimensional argument (~2"x2") is built on the PRO. Different
+  products, different housings and jack placement. A parts-match claim unsure which product it's matching can't
+  establish a match. THIS NEEDS RESOLVING — which model was actually used?
+* The battery label is an ordinary third-party aftermarket replacement label with standard compliance symbols. It
+  does not show one was in Kirk's transmitter or that any battery was modified. Calling it "the modified battery
+  pack" assumes the conclusion.
+* Debris in the vehicle is expected. Transmitter parts in the SUV, if that's what these are, is consistent with him
+  HAVING WORN a transmitter — not evidence of detonation.
+
+What still stands independent of this claim: why is there charred material in that vehicle at all? A rifle round
+does not typically char tissue or fabric. That's the exploding-mic theory's strongest observational hook and does
+not depend on this parts-identification being right.
+
+What would settle it: the original uncompressed @michael_vina27 photo at full resolution (not a screenshot of a
+video frame); physical recovery + lab exam of the object with explosive-residue testing; a scale reference in-frame;
+confirmation of which RODE model was used (ME vs PRO); chain of custody for the SUV.
+
+Site page created: site/docs/Mic/burnt-object-rode-transmitter.mdx -> /Mic/burnt-object-rode-transmitter
+  NOTE: intentionally NOT linked from the Mic Level 2 TOC (created unlinked per request).
 
 
 ============== Mic Explode pulls shirt ===================
@@ -3813,6 +3946,49 @@ Show Faith By Works, the company Israel hired to geotrack Charlie’s fans after
 
 Come to read the comments in Erika Kirk’s grandfathers Captain Carl Kenneth Frantzve obituary page and I found this - “god bless you Ken and now you’re in Valhalla.” Also the very next day all of Erika’s Frantve relatives by an anonymous person left a flower on their tribute wall and gravesite
 
+
+
+
+===============  Suspicious of FBI & Investigation  ==================
+
+A RIGGED RODE MIC WITH SHAPED CHARGE COULD REASONABLY EXPLAIN:
+
+✅Why bomb dogs were kept away from actual scene.
+ 
+✅Why the crime scene was immediately paved over, 
+and the soil was excavated (explosive residues).
+
+✅Why the feds were searching for Charlie Kirks necklace (explosive residue).
+
+✅Why there is no available footage or any eyewitness reports of someone seen firing a shot from the Losee building. 
+
+✅Why the feds did not conduct a standard GSR test.
+
+✅Why Taryl Farnsworth violated the crime scene to take the footage from behind Charlie.
+
+Site page created for this six-item convergence list: site/docs/FBI/Rigged_Mic_Explains_Anomalies.mdx
+  Public URL: /FBI/Rigged_Mic_Explains_Anomalies
+  Each of the six items maps to existing coverage: FBI/Bomb_Dogs, FBI/Crime_Scene_Paving,
+  Mic/exploding-pendant-shaped-charge (necklace residue), Proof_Not_Tyler/Trajectory_Wound_Mismatch (Losee),
+  Proof_Not_Tyler/Gun_Discovery_Sequence (GSR), Censorship/Witness_Footage_Pressure (Farnsworth footage).
+  The necklace "was it for explosive residue?" question also added to Mic/exploding-pendant-shaped-charge.
+  Counterweight kept on the page: cavitation from a high-energy round snaps a necklace with no explosive,
+  and collecting an item off the victim's body is routine. One residue lab result would resolve most of the list.
+
+
+===============  CUSTOM Polyester Blend Carhartt Shirt  ==================
+
+Candace Owens REVEALS Charlie Kirk Was Wearing a CUSTOM Polyester Blend Carhartt Shirt the DAY He Was Assassinated.🤔
+
+Candace Owens dropped another important detail tonight that has been overlooked. She revealed that the “Freedom” shirts sold by Turning Point after Charlie’s death were not the same shirt he was actually wearing on September 10th. Those were cheaper versions sold through their for-profit arm. Charlie was instead wearing a custom Carhartt shirt that day — one that appears to have been made specifically for him and contained a high percentage of polyester.
+
+This is notable because Candace said she never once saw Charlie wear a Carhartt or polyester shirt during years of campus events with him. Former and current Turning Point employees also confirmed that Carhartt was never a TPUSA vendor. 
+
+Even more strange, when Charlie’s assistant Nate Walker was asked by Megyn Kelly about the shirt, he claimed Charlie specifically requested the non-controversial “Freedom shirt,” then immediately claimed he couldn’t remember what the other options were.
+
+A custom, expensive, non-standard shirt that no one at TPUSA has ever explained. Candace is now asking the public for information on who ordered or made that specific Carhartt shirt for Charlie.
+
+
 ===============  Other Suspect: All black clothes. Construction Worker Witness  ==================
 
 Location of Construction Worker: 785 College Dr, Orem, UT 84058
@@ -4816,6 +4992,34 @@ Closing: the poster says there are also "people on the roof during the shooting 
 
 =============== Attorney ==================
 An X person contacted Tyler Robinson's parents (through people close to them).  The offer for a high quality defense attorney was offered. The intermediaries said that his parents said that they didn't want pro-bono high quality defense attorney (even if free).
+
+
+=============== Fort Huachuca Image Search Data Wiped (Stew Peters) ==================
+
+Source: https://x.com/realstewpeters/status/2077840998583935465
+Author: @realstewpeters (Stew Peters)
+Date: 2026-07-16T19:41:13.000Z
+Likes: 651 | Retweets: 129 | Views: 12044
+
+The day after exposing the Fort Huachuca image search data, every person we mentioned had their results completely wiped. DIA, CENTCOM, Crane & Kirk security figures — all gone. People we didn't name still show up. We're clearly hitting something they don't want seen.
+
+[Transcription of video from @realstewpeters, 2026-07-16]
+Source: https://x.com/realstewpeters/status/2077840998583935465
+Video: videos/2077840998583935465.mp4
+IPFS CID: Qmc5XpXRZ8fPBTLsvMx66kcB6RyywTs48WALsPo7nXdLRn
+
+So anyway, I say all of that to say this. When I alluded to the power of the platform earlier and the knee jerk response, You can imagine my surprise when I was trying to show a friend of mine, all of this data. I was like, you wouldn't believe, is talented, and I ask Escobar, she came on the show here in a nutshell, and let me show you, and I went to pull it up. And this is last night. I went to pull up all of this data to duplicate what Anna Escobar did, which anybody, this is open source information. Anybody can do this. She put in the time. She looked at who would the people be, which takes a tremendous amount of determent and talent. But anybody can do this. And all of these results were gone. Like all of them. Brian Harpole, Brian Harpoon, the misspelling. Brian Harpole security, in quotations, which means exact search term. All of these people. Admiral Cooper. General Frank. All of these people, they were all gone. So, we have the screenshots here, which is what I'm showing you and what Anna Escobar presented here before, but all of the real-time data is gone.
+
+Notes on this claim:
+* The only control offered is named-vs-unnamed: people the show named reportedly gone, people not named reportedly still present.
+* Misspelling probe ("Brian Harpoon") reportedly also returned nothing, which Peters treats as a name-level block rather than a query artifact.
+* Guest researcher name is garbled by auto-transcription ("Anna Escobar" / "ask Escobar") — identity not established.
+* "Admiral Cooper" likely refers to Adm. Brad Cooper, CENTCOM commander (see Sept 8 2025 El-Sisi / USCENTCOM meeting section).
+* "Crane" almost certainly NSWC Crane — see the Accurate Energetic Systems N0016425PJ538 miniaturized demolition charge contract.
+* No archived before-state exists. Personalization, query drift, re-ranking, and ordinary Google removal requests by private individuals all produce the identical appearance. Peters says he retains screenshots but real-time data is gone.
+* Brian Harpole is a living private citizen who denies related speculation and has filed a defamation suit over it. This entry records a claim about Google image results, not about his conduct.
+
+Site pages created: GoogleSearches/fort-huachuca-image-searches, /dia-search-patterns, /centcom-search-patterns, /crane-search-patterns
 
 
 =============== More Google Searches ==================
@@ -10529,3 +10733,57 @@ Site pages created 2026-07-15:
   site/docs/Electrocution/resonant-site-preparation.mdx
   site/docs/Electrocution/fort-huachuca-em-expertise.mdx
   site/docs/Cause_of_Death/overview.mdx (Level 2 - not-cause .30-06 / cause: exploding mic, poss. electrocution)
+
+===============  Candace Owens Podcast — Bagley Bodycam Implausible & Timpanogos 911 Call  ==================
+
+Source: Candace Owens podcast. Two claims relayed on the program, both from sources who contacted
+the show. Both are ANONYMOUS and UNCORROBORATED. Recorded here because they circulate, not because
+they are established.
+
+CLAIM 1 — Other police officers say the bodycam blackout is highly implausible.
+Other police officers contacted the program about Chris Bagley's preliminary-hearing testimony.
+They say his story about the sudden bodycam blackout is highly implausible. Their reasoning tracks
+the same "charging stand" logic Ryan Matta raised: a body cam docked on a charging stand overnight
+starts the next day fully charged, so a battery draining by roughly noon has no obvious explanation.
+
+(Caveats. The officers are unnamed. The claim is not sworn testimony and has not been tested in any
+court. They have not been shown to have knowledge of this specific device or of UVU campus police
+equipment. Officers from other departments reading a transcript are not equivalent to a forensic
+examination of the actual device. Ordinary explanations remain fully available: batteries degrade
+with age, a camera taken off the charger early or used earlier in the shift can die mid-shift, and
+Utah Code 77-7a-104's non-activation reporting requirement exists precisely because gaps happen
+routinely. The device logs — battery level at shift start, charge history, power-off event — would
+settle this with records rather than argument. Chris Bagley is a living person, is a WITNESS and not
+a suspect, has never been charged with anything, and is presumed innocent. Nothing here establishes
+that he disabled his camera or did anything wrong.)
+
+CLAIM 2 — Timpanogos Hospital: a 911 call never came through.
+Someone contacted the program from Timpanogos Regional Hospital and said that a 911 call never came
+through for Charlie Kirk on September 10, 2025.
+
+(Caveats and analysis. Secondhand, anonymous, no document or recording produced, uncorroborated by
+any record, agency, or named witness. Important structural point: a hospital does not receive 911
+calls at all. Emergency calls go to a Public Safety Answering Point (dispatch), which routes
+ambulances; a hospital learns a patient is inbound via an EMS radio or phone pre-alert. So "a 911
+call never came through" at a hospital most naturally means "no pre-alert reached the ER" — a
+different and much narrower statement, and one an individual staff member could easily be wrong
+about depending on where they were standing.
+
+Further, there is an already-documented ordinary explanation: Charlie Kirk was reportedly NOT
+transported by ambulance. He was moved by private SUV by his own security detail (see the SUV
+transport and hospital trip sections). If security self-transported, no ambulance was dispatched to
+carry him, and the absence of a conventional dispatch-to-transport chain is exactly what you would
+expect — not an anomaly. A security detail driving a wounded principal to the nearest hospital under
+time pressure is a recognized, trained response, not a suspicious one.
+
+Records that would resolve this quickly: Utah County dispatch (CAD) logs for Sept 10 2025, 911
+audio, EMS run reports, and the Timpanogos ER intake record showing arrival time and mode of
+arrival. Belongs on the forced-disclosure list rather than in speculation.
+
+Timpanogos Regional Hospital and its staff are NOT accused of anything. No claim is made that any
+hospital, dispatcher, or medical professional withheld care, falsified records, knew of any crime in
+advance, or acted illegally, immorally, or unethically.)
+
+Site pages created for these: /People/chris-bagley, /court/testimony, /court/hearing-witnesses,
+/court/judges, /Medical/timpanogos_911_call.
+
