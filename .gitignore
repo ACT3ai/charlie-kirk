@@ -130,3 +130,8 @@ videos/
 /Research/PDFs/Overview.pdf
 /Research/PDFs/affidavit-of-probable-cause.pdf
 /videos/2045116771431321829.mp4
+
+# Large File Bridge: transcripts / AI descriptions / OCR text under .lfbridge/ must travel with the repo.
+# These re-include rules override any ignore rule above them (e.g. ".lfbridge/", "*.transcription").
+!.lfbridge/
+!.lfbridge/**

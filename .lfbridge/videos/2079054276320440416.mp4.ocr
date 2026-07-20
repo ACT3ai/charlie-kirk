@@ -1,0 +1,100 @@
+source: videos/2079054276320440416.mp4
+status: done
+engine: vision
+level: fast
+generated: 2026-07-20T15:45:01.732Z
+kind: video
+language: en-US
+stride_seconds: 15
+frames_sampled: 5
+truncated: false
+text: |-
+  Former • intel officer on Piers Morgan
+  IAth
+  pi
+  MQ
+  they are going to fall because
+  we cannot afford
+  TikTok
+  @ belshannah
+
+  Former • intel officer on Piers Morgan
+  pi
+  that they're going to fall
+  TikTok
+  @ belshannah
+
+  Former • intel officer on Piers Morgan
+  MO
+  to back Israel's war against
+  Iran
+  TikTok
+  @ belshannah
+
+  Former • intel officer on Piers Morgan
+  YA.'l
+  pi
+  we live in democracy
+  TikTok
+  @ betshanna
+
+  Former • intel officer on Piers Morgan
+  PIERS
+  we don't agree with you and
+  how are you bringing them
+  down
+  TikTok
+  @ belshannah
+blocks:
+  - text: |-
+      Former • intel officer on Piers Morgan
+      IAth
+      pi
+      MQ
+      they are going to fall because
+      we cannot afford
+      TikTok
+      @ belshannah
+    confidence: 0.5
+    start: 0
+    end: 15
+  - text: |-
+      Former • intel officer on Piers Morgan
+      pi
+      that they're going to fall
+      TikTok
+      @ belshannah
+    confidence: 0.5
+    start: 15
+    end: 30
+  - text: |-
+      Former • intel officer on Piers Morgan
+      MO
+      to back Israel's war against
+      Iran
+      TikTok
+      @ belshannah
+    confidence: 0.5
+    start: 30
+    end: 45
+  - text: |-
+      Former • intel officer on Piers Morgan
+      YA.'l
+      pi
+      we live in democracy
+      TikTok
+      @ betshanna
+    confidence: 0.5
+    start: 45
+    end: 60
+  - text: |-
+      Former • intel officer on Piers Morgan
+      PIERS
+      we don't agree with you and
+      how are you bringing them
+      down
+      TikTok
+      @ belshannah
+    confidence: 0.5
+    start: 60
+    end: 75
