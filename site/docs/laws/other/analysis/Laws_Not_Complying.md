@@ -81,15 +81,6 @@ The charter instructions state: "We want to have the title, who it's by, the int
 
 ---
 
-### 8. State Farm Stadium Memorial Rental Anomaly Not Addressed
-
-**Investigation file reveals:** State Farm Stadium was rented by TPUSA in May 2025 for the memorial service, when no other events were planned.
-**Law 1 Schedule A:** No item addressing this pre-booking anomaly.
-
-**Recommendation:** Add Schedule A item or expand Item #187 to include all TPUSA facility bookings and rental contracts from January through September 2025, specifically including the State Farm Stadium booking and its timing relative to the assassination.
-
----
-
 ====================
 
 ## LAW 2: The Charlie Kirk Files Forced Disclosure Act -- Intelligence Services

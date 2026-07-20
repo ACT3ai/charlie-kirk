@@ -978,7 +978,7 @@
 # Slide 75: Key Categories - TPUSA, FBI, Intel, Foreign
 **P10-P17: Intelligence and Military**
 
-- **P10:** All CIA, NSA, DIA, NRO, NCTC, ODNI employees with any knowledge -- includes Joe Kent (NCTC), Tulsi Gabbard (DNI), Kash Patel (FBI Director)
+- **P10:** All CIA, NSA, DIA, NRO, NCTC, ODNI employees with any knowledge -- includes Joe Kent (NCTC), Tulsi Gabbard (DNI), [Kash Patel](/People/kash-patel) (FBI Director)
 - **P11:** All foreign intelligence officers, agents, diplomats in Utah (July-November 2025) -- Egyptian GIS, French DGSE, Israeli [Mossad](/intelligence/Mossad), including the 12 Israeli phone holders
 - **P12:** All military personnel and defense contractors -- HADES plane crew, Fort Huachuca attendees, DoD contract N0016425PJ538 personnel, French legionnaires
 - **P13:** All pilots, crew, passengers of Egyptian aircraft and other listed planes
