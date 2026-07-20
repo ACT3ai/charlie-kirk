@@ -127,3 +127,19 @@ videos/
 /Research/PDFs/Overview.pdf
 /Research/PDFs/affidavit-of-probable-cause.pdf
 /videos/2045116771431321829.mp4
+
+# Large File Bridge: transcripts / AI descriptions / OCR text under .lfbridge/ must travel with the repo.
+# These re-include rules override any ignore rule above them (e.g. ".lfbridge/", "*.transcription").
+!.lfbridge/
+!.lfbridge/**
+/site/internals/static/img/cover.jpg
+/site/internals/static/img/docusaurus.webp
+/site/internals/static/court/mirandize/Mirandized_Sept_11_.jpg
+/images/ico/angel.jpg
+/images/GPT_Imagine/ck_law_4/Pre_Final_GPT_Image.jpg
+/images/GPT_Imagine/ck_law_4/Pre_Final_Gemini.jpg
+/images/GPT_Imagine/ck_law_4/bad/BAD_Pre_Final_GPT_Image.jpg
+/images/GPT_Imagine/ck_law_4/bad/BAD_Pre_Final_Gemini.jpg
+/images/GPT_Imagine/all_ck_laws/Pre_Final.jpg
+/images/GPT_Imagine/all_ck_laws/inputs/Document.webp
+/cover_image/Angel_Charlie.jpg
