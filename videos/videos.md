@@ -77,3 +77,4 @@ Videos are pinned to IPFS for permanent, censorship-resistant hosting.
 | 2078878337867354512.mp4 | `QmbkrGVMSbE7Bxvw8NCiNWUqdKL1SWRfiBbAXXCMpFSyzM` | George Zinn TPUSA / decoy claims | [@DiligentDenizen](https://x.com/DiligentDenizen/status/2078878337867354512) | 2026-07-20 |
 | 2079054276320440416.mp4 | `QmcfNxXtoaU8bnaK9tR17n3hDdbMBcwrbZNBXV72aS9UZo` | Clip: Western politicians blocking Iran war "will fall" | [@Wendy7839570959](https://x.com/Wendy7839570959/status/2079054276320440416) | 2026-07-20 |
 | 2079275082648809861.mp4 | `Qmah14bm4ngcXo9FrXpLkApAHd7YtpdAHDfMiVc3LPC65m` | Longer cut of the circulated "Kolvet" audio clip re Andrew Kolvet | [@ArtifexMemor](https://x.com/ArtifexMemor/status/2079275082648809861) | 2026-07-21 |
+| 2079684519762993659.mp4 | `QmRht9hZwK3BKuCPSPrRnDKo2YTMGgcp6i5djRgWQbhooq` | Stew Peters: Fort Huachuca search geo-spikes before Sept 9 | [@AmericaOnly76](https://x.com/AmericaOnly76/status/2079684519762993659) | 2026-07-21 |
