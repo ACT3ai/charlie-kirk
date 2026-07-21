@@ -1,0 +1,24 @@
+source: videos/2079275082648809861.mp4
+status: done
+engine: vision
+level: fast
+generated: 2026-07-21T10:59:45.790Z
+kind: video
+language: en-US
+stride_seconds: 15
+frames_sampled: 1
+truncated: false
+text: |-
+  SAICA*
+  THE CHARLIE KIRK SHOW
+  CNARLIE•KIRK
+  EMAIL. FREEDOM@CHARLIEKIRK.COM -
+blocks:
+  - text: |-
+      SAICA*
+      THE CHARLIE KIRK SHOW
+      CNARLIE•KIRK
+      EMAIL. FREEDOM@CHARLIEKIRK.COM -
+    confidence: 0.5
+    start: 0
+    end: 15
