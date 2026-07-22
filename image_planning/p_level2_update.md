@@ -15,6 +15,7 @@ VERIFY_SCRIPT is file {GENERATOR_DIR}/verify_photos.py
 SITE_DIR dir is {ROOT_DIR}/site
 DOCS_DIR dir is {SITE_DIR}/docs
 PHOTOS_DIR dir is {DOCS_DIR}/Photos
+CUSTOM_CSS is file {SITE_DIR}/internals/src/css/custom.css
 IMAGES_L2_PAGE is file {PHOTOS_DIR}/overview.mdx
 HOME_PAGE is file {DOCS_DIR}/index.mdx
 PAGES_CSV is file {ROOT_DIR}/pages.csv
@@ -41,9 +42,15 @@ prompt READS that YAML and WRITES pages. It primarily — almost certainly alway
 
 The end of the walk is the individual image page: one image, one write-up. Those
 leaf pages are spoken of as Level 5 — the last click. This prompt does not
-author their bodies; {IMAGE_PAGE_PROMPT} owns that. This prompt guarantees that
-every one of them is reachable, correctly named, and exactly one click from the
-cluster page that owns it.
+author their bodies; {IMAGE_PAGE_PROMPT} owns the WORDS. This prompt guarantees
+that every one of them is reachable, correctly named, exactly one click from the
+cluster page that owns it, and correctly LAID OUT.
+
+Level 5 layout is this prompt's job. {LAYOUT_GUIDELINES} states how an image
+must sit on its page, and every Level 5 page must satisfy it. Layout is a
+templating concern, not a per-page concern: it is fixed by changing the markup
+{GEN_SCRIPT} emits and the CSS block {GEN_SCRIPT} writes into {CUSTOM_CSS}, then
+rerunning over all ~1,850 pages. Never fix layout by hand-editing image pages.
 
 ============================
 SCOPE — WHAT THIS PROMPT TOUCHES
@@ -56,20 +63,27 @@ Writes:
   * {PHOTOS_DIR}/{L3_key}/{L4_key}/overview.mdx — every Level 4 cluster page.
   * Deeper cluster overview.mdx pages (Level 5 cluster nodes, where the YAML
     nests that far) — same treatment, same rules.
+  * The LAYOUT of every Level 5 image page — the image element, its wrapper,
+    the prose wrapper, and any inline style on them. The prose between those
+    wrappers is not touched.
+  * {CUSTOM_CSS} — the marked block between /* CK_EVIDENCE_LAYOUT_START */ and
+    /* CK_EVIDENCE_LAYOUT_END */ only. Everything outside those markers in that
+    file belongs to the rest of the site and is never touched.
   * {PAGES_CSV} rows for the pages above.
   * {GEN_SCRIPT} — the generator is the implementation of the rules below. There
-    are roughly 1,850 pages under {PHOTOS_DIR}; structural rules are changed by
-    editing the generator and rerunning it, never by hand-editing pages one at
-    a time.
+    are roughly 1,850 pages under {PHOTOS_DIR}; structural and layout rules are
+    changed by editing the generator and rerunning it, never by hand-editing
+    pages one at a time.
 
 Does NOT write:
 
   * {HIERARCHY_FILE} — read-only input. If the YAML is wrong, record it in
     {FINDINGS_FILE} and leave the YAML for the hierarchy prompt to fix.
-  * Image page bodies (the Img_*.mdx leaf pages) — owned by
+  * Image page PROSE (the write-up inside the Img_*.mdx leaf pages) — owned by
     {IMAGE_PAGE_PROMPT}. This prompt may create a missing leaf page as a stub
     so the TOC link resolves, and reports it, but does not rewrite an existing
-    one's prose.
+    one's prose. Their LAYOUT is a different matter and is this prompt's job —
+    see GOAL and the Level 5 spec below.
   * {SITE_DIR}/sidebars.ts — never, unless explicitly asked.
   * Anything outside {PHOTOS_DIR} other than {PAGES_CSV} rows.
 
@@ -77,11 +91,46 @@ Does NOT write:
 KNOWLEDGE — READ FIRST, IN THIS ORDER
 ============================
 
-At the very start of every run, read into the context window:
+At the very start of every run — before reading anything else, before touching
+any file — read into the context window:
 
-  1. {LAYOUT_GUIDELINES} — the standards file for images pages. It starts nearly
-     empty and grows over time. Whatever rules it contains are followed and they
-     OVERRIDE any conflicting rule in this prompt.
+  1. {LAYOUT_GUIDELINES} — the standards file for images pages. THIS IS READ
+     FIRST, EVERY RUN, WITHOUT EXCEPTION. It is short. It is also the most
+     load-bearing file in this prompt, because everything in it was put there
+     after a real, visible defect shipped to the live site. Read it in full,
+     restate each of its points before doing any work, and treat every point as
+     a defect that must be verified fixed by the end of the run — not as advice.
+     Its rules OVERRIDE any conflicting rule in this prompt; where this prompt
+     and that file disagree, that file is right and this prompt is stale and
+     should be corrected to match.
+
+     Its points today concern Level 5 image pages, and each maps to a concrete
+     implementation requirement:
+
+       * "The image is on the page, not anchored to the browser window."
+         -> The image element is IN THE DOCUMENT FLOW. It scrolls up with the
+            prose. position: fixed and position: sticky are both forbidden on
+            the image and its wrapper. A page with three screens of writing
+            scrolls the image away with the text, as any in-page element does.
+            The viewport may still define the image's BOUNDING BOX — that is
+            how its size is chosen — but sizing by the viewport is not the same
+            as anchoring to the viewport, and only the sizing is allowed.
+
+       * "The image is not transparent; nothing shows through it."
+         -> The image and its wrapper are OPAQUE and paint above surrounding
+            content. Images with an alpha channel get an opaque backing colour
+            so page text can never be seen through them. opacity is 1.
+
+       * "The text wraps around it; nothing flows underneath or over it."
+         -> The prose wraps around the image the way text wraps a float: line
+            boxes shorten beside it and resume full width below it. The prose
+            column is not hand-capped to a percentage width to dodge the image,
+            and no element overlaps the image.
+
+     If a later run finds a new point added to that file, the same treatment
+     applies: implement it in {GEN_SCRIPT} and in the {CUSTOM_CSS} marked block,
+     rerun over every page, and verify it on the built output.
+
   2. {CHARTER_FILE} — the image_planning charter: the audience model, the level
      model, the YAML schema, the hard rules.
   3. {HOME_PAGE} — the site home page. Read it for the TOC pattern to imitate
@@ -275,13 +324,47 @@ KNOWLEDGE — PER-LEVEL SPECIFICATION
 
 === Level 5: the image pages ===
 
-  * Out of scope for authoring here. This prompt only verifies each one exists
-    at {node dir}/{Img_key}.mdx, that its title matches the label used in the
-    parent's TOC, and that the link resolves.
+Two halves, and the split is the whole point: the WORDS belong to
+{IMAGE_PAGE_PROMPT}; the LAYOUT belongs here.
+
+Reachability and naming:
+
+  * Verify each one exists at {node dir}/{Img_key}.mdx, that its title matches
+    the label used in the parent's TOC, and that the link resolves.
   * If an image entry in the YAML has no page yet, create a minimal stub —
     frontmatter with ck_image_sha256 and ck_node_key, the image, a placeholder
     heading — and report it so {IMAGE_PAGE_PROMPT} can write it properly.
   * Never overwrite an existing image page's prose from this prompt.
+
+Layout — every Level 5 page, every run, enforced from {GEN_SCRIPT}:
+
+  * The page structure is fixed: frontmatter (hide_table_of_contents: true),
+    back button, H1, then the image wrapper, then the prose wrapper holding the
+    whole write-up. The image comes before the prose in source order — that is
+    what lets the prose wrap around it.
+  * The image wrapper carries class ck-evidence-image-wrap; the media element
+    (img or video) carries class ck-evidence-image; the prose wrapper carries
+    class ck-evidence-text. Behaviour lives in the CSS block, not in per-page
+    inline styles, so one edit moves all ~1,850 pages.
+  * The prose wrapper carries NO inline width cap. Older pages have a
+    style={{maxWidth:'NN%'}} left over from the superseded viewport-pinned
+    layout; regeneration removes it, and the CSS additionally overrides it so
+    a stale page still renders correctly.
+  * The CSS block between the CK_EVIDENCE_LAYOUT markers in {CUSTOM_CSS} is
+    generated by {GEN_SCRIPT} and is the single implementation of
+    {LAYOUT_GUIDELINES}. It must:
+      - float the wrapper into the page flow (float: right), never fix or
+        stick it to the viewport;
+      - give the wrapper and the media an opaque background and opacity 1, and
+        stack them above the prose;
+      - leave the prose wrapper uncapped so text wraps around the float;
+      - bound the image by the viewport for SIZE only — a max-width share of
+        the main area and a max-height under one screen — so a tall image
+        cannot swallow the page;
+      - collapse to a full-width block below the mobile breakpoint, where a
+        side-by-side float has no room to work.
+  * Videos use the same wrapper and obey the same rules.
+  * Verified on the BUILT output, not just the source: see Stage 5.
 
 ============================
 KNOWLEDGE — RERUNS PRESERVE PROSE
@@ -395,6 +478,10 @@ for one-off fixes only.
 
 * Update {GEN_SCRIPT} for any rule this prompt changed — {TOC_COLUMNS} columns,
   TOC above the prose, counts, labels, cross-links, prose preservation.
+* Update {GEN_SCRIPT}'s image-page markup and its CK_EVIDENCE_LAYOUT CSS block
+  for every point in {LAYOUT_GUIDELINES} that the current output does not
+  already satisfy. Layout defects are fixed here, at the template, and nowhere
+  else.
 * Run it over the whole tree.
 * Where prose-level judgment is needed on many clusters at once — writing the
   concept paragraph for a cluster that has none, or reconciling a label against
@@ -409,7 +496,9 @@ Output to stdout:
 ============================
 STAGE 3 COMPLETE
 Cluster pages rewritten: N (L2 1, L3 N, L4 N, L5-cluster N)
+Image pages relaid out: N  Inline width caps removed: N
 Image stubs created: N     Orphans removed: N
+Layout guideline points implemented: N of N
 Agents run: N
 ============================
 
@@ -445,6 +534,21 @@ STAGE 5 — BUILD AND VERIFY
   children present, {TOC_COLUMNS} columns, counts match the YAML, up-link and
   peer links present and resolving, cross-link to the mirrored written page
   present.
+* LAYOUT CHECK on the Level 5 pages, against every point in {LAYOUT_GUIDELINES}.
+  Check the built CSS bundle under {SITE_DIR}/build/assets/css/, not only the
+  source, because that bundle is what visitors actually get:
+    - grep the built bundle for the ck-evidence rules. position:fixed and
+      position:sticky must NOT appear on ck-evidence-image-wrap. A float, or
+      another in-flow mechanism, must.
+    - the wrapper and the media must carry an opaque background and sit above
+      the prose in stacking order.
+    - the prose wrapper must have no effective width cap.
+    - grep every generated Img_*.mdx for a leftover inline maxWidth on
+      ck-evidence-text. The count must be zero.
+  Then eyeball at least three pages in a browser — one wide image, one tall
+  image, one page with several screens of writing — and confirm: the image
+  scrolls up with the text, nothing is visible through the image, and the text
+  wraps beside and below it without running under or over it.
 * Run the invisible-Unicode scan over everything written.
 * Confirm nothing outside {PHOTOS_DIR} and {PAGES_CSV} changed, and that
   {HIERARCHY_FILE} and {SITE_DIR}/sidebars.ts are untouched.
@@ -456,6 +560,7 @@ Build: PASS/FAIL
 Cluster pages under /Photos: L2 1, L3 N, L4 N, L5-cluster N
 Image pages reachable: N of N in YAML (N excluded, N stubs pending write-up)
 Walk-down checks: N/3 pass   Spot-checks: L3 N/5, L4 N/5
+Layout: in-flow yes/no  opaque yes/no  text-wrap yes/no  stale width caps: N
 pages.csv in sync: yes   hierarchy_images.yaml untouched: yes
 sidebars.ts untouched: yes   invisible scan: clean
 ============================
@@ -464,8 +569,17 @@ sidebars.ts untouched: yes   invisible scan: clean
 HARD RULES
 ============================
 
-* {LAYOUT_GUIDELINES} is read at the very start of every run and overrides this
-  prompt where they conflict. Never edit it from this prompt.
+* {LAYOUT_GUIDELINES} is read at the very start of every run, before anything
+  else, and overrides this prompt where they conflict. Never edit it from this
+  prompt. Every point in it is a shipped defect to be fixed, and the run is not
+  complete until each one is verified fixed on the built output.
+* Level 5 image page LAYOUT is this prompt's responsibility; Level 5 PROSE is
+  {IMAGE_PAGE_PROMPT}'s. Layout is fixed in {GEN_SCRIPT} and the marked CSS
+  block in {CUSTOM_CSS}, then regenerated across every page — never by
+  hand-editing individual image pages.
+* The image on a Level 5 page is in the page flow and scrolls with it, is
+  opaque, and has the prose wrapping around it. position: fixed and
+  position: sticky are forbidden on it.
 * {HIERARCHY_FILE} is the source of truth and is READ-ONLY here. Discrepancies
   go in {FINDINGS_FILE}, never into the YAML from this prompt.
 * Every Level 2, Level 3, and Level 4 page leads with its table of contents,

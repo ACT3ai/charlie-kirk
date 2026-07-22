@@ -158,44 +158,65 @@
 }
 
 /* CK_EVIDENCE_LAYOUT_START */
-/* Image-evidence pages under /Photos — layout per image_planning/p_yaml_to_site.md:
-   image pinned to the viewport bottom-right (right edge 5px from the browser's
-   right edge, bounding-box bottom 10px above the browser bottom), true aspect
-   ratio, max 70% of the main-area width. Text flows in a left column. */
+/* Image-evidence pages under /Photos — layout per
+   image_planning/layout_guidelines.txt (that file is authoritative):
+
+     1. The image lives IN THE PAGE, not pinned to the browser window. It is a
+        float in the document flow, so it scrolls up with the prose. Never
+        position: fixed and never position: sticky here.
+     2. The image is OPAQUE and paints above everything else. Transparent PNGs
+        get an opaque backing so page text can never show through them.
+     3. The prose WRAPS AROUND the image — line boxes shorten beside the float
+        and resume full width below it. Nothing flows under or over the image.
+
+   The viewport still sets the BOUNDING BOX (so a tall image cannot occupy more
+   than one screen), but the box travels with the page. */
 .ck-evidence-image-wrap {
-  position: fixed;
-  right: 5px;
-  bottom: 10px;
-  z-index: 5;
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  max-width: calc((100vw - var(--doc-sidebar-width, 300px)) * 0.7);
+  float: right;
+  clear: right;
+  display: block;
+  position: relative;
+  z-index: 3;
+  margin: 0 0 1.25rem 1.5rem;
+  max-width: min(55%, calc((100vw - var(--doc-sidebar-width, 300px)) * 0.55));
+  background: var(--ifm-background-surface-color, #fff);
+  border-radius: 4px;
+  box-shadow: 0 2px 14px rgba(0, 0, 0, 0.35);
+  overflow: hidden;
+  line-height: 0;
+  isolation: isolate;
 }
 .ck-evidence-image {
+  display: block;
   max-width: 100%;
-  max-height: calc(100vh - var(--ifm-navbar-height, 60px) - 10px);
+  max-height: calc(100vh - var(--ifm-navbar-height, 60px) - 6rem);
   width: auto;
   height: auto;
   object-fit: contain;
-  box-shadow: 0 2px 14px rgba(0, 0, 0, 0.35);
+  background: var(--ifm-background-surface-color, #fff);
+  opacity: 1;
   border-radius: 4px;
 }
+/* The prose column is never width-capped: the float is what reserves the
+   space, and the text wraps around it. !important overrides the inline
+   maxWidth that older generated pages still carry. */
 .ck-evidence-text {
-  position: relative;
-  z-index: 6;
+  position: static;
+  max-width: none !important;
+}
+/* A heading must not sit in the narrow gutter beside a tall image — give it a
+   full line by clearing only when it would otherwise be squeezed. */
+.ck-evidence-text > h2 {
+  overflow-wrap: break-word;
 }
 @media (max-width: 996px) {
   .ck-evidence-image-wrap {
-    position: static;
+    float: none;
     max-width: 100%;
     margin: 1rem 0;
   }
   .ck-evidence-image {
     max-height: none;
-  }
-  .ck-evidence-text {
-    max-width: 100% !important;
   }
 }
 /* CK_EVIDENCE_LAYOUT_END */

@@ -126,34 +126,38 @@ for that topic, one click, already grouped.
 KNOWLEDGE — IMAGE PAGE LAYOUT SPEC
 ============================
 
-Every image page hosts exactly one image and follows this layout. Where
-{LAYOUT_GUIDELINES} adds or contradicts, {LAYOUT_GUIDELINES} wins.
+Every image page hosts exactly one image. This prompt writes the WORDS on those
+pages. The LAYOUT is owned by {THIS_DIR}/p_level2_update.md, which implements it
+in the generator's markup and in the marked CK_EVIDENCE_LAYOUT block in
+{SITE_DIR}/internals/src/css/custom.css. {LAYOUT_GUIDELINES} is the authority
+for what that layout must be; where it adds or contradicts anything below,
+{LAYOUT_GUIDELINES} wins.
+
+The spec is recorded here so prose written by this prompt suits the shape it
+will be poured into:
 
   * No right bar. Set hide_table_of_contents: true in the frontmatter so the
     page renders without the right-hand TOC rail.
   * The image keeps its true aspect ratio. Never stretch, never crop.
-  * The image's RIGHT edge aligns with the page's right side: 5px to the left
-    of the right edge of the browser window. That is where the image's right
-    side sits.
-  * The image sizes itself inside a bounding box defined by:
-      - width: no more than 70% of the MAIN AREA width. The main area is the
-        full browser width minus the left bar.
-      - height: no taller than the box; the BOTTOM of the bounding rectangle
-        is 10px up from the bottom of the browser page.
-  * The image fills however much of that box its aspect ratio allows — it
-    will often not need the full width or the full height. A wide image hits
-    the 70% width limit first; a tall image hits the height limit first.
-  * Implement with CSS on the page (or a small shared component under
-    {SITE_DIR}/src/ reused by every image page — preferred, so a later change
-    to the spec is one edit). The behavior in CSS terms: a container pinned
-    toward the viewport's bottom-right (right: 5px equivalent, bottom offset
-    10px), image with width:auto, height:auto, max-width: 70% of the main
-    content area, max-height: viewport height minus the page-top offset minus
-    10px, object-fit: contain.
-  * The written description occupies the remaining main-area space to the
-    left of / above the image and must remain readable at laptop widths.
-  * Test at least one wide image and one tall image visually after the first
-    run of a new layout implementation (npm start, eyeball, or screenshot).
+  * The image sits IN THE PAGE, floated to the right of the prose, and scrolls
+    up with the text. It is NOT pinned to the browser window. An earlier
+    version of this spec called for a viewport-fixed image at the bottom-right;
+    that shipped, was wrong, and is superseded — the image stayed put while the
+    page scrolled underneath it.
+  * The image is opaque. Transparent source images get an opaque backing so
+    page text is never visible through them.
+  * The prose WRAPS AROUND the image: lines shorten beside it and resume full
+    width below it. The prose column is not hand-capped to a percentage width,
+    and nothing flows under or over the image.
+  * The viewport still defines the image's bounding box, so it sizes sensibly:
+    a share of the main-area width, and a max height under one screen so a tall
+    image cannot swallow the page. Sizing by the viewport, anchored in the page.
+  * Below the mobile breakpoint the image becomes a full-width block above the
+    prose — there is no room for a side-by-side float.
+  * Because the prose wraps rather than sitting in a fixed narrow column, write
+    normally: ordinary paragraphs, no manual line-length games.
+  * Test at least one wide image and one tall image visually after any change
+    to the layout implementation (npm start, eyeball, or screenshot).
 
 ============================
 KNOWLEDGE — THE EXCLUSION GATE (NOT EVERYTHING IN THE YAML MAY BE PUBLISHED)

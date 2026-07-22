@@ -435,28 +435,11 @@ def emit(path, text):
     written.append(path)
 
 
-def text_width(sha):
-    """Width of the prose column, chosen so it does not run under the image.
-
-    The image is fixed to the viewport's bottom-right and scales inside the
-    bounding box (<=70% of the main area wide, bottom 10px up from the
-    viewport bottom). Reference viewport: 1512x1000 with a 300px sidebar.
-    A short image only occupies a bottom strip, so text above it can be far
-    wider than the image-width rule alone would suggest.
-    """
-    w, h = sha_dims.get(sha, (4, 3))
-    if not w or not h:
-        return "42%"
-    main = 1512 - 300
-    box_w, box_h = main * 0.70, 1000 - 60 - 10
-    scale = min(box_w / w, box_h / h, 1)
-    rw, rh = w * scale, h * scale
-    # Image occupies only a bottom band -> prose can use most of the width.
-    if rh <= box_h * 0.45:
-        return "65%"
-    # Otherwise leave a gutter beside the image's actual rendered width.
-    free = max(0.0, (main - rw - 48) / main)
-    return f"{max(28, min(65, int(free * 100)))}%"
+# NOTE: there is deliberately no text_width() any more. The old layout pinned
+# the image to the viewport with position:fixed and then hand-computed a prose
+# column narrow enough to dodge it. layout_guidelines.txt rejects that: the
+# image belongs in the page and the text wraps around it, so the float reserves
+# its own space and the prose column is never capped.
 
 
 # ---------- emit image pages ----------
@@ -506,7 +489,10 @@ for pg in img_pages:
                   f"target=\"_blank\" rel=\"noopener noreferrer\">",
                   f"  <img className=\"ck-evidence-image\" src=\"{src}\" alt=\"{alt_attr}\" />",
                   "</a>", ""]
-    lines += [f"<div className=\"ck-evidence-text\" style={{{{maxWidth:'{text_width(sha)}'}}}}>", ""]
+    # No inline width cap. The image is a float in the page flow and the prose
+    # wraps around it — see the CK_EVIDENCE_LAYOUT CSS block and
+    # image_planning/layout_guidelines.txt.
+    lines += ["<div className=\"ck-evidence-text\">", ""]
     lines += ["## What This Image Shows", ""]
     body = section_body(prior, "What This Image Shows") \
         or (mdx_escape(desc) if desc else
@@ -654,44 +640,65 @@ written.append(LANDING)
 
 # ---------- CSS ----------
 css_block = f"""{CSS_START}
-/* Image-evidence pages under /Photos — layout per image_planning/p_yaml_to_site.md:
-   image pinned to the viewport bottom-right (right edge 5px from the browser's
-   right edge, bounding-box bottom 10px above the browser bottom), true aspect
-   ratio, max 70% of the main-area width. Text flows in a left column. */
+/* Image-evidence pages under /Photos — layout per
+   image_planning/layout_guidelines.txt (that file is authoritative):
+
+     1. The image lives IN THE PAGE, not pinned to the browser window. It is a
+        float in the document flow, so it scrolls up with the prose. Never
+        position: fixed and never position: sticky here.
+     2. The image is OPAQUE and paints above everything else. Transparent PNGs
+        get an opaque backing so page text can never show through them.
+     3. The prose WRAPS AROUND the image — line boxes shorten beside the float
+        and resume full width below it. Nothing flows under or over the image.
+
+   The viewport still sets the BOUNDING BOX (so a tall image cannot occupy more
+   than one screen), but the box travels with the page. */
 .ck-evidence-image-wrap {{
-  position: fixed;
-  right: 5px;
-  bottom: 10px;
-  z-index: 5;
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  max-width: calc((100vw - var(--doc-sidebar-width, 300px)) * 0.7);
+  float: right;
+  clear: right;
+  display: block;
+  position: relative;
+  z-index: 3;
+  margin: 0 0 1.25rem 1.5rem;
+  max-width: min(55%, calc((100vw - var(--doc-sidebar-width, 300px)) * 0.55));
+  background: var(--ifm-background-surface-color, #fff);
+  border-radius: 4px;
+  box-shadow: 0 2px 14px rgba(0, 0, 0, 0.35);
+  overflow: hidden;
+  line-height: 0;
+  isolation: isolate;
 }}
 .ck-evidence-image {{
+  display: block;
   max-width: 100%;
-  max-height: calc(100vh - var(--ifm-navbar-height, 60px) - 10px);
+  max-height: calc(100vh - var(--ifm-navbar-height, 60px) - 6rem);
   width: auto;
   height: auto;
   object-fit: contain;
-  box-shadow: 0 2px 14px rgba(0, 0, 0, 0.35);
+  background: var(--ifm-background-surface-color, #fff);
+  opacity: 1;
   border-radius: 4px;
 }}
+/* The prose column is never width-capped: the float is what reserves the
+   space, and the text wraps around it. !important overrides the inline
+   maxWidth that older generated pages still carry. */
 .ck-evidence-text {{
-  position: relative;
-  z-index: 6;
+  position: static;
+  max-width: none !important;
+}}
+/* A heading must not sit in the narrow gutter beside a tall image — give it a
+   full line by clearing only when it would otherwise be squeezed. */
+.ck-evidence-text > h2 {{
+  overflow-wrap: break-word;
 }}
 @media (max-width: 996px) {{
   .ck-evidence-image-wrap {{
-    position: static;
+    float: none;
     max-width: 100%;
     margin: 1rem 0;
   }}
   .ck-evidence-image {{
     max-height: none;
-  }}
-  .ck-evidence-text {{
-    max-width: 100% !important;
   }}
 }}
 {CSS_END}"""
