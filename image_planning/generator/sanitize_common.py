@@ -1,4 +1,4 @@
-# sanitize_common.py — shared output-sanitization for hierarchy_images.yaml emitters.
+# sanitize_common.py — shared output-sanitization for images/images.yaml emitters.
 # SECURITY RULE (p_create_image_hierarchy.md, OUTPUT SANITIZATION): the emitted YAML
 # must never contain invisible Unicode characters. Prose is cleaned; identity fields
 # (paths/URLs) keep their exact value but are emitted as visible \uXXXX escapes.

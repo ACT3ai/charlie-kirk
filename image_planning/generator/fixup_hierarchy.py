@@ -12,7 +12,7 @@ from sanitize_common import sanitize_prose, q_prose, q_identity, validate_no_inv
 
 HOME = os.path.expanduser('~')
 ROOT = os.path.join(HOME, 'BGit/Bryan_git/charlie-kirk')
-YAML_PATH = os.path.join(ROOT, 'image_planning/hierarchy_images.yaml')
+YAML_PATH = os.path.join(ROOT, 'images/images.yaml')
 SCRATCH = '/private/tmp/claude-501/-Users-bryan-BGit-Bryan-git-charlie-kirk-image-planning/6c121314-b0c0-4abf-baa6-de96ef3106bc/scratchpad'
 
 doc = yaml.safe_load(open(YAML_PATH))
@@ -158,7 +158,7 @@ def q(s): return q_identity(s)
 MEDIA_ORDER = ['cid', 'sha256', 'file_path', 'ipfs_url', 'ai_description', 'ai_description_file',
                'ocr_file', 'transcription_file', 'on_site_pages', 'also_filed_in']
 out = []
-out.append('# hierarchy_images.yaml — image evidence hierarchy for the Charlie Kirk site.')
+out.append('# images.yaml — image evidence hierarchy for the Charlie Kirk site.')
 out.append('# GENERATED first pass from ~/_Mirror/Politics/Charlie_Kirk_Mi; GROWN by')
 out.append('# p_create_image_hierarchy.md: site Level 2/3/4 pages mirrored in as level_3/4/5')
 out.append('# (level incremented by one), page-embedded images bound in, sidecar file paths')

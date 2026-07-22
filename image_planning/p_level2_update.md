@@ -1,7 +1,11 @@
 ROOT_DIR dir is ~/BGit/Bryan_git/charlie-kirk
 
 THIS_DIR dir is {ROOT_DIR}/image_planning
-HIERARCHY_FILE is file {THIS_DIR}/hierarchy_images.yaml
+IMAGES_DIR dir is {ROOT_DIR}/images
+HIERARCHY_FILE is file {IMAGES_DIR}/images.yaml
+  Moved 2026-07-22. It used to be {THIS_DIR}/hierarchy_images.yaml. That old
+  name and that old location are both gone — the file is now images.yaml and it
+  lives in {IMAGES_DIR}, not in {THIS_DIR}.
 LAYOUT_GUIDELINES is file {THIS_DIR}/layout_guidelines.txt
 CHARTER_FILE is file {THIS_DIR}/CLAUDE.md
 EXCLUDE_FILE is file {THIS_DIR}/exclude_images.txt
@@ -516,7 +520,7 @@ Cluster pages under /Photos: L2 1, L3 N, L4 N, L5-cluster N
 Image pages reachable: N of N in YAML (N excluded, N stubs pending write-up)
 Walk-down checks: N/3 pass   Spot-checks: L3 N/5, L4 N/5
 Layout: in-flow yes/no  opaque yes/no  text-wrap yes/no  stale width caps: N
-pages.csv in sync: yes   hierarchy_images.yaml untouched: yes
+pages.csv in sync: yes   images/images.yaml untouched: yes
 sidebars.ts untouched: yes   invisible scan: clean
 ============================
 

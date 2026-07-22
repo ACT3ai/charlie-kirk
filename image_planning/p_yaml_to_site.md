@@ -1,7 +1,11 @@
 ROOT_DIR dir is ~/BGit/Bryan_git/charlie-kirk
 
 THIS_DIR dir is {ROOT_DIR}/image_planning
-HIERARCHY_FILE is file {THIS_DIR}/hierarchy_images.yaml
+IMAGES_DIR dir is {ROOT_DIR}/images
+HIERARCHY_FILE is file {IMAGES_DIR}/images.yaml
+  Moved 2026-07-22. It used to be {THIS_DIR}/hierarchy_images.yaml. That old
+  name and that old location are both gone — the file is now images.yaml and it
+  lives in {IMAGES_DIR}, not in {THIS_DIR}.
 LAYOUT_GUIDELINES is file {THIS_DIR}/layout_guidelines.txt
 CHARTER_FILE is file {THIS_DIR}/CLAUDE.md
 EXCLUDE_FILE is file {THIS_DIR}/exclude_images.txt

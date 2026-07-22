@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 # grow_hierarchy.py — Stages 3-8 of p_create_image_hierarchy.md.
-# Grows hierarchy_images.yaml: site Level 2s -> level_3 superset, site pages ->
+# Grows images/images.yaml (formerly image_planning/hierarchy_images.yaml): site
+# Level 2s -> level_3 superset, site pages ->
 # level_4/level_5 nodes (level incremented by one), page images -> image entries,
 # sidecar file-path properties, counts + needs_split. Grow-only: never deletes.
 import os, re, csv, sys, hashlib, yaml, urllib.parse
@@ -10,7 +11,7 @@ from sanitize_common import sanitize_prose, q_prose, q_identity, validate_no_inv
 HOME = os.path.expanduser('~')
 ROOT = os.path.join(HOME, 'BGit/Bryan_git/charlie-kirk')
 THIS = os.path.join(ROOT, 'image_planning')
-YAML_PATH = os.path.join(THIS, 'hierarchy_images.yaml')
+YAML_PATH = os.path.join(ROOT, 'images/images.yaml')
 DOCS = os.path.join(ROOT, 'site/docs')
 STATIC_DIRS = [os.path.join(ROOT, 'site/static'), os.path.join(ROOT, 'site/internals/static')]
 MIRROR = os.path.join(HOME, '_Mirror/Politics/Charlie_Kirk_Mi')
@@ -464,7 +465,7 @@ def q(s):
     return q_identity(s)
 
 out = []
-out.append('# hierarchy_images.yaml — image evidence hierarchy for the Charlie Kirk site.')
+out.append('# images.yaml — image evidence hierarchy for the Charlie Kirk site.')
 out.append('# GENERATED first pass from ~/_Mirror/Politics/Charlie_Kirk_Mi; GROWN by')
 out.append('# p_create_image_hierarchy.md: site Level 2/3/4 pages mirrored in as level_3/4/5')
 out.append('# (level incremented by one), page-embedded images bound in, sidecar file paths')

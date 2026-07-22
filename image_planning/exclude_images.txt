@@ -3,7 +3,8 @@
 # Read by generator/gen_photos_pages.py. An excluded sha256 gets no page and no
 # copy under site/internals/static/img/evidence/; if either already exists it is
 # deleted on the next run. Excluding here does NOT remove the entry from
-# hierarchy_images.yaml (that file is read-only to the page generator) — it is
+# images/images.yaml, formerly image_planning/hierarchy_images.yaml (that file is
+# read-only to the page generator) — it is
 # the publish-time gate, so the exclusion survives every regeneration.
 #
 # Format: one sha256 per line. Text after '#' is a comment.

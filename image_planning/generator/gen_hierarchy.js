@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// Generates hierarchy_images.yaml from inventory.tsv + the CLUSTERS merge map.
+// Generates images/images.yaml (formerly hierarchy_images.yaml) from inventory.tsv + the CLUSTERS merge map.
 // Mirror dir depth maps to page level:  depth1 -> level_3, depth2 -> level_4, depth3 -> level_5, depth4 -> level_6.
 // The merge map re-parents small/related top-level mirror dirs under a real concept cluster.
 'use strict';
@@ -138,7 +138,7 @@ function emitNode(node, level, indent) {
   }
 }
 
-out.push('# hierarchy_images.yaml — image evidence hierarchy for the Charlie Kirk site.');
+out.push('# images.yaml — image evidence hierarchy for the Charlie Kirk site.');
 out.push('# GENERATED first pass. Source: ~/_Mirror/Politics/Charlie_Kirk_Mi (1,666 images).');
 out.push('# Clusters follow the mirror\'s own concept filing; mirror depth maps to page level.');
 out.push('# cid is intentionally empty (IPFS not assigned yet). fingerprint deferred; sha256 is the identity.');
@@ -146,7 +146,7 @@ out.push('# Nodes marked needs_split exceed the 12-image ceiling and get split o
 out.push('level_3:');
 for (const node of tree.values()) emitNode(node, 3, 2);
 
-fs.writeFileSync(path.join(SCRATCH, 'hierarchy_images.yaml'), out.join('\n') + '\n');
+fs.writeFileSync(path.join(SCRATCH, 'images.yaml'), out.join('\n') + '\n');
 
 // ---------- report ----------
 const leafCount = (function count(map) { let n = 0; for (const c of map.values()) { n += 1 + count(c.children); } return n; })(tree);

@@ -1,7 +1,8 @@
 FINDINGS FOR THE HIERARCHY PLAN
 
 Raised by the page-generation run of p_images_level2.md (2026-07-22). These are
-data and clustering problems in hierarchy_images.yaml. p_images_level2.md treats
+data and clustering problems in ~/BGit/Bryan_git/charlie-kirk/images/images.yaml
+(formerly image_planning/hierarchy_images.yaml). p_images_level2.md treats
 that file as read-only input, so nothing here was fixed by that run — these are
 for p_create_image_hierarchy.md (or a manual pass) to resolve.
 
@@ -34,7 +35,8 @@ reads that file on every run: an excluded sha256 gets no page and no static
 copy, and any existing copy is purged. The exclusion therefore survives
 regeneration.
 
-STILL TO DO HERE: the entries remain in hierarchy_images.yaml. They should be
+STILL TO DO HERE: the entries remain in images/images.yaml (formerly
+hierarchy_images.yaml). They should be
 removed from the YAML too, and the mirror directory reviewed for other private
 material that the same sweep may have collected. The exclusion file is a
 publish-time gate, not a cleanup.

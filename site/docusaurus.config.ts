@@ -122,13 +122,30 @@ const config: Config = {
         // backlinks like /Fix or /Tyler_Robinson land on real content instead
         // of GitHub Pages' 301-then-404 chain.
         createRedirects(existingPath: string) {
+          const from: string[] = [];
           if (existingPath.endsWith("/overview")) {
             const parent = existingPath.replace(/\/overview$/, "");
             if (parent !== "") {
-              return [parent];
+              from.push(parent);
             }
           }
-          return undefined;
+          // The photo cluster formerly published under /Photos/Table_Hand_off.
+          // It was renamed to /Photos/Table_And_Charlie (with the Hand_Off and
+          // Lady_Hand_Off sub-clusters renamed too) to drop wording that implied
+          // anyone deliberately passed an object. Map every old path forward so
+          // existing backlinks keep resolving.
+          if (existingPath.startsWith("/Photos/Table_And_Charlie")) {
+            const old = existingPath
+              .replace("/Photos/Table_And_Charlie", "/Photos/Table_Hand_off")
+              .replace("/At_The_Table", "/Hand_Off")
+              .replace("/Woman_At_Table", "/Lady_Hand_Off")
+              .replace("/Img_Table_Item_60dcfa", "/Img_Hand_Off_Item_60dcfa");
+            from.push(old);
+            if (old.endsWith("/overview")) {
+              from.push(old.replace(/\/overview$/, ""));
+            }
+          }
+          return from.length ? from : undefined;
         },
         // Pages Google still has indexed but that have been moved or removed.
         // Each entry generates a static HTML stub that meta-refreshes to `to`.

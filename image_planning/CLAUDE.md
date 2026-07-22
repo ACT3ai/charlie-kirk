@@ -2,7 +2,15 @@ ROOT_DIR dir is ~/BGit/Bryan_git/charlie-kirk
 
 THIS_DIR dir is {ROOT_DIR}/image_planning
 
-HIERARCHY_FILE is file {THIS_DIR}/hierarchy_images.yaml
+IMAGES_DIR dir is {ROOT_DIR}/images
+
+HIERARCHY_FILE is file {IMAGES_DIR}/images.yaml
+
+  Moved 2026-07-22. It used to be {THIS_DIR}/hierarchy_images.yaml. Both the old
+  name and the old location are gone — the file is now named images.yaml and it
+  lives in {IMAGES_DIR}, alongside the image files themselves, not in {THIS_DIR}.
+  Anything that still says "hierarchy_images.yaml" or points at image_planning/
+  for the YAML is stale.
 
 CK_FILE is file {ROOT_DIR}/Charlie_Kirk.txt
 
@@ -96,9 +104,11 @@ Rules that hold at every level:
     words or less.
 
 
-== hierarchy_images.yaml ==
+== images.yaml (was hierarchy_images.yaml) ==
 
-{HIERARCHY_FILE} is the single planning artifact. It does two jobs:
+{HIERARCHY_FILE} — {IMAGES_DIR}/images.yaml — is the single planning artifact.
+It formerly lived here as {THIS_DIR}/hierarchy_images.yaml; it now sits in
+{IMAGES_DIR} with the images. It does two jobs:
 
   1. It defines the hierarchical clusters — the Level 3, Level 4, and Level 5
      pages — including the table of contents each level needs (peer links and
@@ -250,8 +260,10 @@ missing.
 
 == Current State ==
 
-  * {THIS_DIR} is empty apart from this charter. {HIERARCHY_FILE} does not exist
-    yet — it is the next artifact to build.
+  * {HIERARCHY_FILE} exists and is built. It lives at {IMAGES_DIR}/images.yaml.
+    It was moved there from {THIS_DIR}/hierarchy_images.yaml on 2026-07-22 —
+    new name, new location. {THIS_DIR} now holds only the prompts, the charter,
+    the exclusion list, the findings file, and generator/.
   * {IMAGES_L2_PAGE} exists (99 lines, url /Photos, sidebar position 25). It is
     prose about the role of photographic evidence — types, uses, limitations,
     access constraints. It has no cluster cards and no children.

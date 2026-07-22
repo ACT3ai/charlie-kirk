@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate the /Photos image-evidence pages from hierarchy_images.yaml.
+"""Generate the /Photos image-evidence pages from images/images.yaml.
 
 Driven by image_planning/p_level2_update.md (navigation pages: the Level 2
 landing page and every Level 3/4/5 cluster page — table of contents at the top,
@@ -21,7 +21,7 @@ import yaml
 
 ROOT = os.path.expanduser("~/BGit/Bryan_git/charlie-kirk")
 THIS = os.path.join(ROOT, "image_planning")
-HIER = os.path.join(THIS, "hierarchy_images.yaml")
+HIER = os.path.join(ROOT, "images", "images.yaml")
 DOCS = os.path.join(ROOT, "site", "docs")
 PHOTOS = os.path.join(DOCS, "Photos")
 STATIC = os.path.join(ROOT, "site", "internals", "static", "img", "evidence")
