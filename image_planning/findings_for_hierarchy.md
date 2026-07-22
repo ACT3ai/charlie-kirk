@@ -6,6 +6,40 @@ that file as read-only input, so nothing here was fixed by that run — these ar
 for p_create_image_hierarchy.md (or a manual pass) to resolve.
 
 
+== 0. PRIVATE PERSONAL MATERIAL IN THE HIERARCHY — ACTED ON, READ THIS FIRST ==
+
+Eleven entries under Unfiled_Backlog are private personal documents that were
+swept into the mirror by accident and have nothing to do with the
+investigation. They were published as evidence pages with the image served
+full-size at a public URL:
+
+  * health savings account dashboard (balance, contribution summary, payment
+    card details)
+  * university student billing portal (completed transaction) x2
+  * airline booking confirmation (confirmation codes)
+  * private investment platform (payment history, capital call)
+  * insurance / claims billing table
+  * video-call participant list naming 15 people
+  * 20-tile video conference grid showing participants' faces
+  * internal video-production app screen and task spreadsheets x3
+
+The written descriptions had been composed carefully so as not to repeat the
+account numbers, addresses or names — but that is not protection when the
+IMAGE ITSELF is the payload and is displayed at full size on a public page.
+
+ACTION TAKEN by the page generation run: the 11 pages and their static image
+copies under site/internals/static/img/evidence/ were deleted, and their
+sha256 values recorded in image_planning/exclude_images.txt. The generator now
+reads that file on every run: an excluded sha256 gets no page and no static
+copy, and any existing copy is purged. The exclusion therefore survives
+regeneration.
+
+STILL TO DO HERE: the entries remain in hierarchy_images.yaml. They should be
+removed from the YAML too, and the mirror directory reviewed for other private
+material that the same sweep may have collected. The exclusion file is a
+publish-time gate, not a cleanup.
+
+
 == 1. OCR sidecars missing from the YAML (large, mechanical, high value) ==
 
 619 .ocr sidecar files exist on disk but are not recorded in any image entry's

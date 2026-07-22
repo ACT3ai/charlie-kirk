@@ -4,6 +4,8 @@ THIS_DIR dir is {ROOT_DIR}/image_planning
 HIERARCHY_FILE is file {THIS_DIR}/hierarchy_images.yaml
 LAYOUT_GUIDELINES is file {THIS_DIR}/layout_guidelines.txt
 CHARTER_FILE is file {THIS_DIR}/CLAUDE.md
+EXCLUDE_FILE is file {THIS_DIR}/exclude_images.txt
+FINDINGS_FILE is file {THIS_DIR}/findings_for_hierarchy.md
 
 SITE_DIR dir is {ROOT_DIR}/site
 DOCS_DIR dir is {SITE_DIR}/docs
@@ -152,6 +154,37 @@ Every image page hosts exactly one image and follows this layout. Where
     left of / above the image and must remain readable at laptop widths.
   * Test at least one wide image and one tall image visually after the first
     run of a new layout implementation (npm start, eyeball, or screenshot).
+
+============================
+KNOWLEDGE — THE EXCLUSION GATE (NOT EVERYTHING IN THE YAML MAY BE PUBLISHED)
+============================
+
+{EXCLUDE_FILE} lists sha256 values that must never be published, one per line,
+with a comment saying why. The run reads it before generating anything. An
+excluded image gets no page and no static copy, and any page or static copy
+that already exists for it is DELETED.
+
+This gate exists because the mirror is a years-long personal filing area and
+private material has been swept into it by accident — bank and health-account
+dashboards, booking confirmations, billing portals, video calls showing named
+participants' faces. Eleven such entries were found published during the first
+full run.
+
+Two rules follow from that episode:
+
+  * Careful prose is NOT sufficient protection. A description can omit every
+    account number and name and the page is still an exposure, because the
+    image itself is served full size at a public URL. The image is the payload.
+  * The gate lives here, not in the YAML. {HIERARCHY_FILE} is read-only to this
+    prompt, so an exclusion recorded only there would be undone by the next
+    hierarchy pass. Recording it in {EXCLUDE_FILE} makes it survive every
+    regeneration.
+
+When a run finds material that should not be published — private personal
+documents, an unrelated third party's records, anything whose subject has no
+connection to the investigation — add the sha256 to {EXCLUDE_FILE} with a
+reason, and record it in {FINDINGS_FILE} so the hierarchy can drop the entry
+at its source.
 
 ============================
 KNOWLEDGE — HOSTING THE IMAGE FILE
@@ -453,6 +486,15 @@ HARD RULES
   word "defamation" never appears; no claims of prior knowledge or of
   immoral/illegal conduct; attribution language; links to related Level 2s
   and Level 3s as /X/overview-style routes verified against {PAGES_CSV}.
+* Nothing listed in {EXCLUDE_FILE} is ever published, and anything found
+  during a run that should not be public is added to it before the run ends.
+  Prose care does not substitute for withholding the image.
+* The YAML is an input, not an authority on what is true or publishable. Its
+  inline ai_description text is model output and has been wrong about people,
+  places and events; its clustering sometimes files an image as supporting a
+  thesis that the image's own contents contradict. Write what the evidence
+  actually shows, say so on the page when it differs from the filing, and
+  record the discrepancy in {FINDINGS_FILE}.
 * Up to {MAX_AGENTS} parallel agents, partitioned by YAML subtree; shared
   files ({PAGES_CSV}, {IMAGES_L2_PAGE}) are written only by the orchestrator.
 * No invisible Unicode in any emitted file — scan after every emit.
