@@ -22,6 +22,7 @@ const sidebars: SidebarsConfig = {
     {type: 'doc', id: 'Killer/overview', label: 'The Killer'},
     {type: 'doc', id: 'After/overview', label: 'After the Shooting'},
     {type: 'doc', id: 'court/overview', label: 'Court & Trial'},
+    {type: 'doc', id: 'Photos/overview', label: 'Photos'},
     {type: 'doc', id: 'Israel/overview', label: 'Israel'},
     {type: 'doc', id: 'Cause_of_Death/overview', label: 'Cause of Death'},
     {type: 'doc', id: 'Planes/overview', label: 'Planes'},
@@ -43,12 +44,10 @@ const sidebars: SidebarsConfig = {
     {type: 'doc', id: 'Motive/overview', label: 'Motive'},
     {type: 'doc', id: 'Influencers/overview', label: 'Influencers'},
     {type: 'doc', id: 'Media/overview', label: 'Media'},
-    {type: 'doc', id: 'Videos/overview', label: 'Videos'},
     {type: 'doc', id: 'Medical/overview', label: 'Medical'},
     {type: 'doc', id: 'maps/overview', label: 'Maps'},
     {type: 'doc', id: 'US_Intelligence/overview', label: 'U.S. Intelligence'},
     {type: 'doc', id: 'Gov_Mind_Control/overview', label: 'Gov Mind Control'},
-    {type: 'doc', id: 'Photos/overview', label: 'Photos'},
     {type: 'doc', id: 'cameras/overview', label: 'Surveillance Cameras'},
     {type: 'doc', id: 'Censorship/overview', label: 'Censorship'},
     {type: 'doc', id: 'FBI/overview', label: 'FBI'},
@@ -74,6 +73,7 @@ const sidebars: SidebarsConfig = {
     {type: 'doc', id: 'Topics3/overview', label: 'Topics3'},
     {type: 'doc', id: 'Topics', label: 'Investigation Topics'},
     {type: 'doc', id: 'Defamation/overview', label: 'Defamation Cases'},
+    {type: 'doc', id: 'Videos/overview', label: 'Videos'},
   ],
 };
 
