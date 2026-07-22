@@ -442,6 +442,44 @@ def emit(path, text):
 # its own space and the prose column is never capped.
 
 
+# ---------- wide vs tall: reconciling full width with text wrap ----------
+# layout_guidelines.txt, "RECONCILING FULL WIDTH WITH TEXT WRAP". The bounding
+# box may take up to 85% of the main area, but an image that actually renders
+# that wide leaves a gutter too narrow to read in. So each image gets one of two
+# layouts, decided here from its intrinsic dimensions:
+#
+#   ck-evidence-wide  full-width block (up to 85%), prose resumes below it.
+#   ck-evidence-tall  floats right, prose wraps beside it and resumes below.
+#
+# Both are in the document flow and both scroll with the page — the choice is
+# about wrapping, never about anchoring.
+#
+# The arithmetic, on a reference desktop (1440px viewport, 300px sidebar, ~2rem
+# padding each side -> main area ~1076px; height ceiling 100vh - navbar - 6rem
+# -> ~744px):
+#     rendered width = min(0.85 * 1076, 744 * aspect)
+#     gutter         = 1076 - rendered width - 1.5rem margin
+# A readable gutter is ~18rem (288px), which needs a rendered width <= ~764px,
+# i.e. an aspect ratio at or below about 1.05. Landscape images are therefore
+# width-limited and go full width; portrait and squarish images are
+# height-limited, come out narrow on their own, and get the wrap.
+WRAP_ASPECT_MAX = 1.05
+
+
+def layout_class(sha):
+    """'ck-evidence-tall' (float, text wraps) or 'ck-evidence-wide' (full width).
+
+    Unknown dimensions (IPFS-only entries, missing files, video) default to
+    wide: a full-width block is never wrong, whereas a wrong float squeezes the
+    prose into an unreadable sliver.
+    """
+    dims = sha_dims.get(sha)
+    if not dims or not dims[1]:
+        return "ck-evidence-wide"
+    return "ck-evidence-tall" if (dims[0] / dims[1]) <= WRAP_ASPECT_MAX \
+        else "ck-evidence-wide"
+
+
 # ---------- emit image pages ----------
 for pg in img_pages:
     n, i, sha = pg["node"], pg["img"], pg["sha"]
@@ -477,15 +515,16 @@ for pg in img_pages:
              "---", "",
              back_button(n["url"], n["title"]),
              f"# {mdx_escape(pg['title'])}", ""]
+    lay = layout_class(sha)
     if src and is_video_src(src):
-        lines += [f"<div className=\"ck-evidence-image-wrap\">",
+        lines += [f"<div className=\"ck-evidence-image-wrap ck-evidence-wide\">",
                   f"  <video className=\"ck-evidence-image\" controls preload=\"metadata\">",
                   f"    <source src=\"{src}\" type=\"video/mp4\" />",
                   f"    <a href=\"{src}\">Open the video</a>",
                   "  </video>",
                   "</div>", ""]
     elif src:
-        lines += [f"<a className=\"ck-evidence-image-wrap\" href=\"{src}\" "
+        lines += [f"<a className=\"ck-evidence-image-wrap {lay}\" href=\"{src}\" "
                   f"target=\"_blank\" rel=\"noopener noreferrer\">",
                   f"  <img className=\"ck-evidence-image\" src=\"{src}\" alt=\"{alt_attr}\" />",
                   "</a>", ""]
