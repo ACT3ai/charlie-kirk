@@ -16,6 +16,20 @@ PHOTOS_DIR = os.path.join(ROOT, 'site/docs/Photos')
 TILDE_PHOTOS = '~/BGit/Bryan_git/charlie-kirk/site/docs/Photos'
 
 # ---------- index the published image pages ----------
+# ---------- publish-time exclusion gate ----------
+# An excluded sha256 has no published page BY DESIGN (gen_photos_pages.py skips
+# it and deletes any page that existed). Its image_page must therefore be "",
+# and the "never clear a recorded page silently" rule below must NOT resurrect
+# a path to a page the gate just removed. Load the same gate the generator uses.
+EXCLUDE_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)),
+                            '..', 'exclude_images.txt')
+EXCLUDED = set()
+if os.path.exists(EXCLUDE_FILE):
+    for line in open(EXCLUDE_FILE, encoding='utf-8'):
+        line = line.split('#', 1)[0].strip()
+        if re.fullmatch(r'[0-9a-f]{64}', line):
+            EXCLUDED.add(line)
+
 pages_total = pages_with_sha = 0
 pages_without = []
 by_pair = {}      # (sha256, node_key) -> tilde path
@@ -77,6 +91,18 @@ def bind(items, lvl, chain):
                 st['entries'] += 1
                 sha = (inner.get('sha256') or '').lower()
                 prev = inner.get('image_page') or ''
+
+                # Excluded images have no page by design: force "" and skip the
+                # keep-prior-value rule, which would otherwise cling to the page
+                # the exclusion gate just deleted.
+                if sha in EXCLUDED:
+                    inner['image_page'] = ''
+                    st['excluded'] = st.get('excluded', 0) + 1
+                    st['empty'] += 1
+                    for k in REQUIRED_SCALARS:
+                        if k not in inner or inner[k] is None:
+                            inner[k] = ''; st['filled_missing_keys'] += 1
+                    continue
 
                 val = ''
                 if sha:
@@ -252,7 +278,8 @@ print(f'Image pages indexed under Photos: {pages_total} '
       f'({pages_with_sha} with ck_image_sha256, {len(pages_without)} without)')
 print(f'Entries with image_page set: {bound}   matched by (sha256,node): {st["by_pair"]}   '
       f'by sha256 only: {st["by_sha"]}   kept prior value: {st["kept_existing"]}')
-print(f'Entries with image_page "": {st["empty"]} (no page exists yet)')
+print(f'Entries with image_page "": {st["empty"]} '
+      f'(of which {st.get("excluded", 0)} are publish-excluded, rest have no page yet)')
 print(f'Recorded pages now missing from disk: {len(st["vanished"])}')
 for v in st['vanished'][:10]: print('   MISSING:', v)
 print('=' * 28)

@@ -48,14 +48,16 @@ create or modify any Docusaurus page, and it does NOT touch sidebars.ts or
 {PAGES_CSV}. Page generation is a later, separate prompt.
 
 Convergence priority order (if context runs short, complete in this order):
-  1. Stage 3 — site Level 2 sweep into YAML level_3 superset
-  2. Stage 5 — filesystem Level 3/4 pages into YAML level_4/level_5 nodes
-  3. Stage 6 — page image sweep into YAML image entries
-  4. Stage 7 — sidecar file-path properties on every image and video
-  5. Stage 8 — image_page path on every image entry
-  6. Stage 4 — home page tables of contents into more level_3s
-  7. Stage 9 — counts and needs_split
-  8. Stage 10 — verify
+  1. Stage 3 — CID and pin status on every image (Stage 8 depends on it)
+  2. Stage 4 — site Level 2 sweep into YAML level_3 superset
+  3. Stage 6 — filesystem Level 3/4 pages into YAML level_4/level_5 nodes
+  4. Stage 7 — page image sweep into YAML image entries
+  5. Stage 8 — on_pages: every other repo page that shows each image
+  6. Stage 9 — sidecar file-path properties on every image and video
+  7. Stage 10 — image_page path on every image entry
+  8. Stage 5 — home page tables of contents into more level_3s
+  9. Stage 11 — counts and needs_split
+ 10. Stage 12 — verify
 
 ============================
 KNOWLEDGE — THE LEVEL MODEL (READ THIS FIRST)
@@ -91,7 +93,7 @@ THE CORE MAPPING RULE — increment by one:
 
   So the YAML's level_3 list is a SUPERSET that includes the site's list of
   Level 2s (except images, videos, and unfiltered/queue categories — see
-  Stage 3), the YAML's level_4 nodes correlate to the site's Level 3 pages
+  Stage 4), the YAML's level_4 nodes correlate to the site's Level 3 pages
   parented hierarchically under their appropriate level_3 parent, and each
   image found on a site Level 3 page becomes a level_5 entry parented on the
   level_4 node that correlates to that filesystem Level 3 page.
@@ -116,25 +118,29 @@ before changing anything. Its current shape:
     number_of_images_recursive (subtree count), optional
     needs_split: true (node is over the 12-image ceiling; split on a later
     pass), images (array of image items).
-  * Image item fields today: cid (IPFS CID, intentionally empty — IPFS not
-    assigned yet; spoken as "SID", it means the CID), sha256 (the identity —
+  * Image item fields today: cid (the IPFS CID — spoken as "SID", it means the
+    CID; historically left empty, now filled for every entry with a local file
+    by Stage 3), ipfs_pinned (true/false — whether the local IPFS node pins
+    those blocks; a CID exists whether or not it is pinned), sha256 (the identity —
     fingerprint from Large File Bridge is deferred, sha256 stands in),
     file_path (path to the original file, usually under {MIRROR_DIR}),
     ai_description (inline prose text, mostly empty today),
     ai_description_file / ocr_file / transcription_file (paths to the Large
-    File Bridge sidecars, "" when the sidecar does not exist — see Stage 7),
+    File Bridge sidecars, "" when the sidecar does not exist — see Stage 9),
     image_page (path to the published Level 5 page that hosts this one image,
-    "" when no page exists yet — see Stage 8), optional on_site_pages (list of
-    other site pages the image is embedded on), optional ipfs_url (for entries
-    that exist only as an IPFS embed with no local file), optional
-    also_filed_in (list of other mirror dirs the same sha256 legitimately
-    lives in — cross-filing is deliberate and kept).
+    "" when no page exists yet — see Stage 10), on_pages (list of every OTHER
+    page in the repo that shows this image — see Stage 8; supersedes the old
+    flat on_site_pages property, which is migrated and removed), optional
+    ipfs_url (for entries that exist only as an IPFS embed with no local
+    file), optional also_filed_in (list of other mirror dirs the same sha256
+    legitimately lives in — cross-filing is deliberate and kept).
 
   * The full property set on an image item, in emission order:
 
       images:
         - image:
-            cid: ""
+            cid: "bafkreiabc...(CIDv1; "" only when the file is gone)"
+            ipfs_pinned: false
             sha256: c51ef651e0e2fd9187ac8fa0b5d25908baba279b0c03f1ea93f6522fa3cedbb4
             file_path: "~/_Mirror/Politics/Charlie_Kirk_Mi/Censorship/G3o-JSJWUAA6XUC.jpeg"
             ai_description: "This image shows a wide-angle, daytime view of a crowded outdoor courtyard ..."
@@ -142,11 +148,17 @@ before changing anything. Its current shape:
             ocr_file: "~/BGit/Bryan_git/personal_large_files_bridge/_Mirror/Politics/Charlie_Kirk_Mi/Censorship/G3o-JSJWUAA6XUC.jpeg.ocr"
             transcription_file: ""
             image_page: "~/BGit/Bryan_git/charlie-kirk/site/docs/Photos/FBI/Img_Photo_c51ef6.mdx"
+            on_pages:
+              - page: "~/BGit/Bryan_git/charlie-kirk/site/docs/FBI/overview.mdx"
+              - page: "~/BGit/Bryan_git/charlie-kirk/site/docs/Killer/israel-mossad.mdx"
 
     Every image entry carries every one of these properties. A property that
     has no value is emitted as the empty string "" — never omitted, never
     null. Absence of the key would make later passes unable to tell "not
-    looked up yet" from "looked up, does not exist."
+    looked up yet" from "looked up, does not exist." The two exceptions to the
+    ""-for-empty rule are the two typed properties: on_pages is a list and
+    emits [] when empty, and ipfs_pinned is a boolean and emits false when the
+    local node does not pin the CID.
   * About 21 level_3 clusters exist today (FBI, The Shot and the Shooter
     Position, Unfiled Backlog, Patsy Candidates, Security Team, TPUSA, Court
     and Legal Proceedings, Aircraft and Flight Evidence, Tyler Robinson,
@@ -314,7 +326,97 @@ Sidecar counts: ai_description N, ocr N, transcription N
 ============================
 
 ============================
-STAGE 3 — SITE LEVEL 2 SWEEP → YAML LEVEL_3 SUPERSET
+STAGE 3 — CID: EVERY IMAGE GETS ITS IPFS CID AND PIN STATUS
+============================
+
+This stage runs BEFORE the page sweeps on purpose. Site pages embed evidence
+images two ways — as a local static file, and as an IPFS gateway URL
+(https://ipfs.io/ipfs/<CID>/..., https://<CID>.ipfs.dweb.link/...). The later
+on_pages sweep (Stage 8) has to recognise an image by its CID when the page
+references it only by CID. So the CID column has to be populated first, or
+every IPFS-embedded reference on the site is unmatchable.
+
+KNOWLEDGE — how a CID is obtained.
+
+A CID is a content address. It is COMPUTED from the file's bytes — it does not
+require the network, a daemon, or the file ever having been published. So
+every image with a local file on disk can always get a CID, whether or not it
+is pinned anywhere:
+
+    ipfs add -n -Q "<file>"          # compute only, no add, default settings
+
+  -n / --only-hash  computes the CID without writing the block to the node
+  -Q / --quiet      prints just the CID
+
+USE THE DEFAULT CID VERSION — CIDv0, the base58 "Qm..." form. That is what the
+site already embeds (https://ipfs.io/ipfs/Qm... appears on the Photos image
+pages and on topic pages such as site/docs/Israel/Mossad.mdx) and what the
+local node's pin set holds. Passing --cid-version=1 produces a DIFFERENT
+string (bafkrei.../bafybei...) for the same bytes, because v1 also switches
+the leaf codec — it would not match a single URL on the site and Stage 8 would
+resolve nothing. If a v1 form is ever needed for a dweb.link subdomain URL,
+convert at use time with `ipfs cid base32 <cid>`; do not store it.
+
+Pinning is a SEPARATE question from having a CID. Pinned means "this node
+holds the blocks and rebroadcasts them so a public gateway can serve it."
+Check it against the local node:
+
+    ipfs pin ls --type=all <cid>       # exit 0 and prints the cid = pinned
+    ipfs block stat <cid>              # blocks present locally
+
+Chunking settings change the CID, so ALWAYS use the same flags on every run
+(-n -Q, default chunker, default CIDv0). A CID computed with different flags
+will not match the one in a gateway URL.
+
+WHAT TO DO.
+
+* For every image and video entry in {HIERARCHY_FILE} that has a file_path
+  pointing at a file that exists on disk:
+    * Compute the CID with the flags above. Write it to the entry's `cid`
+      property. This is unconditional — a CID is always obtainable for a local
+      file, so an entry with a readable file_path must never be left with
+      cid: "".
+    * Check pin status against the local IPFS node and record it:
+        ipfs_pinned: true      the local node pins it (it is being served)
+        ipfs_pinned: false     CID computed, but the node does not pin it
+    * Do NOT pin anything in this stage. Pinning publishes content to the
+      public IPFS network and it is irreversible in practice — a CID, once
+      announced, can be fetched and cached by anyone. Some images in this
+      corpus must never be published (see {THIS_DIR}/exclude_images.txt, the
+      private/personal material pulled 2026-07-22). This stage RECORDS state;
+      it does not change what is public. If a run wants to pin the publishable
+      set, that is a separate, explicitly-approved job that must first filter
+      out every sha256 in exclude_images.txt.
+* For entries with NO local file (ipfs_url-only entries harvested from site
+  embeds), the CID is already known from the URL — parse it out of the URL and
+  set `cid` from it. Set ipfs_pinned by asking the local node; if the node
+  does not have it, false.
+* For entries whose file_path points at a file that no longer exists on disk:
+  leave cid: "" and report the entry. Never invent a CID.
+* Also mirror the finding the other way: build a CID -> sha256 index in memory
+  and hold it for Stage 8, which needs to resolve an IPFS URL on a page back
+  to the image entry it belongs to.
+* Never overwrite a non-empty cid with "". If a recorded CID no longer matches
+  the recomputed one, that means the file's bytes changed — report the
+  mismatch, keep the recomputed value, and note the old one.
+
+Do this with a script, not by hand — there are ~1,700 entries. Batch the
+`ipfs add -n` calls and cache by sha256, since the same sha256 appearing under
+several nodes (deliberate cross-filing) has exactly one CID.
+
+Output to stdout:
+============================
+STAGE 3 COMPLETE
+Entries with local file: N   CID computed: N   CID already present + matching: N
+CID mismatches (bytes changed): N (listed)
+Pinned on local node: N   Not pinned: N
+ipfs_url-only entries with CID parsed from URL: N
+Entries left cid "" (file missing on disk): N (listed)
+Nothing pinned by this stage: confirmed
+============================
+
+============================
+STAGE 4 — SITE LEVEL 2 SWEEP → YAML LEVEL_3 SUPERSET
 ============================
 
 The YAML's list of level_3 nodes must include ALL of the website's Level 2
@@ -353,7 +455,7 @@ etc.):
 
 Output to stdout:
 ============================
-STAGE 3 COMPLETE
+STAGE 4 COMPLETE
 Site Level 2s swept: N
 Matched to existing level_3: N
 New level_3 nodes added: N (list their _keys)
@@ -362,7 +464,7 @@ Other node present: yes
 ============================
 
 ============================
-STAGE 4 — HOME PAGE TABLES OF CONTENTS → MORE LEVEL_3S
+STAGE 5 — HOME PAGE TABLES OF CONTENTS → MORE LEVEL_3S
 ============================
 
 The home page {HOME_PAGE} is the site's Level 1 and it carries MORE than one
@@ -379,7 +481,7 @@ Level 2 directory sweep alone did not.
 * For each linked area/topic in those TOCs, resolve the link target to its
   site section, and check whether a YAML level_3 covers that concept.
 * Add a new level_3 for each one not yet covered, using the same rules and
-  fields as Stage 3. No dupes — an area already covered by an existing
+  fields as Stage 4. No dupes — an area already covered by an existing
   level_3 (under any name) is skipped, though you may update that node's
   properties (e.g. append to site_level_2, refine title) if the TOC reveals a
   better human-readable name.
@@ -389,7 +491,7 @@ Level 2 directory sweep alone did not.
 
 Output to stdout:
 ============================
-STAGE 4 COMPLETE
+STAGE 5 COMPLETE
 TOC sections parsed on home page: N
 Concepts found: N
 Already covered: N
@@ -397,12 +499,12 @@ New level_3 nodes added: N (list their _keys)
 ============================
 
 ============================
-STAGE 5 — FILESYSTEM LEVEL 3/4 PAGES → YAML LEVEL_4/LEVEL_5 NODES
+STAGE 6 — FILESYSTEM LEVEL 3/4 PAGES → YAML LEVEL_4/LEVEL_5 NODES
 ============================
 
 Apply the increment-by-one mapping rule to the pages inside each site Level 2.
 
-For every site Level 2 that maps to a YAML level_3 (from Stage 3's
+For every site Level 2 that maps to a YAML level_3 (from Stage 4's
 site_level_2 property):
 
 * Enumerate its Level 3 pages: overview.md/.mdx plus every other page file
@@ -427,13 +529,13 @@ site_level_2 property):
 
 Output to stdout:
 ============================
-STAGE 5 COMPLETE
+STAGE 6 COMPLETE
 Site Level 3 pages processed: N → level_4 nodes (N new, N merged)
 Site Level 4 pages processed: N → level_5 nodes (N new, N merged)
 ============================
 
 ============================
-STAGE 6 — PAGE IMAGE SWEEP → IMAGE ENTRIES IN THE YAML
+STAGE 7 — PAGE IMAGE SWEEP → IMAGE ENTRIES IN THE YAML
 ============================
 
 Go through ALL the site's pages and make sure every page that has one or more
@@ -452,14 +554,16 @@ images gets those images represented in the YAML hierarchy.
     * If that sha256 already exists anywhere in the YAML: do NOT add a
       duplicate. Update the existing entry's properties instead — and record
       the page reference by appending the page's repo-relative path to an
-      on_site_pages list property on that image entry.
+      on_pages list property on that image entry (see Stage 8 for its
+      shape: a list of `- page:` mappings holding tilde-rooted page paths).
     * If it does not exist yet: add a new image entry under the level_4 (or
       level_5) node that correlates to the page it was found on — per the
       level model, "where those level_5 image entries are parented is on the
       level_4 in the YAML which correlates to the Level 3 page in the file
-      system." Fields: cid: "", sha256, file_path, ai_description: "",
-      on_site_pages: [<page path>], plus the sidecar path fields (Stage 7
-      fills them) and image_page: "" (Stage 8 fills it).
+      system." Fields: cid (Stage 3 fills it), ipfs_pinned, sha256,
+      file_path, ai_description: "", on_pages: [{page: <tilde-rooted page
+      path>}], plus the sidecar path fields (Stage 9
+      fills them) and image_page: "" (Stage 10 fills it).
 * Videos found on pages get entries too, as `video:` items with the same
   fields (video_list.csv at {DOCS_DIR}/video_list.csv is a starting index;
   the page scan is authoritative).
@@ -469,16 +573,145 @@ images gets those images represented in the YAML hierarchy.
 
 Output to stdout:
 ============================
-STAGE 6 COMPLETE
+STAGE 7 COMPLETE
 Pages scanned: N
 Images found on pages: N (N matched to mirror originals)
 New image entries added: N
-Existing entries updated (on_site_pages): N
+Existing entries updated (on_pages): N
 Video entries added/updated: N
 ============================
 
 ============================
-STAGE 7 — SIDECAR FILE-PATH PROPERTIES ON EVERY IMAGE AND VIDEO
+STAGE 8 — ON_PAGES: WHERE ELSE IN THE REPO EACH IMAGE IS SHOWN
+============================
+
+KNOWLEDGE — what on_pages answers.
+
+Two properties record two different relationships, and they must not be
+confused:
+
+  image_page  "which page IS this image" — the one Level 5 page under
+              {DOCS_DIR}/Photos that exists to host this single image. Set in
+              Stage 10. Exactly one, or "".
+  on_pages    "where ELSE is this image shown" — every OTHER page anywhere in
+              the repo that embeds it. Zero to many. Set here.
+
+on_pages covers any page hosted on any site Level 2, Level 3, or Level 4 —
+that is, anywhere OUTSIDE the images Level 2 directory. A page under some
+other Level 2 hierarchy (FBI, Planes, Tyler_Robinson, People, Timeline, the
+blog, anything) that wants to show that image gets its file path recorded on
+the image entry.
+
+THE PROPERTY SHAPE.
+
+on_pages is a LIST OF MAPPINGS, each with a single `page:` key holding the
+full path from ~ to the page file — the same tilde-rooted convention
+file_path, image_page, and the sidecar path properties already use:
+
+    on_pages:
+      - page: "~/BGit/Bryan_git/charlie-kirk/site/docs/FBI/overview.mdx"
+      - page: "~/BGit/Bryan_git/charlie-kirk/site/docs/Killer/israel-mossad.mdx"
+
+Not a flat list of strings. Not repo-relative. Not URLs.
+
+Every image entry carries the key. An image shown on no other page emits an
+empty list:
+
+    on_pages: []
+
+MIGRATION — on_site_pages is the old name for this.
+
+Earlier passes wrote a property called `on_site_pages` holding a flat list of
+repo-relative page paths, e.g.
+
+    on_site_pages: ["site/docs/Killer/israel-mossad.mdx", "site/docs/Motive/overview.mdx"]
+
+About 132 entries carry it. Convert every one: expand each repo-relative path
+to its tilde-rooted form under {ROOT_DIR}, re-emit as `- page:` mappings under
+`on_pages`, and drop the old key once converted. Nothing is lost — the old
+values are inputs to the new list, merged with whatever this stage finds.
+After this stage, `on_site_pages` must not appear anywhere in the file.
+
+HOW TO FIND THE REFERENCES — one linear pass over the repo.
+
+The work is a reverse index: for every page file in the repo, what images does
+it show. Read each file exactly once. This is O(n) over the repo's text, not
+O(images x pages).
+
+* Enumerate every text file in the repo recursively — every .md, .mdx, .html,
+  .tsx/.jsx/.ts/.js, .json, .csv, .yaml under {ROOT_DIR}, skipping
+  node_modules/, build/, .git/, and {SITE_DIR}/internals/static/ binaries.
+  Include the blog and any React components that embed evidence images.
+* Read each file ONCE and extract every image reference in it, in all the
+  forms the site actually uses:
+    - markdown image syntax           ![alt](/img/evidence/xxx.jpg)
+    - <img src="..."> in JSX/HTML     including require()/import forms
+    - background-image / style url()
+    - IPFS gateway URLs               https://ipfs.io/ipfs/<CID>[/name]
+                                      https://<CID>.ipfs.dweb.link/[name]
+                                      ipfs://<CID>
+    - static asset paths              /img/evidence/..., /img/..., ./assets/...
+    - <video>/<iframe> poster and src attributes (videos get the same
+      treatment as images)
+* Resolve each reference back to an image ENTRY in {HIERARCHY_FILE}, in this
+  precedence order:
+    1. IPFS CID in the reference -> the cid index built in Stage 3. Exact.
+       Normalise both sides before comparing (a page may carry the v1 base32
+       form of a CID stored as v0): `ipfs cid base32` on each.
+    2. Local static file -> sha256 the file on disk -> match the entry's
+       sha256. Exact.
+    3. Filename match against the published evidence filenames
+       ({SITE_DIR}/internals/static/img/evidence/<sha256-ish>.jpg names encode
+       the sha256 — use that). Exact.
+    4. Filename match against file_path basenames. AMBIGUOUS — a basename can
+       collide. Only accept when it resolves to exactly one entry; otherwise
+       leave it for the judgment pass below and report it.
+* Append the referencing page's tilde-rooted path to that entry's on_pages.
+  Deduplicate: a page that embeds the same image five times is recorded once.
+  Never add a page path twice; never drop one that is already recorded.
+
+SCOPE RULE — what does NOT go in on_pages.
+
+  * Pages under {DOCS_DIR}/Photos. Those are the images Level 2 itself. The
+    image's own Level 5 page belongs in image_page, and a Photos cluster
+    overview page listing its children is structure, not an outside reference.
+  * Files in {THIS_DIR} (planning layer), {GENERATOR_DIR} scripts,
+    {HIERARCHY_FILE} itself, and {PAGES_CSV}. Those reference images as data,
+    not as a page showing them.
+  * Anything outside {ROOT_DIR}.
+
+PARALLELISM — dividing the repo across agents.
+
+The mechanical extraction above should be scripted; a script reads each file
+once and is exact. Use parallel agents for the RESIDUAL — the references the
+script could not resolve mechanically (ambiguous basenames, relative paths
+that need page-context resolution, images referenced through a component
+indirection, hand-written embeds with no recognisable asset path).
+
+* Partition the repo's directories recursively across 12 agents. Map whole
+  directories to agents — never split a directory across two agents, so no
+  file is read twice and no file is missed. Balance by total file count, not
+  directory count.
+* Each agent walks only its assigned directories, opens each unresolved file
+  once, and returns a flat list of (page_path, resolved_sha256_or_cid,
+  evidence_of_match) rows. Agents do NOT edit {HIERARCHY_FILE} — they report,
+  and a single writer merges. Concurrent writers to one YAML file would
+  corrupt it.
+* Merge all agent output plus the scripted output into the YAML in one write.
+
+Output to stdout:
+============================
+STAGE 8 COMPLETE
+Files read: N   Image references found: N
+Resolved by CID: N   by sha256: N   by evidence filename: N   by basename: N
+Unresolved references: N (listed with page + reference)
+Entries with on_pages non-empty: N   total page bindings: N
+on_site_pages entries migrated: N   on_site_pages remaining in file: 0
+Pages excluded by scope rule (Photos / planning layer): N
+============================
+
+============================
+STAGE 9 — SIDECAR FILE-PATH PROPERTIES ON EVERY IMAGE AND VIDEO
 ============================
 
 For EVERY image and video entry in {HIERARCHY_FILE} (old and new):
@@ -501,7 +734,7 @@ For EVERY image and video entry in {HIERARCHY_FILE} (old and new):
 
 Output to stdout:
 ============================
-STAGE 7 COMPLETE
+STAGE 9 COMPLETE
 Entries processed: N
 ai_description_file set: N   ocr_file set: N   transcription_file set: N
 Inline descriptions filled from sidecars: N
@@ -509,7 +742,7 @@ Entries with no sidecars at all: N
 ============================
 
 ============================
-STAGE 8 — IMAGE_PAGE: BIND EVERY IMAGE TO ITS LEVEL 5 PAGE
+STAGE 10 — IMAGE_PAGE: BIND EVERY IMAGE TO ITS LEVEL 5 PAGE
 ============================
 
 KNOWLEDGE — what an image page is.
@@ -573,8 +806,8 @@ RULES.
   * Never invent a path. The file must exist on disk at the moment you write
     the value; verify existence before writing, and write "" if it does not.
   * Never write a page path that lives outside {DOCS_DIR}/Photos. Ad-hoc
-    embeds on topic pages elsewhere in the site belong in on_site_pages, not
-    here. The two properties answer different questions: on_site_pages is
+    embeds on topic pages elsewhere in the site belong in on_pages, not
+    here. The two properties answer different questions: on_pages is
     "where else does this image appear," image_page is "which page IS this
     image."
   * image_page is an IDENTITY field for sanitization purposes — see the
@@ -586,7 +819,7 @@ RULES.
 
 Output to stdout:
 ============================
-STAGE 8 COMPLETE
+STAGE 10 COMPLETE
 Image pages indexed under Photos: N (N with ck_image_sha256, N without)
 Entries with image_page set: N   matched by (sha256,node): N   by sha256 only: N
 Entries with image_page "": N (no page exists yet)
@@ -620,7 +853,8 @@ Two different treatments, chosen by field kind:
     accented letters) may stay — they are visible and harmless.
 
   * IDENTITY fields (file_path, ai_description_file, ocr_file,
-    transcription_file, image_page, ipfs_url, on_site_pages, also_filed_in,
+    transcription_file, image_page, ipfs_url, on_pages page values, cid,
+    also_filed_in,
     site_page, site_level_2) — the value
     must keep matching the real file on disk, so the characters cannot be
     replaced. Instead emit them as visible ASCII escapes inside YAML
@@ -634,7 +868,7 @@ re-parse the YAML and spot-check that an escaped file_path still resolves to
 an existing file on disk.
 
 ============================
-STAGE 9 — COUNTS, NEEDS_SPLIT, INTEGRITY
+STAGE 11 — COUNTS, NEEDS_SPLIT, INTEGRITY
 ============================
 
 * Recompute number_of_images (direct) and number_of_images_recursive
@@ -649,7 +883,8 @@ STAGE 9 — COUNTS, NEEDS_SPLIT, INTEGRITY
   accurate.
 * Verify the YAML parses (e.g. python3 -c "import yaml,sys;
   yaml.safe_load(open(sys.argv[1]))" {HIERARCHY_FILE} — or any equivalent).
-* Verify every image entry carries the full property set — cid, sha256,
+* Verify every image entry carries the full property set — cid, ipfs_pinned,
+  sha256,
   file_path, ai_description, ai_description_file, ocr_file,
   transcription_file, image_page — with "" standing in for any that has no
   value. No key is ever missing.
@@ -662,7 +897,7 @@ STAGE 9 — COUNTS, NEEDS_SPLIT, INTEGRITY
 
 Output to stdout:
 ============================
-STAGE 9 COMPLETE
+STAGE 11 COMPLETE
 Counts recomputed: yes
 needs_split nodes: N
 Duplicate _keys: 0   Duplicate sha256 within a node: 0
@@ -670,14 +905,14 @@ YAML parses: yes
 ============================
 
 ============================
-STAGE 10 — VERIFY AND REPORT
+STAGE 12 — VERIFY AND REPORT
 ============================
 
 * Confirm every non-excluded site Level 2 maps to exactly one level_3
   (site_level_2 property present).
 * Confirm the Other level_3 exists.
 * Confirm every home-page TOC concept resolves to a level_3.
-* Confirm every page found with images in Stage 6 has its images reachable in
+* Confirm every page found with images in Stage 7 has its images reachable in
   the YAML (spot-check 10 pages).
 * Confirm no pre-existing node or image entry was removed: the file only
   grows. Diff the node count and image count against Stage 1's index.
@@ -686,7 +921,7 @@ STAGE 10 — VERIFY AND REPORT
 
 Output to stdout:
 ============================
-STAGE 10 COMPLETE — FINAL REPORT
+STAGE 12 COMPLETE — FINAL REPORT
 level_3 nodes: N (was N)   level_4: N (was N)   level_5: N (was N)
 Total image entries: N (was N)   video entries: N
 Sidecar coverage: ai_description N%, ocr N%, transcription N%

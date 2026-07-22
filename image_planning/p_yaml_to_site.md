@@ -49,10 +49,17 @@ Two kinds of pages get produced under {PHOTOS_DIR}:
     at the layout spec below, plus a written description of what the image is,
     what it relates to, and hyperlinks into the rest of the investigation.
 
+A third, smaller output is produced OUTSIDE {PHOTOS_DIR}: the inline copies of
+each image on its host topic pages (the YAML's on_pages) are made clickable so
+they link to that image's Photos image page. This is a link-only edit — a
+wrapping anchor around an already-present <img> — and it too reads the YAML
+without writing it. See Stage 5.
+
 This prompt runs MANY times. Pages will usually already exist from earlier
 runs, written before additional data existed. Rerunning must read each
 existing page in, then rewrite it against the current YAML data and the
-current {LAYOUT_GUIDELINES}. The run is idempotent: same inputs, same pages.
+current {LAYOUT_GUIDELINES}. The run is idempotent: same inputs, same pages,
+same host-page anchors.
 
 ============================
 KNOWLEDGE — READ FIRST, IN THIS ORDER
@@ -120,11 +127,86 @@ Navigation rules (from the charter — a visitor never dead-ends):
     level_3 page with its title and recursive image count. Regenerate only
     that TOC section between clear markers ({/* PHOTOS_TOC_START */} and
     {/* PHOTOS_TOC_END */}); never touch the prose outside the markers.
+  * A cluster node that holds exactly ONE image and no child clusters is
+    BYPASSED in every table of contents: its parent links straight to that one
+    image page instead of to the cluster page. See the SINGLE-IMAGE NODES
+    section below — this is a navigation rule, not a page-generation rule; the
+    bypassed cluster page is still written.
 
 Two arrival paths must both work (the charter's audience model): a visitor
 browsing cold from the left bar down through the Level 2 page, and a visitor
 arriving from a topic page elsewhere on the site who wants to SEE the evidence
 for that topic, one click, already grouped.
+
+============================
+KNOWLEDGE — SINGLE-IMAGE NODES ARE BYPASSED IN NAVIGATION
+============================
+
+A cluster page earns its place only when it has something to choose between. A
+level_4 that holds one image and nothing else is a page whose entire table of
+contents is a single link — the visitor clicks it, reads one line, and clicks
+again to reach the thing they came for. That middle click is removed.
+
+The test — a cluster node is BYPASSED when both hold:
+
+  * number_of_images_recursive is 1, and
+  * the node has no child clusters that survive this same test (a node whose
+    only child is itself bypassed still resolves down to one image page).
+
+Equivalently: the node's whole subtree resolves to exactly one image page.
+
+What bypassing changes — LINKS ONLY:
+
+  * The parent's table of contents does NOT list the bypassed node. In its
+    place the parent lists the single IMAGE PAGE the node resolves to, linked
+    directly, using the image page's title. Where the parent's TOC shows a
+    count, the row shows 1 image.
+  * Peer lists on sibling cluster pages apply the same substitution — a
+    bypassed node never appears as a peer; its image page appears instead.
+  * The bypassed node contributes its one image page to whatever TOC section
+    the parent uses for images, or to the child-cluster section with the image
+    page in the slot; either is fine as long as the visitor sees one row that
+    lands on the image.
+  * The image page's back / parent link points to the NEAREST NON-BYPASSED
+    ANCESTOR — the level_3 in the worked example below — not to the bypassed
+    level_4. A visitor must never be sent onto a page the navigation just
+    skipped.
+  * Previous / next peer links for that image page are drawn from the same
+    set the parent linked, so the image sits in the parent's sequence rather
+    than alone in an empty cluster of one.
+
+What bypassing does NOT change — the page is still built:
+
+  * The bypassed cluster page is still generated at its normal path with its
+    normal frontmatter (ck_node_key), its concept paragraph, and its own full
+    TOC pointing at its parent and its one image page. It is reachable by URL
+    and it builds; it simply has no inbound links from the hierarchy.
+  * It still gets its row in {PAGES_CSV}, at its true level and parentage.
+  * It is NOT an orphan and must never be deleted by the orphan sweep.
+  * The image page keeps its real file path under the bypassed node's
+    directory, and keeps ck_node_key set to the bypassed node's _key. The YAML
+    binding is unchanged; only the links a visitor follows are.
+
+Multi-image nodes are untouched. A level_4 with two or more images is linked
+from its parent exactly as before — that is the case the cluster page exists
+for.
+
+Worked example (this is the shape that prompted the rule):
+
+  level_3 "Table And Charlie" has a child
+    level_4 "1776 Man" (_key Table_1776_Man, number_of_images_recursive: 1)
+      one image, image_page .../Photos/Table_And_Charlie/Table_1776_Man/
+      Img_Photo_24288a.mdx
+
+  The Table_And_Charlie page links straight to Img_Photo_24288a.mdx, titled
+  "1776 Man". It does not link to Table_1776_Man/overview.mdx. That overview
+  page is still written, still in {PAGES_CSV}, still builds — it just is not
+  in anybody's table of contents. Img_Photo_24288a.mdx's back link goes to
+  Table_And_Charlie, skipping Table_1776_Man.
+
+The rule applies at every depth by the same test: a level_5 holding one image
+is bypassed by its level_4, and a level_3 holding one image is bypassed by the
+Level 2 landing page's TOC, which then links straight to that image page.
 
 ============================
 KNOWLEDGE — IMAGE PAGE LAYOUT SPEC
@@ -301,6 +383,87 @@ and leaving them strands dead pages in the build); their removal is counted
 and reported every run.
 
 ============================
+KNOWLEDGE — CLICKABLE IMAGES ON HOST PAGES (LINK BACK TO THE IMAGE PAGE)
+============================
+
+An image almost always appears twice on the site: once on its own Photos image
+page (the Level 5 page recorded in the YAML as image_page), and once — often
+several times — inline on the topic pages that first hosted it. Those topic
+pages are recorded on the image entry as on_pages. The point of this knowledge
+is to make that inline copy CLICKABLE: a visitor reading Mic/AES.mdx who sees
+the evidence photo can click it and land on that exact image's Photos page,
+where the image is shown full-size beside its full write-up and its place in the
+hierarchy. It is the "topic arrival" path from the charter, wired at the image
+level.
+
+This is a link-only operation on the host pages. It changes nothing else on
+them — not their prose, not their other images, not their captions, not their
+layout — and it does NOT write {HIERARCHY_FILE}. The YAML is read-only here; the
+stage only reads image_page and on_pages off each image and edits the host page.
+
+Deriving the image page URL (the link target):
+
+  * image_page is an absolute file path under {SITE_DIR}/docs, e.g.
+    ~/BGit/Bryan_git/charlie-kirk/site/docs/Photos/FBI/Img_FBI_Shuts_down_b7009f.mdx
+  * The site's routeBasePath is "/", so the site-relative URL is that path with
+    the {SITE_DIR}/docs prefix removed and the .mdx suffix dropped:
+      /Photos/FBI/Img_FBI_Shuts_down_b7009f
+  * The link is site-relative: it starts with "/", carries no domain, and does
+    NOT include /docs. Docusaurus resolves it; the build's broken-link checker
+    validates it.
+  * Confirm the derived URL against {PAGES_CSV} (the url_path recorded for the
+    image page's page_key). If they disagree, trust {PAGES_CSV}.
+
+Parsing on_pages:
+
+  * on_pages is a list of hosting pages. Entries may be stored as stringified
+    dicts, e.g. "{'page': '~/BGit/Bryan_git/charlie-kirk/site/docs/Mic/AES.mdx'}".
+    Extract the page file path out of each entry. Deduplicate the list.
+  * Each path is a real .mdx page under {SITE_DIR}/docs. Skip any path that does
+    not resolve to a file on disk and record it as a problem.
+
+Finding the right <img> on the host page (the thing to wrap):
+
+  The same image can be embedded by different references on different pages.
+  Match in this priority order, and match ONLY this image, never a neighbor:
+
+    1. IPFS CID — host pages embed images as
+         https://ipfs.io/ipfs/{cid}, https://{cid}.ipfs.dweb.link/...,
+         or a bare /ipfs/{cid}. If the image entry's cid appears in an <img
+         src> (or a markdown image URL) on the page, that is the match. CID is
+         the strongest identity because host pages key on it today.
+    2. Served static path — /img/evidence/{sha256}.{ext}.
+    3. Original filename stem or a distinctive alt-text substring, as a last
+       resort, only when it is unambiguous on that page.
+
+  If none of these match on a page that on_pages claims hosts the image, the
+  image is not actually embedded there — record it as a problem and move on. Do
+  not invent an embed and do not add a bare text link.
+
+Making it clickable (wrap, do not replace):
+
+  * Markdown image:  ![alt](src)  becomes  [![alt](src)](URL)
+  * MDX <img .../> :  wrap that single tag in an anchor, preserving every
+    existing attribute and style verbatim:
+        <a href="URL"><img ... /></a>
+    Wrap only the one matched <img>; leave every sibling <img> in the same grid
+    untouched.
+  * Never alter the src, alt, sizing, or surrounding caption. The only change is
+    the wrapping anchor.
+
+Idempotent and safe:
+
+  * If the matched <img> is already wrapped in an anchor whose href is exactly
+    the derived URL, leave it — never double-wrap.
+  * If it is wrapped in an anchor pointing somewhere else that a human placed
+    (e.g. the original X post), do NOT clobber it; record it and skip, so a
+    deliberate external link is never destroyed. (Report these for review.)
+  * Never point an image at a different image's page. One image, one target.
+  * An image excluded in {EXCLUDE_FILE} has no image page to link to — skip it
+    on the host pages entirely.
+  * An image hosted on N pages gets N host edits, one matched <img> per page.
+
+============================
 STAGE 1 — SETUP AND READ
 ============================
 
@@ -359,9 +522,15 @@ rules, the existing-page map for its subtree, and pointers to {CK_FILE},
 Each agent, for its subtree, working top-down:
 
 * Read the {CK_FILE} sections relevant to its clusters.
+* Compute the bypass set for its subtree first (see SINGLE-IMAGE NODES): every
+  node whose subtree resolves to exactly one image page, and for each the image
+  page it resolves to. Every TOC the agent writes is built against that set.
 * For every cluster node: create or rewrite the cluster overview.mdx with
   title, a short concept paragraph (grounded in {CK_FILE}, safe-writing rules
-  apply), and the full TOC — parent, peers, child clusters, image pages.
+  apply), and the full TOC — parent, peers, child clusters, image pages —
+  with bypassed children and bypassed peers replaced by the image pages they
+  resolve to. Bypassed nodes get their own page written exactly the same way;
+  they are just absent from everyone else's TOC.
 * For every image entry:
     * Ensure the static copy exists per HOSTING THE IMAGE FILE.
     * If a page for this sha256 already exists in this node's dir, read it in
@@ -386,7 +555,7 @@ Output to stdout (after all agents return):
 ============================
 STAGE 3 COMPLETE
 Agents run: N
-Cluster pages: N created, N rewritten
+Cluster pages: N created, N rewritten (N bypassed in navigation)
 Image pages: N created, N rewritten
 Static copies written: N (N downscaled)   IPFS embeds: N   media pending: N
 Problems reported: N (list)
@@ -401,7 +570,9 @@ Orchestrator only, single-threaded:
 * Regenerate the TOC section of {IMAGES_L2_PAGE} between the
   PHOTOS_TOC_START / PHOTOS_TOC_END markers (insert the markers before the
   final paragraph if this is the first run). Table of every level_3: title
-  linked to its page, recursive image count. Prose outside markers untouched.
+  linked to its page, recursive image count. A level_3 that is BYPASSED (whole
+  subtree resolves to one image page) is listed with its title linked straight
+  to that image page. Prose outside markers untouched.
 * Merge every agent's page rows into {PAGES_CSV}: add rows for new pages,
   update rows for retitled/moved pages, following the CSV schema in
   {ROOT_DIR}/claude.md (page_key = node _key or image_key, parent_key = the
@@ -414,6 +585,57 @@ Output to stdout:
 STAGE 4 COMPLETE
 Landing page TOC rows: N
 pages.csv: N rows added, N updated, N flagged
+============================
+
+============================
+STAGE 5 — MAKE HOST-PAGE IMAGES CLICKABLE (LINK TO THE IMAGE PAGE)
+============================
+
+By this stage every image page under {PHOTOS_DIR} exists (Stage 3 wrote them),
+so the link targets are real. This stage walks the images and wires each one's
+inline copies on its host pages to point at its Photos image page. See KNOWLEDGE
+— CLICKABLE IMAGES ON HOST PAGES for the URL derivation, the match order, and
+the wrap rules; follow it exactly.
+
+Work by host PAGE, not by image, so each file is opened and rewritten once even
+when it hosts many images. Build the plan first:
+
+* Walk every image in the YAML index. Skip any whose sha256 is in
+  {EXCLUDE_FILE}. For the rest, derive the image-page URL from image_page
+  (strip {SITE_DIR}/docs, drop .mdx; confirm against {PAGES_CSV}).
+* Parse each image's on_pages into a deduplicated list of host .mdx file paths.
+* Invert into a map: host page -> [ (cid, sha256, filename, image-page URL), ...]
+  for every image that page hosts.
+
+Then, for each host page in that map (partition across up to {MAX_AGENTS}
+agents by host page; a host page is never split across agents):
+
+* Read the page in.
+* For each image the map assigns to this page, locate the one matching <img> /
+  markdown image by the KNOWLEDGE match order (CID first, then the
+  /img/evidence/{sha256}.{ext} static path, then filename/alt). If nothing
+  matches, record it as "claimed host, not embedded" and skip.
+* Wrap the matched embed in an anchor to that image's page URL, preserving all
+  attributes and styles. Obey the idempotency rules: skip if already wrapped to
+  the same URL; never clobber a pre-existing human-placed anchor to a different
+  target (record those); never double-wrap; never touch a sibling image.
+* Keep the page byte-identical everywhere else. The only edits are the wrapping
+  anchors.
+* Do not modify pages under {PHOTOS_DIR} here (those are Stage 3's; their own
+  layout handles their single image), and do not modify {HIERARCHY_FILE}.
+
+Host pages edited here live OUTSIDE {PHOTOS_DIR} — this is the one stage that
+writes elsewhere in {DOCS_DIR}, and it may only ever add wrapping anchors around
+already-present image embeds. It creates no pages, deletes nothing, and moves
+nothing.
+
+Output to stdout:
+============================
+STAGE 5 COMPLETE
+Host pages scanned: N   host pages edited: N
+Image embeds linked: N   already linked (skipped): N
+Claimed hosts with no matching embed: N (list)
+Pre-existing anchors left intact: N (list)
 ============================
 
 ============================
@@ -439,12 +661,13 @@ hard-fail if any code point remains. (The invisible set is enumerated in
 {THIS_DIR}/p_create_image_hierarchy.md — same list applies here.)
 
 ============================
-STAGE 5 — BUILD, VERIFY, REPORT
+STAGE 6 — BUILD, VERIFY, REPORT
 ============================
 
 * Run the Docusaurus build: cd {SITE_DIR} && npm run build. It must pass.
   Broken links and MDX compile errors (e.g. a stray <!-- --> comment) surface
-  here — fix and rebuild until green.
+  here — fix and rebuild until green. The host-page image links added in Stage 5
+  are internal links, so any bad target fails the build here.
 * Spot-check 10 image pages across different partitions: frontmatter fields
   present, hide_table_of_contents true, image src resolves to an existing
   static file or IPFS URL, layout component/CSS applied, description has at
@@ -452,18 +675,30 @@ STAGE 5 — BUILD, VERIFY, REPORT
   the word "defamation" absent.
 * Spot-check 5 cluster pages: TOC lists all peers, children, and image pages;
   every link resolves.
+* Check the bypass rule on every node in the bypass set: the parent's TOC
+  contains a link to the single image page and contains NO link to the
+  bypassed cluster page; the bypassed cluster page nevertheless exists on
+  disk, has its {PAGES_CSV} row, and builds; the image page's back link points
+  at the nearest non-bypassed ancestor.
+* Spot-check the Stage 5 host links: pick 10 image/host-page pairs across
+  different sections, open the host page, confirm the matched <img> is wrapped
+  in an anchor whose href is the image's derived Photos URL, confirm no sibling
+  image was wrapped, and confirm that URL resolves to the image page on disk.
 * Confirm {PAGES_CSV} row count change matches pages created.
-* Run the invisible-Unicode scan over everything written this run.
-* Confirm nothing outside {PHOTOS_DIR}, {STATIC_IMG_DIR}, {PAGES_CSV}, and
-  (marker section only) {IMAGES_L2_PAGE} was modified. sidebars.ts untouched.
+* Run the invisible-Unicode scan over everything written this run (host pages
+  edited in Stage 5 included).
+* Confirm nothing outside {PHOTOS_DIR}, {STATIC_IMG_DIR}, {PAGES_CSV}, the
+  Stage 5 host pages (anchor wraps only), and (marker section only)
+  {IMAGES_L2_PAGE} was modified. sidebars.ts untouched.
 
 Output to stdout:
 ============================
-STAGE 5 COMPLETE — FINAL REPORT
+STAGE 6 COMPLETE — FINAL REPORT
 Build: PASS/FAIL
 Pages now under /Photos: N cluster + N image = N total
 Images published: N of N in YAML (N pending media)
-Spot-checks: image pages N/10 pass, cluster pages N/5 pass
+Host pages linked: N   image embeds made clickable: N
+Spot-checks: image pages N/10 pass, cluster pages N/5 pass, host links N/10 pass
 pages.csv in sync: yes   sidebars.ts untouched: yes   invisible scan: clean
 ============================
 
@@ -479,10 +714,24 @@ HARD RULES
   description is grounded in it.
 * This prompt writes ONLY: pages under {PHOTOS_DIR}, static copies under
   {STATIC_IMG_DIR}, the marked TOC section of {IMAGES_L2_PAGE}, a shared
-  layout component/CSS under {SITE_DIR}/src/ if used, and {PAGES_CSV} rows.
-  It never modifies {HIERARCHY_FILE}'s data (read-only input), never touches
-  {SITE_DIR}/sidebars.ts, and never writes planning notes into the site or
-  Docusaurus pages into {THIS_DIR}.
+  layout component/CSS under {SITE_DIR}/src/ if used, {PAGES_CSV} rows, and —
+  in Stage 5 only — wrapping anchors around already-present image embeds on the
+  host pages named in each image's on_pages. It never modifies
+  {HIERARCHY_FILE}'s data (read-only input), never touches {SITE_DIR}/sidebars.ts,
+  and never writes planning notes into the site or Docusaurus pages into
+  {THIS_DIR}.
+* Stage 5 makes each image's inline copies on its on_pages host pages clickable,
+  linking to that image's Photos image page via a site-relative URL derived from
+  image_page (strip {SITE_DIR}/docs, drop .mdx). It only adds a wrapping anchor
+  around the one matched <img> per page — it changes no other content, creates
+  and deletes nothing, never double-wraps, never clobbers a pre-existing anchor,
+  and never links an image to any page but its own. Excluded images are skipped.
+* A cluster node whose subtree resolves to exactly ONE image page is bypassed
+  in navigation: parents and peers link straight to that image page, never to
+  the cluster page, and the image page's back link points at the nearest
+  non-bypassed ancestor. The bypassed cluster page is still generated, still
+  rows in {PAGES_CSV}, and is never treated as an orphan. Nodes with two or
+  more images are linked normally.
 * Reruns refresh structure and PRESERVE authored prose (see BOOKKEEPING
   FIELDS ON PAGES). An enrichment pass's writing, and any safe-writing scrub
   applied to a page, must survive every later regeneration. Orphan removals

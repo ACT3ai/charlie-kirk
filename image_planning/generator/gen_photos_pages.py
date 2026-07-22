@@ -335,6 +335,31 @@ def strip_forbidden_wording(words):
     return out
 
 
+def host_pages(i):
+    """Other repo pages that embed this image, as repo-relative paths.
+
+    Two schemas are in play. The hierarchy passes originally wrote
+    on_site_pages: a flat list of repo-relative strings. A later pass renamed it
+    to on_pages: a list of {page: <tilde-absolute path>} mappings. Read both --
+    the YAML is written by more than one process, so assuming a single shape is
+    how the 'Where This Image Appears' sections silently vanished once already.
+    """
+    out = []
+    for hp in (i.get("on_pages") or []):
+        p = hp.get("page") if isinstance(hp, dict) else hp
+        if p:
+            out.append(p)
+    out.extend(i.get("on_site_pages") or [])
+    rel = []
+    for p in out:
+        p = os.path.expanduser(str(p))
+        if p.startswith(ROOT + os.sep):
+            p = os.path.relpath(p, ROOT)
+        if p not in rel:
+            rel.append(p)
+    return rel
+
+
 def humanize_stem(fp):
     stem = os.path.splitext(os.path.basename(fp or ""))[0]
     words = [w for w in re.split(r"[_\-\s.]+", sanitize_prose(stem)) if w]
@@ -575,7 +600,7 @@ for pg in img_pages:
     lines += [body, ""]
     if not src:
         lines += ["*Media pending — the image file for this entry is not yet hosted.*", ""]
-    hosts = i.get("on_site_pages") or []
+    hosts = host_pages(i)
     if hosts:
         lines += ["## Where This Image Appears", "",
                   "This image is used on the following investigation page" + ("s" if len(hosts) > 1 else "") + ":", ""]
