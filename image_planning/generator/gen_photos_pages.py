@@ -125,6 +125,11 @@ nodes = []          # flat list of included cluster nodes
 all_keys_seen = set()
 
 
+# Deepest YAML cluster level walked. The tree currently bottoms out at
+# level_7; the cap is a runaway guard, not a structural limit.
+MAX_DEPTH = 7
+
+
 def norm_key(k):
     k = re.sub(r"[^A-Za-z0-9_]", "_", k or "X")
     return k
@@ -161,7 +166,11 @@ def walk(raw, depth, parents):
         if (i.get("sha256") or "") in EXCLUDED:
             continue
         node["images"].append(i)
-    child_key = {3: "level_4", 4: "level_5", 5: None}[depth]
+    # Descend to whatever depth the YAML actually has. This used to stop at
+    # level_5, which silently dropped every image filed deeper — the YAML holds
+    # level_6 and level_7 nodes (e.g. Aircraft > MEMEs > Versions > SpyPlane_2).
+    # Empty deep nodes still fall out later via included() / rec_count == 0.
+    child_key = f"level_{depth + 1}" if depth < MAX_DEPTH else None
     if child_key:
         for c in raw.get(child_key) or []:
             ch = walk(c.get(child_key, c), depth + 1, parents + [node])
@@ -299,13 +308,40 @@ HASHY = re.compile(r"^(?=.*\d)[A-Za-z0-9\-]{8,}$")
 DATEY = re.compile(r"^\d")
 
 
+def strip_forbidden_wording(words):
+    """Drop 'hand off' / 'handoff' from words derived off a source filename.
+
+    Titles and slugs here are derived from the mirror's own filenames, and the
+    mirror still uses the old 'Hand_Off' filing wording. Published pages must
+    not: 'hand off' asserts a deliberate transfer between named living people,
+    which is exactly the kind of factual accusation the repo's defamation rules
+    forbid. The approved wording is 'Table and Charlie' / 'security team
+    reaching Charlie'. Dropping the tokens usually leaves too few words, so the
+    page falls back to the neutral '<cluster title> - Photo N' form.
+
+    Only the 'hand off' pairing is forbidden. A standalone 'hand' is fine and
+    must be kept -- a hand on a trigger, a hand in a product photo -- so this
+    strips the adjacency and the closed-up spelling, nothing more.
+    """
+    out = []
+    for w in words:
+        lw = w.lower()
+        if lw in ("handoff", "handsoff"):
+            continue
+        if lw == "off" and out and out[-1].lower() == "hand":
+            out.pop()
+            continue
+        out.append(w)
+    return out
+
+
 def humanize_stem(fp):
     stem = os.path.splitext(os.path.basename(fp or ""))[0]
     words = [w for w in re.split(r"[_\-\s.]+", sanitize_prose(stem)) if w]
     good = [w for w in words
             if len(w) >= 3 and not HASHY.match(w) and not DATEY.match(w)
             and re.search(r"[A-Za-z]{3}", w) and w.lower() not in ("screenshot", "img", "image", "photo")]
-    return good
+    return strip_forbidden_wording(good)
 
 
 img_pages = []       # dicts describing every image page
