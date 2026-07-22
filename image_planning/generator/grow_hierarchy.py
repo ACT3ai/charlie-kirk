@@ -4,6 +4,8 @@
 # level_4/level_5 nodes (level incremented by one), page images -> image entries,
 # sidecar file-path properties, counts + needs_split. Grow-only: never deletes.
 import os, re, csv, sys, hashlib, yaml, urllib.parse
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from sanitize_common import sanitize_prose, q_prose, q_identity, validate_no_invisible
 
 HOME = os.path.expanduser('~')
 ROOT = os.path.join(HOME, 'BGit/Bryan_git/charlie-kirk')
@@ -60,7 +62,7 @@ SITE_MAP = [
     ('Law_Enforcement', 'Law_Enforcement'), ('security_law_enforcement', 'Law_Enforcement'),
     ('Locations', 'Locations'), ('Media', 'Media_Coverage'), ('Medical', 'Medical'),
     ('Motive', 'Motive'), ('Narrative', 'Official_Narrative'),
-    ('Other', 'Other'), ('other_topics', 'Other'),
+    ('Other', 'Other_Topics'), ('other_topics', 'Other_Topics'),
     ('political_context', 'Political_Context'),
     ('Tyler_Robinson_Not_Assassin', 'Tyler_Not_Assassin'), ('Proof_Not_Tyler', 'Tyler_Not_Assassin'),
     ('social_media_analysis', 'Social_Media'),
@@ -81,7 +83,7 @@ NEW_L3_TITLES = {
     'Influencers_Coverage': 'Influencers', 'Iran': 'Iran',
     'Law_Enforcement': 'Law Enforcement', 'Locations': 'Locations',
     'Media_Coverage': 'Media Coverage', 'Medical': 'Medical', 'Motive': 'Motive',
-    'Official_Narrative': 'The Official Narrative', 'Other': 'Other',
+    'Official_Narrative': 'The Official Narrative', 'Other_Topics': 'Other',
     'Political_Context': 'Political Context', 'Tyler_Not_Assassin': 'Tyler Robinson Not Assassin',
     'Social_Media': 'Social Media Analysis', 'Suspects': 'Suspects',
     'Suspicious_Anomalies': 'Suspicious Anomalies', 'Tech_Surveillance': 'Technology and Surveillance',
@@ -440,12 +442,13 @@ def walk_check(items, lvl):
         k = node['_key']
         if k in key_seen: key_dups.append(k)
         key_seen.add(k)
-        local = set()
         for kind in ('images', 'videos'):
+            local = set()
             for im in (node.get(kind) or []):
                 inner = im.get('image') or im.get('video')
-                if inner['sha256'] in local: sha_dup_in_node.append((k, inner['sha256'][:12]))
-                local.add(inner['sha256'])
+                ident = inner.get('sha256') or inner.get('cid') or ''
+                if ident and ident in local: sha_dup_in_node.append((k, ident[:12]))
+                if ident: local.add(ident)
         for nl, arr in child_list(node):
             walk_check(arr, nl)
 walk_check(doc['level_3'], 3)
@@ -453,8 +456,12 @@ stats8.update({'dup_keys': key_dups, 'dup_sha_in_node': sha_dup_in_node, 'grand_
 report['stage8'] = stats8
 
 # ---------- emit ----------
+# Field policy (OUTPUT SANITIZATION rule): prose fields get content-sanitized
+# (invisible unicode removed); identity fields keep their exact value but any
+# non-ASCII is emitted as a visible \uXXXX escape. The file bytes stay visible.
+PROSE_FIELDS = {'title', 'ai_description'}
 def q(s):
-    return '"' + str(s).replace('\\', '\\\\').replace('"', '\\"') + '"'
+    return q_identity(s)
 
 out = []
 out.append('# hierarchy_images.yaml — image evidence hierarchy for the Charlie Kirk site.')
@@ -479,9 +486,10 @@ def emit_media(im, pad):
     for k in keys:
         if k not in inner: continue
         v = inner[k]
-        if k == 'sha256': out.append(f'{p2}{k}: {v}')
+        if k == 'sha256': out.append(f'{p2}{k}: {v if v else chr(34)+chr(34)}')
         elif isinstance(v, list):
             if v: out.append(f'{p2}{k}: [{", ".join(q(x) for x in v)}]')
+        elif k in PROSE_FIELDS: out.append(f'{p2}{k}: {q_prose(v)}')
         else: out.append(f'{p2}{k}: {q(v)}')
 
 def emit_node(it, lvl, indent):
@@ -489,7 +497,7 @@ def emit_node(it, lvl, indent):
     pad = ' ' * indent
     out.append(f'{pad}- level_{lvl}:')
     p2 = pad + '    '
-    out.append(f'{p2}title: {q(node["title"])}')
+    out.append(f'{p2}title: {q_prose(node["title"])}')
     out.append(f'{p2}_key: {node["_key"]}')
     if 'site_level_2' in node:
         out.append(f'{p2}site_level_2: [{", ".join(q(x) for x in node["site_level_2"])}]')
@@ -516,8 +524,9 @@ for it in doc['level_3']:
     emit_node(it, 3, 2)
 open(YAML_PATH, 'w').write('\n'.join(out) + '\n')
 
-# re-parse to prove validity
+# re-parse to prove validity, then the mandatory invisible-character scan
 yaml.safe_load(open(YAML_PATH))
+validate_no_invisible(YAML_PATH)
 
 # ---------- report ----------
 print('BEFORE:', node_count_before, '| media entries:', img_count_before)

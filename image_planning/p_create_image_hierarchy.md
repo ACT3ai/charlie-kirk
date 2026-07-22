@@ -480,6 +480,45 @@ Entries with no sidecars at all: N
 ============================
 
 ============================
+OUTPUT SANITIZATION — NO INVISIBLE UNICODE, EVER (SECURITY RULE)
+============================
+
+The emitted {HIERARCHY_FILE} must NEVER contain invisible Unicode characters.
+Invisible characters (zero-width spaces, bidi controls, no-break spaces,
+word joiners, BOMs, control characters, variation selectors, tag characters)
+are a security problem: they can hide content from review, spoof strings,
+and smuggle instructions past a human reading the file. Every byte of the
+emitted YAML must be visible in a text editor.
+
+The invisible set includes at minimum: U+0000-U+0008, U+000B-U+001F, U+007F-
+U+009F, U+00A0, U+00AD, U+034F, U+061C, U+115F, U+1160, U+17B4, U+17B5,
+U+180B-U+180E, U+2000-U+200F, U+2028-U+202F (U+202F NARROW NO-BREAK SPACE is
+the one macOS puts in screenshot filenames before "AM/PM" — it WILL appear in
+the inputs), U+205F-U+206F, U+3000, U+3164, U+FE00-U+FE0F, U+FEFF, U+FFA0,
+U+FFF9-U+FFFB, and U+E0000-U+E007F.
+
+Two different treatments, chosen by field kind:
+
+  * PROSE fields (title, ai_description) — sanitize the CONTENT: replace
+    space-like invisibles (U+00A0, U+2000-U+200A, U+202F, U+205F, U+3000)
+    with a regular space, DELETE zero-width/bidi/control/joiner characters
+    outright, then collapse runs of whitespace. Visible non-ASCII (em dashes,
+    accented letters) may stay — they are visible and harmless.
+
+  * IDENTITY fields (file_path, ai_description_file, ocr_file,
+    transcription_file, ipfs_url, on_site_pages, also_filed_in) — the value
+    must keep matching the real file on disk, so the characters cannot be
+    replaced. Instead emit them as visible ASCII escapes inside YAML
+    double-quoted scalars (U+202F becomes the six visible characters backslash-u-2-0-2-F, i.e. "\u202F"). The parsed value is unchanged and still resolves the file; the
+    file bytes contain nothing invisible. Escape ALL non-ASCII in identity
+    fields this way.
+
+MANDATORY validation after every emit: re-scan the written file and hard-fail
+if any code point from the invisible set remains anywhere in it. Also
+re-parse the YAML and spot-check that an escaped file_path still resolves to
+an existing file on disk.
+
+============================
 STAGE 8 — COUNTS, NEEDS_SPLIT, INTEGRITY
 ============================
 
@@ -495,6 +534,10 @@ STAGE 8 — COUNTS, NEEDS_SPLIT, INTEGRITY
   accurate.
 * Verify the YAML parses (e.g. python3 -c "import yaml,sys;
   yaml.safe_load(open(sys.argv[1]))" {HIERARCHY_FILE} — or any equivalent).
+* Run the OUTPUT SANITIZATION validation: scan the emitted file for every
+  code point in the invisible set and fail hard if any is found. Confirm at
+  least one escaped file_path round-trips: parse the YAML, expanduser the
+  path, and check the file exists.
 
 Output to stdout:
 ============================
@@ -541,7 +584,12 @@ HARD RULES
 * Do not put Docusaurus pages in {THIS_DIR} and do not put planning notes in
   {SITE_DIR}/docs/Photos/.
 * _key uniqueness is file-wide and _keys are the future page_keys — treat
-  them like database primary keys.
+  them like database primary keys. Keys are ASCII-only by construction.
+* {HIERARCHY_FILE} must never contain invisible Unicode characters — see the
+  OUTPUT SANITIZATION section. Prose is cleaned; identity fields (paths,
+  URLs) are emitted with visible \uXXXX escapes; every emit is followed by
+  the invisible-character validation scan. This is a security rule, not a
+  style rule.
 * Clusters are concept clusters, arbitrated by {CK_FILE}. The folder
   proposes, the description decides, {CK_FILE} arbitrates.
 * When later prompts publish from this YAML, all public output follows the
