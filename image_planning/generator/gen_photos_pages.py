@@ -1,7 +1,10 @@
 #!/usr/bin/env python3
 """Generate the /Photos image-evidence pages from hierarchy_images.yaml.
 
-Driven by image_planning/p_images_level2.md. Writes:
+Driven by image_planning/p_level2_update.md (navigation pages: the Level 2
+landing page and every Level 3/4/5 cluster page — table of contents at the top,
+two balanced columns, modeled on the site home page) and by
+image_planning/p_yaml_to_site.md (the individual image pages). Writes:
   * site/docs/Photos/<cluster dirs>/overview.mdx        (cluster pages)
   * site/docs/Photos/<cluster dirs>/<Img_key>.mdx       (one page per image)
   * site/internals/static/img/evidence/<sha256>.<ext>   (served copies)
@@ -342,21 +345,32 @@ def back_button(url, label):
     return f"<a href=\"{url}\" {BTN}>← {mdx_escape(label)}</a>\n"
 
 
-def three_cols(items):
+TOC_COLUMNS = 2
+
+
+def toc_cols(items):
+    """Balanced {TOC_COLUMNS}-column bullet list, in the site home page's idiom.
+
+    Two columns rather than the home page's three: the main area on these pages
+    is narrower, and two columns stay readable on a laptop.
+    """
     if not items:
         return ""
     k = len(items)
-    a = (k + 2) // 3
-    b = (k - a + 1) // 2
-    cols = [items[:a], items[a:a + b], items[a + b:]]
-    out = ["<div style={{display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: '1rem'}}>"]
+    per = (k + TOC_COLUMNS - 1) // TOC_COLUMNS
+    cols = [items[i:i + per] for i in range(0, k, per)] or [items]
+    out = ['<div style={{ display: "flex", justifyContent: "space-between", gap: "2rem" }}>']
     for col in cols:
-        out.append("<div>\n")
+        out.append('<div style={{ flex: 1 }}>\n')
         for it in col:
             out.append(f"* {it}")
         out.append("\n</div>")
     out.append("</div>\n")
     return "\n".join(out)
+
+
+def plural(n, word="image"):
+    return f"{n} {word}" if n == 1 else f"{n} {word}s"
 
 
 written = []
@@ -537,13 +551,22 @@ for n in nodes:
     kids = [c for c in n["children"] if included(c)]
     own = [p for p in img_pages if p["node"] is n]
     peers = [s for s in (parent["children"] if parent else tree) if included(s) and s is not n]
-    items = [f"**[{mdx_escape(c['title'])}]({c['url']})** — {c['rec_count']} images" for c in kids]
+    # Child clusters first (bolded, with their recursive count) so a visitor can
+    # tell at a glance which links go deeper and which end at a picture.
+    items = [f"**[{mdx_escape(c['title'])}]({c['url']})** — {plural(c['rec_count'])}" for c in kids]
     items += [f"[{mdx_escape(p['title'])}]({p['url']})" for p in own]
-    rel_links = []
+    # Cross-links out to the written pages this cluster mirrors: the node's
+    # site_page first, then each site_level_2 section it covers.
+    rel_links, seen_rel = [], set()
+    if n["site_page"]:
+        u, t = site_page_link(n["site_page"])
+        rel_links.append((t, u))
+        seen_rel.add(u)
     for d in n["site_level_2"]:
         lk = level2_link(d)
-        if lk:
+        if lk and lk[0] not in seen_rel:
             rel_links.append((lk[1], lk[0]))
+            seen_rel.add(lk[0])
     fm_desc = (f"Photo evidence cluster for {n['title']} in the Charlie Kirk investigation — "
                f"{n['rec_count']} images" + (f" across {len(kids)} sub-clusters" if kids else "") + ".")
     prior = read_existing(os.path.join(n["dir"], "overview.mdx"))
@@ -579,47 +602,59 @@ for n in nodes:
              "---", "",
              back_button(p_url, p_title),
              f"# {mdx_escape(n['title'])} — Photo Evidence", "",
-             f"Photo evidence filed under **{mdx_escape(n['title'])}** — {len(own)} images on this page"
-             + (f" and {len(kids)} sub-clusters ({n['rec_count']} images in total)" if kids else "") + ". "
+             f"Photo evidence filed under **{mdx_escape(n['title'])}** — {plural(len(own))} on this page"
+             + (f" and {plural(len(kids), 'sub-cluster')} ({plural(n['rec_count'])} in total)" if kids else "") + ". "
              "Scan the list and open any image for the full picture and its write-up.", "",
-             three_cols(items),
+             toc_cols(items),
              "## About This Cluster", "",
              about_body, "",
              "## Related Areas", ""]
     for t, u in rel_links:
-        lines.append(f"* [{mdx_escape(t)}]({u})")
+        lines.append(f"* Written record: [{mdx_escape(t)}]({u})")
     lines.append(f"* Up: [{mdx_escape(p_title)}]({p_url})")
-    for s in peers[:8]:
-        lines.append(f"* Peer cluster: [{mdx_escape(s['title'])}]({s['url']})")
+    if p_url != "/Photos/overview":     # on a Level 3, "up" already is Photos
+        lines.append("* All photo evidence: [Photos](/Photos/overview)")
+    if peers:
+        # Every peer, never a silent cap — inline so a wide peer set stays
+        # compact instead of becoming a wall of bullets.
+        lines += ["",
+                  "**Peer clusters:** "
+                  + " · ".join(f"[{mdx_escape(s['title'])}]({s['url']})" for s in peers)]
     lines.append("")
     emit(os.path.join(n["dir"], "overview.mdx"), "\n".join(lines))
 
 # ---------- landing page TOC ----------
 with open(LANDING, encoding="utf-8") as f:
     landing = f.read()
+# YAML order, not by size: the hierarchy file is the source of truth for the
+# order the clusters are presented in.
 l3 = [n for n in nodes if n["depth"] == 3]
-l3.sort(key=lambda n: -n["rec_count"])
+total_imgs = sum(n["rec_count"] for n in l3)
 toc = [TOC_START, "", "## Photo Evidence Clusters", "",
-       "Every image in the investigation's photo archive is filed into one of the concept "
-       "clusters below. Each cluster page lists its images; every image has its own page "
-       "with a full-size view and a write-up.", "",
-       "| Cluster | Images |", "|---|---|"]
-for n in l3:
-    toc.append(f"| [{mdx_escape(n['title'])}]({n['url']}) | {n['rec_count']} |")
-toc += ["", TOC_END]
+       f"The photo archive holds {plural(total_imgs)} filed into "
+       f"{plural(len(l3), 'concept cluster')}. Open a cluster to see its images and its "
+       "sub-areas; every image has its own page with a full-size view and a write-up.", "",
+       toc_cols([f"[{mdx_escape(n['title'])}]({n['url']}) — {plural(n['rec_count'])}"
+                 for n in l3]),
+       TOC_END]
 block = "\n".join(toc)
-if TOC_START in landing:
-    landing = re.sub(re.escape(TOC_START) + r".*?" + re.escape(TOC_END), block, landing, flags=re.S)
+# The table of contents leads the page: strip any earlier placement and re-insert
+# it directly under the H1, above the prose.
+landing = re.sub(re.escape(TOC_START) + r".*?" + re.escape(TOC_END) + r"\n*",
+                 "", landing, flags=re.S)
+m_h1 = re.search(r"^# .*$", landing, re.M)
+if m_h1:
+    cut = m_h1.end()
+    landing = landing[:cut] + "\n\n" + block + "\n" + landing[cut:].lstrip("\n")
 else:
-    anchor = "## Related Areas"
-    landing = landing.replace(anchor, block + "\n\n" + anchor, 1)
+    landing = landing.rstrip() + "\n\n" + block + "\n"
 with open(LANDING, "w", encoding="utf-8") as f:
     f.write(landing)
 written.append(LANDING)
 
 # ---------- CSS ----------
 css_block = f"""{CSS_START}
-/* Image-evidence pages under /Photos — layout per image_planning/p_images_level2.md:
+/* Image-evidence pages under /Photos — layout per image_planning/p_yaml_to_site.md:
    image pinned to the viewport bottom-right (right edge 5px from the browser's
    right edge, bounding-box bottom 10px above the browser bottom), true aspect
    ratio, max 70% of the main-area width. Text flows in a left column. */

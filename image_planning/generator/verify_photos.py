@@ -120,8 +120,26 @@ for p in pages:
         # cluster pages only — the Level 2 landing page has its own shape
         if "## About This Cluster" not in s:
             add(p, "cluster page missing About section")
-        if "gridTemplateColumns" not in s:
-            add(p, "cluster page missing 3-column TOC")
+        toc = s.find('display: "flex"')
+        if toc < 0:
+            add(p, "cluster page missing two-column TOC")
+        else:
+            # the table of contents leads the page: above the prose, and
+            # nothing but the back button, H1 and one intro line above it
+            if 0 <= s.find("## About This Cluster") < toc:
+                add(p, "TOC is below the prose (must lead the page)")
+            if s.count('style={{ flex: 1 }}', toc, s.find("## About This Cluster")) > 2:
+                add(p, "TOC has more than two columns")
+        if not re.search(r"^\* Up: \[", s, re.M):
+            add(p, "cluster page missing up-link")
+    else:
+        # the Level 2 landing page: TOC must sit directly under the H1
+        h1 = s.find("\n# ")
+        toc = s.find("{/* PHOTOS_TOC_START */}")
+        if toc < 0:
+            add(p, "landing page missing TOC markers")
+        elif re.search(r"^## ", s[h1:toc], re.M):
+            add(p, "landing TOC is below the prose (must lead the page)")
     for u in set(link_re.findall(s)):
         if u.startswith("/img/") or u.startswith("/pdf"):
             continue
