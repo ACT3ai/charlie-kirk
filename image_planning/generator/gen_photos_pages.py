@@ -679,33 +679,63 @@ written.append(LANDING)
 
 # ---------- CSS ----------
 css_block = f"""{CSS_START}
-/* Image-evidence pages under /Photos — layout per
-   image_planning/layout_guidelines.txt (that file is authoritative):
+/* Image-evidence pages under /Photos. This block is the single implementation
+   of image_planning/layout_guidelines.txt — that file is authoritative, this is
+   generated from it by image_planning/generator/gen_photos_pages.py. Do not
+   hand-edit; change the guidelines, change the generator, rerun.
 
-     1. The image lives IN THE PAGE, not pinned to the browser window. It is a
-        float in the document flow, so it scrolls up with the prose. Never
-        position: fixed and never position: sticky here.
+     1. The image lives IN THE PAGE, not pinned to the browser window. It is in
+        the document flow and scrolls up with the prose. Never position: fixed
+        and never position: sticky here.
      2. The image is OPAQUE and paints above everything else. Transparent PNGs
         get an opaque backing so page text can never show through them.
-     3. The prose WRAPS AROUND the image — line boxes shorten beside the float
-        and resume full width below it. Nothing flows under or over the image.
+     3. The prose WRAPS AROUND the image where there is a readable gutter, and
+        resumes full width below it. Nothing flows under or over the image.
+     4. Square corners. An image never loses its corners to a border radius.
 
-   The viewport still sets the BOUNDING BOX (so a tall image cannot occupy more
-   than one screen), but the box travels with the page. */
+   THE BOUNDING BOX. Width ceiling: up to 85% of the main area (the content
+   column, sidebar excluded). Height ceiling: one screen, less the navbar and
+   6rem of breathing room. The image scales inside the box preserving aspect
+   ratio and whichever ceiling it meets first governs; it is never upscaled
+   past its intrinsic size. A wide image hits the width ceiling and SHOULD take
+   the full 85%. A tall image hits the height ceiling and comes out narrower
+   than 85% on its own — that is correct, and it is not padded out.
+
+   Sizing by the viewport is not anchoring to the viewport: the viewport says
+   how big the box may be, then the box travels with the page.
+
+   TWO LAYOUTS, chosen per image by the generator from its intrinsic aspect
+   ratio (see layout_class()):
+     .ck-evidence-wide  full-width block up to 85%, prose resumes below it —
+                        used when a float would leave a gutter under ~18rem.
+     .ck-evidence-tall  floats right, prose wraps beside it and below it. */
 .ck-evidence-image-wrap {{
-  float: right;
-  clear: right;
   display: block;
   position: relative;
   z-index: 3;
-  margin: 0 0 1.25rem 1.5rem;
-  max-width: min(55%, calc((100vw - var(--doc-sidebar-width, 300px)) * 0.55));
+  width: fit-content;
   background: var(--ifm-background-surface-color, #fff);
-  border-radius: 4px;
+  border-radius: 0;
   box-shadow: 0 2px 14px rgba(0, 0, 0, 0.35);
   overflow: hidden;
   line-height: 0;
   isolation: isolate;
+}}
+/* Wide / landscape: width-limited, so it takes the full 85% of the main area
+   and the prose runs full width underneath rather than in a narrow gutter. */
+.ck-evidence-image-wrap.ck-evidence-wide {{
+  float: none;
+  clear: both;
+  margin: 0 auto 1.5rem auto;
+  max-width: 85%;
+}}
+/* Tall / portrait / square: height-limited, so it comes out narrow on its own
+   and leaves a readable column beside it. Float it and let the text wrap. */
+.ck-evidence-image-wrap.ck-evidence-tall {{
+  float: right;
+  clear: right;
+  margin: 0 0 1.25rem 1.5rem;
+  max-width: 85%;
 }}
 .ck-evidence-image {{
   display: block;
@@ -716,23 +746,27 @@ css_block = f"""{CSS_START}
   object-fit: contain;
   background: var(--ifm-background-surface-color, #fff);
   opacity: 1;
-  border-radius: 4px;
+  border-radius: 0;
 }}
-/* The prose column is never width-capped: the float is what reserves the
-   space, and the text wraps around it. !important overrides the inline
-   maxWidth that older generated pages still carry. */
+/* The prose column is never width-capped: the image reserves its own space and
+   the text flows around what is left. !important overrides the inline maxWidth
+   that older generated pages still carry from the superseded pinned layout. */
 .ck-evidence-text {{
   position: static;
   max-width: none !important;
 }}
-/* A heading must not sit in the narrow gutter beside a tall image — give it a
-   full line by clearing only when it would otherwise be squeezed. */
+/* A heading must not be squeezed into the gutter beside a floated image. */
 .ck-evidence-text > h2 {{
   overflow-wrap: break-word;
 }}
+/* Below the mobile breakpoint every image is a full-width block: a side-by-side
+   float has no room to work at this width. */
 @media (max-width: 996px) {{
-  .ck-evidence-image-wrap {{
+  .ck-evidence-image-wrap,
+  .ck-evidence-image-wrap.ck-evidence-wide,
+  .ck-evidence-image-wrap.ck-evidence-tall {{
     float: none;
+    clear: both;
     max-width: 100%;
     margin: 1rem 0;
   }}
