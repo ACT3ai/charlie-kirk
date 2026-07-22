@@ -291,6 +291,11 @@ STAGE 2 — PARTITION THE WORK
 * A node subtree never splits across two agents — every image page and its
   cluster pages are written by one agent, so peer links within a subtree are
   consistent.
+* Give every agent its OWN scratch subdirectory and tell it never to write to
+  the shared scratchpad root. Agents independently invent the same helper
+  filenames (apply.py, dump.py, out.json); in a 12-way parallel run those
+  collide and one agent's file silently replaces another's mid-run. This has
+  actually happened — isolate the directories up front.
 * Cross-partition links (peer level_3s, links into other site sections) are
   resolvable from the YAML index and {PAGES_CSV}, which every agent receives.
 

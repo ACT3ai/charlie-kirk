@@ -13,7 +13,7 @@ Idempotent: pages are rewritten in full; static copies are skipped when the
 target already exists. Run with --csv-only to refresh pages.csv line counts
 after agents have enriched page bodies.
 """
-import csv, os, re, shutil, subprocess, sys, unicodedata
+import csv, glob, os, re, shutil, subprocess, sys, unicodedata
 import yaml
 
 ROOT = os.path.expanduser("~/BGit/Bryan_git/charlie-kirk")
@@ -127,6 +127,20 @@ def norm_key(k):
     return k
 
 
+# ---------- publish-time exclusion gate ----------
+# Some entries in the hierarchy must never be published (private personal
+# material swept into the mirror by accident). The YAML is read-only to this
+# generator, so the gate lives here and is re-applied on every run.
+EXCLUDE_FILE = os.path.join(THIS, "exclude_images.txt")
+EXCLUDED = set()
+if os.path.exists(EXCLUDE_FILE):
+    with open(EXCLUDE_FILE, encoding="utf-8") as f:
+        for line in f:
+            line = line.split("#", 1)[0].strip()
+            if re.fullmatch(r"[0-9a-f]{64}", line):
+                EXCLUDED.add(line)
+
+
 def walk(raw, depth, parents):
     node = {
         "key": norm_key(raw.get("_key", "")),
@@ -141,6 +155,8 @@ def walk(raw, depth, parents):
     }
     for im in raw.get("images") or []:
         i = im.get("image", im)
+        if (i.get("sha256") or "") in EXCLUDED:
+            continue
         node["images"].append(i)
     child_key = {3: "level_4", 4: "level_5", 5: None}[depth]
     if child_key:
@@ -226,6 +242,54 @@ for n in nodes:
                     sha_dims[sha] = img.size
             except Exception:
                 pass
+
+# ---------- classify IPFS-only entries as image or video ----------
+# Some hierarchy entries have no local file, only an ipfs_url, and a few of
+# those CIDs are .mp4 videos. The YAML does not record media type, so learn it
+# from how the CID is already embedded on the site's own (non-generated) pages:
+# a CID inside <video>/<source> is a video, inside <img>/![]() an image.
+def classify_ipfs_cids():
+    blob = []
+    for dirpath, _d, files in os.walk(DOCS):
+        if dirpath.startswith(PHOTOS):
+            continue
+        for fn in files:
+            if fn.endswith((".mdx", ".md")):
+                try:
+                    with open(os.path.join(dirpath, fn), encoding="utf-8") as f:
+                        blob.append(f.read())
+                except OSError:
+                    pass
+    blob = "\n".join(blob).lower()
+    kind = {}
+    for n in nodes:
+        for i in n["images"]:
+            u = i.get("ipfs_url") or ""
+            m = re.search(r"/ipfs/(\w+)", u)
+            if not m or m.group(1) in kind:
+                continue
+            cid = m.group(1)
+            for occ in re.finditer(re.escape(cid.lower()), blob):
+                ctx = blob[max(0, occ.start() - 300): occ.start() + 80]
+                best = max([(ctx.rfind("<video"), "video"),
+                            (ctx.rfind("<source"), "video"),
+                            (ctx.rfind("<img"), "image"),
+                            (ctx.rfind("!["), "image")])
+                if best[0] >= 0:
+                    kind[cid] = best[1]
+                    break
+    return kind
+
+
+IPFS_KIND = classify_ipfs_cids()
+
+
+def is_video_src(src):
+    if src.lower().endswith((".mp4", ".webm", ".mov")):
+        return True
+    m = re.search(r"/ipfs/(\w+)", src or "")
+    return bool(m) and IPFS_KIND.get(m.group(1)) == "video"
+
 
 # ---------- mint image page identities ----------
 HASHY = re.compile(r"^(?=.*\d)[A-Za-z0-9\-]{8,}$")
@@ -358,9 +422,27 @@ def emit(path, text):
 
 
 def text_width(sha):
+    """Width of the prose column, chosen so it does not run under the image.
+
+    The image is fixed to the viewport's bottom-right and scales inside the
+    bounding box (<=70% of the main area wide, bottom 10px up from the
+    viewport bottom). Reference viewport: 1512x1000 with a 300px sidebar.
+    A short image only occupies a bottom strip, so text above it can be far
+    wider than the image-width rule alone would suggest.
+    """
     w, h = sha_dims.get(sha, (4, 3))
-    ar = w / h if h else 1.33
-    return "30%" if ar >= 1.3 else ("42%" if ar >= 0.75 else "55%")
+    if not w or not h:
+        return "42%"
+    main = 1512 - 300
+    box_w, box_h = main * 0.70, 1000 - 60 - 10
+    scale = min(box_w / w, box_h / h, 1)
+    rw, rh = w * scale, h * scale
+    # Image occupies only a bottom band -> prose can use most of the width.
+    if rh <= box_h * 0.45:
+        return "65%"
+    # Otherwise leave a gutter beside the image's actual rendered width.
+    free = max(0.0, (main - rw - 48) / main)
+    return f"{max(28, min(65, int(free * 100)))}%"
 
 
 # ---------- emit image pages ----------
@@ -392,12 +474,20 @@ for pg in img_pages:
              f"sidebar_label: {yq(label)}",
              f"description: {yq(fm_desc)}",
              "hide_table_of_contents: true",
-             f"ck_image_sha256: {sha}",
+             (f"ck_image_sha256: {sha}" if sha
+              else f"ck_image_cid: {re.search(r'/ipfs/(\\w+)', ipfs).group(1) if re.search(r'/ipfs/(\\w+)', ipfs) else 'none'}"),
              f"ck_node_key: {n['key']}",
              "---", "",
              back_button(n["url"], n["title"]),
              f"# {mdx_escape(pg['title'])}", ""]
-    if src:
+    if src and is_video_src(src):
+        lines += [f"<div className=\"ck-evidence-image-wrap\">",
+                  f"  <video className=\"ck-evidence-image\" controls preload=\"metadata\">",
+                  f"    <source src=\"{src}\" type=\"video/mp4\" />",
+                  f"    <a href=\"{src}\">Open the video</a>",
+                  "  </video>",
+                  "</div>", ""]
+    elif src:
         lines += [f"<a className=\"ck-evidence-image-wrap\" href=\"{src}\" "
                   f"target=\"_blank\" rel=\"noopener noreferrer\">",
                   f"  <img className=\"ck-evidence-image\" src=\"{src}\" alt=\"{alt_attr}\" />",
@@ -625,6 +715,16 @@ with open(PAGES_CSV, "w", newline="") as f:
     w.writeheader()
     w.writerows(merged)
 
+# ---------- purge any already-published copy of an excluded image ----------
+# Excluding an image after it was published is the common case (the problem is
+# usually noticed once the page exists), so actively remove the static file as
+# well as the page. The page itself is caught by the orphan sweep below.
+purged_static = []
+for sha in EXCLUDED:
+    for f in glob.glob(os.path.join(STATIC, sha + ".*")):
+        os.remove(f)
+        purged_static.append(os.path.basename(f))
+
 # ---------- orphan sweep: generated files no longer expected ----------
 expected = {os.path.join(n["dir"], "overview.mdx") for n in nodes}
 expected |= {pg["file"] for pg in img_pages}
@@ -654,12 +754,36 @@ if bad:
     sys.exit(1)
 
 # ---------- link validation ----------
-gen_urls = {n["url"] for n in nodes} | {p["url"] for p in img_pages} | known_urls | {"/Photos", "/Photos/overview"}
-# pages.csv records section overviews at the bare /X path, but the file
-# site/docs/X/overview.mdx really serves at /X/overview — accept both forms.
-gen_urls |= {u.rstrip("/") + "/overview" for u in list(known_urls)}
-gen_urls |= {os.path.splitext(re.sub(r"^site/docs", "", r["file_path"]))[0]
-             for r in csv_rows}
+# Build the route table the way Docusaurus actually resolves routes: every
+# doc file's path, plus `slug:` overrides, plus `id:` renames of the last
+# segment, plus the bare form of a /overview page. Anything less produces
+# false alarms (pages.csv records section overviews at their bare path).
+def _site_routes():
+    routes = set()
+    for dirpath, _d, files in os.walk(DOCS):
+        for fn in files:
+            if not fn.endswith((".md", ".mdx")):
+                continue
+            full = os.path.join(dirpath, fn)
+            base = "/" + os.path.splitext(os.path.relpath(full, DOCS))[0]
+            routes.add(base)
+            if base.endswith("/overview"):
+                routes.add(base[: -len("/overview")])
+            with open(full, encoding="utf-8", errors="replace") as fh:
+                head = fh.read(1200)
+            m = re.search(r"^slug:\s*(\S+)\s*$", head, re.M)
+            if m:
+                routes.add(m.group(1).strip().strip('"').rstrip("/"))
+            else:
+                mid = re.search(r"^id:\s*(\S+)\s*$", head, re.M)
+                if mid:
+                    routes.add(os.path.dirname(base) + "/"
+                               + mid.group(1).strip().strip('"'))
+    routes.add("/")
+    return routes
+
+
+gen_urls = _site_routes()
 missing = set()
 link_re = re.compile(r"\]\((/[^)#\s]+)")
 for p in written:
@@ -667,7 +791,9 @@ for p in written:
         continue
     with open(p, encoding="utf-8") as f:
         for u in link_re.findall(f.read()):
-            if u not in gen_urls and not u.startswith("/img/"):
+            if u.startswith("/img/") or u.startswith("/pdf"):
+                continue
+            if u.rstrip("/") not in gen_urls:
                 missing.add(u)
 
 print("============================")
@@ -676,6 +802,7 @@ print(f"Cluster pages: {len(nodes)}  Image pages: {len(img_pages)}")
 print(f"Static: {copied} copied, {downscaled} downscaled, {skipped} already present")
 print(f"pages.csv: {replaced} rows replaced, {len(merged) - len(csv_rows)} added, total {len(merged)}")
 print(f"Orphan generated files removed: {len(orphans)}")
+print(f"Excluded images: {len(EXCLUDED)} (static copies purged: {len(purged_static)})")
 print(f"Landing TOC rows: {len(l3)}")
 print(f"Invisible-unicode scan: clean ({len(written)} files)")
 print(f"Unresolvable internal links: {len(missing)}", sorted(missing)[:10])

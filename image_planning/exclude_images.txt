@@ -1,0 +1,30 @@
+# exclude_images.txt — sha256 of images that must NEVER be published.
+#
+# Read by generator/gen_photos_pages.py. An excluded sha256 gets no page and no
+# copy under site/internals/static/img/evidence/; if either already exists it is
+# deleted on the next run. Excluding here does NOT remove the entry from
+# hierarchy_images.yaml (that file is read-only to the page generator) — it is
+# the publish-time gate, so the exclusion survives every regeneration.
+#
+# Format: one sha256 per line. Text after '#' is a comment.
+#
+# ---------------------------------------------------------------------------
+# PRIVATE / PERSONAL MATERIAL — swept into the mirror by accident, has nothing
+# to do with the investigation. Publishing these exposed account identifiers,
+# balances, card details, booking codes, email addresses and the names and
+# faces of private individuals. The page prose omitted those details, but the
+# IMAGE ITSELF was served full-size at a public URL, so prose care was not
+# sufficient. Pulled 2026-07-22.
+# ---------------------------------------------------------------------------
+
+cdfbfa9a7187adda0d85097b309530abcd57ddf57990c0bb007ce271236caa4e  # university student billing portal, completed transaction
+25ce52feb9989e3841cba718aa1e203ab168c4ceea003afd37aa248f0f32550d  # same billing portal, payment-method step
+fed2df8998e04a356aea056e25e2e313b71a4cd2f3b909b9d665143a1d9c2002  # airline booking confirmation with confirmation codes
+71544028956d7f3791c7495d16bf8ffbffae7c7e66ed938eb19e6f70f7bcd0cd  # video-call participant list, 15 named people
+92e6f533decd83c5d53417a7c5eb6aa083d864f668c3cfbf20da38bc1e6f1b8c  # private investment platform, payment history
+abfc74e598dbea40fbe29c0278397f314da8fa939cf8e2a7bbe82c4bcf8c9504  # insurance / claims billing table
+70ba758feee2825bb1b35724571dc040cb062ea332e43e3f14e60c57cded495d  # health savings account dashboard, balance + card details
+069910f01049dec25677f742fb5ead2176ed6cd6c5725d7ef0b58aa1d6519425  # internal video-production app, backend screen
+3e32ecdd7947b345c5aa86af73eb9f288a755f02e787c93f85cf38f1e0038346  # internal production task spreadsheet
+18a68283285032469c1dc29b4770109ebc646b6e8daf5a4564e5646dd774ef94  # same production task spreadsheet, second capture
+5579888e7f346d03b97d5720991e699a0580dfc493b2fdf96f89aaa6288c72c4  # 20-tile video conference grid, participants' faces
