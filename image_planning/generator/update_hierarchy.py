@@ -6,7 +6,8 @@
 #   * Stage 3 (pin refresh)  — record real ipfs_pinned (bool) from the local node's
 #     pinset; leave cid untouched (already computed).
 #   * Stage 8 (on_pages)     — repo-wide reverse index: every OTHER page in the repo
-#     that shows each image, resolved by evidence-filename(sha256) and IPFS CID.
+#     that shows each image, resolved by evidence-filename(sha256), IPFS CID, and
+#     sha256 of a plain-path local static file (spec resolution steps 1-3).
 #     Recovers the previously CORRUPTED on_pages (dicts stringified by the old
 #     emitter) and merges. on_pages present on EVERY entry ([] when empty).
 #   * Stage 9 (sidecars)     — ai_description_file / ocr_file / transcription_file
@@ -216,10 +217,54 @@ def in_scope(path):
 RE_EVID = re.compile(r'/img/evidence/([0-9a-f]{64})')
 RE_IPFS = re.compile(r'(?:ipfs\.io/ipfs/|ipfs://|dweb\.link/ipfs/)([A-Za-z0-9]{40,})'
                      r'|([A-Za-z0-9]{46,})\.ipfs\.dweb\.link')
+# Local-image embeds that are NOT the /img/evidence/<sha> form: a page may show a
+# corpus image via an ordinary static path (<img src="/img/All_Laws.jpeg">, a
+# markdown ![](...), or a <video>/<iframe> src). Spec Stage 8 resolution step 2:
+# sha256 the local static file on disk and match it to an entry. Without this the
+# sweep can only re-discover evidence-hash and CID embeds, so a newly-added plain
+# -path embed of a corpus image would silently never reach on_pages.
+RE_IMG_SRC = re.compile(r'<img\b[^>]*?\bsrc\s*=\s*["\']([^"\']+)["\']', re.I)
+RE_MD_IMG  = re.compile(r'!\[[^\]]*\]\(([^)\s]+)')
+RE_MEDIA_SRC = re.compile(r'<(?:iframe|video|source)\b[^>]*?\bsrc\s*=\s*["\']([^"\']+)["\']', re.I)
+IMG_EXT = ('.jpg', '.jpeg', '.png', '.webp', '.gif')
+STATIC_DIRS = [os.path.join(ROOT, 'site/internals/static'),
+               os.path.join(ROOT, 'site/static')]
+import hashlib
+_static_sha_cache = {}
+def sha_of_local_ref(url, page_full):
+    """Resolve a local (non-http, non-ipfs) image reference to the sha256 of the
+    file it points at. Absolute '/x' paths resolve under the static roots;
+    relative paths resolve against the page's own directory (co-located images).
+    Returns the lowercased sha256 hex or None."""
+    if not url or url.startswith(('http://', 'https://', 'ipfs://', '//')):
+        return None
+    if 'ipfs' in url:
+        return None
+    clean = url.split('?', 1)[0].split('#', 1)[0]
+    if not clean.lower().endswith(IMG_EXT):
+        return None
+    if '/img/evidence/' in clean:   # handled by RE_EVID already
+        return None
+    candidates = []
+    if clean.startswith('/'):
+        for base in STATIC_DIRS:
+            candidates.append(os.path.join(base, clean.lstrip('/')))
+    else:
+        candidates.append(os.path.normpath(os.path.join(os.path.dirname(page_full), clean)))
+    for cand in candidates:
+        if os.path.isfile(cand):
+            if cand not in _static_sha_cache:
+                try:
+                    _static_sha_cache[cand] = hashlib.sha256(
+                        open(cand, 'rb').read()).hexdigest()
+                except OSError:
+                    _static_sha_cache[cand] = None
+            return _static_sha_cache[cand]
+    return None
 
 files_read = 0
 refs_found = 0
-resolved_evid = resolved_cid = 0
+resolved_evid = resolved_cid = resolved_local = 0
 unresolved = []
 sweep_pages = {}   # sha256 -> set(tilde page path)
 
@@ -249,7 +294,15 @@ for dirpath, dirnames, filenames in os.walk(ROOT):
                 shas |= got; resolved_cid += 1
             else:
                 unresolved.append((rel, cid))
+        # local static-file embeds (plain-path <img>/markdown/<video> src) — only
+        # worth hashing on pages we would actually record, and only when the ref
+        # resolves to a file whose sha256 is a known corpus image.
         if record:
+            for rx in (RE_IMG_SRC, RE_MD_IMG, RE_MEDIA_SRC):
+                for m in rx.finditer(txt):
+                    lsha = sha_of_local_ref(m.group(1), full)
+                    if lsha and lsha in sha_to_inners and lsha not in shas:
+                        shas.add(lsha); refs_found += 1; resolved_local += 1
             for sha in shas:
                 if sha in sha_to_inners:
                     sweep_pages.setdefault(sha, set()).add(tilde_page)
@@ -271,7 +324,7 @@ def _set_op(inner, key, chain, node):
 each_media(_set_op)
 print('='*28); print('STAGE 8 (on_pages)')
 print(f'Files read: {files_read}   image references found: {refs_found}')
-print(f'Resolved by evidence-filename(sha256): {resolved_evid}   by CID: {resolved_cid}')
+print(f'Resolved by evidence-filename(sha256): {resolved_evid}   by CID: {resolved_cid}   by local-file(sha256): {resolved_local}')
 print(f'Unresolved CID references: {len(unresolved)}')
 print(f'Prior/corrupted on_pages recovered: {recovered_total}')
 print(f'Entries with on_pages non-empty: {op_nonempty}   total page bindings: {op_bindings}')
