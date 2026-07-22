@@ -30,7 +30,7 @@ The Congress finds the following:
 (a) **"Designated Trusted Investigators"** means the following individuals:
    1. [Candace Owens](/People/candace-owens)
    2. Dave Smith
-   3. Joe Kent
+   3. [Joe Kent](/US_Intelligence/joe-kent)
    4. Tulsi Gabbard
    5. [Tucker Carlson](/People/tucker-carlson)
    6. Steve Bannon

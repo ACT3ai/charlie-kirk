@@ -16,6 +16,8 @@ Force all U.S. Intelligence Services to release all information that could point
 ## Key Distinction from Law 1
 Law 1 covers law enforcement (DOJ/FBI). This law covers intelligence services specifically. The intelligence community operates under different legal frameworks (classification, sources & methods) which require separate legislation to compel disclosure.
 
+The need for this law is illustrated by former NCTC director [Joe Kent](/US_Intelligence/joe-kent), who has stated on the record that his center's parallel hunt for foreign ties in the Kirk case was ordered to stop before those leads were exhausted — findings this law would compel the intelligence community to disclose.
+
 ---
 
 [Back to README](../../README.md) | [Law Text](Law_2_US_Intel.md) | [Legal Notes](Notes_2_US_Intel.md) | [Output Analysis](Output_Analysis.md)

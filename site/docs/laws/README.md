@@ -1,6 +1,6 @@
 # Charlie Kirk Assassination — Forced Disclosure
 
-This is about the [Charlie Kirk](/People/charlie-kirk) assassination. Citizen investigators find that intelligence-service-level involvement is what investigators keep coming back to.
+This is about the [Charlie Kirk](/People/charlie-kirk) assassination. Citizen investigators find that intelligence-service-level involvement is what investigators keep coming back to. That concern reaches inside government as well: former NCTC director [Joe Kent](/US_Intelligence/joe-kent) has said on the record that his center's parallel review of potential foreign ties to the case was ordered to stop before those leads were exhausted.
 
 Our main push is to get a set of laws passed to force file disclosure in the Charlie Kirk assassination:
 

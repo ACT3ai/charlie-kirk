@@ -15,6 +15,8 @@ Require the FBI, all law enforcement agencies, and U.S. intelligence services to
 ## Key Distinction from Laws 1 and 2
 Laws 1 and 2 force disclosure of existing records. This law forces agencies to actually DO the investigation -- to actively pursue leads, interview witnesses, analyze evidence, and produce findings.
 
+Former NCTC director [Joe Kent](/US_Intelligence/joe-kent) has said on the record that his center's parallel investigation of potential foreign ties was ordered to stop once a suspect was in custody -- exactly the kind of prematurely halted inquiry this law would make illegal to shut down.
+
 ---
 
 [Back to README](../../README.md) | [Law Text](Law_3_Require_to_Investigate.md) | [Legal Notes](Notes_3_Require_to_Investigate.md) | [Output Analysis](Output_Analysis.md)

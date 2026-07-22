@@ -49,7 +49,7 @@
 **Directory:** `4_Trusted_Investigations/`
 **Primary File:** `Law_4_Trusted_Investigations.md`
 
-**Scope:** Establishes independent investigation teams led by Designated Trusted Investigators: **[Candace Owens](/People/candace-owens)**, **Dave Smith**, **Joe Kent**, **Tulsi Gabbard**, **[Tucker Carlson](/People/tucker-carlson)**, **Steve Bannon**, **Marjorie Taylor Greene**, **[Jon Bray](/People/jon-bray)**, **[Ian Carroll](/People/ian-carroll)**, **Thomas Massie**, **Matt Gaetz**, **Glenn Greenwald**, **Collin Campbell**, **Baron Coleman**, **Ryan Matta**, **Bryan Starbuck**, and **Megyn Kelly**. Each receives one FBI team and one Intelligence Community team (six teams total). Full access to all records disclosed under Laws 1 and 2, plus independent investigation authority. Minimum 24-month operation. No geographic limitation.
+**Scope:** Establishes independent investigation teams led by Designated Trusted Investigators: **[Candace Owens](/People/candace-owens)**, **Dave Smith**, **[Joe Kent](/US_Intelligence/joe-kent)**, **Tulsi Gabbard**, **[Tucker Carlson](/People/tucker-carlson)**, **Steve Bannon**, **Marjorie Taylor Greene**, **[Jon Bray](/People/jon-bray)**, **[Ian Carroll](/People/ian-carroll)**, **Thomas Massie**, **Matt Gaetz**, **Glenn Greenwald**, **Collin Campbell**, **Baron Coleman**, **Ryan Matta**, **Bryan Starbuck**, and **Megyn Kelly**. Each receives one FBI team and one Intelligence Community team (six teams total). Full access to all records disclosed under Laws 1 and 2, plus independent investigation authority. Minimum 24-month operation. No geographic limitation.
 
 
 ## Citizen Investigator Claims on X (Forced Disclosure Discourse)

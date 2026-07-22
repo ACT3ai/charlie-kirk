@@ -266,7 +266,7 @@ Laws 3 and 4 now have: (1) mandatory polygraph requirements for all team members
 
 ### 7. No Provision Addressing the NCTC Investigation That Was Shut Down
 
-**Problem:** Joe Kent (NCTC Director) was investigating whether foreign powers were behind the assassination. Kashyap Patel "snuffed out" this investigation. The investigation file documents this was because "Trump administration officials were worried that Kent's probe into foreign interference could provide ammunition to Robinson's defense lawyers." This is the smoking gun of active cover-up. Yet no Schedule A item specifically requires disclosure of all NCTC investigation materials before they were shut down, the order to shut them down, and who authorized it.
+**Problem:** [Joe Kent](/US_Intelligence/joe-kent) (NCTC Director) was investigating whether foreign powers were behind the assassination. Kashyap Patel "snuffed out" this investigation. The investigation file documents this was because "Trump administration officials were worried that Kent's probe into foreign interference could provide ammunition to Robinson's defense lawyers." This is the smoking gun of active cover-up. Yet no Schedule A item specifically requires disclosure of all NCTC investigation materials before they were shut down, the order to shut them down, and who authorized it.
 
 **Solution:** Add a Schedule A item: "All NCTC investigation files, analytical products, leads, and evidence gathered before the investigation was terminated. All communications between NCTC, ODNI, FBI, and the White House regarding the NCTC investigation. The specific order or directive that terminated the NCTC investigation, who issued it, and the stated and actual reasons."
 

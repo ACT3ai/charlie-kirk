@@ -422,7 +422,7 @@ Provisions (b) and (d) are constitutionally vulnerable:
 
 ### 3. Government Employee Resignation Requirement (Section 1(a-1)) Creates Implementation Risk
 
-**Problem:** Section 1(a-1) requires Joe Kent (NCTC Director) and Tulsi Gabbard (DNI) to resign or take unpaid leave before serving as Designated Trusted Investigators. This makes sense constitutionally (Appointments Clause, Incompatibility Clause), but creates a practical problem: if these individuals resign their government positions, they lose their existing security clearances and institutional access. The interim clearances provided by Law 4 may not be processed before their existing clearances lapse, creating a gap.
+**Problem:** Section 1(a-1) requires [Joe Kent](/US_Intelligence/joe-kent) (NCTC Director) and Tulsi Gabbard (DNI) to resign or take unpaid leave before serving as Designated Trusted Investigators. This makes sense constitutionally (Appointments Clause, Incompatibility Clause), but creates a practical problem: if these individuals resign their government positions, they lose their existing security clearances and institutional access. The interim clearances provided by Law 4 may not be processed before their existing clearances lapse, creating a gap.
 
 **Solution:** Add: "Government employees who resign or take leave under this subsection shall retain all existing security clearances and system access until the interim clearances under Section 2(c) are processed, with no gap in access."
 

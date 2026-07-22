@@ -380,6 +380,8 @@ The investigation shows that an intelligence service is very likely involved wit
   or US military was involved. Below are solid leads that will lead to discovery that will bring hard
   evidence of that.
 
+Former NCTC director [Joe Kent](/US_Intelligence/joe-kent) has stated on the record that his center's parallel review of potential foreign ties to the assassination was ordered to stop before those leads were exhausted — the discovery items below seek the very materials that inquiry was examining.
+
 
 #1: Any information the FBI has on the planes below. Location. Anyone who flew on them within 2 weeks of the assassination before or on that day.
   * Include every plane below.

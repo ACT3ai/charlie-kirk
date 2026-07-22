@@ -153,7 +153,7 @@ The core assumption: **The U.S. government is actively covering for Israel in th
 
 ### Worry L2-5: ODNI Coordinates Suppression Across All Agencies
 
-**WORRY:** The DNI is supposed to coordinate disclosure. But the DNI can also coordinate suppression -- ensuring all 18 intelligence agencies present a unified front of non-disclosure. Joe Kent (NCC Director) already tried to investigate foreign involvement and was shut down by Kash Patel. If DNI coordinates a government-wide "no responsive records" position, it becomes nearly impossible to crack.
+**WORRY:** The DNI is supposed to coordinate disclosure. But the DNI can also coordinate suppression -- ensuring all 18 intelligence agencies present a unified front of non-disclosure. [Joe Kent](/US_Intelligence/joe-kent) (NCC Director) already tried to investigate foreign involvement and was shut down by Kash Patel. If DNI coordinates a government-wide "no responsive records" position, it becomes nearly impossible to crack.
 
 **FIX:** (1) Each agency must make independent compliance decisions -- ODNI coordination is for logistics, not for determining what to withhold. (2) Prohibit ODNI from issuing guidance that limits what individual agencies disclose. (3) Require each agency head to certify independently under penalty of perjury. (4) Whistleblower protections for agency employees who report that ODNI pressured their agency to withhold records.
 

@@ -54,7 +54,7 @@ critical investigative information from the public.
 
 ## Public demand context (citizen investigators)
 
-X and court-watchers repeatedly cite **withheld FBI/ATF raw files**, sealed digital forensics, and incomplete camera dumps as reasons a **forced-disclosure statute** modeled on Epstein/JFK-style transparency laws is necessary. That political demand is **narrative context** for Law 1; it does not amend the statutory text above.
+X and court-watchers repeatedly cite **withheld FBI/ATF raw files**, sealed digital forensics, and incomplete camera dumps as reasons a **forced-disclosure statute** modeled on Epstein/JFK-style transparency laws is necessary. That political demand is **narrative context** for Law 1; it does not amend the statutory text above. Former NCTC director [Joe Kent](/US_Intelligence/joe-kent) has said on the record that his center's parallel review of foreign-nexus leads was ordered to stop once Tyler Robinson was in custody — exactly the kind of closed-off investigative file this disclosure mandate is designed to force into the open.
 
 ## Related Areas
 
