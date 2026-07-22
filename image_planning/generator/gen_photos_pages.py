@@ -391,6 +391,65 @@ for n in nodes:
             "url": "/" + n["rel_dir"] + "/" + key,
         }
         img_pages.append(pg)
+        prev = pg  # (prev/next threaded below, after the bypass set is known)
+
+# ---------- single-image bypass (navigation only) ----------
+# p_yaml_to_site.md: a cluster node whose whole subtree resolves to exactly ONE
+# image page is BYPASSED in navigation. Parents/peers/landing link straight to
+# that image page instead of the cluster page; the image page's back link points
+# at the nearest NON-bypassed ancestor; prev/next put the image in that
+# ancestor's sequence rather than alone. The bypassed cluster page is still
+# generated, still gets its pages.csv row, and is never an orphan — only the
+# links a visitor follows change. rec_count == 1 is exactly "subtree resolves to
+# one image" (any included child would push the count to >= 2).
+from collections import defaultdict
+
+imgs_under = defaultdict(list)          # node id -> image pages anywhere below it
+for pg in img_pages:
+    imgs_under[id(pg["node"])].append(pg)
+    for a in pg["node"]["parents"]:
+        imgs_under[id(a)].append(pg)
+
+
+def is_bypassed(n):
+    return included(n) and n["rec_count"] == 1
+
+
+def resolved_img(n):
+    """The one image page a bypassed node resolves to."""
+    return imgs_under[id(n)][0]
+
+
+def nearest_visible(n):
+    """The node a visitor is actually sent to for n: n itself when it is a real
+    (non-bypassed) cluster, else its nearest non-bypassed ancestor, else None
+    (the Photos landing page)."""
+    if not is_bypassed(n):
+        return n
+    for a in reversed(n["parents"]):
+        if included(a) and not is_bypassed(a):
+            return a
+    return None
+
+
+# Home node of every image page: the visible cluster whose sequence it sits in.
+for pg in img_pages:
+    pg["home"] = nearest_visible(pg["node"])
+
+# Rebuild prev/next so each image sits in its home cluster's visitor sequence:
+# the images reachable directly from that cluster's TOC — its bypassed children
+# (in child order) first, then its own images — chained in that order.
+for pg in img_pages:
+    pg.pop("prev", None)
+    pg.pop("next", None)
+for V in nodes:
+    if is_bypassed(V):
+        continue
+    seq = [resolved_img(c) for c in V["children"]
+           if included(c) and is_bypassed(c)]
+    seq += [pg for pg in img_pages if pg["node"] is V]
+    prev = None
+    for pg in seq:
         if prev:
             prev["next"] = pg
             pg["prev"] = prev
@@ -574,7 +633,8 @@ for pg in img_pages:
               else f"ck_image_cid: {re.search(r'/ipfs/(\\w+)', ipfs).group(1) if re.search(r'/ipfs/(\\w+)', ipfs) else 'none'}"),
              f"ck_node_key: {n['key']}",
              "---", "",
-             back_button(n["url"], n["title"]),
+             back_button(pg["home"]["url"] if pg["home"] else "/Photos/overview",
+                         pg["home"]["title"] if pg["home"] else "Photos"),
              f"# {mdx_escape(pg['title'])}", ""]
     lay = layout_class(sha)
     if src and is_video_src(src):
@@ -613,8 +673,9 @@ for pg in img_pages:
         lk = level2_link(d)
         if lk:
             rel.append(f"[{mdx_escape(lk[1])}]({lk[0]})")
+    home = pg["home"] or n
     lines += ["## Related Areas", "",
-              f"* Cluster: [{mdx_escape(n['title'])}]({n['url']})"]
+              f"* Cluster: [{mdx_escape(home['title'])}]({home['url']})"]
     for r in rel:
         lines.append(f"* Section: {r}")
     lines.append("* All photo evidence: [Photos](/Photos/overview)")
@@ -638,8 +699,16 @@ for n in nodes:
     own = [p for p in img_pages if p["node"] is n]
     peers = [s for s in (parent["children"] if parent else tree) if included(s) and s is not n]
     # Child clusters first (bolded, with their recursive count) so a visitor can
-    # tell at a glance which links go deeper and which end at a picture.
-    items = [f"**[{mdx_escape(c['title'])}]({c['url']})** — {plural(c['rec_count'])}" for c in kids]
+    # tell at a glance which links go deeper and which end at a picture. A
+    # single-image child is BYPASSED: link straight to its image page instead of
+    # to a cluster page whose entire TOC is one link.
+    items = []
+    for c in kids:
+        if is_bypassed(c):
+            ci = resolved_img(c)
+            items.append(f"[{mdx_escape(ci['title'])}]({ci['url']}) — 1 image")
+        else:
+            items.append(f"**[{mdx_escape(c['title'])}]({c['url']})** — {plural(c['rec_count'])}")
     items += [f"[{mdx_escape(p['title'])}]({p['url']})" for p in own]
     # Cross-links out to the written pages this cluster mirrors: the node's
     # site_page first, then each site_level_2 section it covers.
@@ -703,9 +772,15 @@ for n in nodes:
     if peers:
         # Every peer, never a silent cap — inline so a wide peer set stays
         # compact instead of becoming a wall of bullets.
+        peer_links = []
+        for s in peers:
+            if is_bypassed(s):
+                si = resolved_img(s)
+                peer_links.append(f"[{mdx_escape(si['title'])}]({si['url']})")
+            else:
+                peer_links.append(f"[{mdx_escape(s['title'])}]({s['url']})")
         lines += ["",
-                  "**Peer clusters:** "
-                  + " · ".join(f"[{mdx_escape(s['title'])}]({s['url']})" for s in peers)]
+                  "**Peer clusters:** " + " · ".join(peer_links)]
     lines.append("")
     emit(os.path.join(n["dir"], "overview.mdx"), "\n".join(lines))
 
@@ -720,7 +795,9 @@ toc = [TOC_START, "", "## Photo Evidence Clusters", "",
        f"The photo archive holds {plural(total_imgs)} filed into "
        f"{plural(len(l3), 'concept cluster')}. Open a cluster to see its images and its "
        "sub-areas; every image has its own page with a full-size view and a write-up.", "",
-       toc_cols([f"[{mdx_escape(n['title'])}]({n['url']}) — {plural(n['rec_count'])}"
+       toc_cols([(f"[{mdx_escape(resolved_img(n)['title'])}]({resolved_img(n)['url']}) — 1 image"
+                  if is_bypassed(n) else
+                  f"[{mdx_escape(n['title'])}]({n['url']}) — {plural(n['rec_count'])}")
                  for n in l3]),
        TOC_END]
 block = "\n".join(toc)
