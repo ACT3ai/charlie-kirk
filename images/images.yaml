@@ -1,4 +1,5 @@
-# hierarchy_images.yaml — image evidence hierarchy for the Charlie Kirk site.
+# images.yaml — master image list / image evidence hierarchy for the Charlie Kirk site.
+# Moved 2026-07-22 from image_planning/hierarchy_images.yaml (old name + location dead).
 # GENERATED first pass from ~/_Mirror/Politics/Charlie_Kirk_Mi; GROWN by
 # p_create_image_hierarchy.md: site Level 2/3/4 pages mirrored in as level_3/4/5
 # (level incremented by one), page-embedded images bound in, sidecar file paths
@@ -14437,7 +14438,7 @@ level_3:
                   ai_description_file: "~/BGit/Bryan_git/personal_large_files_bridge/_Mirror/Politics/Charlie_Kirk_Mi/Mic/Pocket/G-lQHEfXMAAwSE1.jpeg.ai_description"
                   ocr_file: "~/BGit/Bryan_git/personal_large_files_bridge/_Mirror/Politics/Charlie_Kirk_Mi/Mic/Pocket/G-lQHEfXMAAwSE1.jpeg.ocr"
                   transcription_file: ""
-                  also_filed_in: ["Table_Hand_off/Butch_Hibbs"]
+                  also_filed_in: ["Table_And_Charlie/Butch_Hibbs"]
               - image:
                   cid: ""
                   sha256: 5c8653634b2dddb5a21612b51c01a26edc9da8e8a3429582906d91c6615ece3f
@@ -14446,7 +14447,7 @@ level_3:
                   ai_description_file: "~/BGit/Bryan_git/personal_large_files_bridge/_Mirror/Politics/Charlie_Kirk_Mi/Mic/Pocket/Pocket.jpeg.ai_description"
                   ocr_file: "~/BGit/Bryan_git/personal_large_files_bridge/_Mirror/Politics/Charlie_Kirk_Mi/Mic/Pocket/Pocket.jpeg.ocr"
                   transcription_file: ""
-                  also_filed_in: ["Table_Hand_off/Butch_Hibbs"]
+                  also_filed_in: ["Table_And_Charlie/Butch_Hibbs"]
         - level_4:
             title: "1776 Man"
             _key: 1776_Man
@@ -16751,8 +16752,8 @@ level_3:
             number_of_images_recursive: 0
             images: []
   - level_3:
-      title: "The Table Hand Off"
-      _key: Table_Hand_off
+      title: "The Table and Charlie"
+      _key: Table_And_Charlie
       site_level_2: []
       number_of_images: 4
       number_of_images_recursive: 89
@@ -16791,8 +16792,8 @@ level_3:
             transcription_file: ""
       level_4:
         - level_4:
-            title: "Hand Off"
-            _key: Hand_Off
+            title: "At the Table"
+            _key: At_The_Table
             number_of_images: 4
             number_of_images_recursive: 4
             images:
@@ -16829,8 +16830,8 @@ level_3:
                   ocr_file: "~/BGit/Bryan_git/personal_large_files_bridge/_Mirror/Politics/Charlie_Kirk_Mi/Table_Hand_off/Hand_Off/G41uaSZbQAAlloe.jpg.ocr"
                   transcription_file: ""
         - level_4:
-            title: "Lady Hand Off"
-            _key: Lady_Hand_Off
+            title: "Woman at the Table"
+            _key: Woman_At_Table
             number_of_images: 4
             number_of_images_recursive: 4
             images:
@@ -16994,7 +16995,7 @@ level_3:
                   ai_description_file: "~/BGit/Bryan_git/personal_large_files_bridge/_Mirror/Politics/Charlie_Kirk_Mi/Table_Hand_off/Other/Consolidated_Training_Group_Employee_K94.jpg.ai_description"
                   ocr_file: "~/BGit/Bryan_git/personal_large_files_bridge/_Mirror/Politics/Charlie_Kirk_Mi/Table_Hand_off/Other/Consolidated_Training_Group_Employee_K94.jpg.ocr"
                   transcription_file: ""
-                  also_filed_in: ["Table_Hand_off/Blake_Harruff_Plaid_Light_Blue"]
+                  also_filed_in: ["Table_And_Charlie/Blake_Harruff_Plaid_Light_Blue"]
         - level_4:
             title: "Blake Harruff Plaid Light Blue"
             _key: Blake_Harruff_Plaid_Light
@@ -17050,7 +17051,7 @@ level_3:
                   ai_description_file: "~/BGit/Bryan_git/personal_large_files_bridge/_Mirror/Politics/Charlie_Kirk_Mi/Table_Hand_off/Blake_Harruff_Plaid_Light_Blue/G1-g-_MWMAAZK94.jpg.ai_description"
                   ocr_file: "~/BGit/Bryan_git/personal_large_files_bridge/_Mirror/Politics/Charlie_Kirk_Mi/Table_Hand_off/Blake_Harruff_Plaid_Light_Blue/G1-g-_MWMAAZK94.jpg.ocr"
                   transcription_file: ""
-                  also_filed_in: ["Table_Hand_off/Other"]
+                  also_filed_in: ["Table_And_Charlie/Other"]
               - image:
                   cid: ""
                   sha256: 25005bb9b14388cb9b047ef7444a64d8f874e3954525d36a4965a36aed7b42cd
@@ -17137,7 +17138,7 @@ level_3:
                   ai_description_file: "~/BGit/Bryan_git/personal_large_files_bridge/_Mirror/Politics/Charlie_Kirk_Mi/Table_Hand_off/Laine_Schoneberger/Husky_Sunglasses.webp.ai_description"
                   ocr_file: "~/BGit/Bryan_git/personal_large_files_bridge/_Mirror/Politics/Charlie_Kirk_Mi/Table_Hand_off/Laine_Schoneberger/Husky_Sunglasses.webp.ocr"
                   transcription_file: ""
-                  also_filed_in: ["Table_Hand_off/Laine_Schoneberger/More"]
+                  also_filed_in: ["Table_And_Charlie/Laine_Schoneberger/More"]
               - image:
                   cid: ""
                   sha256: f51ffc672c7591bcac470b485dc6d904bbc15998aec8eb6b526485d422fe5e5e
@@ -17169,7 +17170,7 @@ level_3:
                         ai_description_file: "~/BGit/Bryan_git/personal_large_files_bridge/_Mirror/Politics/Charlie_Kirk_Mi/Table_Hand_off/Laine_Schoneberger/More/Sunglass_Husky_Blue_Shirt_1.webp.ai_description"
                         ocr_file: "~/BGit/Bryan_git/personal_large_files_bridge/_Mirror/Politics/Charlie_Kirk_Mi/Table_Hand_off/Laine_Schoneberger/More/Sunglass_Husky_Blue_Shirt_1.webp.ocr"
                         transcription_file: ""
-                        also_filed_in: ["Table_Hand_off/Laine_Schoneberger"]
+                        also_filed_in: ["Table_And_Charlie/Laine_Schoneberger"]
         - level_4:
             title: "More"
             _key: Table_More
@@ -17306,7 +17307,7 @@ level_3:
                   ai_description_file: "~/BGit/Bryan_git/personal_large_files_bridge/_Mirror/Politics/Charlie_Kirk_Mi/Table_Hand_off/Brown_Shirt_Puller/G1unBkcaAAEgDRA copy.jpg.ai_description"
                   ocr_file: "~/BGit/Bryan_git/personal_large_files_bridge/_Mirror/Politics/Charlie_Kirk_Mi/Table_Hand_off/Brown_Shirt_Puller/G1unBkcaAAEgDRA copy.jpg.ocr"
                   transcription_file: ""
-                  also_filed_in: ["Table_Hand_off/Brian_Harpole"]
+                  also_filed_in: ["Table_And_Charlie/Brian_Harpole"]
               - image:
                   cid: ""
                   sha256: bf09e4d53a97810b4e0d92c8f6374563db8228a8045e76fcea498239575d8c8a
@@ -17556,7 +17557,7 @@ level_3:
                   ai_description_file: "~/BGit/Bryan_git/personal_large_files_bridge/_Mirror/Politics/Charlie_Kirk_Mi/Table_Hand_off/Brian_Harpole/G1unBkcaAAEgDRA.jpg.ai_description"
                   ocr_file: "~/BGit/Bryan_git/personal_large_files_bridge/_Mirror/Politics/Charlie_Kirk_Mi/Table_Hand_off/Brian_Harpole/G1unBkcaAAEgDRA.jpg.ocr"
                   transcription_file: ""
-                  also_filed_in: ["Table_Hand_off/Brown_Shirt_Puller"]
+                  also_filed_in: ["Table_And_Charlie/Brown_Shirt_Puller"]
               - image:
                   cid: ""
                   sha256: aaa69c5f6f401023aa2dc14646d212ae57d60eaffe494846c81987902c4747ea
@@ -23231,7 +23232,7 @@ level_3:
                   number_of_images_recursive: 0
                   images: []
               - level_5:
-                  title: "The Yrefy Sponsor Rep at the Table Handoff (Claims)"
+                  title: "The Yrefy Sponsor Rep at the Table (Claims)"
                   _key: Susp_TPU_SchonebergerYrefySponsor
                   site_page: "site/docs/Suspicious/TPUSA_Peripheral/schoneberger-yrefy-sponsor.mdx"
                   number_of_images: 0
