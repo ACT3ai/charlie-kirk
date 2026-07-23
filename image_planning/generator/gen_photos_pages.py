@@ -732,7 +732,7 @@ for pg in img_pages:
     # JSX attribute value: no backslashes, no double quotes (yq's JSON escapes
     # are invalid inside an MDX/JSX string attribute)
     alt_attr = (alt_of(prior) or alt).replace("\\", "").replace('"', "'")
-    fm_desc = first_sentence(desc, 200) or f"Photo evidence in the {n['title']} cluster of the Charlie Kirk investigation."
+    fm_desc = first_sentence(desc, 200) or f"Image in the {n['title']} cluster of the Charlie Kirk investigation."
     # carry forward enrichment
     title = fm_get(prior, "title") or pg["title"]
     label = fm_get(prior, "sidebar_label") or pg["title"][:40]
@@ -787,7 +787,7 @@ for pg in img_pages:
               f"* Cluster: [{mdx_escape(home['title'])}]({home['url']})"]
     for r in rel:
         lines.append(f"* Section: {r}")
-    lines.append("* All photo evidence: [Photos](/Photos/overview)")
+    lines.append("* All photos: [Photos](/Photos/overview)")
     lines.append("")
     nav = []
     if pg.get("prev"):
@@ -831,7 +831,7 @@ for n in nodes:
         if lk and lk[0] not in seen_rel:
             rel_links.append((lk[1], lk[0]))
             seen_rel.add(lk[0])
-    fm_desc = (f"Photo evidence cluster for {n['title']} in the Charlie Kirk investigation — "
+    fm_desc = (f"Photo cluster for {n['title']} in the Charlie Kirk investigation — "
                f"{n['rec_count']} images" + (f" across {len(kids)} sub-clusters" if kids else "") + ".")
     prior = read_existing(os.path.join(n["dir"], "overview.mdx"))
     fm_desc = fm_get(prior, "description") or fm_desc
@@ -845,8 +845,8 @@ for n in nodes:
             f"shown at full size next to a written description of what it shows and how it connects "
             f"to the rest of the investigation. The images come from public sources - social media "
             f"posts, news coverage, official releases, and citizen research shared online.",
-            f"Images are grouped here by concept rather than by date or source, so related evidence "
-            f"sits together. Descriptions summarize what is visible and, where known, where the "
+            f"Images are grouped here by concept rather than by date or source, so related images "
+            f"sit together. Descriptions summarize what is visible and, where known, where the "
             f"image has been used elsewhere on this site. Claims that appear inside the images "
             f"themselves are the posters' claims, reported here with attribution rather than "
             f"adopted as conclusions.",
@@ -865,8 +865,8 @@ for n in nodes:
              f"ck_node_key: {n['key']}",
              "---", "",
              back_button(p_url, p_title),
-             f"# {mdx_escape(n['title'])} — Photo Evidence", "",
-             f"Photo evidence filed under **{mdx_escape(n['title'])}** — {plural(len(own))} on this page"
+             f"# {mdx_escape(n['title'])} — Photos", "",
+             f"Photos filed under **{mdx_escape(n['title'])}** — {plural(len(own))} on this page"
              + (f" and {plural(len(kids), 'sub-cluster')} ({plural(n['rec_count'])} in total)" if kids else "") + ". "
              "Scan the list and open any image for the full picture and its write-up.", "",
              toc_cols(items),
@@ -877,7 +877,7 @@ for n in nodes:
         lines.append(f"* Written record: [{mdx_escape(t)}]({u})")
     lines.append(f"* Up: [{mdx_escape(p_title)}]({p_url})")
     if p_url != "/Photos/overview":     # on a Level 3, "up" already is Photos
-        lines.append("* All photo evidence: [Photos](/Photos/overview)")
+        lines.append("* All photos: [Photos](/Photos/overview)")
     if peers:
         # Every peer, never a silent cap — inline so a wide peer set stays
         # compact instead of becoming a wall of bullets.
@@ -900,7 +900,7 @@ with open(LANDING, encoding="utf-8") as f:
 # order the clusters are presented in.
 l3 = [n for n in nodes if n["depth"] == 3]
 total_imgs = sum(n["rec_count"] for n in l3)
-toc = [TOC_START, "", "## Photo Evidence Clusters", "",
+toc = [TOC_START, "", "## Photo Clusters", "",
        f"The photo archive holds {plural(total_imgs)} filed into "
        f"{plural(len(l3), 'concept cluster')}. Open a cluster to see its images and its "
        "sub-areas; every image has its own page with a full-size view and a write-up.", "",
@@ -1055,11 +1055,11 @@ for n in nodes:
     new_rows[n["page_key"]] = row(
         n["page_key"], pk_parent, n["depth"], "topic", n["url"], rel_file,
         n["title"], n["title"][:40], n["rel_dir"],
-        f"Photo evidence cluster: {n['title']} — {n['rec_count']} images.")
+        f"Photo cluster: {n['title']} — {n['rec_count']} images.")
 for pg in img_pages:
     n = pg["node"]
     d = first_sentence(sanitize_prose(pg["img"].get("ai_description") or ""), 200) \
-        or f"Photo evidence in the {n['title']} cluster."
+        or f"Image in the {n['title']} cluster."
     new_rows[pg["key"]] = row(
         pg["key"], n["page_key"], n["depth"] + 1, "image", pg["url"], pg["rel_file"],
         pg["title"], pg["title"][:40], n["rel_dir"], d)
