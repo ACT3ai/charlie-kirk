@@ -8,8 +8,8 @@ We would like to have the FBI at the federal level and U.S. intelligence both be
 
 Our main push is to get laws passed that force this disclosure outside the court case entirely:
 
-- [Law 1 — DoJ / FBI Forced Disclosure](../1_DoJ_FBI/Law_1_DoJ_FBI.md)
-- [Law 2 — U.S. Intelligence Forced Disclosure](../2_US_Intel/Law_2_US_Intel.md)
+- [Law 1 — DoJ / FBI Forced Disclosure](/laws/DoJ_FBI/Law_1_DoJ_FBI)
+- [Law 2 — U.S. Intelligence Forced Disclosure](/laws/US_Intel/Law_2_US_Intel)
 
 We would also like the defense team to submit the items below as formal discovery within the existing legal proceedings.
 
@@ -19,7 +19,6 @@ We would also like the defense team to submit the items below as formal discover
 
 **Overview & Context**
 - [Law for Charlie Kirk File Disclosure](#law-for-charlie-kirk-file-disclosure)
-- [Name Mapping Key](NAME_MAPPING.json) — maps PERSON_X_REDACTED codes to real names
 
 **Theories & Possible Linkages**
 - [Exploding Microphone Theory](#exploding-microphone-theory---discovery-request-items)
@@ -447,7 +446,7 @@ Former NCTC director [Joe Kent](/US_Intelligence/joe-kent) has stated on the rec
   * Message to PERSON_2_REDACTED: PERSON_7_REDACTED said "The Left will kill me" (???)
   * PERSON_4_REDACTED: Charlie texted me and said "I know they want me dead. I'm under the gun right now please pray for me"
   * Message to Andrew: "They will kill me".
-  * PERSON_20_REDACTED (Infowars) – went public: Charlie told him days before he feared [Israel](/Israel) would be taken out.
+  * PERSON_20_REDACTED (Infowars) – went public: Charlie told him days before he feared [Israel](/Israel/overview) would be taken out.
   * PERSON_3_REDACTED (TPUSA insider) – confirmed Charlie's texts about threats.
   * PERSON_4_REDACTED – went on record: The day before the event Charlie told him directly "they're going to take me out."
   * Charlie texted "During this combative meeting, Kirk reportedly texted others saying, "THEY ARE GOING TO KILL ME"
@@ -1247,7 +1246,7 @@ Citizen investigators and legislative advocates on X argue that ordinary FOIA an
 
 Parallel media clips recirculated by accounts such as **[@FurkanGozukara](/Influencers/x/furkangozukara)** claim **Candace Owens** has alleged federal discovery obstruction (FBI/ATF files; director-level blocks). Counter-posts argue the Robinson case already has DNA, video, and confession-note material unlike JFK and therefore needs no special act. This page records both the **demand for forced disclosure** and the **official-narrative pushback** so readers can judge whether Schedule A-style lists (FBI 302s, cell data, aircraft, drones, ballistics, AV SD cards) match what X investigators say remains withheld.
 
-Related public pages: [Fix overview](/Fix/overview), [laws landing](/laws), [Discovery](/laws/Discovery), [explain all four laws](/laws/explain/all).
+Related public pages: [Fix overview](/Fix/overview), [laws landing](/laws), [Discovery](/laws/Discovery), [explain all four laws](/laws/explain/all/overview).
 
 
 ## Related Areas

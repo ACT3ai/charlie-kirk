@@ -18,9 +18,9 @@ Law 1 covers law enforcement (DOJ/FBI). This law covers intelligence services sp
 
 ---
 
-[Back to README](../../README.md) | [Law Text](Law_2_US_Intel.md) | [Legal Notes](Notes_2_US_Intel.md) | [Output Analysis](Output_Analysis.md)
+[Back to README](/laws) | [Law Text](/laws/other/old/US_Intel/Law_2_US_Intel) | [Legal Notes](/laws/other/old/US_Intel/more/Notes_2_US_Intel) | [Output Analysis](/laws/other/old/US_Intel/more/Output_Analysis)
 
-See also: [Law 1 Requirements](../1_DoJ_FBI/Human_Requirements.md) (law enforcement counterpart)
+See also: [Law 1 Requirements](/laws/DoJ_FBI/more/Human_Requirements) (law enforcement counterpart)
 
 ## Related Areas
 

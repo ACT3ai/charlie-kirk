@@ -4,12 +4,12 @@ This is about the [Charlie Kirk](/People/charlie-kirk) assassination. Citizen in
 
 Our main push is to get a set of laws passed to force file disclosure in the Charlie Kirk assassination:
 
-- [Law 1 — DoJ / FBI Forced Disclosure](1_DoJ_FBI/Law_1_DoJ_FBI.md)
-- [Law 2 — U.S. Intelligence Forced Disclosure](2_US_Intel/Law_2_US_Intel.md)
-- [Law 3 — Require Investigation](3_Require_to_Investigate/Law_3_Require_to_Investigate.md)
-- [Law 4 — Trusted Investigations](4_Trusted_Investigations/Law_4_Trusted_Investigations.md)
+- [Law 1 — DoJ / FBI Forced Disclosure](/laws/DoJ_FBI/Law_1_DoJ_FBI)
+- [Law 2 — U.S. Intelligence Forced Disclosure](/laws/US_Intel/Law_2_US_Intel)
+- [Law 3 — Require Investigation](/laws/Require_to_Investigate/Law_3_Require_to_Investigate)
+- [Law 4 — Trusted Investigations](/laws/Trusted_Investigations/Law_4_Trusted_Investigations)
 
-As a secondary matter, we would like the defense team to add these items as formal [discovery](Discovery/README.md) in the court case.
+As a secondary matter, we would like the defense team to add these items as formal [discovery](/laws/Discovery) in the court case.
 
 
 ## Videos
@@ -29,42 +29,41 @@ As a secondary matter, we would like the defense team to add these items as form
 ## Table of Contents
 
 **Overview & Context**
-- [Law for Charlie Kirk File Disclosure](Discovery/README.md#law-for-charlie-kirk-file-disclosure)
-- [Name Mapping Key](NAME_MAPPING.json) — maps PERSON_X_REDACTED codes to real names
+- [Law for Charlie Kirk File Disclosure](/laws/Discovery#law-for-charlie-kirk-file-disclosure)
 
 **Theories & Possible Linkages**
-- [Exploding Microphone Theory](Discovery/README.md#exploding-microphone-theory---discovery-request-items)
-  - [Factual Claims to Establish](Discovery/README.md#factual-claims-to-establish)
-  - [Discovery Requests (Mic)](Discovery/README.md#discovery-requests)
-- [Intelligence Service Discovery Items](1_DoJ_FBI/Law_1_DoJ_FBI.md#intelligence-service-discovery-156) (#1–#56)
+- [Exploding Microphone Theory](/laws/Discovery#exploding-microphone-theory---discovery-request-items)
+  - [Factual Claims to Establish](/laws/Discovery#factual-claims-to-establish)
+  - [Discovery Requests (Mic)](/laws/Discovery#discovery-requests)
+- [Intelligence Service Discovery Items](/laws/DoJ_FBI/Law_1_DoJ_FBI#intelligence-service-discovery-156) (#1–#56)
 
 **Discovery by Category** (#57–#175)
-- [FBI 302 Reports](1_DoJ_FBI/Law_1_DoJ_FBI.md#fbi-302-reports-5761) (#57–#61)
-- [FBI Counterintelligence](1_DoJ_FBI/Law_1_DoJ_FBI.md#fbi-counterintelligence-6266) (#62–#66)
-- [Cell Phone Data](1_DoJ_FBI/Law_1_DoJ_FBI.md#cell-phone-data-6773) (#67–#73)
-- [Airport / CBP Records](1_DoJ_FBI/Law_1_DoJ_FBI.md#airport--cbp-records-7480) (#74–#80)
-- [Egyptian Planes](1_DoJ_FBI/Law_1_DoJ_FBI.md#egyptian-planes-8186) (#81–#86)
-- [Israeli Cell Phones](1_DoJ_FBI/Law_1_DoJ_FBI.md#israeli-cell-phones-8791) (#87–#91)
-- [Provo Airport](1_DoJ_FBI/Law_1_DoJ_FBI.md#provo-airport-9297) (#92–#97)
-- [Financial Records](1_DoJ_FBI/Law_1_DoJ_FBI.md#financial-records-98104) (#98–#104)
-- [Chain of Custody](1_DoJ_FBI/Law_1_DoJ_FBI.md#chain-of-custody-105112) (#105–#112)
-- [Threat Assessments](1_DoJ_FBI/Law_1_DoJ_FBI.md#threat-assessments-113117) (#113–#117)
-- [Surveillance Footage](1_DoJ_FBI/Law_1_DoJ_FBI.md#surveillance-footage-118123) (#118–#123)
-- [Rental Car Records](1_DoJ_FBI/Law_1_DoJ_FBI.md#rental-car-records-124129) (#124–#129)
-- [Hotel Records](1_DoJ_FBI/Law_1_DoJ_FBI.md#hotel-records-130134) (#130–#134)
-- [Digital Forensics](1_DoJ_FBI/Law_1_DoJ_FBI.md#digital-forensics-135140) (#135–#140)
-- [Ballistics](1_DoJ_FBI/Law_1_DoJ_FBI.md#ballistics-141147) (#141–#147)
-- [Distraction People](1_DoJ_FBI/Law_1_DoJ_FBI.md#distraction-people-148154) (#148–#154)
-- [Drones](1_DoJ_FBI/Law_1_DoJ_FBI.md#drones-155159) (#155–#159)
-- [TPUSA Intel](1_DoJ_FBI/Law_1_DoJ_FBI.md#tpusa-intel-160165) (#160–#165)
-- [Autopsy / Medical](1_DoJ_FBI/Law_1_DoJ_FBI.md#autopsy--medical-166170) (#166–#170)
-- [International Liaison](1_DoJ_FBI/Law_1_DoJ_FBI.md#international-liaison-171175) (#171–#175)
+- [FBI 302 Reports](/laws/DoJ_FBI/Law_1_DoJ_FBI#fbi-302-reports-5761) (#57–#61)
+- [FBI Counterintelligence](/laws/DoJ_FBI/Law_1_DoJ_FBI#fbi-counterintelligence-6266) (#62–#66)
+- [Cell Phone Data](/laws/DoJ_FBI/Law_1_DoJ_FBI#cell-phone-data-6773) (#67–#73)
+- [Airport / CBP Records](/laws/DoJ_FBI/Law_1_DoJ_FBI#airport--cbp-records-7480) (#74–#80)
+- [Egyptian Planes](/laws/DoJ_FBI/Law_1_DoJ_FBI#egyptian-planes-8186) (#81–#86)
+- [Israeli Cell Phones](/laws/DoJ_FBI/Law_1_DoJ_FBI#israeli-cell-phones-8791) (#87–#91)
+- [Provo Airport](/laws/DoJ_FBI/Law_1_DoJ_FBI#provo-airport-9297) (#92–#97)
+- [Financial Records](/laws/DoJ_FBI/Law_1_DoJ_FBI#financial-records-98104) (#98–#104)
+- [Chain of Custody](/laws/DoJ_FBI/Law_1_DoJ_FBI#chain-of-custody-105112) (#105–#112)
+- [Threat Assessments](/laws/DoJ_FBI/Law_1_DoJ_FBI#threat-assessments-113117) (#113–#117)
+- [Surveillance Footage](/laws/DoJ_FBI/Law_1_DoJ_FBI#surveillance-footage-118123) (#118–#123)
+- [Rental Car Records](/laws/DoJ_FBI/Law_1_DoJ_FBI#rental-car-records-124129) (#124–#129)
+- [Hotel Records](/laws/DoJ_FBI/Law_1_DoJ_FBI#hotel-records-130134) (#130–#134)
+- [Digital Forensics](/laws/DoJ_FBI/Law_1_DoJ_FBI#digital-forensics-135140) (#135–#140)
+- [Ballistics](/laws/DoJ_FBI/Law_1_DoJ_FBI#ballistics-141147) (#141–#147)
+- [Distraction People](/laws/DoJ_FBI/Law_1_DoJ_FBI#distraction-people-148154) (#148–#154)
+- [Drones](/laws/DoJ_FBI/Law_1_DoJ_FBI#drones-155159) (#155–#159)
+- [TPUSA Intel](/laws/DoJ_FBI/Law_1_DoJ_FBI#tpusa-intel-160165) (#160–#165)
+- [Autopsy / Medical](/laws/DoJ_FBI/Law_1_DoJ_FBI#autopsy--medical-166170) (#166–#170)
+- [International Liaison](/laws/DoJ_FBI/Law_1_DoJ_FBI#international-liaison-171175) (#171–#175)
 
 **Legal Framework**
-- [Legal Basis for Discovery](Discovery/README.md#legal-basis-for-discovery)
-- [Procedural Mechanisms](Discovery/README.md#procedural-mechanisms)
-- [Time Frames Summary](Discovery/README.md#time-frames-summary)
-- [Appendix A: Defense Discovery Q4 2025](Discovery/README.md#appendix-a)
+- [Legal Basis for Discovery](/laws/Discovery#legal-basis-for-discovery)
+- [Procedural Mechanisms](/laws/Discovery#procedural-mechanisms)
+- [Time Frames Summary](/laws/Discovery#time-frames-summary)
+- [Appendix A: Defense Discovery Q4 2025](/laws/Discovery#appendix-a)
 
 **Related Repos**
 - [Bryan Starbuck Lawfare](https://github.com/BryanStarbuck/Bryan_Starbuck_Lawfare)
@@ -110,7 +109,7 @@ This includes other information to disclose that may or may not be related.
 * Photos show square object (~2x2") in PERSON_25_REDACTED's front right pocket matching Rode Wireless GO II mic dimensions
 * PERSON_25_REDACTED photographed standing with sound crew and person who miked up Kirk
 * Post-killing photos show PERSON_25_REDACTED's pocket empty
-* Potential involvement of Israeli secret service or [Mossad](/intelligence/Mossad) in orchestrating an inside hit, drawing parallels to 2024 pager bombs in Lebanon (see [Israeli Cell Phones](1_DoJ_FBI/Law_1_DoJ_FBI.md#israeli-cell-phones-8791))
+* Potential involvement of Israeli secret service or [Mossad](/intelligence/Mossad) in orchestrating an inside hit, drawing parallels to 2024 pager bombs in Lebanon (see [Israeli Cell Phones](/laws/DoJ_FBI/Law_1_DoJ_FBI#israeli-cell-phones-8791))
 
 ### The Microphone Type
 * Kirk wearing lavalier microphone (wireless)
@@ -145,7 +144,7 @@ This includes other information to disclose that may or may not be related.
 
 
 ### Crime Scene Alteration
-* Crime scene paved over with concrete shortly after incident (see [Surveillance Footage](1_DoJ_FBI/Law_1_DoJ_FBI.md#surveillance-footage-118123))
+* Crime scene paved over with concrete shortly after incident (see [Surveillance Footage](/laws/DoJ_FBI/Law_1_DoJ_FBI#surveillance-footage-118123))
 * In the crime scene pave over, interestingly the roof above the tent was also redone. Disclose if any possible explosive resdue was attempted to get covered up on that roof above Charlie Kirk
 * Glass fragments and explosive traces reported on grass before paving
 * Did the FBI chose to not take the car that transported Charlie after the shooting to the hospital into evidence. The glass-like fragments were in that car under where Charlie was after the shooting on the drive.
@@ -169,7 +168,7 @@ Citizen investigators and legislative advocates on X argue that ordinary FOIA an
 
 Parallel media clips recirculated by accounts such as **[@FurkanGozukara](/Influencers/x/furkangozukara)** claim **Candace Owens** has alleged federal discovery obstruction (FBI/ATF files; director-level blocks). Counter-posts argue the Robinson case already has DNA, video, and confession-note material unlike JFK and therefore needs no special act. This page records both the **demand for forced disclosure** and the **official-narrative pushback** so readers can judge whether Schedule A-style lists (FBI 302s, cell data, aircraft, drones, ballistics, AV SD cards) match what X investigators say remains withheld.
 
-Related public pages: [Fix overview](/Fix/overview), [laws landing](/laws), [Discovery](/laws/Discovery), [explain all four laws](/laws/explain/all).
+Related public pages: [Fix overview](/Fix/overview), [laws landing](/laws), [Discovery](/laws/Discovery), [explain all four laws](/laws/explain/all/overview).
 
 
 ## Related Areas

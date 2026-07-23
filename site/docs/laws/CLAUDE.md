@@ -1,7 +1,7 @@
 
 ROOT_URL dir is ~/BGit/Bryan_git/Charlie_Kirk_175_Critical_To_Expose
 
-Read this into the context window ./other/Bkup_Charlie_Kirk.txt
+Read this into the context window ~/BGit/Bryan_git/charlie-kirk/Charlie_Kirk.txt
 
 
 
@@ -35,9 +35,9 @@ Establishes independent investigation teams led by three Designated Trusted Inve
 
 - **README.md**: The master document containing the full 175-item discovery list with detailed descriptions, organized by category. This is also the content of Schedule A referenced by all four laws.
 - **Discovery/README.md**: Frames the 175 items as formal discovery requests for the defense team in the Robinson case. Seeks to establish FBI and U.S. intelligence as legally recognized custodial agencies under Brady v. Maryland obligations.
-- **NAME_MAPPING.json**: Maps 178 coded identifiers (PERSON_1_REDACTED, etc.) to real names for defamation-safe publishing.
+- The mapping of coded identifiers (PERSON_1_REDACTED, etc.) to real names is kept **outside this published directory** and is not part of the repository.
 - **other/people.md**: Comprehensive 35-category definition of "People Involved" (categories a through ii), covering TPUSA organization, security, AV crew, FBI personnel, DOJ prosecutors, intelligence community, foreign operatives, military contractors, Egyptian aircraft personnel, drone operators, distraction persons, airport staff, donors, Kirk's associates, Erika Kirk and family, medical personnel, crime scene alteration personnel, witnesses, financial persons, Tyler Robinson's associates, political figures, lobbyists, media, AES personnel, rental/lodging staff, digital platform employees, UVU staff, aircraft passengers, Scott Lazerson connections, religious leaders, and a catch-all category.
-- **other/Bkup_Charlie_Kirk.txt**: Raw investigative notes, timeline of events, court case details, and source material.
+- Raw investigative notes, timeline, court case details, and source material live in the master file at the repo root (`Charlie_Kirk.txt`) — deliberately kept out of this published directory.
 - **original/README.md**: The original 175-item list as initially drafted by Bryan Starbuck.
 - **Each law directory contains a `more/` subdirectory** with Human_Requirements.md (the plain-language intent), Notes_{law}.md (legal research, precedent analysis, pros/cons), and Output_Analysis.md.
 
@@ -113,7 +113,7 @@ Separately from the legislative effort, the project also seeks to have the defen
 - The law files already exist. Never create new law files -- only edit the existing ones.
 - Schedule A items in the law files follow the format: `#N: {Title (8 words or less)}: {Description with specifics followed by a broadening sentence}`
 - All files are markdown intended for reading on the internet (GitHub). Hyperlinks are acceptable and expected.
-- Use NAME_MAPPING.json for defamation-safe references where needed.
+- Use the coded PERSON_N_REDACTED identifiers for defamation-safe references. The key that resolves them is held privately and must never be committed or published.
 
 
 # currentDate

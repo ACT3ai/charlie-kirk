@@ -2,7 +2,9 @@
 
 **Date:** 2026-03-19
 
-**Status:** Items below are NEW leads found in the investigation file (Bkup_Charlie_Kirk.txt) that do not appear to be adequately covered by existing items #1-#213 in the current laws. These should be considered for addition.
+**Status:** Items below are NEW leads found in the investigation file (the master investigation file) that do not appear to be adequately covered by existing items #1-#213 in the current laws. These should be considered for addition.
+
+**Disclaimer:** These are proposed **disclosure requests** — questions for investigators, not findings of fact. Nothing below is a finding of wrongdoing, criminal conduct, or participation in any crime by any living person. The underlying claims are unproven allegations drawn from public commentary, every person and organization named is presumed innocent, and none of these allegations has been established in any court.
 
 ---
 
@@ -20,8 +22,8 @@ All records relating to Arcadi Gaydamak, a Russian-Israeli billionaire and convi
 ### #217: [CIA](/US_Intelligence/cia) Physically Blocked by [FBI](/FBI/overview) from Investigating
 All records relating to CIA personnel being physically blocked by the FBI from participating in or advancing aspects of the Charlie Kirk investigation, including the incident described by [Mike Glover](/People/mike-glover) (former Special Operations veteran) on the "Mike Drop" podcast (Episode 270), in which CIA agents were reportedly turned around at an airport and prevented from continuing their mission. All records of this incident being reported up the chain of command to the Oval Office and any response or lack thereof. All records of inter-agency conflict between FBI and CIA regarding the Charlie Kirk investigation.
 
-### #218: Kash Patel Blocking NCTC / Tulsi Gabbard Investigation Efforts
-All records relating to FBI Director [Kash Patel](/People/kash-patel)'s efforts to block, limit, or control the National Counterterrorism Center ([Joe Kent](/US_Intelligence/joe-kent)) and DNI (Tulsi Gabbard) investigation into foreign government involvement in Charlie Kirk's death. All records of Patel being "very mad" that Joe Kent "went through FBI material" on this case. All communications between the FBI Director's office and NCTC/ODNI regarding scope limitations on the investigation. All records relating to the Reuters/Daily Mail UK report that "Trump administration officials were worried that Kent's probe into foreign interference could provide ammunition to Robinson's defense lawyers."
+### #218: Alleged Blocking of NCTC / Tulsi Gabbard Investigation Efforts (Unproven)
+All records relating to the alleged efforts of FBI Director [Kash Patel](/People/kash-patel) to block, limit, or control the National Counterterrorism Center ([Joe Kent](/US_Intelligence/joe-kent)) and DNI (Tulsi Gabbard) investigation into foreign government involvement in Charlie Kirk's death. All records of Patel being "very mad" that Joe Kent "went through FBI material" on this case. All communications between the FBI Director's office and NCTC/ODNI regarding scope limitations on the investigation. All records relating to the Reuters/Daily Mail UK report that "Trump administration officials were worried that Kent's probe into foreign interference could provide ammunition to Robinson's defense lawyers."
 
 ### #219: Stingray / IMSI Catcher Surveillance at [TPUSA](/TPUSA/overview) Events
 All records relating to the deployment of IMSI catcher ("Stingray") devices at TPUSA events, specifically at UVU on September 10, 2025 and at other TPUSA events including "Make Heaven Crowded Tour" stops. Who authorized deployment, what data was collected, where the data was sent, and whether TPUSA was used as a mass surveillance operation to harvest attendee phone identifiers and movement paths. All records of any entity -- US or foreign -- receiving data from such devices at TPUSA events.
@@ -42,22 +44,22 @@ All records relating to a bomb scare at Intermountain Health Utah Valley Regiona
 All records relating to a secret TPUSA branch discovered by Charlie Kirk that allegedly funneled $5+ million over 4 years into "stock market funds for employees" with zero listed employees. All tax filings (filed late), financial records, and IRS investigation files related to this entity. All records of whether this constituted money laundering or a slush fund, and whether Kirk's discovery of this branch and his "DOGE audit" request contributed to the motive for his assassination.
 
 ### #226: Utah Governor Cox Post-Assassination Meetings with Egypt and France
-All records relating to Utah Governor [Spencer Cox](/People/spencer-cox)'s closed-door meetings on September 23, 2025 (13 days after the assassination) with Egyptian Ambassador Motaz Zahran (11:30 AM) and French Consul General Florian Cardinaux (3:30 PM) at the Utah State Capitol Gold Room. All records of what was discussed, who else attended, and why these meetings were not publicly disclosed. All communications between Governor Cox's office and any foreign government regarding the Charlie Kirk case.
+All records relating to Utah Governor [Spencer Cox](/People/spencer-cox)'s reported closed-door meetings on September 23, 2025 (13 days after the assassination) with Egyptian Ambassador Motaz Zahran (11:30 AM) and French Consul General Florian Cardinaux (3:30 PM) at the Utah State Capitol Gold Room. All records of what was discussed, who else attended, and why these meetings were not publicly disclosed. All communications between Governor Cox's office and any foreign government regarding the Charlie Kirk case.
 
 ### #227: Superfeed Technologies / TPUSA Geofencing and Data Harvesting
-All records relating to Superfeed Technologies (board members include TPUSA Action COO [Tyler Bowyer](/People/tyler-bowyer) and [Lori Frantzve](/People/lori-frantzve), [Erika Kirk](/People/erika-kirk)'s mother), and its use at TPUSA events including Charlie Kirk's Arizona memorial to collect attendee data (phone identifiers, locations, demographics). All records of whether data collected by Superfeed was shared with any foreign government or intelligence service, including Israel. All FARA filings and records of Israeli-government-funded entities (including "Faith by Works" and "Friends of Zion") geofencing American churches to push propaganda to congregants' phones.
+All records relating to Superfeed Technologies (board members include TPUSA Action COO [Tyler Bowyer](/People/tyler-bowyer) and [Lori Frantzve](/People/lori-frantzve), [Erika Kirk](/People/erika-kirk)'s mother), and its reported use at TPUSA events including Charlie Kirk's Arizona memorial to collect attendee data (phone identifiers, locations, demographics). All records of whether data collected by Superfeed was shared with any foreign government or intelligence service, including Israel. All FARA filings and records of Israeli-government-funded entities (including "Faith by Works" and "Friends of Zion") geofencing American churches to push propaganda to congregants' phones.
 
-### #228: Erika Kirk Security Stand-Down Order
+### #228: Erika Kirk — Alleged Security Stand-Down Order (Unproven)
 All records relating to allegations from a TPUSA insider whistleblower that Erika Kirk issued a security stand-down order at the UVU event, told Charlie Kirk's security detail to refuse cooperation with law enforcement, and replaced trusted staff with unfamiliar faces who allegedly had intelligence backgrounds. All communications between Erika Kirk and any security personnel, TPUSA staff, or external parties in the 72 hours before the assassination regarding security arrangements.
 
 ### #229: Tyler Robinson at Center for Anticipatory Intelligence (CAI) at Utah State University
 All records relating to Tyler Robinson's enrollment or involvement with the Center for Anticipatory Intelligence (CAI) at Utah State University, a CIA-affiliated research hub that received $2.4M in US-Israel research funding and was led by former CIA personnel. All records of Robinson's activities during the approximately 4 years of his past that are unaccounted for, and whether he was recruited, surveilled, or handled through any program affiliated with CAI or any intelligence service.
 
-### #230: Jailhouse Snitch Jaxson Thomas Fox and Israeli Google Searches
+### #230: Jaxson Thomas Fox (Alleged Jailhouse Informant) and Israeli Google Searches
 All records relating to Jaxson Thomas Fox, an inmate transported to Tyler Robinson's hearing to potentially serve as a jailhouse informant. All records of Google Trends data showing Israeli IP addresses searching for "Jaxson Thomas Fox" as early as November 2023 and on YouTube from May 18-24, 2025. All records of who arranged for Fox to be placed near Robinson, whether any plea deal or reduced sentence was offered, and all communications between prosecutors and Fox.
 
 ### #231: El-Sisi / Macron / CENTCOM Meetings Around Assassination Date
-All records relating to the timeline of Egyptian President El-Sisi's communications with French President Macron (August 20, September 15, September 20) and his meeting with the USCENTCOM Commander (September 8 -- two days before the assassination). All records of whether these communications discussed Charlie Kirk, TPUSA, or any operation in Utah. All records identifying the RCH 702 / SAM flight and its connection to [Bradley Hansell](/People/bradley-hansell) (Under Secretary of Defense for Intelligence and Security), whose office booked the flight from Andrews to Colorado Springs to Tucson to [Fort Huachuca](/US_Intelligence/Fort_Huachuca/overview).
+All records relating to the timeline of Egyptian President El-Sisi's communications with French President Macron (August 20, September 15, September 20) and his meeting with the USCENTCOM Commander (September 8 -- two days before the assassination). All records of whether these communications discussed Charlie Kirk, TPUSA, or any operation in Utah. All records identifying the RCH 702 / SAM flight and its connection to [Bradley Hansell](/People/bradley-hansell) (Under Secretary of Defense for Intelligence and Security), whose office is reported — unconfirmed — to have booked the flight from Andrews to Colorado Springs to Tucson to [Fort Huachuca](/US_Intelligence/Fort_Huachuca/overview).
 
 ### #232: Tyler Robinson Family Belief in Innocence
 All records relating to Tyler Robinson's family members' statements (made face-to-face at the January 16th hearing) that they do not believe Tyler committed the assassination. All records of Tyler Robinson's reported statement that he "didn't do it but knows who did but won't say because it would endanger the family." All records of whether Robinson has attempted to cooperate, provide information about other participants, or negotiate any deal in exchange for identifying actual perpetrators.
@@ -81,7 +83,7 @@ All records relating to Emmanuel Beerer, a German national and former Oracle sof
 
 ## Notes
 
-These items (#214-#237) were identified by comparing the full investigation notes (Bkup_Charlie_Kirk.txt) against the existing 213 items in Law 1. Each represents a distinct lead, person, or category of evidence that is either not covered at all or not adequately specified in the current disclosure requirements. Some items partially overlap with broader existing categories but contain specific enough details that they warrant explicit enumeration to prevent agencies from claiming the broader category doesn't require this specific disclosure.
+These items (#214-#237) were identified by comparing the full investigation notes (the master investigation file) against the existing 213 items in Law 1. Each represents a distinct lead, person, or category of evidence that is either not covered at all or not adequately specified in the current disclosure requirements. Some items partially overlap with broader existing categories but contain specific enough details that they warrant explicit enumeration to prevent agencies from claiming the broader category doesn't require this specific disclosure.
 
 
 ## Citizen Investigator Claims on X (Forced Disclosure Discourse)
@@ -92,7 +94,7 @@ Citizen investigators and legislative advocates on X argue that ordinary FOIA an
 
 Parallel media clips recirculated by accounts such as **[@FurkanGozukara](/Influencers/x/furkangozukara)** claim **Candace Owens** has alleged federal discovery obstruction (FBI/ATF files; director-level blocks). Counter-posts argue the Robinson case already has DNA, video, and confession-note material unlike JFK and therefore needs no special act. This page records both the **demand for forced disclosure** and the **official-narrative pushback** so readers can judge whether Schedule A-style lists (FBI 302s, cell data, aircraft, drones, ballistics, AV SD cards) match what X investigators say remains withheld.
 
-Related public pages: [Fix overview](/Fix/overview), [laws landing](/laws), [Discovery](/laws/Discovery), [explain all four laws](/laws/explain/all).
+Related public pages: [Fix overview](/Fix/overview), [laws landing](/laws), [Discovery](/laws/Discovery), [explain all four laws](/laws/explain/all/overview).
 
 
 ## Related Areas

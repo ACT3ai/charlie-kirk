@@ -43,14 +43,14 @@ For any citizen, they have no NDA or any kind of other agreement that is allowed
 
 ## Reference
 
-This law is modeled after [Thomas Massie's legislation](../../Existing_Laws/Massie_Epstein_Disclosure/Law_Massie_Epstein_Disclosure.md) to force DOJ disclosure of Jeffrey Epstein files. The parallel is that in both cases, federal law enforcement appears to be withholding 
+This law is modeled after Thomas Massie's legislation to force DOJ disclosure of Jeffrey Epstein files. The parallel is that in both cases, federal law enforcement appears to be withholding 
 critical investigative information from the public.
 
 
 
 ---
 
-[Back to README](../../README.md) | [Law Text](Law_1_DoJ_FBI.md) | [Legal Notes](Notes_1_DoJ_FBI.md) | [Output Analysis](Output_Analysis.md)
+[Back to README](/laws) | [Law Text](/laws/other/old/DoJ_FBI/Law_1_DoJ_FBI) | [Legal Notes](/laws/other/old/DoJ_FBI/more/Notes_1_DoJ_FBI) | [Output Analysis](/laws/other/old/DoJ_FBI/more/Output_Analysis)
 
 ## Related Areas
 

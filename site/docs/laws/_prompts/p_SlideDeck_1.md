@@ -10,7 +10,7 @@ Under {ROOT_DIR} dir are 4 directories, which map to the 4 laws we want to pass:
 
 ORIGINAL_175_FILE is file {ROOT_DIR}/original/README.md
 
-INPUT_INVESTIGATION_FILE is file {ROOT_DIR}/other/Bkup_Charlie_Kirk.txt
+INPUT_INVESTIGATION_FILE is file ~/BGit/Bryan_git/charlie-kirk/Charlie_Kirk.txt
 
 OUTPUT_FILE is file {ROOT_DIR}/other/Slides/Slide_Deck_1.yaml
 
@@ -31,7 +31,7 @@ Make sure it motivates. Make sure it gives shocking why these laws would make ev
 
 What would resonate with Americans since the justice period? 
 
-Read the Bkup_Charlie_Kirk.txt file, that input_investigation_file. Read those in the context. Come up with this output_file. Grow the contents of that to be a slide deck of what would the contents be of the slides to have this as a video walking through the slides to go introduce this to everybody. Make it 40 slides.
+Read the Charlie_Kirk.txt investigation file, that input_investigation_file. Read those in the context. Come up with this output_file. Grow the contents of that to be a slide deck of what would the contents be of the slides to have this as a video walking through the slides to go introduce this to everybody. Make it 40 slides.
 
 For each slide, include the title text, the points you'll make on there. They don't have to be a bullet list; they could have graphics. You could have three panels; it could have whatever. Output it as a YAML file, hierarchical. There's a top hierarchy, and the second level would be an array of slides underneath there. Have all the properties mapped out that include the title slide, that means the content is structured on slide YAML properties, YAML hierarchy. Have what the speaker speaks through verbally to go with the slide. 
 

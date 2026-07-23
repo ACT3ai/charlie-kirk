@@ -13,7 +13,7 @@ WORRIES_FILE is file {ROOT_DIR}/others/Worries_By_Each_4_Laws.md
 
 ORIGINAL_175_FILE is file {ROOT_DIR}/original/README.md
 
-INPUT_INVESTIGATION_FILE is file {ROOT_DIR}/other/Bkup_Charlie_Kirk.txt
+INPUT_INVESTIGATION_FILE is file ~/BGit/Bryan_git/charlie-kirk/Charlie_Kirk.txt
 
 INPUT_GOALS_FILE is file {ROOT_DIR}/other/List_Of_Laws.md
 

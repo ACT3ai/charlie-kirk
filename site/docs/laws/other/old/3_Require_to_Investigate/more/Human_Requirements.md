@@ -17,9 +17,9 @@ Laws 1 and 2 force disclosure of existing records. This law forces agencies to a
 
 ---
 
-[Back to README](../../README.md) | [Law Text](Law_3_Require_to_Investigate.md) | [Legal Notes](Notes_3_Require_to_Investigate.md) | [Output Analysis](Output_Analysis.md)
+[Back to README](/laws) | [Law Text](/laws/other/old/Require_to_Investigate/Law_3_Require_to_Investigate) | [Legal Notes](/laws/other/old/Require_to_Investigate/more/Notes_3_Require_to_Investigate) | [Output Analysis](/laws/other/old/Require_to_Investigate/more/Output_Analysis)
 
-See also: [Law 1 Requirements](../1_DoJ_FBI/Human_Requirements.md) | [Law 2 Requirements](../2_US_Intel/Human_Requirements.md) (disclosure counterparts) | [Law 4 Requirements](../4_Trusted_Investigations/Human_Requirements.md) (trusted oversight)
+See also: [Law 1 Requirements](/laws/DoJ_FBI/more/Human_Requirements) | [Law 2 Requirements](/laws/US_Intel/more/Human_Requirements) (disclosure counterparts) | [Law 4 Requirements](/laws/Trusted_Investigations/more/Human_Requirements) (trusted oversight)
 
 ## Related Areas
 

@@ -387,7 +387,7 @@
 - **"Fake Doctor w/Gun"** -- PERSON_179_REDACTED
 - **Pellet gun man** at Joe Vera's Mexican Restaurant, Provo
 - **[George Zinn](/distraction_people/George_Zinn)** and others identified as possible distraction operatives
-- A person on video **asking questions to Charlie Kirk** who was also recorded **practicing the same shocked facial expression** beforehand, and who later appeared on **CBS with Erika Kirk**
+- A person on video **asking questions to Charlie Kirk** who commentators allege was also recorded **practicing the same shocked facial expression** beforehand (an unverified reading of the footage), and who later appeared on **CBS with Erika Kirk**
 - All communications with any government or intelligence service
 - Whether any distraction person was **offered or received money** from any source
 - All financial payments they received
@@ -998,7 +998,7 @@
 - **P21:** Crime scene alteration personnel -- [Hardscape Specialties](/UVU/Hardscape-Specialties) LLC ([Michael Powell](/People/michael-powell), [Burton Romrell](/People/burton-romrell))
 - **P22:** All witnesses, videographers -- includes those told by FBI to delete evidence
 - **P23:** Life insurance persons -- GGLF 2023 LLC, estimated $20-50 million payout
-- **P24:** Tyler Robinson, Lance Twiggs, Robinson's family, jail snitch Jaxson Thomas Fox
+- **P24:** Tyler Robinson, Lance Twiggs, Robinson's family, Jaxson Thomas Fox (alleged jailhouse informant)
 - **P25:** Political figures -- Governor [Spencer Cox](/People/spencer-cox), any briefed members of Congress, Mike Huckabee
 - **P26:** AIPAC, ADL, Heritage Foundation, Philos Project and affiliates
 - **P27:** Media personnel who received early information -- Jerusalem Post announced death before pronouncement

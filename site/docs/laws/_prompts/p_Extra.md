@@ -10,7 +10,7 @@ Under {ROOT_DIR} dir are 4 directories, which map to the 4 laws we want to pass:
 
 ORIGINAL_175_FILE is file {ROOT_DIR}/original/README.md
 
-INPUT_INVESTIGATION_FILE is file {ROOT_DIR}/other/Bkup_Charlie_Kirk.txt
+INPUT_INVESTIGATION_FILE is file ~/BGit/Bryan_git/charlie-kirk/Charlie_Kirk.txt
 
 OUTPUT_FILE is file {ROOT_DIR}/1_DoJ_FBI/*.md
 

@@ -1,6 +1,6 @@
 # Problems, Vulnerabilities, and Recommended Fixes — Comprehensive Analysis
 
-**Analyzed by:** Attorney-level review of all four laws against the primary charter (`other/List_Of_Laws.md`) and the full investigative record (`other/Bkup_Charlie_Kirk.txt`)
+**Analyzed by:** Attorney-level review of all four laws against the primary charter (`other/List_Of_Laws.md`) and the full investigative record (the master investigation file)
 **Date:** March 27, 2026
 **Method:** Threat analysis from the perspective of foreign and domestic intelligence services, compromised politicians, and agencies that want to keep the investigation covered up. Each problem is assessed for its ability to sabotage, delay, or undermine the laws' ultimate goal: forcing the full truth about the assassination of [Charlie Kirk](/People/charlie-kirk) to come out.
 
@@ -508,7 +508,7 @@ Citizen investigators and legislative advocates on X argue that ordinary FOIA an
 
 Parallel media clips recirculated by accounts such as **[@FurkanGozukara](/Influencers/x/furkangozukara)** claim **Candace Owens** has alleged federal discovery obstruction (FBI/ATF files; director-level blocks). Counter-posts argue the Robinson case already has DNA, video, and confession-note material unlike JFK and therefore needs no special act. This page records both the **demand for forced disclosure** and the **official-narrative pushback** so readers can judge whether Schedule A-style lists (FBI 302s, cell data, aircraft, drones, ballistics, AV SD cards) match what X investigators say remains withheld.
 
-Related public pages: [Fix overview](/Fix/overview), [laws landing](/laws), [Discovery](/laws/Discovery), [explain all four laws](/laws/explain/all).
+Related public pages: [Fix overview](/Fix/overview), [laws landing](/laws), [Discovery](/laws/Discovery), [explain all four laws](/laws/explain/all/overview).
 
 
 ## Related Areas

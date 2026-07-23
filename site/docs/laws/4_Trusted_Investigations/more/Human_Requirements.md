@@ -24,9 +24,9 @@ Allow a specific set of trusted individuals to each have their own team within t
 
 ---
 
-[Back to README](../../README.md) | [Law Text](Law_4_Trusted_Investigations.md) | [Legal Notes](Notes_4_Trusted_Investigations.md) | [Output Analysis](Output_Analysis.md)
+[Back to README](/laws) | [Law Text](/laws/Trusted_Investigations/Law_4_Trusted_Investigations) | [Legal Notes](/laws/Trusted_Investigations/more/Notes_4_Trusted_Investigations) | [Output Analysis](/laws/Trusted_Investigations/more/Output_Analysis)
 
-See also: [Law 1 Requirements](../1_DoJ_FBI/Human_Requirements.md) | [Law 2 Requirements](../2_US_Intel/Human_Requirements.md) | [Law 3 Requirements](../3_Require_to_Investigate/Human_Requirements.md)
+See also: [Law 1 Requirements](/laws/DoJ_FBI/more/Human_Requirements) | [Law 2 Requirements](/laws/US_Intel/more/Human_Requirements) | [Law 3 Requirements](/laws/Require_to_Investigate/more/Human_Requirements)
 
 ## Related Areas
 
