@@ -20,7 +20,12 @@ SITE_DIR dir is {ROOT_DIR}/site
 DOCS_DIR dir is {SITE_DIR}/docs
 VIDEOS_L2_DIR dir is {DOCS_DIR}/Videos
 VIDEOS_L2_PAGE is file {VIDEOS_L2_DIR}/overview.mdx
-POSTER_DIR dir is {SITE_DIR}/static/img/video_posters
+POSTER_DIR dir is {SITE_DIR}/internals/static/img/video_posters
+  NOT {SITE_DIR}/static. docusaurus.config.ts sets
+  staticDirectories: ["internals/static"], so that is the ONLY directory served.
+  A poster written to {SITE_DIR}/static is silently not published and every
+  media-pending page renders a broken image. The URL in the page is still
+  /img/video_posters/{sha256}.jpg — only the on-disk location differs.
 VIDEO_LIST_CSV is file {DOCS_DIR}/video_list.csv
 PAGES_CSV is file {ROOT_DIR}/pages.csv
 CK_FILE is file {ROOT_DIR}/Charlie_Kirk.txt
@@ -245,6 +250,22 @@ Directory and file layout under {VIDEOS_L2_DIR}:
     and is NOT an orphan. Leave it alone. If its video appears in the YAML,
     record the collision in {FINDINGS_FILE} and let a human decide whether to
     fold it in; do not overwrite it and do not delete it.
+
+A FILE PATH IS NOT A ROUTE. This bites every link that points at a page this
+pipeline did not write — the on_pages entries, the node's site_page, and every
+"How It Connects" target:
+
+  * site/docs/index.md is served at "/", never at "/index".
+  * A directory hub may carry a slug that differs from its folder name: the
+    mirandize hub is /court/mirandize/mirandize-overview, not
+    /court/mirandize/overview.
+  * Section overviews are linked as /X/overview, not the bare /X.
+
+So a link to any page outside {VIDEOS_L2_DIR} is resolved through the url_path
+column of {PAGES_CSV}, and the path-derived form is only the fallback. Deriving
+it from the path alone produces links that pass every local check and fail in
+the build. Our own pages under {VIDEOS_L2_DIR} are the exception — this pipeline
+chooses their layout, so their route is exactly their path.
 
 Navigation rules (from the charter — a visitor never dead-ends):
 

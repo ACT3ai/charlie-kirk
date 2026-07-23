@@ -218,7 +218,9 @@ for fp, vids in sorted(plan.items()):
     for v in keep:
         url = video_url(v)
         title = mdx_safe(sanitize_prose(v['title']))
-        cap = first_sentence(v.get('caption') or v.get('title'))
+        cap = first_sentence(v.get('caption') or '')
+        if not cap or cap.strip() == title.strip():
+            cap = ''
         meta = []
         d = dur_human(v.get('duration'))
         if d:
@@ -236,7 +238,8 @@ for fp, vids in sorted(plan.items()):
             cards.append(f'  <a href="{url}"><img src="{v["poster"]}" alt="{alt}" loading="lazy" /></a>')
         cards.append('  <div className="ck-placed-video-body">')
         cards.append(f'    <a className="ck-placed-video-title" href="{url}">{title}</a>')
-        cards.append(f'    <span className="ck-placed-video-caption">{cap}</span>')
+        if cap:
+            cards.append(f'    <span className="ck-placed-video-caption">{cap}</span>')
         if meta:
             cards.append(f'    <div className="ck-placed-video-meta">{" · ".join(meta)}</div>')
         cards.append('  </div>')

@@ -28,7 +28,7 @@ SITE     = os.path.join(ROOT, 'site')
 DOCS     = os.path.join(SITE, 'docs')
 L2DIR    = os.path.join(DOCS, 'Videos')
 L2PAGE   = os.path.join(L2DIR, 'overview.mdx')
-POSTERS  = os.path.join(SITE, 'static', 'img', 'video_posters')
+POSTERS  = os.path.join(SITE, 'internals', 'static', 'img', 'video_posters')
 CSSFILE  = os.path.join(SITE, 'internals', 'src', 'css', 'custom.css')
 PAGESCSV = os.path.join(ROOT, 'pages.csv')
 EXCLUDE  = os.path.join(ROOT, 'videos_planning', 'exclude_videos.txt')
@@ -112,7 +112,34 @@ def mdx_safe(s):
     return (s or '').replace('<', '&lt;').replace('{', '&#123;').replace('}', '&#125;')
 
 def rel_url(path):
+    """Route for a page we generate ourselves under /Videos. Our own layout is
+    path-derived, so this is exact for those."""
     return '/' + os.path.relpath(path, DOCS)[:-4].replace(os.sep, '/')
+
+_ROUTES = {}
+def _load_routes():
+    try:
+        for row in csv.DictReader(open(PAGESCSV, encoding='utf-8')):
+            fp, up = row.get('file_path') or '', row.get('url_path') or ''
+            if fp and up:
+                _ROUTES[os.path.normpath(os.path.join(ROOT, fp))] = up
+    except Exception:
+        pass
+
+def site_url(path):
+    """Route for ANY page on the site, including ones this pipeline did not
+    write. A file path is not a route: site/docs/index.md is served at "/", not
+    "/index", and a directory hub may carry a slug that differs from its folder.
+    pages.csv records the real url_path, so it wins; the path-derived form is
+    only the fallback."""
+    path = os.path.normpath(path)
+    u = _ROUTES.get(path)
+    if u:
+        return u
+    u = rel_url(path)
+    if u in ('/index', '/README'):
+        return '/'
+    return re.sub(r'/index$', '', u) or '/'
 
 def dur_human(d):
     if not d:
@@ -234,6 +261,15 @@ for n in pub_nodes:
     n.dirpath = os.path.join(L2DIR, *reversed(chain))
     n.page = os.path.join(n.dirpath, 'overview.mdx')
 
+# Page keys become public URL slugs, so a slug minted from a raw social-media
+# title can carry wording the site will not say in its own voice. An override
+# here retires that slug for good; the minting rule is otherwise unchanged.
+KEY_OVERRIDES = {
+    # "hand off" implies a deliberate transfer between people and is not what the
+    # footage establishes. See the repo guidance on this phrasing.
+    'Vid_Hand_Off_pANvLdZ': 'Vid_Guard_Hands_Split_pANvLdZ',
+}
+
 used_keys = set(n.key for n in pub_nodes)
 for r in videos:
     v = r['v']
@@ -248,6 +284,7 @@ for r in videos:
     if not seed:
         seed = (v.get('cid') or v.get('sha256') or 'x')[-12:]
     k = mint_key(v.get('title'), seed)
+    k = KEY_OVERRIDES.get(k, k)
     base, i = k, 2
     while k in used_keys:
         k = f'{base}_{i}'; i += 1
@@ -331,6 +368,32 @@ with ThreadPoolExecutor(max_workers=6) as ex:
     list(ex.map(probe_and_poster, videos))
 print('  posters on disk:', len([r for r in videos if r['poster']]), flush=True)
 
+# ------------------------------------------------- CID CONTENT-TYPE GATE
+# A CID is an opaque identity; nothing about it says the bytes are video. This
+# corpus contains at least one entry whose CID resolves to a JPEG, which had it
+# gone unchecked would have wrapped a still image in a <video> player — a
+# control bar under a photograph, on a page that says it is footage.
+# Blocks for a pinned CID are local, so the first 32 bytes are cheap to read.
+def cid_kind(cid):
+    rc, _, _ = 0, '', ''
+    try:
+        p = subprocess.run([IPFS, 'cat', '--length', '32', cid],
+                           capture_output=True, timeout=25)
+        b = p.stdout
+    except Exception:
+        b = b''
+    if b[4:8] == b'ftyp':
+        return 'mp4'
+    if b[:4] == b'\x1aE\xdf\xa3':
+        return 'webm'
+    if b[:3] == b'\xff\xd8\xff':
+        return 'jpeg'
+    if b[:8] == b'\x89PNG\r\n\x1a\n':
+        return 'png'
+    if b[:3] == b'ID3' or b[:2] == b'\xff\xfb':
+        return 'mp3'
+    return 'unknown' if b else 'unreadable'
+
 # ---------------------------------------------------------- playback decision
 for r in videos:
     v = r['v']
@@ -357,6 +420,22 @@ for r in videos:
             r['pending_reason'] = 'no-media'
         else:
             r['pending_reason'] = 'unpinned'
+
+wrong_kind = []
+print('verifying CID content type for pinned entries ...', flush=True)
+with ThreadPoolExecutor(max_workers=6) as ex:
+    kinds = dict(zip([r['ident'] for r in videos if r['mode'] == 'ipfs'],
+                     ex.map(cid_kind, [r['v']['cid'] for r in videos if r['mode'] == 'ipfs'])))
+for r in videos:
+    if r['mode'] != 'ipfs':
+        continue
+    k = kinds.get(r['ident'], 'unknown')
+    if k in ('mp4', 'webm'):
+        continue
+    wrong_kind.append((r['key'], r['v']['cid'], k))
+    r['mode'] = 'pending'
+    r['pending_reason'] = 'not-video'
+print(f'  CIDs that are not video (player withheld): {len(wrong_kind)}', flush=True)
 
 # ------------------------------------------------------------------ templates
 GEN_NOTE = ('{/* Generated by videos_planning/generator/gen_videos_pages.py from '
@@ -412,6 +491,11 @@ def player_block(r):
         body = ('**Media pending.** Only the audio of this item is held locally, and it has not '
                 'yet been published, so there is nothing to play here yet. The write-up below is '
                 'drawn from the transcript.')
+    elif reason == 'not-video':
+        body = ('**Media pending.** The content identifier recorded for this item does not '
+                'resolve to a video file, so there is nothing to play here. The identifier '
+                'is recorded below for correction and the write-up is complete.  \n'
+                f'CID (does not resolve to video): `{v.get("cid")}`')
     elif reason == 'no-cid':
         body = ('**Media pending.** No content identifier has been recorded for this item yet, '
                 'so it cannot be played here. The write-up below is complete.')
@@ -421,6 +505,8 @@ def player_block(r):
                 'records that describe it.')
     lines.append('\n:::note\n\n' + body + '\n\n:::\n')
     return ''.join(lines)
+
+_load_routes()
 
 PAGE_TITLES = {}
 def _load_page_titles():
@@ -541,7 +627,7 @@ def nav_block_video(r):
     if appears:
         lines += ['## Where This Video Also Appears', '']
         for p in sorted(set(appears)):
-            lines.append(f'* [{page_label(p)}]({rel_url(p)})')
+            lines.append(f'* [{page_label(p)}]({site_url(p)})')
         lines.append('')
 
     also = sorted({m.key: m for m in r['also_nodes'] if m.rec > 0}.values(), key=lambda x: x.title)
@@ -556,7 +642,7 @@ def nav_block_video(r):
     if peers:
         lines += ['## Other Videos In This Section', '']
         for p in peers[:12]:
-            lines.append(f'* [{clean_title(p["v"].get("title"), 80)}]({p["url"]})')
+            lines.append(f'* [{_vt(p, 80)}]({p["url"]})')
         lines.append('')
 
     if anc is not None:
@@ -571,12 +657,11 @@ def write_video_page(r):
     v = r['v']
     old = existing_fm(r['page'])
     authored = old.get('ck_authored') == 'true'
-    title = old.get('title') if authored and old.get('title') else clean_title(v.get('title'))
+    title = r.get('title') or clean_title(v.get('title'))
     label = old.get('sidebar_label') if authored and old.get('sidebar_label') else short_label(v.get('title'))
     prose = extract_prose(r['page']) or baseline_writeup(r)
     desc = (old.get('description') if authored and old.get('description')
             else first_sentences(v.get('ai_description') or v.get('manifest_description') or title, 2, 260))
-    r['title'] = title
     fm = ['---',
           'title: ' + esc_yaml(title),
           'sidebar_label: ' + esc_yaml(label),
@@ -601,13 +686,20 @@ def write_video_page(r):
     return existed
 
 # ------------------------------------------------------------- cluster pages
+def _vt(r, limit):
+    """Link text for a video: the authored title when there is one, trimmed."""
+    t = r.get('title') or clean_title(r['v'].get('title'), limit)
+    if len(t) > limit:
+        t = t[:limit].rsplit(' ', 1)[0].rstrip(' ,;:-') + '…'
+    return t
+
 def toc_rows_for(n):
     """(label, url, count) rows for a node's children, bypass applied."""
     rows = []
     for k in sorted([k for k in n.kids if k.rec > 0], key=lambda x: x.title):
         if k.bypass:
             t = k.bypass_target
-            rows.append((clean_title(t['v'].get('title'), 80), t['url'], 1, 'video'))
+            rows.append((_vt(t, 80), t['url'], 1, 'video'))
         else:
             rows.append((k.title, rel_url(k.page), k.rec, 'cluster'))
     return rows
@@ -632,7 +724,7 @@ def baseline_cluster_prose(n):
         p = p if os.path.isabs(p) else os.path.join(ROOT, sp)
         if os.path.exists(p) and p.startswith(DOCS):
             bits.append(f'The written analysis for this area lives at '
-                        f'[{rel_url(p)}]({rel_url(p)}). The footage below is the '
+                        f'[{page_label(p)}]({site_url(p)}). The footage below is the '
                         'visual record behind it.')
             bits.append('')
     elif l2:
@@ -657,7 +749,7 @@ def nav_block_cluster(n):
     if own or kidvids:
         lines += ['## Videos In This Section', '', '| Video | Length | What it shows |', '|---|---|---|']
         for r in own:
-            t = clean_title(r['v'].get('title'), 70)
+            t = _vt(r, 70)
             d = dur_human(r['v'].get('duration')) or '—'
             cap = first_sentences(r['v'].get('ai_description'), 1, 150).replace('|', '—')
             lines.append(f'| [{t}]({r["url"]}) | {d} | {cap} |')
@@ -669,7 +761,7 @@ def nav_block_cluster(n):
     for k in sorted(parent_kids, key=lambda x: x.title):
         if k.bypass:
             t = k.bypass_target
-            sibs.append((clean_title(t['v'].get('title'), 70), t['url'], 1))
+            sibs.append((_vt(t, 70), t['url'], 1))
         else:
             sibs.append((k.title, rel_url(k.page), k.rec))
     if sibs:
@@ -688,9 +780,10 @@ def write_cluster_page(n):
     desc = (old.get('description') if authored and old.get('description') else
             (f'Video evidence filed under {n.title} in the Charlie Kirk investigation '
              f'— {n.rec} clip' + ('s' if n.rec != 1 else '') + ' with write-ups and sources.'))
+    label = old.get('sidebar_label') if authored and old.get('sidebar_label') else short_label(n.title)
     fm = ['---',
           'title: ' + esc_yaml(n.title),
-          'sidebar_label: ' + esc_yaml(short_label(n.title)),
+          'sidebar_label: ' + esc_yaml(label),
           'description: ' + esc_yaml(desc),
           'ck_authored: ' + ('true' if authored else 'false'),
           'ck_node_key: ' + esc_yaml(n.key),
@@ -703,6 +796,26 @@ def write_cluster_page(n):
     existed = os.path.exists(n.page)
     open(n.page, 'w', encoding='utf-8').write(txt)
     return existed
+
+# ------------------------------------------------- authored titles (PRE-PASS)
+# Every table of contents, peer list and pages.csv row is built from titles, so
+# any title a previous run's enrichment pass authored has to be loaded BEFORE
+# the first page is written. Doing it inside the emit loop would leave pages
+# written earlier in the loop pointing at the old title.
+authored_titles = 0
+for n in pub_nodes:
+    fm = existing_fm(n.page)
+    if fm.get('ck_authored') == 'true' and fm.get('title'):
+        n.title = mdx_safe(sanitize_prose(fm['title']))
+        authored_titles += 1
+for r in videos:
+    fm = existing_fm(r['page'])
+    if fm.get('ck_authored') == 'true' and fm.get('title'):
+        r['title'] = mdx_safe(sanitize_prose(fm['title']))
+        authored_titles += 1
+    else:
+        r['title'] = clean_title(r['v'].get('title'))
+print(f'authored titles carried forward: {authored_titles}', flush=True)
 
 # ------------------------------------------------------------------ emit
 print('writing cluster pages ...', flush=True)
@@ -890,7 +1003,7 @@ toc = ['{/* VIDEOS_TOC_START */}', '',
 for k in sorted([k for k in roots if k.rec > 0], key=lambda x: x.title):
     if k.bypass:
         t = k.bypass_target
-        toc.append(f'| [{clean_title(t["v"].get("title"), 80)}]({t["url"]}) | 1 |')
+        toc.append(f'| [{_vt(t, 80)}]({t["url"]}) | 1 |')
     else:
         toc.append(f'| [{k.title}]({rel_url(k.page)}) | {k.rec} |')
 toc += ['', 'Also in this section: '
@@ -973,7 +1086,12 @@ for r in videos:
         node_title=r['owner'].title, node_page=r['owner'].page,
         cid=v.get('cid') or '', sha256=v.get('sha256') or '', mode=r['mode'],
         pending_reason=r['pending_reason'], poster=r['poster'],
-        title=clean_title(v.get('title')), raw_title=v.get('title'),
+        title=r.get('title') or clean_title(v.get('title')),
+        raw_title=v.get('title'),
+        # The page's own description is the best one-line caption available: it
+        # was authored against the transcript and scrubbed for safe writing,
+        # whereas the raw title is whatever the poster headlined it with.
+        caption=existing_fm(r['page']).get('description') or '',
         duration=v.get('duration'), file_path=v.get('file_path'),
         transcription_file=v.get('transcription_file') or '',
         ai_description_file=v.get('ai_description_file') or '',
@@ -1020,6 +1138,7 @@ print(f'Video pages:   {v_new} created, {v_old} rewritten')
 print(f'Players: {modes.get("ipfs",0)} IPFS (pinned), {modes.get("thirdparty",0)} third-party embed, '
       f'{modes.get("link",0)} link-only, {modes.get("pending",0)} media pending {pend}')
 print(f'Posters written/present: {len([r for r in videos if r["poster"]])}')
+print(f'CIDs that are not video (player withheld): {len(wrong_kind)} {wrong_kind}')
 print(f'Orphans removed: {len(orphans)}')
 print(f'pages.csv: {added} added, {updated} updated, {removed} stale Videos rows dropped')
 print(f'Invisible-unicode findings: {bad}')
