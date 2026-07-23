@@ -458,7 +458,7 @@ Provisions (b) and (d) are constitutionally vulnerable:
 
 ### 7. No Provision Investigating the Gag Order's Origin
 
-**Problem:** Judge Graf issued a sweeping gag order on his own motion. No party requested it. This is itself evidence of potential cover-up influence. Law 4 overrides gag orders via federal supremacy but does not mandate investigation into whether the judge was influenced by intelligence services.
+**Problem:** Judge Graf issued a gag order on his own motion. No party requested it. This is itself evidence of potential cover-up influence. Law 4 overrides gag orders via federal supremacy but does not mandate investigation into whether the judge was influenced by intelligence services.
 
 **Status:** NOT FIXED.
 
