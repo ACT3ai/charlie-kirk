@@ -173,7 +173,11 @@ def valid_on_page(tilde_path):
     if '/site/internals/static/' in p: return False
     return os.path.splitext(p)[1].lower() in PAGE_EXT
 
-# 1) recover corrupted / prior on_pages values into a set of tilde page paths per inner.
+# 1) Read the PRIOR on_pages values. Spec Stage 8: these are HINTS, never bindings.
+# They are NOT merged forward. The observed sweep in step 2 is the sole source of
+# truth; step 3 sets on_pages to exactly the observed set and every prior value the
+# sweep does not reproduce is REMOVED and reported. Merging prior values forward is
+# what produced the 946 fabricated bindings the spec's Stage 8 exists to undo.
 def recover_on_pages(inner):
     got = set()
     for src_key in ('on_pages', 'on_site_pages'):
@@ -223,9 +227,12 @@ RE_IPFS = re.compile(r'(?:ipfs\.io/ipfs/|ipfs://|dweb\.link/ipfs/)([A-Za-z0-9]{4
 # sha256 the local static file on disk and match it to an entry. Without this the
 # sweep can only re-discover evidence-hash and CID embeds, so a newly-added plain
 # -path embed of a corpus image would silently never reach on_pages.
-RE_IMG_SRC = re.compile(r'<img\b[^>]*?\bsrc\s*=\s*["\']([^"\']+)["\']', re.I)
+# MULTI-LINE AWARE (spec Stage 8): the site's dominant embed form splits `<img`
+# and `src=` across lines, so match the WHOLE tag with re.S first, then pull src
+# out of it. A line-oriented `<img[^>]*src="..."` recovers ~28% of references.
+RE_TAG = re.compile(r'<(?:img|iframe|video|source)\b.*?>', re.I | re.S)
+RE_SRC_ATTR = re.compile(r'\b(?:src|poster)\s*=\s*["\']([^"\']+)["\']', re.I)
 RE_MD_IMG  = re.compile(r'!\[[^\]]*\]\(([^)\s]+)')
-RE_MEDIA_SRC = re.compile(r'<(?:iframe|video|source)\b[^>]*?\bsrc\s*=\s*["\']([^"\']+)["\']', re.I)
 IMG_EXT = ('.jpg', '.jpeg', '.png', '.webp', '.gif')
 STATIC_DIRS = [os.path.join(ROOT, 'site/internals/static'),
                os.path.join(ROOT, 'site/static')]
@@ -298,36 +305,84 @@ for dirpath, dirnames, filenames in os.walk(ROOT):
         # worth hashing on pages we would actually record, and only when the ref
         # resolves to a file whose sha256 is a known corpus image.
         if record:
-            for rx in (RE_IMG_SRC, RE_MD_IMG, RE_MEDIA_SRC):
-                for m in rx.finditer(txt):
-                    lsha = sha_of_local_ref(m.group(1), full)
-                    if lsha and lsha in sha_to_inners and lsha not in shas:
-                        shas.add(lsha); refs_found += 1; resolved_local += 1
+            srcs = []
+            for tag in RE_TAG.findall(txt):            # multi-line aware: whole tag first
+                m = RE_SRC_ATTR.search(tag)
+                if m: srcs.append(m.group(1))
+            srcs += [m.group(1) for m in RE_MD_IMG.finditer(txt)]
+            for s in srcs:
+                lsha = sha_of_local_ref(s, full)
+                if lsha and lsha in sha_to_inners and lsha not in shas:
+                    shas.add(lsha); refs_found += 1; resolved_local += 1
             for sha in shas:
                 if sha in sha_to_inners:
                     sweep_pages.setdefault(sha, set()).add(tilde_page)
 
-# 3) merge recovered + swept onto every inner, set on_pages (always present).
-op_nonempty = 0
-op_bindings = 0
+# 3) REBUILD on_pages from the observed sweep only. Prior values are hints; any
+# prior binding the sweep did not reproduce is a fabrication and is removed here
+# (the spec's one sanctioned deletion) and reported below with its reason.
+if sum(len(v) for v in sweep_pages.values()) < 80:
+    raise SystemExit('STAGE 8 ABORT: sweep resolved implausibly few references '
+                     f'({sum(len(v) for v in sweep_pages.values())} < 80) — extractor is broken. '
+                     'Refusing to write and blank on_pages across the corpus.')
+
+op_nonempty = op_bindings = 0
+removed = []          # (page, sha256, reason)
 def _set_op(inner, key, chain, node):
     global op_nonempty, op_bindings
     sha = (inner.get('sha256') or '').lower()
-    merged = set(existing_pages.get(id(inner), set()))
-    if sha:
-        merged |= sweep_pages.get(sha, set())
-    merged = sorted(merged)
-    inner['on_pages'] = [{'page': p} for p in merged]
-    if merged:
+    prior = existing_pages.get(id(inner), set())
+    observed = sweep_pages.get(sha, set()) if sha else set()
+    for p in sorted(prior - observed):
+        reason = ('page does not exist on disk' if not os.path.isfile(expu(p))
+                  else 'page contains no reference resolving to this image')
+        removed.append((p, sha[:12], reason))
+    kept = sorted(observed)
+    inner['on_pages'] = [{'page': p} for p in kept]
+    if kept:
         op_nonempty += 1
-        op_bindings += len(merged)
+        op_bindings += len(kept)
 each_media(_set_op)
 print('='*28); print('STAGE 8 (on_pages)')
 print(f'Files read: {files_read}   image references found: {refs_found}')
 print(f'Resolved by evidence-filename(sha256): {resolved_evid}   by CID: {resolved_cid}   by local-file(sha256): {resolved_local}')
 print(f'Unresolved CID references: {len(unresolved)}')
-print(f'Prior/corrupted on_pages recovered: {recovered_total}')
+print(f'Prior on_pages values seen (hints, NOT merged): {recovered_total}')
 print(f'Entries with on_pages non-empty: {op_nonempty}   total page bindings: {op_bindings}')
+print(f'Bindings REMOVED as unsupported by observation: {len(removed)}')
+_rc = {}
+for _p, _s, _r in removed: _rc[_r] = _rc.get(_r, 0) + 1
+for _r, _n in sorted(_rc.items(), key=lambda x: -x[1]): print(f'    {_n:5d}  {_r}')
+_pc = {}
+for _p, _s, _r in removed: _pc[_p] = _pc.get(_p, 0) + 1
+for _p, _n in sorted(_pc.items(), key=lambda x: -x[1])[:12]:
+    print(f'    {_n:5d}  {_p.replace(TILDE_ROOT + "/site/docs/", "")}')
+with open('/tmp/ck_on_pages_removed.tsv', 'w') as fh:
+    for _p, _s, _r in removed: fh.write(f'{_p}\t{_s}\t{_r}\n')
+print('    (full removal list: /tmp/ck_on_pages_removed.tsv)')
+
+# --- should_be_on_pages: key always present; preserve prior values that still
+# resolve on disk. The topical selection itself is Stage 11 (plan_should_be.py),
+# which runs after this and merges its rows in. Here we only guarantee the key
+# exists and drop paths whose page has vanished.
+sb_nonempty = sb_bind = sb_dropped = 0
+def _set_sb(inner, *a):
+    global sb_nonempty, sb_bind, sb_dropped
+    v = inner.get('should_be_on_pages') or []
+    keep = []
+    for pg in (v if isinstance(v, list) else [v]):
+        p = pg.get('page') if isinstance(pg, dict) else (pg if isinstance(pg, str) else '')
+        if not p: continue
+        if not (p.startswith('~/') and p.endswith(('.md', '.mdx'))): sb_dropped += 1; continue
+        if '/site/docs/Photos/' in p or '/site/docs/' not in p: sb_dropped += 1; continue
+        if not os.path.isfile(expu(p)): sb_dropped += 1; continue
+        keep.append(p)
+    keep = sorted(set(keep))
+    inner['should_be_on_pages'] = [{'page': p} for p in keep]
+    if keep:
+        sb_nonempty += 1; sb_bind += len(keep)
+each_media(_set_sb)
+print(f'should_be_on_pages preserved: {sb_nonempty} entries / {sb_bind} assignments   dropped (bad or missing path): {sb_dropped}')
 
 # ============================================================ Stage 10: image_page
 EXCLUDE_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'exclude_images.txt')
@@ -439,7 +494,9 @@ check(doc['level_3'], 3)
 # ============================================================ emit (FIXED)
 MEDIA_ORDER = ['cid', 'ipfs_pinned', 'sha256', 'file_path', 'ai_description',
                'ai_description_file', 'ocr_file', 'transcription_file',
-               'image_page', 'on_pages', 'ipfs_url', 'also_filed_in']
+               'image_page', 'on_pages', 'should_be_on_pages',
+               'ipfs_url', 'also_filed_in']
+PAGE_LIST_FIELDS = ('on_pages', 'should_be_on_pages')
 PROSE_FIELDS = {'title', 'ai_description'}
 q = q_identity
 
@@ -461,14 +518,14 @@ def emit_media(m, pad):
         v = inner[k]
         if k == 'ipfs_pinned':
             out.append(f'{p2}ipfs_pinned: {"true" if v else "false"}')
-        elif k == 'on_pages':
+        elif k in PAGE_LIST_FIELDS:
             if v:
-                out.append(f'{p2}on_pages:')
+                out.append(f'{p2}{k}:')
                 for pg in v:
                     path = pg['page'] if isinstance(pg, dict) else pg
                     out.append(f'{p2}  - page: {q(path)}')
             else:
-                out.append(f'{p2}on_pages: []')
+                out.append(f'{p2}{k}: []')
         elif k == 'sha256':
             out.append(f'{p2}sha256: {v if v else chr(34)+chr(34)}')
         elif isinstance(v, list):
