@@ -159,7 +159,7 @@ from government possession into the court case and history books.
     to them or communications with intelligence services proves a coordinated operation.
 
 
-(Possible) Linkage #6: Fort Huachuca meetings September 1-11 could expose pre-planning at the highest
+(Possible) Linkage #6: [Fort Huachuca](/US_Intelligence/Fort_Huachuca/overview) meetings September 1-11 could expose pre-planning at the highest
     levels. Fort Huachuca is the Army's intelligence center. If PERSON_10_REDACTED (Kirk's
     security chief) or PERSON_7_REDACTED attended meetings there days before the assassination,
     it raises questions about foreknowledge. U.S. Air Force VIP transport jets (SAM

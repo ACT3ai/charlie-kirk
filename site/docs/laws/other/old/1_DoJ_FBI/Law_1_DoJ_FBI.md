@@ -71,7 +71,7 @@ To require the Department of Justice, the Federal Bureau of Investigation, and a
 **Aircraft Records (Items #81-#86 and related):**
    1. All flight records, passenger manifests, and crew lists for Egyptian aircraft [SU-BTT](/Planes/SU-BTT), [SU-BND](/Planes/Egyptian-Armada), [SU-BTU](/Planes/Egyptian-Armada), [SU-BTV](/Planes/Egyptian-Armada), and [SU-BGM](/Planes/Egyptian-Armada)
    2. All records for surveillance aircraft [N1098L](/Planes/N1098L/overview) (HADES spy plane), [N59906](/Planes/N59906) (MARC Inc. Piper), [N888KG](/Planes/N888KG), [N560TW](/Planes/N560TW), [N40JD](/Planes/N40JD), [N872RA](/Planes/N872RA), [N102DZ](/Planes/N102DZ), and [N55906](/Planes/N55906)
-   3. All records for U.S. Air Force VIP transport jet 99-0404 (SAM callsign) and Egyptian military aircraft T7ELL and EJM36
+   3. All records for U.S. Air Force VIP transport jet [99-0404](/Planes/SAM-99-0404) (SAM callsign) and Egyptian military aircraft [T7ELL](/Planes/T7ELL-EJM36) and EJM36
    4. CBP inspection records, cargo manifests, and security clearance records for all listed aircraft
    5. Who contracted, paid for, and received data from any surveillance aircraft
 
@@ -122,7 +122,7 @@ To require the Department of Justice, the Federal Bureau of Investigation, and a
    4. All information on electronic jamming of cell/internet signals at UVU (Item #11)
    5. All information on drone activity, video feeds, and surveillance operations at UVU (Items #8, #9, #12, #15)
    6. All information on evidence of FBI requesting witness video deletion or videos being remotely deleted from witness devices (Items #47-#48)
-   7. All information on meetings at Fort Huachuca AZ and One Rodney Square, Wilmington DE (September 1-11, 2025) related to Charlie Kirk (Items #28-#31)
+   7. All information on meetings at [Fort Huachuca](/US_Intelligence/Fort_Huachuca/overview) AZ and One Rodney Square, Wilmington DE (September 1-11, 2025) related to Charlie Kirk (Items #28-#31)
    8. All information on Charlie Kirk's communications expressing fear for his life (Item #14)
    9. All information on rental cars used by foreign operatives (Items #42, #124-#129)
    10. All information on psychological operations or manipulation of Tyler Robinson or Lance Twiggs (Item #38)
@@ -315,7 +315,7 @@ Each item in Schedule A is individually mandated for complete disclosure. Partia
 
 ### Intelligence Service Discovery (#1–#56)
 
-* #1: Aircraft Records for Listed Planes: Include all information the FBI has on the following aircraft: SU-BTT, SU-BND, SU-BTU, SU-BTV, SU-BGM, N1098L, N888KG, N59906, N560TW, N102DZ, N40JD, N872RA, 99-0404, T7ELL, EJM36, and N55906—including location, passengers, crew, cargo, and anyone who flew on them within 2 weeks before or on the day of the assassination. Also include all information related to investigating the assassination or anything peripheral, or any connection to anyone in the Charlie Kirk investigation.
+* #1: Aircraft Records for Listed Planes: Include all information the FBI has on the following aircraft: SU-BTT, [SU-BND](/Planes/SU-BND), [SU-BTU](/Planes/SU-BTU), [SU-BTV](/Planes/SU-BTV), [SU-BGM](/Planes/SU-BGM), N1098L, N888KG, N59906, N560TW, N102DZ, N40JD, N872RA, 99-0404, T7ELL, EJM36, and N55906—including location, passengers, crew, cargo, and anyone who flew on them within 2 weeks before or on the day of the assassination. Also include all information related to investigating the assassination or anything peripheral, or any connection to anyone in the Charlie Kirk investigation.
 
 * #2: Foreign Threats Against Charlie Kirk: Include all information the FBI, DoJ, or any U.S. intelligence community agency has regarding threats, plans, or actions by any foreign intelligence service or country toward assassination of Charlie Kirk, including consideration of such actions, or hiring contractors to carry them out. Also include all information on any foreign government or entity that discussed, planned, or considered harm to Charlie Kirk in any capacity.
 

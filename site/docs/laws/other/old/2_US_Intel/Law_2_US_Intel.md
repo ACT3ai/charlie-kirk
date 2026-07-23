@@ -48,10 +48,10 @@ To require all United States Intelligence Community agencies to release all info
    5. All SIGINT, HUMINT, IMINT, and MASINT products related to foreign intelligence operations in the Utah area
 
 **Aircraft and Surveillance Operations (Items #1, #15, #49, #81-#86, #155-#159):**
-   1. All intelligence regarding Egyptian aircraft [SU-BTT](/Planes/SU-BTT), [SU-BND](/Planes/Egyptian-Armada), [SU-BTU](/Planes/Egyptian-Armada), [SU-BTV](/Planes/Egyptian-Armada), [SU-BGM](/Planes/Egyptian-Armada), and Egyptian military aircraft T7ELL and EJM36
+   1. All intelligence regarding Egyptian aircraft [SU-BTT](/Planes/SU-BTT), [SU-BND](/Planes/Egyptian-Armada), [SU-BTU](/Planes/Egyptian-Armada), [SU-BTV](/Planes/Egyptian-Armada), [SU-BGM](/Planes/Egyptian-Armada), and Egyptian military aircraft [T7ELL](/Planes/T7ELL-EJM36) and EJM36
    2. All intelligence regarding surveillance aircraft [N1098L](/Planes/N1098L/overview) (HADES spy plane), including who contracted, operated, and received its surveillance feed
    3. All intelligence regarding military or civilian drones operating at or near UVU on September 10, 2025
-   4. All intelligence regarding U.S. Air Force VIP transport jet 99-0404 (SAM callsign) flights September 8-9, 2025
+   4. All intelligence regarding U.S. Air Force VIP transport jet [99-0404](/Planes/SAM-99-0404) (SAM callsign) flights September 8-9, 2025
    5. All intelligence regarding any aircraft on the Schedule A plane list that flew with transponders off
 
 **Electronic Warfare and Signals (Items #11, #67-#73):**
@@ -60,7 +60,7 @@ To require all United States Intelligence Community agencies to release all info
    3. All intelligence regarding cell tower anomalies or signal disruption in the UVU area
 
 **Meetings and Pre-Planning (Items #28-#31, #50):**
-   1. All intelligence regarding meetings at Fort Huachuca, AZ (September 1-11, 2025) related to Charlie Kirk
+   1. All intelligence regarding meetings at [Fort Huachuca](/US_Intelligence/Fort_Huachuca/overview), AZ (September 1-11, 2025) related to Charlie Kirk
    2. All intelligence regarding meetings at One Rodney Square, Wilmington, DE (September 1-11, 2025) related to Charlie Kirk
    3. All intelligence regarding the Hampton meeting (August 3-6, 2025) including foreign intelligence presence
    4. All intelligence regarding any pre-planning or foreknowledge of the assassination

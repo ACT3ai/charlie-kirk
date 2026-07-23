@@ -252,7 +252,7 @@
 | Witness Intimidation | #180-#181 | Security Detail | #182 |
 | Medical / Hospital | #183-#185 | TPUSA Financial | #186-#187 |
 | Mosaic Pro / AV Equipment | #188-#190 | [Butch Hibbs](/People/butch-hibbs) / Exploding Mic | #191-#192 |
-| FBI Conduct at Scene | #193-#194 | Fort Huachuca Meeting | #195 |
+| FBI Conduct at Scene | #193-#194 | [Fort Huachuca](/US_Intelligence/Fort_Huachuca/overview) Meeting | #195 |
 | Kirk's Statements | #197-#199 | Bullet Engravings | #200 |
 | Crime Scene Paving | #201 | AES Factory Explosion | #202 |
 | Tyler Robinson Movement | #203-#206 | Venue Access / Weapons | #207-#208 |
@@ -308,11 +308,11 @@
 # Slide 23: #1 Aircraft Records for Listed Planes
 **16+ Aircraft Connected to the Assassination**
 
-- Egyptian aircraft: **SU-BTT, SU-BND, [SU-BTU](/Planes/Egyptian-Armada), [SU-BTV](/Planes/Egyptian-Armada), [SU-BGM](/Planes/Egyptian-Armada)**
+- Egyptian aircraft: **SU-BTT, [SU-BND](/Planes/SU-BND), [SU-BTU](/Planes/Egyptian-Armada), [SU-BTV](/Planes/Egyptian-Armada), [SU-BGM](/Planes/Egyptian-Armada)**
 - HADES spy plane: **N1098L** -- circled UVU 35 minutes before the shooting
 - Surveillance aircraft: **[N59906](/Planes/N59906)** (MARC Inc. Piper), **[N888KG](/Planes/N888KG), [N560TW](/Planes/N560TW), [N40JD](/Planes/N40JD), [N872RA](/Planes/N872RA), [N102DZ](/Planes/N102DZ), [N55906](/Planes/N55906)**
-- U.S. Air Force VIP transport: **99-0404** (SAM callsign)
-- Egyptian military: **T7ELL, EJM36**
+- U.S. Air Force VIP transport: **[99-0404](/Planes/SAM-99-0404)** (SAM callsign)
+- Egyptian military: **[T7ELL](/Planes/T7ELL-EJM36), EJM36**
 - Required disclosures: location, passengers, crew, cargo for all aircraft within 2 weeks before and on the day of the assassination
 - Any connection to anyone in the investigation must be disclosed
 - Why were Egyptian military planes and U.S. surveillance aircraft converging on Provo before the assassination?

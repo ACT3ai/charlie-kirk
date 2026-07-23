@@ -97,8 +97,8 @@ The Congress finds the following:
 
 **Aircraft Records (Items #82-#87 and related):**
    1. All flight records, passenger manifests, and crew lists for Egyptian aircraft [SU-BTT](/Planes/SU-BTT), [SU-BND](/Planes/Egyptian-Armada), [SU-BTU](/Planes/Egyptian-Armada), [SU-BTV](/Planes/Egyptian-Armada), and [SU-BGM](/Planes/Egyptian-Armada)
-   2. All records for surveillance aircraft [N1098L](/Planes/N1098L/overview) (HADES spy plane), [N59906](/Planes/N59906) (MARC Inc. Piper), [N888KG](/Planes/N888KG), [N560TW](/Planes/N560TW), [N40JD](/Planes/N40JD), [N872RA](/Planes/N872RA), [N102DZ](/Planes/N102DZ), [N55906](/Planes/N55906), and N582MM (TPUSA-linked aircraft)
-   3. All records for U.S. Air Force VIP transport jet 99-0404 (SAM callsign) and US Gov flight SAM-000 and foreign military aircraft T7ELL and EJM36
+   2. All records for surveillance aircraft [N1098L](/Planes/N1098L/overview) (HADES spy plane), [N59906](/Planes/N59906) (MARC Inc. Piper), [N888KG](/Planes/N888KG), [N560TW](/Planes/N560TW), [N40JD](/Planes/N40JD), [N872RA](/Planes/N872RA), [N102DZ](/Planes/N102DZ), [N55906](/Planes/N55906), and [N582MM](/Planes/N582MM) (TPUSA-linked aircraft)
+   3. All records for U.S. Air Force VIP transport jet [99-0404](/Planes/SAM-99-0404) (SAM callsign) and US Gov flight [SAM-000](/Planes/SAM-000) and foreign military aircraft [T7ELL](/Planes/T7ELL-EJM36) and EJM36
    4. CBP inspection records, cargo manifests, and security clearance records for all listed aircraft
    5. Who contracted, paid for, and received data from any surveillance aircraft
 
@@ -150,7 +150,7 @@ The Congress finds the following:
    4. All records relating to electronic jamming of cell/internet signals at UVU (Item #11)
    5. All records relating to drone activity, video feeds, and surveillance operations at UVU (Items #8, #9, #12, #15)
    6. All records relating to evidence of FBI requesting witness video deletion or videos being remotely deleted from witness devices (Items #48-#49)
-   7. All records relating to meetings at Fort Huachuca AZ and One Rodney Square, Wilmington DE (September 1-11, 2025) related to Charlie Kirk (Items #28-#31)
+   7. All records relating to meetings at [Fort Huachuca](/US_Intelligence/Fort_Huachuca/overview) AZ and One Rodney Square, Wilmington DE (September 1-11, 2025) related to Charlie Kirk (Items #28-#31)
    8. All records relating to Charlie Kirk's communications expressing fear for his life (Item #14)
    9. All records relating to rental cars used by foreign operatives (Items #43, #125-#130)
    10. All records relating to psychological operations or manipulation of Tyler Robinson or Lance Twiggs (Item #39)
@@ -253,7 +253,7 @@ Each item in Schedule A is individually mandated for complete disclosure. Partia
 
 ### Intelligence Service Discovery (#1–#57)
 
-* #1: Aircraft Records for Listed Planes: Each covered agency shall produce all records relating to the following aircraft: SU-BTT, SU-BND, SU-BTU, SU-BTV, SU-BGM, N1098L, N888KG, N59906, N560TW, N102DZ, N40JD, N872RA, 99-0404, T7ELL, EJM36, N55906, and N582MM—including location, passengers, crew, cargo, and anyone who flew on them within 2 weeks before or on the day of the assassination. Each covered agency shall also produce all records related to investigating the assassination or anything peripheral, or any connection to anyone in the Charlie Kirk investigation involving these aircraft.
+* #1: Aircraft Records for Listed Planes: Each covered agency shall produce all records relating to the following aircraft: SU-BTT, [SU-BND](/Planes/SU-BND), [SU-BTU](/Planes/SU-BTU), [SU-BTV](/Planes/SU-BTV), [SU-BGM](/Planes/SU-BGM), N1098L, N888KG, N59906, N560TW, N102DZ, N40JD, N872RA, 99-0404, T7ELL, EJM36, N55906, and N582MM—including location, passengers, crew, cargo, and anyone who flew on them within 2 weeks before or on the day of the assassination. Each covered agency shall also produce all records related to investigating the assassination or anything peripheral, or any connection to anyone in the Charlie Kirk investigation involving these aircraft.
 
 * #2: Foreign Threats Against Charlie Kirk: Each covered agency shall produce all records relating to threats, plans, or actions by any foreign intelligence service or country toward assassination of Charlie Kirk, including consideration of such actions, or hiring contractors to carry them out. Each covered agency shall also produce all records relating to any foreign government or entity that discussed, planned, or considered harm to Charlie Kirk in any capacity.
 

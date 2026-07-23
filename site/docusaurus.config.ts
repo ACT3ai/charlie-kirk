@@ -166,6 +166,8 @@ const config: Config = {
           { from: "/Influencers/podcasts-project-costa-2", to: "/Influencers/podcasts-project-constitution" },
           { from: "/property_locations/overview", to: "/Locations/overview" },
           { from: "/property_locations", to: "/Locations/overview" },
+          // Cabot alibi moved under the new Fort Huachuca Level 3 cluster.
+          { from: "/US_Intelligence/Cabot_alibi", to: "/US_Intelligence/Fort_Huachuca/Cabot_alibi" },
         ],
       },
     ],

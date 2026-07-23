@@ -49,7 +49,7 @@ The core assumption: **The U.S. government is actively covering for Israel in th
 
 ### CC-6: "National Security" Blanket Classification
 
-**WORRY:** Agencies will reclassify documents or claim everything touches "sources and methods" to avoid disclosure. The CIA reclassified previously released JFK documents. Intelligence agencies routinely use classification as a censorship tool, not a security tool. Everything related to the 12 Israeli cell phones, the Egyptian military contractors, the HADES spy plane, the electronic warfare evidence, and the Fort Huachuca meeting will be classified at TOP SECRET/SCI and withheld.
+**WORRY:** Agencies will reclassify documents or claim everything touches "sources and methods" to avoid disclosure. The CIA reclassified previously released JFK documents. Intelligence agencies routinely use classification as a censorship tool, not a security tool. Everything related to the 12 Israeli cell phones, the Egyptian military contractors, the HADES spy plane, the electronic warfare evidence, and the [Fort Huachuca](/US_Intelligence/Fort_Huachuca/overview) meeting will be classified at TOP SECRET/SCI and withheld.
 
 **FIX:** (1) Automatic declassification of all covered records upon enactment (Law 4 has this -- replicate in Laws 1 and 2). (2) Prohibit reclassification after enactment. (3) Burden on agency to prove by clear and convincing evidence that disclosure would cause "grave and imminent" harm to a "currently active" operation -- not theoretical, not historical, not reputational. (4) Any agency failing to petition for classification exception within 7 days of enactment waives all classification claims permanently.
 

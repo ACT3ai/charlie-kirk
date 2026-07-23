@@ -103,7 +103,7 @@ To establish independent investigation teams led by designated trusted public fi
    4. **Alternative Shooter / Evidence Planting:** Rifle chain of custody, K-9 failure, FBI-directed re-search, clothing discrepancies, man in black at construction site, alternative calibers, laser targeting
    5. **Financial Connections:** Wire transfers to [Tyler Robinson](/People/tyler-robinson) and [Lance Twiggs](/People/lance-twiggs), payments to distraction people, foreign financial activity in Utah
    6. **Psychological Operations:** Manipulation of Tyler Robinson and Lance Twiggs, handler communications via Discord/Steam/in-game chat, electronic equipment at Lance Twiggs' residence
-   7. **Pre-Planning and Foreknowledge:** Fort Huachuca meetings, One Rodney Square meetings, TPUSA security planning anomalies, Charlie Kirk's death threats, the declined business deal, Hampton meeting
+   7. **Pre-Planning and Foreknowledge:** [Fort Huachuca](/US_Intelligence/Fort_Huachuca/overview) meetings, One Rodney Square meetings, TPUSA security planning anomalies, Charlie Kirk's death threats, the declined business deal, Hampton meeting
    8. **Electronic Warfare:** Cell/internet jamming at UVU, drone video feeds and recipients
 
 (b) Each investigation team shall track and report on each Schedule A item individually, documenting what was investigated, what was found, what was obstructed, and what remains unresolved.

@@ -68,7 +68,7 @@
     - Alternative shooter/weapon planting theories (7 specific leads)
     - Financial connections (TPUSA donors, foreign financial flows, [Scott Lazerson](/People/scott-lazerson))
     - Psychological operations (3 specific leads)
-    - Pre-planning/foreknowledge (Kirk's "kill me" texts, Hamptons meeting, Fort Huachuca, Jerusalem Post pre-announcement)
+    - Pre-planning/foreknowledge (Kirk's "kill me" texts, Hamptons meeting, [Fort Huachuca](/US_Intelligence/Fort_Huachuca/overview), Jerusalem Post pre-announcement)
     - Electronic warfare (2 specific leads)
 - **Mandatory Intelligence Community Assessment (Section 3):** DNI directs a fourth parallel intelligence assessment within 60 days, coordinating all remaining IC agencies beyond CIA and NSA. Must determine foreign/domestic intelligence involvement. Same 6-month public disclosure reporting cycle. Minimum 2-year commitment with option for team members to request up to 5 years.
 - **Independence and Non-Interference (Section 4):** 10 years for directing investigators to close inquiries, exclude theories, alter findings, or delay reports.

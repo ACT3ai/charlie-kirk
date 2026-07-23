@@ -76,7 +76,7 @@ All items #176 through #201 proposed in this analysis have been incorporated int
 
 ## Fort Huachuca Meeting
 
-**#194: Fort Huachuca Pre-Assassination Meeting** — ADDED (Law item #195 in all four laws)
+**#194: [Fort Huachuca](/US_Intelligence/Fort_Huachuca/overview) Pre-Assassination Meeting** — ADDED (Law item #195 in all four laws)
 
 ---
 

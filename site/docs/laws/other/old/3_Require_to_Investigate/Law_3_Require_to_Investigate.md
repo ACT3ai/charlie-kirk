@@ -86,7 +86,7 @@ To require the Federal Bureau of Investigation, all relevant federal and state l
    3. Electronic equipment installed at or directed at Lance Twiggs' residence
 
 **Pre-Planning and Foreknowledge:**
-   1. Meetings at Fort Huachuca, AZ (September 1-11, 2025) -- attendees, topics, connection to Kirk
+   1. Meetings at [Fort Huachuca](/US_Intelligence/Fort_Huachuca/overview), AZ (September 1-11, 2025) -- attendees, topics, connection to Kirk
    2. Meetings at One Rodney Square, Wilmington, DE (September 1-11, 2025)
    3. TPUSA security planning for UVU -- why was the planning window abnormally short?
    4. Charlie Kirk's communications expressing fear for his life -- who he told, when, exact content

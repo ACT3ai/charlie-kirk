@@ -39,7 +39,7 @@ Items #176-#178 request records relating to Robinson's associates without making
 
 ## 6. Fort Huachuca Meeting — ADDRESSED
 
-Items #28-#31 and #194 use "whether" framing: "all records relating to whether PERSON_10_REDACTED or PERSON_7_REDACTED attended any meeting at Fort Huachuca." Records request, not assertion.
+Items #28-#31 and #194 use "whether" framing: "all records relating to whether PERSON_10_REDACTED or PERSON_7_REDACTED attended any meeting at [Fort Huachuca](/US_Intelligence/Fort_Huachuca/overview)." Records request, not assertion.
 
 ---
 
