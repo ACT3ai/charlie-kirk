@@ -20,6 +20,13 @@ SITE_DIR dir is {ROOT_DIR}/site
 DOCS_DIR dir is {SITE_DIR}/docs
 PHOTOS_DIR dir is {DOCS_DIR}/Photos
 CUSTOM_CSS is file {SITE_DIR}/internals/src/css/custom.css
+
+The SIBLING VIDEO PIPELINE — read-only from here, never written by this prompt:
+VIDEO_PLANNING_DIR dir is {ROOT_DIR}/videos_planning
+VIDEOS_DIR dir is {ROOT_DIR}/videos
+VIDEO_HIERARCHY_FILE is file {VIDEOS_DIR}/videos.yaml
+VIDEOS_L2_DIR dir is {DOCS_DIR}/Videos
+
 IMAGES_L2_PAGE is file {PHOTOS_DIR}/overview.mdx
 HOME_PAGE is file {DOCS_DIR}/index.mdx
 PAGES_CSV is file {ROOT_DIR}/pages.csv
@@ -89,7 +96,80 @@ Does NOT write:
     one's prose. Their LAYOUT is a different matter and is this prompt's job —
     see GOAL and the Level 5 spec below.
   * {SITE_DIR}/sidebars.ts — never, unless explicitly asked.
+  * {VIDEOS_L2_DIR}, {VIDEOS_DIR}, {VIDEO_HIERARCHY_FILE}, or
+    {VIDEO_PLANNING_DIR} — the sibling video pipeline owns all four. Read them
+    freely; write none of them. The /Videos Level 2 has its own navigation
+    prompt, its own generator, and its own TOC markers, and a run of this
+    prompt that edits a page over there destroys that work.
   * Anything outside {PHOTOS_DIR} other than {PAGES_CSV} rows.
+
+============================
+KNOWLEDGE — MEDIA-TYPE SCOPE: THE LEVEL 5 LAYOUT IS AN IMAGE LAYOUT
+============================
+
+This is the images Level 2. Every page it navigates to hosts a STILL IMAGE.
+Video has its own Level 2 with a parallel structure and a different layout,
+because the two media need different markup:
+
+  images                                videos
+  ------                                ------
+  {PHOTOS_DIR}                          {VIDEOS_L2_DIR}
+  {HIERARCHY_FILE}                      {VIDEO_HIERARCHY_FILE}
+  {GEN_SCRIPT}                          gen_videos_pages.py
+  Img_*.mdx leaf pages                  Vid_*.mdx leaf pages
+  CK_EVIDENCE_LAYOUT css block          CK_VIDEO_LAYOUT css block
+  ck-evidence-* classes                 ck-video-* classes
+  <img> served from static/img/evidence <video> off a public IPFS gateway
+
+Both generators write into the same {CUSTOM_CSS}, so each owns its OWN marked
+block and touches nothing outside it. {GEN_SCRIPT} owns CK_EVIDENCE_LAYOUT and
+must never write CK_VIDEO_LAYOUT — doing so silently destroys the video layout,
+and the next video run destroys the image layout back.
+
+THE GENERATOR MUST NOT BE ABLE TO RENDER A VIDEO. {GEN_SCRIPT} today contains a
+code path that does: a `classify_ipfs_cids()` helper that decides whether a CID
+is a video, an `is_video_src()` test, and a branch that emits
+
+    <div className="ck-evidence-image-wrap ck-evidence-wide">
+      <video className="ck-evidence-image" controls preload="metadata">
+        <source src="https://ipfs.io/ipfs/<CID>" type="video/mp4" />
+
+into an `Img_*.mdx` page under {PHOTOS_DIR}. That branch is why nine video
+pages are published in the image hierarchy today, all under
+{PHOTOS_DIR}/Official_Narrative/Narrative_Shot_in_the_Heart/, each headed "What
+This Image Shows" and each carrying `ck_image_cid: none` because a video entry
+has no sha256 to stamp.
+
+The fix is inversion, not deletion, of the type test. The classifier stays —
+knowing which CIDs are videos is exactly what is needed — but its result is
+used to SKIP the entry instead of to choose different markup:
+
+  * An entry that types as video is skipped: no leaf page, no {PAGES_CSV} row,
+    no TOC link on its parent cluster page, and it does not count toward the
+    parent's recursive image count. It is counted and reported.
+  * An entry whose type cannot be settled is UNKNOWN and is also skipped. All
+    9 known bad entries are extensionless IPFS CIDs with an empty sha256;
+    assuming that shape is an image is what published them.
+  * {GEN_SCRIPT} retains no branch capable of emitting `<video>`, `<source>`,
+    `<audio>`, or a media-player `<iframe>`. A generator that CAN render a
+    video will render one the next time a mistyped entry reaches it.
+  * {VIDEOS_DIR}/manifest.yaml and {ROOT_DIR}/IPFS/ipfs.txt are the best oracle
+    for whether a CID is a video, but BOTH must be parsed by filename — they
+    describe a mixed corpus, and scraping their CIDs wholesale types 70 image
+    entries as video when only 9 are (measured 2026-07-23). Do not use
+    {VIDEO_HIERARCHY_FILE} yet: it is still a schema shell whose cids describe
+    the inherited image corpus. Fall back to how the CID is embedded elsewhere
+    on the site.
+
+THE NINE EXISTING PAGES ARE NOT ORPHANS. Once their entries are skipped, the
+orphan sweep will see nine leaf pages under {PHOTOS_DIR} with no backing entry
+and try to remove them. It must not. They are written, published pages with
+inbound links and no replacement under {VIDEOS_L2_DIR} yet. Treat any page
+under {PHOTOS_DIR} containing a `<video>` or `<source>` element as PROTECTED:
+leave it byte-identical, exclude it from orphan removal, list its path in
+{FINDINGS_FILE}, and report the count. Migrating them to {VIDEOS_L2_DIR} and
+then withdrawing them from {PHOTOS_DIR} is a separate, explicitly-approved job,
+sequenced so the /Videos pages exist before the /Photos ones go away.
 
 ============================
 KNOWLEDGE — READ FIRST, IN THIS ORDER
@@ -508,9 +588,19 @@ STAGE 5 — BUILD AND VERIFY
   {LAYOUT_GUIDELINES} in full — the grep checks against the built CSS bundle and
   the generated pages, then the browser eyeball checks it lists. Every point
   must pass before the run is declared complete.
+* MEDIA-TYPE AUDIT. Grep every page {GEN_SCRIPT} wrote this run for `<video`,
+  `<source`, `<audio`, and media-player `<iframe`. Expected count is ZERO; any
+  hit fails the run. Then grep {GEN_SCRIPT} itself for those same strings —
+  expected ZERO, because a generator that cannot render a video cannot leak
+  one. Then grep ALL of {PHOTOS_DIR} and report the count separately: that is
+  the protected pre-existing set, it was 9 on 2026-07-23, and it must not rise.
+  Confirm all 9 are still on disk, byte-identical, and listed in
+  {FINDINGS_FILE} — a drop in that number means the orphan sweep deleted a
+  published page instead of protecting it.
 * Run the invisible-Unicode scan over everything written.
 * Confirm nothing outside {PHOTOS_DIR} and {PAGES_CSV} changed, and that
-  {HIERARCHY_FILE} and {SITE_DIR}/sidebars.ts are untouched.
+  {HIERARCHY_FILE}, {VIDEO_HIERARCHY_FILE}, {VIDEOS_L2_DIR}, and
+  {SITE_DIR}/sidebars.ts are untouched.
 
 Output to stdout:
 ============================
@@ -520,7 +610,10 @@ Cluster pages under /Photos: L2 1, L3 N, L4 N, L5-cluster N
 Image pages reachable: N of N in YAML (N excluded, N stubs pending write-up)
 Walk-down checks: N/3 pass   Spot-checks: L3 N/5, L4 N/5
 Layout: in-flow yes/no  opaque yes/no  text-wrap yes/no  stale width caps: N
+Video/UNKNOWN entries skipped: N   media players emitted this run: 0 (required)
+Protected /Photos pages carrying a video player: N (was 9, must not rise or fall)
 pages.csv in sync: yes   images/images.yaml untouched: yes
+videos.yaml untouched: yes   /Videos untouched: yes
 sidebars.ts untouched: yes   invisible scan: clean
 ============================
 
@@ -536,6 +629,15 @@ HARD RULES
   {IMAGE_PAGE_PROMPT}'s. Layout is fixed in {GEN_SCRIPT} and the marked CSS
   block in {CUSTOM_CSS}, then regenerated across every page — never by
   hand-editing individual image pages.
+* STILL IMAGES ONLY. {GEN_SCRIPT} contains no branch that can emit `<video>`,
+  `<source>`, `<audio>`, or a media-player `<iframe>`; entries typing as video
+  or UNKNOWN are skipped, uncounted, unlinked, and reported. {GEN_SCRIPT} owns
+  the CK_EVIDENCE_LAYOUT block in {CUSTOM_CSS} and never writes CK_VIDEO_LAYOUT.
+  Nothing is ever written under {VIDEOS_L2_DIR}, {VIDEOS_DIR},
+  {VIDEO_HIERARCHY_FILE}, or {VIDEO_PLANNING_DIR}.
+* Any page under {PHOTOS_DIR} that already contains a `<video>` or `<source>`
+  element is PROTECTED: never regenerated, never counted as an orphan, never
+  removed. It is listed in {FINDINGS_FILE} and reported. Nine exist today.
 * Every point in {LAYOUT_GUIDELINES} — placement, opacity, text wrap, the
   bounding box and its size calculation, square corners — is satisfied on the
   built output. That file specifies the layout; this prompt only enforces it.

@@ -251,3 +251,105 @@ title, and the page must not adopt it.
   * 13 host-page-derived images (IPFS-only, empty file_path) have no
     ai_description sidecar at all. Content was recovered from the host page's
     alt text and caption.
+
+
+== 8. VIDEO PUBLISHED INSIDE THE IMAGE HIERARCHY — HAND-OFF TO videos_planning ==
+
+Raised 2026-07-23. The images pipeline harvested, bound, and published VIDEO.
+/Photos is the still-image Level 2; video belongs to the sibling pipeline
+(videos/videos.yaml -> site/docs/Videos, Vid_*.mdx). Fixed at the source in the
+same pass: p_update_image_hierarchy.md, p_yaml_to_site.md and
+p_level2_update.md all now carry a MEDIA-TYPE SCOPE section, and
+gen_photos_pages.py + bind_image_pages.py now gate on it. What is listed below
+is the contamination those fixes step over — it is NOT yet cleaned up.
+
+--- 8a. THE CAUSE ---
+
+p_update_image_hierarchy.md Stage 7 said, verbatim:
+
+    "Videos found on pages get entries too, as `video:` items with the same
+     fields (video_list.csv ... is a starting index; the page scan is
+     authoritative)."
+
+gen_photos_pages.py then carried an is_video_src() test whose only effect was
+to choose <video> markup instead of <img> on an Img_*.mdx page under /Photos.
+Typing happened at RENDER time instead of at HARVEST time, so a video that got
+into the YAML was guaranteed to be published rather than rejected.
+
+--- 8b. CONTAMINATION IN images/images.yaml (measured, not estimated) ---
+
+  * 53 `video:` array items across the tree. Never published (the generator
+    only ever walked `images:`), but they are enriched by every stage and they
+    are what Stage 13's "video entries: N" line was counting.
+  * 9 `image:` items whose CID is in fact an .mp4 — ALL under the level_4 node
+    _key Narrative_Shot_in_the_Heart. Each has sha256 "", file_path "", an
+    ipfs_url, and one should_be_on_pages row pointing at
+    site/docs/Narrative/Shot_in_the_heart.mdx. These are the ones that got
+    published.
+  * 0 other entries type as video. Verified by running the new gate over all
+    1,687 `image:` entries: 1,678 publish, 9 video, 0 unknown, 0 false
+    positives.
+
+--- 8c. THE 9 PUBLISHED VIDEO PAGES (still live, left in place) ---
+
+All under site/docs/Photos/Official_Narrative/Narrative_Shot_in_the_Heart/.
+Each renders <video controls> off https://ipfs.io/ipfs/<CID>, carries
+`ck_image_cid: none` frontmatter (a video entry has no sha256 to stamp), and
+heads its write-up "## What This Image Shows".
+
+  Img_Photo_Narrative_Shot_in_the_Heart_1.mdx  QmZHropnv47SNw2XBeaNNTfB8RAqv4nPcE1AbVTQNvdZJV
+      TV Witness: One Shot Directly to the Heart
+  Img_Photo_Narrative_Shot_in_the_Heart_2.mdx  QmZ3a5nC4DNY4duWqoJjchf5ZPKWon34it9uxwgCETkb9p
+      On-Scene Witness: Right Where His Heart Is
+  Img_Photo_Narrative_Shot_in_the_Heart_3.mdx  QmXSWJzgm6R5j7rWbubZgVu7y6NeMbwGHgttYzPo9Yaxhh
+      Contrast Account: Blood Gushing From His Neck
+  Img_Photo_Narrative_Shot_in_the_Heart_4.mdx  QmZZ4FQHmQvaMrpm1rP2EetjNK4NNfdux3hfCTmz6fd6zR
+      Why Did Every Eyewitness Say Heart or Chest
+  Img_Photo_Narrative_Shot_in_the_Heart_5.mdx  Qmdupxi4TifTuoMz25qHPMUxP3DVz7btycwvJ1rfZZKBpq
+      Glenn Beck on Megyn Kelly: He Has a Pulse
+  Img_Photo_Narrative_Shot_in_the_Heart_6.mdx  QmachmgMpySvi4cGpvpeHTDwS85PugUMY1M4NUARgyEHF2
+      Speaker Advances the Body-Armor Fragmentation Theory
+  Img_Photo_Narrative_Shot_in_the_Heart_7.mdx  QmfRuCtidKQfFuQpimhNFhw2tNo8CajDkpHS3Fpz7Pkr3e
+      Frame Analysis Reposted With a Planted Allegation
+  Img_Photo_Narrative_Shot_in_the_Heart_8.mdx  QmT5j43eoZcg83huMrAWJswkQke5ki2EYt8MBbCYsFBzq2
+      Slow Motion: Ricochet Off the Vest Claim
+  Img_Photo_Narrative_Shot_in_the_Heart_9.mdx  QmVGU5Cajy4jzWY9hDaFKg8m8niF3vwxND6L9661Fg3fxJ
+      Reported Request That He Wear a Vest
+
+These 9 pages are PROTECTED, not orphans. Their entries are now skipped by the
+gate, so the orphan sweep would otherwise delete them on the next run —
+gen_photos_pages.py now explicitly excludes any /Photos page containing a
+<video>/<source>/<audio> element from orphan removal. They are written,
+published pages with inbound links and no replacement under /Videos yet.
+
+The write-ups are good and should not be thrown away. They are grounded in the
+transcripts, they attribute claims rather than asserting them, and #7 in
+particular is a defamation-sensitive page that was carefully handled. Migrating
+them means moving the PROSE, not just the CID.
+
+--- 8d. WHAT IS STILL TO DO (needs approval, not done here) ---
+
+Sequenced so nothing is dark at any point:
+
+  1. videos_planning picks these 9 up: cluster them in videos/videos.yaml
+     (they are one coherent cluster — the wound-location / "shot in the heart"
+     thread), carry the prose across, publish under site/docs/Videos.
+  2. Verify each CID actually resolves on a PUBLIC gateway in a clean browser
+     profile with no IPFS Companion. All 9 carry ipfs_pinned: false in
+     images.yaml, so several may already be dead players today.
+  3. Only then: remove the 9 pages from /Photos, redirect or repoint inbound
+     links, drop the 9 `image:` entries and the 53 `video:` entries from
+     images.yaml, and update pages.csv.
+
+Nothing in step 3 has been done. Deleting a published page and rewriting the
+YAML is outside what a scope-fix pass should do on its own.
+
+--- 8e. TYPING RULE, FOR WHOEVER AUTOMATES THIS ---
+
+Do NOT scrape CIDs wholesale out of the video pipeline's records to decide what
+is a video. Measured: doing that types 70 image entries as video when only 9
+are. videos/manifest.yaml and IPFS/ipfs.txt both describe a MIXED corpus (the
+latter lists .jpg, .txt and .pdf blocks alongside .mp4), so parse both by
+FILENAME. And videos/videos.yaml is not usable as an oracle yet at all — per
+videos_planning/CLAUDE.md it is still a schema shell carrying the inherited
+image corpus, so every cid in it currently describes an image.

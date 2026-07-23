@@ -30,6 +30,69 @@ if os.path.exists(EXCLUDE_FILE):
         if re.fullmatch(r'[0-9a-f]{64}', line):
             EXCLUDED.add(line)
 
+# ---------- media-type gate: /Photos is still images only ----------
+# Kept deliberately in step with gen_photos_pages.py's load_video_cids(). Both
+# parse the video pipeline's records BY FILENAME rather than scraping CIDs
+# wholesale: those records describe a mixed corpus and a blanket scrape types
+# 70 image entries as video when only 9 are. videos/videos.yaml is not consulted
+# — it is still a schema shell whose cids describe the inherited image corpus.
+VIDEO_EXT = ('.mp4', '.mov', '.webm', '.m4v', '.mkv', '.avi')
+DOCS_DIR = os.path.join(ROOT, 'site/docs')
+
+
+def _cid(s):
+    m = re.search(r'/ipfs/(\w+)', s or '') or re.search(r'^(Qm\w{44})$', (s or '').strip())
+    return m.group(1) if m else ''
+
+
+def _load_video_cids():
+    cids = set()
+    try:
+        for rec in yaml.safe_load(open(os.path.join(ROOT, 'videos/manifest.yaml'),
+                                       encoding='utf-8')) or []:
+            if (rec.get('filename') or '').lower().endswith(VIDEO_EXT) and rec.get('ipfs_cid'):
+                cids.add(rec['ipfs_cid'])
+    except (OSError, yaml.YAMLError):
+        pass
+    try:
+        txt = open(os.path.join(ROOT, 'IPFS/ipfs.txt'), encoding='utf-8').read()
+        for block in re.split(r'\n\s*\n', txt):
+            m = re.search(r'ipfs\s+add\s+"([^"]+)"', block)
+            if m and m.group(1).lower().endswith(VIDEO_EXT):
+                cids.update(re.findall(r'\b(Qm[1-9A-HJ-NP-Za-km-z]{44})\b', block))
+    except OSError:
+        pass
+    for dp, _d, fs in os.walk(DOCS_DIR):
+        if dp.startswith(PHOTOS_DIR) or dp.startswith(os.path.join(DOCS_DIR, 'Videos')):
+            continue
+        for fn in fs:
+            if not fn.endswith(('.mdx', '.md')):
+                continue
+            try:
+                txt = open(os.path.join(dp, fn), encoding='utf-8').read()
+            except OSError:
+                continue
+            for tag in re.findall(r'<(?:video|source)\b.*?>', txt, re.S | re.I):
+                c = _cid(tag)
+                if c:
+                    cids.add(c)
+    return cids
+
+
+VIDEO_CIDS = _load_video_cids()
+
+
+def entry_is_video(inner):
+    for field in ('file_path', 'ipfs_url', 'cid'):
+        v = (inner.get(field) or '').strip()
+        if v.lower().endswith(VIDEO_EXT):
+            return True
+        c = _cid(v)
+        if c and c in VIDEO_CIDS:
+            return True
+    return False
+
+
 pages_total = pages_with_sha = 0
 pages_without = []
 by_pair = {}      # (sha256, node_key) -> tilde path
@@ -91,6 +154,23 @@ def bind(items, lvl, chain):
                 st['entries'] += 1
                 sha = (inner.get('sha256') or '').lower()
                 prev = inner.get('image_page') or ''
+
+                # Video entries have no image page by design. /Photos is the
+                # still-image Level 2; a video's page belongs under
+                # site/docs/Videos and is recorded in videos/videos.yaml's own
+                # video_page property, never in image_page here. Force "" and
+                # skip the keep-prior-value rule, exactly as for exclusions —
+                # otherwise a stale binding to a /Photos video page survives
+                # every run. Covers both `videos:` array items and `image:`
+                # items whose CID is really an .mp4.
+                if kind == 'videos' or entry_is_video(inner):
+                    inner['image_page'] = ''
+                    st['video'] = st.get('video', 0) + 1
+                    st['empty'] += 1
+                    for k in REQUIRED_SCALARS:
+                        if k not in inner or inner[k] is None:
+                            inner[k] = ''; st['filled_missing_keys'] += 1
+                    continue
 
                 # Excluded images have no page by design: force "" and skip the
                 # keep-prior-value rule, which would otherwise cling to the page
@@ -280,6 +360,9 @@ def verify(items, lvl):
                     p = os.path.expanduser(ip)
                     if not os.path.isfile(p) or not p.startswith(PHOTOS_DIR):
                         bad_pages.append(ip)
+                    # A video must never end up bound to a /Photos page.
+                    if kind == 'videos' or entry_is_video(inner):
+                        bad_pages.append('VIDEO BOUND TO /Photos: ' + ip)
         for nl, arr in child_list(node):
             verify(arr, nl)
 verify(re_doc['level_3'], 3)
@@ -291,7 +374,10 @@ print(f'Image pages indexed under Photos: {pages_total} '
 print(f'Entries with image_page set: {bound}   matched by (sha256,node): {st["by_pair"]}   '
       f'by sha256 only: {st["by_sha"]}   kept prior value: {st["kept_existing"]}')
 print(f'Entries with image_page "": {st["empty"]} '
-      f'(of which {st.get("excluded", 0)} are publish-excluded, rest have no page yet)')
+      f'(of which {st.get("excluded", 0)} are publish-excluded, '
+      f'{st.get("video", 0)} are video and belong to site/docs/Videos, '
+      f'rest have no page yet)')
+print(f'Known video CIDs: {len(VIDEO_CIDS)}')
 print(f'Recorded pages now missing from disk: {len(st["vanished"])}')
 for v in st['vanished'][:10]: print('   MISSING:', v)
 print('=' * 28)

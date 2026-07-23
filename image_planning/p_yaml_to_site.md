@@ -24,6 +24,12 @@ MIRROR_DIR dir is ~/_Mirror/Politics/Charlie_Kirk_Mi
 MIRROR_SIDECAR_DIR dir is ~/BGit/Bryan_git/personal_large_files_bridge/_Mirror/Politics/Charlie_Kirk_Mi
 REPO_SIDECAR_DIR dir is {ROOT_DIR}/.lfbridge
 
+The SIBLING VIDEO PIPELINE — read-only from here, never written by this prompt:
+VIDEO_PLANNING_DIR dir is {ROOT_DIR}/videos_planning
+VIDEOS_DIR dir is {ROOT_DIR}/videos
+VIDEO_HIERARCHY_FILE is file {VIDEOS_DIR}/videos.yaml
+VIDEOS_L2_DIR dir is {DOCS_DIR}/Videos
+
 MAX_AGENTS is ... = 12
 
 ============================
@@ -49,6 +55,10 @@ Two kinds of pages get produced under {PHOTOS_DIR}:
     at the layout spec below, plus a written description of what the image is,
     what it relates to, and hyperlinks into the rest of the investigation.
 
+Every page this prompt writes hosts a STILL IMAGE. It never emits a media
+player — see MEDIA-TYPE SCOPE below, which is a hard rule and is read before
+any page is written.
+
 Two smaller outputs are produced OUTSIDE {PHOTOS_DIR}, both driven off the YAML
 and both read-only against it:
 
@@ -67,6 +77,74 @@ runs, written before additional data existed. Rerunning must read each
 existing page in, then rewrite it against the current YAML data and the
 current {LAYOUT_GUIDELINES}. The run is idempotent: same inputs, same pages,
 same host-page anchors.
+
+============================
+KNOWLEDGE — MEDIA-TYPE SCOPE: NEVER PUBLISH A VIDEO UNDER /Photos
+============================
+
+{PHOTOS_DIR} is the still-image Level 2. A page under it hosts one IMAGE. It
+never hosts a playable video, because video has its own Level 2 with its own
+plan, its own generator, and its own page layout:
+
+  images                                videos
+  ------                                ------
+  {THIS_DIR}                            {VIDEO_PLANNING_DIR}
+  {HIERARCHY_FILE}                      {VIDEO_HIERARCHY_FILE}
+  {PHOTOS_DIR}                          {VIDEOS_L2_DIR}
+  Img_*.mdx leaf pages                  Vid_*.mdx leaf pages
+  ck_image_sha256 frontmatter           ck_video_cid + ck_video_sha256
+  served from {STATIC_IMG_DIR}          played from a public IPFS gateway
+
+THIS HAS ALREADY GONE WRONG, which is why the rule is stated this hard. Nine
+pages under {PHOTOS_DIR}/Official_Narrative/Narrative_Shot_in_the_Heart/ are
+published today as `Img_Photo_*.mdx`, carry `ck_image_cid: none` frontmatter,
+render a `<video>` player off an IPFS gateway, and describe the footage under a
+heading that reads "What This Image Shows." They are video pages living in the
+image hierarchy. The cause is upstream — {HIERARCHY_FILE} carries 53 `video:`
+items and 9 `image:` items whose CID is an .mp4 — and it is fixed upstream in
+p_update_image_hierarchy.md. This prompt's job is to refuse to publish them
+even if the YAML hands them over.
+
+THE RULE.
+
+  * Type every entry before writing its page. An entry is a video when its
+    file_path or resolved src ends .mp4 / .mov / .webm / .m4v / .mkv / .avi;
+    when its CID belongs to a VIDEO-FILENAMED record in
+    {VIDEOS_DIR}/manifest.yaml or a video-filenamed block in
+    {ROOT_DIR}/IPFS/ipfs.txt; or when the CID is embedded elsewhere on the site
+    inside a <video>/<source> tag. Parse those two files by filename — both
+    describe a mixed corpus, and scraping their CIDs wholesale types 70 image
+    entries as video when only 9 are (measured 2026-07-23). Do NOT use
+    {VIDEO_HIERARCHY_FILE} as an oracle yet: it is still a schema shell whose
+    cids describe the inherited image corpus.
+  * An entry typed as video gets NO page under {PHOTOS_DIR}, no static copy,
+    no {PAGES_CSV} row, no TOC entry on its parent cluster page, and no
+    placement by Stage 5 or Stage 6. It is skipped and counted.
+  * NEVER emit a `<video>`, `<source>`, `<audio>`, or media-player `<iframe>`
+    element into any file under {PHOTOS_DIR}. If the generator contains a code
+    path that does, that code path is the defect — remove it rather than
+    feeding around it. A generator that can render a video is a generator that
+    will render a video the moment a mistyped entry reaches it.
+  * An entry that cannot be typed confidently is UNKNOWN, and UNKNOWN is
+    skipped, not published. An unresolvable extensionless IPFS CID with an
+    empty sha256 is the exact shape of all 9 known bad entries; publishing it
+    on the assumption it is an image is what produced them.
+  * Never write anything under {VIDEOS_L2_DIR}, {VIDEOS_DIR}, or
+    {VIDEO_PLANNING_DIR}. Read them freely — {VIDEO_HIERARCHY_FILE} is the
+    best available oracle for whether a CID is a video.
+
+ALREADY-PUBLISHED VIDEO PAGES. A page under {PHOTOS_DIR} that already contains
+a `<video>` or `<source>` element is NOT treated as an orphan and is NOT
+silently purged, even though the entry behind it is now skipped. Purging it
+would delete a written, published page whose replacement under {VIDEOS_L2_DIR}
+does not exist yet, and would leave every inbound link dead. Instead: leave the
+file alone, count it, list each path in {FINDINGS_FILE} under
+
+    == VIDEO PAGES PUBLISHED UNDER /Photos — HAND-OFF TO videos_planning ==
+
+and report the count in the final summary. Migrating them to {VIDEOS_L2_DIR}
+and removing them from {PHOTOS_DIR} is a separate, explicitly-approved job,
+sequenced so the video pages exist before the image pages are withdrawn.
 
 ============================
 KNOWLEDGE — READ FIRST, IN THIS ORDER
@@ -813,8 +891,11 @@ real.
 
 Build the plan first, working from the YAML index:
 
-* Walk every image entry. Skip any whose sha256 is in {EXCLUDE_FILE}. Skip any
-  with an empty should_be_on_pages. Skip any with no image_page, and report it.
+* Walk every image entry. Skip any that types as video or UNKNOWN per
+  MEDIA-TYPE SCOPE, and report it — this block emits `<img>` only, so a video
+  reaching it produces an <img> pointed at an .mp4. Skip any whose sha256 is in
+  {EXCLUDE_FILE}. Skip any with an empty should_be_on_pages. Skip any with no
+  image_page, and report it.
 * Resolve the entry's src by the four-branch order in KNOWLEDGE (static copy /
   copy-then-static / pinned IPFS gateway / skip-and-report). Perform the copies
   into {STATIC_IMG_DIR} now, before any page is edited, so no page can end up
@@ -911,6 +992,17 @@ STAGE 7 — BUILD, VERIFY, REPORT
   pinned ones), confirm every anchor href resolves to a real image page on
   disk, confirm no image appears twice on the page, and confirm the page above
   the markers is unchanged from before the run.
+* MEDIA-TYPE AUDIT. Grep every file this run wrote under {PHOTOS_DIR} for
+  `<video`, `<source`, `<audio`, and media-player `<iframe`. Expected count is
+  ZERO; any hit fails the run. Then grep ALL of {PHOTOS_DIR}, including files
+  this run did not touch, and report that count separately — it is the
+  pre-existing contamination and it must not be rising. It was 9 on
+  2026-07-23, all under Official_Narrative/Narrative_Shot_in_the_Heart/.
+  Confirm each of those 9 is still listed in {FINDINGS_FILE} and was not
+  purged as an orphan.
+* Confirm nothing was written under {VIDEOS_L2_DIR}, {VIDEOS_DIR}, or
+  {VIDEO_PLANNING_DIR}, and that no {PAGES_CSV} row added this run has a
+  url_path under /Videos.
 * Confirm {PAGES_CSV} row count change matches pages created.
 * Run the invisible-Unicode scan over everything written this run (host pages
   edited in Stages 5 and 6 included).
@@ -925,6 +1017,9 @@ STAGE 7 COMPLETE — FINAL REPORT
 Build: PASS/FAIL
 Pages now under /Photos: N cluster + N image = N total
 Images published: N of N in YAML (N pending media)
+Video/UNKNOWN entries skipped, not published: N (handed off to findings)
+Media players emitted into /Photos this run: 0 (required)
+Pre-existing /Photos pages carrying a video player: N (was 9, must not rise)
 Host pages linked: N   image embeds made clickable: N
 Topic pages carrying placed images: N   images placed: N
 Spot-checks: image pages N/10 pass, cluster pages N/5 pass, host links N/10 pass,
@@ -942,6 +1037,14 @@ HARD RULES
 * {CK_FILE} is read into the context window at the very start — it is the
   knowledge base for understanding the entire assassination and every
   description is grounded in it.
+* STILL IMAGES ONLY. Every entry is typed before its page is written; an entry
+  typed as video or UNKNOWN is skipped, counted, and handed off — no page, no
+  static copy, no {PAGES_CSV} row, no TOC link, no Stage 5 anchor, no Stage 6
+  placement. No file under {PHOTOS_DIR} ever contains a `<video>`, `<source>`,
+  `<audio>`, or media-player `<iframe>` element. Video publishes to
+  {VIDEOS_L2_DIR} from {VIDEO_HIERARCHY_FILE}, and this prompt never writes
+  there. Pages already published under {PHOTOS_DIR} with a video player are
+  left in place, listed in {FINDINGS_FILE}, and never treated as orphans.
 * This prompt writes ONLY: pages under {PHOTOS_DIR}, static copies under
   {STATIC_IMG_DIR}, the marked TOC section of {IMAGES_L2_PAGE}, a shared
   layout component/CSS under {SITE_DIR}/internals/src/ (marked regions only),

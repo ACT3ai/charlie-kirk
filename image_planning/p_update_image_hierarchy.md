@@ -21,6 +21,13 @@ MIRROR_DIR dir is ~/_Mirror/Politics/Charlie_Kirk_Mi
 MIRROR_SIDECAR_DIR dir is ~/BGit/Bryan_git/personal_large_files_bridge/_Mirror/Politics/Charlie_Kirk_Mi
 REPO_SIDECAR_DIR dir is {ROOT_DIR}/.lfbridge
 
+The SIBLING VIDEO PIPELINE — read-only from here, never written by this prompt:
+VIDEO_PLANNING_DIR dir is {ROOT_DIR}/videos_planning
+VIDEOS_DIR dir is {ROOT_DIR}/videos
+VIDEO_HIERARCHY_FILE is file {VIDEOS_DIR}/videos.yaml
+VIDEOS_L2_DIR dir is {DOCS_DIR}/Videos
+FINDINGS_FILE is file {THIS_DIR}/findings_for_hierarchy.md
+
 LFB_DIR dir is ~/BGit/Bryan_git/LargeFileBridge
 LFB_PM_DIR dir is {LFB_DIR}/pm
 COMPANY_BRIDGE_DIR dir is ~/BGit/act3/act3_large_files_bridge
@@ -32,7 +39,8 @@ GOAL
 
 Grow and improve {HIERARCHY_FILE} — the image evidence hierarchy YAML — so it
 becomes the most full and complete hierarchy possible over the investigation's
-image and video corpus. This prompt runs in multiple stages. Each stage adds to
+STILL IMAGE corpus. Video is out of scope — see MEDIA-TYPE SCOPE below, and
+read it before any stage runs. This prompt runs in multiple stages. Each adds to
 the YAML or enriches it. Nothing is ever deleted from it. No duplicates are
 ever created — when an item already exists, its YAML properties are updated in
 place instead.
@@ -72,12 +80,105 @@ Convergence priority order (if context runs short, complete in this order):
   3. Stage 6 — filesystem Level 3/4 pages into YAML level_4/level_5 nodes
   4. Stage 7 — page image sweep into YAML image entries
   5. Stage 8 — on_pages: every other repo page that shows each image
-  6. Stage 9 — sidecar file-path properties on every image and video
+  6. Stage 9 — sidecar file-path properties on every image entry
   7. Stage 10 — image_page path on every image entry
   8. Stage 11 — should_be_on_pages: where each image OUGHT to appear
   9. Stage 5 — home page tables of contents into more level_3s
  10. Stage 12 — counts and needs_split
  11. Stage 13 — verify
+
+============================
+KNOWLEDGE — MEDIA-TYPE SCOPE: THIS PIPELINE IS IMAGES ONLY
+============================
+
+This pipeline owns STILL IMAGES. It does not own video, and it never has —
+earlier revisions of this prompt told it to harvest video anyway, and that
+instruction is what put playable video pages under {DOCS_DIR}/Photos. That was
+a defect. The rules below replace it.
+
+Video belongs to the SIBLING pipeline, which is a complete mirror of this one:
+
+  images                                videos
+  ------                                ------
+  {THIS_DIR}                            {VIDEO_PLANNING_DIR}
+  {HIERARCHY_FILE}                      {VIDEO_HIERARCHY_FILE}
+  {DOCS_DIR}/Photos                     {VIDEOS_L2_DIR}
+  Img_*.mdx leaf pages                  Vid_*.mdx leaf pages
+  ck_image_sha256 frontmatter           ck_video_cid + ck_video_sha256
+  gen_photos_pages.py                   gen_videos_pages.py
+  served from static/img/evidence       played from a public IPFS gateway
+
+THE RULE, stated four ways so no stage can miss it:
+
+  * A video NEVER becomes an entry in {HIERARCHY_FILE} — not as an `image:`
+    item, not as a `video:` item, not under any node at any level.
+  * A video NEVER gets an image_page. There is no such thing as a video page
+    under {DOCS_DIR}/Photos. Its page belongs under {VIDEOS_L2_DIR} and is
+    written by the video pipeline.
+  * A video NEVER gets a should_be_on_pages placement from this prompt. The
+    placement stage plans still images onto topic pages and nothing else.
+  * This prompt NEVER writes to {VIDEO_HIERARCHY_FILE}, {VIDEOS_DIR},
+    {VIDEO_PLANNING_DIR}, or {VIDEOS_L2_DIR}. It reads them freely.
+
+HOW TO TELL A VIDEO FROM AN IMAGE. The YAML does not record media type, so it
+is decided at harvest time from the reference itself, in this order:
+
+  1. Extension on the resolved src or file_path: .mp4, .mov, .webm, .m4v,
+     .mkv, .avi → video. Any still-image extension → image.
+  2. Enclosing tag when the src is extensionless (the IPFS gateway case):
+     a CID inside <video>, <source>, or a markdown link ending in a video
+     extension is a video; a CID inside <img> or ![]() is an image.
+  3. The video pipeline's own records, PARSED BY FILENAME — never scraped for
+     CIDs wholesale, because these files describe a mixed corpus:
+       - {VIDEOS_DIR}/manifest.yaml — take ipfs_cid only where that record's
+         filename carries a video extension.
+       - {ROOT_DIR}/IPFS/ipfs.txt — three-line blocks; a block contributes only
+         when its `ipfs add "<filename>"` names a video. It also lists .jpg,
+         .txt and .pdf.
+       - {VIDEO_HIERARCHY_FILE} is NOT usable as an oracle yet. Per
+         {VIDEO_PLANNING_DIR}/CLAUDE.md it is still a schema shell carrying the
+         inherited IMAGE corpus, so every cid in it currently describes an
+         image. Start consulting it once the video pipeline has populated it.
+     Measured 2026-07-23: scraping every CID out of these three files types 70
+     image entries as video when only 9 are. Parse by filename.
+  4. Still undecided → treat it as UNKNOWN, not as an image. Report it and
+     create nothing. Guessing "image" is how videos got in here.
+
+Note that rule 2 means an extensionless IPFS CID cannot be typed from the YAML
+alone once it has been harvested. That is exactly why the typing must happen at
+harvest time, in Stage 7, and never be deferred to the page generator.
+
+THE HAND-OFF. Finding a video is useful information, so it is recorded rather
+than dropped. Append it to a section of {FINDINGS_FILE} headed:
+
+    == VIDEO REFERENCES — HAND-OFF TO videos_planning ==
+
+one line per distinct video, carrying the CID (or file path), the page it was
+found on, and the enclosing tag. The video pipeline reads {THIS_DIR} as prior
+art and picks these up. Do not write into {VIDEO_PLANNING_DIR} yourself.
+
+LEGACY CONTAMINATION ALREADY IN THE FILE. As of 2026-07-23 {HIERARCHY_FILE}
+already carries video that a previous run harvested, and every run must report
+it:
+
+  * 53 `video:` items across the tree.
+  * 9 `image:` items whose CID is in fact an .mp4 — all of them under the
+    level_4 node _key Narrative_Shot_in_the_Heart. These are the entries that
+    produced the nine `<video>` players now published under
+    {DOCS_DIR}/Photos/Official_Narrative/Narrative_Shot_in_the_Heart/.
+
+This is the SECOND carve-out from the only-grows rule (the first is on_pages).
+Video entries are contamination, not data, and the rule for them is:
+
+  * Never add another one.
+  * Never enrich one. A video entry is skipped by Stages 3, 8, 9, 10 and 11 —
+    it gets no cid refresh, no on_pages, no sidecar paths, no image_page, no
+    should_be_on_pages.
+  * Do not delete them silently either. Count them, list them, hand them off
+    to {FINDINGS_FILE}, and report the totals in every stage that touches
+    entries. Removing them from the YAML and un-publishing the pages they
+    produced is a separate, explicitly-approved job, because the same content
+    has to land under {VIDEOS_L2_DIR} before it leaves {DOCS_DIR}/Photos.
 
 ============================
 KNOWLEDGE — THE LEVEL MODEL (READ THIS FIRST)
@@ -260,15 +361,20 @@ these grow constantly): under {MIRROR_SIDECAR_DIR} there were ~1,978
 .ai_description files, ~1,795 .ocr files, and ~331 .transcription files.
 Coverage is no longer thin — most images now have descriptions and OCR.
 
-WHAT THIS MEANS FOR THE YAML: every image and every video entry in
-{HIERARCHY_FILE} gets YAML properties holding the FILE PATH to each sidecar
-that exists for it. This is required — the sidecars are how later passes
-search, cluster, caption, and publish. The properties are:
+WHAT THIS MEANS FOR THE YAML: every IMAGE entry in {HIERARCHY_FILE} gets YAML
+properties holding the FILE PATH to each sidecar that exists for it. This is
+required — the sidecars are how later passes search, cluster, caption, and
+publish. The properties are:
 
   ai_description_file   path to the .ai_description sidecar, or "" if none
   ocr_file              path to the .ocr sidecar, or "" if none
   transcription_file    path to the .transcription sidecar, or "" if none
-                        (mostly videos; images rarely have one)
+                        (an image rarely has one; it is kept on the schema so
+                        entries stay uniform)
+
+Legacy video entries get NO sidecar properties from this prompt — see
+MEDIA-TYPE SCOPE. Video sidecars, which is where .transcription actually earns
+its keep, are the video pipeline's job against {VIDEO_HIERARCHY_FILE}.
 
 The existing inline ai_description field stays as the short prose text; the
 new *_file fields point at the full sidecar files on disk.
@@ -338,7 +444,9 @@ STAGE 2 — LEARN THE SIDECAR MAPPING (VERIFY, DON'T ASSUME)
 * Confirm the mapping rules from the KNOWLEDGE section above against the
   actual disk: pick 5 sample images under {MIRROR_DIR}, compute their
   expected sidecar paths under {MIRROR_SIDECAR_DIR}, and verify existence.
-  Do the same for one repo-internal video against {REPO_SIDECAR_DIR}.
+  Do the same for one repo-internal file under {VIDEOS_DIR} against
+  {REPO_SIDECAR_DIR}. That sample verifies the inside-a-git-repo mapping rule
+  and nothing more — it does NOT add that file to {HIERARCHY_FILE}.
 * Count current sidecar coverage: number of .ai_description, .ocr, and
   .transcription files under {MIRROR_SIDECAR_DIR}.
 * If a sample is missing, check the legacy .lfbridge/_Mirror/ location
@@ -396,8 +504,9 @@ will not match the one in a gateway URL.
 
 WHAT TO DO.
 
-* For every image and video entry in {HIERARCHY_FILE} that has a file_path
-  pointing at a file that exists on disk:
+* For every IMAGE entry in {HIERARCHY_FILE} that has a file_path pointing at a
+  file that exists on disk (legacy video entries are skipped — MEDIA-TYPE
+  SCOPE):
     * Compute the CID with the flags above. Write it to the entry's `cid`
       property. This is unconditional — a CID is always obtainable for a local
       file, so an entry with a readable file_path must never be left with
@@ -567,13 +676,27 @@ STAGE 7 — PAGE IMAGE SWEEP → IMAGE ENTRIES IN THE YAML
 Go through ALL the site's pages and make sure every page that has one or more
 images gets those images represented in the YAML hierarchy.
 
-* Scan every page under {DOCS_DIR} for embedded images and videos: markdown
-  image syntax, <img> tags, <iframe>/<video> embeds, and static-asset links.
+* Scan every page under {DOCS_DIR} for embedded media: markdown image syntax,
+  <img> tags, <iframe>/<video>/<source> embeds, and static-asset links.
   Use the SAME multi-line-aware extractor Stage 8 specifies — the site's
   dominant embed form splits `<img` and `src=` across lines, and a
   line-oriented pattern misses 72% of them. Resolve each src to the actual
   file: the served path /img/... maps to {SITE_DIR}/internals/static/img/...
   ({SITE_DIR}/static/ does not exist on this repo).
+
+* TYPE EVERY REFERENCE BEFORE DOING ANYTHING WITH IT, using the four-step test
+  in MEDIA-TYPE SCOPE. Video and UNKNOWN references get no entry — they are
+  counted and appended to the hand-off section of {FINDINGS_FILE}, and the
+  sweep moves on. Only references typed as still images continue below. The
+  <video>/<source>/<iframe> forms are matched precisely so that the type test
+  can see them, NOT so that they can be harvested; an extractor that ignores
+  video tags would type an extensionless IPFS CID as an image and reintroduce
+  exactly the bug this rule exists to prevent.
+
+* Directories that are OUT OF SCOPE for the sweep: {DOCS_DIR}/Photos (this
+  hierarchy IS its content), {VIDEOS_L2_DIR} (the video pipeline's published
+  output — every reference on those pages is a video by construction), and
+  {DOCS_DIR}/Topics3 (template scaffolding).
 
 * SITE-ONLY ASSETS. Some published images have no mirror original at all —
   hand-made diagrams and timeline graphics living only under
@@ -603,9 +726,15 @@ images gets those images represented in the YAML hierarchy.
       file_path, ai_description: "", on_pages: [{page: <tilde-rooted page
       path>}], should_be_on_pages: [] (Stage 11 fills it), plus the sidecar
       path fields (Stage 9 fills them) and image_page: "" (Stage 10 fills it).
-* Videos found on pages get entries too, as `video:` items with the same
-  fields (video_list.csv at {DOCS_DIR}/video_list.csv is a starting index;
-  the page scan is authoritative).
+* Videos found on pages get NO entry — not a `video:` item and not an
+  `image:` item. This is the exact instruction that shipped the defect: a
+  previous revision of this line said "Videos found on pages get entries too,
+  as `video:` items with the same fields," and the harvest that followed put
+  53 `video:` items and 9 mistyped `image:` items into {HIERARCHY_FILE}, nine
+  of which the page generator then published as playable `<video>` pages under
+  {DOCS_DIR}/Photos. Hand them off to {FINDINGS_FILE} instead.
+  {DOCS_DIR}/video_list.csv is the video pipeline's starting index, not this
+  one's — do not read it as a source of entries.
 * Images already embedded ad hoc inside topic pages across the site stay
   where they are on those pages — this hierarchy is the browsable index over
   the corpus, not a relocation of every inline image.
@@ -617,7 +746,8 @@ Pages scanned: N
 Images found on pages: N (N matched to mirror originals)
 New image entries added: N
 Existing entries updated (on_pages): N
-Video entries added/updated: N
+Video references found: N (0 entries created — handed off to findings)
+Unknown-type references: N (0 entries created — handed off to findings)
 ============================
 
 ============================
@@ -827,8 +957,12 @@ O(images x pages).
   changes and the extractor must not silently miss a new form: markdown
   `![alt](src)`, `<img>` with a `require()`/import src, background-image /
   style url(), `https://<CID>.ipfs.dweb.link/`, `ipfs://<CID>`, and
-  `<video>`/`<iframe>` src and poster attributes (videos get the same
-  treatment as images). Count every form found, and hard-fail the run if a
+  `<video>`/`<source>`/`<iframe>` src and poster attributes. Video tags are
+  matched so the extractor can TYPE what it found and prove it missed nothing;
+  a reference typed as video per MEDIA-TYPE SCOPE is then counted and skipped,
+  never bound to an entry. A `<video>` poster frame is a still image and IS
+  eligible — it is a separate asset from the video it fronts.
+  Count every form found, and hard-fail the run if a
   reference form appears that the extractor has no rule for — an unknown form
   must surface as a reported unresolved reference, never be dropped silently.
 
@@ -969,10 +1103,11 @@ Extractor calibration: N refs this run vs N last run (site only grows — a drop
 ============================
 
 ============================
-STAGE 9 — SIDECAR FILE-PATH PROPERTIES ON EVERY IMAGE AND VIDEO
+STAGE 9 — SIDECAR FILE-PATH PROPERTIES ON EVERY IMAGE
 ============================
 
-For EVERY image and video entry in {HIERARCHY_FILE} (old and new):
+For EVERY IMAGE entry in {HIERARCHY_FILE} (old and new). Legacy video entries
+are skipped and counted — MEDIA-TYPE SCOPE:
 
 * Compute the expected sidecar paths using the mapping learned in Stage 2:
     original under {MIRROR_DIR}       →  {MIRROR_SIDECAR_DIR}/<same relative
@@ -997,6 +1132,7 @@ Entries processed: N
 ai_description_file set: N   ocr_file set: N   transcription_file set: N
 Inline descriptions filled from sidecars: N
 Entries with no sidecars at all: N
+Legacy video entries skipped: N
 ============================
 
 ============================
@@ -1061,6 +1197,15 @@ RULES.
 
   * image_page is set on EVERY image entry — the existing ones and any added
     by earlier stages. No entry is left without the key.
+  * A legacy VIDEO entry never receives an image_page. Leave it "", count it,
+    and report it. There is no video page under {DOCS_DIR}/Photos to bind to;
+    a video's page lives under {VIDEOS_L2_DIR} and is recorded in
+    {VIDEO_HIERARCHY_FILE}'s own video_page property, not here.
+  * If a page under {DOCS_DIR}/Photos is found to contain a `<video>` or
+    `<source>` element, it is a published video page in the wrong hierarchy.
+    Do not bind anything to it. List it under the hand-off heading in
+    {FINDINGS_FILE} and report the count. Nine such pages exist today, all
+    under {DOCS_DIR}/Photos/Official_Narrative/Narrative_Shot_in_the_Heart/.
   * Never invent a path. The file must exist on disk at the moment you write
     the value; verify existence before writing, and write "" if it does not.
   * Never write a page path that lives outside {DOCS_DIR}/Photos. Ad-hoc
@@ -1118,6 +1263,14 @@ Relationship to the other two properties:
   Before unioning, confirm Stage 8 reported zero unverified bindings. If
   Stage 8 did not run in this session, re-verify each on_pages entry by
   reopening the page rather than trusting the file.
+
+WHAT IS ELIGIBLE. Still images only. A legacy video entry is skipped: it gets
+no new should_be_on_pages placement, and any placement a previous run put on
+one is reported rather than acted on. Planning a video onto a topic page from
+here would have the publishing prompt embed a video off a /Photos-scoped
+identity, which is the same defect one layer further downstream. Nine of the
+`image:` entries in the file today are in fact .mp4s and already carry a
+should_be_on_pages row each — see MEDIA-TYPE SCOPE.
 
 THE PROPERTY SHAPE.
 
@@ -1472,6 +1625,19 @@ STAGE 13 — VERIFY AND REPORT
   systematic extraction bug, and every failure this stage has had so far was
   systematic: one regex that could not see multi-line tags, one migration
   that imported guesses as facts.
+* MEDIA-TYPE AUDIT — this run added no video. Assert all four and fail the
+  run on any of them:
+    - Zero `video:` items were added this run. The count of `video:` items in
+      the file is <= the count Stage 1 indexed.
+    - Zero `image:` entries were added this run whose src, file_path, or CID
+      types as video under the four-step test in MEDIA-TYPE SCOPE.
+    - No entry of either kind gained an image_page, on_pages, sidecar path,
+      or should_be_on_pages this run if it types as video.
+    - No path written anywhere in the file this run points under
+      {VIDEOS_L2_DIR}, {VIDEOS_DIR}, or {VIDEO_PLANNING_DIR}.
+  Re-type from the reference, not from which YAML array the entry sits in —
+  the 9 known contaminated entries are in `images:` arrays, so an audit that
+  only counts `video:` items reports a clean run on a dirty file.
 * Print a final tree summary: each level_3 _key with its recursive image
   count and child count.
 
@@ -1479,7 +1645,11 @@ Output to stdout:
 ============================
 STAGE 13 COMPLETE — FINAL REPORT
 level_3 nodes: N (was N)   level_4: N (was N)   level_5: N (was N)
-Total image entries: N (was N)   video entries: N
+Total image entries: N (was N)
+Media-type audit: video added this run 0 (confirmed)
+Legacy video contamination: N `video:` items + N mistyped `image:` items
+  (was 53 + 9 on 2026-07-23; handed off to findings, none enriched, none removed)
+Published /Photos pages carrying a <video> element: N (was 9)
 Sidecar coverage: ai_description N%, ocr N%, transcription N%
 image_page coverage: N% (N of N entries bound to a Level 5 page)
 on_pages coverage: N entries bound, N total bindings, all N verified against page bytes
@@ -1493,8 +1663,21 @@ Nothing removed except unsupported on_pages bindings: N removed (confirmed)
 HARD RULES
 ============================
 
+* IMAGES ONLY. This pipeline never harvests, enriches, binds, or plans a
+  video, and never writes a path under {VIDEOS_L2_DIR}, {VIDEOS_DIR}, or
+  {VIDEO_PLANNING_DIR}. Every media reference is typed at harvest time by the
+  four-step test in MEDIA-TYPE SCOPE, and anything that is not a still image
+  is counted, handed off to {FINDINGS_FILE}, and dropped. UNKNOWN is not
+  treated as image. Video belongs to {VIDEO_HIERARCHY_FILE} and publishes to
+  {VIDEOS_L2_DIR}.
 * {HIERARCHY_FILE} only grows. Never delete a node or an image entry. No
   duplicates — existing items get their properties updated in place.
+* SECOND CARVE-OUT: legacy video entries. They are contamination from an
+  earlier revision of this prompt, they are never added to and never enriched,
+  and they are never silently deleted either — they are counted, listed, and
+  handed off. Removing them and un-publishing the /Photos pages they produced
+  is a separate, explicitly-approved job, sequenced after the same content
+  lands under {VIDEOS_L2_DIR}.
 * ONE CARVE-OUT: on_pages. It is rebuilt from observation on every run and
   bindings that observation does not support are deleted and reported (see
   Stage 8). A false binding is a factual error about a file's contents, not
@@ -1569,8 +1752,13 @@ from, so no knowledge is lost even where a stage above already encodes it.
   files, and the AI-description text files:
     ~/BGit/act3/act3_large_files_bridge/
     ~/BGit/Bryan_git/personal_large_files_bridge/
-  We want YAML properties for all of those: each image or video entry gets a
-  property that is a file path to the sidecar file that correlates to it.
+  We want YAML properties for all of those: each image entry gets a property
+  that is a file path to the sidecar file that correlates to it.
+  [SUPERSEDED 2026-07-23: the original directive said "each image or video
+  entry". Video is no longer in this pipeline's scope at all — see MEDIA-TYPE
+  SCOPE. Video sidecars are filled in against {VIDEO_HIERARCHY_FILE} by the
+  sibling pipeline. The historical wording is corrected here rather than left
+  standing, because it is the sentence the video harvest was justified by.]
 * By reading the product management specification files and the code in
   ~/BGit/Bryan_git/LargeFileBridge/ you learn how we map between the original
   file paths and the mirroring file system in the other place where the

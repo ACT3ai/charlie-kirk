@@ -227,6 +227,19 @@ REPO_MAP = {
     'yt/8HkNMTNHsa8':  ('TPUSA', 'TPUSA Event Recordings'),
     'yt/0pvEGO4W85k':  ('TPUSA', 'TPUSA Event Recordings'),
     'yt/qpGPZHdil1E':  ('Israel_Main_Suspect', 'Mossad on the Record'),
+
+    # --- video the SITE already embeds that the corpus did not hold (Stage 10)
+    'yt/1RbDMiEReys':  ('Other', 'The Site Film'),
+    'yt/0ykbt_WGOZE':  ('Influencers', 'Podcast Episodes'),
+    'yt/1xTpQ9RHkvk':  ('Influencers', 'Podcast Episodes'),
+    'yt/2exo7iJ-qdc':  ('Influencers', 'Podcast Episodes'),
+    'yt/J2DKRfwSt94':  ('Influencers', 'Podcast Episodes'),
+    'yt/X8UKjN5cjvw':  ('Influencers', 'Podcast Episodes'),
+    'yt/wcD2khO3rOA':  ('Influencers', 'Podcast Episodes'),
+    'yt/v6yrnyo':      ('Influencers', 'Podcast Episodes'),
+    'yt/v705uyi':      ('Influencers', 'Podcast Episodes'),
+    'site/QmedrrPge7Bj8vUN6xxq1Zfz1CgwuY6xGAtWFFbU4tmg4R':
+                       ('Mic', 'The Microphone Footage'),
 }
 
 # ---------------------------------------------------------------------------
@@ -396,6 +409,10 @@ def corpus_cluster(section, title):
     corpus_clusters[key] = k
     return k
 
+INV_ROW = {r['vkey']: r for r in inv}
+def inv_row(v):
+    return INV_ROW.get(v, {}).get('media_path', '') or v
+
 unclustered = []
 for r in inv:
     vkey = r['vkey']
@@ -419,6 +436,32 @@ for r in inv:
             unclustered.append(vkey)
     nk = corpus_cluster(sec, title)
     nodes[nk]['videos'].append(vkey)
+
+# ---------------------------------------------------------------------------
+# DEDUPE BY CONTENT. The mirror holds byte-identical copies of the same file
+# under different names ("Jesse_ON_FIRE", "... copy", "... copy 2"; "12.ia" and
+# "13.ia"; an X post saved twice under two captions). Those are ONE video. Same
+# cid under DIFFERENT nodes is legitimate cross-filing and is kept; the same cid
+# TWICE under ONE node would make a cluster page show the same clip repeatedly.
+# The survivor keeps the shortest, most canonical path and records the others in
+# duplicate_paths so nothing is lost.
+cid_of = {v: (cids.get(v, {}).get('cid') or '') for v in
+          {x for n in nodes.values() for x in n['videos']}}
+dupes = {}
+dup_count = 0
+for nk, n in nodes.items():
+    seen = {}
+    keep = []
+    for v in sorted(n['videos'], key=lambda x: (len(inv_row(x)), x)):
+        c = cid_of.get(v, '')
+        if c and c in seen:
+            dupes.setdefault(seen[c], []).append(v)
+            dup_count += 1
+            continue
+        if c:
+            seen[c] = v
+        keep.append(v)
+    n['videos'] = keep
 
 # ---------------------------------------------------------------------------
 # Enforce the 6/12 sizing rule: split an oversize corpus cluster one level
@@ -456,7 +499,8 @@ roots = [k for k, n in nodes.items() if n['parent'] is None]
 for r in roots:
     recount(r)
 
-json.dump(dict(nodes=nodes, roots=sorted(roots)), open(OUT, 'w', encoding='utf-8'))
+json.dump(dict(nodes=nodes, roots=sorted(roots), duplicates=dupes),
+          open(OUT, 'w', encoding='utf-8'))
 
 # ---------------------------------------------------------------------------
 lv = collections.Counter(n['level'] for n in nodes.values())
@@ -470,6 +514,8 @@ print(f'Videos clustered: {placed}     Clusters proposed: '
       f'{lv[3]} level_3 / {lv[4]} level_4 / {lv[5]} level_5')
 print(f'Corpus-derived concept clusters: {corpus_n}')
 print(f'Cross-filed videos: 0  (no video is filed under two nodes in this pass)')
+print(f'Byte-identical duplicate files folded into their twin: {dup_count} '
+      f'(recorded as duplicate_paths on the surviving entry)')
 print(f'Nodes over the 12 ceiling, split one level deeper: {len(splits)}')
 for nk, t, n_, c in splits:
     print(f'   {t}: {n_} videos -> {c} child pages')

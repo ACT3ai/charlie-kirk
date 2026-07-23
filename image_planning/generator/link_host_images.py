@@ -80,6 +80,12 @@ def walk(node):
             sha = i.get("sha256") or ""
             if sha in EXCLUDED:
                 continue
+            # Video entries are filtered out here by the image_page gate below:
+            # bind_image_pages.py forces image_page = "" on anything that types
+            # as video, because /Photos is the still-image Level 2 and a video's
+            # page lives under site/docs/Videos. Keep that invariant — if this
+            # script ever stops requiring image_page, it needs its own media-type
+            # check, or it will wrap an <img> anchor around an .mp4.
             ip = i.get("image_page") or ""
             ops = i.get("on_pages") or []
             if not ip or not ops:

@@ -96,6 +96,16 @@ def parse_ai_description(path):
         return out
     for k in AI_KEYS:
         out[k] = str(doc.get(k, '') or '')
+    # PyYAML parses an ISO 8601 scalar into a datetime and str() then renders it
+    # in Python's form, not the sidecar's. Take `generated` off the raw text so
+    # the YAML records exactly what the sidecar recorded.
+    try:
+        raw = open(path, encoding='utf-8', errors='replace').read(4000)
+        m = re.search(r'^generated:\s*(\S+)\s*$', raw, re.M)
+        if m:
+            out['generated'] = m.group(1)
+    except OSError:
+        pass
     out['parse_ok'] = True
     if out['status'] != 'done':
         return out

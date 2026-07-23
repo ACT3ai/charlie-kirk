@@ -149,6 +149,153 @@ if os.path.exists(EXCLUDE_FILE):
                 EXCLUDED.add(line)
 
 
+# ---------- publish-time media-type gate: /Photos is STILL IMAGES ONLY ----------
+# images/images.yaml carries video that an earlier revision of
+# p_update_image_hierarchy.md harvested into it: `video:` items, plus `image:`
+# items whose CID is really an .mp4. This generator used to render those with a
+# <video> player on an Img_*.mdx page, which is how nine video pages came to be
+# published inside the image hierarchy. Video belongs to the sibling pipeline:
+# videos/videos.yaml -> site/docs/Videos, Vid_*.mdx, ck-video-* classes.
+#
+# The type test is kept — knowing which CIDs are videos is exactly what is
+# needed — but it now SKIPS the entry instead of choosing different markup.
+# There is deliberately no code path in this file that can emit <video>,
+# <source>, <audio>, or a media-player <iframe>: a generator that can render a
+# video will render one the next time a mistyped entry reaches it.
+VIDEO_EXT = (".mp4", ".mov", ".webm", ".m4v", ".mkv", ".avi")
+VIDEOS_YAML = os.path.join(ROOT, "videos", "videos.yaml")
+VIDEO_MANIFEST = os.path.join(ROOT, "videos", "manifest.yaml")
+IPFS_TXT = os.path.join(ROOT, "IPFS", "ipfs.txt")
+VIDEOS_L2 = os.path.join(DOCS, "Videos")
+
+
+def _cid(s):
+    m = re.search(r"/ipfs/(\w+)", s or "") or re.search(r"^(Qm\w{44})$", (s or "").strip())
+    return m.group(1) if m else ""
+
+
+def load_video_cids():
+    """CIDs known to be video.
+
+    Every source is parsed by FILENAME, never by scraping CIDs wholesale — the
+    video pipeline's records describe a mixed corpus, and a blanket scrape
+    suppresses real images. Measured: scraping every CID out of these files
+    typed 70 image entries as video when only 9 are.
+
+    videos/videos.yaml is deliberately NOT consulted. Per
+    videos_planning/CLAUDE.md it is still a schema shell whose data is the
+    inherited IMAGE corpus — every cid in it currently describes an image.
+    Add it here once the video pipeline has populated it for real.
+    """
+    cids = set()
+    # 1a. videos/manifest.yaml — per-file records, filename + ipfs_cid.
+    try:
+        with open(VIDEO_MANIFEST, encoding="utf-8") as f:
+            for rec in yaml.safe_load(f) or []:
+                fn = (rec.get("filename") or "").lower()
+                if fn.endswith(VIDEO_EXT) and rec.get("ipfs_cid"):
+                    cids.add(rec["ipfs_cid"])
+    except (OSError, yaml.YAMLError):
+        pass
+    # 1b. IPFS/ipfs.txt — blocks of `ipfs get <cid>` / `ipfs add "<filename>"`
+    #     / `ipfs pin add <cid>`. It holds .jpg, .txt and .pdf entries too, so
+    #     a block only contributes when its filename is a video.
+    try:
+        with open(IPFS_TXT, encoding="utf-8") as f:
+            for block in re.split(r"\n\s*\n", f.read()):
+                m = re.search(r'ipfs\s+add\s+"([^"]+)"', block)
+                if m and m.group(1).lower().endswith(VIDEO_EXT):
+                    cids.update(re.findall(r"\b(Qm[1-9A-HJ-NP-Za-km-z]{44})\b", block))
+    except OSError:
+        pass
+    # 2. Site pages outside /Photos: a CID inside <video>/<source>, or any
+    #    reference carrying a video extension, is a video.
+    for dirpath, _d, files in os.walk(DOCS):
+        if dirpath.startswith(PHOTOS) or dirpath.startswith(VIDEOS_L2):
+            continue
+        for fn in files:
+            if not fn.endswith((".mdx", ".md")):
+                continue
+            try:
+                with open(os.path.join(dirpath, fn), encoding="utf-8") as f:
+                    txt = f.read()
+            except OSError:
+                continue
+            for tag in re.findall(r"<(?:video|source)\b.*?>", txt, re.S | re.I):
+                c = _cid(tag)
+                if c:
+                    cids.add(c)
+            for m in re.finditer(r"/ipfs/(\w+)[^\s\"'<>]*(?:%s)" % "|".join(
+                    re.escape(e) for e in VIDEO_EXT), txt, re.I):
+                cids.add(m.group(1))
+    return cids
+
+
+VIDEO_CIDS = load_video_cids()
+SKIPPED_VIDEO = []      # entries skipped because they are video, not image
+
+
+def entry_is_video(i):
+    """True when a hierarchy entry is video rather than a still image.
+    Extension wins; then the known-video CID set. An entry that cannot be
+    typed is NOT assumed to be an image by this function — see skip_entry()."""
+    for field in ("file_path", "ipfs_url", "cid"):
+        v = (i.get(field) or "").strip()
+        if v.lower().endswith(VIDEO_EXT):
+            return True
+        c = _cid(v)
+        if c and c in VIDEO_CIDS:
+            return True
+    return False
+
+
+def skip_entry(i):
+    """Publish gate for one hierarchy entry. Returns a reason string to skip,
+    or "" to publish. UNKNOWN is skipped, not published: every known bad entry
+    is an extensionless IPFS CID with an empty sha256, and assuming that shape
+    is an image is exactly what published the nine video pages."""
+    if (i.get("sha256") or "") in EXCLUDED:
+        return "excluded"
+    if entry_is_video(i):
+        return "video"
+    if not (i.get("sha256") or "").strip() and not (i.get("file_path") or "").strip():
+        # No local identity at all — only a CID. Publishable only if the CID is
+        # positively known NOT to be a video, which means it must appear on the
+        # site inside an <img>/![]() form somewhere. Otherwise it is UNKNOWN.
+        c = _cid(i.get("ipfs_url") or i.get("cid") or "")
+        if c and c not in IMAGE_CIDS:
+            return "unknown-type"
+    return ""
+
+
+def load_image_cids():
+    """CIDs positively observed on the site inside an image form."""
+    cids = set()
+    for dirpath, _d, files in os.walk(DOCS):
+        if dirpath.startswith(PHOTOS) or dirpath.startswith(VIDEOS_L2):
+            continue
+        for fn in files:
+            if not fn.endswith((".mdx", ".md")):
+                continue
+            try:
+                with open(os.path.join(dirpath, fn), encoding="utf-8") as f:
+                    txt = f.read()
+            except OSError:
+                continue
+            for tag in re.findall(r"<img\b.*?>", txt, re.S | re.I):
+                c = _cid(tag)
+                if c:
+                    cids.add(c)
+            for m in re.finditer(r"!\[[^\]]*\]\(([^)]+)\)", txt):
+                c = _cid(m.group(1))
+                if c:
+                    cids.add(c)
+    return cids - VIDEO_CIDS
+
+
+IMAGE_CIDS = load_image_cids()
+
+
 def walk(raw, depth, parents):
     node = {
         "key": norm_key(raw.get("_key", "")),
@@ -163,9 +310,19 @@ def walk(raw, depth, parents):
     }
     for im in raw.get("images") or []:
         i = im.get("image", im)
-        if (i.get("sha256") or "") in EXCLUDED:
+        why = skip_entry(i)
+        if why:
+            if why != "excluded":
+                SKIPPED_VIDEO.append((why, node["key"],
+                                      i.get("cid") or i.get("file_path") or "?"))
             continue
         node["images"].append(i)
+    # `videos:` arrays are never published from this hierarchy at all. They are
+    # counted so the run reports the contamination it is stepping over.
+    for im in raw.get("videos") or []:
+        i = im.get("video", im)
+        SKIPPED_VIDEO.append(("video-array", node["key"],
+                              i.get("cid") or i.get("file_path") or "?"))
     # Descend to whatever depth the YAML actually has. This used to stop at
     # level_5, which silently dropped every image filed deeper — the YAML holds
     # level_6 and level_7 nodes (e.g. Aircraft > MEMEs > Versions > SpyPlane_2).
@@ -255,52 +412,11 @@ for n in nodes:
             except Exception:
                 pass
 
-# ---------- classify IPFS-only entries as image or video ----------
-# Some hierarchy entries have no local file, only an ipfs_url, and a few of
-# those CIDs are .mp4 videos. The YAML does not record media type, so learn it
-# from how the CID is already embedded on the site's own (non-generated) pages:
-# a CID inside <video>/<source> is a video, inside <img>/![]() an image.
-def classify_ipfs_cids():
-    blob = []
-    for dirpath, _d, files in os.walk(DOCS):
-        if dirpath.startswith(PHOTOS):
-            continue
-        for fn in files:
-            if fn.endswith((".mdx", ".md")):
-                try:
-                    with open(os.path.join(dirpath, fn), encoding="utf-8") as f:
-                        blob.append(f.read())
-                except OSError:
-                    pass
-    blob = "\n".join(blob).lower()
-    kind = {}
-    for n in nodes:
-        for i in n["images"]:
-            u = i.get("ipfs_url") or ""
-            m = re.search(r"/ipfs/(\w+)", u)
-            if not m or m.group(1) in kind:
-                continue
-            cid = m.group(1)
-            for occ in re.finditer(re.escape(cid.lower()), blob):
-                ctx = blob[max(0, occ.start() - 300): occ.start() + 80]
-                best = max([(ctx.rfind("<video"), "video"),
-                            (ctx.rfind("<source"), "video"),
-                            (ctx.rfind("<img"), "image"),
-                            (ctx.rfind("!["), "image")])
-                if best[0] >= 0:
-                    kind[cid] = best[1]
-                    break
-    return kind
-
-
-IPFS_KIND = classify_ipfs_cids()
-
-
-def is_video_src(src):
-    if src.lower().endswith((".mp4", ".webm", ".mov")):
-        return True
-    m = re.search(r"/ipfs/(\w+)", src or "")
-    return bool(m) and IPFS_KIND.get(m.group(1)) == "video"
+# Media typing happens in the publish gate above (skip_entry / entry_is_video),
+# before an entry ever reaches page generation. There is intentionally no
+# is_video_src() here and no markup branch for video: /Photos publishes still
+# images only, and video pages are generated into site/docs/Videos by the
+# sibling pipeline from videos/videos.yaml.
 
 
 # ---------- mint image page identities ----------
@@ -637,14 +753,7 @@ for pg in img_pages:
                          pg["home"]["title"] if pg["home"] else "Photos"),
              f"# {mdx_escape(pg['title'])}", ""]
     lay = layout_class(sha)
-    if src and is_video_src(src):
-        lines += [f"<div className=\"ck-evidence-image-wrap ck-evidence-wide\">",
-                  f"  <video className=\"ck-evidence-image\" controls preload=\"metadata\">",
-                  f"    <source src=\"{src}\" type=\"video/mp4\" />",
-                  f"    <a href=\"{src}\">Open the video</a>",
-                  "  </video>",
-                  "</div>", ""]
-    elif src:
+    if src:
         lines += [f"<a className=\"ck-evidence-image-wrap {lay}\" href=\"{src}\" "
                   f"target=\"_blank\" rel=\"noopener noreferrer\">",
                   f"  <img className=\"ck-evidence-image\" src=\"{src}\" alt=\"{alt_attr}\" />",
@@ -979,6 +1088,14 @@ for sha in EXCLUDED:
         purged_static.append(os.path.basename(f))
 
 # ---------- orphan sweep: generated files no longer expected ----------
+# PROTECTED: pages already published under /Photos that carry a video player.
+# Their entries are now skipped by the media-type gate, so the sweep would see
+# them as orphans and delete them — but they are written, published pages with
+# inbound links and no replacement under /Videos yet. Leave them byte-identical
+# and report them. Migrating them to site/docs/Videos and only then withdrawing
+# them from here is a separate, explicitly-approved job.
+VIDEO_TAG = re.compile(r"<(?:video|source|audio)\b", re.I)
+protected_video_pages = []
 expected = {os.path.join(n["dir"], "overview.mdx") for n in nodes}
 expected |= {pg["file"] for pg in img_pages}
 expected.add(LANDING)
@@ -986,8 +1103,16 @@ orphans = []
 for dirpath, _dirs, files in os.walk(PHOTOS):
     for fn in files:
         fp = os.path.join(dirpath, fn)
-        if fn.endswith(".mdx") and fp not in expected:
-            orphans.append(fp)
+        if not fn.endswith(".mdx") or fp in expected:
+            continue
+        try:
+            with open(fp, encoding="utf-8") as f:
+                if VIDEO_TAG.search(f.read()):
+                    protected_video_pages.append(fp)
+                    continue
+        except OSError:
+            pass
+        orphans.append(fp)
 for fp in orphans:
     os.remove(fp)
 # prune now-empty dirs
@@ -1056,6 +1181,26 @@ print(f"Static: {copied} copied, {downscaled} downscaled, {skipped} already pres
 print(f"pages.csv: {replaced} rows replaced, {len(merged) - len(csv_rows)} added, total {len(merged)}")
 print(f"Orphan generated files removed: {len(orphans)}")
 print(f"Excluded images: {len(EXCLUDED)} (static copies purged: {len(purged_static)})")
+
+# ---------- media-type report: /Photos is still images only ----------
+_by_why = {}
+for why, key, ident in SKIPPED_VIDEO:
+    _by_why.setdefault(why, []).append((key, ident))
+print(f"Video/UNKNOWN entries skipped (not published): {len(SKIPPED_VIDEO)}"
+      + ("  " + ", ".join(f"{w}={len(v)}" for w, v in sorted(_by_why.items())) if _by_why else ""))
+print(f"Known video CIDs: {len(VIDEO_CIDS)}   confirmed image CIDs: {len(IMAGE_CIDS)}")
+print(f"PROTECTED pre-existing /Photos pages carrying a video player: "
+      f"{len(protected_video_pages)} (left in place, not orphaned)")
+for fp in sorted(protected_video_pages):
+    print(f"    {os.path.relpath(fp, ROOT)}")
+_leaked = [f for f in written if f.startswith(PHOTOS) and f.endswith(".mdx")
+           and VIDEO_TAG.search(open(f, encoding="utf-8").read())]
+print(f"Media players emitted into /Photos this run: {len(_leaked)} (must be 0)")
+if _leaked:
+    print("FAIL: this generator wrote a media player into the image hierarchy.")
+    for f in _leaked:
+        print(f"    {os.path.relpath(f, ROOT)}")
+    sys.exit(1)
 print(f"Landing TOC rows: {len(l3)}")
 print(f"Invisible-unicode scan: clean ({len(written)} files)")
 print(f"Unresolvable internal links: {len(missing)}", sorted(missing)[:10])
