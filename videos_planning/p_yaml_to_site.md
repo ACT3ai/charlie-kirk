@@ -34,6 +34,52 @@ IMAGE_PLANNING_DIR dir is {ROOT_DIR}/image_planning
 MAX_AGENTS is ... = 12
 
 ============================
+SCOPE — VIDEOS ONLY, ADDITIVE ONLY
+============================
+
+Two boundaries define this prompt. Both have been crossed before, because every
+file in {THIS_DIR} is a converted descendant of the images pipeline.
+
+=== 1. THE ONLY INPUT IS THE VIDEO CORPUS ===
+
+The single source of page content is {HIERARCHY_FILE} —
+~/BGit/Bryan_git/charlie-kirk/videos/videos.yaml — plus the sidecars, manifest
+and investigation files it points at.
+
+  * DO NOT READ and DO NOT WRITE {ROOT_DIR}/images or anything under it,
+    including images/images.yaml. It is a different corpus with a different
+    schema and nothing in it belongs on a video page.
+  * DO NOT READ and DO NOT WRITE {IMAGE_PLANNING_DIR}. It was prior art while
+    this prompt was being written; that job is finished. Reading it during a run
+    only invites its data and its wording back into video pages, and copying any
+    file out of it silently reverts this directory's conversion.
+  * DO NOT WRITE {DOCS_DIR}/Photos or {SITE_DIR}/static/img/evidence.
+  * Every page written by this prompt is about a video. If a run finds itself
+    reading a .jpg, describing a still, or resolving a path under images/,
+    something is wrong — stop and report rather than publish it.
+
+=== 2. THIS PROMPT ADDS VIDEO; IT NEVER REMOVES OR CHANGES IMAGES ===
+
+A separate pipeline owns images on this site and is still running. The two edit
+the same topic pages and the same stylesheet. Our job is purely additive with
+respect to images:
+
+  * Never delete an image, an <img> tag, a gallery, a caption, a figure, or an
+    image-bearing block from any page.
+  * Never move, resize, retarget, reorder, or reword an image or its caption —
+    not even to make room for a video card.
+  * Never touch a CK_PLACED_IMAGES block on a topic page or the
+    CK_EVIDENCE_LAYOUT / CK_PLACED_IMAGES blocks in
+    {SITE_DIR}/internals/src/css/custom.css. Treat everything between their
+    markers as foreign territory.
+  * On any page this prompt edits, every image that was there before the run is
+    still there after it, byte-identical, in the same place.
+
+Our markers are CK_PLACED_VIDEOS (topic pages) and CK_VIDEO_LAYOUT +
+CK_PLACED_VIDEOS (the stylesheet). Outside our own markers and the pages under
+{VIDEOS_L2_DIR}, this prompt only ever ADDS.
+
+============================
 GOAL
 ============================
 
@@ -100,6 +146,40 @@ So before Stage 1 does anything, run this gate:
 
 The gate is a hard stop, not a warning. Do not publish "just the good ones" to
 make progress.
+
+STATUS AS OF 2026-07-23: {HIERARCHY_PROMPT} has run and the gate PASSES — 400
+video entries in 1,559 nodes, 0 image file_paths, 0 "This image" prose, 372 of
+400 entries carrying a CID. The gate still runs every time; a later hierarchy
+pass could regress it.
+
+============================
+EMPTY NODES ARE NOT PUBLISHED
+============================
+
+The cluster tree in {HIERARCHY_FILE} mirrors the whole site's concept structure,
+not just the parts that have footage. Most of it is empty: 1,559 nodes exist and
+only about 170 have a video anywhere in their subtree. Generating a page for
+every node would publish roughly 1,390 cluster pages whose entire table of
+contents is a list of other empty pages — a maze with nothing at the end of it,
+and a permanent drag on every build.
+
+The rule:
+
+  * A node with number_of_videos_recursive == 0 gets NO page, appears in NO
+    table of contents, and gets NO row in {PAGES_CSV}. It is skipped, silently
+    and consistently, at every level.
+  * Recompute the count from the tree rather than trusting the stored field —
+    the field is written by a different prompt and can go stale.
+  * A node with videos somewhere below it is published even when it owns none
+    directly; it is a real waypoint on the way to real footage.
+  * If a page for a now-empty node exists from an earlier run, it is removed by
+    the orphan sweep and counted as such.
+  * The count of skipped-empty nodes is reported every run. A large swing in it
+    between runs means the hierarchy moved and is worth a look.
+
+This is a publishing decision, not a data decision. The empty nodes stay in the
+YAML — they are the map of where footage could go, and {HIERARCHY_PROMPT} uses
+them. They simply do not become pages until something fills them.
 
 ============================
 KNOWLEDGE — READ FIRST, IN THIS ORDER
@@ -306,11 +386,29 @@ Rules that follow:
     a plain "media pending" note where the player would be. No player element at
     all. A player pointed at an empty CID is a dead rectangle and is worse than
     an honest note.
-  * An entry with ipfs_pinned false gets its page written, and gets reported
-    loudly. No public gateway can reliably serve an unpinned CID, so that page
-    will show a dead player to visitors even though it plays perfectly on this
-    machine. Do not pin as a side effect — pinning is irreversible in practice
-    and is a separate, explicitly-approved job.
+  * AN ENTRY WITH ipfs_pinned FALSE GETS NO PLAYER EITHER. A CID alone does not
+    make footage fetchable. Most of this corpus was hashed with `ipfs add -n`,
+    which computes the CID without adding or announcing the blocks — as of
+    2026-07-23, 58 of 372 CIDs are actually on the node and the other 314 exist
+    nowhere on the network. A player pointed at one of those is dead for every
+    visitor on earth, and looks perfect on this machine if IPFS Companion is
+    running. That is the trap this pipeline is most likely to fall into.
+    So an unpinned entry is treated exactly like a pending one, and gets the
+    FULL page — title, complete write-up, sources, links, and its poster frame
+    when one can be extracted — with an honest note in place of the player:
+
+      Media pending. This footage is held locally and has not yet been
+      published to IPFS, so it cannot be played here yet.
+      CID (computed): Qm...
+
+    The write-up is the point of the page and it publishes normally. Only the
+    player waits. Report the count, and list the CIDs, so a later approved
+    pinning job has its worklist; the same pages light up on the next run with
+    no rewriting.
+  * Do not pin as a side effect — pinning is irreversible in practice and is a
+    separate, explicitly-approved job. Verify pin status against the node at run
+    time (`ipfs pin ls --type=recursive`) rather than trusting the YAML field,
+    which is written by a different prompt and goes stale as pinning happens.
   * THIRD-PARTY HOSTED VIDEO (YouTube, Rumble, X) has no CID. Its page carries
     the platform's own embed instead of our player, and says plainly where the
     video is hosted and that it can be removed by that platform at any time.
@@ -835,9 +933,10 @@ Each agent, for its subtree, working top-down:
       file is available to extract from.
     * If a page for this cid already exists in this node's dir, read it in
       first, then rewrite it. Otherwise mint the video_key and create it.
-    * Apply the VIDEO PAGE LAYOUT SPEC exactly. Emit the player only when there
-      is a cid; emit the platform embed for third-party video; emit the "media
-      pending" note when there is neither.
+    * Apply the VIDEO PAGE LAYOUT SPEC exactly. Emit the player only when the
+      entry has a cid AND that cid is pinned on the node; emit the platform
+      embed for third-party video; emit the poster plus the "media pending" note
+      in every other case, including a computed-but-unpinned cid.
     * Write the account per WRITING THE WRITE-UP — reading the transcription
       first, then the description and OCR sidecars, then the on_pages hosting
       pages, explaining the relationships, hyperlinking to related Level 2s and
@@ -858,11 +957,11 @@ Output to stdout (after all agents return):
 ============================
 STAGE 3 COMPLETE
 Agents run: N
-Cluster pages: N created, N rewritten (N bypassed in navigation)
+Cluster pages: N created, N rewritten (N bypassed in navigation, N empty skipped)
 Video pages: N created, N rewritten
-Players emitted: N IPFS, N third-party embed, N media pending
+Players emitted: N IPFS (pinned), N third-party embed, N media pending
 Posters written: N   Excluded videos skipped: N   Excluded pages deleted: N
-Unpinned CIDs published (will show dead players): N (listed)
+Media-pending pages awaiting a pinning job: N (CIDs listed)
 Videos with no transcription (write-up is thin): N (listed)
 Problems reported: N (list)
 ============================
@@ -1143,7 +1242,18 @@ HARD RULES
   pipeline's output site-wide.
 * NEVER copy video bytes into {SITE_DIR}/static. Video plays from a public IPFS
   gateway, addressed by cid. Posters are the only local media.
-* Nothing is ever PINNED by this prompt. Unpinned CIDs are reported, not fixed.
+* Nothing is ever PINNED by this prompt. A player is emitted ONLY for a cid that
+  is actually pinned on the node, verified at run time. A computed-but-unpinned
+  cid gets the full page with a poster and an honest media-pending note, never a
+  player, and its CID goes on the reported worklist.
+* Empty nodes (number_of_videos_recursive == 0, recomputed from the tree) are
+  never published: no page, no TOC entry, no {PAGES_CSV} row. They stay in the
+  YAML as the map of where footage could go.
+* VIDEOS ONLY, ADDITIVE ONLY (see SCOPE at the top). Never read or write
+  {ROOT_DIR}/images or {IMAGE_PLANNING_DIR}. Never delete, move, resize,
+  retarget, reorder, or reword an image, a caption, or an image block on any
+  page this prompt edits — every image present before the run is present after
+  it, byte-identical.
 * Stage 5 adds a link BENEATH a <video>/<iframe>, never an anchor wrapped
   around it, because clicking a player hits its controls. Real images
   (thumbnails standing in for video) are wrapped the normal way. It changes no
