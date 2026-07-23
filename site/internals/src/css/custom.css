@@ -296,3 +296,127 @@
   .ck-placed-img { height: 150px; }
 }
 /* CK_PLACED_IMAGES_END */
+
+/* CK_VIDEO_LAYOUT_START */
+/* Owned by videos_planning/generator/gen_videos_pages.py. Implements
+   videos_planning/layout_guidelines.txt. Do not hand-edit; do not write into
+   the CK_EVIDENCE_LAYOUT or CK_PLACED_IMAGES blocks from the videos pipeline. */
+.ck-video-wrap {
+  position: static;
+  display: block;
+  margin: 0 0 1.25rem 0;
+  padding: 0;
+  border-radius: 0;
+  background: var(--ifm-background-color);
+  opacity: 1;
+  z-index: 1;
+  line-height: 0;
+}
+.ck-video-wrap .ck-video-media {
+  display: block;
+  border-radius: 0;
+  background: #000;
+  opacity: 1;
+  max-width: 100%;
+  max-height: calc(100vh - var(--ifm-navbar-height, 60px) - 6rem);
+}
+.ck-video-wrap--full {
+  width: 85%;
+  max-width: 85%;
+  clear: both;
+}
+.ck-video-wrap--full .ck-video-media {
+  width: 100%;
+  height: auto;
+}
+.ck-video-wrap--wrapped {
+  float: left;
+  width: auto;
+  max-width: 45%;
+  margin: 0 1.75rem 1rem 0;
+}
+.ck-video-wrap--wrapped .ck-video-media {
+  width: auto;
+  height: calc(100vh - var(--ifm-navbar-height, 60px) - 6rem);
+  max-width: 100%;
+}
+.ck-video-wrap--embed {
+  aspect-ratio: 16 / 9;
+}
+.ck-video-wrap--embed .ck-video-media {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+.ck-video-wrap--pending .ck-video-media {
+  width: 100%;
+  height: auto;
+}
+.ck-video-text {
+  max-width: none !important;
+  width: auto !important;
+  line-height: var(--ifm-line-height-base);
+}
+.ck-video-text::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+@media (max-width: 996px) {
+  .ck-video-wrap--wrapped,
+  .ck-video-wrap--full {
+    float: none;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 0 1.25rem 0;
+  }
+  .ck-video-wrap--wrapped .ck-video-media {
+    width: 100%;
+    height: auto;
+  }
+}
+/* CK_VIDEO_LAYOUT_END */
+
+/* CK_PLACED_VIDEOS_START */
+/* Cards placed on topic pages by the videos pipeline. Never a player: the
+   player lives on the video's own page under /Videos and everything else
+   links to it. */
+.ck-placed-videos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1.25rem;
+  margin: 1rem 0 1.5rem 0;
+}
+.ck-placed-video {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  background: var(--ifm-background-surface-color);
+}
+.ck-placed-video img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 0;
+  background: #000;
+}
+.ck-placed-video-body {
+  padding: 0.6rem 0.75rem 0.75rem 0.75rem;
+  font-size: 0.9rem;
+}
+.ck-placed-video-title {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 0.3rem;
+  line-height: 1.3;
+}
+.ck-placed-video-caption {
+  color: var(--ifm-color-emphasis-800);
+  line-height: 1.4;
+}
+.ck-placed-video-meta {
+  margin-top: 0.4rem;
+  font-size: 0.8rem;
+  color: var(--ifm-color-emphasis-600);
+}
+/* CK_PLACED_VIDEOS_END */
