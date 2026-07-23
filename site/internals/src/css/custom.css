@@ -254,3 +254,45 @@
   }
 }
 /* CK_EVIDENCE_LAYOUT_END */
+
+/* CK_PLACED_IMAGES_START */
+/* Stage 6 of p_yaml_to_site.md — the gallery of images placed on a topic page
+   from the YAML's should_be_on_pages. A responsive grid at the bottom of the
+   page; each tile is a fixed-height thumbnail that never crops (object-fit:
+   contain) and clicks through to that image's own Photos page. */
+.ck-placed-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 1.25rem;
+  margin: 1rem 0 2rem 0;
+  clear: both;
+}
+.ck-placed-figure {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+.ck-placed-figure > a {
+  display: block;
+  background: var(--ifm-background-surface-color, #fff);
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.28);
+  line-height: 0;
+}
+.ck-placed-img {
+  display: block;
+  width: 100%;
+  height: 190px;
+  object-fit: contain;
+  background: var(--ifm-background-surface-color, #fff);
+}
+.ck-placed-caption {
+  font-size: 0.82rem;
+  line-height: 1.35;
+  margin-top: 0.45rem;
+  color: var(--ifm-color-emphasis-700);
+}
+@media (max-width: 996px) {
+  .ck-placed-gallery { grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); }
+  .ck-placed-img { height: 150px; }
+}
+/* CK_PLACED_IMAGES_END */

@@ -49,11 +49,18 @@ Two kinds of pages get produced under {PHOTOS_DIR}:
     at the layout spec below, plus a written description of what the image is,
     what it relates to, and hyperlinks into the rest of the investigation.
 
-A third, smaller output is produced OUTSIDE {PHOTOS_DIR}: the inline copies of
-each image on its host topic pages (the YAML's on_pages) are made clickable so
-they link to that image's Photos image page. This is a link-only edit — a
-wrapping anchor around an already-present <img> — and it too reads the YAML
-without writing it. See Stage 5.
+Two smaller outputs are produced OUTSIDE {PHOTOS_DIR}, both driven off the YAML
+and both read-only against it:
+
+  * The inline copies of each image on its host topic pages (the YAML's
+    on_pages) are made clickable so they link to that image's Photos image
+    page. This is a link-only edit — a wrapping anchor around an already-present
+    <img>. See Stage 5.
+  * The images the YAML says OUGHT to appear on a topic page but do not yet
+    (the YAML's should_be_on_pages) are PLACED on those pages, in a generated
+    gallery block at the bottom of the page, each one clickable through to its
+    Photos image page. See Stage 6. This is the stage that closes the gap
+    between the plan and the site.
 
 This prompt runs MANY times. Pages will usually already exist from earlier
 runs, written before additional data existed. Rerunning must read each
@@ -464,6 +471,157 @@ Idempotent and safe:
   * An image hosted on N pages gets N host edits, one matched <img> per page.
 
 ============================
+KNOWLEDGE — SHOULD_BE_ON_PAGES: PLACING IMAGES ONTO TOPIC PAGES
+============================
+
+Stage 5 makes an image clickable where it is ALREADY embedded. This knowledge
+covers the far bigger job: putting the image on the pages where it belongs and
+currently is not.
+
+The YAML carries three properties per image that together describe the whole
+picture:
+
+  on_pages            where the image IS shown today. Observed. ~91% empty.
+  should_be_on_pages  where the image OUGHT to be shown. Reasoned, produced by
+                      Stage 11 of {THIS_DIR}/p_update_image_hierarchy.md. It is
+                      the COMPLETE desired state and is a superset of on_pages —
+                      never "extra pages beyond on_pages".
+  image_page          the image's own Level 5 page under {PHOTOS_DIR}.
+
+The work of this stage is exactly the set difference:
+
+    should_be_on_pages  minus  what is already embedded on that page
+
+Why it matters: most evidence images in this corpus are published nowhere but
+their own Photos page. A reader deep in Ballistics, or on the N1098L page, or on
+a person's profile, should SEE the evidence on the page they are reading. That
+is the charter's "topic arrival" path served from the other direction — instead
+of sending the visitor to the images hierarchy, the evidence comes to them, and
+one click on it takes them to the full write-up.
+
+=== THE PROPERTY SHAPE ===
+
+should_be_on_pages is a list of single-key mappings, each holding the full
+tilde-rooted path to a real page file:
+
+    should_be_on_pages:
+      - page: "~/BGit/Bryan_git/charlie-kirk/site/docs/Suspicious/Cause_of_Death/entrance-or-exit.mdx"
+      - page: "~/BGit/Bryan_git/charlie-kirk/site/docs/Suspicious/Five_Minutes/shirt-pull-at-the-shot.mdx"
+
+Every path is stat()-verified by Stage 11 before it is written. This stage
+re-stats anyway: a page can be renamed between the two prompts. A path that no
+longer resolves is REPORTED, never guessed at and never repaired by inventing a
+neighbour.
+
+=== WHERE THE IMAGE IS HOSTED (the src) ===
+
+The image needs a URL that actually serves bytes to a visitor. Resolve the src
+in this order, per image, and record which branch was taken:
+
+  1. Served static copy — /img/evidence/{sha256}.{ext} — when the file exists
+     under {STATIC_IMG_DIR}. This is the site's established convention (every
+     existing evidence <img> outside {PHOTOS_DIR} already uses it) and it is
+     what the Photos image pages themselves serve.
+  2. The image's own local original, if a static copy is missing but file_path
+     resolves on disk: copy it into {STATIC_IMG_DIR}/{sha256}.{ext} exactly as
+     HOSTING THE IMAGE FILE describes (downscale over ~2MB), then use branch 1.
+  3. The IPFS gateway — https://ipfs.io/ipfs/{cid} — when there is no local
+     file at all. Entries with no file_path are IPFS-native; their bytes exist
+     only on the network.
+  4. Nothing resolves: skip the placement and report it. Never emit an <img>
+     whose src cannot serve.
+
+  THE CID CAVEAT, MEASURED, NOT ASSUMED. An unpinned CID does not resolve from
+  a public gateway. Verified 2026-07-23: a pinned CID returned 200 from
+  ipfs.io, an unpinned one timed out at 504. Only a small minority of entries
+  carry ipfs_pinned: true. So the CID is NOT usable as the general src — it is
+  correct only for pinned, file-less entries, which is exactly branch 3.
+  Every emitted <img> nevertheless carries the CID as a data-cid attribute, so
+  the content identity travels with the embed and a later pinning pass can
+  switch the src over by rewriting one attribute pair. When the corpus is fully
+  pinned, branch 3 may be promoted ahead of branch 1 by changing that order
+  here — nothing else in the stage has to change.
+
+=== THE LINK TARGET ===
+
+Clicking the placed image goes to that image's own Photos page — the Level 5
+page recorded on the entry as image_page. Derive the site-relative URL the same
+way Stage 5 does: strip the {DOCS_DIR} prefix, drop the .mdx suffix, keep the
+leading "/", never include /docs and never a domain. Confirm against the
+url_path in {PAGES_CSV}; where they disagree, {PAGES_CSV} wins.
+
+An image with no image_page cannot be placed — there is nowhere for the click
+to land. Skip it and report it; do not place a dead-end image.
+
+=== WHERE ON THE PAGE (the bottom, in a marked block) ===
+
+The images go at the BOTTOM of the page, inside a generated block delimited by
+MDX comment markers:
+
+    {/* CK_PLACED_IMAGES_START — generated, do not hand-edit */}
+    ## Image Evidence
+    ... gallery ...
+    {/* CK_PLACED_IMAGES_END */}
+
+Rules for the block:
+
+  * Bottom placement is deliberate. The prose above it was written by hand or
+    by other prompts and must not be reflowed, re-sectioned, or interrupted.
+    Appending is the only edit that is safe to repeat thousands of times.
+  * The block is regenerated wholesale on every run: everything between the
+    markers is replaced, everything outside them is left byte-identical. That
+    is what makes the stage idempotent.
+  * If the markers are absent, the block is appended at end of file. If they
+    are present, it is replaced in place — it stays wherever a human moved it.
+  * A page whose placement list comes out empty gets its block REMOVED, not
+    left stale.
+  * Never insert the block into a page under {PHOTOS_DIR} (that Level 2 is the
+    hierarchy itself), and never into {THIS_DIR} or any planning file.
+  * MDX gotcha: comments must be {/* ... */}. An HTML <!-- --> comment fails the
+    MDX compile and breaks the deploy.
+
+=== NO DUPLICATES ===
+
+An image already visible on a page is not placed again. Before building a
+page's gallery, read the page and drop any image whose sha256 OR cid already
+appears anywhere in the file's text — that covers the existing inline
+/img/evidence/{sha}.{ext} embeds, any IPFS embed, and anything a previous run of
+this stage placed outside the markers. The check runs against the page text with
+the marked block stripped out, so the block's own contents never suppress their
+own regeneration.
+
+=== PER-PAGE LOAD ===
+
+Stage 11 aims at a ceiling of 12 images per page but does not always land it —
+some pages carry 20+ assignments. A page is not an album. Cap the gallery at 12
+placements, keep the strongest (Stage 11 emits them best-first; preserve YAML
+order), and report the overflow so the hierarchy pass can split the page or drop
+the weak matches. Count images already embedded on the page against the cap.
+
+=== THE EXCLUSION GATE APPLIES HERE TOO ===
+
+An image whose sha256 is in {EXCLUDE_FILE} is never placed, whatever the YAML
+says, and any existing placement of it is removed by the block regeneration.
+The gate is on the sha256, checked in this stage, not inherited on trust from
+whatever wrote the YAML.
+
+=== THE CAPTION, AND SAFE WRITING ===
+
+Each placed image gets a one-line caption so a reader knows what they are
+looking at before they click. Build it from the entry's ai_description —
+first sentence, trimmed — and end it with the link to the full write-up.
+The caption is published text, so every safe-writing rule in WRITING THE
+DESCRIPTION binds it: no claim that a person knew anything beforehand, no claim
+of immoral or illegal conduct, attribution language for anything contested, and
+the word "defamation" never appears. An ai_description that fails those rules is
+rewritten for the caption, and the discrepancy is recorded in {FINDINGS_FILE}.
+
+Captions are generated text and are regenerated with the block. Nothing a human
+writes inside the markers survives — that is the cost of a block that
+regenerates, and it is why hand-written commentary about an image belongs above
+the markers or on the image's own Photos page.
+
+============================
 STAGE 1 — SETUP AND READ
 ============================
 
@@ -639,6 +797,69 @@ Pre-existing anchors left intact: N (list)
 ============================
 
 ============================
+STAGE 6 — PLACE THE SHOULD_BE_ON_PAGES IMAGES ONTO THEIR TOPIC PAGES
+============================
+
+Stage 5 wired up the images that were already embedded. This stage places the
+ones that are not. It is the stage that makes the YAML's plan real: every image
+the hierarchy says belongs on a topic page gets put on that page, hosted, and
+made clickable through to its own Photos page. See KNOWLEDGE — SHOULD_BE_ON_PAGES
+for the src resolution order, the link derivation, the block markers, the dedupe
+rule, the per-page cap, and the caption rules; follow it exactly.
+
+By this stage every image page under {PHOTOS_DIR} exists (Stage 3 wrote them) and
+{PAGES_CSV} is current (Stage 4), so both the link targets and their URLs are
+real.
+
+Build the plan first, working from the YAML index:
+
+* Walk every image entry. Skip any whose sha256 is in {EXCLUDE_FILE}. Skip any
+  with an empty should_be_on_pages. Skip any with no image_page, and report it.
+* Resolve the entry's src by the four-branch order in KNOWLEDGE (static copy /
+  copy-then-static / pinned IPFS gateway / skip-and-report). Perform the copies
+  into {STATIC_IMG_DIR} now, before any page is edited, so no page can end up
+  referencing a file that was never written.
+* Derive the image-page URL from image_page and confirm it against {PAGES_CSV}.
+* Re-stat every should_be_on_pages path. Drop and report any that no longer
+  resolves, and any that points under {PHOTOS_DIR}.
+* Invert into a map: host page -> ordered list of
+  (sha256, cid, src, image-page URL, alt text, caption), YAML order preserved.
+
+Then, for each host page in that map (partition across up to {MAX_AGENTS}
+agents by host page; a host page is never split across agents):
+
+* Read the page in. Strip the existing CK_PLACED_IMAGES block from the text you
+  test against, then drop from the page's list every image whose sha256 or cid
+  already appears in that stripped text — those are already visible on the page
+  and Stage 5 owns their linking.
+* Apply the per-page cap of 12 counting what is already embedded, keeping YAML
+  order. Report the overflow.
+* Emit the block: a "## Image Evidence" heading and one figure per image — the
+  <img> wrapped in an anchor to the image's Photos URL, carrying data-cid, an
+  alt drawn from the description, loading="lazy" — plus the caption line and its
+  "full write-up" link.
+* Replace the block between the markers if they exist; append it at end of file
+  if they do not; remove it entirely if the page's list came out empty. Keep the
+  page byte-identical everywhere outside the markers.
+* Do not modify pages under {PHOTOS_DIR}, and do not modify {HIERARCHY_FILE}.
+
+The gallery needs one stylesheet block — a marked CK_PLACED_IMAGES region in
+{SITE_DIR}/internals/src/css/custom.css, alongside the existing
+CK_EVIDENCE_LAYOUT block. Write it once, regenerate it in place on later runs,
+and never touch the rest of that file.
+
+Output to stdout:
+============================
+STAGE 6 COMPLETE
+Images with should_be_on_pages: N   placements planned: N over N pages
+Src resolution: N static / N copied-then-static / N IPFS gateway / N unresolvable
+Pages edited: N   blocks created: N   blocks replaced: N   blocks removed: N
+Images placed: N   skipped as already embedded: N
+Over the 12-per-page cap: N (list of page -> overflow count)
+Missing image_page: N   should_be_on_pages paths that no longer exist: N (list)
+============================
+
+============================
 OUTPUT SANITIZATION — NO INVISIBLE UNICODE, EVER (SECURITY RULE)
 ============================
 
@@ -661,13 +882,13 @@ hard-fail if any code point remains. (The invisible set is enumerated in
 {THIS_DIR}/p_create_image_hierarchy.md — same list applies here.)
 
 ============================
-STAGE 6 — BUILD, VERIFY, REPORT
+STAGE 7 — BUILD, VERIFY, REPORT
 ============================
 
 * Run the Docusaurus build: cd {SITE_DIR} && npm run build. It must pass.
   Broken links and MDX compile errors (e.g. a stray <!-- --> comment) surface
-  here — fix and rebuild until green. The host-page image links added in Stage 5
-  are internal links, so any bad target fails the build here.
+  here — fix and rebuild until green. The host-page image links added in
+  Stages 5 and 6 are internal links, so any bad target fails the build here.
 * Spot-check 10 image pages across different partitions: frontmatter fields
   present, hide_table_of_contents true, image src resolves to an existing
   static file or IPFS URL, layout component/CSS applied, description has at
@@ -684,21 +905,30 @@ STAGE 6 — BUILD, VERIFY, REPORT
   different sections, open the host page, confirm the matched <img> is wrapped
   in an anchor whose href is the image's derived Photos URL, confirm no sibling
   image was wrapped, and confirm that URL resolves to the image page on disk.
+* Spot-check the Stage 6 placements: pick 10 pages that gained a block, confirm
+  the block sits between its markers at the bottom, confirm every src resolves
+  (the static file exists under {STATIC_IMG_DIR}, or the CID is one of the
+  pinned ones), confirm every anchor href resolves to a real image page on
+  disk, confirm no image appears twice on the page, and confirm the page above
+  the markers is unchanged from before the run.
 * Confirm {PAGES_CSV} row count change matches pages created.
 * Run the invisible-Unicode scan over everything written this run (host pages
-  edited in Stage 5 included).
+  edited in Stages 5 and 6 included).
 * Confirm nothing outside {PHOTOS_DIR}, {STATIC_IMG_DIR}, {PAGES_CSV}, the
-  Stage 5 host pages (anchor wraps only), and (marker section only)
-  {IMAGES_L2_PAGE} was modified. sidebars.ts untouched.
+  Stage 5 host pages (anchor wraps only), the Stage 6 host pages (marked block
+  only), the marked CSS region, and (marker section only) {IMAGES_L2_PAGE} was
+  modified. sidebars.ts untouched.
 
 Output to stdout:
 ============================
-STAGE 6 COMPLETE — FINAL REPORT
+STAGE 7 COMPLETE — FINAL REPORT
 Build: PASS/FAIL
 Pages now under /Photos: N cluster + N image = N total
 Images published: N of N in YAML (N pending media)
 Host pages linked: N   image embeds made clickable: N
-Spot-checks: image pages N/10 pass, cluster pages N/5 pass, host links N/10 pass
+Topic pages carrying placed images: N   images placed: N
+Spot-checks: image pages N/10 pass, cluster pages N/5 pass, host links N/10 pass,
+             placement blocks N/10 pass
 pages.csv in sync: yes   sidebars.ts untouched: yes   invisible scan: clean
 ============================
 
@@ -714,9 +944,10 @@ HARD RULES
   description is grounded in it.
 * This prompt writes ONLY: pages under {PHOTOS_DIR}, static copies under
   {STATIC_IMG_DIR}, the marked TOC section of {IMAGES_L2_PAGE}, a shared
-  layout component/CSS under {SITE_DIR}/src/ if used, {PAGES_CSV} rows, and —
-  in Stage 5 only — wrapping anchors around already-present image embeds on the
-  host pages named in each image's on_pages. It never modifies
+  layout component/CSS under {SITE_DIR}/internals/src/ (marked regions only),
+  {PAGES_CSV} rows, and — on the topic pages named in each image's on_pages /
+  should_be_on_pages — wrapping anchors around already-present image embeds
+  (Stage 5) and the marked CK_PLACED_IMAGES block (Stage 6). It never modifies
   {HIERARCHY_FILE}'s data (read-only input), never touches {SITE_DIR}/sidebars.ts,
   and never writes planning notes into the site or Docusaurus pages into
   {THIS_DIR}.
@@ -726,6 +957,17 @@ HARD RULES
   around the one matched <img> per page — it changes no other content, creates
   and deletes nothing, never double-wraps, never clobbers a pre-existing anchor,
   and never links an image to any page but its own. Excluded images are skipped.
+* Stage 6 places every image the YAML's should_be_on_pages says belongs on a
+  topic page and is not already embedded there, in a regenerated block between
+  the CK_PLACED_IMAGES markers at the BOTTOM of that page. Outside the markers
+  the page stays byte-identical — the block is the only thing this prompt may
+  add to a topic page's content. Each placed image is hosted from the served
+  static copy (IPFS gateway only for pinned, file-less entries), carries its CID
+  as data-cid, and is wrapped in an anchor to its own Photos image page. Never
+  duplicate an image already on the page, never exceed 12 per page, never place
+  an excluded sha256, and never place an image that has no image_page to land
+  on. should_be_on_pages is the complete desired state and a superset of
+  on_pages — not a list of extras.
 * A cluster node whose subtree resolves to exactly ONE image page is bypassed
   in navigation: parents and peers link straight to that image page, never to
   the cluster page, and the image page's back link points at the nearest
