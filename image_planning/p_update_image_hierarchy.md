@@ -331,7 +331,7 @@ false. An entry is banned: true only because a row for it exists in the ban CSV.
 
 WHAT BANNED MEANS. Banned is a PUBLISH-TIME GATE, not a delete. A banned image:
 
-  * Gets NO Level 5 page under {PHOTOS_DIR}. If one already exists it is deleted
+  * Gets NO Level 5 page under {DOCS_DIR}/Photos. If one exists it is deleted
     by {THIS_DIR}/p_yaml_to_site.md — not by this prompt, which never touches a
     page.
   * Gets NO served copy under the site's static evidence directory

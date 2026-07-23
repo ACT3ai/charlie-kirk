@@ -1263,6 +1263,21 @@ STAGE 7 — BUILD, VERIFY, REPORT
 * Confirm every CK_PLACED_IMAGES block on every page edited this run is
   byte-identical to before the run. The images pipeline's blocks are foreign
   territory and a single edit to one is a failure of the run.
+* BAN AUDIT — re-read {BAN_VIDEOS_CSV} and {EXCLUDE_FILE} here, at the end,
+  rather than reusing the Stage 1 set; a row may have been added mid-run by this
+  very run. Then assert all five, and fail the run on any of them:
+    - No page under {VIDEOS_L2_DIR} carries a banned cid or sha256 in its
+      ck_video_cid / ck_video_sha256 frontmatter.
+    - No file under {POSTER_DIR} is named for a banned sha256.
+    - No page anywhere under {DOCS_DIR} references a banned video — grep for the
+      cid, the sha256, the gateway URL, and the original basename, inside and
+      outside CK_PLACED_VIDEOS blocks.
+    - No page anywhere links to a URL under /Videos that resolves to a banned
+      video's page.
+    - Nothing banned was pinned by this run. Nothing is pinned by this run at
+      all, so the expected count is zero either way; state it explicitly.
+  Grep for the identity, not for the page path: a stale link with no page behind
+  it is still a link into banned material and is a broken link besides.
 * Confirm {PAGES_CSV} row count change matches pages created.
 * Run the invisible-Unicode scan over everything written this run (host pages
   edited in Stages 5 and 6 included).
@@ -1278,7 +1293,10 @@ Output to stdout:
 STAGE 7 COMPLETE — FINAL REPORT
 Build: PASS/FAIL
 Pages now under /Videos: N cluster + N video = N total
-Videos published: N of N in YAML (N media pending, N excluded)
+Videos published: N of N in YAML (N media pending)
+BANNED: N videos in the ban set — 0 have a page, 0 have a poster, 0 are placed
+  on any page, 0 are linked to from anywhere, 0 pinned (all five required)
+  Un-published this run: N pages + N posters + N placements removed
 Playback check: N/5 played in a clean profile
 Host pages linked: N   video embeds given links: N
 Topic pages carrying placed video cards: N   videos placed: N
