@@ -45,7 +45,9 @@ page will be mostly a table of contents: a table with links into the images
 directory's Level 3 pages, and those Level 3 pages come directly from the
 level_3 nodes of this YAML. This prompt builds the YAML only. It does NOT
 create or modify any Docusaurus page, and it does NOT touch sidebars.ts or
-{PAGES_CSV}. Page generation is a later, separate prompt.
+{PAGES_CSV}. Page generation is a later, separate prompt. Stage 11 plans image
+placements onto topic pages, but it only RECORDS the plan in the YAML — it
+places nothing and edits no page.
 
 Convergence priority order (if context runs short, complete in this order):
   1. Stage 3 — CID and pin status on every image (Stage 8 depends on it)
@@ -55,9 +57,10 @@ Convergence priority order (if context runs short, complete in this order):
   5. Stage 8 — on_pages: every other repo page that shows each image
   6. Stage 9 — sidecar file-path properties on every image and video
   7. Stage 10 — image_page path on every image entry
-  8. Stage 5 — home page tables of contents into more level_3s
-  9. Stage 11 — counts and needs_split
- 10. Stage 12 — verify
+  8. Stage 11 — should_be_on_pages: where each image OUGHT to appear
+  9. Stage 5 — home page tables of contents into more level_3s
+ 10. Stage 12 — counts and needs_split
+ 11. Stage 13 — verify
 
 ============================
 KNOWLEDGE — THE LEVEL MODEL (READ THIS FIRST)
@@ -129,8 +132,10 @@ before changing anything. Its current shape:
     File Bridge sidecars, "" when the sidecar does not exist — see Stage 9),
     image_page (path to the published Level 5 page that hosts this one image,
     "" when no page exists yet — see Stage 10), on_pages (list of every OTHER
-    page in the repo that shows this image — see Stage 8; supersedes the old
-    flat on_site_pages property, which is migrated and removed), optional
+    page in the repo that shows this image TODAY — see Stage 8; supersedes the
+    old flat on_site_pages property, which is migrated and removed),
+    should_be_on_pages (list of every page in the repo this image SHOULD appear
+    on — the planned end state, computed in Stage 11), optional
     ipfs_url (for entries that exist only as an IPFS embed with no local
     file), optional also_filed_in (list of other mirror dirs the same sha256
     legitimately lives in — cross-filing is deliberate and kept).
@@ -151,14 +156,18 @@ before changing anything. Its current shape:
             on_pages:
               - page: "~/BGit/Bryan_git/charlie-kirk/site/docs/FBI/overview.mdx"
               - page: "~/BGit/Bryan_git/charlie-kirk/site/docs/Killer/israel-mossad.mdx"
+            should_be_on_pages:
+              - page: "~/BGit/Bryan_git/charlie-kirk/site/docs/FBI/overview.mdx"
+              - page: "~/BGit/Bryan_git/charlie-kirk/site/docs/Killer/israel-mossad.mdx"
+              - page: "~/BGit/Bryan_git/charlie-kirk/site/docs/CoverUp/evidence-destruction.mdx"
 
     Every image entry carries every one of these properties. A property that
     has no value is emitted as the empty string "" — never omitted, never
     null. Absence of the key would make later passes unable to tell "not
-    looked up yet" from "looked up, does not exist." The two exceptions to the
-    ""-for-empty rule are the two typed properties: on_pages is a list and
-    emits [] when empty, and ipfs_pinned is a boolean and emits false when the
-    local node does not pin the CID.
+    looked up yet" from "looked up, does not exist." The exceptions to the
+    ""-for-empty rule are the typed properties: on_pages and
+    should_be_on_pages are lists and emit [] when empty, and ipfs_pinned is a
+    boolean and emits false when the local node does not pin the CID.
   * About 21 level_3 clusters exist today (FBI, The Shot and the Shooter
     Position, Unfiled Backlog, Patsy Candidates, Security Team, TPUSA, Court
     and Legal Proceedings, Aircraft and Flight Evidence, Tyler Robinson,
@@ -543,8 +552,21 @@ images gets those images represented in the YAML hierarchy.
 
 * Scan every page under {DOCS_DIR} for embedded images and videos: markdown
   image syntax, <img> tags, <iframe>/<video> embeds, and static-asset links.
-  Resolve each src to the actual file (usually under {SITE_DIR}/internals/
-  static/ or {SITE_DIR}/static/).
+  Use the SAME multi-line-aware extractor Stage 8 specifies — the site's
+  dominant embed form splits `<img` and `src=` across lines, and a
+  line-oriented pattern misses 72% of them. Resolve each src to the actual
+  file: the served path /img/... maps to {SITE_DIR}/internals/static/img/...
+  ({SITE_DIR}/static/ does not exist on this repo).
+
+* SITE-ONLY ASSETS. Some published images have no mirror original at all —
+  hand-made diagrams and timeline graphics living only under
+  {SITE_DIR}/internals/static/ (All_Laws.jpeg, Timeline_Israel.jpeg,
+  Iran_Timeline.jpeg, court/mirandize/*.png and others found at run time).
+  They are real published evidence images and they belong in the corpus.
+  Create an entry for each: sha256 the static file, file_path = the static
+  file's tilde-rooted path, cid computed as in Stage 3, and park it under the
+  level_3/level_4 node matching the page it appears on. Never skip a published
+  image just because it did not come from the mirror.
 * For each image found on a page:
     * Compute its sha256. Try to match it back to an original under
       {MIRROR_DIR} — first by sha256 against {INVENTORY_TSV} and the YAML's
@@ -562,8 +584,8 @@ images gets those images represented in the YAML hierarchy.
       level_4 in the YAML which correlates to the Level 3 page in the file
       system." Fields: cid (Stage 3 fills it), ipfs_pinned, sha256,
       file_path, ai_description: "", on_pages: [{page: <tilde-rooted page
-      path>}], plus the sidecar path fields (Stage 9
-      fills them) and image_page: "" (Stage 10 fills it).
+      path>}], should_be_on_pages: [] (Stage 11 fills it), plus the sidecar
+      path fields (Stage 9 fills them) and image_page: "" (Stage 10 fills it).
 * Videos found on pages get entries too, as `video:` items with the same
   fields (video_list.csv at {DOCS_DIR}/video_list.csv is a starting index;
   the page scan is authoritative).
@@ -593,8 +615,14 @@ confused:
   image_page  "which page IS this image" — the one Level 5 page under
               {DOCS_DIR}/Photos that exists to host this single image. Set in
               Stage 10. Exactly one, or "".
-  on_pages    "where ELSE is this image shown" — every OTHER page anywhere in
-              the repo that embeds it. Zero to many. Set here.
+  on_pages    "where ELSE is this image shown TODAY" — every OTHER page
+              anywhere in the repo that embeds it right now, observed from the
+              actual file contents. Zero to many. Set here.
+  should_be_on_pages
+              "where SHOULD this image be shown" — the planned end state,
+              reasoned out rather than observed. Zero to many. Set in Stage 11.
+              It is a superset of on_pages; the difference between the two is
+              the publishing work still to do.
 
 on_pages covers any page hosted on any site Level 2, Level 3, or Level 4 —
 that is, anywhere OUTSIDE the images Level 2 directory. A page under some
@@ -619,20 +647,99 @@ empty list:
 
     on_pages: []
 
-MIGRATION — on_site_pages is the old name for this.
+ON_PAGES IS OBSERVED, NEVER INFERRED — THIS IS THE RULE THE LAST RUN BROKE.
 
-Earlier passes wrote a property called `on_site_pages` holding a flat list of
-repo-relative page paths, e.g.
+on_pages is a statement of fact about bytes on disk: "the text of page P
+contains a reference that resolves to this image." It is established by
+reading P and finding the reference. There is exactly one way to earn a
+binding, and it is that.
 
-    on_site_pages: ["site/docs/Killer/israel-mossad.mdx", "site/docs/Motive/overview.mdx"]
+A binding may NEVER be produced by any of these:
+  * the image and the page being about the same topic
+  * the image sitting in a YAML cluster whose site_level_2 / site_page points
+    at that page
+  * a person named in the image also being the subject of the page
+  * carrying a value forward from an earlier run without re-reading the page
+  * an agent's judgment, recollection, or reasonable inference
 
-About 132 entries carry it. Convert every one: expand each repo-relative path
-to its tilde-rooted form under {ROOT_DIR}, re-emit as `- page:` mappings under
-`on_pages`, and drop the old key once converted. Nothing is lost — the old
-values are inputs to the new list, merged with whatever this stage finds.
-After this stage, `on_site_pages` must not appear anywhere in the file.
+If you find yourself deciding whether an image belongs on a page, you are
+writing should_be_on_pages (Stage 11), not on_pages. Topical reasoning is
+that stage's whole job and this stage's cardinal sin.
 
-HOW TO FIND THE REFERENCES — one linear pass over the repo.
+WHAT THE LAST RUN ACTUALLY PRODUCED — MEASURED 2026-07-23.
+
+This stage has run before and its output is wrong in a specific, measurable
+way. Reproduce these measurements at the start of the run; they are the
+regression test.
+
+  Ground truth, by a multi-line-aware sweep of every .md/.mdx under
+  {DOCS_DIR} excluding Photos/:
+      123 image references on 41 pages
+      102 of them resolve to an image entry (76 by IPFS CID, 40 by evidence
+          filename; some images appear on more than one page)
+       34 distinct pages legitimately show a corpus image
+        7 references are site-only assets with no YAML entry (listed below)
+
+  What {HIERARCHY_FILE} contains:
+      1,056 page bindings across 99 distinct pages
+        946 of those bindings (89%) point at a page that contains no image
+            reference at all
+         68 of the 99 recorded pages are not in ground truth
+          1 recorded page no longer exists on disk
+          3 real pages are missing entirely: People/skylar-baird.mdx,
+            US_Intelligence/Fort_Huachuca/Cabot_alibi.mdx,
+            US_Intelligence/US_Army_HADES.mdx
+      1,608 of 1,687 image entries have on_pages: []
+
+  Read that carefully, because the obvious diagnosis is the wrong one. The
+  problem is NOT that the empty lists are empty. Most of them are CORRECT —
+  only 34 pages outside Photos show a corpus image, so the overwhelming
+  majority of the 1,687 images genuinely appear nowhere but their own Photos
+  page, and [] is the true answer for them. The problem is that 89% of the
+  bindings that DO exist are fabricated: they came from the old
+  `on_site_pages` property, which an earlier pass populated by topical
+  guessing, and which the migration step then imported as though it were
+  observation. Pages like Israel/overview.mdx, index.mdx and
+  Suspects/Black_Clothing_Suspect.mdx each carry 33 image bindings while
+  containing no image at all.
+
+  So this stage's job is not "fill in the empties." It is: rebuild the whole
+  property from observation, and delete every binding that observation does
+  not support.
+
+MIGRATION — on_site_pages is the old name, and its values are UNTRUSTED.
+
+Earlier passes wrote `on_site_pages`, a flat list of repo-relative page paths.
+That property is now gone from the file; its values survive inside on_pages,
+and 89% of them are wrong. Should it reappear in a future input:
+
+  * Treat every on_site_pages value as a HINT, never as a binding. A hint
+    earns a place in on_pages only by re-reading the page and finding the
+    reference. A hint that fails verification is discarded and counted.
+  * Do not "merge and keep both." That is precisely how the fabricated
+    bindings became permanent.
+  * After this stage, `on_site_pages` must not appear anywhere in the file.
+
+THE ONE PLACE THIS PROMPT DELETES DATA — AND WHY IT MUST.
+
+The hard rule elsewhere in this prompt is that {HIERARCHY_FILE} only grows.
+on_pages is the single carve-out, because a false binding is not data, it is a
+factual error about the contents of a file, and it actively misleads Stage 11
+(which unions on_pages into should_be_on_pages, so every fabricated binding
+becomes a fabricated publishing instruction).
+
+  * Rebuild on_pages from ground truth on every run: compute the observed set,
+    then set each entry's on_pages to exactly that set.
+  * Every removed binding is REPORTED — page path, image sha256, and the
+    reason (page has no such reference / page does not exist on disk).
+  * Removal applies to on_pages ONLY. No node, no image entry, and no other
+    property is ever removed by this stage.
+  * If the observed set for the whole run comes out implausibly small (fewer
+    than 80 resolvable references site-wide), the extractor is broken — do NOT
+    write the file. Fail, report, and fix the extractor. Never let a broken
+    extractor blank out on_pages across the corpus.
+
+HOW TO FIND THE REFERENCES — one linear pass, multi-line aware.
 
 The work is a reverse index: for every page file in the repo, what images does
 it show. Read each file exactly once. This is O(n) over the repo's text, not
@@ -642,51 +749,143 @@ O(images x pages).
   .tsx/.jsx/.ts/.js, .json, .csv, .yaml under {ROOT_DIR}, skipping
   node_modules/, build/, .git/, and {SITE_DIR}/internals/static/ binaries.
   Include the blog and any React components that embed evidence images.
-* Read each file ONCE and extract every image reference in it, in all the
-  forms the site actually uses:
-    - markdown image syntax           ![alt](/img/evidence/xxx.jpg)
-    - <img src="..."> in JSX/HTML     including require()/import forms
-    - background-image / style url()
-    - IPFS gateway URLs               https://ipfs.io/ipfs/<CID>[/name]
-                                      https://<CID>.ipfs.dweb.link/[name]
-                                      ipfs://<CID>
-    - static asset paths              /img/evidence/..., /img/..., ./assets/...
-    - <video>/<iframe> poster and src attributes (videos get the same
-      treatment as images)
+
+* THE EXTRACTOR MUST BE MULTI-LINE AWARE. This is the second bug that broke
+  the last run. The site's dominant embed form puts the tag open and the src
+  on DIFFERENT LINES, wrapped in an anchor:
+
+      <a href="/Photos/People/People_tyler_bowyer/Img_Photo_3caf21"><img
+        src="https://ipfs.io/ipfs/QmVA7WhYwAvFXe7rjdrgrRwdCJpprLG39vrS3Xp8PK2otq"
+        alt="Screenshot of a February 2022 exchange ..."
+        style={{width: '100%', height: 'auto', aspectRatio: '1320/1297'}}
+      /></a>
+
+  A line-oriented pattern such as `<img[^>]*src="[^"]+` finds NOTHING here. On
+  this corpus it recovers 35 of 123 references — it silently misses 72% of
+  them, and 34 of the 41 pages with images look image-free. Match the whole
+  tag across newlines and then pull src out of it:
+
+      tags = re.findall(r'<img\b.*?>', text, re.S)
+      src  = re.search(r'src=["\']([^"\']+)["\']', tag)
+
+  Any regex used here is tested against a known multi-line page before the
+  sweep runs. `grep`-based extraction is not acceptable for this stage.
+
+* Reference forms that actually occur, with their measured share of the 123:
+
+      76  <img src="https://ipfs.io/ipfs/<CID>">     IPFS gateway, 62%
+      40  <img src="/img/evidence/<sha256>.jpg">     published evidence, 33%
+       7  <img src="/img/<name>.jpeg"> and
+           <img src="/court/mirandize/<name>.png">   site-only assets, 5%
+
+  Also handle, even though they are currently rare or absent here — the site
+  changes and the extractor must not silently miss a new form: markdown
+  `![alt](src)`, `<img>` with a `require()`/import src, background-image /
+  style url(), `https://<CID>.ipfs.dweb.link/`, `ipfs://<CID>`, and
+  `<video>`/`<iframe>` src and poster attributes (videos get the same
+  treatment as images). Count every form found, and hard-fail the run if a
+  reference form appears that the extractor has no rule for — an unknown form
+  must surface as a reported unresolved reference, never be dropped silently.
+
+* PATH FACTS the resolver depends on (verified 2026-07-23):
+    - The served path /img/... maps to {SITE_DIR}/internals/static/img/...
+      NOT to {SITE_DIR}/static/ — that directory does not exist. A resolver
+      that looks only under {SITE_DIR}/static/ resolves zero static refs.
+    - {SITE_DIR}/internals/static/img/evidence/ holds 1,453 files and the
+      filename IS the full lowercase 64-hex sha256 plus extension
+      (0025bec0...280f.jpg). Verified: shasum of the file equals its name.
+      So an evidence reference resolves by string match on the name — no
+      hashing needed, and no prefix matching either. Use all 64 characters.
+
 * Resolve each reference back to an image ENTRY in {HIERARCHY_FILE}, in this
   precedence order:
     1. IPFS CID in the reference -> the cid index built in Stage 3. Exact.
+       This is the majority path — 62% of references — so Stage 3 MUST have
+       completed. If the cid index is empty, stop; do not proceed with an
+       unpopulated index and then report that nothing resolved.
        Normalise both sides before comparing (a page may carry the v1 base32
        form of a CID stored as v0): `ipfs cid base32` on each.
-    2. Local static file -> sha256 the file on disk -> match the entry's
-       sha256. Exact.
-    3. Filename match against the published evidence filenames
-       ({SITE_DIR}/internals/static/img/evidence/<sha256-ish>.jpg names encode
-       the sha256 — use that). Exact.
+    2. Evidence filename -> the 64-hex basename IS the sha256 -> match the
+       entry's sha256. Exact.
+    3. Any other local static file -> sha256 the file on disk -> match the
+       entry's sha256. Exact.
     4. Filename match against file_path basenames. AMBIGUOUS — a basename can
        collide. Only accept when it resolves to exactly one entry; otherwise
        leave it for the judgment pass below and report it.
 * Append the referencing page's tilde-rooted path to that entry's on_pages.
   Deduplicate: a page that embeds the same image five times is recorded once.
-  Never add a page path twice; never drop one that is already recorded.
+  Sort each list so reruns produce a stable file.
+* Every page path written must exist on disk — stat it before writing, the
+  same discipline Stage 11 uses. A recorded page that has vanished is removed
+  and reported, not carried.
+
+UNRESOLVED REFERENCES ARE A FINDING, NOT A DROP.
+
+Seven references currently resolve to nothing because the asset is a site-only
+illustration with no mirror original and no sha-encoded name:
+
+    site/docs/Fix/overview.mdx                        /img/All_Laws.jpeg
+    site/docs/laws/explain/all/overview.mdx           /img/All_Laws.jpeg
+    site/docs/Iran/overview.mdx                       /img/Iran_Timeline.jpeg
+    site/docs/Timeline/overview.mdx                   /img/Timeline_Israel.jpeg
+    site/docs/Israel/overview.mdx                     /img/Timeline_Israel.jpeg
+    site/docs/court/mirandize/mirandized-sept-11-image.mdx
+                                       /court/mirandize/Mirandized_Sept_11_.png
+    site/docs/court/mirandize/sept-11-grok-image.mdx
+                                       /court/mirandize/Sept_11_Grok.png
+
+These are real published images and belong in the corpus. Hand them to Stage 7's
+rule for site-only assets: sha256 the file on disk, create an image entry whose
+file_path is the static file, park it under the level_3/level_4 matching the
+page it appears on, and then bind on_pages here. Do not leave a published image
+absent from the YAML just because it never came from the mirror.
 
 SCOPE RULE — what does NOT go in on_pages.
 
   * Pages under {DOCS_DIR}/Photos. Those are the images Level 2 itself. The
     image's own Level 5 page belongs in image_page, and a Photos cluster
     overview page listing its children is structure, not an outside reference.
+    Note the Photos pages carry ~1,600 of their own <img> references — if a
+    sweep reports thousands of bindings, the Photos exclusion filter is
+    leaking. Verify the filter on the actual path strings: a list produced by
+    `grep -rl ... .` may or may not carry a leading `./`, and a filter written
+    for the wrong one silently passes every Photos page through. Assert that
+    zero recorded paths contain /docs/Photos/ before writing.
   * Files in {THIS_DIR} (planning layer), {GENERATOR_DIR} scripts,
     {HIERARCHY_FILE} itself, and {PAGES_CSV}. Those reference images as data,
     not as a page showing them.
   * Anything outside {ROOT_DIR}.
 
+SANITY GATES — run all of these before writing, and fail on any breach.
+
+  1. Extractor calibration. Sweep non-Photos docs and count references. As of
+     2026-07-23 the true number is 123 across 41 pages, and it GROWS — history
+     shows 6 refs at HEAD~150, 75 at HEAD~60, 83 at HEAD~20, 123 at HEAD.
+     Nothing has ever been removed. So a run that finds substantially FEWER
+     than the last recorded count has a broken extractor, not a shrunken site.
+     Record the count each run so the next run can compare.
+  2. Cross-check against a naive page-level count: `grep -l '<img'` over
+     non-Photos docs gives the number of pages that contain at least one tag.
+     The multi-line extractor must find a reference on EVERY one of those
+     pages. A page in the grep list with zero extracted references is an
+     extractor failure — list it and fix the pattern.
+  3. Every binding is re-verified by reopening the page and confirming the
+     reference is present in its text. Bindings that fail are dropped and
+     counted. This gate alone would have caught all 946 fabricated bindings.
+  4. Zero recorded paths under /docs/Photos/. Zero recorded paths that do not
+     exist on disk. Zero duplicate paths within one entry's list.
+  5. Total bindings must be within the same order of magnitude as resolvable
+     references. 102 resolvable references cannot yield 1,056 bindings.
+
 PARALLELISM — dividing the repo across agents.
 
 The mechanical extraction above should be scripted; a script reads each file
-once and is exact. Use parallel agents for the RESIDUAL — the references the
-script could not resolve mechanically (ambiguous basenames, relative paths
-that need page-context resolution, images referenced through a component
-indirection, hand-written embeds with no recognisable asset path).
+once and is exact, and this stage is small enough (about 1,500 non-Photos
+pages) that one script does the whole sweep in seconds. Use parallel agents
+only for the RESIDUAL — references the script could not resolve mechanically
+(ambiguous basenames, relative paths needing page-context resolution, images
+behind a component indirection, hand-written embeds with no recognisable asset
+path).
 
 * Partition the repo's directories recursively across 12 agents. Map whole
   directories to agents — never split a directory across two agents, so no
@@ -694,20 +893,28 @@ indirection, hand-written embeds with no recognisable asset path).
   directory count.
 * Each agent walks only its assigned directories, opens each unresolved file
   once, and returns a flat list of (page_path, resolved_sha256_or_cid,
-  evidence_of_match) rows. Agents do NOT edit {HIERARCHY_FILE} — they report,
-  and a single writer merges. Concurrent writers to one YAML file would
-  corrupt it.
+  verbatim_matched_text) rows. The verbatim matched text is mandatory — it is
+  the evidence, and the writer re-checks it against the page before accepting
+  the row. An agent row without a verbatim match is rejected and counted.
+  Agents do NOT edit {HIERARCHY_FILE} — they report, and a single writer
+  merges. Concurrent writers to one YAML file would corrupt it.
 * Merge all agent output plus the scripted output into the YAML in one write.
 
 Output to stdout:
 ============================
 STAGE 8 COMPLETE
-Files read: N   Image references found: N
-Resolved by CID: N   by sha256: N   by evidence filename: N   by basename: N
-Unresolved references: N (listed with page + reference)
+Files read: N   Image references found: N (multi-line aware)
+Pages with at least one <img> (naive grep): N   pages the extractor found refs on: N   (must be equal)
+Reference forms seen: ipfs-CID N, evidence-filename N, other-static N, markdown N, other N
+Resolved by CID: N   by evidence filename: N   by sha256: N   by basename: N
+Unresolved references: N (listed with page + reference; each is a Stage 7 site-only-asset candidate)
 Entries with on_pages non-empty: N   total page bindings: N
-on_site_pages entries migrated: N   on_site_pages remaining in file: 0
-Pages excluded by scope rule (Photos / planning layer): N
+Bindings verified by reopening the page: N/N
+Bindings REMOVED as unsupported: N (listed: page + sha256 + reason)
+Recorded pages that no longer exist on disk: N (listed, removed)
+Photos-scope leaks blocked: N   paths under /docs/Photos in output: 0
+on_site_pages remaining in file: 0
+Extractor calibration: N refs this run vs N last run (site only grows — a drop is a bug)
 ============================
 
 ============================
@@ -827,6 +1034,217 @@ Recorded pages now missing from disk: N (listed)
 ============================
 
 ============================
+STAGE 11 — SHOULD_BE_ON_PAGES: WHERE EACH IMAGE OUGHT TO APPEAR
+============================
+
+KNOWLEDGE — what should_be_on_pages answers.
+
+Stage 8 recorded where an image IS shown today. This stage records where it
+SHOULD be shown — the plan. It is the one property in the file that is
+reasoned rather than observed: nothing on disk tells you the answer, you work
+it out from what the image depicts and what each page is about.
+
+Why it exists: most evidence images in this corpus are published nowhere but
+their own Level 5 image page. A reader deep in the Ballistics section or the
+Spy Plane section should SEE the evidence for that topic on the page they are
+reading, not have to go find it under Photos. This property is the worklist a
+later publishing prompt consumes to place images onto topic pages.
+
+Relationship to the other two properties:
+
+  should_be_on_pages ⊇ on_pages
+
+  Every page already in on_pages is repeated in should_be_on_pages unless the
+  image genuinely does not belong there (a wrong placement made by an earlier
+  pass). The set difference — should_be_on_pages minus on_pages — is exactly
+  the work still to do. Never treat should_be_on_pages as "additional pages
+  beyond on_pages"; it is the complete desired state.
+
+  THIS UNION IS WHY STAGE 8 MUST RUN FIRST AND MUST BE CLEAN. Stage 8's last
+  output carried 946 fabricated bindings (89% of its total). Unioning those
+  into should_be_on_pages would convert every fabricated observation into a
+  fabricated publishing instruction, and the next prompt would act on it.
+  Before unioning, confirm Stage 8 reported zero unverified bindings. If
+  Stage 8 did not run in this session, re-verify each on_pages entry by
+  reopening the page rather than trusting the file.
+
+THE PROPERTY SHAPE.
+
+Identical in shape to on_pages: a LIST OF MAPPINGS, each with a single `page:`
+key holding the full path from ~ to the page file.
+
+    should_be_on_pages:
+      - page: "~/BGit/Bryan_git/charlie-kirk/site/docs/Gun_Bullet/overview.mdx"
+      - page: "~/BGit/Bryan_git/charlie-kirk/site/docs/Gun_Bullet/trajectory-analysis.mdx"
+
+Not a flat list of strings. Not repo-relative. Not URLs. Every image entry
+carries the key; an image that belongs on no topic page emits:
+
+    should_be_on_pages: []
+
+EVERY PATH MUST BE REAL, FULL, AND VERIFIED — NO PLACEHOLDERS.
+
+This is the rule that matters most in this stage, because the value is
+reasoned rather than read off disk, which makes it the one place a plausible
+but fictional path can slip in. A path here is only ever COPIED from a real
+row of {PAGES_CSV} or from a real filesystem walk of {DOCS_DIR}. It is never
+composed, guessed, abbreviated, or typed from memory of what a page is
+probably called.
+
+  * FORBIDDEN, and a hard failure if any of these reach the file:
+      - page: "~/BGit/Bryan_git/charlie-kirk/site/docs/....mdx"
+      - page: "~/BGit/Bryan_git/charlie-kirk/site/docs/FBI/....mdx"
+      - page: ".../site/docs/FBI/overview.mdx"
+      - page: "site/docs/FBI/overview.mdx"            (repo-relative)
+      - page: "/FBI/overview"                          (a URL path)
+      - page: "~/.../charlie-kirk/site/docs/FBI/coverup.mdx"  (invented file)
+    Any value containing an ellipsis, "...", "TODO", "TBD", "<", ">", or any
+    other placeholder token is invalid. Any value that is not an absolute
+    tilde-rooted path ending in .md or .mdx is invalid.
+
+  * THE ONLY LEGAL WAY TO PRODUCE A VALUE. Build a candidate index once, up
+    front, and select from it. Nothing outside the index may ever be written:
+      1. Read {PAGES_CSV}. Its file_path column is repo-relative
+         (site/docs/FBI/overview.mdx). Expand each to
+         {ROOT_DIR}/<file_path> in tilde-rooted form.
+      2. Walk {DOCS_DIR} for every .md/.mdx on disk. Union it with the CSV set
+         — the CSV can lag, the filesystem is what actually exists.
+      3. stat() every candidate. Drop any that does not exist. Keep the
+         surviving set as THE candidate index, keyed by its tilde-rooted path.
+      4. Every value written to should_be_on_pages must be a key of that
+         index, byte for byte. Selecting a page means selecting an index key —
+         there is no code path that constructs a string.
+
+  * VERIFY BEFORE WRITE, then VERIFY AFTER WRITE. Before emitting, re-stat
+    every path in every should_be_on_pages list. After emitting, re-parse the
+    YAML, expanduser every should_be_on_pages page value, and stat it again.
+    If any single path does not resolve to an existing file, the stage FAILS —
+    do not write a partial file with bad paths, do not "best effort" it, and
+    do not degrade a bad path to "". Fix the selection and re-emit.
+
+  * Never invent a page because the image obviously deserves one. If the right
+    page does not exist yet, that is a finding, not a path: record it in the
+    stage's stdout report under "Wanted pages that do not exist" with the
+    image's sha256 and a suggested title, and leave the image's
+    should_be_on_pages holding only the real pages that do exist. Page
+    creation is a later prompt's job.
+
+HOW TO DECIDE WHICH PAGES AN IMAGE BELONGS ON.
+
+Inputs to the decision, in order of weight:
+
+  1. The image's ai_description (what is SEEN) and its .ocr text (what it SAYS
+     on screen). Read the sidecar files, not just the truncated inline prose —
+     the OCR in particular names people, dates, tail numbers, case numbers,
+     and headlines that pin an image to a specific page.
+  2. The YAML node the image already sits under — its _key and title are the
+     concept cluster it was filed into, and that cluster's site_level_2 /
+     site_page properties (set in Stages 4 and 6) already point at the site
+     pages for that concept. This is usually the strongest single signal and
+     the cheapest: an image under the level_4 whose site_page is
+     site/docs/Planes/N1098L.mdx almost certainly should_be_on that page.
+  3. The mirror directory the original file sits in ({MIRROR_DIR}/<dir>) —
+     years of manual filing by concept.
+  4. {PAGES_CSV} columns: title, description, page_type, level, level2_section
+     and url_path. The description column is a one-sentence summary of what
+     the page covers — it is the best cheap matcher against an image
+     description. page_type (person / organization / topic / index / …) tells
+     you whether a page is about a PERSON, in which case the image should
+     depict that person, not merely mention them.
+  5. {CK_FILE} arbitrates when the description and the cluster disagree about
+     which investigative thread an image really belongs to.
+
+Targeting rules:
+
+  * Aim at Level 3 pages — the specific analysis pages inside a section. That
+    is where evidence images do their work. Level 4 pages are equally good
+    when the concept lives that deep.
+  * Level 2 overview pages get an image only when it is emblematic of the
+    whole section — a headline image a reader landing cold should see. Expect
+    this to be rare: at most one or two images per Level 2 overview.
+  * NEVER target a page under {DOCS_DIR}/Photos. That whole Level 2 is the
+    image hierarchy itself; an image's own page there is image_page, and
+    cluster overviews there are structure. Same exclusions as Stage 8's scope
+    rule: nothing in {THIS_DIR}, nothing in {GENERATOR_DIR}, not
+    {HIERARCHY_FILE}, not {PAGES_CSV}, nothing outside {ROOT_DIR}.
+  * Do not target Topics3 scaffolding pages.
+
+Quantity rules:
+
+  * One to three pages per image is the norm. Five is the ceiling. An image
+    that seems to belong on ten pages is a generic image (a logo, a stock
+    portrait, a map with no annotation) — give it the one or two pages where
+    it is actually evidence, not every page it could decorate.
+  * Many images belong on zero topic pages. [] is a correct and common answer.
+    Do not pad. A weak topical match is worse than none: it puts an
+    unexplained image on a page and makes the page look padded.
+  * Per-page load: no page should be assigned more than 12 images across the
+    whole corpus. After the full pass, count assignments per page; for any
+    page over 12, keep the strongest 12 by match quality and report the rest
+    as overflow (they are candidates for a new child page — report them under
+    "Wanted pages that do not exist").
+
+DEFAMATION GATE — applies before any page is added.
+
+should_be_on_pages is a publishing instruction, so the repo's defamation rules
+bind here even though this stage writes no page:
+
+  * An image whose sha256 appears in {THIS_DIR}/exclude_images.txt is never
+    assigned to any page. Emit should_be_on_pages: [] for it, unconditionally,
+    regardless of how good the topical match is.
+  * An image showing a named living person is assigned only to pages where
+    that person's presence is the point. Do not assign an image whose visible
+    content (including its OCR text) makes an accusation against a living
+    person — those stay private until cropped.
+  * When unsure, leave it out and note it.
+
+HOW TO RUN IT.
+
+  * The candidate index (pages.csv + filesystem walk + stat) and the mechanical
+    filters (exclude_images.txt, Photos-scope exclusion, per-page load counts)
+    are scripted — they are exact and cheap.
+  * The topical match itself is judgment and does not script. Partition the
+    IMAGE ENTRIES across 12 parallel agents, balanced by entry count. Give
+    each agent the full candidate index (path, title, description, page_type,
+    level, level2_section) and its slice of image entries with their
+    ai_description and OCR text.
+  * Each agent returns rows of (sha256, node_key, selected_index_key,
+    confidence, one-line reason). Agents select an EXISTING index key; an
+    agent that returns a path not present in the candidate index has its row
+    REJECTED and counted — it does not reach the file. Agents do NOT edit
+    {HIERARCHY_FILE}; a single writer merges. Concurrent writers corrupt it.
+  * The writer applies the quantity and defamation rules, unions in every page
+    already present in on_pages, dedupes, sorts each list, re-stats every path,
+    and writes once.
+
+RULES.
+
+  * should_be_on_pages is set on EVERY image entry — no entry is left without
+    the key. Empty is [], never "" and never a missing key.
+  * Grow, do not clobber. An existing non-empty should_be_on_pages from an
+    earlier run is merged with this run's selections, not replaced. Remove an
+    existing entry only when the page no longer exists on disk, and report
+    every such removal.
+  * Page values are IDENTITY fields for sanitization — see the OUTPUT
+    SANITIZATION section. Non-ASCII is emitted as a visible \uXXXX escape,
+    never replaced, so the path keeps resolving.
+
+Output to stdout:
+============================
+STAGE 11 COMPLETE
+Candidate index: N pages (N from pages.csv, N from filesystem walk, N dropped as non-existent)
+Image entries processed: N
+Entries with should_be_on_pages non-empty: N   total page assignments: N
+Assignments carried over from on_pages: N   new assignments proposed: N
+Entries left [] : N (N excluded by exclude_images.txt, N no topical match)
+Level 2 overview assignments: N   Level 3: N   Level 4: N
+Agent rows rejected (path not in candidate index): N
+Pages over the 12-image load: N (listed with overflow counts)
+Wanted pages that do not exist: N (listed: suggested title + image sha256)
+Path validation: N/N resolve to an existing file on disk — placeholders found: 0
+============================
+
+============================
 OUTPUT SANITIZATION — NO INVISIBLE UNICODE, EVER (SECURITY RULE)
 ============================
 
@@ -853,8 +1271,8 @@ Two different treatments, chosen by field kind:
     accented letters) may stay — they are visible and harmless.
 
   * IDENTITY fields (file_path, ai_description_file, ocr_file,
-    transcription_file, image_page, ipfs_url, on_pages page values, cid,
-    also_filed_in,
+    transcription_file, image_page, ipfs_url, on_pages page values,
+    should_be_on_pages page values, cid, also_filed_in,
     site_page, site_level_2) — the value
     must keep matching the real file on disk, so the characters cannot be
     replaced. Instead emit them as visible ASCII escapes inside YAML
@@ -868,7 +1286,7 @@ re-parse the YAML and spot-check that an escaped file_path still resolves to
 an existing file on disk.
 
 ============================
-STAGE 11 — COUNTS, NEEDS_SPLIT, INTEGRITY
+STAGE 12 — COUNTS, NEEDS_SPLIT, INTEGRITY
 ============================
 
 * Recompute number_of_images (direct) and number_of_images_recursive
@@ -886,10 +1304,27 @@ STAGE 11 — COUNTS, NEEDS_SPLIT, INTEGRITY
 * Verify every image entry carries the full property set — cid, ipfs_pinned,
   sha256,
   file_path, ai_description, ai_description_file, ocr_file,
-  transcription_file, image_page — with "" standing in for any that has no
-  value. No key is ever missing.
+  transcription_file, image_page, on_pages, should_be_on_pages — with ""
+  standing in for any scalar that has no value and [] for the empty lists. No
+  key is ever missing.
 * Verify every non-empty image_page resolves to a file that exists on disk
   and lives under {DOCS_DIR}/Photos.
+* Verify every should_be_on_pages page value: it is an absolute tilde-rooted
+  path, it ends in .md or .mdx, it resolves to a file that EXISTS on disk, it
+  lives under {DOCS_DIR}, and it does NOT live under {DOCS_DIR}/Photos. Grep
+  the emitted file for placeholder tokens — "...", "TODO", "TBD", "<", ">" —
+  inside any page value and hard-fail on a hit. There is no tolerance here: a
+  single unresolvable or placeholder path fails the stage.
+* Verify on_pages ⊆ should_be_on_pages on every entry, or the entry is
+  reported as a deliberate de-placement.
+* Verify EVERY on_pages binding against the page's actual bytes: open the
+  page, confirm a reference resolving to that image is present. Report the
+  count verified and hard-fail if any binding cannot be substantiated — this
+  is the check that catches the fabricated-binding failure mode. Also confirm
+  no on_pages path lies under {DOCS_DIR}/Photos and every one exists on disk.
+* Sanity-check the binding total against the reference total: bindings can
+  exceed resolvable references only by the amount of legitimate multi-page
+  reuse. A ratio above ~2x means fabrication has crept back in.
 * Run the OUTPUT SANITIZATION validation: scan the emitted file for every
   code point in the invisible set and fail hard if any is found. Confirm at
   least one escaped file_path round-trips: parse the YAML, expanduser the
@@ -897,15 +1332,16 @@ STAGE 11 — COUNTS, NEEDS_SPLIT, INTEGRITY
 
 Output to stdout:
 ============================
-STAGE 11 COMPLETE
+STAGE 12 COMPLETE
 Counts recomputed: yes
 needs_split nodes: N
 Duplicate _keys: 0   Duplicate sha256 within a node: 0
+should_be_on_pages paths validated: N/N exist on disk   placeholders: 0
 YAML parses: yes
 ============================
 
 ============================
-STAGE 12 — VERIFY AND REPORT
+STAGE 13 — VERIFY AND REPORT
 ============================
 
 * Confirm every non-excluded site Level 2 maps to exactly one level_3
@@ -914,19 +1350,36 @@ STAGE 12 — VERIFY AND REPORT
 * Confirm every home-page TOC concept resolves to a level_3.
 * Confirm every page found with images in Stage 7 has its images reachable in
   the YAML (spot-check 10 pages).
+* Spot-check 10 should_be_on_pages assignments by hand: open the page and read
+  the image's description, and confirm the image genuinely belongs there.
+  Confirm each of those 10 paths opens a real file. A placement that reads as
+  padding is a signal the whole pass was too loose — report it.
 * Confirm no pre-existing node or image entry was removed: the file only
   grows. Diff the node count and image count against Stage 1's index.
+  on_pages bindings are the one exception; account for every removal.
+* Independent re-derivation of on_pages. Do not re-run Stage 8's script.
+  Write a SECOND, independent extractor (different author, different
+  approach — e.g. an HTML/JSX parse rather than a regex) over the non-Photos
+  docs, and diff its page-to-image set against what the YAML now holds. They
+  must agree. Two implementations agreeing is the only real defence against a
+  systematic extraction bug, and every failure this stage has had so far was
+  systematic: one regex that could not see multi-line tags, one migration
+  that imported guesses as facts.
 * Print a final tree summary: each level_3 _key with its recursive image
   count and child count.
 
 Output to stdout:
 ============================
-STAGE 12 COMPLETE — FINAL REPORT
+STAGE 13 COMPLETE — FINAL REPORT
 level_3 nodes: N (was N)   level_4: N (was N)   level_5: N (was N)
 Total image entries: N (was N)   video entries: N
 Sidecar coverage: ai_description N%, ocr N%, transcription N%
 image_page coverage: N% (N of N entries bound to a Level 5 page)
-Nothing removed: confirmed
+on_pages coverage: N entries bound, N total bindings, all N verified against page bytes
+should_be_on_pages coverage: N% (N of N entries planned onto at least one page)
+Publishing worklist (should_be_on_pages minus on_pages): N placements pending
+Every should_be_on_pages path exists on disk: confirmed
+Nothing removed except unsupported on_pages bindings: N removed (confirmed)
 ============================
 
 ============================
@@ -935,6 +1388,16 @@ HARD RULES
 
 * {HIERARCHY_FILE} only grows. Never delete a node or an image entry. No
   duplicates — existing items get their properties updated in place.
+* ONE CARVE-OUT: on_pages. It is rebuilt from observation on every run and
+  bindings that observation does not support are deleted and reported (see
+  Stage 8). A false binding is a factual error about a file's contents, not
+  data, and it propagates into should_be_on_pages and then into published
+  pages. Nothing else in the file is ever deleted, and on_pages is never
+  blanked wholesale — a run that resolves implausibly few references must
+  fail instead of writing.
+* on_pages is OBSERVED, should_be_on_pages is REASONED. Never let topical
+  judgment write a binding into on_pages. That single confusion is what
+  corrupted 89% of the property's contents.
 * This prompt does not create, move, or edit any page under {SITE_DIR}, does
   not touch {SITE_DIR}/sidebars.ts, and does not modify {PAGES_CSV}. The
   YAML is the plan; publishing is a later prompt.
@@ -947,6 +1410,12 @@ HARD RULES
   URLs) are emitted with visible \uXXXX escapes; every emit is followed by
   the invisible-character validation scan. This is a security rule, not a
   style rule.
+* Every page path written anywhere in {HIERARCHY_FILE} — image_page, on_pages,
+  should_be_on_pages — is an absolute tilde-rooted path to a file that EXISTS
+  on disk at the moment it is written, selected from a stat()-verified
+  candidate index, never composed or guessed. Placeholders ("...", "TODO",
+  "<page>") are a hard failure, not a draft state. Paths are verified before
+  the write and re-verified after it.
 * Clusters are concept clusters, arbitrated by {CK_FILE}. The folder
   proposes, the description decides, {CK_FILE} arbitrates.
 * When later prompts publish from this YAML, all public output follows the
@@ -1008,6 +1477,16 @@ from, so no knowledge is lost even where a stage above already encodes it.
 * The end goal: when we create our list-of-images page (the top level), it
   will be mostly a table of contents — a table with links into the images
   directory's Level 3 pages, which come from this YAML file's level_3s.
+* There is a property called should_be_on_pages, a sub-hierarchy under each
+  image alongside on_pages. It records which pages that image SHOULD go on —
+  we go calculate that, it is not read off disk. Late in the run we look
+  through the pages and, for every image, map that image to the several pages
+  it should appear on: mostly Level 3s, sometimes Level 2s, always outside the
+  Photos Level 2. {PAGES_CSV} is useful for deciding which pages an image
+  should appear on. The values must be real, full, verified file paths — the
+  four-dot form seen in the original sketch
+  ("~/BGit/Bryan_git/charlie-kirk/site/docs/....mdx") was a PLACEHOLDER
+  standing in for a real page path, never a value to emit.
 * There is a property called image_page. These are the pages under the images
   Level 2 directory — the Level 5 pages that each host one image and carry the
   description of it. We add the full path from ~ to that Level 5 page as the

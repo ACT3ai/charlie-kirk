@@ -656,6 +656,9 @@ level_3:
             transcription_file: ""
             image_page: "~/BGit/Bryan_git/charlie-kirk/site/docs/Photos/Shot_Position/Img_Photo_1fe5c0.mdx"
             on_pages: []
+            should_be_on_pages:
+              - page: "~/BGit/Bryan_git/charlie-kirk/site/docs/....mdx"
+              - page: "~/BGit/Bryan_git/charlie-kirk/site/docs/....mdx"
             also_filed_in: ["Enter_Exit_bullet"]
         - image:
             cid: "QmRHGQhYCrqjnb9PCDuJzBWomxMGhQ816FCjsbHULSzaxK"
@@ -667,7 +670,10 @@ level_3:
             ocr_file: ""
             transcription_file: ""
             image_page: "~/BGit/Bryan_git/charlie-kirk/site/docs/Photos/Shot_Position/Img_Inside_Side_a9075e.mdx"
-            on_pages: []
+            on_pages: 
+              - page: "~/BGit/Bryan_git/charlie-kirk/site/docs/{path}/{Page name}.mdx"
+              - page: "~/BGit/Bryan_git/charlie-kirk/site/docs/{path}/{Page name}.mdx"
+
         - image:
             cid: "QmanEJSSaoYZUvz25EYS5ZAbTbn8Mp6E1LkXJDxQbyGMRn"
             ipfs_pinned: false
