@@ -713,3 +713,23 @@ p_yaml_to_site.md generates the Level 5 pages and stamps them.
 * Vid_TRILLION_Tried_Animate_Bullet_1999703, Vid_Darth_Powell_Think_Charlie_2026310, Vid_2026310419405504514_2026310 — transcripts are single stray tokens; these clips have no speech at all, so "empty transcript" here is correct rather than a failure.
 * Vid_VigilantFox_Eyewitness_One_Pop_ttYzPo9, Vid_TND_Eyewitness_Like_Direct_9uxwgCE, Vid_Charlie_Ward77_TV_News_1AbVTQN, Vid_Maxwell1995Vjjo_TV_Witness_Re_hfCTmz6, Vid_AmericaOnly76_Video_Realstewpeters_Stew_2079684 — no transcription or ai_description sidecar exists at all; quotes had to be recovered from host pages and Charlie_Kirk.txt.
 * Vid_15_Very_End_MdNUL81 — 10:16 transcript is heavily garbled through the theology section (proper nouns and scripture references defeat the recogniser); re-transcribe with a stronger engine.
+
+============================================================
+FINDINGS — p_level2_update.md run (2026-07-23, navigation rework)
+============================================================
+
+Rewrote gen_videos_pages.py cluster/L2 emission to match the Photos Level 2
+model (two-column flex TOC at top, prose after, Related Areas with written-record
+cross-link + up-link + peer clusters). Read-only wrt videos.yaml. Items for
+p_update_video_hierarchy.md, not fixed here:
+
+* YAML bloat: 1,395 of 1,559 cluster nodes are empty (0 videos in their whole
+  subtree) — inherited mirror-directory skeleton. They are correctly skipped at
+  publish time (no page, no TOC entry), but they inflate the tree and slow every
+  walk. Consider pruning empty nodes in the hierarchy build.
+* CID→JPEG mismatch: Vid_Microphone_Footage_Embedded_Mic_tWFFbU4
+  (cid QmedrrPge7Bj8vUN6xxq1Zfz1CgwuY6xGAtWFFbU4tmg4R) resolves to a JPEG, not
+  video. Player correctly withheld; the entry should be re-checked in the YAML.
+* Media pending (11): 9 no-media, 1 no-cid, 1 not-video — rendered with honest
+  "media pending" notes, no dead players.
+* Large nodes to review for needs_split: Vid_UVU_Venue (99 own / 103 recursive).

@@ -40,6 +40,10 @@ FFMPEG   = '/opt/homebrew/bin/ffmpeg'
 
 PROTECTED = {'overview.mdx', 'buckley-carlson-kash-patel-valhalla.mdx', '_category_.json'}
 
+# Two columns rather than the home page's three: the main area on these pages is
+# narrower, and two columns stay readable on a laptop.
+TOC_COLUMNS = 2
+
 # ------------------------------------------------------------------ helpers
 def run(args, timeout=180):
     try:
@@ -693,104 +697,162 @@ def _vt(r, limit):
         t = t[:limit].rsplit(' ', 1)[0].rstrip(' ,;:-') + '…'
     return t
 
-def toc_rows_for(n):
-    """(label, url, count) rows for a node's children, bypass applied."""
-    rows = []
+def _dur_suffix(r):
+    d = dur_human(r['v'].get('duration'))
+    return f' ({d})' if d else ''
+
+def back_button(url, label):
+    style = ("style={{display:'inline-block', marginBottom:'1rem', "
+             "padding:'0.35rem 0.9rem', background:'#1a73e8', color:'#fff', "
+             "borderRadius:'4px', textDecoration:'none', fontSize:'0.9rem'}}")
+    return f'<a href="{url}" {style}>← {label}</a>'
+
+def flex_columns(items, cols=TOC_COLUMNS):
+    """Balanced side-by-side flex columns in the site home page / Photos idiom.
+    `items` are bullet strings WITHOUT the leading '* '."""
+    if not items:
+        return ''
+    k = len(items)
+    per = (k + cols - 1) // cols
+    chunks = [items[i:i + per] for i in range(0, k, per)] or [items]
+    out = ['<div style={{ display: "flex", justifyContent: "space-between", gap: "2rem" }}>']
+    for ch in chunks:
+        out.append('<div style={{ flex: 1 }}>\n')
+        for it in ch:
+            out.append(f'* {it}')
+        out.append('\n</div>')
+    out.append('</div>\n')
+    return '\n'.join(out)
+
+def _plural_vid(n):
+    return f'{n} video' if n == 1 else f'{n} videos'
+
+def cluster_toc_items(n):
+    """TOC bullet strings for a cluster node, in reading order: child clusters
+    first (bolded, with their recursive count so a visitor sees which links go
+    deeper), then this node's own video pages. A child cluster resolving to a
+    single video is BYPASSED — link straight to that video page."""
+    items = []
     for k in sorted([k for k in n.kids if k.rec > 0], key=lambda x: x.title):
         if k.bypass:
             t = k.bypass_target
-            rows.append((_vt(t, 80), t['url'], 1, 'video'))
+            items.append(f'[{_vt(t, 70)}{_dur_suffix(t)}]({t["url"]})')
         else:
-            rows.append((k.title, rel_url(k.page), k.rec, 'cluster'))
-    return rows
+            items.append(f'**[{k.title}]({rel_url(k.page)})** — {_plural_vid(k.rec)}')
+    for r in n.vids:
+        items.append(f'[{_vt(r, 70)}{_dur_suffix(r)}]({r["url"]})')
+    return items
+
+def written_record_links(n):
+    """(label, url) cross-links to the written pages this cluster mirrors:
+    site_page first, then each site_level_2 section it covers."""
+    out, seen = [], set()
+    sp = (n.raw.get('site_page') or '').strip()
+    if sp:
+        p = os.path.expanduser(sp)
+        p = p if os.path.isabs(p) else os.path.join(ROOT, sp)
+        if os.path.exists(p) and p.startswith(DOCS):
+            u = site_url(p)
+            out.append((page_label(p), u)); seen.add(u)
+    for s in (n.raw.get('site_level_2') or []):
+        s = (s or '').strip()
+        if not s:
+            continue
+        u = f'/{s}/overview'
+        if u not in seen:
+            out.append((s, u)); seen.add(u)
+    return out
 
 def baseline_cluster_prose(n):
     kids = [k for k in n.kids if k.rec > 0]
+    rel = written_record_links(n)
     bits = ['{/* CK_PROSE_BASELINE */}', '']
-    what = f'This section collects the video evidence filed under **{n.title}**'
+    what = f'This section collects the video evidence the investigation has filed under **{n.title}**'
     if n.rec == 1:
-        what += ' — one clip.'
+        what += ' — a single clip.'
     else:
         what += f' — {n.rec} clips'
         if kids:
             what += f' across {len(kids)} sub-section' + ('s' if len(kids) != 1 else '')
         what += '.'
-    bits.append(what)
+    bits.append(what + ' Every entry links to its own page, where the footage plays next '
+                'to a write-up of what it shows, the source it came from, and what it does '
+                'and does not establish.')
     bits.append('')
-    sp = (n.raw.get('site_page') or '').strip()
-    l2 = [s for s in (n.raw.get('site_level_2') or []) if s]
-    if sp:
-        p = os.path.expanduser(sp)
-        p = p if os.path.isabs(p) else os.path.join(ROOT, sp)
-        if os.path.exists(p) and p.startswith(DOCS):
-            bits.append(f'The written analysis for this area lives at '
-                        f'[{page_label(p)}]({site_url(p)}). The footage below is the '
-                        'visual record behind it.')
-            bits.append('')
-    elif l2:
-        bits.append('Related written analysis: ' +
-                    ', '.join(f'[/{s}/overview](/{s}/overview)' for s in l2[:4]) + '.')
-        bits.append('')
-    bits.append('Each clip has its own page with the full write-up, the source it came '
-                'from, and what the footage does and does not establish.')
+    bits.append('Clips are grouped here by concept rather than by date or by who posted them, '
+                'so related footage sits together. Claims spoken inside the videos are the '
+                'speakers’ claims, reported here with attribution rather than adopted as '
+                'conclusions.')
+    bits.append('')
+    tail = ('Open any clip above to start.')
+    if rel:
+        tail += (' For the investigative context behind this footage, see '
+                 + ', '.join(f'[{t}]({u})' for t, u in rel) + '.')
+    bits.append(tail)
     return '\n'.join(bits) + '\n'
 
-def nav_block_cluster(n):
-    lines = ['{/* CK_NAV_START */}', '']
-    rows = toc_rows_for(n)
-    clusters = [x for x in rows if x[3] == 'cluster']
-    kidvids = [x for x in rows if x[3] == 'video']
-    if clusters:
-        lines += ['## Sub-Sections', '', '| Section | Videos |', '|---|---|']
-        for label, url, cnt, _ in clusters:
-            lines.append(f'| [{label}]({url}) | {cnt} |')
-        lines.append('')
-    own = list(n.vids) + []
-    if own or kidvids:
-        lines += ['## Videos In This Section', '', '| Video | Length | What it shows |', '|---|---|---|']
-        for r in own:
-            t = _vt(r, 70)
-            d = dur_human(r['v'].get('duration')) or '—'
-            cap = first_sentences(r['v'].get('ai_description'), 1, 150).replace('|', '—')
-            lines.append(f'| [{t}]({r["url"]}) | {d} | {cap} |')
-        for label, url, cnt, _ in kidvids:
-            lines.append(f'| [{label}]({url}) | — | — |')
-        lines.append('')
-    sibs = []
+def related_block_cluster(n):
+    lines = ['## Related Areas', '']
+    for t, u in written_record_links(n):
+        lines.append(f'* Written record: [{t}]({u})')
+    up = rel_url(n.parent.page) if (n.parent and n.parent.rec > 0) else '/Videos/overview'
+    upt = n.parent.title if (n.parent and n.parent.rec > 0) else 'Videos'
+    lines.append(f'* Up: [{upt}]({up})')
+    if up != '/Videos/overview':
+        lines.append('* All videos: [Videos](/Videos/overview)')
     parent_kids = [k for k in (n.parent.kids if n.parent else roots) if k.rec > 0 and k is not n]
+    peers = []
     for k in sorted(parent_kids, key=lambda x: x.title):
         if k.bypass:
             t = k.bypass_target
-            sibs.append((_vt(t, 70), t['url'], 1))
+            peers.append(f'[{_vt(t, 60)}]({t["url"]})')
         else:
-            sibs.append((k.title, rel_url(k.page), k.rec))
-    if sibs:
-        lines += ['## Elsewhere In Video Evidence', '']
-        lines.append(' · '.join(f'[{l}]({u})' for l, u, _ in sibs[:24]))
-        lines.append('')
-    up = rel_url(n.parent.page) if (n.parent and n.parent.rec > 0) else '/Videos/overview'
-    upt = n.parent.title if (n.parent and n.parent.rec > 0) else 'All video evidence'
-    lines += ['', f'[← Back to {upt}]({up})', '', '{/* CK_NAV_END */}']
+            peers.append(f'[{k.title}]({rel_url(k.page)})')
+    if peers:
+        lines += ['', '**Peer clusters:** ' + ' · '.join(peers)]
     return '\n'.join(lines)
 
 def write_cluster_page(n):
     old = existing_fm(n.page)
     authored = old.get('ck_authored') == 'true'
     prose = extract_prose(n.page) or baseline_cluster_prose(n)
+    kids = [k for k in n.kids if k.rec > 0]
+    own = len(n.vids)
     desc = (old.get('description') if authored and old.get('description') else
             (f'Video evidence filed under {n.title} in the Charlie Kirk investigation '
-             f'— {n.rec} clip' + ('s' if n.rec != 1 else '') + ' with write-ups and sources.'))
+             f'— {n.rec} clip' + ('s' if n.rec != 1 else '')
+             + (f' across {len(kids)} sub-section' + ('s' if len(kids) != 1 else '') if kids else '')
+             + ' with write-ups and sources.'))
     label = old.get('sidebar_label') if authored and old.get('sidebar_label') else short_label(n.title)
+    up = rel_url(n.parent.page) if (n.parent and n.parent.rec > 0) else '/Videos/overview'
+    upt = n.parent.title if (n.parent and n.parent.rec > 0) else 'Videos'
+    # count line, in the Photos idiom: "N on this page and M sub-sections (R in total)"
+    count = f'Video evidence filed under **{n.title}** — {_plural_vid(own)} on this page'
+    if kids:
+        count += (f' and {len(kids)} sub-section' + ('s' if len(kids) != 1 else '')
+                  + f' ({_plural_vid(n.rec)} in total)')
+    count += '. Scan the list and open any clip for the footage and its write-up.'
     fm = ['---',
+          'displayed_sidebar: docs',
+          'slug: ' + rel_url(n.page),
           'title: ' + esc_yaml(n.title),
           'sidebar_label: ' + esc_yaml(label),
           'description: ' + esc_yaml(desc),
           'ck_authored: ' + ('true' if authored else 'false'),
           'ck_node_key: ' + esc_yaml(n.key),
           '---', '']
-    body = [GEN_NOTE, '', '# ' + n.title, '',
+    body = [GEN_NOTE, '',
+            back_button(up, upt), '',
+            '# ' + n.title + ' — Videos', '',
+            count, '',
+            '{/* CK_TOC_START */}', '',
+            flex_columns(cluster_toc_items(n)), '',
+            '{/* CK_TOC_END */}', '',
+            '## About This Cluster', '',
             '{/* CK_PROSE_START */}', '', prose, '', '{/* CK_PROSE_END */}', '',
-            nav_block_cluster(n), '']
+            '{/* CK_NAV_START */}', '',
+            related_block_cluster(n), '',
+            '{/* CK_NAV_END */}', '']
     txt = re.sub(r'\n{4,}', '\n\n\n', '\n'.join(fm + body))
     os.makedirs(os.path.dirname(n.page), exist_ok=True)
     existed = os.path.exists(n.page)
@@ -994,21 +1056,23 @@ open(CSSFILE, 'w', encoding='utf-8').write(css)
 
 # ------------------------------------------------------- Level 2 landing TOC
 l2 = open(L2PAGE, encoding='utf-8').read()
-toc = ['{/* VIDEOS_TOC_START */}', '',
-       '## Browse The Video Evidence', '',
-       f'{len(videos)} clips are catalogued below, grouped by what they show or '
-       'claim. Each clip has its own page with the footage, a write-up, and its '
-       'source.', '',
-       '| Section | Videos |', '|---|---|']
-for k in sorted([k for k in roots if k.rec > 0], key=lambda x: x.title):
+l2_roots = sorted([k for k in roots if k.rec > 0], key=lambda x: x.title)
+l2_items = []
+for k in l2_roots:
     if k.bypass:
         t = k.bypass_target
-        toc.append(f'| [{_vt(t, 80)}]({t["url"]}) | 1 |')
+        l2_items.append(f'[{_vt(t, 70)}{_dur_suffix(t)}]({t["url"]})')
     else:
-        toc.append(f'| [{k.title}]({rel_url(k.page)}) | {k.rec} |')
-toc += ['', 'Also in this section: '
-        '[Buckley Carlson on the "Valhalla" comment](/Videos/buckley-carlson-kash-patel-valhalla).',
-        '', '{/* VIDEOS_TOC_END */}']
+        l2_items.append(f'[{k.title}]({rel_url(k.page)}) — {_plural_vid(k.rec)}')
+toc = ['{/* VIDEOS_TOC_START */}', '',
+       '## Video Clusters', '',
+       f'The video archive holds {len(videos)} clips filed into {len(l2_roots)} concept '
+       'clusters. Open a cluster to see its clips and its sub-areas; every clip has its '
+       'own page with the footage and a write-up.', '',
+       flex_columns(l2_items), '',
+       'Also in this section: '
+       '[Buckley Carlson on the "Valhalla" comment](/Videos/buckley-carlson-kash-patel-valhalla).',
+       '', '{/* VIDEOS_TOC_END */}']
 toc_txt = '\n'.join(toc)
 if 'VIDEOS_TOC_START' in l2:
     l2 = re.sub(r'\{/\* VIDEOS_TOC_START \*/\}.*?\{/\* VIDEOS_TOC_END \*/\}', lambda _: toc_txt, l2, flags=re.S)
