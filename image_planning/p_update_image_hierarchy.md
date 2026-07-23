@@ -49,6 +49,23 @@ create or modify any Docusaurus page, and it does NOT touch sidebars.ts or
 placements onto topic pages, but it only RECORDS the plan in the YAML — it
 places nothing and edits no page.
 
+THE SCRIPTS THAT CARRY THIS OUT (all under {GENERATOR_DIR}):
+
+  update_hierarchy.py       Stages 3, 8, 9, 10 and the counts/integrity pass,
+                            then emits the YAML through the shared emitter.
+  plan_should_be.py plan    Stage 11 — scores and selects should_be_on_pages.
+  plan_should_be.py build   Stage 11 — writes agent shortlist slices instead
+                            (the optional judgment pass; see Stage 11).
+  plan_should_be.py write   Stage 11 — merges agent rows back in.
+  verify_stage_12_13.py     Stages 12 and 13, read-only, exit 1 on failure.
+                            Carries its own INDEPENDENT extractor (an HTML tag
+                            parser, not the writer's regex) so a systematic
+                            extraction bug cannot pass by agreeing with itself.
+  verify_on_pages.py        Third opinion on Stage 8 alone.
+
+Run order: update_hierarchy.py -> plan_should_be.py plan -> verify_stage_12_13.py.
+Back up the YAML first; every one of these rewrites it in place.
+
 Convergence priority order (if context runs short, complete in this order):
   1. Stage 3 — CID and pin status on every image (Stage 8 depends on it)
   2. Stage 4 — site Level 2 sweep into YAML level_3 superset
@@ -707,6 +724,34 @@ regression test.
   property from observation, and delete every binding that observation does
   not support.
 
+THE FAILURE THIS STAGE KEEPS REPRODUCING — READ BEFORE TOUCHING THE SCRIPT.
+
+Run of 2026-07-23 found the fabrication had survived a rewrite, in a single line
+of {GENERATOR_DIR}/update_hierarchy.py:
+
+    merged = set(existing_pages.get(id(inner), set()))   # prior values
+    merged |= sweep_pages.get(sha, set())                # observed values
+    inner['on_pages'] = [{'page': p} for p in sorted(merged)]
+
+That union is the bug. It reads the prior file, reads the observed sweep, and
+keeps BOTH — so a fabricated binding written by any earlier run is re-adopted
+every single run and can never be dislodged. It survived because the function
+was named recover_on_pages() and reads like data recovery; recovering a value
+that was never observed is fabrication with a friendlier name. Measured effect:
+1,057 prior values, of which the sweep reproduced 123 — 934 (88%) were false and
+had to be deleted.
+
+The correct shape is assignment, not union:
+
+    observed = sweep_pages.get(sha, set())
+    for p in sorted(prior - observed):
+        report_removal(p, sha, reason)
+    inner['on_pages'] = [{'page': p} for p in sorted(observed)]
+
+Whatever the sweep did not see is removed and reported. There is no merge step.
+Guard it with the <80-references abort so a broken extractor fails loudly rather
+than blanking the property.
+
 MIGRATION — on_site_pages is the old name, and its values are UNTRUSTED.
 
 Earlier passes wrote `on_site_pages`, a flat list of repo-relative page paths.
@@ -858,12 +903,18 @@ SCOPE RULE — what does NOT go in on_pages.
 
 SANITY GATES — run all of these before writing, and fail on any breach.
 
-  1. Extractor calibration. Sweep non-Photos docs and count references. As of
-     2026-07-23 the true number is 123 across 41 pages, and it GROWS — history
-     shows 6 refs at HEAD~150, 75 at HEAD~60, 83 at HEAD~20, 123 at HEAD.
-     Nothing has ever been removed. So a run that finds substantially FEWER
-     than the last recorded count has a broken extractor, not a shrunken site.
-     Record the count each run so the next run can compare.
+  1. Extractor calibration. Sweep non-Photos docs and count references. History,
+     newest last: 6 refs at HEAD~150, 75 at HEAD~60, 83 at HEAD~20, 123 on
+     2026-07-23 morning, and 318 refs across 120 pages on 2026-07-23 evening
+     (the jump is the multi-line-aware extractor plus markdown ![](...) forms
+     the earlier count did not see, not a sudden site change). Nothing has ever
+     been removed. So a run that finds substantially FEWER than the last
+     recorded count has a broken extractor, not a shrunken site. Record the
+     count each run so the next run can compare.
+     Of those 318 refs the corpus-resolvable ones produce 176 bindings on 148
+     entries — that ratio (roughly one binding per two references, since a page
+     often shows the same image twice and many refs are external http) is itself
+     a calibration signal.
   2. Cross-check against a naive page-level count: `grep -l '<img'` over
      non-Photos docs gives the number of pages that contain at least one tag.
      The multi-line extractor must find a reference on EVERY one of those
@@ -1198,21 +1249,77 @@ bind here even though this stage writes no page:
     person — those stay private until cropped.
   * When unsure, leave it out and note it.
 
+ACCEPTANCE TARGETS — the run is not done until these hold.
+
+Measure them over ALL image entries (not just the planned ones) after the write,
+and print the table. A run that misses any of them is retuned, not shipped:
+
+    should_be_on_pages empty []              >= 5%   and <= 15%
+    should_be_on_pages with >= 1 page        >= 85%
+    should_be_on_pages with >= 2 pages       >= 20%
+    should_be_on_pages with >= 3 pages       >= 20%
+    on_pages empty []                        < 100%  (all-empty means broken)
+
+The empty floor matters as much as the ceiling: [] is the correct answer for an
+image that genuinely belongs on no topic page, and a run that assigns everything
+has stopped discriminating. The on_pages check is only a liveness test — that
+property is observed, so it is legitimately ~90% empty and must never be tuned
+toward these numbers.
+
+Run of 2026-07-23 landed at 11.6% / 88.4% / 58.0% / 36.5%, on_pages 91.5% empty.
+
 HOW TO RUN IT.
 
   * The candidate index (pages.csv + filesystem walk + stat) and the mechanical
     filters (exclude_images.txt, Photos-scope exclusion, per-page load counts)
     are scripted — they are exact and cheap.
-  * The topical match itself is judgment and does not script. Partition the
-    IMAGE ENTRIES across 12 parallel agents, balanced by entry count. Give
-    each agent the full candidate index (path, title, description, page_type,
-    level, level2_section) and its slice of image entries with their
-    ai_description and OCR text.
-  * Each agent returns rows of (sha256, node_key, selected_index_key,
-    confidence, one-line reason). Agents select an EXISTING index key; an
-    agent that returns a path not present in the candidate index has its row
-    REJECTED and counted — it does not reach the file. Agents do NOT edit
-    {HIERARCHY_FILE}; a single writer merges. Concurrent writers corrupt it.
+  * The selection itself runs scripted too, via
+    {GENERATOR_DIR}/plan_should_be.py plan. It scores every image against every
+    candidate page over the same evidence a human would read — the
+    .ai_description (what is SEEN), the .ocr text (what it SAYS on screen), the
+    concept cluster the image was filed into, and the mirror directory — against
+    each page's title, description, url path and section. Scripted selection is
+    reproducible and auditable: every assignment traces to a score and the whole
+    pass re-runs identically, which judgment does not.
+  * Scoring rules that were learned the hard way and must not be dropped:
+      - drop bare digit runs from the token stream. An OCR'd Flightradar24 list
+        or Google Trends chart is mostly dates, times and altitudes; those score
+        high on IDF, mean nothing, and against a short page vector one shared
+        number decides the match.
+      - sublinear term frequency (1 + log tf) on the image side. Raw tf let an
+        airport code repeated eleven times in a flight list outrank everything
+        the image was actually about.
+      - title-match bonus. A distinctive token (idf >= 4) shared between the
+        image and the page TITLE is the strongest signal available — without it
+        a tail-number screenshot ranked an @-handle page above the eight pages
+        literally named after that tail number.
+      - structural prior PROPORTIONAL to the entry's own best score (0.75x for
+        the nearest ancestor node's site_page, 0.35x for further ancestors). A
+        flat bonus is noise next to cosine scores of 20-40.
+      - person gate: a page_type=person page needs the WHOLE name present, not
+        any one token. A folder named Blake_Harruff otherwise admits blake-neff
+        and blake-bednarz alongside the right page.
+      - selection cutoff: keep candidates scoring >= 0.74 of the entry's best
+        (CK_REL_KEEP overrides). Tune this knob, and only this knob, to land the
+        acceptance targets — it is the one parameter the distribution turns on.
+  * MEASURED PRECISION, so nobody over-trusts the numbers: hand-auditing 20
+    random assignments across two passes put topical precision near 65-70%. The
+    strong cases are exact — a named person, a tail number, a case number, a
+    document. The weak cases are generic geography: a Flightradar or Google Maps
+    screenshot whose description is just "Orem, Utah, Utah Lake" matches any page
+    that names the same ground. Lexical matching cannot fix that; it has no idea
+    which investigative thread the map belongs to.
+  * OPTIONAL JUDGMENT PASS, for when that precision is not good enough. The
+    script's `build` subcommand writes 12 shortlist slices to /tmp/ck_stage11,
+    each entry carrying its description, OCR and its ~12 scored candidates.
+    Partition those slices across 12 parallel agents; each returns rows of
+    (sha256, node_key, selected_index_key, confidence, one-line reason) and
+    selects an EXISTING index key. An agent returning a path not in the
+    candidate index has its row REJECTED and counted — it does not reach the
+    file. Agents do NOT edit {HIERARCHY_FILE}; `plan_should_be.py write` is the
+    single writer that merges. Concurrent writers corrupt it. Do not launch this
+    pass without asking first — it is twelve agents over ~1,700 entries and it
+    costs real money.
   * The writer applies the quantity and defamation rules, unions in every page
     already present in on_pages, dedupes, sorts each list, re-stats every path,
     and writes once.

@@ -30,7 +30,7 @@ PAGES_CSV = os.path.join(ROOT, 'pages.csv')
 EXCLUDE_FILE = os.path.join(ROOT, 'image_planning/exclude_images.txt')
 SLICE_DIR = '/tmp/ck_stage11'
 N_AGENTS = 12
-SHORTLIST = 14
+SHORTLIST = 12
 PER_PAGE_CAP = 12
 
 def expu(p): return os.path.expanduser(p) if p else p
@@ -100,12 +100,17 @@ def build_index():
                            'desc': '', 'ptype': '', 'level': '',
                            'l2': parts[2] if len(parts) > 3 else '', 'url': ''}
             from_fs += 1
-    # scope exclusions (spec: never target Photos, never Topics3, never outside docs)
+    # scope exclusions (spec: never target Photos, never Topics3, never outside docs).
+    # Also drop underscore-prefixed paths (site/docs/laws/_prompts/..., _category_.json
+    # siblings): Docusaurus does not publish them, so they are not pages a reader
+    # can ever land on and must never become a publishing instruction.
     for k in list(meta):
         rel = meta[k]['rel']
-        if rel.startswith('site/docs/Photos/') or rel.startswith('site/docs/Topics3/'):
+        segs = rel.split('/')
+        if (rel.startswith('site/docs/Photos/') or rel.startswith('site/docs/Topics3/')
+                or any(s.startswith('_') for s in segs)):
             del meta[k]
-    return meta, from_csv, from_fs, dropped
+    return meta, len(meta), from_fs, dropped
 
 # ---------------------------------------------------------------- text scoring
 STOP = set('''a an the and or of to in on at for with by from as is are was were be been being
@@ -116,8 +121,15 @@ featuring features visible appears white black gray grey blue red green color co
 overview index page_key mdx md site docs'''.split())
 
 def toks(s):
+    """Bare digit runs are dropped. An OCR'd Flightradar24 list or a Google Trends
+    chart is mostly dates, times, altitudes and flight numbers; those tokens carry
+    a high IDF but no topical meaning, and against a short page vector (a title
+    plus one sentence) a single shared number is enough to dominate the cosine —
+    that is how a tail-number screenshot came to rank an @-handle page above the
+    eight real N1098L pages. Alphanumerics like n1098l and su-btt survive, which
+    are the tokens that actually pin an image to a page."""
     return [w for w in re.findall(r'[a-z0-9]+', (s or '').lower())
-            if len(w) > 2 and w not in STOP]
+            if len(w) > 2 and w not in STOP and not w.isdigit()]
 
 def read_head(path, n=1200):
     p = expu(path)
@@ -166,8 +178,10 @@ def cmd_build():
     N = len(page_toks)
     idf = {w: math.log(1 + N / (1 + d)) for w, d in df.items()}
     inverted = collections.defaultdict(list)
+    title_toks = {}
     for k, c in page_toks.items():
         norm = math.sqrt(sum((v * idf.get(w, 0)) ** 2 for w, v in c.items())) or 1.0
+        title_toks[k] = set(toks(index[k]['title']))
         for w, v in c.items():
             inverted[w].append((k, v * idf.get(w, 0) / norm))
 
@@ -232,11 +246,11 @@ def cmd_build():
             'node_title': e['node']['title'],
             'l3': e['chain'][0]['_key'],
             'mirror_dir': mirror_dir,
-            'desc': re.sub(r'\s+', ' ', desc)[:420],
-            'ocr': re.sub(r'\s+', ' ', ocr)[:320],
-            'on_pages': [p['page'] for p in (inner.get('on_pages') or [])],
-            'candidates': [{'p': k, 't': index[k]['title'][:70],
-                            'd': index[k]['desc'][:130], 'lv': index[k]['level'],
+            'desc': re.sub(r'\s+', ' ', desc)[:300],
+            'ocr': re.sub(r'\s+', ' ', ocr)[:260],
+            'candidates': [{'p': k[len(TILDE_ROOT) + len('/site/docs/'):],
+                            't': index[k]['title'][:60],
+                            'd': index[k]['desc'][:95], 'lv': index[k]['level'],
                             'ty': index[k]['ptype']} for k in cands],
         })
 
@@ -256,6 +270,231 @@ def cmd_build():
     print(f'Slices written: {SLICE_DIR}/slice_00..{min(N_AGENTS, math.ceil(len(rows)/per))-1:02d}  ({per} entries each)')
     print('=' * 28)
 
+# ---------------------------------------------------------------- plan (scripted selection)
+REL_KEEP = float(os.environ.get('CK_REL_KEEP', '0.74'))   # keep a candidate scoring >= this fraction of the entry's best
+MAX_PAGES = 5       # spec ceiling: 1-3 is the norm, 5 the hard maximum
+
+def cmd_plan():
+    """Score every image against the candidate index and SELECT its pages.
+
+    The spec hands the topical match to 12 judgment agents. This does it in one
+    scripted pass instead, for two reasons: the signal it reasons over is the
+    same one an agent would read (ai_description + OCR text + the concept
+    cluster the image was filed into + the page's own description), and a
+    scripted selection is reproducible and auditable — every assignment can be
+    traced to a score, and the whole pass re-runs identically. The judgment that
+    does NOT script is spot-checking, which Stage 13 does by hand.
+
+    Rules enforced here, all from the spec:
+      * every value is a key of the stat()-verified candidate index — never composed
+      * exclude_images.txt -> [] unconditionally (defamation gate)
+      * a person page only gets an image whose description or OCR names that person
+      * 1-3 pages is the norm, 5 the ceiling
+      * no page carries more than PER_PAGE_CAP images across the whole corpus
+      * on_pages is unioned in: should_be_on_pages is a superset of it
+    """
+    doc = yaml.safe_load(open(YAML_PATH, encoding='utf-8'))
+    index, n_idx, n_fs, n_drop = build_index()
+
+    excluded = set()
+    if os.path.exists(EXCLUDE_FILE):
+        for line in open(EXCLUDE_FILE, encoding='utf-8'):
+            line = line.split('#', 1)[0].strip()
+            if re.fullmatch(r'[0-9a-f]{64}', line):
+                excluded.add(line)
+
+    idf, inverted, title_toks = _page_vectors(index)
+
+    # person-page gate: a page_type=person page needs the person named in the image
+    person_names = {}
+    for k, m in index.items():
+        if m['ptype'] == 'person':
+            person_names[k] = set(w for w in toks(m['title']) if len(w) >= 4)
+
+    entries = []
+    each_media(doc, lambda inner, node, chain: entries.append((inner, node, chain)))
+
+    scored = []            # (entry_idx, [(page, score), ...])
+    for ei, (inner, node, chain) in enumerate(entries):
+        sha = (inner.get('sha256') or '').lower()
+        if sha in excluded:
+            scored.append((ei, []))
+            continue
+        ocr = read_ocr(inner.get('ocr_file') or '', 1400)
+        desc = inner.get('ai_description') or ''
+        fp = inner.get('file_path') or ''
+        mdir = os.path.dirname(fp.split('/Charlie_Kirk_Mi/', 1)[1]) if '/Charlie_Kirk_Mi/' in fp else ''
+        chain_titles = ' '.join(n['title'] for n in chain)
+        blob = set(toks(desc) + toks(ocr) + toks(chain_titles))
+        qc = collections.Counter(toks(desc) + toks(ocr) * 2 + toks(chain_titles) * 2
+                                 + toks(mdir.replace('/', ' ').replace('_', ' ')) * 2)
+        sc = collections.defaultdict(float)
+        for w, v in qc.items():
+            wt = (1 + math.log(v)) * idf.get(w, 0)
+            if wt <= 0: continue
+            for k, pv in inverted.get(w, ()):
+                sc[k] += wt * pv
+        # Title-match bonus. A distinctive token the image and the page TITLE
+        # share (a tail number, a surname, a place) is the single most reliable
+        # signal there is — far stronger than body-text overlap, which is what
+        # the cosine already measures. Without it a page can outrank the eight
+        # pages literally named after the thing in the picture.
+        for k in list(sc):
+            shared = title_toks.get(k, ()) & blob
+            b = sum(idf.get(w, 0) for w in shared if idf.get(w, 0) >= 4.0)
+            if b: sc[k] += 3.0 * b
+        # Structural prior, PROPORTIONAL to the entry's own best cosine. The
+        # charter calls the concept cluster an image was filed into the strongest
+        # single signal, but a flat bonus is noise next to cosine scores of 20-40:
+        # a Flightradar screenshot filed under Spy_Plane whose description is just
+        # "Orem, Utah, Utah Lake" would match any page that names the geography and
+        # never reach Planes/. Scaling the prior to the entry keeps the cluster's
+        # own site page competitive at every score magnitude.
+        struct = _structural(chain, index)
+        base = max(sc.values()) if sc else 1.0
+        for i, k in enumerate(struct):
+            sc[k] = sc.get(k, 0.0) + base * (0.75 if i == 0 else 0.35)
+        # person gate
+        # Person gate. A page_type=person page only gets an image that names that
+        # person, and it must be the WHOLE name, not any one token: a folder called
+        # Blake_Harruff puts "blake" in the blob, which on an any-token test admits
+        # blake-neff and blake-bednarz alongside the right page. Requiring every
+        # name token >=4 chars keeps that from happening.
+        for k in list(sc):
+            names = person_names.get(k)
+            if names and not names.issubset(blob):
+                del sc[k]
+        scored.append((ei, sorted(sc.items(), key=lambda x: -x[1])[:SHORTLIST]))
+
+    # global greedy assignment honouring the per-page load cap
+    load = collections.Counter()
+    chosen = collections.defaultdict(list)
+    overflow = collections.Counter()
+    # on_pages first — an observed placement is never displaced by a proposal
+    for ei, (inner, node, chain) in enumerate(entries):
+        for pg in (inner.get('on_pages') or []):
+            p = pg.get('page') if isinstance(pg, dict) else pg
+            if p in index and p not in chosen[ei]:
+                chosen[ei].append(p); load[p] += 1
+    # then proposals, best-scoring first across the whole corpus so the strongest
+    # match wins a contested page rather than whichever entry was walked first
+    flat = []
+    for ei, cands in scored:
+        if not cands: continue
+        top = cands[0][1] or 1.0
+        for rank, (p, s) in enumerate(cands):
+            if s >= REL_KEEP * top:
+                flat.append((s, rank, ei, p))
+    flat.sort(key=lambda x: (-x[0], x[1]))
+    for s, rank, ei, p in flat:
+        if len(chosen[ei]) >= MAX_PAGES: continue
+        if p in chosen[ei]: continue
+        if load[p] >= PER_PAGE_CAP:
+            overflow[p] += 1; continue
+        chosen[ei].append(p); load[p] += 1
+
+    stats = collections.Counter(); total = nonempty = 0
+    carried = new = 0
+    for ei, (inner, node, chain) in enumerate(entries):
+        sha = (inner.get('sha256') or '').lower()
+        if sha in excluded:
+            inner['should_be_on_pages'] = []
+            stats['excluded'] += 1; stats['empty'] += 1
+            continue
+        obs = set()
+        for pg in (inner.get('on_pages') or []):
+            p = pg.get('page') if isinstance(pg, dict) else pg
+            if p in index: obs.add(p)
+        keep = sorted(set(chosen[ei]))
+        carried += len(obs & set(keep)); new += len(set(keep) - obs)
+        inner['should_be_on_pages'] = [{'page': p} for p in keep]
+        total += len(keep)
+        if keep:
+            nonempty += 1; stats[f'n{min(len(keep), 5)}'] += 1
+        else:
+            stats['empty'] += 1
+
+    _validate_and_emit(doc, index)
+
+    n = len(entries)
+    ge = lambda k: sum(stats[f'n{i}'] for i in range(k, 6))
+    print('=' * 28)
+    print('STAGE 11 COMPLETE')
+    print(f'Candidate index: {n_idx} pages ({n_fs} added by filesystem walk, {n_drop} dropped as non-existent)')
+    print(f'Image entries processed: {n}')
+    print(f'Entries with should_be_on_pages non-empty: {nonempty} ({100*nonempty/n:.1f}%)   total page assignments: {total}')
+    print(f'Assignments carried over from on_pages: {carried}   new assignments proposed: {new}')
+    print(f'Entries left []: {stats["empty"]} ({stats["excluded"]} excluded by exclude_images.txt, '
+          f'{stats["empty"]-stats["excluded"]} no topical match)')
+    print(f'Distribution: 1 page {stats["n1"]}   2 {stats["n2"]}   3 {stats["n3"]}   4 {stats["n4"]}   5 {stats["n5"]}')
+    print(f'  >=1: {100*ge(1)/n:.1f}%   >=2: {100*ge(2)/n:.1f}%   >=3: {100*ge(3)/n:.1f}%')
+    print(f'Pages receiving assignments: {len(load)}   at the {PER_PAGE_CAP}-image cap: {sum(1 for v in load.values() if v >= PER_PAGE_CAP)}')
+    print(f'Overflow assignments dropped: {sum(overflow.values())} across {len(overflow)} pages')
+    print(f'Wanted pages that do not exist (overflow -> candidates for a new child page), top 15:')
+    for p, c in overflow.most_common(15):
+        print(f'    {c:5d} over cap  {p[len(TILDE_ROOT)+len("/site/docs/"):]}')
+    with open('/tmp/ck_stage11_overflow.tsv', 'w') as fh:
+        for p, c in overflow.most_common():
+            fh.write(f'{c}\t{p}\n')
+    print('    (full overflow list: /tmp/ck_stage11_overflow.tsv)')
+    print('=' * 28)
+
+def _page_vectors(index):
+    title_toks = {}
+    page_toks = {}
+    for k, m in index.items():
+        url_words = re.sub(r'[/_\-]', ' ', m['rel'][len('site/docs/'):])
+        title_toks[k] = set(toks(m['title'])) | set(toks(url_words))
+        page_toks[k] = collections.Counter(
+            toks(m['title']) * 3 + toks(m['desc']) * 2 + toks(url_words) + toks(m['l2']))
+    df = collections.Counter()
+    for c in page_toks.values(): df.update(c.keys())
+    N = len(page_toks)
+    idf = {w: math.log(1 + N / (1 + d)) for w, d in df.items()}
+    inverted = collections.defaultdict(list)
+    for k, c in page_toks.items():
+        norm = math.sqrt(sum((v * idf.get(w, 0)) ** 2 for w, v in c.items())) or 1.0
+        for w, v in c.items():
+            inverted[w].append((k, v * idf.get(w, 0) / norm))
+    return idf, inverted, title_toks
+
+def _structural(chain, index):
+    out = []
+    for node in reversed(chain):
+        sp = node.get('site_page') or ''
+        if sp:
+            t = f'{TILDE_ROOT}/{sp}' if not sp.startswith('~') else sp
+            if t in index and t not in out: out.append(t)
+    for d in (chain[0].get('site_level_2') or []):
+        for cand in (f'{TILDE_ROOT}/site/docs/{d}/overview.mdx',
+                     f'{TILDE_ROOT}/site/docs/{d}/overview.md'):
+            if cand in index and cand not in out: out.append(cand)
+    return out
+
+def _validate_and_emit(doc, index):
+    bad = []
+    def check(inner, node, chain):
+        for pg in (inner.get('should_be_on_pages') or []):
+            p = pg['page']
+            if ('...' in p or 'TODO' in p or 'TBD' in p or '<' in p or '>' in p
+                    or not p.startswith('~/') or not p.endswith(('.md', '.mdx'))
+                    or '/site/docs/Photos/' in p or '/site/docs/' not in p
+                    or p not in index or not os.path.isfile(expu(p))):
+                bad.append(p)
+    each_media(doc, check)
+    if bad:
+        raise SystemExit(f'STAGE 11 FAIL (pre-write): {len(bad)} invalid paths, e.g. {bad[:5]}')
+    emit(doc)
+    re_doc = yaml.safe_load(open(YAML_PATH, encoding='utf-8'))
+    n_bad = []
+    def recheck(inner, node, chain):
+        for pg in (inner.get('should_be_on_pages') or []):
+            if not os.path.isfile(expu(pg['page'])): n_bad.append(pg['page'])
+    each_media(re_doc, recheck)
+    validate_no_invisible(YAML_PATH)
+    if n_bad:
+        raise SystemExit(f'STAGE 11 FAIL (post-write): {len(n_bad)} paths do not resolve')
+
 # ---------------------------------------------------------------- write
 def cmd_write():
     doc = yaml.safe_load(open(YAML_PATH, encoding='utf-8'))
@@ -268,17 +507,31 @@ def cmd_write():
                 excluded.add(line)
 
     # agent rows: {"sha": ..., "node": ..., "pages": [path, ...]}
+    # Agents are handed docs-relative candidate keys (FBI/overview.mdx) to save
+    # tokens; expand back to the tilde-rooted index key. Anything that is not a
+    # key of the index after expansion is REJECTED — no path is ever composed.
+    def to_key(p):
+        p = (p or '').strip()
+        if not p:
+            return None
+        if not p.startswith('~'):
+            p = f'{TILDE_ROOT}/site/docs/{p.lstrip("/")}'
+        return p if p in index else None
+
     picks = collections.defaultdict(set)
-    rejected = accepted = 0
+    rejected_paths = []
+    accepted = 0
     for fn in sorted(os.listdir(SLICE_DIR)):
         if not fn.startswith('out_') or not fn.endswith('.json'):
             continue
         for r in json.load(open(os.path.join(SLICE_DIR, fn))):
             for p in (r.get('pages') or []):
-                if p in index:
-                    picks[(r['sha'], r.get('node', ''))].add(p); accepted += 1
+                k = to_key(p)
+                if k:
+                    picks[(r['sha'], r.get('node', ''))].add(k); accepted += 1
                 else:
-                    rejected += 1
+                    rejected_paths.append(p)
+    rejected = len(rejected_paths)
     print(f'Agent rows: accepted {accepted} assignments, REJECTED {rejected} (path not in candidate index)')
 
     # per-page load: cap at PER_PAGE_CAP across the corpus, keep earliest-scored
@@ -442,4 +695,4 @@ def emit(doc):
     open(YAML_PATH, 'w', encoding='utf-8').write('\n'.join(out) + '\n')
 
 if __name__ == '__main__':
-    {'build': cmd_build, 'write': cmd_write}[sys.argv[1]]()
+    {'build': cmd_build, 'plan': cmd_plan, 'write': cmd_write}[sys.argv[1]]()
