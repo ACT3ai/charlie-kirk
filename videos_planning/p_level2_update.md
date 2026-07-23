@@ -464,6 +464,21 @@ KNOWLEDGE — GATES THAT STILL APPLY
   * A node flagged needs_split in the YAML exceeds the twelve-video ceiling.
     This prompt does not split it (the YAML is read-only here) — it renders what
     is there and reports the node so {HIERARCHY_PROMPT} can split it.
+  * SHOULD_BE_ON_PAGES IS NOT THIS PROMPT'S PROPERTY. Every video entry carries
+    should_be_on_pages: the list of topic pages OUTSIDE the videos hierarchy
+    where that footage ought to appear. {HIERARCHY_PROMPT} Stage 13 reasons out
+    those values; {VIDEO_PAGE_PROMPT} Stage 6 acts on them, placing a card for each
+    video inside a marked CK_PLACED_VIDEOS block at the bottom of the topic
+    page. This prompt does neither. It never reads should_be_on_pages to decide
+    navigation, never places a video outside {VIDEOS_L2_DIR}, and never creates,
+    edits, reorders, or removes a CK_PLACED_VIDEOS block — nor the images
+    pipeline's CK_PLACED_IMAGES block, which lives on those same topic pages.
+    If a run notices a stale or malformed placement block, REPORT it in
+    {FINDINGS_FILE} for {VIDEO_PAGE_PROMPT} to regenerate; do not repair it here.
+    The three properties, so nothing gets confused: video_page is which page IS
+    the video, on_pages is where it IS shown today, should_be_on_pages is where
+    it OUGHT to be shown. Navigation is built from the tree and from video_page
+    alone.
 
 ============================
 OUTPUT SANITIZATION — NO INVISIBLE UNICODE, EVER
@@ -659,6 +674,12 @@ HARD RULES
 * CK_VIDEO_LAYOUT is ours; CK_EVIDENCE_LAYOUT belongs to the images pipeline and
   is never touched. Nothing under {IMAGE_PLANNING_DIR}, {ROOT_DIR}/images,
   {DOCS_DIR}/Photos, or {SITE_DIR}/static/img/evidence is ever written.
+* This prompt writes ONLY inside {VIDEOS_L2_DIR} (plus {PAGES_CSV}, {GEN_SCRIPT}
+  and our marked CSS region). It never edits a topic page elsewhere in
+  {DOCS_DIR}. The should_be_on_pages placements on those pages — the marked
+  CK_PLACED_VIDEOS blocks — belong to {VIDEO_PAGE_PROMPT} Stage 6, and the
+  CK_PLACED_IMAGES blocks beside them belong to the images pipeline. Report a
+  broken block in {FINDINGS_FILE}; never repair one from here.
 * NEVER copy video bytes into {SITE_DIR}/static. The player's src is a public
   IPFS gateway URL built from the entry's cid. Posters are the only local media.
 * Nothing is ever PINNED by this prompt. Unpinned CIDs are rendered and

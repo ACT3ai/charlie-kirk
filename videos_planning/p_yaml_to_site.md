@@ -42,10 +42,10 @@ Level 2 ({VIDEOS_L2_DIR}, rooted at {VIDEOS_L2_PAGE}) from {HIERARCHY_FILE}. By
 the time this prompt runs, the YAML is already built and holds all the data
 needed: the cluster tree (level_3 / level_4 / level_5), and for every video its
 cid, ipfs_pinned, sha256, file_path, inline ai_description, sidecar file paths
-(transcription_file, ai_description_file, ocr_file), on_pages, also_filed_in,
-and site_level_2 / site_page bindings. This prompt READS the YAML and WRITES
-pages. It does not grow or edit the YAML (except recording published-page
-bookkeeping fields explicitly listed below).
+(transcription_file, ai_description_file, ocr_file), on_pages,
+should_be_on_pages, also_filed_in, and site_level_2 / site_page bindings. This
+prompt READS the YAML and WRITES pages. It does not grow or edit the YAML
+(except recording published-page bookkeeping fields explicitly listed below).
 
 Two kinds of pages get produced under {VIDEOS_L2_DIR}:
 
@@ -57,9 +57,17 @@ Two kinds of pages get produced under {VIDEOS_L2_DIR}:
     shows, who is speaking, what they assert, and how it connects to the rest
     of the investigation.
 
-A third, smaller output is produced OUTSIDE {VIDEOS_L2_DIR}: the inline copies
-of each video on its host topic pages (the YAML's on_pages) are made clickable
-so they link to that video's Videos page. See Stage 5.
+Two smaller outputs are produced OUTSIDE {VIDEOS_L2_DIR}, both on topic pages
+elsewhere in {DOCS_DIR}:
+
+  * The inline copies of each video on the pages that already host it (the
+    YAML's on_pages) are made clickable so they link to that video's Videos
+    page. See Stage 5.
+  * Every video the YAML says BELONGS on a topic page and is not there yet (the
+    YAML's should_be_on_pages) is placed on that page, inside one regenerated
+    marked block at the bottom. See Stage 6. This is the stage that makes the
+    hierarchy's plan real — without it the plan sits in the YAML forever and the
+    footage stays invisible to a reader who never opens the Videos section.
 
 This prompt runs MANY times. Pages will usually already exist from earlier
 runs, written before additional data existed. Rerunning must read each
@@ -117,7 +125,7 @@ At the very start of every run, read into the context window:
      pages must meet it.
   5. {HIERARCHY_FILE} — parse fully. Index every node (_key, title, depth,
      parentage) and every video (cid, ipfs_pinned, sha256, file_path, sidecar
-     paths, on_pages, also_filed_in).
+     paths, video_page, on_pages, should_be_on_pages, also_filed_in).
   6. {PAGES_CSV} — the master page index. Needed to resolve link targets and
      to keep in sync afterward.
 
@@ -557,6 +565,191 @@ Idempotent and safe:
   * A video hosted on N pages gets N host edits, one matched embed per page.
 
 ============================
+KNOWLEDGE — SHOULD_BE_ON_PAGES: PLACING VIDEOS ONTO TOPIC PAGES
+============================
+
+Stage 5 makes a video clickable where it is ALREADY embedded. This knowledge
+covers the far bigger job: putting the video on the pages where it belongs and
+currently is not.
+
+The YAML carries three properties per video that together describe the whole
+picture:
+
+  on_pages            where the video IS shown today. OBSERVED. Mostly empty.
+  should_be_on_pages  where the video OUGHT to be shown. REASONED, produced by
+                      Stage 13 of {HIERARCHY_PROMPT}. It is the COMPLETE desired
+                      state and a superset of on_pages — never "extra pages
+                      beyond on_pages".
+  video_page          the video's own Level 5 page under {VIDEOS_L2_DIR}.
+
+The work of this stage is exactly the set difference:
+
+    should_be_on_pages  minus  what is already embedded on that page
+
+Why it matters: almost every video in this corpus is published nowhere but its
+own Videos page. A reader deep in Ballistics, or on the N1098L page, or on a
+person's profile, should be offered the footage on the page they are reading.
+That is the charter's "topic arrival" path served from the other direction —
+instead of sending the visitor to the videos hierarchy, the evidence comes to
+them, and one click takes them to the full write-up.
+
+=== THE PROPERTY SHAPE ===
+
+should_be_on_pages is a list of single-key mappings, each holding the full
+tilde-rooted path to a real page file:
+
+    should_be_on_pages:
+      - page: "~/BGit/Bryan_git/charlie-kirk/site/docs/Suspicious/Cause_of_Death/entrance-or-exit.mdx"
+      - page: "~/BGit/Bryan_git/charlie-kirk/site/docs/Suspicious/Five_Minutes/shirt-pull-at-the-shot.mdx"
+
+The list is ordered best-match first. Every path was stat()-verified by Stage 13
+before it was written. This stage re-stats anyway: a page can be renamed between
+the two prompts. A path that no longer resolves is REPORTED, never guessed at
+and never repaired by inventing a neighbour.
+
+=== WHAT GETS PLACED: A CARD, NOT A PLAYER ===
+
+THIS IS THE BIGGEST DIVERGENCE FROM THE IMAGES PIPELINE AND IT IS DELIBERATE.
+
+The images pipeline places a gallery of up to twelve <img> elements at the
+bottom of a topic page, each served from the site's own static directory. Doing
+the equivalent with video would put up to twelve players on one page, each one
+reaching a PUBLIC IPFS GATEWAY for a file that runs from 0.5MB to 173MB. Even at
+preload="metadata" that is many cross-origin requests to a service we do not
+control, on a page whose subject is not the video. It would be slow, it would be
+flaky, and every unpinned CID among them renders as a dead rectangle.
+
+So a placement is a CARD, not a player:
+
+  * A poster thumbnail — /img/video_posters/{sha256}.jpg — when one exists,
+    wrapped in an anchor to the video's own Videos page. A poster is a small
+    local JPEG and is the only media a placement ever loads.
+  * A title line, linked to the same Videos page.
+  * A one-line caption saying what the footage shows and who is speaking.
+  * A short duration and source note when the YAML has them ("4:19 · posted by
+    @RealCandaceO, 17 Jun 2026").
+
+The player itself lives on ONE page: the video's own Level 5 page. Everything
+else links to it. That keeps the video hierarchy the single place a video is
+actually served from, which is exactly what makes the hierarchy worth having.
+
+  * NO POSTER AVAILABLE? Emit a text-only card — title link, caption, duration.
+    Never emit an <img> whose src does not resolve, and never fall back to
+    embedding the video to compensate for a missing thumbnail.
+  * Generate missing posters BEFORE editing any page, the same way the Level 5
+    pages do it: ffmpeg, a few seconds in, longest side 1600px, quality ~85, to
+    {POSTER_DIR}/{sha256}.jpg. Skip when the file already exists. Skip entirely
+    when there is no local media to extract a frame from — a gitignored corpus
+    on a fresh clone will have many of these, and that is normal.
+  * Every card carries the CID as a data-cid attribute so the content identity
+    travels with the placement. A later pass that decides inline players are
+    wanted somewhere can act on that attribute without re-deriving anything.
+
+=== THE LINK TARGET ===
+
+Clicking a card goes to that video's own Videos page — the Level 5 page recorded
+on the entry as video_page. Derive the site-relative URL the same way Stage 5
+does: strip the {DOCS_DIR} prefix, drop the .mdx suffix, keep the leading "/",
+never include /docs and never a domain. Confirm against the url_path in
+{PAGES_CSV}; where they disagree, {PAGES_CSV} wins.
+
+A video with no video_page cannot be placed — there is nowhere for the click to
+land, and the card would be a dead end offering footage a visitor cannot reach.
+Skip it and report it.
+
+=== WHERE ON THE PAGE (the bottom, in a marked block) ===
+
+The cards go at the BOTTOM of the page, inside a generated block delimited by
+MDX comment markers:
+
+    {/* CK_PLACED_VIDEOS_START — generated, do not hand-edit */}
+    ## Video Evidence
+    ... cards ...
+    {/* CK_PLACED_VIDEOS_END */}
+
+Rules for the block:
+
+  * The marker name is CK_PLACED_VIDEOS. The images pipeline owns
+    CK_PLACED_IMAGES on these same topic pages. A page may legitimately carry
+    both blocks. NEVER read, rewrite, reorder, or delete the images pipeline's
+    block — treat everything between its markers as foreign territory, exactly
+    as the CSS blocks are treated.
+  * Bottom placement is deliberate. The prose above was written by hand or by
+    other prompts and must not be reflowed, re-sectioned, or interrupted.
+    Appending is the only edit safe to repeat thousands of times.
+  * The block is regenerated wholesale on every run: everything between OUR
+    markers is replaced, everything outside them stays byte-identical. That is
+    what makes the stage idempotent.
+  * If our markers are absent, the block is appended at end of file. If they are
+    present, it is replaced in place — it stays wherever a human moved it. If
+    both blocks exist, ours goes after theirs on first write.
+  * A page whose placement list comes out empty gets its block REMOVED, not left
+    stale.
+  * Never insert the block into a page under {VIDEOS_L2_DIR} (that Level 2 is
+    the hierarchy itself), never under {DOCS_DIR}/Photos (the images pipeline's
+    output), and never into {THIS_DIR} or any planning file.
+  * MDX gotcha: comments must be {/* ... */}. An HTML <!-- --> comment fails the
+    MDX compile and breaks the deploy.
+
+=== NO DUPLICATES ===
+
+A video already visible on a page is not placed again. Before building a page's
+card list, read the page and drop any video whose cid (in either CIDv0 or base32
+v1 form) or sha256 already appears anywhere in the file's text — that covers
+existing inline players, IPFS embeds, iframe embeds, and anything a previous run
+placed outside the markers. The check runs against the page text with OUR marked
+block stripped out, so the block's own contents never suppress their own
+regeneration. Stage 5 owns the linking of anything already embedded; this stage
+must not double it up with a card.
+
+=== PER-PAGE LOAD ===
+
+Stage 13 aims at a ceiling of six videos per page but does not always land it.
+Cap the block at SIX cards, keep the strongest (Stage 13 emits them best-first;
+preserve YAML order), and report the overflow so the hierarchy pass can split
+the page or drop the weak matches. Count videos already embedded on the page
+against the cap.
+
+=== UNPINNED AND MISSING CIDs ===
+
+A card is a link, not a player, so a video with an unpinned or empty cid still
+produces a WORKING card — the click lands on the Level 5 page, which is where
+the honest "media pending" note already lives. Place it, and count it, and
+report the number, but do not suppress the card: the write-up and the sources
+are still worth reaching. Never let a card imply the footage is watchable when
+the Level 5 page will say it is pending.
+
+=== THE EXCLUSION GATE APPLIES HERE TOO ===
+
+A video whose cid or sha256 is in {EXCLUDE_FILE} is never placed, whatever the
+YAML says, and any existing placement of it is removed by the block
+regeneration. The gate is checked in this stage against the identity, not
+inherited on trust from whatever wrote the YAML. Removing a card does not
+unpublish the footage — see the exclusion knowledge above; IPFS publication is
+not reversible, which is why exclusion must precede pinning.
+
+=== THE CAPTION, AND SAFE WRITING ===
+
+Each card gets a one-line caption so a reader knows what they are looking at
+before they click. Build it from the entry's title and ai_description — first
+sentence, trimmed — and, when the footage's point is something a person SAYS,
+name the speaker and attribute it ("Candace Owens sets out a rigged-microphone
+theory"), never assert it.
+
+The caption is published text, so every safe-writing rule in WRITING THE
+WRITE-UP binds it: no claim that a person knew anything beforehand, no claim of
+immoral or illegal conduct in the site's own voice, every accusation attributed
+to the speaker who made it, attribution language for anything contested, and the
+word "defamation" never appears. An ai_description or a title that fails those
+rules is rewritten for the caption, and the discrepancy is recorded in
+{FINDINGS_FILE}.
+
+Captions are generated text and are regenerated with the block. Nothing a human
+writes inside the markers survives — that is the cost of a block that
+regenerates, and it is why hand-written commentary about a video belongs above
+the markers or on the video's own Videos page.
+
+============================
 STAGE 1 — SETUP AND READ
 ============================
 
@@ -566,7 +759,7 @@ STAGE 1 — SETUP AND READ
   {VIDEO_MANIFEST}.
 * Parse the YAML into an index: every node with depth, parent, _key, title,
   site bindings; every video with cid, ipfs_pinned, sha256, file_path,
-  sidecars, on_pages.
+  sidecars, video_page, on_pages, should_be_on_pages.
 * Inventory the existing pages under {VIDEOS_L2_DIR}: for each, extract
   ck_node_key / ck_video_cid / ck_video_sha256 from frontmatter. Build the
   existing-page map. Mark overview.mdx and
@@ -582,6 +775,7 @@ Layout guidelines lines: N
 YAML nodes: N level_3 / N level_4 / N level_5   videos: N unique cid
 Playable now: N (cid + pinned)   unpinned: N   no cid: N   third-party: N
 Existing pages found: N cluster / N video / 2 protected
+should_be_on_pages: N videos planned onto N topic pages (N placements)
 ============================
 
 ============================
@@ -754,6 +948,79 @@ Pre-existing links left intact: N (list)
 ============================
 
 ============================
+STAGE 6 — PLACE THE SHOULD_BE_ON_PAGES VIDEOS ONTO THEIR TOPIC PAGES
+============================
+
+Stage 5 wired up the videos that were already embedded. This stage places the
+ones that are not. It is the stage that makes the YAML's plan real: every video
+the hierarchy says belongs on a topic page gets a card on that page, linked
+through to its own Videos page. See KNOWLEDGE — SHOULD_BE_ON_PAGES for the card
+format, the poster resolution, the link derivation, the block markers, the
+dedupe rule, the per-page cap, and the caption rules; follow it exactly.
+
+By this stage every video page under {VIDEOS_L2_DIR} exists (Stage 3 wrote them)
+and {PAGES_CSV} is current (Stage 4), so both the link targets and their URLs
+are real.
+
+Build the plan first, working from the YAML index:
+
+* Walk every video entry. Skip any whose cid or sha256 is in {EXCLUDE_FILE}.
+  Skip any with an empty should_be_on_pages. Skip any with no video_page, and
+  report it — a card with nowhere to land is not placed.
+* Resolve each entry's poster: use {POSTER_DIR}/{sha256}.jpg when it exists;
+  extract it now when there is local media to extract from; otherwise mark the
+  card text-only. Do every extraction BEFORE any page is edited, so no page can
+  end up referencing a poster that was never written.
+* Derive the video-page URL from video_page and confirm it against {PAGES_CSV}.
+* Re-stat every should_be_on_pages path. Drop and report any that no longer
+  resolves, any under {VIDEOS_L2_DIR}, and any under {DOCS_DIR}/Photos.
+* Invert into a map: host page -> ordered list of
+  (cid, sha256, poster src or none, video-page URL, title, caption, duration,
+  source note), YAML order preserved.
+
+Then, for each host page in that map (partition across up to {MAX_AGENTS} agents
+by host page; a host page is never split across agents):
+
+* Read the page in. Strip OUR CK_PLACED_VIDEOS block from the text you test
+  against — and leave any CK_PLACED_IMAGES block completely alone — then drop
+  from the page's list every video whose cid (either form) or sha256 already
+  appears in that stripped text. Those are already on the page and Stage 5 owns
+  their linking.
+* Apply the per-page cap of six, counting what is already embedded, keeping YAML
+  order. Report the overflow.
+* Emit the block: a "## Video Evidence" heading and one card per video — the
+  poster <img> wrapped in an anchor to the video's Videos URL, carrying
+  data-cid, an alt drawn from the title, loading="lazy" — plus the linked title,
+  the caption line, and the duration/source note. Text-only cards for entries
+  with no poster.
+* Replace the block between our markers if they exist; append it at end of file
+  if they do not; remove it entirely if the page's list came out empty. Keep the
+  page byte-identical everywhere outside our markers.
+* Do not modify pages under {VIDEOS_L2_DIR} or {DOCS_DIR}/Photos, and do not
+  modify {HIERARCHY_FILE}.
+
+The cards need one stylesheet block — a marked CK_PLACED_VIDEOS region in
+{SITE_DIR}/internals/src/css/custom.css, alongside our CK_VIDEO_LAYOUT block and
+the images pipeline's CK_EVIDENCE_LAYOUT and CK_PLACED_IMAGES blocks. Write it
+once, regenerate it in place on later runs, and never touch a byte of that file
+outside our own two marked regions. Writing into the images pipeline's blocks
+would silently destroy the image layout site-wide, and its next run would
+destroy ours back.
+
+Output to stdout:
+============================
+STAGE 6 COMPLETE
+Videos with should_be_on_pages: N   placements planned: N over N pages
+Posters: N reused / N extracted now / N text-only (no local media)
+Pages edited: N   blocks created: N   blocks replaced: N   blocks removed: N
+Videos placed: N   skipped as already embedded: N
+Cards whose video has no playable cid (link works, media pending): N
+Over the 6-per-page cap: N (list of page -> overflow count)
+Missing video_page: N   should_be_on_pages paths that no longer exist: N (list)
+CK_PLACED_IMAGES blocks touched: 0
+============================
+
+============================
 OUTPUT SANITIZATION — NO INVISIBLE UNICODE, EVER (SECURITY RULE)
 ============================
 
@@ -780,13 +1047,13 @@ hard-fail if any code point remains. (The invisible set is enumerated in
 {HIERARCHY_PROMPT} — same list applies here.)
 
 ============================
-STAGE 6 — BUILD, VERIFY, REPORT
+STAGE 7 — BUILD, VERIFY, REPORT
 ============================
 
 * Run the Docusaurus build: cd {SITE_DIR} && npm run build. It must pass.
   Broken links and MDX compile errors (e.g. a stray <!-- --> comment) surface
-  here — fix and rebuild until green. The host-page links added in Stage 5
-  are internal links, so any bad target fails the build here.
+  here — fix and rebuild until green. The host-page links added in Stages 5 and
+  6 are internal links, so any bad target fails the build here.
 * Spot-check 10 video pages across different partitions: frontmatter fields
   present, hide_table_of_contents true, ck_video_cid set, the player's src is a
   public IPFS gateway URL built from that cid, no autoplay and no loop,
@@ -810,26 +1077,40 @@ STAGE 6 — BUILD, VERIFY, REPORT
   different sections, open the host page, confirm the link sits beneath the
   matched embed and points at that video's derived Videos URL, confirm no
   sibling embed was touched, and confirm the URL resolves on disk.
+* Spot-check the Stage 6 placements: pick 10 pages that gained a block, confirm
+  the block sits between the CK_PLACED_VIDEOS markers at the bottom, confirm
+  every poster src resolves to a file under {POSTER_DIR}, confirm every anchor
+  href resolves to a real video page on disk, confirm no video appears both as
+  a card and as an embed on the same page, and confirm the page above the
+  markers is byte-identical to before the run.
+* Confirm every CK_PLACED_IMAGES block on every page edited this run is
+  byte-identical to before the run. The images pipeline's blocks are foreign
+  territory and a single edit to one is a failure of the run.
 * Confirm {PAGES_CSV} row count change matches pages created.
 * Run the invisible-Unicode scan over everything written this run (host pages
-  edited in Stage 5 included).
-* Confirm nothing outside {VIDEOS_L2_DIR}, {POSTER_DIR}, {PAGES_CSV}, and the
-  Stage 5 host pages (added links only) was modified. sidebars.ts untouched.
+  edited in Stages 5 and 6 included).
+* Confirm nothing outside {VIDEOS_L2_DIR}, {POSTER_DIR}, {PAGES_CSV}, the
+  Stage 5 host pages (added links only), the Stage 6 host pages (our marked
+  block only), and our marked CSS regions was modified. sidebars.ts untouched.
   {DOCS_DIR}/Photos untouched. {SITE_DIR}/static/img/evidence untouched.
-* Confirm the CK_EVIDENCE_LAYOUT block in custom.css is intact — the images
-  pipeline's layout must be exactly as it was.
+* Confirm the CK_EVIDENCE_LAYOUT and CK_PLACED_IMAGES blocks in custom.css are
+  intact — the images pipeline's layout must be exactly as it was.
 
 Output to stdout:
 ============================
-STAGE 6 COMPLETE — FINAL REPORT
+STAGE 7 COMPLETE — FINAL REPORT
 Build: PASS/FAIL
 Pages now under /Videos: N cluster + N video = N total
 Videos published: N of N in YAML (N media pending, N excluded)
 Playback check: N/5 played in a clean profile
 Host pages linked: N   video embeds given links: N
-Spot-checks: video pages N/10 pass, cluster pages N/5 pass, host links N/10 pass
+Topic pages carrying placed video cards: N   videos placed: N
+Publishing worklist remaining (planned but not placed): N (with reasons)
+Spot-checks: video pages N/10 pass, cluster pages N/5 pass, host links N/10 pass,
+             placement blocks N/10 pass
 pages.csv in sync: yes   sidebars.ts untouched: yes   invisible scan: clean
 Photos section untouched: yes   CK_EVIDENCE_LAYOUT intact: yes
+CK_PLACED_IMAGES blocks unchanged: yes
 ============================
 
 ============================
@@ -845,15 +1126,21 @@ HARD RULES
   knowledge base for understanding the entire assassination and every write-up
   is grounded in it.
 * This prompt writes ONLY: pages under {VIDEOS_L2_DIR}, posters under
-  {POSTER_DIR}, the marked TOC section of {VIDEOS_L2_PAGE}, a shared layout
-  component/CSS under {SITE_DIR}/internals/src/ if used, {PAGES_CSV} rows, and
-  — in Stage 5 only — links beside already-present video embeds on the host
-  pages named in each video's on_pages. It never modifies {HIERARCHY_FILE}'s
-  data (read-only input), never touches {SITE_DIR}/sidebars.ts, and never
-  writes planning notes into the site or Docusaurus pages into {THIS_DIR}.
+  {POSTER_DIR}, the marked TOC section of {VIDEOS_L2_PAGE}, our own marked
+  regions of the shared CSS under {SITE_DIR}/internals/src/, {PAGES_CSV} rows,
+  and — on the topic pages named in each video's on_pages /
+  should_be_on_pages — links beside already-present video embeds (Stage 5) and
+  the marked CK_PLACED_VIDEOS block (Stage 6). It never modifies
+  {HIERARCHY_FILE}'s data (read-only input), never touches
+  {SITE_DIR}/sidebars.ts, and never writes planning notes into the site or
+  Docusaurus pages into {THIS_DIR}.
 * Never write anything under {IMAGE_PLANNING_DIR}, {ROOT_DIR}/images,
   {DOCS_DIR}/Photos, or {SITE_DIR}/static/img/evidence. Never write into the
-  CK_EVIDENCE_LAYOUT block in custom.css — ours is CK_VIDEO_LAYOUT.
+  CK_EVIDENCE_LAYOUT or CK_PLACED_IMAGES blocks in custom.css, and never into a
+  CK_PLACED_IMAGES block on a topic page — ours are CK_VIDEO_LAYOUT and
+  CK_PLACED_VIDEOS. Both pipelines edit the same topic pages and the same CSS
+  file; each owns only its own markers and a single crossing destroys the other
+  pipeline's output site-wide.
 * NEVER copy video bytes into {SITE_DIR}/static. Video plays from a public IPFS
   gateway, addressed by cid. Posters are the only local media.
 * Nothing is ever PINNED by this prompt. Unpinned CIDs are reported, not fixed.
@@ -863,6 +1150,18 @@ HARD RULES
   other content, creates and deletes nothing, never double-links, never
   clobbers a pre-existing link, and never links a video to any page but its own.
   Excluded videos are skipped.
+* Stage 6 places every video the YAML's should_be_on_pages says belongs on a
+  topic page and is not already embedded there, in a regenerated block between
+  the CK_PLACED_VIDEOS markers at the BOTTOM of that page. Outside those markers
+  the page stays byte-identical — the block is the only thing this prompt may
+  add to a topic page's content. A placement is a CARD (poster thumbnail, linked
+  title, one-line attributed caption) that links to the video's own Videos page,
+  NEVER an inline player: the player lives on exactly one page and everything
+  else links to it. Each card carries its CID as data-cid. Never duplicate a
+  video already on the page, never exceed six per page, never place an excluded
+  identity, and never place a video that has no video_page to land on.
+  should_be_on_pages is the complete desired state and a superset of on_pages —
+  not a list of extras.
 * A cluster node whose subtree resolves to exactly ONE video page is bypassed
   in navigation: parents and peers link straight to that video page, never to
   the cluster page, and the video page's back link points at the nearest
@@ -957,6 +1256,14 @@ from, so no knowledge is lost even where a stage above already encodes it.
   important and must be read into the context window at the very start of the
   run. It is the knowledge needed to understand the entire Charlie Kirk
   assassination.
+* The YAML carries a should_be_on_pages sub-hierarchy under every video, exactly
+  parallel to on_pages: a list of `- page:` mappings holding full paths from ~.
+  {HIERARCHY_PROMPT} figures out the right values and fills them in; THIS prompt
+  reads them and gets those videos onto those websites' pages. Two prompts, one
+  plan: one reasons, one publishes. The images pipeline established the split
+  and this prompt reproduces it for video, with the one deliberate difference
+  that a placed video is a card linking to its own page rather than a second
+  player.
 * This file was converted from the images page-generation prompt on 2026-07-23.
   The differences that matter and were NOT in the images version: video plays
   from IPFS and is never copied into the site; a missing or unpinned CID means
