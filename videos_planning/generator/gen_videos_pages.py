@@ -63,7 +63,7 @@ def clean_title(s, limit=95):
     if len(s) > limit:
         cut = s[:limit].rsplit(' ', 1)[0]
         s = cut.rstrip(' ,;:-') + '…'
-    return s or 'Untitled clip'
+    return mdx_safe(s) or 'Untitled clip'
 
 def short_label(s, limit=42):
     s = clean_title(s, limit * 3)
@@ -93,15 +93,22 @@ def mint_key(title, seed):
     return 'Vid_' + '_'.join(picked) + '_' + str(seed)[:7]
 
 def esc_yaml(s):
-    return '"' + sanitize_prose(s).replace('\\', '\\\\').replace('"', '\\"') + '"'
+    s = sanitize_prose(s).replace('&lt;', '<').replace('&#123;', '{').replace('&#125;', '}')
+    return '"' + s.replace('\\', '\\\\').replace('"', '\\"') + '"'
 
 def first_sentences(s, n=2, limit=300):
     s = sanitize_prose(s or '')
     parts = re.split(r'(?<=[.!?])\s+', s)
-    out = ' '.join(parts[:n]).strip()
+    out = mdx_safe(' '.join(parts[:n]).strip())
     if len(out) > limit:
         out = out[:limit].rsplit(' ', 1)[0].rstrip(' ,;:-') + '…'
     return out
+
+def mdx_safe(s):
+    """YAML-derived prose is plain text going into MDX. `<` starts a JSX tag and
+    `{` starts an expression, so both must be escaped or the page will not
+    compile. Everything the generator emits as markup is added AFTER this."""
+    return (s or '').replace('<', '&lt;').replace('{', '&#123;').replace('}', '&#125;')
 
 def rel_url(path):
     return '/' + os.path.relpath(path, DOCS)[:-4].replace(os.sep, '/')
@@ -132,7 +139,7 @@ class Node:
     def __init__(self, lvl, raw, parent):
         self.lvl, self.raw, self.parent = lvl, raw, parent
         self.key   = raw.get('_key')
-        self.title = sanitize_prose(raw.get('title') or self.key)
+        self.title = mdx_safe(sanitize_prose(raw.get('title') or self.key))
         self.kids, self.vids = [], []
         self.rec = 0
         self.bypass = False
@@ -401,7 +408,7 @@ def page_label(path):
     if not t:
         m = re.search(r'^title:\s*(.+)$', open(path, encoding='utf-8').read()[:2000], re.M)
         t = m.group(1).strip().strip('\'"') if m else ''
-    return sanitize_prose(t) or rel_url(path)
+    return mdx_safe(sanitize_prose(t)) or rel_url(path)
 
 def existing_fm(path):
     """Frontmatter of an existing page, or {}."""
@@ -436,7 +443,7 @@ def baseline_writeup(r):
     out = ['{/* CK_PROSE_BASELINE */}', '']
     out.append('## What This Video Shows')
     out.append('')
-    desc = sanitize_block(v.get('ai_description') or '').strip()
+    desc = mdx_safe(sanitize_block(v.get('ai_description') or '').strip())
     if desc:
         out.append(desc)
     else:
@@ -448,7 +455,7 @@ def baseline_writeup(r):
     if d:
         src_bits.append(f'Running time {d}.')
     plat = (v.get('source_platform') or '').lower()
-    auth = sanitize_prose(v.get('source_author') or '')
+    auth = mdx_safe(sanitize_prose(v.get('source_author') or ''))
     url = (v.get('source_url') or '').strip()
     if plat == 'x' and auth:
         src_bits.append(f'Captured from a post by {auth} on X.')
@@ -466,21 +473,21 @@ def baseline_writeup(r):
         out.append(' '.join(src_bits))
         out.append('')
 
-    people = sanitize_block(v.get('people_seen') or '').strip()
+    people = mdx_safe(sanitize_block(v.get('people_seen') or '').strip())
     if people and people.lower() not in ('no people appear.', 'none.', 'n/a'):
         out.append('### Who Appears')
         out.append('')
         out.append(people)
         out.append('')
 
-    ost = sanitize_block(v.get('onscreen_text') or '').strip()
+    ost = mdx_safe(sanitize_block(v.get('onscreen_text') or '').strip())
     if ost and ost.lower() not in ('none.', 'n/a', 'no on-screen text.'):
         out.append('### On-Screen Text')
         out.append('')
         out.append(ost)
         out.append('')
 
-    tl = sanitize_block(v.get('shot_timeline') or '').strip()
+    tl = mdx_safe(sanitize_block(v.get('shot_timeline') or '').strip())
     if tl:
         out.append('### Shot By Shot')
         out.append('')
