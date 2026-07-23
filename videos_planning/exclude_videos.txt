@@ -1,0 +1,30 @@
+# exclude_videos.txt — the never-publish, never-pin list for the VIDEO pipeline.
+#
+# One identifier per line, either an IPFS CID (the "Qm..." CIDv0 form) or a
+# sha256 hex digest of the media file. Blank lines and lines beginning with #
+# are ignored. Everything after a # on a line is a comment.
+#
+# WHAT THIS FILE DOES
+#
+#   * p_update_video_hierarchy.md Stage 13 emits `should_be_on_pages: []` for
+#     any entry listed here, unconditionally, however good the topical match is.
+#   * The page generator (generator/gen_videos_pages.py) must not publish a
+#     Level 5 video page for a listed entry, and must delete one that already
+#     exists.
+#   * Any future IPFS pinning job MUST filter every entry in this file out
+#     before it pins anything. Pinning publishes content to the public IPFS
+#     network and is irreversible in practice.
+#
+# WHAT BELONGS HERE
+#
+#   * Footage that continuously catches uninvolved bystanders' faces or voices.
+#   * Footage whose speaker accuses a living person of a crime in a way that
+#     cannot be safely framed on a public page.
+#   * Anything the investigation holds as private working material rather than
+#     as publishable evidence.
+#
+# This file is the gate, not a comment. An entry here is removed from the
+# published site; it is NOT removed from videos/videos.yaml, which remains the
+# complete private record.
+#
+# Seeded empty 2026-07-23 by p_update_video_hierarchy.md Stage 1.
