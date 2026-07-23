@@ -345,6 +345,52 @@
 }
 /* CK_PLACED_IMAGES_END */
 
+/* CK_NAV_GALLERY_START */
+/* Owned by site/inject_nav_gallery.py. The navigation gallery injected onto
+   every non-root overview page under Photos/ and Videos/: below the in-body
+   table of contents and directly above "Related Areas". Two columns — one tile
+   on the left, one on the right — each filling its half of the main column at
+   full width. Right sidebar is off on these pages (hide_table_of_contents:true)
+   so the grid spans the whole main area. Each tile keeps the media's real
+   aspect ratio (set inline from the actual pixels) and links to that leaf page;
+   tiles cascade down the page until every leaf in the subtree is shown. */
+.ck-nav-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin: 1.5rem 0 2rem 0;
+  clear: both;
+  align-items: start;
+}
+.ck-nav-gallery .ck-nav-tile {
+  display: block;
+  line-height: 0;
+  background: var(--ifm-background-surface-color, #fff);
+  box-shadow: 0 2px 14px rgba(0, 0, 0, 0.35);
+  overflow: hidden;
+  transition: box-shadow 0.15s ease, transform 0.15s ease;
+}
+.ck-nav-gallery .ck-nav-tile:hover,
+.ck-nav-gallery .ck-nav-tile:focus {
+  box-shadow: 0 6px 22px rgba(0, 0, 0, 0.55);
+  transform: translateY(-2px);
+}
+.ck-nav-gallery .ck-nav-tile img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  background: var(--ifm-background-surface-color, #fff);
+}
+/* Below the mobile breakpoint the two columns stack into one. */
+@media (max-width: 996px) {
+  .ck-nav-gallery {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
+/* CK_NAV_GALLERY_END */
+
 /* CK_VIDEO_LAYOUT_START */
 /* Owned by videos_planning/generator/gen_videos_pages.py. Implements
    videos_planning/layout_guidelines.txt. Do not hand-edit; do not write into
