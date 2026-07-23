@@ -143,6 +143,10 @@ Section 4(c) triggers automatic transfer to a congressional commission if "evide
 ### 12. No Conflict of Interest Provisions for Trusted Investigators (Law 4)
 The named investigators face no financial disclosure requirements, recusal standards, or conflict-of-interest rules. **Recommendation:** Require annual financial disclosures and recusal from matters where a personal financial interest exists, modeled on 5 U.S.C. App. (Ethics in Government Act).
 
+{/* CK_AUTHOR_CREDIT */}
+
+*This website's author is [@HolonCitizen](https://x.com/HolonCitizen) on X and [YouTube/@HolonCitizen](https://www.youtube.com/@HolonCitizen). Follow me there.*
+
 ## Related Areas
 
 <div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',

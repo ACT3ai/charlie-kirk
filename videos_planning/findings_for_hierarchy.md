@@ -733,3 +733,57 @@ p_update_video_hierarchy.md, not fixed here:
 * Media pending (11): 9 no-media, 1 no-cid, 1 not-video — rendered with honest
   "media pending" notes, no dead players.
 * Large nodes to review for needs_split: Vid_UVU_Venue (99 own / 103 recursive).
+
+================================================================
+p_next_buttons.md RUN — 2026-07-23
+================================================================
+
+Carried out videos_planning/p_next_buttons.md. Precondition gate PASSED
+(0 image file_paths, 0 "This image" prose, 383/400 = 95% CID coverage).
+
+WHAT WAS DONE
+  * Extended generator/gen_videos_pages.py to (a) compute one global
+    document-pre-order "Next Video" chain over the 369 published video pages,
+    looping last->first, and (b) render a dark-navy (#0d2b6b) "Next Video" pill
+    with white label + white right chevron directly under each player, styled by
+    a new ck-video-next rule inside the CK_VIDEO_LAYOUT block of custom.css.
+  * Added generator/set_next_video.py — surgically writes next_video into
+    videos/videos.yaml from the generator's manifest (generated_pages.json).
+    Diff confined to next_video lines only (0 non-next_video lines changed);
+    357 shot_timeline block scalars left byte-identical.
+  * Build PASSED. Traversal via the actual rendered hrefs is a single cycle of
+    length 369 covering every page and returning to start. Cluster-boundary,
+    wrap, and media-pending cases all verified. Nothing pinned as a side effect.
+
+FINDINGS FOR A LATER HIERARCHY / SITE PASS
+  1. video_page DRIFT (bookkeeping, not a page problem). Every one of the 400
+     YAML entries currently carries video_page: "" even though 369 Level 5 pages
+     exist on disk and are correct. bind_video_pages.py (Stage 12) + the emit
+     step that copies video_page.json into the YAML have not been re-run since
+     the last hierarchy rebuild blanked it. This prompt therefore took the
+     page->video mapping from the generator's own manifest (the authority that
+     mints the pages), not from video_page. ACTION: run p_yaml_to_site.md /
+     bind_video_pages so video_page is repopulated; next_video already points at
+     the right pages regardless.
+  2. One S video has NO cid and NO sha256 — Vid_2071736376215920842_Extracted_x
+     (an audio-only .mp3 extraction, file_path
+     ~/BGit/Bryan_git/charlie-kirk/videos/2071736376215920842_extracted.mp3).
+     next_video was bound to it by file_path fallback. Consider assigning it a
+     CID/sha on a later corpus pass.
+  3. 11 media-pending pages (no-media 9, no-cid 1, not-video 1): each keeps its
+     honest "media pending" note and STILL carries a working Next Video button.
+     They are real destinations in the loop.
+  4. 1 CID whose bytes are a JPEG, player correctly withheld:
+     Vid_Microphone_Footage_Embedded_Mic — CID
+     QmedrrPge7Bj8vUN6xxq1Zfz1CgwuY6xGAtWFFbU4tmg4R resolves to image/jpeg. Page
+     is media-pending "not-video". Needs a correct video CID on a later pass.
+  5. The old CK_NEXT_BUTTON_START/END marker wrapper (from an earlier button
+     design) was retired: the button is now an integral part of the full page
+     the generator rewrites each run, matching how the player and back button
+     are emitted. No page carries the stale markers and none has a double button.
+  6. A concurrent external repo process ("Bryan 26 Tower") was editing many
+     unrelated pages (adding {/* CK_AUTHOR_CREDIT */} author-credit blocks under
+     Photos/, After/, Topics3/, etc.) DURING this run. Those edits are not from
+     this pipeline; this run only wrote videos.yaml (next_video), site/docs/Videos/**,
+     the CK_VIDEO_LAYOUT block of custom.css, video_posters, the Videos
+     overview TOC, and pages.csv video rows.

@@ -101,6 +101,37 @@ def esc_yaml(s):
     s = sanitize_prose(s).replace('&lt;', '<').replace('&#123;', '{').replace('&#125;', '}')
     return '"' + s.replace('\\', '\\\\').replace('"', '\\"') + '"'
 
+def _decode_yaml_scalar(v):
+    """Decode a frontmatter YAML scalar back to its literal string value.
+
+    This is the inverse of esc_yaml(). It MUST be used wherever a title is read
+    back out of an existing page, because that title is later re-emitted through
+    esc_yaml(). Without decoding, a double-quoted title keeps its \\" escapes,
+    esc_yaml() escapes them again, and every regeneration doubles the backslash
+    count — the runaway-backslash title bug. Decoding makes the round-trip
+    idempotent. Unquoted values (true / CIDs / plain words) pass through
+    unchanged."""
+    v = v.strip()
+    if len(v) >= 2 and v[0] == '"' and v[-1] == '"':
+        s = v[1:-1]
+        out = []
+        i = 0
+        while i < len(s):
+            c = s[i]
+            if c == '\\' and i + 1 < len(s):
+                nxt = s[i + 1]
+                if nxt in '\\"':
+                    out.append(nxt); i += 2; continue
+                if nxt == 'n':
+                    out.append('\n'); i += 2; continue
+                if nxt == 't':
+                    out.append('\t'); i += 2; continue
+            out.append(c); i += 1
+        return ''.join(out)
+    if len(v) >= 2 and v[0] == "'" and v[-1] == "'":
+        return v[1:-1].replace("''", "'")
+    return v
+
 def first_sentences(s, n=2, limit=300):
     s = sanitize_prose(s or '')
     parts = re.split(r'(?<=[.!?])\s+', s)
@@ -296,6 +327,22 @@ for r in videos:
     r['key'] = k
     r['page'] = os.path.join(r['owner'].dirpath, k + '.mdx')
     r['url'] = rel_url(r['page'])
+
+# ---------------------------------------------- global "Next Video" chain (loop)
+# One flat sequence S over the WHOLE hierarchy in document pre-order: `videos` is
+# already in that order (a node's own videos before its children, children in
+# YAML order, first-occurrence-wins dedup). next_url is the successor in S and
+# the last video wraps to the first, so the walk never dead-ends. This is the
+# authority for both the button href and the next_video value written back into
+# videos.yaml (carries out videos_planning/p_next_buttons.md).
+def _tilde(p):
+    h = os.path.expanduser('~')
+    return '~' + p[len(h):] if p and p.startswith(h) else (p or '')
+NV = len(videos)
+for i, r in enumerate(videos):
+    nxt = videos[(i + 1) % NV] if NV else None
+    r['next_url'] = nxt['url'] if nxt else ''
+    r['next_page_tilde'] = _tilde(nxt['page']) if nxt else ''
 
 # ------------------------------------------------------------- bypass set
 def resolve_single(n):
@@ -527,7 +574,7 @@ def page_label(path):
     t = PAGE_TITLES.get(path, '')
     if not t:
         m = re.search(r'^title:\s*(.+)$', open(path, encoding='utf-8').read()[:2000], re.M)
-        t = m.group(1).strip().strip('\'"') if m else ''
+        t = _decode_yaml_scalar(m.group(1)) if m else ''
     return mdx_safe(sanitize_prose(t)) or rel_url(path)
 
 def existing_fm(path):
@@ -542,7 +589,7 @@ def existing_fm(path):
     for line in m.group(1).splitlines():
         km = re.match(r'^([A-Za-z0-9_]+):\s*(.*)$', line)
         if km:
-            out[km.group(1)] = km.group(2).strip().strip('"')
+            out[km.group(1)] = _decode_yaml_scalar(km.group(2))
     return out
 
 def extract_prose(path, marker='CK_PROSE'):
@@ -678,6 +725,7 @@ def write_video_page(r):
           '---', '']
     body = [GEN_NOTE, '', '# ' + title, '',
             player_block(r), '',
+            next_video_button(r), '',
             '<div className="ck-video-text">', '',
             '{/* CK_PROSE_START */}', '', prose, '', '{/* CK_PROSE_END */}', '',
             nav_block_video(r), '',
@@ -700,6 +748,24 @@ def _vt(r, limit):
 def _dur_suffix(r):
     d = dur_human(r['v'].get('duration'))
     return f' ({d})' if d else ''
+
+# The "Next Video" button (videos_planning/p_next_buttons.md). A dark-navy pill
+# with a white label and a white right chevron, rendered directly under the
+# player. Its href is the site-relative url of this video's next_video — the next
+# clip in one global depth-first walk of the whole hierarchy, looping the last
+# clip back to the first. Styling lives once in the CK_VIDEO_LAYOUT CSS block, so
+# the pill inherits the player wrapper's float and drops beneath the clip.
+NEXT_CHEVRON = ('<svg width="15" height="15" viewBox="0 0 24 24" fill="none" '
+                'stroke="#ffffff" strokeWidth="3" strokeLinecap="round" '
+                'strokeLinejoin="round" aria-hidden="true">'
+                '<path d="M9 6l6 6-6 6" /></svg>')
+
+def next_video_button(r):
+    url = r.get('next_url') or ''
+    if not url:
+        return ''
+    return (f'<a className="ck-video-next" href="{url}" '
+            f'aria-label="Next video">Next Video {NEXT_CHEVRON}</a>')
 
 def back_button(url, label):
     style = ("style={{display:'inline-block', marginBottom:'1rem', "
@@ -987,6 +1053,54 @@ CSS_VIDEO = """/* CK_VIDEO_LAYOUT_START */
   .ck-video-wrap--wrapped .ck-video-media {
     width: 100%;
     height: auto;
+  }
+}
+/* The "Next Video" button (videos_planning/p_next_buttons.md) sits directly
+   under the player and walks the whole corpus one clip at a time, looping the
+   last video back to the first. Dark navy fill, white label, white right
+   chevron. It is an immediate sibling of the player wrapper, so it inherits the
+   wrapper's layout: it clears beneath a floated (vertical) player aligned to the
+   clip's left edge, and drops full-width under a landscape / media-pending
+   player. Its ~4px pill radius never inherits the player's border-radius:0. */
+.ck-video-next {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  clear: both;
+  margin: 0 0 1.25rem 0;
+  padding: 0.45rem 1rem;
+  background: #0d2b6b;
+  color: #fff !important;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+.ck-video-next:hover,
+.ck-video-next:focus {
+  background: #08205a;
+  color: #fff !important;
+  text-decoration: none;
+}
+.ck-video-next:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+}
+.ck-video-next svg {
+  display: inline-block;
+  flex: none;
+}
+.ck-video-wrap--wrapped + .ck-video-next {
+  float: left;
+  clear: left;
+  margin: 0 0 1.25rem 0;
+}
+@media (max-width: 996px) {
+  .ck-video-wrap--wrapped + .ck-video-next {
+    float: none;
+    clear: both;
+    margin: 1rem 0;
   }
 }
 /* CK_VIDEO_LAYOUT_END */"""

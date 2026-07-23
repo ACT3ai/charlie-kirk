@@ -1059,6 +1059,10 @@
 - The question is not whether there was a conspiracy. The question is: **will Congress force the truth out?**
 - Support all four laws. Demand disclosure. Demand investigation. Demand accountability.
 
+{/* CK_AUTHOR_CREDIT */}
+
+*This website's author is [@HolonCitizen](https://x.com/HolonCitizen) on X and [YouTube/@HolonCitizen](https://www.youtube.com/@HolonCitizen). Follow me there.*
+
 ## Related Areas
 
 <div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',

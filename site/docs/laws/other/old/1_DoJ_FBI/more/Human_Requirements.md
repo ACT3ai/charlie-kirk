@@ -52,6 +52,10 @@ critical investigative information from the public.
 
 [Back to README](/laws) | [Law Text](/laws/other/old/DoJ_FBI/Law_1_DoJ_FBI) | [Legal Notes](/laws/other/old/DoJ_FBI/more/Notes_1_DoJ_FBI) | [Output Analysis](/laws/other/old/DoJ_FBI/more/Output_Analysis)
 
+{/* CK_AUTHOR_CREDIT */}
+
+*This website's author is [@HolonCitizen](https://x.com/HolonCitizen) on X and [YouTube/@HolonCitizen](https://www.youtube.com/@HolonCitizen). Follow me there.*
+
 ## Related Areas
 
 <div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',

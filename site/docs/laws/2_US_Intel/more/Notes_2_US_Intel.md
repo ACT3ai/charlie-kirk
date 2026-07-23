@@ -50,6 +50,10 @@ The dual-track approach:
 - Epstein Act compliance: https://thehill.com/homenews/house/5744386-doj-epstein-files-transparency-act/
 - [Charlie Kirk](/People/charlie-kirk) 175 Critical Items: https://github.com/BryanStarbuck/Charlie_Kirk_175_Critical_To_Expose
 
+{/* CK_AUTHOR_CREDIT */}
+
+*This website's author is [@HolonCitizen](https://x.com/HolonCitizen) on X and [YouTube/@HolonCitizen](https://www.youtube.com/@HolonCitizen). Follow me there.*
+
 ## Related Areas
 
 <div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',

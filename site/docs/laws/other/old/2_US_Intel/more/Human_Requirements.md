@@ -22,6 +22,10 @@ Law 1 covers law enforcement (DOJ/FBI). This law covers intelligence services sp
 
 See also: [Law 1 Requirements](/laws/DoJ_FBI/more/Human_Requirements) (law enforcement counterpart)
 
+{/* CK_AUTHOR_CREDIT */}
+
+*This website's author is [@HolonCitizen](https://x.com/HolonCitizen) on X and [YouTube/@HolonCitizen](https://www.youtube.com/@HolonCitizen). Follow me there.*
+
 ## Related Areas
 
 <div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',

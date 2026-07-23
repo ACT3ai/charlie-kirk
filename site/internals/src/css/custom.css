@@ -423,28 +423,54 @@
     height: auto;
   }
 }
-
-/* CK_NEXT_BUTTON_STYLE_START */
+/* The "Next Video" button (videos_planning/p_next_buttons.md) sits directly
+   under the player and walks the whole corpus one clip at a time, looping the
+   last video back to the first. Dark navy fill, white label, white right
+   chevron. It is an immediate sibling of the player wrapper, so it inherits the
+   wrapper's layout: it clears beneath a floated (vertical) player aligned to the
+   clip's left edge, and drops full-width under a landscape / media-pending
+   player. Its ~4px pill radius never inherits the player's border-radius:0. */
 .ck-video-next {
   display: inline-flex;
   align-items: center;
   gap: 0.4rem;
+  clear: both;
   margin: 0 0 1.25rem 0;
-  padding: 0.35rem 0.9rem;
+  padding: 0.45rem 1rem;
   background: #0d2b6b;
   color: #fff !important;
   border-radius: 4px;
   text-decoration: none;
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   font-weight: 600;
   line-height: 1.2;
 }
 .ck-video-next:hover,
-.ck-video-next:focus { background: #09204f; color: #fff !important; }
-.ck-video-next:focus-visible { outline: 2px solid #fff; outline-offset: 2px; }
-.ck-video-next svg { stroke: #fff; }
-/* CK_NEXT_BUTTON_STYLE_END */
-
+.ck-video-next:focus {
+  background: #08205a;
+  color: #fff !important;
+  text-decoration: none;
+}
+.ck-video-next:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+}
+.ck-video-next svg {
+  display: inline-block;
+  flex: none;
+}
+.ck-video-wrap--wrapped + .ck-video-next {
+  float: left;
+  clear: left;
+  margin: 0 0 1.25rem 0;
+}
+@media (max-width: 996px) {
+  .ck-video-wrap--wrapped + .ck-video-next {
+    float: none;
+    clear: both;
+    margin: 1rem 0;
+  }
+}
 /* CK_VIDEO_LAYOUT_END */
 
 /* CK_PLACED_VIDEOS_START */
