@@ -133,7 +133,8 @@ def child_list(node):
 
 MEDIA_ORDER = ['cid', 'ipfs_pinned', 'sha256', 'file_path', 'ai_description',
                'ai_description_file', 'ocr_file', 'transcription_file',
-               'image_page', 'on_pages', 'ipfs_url', 'also_filed_in']
+               'image_page', 'next_image', 'on_pages', 'should_be_on_pages',
+               'ipfs_url', 'also_filed_in']
 REQUIRED_SCALARS = ['cid', 'sha256', 'file_path', 'ai_description',
                     'ai_description_file', 'ocr_file', 'transcription_file', 'image_page']
 
@@ -291,16 +292,17 @@ def emit_media(im, pad):
         v = inner[k]
         if k == 'ipfs_pinned':
             out.append(f'{p2}ipfs_pinned: {"true" if v else "false"}')
-        elif k == 'on_pages':
-            # on_pages is a LIST OF {page: ...} MAPPINGS — emit as block mappings,
-            # [] when empty. Never stringify the dicts (that was the old bug).
+        elif k in ('on_pages', 'should_be_on_pages'):
+            # Both are a LIST OF {page: ...} MAPPINGS — emit as block mappings,
+            # never stringify the dicts (that was the old bug). Both are stored
+            # with an explicit [] when empty, so [] must round-trip.
             if v:
-                out.append(f'{p2}on_pages:')
+                out.append(f'{p2}{k}:')
                 for pg in v:
                     path = pg['page'] if isinstance(pg, dict) else pg
                     out.append(f'{p2}  - page: {q(path)}')
             else:
-                out.append(f'{p2}on_pages: []')
+                out.append(f'{p2}{k}: []')
         elif k == 'sha256': out.append(f'{p2}{k}: {v if v else chr(34)+chr(34)}')
         elif isinstance(v, list):
             if v: out.append(f'{p2}{k}: [{", ".join(q(x) for x in v)}]')

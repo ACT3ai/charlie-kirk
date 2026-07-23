@@ -211,7 +211,7 @@ for fp, vids in sorted(plan.items()):
             s6_removed += 1
         continue
 
-    cards = [START, '', '## Video Evidence', '',
+    cards = [START, '', '## Videos', '',
              'Footage related to this page. Each card opens that clip\'s own page, '
              'with the video, the full write-up, and its source.', '',
              '<div className="ck-placed-videos">', '']

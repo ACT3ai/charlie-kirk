@@ -825,7 +825,7 @@ The cards go at the BOTTOM of the page, inside a generated block delimited by
 MDX comment markers:
 
     {/* CK_PLACED_VIDEOS_START — generated, do not hand-edit */}
-    ## Video Evidence
+    ## Videos
     ... cards ...
     {/* CK_PLACED_VIDEOS_END */}
 
@@ -1186,7 +1186,7 @@ by host page; a host page is never split across agents):
   their linking.
 * Apply the per-page cap of six, counting what is already embedded, keeping YAML
   order. Report the overflow.
-* Emit the block: a "## Video Evidence" heading and one card per video — the
+* Emit the block: a "## Videos" heading and one card per video — the
   poster <img> wrapped in an anchor to the video's Videos URL, carrying
   data-cid, an alt drawn from the title, loading="lazy" — plus the linked title,
   the caption line, and the duration/source note. Text-only cards for entries

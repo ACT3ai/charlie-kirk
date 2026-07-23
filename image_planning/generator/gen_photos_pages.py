@@ -617,6 +617,22 @@ def back_button(url, label):
     return f"<a href=\"{url}\" {BTN}>← {mdx_escape(label)}</a>\n"
 
 
+# The "Next Image" button (image_planning/p_next_buttons.md). A dark-navy pill
+# with a white label and a white right chevron, rendered directly under the
+# image. Its href is the site-relative url of this image's next_image — the next
+# picture in one global depth-first walk of the whole hierarchy, looping the last
+# image back to the first. Styling lives in the CK_EVIDENCE_LAYOUT CSS block.
+NEXT_CHEVRON = ('<svg width="15" height="15" viewBox="0 0 24 24" fill="none" '
+                'stroke="#ffffff" strokeWidth="3" strokeLinecap="round" '
+                'strokeLinejoin="round" aria-hidden="true">'
+                '<path d="M9 6l6 6-6 6" /></svg>')
+
+
+def next_image_button(url):
+    return (f"<a className=\"ck-next-image-btn\" href=\"{url}\" "
+            f"aria-label=\"Next image\">Next Image {NEXT_CHEVRON}</a>\n")
+
+
 TOC_COLUMNS = 2
 
 
@@ -753,6 +769,10 @@ def layout_class(sha):
 
 
 # ---------- emit image pages ----------
+# Resolve each image's next_image (a full ~-rooted image_page path) to the
+# site-relative url of the page that hosts it, so the "Next Image" button links
+# correctly even after a page was renamed. Keyed by the page's on-disk realpath.
+imgpath_to_url = {os.path.realpath(p["file"]): p["url"] for p in img_pages}
 for pg in img_pages:
     n, i, sha = pg["node"], pg["img"], pg["sha"]
     desc = sanitize_prose(i.get("ai_description") or "")
@@ -794,6 +814,12 @@ for pg in img_pages:
                   f"target=\"_blank\" rel=\"noopener noreferrer\">",
                   f"  <img className=\"ck-evidence-image\" src=\"{src}\" alt=\"{alt_attr}\" />",
                   "</a>", ""]
+    # The "Next Image" button sits directly beneath the image and continues the
+    # global walk across the whole corpus (looping the last image to the first).
+    nxt_path = (i.get("next_image") or "").strip()
+    nxt_url = imgpath_to_url.get(os.path.realpath(os.path.expanduser(nxt_path))) if nxt_path else ""
+    if nxt_url:
+        lines += [next_image_button(nxt_url), ""]
     # No inline width cap. The image is a float in the page flow and the prose
     # wraps around it — see the CK_EVIDENCE_LAYOUT CSS block and
     # image_planning/layout_guidelines.txt.
@@ -1055,6 +1081,54 @@ css_block = f"""{CSS_START}
   }}
   .ck-evidence-image {{
     max-height: none;
+  }}
+}}
+/* The "Next Image" button (image_planning/p_next_buttons.md) sits directly
+   under the image and walks the whole corpus one picture at a time, looping the
+   last image back to the first. Dark navy fill, white label, white right
+   chevron. It is an immediate sibling of the image wrapper, so it inherits the
+   wrapper's layout: it clears beneath a floated (tall) image aligned to the
+   image's right edge, and centers under a full-width (wide) image. */
+.ck-next-image-btn {{
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.45rem 1rem;
+  background: #0d2b6b;
+  color: #fff !important;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 600;
+  line-height: 1.2;
+}}
+.ck-next-image-btn:hover,
+.ck-next-image-btn:focus {{
+  background: #08205a;
+  color: #fff !important;
+  text-decoration: none;
+}}
+.ck-next-image-btn svg {{
+  display: inline-block;
+  flex: none;
+}}
+.ck-evidence-image-wrap.ck-evidence-tall + .ck-next-image-btn {{
+  float: right;
+  clear: right;
+  margin: 0 0 1.25rem 1.5rem;
+}}
+.ck-evidence-image-wrap.ck-evidence-wide + .ck-next-image-btn {{
+  display: flex;
+  width: fit-content;
+  clear: both;
+  margin: 0 auto 1.5rem auto;
+}}
+@media (max-width: 996px) {{
+  .ck-evidence-image-wrap.ck-evidence-tall + .ck-next-image-btn,
+  .ck-evidence-image-wrap.ck-evidence-wide + .ck-next-image-btn {{
+    float: none;
+    clear: both;
+    margin: 1rem 0;
   }}
 }}
 {CSS_END}"""

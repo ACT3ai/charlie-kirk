@@ -235,7 +235,7 @@ for inner, kind in entries:
 
 # ---------------------------------------------------------------- emit
 def render_block(items):
-    out = [START, "", "## Image Evidence", "",
+    out = [START, "", "## Images", "",
            '<div className="ck-placed-gallery">', ""]
     for e in items:
         out.append('<figure className="ck-placed-figure">')

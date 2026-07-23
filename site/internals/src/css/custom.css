@@ -253,6 +253,54 @@
     max-height: none;
   }
 }
+/* The "Next Image" button (image_planning/p_next_buttons.md) sits directly
+   under the image and walks the whole corpus one picture at a time, looping the
+   last image back to the first. Dark navy fill, white label, white right
+   chevron. It is an immediate sibling of the image wrapper, so it inherits the
+   wrapper's layout: it clears beneath a floated (tall) image aligned to the
+   image's right edge, and centers under a full-width (wide) image. */
+.ck-next-image-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.45rem 1rem;
+  background: #0d2b6b;
+  color: #fff !important;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+.ck-next-image-btn:hover,
+.ck-next-image-btn:focus {
+  background: #08205a;
+  color: #fff !important;
+  text-decoration: none;
+}
+.ck-next-image-btn svg {
+  display: inline-block;
+  flex: none;
+}
+.ck-evidence-image-wrap.ck-evidence-tall + .ck-next-image-btn {
+  float: right;
+  clear: right;
+  margin: 0 0 1.25rem 1.5rem;
+}
+.ck-evidence-image-wrap.ck-evidence-wide + .ck-next-image-btn {
+  display: flex;
+  width: fit-content;
+  clear: both;
+  margin: 0 auto 1.5rem auto;
+}
+@media (max-width: 996px) {
+  .ck-evidence-image-wrap.ck-evidence-tall + .ck-next-image-btn,
+  .ck-evidence-image-wrap.ck-evidence-wide + .ck-next-image-btn {
+    float: none;
+    clear: both;
+    margin: 1rem 0;
+  }
+}
 /* CK_EVIDENCE_LAYOUT_END */
 
 /* CK_PLACED_IMAGES_START */
@@ -375,6 +423,28 @@
     height: auto;
   }
 }
+
+/* CK_NEXT_BUTTON_STYLE_START */
+.ck-video-next {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin: 0 0 1.25rem 0;
+  padding: 0.35rem 0.9rem;
+  background: #0d2b6b;
+  color: #fff !important;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+.ck-video-next:hover,
+.ck-video-next:focus { background: #09204f; color: #fff !important; }
+.ck-video-next:focus-visible { outline: 2px solid #fff; outline-offset: 2px; }
+.ck-video-next svg { stroke: #fff; }
+/* CK_NEXT_BUTTON_STYLE_END */
+
 /* CK_VIDEO_LAYOUT_END */
 
 /* CK_PLACED_VIDEOS_START */

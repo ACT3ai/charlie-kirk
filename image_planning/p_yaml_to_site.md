@@ -684,7 +684,7 @@ The images go at the BOTTOM of the page, inside a generated block delimited by
 MDX comment markers:
 
     {/* CK_PLACED_IMAGES_START — generated, do not hand-edit */}
-    ## Image Evidence
+    ## Images
     ... gallery ...
     {/* CK_PLACED_IMAGES_END */}
 
@@ -998,7 +998,7 @@ agents by host page; a host page is never split across agents):
   and Stage 5 owns their linking.
 * Apply the per-page cap of 12 counting what is already embedded, keeping YAML
   order. Report the overflow.
-* Emit the block: a "## Image Evidence" heading and one figure per image — the
+* Emit the block: a "## Images" heading and one figure per image — the
   <img> wrapped in an anchor to the image's Photos URL, carrying data-cid, an
   alt drawn from the description, loading="lazy" — plus the caption line and its
   "full write-up" link.
