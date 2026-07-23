@@ -23,6 +23,7 @@ CK_FILE is file {ROOT_DIR}/Charlie_Kirk.txt
 CHARTER_FILE is file {THIS_DIR}/CLAUDE.md
 ASSESS_MANUAL is file {ROOT_DIR}/prompts/Assess_Manual.md
 EXCLUDE_FILE is file {THIS_DIR}/exclude_videos.txt
+BAN_VIDEOS_CSV is file {VIDEOS_DIR}/ban_videos.csv
 
 REPO_SIDECAR_DIR dir is {ROOT_DIR}/.lfbridge
 REPO_VIDEO_SIDECAR_DIR dir is {REPO_SIDECAR_DIR}/videos
@@ -86,20 +87,28 @@ Convergence priority order (if context runs short, complete in this order):
    3. Stage 4  — CID and pin status
    4. Stage 5  — clustering
    5. Stage 6  — rebuild {HIERARCHY_FILE}
-   6. Stage 14 — counts, publishable gate, integrity
-   7. Stage 7  — site Level 2 sweep into the level_3 superset
-   8. Stage 9  — site Level 3/4 pages into level_4/level_5 nodes
-   9. Stage 10 — page video sweep
-  10. Stage 11 — on_pages
-  11. Stage 8  — home page tables of contents
-  12. Stage 12 — video_page binding
-  13. Stage 13 — should_be_on_pages (where each video OUGHT to appear)
-  14. Stage 15 — verify
+   6. Stage 6B — banned: sync the ban set from {BAN_VIDEOS_CSV} onto every entry
+   7. Stage 14 — counts, publishable gate, integrity
+   8. Stage 7  — site Level 2 sweep into the level_3 superset
+   9. Stage 9  — site Level 3/4 pages into level_4/level_5 nodes
+  10. Stage 10 — page video sweep
+  11. Stage 11 — on_pages
+  12. Stage 8  — home page tables of contents
+  13. Stage 12 — video_page binding
+  14. Stage 13 — should_be_on_pages (where each video OUGHT to appear)
+  15. Stage 15 — verify
 
-Stages 2 through 6 produce a correct, useful master data file on their own. If
-the run stops after Stage 6 plus Stage 14, the result is still a win. Stages 7
+Stages 2 through 6B produce a correct, useful master data file on their own. If
+the run stops after Stage 6B plus Stage 14, the result is still a win. Stages 7
 through 12 add the site's structure on top of it, and Stage 13 turns the whole
 file into a publishing plan.
+
+Stage 6B is high in that order for a reason. It is cheap — one CSV, a few
+lookups per entry — and everything after it is gated on it: Stage 12 refuses to
+bind a Level 5 page to a banned video, Stage 13 refuses to plan a banned video
+onto a topic page, and {THIS_DIR}/p_yaml_to_site.md deletes any page or poster
+that already exists for one. A run that skips 6B produces a publishing plan that
+plans banned footage.
 
 Stage 13 depends on Stage 11 having run and being CLEAN — it unions on_pages
 into should_be_on_pages, so a fabricated observation becomes a fabricated
@@ -473,6 +482,8 @@ emit true/false.
 
           ocr_file: ""
 
+          banned: false
+
           source_url: "https://x.com/RealCandaceO/status/2067372027623715212"
           source_author: "@RealCandaceO"
           source_platform: "x"
@@ -511,6 +522,12 @@ FIELD NOTES — what each new field is for and where it comes from.
                          transcription, per THE AUDIO SIBLING RULE.
   transcript_complete    false whenever the header's "✓ full" marker is absent.
   shot_timeline          Block scalar, timestamps preserved.
+  banned                 Boolean, always present, default false. true means this
+                         video must never be published: no Level 5 page, no
+                         poster, no placement on any other page, no pin. Its
+                         value is NOT reasoned out here — it is COPIED DOWN from
+                         {BAN_VIDEOS_CSV} by Stage 6B, which is the only stage
+                         allowed to write it. See the BANNED knowledge section.
   people_seen            Feeds the defamation review.
   onscreen_text          From the vision model; complements .ocr, replaces
                          nothing.
@@ -552,9 +569,90 @@ CLUSTER NODE FIELDS are unchanged from the charter, plus one addition:
   number_of_videos_recursive, needs_split, videos, and the child level_N array.
 
   publishable           NEW. true when this node's subtree contains at least one
-                        video, false when it does not. See the EMPTY NODE
-                        PROBLEM below. The page generator publishes only
-                        publishable nodes.
+                        NOT-BANNED video, false when it does not. See the EMPTY
+                        NODE PROBLEM below. The page generator publishes only
+                        publishable nodes. A node whose every video is banned is
+                        publishable: false — otherwise the generator writes a
+                        cluster page with no players on it.
+
+============================
+KNOWLEDGE — THE BANNED PROPERTY (COPIED DOWN FROM {BAN_VIDEOS_CSV})
+============================
+
+Every video entry carries `banned:`. It is a real boolean, always present, never
+null, never a missing key — same rule as every other field. The default is
+false. An entry is banned: true only because a row for it exists in the ban CSV.
+
+WHAT BANNED MEANS. Banned is a PUBLISH-TIME GATE, not a delete. A banned video:
+
+  * Gets NO Level 5 page under {VIDEOS_L2_DIR}. If one already exists it is
+    deleted by {THIS_DIR}/p_yaml_to_site.md — not by this prompt, which never
+    touches a page.
+  * Gets NO poster frame under {SITE_DIR}/static/img/video_posters.
+  * Is NEVER placed on any other page anywhere on the site. No topic page, no
+    cluster page, no table of contents, no card, no link. Nothing links INTO it,
+    because there is nothing to link into.
+  * Is NEVER pinned. Any pinning job filters banned entries out before it runs.
+    IPFS publication is not reversible in practice — a CID that has been
+    announced and fetched can be served by anyone who cached it — so the gate
+    has to hold BEFORE the pin, not after.
+  * Keeps its entry in {HIERARCHY_FILE} forever. This file is the complete
+    private record and it only grows. Banning changes what is published; it
+    never changes what is known.
+
+WHERE THE DECISION LIVES. {BAN_VIDEOS_CSV} is the MASTER. The repo charter
+({ROOT_DIR}/claude.md, "Banned Media") owns the contract. The YAML property is
+DOWNSTREAM — it exists so the rest of the pipeline can read the decision out of
+the data it already has, but it is a copy and never the source:
+
+    ban_videos.csv  ──▶  videos.yaml (banned:)  ──▶  site/docs/Videos/ pages
+
+Edits go in the CSV. Never hand-edit `banned:` in the YAML — the next run of
+this prompt overwrites it. Never treat the YAML as the place where the ban was
+decided.
+
+CSV FORMAT. Header row, then one row per item:
+
+  sha256        sha256 hex digest of the media file. Primary identity for a
+                local file — survives renames, moves, duplicate copies.
+  cid           The IPFS CID ("Qm..." CIDv0) when one is assigned, else empty.
+                For video this is frequently the ONLY identity present, because
+                the bytes are gitignored and absent on this machine.
+  file_path     Full path from ~. For humans reading the CSV and as a
+                last-resort match key. Not authoritative — files move.
+  banned        true or false. Normally true. A row set to false is an explicit
+                UN-BAN: the row stays as the record of the decision and its
+                reason, and the item publishes normally.
+  reason        Short plain-text reason. Required.
+  date_added    YYYY-MM-DD the row was added.
+
+MATCH ORDER: sha256 first, then cid, then file_path. Any match sets the entry's
+banned to that row's banned value. An entry matched by no row gets banned: false.
+
+THE OLDER LIST. {EXCLUDE_FILE} is the previous one-identifier-per-line
+never-publish list and it still counts. The BAN SET is the UNION of the two,
+minus any CSV row explicitly marked banned=false. New bans go in the CSV; do not
+empty {EXCLUDE_FILE} to "move" entries into the CSV, and do not delete lines
+from it — leave them and add the row.
+
+WHY VIDEO NEEDS THIS MORE THAN IMAGES DO. The images pipeline learned the gate
+the hard way: its mirror is a years-long personal filing area, private material
+was swept into it by accident, and eleven such entries were found published
+during its first full run. Video carries the same risk in a sharper form:
+
+  * Careful prose is NOT sufficient protection. A write-up can omit every name
+    and the page is still an exposure, because the footage itself streams from a
+    public URL. The media is the payload.
+  * A still catches one instant; a clip catches every face that walks through
+    frame for its whole duration, plus every voice.
+
+WHEN A RUN FINDS SOMETHING THAT SHOULD NOT BE PUBLIC — private personal
+documents, an unrelated third party's records, footage of bystanders with no
+connection to the investigation, an unproven criminal accusation about a named
+living person burned into the frames — add a row to {BAN_VIDEOS_CSV} with a
+reason and the date BEFORE the run ends, and note it in {FINDINGS_FILE}. Do not
+wait for a later pass. The next stage of this same run may otherwise plan it
+onto a page.
 
 ============================
 CONCERN — THE EMPTY NODE PROBLEM (READ BEFORE STAGES 7-9)
@@ -695,6 +793,11 @@ STAGE 1 — READ, VERIFY THE MAPPING, PREPARE
   that it lists — one per line, by cid or sha256 — video that must never be
   published or pinned. Seed it empty. Nothing in this run publishes or pins, but
   later prompts read it and it must exist.
+* Create {BAN_VIDEOS_CSV} if it does not exist, with the header row
+  sha256,cid,file_path,banned,reason,date_added and no data rows. This is the
+  MASTER record of what must never be published — Stage 6B copies it down onto
+  every entry as `banned:`. Read it now and report the row count, so a run that
+  is about to plan hundreds of placements knows up front what is off limits.
 * Reference {CK_FILE} throughout. It is the source of truth for what the
   investigation's concepts actually are, and the hierarchy must mirror the
   investigation's real concept structure rather than an arbitrary video-library
@@ -710,6 +813,7 @@ OCR format recorded: yes/no  (format: ...)
 Old YAML tree shape read: N level_3 titles, N total _keys
 Prior-art scripts read: N
 generator/ ready: yes    exclude_videos.txt ready: yes
+ban_videos.csv ready: yes    rows: N (N banned=true, N un-bans)
 ============================
 
 ============================
@@ -1037,6 +1141,99 @@ File size: N lines, N bytes (was N lines, N bytes)
 ============================
 
 ============================
+STAGE 6B — BANNED: SYNC THE BAN SET ONTO EVERY ENTRY
+============================
+
+Read the BANNED knowledge section before running this. This stage is the ONLY
+place in the whole pipeline that writes `banned:`. It reasons about nothing. It
+copies a decision that was already made in {BAN_VIDEOS_CSV} down onto the data,
+so every later stage and every later prompt can see it.
+
+Run it on every run, immediately after Stage 6, and re-run it any time the CSV
+changes. It is cheap and it is idempotent.
+
+STEP 1 — READ THE BAN SET.
+
+  * Read {BAN_VIDEOS_CSV}. Parse it as a real CSV (python3 csv module — the
+    reason column contains commas and quoted text). Expected header:
+    sha256,cid,file_path,banned,reason,date_added
+  * If the file does not exist, CREATE it with that header row and zero data
+    rows, then continue. A missing CSV means "nothing is banned", not "skip the
+    gate" — and the file needs to exist so the next person can add a row.
+  * Parse the banned column strictly: "true" (any case) is true, "false" (any
+    case) is false. Anything else is a malformed row — STOP and report it rather
+    than guessing. Guessing "false" on a malformed row publishes banned footage.
+  * Build three lookup dicts from the rows: by sha256, by cid, by expanded
+    file_path (expand ~ on both sides before comparing).
+  * Read {EXCLUDE_FILE} too. Every identifier in it (cid and/or sha256, one per
+    line, "#" comments ignored) joins the ban set with banned=true, unless a CSV
+    row for that same identity says banned=false — an explicit CSV un-ban wins,
+    because it is the newer and more deliberate record.
+
+STEP 2 — SET banned ON EVERY ENTRY.
+
+  * Walk every video entry in {HIERARCHY_FILE}, at every depth.
+  * Look the entry up in the ban set: sha256 first, then cid, then file_path.
+    First match wins and supplies the value.
+  * No match → banned: false.
+  * Write the key on EVERY entry, including the false ones. Never omit it,
+    never emit null. A missing key is indistinguishable from "not checked yet"
+    and this is exactly the field where that ambiguity is dangerous.
+  * Never delete an entry because it is banned. The file only grows.
+
+STEP 3 — REPORT THE ROWS THAT MATCHED NOTHING.
+
+  A CSV row that matches no entry is a real finding, not noise. It usually means
+  one of three things and each needs a different fix:
+
+    * The identity is stale (the file was re-encoded, so its sha256 moved).
+    * The item is an image, filed in the wrong CSV — check {ROOT_DIR}/images/
+      ban_images.csv and say so.
+    * The item is genuinely not in this corpus yet, and the row is pre-emptive.
+      That is legitimate. Keep the row.
+
+  List every unmatched row with its reason text. Do not delete unmatched rows.
+
+STEP 4 — RECOMPUTE publishable.
+
+  A node's publishable is true when its subtree holds at least one NOT-BANNED
+  video. Recompute it here rather than leaving Stage 14 to discover it, because
+  a node whose entire contents just got banned must stop being publishable in
+  the same run that banned them.
+
+STEP 5 — RE-EMIT AND VALIDATE.
+
+  Use the same deterministic emitter Stage 6 used, so a run that changes no
+  banned value produces a byte-identical file. Verify the YAML parses. Apply
+  OUTPUT SANITIZATION — the reason column is human-typed text and is a plausible
+  carrier of invisible Unicode, so treat it as untrusted even though this stage
+  does not copy the reason into the YAML.
+
+DO NOT, IN THIS STAGE:
+
+  * Do not delete, move, or edit any page. This prompt never touches a page.
+    Page and poster deletion for a newly banned video is
+    {THIS_DIR}/p_yaml_to_site.md's job.
+  * Do not clear video_page, on_pages, or should_be_on_pages on a banned entry.
+    on_pages is an OBSERVATION — "this video is on that page today" stays true
+    and is exactly what tells the page prompt what to go delete. Stages 12 and
+    13 handle the forward-looking fields.
+  * Do not pin, unpin, or touch IPFS in any way.
+
+Output to stdout:
+============================
+STAGE 6B COMPLETE
+{BAN_VIDEOS_CSV}: N rows (N banned=true, N banned=false un-bans)
+{EXCLUDE_FILE}: N identifiers
+Entries marked banned: true : N   (by sha256: N, by cid: N, by file_path: N)
+Entries marked banned: false: N
+Every entry carries the banned key: yes
+CSV rows matching no entry: N   (listed with reason)
+Nodes flipped to publishable: false because all their videos are banned: N
+YAML parses: yes    Byte-identical to Stage 6 output when nothing banned: yes/no
+============================
+
+============================
 STAGE 7 — SITE LEVEL 2 SWEEP → THE LEVEL_3 SUPERSET
 ============================
 
@@ -1334,6 +1531,18 @@ RULES:
     has vanished from disk, REPORT it rather than silently clearing it.
   * video_page is an IDENTITY field for sanitization — non-ASCII is emitted as a
     visible \uXXXX escape, never replaced.
+  * A BANNED ENTRY GETS NO video_page. banned: true means there is no Level 5
+    page for that video and there never will be while the ban stands, so the
+    field is "". Two cases and they are handled differently:
+      - No page exists → write "" and move on. Normal.
+      - A page DOES exist on disk carrying that identity → this is a page that
+        should not be there. Do NOT bind it, do NOT delete it (this prompt never
+        touches a page). Write "" and REPORT it loudly, listing the page path and
+        the ban reason, so {THIS_DIR}/p_yaml_to_site.md deletes it on its next
+        run. Count these separately in the output — a non-zero number here means
+        banned footage is live on the site right now.
+    The "never replace a non-empty video_page with empty" rule above does not
+    apply to a banned entry: clearing it is the correct action, not a regression.
 
 Output to stdout:
 ============================
@@ -1341,6 +1550,8 @@ STAGE 12 COMPLETE
 Video pages indexed under Videos: N (N with ck_ frontmatter, N without)
 Entries with video_page set: N   by (identity,node): N   by identity only: N
 Entries with video_page "": N (no page exists yet)
+Banned entries skipped: N   of those, LIVE PAGES FOUND NEEDING DELETION: N
+  (each listed with page path and ban reason)
 Recorded pages now missing from disk: N (listed)
 Paths under /Photos rejected: 0
 ============================
@@ -1404,6 +1615,28 @@ Not a flat list of strings. Not repo-relative. Not URLs. Not a video-page path.
 Every video entry carries the key; a video that belongs on no topic page emits:
 
     should_be_on_pages: []
+
+BANNED ENTRIES ARE SKIPPED ENTIRELY, AND THE UNION RULE IS OVERRIDDEN FOR THEM.
+
+An entry with banned: true gets should_be_on_pages: [] and nothing else. Do not
+reason about where it ought to go. Do not union its on_pages in — that is the
+one place where the union rule is deliberately broken, and it has to be, because
+on_pages for a banned video is a list of pages the footage must be REMOVED from,
+not pages it should stay on. Unioning them would turn a ban into an instruction
+to publish it more widely.
+
+Handle it this way:
+
+  * Set should_be_on_pages: [] on every banned entry. If it previously held
+    pages, clear them — this is the one property where clearing is correct, and
+    report each cleared page.
+  * If a banned entry's on_pages is NOT empty, that footage is live on the site
+    today. Report it as a REMOVAL WORKLIST, listed page by page with the ban
+    reason, so {THIS_DIR}/p_yaml_to_site.md strips those placements. Leave
+    on_pages itself untouched — it is the observation that drives the removal.
+  * Nothing links into a banned video from anywhere: no card, no thumbnail, no
+    table-of-contents row, no "see also" link. There is no Level 5 page to link
+    to, so any link that exists is broken as well as unwanted.
 
 EVERY PATH MUST BE REAL, FULL, AND VERIFIED — NO PLACEHOLDERS.
 
@@ -1632,7 +1865,9 @@ Video entries processed: N
 Entries with should_be_on_pages non-empty: N   total page assignments: N
 Assignments carried over from on_pages: N   new assignments proposed: N
 Subtractions from on_pages (wrong placements, with reasons): N (listed)
-Entries left [] : N (N excluded by {EXCLUDE_FILE}, N no topical match)
+Entries left [] : N (N banned, N excluded by {EXCLUDE_FILE}, N no topical match)
+Banned entries with a non-empty on_pages — REMOVAL WORKLIST: N (listed with page + reason)
+Banned entries whose should_be_on_pages was cleared this run: N (listed)
 Level 2 overview assignments: N   Level 3: N   Level 4: N
 Assignments whose video has no playable cid (planned but not servable): N
 Agent rows rejected (path not in candidate index): N
@@ -1703,9 +1938,14 @@ STAGE 14 — COUNTS, PUBLISHABLE, NEEDS_SPLIT, INTEGRITY
 ============================
 
 * Recompute number_of_videos (direct) and number_of_videos_recursive (subtree)
-  on every node. They must be exactly right.
-* Set publishable on every node: true when number_of_videos_recursive > 0, false
-  otherwise. Report both totals.
+  on every node. They count EVERY entry, banned included — the YAML is the
+  complete private record and its counts describe what is held, not what is
+  published. publishable is where the ban shows up, not the counts.
+* Set publishable on every node: true when the subtree holds at least one video
+  with banned false, false otherwise. A node with videos in it that are ALL
+  banned is publishable: false — report that case separately, because it is the
+  one where the counts and the publishable flag disagree and a reader of the
+  YAML will otherwise think it is a bug.
 * Re-evaluate needs_split: over 12 direct videos → true; at or under 12 → remove
   the flag.
 * Verify every _key is unique across the whole file.
@@ -1720,6 +1960,14 @@ STAGE 14 — COUNTS, PUBLISHABLE, NEEDS_SPLIT, INTEGRITY
   ending .md or .mdx, it EXISTS on disk, it carries no placeholder token, and it
   lies outside {VIDEOS_L2_DIR} and {DOCS_DIR}/Photos. Any failure is a hard fail,
   not a warning.
+* Verify every entry carries a banned key holding a real boolean — not null, not
+  a string "true", not missing. Any failure is a hard fail.
+* Verify the banned values still agree with {BAN_VIDEOS_CSV} as it stands right
+  now. Re-read the CSV here rather than trusting that Stage 6B ran; the CSV may
+  have been edited mid-run, and this is the last cheap chance to catch it.
+* Verify no banned entry has a non-empty should_be_on_pages and none has a
+  non-empty video_page. Both must be 0. A banned video with a planned placement
+  or a bound Level 5 page is the exact failure this whole gate exists to prevent.
 * Verify no entry in {EXCLUDE_FILE} has a non-empty should_be_on_pages.
 * Count assignments per page; report every page over the six-video load.
 * Verify every non-empty transcription_file, ai_description_file, ocr_file,
@@ -1741,6 +1989,9 @@ Output to stdout:
 STAGE 14 COMPLETE
 Counts recomputed: yes
 Nodes: N total, N publishable, N with zero videos (not published)
+Nodes not publishable because every video in them is banned: N (listed)
+Entries banned: N   banned values disagreeing with {BAN_VIDEOS_CSV}: 0
+Banned entries with a non-empty should_be_on_pages: 0   with a video_page: 0
 needs_split nodes: N
 Duplicate _keys: 0        Duplicate cid within a node: 0
 Entries missing a schema key: 0
@@ -1802,6 +2053,9 @@ SIDECAR COVERAGE (the point of this run):
   transcript_complete true: N of N  (N%)
 CID coverage: N% (N of N)      pinned: N% (N of N)
 video_page coverage: N% (N of N bound to a Level 5 page)
+BANNED: N entries banned (no Level 5 page, no placement, no pin)
+  {BAN_VIDEOS_CSV} rows: N   {EXCLUDE_FILE} identifiers: N
+  banned entries still live on the site (removal worklist): N (listed)
 should_be_on_pages coverage: N% (N of N planned onto at least one topic page)
 Publishing worklist (should_be_on_pages minus on_pages): N placements pending
 Every should_be_on_pages path exists on disk: confirmed
@@ -1826,6 +2080,18 @@ HARD RULES
   is a SUPERSET of on_pages — the complete desired state, not a list of extras.
   Never let topical reasoning write on_pages, and never let should_be_on_pages
   inherit an on_pages binding that was not verified against the page itself.
+  The ONE exception to the superset rule is a banned entry: it gets
+  should_be_on_pages: [] and its on_pages is a removal worklist, never a source
+  of placements.
+* banned IS COPIED DOWN, NEVER DECIDED HERE. {BAN_VIDEOS_CSV} is the master and
+  the repo charter ({ROOT_DIR}/claude.md, "Banned Media") owns the contract.
+  Stage 6B is the only stage that writes the key; every other stage reads it.
+  Every entry carries it as a real boolean and the default is false. A banned
+  video gets no Level 5 page, no poster, no placement on any page, no link into
+  it from anywhere, and is never pinned — and its entry is never deleted from
+  {HIERARCHY_FILE}, because banning is a publish-time gate over a file that only
+  grows. When a run finds material that should not be public, add the row to
+  {BAN_VIDEOS_CSV} with a reason before the run ends.
 * Every path this prompt writes — file_path, the sidecar paths, video_page,
   on_pages, should_be_on_pages — is an absolute tilde-rooted path to a file that
   EXISTS on disk at the moment of writing. Placeholders, ellipses, repo-relative

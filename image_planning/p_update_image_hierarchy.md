@@ -16,6 +16,8 @@ IMAGES_L2_PAGE is file {DOCS_DIR}/Photos/overview.mdx
 PAGES_CSV is file {ROOT_DIR}/pages.csv
 CK_FILE is file {ROOT_DIR}/Charlie_Kirk.txt
 CHARTER_FILE is file {THIS_DIR}/CLAUDE.md
+EXCLUDE_FILE is file {THIS_DIR}/exclude_images.txt
+BAN_IMAGES_CSV is file {IMAGES_DIR}/ban_images.csv
 
 MIRROR_DIR dir is ~/_Mirror/Politics/Charlie_Kirk_Mi
 MIRROR_SIDECAR_DIR dir is ~/BGit/Bryan_git/personal_large_files_bridge/_Mirror/Politics/Charlie_Kirk_Mi
@@ -76,6 +78,8 @@ Back up the YAML first; every one of these rewrites it in place.
 
 Convergence priority order (if context runs short, complete in this order):
   1. Stage 3 — CID and pin status on every image (Stage 8 depends on it)
+  1b. Stage 3B — banned: sync the ban set from {BAN_IMAGES_CSV} onto every entry
+      (cheap, and Stages 10 and 11 are gated on it — never skip it)
   2. Stage 4 — site Level 2 sweep into YAML level_3 superset
   3. Stage 6 — filesystem Level 3/4 pages into YAML level_4/level_5 nodes
   4. Stage 7 — page image sweep into YAML image entries
@@ -270,6 +274,7 @@ before changing anything. Its current shape:
             ai_description_file: "~/BGit/Bryan_git/personal_large_files_bridge/_Mirror/Politics/Charlie_Kirk_Mi/Censorship/G3o-JSJWUAA6XUC.jpeg.ai_description"
             ocr_file: "~/BGit/Bryan_git/personal_large_files_bridge/_Mirror/Politics/Charlie_Kirk_Mi/Censorship/G3o-JSJWUAA6XUC.jpeg.ocr"
             transcription_file: ""
+            banned: false
             image_page: "~/BGit/Bryan_git/charlie-kirk/site/docs/Photos/FBI/Img_Photo_c51ef6.mdx"
             on_pages:
               - page: "~/BGit/Bryan_git/charlie-kirk/site/docs/FBI/overview.mdx"
@@ -284,8 +289,14 @@ before changing anything. Its current shape:
     null. Absence of the key would make later passes unable to tell "not
     looked up yet" from "looked up, does not exist." The exceptions to the
     ""-for-empty rule are the typed properties: on_pages and
-    should_be_on_pages are lists and emit [] when empty, and ipfs_pinned is a
-    boolean and emits false when the local node does not pin the CID.
+    should_be_on_pages are lists and emit [] when empty, and ipfs_pinned and
+    banned are booleans and emit false — ipfs_pinned when the local node does
+    not pin the CID, banned when no row in {BAN_IMAGES_CSV} matches the image.
+  * banned is the publish gate. It is a real boolean, always present, default
+    false, and its value is COPIED DOWN from {BAN_IMAGES_CSV} by Stage 3B —
+    the only stage allowed to write it. banned: true means no Level 5 page, no
+    served copy, no placement on any page, and no link into it from anywhere.
+    See the BANNED knowledge section below.
   * About 21 level_3 clusters exist today (FBI, The Shot and the Shooter
     Position, Unfiled Backlog, Patsy Candidates, Security Team, TPUSA, Court
     and Legal Proceedings, Aircraft and Flight Evidence, Tyler Robinson,
@@ -309,6 +320,87 @@ Cluster sizing rules (from the charter, {CHARTER_FILE}):
     evidence about," never "when was it downloaded" or "who posted it."
   * Titles may use spaces and full words. Keys use underscores, four words or
     less, unique file-wide.
+
+============================
+KNOWLEDGE — THE BANNED PROPERTY (COPIED DOWN FROM {BAN_IMAGES_CSV})
+============================
+
+Every image entry carries `banned:`. It is a real boolean, always present, never
+null, never a missing key — same rule as every other field. The default is
+false. An entry is banned: true only because a row for it exists in the ban CSV.
+
+WHAT BANNED MEANS. Banned is a PUBLISH-TIME GATE, not a delete. A banned image:
+
+  * Gets NO Level 5 page under {PHOTOS_DIR}. If one already exists it is deleted
+    by {THIS_DIR}/p_yaml_to_site.md — not by this prompt, which never touches a
+    page.
+  * Gets NO served copy under the site's static evidence directory
+    (STATIC_IMG_DIR in {THIS_DIR}/p_yaml_to_site.md). A page that omits the
+    accusation in its prose is not enough; the file itself must stop being
+    served, because the image is the payload.
+  * Is NEVER placed on any other page anywhere on the site. No topic page, no
+    cluster page, no table of contents, no thumbnail, no card, no link. Nothing
+    links INTO it, because there is nothing to link into.
+  * Is NEVER pinned to IPFS. Any pinning job filters banned entries out before
+    it runs. IPFS publication is not reversible in practice — a CID that has
+    been announced and fetched can be served by anyone who cached it — so the
+    gate has to hold BEFORE the pin, not after.
+  * Keeps its entry in {HIERARCHY_FILE} forever. This file only grows. Banning
+    changes what is published; it never changes what is known.
+
+WHERE THE DECISION LIVES. {BAN_IMAGES_CSV} is the MASTER. The repo charter
+({ROOT_DIR}/claude.md, "Banned Media") owns the contract. The YAML property is
+DOWNSTREAM — it exists so the rest of the pipeline can read the decision out of
+the data it already has, but it is a copy and never the source:
+
+    ban_images.csv  ──▶  images.yaml (banned:)  ──▶  site/docs/Photos/ pages
+
+Edits go in the CSV. Never hand-edit `banned:` in the YAML — the next run of
+this prompt overwrites it. Never treat the YAML as the place where the ban was
+decided.
+
+CSV FORMAT. Header row, then one row per item:
+
+  sha256        sha256 hex digest of the image file. PRIMARY identity here —
+                survives renames, moves, and the duplicate copies cross-filing
+                creates. Nearly every image in this corpus has one.
+  cid           The IPFS CID when one is assigned, else empty. Secondary.
+  file_path     Full path from ~. For humans reading the CSV and as a
+                last-resort match key. Not authoritative — files move.
+  banned        true or false. Normally true. A row set to false is an explicit
+                UN-BAN: the row stays as the record of the decision and its
+                reason, and the item publishes normally.
+  reason        Short plain-text reason. Required.
+  date_added    YYYY-MM-DD the row was added.
+
+MATCH ORDER: sha256 first, then cid, then file_path. Any match sets the entry's
+banned to that row's banned value. An entry matched by no row gets banned: false.
+
+CROSS-FILING MAKES sha256 THE RIGHT KEY. The same image legitimately appears
+under several concept nodes (that is what also_filed_in records), so one CSV row
+must ban EVERY copy of it. Matching on sha256 does that automatically; matching
+on file_path would ban one copy and publish the rest.
+
+THE OLDER LIST. {EXCLUDE_FILE} is the previous one-sha256-per-line never-publish
+list and it still counts. The BAN SET is the UNION of the two, minus any CSV row
+explicitly marked banned=false. New bans go in the CSV; do not empty
+{EXCLUDE_FILE} to "move" entries into the CSV, and do not delete lines from it —
+leave them and add the row.
+
+WHY THIS GATE EXISTS. The mirror is a years-long personal filing area and
+private material was swept into it by accident — bank and health-account
+dashboards, booking confirmations, billing portals, video calls showing named
+participants' faces. Eleven such entries were found published during the first
+full run. The second category is defamation: composite screenshots that stamp an
+unproven criminal accusation about a named living person into the pixels, where
+prose cannot soften it and cropping cannot remove it.
+
+WHEN A RUN FINDS SOMETHING THAT SHOULD NOT BE PUBLIC — private personal
+documents, an unrelated third party's records, anything whose subject has no
+connection to the investigation, an accusation burned into the image — add a row
+to {BAN_IMAGES_CSV} with a reason and the date BEFORE the run ends, and note it
+in {FINDINGS_FILE}. Do not wait for a later pass; Stage 11 of this same run may
+otherwise plan it onto a dozen topic pages.
 
 ============================
 KNOWLEDGE — SIDECAR FILES (OCR, TRANSCRIPTION, AI DESCRIPTION) AND THE PATH MAPPING
@@ -417,6 +509,12 @@ STAGE 1 — SETUP AND READ
 * Read {GENERATOR_DIR}/gen_hierarchy.js, {GENERATOR_DIR}/clusters.json, and
   the header of {INVENTORY_TSV} — the prior-art conventions.
 * Read {PAGES_CSV}.
+* Read {BAN_IMAGES_CSV} — the MASTER record of what must never be published.
+  Create it with the header row sha256,cid,file_path,banned,reason,date_added
+  and no data rows if it does not exist. Stage 3B copies it down onto every
+  entry as `banned:`. Read {EXCLUDE_FILE} alongside it; the ban set is the union
+  of the two. Report both counts here, so a run that is about to plan thousands
+  of placements knows up front what is off limits.
 * Enumerate {DOCS_DIR} top-level directories (the site Level 2s).
 * Reference {CK_FILE} as needed throughout — it is the source of truth for
   what the investigation's concepts actually are. The hierarchy must mirror
@@ -430,6 +528,8 @@ STAGE 1 COMPLETE
 YAML nodes indexed: N level_3 / N level_4 / N level_5
 Images indexed: N unique sha256
 Site Level 2 dirs found: N
+ban_images.csv ready: yes    rows: N (N banned=true, N un-bans)
+exclude_images.txt: N sha256 values
 pages.csv rows: N
 ============================
 
@@ -517,11 +617,13 @@ WHAT TO DO.
     * Do NOT pin anything in this stage. Pinning publishes content to the
       public IPFS network and it is irreversible in practice — a CID, once
       announced, can be fetched and cached by anyone. Some images in this
-      corpus must never be published (see {THIS_DIR}/exclude_images.txt, the
-      private/personal material pulled 2026-07-22). This stage RECORDS state;
-      it does not change what is public. If a run wants to pin the publishable
-      set, that is a separate, explicitly-approved job that must first filter
-      out every sha256 in exclude_images.txt.
+      corpus must never be published (see {BAN_IMAGES_CSV} and {EXCLUDE_FILE} —
+      the private/personal material pulled 2026-07-22 and everything banned
+      since). This stage RECORDS state; it does not change what is public. If a
+      run wants to pin the publishable set, that is a separate,
+      explicitly-approved job that must first filter out the whole ban set —
+      every banned: true entry, which is to say every identity in
+      {BAN_IMAGES_CSV} and every sha256 in {EXCLUDE_FILE}.
 * For entries with NO local file (ipfs_url-only entries harvested from site
   embeds), the CID is already known from the URL — parse it out of the URL and
   set `cid` from it. Set ipfs_pinned by asking the local node; if the node
@@ -548,6 +650,98 @@ Pinned on local node: N   Not pinned: N
 ipfs_url-only entries with CID parsed from URL: N
 Entries left cid "" (file missing on disk): N (listed)
 Nothing pinned by this stage: confirmed
+============================
+
+============================
+STAGE 3B — BANNED: SYNC THE BAN SET ONTO EVERY ENTRY
+============================
+
+Read the BANNED knowledge section before running this. This stage is the ONLY
+place in the whole pipeline that writes `banned:`. It reasons about nothing. It
+copies a decision that was already made in {BAN_IMAGES_CSV} down onto the data,
+so every later stage and every later prompt can see it.
+
+Run it on every run, immediately after Stage 3, and re-run it any time the CSV
+changes. It is cheap and it is idempotent.
+
+STEP 1 — READ THE BAN SET.
+
+  * Read {BAN_IMAGES_CSV}. Parse it as a real CSV (python3 csv module — the
+    reason column contains commas, semicolons and quoted text). Expected header:
+    sha256,cid,file_path,banned,reason,date_added
+  * If the file does not exist, CREATE it with that header row and zero data
+    rows, then continue. A missing CSV means "nothing is banned", not "skip the
+    gate" — and the file needs to exist so the next person can add a row.
+  * Parse the banned column strictly: "true" (any case) is true, "false" (any
+    case) is false. Anything else is a malformed row — STOP and report it rather
+    than guessing. Guessing "false" on a malformed row publishes banned material.
+  * Build three lookup dicts from the rows: by sha256, by cid, by expanded
+    file_path (expand ~ on both sides before comparing).
+  * Read {EXCLUDE_FILE} too. Every sha256 in it joins the ban set with
+    banned=true, unless a CSV row for that same identity says banned=false — an
+    explicit CSV un-ban wins, because it is the newer and more deliberate record.
+
+STEP 2 — SET banned ON EVERY ENTRY.
+
+  * Walk every image entry in {HIERARCHY_FILE}, at every depth.
+  * Look the entry up in the ban set: sha256 first, then cid, then file_path.
+    First match wins and supplies the value.
+  * No match → banned: false.
+  * Write the key on EVERY entry, including the false ones. Never omit it,
+    never emit null. A missing key is indistinguishable from "not checked yet"
+    and this is exactly the field where that ambiguity is dangerous.
+  * A banned sha256 bans EVERY copy of that image, in every node it is
+    cross-filed into. Verify that: count the entries banned and the distinct
+    sha256s banned, and print both. If they are equal on a corpus that
+    cross-files, the walk missed the duplicates.
+  * Never delete an entry because it is banned. The file only grows.
+
+STEP 3 — REPORT THE ROWS THAT MATCHED NOTHING.
+
+  A CSV row that matches no entry is a real finding, not noise. It usually means
+  one of three things and each needs a different fix:
+
+    * The identity is stale (the file was re-saved or re-encoded, so its sha256
+      moved).
+    * The item is a video, filed in the wrong CSV — check {VIDEOS_DIR}/
+      ban_videos.csv and say so.
+    * The item is genuinely not in this corpus yet, and the row is pre-emptive.
+      That is legitimate. Keep the row.
+
+  List every unmatched row with its reason text. Do not delete unmatched rows.
+
+STEP 4 — RE-EMIT AND VALIDATE.
+
+  Emit through the shared emitter — reuse emit_node/recount from
+  {GENERATOR_DIR}/bind_image_pages.py, which round-trips this file byte-for-byte
+  — so a run that changes no banned value produces a byte-identical file. Verify
+  the YAML parses. Apply OUTPUT SANITIZATION: the reason column is human-typed
+  text and a plausible carrier of invisible Unicode, so treat it as untrusted
+  even though this stage does not copy the reason into the YAML.
+
+DO NOT, IN THIS STAGE:
+
+  * Do not delete, move, or edit any page, and do not delete any served copy
+    under the static evidence directory. This prompt never touches either.
+    Removing the page and the served file for a newly banned image is
+    {THIS_DIR}/p_yaml_to_site.md's job.
+  * Do not clear image_page, on_pages, or should_be_on_pages here. on_pages is
+    an OBSERVATION — "this image is on that page today" stays true and is
+    exactly what tells the page prompt what to go remove. Stages 10 and 11
+    handle the forward-looking fields.
+  * Do not pin, unpin, or touch IPFS in any way.
+
+Output to stdout:
+============================
+STAGE 3B COMPLETE
+{BAN_IMAGES_CSV}: N rows (N banned=true, N banned=false un-bans)
+{EXCLUDE_FILE}: N sha256 values
+Entries marked banned: true : N   across N distinct sha256 (cross-filed copies caught)
+  (by sha256: N, by cid: N, by file_path: N)
+Entries marked banned: false: N
+Every entry carries the banned key: yes
+CSV rows matching no entry: N   (listed with reason)
+YAML parses: yes    Byte-identical when nothing changed: yes/no
 ============================
 
 ============================
@@ -1219,6 +1413,18 @@ RULES.
   * Never delete an existing non-empty image_page in favour of "". If a
     previously recorded page has vanished from disk, report it rather than
     silently clearing it.
+  * A BANNED ENTRY GETS NO image_page. banned: true means there is no Level 5
+    page for that image and there never will be while the ban stands, so the
+    field is "". Two cases, handled differently:
+      - No page exists → write "" and move on. Normal.
+      - A page DOES exist on disk carrying that sha256 → it is a page that
+        should not be there. Do NOT bind it, do NOT delete it (this prompt never
+        touches a page). Write "" and REPORT it loudly, listing the page path,
+        the served copy's path if one exists, and the ban reason, so
+        {THIS_DIR}/p_yaml_to_site.md removes both on its next run. Count these
+        separately — a non-zero number means banned material is live right now.
+    The "never clear a non-empty image_page" rule above does not apply to a
+    banned entry: clearing it is the correct action, not a regression.
 
 Output to stdout:
 ============================
@@ -1226,6 +1432,8 @@ STAGE 10 COMPLETE
 Image pages indexed under Photos: N (N with ck_image_sha256, N without)
 Entries with image_page set: N   matched by (sha256,node): N   by sha256 only: N
 Entries with image_page "": N (no page exists yet)
+Banned entries skipped: N   of those, LIVE PAGES FOUND NEEDING DELETION: N
+  (each listed with page path, served-copy path, and ban reason)
 Recorded pages now missing from disk: N (listed)
 ============================
 
@@ -1393,9 +1601,25 @@ DEFAMATION GATE — applies before any page is added.
 should_be_on_pages is a publishing instruction, so the repo's defamation rules
 bind here even though this stage writes no page:
 
-  * An image whose sha256 appears in {THIS_DIR}/exclude_images.txt is never
-    assigned to any page. Emit should_be_on_pages: [] for it, unconditionally,
-    regardless of how good the topical match is.
+  * AN ENTRY WITH banned: true IS SKIPPED ENTIRELY. Emit should_be_on_pages: []
+    for it, unconditionally, regardless of how good the topical match is, and do
+    not spend scoring on it — filter banned entries out before the scorer runs.
+    If it previously held pages, CLEAR them and report each cleared page; this
+    is the one property where clearing is the correct action.
+    The union-with-on_pages rule is deliberately broken for banned entries: an
+    on_pages value on a banned image is a list of pages the image must be
+    REMOVED from, not pages it should stay on. Unioning them would convert a ban
+    into an instruction to publish it more widely. Report every banned entry
+    with a non-empty on_pages as a REMOVAL WORKLIST, page by page with the ban
+    reason, and leave on_pages itself untouched — it is the observation that
+    drives the removal.
+    Nothing links into a banned image from anywhere: no card, no thumbnail, no
+    table-of-contents row, no "see also". There is no Level 5 page to link to,
+    so any link that exists is broken as well as unwanted.
+  * An image whose sha256 appears in {EXCLUDE_FILE} is never assigned to any
+    page. Same treatment: should_be_on_pages: [], unconditionally. The ban set
+    is the UNION of {BAN_IMAGES_CSV} and {EXCLUDE_FILE}, minus any CSV row
+    explicitly marked banned=false.
   * An image showing a named living person is assigned only to pages where
     that person's presence is the point. Do not assign an image whose visible
     content (including its OCR text) makes an accusation against a living
@@ -1424,7 +1648,8 @@ Run of 2026-07-23 landed at 11.6% / 88.4% / 58.0% / 36.5%, on_pages 91.5% empty.
 HOW TO RUN IT.
 
   * The candidate index (pages.csv + filesystem walk + stat) and the mechanical
-    filters (exclude_images.txt, Photos-scope exclusion, per-page load counts)
+    filters (the ban set — {BAN_IMAGES_CSV} plus {EXCLUDE_FILE} — Photos-scope
+    exclusion, per-page load counts)
     are scripted — they are exact and cheap.
   * The selection itself runs scripted too, via
     {GENERATOR_DIR}/plan_should_be.py plan. It scores every image against every
@@ -1496,7 +1721,9 @@ Candidate index: N pages (N from pages.csv, N from filesystem walk, N dropped as
 Image entries processed: N
 Entries with should_be_on_pages non-empty: N   total page assignments: N
 Assignments carried over from on_pages: N   new assignments proposed: N
-Entries left [] : N (N excluded by exclude_images.txt, N no topical match)
+Entries left [] : N (N banned, N excluded by {EXCLUDE_FILE}, N no topical match)
+Banned entries with a non-empty on_pages — REMOVAL WORKLIST: N (listed with page + reason)
+Banned entries whose should_be_on_pages was cleared this run: N (listed)
 Level 2 overview assignments: N   Level 3: N   Level 4: N
 Agent rows rejected (path not in candidate index): N
 Pages over the 12-image load: N (listed with overflow counts)
@@ -1564,9 +1791,18 @@ STAGE 12 — COUNTS, NEEDS_SPLIT, INTEGRITY
 * Verify every image entry carries the full property set — cid, ipfs_pinned,
   sha256,
   file_path, ai_description, ai_description_file, ocr_file,
-  transcription_file, image_page, on_pages, should_be_on_pages — with ""
-  standing in for any scalar that has no value and [] for the empty lists. No
-  key is ever missing.
+  transcription_file, banned, image_page, on_pages, should_be_on_pages — with
+  "" standing in for any scalar that has no value, [] for the empty lists, and
+  false for the booleans. No key is ever missing.
+* Verify banned holds a real boolean on every entry — not null, not the string
+  "true", not missing. Any failure is a hard fail.
+* Verify the banned values still agree with {BAN_IMAGES_CSV} as it stands right
+  now. Re-read the CSV here rather than trusting that Stage 3B ran; the CSV may
+  have been edited mid-run, and this is the last cheap chance to catch it.
+* Verify no banned entry has a non-empty should_be_on_pages and none has a
+  non-empty image_page. Both counts must be 0. A banned image with a planned
+  placement or a bound Level 5 page is the exact failure this gate exists to
+  prevent.
 * Verify every non-empty image_page resolves to a file that exists on disk
   and lives under {DOCS_DIR}/Photos.
 * Verify every should_be_on_pages page value: it is an absolute tilde-rooted
@@ -1596,6 +1832,8 @@ STAGE 12 COMPLETE
 Counts recomputed: yes
 needs_split nodes: N
 Duplicate _keys: 0   Duplicate sha256 within a node: 0
+Entries banned: N   banned values disagreeing with {BAN_IMAGES_CSV}: 0
+Banned entries with a non-empty should_be_on_pages: 0   with an image_page: 0
 should_be_on_pages paths validated: N/N exist on disk   placeholders: 0
 YAML parses: yes
 ============================
@@ -1652,6 +1890,9 @@ Legacy video contamination: N `video:` items + N mistyped `image:` items
 Published /Photos pages carrying a <video> element: N (was 9)
 Sidecar coverage: ai_description N%, ocr N%, transcription N%
 image_page coverage: N% (N of N entries bound to a Level 5 page)
+BANNED: N entries banned (no Level 5 page, no served copy, no placement, no pin)
+  {BAN_IMAGES_CSV} rows: N   {EXCLUDE_FILE} sha256 values: N
+  banned entries still live on the site (removal worklist): N (listed)
 on_pages coverage: N entries bound, N total bindings, all N verified against page bytes
 should_be_on_pages coverage: N% (N of N entries planned onto at least one page)
 Publishing worklist (should_be_on_pages minus on_pages): N placements pending
@@ -1687,7 +1928,19 @@ HARD RULES
   fail instead of writing.
 * on_pages is OBSERVED, should_be_on_pages is REASONED. Never let topical
   judgment write a binding into on_pages. That single confusion is what
-  corrupted 89% of the property's contents.
+  corrupted 89% of the property's contents. The ONE exception to the
+  superset rule is a banned entry: it gets should_be_on_pages: [] and its
+  on_pages is a removal worklist, never a source of placements.
+* banned IS COPIED DOWN, NEVER DECIDED HERE. {BAN_IMAGES_CSV} is the master and
+  the repo charter ({ROOT_DIR}/claude.md, "Banned Media") owns the contract.
+  Stage 3B is the only stage that writes the key; every other stage reads it.
+  Every entry carries it as a real boolean and the default is false. A banned
+  image gets no Level 5 page, no served copy under the static evidence
+  directory, no placement on any page, no link into it from anywhere, and is
+  never pinned — and its entry is never deleted from {HIERARCHY_FILE}, because
+  banning is a publish-time gate over a file that only grows. When a run finds
+  material that should not be public, add the row to {BAN_IMAGES_CSV} with a
+  reason before the run ends.
 * This prompt does not create, move, or edit any page under {SITE_DIR}, does
   not touch {SITE_DIR}/sidebars.ts, and does not modify {PAGES_CSV}. The
   YAML is the plan; publishing is a later prompt.

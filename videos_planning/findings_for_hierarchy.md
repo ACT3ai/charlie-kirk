@@ -490,3 +490,98 @@ p_yaml_to_site.md generates the Level 5 pages and stamps them.
   3. Hand-bind the 90 unbound corpus clusters to site pages (section 7a).
   4. Transcribe the 33, re-run the 38 partials (section 4).
   5. Harvest blocks[].start/end timing out of the .ocr sidecars (section 3).
+
+## Stage 3 write-up findings
+
+### agent_06
+
+* Vid_4k_Full_56bSKCp - transcript AND ai_description both describe a Michigan House Election Integrity Committee hearing (Lansing, HOUSE TV stamp 06/03/25), not UVU footage. Entry is unverifiable as filed; media needs opening.
+* Vid_Ryne_Simmons_bPUC272 - ai_description identifies the event footage as the July 2024 Butler PA rally; its own on-screen text list reads "THE AMERICAN COMEBACK TOUR" (UVU, Sept 10 2025).
+* Vid_Short_Video_Clip_Captures_qzHCQmC, Vid_Short_Video_Clip_Captures_s4Sc3Ex, Vid_Video_Captures_Live_Outdoor_qNoKV2w, Vid_Video_Captures_Chaotic_Scene_2GZEXPr - ai_descriptions name the seated Prove Me Wrong speaker as Steven Crowder; it is Charlie Kirk.
+* Vid_Short_Raw_Documentary_Style_VNHn6qz - ai_description places the event at University of Washington, Seattle; it is UVU.
+* Vid_4k_60fps_South_5duWBzw - ai_description guesses Denver, Colorado and reads the post-shot scramble as security tackling a disruptor; neither is supported.
+* Vid_3_Drones_PfsVmL5 - filed in the drone cluster but no aerial object appears; ai_description also guesses Phoenix, Arizona.
+* Vid_5_No_Drones_Ae575Xv - filed in the drone cluster; filename and footage both confirm no drone. Kept as a control angle.
+* Vid_12_Short_Drone_Video_AV87bDo and Vid_Crowdsource_Truth_Do_Any_1966510 - same underlying 16s clip (identical timecode 00;13;11;07, watermark, audio, magnifier loop) held as two entries.
+* Vid_Ryan_1_k6rkFas and Vid_Jammles_ShadowofEzra_Says_Photos_1982156 - Vid_Ryan_1 embeds the whole of the Jammles clip behind 67s of commentary; overlapping content in one cluster.
+* Vid_Censorship_Ld3J1DY - filed under "Censorship of the Investigation" but contains no suppression claim; it is Gov. Cox broadcast material on social media harms. Fits as official-speech, not suppression.
+* Vid_David_Nino_Rodriguez_Man_1982164 - ai_description guesses Las Vegas, Nevada with nothing on screen supporting it.
+* Vid_Bechedith_Re_Baroncoleman_VLuvMully_2076295 - ai_description reads the booking-sheet arrest date as 09/11/2021; the document is 2025.
+* Vid_FaithDrivUr_Narrator_Says_Police_2078917 - the courtroom exhibit monitor timecode reads 9/10/2021 9:24:48 AM; camera clock year error, footage is Sept 10 2025.
+* Vid_MarioNawfal_Erika_Kirk_Takes_6L9661F - no media file, no transcript, no ai_description; only archived post text exists. Page written without a player.
+
+### agent_01
+
+* Vid_TBD_mwSLnKH - State Farm Stadium (Glendale, AZ) memorial footage filed in the "South Side Shot Analysis" ballistics cluster; own frames contradict the filing.
+* Vid_Funneral_dKD6hNm - same misfiling (Glendale memorial pan). Also the file has NO audio stream at all, contradicting the ai_description's account of ambient crowd noise.
+* Vid_South_Side_ZXD4iw6 - ai_description places the clip at the AGR building, Butler PA; it is the UVU courtyard (matching interior appears in Vid_Inside_Vents_R8NRStG).
+* Vid_South_Side_Stairs_KuQuRkf - ai_description guesses Washington DC; it is UVU. Transcript is completely empty (music-only edit).
+* Vid_Mile_Kovacevic_HustleBitch_Between_1971989 - ai_description places it at Mt. San Antonio College, Walnut CA; it is UVU.
+* Vid_Project_Constitution_MIND_BLOWING_1978201 - ai_description guesses Salt Lake City; it is Orem/UVU.
+* Vid_Short_Video_Clip_Captures_xrYHJoc - ai_description reads the instant of the shot as a man tackling the questioner to the ground; the audio is the final Q&A exchange and every other angle shows a mass startle drop. Automated "tackle" reading is wrong.
+* Vid_Thomas_Perera_Am_JohnCullen_1977744_3 - ai_description reads the SAME instant as a "sucker punch" and places it in Seattle WA; both wrong. Two independent automated misreads of the same second.
+* Vid_Thomas_Perera_Am_JohnCullen_1977744 - ai_description says Butler PA / Trump rally; the transcript says "Charlie's sitting there" and the banner reads PROVE ME WRONG. It is UVU.
+* Vid_Thomas_Perera_Am_JohnCullen_1977744_2 - ai_description says Butler PA with Trump at the podium, yet records YREFY/YREFY.COM banners behind the podium and UVU stage audio. It is UVU.
+* Vid_14_Visible_Ia_VinKu55 vs Vid_14_Visible_d1k73u7 - same footage, two audio passes; the machine transcripts contradict each other on the key line ("There's NO shot fired right now" vs "He's been shot"). Neither is quotable as testimony.
+* Vid_Wendy7839570959_Witness_Camera_Saying_2079042 - ai_description of the inset footage reads it as a white substance splashed on a man's face; the inset audio is the pre-shot stage exchange, so that reading does not fit.
+* Vid_Sword_Truth_Hey_Troofevades_2016609 - the clip is an AI-generated illustration (poster says he asked Grok to imagine it); the aerial background is a generic red-brick quad, not UVU, and "0.4mm Algorithm Precision" is not physically meaningful. Transcript is boilerplate artefact text.
+* Vid_Conman_Please_Share_Video_1977286_3 - transcript is noise only ("Thank you. You"); the clip has no speech, so the drone claim exists only in the post text.
+* Vid_Inside_Vents_R8NRStG - transcript is the lyrics of the backing song, not speech; risks being read as narration or testimony.
+* Vid_Shiloheffort_Media_Orig_SH4D0W_2077994_2 - the poster framing archived in Charlie_Kirk.txt describes a question about HAND movements; the held edit marks hair-touching. Archived claim and held artefact do not match.
+* Vid_Side_Shot_rjArE7Q and Vid_Side_Shot_2_EB6QBt1 - the same presentation held twice (6:53 short cut, 13:08 full cut) as two separate cluster entries.
+* Vid_Yard_1_EpS4n6m and the Vid_14_Visible pair - the name "Isaac" is called in both; possibly the same filming party, worth checking before treating them as independent captures.
+* Vid_Aducarrabh_Slow_Motion_Object_8MBbCYs, Vid_Dr_Speaker_Heart_Shot_M4NUARg, Vid_Bizarro_Videos_Vest_Ricochet_HS3Fpz7, Vid_Cashloren_Glenn_Beck_Tells_wvJ1rfZ - no media, no transcript, no ai_description; written from archived post text (and, for two of them, transcripts preserved in Charlie_Kirk.txt).
+* PUBLICATION RISK - Vid_Side_Shot_rjArE7Q / Vid_Side_Shot_2_EB6QBt1 name no one but point on screen at two identifiable private bystanders and assert they shot Charlie Kirk. Both are currently "pending"/unpinned. They should not be pinned and made playable without a review.
+* PUBLICATION RISK - Vid_Shiloheffort_Media_Orig_SH4D0W_2077994 and _2 are already pinned and playable, and the short edit puts a named living private individual on screen with the caption "Actor?". Counterpoints are carried in the write-ups, but the embeds themselves carry the accusation.
+
+### agent_03
+
+* Vid_John_Cullen_BenSwann_Thought_1969719, Vid_John_Cullen_SharylAttkisson_4_1969372, Vid_Charo_BlakeBednarz_Grok_Attached_1978846 - whisper transcripts contain only the filler token "you" repeated; all three videos are genuinely silent, so the sidecar is correct but useless. Lean on ai_description.
+* Vid_Spy_Plane_Analysis_oW3EvAi and Vid_Blake_Bednarz_Original_Post_1978553 - identical recording held twice; transcripts match word for word. One is credited to Bednarz, one filed untitled.
+* Vid_Alley_Files_Oh_Wow_2032224 and Vid_Red_Pill_Dispenser_Official_2038934 - same broadcast segment; the Red Pill copy is a phone pointed at a monitor and adds ~20s of preamble, the Alley Files copy runs longer and is cleaner.
+* Vid_Charo_BlakeBednarz_Grok_Attached_1978846 - content is a chatbot output asserting the low passes were routine drone-retrieval training, i.e. exculpatory; filed inside the spy-plane cluster where it reads as supporting evidence. Also names a crew roster that conflicts with a second roster in CK_FILE.
+* Vid_Alley_Files_Another_Video_2033665 - ai_description reads the post-shot close-protection response as a spectator vaulting the barrier and tackling the speaker, and names the seated man as Steven Crowder. Both wrong; potential libel source if copied into prose.
+* Vid_Alley_Files_Heres_Short_2044122 - ai_description again names the speaker Steven Crowder.
+* Vid_Blood_Hands_Black_Shirt_t7yTCYe and Vid_Blood_Hands_Black_Shirt_UESJx2U - filenames promise a black-shirted person with blood on their hands; neither ai_description records blood or such a person. Clip 1 is an older man being carried from the plaza by officers; clip 2 is 10s of crowd on the stairs.
+* Vid_Blood_Hands_Black_Shirt_t7yTCYe - ai_description places the location in Longmont, Colorado; it is the UVU plaza.
+* Vid_Blood_Hands_Black_Shirt_UESJx2U - ai_description guesses Fort Collins, Colorado; tent text ("AMERICAN...", "PROVE ME WRONG") fixes it as UVU.
+* Vid_Project_Constitution_URGENT_CALL_1981171 - ai_description guesses Butler, Pennsylvania; American Comeback / Prove Me Wrong branding fixes it as UVU.
+* Vid_Muppet_Masher_Comes_Under_2066468 - post caption asserts something comes from under the subject's shirt; ai_description describes the opening body movement as laughter and records no shirt, blood or injury. Needs a human frame-by-frame before it is used as evidence.
+* Vid_Meidas_Charise_Lee_MONEY_2029848 - dates its own source (a "February 2026 Epstein ledger") after the events it purports to explain, names entities that do not match the documented TPUSA corporate structure, and accuses several named living people. Unusable as evidence.
+* Vid_Rubber_Duck_TM_REMEMBER_2032172 - archival 2012 CNN Sandy Hook footage with a hoax-framing caption, no connection to this investigation. Recommend removal from the public hierarchy.
+* Vid_Sword_Truth_Https_T_2033545 - 8:23 anonymous monologue accusing a named living widow of complicity and guilt with zero documentation, plus abusive language. Recommend removal from the public hierarchy.
+* Vid_Teacher_Lounge_Shooter_4uXg3De - no ai_description sidecar at all (transcript only). Filed under the Teachers Lounge cluster but is a George Webb livestream about shot geometry, not that room. Back half contains sustained unverified allegations against a named serving federal official plus speculation about private individuals' identities; only the front section is publishable.
+* Vid_Project_Constitution_ALERT_BREAKING_1986565 - filed under the Piper N59906 cluster but is almost entirely about low-altitude drones and security jurisdiction; the fixed-wing aircraft is not its subject.
+* Vid_Project_Constitution_ALERT_BREAKING_1986847 - whisper transcript is empty (music-only clip). Also: the graphics half and the aerial-imagery half are never joined by anything on screen, and the tail number is never shown.
+* Vid_ProjectConstitu_FBI_Ignored_Eyewitnesses_2045871 / _2 - the two entries are the two clips of one X post; _2 (the shorter) is a CNN broadcast segment, _1 (the longer) is a studio commentary monologue. Neither title reflects that.
+* Vid_Project_Constitution_Breaking_Newly_1979071 - ai_description identifies the walking subject as "likely Dylan Rounds," a person from an unrelated Utah missing-person case; wholly wrong and it also seeded the page description.
+* Vid_Project_Constitution_Breaking_Newly_1979071 - transcript is ASR filler over a silent clip ("I'm not sure. Okay." repeating). Not a transcript.
+* Vid_Troofevades_Demonstration_Real_Shaped_2071072 - same ASR-filler-over-silence failure; qwen3-asr output is unusable.
+* Vid_Tyler_Running_xJyU633 - filed and named as Tyler running; the six seconds show an interior pan across the UVU Hall of Flags with staff at tables. Nobody is running and nobody is identifiable.
+* Vid_0HOUR_Hey_Jimmy_Rustlin_1965902 - filed under Tyler Robinson Footage; the frames show a small white object crossing the sky, not a person. Belongs nearer the drones/airborne-object cluster.
+* Vid_Clothing_Change_qHbnd8p and Vid_Clothing_Change_Copy_YMV1Zzv - duplicates of the same Gov. Cox press-conference answer (22s vs 23s subtitled). Two cluster slots for one artefact.
+* Vid_Blake_Bednarz_UVU_Reviews_1981078 and _1981078_2 - near-duplicate pair from the same post (#1 and #2), both 31s. Same issue.
+* Vid_Blake_Bednarz_UVU_Reviews_1981078 - transcript mishears "gang violence" as "gang buttons"; the companion capture renders it correctly.
+* Vid_Blake_Bednarz_Reward_Current_1978863 - transcript is the same half-sentence looping ~6 times, which is accurate to the file but reads as a broken transcript.
+* Vid_Virginia_Tech_Sept_4_BJ8f2PK - file name carries a September 4 date but the speech is plainly post-assassination (Kelly speaks of Kirk in the past tense and of the courage of attending "given what happened"). Stored date is wrong.
+* Vid_SAS_July_11_PrD4MBV - ai_description shot list ends at 22:26 with the outro card, against a stated 32:27 runtime; capture appears to include trailing material.
+* Vid_Megyn_Kelly_Charlie_Kirk_YWSyzDK - is a 2:14 excerpt of Vid_SAS_July_11_PrD4MBV (same July 11 SAS conversation). Both are held as separate cluster entries; the relationship is now stated on both pages.
+* Vid_Realhonestash_Source_Clip_UFaZsYm - no transcript, no ai_description, no local file, no sha256; only a CID and a source URL shared with Vid_Realhonestash_Candace_Owens_Covers_2069185. Page written honestly as "not established".
+* Vid_Realhonestash_Candace_Owens_Covers_2069185 - archive copy is an .mp3 audio extraction, so no visual description can exist; "What The Footage Shows" says so rather than guessing.
+* Vid_Realstewpeters_Stew_Peters_Explains_2069997 - transcript renders "Elbit Systems of America" phonetically as "Albert Systems of America" throughout (Charlie_Kirk.txt already carries the bracketed correction), and "McEwen, Tennessee" as "Macau"/"McCowan".
+* Vid_Muppet_Masher_TommyLaRussoLLC_2075684 and Vid_Project_Constitution_Breaking_Newly_1979071 - appear to be the same Wyze porch camera on the same morning (stamps 08:22:50 and 08:22:30), filed as unrelated entries by different posters.
+* PUBLICATION CAUTION - Vid_Blake_Bednarz_Who_Guy_1985423 is a crowdsourced "who is this guy?" request that isolates and zooms on an unnamed young event volunteer who is doing nothing but handling merchandise. Currently pending/unpinned. It should not be pinned and made playable without a review; the write-up names no one and states no conduct is alleged.
+* PUBLICATION CAUTION - Vid_Project_Constitution_BREAKING_CHARLIE_1976506 points on screen at an unidentified person running during the evacuation and asserts in text that he is the shooter, while simultaneously running a "DO YOU KNOW THIS PERSON?" appeal. Pending/unpinned; same review recommendation.
+* Vid_High_Res_Table_Item_jY48QtB - ai_description labels the clip as Butler PA, July 13 2024, with Benny Johnson at the desk; the signage it itself lists (TURNING POINT USA, YREFY.COM, AMERICAN COMEBACK) is UVU on Sept 10 2025.
+* Vid_Vide_353_3mwXTjc - ai_description names the man at the table as Steven Crowder and calls the event his tour; it is the TPUSA Prove Me Wrong table at UVU.
+* Vid_DguzChVxdJ3Fq5m2_mqMvtwW - same Steven Crowder misattribution on a second file; the machine pass makes this error repeatedly across the corpus.
+* Vid_In2ThinAir_WATCH_Charlie_Kirks_1972341 - ai_description reads the footage as three men praying and then a medical episode; it is the seconds after the shot at the table, per the post's own caption and the folder it sits in.
+* Vid_Project_Constitution_EXCLUSIVE_BRAND_1977138 - ai_description states the questioner "physically attacks a security guard" and calls him argumentative and the instigator of a fight. No attack is on the recording; the audio at that instant is the last Q&A line. This is the most harmful automated misread found in this batch and it was retracted explicitly on the page.
+* Vid_Erika_Evil_Doors_XsWAQXY - ai_description does not identify the speaker at all (calls her an unnamed blonde presenter delivering a PBS news segment) and reads the memorial placard as "a sign for a boy named Charlie". The 17 minutes are Erika Kirk's address; the PBS card is only the broadcaster's end slate.
+* Vid_ProjectConstitu_Project_Constitution_Video_2002152 - ai_description calls the montage a memorial slideshow commemorating the life of Bobby Harpole. The site's own profile records him as living; the funeral-home item relates to the family's funeral-services background.
+* Vid_MvCUbhcVsUi8L9G_YPH91X5 vs Vid_RyanMatta_BlakeBednarz_RealCandaceO_IanCarrollShow_1968566 - two passes over near-identical UVU exterior camera footage stamped 9/10/2025 12:23:35 disagree on the subject: one reads a long-barrelled rifle in both hands, the other a backpack and no carried object.
+* Vid_Vide_35_kKkV3NJ appears to be a subset of Vid_XBHHgwl_EZFACOKB_ptfhcUv (same LDS exchange audio, same angle) but the two are filed in different clusters - Vid_Table_Charlie and Vid_Raw_Shooting_860c. Worth deduplicating or cross-referencing.
+* CLUSTER FILING - Vid_RyanMatta_FBI_Needs_Immediately_1984001, _1984014 and Vid_Project_Constitution_NEW_AndrewKolvet_1975655 are filed under Vid_UVU_Venue / Citizen Analysis of the Footage (Part 5). None of the three is analysis of UVU footage: two are studio commentary about Egyptian flight records, one is a Charlie Kirk Show segment about a text chain. Same problem in Part 3 with Vid_Censored_Humans_Charlie_Kirk_2019832 (studio Epstein monologue) and Vid_Final_Cut_Tile_Why_2033216 (AmericaFest stage debate).
+* Empty or unusable transcripts in this batch: Vid_High_Res_Table_Item_jY48QtB, Vid_In2ThinAir_WATCH_Charlie_Kirks_1972341, Vid_RyanMatta_BlakeBednarz_RealCandaceO_IanCarrollShow_1968566 (all silence filler); Vid_10_Full_Video_46HJJFb ("Yes"); Vid_Hand_Off_pANvLdZ (one garbled line); Vid_FeelingThePain_HolonCitizen_Stelzner_N1150_2027989 (two syllables); Vid_MvCUbhcVsUi8L9G_YPH91X5 (recogniser hallucination over silence); Vid_French_Legionaire_F1TACDV (no audio stream at all); Vid_ProjectConstitu_Project_Constitution_Video_2002152 (music only); Vid_Vide_222_9tmMm9G (distant PA, unattributable).
+* PRIVACY - ai_descriptions for Vid_Public_Bureau_Investigation_Realjesseonfire_2039944 and Vid_Tate_Helmuth_BlakeBednarz_Here_1981181 record vehicle licence plate characters; Vid_ProjectConstitu_Project_Constitution_Video_2002152 names a young family member on a scholarship certificate. All three suppressed on the published pages; they should be scrubbed from videos.yaml too.
+* PUBLICATION CAUTION - Vid_French_Legionaire_F1TACDV is a slideshow that pairs a young private individual's souvenir cap with French Foreign Legion imagery and asserts he stood inside a restricted zone. It names nobody but shows his face from six angles. It is currently unpinned; pinning it would publish a face-based identification resting on a tourist cap.
