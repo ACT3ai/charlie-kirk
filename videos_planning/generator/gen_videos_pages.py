@@ -32,6 +32,7 @@ POSTERS  = os.path.join(SITE, 'static', 'img', 'video_posters')
 CSSFILE  = os.path.join(SITE, 'internals', 'src', 'css', 'custom.css')
 PAGESCSV = os.path.join(ROOT, 'pages.csv')
 EXCLUDE  = os.path.join(ROOT, 'videos_planning', 'exclude_videos.txt')
+BANCSV   = os.path.join(ROOT, 'videos', 'ban_videos.csv')
 OUTJSON  = os.path.join(HERE, 'generated_pages.json')
 IPFS     = '/opt/homebrew/bin/ipfs'
 FFPROBE  = '/opt/homebrew/bin/ffprobe'
@@ -127,12 +128,30 @@ import yaml as _yaml
 print('loading videos.yaml ...', flush=True)
 DATA = _yaml.safe_load(open(YAML, encoding='utf-8'))
 
-excluded = set()
+# THE BAN SET is the UNION of two sources (see the repo charter, "Banned Media"):
+#   videos/ban_videos.csv          — the newer master, carries reason + a
+#                                    true/false switch, so a row can un-ban.
+#   videos_planning/exclude_videos.txt — the older one-identifier-per-line list.
+# An item banned in EITHER gets no page, and any page it already has is deleted.
+excluded, unbanned = set(), set()
 if os.path.exists(EXCLUDE):
     for line in open(EXCLUDE, encoding='utf-8'):
         line = line.split('#')[0].strip()
         if line:
             excluded.add(line)
+ban_rows = 0
+if os.path.exists(BANCSV):
+    for row in csv.DictReader(open(BANCSV, encoding='utf-8')):
+        ids = [str(row.get(k) or '').strip() for k in ('sha256', 'cid', 'file_path')]
+        ids = [i for i in ids if i]
+        if not ids:
+            continue
+        ban_rows += 1
+        if str(row.get('banned') or '').strip().lower() == 'false':
+            unbanned.update(ids)          # explicit un-ban: the row records the decision
+        else:
+            excluded.update(ids)
+excluded -= unbanned
 
 class Node:
     __slots__ = ('lvl','key','title','raw','parent','kids','vids','rec','dirpath','page','bypass','bypass_target')
@@ -184,11 +203,22 @@ for r in roots:
     recount(r)
 
 # ------------------------------------------------------ exclusion + publishable
-skipped_excluded = [r for r in videos
-                    if (r['v'].get('cid') in excluded or r['v'].get('sha256') in excluded)]
+def is_banned(v):
+    for k in ('cid', 'sha256', 'file_path'):
+        val = (v.get(k) or '').strip()
+        if val and val in excluded:
+            return True
+    return False
+skipped_excluded = [r for r in videos if is_banned(r['v'])]
 for r in skipped_excluded:
     r['owner'].vids.remove(r)
 videos = [r for r in videos if r not in skipped_excluded]
+banned_pages_deleted = 0
+for r in skipped_excluded:
+    sha = r['v'].get('sha256') or ''
+    poster = os.path.join(POSTERS, sha + '.jpg') if sha else ''
+    if poster and os.path.exists(poster):
+        os.remove(poster); banned_pages_deleted += 1
 for r in roots:
     recount(r)
 
@@ -983,7 +1013,8 @@ for r in videos:
 print('=' * 60)
 print('STAGE 1-4 COMPLETE')
 print(f'YAML nodes: {len(nodes)}   publishable: {len(pub_nodes)}   empty skipped: {len(empty_nodes)}')
-print(f'Videos: {len(videos)} unique  (duplicate cross-filings folded: {dupes}, excluded: {len(skipped_excluded)})')
+print(f'Videos: {len(videos)} unique  (duplicate cross-filings folded: {dupes}, banned: {len(skipped_excluded)})')
+print(f'Ban set: {len(excluded)} identifiers  (ban_videos.csv rows: {ban_rows}, un-banned rows honoured: {len(unbanned)})')
 print(f'Cluster pages: {c_new} created, {c_old} rewritten   bypassed in nav: {len([n for n in pub_nodes if n.bypass])}')
 print(f'Video pages:   {v_new} created, {v_old} rewritten')
 print(f'Players: {modes.get("ipfs",0)} IPFS (pinned), {modes.get("thirdparty",0)} third-party embed, '

@@ -20,6 +20,7 @@ import os, re, sys, csv, json, math, yaml, collections
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from sanitize_common import q_prose, q_identity, validate_no_invisible
+from ban_set import load_ban_shas
 
 HOME = os.path.expanduser('~')
 ROOT = os.path.join(HOME, 'BGit/Bryan_git/charlie-kirk')
@@ -159,12 +160,9 @@ def cmd_build():
     index, n_csv, n_fs, n_drop = build_index()
     keys = list(index)
 
-    excluded = set()
-    if os.path.exists(EXCLUDE_FILE):
-        for line in open(EXCLUDE_FILE, encoding='utf-8'):
-            line = line.split('#', 1)[0].strip()
-            if re.fullmatch(r'[0-9a-f]{64}', line):
-                excluded.add(line)
+    # Union of images/ban_images.csv and exclude_images.txt — repo charter,
+    # "Banned Media". A banned image is never planned onto any page.
+    excluded = load_ban_shas(EXCLUDE_FILE)
 
     # ---- page term vectors
     page_toks = {}
@@ -296,12 +294,9 @@ def cmd_plan():
     doc = yaml.safe_load(open(YAML_PATH, encoding='utf-8'))
     index, n_idx, n_fs, n_drop = build_index()
 
-    excluded = set()
-    if os.path.exists(EXCLUDE_FILE):
-        for line in open(EXCLUDE_FILE, encoding='utf-8'):
-            line = line.split('#', 1)[0].strip()
-            if re.fullmatch(r'[0-9a-f]{64}', line):
-                excluded.add(line)
+    # Union of images/ban_images.csv and exclude_images.txt — repo charter,
+    # "Banned Media". A banned image is never planned onto any page.
+    excluded = load_ban_shas(EXCLUDE_FILE)
 
     idf, inverted, title_toks = _page_vectors(index)
 
@@ -499,12 +494,9 @@ def _validate_and_emit(doc, index):
 def cmd_write():
     doc = yaml.safe_load(open(YAML_PATH, encoding='utf-8'))
     index, *_ = build_index()
-    excluded = set()
-    if os.path.exists(EXCLUDE_FILE):
-        for line in open(EXCLUDE_FILE, encoding='utf-8'):
-            line = line.split('#', 1)[0].strip()
-            if re.fullmatch(r'[0-9a-f]{64}', line):
-                excluded.add(line)
+    # Union of images/ban_images.csv and exclude_images.txt — repo charter,
+    # "Banned Media". A banned image is never planned onto any page.
+    excluded = load_ban_shas(EXCLUDE_FILE)
 
     # agent rows: {"sha": ..., "node": ..., "pages": [path, ...]}
     # Agents are handed docs-relative candidate keys (FBI/overview.mdx) to save

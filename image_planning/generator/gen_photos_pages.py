@@ -137,16 +137,52 @@ def norm_key(k):
 
 # ---------- publish-time exclusion gate ----------
 # Some entries in the hierarchy must never be published (private personal
-# material swept into the mirror by accident). The YAML is read-only to this
-# generator, so the gate lives here and is re-applied on every run.
+# material swept into the mirror by accident, or content we will not show). The
+# YAML is read-only to this generator, so the gate lives here and is re-applied
+# on every run.
+#
+# THE BAN SET is the UNION of two sources (see the repo charter, "Banned Media"):
+#   images/ban_images.csv            — the newer master, carries reason + a
+#                                      true/false switch, so a row can un-ban.
+#   image_planning/exclude_images.txt — the older one-sha256-per-line list.
+# An item banned in EITHER gets no page and no served copy, and any page or
+# static copy it already has is deleted.
 EXCLUDE_FILE = os.path.join(THIS, "exclude_images.txt")
+BAN_CSV = os.path.join(ROOT, "images", "ban_images.csv")
 EXCLUDED = set()
+BANNED_IDENTS = set()          # sha256 + cid + file_path forms, for CSV matching
+UNBANNED_IDENTS = set()
 if os.path.exists(EXCLUDE_FILE):
     with open(EXCLUDE_FILE, encoding="utf-8") as f:
         for line in f:
             line = line.split("#", 1)[0].strip()
             if re.fullmatch(r"[0-9a-f]{64}", line):
                 EXCLUDED.add(line)
+if os.path.exists(BAN_CSV):
+    with open(BAN_CSV, encoding="utf-8") as f:
+        for row in csv.DictReader(f):
+            ids = [str(row.get(k) or "").strip()
+                   for k in ("sha256", "cid", "file_path")]
+            ids = [i for i in ids if i]
+            if not ids:
+                continue
+            if str(row.get("banned") or "").strip().lower() == "false":
+                UNBANNED_IDENTS.update(ids)   # explicit un-ban; the row records it
+            else:
+                BANNED_IDENTS.update(ids)
+BANNED_IDENTS -= UNBANNED_IDENTS
+EXCLUDED -= UNBANNED_IDENTS
+# A CSV row identified by sha256 also feeds the sha-keyed static purge below.
+EXCLUDED |= {i for i in BANNED_IDENTS if re.fullmatch(r"[0-9a-f]{64}", i)}
+
+
+def entry_is_banned(i):
+    """True when this hierarchy entry matches a ban row by sha256, cid, or path."""
+    for k in ("sha256", "cid", "file_path"):
+        v = str(i.get(k) or "").strip()
+        if v and v in BANNED_IDENTS:
+            return True
+    return False
 
 
 # ---------- publish-time media-type gate: /Photos is STILL IMAGES ONLY ----------
@@ -254,7 +290,7 @@ def skip_entry(i):
     or "" to publish. UNKNOWN is skipped, not published: every known bad entry
     is an extensionless IPFS CID with an empty sha256, and assuming that shape
     is an image is exactly what published the nine video pages."""
-    if (i.get("sha256") or "") in EXCLUDED:
+    if (i.get("sha256") or "") in EXCLUDED or entry_is_banned(i):
         return "excluded"
     if entry_is_video(i):
         return "video"

@@ -530,3 +530,108 @@ Never place Docusaurus UI pages inside laws/. Never place law drafts or
 research notes inside site/docs/Fix/. The laws/ directory is a drafting
 workspace; site/docs/Fix/ is the published output.
 
+
+
+== Banned Media (ban_images.csv / ban_videos.csv) ==
+
+BAN_IMAGES_CSV is file {ROOT_DIR}/images/ban_images.csv
+BAN_VIDEOS_CSV is file {ROOT_DIR}/videos/ban_videos.csv
+
+IMAGES_YAML is file {ROOT_DIR}/images/images.yaml
+VIDEOS_YAML is file {ROOT_DIR}/videos/videos.yaml
+
+These two CSV files list the images and videos we do NOT want shown on the
+public site. They are the MASTER location for that decision. The YAML master
+data files carry the decision as a property, but they carry it because it was
+copied down out of the CSV — the CSV is the source of truth and the YAML is
+downstream of it.
+
+=== The banned Property ===
+
+Every image entry in {IMAGES_YAML} carries:
+
+    banned: true | false
+
+Every video entry in {VIDEOS_YAML} carries:
+
+    banned: true | false
+
+The key is always present on every entry, always a real boolean, never null and
+never a missing key — same rule as every other field in those files. Default is
+false. An entry is banned: true only because a row for it exists in the CSV.
+
+=== Direction Of Flow ===
+
+    ban_images.csv  ──▶  images/images.yaml  ──▶  site/docs/Photos/ pages
+    ban_videos.csv  ──▶  videos/videos.yaml  ──▶  site/docs/Videos/ pages
+
+Edits go in the CSV. Never hand-edit banned: in the YAML — the next sync
+overwrites it. Never treat the YAML as the place where the ban was decided.
+
+=== CSV Format ===
+
+Header row, then one row per banned item. Columns:
+
+  sha256        The sha256 hex digest of the media file. Primary identity —
+                survives renames, moves, and duplicate copies.
+  cid           The IPFS CID ("Qm..." CIDv0) when one is assigned, else empty.
+                Secondary identity: a video may have a cid and an empty sha256
+                when the bytes are not on this machine.
+  file_path     Full path from ~ to the file. For humans reading the CSV and as
+                a last-resort match key. Not authoritative — files move.
+  banned        true or false. Normally true. A row set to false is an explicit
+                un-ban: the row stays as a record of the decision and its
+                reason, and the item publishes normally.
+  reason        Short plain-text reason (why we will not show this). Required.
+  date_added    YYYY-MM-DD the row was added.
+
+Match an entry by sha256 first, then cid, then file_path. Any match bans it.
+An item with no row in the CSV is banned: false.
+
+=== No Level 5 Page When Banned ===
+
+When banned is true, there is NO Level 5 page for that item:
+
+  * No page under {SITE_DIR}/docs/Photos/ for a banned image.
+  * No page under {SITE_DIR}/docs/Videos/ for a banned video.
+  * If such a page already exists, the generator DELETES it.
+  * No served copy under {SITE_DIR}/internals/static/img/evidence/ (images) —
+    delete it if present. A page that omits the accusation in its prose is not
+    enough; the file itself must stop being served.
+  * The item is removed from should_be_on_pages and must not be embedded on any
+    other page anywhere on the site.
+  * Any IPFS pinning job filters banned entries out before it pins. Pinning is
+    public and irreversible in practice.
+
+The entry itself is NEVER deleted from {IMAGES_YAML} or {VIDEOS_YAML}. Those
+files only grow. Banning is a publish-time gate, so it survives every
+regeneration of the hierarchy.
+
+=== Relationship To The exclude_*.txt Files ===
+
+  {ROOT_DIR}/image_planning/exclude_images.txt
+  {ROOT_DIR}/videos_planning/exclude_videos.txt
+
+These are the older sha256-per-line never-publish lists and they still work.
+The CSV files are the newer, richer form: they carry the cid, the path, the
+reason, the date, and a true/false switch instead of presence-in-a-file.
+
+Treat the union as the ban set — an item listed in EITHER the CSV or the
+matching exclude_*.txt is banned. New bans go in the CSV. Do not remove entries
+from the exclude_*.txt files to "move" them; leave them and add the CSV row.
+
+=== Keeping Them In Sync ===
+
+Whenever a CSV changes, re-sync before generating pages:
+
+  1. Read {BAN_IMAGES_CSV} / {BAN_VIDEOS_CSV}.
+  2. Walk every entry in {IMAGES_YAML} / {VIDEOS_YAML} and set banned to match.
+     Entries with no CSV row get banned: false.
+  3. Verify the YAML still parses (yaml.safe_load) and contains no invisible
+     Unicode.
+  4. Re-run the page generators, which delete pages and served copies for
+     newly banned items and keep {PAGES_CSV} in sync.
+
+Safe programmatic edits to {IMAGES_YAML} reuse the emit/recount helpers in
+image_planning/generator/bind_image_pages.py so the file round-trips
+byte-for-byte; the video side uses videos_planning/generator/emit_yaml.py.

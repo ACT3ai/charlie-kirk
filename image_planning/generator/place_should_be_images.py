@@ -45,12 +45,21 @@ def expu(p):
 
 
 # ---------------------------------------------------------------- exclusion gate
-EXCLUDED = set()
-if os.path.exists(EXCLUDE_FILE):
-    for line in open(EXCLUDE_FILE, encoding="utf-8"):
-        line = line.split("#", 1)[0].strip()
-        if re.fullmatch(r"[0-9a-f]{64}", line):
-            EXCLUDED.add(line)
+# Union of images/ban_images.csv and image_planning/exclude_images.txt — see the
+# repo charter, "Banned Media". A banned image is never placed on any page.
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from ban_set import load_ban_idents          # noqa: E402
+
+BANNED_IDENTS, _UNBANNED = load_ban_idents(EXCLUDE_FILE)
+EXCLUDED = {i for i in BANNED_IDENTS if re.fullmatch(r"[0-9a-f]{64}", i)}
+
+
+def entry_is_banned(inner):
+    for k in ("sha256", "cid", "file_path"):
+        v = str(inner.get(k) or "").strip()
+        if v and v in BANNED_IDENTS:
+            return True
+    return False
 
 # ---------------------------------------------------------------- pages.csv urls
 csv_url_by_file = {}
@@ -173,7 +182,7 @@ for inner, kind in entries:
         continue
     n_with_sb += 1
     sha = inner.get("sha256") or ""
-    if sha in EXCLUDED:
+    if sha in EXCLUDED or entry_is_banned(inner):
         skipped_excluded += 1
         continue
     ip = inner.get("image_page") or ""

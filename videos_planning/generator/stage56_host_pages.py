@@ -27,8 +27,30 @@ GEN      = os.path.join(HERE, 'generated_pages.json')
 IPFS     = '/opt/homebrew/bin/ipfs'
 CAP      = 6
 
+# The ban set is re-checked here against the identity, never inherited on trust
+# from whatever wrote generated_pages.json. Union of ban_videos.csv (master) and
+# exclude_videos.txt (older list); a CSV row with banned=false is an un-ban.
+BANCSV  = os.path.join(ROOT, 'videos', 'ban_videos.csv')
+EXCLUDE = os.path.join(ROOT, 'videos_planning', 'exclude_videos.txt')
+banned, unbanned = set(), set()
+if os.path.exists(EXCLUDE):
+    for line in open(EXCLUDE, encoding='utf-8'):
+        line = line.split('#')[0].strip()
+        if line:
+            banned.add(line)
+if os.path.exists(BANCSV):
+    for row in csv.DictReader(open(BANCSV, encoding='utf-8')):
+        ids = [str(row.get(k) or '').strip() for k in ('sha256', 'cid', 'file_path')]
+        ids = [i for i in ids if i]
+        if not ids:
+            continue
+        (unbanned if str(row.get('banned') or '').strip().lower() == 'false' else banned).update(ids)
+banned -= unbanned
+
 G = json.load(open(GEN, encoding='utf-8'))
-VIDS = G['videos']
+VIDS = [v for v in G['videos']
+        if not any((v.get(k) or '').strip() in banned for k in ('cid', 'sha256', 'file_path'))]
+BANNED_N = len(G['videos']) - len(VIDS)
 
 url_by_file = {}
 for row in csv.DictReader(open(PAGESCSV, encoding='utf-8')):
@@ -237,6 +259,7 @@ for fp, vids in sorted(plan.items()):
         s6_img_touched.append(os.path.relpath(fp, ROOT))
 
 print('=' * 60)
+print(f'Ban set: {len(banned)} identifiers   videos withheld from both stages: {BANNED_N}')
 print('STAGE 5 COMPLETE')
 print(f'Host pages scanned: {len(stage5)}   host pages edited: {s5_pages}')
 print(f'Video embeds linked: {s5_links}   already linked (skipped): {s5_already}')
