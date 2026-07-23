@@ -24,7 +24,19 @@ Research/Charlie_Kirk.txt
 
 # IPFS videos directory
 IPFS/videos/
-videos/
+
+# videos/ — the media never lands in the repo (it is pulled from IPFS), but the
+# metadata that describes it must travel with the repo. Use "videos/*" rather
+# than "videos/" so the negations below can re-include named files; git will not
+# re-include anything inside a directory that is itself excluded.
+# videos.yaml is the video evidence hierarchy, the counterpart of
+# images/images.yaml. Add a new negation here rather than force-adding by hand.
+videos/*
+!videos/.gitignore
+!videos/videos.yaml
+!videos/manifest.yaml
+!videos/videos.md
+
 .transcribe/
 /videos/2045116771431321829.mp3
 /site/internals/static/img/All_Laws.jpeg

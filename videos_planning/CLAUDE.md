@@ -1,3 +1,10 @@
+THIS IS THE VIDEOS CHARTER. It is NOT a copy of image_planning/CLAUDE.md and it
+must never be overwritten by one. If the line below this block says
+"THIS_DIR dir is {ROOT_DIR}/image_planning", this file has been clobbered by a
+copy from the images pipeline and the videos charter has been lost — restore it
+before doing any work. The sibling images charter lives at
+{IMAGE_PLANNING_DIR}/CLAUDE.md and is read-only from here.
+
 ROOT_DIR dir is ~/BGit/Bryan_git/charlie-kirk
 
 THIS_DIR dir is {ROOT_DIR}/videos_planning
@@ -5,6 +12,11 @@ THIS_DIR dir is {ROOT_DIR}/videos_planning
 VIDEOS_DIR dir is {ROOT_DIR}/videos
 
 HIERARCHY_FILE is file {VIDEOS_DIR}/videos.yaml
+
+  The full path is ~/BGit/Bryan_git/charlie-kirk/videos/videos.yaml and the file
+  already exists there. It sits beside the video files, exactly the way
+  {IMAGE_PLANNING_DIR}'s YAML sits at {ROOT_DIR}/images/images.yaml beside the
+  image files. There is no copy of it in {THIS_DIR} and there never should be.
 
   Created 2026-07-23 as a copy of {ROOT_DIR}/images/images.yaml with the SCHEMA
   converted to videos. Only the keys were converted. The DATA it carries is still
@@ -14,13 +26,20 @@ HIERARCHY_FILE is file {VIDEOS_DIR}/videos.yaml
   {THIS_DIR}/p_update_video_hierarchy.md. Treat anything in the file today as a
   placeholder, not as fact.
 
+  It is tracked in git. The root .gitignore excludes the {VIDEOS_DIR} directory
+  so the media never lands in the repo; the metadata files (videos.yaml,
+  manifest.yaml, videos.md, .gitignore) are re-included by explicit negation
+  rules. If a new metadata file in {VIDEOS_DIR} needs to be committed, add a
+  matching negation rather than force-adding it by hand.
+
 VIDEO_MANIFEST is file {VIDEOS_DIR}/manifest.yaml
 VIDEO_INDEX_MD is file {VIDEOS_DIR}/videos.md
-VIDEO_LIST_CSV is file {SITE_DIR}/docs/video_list.csv
 
 CK_FILE is file {ROOT_DIR}/Charlie_Kirk.txt
 
 SITE_DIR dir is {ROOT_DIR}/site
+
+VIDEO_LIST_CSV is file {SITE_DIR}/docs/video_list.csv
 
 VIDEOS_L2_DIR dir is {SITE_DIR}/docs/Videos
 
@@ -48,9 +67,13 @@ under {VIDEOS_L2_DIR} are generated from and kept in sync with.
 
 Two layers, same rule as the rest of the repo:
 
-  * Planning layer (here): the YAML tree, notes, and prompts. Private.
+  * Planning layer (here): the prompts, the charter, the layout standards, the
+    exclusion list, the findings file, and generator/. Private.
   * Published layer ({VIDEOS_L2_DIR}): the actual Level 2/3/4/5 video pages
     visitors see. Public. Defamation rules apply.
+
+The plan itself — {HIERARCHY_FILE} — lives in {VIDEOS_DIR}, not here. This
+directory holds the things that read and write it.
 
 This directory is the SIBLING of {IMAGE_PLANNING_DIR}, which does the same job
 for still images against {ROOT_DIR}/images/images.yaml and publishes to
@@ -62,10 +85,13 @@ for still images against {ROOT_DIR}/images/images.yaml and publishes to
   images/images.yaml                    videos/videos.yaml
   site/docs/Photos                      site/docs/Videos
   Img_*.mdx leaf pages                  Vid_*.mdx leaf pages
-  ck_image_sha256 frontmatter           ck_video_sha256 frontmatter
+  ck_image_sha256 frontmatter           ck_video_cid + ck_video_sha256
   PHOTOS_TOC_START/END markers          VIDEOS_TOC_START/END markers
   CK_EVIDENCE_LAYOUT css block          CK_VIDEO_LAYOUT css block
+  ck-evidence-* classes                 ck-video-* classes
   gen_photos_pages.py                   gen_videos_pages.py
+  exclude_images.txt                    exclude_videos.txt
+  served from static/img/evidence       played from a public IPFS gateway
 
 Never let one pipeline write the other's files. Both generators write into the
 same {SITE_DIR}/internals/src/css/custom.css, so each owns its OWN marked block
@@ -73,9 +99,15 @@ and touches nothing outside it — if the video generator wrote the
 CK_EVIDENCE_LAYOUT block it would silently destroy the image layout, and the
 next image run would destroy the video layout back.
 
+The same hazard applies to this directory's own files. Every file in {THIS_DIR}
+began as a copy of its {IMAGE_PLANNING_DIR} counterpart and was converted on
+2026-07-23. Re-copying any of them from the images side silently reverts that
+conversion — it has already happened once to this charter. Copy nothing in;
+edit in place.
+
 {IMAGE_PLANNING_DIR} is still useful as PRIOR ART. Its generator, its exclusion
 list, and its findings file solved these same problems once already; read them
-before reinventing. Just never edit them from here.
+before reinventing. Just never edit them from here, and never copy them here.
 
 
 == Always Read First ==
@@ -153,8 +185,9 @@ Rules that hold at every level:
 
 == videos.yaml ==
 
-{HIERARCHY_FILE} — {VIDEOS_DIR}/videos.yaml — is the single planning artifact.
-It sits in {VIDEOS_DIR} with the videos themselves. It does two jobs:
+{HIERARCHY_FILE} — ~/BGit/Bryan_git/charlie-kirk/videos/videos.yaml — is the
+single planning artifact. It sits in {VIDEOS_DIR} with the videos themselves.
+It does two jobs:
 
   1. It defines the hierarchical clusters — the Level 3, Level 4, and Level 5
      pages — including the table of contents each level needs (peer links and
@@ -171,7 +204,7 @@ landing page itself, so the top-level video cluster tree begins at level_3.
 
   * `level_3` is a tree and an array. Each array item is also called `level_3`.
   * A level_3 item may contain a `level_4` array; a level_4 item may contain a
-    `level_5` array. Same shape at every depth.
+    `level_5` array. Same shape at every depth, down to level_7 today.
 
 Fields on each cluster node (level_3 / level_4 / level_5 / deeper):
 
@@ -197,7 +230,9 @@ on_pages (a list, emits []) and ipfs_pinned (a boolean, emits false):
   cid                  The IPFS CID, CIDv0 "Qm..." form. (Spoken as "SID" — it
                        means the CID.) For videos this is the PRIMARY identity,
                        because the site plays video off public IPFS gateways and
-                       never from a copy in the repo.
+                       never from a copy in the repo. Many entries have a cid
+                       and an empty sha256, because the media file is gitignored
+                       and absent on a fresh clone.
   ipfs_pinned          Whether the local IPFS node pins those blocks. A CID
                        exists whether or not it is pinned.
   sha256               Content identity of the local file, when there is one.
@@ -210,7 +245,9 @@ on_pages (a list, emits []) and ipfs_pinned (a boolean, emits false):
                        important one for video — what was SAID.
   video_page           Full path from ~ to the published Level 5 page that hosts
                        this one video under {VIDEOS_L2_DIR}. "" when no page
-                       exists yet.
+                       exists yet. It must never point under
+                       {SITE_DIR}/docs/Photos — that is the images pipeline's
+                       output.
   on_pages             List of `- page:` mappings: every OTHER page in the repo
                        that embeds this video. [] when none.
   ipfs_url             Optional. Present on entries harvested from a site embed
@@ -258,9 +295,11 @@ on_pages (a list, emits []) and ipfs_pinned (a boolean, emits false):
 
 The primary source. About 46 .mp4 files with matching .mp3 audio extractions,
 pulled from X/Twitter posts by the /ck_add_text skill and pinned to IPFS. The
-media itself is GITIGNORED (*.mp4, *.mp3, *.mkv, *.avi, *.mov, *.wav, *.webm) —
-only the metadata is committed, and anyone who wants the bytes pulls them from
-IPFS. Three committed files describe the corpus and all three are inputs:
+media itself is GITIGNORED — {VIDEOS_DIR}/.gitignore excludes *.mp4, *.mp3,
+*.mkv, *.avi, *.mov, *.wav, *.webm, and the root .gitignore excludes the
+directory with explicit negations for the metadata files. Only the metadata is
+committed, and anyone who wants the bytes pulls them from IPFS. Three committed
+files describe the corpus and all three are inputs:
 
   {VIDEO_MANIFEST}    per-file: filename, ipfs_cid, ipfs_gateway_url,
                       source_url, source_author, description, added_date,
@@ -304,13 +343,16 @@ Same base filename, second-level extension appended:
 Two pairing rules, depending on whether the original lives inside a git repo:
 
   * Inside this git repo — sidecars live under {REPO_SIDECAR_DIR}, mirroring the
-    repo-relative path:
+    repo-relative path. This is the NORMAL case here, because the video corpus
+    lives in the repo:
       {VIDEOS_DIR}/X.mp4  →  {REPO_SIDECAR_DIR}/videos/X.mp4.transcription
     {REPO_SIDECAR_DIR} currently holds videos/, IPFS/videos/, images/,
     cover_image/, and site/ sidecars. Under videos/ today there are roughly 74
     .transcription files, 44 .ai_description files, and 2 .ocr files — so
     transcription coverage over the 46-video corpus is good, and it is the
-    richest input this pipeline has.
+    richest input this pipeline has. Note that .lfbridge/ is explicitly
+    re-included in the root .gitignore, so the sidecars travel with the repo
+    even though the media does not.
 
   * Outside any git repo (the mirror) — there is no .lfbridge/ segment. The
     dedicated bridge repo IS the tracking area and the mirror hangs directly off
@@ -361,8 +403,8 @@ addressed by the entry's cid:
 
 Consequences that must be respected:
 
-  * cid is required to publish a video page. An entry with cid "" gets its page
-    written with the write-up and a "media pending" note, and no player.
+  * cid is required to publish a playable video page. An entry with cid "" gets
+    its page written with the write-up and a "media pending" note, and no player.
   * ipfs_pinned false means no public gateway can reliably serve it. Publishing
     it produces a dead player. Report those; do not pin as a side effect of a
     page run — pinning is irreversible in practice and is a separate,
@@ -377,7 +419,8 @@ Consequences that must be respected:
 
 == Current State (2026-07-23) ==
 
-  * {HIERARCHY_FILE} exists but is a schema shell. Its keys are the video schema
+  * {HIERARCHY_FILE} exists at ~/BGit/Bryan_git/charlie-kirk/videos/videos.yaml
+    and is tracked in git. It is a schema shell: its keys are the video schema
     described above; its 1,740 entries and 1,365 nodes are still the inherited
     image data. Every video_page is "". Nothing in it has been verified against
     the real video corpus yet.
@@ -386,16 +429,19 @@ Consequences that must be respected:
     shooter-location analysis, claims about unreleased or deleted footage. It has
     no cluster cards. {VIDEOS_L2_DIR} contains only overview.mdx,
     _category_.json, and one topic page (buckley-carlson-kash-patel-valhalla.mdx,
-    page_key Videos_Buckley_Kash).
+    page_key Videos_Buckley_Kash). Both .mdx pages are PROTECTED: they are never
+    treated as orphans and their prose is never overwritten by the generator.
   * {VIDEO_LIST_CSV} has 12 rows. {SITE_DIR}/docs/image_list.csv is empty.
   * A second, unrelated Videos page exists at /Topics3/Videos (page_key
     Topics3_Videos). It is template scaffolding under the Topics3 tree, not part
     of this hierarchy. Do not confuse the two.
   * {THIS_DIR} holds the charter (this file), layout_guidelines.txt, and the
-    three prompts. It does NOT yet hold generator/, exclude_videos.txt, or
-    findings_for_hierarchy.md — the prompts reference all three and each creates
-    or seeds the ones it needs on first run. Until generator/ exists, read
-    {IMAGE_PLANNING_DIR}/generator as prior art.
+    three prompts: p_update_video_hierarchy.md (builds the YAML),
+    p_yaml_to_site.md (writes the page words), p_level2_update.md (writes the
+    navigation and owns Level 5 layout). It does NOT yet hold generator/,
+    exclude_videos.txt, or findings_for_hierarchy.md — the prompts reference all
+    three and each creates or seeds the ones it needs on first run. Until
+    generator/ exists, read {IMAGE_PLANNING_DIR}/generator as prior art.
 
 
 == Hard Rules ==
@@ -413,9 +459,15 @@ Consequences that must be respected:
     attribute. Raw claims stay private, here or in {CK_FILE}.
   * {HIERARCHY_FILE} is the plan, not the published output. Do not put
     Docusaurus pages in {THIS_DIR}, and do not put planning notes in
-    {VIDEOS_L2_DIR}.
-  * Never write anything under {IMAGE_PLANNING_DIR}, {ROOT_DIR}/images, or
-    {SITE_DIR}/docs/Photos from this pipeline. Read them freely as prior art.
+    {VIDEOS_L2_DIR}. Do not put a copy of the YAML in {THIS_DIR} — it lives in
+    {VIDEOS_DIR}.
+  * Never write anything under {IMAGE_PLANNING_DIR}, {ROOT_DIR}/images,
+    {SITE_DIR}/docs/Photos, or {SITE_DIR}/static/img/evidence from this
+    pipeline. Read them freely as prior art. Never copy a file FROM there to
+    here — every file in {THIS_DIR} is a converted descendant of one, and a
+    re-copy silently reverts the conversion.
   * Never copy video bytes into {SITE_DIR}/static. IPFS gateways serve the video.
+  * Nothing in this pipeline ever pins to IPFS as a side effect. Pin status is
+    recorded; changing what is public is a separate, approved job.
   * MDX comments must be {/* ... */}. An HTML <!-- --> comment fails the MDX
     compile and breaks the deploy.
