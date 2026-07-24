@@ -132,6 +132,23 @@
   margin-top: 0.5rem;
 }
 
+/* 2b) Quarter-width side video. A specific clip we want smaller than the 35%
+   site cap: no wider than 25% of the main reading area. The height cap is
+   released to `none` so the width — not the height — is always the governing
+   dimension, which lets a portrait (tall) clip still reach the full 25% width
+   while prose wraps down its left edge. Still floats right via the base
+   .ck-video rule; still unfloats on phones via the media query below. */
+.ck-video--quarter {
+  max-width: 25cqw;
+}
+.ck-video--quarter video {
+  max-width: 25cqw;
+  max-height: none;
+}
+.ck-video--quarter iframe {
+  width: 25cqw;
+}
+
 /* 3) On phones/narrow screens, stop floating — stack the video full width
    so it never crowds the text or overflows. The 35% caps are released here
    because on a phone the "main area" is the whole screen. */
@@ -154,6 +171,16 @@
   .ck-video--16x9 iframe {
     width: 100%;
     max-height: none;
+  }
+  /* Release the 25% caps on phones too — these selectors out-specify the
+     .ck-video--quarter rules above, so the clip goes full width like the rest. */
+  .ck-video--quarter,
+  .ck-video--quarter video {
+    width: 100%;
+    max-width: 100%;
+  }
+  .ck-video--quarter iframe {
+    width: 100%;
   }
 }
 
