@@ -1,0 +1,90 @@
+---
+displayed_sidebar: docs
+title: "Signal and Telegram, Not iMessage"
+sidebar_label: "Signal & Telegram, Not iMessage"
+description: "Investigation notes state Charlie Kirk sent the threat messages over Signal and Telegram rather than iMessage. That single technical detail reconciles the contradiction between the witnesses and the denial — and decides what can ever be recovered."
+keywords:
+  - Charlie Kirk
+  - Signal
+  - Telegram
+  - iMessage
+  - device forensics
+  - messages
+image: "/img/docusaurus-social-card.jpg"
+hide_table_of_contents: true
+---
+
+{/* Full-bleed marker */}
+<div className="ck-full-bleed" />
+
+<a href="/Messages/overview" style={{display:'inline-block', marginBottom:'1rem',
+padding:'0.35rem 0.9rem', background:'#1a73e8', color:'#fff',
+borderRadius:'4px', textDecoration:'none', fontSize:'0.9rem'}}>← Messages & Threats</a>
+
+# Signal and Telegram, Not iMessage
+
+This is the most technical page in the section and possibly the most important. It is the detail that can make **two apparently irreconcilable accounts both true at once**.
+
+## What the notes record
+
+Compiled investigation notes state plainly that [Charlie Kirk](/People/charlie-kirk) sent the messages in question — including the ones to [Andrew Kolvet](/People/andrew-kolvet) and [Dan Flood](/People/dan-flood) — **in Signal and Telegram, not in iMessages**.
+
+## Why that reconciles the contradiction
+
+On [Erika Kirk's Denial](./erika-kirk-denial), Erika Kirk is quoted as saying that Charlie was not messaging people the day before saying "they're going to kill me," that she has his cell phone, and that "it never happened."
+
+If the messages were sent over Signal or Telegram, a person holding the phone and looking through it could reach that conclusion **honestly and be wrong**:
+
+* **Signal messages can be set to disappear.** Timed deletion is a per-conversation setting; once it fires, the message is gone from both devices with no trace in the thread.
+* **Signal is locked separately.** The app requires its own PIN or biometric unlock. Possession of the phone does not grant access to the history.
+* **Telegram secret chats are device-bound** and are not in the cloud backup.
+* **Neither appears in the Messages app.** Someone reviewing iMessage — the natural place to look — would find nothing, correctly.
+
+This is why the denial and the witnesses can both be sincere. It is also why the argument cannot be settled by anyone simply looking at a phone. **This page does not assert that Erika Kirk's statement was untrue**; it explains a mechanism by which the accounts could differ without anyone lying.
+
+## What forensics would actually require
+
+To resolve it properly:
+
+1. **Preservation** of the physical device and, separately, of the recipients' devices.
+2. **Signal PIN or biometric access**, or a Signal desktop-linked device with its own local database.
+3. **Telegram account access**, since cloud chats survive on Telegram's servers even if the phone is wiped.
+4. **Recipient-side extraction** — [Frank Turek](/People/frank-turek), Kolvet, Flood, [Candace Owens](/People/candace-owens). Any one recipient's copy is as good as Kirk's.
+
+Point 4 is the practical one. The messages were sent to several people. **Any single recipient could settle this today** without touching Kirk's phone at all. That none has published an export is one of the standing puzzles of this section.
+
+## Why it may already be too late
+
+Signal disappearing messages are unrecoverable by design — there is no server copy, no backup, and no vendor to subpoena. Every month that passes without preservation orders increases the chance that the primary evidence in this dispute no longer exists anywhere. That is a point in favor of the disclosure statutes proposed in [New Laws (Fix)](/Fix/overview).
+
+## Open questions
+
+1. Was any preservation order ever issued for Kirk's devices or accounts?
+2. Were disappearing messages enabled on the relevant Signal threads?
+3. Has any recipient exported and retained their side of the conversation?
+4. Did investigators ever request Telegram cloud-chat records?
+
+## Sources
+
+* Master investigation file — "Quotes Charlies / Verified" section
+* [Reported Quotes and Warnings](/Charlie/Reported_Quotes_and_Warnings) — verification priorities
+
+## Related Areas
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Phone surveillance claims](/Charlie/Phone_Surveillance_Claims)
+* [New laws to force disclosure](/Fix/overview)
+* [Technology and surveillance](/technology_surveillance/overview)
+
+</div>
+<div>
+
+* [Evidence handling after the shooting](/CoverUp/overview)
+* [Court and trial proceedings](/court/overview)
+* [FBI role in the investigation](/FBI/overview)
+
+</div>
+</div>
