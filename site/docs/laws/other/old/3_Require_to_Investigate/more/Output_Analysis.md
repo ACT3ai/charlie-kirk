@@ -92,7 +92,6 @@ marginTop:'0.5rem'}}>
 </div>
 <div>
 
-* [Law 3: Charlie Kirk Investigation - Mandatory Investigation Act](/laws/Require_to_Investigate/Law_3_Require_to_Investigate)
 * [Output Analysis: Law 3 - Require Investigation](/laws/Require_to_Investigate/more/Output_Analysis)
 * [Charlie Kirk Assassination — Forced Disclosure](/laws)
 

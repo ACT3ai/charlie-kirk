@@ -50,7 +50,7 @@ critical investigative information from the public.
 
 ---
 
-[Back to README](/laws) | [Law Text](/laws/other/old/DoJ_FBI/Law_1_DoJ_FBI) | [Legal Notes](/laws/other/old/DoJ_FBI/more/Notes_1_DoJ_FBI) | [Output Analysis](/laws/other/old/DoJ_FBI/more/Output_Analysis)
+[Back to README](/laws) | Law Text | [Legal Notes](/laws/other/old/DoJ_FBI/more/Notes_1_DoJ_FBI) | [Output Analysis](/laws/other/old/DoJ_FBI/more/Output_Analysis)
 
 {/* CK_AUTHOR_CREDIT */}
 
@@ -82,7 +82,6 @@ marginTop:'0.5rem'}}>
 marginTop:'0.5rem'}}>
 <div>
 
-* [Law 1: Charlie Kirk Investigation - DoJ/FBI Forced Disclosure…](/laws/other/old/DoJ_FBI/Law_1_DoJ_FBI)
 * [Notes: Law 1 - DoJ/FBI Forced Disclosure](/laws/other/old/DoJ_FBI/more/Notes_1_DoJ_FBI)
 * [Output Analysis: Law 1 - DoJ/FBI Forced Disclosure](/laws/other/old/DoJ_FBI/more/Output_Analysis)
 

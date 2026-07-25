@@ -91,7 +91,7 @@ The core assumption: **The U.S. government is actively covering for Israel in th
 
 ### Worry L1-5: Private Entities Destroy Records or Stonewall
 
-**WORRY:** [TPUSA](/TPUSA/overview) (now controlled by [Erika Kirk](/People/erika-kirk)), Mosaic Pro Events, [AES](/Mic/AES) (factory exploded), hotels, rental car companies -- all hold critical records. A private organization facing allegations of this kind — none of which has been established against TPUSA by any court or regulator — has a general incentive to resist production of records bearing on finances, outside contacts, or the life insurance policy. Private entities will claim attorney-client privilege, trade secrets, or simply refuse to comply and bet that enforcement takes years. Nothing here asserts that TPUSA has destroyed any record or committed fraud.
+**WORRY:** [TPUSA](/TPUSA/overview) (now controlled by Erika Kirk), Mosaic Pro Events, [AES](/Mic/AES) (factory exploded), hotels, rental car companies -- all hold critical records. A private organization facing allegations of this kind — none of which has been established against TPUSA by any court or regulator — has a general incentive to resist production of records bearing on finances, outside contacts, or the life insurance policy. Private entities will claim attorney-client privilege, trade secrets, or simply refuse to comply and bet that enforcement takes years. Nothing here asserts that TPUSA has destroyed any record or committed fraud.
 
 **FIX:** (1) $100,000/day civil penalties for non-compliance (already in Law 1 Section 2(e)). (2) Criminal penalties (same as government agencies) for destruction. (3) Expedited contempt proceedings -- courts must hear motions within 7 days. (4) Require forensic imaging of TPUSA and Mosaic Pro Events systems within 15 days of enactment. (5) Appoint a Special Master with authority to conduct on-site inspections of private entity records.
 
@@ -322,7 +322,7 @@ Citizen investigators and legislative advocates on X argue that ordinary FOIA an
 
 Parallel media clips recirculated by accounts such as **[@FurkanGozukara](/Influencers/x/furkangozukara)** claim **Candace Owens** has alleged federal discovery obstruction (FBI/ATF files; director-level blocks). Counter-posts argue the Robinson case already has DNA, video, and confession-note material unlike JFK and therefore needs no special act. This page records both the **demand for forced disclosure** and the **official-narrative pushback** so readers can judge whether Schedule A-style lists (FBI 302s, cell data, aircraft, drones, ballistics, AV SD cards) match what X investigators say remains withheld.
 
-Related public pages: [Fix overview](/Fix/overview), [laws landing](/laws), [Discovery](/laws/Discovery), [explain all four laws](/laws/explain/all/overview).
+Related public pages: [Fix overview](/Fix/overview), [laws landing](/laws), Discovery, [explain all four laws](/laws/explain/all/overview).
 
 {/* CK_AUTHOR_CREDIT */}
 
@@ -354,14 +354,12 @@ marginTop:'0.5rem'}}>
 marginTop:'0.5rem'}}>
 <div>
 
-* [Problems, Vulnerabilities, and Recommended Fixes — Comprehens…](/laws/other/analysis/Any_Problems)
 * [Factual Challenges — REMAINING UNFIXED ITEMS](/laws/other/analysis/Challenges)
 * [Charlie Kirk Files Forced Disclosure -- Summary of Four Propo…](/laws/other/List_Of_Laws)
 
 </div>
 <div>
 
-* [Law 1: Charlie Kirk Investigation - DoJ/FBI Forced Disclosure…](/laws/DoJ_FBI/Law_1_DoJ_FBI)
 * [Laws Not Complying with Charter (List_Of_Laws.md) -- Comprehe…](/laws/other/analysis/Laws_Not_Complying)
 * [Charlie Kirk Assassination — Forced Disclosure](/laws)
 

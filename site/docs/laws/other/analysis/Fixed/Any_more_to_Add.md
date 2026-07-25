@@ -26,7 +26,7 @@ All items #176 through #201 proposed in this analysis have been incorporated int
 
 ## Security Detail & Israeli Connections
 
-**#181: [Brian Harpole](/People/brian-harpole) — Netanyahu Bodyguard on Kirk Detail** — ADDED (Law item #182 in all four laws, titled "Brian Harpole — Foreign Security Background on Kirk Detail")
+**#181: Brian Harpole — Netanyahu Bodyguard on Kirk Detail** — ADDED (Law item #182 in all four laws, titled "Brian Harpole — Foreign Security Background on Kirk Detail")
 
 ---
 
@@ -121,7 +121,7 @@ Citizen investigators and legislative advocates on X argue that ordinary FOIA an
 
 Parallel media clips recirculated by accounts such as **[@FurkanGozukara](/Influencers/x/furkangozukara)** claim **Candace Owens** has alleged federal discovery obstruction (FBI/ATF files; director-level blocks). Counter-posts argue the Robinson case already has DNA, video, and confession-note material unlike JFK and therefore needs no special act. This page records both the **demand for forced disclosure** and the **official-narrative pushback** so readers can judge whether Schedule A-style lists (FBI 302s, cell data, aircraft, drones, ballistics, AV SD cards) match what X investigators say remains withheld.
 
-Related public pages: [Fix overview](/Fix/overview), [laws landing](/laws), [Discovery](/laws/Discovery), [explain all four laws](/laws/explain/all/overview).
+Related public pages: [Fix overview](/Fix/overview), [laws landing](/laws), Discovery, [explain all four laws](/laws/explain/all/overview).
 
 {/* CK_AUTHOR_CREDIT */}
 
@@ -161,7 +161,6 @@ marginTop:'0.5rem'}}>
 <div>
 
 * [Laws Not Complying with Charter — FIXED / RESOLVED ITEMS](/laws/other/analysis/Fixed/Laws_Not_Complying)
-* [Additional Disclosure Items to Consider](/laws/other/analysis/Any_more_to_Add)
 * [Charlie Kirk Files Forced Disclosure -- Summary of Four Propo…](/laws/other/List_Of_Laws)
 
 </div>

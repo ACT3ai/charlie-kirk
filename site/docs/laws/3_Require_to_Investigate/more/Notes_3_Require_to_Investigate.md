@@ -80,7 +80,6 @@ marginTop:'0.5rem'}}>
 marginTop:'0.5rem'}}>
 <div>
 
-* [Law 3: Charlie Kirk Investigation - Mandatory Investigation Act](/laws/Require_to_Investigate/Law_3_Require_to_Investigate)
 * [Human Requirements: Law 3 - Require Investigation](/laws/Require_to_Investigate/more/Human_Requirements)
 * [Output Analysis: Law 3 - Require Investigation](/laws/Require_to_Investigate/more/Output_Analysis)
 

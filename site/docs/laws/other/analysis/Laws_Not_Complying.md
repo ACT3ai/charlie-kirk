@@ -481,7 +481,7 @@ Citizen investigators and legislative advocates on X argue that ordinary FOIA an
 
 Parallel media clips recirculated by accounts such as **[@FurkanGozukara](/Influencers/x/furkangozukara)** claim **Candace Owens** has alleged federal discovery obstruction (FBI/ATF files; director-level blocks). Counter-posts argue the Robinson case already has DNA, video, and confession-note material unlike JFK and therefore needs no special act. This page records both the **demand for forced disclosure** and the **official-narrative pushback** so readers can judge whether Schedule A-style lists (FBI 302s, cell data, aircraft, drones, ballistics, AV SD cards) match what X investigators say remains withheld.
 
-Related public pages: [Fix overview](/Fix/overview), [laws landing](/laws), [Discovery](/laws/Discovery), [explain all four laws](/laws/explain/all/overview).
+Related public pages: [Fix overview](/Fix/overview), [laws landing](/laws), Discovery, [explain all four laws](/laws/explain/all/overview).
 
 {/* CK_AUTHOR_CREDIT */}
 
@@ -513,7 +513,6 @@ marginTop:'0.5rem'}}>
 marginTop:'0.5rem'}}>
 <div>
 
-* [Problems, Vulnerabilities, and Recommended Fixes — Comprehens…](/laws/other/analysis/Any_Problems)
 * [Factual Challenges — REMAINING UNFIXED ITEMS](/laws/other/analysis/Challenges)
 * [Attorney Analysis: Improvements for the Four Charlie Kirk Dis…](/laws/other/analysis/Improve)
 

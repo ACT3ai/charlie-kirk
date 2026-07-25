@@ -50,7 +50,7 @@ critical investigative information from the public.
 
 ---
 
-[Back to README](/laws) | [Law Text](/laws/DoJ_FBI/Law_1_DoJ_FBI) | [Legal Notes](/laws/DoJ_FBI/more/Notes_1_DoJ_FBI) | [Output Analysis](/laws/DoJ_FBI/more/Output_Analysis)
+[Back to README](/laws) | Law Text | [Legal Notes](/laws/DoJ_FBI/more/Notes_1_DoJ_FBI) | [Output Analysis](/laws/DoJ_FBI/more/Output_Analysis)
 
 ## Public demand context (citizen investigators)
 
@@ -86,7 +86,6 @@ marginTop:'0.5rem'}}>
 marginTop:'0.5rem'}}>
 <div>
 
-* [Law 1: Charlie Kirk Investigation - DoJ/FBI Forced Disclosure…](/laws/DoJ_FBI/Law_1_DoJ_FBI)
 * [Notes: Law 1 - DoJ/FBI Forced Disclosure](/laws/DoJ_FBI/more/Notes_1_DoJ_FBI)
 * [Output Analysis: Law 1 - DoJ/FBI Forced Disclosure](/laws/DoJ_FBI/more/Output_Analysis)
 
@@ -95,7 +94,6 @@ marginTop:'0.5rem'}}>
 
 * [Charlie Kirk Assassination — Forced Disclosure](/laws)
 * [Human Requirements: Law 2 - US Intelligence Services Forced D…](/laws/US_Intel/more/Human_Requirements)
-* [Discovery — Charlie Kirk Assassination Investigation](/laws/Discovery)
 
 </div>
 </div>

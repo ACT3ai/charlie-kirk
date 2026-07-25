@@ -33,7 +33,7 @@ EXTRA LIST:
 10 Scrutiny of odd instant messages, in-game communication, discord or text exchanges potentially related to the assassination planning or threats.
 11 Investigation into visitors to Tyler Robinson’s home in the lead-up to the event.
 12 Clarification from investigators that a suspicious plane’s transponder was not deliberately turned off, but showed gaps due to incomplete data in rural areas.
-13 The person asking questions to [Charlie Kirk](/People/charlie-kirk) was captured on video practicing the same shocked facial expression beforehand. DId that person coordinate or communicate with anyone before this event or after? He was later on CBS with [Erika Kirk](/People/erika-kirk). Disclose any and all people related to communication and coordination.
+13 The person asking questions to [Charlie Kirk](/People/charlie-kirk) was captured on video practicing the same shocked facial expression beforehand. DId that person coordinate or communicate with anyone before this event or after? He was later on CBS with Erika Kirk. Disclose any and all people related to communication and coordination.
 * Did any of the distraction people work with US intelligence or foreign intelligence or anybody else. Did they communicate, coordinate, or work with anybody before the shooting or for the shooting. Were they ever offered money. Did they ever receive money. Investigate any financial payments that they did receive. 
 * Did Charlie Kirk's heart stop before his neck wound?
 * Was FBI or other law enforcement able to find from acoustic or other investigative means the source of where any bullet that entered his body originated from. 

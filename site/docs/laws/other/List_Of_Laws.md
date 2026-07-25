@@ -60,7 +60,7 @@ Citizen investigators and legislative advocates on X argue that ordinary FOIA an
 
 Parallel media clips recirculated by accounts such as **[@FurkanGozukara](/Influencers/x/furkangozukara)** claim **Candace Owens** has alleged federal discovery obstruction (FBI/ATF files; director-level blocks). Counter-posts argue the Robinson case already has DNA, video, and confession-note material unlike JFK and therefore needs no special act. This page records both the **demand for forced disclosure** and the **official-narrative pushback** so readers can judge whether Schedule A-style lists (FBI 302s, cell data, aircraft, drones, ballistics, AV SD cards) match what X investigators say remains withheld.
 
-Related public pages: [Fix overview](/Fix/overview), [laws landing](/laws), [Discovery](/laws/Discovery), [explain all four laws](/laws/explain/all/overview).
+Related public pages: [Fix overview](/Fix/overview), [laws landing](/laws), Discovery, [explain all four laws](/laws/explain/all/overview).
 
 {/* CK_AUTHOR_CREDIT */}
 
@@ -93,13 +93,11 @@ marginTop:'0.5rem'}}>
 <div>
 
 * [Charlie Kirk Assassination — Forced Disclosure](/laws)
-* [Law 1: Charlie Kirk Investigation - DoJ/FBI Forced Disclosure…](/laws/DoJ_FBI/Law_1_DoJ_FBI)
 * [Law 2: Charlie Kirk Investigation - Intelligence Services Dis…](/laws/US_Intel/Law_2_US_Intel)
 
 </div>
 <div>
 
-* [Law 3: Charlie Kirk Investigation - Mandatory Investigation Act](/laws/Require_to_Investigate/Law_3_Require_to_Investigate)
 * [Law 4: Charlie Kirk Investigation - Trusted Investigators Act](/laws/Trusted_Investigations/Law_4_Trusted_Investigations)
 * [Charlie Kirk Files Forced Disclosure -- Threat Analysis & Rec…](/laws/other/Worries_By_Each_4_Laws)
 

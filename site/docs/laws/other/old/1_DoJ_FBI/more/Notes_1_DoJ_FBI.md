@@ -96,7 +96,6 @@ marginTop:'0.5rem'}}>
 marginTop:'0.5rem'}}>
 <div>
 
-* [Law 1: Charlie Kirk Investigation - DoJ/FBI Forced Disclosure…](/laws/other/old/DoJ_FBI/Law_1_DoJ_FBI)
 * [Human Requirements: Law 1 - DoJ/FBI Forced Disclosure](/laws/other/old/DoJ_FBI/more/Human_Requirements)
 * [Output Analysis: Law 1 - DoJ/FBI Forced Disclosure](/laws/other/old/DoJ_FBI/more/Output_Analysis)
 
