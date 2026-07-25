@@ -635,3 +635,11 @@ Whenever a CSV changes, re-sync before generating pages:
 Safe programmatic edits to {IMAGES_YAML} reuse the emit/recount helpers in
 image_planning/generator/bind_image_pages.py so the file round-trips
 byte-for-byte; the video side uses videos_planning/generator/emit_yaml.py.
+
+The following directory is used for tools to help this site. 
+~/BGit/all/politics/charlie_kirk/
+
+Including 
+
+~/BGit/all/politics/charlie_kirk/prompts/
+
