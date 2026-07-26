@@ -80,7 +80,8 @@
    the main content-area width, independent of the left sidebar. `35cqw` is
    therefore exactly "35% of the main area." This is scoped via :has() to
    pages that actually carry a side video, so nothing else is affected. */
-.theme-doc-markdown:has(.ck-video) {
+.theme-doc-markdown:has(.ck-video),
+.theme-doc-markdown:has(.ck-anchor-right) {
   container-type: inline-size;
 }
 
@@ -181,6 +182,46 @@
   }
   .ck-video--quarter iframe {
     width: 100%;
+  }
+}
+
+/* 4) Anchored right-side image figure. Sits IN the page flow (float, not
+   position:fixed / sticky) so it scrolls with the document and never hovers
+   over the browser chrome. Its right edge lines up with the far right of the
+   main reading area, it occupies 30% of that area's width, its top begins
+   immediately below whatever element precedes it (normally the page H1), and
+   the surrounding prose flows down its left edge and wraps under it.
+   clear:right keeps it from sharing a line with any other right-floated media
+   such as .ck-video. Unfloats to full width on phones. */
+.ck-anchor-right {
+  float: right;
+  clear: right;
+  width: 30%;          /* fallback for engines without container queries */
+  max-width: 30%;
+  width: 30cqw;
+  max-width: 30cqw;
+  margin: 0 0 1rem 1.5rem;
+}
+
+.ck-anchor-right img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.ck-anchor-right .ck-caption {
+  font-size: 0.85rem;
+  color: var(--ifm-color-emphasis-600);
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .ck-anchor-right {
+    float: none;
+    width: 100%;
+    max-width: 100%;
+    margin: 1rem 0;
   }
 }
 
