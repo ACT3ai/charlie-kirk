@@ -53,6 +53,7 @@ const sidebars: SidebarsConfig = {
     {type: 'doc', id: 'Censorship/overview', label: 'Censorship'},
     {type: 'doc', id: 'FBI/overview', label: 'FBI'},
     {type: 'doc', id: 'Locations/overview', label: 'Locations'},
+    {type: 'doc', id: 'Roof/overview', label: 'Roof'},
     {type: 'doc', id: 'Drones/overview', label: 'Drones'},
     {type: 'doc', id: 'Other/overview', label: 'Other'},
     {type: 'doc', id: 'Proof_Not_Tyler/overview', label: 'Proof Not Tyler'},
