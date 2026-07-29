@@ -48,6 +48,7 @@ const sidebars: SidebarsConfig = {
     {type: 'doc', id: 'maps/overview', label: 'Maps'},
     {type: 'doc', id: 'US_Intelligence/overview', label: 'U.S. Intelligence'},
     {type: 'doc', id: 'Gov_Mind_Control/overview', label: 'Gov Mind Control'},
+    {type: 'doc', id: 'Consciousness_Control/overview', label: 'Mind Control (Tyler?)'},
     {type: 'doc', id: 'cameras/overview', label: 'Surveillance Cameras'},
     {type: 'doc', id: 'Censorship/overview', label: 'Censorship'},
     {type: 'doc', id: 'FBI/overview', label: 'FBI'},
