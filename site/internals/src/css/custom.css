@@ -150,6 +150,33 @@
   width: 25cqw;
 }
 
+/* 2c) Wide centered video. 50% larger than the 35% site cap (35 * 1.5 =
+   52.5cqw) and NOT floated — it sits as its own block, centered in the main
+   reading area, with prose above and below rather than beside it. Used for a
+   feature clip that deserves to be the focus of its section. The height cap
+   is released so width is always the governing dimension. These selectors
+   have the same specificity as the base .ck-video rules and come later, so
+   they win; the phone media query below still out-orders them and stacks the
+   clip full width. */
+.ck-video--wide-center {
+  float: none;
+  max-width: 52.5cqw;
+  margin: 1rem auto 1.5rem;
+}
+.ck-video--wide-center video {
+  max-width: 52.5cqw;
+  max-height: none;
+  margin: 0 auto;
+}
+.ck-video--wide-center iframe {
+  width: 52.5cqw;
+  max-height: none;
+  margin: 0 auto;
+}
+.ck-video--wide-center .ck-caption {
+  text-align: center;
+}
+
 /* 3) On phones/narrow screens, stop floating — stack the video full width
    so it never crowds the text or overflows. The 35% caps are released here
    because on a phone the "main area" is the whole screen. */
