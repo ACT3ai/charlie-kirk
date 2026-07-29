@@ -29,29 +29,29 @@ As a secondary matter, we would like the defense team to add these items as form
 **Overview & Context**
 
 **Theories & Possible Linkages**
-- Intelligence Service Discovery Items (#1–#56)
+- [Intelligence Service Discovery Items](/laws/DoJ_FBI/Law_1_DoJ_FBI#intelligence-service-discovery-156) (#1–#56)
 
 **Discovery by Category** (#57–#175)
-- FBI 302 Reports (#57–#61)
-- FBI Counterintelligence (#62–#66)
-- Cell Phone Data (#67–#73)
-- Airport / CBP Records (#74–#80)
-- Egyptian Planes (#81–#86)
-- Israeli Cell Phones (#87–#91)
-- Provo Airport (#92–#97)
-- Financial Records (#98–#104)
-- Chain of Custody (#105–#112)
-- Threat Assessments (#113–#117)
-- Surveillance Footage (#118–#123)
-- Rental Car Records (#124–#129)
-- Hotel Records (#130–#134)
-- Digital Forensics (#135–#140)
-- Ballistics (#141–#147)
-- Distraction People (#148–#154)
-- Drones (#155–#159)
-- TPUSA Intel (#160–#165)
-- Autopsy / Medical (#166–#170)
-- International Liaison (#171–#175)
+- [FBI 302 Reports](/laws/DoJ_FBI/Law_1_DoJ_FBI#fbi-302-reports-5761) (#57–#61)
+- [FBI Counterintelligence](/laws/DoJ_FBI/Law_1_DoJ_FBI#fbi-counterintelligence-6266) (#62–#66)
+- [Cell Phone Data](/laws/DoJ_FBI/Law_1_DoJ_FBI#cell-phone-data-6773) (#67–#73)
+- [Airport / CBP Records](/laws/DoJ_FBI/Law_1_DoJ_FBI#airport--cbp-records-7480) (#74–#80)
+- [Egyptian Planes](/laws/DoJ_FBI/Law_1_DoJ_FBI#egyptian-planes-8186) (#81–#86)
+- [Israeli Cell Phones](/laws/DoJ_FBI/Law_1_DoJ_FBI#israeli-cell-phones-8791) (#87–#91)
+- [Provo Airport](/laws/DoJ_FBI/Law_1_DoJ_FBI#provo-airport-9297) (#92–#97)
+- [Financial Records](/laws/DoJ_FBI/Law_1_DoJ_FBI#financial-records-98104) (#98–#104)
+- [Chain of Custody](/laws/DoJ_FBI/Law_1_DoJ_FBI#chain-of-custody-105112) (#105–#112)
+- [Threat Assessments](/laws/DoJ_FBI/Law_1_DoJ_FBI#threat-assessments-113117) (#113–#117)
+- [Surveillance Footage](/laws/DoJ_FBI/Law_1_DoJ_FBI#surveillance-footage-118123) (#118–#123)
+- [Rental Car Records](/laws/DoJ_FBI/Law_1_DoJ_FBI#rental-car-records-124129) (#124–#129)
+- [Hotel Records](/laws/DoJ_FBI/Law_1_DoJ_FBI#hotel-records-130134) (#130–#134)
+- [Digital Forensics](/laws/DoJ_FBI/Law_1_DoJ_FBI#digital-forensics-135140) (#135–#140)
+- [Ballistics](/laws/DoJ_FBI/Law_1_DoJ_FBI#ballistics-141147) (#141–#147)
+- [Distraction People](/laws/DoJ_FBI/Law_1_DoJ_FBI#distraction-people-148154) (#148–#154)
+- [Drones](/laws/DoJ_FBI/Law_1_DoJ_FBI#drones-155159) (#155–#159)
+- [TPUSA Intel](/laws/DoJ_FBI/Law_1_DoJ_FBI#tpusa-intel-160165) (#160–#165)
+- [Autopsy / Medical](/laws/DoJ_FBI/Law_1_DoJ_FBI#autopsy--medical-166170) (#166–#170)
+- [International Liaison](/laws/DoJ_FBI/Law_1_DoJ_FBI#international-liaison-171175) (#171–#175)
 
 **Legal Framework**
 
@@ -99,7 +99,7 @@ This includes other information to disclose that may or may not be related.
 * Photos show square object (~2x2") in PERSON_25_REDACTED's front right pocket matching Rode Wireless GO II mic dimensions
 * PERSON_25_REDACTED photographed standing with sound crew and person who miked up Kirk
 * Post-killing photos show PERSON_25_REDACTED's pocket empty
-* Potential involvement of Israeli secret service or [Mossad](/intelligence/Mossad) in orchestrating an inside hit, drawing parallels to 2024 pager bombs in Lebanon (see Israeli Cell Phones)
+* Potential involvement of Israeli secret service or [Mossad](/intelligence/Mossad) in orchestrating an inside hit, drawing parallels to 2024 pager bombs in Lebanon (see [Israeli Cell Phones](/laws/DoJ_FBI/Law_1_DoJ_FBI#israeli-cell-phones-8791))
 
 ### The Microphone Type
 * Kirk wearing lavalier microphone (wireless)
@@ -134,7 +134,7 @@ This includes other information to disclose that may or may not be related.
 
 
 ### Crime Scene Alteration
-* Crime scene paved over with concrete shortly after incident (see Surveillance Footage)
+* Crime scene paved over with concrete shortly after incident (see [Surveillance Footage](/laws/DoJ_FBI/Law_1_DoJ_FBI#surveillance-footage-118123))
 * In the crime scene pave over, interestingly the roof above the tent was also redone. Disclose if any possible explosive resdue was attempted to get covered up on that roof above Charlie Kirk
 * Glass fragments and explosive traces reported on grass before paving
 * Did the FBI chose to not take the car that transported Charlie after the shooting to the hospital into evidence. The glass-like fragments were in that car under where Charlie was after the shooting on the drive.
@@ -185,6 +185,10 @@ marginTop:'0.5rem'}}>
 </div>
 
 ## Related
+- [Law 3 — Require Investigation](/laws/Require_to_Investigate/Law_3_Require_to_Investigate)
+* [Law 3: Charlie Kirk Investigation - Mandatory Investigation Act](/laws/Require_to_Investigate/Law_3_Require_to_Investigate)
+- [Law 1 — DoJ / FBI Forced Disclosure](/laws/DoJ_FBI/Law_1_DoJ_FBI)
+* [Law 1: Charlie Kirk Investigation - DoJ/FBI Forced Disclosure…](/laws/DoJ_FBI/Law_1_DoJ_FBI)
 
 <div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
 marginTop:'0.5rem'}}>

@@ -80,6 +80,7 @@ marginTop:'0.5rem'}}>
 </div>
 
 ## Related
+* [Law 3: Charlie Kirk Investigation - Mandatory Investigation Act](/laws/Require_to_Investigate/Law_3_Require_to_Investigate)
 
 <div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
 marginTop:'0.5rem'}}>

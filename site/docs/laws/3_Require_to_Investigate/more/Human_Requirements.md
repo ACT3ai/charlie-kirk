@@ -19,7 +19,7 @@ Former NCTC director [Joe Kent](/US_Intelligence/joe-kent) has said on the recor
 
 ---
 
-[Back to README](/laws) | Law Text | [Legal Notes](/laws/Require_to_Investigate/more/Notes_3_Require_to_Investigate) | [Output Analysis](/laws/Require_to_Investigate/more/Output_Analysis)
+[Back to README](/laws) | [Law Text](/laws/Require_to_Investigate/Law_3_Require_to_Investigate) | [Legal Notes](/laws/Require_to_Investigate/more/Notes_3_Require_to_Investigate) | [Output Analysis](/laws/Require_to_Investigate/more/Output_Analysis)
 
 See also: [Law 1 Requirements](/laws/DoJ_FBI/more/Human_Requirements) | [Law 2 Requirements](/laws/US_Intel/more/Human_Requirements) (disclosure counterparts) | [Law 4 Requirements](/laws/Trusted_Investigations/more/Human_Requirements) (trusted oversight)
 
@@ -48,6 +48,7 @@ marginTop:'0.5rem'}}>
 </div>
 
 ## Related
+* [Law 3: Charlie Kirk Investigation - Mandatory Investigation Act](/laws/Require_to_Investigate/Law_3_Require_to_Investigate)
 
 <div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
 marginTop:'0.5rem'}}>

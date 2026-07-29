@@ -1464,7 +1464,7 @@ The following definitions supplement and reinforce the definitions established i
 
 [Back to README](/laws) | [Human Requirements](/laws/Trusted_Investigations/more/Human_Requirements) | [Legal Notes](/laws/Trusted_Investigations/more/Notes_4_Trusted_Investigations) | [Output Analysis](/laws/Trusted_Investigations/more/Output_Analysis)
 
-Peer laws: Law 1 - DoJ/FBI Disclosure | [Law 2 - US Intel Disclosure](/laws/US_Intel/Law_2_US_Intel) | Law 3 - Mandatory Investigation
+Peer laws: [Law 1 - DoJ/FBI Disclosure](/laws/DoJ_FBI/Law_1_DoJ_FBI) | [Law 2 - US Intel Disclosure](/laws/US_Intel/Law_2_US_Intel) | [Law 3 - Mandatory Investigation](/laws/Require_to_Investigate/Law_3_Require_to_Investigate)
 
 Precedent: Epstein Files Transparency Act | JFK Records Act
 
@@ -1493,6 +1493,8 @@ marginTop:'0.5rem'}}>
 </div>
 
 ## Related
+* [Law 3: Charlie Kirk Investigation - Mandatory Investigation Act](/laws/Require_to_Investigate/Law_3_Require_to_Investigate)
+* [Law 1: Charlie Kirk Investigation - DoJ/FBI Forced Disclosure…](/laws/DoJ_FBI/Law_1_DoJ_FBI)
 
 <div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
 marginTop:'0.5rem'}}>
