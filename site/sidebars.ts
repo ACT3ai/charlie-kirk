@@ -29,6 +29,7 @@ const sidebars: SidebarsConfig = {
     {type: 'doc', id: 'Suspicious/overview', label: 'Suspicious'},
     {type: 'doc', id: 'CoverUp/overview', label: 'Cover Up'},
     {type: 'doc', id: 'TPUSA/overview', label: 'TPUSA'},
+    {type: 'doc', id: 'Amfest/overview', label: 'AmFest'},
     {type: 'doc', id: 'Fix/overview', label: 'New Laws (Fix)'},
     {type: 'doc', id: 'Tent/overview', label: 'The Tent'},
     {type: 'doc', id: 'FBI/overview', label: 'FBI'},
