@@ -150,6 +150,50 @@
   width: 25cqw;
 }
 
+/* 2b-2) Stacked media column. A single right-floated column holding two or
+   more pieces of media that must share one width and stack vertically rather
+   than sit side by side. Two separate 50% floats would pack into one row; one
+   50% float containing both forces the stack. Every child stretches to the
+   column width, so a video and an image below it come out exactly the same
+   size. Width is a plain percentage (not cqw) so it does not depend on the
+   container-type scoping above. Prose still wraps down the left edge. */
+.ck-media-stack {
+  float: right;
+  width: 50%;
+  max-width: 50%;
+  margin: 0.25rem 0 1rem 1.5rem;
+}
+.ck-media-stack iframe,
+.ck-media-stack video,
+.ck-media-stack img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  border: 0;
+}
+.ck-media-stack iframe {
+  aspect-ratio: 16 / 9;
+}
+.ck-media-stack > * + * {
+  margin-top: 1rem;
+}
+.ck-media-stack .ck-caption {
+  font-size: 0.85rem;
+  color: var(--ifm-color-emphasis-600);
+  margin-top: 0.5rem;
+}
+
+/* On phones, stop floating and go full width like the other media blocks. */
+@media (max-width: 768px) {
+  .ck-media-stack {
+    float: none;
+    width: 100%;
+    max-width: 100%;
+    margin: 1rem 0;
+  }
+}
+
 /* 2c) Wide centered video. 50% larger than the 35% site cap (35 * 1.5 =
    52.5cqw) and NOT floated — it sits as its own block, centered in the main
    reading area, with prose above and below rather than beside it. Used for a
