@@ -26193,7 +26193,7 @@ level_3:
       site_level_2: ["UVU"]
       site_page: "site/docs/UVU/overview.mdx"
       number_of_videos: 0
-      number_of_videos_recursive: 104
+      number_of_videos_recursive: 105
       publishable: true
       needs_split: false
       videos: []
@@ -30803,8 +30803,8 @@ level_3:
             _key: Vid_Roof_Runner_Clips
             site_level_2: []
             site_page: ""
-            number_of_videos: 7
-            number_of_videos_recursive: 7
+            number_of_videos: 8
+            number_of_videos_recursive: 8
             publishable: true
             needs_split: false
             videos:
@@ -32551,6 +32551,44 @@ level_3:
                   duplicate_paths: []
                   video_page: ""
                   next_video: "~/BGit/Bryan_git/charlie-kirk/site/docs/Videos/Vid_UVU_Venue/Vid_Forensic_Originals/Vid_Blake_Bednarz_UVU_Original_RSTzvm3.mdx"
+                  on_pages: []
+                  should_be_on_pages: []
+              - video:
+                  title: "The Roof Jump Without Hesitation"
+                  cid: "QmcTLKrk1tfidwAbNy7ZhqxNrz63q2LcRewiSw7VMvicuS"
+                  ipfs_pinned: true
+                  sha256: "23f17accbc3387dda723e9a667aa77f0b6964972b1a0a851ca2f6681cdc24770"
+                  file_path: "~/BGit/Bryan_git/charlie-kirk/videos/2082286655189516559.mp4"
+                  media_present: "video"
+                  file_size_bytes: 22326937
+                  duration: "00:01:39"
+                  audio_file: ""
+                  transcription_file: "~/BGit/Bryan_git/charlie-kirk/videos_transcription/2082286655189516559.md"
+                  transcription_source: "video"
+                  transcription_engine: "apple-speechanalyzer (device: on-device, language: en)"
+                  transcription_generated: "2026-07-30 10:51:38"
+                  transcript_covers: "00:01:39"
+                  transcript_complete: true
+                  ai_description_file: ""
+                  ai_description_provider: ""
+                  ai_description_engine: ""
+                  ai_description_generated: ""
+                  ai_description: "Enhanced and slowed footage of the rooftop figure at Utah Valley University moving to the corner of the Losee Center roof and descending to the ground. The clip has no audio track. It was posted to X to argue that the descent shows practised, unhesitating movement rather than an improvised escape."
+                  shot_timeline: |
+                    * The figure crosses the roof and moves directly to one corner without pausing or surveying the edge.
+                    * The rifle is transferred and the body is lowered over the parapet in a continuous motion.
+                    * The drop to the ground is taken in one committed movement, followed immediately by running.
+                  people_seen: "A single figure in dark clothing on the roof of the Losee Center, carrying a long gun and a backpack. No face is identifiable in the footage. No other people appear on the roof."
+                  onscreen_text: ""
+                  ocr_file: ""
+                  source_url: "https://x.com/BasedSamParker/status/2082286655189516559"
+                  source_author: "@BasedSamParker"
+                  source_platform: "x"
+                  added_date: "2026-07-30"
+                  manifest_description: "Roof descent footage posted by @BasedSamParker arguing the jumper showed no hesitation; quoted by @Ryanmatta"
+                  duplicate_paths: []
+                  video_page: ""
+                  next_video: ""
                   on_pages: []
                   should_be_on_pages: []
         - level_4:
