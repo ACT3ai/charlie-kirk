@@ -26193,7 +26193,7 @@ level_3:
       site_level_2: ["UVU"]
       site_page: "site/docs/UVU/overview.mdx"
       number_of_videos: 0
-      number_of_videos_recursive: 103
+      number_of_videos_recursive: 104
       publishable: true
       needs_split: false
       videos: []
@@ -28343,11 +28343,50 @@ level_3:
             _key: Vid_Raw_Angle_Variants
             site_level_2: []
             site_page: ""
-            number_of_videos: 0
-            number_of_videos_recursive: 28
+            number_of_videos: 1
+            number_of_videos_recursive: 29
             publishable: true
             needs_split: false
-            videos: []
+            videos:
+              - video:
+                  title: "Elevated View Across the UVU Plaza, 11:24 a.m."
+                  cid: "Qmb7vHkne9g3JycNF6Tu1FU3STuAdXfjSw3LSR459qkGUh"
+                  ipfs_pinned: true
+                  sha256: "2f37eda8957a8c21886896cb43d582ac9dcc737333e8c30d17515f4894a3e70e"
+                  file_path: "~/BGit/Bryan_git/charlie-kirk/videos/2082652969468588522.mp4"
+                  media_present: "video"
+                  file_size_bytes: 4058170
+                  duration: "00:00:37"
+                  audio_file: ""
+                  transcription_file: "~/BGit/Bryan_git/charlie-kirk/videos_transcription/2082652969468588522.md"
+                  transcription_source: "video"
+                  transcription_engine: "apple-speechanalyzer (device: on-device, language: en)"
+                  transcription_generated: "2026-07-30 15:59:44"
+                  transcript_covers: "00:00:37"
+                  transcript_complete: true
+                  ai_description_file: ""
+                  ai_description_provider: ""
+                  ai_description_engine: ""
+                  ai_description_generated: ""
+                  ai_description: "A 37-second handheld clip filmed from an elevated position looking down across the outdoor plaza at Utah Valley University, showing the packed crowd around the reflecting pool, the TPUSA event tent and American flags, while the crowd chants USA. The account that published it says the footage was taken at 11:24 a.m. on 10 September 2025 and was originally posted to Instagram the following day."
+                  shot_timeline: |
+                    * **00:00 - 00:08**: A wide, elevated view down onto the plaza. The reflecting pool runs diagonally through frame; the crowd is dense on both sides of it and continues up the lawn beyond. A hand and forearm intrude at frame right, close to the lens, indicating the camera is being held out over a railing or ledge.
+                    * **00:08 - 00:16**: The camera pushes in and pans right. A white event tent with dark lettering and an American flag on a stand come into frame at right. Camera operators and tripods are visible along the barrier line.
+                    * **00:16 - 00:26**: The view tightens on the crowd immediately beside the pool. Attendees are standing shoulder to shoulder; several film with phones. The chanting is audible throughout.
+                    * **00:26 - 00:37**: The camera pans down and left across a flowering rose bed in the foreground, showing seated attendees on the pool coping and the near edge of the crowd.
+                  people_seen: "* **The videographer (unseen)**: only a hand and forearm at frame right in the opening seconds. * **Crowd attendees**: a large, mostly student-age crowd in summer clothing — t-shirts, caps, sundresses, backpacks. Several wear red caps. No individual is held in frame long enough for identification."
+                  onscreen_text: "* **Tent banner**: partial lettering reading \"PROVE ME\" (the TPUSA \"Prove Me Wrong\" table signage). * **Overlay**: a white thumbs-up watermark at lower right, carried over from the original Instagram post."
+                  ocr_file: ""
+                  source_url: "https://x.com/CharlotteLee_88/status/2082652969468588522"
+                  source_author: "@CharlotteLee_88"
+                  source_platform: "x"
+                  added_date: "2026-07-30"
+                  manifest_description: "Elevated view across the UVU plaza said to be filmed at 11:24 a.m. on 10 Sept 2025; crowd chanting USA around the reflecting pool."
+                  duplicate_paths: []
+                  video_page: "~/BGit/Bryan_git/charlie-kirk/site/docs/Videos/Vid_UVU_Venue/Vid_Raw_Angle_Variants/Vid_Elevated_View_Uvu_Plaza_3LSR459.mdx"
+                  next_video: "~/BGit/Bryan_git/charlie-kirk/site/docs/Videos/Vid_UVU_Venue/Vid_Raw_Angle_Variants/Vid_Raw_Angle_40f4/Vid_First_Person_POV_Mobile_DopoLRt.mdx"
+                  on_pages: []
+                  should_be_on_pages: []
             level_5:
               - level_5:
                   title: "Raw Angle Variants (Part 1)"
