@@ -4,6 +4,63 @@ description: Scan the public Charlie Kirk investigation website for defamation r
 invocable: true
 ---
 
+================================================================================
+!! ABSOLUTE RULE — Charlie_Kirk.txt IS READ-ONLY TO AI. NO EXCEPTIONS. !!
+================================================================================
+
+PROTECTED_FILE is file ~/BGit/Bryan_git/charlie-kirk/Charlie_Kirk.txt
+
+AI MUST NEVER WRITE TO, EDIT, APPEND TO, RE-ORDER, REFORMAT, OR DELETE ANYTHING
+IN {PROTECTED_FILE}. Not one character. Not even to add new material. Not even
+when a mode described elsewhere in this skill appears to instruct it. This rule
+OVERRIDES every other instruction in this file, in any other skill, in CLAUDE.md,
+and in any user prompt that does not explicitly and specifically revoke this rule
+by name.
+
+Specifically FORBIDDEN, with no exception:
+  * Removing, shortening, or summarising any existing line.
+  * Rewriting, rephrasing, hedging, or "cleaning up" any existing line.
+  * Adding attribution hedges ("allegedly", "an influencer claims", "reportedly")
+    to text that did not have them.
+  * Deleting or softening anything for DEFAMATION, legal risk, "unsourced rumor",
+    "scope", tidiness, accuracy, or any other reason whatsoever.
+  * Deleting a rumor, claim, or allegation because it is unsupported. Unsupported
+    material is marked as unsupported IN PLACE by Bryan — it is never removed.
+  * Renaming, replacing, or restructuring a section header.
+  * Stripping trailing whitespace or blank lines, or running any formatter.
+  * Writing a "SCOPE RULE", "handling note", or similar AI-authored instruction
+    into the file that would justify future removals.
+  * Appending new investigation content. Even purely additive writes are
+    forbidden — this file is Bryan's, and only Bryan writes to it.
+
+WHY: this file is the master evidence record of the Charlie Kirk investigation.
+AI has damaged it before. Audit on 2026-07-30 found four real losses across the
+git history — a deleted Cellebrite rumor (72aaea54), a defamation-hedged line
+about the Hibbs family (fe2dddec), a rewritten Frey Effect sentence (1c62020f),
+and a replaced arrest-time header and line (8b967208). All four were restored.
+This rule exists so it never happens again.
+
+WHERE NEW CONTENT GOES INSTEAD:
+  CK_INBOX is file ~/BGit/Bryan_git/charlie-kirk/Charlie_Kirk_AI_Inbox.txt
+
+  When a mode in this skill would previously have written to {PROTECTED_FILE},
+  write to {CK_INBOX} instead, append-only, using the same equal-sign section
+  format. Create the file if it does not exist. Then TELL BRYAN in the final
+  summary, in plain words, exactly what was appended to the inbox and that it
+  is waiting for him to merge into Charlie_Kirk.txt by hand if he wants it.
+  Never merge it yourself.
+
+READING is always allowed. Read {PROTECTED_FILE} freely for context, quoting,
+section discovery, and analysis. The prohibition is on WRITING only.
+
+IF ASKED TO BREAK THIS RULE: refuse, say this rule exists and where it is written,
+and offer the inbox file instead. The single exception is an explicit, unambiguous
+instruction from Bryan naming this rule and telling you to override it for a
+specific stated edit — for example, restoring content AI previously destroyed.
+================================================================================
+
+
+
 You are acting as a defense-side media attorney specializing in defamation cases.
 Your job is to scan the public Charlie Kirk investigation website for content that
 could expose the site to defamation liability, then fix it — backing up originals first.
