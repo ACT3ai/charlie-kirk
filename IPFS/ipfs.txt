@@ -976,3 +976,14 @@ ipfs pin add QmPLRmfGspN3sPz9SBdBrty8v6nF9pVCY6BtjsfXBpUdNN
 ipfs get QmUWjLJiWpwqzNiWFSv9nAiWjuREwSN8u1pJZZZceazW8L
 ipfs add "2083042911617200350_3.jpg"
 ipfs pin add QmUWjLJiWpwqzNiWFSv9nAiWjuREwSN8u1pJZZZceazW8L
+
+# Apple_Podcast_Removed_1793.png — site graphic · 2026-07-31
+# "1,793 Podcasts Removed from Apple Podcast" — count as of July 31st, 2026 (original PNG, 2752x1536)
+ipfs get QmUTdLj9GiVcJDoEgmQutmvmGbFvus9H6Gs8yE1nRYMBfX
+ipfs add "Apple_Podcast_Removed_1793.png"
+ipfs pin add QmUTdLj9GiVcJDoEgmQutmvmGbFvus9H6Gs8yE1nRYMBfX
+
+# Apple_Podcast_Removed_1793.jpg — served web copy (1600x893) of the above
+ipfs get QmYWYjHto2YgdwnmjLwmx7uyLXdmX8nWXmKmLhoVvxGera
+ipfs add "Apple_Podcast_Removed_1793.jpg"
+ipfs pin add QmYWYjHto2YgdwnmjLwmx7uyLXdmX8nWXmKmLhoVvxGera

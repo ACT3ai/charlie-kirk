@@ -771,3 +771,28 @@
   color: var(--ifm-color-emphasis-600);
 }
 /* CK_PLACED_VIDEOS_END */
+
+/* ck-half-figure — a graphic shown at 50% of the main column width, centered,
+   aspect ratio preserved, with a caption underneath. Used for the Apple Podcast
+   removal count graphic on TPUSA / Censorship / Charlie pages. */
+.ck-half-figure {
+  width: 50%;
+  max-width: 50%;
+  margin: 2rem auto;
+  text-align: center;
+}
+.ck-half-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+}
+.ck-half-figure figcaption {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: var(--ifm-color-emphasis-700);
+}
+@media (max-width: 996px) {
+  .ck-half-figure { width: 85%; max-width: 85%; }
+}
