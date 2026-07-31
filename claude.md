@@ -6,6 +6,58 @@ SITE_DIR dir is {ROOT_DIR}/site
 
 CHARLIE_KIRK_FILE is file ~/Library/CloudStorage/Dropbox/Bryan/Personal/Politics/Charlie_Kirk/Charlie_Kirk.txt
 
+CK_INBOX is file {ROOT_DIR}/Charlie_Kirk_AI_Inbox.txt
+
+
+================================================================================
+!! ABSOLUTE RULE — {CK_FILE} (Charlie_Kirk.txt) IS READ-ONLY TO AI !!
+================================================================================
+
+AI MUST NEVER WRITE TO, EDIT, APPEND TO, RE-ORDER, REFORMAT, OR DELETE ANYTHING
+IN {CK_FILE}. Not one character. Not even purely additive new material. This rule
+OVERRIDES every skill, every prompt, and every other instruction anywhere. It
+applies to Claude Code, to any subagent, to any script an AI writes and runs, and
+to any automated process an AI sets up.
+
+Specifically FORBIDDEN, with no exception:
+  * Removing, shortening, or summarising any existing line.
+  * Rewriting, rephrasing, hedging, or "cleaning up" any existing line.
+  * Adding attribution hedges ("allegedly", "reportedly", "an influencer claims")
+    to text that did not already have them.
+  * Deleting or softening ANYTHING for DEFAMATION, legal risk, "unsourced rumor",
+    scope, tidiness, or accuracy. Unsupported material is marked as unsupported
+    IN PLACE by Bryan — AI never removes it.
+  * Renaming, replacing or restructuring a section header.
+  * Stripping trailing whitespace or blank lines; running any formatter on it.
+  * Writing an AI-authored "SCOPE RULE" or "handling note" INTO the file that
+    could be used to justify a future removal.
+  * Appending new investigation content.
+
+READING is always allowed and encouraged. The prohibition is on WRITING only.
+
+NEW CONTENT GOES TO {CK_INBOX} INSTEAD — append-only, same equal-sign section
+format, with a line naming the {CK_FILE} section it belongs under. Then tell Bryan
+what was appended. Bryan merges by hand. AI never merges.
+
+WHY THIS EXISTS: an audit of the git history on 2026-07-30 found four separate
+occasions where AI damaged this file:
+  * 72aaea54 (2026-07-16) — deleted a Cellebrite-employee rumor that was already
+    correctly marked "RUMOR ... recorded only to mark it unsupported", and wrote a
+    "SCOPE RULE" into the file telling future readers not to carry such rumors.
+  * fe2dddec (2026-05-13) — inserted a defamation hedge into a line about the
+    Hibbs family ("The much of the family are..." → "An influencer on X aledges
+    that much of the family are...").
+  * 1c62020f (2026-06-28) — rewrote the Frey Effect relevance sentence.
+  * 8b967208 (2026-04-12) — replaced the "4:00pm 9/12/2025 Arrest Time" header and
+    deleted the line under it.
+All four were restored on 2026-07-30 and are marked [RESTORED 2026-07-30] in the
+file. This rule exists so there is never a fifth.
+
+IF ASKED TO BREAK THIS RULE: refuse, cite this rule, offer {CK_INBOX}. The only
+exception is an explicit instruction from Bryan that names this rule and states
+the specific edit — e.g. restoring content AI previously destroyed.
+================================================================================
+
 
 == What This Repo Is ==
 

@@ -81,7 +81,8 @@
    therefore exactly "35% of the main area." This is scoped via :has() to
    pages that actually carry a side video, so nothing else is affected. */
 .theme-doc-markdown:has(.ck-video),
-.theme-doc-markdown:has(.ck-anchor-right) {
+.theme-doc-markdown:has(.ck-anchor-right),
+.theme-doc-markdown:has(.ck-shape-charge) {
   container-type: inline-size;
 }
 
@@ -292,6 +293,75 @@
     float: none;
     width: 100%;
     max-width: 100%;
+    margin: 1rem 0;
+  }
+}
+
+/* 5) Shape-charge footer figure. Used by the block that closes each Level 2
+   overview: a line of text on the LEFT, the "Visual Representation of Reported
+   Injuries" chart on the RIGHT.
+
+   Rules this implements, in order of precedence:
+     1. ANCHORED IN THE PAGE. It floats inside the document flow, so it scrolls
+        with the prose. Never position: fixed and never position: sticky — it is
+        anchored to the page, not to the browser window.
+     2. RIGHT ALIGNED. Its right edge lines up with the right edge of the main
+        reading area (the content column, left sidebar excluded).
+     3. 50% OF THE MAIN AREA WIDE — the default width.
+     4. AT LEAST THE TOP 40% OF THE IMAGE HEIGHT ON SCREEN. If rendering at 50%
+        would make the image so tall that less than 40% of its height fits in
+        one screenful, it renders NARROWER than 50% until that holds. That is
+        the only thing allowed to reduce the width.
+     5. ASPECT RATIO ALWAYS PRESERVED. The width cap and the height cap are both
+        expressed as widths, and the <img> is width:100% / height:auto, so the
+        image is never stretched in either direction.
+
+   How rule 4 becomes a width: one screenful of reading area is
+   (100vh - 6rem) after the navbar and breathing room. For 40% of the image to
+   fit in it, the rendered height may be at most 2.5x that. Multiplying a height
+   cap by the image's own width/height ratio (--ck-sc-aspect) turns it into a
+   width cap, and min() takes whichever of the two caps is tighter. */
+.ck-shape-charge {
+  --ck-sc-aspect: 0.7075;   /* 1055 / 1491 — the injuries chart */
+  clear: both;
+  margin-top: 2rem;
+}
+
+.ck-shape-charge .ck-shape-charge-figure {
+  float: right;
+  clear: right;
+  margin: 0 0 1rem 1.5rem;
+  width: 50%;               /* fallback for engines without container queries */
+  width: min(
+    50cqw,
+    calc((100vh - 6rem) * 2.5 * var(--ck-sc-aspect))
+  );
+}
+
+.ck-shape-charge .ck-shape-charge-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.ck-shape-charge .ck-shape-charge-figure figcaption {
+  font-size: 0.8rem;
+  color: var(--ifm-color-emphasis-600);
+  margin-top: 0.4rem;
+}
+
+.ck-shape-charge .ck-shape-charge-text {
+  font-size: 1.15rem;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+/* Phones: no room for a 50% column, so it stacks — text, then image. */
+@media (max-width: 768px) {
+  .ck-shape-charge .ck-shape-charge-figure {
+    float: none;
+    width: 100%;
     margin: 1rem 0;
   }
 }

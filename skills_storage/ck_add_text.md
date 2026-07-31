@@ -4,6 +4,63 @@ description: Add new text/notes to the Charlie Kirk investigation file — finds
 invocable: true
 ---
 
+================================================================================
+!! ABSOLUTE RULE — Charlie_Kirk.txt IS READ-ONLY TO AI. NO EXCEPTIONS. !!
+================================================================================
+
+PROTECTED_FILE is file ~/BGit/Bryan_git/charlie-kirk/Charlie_Kirk.txt
+
+AI MUST NEVER WRITE TO, EDIT, APPEND TO, RE-ORDER, REFORMAT, OR DELETE ANYTHING
+IN {PROTECTED_FILE}. Not one character. Not even to add new material. Not even
+when a mode described elsewhere in this skill appears to instruct it. This rule
+OVERRIDES every other instruction in this file, in any other skill, in CLAUDE.md,
+and in any user prompt that does not explicitly and specifically revoke this rule
+by name.
+
+Specifically FORBIDDEN, with no exception:
+  * Removing, shortening, or summarising any existing line.
+  * Rewriting, rephrasing, hedging, or "cleaning up" any existing line.
+  * Adding attribution hedges ("allegedly", "an influencer claims", "reportedly")
+    to text that did not have them.
+  * Deleting or softening anything for DEFAMATION, legal risk, "unsourced rumor",
+    "scope", tidiness, accuracy, or any other reason whatsoever.
+  * Deleting a rumor, claim, or allegation because it is unsupported. Unsupported
+    material is marked as unsupported IN PLACE by Bryan — it is never removed.
+  * Renaming, replacing, or restructuring a section header.
+  * Stripping trailing whitespace or blank lines, or running any formatter.
+  * Writing a "SCOPE RULE", "handling note", or similar AI-authored instruction
+    into the file that would justify future removals.
+  * Appending new investigation content. Even purely additive writes are
+    forbidden — this file is Bryan's, and only Bryan writes to it.
+
+WHY: this file is the master evidence record of the Charlie Kirk investigation.
+AI has damaged it before. Audit on 2026-07-30 found four real losses across the
+git history — a deleted Cellebrite rumor (72aaea54), a defamation-hedged line
+about the Hibbs family (fe2dddec), a rewritten Frey Effect sentence (1c62020f),
+and a replaced arrest-time header and line (8b967208). All four were restored.
+This rule exists so it never happens again.
+
+WHERE NEW CONTENT GOES INSTEAD:
+  CK_INBOX is file ~/BGit/Bryan_git/charlie-kirk/Charlie_Kirk_AI_Inbox.txt
+
+  When a mode in this skill would previously have written to {PROTECTED_FILE},
+  write to {CK_INBOX} instead, append-only, using the same equal-sign section
+  format. Create the file if it does not exist. Then TELL BRYAN in the final
+  summary, in plain words, exactly what was appended to the inbox and that it
+  is waiting for him to merge into Charlie_Kirk.txt by hand if he wants it.
+  Never merge it yourself.
+
+READING is always allowed. Read {PROTECTED_FILE} freely for context, quoting,
+section discovery, and analysis. The prohibition is on WRITING only.
+
+IF ASKED TO BREAK THIS RULE: refuse, say this rule exists and where it is written,
+and offer the inbox file instead. The single exception is an explicit, unambiguous
+instruction from Bryan naming this rule and telling you to override it for a
+specific stated edit — for example, restoring content AI previously destroyed.
+================================================================================
+
+
+
 This skill has four modes. Read $ARGUMENTS to decide which mode to run.
 
   IMPROVE MODE — triggered when the argument mentions improving, fixing, assessing,
@@ -25,7 +82,8 @@ This skill has four modes. Read $ARGUMENTS to decide which mode to run.
   X POST MODE — triggered when the argument contains one or more X/Twitter URLs
   (URLs containing /status/ from x.com or twitter.com). This mode downloads the
   post data, any attached videos and images, transcribes videos, and adds all
-  content to both the master investigation file AND the Docusaurus site pages.
+  content to the AI inbox file AND the Docusaurus site pages. It NEVER writes to
+  Charlie_Kirk.txt.
   Examples:
     * "https://x.com/user/status/1234567890"
     * Multiple URLs separated by newlines
@@ -71,7 +129,8 @@ Utah Valley University). It has two layers:
     site published at https://whoassassinatedcharliekirk.com.
 
 Key directories:
-  {ROOT_DIR}/Charlie_Kirk.txt     — Master investigation file (this skill's target)
+  {ROOT_DIR}/Charlie_Kirk.txt     — Master investigation file. READ-ONLY TO AI.
+  {ROOT_DIR}/Charlie_Kirk_AI_Inbox.txt — where AI appends new text for Bryan to merge
   {ROOT_DIR}/Details/             — Private people profiles, one subdir per person
   {ROOT_DIR}/Research/            — Raw research (PDFs/, raw/, Topics/)
   {ROOT_DIR}/knowledge/           — Synthesized write-ups and analysis
@@ -84,7 +143,8 @@ Key directories:
   {ROOT_DIR}/IPFS/                — IPFS evidence files and pin scripts
   {ROOT_DIR}/tmp/                 — Batch progress files for multi-URL processing
 
-CK_FILE is file {ROOT_DIR}/Charlie_Kirk.txt
+CK_FILE is file {ROOT_DIR}/Charlie_Kirk.txt   ← READ-ONLY TO AI. NEVER WRITE.
+CK_INBOX is file {ROOT_DIR}/Charlie_Kirk_AI_Inbox.txt   ← AI writes new text HERE
 SITE_DOCS_DIR is dir {ROOT_DIR}/site/docs/
 TRANSCRIBE_JS is file ~/BGit/all/tools/Transcription/Transcribe.js
 TRANSCRIBE_CONFIG is file {ROOT_DIR}/tmp/transcribe_config.yaml
@@ -94,8 +154,13 @@ TRANSCRIBE_CONFIG is file {ROOT_DIR}/tmp/transcribe_config.yaml
 RULES
 ============================
 
-* NEVER remove, delete, or reduce any existing text in {CK_FILE}. This skill
-  only GROWS the file. Every character that existed before must still exist after.
+* {CK_FILE} (Charlie_Kirk.txt) IS READ-ONLY TO AI. See the ABSOLUTE RULE at the
+  top of this skill. Do NOT write to it, not even additively. All new investigation
+  text goes to {CK_INBOX} = ~/BGit/Bryan_git/charlie-kirk/Charlie_Kirk_AI_Inbox.txt
+  instead, append-only, and Bryan merges it by hand.
+
+* NEVER remove, delete, or reduce any existing text in {CK_FILE} or {CK_INBOX}.
+  Every character that existed before must still exist after.
 
 * NEVER rewrite, rephrase, or "clean up" existing content. Existing text stays
   exactly as-is, typos and all.
@@ -179,7 +244,7 @@ This mode processes one or more X/Twitter post URLs. For each URL it:
   3. Downloads any image attachments
   4. Pins media to IPFS for permanent hosting
   5. Transcribes videos automatically (unless toggled off)
-  6. Adds the post text and transcription to {CK_FILE}
+  6. Adds the post text and transcription to {CK_INBOX} (never to {CK_FILE})
   7. Creates or updates Docusaurus site pages with embedded media
   8. Converts .md pages to .mdx when embedding media
   9. Updates IPFS pin scripts and video indexes
@@ -706,8 +771,9 @@ X POST STEP 5: ADD POST TEXT TO MASTER INVESTIGATION FILE
 
   {OCR text if any, prefixed with "[Image text]: "}
 
-* Insert into the matching section of {CK_FILE} (determined in Step 3 as CK_SECTION_NAME).
-  Follow all ADD TEXT MODE rules — purely additive, never remove existing content.
+* Insert into {CK_INBOX} under a heading naming the matching {CK_FILE} section
+  (determined in Step 3 as CK_SECTION_NAME) so Bryan knows where it belongs.
+  NEVER write to {CK_FILE} itself. Purely additive, never remove existing content.
 
 
 ============================
@@ -1034,7 +1100,7 @@ SKIP IF: Step 7 was skipped or transcription failed.
 
 * Read the full transcription from {ROOT_DIR}/videos_transcription/{post_id}.md.
 
-* Add the transcription content to {CK_FILE} in the same section as the post text
+* Add the transcription content to {CK_INBOX} (NEVER {CK_FILE}), noting the same section as the post text
   (determined in Step 3). Format the insertion as:
 
   [Transcription of video from @{username}, {date}]
@@ -1283,7 +1349,7 @@ X POST STEP 10: FINAL SUMMARY
   Post text (first 100 chars): {preview...}
   OCR performed: {yes — {word count} words | no}
   YAML saved: {path}
-  Added to CK_FILE: {section name}, lines {range}
+  Appended to CK_INBOX (Charlie_Kirk.txt NOT touched): {section name it belongs under}
   Video: {downloaded filename or "none"}
   Video IPFS CID: {CID or "none"}
   Images: {downloaded filenames or "none"}
@@ -1476,7 +1542,7 @@ IMPROVE MODE CONSTRAINTS
   * Do not change the Docusaurus front matter (title, sidebar_label, etc.) unless
     it is clearly wrong or missing.
   * Only write to files under {SITE_DOCS_DIR}. Do not touch private files, the
-    master Charlie_Kirk.txt, or anything outside the site/docs/ tree.
+    master Charlie_Kirk.txt (READ-ONLY TO AI), or anything outside the site/docs/ tree.
 
 
 ============================
@@ -1620,8 +1686,8 @@ IMPORTANT
   If yes, run:
     ln -s ~/BGit/Bryan_git/charlie-kirk/skills_storage/ck_add_text.md ~/.claude/commands/ck_add_text.md
 
-* In ADD TEXT MODE: this skill writes only to {CK_FILE}. All other files are
-  read-only.
+* In ADD TEXT MODE: this skill writes only to {CK_INBOX}. {CK_FILE} and all other
+  files are read-only.
 
 * In IMPROVE MODE: this skill writes only to files under {SITE_DOCS_DIR}
   (~/BGit/Bryan_git/charlie-kirk/site/docs/). {CK_FILE} and all private files
@@ -1631,7 +1697,7 @@ IMPORTANT
   updates the parent Level 2 page. {CK_FILE} and all private files are read-only.
 
 * In X POST MODE: this skill writes to:
-  - {CK_FILE} (adding post text and transcriptions)
+  - {CK_INBOX} (adding post text and transcriptions — {CK_FILE} is NEVER written)
   - {ROOT_DIR}/Research/x_posts/ (YAML post data)
   - {ROOT_DIR}/Research/evidence/ (transcription copies)
   - {ROOT_DIR}/Research/collected_links.md (fallback link collection)
