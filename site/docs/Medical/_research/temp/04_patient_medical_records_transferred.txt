@@ -1,0 +1,46 @@
+TOPIC: Medical records for patients moved to other hospital (~10:00 a.m. / with transfer)
+QUERY: Search twitter posts about topic medical records / patient files transferred Timpanogos Intermountain Charlie Kirk hospital. Especially last five days, assassination discourse. Don't summarize. Return maximum information.
+DATE GATHERED: 2026-07-31
+
+=== CORE CLAIM ===
+Owens: "All of the emergency room patients and all of their files were then transferred to Intermountain."
+Implication she draws: trail of patients at Timpanogos reduced to cameras (reportedly seized) once charts leave with patients.
+
+Timing in primary Owens account: files move WITH the ~11:30 shuttle transfer, not as a separate 10am event. User briefing said medical records moved "quite early, around 10:00 a.m." — discourse sometimes compresses 10am wing move + 11:30 transfer. Page should note primary source times carefully.
+
+=== X POSTS ===
+
+@MarioNawfal full quote: patients AND files to Intermountain
+
+@SofiaReini14262 2082983872686436410 | Fri 31 Jul 2026 | Likes 253 Views 16324
+"Approximately 2 hours prior to him being shot. They also transferred all Emergency Department medical records to the other hospital, including Charlie’s. Charlie wasn’t even treated there. I’m curious how they will explain this away."
+
+@NikkiRosier4 2082993198163714167 | Fri 31 Jul 2026 | Likes 2599 RT 404 Views 114021
+"I dont think people understand what Candace said tonight.
+First clip ALL Timpanogos ER patient files were transferred to UVU ER at approx 11:30am
+2nd clip UVU ER nurse provided proof that a file for CHARLIE was in their system.
+meaning CKs ER file was TRANSFERRED to UVU@11:30AM!!"
+(Two video clips attached)
+
+@AimeeLizB 2083155214249726087 | Fri 31 Jul 2026
+"Candace explained that all patient files were locked down and transferred from Timpanogos Regional Hospital to Utah Valley Hospital, including Charlie's file... That would explain the confusion about which one Charlie got taken to."
+
+@Virgil_Est70BC 2083062334738567605
+"She has evidence though, hard evidence. She claims that all patients were transferred from Tipanogos to Intermountain; as well as their files. Well someone sent her (the proof) that was Charlie’s medical file at Intermountain Hospital, which he was never at."
+
+@Omaruncovered: "moved every patient and every file"
+
+=== ORDINARY EMR CONTEXT ===
+- Chart transfer with patient is standard for inter-facility transfer
+- Electronic records can appear at receiving facility without physical charts
+- "Locked down" language is commentary, not a verified system log
+- Pre-registration charts for VIP/public figures are sometimes created in advance for events — ordinary explanation for SOME chart presence, not proven here
+
+=== VERIFICATION ===
+Patient-files transfer claim: UNVERIFIED beyond Owens anonymous tip.
+CK-specific file: see Topic 5; community claims nurse proof / "someone sent her proof" — not independently published on this site as of gathering.
+
+=== RECORDS THAT SETTLE ===
+- EMR audit logs Timpanogos + UVH for Sept 10 2025 morning
+- Chart transfer batch jobs / HL7 messages timestamps
+- Access logs who viewed which charts
