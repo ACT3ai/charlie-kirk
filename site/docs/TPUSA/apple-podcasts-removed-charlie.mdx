@@ -24,6 +24,26 @@ hide_table_of_contents: true
     via CSS :has(). */}
 <div className="ck-full-bleed" />
 
+export const Metric = ({top, num, bottom, href}) => (
+  <div style={{border:'1px solid var(--ifm-color-emphasis-300)', borderRadius:'8px',
+    background:'var(--ifm-background-surface-color)', padding:'0.9rem 0.75rem',
+    textAlign:'center', display:'flex', flexDirection:'column',
+    justifyContent:'space-between', minHeight:'150px'}}>
+    <div style={{fontSize:'0.72rem', textTransform:'uppercase', letterSpacing:'0.06em',
+      opacity:0.7, lineHeight:1.3}}>{top}</div>
+    <div style={{fontSize:'2.9rem', fontWeight:800, lineHeight:1.05,
+      margin:'0.45rem 0', color:'var(--ifm-color-primary)'}}>
+      {href ? <a href={href} style={{color:'inherit', textDecoration:'none'}}>{num}</a> : num}
+    </div>
+    <div style={{fontSize:'0.78rem', opacity:0.85, lineHeight:1.35}}>{bottom}</div>
+  </div>
+);
+
+export const MetricRow = ({children}) => (
+  <div style={{display:'grid', gridTemplateColumns:'repeat(auto-fit, minmax(180px, 1fr))',
+    gap:'0.9rem', margin:'1.25rem 0'}}>{children}</div>
+);
+
 <a href="/TPUSA/overview" style={{display:'inline-block', marginBottom:'1rem',
 padding:'0.35rem 0.9rem', background:'#1a73e8', color:'#fff',
 borderRadius:'4px', textDecoration:'none', fontSize:'0.9rem'}}>← TPUSA</a>
@@ -33,6 +53,35 @@ borderRadius:'4px', textDecoration:'none', fontSize:'0.9rem'}}>← TPUSA</a>
 This page is about **Apple Podcasts only**, and about **one set of recordings**: the episodes of *The Charlie Kirk Show* published in **August 2025 or earlier** — the shows Charlie recorded while he was alive.
 
 **In August 2025 there were 752 of them on Apple Podcasts. Today there are none.**
+
+## The Removed Episodes, Counted
+
+Every panel below links to **[the full episode-by-episode list](./apple-podcasts-removed-episode-list)** — all 1,793 titles, with dates, running times, and Apple's own episode IDs.
+
+<MetricRow>
+<Metric top="Episodes on Apple, now gone" num="1,793" bottom="See every title →" href="/TPUSA/apple-podcasts-removed-episode-list" />
+<Metric top="From The Charlie Kirk Show" num="1,793" bottom="All of them — 100%. No other show." href="/TPUSA/apple-podcasts-removed-episode-list" />
+<Metric top="Published after his death" num="0" bottom="Every removal is from the living catalog" href="/TPUSA/apple-podcasts-removed-episode-list" />
+<Metric top="Hours of Charlie's own audio" num="1,254" bottom="52 days of continuous listening" href="/TPUSA/apple-podcasts-removed-episode-list" />
+</MetricRow>
+
+<MetricRow>
+<Metric top="Of the catalog before Sept 8, 2023" num="100%" bottom="1,792 of 1,792 archived episodes gone" href="/TPUSA/apple-podcasts-removed-episode-list" />
+<Metric top="Span of catalog erased" num="4 yr 5 mo" bottom="April 22, 2019 → September 30, 2023" href="/TPUSA/apple-podcasts-removed-episode-list" />
+<Metric top="Oldest episode still on Apple" num="Sept 8" bottom="2023 — nothing earlier survives" href="/TPUSA/apple-podcasts-removed-episode-list" />
+<Metric top="Archived episodes that survive" num="1,121" bottom="All dated Sept 8, 2023 or later" href="/TPUSA/apple-podcasts-removed-episode-list" />
+</MetricRow>
+
+:::info How and when these numbers were calculated
+
+**Measured July 31, 2026, against the Wayback Machine's captures of the Apple Podcasts show page.** The live side is Apple's full catalog for *The Charlie Kirk Show*, pulled from Apple's own catalog API on **July 31, 2026** — 2,000 episodes. The archived side is **467 Wayback Machine captures** of that same Apple page, whose pre-assassination reference point is the **[August 25, 2025 capture](https://web.archive.org/web/20250825101452/https://podcasts.apple.com/us/podcast/the-charlie-kirk-show/id1460600818)** printing **Episodes: 752 · Years Active: 2019 – 2025**.
+
+**The two numbers on this page measure different things.** *752* is the episode count Apple itself printed on the page in August 2025. *1,793* is the count of individual episodes the archive proves Apple once served and that Apple no longer serves — matched one at a time on Apple's own episode ID, across every capture from 2019 to 2026, not just the August 2025 one.
+
+**Only pre-death episodes are counted.** All 1,793 were published before September 10, 2025. Nothing published after his death is counted anywhere on this page.
+:::
+
+**[→ Open the full list of all 1,793 removed episodes](./apple-podcasts-removed-episode-list)**
 
 ## The Two Measurements
 
@@ -88,7 +137,7 @@ There is no public change log. Apple publishes no diff of a show's catalog, and 
 
 ## Open Questions
 
-1. **Where is the list of the 752?** No published index names the episodes that were on Apple in August 2025, so no one can say precisely which titles are gone.
+1. **Where is the list of the 752?** No published index names the exact 752 that Apple counted on the page in August 2025. What can be named is the **[1,793 episodes the archive proves Apple once served and no longer serves](./apple-podcasts-removed-episode-list)** — reconstructed from Apple's own episode IDs across 467 Wayback captures. Apple has published no index of its own.
 2. **When did they leave the Apple listing** — in one action, or over months? A Wayback timeline between September 2025 and July 2026 would date it.
 3. **Who instructed the change to the feed**, and on what date?
 4. **Which episodes were selected for "From the Archive" re-posting**, who chose them, and by what criteria?
