@@ -64,7 +64,21 @@ They are **relative-likelihood charts** of when a claimed event most likely occu
 - Web packaging when it dates the same claim
 
 Bar **height** = relative likelihood that the event fell in that time bin.  
-X-axis = earliest plausible → latest plausible, **trimmed** so near-zero tails do not waste width.
+X-axis = earliest plausible → latest plausible, **aggressively trimmed** so near-zero / very-low tails never dominate the image.
+
+### Anti-pattern to never repeat (live bug: KM-06)
+
+Page: `https://whoassassinatedcharliekirk.com/Charlie/Text_Messages/kill-me-06-worried-israel-kill-me`  
+Chart: `km-06-timeline.svg` / `event_key` `km_06_worried_israel_kill_me`
+
+**What went wrong:**
+
+1. The claim peaks on **SEPT 9** (“one day before”) with a soft range ~SEPT 8–9.
+2. The SVG still used a **shared long summer axis** from roughly **AUG 1 → SEPT 10** (same frame as multi-week charts).
+3. Likelihood is **~0 from AUG 1 until ~SEPT 6**, then only rises at the end — so most of the image is **empty dead space**.
+4. MDX forced the image to **`width: '100%'` of the page**, so that empty left half is stretched across the full content column and looks like a broken / padded chart.
+
+**That is a hard failure.** A chart that is mostly near-zero is wrong even if the peak label is correct. Fix by **cropping the time domain** and **not forcing full page width** (rules below).
 
 On every page that gets a chart, include prose **above** the image:
 
@@ -194,47 +208,89 @@ For the **specific sub-event** only:
 - Run X/web searches for **any** claim or implication of when: “August 13,” “day before,” “night before,” “24 hours,” “weeks before,” “hours before,” “minutes after,” etc.
 - Keep **exact quotes** with handles and status IDs when available.
 - Note **competing** datings (e.g. AUG 13 vs AUG 16; weeks-before vs months-apart edit claim).
+- Write down the **support window** (where likelihood is non-trivial) **before** picking axis length. Never default to “AUG 1–SEPT 10 for everything.”
 
-### 2. Choose resolution
+### 2. Choose resolution (driven by where the mass is)
 
 | Context | Axis resolution |
 |---------|-----------------|
-| Default multi-week or multi-month story | Days or day-clusters; labels like `AUG 13`, `SEPT 9` (year **2025** assumed for assassination arc unless multi-year) |
-| Multi-year premonition / long-running state | Years on the axis (see `km-01`) |
-| **Critical window: SEPT 8–12, 2025** (day of, two days before, two days after) — especially **Tyler Robinson**, security, UVU, medical, surrender, flights, anything operational | Prefer **hour** (and **minute** when claims support it). Rare outside this window; use when appropriate. |
+| Multi-year premonition / long-running state | Years (see `km-01`) |
+| Most likelihood spans **weeks–months** with real mass across that span | Days or day-clusters; labels like `AUG 13`, `SEPT 9` (year **2025** for assassination arc unless multi-year) |
+| Most likelihood is concentrated in about **3–5 days** (or less) | **Do not** plot a month-long empty axis. Use a short window only. Prefer **4–6 bars per day** so each bar is roughly a **4-hour window** (6 bars/day ≈ 4h; 4 bars/day ≈ 6h). That fills the short window with real structure instead of one lonely spike on a blank month. |
+| Most likelihood is **1 day or same-day disputes** | Hour bins (or 1–2 hour bins). Minutes when claims support them. |
+| **Critical window: SEPT 8–12, 2025** (day of, two days before, two days after) — especially **Tyler Robinson**, security, UVU, medical, surrender, flights, anything operational | Prefer **hour** / **4-hour** / **minute** as above. Never use an AUG 1 start just because other charts did. |
 
-**SEPT 8–12 priority:** Anything in the three days up to the event, **SEPT 10, 2025**, and the two days after is **super important**. Within that band, time-of-day (hour/minute) often matters more than calendar day alone.
+**SEPT 8–12 priority:** Anything in the three days up to the event, **SEPT 10, 2025**, and the two days after is **super important**. Within that band, time-of-day often matters more than calendar day alone.
 
-### 3. Build a likelihood curve
+#### Short-window multi-bar rule (3–5 days of real activity)
 
-- Define bins along the chosen axis.
+When ~≥80% of total likelihood mass sits inside a span of **about 3–5 calendar days** (or less):
+
+1. Set the chart domain to that span ± a small margin (see trim rules), **not** the whole summer.
+2. Split each day into **4–6 bars** (prefer **6 bars/day = 4-hour windows**: e.g. 00–04, 04–08, 08–12, 12–16, 16–20, 20–24).
+3. Put likelihood on those sub-day bars (even if uncertain — a soft hump across evening bars is better than one fat day-column on a blank month).
+4. Labels: major ticks per **day** (`SEPT 8`, `SEPT 9`, `SEPT 10`); optional second row for time on denser charts (`evening`, `12:23 PM`, `~8 PM`).
+
+Example that should have used this (KM-06): mass is SEPT 8–9 / SEPT 9 peak → domain roughly **SEPT 7–10** (or SEPT 8–10), with several bars per day — **not** AUG 1–SEPT 10 with zero bars for five weeks.
+
+### 3. Build a likelihood curve + **hard trim rules** (mandatory)
+
+- Define bins only inside the **chosen (already trimmed) domain**.
 - Assign relative likelihood from public claims (not a false precision number from “the government”).
 - Shape can be a **bell curve**, **bimodal** (two peaks), **wide flat** (high uncertainty), or **spike** (tight consensus).
-- **Trim width:** if likelihood is near zero on the left or right tail, **do not force a wide empty chart**. Crop the axis so the visible mass is focused. Do not pad with huge zero-probability regions.
 - Peak annotation: mark best working peak label (e.g. `AUG 13`, `SEPT 9 night`, `12:23 PM`).
+
+#### Hard trim rules — no near-zero empty sections
+
+These are **requirements**, not suggestions. A chart that fails them is **not done**.
+
+1. **Domain = support of the distribution.** Start the x-axis near the first bin with non-trivial likelihood; end near the last such bin. Do not start at AUG 1 (or any global default) unless real mass exists early in that range.
+2. **Near-zero tails are cut, not drawn flat.** If a bin’s relative likelihood is **very low** (rule of thumb: **under ~5–10% of the peak** after normalization, or essentially flat empty after a clear rise elsewhere), **do not** keep long runs of those bins just to “show the month.”
+3. **Quantitative crop test (run after assigning likelihoods):**
+   - Compute cumulative mass from the left and from the right.
+   - Crop so the visible domain covers about **≥95% of total likelihood mass** (or ≥90% if the remaining 5–10% is a distant speculative alternate date that you intentionally keep as a **small secondary peak** — still do not keep a month of zeros between peaks; jump/label the alternate or use a broken/annotated secondary hump only if needed).
+   - If after crop more than ~**15–20% of the chart width** would still be bars shorter than ~10% of peak, crop harder or switch to a finer short window.
+4. **Never pad with silent zeros** to match another chart’s viewBox or another event’s date range. Each `event_key` chooses its own domain.
+5. **Competing distant dates:** If theory A is SEPT 9 and theory B is mid-AUG (paraphrase risk), either:
+   - use a **bimodal** chart with **two short neighborhoods** and no long zero gap drawn as continuous empty days, or
+   - keep the primary short window and mention the alternate only in prose (preferred when alternate mass is truly tiny).
+6. **Visual emptiness check:** Before writing the file, ask: “If I blur the bars, is most of the rectangle empty?” If yes → **fail**, re-trim or re-bin.
 
 ### 4. Axis labeling (one or two rows of text)
 
 - Month abbreviations: **`AUG`**, **`SEPT`** (not long month names unless multi-year needs full words).
 - Day-level: e.g. `AUG 13`, `SEPT 9`, `SEPT 10`.
-- When hour/minute is needed, use **two rows** under the tick so width does not explode:
+- Sub-day / hour charts: use **two rows** under ticks so width does not explode:
   - Row 1: date (`SEPT 10`)
-  - Row 2: time (`12:23 PM` or `~11:00 PM`)
+  - Row 2: time or slot (`12:23 PM`, `~8 PM`, `16–20`)
 - You may use forms like `12-AUG` if compact; stay consistent within a chart family.
+- Only label ticks that sit **inside the trimmed domain**. Do not print AUG 1 / SEPT 1 guide lines when those days are outside the domain.
 
-### 5. Visual design (match existing quality)
+### 5. Visual design + **width policy** (no forced full-page stretch)
 
-Reference existing SVGs in `site/internals/static/img/km-timelines/`.
+Reference existing SVGs in `site/internals/static/img/km-timelines/` for style — **not** for a fixed 920px domain. Many early KM charts used `viewBox="0 0 920 220"` and MDX `width: '100%'` together; that combination **magnifies empty tails** (see KM-06 anti-pattern).
 
-Recommended pattern:
+#### Width rules (mandatory)
 
-- Wide-but-not-tall viewBox (e.g. ~920×220), but **width follows content** if the trimmed window is short — do not leave a large empty right/left pad when chance ≈ 0.
+1. **SVG intrinsic width follows the data, not the page.**  
+   - Short support (1–5 days of mass): use a **narrower** viewBox width (e.g. ~400–640 wide × ~200–220 tall), or fewer total bars with larger bar pitch — still readable, **not** a full-column empty strip.  
+   - True multi-week mass: wider viewBox is fine (e.g. ~720–920).  
+   - **Never** invent empty bins so the viewBox “looks as wide as other charts.”
+2. **Do not make “100% of the page width” the design goal.** The goal is a **focused bell/mass** that is only as wide as it needs to be. Empty horizontal space on the page beside a compact chart is **acceptable and preferred** over a stretched desert of zeros.
+3. **MDX embed must not force-stretch short charts.**  
+   - Prefer: wrapper with `maxWidth` matching the chart’s natural width, image `style={{width:'100%', height:'auto', display:'block'}}` **only inside that capped wrapper**, **or** set an explicit `maxWidth` on the img (e.g. `maxWidth: 560` for a short SEPT 8–10 chart).  
+   - Avoid bare `width: '100%'` on the `<img>` when the SVG domain is only a few days — that is what made KM-06 look empty across the whole article column.  
+   - Optional: `style={{width:'auto', maxWidth:'100%', height:'auto', display:'block'}}` so the browser keeps intrinsic aspect and only shrinks on small screens.
+4. Height stays modest (not tall). Horizontal density should show **bars of real mass**, not whitespace.
+
+Other visual notes:
+
 - Rounded card background, subtle gradient.
 - Vertical bars with height = likelihood; color scales with height (cool → warm).
-- Smooth stroke/curve over the bar envelope (optional but used on KM charts).
+- Smooth stroke/curve over the bar envelope (optional).
 - Peak marker (dot + label).
 - Title of event on the chart; subtitle that bar height = relative likelihood.
-- Footer line with working range summary.
+- Footer line with working range summary (**must match the trimmed domain**, not a discarded global summer range).
 - Accessible: `role="img"`, `aria-label`, good contrast.
 
 ### 6. Write file to the correct static location
@@ -258,34 +314,49 @@ Insert **after** the page’s early orientation / “At a glance” (or equivale
 
 [Prose: peak, range, uncertainty, what the curve is measuring. Not a court finding.]
 
-**Date range (working model):** …
+**Date range (working model):** …  {/* must match the SVG’s trimmed domain */}
 
 The chart below is **not** a government finding. Bar height is **relative likelihood** from public claims …
 
-<div className="ck-km-timeline" style={{margin:'1rem 0 1.5rem', maxWidth:'100%', overflowX:'auto'}}>
+{/* SHORT support (≈1–5 days of real mass): cap width — do NOT full-bleed empty months */}
+<div className="ck-km-timeline" style={{margin:'1rem 0 1.5rem', maxWidth:560, overflowX:'auto'}}>
+  <img
+    src="/img/km-timelines/km-06-timeline.svg"
+    alt="… likelihood timeline …"
+    width="560"
+    height="220"
+    style={{width:'auto', maxWidth:'100%', height:'auto', display:'block'}}
+  />
+</div>
+
+{/* LONGER multi-week support with real mass across the span: wider cap is fine */}
+<div className="ck-km-timeline" style={{margin:'1rem 0 1.5rem', maxWidth:920, overflowX:'auto'}}>
   <img
     src="/img/km-timelines/km-02-timeline.svg"
     alt="… likelihood timeline …"
     width="920"
     height="220"
-    style={{width:'100%', height:'auto', display:'block'}}
+    style={{width:'auto', maxWidth:'100%', height:'auto', display:'block'}}
   />
 </div>
 ```
 
 Use the real public path for the reused or new SVG (`/img/...` not a filesystem path).
 
+**Match `maxWidth` / `width` attributes to the SVG viewBox** after trim. A 3-day chart with viewBox width 520 should not be embedded with `width={920}` and `width:'100%'`.
+
 #### MDX embed rules — these are JSX, not HTML
 
-`.mdx` files compile as JSX. HTML that looks fine in a plain `.md` file will **fail the build** or silently drop the image. The embed block above is already correct; keep every one of these properties when you copy it:
+`.mdx` files compile as JSX. HTML that looks fine in a plain `.md` file will **fail the build** or silently drop the image. Keep every one of these properties when you copy embeds:
 
 | Rule | Correct | Wrong — breaks build or image |
 |------|---------|-------------------------------|
-| Style must be a JS object, not a string | `style={{width:'100%'}}` | `style="width:100%"` |
+| Style must be a JS object, not a string | `style={{maxWidth:560}}` | `style="max-width:560px"` |
 | CSS class attribute | `className="ck-km-timeline"` | `class="ck-km-timeline"` |
 | `<img>` must be explicitly self-closed | `<img src="…" />` | `<img src="…">` |
 | Comments | `{/* note */}` | `<!-- note -->` |
 | Object keys are camelCase | `overflowX`, `maxWidth` | `overflow-x`, `max-width` |
+| **Do not force full-column stretch on short charts** | `style={{width:'auto', maxWidth:'100%', …}}` + wrapper `maxWidth` ≈ chart width | Bare `style={{width:'100%'}}` on a few-day chart (stretches empty tails — KM-06 failure) |
 
 **`<!-- -->` comments are the single most common build-killer in this repo.** An HTML comment anywhere in an `.mdx` file fails MDX compilation, the GitHub Pages build goes red, and the whole site silently keeps serving the previous deploy — which looks exactly like "my new SVG did not render." Never introduce one.
 
@@ -316,13 +387,15 @@ Append one row per **new** event_key. Never reuse an `event_key` for a different
 
 Use as a template for judgment, not as the only events:
 
-- **Tight post date, uncertain prior conversation** (KM-02): peak on/before carrier post day (AUG 13); left tail early AUG; little mass after death day.
-- **Index vs public reel collision** (KM-04): **bimodal** AUG 13 and AUG 16.
-- **“Weeks before” + counter-claim** (KM-05): wide hump mid–late AUG + secondary SEPT 9 + low early-AUG mass for months-apart theory.
-- **Night-before consensus** (KM-07–10, 13): sharp SEPT 9 peak; trim empty AUG if near-zero.
-- **Multi-year premonition** (KM-01): year axis, peak ~2018 claim, not SEPT 2025.
+- **Tight post date, uncertain prior conversation** (KM-02): peak on/before carrier post day (AUG 13). Domain might be ~AUG 5–15 (or similar), **not** forced through SEPT 10 if post-AUG mass is ~0. Early-AUG left tail only if claims support it — still trim pure zero.
+- **Index vs public reel collision** (KM-04): **bimodal** AUG 13 and AUG 16 — domain ~AUG 11–18, not AUG 1–SEPT 10.
+- **“Weeks before” + counter-claim** (KM-05): if both weeks-before and day-before have real mass, domain can span mid-AUG→SEPT 9; if early-AUG months-apart theory is tiny, mention in prose rather than a month of flat bars.
+- **Night-before / one-day-before consensus** (KM-06, KM-07–10, 13):
+  - **Correct:** domain ~SEPT 7–10 or SEPT 8–10; **4–6 bars per day** (4h windows); compact SVG width; MDX `maxWidth` ~480–640; peak SEPT 9 / night.
+  - **Wrong (KM-06 as shipped):** domain AUG 1–SEPT 10; ~0 chance until ~SEPT 6; `viewBox` 920 + MDX `width:100%` → huge empty left side.
+- **Multi-year premonition** (KM-01): year axis is appropriate because mass is multi-year — that is the opposite of forcing a long axis when mass is two days.
 
-For **Robinson / day-of** pages later: if claims argue 11:00 vs 12:23 vs evening, switch to hour/minute bins on SEPT 10 (and SEPT 9–11 as needed), two-line tick labels.
+For **Robinson / day-of** pages later: if claims argue 11:00 vs 12:23 vs evening, switch to hour/minute bins on SEPT 10 (and SEPT 9–11 as needed), two-line tick labels, compact width.
 
 ---
 
@@ -333,11 +406,14 @@ For **Robinson / day-of** pages later: if claims argue 11:00 vs 12:23 vs evening
 [ ] Register any existing km-timelines SVGs missing from CSV
 [ ] Enumerate all .md/.mdx under assigned directory
 [ ] For each page: A / B / C / D decision
-[ ] If C: research dates → trim window → SVG in internals/static → CSV row → MDX embed + quotes
-[ ] If B: embed existing path_to_cvg via /img/... URL; add prose/quotes if missing
-[ ] If A: verify asset + CSV row
+[ ] If C: research dates → **trim domain to mass** → pick bin size (4–6 bars/day if 3–5 day mass) → SVG in internals/static → CSV row → MDX embed + quotes
+[ ] If B: embed existing path_to_cvg via /img/... URL; add prose/quotes if missing; **if reused chart has empty-tail disease (KM-06 style), rebuild that SVG** — reuse does not mean keep a bad chart
+[ ] If A: verify asset + CSV row + **visual emptiness check** (no multi-week zero desert)
 [ ] Write each SVG to internals/static ONLY — never a second copy in site/static/
 [ ] MDX embed uses style={{}} / className / self-closed <img /> — no <!-- --> comments
+[ ] MDX does **not** force short charts to full page width (`width:auto` + wrapper maxWidth ≈ viewBox)
+[ ] Domain crop: ≥~95% of likelihood mass inside axis; no long <5–10%-of-peak tails
+[ ] If mass is ≤~5 days: 4–6 bars per day (≈4h windows), not one bar per day on a month axis
 [ ] Gate 1: every embed src resolves to a real, non-empty file on disk
 [ ] Gate 2: `npm run build` exits clean AND chart appears in site/build/img/…
 [ ] Gate 3: after deploy completes, svg=200 (image/svg+xml, non-zero) and page_refs >= 1
@@ -354,9 +430,10 @@ For **Robinson / day-of** pages later: if claims argue 11:00 vs 12:23 vs evening
 - **Do not execute this prompt until Bryan asks to run it.**
 - First run may seed `timeslines.csv` from the 13 KM charts, then walk the rest of `site/docs/`.
 - Prefer many **specific** event_keys over one vague mega-chart.
-- Prefer **reuse** when two pages ask the same timing question.
-- Prefer **trim** over wide empty axes when probability ≈ 0 at the ends.
-- Prefer **day/month** labels normally; **hour/minute** (two-line ticks) when the SEPT 8–12 operational window or a same-day dispute requires it.
+- Prefer **reuse** when two pages ask the same timing question — but **rebuild** any reused SVG that fails the emptiness / width rules (early KM charts may need a second pass).
+- Prefer **trim** over wide empty axes when probability ≈ 0 at the ends — this is the highest-priority visual rule.
+- Prefer **compact width** over filling the article column.
+- Prefer **day/month** labels when mass is multi-week; **4–6 bars per day** when mass is ~3–5 days; **hour/minute** (two-line ticks) when the SEPT 8–12 operational window or a same-day dispute requires it.
 
 ---
 
@@ -440,8 +517,9 @@ A `page_refs=0` on a successful, completed deploy means the embed never made it 
 3. Every page that needs a timeline either embeds a registry SVG or has a documented **D** skip reason (internal log ok).
 4. No duplicate `event_key`s; similar events cross-reference each other in `description`.
 5. No existing investigative claims deleted from pages.
-6. Charts focused (trimmed tails); SEPT 8–12 operational pages use finer time when appropriate.
-7. Pages with charts include “best understanding” prose above and timing-quote sources below.
+6. Charts focused (**hard trim**): no multi-week near-zero deserts (KM-06 failure mode); domain covers ~≥95% of likelihood mass; if mass is ~3–5 days, use **4–6 bars per day** (~4h windows) and a **compact** SVG/MDX width — **not** full-page stretch of empty space. SEPT 8–12 operational pages use finer time when appropriate.
+7. Pages with charts include “best understanding” prose above and timing-quote sources below; working date range in prose matches the **trimmed** SVG domain.
+8. MDX embeds use `width:auto` + capped `maxWidth` (or equivalent) so short charts stay only as wide as they need to be.
 
 ---
 
