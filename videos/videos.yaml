@@ -2369,7 +2369,7 @@ level_3:
       site_level_2: ["Before"]
       site_page: "site/docs/Before/overview.mdx"
       number_of_videos: 0
-      number_of_videos_recursive: 1
+      number_of_videos_recursive: 2
       publishable: true
       needs_split: false
       videos: []
@@ -2399,8 +2399,8 @@ level_3:
             _key: Vid_Before_Event
             site_level_2: []
             site_page: ""
-            number_of_videos: 1
-            number_of_videos_recursive: 1
+            number_of_videos: 2
+            number_of_videos_recursive: 2
             publishable: true
             needs_split: false
             videos:
@@ -2443,6 +2443,43 @@ level_3:
                     - page: "~/BGit/Bryan_git/charlie-kirk/site/docs/Before/overview.mdx"
                     - page: "~/BGit/Bryan_git/charlie-kirk/site/docs/Before/Free-Speech-Campus-Issues.mdx"
                     - page: "~/BGit/Bryan_git/charlie-kirk/site/docs/court/mirandize/baron-coleman-early-turn-in.mdx"
+              - video:
+                  title: "Witness Clip of the American Comeback Tent Setup at UVU"
+                  cid: "QmWX4qjUgB11hwGfdSfU3MzvqLEDiM8XaefHQ185xB9TCE"
+                  ipfs_pinned: true
+                  sha256: "d3238f5c43282c890051171b91aacb4075397a0e86736bc17863a86d4aa47056"
+                  file_path: "~/BGit/Bryan_git/charlie-kirk/videos/2084026940860596330.mp4"
+                  media_present: "video"
+                  file_size_bytes: 8313384
+                  duration: "00:00:12"
+                  audio_file: ""
+                  transcription_file: "~/BGit/Bryan_git/charlie-kirk/videos_transcription/2084026940860596330.md"
+                  transcription_source: "video"
+                  transcription_engine: "whisper-small (language: en)"
+                  transcription_generated: "2026-08-02 23:38:50"
+                  transcript_covers: "00:00:12"
+                  transcript_complete: true
+                  ai_description_file: ""
+                  ai_description_provider: ""
+                  ai_description_engine: ""
+                  ai_description: "A 12-second handheld vertical clip filmed from inside the crowd at Utah Valley University before the event began, looking toward the TPUSA American Comeback Tour tent with its PROVE ME WRONG banners. The camera zooms in past the packed crowd to show staff working under the tent — arranging the stage table stacked with red caps, moving equipment behind the backdrop, and a man in a light blue shirt carrying a dark case across the platform. The account that published it presents it as new witness footage of the set-up and claims two staffers named Chrissy and Angel were responsible for setting up the tent."
+                  shot_timeline: |
+                    * **00:00 - 00:04**: A wide handheld vertical shot from within the standing crowd. The white American Comeback Tour tent with PROVE ME WRONG banners sits ahead at the base of a campus building; dense crowd fills the frame between the camera and the tent.
+                    * **00:04 - 00:08**: The camera zooms in toward the tent. Under the canopy, staff move around the stage table; a speaker box on a stand and a step-and-repeat backdrop frame the platform, with tripod cameras along the barrier line.
+                    * **00:08 - 00:12**: The zoomed view holds on the platform. Red caps are stacked on the table, a person kneels at the table's near side, and a man in a light blue shirt walks across the back of the platform carrying a dark case.
+                  people_seen: "* **Crowd attendees**: a dense, mostly student-age crowd in summer clothing filmed from behind; several hold phones up to film. One attendee at frame right wears a gold crown. No crowd member is identifiable. * **Tent staff**: several people working under the canopy — a person kneeling at the stage table, a man in a dark shirt at the equipment at frame left, and a man in a light blue shirt crossing the platform with a dark case. Faces are distant and not clearly identifiable."
+                  onscreen_text: "* **Tent canopy**: THE AMERICAN COMEBACK TOUR logo and repeating PROVE ME WRONG / PROVE ME WRONG banner text. * **Backdrop**: partial AMERICAN COMEBACK lettering on the step-and-repeat behind the platform. * **Building signage**: partial lettering on the campus building behind the tent. * **Watermark**: a Charliesangels47 / @CharlotteLee_88 handle badge at lower right."
+                  ocr_file: ""
+                  source_url: "https://x.com/CharlotteLee_88/status/2084026940860596330"
+                  source_author: "@CharlotteLee_88"
+                  source_platform: "x"
+                  added_date: "2026-08-02"
+                  manifest_description: "0:12 witness clip from inside the UVU crowd showing the TPUSA tent set-up before the event; poster claims staffers Chrissy and Angel set up the tent."
+                  duplicate_paths: []
+                  video_page: ""
+                  next_video: ""
+                  on_pages: []
+                  should_be_on_pages: []
         - level_4:
             title: "Free Speech and Campus Event Context"
             _key: Vid_Free_Speech_Campus
