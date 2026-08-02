@@ -16394,10 +16394,61 @@ level_3:
       _key: UVU_Venue
       site_level_2: ["UVU", "campus_university"]
       site_page: "site/docs/UVU/overview.mdx"
-      number_of_images: 64
-      number_of_images_recursive: 88
+      number_of_images: 67
+      number_of_images_recursive: 91
       needs_split: true   # over the 12 ceiling — split on a later pass
       images:
+        - image:
+            cid: "QmQRwWETaHwooht3BsELe2vAp1VgBfsEkv4kruHHXeUuCa"
+            ipfs_pinned: true
+            sha256: e4872eaad473af800117fe20ccc3b276e6e201dcb13262dc317706fc7686b700
+            file_path: "~/BGit/Bryan_git/charlie-kirk/images/2083331472128094488_1.jpg"
+            ai_description: "A ground-level exterior photograph of the Sorensen Student Center courtyard at Utah Valley University, shot across an excavated zone toward the tiered amphitheater and a stacked-stone planter. A wide strip of bare dry soil runs the full width of the foreground and meets the surviving green lawn along a clean straight cut line, indicating sod that was cut and lifted rather than worn away. A metal stake stands upright in the dirt with a cable running from its base, an irrigation valve box sits at right where the soil meets a poured concrete pad, and yellow tape is strung across the upper terrace behind. A green dumpster is parked under the building deck at left. An SPN (Stew Peters Network) watermark appears at lower right."
+            ai_description_file: ""
+            ocr_file: ""
+            transcription_file: ""
+            image_page: "~/BGit/Bryan_git/charlie-kirk/site/docs/Photos/UVU_Venue/Img_Dirt_Strip_e4872e.mdx"
+            next_image: "~/BGit/Bryan_git/charlie-kirk/site/docs/Photos/UVU_Venue/Img_Base_Prep_193d28.mdx"
+            on_pages:
+              - page: "~/BGit/Bryan_git/charlie-kirk/site/docs/Tent/Dirt_Removed_Before_Pavers.mdx"
+            should_be_on_pages:
+              - page: "~/BGit/Bryan_git/charlie-kirk/site/docs/Tent/Dirt_Removed_Before_Pavers.mdx"
+              - page: "~/BGit/Bryan_git/charlie-kirk/site/docs/Tent/Site_Alteration_Evidence.mdx"
+              - page: "~/BGit/Bryan_git/charlie-kirk/site/docs/Tent/Paving_Timeline_Sept_14.mdx"
+        - image:
+            cid: "QmQnzHzRXdBnq7Xu43gv8QjRRZpNnZAUou1bGbsJYTuqVc"
+            ipfs_pinned: true
+            sha256: 193d28f21d09b486c169fb9c4436899a7eb984c164101d57c1c6581d72d049ad
+            file_path: "~/BGit/Bryan_git/charlie-kirk/images/2083331472128094488_2.jpg"
+            ai_description: "An exterior photograph of active groundwork running along the base of the Sorensen Student Center, under the building overhang and glass upper floors. A tracked skid-steer loader with a raised bucket is parked on the excavated surface at left, one worker screeds gravel with a long-handled rake, a second worker stands further up the run, a plate compactor sits mid-frame on the graded material, and a surveyor laser level on a tripod is set at the edge of the surviving lawn beside a yellow equipment case. A trench line runs along the grass margin at right and a windrow of loose aggregate lies along the left. An SPN (Stew Peters Network) watermark appears at lower right."
+            ai_description_file: ""
+            ocr_file: ""
+            transcription_file: ""
+            image_page: "~/BGit/Bryan_git/charlie-kirk/site/docs/Photos/UVU_Venue/Img_Base_Prep_193d28.mdx"
+            next_image: "~/BGit/Bryan_git/charlie-kirk/site/docs/Photos/UVU_Venue/Img_Gravel_Pile_5d7f97.mdx"
+            on_pages:
+              - page: "~/BGit/Bryan_git/charlie-kirk/site/docs/Tent/Dirt_Removed_Before_Pavers.mdx"
+            should_be_on_pages:
+              - page: "~/BGit/Bryan_git/charlie-kirk/site/docs/Tent/Dirt_Removed_Before_Pavers.mdx"
+              - page: "~/BGit/Bryan_git/charlie-kirk/site/docs/Tent/Site_Alteration_Evidence.mdx"
+              - page: "~/BGit/Bryan_git/charlie-kirk/site/docs/Tent/Paving_Timeline_Sept_14.mdx"
+        - image:
+            cid: "QmeLUcBRc7F5HWu1vWwWzyNBBWGxmvKpFLbuvSnc1Uarnx"
+            ipfs_pinned: true
+            sha256: 5d7f9700abdb1c8bcdb15c90c7217e5ca48eece9c49308548eb78a0779ed60a3
+            file_path: "~/BGit/Bryan_git/charlie-kirk/images/2083331472128094488_3.jpg"
+            ai_description: "A vertical exterior photograph taken from the upper plaza level of the Utah Valley University campus. A mound of loose light-coloured aggregate sits on a concrete apron in the middle distance and has been circled by hand in blue marker by whoever annotated the image. A white flatbed dump truck with an empty bed is parked to its right. Stacked metal crowd-control barricades lie on their sides in the foreground against a low retaining wall, with more construction material piled behind them at left. The campus fountain is running beyond the mound, light poles and trees line the walkway, and the Wasatch range fills the horizon. An SPN (Stew Peters Network) watermark appears at lower right."
+            ai_description_file: ""
+            ocr_file: ""
+            transcription_file: ""
+            image_page: "~/BGit/Bryan_git/charlie-kirk/site/docs/Photos/UVU_Venue/Img_Gravel_Pile_5d7f97.mdx"
+            next_image: "~/BGit/Bryan_git/charlie-kirk/site/docs/Photos/UVU_Venue/Img_Photo_dcec67.mdx"
+            on_pages:
+              - page: "~/BGit/Bryan_git/charlie-kirk/site/docs/Tent/Dirt_Removed_Before_Pavers.mdx"
+            should_be_on_pages:
+              - page: "~/BGit/Bryan_git/charlie-kirk/site/docs/Tent/Dirt_Removed_Before_Pavers.mdx"
+              - page: "~/BGit/Bryan_git/charlie-kirk/site/docs/Tent/Site_Alteration_Evidence.mdx"
+              - page: "~/BGit/Bryan_git/charlie-kirk/site/docs/Tent/Paving_Timeline_Sept_14.mdx"
         - image:
             cid: "QmeP7CCYcKxepfwys4ReRcWyfBf1Zvj1UoD5BE713RDUdG"
             ipfs_pinned: true
