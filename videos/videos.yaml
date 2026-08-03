@@ -24606,8 +24606,8 @@ level_3:
             _key: Vid_Microphone_Footage
             site_level_2: []
             site_page: ""
-            number_of_videos: 8
-            number_of_videos_recursive: 8
+            number_of_videos: 10
+            number_of_videos_recursive: 10
             publishable: true
             needs_split: false
             videos:
@@ -24964,6 +24964,76 @@ level_3:
                     - page: "~/BGit/Bryan_git/charlie-kirk/site/docs/Photos/Mic/Img_Photo_448e0d.mdx"
                   should_be_on_pages:
                     - page: "~/BGit/Bryan_git/charlie-kirk/site/docs/Mic/overview.mdx"
+              - video:
+                  title: "Project Constitution - Black Shards Falling From Charlie Kirk's Shirt"
+                  cid: "QmXnEVGCB5wN7f5oLRvgvVLAZET56yiY6k5HM4YCTBhHu7"
+                  ipfs_pinned: true
+                  sha256: "8fc94b2686b8c9f3d4b83b106b92155b9abde6d1baabac3f2cdc63ffa4ece1c8"
+                  file_path: "~/BGit/Bryan_git/charlie-kirk/videos/2084239546867130638.mp4"
+                  media_present: "video"
+                  file_size_bytes: 4299828
+                  duration: "00:00:38"
+                  audio_file: ""
+                  transcription_file: "~/BGit/Bryan_git/charlie-kirk/.lfbridge/videos/2084239546867130638.mp4.transcription"
+                  transcription_source: "video"
+                  transcription_engine: "whisper-small (language: en)"
+                  transcription_generated: "2026-08-03 12:01:25"
+                  transcript_covers: ""
+                  transcript_complete: true
+                  ai_description_file: ""
+                  ai_description_provider: ""
+                  ai_description_engine: ""
+                  ai_description_generated: ""
+                  ai_description: "A 38-second slow-motion analysis clip of the moment Charlie Kirk collapses at UVU. The poster circles small dark fragments they say fall from under his shirt near his belt line and argues they are shrapnel from the Rode wireless mic transmitter — the poster's claim that an explosive device, not a gunshot, caused the wound. No meaningful speech; captioned slow-motion footage."
+                  shot_timeline: ""
+                  people_seen: ""
+                  onscreen_text: ""
+                  ocr_file: ""
+                  source_url: "https://x.com/ProjectConstitu/status/2084239546867130638"
+                  source_author: "@ProjectConstitu"
+                  source_platform: "x"
+                  added_date: "2026-08-03"
+                  manifest_description: "0:38 slow-motion analysis clip claiming tiny black shards fall from under Charlie Kirk's shirt near his belt line as he collapses"
+                  duplicate_paths: []
+                  video_page: ""
+                  next_video: ""
+                  on_pages: []
+                  should_be_on_pages: []
+              - video:
+                  title: "Project Constitution - High-Resolution Source Clip of the Shooting Moment"
+                  cid: "QmVveTSgB5zScKzwiMd29KecLHrZeU74c4s3bEm8BTiDak"
+                  ipfs_pinned: true
+                  sha256: "3ba538f2fa2fe083eb9ec6f9e8da28f953d5e270174e8e0f0224e6d523d93e64"
+                  file_path: "~/BGit/Bryan_git/charlie-kirk/videos/2084153118317568321.mp4"
+                  media_present: "video"
+                  file_size_bytes: 125248916
+                  duration: "00:01:45"
+                  audio_file: ""
+                  transcription_file: "~/BGit/Bryan_git/charlie-kirk/.lfbridge/videos/2084153118317568321.mp4.transcription"
+                  transcription_source: "video"
+                  transcription_engine: "apple-speechanalyzer (language: en)"
+                  transcription_generated: "2026-08-03 12:01:29"
+                  transcript_covers: ""
+                  transcript_complete: true
+                  ai_description_file: ""
+                  ai_description_provider: ""
+                  ai_description_engine: ""
+                  ai_description_generated: ""
+                  ai_description: "A 1:45 high-resolution (2160x2420) clip of the shooting moment at UVU, quoted by the black-shards analysis post as its source footage. Charlie Kirk answers a question about mass shooters, the shot occurs, and the crowd flees while a voice directs people out the back."
+                  shot_timeline: ""
+                  people_seen: ""
+                  onscreen_text: ""
+                  ocr_file: ""
+                  source_url: "https://x.com/ProjectConstitu/status/2084153118317568321"
+                  source_author: "@ProjectConstitu"
+                  source_platform: "x"
+                  added_date: "2026-08-03"
+                  manifest_description: "1:45 high-resolution clip of the shooting moment — source footage for the black-shards frame-by-frame claim"
+                  duplicate_paths: []
+                  video_page: ""
+                  next_video: ""
+                  on_pages: []
+                  should_be_on_pages: []
         - level_4:
             title: "The RODE Mic and the SUV"
             _key: Vid_RODE_Mic_SUV
