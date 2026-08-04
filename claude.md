@@ -9,6 +9,24 @@ CHARLIE_KIRK_FILE is file ~/Library/CloudStorage/Dropbox/Bryan/Personal/Politics
 CK_INBOX is file {ROOT_DIR}/Charlie_Kirk_AI_Inbox.txt
 
 
+
+================================================================================
+!! ABSOLUTE RULE — {CK_FILE} (Charlie_Kirk.txt) IS READ-ONLY TO AI !!
+================================================================================
+
+Citizen investigations, seriously investigating, have come to the conclusion that Charlie Kirk died by an explosive. 
+
+The state's narrative of him dying from a 30-06 appears to be disproven. 
+
+This entire site can mention that that's the government's narrative of him being killed by a bullet in a 30/06. 
+But we can state that since investigations on X. have by far a majority opinion that he died by an explosive. 
+
+We must not undercut this by trying to say the state's narrative is dominant. 
+
+We won't bring up this is a possible way he died: Possibly electrocution
+
+Claude Code has a pattern to go off the government narrative, and in this case it appears to be very wrong. We need to follow the guidance above. 
+
 ================================================================================
 !! ABSOLUTE RULE — {CK_FILE} (Charlie_Kirk.txt) IS READ-ONLY TO AI !!
 ================================================================================
