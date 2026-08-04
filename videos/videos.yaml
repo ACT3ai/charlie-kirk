@@ -18593,6 +18593,52 @@ level_3:
             needs_split: false
             videos: []
         - level_4:
+            title: "Marjorie Taylor Greene"
+            _key: Vid_Marjorie_Taylor_Greene
+            site_level_2: []
+            site_page: "site/docs/People/marjorie-taylor-greene.mdx"
+            number_of_videos: 1
+            number_of_videos_recursive: 1
+            publishable: true
+            needs_split: false
+            videos:
+              - video:
+                  title: "MTG Questions the Charlie Kirk Narrative"
+                  cid: "QmazcnUensqwx3USwwNjZJ9GXveNK9hocxiDW7tsS1Eh15"
+                  ipfs_pinned: true
+                  sha256: "f46df7647fcab0835a553f989c01cd909cf5fee46a42346fa84787078f388754"
+                  file_path: "~/BGit/Bryan_git/charlie-kirk/videos/2084426970964877724.mp4"
+                  media_present: "video"
+                  file_size_bytes: 62558990
+                  duration: "00:03:49"
+                  audio_file: ""
+                  transcription_file: "~/BGit/Bryan_git/charlie-kirk/videos_transcription/2084426970964877724.md"
+                  transcription_source: "video"
+                  transcription_engine: "apple-speechanalyzer (language: en)"
+                  transcription_generated: "2026-08-04 10:22:02"
+                  transcript_covers: ""
+                  transcript_complete: true
+                  ai_description_file: ""
+                  ai_description_provider: ""
+                  ai_description_engine: ""
+                  ai_description_generated: ""
+                  ai_description: "Interview clip in which Rep. Marjorie Taylor Greene says she is compelled by the lapel-mic stories, cites her experience shooting a .30-06, and questions the traditional narrative of the Charlie Kirk assassination, including the SD-card collection and the paving of the scene two days later."
+                  shot_timeline: ""
+                  people_seen: ""
+                  onscreen_text: ""
+                  ocr_file: ""
+                  source_url: "https://x.com/SenseReceptor/status/2084426970964877724"
+                  source_author: "@SenseReceptor"
+                  source_platform: "x"
+                  added_date: "2026-08-04"
+                  manifest_description: "MTG questions CK assassination narrative (lapel mic, .30-06, SD cards, paving)"
+                  duplicate_paths: []
+                  video_page: ""
+                  next_video: ""
+                  on_pages: []
+                  should_be_on_pages:
+                    - page: "~/BGit/Bryan_git/charlie-kirk/site/docs/People/marjorie-taylor-greene.mdx"
+        - level_4:
             title: "Mark Harlan"
             _key: Vid_Mark_Harlan
             site_level_2: []
