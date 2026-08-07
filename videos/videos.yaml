@@ -34468,8 +34468,8 @@ level_3:
             _key: Vid_Walking_Path
             site_level_2: []
             site_page: ""
-            number_of_videos: 1
-            number_of_videos_recursive: 1
+            number_of_videos: 2
+            number_of_videos_recursive: 2
             publishable: true
             needs_split: false
             videos:
@@ -34564,6 +34564,43 @@ level_3:
                     - page: "~/BGit/Bryan_git/charlie-kirk/site/docs/TPUSA/TPUSA_Opposite_Charlie.mdx"
                     - page: "~/BGit/Bryan_git/charlie-kirk/site/docs/Suspicious/Five_Minutes/roof-run-limp-disappears.mdx"
                     - page: "~/BGit/Bryan_git/charlie-kirk/site/docs/Suspicious/Five_Minutes/rifle-towel-on-roof.mdx"
+              - video:
+                  title: "Does This Eyewitness Testimony Prove The Tyler Text Messages Are Fabricated?"
+                  cid: "QmVvPn6bmS2xdCDy9gEnGu5ptCnwfayoqeeZKM3mBbUmP3"
+                  ipfs_pinned: true
+                  sha256: "3652584f10bdc61ad85853767413e6593d8d91613fb06de809bc4b3e443688eb"
+                  file_path: "~/BGit/Bryan_git/charlie-kirk/videos/2085794603819544692.mp4"
+                  media_present: "video"
+                  file_size_bytes: 196339420
+                  duration: "00:11:47"
+                  audio_file: ""
+                  transcription_file: "~/BGit/Bryan_git/charlie-kirk/videos_transcription/2085794603819544692.md"
+                  transcription_source: "video"
+                  transcription_engine: "apple-speechanalyzer (device: on-device, language: en)"
+                  transcription_generated: "2026-08-07 22:49:07"
+                  transcript_covers: "00:11:47"
+                  transcript_complete: true
+                  ai_description_file: ""
+                  ai_description_provider: ""
+                  ai_description_engine: ""
+                  ai_description_generated: ""
+                  ai_description: ""
+                  shot_timeline: ""
+                  people_seen: ""
+                  onscreen_text: ""
+                  ocr_file: ""
+                  source_url: "https://x.com/BasedSamParker/status/2085774401988125026"
+                  source_author: "@BasedSamParker"
+                  source_platform: "x"
+                  added_date: "2026-08-07"
+                  manifest_description: "Eyewitness testimony vs. the alleged Tyler Robinson text confession; full escape-path retrace"
+                  duplicate_paths: []
+                  video_page: "~/BGit/Bryan_git/charlie-kirk/site/docs/Videos/Vid_Tyler_Robinson/Vid_Walking_Path/Vid_BasedSamParker_Eyewitness_Fabricated_2085774.mdx"
+                  next_video: ""
+                  on_pages:
+                    - page: "~/BGit/Bryan_git/charlie-kirk/site/docs/Tyler_Robinson/eyewitness-black-clad-fugitive.mdx"
+                  should_be_on_pages:
+                    - page: "~/BGit/Bryan_git/charlie-kirk/site/docs/Tyler_Robinson/eyewitness-black-clad-fugitive.mdx"
         - level_4:
             title: "Tyler Robinson Before the Event"
             _key: Vid_Tyler_Robinson_Before
