@@ -34599,8 +34599,12 @@ level_3:
                   next_video: ""
                   on_pages:
                     - page: "~/BGit/Bryan_git/charlie-kirk/site/docs/Tyler_Robinson/eyewitness-black-clad-fugitive.mdx"
+                    - page: "~/BGit/Bryan_git/charlie-kirk/site/docs/Suspects/Black_Clad_Fugitive_Escape_Path.mdx"
+                    - page: "~/BGit/Bryan_git/charlie-kirk/site/docs/Suspects/overview.mdx"
                   should_be_on_pages:
                     - page: "~/BGit/Bryan_git/charlie-kirk/site/docs/Tyler_Robinson/eyewitness-black-clad-fugitive.mdx"
+                    - page: "~/BGit/Bryan_git/charlie-kirk/site/docs/Suspects/Black_Clad_Fugitive_Escape_Path.mdx"
+                    - page: "~/BGit/Bryan_git/charlie-kirk/site/docs/Suspects/overview.mdx"
         - level_4:
             title: "Tyler Robinson Before the Event"
             _key: Vid_Tyler_Robinson_Before
