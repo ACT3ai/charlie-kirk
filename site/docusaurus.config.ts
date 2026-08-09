@@ -193,6 +193,9 @@ const config: Config = {
             "**/__tests__/**",
             "**/prompts/**",
             "**/CLAUDE.md",
+            // Prompt files (agent instruction sets) living inside docs
+            // directories are private — never publish them as pages.
+            "**/p_*.{md,mdx}",
           ],
         },
         blog: false,
