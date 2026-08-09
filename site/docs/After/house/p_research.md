@@ -95,6 +95,16 @@ URLs for everything:
    property manager, host) and any connection to other names already in the
    investigation.
 
+**Always run explicit Google/web searches on the address and log them.** Every
+run must fire a batch of web searches on the literal address (and its
+variants — `691 W 925 S`, `691 West 925 South`, with and without `Orem UT
+84058`) plus the owner/seller names as they surface, and write the results into
+a dedicated Level 4 page, `web-search-log.mdx`. That page is the public,
+citable record of *what was searched, what was found, and what came up empty* —
+so the next run does not repeat dead ends and a reader can retrace the trail.
+Record each search's query, the useful hits (with URLs), and a one-line
+verdict. Mirror those same notes into **Appendix B** of this prompt file.
+
 ### Step 3 — Deed chain & Utah County Recorder documents
 
 The ownership page currently rests on a parcel record whose **serial life ended
@@ -282,6 +292,7 @@ suggested set (rename or extend as findings dictate):
 | `records-requests.mdx` | Ready-to-file GRAMA requests and how to send them |
 | `second-location.mdx` | The "command center" building near Losee; geolocation |
 | `vehicles-barricade.mdx` | Box/delivery trucks, dumpster, grey Challenger, IDs |
+| `web-search-log.mdx` | Public log of every Google/web search on the address, with results |
 
 Page rules:
 
@@ -455,9 +466,77 @@ Regenerate this list on each run so it stays current.
 
 * `overview.mdx`: Level 3 hub — what the house is, the staging lead, the "command center" video, links to every Level 4 page.
 * `location-and-property.mdx`: Physical facts — size, beds/baths, year built, lot, neighborhood, ~0.25 mi from UVU (walking distance).
-* `ownership.mdx`: Utah County land record — parcel 36:214:0001, owner of record Kostas Markidas, full College Heights deed chain (Howell → Broderick), caveats on stale serial.
+* `ownership.mdx`: Ownership record — UVU bought the house in 2019 ($900k, from the Theobalds, "contiguous to campus"); older Markidas county serial and College Heights deed chain; no one accused.
 * `rental-listings.mdx`: Whether it appeared as a rental/for-sale listing; nothing active found; why "was it rented" is testable.
 * `staging-allegation.mdx`: The verbatim unverified claim it was a planning/staging site, and what would confirm or kill it.
+* `neighborhood-reports.mdx`: Reported neighborhood evidence — ATF/police door-to-door camera canvass, the Ring-camera homeowner, the grey Challenger; no resident accused.
+* `records-requests.mdx`: Ready-to-file GRAMA request templates (Orem PD, UVU, city, UVU Police) to test the lead, plus the open records to pull directly.
+* `web-search-log.mdx`: Public log of every Google/web search run on the address, the useful hits, and the dead ends.
 * `p_research.md`: This re-runnable research prompt — stages, page hierarchy, defamation and bookkeeping rules, this appendix.
 * `CLAUDE.md`: Directory instructions — the address, the staging hypothesis, the Level 2/3/4 page structure for this dir.
 * `_category_.json`: Docusaurus sidebar config for the "House" category (label and position).
+
+---
+
+## APPENDIX B — Search log across runs (what was tried, what worked)
+
+A running, append-only record of the web/Google searches used to research this
+address, so future runs skip dead ends and build on what worked. **Append a new
+dated block each run. Never delete a prior block.** Also mirror the useful hits
+into the public `web-search-log.mdx` page.
+
+### Run 2026-08-09 (second run)
+
+**What worked well — reuse these:**
+
+* `691 W 925 S Orem UT 84058 property` — surfaced the property specs and the
+  primary aggregator/record set: Trulia, Movoto, and the **Utah County land
+  record**. Best single starting query.
+* **WebFetch of the Utah County land record** (`utahcounty.gov/landrecords/...
+  Property.asp?av_serial=362140001002`) — returned owner name (Markidas,
+  Kostas), parcel serial, acreage, last document. The county ASP "mobile view"
+  page fetches cleanly; use it directly.
+* `"691 W 925 S" Orem sold history owner Markidas` — **the breakthrough.** It
+  surfaced a USHE Board of Regents agenda PDF revealing that **Utah Valley
+  University purchased this house in 2019 for $900,000.** Adding "sold history"
+  + owner surname to the address is what cracked it open.
+* Follow-ups on the UVU purchase (`"Utah Valley University" 925 South ...
+  board trustees 2019 appraised campus`) — confirmed the **Theobald family**
+  seller, **1.239 acres / 7,486 sqft**, "**contiguous to campus**," and the
+  June 18 2019 trustee meeting. Board-minutes searches are gold for
+  institution-owned property.
+* `UVU Losee Center ... Computer Science building 925 South Orem campus map` —
+  gave the **CS Building address 601 W 1000 South**, the grid fact that proves
+  the house is one block off campus (kills the "3 miles away" error).
+* `Charlie Kirk shooting house across from UVU ... grey Challenger Ring camera`
+  — surfaced the **Fox 13 ATF/police door-to-door canvass**, the **ABC4
+  Ring-camera homeowner**, and the **grey Challenger 8:29 a.m. campus arrival**
+  — the backbone of `neighborhood-reports.mdx`.
+
+**What did NOT work — don't waste a call on these again:**
+
+* **WebFetch of Trulia, Movoto, Homes.com** → **403 Forbidden.** Real-estate
+  aggregators block WebFetch. Read their content from the WebSearch result
+  snippets instead of fetching the page.
+* **WebFetch of large PDFs** → the **UVU trustee agenda (>10 MB)** exceeds the
+  fetch size limit and the **USHE Regents PDF (3.7 MB)** is a **scanned image
+  with no extractable text.** Rely on the WebSearch engine's extracted snippet
+  of these PDFs, or pull the smaller `utah.gov/pmn/files/*.pdf` meeting records.
+* **Direct Airbnb/Vrbo search for the exact address** → nothing (expected; STR
+  platforms hide addresses). Defer to the AirDNA / listing-ID archaeology in
+  Step 18 rather than plain address search.
+
+**Best-yield lesson:** the decisive fact (UVU ownership) came not from property
+sites but from **government board minutes** found by pairing the address with
+"sold history" and the owner surname. For any institution-adjacent property,
+search the owning body's **trustee/regents/council agendas** early.
+
+### Run <YYYY-MM-DD> (template — copy for the next run)
+
+**What worked well:**
+* `<query>` — `<what it found + URL>`
+
+**What did NOT work:**
+* `<query>` — `<why it failed>`
+
+**Best-yield lesson:** `<one line>`
