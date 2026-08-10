@@ -60,12 +60,54 @@ Hits: [Fox 13 — ATF/police door-to-door canvass](https://www.fox13now.com/news
 - **Real-estate aggregator "neighborhood" tags** — sites label the address "Sunset Heights" and imply it is miles from campus. This is a **geocoding error**, contradicted by UVU's own "contiguous to campus" board language. Do not rely on aggregator location framing for this parcel.
 - **Fetching aggregator pages and large PDFs directly** — Trulia/Movoto/Homes.com block automated fetches, and the largest university PDFs are scanned images with no searchable text. The findings above came from search-result extracts and the smaller government meeting records instead.
 
+## Run 2026-08-09 (deep research pass) — major hits
+
+**Current parcel serial found** — search: `Utah County owner "UTAH VALLEY UNIVERSITY" "691 W 925"`
+Hit: county owner-name results list **UTAH VALLEY UNIVERSITY** on serial **36:443:0006** at **691 W 925 SOUTH**. This replaces reliance on obsolete serial 36:214:0001.
+Direct pull: [Property 36:443:0006](https://www.utahcounty.gov/landrecords/Property.asp?av_serial=364430006010) · [Abstract](https://www.utahcounty.gov/landrecords/abstract.asp?av_serial=364430006) — yielded **full deed list**, mailing **800 W University Pkwy**, acreage **1.239**, WD **46392-2019** (May 24, 2019).
+
+**Complete instrument chain** — WebFetch of abstract for 36:443:0006
+Returned Broderick → Markides (1993), Markides → Theobald (1998 WD 125453-1998), Theobald → UVU (2019 WD 46392-2019), post-2019 reconveyances, 2025 plat notices, 2026 easement. Written up on [Deed Chain](./deed-chain).
+
+**Prior owners / obituaries** — searches: `"Paul H. Theobald"`, `"Dorothy Theobald"`, `DeRae Broderick`, `Pauline Broderick`
+Hits: [Paul H. Theobald obituary](https://www.heraldextra.com/lifestyles/2021/apr/05/paul-h-theobald/) (d. Apr 1, 2021); [Dorothy Theobald](https://www.deseret.com/2012/8/23/20712981/obituary-theobald-dorothy/) (d. Aug 21, 2012); [DeRae Broderick](https://www.sundbergolpinmortuary.com/obituaries/derae-broderick) (d. Jun 4, 2019); [Pauline Broderick](https://www.sundbergolpinmortuary.com/obituaries/pauline-broderick) (d. Jun 5, 2021).
+Also: [2002 Deseret missionary reunion at 691 W 925 South](https://www.deseret.com/2002/10/4/19680529/missionary-reunions-abound-in-s-l-area/) contact Jae Theobald; [FastPeopleSearch historical residents](https://www.fastpeoplesearch.com/address/691-w-925-s_orem-ut-84058); [Broderick & Howell Construction / Sunbiz](https://search.sunbiz.org/Inquiry/corporationsearch/SearchResultDetail?inquirytype=EntityName&directionType=ForwardList&searchNameOrder=BRODERICKHOWELLCONSTRUCTION%20P291640&aggregateId=forp-p29164-ba21c0e1-73f9-4608-a2e4-80553e9fe5ea&searchTerm=BRODEMAN%20LLC&listNameOrder=BRODERICKCONSTRUCTION%20P050001132310); X [artisbrutal2021](https://x.com/artisbrutal2021/status/1968839633799635254).
+
+**Trustee minutes PDF text** — `6-18-2019_trustee_minutes_final.pdf`
+Confirmed ratification language: Master Plan extension; Theobalds accepted $900,000 appraised contract; full board ratification without opposition. [PDF](https://www.uvu.edu/president/docs/trustees/minutes/6-18-2019_trustee_minutes_final.pdf).
+
+**Same-block court evidence** — searches: `"680 W 925" Robinson`, `Ring Challenger Orem`
+Hits: preliminary hearing materials naming **680 W 925 S** Ring/Nest (Noble), Challenger ~00:30 Sept 11 — [Grabien archive](https://news.grabien.com/robinson-prelim-archive/), [Rev Day 1](https://www.rev.com/transcripts/ut-v-tyler-robinson---day-1). Written on [W 925 S Block](./w-925-south-block).
+
+**Citizen social** — X keyword + web: DiligentDenizen thread, `@xcryptoace33` UVU ownership note, TikTok vacant-property video [@jessicadabit](https://www.tiktok.com/@jessicadabit/video/7551818222098500894), 683/Palantir debunk threads. Logged on [Citizen Coverage](./citizen-investigation-coverage).
+
+**Aggregator valuation** — `691 W 925 S Orem Zillow / Realtor`
+Tax assessed **$755,000**; rent est. ~$3,783; Realtor est. ~$1.50M; UVU Bookstore ~0.3 mi.
+
+### Dead ends this run
+
+- Herald Extra original article URL for "UVU trustees approve purchase of estate-style Orem home" → **404** (content still circulates via Facebook quote of the piece).
+- Kostas Markides obituary search → **no reliable hit** (status Unknown).
+- Direct STR listing for exact address → still empty (expected).
+
+### Reusable technique + the 691-vs-683 two-parcel distinction
+
+**Technique that works every time:** the Utah County **`AbstractReverse.asp?av_serial=<serial>`** endpoint returns a full grantor/grantee document history as clean text (it fetches where aggregators 403). Pull it for any serial on the block.
+
+Using it, the **house next door was separated out** so the two are never conflated again:
+
+- **691 W 925 S** (old serial 36:214:0001 → re-platted 1993 as College Heights **Plat J**, live serial **36:443:0006**) — chain **Broderick → Markides → Theobald → UVU**; current owner **Utah Valley University**. [Abstract, old serial](https://www.utahcounty.gov/landrecords/AbstractReverse.asp?av_serial=362140001).
+- **683 W 925 S** (serial **36:214:0002**) — chain **Broderick → Howell → Steel → Anderson → Vandagriff → 683 Properties LLC**; current owner **683 Properties LLC** (2020–2021), **not** UVU. [Abstract](https://www.utahcounty.gov/landrecords/AbstractReverse.asp?av_serial=362140002).
+
+**Palantir debunk** — search: `683 W 925 S Orem "683 Properties LLC" OR "683 Capital" Palantir` → **683 Properties LLC** (owns 683) is **not** **683 Capital Management** (a hedge fund holding Palantir stock). Similar number, unrelated company; neither owns the house. [Grok correction #1](https://x.com/grok/status/1971547175177134231), [#2](https://x.com/grok/status/1971622977277223331).
+
 ## What to search next
 
-1. The **Utah County Recorder grantor/grantee index** for the exact deed instruments (Theobald → UVU, and earlier) — numbers and dates.
-2. **AirDNA / short-term-rental analytics** for a deleted Airbnb/Vrbo listing matching a 6-bed home on this block.
-3. **UVU facilities / real-estate news** for how the university used the home after 2019.
-4. The address across **X/Twitter** for any citizen post beyond the [command-center video](./overview).
+1. **AirDNA / short-term-rental analytics** for a deleted Airbnb/Vrbo listing matching a 6-bed home on this block.
+2. **UVU facilities / real-estate news** for how the university used the home after 2019 (beyond the 2019 board language).
+3. **Street View history + county GIS** match of DiligentDenizen frames to Lot 2 Plat J.
+4. **Box truck / dumpster branding** frame grabs from the command-center video.
+5. **GRAMA responses** once requests are filed (see [Records Requests](./records-requests)).
 
 ## Laws (Charlie Kirk)
 

@@ -105,6 +105,38 @@ so the next run does not repeat dead ends and a reader can retrace the trail.
 Record each search's query, the useful hits (with URLs), and a one-line
 verdict. Mirror those same notes into **Appendix B** of this prompt file.
 
+#### Standing Google-search battery (fire ALL of these every run)
+
+Do not paraphrase this away — run this exact battery each run, on a general web
+search engine (Google/Bing/DuckDuckGo), and log every one in `web-search-log.mdx`.
+Substitute the latest owner/seller/agent names as they surface. A query that
+returns nothing new is still logged as "no new result" so the next run knows.
+
+Address-identity queries:
+1. `691 W 925 S Orem UT 84058`
+2. `"691 West 925 South" Orem`
+3. `691 W 925 S Orem sold` / `... sale history` / `... price history`
+4. `691 W 925 S Orem Zillow` · `... Redfin` · `... Trulia` · `... Realtor.com` · `... Movoto` · `... Homes.com`
+5. `691 W 925 S Orem rent` · `... for rent` · `... Airbnb` · `... Vrbo` · `... Furnished Finder` · `... KSL`
+6. `691 W 925 S Orem parcel` · `... Utah County assessor` · `... recorder deed`
+
+Ownership / institution queries (the highest-yield lane so far):
+7. `"Utah Valley University" "925 South" property purchase`
+8. `UVU buy house 925 South Orem trustees` · `... Board of Regents agenda`
+9. current + prior owner/seller surnames + `Orem Utah` (e.g. `Theobald Orem 925 South`, `Markidas Orem`)
+10. owner/seller surname + `obituary` · `+ Utah Division of Corporations` · `+ LinkedIn`
+
+Case-connection queries:
+11. `Charlie Kirk house across from UVU` · `... command center house Orem`
+12. `Charlie Kirk Orem door to door Ring camera` · `... grey Challenger house`
+13. `691 W 925 S Charlie Kirk` · `DiligentDenizen 691 925 command center`
+14. `UVU campus house 925 South shooting` · `Losee Center house across street`
+
+Site-scoped / archive queries:
+15. `site:x.com 691 925 Orem` · `site:youtube.com 691 925 Orem command center`
+16. `site:reddit.com Charlie Kirk Orem house 925` · `site:nextdoor.com 925 South Orem`
+17. Wayback / archive.today lookups of any listing or X URL that surfaces.
+
 ### Step 3 — Deed chain & Utah County Recorder documents
 
 The ownership page currently rests on a parcel record whose **serial life ended
@@ -447,6 +479,28 @@ At the end of every run, refresh **Appendix A** (files in the directory) and
 prune any stage whose findings are now fully captured on a page, so the prompt
 reflects the current state instead of drifting.
 
+### Step 26 — Finish checklist (self-audit gate — do not skip)
+
+Before reporting the run complete, confirm every item. If any fails, fix it and
+re-check — do not finish on a failing box.
+
+- [ ] The **standing search battery** (Step 2) was fired this run and each query
+      is logged in `web-search-log.mdx` with a result or an explicit "no new
+      result."
+- [ ] A **new dated run-block** was appended to `web-search-log.mdx` AND to
+      **Appendix B** — never overwriting a prior run's block.
+- [ ] Every **Level 4 `.mdx`** in `{HOUSE_DIR}` is **phrase-linked** from
+      `overview.mdx` and appears in its TOC grid.
+- [ ] Every page touched has a **row in `{PAGES_CSV}`** with all columns filled
+      and `line_count` matching the file.
+- [ ] New raw findings were appended to **`{CK_INBOX}`**; **`{CK_FILE}` was not
+      written to.**
+- [ ] Each factual claim on a page **carries its source link**, and each living
+      person has attribution + `Status:` and an explicit no-wrongdoing note.
+- [ ] `cd {ROOT_DIR}/site && npm run build` **succeeds** with no MDX errors and
+      no broken links.
+- [ ] **Appendix A** file inventory was regenerated to match the directory.
+
 ---
 
 ## Hard rules (repeat)
@@ -465,16 +519,21 @@ Pages and files present in `{HOUSE_DIR}` at the time this appendix was written.
 Regenerate this list on each run so it stays current.
 
 * `overview.mdx`: Level 3 hub — what the house is, the staging lead, the "command center" video, links to every Level 4 page.
-* `location-and-property.mdx`: Physical facts — size, beds/baths, year built, lot, neighborhood, ~0.25 mi from UVU (walking distance).
-* `ownership.mdx`: Ownership record — UVU bought the house in 2019 ($900k, from the Theobalds, "contiguous to campus"); older Markidas county serial and College Heights deed chain; no one accused.
+* `location-and-property.mdx`: Physical facts — size, beds/baths, year built, **1.239 ac Lot 2 Plat J**, ~0.25 mi from UVU.
+* `ownership.mdx`: Ownership record — UVU bought the house in 2019 ($900k); **live serial 36:443:0006**; board minutes; no one accused.
+* `deed-chain.mdx`: Full Utah County instrument log (Broderick → Markides → Theobald → UVU) with entry numbers.
+* `prior-owners.mdx`: Broderick / Markides / Theobald people profiles (Alive/Deceased), construction registration, no case connection found.
+* `tax-and-values.mdx`: Assessed $755k, tax history, 2019 adjustment, post-UVU tax silence.
 * `rental-listings.mdx`: Whether it appeared as a rental/for-sale listing; nothing active found; why "was it rented" is testable.
 * `staging-allegation.mdx`: The verbatim unverified claim it was a planning/staging site, and what would confirm or kill it.
-* `neighborhood-reports.mdx`: Reported neighborhood evidence — ATF/police door-to-door camera canvass, the Ring-camera homeowner, the grey Challenger; no resident accused.
-* `records-requests.mdx`: Ready-to-file GRAMA request templates (Orem PD, UVU, city, UVU Police) to test the lead, plus the open records to pull directly.
-* `web-search-log.mdx`: Public log of every Google/web search run on the address, the useful hits, and the dead ends.
-* `p_research.md`: This re-runnable research prompt — stages, page hierarchy, defamation and bookkeeping rules, this appendix.
-* `CLAUDE.md`: Directory instructions — the address, the staging hypothesis, the Level 2/3/4 page structure for this dir.
-* `_category_.json`: Docusaurus sidebar config for the "House" category (label and position).
+* `neighborhood-reports.mdx`: ATF canvass, homeowner camera, Challenger claims split (8:29 / 680 court / citizen 691).
+* `w-925-south-block.mdx`: 680 Ring court exhibit, 683 Palantir debunk, 691 UVU house, horseshoe manhunt context.
+* `citizen-investigation-coverage.mdx`: DiligentDenizen, X posts, TikTok vacant claim, Trends claims — attributed only.
+* `records-requests.mdx`: Ready-to-file GRAMA request templates (Orem PD, UVU, city, UVU Police).
+* `web-search-log.mdx`: Public log of every Google/web search run on the address.
+* `p_research.md`: This re-runnable research prompt.
+* `CLAUDE.md`: Directory instructions.
+* `_category_.json`: Docusaurus sidebar config.
 
 ---
 
@@ -530,6 +589,25 @@ into the public `web-search-log.mdx` page.
 sites but from **government board minutes** found by pairing the address with
 "sold history" and the owner surname. For any institution-adjacent property,
 search the owning body's **trustee/regents/council agendas** early.
+
+### Run 2026-08-09 (third run — deed chain + block court)
+
+**What worked well — reuse these:**
+
+* Utah County owner name search `UTAH VALLEY UNIVERSITY` — listed **36:443:0006** at 691 W 925 SOUTH. **This is the live serial.**
+* Direct WebFetch of `Property.asp?av_serial=364430006010` and `abstract.asp?av_serial=364430006` — full owner roll, values, **every instrument** with entry numbers. Gold standard for Utah County.
+* `Paul H. Theobald` / `Dorothy Theobald` / `DeRae Broderick` obituary searches — clean status resolution (all deceased).
+* `"680 W 925" Robinson` / preliminary hearing — found **court-admitted Ring** on same street (Grabien, Rev).
+* UVU trustee minutes PDF text extract — exact $900k / Theobalds / Master Plan ratification language.
+* X keyword search on address variants — captured DiligentDenizen thread + UVU-ownership callouts same day.
+
+**What did NOT work:**
+
+* Herald Extra original article URL → 404 (quote still recoverable from Facebook reposts).
+* Kostas Markides obituary → no reliable hit.
+* Airbnb/Vrbo exact address → still empty.
+
+**Best-yield lesson:** once you have *any* owner name (UVU), the county **name search → current serial → abstract** path beats aggregator sites for the entire deed chain in one pull.
 
 ### Run <YYYY-MM-DD> (template — copy for the next run)
 
