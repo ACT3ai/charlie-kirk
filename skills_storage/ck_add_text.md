@@ -149,6 +149,90 @@ SITE_DOCS_DIR is dir {ROOT_DIR}/site/docs/
 TRANSCRIBE_JS is file ~/BGit/all/tools/Transcription/Transcribe.js
 TRANSCRIBE_CONFIG is file {ROOT_DIR}/tmp/transcribe_config.yaml
 
+HISTORY_DIR is dir ~/T/_ck_skill/history/
+RUN_LOG is file {HISTORY_DIR}{YYYY-MM-DD}_{HH-MM-SS}.md
+
+
+============================
+RUN LOG (MANDATORY, BOTH MODES)
+============================
+
+Every single invocation of this skill writes exactly one run-log file. This is in
+ADDITION to all the work the skill already does — it never replaces or shortcuts a
+step. Its purpose is post-hoc debugging: months later Bryan must be able to read
+one file and know what was passed in, what the skill decided, what commands it
+ran, what came back, and what it wrote.
+
+* FIRST ACTION OF EVERY RUN, before parsing input, before any fetch:
+
+  ```bash
+  mkdir -p ~/T/_ck_skill/history
+  ```
+
+  Compute the run stamp from the real clock (`date "+%Y-%m-%d_%H-%M-%S"`) and set
+  RUN_LOG to {HISTORY_DIR}{stamp}.md. Do not invent a timestamp. Immediately write
+  the header block (verbatim input, mode, cwd) so a run that dies mid-way still
+  leaves a log naming its input.
+
+* APPEND AS YOU GO — do not buffer the whole log to the end. After each step
+  completes or fails, append its entry. A crashed or context-exhausted run must
+  still leave a partial log showing the last step reached. If a step fails, the log
+  entry says FAILED and records the exact stderr, not a summary.
+
+* Log format:
+
+  ```markdown
+  # ck_add_text run {stamp}
+
+  ## Input
+  Mode: {X POST MODE | ADD TEXT MODE}
+  Raw $ARGUMENTS (verbatim, including any line breaks or URL wrapping):
+  ```
+  {exact raw input}
+  ```
+  Parsed URLs: {list, one per line, after un-wrapping}
+  Flags: skip_video={y/n} transcribe={y/n} target_section={... or none}
+
+  ## Steps
+  | # | Step | Result | Detail |
+  |---|------|--------|--------|
+  | 1 | Fetch post | OK | {post_id} @{user}, has_video={y/n} has_images={n}, quoted={id or none} |
+  | 6 | Video download | OK/FAILED/SKIPPED | {filename}, {bytes}, yt-dlp exit {code} |
+  | 6b | IPFS pin | OK/FAILED | CID {cid} |
+  | 6b2 | Public gateway verify | OK/FAILED | http {code}, content-type {type}, {ms} |
+  | ... | | | |
+
+  ## Commands run
+  Each media/IPFS/transcription command, verbatim, with its exit code and the
+  first + last 10 lines of output. yt-dlp failures get their FULL stderr.
+
+  ## Media outcome
+  Video file: {path or NONE — why}
+  Video CID: {cid or NONE}
+  Publicly retrievable: {yes | NO — reason}
+  Remote pin: {service + result, or NONE CONFIGURED}
+  Player emitted on page: {yes | no — why not}
+  Images: {paths + CIDs, or none}
+
+  ## Files written
+  {one line per file created or modified, with created/modified and line delta}
+
+  ## Warnings and unfinished business
+  {every gap, skipped step, unverified CID, or manual follow-up Bryan must do.
+   If there are none, write "none".}
+  ```
+
+* The log is written for BOTH modes. In ADD TEXT MODE the media sections read
+  "n/a (add text mode)".
+
+* In MULTI-POST MODE there is ONE log file for the whole batch, with a `## Steps`
+  table and `## Media outcome` block per post under a `### {post_id}` heading.
+
+* The log lives outside the repo (~/T/) on purpose — it is a debug artifact, never
+  committed, never published.
+
+* Tell the user the log path in the Step 10 summary.
+
 
 ============================
 RULES
@@ -861,12 +945,32 @@ the post has no video if yt-dlp itself finds nothing to download.
   prevents quote/repost videos from being silently dropped.
   If both fail, try with cookies or inform the user.
 
+* 6a2. VERIFY THE DOWNLOAD ACTUALLY PRODUCED A PLAYABLE FILE. yt-dlp can exit 0
+  having written nothing, or having written a tiny fragment or an HLS manifest.
+  Never trust the exit code alone:
+
+  ```bash
+  ls -la {ROOT_DIR}/videos/{post_id}.* 2>/dev/null
+  ```
+
+  Set VIDEO_DOWNLOAD_OK = true only if a file exists AND is larger than 100 KB AND
+  `file` reports it as a media container. If VIDEO_DOWNLOAD_OK is false:
+    - Set VIDEO_CID = none and VIDEO_PUBLIC_OK = false.
+    - Log the FULL yt-dlp stderr to {RUN_LOG} under "## Commands run".
+    - Do NOT proceed to 6b/6c/6c2/6c3 — there is nothing to pin, and writing a
+      manifest/ipfs.txt row for a nonexistent file poisons the duplicate check on
+      every future run.
+    - Continue to the remaining steps (the page is still created from the post text
+      and any images), but the page gets NO video player — see 9e.
+    - Report it loudly in Step 10 as "VIDEO FAILED", not silently.
+
 * 6b. Pin to IPFS:
   - Ensure the IPFS daemon is running:
     ```bash
-    brew services list | grep kubo
+    ipfs id > /dev/null 2>&1 || brew services start kubo
     ```
-    If not running: brew services start kubo
+    Wait for the daemon to answer before adding. If the daemon cannot be started,
+    set VIDEO_CID = none, VIDEO_PUBLIC_OK = false, log it, and skip to 6d.
   - Add and pin the video:
     ```bash
     ipfs add --pin {ROOT_DIR}/videos/{filename}
@@ -876,6 +980,71 @@ the post has no video if yt-dlp itself finds nothing to download.
     ```bash
     ipfs pin ls {CID}
     ```
+
+* 6b2. PUBLISH THE CID TO THE NETWORK AND VERIFY A REAL VISITOR CAN FETCH IT.
+
+  THIS IS THE STEP WHOSE ABSENCE CAUSED THE RECURRING "the video is not on the
+  page" BUG. `ipfs add --pin` only makes the bytes available FROM THIS MACHINE.
+  A page can therefore ship a perfectly correct-looking <video> tag whose CID has
+  exactly one provider — Bryan's laptop — so the player is broken for every visitor
+  whenever that machine is asleep, offline, or the daemon is stopped. Local
+  `ipfs pin ls` succeeding proves NOTHING about the public site.
+
+  - Announce the CID to the DHT so public gateways can find a provider:
+    ```bash
+    ipfs routing provide {CID}
+    ```
+
+  - Request a remote pin so the file survives this machine being off. Check for a
+    configured service:
+    ```bash
+    ipfs pin remote service ls
+    ```
+    If a service is configured:
+    ```bash
+    ipfs pin remote add --service={service} --name="{post_id}.mp4" {CID}
+    ```
+    If NO remote service is configured, do not fail the run — but record
+    REMOTE_PIN = "NONE CONFIGURED" in {RUN_LOG} and say so in the Step 10 summary,
+    because it means this video's availability depends on one machine staying up.
+    Recommend to the user once per run:
+      "No IPFS remote pinning service is configured. Videos are served only from
+       this machine, so players break when it sleeps. Configure one with:
+         ipfs pin remote service add pinata https://api.pinata.cloud/psa {JWT}
+       or route the file through Large File Bridge (~/BGit/Bryan_git/LargeFileBridge/)."
+
+  - Verify retrievability THROUGH A PUBLIC GATEWAY, which is what a visitor's
+    browser actually does. Do not skip this and do not substitute a localhost
+    gateway check:
+    ```bash
+    curl -s -o /dev/null -w "http=%{http_code} type=%{content_type} t=%{time_total}\n" \
+      --max-time 60 -r 0-1000 "https://ipfs.io/ipfs/{CID}"
+    ```
+    Set VIDEO_PUBLIC_OK = true ONLY if http is 200 or 206 AND content_type is a
+    video type (video/mp4, application/octet-stream is acceptable for mp4 bytes).
+    An HTML content-type means the gateway returned an error page — that is a
+    FAILURE, not a success, even with http 200.
+
+    If the first attempt fails, wait 20 seconds and retry once (DHT propagation of
+    a fresh CID is not instant). Also test the dweb.link fallback:
+    ```bash
+    curl -sL -o /dev/null -w "http=%{http_code} type=%{content_type}\n" \
+      --max-time 60 -r 0-1000 "https://dweb.link/ipfs/{CID}"
+    ```
+    dweb.link redirects path requests to its subdomain form, so use -L there; a 301
+    without -L is not a failure.
+
+  - Record in {RUN_LOG}: the CID, both gateway results verbatim, REMOTE_PIN, and
+    the final VIDEO_PUBLIC_OK value.
+
+  - If VIDEO_PUBLIC_OK is false, the video is downloaded and pinned locally but is
+    NOT publicly servable yet. Still write the manifest, ipfs.txt, and videos.md
+    rows (the bytes and CID are real). Set the manifest field:
+    ```yaml
+    public_verified: false
+    ```
+    and see 9e for what the page gets instead of a broken player.
+    If VIDEO_PUBLIC_OK is true, write `public_verified: true`.
 
 * 6c. Update manifest — append to {ROOT_DIR}/videos/manifest.yaml:
   ```yaml
@@ -887,6 +1056,8 @@ the post has no video if yt-dlp itself finds nothing to download.
     description: '{brief description from content}'
     added_date: '{today YYYY-MM-DD}'
     pinned: true
+    public_verified: {true|false}   # from 6b2 — was it fetchable via ipfs.io?
+    remote_pin: '{service name | none}'
   ```
 
 * 6c2. Update {ROOT_DIR}/IPFS/ipfs.txt — append the IPFS commands for this video:
@@ -936,8 +1107,25 @@ the post has no video if yt-dlp itself finds nothing to download.
   Size: {file size}
   IPFS CID: {CID}
   Gateway: https://ipfs.io/ipfs/{CID}
+  Publicly retrievable: {YES (http {code}, {type}) | NO — {reason}}
+  Remote pin: {service + result | NONE CONFIGURED — served only from this machine}
   IPFS commands added to: IPFS/ipfs.txt
   Video index updated: videos/videos.md
+  ============================================
+  ```
+
+  If VIDEO_DOWNLOAD_OK is false, output this instead — never stay silent:
+  ```
+  ============================================
+  VIDEO DOWNLOAD FAILED — page will have NO player
+  ============================================
+  Post: {post_url}
+  yt-dlp exit: {code}
+  Error: {last line of stderr}
+  Tried: {original_post_url}{, then MEDIA_SOURCE_URL if applicable}
+  Suggested fix: yt-dlp --cookies-from-browser chrome "{post_url}" \
+    -o "{ROOT_DIR}/videos/{post_id}.%(ext)s"
+  Logged to: {RUN_LOG}
   ============================================
   ```
 
@@ -1237,7 +1425,46 @@ This step uses the Level 2 / Level 3 decisions made in Step 3.
   https://dweb.link/ipfs/{CID} as a second <source> fallback; for images, note the
   dweb.link fallback URL in a comment. The local daemon is only for pinning, not embeds.
 
-* 9e. VIDEO EMBEDDING — use half-width, floated right, with text flowing around it:
+* 9e. VIDEO EMBEDDING — use half-width, floated right, with text flowing around it.
+
+  MANDATORY GATE — a post that had a video MUST end with either a working player on
+  the page or an explicit, logged reason why not. Silently producing a page with no
+  video for a video post is the single most common failure of this skill and is
+  never acceptable.
+
+  Decide from the flags set in Step 6:
+
+  - VIDEO_DOWNLOAD_OK true AND VIDEO_PUBLIC_OK true → emit the full player below.
+    This is the required outcome. Every other branch is a degraded fallback that
+    must be reported.
+
+  - VIDEO_DOWNLOAD_OK true, VIDEO_PUBLIC_OK false → the bytes exist locally but no
+    public gateway can serve them yet. Emit the player anyway (the CID becomes
+    valid the moment the file is remote-pinned or the daemon is reachable) AND add
+    an MDX comment directly above it so the unverified state is visible in the
+    source, plus a caption line pointing at the source post as the working fallback:
+    ```
+    {/* CK_VIDEO_UNVERIFIED {CID} — not retrievable via ipfs.io as of {date}.
+        Remote-pin this CID, then re-verify:
+        curl -sI -r 0-100 https://ipfs.io/ipfs/{CID} */}
+    ```
+    Caption gains: `If the player does not load, watch the original on <a href="{post_url}">X</a>.`
+    Record it in {RUN_LOG} under "## Warnings and unfinished business".
+
+  - VIDEO_DOWNLOAD_OK false → there is no CID. Do NOT write a <video> tag with an
+    empty, guessed, or other post's CID. Instead put a linked reference where the
+    player would go:
+    ```
+    <p><em>Video: <a href="{post_url}">@{username} on X</a> ({duration}) — not yet
+    mirrored to IPFS.</em></p>
+    ```
+    and log it as an outstanding item.
+
+  - The post genuinely had no video (yt-dlp found nothing to download and Step 1
+    reported no media) → no video section at all, and the run log says
+    "no video present" rather than "video failed".
+
+  Player markup:
   ```
   <div style={{float: 'right', width: '48%', maxWidth: '480px', marginLeft: '1.5rem', marginBottom: '1rem'}}>
     <video controls style={{width: '100%', height: 'auto', display: 'block', borderRadius: '4px'}}>
