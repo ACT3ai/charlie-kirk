@@ -429,15 +429,17 @@ resolve files, so they work regardless of the current working directory.
 === Skill Symlink Auto-Setup ===
 
 On first run, Claude Code should check whether symlinks exist for every skill
-in skills_storage/. For each .md file found under {ROOT_DIR}/skills_storage/*/*.md:
+in skills_storage/. Skill files live FLAT in that directory, one .md per skill —
+{ROOT_DIR}/skills_storage/*.md — not in a per-skill subdirectory. For each .md
+file found there:
 
   1. Check if ~/.claude/commands/{filename} exists and is a symlink pointing to
      the correct file under skills_storage/.
   2. If the symlink is missing or broken, tell the user:
        "Skill '{skill_name}' is not linked. Create symlink at
-        ~/.claude/commands/{filename} -> {ROOT_DIR}/skills_storage/{dir}/{filename}?"
+        ~/.claude/commands/{filename} -> {ROOT_DIR}/skills_storage/{filename}?"
   3. If the user says yes, create the symlink:
-       ln -s {ROOT_DIR}/skills_storage/{dir}/{filename} ~/.claude/commands/{filename}
+       ln -s {ROOT_DIR}/skills_storage/{filename} ~/.claude/commands/{filename}
   4. If ~/.claude/commands/ does not exist, create it first: mkdir -p ~/.claude/commands/
 
 This ensures anyone who clones the repo gets prompted to set up skills on their
@@ -448,8 +450,14 @@ machine without manual steps.
   * /ck_add_text {text}        - Add new text/notes to {CK_FILE}. Finds the
                                   right section or creates a new one. Never
                                   removes existing content. The file only grows.
-                                  Source: skills_storage/ck_add_text/ck_add_text.md
+                                  Source: skills_storage/ck_add_text.md
                                   Symlink: ~/.claude/commands/ck_add_text.md
+
+  * /ck_defemation_prevention  - Scan public site pages for defamation risk.
+                                  Source: skills_storage/ck_defemation_prevention.md
+
+  * /ck_rebalance_level        - Propose and execute Level 2 section restructuring.
+                                  Source: skills_storage/ck_rebalance_level.md
 
 
 == Research Workflow ==

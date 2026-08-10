@@ -200,6 +200,11 @@ ran, what came back, and what it wrote.
   | 6 | Video download | OK/FAILED/SKIPPED | {filename}, {bytes}, yt-dlp exit {code} |
   | 6b | IPFS pin | OK/FAILED | CID {cid} |
   | 6b2 | Public gateway verify | OK/FAILED | http {code}, content-type {type}, {ms} |
+  | 9H-1 | Media in source file | PASS/FAIL | grep -c {cid} {page} = {n} |
+  | 9H-2 | Gateway at publish time | PASS/FAIL | http {code}, content-type {type} |
+  | 9H-3 | Pushed to origin/main | PASS/PENDING/FAIL | ahead/behind {a}/{b}, cid in remote = {n} |
+  | 9H-4 | Pages deploy | PASS/FAIL/SKIPPED | run {id}, {conclusion} |
+  | 9H-5 | Live page | PASS/FAIL/SKIPPED | curl {url} → cid count {n} |
   | ... | | | |
 
   ## Commands run
@@ -1588,6 +1593,115 @@ This step uses the Level 2 / Level 3 decisions made in Step 3.
 
 
 ============================
+X POST STEP 9H: VERIFY THE READER CAN ACTUALLY SEE IT
+============================
+
+SKIP IF: No site/docs/ page was created or modified in Step 9.
+
+Everything up to here proves the work happened on THIS machine. It does not prove a
+visitor to whoassassinatedcharliekirk.com can see it. Those are different claims, and
+reporting the first as if it were the second is the single most common way this skill
+has misled. This step closes that gap with four checks. Each one is a hard PASS or FAIL
+that goes in the summary — never "probably fine", never inferred from the fact that an
+earlier step succeeded.
+
+WHY THIS EXISTS: on 2026-08-10 a video was correctly downloaded, pinned, transcribed,
+and embedded, and the run reported complete. The reader saw no video, because the
+GitHub Pages deploy was still in_progress. Nothing was broken; the skill simply stopped
+reporting one link short of the reader. Separately, the older and more dangerous failure
+is a CID hashed with `ipfs add -n` that lives on no node — the page renders a dead
+player and the run still says "complete".
+
+* 9H-1. SOURCE CHECK — is the media actually in the file on disk?
+
+  For each page modified or created, and each CID embedded on it:
+  ```bash
+  grep -c "{CID}" {page_path}
+  ```
+  Zero means the edit did not land. Do not proceed to the remaining checks for that
+  page; report FAIL and say the edit was lost.
+
+* 9H-2. GATEWAY CHECK — re-confirm at publish time, not just at pin time.
+
+  Step 6b2 already verified the CID when it was pinned. Re-run it here anyway, because
+  a pin can be lost between steps and because this is the check whose result the reader
+  actually experiences:
+  ```bash
+  curl -sI -m 45 "https://ipfs.io/ipfs/{CID}" | head -5
+  ```
+  PASS requires **HTTP 200 AND a content-type of video/* or image/*.**
+  A `content-type: text/html` is a gateway error page, not the file — that is a FAIL
+  even though the status line may read 200. A 504 is a FAIL and almost always means the
+  CID is on no reachable node (the `ipfs add -n` trap).
+  On FAIL: say so plainly in the summary, name the CID, and state that the page will
+  render a dead player until the file is pinned to a reachable node or a remote pinning
+  service.
+
+* 9H-3. COMMIT AND PUSH CHECK — did the edit leave this machine?
+
+  This repo is auto-committed by an external process ("Bryan 26 Tower" / "Bryan 27
+  Laptop"), so an edit may be committed by something other than this run. Do not assume
+  either way — check:
+  ```bash
+  cd {ROOT_DIR}
+  git status --short -- {page_path}
+  git rev-list --left-right --count origin/main...HEAD
+  git show origin/main:{page_path} | grep -c "{CID}"
+  ```
+  PASS requires the CID present in the **origin/main** copy — that is the only version
+  the site builds from. A clean `git status` alone is NOT proof; neither is a local
+  commit. If the change is uncommitted or unpushed, report it as PENDING and tell Bryan
+  the auto-commit process has not picked it up yet. Do not commit or push to force it
+  unless Bryan asks — the repo has its own commit process and the global rules forbid
+  pushing without an explicit request.
+
+* 9H-4. DEPLOY CHECK — did GitHub Pages rebuild?
+
+  A push does not publish. The Pages workflow takes roughly 3–4 minutes.
+  ```bash
+  gh run list --limit 3
+  ```
+  Find the run triggered by the push containing this edit.
+  - `completed / success` → proceed to 9H-5.
+  - `in_progress` or `queued` → wait for it rather than reporting a false negative:
+    ```bash
+    gh run watch {run_id} --exit-status
+    ```
+  - `completed / failure` → FAIL. The most common cause in this repo is an MDX compile
+    error, and the most common cause of THAT is an HTML comment `<!-- -->` in a .mdx
+    file (must be `{/* */}`). Read the run log, name the real error in the summary, and
+    fix it if it is in a file this run touched.
+
+* 9H-5. LIVE PAGE CHECK — the only check that speaks for the reader.
+
+  ```bash
+  curl -s -m 60 "https://whoassassinatedcharliekirk.com{url_path}" | grep -c "{CID}"
+  ```
+  A count of 1 or more is PASS: the deployed HTML really contains the player.
+  Zero is FAIL even if 9H-1 through 9H-4 all passed — that combination means the build
+  dropped the content, and it is worth investigating rather than explaining away.
+
+* 9H-6. RECORD THE RESULTS.
+
+  Write all five results into {RUN_LOG} as a table with the literal command output
+  (status codes, counts, run ids) — not a summarised verdict. Then carry them into the
+  Step 10 summary using the "Publication verification" block defined there.
+
+  If any check FAILED or is PENDING, the run is NOT complete. Say which check failed,
+  what the reader currently sees, and what would fix it. Never print "Complete" over a
+  failed check.
+
+* 9H-7. TIME BUDGET.
+
+  These checks add roughly 4–5 minutes, nearly all of it waiting on the Pages deploy.
+  That is the correct trade — the alternative is telling Bryan something is published
+  when it is not. If Bryan's input contains "skip verify" or "no verify"
+  (case-insensitive), skip 9H-4 and 9H-5 only, and say plainly in the summary that
+  deploy and live-page verification were skipped at his request and the live site is
+  therefore unconfirmed. Never skip 9H-1, 9H-2, or 9H-3 — those are fast and local.
+
+
+============================
 X POST STEP 10: FINAL SUMMARY
 ============================
 
@@ -1614,9 +1728,25 @@ X POST STEP 10: FINAL SUMMARY
   Site pages updated: {list of files modified/created}
   X post link placed on: {list of pages}
   IPFS commands added: {yes/no}
+  Local build: {SUCCESS | FAILED}            (Step 11a)
+  Committed & pushed: {yes — {sha} | NO}     (Step 11c)
+  Pages deploy: {success — run {id} | FAILED | not run}   (Step 11d)
+  Live page: {http 200, video present | NOT LIVE — {reason}}  (Step 11e)
+  Video durable: {yes — remote-pinned | NO — single provider, this machine}
   Run log: {RUN_LOG}
+  -------- Publication verification (Step 9H) --------
+  Media in source file:   {PASS | FAIL — edit did not land}
+  Public IPFS gateway:    {PASS — http 200, {content-type} | FAIL — {code}/{type}}
+  Pushed to origin/main:  {PASS | PENDING — awaiting auto-commit | FAIL}
+  Pages deploy:           {PASS — run {id} success | FAIL — run {id}, {error} | SKIPPED}
+  Live page contains it:  {PASS | FAIL | SKIPPED}
+  READER CAN SEE IT:      {YES | NO — {which check failed and what fixes it}}
   ============================================
   ```
+
+* The final line is the one that matters. Print **YES** only when every non-skipped
+  check passed. If any check failed or is pending, print **NO** followed by the specific
+  cause — and do not describe the run as complete anywhere in the reply.
 
 * Before printing the summary, FINALISE {RUN_LOG}: make sure the Steps table has a
   row for every step attempted, the "## Files written" list matches what was
@@ -1645,8 +1775,18 @@ X POST STEP 10: FINAL SUMMARY
   Videos NOT publicly retrievable: {n} — {list CIDs}
   Video posts that got no player: {n} — {list post ids + reason}
   Run log: {RUN_LOG}
+  -------- Publication verification (Step 9H) --------
+  Pages verified live: {n} of {n}
+  Pages NOT yet live: {n} — {list page + which check failed}
+  Pages deploy: {PASS — run {id} | FAIL — run {id}, {error} | SKIPPED}
+  READER CAN SEE IT: {YES — all pages live | NO — {n} pages not visible}
   ============================================
   ```
+
+  In multi-post mode, run 9H-1 through 9H-3 per page as each post finishes, but run the
+  deploy check (9H-4) and live checks (9H-5) ONCE at the end of the batch — one push
+  usually covers every page, so watching the deploy per post would waste minutes per
+  post for the same answer.
 
 * **BATCH CLEANUP**: After a successful batch (all posts processed, no remaining):
   - Rename the progress file to mark it complete:
@@ -1671,6 +1811,103 @@ X POST STEP 10: FINAL SUMMARY
     /ck_add_text {paste the same URL list}
   Or just the remaining URLs — completed ones will be auto-skipped.
   ============================================
+  ```
+
+
+============================
+X POST STEP 11: VERIFY THE READER ACTUALLY GETS IT (MANDATORY)
+============================
+
+SKIP IF: no files under {SITE_DOCS_DIR} were created or modified this run.
+
+Steps 1-10 prove the skill did its work on THIS MACHINE. They prove nothing about
+what a visitor sees. Two things decide that, and both must be checked before the
+run is allowed to call itself complete:
+
+  * the page reached the live site (the GitHub Pages deploy went green), and
+  * the video the page points at is fetchable from a public gateway.
+
+A run that stops at "site pages updated" has historically reported success while
+the live site had no such page — or had the page with a player nobody could load.
+Do not stop there.
+
+* 11a. LOCAL BUILD FIRST. Never push a page that has not compiled:
+  ```bash
+  cd {ROOT_DIR}/site && npm run build 2>&1 | tail -20
+  ```
+  Require "[SUCCESS] Generated static files". An MDX compile error here is the
+  cheapest place to catch it — a broken .mdx fails the Pages workflow and silently
+  leaves the WHOLE site stale at its previous commit, not just this page.
+
+* 11b. CONFIRM THE BUILT PAGE CONTAINS WHAT YOU THINK IT DOES. Pages build as
+  `{name}.html` files, not directories — check the file, not a folder:
+  ```bash
+  F={ROOT_DIR}/site/build/{url_path}.html
+  ls -la "$F"
+  grep -c "{CID}" "$F"
+  ```
+  The build minifier STRIPS ATTRIBUTE QUOTES, so `grep '<source src="'` returns
+  nothing on a perfectly good page. Match on the CID or the bare tag name, never
+  on a quoted-attribute pattern, or you will diagnose a working page as broken.
+
+* 11c. CONFIRM IT WAS COMMITTED AND PUSHED. This repo has an external auto-commit
+  process ("Bryan 26 Tower" / "Bryan 27 Laptop") that may have already committed
+  and pushed the files:
+  ```bash
+  git status --porcelain | head -30
+  git status -sb | head -2
+  ```
+  If the new/changed site files are still listed as modified or untracked, they
+  are NOT live no matter how green anything else is. Never create or switch
+  branches; never push unless Bryan asked. If the files are uncommitted and Bryan
+  did not ask for a commit, say so plainly in the Step 10 summary and record it in
+  {RUN_LOG} as unfinished business — do not claim the page is live.
+
+* 11d. WATCH THE PAGES DEPLOY TO COMPLETION:
+  ```bash
+  gh run list --limit 5
+  gh run watch {run_id} --exit-status
+  ```
+  Green is the only acceptable outcome. If it failed, read the log
+  (`gh run view {run_id} --log-failed`) and fix the cause — the most common is an
+  HTML comment `<!-- -->` inside an .mdx file, which must be `{/* */}`. A red
+  deploy means every page on the site is stale, so this is never "just this page's
+  problem". Set DEPLOY_OK accordingly.
+
+* 11e. FETCH THE LIVE PAGE AND ASSERT THE MEDIA IS IN IT:
+  ```bash
+  curl -s -o /tmp/ck_live.html -w "http=%{http_code}\n" -L "https://whoassassinatedcharliekirk.com{url_path}"
+  grep -c "{CID}" /tmp/ck_live.html
+  grep -c "<video" /tmp/ck_live.html
+  ```
+  Require http 200 AND the CID present AND a <video> tag (for a video post).
+  Also verify the poster actually serves, since it lives under
+  site/internals/static/ and a misplaced file 404s silently behind a working page:
+  ```bash
+  curl -s -o /dev/null -w "poster http=%{http_code} type=%{content_type}\n" \
+    -L "https://whoassassinatedcharliekirk.com/img/video_posters/{sha256}.jpg"
+  ```
+
+* 11f. RE-RUN THE PUBLIC GATEWAY CHECK FROM 6b2 one final time, after the deploy.
+  This catches the case where the CID resolved during the run only because the
+  bytes were still warm in a gateway cache.
+
+* 11g. STATE THE DURABILITY CAVEAT HONESTLY. If REMOTE_PIN was "NONE CONFIGURED",
+  the gateway check passing means "it works right now", NOT "it will keep working".
+  The CID has a single provider — this machine. Say exactly that in the summary
+  rather than reporting an unqualified success.
+
+* Append an 11-row block to the {RUN_LOG} Steps table: local build, built-page
+  contains CID, commit/push state, deploy conclusion + run id, live page http +
+  CID present, poster http, post-deploy gateway result, remote-pin state.
+
+* Add to the Step 10 summary:
+  ```
+  Local build: {SUCCESS | FAILED}
+  Committed & pushed: {yes — {sha} | NO — files still uncommitted}
+  Pages deploy: {success — run {id} | FAILED — run {id} | not run}
+  Live page: {http 200, video present | NOT LIVE — {reason}}
+  Video durable: {yes — remote-pinned to {service} | NO — single provider, this machine}
   ```
 
 
