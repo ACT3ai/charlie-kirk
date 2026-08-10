@@ -395,7 +395,32 @@ Parse $ARGUMENTS to identify all components:
 
 Parse rules for URL pairing (same as holon skill):
 
-  1. Split the input into non-empty tokens by line. Blank lines are separators.
+  0. UN-WRAP LINE-BROKEN URLS FIRST, BEFORE TOKENISING. Input is often pasted from
+     a terminal, phone, or transcription that hard-wrapped a URL mid-way, e.g.:
+
+       https://x.com/TarynEllez7/status/2086589506
+       967265670?s=20
+
+     Treated naively this yields the status id 2086589506 — a valid-looking but
+     wrong id, and the X API returns "not found" or the wrong post, so no video is
+     ever downloaded. This has silently broken real runs.
+
+     Repair rule: if a line ends inside an X status URL (it matches
+     `/status/\d+$` with no trailing punctuation) and the NEXT line begins with
+     digits, join the two lines with no separator. Repeat until no more joins
+     apply. Do the same for any line ending in `/` or `status` with digits on the
+     next line.
+
+     After un-wrapping, VALIDATE every X status id: it must be 15–20 digits. If an
+     id is shorter, do not proceed with it — stop and ask the user to re-paste that
+     URL, and log the rejected id in {RUN_LOG}. A truncated id must never be sent
+     to the X API and quietly turned into a "post has no video" conclusion.
+
+     Also strip tracking suffixes (`?s=20`, `?t=...`) before use, and record both
+     the raw and the repaired URL in {RUN_LOG} under "## Input".
+
+  1. Split the (un-wrapped) input into non-empty tokens by line. Blank lines are
+     separators.
 
   2. Identify each token as one of:
      - X_URL: a URL containing "/status/" (X.com or Twitter.com post)
@@ -1577,8 +1602,11 @@ X POST STEP 10: FINAL SUMMARY
   OCR performed: {yes — {word count} words | no}
   YAML saved: {path}
   Appended to CK_INBOX (Charlie_Kirk.txt NOT touched): {section name it belongs under}
-  Video: {downloaded filename or "none"}
+  Video: {downloaded filename or "none" or "FAILED — see log"}
   Video IPFS CID: {CID or "none"}
+  Video publicly retrievable: {YES | NO — {reason}}
+  Remote pin: {service | NONE CONFIGURED}
+  Player on page: {yes | no — {reason}}
   Images: {downloaded filenames or "none"}
   Image IPFS CIDs: {CIDs or "none"}
   Video skipped: {yes — user said no video | no}
@@ -1586,8 +1614,15 @@ X POST STEP 10: FINAL SUMMARY
   Site pages updated: {list of files modified/created}
   X post link placed on: {list of pages}
   IPFS commands added: {yes/no}
+  Run log: {RUN_LOG}
   ============================================
   ```
+
+* Before printing the summary, FINALISE {RUN_LOG}: make sure the Steps table has a
+  row for every step attempted, the "## Files written" list matches what was
+  actually written, and "## Warnings and unfinished business" names every gap
+  (failed download, unverified CID, missing remote pin, page without a player).
+  A run log that says "none" while the summary reports a failure is a bug.
 
 * **MULTI-POST MODE** — after ALL posts and Step 0B loop finishes:
 
@@ -1607,6 +1642,9 @@ X POST STEP 10: FINAL SUMMARY
   Images downloaded: {n}
   Transcriptions completed: {n}
   IPFS pins added: {n}
+  Videos NOT publicly retrievable: {n} — {list CIDs}
+  Video posts that got no player: {n} — {list post ids + reason}
+  Run log: {RUN_LOG}
   ============================================
   ```
 
@@ -1934,6 +1972,8 @@ IMPORTANT
   - {ROOT_DIR}/videos/manifest.yaml (video manifest)
   - {ROOT_DIR}/images/manifest.yaml (image manifest)
   - {ROOT_DIR}/videos/videos.md (human-readable video index)
+  - ~/T/_ck_skill/history/{date}_{time}.md (per-run debug log — outside the repo,
+    never committed, written on EVERY run)
   - {ROOT_DIR}/IPFS/ipfs.txt (master IPFS pin script)
   - {ROOT_DIR}/tmp/batch_progress.yaml (multi-post checkpoint)
   - {ROOT_DIR}/tmp/transcribe_config.yaml (transcription toggle)
