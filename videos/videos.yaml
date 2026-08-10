@@ -26432,7 +26432,7 @@ level_3:
       site_level_2: ["UVU"]
       site_page: "site/docs/UVU/overview.mdx"
       number_of_videos: 0
-      number_of_videos_recursive: 106
+      number_of_videos_recursive: 107
       publishable: true
       needs_split: false
       videos: []
@@ -29962,7 +29962,7 @@ level_3:
             site_level_2: []
             site_page: ""
             number_of_videos: 0
-            number_of_videos_recursive: 23
+            number_of_videos_recursive: 24
             publishable: true
             needs_split: false
             videos: []
@@ -30838,11 +30838,49 @@ level_3:
                   _key: Vid_Raw_Shooting_860c
                   site_level_2: []
                   site_page: ""
-                  number_of_videos: 5
-                  number_of_videos_recursive: 5
+                  number_of_videos: 6
+                  number_of_videos_recursive: 6
                   publishable: true
                   needs_split: false
                   videos:
+                    - video:
+                        title: "Crowd Shot From the Side: Twenty Seconds Ending at the Sound"
+                        cid: "QmSuE1b7MxhJpZcJ5RGH1UB6A828kSm23dU32s3V9E4ya4"
+                        ipfs_pinned: true
+                        sha256: "08498ad3892861c0a39f227f67c63f579fd693b2e6e2a04f91f5a75a34142bed"
+                        file_path: "~/BGit/Bryan_git/charlie-kirk/videos/2086628729975943324.mp4"
+                        media_present: "video"
+                        file_size_bytes: 2106444
+                        duration: "00:00:20"
+                        audio_file: ""
+                        transcription_file: "~/BGit/Bryan_git/charlie-kirk/videos_transcription/2086628729975943324.md"
+                        transcription_source: "video"
+                        transcription_engine: "apple-speechanalyzer (device: on-device, language: en)"
+                        transcription_generated: "2026-08-10 10:13:34"
+                        transcript_covers: "00:00:20"
+                        transcript_complete: true
+                        ai_description_file: ""
+                        ai_description_provider: ""
+                        ai_description_engine: ""
+                        ai_description_generated: ""
+                        ai_description: "A 20-second vertical phone capture filmed from an elevated position on the side of the Utah Valley University plaza on September 10, 2025, panning across a crowd of several thousand toward the AMERICAN COMEBACK event tent. The clip runs up to the sound and ends abruptly on a bystander reaction. Surfaced publicly on 2026-08-10."
+                        shot_timeline: |
+                          - **00:00 - 00:06**: High wide view down onto the packed courtyard; lamp standard center frame, mountains and campus buildings behind, canopy tent at left edge.
+                          - **00:06 - 00:14**: Pan right along the crowd; the AMERICAN COMEBACK event tent, barricade line, camera operators and a vehicle come into frame at right. Handmade signs in the near crowd.
+                          - **00:14 - 00:20**: Pan continues back across the plaza; clip ends abruptly on the audio reaction with no visible event in frame.
+                        people_seen: "Several thousand ordinary attendees seen from above and behind; no individual is identified. The filmer is off-camera and states on the audio that they are standing to the side and cannot see well."
+                        onscreen_text: "- **Legible Text**: \"AMERICAN COMEBACK\" on the event tent; handmade signs in the crowd are not legible at this resolution."
+                        ocr_file: ""
+                        source_url: "https://x.com/DangerousConspr/status/2086628729975943324"
+                        source_author: "@DangerousConspr"
+                        source_platform: "x"
+                        added_date: "2026-08-10"
+                        manifest_description: "Crowd shot from the side of the UVU plaza, 20 seconds ending at the sound. Reposted by @DangerousConspr from @am_tortl."
+                        duplicate_paths: []
+                        video_page: "~/BGit/Bryan_git/charlie-kirk/site/docs/Videos/Vid_UVU_Venue/Vid_Raw_Shooting_Footage/Vid_Raw_Shooting_860c/Vid_Crowd_Shot_Side_3V9E4ya.mdx"
+                        next_video: "~/BGit/Bryan_git/charlie-kirk/site/docs/Videos/Vid_UVU_Venue/Vid_Raw_Shooting_Footage/Vid_Raw_Shooting_860c/Vid_Watch_1twD3mo.mdx"
+                        on_pages: ["/Videos/Vid_UVU_Venue/Vid_Raw_Shooting_Footage/Vid_Raw_Shooting_860c/Vid_Crowd_Shot_Side_3V9E4ya"]
+                        should_be_on_pages: []
                     - video:
                         title: "xBHHgwl EZFACOKB [xBHHgwl EZFACOKB]"
                         cid: "QmNYxeStXFiMv6PkfEPKX452X5WwxEe3oxptfhcUvP9rjJ"
