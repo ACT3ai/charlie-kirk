@@ -1053,30 +1053,42 @@ the post has no video if yt-dlp itself finds nothing to download.
   Never gate this on Step 1 detection — attempting the post URL directly is exactly what
   prevents quote/repost videos from being silently dropped.
 
-  CAUTION — yt-dlp DOWNLOADS ONE VIDEO PER POST. On a post whose Step 5B inventory holds
-  two or more videos, yt-dlp picks a single one and the rest are silently lost. It also
-  names the output after the media id it resolved, which for a quoted video is NOT the
-  post_id you asked for. Whenever the inventory has more than one video, SKIP yt-dlp and
-  go straight to 6a-alt below.
+  ALWAYS USE yt-dlp TO FETCH VIDEO. Do NOT download video with curl. The `variants[]`
+  URLs that the X API hands back (video.twimg.com/…) are NOT a dependable download path —
+  treat them as metadata for choosing quality, never as a fetch target. yt-dlp is the
+  only supported downloader in this skill.
 
-* 6a-alt. DIRECT-VARIANT DOWNLOAD — the reliable path for multi-video posts, and the
-  mandatory fallback whenever 6a produced fewer files than the inventory expects.
+* 6a-multi. MULTI-VIDEO POSTS — still yt-dlp, driven as a PLAYLIST.
 
-  The X API already handed you every variant URL in `includes.media[].variants`. Pick the
-  highest `bit_rate` variant whose content_type is video/mp4 for EACH video row, and pull
-  it straight down. No GraphQL, no guest token, no HLS assembly — it cannot pick the
-  "wrong one" because you name each one explicitly:
+  A post with two or more videos is a playlist to yt-dlp, and a bare `-o {post_id}.%(ext)s`
+  makes every entry collide on one filename. Give the output template a playlist index so
+  each entry lands in its own file:
   ```bash
-  curl -sL -o "{ROOT_DIR}/videos/{post_id}_{index}.mp4" "{best_variant_url}"
+  yt-dlp --yes-playlist "{original_post_url}" \
+    -S "res,tbr" \
+    -o "{ROOT_DIR}/videos/{post_id}_%(playlist_index)s.%(ext)s"
   ```
-  Repeat for every video row in the Step 5B inventory. This is exactly how the
-  two-video @hurtfeelingzday post was finally recovered on 2026-08-11 after the original
-  run left the site with nothing.
+  This yields {post_id}_1.mp4, {post_id}_2.mp4, … one per video row in the Step 5B
+  inventory. Verified working on 2026-08-11 against the two-video post
+  https://x.com/hurtfeelingzday/status/2079661605332062718, whose original run left the
+  site with nothing at all.
 
-  If BOTH 6a and 6a-alt fail, try cookies (`--cookies-from-browser chrome`) or inform
-  the user — but never conclude "the post has no video" while the Step 5B inventory
-  lists one. The inventory outranks a failed download: that combination is a FAILED
-  DOWNLOAD, reported loudly, not an absent video.
+  `-S "res,tbr"` is not optional. On HLS-only tweets yt-dlp's default pick can be a very
+  low-bitrate rendition — on that same post it defaulted to the ~314 kbps variants when
+  ~832 kbps was available. Sorting by resolution then total bitrate takes the best.
+
+  For a SINGLE-video post keep the plain 6a command and the plain `{post_id}.mp4` name so
+  existing manifest rows keep matching.
+
+* 6a-fallback. If 6a produced FEWER files than the Step 5B inventory expects, retry
+  against MEDIA_SOURCE_URL with the same playlist form, then try cookies:
+  ```bash
+  yt-dlp --cookies-from-browser chrome --yes-playlist "{original_post_url}" \
+    -S "res,tbr" -o "{ROOT_DIR}/videos/{post_id}_%(playlist_index)s.%(ext)s"
+  ```
+  Never conclude "the post has no video" while the Step 5B inventory lists one. The
+  inventory outranks a failed download: that combination is a FAILED DOWNLOAD, reported
+  loudly, not an absent video.
 
 * 6a2. VERIFY THE DOWNLOAD ACTUALLY PRODUCED A PLAYABLE FILE. yt-dlp can exit 0
   having written nothing, or having written a tiny fragment or an HLS manifest.
