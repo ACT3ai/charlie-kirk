@@ -891,10 +891,65 @@ X POST STEP 5: ADD POST TEXT TO MASTER INVESTIGATION FILE
 
 
 ============================
-X POST STEP 6: DOWNLOAD VIDEO AND PIN TO IPFS
+X POST STEP 5B: BUILD THE MEDIA INVENTORY (MANDATORY — DO NOT SKIP)
+============================
+
+Before downloading anything, write down an explicit, numbered inventory of every
+media item attached to this post (and to any quoted/linked status resolved in
+Step 1). Every later step iterates over THIS list. Steps 6, 6B, 9d, 9e and 9H are
+each responsible for the WHOLE list, not for "the video" and "the image".
+
+WHY THIS EXISTS: on 2026-07-21 a post with TWO videos
+(https://x.com/hurtfeelingzday/status/2079661605332062718) produced ZERO media on
+the site. Two separate assumptions caused it, and both are banned from here on:
+
+  * The skill assumed "a post has at most one video". The download step writes
+    `{post_id}.%(ext)s` — a single filename — so even a successful multi-video post
+    can only ever leave one file behind.
+  * The user's own wording said "get the two IMAGES on there". Both attachments were
+    in fact VIDEOS. The run trusted the wording, looked for photos, found none, and
+    stopped.
+
+* 5B-1. Enumerate from `includes.media` — never from the user's wording, never from
+  a guess. The user routinely calls a video "an image", "a pic", "the screenshot" or
+  "the clip". Their wording tells you WHAT THEY WANT DONE WITH IT. It never tells you
+  WHAT TYPE IT IS. Only `media.type` decides that, and it is authoritative:
+    - type == "video" or "animated_gif" → a VIDEO item (Step 6)
+    - type == "photo"                   → an IMAGE item (Step 6B)
+
+* 5B-2. Build the list with a stable index, in the order the media_keys appear:
+
+  ```
+  MEDIA INVENTORY for {post_id}   (source: {original post | quoted @user})
+    [1] video  828x476  20.1s  media_key 13_2079661564873875456
+    [2] video  438x854  41.7s  media_key 13_2079661564869701632
+  Videos: 2   Images: 0
+  ```
+
+  Print this block to stdout and copy it verbatim into {RUN_LOG} under "## Input".
+
+* 5B-3. FILENAME RULE. When the inventory holds MORE THAN ONE video, every video
+  filename is suffixed with its index: `{post_id}_1.mp4`, `{post_id}_2.mp4`. Never
+  overwrite `{post_id}.mp4` twice. A single-video post keeps the plain
+  `{post_id}.mp4` name so existing manifest rows continue to match.
+
+* 5B-4. COMPLETION CONTRACT. At the end of the run, every row of this inventory must
+  have reached one of exactly two terminal states, recorded per row in {RUN_LOG}:
+    - PLACED  — downloaded, pinned, publicly verified, and embedded on a named page.
+    - BLOCKED — deliberately not published, with a stated reason (banned in
+      {BAN_IMAGES_CSV}/{BAN_VIDEOS_CSV}, copyright, user said skip, download failed).
+  There is no third state. "I processed the post" is not a terminal state for a row.
+  If any row is neither PLACED nor BLOCKED, the run is INCOMPLETE — say so in Step 10.
+
+
+============================
+X POST STEP 6: DOWNLOAD VIDEO(S) AND PIN TO IPFS
 ============================
 
 SKIP IF: SKIP_VIDEO = true — user requested no video transfer.
+
+LOOP: run this entire step ONCE PER VIDEO ROW in the Step 5B inventory. A post with
+three videos runs Step 6 three times and ends with three CIDs and three players.
 
 **DO NOT skip this step because Step 1 reported "Has Video: no".** The X API's
 `includes.media` block is NOT a reliable signal for quote/repost videos — a true quote
@@ -929,9 +984,33 @@ the post has no video if yt-dlp itself finds nothing to download.
 * 6-pre. CHECK FOR DUPLICATE before downloading:
 
   Read {ROOT_DIR}/videos/manifest.yaml and check whether this video already exists
-  by matching EITHER of these against every entry in the manifest:
+  by matching ANY of these against every entry in the manifest:
     - source_url matches the X post URL or video URL
+    - the post URL appears in the entry's `also_posted_as:` list
     - filename starts with the post_id
+
+  IDENTITY IS THE BYTES, NOT THE POST ID. The same video is constantly re-posted,
+  quoted, and re-uploaded under different status ids. Matching only on post_id makes
+  the skill re-download and re-pin a file it already has. Real case: run
+  https://x.com/juliandorey/status/2079257528513499568 and run
+  https://x.com/ArtifexMemor/status/2079560806690324910 are byte-identical (sha256
+  1e83d2d7…, CID QmTPZV4tV5…, 79 MB) — the second download was pure waste, and it
+  briefly created two copies of the same 79 MB file on disk.
+
+  Therefore, after ANY download completes (step 6a2), compute:
+  ```bash
+  shasum -a 256 {ROOT_DIR}/videos/{filename}
+  ```
+  and search the manifest for that sha256 BEFORE pinning. If it matches an existing
+  entry:
+    - DELETE the file you just downloaded — the repo keeps ONE copy per distinct video.
+    - Reuse the existing entry's CID for embedding.
+    - Append this post's URL to that entry's `also_posted_as:` list so the next run
+      dedups before downloading instead of after.
+    - Say so in the summary: "duplicate of {existing filename} — reused CID {cid}".
+
+  Every NEW manifest entry must carry a `sha256:` field. Backfill it whenever you
+  touch an entry that lacks one.
 
   Also scan {ROOT_DIR}/IPFS/ipfs.txt for the post_id as a secondary check.
 
@@ -973,7 +1052,31 @@ the post has no video if yt-dlp itself finds nothing to download.
   ```
   Never gate this on Step 1 detection — attempting the post URL directly is exactly what
   prevents quote/repost videos from being silently dropped.
-  If both fail, try with cookies or inform the user.
+
+  CAUTION — yt-dlp DOWNLOADS ONE VIDEO PER POST. On a post whose Step 5B inventory holds
+  two or more videos, yt-dlp picks a single one and the rest are silently lost. It also
+  names the output after the media id it resolved, which for a quoted video is NOT the
+  post_id you asked for. Whenever the inventory has more than one video, SKIP yt-dlp and
+  go straight to 6a-alt below.
+
+* 6a-alt. DIRECT-VARIANT DOWNLOAD — the reliable path for multi-video posts, and the
+  mandatory fallback whenever 6a produced fewer files than the inventory expects.
+
+  The X API already handed you every variant URL in `includes.media[].variants`. Pick the
+  highest `bit_rate` variant whose content_type is video/mp4 for EACH video row, and pull
+  it straight down. No GraphQL, no guest token, no HLS assembly — it cannot pick the
+  "wrong one" because you name each one explicitly:
+  ```bash
+  curl -sL -o "{ROOT_DIR}/videos/{post_id}_{index}.mp4" "{best_variant_url}"
+  ```
+  Repeat for every video row in the Step 5B inventory. This is exactly how the
+  two-video @hurtfeelingzday post was finally recovered on 2026-08-11 after the original
+  run left the site with nothing.
+
+  If BOTH 6a and 6a-alt fail, try cookies (`--cookies-from-browser chrome`) or inform
+  the user — but never conclude "the post has no video" while the Step 5B inventory
+  lists one. The inventory outranks a failed download: that combination is a FAILED
+  DOWNLOAD, reported loudly, not an absent video.
 
 * 6a2. VERIFY THE DOWNLOAD ACTUALLY PRODUCED A PLAYABLE FILE. yt-dlp can exit 0
   having written nothing, or having written a tiny fragment or an HLS manifest.
@@ -1614,12 +1717,45 @@ player and the run still says "complete".
 
 * 9H-1. SOURCE CHECK — is the media actually in the file on disk?
 
-  For each page modified or created, and each CID embedded on it:
+  THIS SITE HAS TWO EMBEDDING CONVENTIONS AND THEY USE DIFFERENT IDENTIFIERS. Grepping
+  for the wrong one reports a perfectly good page as broken (and, worse, sends you off
+  "fixing" it):
+
+    - VIDEO  → embedded as an IPFS gateway URL. Grep for the **CID**.
+        <source src="https://ipfs.io/ipfs/{CID}" type="video/mp4" />
+    - IMAGE  → embedded as a locally-served evidence file. Grep for the **sha256**.
+        <img src="/img/evidence/{sha256}.jpg" data-cid="{CID}" />
+      The CID may appear in `data-cid`, but the src that a reader's browser actually
+      loads is the sha256 path. An image audit that greps only for CIDs will report
+      false failures on correctly-placed images — this happened during the 2026-08-11
+      re-audit of 40 past runs and briefly flagged two healthy runs as broken.
+
+  So, for each page modified or created, iterate the Step 5B inventory and grep for the
+  identifier that matches that row's TYPE:
   ```bash
-  grep -c "{CID}" {page_path}
+  grep -c "{CID}"     {page_path}    # video rows
+  grep -c "{sha256}"  {page_path}    # image rows
   ```
-  Zero means the edit did not land. Do not proceed to the remaining checks for that
-  page; report FAIL and say the edit was lost.
+  For image rows also confirm the served file really exists, because a missing file
+  404s silently behind a page that looks fine:
+  ```bash
+  ls -la {ROOT_DIR}/site/internals/static/img/evidence/{sha256}.jpg
+  ```
+  Zero (or a missing static file) means the edit did not land. Do not proceed to the
+  remaining checks for that page; report FAIL and say the edit was lost.
+
+* 9H-1b. INVENTORY RECONCILIATION — the check that would have caught the worst bug.
+
+  Walk the Step 5B inventory row by row and assert every row is PLACED or BLOCKED
+  (the 5B-4 contract). Print the table:
+  ```
+  [1] video  QmR3ycmF8…  PLACED   site/docs/Planes/Erika-Flight-Logs-Erased.mdx
+  [2] video  Qmbwcn BJi…  PLACED   site/docs/Planes/Erika-Flight-Logs-Erased.mdx
+  ```
+  A row with no page and no stated reason is a FAILED RUN even when the page itself
+  built, deployed, and looks complete. Report the count plainly:
+  "Media inventory: {n} rows — {p} placed, {b} blocked, {u} UNACCOUNTED FOR."
+  Any value of u above zero forbids printing "Complete".
 
 * 9H-2. GATEWAY CHECK — re-confirm at publish time, not just at pin time.
 
@@ -1734,6 +1870,9 @@ X POST STEP 10: FINAL SUMMARY
   Live page: {http 200, video present | NOT LIVE — {reason}}  (Step 11e)
   Video durable: {yes — remote-pinned | NO — single provider, this machine}
   Run log: {RUN_LOG}
+  -------- Media inventory reconciliation (Step 9H-1b) --------
+  Inventory rows: {n}   Placed: {p}   Blocked: {b}   UNACCOUNTED: {u}
+  {one line per row: [i] {type} {cid|sha256} {PLACED → page | BLOCKED → reason}}
   -------- Publication verification (Step 9H) --------
   Media in source file:   {PASS | FAIL — edit did not land}
   Public IPFS gateway:    {PASS — http 200, {content-type} | FAIL — {code}/{type}}
@@ -1745,8 +1884,17 @@ X POST STEP 10: FINAL SUMMARY
   ```
 
 * The final line is the one that matters. Print **YES** only when every non-skipped
-  check passed. If any check failed or is pending, print **NO** followed by the specific
-  cause — and do not describe the run as complete anywhere in the reply.
+  check passed AND the inventory shows zero UNACCOUNTED rows. If any check failed or is
+  pending, print **NO** followed by the specific cause — and do not describe the run as
+  complete anywhere in the reply.
+
+* DURABILITY IS A STANDING GAP, NOT A PER-RUN SURPRISE. As of 2026-08-11 this machine
+  has NO IPFS remote pinning service configured (`ipfs pin remote service ls` returns
+  nothing), so every video on the site has exactly one provider: this machine. A 2026-08-11
+  audit of 40 past runs found all 27 checked CIDs returning http 206 video/mp4 from
+  ipfs.io — which proves they work WHILE this machine is up, and proves nothing beyond
+  that. Say this plainly whenever REMOTE_PIN is "NONE CONFIGURED"; do not let a green
+  gateway check stand in for durability.
 
 * Before printing the summary, FINALISE {RUN_LOG}: make sure the Steps table has a
   row for every step attempted, the "## Files written" list matches what was
