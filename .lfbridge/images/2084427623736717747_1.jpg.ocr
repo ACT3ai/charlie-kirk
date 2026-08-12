@@ -1,0 +1,105 @@
+source: images/2084427623736717747_1.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-12T17:49:46.260Z
+kind: image
+language: en-US
+text: |-
+  7:42
+  STATE
+  Veterans Resource Office
+  faa.
+  Alan Robertson
+  Alan Robertson is a full-time police
+  officer with USU Police and has been
+  Utah State University sites use cookies. By
+  continuing to use this site you accept our
+  privacy and cookie policy.
+  lagree
+  usu.edu - Private
+blocks:
+  - text: 7:42
+    confidence: 1
+    bbox:
+      - 0.13836478017344753
+      - 0.02325581437896318
+      - 0.10062893147700433
+      - 0.01744185946881771
+  - text: STATE
+    confidence: 1
+    bbox:
+      - 0.018867925407745713
+      - 0.10465116323577772
+      - 0.20440251227413123
+      - 0.02616279013454914
+  - text: Veterans Resource Office
+    confidence: 1
+    bbox:
+      - 0.3018868041309813
+      - 0.10595703120037014
+      - 0.5125785972804902
+      - 0.02197265625
+  - text: faa.
+    confidence: 0.3
+    bbox:
+      - 0.7798742141758318
+      - 0.5450581397483395
+      - 0.04088050164833623
+      - 0.01308139506727457
+  - text: Alan Robertson
+    confidence: 1
+    bbox:
+      - 0.09433963073218668
+      - 0.5942382809031741
+      - 0.3805031322777649
+      - 0.023494277149438858
+  - text: Alan Robertson is a full-time police
+    confidence: 1
+    bbox:
+      - 0.09433964753990227
+      - 0.6699218746819566
+      - 0.7044024800145348
+      - 0.0205078125
+  - text: officer with USU Police and has been
+    confidence: 1
+    bbox:
+      - 0.09433963724625626
+      - 0.700581395355641
+      - 0.7389936709252776
+      - 0.01621547993272543
+  - text: Utah State University sites use cookies. By
+    confidence: 1
+    bbox:
+      - 0.07232705115934182
+      - 0.7572674418509283
+      - 0.8553459054571881
+      - 0.023494277149438858
+  - text: continuing to use this site you accept our
+    confidence: 1
+    bbox:
+      - 0.0880503058823201
+      - 0.7919921870745251
+      - 0.8238993799963663
+      - 0.0234375
+  - text: privacy and cookie policy.
+    confidence: 1
+    bbox:
+      - 0.10377358409645027
+      - 0.8500976566466598
+      - 0.5251572268205769
+      - 0.02490234375
+  - text: lagree
+    confidence: 1
+    bbox:
+      - 0.6908825897681355
+      - 0.8554868649535808
+      - 0.12431609655787523
+      - 0.018762268126010895
+  - text: usu.edu - Private
+    confidence: 1
+    bbox:
+      - 0.2924528402296455
+      - 0.949127907148577
+      - 0.41509432318850753
+      - 0.021802324801683426

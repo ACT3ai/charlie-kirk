@@ -1,0 +1,137 @@
+source: site/internals/static/img/evidence/2724a3d3f6b22e6185eb1d212b1071ceb306650e047c888781b86947c4bd6e02.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-12T17:50:09.631Z
+kind: image
+language: en-US
+text: |-
+  [REDACTED)
+  Charlie kirk is coming to my college
+  tomorrow i rlly hope someone
+  evaporates him literally
+  • 348
+  t7 224
+  • 158
+  thl 92k
+  [REDACTED]
+  Lets just say something big will happen
+  tomorrow
+  • 587
+  Ll 6.6K
+  • 13K
+  ill 239k
+  [PHOTO REMOVED BY THIS SITE]
+blocks:
+  - text: "[REDACTED)"
+    confidence: 1
+    bbox:
+      - 0.04988456038670352
+      - 0.046224394393569956
+      - 0.08552499658921184
+      - 0.02307467684418718
+  - text: Charlie kirk is coming to my college
+    confidence: 1
+    bbox:
+      - 0.13235293639705892
+      - 0.0794223828068592
+      - 0.38235294117647056
+      - 0.03971119133574008
+  - text: tomorrow i rlly hope someone
+    confidence: 1
+    bbox:
+      - 0.1323529357843139
+      - 0.11913357418772563
+      - 0.3235294117647059
+      - 0.032490974729241895
+  - text: evaporates him literally
+    confidence: 1
+    bbox:
+      - 0.13235293861764713
+      - 0.15884476555956684
+      - 0.25588235294117645
+      - 0.03610108303249093
+  - text: • 348
+    confidence: 1
+    bbox:
+      - 0.13529411832352942
+      - 0.20577617314079422
+      - 0.0676470588235294
+      - 0.028880866425992746
+  - text: t7 224
+    confidence: 1
+    bbox:
+      - 0.22018148102664212
+      - 0.2042718451816199
+      - 0.0772840948665843
+      - 0.035499631282654986
+  - text: • 158
+    confidence: 1
+    bbox:
+      - 0.32647058900735293
+      - 0.20938628140794224
+      - 0.061764705882353
+      - 0.02166064981949456
+  - text: thl 92k
+    confidence: 0.5
+    bbox:
+      - 0.4143324088858066
+      - 0.20451091050072234
+      - 0.0713351810679716
+      - 0.03502149960624612
+  - text: "[REDACTED]"
+    confidence: 1
+    bbox:
+      - 0.050000000852941165
+      - 0.28158844750902534
+      - 0.08529411764705881
+      - 0.02166064981949445
+  - text: Lets just say something big will happen
+    confidence: 1
+    bbox:
+      - 0.1323529444117646
+      - 0.31768953023465696
+      - 0.42352941176470593
+      - 0.036101083032491044
+  - text: tomorrow
+    confidence: 1
+    bbox:
+      - 0.1352941187352941
+      - 0.3610108301444044
+      - 0.10882352941176471
+      - 0.025270758122743597
+  - text: • 587
+    confidence: 1
+    bbox:
+      - 0.07058823466911765
+      - 0.8880866427797833
+      - 0.05
+      - 0.02166064981949456
+  - text: Ll 6.6K
+    confidence: 0.5
+    bbox:
+      - 0.18529411666666668
+      - 0.8880866428399519
+      - 0.05882352941176469
+      - 0.02166064981949456
+  - text: • 13K
+    confidence: 1
+    bbox:
+      - 0.308823530245098
+      - 0.8880866424789411
+      - 0.04999999999999999
+      - 0.02166064981949456
+  - text: ill 239k
+    confidence: 1
+    bbox:
+      - 0.42352941073529415
+      - 0.8880866427797833
+      - 0.061764705882352944
+      - 0.02527075812274371
+  - text: "[PHOTO REMOVED BY THIS SITE]"
+    confidence: 1
+    bbox:
+      - 0.6617647030514707
+      - 0.45126353808664266
+      - 0.2264705882352942
+      - 0.02166064981949456

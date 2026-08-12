@@ -1,0 +1,353 @@
+source: site/internals/static/img/evidence/f78f3a3ede1a3bbfda3cfd42d80f52f48dc1aedb7cfa2f64f5afb598372c125f.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-12T17:49:59.065Z
+kind: image
+language: en-US
+text: |-
+  Left and right
+  hemothorax
+  Hemopericardium
+  NECK (CLOSE-UP ANTERIOR VIEW)
+  Multiple disruptions
+  of the thyroid
+  cartilage
+  Multiple disruptions
+  of the cricoid
+  cartilage
+  Multiple disruptions
+  of the tracheal
+  cartilages
+  CHEST (INTERNAL ANTERIOR VIEW)
+  BRAIN (VIEWS)
+  2
+  Visual Representation of Reported Injuries
+  Illustrative anatomical locations only — no assumed cause.
+  FRONT (ANTERIOR) TORSO
+  BACK (POSTERIOR) TORSO
+  Pulmonary
+  apical hemorrhages /
+  hematomas
+  Bilateral
+  apical and
+  posterior
+  intercostal
+  hemorrhages
+  INFERIOR VIEW
+  (POSTERIOR)
+  SUPERIOR VIEW
+  (TOP)
+  Pulmonary
+  apical hemorrhages /
+  hematomas
+  Left and right
+  hemothorax
+  Hemopericardium
+  Subarachnoid hemorrhaging
+  around the cerebellar vermis
+  Subarachnoid hemorrhaging
+  around the parietal regions
+  Red/orange shaded areas = reported injury locations
+blocks:
+  - text: Left and right
+    confidence: 1
+    bbox:
+      - 0.051228535402188656
+      - 0.24380833006350477
+      - 0.09056141159751196
+      - 0.01383682869714331
+  - text: hemothorax
+    confidence: 0.5
+    bbox:
+      - 0.05131319673670055
+      - 0.25863545749562367
+      - 0.080125144033721
+      - 0.010345363744781788
+  - text: Hemopericardium
+    confidence: 1
+    bbox:
+      - 0.04922778787800149
+      - 0.3209766089760562
+      - 0.11715017665516245
+      - 0.01357003766793663
+  - text: NECK (CLOSE-UP ANTERIOR VIEW)
+    confidence: 1
+    bbox:
+      - 0.3511293668084299
+      - 0.3733243970790381
+      - 0.2997946594700669
+      - 0.016210486358356313
+  - text: Multiple disruptions
+    confidence: 1
+    bbox:
+      - 0.6550308039520076
+      - 0.4200581399522041
+      - 0.13347021738688158
+      - 0.013081394635320542
+  - text: of the thyroid
+    confidence: 1
+    bbox:
+      - 0.6550052722207911
+      - 0.4345020971863355
+      - 0.09245352311567823
+      - 0.01326324728794459
+  - text: cartilage
+    confidence: 1
+    bbox:
+      - 0.6550077382045637
+      - 0.4490733068505388
+      - 0.061647769176598755
+      - 0.013190595458084431
+  - text: Multiple disruptions
+    confidence: 1
+    bbox:
+      - 0.6550308061765113
+      - 0.4765415548397638
+      - 0.13347021738688158
+      - 0.013404825737265424
+  - text: of the cricoid
+    confidence: 1
+    bbox:
+      - 0.6550308023987234
+      - 0.4898255815885897
+      - 0.09034907456600305
+      - 0.013081394635320653
+  - text: cartilage
+    confidence: 1
+    bbox:
+      - 0.657084191435923
+      - 0.5058139534955274
+      - 0.059548251556627685
+      - 0.011627906768635232
+  - text: Multiple disruptions
+    confidence: 1
+    bbox:
+      - 0.6570841886236571
+      - 0.5319767442319615
+      - 0.13141684098677198
+      - 0.011627906768635121
+  - text: of the tracheal
+    confidence: 1
+    bbox:
+      - 0.6570841929651559
+      - 0.5462466487654861
+      - 0.09856262351527356
+      - 0.01072386058981234
+  - text: cartilages
+    confidence: 1
+    bbox:
+      - 0.6550308030999871
+      - 0.5610465119301595
+      - 0.0677618041183009
+      - 0.013081394635320653
+  - text: CHEST (INTERNAL ANTERIOR VIEW)
+    confidence: 1
+    bbox:
+      - 0.16221765484268535
+      - 0.6146112600945836
+      - 0.2731006217725349
+      - 0.016202693330698348
+  - text: BRAIN (VIEWS)
+    confidence: 1
+    bbox:
+      - 0.6220242479830965
+      - 0.6141831401267153
+      - 0.1296681346315326
+      - 0.01727325475247876
+  - text: "2"
+    confidence: 1
+    bbox:
+      - 0.02669404534817659
+      - 0.6497093025515257
+      - 0.014373716079827507
+      - 0.013081394635320653
+  - text: Visual Representation of Reported Injuries
+    confidence: 1
+    bbox:
+      - 0.1457905544159389
+      - 0.014534883211392291
+      - 0.7597536029237689
+      - 0.0305232567058491
+  - text: Illustrative anatomical locations only — no assumed cause.
+    confidence: 1
+    bbox:
+      - 0.25667351869054306
+      - 0.05087209349893351
+      - 0.5585215597441702
+      - 0.017492518028688786
+  - text: FRONT (ANTERIOR) TORSO
+    confidence: 1
+    bbox:
+      - 0.1601642714381199
+      - 0.08847185015581627
+      - 0.23819302067612158
+      - 0.0161793123301488
+  - text: BACK (POSTERIOR) TORSO
+    confidence: 1
+    bbox:
+      - 0.5872689907570797
+      - 0.08847184965894506
+      - 0.23819302067612147
+      - 0.01617931296934072
+  - text: Pulmonary
+    confidence: 1
+    bbox:
+      - 0.057351478095881356
+      - 0.1434615504658735
+      - 0.06804858554493297
+      - 0.01249550366849106
+  - text: apical hemorrhages /
+    confidence: 1
+    bbox:
+      - 0.055441481347627046
+      - 0.1581769440099151
+      - 0.1334702173868815
+      - 0.012064343163538882
+  - text: hematomas
+    confidence: 1
+    bbox:
+      - 0.05531669133728384
+      - 0.17248958532591463
+      - 0.07417154312133789
+      - 0.011125480201864324
+  - text: Bilateral
+    confidence: 1
+    bbox:
+      - 0.9074973702102033
+      - 0.17850916053341703
+      - 0.0535884228619663
+      - 0.010714236916549713
+  - text: apical and
+    confidence: 1
+    bbox:
+      - 0.9054643810516518
+      - 0.1930765651908788
+      - 0.06792134227174695
+      - 0.012102683172149242
+  - text: posterior
+    confidence: 1
+    bbox:
+      - 0.9054978705565859
+      - 0.20772481829551181
+      - 0.061694195776274774
+      - 0.011875945185848003
+  - text: intercostal
+    confidence: 1
+    bbox:
+      - 0.9034479219560979
+      - 0.22224964613360232
+      - 0.07195425756049878
+      - 0.011896056719823411
+  - text: hemorrhages
+    confidence: 1
+    bbox:
+      - 0.9050062994993335
+      - 0.23520738389437823
+      - 0.08727143027565698
+      - 0.014322107023591935
+  - text: INFERIOR VIEW
+    confidence: 1
+    bbox:
+      - 0.5420944576912594
+      - 0.6380697051995384
+      - 0.1067761796893496
+      - 0.011639596949314046
+  - text: (POSTERIOR)
+    confidence: 1
+    bbox:
+      - 0.5462012326460053
+      - 0.649709302755014
+      - 0.0944558490406383
+      - 0.013081394635320653
+  - text: SUPERIOR VIEW
+    confidence: 1
+    bbox:
+      - 0.7802874766141061
+      - 0.6380697051995384
+      - 0.11088295416398486
+      - 0.011639596949314046
+  - text: (TOP)
+    confidence: 1
+    bbox:
+      - 0.8151950716612318
+      - 0.6497093026304294
+      - 0.041067762808366326
+      - 0.013081394635320653
+  - text: Pulmonary
+    confidence: 1
+    bbox:
+      - 0.0574948659999045
+      - 0.6526162794870878
+      - 0.0698151949680213
+      - 0.013081394635320653
+  - text: apical hemorrhages /
+    confidence: 1
+    bbox:
+      - 0.057494867359605545
+      - 0.6686046516830664
+      - 0.12936345013705167
+      - 0.013081394635320653
+  - text: hematomas
+    confidence: 1
+    bbox:
+      - 0.05954825675711112
+      - 0.6831395350731101
+      - 0.07392196944265655
+      - 0.008720929756880436
+  - text: Left and right
+    confidence: 1
+    bbox:
+      - 0.053279013812881686
+      - 0.767044359648562
+      - 0.09262061841560132
+      - 0.01387639723258749
+  - text: hemothorax
+    confidence: 1
+    bbox:
+      - 0.05535657595961118
+      - 0.7816214216683772
+      - 0.0823053302186908
+      - 0.010885063508879966
+  - text: Hemopericardium
+    confidence: 1
+    bbox:
+      - 0.2525667377657542
+      - 0.8895348842957118
+      - 0.11909650311325537
+      - 0.013081394635320653
+  - text: Subarachnoid hemorrhaging
+    confidence: 1
+    bbox:
+      - 0.500764864131584
+      - 0.8878607924047076
+      - 0.19158318548491504
+      - 0.01527595392181147
+  - text: around the cerebellar vermis
+    confidence: 1
+    bbox:
+      - 0.5030800834713399
+      - 0.9040697674432335
+      - 0.1889116980812766
+      - 0.010174418262757778
+  - text: Subarachnoid hemorrhaging
+    confidence: 1
+    bbox:
+      - 0.7450599902351498
+      - 0.8878947186880966
+      - 0.18753892725164234
+      - 0.015248765255107322
+  - text: around the parietal regions
+    confidence: 1
+    bbox:
+      - 0.7474332681034015
+      - 0.9040697677259443
+      - 0.1806981491320061
+      - 0.013081394635320653
+  - text: Red/orange shaded areas = reported injury locations
+    confidence: 1
+    bbox:
+      - 0.3490759748273399
+      - 0.9534883722455274
+      - 0.34702257676558057
+      - 0.011659080796842525

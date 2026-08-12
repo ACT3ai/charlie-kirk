@@ -1,0 +1,89 @@
+source: images/1969832388823003519_1.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-12T17:50:12.399Z
+kind: image
+language: en-US
+text: |-
+  For Erika Kirk, a Husband's Life
+  Cut Short by Violence He Seemed
+  to Foresee
+  In an interview, the wife of the conservative activist Charlie Kirk
+  said she had implored him to wear a bulletproof vest. But she
+  sees divine work in his death.
+  •
+  Listen to this article • 11:34 min Learn more
+  * Share full article
+  A N
+blocks:
+  - text: For Erika Kirk, a Husband's Life
+    confidence: 1
+    bbox:
+      - 0.044247787168141574
+      - 0.0377358495507637
+      - 0.7551622418879056
+      - 0.05929919137466311
+  - text: Cut Short by Violence He Seemed
+    confidence: 1
+    bbox:
+      - 0.05309734937725327
+      - 0.10242587578616358
+      - 0.7640117994100294
+      - 0.05121293800539084
+  - text: to Foresee
+    confidence: 1
+    bbox:
+      - 0.050085387537960074
+      - 0.16145989148778073
+      - 0.23316255642601172
+      - 0.04635245330892812
+  - text: In an interview, the wife of the conservative activist Charlie Kirk
+    confidence: 1
+    bbox:
+      - 0.047197635781710996
+      - 0.23450134803234501
+      - 0.8643067846607669
+      - 0.03234501347708896
+  - text: said she had implored him to wear a bulletproof vest. But she
+    confidence: 1
+    bbox:
+      - 0.04719764843657798
+      - 0.2749326144474393
+      - 0.8318584070796462
+      - 0.03234501347708896
+  - text: sees divine work in his death.
+    confidence: 1
+    bbox:
+      - 0.050147496637168096
+      - 0.3153638814285714
+      - 0.4011799410029499
+      - 0.02964959568733161
+  - text: •
+    confidence: 1
+    bbox:
+      - 0.0678466075221239
+      - 0.4285714283692723
+      - 0.017699115044247787
+      - 0.016172506738544312
+  - text: Listen to this article • 11:34 min Learn more
+    confidence: 1
+    bbox:
+      - 0.11209439096607679
+      - 0.42857142867250675
+      - 0.34513274336283184
+      - 0.018867924528301883
+  - text: "* Share full article"
+    confidence: 1
+    bbox:
+      - 0.6451909989622774
+      - 0.4198485855377847
+      - 0.1723989526079116
+      - 0.031265726629293056
+  - text: A N
+    confidence: 0.5
+    bbox:
+      - 0.8259587008480828
+      - 0.425876010916442
+      - 0.09734513274336276
+      - 0.02695417789757404
