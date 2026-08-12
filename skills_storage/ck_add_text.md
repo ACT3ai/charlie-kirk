@@ -1302,6 +1302,22 @@ NOTE: If Step 2 already downloaded images for OCR from temp paths, those were te
     - source_url matches the X post URL or image URL
     - filename starts with the post_id
 
+  MANDATORY sha256 CHECK — the filename check alone is NOT enough. When a post
+  QUOTES another post, the same image bytes arrive under TWO different post_ids
+  and both pass the filename check, producing two manifest entries, two ipfs.txt
+  blocks, and two CIDs for one file. Real case: run 2026-08-12 added
+  2087393163778347089_1.jpg twice because 2087396047064625425 quoted it.
+
+  So after downloading (6B-a) and BEFORE pinning (6B-b), always:
+  ```bash
+  shasum -a 256 "{ROOT_DIR}/images/{filename}" | cut -d' ' -f1
+  ```
+  Search {ROOT_DIR}/images/manifest.yaml for that sha256. If it already appears
+  under a DIFFERENT filename, this is the same image arriving through a quoted
+  post. Delete the just-downloaded duplicate file, reuse the existing entry's CID
+  for embedding, and write NO new manifest row and NO new ipfs.txt block.
+  Output: "Duplicate image bytes: {new} == {existing} (CID: {cid}) — reusing"
+
   For each image:
 
   **Case A — In manifest AND file exists locally:**
@@ -1328,9 +1344,35 @@ NOTE: If Step 2 already downloaded images for OCR from temp paths, those were te
 
 * 6B-b. Pin each image to IPFS:
   ```bash
+  ipfs id > /dev/null 2>&1 || brew services start kubo
   ipfs add --pin {ROOT_DIR}/images/{filename}
   ```
   Capture the CID. Verify: ipfs pin ls {CID}
+
+  NEVER use `ipfs add -n`. That is a DRY RUN: it prints a real-looking CID while
+  storing no blocks, so the CID lands in the manifest and on the site and every
+  public gateway then 504s forever. Only `ipfs add --pin` actually stores bytes.
+
+* 6B-b2. Announce and PUBLICLY VERIFY each image:
+  `ipfs pin ls` succeeding proves only that THIS machine has the bytes. It proves
+  nothing about what a visitor to the live site will see.
+  ```bash
+  ipfs routing provide {CID}
+  curl -s -o /dev/null -w "%{http_code} %{content_type} %{size_download}\n" \
+    --max-time 60 "https://ipfs.io/ipfs/{CID}"
+  ```
+  Expect 200, an image/* content type, and a size matching the local file. If it
+  is not 200, retry once against https://dweb.link/ipfs/{CID}. Record both results
+  verbatim in {RUN_LOG}. Set IMAGE_PUBLIC_OK accordingly and set public_verified
+  in the manifest row from it — never write `public_verified: true` unhecked.
+
+  Also request a remote pin so the image survives this machine being off:
+  ```bash
+  ipfs pin remote service ls
+  ipfs pin remote add --service={service} --name="{filename}" {CID}
+  ```
+  If no service is configured, set remote_pin: 'none' and say so in the Step 10
+  summary rather than failing the run.
 
 * 6B-c. Update image manifest — append to {ROOT_DIR}/images/manifest.yaml:
   ```yaml
@@ -1342,18 +1384,83 @@ NOTE: If Step 2 already downloaded images for OCR from temp paths, those were te
     description: '{brief description}'
     width: {width_px}
     height: {height_px}
+    sha256: {sha256 from 6B-pre}
     ocr_text_extracted: {true/false}
     added_date: '{today YYYY-MM-DD}'
     pinned: true
+    public_verified: {true|false}   # from 6B-b2 — was it fetchable via ipfs.io?
+    remote_pin: '{service name | none}'
   ```
+
+  Always write sha256 — it is what makes the 6B-pre duplicate check work on the
+  next run, and it is the identity key used by images/ban_images.csv.
+
+  After appending, verify the file still parses and gained exactly one entry:
+  ```bash
+  python3 -c "import yaml;d=yaml.safe_load(open('{ROOT_DIR}/images/manifest.yaml'));print(len(d))"
+  python3 -c "
+import yaml,collections
+d=yaml.safe_load(open('{ROOT_DIR}/images/manifest.yaml'))
+c=collections.Counter(e.get('filename') for e in d)
+print('DUPLICATES:',{k:v for k,v in c.items() if v>1} or 'none')"
+  ```
+  If a duplicate filename is reported, remove the block you just added.
 
 * 6B-c2. Update {ROOT_DIR}/IPFS/ipfs.txt — append IPFS commands for each image:
   ```
   # {filename} — @{username} · {today YYYY-MM-DD}
+  # {one-line description}
   ipfs get {CID}
   ipfs add "{filename}"
   ipfs pin add {CID}
   ```
+  First grep ipfs.txt for {CID}. If it is already present, do NOT append a second
+  block — ipfs.txt is a run-once script and a repeated block re-downloads the same
+  file. Verify afterwards that no CID appears twice:
+  ```bash
+  grep -o '^ipfs pin add .*' {ROOT_DIR}/IPFS/ipfs.txt | sort | uniq -d
+  ```
+
+* 6B-c3. GIT TRACKING GUARD (MANDATORY — DO NOT SKIP):
+
+  Images must be COMMITTED to the repo, not merely present on disk. The live site
+  serves them out of the repo via GitHub Pages, so an untracked or ignored image
+  is a BROKEN IMAGE in production even though it looks perfect locally.
+
+  Real case: on 2026-08-12 Large File Bridge appended per-file lines for the new
+  images to {ROOT_DIR}/.gitignore, the images were never committed, and the new
+  page shipped with two broken embeds. ~1,950 such lines were removed and the
+  policy is now recorded in a banner at the bottom of .gitignore.
+
+  For EVERY image file written this run — both the source copy in
+  {ROOT_DIR}/images/ and the served copy under
+  {ROOT_DIR}/site/internals/static/img/evidence/ — run:
+  ```bash
+  git -C {ROOT_DIR} check-ignore -v "{path}"
+  ```
+  - Exit code 1 (no output) means NOT ignored. Good. Continue.
+  - Any output means the file IS ignored. Read which file and line matched:
+      * Matched in {ROOT_DIR}/.gitignore  → this is the Large File Bridge bug.
+        DELETE that line from .gitignore. Never work around it with `git add -f`,
+        because the line stays and silently eats the next image too.
+      * Matched in {ROOT_DIR}/images/.gitignore → this is a DELIBERATE privacy
+        exclusion (hand-curated, currently 2 files). STOP. Do not un-ignore it,
+        do not add it, and do not embed it on any page. Report it to Bryan.
+      * Matched in {ROOT_DIR}/videos/.gitignore → correct and expected for video
+        files. Videos are pulled from IPFS and never committed. Leave it.
+
+  Then stage the image files:
+  ```bash
+  git -C {ROOT_DIR} add "{path}" ...
+  git -C {ROOT_DIR} status --short -- images site/internals/static/img/evidence
+  ```
+  Every image from this run must show as `A ` (added) or already be tracked.
+  If any still shows `??`, the run has FAILED — stop and report, do not proceed
+  to Step 9 and publish a page that embeds a file git does not have.
+
+  Never add a per-file image line to {ROOT_DIR}/.gitignore for any reason. To keep
+  an image out of the repo use {ROOT_DIR}/images/.gitignore; to keep it off the
+  public site use {ROOT_DIR}/images/ban_images.csv.
 
 * 6B-d. Output:
   ```
@@ -1362,6 +1469,10 @@ NOTE: If Step 2 already downloaded images for OCR from temp paths, those were te
   ============================================
   Files: {list of filenames}
   IPFS CIDs: {list of CIDs}
+  Public gateway verified: {yes/no per CID — from 6B-b2}
+  Remote pin: {service | NONE CONFIGURED}
+  Duplicates skipped: {list, or none}
+  Git: {n} file(s) staged, 0 ignored
   OCR performed: {yes/no — from Step 2}
   IPFS commands added to: IPFS/ipfs.txt
   ============================================
@@ -1756,6 +1867,21 @@ player and the run still says "complete".
   Zero (or a missing static file) means the edit did not land. Do not proceed to the
   remaining checks for that page; report FAIL and say the edit was lost.
 
+  EXISTING ON DISK IS NOT ENOUGH — the file must also be IN GIT. GitHub Pages builds
+  from the repo, not from this machine, so an ignored or untracked evidence file
+  renders locally and 404s for every real visitor:
+  ```bash
+  git -C {ROOT_DIR} ls-files --error-unmatch \
+    "site/internals/static/img/evidence/{sha256}.jpg" \
+    || echo "FAIL: NOT TRACKED IN GIT"
+  git -C {ROOT_DIR} check-ignore -v \
+    "site/internals/static/img/evidence/{sha256}.jpg"
+  ```
+  The first command must succeed; the second must produce no output. If either fails,
+  this is the Step 6B-c3 failure reaching production — go back to 6B-c3, remove the
+  offending .gitignore line, stage the file, and re-run this check. Report FAIL until
+  both pass. This exact defect shipped two broken images on 2026-08-12.
+
 * 9H-1b. INVENTORY RECONCILIATION — the check that would have caught the worst bug.
 
   Walk the Step 5B inventory row by row and assert every row is PLACED or BLOCKED
@@ -1829,6 +1955,35 @@ player and the run still says "complete".
   Zero is FAIL even if 9H-1 through 9H-4 all passed — that combination means the build
   dropped the content, and it is worth investigating rather than explaining away.
 
+  THE HTML CONTAINING THE IDENTIFIER IS NOT THE SAME CLAIM AS THE READER SEEING THE
+  MEDIA. Grepping the page proves the <img>/<video> TAG shipped. It says nothing about
+  whether the thing the tag POINTS AT actually loads. For images the two come apart
+  completely, because the grep target and the browser's request target are different
+  strings:
+
+      <img src="/img/evidence/{sha256}.jpg" data-cid="{CID}" />
+                ^ what the browser fetches    ^ what a CID grep matches
+
+  A CID-only grep therefore returns 1 on a page whose every image is a broken icon.
+  That is exactly how the 2026-08-12 Rifle_Site_Kia_Soul_Turnaround failure passed:
+  both sha256 strings were present in the deployed HTML, every earlier check was
+  green, and both images returned **404** to every visitor because Large File Bridge
+  had gitignored the served files.
+
+  So for EVERY image row in the Step 5B inventory, FETCH THE IMAGE ITSELF:
+  ```bash
+  curl -s -o /dev/null -m 45 -w "img http=%{http_code} type=%{content_type} bytes=%{size_download}\n" \
+    -L "https://whoassassinatedcharliekirk.com/img/evidence/{sha256}.jpg"
+  ```
+  PASS requires **http 200 AND a content-type of image/\*** AND a byte count close to
+  the local file. A 404 is a FAIL. An `text/html` content-type is the site's 404 page
+  dressed as a success and is also a FAIL. Do the same for any video poster:
+  `/img/video_posters/{sha256}.jpg`.
+
+  This is the one check that is causally downstream of everything — build, commit,
+  push, deploy, ignore rules, file naming, extension mismatch, CDN. Whatever the cause,
+  a broken image fails here. Never report an image as published without it.
+
 * 9H-6. RECORD THE RESULTS.
 
   Write all five results into {RUN_LOG} as a table with the literal command output
@@ -1891,6 +2046,7 @@ X POST STEP 10: FINAL SUMMARY
   Pushed to origin/main:  {PASS | PENDING — awaiting auto-commit | FAIL}
   Pages deploy:           {PASS — run {id} success | FAIL — run {id}, {error} | SKIPPED}
   Live page contains it:  {PASS | FAIL | SKIPPED}
+  Live media files load:  {PASS — {n}/{n} images+posters http 200 image/* | FAIL — {list sha256 + code} | SKIPPED}
   READER CAN SEE IT:      {YES | NO — {which check failed and what fixes it}}
   ============================================
   ```
@@ -2041,12 +2197,21 @@ Do not stop there.
   grep -c "<video" /tmp/ck_live.html
   ```
   Require http 200 AND the CID present AND a <video> tag (for a video post).
-  Also verify the poster actually serves, since it lives under
-  site/internals/static/ and a misplaced file 404s silently behind a working page:
+
+  THEN FETCH EVERY STATIC MEDIA FILE THE PAGE POINTS AT. Anything served out of
+  site/internals/static/ 404s silently behind a page that looks perfect — the HTML
+  is fine, the file is missing. Loop over the Step 5B inventory:
   ```bash
-  curl -s -o /dev/null -w "poster http=%{http_code} type=%{content_type}\n" \
+  # every image row
+  curl -s -o /dev/null -w "img %{http_code} %{content_type} %{size_download}\n" \
+    -L "https://whoassassinatedcharliekirk.com/img/evidence/{sha256}.jpg"
+  # every video row's poster
+  curl -s -o /dev/null -w "poster %{http_code} %{content_type}\n" \
     -L "https://whoassassinatedcharliekirk.com/img/video_posters/{sha256}.jpg"
   ```
+  Each must return **200 with an image/\* content type**. A 404, or a 200 carrying
+  `text/html` (the site's 404 page), is a FAILED RUN — say so and do not describe the
+  images as published. See 9H-5 for why grepping the HTML does not substitute for this.
 
 * 11f. RE-RUN THE PUBLIC GATEWAY CHECK FROM 6b2 one final time, after the deploy.
   This catches the case where the CID resolved during the run only because the

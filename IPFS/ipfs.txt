@@ -1257,6 +1257,7 @@ ipfs add "2087393163778347089.mp4"
 ipfs pin add QmZ5NmiWH9Hy3v1RJXiJxG19aT94wGvTviV4qWjBDp5sWh
 
 # 2087393163778347089_1.jpg — @DiligentDenizen · 2026-08-12
+# Unannotated Wed Sep 10 2025 aerial frame; white Kia Soul turnaround claim
 ipfs get QmS9woKH5V77rrLxSbJU81AWsXxGofhvLfMRrRkCXsvMgo
 ipfs add "2087393163778347089_1.jpg"
 ipfs pin add QmS9woKH5V77rrLxSbJU81AWsXxGofhvLfMRrRkCXsvMgo
@@ -1266,9 +1267,3 @@ ipfs pin add QmS9woKH5V77rrLxSbJU81AWsXxGofhvLfMRrRkCXsvMgo
 ipfs get QmXtwWYk5VGM4ncuyDAggBNn4xJ3bgwZUJWANKB9ytM2EA
 ipfs add "2087396047064625425_1.jpg"
 ipfs pin add QmXtwWYk5VGM4ncuyDAggBNn4xJ3bgwZUJWANKB9ytM2EA
-
-# 2087393163778347089_1.jpg — @DiligentDenizen · 2026-08-12
-# Same aerial frame, unannotated; white Kia Soul turnaround claim
-ipfs get QmS9woKH5V77rrLxSbJU81AWsXxGofhvLfMRrRkCXsvMgo
-ipfs add "2087393163778347089_1.jpg"
-ipfs pin add QmS9woKH5V77rrLxSbJU81AWsXxGofhvLfMRrRkCXsvMgo
