@@ -1462,6 +1462,79 @@ print('DUPLICATES:',{k:v for k,v in c.items() if v>1} or 'none')"
   an image out of the repo use {ROOT_DIR}/images/.gitignore; to keep it off the
   public site use {ROOT_DIR}/images/ban_images.csv.
 
+* 6B-c4. REGISTER THE IMAGE IN images.yaml (MANDATORY — DO NOT SKIP):
+
+  IMAGES_YAML is file {ROOT_DIR}/images/images.yaml
+
+  {ROOT_DIR}/images/manifest.yaml is only this skill's own download log. The
+  MASTER image record for the whole site is {IMAGES_YAML} — the image evidence
+  hierarchy. It is what drives /Photos Level 5 page generation, the nav
+  galleries, the should_be_on_pages placement pass, the next_image chain, and the
+  banned-media gate. An image that exists on disk and on a page but has no entry
+  in {IMAGES_YAML} is invisible to every one of those passes: it never gets its
+  own /Photos page, never appears in a gallery, and is never re-checked. Runs on
+  2026-08-10 and 2026-08-12 all skipped this and left their images unregistered.
+
+  KNOW WHO FILLS WHAT. An external binder pass (`image_planning/generator/`, run
+  periodically and by the auto-commit machinery) walks the site and binds any image
+  it finds embedded on a page into {IMAGES_YAML}, keyed by **sha256**. So placement
+  is handled for you — but ONLY if the page embeds the image the durable way:
+
+      <img src="/img/evidence/{sha256}.jpg" data-cid="{CID}" />
+
+  An image embedded by IPFS gateway URL alone (`src="https://ipfs.io/ipfs/{CID}"`)
+  carries no sha256, so the binder cannot see it and the image never enters
+  {IMAGES_YAML} at all. That is what happened to the 2026-08-10 engraved-bullets
+  image. Always use the `/img/evidence/{sha256}.jpg` src (Step 9d) and keep the CID
+  in `data-cid`.
+
+  What the binder CANNOT know, and what this skill MUST supply, is exactly two
+  fields — it leaves both empty every time:
+
+      cid:              the IPFS CID from 6B-b
+      ai_description:   a one-paragraph description of what the image actually
+                        depicts, written like the sibling entries in the file
+
+  DO NOT hand-append whole nodes to {IMAGES_YAML}. It is a ~36,000-line nested
+  hierarchy with per-node `number_of_images` / `number_of_images_recursive`
+  counters, and it is REWRITTEN UNDER YOU by the binder and the auto-commit
+  process — a working-tree edit made at the wrong moment gets reverted silently
+  (observed 2026-08-12). Instead:
+
+  1. Embed the image on the page first (Step 9d), with the sha256 src.
+  2. Let the binder create the entry, or run it yourself:
+     `python3 image_planning/generator/bind_image_pages.py`
+  3. Then patch ONLY the two empty fields, matched **by sha256** so the edit
+     survives lines moving:
+     ```bash
+     cd {ROOT_DIR} && python3 - <<'PY'
+     import re
+     p='images/images.yaml'; src=open(p,encoding='utf8').read()
+     sha='{sha256}'; cid='{CID}'; desc='{one-paragraph description}'
+     src=re.sub(r'( *)cid: ""\n( *sha256: %s\n)'%sha,
+                lambda m:'%scid: "%s"\n%s'%(m.group(1),cid,m.group(2)),src)
+     src=re.sub(r'(sha256: %s\n *file_path: "[^"]*"\n)( *)ai_description: ""'%sha,
+                lambda m:'%s%sai_description: "%s"'%(m.group(1),m.group(2),desc),src)
+     open(p,'w',encoding='utf8').write(src)
+     PY
+     python3 -c "import yaml;yaml.safe_load(open('images/images.yaml'));print('parses OK')"
+     ```
+  4. Confirm the entry exists and both fields are non-empty:
+     ```bash
+     grep -B2 -A7 "sha256: {sha256}" images/images.yaml
+     ```
+  5. COMMIT the change in the same commit as the page and the image binary. An
+     uncommitted {IMAGES_YAML} edit is the one the revert eats.
+
+  A parse failure means the edit corrupted the file — restore it with
+  `git checkout -- images/images.yaml` and redo it.
+
+  Note the schema differs by node depth: mirrored level_4/level_5 page nodes use
+  `on_site_pages: [...]`, while top-level level_3 cluster entries use `on_pages`,
+  `should_be_on_pages`, `image_page`, `next_image`, and `banned`. Never invent
+  keys — copy the exact key set already present on the sibling entries around the
+  insertion point.
+
 * 6B-d. Output:
   ```
   ============================================
@@ -1473,6 +1546,7 @@ print('DUPLICATES:',{k:v for k,v in c.items() if v>1} or 'none')"
   Remote pin: {service | NONE CONFIGURED}
   Duplicates skipped: {list, or none}
   Git: {n} file(s) staged, 0 ignored
+  images.yaml: {n} entr(ies) added under {node key} — parses OK
   OCR performed: {yes/no — from Step 2}
   IPFS commands added to: IPFS/ipfs.txt
   ============================================
@@ -1639,14 +1713,28 @@ This step uses the Level 2 / Level 3 decisions made in Step 3.
   and embedded on the Level 3 page. Do not skip images — they often contain
   critical evidence (screenshots, documents, photos).
 
+  IMAGE SRC IS THE sha256 PATH, NEVER THE CID. Images are served OUT OF THE REPO at
+  /img/evidence/{sha256}.jpg (the copy Step 6B wrote to
+  {ROOT_DIR}/site/internals/static/img/evidence/). Videos use IPFS gateway URLs;
+  images do not. Two separate failures come from getting this backwards:
+    * A CID-only `src` depends on a gateway finding a provider. With no remote pin
+      configured, that provider is only this machine.
+    * A CID-only `src` carries NO sha256, so the images.yaml binder pass cannot see
+      the image and it never enters {IMAGES_YAML} — no /Photos page, no gallery, no
+      verification. This is exactly how the 2026-08-10 engraved-bullets image went
+      unregistered for two days.
+  Keep the CID in `data-cid` so the IPFS copy stays recorded and greppable.
+
   IMAGE EMBEDDING — use half-width, floated right, text flows around it:
   Single image:
   ```
   <div style={{float: 'right', width: '48%', maxWidth: '480px', marginLeft: '1.5rem', marginBottom: '1rem'}}>
     <img
-      src="https://ipfs.io/ipfs/{CID}"
+      src="/img/evidence/{sha256}.jpg"
+      data-cid="{CID}"
       alt="{description}"
       style={{width: '100%', height: 'auto', aspectRatio: '{width}/{height}', borderRadius: '4px'}}
+      loading="lazy"
     />
     <p style={{fontSize: '0.85rem', color: '#666', marginTop: '0.5rem'}}>
       <em>{Description}. Source: <a href="{original_url}">@{username} on X</a>, {date}.</em>
@@ -1659,14 +1747,18 @@ This step uses the Level 2 / Level 3 decisions made in Step 3.
   <div style={{float: 'right', width: '48%', maxWidth: '480px', marginLeft: '1.5rem', marginBottom: '1rem'}}>
     <div style={{display: 'flex', flexWrap: 'wrap', gap: '0.5rem'}}>
       <img
-        src="https://ipfs.io/ipfs/{CID_1}"
+        src="/img/evidence/{sha256_1}.jpg"
+        data-cid="{CID_1}"
         alt="{description_1}"
         style={{width: 'calc(50% - 0.25rem)', height: 'auto', aspectRatio: '{w1}/{h1}', borderRadius: '4px'}}
+        loading="lazy"
       />
       <img
-        src="https://ipfs.io/ipfs/{CID_2}"
+        src="/img/evidence/{sha256_2}.jpg"
+        data-cid="{CID_2}"
         alt="{description_2}"
         style={{width: 'calc(50% - 0.25rem)', height: 'auto', aspectRatio: '{w2}/{h2}', borderRadius: '4px'}}
+        loading="lazy"
       />
     </div>
     <p style={{fontSize: '0.85rem', color: '#666', marginTop: '0.5rem'}}>
@@ -1675,10 +1767,11 @@ This step uses the Level 2 / Level 3 decisions made in Step 3.
   </div>
   ```
 
-  These pages go PUBLIC — always use a public IPFS gateway, never a localhost /
-  127.0.0.1 URL (a visitor's browser would try a gateway on their own machine and fail).
-  Use https://ipfs.io/ipfs/{CID} as the primary src. For video, add
-  https://dweb.link/ipfs/{CID} as a second <source> fallback; for images, note the
+  These pages go PUBLIC — never a localhost / 127.0.0.1 URL (a visitor's browser would
+  try a gateway on their own machine and fail).
+  For VIDEO use https://ipfs.io/ipfs/{CID} as the primary src and add
+  https://dweb.link/ipfs/{CID} as a second <source> fallback. For IMAGES the src is
+  /img/evidence/{sha256}.jpg as shown above; note the
   dweb.link fallback URL in a comment. The local daemon is only for pinning, not embeds.
 
 * 9e. VIDEO EMBEDDING — use half-width, floated right, with text flowing around it.
@@ -1929,6 +2022,32 @@ player and the run still says "complete".
   unless Bryan asks — the repo has its own commit process and the global rules forbid
   pushing without an explicit request.
 
+  THE PAGE REACHING origin/main DOES NOT MEAN THE IMAGE DID. These are two separate
+  files and they routinely travel in different commits. On 2026-08-12 the page commit
+  (761084d1) went to origin/main and deployed, while the image binaries sat in a
+  LATER, UNPUSHED commit (1ed73654) — so the live HTML referenced
+  /img/evidence/<sha>.jpg for files origin/main did not contain, and every visitor
+  got a 404 behind a page that verified green on every other check. Checking only the
+  page is what let that ship.
+
+  So for EVERY media row in the Step 5B inventory, check the BINARY separately:
+  ```bash
+  cd {ROOT_DIR}
+  # the served copy the browser actually requests
+  git cat-file -e origin/main:site/internals/static/img/evidence/{sha256}.jpg \
+    && echo "IMAGE IN origin/main" || echo "FAIL: IMAGE NOT IN origin/main"
+  # the source copy
+  git cat-file -e origin/main:images/{filename} \
+    && echo "SOURCE IN origin/main" || echo "FAIL: SOURCE NOT IN origin/main"
+  ```
+  Videos are exempt — `videos/*` is deliberately gitignored and served from IPFS.
+  Images are NOT exempt: they are served out of the repo.
+
+  Report each image as its own PASS/PENDING/FAIL line. If the page is in origin/main
+  but an image is not, that is the WORST state, not a partial success — the page is
+  live and visibly broken. Say exactly that, and say it will stay broken until the
+  image commit is pushed.
+
 * 9H-4. DEPLOY CHECK — did GitHub Pages rebuild?
 
   A push does not publish. The Pages workflow takes roughly 3–4 minutes.
@@ -2043,7 +2162,9 @@ X POST STEP 10: FINAL SUMMARY
   -------- Publication verification (Step 9H) --------
   Media in source file:   {PASS | FAIL — edit did not land}
   Public IPFS gateway:    {PASS — http 200, {content-type} | FAIL — {code}/{type}}
-  Pushed to origin/main:  {PASS | PENDING — awaiting auto-commit | FAIL}
+  Page in origin/main:    {PASS | PENDING — awaiting auto-commit | FAIL}
+  Image binaries in remote: {PASS — {n}/{n} in origin/main | FAIL — {list sha256}}
+  Registered in images.yaml: {PASS — {n} entr(ies) | FAIL — not registered}
   Pages deploy:           {PASS — run {id} success | FAIL — run {id}, {error} | SKIPPED}
   Live page contains it:  {PASS | FAIL | SKIPPED}
   Live media files load:  {PASS — {n}/{n} images+posters http 200 image/* | FAIL — {list sha256 + code} | SKIPPED}
