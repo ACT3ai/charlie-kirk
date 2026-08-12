@@ -2482,8 +2482,8 @@ level_3:
       title: "Unfiled Backlog"
       _key: Unfiled_Backlog
       site_level_2: []
-      number_of_images: 182
-      number_of_images_recursive: 187
+      number_of_images: 171
+      number_of_images_recursive: 176
       needs_split: true   # over the 12 ceiling — split on a later pass
       images:
         - image:
@@ -4239,18 +4239,6 @@ level_3:
         - image:
             cid: ""
             ipfs_pinned: false
-            sha256: 465c80d7dd6e0c90d35e9ad31f019e44d623a9947a4cc04c3526a0da6ac15b94
-            file_path: "~/BGit/Bryan_git/charlie-kirk/images/1965884012565766172_1.jpg"
-            ai_description: ""
-            ai_description_file: ""
-            ocr_file: ""
-            transcription_file: ""
-            image_page: ""
-            on_pages: []
-            should_be_on_pages: []
-        - image:
-            cid: ""
-            ipfs_pinned: false
             sha256: 9bfe7d6425afe8b6f814b5efe3e20c54cc596c7d7b4eb5c017ad3a79a98bd1ff
             file_path: "~/BGit/Bryan_git/charlie-kirk/images/1967936311421178053_1.jpg"
             ai_description: ""
@@ -4275,68 +4263,8 @@ level_3:
         - image:
             cid: ""
             ipfs_pinned: false
-            sha256: 28230a180178d2bc0cd5231016716b2cf3ac65f5ca7125032ccdfc9628d5e71e
-            file_path: "~/BGit/Bryan_git/charlie-kirk/images/1969831645403365640_1.jpg"
-            ai_description: ""
-            ai_description_file: ""
-            ocr_file: ""
-            transcription_file: ""
-            image_page: ""
-            on_pages: []
-            should_be_on_pages: []
-        - image:
-            cid: ""
-            ipfs_pinned: false
-            sha256: 569670783c20e2fd36d4cdb195c2970dbc5abf683152ddd449579f36f3a28200
-            file_path: "~/BGit/Bryan_git/charlie-kirk/images/1969832388823003519_1.jpg"
-            ai_description: ""
-            ai_description_file: ""
-            ocr_file: ""
-            transcription_file: ""
-            image_page: ""
-            on_pages: []
-            should_be_on_pages: []
-        - image:
-            cid: ""
-            ipfs_pinned: false
             sha256: be83993864d5c16e85bf15166131359fd57382808075e5d9f4d3ce0471589fed
             file_path: "~/BGit/Bryan_git/charlie-kirk/images/1975970593259610515_1.jpg"
-            ai_description: ""
-            ai_description_file: ""
-            ocr_file: ""
-            transcription_file: ""
-            image_page: ""
-            on_pages: []
-            should_be_on_pages: []
-        - image:
-            cid: ""
-            ipfs_pinned: false
-            sha256: 8f7eb7496ce5f10dd6ae347c216004cf76554fce91c4ef0f7deef2bbe8f0c3a9
-            file_path: "~/BGit/Bryan_git/charlie-kirk/images/1975970593259610515_2.jpg"
-            ai_description: ""
-            ai_description_file: ""
-            ocr_file: ""
-            transcription_file: ""
-            image_page: ""
-            on_pages: []
-            should_be_on_pages: []
-        - image:
-            cid: ""
-            ipfs_pinned: false
-            sha256: fbd26b09defeeb29dfd2cb339b8ff1964d8fb9508d19bab42b2fc879435d035d
-            file_path: "~/BGit/Bryan_git/charlie-kirk/images/2045212282712703209_1.jpg"
-            ai_description: ""
-            ai_description_file: ""
-            ocr_file: ""
-            transcription_file: ""
-            image_page: ""
-            on_pages: []
-            should_be_on_pages: []
-        - image:
-            cid: ""
-            ipfs_pinned: false
-            sha256: 93177a5ebd2c28440cf6be8025984fe5c83247f10023774b0f53cd4f11872bad
-            file_path: "~/BGit/Bryan_git/charlie-kirk/images/2045212282712703209_2.jpg"
             ai_description: ""
             ai_description_file: ""
             ocr_file: ""
@@ -4385,18 +4313,6 @@ level_3:
             ipfs_pinned: false
             sha256: 7131945e90532aa259cc1b5e09bccf4b2c4347e87fa8c722a6455f02964b771f
             file_path: "~/BGit/Bryan_git/charlie-kirk/images/2068506485420892470_4.jpg"
-            ai_description: ""
-            ai_description_file: ""
-            ocr_file: ""
-            transcription_file: ""
-            image_page: ""
-            on_pages: []
-            should_be_on_pages: []
-        - image:
-            cid: ""
-            ipfs_pinned: false
-            sha256: d9e9e54fc8bf00047b0a4d285026c26e7829857ed7f8df358400faeed7a3bdb8
-            file_path: "~/BGit/Bryan_git/charlie-kirk/images/2070597252133818558_1_cropped.jpg"
             ai_description: ""
             ai_description_file: ""
             ocr_file: ""
@@ -4491,30 +4407,6 @@ level_3:
         - image:
             cid: ""
             ipfs_pinned: false
-            sha256: e07e4196d3bd6d56f1add5c4245f4ae8d34d8a578f20f449af578e027e70040b
-            file_path: "~/BGit/Bryan_git/charlie-kirk/images/2082697323193180352_2.jpg"
-            ai_description: ""
-            ai_description_file: ""
-            ocr_file: ""
-            transcription_file: ""
-            image_page: ""
-            on_pages: []
-            should_be_on_pages: []
-        - image:
-            cid: ""
-            ipfs_pinned: false
-            sha256: 413b9f00bd37ecb9121502de3e3274459845950e9134f614a837ccc06b1ac103
-            file_path: "~/BGit/Bryan_git/charlie-kirk/images/2082697323193180352_3.jpg"
-            ai_description: ""
-            ai_description_file: ""
-            ocr_file: ""
-            transcription_file: ""
-            image_page: ""
-            on_pages: []
-            should_be_on_pages: []
-        - image:
-            cid: ""
-            ipfs_pinned: false
             sha256: a8313f6da78ae9f5bea44fde02a5c06a5018e85f8c0232c42d3e240e56239c66
             file_path: "~/BGit/Bryan_git/charlie-kirk/images/2083966318534180990_1.jpg"
             ai_description: ""
@@ -4529,18 +4421,6 @@ level_3:
             ipfs_pinned: false
             sha256: c14690fc70f3ed63a065b8da39fc70b30ce35e79f321509a3602f19a317b53c0
             file_path: "~/BGit/Bryan_git/charlie-kirk/images/2084007515218493721_1.jpg"
-            ai_description: ""
-            ai_description_file: ""
-            ocr_file: ""
-            transcription_file: ""
-            image_page: ""
-            on_pages: []
-            should_be_on_pages: []
-        - image:
-            cid: ""
-            ipfs_pinned: false
-            sha256: 93f8be4820dbdb956e2b473c1a0ce3c79b9e20b1a0e48e9fb406e4e6749fe6b2
-            file_path: "~/BGit/Bryan_git/charlie-kirk/images/2084427623736717747_1.jpg"
             ai_description: ""
             ai_description_file: ""
             ocr_file: ""
@@ -4625,18 +4505,6 @@ level_3:
             ipfs_pinned: false
             sha256: 20325c1059bdaeb3e66e7ddb9910fdb7e054bceada52f3cddde8bfe1b0eac9fb
             file_path: "~/BGit/Bryan_git/charlie-kirk/images/2085556752427499683_1.jpg"
-            ai_description: ""
-            ai_description_file: ""
-            ocr_file: ""
-            transcription_file: ""
-            image_page: ""
-            on_pages: []
-            should_be_on_pages: []
-        - image:
-            cid: ""
-            ipfs_pinned: false
-            sha256: 332e68531a71617430c74a2d019a976ef1fc93161c3727f55451b334237ed511
-            file_path: "~/BGit/Bryan_git/charlie-kirk/images/Apple_Podcast_Removed_1793.png"
             ai_description: ""
             ai_description_file: ""
             ocr_file: ""
@@ -6650,8 +6518,8 @@ level_3:
       _key: Security_Team
       site_level_2: ["Security_Team"]
       site_page: "site/docs/Security_Team/overview.mdx"
-      number_of_images: 15
-      number_of_images_recursive: 36
+      number_of_images: 17
+      number_of_images_recursive: 38
       needs_split: true   # over the 12 ceiling — split on a later pass
       images:
         - image:
@@ -6904,6 +6772,30 @@ level_3:
             transcription_file: ""
             image_page: ""
             on_site_pages: ["site/docs/Security_Team/overview.mdx", "site/docs/Suspicious/TPUSA_Peripheral/schoneberger-yrefy-sponsor.mdx", "site/docs/Videos/Vid_Security_Team/Vid_Named_Table_Figures/overview.mdx", "site/docs/Videos/Vid_Security_Team/overview.mdx"]
+        - image:
+            cid: ""
+            ipfs_pinned: false
+            sha256: 8f7eb7496ce5f10dd6ae347c216004cf76554fce91c4ef0f7deef2bbe8f0c3a9
+            file_path: "~/BGit/Bryan_git/charlie-kirk/images/1975970593259610515_2.jpg"
+            ai_description: "A tight zoom crop of an outdoor photograph showing two men walking on a paved campus path. The man on the left wears a black polo with a badge on the chest and carries a long camouflage-patterned object at his side in a low ready position. The man on the right wears a white robe with a coloured stole. Faces are low-resolution and indistinct."
+            ai_description_file: ""
+            ocr_file: ""
+            transcription_file: ""
+            image_page: ""
+            on_pages: []
+            should_be_on_pages: []
+        - image:
+            cid: ""
+            ipfs_pinned: false
+            sha256: d9e9e54fc8bf00047b0a4d285026c26e7829857ed7f8df358400faeed7a3bdb8
+            file_path: "~/BGit/Bryan_git/charlie-kirk/images/2070597252133818558_1_cropped.jpg"
+            ai_description: "A cutaway diagram of the interior of a large SUV with the seating positions highlighted in green and labelled in yellow text: Justin Davis and Dan Flood in the front row, Rick Cutler and Brian Harpole in the middle row, and Frank Turek in the rear. A black silhouette of a reclining figure is overlaid across the middle of the cabin."
+            ai_description_file: ""
+            ocr_file: ""
+            transcription_file: ""
+            image_page: ""
+            on_pages: []
+            should_be_on_pages: []
       level_4:
         - level_4:
             title: "TBD"
@@ -16733,8 +16625,8 @@ level_3:
       title: "Memes and Commentary"
       _key: MEMEs_2
       site_level_2: []
-      number_of_images: 2
-      number_of_images_recursive: 4
+      number_of_images: 3
+      number_of_images_recursive: 5
       images:
         - image:
             cid: "QmSxcth2FPu5ororaXe9rQVGaSMMoLLtTGtn1B3SoNKER2"
@@ -16767,6 +16659,18 @@ level_3:
             should_be_on_pages:
               - page: "~/BGit/Bryan_git/charlie-kirk/site/docs/Israel_Main_Suspect/control-college-campuses.mdx"
             on_site_pages: ["site/docs/Israel_Main_Suspect/control-college-campuses.mdx", "site/docs/Photos/MEMEs_2/Img_Photo_ed459e.mdx", "site/docs/Photos/MEMEs_2/overview.mdx"]
+        - image:
+            cid: ""
+            ipfs_pinned: false
+            sha256: 28230a180178d2bc0cd5231016716b2cf3ac65f5ca7125032ccdfc9628d5e71e
+            file_path: "~/BGit/Bryan_git/charlie-kirk/images/1969831645403365640_1.jpg"
+            ai_description: "A memorial meme headed \"R.I.P. CHARLIE KIRK\" over a photograph of a lone figure standing on a rocky outcrop beneath an overcast sky. The quotation reads: \"When you tear out a man's tongue, you are not proving him a liar, you're only telling the world that you fear what he might say.\""
+            ai_description_file: ""
+            ocr_file: ""
+            transcription_file: ""
+            image_page: ""
+            on_pages: []
+            should_be_on_pages: []
       level_4:
         - level_4:
             title: "2 Kill Me"
@@ -16816,8 +16720,8 @@ level_3:
       _key: Ballistics_Gun
       site_level_2: ["Gun_Bullet"]
       site_page: "site/docs/Gun_Bullet/overview.mdx"
-      number_of_images: 66
-      number_of_images_recursive: 105
+      number_of_images: 67
+      number_of_images_recursive: 106
       needs_split: true   # over the 12 ceiling — split on a later pass
       images:
         - image:
@@ -17909,6 +17813,18 @@ level_3:
               - page: "~/BGit/Bryan_git/charlie-kirk/site/docs/Influencers/john-cullen.mdx"
               - page: "~/BGit/Bryan_git/charlie-kirk/site/docs/Influencers/x/john-cullen.mdx"
             on_site_pages: ["site/docs/Influencers/john-cullen.mdx", "site/docs/Photos/Ballistics_Gun/Img_Photo_7f723e.mdx", "site/docs/Photos/Ballistics_Gun/overview.mdx"]
+        - image:
+            cid: ""
+            ipfs_pinned: false
+            sha256: fbd26b09defeeb29dfd2cb339b8ff1964d8fb9508d19bab42b2fc879435d035d
+            file_path: "~/BGit/Bryan_git/charlie-kirk/images/2045212282712703209_1.jpg"
+            ai_description: "A photograph of five cartridges of descending size laid out on a black notepad, each hand-labelled in white along the case: 30-06, 5.56, 5.7, 45 and 9mm. The image is a scale comparison of the rounds."
+            ai_description_file: ""
+            ocr_file: ""
+            transcription_file: ""
+            image_page: ""
+            on_pages: []
+            should_be_on_pages: []
       level_4:
         - level_4:
             title: "Acoustics Expert"
@@ -20302,8 +20218,8 @@ level_3:
       _key: Charlie_Kirk
       site_level_2: ["Charlie"]
       site_page: "site/docs/Charlie/overview.mdx"
-      number_of_images: 26
-      number_of_images_recursive: 69
+      number_of_images: 27
+      number_of_images_recursive: 70
       needs_split: true   # over the 12 ceiling — split on a later pass
       images:
         - image:
@@ -20759,6 +20675,18 @@ level_3:
             transcription_file: ""
             image_page: ""
             on_site_pages: ["site/docs/Charlie/overview.mdx", "site/docs/Influencers/podcasts-steve-bannon.mdx", "site/docs/Influencers/x/realtruthjustic.mdx", "site/docs/Iran/israel-iran-war-push.mdx", "site/docs/Videos/Vid_Charlie_Kirk/Vid_Charlie_His_Own/overview.mdx", "site/docs/Videos/Vid_Charlie_Kirk/overview.mdx"]
+        - image:
+            cid: ""
+            ipfs_pinned: false
+            sha256: 93177a5ebd2c28440cf6be8025984fe5c83247f10023774b0f53cd4f11872bad
+            file_path: "~/BGit/Bryan_git/charlie-kirk/images/2045212282712703209_2.jpg"
+            ai_description: "A portrait photograph of Charlie Kirk in a light blue shirt and patterned tie, photographed in a SiriusXM radio studio with the SiriusXM logo visible on the wall behind him."
+            ai_description_file: ""
+            ocr_file: ""
+            transcription_file: ""
+            image_page: ""
+            on_pages: []
+            should_be_on_pages: []
       level_4:
         - level_4:
             title: "Mystery Woman"
@@ -22021,8 +21949,8 @@ level_3:
       _key: People
       site_level_2: ["People", "key_individuals"]
       site_page: "site/docs/People/overview.mdx"
-      number_of_images: 31
-      number_of_images_recursive: 126
+      number_of_images: 32
+      number_of_images_recursive: 127
       needs_split: true   # over the 12 ceiling — split on a later pass
       images:
         - image:
@@ -22545,6 +22473,18 @@ level_3:
             transcription_file: ""
             image_page: ""
             on_site_pages: ["site/docs/People/overview.mdx", "site/docs/People/tiffany-barker.mdx", "site/docs/Videos/Vid_People/Vid_People_Interest/overview.mdx", "site/docs/Videos/Vid_People/overview.mdx"]
+        - image:
+            cid: ""
+            ipfs_pinned: false
+            sha256: 93f8be4820dbdb956e2b473c1a0ce3c79b9e20b1a0e48e9fb406e4e6749fe6b2
+            file_path: "~/BGit/Bryan_git/charlie-kirk/images/2084427623736717747_1.jpg"
+            ai_description: "A phone screenshot of the Utah State University Veterans Resource Office web page showing the public staff profile of Alan Robertson. The photograph shows him in a black police uniform with a Utah State University badge and a shoulder radio. The caption below reads that Alan Robertson is a full-time police officer with USU Police and has been with the agency for a little under a year. A cookie-consent banner covers the lower portion of the page."
+            ai_description_file: ""
+            ocr_file: ""
+            transcription_file: ""
+            image_page: ""
+            on_pages: []
+            should_be_on_pages: []
       level_4:
         - level_4:
             title: "Angel TPUSA Right"
@@ -25670,8 +25610,8 @@ level_3:
       _key: Mic
       site_level_2: ["Mic"]
       site_page: "site/docs/Mic/overview.mdx"
-      number_of_images: 34
-      number_of_images_recursive: 76
+      number_of_images: 36
+      number_of_images_recursive: 78
       needs_split: true   # over the 12 ceiling — split on a later pass
       images:
         - image:
@@ -26165,6 +26105,30 @@ level_3:
               - page: "~/BGit/Bryan_git/charlie-kirk/site/docs/Mic/rode-wireless-mic.mdx"
               - page: "~/BGit/Bryan_git/charlie-kirk/site/docs/People/jon-bray.mdx"
             on_site_pages: ["site/docs/Mic/overview.mdx", "site/docs/Mic/rode-wireless-mic.mdx", "site/docs/People/jon-bray.mdx", "site/docs/Photos/Mic/Img_Photo_b558fc.mdx", "site/docs/Photos/Mic/overview.mdx"]
+        - image:
+            cid: ""
+            ipfs_pinned: false
+            sha256: e07e4196d3bd6d56f1add5c4245f4ae8d34d8a578f20f449af578e027e70040b
+            file_path: "~/BGit/Bryan_git/charlie-kirk/images/2082697323193180352_2.jpg"
+            ai_description: "Page 2 of 3 of a forensic hypothesis comparison table scoring each finding against two competing hypotheses, \"RIFLE (.30-06)\" and \"SHAPED CHARGE\", on a five-point scale with a delta column. Rows cover subarachnoid haemorrhage in the cerebellar vermis and parietal regions, a 53 Hz cavity-mode dominant peak, a +14.1 dB cavity-to-structural energy ratio, low energy above 500 Hz, a 104 microsecond rise time, the Cooper acoustic coupling effect and the Courtney thoracic-to-brain TBI mechanism. Sources are cited per row."
+            ai_description_file: ""
+            ocr_file: ""
+            transcription_file: ""
+            image_page: ""
+            on_pages: []
+            should_be_on_pages: []
+        - image:
+            cid: ""
+            ipfs_pinned: false
+            sha256: 413b9f00bd37ecb9121502de3e3274459845950e9134f614a837ccc06b1ac103
+            file_path: "~/BGit/Bryan_git/charlie-kirk/images/2082697323193180352_3.jpg"
+            ai_description: "A \"References & Methodology\" page from followtheepicenter.com setting out the zero-to-five rating scale used in the accompanying hypothesis comparison and listing sixteen numbered citations grouped under Blast Injury Literature, Respiratory Physiology, Thoracic Resonance and Acoustic Data Sources. The footer reads \"Forensic Hypothesis Comparison\" and \"State of Utah v. Tyler Robinson\"."
+            ai_description_file: ""
+            ocr_file: ""
+            transcription_file: ""
+            image_page: ""
+            on_pages: []
+            should_be_on_pages: []
       videos:
         - video:
             cid: "QmQK5HHckHYVhKPBPAQpHNo9KbYgJSW1ziKLHF9k6WA3a7"
@@ -26660,7 +26624,7 @@ level_3:
               - image:
                   cid: "Qmdbmh7Yk5ayQR2cR1RdsRZLGpHTnkwkiNDHPBjJJLvNqA"
                   ipfs_pinned: false
-                  sha256: ""
+                  sha256: 49eaf1853a58ce9d5132416d6614b2eaf675364408c0e05103bccfaaac7d3bc0
                   file_path: ""
                   ai_description: ""
                   ai_description_file: ""
@@ -26674,7 +26638,7 @@ level_3:
               - image:
                   cid: "QmQX14L2B7t4133HAR4jEoLcRVHSbPSG35bQHV7hAfzKqv"
                   ipfs_pinned: false
-                  sha256: ""
+                  sha256: f0c8ddcbbbf4ccf030c31045e0cb873fe78ff8a9a881b4097d11648089c5a189
                   file_path: ""
                   ai_description: ""
                   ai_description_file: ""
@@ -26688,7 +26652,7 @@ level_3:
               - image:
                   cid: "QmPhVtfpc1t4V25w5FxCJ9AUmPAUfxxR9oLoShsCR1SYbg"
                   ipfs_pinned: false
-                  sha256: ""
+                  sha256: bca9741ed8032b4dd64b85f389cbfa85d20d0b546d6d43699a8cf77f466ea3cd
                   file_path: ""
                   ai_description: ""
                   ai_description_file: ""
@@ -26702,7 +26666,7 @@ level_3:
               - image:
                   cid: "QmQYvXYXFMC5UGVvpMudpWtkZ3XcNdSuC5oziCUemsAjnE"
                   ipfs_pinned: false
-                  sha256: ""
+                  sha256: 7131945e90532aa259cc1b5e09bccf4b2c4347e87fa8c722a6455f02964b771f
                   file_path: ""
                   ai_description: ""
                   ai_description_file: ""
@@ -35596,8 +35560,8 @@ level_3:
       _key: Censorship_Evidence
       site_level_2: ["Censorship"]
       site_page: "site/docs/Censorship/overview.mdx"
-      number_of_images: 17
-      number_of_images_recursive: 23
+      number_of_images: 18
+      number_of_images_recursive: 24
       needs_split: true   # over the 12 ceiling — split on a later pass
       images:
         - image:
@@ -35870,6 +35834,18 @@ level_3:
             transcription_file: ""
             image_page: ""
             on_site_pages: ["site/docs/Censorship/overview.mdx", "site/docs/Charlie/overview.mdx", "site/docs/TPUSA/apple-podcasts-removed-charlie.mdx", "site/docs/TPUSA/overview.mdx"]
+        - image:
+            cid: ""
+            ipfs_pinned: false
+            sha256: 332e68531a71617430c74a2d019a976ef1fc93161c3727f55451b334237ed511
+            file_path: "~/BGit/Bryan_git/charlie-kirk/images/Apple_Podcast_Removed_1793.png"
+            ai_description: "A graphic on a wood-grain background. On the left is a portrait of Charlie Kirk in a navy suit and red tie with a red strip of tape reading \"CENSORED\" across his mouth. The text to the right reads \"CHARLIE KIRK — 1,793 Podcasts Removed from Apple Podcast (of his podcasts of when he was alive)\"."
+            ai_description_file: ""
+            ocr_file: ""
+            transcription_file: ""
+            image_page: ""
+            on_pages: []
+            should_be_on_pages: []
       level_4:
         - level_4:
             title: "Censorship Investigation Index"
@@ -41184,8 +41160,8 @@ level_3:
       _key: Media_Coverage
       site_level_2: ["Media"]
       site_page: "site/docs/Media/overview.mdx"
-      number_of_images: 3
-      number_of_images_recursive: 5
+      number_of_images: 4
+      number_of_images_recursive: 6
       images:
         - image:
             cid: "QmaK2ZXXeGTh5UGRvHyADH5UA8v7JLhmBceua5N6FRztfx"
@@ -41231,6 +41207,18 @@ level_3:
             transcription_file: ""
             image_page: ""
             on_site_pages: ["site/docs/Media/overview.mdx", "site/docs/Videos/Vid_Media/Vid_Satire_Commentary/overview.mdx", "site/docs/Videos/Vid_Media/overview.mdx"]
+        - image:
+            cid: ""
+            ipfs_pinned: false
+            sha256: 569670783c20e2fd36d4cdb195c2970dbc5abf683152ddd449579f36f3a28200
+            file_path: "~/BGit/Bryan_git/charlie-kirk/images/1969832388823003519_1.jpg"
+            ai_description: "A screenshot of a New York Times article headed \"For Erika Kirk, a Husband's Life Cut Short by Violence He Seemed to Foresee\". The standfirst states that in an interview the wife of the conservative activist Charlie Kirk said she had implored him to wear a bulletproof vest, but that she sees divine work in his death. A portrait photograph of Erika Kirk appears below the headline."
+            ai_description_file: ""
+            ocr_file: ""
+            transcription_file: ""
+            image_page: ""
+            on_pages: []
+            should_be_on_pages: []
       level_4:
         - level_4:
             title: "Candace Owens Israel Controversies (Media)"
@@ -44114,8 +44102,8 @@ level_3:
       _key: Suspicious_Anomalies
       site_level_2: ["Suspicious"]
       site_page: "site/docs/Suspicious/overview.mdx"
-      number_of_images: 4
-      number_of_images_recursive: 23
+      number_of_images: 5
+      number_of_images_recursive: 24
       images:
         - image:
             cid: "QmU99gm4Qg8AYRSdHHGnP5Eoe7nsNKx3V3cc6rouPcD6Wr"
@@ -44184,6 +44172,18 @@ level_3:
               - page: "~/BGit/Bryan_git/charlie-kirk/site/docs/Iran/timing-between-conflicts.mdx"
               - page: "~/BGit/Bryan_git/charlie-kirk/site/docs/Suspicious/overview.mdx"
               - page: "~/BGit/Bryan_git/charlie-kirk/site/docs/Timeline/funeral-memorial-timeline.mdx"
+        - image:
+            cid: ""
+            ipfs_pinned: false
+            sha256: 465c80d7dd6e0c90d35e9ad31f019e44d623a9947a4cc04c3526a0da6ac15b94
+            file_path: "~/BGit/Bryan_git/charlie-kirk/images/1965884012565766172_1.jpg"
+            ai_description: "A screenshot of a social media video player paused at 00:25 of a 39-second clip filmed at the UVU event. Charlie Kirk is seated beneath the dark \"PROVE ME WRONG\" banner with the crowd and a standing security figure behind him. A hand-drawn yellow circle has been added by the poster to mark a small dark object visible in the air above and behind the seated figures."
+            ai_description_file: ""
+            ocr_file: ""
+            transcription_file: ""
+            image_page: ""
+            on_pages: []
+            should_be_on_pages: []
       level_4:
         - level_4:
             title: "Suspicious About Cause of Death"

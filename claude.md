@@ -647,6 +647,30 @@ Before publishing a page that embeds an image, verify both:
   git check-ignore -v <path>            # must produce no output
 
 
+== Never Embed An Image By IPFS Gateway URL ==
+
+An image <img> src must ALWAYS be the local repo path:
+
+  <img src="/img/evidence/{sha256}.jpg" data-cid="{CID}" />
+
+Never src="https://ipfs.io/ipfs/{CID}". Most CIDs in manifest.yaml and videos.yaml
+were produced with `ipfs add -n`, which computes the hash WITHOUT putting the bytes
+on any node — so the gateway 504s for real visitors while the page renders perfectly
+on the machine that happens to hold the file. Keep the CID in data-cid as the
+provenance record; serve the bytes from the repo. Videos are the exception and do
+use the gateway as their primary src.
+
+Repo-wide check that every image is actually reachable by a visitor:
+
+  python3 image_planning/generator/audit_image_publication.py            # fast
+  python3 image_planning/generator/audit_image_publication.py --gateway  # also
+                                     probes remaining ipfs.io <img> embeds
+
+Exit 0 = clean; 1 = at least one image is unserved, on no page, or banned-but-served.
+Banned and privacy-listed images are reported as WITHHELD, never as failures.
+ck_add_text runs this at Step 9H-6b.
+
+
 == Banned Media (ban_images.csv / ban_videos.csv) ==
 
 BAN_IMAGES_CSV is file {ROOT_DIR}/images/ban_images.csv

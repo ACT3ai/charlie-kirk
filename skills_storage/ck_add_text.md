@@ -2113,6 +2113,39 @@ player and the run still says "complete".
   what the reader currently sees, and what would fix it. Never print "Complete" over a
   failed check.
 
+* 9H-6b. REPO-WIDE PUBLICATION AUDIT (MANDATORY, FAST, LOCAL).
+
+  Every check above is scoped to THIS run's media. That is not enough. A four-month
+  audit on 2026-08-12 found damage that no single run would ever have noticed,
+  because each run only ever looked at itself:
+
+    * 85 downloaded images had never been copied to
+      site/internals/static/img/evidence/ — nothing served them.
+    * 265 page embeds used src="https://ipfs.io/ipfs/{CID}" instead of the local
+      /img/evidence/{sha256}.jpg path. Most CIDs were produced with `ipfs add -n`
+      and live on no node, so 11 of them returned 504 from the public gateway.
+      Every one of those rendered perfectly on this machine and was broken for
+      every real visitor.
+    * 15 images were downloaded and pinned but never embedded on any page.
+
+  So end every run with the whole-repo check, not just your own:
+
+    python3 {ROOT_DIR}/image_planning/generator/audit_image_publication.py
+
+  It exits 0 when clean and 1 when any image in {ROOT_DIR}/images/ is unserved,
+  served-but-on-no-page, or banned-but-still-served. Banned and privacy-listed
+  images are reported as WITHHELD and are never failures.
+
+  Add `--gateway` (slow, needs network) to also probe every remaining ipfs.io
+  <img> embed against the public gateway. Run that form whenever this run added
+  or repointed an IPFS embed.
+
+  Report the audit's RESULT line in the Step 10 summary. If it says FAIL, list the
+  offending files. Images this run added must never appear in the failing lists —
+  if they do, fix them before reporting the run complete. Pre-existing failures
+  from older runs are NOT a reason to block this run: report them so Bryan can see
+  the backlog, and say plainly that they predate this run.
+
 * 9H-7. TIME BUDGET.
 
   These checks add roughly 4–5 minutes, nearly all of it waiting on the Pages deploy.
@@ -2165,6 +2198,7 @@ X POST STEP 10: FINAL SUMMARY
   Page in origin/main:    {PASS | PENDING — awaiting auto-commit | FAIL}
   Image binaries in remote: {PASS — {n}/{n} in origin/main | FAIL — {list sha256}}
   Registered in images.yaml: {PASS — {n} entr(ies) | FAIL — not registered}
+  Repo-wide image audit:  {CLEAN | FAIL — {n} unserved, {n} on no page (Step 9H-6b)}
   Pages deploy:           {PASS — run {id} success | FAIL — run {id}, {error} | SKIPPED}
   Live page contains it:  {PASS | FAIL | SKIPPED}
   Live media files load:  {PASS — {n}/{n} images+posters http 200 image/* | FAIL — {list sha256 + code} | SKIPPED}
