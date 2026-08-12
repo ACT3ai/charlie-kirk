@@ -1,0 +1,292 @@
+source: images/2068506485420892470_4.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-12T17:47:01.844Z
+kind: image
+language: en-US
+text: |-
+  cletus Jethro
+  @cletus_jethro • Dec 19
+  it would have been more than sufficient if it was built in a cone shape (as l
+  used to build charges all the time to utilize the Monroe effect, it would have
+  been an extremely powerful upward blast relative to its size.
+  1
+  O 1
+  th/ 127
+  cletus Jethro
+  @cletus_jethro • Dec 19
+  ...
+  similar in sound to a gunshot- however due to the lack of rifling, the charge
+  would lose speed incredibly fast, but would be plenty stong enough to
+  cause the wound, however- as designed with a shape charge, not strong
+  enough to cause an exit wound.-- See below calculation:
+  1
+  ıhl 129
+  cletus Jethro
+  @cletus_jethro • Dec 19
+  The initial blast speed is PETN's detonation
+  velocity of 8400 m/s. Thus, the speed drop over
+  1 foot is 8400 - 309 = 8091 m/s.
+  To arrive at the solution:
+  1. Calculate E = mx heat of detonation =
+  0.003 × 5.81 × 106 = 1.743 × 104 J.
+  2. Compute
+  (p/E)1/2 = 1.225/17430 ~ 0.00838 s/m?
+  3. Adjust r/E = 0.3048/1.035 = 0.2945.
+  4. Compute (r/E)5/2 = (0.2945)2.5 ~ 0.047.
+  5. Find t = 0.047 × 0.00838 ~ 3.94 × 10-4 s.
+  6. Compute v =
+  (2/5) x (0.3048/3.94 x 10-4) = 309 m/s.
+  7. Subtract from initial detonation velocity:
+  8400 - 309 = 8091 m/s.
+  •••
+blocks:
+  - text: cletus Jethro
+    confidence: 1
+    bbox:
+      - 0.09583333458333332
+      - 0.03327787016084305
+      - 0.15
+      - 0.016638935108153063
+  - text: "@cletus_jethro • Dec 19"
+    confidence: 1
+    bbox:
+      - 0.28541666619791667
+      - 0.033277870382695474
+      - 0.25625000000000003
+      - 0.019966722129783676
+  - text: it would have been more than sufficient if it was built in a cone shape
+      (as l
+    confidence: 1
+    bbox:
+      - 0.09375000814583322
+      - 0.05990016627287853
+      - 0.8145833333333332
+      - 0.021630615640598982
+  - text: used to build charges all the time to utilize the Monroe effect, it would
+      have
+    confidence: 1
+    bbox:
+      - 0.09583333776041662
+      - 0.08652246274265107
+      - 0.83125
+      - 0.021630615640599093
+  - text: been an extremely powerful upward blast relative to its size.
+    confidence: 1
+    bbox:
+      - 0.0958333388368055
+      - 0.11148086521075984
+      - 0.6604166666666667
+      - 0.021630615640598982
+  - text: "1"
+    confidence: 0.5
+    bbox:
+      - 0.1333333334375
+      - 0.15474209675540762
+      - 0.010416666666666657
+      - 0.014975041597337757
+  - text: O 1
+    confidence: 0.5
+    bbox:
+      - 0.4750000002083334
+      - 0.15141430928452582
+      - 0.04583333333333334
+      - 0.019966722129783676
+  - text: th/ 127
+    confidence: 1
+    bbox:
+      - 0.6579249015592654
+      - 0.15367771596537505
+      - 0.07165019512176507
+      - 0.020431589961250274
+  - text: cletus Jethro
+    confidence: 1
+    bbox:
+      - 0.09583333458333332
+      - 0.20965058227953404
+      - 0.15
+      - 0.016638935108153063
+  - text: "@cletus_jethro • Dec 19"
+    confidence: 1
+    bbox:
+      - 0.2854166641041667
+      - 0.207986688968386
+      - 0.25625000000000003
+      - 0.01830282861896837
+  - text: ...
+    confidence: 1
+    bbox:
+      - 0.8979166671527778
+      - 0.21297836930116476
+      - 0.029166666666666674
+      - 0.008319467554076532
+  - text: similar in sound to a gunshot- however due to the lack of rifling, the
+      charge
+    confidence: 1
+    bbox:
+      - 0.09583333908333322
+      - 0.2362728787520798
+      - 0.8208333333333332
+      - 0.021630615640598982
+  - text: would lose speed incredibly fast, but would be plenty stong enough to
+    confidence: 1
+    bbox:
+      - 0.09583332784226198
+      - 0.261231281281198
+      - 0.7687499999999999
+      - 0.021630615640598982
+  - text: cause the wound, however- as designed with a shape charge, not strong
+    confidence: 1
+    bbox:
+      - 0.09583332835937508
+      - 0.28785357744384354
+      - 0.7958333333333333
+      - 0.021630615640598982
+  - text: "enough to cause an exit wound.-- See below calculation:"
+    confidence: 1
+    bbox:
+      - 0.09583332888392863
+      - 0.31281198012835754
+      - 0.6229166666666668
+      - 0.019966722129783676
+  - text: "1"
+    confidence: 0.5
+    bbox:
+      - 0.13333333322916668
+      - 0.3560732114893266
+      - 0.010416666666666657
+      - 0.013311147293116221
+  - text: ıhl 129
+    confidence: 0.5
+    bbox:
+      - 0.6603594812427492
+      - 0.3542791751236771
+      - 0.07094770272572837
+      - 0.020227006985224727
+  - text: cletus Jethro
+    confidence: 1
+    bbox:
+      - 0.09583333440476191
+      - 0.4093178036011409
+      - 0.15
+      - 0.01830282861896848
+  - text: "@cletus_jethro • Dec 19"
+    confidence: 1
+    bbox:
+      - 0.28541666619791667
+      - 0.40931780382695504
+      - 0.25625000000000003
+      - 0.019966722129783676
+  - text: The initial blast speed is PETN's detonation
+    confidence: 1
+    bbox:
+      - 0.12708332913690482
+      - 0.460898502555265
+      - 0.5875000000000001
+      - 0.024958402662229595
+  - text: velocity of 8400 m/s. Thus, the speed drop over
+    confidence: 1
+    bbox:
+      - 0.12708333000000008
+      - 0.4891846919439822
+      - 0.6583333333333333
+      - 0.028286189683860208
+  - text: 1 foot is 8400 - 309 = 8091 m/s.
+    confidence: 1
+    bbox:
+      - 0.12684734834316344
+      - 0.5161678818674138
+      - 0.4463609059651692
+      - 0.028251002116528645
+  - text: "To arrive at the solution:"
+    confidence: 1
+    bbox:
+      - 0.12708333119791668
+      - 0.5740432609400998
+      - 0.3291666666666667
+      - 0.0232945091514144
+  - text: 1. Calculate E = mx heat of detonation =
+    confidence: 1
+    bbox:
+      - 0.15624999433333345
+      - 0.6272878536272879
+      - 0.5666666666666667
+      - 0.024958402662229595
+  - text: 0.003 × 5.81 × 106 = 1.743 × 104 J.
+    confidence: 1
+    bbox:
+      - 0.20000000200892862
+      - 0.6589018304611362
+      - 0.46875
+      - 0.024958402662229706
+  - text: 2. Compute
+    confidence: 1
+    bbox:
+      - 0.15616513026474596
+      - 0.6884758957921033
+      - 0.17100307146708174
+      - 0.02571043753980995
+  - text: (p/E)1/2 = 1.225/17430 ~ 0.00838 s/m?
+    confidence: 1
+    bbox:
+      - 0.19791666108333342
+      - 0.7188019967554077
+      - 0.5583333333333333
+      - 0.024958402662229706
+  - text: 3. Adjust r/E = 0.3048/1.035 = 0.2945.
+    confidence: 1
+    bbox:
+      - 0.15625000439236109
+      - 0.7554076539240155
+      - 0.5270833333333333
+      - 0.024958402662229595
+  - text: 4. Compute (r/E)5/2 = (0.2945)2.5 ~ 0.047.
+    confidence: 1
+    bbox:
+      - 0.15625000371093745
+      - 0.7903494176268718
+      - 0.59375
+      - 0.024958402662229595
+  - text: 5. Find t = 0.047 × 0.00838 ~ 3.94 × 10-4 s.
+    confidence: 1
+    bbox:
+      - 0.15624999406250015
+      - 0.8252911811148086
+      - 0.60625
+      - 0.024958402662229706
+  - text: 6. Compute v =
+    confidence: 1
+    bbox:
+      - 0.15625000184027774
+      - 0.8602329450221852
+      - 0.22083333333333335
+      - 0.021630615640599093
+  - text: (2/5) x (0.3048/3.94 x 10-4) = 309 m/s.
+    confidence: 1
+    bbox:
+      - 0.19791666215277784
+      - 0.8868552413338879
+      - 0.5416666666666667
+      - 0.024958402662229706
+  - text: "7. Subtract from initial detonation velocity:"
+    confidence: 1
+    bbox:
+      - 0.15624999939583334
+      - 0.9201331112146423
+      - 0.5854166666666667
+      - 0.0266222961730449
+  - text: 8400 - 309 = 8091 m/s.
+    confidence: 1
+    bbox:
+      - 0.19999999764880952
+      - 0.9517470882576659
+      - 0.3291666666666667
+      - 0.0232945091514144
+  - text: •••
+    confidence: 0.5
+    bbox:
+      - 0.89791666625
+      - 0.41264559051580707
+      - 0.029166666666666674
+      - 0.009983361064891838

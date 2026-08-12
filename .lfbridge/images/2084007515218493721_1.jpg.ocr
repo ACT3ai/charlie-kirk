@@ -1,0 +1,497 @@
+source: images/2084007515218493721_1.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-12T17:47:14.092Z
+kind: image
+language: en-US
+text: |-
+  SEPTEMBER 9, 2025
+  21:41:25
+  https://www.unfuckamericatour.com
+  AUG
+  SEP
+  09
+  2025
+  OCT
+  120 captures
+  5 Apr 2025-25 Mar 2026
+  2024
+  2026
+  Captured on September 9, 2025 at 21:41:25
+  THE
+  UNFICK
+  AMERICA
+  TOUR
+  ABOUT
+  TOUR Y
+  CAMPUS CHAPTERS
+  SHOP
+  TAKING THE FIGHT TO
+  CHARLIE KIRK &
+  THE FAR RIGHT
+  We're building a movement of students
+  across America who refuse to stay silent.
+  Find out where we'll be stopping next
+  by signing up below!
+  Full Name
+  Email
+  Phone
+  I consent to receive occasional text messages at the phone number provided.
+  SEPTEMBER 10, 2025
+  19:55:06
+  AUG
+  https://www.unfuckamericatour.com
+  120 captures
+  5 Apr 2025 - 25 Mar 2026
+  2024
+  SEP
+  10
+  2025
+  OCT
+  2026
+  Captured on September 10, 2025 at 19:55:06
+  DONATE
+  404: Not Found
+  The page you're looking for
+  couldn't be found.
+  Go back home.
+  SUBMIT
+  Website loads normally
+  Full homepage content visible
+  Active branding and tour sign-up form
+  Navigation menu and donate/shop links visible
+  Website returns 404 error
+  No homepage content available
+  Navigation menu and pages inaccessible
+  Site appears to be down or removed
+  Between September 9 at 21:41 and September 10 at 19:55,
+  the website went from fully operational to returning a 404 error.
+blocks:
+  - text: SEPTEMBER 9, 2025
+    confidence: 1
+    bbox:
+      - 0.06104651465942872
+      - 0.016042781325775635
+      - 0.35319767188753787
+      - 0.05836738069639702
+  - text: 21:41:25
+    confidence: 1
+    bbox:
+      - 0.1758439065675868
+      - 0.07062221376548261
+      - 0.1366842816797711
+      - 0.038428893063795155
+  - text: https://www.unfuckamericatour.com
+    confidence: 0.5
+    bbox:
+      - 0.020348844799995033
+      - 0.14337568083410623
+      - 0.23546510008024246
+      - 0.019963701353566066
+  - text: AUG
+    confidence: 1
+    bbox:
+      - 0.3125000013586953
+      - 0.13611615252558584
+      - 0.03779069571284188
+      - 0.018148820030498003
+  - text: SEP
+    confidence: 1
+    bbox:
+      - 0.35901162882104337
+      - 0.13430127081822607
+      - 0.03488371953814584
+      - 0.019963701353566066
+  - text: "09"
+    confidence: 1
+    bbox:
+      - 0.35755813995262686
+      - 0.16515426581376802
+      - 0.03633720898594228
+      - 0.03085299269188324
+  - text: "2025"
+    confidence: 1
+    bbox:
+      - 0.35755813995262686
+      - 0.20508166976177977
+      - 0.03633720898594228
+      - 0.018148820030498003
+  - text: OCT
+    confidence: 1
+    bbox:
+      - 0.4040697684867411
+      - 0.1361161524892882
+      - 0.03488371953814584
+      - 0.018148820030498003
+  - text: 120 captures
+    confidence: 1
+    bbox:
+      - 0.018895351396262212
+      - 0.18511796741971775
+      - 0.09447674064255306
+      - 0.018148820030497892
+  - text: 5 Apr 2025-25 Mar 2026
+    confidence: 1
+    bbox:
+      - 0.024709304562189137
+      - 0.20855614935876954
+      - 0.1308139469075985
+      - 0.01467434055239969
+  - text: "2024"
+    confidence: 1
+    bbox:
+      - 0.3110465125419736
+      - 0.20508166940535943
+      - 0.03488371953814584
+      - 0.01633393870742994
+  - text: "2026"
+    confidence: 1
+    bbox:
+      - 0.4040417072515694
+      - 0.20679871311298714
+      - 0.036393330202633245
+      - 0.016529615337623427
+  - text: Captured on September 9, 2025 at 21:41:25
+    confidence: 1
+    bbox:
+      - 0.11773256032376146
+      - 0.24500907445417397
+      - 0.2877906875501516
+      - 0.021778584376588528
+  - text: THE
+    confidence: 1
+    bbox:
+      - 0.030523256307323998
+      - 0.2794918332285766
+      - 0.01744185976907292
+      - 0.014519055684407589
+  - text: UNFICK
+    confidence: 0.5
+    bbox:
+      - 0.03043117587158913
+      - 0.2899308849700528
+      - 0.0728585791485796
+      - 0.024493946748621376
+  - text: AMERICA
+    confidence: 1
+    bbox:
+      - 0.03038005785437584
+      - 0.3131641143034195
+      - 0.08313523209554154
+      - 0.02521442134537588
+  - text: TOUR
+    confidence: 1
+    bbox:
+      - 0.09011627969658147
+      - 0.3375680581708257
+      - 0.023255812118464975
+      - 0.010889292188294264
+  - text: ABOUT
+    confidence: 1
+    bbox:
+      - 0.21366279118759984
+      - 0.3049001814941904
+      - 0.029069767188753787
+      - 0.009074410015249001
+  - text: TOUR Y
+    confidence: 1
+    bbox:
+      - 0.2528386690599592
+      - 0.30449009385197456
+      - 0.03356684903785606
+      - 0.009894585226946306
+  - text: CAMPUS CHAPTERS
+    confidence: 1
+    bbox:
+      - 0.29505814342253955
+      - 0.3048128344238652
+      - 0.08139534377507579
+      - 0.009161757062888132
+  - text: SHOP
+    confidence: 1
+    bbox:
+      - 0.385174418882506
+      - 0.30490018147150433
+      - 0.026162791014057774
+      - 0.009074410015249001
+  - text: TAKING THE FIGHT TO
+    confidence: 1
+    bbox:
+      - 0.02761628317502113
+      - 0.37931034482128667
+      - 0.22529068755015158
+      - 0.036297640060996006
+  - text: CHARLIE KIRK &
+    confidence: 1
+    bbox:
+      - 0.0259857310760623
+      - 0.4090653999061088
+      - 0.23436574895099635
+      - 0.06208698592296469
+  - text: THE FAR RIGHT
+    confidence: 1
+    bbox:
+      - 0.029069771067845897
+      - 0.4625668445252993
+      - 0.2020348781525834
+      - 0.038340595741747974
+  - text: We're building a movement of students
+    confidence: 1
+    bbox:
+      - 0.03052325223975358
+      - 0.5204991088217436
+      - 0.20494186248996968
+      - 0.013368983957219194
+  - text: across America who refuse to stay silent.
+    confidence: 1
+    bbox:
+      - 0.03052326517222859
+      - 0.5390199639908271
+      - 0.2122092906826743
+      - 0.014519055684407589
+  - text: Find out where we'll be stopping next
+    confidence: 1
+    bbox:
+      - 0.03052326093205932
+      - 0.5713012474392045
+      - 0.1889534812851061
+      - 0.016934046345811082
+  - text: by signing up below!
+    confidence: 1
+    bbox:
+      - 0.03052325548190348
+      - 0.5898366609962717
+      - 0.1075581375100303
+      - 0.014519055684407589
+  - text: Full Name
+    confidence: 1
+    bbox:
+      - 0.040697675881612744
+      - 0.6568627452113283
+      - 0.04505813751003031
+      - 0.011013842733998525
+  - text: Email
+    confidence: 1
+    bbox:
+      - 0.17441860416593624
+      - 0.6569872959203719
+      - 0.026162791014057774
+      - 0.010889292188294264
+  - text: Phone
+    confidence: 1
+    bbox:
+      - 0.3052325585567859
+      - 0.6569872957570326
+      - 0.029069767188753814
+      - 0.010889292188294153
+  - text: I consent to receive occasional text messages at the phone number provided.
+    confidence: 1
+    bbox:
+      - 0.052325594460847565
+      - 0.696914700427329
+      - 0.2979651000802425
+      - 0.010889292188294264
+  - text: SEPTEMBER 10, 2025
+    confidence: 1
+    bbox:
+      - 0.5697674377863209
+      - 0.01604278112613866
+      - 0.36046512184741664
+      - 0.05836738069639702
+  - text: 19:55:06
+    confidence: 1
+    bbox:
+      - 0.6875000017670507
+      - 0.07259528219906541
+      - 0.14098837032127653
+      - 0.03992740270713224
+  - text: AUG
+    confidence: 1
+    bbox:
+      - 0.8125000004053456
+      - 0.13611615268892518
+      - 0.03488371953814584
+      - 0.018148820030498003
+  - text: https://www.unfuckamericatour.com
+    confidence: 0.5
+    bbox:
+      - 0.5203488363873382
+      - 0.14519056267077646
+      - 0.23546512184741664
+      - 0.018148820030498003
+  - text: 120 captures
+    confidence: 1
+    bbox:
+      - 0.5174418615620292
+      - 0.18511796755799448
+      - 0.09447674064255307
+      - 0.018148820030498003
+  - text: 5 Apr 2025 - 25 Mar 2026
+    confidence: 1
+    bbox:
+      - 0.521802324021403
+      - 0.20855614973625547
+      - 0.13372093124498474
+      - 0.016934046345811082
+  - text: "2024"
+    confidence: 1
+    bbox:
+      - 0.8125000009140667
+      - 0.20508166940535943
+      - 0.03488371953814584
+      - 0.01633393870742994
+  - text: SEP
+    confidence: 1
+    bbox:
+      - 0.8604651171931366
+      - 0.13430127081822607
+      - 0.03488371953814584
+      - 0.019963701353566066
+  - text: "10"
+    confidence: 1
+    bbox:
+      - 0.8590116287615824
+      - 0.16515426581376802
+      - 0.03488371953814584
+      - 0.03085299269188324
+  - text: "2025"
+    confidence: 1
+    bbox:
+      - 0.8574508769463824
+      - 0.20472751930695188
+      - 0.03800522209744317
+      - 0.018857121255096088
+  - text: OCT
+    confidence: 1
+    bbox:
+      - 0.9055232554088148
+      - 0.13611615268892518
+      - 0.03343023281124624
+      - 0.018148820030498003
+  - text: "2026"
+    confidence: 1
+    bbox:
+      - 0.9054922028311331
+      - 0.20678821501891764
+      - 0.03639931617551795
+      - 0.016550611472172294
+  - text: Captured on September 10, 2025 at 19:55:06
+    confidence: 1
+    bbox:
+      - 0.610465121707083
+      - 0.24500907506759462
+      - 0.2965116187951363
+      - 0.02359346569965659
+  - text: DONATE
+    confidence: 1
+    bbox:
+      - 0.43890440194990754
+      - 0.3045962071227597
+      - 0.03498189493524878
+      - 0.00968235869246159
+  - text: "404: Not Found"
+    confidence: 1
+    bbox:
+      - 0.6133720904768358
+      - 0.4188948314681278
+      - 0.2718023281124621
+      - 0.04571496824104737
+  - text: The page you're looking for
+    confidence: 1
+    bbox:
+      - 0.6424418641644769
+      - 0.524064171396854
+      - 0.21220929068267436
+      - 0.022281639928698693
+  - text: couldn't be found.
+    confidence: 1
+    bbox:
+      - 0.678779073714406
+      - 0.555258467424251
+      - 0.13953487815258336
+      - 0.022281639928698804
+  - text: Go back home.
+    confidence: 1
+    bbox:
+      - 0.688953490133194
+      - 0.606060605976399
+      - 0.12063953437750752
+      - 0.022281639928698693
+  - text: SUBMIT
+    confidence: 1
+    bbox:
+      - 0.41998154607853205
+      - 0.6546895854928455
+      - 0.04230435054414455
+      - 0.011854948632007423
+  - text: Website loads normally
+    confidence: 1
+    bbox:
+      - 0.06540697816257972
+      - 0.7620320858223812
+      - 0.15988371409635233
+      - 0.02049910873440286
+  - text: Full homepage content visible
+    confidence: 1
+    bbox:
+      - 0.06540697426788891
+      - 0.7949183308762374
+      - 0.20494186248996968
+      - 0.019963701353566177
+  - text: Active branding and tour sign-up form
+    confidence: 1
+    bbox:
+      - 0.06540697761334603
+      - 0.8275862075053102
+      - 0.26017441253009094
+      - 0.020007375727362775
+  - text: Navigation menu and donate/shop links visible
+    confidence: 1
+    bbox:
+      - 0.06540697640210578
+      - 0.8582887696886871
+      - 0.32267441253009094
+      - 0.022281639928698804
+  - text: Website returns 404 error
+    confidence: 1
+    bbox:
+      - 0.5508720931405049
+      - 0.7620320853217428
+      - 0.17587209530121595
+      - 0.018716577540106916
+  - text: No homepage content available
+    confidence: 1
+    bbox:
+      - 0.550872096584654
+      - 0.7949183307206762
+      - 0.2151162750200607
+      - 0.019963701353566066
+  - text: Navigation menu and pages inaccessible
+    confidence: 1
+    bbox:
+      - 0.5508720935892029
+      - 0.8275862073238218
+      - 0.2805232593574468
+      - 0.020007375727362775
+  - text: Site appears to be down or removed
+    confidence: 1
+    bbox:
+      - 0.5508721028488144
+      - 0.8600713013829735
+      - 0.2485464969477197
+      - 0.02049910873440286
+  - text: Between September 9 at 21:41 and September 10 at 19:55,
+    confidence: 1
+    bbox:
+      - 0.2093023258126601
+      - 0.9162210332207091
+      - 0.5988372062650456
+      - 0.03477715170957196
+  - text: the website went from fully operational to returning a 404 error.
+    confidence: 1
+    bbox:
+      - 0.2063953478423356
+      - 0.9491833039867867
+      - 0.6409883812048636
+      - 0.03120885260814865

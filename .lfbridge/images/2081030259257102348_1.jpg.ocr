@@ -1,0 +1,177 @@
+source: images/2081030259257102348_1.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-12T17:47:07.397Z
+kind: image
+language: en-US
+text: |-
+  706
+  SD
+  Seth ›
+  I can't stop thinking about
+  what you told me how
+  Charlie said if he were to
+  say Bibi should be
+  replaced TPUSA would be
+  done. This is heart
+  breaking.
+  Who was bullying him?!?
+  Who was threatening him?
+  He never said to me at
+  least that he was bullied or
+  threatened by anyone. just
+  that saying certain things
+  would come at a cost. He
+  was right about that, but
+  that doesn't make anyone
+  that he was dealing with
+  evil.
+blocks:
+  - text: "706"
+    confidence: 1
+    bbox:
+      - 0.14878048898592908
+      - 0.02470930271595395
+      - 0.06585365554033701
+      - 0.01889534843437124
+  - text: SD
+    confidence: 0.5
+    bbox:
+      - 0.4512195110891427
+      - 0.02906976765487046
+      - 0.09512195263878775
+      - 0.03343023228958086
+  - text: Seth ›
+    confidence: 1
+    bbox:
+      - 0.42195122235494265
+      - 0.09883720893086756
+      - 0.15853658126572434
+      - 0.026288926541263913
+  - text: I can't stop thinking about
+    confidence: 1
+    bbox:
+      - 0.29512194236222355
+      - 0.16548940484385677
+      - 0.6097561076536018
+      - 0.03077699293642777
+  - text: what you told me how
+    confidence: 1
+    bbox:
+      - 0.3024390225299065
+      - 0.20181634696192308
+      - 0.5097561076536017
+      - 0.03229061553985868
+  - text: Charlie said if he were to
+    confidence: 1
+    bbox:
+      - 0.3048780708639319
+      - 0.2381432897564275
+      - 0.5682926501257944
+      - 0.02639159328641605
+  - text: say Bibi should be
+    confidence: 1
+    bbox:
+      - 0.3024390243056314
+      - 0.27447023152773753
+      - 0.4219512163582495
+      - 0.032290616502194114
+  - text: replaced TPUSA would be
+    confidence: 1
+    bbox:
+      - 0.2951219392597988
+      - 0.31079717436164245
+      - 0.6146341614804026
+      - 0.029319104946224916
+  - text: done. This is heart
+    confidence: 1
+    bbox:
+      - 0.30000000637821334
+      - 0.3473837208790097
+      - 0.4317072981494968
+      - 0.029069767710419137
+  - text: breaking.
+    confidence: 1
+    bbox:
+      - 0.3022684138656917
+      - 0.3832967117319027
+      - 0.2222924442614539
+      - 0.03282518127010281
+  - text: Who was bullying him?!?
+    confidence: 1
+    bbox:
+      - 0.335664347444131
+      - 0.4581231082250571
+      - 0.5944055589578919
+      - 0.03784056508577194
+  - text: Who was threatening him?
+    confidence: 1
+    bbox:
+      - 0.3048780453471609
+      - 0.5363269430044699
+      - 0.6121951345670021
+      - 0.033440498482928405
+  - text: He never said to me at
+    confidence: 1
+    bbox:
+      - 0.08048779891962962
+      - 0.63067608500351
+      - 0.5170731883938029
+      - 0.02484717017827187
+  - text: least that he was bullied or
+    confidence: 1
+    bbox:
+      - 0.07317074276018254
+      - 0.6654894045783262
+      - 0.6219511904958952
+      - 0.026371060899721077
+  - text: threatened by anyone. just
+    confidence: 1
+    bbox:
+      - 0.07560977292703112
+      - 0.7018163476021806
+      - 0.6146341097556939
+      - 0.030776992936427883
+  - text: that saying certain things
+    confidence: 1
+    bbox:
+      - 0.07317073213715972
+      - 0.7381432900685909
+      - 0.5878048654329978
+      - 0.03077699293642777
+  - text: would come at a cost. He
+    confidence: 1
+    bbox:
+      - 0.07804879358714528
+      - 0.7759838550802922
+      - 0.582926811606197
+      - 0.027795214224775933
+  - text: was right about that, but
+    confidence: 1
+    bbox:
+      - 0.07804877628431606
+      - 0.8107971747651678
+      - 0.5634146480237023
+      - 0.03380423814328959
+  - text: that doesn't make anyone
+    confidence: 1
+    bbox:
+      - 0.07560976019512183
+      - 0.8486377394776322
+      - 0.6000000000000001
+      - 0.02926923769153089
+  - text: that he was dealing with
+    confidence: 1
+    bbox:
+      - 0.07560974889748429
+      - 0.8837209299334379
+      - 0.5585365941969015
+      - 0.030523255903473046
+  - text: evil.
+    confidence: 1
+    bbox:
+      - 0.07804878161901364
+      - 0.9215116276118269
+      - 0.09268292572538732
+      - 0.02616279132431132

@@ -1,0 +1,65 @@
+source: images/2071655202596515843_1_crop.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-12T17:47:02.582Z
+kind: image
+language: en-US
+text: |-
+  Russell Kennington
+  •..
+  Sep 10, 2025 •
+  Uvu has the tightest security. We are safe
+  thank you da to all those that helped us
+  out.
+  33
+blocks:
+  - text: Russell Kennington
+    confidence: 1
+    bbox:
+      - 0.24724853684056886
+      - 0.09151529080557519
+      - 0.42657588299055743
+      - 0.13473637377629522
+  - text: •..
+    confidence: 1
+    bbox:
+      - 0.8609022552631578
+      - 0.18032786827868852
+      - 0.045112781954887216
+      - 0.05737704918032793
+  - text: Sep 10, 2025 •
+    confidence: 1
+    bbox:
+      - 0.2440641473629447
+      - 0.2257459548025358
+      - 0.27502960549261335
+      - 0.11408186740562565
+  - text: Uvu has the tightest security. We are safe
+    confidence: 1
+    bbox:
+      - 0.03383459647556367
+      - 0.4262295067622951
+      - 0.8834586466165414
+      - 0.11475409836065575
+  - text: thank you da to all those that helped us
+    confidence: 1
+    bbox:
+      - 0.029166684768978
+      - 0.5532786873395626
+      - 0.8541666475453771
+      - 0.1285394918723184
+  - text: out.
+    confidence: 1
+    bbox:
+      - 0.03383458759398494
+      - 0.6967213115778688
+      - 0.09022556390977446
+      - 0.09016393442622961
+  - text: "33"
+    confidence: 1
+    bbox:
+      - 0.09774436015037596
+      - 0.8688524593237705
+      - 0.06015037593984962
+      - 0.07377049180327866

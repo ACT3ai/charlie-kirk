@@ -1,0 +1,201 @@
+source: images/2076019571127935010_4.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-12T17:47:06.507Z
+kind: image
+language: en-US
+text: |-
+  FBI Agent Bryan Davis fixed the
+  original booking sheet wiffan
+  affidavit based on hesrsay ®
+  But today they said he was arrested in Washington
+  County so when and where was he mirandized
+  Mirandized at Washington County Sheriff's Office
+  Robinson was read his Miranda rights at 6:25 PM on
+  September 11, 2025, inside the Washington County Sheriff's
+  Office (WCSO) in Hurricane, Utah. Defense filings and the
+  WCSO video exhibit (Bates 3996-R1/R2) document that
+  timestamp, showing him in a "soft interview" room with family
+  present before he was later transferred to Utah County.
+  How it fits the custody timeline
+  • ~9 PM 9/11 - Investigator testimony says Robinson arrived
+  at the WCSO with his parents and a family friend.
+  • 6:25PM 9/11 - Miranda rights read and custody log
+  recorded at WCSO.
+  • 10 PM 9/11 - Utah County booking sheet entry (separate
+  jurisdiction).
+  • 04:009/12 - Utah County affidavit lists formal arrest time
+  after transport to the Utah County Jail.
+  So the Miranda occurred in Washington County, not Utah
+  County, and it predates the later booking/affidavit times.
+  Pa
+blocks:
+  - text: FBI Agent Bryan Davis fixed the
+    confidence: 1
+    bbox:
+      - 0.03321033488952861
+      - 0.0012254905673603211
+      - 0.8948339539524922
+      - 0.04840686274509809
+  - text: original booking sheet wiffan
+    confidence: 1
+    bbox:
+      - 0.051660509062256485
+      - 0.04779411655771326
+      - 0.8523985485421535
+      - 0.05698529411764708
+  - text: affidavit based on hesrsay ®
+    confidence: 1
+    bbox:
+      - 0.07011071656777021
+      - 0.11335784257443182
+      - 0.7915128903968311
+      - 0.04361890110315059
+  - text: But today they said he was arrested in Washington
+    confidence: 1
+    bbox:
+      - 0.029520282139383503
+      - 0.16115196026819678
+      - 0.911439129125292
+      - 0.03799019607843146
+  - text: County so when and where was he mirandized
+    confidence: 1
+    bbox:
+      - 0.029520303684691784
+      - 0.2034313725689133
+      - 0.8321033133153232
+      - 0.027673278369155674
+  - text: Mirandized at Washington County Sheriff's Office
+    confidence: 1
+    bbox:
+      - 0.029520296113854417
+      - 0.2732558142060373
+      - 0.7933579204238463
+      - 0.02637653841691856
+  - text: Robinson was read his Miranda rights at 6:25 PM on
+    confidence: 1
+    bbox:
+      - 0.029520288765161135
+      - 0.3197674421496448
+      - 0.7822878353320921
+      - 0.02906976727878341
+  - text: September 11, 2025, inside the Washington County Sheriff's
+    confidence: 1
+    bbox:
+      - 0.027675278772143288
+      - 0.3517156857580993
+      - 0.9206641841900313
+      - 0.029098267648734244
+  - text: Office (WCSO) in Hurricane, Utah. Defense filings and the
+    confidence: 1
+    bbox:
+      - 0.029520283894038376
+      - 0.38226744215305297
+      - 0.8671586936879381
+      - 0.03197674424040553
+  - text: WCSO video exhibit (Bates 3996-R1/R2) document that
+    confidence: 1
+    bbox:
+      - 0.02952030599608987
+      - 0.4154411759479747
+      - 0.8321033133153232
+      - 0.025122549019607865
+  - text: timestamp, showing him in a "soft interview" room with family
+    confidence: 1
+    bbox:
+      - 0.02567882993205426
+      - 0.44192434374618184
+      - 0.9394268855870327
+      - 0.03580916161630665
+  - text: present before he was later transferred to Utah County.
+    confidence: 1
+    bbox:
+      - 0.02767527022678483
+      - 0.4810049024621277
+      - 0.8376384033963686
+      - 0.024809050793741294
+  - text: How it fits the custody timeline
+    confidence: 1
+    bbox:
+      - 0.029520296744860328
+      - 0.5625000003771335
+      - 0.4999999999999999
+      - 0.026348039215686292
+  - text: • ~9 PM 9/11 - Investigator testimony says Robinson arrived
+    confidence: 1
+    bbox:
+      - 0.025830249713514265
+      - 0.61191860475421
+      - 0.9132841591523073
+      - 0.02616279031716151
+  - text: at the WCSO with his parents and a family friend.
+    confidence: 1
+    bbox:
+      - 0.05904060358530531
+      - 0.6409313729737245
+      - 0.7398523823865849
+      - 0.026348039215686292
+  - text: • 6:25PM 9/11 - Miranda rights read and custody log
+    confidence: 1
+    bbox:
+      - 0.025830261006157568
+      - 0.6816860467320187
+      - 0.8339483433423385
+      - 0.024809050793741183
+  - text: recorded at WCSO.
+    confidence: 1
+    bbox:
+      - 0.059040599059836135
+      - 0.712009803734854
+      - 0.2896678841374002
+      - 0.023455312439039644
+  - text: • 10 PM 9/11 - Utah County booking sheet entry (separate
+    confidence: 1
+    bbox:
+      - 0.025830254779237723
+      - 0.7512254902593014
+      - 0.8819188388337227
+      - 0.025122549019607865
+  - text: jurisdiction).
+    confidence: 1
+    bbox:
+      - 0.05350553228316803
+      - 0.7805232561856025
+      - 0.20110701326269229
+      - 0.02325581335553939
+  - text: • 04:009/12 - Utah County affidavit lists formal arrest time
+    confidence: 1
+    bbox:
+      - 0.025830286155839304
+      - 0.8197674422725253
+      - 0.9151290941089857
+      - 0.0276590281841802
+  - text: after transport to the Utah County Jail.
+    confidence: 1
+    bbox:
+      - 0.059040601976984436
+      - 0.850290697908652
+      - 0.5885608708747079
+      - 0.02470930183635045
+  - text: So the Miranda occurred in Washington County, not Utah
+    confidence: 1
+    bbox:
+      - 0.027675300119324363
+      - 0.9171511629785054
+      - 0.8542434834988317
+      - 0.027701778739106397
+  - text: County, and it predates the later booking/affidavit times.
+    confidence: 1
+    bbox:
+      - 0.02934986269657213
+      - 0.9451727583421026
+      - 0.854525652258567
+      - 0.03372372482337205
+  - text: Pa
+    confidence: 1
+    bbox:
+      - 0.9612546128907941
+      - 0.047965116856335865
+      - 0.03690036880635772
+      - 0.02034883639391738
