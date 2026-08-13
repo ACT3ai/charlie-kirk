@@ -1,0 +1,65 @@
+source: site/internals/static/img/evidence/b332ed6559013e5352978d81e4da3ee1e13c5af6b38876bb0958a0072b6a7acc.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-12T17:50:33.393Z
+kind: image
+language: en-US
+text: |-
+  AMER
+  COMEBALI
+  MER
+  COMFRAC
+  AMER CAN
+  /COMEBACK
+  UVU
+blocks:
+  - text: AMER
+    confidence: 1
+    bbox:
+      - 0.51598837252105
+      - 0.05232558204449789
+      - 0.05668604660034182
+      - 0.030523254394531296
+  - text: COMEBALI
+    confidence: 0.5
+    bbox:
+      - 0.5230239600553347
+      - 0.08216062898119658
+      - 0.09061968994140623
+      - 0.021542327880859413
+  - text: MER
+    confidence: 1
+    bbox:
+      - 0.4549418621875142
+      - 0.17151162800408648
+      - 0.04360464859008789
+      - 0.020348836898803735
+  - text: COMFRAC
+    confidence: 0.5
+    bbox:
+      - 0.45058139757094273
+      - 0.19476744263892354
+      - 0.07994185638427731
+      - 0.01889534759521483
+  - text: AMER CAN
+    confidence: 1
+    bbox:
+      - 0.6538274757027966
+      - 0.17055128785821605
+      - 0.08333341979980469
+      - 0.023723004341125398
+  - text: /COMEBACK
+    confidence: 1
+    bbox:
+      - 0.6496157647722964
+      - 0.1943934843434828
+      - 0.09175684356689451
+      - 0.02400372886657709
+  - text: UVU
+    confidence: 0.5
+    bbox:
+      - 0.19186046502773077
+      - 0.5639534883628845
+      - 0.033430233001709
+      - 0.013081395149231012

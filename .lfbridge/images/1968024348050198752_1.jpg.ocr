@@ -1,0 +1,145 @@
+source: images/1968024348050198752_1.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-12T17:46:56.171Z
+kind: image
+language: en-US
+text: |-
+  FBI IS LYING
+  I DONT WANT TO ANAKE THIS
+  USM C SCOUT SNIPER
+  FBI LICS. NO PRESUMPTIONS
+  4
+  ONLY BALISTICS INCONSISTCHY
+  9 CAMERA ANGLES, ONLY
+  CAN SeC BULLeT FRI
+  *
+  2
+  EAR PILE/ EXET WOUN
+  *
+  EAR /EXIT / ARMOUR
+  FRANK TURK/EAR PI
+  The FBLis
+  LYING
+  MARINES
+blocks:
+  - text: FBI IS LYING
+    confidence: 1
+    bbox:
+      - 0.0448338989151155
+      - 0.010886495961746623
+      - 0.2912308057149251
+      - 0.08306551686039676
+  - text: I DONT WANT TO ANAKE THIS
+    confidence: 1
+    bbox:
+      - 0.046258630894636624
+      - 0.11312361809689664
+      - 0.2912516276041667
+      - 0.04745084444681802
+  - text: USM C SCOUT SNIPER
+    confidence: 1
+    bbox:
+      - 0.04615568376149728
+      - 0.15398760104001874
+      - 0.23459982872009275
+      - 0.04544476049917712
+  - text: FBI LICS. NO PRESUMPTIONS
+    confidence: 1
+    bbox:
+      - 0.04469081332414119
+      - 0.19165725140837564
+      - 0.28418636322021484
+      - 0.05437116622924798
+  - text: "4"
+    confidence: 0.5
+    bbox:
+      - 0.013081395091342185
+      - 0.24289405738903902
+      - 0.01744186083475749
+      - 0.03359172962330015
+  - text: ONLY BALISTICS INCONSISTCHY
+    confidence: 1
+    bbox:
+      - 0.04618272483410551
+      - 0.236292595890373
+      - 0.2972105026245117
+      - 0.05100511268333152
+  - text: 9 CAMERA ANGLES, ONLY
+    confidence: 1
+    bbox:
+      - 0.04303331471802642
+      - 0.28861715563494283
+      - 0.20578034718831378
+      - 0.05523784425523548
+  - text: CAN SeC BULLeT FRI
+    confidence: 1
+    bbox:
+      - 0.04473720771151903
+      - 0.348438668862894
+      - 0.17940149307250977
+      - 0.046728943012378954
+  - text: "*"
+    confidence: 1
+    bbox:
+      - 0.2558139533232874
+      - 0.35142118827240754
+      - 0.008720930417378758
+      - 0.015503876297562225
+  - text: "2"
+    confidence: 1
+    bbox:
+      - 0.011627907009200585
+      - 0.38501291970608564
+      - 0.020348836978276573
+      - 0.04392764833238383
+  - text: EAR PILE/ EXET WOUN
+    confidence: 1
+    bbox:
+      - 0.0430558713117368
+      - 0.38987080229686044
+      - 0.1871454874674479
+      - 0.05480304647375034
+  - text: "*"
+    confidence: 1
+    bbox:
+      - 0.32122093006747343
+      - 0.3824289405204214
+      - 0.008720930417378758
+      - 0.01808785509180144
+  - text: EAR /EXIT / ARMOUR
+    confidence: 1
+    bbox:
+      - 0.03904503339771882
+      - 0.43220447369312454
+      - 0.19082350730895997
+      - 0.045629314140037236
+  - text: FRANK TURK/EAR PI
+    confidence: 1
+    bbox:
+      - 0.04505813839326391
+      - 0.4805555558898107
+      - 0.20203488667805988
+      - 0.0444444444444444
+  - text: The FBLis
+    confidence: 1
+    bbox:
+      - 0.01283423844026587
+      - 0.5238975557902834
+      - 0.4714192390441894
+      - 0.17761407075104885
+  - text: LYING
+    confidence: 1
+    bbox:
+      - 0.03186486258816815
+      - 0.7164817240125283
+      - 0.49300769170125325
+      - 0.24839615998444742
+  - text: MARINES
+    confidence: 1
+    bbox:
+      - 0.8909402885236144
+      - 0.21158785722879458
+      - 0.07567756175994877
+      - 0.03935658490216287

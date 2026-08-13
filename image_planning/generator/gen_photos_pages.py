@@ -521,6 +521,52 @@ def humanize_stem(fp):
     return strip_forbidden_wording(good)
 
 
+# ---------- STABLE PAGE KEYS ACROSS RERUNS ----------
+# An image's page filename is Img_{base}_{sha[:6]}, and {base} is derived from the
+# image's FILE PATH stem — not from the sha alone. So if an entry's file_path ever
+# changes (re-filed, re-downloaded under a new name, or catalogued from a different
+# directory), the computed key changes too. The page is then written under the NEW
+# name while the orphan sweep at the bottom deletes the OLD one. No duplicate is
+# left behind, but the page silently changes URL and loses every word of authored
+# prose, because prose is carried forward by reading the file at the OLD path.
+# The trailing "_x" collision suffix has the same problem: which entry gets the
+# bare key and which gets "_x" depends on iteration order.
+#
+# So: an image that ALREADY has a published page keeps that page's exact key,
+# forever. Only images with no page yet get a freshly computed key. That is what
+# makes repeat runs safe — reruns fill in what is missing and leave everything
+# else where it is.
+# The identity of a published page is the (sha256, node_key) PAIR, not the sha
+# alone — the same image is legitimately filed under more than one cluster and
+# then has one page per cluster. Keying on sha alone makes those pages collide on
+# a single name, which sets up an oscillation: each run deletes one and recreates
+# the other, and the orphan count grows run over run (observed: 5 -> 11 orphans,
+# 90 -> 95 -> 106 "moved", never converging). The pair is also exactly what
+# bind_image_pages.py matches on.
+existing_key_for = {}        # (sha, node_key) -> page key
+existing_path_for = {}       # (sha, node_key) -> absolute page path
+for _dp, _dirs, _files in sorted(os.walk(PHOTOS)):
+    for _fn in sorted(_files):
+        if not _fn.endswith(".mdx") or _fn == "overview.mdx":
+            continue
+        _fp = os.path.join(_dp, _fn)
+        try:
+            with open(_fp, encoding="utf-8") as _f:
+                _head = _f.read(2048)
+        except OSError:
+            continue
+        _ms = re.search(r"^ck_image_sha256:\s*([0-9a-f]{64})\s*$", _head, re.M)
+        _mn = re.search(r"^ck_node_key:\s*(\S+)\s*$", _head, re.M)
+        if _ms and _mn:
+            _pair = (_ms.group(1), _mn.group(1))
+            if _pair not in existing_key_for:   # sorted walk => deterministic
+                existing_key_for[_pair] = os.path.splitext(_fn)[0]
+                existing_path_for[_pair] = _fp
+# Reserve every recorded key up front so a newly computed key can never collide
+# with a page that already exists.
+used_page_keys.update(existing_key_for.values())
+reused_keys = 0
+
 img_pages = []       # dicts describing every image page
 for n in nodes:
     prev = None
@@ -532,10 +578,15 @@ for n in nodes:
         else:
             title = f"{n['title']} — Photo {idx}"
         base = "_".join(re.sub(r"[^A-Za-z0-9]", "", w) for w in good[:3]) or "Photo"
-        key = f"Img_{base}_{sha[:6]}" if sha else f"Img_{base}_{n['key']}_{idx}"
-        while key in used_page_keys:
-            key += "_x"
-        used_page_keys.add(key)
+        pair = (sha, n["key"])
+        if sha and pair in existing_key_for:
+            key = existing_key_for[pair]           # keep the published page
+            reused_keys += 1
+        else:
+            key = f"Img_{base}_{sha[:6]}" if sha else f"Img_{base}_{n['key']}_{idx}"
+            while key in used_page_keys:
+                key += "_x"
+            used_page_keys.add(key)
         pg = {
             "node": n, "img": i, "sha": sha, "key": key, "title": sanitize_prose(title),
             "idx": idx, "file": os.path.join(n["dir"], key + ".mdx"),
@@ -783,7 +834,15 @@ for pg in img_pages:
         src = ipfs
     else:
         src = ""
+    # Prose is carried forward from the page at this path. If the image was
+    # re-filed into a different cluster its page moves directory, so also look at
+    # wherever its page lived on the previous run — otherwise a re-file silently
+    # discards every enrichment pass ever written for that image.
     prior = read_existing(pg["file"])
+    if prior is None and pg["sha"]:
+        _old = existing_path_for.get((pg["sha"], pg["node"]["key"]))
+        if _old:
+            prior = read_existing(_old)
     alt = first_sentence(desc, 160) or pg["title"]
     # JSX attribute value: no backslashes, no double quotes (yq's JSON escapes
     # are invalid inside an MDX/JSX string attribute)
@@ -1291,6 +1350,23 @@ print(f"Static: {copied} copied, {downscaled} downscaled, {skipped} already pres
 print(f"pages.csv: {replaced} rows replaced, {len(merged) - len(csv_rows)} added, total {len(merged)}")
 print(f"Orphan generated files removed: {len(orphans)}")
 print(f"Excluded images: {len(EXCLUDED)} (static copies purged: {len(purged_static)})")
+
+# ---------- rerun-stability report ----------
+# The numbers that answer "did this run duplicate anything?". new_pages should be
+# the only non-zero mover on a routine rerun; renamed should always be 0.
+_new_pages = [pg["file"] for pg in img_pages
+              if pg["sha"] and (pg["sha"], pg["node"]["key"]) not in existing_key_for]
+_renamed = [pg["file"] for pg in img_pages
+            if (pg["sha"], pg["node"]["key"]) in existing_key_for
+            and pg["file"] != existing_path_for.get((pg["sha"], pg["node"]["key"]))]
+print('=' * 28)
+print("RERUN STABILITY")
+print(f"Image pages that already existed and kept their exact key: {reused_keys}")
+print(f"Image pages newly created (had no page before): {len(_new_pages)}")
+print(f"Image pages that MOVED cluster (key kept, prose carried): {len(_renamed)}")
+for _p in _renamed[:10]:
+    print("   MOVED:", os.path.relpath(_p, ROOT))
+print('=' * 28)
 
 # ---------- media-type report: /Photos is still images only ----------
 _by_why = {}

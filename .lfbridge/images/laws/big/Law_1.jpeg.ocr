@@ -1,0 +1,113 @@
+source: images/laws/big/Law_1.jpeg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-12T17:47:51.024Z
+kind: image
+language: en-US
+text: |-
+  NSA
+  CIA
+  FBI
+  Twitter Account:
+  @HolonCitizen
+  UVU
+  A PLACE
+  FOR YOU
+  Force the FBI to Open Its Files
+  Compels DoJ, FBI, and all law enforcement to disclose
+  every record tied to the Charlie Kirk investigation
+  Law #1
+  Charlie Krik Investigation
+blocks:
+  - text: NSA
+    confidence: 1
+    bbox:
+      - 0.27500000065972224
+      - 0.051851852653277186
+      - 0.07916666666666666
+      - 0.07407407173048264
+  - text: CIA
+    confidence: 1
+    bbox:
+      - 0.4709302339725465
+      - 0.05426356674136468
+      - 0.06395348612467444
+      - 0.05943152350837022
+  - text: FBI
+    confidence: 1
+    bbox:
+      - 0.6500000007083333
+      - 0.05925926020422978
+      - 0.0708333333333333
+      - 0.0592592564804294
+  - text: "Twitter Account:"
+    confidence: 1
+    bbox:
+      - 0.8502906983180792
+      - 0.030805687465656373
+      - 0.12063953653971349
+      - 0.028625837434524626
+  - text: "@HolonCitizen"
+    confidence: 1
+    bbox:
+      - 0.8561046510187668
+      - 0.06718346306515555
+      - 0.11046511840820317
+      - 0.025839792043676924
+  - text: UVU
+    confidence: 0.5
+    bbox:
+      - 0.271802325394448
+      - 0.3514211888372103
+      - 0.03633720906575516
+      - 0.031007750904390674
+  - text: A PLACE
+    confidence: 1
+    bbox:
+      - 0.3648255818634743
+      - 0.3590047394687945
+      - 0.023255813598632824
+      - 0.013088283380626065
+  - text: FOR YOU
+    confidence: 1
+    bbox:
+      - 0.36482558196037357
+      - 0.37440758307634714
+      - 0.023255813598632824
+      - 0.013189315795898438
+  - text: Force the FBI to Open Its Files
+    confidence: 1
+    bbox:
+      - 0.031976753477773776
+      - 0.824052132517233
+      - 0.49127905273437494
+      - 0.06483675744296247
+  - text: Compels DoJ, FBI, and all law enforcement to disclose
+    confidence: 1
+    bbox:
+      - 0.04505815596535854
+      - 0.8939573449556721
+      - 0.46366276041666665
+      - 0.0390995260663507
+  - text: every record tied to the Charlie Kirk investigation
+    confidence: 1
+    bbox:
+      - 0.07500000515624985
+      - 0.9259259273477749
+      - 0.4125
+      - 0.04445321864991392
+  - text: "Law #1"
+    confidence: 1
+    bbox:
+      - 0.6729651190464889
+      - 0.7545219632898287
+      - 0.13808139038085943
+      - 0.0671834629293866
+  - text: Charlie Krik Investigation
+    confidence: 1
+    bbox:
+      - 0.5944767539098188
+      - 0.8966408277962369
+      - 0.3677325439453125
+      - 0.06201550180878124

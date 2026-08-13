@@ -1,0 +1,57 @@
+source: site/internals/static/img/evidence/b3fbbd292127708ceebe88042033c758eec988e121fa731eefd9392a60c809fa.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-12T17:50:34.777Z
+kind: image
+language: en-US
+text: |-
+  Object is
+  behind roof
+  edge
+  CANDACE
+  Roof
+  edge
+blocks:
+  - text: Object is
+    confidence: 1
+    bbox:
+      - 0.49986565483142037
+      - 0.7798190606922386
+      - 0.17904775937398282
+      - 0.04504709153710729
+  - text: behind roof
+    confidence: 1
+    bbox:
+      - 0.4958333316145834
+      - 0.8284365153240258
+      - 0.2375
+      - 0.04616998950682061
+  - text: edge
+    confidence: 1
+    bbox:
+      - 0.5000000005264004
+      - 0.8857979513262173
+      - 0.09883720874786373
+      - 0.04538799257868864
+  - text: CANDACE
+    confidence: 1
+    bbox:
+      - 0.826963353220309
+      - 0.43160917360458195
+      - 0.14839887619018555
+      - 0.035756762605649084
+  - text: Roof
+    confidence: 1
+    bbox:
+      - 0.7979651203284719
+      - 0.6251830170794775
+      - 0.15116278330485022
+      - 0.05710102253420535
+  - text: edge
+    confidence: 1
+    bbox:
+      - 0.7965116243572711
+      - 0.7071742321735396
+      - 0.15406977335611982
+      - 0.06734992524634376

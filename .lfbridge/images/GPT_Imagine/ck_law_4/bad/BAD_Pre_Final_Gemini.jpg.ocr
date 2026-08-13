@@ -1,0 +1,65 @@
+source: images/GPT_Imagine/ck_law_4/bad/BAD_Pre_Final_Gemini.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-12T17:47:42.556Z
+kind: image
+language: en-US
+text: |-
+  NSA
+  CIA
+  FBI
+  UVU
+  UTAN
+  VALLEY
+  TRUSTED INVESTIGATORS
+blocks:
+  - text: NSA
+    confidence: 1
+    bbox:
+      - 0.183139534505814
+      - 0.05729166679687503
+      - 0.07558139534883718
+      - 0.05729166666666663
+  - text: CIA
+    confidence: 1
+    bbox:
+      - 0.47529069788275186
+      - 0.05729166654513884
+      - 0.06250000000000006
+      - 0.05729166666666674
+  - text: FBI
+    confidence: 1
+    bbox:
+      - 0.6627906978509136
+      - 0.05729166709449407
+      - 0.06540697674418605
+      - 0.05989583333333326
+  - text: UVU
+    confidence: 0.5
+    bbox:
+      - 0.03633720902374031
+      - 0.4947916667751737
+      - 0.03343023255813954
+      - 0.02343749999999989
+  - text: UTAN
+    confidence: 0.5
+    bbox:
+      - 0.037790697946947664
+      - 0.5208333332031251
+      - 0.021802325581395346
+      - 0.015625
+  - text: VALLEY
+    confidence: 1
+    bbox:
+      - 0.037790698037790685
+      - 0.5364583332356772
+      - 0.02906976744186046
+      - 0.01302083333333337
+  - text: TRUSTED INVESTIGATORS
+    confidence: 1
+    bbox:
+      - 0.6148255796511629
+      - 0.9088541663504465
+      - 0.313953488372093
+      - 0.04427083333333326

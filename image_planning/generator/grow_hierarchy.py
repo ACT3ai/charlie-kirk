@@ -271,7 +271,14 @@ for d, key in SITE_MAP:
 report['stage5'] = stats5
 
 # ---------- Stage 6: page image sweep -> image entries ----------
-other_node = l3_by_key('Other')
+# Fallback bucket for images on pages that map to no node. Look up by the level_3
+# _KEY ('Other_Topics'), not by the site DIRECTORY name ('Other') — SITE_MAP maps
+# the dir 'Other' to the key 'Other_Topics'. Using the dir name returned None and
+# crashed Stage 6 with "'NoneType' object has no attribute 'setdefault'".
+other_node = l3_by_key('Other_Topics')
+if other_node is None:
+    raise SystemExit("grow_hierarchy: level_3 node 'Other_Topics' is missing from "
+                     "images/images.yaml; Stage 6 has no fallback bucket.")
 IMG_RE = [
     re.compile(r'!\[[^\]]*\]\(\s*([^)\s]+)'),
     re.compile(r'<img[^>]*?src=["\']([^"\']+)["\']', re.I),
@@ -465,12 +472,18 @@ def q(s):
     return q_identity(s)
 
 out = []
-out.append('# images.yaml — image evidence hierarchy for the Charlie Kirk site.')
+# Keep this header identical to the one bind_image_pages.py emits — bind runs after
+# grow, so a divergent header here just churns the first 12 lines of a 3 MB file.
+out.append('# images.yaml — master image list / image evidence hierarchy for the Charlie Kirk site.')
+out.append('# Moved 2026-07-22 from image_planning/hierarchy_images.yaml (old name + location dead).')
 out.append('# GENERATED first pass from ~/_Mirror/Politics/Charlie_Kirk_Mi; GROWN by')
 out.append('# p_create_image_hierarchy.md: site Level 2/3/4 pages mirrored in as level_3/4/5')
 out.append('# (level incremented by one), page-embedded images bound in, sidecar file paths')
-out.append('# (.ai_description / .ocr / .transcription) resolved via Large File Bridge mapping.')
-out.append('# cid is intentionally empty (IPFS not assigned yet). sha256 is the identity.')
+out.append('# (.ai_description / .ocr / .transcription) resolved via Large File Bridge mapping,')
+out.append('# and site IPFS embeds (ipfs.io/ipfs/<CID>) bound to entries by sha256 via local IPFS.')
+out.append('# image_page = full path from ~ to the published Level 5 page that hosts that one')
+out.append('# image under site/docs/Photos; "" means no page exists for it yet.')
+out.append('# cid empty = IPFS not assigned yet. sha256 is the identity; ipfs_url entries have no local file.')
 out.append('# Nodes marked needs_split exceed the 12-image ceiling and get split on a later pass.')
 out.append('# site_level_2 = site docs dirs this cluster covers; site_page = the page a node mirrors.')
 
@@ -487,7 +500,23 @@ def emit_media(im, pad):
     for k in keys:
         if k not in inner: continue
         v = inner[k]
-        if k == 'sha256': out.append(f'{p2}{k}: {v if v else chr(34)+chr(34)}')
+        if k == 'ipfs_pinned':
+            out.append(f'{p2}ipfs_pinned: {"true" if v else "false"}')
+        elif k in ('on_pages', 'should_be_on_pages'):
+            # LIST OF {page: ...} MAPPINGS — emit as block mappings. The generic
+            # list branch below would stringify the dicts ("- page': ...") and an
+            # empty list would be dropped entirely; both are stored with an
+            # explicit [] when empty, so [] must round-trip. Keep this identical
+            # to emit_media in bind_image_pages.py. Getting this wrong silently
+            # mangled 1,693 entries on 2026-08-12.
+            if v:
+                out.append(f'{p2}{k}:')
+                for pg in v:
+                    path = pg['page'] if isinstance(pg, dict) else pg
+                    out.append(f'{p2}  - page: {q(path)}')
+            else:
+                out.append(f'{p2}{k}: []')
+        elif k == 'sha256': out.append(f'{p2}{k}: {v if v else chr(34)+chr(34)}')
         elif isinstance(v, list):
             if v: out.append(f'{p2}{k}: [{", ".join(q(x) for x in v)}]')
         elif k in PROSE_FIELDS: out.append(f'{p2}{k}: {q_prose(v)}')

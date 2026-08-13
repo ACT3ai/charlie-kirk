@@ -1,0 +1,49 @@
+source: images/Apple_Podcast_Removed_1793.png
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-12T17:50:01.883Z
+kind: image
+language: en-US
+text: |-
+  CENSORED
+  CHARLIE KIRK
+  1,793 Podcasts
+  Removed from Apple Podcast
+  (of his podcasts of when he was alive
+blocks:
+  - text: CENSORED
+    confidence: 1
+    bbox:
+      - 0.06048079448094343
+      - 0.46794845371528826
+      - 0.18581248438635536
+      - 0.08122443159421278
+  - text: CHARLIE KIRK
+    confidence: 1
+    bbox:
+      - 0.3033261617797847
+      - 0.13326386658717437
+      - 0.6418941852658293
+      - 0.21003477772076917
+  - text: 1,793 Podcasts
+    confidence: 1
+    bbox:
+      - 0.4298864188956398
+      - 0.39277195876676574
+      - 0.38005274395610006
+      - 0.1467477480570475
+  - text: Removed from Apple Podcast
+    confidence: 1
+    bbox:
+      - 0.26598837117620755
+      - 0.5572916661358173
+      - 0.7180232558139535
+      - 0.13802083333333326
+  - text: (of his podcasts of when he was alive
+    confidence: 1
+    bbox:
+      - 0.27906976520510335
+      - 0.7135416672164352
+      - 0.6875
+      - 0.09895833333333337

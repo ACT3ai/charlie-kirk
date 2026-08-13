@@ -1,0 +1,81 @@
+source: images/GPT_Imagine/all_ck_laws/Pre_Final.png
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-12T17:47:26.950Z
+kind: image
+language: en-US
+text: |-
+  NSA
+  CIA
+  MOSSAD
+  UVU
+  UTAH
+  VALLEY
+  UNIVERSITY
+  DIA
+  TRUSTED INVESTIGATORS
+blocks:
+  - text: NSA
+    confidence: 1
+    bbox:
+      - 0.1831395354108032
+      - 0.061855671470085416
+      - 0.07703488181082258
+      - 0.05670102842294489
+  - text: CIA
+    confidence: 1
+    bbox:
+      - 0.34302325714183335
+      - 0.061855671252445066
+      - 0.06395348635586828
+      - 0.05670102842294489
+  - text: MOSSAD
+    confidence: 1
+    bbox:
+      - 0.47383721140003277
+      - 0.06443299026593086
+      - 0.13226743634237625
+      - 0.05412371042174646
+  - text: UVU
+    confidence: 0.5
+    bbox:
+      - 0.036337209395150144
+      - 0.49484536098431575
+      - 0.033430231815319886
+      - 0.02319587618428942
+  - text: UTAH
+    confidence: 0.5
+    bbox:
+      - 0.03779069828116308
+      - 0.5206185571622852
+      - 0.021802324997751338
+      - 0.01546391711872852
+  - text: VALLEY
+    confidence: 1
+    bbox:
+      - 0.03779069880713962
+      - 0.5335051547138316
+      - 0.02906976590316261
+      - 0.015463917118728632
+  - text: UNIVERSITY
+    confidence: 1
+    bbox:
+      - 0.03779069764552907
+      - 0.5489690727165146
+      - 0.03197674317793413
+      - 0.012886597092743868
+  - text: DIA
+    confidence: 1
+    bbox:
+      - 0.6671511633991009
+      - 0.06185567148440385
+      - 0.06395348635586817
+      - 0.05670102842294489
+  - text: TRUSTED INVESTIGATORS
+    confidence: 1
+    bbox:
+      - 0.6148255785957809
+      - 0.9044585977843037
+      - 0.31395349091890323
+      - 0.04399501087812352

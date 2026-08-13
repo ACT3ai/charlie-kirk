@@ -1,0 +1,121 @@
+source: images/laws/big/All_Laws.jpeg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-12T17:47:50.204Z
+kind: image
+language: en-US
+text: |-
+  NSA
+  CIA
+  FBI
+  Twitter Account:
+  @HolonCitizen
+  UVU
+  A PLACE
+  FOR YOU
+  Trusted people will be able to investigate with
+  classified files, classified systems, and with access
+  to government employees. Classified files
+  RELATED to WHO and HOW will become public.
+  4 Laws
+  Charlie Krik Investigation
+blocks:
+  - text: NSA
+    confidence: 1
+    bbox:
+      - 0.27500000065972224
+      - 0.051851852653277186
+      - 0.07916666666666666
+      - 0.07407407173048264
+  - text: CIA
+    confidence: 1
+    bbox:
+      - 0.4709302339725465
+      - 0.05426356674136468
+      - 0.06395348612467444
+      - 0.05943152350837022
+  - text: FBI
+    confidence: 1
+    bbox:
+      - 0.6500000008854165
+      - 0.05925926027830386
+      - 0.07083333333333341
+      - 0.0592592564804294
+  - text: "Twitter Account:"
+    confidence: 1
+    bbox:
+      - 0.8502906983180792
+      - 0.030805687465656373
+      - 0.12063953653971349
+      - 0.028625837434524626
+  - text: "@HolonCitizen"
+    confidence: 1
+    bbox:
+      - 0.8561046510187668
+      - 0.06718346306515555
+      - 0.11046511840820317
+      - 0.025839792043676924
+  - text: UVU
+    confidence: 0.5
+    bbox:
+      - 0.271802325394448
+      - 0.3514211888372103
+      - 0.03633720906575516
+      - 0.031007750904390674
+  - text: A PLACE
+    confidence: 1
+    bbox:
+      - 0.3648255818634743
+      - 0.3590047394687945
+      - 0.023255813598632824
+      - 0.013088283380626065
+  - text: FOR YOU
+    confidence: 1
+    bbox:
+      - 0.36482558196037357
+      - 0.37440758307634714
+      - 0.023255813598632824
+      - 0.013189315795898438
+  - text: Trusted people will be able to investigate with
+    confidence: 1
+    bbox:
+      - 0.041666672430555385
+      - 0.8222222224377498
+      - 0.3458333333333333
+      - 0.03703703586524132
+  - text: classified files, classified systems, and with access
+    confidence: 1
+    bbox:
+      - 0.03052326939816491
+      - 0.8630490953787645
+      - 0.3648255615234375
+      - 0.03387033543880513
+  - text: to government employees. Classified files
+    confidence: 1
+    bbox:
+      - 0.05668605025663146
+      - 0.896640826835794
+      - 0.3110465087890625
+      - 0.03641604473240567
+  - text: RELATED to WHO and HOW will become public.
+    confidence: 1
+    bbox:
+      - 0.029166672777777573
+      - 0.9259259272860465
+      - 0.3666666666666667
+      - 0.04445321864991392
+  - text: 4 Laws
+    confidence: 1
+    bbox:
+      - 0.6671511636554367
+      - 0.7594786735013273
+      - 0.14389534505208335
+      - 0.062226751969323923
+  - text: Charlie Krik Investigation
+    confidence: 1
+    bbox:
+      - 0.45494186440664364
+      - 0.8837209291859722
+      - 0.5145348714192708
+      - 0.0878552983722416

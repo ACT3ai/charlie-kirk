@@ -610,6 +610,67 @@ workspace; site/docs/Fix/ is the published output.
 
 
 
+== Images Are Tracked In Git (never gitignore an image) ==
+
+Image files MUST be committed to the repo. The live site is built by GitHub
+Pages from the repo, not from any one machine, so an image that exists on disk
+but is ignored or untracked renders perfectly in local dev and 404s for every
+real visitor. These directories stay fully tracked:
+
+  {ROOT_DIR}/images/                                   source images
+  {SITE_DIR}/internals/static/img/evidence/            served as /img/evidence/<sha>.jpg
+  {SITE_DIR}/internals/static/img/video_posters/       served as /img/video_posters/...
+
+Videos are the deliberate exception: videos/* stays ignored and is pulled from
+IPFS instead. That rule does NOT extend to images.
+
+Never add a per-file image line to {ROOT_DIR}/.gitignore. The Large File Bridge
+app has done this automatically in the past — it appended ~1,950 per-file lines
+for the three directories above. Those were harmless for files already committed
+(git never un-tracks a tracked file) but silently dropped every NEW image, which
+shipped two broken embeds on the Rifle_Site_Kia_Soul_Turnaround page on
+2026-08-12. All 1,951 lines were removed and a warning banner now sits at the
+bottom of .gitignore. If those lines reappear, Large File Bridge has re-added
+them — delete them again rather than working around them with `git add -f`.
+
+The three legitimate ways to withhold an image:
+
+  {ROOT_DIR}/images/.gitignore        Keep the bytes out of the repo entirely.
+                                      Hand-curated, small, for private material.
+  {BAN_IMAGES_CSV}                    Keep it off the public site (publish-time
+                                      gate — see the next section).
+  image_planning/exclude_images.txt   Legacy sha256 never-publish list.
+
+Before publishing a page that embeds an image, verify both:
+
+  git ls-files --error-unmatch <path>   # must succeed
+  git check-ignore -v <path>            # must produce no output
+
+
+== Never Embed An Image By IPFS Gateway URL ==
+
+An image <img> src must ALWAYS be the local repo path:
+
+  <img src="/img/evidence/{sha256}.jpg" data-cid="{CID}" />
+
+Never src="https://ipfs.io/ipfs/{CID}". Most CIDs in manifest.yaml and videos.yaml
+were produced with `ipfs add -n`, which computes the hash WITHOUT putting the bytes
+on any node — so the gateway 504s for real visitors while the page renders perfectly
+on the machine that happens to hold the file. Keep the CID in data-cid as the
+provenance record; serve the bytes from the repo. Videos are the exception and do
+use the gateway as their primary src.
+
+Repo-wide check that every image is actually reachable by a visitor:
+
+  python3 image_planning/generator/audit_image_publication.py            # fast
+  python3 image_planning/generator/audit_image_publication.py --gateway  # also
+                                     probes remaining ipfs.io <img> embeds
+
+Exit 0 = clean; 1 = at least one image is unserved, on no page, or banned-but-served.
+Banned and privacy-listed images are reported as WITHHELD, never as failures.
+ck_add_text runs this at Step 9H-6b.
+
+
 == Banned Media (ban_images.csv / ban_videos.csv) ==
 
 BAN_IMAGES_CSV is file {ROOT_DIR}/images/ban_images.csv

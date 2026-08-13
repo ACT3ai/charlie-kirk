@@ -1,0 +1,14 @@
+source: images/2082697323193180352_2.jpg
+status: done
+engine: claude-opus-5
+provider: anthropic
+generated: 2026-08-12T18:03:54.104457+00:00
+kind: image
+description: >-
+  ## Overview
+
+  This is a screenshot of one page of an analytical comparison table from a web report, showing findings scored against two competing hypotheses. Each row names a finding with its source citation at the left, then two scored columns — one headed for a rifle (.30-06) hypothesis and one for a shaped-charge hypothesis — each with a coloured progress bar, a score out of 5 and an explanatory note, and a right-hand delta column showing which hypothesis scores higher. Rows visible include “Subarachnoid hemorrhage — cerebellar vermis” (2/5 vs 4/5, SC +2) and “Subarachnoid hemorrhage — parietal regions” (1/5 vs 4/5, SC +3), both cited to the ME Report. A section header reads “ACOUSTIC FINDINGS (11 UCCU Center Recordings, Sept 10 2025)”, under which rows cover a “53 Hz cavity-mode dominant peak (30-60 Hz band)” (3/5 vs 5/5), a “+14.1 dB cavity-to-structural energy ratio” (2/5 vs 5/5), “Low energy above 500 Hz (no Cooper Injury Range signal)” (3/5 vs 3/5, marked EQUAL) and a “104 microsecond rise time (4.9x faster than PETN)” (1/5 vs 4/5). A further section headed “BLAST PHYSICS FRAMEWORK (Published Literature)” lists “Cooper acoustic coupling effect (foam on thorax amplifies injury)” (0/5 vs 5/5, SC +5) and “Courtney thoracic-to-brain TBI mechanism” (2/5 vs 5/5, SC +3). A circular page indicator reads “2 / 3” with up and down scroll arrows. The scores are the report author's assessments.
+
+  ## Objects & Text
+
+  Column headings FINDING / RIFLE (.30-06) / SHAPED CHARGE / DELTA; section headers “ACOUSTIC FINDINGS (11 UCCU Center Recordings, Sept 10 2025)” and “BLAST PHYSICS FRAMEWORK (Published Literature)”; row titles and scores as listed; citations “ME Report, Id. at 3-4”, “UCCU Audio, 11 cameras”, “IMG_6368 (10.1m)”, “Canon XA55 (Video 15)”, “Cooper et al. 1991, J Biomech”, “Courtney & Courtney 2009, Med Hypotheses”; pager “2 / 3”.

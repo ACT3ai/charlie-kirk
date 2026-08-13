@@ -1,0 +1,113 @@
+source: images/laws/big/Law_3.jpeg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-12T17:47:52.600Z
+kind: image
+language: en-US
+text: |-
+  NSA
+  CIA
+  FBI
+  Twitter Account:
+  @HolonCitizen
+  UVU
+  A PLACE
+  FOR YOU
+  Force Real Investigations
+  Mandates FBI, CIA, NSA, and DNI each run independent, funded,
+  good-faith investigations with public reports every six months
+  Law #3
+  Charlie Krik Investigation
+blocks:
+  - text: NSA
+    confidence: 1
+    bbox:
+      - 0.27500000065972224
+      - 0.051851852653277186
+      - 0.07916666666666666
+      - 0.07407407173048264
+  - text: CIA
+    confidence: 1
+    bbox:
+      - 0.4709302339725465
+      - 0.05426356674136468
+      - 0.06395348612467444
+      - 0.05943152350837022
+  - text: FBI
+    confidence: 1
+    bbox:
+      - 0.6500000008854165
+      - 0.05925926027830386
+      - 0.07083333333333341
+      - 0.0592592564804294
+  - text: "Twitter Account:"
+    confidence: 1
+    bbox:
+      - 0.8502906983180792
+      - 0.030805687465656373
+      - 0.12063953653971349
+      - 0.028625837434524626
+  - text: "@HolonCitizen"
+    confidence: 1
+    bbox:
+      - 0.8561046510187668
+      - 0.06718346306515555
+      - 0.11046511840820317
+      - 0.025839792043676924
+  - text: UVU
+    confidence: 0.5
+    bbox:
+      - 0.271802325394448
+      - 0.3514211888372103
+      - 0.03633720906575516
+      - 0.031007750904390674
+  - text: A PLACE
+    confidence: 1
+    bbox:
+      - 0.3648255818634743
+      - 0.3590047394687945
+      - 0.023255813598632824
+      - 0.013088283380626065
+  - text: FOR YOU
+    confidence: 1
+    bbox:
+      - 0.36482558196037357
+      - 0.37440758307634714
+      - 0.023255813598632824
+      - 0.013189315795898438
+  - text: Force Real Investigations
+    confidence: 1
+    bbox:
+      - 0.0770348797518471
+      - 0.8293838864422401
+      - 0.4011628011067708
+      - 0.06753554502369674
+  - text: Mandates FBI, CIA, NSA, and DNI each run independent, funded,
+    confidence: 1
+    bbox:
+      - 0.03333333942708316
+      - 0.8962962966044163
+      - 0.48750000000000004
+      - 0.03703703586524132
+  - text: good-faith investigations with public reports every six months
+    confidence: 1
+    bbox:
+      - 0.050000007708333065
+      - 0.9330568719521233
+      - 0.46249999999999997
+      - 0.037322274881516626
+  - text: "Law #3"
+    confidence: 1
+    bbox:
+      - 0.6724706238031603
+      - 0.751081594921422
+      - 0.1419773559570312
+      - 0.07406420052334028
+  - text: Charlie Krik Investigation
+    confidence: 1
+    bbox:
+      - 0.5944767539098188
+      - 0.8966408277962369
+      - 0.3677325439453125
+      - 0.06201550180878124

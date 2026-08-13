@@ -1,0 +1,41 @@
+source: site/internals/static/img/evidence/7b4c728e80bbaf643e200e73ec79c0cdd6dcdd5be0a4109dcfbd207a008b1ee8.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-12T17:49:57.467Z
+kind: image
+language: en-US
+text: |-
+  Panorama
+  Wed Sep 102025
+  К Я
+  K M
+blocks:
+  - text: Panorama
+    confidence: 1
+    bbox:
+      - 0.4178498976673428
+      - 0.9403794035907859
+      - 0.07707910750507102
+      - 0.016260162601626105
+  - text: Wed Sep 102025
+    confidence: 1
+    bbox:
+      - 0.5496957396551725
+      - 0.9376693769785509
+      - 0.14401622718052742
+      - 0.021680216156047205
+  - text: К Я
+    confidence: 0.3
+    bbox:
+      - 0.7545638948022313
+      - 0.932249322391599
+      - 0.022312373225152116
+      - 0.013550135501354976
+  - text: K M
+    confidence: 0.5
+    bbox:
+      - 0.7545638944320487
+      - 0.9485094850271004
+      - 0.022312373225152116
+      - 0.013550135501354976

@@ -1,0 +1,25 @@
+source: site/internals/static/img/evidence/f9894f19de317433235f8be05b9975c875c8240c32fe265903db4799500f8ea5.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-12T17:50:13.205Z
+kind: image
+language: en-US
+text: |-
+  RREAKING
+  CHARLIE KIRK SHOT ON UVU CAMDIC
+blocks:
+  - text: RREAKING
+    confidence: 1
+    bbox:
+      - 0.03488371944292136
+      - 0.9612403094596518
+      - 0.17441860961914063
+      - 0.03682170613606772
+  - text: CHARLIE KIRK SHOT ON UVU CAMDIC
+    confidence: 1
+    bbox:
+      - 0.24709302496744784
+      - 0.9476744177336622
+      - 0.7514534912109374
+      - 0.05038759867350262

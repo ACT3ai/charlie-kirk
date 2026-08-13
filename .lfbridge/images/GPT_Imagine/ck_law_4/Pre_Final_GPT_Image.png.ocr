@@ -1,0 +1,65 @@
+source: images/GPT_Imagine/ck_law_4/Pre_Final_GPT_Image.png
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-12T17:47:33.570Z
+kind: image
+language: en-US
+text: |-
+  NSA
+  CIA
+  FBI
+  UVU
+  A PLACE
+  FOR YoU
+  TRUSTED INVESTIGATORS
+blocks:
+  - text: NSA
+    confidence: 1
+    bbox:
+      - 0.27083333215945243
+      - 0.05185185262717951
+      - 0.07916666788347598
+      - 0.06666666585675218
+  - text: CIA
+    confidence: 1
+    bbox:
+      - 0.4723837223380542
+      - 0.05412371124832249
+      - 0.06395348635586823
+      - 0.05927835047371577
+  - text: FBI
+    confidence: 1
+    bbox:
+      - 0.6468023263127325
+      - 0.05412371123221427
+      - 0.07267441818018272
+      - 0.05927835047371577
+  - text: UVU
+    confidence: 0.5
+    bbox:
+      - 0.27180232591462
+      - 0.35309278401861954
+      - 0.03633720909009136
+      - 0.02835051421147239
+  - text: A PLACE
+    confidence: 1
+    bbox:
+      - 0.3648255818452221
+      - 0.3577494693526213
+      - 0.023255813635137124
+      - 0.013800424628450103
+  - text: FOR YoU
+    confidence: 1
+    bbox:
+      - 0.3648255818452221
+      - 0.3736730361324503
+      - 0.023255813635137124
+      - 0.012924901998726535
+  - text: TRUSTED INVESTIGATORS
+    confidence: 1
+    bbox:
+      - 0.6124999936080482
+      - 0.8885350315399734
+      - 0.31666667153390404
+      - 0.05220570938855473
