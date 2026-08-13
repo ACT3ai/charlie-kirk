@@ -26,3 +26,9 @@
 ## Status
 - Less documented than dirt/pavers; fewer named sources; treat as emerging claim
 - Distinct from dirt haul and cement pad — different surface (ceiling vs ground)
+
+## Interesting
+
+* The [overhead concrete beside the tent](/Mic/Explosive_Residue_Coverup/ceiling-painted-rainbow-building) is a third resurfaced blast surface.
+* Suspect photos were reportedly released after custody, undercutting the [33-hour manhunt story](/Timeline/kash-patel-manhunt-timeline).
+* The [medical timeline](/Timeline/medical-death-timeline) notes a private SUV instead of an ambulance.

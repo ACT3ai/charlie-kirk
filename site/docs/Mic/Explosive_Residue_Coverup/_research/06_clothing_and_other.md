@@ -23,3 +23,9 @@
 
 ## Pattern for Level 2 TOC growth
 All items share: surface that could hold residue or forensic read of blast vs bullet was removed, restricted, or never tested publicly.
+
+## Interesting
+
+* Two booms, two locations: the [Canon XA55 audio analysis](/Mic/Canon_XA55_Audio) finds zero channel correlation.
+* A downward rifle path should have hit the jaw, per the [trajectory and wound mismatch](/Proof_Not_Tyler/Trajectory_Wound_Mismatch).
+* One witness could find nobody describing a rifle in the [witness and audio conflicts](/Proof_Not_Tyler/Witness_Audio_Conflicts).

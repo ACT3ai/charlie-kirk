@@ -31,3 +31,9 @@
 - /CoverUp/SUV_Destroyed
 - /Mic/suv-transporting-charlie
 - /Mic/burnt-object-rode-transmitter
+
+## Interesting
+
+* The [Canon XA55 audio](/Mic/Canon_XA55_Audio) shows a stronger low-frequency detonation at the tent 185ms later.
+* The record claims an [eastern FBI field office](/FBI/Connecticut) worked a Utah homicide.
+* [Pavers reportedly went in four days later](/FBI/Crime_Scene_Paving), on a Sunday, over the residue-bearing soil.

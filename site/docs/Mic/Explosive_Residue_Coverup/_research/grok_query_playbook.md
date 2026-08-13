@@ -377,3 +377,9 @@ DATE_RUN: {ISO}
 ---
 {raw Grok output}
 ```
+
+## Interesting
+
+* Query the [under-shirt mic routing](/Mic/AV_Team_Mic_Setup) that hid the transmitter from Kirk and security.
+* Kirk called regime change "pathologically insane" in [his own Iran warnings](/Iran/kirk-warnings-quotes).
+* The [12-day war and Operation Midnight Hammer](/Iran/midnight-hammer-12-day-war) ended three months before September 10.
