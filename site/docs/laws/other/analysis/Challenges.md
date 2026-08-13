@@ -30,6 +30,12 @@ Related public pages: [Fix overview](/Fix/overview), [laws landing](/laws), Disc
 
 *This website's author is [@HolonCitizen](https://x.com/HolonCitizen) on X and [YouTube/@HolonCitizen](https://www.youtube.com/@HolonCitizen). Follow me there.*
 
+## Interesting
+
+* The [four-law package](/laws/explain/all/overview) is built to beat the Epstein Act's 12,285-document result.
+* Four storage locations, four authentication problems: [the messages attributed to Robinson](/Tyler_Robinson/Messages/overview).
+* A former NCTC director says [the foreign-ties review](/Tyler_Robinson/Recruited) was ordered stopped.
+
 ## Related Areas
 
 <div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',

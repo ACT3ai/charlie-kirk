@@ -28,6 +28,12 @@ See also: [Law 1 Requirements](/laws/DoJ_FBI/more/Human_Requirements) (law enfor
 
 *This website's author is [@HolonCitizen](https://x.com/HolonCitizen) on X and [YouTube/@HolonCitizen](https://www.youtube.com/@HolonCitizen). Follow me there.*
 
+## Interesting
+
+* [Remaining challenges](/laws/other/analysis/Challenges) log alleged federal discovery obstruction at director level.
+* Tucker Carlson quotes an official's reply on [intel-agency blackmail](/Photos/Unfiled_Backlog/Img_Photo_2face0): I know.
+* A [close-range casing annotation](/Photos/UVU_Venue/Img_Photo_360335) is paired with a hinged corner-firing weapon.
+
 ## Related Areas
 
 <div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',

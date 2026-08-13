@@ -74,6 +74,12 @@ X and court-watchers repeatedly cite **withheld FBI/ATF raw files**, sealed digi
 
 *This website's author is [@HolonCitizen](https://x.com/HolonCitizen) on X and [YouTube/@HolonCitizen](https://www.youtube.com/@HolonCitizen). Follow me there.*
 
+## Interesting
+
+* The [four-law package](/laws/explain/all/overview) answers the Epstein Act's 12,285-document trickle.
+* Charlie reportedly texted that he would be [executed tomorrow](/Before/Political_Pressure_And_Meetings_2025), the night before.
+* An [Egyptian jet's Provo stops](/Before/State-Department-Response) reportedly ran September 4 through 10.
+
 ## Related Areas
 
 <div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',

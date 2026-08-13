@@ -118,3 +118,9 @@ Separately from the legislative effort, the project also seeks to have the defen
 
 # currentDate
 Today's date is 2026-03-10.
+
+## Interesting
+
+* [Fixed problem items](/laws/other/analysis/Fixed/Any_Problems) close the slow-rolling evasion with searchable PDFs.
+* Sharing autopsy images [became a new Utah crime](/Medical/utah_autopsy_law_changes) four months before the killing.
+* A veteran officer said the wound [looked shot from below](/Medical/Witness_Account_Conflicts), not downward.

@@ -59,6 +59,12 @@ $10M budget and 20-agent team requires appropriations.
 
 *This website's author is [@HolonCitizen](https://x.com/HolonCitizen) on X and [YouTube/@HolonCitizen](https://www.youtube.com/@HolonCitizen). Follow me there.*
 
+## Interesting
+
+* Retaliating against a discloser brings treble damages under [Law 1's terms](/laws/DoJ_FBI/more/Output_Analysis).
+* The chain reportedly [dismissed two warning visitors as GOP reps](/UVU/pre-shooting-warnings) that night.
+* A false [suspect in custody alert](/UVU/Campus_Security_Gaps) went out 19 minutes after the shot.
+
 ## Related Areas
 
 <div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',

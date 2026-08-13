@@ -52,3 +52,9 @@ We must assume they will fight uncovering Israel behind the the decider and carr
 
 
 Make sure the claude agent saved out the outputs to the correct one (or more) output files.
+
+## Interesting
+
+* [Law 1's human requirements](/laws/DoJ_FBI/more/Human_Requirements) demand every autopsy photo and destroyed-evidence record.
+* Autopsy records stay sealed, so [track how lawmakers vote](/Vote/overview) on forced disclosure.
+* Why was a [self-described human behavioural expert](/Witnesses/EksAyn-Anderson) reportedly in the reserved front row?

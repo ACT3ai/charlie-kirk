@@ -52,3 +52,9 @@ Make a slide deck only for this law here.
 
 Make sure the claude agent saved out the outputs to the correct one (or more) output files.
 
+
+## Interesting
+
+* [Fixed vulnerabilities](/laws/other/analysis/Fixed/Any_Problems) force OCR-searchable re-production within seven days.
+* Utah's new chief medical examiner [started July 1, 2025](/Medical/Autopsy/medical_examiner_surgeons), weeks before an Israeli-IP search wave.
+* A secondhand claim says an [unfamiliar young woman signed](/Medical/medical_examiner) the autopsy report.

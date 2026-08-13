@@ -1472,6 +1472,12 @@ Precedent: Epstein Files Transparency Act | JFK Records Act
 
 *This website's author is [@HolonCitizen](https://x.com/HolonCitizen) on X and [YouTube/@HolonCitizen](https://www.youtube.com/@HolonCitizen). Follow me there.*
 
+## Interesting
+
+* [Law 1's analysis](/laws/DoJ_FBI/more/Output_Analysis) makes retaliation against a disclosing employee criminal.
+* Candace Owens alleges Charlie feared being [executed tomorrow](/key_individuals/Central_Figures), told via Signal.
+* [George Zinn](/key_individuals/Distraction_And_Early_Suspects) reportedly claimed the shooting to pull attention away.
+
 ## Related Areas
 
 <div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',

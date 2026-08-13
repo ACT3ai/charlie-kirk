@@ -28,3 +28,9 @@ For each slide, include the title text, the points you'll make on there. They do
 
 
 Make sure the claude agent saved out the outputs to the correct one (or more) output files.
+
+## Interesting
+
+* "Slow rolling" records in unusable formats is a real evasion tactic; see [the fixes](/laws/other/analysis/Fixed/Any_Problems).
+* [Maps](/maps/overview) test whether the claimed routes are physically possible in the time allotted.
+* A trespass arrest at 11:30 AM the same morning the [rifle was found in the woods](/maps/wooded-area-rifle-recovery).

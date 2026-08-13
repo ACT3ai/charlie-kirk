@@ -27,6 +27,12 @@ See also: [Law 1 Requirements](/laws/DoJ_FBI/more/Human_Requirements) | [Law 2 R
 
 *This website's author is [@HolonCitizen](https://x.com/HolonCitizen) on X and [YouTube/@HolonCitizen](https://www.youtube.com/@HolonCitizen). Follow me there.*
 
+## Interesting
+
+* [Slow rolling records](/laws/other/analysis/Fixed/Any_Problems) is now countered by mandatory searchable PDFs.
+* TPUSA's own [speaker lineup](/Amfest/speakers-index) closed AmFest 2024 with a Victory or Death call.
+* Attendees reportedly queued for selfies at a [replica of the tent](/Amfest/murder-tent-replica).
+
 ## Related Areas
 
 <div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',

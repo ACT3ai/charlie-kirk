@@ -60,6 +60,12 @@ X and court-watchers repeatedly cite **withheld FBI/ATF raw files**, sealed digi
 
 *This website's author is [@HolonCitizen](https://x.com/HolonCitizen) on X and [YouTube/@HolonCitizen](https://www.youtube.com/@HolonCitizen). Follow me there.*
 
+## Interesting
+
+* [Law 2](/laws/US_Intel/Law_2_US_Intel) names Egyptian tail numbers and UVU jamming Congress would have to explain.
+* Hospital footage never surfaced and [staff reportedly signed NDAs](/CoverUp/Hospital_Footage_And_NDAs).
+* [Fort Huachuca manifests](/CoverUp/Huachuca_Records_Withheld) were withheld and FOIA denied, commentators allege.
+
 ## Related Areas
 
 <div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',

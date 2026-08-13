@@ -1322,6 +1322,12 @@ Precedent: Epstein Files Transparency Act | JFK Records Act
 
 *This website's author is [@HolonCitizen](https://x.com/HolonCitizen) on X and [YouTube/@HolonCitizen](https://www.youtube.com/@HolonCitizen). Follow me there.*
 
+## Interesting
+
+* [Legal notes](/laws/US_Intel/more/Notes_2_US_Intel) warn agencies will resist far harder than DOJ did.
+* The [university-bought house](/After/house/location-and-property) sits a quarter-mile from campus, not three miles.
+* One [early owner](/After/house/prior-owners) died days after the property closed to UVU.
+
 ## Related Areas
 
 <div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',

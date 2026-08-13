@@ -66,6 +66,12 @@ Related public pages: [Fix overview](/Fix/overview), [laws landing](/laws), Disc
 
 *This website's author is [@HolonCitizen](https://x.com/HolonCitizen) on X and [YouTube/@HolonCitizen](https://www.youtube.com/@HolonCitizen). Follow me there.*
 
+## Interesting
+
+* Obstruction allegations and their rebuttals sit together in [the unfixed challenges](/laws/other/analysis/Challenges).
+* Released video of [the tactical roof run](/Roof/tactical-roof-run) begins after the interval that would show assembly.
+* A limp at 11:50 was reportedly gone by 12:22 in the [roof timeline](/Roof/roof-timeline).
+
 ## Related Areas
 
 <div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',

@@ -59,6 +59,12 @@ The major improvement is that Trusted Investigators must specifically pursue the
 
 *This website's author is [@HolonCitizen](https://x.com/HolonCitizen) on X and [YouTube/@HolonCitizen](https://www.youtube.com/@HolonCitizen). Follow me there.*
 
+## Interesting
+
+* [Notes on Law 1](/laws/DoJ_FBI/more/Notes_1_DoJ_FBI) recall 3,500 JFK records withheld with nobody prosecuted.
+* The [full autopsy, FBI 302s and tower dumps](/analysis_documentation/overview) all remain unreleased.
+* A policy on Kirk allegedly carried a [$20M-$50M payout](/Before/Heightened-Political-Tensions).
+
 ## Related Areas
 
 <div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',

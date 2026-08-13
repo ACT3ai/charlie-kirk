@@ -109,6 +109,12 @@ Related public pages: [Fix overview](/Fix/overview), [laws landing](/laws), Disc
 
 *This website's author is [@HolonCitizen](https://x.com/HolonCitizen) on X and [YouTube/@HolonCitizen](https://www.youtube.com/@HolonCitizen). Follow me there.*
 
+## Interesting
+
+* Conclusions must be published even when sources stay protected: [Law 2's output analysis](/laws/US_Intel/more/Output_Analysis).
+* A third-hand call summary describes a [drone-plus-patsy method](/Gov_Mind_Control/making-a-shooter-playbook) also alleged at Butler.
+* A charter-mandated [foreign-ties review was reportedly halted](/government_organizations/overview) once a suspect was held.
+
 ## Related Areas
 
 <div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',

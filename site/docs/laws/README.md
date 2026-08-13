@@ -164,6 +164,12 @@ Related public pages: [Fix overview](/Fix/overview), [laws landing](/laws), Disc
 
 *This website's author is [@HolonCitizen](https://x.com/HolonCitizen) on X and [YouTube/@HolonCitizen](https://www.youtube.com/@HolonCitizen). Follow me there.*
 
+## Interesting
+
+* [Item #182](/laws/other/analysis/Fixed/Any_more_to_Add) concerns a detail member's reported foreign security background.
+* A claim alleges the [autopsy was signed off](/Medical/medical_examiner) while still an editable draft.
+* The treating surgeon was reportedly [a pediatric surgeon with a military residency](/Medical/military_backgrounds_hospital_staff).
+
 ## Related Areas
 
 <div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',

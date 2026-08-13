@@ -328,6 +328,12 @@ Related public pages: [Fix overview](/Fix/overview), [laws landing](/laws), Disc
 
 *This website's author is [@HolonCitizen](https://x.com/HolonCitizen) on X and [YouTube/@HolonCitizen](https://www.youtube.com/@HolonCitizen). Follow me there.*
 
+## Interesting
+
+* Items #166-170 demand records on [an exploding microphone or non-traditional weapon](/laws/other/analysis/Fixed/Challenges).
+* A downward angle should hit face or jaw, not the neck: [perimeter and rooftop failures](/Security_Team/perimeter-rooftop-failures).
+* Six campus officers were [the entire protective layer](/Security_Team/overview), rooftops reportedly uninspected.
+
 ## Related Areas
 
 <div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',

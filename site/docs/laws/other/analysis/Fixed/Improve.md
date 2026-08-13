@@ -231,6 +231,12 @@ Related public pages: [Fix overview](/Fix/overview), [laws landing](/laws), Disc
 
 *This website's author is [@HolonCitizen](https://x.com/HolonCitizen) on X and [YouTube/@HolonCitizen](https://www.youtube.com/@HolonCitizen). Follow me there.*
 
+## Interesting
+
+* Three presidents kept ~3,500 JFK records sealed and nobody was prosecuted: [Law 1's notes](/laws/DoJ_FBI/more/Notes_1_DoJ_FBI).
+* Patel's ["33 hours to justice"](/FBI/Kash_Patel_Briefings) lands hours after Robinson was reportedly already Mirandized.
+* Robinson's father reportedly said the roof footage [did not look like his son](/FBI/Official_Narrative).
+
 ## Related Areas
 
 <div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',

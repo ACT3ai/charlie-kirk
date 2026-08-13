@@ -42,3 +42,9 @@ Non-lawyers and non-politicians need to read the document and understand what is
 
 
 Make sure the claude agent saved out the outputs to the correct one (or more) output files.
+
+## Interesting
+
+* No executive order can suspend the Act under [Law 1's fixed Section 11](/laws/other/analysis/Fixed/Improve).
+* An ATF examiner reportedly could not tie the fragment to the rifle: [.30-06 did not kill Charlie](/Tyler_Robinson_Not_Assassin/thirty-06-did-not-kill-charlie).
+* Investigators point to a [body-adjacent device rather than a rifle round](/technology_surveillance/overview).

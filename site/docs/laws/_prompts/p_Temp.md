@@ -60,3 +60,9 @@ Example_175:
 
 
 Make sure the claude agent saved out the outputs to the correct one (or more) output files.
+
+## Interesting
+
+* Four laws, four different Schedule A counts, and [an attorney flags the loophole](/laws/other/analysis/Improve).
+* The [three people Kirk reportedly warned](/Charlie/Text_Messages/kill-me-09-three-people-warned) have never been identified.
+* His own apologetics mentor says [Kirk wrote "I know they want me dead"](/Charlie/Fear_Kill_Warnings/Other_Fear_Channels/frank-turek-want-me-dead).

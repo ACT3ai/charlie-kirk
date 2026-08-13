@@ -66,6 +66,12 @@
 
 *This website's author is [@HolonCitizen](https://x.com/HolonCitizen) on X and [YouTube/@HolonCitizen](https://www.youtube.com/@HolonCitizen). Follow me there.*
 
+## Interesting
+
+* [Law 1's congressional findings](/laws/DoJ_FBI/Law_1_DoJ_FBI) cite a HADES aircraft circling 35 minutes early.
+* Two men reportedly [warned UVU about a plan](/UVU/pre-shooting-warnings) fourteen hours beforehand.
+* Records show [six officers for 3,000 attendees](/UVU/Campus_Security_Gaps) and no ambulance on site.
+
 ## Related Areas
 
 <div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',

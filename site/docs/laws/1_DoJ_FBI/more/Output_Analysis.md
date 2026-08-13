@@ -68,6 +68,12 @@ X and court-watchers repeatedly cite **withheld FBI/ATF raw files**, sealed digi
 
 *This website's author is [@HolonCitizen](https://x.com/HolonCitizen) on X and [YouTube/@HolonCitizen](https://www.youtube.com/@HolonCitizen). Follow me there.*
 
+## Interesting
+
+* [Law 1's findings](/laws/DoJ_FBI/Law_1_DoJ_FBI) cite roughly a dozen foreign phones at the site.
+* Analysis argues [the neck injury](/Tent/Tent_Shooter_Theories) fits blast, not a distant rifle round.
+* The [tunnel ceiling was reportedly re-mudded](/Tent/Site_Alteration_Evidence), erasing surfaces that carry blast residue.
+
 ## Related Areas
 
 <div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',

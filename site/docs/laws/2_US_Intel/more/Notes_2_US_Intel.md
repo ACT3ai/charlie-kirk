@@ -54,6 +54,12 @@ The dual-track approach:
 
 *This website's author is [@HolonCitizen](https://x.com/HolonCitizen) on X and [YouTube/@HolonCitizen](https://www.youtube.com/@HolonCitizen). Follow me there.*
 
+## Interesting
+
+* The [four-law package](/laws/explain/all/overview) targets Epstein-style token compliance head on.
+* [N888KG](/Planes/N888KG) reportedly went dark for 30-50 minutes with no filed flight plan.
+* The [Pilatus PC-12 entry](/Planes/Pilatus-PC-12) exists precisely to caveat an unverified claim.
+
 ## Related Areas
 
 <div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',

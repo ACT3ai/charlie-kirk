@@ -32,6 +32,12 @@ See also: [Law 1 Requirements](/laws/DoJ_FBI/more/Human_Requirements) | [Law 2 R
 
 *This website's author is [@HolonCitizen](https://x.com/HolonCitizen) on X and [YouTube/@HolonCitizen](https://www.youtube.com/@HolonCitizen). Follow me there.*
 
+## Interesting
+
+* The [four-law package](/laws/explain/all/overview) is built to beat Epstein-style token compliance.
+* [TPUSA's absence](/Timeline/israel-events-pressure-timeline) from a July 31 White House meeting is flagged.
+* Suspect photos were reportedly released [after custody](/Timeline/kash-patel-manhunt-timeline), undercutting the manhunt story.
+
 ## Related Areas
 
 <div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',

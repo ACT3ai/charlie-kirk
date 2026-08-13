@@ -127,6 +127,12 @@ Related public pages: [Fix overview](/Fix/overview), [laws landing](/laws), Disc
 
 *This website's author is [@HolonCitizen](https://x.com/HolonCitizen) on X and [YouTube/@HolonCitizen](https://www.youtube.com/@HolonCitizen). Follow me there.*
 
+## Interesting
+
+* A HADES aircraft circling 35 minutes early is a stated finding in [Law 1](/laws/DoJ_FBI/Law_1_DoJ_FBI).
+* An electrician says the [photo shown Wednesday differed](/FBI/Black_Clothing_Photo) from Thursday's FBI release.
+* Owens reportedly says [bomb dogs were kept out](/FBI/Bomb_Dogs) of certain areas.
+
 ## Related Areas
 
 <div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',

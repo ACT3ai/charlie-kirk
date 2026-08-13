@@ -54,6 +54,12 @@ Previous version had no mechanism for what happens when the investigating agency
 
 *This website's author is [@HolonCitizen](https://x.com/HolonCitizen) on X and [YouTube/@HolonCitizen](https://www.youtube.com/@HolonCitizen). Follow me there.*
 
+## Interesting
+
+* [Law 1's output analysis](/laws/DoJ_FBI/more/Output_Analysis) cuts the disclosure deadline from 90 days to 30.
+* Ballistics posts reportedly [lose impressions instantly](/Censorship/X_Deboosting_Investigators) while official posts stay visible.
+* A [poll about the Kirk narrative](/Censorship/X_Poll_Blocked_Kirk_Narrative) reportedly refused to send at all.
+
 ## Related Areas
 
 <div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',

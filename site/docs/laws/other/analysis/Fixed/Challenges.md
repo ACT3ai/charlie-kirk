@@ -74,6 +74,12 @@ Related public pages: [Fix overview](/Fix/overview), [laws landing](/laws), Disc
 
 *This website's author is [@HolonCitizen](https://x.com/HolonCitizen) on X and [YouTube/@HolonCitizen](https://www.youtube.com/@HolonCitizen). Follow me there.*
 
+## Interesting
+
+* Obstruction becomes a 10-year crime "regardless of rank" under [Law 2's output analysis](/laws/US_Intel/more/Output_Analysis).
+* Donor friction over Kirk's shifting Israel positions is cited among [other theories](/Killer/more-theories).
+* Men detained then quietly released, records reportedly sealed: [alleged patsies](/Killer/Patsies_Distraction_Actors).
+
 ## Related Areas
 
 <div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',

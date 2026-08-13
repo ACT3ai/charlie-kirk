@@ -1351,6 +1351,12 @@ Precedent: Epstein Files Transparency Act | JFK Records Act
 
 *This website's author is [@HolonCitizen](https://x.com/HolonCitizen) on X and [YouTube/@HolonCitizen](https://www.youtube.com/@HolonCitizen). Follow me there.*
 
+## Interesting
+
+* An attorney warns the [mismatched Schedule A counts](/laws/other/analysis/Improve) could gut criminal enforcement.
+* Four red-circled [SUV interior photographs](/Videos/Vid_Exploding_Microphone/Vid_RODE_Mic_SUV/Vid_DiligentDenizen_Candace_Owens_SUV_2070615) show fragments said to resemble device debris.
+* [Scanner traffic](/Videos/Vid_Law_Enforcement/Vid_Police_Scanner_Record/Vid_Iluminomoly_Police_Scanner_Breakdown_2075191) reportedly carries a hospital report the hospital later denied.
+
 ## Related Areas
 
 <div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',

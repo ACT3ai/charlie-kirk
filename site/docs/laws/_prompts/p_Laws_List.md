@@ -27,3 +27,9 @@ Be succinct.
 
 
 Make sure the claude agent saved out the outputs to the correct one (or more) output files.
+
+## Interesting
+
+* An attorney warns the [mismatched Schedule A counts](/laws/other/analysis/Improve) could gut criminal enforcement.
+* The ["yellow plane" SU-BTT](/Planes/SU-BTT) reportedly went dark, then reactivated 17 minutes after the shot.
+* A whole cluster of [Egyptian government jets](/Planes/SU-BTU) rotated through one small Utah airport.

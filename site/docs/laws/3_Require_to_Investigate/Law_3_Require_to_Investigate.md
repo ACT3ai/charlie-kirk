@@ -1649,6 +1649,12 @@ Precedent: Epstein Files Transparency Act | JFK Records Act
 
 *This website's author is [@HolonCitizen](https://x.com/HolonCitizen) on X and [YouTube/@HolonCitizen](https://www.youtube.com/@HolonCitizen). Follow me there.*
 
+## Interesting
+
+* An [added disclosure item](/laws/other/analysis/Fixed/Any_more_to_Add) covers alleged witness suppression right after the shooting.
+* A [K9 track through 785 College Dr](/Suspects/Suspects_Investigation_Index) reportedly ended in a photo mismatch.
+* [Joe Kent](/Suspects/overview) says the parallel search for foreign ties was ordered stopped.
+
 ## Related Areas
 
 <div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',

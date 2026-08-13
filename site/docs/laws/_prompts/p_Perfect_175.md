@@ -42,3 +42,9 @@ Example_175:
 
 
 Make sure the claude agent saved out the outputs to the correct one (or more) output files.
+
+## Interesting
+
+* [Law 2](/laws/US_Intel/Law_2_US_Intel) names the exact Egyptian tail numbers Congress would have to explain.
+* Spy plane N1098L was reportedly overhead in the [US intelligence theory](/Killer/us-intelligence).
+* Hearing summaries list [Orem PD among investigating agencies](/Law_Enforcement/orem-police-response), against the public line.

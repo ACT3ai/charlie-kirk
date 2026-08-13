@@ -117,6 +117,12 @@ Related public pages: [Fix overview](/Fix/overview), [laws landing](/laws), Disc
 
 *This website's author is [@HolonCitizen](https://x.com/HolonCitizen) on X and [YouTube/@HolonCitizen](https://www.youtube.com/@HolonCitizen). Follow me there.*
 
+## Interesting
+
+* Findings in [Law 1](/laws/DoJ_FBI/Law_1_DoJ_FBI) cite roughly 12 foreign-registered phones at the site.
+* Fear messages the day before reportedly went over Signal: [the September 9 cluster](/Charlie/Fear_Kill_Warnings/Other_Fear_Channels/sept-9-kill-me-cluster).
+* Open Israel-policy friction is on video in the [September 9 Shapiro appearance](/Charlie/Comments/sept-9-shapiro-appearance).
+
 ## Related Areas
 
 <div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',

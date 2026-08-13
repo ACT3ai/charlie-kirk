@@ -32,3 +32,9 @@ Anything that's greatly, overly broad. Either in the people that have to comply 
 
 
 Make sure the claude agent saved out the outputs to the correct one (or more) output files.
+
+## Interesting
+
+* [Candace Owens' obstruction allegation](/laws/other/analysis/Challenges) is recorded alongside the counterargument.
+* A [high-speed ballistic gel head test](/Videos/Vid_Ballistics_Gun/Vid_Ballistics_Analysis/Vid_2026310419405504514_2026310) shows what the stage footage never showed.
+* Hospital and examiner [search clusters from Israel-side IPs](/Videos/Vid_Google_Searches/Vid_Search_Trend_Evidence/Vid_Project_Constitution_ISRAELI_IP_1977626) predate the shooting.
