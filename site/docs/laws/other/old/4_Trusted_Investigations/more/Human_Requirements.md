@@ -32,6 +32,12 @@ See also: [Law 1 Requirements](/laws/DoJ_FBI/more/Human_Requirements) | [Law 2 R
 
 *This website's author is [@HolonCitizen](https://x.com/HolonCitizen) on X and [YouTube/@HolonCitizen](https://www.youtube.com/@HolonCitizen). Follow me there.*
 
+## Interesting
+
+* The requirements demand [autopsy video and records on anyone more involved](/laws/DoJ_FBI/more/Output_Analysis) than the accused.
+* Thousands of pagers detonated at once in 2024 after [explosives were built in during manufacture](/Israel/Operation_Grim_Beeper).
+* [PETN slivers](/Israel/petn) can hide inside a battery compartment without changing how a device looks or works.
+
 ## Related Areas
 
 <div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',

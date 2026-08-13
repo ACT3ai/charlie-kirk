@@ -338,6 +338,12 @@ Related public pages: [Fix overview](/Fix/overview), [laws landing](/laws), Disc
 
 *This website's author is [@HolonCitizen](https://x.com/HolonCitizen) on X and [YouTube/@HolonCitizen](https://www.youtube.com/@HolonCitizen). Follow me there.*
 
+## Interesting
+
+* The disclosure list grew to include [Item #182 on a security detail background](/laws/other/analysis/Fixed/Any_more_to_Add), plus witness-intimidation items.
+* Research notes flag [memorial domain searches from Arizona and Israel](/Media/Vance-Mission-Continuation) before the killing.
+* The world's default account of the case is [a single edited Wikipedia page](/Media/Wikipedia-Coverage), with forensic disputes quarantined.
+
 ## Related Areas
 
 <div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',

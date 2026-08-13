@@ -30,3 +30,9 @@ Date: 2026-07-29
 - Keep lab facts as facts.
 - Keep operational B2B as **alleged** / **discussed on X** / **whistleblower testimony** unless declassified.
 - User thesis: readers should understand why IC would want this stack even when government “has not formally announced.”
+
+## Interesting
+
+* [BrainNet moved a decision between three people](/Consciousness_Control/brain-to-brain-communications) at roughly 81% accuracy in 2018.
+* One attributed theory has the [mic pack's lithium cell going into runaway](/Mic/lipo-battery-short-charge), throwing fragments.
+* The SEAL who shot bin Laden said on air, ["that looks like an explosion to me"](/Mic/rob-oneill-navy-seal-testimony).

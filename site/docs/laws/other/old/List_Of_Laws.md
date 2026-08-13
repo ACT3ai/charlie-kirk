@@ -147,6 +147,12 @@ The named investigators face no financial disclosure requirements, recusal stand
 
 *This website's author is [@HolonCitizen](https://x.com/HolonCitizen) on X and [YouTube/@HolonCitizen](https://www.youtube.com/@HolonCitizen). Follow me there.*
 
+## Interesting
+
+* The laws demand [records on whether an exploding microphone was involved](/laws/other/analysis/Fixed/Challenges), leaving the mechanism open.
+* Carlson used Kirk's own stage to say [taking AIPAC money is America-last](/Amfest/tucker-aipac-speech).
+* Grayzone reporting describes [a donor weekend that "went off the rails"](/Amfest/tucker-invitation-fight) and talk of blackmail.
+
 ## Related Areas
 
 <div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',

@@ -174,6 +174,12 @@ This Act shall take effect immediately upon enactment.
 
 *This website's author is [@HolonCitizen](https://x.com/HolonCitizen) on X and [YouTube/@HolonCitizen](https://www.youtube.com/@HolonCitizen). Follow me there.*
 
+## Interesting
+
+* Congressional findings cite [foreign-registered phones and a HADES aircraft circling](/laws/DoJ_FBI/Law_1_DoJ_FBI) before the shooting.
+* An internal note records [the working premise about a rented Orem house](/After/house/CLAUDE).
+* UVU's own board called that property ["contiguous to campus"](/After/house/location-and-property), a quarter-mile away, not three miles.
+
 ## Related Areas
 
 <div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',

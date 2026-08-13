@@ -54,6 +54,12 @@ Previous version had no mechanism for what happens when the investigating agency
 
 *This website's author is [@HolonCitizen](https://x.com/HolonCitizen) on X and [YouTube/@HolonCitizen](https://www.youtube.com/@HolonCitizen). Follow me there.*
 
+## Interesting
+
+* Refusing a forensic audit is now criminal, because [agencies say records were "lost"](/laws/other/analysis/Fixed/Laws_Not_Complying) instead of withheld.
+* Commentators allege [federal obstruction of defense access to the weapon and phone](/legal_investigation/overview).
+* Whole [categories of evidence](/Legal/Assassination-Investigation) have still never been shown to the public.
+
 ## Related Areas
 
 <div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',

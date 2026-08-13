@@ -59,6 +59,12 @@ The major improvement is that Trusted Investigators must specifically pursue the
 
 *This website's author is [@HolonCitizen](https://x.com/HolonCitizen) on X and [YouTube/@HolonCitizen](https://www.youtube.com/@HolonCitizen). Follow me there.*
 
+## Interesting
+
+* The list demands [every autopsy photo and FD-302 report](/laws/DoJ_FBI/more/Human_Requirements), plus destroyed-evidence records.
+* Investigators treat [the message about leaving the pro-Israel cause](/Charlie/Fear_Kill_Warnings/Sept_48_Hours_Donor_Texts/leave-pro-israel-cause-line) as the motive hinge.
+* A security contractor says he called 911, yet [no matching call record has surfaced](/Charlie/Phone_Calls/missing-911-harpole).
+
 ## Related Areas
 
 <div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',

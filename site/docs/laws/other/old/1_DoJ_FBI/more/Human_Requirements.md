@@ -56,6 +56,12 @@ critical investigative information from the public.
 
 *This website's author is [@HolonCitizen](https://x.com/HolonCitizen) on X and [YouTube/@HolonCitizen](https://www.youtube.com/@HolonCitizen). Follow me there.*
 
+## Interesting
+
+* The Epstein Files Act passed 427-1 yet produced almost nothing, which is why [four laws were drafted](/laws/explain/all/overview).
+* The evidence is [ranked, not just listed](/Topics3/Which/overview), with foreign aircraft and drones at the top.
+* Investigators at the January 2026 hearing say [the family told them he did not do this](/Tyler_Robinson/Family).
+
 ## Related Areas
 
 <div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',

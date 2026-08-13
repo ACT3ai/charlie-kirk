@@ -25,6 +25,12 @@ See also: [Law 1 Requirements](/laws/DoJ_FBI/more/Human_Requirements) | [Law 2 R
 
 *This website's author is [@HolonCitizen](https://x.com/HolonCitizen) on X and [YouTube/@HolonCitizen](https://www.youtube.com/@HolonCitizen). Follow me there.*
 
+## Interesting
+
+* Agencies withheld JFK records for decades, and [no official was ever prosecuted](/laws/DoJ_FBI/more/Notes_1_DoJ_FBI).
+* Materials place [Robinson Mirandized before the sheriff call and the Discord confession](/Tyler_Robinson/Surrender), with no bodycam found.
+* The state's biggest message exhibit came from [a roommate's phone, extracted by an Israeli firm](/Tyler_Robinson/Messages/text-messages-twiggs).
+
 ## Related Areas
 
 <div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',

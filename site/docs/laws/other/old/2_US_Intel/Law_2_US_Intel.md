@@ -180,6 +180,12 @@ This Act shall take effect immediately upon enactment. Records preservation requ
 
 *This website's author is [@HolonCitizen](https://x.com/HolonCitizen) on X and [YouTube/@HolonCitizen](https://www.youtube.com/@HolonCitizen). Follow me there.*
 
+## Interesting
+
+* An attorney warns [four mismatched Schedule A counts](/laws/other/analysis/Improve) could gut criminal enforcement under the rule of lenity.
+* Surveillance stills reportedly show [a pronounced limp that vanishes at 12:22](/Tyler_Robinson/Tyler_9_10_2025).
+* Independent audio-visual analyses [place the shot far closer than the rooftop](/Tyler_Robinson/Shooting/overview).
+
 ## Related Areas
 
 <div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',

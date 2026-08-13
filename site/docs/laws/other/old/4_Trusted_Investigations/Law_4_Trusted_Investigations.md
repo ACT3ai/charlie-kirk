@@ -178,6 +178,12 @@ This Act shall take effect immediately upon enactment.
 
 *This website's author is [@HolonCitizen](https://x.com/HolonCitizen) on X and [YouTube/@HolonCitizen](https://www.youtube.com/@HolonCitizen). Follow me there.*
 
+## Interesting
+
+* Section 11 now [flips the burden on executive privilege](/laws/other/analysis/Fixed/Improve) with 14-day judicial review.
+* A sitting member of Congress is documented [publicly questioning the official account](/US_Intelligence_Assisted/overview).
+* Video analysts argue [the clipped-on RØDE mic was the energy source](/US_Intelligence_Assisted/rode-mic).
+
 ## Related Areas
 
 <div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',

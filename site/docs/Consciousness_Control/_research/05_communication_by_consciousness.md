@@ -15,3 +15,9 @@ Date: 2026-07-29
 - Give pure no-channel claims a labeled speculative home.
 - Point readers to frey-effect-v2k and B2B for physical-channel claims.
 - Do not use consciousness telepathy as UVU mechanism without evidence.
+
+## Interesting
+
+* A [blunt comparison table](/Consciousness_Control/_research/03_brain_to_brain) separates consented lab links from alleged operational systems.
+* The court admitted the [medical examiner report but ordered it not published](/Medical/charlie_kirk_medical_examiner_report).
+* Utah's [new chief medical examiner started July 1, 2025](/Medical/Autopsy/medical_examiner_surgeons), weeks before an Israeli-IP search wave.

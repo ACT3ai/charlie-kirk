@@ -54,6 +54,12 @@ The dual-track approach:
 
 *This website's author is [@HolonCitizen](https://x.com/HolonCitizen) on X and [YouTube/@HolonCitizen](https://www.youtube.com/@HolonCitizen). Follow me there.*
 
+## Interesting
+
+* The laws treat the mechanism of death as open, demanding [records on an exploding microphone](/laws/other/analysis/Fixed/Challenges).
+* One claim holds [the operating surgeon was a pediatric surgeon with a military residency](/Medical/military_backgrounds_hospital_staff).
+* Charlie kept hold of the microphone after the bang, which raises [the missing spinal cord question](/Medical/missing_spinal_cord_question).
+
 ## Related Areas
 
 <div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',

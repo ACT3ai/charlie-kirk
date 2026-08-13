@@ -618,3 +618,9 @@ search the owning body's **trustee/regents/council agendas** early.
 * `<query>` — `<why it failed>`
 
 **Best-yield lesson:** `<one line>`
+
+## Interesting
+
+* The [courtyard repaving](/After/Site_Changes_And_Crime_Scene_Handling) reportedly went to a firm revived months before the shooting.
+* A press coalition asked the obvious at the [March 2026 seal hearing](/court/Days_in_Court/2026-03-10-seal-motion): why seal exculpatory ATF material?
+* An OCR'd exhibit says Robinson was [Mirandized and had invoked counsel](/court/mirandize/sept-11-grok-image) hours before the official surrender.

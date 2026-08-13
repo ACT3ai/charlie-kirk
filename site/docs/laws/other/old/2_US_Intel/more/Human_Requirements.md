@@ -26,6 +26,12 @@ See also: [Law 1 Requirements](/laws/DoJ_FBI/more/Human_Requirements) (law enfor
 
 *This website's author is [@HolonCitizen](https://x.com/HolonCitizen) on X and [YouTube/@HolonCitizen](https://www.youtube.com/@HolonCitizen). Follow me there.*
 
+## Interesting
+
+* Nearly 5% of JFK records were still redacted in 2025, a warning [these notes take seriously](/laws/US_Intel/more/Notes_2_US_Intel).
+* After the pager operation, one commentator wrote that [one man killed by a bullet is child's play](/Israel/Mossad).
+* A former representative reportedly claims [a foreign service had people inside Kirk's own organization](/Israel/Mossad_TPUSA/overview) for years.
+
 ## Related Areas
 
 <div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',

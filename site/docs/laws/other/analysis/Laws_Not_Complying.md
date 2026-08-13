@@ -487,6 +487,12 @@ Related public pages: [Fix overview](/Fix/overview), [laws landing](/laws), Disc
 
 *This website's author is [@HolonCitizen](https://x.com/HolonCitizen) on X and [YouTube/@HolonCitizen](https://www.youtube.com/@HolonCitizen). Follow me there.*
 
+## Interesting
+
+* Candace Owens has alleged [discovery obstruction at director level](/laws/other/analysis/Challenges), and the rebuttal is preserved too.
+* The rooftop runner reportedly [started sprinting two seconds before impact](/Suspects/Shooting_Locations).
+* A crowd-sourced thread identified ["van man" by earrings in old family photos](/Suspects/Van_Man_Bednarz) — an identification the page questions.
+
 ## Related Areas
 
 <div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',

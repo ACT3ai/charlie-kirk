@@ -64,6 +64,12 @@ DOJ will resist even after signing.
 
 *This website's author is [@HolonCitizen](https://x.com/HolonCitizen) on X and [YouTube/@HolonCitizen](https://www.youtube.com/@HolonCitizen). Follow me there.*
 
+## Interesting
+
+* The requirements demand [all autopsy photos and every FD-302](/laws/DoJ_FBI/more/Human_Requirements), plus records of destroyed evidence.
+* Carlson appeared on Kirk's show hours before UVU and says [his friends blame Israel politics](/Israel/Tucker_Carlson_Israel).
+* OSINT threads report [Israeli-IP search spikes for defense counsel and a surgeon](/key_individuals/Medical_Legal_Periphery) at odd dates.
+
 ## Related Areas
 
 <div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',

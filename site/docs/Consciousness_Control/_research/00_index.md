@@ -31,3 +31,9 @@ Audience framing (user): Intelligence services possess brain-to-brain / consciou
 3. Formal IC narrative fights attribution (2023 “very unlikely foreign adversary”) while Congress funded HAVANA Act injuries.
 4. X discourse treats operational V2K / synthetic telepathy / B2B as active now; government has not formally announced that level of capability.
 5. Investigation relevance: if voices/commands can be injected or behavior shaped, a political shooting can be staged or steered so the public sees only a “crazy” shooter — classic cover. No public court evidence ties this to UVU 2025; the section teaches the capability stack so readers can weigh the question.
+
+## Interesting
+
+* A 1994 Air Force paper on [pulsed energy to "control emotions and thus actions"](/Consciousness_Control/cia-darpa-havana-mind-control) is genuine.
+* The scene was reportedly [paved over within days](/US_Intelligence_Assisted/signs-of-cover-up), and the SUV disposed of.
+* The [unsigned Discord "confession"](/US_Intelligence_Assisted/faked-confession) reportedly conflicts with the custody timeline.

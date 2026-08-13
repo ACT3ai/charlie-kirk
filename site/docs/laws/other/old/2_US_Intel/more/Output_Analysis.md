@@ -66,6 +66,12 @@
 
 *This website's author is [@HolonCitizen](https://x.com/HolonCitizen) on X and [YouTube/@HolonCitizen](https://www.youtube.com/@HolonCitizen). Follow me there.*
 
+## Interesting
+
+* Three presidents reportedly kept [3,500 JFK records withheld past the deadline](/laws/DoJ_FBI/more/Notes_1_DoJ_FBI), with nobody prosecuted.
+* A chain of warnings ends with ["They're going to kill me" that evening](/Charlie/Star_Witness_Own_Words), per one account.
+* Owens says [three people were warned](/Charlie/Text_Messages/kill-me-09-three-people-warned), yet none has ever been publicly named.
+
 ## Related Areas
 
 <div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',

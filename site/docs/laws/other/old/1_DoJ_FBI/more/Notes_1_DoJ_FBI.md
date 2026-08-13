@@ -70,6 +70,12 @@ This approach draws from the Epstein Act's enumeration of specific record catego
 
 *This website's author is [@HolonCitizen](https://x.com/HolonCitizen) on X and [YouTube/@HolonCitizen](https://www.youtube.com/@HolonCitizen). Follow me there.*
 
+## Interesting
+
+* The disclosure clock was [cut from 90 days to 30](/laws/DoJ_FBI/more/Output_Analysis), with treble damages for retaliation.
+* Tucker Carlson says on tape Kirk was [most likely murdered over his shifting Israel views](/Videos/Vid_Israel_Main_Suspect/Vid_Charlie_Changing_Israel/Vid_Partisangirl_Tucker_Carlson_Those_2068463).
+* Stew Peters claims [open-source search results vanished overnight](/Videos/Vid_Cover_Up_Possible/Vid_Vanished_Open_Source/Vid_Realstewpeters_Stew_Peters_Claims_2077840) when he tried to reproduce them live.
+
 ## Related Areas
 
 <div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
