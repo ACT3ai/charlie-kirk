@@ -76,14 +76,46 @@ def docs_text():
 
 
 def served_map():
-    """sha256 -> list of site-root-relative URLs that serve those exact bytes."""
-    m = {}
+    """Map every served static image, two ways. Returns (exact, named).
+
+      exact — sha256 -> URLs whose BYTES hash to that sha. The
+              banned-but-still-served check may use ONLY this one: a ban is
+              about specific bytes not reaching the public, and matching on
+              filename instead would let a banned image pass by being renamed.
+      named — sha256 -> URLs named <sha>.<ext> whatever their bytes. Used only
+              for the is-it-on-a-page check.
+
+    Both are needed, for opposite reasons.
+
+    A sha-NAMED derivative is still that image for placement purposes:
+    gen_photos_pages.py downscales large images and writes the result as
+    <sha256>.jpg even when the source was a .png, so the bytes differ but that
+    is the URL the generated page actually embeds. Matching placement on bytes
+    alone reported Apple_Podcast_Removed_1793.png (6.6 MB, served as <sha>.jpg)
+    as "served but on no page" while it was live and on a page.
+
+    But a sha-named derivative is NOT the same bytes for ban purposes. A
+    REDACTED derivative is deliberately stored under the ORIGINAL image's
+    sha-named filename: 2724a3_composite_ORIGINAL_PRIVATE.jpg is privacy-listed
+    and never published, while the file served at <its sha>.jpg has the handles
+    replaced with [REDACTED] and the person's photo replaced with
+    [PHOTO REMOVED BY THIS SITE]. That is a legitimate publication. Folding the
+    two maps together flagged that safe redaction as a privacy breach.
+
+    Both false positives were observed on 2026-08-12. Keep the maps separate.
+    """
+    exact, named = {}, {}
     for root, _, files in os.walk(STATIC):
         for f in files:
-            if f.lower().endswith(IMG_EXT):
-                p = os.path.join(root, f)
-                m.setdefault(sha_of(p), []).append('/' + os.path.relpath(p, STATIC))
-    return m
+            if not f.lower().endswith(IMG_EXT):
+                continue
+            p = os.path.join(root, f)
+            url = '/' + os.path.relpath(p, STATIC)
+            exact.setdefault(sha_of(p), []).append(url)
+            stem = os.path.splitext(f)[0]
+            if re.fullmatch(r'[0-9a-f]{64}', stem):
+                named.setdefault(stem, []).append(url)
+    return exact, named
 
 
 def gateway_ok(cid):
@@ -97,7 +129,7 @@ def gateway_ok(cid):
 def main():
     probe = '--gateway' in sys.argv
     banned, private = ban_set(), privacy_set()
-    text, served = docs_text(), served_map()
+    text, (served, named) = docs_text(), served_map()
 
     unserved, unplaced, withheld, ok = [], [], [], []
     for f in sorted(os.listdir(SRC_DIR)):
@@ -114,8 +146,11 @@ def main():
         if h not in served:
             unserved.append((f, h, 'no copy under site/internals/static/'))
             continue
-        if not any(u in text for u in served[h]):
-            unplaced.append((f, h, served[h][0]))
+        # Placement counts byte-identical copies AND sha-named derivatives
+        # (gen_photos_pages downscales large images to <sha>.jpg).
+        urls = served[h] + [u for u in named.get(h, []) if u not in served[h]]
+        if not any(u in text for u in urls):
+            unplaced.append((f, h, urls[0]))
             continue
         ok.append(f)
 
