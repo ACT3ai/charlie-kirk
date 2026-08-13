@@ -121,3 +121,7 @@ Research/NAME_MAPPING.json
 #
 # Videos are the exception: videos/* stays ignored on purpose (pulled from IPFS).
 # ============================================================================
+
+# Python bytecode caches — build artifacts, never committed.
+__pycache__/
+*.pyc
