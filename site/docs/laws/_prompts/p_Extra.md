@@ -54,9 +54,3 @@ EXTRA LIST:
 
 
 Make sure the claude agent saved out the outputs to the correct one (or more) output files.
-
-## Interesting
-
-* [Law 1's rewritten Section 11](/laws/other/analysis/Fixed/Improve) puts executive privilege on a 14-day clock.
-* Searches for [defense counsel Kathryn Nester's name](/Tyler_Robinson/Trial/overview) reportedly spiked from foreign IPs beforehand.
-* Evidence photos show [Lance Twiggs drawings](/Tyler_Robinson/lance-twiggs-drawings) held bare-handed, no gloves.

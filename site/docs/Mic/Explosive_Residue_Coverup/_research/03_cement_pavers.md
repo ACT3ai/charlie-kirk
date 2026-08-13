@@ -31,9 +31,3 @@
 - /Tent/Daniel_Merrell_Hardscape_Utah
 - /Tent/Hardscape_Specialties
 - /UVU/Pavers
-
-## Interesting
-
-* A [burnt object in the SUV](/Mic/burnt-object-rode-transmitter) reportedly bears a fragment of a RODE battery label.
-* The [analysis documentation index](/analysis_documentation/overview) notes the full autopsy and FBI 302s remain unreleased.
-* Charlie reportedly texted that he would be ["executed tomorrow"](/Before/Political_Pressure_And_Meetings_2025) the night before.

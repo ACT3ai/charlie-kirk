@@ -86,7 +86,7 @@ Six independent teams may duplicate effort.
 ## Interesting
 
 * "Slow rolling" records into unusable formats is [now countered by mandatory searchable PDFs](/laws/other/analysis/Fixed/Any_Problems).
-* A memo dated eight days before the killing reportedly shows [Kirk replacing his COO and ordering an audit](/TPUSA/charlie-replace-coo).
+* A memo eight days before reportedly had [Kirk replacing his COO](/TPUSA/charlie-replace-coo).
 * One clip claims the accused [met a TPUSA representative three hours before the shot](/TPUSA/tpusa-tyler-robinson-chat).
 
 ## Related Areas

@@ -38,9 +38,3 @@ Purpose: Stage sources for page improvements. Engagement counts as of harvest.
 - https://x.com/TheEmmapreneur/status/1871031433050915299
 - https://x.com/RedpillDrifter/status/1960780594930958613
 - https://x.com/TheFoilWire/status/2081733241233629645
-
-## Interesting
-
-* A 1995 CIA-commissioned review of [23 years of remote viewing](/Consciousness_Control/communication-by-consciousness) split its own reviewers.
-* A court filing argues [rights were invoked one minute after the 6:25 PM warning](/Photos/Court_Legal/Mirandize/Img_Photo_d956cc).
-* The [Salt Lake City FBI chief was reportedly pushed out](/Photos/FBI/Img_Photo_a1d5c5) months before the assassination in her district.

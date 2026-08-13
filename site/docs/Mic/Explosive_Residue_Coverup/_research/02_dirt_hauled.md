@@ -44,9 +44,3 @@
 - /Tent/Dirt_Removed_Before_Pavers
 - /FBI/Crime_Scene_Paving
 - /After/Site_Changes_And_Crime_Scene_Handling
-
-## Interesting
-
-* The lavalier was reportedly routed [under the shirt instead of over it](/Mic/AV_Team_Mic_Setup), hidden from cameras.
-* An executive who reportedly [removed an SD card](/Censorship/Witness_Footage_Pressure) had allegedly never attended another campus event.
-* Investigators describe [impressions collapsing on ballistics posts](/Censorship/X_Deboosting_Investigators) while official UVU posts stayed visible.

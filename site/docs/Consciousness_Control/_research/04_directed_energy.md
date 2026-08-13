@@ -23,9 +23,3 @@ Date: 2026-07-29
 - Satellite DEW / SAP.
 - Graphene body antenna + DEW.
 - Linking DEW to mass shooters as remote “push.”
-
-## Interesting
-
-* Lab [brain-to-brain links are real but about one bit wide](/Consciousness_Control/brain-to-brain-communications) — a useful sanity check.
-* The [black SUV that carried Kirk from the scene](/Timeline/rental-cars-vehicle-movements-timeline) was later destroyed.
-* Investigators argue the [official roof escape window](/Timeline/roof-jumping-timeline) is physically too short.

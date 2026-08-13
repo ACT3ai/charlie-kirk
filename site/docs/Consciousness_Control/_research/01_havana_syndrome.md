@@ -29,9 +29,3 @@ Date: 2026-07-29
 ## UVU / Charlie Kirk
 - No public record evidence of Havana-type attack at UVU Sept 10 2025.
 - Relevance is capability + cover narrative, not established use-of-weapon at the scene.
-
-## Interesting
-
-* U.S. intelligence funded [remote viewing for 23 years](/Consciousness_Control/communication-by-consciousness) under Stargate and four predecessors.
-* Bodycam reportedly [Mirandized Robinson at 6:25 PM](/After/Sept_11_Surrender_And_Custody) — hours before the call that supposedly identified him.
-* A [telescoping 5G comms mast](/After/house/comms-antenna-mast) reportedly stood at the UVU construction site that day.

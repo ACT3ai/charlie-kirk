@@ -44,9 +44,3 @@ There'd be a number of other things. The government data is invaluable, and citi
 
 
 Make sure the claude agent saved out the outputs to the correct one (or more) output files.
-
-## Interesting
-
-* Both sides are preserved in the [remaining unfixed factual challenges](/laws/other/analysis/Challenges).
-* Why a conference schedule lands in a homicide file: [what AmericaFest actually is](/Amfest/what-is-americafest).
-* Vendors, not bookers, control the camera angles: [who actually runs AmFest](/Amfest/who-runs-amfest).

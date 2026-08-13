@@ -30,9 +30,3 @@ Combined effect: a political assassination can be attributed to a â€œlone crazyâ
 - No public evidence of consciousness control at UVU.
 - Frame as capability analysis + questions the sealed record should answer.
 - Attribute X claims; do not state living persons committed crimes via mind control as fact.
-
-## Interesting
-
-* The 1994 ["New World Vistas"](/Consciousness_Control/cia-darpa-havana-mind-control) text openly discusses transmitting suggestions.
-* Tucker Carlson quotes a senior official's reply about [blackmail by the intel agencies](/Photos/Unfiled_Backlog/Img_Photo_2face0): "I know."
-* Researchers annotate a [cartridge case near the rear of the canopy](/Photos/UVU_Venue/Img_Photo_360335) beside a corner-firing weapon.

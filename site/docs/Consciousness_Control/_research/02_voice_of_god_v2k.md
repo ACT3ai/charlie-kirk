@@ -29,9 +29,3 @@ Note: User said “voice of school” — interpreted as **Voice of God** (milit
 
 ## Relation to Consciousness_Control section
 - Voice of God / V2K is the **audio channel** half of the stack; Havana is the **injury** half; B2B/consciousness pages are the **command/control** half alleged in whistleblower discourse.
-
-## Interesting
-
-* Nick Begich says such weapons leave ["no entry or exit wound"](/Consciousness_Control/cia-darpa-havana-mind-control).
-* [AmericaFest](/Amfest/what-is-americafest) is a recruiting funnel and content studio, which is why its schedule enters a homicide file.
-* An outside vendor reportedly controls [AmFest camera angles and security interfaces](/Amfest/who-runs-amfest) — what gets recorded.

@@ -55,9 +55,3 @@
 ## Defamation notes
 - Living: Candace Owens, Frank Turek, Erika Kirk, FBI employees — attribute only, no crime as fact
 - Collecting jewelry is ordinary homicide procedure
-
-## Interesting
-
-* Federal records for [AES in McEwen, Tennessee](/Mic/AES) reportedly include miniature anti-personnel charges.
-* A [judicial vacancy posted in January 2025](/Photos/Google_Search/Img_Photo_d817e9) opened the very court that would prosecute the case.
-* The [6:25 PM Miranda transcript](/Photos/Tyler_Robinson/Img_Confession_After_Custody_9ca555) carries a time but no date.

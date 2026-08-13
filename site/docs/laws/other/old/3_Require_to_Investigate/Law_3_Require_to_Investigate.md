@@ -177,7 +177,7 @@ This Act shall take effect immediately upon enactment.
 ## Interesting
 
 * Congressional findings cite [foreign-registered phones and a HADES aircraft circling](/laws/DoJ_FBI/Law_1_DoJ_FBI) before the shooting.
-* An internal note records [the working premise about a rented Orem house](/After/house/CLAUDE).
+* The word reportedly used was "executed," not shot — [Dan Flood's night-before text](/Charlie/Fear_Kill_Warnings/Other_Fear_Channels/dan-flood-executed-tomorrow).
 * UVU's own board called that property ["contiguous to campus"](/After/house/location-and-property), a quarter-mile away, not three miles.
 
 ## Related Areas

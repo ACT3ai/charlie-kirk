@@ -16,9 +16,3 @@ The parent directory is LEVEL 2 = AFTER.
 This directory is LEVEL 3 page "House" (in ./overview.mdx)
 
 It has level 4 pages on each topic on anything related to the house in this dir ./*.mdx
-
-## Interesting
-
-* A witness says the FBI [asked him to delete his UVU video](/After/Media_Narratives_And_Censorship_After); officials have neither confirmed nor denied it.
-* Researchers report a [December 2024 Israel-attributed search spike](/GoogleSearches/kathryn-nester-searches) for the attorney who later defended the accused.
-* The [misc figures search data](/GoogleSearches/misc-figures-searches) reportedly shows interest in a jailhouse informant back in November 2023.

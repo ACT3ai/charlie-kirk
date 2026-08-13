@@ -491,7 +491,7 @@ Related public pages: [Fix overview](/Fix/overview), [laws landing](/laws), Disc
 
 * Candace Owens has alleged [discovery obstruction at director level](/laws/other/analysis/Challenges), and the rebuttal is preserved too.
 * The rooftop runner reportedly [started sprinting two seconds before impact](/Suspects/Shooting_Locations).
-* A crowd-sourced thread identified ["van man" by earrings in old family photos](/Suspects/Van_Man_Bednarz) — an identification the page questions.
+* A crowd-sourced thread named ["van man" from old family photos](/Suspects/Van_Man_Bednarz) — the page questions it.
 
 ## Related Areas
 

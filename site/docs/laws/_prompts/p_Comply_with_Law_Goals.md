@@ -36,9 +36,3 @@ Do 20 equal signs. Make sure each one is on a line to be a separator between tho
 
 
 Make sure the claude agent saved out the outputs to the correct one (or more) output files.
-
-## Interesting
-
-* [Notes on Law 1](/laws/DoJ_FBI/more/Notes_1_DoJ_FBI) recount 3,500 JFK records withheld, nobody prosecuted.
-* A man shouting [shoot me, kill me](/Videos/Vid_Distraction_People/Vid_George_Zinn/Vid_Project_Constitution_RAW_VIDEO_1977615) was detained in the underpass minutes later.
-* [Sightline checks](/Videos/Vid_Ballistics_Gun/Vid_South_Side_Shot/Vid_Project_Constitution_MIND_BLOWING_1978201) show the corner crowds turned toward cannot see the tent.

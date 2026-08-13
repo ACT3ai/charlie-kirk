@@ -26,9 +26,3 @@ Your instructions are:
 
 
 Make sure the claude agent saved out the outputs to the correct one (or more) output files.
-
-## Interesting
-
-* The [beyond-175 list](/laws/other/analysis/Fixed/Any_more_to_Add) adds fake-therapy witness intimidation items.
-* Donors were reportedly irate over [Dave Smith's stage booking](/Amfest/dave-smith-booking-pressure).
-* A [dedicated name search](/Amfest/debra-carlson-amfest) found zero hits, published so nobody invents a role.

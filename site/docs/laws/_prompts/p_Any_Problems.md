@@ -51,9 +51,3 @@ Do 20 equal signs. Make sure each one is on a line to be a separator between tho
 
 
 Make sure the claude agent saved out the outputs to the correct one (or more) output files.
-
-## Interesting
-
-* The laws treat the [mechanism of death as open](/laws/other/analysis/Fixed/Challenges), demanding exploding-microphone records.
-* A [government VIP jet](/Planes/SAM-99-0404) reportedly landed at Fort Huachuca two days prior.
-* [SU-BGM](/Planes/SU-BGM) completes five foreign state aircraft at one small airport.
