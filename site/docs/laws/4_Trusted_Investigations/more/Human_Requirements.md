@@ -4,6 +4,8 @@
 
 Allow a specific set of trusted individuals to each have their own team within the FBI and within US intelligence to work alongside government investigators. These trusted people and their teams conduct the investigation. Nothing is allowed to stop them. They can release the information.
 
+This law exists because Charlie Kirk was assassinated on September 10, 2025 and no agency the public trusts has examined [how he was killed](/Cause_of_Death/overview). The state's [court case](/court/overview) against a single charged defendant is not a substitute for that examination.
+
 ## Trusted People
 - [Candace Owens](/People/candace-owens)
 - Dave Smith

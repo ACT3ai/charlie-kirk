@@ -2,7 +2,7 @@
 
 ## Core Requirement
 
-Require the FBI, all law enforcement agencies, and U.S. intelligence services to actively investigate the death of [Charlie Kirk](/People/charlie-kirk). Not just disclose existing files -- but conduct a real, thorough investigation.
+Require the FBI, all law enforcement agencies, and U.S. intelligence services to actively investigate the death of [Charlie Kirk](/People/charlie-kirk). Not just disclose existing files -- but conduct a real, thorough investigation. Charlie Kirk was assassinated in public on September 10, 2025, and charging one man has not produced answers about [how he was killed](/Cause_of_Death/overview); the Tyler Robinson prosecution is a criminal case against a single defendant, not the broad investigation this law would compel.
 
 ## Key Points
 

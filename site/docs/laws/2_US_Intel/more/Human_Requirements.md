@@ -4,6 +4,8 @@
 
 Force all U.S. Intelligence Services to release all information that could point to any real killer or provide real insights into the investigation of [Charlie Kirk](/People/charlie-kirk)'s death.
 
+Charlie Kirk was assassinated in public on September 10, 2025, and the intelligence holdings that bear on how he was killed have never been produced — the gap documented across the site's [cover-up pages](/CoverUp/overview).
+
 ## Key Points
 
 - Applies to ALL parts of U.S. intelligence services ([CIA](/US_Intelligence/cia), [NSA](/US_Intelligence/nsa), DIA, NRO, etc.)

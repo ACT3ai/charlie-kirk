@@ -4,6 +4,8 @@
 **Date:** March 10, 2026
 **Status:** Items below verified as FIXED or ALREADY RESOLVED in current law files.
 
+Charter compliance is not an academic exercise: a bill drafted after Charlie Kirk was murdered has to survive contact with the agencies holding the records, and the disclosure gaps it is meant to close are documented under [Cause of Death](/Cause_of_Death/overview).
+
 ---
 
 ====================

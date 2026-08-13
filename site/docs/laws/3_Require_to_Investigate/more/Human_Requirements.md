@@ -2,7 +2,7 @@
 
 ## Core Requirement
 
-Require the FBI, all law enforcement agencies, and U.S. intelligence services to actively investigate the death of [Charlie Kirk](/People/charlie-kirk). Not just disclose existing files -- but conduct a real, thorough investigation.
+Require the FBI, all law enforcement agencies, and U.S. intelligence services to actively investigate the death of [Charlie Kirk](/People/charlie-kirk). Not just disclose existing files -- but conduct a real, thorough investigation. Charlie Kirk was assassinated on September 10, 2025 at Utah Valley University, and the [central question of how he was killed](/Cause_of_Death/overview) has never been resolved to the public's satisfaction -- which is the gap this law is written to close.
 
 ## Key Points
 

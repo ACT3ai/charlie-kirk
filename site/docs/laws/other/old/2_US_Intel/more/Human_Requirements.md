@@ -4,6 +4,8 @@
 
 Force all U.S. Intelligence Services to release all information that could point to any real killer or provide real insights into the investigation of [Charlie Kirk](/People/charlie-kirk)'s death.
 
+Disclosure on this scale is needed precisely because the state's [court case](/court/overview) against Tyler Robinson, who is charged and not convicted, is scoped to one defendant and cannot reach the intelligence holdings.
+
 ## Key Points
 
 - Applies to ALL parts of U.S. intelligence services ([CIA](/US_Intelligence/cia), [NSA](/US_Intelligence/nsa), DIA, NRO, etc.)

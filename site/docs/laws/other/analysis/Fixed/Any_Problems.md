@@ -4,6 +4,8 @@
 **Date:** March 11, 2026
 **Status:** Items below verified as FIXED in current law files.
 
+These four bills exist because Charlie Kirk was assassinated on September 10, 2025 and the federal record of that day has not been released; the public case for forcing that release is set out under [the cover-up section](/CoverUp/overview).
+
 ---
 
 ====================

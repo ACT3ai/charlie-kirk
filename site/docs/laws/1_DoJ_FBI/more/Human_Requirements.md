@@ -3,6 +3,7 @@
 ## Core Requirement
 
 Force the Department of Justice (DOJ), Federal Bureau of Investigation (FBI), and any other law enforcement agency -- national or local -- to disclose all files and information they have related to their investigation of [Charlie Kirk](/People/charlie-kirk)'s death.
+Charlie Kirk was assassinated at Utah Valley University on September 10 2025, and the files these agencies hold are the only records that could settle the [contested cause of death](/Cause_of_Death/overview).
 
 ## Key Points
 

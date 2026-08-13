@@ -1,5 +1,7 @@
 # Output Analysis: Law 3 - Require Investigation
 
+This analysis assumes the investigation the law compels would run far wider than the state's prosecution of [Tyler Robinson](/Tyler_Robinson/overview), who is charged rather than convicted, and would not be permitted to close once a suspect is in custody.
+
 ## Does the Law Meet the Human Requirements?
 
 ### Requirement: FBI and law enforcement are required to investigate

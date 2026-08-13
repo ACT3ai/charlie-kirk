@@ -5,6 +5,8 @@
 **Author:** [Bryan Starbuck](/People/bryan-starbuck)
 **Date:** March 10, 2026
 
+All four drafts exist for one reason: Charlie Kirk was assassinated on September 10, 2025, the only prosecution to date is the [court case](/court/overview) against Tyler Robinson, who is charged and not convicted, and no disclosure statute currently forces the agencies holding the records to produce them.
+
 ---
 
 ## Law 1: The Charlie Kirk Files Forced Disclosure Act -- Law Enforcement
