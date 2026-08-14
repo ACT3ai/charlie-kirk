@@ -34109,7 +34109,7 @@ level_3:
       site_level_2: ["Tyler_Robinson"]
       site_page: "site/docs/Tyler_Robinson/overview.mdx"
       number_of_videos: 0
-      number_of_videos_recursive: 16
+      number_of_videos_recursive: 17
       publishable: true
       needs_split: false
       videos: []
@@ -34387,7 +34387,7 @@ level_3:
                   manifest_description: ""
                   duplicate_paths: []
                   video_page: ""
-                  next_video: "~/BGit/Bryan_git/charlie-kirk/site/docs/Videos/Vid_Tyler_Robinson/Vid_Receipt_Timeline/Vid_VLuvMully_Cowboy_S_Smokehouse_2077951.mdx"
+                  next_video: "~/BGit/Bryan_git/charlie-kirk/site/docs/Videos/Vid_Tyler_Robinson/Vid_Receipt_Timeline/Vid_DiligentDenizen_Full_Raw_Interview_2079273.mdx"
                   on_pages: []
                   should_be_on_pages:
                     - page: "~/BGit/Bryan_git/charlie-kirk/site/docs/court/mirandize/baron-coleman-early-turn-in.mdx"
@@ -34399,11 +34399,54 @@ level_3:
             _key: Vid_Receipt_Timeline
             site_level_2: []
             site_page: ""
-            number_of_videos: 1
-            number_of_videos_recursive: 1
+            number_of_videos: 2
+            number_of_videos_recursive: 2
             publishable: true
             needs_split: false
             videos:
+              - video:
+                  title: "@DiligentDenizen - Full raw interview with the Cowboy's Smokehouse witness who 100% ID'd Tyler Robinson"
+                  cid: "QmT3wxEWv5LQsxih65s6XhvTwchUfU3sU6xW27FNt9y5Q7"
+                  ipfs_pinned: true
+                  sha256: "aae9965de76956c6b7c064d3b96d3e40dc4da4ed68527ac80204bdc256426932"
+                  file_path: "~/BGit/Bryan_git/charlie-kirk/videos/2079273906506965009.mp4"
+                  media_present: "video"
+                  file_size_bytes: 20604158
+                  duration: "00:03:46"
+                  audio_file: ""
+                  transcription_file: "~/BGit/Bryan_git/charlie-kirk/videos_transcription/2079273906506965009.md"
+                  transcription_source: "video"
+                  transcription_engine: "apple-speechanalyzer (language: en)"
+                  transcription_generated: "2026-08-14 22:45:10"
+                  transcript_covers: ""
+                  transcript_complete: true
+                  ai_description_file: ""
+                  ai_description_provider: ""
+                  ai_description_engine: ""
+                  ai_description_generated: ""
+                  ai_description: "A 3 minute 46 second on-location interview recorded inside Cowboy's Smokehouse in Panguitch, Utah, in which the citizen journalist questions a restaurant employee about the customer he served on the night of September 10, 2025. The employee's face was cropped out and his name withheld at his request, so the clip is carried by the audio. He states he has worked there about a year and a half, that the customer sat at the bar close to the end and ordered a steak and a couple of beers, that he was not the waiter taking the order but had several interactions helping out, and that he personally ran the customer's card at the 9:47 PM checkout near the 10 PM closing. Asked how certain he is that the customer was Tyler Robinson, he answers 100 percent, saying the voice was unforgettable and that he recognized it the next day when a video of Robinson receiving his college acceptance letter was released. He says his boss reported the sighting to the FBI, that agents took the staff's contact information and never followed up, and that neither the prosecution nor the defense has ever contacted him. This description is drawn from the recorded audio and the poster's stated framing; no independent visual analysis of the footage was performed."
+                  shot_timeline: |
+                    * **00:00 - 00:20**: Interviewer sets the scene, identifying the location as Cowboy's Smokehouse in Panguitch, Utah, and the subject as an employee who says he met the customer on the night of September 10.
+                    * **00:20 - 01:10**: The employee describes his length of service, being on shift that night, and the customer sitting at the bar, close to the end, second seat in, ordering a steak and a couple of beers.
+                    * **01:10 - 02:00**: The identification. He says the voice was unforgettable, that he sent the tip in himself, and answers "100%" when asked how certain he is.
+                    * **02:00 - 02:40**: How he came to recognize the man - a coworker showing a picture the next morning, then the college-acceptance video that carried the voice.
+                    * **02:40 - 03:20**: Closing time and the receipt. He confirms the 9:47 PM checkout time and says he was the one who helped the customer check out and took the card.
+                    * **03:20 - 03:46**: The follow-up gap. He says the FBI took contact information and never returned, and that no one from either the prosecution or the defense has reached out.
+                  people_seen: "One restaurant employee, deliberately kept off-camera - his face was cropped out and his name redacted at his request. The interviewer is heard but not identified on screen."
+                  onscreen_text: ""
+                  ocr_file: ""
+                  source_url: "https://x.com/DiligentDenizen/status/2079273906506965009"
+                  source_author: "@DiligentDenizen"
+                  source_platform: "x"
+                  added_date: "2026-08-14"
+                  manifest_description: "Full raw 3:46 interview with the Cowboy's Smokehouse (Panguitch, UT) employee who says he is 100% certain he served Tyler Robinson on September 10, 2025 and personally took his card at checkout"
+                  duplicate_paths: []
+                  video_page: ""
+                  next_video: "~/BGit/Bryan_git/charlie-kirk/site/docs/Videos/Vid_Tyler_Robinson/Vid_Receipt_Timeline/Vid_VLuvMully_Cowboy_S_Smokehouse_2077951.mdx"
+                  on_pages:
+                    - page: "~/BGit/Bryan_git/charlie-kirk/site/docs/Tyler_Robinson_Not_Assassin/panguitch-breaks-the-timeline.mdx"
+                  should_be_on_pages:
+                    - page: "~/BGit/Bryan_git/charlie-kirk/site/docs/Tyler_Robinson_Not_Assassin/panguitch-breaks-the-timeline.mdx"
               - video:
                   title: "@VLuvMully - Cowboy's Smokehouse receipt video"
                   cid: "QmTo4HtjkqvEMCvAUMDo6eP6FwroAp8r2btv1mqGSwyFFa"

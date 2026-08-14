@@ -9474,6 +9474,7 @@ level_3:
                   ocr_file: ""
                   transcription_file: ""
                   on_site_pages: ["site/docs/court/defense-bindover-brief-aggravator.mdx"]
+                  image_page: ""
   - level_3:
       title: "Aircraft and Flight Records"
       _key: Aircraft
@@ -30593,6 +30594,7 @@ level_3:
                   ocr_file: ""
                   transcription_file: ""
                   on_site_pages: ["site/docs/GoogleSearches/nester-israel-trends-repull.mdx"]
+                  image_page: ""
   - level_3:
       title: "The Table and Charlie"
       _key: Table_And_Charlie
@@ -43973,6 +43975,7 @@ level_3:
             ocr_file: ""
             transcription_file: ""
             on_site_pages: ["site/docs/Videos/Vid_Before_Events/Vid_Before_Event/Vid_Witness_Clip_American_Comeback_2084026.mdx"]
+            image_page: ""
         - image:
             cid: ""
             sha256: 55ba7107edad494bb7f0495bf557a22fb1fa0d15920b04e53aa032c55dd6d984
@@ -43982,6 +43985,7 @@ level_3:
             ocr_file: ""
             transcription_file: ""
             on_site_pages: ["site/docs/Videos/Vid_FBI/Vid_Footage_Asked_Be/overview.mdx", "site/docs/Videos/Vid_FBI/overview.mdx"]
+            image_page: ""
       videos:
         - video:
             cid: "QmRiWzUfpwFu34KwtxnPTs84NkqVwLtm2RTtcLRRp7m22w"
@@ -44101,9 +44105,18 @@ level_3:
       _key: Tyler_Not_Assassin
       site_level_2: ["Tyler_Robinson_Not_Assassin", "Proof_Not_Tyler"]
       site_page: "site/docs/Tyler_Robinson_Not_Assassin/overview.mdx"
-      number_of_images: 0
-      number_of_images_recursive: 0
-      images: []
+      number_of_images: 1
+      number_of_images_recursive: 3
+      images:
+        - image:
+            cid: ""
+            sha256: cb7c3a308efd9d6b587fc85dc63f781dc98ff0966f61fc071ce2c71614f6dc02
+            file_path: "~/BGit/Bryan_git/charlie-kirk/site/internals/static/img/Panguitch_Timeline_Infographic.jpg"
+            ai_description: ""
+            ai_description_file: ""
+            ocr_file: ""
+            transcription_file: ""
+            on_site_pages: ["site/docs/Tyler_Robinson_Not_Assassin/overview.mdx", "site/docs/Tyler_Robinson_Not_Assassin/panguitch-breaks-the-timeline.mdx"]
       level_4:
         - level_4:
             title: "Explosive in Mic Likely Killed Charlie"
@@ -44225,6 +44238,31 @@ level_3:
                   number_of_images: 0
                   number_of_images_recursive: 0
                   images: []
+        - level_4:
+            title: "Panguitch — The Town That Breaks the Timeline"
+            _key: Not_Tyler_Panguitch
+            site_page: "site/docs/Tyler_Robinson_Not_Assassin/panguitch-breaks-the-timeline.mdx"
+            number_of_images: 2
+            number_of_images_recursive: 2
+            images:
+              - image:
+                  cid: "QmfA8KxNVJfZBZbdQunnzwysVKbVZA77WSmzVEKBpBa8ZC"
+                  sha256: a59f5f464c81d4cf149097fa46a05af311bebbe5a090f87e82133986d1ec31f6
+                  file_path: "~/BGit/Bryan_git/charlie-kirk/site/internals/static/img/evidence/a59f5f464c81d4cf149097fa46a05af311bebbe5a090f87e82133986d1ec31f6.jpg"
+                  ai_description: "A tall, narrow photograph of a printed restaurant customer receipt from Cowboy's Smokehouse in Panguitch, Utah, posted by citizen journalist @DiligentDenizen on August 14, 2026 with the caption that it is the Tyler Robinson Panguitch receipt per the restaurant's servers. The ticket is the one circulated as covering the evening of September 10, 2025, the day Charlie Kirk was shot at Utah Valley University roughly 209 road miles to the north, and its printed order time of 8:55 PM and card checkout time of 9:47 PM are the fields citizen investigators use to argue the state's night-of text-message timeline is physically impossible. The card was run as a debit transaction so no customer name is printed, and the receipt has not been authenticated by any court."
+                  ai_description_file: ""
+                  ocr_file: ""
+                  transcription_file: ""
+                  on_site_pages: ["site/docs/Tyler_Robinson_Not_Assassin/panguitch-breaks-the-timeline.mdx"]
+              - image:
+                  cid: "Qmcp4K9pBHHQHJMx5RLZG2NNbBGzXhiSjuoxpcNpopY9Me"
+                  sha256: da301be5826adc357c357f5e78bb484f3422afec607aa8f146b5f4cc13320c82
+                  file_path: "~/BGit/Bryan_git/charlie-kirk/site/internals/static/img/evidence/da301be5826adc357c357f5e78bb484f3422afec607aa8f146b5f4cc13320c82.jpg"
+                  ai_description: "A vertical still image posted alongside the raw 3 minute 46 second interview with the Cowboy's Smokehouse employee in Panguitch, Utah who says he is one hundred percent certain the man he helped check out near closing on September 10, 2025 was Tyler Robinson. The employee's face was cropped and his name withheld at his request, and in the interview he states he personally took the customer's card at the 9:47 PM checkout and that neither the FBI, the prosecution, nor the defense ever followed up with him."
+                  ai_description_file: ""
+                  ocr_file: ""
+                  transcription_file: ""
+                  on_site_pages: ["site/docs/Tyler_Robinson_Not_Assassin/panguitch-breaks-the-timeline.mdx"]
   - level_3:
       title: "Social Media Analysis"
       _key: Social_Media
