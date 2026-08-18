@@ -21402,7 +21402,7 @@ level_3:
       site_level_2: ["cameras"]
       site_page: "site/docs/cameras/overview.mdx"
       number_of_videos: 0
-      number_of_videos_recursive: 2
+      number_of_videos_recursive: 3
       publishable: true
       needs_split: false
       videos: []
@@ -21472,8 +21472,8 @@ level_3:
             _key: Vid_Surveillance_Camera_Footage
             site_level_2: []
             site_page: ""
-            number_of_videos: 2
-            number_of_videos_recursive: 2
+            number_of_videos: 3
+            number_of_videos_recursive: 3
             publishable: true
             needs_split: false
             videos:
@@ -21521,9 +21521,55 @@ level_3:
                   manifest_description: ""
                   duplicate_paths: []
                   video_page: ""
-                  next_video: "~/BGit/Bryan_git/charlie-kirk/site/docs/Videos/Vid_Surveillance_Cameras/Vid_Surveillance_Camera_Footage/Vid_FromConvict2Conservative_Gary_Melton_Paramount_1978207.mdx"
+                  next_video: "~/BGit/Bryan_git/charlie-kirk/site/docs/Videos/Vid_Surveillance_Cameras/Vid_Surveillance_Camera_Footage/Vid_BlakeBednarz_Missing_Minutes_2089500.mdx"
                   on_pages: []
                   should_be_on_pages: []
+              - video:
+                  title: "Blake Bednarz: The Missing Minutes in the UVU Camera Exhibit"
+                  cid: "QmdRct9aQgzaKS657HzF8zy82vC61B3vVXoboNbYGsKcH7"
+                  ipfs_pinned: true
+                  sha256: "82b80afa1aee164463f4a7abb476753b8dabda375b2a17cb0cf3dd28ed25499b"
+                  file_path: "~/BGit/Bryan_git/charlie-kirk/videos/2089500844601266390.mp4"
+                  media_present: "video"
+                  file_size_bytes: 18865527
+                  duration: "00:03:46"
+                  audio_file: ""
+                  transcription_file: "~/BGit/Bryan_git/charlie-kirk/videos_transcription/2089500844601266390.md"
+                  transcription_source: "video"
+                  transcription_engine: "apple-speechanalyzer (language: en)"
+                  transcription_generated: "2026-08-17 18:23:26"
+                  transcript_covers: "00:03:46"
+                  transcript_complete: true
+                  ai_description_file: ""
+                  ai_description_provider: ""
+                  ai_description_engine: ""
+                  ai_description_generated: ""
+                  ai_description: "Screen capture of the Utah Valley University surveillance exhibit played in open court during the Tyler Robinson preliminary hearing, showing the CS Roof West Overview Camera 4 feed with its embedded 9/10/2025 timestamp. The clip is cut so the timestamp counter stays visible, and the poster argues the recording jumps forward three times rather than running continuously. Audio is investigator testimony narrating the suspect route past the Losee Center."
+                  shot_timeline: |
+                    - **00:00 - 00:04**: CS Roof West camera view of the parking lot and parking structure. Timestamp runs 12:15:56 to 12:15:59, then cuts straight to 12:17:04.
+                    - **00:04 - 00:17**: Same angle, timestamp running continuously 12:17:04 to 12:17:17.
+                    - **00:17 - 00:20**: Timestamp jumps from 12:17:17 to 12:22:10 with no visible break in the scene.
+                    - **00:20 - 00:38**: Wider camera view over the full parking lot; timestamp reads 12:02 PM.
+                    - **00:38 - 01:02**: Continuous run from roughly 12:02:43 to 12:03:08.
+                    - **01:02 - 01:03**: Timestamp jumps from 12:03:08 to 12:15:20.
+                    - **01:03 - 01:43**: Continuous run 12:15:20 to 12:15:59, then a jump to 12:17:04.
+                    - **01:43 - 02:00**: Continuous run 12:17:04 to about 12:17:16.
+                    - **02:00 - 03:46**: Courtroom camera showing the same exhibit projected on a ViewSonic monitor beside the witness stand, played back inside a Windows viewer window, while investigator testimony describes the suspect route."
+                  people_seen: "No identifiable faces. The courtroom segment shows a witness seated beside the monitor, filmed from behind and to the side. The surveillance segments show distant vehicles and pedestrians at parking-lot scale."
+                  onscreen_text: "- Embedded camera timestamp: \"9/10/2025 12:02:43 PM\" through \"9/10/2025 12:22:15 PM\". - Camera label: \"Computer Science Building Campus Dr\" / \"CS - Roof - West Overview Camera 4\". - Burned-in caption: \"Watch the timestamp\". - Monitor brand: ViewSonic."
+                  ocr_file: ""
+                  source_url: "https://x.com/BlakeBednarz/status/2089500844601266390"
+                  source_author: "@BlakeBednarz"
+                  source_platform: "x"
+                  added_date: "2026-08-17"
+                  manifest_description: "UVU CS Roof West camera exhibit from the Robinson preliminary hearing, cut to show three timestamp jumps on 9/10/2025"
+                  duplicate_paths: []
+                  video_page: "~/BGit/Bryan_git/charlie-kirk/site/docs/Videos/Vid_Surveillance_Cameras/Vid_Surveillance_Camera_Footage/Vid_BlakeBednarz_Missing_Minutes_2089500.mdx"
+                  next_video: "~/BGit/Bryan_git/charlie-kirk/site/docs/Videos/Vid_Surveillance_Cameras/Vid_Surveillance_Camera_Footage/Vid_FromConvict2Conservative_Gary_Melton_Paramount_1978207.mdx"
+                  on_pages: []
+                  should_be_on_pages:
+                    - page: "~/BGit/Bryan_git/charlie-kirk/site/docs/CoverUp/UVU_HD_Footage_Withheld.mdx"
+                    - page: "~/BGit/Bryan_git/charlie-kirk/site/docs/cameras/UVU_Surveillance.mdx"
               - video:
                   title: "FromConvict2Conservative - Gary Melton with Paramount Tactical confirms that the camera..."
                   cid: "QmeNx4g85iAyoeUexwMC9FYZy8G3SAp5F1dHo1rMJXFuRA"
