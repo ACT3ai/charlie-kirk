@@ -782,3 +782,9 @@ Including
 
 ~/BGit/all/politics/charlie_kirk/prompts/
 
+
+Under the docs directory are a number of directories immediately under there. Those are called level two directories. The page that loads tends to be an overview.mdx file. That one tends to have a table of contents. There tends to be level three MDX files underneath there per topic. The level two should have links in their table of contents, where the paragraphs should be hyperlinked to go into them, generally the table of contents.
+
+Know that that's what we're talking about with a level two document. Sometimes we say, "Here's an image file. Add it," or "A video file. Make sure it's added to these three or four level two pages and list the names." You'll search for the directory names that best match under docs. That's the way to find these "level two directories."
+~/BGit/Bryan_git/charlie-kirk/site/docs/{Level 2 directory}/
+

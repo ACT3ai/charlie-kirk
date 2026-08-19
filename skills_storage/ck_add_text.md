@@ -1243,6 +1243,88 @@ the post has no video if yt-dlp itself finds nothing to download.
   | {filename} | `{CID}` | {description} | [@{username}]({source_url}) | {today} |
   ```
 
+* 6c4. REGISTER THE VIDEO IN videos.yaml (MANDATORY — DO NOT SKIP):
+
+  VIDEOS_YAML is file {ROOT_DIR}/videos/videos.yaml
+
+  {ROOT_DIR}/videos/manifest.yaml is only this skill's own download log. It drives
+  NOTHING. The MASTER video record for the whole site is {VIDEOS_YAML} — the video
+  evidence hierarchy. It is what drives /Videos Level 5 page generation, the nav
+  galleries on every Level 2 overview, the should_be_on_pages placement pass that
+  puts a video onto ADDITIONAL Level 2 pages, the next_video chain, and the
+  banned-media gate.
+
+  A video that exists on disk, is pinned, and is embedded on the page this run
+  wrote, but has NO entry in {VIDEOS_YAML}, is invisible to every one of those
+  passes. It gets no Level 5 page, never appears in a gallery, and is never
+  placed on any other page. From the reader's point of view the video "was never
+  added" to every page except the single one this run touched.
+
+  THIS IS THE SINGLE LARGEST FAILURE OF THIS SKILL. An audit on 2026-08-19 found
+  41 videos downloaded between 2026-07-24 and 2026-08-19 that were pinned,
+  verified, embedded, and committed — and none of them were ever registered. Five
+  of them sit under Tyler_Robinson/ alone. Zero had been deleted; they had simply
+  never entered the hierarchy. The image side of this skill got its registration
+  step (6B-c4) on 2026-08-12 and its backlog stopped growing that day. The video
+  side had no equivalent step at all until this one.
+
+  UNLIKE IMAGES, THERE IS NO BINDER THAT WILL DO THIS FOR YOU. The image binder
+  (`bind_image_pages.py`) CREATES entries from any sha256 it finds embedded on a
+  page. The video equivalent (`bind_video_pages.py`) only records which existing
+  Level 5 page hosts an ALREADY-REGISTERED video — it never creates an entry.
+  Nothing else will notice this video unless you act here.
+
+  BEWARE THE IDENTIFIER MISMATCH. {VIDEOS_YAML} stores CIDv0 (`Qm...`). Pages embed
+  CIDv1 base32 (`bafybei...`) in the gateway URL. Grepping a page's `bafybei...`
+  against {VIDEOS_YAML} therefore returns 0 even when the video IS registered, and
+  grepping the `Qm` form against the page returns 0 even when it IS embedded.
+  Convert before you compare:
+  ```bash
+  ipfs cid base32 {CID}     # Qm... -> bafybei...
+  ```
+
+  DO NOT hand-append a node to {VIDEOS_YAML}. It is a ~36,000-line nested hierarchy
+  with per-node counters and it is rewritten by the pipeline. Instead queue it and
+  run the intake stage:
+
+  1. Register the embed identity so the pipeline can see it:
+     ```bash
+     cd {ROOT_DIR}
+     python3 videos_planning/generator/scan_pages.py
+     python3 videos_planning/generator/add_site_entries.py
+     ```
+     scan_pages.py walks the site and reports every embed identity the corpus does
+     not already hold; add_site_entries.py appends a row for each to
+     `videos_planning/generator/inventory.tsv`.
+
+  2. Verify THIS video's CID is now queued, not just that the scripts exited 0:
+     ```bash
+     python3 -c "import json;d=json.load(open('videos_planning/generator/stage10_report.json'));print([k for k in d['new_entries'] if '{CID}' in k] or 'NOT QUEUED')"
+     grep -c "{CID}" videos_planning/generator/inventory.tsv
+     ```
+     `NOT QUEUED` or a count of 0 means the embed on the page is not in a form the
+     scanner recognises — fix the embed (Step 9e markup) and re-run. Do not
+     proceed and do not report success.
+
+  3. If {VIDEOS_YAML} itself must be updated in this run (the user asked for the
+     video on more than the one page this run wrote, or asked for a Level 5 page),
+     run the hierarchy pipeline: {ROOT_DIR}/videos_planning/p_update_video_hierarchy.md.
+     It is a multi-stage run that rewrites {VIDEOS_YAML} and regenerates pages —
+     say so before starting it, and commit first.
+
+  4. Confirm and report honestly:
+     ```bash
+     python3 -c "import yaml;yaml.safe_load(open('videos/videos.yaml'));print('parses OK')"
+     ```
+     If the video is queued but the hierarchy has not been rebuilt yet, the run log
+     and the Step 10 summary MUST say so in "Warnings and unfinished business":
+     "videos.yaml does NOT yet carry this video — queued as a new_entry; no Level 5
+     page and no gallery thumbnail until the hierarchy pipeline runs." Never report
+     a video as fully added while it is only queued.
+
+  5. COMMIT the queue change together with the page and the poster. An uncommitted
+     inventory.tsv edit is the one the auto-commit sweeper's revert eats.
+
 * 6d. Output:
   ```
   ============================================
@@ -1256,6 +1338,7 @@ the post has no video if yt-dlp itself finds nothing to download.
   Remote pin: {service + result | NONE CONFIGURED — served only from this machine}
   IPFS commands added to: IPFS/ipfs.txt
   Video index updated: videos/videos.md
+  Registered in videos.yaml: {PASS — in hierarchy | QUEUED — new_entry only, no Level 5 page or gallery thumbnail yet | FAIL — not queued}
   ============================================
   ```
 
@@ -2146,6 +2229,28 @@ player and the run still says "complete".
   from older runs are NOT a reason to block this run: report them so Bryan can see
   the backlog, and say plainly that they predate this run.
 
+* 9H-6c. REPO-WIDE VIDEO REGISTRATION AUDIT (MANDATORY whenever this run
+  touched a video).
+
+  The image audit above says nothing about video. Run:
+
+    python3 {ROOT_DIR}/videos_planning/generator/audit_video_registration.py
+
+  It exits 0 when every video in videos/manifest.yaml is present in the master
+  {ROOT_DIR}/videos/videos.yaml, and 1 when any is not. It handles the
+  CIDv0/CIDv1 conversion for you, and it reports separately the videos that are
+  already embedded on a page (visible on exactly one page, invisible to every
+  gallery and placement pass) from those on no page at all.
+
+  A video THIS run added must never appear in that list. If it does, go back to
+  Step 6c4 — it is queued at best, and saying "added" would be false.
+
+  Pre-existing entries are a backlog, not a reason to block this run. Report the
+  count in the Step 10 summary and say plainly that they predate this run. As of
+  2026-08-19 that backlog is 41 videos dating to 2026-07-24, and clearing it
+  requires the hierarchy pipeline (videos_planning/p_update_video_hierarchy.md),
+  not this skill.
+
 * 9H-7. TIME BUDGET.
 
   These checks add roughly 4–5 minutes, nearly all of it waiting on the Pages deploy.
@@ -2198,6 +2303,7 @@ X POST STEP 10: FINAL SUMMARY
   Page in origin/main:    {PASS | PENDING — awaiting auto-commit | FAIL}
   Image binaries in remote: {PASS — {n}/{n} in origin/main | FAIL — {list sha256}}
   Registered in images.yaml: {PASS — {n} entr(ies) | FAIL — not registered}
+  Registered in videos.yaml: {PASS — in hierarchy | QUEUED — new_entry only | FAIL — not queued | n/a — no video}
   Repo-wide image audit:  {CLEAN | FAIL — {n} unserved, {n} on no page (Step 9H-6b)}
   Pages deploy:           {PASS — run {id} success | FAIL — run {id}, {error} | SKIPPED}
   Live page contains it:  {PASS | FAIL | SKIPPED}
