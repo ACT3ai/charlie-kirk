@@ -29,10 +29,12 @@ for r in led:
         r["blocks"] = got
         r["updated"] = LABEL
         edited.append(r["file_path"])
-    # A Level 2 holding a single editable page can never have an in-area
-    # block: there is no sister to link or card without self-carding.
-    solo = area_size.get(r["level2"], 0) <= 1
-    target = "-O-W" if solo else "HOSW"
+    # What a page CAN carry depends on how many sisters its Level 2 has.
+    #   1 page  : no in-area link and no in-area grid exist at all
+    #   2 pages : one sister - enough for the bullets, not for a 2x2 grid
+    #   3+      : the full set
+    n_area = area_size.get(r["level2"], 0)
+    target = "-O-W" if n_area <= 1 else ("HO-W" if n_area == 2 else "HOSW")
     r["status"] = "DONE" if got == target else ("PARTIAL" if got != "----" else "TODO")
     cards += len(re.findall(r'className="ck-4sq-title"', t))
 

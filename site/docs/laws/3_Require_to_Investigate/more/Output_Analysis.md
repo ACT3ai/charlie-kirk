@@ -57,6 +57,109 @@ $10M budget and 20-agent team requires appropriations.
 3. Add provision requiring investigators to specifically address each of the 175 items in Schedule A
 4. Coordinate with Law 4 so Trusted Investigators can share findings with the investigation team
 
+<!-- CK_INTERESTING_HERE_START -->
+
+## Interesting In This Area
+
+* [Law 3](/laws/Require_to_Investigate/Law_3_Require_to_Investigate) mandates a full investigation; shall creates the obligation, per [the requirements](/laws/Require_to_Investigate/more/Human_Requirements).
+* [Law 4](/laws/Trusted_Investigations/Law_4_Trusted_Investigations) gives three named investigators [two teams each](/laws/Trusted_Investigations/more/Human_Requirements), six teams in total.
+* [Law 2](/laws/US_Intel/Law_2_US_Intel) limits source protection to [active sources only](/laws/US_Intel/more/Notes_2_US_Intel), closing the usual exemption.
+* [Schedule A](/laws/other/analysis/Fixed/Any_more_to_Add) grew from 175 items to 208, and [one count](/laws/other/analysis/Challenges) still needs harmonising.
+
+<!-- CK_INTERESTING_HERE_END -->
+
+<!-- CK_INTERESTING_OTHER_START -->
+
+## Interesting In Other Areas
+
+* [Local police and prosecutors](/Law_Enforcement/overview) controlled the first custody chain and the crime-scene ground.
+* [No gunshot-residue testing](/Proof_Not_Tyler/No_GSR_And_Physical_Tests) is alleged on the persons or clothing that mattered.
+* [Joe Kent](/US_Intelligence/joe-kent) says a [foreign-nexus review](/CoverUp/Joe_Kent_Halt) stopped before its leads were exhausted.
+* [The Fix section](/Fix/overview) is the plain-language version of what these four bills would force open.
+
+<!-- CK_INTERESTING_OTHER_END -->
+
+<!-- CK_4SQ_SECTION_START -->
+
+## Other Pages In This Section
+
+<div className="ck-4sq">
+
+<div className="ck-4sq-card ck-4sq-stack">
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/laws/Trusted_Investigations/Law_4_Trusted_Investigations">Law 4: Charlie Kirk Investigation - Trusted Investigators Act</a></p>
+    <p className="ck-4sq-text">Full text of the trusted investigators act &mdash; civilian-led teams embedded inside the FBI and intelligence agencies with full access and their own release authority.</p>
+    <a className="ck-4sq-btn" href="/laws/Trusted_Investigations/Law_4_Trusted_Investigations">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-stack">
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/laws/US_Intel/more/Notes_2_US_Intel">Notes: Law 2 - US Intelligence Services Forced Disclosure</a></p>
+    <p className="ck-4sq-text">The research behind Law 2, and its warning. The JFK Records Act ordered release in 1992 and agencies were still withholding in 2025. Intelligence disclosure laws fail on their exemptions, which is why this draft narrows protection to active sources only.</p>
+    <a className="ck-4sq-btn" href="/laws/US_Intel/more/Notes_2_US_Intel">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-stack">
+  <a className="ck-4sq-thumb" href="/laws/explain/all/overview"><img src="/img/evidence/c51ef651e0e2fd9187ac8fa0b5d25908baba279b0c03f1ea93f6522fa3cedbb4.jpg" data-cid="QmSmChQuZCJ5h3PSeZuZDQRFptgYRDFzS3H33yY3VnZjTM" alt="This image shows a wide-angle, daytime view of a crowded outdoor courtyard on a university campus, featuring tiered grassy lawns and modern multi-story buildings." loading="lazy" /></a>
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/laws/explain/all/overview">Four Laws to Force the Truth About Charlie Kirk</a></p>
+    <p className="ck-4sq-text">The launch article for all four laws in one place: why the Epstein Files Act is the model, and what each bill would force into daylight. Start here if you have never read the statutory text.</p>
+    <a className="ck-4sq-btn" href="/laws/explain/all/overview">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-stack">
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/laws/other/analysis/Fixed/Challenges">Factual Challenges Analysis &mdash; FIXED ITEMS</a></p>
+    <p className="ck-4sq-text">The fact-check that hardened the drafting. Every contested claim was reframed as a records request rather than an assertion, which is why the bills ask for all records relating to whether, instead of stating conclusions.</p>
+    <a className="ck-4sq-btn" href="/laws/other/analysis/Fixed/Challenges">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+
+</div>
+
+<!-- CK_4SQ_SECTION_END -->
+
+<!-- CK_4SQ_SITEWIDE_START -->
+
+## Elsewhere In The Investigation
+
+<div className="ck-4sq">
+
+<div className="ck-4sq-card ck-4sq-stack">
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/Law_Enforcement/overview">Law Enforcement</a></p>
+    <p className="ck-4sq-text">Government police and prosecutors &mdash; not the Bureau &mdash; controlled the first custody chain, the crime-scene ground and the state prosecution. Six agencies, one timeline, and the places where their accounts do not line up.</p>
+    <a className="ck-4sq-btn" href="/Law_Enforcement/overview">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-side">
+  <a className="ck-4sq-thumb" href="/Proof_Not_Tyler/No_GSR_And_Physical_Tests"><img src="/img/evidence/b5681b7b1ade441b295157b6e8d63339f89ff618f12268625f18b14b701913b0.jpg" data-cid="QmNpBa2Lf67PiNaYVSCNZKSVWzHT8PLsL8py2Db8JnLEt6" alt="This low-resolution, vertically-oriented image captures a group of police officers in dark uniforms gathered on an outdoor sidewalk during the daytime." loading="lazy" /></a>
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/Proof_Not_Tyler/No_GSR_And_Physical_Tests">No GSR &amp; Missing Physical Tests</a></p>
+    <p className="ck-4sq-text">No publicly reported gunshot-residue result. For a case built on a rifle fired from a roof, the missing test speaks louder than any test that was performed.</p>
+    <a className="ck-4sq-btn" href="/Proof_Not_Tyler/No_GSR_And_Physical_Tests">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-stack">
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/US_Intelligence/joe-kent">Joe Kent</a></p>
+    <p className="ck-4sq-text">The director of the National Counterterrorism Center says the FBI shut his inquiry down before he could run his leads out. He stepped down in order to say it on the record &mdash; which is what separates this from an anonymous thread.</p>
+    <a className="ck-4sq-btn" href="/US_Intelligence/joe-kent">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-stack">
+  <a className="ck-4sq-thumb" href="/Fix/overview"><img src="/img/evidence/319de07fd86b3f460e4ac35cf156448a9ed6d2186fad7ab5595782d7d2134914.jpg" data-cid="QmVaJDW5VH68g98jBNsSoawPNyrG6fsaCMmrdUfGXhHJct" alt="This is a digital composite image designed as a political or investigative graphic, featuring portraits of public figures Charlie Kirk and Candace Owens overlaid against two…" loading="lazy" /></a>
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/Fix/overview">New Laws (Fix)</a></p>
+    <p className="ck-4sq-text">Four federal laws modeled on the Epstein Files Act, drafted to force disclosure and mandate a real investigation. Every unanswered question in the aftermath is downstream of records nobody can compel today.</p>
+    <a className="ck-4sq-btn" href="/Fix/overview">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+
+</div>
+
+<!-- CK_4SQ_SITEWIDE_END -->
+
 {/* CK_AUTHOR_CREDIT */}
 
 *This website's author is [@HolonCitizen](https://x.com/HolonCitizen) on X and [YouTube/@HolonCitizen](https://www.youtube.com/@HolonCitizen). Follow me there.*

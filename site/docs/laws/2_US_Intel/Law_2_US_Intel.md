@@ -1318,6 +1318,112 @@ Peer laws: [Law 1 - DoJ/FBI Disclosure](/laws/DoJ_FBI/Law_1_DoJ_FBI) | [Law 3 - 
 
 Precedent: Epstein Files Transparency Act | JFK Records Act
 
+<!-- CK_INTERESTING_HERE_START -->
+
+## Interesting In This Area
+
+* [Source protection is limited to active sources](/laws/US_Intel/more/Notes_2_US_Intel), the exemption earlier disclosure laws died on.
+* [Eight categories of covered information](/laws/US_Intel/more/Output_Analysis) plus a catch-all for [anything the list missed](/laws/US_Intel/more/Human_Requirements).
+* [The Epstein Files Act](/laws/DoJ_FBI/more/Notes_1_DoJ_FBI) passed 427-1 and still produced a fraction of its [pages](/laws/other/analysis/Challenges).
+* [The threat model](/laws/other/Worries_By_Each_4_Laws) assumes every evasion route will be tried, including [an Israel exception](/laws/other/analysis/Fixed/Laws_Not_Complying).
+
+<!-- CK_INTERESTING_HERE_END -->
+
+<!-- CK_INTERESTING_OTHER_START -->
+
+## Interesting In Other Areas
+
+* [The CIA](/US_Intelligence/cia) and the rest of the community sit inside this bill's covered agencies.
+* [Fort Huachuca manifests](/CoverUp/Huachuca_Records_Withheld) were reportedly withheld and FOIA requests denied.
+* [A HADES surveillance aircraft](/Proof_Intel_Services/N1098L_HADES_Over_UVU) reportedly passed low over the campus that day.
+* [Israeli forensic tools](/Israel/israeli-tech-in-investigation) sit inside the evidence chain, which commentators call a conflict.
+
+<!-- CK_INTERESTING_OTHER_END -->
+
+<!-- CK_4SQ_SECTION_START -->
+
+## Other Pages In This Section
+
+<div className="ck-4sq">
+
+<div className="ck-4sq-card ck-4sq-side">
+  <a className="ck-4sq-thumb" href="/laws/US_Intel/more/Human_Requirements"><img src="/img/evidence/14f90a40f5d68c452073308d5374fd2d50adcd3ffe0dcbe70a39c967191e9b8e.jpg" data-cid="QmdhWqrdvZMxknDa6fUm4yw5AJQbovKdxoweEwaRGNWcj1" alt="This is a high-resolution photograph or digital scan of a printed document featuring four paragraphs of English text on a white page." loading="lazy" /></a>
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/laws/US_Intel/more/Human_Requirements">Human Requirements: Law 2 - US Intelligence Services Forced Disclosure</a></p>
+    <p className="ck-4sq-text">The plain-English demand behind Law 2: every part of the intelligence community &mdash; CIA, NSA, DIA, NRO &mdash; releases what it holds, and blocking an employee from coming forward becomes a crime.</p>
+    <a className="ck-4sq-btn" href="/laws/US_Intel/more/Human_Requirements">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-stack">
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/laws/explain/all/laws_svg/needs_law_4">SVG Slide Requirements &mdash; Law #4</a></p>
+    <p className="ck-4sq-text">The slide specification for Law 4, built to the same template as the other three. The frame has to make one idea legible at a glance &mdash; investigators the public actually trusts, working inside the agencies.</p>
+    <a className="ck-4sq-btn" href="/laws/explain/all/laws_svg/needs_law_4">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-stack">
+  <a className="ck-4sq-thumb" href="/laws/other/analysis/Fixed/Any_more_to_Add"><img src="/img/evidence/c2386f1c8c5ae0406eceae81521cd9bd6d89fbee182ef2930fcd62fc96ac1046.jpg" data-cid="QmYZyBdE6ks5LccLQQ8ynaEEV3kC9Pa2eq1Yk5eMLR6X2D" alt="This image is a wide, horizontally stitched panoramic photograph showing a large crowd of young adults gathered outdoors for a political event on a tiered concrete university…" loading="lazy" /></a>
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/laws/other/analysis/Fixed/Any_more_to_Add">Additional Disclosure Items to Consider (Beyond the 175) &mdash; ALL ADDED</a></p>
+    <p className="ck-4sq-text">Twenty-six disclosure items proposed beyond the original list, all since folded into Schedule A of every bill. This is where family statements, witness-intimidation records and other late additions entered the text.</p>
+    <a className="ck-4sq-btn" href="/laws/other/analysis/Fixed/Any_more_to_Add">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-side">
+  <a className="ck-4sq-thumb" href="/laws/other/old/DoJ_FBI/more/Human_Requirements"><img src="/img/evidence/c3414325f85050f2af470f195a9c45093f02353cccc68e9426dfcf24e72b9ce4.jpg" data-cid="QmTmUTesGy1ZXAYU8SPfw7Vzf2K7WhX3r3dhEJQpZ1d3Y5" alt="This is a digital scan or photograph of a typed legal document written in English, dated November 20, 2019." loading="lazy" /></a>
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/laws/other/old/DoJ_FBI/more/Human_Requirements">Human Requirements: Law 1 - DoJ/FBI Forced Disclosure</a></p>
+    <p className="ck-4sq-text">The archived March 2026 version of the Law 1 requirements, kept so the drafting history stays visible. Read beside the current page, it shows what citizens asked for and what the lawyers changed.</p>
+    <a className="ck-4sq-btn" href="/laws/other/old/DoJ_FBI/more/Human_Requirements">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+
+</div>
+
+<!-- CK_4SQ_SECTION_END -->
+
+<!-- CK_4SQ_SITEWIDE_START -->
+
+## Elsewhere In The Investigation
+
+<div className="ck-4sq">
+
+<div className="ck-4sq-card ck-4sq-stack">
+  <a className="ck-4sq-thumb" href="/US_Intelligence/cia"><img src="/img/evidence/3819d968746b1713569a595c92c0059aa28e6c48597d68f63af7c38902fc38a0.jpg" data-cid="QmcxZzutKBWaWs9MuZdYVyshsXwtdwp6rqXYs3kngbh3m3" alt="This image is a flat, digital screenshot of the Google Trends user interface, showing search interest data." loading="lazy" /></a>
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/US_Intelligence/cia">CIA</a></p>
+    <p className="ck-4sq-text">Claims and questions about CIA involvement, including a campus national-security society whose online profiles reportedly came down two weeks after the shooting. Every listing is unverified and nobody on it is accused of anything.</p>
+    <a className="ck-4sq-btn" href="/US_Intelligence/cia">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-stack">
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/CoverUp/Huachuca_Records_Withheld">Fort Huachuca Records and JTF Reportedly Silenced (Claims)</a></p>
+    <p className="ck-4sq-text">Withheld flight manifests, denied FOIA requests, a reassigned joint task force and an unusual recusal. The lead stays unfalsifiable, which is itself the complaint.</p>
+    <a className="ck-4sq-btn" href="/CoverUp/Huachuca_Records_Withheld">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-side">
+  <a className="ck-4sq-thumb" href="/Proof_Intel_Services/N1098L_HADES_Over_UVU"><img src="/img/evidence/18b37da1e1a18c3370c821fbba568dea410129e8809590efe31bfa0073e56672.jpg" data-cid="Qme8FdeoxL5CitTFj32tsPnBu9rMSs5pHyqb1y86ZY6i1g" alt="This is a digital screenshot of a social media post on X (formerly Twitter) by a user named Tommy (@tjphager)." loading="lazy" /></a>
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/Proof_Intel_Services/N1098L_HADES_Over_UVU">N1098L HADES Over UVU</a></p>
+    <p className="ck-4sq-text">Public ADS-B puts an Army HADES jet in extremely low, slow passes near UVU before and after 12:23 PM. The master file&apos;s summary of it runs to four words: it was ours.</p>
+    <a className="ck-4sq-btn" href="/Proof_Intel_Services/N1098L_HADES_Over_UVU">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-stack">
+  <a className="ck-4sq-thumb" href="/Israel/israeli-tech-in-investigation"><img src="/img/evidence/d644be20e230a5c350a20b173472171cffe825d9791574fc739bd63ed9f2c10c.jpg" data-cid="QmcZHgJTxJNds6g66kV5yH7Kn7kf1Sn34Di9z2rxS7fH4p" alt="This is a wide-angle interior photograph of a long, spacious, and modern hallway or lobby area, likely inside a university or international building." loading="lazy" /></a>
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/Israel/israeli-tech-in-investigation">Israeli Technology Inside the Investigation (Claims)</a></p>
+    <p className="ck-4sq-text">If Israel is treated as a suspect, why is Israeli-made software extracting and authenticating the trial evidence? The striking part of the answer is that the defense has the data and is not raising it.</p>
+    <a className="ck-4sq-btn" href="/Israel/israeli-tech-in-investigation">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+
+</div>
+
+<!-- CK_4SQ_SITEWIDE_END -->
+
 {/* CK_AUTHOR_CREDIT */}
 
 *This website's author is [@HolonCitizen](https://x.com/HolonCitizen) on X and [YouTube/@HolonCitizen](https://www.youtube.com/@HolonCitizen). Follow me there.*

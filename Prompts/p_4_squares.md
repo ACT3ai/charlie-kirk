@@ -423,6 +423,12 @@ For the in-this-area four square (block 3):
     unused index.
   * If N is 5 or fewer, use every other page in the section and stop. Do not
     pad the grid with repeats and do not reach outside the section.
+  * If the section holds only TWO editable pages there is exactly one sister,
+    and a single card in a two-column grid reads as broken. Omit block 3
+    entirely on those pages and carry the one in-area link in the block 1
+    bullets instead. A Level 2 of one page has no in-area block at all.
+    Expected block sets by section size: 1 page "-O-W", 2 pages "HO-W",
+    3 or more "HOSW".
   * If the offset lands on a page whose media is banned, or on a CLAUDE.md, step
     to the next unused index rather than dropping the card.
 * An overview or hub page does not have to follow the offsets. Give it the four
@@ -491,7 +497,10 @@ MDX safety:
 * Write attributes camelCase: className, strokeWidth, strokeLinecap, loading.
 * Escape a literal apostrophe in JSX text as &apos; and use &mdash; &ndash;
   &rarr; rather than raw punctuation.
-* Quote marks inside an alt attribute become &quot;.
+* Quote marks inside an alt attribute become &quot;. But NEVER double-escape:
+  values coming out of {CARD_INDEX_CSV} are already escaped, so a blanket
+  & -> &amp; pass over them produces &amp;quot; and the page shows the entity as
+  literal text. Copy those columns through unchanged.
 * .md and .mdx BOTH compile through MDX here. Docusaurus 3.10 defaults
   markdown.format to 'mdx', and mdx1Compat.comments enables <!-- --> in .md via
   @slorber/remark-comment. So a stray brace in a .md page breaks the build just

@@ -45,6 +45,110 @@ The major improvement is that the investigation must specifically pursue each le
 ### Key Improvement: Conflict of Interest Trigger
 Previous version had no mechanism for what happens when the investigating agency is itself implicated. Section 4(c) now creates an automatic transfer to an independent commission. This addresses the single biggest weakness of the previous version.
 
+<!-- CK_INTERESTING_HERE_START -->
+
+## Interesting In This Area
+
+* [Law 3](/laws/Require_to_Investigate/Law_3_Require_to_Investigate) borrows independence from the Special Counsel model, and [its audit](/laws/Require_to_Investigate/more/Output_Analysis) checks whether it held.
+* [The Epstein Files Act](/laws/DoJ_FBI/more/Notes_1_DoJ_FBI) passed 427-1 and still produced a fraction of its [pages](/laws/other/analysis/Challenges).
+* [The charter](/laws/other/List_Of_Laws) is what [the compliance audit](/laws/other/analysis/Fixed/Laws_Not_Complying) checks each draft against.
+* [The threat model](/laws/other/Worries_By_Each_4_Laws) assumes every evasion route will be tried, including [an Israel exception](/laws/other/analysis/Fixed/Laws_Not_Complying).
+
+<!-- CK_INTERESTING_HERE_END -->
+
+<!-- CK_INTERESTING_OTHER_START -->
+
+## Interesting In Other Areas
+
+* [The court case](/court/overview) is the only prosecution to date, and [discovery is contested](/Law_Enforcement/court-proceedings).
+* [Government evidence](/gov/overview) is the category these bills are trying to prise open.
+* [The FBI section](/FBI/overview) holds material this bill would compel, including [the bomb-dog standdown](/FBI/Bomb_Dogs).
+* [The NCTC](/US_Intelligence/nctc) inquiry into foreign ties was reportedly halted before its leads ran out.
+
+<!-- CK_INTERESTING_OTHER_END -->
+
+<!-- CK_4SQ_SECTION_START -->
+
+## Other Pages In This Section
+
+<div className="ck-4sq">
+
+<div className="ck-4sq-card ck-4sq-stack">
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/laws/Require_to_Investigate/more/Output_Analysis">Output Analysis: Law 3 - Require Investigation</a></p>
+    <p className="ck-4sq-text">The audit of Law 3 against the citizen requirements: a mandated investigation with its own team, budget and timeline, and a parallel intelligence assessment directed by the DNI. Every requirement is checked against the section that carries it.</p>
+    <a className="ck-4sq-btn" href="/laws/Require_to_Investigate/more/Output_Analysis">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-side">
+  <a className="ck-4sq-thumb" href="/laws/US_Intel/more/Human_Requirements"><img src="/img/evidence/14f90a40f5d68c452073308d5374fd2d50adcd3ffe0dcbe70a39c967191e9b8e.jpg" data-cid="QmdhWqrdvZMxknDa6fUm4yw5AJQbovKdxoweEwaRGNWcj1" alt="This is a high-resolution photograph or digital scan of a printed document featuring four paragraphs of English text on a white page." loading="lazy" /></a>
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/laws/US_Intel/more/Human_Requirements">Human Requirements: Law 2 - US Intelligence Services Forced Disclosure</a></p>
+    <p className="ck-4sq-text">The plain-English demand behind Law 2: every part of the intelligence community &mdash; CIA, NSA, DIA, NRO &mdash; releases what it holds, and blocking an employee from coming forward becomes a crime.</p>
+    <a className="ck-4sq-btn" href="/laws/US_Intel/more/Human_Requirements">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-stack">
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/laws/explain/all/laws_svg/needs_law_4">SVG Slide Requirements &mdash; Law #4</a></p>
+    <p className="ck-4sq-text">The slide specification for Law 4, built to the same template as the other three. The frame has to make one idea legible at a glance &mdash; investigators the public actually trusts, working inside the agencies.</p>
+    <a className="ck-4sq-btn" href="/laws/explain/all/laws_svg/needs_law_4">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-stack">
+  <a className="ck-4sq-thumb" href="/laws/other/analysis/Fixed/Any_more_to_Add"><img src="/img/evidence/c2386f1c8c5ae0406eceae81521cd9bd6d89fbee182ef2930fcd62fc96ac1046.jpg" data-cid="QmYZyBdE6ks5LccLQQ8ynaEEV3kC9Pa2eq1Yk5eMLR6X2D" alt="This image is a wide, horizontally stitched panoramic photograph showing a large crowd of young adults gathered outdoors for a political event on a tiered concrete university…" loading="lazy" /></a>
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/laws/other/analysis/Fixed/Any_more_to_Add">Additional Disclosure Items to Consider (Beyond the 175) &mdash; ALL ADDED</a></p>
+    <p className="ck-4sq-text">Twenty-six disclosure items proposed beyond the original list, all since folded into Schedule A of every bill. This is where family statements, witness-intimidation records and other late additions entered the text.</p>
+    <a className="ck-4sq-btn" href="/laws/other/analysis/Fixed/Any_more_to_Add">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+
+</div>
+
+<!-- CK_4SQ_SECTION_END -->
+
+<!-- CK_4SQ_SITEWIDE_START -->
+
+## Elsewhere In The Investigation
+
+<div className="ck-4sq">
+
+<div className="ck-4sq-card ck-4sq-side">
+  <a className="ck-4sq-thumb" href="/court/overview"><img src="/img/evidence/fb14b85a283763fc0778887022c1800f900cd288c81b36603fb0a80dc7b62fc5.jpg" data-cid="QmRkRwe9cELH4Z5j9vs6hHkYxin1U7FHKWexRVJb8HXiXB" alt="This image is a digital screenshot of a news article from the WEAR News 3 website, viewed on a mobile device." loading="lazy" /></a>
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/court/overview">Court &amp; Trial</a></p>
+    <p className="ck-4sq-text">State of Utah v. Tyler Robinson, case 251403576, is where the government&apos;s narrative meets adversarial testing &mdash; every court date, the day-by-day preliminary hearing transcripts, and the inconclusive ATF ballistics.</p>
+    <a className="ck-4sq-btn" href="/court/overview">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-stack">
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/gov/overview">Government Evidence</a></p>
+    <p className="ck-4sq-text">What government bodies have done with the evidence in this case, gathered in one place &mdash; withheld records, handling questions, and the specific asks that follow from them.</p>
+    <a className="ck-4sq-btn" href="/gov/overview">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-stack">
+  <a className="ck-4sq-thumb" href="/FBI/Bomb_Dogs"><img src="/img/evidence/b90230630e18be4dc0ac4bf2ae7ff4ae69216058dbb4e731e3ca88561be86e46.jpg" data-cid="QmTcA37prTQA5JtGYAH5JCvr53XN7221XQJr1nGt3tr1Uf" alt="This is a satellite map image annotated with a timeline and route details tracing the movements of a suspect referred to as a &quot;bomber&quot; in Washington, D.C." loading="lazy" /></a>
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/FBI/Bomb_Dogs">Bomb Dogs Standdown</a></p>
+    <p className="ck-4sq-text">The reported claim is that bomb-sniffing dogs were kept from certain zones of the scene. If a device was involved, K-9 screening was the one method most likely to have caught it &mdash; days before the ground was <a href="/FBI/Crime_Scene_Paving">paved</a>.</p>
+    <a className="ck-4sq-btn" href="/FBI/Bomb_Dogs">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-stack">
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/US_Intelligence/nctc">NCTC &mdash; National Counterterrorism Center</a></p>
+    <p className="ck-4sq-text">The center that integrates terrorism intelligence across agencies, its chain of command running up to the President, and the reported order that stopped its foreign-involvement inquiry.</p>
+    <a className="ck-4sq-btn" href="/US_Intelligence/nctc">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+
+</div>
+
+<!-- CK_4SQ_SITEWIDE_END -->
+
 ## Sources
 - Special Counsel regulations: https://www.law.cornell.edu/cfr/text/28/part-600
 - Church Committee: https://www.senate.gov/about/powers-procedures/investigations/church-committee.htm

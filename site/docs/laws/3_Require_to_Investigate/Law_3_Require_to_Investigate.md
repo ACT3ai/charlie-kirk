@@ -1645,6 +1645,112 @@ Peer laws: [<span className="off-lead">Law 1 - DoJ/FBI Disclosure</span>](/laws/
 
 Precedent: Epstein Files Transparency Act | JFK Records Act
 
+<!-- CK_INTERESTING_HERE_START -->
+
+## Interesting In This Area
+
+* [This law's requirement](/laws/Require_to_Investigate/more/Human_Requirements) answers a different problem than disclosure: agencies reportedly not working the case.
+* [The audit](/laws/Require_to_Investigate/more/Output_Analysis) records a mandated team, budget and timeline, plus a [DNI assessment](/laws/Require_to_Investigate/more/Notes_3_Require_to_Investigate).
+* [The Epstein Files Act](/laws/DoJ_FBI/more/Notes_1_DoJ_FBI) passed 427-1 and still produced a fraction of its [pages](/laws/other/analysis/Challenges).
+* [Law 4](/laws/Trusted_Investigations/Law_4_Trusted_Investigations) gives three named investigators [two teams each](/laws/Trusted_Investigations/more/Output_Analysis), six teams in total.
+
+<!-- CK_INTERESTING_HERE_END -->
+
+<!-- CK_INTERESTING_OTHER_START -->
+
+## Interesting In Other Areas
+
+* [Joe Kent](/US_Intelligence/joe-kent) says a [foreign-nexus review](/CoverUp/Joe_Kent_Halt) stopped before its leads were exhausted.
+* [Cause of death](/Cause_of_Death/overview) is the question the released record still cannot settle.
+* [The FBI section](/FBI/overview) holds material this bill would compel, including [the bomb-dog standdown](/FBI/Bomb_Dogs).
+* [Government evidence](/gov/overview) held back is the subject; [proof of intel involvement](/Proof_Intel_Services/overview) is the argument.
+
+<!-- CK_INTERESTING_OTHER_END -->
+
+<!-- CK_4SQ_SECTION_START -->
+
+## Other Pages In This Section
+
+<div className="ck-4sq">
+
+<div className="ck-4sq-card ck-4sq-side">
+  <a className="ck-4sq-thumb" href="/laws/Require_to_Investigate/more/Human_Requirements"><img src="/img/evidence/14f90a40f5d68c452073308d5374fd2d50adcd3ffe0dcbe70a39c967191e9b8e.jpg" data-cid="QmdhWqrdvZMxknDa6fUm4yw5AJQbovKdxoweEwaRGNWcj1" alt="This is a high-resolution photograph or digital scan of a printed document featuring four paragraphs of English text on a white page." loading="lazy" /></a>
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/laws/Require_to_Investigate/more/Human_Requirements">Human Requirements: Law 3 - Require Investigation</a></p>
+    <p className="ck-4sq-text">The demand behind Law 3 is different from disclosure. The concern is not only that files are withheld but that the case is reportedly not being worked, so the requirement is stated plainly: the FBI and the intelligence services must investigate.</p>
+    <a className="ck-4sq-btn" href="/laws/Require_to_Investigate/more/Human_Requirements">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-stack">
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/laws/Trusted_Investigations/more/Output_Analysis">Output Analysis: Law 4 - Trusted Investigations</a></p>
+    <p className="ck-4sq-text">The audit of Law 4: two teams per designated investigator, six in all, each with sole authority over who joins. Every citizen requirement is checked against the section that delivers it.</p>
+    <a className="ck-4sq-btn" href="/laws/Trusted_Investigations/more/Output_Analysis">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-stack">
+  <a className="ck-4sq-thumb" href="/laws/explain/all/laws_svg/needs_law_2"><img src="/img/evidence/b056baca5b4912ef046059e1d84f6d7774e61aeaa406aabec343166f4509af2a.jpg" data-cid="QmchoXNqJja8XLR3nZ6CLpb98RpryVMEASC1BuMBkNkPY5" alt="This image is a forensic evidence photograph or document slide presenting physical evidence related to an investigation by the Bureau of Alcohol, Tobacco, Firearms and Explosives…" loading="lazy" /></a>
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/laws/explain/all/laws_svg/needs_law_2">SVG Slide Requirements &mdash; Law #2</a></p>
+    <p className="ck-4sq-text">The slide specification for Law 2, matched to the Law 1 palette so the four read as one set. The frame has a single job: make plain that no agency file bearing on how Charlie Kirk was killed stays inside the building.</p>
+    <a className="ck-4sq-btn" href="/laws/explain/all/laws_svg/needs_law_2">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-stack">
+  <a className="ck-4sq-thumb" href="/laws/other/analysis/Challenges"><img src="/img/evidence/781289454f0c0fe4330607de536c9f1579c6ddf0e0d129419cc5507661c91b58.jpg" data-cid="QmT4Curwh5WArDih672Y17mXCnjixgK5ZFjWMm5yC9N61g" alt="This is a digital screenshot of a desktop or tablet web browser displaying a Google Maps satellite view of Tuba City Airport in Arizona, alongside an informational side panel." loading="lazy" /></a>
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/laws/other/analysis/Challenges">Factual Challenges &mdash; REMAINING UNFIXED ITEMS</a></p>
+    <p className="ck-4sq-text">The unfixed column of the fact-check. Nine of ten challenges were resolved and moved out; this page keeps the one that was not, a disclosure-item count that still has to be harmonised across the documents.</p>
+    <a className="ck-4sq-btn" href="/laws/other/analysis/Challenges">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+
+</div>
+
+<!-- CK_4SQ_SECTION_END -->
+
+<!-- CK_4SQ_SITEWIDE_START -->
+
+## Elsewhere In The Investigation
+
+<div className="ck-4sq">
+
+<div className="ck-4sq-card ck-4sq-stack">
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/US_Intelligence/joe-kent">Joe Kent</a></p>
+    <p className="ck-4sq-text">The director of the National Counterterrorism Center says the FBI shut his inquiry down before he could run his leads out. He stepped down in order to say it on the record &mdash; which is what separates this from an anonymous thread.</p>
+    <a className="ck-4sq-btn" href="/US_Intelligence/joe-kent">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-side">
+  <a className="ck-4sq-thumb" href="/CoverUp/Joe_Kent_Halt"><img src="/img/evidence/e217e5ea8b8c6f947a3211c39c88806566c75bddc1b6735dae6006e04ea60178.jpg" data-cid="QmaFgn1PEAjegjGm8537AxzH7VRBuN9DyEexqWfgRqweYz" alt="A vertical screenshot of a digital news article from *The New York Times* as viewed on a mobile device interface." loading="lazy" /></a>
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/CoverUp/Joe_Kent_Halt">FBI Halt of Joe Kent&apos;s Counterterrorism Leads (Claims)</a></p>
+    <p className="ck-4sq-text">Reported allegations that a counterterrorism review into a possible foreign role was stopped before its leads were run down. Every person named is a living public figure who denies or has not commented, and nothing here is a finding of fact.</p>
+    <a className="ck-4sq-btn" href="/CoverUp/Joe_Kent_Halt">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-side">
+  <a className="ck-4sq-thumb" href="/FBI/overview"><img src="/img/evidence/f78f3a3ede1a3bbfda3cfd42d80f52f48dc1aedb7cfa2f64f5afb598372c125f.jpg" data-cid="" alt="Visual Representation of Reported Injuries — anatomical chart marking, in red, the reported injury locations across the front and back torso, the neck, the internal chest, and two views of the brain." loading="lazy" /></a>
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/FBI/overview">FBI</a></p>
+    <p className="ck-4sq-text">The hub for every federal thread &mdash; the briefings, the ballistics, the halted foreign-nexus inquiry, and the witness who says he was advised to erase his own video. Start here if this is your first FBI page.</p>
+    <a className="ck-4sq-btn" href="/FBI/overview">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-side">
+  <a className="ck-4sq-thumb" href="/Cause_of_Death/overview"><img src="/img/evidence/f78f3a3ede1a3bbfda3cfd42d80f52f48dc1aedb7cfa2f64f5afb598372c125f.jpg" data-cid="" alt="Visual Representation of Reported Injuries — anatomical chart marking, in red, the reported injury locations across the front and back torso, the neck, the internal chest, and two views of the brain." loading="lazy" /></a>
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/Cause_of_Death/overview">Cause of Death</a></p>
+    <p className="ck-4sq-text">One page stating what most independent investigators had concluded by July 2026 about what killed Charlie Kirk and what did not. The official account is a single .30-06 round; this is where the reasons for rejecting it are gathered.</p>
+    <a className="ck-4sq-btn" href="/Cause_of_Death/overview">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+
+</div>
+
+<!-- CK_4SQ_SITEWIDE_END -->
+
 {/* CK_AUTHOR_CREDIT */}
 
 *This website's author is [@HolonCitizen](https://x.com/HolonCitizen) on X and [YouTube/@HolonCitizen](https://www.youtube.com/@HolonCitizen). Follow me there.*

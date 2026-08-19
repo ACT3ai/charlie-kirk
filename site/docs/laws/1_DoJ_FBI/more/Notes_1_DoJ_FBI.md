@@ -57,6 +57,111 @@ This approach draws from the Epstein Act's enumeration of specific record catego
 - **Public pressure campaign** through the 175-item list repository creates accountability
 - The Epstein Act's compliance failures demonstrate that automatic enforcement mechanisms are essential
 
+<!-- CK_INTERESTING_HERE_START -->
+
+## Interesting In This Area
+
+* [The Epstein Files Act](/laws/DoJ_FBI/Law_1_DoJ_FBI) passed 427-1 and still produced a fraction of its [pages](/laws/other/analysis/Challenges).
+* [Section 11 of Law 1](/laws/DoJ_FBI/Law_1_DoJ_FBI) removes presidential override, and [preservation](/laws/DoJ_FBI/more/Output_Analysis) triggers at introduction.
+* [The charter](/laws/other/List_Of_Laws) is what [the compliance audit](/laws/other/analysis/Fixed/Laws_Not_Complying) checks each draft against.
+* [The threat model](/laws/other/Worries_By_Each_4_Laws) assumes every evasion route will be tried, including [an Israel exception](/laws/other/analysis/Fixed/Laws_Not_Complying).
+
+<!-- CK_INTERESTING_HERE_END -->
+
+<!-- CK_INTERESTING_OTHER_START -->
+
+## Interesting In Other Areas
+
+* [The court case](/court/overview) is the only prosecution to date, and [discovery is contested](/Law_Enforcement/court-proceedings).
+* [Fort Huachuca manifests](/CoverUp/Huachuca_Records_Withheld) were reportedly withheld and FOIA requests denied.
+* [The CIA](/US_Intelligence/cia) delayed JFK-era releases for decades under a law that ordered them.
+* [Your Actions Fix It](/Your_Actions_Fix_It/overview) is where a reader turns this into a phone call.
+
+<!-- CK_INTERESTING_OTHER_END -->
+
+<!-- CK_4SQ_SECTION_START -->
+
+## Other Pages In This Section
+
+<div className="ck-4sq">
+
+<div className="ck-4sq-card ck-4sq-stack">
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/laws/DoJ_FBI/more/Output_Analysis">Output Analysis: Law 1 - DoJ/FBI Forced Disclosure</a></p>
+    <p className="ck-4sq-text">A requirement-by-requirement audit of Law 1 against what citizens actually asked for, each one marked against the section that does the work. It also tracks what changed: ninety days became thirty, and presidential override was removed outright.</p>
+    <a className="ck-4sq-btn" href="/laws/DoJ_FBI/more/Output_Analysis">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-stack">
+  <a className="ck-4sq-thumb" href="/laws/Trusted_Investigations/more/Human_Requirements"><img src="/img/evidence/af997f70d8e3ffea08d811389de0b4fcc56f6ae11e6c84c08938f7621be0720e.jpg" data-cid="QmdEaqFxfmmuyxUmSBkKRTN3rf67hTZedsT2KpA92xndDR" alt="This image is a digital medical illustration depicting a side-profile view of a human head and neck, focusing on the cervical spine." loading="lazy" /></a>
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/laws/Trusted_Investigations/more/Human_Requirements">Human Requirements: Law 4 - Trusted Investigations</a></p>
+    <p className="ck-4sq-text">The demand behind Law 4, in plain words: named public figures the audience actually trusts each get their own team inside the FBI and inside the intelligence community, and each picks who works on it.</p>
+    <a className="ck-4sq-btn" href="/laws/Trusted_Investigations/more/Human_Requirements">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-stack">
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/laws/US_Intel/more/Output_Analysis">Output Analysis: Law 2 - US Intelligence Services Forced Disclosure</a></p>
+    <p className="ck-4sq-text">The audit of Law 2 against the citizen requirements: eight broad categories of covered information, a thirty-day catch-all mandate, and a final category built to cover whatever the list missed.</p>
+    <a className="ck-4sq-btn" href="/laws/US_Intel/more/Output_Analysis">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-stack">
+  <a className="ck-4sq-thumb" href="/laws/other/List_Of_Laws"><img src="/img/evidence/8b74a7acc55ffaca666dfa957f06d89f9f1cbbe5ea405c0a256b707fb3153696.png" data-cid="QmT596hXPvEdGLF4swbMBMxVYYkwhwevjARTJYMXBiHcpM" alt="This image is a horizontal, close-up digital screenshot of a structured spreadsheet table containing text in English." loading="lazy" /></a>
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/laws/other/List_Of_Laws">Charlie Kirk Files Forced Disclosure -- Summary of Four Proposed Federal Laws</a></p>
+    <p className="ck-4sq-text">The charter document. All four bills summarised in order, with the agencies each one reaches and the case number they were drafted around. This is the file every compliance audit checks the drafts against.</p>
+    <a className="ck-4sq-btn" href="/laws/other/List_Of_Laws">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+
+</div>
+
+<!-- CK_4SQ_SECTION_END -->
+
+<!-- CK_4SQ_SITEWIDE_START -->
+
+## Elsewhere In The Investigation
+
+<div className="ck-4sq">
+
+<div className="ck-4sq-card ck-4sq-side">
+  <a className="ck-4sq-thumb" href="/court/overview"><img src="/img/evidence/fb14b85a283763fc0778887022c1800f900cd288c81b36603fb0a80dc7b62fc5.jpg" data-cid="QmRkRwe9cELH4Z5j9vs6hHkYxin1U7FHKWexRVJb8HXiXB" alt="This image is a digital screenshot of a news article from the WEAR News 3 website, viewed on a mobile device." loading="lazy" /></a>
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/court/overview">Court &amp; Trial</a></p>
+    <p className="ck-4sq-text">State of Utah v. Tyler Robinson, case 251403576, is where the government&apos;s narrative meets adversarial testing &mdash; every court date, the day-by-day preliminary hearing transcripts, and the inconclusive ATF ballistics.</p>
+    <a className="ck-4sq-btn" href="/court/overview">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-stack">
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/CoverUp/Huachuca_Records_Withheld">Fort Huachuca Records and JTF Reportedly Silenced (Claims)</a></p>
+    <p className="ck-4sq-text">Withheld flight manifests, denied FOIA requests, a reassigned joint task force and an unusual recusal. The lead stays unfalsifiable, which is itself the complaint.</p>
+    <a className="ck-4sq-btn" href="/CoverUp/Huachuca_Records_Withheld">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-stack">
+  <a className="ck-4sq-thumb" href="/US_Intelligence/cia"><img src="/img/evidence/3819d968746b1713569a595c92c0059aa28e6c48597d68f63af7c38902fc38a0.jpg" data-cid="QmcxZzutKBWaWs9MuZdYVyshsXwtdwp6rqXYs3kngbh3m3" alt="This image is a flat, digital screenshot of the Google Trends user interface, showing search interest data." loading="lazy" /></a>
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/US_Intelligence/cia">CIA</a></p>
+    <p className="ck-4sq-text">Claims and questions about CIA involvement, including a campus national-security society whose online profiles reportedly came down two weeks after the shooting. Every listing is unverified and nobody on it is accused of anything.</p>
+    <a className="ck-4sq-btn" href="/US_Intelligence/cia">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-side">
+  <a className="ck-4sq-thumb" href="/Your_Actions_Fix_It/overview"><img src="/img/evidence/6301de96e2a78e6a3fd308434fd6dfcd02861b729ee1fa5fa108bc133bd88107.jpg" data-cid="QmTJ3jKkeJNSHjqsJrur1mzk6Yz3KLS3VC2GJALASaBbeq" alt="A digital screenshot of a legislative web page displaying a structured table titled &quot;History.&quot; The table documents the chronologically ordered legislative actions taken on a…" loading="lazy" /></a>
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/Your_Actions_Fix_It/overview">Your Actions Fix It</a></p>
+    <p className="ck-4sq-text">Concrete things one person can do: records requests, contacting representatives, preserving and sharing evidence. It is the shortest route from reading this site to changing anything on it.</p>
+    <a className="ck-4sq-btn" href="/Your_Actions_Fix_It/overview">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+
+</div>
+
+<!-- CK_4SQ_SITEWIDE_END -->
+
 ## Sources
 - Epstein Files Transparency Act: https://www.congress.gov/bill/119th-congress/house-bill/4405
 - JFK Records Act: https://www.congress.gov/bill/102nd-congress/senate-bill/3006

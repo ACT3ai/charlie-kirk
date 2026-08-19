@@ -72,6 +72,11 @@ or work under /tmp/fsq_agent_N/. A sibling agent clobbering your working file mi
 already happened once.
   * JSX safety: no bare { or }, camelCase attributes, &apos; &mdash; &ndash; &rarr;, &quot;
     inside alt text.
+  * DO NOT re-escape card_index.csv values. media_alt, title and teaser already
+    contain HTML entities. A blanket & -> &amp; pass turns &quot; into &amp;quot;,
+    which renders as a literal "&quot;" on the page. 117 of those shipped before
+    this was caught. Escape only bare ampersands, or simply copy the CSV value
+    through unchanged - which is what it is there for.
 
 DEFAMATION - this is public content.
   * Never state as fact that a living person committed a crime. Attribute: reportedly,

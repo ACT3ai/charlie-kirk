@@ -23,6 +23,108 @@ Former NCTC director [Joe Kent](/US_Intelligence/joe-kent) has said on the recor
 
 See also: [Law 1 Requirements](/laws/DoJ_FBI/more/Human_Requirements) | [Law 2 Requirements](/laws/US_Intel/more/Human_Requirements) (disclosure counterparts) | [Law 4 Requirements](/laws/Trusted_Investigations/more/Human_Requirements) (trusted oversight)
 
+<!-- CK_INTERESTING_HERE_START -->
+
+## Interesting In This Area
+
+* [Law 3](/laws/Require_to_Investigate/Law_3_Require_to_Investigate) turns this list into statute; [the audit](/laws/Require_to_Investigate/more/Output_Analysis) marks each requirement against a section.
+* [Law 2](/laws/US_Intel/Law_2_US_Intel) limits source protection to [active sources only](/laws/US_Intel/more/Notes_2_US_Intel), closing the usual exemption.
+* [Contested claims](/laws/other/analysis/Fixed/Challenges) are framed as records requests, asking for all records relating to whether.
+* [The slide specifications](/laws/explain/all/laws_svg/needs) exist because the argument has to survive being screenshotted.
+
+<!-- CK_INTERESTING_HERE_END -->
+
+<!-- CK_INTERESTING_OTHER_START -->
+
+## Interesting In Other Areas
+
+* [Cause of death](/Cause_of_Death/overview) is the question the released record still cannot settle.
+* [The autopsy report](/Medical/autopsy_report_not_public) has never been published, and [the ATF comparison](/Gun_Bullet/ATF_Fragment_Inconclusive) came back inconclusive.
+* [Proof of intelligence involvement](/Proof_Intel_Services/overview) is the material an actual investigation would have to reach.
+* [Your Actions Fix It](/Your_Actions_Fix_It/overview) is where a reader turns this into a phone call.
+
+<!-- CK_INTERESTING_OTHER_END -->
+
+<!-- CK_4SQ_SECTION_START -->
+
+## Other Pages In This Section
+
+<div className="ck-4sq">
+
+<div className="ck-4sq-card ck-4sq-stack">
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/laws/Require_to_Investigate/more/Notes_3_Require_to_Investigate">Notes: Law 3 - Require Investigation</a></p>
+    <p className="ck-4sq-text">The research behind Law 3 &mdash; the Special Counsel regulations and the Church Committee, read for one question only: how do you make investigative independence structural rather than merely promised?</p>
+    <a className="ck-4sq-btn" href="/laws/Require_to_Investigate/more/Notes_3_Require_to_Investigate">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-stack">
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/laws/US_Intel/Law_2_US_Intel">Law 2: Charlie Kirk Investigation - Intelligence Services Disclosure Act</a></p>
+    <p className="ck-4sq-text">Full text of the intelligence disclosure act: CIA, NSA, DIA, NRO and every IC element releasing findings within 30 days, with protection limited to active sources.</p>
+    <a className="ck-4sq-btn" href="/laws/US_Intel/Law_2_US_Intel">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-stack">
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/laws/explain/all/laws_svg/needs_law_3">SVG Slide Requirements &mdash; Law #3</a></p>
+    <p className="ck-4sq-text">The slide specification for Law 3, in the same deep-navy, red and gold template as the rest. One message has to land in one frame: investigating this killing is a duty, not a choice.</p>
+    <a className="ck-4sq-btn" href="/laws/explain/all/laws_svg/needs_law_3">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-stack">
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/laws/other/analysis/Fixed/Any_Problems">Problems, Vulnerabilities, and Recommended Fixes &mdash; FIXED ITEMS</a></p>
+    <p className="ck-4sq-text">The attorney review of all four bills, with the vulnerabilities already closed &mdash; including the slow-rolling defence of producing records in a format nobody can search. Each item names the section that fixed it.</p>
+    <a className="ck-4sq-btn" href="/laws/other/analysis/Fixed/Any_Problems">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+
+</div>
+
+<!-- CK_4SQ_SECTION_END -->
+
+<!-- CK_4SQ_SITEWIDE_START -->
+
+## Elsewhere In The Investigation
+
+<div className="ck-4sq">
+
+<div className="ck-4sq-card ck-4sq-side">
+  <a className="ck-4sq-thumb" href="/Cause_of_Death/overview"><img src="/img/evidence/f78f3a3ede1a3bbfda3cfd42d80f52f48dc1aedb7cfa2f64f5afb598372c125f.jpg" data-cid="" alt="Visual Representation of Reported Injuries — anatomical chart marking, in red, the reported injury locations across the front and back torso, the neck, the internal chest, and two views of the brain." loading="lazy" /></a>
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/Cause_of_Death/overview">Cause of Death</a></p>
+    <p className="ck-4sq-text">One page stating what most independent investigators had concluded by July 2026 about what killed Charlie Kirk and what did not. The official account is a single .30-06 round; this is where the reasons for rejecting it are gathered.</p>
+    <a className="ck-4sq-btn" href="/Cause_of_Death/overview">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-stack">
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/Medical/autopsy_report_not_public">Autopsy Report Not Public</a></p>
+    <p className="ck-4sq-text">Two different claims get blurred together: that no autopsy happened, and that one happened and the report was never released. The second is the accurate one, and it is why almost nothing here is settled.</p>
+    <a className="ck-4sq-btn" href="/Medical/autopsy_report_not_public">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-stack">
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/Proof_Intel_Services/overview">Proof Intel Services</a></p>
+    <p className="ck-4sq-text">Halted foreign inquiries, an ISR jet overhead, foreign phones, VIP flights and scene control. Indicators rather than proof &mdash; but they are the indicators an intelligence service leaves behind.</p>
+    <a className="ck-4sq-btn" href="/Proof_Intel_Services/overview">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-side">
+  <a className="ck-4sq-thumb" href="/Your_Actions_Fix_It/overview"><img src="/img/evidence/6301de96e2a78e6a3fd308434fd6dfcd02861b729ee1fa5fa108bc133bd88107.jpg" data-cid="QmTJ3jKkeJNSHjqsJrur1mzk6Yz3KLS3VC2GJALASaBbeq" alt="A digital screenshot of a legislative web page displaying a structured table titled &quot;History.&quot; The table documents the chronologically ordered legislative actions taken on a…" loading="lazy" /></a>
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/Your_Actions_Fix_It/overview">Your Actions Fix It</a></p>
+    <p className="ck-4sq-text">Concrete things one person can do: records requests, contacting representatives, preserving and sharing evidence. It is the shortest route from reading this site to changing anything on it.</p>
+    <a className="ck-4sq-btn" href="/Your_Actions_Fix_It/overview">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+
+</div>
+
+<!-- CK_4SQ_SITEWIDE_END -->
+
 {/* CK_AUTHOR_CREDIT */}
 
 *This website's author is [@HolonCitizen](https://x.com/HolonCitizen) on X and [YouTube/@HolonCitizen](https://www.youtube.com/@HolonCitizen). Follow me there.*

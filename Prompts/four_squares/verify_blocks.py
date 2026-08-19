@@ -64,6 +64,8 @@ def check(path):
             fails.append(f"{b}: duplicate card target")
         if self_url and self_url in targets:
             fails.append(f"{b}: page cards itself")
+        # A one-card "four square" looks broken in a 2-column grid. An area with
+        # only one sister omits the grid entirely and links it from the bullets.
         if seg.strip() and len(targets) not in (0, 2, 3, 4):
             fails.append(f"{b}: {len(targets)} cards")
         if re.search(r"https?://(ipfs\.io|[a-z0-9]+\.ipfs\.dweb\.link)[^\"']*\.(jpg|jpeg|png|webp)", seg):

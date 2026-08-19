@@ -26,6 +26,108 @@ The need for this law is illustrated by former NCTC director [Joe Kent](/US_Inte
 
 See also: [Law 1 Requirements](/laws/DoJ_FBI/more/Human_Requirements) (law enforcement counterpart)
 
+<!-- CK_INTERESTING_HERE_START -->
+
+## Interesting In This Area
+
+* [Law 2](/laws/US_Intel/Law_2_US_Intel) turns this list into statute, and [the audit](/laws/US_Intel/more/Output_Analysis) marks each item against a section.
+* [Blocking an employee from coming forward](/laws/US_Intel/more/Notes_2_US_Intel) is written as a crime, not a policy breach.
+* [Law 4](/laws/Trusted_Investigations/Law_4_Trusted_Investigations) gives three named investigators [two teams each](/laws/Trusted_Investigations/more/Output_Analysis), six teams in total.
+* [The charter](/laws/other/List_Of_Laws) is what [the compliance audit](/laws/other/analysis/Fixed/Laws_Not_Complying) checks each draft against.
+
+<!-- CK_INTERESTING_HERE_END -->
+
+<!-- CK_INTERESTING_OTHER_START -->
+
+## Interesting In Other Areas
+
+* [Joe Kent](/US_Intelligence/joe-kent) says a [foreign-nexus review](/CoverUp/Joe_Kent_Halt) stopped before its leads were exhausted.
+* [Russell Brand](/Israel/Russell_Brand_Cabinet_Claims) attributes a cabinet-meeting account to two anonymous sources, six days after.
+* [The Fix section](/Fix/overview) is the plain-language version of what these four bills would force open.
+* [Government evidence](/gov/overview) withheld is the whole reason this list exists.
+
+<!-- CK_INTERESTING_OTHER_END -->
+
+<!-- CK_4SQ_SECTION_START -->
+
+## Other Pages In This Section
+
+<div className="ck-4sq">
+
+<div className="ck-4sq-card ck-4sq-stack">
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/laws/US_Intel/more/Notes_2_US_Intel">Notes: Law 2 - US Intelligence Services Forced Disclosure</a></p>
+    <p className="ck-4sq-text">The research behind Law 2, and its warning. The JFK Records Act ordered release in 1992 and agencies were still withholding in 2025. Intelligence disclosure laws fail on their exemptions, which is why this draft narrows protection to active sources only.</p>
+    <a className="ck-4sq-btn" href="/laws/US_Intel/more/Notes_2_US_Intel">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-stack">
+  <a className="ck-4sq-thumb" href="/laws/explain/all/overview"><img src="/img/evidence/c51ef651e0e2fd9187ac8fa0b5d25908baba279b0c03f1ea93f6522fa3cedbb4.jpg" data-cid="QmSmChQuZCJ5h3PSeZuZDQRFptgYRDFzS3H33yY3VnZjTM" alt="This image shows a wide-angle, daytime view of a crowded outdoor courtyard on a university campus, featuring tiered grassy lawns and modern multi-story buildings." loading="lazy" /></a>
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/laws/explain/all/overview">Four Laws to Force the Truth About Charlie Kirk</a></p>
+    <p className="ck-4sq-text">The launch article for all four laws in one place: why the Epstein Files Act is the model, and what each bill would force into daylight. Start here if you have never read the statutory text.</p>
+    <a className="ck-4sq-btn" href="/laws/explain/all/overview">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-stack">
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/laws/other/analysis/Fixed/Challenges">Factual Challenges Analysis &mdash; FIXED ITEMS</a></p>
+    <p className="ck-4sq-text">The fact-check that hardened the drafting. Every contested claim was reframed as a records request rather than an assertion, which is why the bills ask for all records relating to whether, instead of stating conclusions.</p>
+    <a className="ck-4sq-btn" href="/laws/other/analysis/Fixed/Challenges">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-stack">
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/laws/other/old/DoJ_FBI/more/Notes_1_DoJ_FBI">Notes: Law 1 - DoJ/FBI Forced Disclosure</a></p>
+    <p className="ck-4sq-text">The archived legal-research notes for Law 1, preserved from the earlier draft. The precedents are the same; what changed is how much enforcement the drafters concluded was necessary.</p>
+    <a className="ck-4sq-btn" href="/laws/other/old/DoJ_FBI/more/Notes_1_DoJ_FBI">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+
+</div>
+
+<!-- CK_4SQ_SECTION_END -->
+
+<!-- CK_4SQ_SITEWIDE_START -->
+
+## Elsewhere In The Investigation
+
+<div className="ck-4sq">
+
+<div className="ck-4sq-card ck-4sq-stack">
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/US_Intelligence/joe-kent">Joe Kent</a></p>
+    <p className="ck-4sq-text">The director of the National Counterterrorism Center says the FBI shut his inquiry down before he could run his leads out. He stepped down in order to say it on the record &mdash; which is what separates this from an anonymous thread.</p>
+    <a className="ck-4sq-btn" href="/US_Intelligence/joe-kent">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-stack">
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/Israel/Russell_Brand_Cabinet_Claims">Russell Brand Cabinet Claims</a></p>
+    <p className="ck-4sq-text">Brand says two people who were in a cabinet meeting told him foreign involvement and domestic accomplices were both taken off the table six days in. Anonymous second-hand sourcing, unconfirmed by anyone named.</p>
+    <a className="ck-4sq-btn" href="/Israel/Russell_Brand_Cabinet_Claims">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-stack">
+  <a className="ck-4sq-thumb" href="/Fix/overview"><img src="/img/evidence/319de07fd86b3f460e4ac35cf156448a9ed6d2186fad7ab5595782d7d2134914.jpg" data-cid="QmVaJDW5VH68g98jBNsSoawPNyrG6fsaCMmrdUfGXhHJct" alt="This is a digital composite image designed as a political or investigative graphic, featuring portraits of public figures Charlie Kirk and Candace Owens overlaid against two…" loading="lazy" /></a>
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/Fix/overview">New Laws (Fix)</a></p>
+    <p className="ck-4sq-text">Four federal laws modeled on the Epstein Files Act, drafted to force disclosure and mandate a real investigation. Every unanswered question in the aftermath is downstream of records nobody can compel today.</p>
+    <a className="ck-4sq-btn" href="/Fix/overview">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-stack">
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/gov/overview">Government Evidence</a></p>
+    <p className="ck-4sq-text">What government bodies have done with the evidence in this case, gathered in one place &mdash; withheld records, handling questions, and the specific asks that follow from them.</p>
+    <a className="ck-4sq-btn" href="/gov/overview">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+
+</div>
+
+<!-- CK_4SQ_SITEWIDE_END -->
+
 {/* CK_AUTHOR_CREDIT */}
 
 *This website's author is [@HolonCitizen](https://x.com/HolonCitizen) on X and [YouTube/@HolonCitizen](https://www.youtube.com/@HolonCitizen). Follow me there.*

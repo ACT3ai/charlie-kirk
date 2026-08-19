@@ -1347,6 +1347,111 @@ Peer laws: Law 2 - US Intel Disclosure | [<span className="off-lead">Law 3 - Man
 
 Precedent: Epstein Files Transparency Act | JFK Records Act
 
+<!-- CK_INTERESTING_HERE_START -->
+
+## Interesting In This Area
+
+* [The Epstein Files Act](/laws/DoJ_FBI/more/Notes_1_DoJ_FBI) passed 427-1 and still produced a fraction of its [pages](/laws/other/analysis/Challenges).
+* [Section 11](/laws/DoJ_FBI/more/Output_Analysis) removes presidential override, the mechanism that [stalled the JFK records](/laws/DoJ_FBI/more/Notes_1_DoJ_FBI) for decades.
+* [Schedule A](/laws/other/analysis/Fixed/Any_more_to_Add) grew from 175 items to 208, and [one count](/laws/other/analysis/Challenges) still needs harmonising.
+* [Section 12D](/laws/other/analysis/Fixed/Any_Problems) requires searchable PDFs and machine-readable indexes, killing the [unusable-format defence](/laws/other/Worries_By_Each_4_Laws).
+
+<!-- CK_INTERESTING_HERE_END -->
+
+<!-- CK_INTERESTING_OTHER_START -->
+
+## Interesting In Other Areas
+
+* [The FBI section](/FBI/overview) holds material this bill would compel, including [the bomb-dog standdown](/FBI/Bomb_Dogs).
+* [Sealed warrants](/Legal/Evidence-Sealing-2026) and gag orders are why ordinary discovery will not produce these files.
+* [The autopsy report](/Medical/autopsy_report_not_public) has never been published, and [the ATF comparison](/Gun_Bullet/ATF_Fragment_Inconclusive) came back inconclusive.
+* [The Fix section](/Fix/overview) is the plain-language version of what these four bills would force open.
+
+<!-- CK_INTERESTING_OTHER_END -->
+
+<!-- CK_4SQ_SECTION_START -->
+
+## Other Pages In This Section
+
+<div className="ck-4sq">
+
+<div className="ck-4sq-card ck-4sq-side">
+  <a className="ck-4sq-thumb" href="/laws/DoJ_FBI/more/Human_Requirements"><img src="/img/evidence/c45cecc9e1589d0f74ffadc63096080ad11a6168b62fdf35cf20f618ff68fc17.jpg" data-cid="QmbKyFtYHb2NxcTpufHuRFeG3pQZMJVetxzaywiw3LdJuA" alt="This is a high-resolution, flat-lay digital scan of a printed legal document or official complaint written in English, dated November 20, 2019." loading="lazy" /></a>
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/laws/DoJ_FBI/more/Human_Requirements">Human Requirements: Law 1 - DoJ/FBI Forced Disclosure</a></p>
+    <p className="ck-4sq-text">The plain-English demand behind Law 1, written before any drafting: every DOJ, FBI, ATF and local file released, any employee free to send records in, and retaliation made a crime. The statute is then audited line by line against this list.</p>
+    <a className="ck-4sq-btn" href="/laws/DoJ_FBI/more/Human_Requirements">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-stack">
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/laws/Require_to_Investigate/more/Output_Analysis">Output Analysis: Law 3 - Require Investigation</a></p>
+    <p className="ck-4sq-text">The audit of Law 3 against the citizen requirements: a mandated investigation with its own team, budget and timeline, and a parallel intelligence assessment directed by the DNI. Every requirement is checked against the section that carries it.</p>
+    <a className="ck-4sq-btn" href="/laws/Require_to_Investigate/more/Output_Analysis">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-side">
+  <a className="ck-4sq-thumb" href="/laws/US_Intel/more/Human_Requirements"><img src="/img/evidence/14f90a40f5d68c452073308d5374fd2d50adcd3ffe0dcbe70a39c967191e9b8e.jpg" data-cid="QmdhWqrdvZMxknDa6fUm4yw5AJQbovKdxoweEwaRGNWcj1" alt="This is a high-resolution photograph or digital scan of a printed document featuring four paragraphs of English text on a white page." loading="lazy" /></a>
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/laws/US_Intel/more/Human_Requirements">Human Requirements: Law 2 - US Intelligence Services Forced Disclosure</a></p>
+    <p className="ck-4sq-text">The plain-English demand behind Law 2: every part of the intelligence community &mdash; CIA, NSA, DIA, NRO &mdash; releases what it holds, and blocking an employee from coming forward becomes a crime.</p>
+    <a className="ck-4sq-btn" href="/laws/US_Intel/more/Human_Requirements">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-stack">
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/laws/explain/all/laws_svg/needs_law_4">SVG Slide Requirements &mdash; Law #4</a></p>
+    <p className="ck-4sq-text">The slide specification for Law 4, built to the same template as the other three. The frame has to make one idea legible at a glance &mdash; investigators the public actually trusts, working inside the agencies.</p>
+    <a className="ck-4sq-btn" href="/laws/explain/all/laws_svg/needs_law_4">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+
+</div>
+
+<!-- CK_4SQ_SECTION_END -->
+
+<!-- CK_4SQ_SITEWIDE_START -->
+
+## Elsewhere In The Investigation
+
+<div className="ck-4sq">
+
+<div className="ck-4sq-card ck-4sq-side">
+  <a className="ck-4sq-thumb" href="/FBI/overview"><img src="/img/evidence/f78f3a3ede1a3bbfda3cfd42d80f52f48dc1aedb7cfa2f64f5afb598372c125f.jpg" data-cid="" alt="Visual Representation of Reported Injuries — anatomical chart marking, in red, the reported injury locations across the front and back torso, the neck, the internal chest, and two views of the brain." loading="lazy" /></a>
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/FBI/overview">FBI</a></p>
+    <p className="ck-4sq-text">The hub for every federal thread &mdash; the briefings, the ballistics, the halted foreign-nexus inquiry, and the witness who says he was advised to erase his own video. Start here if this is your first FBI page.</p>
+    <a className="ck-4sq-btn" href="/FBI/overview">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-stack">
+  <a className="ck-4sq-thumb" href="/Fix/overview"><img src="/img/evidence/319de07fd86b3f460e4ac35cf156448a9ed6d2186fad7ab5595782d7d2134914.jpg" data-cid="QmVaJDW5VH68g98jBNsSoawPNyrG6fsaCMmrdUfGXhHJct" alt="This is a digital composite image designed as a political or investigative graphic, featuring portraits of public figures Charlie Kirk and Candace Owens overlaid against two…" loading="lazy" /></a>
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/Fix/overview">New Laws (Fix)</a></p>
+    <p className="ck-4sq-text">Four federal laws modeled on the Epstein Files Act, drafted to force disclosure and mandate a real investigation. Every unanswered question in the aftermath is downstream of records nobody can compel today.</p>
+    <a className="ck-4sq-btn" href="/Fix/overview">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-side">
+  <a className="ck-4sq-thumb" href="/CoverUp/Hospital_Footage_And_NDAs"><img src="/img/evidence/1269205ee3f382dd9cecec6891fa070ce3444f13377b4ab751211ff6141c0974.jpg" data-cid="QmUujTi844tzyyX1hHF7VEy5yfN8W2R3UikNbvefmQxdUJ" alt="This eye-level, medium-wide outdoor shot captures several police officers at what appears to be an active crime scene or vehicle stop on a city street." loading="lazy" /></a>
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/CoverUp/Hospital_Footage_And_NDAs">Hospital Footage Seized, ER Cleared, Staff NDAs (Claims)</a></p>
+    <p className="ck-4sq-text">Footage never released, an emergency room that reportedly looked unusually empty, and staff at a nearby facility reportedly asked to sign non-disclosure agreements. Presented as questions, not conclusions.</p>
+    <a className="ck-4sq-btn" href="/CoverUp/Hospital_Footage_And_NDAs">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-stack">
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/Legal/Evidence-Sealing-2026">Evidence Sealing 2026</a></p>
+    <p className="ck-4sq-text">Sealed warrants, gag orders and restricted discovery, and what is scheduled to become public in 2026. A map of the closed doors, which is the precondition for most of the suspicion in this section.</p>
+    <a className="ck-4sq-btn" href="/Legal/Evidence-Sealing-2026">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+
+</div>
+
+<!-- CK_4SQ_SITEWIDE_END -->
+
 {/* CK_AUTHOR_CREDIT */}
 
 *This website's author is [@HolonCitizen](https://x.com/HolonCitizen) on X and [YouTube/@HolonCitizen](https://www.youtube.com/@HolonCitizen). Follow me there.*

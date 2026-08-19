@@ -38,15 +38,10 @@ Any current or former government employee or contractor is allowed to disclose a
 For any citizen, they have no NDA or any kind of other agreement that is allowed to hold back them from disclosing any and all information. 
 
 
-
-
-
-
 ## Reference
 
 This law is modeled after Thomas Massie's legislation to force DOJ disclosure of Jeffrey Epstein files. The parallel is that in both cases, federal law enforcement appears to be withholding 
 critical investigative information from the public.
-
 
 
 ---
@@ -56,6 +51,109 @@ critical investigative information from the public.
 ## Public demand context (citizen investigators)
 
 X and court-watchers repeatedly cite **withheld FBI/ATF raw files**, sealed digital forensics, and incomplete camera dumps as reasons a **forced-disclosure statute** modeled on Epstein/JFK-style transparency laws is necessary. That political demand is **narrative context** for Law 1; it does not amend the statutory text above. Former NCTC director [Joe Kent](/US_Intelligence/joe-kent) has said on the record that his center's parallel review of foreign-nexus leads was ordered to stop once Tyler Robinson was in custody — exactly the kind of closed-off investigative file this disclosure mandate is designed to force into the open.
+
+
+<!-- CK_INTERESTING_HERE_START -->
+
+## Interesting In This Area
+
+* [The drafted statute](/laws/DoJ_FBI/Law_1_DoJ_FBI) is audited against this page, requirement by requirement, in [the output analysis](/laws/DoJ_FBI/more/Output_Analysis).
+* [Law 2](/laws/US_Intel/Law_2_US_Intel) limits source protection to [active sources only](/laws/US_Intel/more/Notes_2_US_Intel), closing the usual exemption.
+* [Law 4](/laws/Trusted_Investigations/Law_4_Trusted_Investigations) gives three named investigators [two teams each](/laws/Trusted_Investigations/more/Output_Analysis), six teams in total.
+* [Law 3](/laws/Require_to_Investigate/Law_3_Require_to_Investigate) makes investigating a duty, with a [parallel intelligence assessment](/laws/Require_to_Investigate/more/Output_Analysis) directed by the DNI.
+
+<!-- CK_INTERESTING_HERE_END -->
+
+<!-- CK_INTERESTING_OTHER_START -->
+
+## Interesting In Other Areas
+
+* [The autopsy report](/Medical/autopsy_report_not_public) has never been published, and [the ATF comparison](/Gun_Bullet/ATF_Fragment_Inconclusive) came back inconclusive.
+* [Government evidence](/gov/overview) held back is the subject; [proof of intel involvement](/Proof_Intel_Services/overview) is the argument.
+* [The Fix section](/Fix/overview) is the plain-language version of what these four bills would force open.
+* [Joe Kent](/US_Intelligence/joe-kent) says a [foreign-nexus review](/CoverUp/Joe_Kent_Halt) stopped before its leads were exhausted.
+
+<!-- CK_INTERESTING_OTHER_END -->
+
+<!-- CK_4SQ_SECTION_START -->
+
+## Other Pages In This Section
+
+<div className="ck-4sq">
+
+<div className="ck-4sq-card ck-4sq-stack">
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/laws/DoJ_FBI/more/Notes_1_DoJ_FBI">Notes: Law 1 - DoJ/FBI Forced Disclosure</a></p>
+    <p className="ck-4sq-text">The research behind Law 1. The Epstein Files Act passed 427 to 1 and still produced a fraction of its pages; the JFK Records Act left documents withheld thirty years past its deadline. Both failures are why this draft carries hard deadlines and criminal penalties.</p>
+    <a className="ck-4sq-btn" href="/laws/DoJ_FBI/more/Notes_1_DoJ_FBI">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-stack">
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/laws/Trusted_Investigations/Law_4_Trusted_Investigations">Law 4: Charlie Kirk Investigation - Trusted Investigators Act</a></p>
+    <p className="ck-4sq-text">Full text of the trusted investigators act &mdash; civilian-led teams embedded inside the FBI and intelligence agencies with full access and their own release authority.</p>
+    <a className="ck-4sq-btn" href="/laws/Trusted_Investigations/Law_4_Trusted_Investigations">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-stack">
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/laws/US_Intel/more/Notes_2_US_Intel">Notes: Law 2 - US Intelligence Services Forced Disclosure</a></p>
+    <p className="ck-4sq-text">The research behind Law 2, and its warning. The JFK Records Act ordered release in 1992 and agencies were still withholding in 2025. Intelligence disclosure laws fail on their exemptions, which is why this draft narrows protection to active sources only.</p>
+    <a className="ck-4sq-btn" href="/laws/US_Intel/more/Notes_2_US_Intel">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-stack">
+  <a className="ck-4sq-thumb" href="/laws/explain/all/overview"><img src="/img/evidence/c51ef651e0e2fd9187ac8fa0b5d25908baba279b0c03f1ea93f6522fa3cedbb4.jpg" data-cid="QmSmChQuZCJ5h3PSeZuZDQRFptgYRDFzS3H33yY3VnZjTM" alt="This image shows a wide-angle, daytime view of a crowded outdoor courtyard on a university campus, featuring tiered grassy lawns and modern multi-story buildings." loading="lazy" /></a>
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/laws/explain/all/overview">Four Laws to Force the Truth About Charlie Kirk</a></p>
+    <p className="ck-4sq-text">The launch article for all four laws in one place: why the Epstein Files Act is the model, and what each bill would force into daylight. Start here if you have never read the statutory text.</p>
+    <a className="ck-4sq-btn" href="/laws/explain/all/overview">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+
+</div>
+
+<!-- CK_4SQ_SECTION_END -->
+
+<!-- CK_4SQ_SITEWIDE_START -->
+
+## Elsewhere In The Investigation
+
+<div className="ck-4sq">
+
+<div className="ck-4sq-card ck-4sq-stack">
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/Gun_Bullet/ATF_Fragment_Inconclusive">ATF Fragment &mdash; Inconclusive Match</a></p>
+    <p className="ck-4sq-text">The state&apos;s own September 17, 2025 ATF report could neither identify nor exclude the seized Mauser as the source of the autopsy jacket fragment. The rifling matched &quot;numerous makes and models&quot; &mdash; a class, not a weapon. The defense reportedly calls that exculpatory, and it is a large part of why independent work has moved toward <a href="/Mic/overview">a device at the podium</a>.</p>
+    <a className="ck-4sq-btn" href="/Gun_Bullet/ATF_Fragment_Inconclusive">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-stack">
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/Medical/autopsy_report_not_public">Autopsy Report Not Public</a></p>
+    <p className="ck-4sq-text">Two different claims get blurred together: that no autopsy happened, and that one happened and the report was never released. The second is the accurate one, and it is why almost nothing here is settled.</p>
+    <a className="ck-4sq-btn" href="/Medical/autopsy_report_not_public">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-stack">
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/gov/overview">Government Evidence</a></p>
+    <p className="ck-4sq-text">What government bodies have done with the evidence in this case, gathered in one place &mdash; withheld records, handling questions, and the specific asks that follow from them.</p>
+    <a className="ck-4sq-btn" href="/gov/overview">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-stack">
+  <a className="ck-4sq-thumb" href="/Fix/overview"><img src="/img/evidence/319de07fd86b3f460e4ac35cf156448a9ed6d2186fad7ab5595782d7d2134914.jpg" data-cid="QmVaJDW5VH68g98jBNsSoawPNyrG6fsaCMmrdUfGXhHJct" alt="This is a digital composite image designed as a political or investigative graphic, featuring portraits of public figures Charlie Kirk and Candace Owens overlaid against two…" loading="lazy" /></a>
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/Fix/overview">New Laws (Fix)</a></p>
+    <p className="ck-4sq-text">Four federal laws modeled on the Epstein Files Act, drafted to force disclosure and mandate a real investigation. Every unanswered question in the aftermath is downstream of records nobody can compel today.</p>
+    <a className="ck-4sq-btn" href="/Fix/overview">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+
+</div>
+
+<!-- CK_4SQ_SITEWIDE_END -->
 
 {/* CK_AUTHOR_CREDIT */}
 

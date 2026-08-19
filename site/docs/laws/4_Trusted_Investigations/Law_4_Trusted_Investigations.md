@@ -252,7 +252,6 @@ No denial of a security clearance for any single Designated Trusted Investigator
 ---
 
 
-
 ---
 
 ## Schedule A: 227 Critical Disclosure Items
@@ -1073,7 +1072,6 @@ This right applies to any information related to the death of Charlie Kirk and t
 ---
 
 
-
 ---
 
 ## Section 14: Personal Security
@@ -1467,6 +1465,113 @@ The following definitions supplement and reinforce the definitions established i
 Peer laws: [Law 1 - DoJ/FBI Disclosure](/laws/DoJ_FBI/Law_1_DoJ_FBI) | [Law 2 - US Intel Disclosure](/laws/US_Intel/Law_2_US_Intel) | [Law 3 - Mandatory Investigation](/laws/Require_to_Investigate/Law_3_Require_to_Investigate)
 
 Precedent: Epstein Files Transparency Act | JFK Records Act
+
+
+<!-- CK_INTERESTING_HERE_START -->
+
+## Interesting In This Area
+
+* [Two teams per designated investigator](/laws/Trusted_Investigations/more/Output_Analysis), six in all, each choosing [its own members](/laws/Trusted_Investigations/more/Human_Requirements).
+* [The 9/11 Commission](/laws/Trusted_Investigations/more/Notes_4_Trusted_Investigations) had subpoena power; this draft goes further, outside government entirely.
+* [Law 3](/laws/Require_to_Investigate/Law_3_Require_to_Investigate) makes investigating a duty, with a [parallel intelligence assessment](/laws/Require_to_Investigate/more/Output_Analysis) directed by the DNI.
+* [The charter](/laws/other/List_Of_Laws) is what [the compliance audit](/laws/other/analysis/Fixed/Laws_Not_Complying) checks each draft against.
+
+<!-- CK_INTERESTING_HERE_END -->
+
+<!-- CK_INTERESTING_OTHER_START -->
+
+## Interesting In Other Areas
+
+* [Candace Owens](/People/candace-owens), Dave Smith and [Tucker Carlson](/People/tucker-carlson) are the three named in this bill.
+* [The Fix section](/Fix/overview) is the plain-language version of what these four bills would force open.
+* [Your Actions Fix It](/Your_Actions_Fix_It/overview) is where a reader turns this into a phone call.
+* [The court case](/court/overview) is the only prosecution to date, and [discovery is contested](/Law_Enforcement/court-proceedings).
+
+<!-- CK_INTERESTING_OTHER_END -->
+
+<!-- CK_4SQ_SECTION_START -->
+
+## Other Pages In This Section
+
+<div className="ck-4sq">
+
+<div className="ck-4sq-card ck-4sq-stack">
+  <a className="ck-4sq-thumb" href="/laws/Trusted_Investigations/more/Human_Requirements"><img src="/img/evidence/af997f70d8e3ffea08d811389de0b4fcc56f6ae11e6c84c08938f7621be0720e.jpg" data-cid="QmdEaqFxfmmuyxUmSBkKRTN3rf67hTZedsT2KpA92xndDR" alt="This image is a digital medical illustration depicting a side-profile view of a human head and neck, focusing on the cervical spine." loading="lazy" /></a>
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/laws/Trusted_Investigations/more/Human_Requirements">Human Requirements: Law 4 - Trusted Investigations</a></p>
+    <p className="ck-4sq-text">The demand behind Law 4, in plain words: named public figures the audience actually trusts each get their own team inside the FBI and inside the intelligence community, and each picks who works on it.</p>
+    <a className="ck-4sq-btn" href="/laws/Trusted_Investigations/more/Human_Requirements">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-stack">
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/laws/US_Intel/more/Output_Analysis">Output Analysis: Law 2 - US Intelligence Services Forced Disclosure</a></p>
+    <p className="ck-4sq-text">The audit of Law 2 against the citizen requirements: eight broad categories of covered information, a thirty-day catch-all mandate, and a final category built to cover whatever the list missed.</p>
+    <a className="ck-4sq-btn" href="/laws/US_Intel/more/Output_Analysis">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-stack">
+  <a className="ck-4sq-thumb" href="/laws/other/List_Of_Laws"><img src="/img/evidence/8b74a7acc55ffaca666dfa957f06d89f9f1cbbe5ea405c0a256b707fb3153696.png" data-cid="QmT596hXPvEdGLF4swbMBMxVYYkwhwevjARTJYMXBiHcpM" alt="This image is a horizontal, close-up digital screenshot of a structured spreadsheet table containing text in English." loading="lazy" /></a>
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/laws/other/List_Of_Laws">Charlie Kirk Files Forced Disclosure -- Summary of Four Proposed Federal Laws</a></p>
+    <p className="ck-4sq-text">The charter document. All four bills summarised in order, with the agencies each one reaches and the case number they were drafted around. This is the file every compliance audit checks the drafts against.</p>
+    <a className="ck-4sq-btn" href="/laws/other/List_Of_Laws">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-stack">
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/laws/other/analysis/Fixed/Improve">Attorney Analysis: Improvements for Law 1 (DoJ/FBI Forced Disclosure Act) &mdash; FIXED ITEMS</a></p>
+    <p className="ck-4sq-text">The attorney improvements already folded into Law 1: congressional findings for constitutional footing, a severability clause, and the rest of the structural work a bill needs to survive a challenge in court.</p>
+    <a className="ck-4sq-btn" href="/laws/other/analysis/Fixed/Improve">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+
+</div>
+
+<!-- CK_4SQ_SECTION_END -->
+
+<!-- CK_4SQ_SITEWIDE_START -->
+
+## Elsewhere In The Investigation
+
+<div className="ck-4sq">
+
+<div className="ck-4sq-card ck-4sq-side">
+  <a className="ck-4sq-thumb" href="/People/tucker-carlson"><img src="/img/evidence/9fedede6ebbd142a481e04c0b1134ac1287e3c9a3c044d18f7b2efd79938ef59.jpg" data-cid="QmSg96ZfK6J9bkp1Z8k1iz57o3kFVZKnpcpafe9RA5NpbS" alt="This is a digital screenshot of a mobile instant messaging conversation, apparently from an encrypted messaging app like Signal or Telegram, set to dark mode." loading="lazy" /></a>
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/People/tucker-carlson">Tucker Carlson</a></p>
+    <p className="ck-4sq-text">The one name that runs through every AmFest in this file: the 2024 Epstein close, the July 2025 Tampa stage, the August flyer, and the December AIPAC remarks. He has said publicly he believes Kirk was murdered over his evolving Israel views.</p>
+    <a className="ck-4sq-btn" href="/People/tucker-carlson">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-stack">
+  <a className="ck-4sq-thumb" href="/Fix/overview"><img src="/img/evidence/319de07fd86b3f460e4ac35cf156448a9ed6d2186fad7ab5595782d7d2134914.jpg" data-cid="QmVaJDW5VH68g98jBNsSoawPNyrG6fsaCMmrdUfGXhHJct" alt="This is a digital composite image designed as a political or investigative graphic, featuring portraits of public figures Charlie Kirk and Candace Owens overlaid against two…" loading="lazy" /></a>
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/Fix/overview">New Laws (Fix)</a></p>
+    <p className="ck-4sq-text">Four federal laws modeled on the Epstein Files Act, drafted to force disclosure and mandate a real investigation. Every unanswered question in the aftermath is downstream of records nobody can compel today.</p>
+    <a className="ck-4sq-btn" href="/Fix/overview">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-side">
+  <a className="ck-4sq-thumb" href="/Your_Actions_Fix_It/overview"><img src="/img/evidence/6301de96e2a78e6a3fd308434fd6dfcd02861b729ee1fa5fa108bc133bd88107.jpg" data-cid="QmTJ3jKkeJNSHjqsJrur1mzk6Yz3KLS3VC2GJALASaBbeq" alt="A digital screenshot of a legislative web page displaying a structured table titled &quot;History.&quot; The table documents the chronologically ordered legislative actions taken on a…" loading="lazy" /></a>
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/Your_Actions_Fix_It/overview">Your Actions Fix It</a></p>
+    <p className="ck-4sq-text">Concrete things one person can do: records requests, contacting representatives, preserving and sharing evidence. It is the shortest route from reading this site to changing anything on it.</p>
+    <a className="ck-4sq-btn" href="/Your_Actions_Fix_It/overview">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-side">
+  <a className="ck-4sq-thumb" href="/court/overview"><img src="/img/evidence/fb14b85a283763fc0778887022c1800f900cd288c81b36603fb0a80dc7b62fc5.jpg" data-cid="QmRkRwe9cELH4Z5j9vs6hHkYxin1U7FHKWexRVJb8HXiXB" alt="This image is a digital screenshot of a news article from the WEAR News 3 website, viewed on a mobile device." loading="lazy" /></a>
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/court/overview">Court &amp; Trial</a></p>
+    <p className="ck-4sq-text">State of Utah v. Tyler Robinson, case 251403576, is where the government&apos;s narrative meets adversarial testing &mdash; every court date, the day-by-day preliminary hearing transcripts, and the inconclusive ATF ballistics.</p>
+    <a className="ck-4sq-btn" href="/court/overview">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+
+</div>
+
+<!-- CK_4SQ_SITEWIDE_END -->
 
 {/* CK_AUTHOR_CREDIT */}
 
