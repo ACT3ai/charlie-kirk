@@ -301,8 +301,21 @@ def url_for(rel, fm=None):
     if not BUILT or cand in BUILT:
         return cand
 
-    # 3. otherwise the one built route in this directory that matches the stem
-    #    with or without a stripped numeric prefix
+    # 3a. Docusaurus strips numeric prefixes from DIRECTORY segments too
+    #     (laws/2_US_Intel/... serves /laws/US_Intel/...), so try the whole path
+    #     with every segment de-prefixed.
+    if BUILT:
+        deprefixed = "/" + "/".join(re.sub(r"^\d+[-_.]", "", x) for x in parts)
+        if deprefixed in BUILT:
+            return deprefixed
+        dp_parent = "/" + "/".join(re.sub(r"^\d+[-_.]", "", x) for x in parts[:-1])
+        for want in (stem, re.sub(r"^\d+[-_.]", "", stem)):
+            cand2 = f"{dp_parent}/{want}"
+            if cand2 in BUILT:
+                return cand2
+
+    # 3b. otherwise the one built route in this directory that matches the stem
+    #     with or without a stripped numeric prefix
     sibs = BY_PARENT.get(parent, [])
     stripped = re.sub(r"^\d+[-_.]", "", stem)
     for want in (stem, stripped):
@@ -409,7 +422,11 @@ with open(WORK / "card_index.csv", "w", newline="", encoding="utf-8") as fh:
     w = csv.DictWriter(fh, fieldnames=list(rows[0].keys()), quoting=csv.QUOTE_MINIMAL)
     w.writeheader(); w.writerows(rows)
 
-(WORK / "routes.txt").write_text("\n".join(sorted(routes)) + "\n")
+# routes.txt is OWNED BY build_routes.py, which reads the real build output.
+# This script used to overwrite it with filename-derived routes, which silently
+# reintroduced every prefix/slug error the build-derived file had just fixed.
+# Write a side file instead so the two can be diffed when something looks off.
+(WORK / "routes_derived.txt").write_text("\n".join(sorted(routes)) + "\n")
 
 with open(WORK / "ledger.csv", "w", newline="", encoding="utf-8") as fh:
     w = csv.DictWriter(fh, fieldnames=["file_path", "level2", "status", "blocks", "agent", "updated"])

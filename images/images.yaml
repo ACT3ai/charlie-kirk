@@ -13952,7 +13952,7 @@ level_3:
       site_level_2: ["Tyler_Robinson"]
       site_page: "site/docs/Tyler_Robinson/overview.mdx"
       number_of_images: 44
-      number_of_images_recursive: 157
+      number_of_images_recursive: 158
       needs_split: true   # over the 12 ceiling — split on a later pass
       images:
         - image:
@@ -15307,8 +15307,8 @@ level_3:
         - level_4:
             title: "Steam msgs"
             _key: Steam_msgs
-            number_of_images: 10
-            number_of_images_recursive: 10
+            number_of_images: 11
+            number_of_images_recursive: 11
             images:
               - image:
                   cid: "QmPqDqh4PuYnTxD47JZ3EuWnnSQyCe56pokfjajgnx6ir8"
@@ -15470,12 +15470,40 @@ level_3:
                   on_site_pages: ["site/docs/Influencers/podcasts-project-constitution.mdx", "site/docs/Influencers/x/project-constitution.mdx", "site/docs/Media/september-10-breaking-news.mdx", "site/docs/Photos/Tyler_Robinson/Steam_msgs/Img_Photo_2d4e93.mdx", "site/docs/Photos/Tyler_Robinson/Steam_msgs/overview.mdx", "site/docs/Photos/Tyler_Robinson/overview.mdx"]
                   ipfs_pinned: true
                   image_page: "~/BGit/Bryan_git/charlie-kirk/site/docs/Photos/Tyler_Robinson/Steam_msgs/Img_Photo_2d4e93.mdx"
-                  next_image: "~/BGit/Bryan_git/charlie-kirk/site/docs/Photos/Tyler_Robinson/Campus/Img_Photo_406c2c.mdx"
+                  next_image: "~/BGit/Bryan_git/charlie-kirk/site/docs/Photos/Tyler_Robinson/Steam_msgs/Img_Steam_Friends_77d3de.mdx"
                   on_pages: []
                   should_be_on_pages:
                     - page: "~/BGit/Bryan_git/charlie-kirk/site/docs/Influencers/podcasts-project-constitution.mdx"
                     - page: "~/BGit/Bryan_git/charlie-kirk/site/docs/Influencers/x/project-constitution.mdx"
                     - page: "~/BGit/Bryan_git/charlie-kirk/site/docs/Media/september-10-breaking-news.mdx"
+              - image:
+                  cid: "QmP3fnCLpkSTeYLKEpGqeXS5P6wPcf3dsSCCheDmasLeFu"
+                  sha256: 77d3de78a317d5e75373347f99d4f3a4d53890b124fc8790f236814824eb286e
+                  file_path: "~/BGit/Bryan_git/charlie-kirk/images/tyler_robinson_steam_friends.jpg"
+                  ai_description: "This is an AI-generated explainer graphic, not a photograph of any real scene. A dark navy banner reads TYLER ROBINSON - POSSIBLE STEAM PLAYERS HE MAY HAVE BEEN CONNECTED TO OR PLAYED WITH, with a grey subtitle saying US intelligence should investigate whether any were foreign intelligence services. The left half shows a synthetic likeness of a young man in a maroon t-shirt standing in a dark room beside a monitor captioned STEAM GAMING. The right half is a table headed ALLEGED STEAM FRIENDS OF TYLER listing eleven handles: Ankha, Ankha_Kitty, cento, peace walker, Lucy, Thank You, Xx_chubby_ch43_xX, luvr, fentanylsandwich1312, Alive but Gay, generic8076, and miss your son is clicker trained. A footer line reads MOST OR ALL ARE ALMOST CERTAINLY INNOCENT GAMERS."
+                  ai_description_file: ""
+                  ocr_file: ""
+                  transcription_file: ""
+                  on_site_pages: ["site/docs/Photos/Tyler_Robinson/Steam_msgs/Img_Steam_Friends_77d3de.mdx", "site/docs/Photos/Tyler_Robinson/Steam_msgs/overview.mdx", "site/docs/Photos/Tyler_Robinson/overview.mdx", "site/docs/Tyler_Robinson/overview.mdx", "site/docs/Tyler_Robinson/steam/overview.mdx", "site/docs/Tyler_Robinson/steam/device-record-not-being-offered.mdx", "site/docs/Tyler_Robinson/steam/fbi-interview-one-phone-that-was-read.mdx", "site/docs/Tyler_Robinson/steam/roommate-transcript-three-renderings.mdx", "site/docs/Tyler_Robinson/steam/self-reported-location-vs-login-ip.mdx", "site/docs/Tyler_Robinson/steam/steam-ankha-egypt-profile.mdx", "site/docs/Tyler_Robinson/steam/steam-comments-cento-egypt.mdx", "site/docs/Tyler_Robinson/steam/steam-comments-discord-handles.mdx", "site/docs/Tyler_Robinson/steam/steam-friend-list-and-what-valve-holds.mdx", "site/docs/Tyler_Robinson/steam/steam-friends-and-handles-roster.mdx", "site/docs/Tyler_Robinson/steam/warrant-redacted-every-other-username.mdx", "site/docs/Tyler_Robinson/steam/x-thread-ankha-egypt.mdx", "site/docs/Tyler_Robinson/steam/x-thread-craftin247-steam.mdx"]
+                  ipfs_pinned: false
+                  image_page: "~/BGit/Bryan_git/charlie-kirk/site/docs/Photos/Tyler_Robinson/Steam_msgs/Img_Steam_Friends_77d3de.mdx"
+                  next_image: "~/BGit/Bryan_git/charlie-kirk/site/docs/Photos/Tyler_Robinson/Campus/Img_Photo_406c2c.mdx"
+                  on_pages: []
+                  should_be_on_pages:
+                    - page: "~/BGit/Bryan_git/charlie-kirk/site/docs/Tyler_Robinson/overview.mdx"
+                    - page: "~/BGit/Bryan_git/charlie-kirk/site/docs/Tyler_Robinson/steam/overview.mdx"
+                    - page: "~/BGit/Bryan_git/charlie-kirk/site/docs/Tyler_Robinson/steam/device-record-not-being-offered.mdx"
+                    - page: "~/BGit/Bryan_git/charlie-kirk/site/docs/Tyler_Robinson/steam/fbi-interview-one-phone-that-was-read.mdx"
+                    - page: "~/BGit/Bryan_git/charlie-kirk/site/docs/Tyler_Robinson/steam/roommate-transcript-three-renderings.mdx"
+                    - page: "~/BGit/Bryan_git/charlie-kirk/site/docs/Tyler_Robinson/steam/self-reported-location-vs-login-ip.mdx"
+                    - page: "~/BGit/Bryan_git/charlie-kirk/site/docs/Tyler_Robinson/steam/steam-ankha-egypt-profile.mdx"
+                    - page: "~/BGit/Bryan_git/charlie-kirk/site/docs/Tyler_Robinson/steam/steam-comments-cento-egypt.mdx"
+                    - page: "~/BGit/Bryan_git/charlie-kirk/site/docs/Tyler_Robinson/steam/steam-comments-discord-handles.mdx"
+                    - page: "~/BGit/Bryan_git/charlie-kirk/site/docs/Tyler_Robinson/steam/steam-friend-list-and-what-valve-holds.mdx"
+                    - page: "~/BGit/Bryan_git/charlie-kirk/site/docs/Tyler_Robinson/steam/steam-friends-and-handles-roster.mdx"
+                    - page: "~/BGit/Bryan_git/charlie-kirk/site/docs/Tyler_Robinson/steam/warrant-redacted-every-other-username.mdx"
+                    - page: "~/BGit/Bryan_git/charlie-kirk/site/docs/Tyler_Robinson/steam/x-thread-ankha-egypt.mdx"
+                    - page: "~/BGit/Bryan_git/charlie-kirk/site/docs/Tyler_Robinson/steam/x-thread-craftin247-steam.mdx"
         - level_4:
             title: "Campus"
             _key: Campus

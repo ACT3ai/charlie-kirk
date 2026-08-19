@@ -251,6 +251,21 @@ the agents are then free to spend their whole context on judgement and prose.
   than regenerating from filenames. Do NOT run npm run build just to check
   links; it takes twenty minutes.
 
+  routes.txt is OWNED by build_routes.py. build_card_index.py must never write
+  it - it did once, silently replacing the build-derived file with a
+  filename-derived one and reintroducing every error listed above. It now writes
+  routes_derived.txt instead, purely so the two can be diffed.
+
+  Docusaurus strips a numeric prefix from DIRECTORY segments as well as from
+  file names (laws/2_US_Intel/... serves /laws/US_Intel/...), but leaves years
+  and some numbers alone. Do not try to reimplement that rule - resolve every
+  source file against the built route set instead.
+
+  KNOWN UNROUTABLE SOURCE PAGE: site/docs/TPUSA/TPUSA.mdx. It exists in source
+  but the build serves no /TPUSA/TPUSA route - the name collides with the TPUSA
+  directory. Link to /TPUSA/overview instead. Flagged for a human decision;
+  nothing in this pass should card or link it.
+
 * Emit {LEDGER_CSV}: one row per editable page, columns
 
     file_path,level2,status,blocks,agent,updated

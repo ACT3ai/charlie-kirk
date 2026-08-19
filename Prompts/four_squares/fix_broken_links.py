@@ -17,7 +17,9 @@ from collections import Counter
 ROOT = Path(os.path.expanduser("~/BGit/Bryan_git/charlie-kirk"))
 WORK = ROOT / "prompts/four_squares"
 APPLY = "--apply" in sys.argv
-routes = [r for r in (WORK / "routes.txt").read_text().split() if r]
+# splitlines, never split: routes like "/Topics3/Suspects (List)/overview"
+# contain spaces, and whitespace-splitting turns them into false negatives.
+routes = [r for r in (WORK / "routes.txt").read_text().splitlines() if r]
 routeset = set(routes)
 
 MANUAL = {
