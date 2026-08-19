@@ -796,3 +796,105 @@
 @media (max-width: 996px) {
   .ck-half-figure { width: 85%; max-width: 85%; }
 }
+
+/* CK_FOUR_SQUARE_START */
+/* "Four squares" — a 2x2 grid of sister-page cards placed after the body prose
+   and before the author credit / Related Areas / Images blocks. Each card is a
+   solid dark-navy panel with white text, carrying the sister page's own hero
+   media, two or three sentences of why it matters (with their own links out),
+   and a chevron button to that page.
+
+   Two card shapes, chosen from the real pixel aspect ratio of the media:
+     .ck-4sq-side   portrait / 9:16-ish media  -> image left, text to its right
+     .ck-4sq-stack  landscape / 16:9-ish media -> image on top, text underneath
+   Both collapse to a single column below 996px. */
+.ck-4sq {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+  margin: 1.25rem 0 2rem 0;
+  clear: both;
+}
+.ck-4sq-card {
+  display: flex;
+  gap: 0.9rem;
+  align-items: flex-start;
+  background: #0d2b6b;
+  color: #fff;
+  border-radius: 6px;
+  padding: 0.9rem;
+}
+.ck-4sq-card.ck-4sq-stack {
+  flex-direction: column;
+}
+.ck-4sq-card.ck-4sq-side .ck-4sq-thumb {
+  flex: 0 0 38%;
+  max-width: 38%;
+}
+.ck-4sq-card.ck-4sq-stack .ck-4sq-thumb {
+  width: 100%;
+}
+.ck-4sq-thumb {
+  line-height: 0;
+}
+.ck-4sq-thumb img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  background: #fff;
+}
+.ck-4sq-body {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+.ck-4sq-title {
+  font-weight: 700;
+  font-size: 0.98rem;
+  line-height: 1.25;
+  margin: 0 0 0.4rem 0;
+}
+.ck-4sq-title a {
+  color: #fff !important;
+  text-decoration: none;
+}
+.ck-4sq-title a:hover,
+.ck-4sq-title a:focus {
+  text-decoration: underline;
+}
+.ck-4sq-text {
+  font-size: 0.86rem;
+  line-height: 1.45;
+  margin: 0 0 0.7rem 0;
+  color: #e8eefc;
+}
+.ck-4sq-text a {
+  color: #9ec6ff !important;
+  text-decoration: underline;
+}
+.ck-4sq-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.3rem 0.75rem;
+  background: #ffffff;
+  color: #0d2b6b !important;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  line-height: 1.2;
+  text-decoration: none !important;
+}
+.ck-4sq-btn:hover,
+.ck-4sq-btn:focus {
+  background: #dce7ff;
+  color: #0d2b6b !important;
+}
+.ck-4sq-btn svg {
+  display: inline-block;
+  flex: none;
+}
+@media (max-width: 996px) {
+  .ck-4sq { grid-template-columns: 1fr; }
+}
+/* CK_FOUR_SQUARE_END */
