@@ -1318,7 +1318,7 @@ Peer laws: [Law 1 - DoJ/FBI Disclosure](/laws/DoJ_FBI/Law_1_DoJ_FBI) | [Law 3 - 
 
 Precedent: Epstein Files Transparency Act | JFK Records Act
 
-<!-- CK_INTERESTING_HERE_START -->
+{/* CK_INTERESTING_HERE_START */}
 
 ## Interesting In This Area
 
@@ -1327,9 +1327,9 @@ Precedent: Epstein Files Transparency Act | JFK Records Act
 * [The Epstein Files Act](/laws/DoJ_FBI/more/Notes_1_DoJ_FBI) passed 427-1 and still produced a fraction of its [pages](/laws/other/analysis/Challenges).
 * [The threat model](/laws/other/Worries_By_Each_4_Laws) assumes every evasion route will be tried, including [an Israel exception](/laws/other/analysis/Fixed/Laws_Not_Complying).
 
-<!-- CK_INTERESTING_HERE_END -->
+{/* CK_INTERESTING_HERE_END */}
 
-<!-- CK_INTERESTING_OTHER_START -->
+{/* CK_INTERESTING_OTHER_START */}
 
 ## Interesting In Other Areas
 
@@ -1338,9 +1338,9 @@ Precedent: Epstein Files Transparency Act | JFK Records Act
 * [A HADES surveillance aircraft](/Proof_Intel_Services/N1098L_HADES_Over_UVU) reportedly passed low over the campus that day.
 * [Israeli forensic tools](/Israel/israeli-tech-in-investigation) sit inside the evidence chain, which commentators call a conflict.
 
-<!-- CK_INTERESTING_OTHER_END -->
+{/* CK_INTERESTING_OTHER_END */}
 
-<!-- CK_4SQ_SECTION_START -->
+{/* CK_4SQ_SECTION_START */}
 
 ## Other Pages In This Section
 
@@ -1380,9 +1380,9 @@ Precedent: Epstein Files Transparency Act | JFK Records Act
 
 </div>
 
-<!-- CK_4SQ_SECTION_END -->
+{/* CK_4SQ_SECTION_END */}
 
-<!-- CK_4SQ_SITEWIDE_START -->
+{/* CK_4SQ_SITEWIDE_START */}
 
 ## Elsewhere In The Investigation
 
@@ -1422,7 +1422,7 @@ Precedent: Epstein Files Transparency Act | JFK Records Act
 
 </div>
 
-<!-- CK_4SQ_SITEWIDE_END -->
+{/* CK_4SQ_SITEWIDE_END */}
 
 {/* CK_AUTHOR_CREDIT */}
 

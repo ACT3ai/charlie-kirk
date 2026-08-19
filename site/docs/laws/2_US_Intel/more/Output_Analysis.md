@@ -62,7 +62,7 @@
 3. Coordinate with Law 4 for Trusted Investigator access to classified intelligence
 4. Ensure coordination with Law 1 so both law enforcement and intelligence disclosures are cross-referenced
 
-<!-- CK_INTERESTING_HERE_START -->
+{/* CK_INTERESTING_HERE_START */}
 
 ## Interesting In This Area
 
@@ -71,9 +71,9 @@
 * [The threat model](/laws/other/Worries_By_Each_4_Laws) assumes every evasion route will be tried, including [an Israel exception](/laws/other/analysis/Fixed/Laws_Not_Complying).
 * [The archived March 2026 charter](/laws/other/old/List_Of_Laws) shows where the project started before [Schedule A grew](/laws/other/analysis/Fixed/Any_more_to_Add).
 
-<!-- CK_INTERESTING_HERE_END -->
+{/* CK_INTERESTING_HERE_END */}
 
-<!-- CK_INTERESTING_OTHER_START -->
+{/* CK_INTERESTING_OTHER_START */}
 
 ## Interesting In Other Areas
 
@@ -82,9 +82,9 @@
 * [The autopsy report](/Medical/autopsy_report_not_public) has never been published.
 * [Cause of death](/Cause_of_Death/overview) is the question the released record still cannot settle.
 
-<!-- CK_INTERESTING_OTHER_END -->
+{/* CK_INTERESTING_OTHER_END */}
 
-<!-- CK_4SQ_SECTION_START -->
+{/* CK_4SQ_SECTION_START */}
 
 ## Other Pages In This Section
 
@@ -123,9 +123,9 @@
 
 </div>
 
-<!-- CK_4SQ_SECTION_END -->
+{/* CK_4SQ_SECTION_END */}
 
-<!-- CK_4SQ_SITEWIDE_START -->
+{/* CK_4SQ_SITEWIDE_START */}
 
 ## Elsewhere In The Investigation
 
@@ -164,7 +164,7 @@
 
 </div>
 
-<!-- CK_4SQ_SITEWIDE_END -->
+{/* CK_4SQ_SITEWIDE_END */}
 
 {/* CK_AUTHOR_CREDIT */}
 

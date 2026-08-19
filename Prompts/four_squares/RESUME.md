@@ -2,14 +2,15 @@
 
 State as of the last checkpoint:
 
-    pages complete : 1402 of 1731  (80%)
+    pages complete : 1539 of 1731  (88%)
     partial pages  : 0            (every page is all-four-blocks or none)
-    cards on site  : 11152
-    teasers banked : 1464
-    remaining      : 329
+    cards on site  : 12248
+    teasers banked : 1615
+    remaining      : 192
+    last full site verification: 1521 files, 0 failing (placement check included)
 
-Wave 5 was launched for the final 363 pages. Agent 12 finished (11 pages);
-six agents died on an API auth error ("Not logged in"), which is an
+Wave 5 was launched for the final 363 pages. Agents 1, 3, 4, 6, 7 and 12
+finished; six died on an API auth error ("Not logged in"), which is an
 infrastructure failure, not a content problem. Nothing was left half-written —
 the ledger shows 0 partial pages.
 

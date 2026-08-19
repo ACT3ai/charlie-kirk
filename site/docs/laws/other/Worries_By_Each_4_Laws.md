@@ -324,7 +324,7 @@ Parallel media clips recirculated by accounts such as **[@FurkanGozukara](/Influ
 
 Related public pages: [Fix overview](/Fix/overview), [laws landing](/laws), Discovery, [explain all four laws](/laws/explain/all/overview).
 
-<!-- CK_INTERESTING_HERE_START -->
+{/* CK_INTERESTING_HERE_START */}
 
 ## Interesting In This Area
 
@@ -333,9 +333,9 @@ Related public pages: [Fix overview](/Fix/overview), [laws landing](/laws), Disc
 * [Attorney review](/laws/other/analysis/Improve) reaches the Appropriations Clause problem from the opposite direction.
 * [Law 4's Third Party Rule override](/laws/Trusted_Investigations/Law_4_Trusted_Investigations) is the clause the others still lack.
 
-<!-- CK_INTERESTING_HERE_END -->
+{/* CK_INTERESTING_HERE_END */}
 
-<!-- CK_INTERESTING_OTHER_START -->
+{/* CK_INTERESTING_OTHER_START */}
 
 ## Interesting In Other Areas
 
@@ -344,9 +344,9 @@ Related public pages: [Fix overview](/Fix/overview), [laws landing](/laws), Disc
 * [Roof access](/Roof/overview) was reportedly trivial, with thin camera coverage.
 * [Killer](/Killer/overview) collects the alternative-perpetrator threads these bills would force open.
 
-<!-- CK_INTERESTING_OTHER_END -->
+{/* CK_INTERESTING_OTHER_END */}
 
-<!-- CK_4SQ_SECTION_START -->
+{/* CK_4SQ_SECTION_START */}
 
 ## Other Pages In This Section
 
@@ -384,9 +384,9 @@ Related public pages: [Fix overview](/Fix/overview), [laws landing](/laws), Disc
 
 </div>
 
-<!-- CK_4SQ_SECTION_END -->
+{/* CK_4SQ_SECTION_END */}
 
-<!-- CK_4SQ_SITEWIDE_START -->
+{/* CK_4SQ_SITEWIDE_START */}
 
 ## Elsewhere In The Investigation
 
@@ -427,7 +427,7 @@ Related public pages: [Fix overview](/Fix/overview), [laws landing](/laws), Disc
 
 </div>
 
-<!-- CK_4SQ_SITEWIDE_END -->
+{/* CK_4SQ_SITEWIDE_END */}
 
 {/* CK_AUTHOR_CREDIT */}
 

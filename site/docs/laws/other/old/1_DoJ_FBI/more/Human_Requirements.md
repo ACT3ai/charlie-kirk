@@ -37,22 +37,18 @@ Any current or former government employee or contractor is allowed to disclose a
 For any citizen, they have no NDA or any kind of other agreement that is allowed to hold back them from disclosing any and all information. 
 
 
-
-
-
-
 ## Reference
 
 This law is modeled after Thomas Massie's legislation to force DOJ disclosure of Jeffrey Epstein files. The parallel is that in both cases, federal law enforcement appears to be withholding 
 critical investigative information from the public.
 
 
-
 ---
 
 [Back to README](/laws) | Law Text | [Legal Notes](/laws/other/old/DoJ_FBI/more/Notes_1_DoJ_FBI) | [Output Analysis](/laws/other/old/DoJ_FBI/more/Output_Analysis)
 
-<!-- CK_INTERESTING_HERE_START -->
+
+{/* CK_INTERESTING_HERE_START */}
 
 ## Interesting In This Area
 
@@ -61,9 +57,9 @@ critical investigative information from the public.
 * [Law 2's archived twin](/laws/other/old/US_Intel/more/Human_Requirements) draws the line at methods, not conclusions.
 * [The charter here](/laws/other/old/List_Of_Laws) still counts 175 items.
 
-<!-- CK_INTERESTING_HERE_END -->
+{/* CK_INTERESTING_HERE_END */}
 
-<!-- CK_INTERESTING_OTHER_START -->
+{/* CK_INTERESTING_OTHER_START */}
 
 ## Interesting In Other Areas
 
@@ -72,9 +68,9 @@ critical investigative information from the public.
 * [Drone activity](/Drones/overview) over the campus is a separate Schedule A category.
 * [Fort Huachuca searches](/GoogleSearches/fort-huachuca-sept-9-searches) reportedly spiked before September 9.
 
-<!-- CK_INTERESTING_OTHER_END -->
+{/* CK_INTERESTING_OTHER_END */}
 
-<!-- CK_4SQ_SECTION_START -->
+{/* CK_4SQ_SECTION_START */}
 
 ## Other Pages In This Section
 
@@ -113,9 +109,9 @@ critical investigative information from the public.
 
 </div>
 
-<!-- CK_4SQ_SECTION_END -->
+{/* CK_4SQ_SECTION_END */}
 
-<!-- CK_4SQ_SITEWIDE_START -->
+{/* CK_4SQ_SITEWIDE_START */}
 
 ## Elsewhere In The Investigation
 
@@ -156,7 +152,7 @@ critical investigative information from the public.
 
 </div>
 
-<!-- CK_4SQ_SITEWIDE_END -->
+{/* CK_4SQ_SITEWIDE_END */}
 
 {/* CK_AUTHOR_CREDIT */}
 

@@ -44,7 +44,7 @@ The dual-track approach:
 - May face Article II constitutional challenges
 - Foreign diplomatic consequences of disclosing liaison communications
 
-<!-- CK_INTERESTING_HERE_START -->
+{/* CK_INTERESTING_HERE_START */}
 
 ## Interesting In This Area
 
@@ -53,9 +53,9 @@ The dual-track approach:
 * [The current notes](/laws/US_Intel/more/Notes_2_US_Intel) carry the same precedents forward.
 * [Law 1's notes](/laws/other/old/DoJ_FBI/more/Notes_1_DoJ_FBI) add the Epstein Act compliance numbers.
 
-<!-- CK_INTERESTING_HERE_END -->
+{/* CK_INTERESTING_HERE_END */}
 
-<!-- CK_INTERESTING_OTHER_START -->
+{/* CK_INTERESTING_OTHER_START */}
 
 ## Interesting In Other Areas
 
@@ -64,9 +64,9 @@ The dual-track approach:
 * Former NCTC director [Joe Kent](/US_Intelligence/joe-kent) says the [foreign-ties review](/US_Intelligence/nctc) was ordered stopped.
 * [Your Actions Fix It](/Your_Actions_Fix_It/overview) turns all of this into one phone call.
 
-<!-- CK_INTERESTING_OTHER_END -->
+{/* CK_INTERESTING_OTHER_END */}
 
-<!-- CK_4SQ_SECTION_START -->
+{/* CK_4SQ_SECTION_START */}
 
 ## Other Pages In This Section
 
@@ -104,9 +104,9 @@ The dual-track approach:
 
 </div>
 
-<!-- CK_4SQ_SECTION_END -->
+{/* CK_4SQ_SECTION_END */}
 
-<!-- CK_4SQ_SITEWIDE_START -->
+{/* CK_4SQ_SITEWIDE_START */}
 
 ## Elsewhere In The Investigation
 
@@ -146,7 +146,7 @@ The dual-track approach:
 
 </div>
 
-<!-- CK_4SQ_SITEWIDE_END -->
+{/* CK_4SQ_SITEWIDE_END */}
 
 ## Sources
 - JFK Records Act: https://www.congress.gov/bill/102nd-congress/senate-bill/3006

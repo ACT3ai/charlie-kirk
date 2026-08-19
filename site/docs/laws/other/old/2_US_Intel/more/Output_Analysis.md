@@ -62,7 +62,7 @@
 3. Coordinate with Law 4 for Trusted Investigator access to classified intelligence
 4. Ensure coordination with Law 1 so both law enforcement and intelligence disclosures are cross-referenced
 
-<!-- CK_INTERESTING_HERE_START -->
+{/* CK_INTERESTING_HERE_START */}
 
 ## Interesting In This Area
 
@@ -71,9 +71,9 @@
 * [The current audit](/laws/US_Intel/more/Output_Analysis) runs the same test on the expanded text.
 * [The archived requirements](/laws/other/old/US_Intel/more/Human_Requirements) are what each MET line answers.
 
-<!-- CK_INTERESTING_HERE_END -->
+{/* CK_INTERESTING_HERE_END */}
 
-<!-- CK_INTERESTING_OTHER_START -->
+{/* CK_INTERESTING_OTHER_START */}
 
 ## Interesting In Other Areas
 
@@ -82,9 +82,9 @@
 * [The exploding-mic theory](/Mic/overview) rests on a May 2025 Navy demolition-charge contract.
 * Sixteen people died when [the AES plant exploded](/US_Intelligence_Assisted/aes-factory-explosion) five weeks later.
 
-<!-- CK_INTERESTING_OTHER_END -->
+{/* CK_INTERESTING_OTHER_END */}
 
-<!-- CK_4SQ_SECTION_START -->
+{/* CK_4SQ_SECTION_START */}
 
 ## Other Pages In This Section
 
@@ -123,9 +123,9 @@
 
 </div>
 
-<!-- CK_4SQ_SECTION_END -->
+{/* CK_4SQ_SECTION_END */}
 
-<!-- CK_4SQ_SITEWIDE_START -->
+{/* CK_4SQ_SITEWIDE_START */}
 
 ## Elsewhere In The Investigation
 
@@ -165,7 +165,7 @@
 
 </div>
 
-<!-- CK_4SQ_SITEWIDE_END -->
+{/* CK_4SQ_SITEWIDE_END */}
 
 {/* CK_AUTHOR_CREDIT */}
 

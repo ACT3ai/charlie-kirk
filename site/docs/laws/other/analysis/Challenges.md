@@ -28,7 +28,7 @@ Parallel media clips recirculated by accounts such as **[@FurkanGozukara](/Influ
 
 Related public pages: [Fix overview](/Fix/overview), [laws landing](/laws), Discovery, [explain all four laws](/laws/explain/all/overview).
 
-<!-- CK_INTERESTING_HERE_START -->
+{/* CK_INTERESTING_HERE_START */}
 
 ## Interesting In This Area
 
@@ -37,9 +37,9 @@ Related public pages: [Fix overview](/Fix/overview), [laws landing](/laws), Disc
 * [The four law texts](/laws/other/analysis/Fixed/Improve) now agree on 208 items internally.
 * [The compliance audit](/laws/other/analysis/Laws_Not_Complying) reaches that discrepancy from the charter side.
 
-<!-- CK_INTERESTING_HERE_END -->
+{/* CK_INTERESTING_HERE_END */}
 
-<!-- CK_INTERESTING_OTHER_START -->
+{/* CK_INTERESTING_OTHER_START */}
 
 ## Interesting In Other Areas
 
@@ -48,9 +48,9 @@ Related public pages: [Fix overview](/Fix/overview), [laws landing](/laws), Disc
 * [After the event](/After/overview) tracks resignations, payouts and reassignments.
 * [Messages attributed to Robinson](/Tyler_Robinson/Messages/overview) sit in four storage locations.
 
-<!-- CK_INTERESTING_OTHER_END -->
+{/* CK_INTERESTING_OTHER_END */}
 
-<!-- CK_4SQ_SECTION_START -->
+{/* CK_4SQ_SECTION_START */}
 
 ## Other Pages In This Section
 
@@ -89,9 +89,9 @@ Related public pages: [Fix overview](/Fix/overview), [laws landing](/laws), Disc
 
 </div>
 
-<!-- CK_4SQ_SECTION_END -->
+{/* CK_4SQ_SECTION_END */}
 
-<!-- CK_4SQ_SITEWIDE_START -->
+{/* CK_4SQ_SITEWIDE_START */}
 
 ## Elsewhere In The Investigation
 
@@ -130,7 +130,7 @@ Related public pages: [Fix overview](/Fix/overview), [laws landing](/laws), Disc
 
 </div>
 
-<!-- CK_4SQ_SITEWIDE_END -->
+{/* CK_4SQ_SITEWIDE_END */}
 
 {/* CK_AUTHOR_CREDIT */}
 

@@ -1645,7 +1645,7 @@ Peer laws: [<span className="off-lead">Law 1 - DoJ/FBI Disclosure</span>](/laws/
 
 Precedent: Epstein Files Transparency Act | JFK Records Act
 
-<!-- CK_INTERESTING_HERE_START -->
+{/* CK_INTERESTING_HERE_START */}
 
 ## Interesting In This Area
 
@@ -1654,9 +1654,9 @@ Precedent: Epstein Files Transparency Act | JFK Records Act
 * [The Epstein Files Act](/laws/DoJ_FBI/more/Notes_1_DoJ_FBI) passed 427-1 and still produced a fraction of its [pages](/laws/other/analysis/Challenges).
 * [Law 4](/laws/Trusted_Investigations/Law_4_Trusted_Investigations) gives three named investigators [two teams each](/laws/Trusted_Investigations/more/Output_Analysis), six teams in total.
 
-<!-- CK_INTERESTING_HERE_END -->
+{/* CK_INTERESTING_HERE_END */}
 
-<!-- CK_INTERESTING_OTHER_START -->
+{/* CK_INTERESTING_OTHER_START */}
 
 ## Interesting In Other Areas
 
@@ -1665,9 +1665,9 @@ Precedent: Epstein Files Transparency Act | JFK Records Act
 * [The FBI section](/FBI/overview) holds material this bill would compel, including [the bomb-dog standdown](/FBI/Bomb_Dogs).
 * [Government evidence](/gov/overview) held back is the subject; [proof of intel involvement](/Proof_Intel_Services/overview) is the argument.
 
-<!-- CK_INTERESTING_OTHER_END -->
+{/* CK_INTERESTING_OTHER_END */}
 
-<!-- CK_4SQ_SECTION_START -->
+{/* CK_4SQ_SECTION_START */}
 
 ## Other Pages In This Section
 
@@ -1707,9 +1707,9 @@ Precedent: Epstein Files Transparency Act | JFK Records Act
 
 </div>
 
-<!-- CK_4SQ_SECTION_END -->
+{/* CK_4SQ_SECTION_END */}
 
-<!-- CK_4SQ_SITEWIDE_START -->
+{/* CK_4SQ_SITEWIDE_START */}
 
 ## Elsewhere In The Investigation
 
@@ -1749,7 +1749,7 @@ Precedent: Epstein Files Transparency Act | JFK Records Act
 
 </div>
 
-<!-- CK_4SQ_SITEWIDE_END -->
+{/* CK_4SQ_SITEWIDE_END */}
 
 {/* CK_AUTHOR_CREDIT */}
 

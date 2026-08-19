@@ -55,7 +55,7 @@ $10M budget and 20-agent team requires appropriations.
 3. Add provision requiring investigators to specifically address each of the 175 items in Schedule A
 4. Coordinate with Law 4 so Trusted Investigators can share findings with the investigation team
 
-<!-- CK_INTERESTING_HERE_START -->
+{/* CK_INTERESTING_HERE_START */}
 
 ## Interesting In This Area
 
@@ -64,9 +64,9 @@ $10M budget and 20-agent team requires appropriations.
 * [The current audit](/laws/Require_to_Investigate/more/Output_Analysis) runs the same test on the redraft.
 * [The archived requirements](/laws/other/old/Require_to_Investigate/more/Human_Requirements) are the source of every MET line.
 
-<!-- CK_INTERESTING_HERE_END -->
+{/* CK_INTERESTING_HERE_END */}
 
-<!-- CK_INTERESTING_OTHER_START -->
+{/* CK_INTERESTING_OTHER_START */}
 
 ## Interesting In Other Areas
 
@@ -75,9 +75,9 @@ $10M budget and 20-agent team requires appropriations.
 * [Government evidence](/gov/overview) released so far is thinner than the case files described.
 * [Legal investigation](/legal_investigation/overview) tracks what the docket shows and what it omits.
 
-<!-- CK_INTERESTING_OTHER_END -->
+{/* CK_INTERESTING_OTHER_END */}
 
-<!-- CK_4SQ_SECTION_START -->
+{/* CK_4SQ_SECTION_START */}
 
 ## Other Pages In This Section
 
@@ -115,9 +115,9 @@ $10M budget and 20-agent team requires appropriations.
 
 </div>
 
-<!-- CK_4SQ_SECTION_END -->
+{/* CK_4SQ_SECTION_END */}
 
-<!-- CK_4SQ_SITEWIDE_START -->
+{/* CK_4SQ_SITEWIDE_START */}
 
 ## Elsewhere In The Investigation
 
@@ -156,7 +156,7 @@ $10M budget and 20-agent team requires appropriations.
 
 </div>
 
-<!-- CK_4SQ_SITEWIDE_END -->
+{/* CK_4SQ_SITEWIDE_END */}
 
 {/* CK_AUTHOR_CREDIT */}
 

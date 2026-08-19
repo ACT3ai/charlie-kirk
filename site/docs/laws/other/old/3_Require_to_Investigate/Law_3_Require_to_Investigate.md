@@ -170,7 +170,7 @@ To require the Federal Bureau of Investigation, all relevant federal and state l
 
 This Act shall take effect immediately upon enactment.
 
-<!-- CK_INTERESTING_HERE_START -->
+{/* CK_INTERESTING_HERE_START */}
 
 ## Interesting In This Area
 
@@ -179,9 +179,9 @@ This Act shall take effect immediately upon enactment.
 * [The archived requirements page](/laws/other/old/Require_to_Investigate/more/Human_Requirements) states it plainly: files are not an investigation.
 * [Law 4's archived draft](/laws/other/old/Trusted_Investigations/Law_4_Trusted_Investigations) answers who checks that work.
 
-<!-- CK_INTERESTING_HERE_END -->
+{/* CK_INTERESTING_HERE_END */}
 
-<!-- CK_INTERESTING_OTHER_START -->
+{/* CK_INTERESTING_OTHER_START */}
 
 ## Interesting In Other Areas
 
@@ -190,9 +190,9 @@ This Act shall take effect immediately upon enactment.
 * [Posts vanished and accounts were suspended](/Censorship/overview) as these theories spread.
 * [The cover-up record](/CoverUp/overview) is the case these four bills were drafted against.
 
-<!-- CK_INTERESTING_OTHER_END -->
+{/* CK_INTERESTING_OTHER_END */}
 
-<!-- CK_4SQ_SECTION_START -->
+{/* CK_4SQ_SECTION_START */}
 
 ## Other Pages In This Section
 
@@ -230,9 +230,9 @@ This Act shall take effect immediately upon enactment.
 
 </div>
 
-<!-- CK_4SQ_SECTION_END -->
+{/* CK_4SQ_SECTION_END */}
 
-<!-- CK_4SQ_SITEWIDE_START -->
+{/* CK_4SQ_SITEWIDE_START */}
 
 ## Elsewhere In The Investigation
 
@@ -272,7 +272,7 @@ This Act shall take effect immediately upon enactment.
 
 </div>
 
-<!-- CK_4SQ_SITEWIDE_END -->
+{/* CK_4SQ_SITEWIDE_END */}
 
 {/* CK_AUTHOR_CREDIT */}
 

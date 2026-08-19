@@ -145,7 +145,7 @@ Section 4(c) triggers automatic transfer to a congressional commission if "evide
 ### 12. No Conflict of Interest Provisions for Trusted Investigators (Law 4)
 The named investigators face no financial disclosure requirements, recusal standards, or conflict-of-interest rules. **Recommendation:** Require annual financial disclosures and recusal from matters where a personal financial interest exists, modeled on 5 U.S.C. App. (Ethics in Government Act).
 
-<!-- CK_INTERESTING_HERE_START -->
+{/* CK_INTERESTING_HERE_START */}
 
 ## Interesting In This Area
 
@@ -154,9 +154,9 @@ The named investigators face no financial disclosure requirements, recusal stand
 * [The compliance audit](/laws/other/analysis/Laws_Not_Complying) measures the live drafts against the newer charter.
 * [The hub](/laws) is where the current package starts.
 
-<!-- CK_INTERESTING_HERE_END -->
+{/* CK_INTERESTING_HERE_END */}
 
-<!-- CK_INTERESTING_OTHER_START -->
+{/* CK_INTERESTING_OTHER_START */}
 
 ## Interesting In Other Areas
 
@@ -165,9 +165,9 @@ The named investigators face no financial disclosure requirements, recusal stand
 * [Roof access](/Roof/overview) was reportedly trivial, with thin camera coverage.
 * [Killer](/Killer/overview) collects the alternative-perpetrator threads these bills would force open.
 
-<!-- CK_INTERESTING_OTHER_END -->
+{/* CK_INTERESTING_OTHER_END */}
 
-<!-- CK_4SQ_SECTION_START -->
+{/* CK_4SQ_SECTION_START */}
 
 ## Other Pages In This Section
 
@@ -205,9 +205,9 @@ The named investigators face no financial disclosure requirements, recusal stand
 
 </div>
 
-<!-- CK_4SQ_SECTION_END -->
+{/* CK_4SQ_SECTION_END */}
 
-<!-- CK_4SQ_SITEWIDE_START -->
+{/* CK_4SQ_SITEWIDE_START */}
 
 ## Elsewhere In The Investigation
 
@@ -248,7 +248,7 @@ The named investigators face no financial disclosure requirements, recusal stand
 
 </div>
 
-<!-- CK_4SQ_SITEWIDE_END -->
+{/* CK_4SQ_SITEWIDE_END */}
 
 {/* CK_AUTHOR_CREDIT */}
 

@@ -57,7 +57,7 @@ This approach draws from the Epstein Act's enumeration of specific record catego
 - **Public pressure campaign** through the 175-item list repository creates accountability
 - The Epstein Act's compliance failures demonstrate that automatic enforcement mechanisms are essential
 
-<!-- CK_INTERESTING_HERE_START -->
+{/* CK_INTERESTING_HERE_START */}
 
 ## Interesting In This Area
 
@@ -66,9 +66,9 @@ This approach draws from the Epstein Act's enumeration of specific record catego
 * [The charter](/laws/other/List_Of_Laws) is what [the compliance audit](/laws/other/analysis/Fixed/Laws_Not_Complying) checks each draft against.
 * [The threat model](/laws/other/Worries_By_Each_4_Laws) assumes every evasion route will be tried, including [an Israel exception](/laws/other/analysis/Fixed/Laws_Not_Complying).
 
-<!-- CK_INTERESTING_HERE_END -->
+{/* CK_INTERESTING_HERE_END */}
 
-<!-- CK_INTERESTING_OTHER_START -->
+{/* CK_INTERESTING_OTHER_START */}
 
 ## Interesting In Other Areas
 
@@ -77,9 +77,9 @@ This approach draws from the Epstein Act's enumeration of specific record catego
 * [The CIA](/US_Intelligence/cia) delayed JFK-era releases for decades under a law that ordered them.
 * [Your Actions Fix It](/Your_Actions_Fix_It/overview) is where a reader turns this into a phone call.
 
-<!-- CK_INTERESTING_OTHER_END -->
+{/* CK_INTERESTING_OTHER_END */}
 
-<!-- CK_4SQ_SECTION_START -->
+{/* CK_4SQ_SECTION_START */}
 
 ## Other Pages In This Section
 
@@ -118,9 +118,9 @@ This approach draws from the Epstein Act's enumeration of specific record catego
 
 </div>
 
-<!-- CK_4SQ_SECTION_END -->
+{/* CK_4SQ_SECTION_END */}
 
-<!-- CK_4SQ_SITEWIDE_START -->
+{/* CK_4SQ_SITEWIDE_START */}
 
 ## Elsewhere In The Investigation
 
@@ -160,7 +160,7 @@ This approach draws from the Epstein Act's enumeration of specific record catego
 
 </div>
 
-<!-- CK_4SQ_SITEWIDE_END -->
+{/* CK_4SQ_SITEWIDE_END */}
 
 ## Sources
 - Epstein Files Transparency Act: https://www.congress.gov/bill/119th-congress/house-bill/4405

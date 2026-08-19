@@ -26,7 +26,7 @@ The need for this law is illustrated by former NCTC director [Joe Kent](/US_Inte
 
 See also: [Law 1 Requirements](/laws/DoJ_FBI/more/Human_Requirements) (law enforcement counterpart)
 
-<!-- CK_INTERESTING_HERE_START -->
+{/* CK_INTERESTING_HERE_START */}
 
 ## Interesting In This Area
 
@@ -35,9 +35,9 @@ See also: [Law 1 Requirements](/laws/DoJ_FBI/more/Human_Requirements) (law enfor
 * [Law 4](/laws/Trusted_Investigations/Law_4_Trusted_Investigations) gives three named investigators [two teams each](/laws/Trusted_Investigations/more/Output_Analysis), six teams in total.
 * [The charter](/laws/other/List_Of_Laws) is what [the compliance audit](/laws/other/analysis/Fixed/Laws_Not_Complying) checks each draft against.
 
-<!-- CK_INTERESTING_HERE_END -->
+{/* CK_INTERESTING_HERE_END */}
 
-<!-- CK_INTERESTING_OTHER_START -->
+{/* CK_INTERESTING_OTHER_START */}
 
 ## Interesting In Other Areas
 
@@ -46,9 +46,9 @@ See also: [Law 1 Requirements](/laws/DoJ_FBI/more/Human_Requirements) (law enfor
 * [The Fix section](/Fix/overview) is the plain-language version of what these four bills would force open.
 * [Government evidence](/gov/overview) withheld is the whole reason this list exists.
 
-<!-- CK_INTERESTING_OTHER_END -->
+{/* CK_INTERESTING_OTHER_END */}
 
-<!-- CK_4SQ_SECTION_START -->
+{/* CK_4SQ_SECTION_START */}
 
 ## Other Pages In This Section
 
@@ -86,9 +86,9 @@ See also: [Law 1 Requirements](/laws/DoJ_FBI/more/Human_Requirements) (law enfor
 
 </div>
 
-<!-- CK_4SQ_SECTION_END -->
+{/* CK_4SQ_SECTION_END */}
 
-<!-- CK_4SQ_SITEWIDE_START -->
+{/* CK_4SQ_SITEWIDE_START */}
 
 ## Elsewhere In The Investigation
 
@@ -126,7 +126,7 @@ See also: [Law 1 Requirements](/laws/DoJ_FBI/more/Human_Requirements) (law enfor
 
 </div>
 
-<!-- CK_4SQ_SITEWIDE_END -->
+{/* CK_4SQ_SITEWIDE_END */}
 
 {/* CK_AUTHOR_CREDIT */}
 

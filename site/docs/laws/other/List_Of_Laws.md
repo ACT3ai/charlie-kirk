@@ -15,8 +15,6 @@
 **Scope:** Forces the Department of Justice, FBI, ATF, CBP, TSA, DHS, FinCEN, and all federal, state, and local law enforcement agencies to disclose all files related to the [Charlie Kirk](/People/charlie-kirk) investigation within 30 days of enactment. No geographic limitation -- applies nationwide and internationally where U.S. agencies have jurisdiction or possession of records. Now enumerates 205 specific disclosure items in Schedule A (expanded from the original 175).
 
 
-
-
 ---
 
 ## Law 2: The Charlie Kirk Files Forced Disclosure Act -- Intelligence Services
@@ -27,7 +25,6 @@
 **Scope:** Forces all U.S. Intelligence Community agencies as defined by 50 U.S.C. 3003(4) -- [CIA](/US_Intelligence/cia), [NSA](/US_Intelligence/nsa), DIA, NRO, NGA, armed forces intelligence, FBI intelligence division, DHS intelligence, ODNI, and DOE/Treasury/State intelligence elements -- to disclose all information related to the Charlie Kirk investigation within 30 days. Covers all intelligence products: SIGINT, HUMINT, IMINT, MASINT, cable traffic, satellite imagery, and liaison communications. No geographic limitation.
 
 
-
 ---
 
 ## Law 3: The Charlie Kirk Mandatory Investigation Act
@@ -36,10 +33,6 @@
 **Primary File:** `Law_3_Require_to_Investigate.md`
 
 **Scope:** Goes beyond disclosure (Laws 1 and 2) to require active, good-faith investigation of all Schedule A items by four agencies: the FBI, the CIA, the NSA, and the Intelligence Community (via DNI). Each agency must assign a minimum 20-special-agent dedicated team with a $10 million independent budget. All four investigations must begin within 60 days of enactment. No geographic limitation. Minimum 2-year commitment for all team members, with the option for individual team members to request to continue working on the investigation for up to 5 years. Every 6 months, each investigation team must produce a public disclosure report documenting all findings, output documents discovered, and as much information as can be provided.
-
-
-
-
 
 
 ---
@@ -62,7 +55,8 @@ Parallel media clips recirculated by accounts such as **[@FurkanGozukara](/Influ
 
 Related public pages: [Fix overview](/Fix/overview), [laws landing](/laws), Discovery, [explain all four laws](/laws/explain/all/overview).
 
-<!-- CK_INTERESTING_HERE_START -->
+
+{/* CK_INTERESTING_HERE_START */}
 
 ## Interesting In This Area
 
@@ -71,9 +65,9 @@ Related public pages: [Fix overview](/Fix/overview), [laws landing](/laws), Disc
 * [The threat analysis](/laws/other/Worries_By_Each_4_Laws) assumes every known evasion tactic will be tried.
 * [Attorney review](/laws/other/analysis/Improve) flags the Appointments Clause as Law 4's biggest exposure.
 
-<!-- CK_INTERESTING_HERE_END -->
+{/* CK_INTERESTING_HERE_END */}
 
-<!-- CK_INTERESTING_OTHER_START -->
+{/* CK_INTERESTING_OTHER_START */}
 
 ## Interesting In Other Areas
 
@@ -82,9 +76,9 @@ Related public pages: [Fix overview](/Fix/overview), [laws landing](/laws), Disc
 * [Vote](/Vote/overview) is where the legislative path stops being theoretical.
 * [The cover-up record](/CoverUp/overview) is what a Special Master would be reading.
 
-<!-- CK_INTERESTING_OTHER_END -->
+{/* CK_INTERESTING_OTHER_END */}
 
-<!-- CK_4SQ_SECTION_START -->
+{/* CK_4SQ_SECTION_START */}
 
 ## Other Pages In This Section
 
@@ -123,9 +117,9 @@ Related public pages: [Fix overview](/Fix/overview), [laws landing](/laws), Disc
 
 </div>
 
-<!-- CK_4SQ_SECTION_END -->
+{/* CK_4SQ_SECTION_END */}
 
-<!-- CK_4SQ_SITEWIDE_START -->
+{/* CK_4SQ_SITEWIDE_START */}
 
 ## Elsewhere In The Investigation
 
@@ -166,7 +160,7 @@ Related public pages: [Fix overview](/Fix/overview), [laws landing](/laws), Disc
 
 </div>
 
-<!-- CK_4SQ_SITEWIDE_END -->
+{/* CK_4SQ_SITEWIDE_END */}
 
 {/* CK_AUTHOR_CREDIT */}
 

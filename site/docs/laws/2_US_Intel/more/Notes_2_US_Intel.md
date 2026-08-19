@@ -46,7 +46,7 @@ The dual-track approach:
 - May face Article II constitutional challenges
 - Foreign diplomatic consequences of disclosing liaison communications
 
-<!-- CK_INTERESTING_HERE_START -->
+{/* CK_INTERESTING_HERE_START */}
 
 ## Interesting In This Area
 
@@ -55,9 +55,9 @@ The dual-track approach:
 * [The threat model](/laws/other/Worries_By_Each_4_Laws) assumes every evasion route will be tried, including [an Israel exception](/laws/other/analysis/Fixed/Laws_Not_Complying).
 * [The charter](/laws/other/List_Of_Laws) is what [the compliance audit](/laws/other/analysis/Fixed/Improve) checks each draft against.
 
-<!-- CK_INTERESTING_HERE_END -->
+{/* CK_INTERESTING_HERE_END */}
 
-<!-- CK_INTERESTING_OTHER_START -->
+{/* CK_INTERESTING_OTHER_START */}
 
 ## Interesting In Other Areas
 
@@ -66,9 +66,9 @@ The dual-track approach:
 * [The cover-up section](/CoverUp/overview) is where the withheld-records claims are collected.
 * [Your Actions Fix It](/Your_Actions_Fix_It/overview) is where a reader turns this into a phone call.
 
-<!-- CK_INTERESTING_OTHER_END -->
+{/* CK_INTERESTING_OTHER_END */}
 
-<!-- CK_4SQ_SECTION_START -->
+{/* CK_4SQ_SECTION_START */}
 
 ## Other Pages In This Section
 
@@ -106,9 +106,9 @@ The dual-track approach:
 
 </div>
 
-<!-- CK_4SQ_SECTION_END -->
+{/* CK_4SQ_SECTION_END */}
 
-<!-- CK_4SQ_SITEWIDE_START -->
+{/* CK_4SQ_SITEWIDE_START */}
 
 ## Elsewhere In The Investigation
 
@@ -149,7 +149,7 @@ The dual-track approach:
 
 </div>
 
-<!-- CK_4SQ_SITEWIDE_END -->
+{/* CK_4SQ_SITEWIDE_END */}
 
 ## Sources
 - JFK Records Act: https://www.congress.gov/bill/102nd-congress/senate-bill/3006

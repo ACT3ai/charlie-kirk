@@ -126,15 +126,25 @@ place instead of stacking duplicates. Canonical names:
   CK_4SQ_SECTION_START        ... CK_4SQ_SECTION_END
   CK_4SQ_SITEWIDE_START       ... CK_4SQ_SITEWIDE_END
 
-In a .mdx file each marker is written   {/* CK_4SQ_SECTION_START */}
-In a .md  file each marker is written   <!-- CK_4SQ_SECTION_START -->
+In EVERY file, .mdx and .md alike, each marker is written
+
+    {/* CK_4SQ_SECTION_START */}
+
+NEVER write an HTML comment. Do NOT write <!-- CK_4SQ_SECTION_START --> in a .md
+file. This site's docusaurus.config.ts sets no markdown.format override, so
+Docusaurus 3 compiles .md through the MDX loader exactly like .mdx, and a bare
+<!-- is a hard MDX parse error: "Unexpected character `!` (U+0021) before name".
+One such marker fails `npm run build`, which fails the Pages workflow, which
+leaves the ENTIRE live site frozen on its last good commit. On 2026-08-19 this
+put <!-- markers into 43 .md files under site/docs/laws/ and silently blocked
+every deploy until they were converted back.
 
 Rules:
 
 * On every run, strip any existing block with these markers FIRST, then write
-  the new one. Never nest, never append a second copy.
-* Check the file extension before writing a marker. Getting this wrong breaks
-  the deploy for the whole site, not just the page.
+  the new one. Never nest, never append a second copy. When stripping, match
+  BOTH the {/* */} and the legacy <!-- --> form, so old files get repaired.
+* The marker form does not vary by extension. {/* */} everywhere.
 * Text outside the markers is never touched. Existing prose, existing tables,
   existing "## Interesting" bullet lists, existing "## Related Areas" grids and
   existing "## Images" galleries all survive unchanged.
@@ -526,13 +536,10 @@ MDX safety:
   values coming out of {CARD_INDEX_CSV} are already escaped, so a blanket
   & -> &amp; pass over them produces &amp;quot; and the page shows the entity as
   literal text. Copy those columns through unchanged.
-* .md and .mdx BOTH compile through MDX here. Docusaurus 3.10 defaults
-  markdown.format to 'mdx', and mdx1Compat.comments enables <!-- --> in .md via
-  @slorber/remark-comment. So a stray brace in a .md page breaks the build just
-  as surely as in an .mdx page, and the verifier compiles both through that same
-  plugin chain ({SITE_DIR}/_ck_mdxcheck.mjs). Keep using the HTML-comment marker
-  form in .md and the JSX form in .mdx - that is a readability convention, not a
-  compiler requirement.
+* .md and .mdx BOTH compile through MDX here, with the SAME rules. A stray brace
+  or an HTML comment breaks a .md page exactly as it breaks an .mdx page. Use
+  JSX comments and JSX card markup in both. The verifier compiles both through
+  the real build's plugin chain ({SITE_DIR}/_ck_mdxcheck.mjs, remark-gfm only).
 
 
 ============================
@@ -625,6 +632,15 @@ checker covers:
 
 * No page carries a duplicate block. Each of the four START markers appears at
   most once per file, and each has its matching END.
+
+* PLACEMENT is checked, not just validity. The block run must sit ABOVE every
+  trailing-apparatus marker in the file - the author credit, the page's own
+  "## Interesting" list, "## Related Areas", the placed-images gallery and
+  "## Sources". For a long time the verifier accepted a run anywhere in the
+  file, so blocks written below one of those passed silently; two agents hit it
+  and self-corrected, and 111 pages had to be relocated afterwards. Resolve the
+  anchor by POSITION using the anchor column of {CARD_INDEX_CSV}, never by
+  reading the six-anchor list as a priority order.
 
 * No page cards itself, and no four square contains the same target twice.
 

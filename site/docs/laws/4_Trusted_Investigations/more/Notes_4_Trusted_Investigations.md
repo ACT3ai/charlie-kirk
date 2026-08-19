@@ -50,7 +50,7 @@ The major improvement is that Trusted Investigators must specifically pursue the
 - Multiple independent teams create redundancy
 - Schedule A integration ensures no lead is ignored
 
-<!-- CK_INTERESTING_HERE_START -->
+{/* CK_INTERESTING_HERE_START */}
 
 ## Interesting In This Area
 
@@ -59,9 +59,9 @@ The major improvement is that Trusted Investigators must specifically pursue the
 * [Attorney review](/laws/other/analysis/Improve) still calls the Appointments Clause this law's likeliest fatal challenge.
 * [Law 3's notes](/laws/Require_to_Investigate/more/Notes_3_Require_to_Investigate) warn that the Warren Commission met its mandate anyway.
 
-<!-- CK_INTERESTING_HERE_END -->
+{/* CK_INTERESTING_HERE_END */}
 
-<!-- CK_INTERESTING_OTHER_START -->
+{/* CK_INTERESTING_OTHER_START */}
 
 ## Interesting In Other Areas
 
@@ -70,9 +70,9 @@ The major improvement is that Trusted Investigators must specifically pursue the
 * [The exploding-mic theory](/Mic/overview) rests on a May 2025 Navy demolition-charge contract.
 * Sixteen people died when [the AES plant exploded](/US_Intelligence_Assisted/aes-factory-explosion) five weeks later.
 
-<!-- CK_INTERESTING_OTHER_END -->
+{/* CK_INTERESTING_OTHER_END */}
 
-<!-- CK_4SQ_SECTION_START -->
+{/* CK_4SQ_SECTION_START */}
 
 ## Other Pages In This Section
 
@@ -111,9 +111,9 @@ The major improvement is that Trusted Investigators must specifically pursue the
 
 </div>
 
-<!-- CK_4SQ_SECTION_END -->
+{/* CK_4SQ_SECTION_END */}
 
-<!-- CK_4SQ_SITEWIDE_START -->
+{/* CK_4SQ_SITEWIDE_START */}
 
 ## Elsewhere In The Investigation
 
@@ -153,7 +153,7 @@ The major improvement is that Trusted Investigators must specifically pursue the
 
 </div>
 
-<!-- CK_4SQ_SITEWIDE_END -->
+{/* CK_4SQ_SITEWIDE_END */}
 
 ## Sources
 - 9/11 Commission: https://www.9-11commission.gov/

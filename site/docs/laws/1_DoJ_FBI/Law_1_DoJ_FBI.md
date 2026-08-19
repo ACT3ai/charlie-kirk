@@ -1347,7 +1347,7 @@ Peer laws: Law 2 - US Intel Disclosure | [<span className="off-lead">Law 3 - Man
 
 Precedent: Epstein Files Transparency Act | JFK Records Act
 
-<!-- CK_INTERESTING_HERE_START -->
+{/* CK_INTERESTING_HERE_START */}
 
 ## Interesting In This Area
 
@@ -1356,9 +1356,9 @@ Precedent: Epstein Files Transparency Act | JFK Records Act
 * [Schedule A](/laws/other/analysis/Fixed/Any_more_to_Add) grew from 175 items to 208, and [one count](/laws/other/analysis/Challenges) still needs harmonising.
 * [Section 12D](/laws/other/analysis/Fixed/Any_Problems) requires searchable PDFs and machine-readable indexes, killing the [unusable-format defence](/laws/other/Worries_By_Each_4_Laws).
 
-<!-- CK_INTERESTING_HERE_END -->
+{/* CK_INTERESTING_HERE_END */}
 
-<!-- CK_INTERESTING_OTHER_START -->
+{/* CK_INTERESTING_OTHER_START */}
 
 ## Interesting In Other Areas
 
@@ -1367,9 +1367,9 @@ Precedent: Epstein Files Transparency Act | JFK Records Act
 * [The autopsy report](/Medical/autopsy_report_not_public) has never been published, and [the ATF comparison](/Gun_Bullet/ATF_Fragment_Inconclusive) came back inconclusive.
 * [The Fix section](/Fix/overview) is the plain-language version of what these four bills would force open.
 
-<!-- CK_INTERESTING_OTHER_END -->
+{/* CK_INTERESTING_OTHER_END */}
 
-<!-- CK_4SQ_SECTION_START -->
+{/* CK_4SQ_SECTION_START */}
 
 ## Other Pages In This Section
 
@@ -1408,9 +1408,9 @@ Precedent: Epstein Files Transparency Act | JFK Records Act
 
 </div>
 
-<!-- CK_4SQ_SECTION_END -->
+{/* CK_4SQ_SECTION_END */}
 
-<!-- CK_4SQ_SITEWIDE_START -->
+{/* CK_4SQ_SITEWIDE_START */}
 
 ## Elsewhere In The Investigation
 
@@ -1450,7 +1450,7 @@ Precedent: Epstein Files Transparency Act | JFK Records Act
 
 </div>
 
-<!-- CK_4SQ_SITEWIDE_END -->
+{/* CK_4SQ_SITEWIDE_END */}
 
 {/* CK_AUTHOR_CREDIT */}
 

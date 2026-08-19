@@ -21,7 +21,7 @@ Laws 1 and 2 force disclosure of existing records. This law forces agencies to a
 
 See also: [Law 1 Requirements](/laws/DoJ_FBI/more/Human_Requirements) | [Law 2 Requirements](/laws/US_Intel/more/Human_Requirements) (disclosure counterparts) | [Law 4 Requirements](/laws/Trusted_Investigations/more/Human_Requirements) (trusted oversight)
 
-<!-- CK_INTERESTING_HERE_START -->
+{/* CK_INTERESTING_HERE_START */}
 
 ## Interesting In This Area
 
@@ -30,9 +30,9 @@ See also: [Law 1 Requirements](/laws/DoJ_FBI/more/Human_Requirements) | [Law 2 R
 * [Laws 1 and 2](/laws/other/old/DoJ_FBI/more/Human_Requirements) force files; this one forces work.
 * [The audit](/laws/other/old/Require_to_Investigate/more/Output_Analysis) marks each demand MET with its section.
 
-<!-- CK_INTERESTING_HERE_END -->
+{/* CK_INTERESTING_HERE_END */}
 
-<!-- CK_INTERESTING_OTHER_START -->
+{/* CK_INTERESTING_OTHER_START */}
 
 ## Interesting In Other Areas
 
@@ -41,9 +41,9 @@ See also: [Law 1 Requirements](/laws/DoJ_FBI/more/Human_Requirements) | [Law 2 R
 * [Sealing orders in 2026](/Legal/Evidence-Sealing-2026) kept filings off the public docket.
 * [Proof Intel Services](/Proof_Intel_Services/overview) collects the indicators these disclosure bills would test.
 
-<!-- CK_INTERESTING_OTHER_END -->
+{/* CK_INTERESTING_OTHER_END */}
 
-<!-- CK_4SQ_SECTION_START -->
+{/* CK_4SQ_SECTION_START */}
 
 ## Other Pages In This Section
 
@@ -81,9 +81,9 @@ See also: [Law 1 Requirements](/laws/DoJ_FBI/more/Human_Requirements) | [Law 2 R
 
 </div>
 
-<!-- CK_4SQ_SECTION_END -->
+{/* CK_4SQ_SECTION_END */}
 
-<!-- CK_4SQ_SITEWIDE_START -->
+{/* CK_4SQ_SITEWIDE_START */}
 
 ## Elsewhere In The Investigation
 
@@ -124,7 +124,7 @@ See also: [Law 1 Requirements](/laws/DoJ_FBI/more/Human_Requirements) | [Law 2 R
 
 </div>
 
-<!-- CK_4SQ_SITEWIDE_END -->
+{/* CK_4SQ_SITEWIDE_END */}
 
 {/* CK_AUTHOR_CREDIT */}
 

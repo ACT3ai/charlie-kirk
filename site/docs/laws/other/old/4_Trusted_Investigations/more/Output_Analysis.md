@@ -79,7 +79,7 @@ Six independent teams may duplicate effort.
 3. Consider adding independent legal counsel funded by investigation budget (DONE in Section 2(d))
 4. Ensure investigators' Schedule A tracking is public so citizens can monitor progress
 
-<!-- CK_INTERESTING_HERE_START -->
+{/* CK_INTERESTING_HERE_START */}
 
 ## Interesting In This Area
 
@@ -88,9 +88,9 @@ Six independent teams may duplicate effort.
 * [The current audit](/laws/Trusted_Investigations/more/Output_Analysis) adds security details and succession.
 * [Law 2's archived audit](/laws/other/old/US_Intel/more/Output_Analysis) covers the intelligence disclosure half.
 
-<!-- CK_INTERESTING_HERE_END -->
+{/* CK_INTERESTING_HERE_END */}
 
-<!-- CK_INTERESTING_OTHER_START -->
+{/* CK_INTERESTING_OTHER_START */}
 
 ## Interesting In Other Areas
 
@@ -99,9 +99,9 @@ Six independent teams may duplicate effort.
 * [Vote](/Vote/overview) is where the legislative path stops being theoretical.
 * [The cover-up record](/CoverUp/overview) is what a Special Master would be reading.
 
-<!-- CK_INTERESTING_OTHER_END -->
+{/* CK_INTERESTING_OTHER_END */}
 
-<!-- CK_4SQ_SECTION_START -->
+{/* CK_4SQ_SECTION_START */}
 
 ## Other Pages In This Section
 
@@ -140,9 +140,9 @@ Six independent teams may duplicate effort.
 
 </div>
 
-<!-- CK_4SQ_SECTION_END -->
+{/* CK_4SQ_SECTION_END */}
 
-<!-- CK_4SQ_SITEWIDE_START -->
+{/* CK_4SQ_SITEWIDE_START */}
 
 ## Elsewhere In The Investigation
 
@@ -183,7 +183,7 @@ Six independent teams may duplicate effort.
 
 </div>
 
-<!-- CK_4SQ_SITEWIDE_END -->
+{/* CK_4SQ_SITEWIDE_END */}
 
 {/* CK_AUTHOR_CREDIT */}
 

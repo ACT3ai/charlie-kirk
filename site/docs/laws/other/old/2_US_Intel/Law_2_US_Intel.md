@@ -176,7 +176,7 @@ To require all United States Intelligence Community agencies to release all info
 
 This Act shall take effect immediately upon enactment. Records preservation requirements (Section 6) take effect upon introduction of this bill.
 
-<!-- CK_INTERESTING_HERE_START -->
+{/* CK_INTERESTING_HERE_START */}
 
 ## Interesting In This Area
 
@@ -185,9 +185,9 @@ This Act shall take effect immediately upon enactment. Records preservation requ
 * [The archived requirements page](/laws/other/old/US_Intel/more/Human_Requirements) is the plain-English source for it.
 * [Law 1's archived twin](/laws/other/old/DoJ_FBI/more/Output_Analysis) does the same for law enforcement.
 
-<!-- CK_INTERESTING_HERE_END -->
+{/* CK_INTERESTING_HERE_END */}
 
-<!-- CK_INTERESTING_OTHER_START -->
+{/* CK_INTERESTING_OTHER_START */}
 
 ## Interesting In Other Areas
 
@@ -196,9 +196,9 @@ This Act shall take effect immediately upon enactment. Records preservation requ
 * [Roof access](/Roof/overview) was reportedly trivial, with thin camera coverage.
 * [Killer](/Killer/overview) collects the alternative-perpetrator threads these bills would force open.
 
-<!-- CK_INTERESTING_OTHER_END -->
+{/* CK_INTERESTING_OTHER_END */}
 
-<!-- CK_4SQ_SECTION_START -->
+{/* CK_4SQ_SECTION_START */}
 
 ## Other Pages In This Section
 
@@ -236,9 +236,9 @@ This Act shall take effect immediately upon enactment. Records preservation requ
 
 </div>
 
-<!-- CK_4SQ_SECTION_END -->
+{/* CK_4SQ_SECTION_END */}
 
-<!-- CK_4SQ_SITEWIDE_START -->
+{/* CK_4SQ_SITEWIDE_START */}
 
 ## Elsewhere In The Investigation
 
@@ -279,7 +279,7 @@ This Act shall take effect immediately upon enactment. Records preservation requ
 
 </div>
 
-<!-- CK_4SQ_SITEWIDE_END -->
+{/* CK_4SQ_SITEWIDE_END */}
 
 {/* CK_AUTHOR_CREDIT */}
 

@@ -174,7 +174,7 @@ To establish independent investigation teams led by designated trusted public fi
 
 This Act shall take effect immediately upon enactment.
 
-<!-- CK_INTERESTING_HERE_START -->
+{/* CK_INTERESTING_HERE_START */}
 
 ## Interesting In This Area
 
@@ -183,9 +183,9 @@ This Act shall take effect immediately upon enactment.
 * [The notes](/laws/other/old/Trusted_Investigations/more/Notes_4_Trusted_Investigations) rest the whole design on 9/11 Commission precedent.
 * [Law 3](/laws/other/old/Require_to_Investigate/Law_3_Require_to_Investigate) is the mandate this one is meant to police.
 
-<!-- CK_INTERESTING_HERE_END -->
+{/* CK_INTERESTING_HERE_END */}
 
-<!-- CK_INTERESTING_OTHER_START -->
+{/* CK_INTERESTING_OTHER_START */}
 
 ## Interesting In Other Areas
 
@@ -194,9 +194,9 @@ This Act shall take effect immediately upon enactment.
 * [The FBI section](/FBI/overview) holds the agency conduct these bills would open.
 * [Before the event](/Before/overview) shows the pressure Kirk was reportedly under.
 
-<!-- CK_INTERESTING_OTHER_END -->
+{/* CK_INTERESTING_OTHER_END */}
 
-<!-- CK_4SQ_SECTION_START -->
+{/* CK_4SQ_SECTION_START */}
 
 ## Other Pages In This Section
 
@@ -234,9 +234,9 @@ This Act shall take effect immediately upon enactment.
 
 </div>
 
-<!-- CK_4SQ_SECTION_END -->
+{/* CK_4SQ_SECTION_END */}
 
-<!-- CK_4SQ_SITEWIDE_START -->
+{/* CK_4SQ_SITEWIDE_START */}
 
 ## Elsewhere In The Investigation
 
@@ -275,7 +275,7 @@ This Act shall take effect immediately upon enactment.
 
 </div>
 
-<!-- CK_4SQ_SITEWIDE_END -->
+{/* CK_4SQ_SITEWIDE_END */}
 
 {/* CK_AUTHOR_CREDIT */}
 

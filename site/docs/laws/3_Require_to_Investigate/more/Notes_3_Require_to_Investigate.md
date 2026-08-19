@@ -45,7 +45,7 @@ The major improvement is that the investigation must specifically pursue each le
 ### Key Improvement: Conflict of Interest Trigger
 Previous version had no mechanism for what happens when the investigating agency is itself implicated. Section 4(c) now creates an automatic transfer to an independent commission. This addresses the single biggest weakness of the previous version.
 
-<!-- CK_INTERESTING_HERE_START -->
+{/* CK_INTERESTING_HERE_START */}
 
 ## Interesting In This Area
 
@@ -54,9 +54,9 @@ Previous version had no mechanism for what happens when the investigating agency
 * [The charter](/laws/other/List_Of_Laws) is what [the compliance audit](/laws/other/analysis/Fixed/Laws_Not_Complying) checks each draft against.
 * [The threat model](/laws/other/Worries_By_Each_4_Laws) assumes every evasion route will be tried, including [an Israel exception](/laws/other/analysis/Fixed/Laws_Not_Complying).
 
-<!-- CK_INTERESTING_HERE_END -->
+{/* CK_INTERESTING_HERE_END */}
 
-<!-- CK_INTERESTING_OTHER_START -->
+{/* CK_INTERESTING_OTHER_START */}
 
 ## Interesting In Other Areas
 
@@ -65,9 +65,9 @@ Previous version had no mechanism for what happens when the investigating agency
 * [The FBI section](/FBI/overview) holds material this bill would compel, including [the bomb-dog standdown](/FBI/Bomb_Dogs).
 * [The NCTC](/US_Intelligence/nctc) inquiry into foreign ties was reportedly halted before its leads ran out.
 
-<!-- CK_INTERESTING_OTHER_END -->
+{/* CK_INTERESTING_OTHER_END */}
 
-<!-- CK_4SQ_SECTION_START -->
+{/* CK_4SQ_SECTION_START */}
 
 ## Other Pages In This Section
 
@@ -106,9 +106,9 @@ Previous version had no mechanism for what happens when the investigating agency
 
 </div>
 
-<!-- CK_4SQ_SECTION_END -->
+{/* CK_4SQ_SECTION_END */}
 
-<!-- CK_4SQ_SITEWIDE_START -->
+{/* CK_4SQ_SITEWIDE_START */}
 
 ## Elsewhere In The Investigation
 
@@ -147,7 +147,7 @@ Previous version had no mechanism for what happens when the investigating agency
 
 </div>
 
-<!-- CK_4SQ_SITEWIDE_END -->
+{/* CK_4SQ_SITEWIDE_END */}
 
 ## Sources
 - Special Counsel regulations: https://www.law.cornell.edu/cfr/text/28/part-600

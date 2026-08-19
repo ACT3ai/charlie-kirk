@@ -24,7 +24,7 @@ Law 1 covers law enforcement (DOJ/FBI). This law covers intelligence services sp
 
 See also: [Law 1 Requirements](/laws/DoJ_FBI/more/Human_Requirements) (law enforcement counterpart)
 
-<!-- CK_INTERESTING_HERE_START -->
+{/* CK_INTERESTING_HERE_START */}
 
 ## Interesting In This Area
 
@@ -33,9 +33,9 @@ See also: [Law 1 Requirements](/laws/DoJ_FBI/more/Human_Requirements) (law enfor
 * [The current requirements page](/laws/US_Intel/more/Human_Requirements) restates the same demand.
 * [Law 1's archived version](/laws/other/old/DoJ_FBI/more/Human_Requirements) covers the law-enforcement half.
 
-<!-- CK_INTERESTING_HERE_END -->
+{/* CK_INTERESTING_HERE_END */}
 
-<!-- CK_INTERESTING_OTHER_START -->
+{/* CK_INTERESTING_OTHER_START */}
 
 ## Interesting In Other Areas
 
@@ -44,9 +44,9 @@ See also: [Law 1 Requirements](/laws/DoJ_FBI/more/Human_Requirements) (law enfor
 * [After the event](/After/overview) tracks resignations, payouts and reassignments.
 * [Messages attributed to Robinson](/Tyler_Robinson/Messages/overview) sit in four storage locations.
 
-<!-- CK_INTERESTING_OTHER_END -->
+{/* CK_INTERESTING_OTHER_END */}
 
-<!-- CK_4SQ_SECTION_START -->
+{/* CK_4SQ_SECTION_START */}
 
 ## Other Pages In This Section
 
@@ -84,9 +84,9 @@ See also: [Law 1 Requirements](/laws/DoJ_FBI/more/Human_Requirements) (law enfor
 
 </div>
 
-<!-- CK_4SQ_SECTION_END -->
+{/* CK_4SQ_SECTION_END */}
 
-<!-- CK_4SQ_SITEWIDE_START -->
+{/* CK_4SQ_SITEWIDE_START */}
 
 ## Elsewhere In The Investigation
 
@@ -125,7 +125,7 @@ See also: [Law 1 Requirements](/laws/DoJ_FBI/more/Human_Requirements) (law enfor
 
 </div>
 
-<!-- CK_4SQ_SITEWIDE_END -->
+{/* CK_4SQ_SITEWIDE_END */}
 
 {/* CK_AUTHOR_CREDIT */}
 

@@ -57,7 +57,7 @@ $10M budget and 20-agent team requires appropriations.
 3. Add provision requiring investigators to specifically address each of the 175 items in Schedule A
 4. Coordinate with Law 4 so Trusted Investigators can share findings with the investigation team
 
-<!-- CK_INTERESTING_HERE_START -->
+{/* CK_INTERESTING_HERE_START */}
 
 ## Interesting In This Area
 
@@ -66,9 +66,9 @@ $10M budget and 20-agent team requires appropriations.
 * [Law 2](/laws/US_Intel/Law_2_US_Intel) limits source protection to [active sources only](/laws/US_Intel/more/Notes_2_US_Intel), closing the usual exemption.
 * [Schedule A](/laws/other/analysis/Fixed/Any_more_to_Add) grew from 175 items to 208, and [one count](/laws/other/analysis/Challenges) still needs harmonising.
 
-<!-- CK_INTERESTING_HERE_END -->
+{/* CK_INTERESTING_HERE_END */}
 
-<!-- CK_INTERESTING_OTHER_START -->
+{/* CK_INTERESTING_OTHER_START */}
 
 ## Interesting In Other Areas
 
@@ -77,9 +77,9 @@ $10M budget and 20-agent team requires appropriations.
 * [Joe Kent](/US_Intelligence/joe-kent) says a [foreign-nexus review](/CoverUp/Joe_Kent_Halt) stopped before its leads were exhausted.
 * [The Fix section](/Fix/overview) is the plain-language version of what these four bills would force open.
 
-<!-- CK_INTERESTING_OTHER_END -->
+{/* CK_INTERESTING_OTHER_END */}
 
-<!-- CK_4SQ_SECTION_START -->
+{/* CK_4SQ_SECTION_START */}
 
 ## Other Pages In This Section
 
@@ -117,9 +117,9 @@ $10M budget and 20-agent team requires appropriations.
 
 </div>
 
-<!-- CK_4SQ_SECTION_END -->
+{/* CK_4SQ_SECTION_END */}
 
-<!-- CK_4SQ_SITEWIDE_START -->
+{/* CK_4SQ_SITEWIDE_START */}
 
 ## Elsewhere In The Investigation
 
@@ -158,7 +158,7 @@ $10M budget and 20-agent team requires appropriations.
 
 </div>
 
-<!-- CK_4SQ_SITEWIDE_END -->
+{/* CK_4SQ_SITEWIDE_END */}
 
 {/* CK_AUTHOR_CREDIT */}
 

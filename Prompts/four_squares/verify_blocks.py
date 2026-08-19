@@ -38,12 +38,13 @@ def check(path):
 
     ours = "".join(block_text(text, b) for b in BLOCKS)
 
-    # 2. comment form inside our blocks
+    # 2. comment form inside our blocks.
+    # Markers are ALWAYS {/* ... */}, in .md exactly as in .mdx. This site sets no
+    # markdown.format override, so Docusaurus 3 runs .md through the MDX loader too,
+    # and a bare <!-- is a hard MDX parse error that fails the whole site build.
     for b in BLOCKS:
-        if ext == "mdx" and re.search(r"<!--\s*" + b, text):
-            fails.append(f"HTML comment marker in .mdx for {b}")
-        if ext == "md" and re.search(r"\{/\*\s*" + b, text):
-            fails.append(f"JSX comment marker in .md for {b}")
+        if re.search(r"<!--\s*" + b, text):
+            fails.append(f"HTML comment marker for {b} (use {{/* {b} */}} — <!-- breaks the MDX build in .md and .mdx alike)")
 
     # 3. links resolve
     for url in set(re.findall(r'href="(/[^"#?]*)"', ours) + re.findall(r"\]\((/[^)\s#?]*)\)", ours)):
@@ -70,6 +71,24 @@ def check(path):
             fails.append(f"{b}: {len(targets)} cards")
         if re.search(r"https?://(ipfs\.io|[a-z0-9]+\.ipfs\.dweb\.link)[^\"']*\.(jpg|jpeg|png|webp)", seg):
             fails.append(f"{b}: image served from an IPFS gateway")
+
+    # 4b. PLACEMENT. The blocks must sit ABOVE the page's trailing apparatus.
+    #     The verifier used to accept a block run anywhere in the file, so a run
+    #     placed below an existing "## Interesting" list or below a placed-images
+    #     gallery passed silently. Position, not priority order, decides.
+    run = re.search(r"(?:\{/\*|<!--)\s*CK_INTERESTING_HERE_START.*?"
+                    r"CK_4SQ_SITEWIDE_END\s*(?:\*/\}|-->)", text, re.S)
+    if run:
+        rest = text[:run.start()] + text[run.end():]
+        for name, pat in (("CK_AUTHOR_CREDIT", r"(?:\{/\*|<!--)\s*CK_AUTHOR_CREDIT"),
+                          ("## Interesting", r"^## Interesting\s*$"),
+                          ("## Related Areas", r"^## Related Areas\s*$"),
+                          ("CK_PLACED_IMAGES", r"(?:\{/\*|<!--)\s*CK_PLACED_IMAGES_START"),
+                          ("## Sources", r"^## (?:Sources|Fix Laws|The Laws)\s*$")):
+            m2 = re.search(pat, rest, re.M)
+            if m2 and m2.start() < run.start():
+                fails.append(f"blocks placed BELOW {name} (should sit above it)")
+                break
 
     # 5. sentence length in the two interesting blocks
     for b in ("CK_INTERESTING_HERE", "CK_INTERESTING_OTHER"):

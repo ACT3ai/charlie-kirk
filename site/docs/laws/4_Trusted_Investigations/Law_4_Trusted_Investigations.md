@@ -1467,7 +1467,7 @@ Peer laws: [Law 1 - DoJ/FBI Disclosure](/laws/DoJ_FBI/Law_1_DoJ_FBI) | [Law 2 - 
 Precedent: Epstein Files Transparency Act | JFK Records Act
 
 
-<!-- CK_INTERESTING_HERE_START -->
+{/* CK_INTERESTING_HERE_START */}
 
 ## Interesting In This Area
 
@@ -1476,9 +1476,9 @@ Precedent: Epstein Files Transparency Act | JFK Records Act
 * [Law 3](/laws/Require_to_Investigate/Law_3_Require_to_Investigate) makes investigating a duty, with a [parallel intelligence assessment](/laws/Require_to_Investigate/more/Output_Analysis) directed by the DNI.
 * [The charter](/laws/other/List_Of_Laws) is what [the compliance audit](/laws/other/analysis/Fixed/Laws_Not_Complying) checks each draft against.
 
-<!-- CK_INTERESTING_HERE_END -->
+{/* CK_INTERESTING_HERE_END */}
 
-<!-- CK_INTERESTING_OTHER_START -->
+{/* CK_INTERESTING_OTHER_START */}
 
 ## Interesting In Other Areas
 
@@ -1487,9 +1487,9 @@ Precedent: Epstein Files Transparency Act | JFK Records Act
 * [Your Actions Fix It](/Your_Actions_Fix_It/overview) is where a reader turns this into a phone call.
 * [The court case](/court/overview) is the only prosecution to date, and [discovery is contested](/Law_Enforcement/court-proceedings).
 
-<!-- CK_INTERESTING_OTHER_END -->
+{/* CK_INTERESTING_OTHER_END */}
 
-<!-- CK_4SQ_SECTION_START -->
+{/* CK_4SQ_SECTION_START */}
 
 ## Other Pages In This Section
 
@@ -1528,9 +1528,9 @@ Precedent: Epstein Files Transparency Act | JFK Records Act
 
 </div>
 
-<!-- CK_4SQ_SECTION_END -->
+{/* CK_4SQ_SECTION_END */}
 
-<!-- CK_4SQ_SITEWIDE_START -->
+{/* CK_4SQ_SITEWIDE_START */}
 
 ## Elsewhere In The Investigation
 
@@ -1571,7 +1571,7 @@ Precedent: Epstein Files Transparency Act | JFK Records Act
 
 </div>
 
-<!-- CK_4SQ_SITEWIDE_END -->
+{/* CK_4SQ_SITEWIDE_END */}
 
 {/* CK_AUTHOR_CREDIT */}
 

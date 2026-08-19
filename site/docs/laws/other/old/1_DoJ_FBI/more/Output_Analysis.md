@@ -60,7 +60,7 @@ DOJ will resist even after signing.
 3. Coordinate with Law 4 for Trusted Investigator access to disclosed materials
 4. Pre-draft discharge petition strategy
 
-<!-- CK_INTERESTING_HERE_START -->
+{/* CK_INTERESTING_HERE_START */}
 
 ## Interesting In This Area
 
@@ -69,9 +69,9 @@ DOJ will resist even after signing.
 * [The current audit](/laws/DoJ_FBI/more/Output_Analysis) covers the expanded Schedule A.
 * [Law 2's archived audit](/laws/other/old/US_Intel/more/Output_Analysis) uses the same MET-by-section format.
 
-<!-- CK_INTERESTING_HERE_END -->
+{/* CK_INTERESTING_HERE_END */}
 
-<!-- CK_INTERESTING_OTHER_START -->
+{/* CK_INTERESTING_OTHER_START */}
 
 ## Interesting In Other Areas
 
@@ -80,9 +80,9 @@ DOJ will resist even after signing.
 * [Vote](/Vote/overview) is where the legislative path stops being theoretical.
 * [The cover-up record](/CoverUp/overview) is what a Special Master would be reading.
 
-<!-- CK_INTERESTING_OTHER_END -->
+{/* CK_INTERESTING_OTHER_END */}
 
-<!-- CK_4SQ_SECTION_START -->
+{/* CK_4SQ_SECTION_START */}
 
 ## Other Pages In This Section
 
@@ -121,9 +121,9 @@ DOJ will resist even after signing.
 
 </div>
 
-<!-- CK_4SQ_SECTION_END -->
+{/* CK_4SQ_SECTION_END */}
 
-<!-- CK_4SQ_SITEWIDE_START -->
+{/* CK_4SQ_SITEWIDE_START */}
 
 ## Elsewhere In The Investigation
 
@@ -164,7 +164,7 @@ DOJ will resist even after signing.
 
 </div>
 
-<!-- CK_4SQ_SITEWIDE_END -->
+{/* CK_4SQ_SITEWIDE_END */}
 
 {/* CK_AUTHOR_CREDIT */}
 

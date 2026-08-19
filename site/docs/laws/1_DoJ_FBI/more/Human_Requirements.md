@@ -53,7 +53,7 @@ critical investigative information from the public.
 X and court-watchers repeatedly cite **withheld FBI/ATF raw files**, sealed digital forensics, and incomplete camera dumps as reasons a **forced-disclosure statute** modeled on Epstein/JFK-style transparency laws is necessary. That political demand is **narrative context** for Law 1; it does not amend the statutory text above. Former NCTC director [Joe Kent](/US_Intelligence/joe-kent) has said on the record that his center's parallel review of foreign-nexus leads was ordered to stop once Tyler Robinson was in custody — exactly the kind of closed-off investigative file this disclosure mandate is designed to force into the open.
 
 
-<!-- CK_INTERESTING_HERE_START -->
+{/* CK_INTERESTING_HERE_START */}
 
 ## Interesting In This Area
 
@@ -62,9 +62,9 @@ X and court-watchers repeatedly cite **withheld FBI/ATF raw files**, sealed digi
 * [Law 4](/laws/Trusted_Investigations/Law_4_Trusted_Investigations) gives three named investigators [two teams each](/laws/Trusted_Investigations/more/Output_Analysis), six teams in total.
 * [Law 3](/laws/Require_to_Investigate/Law_3_Require_to_Investigate) makes investigating a duty, with a [parallel intelligence assessment](/laws/Require_to_Investigate/more/Output_Analysis) directed by the DNI.
 
-<!-- CK_INTERESTING_HERE_END -->
+{/* CK_INTERESTING_HERE_END */}
 
-<!-- CK_INTERESTING_OTHER_START -->
+{/* CK_INTERESTING_OTHER_START */}
 
 ## Interesting In Other Areas
 
@@ -73,9 +73,9 @@ X and court-watchers repeatedly cite **withheld FBI/ATF raw files**, sealed digi
 * [The Fix section](/Fix/overview) is the plain-language version of what these four bills would force open.
 * [Joe Kent](/US_Intelligence/joe-kent) says a [foreign-nexus review](/CoverUp/Joe_Kent_Halt) stopped before its leads were exhausted.
 
-<!-- CK_INTERESTING_OTHER_END -->
+{/* CK_INTERESTING_OTHER_END */}
 
-<!-- CK_4SQ_SECTION_START -->
+{/* CK_4SQ_SECTION_START */}
 
 ## Other Pages In This Section
 
@@ -113,9 +113,9 @@ X and court-watchers repeatedly cite **withheld FBI/ATF raw files**, sealed digi
 
 </div>
 
-<!-- CK_4SQ_SECTION_END -->
+{/* CK_4SQ_SECTION_END */}
 
-<!-- CK_4SQ_SITEWIDE_START -->
+{/* CK_4SQ_SITEWIDE_START */}
 
 ## Elsewhere In The Investigation
 
@@ -153,7 +153,7 @@ X and court-watchers repeatedly cite **withheld FBI/ATF raw files**, sealed digi
 
 </div>
 
-<!-- CK_4SQ_SITEWIDE_END -->
+{/* CK_4SQ_SITEWIDE_END */}
 
 {/* CK_AUTHOR_CREDIT */}
 

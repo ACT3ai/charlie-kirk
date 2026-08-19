@@ -30,7 +30,7 @@ Allow a specific set of trusted individuals to each have their own team within t
 
 See also: [Law 1 Requirements](/laws/DoJ_FBI/more/Human_Requirements) | [Law 2 Requirements](/laws/US_Intel/more/Human_Requirements) | [Law 3 Requirements](/laws/Require_to_Investigate/more/Human_Requirements)
 
-<!-- CK_INTERESTING_HERE_START -->
+{/* CK_INTERESTING_HERE_START */}
 
 ## Interesting In This Area
 
@@ -39,9 +39,9 @@ See also: [Law 1 Requirements](/laws/DoJ_FBI/more/Human_Requirements) | [Law 2 R
 * [The current requirements page](/laws/Trusted_Investigations/more/Human_Requirements) restates the same demands.
 * [Law 3's archived twin](/laws/other/old/Require_to_Investigate/more/Human_Requirements) covers the mandate to investigate.
 
-<!-- CK_INTERESTING_HERE_END -->
+{/* CK_INTERESTING_HERE_END */}
 
-<!-- CK_INTERESTING_OTHER_START -->
+{/* CK_INTERESTING_OTHER_START */}
 
 ## Interesting In Other Areas
 
@@ -50,9 +50,9 @@ See also: [Law 1 Requirements](/laws/DoJ_FBI/more/Human_Requirements) | [Law 2 R
 * [Drone activity](/Drones/overview) over the campus is a separate Schedule A category.
 * [Fort Huachuca searches](/GoogleSearches/fort-huachuca-sept-9-searches) reportedly spiked before September 9.
 
-<!-- CK_INTERESTING_OTHER_END -->
+{/* CK_INTERESTING_OTHER_END */}
 
-<!-- CK_4SQ_SECTION_START -->
+{/* CK_4SQ_SECTION_START */}
 
 ## Other Pages In This Section
 
@@ -90,9 +90,9 @@ See also: [Law 1 Requirements](/laws/DoJ_FBI/more/Human_Requirements) | [Law 2 R
 
 </div>
 
-<!-- CK_4SQ_SECTION_END -->
+{/* CK_4SQ_SECTION_END */}
 
-<!-- CK_4SQ_SITEWIDE_START -->
+{/* CK_4SQ_SITEWIDE_START */}
 
 ## Elsewhere In The Investigation
 
@@ -133,7 +133,7 @@ See also: [Law 1 Requirements](/laws/DoJ_FBI/more/Human_Requirements) | [Law 2 R
 
 </div>
 
-<!-- CK_4SQ_SITEWIDE_END -->
+{/* CK_4SQ_SITEWIDE_END */}
 
 {/* CK_AUTHOR_CREDIT */}
 

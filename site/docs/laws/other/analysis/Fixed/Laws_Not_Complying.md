@@ -107,7 +107,7 @@ Parallel media clips recirculated by accounts such as **[@FurkanGozukara](/Influ
 
 Related public pages: [Fix overview](/Fix/overview), [laws landing](/laws), Discovery, [explain all four laws](/laws/explain/all/overview).
 
-<!-- CK_INTERESTING_HERE_START -->
+{/* CK_INTERESTING_HERE_START */}
 
 ## Interesting In This Area
 
@@ -116,9 +116,9 @@ Related public pages: [Fix overview](/Fix/overview), [laws landing](/laws), Disc
 * [The unresolved file](/laws/other/analysis/Laws_Not_Complying) still flags Definitions buried behind Schedule A.
 * [The charter](/laws/other/List_Of_Laws) is the standard every one of these items is measured against.
 
-<!-- CK_INTERESTING_HERE_END -->
+{/* CK_INTERESTING_HERE_END */}
 
-<!-- CK_INTERESTING_OTHER_START -->
+{/* CK_INTERESTING_OTHER_START */}
 
 ## Interesting In Other Areas
 
@@ -127,9 +127,9 @@ Related public pages: [Fix overview](/Fix/overview), [laws landing](/laws), Disc
 * [The Mauser chain of custody](/Law_Enforcement/rifle-chain-of-custody) runs through a rooftop nobody watched.
 * [No counter-snipers](/Security_Team/no-counter-snipers) covered the roofline that afternoon.
 
-<!-- CK_INTERESTING_OTHER_END -->
+{/* CK_INTERESTING_OTHER_END */}
 
-<!-- CK_4SQ_SECTION_START -->
+{/* CK_4SQ_SECTION_START */}
 
 ## Other Pages In This Section
 
@@ -166,9 +166,9 @@ Related public pages: [Fix overview](/Fix/overview), [laws landing](/laws), Disc
 
 </div>
 
-<!-- CK_4SQ_SECTION_END -->
+{/* CK_4SQ_SECTION_END */}
 
-<!-- CK_4SQ_SITEWIDE_START -->
+{/* CK_4SQ_SITEWIDE_START */}
 
 ## Elsewhere In The Investigation
 
@@ -209,7 +209,7 @@ Related public pages: [Fix overview](/Fix/overview), [laws landing](/laws), Disc
 
 </div>
 
-<!-- CK_4SQ_SITEWIDE_END -->
+{/* CK_4SQ_SITEWIDE_END */}
 
 {/* CK_AUTHOR_CREDIT */}
 

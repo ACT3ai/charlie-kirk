@@ -64,7 +64,7 @@ DOJ will resist even after signing.
 
 X and court-watchers repeatedly cite **withheld FBI/ATF raw files**, sealed digital forensics, and incomplete camera dumps as reasons a **forced-disclosure statute** modeled on Epstein/JFK-style transparency laws is necessary. That political demand is **narrative context** for Law 1; it does not amend the statutory text above.
 
-<!-- CK_INTERESTING_HERE_START -->
+{/* CK_INTERESTING_HERE_START */}
 
 ## Interesting In This Area
 
@@ -73,9 +73,9 @@ X and court-watchers repeatedly cite **withheld FBI/ATF raw files**, sealed digi
 * [Section 12D](/laws/other/analysis/Fixed/Any_Problems) requires searchable PDFs and machine-readable indexes, killing the [unusable-format defence](/laws/other/Worries_By_Each_4_Laws).
 * [The Epstein Files Act](/laws/DoJ_FBI/more/Notes_1_DoJ_FBI) is the model, and [its compliance record](/laws/other/List_Of_Laws) is the warning.
 
-<!-- CK_INTERESTING_HERE_END -->
+{/* CK_INTERESTING_HERE_END */}
 
-<!-- CK_INTERESTING_OTHER_START -->
+{/* CK_INTERESTING_OTHER_START */}
 
 ## Interesting In Other Areas
 
@@ -84,9 +84,9 @@ X and court-watchers repeatedly cite **withheld FBI/ATF raw files**, sealed digi
 * [No gunshot-residue testing](/Proof_Not_Tyler/No_GSR_And_Physical_Tests) is alleged on the persons or clothing that mattered.
 * [Ryne Simmons](/Censorship/Ryne_Simmons_FBI_Video) says he preserved the 4K footage he was asked to delete.
 
-<!-- CK_INTERESTING_OTHER_END -->
+{/* CK_INTERESTING_OTHER_END */}
 
-<!-- CK_4SQ_SECTION_START -->
+{/* CK_4SQ_SECTION_START */}
 
 ## Other Pages In This Section
 
@@ -124,9 +124,9 @@ X and court-watchers repeatedly cite **withheld FBI/ATF raw files**, sealed digi
 
 </div>
 
-<!-- CK_4SQ_SECTION_END -->
+{/* CK_4SQ_SECTION_END */}
 
-<!-- CK_4SQ_SITEWIDE_START -->
+{/* CK_4SQ_SITEWIDE_START */}
 
 ## Elsewhere In The Investigation
 
@@ -167,7 +167,7 @@ X and court-watchers repeatedly cite **withheld FBI/ATF raw files**, sealed digi
 
 </div>
 
-<!-- CK_4SQ_SITEWIDE_END -->
+{/* CK_4SQ_SITEWIDE_END */}
 
 {/* CK_AUTHOR_CREDIT */}
 

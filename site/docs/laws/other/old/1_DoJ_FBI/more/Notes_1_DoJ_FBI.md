@@ -57,7 +57,7 @@ This approach draws from the Epstein Act's enumeration of specific record catego
 - **Public pressure campaign** through the 175-item list repository creates accountability
 - The Epstein Act's compliance failures demonstrate that automatic enforcement mechanisms are essential
 
-<!-- CK_INTERESTING_HERE_START -->
+{/* CK_INTERESTING_HERE_START */}
 
 ## Interesting In This Area
 
@@ -66,9 +66,9 @@ This approach draws from the Epstein Act's enumeration of specific record catego
 * [The current notes](/laws/DoJ_FBI/more/Notes_1_DoJ_FBI) carry these lessons forward.
 * [Law 2's notes](/laws/other/old/US_Intel/more/Notes_2_US_Intel) add the five-percent redaction figure.
 
-<!-- CK_INTERESTING_HERE_END -->
+{/* CK_INTERESTING_HERE_END */}
 
-<!-- CK_INTERESTING_OTHER_START -->
+{/* CK_INTERESTING_OTHER_START */}
 
 ## Interesting In Other Areas
 
@@ -77,9 +77,9 @@ This approach draws from the Epstein Act's enumeration of specific record catego
 * [A confession attributed to him](/US_Intelligence_Assisted/faked-confession) is disputed by citizen reviewers.
 * [TPUSA](/TPUSA/overview) records sit among the private holdings a Special Master could inspect.
 
-<!-- CK_INTERESTING_OTHER_END -->
+{/* CK_INTERESTING_OTHER_END */}
 
-<!-- CK_4SQ_SECTION_START -->
+{/* CK_4SQ_SECTION_START */}
 
 ## Other Pages In This Section
 
@@ -116,9 +116,9 @@ This approach draws from the Epstein Act's enumeration of specific record catego
 
 </div>
 
-<!-- CK_4SQ_SECTION_END -->
+{/* CK_4SQ_SECTION_END */}
 
-<!-- CK_4SQ_SITEWIDE_START -->
+{/* CK_4SQ_SITEWIDE_START */}
 
 ## Elsewhere In The Investigation
 
@@ -157,7 +157,7 @@ This approach draws from the Epstein Act's enumeration of specific record catego
 
 </div>
 
-<!-- CK_4SQ_SITEWIDE_END -->
+{/* CK_4SQ_SITEWIDE_END */}
 
 ## Sources
 - Epstein Files Transparency Act: https://www.congress.gov/bill/119th-congress/house-bill/4405

@@ -334,7 +334,7 @@ Parallel media clips recirculated by accounts such as **[@FurkanGozukara](/Influ
 
 Related public pages: [Fix overview](/Fix/overview), [laws landing](/laws), Discovery, [explain all four laws](/laws/explain/all/overview).
 
-<!-- CK_INTERESTING_HERE_START -->
+{/* CK_INTERESTING_HERE_START */}
 
 ## Interesting In This Area
 
@@ -343,9 +343,9 @@ Related public pages: [Fix overview](/Fix/overview), [laws landing](/laws), Disc
 * No draft yet authorises exhumation, which [Law 3](/laws/Require_to_Investigate/Law_3_Require_to_Investigate) would need for the medical questions.
 * [The fixed file](/laws/other/analysis/Fixed/Improve) records what earlier reviews already closed.
 
-<!-- CK_INTERESTING_HERE_END -->
+{/* CK_INTERESTING_HERE_END */}
 
-<!-- CK_INTERESTING_OTHER_START -->
+{/* CK_INTERESTING_OTHER_START */}
 
 ## Interesting In Other Areas
 
@@ -354,9 +354,9 @@ Related public pages: [Fix overview](/Fix/overview), [laws landing](/laws), Disc
 * [Government evidence](/gov/overview) released so far is thinner than the case files described.
 * [Legal investigation](/legal_investigation/overview) tracks what the docket shows and what it omits.
 
-<!-- CK_INTERESTING_OTHER_END -->
+{/* CK_INTERESTING_OTHER_END */}
 
-<!-- CK_4SQ_SECTION_START -->
+{/* CK_4SQ_SECTION_START */}
 
 ## Other Pages In This Section
 
@@ -395,9 +395,9 @@ Related public pages: [Fix overview](/Fix/overview), [laws landing](/laws), Disc
 
 </div>
 
-<!-- CK_4SQ_SECTION_END -->
+{/* CK_4SQ_SECTION_END */}
 
-<!-- CK_4SQ_SITEWIDE_START -->
+{/* CK_4SQ_SITEWIDE_START */}
 
 ## Elsewhere In The Investigation
 
@@ -436,7 +436,7 @@ Related public pages: [Fix overview](/Fix/overview), [laws landing](/laws), Disc
 
 </div>
 
-<!-- CK_4SQ_SITEWIDE_END -->
+{/* CK_4SQ_SITEWIDE_END */}
 
 {/* CK_AUTHOR_CREDIT */}
 

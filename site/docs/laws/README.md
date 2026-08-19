@@ -17,9 +17,7 @@ As a secondary matter, we would like the defense team to add these items as form
 - [Discovery Part 1 — Initial Findings and Key Evidence](https://github.com/BryanStarbuck/Charlie_Kirk_Dangerous_Investigation/blob/main/Details/Discovery_1/README.md)
 
 
-
 **Disclaimer:** This document does not assert as fact that any individual, organization, or government entity has committed any criminal, illegal, or immoral act. All references to persons and entities are made solely for proposed legislative and legal discovery purposes — to identify what information should be disclosed and investigated through lawful processes. The items listed here are questions for investigation, not conclusions. No statement in this document should be understood as an accusation, allegation, or assertion of wrongdoing against any party. This document exists solely to support public transparency through lawful legislative and judicial processes.
-
 
 
 ---
@@ -160,7 +158,8 @@ Parallel media clips recirculated by accounts such as **[@FurkanGozukara](/Influ
 
 Related public pages: [Fix overview](/Fix/overview), [laws landing](/laws), Discovery, [explain all four laws](/laws/explain/all/overview).
 
-<!-- CK_INTERESTING_HERE_START -->
+
+{/* CK_INTERESTING_HERE_START */}
 
 ## Interesting In This Area
 
@@ -169,9 +168,9 @@ Related public pages: [Fix overview](/Fix/overview), [laws landing](/laws), Disc
 * [The launch article](/laws/explain/all/overview) explains why one bill would never have been enough.
 * [The threat analysis](/laws/other/Worries_By_Each_4_Laws) lists every documented way agencies have evaded disclosure.
 
-<!-- CK_INTERESTING_HERE_END -->
+{/* CK_INTERESTING_HERE_END */}
 
-<!-- CK_INTERESTING_OTHER_START -->
+{/* CK_INTERESTING_OTHER_START */}
 
 ## Interesting In Other Areas
 
@@ -180,9 +179,9 @@ Related public pages: [Fix overview](/Fix/overview), [laws landing](/laws), Disc
 * [Sealing orders in 2026](/Legal/Evidence-Sealing-2026) kept filings off the public docket.
 * [Proof Intel Services](/Proof_Intel_Services/overview) collects the indicators these disclosure bills would test.
 
-<!-- CK_INTERESTING_OTHER_END -->
+{/* CK_INTERESTING_OTHER_END */}
 
-<!-- CK_4SQ_SECTION_START -->
+{/* CK_4SQ_SECTION_START */}
 
 ## Other Pages In This Section
 
@@ -221,9 +220,9 @@ Related public pages: [Fix overview](/Fix/overview), [laws landing](/laws), Disc
 
 </div>
 
-<!-- CK_4SQ_SECTION_END -->
+{/* CK_4SQ_SECTION_END */}
 
-<!-- CK_4SQ_SITEWIDE_START -->
+{/* CK_4SQ_SITEWIDE_START */}
 
 ## Elsewhere In The Investigation
 
@@ -264,7 +263,7 @@ Related public pages: [Fix overview](/Fix/overview), [laws landing](/laws), Disc
 
 </div>
 
-<!-- CK_4SQ_SITEWIDE_END -->
+{/* CK_4SQ_SITEWIDE_END */}
 
 {/* CK_AUTHOR_CREDIT */}
 

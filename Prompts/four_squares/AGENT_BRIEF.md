@@ -48,7 +48,8 @@ visitors - never edit them, never card them. card_index.csv already omits them, 
 if a path is not in card_index.csv it is not a page. A previous wave wasted work on
 nine such files.
 
-MARKERS - .mdx uses {/* NAME */}, .md uses <!-- NAME -->. Getting this wrong breaks the
+MARKERS - ALWAYS {/* NAME */}, in .md as well as .mdx. An HTML comment <!-- -->
+is a hard MDX compile error in BOTH and takes the whole site's deploy down with it. Getting this wrong breaks the
 whole site deploy. Strip any existing block with the same marker before writing a new one.
 28 pages under site/docs/Tyler_Robinson/discord already have a CK_4SQ_SECTION block; keep it
 and add the other three.

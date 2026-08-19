@@ -123,7 +123,7 @@ Parallel media clips recirculated by accounts such as **[@FurkanGozukara](/Influ
 
 Related public pages: [Fix overview](/Fix/overview), [laws landing](/laws), Discovery, [explain all four laws](/laws/explain/all/overview).
 
-<!-- CK_INTERESTING_HERE_START -->
+{/* CK_INTERESTING_HERE_START */}
 
 ## Interesting In This Area
 
@@ -132,9 +132,9 @@ Related public pages: [Fix overview](/Fix/overview), [laws landing](/laws), Disc
 * [Law 4](/laws/Trusted_Investigations/Law_4_Trusted_Investigations) must investigate each of those items individually and report on it.
 * [The remaining challenge](/laws/other/analysis/Challenges) is the count itself, not the content.
 
-<!-- CK_INTERESTING_HERE_END -->
+{/* CK_INTERESTING_HERE_END */}
 
-<!-- CK_INTERESTING_OTHER_START -->
+{/* CK_INTERESTING_OTHER_START */}
 
 ## Interesting In Other Areas
 
@@ -143,9 +143,9 @@ Related public pages: [Fix overview](/Fix/overview), [laws landing](/laws), Disc
 * [The exploding-mic theory](/Mic/overview) rests on a May 2025 Navy demolition-charge contract.
 * Sixteen people died when [the AES plant exploded](/US_Intelligence_Assisted/aes-factory-explosion) five weeks later.
 
-<!-- CK_INTERESTING_OTHER_END -->
+{/* CK_INTERESTING_OTHER_END */}
 
-<!-- CK_4SQ_SECTION_START -->
+{/* CK_4SQ_SECTION_START */}
 
 ## Other Pages In This Section
 
@@ -184,9 +184,9 @@ Related public pages: [Fix overview](/Fix/overview), [laws landing](/laws), Disc
 
 </div>
 
-<!-- CK_4SQ_SECTION_END -->
+{/* CK_4SQ_SECTION_END */}
 
-<!-- CK_4SQ_SITEWIDE_START -->
+{/* CK_4SQ_SITEWIDE_START */}
 
 ## Elsewhere In The Investigation
 
@@ -226,7 +226,7 @@ Related public pages: [Fix overview](/Fix/overview), [laws landing](/laws), Disc
 
 </div>
 
-<!-- CK_4SQ_SITEWIDE_END -->
+{/* CK_4SQ_SITEWIDE_END */}
 
 {/* CK_AUTHOR_CREDIT */}
 
