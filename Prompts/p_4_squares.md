@@ -234,12 +234,22 @@ the agents are then free to spend their whole context on judgement and prose.
     An image that exists on disk but is untracked or ignored renders in local
     dev and 404s for every real visitor.
 
-* Emit {ROUTES_TXT}: every valid public route, one per line. Build it from the
-  .md and .mdx files on disk - a directory's overview.md is reachable both as
-  /Dir/overview and as /Dir, number prefixes on directories are stripped, a
-  README.md serves the directory route - or read {SITE_DIR}/.docusaurus/routes.js
-  if it is current. Do NOT run npm run build to check links; it takes twenty
-  minutes and it is not needed.
+* Emit {ROUTES_TXT} from {SITE_DIR}/build/**/*.html - the pages a visitor
+  actually receives - using build_routes.py. Do NOT derive routes from source
+  filenames. That was tried and it shipped 76 dead links across 59 pages,
+  because filename-derived routes get two things wrong:
+    * a leading year is not a Docusaurus number prefix. The built route is
+      /court/Days_in_Court/2026-03-10-seal-motion, not /...(/03-10-seal-motion).
+      Same class of bug produced /Timeline/23-shooting-time for
+      /Timeline/12-23-shooting-time and /Planes/0004-Vance for /Planes/99-0004-Vance.
+    * frontmatter id: or slug: overrides the filename outright, so
+      court/mirandize/overview.md serves /court/mirandize/mirandize-overview.
+  Some routes contain spaces and parentheses ("/Topics3/Suspects (List)/overview"),
+  so read the file with splitlines(), never split() - whitespace-splitting
+  shreds those routes and makes every link to them look broken.
+  If {SITE_DIR}/build is stale or missing, keep the previous routes.txt rather
+  than regenerating from filenames. Do NOT run npm run build just to check
+  links; it takes twenty minutes.
 
 * Emit {LEDGER_CSV}: one row per editable page, columns
 

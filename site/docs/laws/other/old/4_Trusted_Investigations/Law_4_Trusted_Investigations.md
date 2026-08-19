@@ -174,6 +174,109 @@ To establish independent investigation teams led by designated trusted public fi
 
 This Act shall take effect immediately upon enactment.
 
+<!-- CK_INTERESTING_HERE_START -->
+
+## Interesting In This Area
+
+* This draft names three trusted investigators; [the current text](/laws/Trusted_Investigations/Law_4_Trusted_Investigations) names seventeen.
+* [The archived requirements](/laws/other/old/Trusted_Investigations/more/Human_Requirements) explain why civilians, not special counsels, lead the teams.
+* [The notes](/laws/other/old/Trusted_Investigations/more/Notes_4_Trusted_Investigations) rest the whole design on 9/11 Commission precedent.
+* [Law 3](/laws/other/old/Require_to_Investigate/Law_3_Require_to_Investigate) is the mandate this one is meant to police.
+
+<!-- CK_INTERESTING_HERE_END -->
+
+<!-- CK_INTERESTING_OTHER_START -->
+
+## Interesting In Other Areas
+
+* [Witness intimidation claims](/Legal/FBI-Witness-Intimidation) are recorded as allegations, not findings.
+* [Witnesses](/Witnesses/overview) describe a courtyard the state's account has not adopted.
+* [The FBI section](/FBI/overview) holds the agency conduct these bills would open.
+* [Before the event](/Before/overview) shows the pressure Kirk was reportedly under.
+
+<!-- CK_INTERESTING_OTHER_END -->
+
+<!-- CK_4SQ_SECTION_START -->
+
+## Other Pages In This Section
+
+<div className="ck-4sq">
+
+<div className="ck-4sq-card ck-4sq-stack">
+  <a className="ck-4sq-thumb" href="/laws/other/old/Trusted_Investigations/more/Human_Requirements"><img src="/img/evidence/7fde45c642354f7aa66b35b367dc12f0f1a5fb2a099701fc3aab8abc21938f69.jpg" data-cid="QmQPLHbDTasuUyS2bofHX3TFCRNtNc3sqYZ1RK9CdfZNmB" alt="This is a medical illustration and anatomical diagram depicting a side profile of a human head and neck, focusing on the cervical spine." loading="lazy" /></a>
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/laws/other/old/Trusted_Investigations/more/Human_Requirements">Human Requirements: Law 4 - Trusted Investigations</a></p>
+    <p className="ck-4sq-text">The demand in plain words before the lawyers touched it: give people the public actually trusts their own teams inside the FBI and inside the intelligence community, and make obstructing them a crime rather than a policy breach.</p>
+    <a className="ck-4sq-btn" href="/laws/other/old/Trusted_Investigations/more/Human_Requirements">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-stack">
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/laws/other/old/US_Intel/more/Output_Analysis">Output Analysis: Law 2 - US Intelligence Services Forced Disclosure</a></p>
+    <p className="ck-4sq-text">The original clause-by-clause audit of Law 2, showing where the catch-all beats the enumerated list. Section 1(b)(8) is the one that matters &mdash; a category built to cover whatever the other seven missed.</p>
+    <a className="ck-4sq-btn" href="/laws/other/old/US_Intel/more/Output_Analysis">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-stack">
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/laws/Require_to_Investigate/Law_3_Require_to_Investigate">Law 3: Charlie Kirk Investigation - Mandatory Investigation Act</a></p>
+    <p className="ck-4sq-text">Full text of the mandatory investigation act &mdash; the statute that pairs release of the files with a duty to actually investigate them.</p>
+    <a className="ck-4sq-btn" href="/laws/Require_to_Investigate/Law_3_Require_to_Investigate">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-stack">
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/laws/Trusted_Investigations/more/Notes_4_Trusted_Investigations">Notes: Law 4 - Trusted Investigations</a></p>
+    <p className="ck-4sq-text">The research behind Law 4. Special counsels are independent but still government appointees; the 9/11 Commission had subpoena power and classified access. This draft goes further, handing investigative authority to people outside government entirely.</p>
+    <a className="ck-4sq-btn" href="/laws/Trusted_Investigations/more/Notes_4_Trusted_Investigations">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+
+</div>
+
+<!-- CK_4SQ_SECTION_END -->
+
+<!-- CK_4SQ_SITEWIDE_START -->
+
+## Elsewhere In The Investigation
+
+<div className="ck-4sq">
+
+<div className="ck-4sq-card ck-4sq-stack">
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/US_Intelligence_Assisted/aes-factory-explosion">Explosion & Killings at AES Factory</a></p>
+    <p className="ck-4sq-text">A month after Charlie Kirk died, the Tennessee plant that makes shaped charges and demolition blocks was destroyed, reportedly killing sixteen workers. Industrial explosions have ordinary causes; investigators still want the timeline explained.</p>
+    <a className="ck-4sq-btn" href="/US_Intelligence_Assisted/aes-factory-explosion">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-side">
+  <a className="ck-4sq-thumb" href="/Mic/AES"><img src="/img/evidence/e2efb55230be9ff19e9914eced77d5433d4d3fb7cafc0f086101609a4cf03b12.jpg" data-cid="QmTtc9Z8YHqRnDVHxaR93Qaah76xxfPSLSzkDpPPz4nUh6" alt="This image is a digital screenshot of a business profile page containing official registration details for a company named &quot;FIREBIRD ALARM SYSTEMS INC.&quot; retrieved from an Arizona…" loading="lazy" /></a>
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/Mic/AES">AES — Accurate Energetic Systems (Company Profile)</a></p>
+    <p className="ck-4sq-text">A Tennessee explosives maker whose federal contract list reportedly includes miniature XS demolition devices, anti-personnel. A paralegal pulled it from USASpending.gov; the plant was destroyed about a month after September 10.</p>
+    <a className="ck-4sq-btn" href="/Mic/AES">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-stack">
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/Motive/overview">Motive</a></p>
+    <p className="ck-4sq-text">Donor pressure, an Israel position that was visibly shifting, warnings he reportedly gave three people, and the geopolitics around them. Motive is where this case stops being forensic.</p>
+    <a className="ck-4sq-btn" href="/Motive/overview">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-stack">
+  <a className="ck-4sq-thumb" href="/Before/overview"><img src="/img/evidence/4aa8288d8057815dd2e7d726cef33a23abe0f2d122c06e5d4958b5b26e1f88b9.png" data-cid="QmQyTaTEFoxcboiwKVy1VeRjWJTtBUyEdkeveCQxmmkxWg" alt="This is a digital graphic featuring a detailed timeline chart tracking travel, &quot;Flight Overlaps,&quot; and associated &quot;Other Events&quot; spanning the years 2023, 2024, and 2025." loading="lazy" /></a>
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/Before/overview">Before Events</a></p>
+    <p className="ck-4sq-text">The whole pre-September 10 map in one place: <a href="/UVU/pre-shooting-warnings">GRAMA warnings</a>, the July 31 session, the Hamptons weekend, search spikes and aircraft. It is explicit that none of it proves any attendee ordered violence &mdash; it shows what was already in motion.</p>
+    <a className="ck-4sq-btn" href="/Before/overview">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+
+</div>
+
+<!-- CK_4SQ_SITEWIDE_END -->
+
 {/* CK_AUTHOR_CREDIT */}
 
 *This website's author is [@HolonCitizen](https://x.com/HolonCitizen) on X and [YouTube/@HolonCitizen](https://www.youtube.com/@HolonCitizen). Follow me there.*

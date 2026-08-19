@@ -30,6 +30,111 @@ Allow a specific set of trusted individuals to each have their own team within t
 
 See also: [Law 1 Requirements](/laws/DoJ_FBI/more/Human_Requirements) | [Law 2 Requirements](/laws/US_Intel/more/Human_Requirements) | [Law 3 Requirements](/laws/Require_to_Investigate/more/Human_Requirements)
 
+<!-- CK_INTERESTING_HERE_START -->
+
+## Interesting In This Area
+
+* Each trusted person gets one FBI team and one intelligence team, per [the draft](/laws/other/old/Trusted_Investigations/Law_4_Trusted_Investigations).
+* Managers blocking a volunteer becomes illegal, not merely [discouraged](/laws/other/old/Trusted_Investigations/more/Output_Analysis).
+* [The current requirements page](/laws/Trusted_Investigations/more/Human_Requirements) restates the same demands.
+* [Law 3's archived twin](/laws/other/old/Require_to_Investigate/more/Human_Requirements) covers the mandate to investigate.
+
+<!-- CK_INTERESTING_HERE_END -->
+
+<!-- CK_INTERESTING_OTHER_START -->
+
+## Interesting In Other Areas
+
+* [Aircraft movements](/Planes/overview) around Provo are among the enumerated disclosure items.
+* [The Israel section](/Israel/overview) is where prior disclosure laws historically failed hardest.
+* [Drone activity](/Drones/overview) over the campus is a separate Schedule A category.
+* [Fort Huachuca searches](/GoogleSearches/fort-huachuca-sept-9-searches) reportedly spiked before September 9.
+
+<!-- CK_INTERESTING_OTHER_END -->
+
+<!-- CK_4SQ_SECTION_START -->
+
+## Other Pages In This Section
+
+<div className="ck-4sq">
+
+<div className="ck-4sq-card ck-4sq-stack">
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/laws/other/old/Trusted_Investigations/more/Notes_4_Trusted_Investigations">Notes: Law 4 - Trusted Investigations</a></p>
+    <p className="ck-4sq-text">The precedent file for Law 4 as first assembled &mdash; special counsels, the 9/11 Commission, congressional clearance authority. The 9/11 Commission is the load-bearing example: private citizens holding subpoena power and classified access.</p>
+    <a className="ck-4sq-btn" href="/laws/other/old/Trusted_Investigations/more/Notes_4_Trusted_Investigations">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-stack">
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/laws">Charlie Kirk Assassination — Forced Disclosure</a></p>
+    <p className="ck-4sq-text">The section hub for all four proposed federal laws, plus the court discovery list and the exploding-microphone disclosure items. Full statutory text, not summaries.</p>
+    <a className="ck-4sq-btn" href="/laws">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-side">
+  <a className="ck-4sq-thumb" href="/laws/Require_to_Investigate/more/Human_Requirements"><img src="/img/evidence/14f90a40f5d68c452073308d5374fd2d50adcd3ffe0dcbe70a39c967191e9b8e.jpg" data-cid="QmdhWqrdvZMxknDa6fUm4yw5AJQbovKdxoweEwaRGNWcj1" alt="This is a high-resolution photograph or digital scan of a printed document featuring four paragraphs of English text on a white page." loading="lazy" /></a>
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/laws/Require_to_Investigate/more/Human_Requirements">Human Requirements: Law 3 - Require Investigation</a></p>
+    <p className="ck-4sq-text">The demand behind Law 3 is different from disclosure. The concern is not only that files are withheld but that the case is reportedly not being worked, so the requirement is stated plainly: the FBI and the intelligence services must investigate.</p>
+    <a className="ck-4sq-btn" href="/laws/Require_to_Investigate/more/Human_Requirements">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-stack">
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/laws/Trusted_Investigations/more/Output_Analysis">Output Analysis: Law 4 - Trusted Investigations</a></p>
+    <p className="ck-4sq-text">The audit of Law 4: two teams per designated investigator, six in all, each with sole authority over who joins. Every citizen requirement is checked against the section that delivers it.</p>
+    <a className="ck-4sq-btn" href="/laws/Trusted_Investigations/more/Output_Analysis">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+
+</div>
+
+<!-- CK_4SQ_SECTION_END -->
+
+<!-- CK_4SQ_SITEWIDE_START -->
+
+## Elsewhere In The Investigation
+
+<div className="ck-4sq">
+
+<div className="ck-4sq-card ck-4sq-stack">
+  <a className="ck-4sq-thumb" href="/Fix/overview"><img src="/img/evidence/319de07fd86b3f460e4ac35cf156448a9ed6d2186fad7ab5595782d7d2134914.jpg" data-cid="QmVaJDW5VH68g98jBNsSoawPNyrG6fsaCMmrdUfGXhHJct" alt="This is a digital composite image designed as a political or investigative graphic, featuring portraits of public figures Charlie Kirk and Candace Owens overlaid against two…" loading="lazy" /></a>
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/Fix/overview">New Laws (Fix)</a></p>
+    <p className="ck-4sq-text">Four federal laws modelled on the Epstein Files Transparency Act, plus reform plans for evidence handling and event security. This is where subscriber identities behind a geography bucket would actually be compelled into view.</p>
+    <a className="ck-4sq-btn" href="/Fix/overview">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-side">
+  <a className="ck-4sq-thumb" href="/court/overview"><img src="/img/evidence/fb14b85a283763fc0778887022c1800f900cd288c81b36603fb0a80dc7b62fc5.jpg" data-cid="QmRkRwe9cELH4Z5j9vs6hHkYxin1U7FHKWexRVJb8HXiXB" alt="This image is a digital screenshot of a news article from the WEAR News 3 website, viewed on a mobile device." loading="lazy" /></a>
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/court/overview">Court & Trial</a></p>
+    <p className="ck-4sq-text">State of Utah v. Tyler Robinson, case 251403576, is where the government&apos;s narrative meets adversarial testing &mdash; every court date, the day-by-day preliminary hearing transcripts, and the inconclusive ATF ballistics.</p>
+    <a className="ck-4sq-btn" href="/court/overview">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-side">
+  <a className="ck-4sq-thumb" href="/FBI/overview"><img src="/img/evidence/f78f3a3ede1a3bbfda3cfd42d80f52f48dc1aedb7cfa2f64f5afb598372c125f.jpg" data-cid="" alt="Visual Representation of Reported Injuries — anatomical chart marking, in red, the reported injury locations across the front and back torso, the neck, the internal chest, and two views of the brain." loading="lazy" /></a>
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/FBI/overview">FBI</a></p>
+    <p className="ck-4sq-text">Federal posture, ballistics stewardship, witness coordination and the press briefings &mdash; plus the open questions that make disclosure the point. The bureau is a subject here, not a source.</p>
+    <a className="ck-4sq-btn" href="/FBI/overview">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-side">
+  <a className="ck-4sq-thumb" href="/Your_Actions_Fix_It/overview"><img src="/img/evidence/6301de96e2a78e6a3fd308434fd6dfcd02861b729ee1fa5fa108bc133bd88107.jpg" data-cid="QmTJ3jKkeJNSHjqsJrur1mzk6Yz3KLS3VC2GJALASaBbeq" alt="A digital screenshot of a legislative web page displaying a structured table titled &quot;History.&quot; The table documents the chronologically ordered legislative actions taken on a…" loading="lazy" /></a>
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/Your_Actions_Fix_It/overview">Your Actions Fix It</a></p>
+    <p className="ck-4sq-text">Concrete things one person can do: records requests, contacting representatives, preserving and sharing evidence. It is the shortest route from reading this site to changing anything on it.</p>
+    <a className="ck-4sq-btn" href="/Your_Actions_Fix_It/overview">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+
+</div>
+
+<!-- CK_4SQ_SITEWIDE_END -->
+
 {/* CK_AUTHOR_CREDIT */}
 
 *This website's author is [@HolonCitizen](https://x.com/HolonCitizen) on X and [YouTube/@HolonCitizen](https://www.youtube.com/@HolonCitizen). Follow me there.*

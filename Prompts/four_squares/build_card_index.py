@@ -262,15 +262,56 @@ with open(ROOT / "pages.csv", newline="", encoding="utf-8") as fh:
     for row in csv.DictReader(fh):
         pages_meta.setdefault(row["file_path"], row)
 
-def url_for(rel):
-    """rel is like site/docs/Foo/bar.mdx"""
+# Real built routes are the authority. Filename-derived routes were wrong twice:
+# a leading year/number is not always a Docusaurus number prefix (99-0004-Vance,
+# 2026-03-10-seal-motion keep theirs), and frontmatter id:/slug: overrides the
+# filename outright (court/mirandize/overview.md -> /court/mirandize/mirandize-overview).
+_ROUTES_FILE = WORK / "routes.txt"
+BUILT = set()
+if _ROUTES_FILE.exists():
+    BUILT = {l for l in _ROUTES_FILE.read_text().splitlines() if l}
+BY_PARENT = {}
+for _r in BUILT:
+    BY_PARENT.setdefault(_r.rpartition("/")[0], []).append(_r)
+
+
+def url_for(rel, fm=None):
+    """rel is like site/docs/Foo/bar.mdx; fm is its parsed frontmatter."""
     p = rel[len("site/docs/"):]
     p = re.sub(r"\.mdx?$", "", p)
     parts = p.split("/")
-    parts = [re.sub(r"^\d+[-_]", "", x) for x in parts]
-    if parts[-1] in ("README",):
-        parts = parts[:-1]
-    return "/" + "/".join(parts)
+    stem = parts[-1]
+    parent = "/" + "/".join(parts[:-1]) if len(parts) > 1 else ""
+
+    # 1. explicit slug/id wins, exactly as Docusaurus applies it
+    if fm:
+        slug = fm.get("slug")
+        if slug:
+            return slug if slug.startswith("/") else f"{parent}/{slug}"
+        ident = fm.get("id")
+        if ident:
+            cand = f"{parent}/{ident}"
+            if not BUILT or cand in BUILT:
+                return cand
+
+    # 2. the filename as-is, if the build serves it
+    cand = f"{parent}/{stem}" if parent else f"/{stem}"
+    if stem in ("README",):
+        cand = parent or "/"
+    if not BUILT or cand in BUILT:
+        return cand
+
+    # 3. otherwise the one built route in this directory that matches the stem
+    #    with or without a stripped numeric prefix
+    sibs = BY_PARENT.get(parent, [])
+    stripped = re.sub(r"^\d+[-_.]", "", stem)
+    for want in (stem, stripped):
+        hits = [r for r in sibs
+                if r.rpartition("/")[2] == want
+                or re.fullmatch(r"[\d._-]*" + re.escape(want), r.rpartition("/")[2])]
+        if len(hits) == 1:
+            return hits[0]
+    return cand
 
 rows, routes, ledger = [], set(), []
 for dirpath, dirnames, filenames in os.walk(DOCS):
@@ -292,7 +333,7 @@ for dirpath, dirnames, filenames in os.walk(DOCS):
         rel = str(full.relative_to(ROOT))
         text = full.read_text(encoding="utf-8", errors="replace")
         fm, body = parse_fm(text)
-        url = url_for(rel)
+        url = url_for(rel, fm)
         routes.add(url)
         base = fn.rsplit(".", 1)[0]
         is_overview = base in ("overview", "README")

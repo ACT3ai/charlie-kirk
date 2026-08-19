@@ -176,6 +176,111 @@ To require all United States Intelligence Community agencies to release all info
 
 This Act shall take effect immediately upon enactment. Records preservation requirements (Section 6) take effect upon introduction of this bill.
 
+<!-- CK_INTERESTING_HERE_START -->
+
+## Interesting In This Area
+
+* Covered information runs to eight categories, including [cable traffic and satellite imagery](/laws/other/old/US_Intel/more/Output_Analysis).
+* [The current text](/laws/US_Intel/Law_2_US_Intel) carries the expanded Schedule A.
+* [The archived requirements page](/laws/other/old/US_Intel/more/Human_Requirements) is the plain-English source for it.
+* [Law 1's archived twin](/laws/other/old/DoJ_FBI/more/Output_Analysis) does the same for law enforcement.
+
+<!-- CK_INTERESTING_HERE_END -->
+
+<!-- CK_INTERESTING_OTHER_START -->
+
+## Interesting In Other Areas
+
+* [Brian Harpole's background](/Security_Team/brian-harpole) became a named disclosure item in all four bills.
+* The detail was private; [the government response](/Law_Enforcement/overview) began only afterward.
+* [Roof access](/Roof/overview) was reportedly trivial, with thin camera coverage.
+* [Killer](/Killer/overview) collects the alternative-perpetrator threads these bills would force open.
+
+<!-- CK_INTERESTING_OTHER_END -->
+
+<!-- CK_4SQ_SECTION_START -->
+
+## Other Pages In This Section
+
+<div className="ck-4sq">
+
+<div className="ck-4sq-card ck-4sq-side">
+  <a className="ck-4sq-thumb" href="/laws/other/old/US_Intel/more/Human_Requirements"><img src="/img/evidence/c3414325f85050f2af470f195a9c45093f02353cccc68e9426dfcf24e72b9ce4.jpg" data-cid="QmTmUTesGy1ZXAYU8SPfw7Vzf2K7WhX3r3dhEJQpZ1d3Y5" alt="This is a digital scan or photograph of a typed legal document written in English, dated November 20, 2019." loading="lazy" /></a>
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/laws/other/old/US_Intel/more/Human_Requirements">Human Requirements: Law 2 - US Intelligence Services Forced Disclosure</a></p>
+    <p className="ck-4sq-text">The plain-English demand behind Law 2 as first written: methods stay protected, conclusions do not. It also makes blocking a government employee from releasing that material a crime rather than a personnel matter.</p>
+    <a className="ck-4sq-btn" href="/laws/other/old/US_Intel/more/Human_Requirements">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-stack">
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/laws/DoJ_FBI/more/Notes_1_DoJ_FBI">Notes: Law 1 - DoJ/FBI Forced Disclosure</a></p>
+    <p className="ck-4sq-text">The research behind Law 1. The Epstein Files Act passed 427 to 1 and still produced a fraction of its pages; the JFK Records Act left documents withheld thirty years past its deadline. Both failures are why this draft carries hard deadlines and criminal penalties.</p>
+    <a className="ck-4sq-btn" href="/laws/DoJ_FBI/more/Notes_1_DoJ_FBI">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-stack">
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/laws/Trusted_Investigations/Law_4_Trusted_Investigations">Law 4: Charlie Kirk Investigation - Trusted Investigators Act</a></p>
+    <p className="ck-4sq-text">Full text of the trusted investigators act &mdash; civilian-led teams embedded inside the FBI and intelligence agencies with full access and their own release authority.</p>
+    <a className="ck-4sq-btn" href="/laws/Trusted_Investigations/Law_4_Trusted_Investigations">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-stack">
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/laws/US_Intel/more/Notes_2_US_Intel">Notes: Law 2 - US Intelligence Services Forced Disclosure</a></p>
+    <p className="ck-4sq-text">The research behind Law 2, and its warning. The JFK Records Act ordered release in 1992 and agencies were still withholding in 2025. Intelligence disclosure laws fail on their exemptions, which is why this draft narrows protection to active sources only.</p>
+    <a className="ck-4sq-btn" href="/laws/US_Intel/more/Notes_2_US_Intel">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+
+</div>
+
+<!-- CK_4SQ_SECTION_END -->
+
+<!-- CK_4SQ_SITEWIDE_START -->
+
+## Elsewhere In The Investigation
+
+<div className="ck-4sq">
+
+<div className="ck-4sq-card ck-4sq-side">
+  <a className="ck-4sq-thumb" href="/People/candace-owens"><img src="/img/evidence/18c908ba2b19a7fce6f085985aba61743edf36ab19ce345385a61c3bbf75ba23.webp" data-cid="Qmc78fKjeM8uk9xUGzWwQHowDtdFjfcWkYqtv1cLjfTAZh" alt="This is a mobile phone screenshot of a social media feed, specifically the platform X (formerly Twitter), displaying a post by user &quot;@Kahlissee&quot; featuring a video of political…" loading="lazy" /></a>
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/People/candace-owens">Candace Owens</a></p>
+    <p className="ck-4sq-text">She called Charlie her best friend and brother, then ran the largest independent probe of his death. She also published the texts, the tipline and the SUV photographs the rest of the case now argues over.</p>
+    <a className="ck-4sq-btn" href="/People/candace-owens">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-stack">
+  <a className="ck-4sq-thumb" href="/Influencers/overview"><img src="/img/video_posters/f46df7647fcab0835a553f989c01cd909cf5fee46a42346fa84787078f388754.jpg" data-cid="" alt="Video still from Influencers" loading="lazy" /></a>
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/Influencers/overview">Influencers</a></p>
+    <p className="ck-4sq-text">The distribution layer of the investigation &mdash; who said what, and where. Podcast hosts, X researchers and YouTube channels reaching hundreds of millions, indexed so a reader can find the GRAMA breakthrough or the ballistics deep-dive without hunting.</p>
+    <a className="ck-4sq-btn" href="/Influencers/overview">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-stack">
+  <a className="ck-4sq-thumb" href="/Media/overview"><img src="/img/video_posters/f46df7647fcab0835a553f989c01cd909cf5fee46a42346fa84787078f388754.jpg" data-cid="" alt="Video still from Media" loading="lazy" /></a>
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/Media/overview">Media</a></p>
+    <p className="ck-4sq-text">Coverage settled on one story of how Charlie died within hours and has barely revisited it since. This section is the record of that settling &mdash; the wires, the live blogs, the panels, and what they stopped asking.</p>
+    <a className="ck-4sq-btn" href="/Media/overview">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-side">
+  <a className="ck-4sq-thumb" href="/Censorship/overview"><img src="/img/evidence/2ca9b5e9741057b39c897245286fc3ce2e75e5bc0b5a9f7e6dc433d62b6ec7d6.jpg" data-cid="QmdYVLQ5wdG22uku14snLr3rPxFBvqLXFvcAuUsVZig1cx" alt="This is a digital screenshot of a post on the social media platform X (formerly Twitter) by the user &quot;Shadowed News&quot; (@shadowed_news)." loading="lazy" /></a>
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/Censorship/overview">Censorship</a></p>
+    <p className="ck-4sq-text">Locks, shadowbans and limited-visibility warnings for engaging the wrong posts, alongside a witness reportedly told to delete his own footage. Suppression does not prove a cover-up, but it does decide what survives online.</p>
+    <a className="ck-4sq-btn" href="/Censorship/overview">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+
+</div>
+
+<!-- CK_4SQ_SITEWIDE_END -->
+
 {/* CK_AUTHOR_CREDIT */}
 
 *This website's author is [@HolonCitizen](https://x.com/HolonCitizen) on X and [YouTube/@HolonCitizen](https://www.youtube.com/@HolonCitizen). Follow me there.*

@@ -55,6 +55,109 @@ $10M budget and 20-agent team requires appropriations.
 3. Add provision requiring investigators to specifically address each of the 175 items in Schedule A
 4. Coordinate with Law 4 so Trusted Investigators can share findings with the investigation team
 
+<!-- CK_INTERESTING_HERE_START -->
+
+## Interesting In This Area
+
+* Section 3 puts a parallel intelligence assessment under the DNI, separate from [the FBI track](/laws/other/old/Require_to_Investigate/Law_3_Require_to_Investigate).
+* Eight mandatory lead categories are enumerated, including [the microphone question](/laws/other/old/Trusted_Investigations/more/Output_Analysis).
+* [The current audit](/laws/Require_to_Investigate/more/Output_Analysis) runs the same test on the redraft.
+* [The archived requirements](/laws/other/old/Require_to_Investigate/more/Human_Requirements) are the source of every MET line.
+
+<!-- CK_INTERESTING_HERE_END -->
+
+<!-- CK_INTERESTING_OTHER_START -->
+
+## Interesting In Other Areas
+
+* [Search-trend spikes](/GoogleSearches/overview) reportedly preceded the event by weeks.
+* [The timeline](/Timeline/overview) puts suspect photos out after custody, not before.
+* [Government evidence](/gov/overview) released so far is thinner than the case files described.
+* [Legal investigation](/legal_investigation/overview) tracks what the docket shows and what it omits.
+
+<!-- CK_INTERESTING_OTHER_END -->
+
+<!-- CK_4SQ_SECTION_START -->
+
+## Other Pages In This Section
+
+<div className="ck-4sq">
+
+<div className="ck-4sq-card ck-4sq-stack">
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/laws/other/old/Trusted_Investigations/Law_4_Trusted_Investigations">Law 4: Charlie Kirk Investigation - Trusted Investigators Act</a></p>
+    <p className="ck-4sq-text">The archived first draft of Law 4, naming three trusted investigators where <a href="/laws/Trusted_Investigations/Law_4_Trusted_Investigations">the current text</a> names seventeen. Everything the later attorney review argued over &mdash; the Appointments Clause, the security detail, succession &mdash; starts here.</p>
+    <a className="ck-4sq-btn" href="/laws/other/old/Trusted_Investigations/Law_4_Trusted_Investigations">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-stack">
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/laws/other/old/US_Intel/more/Notes_2_US_Intel">Notes: Law 2 - US Intelligence Services Forced Disclosure</a></p>
+    <p className="ck-4sq-text">Why Law 2 assumes bad faith. The JFK Records Act still left roughly five percent of records redacted after thirty years, and the Epstein Act produced about 12,285 documents against an estimated six million pages.</p>
+    <a className="ck-4sq-btn" href="/laws/other/old/US_Intel/more/Notes_2_US_Intel">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-stack">
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/laws/DoJ_FBI/more/Output_Analysis">Output Analysis: Law 1 - DoJ/FBI Forced Disclosure</a></p>
+    <p className="ck-4sq-text">A requirement-by-requirement audit of Law 1 against what citizens actually asked for, each one marked against the section that does the work. It also tracks what changed: ninety days became thirty, and presidential override was removed outright.</p>
+    <a className="ck-4sq-btn" href="/laws/DoJ_FBI/more/Output_Analysis">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-stack">
+  <a className="ck-4sq-thumb" href="/laws/Trusted_Investigations/more/Human_Requirements"><img src="/img/evidence/af997f70d8e3ffea08d811389de0b4fcc56f6ae11e6c84c08938f7621be0720e.jpg" data-cid="QmdEaqFxfmmuyxUmSBkKRTN3rf67hTZedsT2KpA92xndDR" alt="This image is a digital medical illustration depicting a side-profile view of a human head and neck, focusing on the cervical spine." loading="lazy" /></a>
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/laws/Trusted_Investigations/more/Human_Requirements">Human Requirements: Law 4 - Trusted Investigations</a></p>
+    <p className="ck-4sq-text">The demand behind Law 4, in plain words: named public figures the audience actually trusts each get their own team inside the FBI and inside the intelligence community, and each picks who works on it.</p>
+    <a className="ck-4sq-btn" href="/laws/Trusted_Investigations/more/Human_Requirements">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+
+</div>
+
+<!-- CK_4SQ_SECTION_END -->
+
+<!-- CK_4SQ_SITEWIDE_START -->
+
+## Elsewhere In The Investigation
+
+<div className="ck-4sq">
+
+<div className="ck-4sq-card ck-4sq-stack">
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/Legal/FBI-Witness-Intimidation">FBI Witness Intimidation (Claims)</a></p>
+    <p className="ck-4sq-text">A witness says he sent the FBI his close-range footage and was then asked to delete it, with a follow-up call to confirm. A second thread concerns free trauma counselling offered to UVU witnesses. Both are recorded as unverified allegations.</p>
+    <a className="ck-4sq-btn" href="/Legal/FBI-Witness-Intimidation">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-stack">
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/Witnesses/overview">Witnesses</a></p>
+    <p className="ck-4sq-text">Firsthand accounts from people who were there, indexed by what they saw, heard, and from which direction. Almost none of it appears in the prosecution &mdash; which is precisely why it is gathered and preserved here.</p>
+    <a className="ck-4sq-btn" href="/Witnesses/overview">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-side">
+  <a className="ck-4sq-thumb" href="/FBI/overview"><img src="/img/evidence/f78f3a3ede1a3bbfda3cfd42d80f52f48dc1aedb7cfa2f64f5afb598372c125f.jpg" data-cid="" alt="Visual Representation of Reported Injuries — anatomical chart marking, in red, the reported injury locations across the front and back torso, the neck, the internal chest, and two views of the brain." loading="lazy" /></a>
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/FBI/overview">FBI</a></p>
+    <p className="ck-4sq-text">Federal posture, ballistics stewardship, witness coordination and the press briefings &mdash; plus the open questions that make disclosure the point. The bureau is a subject here, not a source.</p>
+    <a className="ck-4sq-btn" href="/FBI/overview">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-stack">
+  <a className="ck-4sq-thumb" href="/Before/overview"><img src="/img/evidence/4aa8288d8057815dd2e7d726cef33a23abe0f2d122c06e5d4958b5b26e1f88b9.png" data-cid="QmQyTaTEFoxcboiwKVy1VeRjWJTtBUyEdkeveCQxmmkxWg" alt="This is a digital graphic featuring a detailed timeline chart tracking travel, &quot;Flight Overlaps,&quot; and associated &quot;Other Events&quot; spanning the years 2023, 2024, and 2025." loading="lazy" /></a>
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/Before/overview">Before Events</a></p>
+    <p className="ck-4sq-text">The whole pre-September 10 map in one place: <a href="/UVU/pre-shooting-warnings">GRAMA warnings</a>, the July 31 session, the Hamptons weekend, search spikes and aircraft. It is explicit that none of it proves any attendee ordered violence &mdash; it shows what was already in motion.</p>
+    <a className="ck-4sq-btn" href="/Before/overview">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+
+</div>
+
+<!-- CK_4SQ_SITEWIDE_END -->
+
 {/* CK_AUTHOR_CREDIT */}
 
 *This website's author is [@HolonCitizen](https://x.com/HolonCitizen) on X and [YouTube/@HolonCitizen](https://www.youtube.com/@HolonCitizen). Follow me there.*

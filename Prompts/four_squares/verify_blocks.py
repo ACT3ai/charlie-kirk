@@ -9,7 +9,7 @@ from pathlib import Path
 
 ROOT = Path(os.path.expanduser("~/BGit/Bryan_git/charlie-kirk"))
 WORK = ROOT / "prompts/four_squares"
-ROUTES = set((WORK / "routes.txt").read_text().split())
+ROUTES = set(l for l in (WORK / "routes.txt").read_text().splitlines() if l)
 MAX_WORDS = 17
 
 BLOCKS = ["CK_INTERESTING_HERE", "CK_INTERESTING_OTHER", "CK_4SQ_SECTION", "CK_4SQ_SITEWIDE"]

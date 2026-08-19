@@ -50,6 +50,108 @@ The major improvement is that Trusted Investigators must specifically pursue the
 - Multiple independent teams create redundancy
 - Schedule A integration ensures no lead is ignored
 
+<!-- CK_INTERESTING_HERE_START -->
+
+## Interesting In This Area
+
+* The 9/11 Commission put private citizens behind subpoena power, which [this draft](/laws/other/old/Trusted_Investigations/Law_4_Trusted_Investigations) extends.
+* Clearances can be mandated by statute, so [clearance denial](/laws/other/old/Trusted_Investigations/more/Output_Analysis) cannot become obstruction.
+* [The current notes](/laws/Trusted_Investigations/more/Notes_4_Trusted_Investigations) add the Schedule A tracking requirement.
+* [Law 3's notes](/laws/other/old/Require_to_Investigate/more/Notes_3_Require_to_Investigate) supply the Warren Commission counter-example.
+
+<!-- CK_INTERESTING_HERE_END -->
+
+<!-- CK_INTERESTING_OTHER_START -->
+
+## Interesting In Other Areas
+
+* [Tyler Robinson](/People/tyler-robinson) is charged, not convicted, and [the case](/court/overview) continues.
+* [Proof Not Tyler](/Proof_Not_Tyler/overview) gathers what the state has not answered.
+* [A confession attributed to him](/US_Intelligence_Assisted/faked-confession) is disputed by citizen reviewers.
+* [TPUSA](/TPUSA/overview) records sit among the private holdings a Special Master could inspect.
+
+<!-- CK_INTERESTING_OTHER_END -->
+
+<!-- CK_4SQ_SECTION_START -->
+
+## Other Pages In This Section
+
+<div className="ck-4sq">
+
+<div className="ck-4sq-card ck-4sq-stack">
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/laws/other/old/Trusted_Investigations/more/Output_Analysis">Output Analysis: Law 4 - Trusted Investigations</a></p>
+    <p className="ck-4sq-text">The original requirement-by-requirement audit of Law 4, every line marked MET with the section that meets it. Read it beside <a href="/laws/Trusted_Investigations/more/Output_Analysis">the current audit</a> to see what the redraft added.</p>
+    <a className="ck-4sq-btn" href="/laws/other/old/Trusted_Investigations/more/Output_Analysis">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-stack">
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/laws/DoJ_FBI/Law_1_DoJ_FBI">Law 1: Charlie Kirk Investigation - DoJ/FBI Forced Disclosure Act</a></p>
+    <p className="ck-4sq-text">The full statutory text of the DoJ and FBI disclosure law, modelled on the Epstein Files Act. This is the live draft the <a href="/Fix/overview">Fix section</a> summarises.</p>
+    <a className="ck-4sq-btn" href="/laws/DoJ_FBI/Law_1_DoJ_FBI">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-stack">
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/laws/Require_to_Investigate/more/Notes_3_Require_to_Investigate">Notes: Law 3 - Require Investigation</a></p>
+    <p className="ck-4sq-text">The research behind Law 3 &mdash; the Special Counsel regulations and the Church Committee, read for one question only: how do you make investigative independence structural rather than merely promised?</p>
+    <a className="ck-4sq-btn" href="/laws/Require_to_Investigate/more/Notes_3_Require_to_Investigate">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-stack">
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/laws/US_Intel/Law_2_US_Intel">Law 2: Charlie Kirk Investigation - Intelligence Services Disclosure Act</a></p>
+    <p className="ck-4sq-text">Full text of the intelligence disclosure act: CIA, NSA, DIA, NRO and every IC element releasing findings within 30 days, with protection limited to active sources.</p>
+    <a className="ck-4sq-btn" href="/laws/US_Intel/Law_2_US_Intel">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+
+</div>
+
+<!-- CK_4SQ_SECTION_END -->
+
+<!-- CK_4SQ_SITEWIDE_START -->
+
+## Elsewhere In The Investigation
+
+<div className="ck-4sq">
+
+<div className="ck-4sq-card ck-4sq-side">
+  <a className="ck-4sq-thumb" href="/CoverUp/overview"><img src="/img/evidence/f78f3a3ede1a3bbfda3cfd42d80f52f48dc1aedb7cfa2f64f5afb598372c125f.jpg" data-cid="" alt="Visual Representation of Reported Injuries — anatomical chart marking, in red, the reported injury locations across the front and back torso, the neck, the internal chest, and two views of the brain." loading="lazy" /></a>
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/CoverUp/overview">Cover Up (Possible)</a></p>
+    <p className="ck-4sq-text">Dirt removed, a transport SUV released, cameras and SD cards gone, a body camera that stopped on the roof, a foreign inquiry halted. Each is a reported allegation, and the page groups them by the kind of cover-up alleged.</p>
+    <a className="ck-4sq-btn" href="/CoverUp/overview">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-stack">
+  <a className="ck-4sq-thumb" href="/US_Intelligence/overview"><img src="/img/evidence/a8b1945711be60f04ed8367ee75d13dbc73a6d9ee2e31e234d7f42e8d5c26899.jpg" data-cid="QmRAQWmcd6nAEdFZuHPowY2MNT1m71HnFYyEDcumdDMime" alt="Evidence image" loading="lazy" /></a>
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/US_Intelligence/overview">U.S. Intelligence</a></p>
+    <p className="ck-4sq-text">The domestic agencies &mdash; CIA, NSA, ODNI and NCTC, and defense intelligence &mdash; examined for what they collected and what they declined to pursue. The counterpart hub for non-U.S. services sits elsewhere on the site.</p>
+    <a className="ck-4sq-btn" href="/US_Intelligence/overview">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-stack">
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/Legal/Evidence-Sealing-2026">Evidence Sealing 2026</a></p>
+    <p className="ck-4sq-text">Sealed warrants, gag orders and restricted discovery, and what is scheduled to become public in 2026. A map of the closed doors, which is the precondition for most of the suspicion in this section.</p>
+    <a className="ck-4sq-btn" href="/Legal/Evidence-Sealing-2026">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-stack">
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/Proof_Intel_Services/overview">Proof Intel Services</a></p>
+    <p className="ck-4sq-text">Halted foreign inquiries, an ISR jet overhead, foreign phones, VIP flights and scene control. Indicators rather than proof &mdash; but they are the indicators an intelligence service leaves behind.</p>
+    <a className="ck-4sq-btn" href="/Proof_Intel_Services/overview">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+
+</div>
+
+<!-- CK_4SQ_SITEWIDE_END -->
+
 ## Sources
 - 9/11 Commission: https://www.9-11commission.gov/
 - Special Counsel regulations: https://www.law.cornell.edu/cfr/text/28/part-600

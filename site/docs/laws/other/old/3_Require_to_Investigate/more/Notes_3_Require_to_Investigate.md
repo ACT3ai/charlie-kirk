@@ -45,6 +45,112 @@ The major improvement is that the investigation must specifically pursue each le
 ### Key Improvement: Conflict of Interest Trigger
 Previous version had no mechanism for what happens when the investigating agency is itself implicated. Section 4(c) now creates an automatic transfer to an independent commission. This addresses the single biggest weakness of the previous version.
 
+<!-- CK_INTERESTING_HERE_START -->
+
+## Interesting In This Area
+
+* The Warren Commission is the warning here; the HSCA later contradicted [its findings](/laws/other/old/Require_to_Investigate/Law_3_Require_to_Investigate).
+* The Church Committee showed oversight alone is necessary but not [sufficient](/laws/other/old/Require_to_Investigate/more/Output_Analysis).
+* [The current notes](/laws/Require_to_Investigate/more/Notes_3_Require_to_Investigate) carry those precedents into the redraft.
+* [Law 4's notes](/laws/other/old/Trusted_Investigations/more/Notes_4_Trusted_Investigations) offer the 9/11 Commission as counter-model.
+
+<!-- CK_INTERESTING_HERE_END -->
+
+<!-- CK_INTERESTING_OTHER_START -->
+
+## Interesting In Other Areas
+
+* [The government narrative](/Gun_Bullet/overview) is a rifle; citizen investigators on X favour an explosive device.
+* [Cause of death](/Cause_of_Death/overview) has never been independently established.
+* [The Mauser chain of custody](/Law_Enforcement/rifle-chain-of-custody) runs through a rooftop nobody watched.
+* [No counter-snipers](/Security_Team/no-counter-snipers) covered the roofline that afternoon.
+
+<!-- CK_INTERESTING_OTHER_END -->
+
+<!-- CK_4SQ_SECTION_START -->
+
+## Other Pages In This Section
+
+<div className="ck-4sq">
+
+<div className="ck-4sq-card ck-4sq-stack">
+  <a className="ck-4sq-thumb" href="/laws/other/old/Require_to_Investigate/more/Output_Analysis"><img src="/img/evidence/fba1bb35bff5a595befa3e69f9eed0cb448d824e1cc784c0d4adecaacbc7d7a4.jpg" data-cid="QmUiTJzwye45NpQhDtT1VsRiS8pVLpFP2mbQb14dLv9W6e" alt="This is a multi-pane visual analysis image consisting of a collage of four panels that investigate a specific architectural detail on a building." loading="lazy" /></a>
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/laws/other/old/Require_to_Investigate/more/Output_Analysis">Output Analysis: Law 3 - Require Investigation</a></p>
+    <p className="ck-4sq-text">The original audit of Law 3 against its own requirements, clause by clause. This is where the DNI-directed parallel intelligence assessment and the eight mandatory lead categories first appear in writing.</p>
+    <a className="ck-4sq-btn" href="/laws/other/old/Require_to_Investigate/more/Output_Analysis">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-side">
+  <a className="ck-4sq-thumb" href="/laws/other/old/US_Intel/more/Human_Requirements"><img src="/img/evidence/c3414325f85050f2af470f195a9c45093f02353cccc68e9426dfcf24e72b9ce4.jpg" data-cid="QmTmUTesGy1ZXAYU8SPfw7Vzf2K7WhX3r3dhEJQpZ1d3Y5" alt="This is a digital scan or photograph of a typed legal document written in English, dated November 20, 2019." loading="lazy" /></a>
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/laws/other/old/US_Intel/more/Human_Requirements">Human Requirements: Law 2 - US Intelligence Services Forced Disclosure</a></p>
+    <p className="ck-4sq-text">The plain-English demand behind Law 2 as first written: methods stay protected, conclusions do not. It also makes blocking a government employee from releasing that material a crime rather than a personnel matter.</p>
+    <a className="ck-4sq-btn" href="/laws/other/old/US_Intel/more/Human_Requirements">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-stack">
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/laws/DoJ_FBI/more/Notes_1_DoJ_FBI">Notes: Law 1 - DoJ/FBI Forced Disclosure</a></p>
+    <p className="ck-4sq-text">The research behind Law 1. The Epstein Files Act passed 427 to 1 and still produced a fraction of its pages; the JFK Records Act left documents withheld thirty years past its deadline. Both failures are why this draft carries hard deadlines and criminal penalties.</p>
+    <a className="ck-4sq-btn" href="/laws/DoJ_FBI/more/Notes_1_DoJ_FBI">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-stack">
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/laws/Trusted_Investigations/Law_4_Trusted_Investigations">Law 4: Charlie Kirk Investigation - Trusted Investigators Act</a></p>
+    <p className="ck-4sq-text">Full text of the trusted investigators act &mdash; civilian-led teams embedded inside the FBI and intelligence agencies with full access and their own release authority.</p>
+    <a className="ck-4sq-btn" href="/laws/Trusted_Investigations/Law_4_Trusted_Investigations">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+
+</div>
+
+<!-- CK_4SQ_SECTION_END -->
+
+<!-- CK_4SQ_SITEWIDE_START -->
+
+## Elsewhere In The Investigation
+
+<div className="ck-4sq">
+
+<div className="ck-4sq-card ck-4sq-stack">
+  <a className="ck-4sq-thumb" href="/Fix/overview"><img src="/img/evidence/319de07fd86b3f460e4ac35cf156448a9ed6d2186fad7ab5595782d7d2134914.jpg" data-cid="QmVaJDW5VH68g98jBNsSoawPNyrG6fsaCMmrdUfGXhHJct" alt="This is a digital composite image designed as a political or investigative graphic, featuring portraits of public figures Charlie Kirk and Candace Owens overlaid against two…" loading="lazy" /></a>
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/Fix/overview">New Laws (Fix)</a></p>
+    <p className="ck-4sq-text">Four federal laws modelled on the Epstein Files Transparency Act, plus reform plans for evidence handling and event security. This is where subscriber identities behind a geography bucket would actually be compelled into view.</p>
+    <a className="ck-4sq-btn" href="/Fix/overview">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-side">
+  <a className="ck-4sq-thumb" href="/Your_Actions_Fix_It/overview"><img src="/img/evidence/6301de96e2a78e6a3fd308434fd6dfcd02861b729ee1fa5fa108bc133bd88107.jpg" data-cid="QmTJ3jKkeJNSHjqsJrur1mzk6Yz3KLS3VC2GJALASaBbeq" alt="A digital screenshot of a legislative web page displaying a structured table titled &quot;History.&quot; The table documents the chronologically ordered legislative actions taken on a…" loading="lazy" /></a>
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/Your_Actions_Fix_It/overview">Your Actions Fix It</a></p>
+    <p className="ck-4sq-text">Concrete things one person can do: records requests, contacting representatives, preserving and sharing evidence. It is the shortest route from reading this site to changing anything on it.</p>
+    <a className="ck-4sq-btn" href="/Your_Actions_Fix_It/overview">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-side">
+  <a className="ck-4sq-thumb" href="/CoverUp/overview"><img src="/img/evidence/f78f3a3ede1a3bbfda3cfd42d80f52f48dc1aedb7cfa2f64f5afb598372c125f.jpg" data-cid="" alt="Visual Representation of Reported Injuries — anatomical chart marking, in red, the reported injury locations across the front and back torso, the neck, the internal chest, and two views of the brain." loading="lazy" /></a>
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/CoverUp/overview">Cover Up (Possible)</a></p>
+    <p className="ck-4sq-text">Dirt removed, a transport SUV released, cameras and SD cards gone, a body camera that stopped on the roof, a foreign inquiry halted. Each is a reported allegation, and the page groups them by the kind of cover-up alleged.</p>
+    <a className="ck-4sq-btn" href="/CoverUp/overview">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-stack">
+  <a className="ck-4sq-thumb" href="/Drones/overview"><img src="/img/evidence/78a78e6444a1610a0b7c607c7bebb1e5c61c9d1aaaccbc9194129cddeee82c2d.jpg" data-cid="QmeUvpMN3UQWBnqJxPEcp2Miz77gsvyRb4atA3ZgdHnVvb" alt="This image is a flat, digital screenshot of a mobile-formatted web article from the National Public Radio (NPR) website." loading="lazy" /></a>
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/Drones/overview">Drones</a></p>
+    <p className="ck-4sq-text">Counter-UAS testing at Provo airport the same week, fast objects on phone video, and TPUSA later acknowledging drone use. Airspace is treated here as evidence rather than as a sideshow.</p>
+    <a className="ck-4sq-btn" href="/Drones/overview">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+
+</div>
+
+<!-- CK_4SQ_SITEWIDE_END -->
+
 ## Sources
 - Special Counsel regulations: https://www.law.cornell.edu/cfr/text/28/part-600
 - Church Committee: https://www.senate.gov/about/powers-procedures/investigations/church-committee.htm

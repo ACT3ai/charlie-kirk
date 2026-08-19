@@ -160,6 +160,112 @@ Parallel media clips recirculated by accounts such as **[@FurkanGozukara](/Influ
 
 Related public pages: [Fix overview](/Fix/overview), [laws landing](/laws), Discovery, [explain all four laws](/laws/explain/all/overview).
 
+<!-- CK_INTERESTING_HERE_START -->
+
+## Interesting In This Area
+
+* [Law 1](/laws/DoJ_FBI/Law_1_DoJ_FBI) and [Law 2](/laws/US_Intel/Law_2_US_Intel) force disclosure; [Law 3](/laws/Require_to_Investigate/Law_3_Require_to_Investigate) forces the investigation.
+* [Law 4](/laws/Trusted_Investigations/Law_4_Trusted_Investigations) seats named civilians inside the FBI and the intelligence community.
+* [The launch article](/laws/explain/all/overview) explains why one bill would never have been enough.
+* [The threat analysis](/laws/other/Worries_By_Each_4_Laws) lists every documented way agencies have evaded disclosure.
+
+<!-- CK_INTERESTING_HERE_END -->
+
+<!-- CK_INTERESTING_OTHER_START -->
+
+## Interesting In Other Areas
+
+* [U.S. intelligence holdings](/US_Intelligence/overview) sit outside the reach of ordinary criminal discovery.
+* [Signs of a cover-up](/US_Intelligence_Assisted/signs-of-cover-up) are catalogued apart from the statutory text.
+* [Sealing orders in 2026](/Legal/Evidence-Sealing-2026) kept filings off the public docket.
+* [Proof Intel Services](/Proof_Intel_Services/overview) collects the indicators these disclosure bills would test.
+
+<!-- CK_INTERESTING_OTHER_END -->
+
+<!-- CK_4SQ_SECTION_START -->
+
+## Other Pages In This Section
+
+<div className="ck-4sq">
+
+<div className="ck-4sq-card ck-4sq-stack">
+  <a className="ck-4sq-thumb" href="/laws/explain/all/overview"><img src="/img/evidence/c51ef651e0e2fd9187ac8fa0b5d25908baba279b0c03f1ea93f6522fa3cedbb4.jpg" data-cid="QmSmChQuZCJ5h3PSeZuZDQRFptgYRDFzS3H33yY3VnZjTM" alt="This image shows a wide-angle, daytime view of a crowded outdoor courtyard on a university campus, featuring tiered grassy lawns and modern multi-story buildings." loading="lazy" /></a>
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/laws/explain/all/overview">Four Laws to Force the Truth About Charlie Kirk</a></p>
+    <p className="ck-4sq-text">The launch article for all four laws in one place: why the Epstein Files Act is the model, and what each bill would force into daylight. Start here if you have never read the statutory text.</p>
+    <a className="ck-4sq-btn" href="/laws/explain/all/overview">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-stack">
+  <a className="ck-4sq-thumb" href="/laws/other/List_Of_Laws"><img src="/img/evidence/8b74a7acc55ffaca666dfa957f06d89f9f1cbbe5ea405c0a256b707fb3153696.png" data-cid="QmT596hXPvEdGLF4swbMBMxVYYkwhwevjARTJYMXBiHcpM" alt="This image is a horizontal, close-up digital screenshot of a structured spreadsheet table containing text in English." loading="lazy" /></a>
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/laws/other/List_Of_Laws">Charlie Kirk Files Forced Disclosure -- Summary of Four Proposed Federal Laws</a></p>
+    <p className="ck-4sq-text">The charter document. All four bills summarised in order, with the agencies each one reaches and the case number they were drafted around. This is the file every compliance audit checks the drafts against.</p>
+    <a className="ck-4sq-btn" href="/laws/other/List_Of_Laws">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-stack">
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/laws/DoJ_FBI/Law_1_DoJ_FBI">Law 1: Charlie Kirk Investigation - DoJ/FBI Forced Disclosure Act</a></p>
+    <p className="ck-4sq-text">The full statutory text of the DoJ and FBI disclosure law, modelled on the Epstein Files Act. This is the live draft the <a href="/Fix/overview">Fix section</a> summarises.</p>
+    <a className="ck-4sq-btn" href="/laws/DoJ_FBI/Law_1_DoJ_FBI">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-stack">
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/laws/Trusted_Investigations/Law_4_Trusted_Investigations">Law 4: Charlie Kirk Investigation - Trusted Investigators Act</a></p>
+    <p className="ck-4sq-text">Full text of the trusted investigators act &mdash; civilian-led teams embedded inside the FBI and intelligence agencies with full access and their own release authority.</p>
+    <a className="ck-4sq-btn" href="/laws/Trusted_Investigations/Law_4_Trusted_Investigations">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+
+</div>
+
+<!-- CK_4SQ_SECTION_END -->
+
+<!-- CK_4SQ_SITEWIDE_START -->
+
+## Elsewhere In The Investigation
+
+<div className="ck-4sq">
+
+<div className="ck-4sq-card ck-4sq-stack">
+  <a className="ck-4sq-thumb" href="/GoogleSearches/overview"><img src="/img/evidence/81af02754596407a3c3bbdced4e10a0c1cb813684c42f9ddb5654092e1f6e815.jpg" data-cid="QmS3fPmb3WAEkn3THqiBf7iuQGRr1fEzd3Mdy1nLfmb1tA" alt="This is a digital screenshot of a mobile-formatted web page from the news site &quot;hoodline.com&quot;." loading="lazy" /></a>
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/GoogleSearches/overview">Google Searches</a></p>
+    <p className="ck-4sq-text">The hub for every claimed pre-September-10 search pattern, split by geography and by date. It carries the fight over method as well as the data &mdash; investigators publishing screenshots on one side, statisticians calling it sampled noise on the other.</p>
+    <a className="ck-4sq-btn" href="/GoogleSearches/overview">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-side">
+  <a className="ck-4sq-thumb" href="/Tyler_Robinson/overview"><img src="/img/evidence/f78f3a3ede1a3bbfda3cfd42d80f52f48dc1aedb7cfa2f64f5afb598372c125f.jpg" data-cid="" alt="Visual Representation of Reported Injuries — anatomical chart marking, in red, the reported injury locations across the front and back torso, the neck, the internal chest, and two views of the brain." loading="lazy" /></a>
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/Tyler_Robinson/overview">Tyler Robinson</a></p>
+    <p className="ck-4sq-text">The hub for the official suspect &mdash; identity mismatches, surrender timeline, the messages, ballistics, family, trial, and the patsy theories. Charged, not convicted.</p>
+    <a className="ck-4sq-btn" href="/Tyler_Robinson/overview">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-stack">
+  <a className="ck-4sq-thumb" href="/TPUSA/overview"><img src="/img/evidence/094e2f88c480386133a87a76b1342a3f77906b4c47afc80641e4a8e4a63e9915.jpg" data-cid="QmP3QMMCrAeAYE9da2ugxYaHSLbaiAhe2icToLNVz2BuQD" alt="This is a digital image featuring a graphic presentation with a light olive-green background, compiled to highlight military connections of certain Christian figures." loading="lazy" /></a>
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/TPUSA/overview">TPUSA (Turning Point USA)</a></p>
+    <p className="ck-4sq-text">The organisation behind the tour: its structure, donors, security arrangements and internal politics in Charlie Kirk&apos;s final weeks. The page does not claim TPUSA is responsible for anything.</p>
+    <a className="ck-4sq-btn" href="/TPUSA/overview">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-side">
+  <a className="ck-4sq-thumb" href="/After/overview"><img src="/img/evidence/4eb7c20273532f8047faa83e27da57409b1cceca326d9e4d58449a2ec4c74664.jpg" data-cid="QmPi4U99UmsRKdNpwNZRLgfMBnoV1H9yNffJ4vEPZccHJR" alt="Google Trends screenshot: search term 645 W 925 S, region filter Israel, past 5 years, flat line with a single spike to 100 in April 2022" loading="lazy" /></a>
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/After/overview">After Events</a></p>
+    <p className="ck-4sq-text">Everything downstream of 12:23 PM on September 10 &mdash; surrender, paving, gag orders, resignations, visa enforcement, and the residential block north of campus. Start here to read the aftermath as one connected thread rather than seven separate fights.</p>
+    <a className="ck-4sq-btn" href="/After/overview">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+
+</div>
+
+<!-- CK_4SQ_SITEWIDE_END -->
+
 {/* CK_AUTHOR_CREDIT */}
 
 *This website's author is [@HolonCitizen](https://x.com/HolonCitizen) on X and [YouTube/@HolonCitizen](https://www.youtube.com/@HolonCitizen). Follow me there.*

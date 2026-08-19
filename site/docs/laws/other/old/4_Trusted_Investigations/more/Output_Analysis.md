@@ -79,6 +79,112 @@ Six independent teams may duplicate effort.
 3. Consider adding independent legal counsel funded by investigation budget (DONE in Section 2(d))
 4. Ensure investigators' Schedule A tracking is public so citizens can monitor progress
 
+<!-- CK_INTERESTING_HERE_START -->
+
+## Interesting In This Area
+
+* Six teams, sole selection authority, and a fifteen-year obstruction penalty in [this draft](/laws/other/old/Trusted_Investigations/Law_4_Trusted_Investigations).
+* Interim releases are allowed at any time, not held for [a final report](/laws/other/old/Trusted_Investigations/more/Human_Requirements).
+* [The current audit](/laws/Trusted_Investigations/more/Output_Analysis) adds security details and succession.
+* [Law 2's archived audit](/laws/other/old/US_Intel/more/Output_Analysis) covers the intelligence disclosure half.
+
+<!-- CK_INTERESTING_HERE_END -->
+
+<!-- CK_INTERESTING_OTHER_START -->
+
+## Interesting In Other Areas
+
+* [The Fix section](/Fix/overview) is the plain-language version of these four bills.
+* [Your Actions Fix It](/Your_Actions_Fix_It/overview) lists records requests a citizen can file today.
+* [Vote](/Vote/overview) is where the legislative path stops being theoretical.
+* [The cover-up record](/CoverUp/overview) is what a Special Master would be reading.
+
+<!-- CK_INTERESTING_OTHER_END -->
+
+<!-- CK_4SQ_SECTION_START -->
+
+## Other Pages In This Section
+
+<div className="ck-4sq">
+
+<div className="ck-4sq-card ck-4sq-stack">
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/laws/other/old/US_Intel/Law_2_US_Intel">Law 2: Charlie Kirk Investigation - Intelligence Services Disclosure Act</a></p>
+    <p className="ck-4sq-text">The archived earlier draft of the intelligence-community disclosure bill, back when Schedule A held 175 items. It already reached every element named in 50 U.S.C. 3003(4) &mdash; CIA, NSA, DIA, NRO, NGA, ODNI and the rest.</p>
+    <a className="ck-4sq-btn" href="/laws/other/old/US_Intel/Law_2_US_Intel">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-side">
+  <a className="ck-4sq-thumb" href="/laws/DoJ_FBI/more/Human_Requirements"><img src="/img/evidence/c45cecc9e1589d0f74ffadc63096080ad11a6168b62fdf35cf20f618ff68fc17.jpg" data-cid="QmbKyFtYHb2NxcTpufHuRFeG3pQZMJVetxzaywiw3LdJuA" alt="This is a high-resolution, flat-lay digital scan of a printed legal document or official complaint written in English, dated November 20, 2019." loading="lazy" /></a>
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/laws/DoJ_FBI/more/Human_Requirements">Human Requirements: Law 1 - DoJ/FBI Forced Disclosure</a></p>
+    <p className="ck-4sq-text">The plain-English demand behind Law 1, written before any drafting: every DOJ, FBI, ATF and local file released, any employee free to send records in, and retaliation made a crime. The statute is then audited line by line against this list.</p>
+    <a className="ck-4sq-btn" href="/laws/DoJ_FBI/more/Human_Requirements">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-stack">
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/laws/Require_to_Investigate/more/Output_Analysis">Output Analysis: Law 3 - Require Investigation</a></p>
+    <p className="ck-4sq-text">The audit of Law 3 against the citizen requirements: a mandated investigation with its own team, budget and timeline, and a parallel intelligence assessment directed by the DNI. Every requirement is checked against the section that carries it.</p>
+    <a className="ck-4sq-btn" href="/laws/Require_to_Investigate/more/Output_Analysis">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-side">
+  <a className="ck-4sq-thumb" href="/laws/US_Intel/more/Human_Requirements"><img src="/img/evidence/14f90a40f5d68c452073308d5374fd2d50adcd3ffe0dcbe70a39c967191e9b8e.jpg" data-cid="QmdhWqrdvZMxknDa6fUm4yw5AJQbovKdxoweEwaRGNWcj1" alt="This is a high-resolution photograph or digital scan of a printed document featuring four paragraphs of English text on a white page." loading="lazy" /></a>
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/laws/US_Intel/more/Human_Requirements">Human Requirements: Law 2 - US Intelligence Services Forced Disclosure</a></p>
+    <p className="ck-4sq-text">The plain-English demand behind Law 2: every part of the intelligence community &mdash; CIA, NSA, DIA, NRO &mdash; releases what it holds, and blocking an employee from coming forward becomes a crime.</p>
+    <a className="ck-4sq-btn" href="/laws/US_Intel/more/Human_Requirements">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+
+</div>
+
+<!-- CK_4SQ_SECTION_END -->
+
+<!-- CK_4SQ_SITEWIDE_START -->
+
+## Elsewhere In The Investigation
+
+<div className="ck-4sq">
+
+<div className="ck-4sq-card ck-4sq-stack">
+  <a className="ck-4sq-thumb" href="/Law_Enforcement/rifle-chain-of-custody"><img src="/img/evidence/5e8797dccf4375c3a21e131e79ee95238cc71780ef838907830fc611b8d58015.jpg" data-cid="QmZNwS2vzA2F7KA6CpCgeUuLqZq1FTu2jg9uQBZm7FaQwj" alt="This is a flat-lay photograph showing a disassembled German Mauser Karabiner 98k (Kar98k) bolt-action rifle, its bayonet, and associated accessories, neatly arranged on a wooden…" loading="lazy" /></a>
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/Law_Enforcement/rifle-chain-of-custody">Mauser Rifle Chain of Custody</a></p>
+    <p className="ck-4sq-text">Who found the rifle, when, after which K-9 passes, and how the towel-wrapped bundle was photographed and sealed. These are ordinary evidence-handling questions, and on the public record they are unanswered.</p>
+    <a className="ck-4sq-btn" href="/Law_Enforcement/rifle-chain-of-custody">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-side">
+  <a className="ck-4sq-thumb" href="/Gun_Bullet/overview"><img src="/img/evidence/f78f3a3ede1a3bbfda3cfd42d80f52f48dc1aedb7cfa2f64f5afb598372c125f.jpg" data-cid="" alt="Visual Representation of Reported Injuries — anatomical chart marking, in red, the reported injury locations across the front and back torso, the neck, the internal chest, and two views of the brain." loading="lazy" /></a>
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/Gun_Bullet/overview">Gun & Bullet Analysis</a></p>
+    <p className="ck-4sq-text">Weapon and ammunition analysis in one place &mdash; the Mauser narrative, the inconclusive ATF comparison, the energy gap, the trajectory problem, and the alternatives proposed when those fail. Start here before judging any single ballistics claim.</p>
+    <a className="ck-4sq-btn" href="/Gun_Bullet/overview">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-side">
+  <a className="ck-4sq-thumb" href="/Cause_of_Death/overview"><img src="/img/evidence/f78f3a3ede1a3bbfda3cfd42d80f52f48dc1aedb7cfa2f64f5afb598372c125f.jpg" data-cid="" alt="Visual Representation of Reported Injuries — anatomical chart marking, in red, the reported injury locations across the front and back torso, the neck, the internal chest, and two views of the brain." loading="lazy" /></a>
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/Cause_of_Death/overview">Cause of Death</a></p>
+    <p className="ck-4sq-text">One page stating what most independent investigators had concluded by July 2026 about what killed Charlie Kirk and what did not. The official account is a single .30-06 round; this is where the reasons for rejecting it are gathered.</p>
+    <a className="ck-4sq-btn" href="/Cause_of_Death/overview">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-stack">
+  <a className="ck-4sq-thumb" href="/Mic/overview"><img src="/img/evidence/448e0dcff9d651cf49fde26393fc69cc065a2a53837c073af68e5c7dd0ec833f.jpg" data-cid="QmedrrPge7Bj8vUN6xxq1Zfz1CgwuY6xGAtWFFbU4tmg4R" alt="Annotated diagram illustrating the claimed LiPO battery and PCB path from the mic transmitter" loading="lazy" /></a>
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/Mic/overview">Microphone — The Exploding Mic Theory</a></p>
+    <p className="ck-4sq-text">The theory that the lavalier microphone on Charlie Kirk&apos;s shirt, not a rooftop round, was the kill mechanism. Shirt fabric reportedly moves spherically before the wound appears, and the audio reportedly splits one event into two.</p>
+    <a className="ck-4sq-btn" href="/Mic/overview">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+
+</div>
+
+<!-- CK_4SQ_SITEWIDE_END -->
+
 {/* CK_AUTHOR_CREDIT */}
 
 *This website's author is [@HolonCitizen](https://x.com/HolonCitizen) on X and [YouTube/@HolonCitizen](https://www.youtube.com/@HolonCitizen). Follow me there.*

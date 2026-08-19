@@ -24,6 +24,109 @@ Law 1 covers law enforcement (DOJ/FBI). This law covers intelligence services sp
 
 See also: [Law 1 Requirements](/laws/DoJ_FBI/more/Human_Requirements) (law enforcement counterpart)
 
+<!-- CK_INTERESTING_HERE_START -->
+
+## Interesting In This Area
+
+* Methods stay protected; conclusions do not. That line survives into [the current text](/laws/US_Intel/Law_2_US_Intel).
+* Blocking an employee from releasing becomes a crime, not [a personnel matter](/laws/other/old/US_Intel/more/Output_Analysis).
+* [The current requirements page](/laws/US_Intel/more/Human_Requirements) restates the same demand.
+* [Law 1's archived version](/laws/other/old/DoJ_FBI/more/Human_Requirements) covers the law-enforcement half.
+
+<!-- CK_INTERESTING_HERE_END -->
+
+<!-- CK_INTERESTING_OTHER_START -->
+
+## Interesting In Other Areas
+
+* [The medical examiner question](/Medical/medical_examiner) is one reason exhumation authority was proposed.
+* [Motive](/Motive/overview) is the category the official account closed fastest.
+* [After the event](/After/overview) tracks resignations, payouts and reassignments.
+* [Messages attributed to Robinson](/Tyler_Robinson/Messages/overview) sit in four storage locations.
+
+<!-- CK_INTERESTING_OTHER_END -->
+
+<!-- CK_4SQ_SECTION_START -->
+
+## Other Pages In This Section
+
+<div className="ck-4sq">
+
+<div className="ck-4sq-card ck-4sq-stack">
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/laws/other/old/US_Intel/more/Notes_2_US_Intel">Notes: Law 2 - US Intelligence Services Forced Disclosure</a></p>
+    <p className="ck-4sq-text">Why Law 2 assumes bad faith. The JFK Records Act still left roughly five percent of records redacted after thirty years, and the Epstein Act produced about 12,285 documents against an estimated six million pages.</p>
+    <a className="ck-4sq-btn" href="/laws/other/old/US_Intel/more/Notes_2_US_Intel">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-stack">
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/laws/DoJ_FBI/more/Output_Analysis">Output Analysis: Law 1 - DoJ/FBI Forced Disclosure</a></p>
+    <p className="ck-4sq-text">A requirement-by-requirement audit of Law 1 against what citizens actually asked for, each one marked against the section that does the work. It also tracks what changed: ninety days became thirty, and presidential override was removed outright.</p>
+    <a className="ck-4sq-btn" href="/laws/DoJ_FBI/more/Output_Analysis">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-stack">
+  <a className="ck-4sq-thumb" href="/laws/Trusted_Investigations/more/Human_Requirements"><img src="/img/evidence/af997f70d8e3ffea08d811389de0b4fcc56f6ae11e6c84c08938f7621be0720e.jpg" data-cid="QmdEaqFxfmmuyxUmSBkKRTN3rf67hTZedsT2KpA92xndDR" alt="This image is a digital medical illustration depicting a side-profile view of a human head and neck, focusing on the cervical spine." loading="lazy" /></a>
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/laws/Trusted_Investigations/more/Human_Requirements">Human Requirements: Law 4 - Trusted Investigations</a></p>
+    <p className="ck-4sq-text">The demand behind Law 4, in plain words: named public figures the audience actually trusts each get their own team inside the FBI and inside the intelligence community, and each picks who works on it.</p>
+    <a className="ck-4sq-btn" href="/laws/Trusted_Investigations/more/Human_Requirements">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-stack">
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/laws/US_Intel/more/Output_Analysis">Output Analysis: Law 2 - US Intelligence Services Forced Disclosure</a></p>
+    <p className="ck-4sq-text">The audit of Law 2 against the citizen requirements: eight broad categories of covered information, a thirty-day catch-all mandate, and a final category built to cover whatever the list missed.</p>
+    <a className="ck-4sq-btn" href="/laws/US_Intel/more/Output_Analysis">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+
+</div>
+
+<!-- CK_4SQ_SECTION_END -->
+
+<!-- CK_4SQ_SITEWIDE_START -->
+
+## Elsewhere In The Investigation
+
+<div className="ck-4sq">
+
+<div className="ck-4sq-card ck-4sq-side">
+  <a className="ck-4sq-thumb" href="/US_Intelligence_Assisted/signs-of-cover-up"><img src="/img/evidence/0519c99dfc49e8bf80cee9a3d633ede596b779fa6edba4838456741a24e57244.jpg" data-cid="QmZgTAvUi5RqFx4N56xSY798mSyMECLLgcRC2qnSpABJgJ" alt="A wide shot depicting a large outdoor gathering of people next to a modern concrete building under a bright blue, partly cloudy sky." loading="lazy" /></a>
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/US_Intelligence_Assisted/signs-of-cover-up">Signs of Cover-Up</a></p>
+    <p className="ck-4sq-text">Cement over the courtyard, a transport vehicle reportedly destroyed, a withheld surrender video, and a foreign-involvement inquiry reportedly shut within days. Every item is an allegation; the argument is about the sequence they arrived in.</p>
+    <a className="ck-4sq-btn" href="/US_Intelligence_Assisted/signs-of-cover-up">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-stack">
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/gov/overview">Government Evidence</a></p>
+    <p className="ck-4sq-text">What government bodies have done with the evidence in this case, gathered in one place &mdash; withheld records, handling questions, and the specific asks that follow from them.</p>
+    <a className="ck-4sq-btn" href="/gov/overview">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-stack">
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/legal_investigation/overview">Legal Investigation</a></p>
+    <p className="ck-4sq-text">The tracker for gag orders, sealed transcripts, chain-of-custody fights and the discovery commentators say has not arrived. Any search record would have to come through exactly this machinery.</p>
+    <a className="ck-4sq-btn" href="/legal_investigation/overview">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-side">
+  <a className="ck-4sq-thumb" href="/After/overview"><img src="/img/evidence/4eb7c20273532f8047faa83e27da57409b1cceca326d9e4d58449a2ec4c74664.jpg" data-cid="QmPi4U99UmsRKdNpwNZRLgfMBnoV1H9yNffJ4vEPZccHJR" alt="Google Trends screenshot: search term 645 W 925 S, region filter Israel, past 5 years, flat line with a single spike to 100 in April 2022" loading="lazy" /></a>
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/After/overview">After Events</a></p>
+    <p className="ck-4sq-text">Everything downstream of 12:23 PM on September 10 &mdash; surrender, paving, gag orders, resignations, visa enforcement, and the residential block north of campus. Start here to read the aftermath as one connected thread rather than seven separate fights.</p>
+    <a className="ck-4sq-btn" href="/After/overview">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+
+</div>
+
+<!-- CK_4SQ_SITEWIDE_END -->
+
 {/* CK_AUTHOR_CREDIT */}
 
 *This website's author is [@HolonCitizen](https://x.com/HolonCitizen) on X and [YouTube/@HolonCitizen](https://www.youtube.com/@HolonCitizen). Follow me there.*

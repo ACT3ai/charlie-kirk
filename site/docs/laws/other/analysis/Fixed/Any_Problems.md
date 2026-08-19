@@ -115,6 +115,111 @@ Parallel media clips recirculated by accounts such as **[@FurkanGozukara](/Influ
 
 Related public pages: [Fix overview](/Fix/overview), [laws landing](/laws), Discovery, [explain all four laws](/laws/explain/all/overview).
 
+<!-- CK_INTERESTING_HERE_START -->
+
+## Interesting In This Area
+
+* Section 12D now specifies searchable PDFs and machine-readable indexes, ending [format slow-rolling](/laws/DoJ_FBI/Law_1_DoJ_FBI).
+* [Law 2](/laws/US_Intel/Law_2_US_Intel) now defines final output to include raw signals intelligence and cable traffic.
+* [The unfixed list](/laws/other/analysis/Challenges) is short: one item-count discrepancy remains.
+* [The charter audit](/laws/other/analysis/Fixed/Laws_Not_Complying) covers the same drafts from the charter side.
+
+<!-- CK_INTERESTING_HERE_END -->
+
+<!-- CK_INTERESTING_OTHER_START -->
+
+## Interesting In Other Areas
+
+* [The Epstein Files Act](/Fix/overview) passed the House 427-1 and still produced roughly 12,285 documents.
+* A [December 2025 gag order](/court/overview) closed the only prosecution to public view.
+* Former NCTC director [Joe Kent](/US_Intelligence/joe-kent) says the [foreign-ties review](/US_Intelligence/nctc) was ordered stopped.
+* [Your Actions Fix It](/Your_Actions_Fix_It/overview) turns all of this into one phone call.
+
+<!-- CK_INTERESTING_OTHER_END -->
+
+<!-- CK_4SQ_SECTION_START -->
+
+## Other Pages In This Section
+
+<div className="ck-4sq">
+
+<div className="ck-4sq-card ck-4sq-stack">
+  <a className="ck-4sq-thumb" href="/laws/other/analysis/Fixed/Any_more_to_Add"><img src="/img/evidence/c2386f1c8c5ae0406eceae81521cd9bd6d89fbee182ef2930fcd62fc96ac1046.jpg" data-cid="QmYZyBdE6ks5LccLQQ8ynaEEV3kC9Pa2eq1Yk5eMLR6X2D" alt="This image is a wide, horizontally stitched panoramic photograph showing a large crowd of young adults gathered outdoors for a political event on a tiered concrete university…" loading="lazy" /></a>
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/laws/other/analysis/Fixed/Any_more_to_Add">Additional Disclosure Items to Consider (Beyond the 175) — ALL ADDED</a></p>
+    <p className="ck-4sq-text">Twenty-six disclosure items proposed beyond the original list, all since folded into Schedule A of every bill. This is where family statements, witness-intimidation records and other late additions entered the text.</p>
+    <a className="ck-4sq-btn" href="/laws/other/analysis/Fixed/Any_more_to_Add">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-side">
+  <a className="ck-4sq-thumb" href="/laws/other/old/DoJ_FBI/more/Human_Requirements"><img src="/img/evidence/c3414325f85050f2af470f195a9c45093f02353cccc68e9426dfcf24e72b9ce4.jpg" data-cid="QmTmUTesGy1ZXAYU8SPfw7Vzf2K7WhX3r3dhEJQpZ1d3Y5" alt="This is a digital scan or photograph of a typed legal document written in English, dated November 20, 2019." loading="lazy" /></a>
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/laws/other/old/DoJ_FBI/more/Human_Requirements">Human Requirements: Law 1 - DoJ/FBI Forced Disclosure</a></p>
+    <p className="ck-4sq-text">The archived March 2026 version of the Law 1 requirements, kept so the drafting history stays visible. Read beside the current page, it shows what citizens asked for and what the lawyers changed.</p>
+    <a className="ck-4sq-btn" href="/laws/other/old/DoJ_FBI/more/Human_Requirements">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-stack">
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/laws/other/old/Require_to_Investigate/more/Notes_3_Require_to_Investigate">Notes: Law 3 - Require Investigation</a></p>
+    <p className="ck-4sq-text">Precedent research for Law 3, kept as first drafted. The Special Counsel regulations, the Church Committee and the Warren Commission all read as one warning: a mandated investigation can still arrive at a predetermined conclusion.</p>
+    <a className="ck-4sq-btn" href="/laws/other/old/Require_to_Investigate/more/Notes_3_Require_to_Investigate">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-stack">
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/laws/other/old/US_Intel/Law_2_US_Intel">Law 2: Charlie Kirk Investigation - Intelligence Services Disclosure Act</a></p>
+    <p className="ck-4sq-text">The archived earlier draft of the intelligence-community disclosure bill, back when Schedule A held 175 items. It already reached every element named in 50 U.S.C. 3003(4) &mdash; CIA, NSA, DIA, NRO, NGA, ODNI and the rest.</p>
+    <a className="ck-4sq-btn" href="/laws/other/old/US_Intel/Law_2_US_Intel">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+
+</div>
+
+<!-- CK_4SQ_SECTION_END -->
+
+<!-- CK_4SQ_SITEWIDE_START -->
+
+## Elsewhere In The Investigation
+
+<div className="ck-4sq">
+
+<div className="ck-4sq-card ck-4sq-side">
+  <a className="ck-4sq-thumb" href="/Security_Team/no-counter-snipers"><img src="/img/evidence/fae6e1ddb01b8bd52817d544cf6d30bc90659397296c1e103b580d285130e9aa.jpg" data-cid="QmScGkL38CWcfTd75FmkFcpDCA7pifHh1smp8GgNSsicK6" alt="This is a composite graphic consisting of two stacked aerial-view panels, likely sourced from a mapping service or a 3D modeling environment." loading="lazy" /></a>
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/Security_Team/no-counter-snipers">No Counter-Snipers or Secret Service</a></p>
+    <p className="ck-4sq-text">No counter-snipers, no Secret Service, an overlooked rooftop, and a speaker with a documented threat history. This page is about what was not there.</p>
+    <a className="ck-4sq-btn" href="/Security_Team/no-counter-snipers">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-side">
+  <a className="ck-4sq-thumb" href="/Law_Enforcement/crime-scene-handling"><img src="/img/evidence/6b0f77aaf4c035c572920c8f06e1e26cb7dc7021bdcf669120d2c31cf84833f4.jpg" data-cid="QmPGUmfqJjR1wfBhTnyiiKfcieNyrcVDybG7d9vusxDXYD" alt="This image is a digital scan or direct export of a single-page document, identified as &quot;Page 3 of 4&quot; of an official report." loading="lazy" /></a>
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/Law_Enforcement/crime-scene-handling">Crime Scene Handling</a></p>
+    <p className="ck-4sq-text">The courtyard where Charlie Kirk was killed was reportedly resurfaced within days, by a company reportedly revived months earlier. UVU says the work was prescheduled. Both accounts are on the page.</p>
+    <a className="ck-4sq-btn" href="/Law_Enforcement/crime-scene-handling">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-side">
+  <a className="ck-4sq-thumb" href="/Proof_Not_Tyler/overview"><img src="/img/evidence/f78f3a3ede1a3bbfda3cfd42d80f52f48dc1aedb7cfa2f64f5afb598372c125f.jpg" data-cid="" alt="Visual Representation of Reported Injuries — anatomical chart marking, in red, the reported injury locations across the front and back torso, the neck, the internal chest, and two views of the brain." loading="lazy" /></a>
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/Proof_Not_Tyler/overview">Proof Not Tyler</a></p>
+    <p className="ck-4sq-text">The hub for every argument that Tyler Robinson did not cause Charlie Kirk&apos;s death &mdash; ballistics, acoustics, identity gaps, and the standard physical tests that were reportedly never run.</p>
+    <a className="ck-4sq-btn" href="/Proof_Not_Tyler/overview">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-stack">
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/Vote/overview">Vote</a></p>
+    <p className="ck-4sq-text">How civic engagement and voting bear on the questions this case raises. It stops short of telling anyone how to vote and stays on what a voter can reasonably ask.</p>
+    <a className="ck-4sq-btn" href="/Vote/overview">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+
+</div>
+
+<!-- CK_4SQ_SITEWIDE_END -->
+
 {/* CK_AUTHOR_CREDIT */}
 
 *This website's author is [@HolonCitizen](https://x.com/HolonCitizen) on X and [YouTube/@HolonCitizen](https://www.youtube.com/@HolonCitizen). Follow me there.*

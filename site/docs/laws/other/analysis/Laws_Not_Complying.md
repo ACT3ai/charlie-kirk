@@ -483,6 +483,110 @@ Parallel media clips recirculated by accounts such as **[@FurkanGozukara](/Influ
 
 Related public pages: [Fix overview](/Fix/overview), [laws landing](/laws), Discovery, [explain all four laws](/laws/explain/all/overview).
 
+<!-- CK_INTERESTING_HERE_START -->
+
+## Interesting In This Area
+
+* The charter says 205 items; [Law 1](/laws/DoJ_FBI/Law_1_DoJ_FBI) says 213. [The charter](/laws/other/List_Of_Laws) needs updating.
+* Law 1 numbers its sections 0, 2, 3, then 1, so [Definitions](/laws/DoJ_FBI/more/Output_Analysis) arrive late.
+* The required disclaimer is absent from [Law 1's operative text](/laws/other/analysis/Fixed/Laws_Not_Complying) entirely.
+* [Attorney review](/laws/other/analysis/Improve) reaches the same count problem from the enforcement side.
+
+<!-- CK_INTERESTING_HERE_END -->
+
+<!-- CK_INTERESTING_OTHER_START -->
+
+## Interesting In Other Areas
+
+* [Witness intimidation claims](/Legal/FBI-Witness-Intimidation) are recorded as allegations, not findings.
+* [Witnesses](/Witnesses/overview) describe a courtyard the state's account has not adopted.
+* [The FBI section](/FBI/overview) holds the agency conduct these bills would open.
+* [Before the event](/Before/overview) shows the pressure Kirk was reportedly under.
+
+<!-- CK_INTERESTING_OTHER_END -->
+
+<!-- CK_4SQ_SECTION_START -->
+
+## Other Pages In This Section
+
+<div className="ck-4sq">
+
+<div className="ck-4sq-card ck-4sq-side">
+  <a className="ck-4sq-thumb" href="/laws/other/old/DoJ_FBI/more/Human_Requirements"><img src="/img/evidence/c3414325f85050f2af470f195a9c45093f02353cccc68e9426dfcf24e72b9ce4.jpg" data-cid="QmTmUTesGy1ZXAYU8SPfw7Vzf2K7WhX3r3dhEJQpZ1d3Y5" alt="This is a digital scan or photograph of a typed legal document written in English, dated November 20, 2019." loading="lazy" /></a>
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/laws/other/old/DoJ_FBI/more/Human_Requirements">Human Requirements: Law 1 - DoJ/FBI Forced Disclosure</a></p>
+    <p className="ck-4sq-text">The archived March 2026 version of the Law 1 requirements, kept so the drafting history stays visible. Read beside the current page, it shows what citizens asked for and what the lawyers changed.</p>
+    <a className="ck-4sq-btn" href="/laws/other/old/DoJ_FBI/more/Human_Requirements">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-stack">
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/laws/other/old/Require_to_Investigate/more/Notes_3_Require_to_Investigate">Notes: Law 3 - Require Investigation</a></p>
+    <p className="ck-4sq-text">Precedent research for Law 3, kept as first drafted. The Special Counsel regulations, the Church Committee and the Warren Commission all read as one warning: a mandated investigation can still arrive at a predetermined conclusion.</p>
+    <a className="ck-4sq-btn" href="/laws/other/old/Require_to_Investigate/more/Notes_3_Require_to_Investigate">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-stack">
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/laws/other/old/US_Intel/Law_2_US_Intel">Law 2: Charlie Kirk Investigation - Intelligence Services Disclosure Act</a></p>
+    <p className="ck-4sq-text">The archived earlier draft of the intelligence-community disclosure bill, back when Schedule A held 175 items. It already reached every element named in 50 U.S.C. 3003(4) &mdash; CIA, NSA, DIA, NRO, NGA, ODNI and the rest.</p>
+    <a className="ck-4sq-btn" href="/laws/other/old/US_Intel/Law_2_US_Intel">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-side">
+  <a className="ck-4sq-thumb" href="/laws/DoJ_FBI/more/Human_Requirements"><img src="/img/evidence/c45cecc9e1589d0f74ffadc63096080ad11a6168b62fdf35cf20f618ff68fc17.jpg" data-cid="QmbKyFtYHb2NxcTpufHuRFeG3pQZMJVetxzaywiw3LdJuA" alt="This is a high-resolution, flat-lay digital scan of a printed legal document or official complaint written in English, dated November 20, 2019." loading="lazy" /></a>
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/laws/DoJ_FBI/more/Human_Requirements">Human Requirements: Law 1 - DoJ/FBI Forced Disclosure</a></p>
+    <p className="ck-4sq-text">The plain-English demand behind Law 1, written before any drafting: every DOJ, FBI, ATF and local file released, any employee free to send records in, and retaliation made a crime. The statute is then audited line by line against this list.</p>
+    <a className="ck-4sq-btn" href="/laws/DoJ_FBI/more/Human_Requirements">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+
+</div>
+
+<!-- CK_4SQ_SECTION_END -->
+
+<!-- CK_4SQ_SITEWIDE_START -->
+
+## Elsewhere In The Investigation
+
+<div className="ck-4sq">
+
+<div className="ck-4sq-card ck-4sq-stack">
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/US_Intelligence_Assisted/aes-factory-explosion">Explosion & Killings at AES Factory</a></p>
+    <p className="ck-4sq-text">A month after Charlie Kirk died, the Tennessee plant that makes shaped charges and demolition blocks was destroyed, reportedly killing sixteen workers. Industrial explosions have ordinary causes; investigators still want the timeline explained.</p>
+    <a className="ck-4sq-btn" href="/US_Intelligence_Assisted/aes-factory-explosion">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-side">
+  <a className="ck-4sq-thumb" href="/Mic/AES"><img src="/img/evidence/e2efb55230be9ff19e9914eced77d5433d4d3fb7cafc0f086101609a4cf03b12.jpg" data-cid="QmTtc9Z8YHqRnDVHxaR93Qaah76xxfPSLSzkDpPPz4nUh6" alt="This image is a digital screenshot of a business profile page containing official registration details for a company named &quot;FIREBIRD ALARM SYSTEMS INC.&quot; retrieved from an Arizona…" loading="lazy" /></a>
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/Mic/AES">AES — Accurate Energetic Systems (Company Profile)</a></p>
+    <p className="ck-4sq-text">A Tennessee explosives maker whose federal contract list reportedly includes miniature XS demolition devices, anti-personnel. A paralegal pulled it from USASpending.gov; the plant was destroyed about a month after September 10.</p>
+    <a className="ck-4sq-btn" href="/Mic/AES">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-stack">
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/Motive/overview">Motive</a></p>
+    <p className="ck-4sq-text">Donor pressure, an Israel position that was visibly shifting, warnings he reportedly gave three people, and the geopolitics around them. Motive is where this case stops being forensic.</p>
+    <a className="ck-4sq-btn" href="/Motive/overview">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-stack">
+  <a className="ck-4sq-thumb" href="/Before/overview"><img src="/img/evidence/4aa8288d8057815dd2e7d726cef33a23abe0f2d122c06e5d4958b5b26e1f88b9.png" data-cid="QmQyTaTEFoxcboiwKVy1VeRjWJTtBUyEdkeveCQxmmkxWg" alt="This is a digital graphic featuring a detailed timeline chart tracking travel, &quot;Flight Overlaps,&quot; and associated &quot;Other Events&quot; spanning the years 2023, 2024, and 2025." loading="lazy" /></a>
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/Before/overview">Before Events</a></p>
+    <p className="ck-4sq-text">The whole pre-September 10 map in one place: <a href="/UVU/pre-shooting-warnings">GRAMA warnings</a>, the July 31 session, the Hamptons weekend, search spikes and aircraft. It is explicit that none of it proves any attendee ordered violence &mdash; it shows what was already in motion.</p>
+    <a className="ck-4sq-btn" href="/Before/overview">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+
+</div>
+
+<!-- CK_4SQ_SITEWIDE_END -->
+
 {/* CK_AUTHOR_CREDIT */}
 
 *This website's author is [@HolonCitizen](https://x.com/HolonCitizen) on X and [YouTube/@HolonCitizen](https://www.youtube.com/@HolonCitizen). Follow me there.*

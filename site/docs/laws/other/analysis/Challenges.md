@@ -28,6 +28,110 @@ Parallel media clips recirculated by accounts such as **[@FurkanGozukara](/Influ
 
 Related public pages: [Fix overview](/Fix/overview), [laws landing](/laws), Discovery, [explain all four laws](/laws/explain/all/overview).
 
+<!-- CK_INTERESTING_HERE_START -->
+
+## Interesting In This Area
+
+* Nine of ten challenges moved to [the fixed file](/laws/other/analysis/Fixed/Challenges); one item still stands.
+* [The charter](/laws/other/List_Of_Laws) still carries 175, 205 and 208 in different sections.
+* [The four law texts](/laws/other/analysis/Fixed/Improve) now agree on 208 items internally.
+* [The compliance audit](/laws/other/analysis/Laws_Not_Complying) reaches that discrepancy from the charter side.
+
+<!-- CK_INTERESTING_HERE_END -->
+
+<!-- CK_INTERESTING_OTHER_START -->
+
+## Interesting In Other Areas
+
+* [The medical examiner question](/Medical/medical_examiner) is one reason exhumation authority was proposed.
+* [Motive](/Motive/overview) is the category the official account closed fastest.
+* [After the event](/After/overview) tracks resignations, payouts and reassignments.
+* [Messages attributed to Robinson](/Tyler_Robinson/Messages/overview) sit in four storage locations.
+
+<!-- CK_INTERESTING_OTHER_END -->
+
+<!-- CK_4SQ_SECTION_START -->
+
+## Other Pages In This Section
+
+<div className="ck-4sq">
+
+<div className="ck-4sq-card ck-4sq-stack">
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/laws/other/analysis/Fixed/Any_Problems">Problems, Vulnerabilities, and Recommended Fixes — FIXED ITEMS</a></p>
+    <p className="ck-4sq-text">The attorney review of all four bills, with the vulnerabilities already closed &mdash; including the slow-rolling defence of producing records in a format nobody can search. Each item names the section that fixed it.</p>
+    <a className="ck-4sq-btn" href="/laws/other/analysis/Fixed/Any_Problems">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-side">
+  <a className="ck-4sq-thumb" href="/laws/other/analysis/Laws_Not_Complying"><img src="/img/evidence/301e311eeb333bb6c53ff2de0f68d6e7d8976a2a279c84aeee07b31adc89f0ef.jpg" data-cid="QmQLEqHtDVEsm9tfvJq6Da7ijgmPbmfcKWAvJhwkbWTKGq" alt="This is a high-resolution, long-form vertical screenshot of a web-based user dashboard for a domain name registrar or management portal." loading="lazy" /></a>
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/laws/other/analysis/Laws_Not_Complying">Laws Not Complying with Charter (List_Of_Laws.md) -- Comprehensive Analysis</a></p>
+    <p className="ck-4sq-text">Every place the four drafts drift from their own charter, item by item: counts that do not match, a Definitions section buried behind Schedule A, and a required disclaimer Law 1 never carries. A charter is only worth something if somebody audits against it.</p>
+    <a className="ck-4sq-btn" href="/laws/other/analysis/Laws_Not_Complying">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-side">
+  <a className="ck-4sq-thumb" href="/laws/other/old/Require_to_Investigate/more/Human_Requirements"><img src="/img/evidence/14f90a40f5d68c452073308d5374fd2d50adcd3ffe0dcbe70a39c967191e9b8e.jpg" data-cid="QmdhWqrdvZMxknDa6fUm4yw5AJQbovKdxoweEwaRGNWcj1" alt="This is a high-resolution photograph or digital scan of a printed document featuring four paragraphs of English text on a white page." loading="lazy" /></a>
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/laws/other/old/Require_to_Investigate/more/Human_Requirements">Human Requirements: Law 3 - Require Investigation</a></p>
+    <p className="ck-4sq-text">The plain-English demand behind Law 3 as first written: disclosure alone is not enough, because an agency can hand over files and still decline to investigate. This is the archived version; <a href="/laws/Require_to_Investigate/more/Human_Requirements">the current one is here</a>.</p>
+    <a className="ck-4sq-btn" href="/laws/other/old/Require_to_Investigate/more/Human_Requirements">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-stack">
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/laws/other/old/Trusted_Investigations/more/Output_Analysis">Output Analysis: Law 4 - Trusted Investigations</a></p>
+    <p className="ck-4sq-text">The original requirement-by-requirement audit of Law 4, every line marked MET with the section that meets it. Read it beside <a href="/laws/Trusted_Investigations/more/Output_Analysis">the current audit</a> to see what the redraft added.</p>
+    <a className="ck-4sq-btn" href="/laws/other/old/Trusted_Investigations/more/Output_Analysis">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+
+</div>
+
+<!-- CK_4SQ_SECTION_END -->
+
+<!-- CK_4SQ_SITEWIDE_START -->
+
+## Elsewhere In The Investigation
+
+<div className="ck-4sq">
+
+<div className="ck-4sq-card ck-4sq-side">
+  <a className="ck-4sq-thumb" href="/US_Intelligence_Assisted/signs-of-cover-up"><img src="/img/evidence/0519c99dfc49e8bf80cee9a3d633ede596b779fa6edba4838456741a24e57244.jpg" data-cid="QmZgTAvUi5RqFx4N56xSY798mSyMECLLgcRC2qnSpABJgJ" alt="A wide shot depicting a large outdoor gathering of people next to a modern concrete building under a bright blue, partly cloudy sky." loading="lazy" /></a>
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/US_Intelligence_Assisted/signs-of-cover-up">Signs of Cover-Up</a></p>
+    <p className="ck-4sq-text">Cement over the courtyard, a transport vehicle reportedly destroyed, a withheld surrender video, and a foreign-involvement inquiry reportedly shut within days. Every item is an allegation; the argument is about the sequence they arrived in.</p>
+    <a className="ck-4sq-btn" href="/US_Intelligence_Assisted/signs-of-cover-up">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-stack">
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/gov/overview">Government Evidence</a></p>
+    <p className="ck-4sq-text">What government bodies have done with the evidence in this case, gathered in one place &mdash; withheld records, handling questions, and the specific asks that follow from them.</p>
+    <a className="ck-4sq-btn" href="/gov/overview">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-stack">
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/legal_investigation/overview">Legal Investigation</a></p>
+    <p className="ck-4sq-text">The tracker for gag orders, sealed transcripts, chain-of-custody fights and the discovery commentators say has not arrived. Any search record would have to come through exactly this machinery.</p>
+    <a className="ck-4sq-btn" href="/legal_investigation/overview">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-side">
+  <a className="ck-4sq-thumb" href="/After/overview"><img src="/img/evidence/4eb7c20273532f8047faa83e27da57409b1cceca326d9e4d58449a2ec4c74664.jpg" data-cid="QmPi4U99UmsRKdNpwNZRLgfMBnoV1H9yNffJ4vEPZccHJR" alt="Google Trends screenshot: search term 645 W 925 S, region filter Israel, past 5 years, flat line with a single spike to 100 in April 2022" loading="lazy" /></a>
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/After/overview">After Events</a></p>
+    <p className="ck-4sq-text">Everything downstream of 12:23 PM on September 10 &mdash; surrender, paving, gag orders, resignations, visa enforcement, and the residential block north of campus. Start here to read the aftermath as one connected thread rather than seven separate fights.</p>
+    <a className="ck-4sq-btn" href="/After/overview">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+
+</div>
+
+<!-- CK_4SQ_SITEWIDE_END -->
+
 {/* CK_AUTHOR_CREDIT */}
 
 *This website's author is [@HolonCitizen](https://x.com/HolonCitizen) on X and [YouTube/@HolonCitizen](https://www.youtube.com/@HolonCitizen). Follow me there.*

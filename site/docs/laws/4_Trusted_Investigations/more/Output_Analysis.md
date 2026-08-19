@@ -79,6 +79,110 @@ Six independent teams may duplicate effort.
 3. Consider adding independent legal counsel funded by investigation budget (DONE in Section 2(d))
 4. Ensure investigators' Schedule A tracking is public so citizens can monitor progress
 
+<!-- CK_INTERESTING_HERE_START -->
+
+## Interesting In This Area
+
+* [Six teams in total](/laws/Trusted_Investigations/Law_4_Trusted_Investigations): one FBI and one intelligence team per investigator.
+* Obstruction carries fifteen years; [the requirements page](/laws/Trusted_Investigations/more/Human_Requirements) is where that demand originated.
+* [The notes](/laws/Trusted_Investigations/more/Notes_4_Trusted_Investigations) list the counter-argument: naming private citizens in statute is unusual.
+* [Law 2's audit](/laws/US_Intel/more/Output_Analysis) uses the same MET-by-section format for intelligence disclosure.
+
+<!-- CK_INTERESTING_HERE_END -->
+
+<!-- CK_INTERESTING_OTHER_START -->
+
+## Interesting In Other Areas
+
+* Law 4 names [Candace Owens](/People/candace-owens) and [Tucker Carlson](/People/tucker-carlson) among its trusted investigators.
+* [Independent podcasters](/Influencers/overview) carried this case further than [legacy outlets](/Media/overview) did.
+* [Posts vanished and accounts were suspended](/Censorship/overview) as these theories spread.
+* [The cover-up record](/CoverUp/overview) is the case these four bills were drafted against.
+
+<!-- CK_INTERESTING_OTHER_END -->
+
+<!-- CK_4SQ_SECTION_START -->
+
+## Other Pages In This Section
+
+<div className="ck-4sq">
+
+<div className="ck-4sq-card ck-4sq-stack">
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/laws/US_Intel/Law_2_US_Intel">Law 2: Charlie Kirk Investigation - Intelligence Services Disclosure Act</a></p>
+    <p className="ck-4sq-text">Full text of the intelligence disclosure act: CIA, NSA, DIA, NRO and every IC element releasing findings within 30 days, with protection limited to active sources.</p>
+    <a className="ck-4sq-btn" href="/laws/US_Intel/Law_2_US_Intel">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-stack">
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/laws/explain/all/laws_svg/needs_law_3">SVG Slide Requirements — Law #3</a></p>
+    <p className="ck-4sq-text">The slide specification for Law 3, in the same deep-navy, red and gold template as the rest. One message has to land in one frame: investigating this killing is a duty, not a choice.</p>
+    <a className="ck-4sq-btn" href="/laws/explain/all/laws_svg/needs_law_3">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-stack">
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/laws/other/analysis/Fixed/Any_Problems">Problems, Vulnerabilities, and Recommended Fixes — FIXED ITEMS</a></p>
+    <p className="ck-4sq-text">The attorney review of all four bills, with the vulnerabilities already closed &mdash; including the slow-rolling defence of producing records in a format nobody can search. Each item names the section that fixed it.</p>
+    <a className="ck-4sq-btn" href="/laws/other/analysis/Fixed/Any_Problems">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-side">
+  <a className="ck-4sq-thumb" href="/laws/other/analysis/Laws_Not_Complying"><img src="/img/evidence/301e311eeb333bb6c53ff2de0f68d6e7d8976a2a279c84aeee07b31adc89f0ef.jpg" data-cid="QmQLEqHtDVEsm9tfvJq6Da7ijgmPbmfcKWAvJhwkbWTKGq" alt="This is a high-resolution, long-form vertical screenshot of a web-based user dashboard for a domain name registrar or management portal." loading="lazy" /></a>
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/laws/other/analysis/Laws_Not_Complying">Laws Not Complying with Charter (List_Of_Laws.md) -- Comprehensive Analysis</a></p>
+    <p className="ck-4sq-text">Every place the four drafts drift from their own charter, item by item: counts that do not match, a Definitions section buried behind Schedule A, and a required disclaimer Law 1 never carries. A charter is only worth something if somebody audits against it.</p>
+    <a className="ck-4sq-btn" href="/laws/other/analysis/Laws_Not_Complying">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+
+</div>
+
+<!-- CK_4SQ_SECTION_END -->
+
+<!-- CK_4SQ_SITEWIDE_START -->
+
+## Elsewhere In The Investigation
+
+<div className="ck-4sq">
+
+<div className="ck-4sq-card ck-4sq-stack">
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/Legal/DOJ_Prosecution_And_Secrecy">DOJ Prosecution and Evidence Secrecy</a></p>
+    <p className="ck-4sq-text">The public record on the charges and evidence handling, plus the sealing questions commentators raise. Digital-forensics warrants were reportedly sealed well into 2026, limiting outside review.</p>
+    <a className="ck-4sq-btn" href="/Legal/DOJ_Prosecution_And_Secrecy">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-side">
+  <a className="ck-4sq-thumb" href="/court/overview"><img src="/img/evidence/fb14b85a283763fc0778887022c1800f900cd288c81b36603fb0a80dc7b62fc5.jpg" data-cid="QmRkRwe9cELH4Z5j9vs6hHkYxin1U7FHKWexRVJb8HXiXB" alt="This image is a digital screenshot of a news article from the WEAR News 3 website, viewed on a mobile device." loading="lazy" /></a>
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/court/overview">Court & Trial</a></p>
+    <p className="ck-4sq-text">State of Utah v. Tyler Robinson, case 251403576, is where the government&apos;s narrative meets adversarial testing &mdash; every court date, the day-by-day preliminary hearing transcripts, and the inconclusive ATF ballistics.</p>
+    <a className="ck-4sq-btn" href="/court/overview">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-side">
+  <a className="ck-4sq-thumb" href="/Medical/overview"><img src="/img/evidence/f78f3a3ede1a3bbfda3cfd42d80f52f48dc1aedb7cfa2f64f5afb598372c125f.jpg" data-cid="" alt="Visual Representation of Reported Injuries — anatomical chart marking, in red, the reported injury locations across the front and back torso, the neck, the internal chest, and two views of the brain." loading="lazy" /></a>
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/Medical/overview">Medical</a></p>
+    <p className="ck-4sq-text">Mechanism of injury either supports the state&apos;s account or dismantles it, and the report that would answer it is not public. This hub organises every reported fact, expert reading and labelled claim underneath that one question.</p>
+    <a className="ck-4sq-btn" href="/Medical/overview">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-stack">
+  <a className="ck-4sq-thumb" href="/Killer/overview"><img src="/img/evidence/2cc12ca473c24ae21c7bdc61ea68999c6cf66d095744089f448c16b6b55a0e87.jpg" data-cid="QmXPTRX9pgrnx1bKDLKetkN32v5hehYmz7zDDqXbv7c6u1" alt="This image is a screenshot of a social media post from a user named Zeb Boykin on X (formerly Twitter)." loading="lazy" /></a>
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/Killer/overview">Real Killer</a></p>
+    <p className="ck-4sq-text">The competing theories of who killed Charlie Kirk, laid out side by side rather than merged: foreign service, domestic agency, the charged man, patsies and distraction actors. Contested readings of the public record, not court findings.</p>
+    <a className="ck-4sq-btn" href="/Killer/overview">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+
+</div>
+
+<!-- CK_4SQ_SITEWIDE_END -->
+
 {/* CK_AUTHOR_CREDIT */}
 
 *This website's author is [@HolonCitizen](https://x.com/HolonCitizen) on X and [YouTube/@HolonCitizen](https://www.youtube.com/@HolonCitizen). Follow me there.*

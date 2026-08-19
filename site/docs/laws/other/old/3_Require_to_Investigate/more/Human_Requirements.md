@@ -21,6 +21,111 @@ Laws 1 and 2 force disclosure of existing records. This law forces agencies to a
 
 See also: [Law 1 Requirements](/laws/DoJ_FBI/more/Human_Requirements) | [Law 2 Requirements](/laws/US_Intel/more/Human_Requirements) (disclosure counterparts) | [Law 4 Requirements](/laws/Trusted_Investigations/more/Human_Requirements) (trusted oversight)
 
+<!-- CK_INTERESTING_HERE_START -->
+
+## Interesting In This Area
+
+* Disclosure and investigation are different demands, which is why [Law 3](/laws/other/old/Require_to_Investigate/Law_3_Require_to_Investigate) exists separately.
+* [The current requirements page](/laws/Require_to_Investigate/more/Human_Requirements) restates it against the expanded Schedule A.
+* [Laws 1 and 2](/laws/other/old/DoJ_FBI/more/Human_Requirements) force files; this one forces work.
+* [The audit](/laws/other/old/Require_to_Investigate/more/Output_Analysis) marks each demand MET with its section.
+
+<!-- CK_INTERESTING_HERE_END -->
+
+<!-- CK_INTERESTING_OTHER_START -->
+
+## Interesting In Other Areas
+
+* [U.S. intelligence holdings](/US_Intelligence/overview) sit outside the reach of ordinary criminal discovery.
+* [Signs of a cover-up](/US_Intelligence_Assisted/signs-of-cover-up) are catalogued apart from the statutory text.
+* [Sealing orders in 2026](/Legal/Evidence-Sealing-2026) kept filings off the public docket.
+* [Proof Intel Services](/Proof_Intel_Services/overview) collects the indicators these disclosure bills would test.
+
+<!-- CK_INTERESTING_OTHER_END -->
+
+<!-- CK_4SQ_SECTION_START -->
+
+## Other Pages In This Section
+
+<div className="ck-4sq">
+
+<div className="ck-4sq-card ck-4sq-stack">
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/laws/other/old/Require_to_Investigate/more/Notes_3_Require_to_Investigate">Notes: Law 3 - Require Investigation</a></p>
+    <p className="ck-4sq-text">Precedent research for Law 3, kept as first drafted. The Special Counsel regulations, the Church Committee and the Warren Commission all read as one warning: a mandated investigation can still arrive at a predetermined conclusion.</p>
+    <a className="ck-4sq-btn" href="/laws/other/old/Require_to_Investigate/more/Notes_3_Require_to_Investigate">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-stack">
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/laws/other/old/US_Intel/Law_2_US_Intel">Law 2: Charlie Kirk Investigation - Intelligence Services Disclosure Act</a></p>
+    <p className="ck-4sq-text">The archived earlier draft of the intelligence-community disclosure bill, back when Schedule A held 175 items. It already reached every element named in 50 U.S.C. 3003(4) &mdash; CIA, NSA, DIA, NRO, NGA, ODNI and the rest.</p>
+    <a className="ck-4sq-btn" href="/laws/other/old/US_Intel/Law_2_US_Intel">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-side">
+  <a className="ck-4sq-thumb" href="/laws/DoJ_FBI/more/Human_Requirements"><img src="/img/evidence/c45cecc9e1589d0f74ffadc63096080ad11a6168b62fdf35cf20f618ff68fc17.jpg" data-cid="QmbKyFtYHb2NxcTpufHuRFeG3pQZMJVetxzaywiw3LdJuA" alt="This is a high-resolution, flat-lay digital scan of a printed legal document or official complaint written in English, dated November 20, 2019." loading="lazy" /></a>
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/laws/DoJ_FBI/more/Human_Requirements">Human Requirements: Law 1 - DoJ/FBI Forced Disclosure</a></p>
+    <p className="ck-4sq-text">The plain-English demand behind Law 1, written before any drafting: every DOJ, FBI, ATF and local file released, any employee free to send records in, and retaliation made a crime. The statute is then audited line by line against this list.</p>
+    <a className="ck-4sq-btn" href="/laws/DoJ_FBI/more/Human_Requirements">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-stack">
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/laws/Require_to_Investigate/more/Output_Analysis">Output Analysis: Law 3 - Require Investigation</a></p>
+    <p className="ck-4sq-text">The audit of Law 3 against the citizen requirements: a mandated investigation with its own team, budget and timeline, and a parallel intelligence assessment directed by the DNI. Every requirement is checked against the section that carries it.</p>
+    <a className="ck-4sq-btn" href="/laws/Require_to_Investigate/more/Output_Analysis">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+
+</div>
+
+<!-- CK_4SQ_SECTION_END -->
+
+<!-- CK_4SQ_SITEWIDE_START -->
+
+## Elsewhere In The Investigation
+
+<div className="ck-4sq">
+
+<div className="ck-4sq-card ck-4sq-stack">
+  <a className="ck-4sq-thumb" href="/GoogleSearches/overview"><img src="/img/evidence/81af02754596407a3c3bbdced4e10a0c1cb813684c42f9ddb5654092e1f6e815.jpg" data-cid="QmS3fPmb3WAEkn3THqiBf7iuQGRr1fEzd3Mdy1nLfmb1tA" alt="This is a digital screenshot of a mobile-formatted web page from the news site &quot;hoodline.com&quot;." loading="lazy" /></a>
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/GoogleSearches/overview">Google Searches</a></p>
+    <p className="ck-4sq-text">The hub for every claimed pre-September-10 search pattern, split by geography and by date. It carries the fight over method as well as the data &mdash; investigators publishing screenshots on one side, statisticians calling it sampled noise on the other.</p>
+    <a className="ck-4sq-btn" href="/GoogleSearches/overview">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-side">
+  <a className="ck-4sq-thumb" href="/Tyler_Robinson/overview"><img src="/img/evidence/f78f3a3ede1a3bbfda3cfd42d80f52f48dc1aedb7cfa2f64f5afb598372c125f.jpg" data-cid="" alt="Visual Representation of Reported Injuries — anatomical chart marking, in red, the reported injury locations across the front and back torso, the neck, the internal chest, and two views of the brain." loading="lazy" /></a>
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/Tyler_Robinson/overview">Tyler Robinson</a></p>
+    <p className="ck-4sq-text">The hub for the official suspect &mdash; identity mismatches, surrender timeline, the messages, ballistics, family, trial, and the patsy theories. Charged, not convicted.</p>
+    <a className="ck-4sq-btn" href="/Tyler_Robinson/overview">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-stack">
+  <a className="ck-4sq-thumb" href="/TPUSA/overview"><img src="/img/evidence/094e2f88c480386133a87a76b1342a3f77906b4c47afc80641e4a8e4a63e9915.jpg" data-cid="QmP3QMMCrAeAYE9da2ugxYaHSLbaiAhe2icToLNVz2BuQD" alt="This is a digital image featuring a graphic presentation with a light olive-green background, compiled to highlight military connections of certain Christian figures." loading="lazy" /></a>
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/TPUSA/overview">TPUSA (Turning Point USA)</a></p>
+    <p className="ck-4sq-text">The organisation behind the tour: its structure, donors, security arrangements and internal politics in Charlie Kirk&apos;s final weeks. The page does not claim TPUSA is responsible for anything.</p>
+    <a className="ck-4sq-btn" href="/TPUSA/overview">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-side">
+  <a className="ck-4sq-thumb" href="/After/overview"><img src="/img/evidence/4eb7c20273532f8047faa83e27da57409b1cceca326d9e4d58449a2ec4c74664.jpg" data-cid="QmPi4U99UmsRKdNpwNZRLgfMBnoV1H9yNffJ4vEPZccHJR" alt="Google Trends screenshot: search term 645 W 925 S, region filter Israel, past 5 years, flat line with a single spike to 100 in April 2022" loading="lazy" /></a>
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/After/overview">After Events</a></p>
+    <p className="ck-4sq-text">Everything downstream of 12:23 PM on September 10 &mdash; surrender, paving, gag orders, resignations, visa enforcement, and the residential block north of campus. Start here to read the aftermath as one connected thread rather than seven separate fights.</p>
+    <a className="ck-4sq-btn" href="/After/overview">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+
+</div>
+
+<!-- CK_4SQ_SITEWIDE_END -->
+
 {/* CK_AUTHOR_CREDIT */}
 
 *This website's author is [@HolonCitizen](https://x.com/HolonCitizen) on X and [YouTube/@HolonCitizen](https://www.youtube.com/@HolonCitizen). Follow me there.*

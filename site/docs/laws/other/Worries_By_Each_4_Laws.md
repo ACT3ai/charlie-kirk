@@ -324,6 +324,111 @@ Parallel media clips recirculated by accounts such as **[@FurkanGozukara](/Influ
 
 Related public pages: [Fix overview](/Fix/overview), [laws landing](/laws), Discovery, [explain all four laws](/laws/explain/all/overview).
 
+<!-- CK_INTERESTING_HERE_START -->
+
+## Interesting In This Area
+
+* [Every prior disclosure law](/laws/other/old/US_Intel/more/Notes_2_US_Intel) failed hardest on the same category of records.
+* [The charter](/laws/other/List_Of_Laws) is what these threat scenarios are written to protect.
+* [Attorney review](/laws/other/analysis/Improve) reaches the Appropriations Clause problem from the opposite direction.
+* [Law 4's Third Party Rule override](/laws/Trusted_Investigations/Law_4_Trusted_Investigations) is the clause the others still lack.
+
+<!-- CK_INTERESTING_HERE_END -->
+
+<!-- CK_INTERESTING_OTHER_START -->
+
+## Interesting In Other Areas
+
+* [Brian Harpole's background](/Security_Team/brian-harpole) became a named disclosure item in all four bills.
+* The detail was private; [the government response](/Law_Enforcement/overview) began only afterward.
+* [Roof access](/Roof/overview) was reportedly trivial, with thin camera coverage.
+* [Killer](/Killer/overview) collects the alternative-perpetrator threads these bills would force open.
+
+<!-- CK_INTERESTING_OTHER_END -->
+
+<!-- CK_4SQ_SECTION_START -->
+
+## Other Pages In This Section
+
+<div className="ck-4sq">
+
+<div className="ck-4sq-card ck-4sq-stack">
+  <a className="ck-4sq-thumb" href="/laws/other/analysis/Challenges"><img src="/img/evidence/781289454f0c0fe4330607de536c9f1579c6ddf0e0d129419cc5507661c91b58.jpg" data-cid="QmT4Curwh5WArDih672Y17mXCnjixgK5ZFjWMm5yC9N61g" alt="This is a digital screenshot of a desktop or tablet web browser displaying a Google Maps satellite view of Tuba City Airport in Arizona, alongside an informational side panel." loading="lazy" /></a>
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/laws/other/analysis/Challenges">Factual Challenges — REMAINING UNFIXED ITEMS</a></p>
+    <p className="ck-4sq-text">The unfixed column of the fact-check. Nine of ten challenges were resolved and moved out; this page keeps the one that was not, a disclosure-item count that still has to be harmonised across the documents.</p>
+    <a className="ck-4sq-btn" href="/laws/other/analysis/Challenges">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-stack">
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/laws/other/analysis/Improve">Attorney Analysis: Improvements for the Four Charlie Kirk Disclosure Laws</a></p>
+    <p className="ck-4sq-text">An attorney&apos;s list of what would get these four bills struck down: the Schedule A item count differs across the drafts &mdash; 213, 214, 208, 208 &mdash; and naming seventeen private citizens as investigators runs straight at the Appointments Clause. It also flags the one authority no draft yet carries: an independent exhumation.</p>
+    <a className="ck-4sq-btn" href="/laws/other/analysis/Improve">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-stack">
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/laws/other/old/Require_to_Investigate/Law_3_Require_to_Investigate">Law 3: Charlie Kirk Investigation - Mandatory Investigation Act</a></p>
+    <p className="ck-4sq-text">The archived earlier draft of Law 3, written while Schedule A still held 175 items. Read it beside <a href="/laws/Require_to_Investigate/Law_3_Require_to_Investigate">the current text</a> to see exactly what the attorney reviews changed.</p>
+    <a className="ck-4sq-btn" href="/laws/other/old/Require_to_Investigate/Law_3_Require_to_Investigate">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-stack">
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/laws/other/old/Trusted_Investigations/more/Notes_4_Trusted_Investigations">Notes: Law 4 - Trusted Investigations</a></p>
+    <p className="ck-4sq-text">The precedent file for Law 4 as first assembled &mdash; special counsels, the 9/11 Commission, congressional clearance authority. The 9/11 Commission is the load-bearing example: private citizens holding subpoena power and classified access.</p>
+    <a className="ck-4sq-btn" href="/laws/other/old/Trusted_Investigations/more/Notes_4_Trusted_Investigations">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+
+</div>
+
+<!-- CK_4SQ_SECTION_END -->
+
+<!-- CK_4SQ_SITEWIDE_START -->
+
+## Elsewhere In The Investigation
+
+<div className="ck-4sq">
+
+<div className="ck-4sq-card ck-4sq-side">
+  <a className="ck-4sq-thumb" href="/People/candace-owens"><img src="/img/evidence/18c908ba2b19a7fce6f085985aba61743edf36ab19ce345385a61c3bbf75ba23.webp" data-cid="Qmc78fKjeM8uk9xUGzWwQHowDtdFjfcWkYqtv1cLjfTAZh" alt="This is a mobile phone screenshot of a social media feed, specifically the platform X (formerly Twitter), displaying a post by user &quot;@Kahlissee&quot; featuring a video of political…" loading="lazy" /></a>
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/People/candace-owens">Candace Owens</a></p>
+    <p className="ck-4sq-text">She called Charlie her best friend and brother, then ran the largest independent probe of his death. She also published the texts, the tipline and the SUV photographs the rest of the case now argues over.</p>
+    <a className="ck-4sq-btn" href="/People/candace-owens">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-stack">
+  <a className="ck-4sq-thumb" href="/Influencers/overview"><img src="/img/video_posters/f46df7647fcab0835a553f989c01cd909cf5fee46a42346fa84787078f388754.jpg" data-cid="" alt="Video still from Influencers" loading="lazy" /></a>
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/Influencers/overview">Influencers</a></p>
+    <p className="ck-4sq-text">The distribution layer of the investigation &mdash; who said what, and where. Podcast hosts, X researchers and YouTube channels reaching hundreds of millions, indexed so a reader can find the GRAMA breakthrough or the ballistics deep-dive without hunting.</p>
+    <a className="ck-4sq-btn" href="/Influencers/overview">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-stack">
+  <a className="ck-4sq-thumb" href="/Media/overview"><img src="/img/video_posters/f46df7647fcab0835a553f989c01cd909cf5fee46a42346fa84787078f388754.jpg" data-cid="" alt="Video still from Media" loading="lazy" /></a>
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/Media/overview">Media</a></p>
+    <p className="ck-4sq-text">Coverage settled on one story of how Charlie died within hours and has barely revisited it since. This section is the record of that settling &mdash; the wires, the live blogs, the panels, and what they stopped asking.</p>
+    <a className="ck-4sq-btn" href="/Media/overview">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-side">
+  <a className="ck-4sq-thumb" href="/Censorship/overview"><img src="/img/evidence/2ca9b5e9741057b39c897245286fc3ce2e75e5bc0b5a9f7e6dc433d62b6ec7d6.jpg" data-cid="QmdYVLQ5wdG22uku14snLr3rPxFBvqLXFvcAuUsVZig1cx" alt="This is a digital screenshot of a post on the social media platform X (formerly Twitter) by the user &quot;Shadowed News&quot; (@shadowed_news)." loading="lazy" /></a>
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/Censorship/overview">Censorship</a></p>
+    <p className="ck-4sq-text">Locks, shadowbans and limited-visibility warnings for engaging the wrong posts, alongside a witness reportedly told to delete his own footage. Suppression does not prove a cover-up, but it does decide what survives online.</p>
+    <a className="ck-4sq-btn" href="/Censorship/overview">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+
+</div>
+
+<!-- CK_4SQ_SITEWIDE_END -->
+
 {/* CK_AUTHOR_CREDIT */}
 
 *This website's author is [@HolonCitizen](https://x.com/HolonCitizen) on X and [YouTube/@HolonCitizen](https://www.youtube.com/@HolonCitizen). Follow me there.*

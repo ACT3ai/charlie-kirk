@@ -62,6 +62,111 @@
 3. Coordinate with Law 4 for Trusted Investigator access to classified intelligence
 4. Ensure coordination with Law 1 so both law enforcement and intelligence disclosures are cross-referenced
 
+<!-- CK_INTERESTING_HERE_START -->
+
+## Interesting In This Area
+
+* Section 1(b)(8) is the catch-all built to cover whatever [the seven categories](/laws/other/old/US_Intel/Law_2_US_Intel) missed.
+* Enumeration and catch-all apply concurrently, so [the list](/laws/other/old/List_Of_Laws) never becomes a ceiling.
+* [The current audit](/laws/US_Intel/more/Output_Analysis) runs the same test on the expanded text.
+* [The archived requirements](/laws/other/old/US_Intel/more/Human_Requirements) are what each MET line answers.
+
+<!-- CK_INTERESTING_HERE_END -->
+
+<!-- CK_INTERESTING_OTHER_START -->
+
+## Interesting In Other Areas
+
+* Crews [replaced the grass with pavers](/Law_Enforcement/crime-scene-handling) within days of the killing.
+* No autopsy is on record despite Utah law, per [the medical section](/Medical/overview).
+* [The exploding-mic theory](/Mic/overview) rests on a May 2025 Navy demolition-charge contract.
+* Sixteen people died when [the AES plant exploded](/US_Intelligence_Assisted/aes-factory-explosion) five weeks later.
+
+<!-- CK_INTERESTING_OTHER_END -->
+
+<!-- CK_4SQ_SECTION_START -->
+
+## Other Pages In This Section
+
+<div className="ck-4sq">
+
+<div className="ck-4sq-card ck-4sq-stack">
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/laws">Charlie Kirk Assassination — Forced Disclosure</a></p>
+    <p className="ck-4sq-text">The section hub for all four proposed federal laws, plus the court discovery list and the exploding-microphone disclosure items. Full statutory text, not summaries.</p>
+    <a className="ck-4sq-btn" href="/laws">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-side">
+  <a className="ck-4sq-thumb" href="/laws/Require_to_Investigate/more/Human_Requirements"><img src="/img/evidence/14f90a40f5d68c452073308d5374fd2d50adcd3ffe0dcbe70a39c967191e9b8e.jpg" data-cid="QmdhWqrdvZMxknDa6fUm4yw5AJQbovKdxoweEwaRGNWcj1" alt="This is a high-resolution photograph or digital scan of a printed document featuring four paragraphs of English text on a white page." loading="lazy" /></a>
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/laws/Require_to_Investigate/more/Human_Requirements">Human Requirements: Law 3 - Require Investigation</a></p>
+    <p className="ck-4sq-text">The demand behind Law 3 is different from disclosure. The concern is not only that files are withheld but that the case is reportedly not being worked, so the requirement is stated plainly: the FBI and the intelligence services must investigate.</p>
+    <a className="ck-4sq-btn" href="/laws/Require_to_Investigate/more/Human_Requirements">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-stack">
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/laws/Trusted_Investigations/more/Output_Analysis">Output Analysis: Law 4 - Trusted Investigations</a></p>
+    <p className="ck-4sq-text">The audit of Law 4: two teams per designated investigator, six in all, each with sole authority over who joins. Every citizen requirement is checked against the section that delivers it.</p>
+    <a className="ck-4sq-btn" href="/laws/Trusted_Investigations/more/Output_Analysis">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-stack">
+  <a className="ck-4sq-thumb" href="/laws/explain/all/laws_svg/needs_law_2"><img src="/img/evidence/b056baca5b4912ef046059e1d84f6d7774e61aeaa406aabec343166f4509af2a.jpg" data-cid="QmchoXNqJja8XLR3nZ6CLpb98RpryVMEASC1BuMBkNkPY5" alt="This image is a forensic evidence photograph or document slide presenting physical evidence related to an investigation by the Bureau of Alcohol, Tobacco, Firearms and Explosives…" loading="lazy" /></a>
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/laws/explain/all/laws_svg/needs_law_2">SVG Slide Requirements — Law #2</a></p>
+    <p className="ck-4sq-text">The slide specification for Law 2, matched to the Law 1 palette so the four read as one set. The frame has a single job: make plain that no agency file bearing on how Charlie Kirk was killed stays inside the building.</p>
+    <a className="ck-4sq-btn" href="/laws/explain/all/laws_svg/needs_law_2">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+
+</div>
+
+<!-- CK_4SQ_SECTION_END -->
+
+<!-- CK_4SQ_SITEWIDE_START -->
+
+## Elsewhere In The Investigation
+
+<div className="ck-4sq">
+
+<div className="ck-4sq-card ck-4sq-stack">
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/US_Intelligence/joe-kent">Joe Kent</a></p>
+    <p className="ck-4sq-text">The NCTC director who says on the record that his parallel foreign-ties review was halted before its leads were exhausted. NCTC stops only once foreign ties are ruled out &mdash; and by his account they never were.</p>
+    <a className="ck-4sq-btn" href="/US_Intelligence/joe-kent">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-side">
+  <a className="ck-4sq-thumb" href="/Israel/overview"><img src="/img/evidence/dc07b5bd5c4a7214a003b71c7905fad6b32e888da22f9b08f39f18e65095d68d.jpg" data-cid="QmTAahP39Qq6RCML16Xuk2LYrukQEmhPUg5XrYw1LxN8Wu" alt="Charlie Kirk Israel-related timeline graphic covering July through September 10, 2025, with each entry labeled confirmed, evidenced, disputed, or unverified" loading="lazy" /></a>
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/Israel/overview">Israel</a></p>
+    <p className="ck-4sq-text">A dated timeline of Israel-related friction in Charlie&apos;s last months, with every entry labelled confirmed, evidenced, disputed or unverified. That labelling is the point; this is the thread most often argued without it.</p>
+    <a className="ck-4sq-btn" href="/Israel/overview">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-side">
+  <a className="ck-4sq-thumb" href="/Mic/AES"><img src="/img/evidence/e2efb55230be9ff19e9914eced77d5433d4d3fb7cafc0f086101609a4cf03b12.jpg" data-cid="QmTtc9Z8YHqRnDVHxaR93Qaah76xxfPSLSzkDpPPz4nUh6" alt="This image is a digital screenshot of a business profile page containing official registration details for a company named &quot;FIREBIRD ALARM SYSTEMS INC.&quot; retrieved from an Arizona…" loading="lazy" /></a>
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/Mic/AES">AES — Accurate Energetic Systems (Company Profile)</a></p>
+    <p className="ck-4sq-text">A Tennessee explosives maker whose federal contract list reportedly includes miniature XS demolition devices, anti-personnel. A paralegal pulled it from USASpending.gov; the plant was destroyed about a month after September 10.</p>
+    <a className="ck-4sq-btn" href="/Mic/AES">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+<div className="ck-4sq-card ck-4sq-stack">
+  <a className="ck-4sq-thumb" href="/Planes/overview"><img src="/img/video_posters/e6cc83c641a21ba3e8c8ca0c69e2eaa047a08507de1b0a895eaedcf3dd7579a3.jpg" data-cid="" alt="Video still from Planes" loading="lazy" /></a>
+  <div className="ck-4sq-body">
+    <p className="ck-4sq-title"><a href="/Planes/overview">Planes</a></p>
+    <p className="ck-4sq-text">Every tail number the investigation touches in one place &mdash; the Egypt-registered Falcon parked at Provo, the ISR passes over campus, the private jet out an hour afterwards. ADS-B is public; intent is not.</p>
+    <a className="ck-4sq-btn" href="/Planes/overview">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
+  </div>
+</div>
+
+</div>
+
+<!-- CK_4SQ_SITEWIDE_END -->
+
 {/* CK_AUTHOR_CREDIT */}
 
 *This website's author is [@HolonCitizen](https://x.com/HolonCitizen) on X and [YouTube/@HolonCitizen](https://www.youtube.com/@HolonCitizen). Follow me there.*
