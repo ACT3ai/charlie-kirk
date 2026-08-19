@@ -21,7 +21,7 @@ CHECK_PY is file {WORK_DIR}/verify_blocks.py
 
 AGENT_COUNT is 12
 EFFORT is high
-BATCH_SIZE is 20
+BATCH_SIZE is 35        (was 20; agents used well under half their context at 20)
 
 MAX_SENTENCE_WORDS is 17
 SENTENCES_PER_INTERESTING_BLOCK is 4
@@ -261,6 +261,11 @@ Stage 0 has been run and its output is committed to {WORK_DIR}. Later runs reuse
 it; rebuild it only when the site has changed materially.
 
   build_card_index.py   builds card_index.csv, routes.txt, ledger.csv, shape_cache.json
+                        Rebuild is idempotent: it carries the teaser column and
+                        the ledger status/agent columns forward. That merge MUST
+                        happen before the first file is written - when it ran
+                        after, a rebuild silently blanked all 892 teasers and the
+                        next wave started authoring competing ones.
   verify_blocks.py      the Stage 7 verifier, run per file
   merge_wave.py         the Stage 8 coordinator merge - reads the SITE as ground
                         truth rather than trusting an agent's report, rewrites the
@@ -573,6 +578,16 @@ checker covers:
 
   Exit 0 is clean. If Large File Bridge has re-appended per-file image lines to
   {ROOT_DIR}/.gitignore, delete those lines. Never work around it with git add -f.
+
+  KNOWN PRE-EXISTING FAILURE, not caused by this prompt and not to be "fixed" by
+  it: Panguitch_Timeline_Infographic.jpg, sha 660c477be659. {IMAGES_YAML} carries
+  TWO entries for this picture - the 9 MB original under images/ (sha 660c...) and
+  a 929 KB compressed copy already served from
+  site/internals/static/img/Panguitch_Timeline_Infographic.jpg under a different
+  sha. The audit keys on sha, so it reports the original as NOT SERVED. The
+  original is on no page and is referenced by nothing. This belongs to the image
+  pipeline, not to the four-squares pass. Report it, leave it alone, and read the
+  audit as clean when it is the only failure.
 
 * No page carries a duplicate block. Each of the four START markers appears at
   most once per file, and each has its matching END.

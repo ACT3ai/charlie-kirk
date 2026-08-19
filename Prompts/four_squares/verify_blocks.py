@@ -81,7 +81,7 @@ def check(path):
                 fails.append(f"{b}: {n}-word sentence: {plain.strip()[:60]}")
 
     # 6. embedded images are tracked and not ignored
-    for src in set(re.findall(r'src="(/img/evidence/[^"]+)"', ours)):
+    for src in set(re.findall(r'src="(/img/(?:evidence|video_posters)/[^"]+)"', ours)):
         fp = "site/internals/static/img/" + src.split("/img/", 1)[1]
         if subprocess.run(["git", "ls-files", "--error-unmatch", fp], cwd=ROOT,
                           capture_output=True).returncode != 0:

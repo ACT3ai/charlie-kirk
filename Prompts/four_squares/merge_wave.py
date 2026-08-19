@@ -8,7 +8,8 @@ from pathlib import Path
 
 ROOT = Path(os.path.expanduser("~/BGit/Bryan_git/charlie-kirk"))
 WORK = ROOT / "prompts/four_squares"
-LABEL = sys.argv[1] if len(sys.argv) > 1 else "wave"
+LABEL = next((a for a in sys.argv[1:] if not a.startswith("-")), "wave")
+BATCH = int(os.environ.get("FSQ_BATCH", "20"))
 BLOCKS = [("CK_INTERESTING_HERE", "H"), ("CK_INTERESTING_OTHER", "O"),
           ("CK_4SQ_SECTION", "S"), ("CK_4SQ_SITEWIDE", "W")]
 
@@ -73,8 +74,15 @@ print(f"csv rows orphan : {len(orphans)}  (REVIEW - file_path no longer on disk)
 (WORK / "csv_missing_rows.txt").write_text("\n".join(sorted(missing_rows)) + "\n")
 (WORK / "csv_orphan_rows.txt").write_text("\n".join(sorted(orphans)) + "\n")
 
-# next wave batches
+# Next wave batches. ONLY when explicitly asked: agents read their batch file
+# while they run, so re-dealing mid-wave silently changes the list under them.
+# An agent that expands $(cat batches/agent_N.txt) after a re-deal verifies the
+# wrong files. Deal only between waves, never during one.
+if "--deal" not in sys.argv:
+    print("\n(batches NOT re-dealt - pass --deal between waves)")
+    raise SystemExit(0)
+
 for a in range(1, 13):
     t = sorted([r for r in led if r["agent"] == str(a) and r["status"] != "DONE"],
                key=lambda r: (r["level2"], r["file_path"]))
-    (WORK / f"batches/agent_{a}.txt").write_text("\n".join(x["file_path"] for x in t[:20]) + "\n")
+    (WORK / f"batches/agent_{a}.txt").write_text("\n".join(x["file_path"] for x in t[:BATCH]) + "\n")

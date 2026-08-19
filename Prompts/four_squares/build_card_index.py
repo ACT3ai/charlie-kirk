@@ -230,14 +230,31 @@ def find_media(body):
             return got
     return "none", "", "", "", "none", "no"
 
-ANCHORS = [
-    ("CK_AUTHOR_CREDIT", lambda t: "CK_AUTHOR_CREDIT" in t),
-    ("H2_INTERESTING", lambda t: re.search(r"^## Interesting\s*$", t, re.M) is not None),
-    ("H2_RELATED_AREAS", lambda t: re.search(r"^## Related Areas\s*$", t, re.M) is not None),
-    ("CK_PLACED_IMAGES", lambda t: "CK_PLACED_IMAGES_START" in t),
-    ("H2_SOURCES", lambda t: re.search(r"^## (Sources|Fix Laws|The Laws)\s*$", t, re.M) is not None),
-    ("EOF", lambda t: True),
+# The anchor is the EARLIEST of these in the file, by character position - not
+# the first entry of a priority list. On 116 pages the author credit sits BELOW
+# the page's own "## Interesting" or "## Related Areas", and priority order put
+# the new blocks underneath those sections instead of above them, which is the
+# opposite of the intended reading order.
+ANCHOR_FINDERS = [
+    ("CK_AUTHOR_CREDIT", lambda t: t.find("CK_AUTHOR_CREDIT")),
+    ("H2_INTERESTING", lambda t: (lambda m: m.start() if m else -1)(
+        re.search(r"^## Interesting\s*$", t, re.M))),
+    ("H2_RELATED_AREAS", lambda t: (lambda m: m.start() if m else -1)(
+        re.search(r"^## Related Areas\s*$", t, re.M))),
+    ("CK_PLACED_IMAGES", lambda t: t.find("CK_PLACED_IMAGES_START")),
+    ("H2_SOURCES", lambda t: (lambda m: m.start() if m else -1)(
+        re.search(r"^## (Sources|Fix Laws|The Laws)\s*$", t, re.M))),
 ]
+
+
+def pick_anchor(t):
+    """Strip our own blocks first, so a previous run's output is not an anchor."""
+    clean = re.sub(r"(?:\{/\*|<!--)\s*CK_(?:INTERESTING_HERE|INTERESTING_OTHER|4SQ_SECTION|4SQ_SITEWIDE)_START"
+                   r".*?CK_(?:INTERESTING_HERE|INTERESTING_OTHER|4SQ_SECTION|4SQ_SITEWIDE)_END\s*(?:\*/\}|-->)",
+                   "", t, flags=re.S)
+    found = [(name, fn(clean)) for name, fn in ANCHOR_FINDERS]
+    found = [(n, i) for n, i in found if i != -1]
+    return min(found, key=lambda x: x[1])[0] if found else "EOF"
 
 # ---------- pages.csv lookup ----------
 pages_meta = {}
@@ -294,7 +311,11 @@ for dirpath, dirnames, filenames in os.walk(DOCS):
             m = re.search(r"^#\s+(.+)$", body, re.M)
             title = m.group(1).strip() if m else base.replace("-", " ").replace("_", " ")
         kind, src, cid, alt, shape, banned = find_media(body)
-        anchor = next(name for name, test in ANCHORS if test(text))
+        # A video hero borrows a poster frame, which carries no alt of its own.
+        # An empty alt on a card thumb is an accessibility hole, so name the page.
+        if kind == "video" and not alt.strip():
+            alt = "Video still from " + re.sub(r"\s+", " ", title).strip()
+        anchor = pick_anchor(text)
         rows.append({
             "url_path": url,
             "file_path": rel,
@@ -327,12 +348,6 @@ for top in SKIP_TOP:
         for p in d.rglob("*.md*"):
             routes.add(url_for(str(p.relative_to(ROOT))))
 
-with open(WORK / "card_index.csv", "w", newline="", encoding="utf-8") as fh:
-    w = csv.DictWriter(fh, fieldnames=list(rows[0].keys()), quoting=csv.QUOTE_MINIMAL)
-    w.writeheader(); w.writerows(rows)
-
-(WORK / "routes.txt").write_text("\n".join(sorted(routes)) + "\n")
-
 prev_led, prev_teaser = {}, {}
 _lp, _cp = WORK / "ledger.csv", WORK / "card_index.csv"
 if _lp.exists():
@@ -348,6 +363,12 @@ for r in ledger:
     old = prev_led.get(r["file_path"])
     if old:
         r.update({k: old[k] for k in ("status", "blocks", "agent", "updated") if old.get(k)})
+
+with open(WORK / "card_index.csv", "w", newline="", encoding="utf-8") as fh:
+    w = csv.DictWriter(fh, fieldnames=list(rows[0].keys()), quoting=csv.QUOTE_MINIMAL)
+    w.writeheader(); w.writerows(rows)
+
+(WORK / "routes.txt").write_text("\n".join(sorted(routes)) + "\n")
 
 with open(WORK / "ledger.csv", "w", newline="", encoding="utf-8") as fh:
     w = csv.DictWriter(fh, fieldnames=["file_path", "level2", "status", "blocks", "agent", "updated"])

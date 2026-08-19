@@ -87,6 +87,11 @@ HARD LIMITS
     The coordinator is the single writer for those. Return your data instead.
   * Never touch .gitignore. Never git add -f. Never commit.
 
+BATCH FILE - read prompts/four_squares/batches/agent_N.txt ONCE, at the start, and
+work from that list. Never re-expand it later in the run (no $(cat ...) in your
+verifier command); the coordinator may re-deal batch files between waves and you
+would then verify the wrong files. Pass your own explicit file list to the verifier.
+
 VERIFY, THEN REPORT
   python3 prompts/four_squares/verify_blocks.py <every file you edited>
   Must print "0 failing". Then report back, compactly:

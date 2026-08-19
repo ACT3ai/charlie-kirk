@@ -15,6 +15,7 @@
 # NOTHING IS EVER PINNED. A player is emitted only for a CID that is actually
 # pinned on this node (verified at run time); everything else gets its full page
 # with a poster and an honest media-pending note.
+import base64
 import os, re, sys, csv, json, html, subprocess, unicodedata, shutil
 from concurrent.futures import ThreadPoolExecutor
 
@@ -368,12 +369,33 @@ PINNED = set(l.split()[0] for l in out.splitlines() if l.strip()) if rc == 0 els
 print(f'  {len(PINNED)} recursive pins on the node', flush=True)
 
 B32 = {}
+_B58 = '123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz'
+
 def base32(cid):
+    """CIDv0/v1 -> CIDv1 base32, the form the subdomain gateways require.
+
+    Pure Python on purpose. This used to shell out to `ipfs cid base32`, which
+    returned '' whenever the daemon/CLI was missing - and an empty b32 silently
+    dropped the only working <source>, shipping a dead player. No external
+    dependency now, so it cannot degrade that way."""
     if cid in B32:
         return B32[cid]
-    rc, o, _ = run([IPFS, 'cid', 'base32', cid], timeout=20)
-    B32[cid] = o if rc == 0 and o else ''
-    return B32[cid]
+    out = ''
+    try:
+        c = cid.strip()
+        if c.startswith('Qm'):                      # CIDv0, base58btc multihash
+            n = 0
+            for ch in c:
+                n = n * 58 + _B58.index(ch)
+            mh = n.to_bytes((n.bit_length() + 7) // 8, 'big')
+            mh = b'\x00' * (len(c) - len(c.lstrip('1'))) + mh
+            out = 'b' + base64.b32encode(b'\x01\x70' + mh).decode().lower().rstrip('=')
+        elif c.startswith('b'):                     # already CIDv1 base32
+            out = c
+    except Exception:
+        out = ''
+    B32[cid] = out
+    return out
 
 # -------------------------------------------------- probe + posters (parallel)
 os.makedirs(POSTERS, exist_ok=True)
@@ -508,12 +530,20 @@ def player_block(r):
     if r['assumed_ratio'] and r['mode'] == 'ipfs':
         ratio_note = '\n{/* aspect ratio assumed 16:9 - no local copy to measure */}'
     if r['mode'] == 'ipfs':
+        # Subdomain gateways ONLY. The path form - ipfs.io/ipfs/<cid> and
+        # dweb.link/ipfs/<cid> - returns 403 to any request carrying a browser
+        # User-Agent and a third-party Referer, which is every real visitor.
+        # Verified 2026-08-19: path form 403, subdomain form 206 video/mp4.
         b32 = base32(cid)
-        alt = ('\n    <source src="https://%s.ipfs.dweb.link/" type="video/mp4" />' % b32) if b32 else ''
+        if b32:
+            srcs = (f'    <source src="https://{b32}.ipfs.dweb.link/" type="video/mp4" />\n'
+                    f'    <source src="https://{b32}.ipfs.w3s.link/" type="video/mp4" />\n')
+        else:
+            srcs = f'    {{/* no base32 for CID {cid} - no playable source emitted */}}\n'
         return (f'{ratio_note}\n<div className="ck-video-wrap {wrap_mod}">\n'
                 f'  <video className="ck-video-media" controls preload="metadata"'
                 + (f' poster="{poster}"' if poster else '') + '>\n'
-                f'    <source src="https://ipfs.io/ipfs/{cid}" type="video/mp4" />{alt}\n'
+                + srcs +
                 '    Your browser does not support the video tag.\n'
                 '  </video>\n</div>\n')
     if r['mode'] == 'thirdparty':
