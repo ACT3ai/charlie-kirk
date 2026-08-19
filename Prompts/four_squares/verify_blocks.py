@@ -44,8 +44,6 @@ def check(path):
             fails.append(f"HTML comment marker in .mdx for {b}")
         if ext == "md" and re.search(r"\{/\*\s*" + b, text):
             fails.append(f"JSX comment marker in .md for {b}")
-    if ext == "md" and re.search(r"className=", ours):
-        fails.append("JSX card markup emitted into a .md page")
 
     # 3. links resolve
     for url in set(re.findall(r'href="(/[^"#?]*)"', ours) + re.findall(r"\]\((/[^)\s#?]*)\)", ours)):
@@ -95,16 +93,13 @@ def check(path):
 
 
 def mdx_compile(files):
-    files = [f for f in files if f.endswith(".mdx")]
+    """Both .md and .mdx go through MDX in Docusaurus 3.10 (markdown.format
+    defaults to 'mdx'), so a brace bug in a .md page breaks the build just the
+    same. Compile both, through the same plugin chain the site uses."""
+    files = [f for f in files if f.endswith((".md", ".mdx"))]
     if not files:
         return {}
-    script = r"""
-import('@mdx-js/mdx').then(async m=>{const fs=require('fs');
-  for (const f of process.argv.slice(1)) {
-    let s=fs.readFileSync(f,'utf8').replace(/^---\n[\s\S]*?\n---\n/,'');
-    try { await m.compile(s) } catch(e){ console.log('FAIL\t'+f+'\t'+String(e.message).split('\n')[0]) } }
-})"""
-    out = subprocess.run(["node", "-e", script] + files, cwd=ROOT / "site",
+    out = subprocess.run(["node", "./_ck_mdxcheck.mjs"] + files, cwd=ROOT / "site",
                          capture_output=True, text=True).stdout
     bad = {}
     for line in out.splitlines():

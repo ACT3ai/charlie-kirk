@@ -15,6 +15,26 @@ WORK.mkdir(parents=True, exist_ok=True)
 SKIP_TOP = {"Photos", "Videos"}
 SKIP_BASENAMES = {"CLAUDE.md"}
 
+# The docs plugin's own exclude list in site/docusaurus.config.ts is the
+# authority on what is a published page. Editing a file it excludes is wasted
+# work: the page does not exist for any visitor. Mirrored here.
+#   "**/_*.{js,jsx,ts,tsx,md,mdx}"   underscore-prefixed files
+#   "**/_*/**"                        anything under an underscore directory
+#   "**/prompts/**", "**/CLAUDE.md", "**/p_*.{md,mdx}"
+import fnmatch
+
+
+def excluded_by_site(rel_from_docs: str) -> bool:
+    parts = rel_from_docs.split("/")
+    base = parts[-1]
+    if any(seg.startswith("_") for seg in parts[:-1]):
+        return True
+    if base.startswith("_") or base.startswith("p_"):
+        return True
+    if base == "CLAUDE.md" or "prompts" in parts[:-1]:
+        return True
+    return False
+
 # ---------- ban set ----------
 def load_ban():
     banned_sha, banned_cid = set(), set()
@@ -93,7 +113,7 @@ def parse_fm(text):
 IMG_TAG_RE = re.compile(r"<img\b[^>]*>", re.S)
 SRC_RE = re.compile(r'src=\{?["\']([^"\']+)["\']')
 CID_RE = re.compile(r'data-cid=\{?["\']([^"\']+)["\']')
-ALT_RE = re.compile(r'alt=\{?["\']([^"\']*)["\']')
+ALT_RE = re.compile(r'alt=\{?(["\'])(.*?)\1', re.S)
 VIDEO_RE = re.compile(r'<(?:video|source)\b[^>]*src=\{?["\'](https?://[^"\']+)["\']', re.S)
 POSTER_RE = re.compile(r'poster=\{?["\']([^"\']+)["\']')
 VIDPOSTER_RE = re.compile(r'src=\{?["\'](/img/video_posters/[0-9a-f]{64}\.jpg)["\']')
@@ -176,7 +196,8 @@ def _scan(cut):
         fname = src.rsplit("/", 1)[-1]
         sha = fname.split(".")[0]
         cid = (CID_RE.search(t).group(1) if CID_RE.search(t) else "")
-        alt = (ALT_RE.search(t).group(1) if ALT_RE.search(t) else "")
+        _a = ALT_RE.search(t)
+        alt = " ".join(_a.group(2).split()) if _a else ""
         banned = "yes" if (sha in BAN_SHA or (cid and cid in BAN_CID)) else "no"
         if fname not in TRACKED:
             continue  # untracked -> 404s for real visitors
@@ -247,6 +268,9 @@ for dirpath, dirnames, filenames in os.walk(DOCS):
             continue
         if fn in SKIP_BASENAMES:
             continue
+        rel_from_docs = os.path.relpath(os.path.join(dirpath, fn), DOCS).replace(os.sep, "/")
+        if excluded_by_site(rel_from_docs):
+            continue
         full = Path(dirpath) / fn
         rel = str(full.relative_to(ROOT))
         text = full.read_text(encoding="utf-8", errors="replace")
@@ -308,6 +332,22 @@ with open(WORK / "card_index.csv", "w", newline="", encoding="utf-8") as fh:
     w.writeheader(); w.writerows(rows)
 
 (WORK / "routes.txt").write_text("\n".join(sorted(routes)) + "\n")
+
+prev_led, prev_teaser = {}, {}
+_lp, _cp = WORK / "ledger.csv", WORK / "card_index.csv"
+if _lp.exists():
+    with open(_lp, newline="", encoding="utf-8") as fh:
+        prev_led = {r["file_path"]: r for r in csv.DictReader(fh)}
+if _cp.exists():
+    with open(_cp, newline="", encoding="utf-8") as fh:
+        prev_teaser = {r["url_path"]: r.get("teaser", "") for r in csv.DictReader(fh)}
+for r in rows:
+    if prev_teaser.get(r["url_path"]):
+        r["teaser"] = prev_teaser[r["url_path"]]
+for r in ledger:
+    old = prev_led.get(r["file_path"])
+    if old:
+        r.update({k: old[k] for k in ("status", "blocks", "agent", "updated") if old.get(k)})
 
 with open(WORK / "ledger.csv", "w", newline="", encoding="utf-8") as fh:
     w = csv.DictWriter(fh, fieldnames=["file_path", "level2", "status", "blocks", "agent", "updated"])

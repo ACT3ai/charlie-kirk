@@ -321,6 +321,24 @@ STAGE 1 - LOAD THE MAP
 
   laws/README.md IS a published page and is in scope.
 
+* THE SITE'S OWN EXCLUDE LIST IS THE AUTHORITY ON WHAT IS A PAGE. The docs
+  plugin in {SITE_DIR}/docusaurus.config.ts excludes:
+
+      **/_*.{js,jsx,ts,tsx,md,mdx}     underscore-prefixed files
+      **/_*/**                          anything under an underscore directory
+      **/*.test.{js,jsx,ts,tsx}
+      **/__tests__/**
+      **/prompts/**
+      **/CLAUDE.md
+      **/p_*.{md,mdx}                   prompt files living inside docs
+
+  A file matching any of those is NOT published and must never be edited or
+  carded. On the first run this was missed and nine files were edited that no
+  visitor can reach - After/house/p_research.md and the eight
+  Consciousness_Control/_research/*.md staging notes. They were reverted. The
+  index builder now mirrors this list, which is why the editable count is 1,731
+  rather than 1,762.
+
 
 ============================
 STAGE 2 - PARTITION THE WORK ACROSS {AGENT_COUNT} AGENTS
@@ -469,10 +487,13 @@ MDX safety:
 * Escape a literal apostrophe in JSX text as &apos; and use &mdash; &ndash;
   &rarr; rather than raw punctuation.
 * Quote marks inside an alt attribute become &quot;.
-* In a .md file the same JSX will not compile. On a .md page emit the block in
-  plain markdown instead: a bold linked title, the teaser sentences, and a
-  "Read this &rarr;" link, four of them, under the same heading and the same
-  HTML-comment markers. Do not convert the page to .mdx to make JSX work.
+* .md and .mdx BOTH compile through MDX here. Docusaurus 3.10 defaults
+  markdown.format to 'mdx', and mdx1Compat.comments enables <!-- --> in .md via
+  @slorber/remark-comment. So a stray brace in a .md page breaks the build just
+  as surely as in an .mdx page, and the verifier compiles both through that same
+  plugin chain ({SITE_DIR}/_ck_mdxcheck.mjs). Keep using the HTML-comment marker
+  form in .md and the JSX form in .mdx - that is a readability convention, not a
+  compiler requirement.
 
 
 ============================

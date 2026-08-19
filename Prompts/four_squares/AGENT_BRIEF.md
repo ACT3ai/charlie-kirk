@@ -42,6 +42,12 @@ BLOCK ORDER ON THE PAGE
   Interesting In This Area  ->  Interesting In Other Areas  ->  Other Pages In This Section
   ->  Elsewhere In The Investigation  ->  the anchor line
 
+NOT EVERY FILE UNDER site/docs IS A PAGE. The docs plugin excludes **/_*/**,
+**/_*.md, **/p_*.md, **/prompts/**, **/CLAUDE.md. Those files are unreachable for
+visitors - never edit them, never card them. card_index.csv already omits them, so
+if a path is not in card_index.csv it is not a page. A previous wave wasted work on
+nine such files.
+
 MARKERS - .mdx uses {/* NAME */}, .md uses <!-- NAME -->. Getting this wrong breaks the
 whole site deploy. Strip any existing block with the same marker before writing a new one.
 28 pages under site/docs/Tyler_Robinson/discord already have a CK_4SQ_SECTION block; keep it
@@ -54,8 +60,16 @@ WRITING RULES
     block links only outside it, reaching 3+ distinct areas.
   * Card teaser: 2-3 sentences, the hook not a summary. Links inside a teaser must be raw
     HTML anchors <a href="/x">y</a>, never markdown. One canonical teaser per page, reused
-    everywhere that page is carded - check the teaser column first, and report every teaser
-    you author so the coordinator can write it back.
+    everywhere that page is carded. Check the teaser column of card_index.csv FIRST and reuse
+    what is there. Append every teaser you author to your own file
+        prompts/four_squares/teasers/agent_N.tsv        (url_path <TAB> teaser, one per line)
+    That file is yours alone - it is the one file outside your areas you may write. The
+    coordinator merges it into card_index.csv. Do not print the teaser list in your report.
+
+SCRATCH FILES - all 12 agents share one scratchpad directory and WILL overwrite each other.
+Namespace every scratch file you create with your agent number, e.g. scratchpad/agent_N/...,
+or work under /tmp/fsq_agent_N/. A sibling agent clobbering your working file mid-run has
+already happened once.
   * JSX safety: no bare { or }, camelCase attributes, &apos; &mdash; &ndash; &rarr;, &quot;
     inside alt text.
 
