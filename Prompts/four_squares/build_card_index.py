@@ -1,0 +1,323 @@
+#!/usr/bin/env python3
+"""Stage 0 of p_4_squares.md — build card_index.csv, routes.txt, ledger.csv.
+
+Deterministic extraction only. No judgement, no prose. Agents read the output.
+"""
+import csv, os, re, subprocess, sys, json
+from pathlib import Path
+
+ROOT = Path(os.path.expanduser("~/BGit/Bryan_git/charlie-kirk"))
+DOCS = ROOT / "site/docs"
+EVID = ROOT / "site/internals/static/img/evidence"
+WORK = ROOT / "prompts/four_squares"
+WORK.mkdir(parents=True, exist_ok=True)
+
+SKIP_TOP = {"Photos", "Videos"}
+SKIP_BASENAMES = {"CLAUDE.md"}
+
+# ---------- ban set ----------
+def load_ban():
+    banned_sha, banned_cid = set(), set()
+    for csvp in [ROOT / "images/ban_images.csv", ROOT / "videos/ban_videos.csv"]:
+        if not csvp.exists():
+            continue
+        with open(csvp, newline="", encoding="utf-8") as fh:
+            for row in csv.DictReader(fh):
+                if (row.get("banned") or "").strip().lower() != "true":
+                    continue
+                if row.get("sha256"):
+                    banned_sha.add(row["sha256"].strip())
+                if row.get("cid"):
+                    banned_cid.add(row["cid"].strip())
+    for txtp in [ROOT / "image_planning/exclude_images.txt",
+                 ROOT / "videos_planning/exclude_videos.txt"]:
+        if not txtp.exists():
+            continue
+        for line in txtp.read_text(encoding="utf-8").splitlines():
+            tok = line.strip().split()[0] if line.strip() and not line.strip().startswith("#") else ""
+            if re.fullmatch(r"[0-9a-f]{64}", tok):
+                banned_sha.add(tok)
+            elif tok.startswith("Qm"):
+                banned_cid.add(tok)
+    return banned_sha, banned_cid
+
+BAN_SHA, BAN_CID = load_ban()
+
+# ---------- git tracked set for evidence dir ----------
+def tracked_evidence():
+    out = subprocess.run(["git", "ls-files", "site/internals/static/img/evidence"],
+                         cwd=ROOT, capture_output=True, text=True).stdout
+    return {Path(l).name for l in out.splitlines() if l.strip()}
+
+TRACKED = tracked_evidence()
+
+# ---------- image shape cache ----------
+SHAPE_CACHE = WORK / "shape_cache.json"
+shapes = json.loads(SHAPE_CACHE.read_text()) if SHAPE_CACHE.exists() else {}
+
+def shape_for(fname):
+    if fname in shapes:
+        return shapes[fname]
+    p = EVID / fname
+    if not p.exists():
+        shapes[fname] = "none"
+        return "none"
+    r = subprocess.run(["sips", "-g", "pixelWidth", "-g", "pixelHeight", str(p)],
+                       capture_output=True, text=True).stdout
+    w = re.search(r"pixelWidth:\s*(\d+)", r)
+    h = re.search(r"pixelHeight:\s*(\d+)", r)
+    if not (w and h) or int(h.group(1)) == 0:
+        shapes[fname] = "none"
+    else:
+        ratio = int(w.group(1)) / int(h.group(1))
+        shapes[fname] = "ck-4sq-side" if ratio < 1.0 else "ck-4sq-stack"
+    return shapes[fname]
+
+# ---------- frontmatter ----------
+FM_RE = re.compile(r"\A---\r?\n(.*?)\r?\n---\r?\n", re.S)
+
+def parse_fm(text):
+    m = FM_RE.match(text)
+    if not m:
+        return {}, text
+    fm = {}
+    for line in m.group(1).splitlines():
+        mm = re.match(r'^([A-Za-z_]+):\s*(.*)$', line)
+        if mm:
+            v = mm.group(2).strip()
+            if len(v) >= 2 and v[0] == v[-1] and v[0] in "\"'":
+                v = v[1:-1]
+            fm[mm.group(1)] = v
+    return fm, text[m.end():]
+
+IMG_TAG_RE = re.compile(r"<img\b[^>]*>", re.S)
+SRC_RE = re.compile(r'src=\{?["\']([^"\']+)["\']')
+CID_RE = re.compile(r'data-cid=\{?["\']([^"\']+)["\']')
+ALT_RE = re.compile(r'alt=\{?["\']([^"\']*)["\']')
+VIDEO_RE = re.compile(r'<(?:video|source)\b[^>]*src=\{?["\'](https?://[^"\']+)["\']', re.S)
+POSTER_RE = re.compile(r'poster=\{?["\']([^"\']+)["\']')
+VIDPOSTER_RE = re.compile(r'src=\{?["\'](/img/video_posters/[0-9a-f]{64}\.jpg)["\']')
+
+# cid -> sha256, so a video hero can borrow its own poster frame
+CID2SHA = {}
+try:
+    import yaml
+    _y = yaml.safe_load(open(ROOT / "videos/videos.yaml"))
+
+    def _walk(n):
+        if isinstance(n, dict):
+            if n.get("cid") and n.get("sha256"):
+                CID2SHA[n["cid"]] = n["sha256"]
+            for v in n.values():
+                _walk(v)
+        elif isinstance(n, list):
+            for v in n:
+                _walk(v)
+    _walk(_y)
+except Exception:
+    pass
+
+PDIR = ROOT / "site/internals/static/img/video_posters"
+TRACKED_POSTERS = {
+    Path(l).name for l in subprocess.run(
+        ["git", "ls-files", "site/internals/static/img/video_posters"],
+        cwd=ROOT, capture_output=True, text=True).stdout.splitlines() if l.strip()}
+
+
+def poster_shape(fname):
+    """A card thumb is an <img>. Never put an .mp4 gateway URL in one."""
+    key = "vp/" + fname
+    if key in shapes:
+        return shapes[key]
+    p = PDIR / fname
+    if not p.exists():
+        shapes[key] = "none"
+        return "none"
+    r = subprocess.run(["sips", "-g", "pixelWidth", "-g", "pixelHeight", str(p)],
+                       capture_output=True, text=True).stdout
+    w = re.search(r"pixelWidth:\s*(\d+)", r)
+    h = re.search(r"pixelHeight:\s*(\d+)", r)
+    shapes[key] = "none" if not (w and h) or int(h.group(1)) == 0 else (
+        "ck-4sq-side" if int(w.group(1)) / int(h.group(1)) < 1.0 else "ck-4sq-stack")
+    return shapes[key]
+
+
+def video_poster(cut, v_match):
+    """Resolve a video hero to a still image, or give up and return None."""
+    tail = cut[max(0, v_match.start() - 400): v_match.end() + 400]
+    for cand in (POSTER_RE.search(tail), VIDPOSTER_RE.search(tail)):
+        if cand and "/img/video_posters/" in cand.group(1):
+            fn = cand.group(1).rsplit("/", 1)[-1]
+            if fn in TRACKED_POSTERS:
+                return cand.group(1), fn
+    m = re.search(r"(Qm[1-9A-HJ-NP-Za-km-z]{44})", v_match.group(1))
+    if m:
+        sha = CID2SHA.get(m.group(1))
+        if sha and (sha + ".jpg") in TRACKED_POSTERS:
+            return f"/img/video_posters/{sha}.jpg", sha + ".jpg"
+    return None
+
+def strip_blocks(body, markers):
+    cut = body
+    for marker in markers:
+        i = cut.find(marker)
+        if i != -1:
+            cut = cut[:i]
+    return cut
+
+
+def _scan(cut):
+    for tag in IMG_TAG_RE.finditer(cut):
+        t = tag.group(0)
+        s = SRC_RE.search(t)
+        if not s or "/img/evidence/" not in s.group(1):
+            continue
+        src = s.group(1)
+        fname = src.rsplit("/", 1)[-1]
+        sha = fname.split(".")[0]
+        cid = (CID_RE.search(t).group(1) if CID_RE.search(t) else "")
+        alt = (ALT_RE.search(t).group(1) if ALT_RE.search(t) else "")
+        banned = "yes" if (sha in BAN_SHA or (cid and cid in BAN_CID)) else "no"
+        if fname not in TRACKED:
+            continue  # untracked -> 404s for real visitors
+        return "image", src, cid, alt, shape_for(fname), banned
+    v = VIDEO_RE.search(cut)
+    if v:
+        got = video_poster(cut, v)
+        if got:
+            src, fn = got
+            cid = re.search(r"(Qm[1-9A-HJ-NP-Za-km-z]{44})", v.group(1))
+            cid = cid.group(1) if cid else ""
+            banned = "yes" if (cid and cid in BAN_CID) else "no"
+            return "video", src, cid, "", poster_shape(fn), banned
+    return None
+
+
+def find_media(body):
+    """Hero media first; fall back to any image the page carries lower down.
+
+    Never looks inside our own four-square blocks - those hold OTHER pages' media.
+    """
+    own_blocks = ("CK_4SQ_SECTION_START", "CK_4SQ_SITEWIDE_START", "CK_INTERESTING_HERE_START")
+    hero = _scan(strip_blocks(body, own_blocks + ("CK_PLACED_IMAGES_START",)))
+    if hero:
+        return hero
+    rest = re.split(r"CK_4SQ_(?:SECTION|SITEWIDE)_START.*?CK_4SQ_(?:SECTION|SITEWIDE)_END", body, flags=re.S)
+    for chunk in rest:
+        got = _scan(chunk)
+        if got:
+            return got
+    return "none", "", "", "", "none", "no"
+
+ANCHORS = [
+    ("CK_AUTHOR_CREDIT", lambda t: "CK_AUTHOR_CREDIT" in t),
+    ("H2_INTERESTING", lambda t: re.search(r"^## Interesting\s*$", t, re.M) is not None),
+    ("H2_RELATED_AREAS", lambda t: re.search(r"^## Related Areas\s*$", t, re.M) is not None),
+    ("CK_PLACED_IMAGES", lambda t: "CK_PLACED_IMAGES_START" in t),
+    ("H2_SOURCES", lambda t: re.search(r"^## (Sources|Fix Laws|The Laws)\s*$", t, re.M) is not None),
+    ("EOF", lambda t: True),
+]
+
+# ---------- pages.csv lookup ----------
+pages_meta = {}
+with open(ROOT / "pages.csv", newline="", encoding="utf-8") as fh:
+    for row in csv.DictReader(fh):
+        pages_meta.setdefault(row["file_path"], row)
+
+def url_for(rel):
+    """rel is like site/docs/Foo/bar.mdx"""
+    p = rel[len("site/docs/"):]
+    p = re.sub(r"\.mdx?$", "", p)
+    parts = p.split("/")
+    parts = [re.sub(r"^\d+[-_]", "", x) for x in parts]
+    if parts[-1] in ("README",):
+        parts = parts[:-1]
+    return "/" + "/".join(parts)
+
+rows, routes, ledger = [], set(), []
+for dirpath, dirnames, filenames in os.walk(DOCS):
+    rel_dir = os.path.relpath(dirpath, DOCS)
+    top = rel_dir.split(os.sep)[0]
+    if top in SKIP_TOP:
+        dirnames[:] = []
+        continue
+    dirnames[:] = [d for d in dirnames if not (rel_dir == "." and d in SKIP_TOP)]
+    for fn in sorted(filenames):
+        if not fn.endswith((".md", ".mdx")):
+            continue
+        if fn in SKIP_BASENAMES:
+            continue
+        full = Path(dirpath) / fn
+        rel = str(full.relative_to(ROOT))
+        text = full.read_text(encoding="utf-8", errors="replace")
+        fm, body = parse_fm(text)
+        url = url_for(rel)
+        routes.add(url)
+        base = fn.rsplit(".", 1)[0]
+        is_overview = base in ("overview", "README")
+        if is_overview:
+            routes.add(url.rsplit("/overview", 1)[0] if url.endswith("/overview") else url)
+        if rel_dir == ".":
+            if base == "index":
+                continue  # site root index: link target only
+            level2 = base
+        else:
+            level2 = rel_dir.split(os.sep)[0]
+        meta = pages_meta.get(rel, {})
+        csv_level2 = meta.get("level2_parent") or ""
+        title = fm.get("title") or meta.get("title") or ""
+        if not title:
+            m = re.search(r"^#\s+(.+)$", body, re.M)
+            title = m.group(1).strip() if m else base.replace("-", " ").replace("_", " ")
+        kind, src, cid, alt, shape, banned = find_media(body)
+        anchor = next(name for name, test in ANCHORS if test(text))
+        rows.append({
+            "url_path": url,
+            "file_path": rel,
+            "extension": fn.rsplit(".", 1)[1],
+            "level": meta.get("level", "3" if rel_dir != "." else "2"),
+            "level2": level2,
+            "csv_level2": csv_level2,
+            "is_overview": "yes" if is_overview else "no",
+            "title": title,
+            "sidebar_label": fm.get("sidebar_label") or meta.get("sidebar_label") or title,
+            "description": (fm.get("description") or meta.get("description") or "").replace("\n", " "),
+            "media_kind": kind,
+            "media_src": src,
+            "media_cid": cid,
+            "media_alt": alt,
+            "media_shape": shape,
+            "banned": banned,
+            "anchor": anchor,
+            "teaser": "",
+        })
+        ledger.append({"file_path": rel, "level2": rows[-1]["level2"],
+                       "status": "TODO", "blocks": "----", "agent": "", "updated": ""})
+
+SHAPE_CACHE.write_text(json.dumps(shapes))
+
+# routes: also every /Photos + /Videos leaf, as link targets
+for top in SKIP_TOP:
+    d = DOCS / top
+    if d.exists():
+        for p in d.rglob("*.md*"):
+            routes.add(url_for(str(p.relative_to(ROOT))))
+
+with open(WORK / "card_index.csv", "w", newline="", encoding="utf-8") as fh:
+    w = csv.DictWriter(fh, fieldnames=list(rows[0].keys()), quoting=csv.QUOTE_MINIMAL)
+    w.writeheader(); w.writerows(rows)
+
+(WORK / "routes.txt").write_text("\n".join(sorted(routes)) + "\n")
+
+with open(WORK / "ledger.csv", "w", newline="", encoding="utf-8") as fh:
+    w = csv.DictWriter(fh, fieldnames=["file_path", "level2", "status", "blocks", "agent", "updated"])
+    w.writeheader(); w.writerows(ledger)
+
+from collections import Counter
+c = Counter(r["level2"] for r in rows)
+print(f"pages indexed : {len(rows)}")
+print(f"routes        : {len(routes)}")
+print(f"with media    : {sum(1 for r in rows if r['media_kind'] != 'none')}")
+print(f"banned media  : {sum(1 for r in rows if r['banned'] == 'yes')}")
+print(f"level2 areas  : {len(c)}")
+print("anchors       :", dict(Counter(r["anchor"] for r in rows)))

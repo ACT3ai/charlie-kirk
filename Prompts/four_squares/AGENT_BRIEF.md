@@ -1,0 +1,84 @@
+FOUR SQUARES - AGENT BRIEF
+==========================
+
+You are one of 12 agents executing ~/BGit/Bryan_git/charlie-kirk/prompts/p_4_squares.md.
+Work at high effort. Read that prompt first; this brief is the operational summary.
+
+ROOT is ~/BGit/Bryan_git/charlie-kirk. All paths below are relative to it.
+
+READ THESE FIRST, IN THIS ORDER
+  1. prompts/p_4_squares.md              the full spec
+  2. prompts/four_squares/GOLDEN_EXAMPLE.mdx   the verified output shape - copy it
+  3. prompts/Assess_Manual.md            writing and layout guide (skim; it is long)
+  4. claude.md sections "Pages CSV" and "Images Are Tracked In Git"
+
+YOUR INPUTS (already built - never rebuild them)
+  prompts/four_squares/card_index.csv    one row per editable page: url_path, file_path,
+                                         extension, level, level2, is_overview, title,
+                                         sidebar_label, description, media_kind, media_src,
+                                         media_cid, media_alt, media_shape, banned, anchor, teaser
+  prompts/four_squares/routes.txt        every valid public route, one per line
+  prompts/four_squares/ledger.csv        file_path, level2, status, blocks, agent, updated
+  prompts/four_squares/verify_blocks.py  the Stage 7 verifier
+
+media_src, media_cid, media_alt and media_shape are ALREADY CORRECT. Use them verbatim.
+They have been measured with sips, checked against the ban lists, and checked for git
+tracking. Do NOT re-derive them, do NOT invent a src, do NOT use an ipfs.io or dweb.link
+URL for a card image. media_kind "none" means emit a thumb-less card.
+
+WHAT YOU DO, PER PAGE
+  1. Read the page.
+  2. Pick 4 sister pages in its own level2 by the index offsets (i+1, i+7, i+13, i+19) mod N
+     over that level2 sorted by url_path. Overview/hub pages instead get the 4 best pages
+     in their section, chosen on merit. Never card the page itself. Never card a duplicate.
+  3. Pick 4 pages from 4 DIFFERENT other level2 areas, on genuine relevance. Read each
+     candidate before carding it. Never card anything under /Photos or /Videos.
+  4. Write the four blocks and insert them together, immediately ABOVE the anchor named in
+     the anchor column of card_index.csv, one blank line each side.
+  5. Run the verifier on the file. If it fails, fix it or revert the page. Never leave a
+     half-written block.
+
+BLOCK ORDER ON THE PAGE
+  Interesting In This Area  ->  Interesting In Other Areas  ->  Other Pages In This Section
+  ->  Elsewhere In The Investigation  ->  the anchor line
+
+MARKERS - .mdx uses {/* NAME */}, .md uses <!-- NAME -->. Getting this wrong breaks the
+whole site deploy. Strip any existing block with the same marker before writing a new one.
+28 pages under site/docs/Tyler_Robinson/discord already have a CK_4SQ_SECTION block; keep it
+and add the other three.
+
+WRITING RULES
+  * Interesting bullets: exactly 4, each 17 words or fewer after stripping link markup,
+    2-3 markdown links per bullet where the sentence can carry them. Each bullet reveals a
+    fact, never "learn more about X". In-area block links only inside this level2; other-area
+    block links only outside it, reaching 3+ distinct areas.
+  * Card teaser: 2-3 sentences, the hook not a summary. Links inside a teaser must be raw
+    HTML anchors <a href="/x">y</a>, never markdown. One canonical teaser per page, reused
+    everywhere that page is carded - check the teaser column first, and report every teaser
+    you author so the coordinator can write it back.
+  * JSX safety: no bare { or }, camelCase attributes, &apos; &mdash; &ndash; &rarr;, &quot;
+    inside alt text.
+
+DEFAMATION - this is public content.
+  * Never state as fact that a living person committed a crime. Attribute: reportedly,
+    allegedly, according to.
+  * Never write "hand off" - use "the table and Charlie" or "the security team reaching Charlie".
+  * The rifle account is the government's narrative and must be labelled as such; the majority
+    citizen finding on X is an explosive device. Do not present the rifle account as settled.
+    Do not raise electrocution.
+
+HARD LIMITS
+  * Edit ONLY files inside your assigned directories. Read anything.
+  * Never write Charlie_Kirk.txt, site/sidebars.ts, pages.csv, ledger.csv or card_index.csv.
+    The coordinator is the single writer for those. Return your data instead.
+  * Never touch .gitignore. Never git add -f. Never commit.
+
+VERIFY, THEN REPORT
+  python3 prompts/four_squares/verify_blocks.py <every file you edited>
+  Must print "0 failing". Then report back, compactly:
+    pages done      : list of file_path
+    pages skipped   : file_path + one-line reason
+    cards emitted   : N
+    teasers authored: url_path <TAB> teaser text   (one per line, for pages you carded)
+    verifier         : the final line of its output
+  Do not paste page content back. Do not paste the blocks you wrote.
