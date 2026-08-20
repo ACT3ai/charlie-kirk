@@ -1,0 +1,57 @@
+source: site/internals/static/img/evidence/5913c4dfba8baead6f22101634190545808956cc01e6861f9d95d4a659bcb938.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:44:56.178Z
+kind: image
+language: en-US
+text: |-
+  PETAN
+  EBACI
+  ฿ PROVE ME WRONG
+  4:23 / 13:58
+  THE
+  AMEl
+blocks:
+  - text: PETAN
+    confidence: 0.5
+    bbox:
+      - 0.01104796104756618
+      - 0.3284104828361818
+      - 0.13946963919445027
+      - 0.043329699128186405
+  - text: EBACI
+    confidence: 0.5
+    bbox:
+      - 0.011627907548470357
+      - 0.36979166614181513
+      - 0.1380813955861988
+      - 0.03385416742991143
+  - text: ฿ PROVE ME WRONG
+    confidence: 1
+    bbox:
+      - 0.01047768587121998
+      - 0.43044498767227757
+      - 0.34579988307378756
+      - 0.12015897057065017
+  - text: 4:23 / 13:58
+    confidence: 1
+    bbox:
+      - 0.05232558296919469
+      - 0.9739583335847473
+      - 0.039244184206959395
+      - 0.01302083257008857
+  - text: THE
+    confidence: 1
+    bbox:
+      - 0.8226744190393723
+      - 0.8072916667447917
+      - 0.02180232427590667
+      - 0.0234375
+  - text: AMEl
+    confidence: 1
+    bbox:
+      - 0.8255813961869325
+      - 0.8385416666015624
+      - 0.07267441765520488
+      - 0.0703125

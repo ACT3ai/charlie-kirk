@@ -1,0 +1,129 @@
+source: site/internals/static/img/evidence/262fab28bf3949fa4dd4047e2856d54ec8a5a63be52287b9b26ff8d2479b9e9d.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:43:01.255Z
+kind: image
+language: en-US
+text: |-
+  XPOSED MAGAZINE •
+  XPOSED MAGAZINE
+  @XPOSEDMAGAZINE
+  ...
+  © Auto-translated from Spanish by Grok Show original
+  FBI Director Kash Patel indicates that the person recently arrested was
+  not the one who shot Charlie Kirk. This raises suspicions that the attack
+  may have been planned by some intelligence agency, probably outside
+  the United States.
+  In Xposed Magazine, we doubt that the real killer and the people behind
+  this attack will be captured. Everything seems to have been a well-
+  planned operation by foreign actors.
+  We are living through very difficult times, and more than ever, we must
+  commend ourselves to God...who do you think killed him?
+  Rate this translation:
+blocks:
+  - text: XPOSED MAGAZINE •
+    confidence: 1
+    bbox:
+      - 0.11148649278424659
+      - 0.03309352553204714
+      - 0.2787161989754259
+      - 0.023741007194244546
+  - text: XPOSED MAGAZINE
+    confidence: 1
+    bbox:
+      - 0.038851353198751194
+      - 0.05668604661446652
+      - 0.05912161989754259
+      - 0.007342730323187774
+  - text: "@XPOSEDMAGAZINE"
+    confidence: 1
+    bbox:
+      - 0.10641891327481495
+      - 0.06540697712386279
+      - 0.2635135204098296
+      - 0.018895348198979867
+  - text: ...
+    confidence: 1
+    bbox:
+      - 0.9476351354227122
+      - 0.04215116302071653
+      - 0.028716214923156902
+      - 0.007267441509439032
+  - text: © Auto-translated from Spanish by Grok Show original
+    confidence: 1
+    bbox:
+      - 0.03378378386896708
+      - 0.11773255813625716
+      - 0.5912162244917956
+      - 0.020396938598413183
+  - text: FBI Director Kash Patel indicates that the person recently arrested was
+    confidence: 1
+    bbox:
+      - 0.03361262059737382
+      - 0.143746655848775
+      - 0.9175748793177781
+      - 0.03343301402579113
+  - text: not the one who shot Charlie Kirk. This raises suspicions that the attack
+    confidence: 1
+    bbox:
+      - 0.03209458662306922
+      - 0.18313953443062414
+      - 0.9324324489835911
+      - 0.026212983165713633
+  - text: may have been planned by some intelligence agency, probably outside
+    confidence: 1
+    bbox:
+      - 0.03378379567350413
+      - 0.21798561198312727
+      - 0.9138513265246134
+      - 0.026200434458341526
+  - text: the United States.
+    confidence: 1
+    bbox:
+      - 0.03209460014249533
+      - 0.2529069767988311
+      - 0.23817566326230666
+      - 0.02335201647641849
+  - text: In Xposed Magazine, we doubt that the real killer and the people behind
+    confidence: 1
+    bbox:
+      - 0.03040540922956849
+      - 0.2877697837691796
+      - 0.9341216326557273
+      - 0.02618370467810316
+  - text: this attack will be captured. Everything seems to have been a well-
+    confidence: 1
+    bbox:
+      - 0.030405403343629043
+      - 0.32267441926594054
+      - 0.869932448983591
+      - 0.02480759517752018
+  - text: planned operation by foreign actors.
+    confidence: 1
+    bbox:
+      - 0.03378379146838813
+      - 0.35610465075329856
+      - 0.4729729591803408
+      - 0.026162791080612147
+  - text: We are living through very difficult times, and more than ever, we must
+    confidence: 1
+    bbox:
+      - 0.032094595127815685
+      - 0.3906474825075955
+      - 0.9121621428524771
+      - 0.028057553956834513
+  - text: commend ourselves to God...who do you think killed him?
+    confidence: 1
+    bbox:
+      - 0.03209459079086211
+      - 0.425872093018664
+      - 0.7466216326557275
+      - 0.026162791080612036
+  - text: "Rate this translation:"
+    confidence: 1
+    bbox:
+      - 0.032094599858811926
+      - 0.48110465168490424
+      - 0.22804053571311927
+      - 0.017456499278116544

@@ -1,0 +1,49 @@
+source: site/internals/static/img/evidence/1f62b9a790457f9607af7b4feec0ceae31c9a459053fa518afb0c3200a984048.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:42:46.313Z
+kind: image
+language: en-US
+text: |-
+  Dan flood : maroon shirt
+  Rick cutler : brown shirt
+  Frank turek white shirt
+  Brian harpole: blue shit
+  Justin : not sure what color shirt.
+blocks:
+  - text: "Dan flood : maroon shirt"
+    confidence: 1
+    bbox:
+      - 0.06763285386473425
+      - 0.08333333230769235
+      - 0.4492753623188406
+      - 0.10256410256410253
+  - text: "Rick cutler : brown shirt"
+    confidence: 1
+    bbox:
+      - 0.06763284806763284
+      - 0.2500000003205127
+      - 0.4347826086956522
+      - 0.10256410256410264
+  - text: Frank turek white shirt
+    confidence: 1
+    bbox:
+      - 0.065217388336784
+      - 0.42307692339743586
+      - 0.4154589371980676
+      - 0.09615384615384615
+  - text: "Brian harpole: blue shit"
+    confidence: 1
+    bbox:
+      - 0.06763285364734295
+      - 0.5897435886538462
+      - 0.427536231884058
+      - 0.10897435897435892
+  - text: "Justin : not sure what color shirt."
+    confidence: 1
+    bbox:
+      - 0.06521739631642505
+      - 0.7564102573183761
+      - 0.606280193236715
+      - 0.10897435897435903

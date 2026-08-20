@@ -1,0 +1,89 @@
+source: site/internals/static/img/evidence/4d5d42a869154f84fafb96dbc89ebdd2904dfe1874da4db76035f61a7ad8b174.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:44:25.457Z
+kind: image
+language: en-US
+text: |-
+  Sam Parker
+  @BasedSamParker • 2h
+  CALL FOR HELP: @RealCandaceO wants to contact the guy in the maroon
+  shirt. He might have useful information about the bush, which is now an
+  area of interest. NO BLAME, GUILT OR ACCUSATIONS are implied at all.
+  Please don't attack or doxx this guy. Just pass the info to Candace.
+  ...
+  ME WRUNG S
+  2:02
+  @BasedSamParker @SamParkerSenate
+blocks:
+  - text: Sam Parker
+    confidence: 1
+    bbox:
+      - 0.11784511698653202
+      - 0.03423423448648644
+      - 0.14309764309764308
+      - 0.0252252252252253
+  - text: "@BasedSamParker • 2h"
+    confidence: 1
+    bbox:
+      - 0.3737373720328283
+      - 0.034234234324324264
+      - 0.2727272727272727
+      - 0.0252252252252253
+  - text: "CALL FOR HELP: @RealCandaceO wants to contact the guy in the maroon"
+    confidence: 1
+    bbox:
+      - 0.11784512316919188
+      - 0.07387387378378385
+      - 0.8518518518518519
+      - 0.028828828828828756
+  - text: shirt. He might have useful information about the bush, which is now an
+    confidence: 1
+    bbox:
+      - 0.11616162307800211
+      - 0.10990990980480475
+      - 0.82996632996633
+      - 0.03063063063063065
+  - text: area of interest. NO BLAME, GUILT OR ACCUSATIONS are implied at all.
+    confidence: 1
+    bbox:
+      - 0.11784512474747467
+      - 0.1459459459309309
+      - 0.8282828282828283
+      - 0.03063063063063065
+  - text: Please don't attack or doxx this guy. Just pass the info to Candace.
+    confidence: 1
+    bbox:
+      - 0.11784512425645327
+      - 0.181981981981982
+      - 0.7693602693602695
+      - 0.028828828828828867
+  - text: ...
+    confidence: 1
+    bbox:
+      - 0.9595959592382154
+      - 0.04144144150900897
+      - 0.028619528619528656
+      - 0.009009009009009028
+  - text: ME WRUNG S
+    confidence: 1
+    bbox:
+      - 0.545454543546577
+      - 0.30450450457957956
+      - 0.2289562289562289
+      - 0.037837837837837895
+  - text: 2:02
+    confidence: 1
+    bbox:
+      - 0.15139135524574684
+      - 0.9366504602982378
+      - 0.05075264298153245
+      - 0.025798179007865296
+  - text: "@BasedSamParker @SamParkerSenate"
+    confidence: 1
+    bbox:
+      - 0.3148148179292929
+      - 0.954954954864865
+      - 0.3114478114478114
+      - 0.01981981981981973

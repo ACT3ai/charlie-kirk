@@ -1,0 +1,129 @@
+source: site/internals/static/img/evidence/399a524ee0a3bdaa26d41402f954040763f3b4474b6e73343d4671024f4687ae.jpg
+status: done
+engine: gemini-flash-latest
+provider: gemini
+generated: 2026-08-20T12:45:54.833Z
+kind: image
+description: >-
+  ## Overview
+
+  This image is a direct digital screenshot of the Google Trends web interface
+  displaying a line graph for the search term "Timpanogos Regional Hospital".
+  The graph shows search interest over time filtered for the geographic region
+  of Israel, with a flat baseline at zero across most dates and a sudden, sharp
+  spike to maximum interest (100) in mid-August 2025. Two key interface
+  elements—the "Israel" region dropdown and the "Aug 10 – 16, 2025" tooltip
+  showing peak search volume—are prominently highlighted with hand-drawn red
+  circles.
+
+
+  ## Hyper-Detail
+
+  The image presents a modern, clean graphical user interface (GUI) with
+  Google's Material Design aesthetics:
+
+  * **Top Navigation Bar:** A white header band runs horizontally across the
+  top. At the far left sits a grey hamburger menu icon (three stacked horizontal
+  lines) followed by the multi-colored "Google Trends" logo ("Google" in
+  standard brand colors, "Trends" in grey). Adjacent navigation links include
+  "Home", "Explore" (underlined with a blue active indicator), and "Trending
+  Now". At the top right edge, a portion of a share icon is cut off.
+
+  * **Search and Comparison Card:** Below the top bar, a rounded white
+  rectangular card against a soft light-blue background contains the search
+  query details: a solid blue circular marker, the bold text "Timpanogos
+  Regional Hospital", and the subtext "Search term". To the right of this sits a
+  larger rounded grey box containing a plus symbol and the text "+ Compare".
+
+  * **Filter Bar:** Four pill-shaped dropdown filters sit in a horizontal row:
+    1. "Israel" with a downward-pointing triangle, enclosed by a freehand red circle marker.
+    2. "Past 12 months" with a downward triangle.
+    3. "All categories" with a downward triangle.
+    4. "Web Search" with a downward triangle.
+  * **Interest Over Time Section:** Housed within a large rounded white panel
+  filling the lower two-thirds of the image. 
+    * Header reads "Interest over time" accompanied by a small circular question mark tooltip icon.
+    * Upper right of this panel features three utility icons: a download arrow, an embed code symbol (`< >`), and a share node icon.
+    * **The Graph:** A 2D Cartesian coordinate system with faint grey horizontal gridlines labeled along the Y-axis at "100", "75", "50", and "25". The X-axis has date markers along the bottom: "Oct 6, 2024", "Jan 26, 2025", "May 18, 2025", and "Sep 7, 2025".
+    * **Data Line:** A bright blue line sits completely flat at 0 along the bottom axis from October 2024 until approximately early August 2025, where it abruptly spikes in an inverted "V" shape reaching the absolute top value of 100 before sharply plummeting back to zero.
+    * **Tooltip Box:** Positioned to the left of the peak, a white rectangular tooltip with a thin border is anchored to the data point (which has a solid blue circle marker at the apex). The tooltip displays the header "Aug 10 – 16, 2025" enclosed in a red hand-drawn oval, and below it: "Timpanogos Regional Hospital" followed by the numerical value "100".
+
+  ## Composition
+
+  * **Layout Structure:** Flat 2D interface design, split between top navigation
+  (~10% of frame), search configuration header (~25% of frame), and the main
+  analytical chart panel occupying the bottom ~65% of the frame.
+
+  * **Visual Anchors / Leading Lines:** The horizontal baseline grid directs the
+  viewer's gaze across the timeline until the eye hits the sharp vertical spike
+  in the right third of the frame (~FRAME-RIGHT, mid-to-lower height). The two
+  hand-drawn red circles immediately pull focus to FRAME-LEFT (the "Israel"
+  filter) and FRAME-CENTER-RIGHT (the date tooltip).
+
+  * **Balance:** The composition is horizontally organized with heavier visual
+  density toward the lower-middle and right due to the graph spike and tooltip
+  callout.
+
+
+  ## Location
+
+  * **Location:** (indeterminate) / Digital interface.
+
+  * **Geographic Reference in Content:** The user interface specifically queries
+  search data for the country of **Israel** concerning an American medical
+  facility ("Timpanogos Regional Hospital", located in Orem, Utah, United
+  States).
+
+
+  ## Setting & Place
+
+  * **Setting:** Digital environment / Web browser application (Google Trends
+  interface).
+
+
+  ## Lighting
+
+  * **Lighting:** Not applicable (flat digital UI rendering; high-key, uniform
+  digital screen illumination with no physical shadows or natural light
+  interaction).
+
+
+  ## Cinematography
+
+  * **Shot Type:** Full-screen digital screengrab / direct screen capture (1:1
+  software UI rendering).
+
+  * **Camera Angle:** Orthographic / Flat front-on digital view.
+
+  * **Lens/Focus:** Infinite digital sharpness across all text, vector lines,
+  and UI elements; no focal blur or optical distortion.
+
+
+  ## People
+
+  No people in frame.
+
+
+  ## Objects & Text
+
+  * **UI Elements:** Dropdown menus, buttons, Cartesian line graph, tooltips,
+  iconography (hamburger menu, download, embed, share).
+
+  * **Verbatim Text:**
+    * Top bar: `Google Trends`, `Home`, `Explore`, `Trending Now`
+    * Query block: `Timpanogos Regional Hospital`, `Search term`, `+ Compare`
+    * Filter controls: `Israel`, `Past 12 months`, `All categories`, `Web Search`
+    * Section title: `Interest over time`
+    * Y-axis values: `100`, `75`, `50`, `25`
+    * X-axis dates: `Oct 6, 2024`, `Jan 26, 2025`, `May 18, 2025`, `Sep 7, 2025`
+    * Tooltip text: `Aug 10 – 16, 2025`, `Timpanogos Regional Hospital`, `100`
+
+  ## Colors & Mood
+
+  * **Color Palette:** Dominated by clean white (`#FFFFFF`) and very light
+  slate/periwinkle blue background hues, standard Google blue for active data
+  lines/accents, medium neutral greys for axis text and borders, and bright
+  high-visibility red for the two manual markup circles.
+
+  * **Mood:** Analytical, clinical, investigative, alerting the viewer to an
+  anomalous or future-dated data anomaly.

@@ -1,0 +1,33 @@
+source: site/internals/static/img/evidence/539d9949f8dcfdb86d15d3b98ad53a011f2a838f258e6409767cfaa0f1e8559c.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:44:43.701Z
+kind: image
+language: en-US
+text: |-
+  udio.
+  @INSTHINAIR
+  AIR
+blocks:
+  - text: udio.
+    confidence: 1
+    bbox:
+      - -0.017175636060272385
+      - 0.7402381936455595
+      - 0.3708143818958113
+      - 0.08544463664293289
+  - text: "@INSTHINAIR"
+    confidence: 0.5
+    bbox:
+      - 0.7762658526770501
+      - 0.815092993860164
+      - 0.19592038370338094
+      - 0.01550162024796009
+  - text: AIR
+    confidence: 1
+    bbox:
+      - 0.8081760988398385
+      - 0.8691860464903458
+      - 0.07232704727140593
+      - 0.023255813866853714

@@ -1,0 +1,64 @@
+source: videos/2077277163053564059.mp4
+status: done
+engine: vision
+level: fast
+generated: 2026-08-20T12:43:11.808Z
+kind: video
+language: en-US
+stride_seconds: 15
+frames_sampled: 3
+truncated: false
+text: |-
+  Hoir moYes down
+  top-.but up .in the f ront
+  Followinglthe wo¥e
+  Compressioni
+  waves on
+  fjkn(JtsJcQW ,,
+  Neckloce
+  or
+  Notice
+  Moving
+  through his
+  tissue.
+  can
+  "even see
+  earpiece
+  wove
+  causes
+  heating
+  Inside
+  th-e tissue plus insone
+  Internal pressure
+
+  Expansion
+blocks:
+  - text: |-
+      Hoir moYes down
+      top-.but up .in the f ront
+      Followinglthe wo¥e
+      Compressioni
+      waves on
+      fjkn(JtsJcQW ,,
+      Neckloce
+      or
+      Notice
+      Moving
+      through his
+      tissue.
+      can
+      "even see
+      earpiece
+      wove
+      causes
+      heating
+      Inside
+      th-e tissue plus insone
+      Internal pressure
+    confidence: 0.5
+    start: 0
+    end: 15
+  - text: Expansion
+    confidence: 0.5
+    start: 15
+    end: 45

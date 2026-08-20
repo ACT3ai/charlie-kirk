@@ -1,0 +1,73 @@
+source: site/internals/static/img/evidence/2f3d7a53c185d776aeda4183a3ee48fc2e22da8c4ccb6d5f3d2f118d438ae0ec.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:43:21.195Z
+kind: image
+language: en-US
+text: |-
+  Zeb Boykin
+  @ZebBoykin • 47m
+  Ok.
+  Here.
+  Proof the bullet didn't stop wherever they claim it did.
+  This is direct and localized expansion from the round.
+  No, it changes nothing.
+  It aids in explaining Charlie's movements.
+blocks:
+  - text: Zeb Boykin
+    confidence: 1
+    bbox:
+      - 0.15444111211666184
+      - 0.032969922662624995
+      - 0.1850571719082919
+      - 0.029615708457099044
+  - text: "@ZebBoykin • 47m"
+    confidence: 1
+    bbox:
+      - 0.4454545425757576
+      - 0.03555555566666668
+      - 0.2878787878787879
+      - 0.02444444444444438
+  - text: Ok.
+    confidence: 1
+    bbox:
+      - 0.15454545378787882
+      - 0.07555555563888894
+      - 0.06060606060606058
+      - 0.02444444444444438
+  - text: Here.
+    confidence: 1
+    bbox:
+      - 0.15754525243616324
+      - 0.10882978543190891
+      - 0.0879397999156605
+      - 0.024562651316324957
+  - text: Proof the bullet didn't stop wherever they claim it did.
+    confidence: 1
+    bbox:
+      - 0.15757576593939385
+      - 0.1399999999777778
+      - 0.8363636363636364
+      - 0.028888888888888853
+  - text: This is direct and localized expansion from the round.
+    confidence: 1
+    bbox:
+      - 0.15430346329377015
+      - 0.16857379106340842
+      - 0.8368005001183714
+      - 0.03760836707221138
+  - text: No, it changes nothing.
+    confidence: 1
+    bbox:
+      - 0.15757575439393945
+      - 0.2066666670555556
+      - 0.36363636363636365
+      - 0.03111111111111109
+  - text: It aids in explaining Charlie's movements.
+    confidence: 1
+    bbox:
+      - 0.1545454599494948
+      - 0.23999999998148147
+      - 0.6484848484848484
+      - 0.028888888888888964

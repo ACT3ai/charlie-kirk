@@ -1,0 +1,25 @@
+source: site/internals/static/img/evidence/5d897ceb91fef1184bd5ac0996f9636f39860317e743a144852914e8a371eb13.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:45:14.020Z
+kind: image
+language: en-US
+text: |-
+  REEDOM
+  PLAZA
+blocks:
+  - text: REEDOM
+    confidence: 1
+    bbox:
+      - 0.336676650161338
+      - 0.6226259372482479
+      - 0.31915011829965384
+      - 0.1029782148507925
+  - text: PLAZA
+    confidence: 1
+    bbox:
+      - 0.38377535010140407
+      - 0.7173076918942307
+      - 0.21060842433697347
+      - 0.08269230769230773

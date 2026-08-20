@@ -1,0 +1,81 @@
+source: site/internals/static/img/evidence/1fa1cc56cb5e36e8ecea25e9a8d1e759964eb404db2ca824fc207cfce7d1080e.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:42:46.678Z
+kind: image
+language: en-US
+text: |-
+  Reply to B&T's comment
+  Why are you being
+  suppressed?
+  MASTROW
+  TikTok
+  @ rynestime wo
+  VIDEO INTO THE
+  Can't keep up with all the
+  questions! I'm Trying!
+blocks:
+  - text: Reply to B&T's comment
+    confidence: 1
+    bbox:
+      - 0.1291989726443899
+      - 0.12063086096739384
+      - 0.18346252441406252
+      - 0.008729603792598684
+  - text: Why are you being
+    confidence: 1
+    bbox:
+      - 0.12661498882241407
+      - 0.1337209307415823
+      - 0.2118862961277817
+      - 0.014616665429572961
+  - text: suppressed?
+    confidence: 1
+    bbox:
+      - 0.12637055845381848
+      - 0.14894940062582518
+      - 0.15035965659401637
+      - 0.017508175875118326
+  - text: MASTROW
+    confidence: 0.5
+    bbox:
+      - 0.3540898782872059
+      - 0.29060227043271314
+      - 0.18098447395093514
+      - 0.02901038570680481
+  - text: TikTok
+    confidence: 1
+    bbox:
+      - 0.012919898703194778
+      - 0.5072674420078854
+      - 0.12919896443684897
+      - 0.01889534842124474
+  - text: "@ rynestime wo"
+    confidence: 1
+    bbox:
+      - 0.015503871980410065
+      - 0.5276162792558867
+      - 0.21963824647845642
+      - 0.015988371866133555
+  - text: VIDEO INTO THE
+    confidence: 1
+    bbox:
+      - 0.21447028702793913
+      - 0.7834302320480165
+      - 0.5736434011748344
+      - 0.04521426845592813
+  - text: Can't keep up with all the
+    confidence: 1
+    bbox:
+      - 0.1281651419776603
+      - 0.8586979900717732
+      - 0.7436241843483665
+      - 0.04970368420274862
+  - text: questions! I'm Trying!
+    confidence: 1
+    bbox:
+      - 0.17037039557433029
+      - 0.9083333338541667
+      - 0.6518518158883759
+      - 0.04179454357930967

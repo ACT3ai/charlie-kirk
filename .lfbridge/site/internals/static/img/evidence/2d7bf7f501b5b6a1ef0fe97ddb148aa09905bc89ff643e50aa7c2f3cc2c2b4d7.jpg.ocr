@@ -1,0 +1,33 @@
+source: site/internals/static/img/evidence/2d7bf7f501b5b6a1ef0fe97ddb148aa09905bc89ff643e50aa7c2f3cc2c2b4d7.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:43:18.900Z
+kind: image
+language: en-US
+text: |-
+  In the tunnel right after!
+  TikTok
+  @ rynestimeted
+blocks:
+  - text: In the tunnel right after!
+    confidence: 1
+    bbox:
+      - 0.15441176501140744
+      - 0.10416666760312232
+      - 0.6838235323546363
+      - 0.041801822086083185
+  - text: TikTok
+    confidence: 1
+    bbox:
+      - 0.8661484445198163
+      - 0.8063210141708329
+      - 0.12117354596247432
+      - 0.019625413627730626
+  - text: "@ rynestimeted"
+    confidence: 0.5
+    bbox:
+      - 0.7684863814956197
+      - 0.8237037036586066
+      - 0.22652337746542006
+      - 0.02701119784407313

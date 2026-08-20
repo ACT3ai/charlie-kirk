@@ -1,0 +1,84 @@
+source: videos/2078118925586338287.mp4
+status: done
+engine: vision
+level: fast
+generated: 2026-08-20T12:43:34.719Z
+kind: video
+language: en-US
+stride_seconds: 15
+frames_sampled: 7
+truncated: false
+text: |-
+  PROVIDENCE
+  POLIC£
+  PROVIDr
+
+  you you know again you have to go back
+  to JFK to to have seen
+
+  i&
+  IA
+  ' some of you were there. Uh but but th
+  '+-I this is the this is '
+
+  >> Could we clarify that the release of
+  those enhanced images at 8 p.m. timeline
+
+  that uh that that through some process
+  the
+
+  >> Correct. Yes. Yes. KiO, um, so when he's
+  first spotted on campus,,,
+
+  i)r
+  arrested, um, the clothing matched the
+  clothing he 1s' r,
+  [I
+blocks:
+  - text: |-
+      PROVIDENCE
+      POLIC£
+      PROVIDr
+    confidence: 0.5
+    start: 0
+    end: 15
+  - text: |-
+      you you know again you have to go back
+      to JFK to to have seen
+    confidence: 0.5
+    start: 15
+    end: 30
+  - text: |-
+      i&
+      IA
+      ' some of you were there. Uh but but th
+      '+-I this is the this is '
+    confidence: 0.5
+    start: 30
+    end: 45
+  - text: |-
+      >> Could we clarify that the release of
+      those enhanced images at 8 p.m. timeline
+    confidence: 0.5
+    start: 45
+    end: 60
+  - text: |-
+      that uh that that through some process
+      the
+    confidence: 0.75
+    start: 60
+    end: 75
+  - text: |-
+      >> Correct. Yes. Yes. KiO, um, so when he's
+      first spotted on campus,,,
+    confidence: 0.5
+    start: 75
+    end: 90
+  - text: |-
+      i)r
+      arrested, um, the clothing matched the
+      clothing he 1s' r,
+      [I
+    confidence: 0.5
+    start: 90
+    end: 105

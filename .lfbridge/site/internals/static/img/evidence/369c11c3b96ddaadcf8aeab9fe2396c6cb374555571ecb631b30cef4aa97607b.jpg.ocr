@@ -1,0 +1,73 @@
+source: site/internals/static/img/evidence/369c11c3b96ddaadcf8aeab9fe2396c6cb374555571ecb631b30cef4aa97607b.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:43:33.221Z
+kind: image
+language: en-US
+text: |-
+  ER LAN
+  COMEBAC
+  gettyimages
+  Credit: The Salt Lake Tribune
+  * SAVE AMERICA * GET INVOLVED
+  GTUDENT
+  CA,
+  2234095442
+blocks:
+  - text: ER LAN
+    confidence: 1
+    bbox:
+      - 0.8066860471109889
+      - 0.614202049687162
+      - 0.042151160538196564
+      - 0.015427579642389389
+  - text: COMEBAC
+    confidence: 1
+    bbox:
+      - 0.7920816708085368
+      - 0.6290651277181468
+      - 0.06118549406528473
+      - 0.0185581978034135
+  - text: gettyimages
+    confidence: 1
+    bbox:
+      - 0.6102551024031998
+      - 0.6299183021618721
+      - 0.14140839874744415
+      - 0.04081698985958526
+  - text: "Credit: The Salt Lake Tribune"
+    confidence: 1
+    bbox:
+      - 0.611918607947595
+      - 0.6775599134449345
+      - 0.22819766402244568
+      - 0.02178649148340628
+  - text: "* SAVE AMERICA * GET INVOLVED"
+    confidence: 1
+    bbox:
+      - 0.4186046575714909
+      - 0.6947291364166183
+      - 0.23546510934829712
+      - 0.01986781325556697
+  - text: GTUDENT
+    confidence: 0.5
+    bbox:
+      - 0.5508720940987977
+      - 0.7429193900333582
+      - 0.020348835736513138
+      - 0.013071895169304182
+  - text: CA,
+    confidence: 1
+    bbox:
+      - 0.5799418609436182
+      - 0.8191721137354209
+      - 0.030523255467414856
+      - 0.02178649148340628
+  - text: "2234095442"
+    confidence: 1
+    bbox:
+      - 0.01308139573992688
+      - 0.9607843137175944
+      - 0.07267441600561142
+      - 0.017429194024506267

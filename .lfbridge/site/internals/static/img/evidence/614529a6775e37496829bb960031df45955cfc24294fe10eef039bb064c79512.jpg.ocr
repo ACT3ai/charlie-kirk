@@ -1,0 +1,49 @@
+source: site/internals/static/img/evidence/614529a6775e37496829bb960031df45955cfc24294fe10eef039bb064c79512.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:45:23.880Z
+kind: image
+language: en-US
+text: |-
+  Charlie Kirk Shot - Relevant Angle #3.mp4 ~
+  AMERICAN
+  DOVE ME WRONG / PROVE ME KRU
+  00:25
+  00:39
+blocks:
+  - text: "Charlie Kirk Shot - Relevant Angle #3.mp4 ~"
+    confidence: 1
+    bbox:
+      - 0.27034884071252435
+      - 0.004545455056479963
+      - 0.3662790688656488
+      - 0.022727271578959263
+  - text: AMERICAN
+    confidence: 1
+    bbox:
+      - 0.4320683984070991
+      - 0.30421378507479413
+      - 0.24826532579589222
+      - 0.05941873007262777
+  - text: DOVE ME WRONG / PROVE ME KRU
+    confidence: 1
+    bbox:
+      - 0.22249603444499202
+      - 0.4190069494561751
+      - 0.7259891417914152
+      - 0.11639824671461085
+  - text: 00:25
+    confidence: 1
+    bbox:
+      - 0.15697674460949318
+      - 0.8969696971208138
+      - 0.04360465082461831
+      - 0.015151515228069345
+  - text: 00:39
+    confidence: 1
+    bbox:
+      - 0.6642441872299181
+      - 0.8954545455987818
+      - 0.04505813773129763
+      - 0.01666666624561841

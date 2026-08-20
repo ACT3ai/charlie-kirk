@@ -1,0 +1,65 @@
+source: site/internals/static/img/evidence/33ff963ff8785eabfc14f3f1cedd9daecf046fd6f07256cf3bb7b5910c28ed49.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:43:27.133Z
+kind: image
+language: en-US
+text: |-
+  AMER
+  TIME
+  PROVE ME WRONG
+  12:23:42:207
+  MARSHILLE
+  EST. C00 BC
+  FRENCH RIMERA
+blocks:
+  - text: AMER
+    confidence: 1
+    bbox:
+      - 0.7148288998859316
+      - 0.05960264880794697
+      - 0.2547528517110266
+      - 0.028697571743929395
+  - text: TIME
+    confidence: 1
+    bbox:
+      - 0.7148288991580662
+      - 0.08609271515294858
+      - 0.2547528517110266
+      - 0.02428256070640178
+  - text: PROVE ME WRONG
+    confidence: 1
+    bbox:
+      - 0.2241109508920524
+      - 0.1359513736601382
+      - 0.7492902632448608
+      - 0.0838152904384184
+  - text: 12:23:42:207
+    confidence: 1
+    bbox:
+      - 0.3306807488948452
+      - 0.3704470597981495
+      - 0.4565092311612553
+      - 0.04497784494564239
+  - text: MARSHILLE
+    confidence: 0.5
+    bbox:
+      - 0.12167300654535575
+      - 0.6114790291233049
+      - 0.3916349809885932
+      - 0.05960264900662249
+  - text: EST. C00 BC
+    confidence: 1
+    bbox:
+      - 0.21292775831070065
+      - 0.6710816776411227
+      - 0.23193916349809884
+      - 0.03532008830022071
+  - text: FRENCH RIMERA
+    confidence: 1
+    bbox:
+      - 0.15589353781368814
+      - 0.721854304558499
+      - 0.33840304182509506
+      - 0.028697571743929395

@@ -1,0 +1,49 @@
+source: site/internals/static/img/evidence/6633a3642bcaeed34c1f4dadf6aef8d77c4f2684ee637d18180d3c44daabe196.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:46:04.049Z
+kind: image
+language: en-US
+text: |-
+  9:41
+  They are going to
+  KILL me
+  2 days before assassination
+  His Friend
+blocks:
+  - text: 9:41
+    confidence: 1
+    bbox:
+      - 0.3851744194034917
+      - 0.4434782611102124
+      - 0.03633720815885977
+      - 0.028985506475227574
+  - text: They are going to
+    confidence: 1
+    bbox:
+      - 0.38372093178553324
+      - 0.7328326168168309
+      - 0.2805232489531586
+      - 0.07296448408789902
+  - text: KILL me
+    confidence: 1
+    bbox:
+      - 0.38517441771179406
+      - 0.8315450645255181
+      - 0.125
+      - 0.05831000733273217
+  - text: 2 days before assassination
+    confidence: 1
+    bbox:
+      - 0.4765198822458064
+      - 0.9314896605134242
+      - 0.19373145344177972
+      - 0.04390936757361941
+  - text: His Friend
+    confidence: 1
+    bbox:
+      - 0.8180756319712317
+      - 0.9044483002021991
+      - 0.18070919966979393
+      - 0.06936426940394069

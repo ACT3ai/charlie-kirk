@@ -1,0 +1,33 @@
+source: site/internals/static/img/evidence/2e5b79cbaec76626e4b205791d051ec30f616a253b7917b48d04442042793a89.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:43:19.481Z
+kind: image
+language: en-US
+text: |-
+  UVU
+  A PLACE
+  FORTYOU
+blocks:
+  - text: UVU
+    confidence: 0.5
+    bbox:
+      - 0.6327683609698682
+      - 0.25192802066195374
+      - 0.048964218455743835
+      - 0.023136246786632397
+  - text: A PLACE
+    confidence: 1
+    bbox:
+      - 0.8097928442325801
+      - 0.25192802046915164
+      - 0.043314500941619594
+      - 0.01285347043701801
+  - text: FORTYOU
+    confidence: 0.5
+    bbox:
+      - 0.8097928442090395
+      - 0.26735218499357327
+      - 0.04143126177024481
+      - 0.01285347043701801

@@ -1,0 +1,25 @@
+source: site/internals/static/img/evidence/654846331f9d0cd684ea9d3b1f795e19e16ca4ceb30f9e0372784e33b7830dc1.webp
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:45:50.376Z
+kind: image
+language: en-US
+text: |-
+  PLACE
+  OR YOU
+blocks:
+  - text: PLACE
+    confidence: 1
+    bbox:
+      - -0.0007065648377158714
+      - 0.2142581044717442
+      - 0.06150872548421224
+      - 0.031851620674133274
+  - text: OR YOU
+    confidence: 1
+    bbox:
+      - -1.3888888853822815e-10
+      - 0.24750000031249997
+      - 0.06333333333333332
+      - 0.03749999999999998

@@ -1,0 +1,73 @@
+source: site/internals/static/img/evidence/6dc68198183ea0a7b5cc12fff6826ba0b1abd065629faa71bb2d86b47d1da2f9.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:46:22.715Z
+kind: image
+language: en-US
+text: |-
+  NSA
+  CIA
+  FBI
+  UVU
+  UTAH
+  VALLEY
+  INVERSITY
+  TRUSTED INVESTIGATORS
+blocks:
+  - text: NSA
+    confidence: 1
+    bbox:
+      - 0.3197674397108546
+      - 0.04909560987341488
+      - 0.09883721320183725
+      - 0.09560723106066382
+  - text: CIA
+    confidence: 1
+    bbox:
+      - 0.5116279058984616
+      - 0.062015505338462784
+      - 0.06540697817400698
+      - 0.05684754252433777
+  - text: FBI
+    confidence: 1
+    bbox:
+      - 0.6468023252354639
+      - 0.0645994823451791
+      - 0.08139534974709539
+      - 0.0542635669310888
+  - text: UVU
+    confidence: 0.5
+    bbox:
+      - 0.03633720913050291
+      - 0.4935400518310762
+      - 0.03343023223318023
+      - 0.02583979318539298
+  - text: UTAH
+    confidence: 0.5
+    bbox:
+      - 0.037790698174419185
+      - 0.5219638242165717
+      - 0.021802325126452325
+      - 0.012919896592696434
+  - text: VALLEY
+    confidence: 1
+    bbox:
+      - 0.03633720967099479
+      - 0.5348837210452434
+      - 0.030523254059173256
+      - 0.01550387591123581
+  - text: INVERSITY
+    confidence: 1
+    bbox:
+      - 0.04069767580471569
+      - 0.5503875967940911
+      - 0.030523254059173242
+      - 0.012919896592696434
+  - text: TRUSTED INVESTIGATORS
+    confidence: 1
+    bbox:
+      - 0.6148255808654511
+      - 0.9069010415263355
+      - 0.3139534862923534
+      - 0.04166666666666663

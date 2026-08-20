@@ -1,0 +1,33 @@
+source: site/internals/static/img/evidence/5f9664d5164fdfba4efead6eefc5cde43735bfcf8e314b3e884bb16c649a89ab.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:45:17.710Z
+kind: image
+language: en-US
+text: |-
+  A tradition of
+  making you bak seve d
+  • C
+blocks:
+  - text: A tradition of
+    confidence: 1
+    bbox:
+      - 0.5102625064118369
+      - 0.48339902173952054
+      - 0.06631219687582057
+      - 0.050519323482566825
+  - text: making you bak seve d
+    confidence: 1
+    bbox:
+      - 0.5034048043125587
+      - 0.4637303100953585
+      - 0.12025500545982559
+      - 0.08036319882261989
+  - text: • C
+    confidence: 0.5
+    bbox:
+      - 0.1113445337030491
+      - 0.07282912355689186
+      - 0.0630252180981035
+      - 0.03921570230264959

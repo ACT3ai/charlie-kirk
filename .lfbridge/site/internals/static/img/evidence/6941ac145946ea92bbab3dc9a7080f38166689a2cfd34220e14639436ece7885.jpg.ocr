@@ -1,0 +1,33 @@
+source: site/internals/static/img/evidence/6941ac145946ea92bbab3dc9a7080f38166689a2cfd34220e14639436ece7885.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:46:11.552Z
+kind: image
+language: en-US
+text: |-
+  alpi
+  doo
+  QuikClot
+blocks:
+  - text: alpi
+    confidence: 1
+    bbox:
+      - 0.3677325576979449
+      - 0.07558139514819573
+      - 0.047965116798877716
+      - 0.03100775182247162
+  - text: doo
+    confidence: 1
+    bbox:
+      - 0.4273255814530376
+      - 0.08720930241563762
+      - 0.04505813866853714
+      - 0.03100775182247162
+  - text: QuikClot
+    confidence: 0.5
+    bbox:
+      - 0.2479907650502689
+      - 0.7814637474495753
+      - 0.030865255743265152
+      - 0.031805748740832085

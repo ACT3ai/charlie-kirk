@@ -1,0 +1,89 @@
+source: videos/2080472331692954016.mp4
+status: done
+engine: vision
+level: fast
+generated: 2026-08-20T12:43:52.727Z
+kind: video
+language: en-US
+stride_seconds: 15
+frames_sampled: 7
+truncated: false
+text: |-
+  ••
+  7T
+  DON'T TAKE THAT
+  .knSbOE
+
+  •••
+  ••
+  ROAD WHITE MARKS,
+  InShOt
+
+  lj jBLACK SHARDS,
+  InSh
+
+  f(
+  /'"V .
+  PROSECUTOR TALK, 44
+  InShOE
+
+  THEN HEADLINES
+  SPUN
+  ShOE
+
+  4&s•
+  ri
+  -T4
+  MIC CHECK.
+
+  Sh
+blocks:
+  - text: |-
+      ••
+      7T
+      DON'T TAKE THAT
+      .knSbOE
+    confidence: 0.5
+    start: 0
+    end: 15
+  - text: |-
+      •••
+      ••
+      ROAD WHITE MARKS,
+      InShOt
+    confidence: 0.625
+    start: 15
+    end: 30
+  - text: |-
+      lj jBLACK SHARDS,
+      InSh
+    confidence: 0.5
+    start: 30
+    end: 45
+  - text: |-
+      f(
+      /'"V .
+      PROSECUTOR TALK, 44
+      InShOE
+    confidence: 0.5
+    start: 45
+    end: 60
+  - text: |-
+      THEN HEADLINES
+      SPUN
+      ShOE
+    confidence: 0.5
+    start: 60
+    end: 75
+  - text: |-
+      4&s•
+      ri
+      -T4
+      MIC CHECK.
+    confidence: 0.5
+    start: 75
+    end: 90
+  - text: Sh
+    confidence: 0.5
+    start: 90
+    end: 105

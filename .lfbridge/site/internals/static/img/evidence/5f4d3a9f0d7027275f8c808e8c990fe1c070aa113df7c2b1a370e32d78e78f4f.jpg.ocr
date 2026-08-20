@@ -1,0 +1,41 @@
+source: site/internals/static/img/evidence/5f4d3a9f0d7027275f8c808e8c990fe1c070aa113df7c2b1a370e32d78e78f4f.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:45:17.512Z
+kind: image
+language: en-US
+text: |-
+  Exposing Erika Kirk
+  From a billionaire nepo baby
+  Tik Tok
+  @ markosbits
+blocks:
+  - text: Exposing Erika Kirk
+    confidence: 1
+    bbox:
+      - 0.062015496530511464
+      - 0.1700581395757631
+      - 0.8785529807761864
+      - 0.0627543608347575
+  - text: From a billionaire nepo baby
+    confidence: 1
+    bbox:
+      - 0.1317829559953991
+      - 0.25290697728096845
+      - 0.7260981807002315
+      - 0.036337208747863725
+  - text: Tik Tok
+    confidence: 1
+    bbox:
+      - 0.015450392229423031
+      - 0.505708158169888
+      - 0.1267219543457031
+      - 0.020560427506764678
+  - text: "@ markosbits"
+    confidence: 1
+    bbox:
+      - 0.015503878601385161
+      - 0.5276041666469308
+      - 0.1834625244140625
+      - 0.016145833333333304

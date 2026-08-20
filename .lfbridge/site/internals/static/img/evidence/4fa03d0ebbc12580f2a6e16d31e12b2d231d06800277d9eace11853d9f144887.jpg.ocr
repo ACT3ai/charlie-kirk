@@ -1,0 +1,33 @@
+source: site/internals/static/img/evidence/4fa03d0ebbc12580f2a6e16d31e12b2d231d06800277d9eace11853d9f144887.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:44:39.619Z
+kind: image
+language: en-US
+text: |-
+  Play
+  prov
+  PO
+blocks:
+  - text: Play
+    confidence: 1
+    bbox:
+      - 0.02237136451997789
+      - 0.9593023256541634
+      - 0.0514541381114238
+      - 0.017441860416479327
+  - text: prov
+    confidence: 1
+    bbox:
+      - 0.46153846562328005
+      - 0.4708333330357142
+      - 0.18589742763622386
+      - 0.04166666666666674
+  - text: PO
+    confidence: 1
+    bbox:
+      - 0.4496644282403226
+      - 0.524709304101113
+      - 0.210290831488532
+      - 0.07558139165242506

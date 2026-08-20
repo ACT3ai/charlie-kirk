@@ -1,0 +1,241 @@
+source: site/internals/static/img/evidence/700b173ce8f087a96e0deb4693b54b8a8ee9c1e9882b2b818406d127d0618db3.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:46:27.346Z
+kind: image
+language: en-US
+text: |-
+  Shawn Ryan
+  @ShawnRyan762
+  ...
+  This was a message exchanged between Charlie Kirk's head of security
+  and the UVU chief of police regarding the rooftop. Join me LIVE tonight
+  on Vigilance Elite Patreon for a complete breakdown of the tragic events
+  that led up to-and followed-the shooting that claimed the life of
+  Charlie Kirk.
+  srs.site/EARLY-ACCESS
+  Text Message • RCS
+  Monday 4:11PM
+  Hello Chief Long - We received this
+  message today from the student
+  group.
+  FYSA
+  "there is student roof access pretty
+  close to where CK will be set up at
+  Utah Valley (The Sorensen Student
+  center has a couple stair cases that go
+  up to the walkways on the roof"
+  You want access to the roof?
+  I was told students have access above
+  us, if this is true, it would be nice to
+  either have it controlled access or
+  allow one of my guys to be there as
+  well. If possible.
+  I got you covered
+  Monday 8:29 PM
+  Thank you, Sir.
+blocks:
+  - text: Shawn Ryan
+    confidence: 1
+    bbox:
+      - 0.10071980728299666
+      - 0.010060755861771353
+      - 0.15120522341744264
+      - 0.016215697901126203
+  - text: "@ShawnRyan762"
+    confidence: 1
+    bbox:
+      - 0.1032745611504294
+      - 0.02906976767307423
+      - 0.20403022637672294
+      - 0.015988371230886367
+  - text: ...
+    confidence: 1
+    bbox:
+      - 0.9420654930439751
+      - 0.013081395478203306
+      - 0.03274558931087401
+      - 0.00581395313274069
+  - text: This was a message exchanged between Charlie Kirk's head of security
+    confidence: 1
+    bbox:
+      - 0.020151156575607794
+      - 0.06540697698364162
+      - 0.9294709998750526
+      - 0.017683401747278116
+  - text: and the UVU chief of police regarding the rooftop. Join me LIVE tonight
+    confidence: 1
+    bbox:
+      - 0.02015113349815507
+      - 0.08843537437320825
+      - 0.9244332361702967
+      - 0.019122765061922453
+  - text: on Vigilance Elite Patreon for a complete breakdown of the tragic events
+    confidence: 1
+    bbox:
+      - 0.020151129877372928
+      - 0.11175898909684334
+      - 0.9420655118897305
+      - 0.017601475655395493
+  - text: that led up to-and followed-the shooting that claimed the life of
+    confidence: 1
+    bbox:
+      - 0.017632240528187862
+      - 0.13508260492208568
+      - 0.8715365117647831
+      - 0.018987162583539274
+  - text: Charlie Kirk.
+    confidence: 1
+    bbox:
+      - 0.019736213956358807
+      - 0.15823120258253864
+      - 0.16467405890776252
+      - 0.01759394728175867
+  - text: srs.site/EARLY-ACCESS
+    confidence: 1
+    bbox:
+      - 0.020151129905282523
+      - 0.204941860912213
+      - 0.31486146458070285
+      - 0.0174418598616205
+  - text: Text Message • RCS
+    confidence: 1
+    bbox:
+      - 0.37783375841963035
+      - 0.29348882397432874
+      - 0.23929470075099962
+      - 0.014650710933525879
+  - text: Monday 4:11PM
+    confidence: 1
+    bbox:
+      - 0.39798489378078644
+      - 0.30952380945451985
+      - 0.19647354228729358
+      - 0.01605758537240587
+  - text: Hello Chief Long - We received this
+    confidence: 1
+    bbox:
+      - 0.24433250254301325
+      - 0.348837209024499
+      - 0.5944584290989321
+      - 0.023368815986477665
+  - text: message today from the student
+    confidence: 1
+    bbox:
+      - 0.24389390722567056
+      - 0.3707654202435603
+      - 0.5500735401705861
+      - 0.028543920859882665
+  - text: group.
+    confidence: 1
+    bbox:
+      - 0.24399756879834542
+      - 0.40331296724550314
+      - 0.12409554426918931
+      - 0.020408949189329784
+  - text: FYSA
+    confidence: 0.5
+    bbox:
+      - 0.24414833119870602
+      - 0.42553870206053956
+      - 0.09356731838650176
+      - 0.01810864225189246
+  - text: '"there is student roof access pretty'
+    confidence: 1
+    bbox:
+      - 0.24144467869167033
+      - 0.4745104888515148
+      - 0.6001576125019729
+      - 0.02464746895985659
+  - text: close to where CK will be set up at
+    confidence: 1
+    bbox:
+      - 0.2443324985094668
+      - 0.5014534884675653
+      - 0.5793450866082702
+      - 0.02187012652961573
+  - text: Utah Valley (The Sorensen Student
+    confidence: 1
+    bbox:
+      - 0.24433249159502693
+      - 0.5276162790480315
+      - 0.5919395472465542
+      - 0.02340412881330345
+  - text: center has a couple stair cases that go
+    confidence: 1
+    bbox:
+      - 0.2443325028604976
+      - 0.5552325581099673
+      - 0.6473551535044454
+      - 0.020569191498010397
+  - text: up to the walkways on the roof"
+    confidence: 1
+    bbox:
+      - 0.24433251077887247
+      - 0.5770348833600472
+      - 0.5465994683981745
+      - 0.023255814384556928
+  - text: You want access to the roof?
+    confidence: 1
+    bbox:
+      - 0.09319898838369185
+      - 0.6350826046050229
+      - 0.4861460984355272
+      - 0.02044065121427341
+  - text: I was told students have access above
+    confidence: 1
+    bbox:
+      - 0.24685138690017022
+      - 0.6918604650997529
+      - 0.6473551535044455
+      - 0.019023888776091513
+  - text: us, if this is true, it would be nice to
+    confidence: 1
+    bbox:
+      - 0.24937027759998823
+      - 0.7151162796232045
+      - 0.5944584290989321
+      - 0.02783804523701572
+  - text: either have it controlled access or
+    confidence: 1
+    bbox:
+      - 0.24937028347497153
+      - 0.7412790696070602
+      - 0.5717883896747422
+      - 0.02034883712308866
+  - text: allow one of my guys to be there as
+    confidence: 1
+    bbox:
+      - 0.24937028152106294
+      - 0.767249756739398
+      - 0.5944584290989321
+      - 0.023447918127299072
+  - text: well. If possible.
+    confidence: 1
+    bbox:
+      - 0.2493702796319928
+      - 0.7920310979348557
+      - 0.27204029327289825
+      - 0.02337587910792116
+  - text: I got you covered
+    confidence: 1
+    bbox:
+      - 0.09068010362661338
+      - 0.8517441862552761
+      - 0.29219142515651303
+      - 0.01900411277748748
+  - text: Monday 8:29 PM
+    confidence: 1
+    bbox:
+      - 0.39798488999816845
+      - 0.9055232564049056
+      - 0.20906800292557742
+      - 0.015988371230886256
+  - text: Thank you, Sir.
+    confidence: 1
+    bbox:
+      - 0.6446227823272659
+      - 0.9440647180690596
+      - 0.2523161506010627
+      - 0.02756823881722048

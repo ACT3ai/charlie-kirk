@@ -1,0 +1,114 @@
+source: site/internals/static/img/evidence/24d00716c04ca79d0d237757e06e480a80005fb946aea314534fa52b2a45fcfe.jpg
+status: done
+engine: gemini-flash-latest
+provider: gemini
+generated: 2026-08-20T12:43:44.490Z
+kind: image
+description: >-
+  ## Overview
+
+  This image is a digital screenshot of a Google Trends search result interface
+  on a desktop web browser. It displays search interest over time for the search
+  term "Russell Kim Kennington," filtered by the region "Israel," a time range
+  of the "Past 90 days," "All categories," and the source "News Search." A line
+  chart shows a single sharp spike reaching a value of 100 on the date "Aug 3,
+  2025," while remaining at zero across the rest of the timeline.
+
+
+  ## Hyper-Detail
+
+  The user interface features Google's standard modern Material Design styling
+  with rounded pill-shaped buttons, clean typography, and light gray background
+  tones (`#F0F4F9` or similar off-white/light blue-gray). 
+
+
+  * **Top Search Header:** At the top left, a solid blue circular dot sits next
+  to the bold text "Russell Kim Kennington," underneath which "Search term" is
+  written in a smaller gray font. To the right of this box is a light gray/blue
+  button containing a "+" icon and the text "Compare".
+
+  * **Filter Bar:** Below the main search term area is a horizontal strip of
+  white rounded rectangle filter dropdown buttons:
+    * First button: "Israel" with a small downward-pointing triangle icon, highlighted by a hand-drawn or digitally added purple/magenta oval ellipse.
+    * Second button: "Past 90 days" with a downward triangle.
+    * Third button: "All categories" with a downward triangle.
+    * Fourth button: "News Search" with a downward triangle, also circled by a purple/magenta oval ellipse.
+  * **Chart Card:** The main content card below is white with rounded corners
+  and subtle shadow/borders. 
+    * In the top-left corner of the card, the section heading reads "Interest over time" followed by a small circled question mark icon.
+    * In the top-right corner of the card, three action icons are visible: a download icon (tray with down arrow), an embed icon (`< >`), and a share icon (three connected nodes).
+    * **Line Graph:** The chart has a vertical Y-axis on the left labeled with values `100`, `75`, `50`, `25`, and a bottom axis line. The horizontal X-axis marks specific dates: "Jul 18", "Aug 13", "Sep 8", and "Oct 4". 
+    * A blue plotted line runs flat along the bottom zero-line until sharply spiking straight up to `100` at a single point (marked by a blue dot), then dropping immediately back to zero and continuing flat across the rest of the graph through October.
+    * A white rectangular tooltip box is anchored to the peak dot. The tooltip displays:
+      * "Aug 3, 2025" in bold dark text at the top.
+      * "Russell Kim Kennington" in regular gray text on the left, aligned with the value "100" in blue text on the right.
+
+  ## Composition
+
+  This is a 2D flat user interface screenshot.
+
+  * **Header / Filter Section:** Occupies the top ~35% of the frame horizontally
+  across FRAME-LEFT to FRAME-RIGHT.
+
+  * **Data Card & Graph:** Occupies the lower ~65% of the frame, spanning the
+  full width from FRAME-LEFT to FRAME-RIGHT.
+
+  * **Visual Focal Point:** The viewer's eye is directed immediately to the
+  single sharp blue spike at FRAME-LEFT-CENTER (at ~22% width from the left
+  edge) and the tooltip box hovering at FRAME-CENTER, as well as the two
+  magenta/purple elliptical annotations on the filter buttons in the upper-left
+  and upper-center.
+
+
+  ## Location
+
+  (indeterminate) - This is a digital software user interface screenshot, not a
+  physical location.
+
+
+  ## Setting & Place
+
+  Digital computer screen / web application interface (Google Trends).
+
+
+  ## Lighting
+
+  Not applicable; flat digital graphic user interface with uniform display
+  illumination and no photographic lighting.
+
+
+  ## Cinematography
+
+  Direct digital screen capture (1:1 UI capture, flat planar presentation).
+
+
+  ## People
+
+  No people in frame.
+
+
+  ## Objects & Text
+
+  * **Search Term:** "Russell Kim Kennington", "Search term", "+ Compare"
+
+  * **Filter Controls:** "Israel", "Past 90 days", "All categories", "News
+  Search"
+
+  * **Chart Header & Metadata:** "Interest over time", "?"
+
+  * **Y-Axis Values:** "100", "75", "50", "25"
+
+  * **X-Axis Values:** "Jul 18", "Aug 13", "Sep 8", "Oct 4"
+
+  * **Tooltip Box:** "Aug 3, 2025", "Russell Kim Kennington", "100"
+
+  * **Graphic Annotations:** Two purple/magenta elliptical rings drawn around
+  the "Israel" and "News Search" filters.
+
+
+  ## Colors & Mood
+
+  * **Palette:** Crisp white, light blue-gray background, Google search blue
+  (`#1a73e8`), dark slate gray text, and magenta/purple annotation lines.
+
+  * **Mood:** Objective, analytical, digital, and informative.

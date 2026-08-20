@@ -1,0 +1,46 @@
+source: videos/2087635870627016929.mp4
+status: done
+engine: vision
+level: fast
+generated: 2026-08-20T12:46:17.238Z
+kind: video
+language: en-US
+stride_seconds: 15
+frames_sampled: 5
+truncated: false
+text: |-
+  FBI Told him
+  to delete this
+  Charlie Kirk video
+
+  FBI Told him
+  to delete this
+  Charlie Kirk video
+  4r-
+
+  FBI Told him
+  to delete this
+  Charlie Kirk video
+blocks:
+  - text: |-
+      FBI Told him
+      to delete this
+      Charlie Kirk video
+    confidence: 0.5
+    start: 0
+    end: 30
+  - text: |-
+      FBI Told him
+      to delete this
+      Charlie Kirk video
+      4r-
+    confidence: 0.5
+    start: 30
+    end: 45
+  - text: |-
+      FBI Told him
+      to delete this
+      Charlie Kirk video
+    confidence: 0.5
+    start: 45
+    end: 75

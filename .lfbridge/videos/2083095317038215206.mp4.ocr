@@ -1,0 +1,62 @@
+source: videos/2083095317038215206.mp4
+status: done
+engine: vision
+level: fast
+generated: 2026-08-20T12:44:51.599Z
+kind: video
+language: en-US
+stride_seconds: 15
+frames_sampled: 10
+truncated: false
+text: |-
+  E11111
+
+  F.111
+
+  F11111
+
+  .f •
+
+  .Alk
+  F, IIDI
+
+  4•
+  MoreTips@CandaceOwens.com
+
+  'Il
+  MoreTips@CandaceOwens.com
+blocks:
+  - text: E11111
+    confidence: 0.5
+    start: 0
+    end: 15
+  - text: F.111
+    confidence: 0.5
+    start: 15
+    end: 30
+  - text: F11111
+    confidence: 0.5
+    start: 30
+    end: 45
+  - text: .f •
+    confidence: 0.5
+    start: 60
+    end: 75
+  - text: |-
+      .Alk
+      F, IIDI
+    confidence: 0.5
+    start: 105
+    end: 120
+  - text: |-
+      4•
+      MoreTips@CandaceOwens.com
+    confidence: 0.75
+    start: 120
+    end: 135
+  - text: |-
+      'Il
+      MoreTips@CandaceOwens.com
+    confidence: 0.5
+    start: 135
+    end: 150

@@ -1,0 +1,41 @@
+source: site/internals/static/img/evidence/54249ad4a875bb030cfef0c6878135e9f70106fb9f0c04007feaa3d1a68877f9.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:44:48.560Z
+kind: image
+language: en-US
+text: |-
+  NEXT,
+  IT'LL DELIVER
+  THE TRUTH!
+  @PolitickleAi
+blocks:
+  - text: NEXT,
+    confidence: 1
+    bbox:
+      - 0.6422966017335938
+      - 0.719981858485552
+      - 0.10407867282629013
+      - 0.04245815798640251
+  - text: IT'LL DELIVER
+    confidence: 1
+    bbox:
+      - 0.6210937490993924
+      - 0.7578124998046876
+      - 0.220703125
+      - 0.03515625
+  - text: THE TRUTH!
+    confidence: 1
+    bbox:
+      - 0.6366849110411353
+      - 0.7966942473642116
+      - 0.19733330607414246
+      - 0.03747088089585304
+  - text: "@PolitickleAi"
+    confidence: 1
+    bbox:
+      - 0.7988281243652344
+      - 0.9218750001953124
+      - 0.173828125
+      - 0.0390625

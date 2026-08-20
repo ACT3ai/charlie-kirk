@@ -1,0 +1,57 @@
+source: site/internals/static/img/evidence/5b6b764627822b334a1b936eeb4451f73310eac0385ebe7b79114b3bb84f24d4.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:45:12.280Z
+kind: image
+language: en-US
+text: |-
+  Dylan Hope, 26, an electrician working at a
+  property next to the university, told The
+  Telegraph that a SWAT team of 30 officers
+  descended on the site at around 2pm on
+  Wednesday and searched the wooded area with
+  dogs before scouring the home.
+blocks:
+  - text: Dylan Hope, 26, an electrician working at a
+    confidence: 1
+    bbox:
+      - 0.03333333025351693
+      - 0.11111111028509912
+      - 0.7833333238262997
+      - 0.10243055555555558
+  - text: property next to the university, told The
+    confidence: 1
+    bbox:
+      - 0.03738318099688471
+      - 0.2604166674189814
+      - 0.7383177570093458
+      - 0.0902777777777779
+  - text: Telegraph that a SWAT team of 30 officers
+    confidence: 1
+    bbox:
+      - 0.03738317424714442
+      - 0.4062500004822531
+      - 0.7850467289719626
+      - 0.08680555555555547
+  - text: descended on the site at around 2pm on
+    confidence: 1
+    bbox:
+      - 0.037383181065031114
+      - 0.552083333875868
+      - 0.7554517133956387
+      - 0.08680555555555558
+  - text: Wednesday and searched the wooded area with
+    confidence: 1
+    bbox:
+      - 0.0389408076479751
+      - 0.6979166671006944
+      - 0.9034267912772587
+      - 0.08680555555555547
+  - text: dogs before scouring the home.
+    confidence: 1
+    bbox:
+      - 0.037383181820204656
+      - 0.8437500001240079
+      - 0.5950155763239876
+      - 0.08680555555555547

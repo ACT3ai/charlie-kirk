@@ -1,0 +1,65 @@
+source: site/internals/static/img/evidence/28230a180178d2bc0cd5231016716b2cf3ac65f5ca7125032ccdfc9628d5e71e.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:43:03.626Z
+kind: image
+language: en-US
+text: |-
+  R.I.P. CHARLIE KIRK
+  "When you tear out
+  a man's tongue,
+  you are not proving him a liar,
+  you're only telling
+  the world that you fear
+  what he might say"
+blocks:
+  - text: R.I.P. CHARLIE KIRK
+    confidence: 1
+    bbox:
+      - 0.1161616256619422
+      - 0.02083333577322599
+      - 0.8282828033658703
+      - 0.07083332946545273
+  - text: '"When you tear out'
+    confidence: 1
+    bbox:
+      - 0.2884199390044911
+      - 0.13179630056296743
+      - 0.48320631066866343
+      - 0.07100816371323049
+  - text: a man's tongue,
+    confidence: 1
+    bbox:
+      - 0.3373554405720037
+      - 0.20691475435237294
+      - 0.39313885906827367
+      - 0.0738428282647079
+  - text: you are not proving him a liar,
+    confidence: 1
+    bbox:
+      - 0.15935335392609692
+      - 0.2851711031233026
+      - 0.7413394919168591
+      - 0.06463878326996197
+  - text: you're only telling
+    confidence: 1
+    bbox:
+      - 0.3094688236720554
+      - 0.3555133076045627
+      - 0.43879907621247116
+      - 0.06083650190114076
+  - text: the world that you fear
+    confidence: 1
+    bbox:
+      - 0.2517321030023095
+      - 0.4258555137425313
+      - 0.558891454965358
+      - 0.06083650190114065
+  - text: what he might say"
+    confidence: 1
+    bbox:
+      - 0.2932058785362109
+      - 0.4900250420083918
+      - 0.47363443352608975
+      - 0.06747843738744475

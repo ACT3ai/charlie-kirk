@@ -1,0 +1,34 @@
+source: videos/2084405554785505716.mp4
+status: done
+engine: vision
+level: fast
+generated: 2026-08-20T12:44:56.344Z
+kind: video
+language: en-US
+stride_seconds: 15
+frames_sampled: 1
+truncated: false
+text: |-
+  KENNINGTON'S 9111
+  UVU CH
+  RLIE KI
+  cou
+  TCAS
+  BISearch
+  2025-10-23
+  2025-08-14
+  2025-08~12
+blocks:
+  - text: |-
+      KENNINGTON'S 9111
+      UVU CH
+      RLIE KI
+      cou
+      TCAS
+      BISearch
+      2025-10-23
+      2025-08-14
+      2025-08~12
+    confidence: 0.5
+    start: 0
+    end: 15

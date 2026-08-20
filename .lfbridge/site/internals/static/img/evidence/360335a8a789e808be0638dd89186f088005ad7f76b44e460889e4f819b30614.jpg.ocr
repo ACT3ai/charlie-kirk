@@ -1,0 +1,41 @@
+source: site/internals/static/img/evidence/360335a8a789e808be0638dd89186f088005ad7f76b44e460889e4f819b30614.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:43:29.087Z
+kind: image
+language: en-US
+text: |-
+  SHOT CAME
+  FROM HERE
+  CORNERS
+  SHELL CASING
+blocks:
+  - text: SHOT CAME
+    confidence: 1
+    bbox:
+      - 0.04215116623089929
+      - 0.018181820113255642
+      - 0.2558139483133952
+      - 0.098181813955307
+  - text: FROM HERE
+    confidence: 1
+    bbox:
+      - 0.04350359245798995
+      - 0.11842782258796236
+      - 0.2502021153767904
+      - 0.10496253768603014
+  - text: CORNERS
+    confidence: 1
+    bbox:
+      - 0.5988372077329578
+      - 0.03272727246521068
+      - 0.33430233001708987
+      - 0.18545454740524292
+  - text: SHELL CASING
+    confidence: 1
+    bbox:
+      - 0.22916666468750002
+      - 0.6979166671875
+      - 0.31666666666666676
+      - 0.125

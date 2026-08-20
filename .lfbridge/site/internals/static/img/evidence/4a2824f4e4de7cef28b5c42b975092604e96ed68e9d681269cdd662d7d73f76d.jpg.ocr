@@ -1,0 +1,41 @@
+source: site/internals/static/img/evidence/4a2824f4e4de7cef28b5c42b975092604e96ed68e9d681269cdd662d7d73f76d.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:44:07.020Z
+kind: image
+language: en-US
+text: |-
+  ME WR
+  aS24
+  UV/y
+  SELLE
+blocks:
+  - text: ME WR
+    confidence: 1
+    bbox:
+      - 1.208178419762816e-9
+      - 0.282426778155509
+      - 0.1449814126394052
+      - 0.03556485355648542
+  - text: aS24
+    confidence: 0.3
+    bbox:
+      - 0.1646047837798402
+      - 0.5946395442670595
+      - 0.044883919471258554
+      - 0.07001509726296906
+  - text: UV/y
+    confidence: 0.3
+    bbox:
+      - 0.2267657982651797
+      - 0.05020920461413292
+      - 0.1858736059479554
+      - 0.07322175732217584
+  - text: SELLE
+    confidence: 1
+    bbox:
+      - 0.8810408908457249
+      - 0.7029288704497908
+      - 0.10780669144981403
+      - 0.01673640167364021

@@ -1,0 +1,94 @@
+source: site/internals/static/img/evidence/6e444aa1102e18fad6733d7bf2193e1cbc97f2fcb09d55b2e757d0072abb30e0.png
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:46:20.013Z
+kind: image
+language: en-US
+text: >-
+  Yet another curious aspect, though, is that in the search warrants the post is
+  not attributed to
+
+  "Zealous Monkey 55095" but to "Tylor/Ikum." Note that "Tylor" is not spelt as
+  per Robinson's
+
+  given name, and it seems difficult to account for the fact that, apparently,
+  Lance learned about
+
+  the surrender, showing the post to the FBI, via Discord and not via a text as
+  per the other
+
+  messages. While it does seem that the Zealous Monkey username was operated by
+  Robinson,
+
+  as Discord seem to have confirmed, even as they disavowed the "text" messages
+  (that the PCA
+
+  had attributed to Discord), moreover, a backstory seems associated with
+  Zealous Monkey and
+
+  explored by Ken Klippenstein, but of Tylor/lkum we have heard nothing.
+blocks:
+  - text: Yet another curious aspect, though, is that in the search warrants the
+      post is not attributed to
+    confidence: 1
+    bbox:
+      - 0.02196193180819912
+      - 0.04575163259803927
+      - 0.9341142020497802
+      - 0.11111111111111105
+  - text: "\"Zealous Monkey 55095\" but to \"Tylor/Ikum.\" Note that \"Tylor\" is
+      not spelt as per Robinson's"
+    confidence: 1
+    bbox:
+      - 0.025000024100666464
+      - 0.14705882099433842
+      - 0.9249999463820004
+      - 0.130718954248366
+  - text: given name, and it seems difficult to account for the fact that,
+      apparently, Lance learned about
+    confidence: 1
+    bbox:
+      - 0.02083336909063839
+      - 0.2777777768518519
+      - 0.9541666190062225
+      - 0.11111111111111116
+  - text: the surrender, showing the post to the FBI, via Discord and not via a text
+      as per the other
+    confidence: 1
+    bbox:
+      - 0.021961938268667564
+      - 0.4052287578022875
+      - 0.8989751098096632
+      - 0.0980392156862746
+  - text: messages. While it does seem that the Zealous Monkey username was operated
+      by Robinson,
+    confidence: 1
+    bbox:
+      - 0.023397140751664085
+      - 0.514642566389949
+      - 0.9590749000560487
+      - 0.11288854810926652
+  - text: as Discord seem to have confirmed, even as they disavowed the "text"
+      messages (that the PCA
+    confidence: 1
+    bbox:
+      - 0.023426064409467987
+      - 0.6274509794662309
+      - 0.9648609077598829
+      - 0.11111111111111116
+  - text: had attributed to Discord), moreover, a backstory seems associated with
+      Zealous Monkey and
+    confidence: 1
+    bbox:
+      - 0.020833347621888952
+      - 0.7407407414814814
+      - 0.9541666190062227
+      - 0.11220043780756928
+  - text: explored by Ken Klippenstein, but of Tylor/lkum we have heard nothing.
+    confidence: 1
+    bbox:
+      - 0.02083335133216643
+      - 0.83333333102413
+      - 0.7249999821273334
+      - 0.130718954248366

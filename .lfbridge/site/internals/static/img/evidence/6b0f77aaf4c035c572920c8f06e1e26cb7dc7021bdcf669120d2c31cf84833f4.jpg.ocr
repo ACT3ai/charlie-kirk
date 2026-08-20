@@ -1,0 +1,300 @@
+source: site/internals/static/img/evidence/6b0f77aaf4c035c572920c8f06e1e26cb7dc7021bdcf669120d2c31cf84833f4.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:46:11.187Z
+kind: image
+language: en-US
+text: >-
+  DISPOSITION OF EVIDENCE
+
+  Laboratory produced specimens (Exhibit 1.11) have been packaged with the
+  submitted evidence, and all items
+
+  will be retumed to the contributor once all laboratory examinations are
+  completed.
+
+  Examiner:
+
+  KARNER
+
+  Date: 2025.09.17
+
+  16:11:16-0400
+
+  Samantha E.A. Karner
+
+  Firearm and Toolmark Examine
+
+  Technical Reviewer:
+
+  Digitally signer
+
+  y SEAN TOKA
+
+  - Date: 2025.09.17
+
+  16:23:17 -04'00"
+
+  Sean T. Tokay
+
+  Firearm and Toolmark Examiner
+
+  Administrative Reviewer.
+
+  Digitally signed by
+
+  JENNIFER
+
+  Date: 2025.09.12
+
+  6:30:32-040C
+
+  Jennifer J. Owens
+
+  Date of Issue
+
+  Chief, Firearms & Identification Section
+
+  2025-W-000401
+
+  Submission(s): 1
+
+  Page 3 of 4
+
+  FOR OFFICIAL USE ONLYFORMATION
+
+  «unner aissemination to any
+
+  unauinorized person or agency
+
+  may result in both civil and
+
+  criminal liability.
+blocks:
+  - text: DISPOSITION OF EVIDENCE
+    confidence: 1
+    bbox:
+      - 0.05898876752106734
+      - 0.02444444444444449
+      - 0.27808988764044945
+      - 0.022222222222222143
+  - text: Laboratory produced specimens (Exhibit 1.11) have been packaged with the
+      submitted evidence, and all items
+    confidence: 1
+    bbox:
+      - 0.05898877275280879
+      - 0.062222222088888945
+      - 0.8707865168539327
+      - 0.01777777777777778
+  - text: will be retumed to the contributor once all laboratory examinations are
+      completed.
+    confidence: 1
+    bbox:
+      - 0.061797760955056014
+      - 0.07777777766666671
+      - 0.651685393258427
+      - 0.01777777777777778
+  - text: "Examiner:"
+    confidence: 1
+    bbox:
+      - 0.05898876513342695
+      - 0.15111111100000008
+      - 0.08707865168539326
+      - 0.013333333333333197
+  - text: KARNER
+    confidence: 1
+    bbox:
+      - 0.17415730220037456
+      - 0.20000000007407404
+      - 0.0702247191011236
+      - 0.01333333333333342
+  - text: "Date: 2025.09.17"
+    confidence: 1
+    bbox:
+      - 0.17696629405430706
+      - 0.21333333322222225
+      - 0.11516853932584267
+      - 0.011111111111111072
+  - text: 16:11:16-0400
+    confidence: 1
+    bbox:
+      - 0.17694508614288798
+      - 0.2243373468004598
+      - 0.10678398475218356
+      - 0.01354752858479813
+  - text: Samantha E.A. Karner
+    confidence: 1
+    bbox:
+      - 0.06460674297752807
+      - 0.2599999998888889
+      - 0.16853932584269665
+      - 0.01777777777777778
+  - text: Firearm and Toolmark Examine
+    confidence: 1
+    bbox:
+      - 0.061797750308988854
+      - 0.27555555564444445
+      - 0.25
+      - 0.01777777777777767
+  - text: "Technical Reviewer:"
+    confidence: 1
+    bbox:
+      - 0.0561797764847512
+      - 0.3288888888095238
+      - 0.16853932584269662
+      - 0.020000000000000018
+  - text: Digitally signer
+    confidence: 1
+    bbox:
+      - 0.19382022584269665
+      - 0.37777777763888887
+      - 0.0898876404494382
+      - 0.015555555555555545
+  - text: y SEAN TOKA
+    confidence: 1
+    bbox:
+      - 0.19382022558520598
+      - 0.38888888879629624
+      - 0.10393258426966293
+      - 0.015555555555555545
+  - text: "- Date: 2025.09.17"
+    confidence: 1
+    bbox:
+      - 0.17134831288623598
+      - 0.40444444449999994
+      - 0.13764044943820225
+      - 0.017777777777777892
+  - text: 16:23:17 -04'00"
+    confidence: 1
+    bbox:
+      - 0.18539325730337078
+      - 0.4200000000888888
+      - 0.11235955056179772
+      - 0.01333333333333342
+  - text: Sean T. Tokay
+    confidence: 1
+    bbox:
+      - 0.06171837425401242
+      - 0.45525108998910957
+      - 0.12094527683900982
+      - 0.020608931647406736
+  - text: Firearm and Toolmark Examiner
+    confidence: 1
+    bbox:
+      - 0.06179775469502406
+      - 0.47333333323809523
+      - 0.2640449438202247
+      - 0.01777777777777778
+  - text: Administrative Reviewer.
+    confidence: 1
+    bbox:
+      - 0.584269664653558
+      - 0.3288888888148148
+      - 0.2078651685393258
+      - 0.01777777777777778
+  - text: Digitally signed by
+    confidence: 1
+    bbox:
+      - 0.7078651704588015
+      - 0.3733333332222223
+      - 0.1151685393258427
+      - 0.011111111111111072
+  - text: JENNIFER
+    confidence: 1
+    bbox:
+      - 0.7050561796465357
+      - 0.3844444444212962
+      - 0.0730337078651685
+      - 0.011111111111111183
+  - text: "Date: 2025.09.12"
+    confidence: 1
+    bbox:
+      - 0.7134831450842697
+      - 0.4111111112222223
+      - 0.098314606741573
+      - 0.015555555555555545
+  - text: 6:30:32-040C
+    confidence: 1
+    bbox:
+      - 0.7134110207107551
+      - 0.4219570593408134
+      - 0.09003189172637593
+      - 0.01608588112725151
+  - text: Jennifer J. Owens
+    confidence: 1
+    bbox:
+      - 0.578651683497191
+      - 0.4555555556666666
+      - 0.1516853932584269
+      - 0.01777777777777778
+  - text: Date of Issue
+    confidence: 1
+    bbox:
+      - 0.7471910096910113
+      - 0.45555555572222217
+      - 0.1235955056179775
+      - 0.017777777777777892
+  - text: Chief, Firearms & Identification Section
+    confidence: 1
+    bbox:
+      - 0.5814606709550562
+      - 0.471111110911111
+      - 0.3258426966292135
+      - 0.020000000000000018
+  - text: 2025-W-000401
+    confidence: 1
+    bbox:
+      - 0.05898876362359553
+      - 0.9066666664074073
+      - 0.13764044943820225
+      - 0.015555555555555545
+  - text: "Submission(s): 1"
+    confidence: 1
+    bbox:
+      - 0.06159959942843693
+      - 0.9234274596608885
+      - 0.1380367600515987
+      - 0.0198117468092176
+  - text: Page 3 of 4
+    confidence: 1
+    bbox:
+      - 0.45209213822195743
+      - 0.9260851496460929
+      - 0.09019774533389663
+      - 0.016718590524461452
+  - text: FOR OFFICIAL USE ONLYFORMATION
+    confidence: 1
+    bbox:
+      - 0.6741573074087078
+      - 0.9244444443055555
+      - 0.3230337078651685
+      - 0.015555555555555545
+  - text: «unner aissemination to any
+    confidence: 1
+    bbox:
+      - 0.8033707882435325
+      - 0.9422222221111111
+      - 0.1797752594679929
+      - 0.006666666666666599
+  - text: unauinorized person or agency
+    confidence: 1
+    bbox:
+      - 0.7977528139747188
+      - 0.9555555554999999
+      - 0.199438202247191
+      - 0.00666666666666671
+  - text: may result in both civil and
+    confidence: 1
+    bbox:
+      - 0.7977528111657303
+      - 0.9666666665833333
+      - 0.1741573033707866
+      - 0.011111111111111072
+  - text: criminal liability.
+    confidence: 1
+    bbox:
+      - 0.7977528107209737
+      - 0.9799999999629628
+      - 0.1039325842696629
+      - 0.011111111111111183

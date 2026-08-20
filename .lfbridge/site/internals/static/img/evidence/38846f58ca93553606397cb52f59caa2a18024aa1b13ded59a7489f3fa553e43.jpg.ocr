@@ -1,0 +1,65 @@
+source: site/internals/static/img/evidence/38846f58ca93553606397cb52f59caa2a18024aa1b13ded59a7489f3fa553e43.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:43:33.359Z
+kind: image
+language: en-US
+text: |-
+  THE
+  MER CAN
+  COMEBAC.
+  WRONG 2 PROVE ME WRONG
+  AMER LAN
+  COMEBACK
+  6:31 / 13:58
+blocks:
+  - text: THE
+    confidence: 1
+    bbox:
+      - 0.0930232566012532
+      - 0.023376623565658283
+      - 0.027616278415710613
+      - 0.012987012349202964
+  - text: MER CAN
+    confidence: 1
+    bbox:
+      - 0.10174418467708002
+      - 0.03636363775057361
+      - 0.20784884291743466
+      - 0.05194804939681186
+  - text: COMEBAC.
+    confidence: 0.5
+    bbox:
+      - 0.09738372198231295
+      - 0.07532467575902924
+      - 0.21220929756880447
+      - 0.03896103818973373
+  - text: WRONG 2 PROVE ME WRONG
+    confidence: 1
+    bbox:
+      - 0.012500013235741852
+      - 0.15555555393737575
+      - 0.5166666475761352
+      - 0.09654025232006691
+  - text: AMER LAN
+    confidence: 1
+    bbox:
+      - 0.2427325639310235
+      - 0.6778443116790203
+      - 0.1918604546513698
+      - 0.12215568862275439
+  - text: COMEBACK
+    confidence: 1
+    bbox:
+      - 0.25284896646692107
+      - 0.7613625877215804
+      - 0.20228306665497237
+      - 0.12965928494573353
+  - text: 6:31 / 13:58
+    confidence: 1
+    bbox:
+      - 0.05087209343946088
+      - 0.9766233770721517
+      - 0.03924418390596199
+      - 0.013196982309489957

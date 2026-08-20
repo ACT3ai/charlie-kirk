@@ -1,0 +1,89 @@
+source: site/internals/static/img/evidence/57bf48584b5b59d8356c96b60041a97f4bc246dbb84db5453cc86e0d89179288.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:44:52.598Z
+kind: image
+language: en-US
+text: |-
+  PROJECT
+  CONSTITUTION
+  REAL ME
+  AMERICA'S
+  VOICE
+  THE CHARLIE KIRK SHOW
+  EMAIL: FREEDOM@CHARLIEKIRK.COM
+  THE
+  CHARLIE KIRK
+  SHOW
+blocks:
+  - text: PROJECT
+    confidence: 1
+    bbox:
+      - 0.9287790706088398
+      - 0.08527131834959678
+      - 0.04360465049743656
+      - 0.025839792887369706
+  - text: CONSTITUTION
+    confidence: 1
+    bbox:
+      - 0.9155640398449322
+      - 0.1073076590710873
+      - 0.07148819923400873
+      - 0.028278738657633418
+  - text: REAL ME
+    confidence: 1
+    bbox:
+      - 0.050872094160738186
+      - 0.7722222224885044
+      - 0.09156976699829103
+      - 0.03139534844292535
+  - text: AMERICA'S
+    confidence: 1
+    bbox:
+      - 0.04929122222594348
+      - 0.7997868651287899
+      - 0.10054546356201172
+      - 0.036085183885362415
+  - text: VOICE
+    confidence: 1
+    bbox:
+      - 0.04941860537572462
+      - 0.8320413438575317
+      - 0.06104650974273683
+      - 0.03359173032972551
+  - text: THE CHARLIE KIRK SHOW
+    confidence: 1
+    bbox:
+      - 0.16715116492376667
+      - 0.7984496123349327
+      - 0.5668604660034179
+      - 0.06201550377739806
+  - text: "EMAIL: FREEDOM@CHARLIEKIRK.COM"
+    confidence: 1
+    bbox:
+      - 0.17005814644609785
+      - 0.8888888895075991
+      - 0.46075580596923826
+      - 0.03888888888888897
+  - text: THE
+    confidence: 1
+    bbox:
+      - 0.7877906985272518
+      - 0.7984496127081426
+      - 0.03052325487136842
+      - 0.020671833886040547
+  - text: CHARLIE KIRK
+    confidence: 1
+    bbox:
+      - 0.7892441861313728
+      - 0.8165374682976695
+      - 0.174418601989746
+      - 0.03359173032972551
+  - text: SHOW
+    confidence: 1
+    bbox:
+      - 0.9229651166011013
+      - 0.8475452201607558
+      - 0.039244184494018564
+      - 0.023255812327067082

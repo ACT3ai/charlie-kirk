@@ -1,0 +1,33 @@
+source: site/internals/static/img/evidence/4d0dbaf13ec08f4179052e20d8029138a0c0eee2ddf6890261e22114ff84ad67.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:44:12.454Z
+kind: image
+language: en-US
+text: |-
+  BYU
+  TikTo
+  @ caseypbryst
+blocks:
+  - text: BYU
+    confidence: 0.5
+    bbox:
+      - 0.7139830511385697
+      - 0.08284883703954071
+      - 0.050847456822941006
+      - 0.013081395626068137
+  - text: TikTo
+    confidence: 1
+    bbox:
+      - 0.8897104760905529
+      - 0.7584674835255744
+      - 0.10405362383840877
+      - 0.02376270727677776
+  - text: "@ caseypbryst"
+    confidence: 1
+    bbox:
+      - 0.789914936746722
+      - 0.7865288489078645
+      - 0.2082496756937966
+      - 0.023648734526200754

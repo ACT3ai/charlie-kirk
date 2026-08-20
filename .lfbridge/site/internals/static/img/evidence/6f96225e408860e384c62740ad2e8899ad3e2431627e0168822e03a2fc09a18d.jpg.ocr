@@ -1,0 +1,41 @@
+source: site/internals/static/img/evidence/6f96225e408860e384c62740ad2e8899ad3e2431627e0168822e03a2fc09a18d.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:46:26.837Z
+kind: image
+language: en-US
+text: |-
+  Right veh
+  16:19 / 20:11
+  YREF
+  CC
+blocks:
+  - text: Right veh
+    confidence: 1
+    bbox:
+      - 0.26630163813513413
+      - 0.04125576626470362
+      - 0.16711859661599865
+      - 0.10396577073289104
+  - text: 16:19 / 20:11
+    confidence: 1
+    bbox:
+      - 0.09166666708333332
+      - 0.7714285704760313
+      - 0.22500000000000003
+      - 0.12857142726222315
+  - text: YREF
+    confidence: 0.5
+    bbox:
+      - 0.8852304744351153
+      - 0.33106325192151353
+      - 0.1077055159859035
+      - 0.10454016333227767
+  - text: CC
+    confidence: 0.5
+    bbox:
+      - 0.914354644632035
+      - 0.7916666679088084
+      - 0.034981905066448715
+      - 0.06666666323000248

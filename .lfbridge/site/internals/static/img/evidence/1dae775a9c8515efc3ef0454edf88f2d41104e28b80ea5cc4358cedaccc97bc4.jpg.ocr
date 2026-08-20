@@ -1,0 +1,49 @@
+source: site/internals/static/img/evidence/1dae775a9c8515efc3ef0454edf88f2d41104e28b80ea5cc4358cedaccc97bc4.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:42:44.067Z
+kind: image
+language: en-US
+text: |-
+  PRIVE
+  C
+  Vref
+  VREPYO
+  B2RI
+blocks:
+  - text: PRIVE
+    confidence: 1
+    bbox:
+      - 0.8877702450068681
+      - 0.12083636472008918
+      - 0.11107596009969711
+      - 0.07459840512426918
+  - text: C
+    confidence: 1
+    bbox:
+      - 0.8924418606627279
+      - 0.26729559828570926
+      - 0.014534883201122284
+      - 0.044025155000908534
+  - text: Vref
+    confidence: 0.5
+    bbox:
+      - 0.8430232558197686
+      - 0.33961952640987136
+      - 0.05129959061741829
+      - 0.06659890430926263
+  - text: VREPYO
+    confidence: 0.3
+    bbox:
+      - 0.8310436619080028
+      - 0.395381263771617
+      - 0.0575331375002861
+      - 0.03011232501104577
+  - text: B2RI
+    confidence: 0.3
+    bbox:
+      - 0.7572674413781144
+      - 0.7232704398250445
+      - 0.040697675198316574
+      - 0.03144654159061999

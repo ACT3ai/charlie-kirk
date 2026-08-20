@@ -1,0 +1,81 @@
+source: site/internals/static/img/evidence/64ecda2501f1b4fc639dcb4c87d10f7cef5559a8a28f0b5de0cf67def116f3e9.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:45:50.480Z
+kind: image
+language: en-US
+text: |-
+  CALIFOR
+  TOUR
+  PROVE ME WRONG 7 PROVE
+  CONCONEBACKTOUR COM
+  AMER
+  COMI
+  CO VERACH
+  FEE/M
+  TRUMP
+blocks:
+  - text: CALIFOR
+    confidence: 1
+    bbox:
+      - 0.011627907478580921
+      - 0.11627906991961179
+      - 0.024709300994873045
+      - 0.018087855445014123
+  - text: TOUR
+    confidence: 1
+    bbox:
+      - 0.9025308563014823
+      - 0.02266306183009681
+      - 0.06703131198883061
+      - 0.032193255954318545
+  - text: PROVE ME WRONG 7 PROVE
+    confidence: 1
+    bbox:
+      - 0.2431577748226789
+      - 0.13339699122380888
+      - 0.7557760620117188
+      - 0.19590783013237845
+  - text: CONCONEBACKTOUR COM
+    confidence: 0.5
+    bbox:
+      - 0.9433139538371301
+      - 0.43888888877572274
+      - 0.05087209224700928
+      - 0.01333333333333342
+  - text: AMER
+    confidence: 1
+    bbox:
+      - 0.19186046484146296
+      - 0.4677002587544066
+      - 0.02761627912521361
+      - 0.02842377132839613
+  - text: COMI
+    confidence: 1
+    bbox:
+      - 0.19331395410770683
+      - 0.4935400526045357
+      - 0.023255813121795643
+      - 0.02842377132839624
+  - text: CO VERACH
+    confidence: 0.5
+    bbox:
+      - 0.2834302322243943
+      - 0.5011111106273374
+      - 0.045058140754699716
+      - 0.033772609498765704
+  - text: FEE/M
+    confidence: 0.5
+    bbox:
+      - 0.6555232562927691
+      - 0.599483204232821
+      - 0.026162788867950426
+      - 0.015503875944349543
+  - text: TRUMP
+    confidence: 1
+    bbox:
+      - 0.23888277587378634
+      - 0.9277184147379547
+      - 0.03696574687957763
+      - 0.025211260053846662

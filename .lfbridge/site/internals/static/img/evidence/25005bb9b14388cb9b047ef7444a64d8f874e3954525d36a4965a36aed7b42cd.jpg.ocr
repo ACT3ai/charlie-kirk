@@ -1,0 +1,25 @@
+source: site/internals/static/img/evidence/25005bb9b14388cb9b047ef7444a64d8f874e3954525d36a4965a36aed7b42cd.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:42:57.112Z
+kind: image
+language: en-US
+text: |-
+  AMEN
+  ER-CAN
+blocks:
+  - text: AMEN
+    confidence: 1
+    bbox:
+      - 0.0981349608800724
+      - 0.5248838919598248
+      - 0.0612457589644862
+      - 0.06398340330178187
+  - text: ER-CAN
+    confidence: 1
+    bbox:
+      - 0.41858744665743874
+      - 0.7567803004864739
+      - 0.27653196147159254
+      - 0.23594556949622714

@@ -1,0 +1,73 @@
+source: site/internals/static/img/evidence/5714944d6c13b89dec96071e4c41074cec0e7e00d933f894b646cb19e5c9de2a.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:44:49.885Z
+kind: image
+language: en-US
+text: |-
+  File
+  Edit
+  View
+  History
+  Bookmarks
+  Pro
+  glif - "New Chat"
+  glif.app/chat/c/13pg|j0mAaOdKS5г
+blocks:
+  - text: File
+    confidence: 1
+    bbox:
+      - 0.0102040826530612
+      - 0.03571428511904762
+      - 0.08163265306122448
+      - 0.09523809523809523
+  - text: Edit
+    confidence: 1
+    bbox:
+      - 0.14795918463010205
+      - 0.02380952514880952
+      - 0.086734693877551
+      - 0.1071428571428571
+  - text: View
+    confidence: 1
+    bbox:
+      - 0.2908163275510203
+      - 0.023809523452380965
+      - 0.10204081632653061
+      - 0.1071428571428572
+  - text: History
+    confidence: 1
+    bbox:
+      - 0.4474963963008451
+      - 0.025982854362269103
+      - 0.15541807486086473
+      - 0.11222518058050235
+  - text: Bookmarks
+    confidence: 1
+    bbox:
+      - 0.6530612221938776
+      - 0.023809524404761917
+      - 0.22959183673469385
+      - 0.1071428571428571
+  - text: Pro
+    confidence: 1
+    bbox:
+      - 0.9387755106049562
+      - 0.023809523299319735
+      - 0.056122448979591844
+      - 0.09523809523809523
+  - text: glif - "New Chat"
+    confidence: 1
+    bbox:
+      - 0.16836735102040806
+      - 0.2738095227678572
+      - 0.326530612244898
+      - 0.1071428571428571
+  - text: glif.app/chat/c/13pg|j0mAaOdKS5г
+    confidence: 0.5
+    bbox:
+      - 0.2704081684402332
+      - 0.5952380946428572
+      - 0.7244897959183674
+      - 0.13095238095238093

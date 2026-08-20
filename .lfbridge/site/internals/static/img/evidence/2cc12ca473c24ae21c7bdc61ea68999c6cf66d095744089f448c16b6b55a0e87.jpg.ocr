@@ -1,0 +1,97 @@
+source: site/internals/static/img/evidence/2cc12ca473c24ae21c7bdc61ea68999c6cf66d095744089f448c16b6b55a0e87.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:43:16.874Z
+kind: image
+language: en-US
+text: |-
+  Zeb Boykin
+  @ZebBoykin • 4h
+  I think I was wrong.
+  This is bullet post exit.
+  It would fix two other inconsistencies and be easier to capture on camera
+  as it's moving significantly slower.
+  We shouldn't see that much movement from Charlie in the next frame yet.
+  It also confirms the other angle with the 2 frames timing of capturing the
+  projectile.
+  NRUNU I
+  ...
+blocks:
+  - text: Zeb Boykin
+    confidence: 1
+    bbox:
+      - 0.10428986452611926
+      - 0.023615103078858724
+      - 0.1327246209849482
+      - 0.026682839186295215
+  - text: "@ZebBoykin • 4h"
+    confidence: 1
+    bbox:
+      - 0.3152173914492753
+      - 0.02391304369565217
+      - 0.18695652173913047
+      - 0.02608695652173909
+  - text: I think I was wrong.
+    confidence: 1
+    bbox:
+      - 0.10387025605111391
+      - 0.06118102322243457
+      - 0.218377917745839
+      - 0.02837920810865313
+  - text: This is bullet post exit.
+    confidence: 1
+    bbox:
+      - 0.10434782863043476
+      - 0.09565217391304348
+      - 0.2543478260869565
+      - 0.02608695652173909
+  - text: It would fix two other inconsistencies and be easier to capture on camera
+    confidence: 1
+    bbox:
+      - 0.10422795099099114
+      - 0.1244249455068962
+      - 0.819822825556216
+      - 0.031186340166174942
+  - text: as it's moving significantly slower.
+    confidence: 1
+    bbox:
+      - 0.10434782991304342
+      - 0.16086956521739126
+      - 0.3826086956521739
+      - 0.026086956521739202
+  - text: We shouldn't see that much movement from Charlie in the next frame yet.
+    confidence: 1
+    bbox:
+      - 0.10434783559782584
+      - 0.19347826119565215
+      - 0.826086956521739
+      - 0.026086956521739202
+  - text: It also confirms the other angle with the 2 frames timing of capturing the
+    confidence: 1
+    bbox:
+      - 0.10434781800000013
+      - 0.2260869566086956
+      - 0.808695652173913
+      - 0.026086956521739202
+  - text: projectile.
+    confidence: 1
+    bbox:
+      - 0.10652173855978261
+      - 0.25869565184782606
+      - 0.11521739130434783
+      - 0.026086956521739202
+  - text: NRUNU I
+    confidence: 0.5
+    bbox:
+      - 0.1021739132463769
+      - 0.31521739091304346
+      - 0.4260869565217391
+      - 0.11739130434782619
+  - text: ...
+    confidence: 1
+    bbox:
+      - 0.9195652178481967
+      - 0.028260869673913058
+      - 0.03478260662244714
+      - 0.010869565217391242

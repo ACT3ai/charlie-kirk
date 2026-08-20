@@ -1,0 +1,82 @@
+source: site/internals/static/img/evidence/74d287dc55bcd553d96b155bf4b607d05884545659a0a6594cab16639015817d.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:46:33.784Z
+kind: image
+language: en-US
+text: |-
+  Sam Parker
+  › @BasedSamParker • 1h
+  BREAKING, FBI DESTRUCTION OF EVIDENCE: Ryne Simmons says the FBI
+  tried to get him to DELETE his Charlie Kirk assassination video. Is this why
+  we've gotten so little footage from witnesses?! How many witnesses
+  followed these FBI instructions? Outrageous. Cover-up confirmed?
+  ...
+  1:02
+  @BasedSamParker @SamParkerSenate
+blocks:
+  - text: Sam Parker
+    confidence: 1
+    bbox:
+      - 0.09531013472012105
+      - 0.04625199368421051
+      - 0.14372163388804843
+      - 0.022328548644338087
+  - text: › @BasedSamParker • 1h
+    confidence: 1
+    bbox:
+      - 0.33585476707850065
+      - 0.04625199353180931
+      - 0.2829046898638426
+      - 0.022328548644338087
+  - text: "BREAKING, FBI DESTRUCTION OF EVIDENCE: Ryne Simmons says the FBI"
+    confidence: 1
+    bbox:
+      - 0.09682300257186069
+      - 0.08452950543593829
+      - 0.853252647503782
+      - 0.030303030303030387
+  - text: tried to get him to DELETE his Charlie Kirk assassination video. Is this
+      why
+    confidence: 1
+    bbox:
+      - 0.09531014223038677
+      - 0.1196172248348143
+      - 0.8502269288956127
+      - 0.028708133971291905
+  - text: we've gotten so little footage from witnesses?! How many witnesses
+    confidence: 1
+    bbox:
+      - 0.0968229905635402
+      - 0.15470494425837322
+      - 0.7836611195158851
+      - 0.028708133971291905
+  - text: followed these FBI instructions? Outrageous. Cover-up confirmed?
+    confidence: 1
+    bbox:
+      - 0.09531014258698926
+      - 0.1913875596624136
+      - 0.7715582450832073
+      - 0.027113237639553422
+  - text: ...
+    confidence: 1
+    bbox:
+      - 0.9349470496217853
+      - 0.05263157901116433
+      - 0.030257186081694365
+      - 0.009569377990430561
+  - text: 1:02
+    confidence: 1
+    bbox:
+      - 0.13146727547931922
+      - 0.934275618574022
+      - 0.047201606762030474
+      - 0.024590708232192116
+  - text: "@BasedSamParker @SamParkerSenate"
+    confidence: 1
+    bbox:
+      - 0.3343419045574887
+      - 0.9633173841706538
+      - 0.22844175491679275
+      - 0.01594896331738438

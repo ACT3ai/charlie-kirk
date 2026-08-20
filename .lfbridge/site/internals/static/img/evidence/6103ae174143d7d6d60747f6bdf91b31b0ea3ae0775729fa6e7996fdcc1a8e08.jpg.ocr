@@ -1,0 +1,145 @@
+source: site/internals/static/img/evidence/6103ae174143d7d6d60747f6bdf91b31b0ea3ae0775729fa6e7996fdcc1a8e08.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:45:20.102Z
+kind: image
+language: en-US
+text: >-
+  A search warrant was obtained for Lance Twiggs' cellphone. During a review of
+  the data
+
+  and information stored on Lance Twiggs' device, the Statewide Information
+  Analysis
+
+  Center (SIAC) provided me with information for the two Apple ID addresses
+  associated
+
+  with Twiggs'
+
+  device. The Apple ID emails were: lancetwiggs@icloud.com and
+
+  memesinsteadofdreams@gmail.com. Tyler Robinson and Lance Twiggs both were
+
+  communicating (refer to the aforementioned text messages) on Apple iPhone
+  devices.
+
+  According to information obtained from FBI investigators who reviewed the
+  information
+
+  stored on Lance Twiggs' device, Twiggs took a photograph of a letter that
+  Tyler Robinson
+
+  wrote to him. For context, Tyler Robinson had sent a message to Lance Twiggs
+  on 9/10
+
+  /2025 that said "drop what you are doing, look under my keyboard". During
+  Lance Twiggs'
+
+  interview with investigators, he explained that he found a handwritten letter
+  underneath the
+
+  keyboard. Based on information from Tyler and Lance's phones, it is believed
+  that Tyler
+blocks:
+  - text: A search warrant was obtained for Lance Twiggs' cellphone. During a review
+      of the data
+    confidence: 1
+    bbox:
+      - 0.07083334953314273
+      - 0.05681818492053081
+      - 0.8791666360726034
+      - 0.08047689766180322
+  - text: and information stored on Lance Twiggs' device, the Statewide Information
+      Analysis
+    confidence: 1
+    bbox:
+      - 0.06666668253850819
+      - 0.12499999881505985
+      - 0.8833332721452068
+      - 0.07991803278688525
+  - text: Center (SIAC) provided me with information for the two Apple ID addresses
+      associated
+    confidence: 1
+    bbox:
+      - 0.07218044768796997
+      - 0.2090163926229509
+      - 0.8766917293233084
+      - 0.06557377049180324
+  - text: with Twiggs'
+    confidence: 1
+    bbox:
+      - 0.07053797027981352
+      - 0.272363751695587
+      - 0.146142107741277
+      - 0.07412495378588069
+  - text: "device. The Apple ID emails were: lancetwiggs@icloud.com and"
+    confidence: 1
+    bbox:
+      - 0.2150375848120303
+      - 0.2827868850409836
+      - 0.7338345864661655
+      - 0.06557377049180324
+  - text: memesinsteadofdreams@gmail.com. Tyler Robinson and Lance Twiggs both were
+    confidence: 1
+    bbox:
+      - 0.07067668075187997
+      - 0.3524590167008197
+      - 0.8781954887218044
+      - 0.06557377049180324
+  - text: communicating (refer to the aforementioned text messages) on Apple iPhone
+      devices.
+    confidence: 1
+    bbox:
+      - 0.07083334348958299
+      - 0.4200819662896147
+      - 0.8125
+      - 0.06855439748920378
+  - text: According to information obtained from FBI investigators who reviewed the
+      information
+    confidence: 1
+    bbox:
+      - 0.070833359619948
+      - 0.5676229520280818
+      - 0.8791666360726034
+      - 0.069672131147541
+  - text: stored on Lance Twiggs' device, Twiggs took a photograph of a letter that
+      Tyler Robinson
+    confidence: 1
+    bbox:
+      - 0.07067668763909775
+      - 0.6352459009016393
+      - 0.8781954887218045
+      - 0.07377049180327866
+  - text: wrote to him. For context, Tyler Robinson had sent a message to Lance
+      Twiggs on 9/10
+    confidence: 1
+    bbox:
+      - 0.07218044756390986
+      - 0.7172131154098361
+      - 0.8766917293233083
+      - 0.06557377049180324
+  - text: /2025 that said "drop what you are doing, look under my keyboard". During
+      Lance Twiggs'
+    confidence: 1
+    bbox:
+      - 0.07067669904761893
+      - 0.7827868847336066
+      - 0.8781954887218044
+      - 0.069672131147541
+  - text: interview with investigators, he explained that he found a handwritten
+      letter underneath the
+    confidence: 1
+    bbox:
+      - 0.07083335147758718
+      - 0.8522727254257271
+      - 0.8791666360726035
+      - 0.06818181960309133
+  - text: keyboard. Based on information from Tyler and Lance's phones, it is
+      believed that Tyler
+    confidence: 1
+    bbox:
+      - 0.07067668544575734
+      - 0.9262295083430914
+      - 0.8796992481203009
+      - 0.069672131147541

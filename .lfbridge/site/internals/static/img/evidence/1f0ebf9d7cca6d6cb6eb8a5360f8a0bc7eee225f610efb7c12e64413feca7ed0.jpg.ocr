@@ -1,0 +1,73 @@
+source: site/internals/static/img/evidence/1f0ebf9d7cca6d6cb6eb8a5360f8a0bc7eee225f610efb7c12e64413feca7ed0.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:42:44.903Z
+kind: image
+language: en-US
+text: >-
+  Army Wants To Test Air-Launched
+
+  Drones From A Global Express
+
+  Business Jet
+
+  The planned trials tally with previous comments about launching the drones
+  from the
+
+  THOMAS NEWDICK / PUBLISHED JAN 3, 3625 401 PH EST /O 38
+
+  24001
+
+  naad
+blocks:
+  - text: Army Wants To Test Air-Launched
+    confidence: 1
+    bbox:
+      - 0.09111110722222229
+      - 0.15744680872340422
+      - 0.38888888888888884
+      - 0.04680851063829783
+  - text: Drones From A Global Express
+    confidence: 1
+    bbox:
+      - 0.10888889098148145
+      - 0.20851063872340425
+      - 0.35333333333333333
+      - 0.051063829787234005
+  - text: Business Jet
+    confidence: 1
+    bbox:
+      - 0.2133333342638889
+      - 0.2638297870478723
+      - 0.1488888888888889
+      - 0.04680851063829783
+  - text: The planned trials tally with previous comments about launching the drones
+      from the
+    confidence: 1
+    bbox:
+      - 0.11111111699999981
+      - 0.32340425510638293
+      - 0.35333333333333333
+      - 0.021276595744680993
+  - text: THOMAS NEWDICK / PUBLISHED JAN 3, 3625 401 PH EST /O 38
+    confidence: 1
+    bbox:
+      - 0.1866666690833333
+      - 0.36595744664893615
+      - 0.19333333333333336
+      - 0.021276595744680882
+  - text: "24001"
+    confidence: 1
+    bbox:
+      - 0.19111111160000002
+      - 0.5191489353617023
+      - 0.07555555555555551
+      - 0.08085106382978724
+  - text: naad
+    confidence: 0.3
+    bbox:
+      - 0.4635294121026682
+      - 0.5329161453637675
+      - 0.10457516140407985
+      - 0.09136420716630655

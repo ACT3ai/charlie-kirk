@@ -1,0 +1,33 @@
+source: site/internals/static/img/evidence/22a824a9219495968fa3cd91e118d153c504601d5454198ddc14697ef8977774.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:42:51.736Z
+kind: image
+language: en-US
+text: |-
+  PRUVE ME WRUNG
+  Caly
+  © instagram
+blocks:
+  - text: PRUVE ME WRUNG
+    confidence: 1
+    bbox:
+      - 1.9190325655234274e-9
+      - 0.32444444370370373
+      - 0.42586750788643535
+      - 0.0888888888888888
+  - text: Caly
+    confidence: 0.3
+    bbox:
+      - 2.253267183774134e-11
+      - 0.6799999994920635
+      - 0.05362776025236594
+      - 0.07111111111111112
+  - text: © instagram
+    confidence: 1
+    bbox:
+      - 1.945320651847388e-9
+      - 0.9688888887407408
+      - 0.1167192429022082
+      - 0.026666666666666727

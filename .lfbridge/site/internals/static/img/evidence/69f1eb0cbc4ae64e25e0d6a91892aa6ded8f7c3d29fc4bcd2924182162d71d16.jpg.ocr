@@ -1,0 +1,25 @@
+source: site/internals/static/img/evidence/69f1eb0cbc4ae64e25e0d6a91892aa6ded8f7c3d29fc4bcd2924182162d71d16.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:46:10.580Z
+kind: image
+language: en-US
+text: |-
+  PLAINTIFF'S
+  EXHIBIT
+blocks:
+  - text: PLAINTIFF'S
+    confidence: 1
+    bbox:
+      - 0.7957746492216146
+      - 0.8458397473802307
+      - 0.08553403218587241
+      - 0.025044053894667906
+  - text: EXHIBIT
+    confidence: 0.5
+    bbox:
+      - 0.8103504027577605
+      - 0.8698813539151978
+      - 0.05638252894083651
+      - 0.024742411265194164

@@ -1,0 +1,105 @@
+source: site/internals/static/img/evidence/214cd0393749552d11059c79614de808780a286c3cab97bb7da471878ad23873.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:42:51.086Z
+kind: image
+language: en-US
+text: |-
+  N
+  National Conservative
+  @NatCon2022 • 8h
+  The original person of interest, George Zinn, 71, has allegedly confessed
+  that he pretended to have shot Charlie Kirk to help the real killer escape.
+  He is being held without bond and charged with felony obstruction.
+  •..
+  POLICE
+  TEBACKTOUR.COM
+  POLICE
+  Charles McClintock
+  Wilson ZUMA Press Wire/Shutterstock
+blocks:
+  - text: N
+    confidence: 1
+    bbox:
+      - 0.04112554102934104
+      - 0.03888888861111117
+      - 0.03463203463203463
+      - 0.04999999999999993
+  - text: National Conservative
+    confidence: 1
+    bbox:
+      - 0.10389610576685218
+      - 0.030555555436507897
+      - 0.26190476190476186
+      - 0.02777777777777779
+  - text: "@NatCon2022 • 8h"
+    confidence: 1
+    bbox:
+      - 0.4069264053957947
+      - 0.03055555567460322
+      - 0.2142857142857143
+      - 0.02777777777777768
+  - text: The original person of interest, George Zinn, 71, has allegedly confessed
+    confidence: 1
+    bbox:
+      - 0.10389609947089953
+      - 0.07500000010802466
+      - 0.7965367965367967
+      - 0.036111111111111094
+  - text: that he pretended to have shot Charlie Kirk to help the real killer escape.
+    confidence: 1
+    bbox:
+      - 0.10173160847763338
+      - 0.1166666666203704
+      - 0.8095238095238095
+      - 0.033333333333333326
+  - text: He is being held without bond and charged with felony obstruction.
+    confidence: 1
+    bbox:
+      - 0.10606059753787898
+      - 0.19722222177083337
+      - 0.751082251082251
+      - 0.036111111111111094
+  - text: •..
+    confidence: 0.5
+    bbox:
+      - 0.917748917857143
+      - 0.0333333331597222
+      - 0.030303030303030276
+      - 0.01388888888888895
+  - text: POLICE
+    confidence: 1
+    bbox:
+      - 0.5562770569805194
+      - 0.3249999997916666
+      - 0.05627705627705626
+      - 0.03333333333333344
+  - text: TEBACKTOUR.COM
+    confidence: 1
+    bbox:
+      - 0.10228160005037831
+      - 0.3904371588300195
+      - 0.08347526979652833
+      - 0.036316031879849
+  - text: POLICE
+    confidence: 1
+    bbox:
+      - 0.7207792213203462
+      - 0.4611111108333332
+      - 0.04329004329004338
+      - 0.0277777777777779
+  - text: Charles McClintock
+    confidence: 1
+    bbox:
+      - 0.1255411274350649
+      - 0.9555555554861113
+      - 0.1515151515151515
+      - 0.022222222222222143
+  - text: Wilson ZUMA Press Wire/Shutterstock
+    confidence: 1
+    bbox:
+      - 0.2813852777326841
+      - 0.9555555556944445
+      - 0.2922077922077922
+      - 0.022222222222222254

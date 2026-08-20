@@ -1,0 +1,89 @@
+source: site/internals/static/img/evidence/3cf3941c9d783a0bfcb46f586e06f45af5c1bf77fed8996a0846821273ad0653.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:43:40.606Z
+kind: image
+language: en-US
+text: |-
+  EXCLUSIVE INVESTIGATION
+  TRACKING THE
+  SHOOTER'S
+  MOVEMENTS
+  WOODED
+  AREA 2
+  -ppr
+  CONS
+  ION
+  5:28/6:56 ( 0"8
+blocks:
+  - text: EXCLUSIVE INVESTIGATION
+    confidence: 1
+    bbox:
+      - 0.01889535072055881
+      - 0.04392764868370713
+      - 0.07412790568097531
+      - 0.013069570893154192
+  - text: TRACKING THE
+    confidence: 1
+    bbox:
+      - 0.017395012941620987
+      - 0.07451402490434145
+      - 0.08003555640119653
+      - 0.02926652358570403
+  - text: SHOOTER'S
+    confidence: 1
+    bbox:
+      - 0.024616848246334536
+      - 0.10274684078252339
+      - 0.06413839755110524
+      - 0.03223241712342151
+  - text: MOVEMENTS
+    confidence: 1
+    bbox:
+      - 0.020275532742782317
+      - 0.13122085679898676
+      - 0.0742745158195993
+      - 0.032131930431687716
+  - text: WOODED
+    confidence: 1
+    bbox:
+      - 0.47965116335948
+      - 0.2170542633955832
+      - 0.13226744204557495
+      - 0.04651162798919539
+  - text: AREA 2
+    confidence: 1
+    bbox:
+      - 0.4927325588471899
+      - 0.2738646886764444
+      - 0.10319767386327516
+      - 0.04654874792797237
+  - text: -ppr
+    confidence: 0.5
+    bbox:
+      - 0.9113372093124313
+      - 0.0749354010205463
+      - 0.023255813351881427
+      - 0.02067183387622007
+  - text: CONS
+    confidence: 1
+    bbox:
+      - 0.8997093021992572
+      - 0.09819121506767259
+      - 0.027616278977212527
+      - 0.025839792345275003
+  - text: ION
+    confidence: 1
+    bbox:
+      - 0.952034884141293
+      - 0.09819121504921557
+      - 0.018895347726550216
+      - 0.025839792345275003
+  - text: 5:28/6:56 ( 0"8
+    confidence: 1
+    bbox:
+      - 0.9273255840632431
+      - 0.981912144807738
+      - 0.07122092727080076
+      - 0.012990542757389645

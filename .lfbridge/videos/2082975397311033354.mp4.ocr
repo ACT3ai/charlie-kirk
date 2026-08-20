@@ -1,0 +1,35 @@
+source: videos/2082975397311033354.mp4
+status: done
+engine: vision
+level: fast
+generated: 2026-08-20T12:44:44.608Z
+kind: video
+language: en-US
+stride_seconds: 15
+frames_sampled: 6
+truncated: false
+text: |-
+  ryi
+  C,4.ND,ICF
+
+  C,I.ND,ICF
+  IAlkll
+
+  C.I.ND.ICF
+blocks:
+  - text: |-
+      ryi
+      C,4.ND,ICF
+    confidence: 0.5
+    start: 0
+    end: 15
+  - text: |-
+      C,I.ND,ICF
+      IAlkll
+    confidence: 0.5
+    start: 15
+    end: 30
+  - text: C.I.ND.ICF
+    confidence: 0.5
+    start: 30
+    end: 90

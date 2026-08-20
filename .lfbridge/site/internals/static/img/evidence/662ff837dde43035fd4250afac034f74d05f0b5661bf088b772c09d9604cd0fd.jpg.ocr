@@ -1,0 +1,41 @@
+source: site/internals/static/img/evidence/662ff837dde43035fd4250afac034f74d05f0b5661bf088b772c09d9604cd0fd.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:46:01.091Z
+kind: image
+language: en-US
+text: |-
+  A PLACE
+  FOR YOU
+  EMERCAN
+  UVU
+blocks:
+  - text: A PLACE
+    confidence: 1
+    bbox:
+      - 0.3785488967933386
+      - 0.3254189944460224
+      - 0.07570977644486859
+      - 0.021964726501336962
+  - text: FOR YOU
+    confidence: 1
+    bbox:
+      - 0.37539432079112567
+      - 0.35029069765436094
+      - 0.07728706706653937
+      - 0.024709301953875107
+  - text: EMERCAN
+    confidence: 0.5
+    bbox:
+      - 0.3736957053784497
+      - 0.44180424624294845
+      - 0.06060422261555992
+      - 0.024318609823727688
+  - text: UVU
+    confidence: 0.5
+    bbox:
+      - 0.7365930604807888
+      - 0.3561046507582033
+      - 0.12460567589962124
+      - 0.04651162877429127

@@ -1,0 +1,73 @@
+source: site/internals/static/img/evidence/393678d66d8c057da58cdb428e178c86344b3625103bc8b17ae83b5b6c89c217.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:43:32.568Z
+kind: image
+language: en-US
+text: |-
+  I have a family friend who was the
+  medical examiner for everything
+  that happened, and he did the
+  autopsy and then he said they
+  brought in a young woman he'd
+  never met and his boss told him-
+  she would sign his report
+  He was pissed
+blocks:
+  - text: I have a family friend who was the
+    confidence: 1
+    bbox:
+      - 0.04989604350311863
+      - 0.05263157899610138
+      - 0.7671517671517671
+      - 0.07017543859649122
+  - text: medical examiner for everything
+    confidence: 1
+    bbox:
+      - 0.056133059563409506
+      - 0.1403508776942356
+      - 0.7214137214137213
+      - 0.07017543859649122
+  - text: that happened, and he did the
+    confidence: 1
+    bbox:
+      - 0.05197505201960209
+      - 0.22807017600250623
+      - 0.683991683991684
+      - 0.07894736842105265
+  - text: autopsy and then he said they
+    confidence: 1
+    bbox:
+      - 0.054054050963901035
+      - 0.31871345043859645
+      - 0.6798336798336798
+      - 0.067251461988304
+  - text: brought in a young woman he'd
+    confidence: 1
+    bbox:
+      - 0.05613305341436115
+      - 0.40350877201979307
+      - 0.7068607068607069
+      - 0.07017543859649122
+  - text: never met and his boss told him-
+    confidence: 1
+    bbox:
+      - 0.056133061464211424
+      - 0.4912280700918964
+      - 0.7463617463617465
+      - 0.05847953216374269
+  - text: she would sign his report
+    confidence: 1
+    bbox:
+      - 0.054054057230307186
+      - 0.5789473682098765
+      - 0.5717255717255716
+      - 0.06725146198830412
+  - text: He was pissed
+    confidence: 1
+    bbox:
+      - 0.056133056722106695
+      - 0.891812866057505
+      - 0.32432432432432434
+      - 0.067251461988304

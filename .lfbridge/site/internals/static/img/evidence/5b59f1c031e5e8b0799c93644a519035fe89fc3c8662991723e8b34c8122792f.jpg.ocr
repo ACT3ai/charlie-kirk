@@ -1,0 +1,25 @@
+source: site/internals/static/img/evidence/5b59f1c031e5e8b0799c93644a519035fe89fc3c8662991723e8b34c8122792f.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:45:04.349Z
+kind: image
+language: en-US
+text: |-
+  WOOZ
+  WHENEVER YOU
+blocks:
+  - text: WOOZ
+    confidence: 1
+    bbox:
+      - 0.37709614730509555
+      - 0.8764544315110208
+      - 0.17395141738617492
+      - 0.04196293170635523
+  - text: WHENEVER YOU
+    confidence: 1
+    bbox:
+      - 0.21556886569717698
+      - 0.8256410253846155
+      - 0.4790419161676647
+      - 0.0461538461538461

@@ -1,0 +1,41 @@
+source: site/internals/static/img/evidence/450276905dbc8c4fbbd32821542a8e57e579ee26c68432510fe24d6acf44e86d.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:43:58.007Z
+kind: image
+language: en-US
+text: |-
+  Girl
+  with a gun
+  Chief Long
+  alleytopfiles
+blocks:
+  - text: Girl
+    confidence: 1
+    bbox:
+      - 0.10312499953125001
+      - 0.41860465106075917
+      - 0.09375
+      - 0.023255813866853714
+  - text: with a gun
+    confidence: 1
+    bbox:
+      - 0.018247552877412993
+      - 0.4479645628431248
+      - 0.25412989063423225
+      - 0.027035990729928017
+  - text: Chief Long
+    confidence: 1
+    bbox:
+      - 0.7088179526178213
+      - 0.5283785325967381
+      - 0.2666721824838334
+      - 0.024289386346936226
+  - text: alleytopfiles
+    confidence: 0.5
+    bbox:
+      - 0.4871501281632435
+      - 0.7043922450021733
+      - 0.16632474370363376
+      - 0.024355044588446617

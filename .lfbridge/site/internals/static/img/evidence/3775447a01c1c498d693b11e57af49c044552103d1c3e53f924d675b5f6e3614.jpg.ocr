@@ -1,0 +1,113 @@
+source: site/internals/static/img/evidence/3775447a01c1c498d693b11e57af49c044552103d1c3e53f924d675b5f6e3614.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:43:31.420Z
+kind: image
+language: en-US
+text: |-
+  TPUSA Verified Lies
+  8) Terryl Farnsworth was told to remove the SD cards by police.
+  (Offender: Tyler Bowyer)
+  9) Terryl removed the SD cards because people were stealing hats.
+  (Offender: Andrew Kolvet)
+  10) Charlie establishing DOGE was not unusual. Turning Point has
+  financially audited the company every year since its inception.
+  (Offender: Tyler Bowyer)
+  11) Charlie Kirk's team did not fly drones at UVU.
+  (Offender: Brian Harpole)
+  12) Security communicated with UVU police to secure the rooftops.
+  (Offender: Brian Harpole)
+  13) Inexplicable events: Egyptian Planes tracking Charlie and Erika.
+blocks:
+  - text: TPUSA Verified Lies
+    confidence: 1
+    bbox:
+      - 0.3473837200547289
+      - 0.05646630190845969
+      - 0.2747093013294956
+      - 0.06466302367941723
+  - text: 8) Terryl Farnsworth was told to remove the SD cards by police.
+    confidence: 1
+    bbox:
+      - 0.34883721388718875
+      - 0.16211293280794514
+      - 0.5261627946820175
+      - 0.04553734061930781
+  - text: "(Offender: Tyler Bowyer)"
+    confidence: 1
+    bbox:
+      - 0.3459302335863392
+      - 0.2149362479249225
+      - 0.21656975997121714
+      - 0.04553734061930781
+  - text: 9) Terryl removed the SD cards because people were stealing hats.
+    confidence: 1
+    bbox:
+      - 0.3473837427937575
+      - 0.2714025497764281
+      - 0.5537790398848683
+      - 0.04557858138787929
+  - text: "(Offender: Andrew Kolvet)"
+    confidence: 1
+    bbox:
+      - 0.34593023049611443
+      - 0.3242258648556695
+      - 0.23110465066474778
+      - 0.045585455138826614
+  - text: 10) Charlie establishing DOGE was not unusual. Turning Point has
+    confidence: 1
+    bbox:
+      - 0.3458333240972226
+      - 0.36520947224844735
+      - 0.5541666666666665
+      - 0.054145366550577556
+  - text: financially audited the company every year since its inception.
+    confidence: 1
+    bbox:
+      - 0.3473837287194641
+      - 0.4262295076359548
+      - 0.517441834566886
+      - 0.04924218989026574
+  - text: "(Offender: Tyler Bowyer)"
+    confidence: 1
+    bbox:
+      - 0.3459302335863392
+      - 0.48269581043085674
+      - 0.21656975997121714
+      - 0.04937966143498651
+  - text: 11) Charlie Kirk's team did not fly drones at UVU.
+    confidence: 1
+    bbox:
+      - 0.3488372222048717
+      - 0.535519126464191
+      - 0.40406973855537276
+      - 0.049386533448822045
+  - text: "(Offender: Brian Harpole)"
+    confidence: 1
+    bbox:
+      - 0.34738372402272033
+      - 0.5924528312885227
+      - 0.22238371196546058
+      - 0.04528301704559612
+  - text: 12) Security communicated with UVU police to secure the rooftops.
+    confidence: 1
+    bbox:
+      - 0.3500000092361108
+      - 0.6344086020611901
+      - 0.5541666666666667
+      - 0.05411598851771948
+  - text: "(Offender: Brian Harpole)"
+    confidence: 1
+    bbox:
+      - 0.3473837257203692
+      - 0.7018867930809756
+      - 0.2238372053179825
+      - 0.04528301704559601
+  - text: "13) Inexplicable events: Egyptian Planes tracking Charlie and Erika."
+    confidence: 1
+    bbox:
+      - 0.3458333427083331
+      - 0.7419354837816202
+      - 0.5625
+      - 0.05405723071489177

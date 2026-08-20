@@ -1,0 +1,57 @@
+source: site/internals/static/img/evidence/23324a21f34d2236a0da5d02d6c82949d368e6fc38254b2b60a15ef9cb90c395.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:42:52.739Z
+kind: image
+language: en-US
+text: |-
+  Eric Daugherty
+  @EricLDaugh • 7m
+  ...
+  BREAKING: Subject in custody in the killing of
+  Charlie Kirk reported as Zachariah Ahmed
+  Qureshi.
+blocks:
+  - text: Eric Daugherty
+    confidence: 1
+    bbox:
+      - 0.15037594697262077
+      - 0.00843373484997978
+      - 0.2650375841562621
+      - 0.030810450358563113
+  - text: "@EricLDaugh • 7m"
+    confidence: 0.5
+    bbox:
+      - 0.464285717856573
+      - 0.008433735104340201
+      - 0.2951127762363708
+      - 0.030810451507568337
+  - text: ...
+    confidence: 1
+    bbox:
+      - 0.9379699260398733
+      - 0.014534883963036593
+      - 0.03947368217777247
+      - 0.011627906201833738
+  - text: "BREAKING: Subject in custody in the killing of"
+    confidence: 1
+    bbox:
+      - 0.21240601783574178
+      - 0.04796511662820202
+      - 0.7612781940590927
+      - 0.029143317348985787
+  - text: Charlie Kirk reported as Zachariah Ahmed
+    confidence: 1
+    bbox:
+      - 0.15037594737767598
+      - 0.08430232572980778
+      - 0.6973683960341218
+      - 0.02906976722809207
+  - text: Qureshi.
+    confidence: 1
+    bbox:
+      - 0.14849624134753742
+      - 0.1220930234111478
+      - 0.14849624158437374
+      - 0.02906976722809207

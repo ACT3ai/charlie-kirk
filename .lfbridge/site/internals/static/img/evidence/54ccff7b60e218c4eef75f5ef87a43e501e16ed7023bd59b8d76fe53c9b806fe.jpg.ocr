@@ -1,0 +1,57 @@
+source: site/internals/static/img/evidence/54ccff7b60e218c4eef75f5ef87a43e501e16ed7023bd59b8d76fe53c9b806fe.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:44:45.809Z
+kind: image
+language: en-US
+text: |-
+  MAGNO.NEWS
+  M
+  TURNING POINT USA | MEGYN KELLY SPEAKS AT VIRGINIA TECH
+  MAGNO NEWS • CAPTURING MOMENTS AS THEY HAPPEN
+  TURNING
+  POINT USA
+blocks:
+  - text: MAGNO.NEWS
+    confidence: 1
+    bbox:
+      - 0.04069767341681192
+      - 0.05426356600201432
+      - 0.15261628150939943
+      - 0.036175710890028245
+  - text: M
+    confidence: 1
+    bbox:
+      - 0.018895348598196346
+      - 0.8785529725201746
+      - 0.040697674751281734
+      - 0.06976743910047745
+  - text: TURNING POINT USA | MEGYN KELLY SPEAKS AT VIRGINIA TECH
+    confidence: 1
+    bbox:
+      - 0.07083333472954692
+      - 0.8740740745679012
+      - 0.6791666412353516
+      - 0.044814813401964027
+  - text: MAGNO NEWS • CAPTURING MOMENTS AS THEY HAPPEN
+    confidence: 1
+    bbox:
+      - 0.07267442195468632
+      - 0.9250645996978066
+      - 0.379360466003418
+      - 0.020671833886040547
+  - text: TURNING
+    confidence: 1
+    bbox:
+      - 0.854651162719076
+      - 0.8578811371047461
+      - 0.10174418449401856
+      - 0.031007751888699087
+  - text: POINT USA
+    confidence: 1
+    bbox:
+      - 0.8546511646182392
+      - 0.8833333331945717
+      - 0.1133720874786377
+      - 0.03444444444444439

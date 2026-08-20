@@ -1,0 +1,65 @@
+source: site/internals/static/img/evidence/613bc51ae92d9f4891f660da5cc33289b69c135a9b96ac84637d142341702934.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:45:20.216Z
+kind: image
+language: en-US
+text: |-
+  DPS
+  FORENSICS
+  FBI
+  FBI
+  EVIDENCE
+  RESPONSE
+  TEAM
+blocks:
+  - text: DPS
+    confidence: 0.5
+    bbox:
+      - 0.1835260101834906
+      - 0.28603008075088154
+      - 0.03995832999547322
+      - 0.04770653336136421
+  - text: FORENSICS
+    confidence: 1
+    bbox:
+      - 0.15791282112451108
+      - 0.3103145207394167
+      - 0.08453221321105958
+      - 0.07140853316695595
+  - text: FBI
+    confidence: 1
+    bbox:
+      - 0.3531976747569317
+      - 0.2325581398356188
+      - 0.023255813121795643
+      - 0.020671833886040658
+  - text: FBI
+    confidence: 1
+    bbox:
+      - 0.4578488377592752
+      - 0.20155038911533518
+      - 0.0639534870783488
+      - 0.06718345924660019
+  - text: EVIDENCE
+    confidence: 1
+    bbox:
+      - 0.4548980734660268
+      - 0.2786988198858391
+      - 0.06840152740478517
+      - 0.026581688280458815
+  - text: RESPONSE
+    confidence: 1
+    bbox:
+      - 0.4549418603799037
+      - 0.3023255810928871
+      - 0.06976744333902996
+      - 0.025839793240582498
+  - text: TEAM
+    confidence: 1
+    bbox:
+      - 0.4694490407522757
+      - 0.32543786998649316
+      - 0.042206569512685144
+      - 0.026126843911630115

@@ -1,0 +1,41 @@
+source: site/internals/static/img/evidence/458c878bd2167a1f199edf1e16bb454d86019dff773eb03a8a731577e83fa2a9.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:43:59.765Z
+kind: image
+language: en-US
+text: |-
+  Play K
+  19:28/1:09:42
+  In this video ›
+  cc
+blocks:
+  - text: Play K
+    confidence: 1
+    bbox:
+      - 0.013081396521799104
+      - 0.8655692730566903
+      - 0.036337207864831994
+      - 0.020735636006003477
+  - text: 19:28/1:09:42
+    confidence: 1
+    bbox:
+      - 0.11627907310491882
+      - 0.9509043932289103
+      - 0.07703487961380569
+      - 0.018087854110655055
+  - text: In this video ›
+    confidence: 1
+    bbox:
+      - 0.21656976770611489
+      - 0.9506172841055003
+      - 0.06831395184552227
+      - 0.01851851851851849
+  - text: cc
+    confidence: 0.5
+    bbox:
+      - 0.850290697525903
+      - 0.9509043931982882
+      - 0.015988371990345196
+      - 0.020671834016860013

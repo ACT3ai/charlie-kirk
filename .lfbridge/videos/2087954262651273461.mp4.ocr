@@ -1,0 +1,48 @@
+source: videos/2087954262651273461.mp4
+status: done
+engine: vision
+level: fast
+generated: 2026-08-20T12:46:17.008Z
+kind: video
+language: en-US
+stride_seconds: 15
+frames_sampled: 3
+truncated: false
+text: |-
+  41'
+  klngofb
+
+  Char,lie Kirk shot in Utah
+  AN
+  @eldertlkto
+  11
+  TlkTok
+  @ klngolWn
+  Ji
+
+  C.harilie Kirk shotdinlUtah
+  eld
+blocks:
+  - text: |-
+      41'
+      klngofb
+    confidence: 0.5
+    start: 0
+    end: 15
+  - text: |-
+      Char,lie Kirk shot in Utah
+      AN
+      @eldertlkto
+      11
+      TlkTok
+      @ klngolWn
+      Ji
+    confidence: 0.5
+    start: 15
+    end: 30
+  - text: |-
+      C.harilie Kirk shotdinlUtah
+      eld
+    confidence: 0.5
+    start: 30
+    end: 45

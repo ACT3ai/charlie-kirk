@@ -1,0 +1,49 @@
+source: site/internals/static/img/evidence/74e7fc25b88fa897ac8e9ee1f0054a7552a43df2c38f18ab8b8481b8b22c53c4.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:46:32.950Z
+kind: image
+language: en-US
+text: |-
+  EFY.COM
+  TURD
+  POL
+  @IN2THINAII
+  0:31 / 1:16
+blocks:
+  - text: EFY.COM
+    confidence: 0.5
+    bbox:
+      - 0.20132013058993403
+      - 0.0106007072879859
+      - 0.33993399339933994
+      - 0.09187279151943462
+  - text: TURD
+    confidence: 0.5
+    bbox:
+      - 0.20462046067106712
+      - 0.3109540638398116
+      - 0.165016501650165
+      - 0.05653710247349819
+  - text: POL
+    confidence: 1
+    bbox:
+      - 0.2037065168768231
+      - 0.3569991857106678
+      - 0.15800965815880905
+      - 0.07251970675303321
+  - text: "@IN2THINAII"
+    confidence: 0.5
+    bbox:
+      - 0.8182852132345158
+      - 0.7762104750721872
+      - 0.1786110881138162
+      - 0.03768505729971838
+  - text: 0:31 / 1:16
+    confidence: 1
+    bbox:
+      - 0.5971772616412239
+      - 0.9319538832289661
+      - 0.16538145361166978
+      - 0.040685872728327466

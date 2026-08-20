@@ -1,0 +1,25 @@
+source: site/internals/static/img/evidence/256e85eab3dbab754cfc8d771846abd0860bbd4928bf749936671fed17a8a071.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:42:58.770Z
+kind: image
+language: en-US
+text: |-
+  FOR YOU
+  POLIC
+blocks:
+  - text: FOR YOU
+    confidence: 1
+    bbox:
+      - 0.6030448873727263
+      - 0.0035833739379932394
+      - 0.3824838893807194
+      - 0.06586927952973742
+  - text: POLIC
+    confidence: 1
+    bbox:
+      - 0.08486707037990701
+      - 0.47635620539385637
+      - 0.06026585896809897
+      - 0.016764333714609503

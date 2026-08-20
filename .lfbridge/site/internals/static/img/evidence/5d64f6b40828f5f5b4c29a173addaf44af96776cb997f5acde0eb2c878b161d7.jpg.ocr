@@ -1,0 +1,41 @@
+source: site/internals/static/img/evidence/5d64f6b40828f5f5b4c29a173addaf44af96776cb997f5acde0eb2c878b161d7.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:45:12.652Z
+kind: image
+language: en-US
+text: |-
+  ppt.
+  CONS
+  FCT
+  ION
+blocks:
+  - text: ppt.
+    confidence: 0.3
+    bbox:
+      - 0.8488372097393525
+      - 0.9142441858845382
+      - 0.03294573536625611
+      - 0.01162790722317164
+  - text: CONS
+    confidence: 1
+    bbox:
+      - 0.8275193801126365
+      - 0.9273255811233189
+      - 0.04069767351503717
+      - 0.017441860834757517
+  - text: FCT
+    confidence: 0.3
+    bbox:
+      - 0.8837209298486172
+      - 0.9113372090187041
+      - 0.03100775259512445
+      - 0.01598837243186102
+  - text: ION
+    confidence: 1
+    bbox:
+      - 0.903100774800629
+      - 0.9287790695314047
+      - 0.031007752595124338
+      - 0.01598837243186113

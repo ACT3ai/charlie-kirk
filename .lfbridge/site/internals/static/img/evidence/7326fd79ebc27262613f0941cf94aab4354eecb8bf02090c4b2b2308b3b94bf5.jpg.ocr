@@ -1,0 +1,49 @@
+source: site/internals/static/img/evidence/7326fd79ebc27262613f0941cf94aab4354eecb8bf02090c4b2b2308b3b94bf5.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:46:31.206Z
+kind: image
+language: en-US
+text: |-
+  Red Panda Koala
+  @RedPandaKoala • 1h
+  How did "Tyler Robinson" fit the gun in his skinny jeans?
+  Why can we see his phone in his pocket but not the gun?
+  •..
+blocks:
+  - text: Red Panda Koala
+    confidence: 1
+    bbox:
+      - 0.11233480176211454
+      - 0.0495049500412541
+      - 0.20264317180616742
+      - 0.0363036303630363
+  - text: "@RedPandaKoala • 1h"
+    confidence: 1
+    bbox:
+      - 0.35682819601321586
+      - 0.04950495013201317
+      - 0.2488986784140969
+      - 0.0363036303630363
+  - text: How did "Tyler Robinson" fit the gun in his skinny jeans?
+    confidence: 1
+    bbox:
+      - 0.1123347963105728
+      - 0.09900990041254132
+      - 0.6387665198237884
+      - 0.0462046204620461
+  - text: Why can we see his phone in his pocket but not the gun?
+    confidence: 1
+    bbox:
+      - 0.11013216396842869
+      - 0.2046204617711771
+      - 0.6453744493392071
+      - 0.03960396039603964
+  - text: •..
+    confidence: 1
+    bbox:
+      - 0.9405286348751837
+      - 0.059405940877478414
+      - 0.03083700440528625
+      - 0.013201319345153228

@@ -1,0 +1,65 @@
+source: site/internals/static/img/evidence/66688ac29d84a727c3adb758cd8db7a857f0bedddf2e0027e47e24629c08a8f1.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:46:00.346Z
+kind: image
+language: en-US
+text: |-
+  JASON BEHUNIN
+  g||lie
+  BREAKING
+  NEWS
+  LIVE
+  CHARLIE KIRK SHOT DURING UVU SPEAKING EVENT 5
+  KSLTV.COM
+blocks:
+  - text: JASON BEHUNIN
+    confidence: 1
+    bbox:
+      - 0.8226744203053024
+      - 0.05167958645464421
+      - 0.1264534870783488
+      - 0.026098191296612727
+  - text: g||lie
+    confidence: 0.5
+    bbox:
+      - 0.050872094310705315
+      - 0.10852713119120794
+      - 0.08430232206980388
+      - 0.07751938148781101
+  - text: BREAKING
+    confidence: 1
+    bbox:
+      - 0.050830725925975116
+      - 0.8135310574551083
+      - 0.13235017458597817
+      - 0.04218853138111256
+  - text: NEWS
+    confidence: 1
+    bbox:
+      - 0.07541397770239107
+      - 0.8568140203771699
+      - 0.08173018296559652
+      - 0.043477902589020956
+  - text: LIVE
+    confidence: 1
+    bbox:
+      - 0.9011627905470847
+      - 0.7751937986079123
+      - 0.04360465208689368
+      - 0.028423772034821604
+  - text: CHARLIE KIRK SHOT DURING UVU SPEAKING EVENT 5
+    confidence: 1
+    bbox:
+      - 0.20833334070833326
+      - 0.8296296295555555
+      - 0.7375
+      - 0.08148148148148149
+  - text: KSLTV.COM
+    confidence: 0.5
+    bbox:
+      - 0.8923922030377642
+      - 0.9168502506633378
+      - 0.059692339102427217
+      - 0.021596656022248473

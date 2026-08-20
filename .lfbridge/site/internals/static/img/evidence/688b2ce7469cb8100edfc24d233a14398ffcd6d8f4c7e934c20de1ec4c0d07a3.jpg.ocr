@@ -1,0 +1,73 @@
+source: site/internals/static/img/evidence/688b2ce7469cb8100edfc24d233a14398ffcd6d8f4c7e934c20de1ec4c0d07a3.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:46:00.124Z
+kind: image
+language: en-US
+text: |-
+  ppr
+  CƠN:
+  FCT
+  Female Audio Jack?
+  ION
+  TX
+  WIRELESS ME
+  WIRELESS ME
+blocks:
+  - text: ppr
+    confidence: 1
+    bbox:
+      - 0.9113372103455403
+      - 0.07493540082183758
+      - 0.02616278926531479
+      - 0.020671833886040547
+  - text: "CƠN:"
+    confidence: 1
+    bbox:
+      - 0.8982558141858556
+      - 0.09819121459987312
+      - 0.027616278330485078
+      - 0.028423772034821715
+  - text: FCT
+    confidence: 1
+    bbox:
+      - 0.9389534886991778
+      - 0.07493540036265334
+      - 0.01889534791310621
+      - 0.023255814446343392
+  - text: Female Audio Jack?
+    confidence: 1
+    bbox:
+      - 0.11482557821913134
+      - 0.1136950896314044
+      - 0.39098838170369465
+      - 0.06223083778663918
+  - text: ION
+    confidence: 1
+    bbox:
+      - 0.9563953487769735
+      - 0.10077519367132926
+      - 0.017441860834757406
+      - 0.025839793240582498
+  - text: TX
+    confidence: 1
+    bbox:
+      - 0.15406976715892437
+      - 0.6563307488039513
+      - 0.021802326043446868
+      - 0.031007752595124338
+  - text: WIRELESS ME
+    confidence: 1
+    bbox:
+      - 0.04505813383076497
+      - 0.7002583957105943
+      - 0.013081408043702447
+      - 0.22222222222222232
+  - text: WIRELESS ME
+    confidence: 1
+    bbox:
+      - 0.102507788419302
+      - 0.8674258374337868
+      - 0.120796537399292
+      - 0.08600509784839772

@@ -1,0 +1,89 @@
+source: site/internals/static/img/evidence/610f16142f8e2855954ab3cd384ba2a54ae876cc6fcba2f7222d744213c345a4.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:45:20.435Z
+kind: image
+language: en-US
+text: |-
+  ARCA
+  AMER LAN
+  COMEBACK
+  IVE ME WALL PRUVE ME WRUNN
+  EE MEBAL
+  AMER
+  AMI
+  counting or not counting gang
+  violence great
+  TE YES
+blocks:
+  - text: ARCA
+    confidence: 0.5
+    bbox:
+      - 0.15856777787954132
+      - 0.040612805616878855
+      - 0.1314577931943147
+      - 0.052175170373565116
+  - text: AMER LAN
+    confidence: 1
+    bbox:
+      - 0.4188155956318448
+      - 0.05914597971642477
+      - 0.26227884707243543
+      - 0.045463018393926635
+  - text: COMEBACK
+    confidence: 1
+    bbox:
+      - 0.45802740797494784
+      - 0.0877446252202898
+      - 0.26970055621603256
+      - 0.039694450997017516
+  - text: IVE ME WALL PRUVE ME WRUNN
+    confidence: 0.5
+    bbox:
+      - 0.31449671699083953
+      - 0.142546361572642
+      - 0.6492911960767662
+      - 0.05661162345942472
+  - text: EE MEBAL
+    confidence: 0.5
+    bbox:
+      - 0.1739130422282609
+      - 0.22358722375614248
+      - 0.19999999999999998
+      - 0.041769041769041726
+  - text: AMER
+    confidence: 1
+    bbox:
+      - 0.08695652217391303
+      - 0.34398034419094425
+      - 0.06956521739130433
+      - 0.029484029484029395
+  - text: AMI
+    confidence: 1
+    bbox:
+      - 0.47826086878260876
+      - 0.35380835398034405
+      - 0.07826086956521738
+      - 0.03194103194103182
+  - text: counting or not counting gang
+    confidence: 1
+    bbox:
+      - 0.1130434749689441
+      - 0.7444717442084943
+      - 0.782608695652174
+      - 0.03685503685503677
+  - text: violence great
+    confidence: 1
+    bbox:
+      - 0.3260869582608695
+      - 0.7862407866400491
+      - 0.3739130434782609
+      - 0.03194103194103193
+  - text: TE YES
+    confidence: 1
+    bbox:
+      - -0.005836077688172643
+      - 0.9613427601518707
+      - 0.11963430487591287
+      - 0.03339480650805726

@@ -1,0 +1,73 @@
+source: site/internals/static/img/evidence/6c6fa7b966ba3177b57d448118603ef7e5881844b5b8c68334e611a8630946c7.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:46:19.274Z
+kind: image
+language: en-US
+text: |-
+  AF Post
+  @AFpost • 7h
+  Al• According to multiple reports, Israeli PM Benjamin Netanyahu offered
+  Charlie Kirk's TPUSA $150 million in cash to adopt an even more ardently
+  pro-Israel stance.
+  Kirk refused the money.
+  Follow: @AFpost
+  ...
+blocks:
+  - text: AF Post
+    confidence: 1
+    bbox:
+      - 0.09625937505210168
+      - 0.038418070893497136
+      - 0.12476790446942952
+      - 0.027847053590884907
+  - text: "@AFpost • 7h"
+    confidence: 1
+    bbox:
+      - 0.23632385087527352
+      - 0.03856749352617084
+      - 0.14879649890590807
+      - 0.03305785123966942
+  - text: Al• According to multiple reports, Israeli PM Benjamin Netanyahu offered
+    confidence: 1
+    bbox:
+      - 0.029460399153939283
+      - 0.05150633360526835
+      - 0.8573783356981673
+      - 0.09307391058971737
+  - text: Charlie Kirk's TPUSA $150 million in cash to adopt an even more ardently
+    confidence: 1
+    bbox:
+      - 0.10416666303197387
+      - 0.11983471069254703
+      - 0.824999986644386
+      - 0.03723335134753181
+  - text: pro-Israel stance.
+    confidence: 1
+    bbox:
+      - 0.10503282445295402
+      - 0.1680440771120294
+      - 0.2035010940919037
+      - 0.030303030303030276
+  - text: Kirk refused the money.
+    confidence: 1
+    bbox:
+      - 0.10469468699858608
+      - 0.24617865927941285
+      - 0.26988141750611155
+      - 0.03780449323417723
+  - text: "Follow: @AFpost"
+    confidence: 1
+    bbox:
+      - 0.10503282407002186
+      - 0.3333333337465565
+      - 0.188183807439825
+      - 0.03305785123966942
+  - text: ...
+    confidence: 1
+    bbox:
+      - 0.9256017500364696
+      - 0.04407713512396694
+      - 0.030634573304157642
+      - 0.01377410468319562

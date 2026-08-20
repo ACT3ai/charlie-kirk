@@ -1,0 +1,23 @@
+source: videos/2071736376215920842.mp4
+status: done
+engine: vision
+level: fast
+generated: 2026-08-20T12:42:42.497Z
+kind: video
+language: en-US
+stride_seconds: 15
+frames_sampled: 3
+truncated: false
+text: |-
+  b
+
+  JJ
+blocks:
+  - text: b
+    confidence: 0.5
+    start: 0
+    end: 15
+  - text: JJ
+    confidence: 0.5
+    start: 30
+    end: 45

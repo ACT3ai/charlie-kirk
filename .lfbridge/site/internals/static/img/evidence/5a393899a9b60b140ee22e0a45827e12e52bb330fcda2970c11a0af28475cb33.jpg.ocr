@@ -1,0 +1,73 @@
+source: site/internals/static/img/evidence/5a393899a9b60b140ee22e0a45827e12e52bb330fcda2970c11a0af28475cb33.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:45:04.874Z
+kind: image
+language: en-US
+text: |-
+  CARMY
+  Collin Campbell
+  Israeli News Live
+  Tai Norman (PenP...
+  0:00:04
+  video1789147782
+  CONS
+  ON
+blocks:
+  - text: CARMY
+    confidence: 1
+    bbox:
+      - 0.2223837220507422
+      - 0.12403100751651097
+      - 0.03197674274444584
+      - 0.018087855445014123
+  - text: Collin Campbell
+    confidence: 1
+    bbox:
+      - 0.0029069781572740984
+      - 0.4832041342500475
+      - 0.04651162624359131
+      - 0.01568475458357066
+  - text: Israeli News Live
+    confidence: 1
+    bbox:
+      - 0.4998551154532004
+      - 0.4838172131074526
+      - 0.05406884193420414
+      - 0.01686169836256235
+  - text: Tai Norman (PenP...
+    confidence: 1
+    bbox:
+      - 0.35029070281856095
+      - 0.7255555556780674
+      - 0.3023255729675293
+      - 0.05222222222222217
+  - text: 0:00:04
+    confidence: 1
+    bbox:
+      - 0.023255814192238145
+      - 0.8397932814076703
+      - 0.02761627912521362
+      - 0.015503875944349432
+  - text: video1789147782
+    confidence: 1
+    bbox:
+      - 0.021802325518983343
+      - 0.904392764951664
+      - 0.10465116500854493
+      - 0.025839792887369706
+  - text: CONS
+    confidence: 1
+    bbox:
+      - 0.8968023258007654
+      - 0.8992248071264995
+      - 0.027616279125213583
+      - 0.028423771328396352
+  - text: ON
+    confidence: 1
+    bbox:
+      - 0.9505813951446755
+      - 0.9018087864398258
+      - 0.017441860437393153
+      - 0.023255812327067082

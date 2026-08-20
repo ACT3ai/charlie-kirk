@@ -1,0 +1,57 @@
+source: site/internals/static/img/evidence/3e5febdaf5d47aa02e2a152b186f777101c31eccc1c57e558b835a246e5c965d.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:43:42.333Z
+kind: image
+language: en-US
+text: |-
+  "Jewish donors play into all
+  the stereotypes. I cannot and
+  will not be bullied like this.
+  Leaving me no choice but to
+  leave the pro Israel cause."
+  -Charlie Kirk
+blocks:
+  - text: '"Jewish donors play into all'
+    confidence: 1
+    bbox:
+      - 0.038342360918050024
+      - 0.4442769009897318
+      - 0.9191489829673425
+      - 0.07550830947620246
+  - text: the stereotypes. I cannot and
+    confidence: 1
+    bbox:
+      - -9.070618341718581e-9
+      - 0.5276162788706722
+      - 0.9925093917159347
+      - 0.058277574997374404
+  - text: will not be bullied like this.
+    confidence: 1
+    bbox:
+      - 0.05992508901843154
+      - 0.6017441853837189
+      - 0.895131099116695
+      - 0.06395349023062424
+  - text: Leaving me no choice but to
+    confidence: 1
+    bbox:
+      - 0.029962579262150058
+      - 0.6758720919199271
+      - 0.9438201629363739
+      - 0.059593024866540945
+  - text: leave the pro Israel cause."
+    confidence: 1
+    bbox:
+      - 0.04681646693562421
+      - 0.7427325580761948
+      - 0.9157303543778152
+      - 0.0668604653640833
+  - text: -Charlie Kirk
+    confidence: 1
+    bbox:
+      - 0.27528089724878924
+      - 0.8994413416030546
+      - 0.4419475658519848
+      - 0.04968656507950264

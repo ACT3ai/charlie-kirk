@@ -1,0 +1,41 @@
+source: site/internals/static/img/evidence/654f1189765d4ab1bab346c770b84940dc16e2902c54a3a429487edbab130fd7.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:45:52.058Z
+kind: image
+language: en-US
+text: |-
+  MER CAN I
+  COMEBAN
+  PROVE ME WRONG Z PROVE ME WRONG
+  7:53 / 13:58
+blocks:
+  - text: MER CAN I
+    confidence: 1
+    bbox:
+      - 0.33284883917608427
+      - 0.09773539831416322
+      - 0.17877906881352906
+      - 0.04410011918951129
+  - text: COMEBAN
+    confidence: 1
+    bbox:
+      - 0.29902836478850786
+      - 0.11610893399517586
+      - 0.21447499593098956
+      - 0.05469781650547756
+  - text: PROVE ME WRONG Z PROVE ME WRONG
+    confidence: 1
+    bbox:
+      - 0.052844701240586184
+      - 0.18856438152770538
+      - 0.673289801484795
+      - 0.12759626750013964
+  - text: 7:53 / 13:58
+    confidence: 1
+    bbox:
+      - 0.05087209457720378
+      - 0.9690107269212938
+      - 0.037790695826212556
+      - 0.013110846245530494

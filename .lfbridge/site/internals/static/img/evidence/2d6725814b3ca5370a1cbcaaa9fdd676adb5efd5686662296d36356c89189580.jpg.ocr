@@ -1,0 +1,49 @@
+source: site/internals/static/img/evidence/2d6725814b3ca5370a1cbcaaa9fdd676adb5efd5686662296d36356c89189580.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:43:17.499Z
+kind: image
+language: en-US
+text: |-
+  77
+  E
+  X (STHEINTELSCIF
+  EFY.COM
+  0:47 / 2:05
+blocks:
+  - text: "77"
+    confidence: 1
+    bbox:
+      - 0.46244131408235073
+      - 0.33100233120629374
+      - 0.011737090321214005
+      - 0.01631701631701632
+  - text: E
+    confidence: 1
+    bbox:
+      - 0.5117370893485916
+      - 0.3543123545745921
+      - 0.016431924882629123
+      - 0.020979020979021046
+  - text: X (STHEINTELSCIF
+    confidence: 0.5
+    bbox:
+      - 0.8896713604460094
+      - 0.4242424244755245
+      - 0.107981220657277
+      - 0.01864801864801857
+  - text: EFY.COM
+    confidence: 1
+    bbox:
+      - -0.0028604629672205847
+      - 0.46531314896061915
+      - 0.18508909341874816
+      - 0.06110118430255462
+  - text: 0:47 / 2:05
+    confidence: 1
+    bbox:
+      - 0.6596244143192488
+      - 0.9417249416083915
+      - 0.14084507042253525
+      - 0.027972027972028024

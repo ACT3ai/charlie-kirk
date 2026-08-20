@@ -1,0 +1,89 @@
+source: videos/2086599006965379504.mp4
+status: done
+engine: vision
+level: fast
+generated: 2026-08-20T12:45:22.650Z
+kind: video
+language: en-US
+stride_seconds: 15
+frames_sampled: 2
+truncated: false
+text: >-
+  iQ*
+
+  FOX 13 NEWS I UTAH
+
+  PRESIDENT TRUMP REPORTS CHARLIE KIRK IS DEAD 3:05
+
+  AFTER SHOOTING AT UTAH VALLEY UNIVERSITY
+
+  90°
+
+  13
+
+  13
+
+  FORECAST
+
+  BRIGHAM CITY
+
+  6PM P- 81°
+
+  10PM
+
+  66° 10AM • 65°
+
+
+  LlVf
+
+  FOX 13 NEW5 1 UTAH
+
+  SHOOTING AT CHARLIE KIRK EVENT
+
+  1:53
+
+  8T
+
+  UTAH VALLEY UNIVERSITY CAMPUS
+
+  13
+
+  TOP STORIES AT EVENT IN UTAH Iiw US ECONOMY ADDS 911.000 FEWER JO8S THAN
+  PREVIOUSLY
+blocks:
+  - text: |-
+      iQ*
+      FOX 13 NEWS I UTAH
+      PRESIDENT TRUMP REPORTS CHARLIE KIRK IS DEAD 3:05
+      AFTER SHOOTING AT UTAH VALLEY UNIVERSITY
+      90°
+      13
+      13
+      FORECAST
+      BRIGHAM CITY
+      6PM P- 81°
+      10PM
+      66° 10AM • 65°
+    confidence: 0.5
+    start: 0
+    end: 15
+  - text: >-
+      LlVf
+
+      FOX 13 NEW5 1 UTAH
+
+      SHOOTING AT CHARLIE KIRK EVENT
+
+      1:53
+
+      8T
+
+      UTAH VALLEY UNIVERSITY CAMPUS
+
+      13
+
+      TOP STORIES AT EVENT IN UTAH Iiw US ECONOMY ADDS 911.000 FEWER JO8S THAN
+      PREVIOUSLY
+    confidence: 0.5
+    start: 15
+    end: 30

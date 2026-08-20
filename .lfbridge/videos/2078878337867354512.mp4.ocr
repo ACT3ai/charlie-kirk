@@ -1,0 +1,101 @@
+source: videos/2078878337867354512.mp4
+status: done
+engine: vision
+level: fast
+generated: 2026-08-20T12:43:20.611Z
+kind: video
+language: en-US
+stride_seconds: 15
+frames_sampled: 18
+truncated: false
+text: |-
+  YES SIR
+
+  OUT AND KNOCKED
+
+  I WAS GONNA
+
+  I DON'T KNOW
+
+  THE CHILD IMAGES
+
+  IS THAT TRUE
+
+  JUST THE
+
+  WE GOT THREE
+
+  NO HEAVEN SAKES
+
+  WAS SPENDING
+  TOO
+
+  WHEN DID YOU
+
+  ON SUICIDE
+  WATCH
+
+  WEDNESDAY
+
+  I DON'T KNOW
+blocks:
+  - text: YES SIR
+    confidence: 0.5
+    start: 0
+    end: 15
+  - text: OUT AND KNOCKED
+    confidence: 0.5
+    start: 15
+    end: 30
+  - text: I WAS GONNA
+    confidence: 0.5
+    start: 45
+    end: 60
+  - text: I DON'T KNOW
+    confidence: 0.5
+    start: 60
+    end: 75
+  - text: THE CHILD IMAGES
+    confidence: 0.5
+    start: 90
+    end: 105
+  - text: IS THAT TRUE
+    confidence: 0.5
+    start: 105
+    end: 120
+  - text: JUST THE
+    confidence: 0.5
+    start: 120
+    end: 135
+  - text: WE GOT THREE
+    confidence: 0.5
+    start: 135
+    end: 150
+  - text: NO HEAVEN SAKES
+    confidence: 0.5
+    start: 150
+    end: 165
+  - text: |-
+      WAS SPENDING
+      TOO
+    confidence: 0.5
+    start: 165
+    end: 180
+  - text: WHEN DID YOU
+    confidence: 0.5
+    start: 180
+    end: 195
+  - text: |-
+      ON SUICIDE
+      WATCH
+    confidence: 0.5
+    start: 210
+    end: 225
+  - text: WEDNESDAY
+    confidence: 0.5
+    start: 225
+    end: 240
+  - text: I DON'T KNOW
+    confidence: 0.5
+    start: 240
+    end: 255

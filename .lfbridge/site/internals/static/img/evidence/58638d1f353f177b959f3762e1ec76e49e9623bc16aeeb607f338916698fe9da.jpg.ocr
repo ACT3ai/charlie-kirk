@@ -1,0 +1,33 @@
+source: site/internals/static/img/evidence/58638d1f353f177b959f3762e1ec76e49e9623bc16aeeb607f338916698fe9da.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:44:55.547Z
+kind: image
+language: en-US
+text: |-
+  AMER CAN
+  COMEBA
+  PROVE ME WRONG
+blocks:
+  - text: AMER CAN
+    confidence: 1
+    bbox:
+      - 0.4820740265154239
+      - 0.5133236112616522
+      - 0.5177318976426539
+      - 0.12663286649263827
+  - text: COMEBA
+    confidence: 1
+    bbox:
+      - 0.5332183773248839
+      - 0.5997894126837483
+      - 0.4677295608214106
+      - 0.10038389548277238
+  - text: PROVE ME WRONG
+    confidence: 1
+    bbox:
+      - -0.0048507084965156684
+      - 0.7902707576718264
+      - 0.8227118271262133
+      - 0.17555637848682892

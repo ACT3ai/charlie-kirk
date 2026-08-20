@@ -1,0 +1,25 @@
+source: site/internals/static/img/evidence/5c0742524a9b9cf6e29fe28d815a6c9d68259adfda6e55db9d9655df7fcb175a.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:45:10.390Z
+kind: image
+language: en-US
+text: |-
+  KAZA
+  CATADO
+blocks:
+  - text: KAZA
+    confidence: 0.3
+    bbox:
+      - 0.37552742717299575
+      - 0.021097046244725748
+      - 0.10126582278481011
+      - 0.03375527426160341
+  - text: CATADO
+    confidence: 0.3
+    bbox:
+      - 0.19831223748241908
+      - 0.10970464110407874
+      - 0.14345991561181434
+      - 0.03797468354430378

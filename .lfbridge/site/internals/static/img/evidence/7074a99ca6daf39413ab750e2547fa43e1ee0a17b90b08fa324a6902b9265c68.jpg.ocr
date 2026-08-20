@@ -1,0 +1,25 @@
+source: site/internals/static/img/evidence/7074a99ca6daf39413ab750e2547fa43e1ee0a17b90b08fa324a6902b9265c68.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:46:27.138Z
+kind: image
+language: en-US
+text: |-
+  NO
+  EXIT
+blocks:
+  - text: NO
+    confidence: 1
+    bbox:
+      - 0.13114754086651054
+      - 0.3036649212948047
+      - 0.07025761124121782
+      - 0.08900523560209417
+  - text: EXIT
+    confidence: 1
+    bbox:
+      - 0.11241217778521247
+      - 0.3926701564323112
+      - 0.10772833723653395
+      - 0.08900523560209428

@@ -1,0 +1,41 @@
+source: site/internals/static/img/evidence/2ef81f1840004d6b21609daee8c92495245f51df0cd002d9c6f93d33734d1261.webp
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:43:19.171Z
+kind: image
+language: en-US
+text: |-
+  Wan 1
+  115w ago
+  Jack and i visit the City County
+  get his campaign committee se
+blocks:
+  - text: Wan 1
+    confidence: 0.5
+    bbox:
+      - 0.2850000004
+      - 0.27333333326666664
+      - 0.03999999999999998
+      - 0.019999999999999907
+  - text: 115w ago
+    confidence: 1
+    bbox:
+      - 0.343333333
+      - 0.27333333308888896
+      - 0.06666666666666665
+      - 0.02444444444444438
+  - text: Jack and i visit the City County
+    confidence: 1
+    bbox:
+      - 0.23166666486904763
+      - 0.3155555556666667
+      - 0.25166666666666665
+      - 0.028888888888888742
+  - text: get his campaign committee se
+    confidence: 1
+    bbox:
+      - 0.23166666480555562
+      - 0.3466666668703704
+      - 0.24666666666666667
+      - 0.02444444444444449

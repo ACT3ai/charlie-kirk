@@ -1,0 +1,84 @@
+source: site/internals/static/img/evidence/3b3acb01227226e63aa05c252434bef09df48d656f41eb954c5ef0160b5b1c62.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:43:38.286Z
+kind: image
+language: en-US
+text: >-
+  itu
+
+  NEWS
+
+  11 September 2025
+
+  Charlie Kirk shooting: FBI recover
+
+  weapon as suspect who appears
+
+  "college age' still at large
+
+  Special Agent Robert Bohls says the FBI has recovered a weapon believed to
+  have
+
+  been used in the shooting of influential Trump ally Charlie Kirk in Utah on
+  Wednesda...
+blocks:
+  - text: itu
+    confidence: 0.5
+    bbox:
+      - 0.656074766635514
+      - 0.11574074067129625
+      - 0.028037383177570097
+      - 0.02083333333333337
+  - text: NEWS
+    confidence: 1
+    bbox:
+      - 0.6485981312336448
+      - 0.13657407428240742
+      - 0.04299065420560744
+      - 0.02083333333333326
+  - text: 11 September 2025
+    confidence: 1
+    bbox:
+      - 0.35700934686915886
+      - 0.5208333332175926
+      - 0.17196261682242997
+      - 0.03240740740740744
+  - text: "Charlie Kirk shooting: FBI recover"
+    confidence: 1
+    bbox:
+      - 0.35140186647196264
+      - 0.5648148144386574
+      - 0.3121495327102804
+      - 0.03009259259259256
+  - text: weapon as suspect who appears
+    confidence: 1
+    bbox:
+      - 0.34953271011682246
+      - 0.5995370373842592
+      - 0.308411214953271
+      - 0.02777777777777779
+  - text: "\"college age' still at large"
+    confidence: 1
+    bbox:
+      - 0.34766355000000004
+      - 0.6273148152199073
+      - 0.2392523364485981
+      - 0.03240740740740744
+  - text: Special Agent Robert Bohls says the FBI has recovered a weapon believed to
+      have
+    confidence: 1
+    bbox:
+      - 0.009345799953270976
+      - 0.9212962961950232
+      - 0.8897196261682243
+      - 0.03009259259259256
+  - text: been used in the shooting of influential Trump ally Charlie Kirk in Utah
+      on Wednesda...
+    confidence: 1
+    bbox:
+      - 0.009345790537383254
+      - 0.9537037032986112
+      - 0.9364485981308411
+      - 0.03240740740740744

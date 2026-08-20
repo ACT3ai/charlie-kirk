@@ -1,0 +1,141 @@
+source: site/internals/static/img/evidence/2755338642c533e5e270dfbaaf1d34ac8e9491900fc2860fca7685418ecf67dc.jpg
+status: done
+engine: gemini-flash-latest
+provider: gemini
+generated: 2026-08-20T12:44:00.910Z
+kind: image
+description: >-
+  ## Overview
+
+  This is a direct digital screenshot of the Google Trends web application
+  interface displaying search term comparison data over time. The screen shows
+  four specific search terms being tracked—related to aircraft tail numbers and
+  US state license plates—filtered for searches originating in Israel between
+  April 1, 2025, and September 10, 2025. A line chart labeled "Interest over
+  time" exhibits near-zero activity across most of the timeline with sharp,
+  isolated spikes occurring in mid-August and early September.
+
+
+  ## Hyper-Detail
+
+  The user interface is set against a very pale grey-blue background (`#eef2f8`
+  approximate). 
+
+
+  - **Top Navigation Bar:**
+    - At the far left sits a grey hamburger menu icon (three horizontal stacked lines).
+    - Directly next to it is the multicolor "Google" logo ("G" in blue, "o" in red, "o" in yellow, "g" in blue, "l" in green, "e" in red) followed immediately by the word "Trends" in medium grey text.
+    - Across the center-left are text tabs: "Home", "Explore" (highlighted with a solid blue underline indicator), and "Trending Now".
+    - At the far right are two grey icons: a share icon (three connected dots) and a feedback/message bubble icon containing an exclamation mark.
+
+  - **Search Term Comparison Cards:**
+    - Arranged horizontally across the upper mid-section are four rounded white rectangular cards and a fifth light-blue card.
+    - **Card 1 (Blue dot):** Contains a blue circle followed by `"Utah License Plat..."` with the sublabel `Search term` below.
+    - **Card 2 (Red dot):** Contains a red circle followed by `"tail number N560..."` with the sublabel `Search term` below.
+    - **Card 3 (Yellow dot):** Contains a yellow-orange circle followed by `"Utah License Plat..."` with the sublabel `Search term` below.
+    - **Card 4 (Green dot):** Contains a green circle followed by `"Arizona License P..."` with the sublabel `Search term` below.
+    - **Card 5 (Add card):** A slightly darker lavender-blue rounded rectangle featuring a plus sign icon (`+`) centered within it.
+
+  - **Filter Dropdown Bars:**
+    - Directly beneath the cards are four pill-shaped white dropdown filter buttons with downward-pointing grey arrowheads:
+      1. `Israel`
+      2. `4/1/25 - 9/10/25`
+      3. `All categories`
+      4. `Web Search`
+
+  - **Interest Over Time Chart Section:**
+    - A large rounded white content container houses the chart.
+    - Header: `Interest over time` followed by a small circular question mark info icon at the left, and three utility icons at the far right: a download arrow, embed brackets (`< >`), and a share node icon.
+    - Y-axis: Numbers marked at intervals `0`, `25`, `50`, `75`, `100` on the left. Faint horizontal gridlines extend across the graph.
+    - X-axis: Labeled with dates `Apr 1`, `May 22`, `Jul 12` (partially occluded), and `Sep 1`. A small left footer label says `Average` with short horizontal colored bars above it.
+    - **Data Lines:** 
+      - The green line stays flat at 0 across the entire graph except for an extreme, narrow vertical spike reaching 100 around early September.
+      - Around mid-August, there are three closely grouped vertical spikes: a yellow spike reaching ~63, a red spike reaching ~88, and a blue spike reaching ~92.
+    - **Tooltip Popover:**
+      - A white rounded tooltip box is superimposed over the mid-August data point, pointing at the yellow curve's peak.
+      - Text inside the tooltip reads:
+        - Header: `Aug 12, 2025`
+        - Row 1: `"Utah License Plate Z923DA"` with a value of `0` (blue text indicator implied by row alignment).
+        - Row 2: `"tail number N560tw"` with a value of `0`.
+        - Row 3: `"Utah License Plate T092ZS"` with a value of `63` (colored in yellow/tan).
+        - Row 4: `"Arizona License Plate number..."` with a value of `0`.
+
+  ## Composition
+
+  - **Layout & Distribution:** Standard responsive web layout.
+    - Top navigation bar occupies ~8% of the frame at the top.
+    - Comparison query cards occupy ~18% across the upper-middle frame.
+    - Filter pills occupy ~6% across the middle-left.
+    - The main white chart container fills the remaining ~68% of the frame extending to the bottom edge.
+  - **Visual Balance:** Top-heavy with functional controls, while the lower
+  two-thirds is dominated by the spacious data visualization card. The tooltip
+  popover sits in the lower right-center quadrant, drawing immediate focal
+  attention to the data anomaly.
+
+  - **Focus:** Crisp digital graphic rendering edge-to-edge; infinite digital
+  depth of field (no lens blur).
+
+
+  ## Location
+
+  (indeterminate) – Digital user interface / web software environment. The query
+  metadata specifies the geographic filter region as Israel.
+
+
+  ## Setting & Place
+
+  INSIDE (digital interface / software workspace). No physical architectural
+  environment present.
+
+
+  ## Lighting
+
+  Not applicable (flat digital UI rendering). Clean white and light-grey
+  background lighting typical of modern web design (light mode).
+
+
+  ## Cinematography
+
+  Direct digital screen capture / UI render. Zero optical distortion, eye-level
+  orthographic 2D presentation.
+
+
+  ## People
+
+  No people in frame.
+
+
+  ## Objects & Text
+
+  - **Logos / Branding:**
+    - `Google Trends`
+  - **Navigation & Headers:**
+    - `Home`, `Explore`, `Trending Now`
+    - `Interest over time`
+    - `Average`
+  - **Search Terms / UI Text:**
+    - `"Utah License Plat..."`
+    - `"tail number N560..."`
+    - `"Arizona License P..."`
+    - `Search term`
+    - `Israel`
+    - `4/1/25 - 9/10/25`
+    - `All categories`
+    - `Web Search`
+  - **Tooltip Values & Full Strings:**
+    - `Aug 12, 2025`
+    - `"Utah License Plate Z923DA" 0`
+    - `"tail number N560tw" 0`
+    - `"Utah License Plate T092ZS" 63`
+    - `"Arizona License Plate number..." 0`
+  - **Axis Values:** `0`, `25`, `50`, `75`, `100`, `Apr 1`, `May 22`, `Sep 1`.
+
+
+  ## Colors & Mood
+
+  - **Palette:** Google UI color scheme—pure white (`#FFFFFF`), light
+  lavender-grey background (`#EEF2F8`), medium grey text (`#5F6368`), with
+  primary accents in Google Blue (`#4285F4`), Red (`#EA4335`), Yellow/Amber
+  (`#FBBC04`), and Green (`#34A853`).
+
+  - **Mood:** Analytical, neutral, clinical, and data-centric.

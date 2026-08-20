@@ -1,0 +1,106 @@
+source: site/internals/static/img/evidence/3cddf4b597debc4449aec6cab8f03f39667700b939d223f9b81325943098eed0.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:43:40.359Z
+kind: image
+language: en-US
+text: >-
+  April 3rd: departs Kansas at 8:43am back to Wilmington-left on April 5th to
+  Cairo
+
+  April 9th: Charlie is in Omaha, Nebraska speaking at Lord of Hosts Church
+
+  April 19th: BND comes from Provo via Paris to Salt Lake City then continues
+  onto
+
+  Provo. Lands at 3:33pm local time
+
+  April 23rd: BTT flies from Cairo via Paris through to Williston, ND to Provo.
+  Lands at
+
+  12:13pm
+
+  April 23rd: Charlie was in Salt Lake at University of Utah doing a Prove Me
+  Wrong
+
+  event***
+
+  April 28th: BTT departs from Provo to Wilmington-to Cairo on April 30th
+
+  April 29th: Charlie is speaking in Fargo, North Dakota
+blocks:
+  - text: "April 3rd: departs Kansas at 8:43am back to Wilmington-left on April 5th
+      to Cairo"
+    confidence: 1
+    bbox:
+      - 0.01742160835148072
+      - 0.07848837192950575
+      - 0.8902439024390244
+      - 0.043604651162790775
+  - text: "April 9th: Charlie is in Omaha, Nebraska speaking at Lord of Hosts Church"
+    confidence: 1
+    bbox:
+      - 0.01742159756097577
+      - 0.1860465110465117
+      - 0.8118466898954705
+      - 0.046511627906976716
+  - text: "April 19th: BND comes from Provo via Paris to Salt Lake City then
+      continues onto"
+    confidence: 1
+    bbox:
+      - 0.017421593379791104
+      - 0.29651162799418596
+      - 0.940766550522648
+      - 0.03779069767441867
+  - text: Provo. Lands at 3:33pm local time
+    confidence: 1
+    bbox:
+      - 0.019163763951800226
+      - 0.3488372096414729
+      - 0.39198606271777003
+      - 0.0406976744186045
+  - text: "April 23rd: BTT flies from Cairo via Paris through to Williston, ND to
+      Provo. Lands at"
+    confidence: 1
+    bbox:
+      - 0.017421608503919717
+      - 0.4534883719113372
+      - 0.9146341463414636
+      - 0.04651162790697683
+  - text: 12:13pm
+    confidence: 1
+    bbox:
+      - 0.01912373479033478
+      - 0.5055677568355957
+      - 0.09589887080707615
+      - 0.04409704374712564
+  - text: "April 23rd: Charlie was in Salt Lake at University of Utah doing a Prove
+      Me Wrong"
+    confidence: 1
+    bbox:
+      - 0.017421597223432173
+      - 0.6133720931504361
+      - 0.8902439024390243
+      - 0.043604651162790664
+  - text: event***
+    confidence: 1
+    bbox:
+      - 0.01742160348432054
+      - 0.6656976740116279
+      - 0.09059233449477352
+      - 0.04069767441860461
+  - text: "April 28th: BTT departs from Provo to Wilmington-to Cairo on April 30th"
+    confidence: 1
+    bbox:
+      - 0.01742160849925326
+      - 0.7761627905315615
+      - 0.799651567944251
+      - 0.04069767441860461
+  - text: "April 29th: Charlie is speaking in Fargo, North Dakota"
+    confidence: 1
+    bbox:
+      - 0.017421604853160796
+      - 0.8808139538205981
+      - 0.5853658536585366
+      - 0.046511627906976716

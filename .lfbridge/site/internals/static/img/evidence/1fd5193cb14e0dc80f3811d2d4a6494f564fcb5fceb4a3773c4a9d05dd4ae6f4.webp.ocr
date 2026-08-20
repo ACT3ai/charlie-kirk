@@ -1,0 +1,65 @@
+source: site/internals/static/img/evidence/1fd5193cb14e0dc80f3811d2d4a6494f564fcb5fceb4a3773c4a9d05dd4ae6f4.webp
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:42:53.829Z
+kind: image
+language: en-US
+text: |-
+  Suspect's arrival
+  Rooftop access
+  Rifle found
+  Sniper's perch
+  Charlie Kirk
+  Bullet's path
+  Suspect's movements
+blocks:
+  - text: Suspect's arrival
+    confidence: 1
+    bbox:
+      - 0.766666666
+      - 0.5000000004807693
+      - 0.15333333333333332
+      - 0.038461538461538436
+  - text: Rooftop access
+    confidence: 1
+    bbox:
+      - 0.7695411010331665
+      - 0.5677982645233185
+      - 0.14427424112955722
+      - 0.046707276056504154
+  - text: Rifle found
+    confidence: 1
+    bbox:
+      - 0.7731278566137236
+      - 0.6428843730181226
+      - 0.09874428431193039
+      - 0.036716461181640625
+  - text: Sniper's perch
+    confidence: 1
+    bbox:
+      - 0.7715803281834246
+      - 0.7091418818169345
+      - 0.12683934529622398
+      - 0.04029611722957449
+  - text: Charlie Kirk
+    confidence: 1
+    bbox:
+      - 0.7699389396848197
+      - 0.7863290116434762
+      - 0.10845545450846361
+      - 0.033850854670507746
+  - text: Bullet's path
+    confidence: 1
+    bbox:
+      - 0.7749569128785896
+      - 0.8398505254987888
+      - 0.10841950734456385
+      - 0.039233858063376204
+  - text: Suspect's movements
+    confidence: 1
+    bbox:
+      - 0.7683333308333334
+      - 0.8905325445266272
+      - 0.19999999999999996
+      - 0.035502958579881616

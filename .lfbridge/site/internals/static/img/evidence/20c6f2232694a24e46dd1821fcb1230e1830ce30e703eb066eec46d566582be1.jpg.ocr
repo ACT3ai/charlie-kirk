@@ -1,0 +1,73 @@
+source: site/internals/static/img/evidence/20c6f2232694a24e46dd1821fcb1230e1830ce30e703eb066eec46d566582be1.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:42:51.863Z
+kind: image
+language: en-US
+text: |-
+  AMER LAN
+  LUMEBAY
+  PROVE ME WRONL, PHOVE ME WRUNG
+  AMER
+  yrely
+  COME
+  REFY COM
+  THE
+blocks:
+  - text: AMER LAN
+    confidence: 1
+    bbox:
+      - 0.40211747518973007
+      - 0.38629610713417106
+      - 0.28239983452690975
+      - 0.044480022788047746
+  - text: LUMEBAY
+    confidence: 0.5
+    bbox:
+      - 0.42442415603241085
+      - 0.42160842708383295
+      - 0.24851830800374347
+      - 0.020458404719829626
+  - text: PROVE ME WRONL, PHOVE ME WRUNG
+    confidence: 1
+    bbox:
+      - 0.15896017543988641
+      - 0.4610894902735593
+      - 0.7770645141601563
+      - 0.06045720279216771
+  - text: AMER
+    confidence: 1
+    bbox:
+      - 0.27499999968055555
+      - 0.5046874998359374
+      - 0.12500000000000006
+      - 0.03281250000000002
+  - text: yrely
+    confidence: 0.5
+    bbox:
+      - 0.6111111116435186
+      - 0.5125000001432292
+      - 0.07499999999999996
+      - 0.017187500000000022
+  - text: COME
+    confidence: 1
+    bbox:
+      - 0.27777777769841266
+      - 0.5406250002455357
+      - 0.12222222222222223
+      - 0.03437499999999993
+  - text: REFY COM
+    confidence: 1
+    bbox:
+      - 0.5916666675833333
+      - 0.5281249999062501
+      - 0.09166666666666667
+      - 0.012499999999999956
+  - text: THE
+    confidence: 1
+    bbox:
+      - 0.40833333302777775
+      - 0.651562500078125
+      - 0.030555555555555558
+      - 0.010937499999999933

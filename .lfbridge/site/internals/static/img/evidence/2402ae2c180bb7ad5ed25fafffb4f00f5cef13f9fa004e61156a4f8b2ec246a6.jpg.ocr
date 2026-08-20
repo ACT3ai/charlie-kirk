@@ -1,0 +1,97 @@
+source: site/internals/static/img/evidence/2402ae2c180bb7ad5ed25fafffb4f00f5cef13f9fa004e61156a4f8b2ec246a6.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:42:57.845Z
+kind: image
+language: en-US
+text: |-
+  Justin T. @NJFDJT • 4h
+  Is this the murder weapon/shooter? @JG_CSTT @I_Am_JohnCullen
+  G...
+  ACE
+  ACE
+  ACE
+  RyanMatta
+  @RyanMattaMedia • 5h
+  This should be new, never before seen footage from the
+  Charlie Kirk assassination! Come join us tonight at 8pm
+  est for an explosive X-space! x.com/ryanmattamedia...
+blocks:
+  - text: Justin T. @NJFDJT • 4h
+    confidence: 0.5
+    bbox:
+      - 0.09030837266519819
+      - 0.03465346522277224
+      - 0.2621145374449339
+      - 0.027227722772277252
+  - text: Is this the murder weapon/shooter? @JG_CSTT @I_Am_JohnCullen
+    confidence: 1
+    bbox:
+      - 0.09030837537759592
+      - 0.07425742561881188
+      - 0.7466960352422908
+      - 0.03217821782178221
+  - text: G...
+    confidence: 1
+    bbox:
+      - 0.8744493399559471
+      - 0.032178217722772295
+      - 0.07488986784140972
+      - 0.02970297029702973
+  - text: ACE
+    confidence: 1
+    bbox:
+      - 0.10352422878854627
+      - 0.3490099007425742
+      - 0.033039647577092504
+      - 0.024752475247524774
+  - text: ACE
+    confidence: 1
+    bbox:
+      - 0.5330396478854625
+      - 0.3490099012623762
+      - 0.03524229074889873
+      - 0.027227722772277252
+  - text: ACE
+    confidence: 1
+    bbox:
+      - 0.10132158559471366
+      - 0.626237623490099
+      - 0.035242290748898675
+      - 0.027227722772277252
+  - text: RyanMatta
+    confidence: 1
+    bbox:
+      - 0.16072086201318664
+      - 0.7149359982903023
+      - 0.13230276737969354
+      - 0.03052404375359563
+  - text: "@RyanMattaMedia • 5h"
+    confidence: 1
+    bbox:
+      - 0.4118942719320327
+      - 0.712871287340877
+      - 0.2643171806167401
+      - 0.02970297029702973
+  - text: This should be new, never before seen footage from the
+    confidence: 1
+    bbox:
+      - 0.30176211902139705
+      - 0.7698019800919379
+      - 0.6277533039647577
+      - 0.02970297029702973
+  - text: Charlie Kirk assassination! Come join us tonight at 8pm
+    confidence: 1
+    bbox:
+      - 0.2995594661527166
+      - 0.8069306931518152
+      - 0.6255506607929515
+      - 0.02970297029702962
+  - text: est for an explosive X-space! x.com/ryanmattamedia...
+    confidence: 1
+    bbox:
+      - 0.2995594776211453
+      - 0.844059405940594
+      - 0.6255506607929515
+      - 0.02970297029702973

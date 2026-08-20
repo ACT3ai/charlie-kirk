@@ -1,0 +1,57 @@
+source: site/internals/static/img/evidence/4be63efd03e162207bcd8f83f07e1b48c0b1a3cc318f2eb625b59d2ecdc4e236.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:44:12.566Z
+kind: image
+language: en-US
+text: |-
+  Tyler Robinson has been arrested
+  for the murder of Charlie Kirk. He is
+  a straight white 22 year old male
+  from Utah, raised in a conservative
+  christian household, introduced to
+  guns at an early age by his parents.
+blocks:
+  - text: Tyler Robinson has been arrested
+    confidence: 1
+    bbox:
+      - 0.10771992932364997
+      - 0.6875000003052414
+      - 0.7845601544287023
+      - 0.03663793103448276
+  - text: for the murder of Charlie Kirk. He is
+    confidence: 1
+    bbox:
+      - 0.0773195980219493
+      - 0.7248563224769243
+      - 0.8453608185952765
+      - 0.04597701149425293
+  - text: a straight white 22 year old male
+    confidence: 1
+    bbox:
+      - 0.11340206727640302
+      - 0.7708333330344611
+      - 0.7731958528183281
+      - 0.04597701286447453
+  - text: from Utah, raised in a conservative
+    confidence: 1
+    bbox:
+      - 0.08976661453038842
+      - 0.8182471269005044
+      - 0.8186714348530473
+      - 0.04382183908045978
+  - text: christian household, introduced to
+    confidence: 1
+    bbox:
+      - 0.09335727889279474
+      - 0.8619186050622282
+      - 0.8132854346483681
+      - 0.04540898059976506
+  - text: guns at an early age by his parents.
+    confidence: 1
+    bbox:
+      - 0.0824742467252654
+      - 0.9041666663677944
+      - 0.8350515145391597
+      - 0.045833332785244596

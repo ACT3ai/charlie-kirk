@@ -1,0 +1,57 @@
+source: site/internals/static/img/evidence/40fad2de9820c3bc0dc92e47e4e91cf815e665107b4613bdb5ecba02e810b1a5.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:43:49.167Z
+kind: image
+language: en-US
+text: |-
+  562
+  $ 550 W St
+  800 S
+  W 800 S
+  Parking with no House looking over 800 S
+  W 800 S
+blocks:
+  - text: "562"
+    confidence: 1
+    bbox:
+      - 0.13146551716954022
+      - 0.18125000031249994
+      - 0.02155172413793105
+      - 0.018750000000000044
+  - text: $ 550 W St
+    confidence: 1
+    bbox:
+      - 0.327586202678128
+      - 0.2906249990401786
+      - 0.01939655994546824
+      - 0.13437500000000002
+  - text: 800 S
+    confidence: 1
+    bbox:
+      - 0.17450893163181522
+      - 0.4810161931964979
+      - 0.051844206349603045
+      - 0.02859261333942409
+  - text: W 800 S
+    confidence: 1
+    bbox:
+      - 0.3965517248275862
+      - 0.4968750002812501
+      - 0.07327586206896552
+      - 0.028124999999999956
+  - text: Parking with no House looking over 800 S
+    confidence: 1
+    bbox:
+      - 0.18318965089798855
+      - 0.5093750002083333
+      - 0.5129310344827587
+      - 0.050000000000000044
+  - text: W 800 S
+    confidence: 1
+    bbox:
+      - 0.8663793108682266
+      - 0.524999999888393
+      - 0.07327586206896552
+      - 0.028124999999999956

@@ -1,0 +1,65 @@
+source: site/internals/static/img/evidence/2ba989a193c07ba04a5f19a8b67ef4badd0f399d684c1f62077ae3db297ce276.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:43:17.107Z
+kind: image
+language: en-US
+text: |-
+  EXCLUSIVE INVESTIGATION
+  TRACKING THE
+  SHOOTER'S
+  MOVEMENTS
+  ppr
+  CONS
+  ION
+blocks:
+  - text: EXCLUSIVE INVESTIGATION
+    confidence: 1
+    bbox:
+      - 0.02180232606318274
+      - 0.04392764857562881
+      - 0.07267441749572753
+      - 0.015503875944349543
+  - text: TRACKING THE
+    confidence: 1
+    bbox:
+      - 0.01875610123874985
+      - 0.0737580394895262
+      - 0.08022035598754883
+      - 0.03336247232225209
+  - text: SHOOTER'S
+    confidence: 1
+    bbox:
+      - 0.02607412278278689
+      - 0.10528388133813649
+      - 0.06558431148529054
+      - 0.029742315080430792
+  - text: MOVEMENTS
+    confidence: 1
+    bbox:
+      - 0.021802324729972664
+      - 0.13436692581835996
+      - 0.07412790775299072
+      - 0.028423771328396352
+  - text: ppr
+    confidence: 0.5
+    bbox:
+      - 0.9098837211621174
+      - 0.07751938008540349
+      - 0.017441860437393153
+      - 0.020671833886040547
+  - text: CONS
+    confidence: 1
+    bbox:
+      - 0.8953488369054164
+      - 0.10077519409895075
+      - 0.027616279125213694
+      - 0.025839792887369817
+  - text: ION
+    confidence: 1
+    bbox:
+      - 0.9491279072372172
+      - 0.1033591729932366
+      - 0.015988371372222865
+      - 0.02325581444634328

@@ -1,0 +1,50 @@
+source: site/internals/static/img/evidence/1f5c3eb8404dd54f064f6d50729af55df9f944b2745e294cc85688817ac1c014.png
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:42:46.193Z
+kind: image
+language: en-US
+text: >-
+  This must have been after 6 pm, when the news of the release of the second
+  arrestee had been
+
+  put out, and Fox would later provide a story via Beau Mason whereby officers
+  actually made
+
+  contact with Robinson placing him at the wooded area where the gun was later
+  found at 6:30
+
+  pm.
+blocks:
+  - text: This must have been after 6 pm, when the news of the release of the second
+      arrestee had been
+    confidence: 1
+    bbox:
+      - 0.017441846877172405
+      - 0.17032966999535493
+      - 0.9273255853880978
+      - 0.17057941772125584
+  - text: put out, and Fox would later provide a story via Beau Mason whereby
+      officers actually made
+    confidence: 1
+    bbox:
+      - 0.018895352261301315
+      - 0.36263736246589096
+      - 0.8895348657535601
+      - 0.17145354407174251
+  - text: contact with Robinson placing him at the wooded area where the gun was
+      later found at 6:30
+    confidence: 1
+    bbox:
+      - 0.012500002769756168
+      - 0.516129027875498
+      - 0.9083333505021537
+      - 0.22580645634577823
+  - text: pm.
+    confidence: 1
+    bbox:
+      - 0.018895348965569464
+      - 0.7954545453409091
+      - 0.037790698173512216
+      - 0.125

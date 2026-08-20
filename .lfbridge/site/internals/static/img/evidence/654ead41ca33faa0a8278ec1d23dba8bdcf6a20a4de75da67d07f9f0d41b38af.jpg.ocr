@@ -1,0 +1,41 @@
+source: site/internals/static/img/evidence/654ead41ca33faa0a8278ec1d23dba8bdcf6a20a4de75da67d07f9f0d41b38af.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:45:52.211Z
+kind: image
+language: en-US
+text: |-
+  BLAKEBEDNARZ
+  PM 05:00
+  DEC. 17 2025
+  Cantate
+blocks:
+  - text: BLAKEBEDNARZ
+    confidence: 0.5
+    bbox:
+      - 0.4563953618894029
+      - 0.03696498211771526
+      - 0.5290697448646049
+      - 0.062256805985062225
+  - text: PM 05:00
+    confidence: 1
+    bbox:
+      - 0.6874701187881831
+      - 0.9472912030447996
+      - 0.07128069443656526
+      - 0.021760006304140433
+  - text: DEC. 17 2025
+    confidence: 1
+    bbox:
+      - 0.6889534888015219
+      - 0.9708171207761139
+      - 0.0944767446768564
+      - 0.01760880505597151
+  - text: Cantate
+    confidence: 0.3
+    bbox:
+      - 0.921511627965034
+      - 0.9416342420969752
+      - 0.042151162238536544
+      - 0.03501945424962927

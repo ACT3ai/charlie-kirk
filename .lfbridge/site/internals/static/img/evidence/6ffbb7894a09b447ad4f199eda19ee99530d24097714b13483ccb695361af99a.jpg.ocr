@@ -1,0 +1,65 @@
+source: site/internals/static/img/evidence/6ffbb7894a09b447ad4f199eda19ee99530d24097714b13483ccb695361af99a.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:46:27.042Z
+kind: image
+language: en-US
+text: |-
+  UVU Courtyard
+  J Joshua Barlow
+  Nov 2023
+  npus Dr
+  UVU
+  FOR YoU
+  < Share
+blocks:
+  - text: UVU Courtyard
+    confidence: 1
+    bbox:
+      - 0.030523257526605188
+      - 0.0361111112238196
+      - 0.0668604627568671
+      - 0.021464646524853137
+  - text: J Joshua Barlow
+    confidence: 1
+    bbox:
+      - 0.03488372277854317
+      - 0.06363636357535818
+      - 0.0668604627568671
+      - 0.01830808056725397
+  - text: Nov 2023
+    confidence: 1
+    bbox:
+      - 0.030523256115223236
+      - 0.10555555546624384
+      - 0.02616278922304194
+      - 0.015656565957599233
+  - text: npus Dr
+    confidence: 0.5
+    bbox:
+      - 0.016540697393906557
+      - 0.9490288600362718
+      - 0.02651162857704974
+      - 0.026184704568651074
+  - text: UVU
+    confidence: 0.5
+    bbox:
+      - 0.7906976751480009
+      - -1.767677115793731e-10
+      - 0.04505813882706011
+      - 0.033333333333333326
+  - text: FOR YoU
+    confidence: 1
+    bbox:
+      - 0.7906976747878971
+      - 0.06363636351754764
+      - 0.04215116196490354
+      - 0.024242424964904696
+  - text: < Share
+    confidence: 1
+    bbox:
+      - 0.9156707673784857
+      - 0.024023945976506922
+      - 0.03929799921969157
+      - 0.021649077203538702

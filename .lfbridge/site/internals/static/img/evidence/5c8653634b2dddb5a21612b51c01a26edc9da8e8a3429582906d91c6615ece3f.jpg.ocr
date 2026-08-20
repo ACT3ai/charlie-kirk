@@ -1,0 +1,25 @@
+source: site/internals/static/img/evidence/5c8653634b2dddb5a21612b51c01a26edc9da8e8a3429582906d91c6615ece3f.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:45:12.155Z
+kind: image
+language: en-US
+text: |-
+  RØDE
+  WIRELESS GO Il
+blocks:
+  - text: RØDE
+    confidence: 0.5
+    bbox:
+      - 0.4904593881377339
+      - 0.4365419160886581
+      - 0.0727969421737496
+      - 0.03155702053349918
+  - text: WIRELESS GO Il
+    confidence: 1
+    bbox:
+      - 0.4753315676837318
+      - 0.4928125933352183
+      - 0.08956675328514135
+      - 0.0278883274917896

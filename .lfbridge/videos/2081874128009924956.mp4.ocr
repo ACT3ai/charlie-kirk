@@ -1,0 +1,88 @@
+source: videos/2081874128009924956.mp4
+status: done
+engine: vision
+level: fast
+generated: 2026-08-20T12:44:08.672Z
+kind: video
+language: en-US
+stride_seconds: 15
+frames_sampled: 5
+truncated: false
+text: |-
+  DPf
+  CON;
+  r.T
+  ION
+  iu 111
+  CA.ND,4CF.
+
+  DP
+  CON;
+  r.T
+  'ON
+  C.IND.ICF
+
+  pp
+  CON;
+  r.T
+  ION
+  kl 111
+  CAND,4CF.
+
+  PPf
+  r.T
+  ION
+  CA.ND,4CF.
+
+  DPf
+  CON;
+  r.T
+  ION
+  MoreTips@CandaceOwens.com
+blocks:
+  - text: |-
+      DPf
+      CON;
+      r.T
+      ION
+      iu 111
+      CA.ND,4CF.
+    confidence: 0.5
+    start: 0
+    end: 15
+  - text: |-
+      DP
+      CON;
+      r.T
+      'ON
+      C.IND.ICF
+    confidence: 0.5
+    start: 15
+    end: 30
+  - text: |-
+      pp
+      CON;
+      r.T
+      ION
+      kl 111
+      CAND,4CF.
+    confidence: 0.5
+    start: 30
+    end: 45
+  - text: |-
+      PPf
+      r.T
+      ION
+      CA.ND,4CF.
+    confidence: 0.5
+    start: 45
+    end: 60
+  - text: |-
+      DPf
+      CON;
+      r.T
+      ION
+      MoreTips@CandaceOwens.com
+    confidence: 0.5
+    start: 60
+    end: 75

@@ -1,0 +1,126 @@
+source: site/internals/static/img/evidence/16a23c9332a85d0f438f39d349a0ff24910fae655f239e2f67998ca810d89c8b.png
+status: done
+engine: gemini-flash-latest
+provider: gemini
+generated: 2026-08-20T12:42:45.232Z
+kind: image
+description: >-
+  ## Overview
+
+  This image is a direct digital capture or screenshot of a detailed tabular
+  spreadsheet tracking flight logs, tail numbers, itineraries, and verification
+  notes. The spreadsheet rows are numbered 25 through 57, with the leftmost
+  index column and parts of the rightmost notes column color-coded in bright
+  red, green, yellow, and light blue. The data entries list specific dates,
+  aircraft identifiers (such as "SU-BND" and "SU-BTT"), multi-leg flight routes
+  between cities worldwide, and analyst annotations evaluating data accuracy.
+
+
+  ## Hyper-Detail
+
+  The image consists entirely of a structured data table displayed on a digital
+  screen interface. Thin white gridlines divide the cells across rows and
+  columns. 
+
+
+  * **Column Structure:**
+    * **Column 1 (Leftmost):** Contains row numbers running sequentially from 25 at the top to 57 at the bottom. The cells are color-coded:
+      * Red fill: Rows 25, 28, 29, 30, 31, 32, 33, 34, 36, 37, 38, 41, 45, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57.
+      * Green fill: Rows 26, 27, 35, 42.
+      * Yellow fill: Rows 39, 40, 46.
+      * Light blue fill: Rows 43, 44.
+    * **Column 2:** Contains flight dates in `M/D/YYYY` format, ranging from late 2022 to late 2025 (e.g., "4/19/2024", "11/25/2022", "9/4/2025"). The background of this entire column is a uniform light pastel blue.
+    * **Column 3:** Contains aircraft tail or registration codes, specifically alternating between `"SU-BND"` and `"SU-BTT"`. The background of this column is the same light pastel blue.
+    * **Column 4:** Lists flight route itineraries separated by right-facing arrows (`→`), connecting cities/airports such as `PROVO`, `PARIS`, `SALT LAKE CITY`, `CAIRO`, `WILLISTON`, `WILMINGTON`, `OMAHA`, `LINCOLN`, `WICHITA`, `BERENICE AIRBASE EGYPT`, `GOOSEBAY`, `MINOT`, `ST. LOUIS`, `MISSOURI`, `GIZA`, and `CHICAGO`. Some entries contain quoted text like `"LANDS IN PROVO, UTAH"` or `"TEST FLIGHT"→MISSOURI`. The background is light pastel blue.
+    * **Column 5 (Rightmost):** Contains analytical remarks, fact-checking notes, and location corrections written in English, primarily in black and red text. Several cells have background fills that match or contrast with their verification status (mostly red, light green, bright yellow, and light blue).
+
+  * **Row-by-Row Content Details:**
+    * Row 25: Notes describe a flight path dispute: "No the plane didn't fly from Provo to Paris, then back to Salt lake. Route was on 4/18 Cairo-Paris.. 4/19paris to Goose Bay..Goose Bay to SLC..SLC to Provo. Then sat there until 12July" (red note box).
+    * Rows 26–27: Green notes say "Acc 4/22-23. Williston code XWA" and "Acc".
+    * Rows 28–29: Red notes state "In Egypt" and "Still in Egypt".
+    * Rows 30–34: Red notes state "CAIRO" and "CAIRO / BERENICE AIRBASE EGYPT".
+    * Row 35: Green note reads "ACCURATE POSS BROKEN JET GROUNDED IN PROVO, REPEAT LISTINGS, SEE NOTES."
+    * Rows 36–38: Red notes indicate "CAIRO" and "PROVO".
+    * Rows 39–40: Yellow notes read "ACCURATE-ISH. FLIGHT BEGAN IN CAIRO 16AUG STRAIGHT THROUGH TO PARIS/OMAHA/LINCOLN" and "ACCURATE-ISH. FLIGHT BEGAN ON 3SEPT AND RETURN LEG WAS 10SEPT PRIOR TO ASSASINATION".
+    * Row 41: Red note states "PROVO, NOT PARIS, FOLLOWED BY WILMINGTON THEN CAIRO."
+    * Row 42: Green note states "ACCURATE but see index ref 35".
+    * Rows 43–44: Light blue notes state "Data doesn't go back this far".
+    * Row 45: Red note states "In Cairo".
+    * Row 46: Yellow note states "Accurate-ish, the flight was from 21Feb-4Mar".
+    * Rows 47–57: Red notes document statuses such as "In Egypt or Jorda", "Cairo", "Close, but the plane flew Wichita to Wilmington on 4/20, then Wilmington to Giza 4/21", "Cairo, landed on 1June... took off out of Cairo 20June", "Cairo, landed 20June took off 29June", "Cairo 5apr-16Apr", "Plane was on the ground in Provo .. Also duplicate of number 14 + one year", and "Provo, it was sitting in Provo 19Apr-17Jul".
+
+  ## Composition
+
+  * **Layout:** A strict two-dimensional grid taking up 100% of the visual
+  frame.
+
+  * **Frame-Left (~25% of width):** Contains the vertical numbered index column
+  (Column 1) and the Date column (Column 2).
+
+  * **Frame-Center (~40% of width):** Contains the aircraft registration
+  identifier column (Column 3) and the Flight Route column (Column 4).
+
+  * **Frame-Right (~35% of width):** Contains the extensive verification notes
+  column (Column 5).
+
+  * **Focal Point:** The eye is immediately drawn to the high-contrast blocks of
+  solid saturated red, green, and yellow against the soft light blue background
+  cells.
+
+  * **Depth of Field:** Flat 2D image; no perspective depth or focal blurring is
+  present.
+
+
+  ## Location
+
+  * **Estimated Location:** (indeterminate). This is a digital software
+  spreadsheet graphic rather than a physical geographical scene.
+
+
+  ## Setting & Place
+
+  * **Setting:** Digital environment / User Interface (spreadsheet software
+  application such as Microsoft Excel, Google Sheets, or LibreOffice Calc).
+
+
+  ## Lighting
+
+  * **Lighting Style:** Non-applicable; flat, uniform digital backlighting
+  typical of computer display renderings. No directional shadows, highlights, or
+  ambient environmental lighting.
+
+
+  ## Cinematography
+
+  * **Shot Type:** Full-frame digital screenshot / screen grab.
+
+  * **Angle:** Direct flat orthographic 2D presentation.
+
+  * **Distortion / Lens:** None (pure digital rendering).
+
+
+  ## People
+
+  No people in frame.
+
+
+  ## Objects & Text
+
+  * **Objects:** Digital spreadsheet table with 5 visible columns and 33 visible
+  rows (numbered 25 to 57).
+
+  * **Legible Text:** 
+    * Row numbers `25` through `57`.
+    * Registrations: `SU-BND`, `SU-BTT`.
+    * Dates: `4/19/2024`, `4/23/2024`, `4/28/2024`, `7/20/2024`, `8/17/2024`, `12/8/2024`, `1/12/2025`, `1/17/2025`, `3/15/2025`, `3/22/2025`, `5/23/2025`, `6/18/2025`, `7/7/2025`, `7/20/2025`, `8/17/2025`, `9/4/2025`, `9/10/2025`, `9/13/2025`, `11/25/2022`, `12/5/2022`, `1/12/2023`, `2/25/2023`, `3/15/2023`, `3/27/2023`, `4/25/2023`, `5/12/2023`, `6/8/2023`, `6/25/2023`, `3/10/2024`, `3/22/2024`, `4/15/2024`, `5/3/2024`, `5/10/2024`.
+    * Geographic names: `PROVO`, `PARIS`, `SALT LAKE CITY`, `CAIRO`, `WILLISTON`, `WILMINGTON`, `OMAHA`, `LINCOLN`, `WICHITA`, `BERENICE AIRBASE EGYPT`, `GOOSEBAY`, `MINOT`, `ST. LOUIS`, `MISSOURI`, `GIZA`, `CHICAGO`, `NEBRASKA`.
+    * Analysis phrases: "No the plane didn't fly from Provo to Paris...", "Acc 4/22-23. Williston code XWA", "In Egypt", "ACCURATE POSS BROKEN JET GROUNDED IN PROVO...", "ACCURATE-ISH...", "PRIOR TO ASSASINATION", "Data doesn't go back this far", "Plane was on the ground in Provo .. Also duplicate of number 14 + one year", and related flight verification notes.
+
+  ## Colors & Mood
+
+  * **Dominant Palette:** Bright signal red (`#FF0000`), vivid emerald green
+  (`#00B050`), bright canary yellow (`#FFFF00`), soft light blue/cyan
+  (`#BDD7EE`), white gridlines, and black text.
+
+  * **Mood:** Analytical, investigative, structured, clinical, administrative,
+  and urgent (emphasized by the heavy red correction highlights).

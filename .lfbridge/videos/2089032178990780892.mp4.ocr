@@ -1,0 +1,430 @@
+source: videos/2089032178990780892.mp4
+status: done
+engine: vision
+level: fast
+generated: 2026-08-20T12:46:23.542Z
+kind: video
+language: en-US
+stride_seconds: 15
+frames_sampled: 25
+truncated: false
+text: |-
+  SU-BTT
+  SU-BND
+  I THE TIME
+  S,TAMPS
+
+  Salt Lake City, UT, USA '
+  14fjDT (UTC -6)
+  Wed, Sep 10, 2025
+  LOCAL TIME
+
+  SU-BN
+  NOVEMBER DELTA
+
+  Washlngton Dulles
+  JFK
+  Al
+  DIPLOMAIT,IC OR_
+  MILITARY
+
+  SU-BND
+
+  nR TIH
+  IM.*RILA-
+  58.
+  ui
+  UNIT.ED'STAITES
+  O¢#AI
+  ¢W&TmCIiTITUUE
+  *rt
+  FOR LESS THAN
+
+  .CAlo81
+  'er
+  .eh8yEnne
+  UNITED STAT
+  UNITED,STATIE
+  AZ
+  Phoènix.
+  Tuc50n.
+  -TX
+  tUP FROM MINOT '
+
+  -' Médlcinè.Hat
+  .Regina
+  MINOT IvOT
+  MT
+  -.Sismarck°
+  Bllllngs
+  IRapid'CIty,
+  PROVOIPVVI
+  8ND
+  UT
+  ,IUNITED STAT,E
+  Flagstaff .
+  AZ
+  Amarillo:.,
+  Phoenixi
+  Tucson.
+  Lubbock
+  El Paso
+  TX
+  Fri. May 23. 2026 20=33 UTC
+  FOR NEARLY FOUR
+
+  ational Park.
+  Idaho Falls.k
+  Jack80
+  ' Bia-k"foot
+  atello
+  ,Logan t, I
+  Jreat*
+  S81t-
+  L8ke
+  i)gden
+  'Evanston
+  Salt Lake Cit,yi
+  Sandy
+  PROVOIPVtyI
+  UINTAHIAND
+  RESERVA
+  Maps LryiL
+  Frf, Sep S, 202618.04 UTC
+  I'H'ri
+  THIS A MAPPING
+
+  @ f lightrad0124b
+  and continued
+  to Paris
+  GOOSE BAY IYvHI
+  .N,ORiTH
+  AMEIRIC.A-
+  PROVO IPVUI
+  NQ
+  No
+  Atla
+  A-STRATEGIC NATO
+
+  Scp 15 SUBND
+  Paris LBG
+  Cairo CAI
+  Sep 14 SUBND
+  Goose Bay YYR
+  Paris LBG
+  Sep 14 SUBND
+  Provo I pvuI
+  Goose Bay
+  YYR
+  5CHEDULED
+  DEPAR TURE
+  00'.07
+  ACTUAL DEPAR TURE
+  SCHf DULED ARftIVAL
+  18:57
+  00'.07
+  STATUS
+  Landed 00'.07
+  FLIGHT TIME
+  05'.11
+  Dowfiltsads
+
+  AXEL 10
+  ON*sEPTEMBER IOTH
+
+  15
+  ARMY'S HADES DEEP
+
+  O EXTREMELY
+  LOW
+
+  12:48 PM LOCAL
+
+  2025•10 18:48:42 urc
+  AJtIlLth: 4,gSO ft
+  **¢d: 123 kt
+  '02;5-_0.9- 10.
+  .,18:48:51 U.
+  '48:42,UT.
+  -10.18.4'8:58,',UT,C
+  :4'9:1.5,;U..
+  28:UTsC-..
+  2025-09.-1
+  yJ
+  ..49:544U.TC ,:
+  25-09-10.le:50:07 U.
+  OF PROVO
+
+  AND I.WANTED
+
+  AWkn*J•'. S,4Wft. &250ft
+  '. 129 kt
+  a)2W.10 18A8W UT¢
+  a)2WI0 18..48.'18 UTG
+
+  Provo
+  Vlilmintyon
+  .ri.'A
+  DEPARTURE FROM
+  fknPROVO
+
+  UVU THESE ARE
+
+  THEIY,IALSO HAVE
+
+  SU=BND THE
+
+  FOREIGN STATE
+  AIRCRAFT
+
+  TJJ
+  A PERPETRAYTOR
+  COORDINATION
+
+  'Ii
+  I REALL•YAHOPE
+blocks:
+  - text: |-
+      SU-BTT
+      SU-BND
+      I THE TIME
+      S,TAMPS
+    confidence: 0.5
+    start: 0
+    end: 15
+  - text: |-
+      Salt Lake City, UT, USA '
+      14fjDT (UTC -6)
+      Wed, Sep 10, 2025
+      LOCAL TIME
+    confidence: 0.5
+    start: 15
+    end: 30
+  - text: |-
+      SU-BN
+      NOVEMBER DELTA
+    confidence: 0.5
+    start: 30
+    end: 45
+  - text: |-
+      Washlngton Dulles
+      JFK
+      Al
+      DIPLOMAIT,IC OR_
+      MILITARY
+    confidence: 0.5
+    start: 45
+    end: 60
+  - text: SU-BND
+    confidence: 0.5
+    start: 60
+    end: 75
+  - text: |-
+      nR TIH
+      IM.*RILA-
+      58.
+      ui
+      UNIT.ED'STAITES
+      O¢#AI
+      ¢W&TmCIiTITUUE
+      *rt
+      FOR LESS THAN
+    confidence: 0.5
+    start: 75
+    end: 90
+  - text: |-
+      .CAlo81
+      'er
+      .eh8yEnne
+      UNITED STAT
+      UNITED,STATIE
+      AZ
+      Phoènix.
+      Tuc50n.
+      -TX
+      tUP FROM MINOT '
+    confidence: 0.5
+    start: 90
+    end: 105
+  - text: |-
+      -' Médlcinè.Hat
+      .Regina
+      MINOT IvOT
+      MT
+      -.Sismarck°
+      Bllllngs
+      IRapid'CIty,
+      PROVOIPVVI
+      8ND
+      UT
+      ,IUNITED STAT,E
+      Flagstaff .
+      AZ
+      Amarillo:.,
+      Phoenixi
+      Tucson.
+      Lubbock
+      El Paso
+      TX
+      Fri. May 23. 2026 20=33 UTC
+      FOR NEARLY FOUR
+    confidence: 0.5
+    start: 105
+    end: 120
+  - text: |-
+      ational Park.
+      Idaho Falls.k
+      Jack80
+      ' Bia-k"foot
+      atello
+      ,Logan t, I
+      Jreat*
+      S81t-
+      L8ke
+      i)gden
+      'Evanston
+      Salt Lake Cit,yi
+      Sandy
+      PROVOIPVtyI
+      UINTAHIAND
+      RESERVA
+      Maps LryiL
+      Frf, Sep S, 202618.04 UTC
+      I'H'ri
+      THIS A MAPPING
+    confidence: 0.5
+    start: 120
+    end: 135
+  - text: |-
+      @ f lightrad0124b
+      and continued
+      to Paris
+      GOOSE BAY IYvHI
+      .N,ORiTH
+      AMEIRIC.A-
+      PROVO IPVUI
+      NQ
+      No
+      Atla
+      A-STRATEGIC NATO
+    confidence: 0.5
+    start: 135
+    end: 150
+  - text: |-
+      Scp 15 SUBND
+      Paris LBG
+      Cairo CAI
+      Sep 14 SUBND
+      Goose Bay YYR
+      Paris LBG
+      Sep 14 SUBND
+      Provo I pvuI
+      Goose Bay
+      YYR
+      5CHEDULED
+      DEPAR TURE
+      00'.07
+      ACTUAL DEPAR TURE
+      SCHf DULED ARftIVAL
+      18:57
+      00'.07
+      STATUS
+      Landed 00'.07
+      FLIGHT TIME
+      05'.11
+      Dowfiltsads
+    confidence: 0.5
+    start: 150
+    end: 165
+  - text: |-
+      AXEL 10
+      ON*sEPTEMBER IOTH
+    confidence: 0.5
+    start: 165
+    end: 180
+  - text: |-
+      15
+      ARMY'S HADES DEEP
+    confidence: 0.5
+    start: 180
+    end: 195
+  - text: |-
+      O EXTREMELY
+      LOW
+    confidence: 0.5
+    start: 195
+    end: 210
+  - text: 12:48 PM LOCAL
+    confidence: 0.5
+    start: 210
+    end: 225
+  - text: |-
+      2025•10 18:48:42 urc
+      AJtIlLth: 4,gSO ft
+      **¢d: 123 kt
+      '02;5-_0.9- 10.
+      .,18:48:51 U.
+      '48:42,UT.
+      -10.18.4'8:58,',UT,C
+      :4'9:1.5,;U..
+      28:UTsC-..
+      2025-09.-1
+      yJ
+      ..49:544U.TC ,:
+      25-09-10.le:50:07 U.
+      OF PROVO
+    confidence: 0.5
+    start: 225
+    end: 240
+  - text: AND I.WANTED
+    confidence: 0.5
+    start: 240
+    end: 255
+  - text: |-
+      AWkn*J•'. S,4Wft. &250ft
+      '. 129 kt
+      a)2W.10 18A8W UT¢
+      a)2WI0 18..48.'18 UTG
+    confidence: 0.5
+    start: 255
+    end: 270
+  - text: |-
+      Provo
+      Vlilmintyon
+      .ri.'A
+      DEPARTURE FROM
+      fknPROVO
+    confidence: 0.5
+    start: 270
+    end: 285
+  - text: UVU THESE ARE
+    confidence: 0.5
+    start: 285
+    end: 300
+  - text: THEIY,IALSO HAVE
+    confidence: 0.5
+    start: 300
+    end: 315
+  - text: SU=BND THE
+    confidence: 0.5
+    start: 315
+    end: 330
+  - text: |-
+      FOREIGN STATE
+      AIRCRAFT
+    confidence: 0.5
+    start: 330
+    end: 345
+  - text: |-
+      TJJ
+      A PERPETRAYTOR
+      COORDINATION
+    confidence: 0.5
+    start: 345
+    end: 360
+  - text: |-
+      'Ii
+      I REALL•YAHOPE
+    confidence: 0.5
+    start: 360
+    end: 375

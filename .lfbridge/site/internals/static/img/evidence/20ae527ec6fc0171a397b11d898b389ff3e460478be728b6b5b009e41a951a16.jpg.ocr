@@ -1,0 +1,25 @@
+source: site/internals/static/img/evidence/20ae527ec6fc0171a397b11d898b389ff3e460478be728b6b5b009e41a951a16.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:42:49.451Z
+kind: image
+language: en-US
+text: |-
+  NÝL
+  OW
+blocks:
+  - text: NÝL
+    confidence: 0.3
+    bbox:
+      - -8.838383654582079e-10
+      - 0.18749999975852272
+      - 0.21111111111111114
+      - 0.05312500000000009
+  - text: OW
+    confidence: 1
+    bbox:
+      - 4.629629617940938e-10
+      - 0.23593749979166667
+      - 0.2111111111111111
+      - 0.050000000000000044

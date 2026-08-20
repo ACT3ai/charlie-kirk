@@ -1,0 +1,49 @@
+source: site/internals/static/img/evidence/705e2aba6f5e73433169f806a84b4e6eba7afbe9fcb2bf5cf90de821630f62a6.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:46:25.455Z
+kind: image
+language: en-US
+text: |-
+  rd
+  ter
+  /10
+  BLANEBEDNAKZ
+  4:51 / 4:55 ()
+blocks:
+  - text: rd
+    confidence: 0.5
+    bbox:
+      - 4.990494202927657e-10
+      - 0.20930232625968992
+      - 0.13307984790874525
+      - 0.10852713178294571
+  - text: ter
+    confidence: 1
+    bbox:
+      - -8.027038434028683e-10
+      - 0.562015503359173
+      - 0.16730038022813687
+      - 0.09302325581395354
+  - text: /10
+    confidence: 1
+    bbox:
+      - -7.224334387999559e-10
+      - 0.8953488367054264
+      - 0.18250950570342206
+      - 0.10077519379844957
+  - text: BLANEBEDNAKZ
+    confidence: 0.5
+    bbox:
+      - 0.448669198336502
+      - 0.8100775196947674
+      - 0.5095057034220533
+      - 0.05813953488372092
+  - text: 4:51 / 4:55 ()
+    confidence: 1
+    bbox:
+      - 0.22813688596958165
+      - 0.8953488370542637
+      - 0.3840304182509506
+      - 0.06201550387596899

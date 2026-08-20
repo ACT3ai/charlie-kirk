@@ -1,0 +1,57 @@
+source: site/internals/static/img/evidence/3f8b5e8e6a3a70df1ba8156e593ac51cbe60670b784a1eef90361d4453011457.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:43:46.495Z
+kind: image
+language: en-US
+text: |-
+  EASY ESCAPE
+  NO SMOKING
+  INSIDE OR WITHIN 25 FEET
+  Deve
+  CONS
+  ION
+blocks:
+  - text: EASY ESCAPE
+    confidence: 1
+    bbox:
+      - 0.19794345386067566
+      - 0.10174418608473879
+      - 0.5012853261016381
+      - 0.03343023200411044
+  - text: NO SMOKING
+    confidence: 1
+    bbox:
+      - 0.1348930704344631
+      - 0.668472120390178
+      - 0.2304852117641338
+      - 0.058408917345915023
+  - text: INSIDE OR WITHIN 25 FEET
+    confidence: 1
+    bbox:
+      - 0.13831321387412937
+      - 0.6875712352039999
+      - 0.224198569565558
+      - 0.05282971563048877
+  - text: Deve
+    confidence: 0.5
+    bbox:
+      - 0.4395886906758274
+      - 0.927325581621917
+      - 0.061696655357856844
+      - 0.01889534800616577
+  - text: CONS
+    confidence: 1
+    bbox:
+      - 0.4316528102102014
+      - 0.9590715665454508
+      - 0.05186147412818498
+      - 0.016449890315393123
+  - text: ION
+    confidence: 1
+    bbox:
+      - 0.5321336768236091
+      - 0.9593023258121331
+      - 0.03341902209185632
+      - 0.015988371504367382

@@ -1,0 +1,25 @@
+source: site/internals/static/img/evidence/496f0198057c0c874773cc24cc501472c74e2c53184a05f2f7d3fd92faadeaac.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:44:06.127Z
+kind: image
+language: en-US
+text: |-
+  0:02/0:22 () ฿*
+  vsn ANIRI
+blocks:
+  - text: 0:02/0:22 () ฿*
+    confidence: 1
+    bbox:
+      - 0.9331395371764237
+      - 0.9768041236305529
+      - 0.06540697433901288
+      - 0.01546391734370478
+  - text: vsn ANIRI
+    confidence: 0.5
+    bbox:
+      - 0.17151161361835635
+      - -3.623949207387511e-8
+      - 0.2558139805003177
+      - 0.1778351253933378

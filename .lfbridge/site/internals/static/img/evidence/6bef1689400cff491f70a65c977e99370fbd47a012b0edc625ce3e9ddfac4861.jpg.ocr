@@ -1,0 +1,57 @@
+source: site/internals/static/img/evidence/6bef1689400cff491f70a65c977e99370fbd47a012b0edc625ce3e9ddfac4861.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:46:13.817Z
+kind: image
+language: en-US
+text: |-
+  Tail Number N808LP
+  @upnager
+  A group shot in front of the first HADES
+  prototype aircraft at the Bombardier Defense
+  facility in Wichita, Kansas, today. Bombardier
+  November 25, 2024
+blocks:
+  - text: Tail Number N808LP
+    confidence: 1
+    bbox:
+      - 0.12592592253367005
+      - 0.020594965810276644
+      - 0.7462962962962962
+      - 0.08009153318077811
+  - text: "@upnager"
+    confidence: 0.5
+    bbox:
+      - 0.06959236520009997
+      - 0.22785677968749607
+      - 0.31400228429723664
+      - 0.08821483935044061
+  - text: A group shot in front of the first HADES
+    confidence: 1
+    bbox:
+      - 0.10370370678240738
+      - 0.624713958667048
+      - 0.7388888888888889
+      - 0.05263157894736836
+  - text: prototype aircraft at the Bombardier Defense
+    confidence: 1
+    bbox:
+      - 0.10370370838477357
+      - 0.7048054919018562
+      - 0.8425925925925926
+      - 0.052631578947368474
+  - text: facility in Wichita, Kansas, today. Bombardier
+    confidence: 1
+    bbox:
+      - 0.10185185538580246
+      - 0.7826086955282228
+      - 0.8481481481481483
+      - 0.05720823798626995
+  - text: November 25, 2024
+    confidence: 1
+    bbox:
+      - 0.15000000085390952
+      - 0.8970251719043987
+      - 0.7037037037037037
+      - 0.10068649885583525

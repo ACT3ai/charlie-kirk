@@ -1,0 +1,51 @@
+source: site/internals/static/img/evidence/43db211b21f81c1f70deac0747003a7253b7c379b07491acd41e3c1ff607a63f.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:43:57.706Z
+kind: image
+language: en-US
+text: |-
+  302Girl @302Girl19977 • 17h
+  ...
+  Please please please look at this. I have the video but can't send. Guy with
+  long lens camera. On the video they do not flinch when the shot is fired and
+  back away.
+blocks:
+  - text: 302Girl @302Girl19977 • 17h
+    confidence: 1
+    bbox:
+      - 0.11279826260845989
+      - 0.03630363048679863
+      - 0.3253796095444686
+      - 0.03300330033003307
+  - text: ...
+    confidence: 1
+    bbox:
+      - 0.9305856833839479
+      - 0.03960396023102308
+      - 0.030368763557483747
+      - 0.01650165016501648
+  - text: Please please please look at this. I have the video but can't send. Guy
+      with
+    confidence: 1
+    bbox:
+      - 0.11496745688720184
+      - 0.08910891101485152
+      - 0.824295010845987
+      - 0.03960396039603964
+  - text: long lens camera. On the video they do not flinch when the shot is fired
+      and
+    confidence: 1
+    bbox:
+      - 0.11062905880694159
+      - 0.13861386145214527
+      - 0.8438177874186551
+      - 0.03960396039603953
+  - text: back away.
+    confidence: 1
+    bbox:
+      - 0.11441235926568205
+      - 0.19055218228714277
+      - 0.12465524570026523
+      - 0.035135184184159396

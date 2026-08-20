@@ -1,0 +1,37 @@
+source: videos/2080783022367162519.mp4
+status: done
+engine: vision
+level: fast
+generated: 2026-08-20T12:43:53.357Z
+kind: video
+language: en-US
+stride_seconds: 15
+frames_sampled: 6
+truncated: false
+text: |-
+  CHOPPERGJ
+  s'.ril- ).'.T
+  .V•
+
+  CHOPPERGJ
+
+  CHOPPERGJ
+  41
+blocks:
+  - text: |-
+      CHOPPERGJ
+      s'.ril- ).'.T
+      .V•
+    confidence: 0.5
+    start: 0
+    end: 15
+  - text: CHOPPERGJ
+    confidence: 0.5
+    start: 15
+    end: 75
+  - text: |-
+      CHOPPERGJ
+      41
+    confidence: 0.5
+    start: 75
+    end: 90

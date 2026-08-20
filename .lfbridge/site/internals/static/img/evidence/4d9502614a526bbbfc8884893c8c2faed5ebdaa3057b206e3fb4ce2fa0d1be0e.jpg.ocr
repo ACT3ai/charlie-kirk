@@ -1,0 +1,49 @@
+source: site/internals/static/img/evidence/4d9502614a526bbbfc8884893c8c2faed5ebdaa3057b206e3fb4ce2fa0d1be0e.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:44:26.333Z
+kind: image
+language: en-US
+text: |-
+  10 i ce fr1 09 19 0
+  Front Entry
+  FRIMNEI
+  2025 Fri 09:19:05
+  YREFIC
+blocks:
+  - text: 10 i ce fr1 09 19 0
+    confidence: 0.5
+    bbox:
+      - 0.7449346083472678
+      - 0.07660885888193358
+      - 0.07257439233466434
+      - 0.016250161511367045
+  - text: Front Entry
+    confidence: 1
+    bbox:
+      - 0.5815948829161656
+      - 0.11251674433623271
+      - 0.0813981094289512
+      - 0.026031668343948433
+  - text: FRIMNEI
+    confidence: 0.3
+    bbox:
+      - 0.4178070673678244
+      - 0.10825964430751678
+      - 0.04434976604323537
+      - 0.03699346579687679
+  - text: 2025 Fri 09:19:05
+    confidence: 1
+    bbox:
+      - 0.4744374569756013
+      - 0.1945091873544874
+      - 0.06858679046205823
+      - 0.017518008855160194
+  - text: YREFIC
+    confidence: 0.5
+    bbox:
+      - 0.9534883727978641
+      - 0.45772594760403507
+      - 0.04505813796982905
+      - 0.010204081433128231

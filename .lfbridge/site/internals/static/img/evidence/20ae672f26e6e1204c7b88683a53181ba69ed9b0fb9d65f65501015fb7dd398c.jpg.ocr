@@ -1,0 +1,57 @@
+source: site/internals/static/img/evidence/20ae672f26e6e1204c7b88683a53181ba69ed9b0fb9d65f65501015fb7dd398c.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:42:49.642Z
+kind: image
+language: en-US
+text: |-
+  V.O.G.
+  Voice of God
+  LRAD TECHNOLOGY
+  being deployed
+  PUSRING VOICES
+  INSIDE YOUR HEAD
+blocks:
+  - text: V.O.G.
+    confidence: 1
+    bbox:
+      - 0.28472222404513886
+      - 0.023437500065104144
+      - 0.3645833333333333
+      - 0.09635416666666674
+  - text: Voice of God
+    confidence: 1
+    bbox:
+      - 0.30896887724866356
+      - 0.13775129603576708
+      - 0.336923360824585
+      - 0.04220574100812269
+  - text: LRAD TECHNOLOGY
+    confidence: 1
+    bbox:
+      - 0.30555555828125
+      - 0.20052083319010416
+      - 0.5451388888888888
+      - 0.04427083333333337
+  - text: being deployed
+    confidence: 1
+    bbox:
+      - 0.30902777506944445
+      - 0.2604166661979167
+      - 0.4027777777777778
+      - 0.046875
+  - text: PUSRING VOICES
+    confidence: 1
+    bbox:
+      - 0.17361110796875007
+      - 0.7760416668098958
+      - 0.6284722222222223
+      - 0.04947916666666663
+  - text: INSIDE YOUR HEAD
+    confidence: 1
+    bbox:
+      - 0.1493055590625
+      - 0.8515624998567709
+      - 0.701388888888889
+      - 0.04947916666666663

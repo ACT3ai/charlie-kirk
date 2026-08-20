@@ -1,0 +1,49 @@
+source: site/internals/static/img/evidence/303f832d2406ada7652a0d29592d1346acac4c9defbf8430c163c4391595b86c.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:43:23.562Z
+kind: image
+language: en-US
+text: |-
+  Dan
+  Justin
+  Brian
+  Rick
+  Frank
+blocks:
+  - text: Dan
+    confidence: 1
+    bbox:
+      - 0.3282574057759703
+      - 0.5952134417554
+      - 0.10091191530227661
+      - 0.05805989354848862
+  - text: Justin
+    confidence: 1
+    bbox:
+      - 0.263016146310571
+      - 0.7457519012591038
+      - 0.12685583531856537
+      - 0.05247781425714493
+  - text: Brian
+    confidence: 1
+    bbox:
+      - 0.6208333323111712
+      - 0.5749999993647426
+      - 0.11666666716337204
+      - 0.05416666716337204
+  - text: Rick
+    confidence: 1
+    bbox:
+      - 0.5840967868411411
+      - 0.8013210399189485
+      - 0.0965801551938057
+      - 0.04987834766507149
+  - text: Frank
+    confidence: 1
+    bbox:
+      - 0.8352624570963698
+      - 0.6470289102122401
+      - 0.12009673565626144
+      - 0.05329906940460205

@@ -1,0 +1,111 @@
+source: videos/2084986993063166461.mp4
+status: done
+engine: vision
+level: fast
+generated: 2026-08-20T12:45:14.145Z
+kind: video
+language: en-US
+stride_seconds: 15
+frames_sampled: 8
+truncated: false
+text: |-
+  USA
+  TODAY
+
+  USA
+  TODAY
+  iY
+
+  USA
+  TODAY
+  *i
+
+  USA
+  TODAY
+  Cp
+  11
+  * 17-.
+  ¢L
+
+  USA
+  TODAY
+
+  r4
+  4.1
+  tr,r.
+
+  USA
+  TODAY
+  DPS
+  ENSJCI
+  f),b
+  f81
+  Ll
+
+  ID
+  UQA
+  I"ODAY
+  4*J
+blocks:
+  - text: |-
+      USA
+      TODAY
+    confidence: 0.5
+    start: 0
+    end: 15
+  - text: |-
+      USA
+      TODAY
+      iY
+    confidence: 0.5
+    start: 15
+    end: 30
+  - text: |-
+      USA
+      TODAY
+      *i
+    confidence: 0.5
+    start: 30
+    end: 45
+  - text: |-
+      USA
+      TODAY
+      Cp
+      11
+      * 17-.
+      ¢L
+    confidence: 0.5
+    start: 45
+    end: 60
+  - text: |-
+      USA
+      TODAY
+    confidence: 0.5
+    start: 60
+    end: 75
+  - text: |-
+      r4
+      4.1
+      tr,r.
+    confidence: 0.5
+    start: 75
+    end: 90
+  - text: |-
+      USA
+      TODAY
+      DPS
+      ENSJCI
+      f),b
+      f81
+      Ll
+    confidence: 0.5
+    start: 90
+    end: 105
+  - text: |-
+      ID
+      UQA
+      I"ODAY
+      4*J
+    confidence: 0.5
+    start: 105
+    end: 120

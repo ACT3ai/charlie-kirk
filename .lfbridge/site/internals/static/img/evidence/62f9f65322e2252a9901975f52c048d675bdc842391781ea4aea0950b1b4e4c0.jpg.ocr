@@ -1,0 +1,25 @@
+source: site/internals/static/img/evidence/62f9f65322e2252a9901975f52c048d675bdc842391781ea4aea0950b1b4e4c0.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:45:51.332Z
+kind: image
+language: en-US
+text: |-
+  LUNY
+  SVE ME WRON
+blocks:
+  - text: LUNY
+    confidence: 0.3
+    bbox:
+      - -0.00004014102933802883
+      - -0.00008748012254278237
+      - 0.14787902186839322
+      - 0.01470984425395716
+  - text: SVE ME WRON
+    confidence: 1
+    bbox:
+      - -0.015991497727106438
+      - 0.06500520070668037
+      - 1.0273147808824987
+      - 0.13459336012601852

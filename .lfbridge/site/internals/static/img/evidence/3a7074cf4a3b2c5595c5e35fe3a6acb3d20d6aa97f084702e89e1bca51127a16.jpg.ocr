@@ -1,0 +1,57 @@
+source: site/internals/static/img/evidence/3a7074cf4a3b2c5595c5e35fe3a6acb3d20d6aa97f084702e89e1bca51127a16.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:43:37.501Z
+kind: image
+language: en-US
+text: |-
+  _Am Charlie @LightOfGod697 • 4h
+  Here's a new person's video,he was there. A lot of black vehicles backing
+  up, were they expecting something to happen. His name is LeonJakeB.
+  YouTube
+  ...
+  YREFY.COM
+blocks:
+  - text: _Am Charlie @LightOfGod697 • 4h
+    confidence: 1
+    bbox:
+      - 0.09534367727272738
+      - 0.04713804768518515
+      - 0.4035476718403548
+      - 0.043771043771043794
+  - text: Here's a new person's video,he was there. A lot of black vehicles backing
+    confidence: 1
+    bbox:
+      - 0.09756098388026589
+      - 0.1010101009090909
+      - 0.8270509977827051
+      - 0.043771043771043794
+  - text: up, were they expecting something to happen. His name is LeonJakeB.
+    confidence: 1
+    bbox:
+      - 0.09534367266075405
+      - 0.15151515168350171
+      - 0.8048780487804879
+      - 0.043771043771043794
+  - text: YouTube
+    confidence: 1
+    bbox:
+      - 0.09527299802015965
+      - 0.20489744235339913
+      - 0.09991963422483457
+      - 0.034649559945771236
+  - text: ...
+    confidence: 1
+    bbox:
+      - 0.9290465637102735
+      - 0.05387205370370374
+      - 0.03104212860310429
+      - 0.01683501683501676
+  - text: YREFY.COM
+    confidence: 0.5
+    bbox:
+      - 0.8736141910938655
+      - 0.42424242404601564
+      - 0.07538802660753874
+      - 0.023569023569023573

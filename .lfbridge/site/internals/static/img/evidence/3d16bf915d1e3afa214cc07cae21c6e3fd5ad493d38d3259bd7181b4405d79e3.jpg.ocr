@@ -1,0 +1,25 @@
+source: site/internals/static/img/evidence/3d16bf915d1e3afa214cc07cae21c6e3fd5ad493d38d3259bd7181b4405d79e3.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:43:41.309Z
+kind: image
+language: en-US
+text: |-
+  UV
+  YOU
+blocks:
+  - text: UV
+    confidence: 0.5
+    bbox:
+      - 0.08284883710075495
+      - 0.37209302283473056
+      - 0.0479651172955831
+      - 0.029069768057929157
+  - text: YOU
+    confidence: 1
+    bbox:
+      - 0.4026162807177995
+      - 0.37015503905801106
+      - 0.0654069741566976
+      - 0.03294573624928798

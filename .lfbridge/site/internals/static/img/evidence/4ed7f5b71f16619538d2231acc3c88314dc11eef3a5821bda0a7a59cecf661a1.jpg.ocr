@@ -1,0 +1,25 @@
+source: site/internals/static/img/evidence/4ed7f5b71f16619538d2231acc3c88314dc11eef3a5821bda0a7a59cecf661a1.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:44:25.323Z
+kind: image
+language: en-US
+text: |-
+  x.com - To exit full screen, press esc
+  12:05pm
+blocks:
+  - text: x.com - To exit full screen, press esc
+    confidence: 1
+    bbox:
+      - 0.5250000002682683
+      - 0.014598540784530267
+      - 0.2124999923801303
+      - 0.03671150332455031
+  - text: 12:05pm
+    confidence: 1
+    bbox:
+      - 0.21366279022952095
+      - 0.2411167510895611
+      - 0.31395349014415574
+      - 0.13197969661529407

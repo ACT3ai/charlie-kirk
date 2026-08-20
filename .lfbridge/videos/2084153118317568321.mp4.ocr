@@ -1,0 +1,111 @@
+source: videos/2084153118317568321.mp4
+status: done
+engine: vision
+level: fast
+generated: 2026-08-20T12:45:11.014Z
+kind: video
+language: en-US
+stride_seconds: 15
+frames_sampled: 6
+truncated: false
+text: |-
+  F,ilmed In:
+  ., é4V,*
+  PRQKCT
+  ION
+  60FPS
+  •r
+  THE
+
+  F,ilmed In:
+  PRQKCT
+  ION
+  60,FPS
+  i[c
+  THE
+
+  Filmediln:
+  60FPS
+  co
+  ION
+  J••
+  THE
+  ¥ 4•
+
+  Filmed,In:
+  4KI
+  60FPS
+  PRQKCT
+  ION
+  5•
+
+  F,ilmed
+  PR@FCT
+  ION
+  60FPS
+
+  Filmed In:
+  4KV
+  60FPS
+  PR@ÈCT
+  ION
+blocks:
+  - text: |-
+      F,ilmed In:
+      ., é4V,*
+      PRQKCT
+      ION
+      60FPS
+      •r
+      THE
+    confidence: 0.5
+    start: 0
+    end: 15
+  - text: |-
+      F,ilmed In:
+      PRQKCT
+      ION
+      60,FPS
+      i[c
+      THE
+    confidence: 0.5
+    start: 15
+    end: 30
+  - text: |-
+      Filmediln:
+      60FPS
+      co
+      ION
+      J••
+      THE
+      ¥ 4•
+    confidence: 0.5714285714285714
+    start: 30
+    end: 45
+  - text: |-
+      Filmed,In:
+      4KI
+      60FPS
+      PRQKCT
+      ION
+      5•
+    confidence: 0.5
+    start: 45
+    end: 60
+  - text: |-
+      F,ilmed
+      PR@FCT
+      ION
+      60FPS
+    confidence: 0.5
+    start: 60
+    end: 75
+  - text: |-
+      Filmed In:
+      4KV
+      60FPS
+      PR@ÈCT
+      ION
+    confidence: 0.5
+    start: 75
+    end: 90

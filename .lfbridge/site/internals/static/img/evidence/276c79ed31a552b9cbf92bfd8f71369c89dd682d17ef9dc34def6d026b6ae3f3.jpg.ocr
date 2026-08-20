@@ -1,0 +1,25 @@
+source: site/internals/static/img/evidence/276c79ed31a552b9cbf92bfd8f71369c89dd682d17ef9dc34def6d026b6ae3f3.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:43:00.468Z
+kind: image
+language: en-US
+text: |-
+  EFY.COM
+  X @THEINTELSCIF
+blocks:
+  - text: EFY.COM
+    confidence: 0.5
+    bbox:
+      - 0.009600001359455055
+      - 0.07495186772268148
+      - 0.19291865542340325
+      - 0.11074860488312155
+  - text: X @THEINTELSCIF
+    confidence: 0.5
+    bbox:
+      - 0.8784806490720813
+      - -0.0008980475571642721
+      - 0.11822645058361658
+      - 0.04554757589026337

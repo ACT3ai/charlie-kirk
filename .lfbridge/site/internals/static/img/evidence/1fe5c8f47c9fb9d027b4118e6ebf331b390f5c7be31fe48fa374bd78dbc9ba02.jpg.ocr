@@ -1,0 +1,81 @@
+source: site/internals/static/img/evidence/1fe5c8f47c9fb9d027b4118e6ebf331b390f5c7be31fe48fa374bd78dbc9ba02.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:42:47.834Z
+kind: image
+language: en-US
+text: |-
+  ctgdfw.com
+  CONSOUDATEO
+  U
+  PAINING RUNS
+  About Us
+  Consolidated Training Group (CTG) derives its
+  curriculum from the knowledge of our members.
+  This knowledge is based upon a culmination of
+  over one hundred and fifty vears of real life
+blocks:
+  - text: ctgdfw.com
+    confidence: 0.3
+    bbox:
+      - 0.13903118496115874
+      - 0.02011755333413212
+      - 0.19962792211724806
+      - 0.020811404822007606
+  - text: CONSOUDATEO
+    confidence: 0.5
+    bbox:
+      - 0.27821523071259546
+      - 0.12209302251199872
+      - 0.4435695441194283
+      - 0.07994186244329904
+  - text: U
+    confidence: 1
+    bbox:
+      - 0.530183727245369
+      - 0.2688953497981277
+      - 0.09186351687409156
+      - 0.0552325567700237
+  - text: PAINING RUNS
+    confidence: 1
+    bbox:
+      - 0.2808399064033364
+      - 0.325471699427092
+      - 0.45144355241642437
+      - 0.08747855917667235
+  - text: About Us
+    confidence: 1
+    bbox:
+      - 0.37525928750685106
+      - 0.5187493791314526
+      - 0.24160740578821466
+      - 0.03517566046215859
+  - text: Consolidated Training Group (CTG) derives its
+    confidence: 1
+    bbox:
+      - 0.039370085835855835
+      - 0.8866279066939864
+      - 0.8372703374818314
+      - 0.023320635636920217
+  - text: curriculum from the knowledge of our members.
+    confidence: 1
+    bbox:
+      - 0.03674544114852754
+      - 0.9215116285789466
+      - 0.9002624038578004
+      - 0.02188459759511019
+  - text: This knowledge is based upon a culmination of
+    confidence: 1
+    bbox:
+      - 0.03674543475891543
+      - 0.9519725554651322
+      - 0.8661416696947675
+      - 0.02331814185219394
+  - text: over one hundred and fifty vears of real life
+    confidence: 1
+    bbox:
+      - 0.03937010299804616
+      - 0.9840116281490459
+      - 0.7874015394107317
+      - 0.014701922598261308

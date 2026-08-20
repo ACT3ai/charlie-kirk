@@ -1,0 +1,38 @@
+source: videos/2071074071404798401.mp4
+status: done
+engine: vision
+level: fast
+generated: 2026-08-20T12:42:42.662Z
+kind: video
+language: en-US
+stride_seconds: 15
+frames_sampled: 23
+truncated: false
+text: |-
+  NO
+  EXIT
+
+  EX
+
+  fYL-I
+
+  -11:10
+blocks:
+  - text: |-
+      NO
+      EXIT
+    confidence: 0.5
+    start: 0
+    end: 15
+  - text: EX
+    confidence: 0.5
+    start: 30
+    end: 45
+  - text: fYL-I
+    confidence: 0.5
+    start: 90
+    end: 105
+  - text: -11:10
+    confidence: 0.5
+    start: 240
+    end: 255

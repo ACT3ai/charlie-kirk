@@ -1,0 +1,49 @@
+source: site/internals/static/img/evidence/6c81b24b22b3de1b024545b30b4d51c08436e296191030ecfd74d2c42d6e481b.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:46:19.659Z
+kind: image
+language: en-US
+text: |-
+  ppre
+  CONS
+  FET
+  ION
+  Pu. SRob Hild
+blocks:
+  - text: ppre
+    confidence: 0.5
+    bbox:
+      - 0.9156976757232151
+      - 0.07493540078307792
+      - 0.03343023061752315
+      - 0.020671833886040547
+  - text: CONS
+    confidence: 1
+    bbox:
+      - 0.9127906986231566
+      - 0.09819121474921777
+      - 0.02616278926531468
+      - 0.025839793240582498
+  - text: FET
+    confidence: 0.5
+    bbox:
+      - 0.9476744185942491
+      - 0.07493540102420115
+      - 0.017441860834757517
+      - 0.023255812680279764
+  - text: ION
+    confidence: 1
+    bbox:
+      - 0.9607558142805731
+      - 0.09819121431614175
+      - 0.01889534791310632
+      - 0.02325581444634328
+  - text: Pu. SRob Hild
+    confidence: 0.5
+    bbox:
+      - 0.26308139120384044
+      - 0.8423772595463195
+      - 0.41860466003417973
+      - 0.10854866592972368

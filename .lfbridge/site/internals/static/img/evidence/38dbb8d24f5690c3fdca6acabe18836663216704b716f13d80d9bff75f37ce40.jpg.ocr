@@ -1,0 +1,41 @@
+source: site/internals/static/img/evidence/38dbb8d24f5690c3fdca6acabe18836663216704b716f13d80d9bff75f37ce40.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:43:33.479Z
+kind: image
+language: en-US
+text: |-
+  NING
+  INT ACTION
+  WINSTION
+  BI/HNOS
+blocks:
+  - text: NING
+    confidence: 1
+    bbox:
+      - -0.00003119740329719095
+      - 0.08272522017992479
+      - 0.10326007008552551
+      - 0.026410024613142014
+  - text: INT ACTION
+    confidence: 1
+    bbox:
+      - -0.00040867591432112993
+      - 0.10070273573665123
+      - 0.17232897877693176
+      - 0.03551313281059265
+  - text: WINSTION
+    confidence: 1
+    bbox:
+      - 0.3059153705616081
+      - 0.21391407852628075
+      - 0.18978843092918396
+      - 0.09518565982580185
+  - text: BI/HNOS
+    confidence: 0.5
+    bbox:
+      - 0.7578898773108993
+      - 0.8399435741993204
+      - 0.03439808636903763
+      - 0.12527358531951904

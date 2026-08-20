@@ -1,0 +1,41 @@
+source: site/internals/static/img/evidence/200ed94a72601cd4cf3dd055f97632f7c313712071aa6eb803426c142edc1da9.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:42:48.958Z
+kind: image
+language: en-US
+text: |-
+  YREFY.COM
+  ING
+  NT USA
+  X @MJTruthUltra
+blocks:
+  - text: YREFY.COM
+    confidence: 0.5
+    bbox:
+      - 0.05196875474551111
+      - 0.07312133913232888
+      - 0.20159813209816263
+      - 0.10923395625880505
+  - text: ING
+    confidence: 1
+    bbox:
+      - 0.18148148164021163
+      - 0.29180327831381736
+      - 0.05925925925925926
+      - 0.05245901639344264
+  - text: NT USA
+    confidence: 1
+    bbox:
+      - 0.15470370420119364
+      - 0.32859016566748034
+      - 0.10192592055709274
+      - 0.0734426217000993
+  - text: X @MJTruthUltra
+    confidence: 0.5
+    bbox:
+      - 0.8222222209104938
+      - 0.05573770508196718
+      - 0.15740740740740744
+      - 0.04590163934426228

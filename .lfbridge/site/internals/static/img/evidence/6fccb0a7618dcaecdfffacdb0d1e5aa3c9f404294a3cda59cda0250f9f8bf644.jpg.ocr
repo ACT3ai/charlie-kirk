@@ -1,0 +1,129 @@
+source: site/internals/static/img/evidence/6fccb0a7618dcaecdfffacdb0d1e5aa3c9f404294a3cda59cda0250f9f8bf644.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:46:24.572Z
+kind: image
+language: en-US
+text: |-
+  Headline
+  SUSA
+  Gaming Platform
+  Discord Says Tyler
+  Robinson Didn't Plot
+  Kirk's Assassination
+  There
+  'We identified a Discord account associated
+  with the suspect, but have found no
+  evidence that the suspect planned this
+  incident or promoted violence on
+  Discord.
+  ...'
+  Posted by Ken Silva September 13, 2025
+  Discord
+blocks:
+  - text: Headline
+    confidence: 1
+    bbox:
+      - 0.3497882029152413
+      - 0.00689867094678831
+      - 0.2981662547642617
+      - 0.03416777402162552
+  - text: SUSA
+    confidence: 1
+    bbox:
+      - 0.4604966119080312
+      - 0.0348837211130828
+      - 0.1873589198759365
+      - 0.04505813866853714
+  - text: Gaming Platform
+    confidence: 1
+    bbox:
+      - 0.07449210021512626
+      - 0.13662790645036738
+      - 0.5711060959580092
+      - 0.047965116798877716
+  - text: Discord Says Tyler
+    confidence: 1
+    bbox:
+      - 0.07449209762335549
+      - 0.1962209296728722
+      - 0.6230248319541919
+      - 0.047965116798877716
+  - text: Robinson Didn't Plot
+    confidence: 1
+    bbox:
+      - 0.07449211249474552
+      - 0.2500000001515599
+      - 0.6817155528321794
+      - 0.04505813866853714
+  - text: Kirk's Assassination
+    confidence: 1
+    bbox:
+      - 0.0699774337701406
+      - 0.3095703125747786
+      - 0.6817155528321794
+      - 0.04508084990084171
+  - text: There
+    confidence: 1
+    bbox:
+      - 0.06942648174240822
+      - 0.3723740922053901
+      - 0.19749015379747964
+      - 0.041589025408029556
+  - text: "'We identified a Discord account associated"
+    confidence: 1
+    bbox:
+      - 0.07449210547468732
+      - 0.4593023256247126
+      - 0.8510157768932568
+      - 0.023255813866853714
+  - text: with the suspect, but have found no
+    confidence: 1
+    bbox:
+      - 0.0767494460278247
+      - 0.49267578142684754
+      - 0.7042889283893683
+      - 0.029296875
+  - text: evidence that the suspect planned this
+    confidence: 1
+    bbox:
+      - 0.07223476870064863
+      - 0.5247093029325987
+      - 0.760722320973421
+      - 0.029069766402244568
+  - text: incident or promoted violence on
+    confidence: 1
+    bbox:
+      - 0.06997743889225198
+      - 0.5581054690988698
+      - 0.6568848489810556
+      - 0.02783203125
+  - text: Discord.
+    confidence: 1
+    bbox:
+      - 0.07416297918468677
+      - 0.5905671189629038
+      - 0.15415711468014986
+      - 0.023807622492313385
+  - text: ...'
+    confidence: 1
+    bbox:
+      - 0.218961626886894
+      - 0.5901162787254879
+      - 0.05417607007873257
+      - 0.023255813866853714
+  - text: Posted by Ken Silva September 13, 2025
+    confidence: 1
+    bbox:
+      - 0.06997742747557888
+      - 0.659667968594181
+      - 0.5440180638129505
+      - 0.020564589649438858
+  - text: Discord
+    confidence: 1
+    bbox:
+      - 0.30388326093854645
+      - 0.9366443564714544
+      - 0.579592390740587
+      - 0.06566477566957474

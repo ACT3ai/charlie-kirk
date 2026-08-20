@@ -1,0 +1,84 @@
+source: videos/2083454143046226110.mp4
+status: done
+engine: vision
+level: fast
+generated: 2026-08-20T12:44:53.816Z
+kind: video
+language: en-US
+stride_seconds: 15
+frames_sampled: 12
+truncated: false
+text: |-
+  TikT
+  @ mormonish.house
+
+  11
+  TikT
+  @ mormonish.house
+
+  ,l TikT
+  @ mormonish.house
+
+  @ mormonish.house
+
+  TikT
+  @ mormonish.house
+
+  . TikT
+  @ morinontshthou
+
+  TikT
+  @ mormonlsh.hou
+  Jj
+
+  TikT
+  @ mormonish.house
+blocks:
+  - text: |-
+      TikT
+      @ mormonish.house
+    confidence: 0.5
+    start: 0
+    end: 30
+  - text: |-
+      11
+      TikT
+      @ mormonish.house
+    confidence: 0.5
+    start: 30
+    end: 45
+  - text: |-
+      ,l TikT
+      @ mormonish.house
+    confidence: 0.5
+    start: 45
+    end: 60
+  - text: "@ mormonish.house"
+    confidence: 0.5
+    start: 60
+    end: 75
+  - text: |-
+      TikT
+      @ mormonish.house
+    confidence: 0.5
+    start: 75
+    end: 90
+  - text: |-
+      . TikT
+      @ morinontshthou
+    confidence: 0.5
+    start: 90
+    end: 105
+  - text: |-
+      TikT
+      @ mormonlsh.hou
+      Jj
+    confidence: 0.5
+    start: 105
+    end: 120
+  - text: |-
+      TikT
+      @ mormonish.house
+    confidence: 0.5
+    start: 120
+    end: 180

@@ -1,0 +1,38 @@
+source: videos/2075290171105288315.mp4
+status: done
+engine: vision
+level: fast
+generated: 2026-08-20T12:42:49.783Z
+kind: video
+language: en-US
+stride_seconds: 15
+frames_sampled: 2
+truncated: false
+text: |-
+  Cellebrite Dl Ltd. is a digital forensics company
+  headquartered '
+  Petah Tikva, Israel tha
+  rovides
+  tools for law enforcement agencies as well as
+  enterprise companies and service providers to
+  collect, review, analyze and manage digital data.
+  Their flagship product series is the Cellebrite UFED.
+  12]
+  Cellebrite Dl Ltd.
+  Cellebrite
+blocks:
+  - text: |-
+      Cellebrite Dl Ltd. is a digital forensics company
+      headquartered '
+      Petah Tikva, Israel tha
+      rovides
+      tools for law enforcement agencies as well as
+      enterprise companies and service providers to
+      collect, review, analyze and manage digital data.
+      Their flagship product series is the Cellebrite UFED.
+      12]
+      Cellebrite Dl Ltd.
+      Cellebrite
+    confidence: 0.5
+    start: 0
+    end: 30

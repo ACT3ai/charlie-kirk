@@ -1,0 +1,25 @@
+source: site/internals/static/img/evidence/44a0940fb60f399de93a45aaeed030354d7a7484c52a86e7cbf498601dac770b.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:43:58.869Z
+kind: image
+language: en-US
+text: |-
+  AMER LAN
+  COMEBACH
+blocks:
+  - text: AMER LAN
+    confidence: 1
+    bbox:
+      - 0.5839793311149026
+      - 0.4854166673521203
+      - 0.19896640071162464
+      - 0.03493217031161
+  - text: COMEBACH
+    confidence: 1
+    bbox:
+      - 0.590912149159204
+      - 0.5158210217590593
+      - 0.18737583866825813
+      - 0.036170562108357784

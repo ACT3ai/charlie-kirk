@@ -1,0 +1,156 @@
+source: site/internals/static/img/evidence/301e311eeb333bb6c53ff2de0f68d6e7d8976a2a279c84aeee07b31adc89f0ef.jpg
+status: done
+engine: gemini-flash-latest
+provider: gemini
+generated: 2026-08-20T12:44:54.571Z
+kind: image
+description: >-
+  ## Overview
+
+  This image is a full-page screenshot of a web-based account management
+  dashboard, specifically displaying a domain name portfolio on a domain
+  registrar platform (Namecheap). The interface features a dark gray left-hand
+  navigation sidebar and a wide main content area listing numerous registered
+  domain names in alphabetical order, detailing their active status, privacy
+  settings, expiration dates, and management action buttons.
+
+
+  ## Hyper-Detail
+
+  The screenshot depicts a clean, flat-design web UI. 
+
+
+  * **Sidebar (Left Column):**
+    * Dark charcoal background (`#2b2b2b` to `#333333`).
+    * Top item: "Dashboard" with a speedometer/gauge icon.
+    * Second item: "Expiring / Expired" with a red notification badge showing the number "3" and a circular clock/arrow icon.
+    * Third item (Active/Selected): "Domain List" highlighted with a teal/cyan background tab and a house/building icon.
+    * Fourth item: "Hosting List" with a server rack icon.
+    * Fifth item: "Private Email" with an envelope icon.
+    * Sixth item: "SSL Certificates" with a padlock icon.
+    * Seventh item: "Apps" with a grid/squares icon.
+    * Eighth item: "My Offers" with a golden tag icon and an orange "NEW" pill badge.
+    * Ninth item: "Profile" with a gear/cog icon.
+
+  * **Top Toolbar (Main Area Header):**
+    * Left side: "Actions" dropdown button with a play/arrow icon, followed by a "Filters" dropdown button with a funnel icon.
+    * Middle: A rounded search input field containing placeholder text "Search" and a magnifying glass search icon.
+    * Right side: "View All" dropdown selector with a list icon.
+
+  * **Main Domain Table / List View:**
+    * Arranged in horizontal rows separated by subtle gray divider lines against a white/off-white background.
+    * Each domain entry contains:
+      1. A checkbox (some checked, some unchecked) next to an orange square icon with a white "N" (Namecheap brand icon).
+      2. Domain name in bold dark text (e.g., `showrunnerhq.com`, `socialcontract.io`, `sparkon.com`, etc.).
+      3. Below each domain name: an info circle icon followed by the text "Domain Privacy protection is ON".
+      4. Status pill: Primarily teal/cyan rounded rectangles containing a checkmark and the text `✓ ACTIVE`. One entry (`visualshero.com`) shows an amber/yellow pill with an exclamation icon and text `⚠ ALERT`.
+      5. Toggle switch: Rounded UI toggle buttons showing an active/enabled state (teal fill on left/right position depending on state).
+      6. Expiration Date: Dates displayed in `Mmm DD, YYYY` format ranging from 2025 to 2027 (e.g., `Aug 21, 2026`, `Jun 3, 2027`, `Nov 3, 2025`).
+      7. Action button: A bordered rectangular button labeled `MANAGE`. For `visualshero.com`, it displays a split dropdown button labeled `RENEW` with a downward arrow.
+
+  * **Full Domain Inventory Listed (top to bottom):**
+    * `showrunnerhq.com` (Active, Aug 21, 2026)
+    * `socialcontract.io` (Active, Nov 2, 2026)
+    * `sparkon.com` (Active, May 10, 2026)
+    * `spritestudio.ai` (Active, Jun 3, 2027)
+    * `starbucklabs.com` (Active, Sep 9, 2026)
+    * `startupcommunityhq.com` (Active, Oct 6, 2026)
+    * `startupholon.com` (Active, Jun 13, 2026)
+    * `startuphq.net` (Active, Aug 5, 2026)
+    * `stateholon.com` (Active, Jun 12, 2026)
+    * `storyacademy.ai` (Active, Dec 28, 2026)
+    * `storyforgeai.ai` (Active, Jun 3, 2027)
+    * `storystage.ai` (Active, Dec 28, 2026)
+    * `storystage.tv` (Active, Jan 20, 2026)
+    * `storystagehq.com` (Active, Jan 20, 2026)
+    * `storyworld.movie` (Active, May 30, 2026)
+    * `storyworldai.ai` (Active, May 25, 2027)
+    * `takeoneai.com` (Active, Jun 3, 2026)
+    * `taxholon.com` (Active, Jun 14, 2026)
+    * `telistudios.com` (Active, Feb 8, 2026)
+    * `telitv.com` (Active, Feb 8, 2026)
+    * `thestarbucks.com` (Active, May 24, 2026)
+    * `uapholon.com` (Active, May 23, 2026)
+    * `ukholon.com` (Active, Jun 12, 2026)
+    * `universityholon.com` (Active, Jun 12, 2026)
+    * `universityhq.io` (Active, May 21, 2026)
+    * `usaholon.com` (Active, Jun 12, 2026)
+    * `usdproject.com` (Active, Apr 19, 2026)
+    * `visualshero.com` (Alert, Nov 3, 2025)
+    * `votingholon.com` (Active, Jun 10, 2026)
+    * `wallstreetholon.com` (Active, Jun 14, 2026)
+    * `wavitv.com` (Active, Feb 10, 2026)
+    * `wethepeoplehq.org` (Active, Dec 15, 2025)
+    * `whitehatengineering.com` (Active, Dec 5, 2025)
+    * `whitehatengineering.io` (Active, Apr 28, 2026)
+    * `whoassassinatedcharliekirk.com` (Active, Sep 27, 2026)
+    * `workersdefensedepartment.com` (Active, May 21, 2026)
+    * `workersholon.com` (Active, May 24, 2026)
+    * `wovenai.ai` (Active, Jun 3, 2027)
+    * `yuvotv.com` (Active, Feb 10, 2026)
+    * `zerotheft.net` (Active, Sep 17, 2026)
+
+  ## Composition
+
+  * **Layout Structure:** Vertical, two-column split screen.
+    * **Sidebar (FRAME-LEFT):** Occupies approximately 12–15% of the total frame width, spanning the entire height top-to-bottom.
+    * **Main Content Area (FRAME-CENTER to FRAME-RIGHT):** Occupies approximately 85–88% of the frame width.
+  * **Visual Hierarchy:**
+    * Top horizontal controls bar occupies ~3% of vertical space at the top right.
+    * The remaining ~97% is a repeating, structured grid/table layout with high vertical symmetry and repetition.
+  * **Depth & Focus:** Entire image is a sharp, 2D digital graphic interface
+  with zero depth of field blur.
+
+
+  ## Location
+
+  (indeterminate) – This is a digital software user interface / website
+  screenshot and does not depict a physical geographic location.
+
+
+  ## Setting & Place
+
+  Digital environment / Web browser user interface (Namecheap Domain Management
+  Control Panel).
+
+
+  ## Lighting
+
+  Not applicable (Digital UI rendering with flat graphic design and consistent
+  artificial UI lighting).
+
+
+  ## Cinematography
+
+  Direct digital screen capture / UI render. No physical lens or camera angle
+  applies (equivalent to a flat, orthogonal orthographic plane view).
+
+
+  ## People
+
+  No people in frame.
+
+
+  ## Objects & Text
+
+  * **UI Elements:** Buttons, checkboxes, toggle switches, search bar,
+  dropdowns, table rows, notification badges.
+
+  * **Brand Text / Logos:** Namecheap logo stylized "N" icons.
+
+  * **Key Text:** Full domain names as transcribed in the Hyper-Detail section,
+  menu labels ("Dashboard", "Expiring / Expired", "Domain List", "Hosting List",
+  "Private Email", "SSL Certificates", "Apps", "My Offers", "Profile",
+  "Actions", "Filters", "Search", "View All", "ACTIVE", "ALERT", "MANAGE",
+  "RENEW", "Domain Privacy protection is ON").
+
+
+  ## Colors & Mood
+
+  * **Palette:** Crisp white (`#FFFFFF`) and very light gray backgrounds, dark
+  charcoal/black sidebar (`#2D3136`), teal/cyan accents (`#5FB3B3` / `#48A9A6`),
+  orange accents (`#DE5D35`), and subtle yellow/amber alert highlighting
+  (`#F5A623`).
+
+  * **Mood:** Utilitarian, organized, technical, clean corporate software
+  interface.

@@ -1,0 +1,98 @@
+source: videos/2084417955824062950.mp4
+status: done
+engine: vision
+level: fast
+generated: 2026-08-20T12:45:08.415Z
+kind: video
+language: en-US
+stride_seconds: 15
+frames_sampled: 14
+truncated: false
+text: |-
+  CT
+  C,INI).ICF
+
+  C,INI).ICF
+
+  CT
+  C,IND.ICF
+
+  CT
+  .NI).ICF
+
+  C.INI).ICF
+
+  CT
+  C,INI).ICF
+
+  I
+
+  CT
+  C,4.ND.Icr
+
+  CT
+  C,4ND.ICI.:
+
+  CT
+  C,INI).ICF
+
+  C,INI).ICF
+blocks:
+  - text: |-
+      CT
+      C,INI).ICF
+    confidence: 0.5
+    start: 0
+    end: 15
+  - text: C,INI).ICF
+    confidence: 0.5
+    start: 15
+    end: 30
+  - text: |-
+      CT
+      C,IND.ICF
+    confidence: 0.5
+    start: 30
+    end: 45
+  - text: |-
+      CT
+      .NI).ICF
+    confidence: 0.5
+    start: 45
+    end: 60
+  - text: C.INI).ICF
+    confidence: 0.5
+    start: 60
+    end: 75
+  - text: |-
+      CT
+      C,INI).ICF
+    confidence: 0.5
+    start: 120
+    end: 135
+  - text: I
+    confidence: 0.5
+    start: 135
+    end: 150
+  - text: |-
+      CT
+      C,4.ND.Icr
+    confidence: 0.5
+    start: 150
+    end: 165
+  - text: |-
+      CT
+      C,4ND.ICI.:
+    confidence: 0.5
+    start: 165
+    end: 180
+  - text: |-
+      CT
+      C,INI).ICF
+    confidence: 0.5
+    start: 180
+    end: 195
+  - text: C,INI).ICF
+    confidence: 0.5
+    start: 195
+    end: 210

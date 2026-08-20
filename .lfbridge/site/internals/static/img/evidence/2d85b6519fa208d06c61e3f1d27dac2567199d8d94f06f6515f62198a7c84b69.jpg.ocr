@@ -1,0 +1,49 @@
+source: site/internals/static/img/evidence/2d85b6519fa208d06c61e3f1d27dac2567199d8d94f06f6515f62198a7c84b69.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:43:17.232Z
+kind: image
+language: en-US
+text: |-
+  Hurley27 @Hurleys3d27 • 10h
+  White car Shows up same time blue jean brown boots with yellow stripe
+  wearing guy shows back up behind charlie seconds before the tragedy
+  white car
+  PROVE
+blocks:
+  - text: Hurley27 @Hurleys3d27 • 10h
+    confidence: 1
+    bbox:
+      - 0.07847533340807179
+      - 0.051724138045976975
+      - 0.34977578475336324
+      - 0.04137931034482767
+  - text: White car Shows up same time blue jean brown boots with yellow stripe
+    confidence: 1
+    bbox:
+      - 0.07847534461883397
+      - 0.10689655155172417
+      - 0.8295964125560539
+      - 0.04482758620689653
+  - text: wearing guy shows back up behind charlie seconds before the tragedy
+    confidence: 1
+    bbox:
+      - 0.07847534443946169
+      - 0.15862068948275865
+      - 0.8116591928251121
+      - 0.04482758620689653
+  - text: white car
+    confidence: 1
+    bbox:
+      - 0.30921279902667564
+      - 0.2638844549777736
+      - 0.1932335926278289
+      - 0.061886257960878543
+  - text: PROVE
+    confidence: 1
+    bbox:
+      - 0.7932654079673435
+      - 0.8355525772256597
+      - 0.1556216526459151
+      - 0.07717070743955412

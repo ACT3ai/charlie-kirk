@@ -1,0 +1,49 @@
+source: site/internals/static/img/evidence/40b69adda67dfb504ba7e2a74546dc366a0c1dfd0eaffe0d8f39d07d8f08b598.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:43:48.824Z
+kind: image
+language: en-US
+text: |-
+  & Shooting Position
+  Technology
+  Enology Building
+  Jump Down ≥
+  Hid Gun >
+blocks:
+  - text: "& Shooting Position"
+    confidence: 1
+    bbox:
+      - 0.0276595726382979
+      - 0.14869888486988847
+      - 0.1829787234042553
+      - 0.048327137546468446
+  - text: Technology
+    confidence: 1
+    bbox:
+      - 0.3468085098138298
+      - 0.055762081877323455
+      - 0.06595744680851062
+      - 0.029739776951672847
+  - text: Enology Building
+    confidence: 1
+    bbox:
+      - 0.3638297862978723
+      - 0.02973977687732343
+      - 0.09361702127659577
+      - 0.052044609665427455
+  - text: Jump Down ≥
+    confidence: 1
+    bbox:
+      - 0.2680851079787233
+      - 0.4052044607806691
+      - 0.12765957446808512
+      - 0.03717472118959109
+  - text: Hid Gun >
+    confidence: 1
+    bbox:
+      - 0.7466319684809462
+      - 0.8349563318945609
+      - 0.09822542718116267
+      - 0.04012451207327572

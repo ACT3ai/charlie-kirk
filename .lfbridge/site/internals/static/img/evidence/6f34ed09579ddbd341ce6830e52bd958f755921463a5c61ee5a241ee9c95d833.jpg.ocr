@@ -1,0 +1,73 @@
+source: site/internals/static/img/evidence/6f34ed09579ddbd341ce6830e52bd958f755921463a5c61ee5a241ee9c95d833.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:46:26.515Z
+kind: image
+language: en-US
+text: |-
+  Tue Oct 28 7:55PM
+  rey are attacking
+  nore! They are
+  t offour phones!!
+  AROA NO
+  -
+  HAT YOU
+  06
+blocks:
+  - text: Tue Oct 28 7:55PM
+    confidence: 1
+    bbox:
+      - 0.27543152112547953
+      - 0.2134999991035862
+      - 0.18040310895001443
+      - 0.032302326957384775
+  - text: rey are attacking
+    confidence: 1
+    bbox:
+      - -0.007272790308212875
+      - 0.26455017493094124
+      - 0.4025856018066406
+      - 0.06336398919423425
+  - text: nore! They are
+    confidence: 1
+    bbox:
+      - -0.003971925120754639
+      - 0.3043243229879087
+      - 0.34064721001519094
+      - 0.04614004691441864
+  - text: t offour phones!!
+    confidence: 1
+    bbox:
+      - -0.00531690746416326
+      - 0.3331429557386797
+      - 0.4120382803457755
+      - 0.056600542863210035
+  - text: AROA NO
+    confidence: 0.3
+    bbox:
+      - 0.06459948026452496
+      - 0.4140625003023586
+      - 0.20155039186830875
+      - 0.03802083333333339
+  - text: "-"
+    confidence: 1
+    bbox:
+      - 0.10594315141004355
+      - 0.44912790682747716
+      - 0.06201550519024883
+      - 0.021802326043446896
+  - text: HAT YOU
+    confidence: 1
+    bbox:
+      - 9.745647844283666e-10
+      - 0.8328125009661753
+      - 0.1912144696270978
+      - 0.03802083333333328
+  - text: "06"
+    confidence: 1
+    bbox:
+      - 1.2413215377404396e-9
+      - 0.9156976745538535
+      - 0.03359172962330006
+      - 0.011627906560897738

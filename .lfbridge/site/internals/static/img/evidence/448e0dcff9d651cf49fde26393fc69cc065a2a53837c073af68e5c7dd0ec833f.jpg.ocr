@@ -1,0 +1,25 @@
+source: site/internals/static/img/evidence/448e0dcff9d651cf49fde26393fc69cc065a2a53837c073af68e5c7dd0ec833f.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:43:57.318Z
+kind: image
+language: en-US
+text: |-
+  PETN CHARGE
+  RF Initiator
+blocks:
+  - text: PETN CHARGE
+    confidence: 1
+    bbox:
+      - 0.38372093397420465
+      - 0.04921259799741262
+      - 0.2340116182963053
+      - 0.05518300702252732
+  - text: RF Initiator
+    confidence: 1
+    bbox:
+      - 0.42139553126582574
+      - 0.13879674454167068
+      - 0.16156940460205071
+      - 0.05482409319539705

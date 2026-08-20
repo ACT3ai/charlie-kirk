@@ -1,0 +1,81 @@
+source: site/internals/static/img/evidence/2d521a06d33a051430f9a0c110b1f523825c09f0953b8ec48f7bf1fd081f1118.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:43:17.617Z
+kind: image
+language: en-US
+text: >-
+  It would seem, though, that the apparent lack of communication stems from the
+  later note under
+
+  the keyboard story which we do not think was part of the initial text exchange
+  (that is, initially the
+
+  text exchange did not begin with the words, "drop what you are doing, look
+  under my
+
+  keyboard"). Rather, the text exchange actually began with these words:
+
+  I am still ok my love, but am stuck in orem for a little while longer yet.
+  Shouldn't be long until I can
+
+  come home, but I gotta grab my rifle still. To be honest I had hoped to keep
+  this secret till I died of
+
+  old age. I am sorry to involve you.
+blocks:
+  - text: It would seem, though, that the apparent lack of communication stems from
+      the later note under
+    confidence: 1
+    bbox:
+      - 0.021802345766454095
+      - 0.08895705553383981
+      - 0.9098836935584538
+      - 0.09815950920245398
+  - text: the keyboard story which we do not think was part of the initial text
+      exchange (that is, initially the
+    confidence: 1
+    bbox:
+      - 0.020348832954678275
+      - 0.19325153364488235
+      - 0.9142441762708764
+      - 0.10429447852760743
+  - text: text exchange did not begin with the words, "drop what you are doing, look
+      under my
+    confidence: 1
+    bbox:
+      - 0.020348857105313204
+      - 0.30322581011517324
+      - 0.8052325288126292
+      - 0.11088461963676965
+  - text: 'keyboard"). Rather, the text exchange actually began with these words:'
+    confidence: 1
+    bbox:
+      - 0.012500012849356243
+      - 0.38888888971130886
+      - 0.6916666582596204
+      - 0.12962962659590083
+  - text: I am still ok my love, but am stuck in orem for a little while longer yet.
+      Shouldn't be long until I can
+    confidence: 1
+    bbox:
+      - 0.09156976075693994
+      - 0.6380368093235094
+      - 0.8401163064415461
+      - 0.09202453987730064
+  - text: come home, but I gotta grab my rifle still. To be honest I had hoped to
+      keep this secret till I died of
+    confidence: 1
+    bbox:
+      - 0.09302327597079423
+      - 0.7354838704787652
+      - 0.8415697166085572
+      - 0.09032258226827616
+  - text: old age. I am sorry to involve you.
+    confidence: 1
+    bbox:
+      - 0.08750001215704621
+      - 0.8148148151890584
+      - 0.29999998318590737
+      - 0.11156555480020913

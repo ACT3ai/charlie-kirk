@@ -1,0 +1,25 @@
+source: site/internals/static/img/evidence/31d953d6f483d55f611414a3c19e147058921ff999f900b81e0d3cb4735e1ec7.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:43:23.976Z
+kind: image
+language: en-US
+text: |-
+  TikTok
+  @ william.cody.bass
+blocks:
+  - text: TikTok
+    confidence: 1
+    bbox:
+      - 0.013657663387137944
+      - 0.5073333744905844
+      - 0.12546245257059732
+      - 0.02048950083553791
+  - text: "@ william.cody.bass"
+    confidence: 1
+    bbox:
+      - 0.013888886935763919
+      - 0.5273437497802734
+      - 0.2743055555555556
+      - 0.017578125

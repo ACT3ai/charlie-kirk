@@ -1,0 +1,77 @@
+source: videos/2083776278008893587.mp4
+status: done
+engine: vision
+level: fast
+generated: 2026-08-20T12:44:52.771Z
+kind: video
+language: en-US
+stride_seconds: 15
+frames_sampled: 7
+truncated: false
+text: |-
+  Can a.30-06
+  Fit In My Jeans?
+  THEJARROOWRIGHT
+  '4x
+
+  Can a.30-06
+  Fit In My Jeans?
+  8ThEJARRODWRIGH
+
+  Can a.30-06
+  Fit In My Jeans?
+
+  Can a.30-06
+  Fit In My Jeans?
+  THEJARRODWRIGHT
+
+  Can a.30-06
+  Fit In My Jeans?
+
+  Can a.30-06
+  Fit In My Jeans?
+  THE
+  ODWRIG
+blocks:
+  - text: |-
+      Can a.30-06
+      Fit In My Jeans?
+      THEJARROOWRIGHT
+      '4x
+    confidence: 0.5
+    start: 0
+    end: 15
+  - text: |-
+      Can a.30-06
+      Fit In My Jeans?
+      8ThEJARRODWRIGH
+    confidence: 0.5
+    start: 15
+    end: 30
+  - text: |-
+      Can a.30-06
+      Fit In My Jeans?
+    confidence: 0.5
+    start: 30
+    end: 45
+  - text: |-
+      Can a.30-06
+      Fit In My Jeans?
+      THEJARRODWRIGHT
+    confidence: 0.5
+    start: 45
+    end: 75
+  - text: |-
+      Can a.30-06
+      Fit In My Jeans?
+    confidence: 0.5
+    start: 75
+    end: 90
+  - text: |-
+      Can a.30-06
+      Fit In My Jeans?
+      THE
+      ODWRIG
+    confidence: 0.625
+    start: 90
+    end: 105

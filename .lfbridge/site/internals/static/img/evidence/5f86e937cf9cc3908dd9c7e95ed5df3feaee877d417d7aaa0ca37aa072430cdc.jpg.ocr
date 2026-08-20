@@ -1,0 +1,100 @@
+source: site/internals/static/img/evidence/5f86e937cf9cc3908dd9c7e95ed5df3feaee877d417d7aaa0ca37aa072430cdc.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:45:17.103Z
+kind: image
+language: en-US
+text: >-
+  From Social Media | Wednesday
+
+  Orem, Utah
+
+  SPARKS
+
+  BREAKING NEWS
+
+  U.S. MARSHALS HUNT FOR KIRK SHOOTER, NOW ON RUN FOR NEARLY 30 HOURS
+
+  ppo
+
+  CON:
+
+  UN
+
+  : FATAL SHOOTING WEDNESDAY OF CHARLIE KIRK. THE FBI'S SALT LAKE CITY FIELD OF
+  ERIN BURNETT
+
+  OUTFRONT
+blocks:
+  - text: From Social Media | Wednesday
+    confidence: 1
+    bbox:
+      - 0.6843750016113281
+      - 0.04444444432291672
+      - 0.2578125
+      - 0.030555555555555558
+  - text: Orem, Utah
+    confidence: 1
+    bbox:
+      - 0.849978226520372
+      - 0.09147527789391163
+      - 0.09223104715347286
+      - 0.03371611303753319
+  - text: SPARKS
+    confidence: 1
+    bbox:
+      - 0.6733712501800488
+      - 0.5356040940429647
+      - 0.05950750112533565
+      - 0.02601403395334878
+  - text: BREAKING NEWS
+    confidence: 1
+    bbox:
+      - 0.0750000012065972
+      - 0.727777777654321
+      - 0.2171875
+      - 0.03888888888888897
+  - text: U.S. MARSHALS HUNT FOR KIRK SHOOTER, NOW ON RUN FOR NEARLY 30 HOURS
+    confidence: 1
+    bbox:
+      - 0.07031250029296884
+      - 0.8111111116840277
+      - 0.7531249999999999
+      - 0.09166666666666667
+  - text: ppo
+    confidence: 0.5
+    bbox:
+      - 0.8625000003124998
+      - 0.7833333331597222
+      - 0.025000000000000022
+      - 0.02499999999999991
+  - text: "CON:"
+    confidence: 1
+    bbox:
+      - 0.8437500002148438
+      - 0.8166666665625
+      - 0.03437499999999993
+      - 0.033333333333333326
+  - text: UN
+    confidence: 1
+    bbox:
+      - 0.915625
+      - 0.8194444441944445
+      - 0.018749999999999933
+      - 0.025000000000000022
+  - text: ": FATAL SHOOTING WEDNESDAY OF CHARLIE KIRK. THE FBI'S SALT LAKE CITY
+      FIELD OF ERIN BURNETT"
+    confidence: 1
+    bbox:
+      - 0.045257570109569566
+      - 0.9239910162237066
+      - 0.8970452308654786
+      - 0.048100238376193594
+  - text: OUTFRONT
+    confidence: 1
+    bbox:
+      - 0.8562499993880209
+      - 0.9472222223611112
+      - 0.07343749999999993
+      - 0.022222222222222254

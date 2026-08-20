@@ -1,0 +1,25 @@
+source: site/internals/static/img/evidence/691331e077e8e91b70b81febfa900cb40152dae062e60b04c96929a28ee35cda.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:46:03.691Z
+kind: image
+language: en-US
+text: |-
+  PROTE
+  ER CAN
+blocks:
+  - text: PROTE
+    confidence: 0.5
+    bbox:
+      - 0.365544058759305
+      - 0.11186437991849796
+      - 0.5570279312133788
+      - 0.1029205322265625
+  - text: ER CAN
+    confidence: 1
+    bbox:
+      - 9.656272652591725e-9
+      - 0.8125000002165258
+      - 0.6627906799316406
+      - 0.13531250000000006

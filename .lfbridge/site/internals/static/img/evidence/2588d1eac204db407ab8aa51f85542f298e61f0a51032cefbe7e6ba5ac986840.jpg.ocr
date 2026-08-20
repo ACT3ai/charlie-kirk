@@ -1,0 +1,33 @@
+source: site/internals/static/img/evidence/2588d1eac204db407ab8aa51f85542f298e61f0a51032cefbe7e6ba5ac986840.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:42:57.983Z
+kind: image
+language: en-US
+text: |-
+  In the tunnel right after!
+  mik Tok
+  netwo
+blocks:
+  - text: In the tunnel right after!
+    confidence: 1
+    bbox:
+      - 0.15328468000940074
+      - 0.10416666732539337
+      - 0.6788321102366728
+      - 0.04166666430754662
+  - text: mik Tok
+    confidence: 1
+    bbox:
+      - 0.8721227590425137
+      - 0.8079777366133781
+      - 0.1125319736455781
+      - 0.01905714735692865
+  - text: netwo
+    confidence: 1
+    bbox:
+      - 0.8951406664415344
+      - 0.8328488373421747
+      - 0.09207160800111058
+      - 0.013081394896215404

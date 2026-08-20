@@ -1,0 +1,118 @@
+source: site/internals/static/img/evidence/60b0e408389a36f43d96f5453e042872974380618519d1b26a4b85c73bb4de8b.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:45:19.774Z
+kind: image
+language: en-US
+text: >-
+  IMZ
+
+  NEWS
+
+  roommate.
+
+  BTW ... Discord says it has removed Robinson's account.
+
+  SPORTS HIP HOP
+
+  WATCH
+
+  PHOTOS
+
+  TOURS
+
+  TYLER ROBINSON PHOTOS
+
+  LAUNCH GALLERY
+
+  Utah authorities have said that as of this point, they believe Robinson acted
+  alone, but the
+
+  investigation is ongoing.
+blocks:
+  - text: IMZ
+    confidence: 0.3
+    bbox:
+      - 0.041062801231884084
+      - 0.004385964594298297
+      - 0.1642512077294686
+      - 0.0635964912280701
+  - text: NEWS
+    confidence: 1
+    bbox:
+      - 0.2483456152925439
+      - 0.020933774747153744
+      - 0.07577253885315238
+      - 0.03050087209333452
+  - text: roommate.
+    confidence: 1
+    bbox:
+      - 0.04106280378421895
+      - 0.10307017547514619
+      - 0.1111111111111111
+      - 0.015350877192982448
+  - text: BTW ... Discord says it has removed Robinson's account.
+    confidence: 1
+    bbox:
+      - 0.04347828867808629
+      - 0.15350877196637425
+      - 0.5628018955101713
+      - 0.019736842105263164
+  - text: SPORTS HIP HOP
+    confidence: 1
+    bbox:
+      - 0.3550724662801932
+      - 0.02192982447368419
+      - 0.25120772946859904
+      - 0.02631578947368418
+  - text: WATCH
+    confidence: 1
+    bbox:
+      - 0.6182514978868082
+      - 0.023704780749441157
+      - 0.11373855295964486
+      - 0.02495885941020226
+  - text: PHOTOS
+    confidence: 1
+    bbox:
+      - 0.7414133226417156
+      - 0.021450227953893397
+      - 0.11379170993675936
+      - 0.02727498297105757
+  - text: TOURS
+    confidence: 1
+    bbox:
+      - 0.8864734294082125
+      - 0.021929824671052645
+      - 0.08695652173913049
+      - 0.02631578947368418
+  - text: TYLER ROBINSON PHOTOS
+    confidence: 1
+    bbox:
+      - 0.07004830683229815
+      - 0.8596491229010025
+      - 0.3285024154589372
+      - 0.021929824561403577
+  - text: LAUNCH GALLERY
+    confidence: 1
+    bbox:
+      - 0.7584541084718566
+      - 0.8596491229166667
+      - 0.14492752701763945
+      - 0.015350877192982448
+  - text: Utah authorities have said that as of this point, they believe Robinson
+      acted alone, but the
+    confidence: 1
+    bbox:
+      - 0.04106280847135952
+      - 0.9276315788533835
+      - 0.9154589371980675
+      - 0.02631578947368418
+  - text: investigation is ongoing.
+    confidence: 1
+    bbox:
+      - 0.031400968719806716
+      - 0.9605263157675439
+      - 0.2536231884057971
+      - 0.024122807017543768

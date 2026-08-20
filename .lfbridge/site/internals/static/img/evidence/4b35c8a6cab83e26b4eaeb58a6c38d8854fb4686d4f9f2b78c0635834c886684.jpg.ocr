@@ -1,0 +1,73 @@
+source: site/internals/static/img/evidence/4b35c8a6cab83e26b4eaeb58a6c38d8854fb4686d4f9f2b78c0635834c886684.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:44:10.378Z
+kind: image
+language: en-US
+text: |-
+  "# GRAYZONE
+  Charlie Kirk refused
+  Netanyahu funding offer, was
+  'frightened' by pro-Israel
+  forces before death, friend
+  reveals
+  MAX BLUMENTHAL AND ANYA PARAMPIL •
+  SEPTEMBER 12, 2025
+blocks:
+  - text: '"# GRAYZONE'
+    confidence: 0.5
+    bbox:
+      - 0.36065573873266077
+      - 0.0714285713468964
+      - 0.26721311475409837
+      - 0.048262548262548166
+  - text: Charlie Kirk refused
+    confidence: 1
+    bbox:
+      - 0.04098360789344256
+      - 0.23745173710424705
+      - 0.6049180327868853
+      - 0.06949806949806958
+  - text: Netanyahu funding offer, was
+    confidence: 1
+    bbox:
+      - 0.044262297643442555
+      - 0.34555984592181477
+      - 0.8967213114754098
+      - 0.08687258687258681
+  - text: "'frightened' by pro-Israel"
+    confidence: 1
+    bbox:
+      - 0.03442622490778694
+      - 0.44015443957528966
+      - 0.7524590163934426
+      - 0.09266409266409259
+  - text: forces before death, friend
+    confidence: 1
+    bbox:
+      - 0.037704916659836045
+      - 0.5559845554174712
+      - 0.8163934426229509
+      - 0.09073359073359066
+  - text: reveals
+    confidence: 1
+    bbox:
+      - 0.04231564945678907
+      - 0.6663608805356096
+      - 0.2186473908971568
+      - 0.06303113399785465
+  - text: MAX BLUMENTHAL AND ANYA PARAMPIL •
+    confidence: 1
+    bbox:
+      - 0.1213114701522249
+      - 0.8050193051296194
+      - 0.7360655737704919
+      - 0.03474903474903479
+  - text: SEPTEMBER 12, 2025
+    confidence: 1
+    bbox:
+      - 0.039344263571428534
+      - 0.8918918922228352
+      - 0.3655737704918033
+      - 0.04633204633204635

@@ -1,0 +1,33 @@
+source: site/internals/static/img/evidence/6fc8e4ae0ec5f2afffbeb834668dbc14e62f2ea8a697de9054e8f1e121f1b987.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:46:24.279Z
+kind: image
+language: en-US
+text: |-
+  THE
+  AMERA
+  TOUR
+blocks:
+  - text: THE
+    confidence: 1
+    bbox:
+      - 0.5920577615032644
+      - 0.41279069797936174
+      - 0.03610108363607056
+      - 0.017441859506392654
+  - text: AMERA
+    confidence: 0.5
+    bbox:
+      - 0.5981353002316419
+      - 0.4181846081611663
+      - 0.2370334413695634
+      - 0.06499336088768681
+  - text: TOUR
+    confidence: 1
+    bbox:
+      - 0.7924187724418925
+      - 0.5261627904971702
+      - 0.03610108363607056
+      - 0.020348837464961966

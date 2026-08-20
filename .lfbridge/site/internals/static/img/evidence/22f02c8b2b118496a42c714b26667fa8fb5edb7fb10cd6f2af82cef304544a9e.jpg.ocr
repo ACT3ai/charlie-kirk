@@ -1,0 +1,65 @@
+source: site/internals/static/img/evidence/22f02c8b2b118496a42c714b26667fa8fb5edb7fb10cd6f2af82cef304544a9e.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:42:54.274Z
+kind: image
+language: en-US
+text: |-
+  C 0000
+  NEW FOOTAGE CHALLENGES
+  LONE GUNMAN NARRIATIVE
+  Guard "Redline" froezes 42 seconds
+  LE WRONG
+  AS
+  WRONG
+blocks:
+  - text: C 0000
+    confidence: 1
+    bbox:
+      - 0.38372093045124894
+      - 0.1860351562063235
+      - 0.030523255467414856
+      - 0.0087890625
+  - text: NEW FOOTAGE CHALLENGES
+    confidence: 1
+    bbox:
+      - 0.5072674423021001
+      - 0.38662790735748487
+      - 0.49127906560897827
+      - 0.037790697067976
+  - text: LONE GUNMAN NARRIATIVE
+    confidence: 1
+    bbox:
+      - 0.5058139571161904
+      - 0.4301757815783622
+      - 0.49273255467414856
+      - 0.03662109375
+  - text: Guard "Redline" froezes 42 seconds
+    confidence: 1
+    bbox:
+      - 0.5639534892627285
+      - 0.4692382812680804
+      - 0.3604651093482971
+      - 0.026401253417134285
+  - text: LE WRONG
+    confidence: 1
+    bbox:
+      - 0.47236135922958244
+      - 0.5507602848728453
+      - 0.18975849449634552
+      - 0.07408318668603897
+  - text: AS
+    confidence: 1
+    bbox:
+      - 0.4840116291212986
+      - 0.6090116278816224
+      - 0.03488371893763542
+      - 0.020348837599158287
+  - text: WRONG
+    confidence: 1
+    bbox:
+      - 0.8110465104605982
+      - 0.6104651168165336
+      - 0.08139535039663315
+      - 0.04360464960336685

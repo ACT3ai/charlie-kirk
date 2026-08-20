@@ -1,0 +1,81 @@
+source: site/internals/static/img/evidence/6530caf6509b7b708c6d857399d3b8dfd3a47dc574efda9cea708193ce8e1e75.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:45:50.865Z
+kind: image
+language: en-US
+text: |-
+  A PLACE
+  FOR
+  LYOU
+  AMER LAN
+  PROVE ME WAU L F PRUVE ME WRUNUT
+  AMFE
+  i yrefy
+  YRLFY.COI
+  UVU
+blocks:
+  - text: A PLACE
+    confidence: 1
+    bbox:
+      - 0.0886617720116802
+      - 0.16813728968368435
+      - 0.17130365371704104
+      - 0.0777119318644206
+  - text: FOR
+    confidence: 1
+    bbox:
+      - 0.09843749965198864
+      - 0.2694444445959596
+      - 0.0765625
+      - 0.05555555555555558
+  - text: LYOU
+    confidence: 1
+    bbox:
+      - 0.16875000025781253
+      - 0.26388888858333326
+      - 0.0921875
+      - 0.061111111111111116
+  - text: AMER LAN
+    confidence: 1
+    bbox:
+      - 0.3906249993663195
+      - 0.5555555556944445
+      - 0.11406250000000001
+      - 0.030555555555555558
+  - text: PROVE ME WAU L F PRUVE ME WRUNUT
+    confidence: 1
+    bbox:
+      - 0.2793124319019955
+      - 0.6485558999709448
+      - 0.34131708145141604
+      - 0.05390064716339116
+  - text: AMFE
+    confidence: 0.5
+    bbox:
+      - 0.3734374997005208
+      - 0.7444444449537037
+      - 0.06406249999999997
+      - 0.061111111111111116
+  - text: i yrefy
+    confidence: 1
+    bbox:
+      - 0.5046875001227679
+      - 0.7416666664880953
+      - 0.04218749999999993
+      - 0.02499999999999991
+  - text: YRLFY.COI
+    confidence: 0.5
+    bbox:
+      - 0.5062500006249999
+      - 0.7638888887037038
+      - 0.03750000000000009
+      - 0.01666666666666672
+  - text: UVU
+    confidence: 0.5
+    bbox:
+      - 0.7828124999121094
+      - 0.1611111106857639
+      - 0.18437499999999996
+      - 0.13611111111111107

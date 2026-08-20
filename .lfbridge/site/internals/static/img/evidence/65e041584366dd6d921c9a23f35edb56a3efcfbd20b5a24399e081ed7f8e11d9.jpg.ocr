@@ -1,0 +1,64 @@
+source: site/internals/static/img/evidence/65e041584366dd6d921c9a23f35edb56a3efcfbd20b5a24399e081ed7f8e11d9.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:45:59.025Z
+kind: image
+language: en-US
+text: >-
+  TheDefensePost
+
+  • •• MENU
+
+  By Rojoef Manuel • September 10, 2025, 8:09 am
+
+  Categories Air, Americas
+
+  SNC Accepts Second Bombardier Jet for US Army HADES Spy Plane Program
+
+  Rendering of the future HADES ISR aircraft based on the Global 6500 business
+  jet. Photo: US Army/Bombardier Defense
+blocks:
+  - text: TheDefensePost
+    confidence: 1
+    bbox:
+      - 0.42857142726833974
+      - 0.018907563112745107
+      - 0.1563706563706564
+      - 0.018907563025210017
+  - text: • •• MENU
+    confidence: 1
+    bbox:
+      - 0.4498069508445946
+      - 0.07563025199579831
+      - 0.08301158301158301
+      - 0.012605042016806678
+  - text: By Rojoef Manuel • September 10, 2025, 8:09 am
+    confidence: 1
+    bbox:
+      - 0.009652513658301044
+      - 0.12815126037289915
+      - 0.32046332046332043
+      - 0.018907563025210128
+  - text: Categories Air, Americas
+    confidence: 1
+    bbox:
+      - 0.009652511312741285
+      - 0.15966386546218492
+      - 0.16602316602316602
+      - 0.01680672268907557
+  - text: SNC Accepts Second Bombardier Jet for US Army HADES Spy Plane Program
+    confidence: 1
+    bbox:
+      - 0.06177606151061777
+      - 0.21218487360819327
+      - 0.859073359073359
+      - 0.027310924369747913
+  - text: "Rendering of the future HADES ISR aircraft based on the Global 6500
+      business jet. Photo: US Army/Bombardier Defense"
+    confidence: 1
+    bbox:
+      - 0.2065637161196908
+      - 0.953781512535014
+      - 0.5733590733590733
+      - 0.012605042016806789

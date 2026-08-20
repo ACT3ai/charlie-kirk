@@ -1,0 +1,65 @@
+source: site/internals/static/img/evidence/57816e5dbb528b6c7ec36fba735c9be014666b2a8baa0a40f39ea8a7307e37da.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:45:04.664Z
+kind: image
+language: en-US
+text: |-
+  "30 frams per second"
+  MNE 220
+  truthso
+  YRE
+  test command.com &
+  test-1-Command.com
+  N TikTok
+blocks:
+  - text: '"30 frams per second"'
+    confidence: 1
+    bbox:
+      - 0.18023254862794258
+      - 0.01963350893727467
+      - 0.5290697864650452
+      - 0.09093160113323007
+  - text: MNE 220
+    confidence: 0.3
+    bbox:
+      - 0.7025034008471052
+      - 0.06560520637857914
+      - 0.2960239371073615
+      - 0.2836339660964087
+  - text: truthso
+    confidence: 0.5
+    bbox:
+      - 0.18023255830981288
+      - 0.38820638872184143
+      - 0.10029069566235094
+      - 0.041769041024785514
+  - text: YRE
+    confidence: 1
+    bbox:
+      - 0.579941861694743
+      - 0.5380835373296624
+      - 0.06395348617711016
+      - 0.05159705263573877
+  - text: test command.com &
+    confidence: 0.5
+    bbox:
+      - 9.485092350493603e-9
+      - 0.8058464235165081
+      - 0.4069767273578447
+      - 0.09833047943381534
+  - text: test-1-Command.com
+    confidence: 1
+    bbox:
+      - -0.00046673221056777814
+      - 0.9114385608781266
+      - 0.38751837346971646
+      - 0.07865265984393754
+  - text: N TikTok
+    confidence: 1
+    bbox:
+      - 0.8357558136365613
+      - 0.9533158810714519
+      - 0.14680232411807337
+      - 0.04422711577090921

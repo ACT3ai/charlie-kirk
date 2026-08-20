@@ -1,0 +1,37 @@
+source: videos/2077994177216827578_2.mp4
+status: done
+engine: vision
+level: fast
+generated: 2026-08-20T12:43:18.710Z
+kind: video
+language: en-US
+stride_seconds: 15
+frames_sampled: 6
+truncated: false
+text: |-
+  'dLif•L IIA
+
+  V YLML I'IA
+  'I
+
+  And The Best
+  Actor Award
+  Goes To
+blocks:
+  - text: "'dLif•L IIA"
+    confidence: 0.5
+    start: 0
+    end: 15
+  - text: |-
+      V YLML I'IA
+      'I
+    confidence: 0.5
+    start: 60
+    end: 75
+  - text: |-
+      And The Best
+      Actor Award
+      Goes To
+    confidence: 0.5
+    start: 75
+    end: 90

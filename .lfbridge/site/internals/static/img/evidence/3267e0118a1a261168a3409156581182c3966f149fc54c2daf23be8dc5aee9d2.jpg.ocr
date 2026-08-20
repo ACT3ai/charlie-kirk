@@ -1,0 +1,25 @@
+source: site/internals/static/img/evidence/3267e0118a1a261168a3409156581182c3966f149fc54c2daf23be8dc5aee9d2.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:43:24.653Z
+kind: image
+language: en-US
+text: |-
+  ERICAN
+  INE
+blocks:
+  - text: ERICAN
+    confidence: 1
+    bbox:
+      - 1.1545246090336063e-9
+      - 0.1874999994090143
+      - 0.13802816787203728
+      - 0.03633720996519396
+  - text: INE
+    confidence: 1
+    bbox:
+      - -6.019421096835765e-10
+      - 0.2252906974853004
+      - 0.07042253650904853
+      - 0.02906976749709944

@@ -1,0 +1,33 @@
+source: site/internals/static/img/evidence/3703036f6605c38aaf638b7c4a43525cd978d0f0886f420873868aec25bbd099.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:43:31.542Z
+kind: image
+language: en-US
+text: |-
+  Tik Tok
+  @caseypbrys.
+  0:17 / 0:23
+blocks:
+  - text: Tik Tok
+    confidence: 1
+    bbox:
+      - 0.8110812238387725
+      - 0.7144661059519052
+      - 0.1737031832304773
+      - 0.02600964867219291
+  - text: "@caseypbrys."
+    confidence: 0.5
+    bbox:
+      - 0.7105943173887472
+      - 0.7529069765716108
+      - 0.273901807922764
+      - 0.021802325799365585
+  - text: 0:17 / 0:23
+    confidence: 1
+    bbox:
+      - 0.6922373635938907
+      - 0.9788923574877183
+      - 0.12456919797400678
+      - 0.01605249447084467

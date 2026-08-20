@@ -1,0 +1,33 @@
+source: site/internals/static/img/evidence/50baf3446c47338ffed140ae62fd43e39171088bed6c05a0af4beba8bedd863e.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:44:38.881Z
+kind: image
+language: en-US
+text: |-
+  @ValVenisEnt
+  www.TopShelfAnarchy.com
+  THE
+blocks:
+  - text: "@ValVenisEnt"
+    confidence: 0.5
+    bbox:
+      - 0.1322674459478334
+      - 0.8320413437976137
+      - 0.1976744079589844
+      - 0.0490956073337131
+  - text: www.TopShelfAnarchy.com
+    confidence: 0.5
+    bbox:
+      - 0.030523263124876934
+      - 0.9018087866819398
+      - 0.3982558059692383
+      - 0.05684754265679259
+  - text: THE
+    confidence: 0.5
+    bbox:
+      - 0.8037790691884844
+      - 0.6692506470599602
+      - 0.05959302425384516
+      - 0.0826873355441623
