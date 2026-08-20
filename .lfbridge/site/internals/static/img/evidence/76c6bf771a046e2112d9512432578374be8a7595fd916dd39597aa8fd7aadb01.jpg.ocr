@@ -1,0 +1,113 @@
+source: site/internals/static/img/evidence/76c6bf771a046e2112d9512432578374be8a7595fd916dd39597aa8fd7aadb01.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:46:39.634Z
+kind: image
+language: en-US
+text: |-
+  The company told TMZ it dug into
+  Robinson's activity after his arrest.
+  Investigators did find an account linked to
+  him. But Discord insists it found no evidence
+  that Robinson plotted violence or shared
+  anything related to the killing on its servers.
+  "Messages referenced in recent reporting
+  about planning details do not appear to be
+  Discord messages," a company
+  spokesperson told TMZ. Instead, those
+  words came from a note Robinson left
+  behind and conversations his roommate
+  later relayed to a friend.
+blocks:
+  - text: The company told TMZ it dug into
+    confidence: 1
+    bbox:
+      - 0.05705231684863661
+      - 0.10901162872760195
+      - 0.6687796852805398
+      - 0.04098837110731335
+  - text: Robinson's activity after his arrest.
+    confidence: 1
+    bbox:
+      - 0.05454546318181797
+      - 0.17500000000000004
+      - 0.6909090909090909
+      - 0.04166666666666663
+  - text: Investigators did find an account linked to
+    confidence: 1
+    bbox:
+      - 0.049999994863636425
+      - 0.2375000004583333
+      - 0.8500000000000001
+      - 0.04583333333333328
+  - text: him. But Discord insists it found no evidence
+    confidence: 1
+    bbox:
+      - 0.05546749772850629
+      - 0.3020833334634352
+      - 0.8827258485736269
+      - 0.03819444444444442
+  - text: that Robinson plotted violence or shared
+    confidence: 1
+    bbox:
+      - 0.05546752926630528
+      - 0.36597222287149345
+      - 0.8003169204249527
+      - 0.039583333333333415
+  - text: anything related to the killing on its servers.
+    confidence: 1
+    bbox:
+      - 0.05705229172755942
+      - 0.43023255869368715
+      - 0.8589540423768939
+      - 0.04069767263200552
+  - text: '"Messages referenced in recent reporting'
+    confidence: 1
+    bbox:
+      - 0.053882735593585654
+      - 0.5276162809480416
+      - 0.8145800041429925
+      - 0.04807816346486404
+  - text: about planning details do not appear to be
+    confidence: 1
+    bbox:
+      - 0.05705231376893933
+      - 0.5986111111616504
+      - 0.8209191524621211
+      - 0.04097222222222219
+  - text: Discord messages," a company
+    confidence: 1
+    bbox:
+      - 0.057052308466704935
+      - 0.6569444436483536
+      - 0.6133121837269176
+      - 0.05235788292355015
+  - text: spokesperson told TMZ. Instead, those
+    confidence: 1
+    bbox:
+      - 0.05705230727010041
+      - 0.7281976751720892
+      - 0.7717907992276278
+      - 0.043604649437798404
+  - text: words came from a note Robinson left
+    confidence: 1
+    bbox:
+      - 0.05863709639945114
+      - 0.792151163033325
+      - 0.7591125025893702
+      - 0.033543280760447214
+  - text: behind and conversations his roommate
+    confidence: 1
+    bbox:
+      - 0.05863709910383518
+      - 0.8561046512618861
+      - 0.7971473462653883
+      - 0.033478682570987184
+  - text: later relayed to a friend.
+    confidence: 1
+    bbox:
+      - 0.053882738181963354
+      - 0.9215116282053145
+      - 0.4722662261038116
+      - 0.03924418555365672

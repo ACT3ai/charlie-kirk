@@ -1,0 +1,33 @@
+source: site/internals/static/img/evidence/75a6cc1056036636499f7e8f85301a55c2743035f8fab3c60014842a9eb706b5.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:46:36.670Z
+kind: image
+language: en-US
+text: |-
+  HDR
+  THE
+  0:16/0:36
+blocks:
+  - text: HDR
+    confidence: 1
+    bbox:
+      - 0.4780600455762542
+      - 0.024709302439788527
+      - 0.0392609702216255
+      - 0.008720930149492712
+  - text: THE
+    confidence: 1
+    bbox:
+      - 0.9307159359970314
+      - 0.42151162841055145
+      - 0.060046188415042945
+      - 0.024709301494927005
+  - text: 0:16/0:36
+    confidence: 1
+    bbox:
+      - 0.4200089683635758
+      - 0.9451256197835485
+      - 0.1576725944640145
+      - 0.021085970113042363

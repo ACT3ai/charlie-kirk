@@ -1,0 +1,129 @@
+source: site/internals/static/img/evidence/75bf47650e569ec131e5f5e70d6231d2ddb19e337288bca2f89acd3060ca9605.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:46:36.119Z
+kind: image
+language: en-US
+text: |-
+  STEAM
+  Ankha
+  Egypt
+  Best mix of mine so far ->
+  https://www.youtube.com/watch?v=KLhJS1I58eQ
+  Left 4 Dead 2 Death Runner AKA Sniper GOD
+  My Discord: Ankha_Kitty
+  Level
+  Community Ambassador
+  200 XP
+  Currently Offline
+  Badges
+  Inventory
+  Reviews 2
+  steamcommunity.com
+blocks:
+  - text: STEAM
+    confidence: 1
+    bbox:
+      - 0.5076324795092167
+      - 0.028332272879031506
+      - 0.19198893018337115
+      - 0.02643000977087151
+  - text: Ankha
+    confidence: 1
+    bbox:
+      - 0.4192439482315871
+      - 0.12800024884943229
+      - 0.1926001909483282
+      - 0.030532454351299476
+  - text: Egypt
+    confidence: 1
+    bbox:
+      - 0.39378238225388607
+      - 0.17765042954871058
+      - 0.10362694300518133
+      - 0.02005730659025795
+  - text: Best mix of mine so far ->
+    confidence: 1
+    bbox:
+      - 0.025906739896372957
+      - 0.2836676216332379
+      - 0.4145077720207254
+      - 0.02005730659025784
+  - text: https://www.youtube.com/watch?v=KLhJS1I58eQ
+    confidence: 0.5
+    bbox:
+      - 0.02072539863989609
+      - 0.31232091679799434
+      - 0.8031088082901554
+      - 0.02005730659025784
+  - text: Left 4 Dead 2 Death Runner AKA Sniper GOD
+    confidence: 1
+    bbox:
+      - 0.025906730310881004
+      - 0.3352435533096998
+      - 0.7305699481865284
+      - 0.022922635420004056
+  - text: "My Discord: Ankha_Kitty"
+    confidence: 1
+    bbox:
+      - 0.025906740867875547
+      - 0.36389684803008593
+      - 0.4093264248704664
+      - 0.02005730659025784
+  - text: Level
+    confidence: 1
+    bbox:
+      - 0.062176166950407105
+      - 0.48997134654113794
+      - 0.1606217616580311
+      - 0.028653295128939882
+  - text: Community Ambassador
+    confidence: 1
+    bbox:
+      - 0.5595854959585492
+      - 0.47851002851002855
+      - 0.37305699481865284
+      - 0.02005730659025795
+  - text: 200 XP
+    confidence: 1
+    bbox:
+      - 0.5595854937176166
+      - 0.5042979941260746
+      - 0.11917098445595853
+      - 0.017191977077363862
+  - text: Currently Offline
+    confidence: 1
+    bbox:
+      - 0.031088088018134615
+      - 0.5902578795487106
+      - 0.40932642487046633
+      - 0.03151862464183386
+  - text: Badges
+    confidence: 1
+    bbox:
+      - 0.030873764524496656
+      - 0.681541814323437
+      - 0.14032501260233665
+      - 0.023735855233703362
+  - text: Inventory
+    confidence: 1
+    bbox:
+      - 0.5233160639896373
+      - 0.6819484239541547
+      - 0.18134715025906734
+      - 0.022922636103151928
+  - text: Reviews 2
+    confidence: 1
+    bbox:
+      - 0.5333072662491455
+      - 0.7468316987329461
+      - 0.19763416823945512
+      - 0.02496124475255057
+  - text: steamcommunity.com
+    confidence: 1
+    bbox:
+      - 0.27461140077720203
+      - 0.9455587388968482
+      - 0.4559585492227979
+      - 0.028653295128939882

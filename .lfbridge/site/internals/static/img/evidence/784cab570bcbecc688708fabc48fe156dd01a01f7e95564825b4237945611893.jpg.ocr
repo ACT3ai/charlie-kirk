@@ -1,0 +1,33 @@
+source: site/internals/static/img/evidence/784cab570bcbecc688708fabc48fe156dd01a01f7e95564825b4237945611893.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:46:47.240Z
+kind: image
+language: en-US
+text: |-
+  HE WRUNG
+  TANI
+  MER
+blocks:
+  - text: HE WRUNG
+    confidence: 1
+    bbox:
+      - -0.0003642510019014112
+      - 0.09457019163531466
+      - 0.34998223603661377
+      - 0.10082244163995335
+  - text: TANI
+    confidence: 1
+    bbox:
+      - 5.223880711087281e-10
+      - 0.8624535310408922
+      - 0.22089552238805968
+      - 0.13382899628252787
+  - text: MER
+    confidence: 1
+    bbox:
+      - 0.8119402976865672
+      - 0.8066914490706321
+      - 0.14925373134328357
+      - 0.11895910780669139

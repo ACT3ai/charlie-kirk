@@ -1,0 +1,49 @@
+source: site/internals/static/img/evidence/739a9a261524cebb43f0261b4b8d6c7aa2c4b38da129302bdf51f51226c2d872.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:46:37.658Z
+kind: image
+language: en-US
+text: |-
+  A PLACE
+  FOR YOU
+  LNU
+  AMER CAN
+  ГОМЕВАСК
+blocks:
+  - text: A PLACE
+    confidence: 1
+    bbox:
+      - 0.005813954190449308
+      - 0.3965141606227427
+      - 0.04360465019468277
+      - 0.030569173040844166
+  - text: FOR YOU
+    confidence: 1
+    bbox:
+      - 0.007267441368343197
+      - 0.4400871469551856
+      - 0.045058140679011274
+      - 0.028322438398996952
+  - text: LNU
+    confidence: 0.5
+    bbox:
+      - 0.12645348820132385
+      - 0.4270152503036846
+      - 0.027616279465811577
+      - 0.032679739452543766
+  - text: AMER CAN
+    confidence: 1
+    bbox:
+      - 0.1509240677085705
+      - 0.5503165444633217
+      - 0.05273075330825078
+      - 0.012777036144619891
+  - text: ГОМЕВАСК
+    confidence: 0.3
+    bbox:
+      - 0.15116279242564074
+      - 0.5620915035123033
+      - 0.05087209126305958
+      - 0.013071894645690918
