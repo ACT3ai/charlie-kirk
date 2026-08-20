@@ -1,0 +1,33 @@
+source: site/internals/static/img/evidence/a0599d2f23c1803e3e4d96f535890318624f7d683f4bceed637ac88327d6877b.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:48:55.054Z
+kind: image
+language: en-US
+text: |-
+  AMERCAN
+  COMEBA?
+  SHERIFF
+blocks:
+  - text: AMERCAN
+    confidence: 0.5
+    bbox:
+      - 0.36875595677894707
+      - 0.473650866367338
+      - 0.22789331447858746
+      - 0.12318360070440793
+  - text: COMEBA?
+    confidence: 0.3
+    bbox:
+      - 0.39769474789541176
+      - 0.5263092119444017
+      - 0.197842884648797
+      - 0.09689755478109818
+  - text: SHERIFF
+    confidence: 0.5
+    bbox:
+      - 0.7409839799660096
+      - 0.37877890875053355
+      - 0.20116597743122122
+      - 0.08783492837450779

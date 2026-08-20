@@ -1,0 +1,65 @@
+source: site/internals/static/img/evidence/7c315ee025f7da3862673bc1bf2cba74e4b6fb2e8b8f4a4b3a6e0ae47252ee7d.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:47:23.597Z
+kind: image
+language: en-US
+text: |-
+  [BROWNING ADMINISTRATION
+  A PLACE
+  FOR YOU
+  UVU
+  A PLACE
+  FOR YOU
+  SORENSE
+blocks:
+  - text: "[BROWNING ADMINISTRATION"
+    confidence: 1
+    bbox:
+      - 0.2979651193693412
+      - 0.21866666680633784
+      - 0.0683139495849609
+      - 0.01001550356547043
+  - text: A PLACE
+    confidence: 1
+    bbox:
+      - 0.5319767443870367
+      - 0.34666666672660174
+      - 0.030523254394531185
+      - 0.010000000000000009
+  - text: FOR YOU
+    confidence: 1
+    bbox:
+      - 0.5319767445142168
+      - 0.35852713192954844
+      - 0.030523254394531296
+      - 0.009689922332763667
+  - text: UVU
+    confidence: 0.5
+    bbox:
+      - 0.6482558147727079
+      - 0.35271317835496996
+      - 0.04069767379760747
+      - 0.017441860198974646
+  - text: A PLACE
+    confidence: 1
+    bbox:
+      - 0.7819767453560289
+      - 0.35465116302612465
+      - 0.030523254394531296
+      - 0.010015503565470318
+  - text: FOR YOU
+    confidence: 1
+    bbox:
+      - 0.781976743897064
+      - 0.3643410854246312
+      - 0.03197674369812009
+      - 0.011658914566039957
+  - text: SORENSE
+    confidence: 1
+    bbox:
+      - 0.944717959505992
+      - 0.584913463769838
+      - 0.053878032684326116
+      - 0.014281599680582735

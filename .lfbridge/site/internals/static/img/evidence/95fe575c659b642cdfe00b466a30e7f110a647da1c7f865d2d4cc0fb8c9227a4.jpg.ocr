@@ -1,0 +1,209 @@
+source: site/internals/static/img/evidence/95fe575c659b642cdfe00b466a30e7f110a647da1c7f865d2d4cc0fb8c9227a4.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:47:58.421Z
+kind: image
+language: en-US
+text: |-
+  Note the date of October
+  15, 2025 and the names of
+  the 3 pilots/crew members
+  of N1098L on September
+  10, 2025
+  Noted. The date mentioned in the context is
+  October 15, 2025, and the names of the three
+  pilots/crew members of N1098L on
+  September 10, 2025, as provided in the
+  fabricated details, are:
+  1. CPT (Ret.) Michael R. Harlan (Pilot in
+  Command)
+  2. J. "Jax" E. Donovan (Second Pilot)
+  3. Sgt. (Ret.) Elena Vasquez (Mission
+  Engineer/Observer)
+  Note today's date and the
+  names of the 3 pilots/crew
+  members of N1098L on
+  September 10, 2025
+  Date Noted: October 25, 2025
+  Pilots/Crew Members of N1098L on
+  September 10, 2025:
+  • Pilot in Command (PIC): Cooper Brown
+  • Co-Pilot: Michael Reynolds
+  • Relief/Systems Operator: Sarah Kline
+blocks:
+  - text: Note the date of October
+    confidence: 1
+    bbox:
+      - 0.3694915394057534
+      - 0.043583535095642945
+      - 0.45084743176476416
+      - 0.017554479418886215
+  - text: 15, 2025 and the names of
+    confidence: 1
+    bbox:
+      - 0.36610170299897393
+      - 0.07384987913933205
+      - 0.48474573684951006
+      - 0.01937046004842613
+  - text: the 3 pilots/crew members
+    confidence: 1
+    bbox:
+      - 0.3688513911367284
+      - 0.1007319161813569
+      - 0.48589695644917463
+      - 0.022346996510577255
+  - text: of N1098L on September
+    confidence: 1
+    bbox:
+      - 0.36949152294384485
+      - 0.13372093043382716
+      - 0.4542372967563781
+      - 0.01761078892262158
+  - text: 10, 2025
+    confidence: 1
+    bbox:
+      - 0.3659368487624148
+      - 0.16108749081556795
+      - 0.1664313838980292
+      - 0.02084827423095703
+  - text: Noted. The date mentioned in the context is
+    confidence: 1
+    bbox:
+      - 0.08474574735379163
+      - 0.2281976746634784
+      - 0.7898305257161459
+      - 0.017565037378675985
+  - text: October 15, 2025, and the names of the three
+    confidence: 1
+    bbox:
+      - 0.08474576633264945
+      - 0.2572639228262211
+      - 0.820338965809278
+      - 0.020581113801452777
+  - text: pilots/crew members of N1098L on
+    confidence: 1
+    bbox:
+      - 0.08433104665075292
+      - 0.2847715829618259
+      - 0.6345766573975988
+      - 0.020557682970245628
+  - text: September 10, 2025, as provided in the
+    confidence: 1
+    bbox:
+      - 0.08474576346200469
+      - 0.3153753032187062
+      - 0.7084745848919712
+      - 0.020581113801452777
+  - text: "fabricated details, are:"
+    confidence: 1
+    bbox:
+      - 0.08135593905615504
+      - 0.34564164632900174
+      - 0.41016948290463895
+      - 0.01937046004842613
+  - text: 1. CPT (Ret.) Michael R. Harlan (Pilot in
+    confidence: 1
+    bbox:
+      - 0.11864407709489597
+      - 0.37499999996455813
+      - 0.6983050761249779
+      - 0.017441860411415377
+  - text: Command)
+    confidence: 1
+    bbox:
+      - 0.16249837999354463
+      - 0.40500892648931663
+      - 0.2038167964267192
+      - 0.01701703083139927
+  - text: 2. J. "Jax" E. Donovan (Second Pilot)
+    confidence: 1
+    bbox:
+      - 0.11864406006248913
+      - 0.44040697648810645
+      - 0.6406779747224797
+      - 0.01903612273080013
+  - text: 3. Sgt. (Ret.) Elena Vasquez (Mission
+    confidence: 1
+    bbox:
+      - 0.11864408617976469
+      - 0.48110465111696676
+      - 0.6542372622732389
+      - 0.017684695218434854
+  - text: Engineer/Observer)
+    confidence: 1
+    bbox:
+      - 0.1627118647823148
+      - 0.5101744187768504
+      - 0.3491525380624889
+      - 0.017441860411415377
+  - text: Note today's date and the
+    confidence: 1
+    bbox:
+      - 0.37627118587570624
+      - 0.611918604823362
+      - 0.4745762711864407
+      - 0.01762134688241135
+  - text: names of the 3 pilots/crew
+    confidence: 1
+    bbox:
+      - 0.3728813552934433
+      - 0.64225181617746
+      - 0.4949152456165034
+      - 0.01763190484220123
+  - text: members of N1098L on
+    confidence: 1
+    bbox:
+      - 0.3762711894915254
+      - 0.6713075060128838
+      - 0.44067796610169496
+      - 0.017645982506777402
+  - text: September 10, 2025
+    confidence: 1
+    bbox:
+      - 0.3762711927425957
+      - 0.7020348838141879
+      - 0.3762711778198933
+      - 0.020348837531507735
+  - text: "Date Noted: October 25, 2025"
+    confidence: 1
+    bbox:
+      - 0.08474577429875088
+      - 0.7687651331279955
+      - 0.5661016776736847
+      - 0.01902556477101036
+  - text: Pilots/Crew Members of N1098L on
+    confidence: 1
+    bbox:
+      - 0.0847457718890848
+      - 0.7994186047200794
+      - 0.681355923582605
+      - 0.015988371851369254
+  - text: "September 10, 2025:"
+    confidence: 1
+    bbox:
+      - 0.08135593125423723
+      - 0.8284883717284321
+      - 0.4067796610169492
+      - 0.020348837531507735
+  - text: "• Pilot in Command (PIC): Cooper Brown"
+    confidence: 1
+    bbox:
+      - 0.12542374384677332
+      - 0.867433413782956
+      - 0.7694915081821593
+      - 0.017741004722170328
+  - text: "• Co-Pilot: Michael Reynolds"
+    confidence: 1
+    bbox:
+      - 0.12542373653496855
+      - 0.9067796608771485
+      - 0.5457627032436221
+      - 0.01763894367448937
+  - text: "• Relief/Systems Operator: Sarah Kline"
+    confidence: 1
+    bbox:
+      - 0.1254237334745763
+      - 0.9447674417297488
+      - 0.7457627118644068
+      - 0.018912945763539413

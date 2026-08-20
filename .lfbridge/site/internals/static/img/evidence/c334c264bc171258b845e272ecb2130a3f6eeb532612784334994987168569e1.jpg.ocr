@@ -1,0 +1,41 @@
+source: site/internals/static/img/evidence/c334c264bc171258b845e272ecb2130a3f6eeb532612784334994987168569e1.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:50:15.014Z
+kind: image
+language: en-US
+text: |-
+  <
+  © 2025 Google
+  © 2021 Google
+  920 N King St
+blocks:
+  - text: <
+    confidence: 1
+    bbox:
+      - 0.02623906645451317
+      - -2.0407098233476972e-10
+      - 0.05539358756392475
+      - 0.030523256561242662
+  - text: © 2025 Google
+    confidence: 1
+    bbox:
+      - 0.36443148934839426
+      - 0.004211792984853857
+      - 0.2740524771132908
+      - 0.02049750914499071
+  - text: © 2021 Google
+    confidence: 1
+    bbox:
+      - 0.4752186585897469
+      - 0.5186522264662614
+      - 0.15743439900126444
+      - 0.012033694344163681
+  - text: 920 N King St
+    confidence: 1
+    bbox:
+      - 0.3877551056039769
+      - 0.9084302328457653
+      - 0.2244897925335428
+      - 0.01756254717187622

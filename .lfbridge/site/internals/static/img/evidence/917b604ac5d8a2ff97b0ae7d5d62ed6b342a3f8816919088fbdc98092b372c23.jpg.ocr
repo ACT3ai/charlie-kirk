@@ -1,0 +1,33 @@
+source: site/internals/static/img/evidence/917b604ac5d8a2ff97b0ae7d5d62ed6b342a3f8816919088fbdc98092b372c23.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:47:52.830Z
+kind: image
+language: en-US
+text: |-
+  DENPU
+  Z33 4A
+  HUHON
+blocks:
+  - text: DENPU
+    confidence: 0.5
+    bbox:
+      - 0.5426250465611
+      - 0.2058984803941588
+      - 0.46666698132531104
+      - 0.09456068277359009
+  - text: Z33 4A
+    confidence: 0.5
+    bbox:
+      - 0.45659950072754224
+      - 0.3846556594624413
+      - 0.30856556003376584
+      - 0.11385414004325867
+  - text: HUHON
+    confidence: 0.5
+    bbox:
+      - 0.08402842577572033
+      - 0.7110332116374494
+      - 0.39260411666611494
+      - 0.08132677525281906

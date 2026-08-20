@@ -1,0 +1,33 @@
+source: site/internals/static/img/evidence/dae8a661616efe74baebbe24d5a4b6db63fa0ac513d7834d56c03df4aa10e045.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:50:45.584Z
+kind: image
+language: en-US
+text: |-
+  TAYLER
+  *
+  TAYLER USA
+blocks:
+  - text: TAYLER
+    confidence: 1
+    bbox:
+      - 0.03750000070312498
+      - 0.9055555554166668
+      - 0.056249999999999994
+      - 0.02777777777777768
+  - text: "*"
+    confidence: 1
+    bbox:
+      - 0.0703125001875
+      - 0.9472222220555556
+      - 0.018750000000000003
+      - 0.033333333333333326
+  - text: TAYLER USA
+    confidence: 1
+    bbox:
+      - 0.8873603706645146
+      - 0.09340415631821741
+      - 0.08309175968170157
+      - 0.03819168673621276

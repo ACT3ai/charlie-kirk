@@ -1,0 +1,105 @@
+source: site/internals/static/img/evidence/7d17ca355bcfa35b360776306cd734e620522979c3f436d2a28b3659abcdca10.webp
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:47:19.358Z
+kind: image
+language: en-US
+text: |-
+  Shooting suspect's 'distinctive' clothing
+  Cap featured a
+  triangular logo
+  Black T-shirt with US flag and
+  eagle - similar to clothing easily
+  available online
+  Land of the Free
+  Home of the Brave
+  Converse trainers left an imprint
+  in the ground
+  Images: FBI, eBay
+  B B C
+blocks:
+  - text: Shooting suspect's 'distinctive' clothing
+    confidence: 1
+    bbox:
+      - 0.025260021518225262
+      - 0.017197451885670012
+      - 0.8410104115804037
+      - 0.04968152866242037
+  - text: Cap featured a
+    confidence: 1
+    bbox:
+      - 0.72956909933718
+      - 0.14825581478490457
+      - 0.21248141924540198
+      - 0.030725077003430412
+  - text: triangular logo
+    confidence: 1
+    bbox:
+      - 0.7280832129537126
+      - 0.18459302269067235
+      - 0.21693907181421912
+      - 0.03069360210637384
+  - text: Black T-shirt with US flag and
+    confidence: 1
+    bbox:
+      - 0.5111441296419829
+      - 0.3037790702558716
+      - 0.42644874254862475
+      - 0.03197674356448421
+  - text: eagle - similar to clothing easily
+    confidence: 1
+    bbox:
+      - 0.5081723719864404
+      - 0.34011627875609296
+      - 0.4606240590413412
+      - 0.03343023312319615
+  - text: available online
+    confidence: 1
+    bbox:
+      - 0.5096582512364769
+      - 0.3764331212652994
+      - 0.2273402611414591
+      - 0.02618315751385536
+  - text: Land of the Free
+    confidence: 1
+    bbox:
+      - 0.5839524527160923
+      - 0.4299363051352032
+      - 0.2927191654841106
+      - 0.05859872611464967
+  - text: Home of the Brave
+    confidence: 1
+    bbox:
+      - 0.5629175364604095
+      - 0.7255061641300754
+      - 0.3496478398640951
+      - 0.0664295318020377
+  - text: Converse trainers left an imprint
+    confidence: 1
+    bbox:
+      - 0.5111441392472204
+      - 0.8356687901682047
+      - 0.46656759579976403
+      - 0.030610280128041567
+  - text: in the ground
+    confidence: 1
+    bbox:
+      - 0.5066047348664545
+      - 0.8716022739630108
+      - 0.19778607288996375
+      - 0.03295824208836651
+  - text: "Images: FBI, eBay"
+    confidence: 1
+    bbox:
+      - 0.0148588433688255
+      - 0.9665697677169001
+      - 0.20505199829737342
+      - 0.026423862481572802
+  - text: B B C
+    confidence: 0.5
+    bbox:
+      - 0.8974739988925524
+      - 0.9649681525151239
+      - 0.08915304144223535
+      - 0.026310917070716866

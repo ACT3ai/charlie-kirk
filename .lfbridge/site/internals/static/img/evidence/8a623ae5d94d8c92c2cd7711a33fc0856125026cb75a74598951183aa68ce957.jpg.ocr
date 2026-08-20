@@ -1,0 +1,105 @@
+source: site/internals/static/img/evidence/8a623ae5d94d8c92c2cd7711a33fc0856125026cb75a74598951183aa68ce957.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:47:41.129Z
+kind: image
+language: en-US
+text: |-
+  FARMERS
+  INSURANCE
+  :
+  Blake Harruff • 3rd
+  Program Technician at USDA
+  Abilene Christian University • USDA
+  Abilene, Texas, United States • 116 connections
+  Connect
+  a Message
+  About
+  I joined the United States Marine Corps in 2006, and
+  served one tour in Marjah Afghanistan Jan-Au ...See more
+blocks:
+  - text: FARMERS
+    confidence: 1
+    bbox:
+      - 0.3504464302749061
+      - 0.026905829478404475
+      - 0.6473214285714286
+      - 0.08520179372197312
+  - text: INSURANCE
+    confidence: 1
+    bbox:
+      - 0.3482142826211735
+      - 0.14573991040999368
+      - 0.4330357142857142
+      - 0.04484304932735417
+  - text: ":"
+    confidence: 1
+    bbox:
+      - 0.9374999998883927
+      - 0.2264573986920777
+      - 0.011160714285714302
+      - 0.024663677130044803
+  - text: Blake Harruff • 3rd
+    confidence: 1
+    bbox:
+      - 0.04464285505952386
+      - 0.38116591939461886
+      - 0.375
+      - 0.03811659192825112
+  - text: Program Technician at USDA
+    confidence: 1
+    bbox:
+      - 0.042143758457608475
+      - 0.43182387132375144
+      - 0.4514531748635428
+      - 0.039912531728701794
+  - text: Abilene Christian University • USDA
+    confidence: 1
+    bbox:
+      - 0.04241071664806549
+      - 0.47757847563527656
+      - 0.5691964285714286
+      - 0.0358744394618834
+  - text: Abilene, Texas, United States • 116 connections
+    confidence: 1
+    bbox:
+      - 0.04241070725446435
+      - 0.5179372193273543
+      - 0.7566964285714285
+      - 0.04035874439461884
+  - text: Connect
+    confidence: 1
+    bbox:
+      - 0.0802798432242022
+      - 0.6139908999989806
+      - 0.14301174027579172
+      - 0.03210788564297118
+  - text: a Message
+    confidence: 1
+    bbox:
+      - 0.31672805644273716
+      - 0.615121392587098
+      - 0.19913317476000103
+      - 0.036573358715382365
+  - text: About
+    confidence: 1
+    bbox:
+      - 0.04205540157567368
+      - 0.7857901886082266
+      - 0.11008562360491071
+      - 0.03604294045623635
+  - text: I joined the United States Marine Corps in 2006, and
+    confidence: 1
+    bbox:
+      - 0.037860927753108155
+      - 0.8675416255981618
+      - 0.8193410464695522
+      - 0.04076077585263105
+  - text: served one tour in Marjah Afghanistan Jan-Au ...See more
+    confidence: 1
+    bbox:
+      - 0.0424107077806123
+      - 0.9170403588565023
+      - 0.9107142857142857
+      - 0.03363228699551568

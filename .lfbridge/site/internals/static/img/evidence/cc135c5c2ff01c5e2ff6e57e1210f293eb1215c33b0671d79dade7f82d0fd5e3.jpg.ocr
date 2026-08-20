@@ -1,0 +1,113 @@
+source: site/internals/static/img/evidence/cc135c5c2ff01c5e2ff6e57e1210f293eb1215c33b0671d79dade7f82d0fd5e3.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:50:28.304Z
+kind: image
+language: en-US
+text: |-
+  Burton Hibbs
+  The
+  3RD
+  Butch Hibbs son
+  Burton Hibbs III
+  695 friends • 2K posts
+  ( TAB Contractors
+  Wasatch High •
+  IUC
+  Add friend,
+  Message
+  new-com
+  Contracted May 2025
+blocks:
+  - text: Burton Hibbs
+    confidence: 1
+    bbox:
+      - -4.859551705482801e-9
+      - 0.030523256422713918
+      - 0.8415697813034058
+      - 0.12084393203258514
+  - text: The
+    confidence: 1
+    bbox:
+      - 0.8590116274495785
+      - 0.05087209329568343
+      - 0.07994186133146286
+      - 0.05232558026909828
+  - text: 3RD
+    confidence: 1
+    bbox:
+      - 0.8575581383051651
+      - 0.1162790699958054
+      - 0.09738372266292572
+      - 0.04505813866853714
+  - text: Butch Hibbs son
+    confidence: 1
+    bbox:
+      - 0.41133721819530755
+      - 0.1991279062100686
+      - 0.47093021869659424
+      - 0.04215116426348686
+  - text: Burton Hibbs III
+    confidence: 1
+    bbox:
+      - 0.549418602914539
+      - 0.3022460934038138
+      - 0.32122093439102173
+      - 0.03662109375
+  - text: 695 friends • 2K posts
+    confidence: 1
+    bbox:
+      - 0.547965120524371
+      - 0.35449218732257304
+      - 0.2994185984134674
+      - 0.03076171875
+  - text: ( TAB Contractors
+    confidence: 1
+    bbox:
+      - 0.36160986357447533
+      - 0.4270524428053394
+      - 0.2752758264541626
+      - 0.039842672646045685
+  - text: Wasatch High •
+    confidence: 1
+    bbox:
+      - 0.6962209299192805
+      - 0.43603515623693423
+      - 0.213662788271904
+      - 0.03076171875
+  - text: IUC
+    confidence: 0.5
+    bbox:
+      - 0.9549418613417274
+      - 0.4360465121274929
+      - 0.04360464960336685
+      - 0.02616279013454914
+  - text: Add friend,
+    confidence: 1
+    bbox:
+      - 0.47378858527307577
+      - 0.5040895127386786
+      - 0.1687019020318985
+      - 0.031065160408616066
+  - text: Message
+    confidence: 1
+    bbox:
+      - 0.8456703403671681
+      - 0.5086232298842155
+      - 0.1444559246301651
+      - 0.029658062383532524
+  - text: new-com
+    confidence: 1
+    bbox:
+      - 0.5172348737664528
+      - 0.7747719122723065
+      - 0.2902153730392456
+      - 0.11228513717651367
+  - text: Contracted May 2025
+    confidence: 1
+    bbox:
+      - 0.3149115250294168
+      - 0.8710821997089757
+      - 0.5169792771339417
+      - 0.11103327572345734

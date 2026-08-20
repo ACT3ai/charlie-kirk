@@ -1,0 +1,25 @@
+source: site/internals/static/img/evidence/8ffd31ec40f330737b6d995458d393866c11611f5d2e4b5d843edded30ecad29.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:47:50.439Z
+kind: image
+language: en-US
+text: |-
+  LACE
+  LYOU
+blocks:
+  - text: LACE
+    confidence: 1
+    bbox:
+      - 3.962703942761436e-10
+      - 0.656580938206574
+      - 0.09401709401709402
+      - 0.05143721633888043
+  - text: LYOU
+    confidence: 0.5
+    bbox:
+      - 0.010256410709401705
+      - 0.7261724659001513
+      - 0.09059829059829061
+      - 0.042360060514372244

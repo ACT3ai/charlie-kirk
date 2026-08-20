@@ -1,0 +1,57 @@
+source: site/internals/static/img/evidence/a052283ce340e75f222537e346c116ac0c80d702597b09cb283dc8a5646c3943.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:48:54.771Z
+kind: image
+language: en-US
+text: |-
+  Rooftop
+  Chick-f-A
+  Balcony POV
+  Stage Leit POV
+  Charlie
+  Livestream POV
+blocks:
+  - text: Rooftop
+    confidence: 1
+    bbox:
+      - 0.5467980295874384
+      - 0.02237136434563758
+      - 0.08620689655172409
+      - 0.02460850111856827
+  - text: Chick-f-A
+    confidence: 1
+    bbox:
+      - 0.38423645184729066
+      - 0.3333333334079045
+      - 0.08128078817733991
+      - 0.01342281879194629
+  - text: Balcony POV
+    confidence: 1
+    bbox:
+      - 0.5909770985311904
+      - 0.3951202165066382
+      - 0.14316895207748037
+      - 0.024077240519342236
+  - text: Stage Leit POV
+    confidence: 1
+    bbox:
+      - 0.42857143072660103
+      - 0.5682326620525726
+      - 0.17241379310344823
+      - 0.02460850111856827
+  - text: Charlie
+    confidence: 1
+    bbox:
+      - 0.6008555916392417
+      - 0.6058812927939181
+      - 0.07907699246711919
+      - 0.023136742696399426
+  - text: Livestream POV
+    confidence: 1
+    bbox:
+      - 0.4285714300697865
+      - 0.6353467560029828
+      - 0.1798029556650247
+      - 0.022371364653243853

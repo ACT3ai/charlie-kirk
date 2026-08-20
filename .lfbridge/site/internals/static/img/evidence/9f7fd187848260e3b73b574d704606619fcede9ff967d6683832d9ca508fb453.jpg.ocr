@@ -1,0 +1,49 @@
+source: site/internals/static/img/evidence/9f7fd187848260e3b73b574d704606619fcede9ff967d6683832d9ca508fb453.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:48:53.834Z
+kind: image
+language: en-US
+text: |-
+  Trisha Hope - National Delegate-TX C
+  @JustTheTweets17
+  Have all of @RealCandaceO podcasts since Charlie's assassination
+  disappeared off of YouTube?
+  6:31 PM • Oct 20, 2025 • 6,318 Views
+blocks:
+  - text: Trisha Hope - National Delegate-TX C
+    confidence: 1
+    bbox:
+      - 0.12801932823671489
+      - 0.10924369638655462
+      - 0.49516908212560384
+      - 0.10924369747899165
+  - text: "@JustTheTweets17"
+    confidence: 0.5
+    bbox:
+      - 0.12801932534506552
+      - 0.24369747863145264
+      - 0.23429951690821257
+      - 0.08403361344537819
+  - text: Have all of @RealCandaceO podcasts since Charlie's assassination
+    confidence: 1
+    bbox:
+      - 0.041062808061594055
+      - 0.45378151113445386
+      - 0.9444444444444445
+      - 0.11764705882352933
+  - text: disappeared off of YouTube?
+    confidence: 1
+    bbox:
+      - 0.04106279942632854
+      - 0.6134453785189075
+      - 0.40096618357487923
+      - 0.10924369747899165
+  - text: 6:31 PM • Oct 20, 2025 • 6,318 Views
+    confidence: 1
+    bbox:
+      - 0.038647342693236685
+      - 0.8571428586134453
+      - 0.4492753623188406
+      - 0.11764705882352944

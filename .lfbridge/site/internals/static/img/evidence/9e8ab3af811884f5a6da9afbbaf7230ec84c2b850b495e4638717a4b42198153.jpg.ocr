@@ -1,0 +1,65 @@
+source: site/internals/static/img/evidence/9e8ab3af811884f5a6da9afbbaf7230ec84c2b850b495e4638717a4b42198153.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:48:20.771Z
+kind: image
+language: en-US
+text: |-
+  GEN RAYMOND T. ODIERNO
+  BEST
+  REOLEG
+  20, 26
+  FORT SILL
+  13B M109A6/7 Team
+  3rd ID, Fort Stewart Georgia
+blocks:
+  - text: GEN RAYMOND T. ODIERNO
+    confidence: 1
+    bbox:
+      - 0.03779070154711405
+      - -2.191539172358148e-9
+      - 0.14098836496536496
+      - 0.1300000011330784
+  - text: BEST
+    confidence: 1
+    bbox:
+      - 0.08284883827675461
+      - 0.09999999961252848
+      - 0.05087209124134125
+      - 0.15999999848922886
+  - text: REOLEG
+    confidence: 1
+    bbox:
+      - 0.026000994061662782
+      - 0.14685657530209395
+      - 0.16747475491363656
+      - 0.41628684619865797
+  - text: 20, 26
+    confidence: 0.5
+    bbox:
+      - 0.042090690656535895
+      - 0.5787744463692135
+      - 0.13238838447559856
+      - 0.3124511076672243
+  - text: FORT SILL
+    confidence: 1
+    bbox:
+      - 0.08137235350624694
+      - 0.8693451168078965
+      - 0.05382506098261522
+      - 0.09130976459767559
+  - text: 13B M109A6/7 Team
+    confidence: 1
+    bbox:
+      - 0.2950581347475652
+      - 0.17821782620987836
+      - 0.6671511678818822
+      - 0.42178216311010985
+  - text: 3rd ID, Fort Stewart Georgia
+    confidence: 1
+    bbox:
+      - 0.3247222764995497
+      - 0.6175404713664495
+      - 0.43388579052524195
+      - 0.27768123740016815

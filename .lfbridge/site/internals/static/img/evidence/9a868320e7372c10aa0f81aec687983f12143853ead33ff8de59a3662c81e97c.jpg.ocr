@@ -1,0 +1,73 @@
+source: site/internals/static/img/evidence/9a868320e7372c10aa0f81aec687983f12143853ead33ff8de59a3662c81e97c.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:48:14.280Z
+kind: image
+language: en-US
+text: |-
+  100,000
+  Appr
+  CONS
+  ION
+  Tyler Robinson
+  *Alleged Shooter
+  Rob Hild
+  iend of Shane
+blocks:
+  - text: 100,000
+    confidence: 1
+    bbox:
+      - 0.2729414631391748
+      - 0.04477428657336491
+      - 0.24190777142842612
+      - 0.1430095672607422
+  - text: Appr
+    confidence: 0.5
+    bbox:
+      - 0.9142441866897151
+      - 0.059431524804839486
+      - 0.03197674353917446
+      - 0.03617571018360277
+  - text: CONS
+    confidence: 1
+    bbox:
+      - 0.9127906982452495
+      - 0.0956072349042566
+      - 0.02616278926531479
+      - 0.025839793240582498
+  - text: ION
+    confidence: 1
+    bbox:
+      - 0.9607558139140167
+      - 0.1007751940388919
+      - 0.017441860834757517
+      - 0.020671833886040547
+  - text: Tyler Robinson
+    confidence: 1
+    bbox:
+      - 0.023255813792786118
+      - 0.9092592590843969
+      - 0.22238372166951495
+      - 0.054629629629629695
+  - text: "*Alleged Shooter"
+    confidence: 1
+    bbox:
+      - 0.27969285312716524
+      - 0.9036058143600196
+      - 0.25859766006469725
+      - 0.06924348054108798
+  - text: Rob Hild
+    confidence: 1
+    bbox:
+      - 0.6802325607737825
+      - 0.7467700261531539
+      - 0.2761627833048502
+      - 0.09582256740993922
+  - text: iend of Shane
+    confidence: 1
+    bbox:
+      - 0.6933139562041054
+      - 0.9092592594626205
+      - 0.20639533996582027
+      - 0.047222222222222276

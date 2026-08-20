@@ -1,0 +1,57 @@
+source: site/internals/static/img/evidence/d5385c2f98ec5ea1b8e0388f4942141e356a9fbaa613fb749723a291307df22a.webp
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:50:37.400Z
+kind: image
+language: en-US
+text: |-
+  SKOWNING AUMINIS KATIUN
+  A PLACE
+  FOR YOU
+  UVU
+  A PLACE
+  FOR You
+blocks:
+  - text: SKOWNING AUMINIS KATIUN
+    confidence: 0.5
+    bbox:
+      - 0.011718763212298769
+      - 0.14583333340003224
+      - 0.11523436009883879
+      - 0.013888888474967831
+  - text: A PLACE
+    confidence: 1
+    bbox:
+      - 0.41990552466521924
+      - 0.44778997543303134
+      - 0.0508139505982399
+      - 0.021086715989642735
+  - text: FOR YOU
+    confidence: 1
+    bbox:
+      - 0.41788862700433005
+      - 0.4717151404756842
+      - 0.05484774708747864
+      - 0.028791942530208114
+  - text: UVU
+    confidence: 0.5
+    bbox:
+      - 0.6249999993945312
+      - 0.45138888906249997
+      - 0.060546875
+      - 0.03819444444444442
+  - text: A PLACE
+    confidence: 1
+    bbox:
+      - 0.8437363623472096
+      - 0.4512833206135981
+      - 0.05080852657556534
+      - 0.021044469541973476
+  - text: FOR You
+    confidence: 1
+    bbox:
+      - 0.8398437499023437
+      - 0.4756944444010418
+      - 0.0546875
+      - 0.02430555555555547

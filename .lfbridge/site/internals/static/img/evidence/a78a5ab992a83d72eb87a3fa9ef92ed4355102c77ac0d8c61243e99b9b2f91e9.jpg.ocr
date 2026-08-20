@@ -1,0 +1,33 @@
+source: site/internals/static/img/evidence/a78a5ab992a83d72eb87a3fa9ef92ed4355102c77ac0d8c61243e99b9b2f91e9.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:49:09.485Z
+kind: image
+language: en-US
+text: |-
+  BRANDON
+  STRAKA
+  SHOW
+blocks:
+  - text: BRANDON
+    confidence: 1
+    bbox:
+      - 0.07455571313570758
+      - 0.748783593381147
+      - 0.0769840383529663
+      - 0.09621816847059461
+  - text: STRAKA
+    confidence: 1
+    bbox:
+      - 0.06894393604896855
+      - 0.7934500142037035
+      - 0.08582169532775878
+      - 0.11772112528483081
+  - text: SHOW
+    confidence: 1
+    bbox:
+      - 0.0819736020257462
+      - 0.8627306348691173
+      - 0.06114550590515137
+      - 0.07489350212944879

@@ -1,0 +1,33 @@
+source: site/internals/static/img/evidence/db97f4633cff713f00364d0c0c2658ae332525301875de27c7ee94f8c1208780.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:50:46.341Z
+kind: image
+language: en-US
+text: |-
+  Obiect
+  19:5
+  1:09:45
+blocks:
+  - text: Obiect
+    confidence: 0.5
+    bbox:
+      - 0.199004975062189
+      - 0.16992187550223214
+      - 0.48507462686567165
+      - 0.140625
+  - text: 19:5
+    confidence: 1
+    bbox:
+      - 0.02238806010572138
+      - 0.8203124999267578
+      - 0.032338308457711434
+      - 0.009765625
+  - text: 1:09:45
+    confidence: 1
+    bbox:
+      - 0.9228855727922884
+      - 0.8203124999267578
+      - 0.052238805970149294
+      - 0.009765625

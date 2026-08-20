@@ -1,0 +1,33 @@
+source: site/internals/static/img/evidence/d086494fc50429030a9c581c6a5d1f30604377ffc66e3789cf2d62b2e2f9bfc3.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:50:33.439Z
+kind: image
+language: en-US
+text: |-
+  YREFY.COM
+  TURNING
+  POINT USA
+blocks:
+  - text: YREFY.COM
+    confidence: 0.5
+    bbox:
+      - 0.05652088274020462
+      - 0.07133176278401132
+      - 0.19960628509521489
+      - 0.10278741624620225
+  - text: TURNING
+    confidence: 1
+    bbox:
+      - 0.10739343061622765
+      - 0.2868721257472009
+      - 0.13857225418090818
+      - 0.08441613091362843
+  - text: POINT USA
+    confidence: 1
+    bbox:
+      - 0.10419443593694115
+      - 0.3279936346325636
+      - 0.1555688667297363
+      - 0.08819764879014769

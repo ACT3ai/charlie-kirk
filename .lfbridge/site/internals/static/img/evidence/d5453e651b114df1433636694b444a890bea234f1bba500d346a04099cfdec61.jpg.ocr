@@ -1,0 +1,25 @@
+source: site/internals/static/img/evidence/d5453e651b114df1433636694b444a890bea234f1bba500d346a04099cfdec61.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:50:37.910Z
+kind: image
+language: en-US
+text: |-
+  mmand.com &
+  Command.com
+blocks:
+  - text: mmand.com &
+    confidence: 1
+    bbox:
+      - -0.00012516417752887095
+      - 0.7319764326141576
+      - 0.426720918840959
+      - 0.09127969343517595
+  - text: Command.com
+    confidence: 1
+    bbox:
+      - 7.464881272400172e-9
+      - 0.8401162784281246
+      - 0.39264704508074166
+      - 0.05523255981733888

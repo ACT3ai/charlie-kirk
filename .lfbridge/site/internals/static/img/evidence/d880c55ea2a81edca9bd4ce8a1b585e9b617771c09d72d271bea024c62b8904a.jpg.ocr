@@ -1,0 +1,97 @@
+source: site/internals/static/img/evidence/d880c55ea2a81edca9bd4ce8a1b585e9b617771c09d72d271bea024c62b8904a.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:50:42.928Z
+kind: image
+language: en-US
+text: |-
+  ely
+  (REFY.COM
+  STUCKNT LOAN RELAP
+  yrefy
+  YREFY.COM
+  MIE STUCKHT LOANS
+  lyrē
+  YREFY.C
+  TURNING
+  POINT USA
+  PRIVATE STUDENT LOAN REL
+blocks:
+  - text: ely
+    confidence: 1
+    bbox:
+      - 0.08284883667620171
+      - 0.48730964510353914
+      - 0.07994186133146286
+      - 0.07868020119520591
+  - text: (REFY.COM
+    confidence: 0.5
+    bbox:
+      - -0.00013751575293707852
+      - 0.5723282152557656
+      - 0.15870526432991028
+      - 0.05585118446740689
+  - text: STUCKNT LOAN RELAP
+    confidence: 0.5
+    bbox:
+      - 0.2994186056416135
+      - 0.46928327657047286
+      - 0.11482557654380798
+      - 0.02310250969063299
+  - text: yrefy
+    confidence: 0.3
+    bbox:
+      - 0.29069767391448087
+      - 0.5000000011254407
+      - 0.12790697813034058
+      - 0.08883248417043843
+  - text: YREFY.COM
+    confidence: 0.5
+    bbox:
+      - 0.2499999983295778
+      - 0.5862944161260082
+      - 0.16715116798877716
+      - 0.050761421385885463
+  - text: MIE STUCKHT LOANS
+    confidence: 1
+    bbox:
+      - 0.5276162811757875
+      - 0.4872013651877133
+      - 0.10610464960336685
+      - 0.025597269624573427
+  - text: lyrē
+    confidence: 0.3
+    bbox:
+      - 0.5363372111194638
+      - 0.5253807100444373
+      - 0.08575581014156342
+      - 0.0736040629624507
+  - text: YREFY.C
+    confidence: 0.5
+    bbox:
+      - 0.5067403875620308
+      - 0.6066414775946863
+      - 0.11283010989427567
+      - 0.048789649286367864
+  - text: TURNING
+    confidence: 1
+    bbox:
+      - 0.4244186057565744
+      - 0.7385786807357093
+      - 0.10755813866853714
+      - 0.035532993668175306
+  - text: POINT USA
+    confidence: 1
+    bbox:
+      - 0.4207116419424566
+      - 0.7625514987725261
+      - 0.12522849440574646
+      - 0.04597109902027119
+  - text: PRIVATE STUDENT LOAN REL
+    confidence: 1
+    bbox:
+      - 0.5452269539595047
+      - 0.9156192649085972
+      - 0.21780578792095184
+      - 0.04954275254910312

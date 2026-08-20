@@ -1,0 +1,41 @@
+source: site/internals/static/img/evidence/d67cba4c18f85686e46325ffbe79759e26626f622c5bef43a961e02b254038f0.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:50:39.799Z
+kind: image
+language: en-US
+text: |-
+  A PLACE
+  FOR YOU
+  AMER CAN
+  MER EAN
+blocks:
+  - text: A PLACE
+    confidence: 1
+    bbox:
+      - 0.7421899366129552
+      - 0.327842936139334
+      - 0.09339790344238286
+      - 0.04391886971213599
+  - text: FOR YOU
+    confidence: 1
+    bbox:
+      - 0.7421108239193538
+      - 0.3747248425515569
+      - 0.09355612860785589
+      - 0.04501671847618616
+  - text: AMER CAN
+    confidence: 1
+    bbox:
+      - 0.8533333341111111
+      - 0.5652173911067194
+      - 0.06222222222222218
+      - 0.02371541501976282
+  - text: MER EAN
+    confidence: 1
+    bbox:
+      - 0.8933333325555556
+      - 0.6640316204874835
+      - 0.046666666666666634
+      - 0.027667984189723382

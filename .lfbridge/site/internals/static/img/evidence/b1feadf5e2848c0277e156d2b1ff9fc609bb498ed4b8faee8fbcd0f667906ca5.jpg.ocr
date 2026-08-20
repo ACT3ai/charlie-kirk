@@ -1,0 +1,177 @@
+source: site/internals/static/img/evidence/b1feadf5e2848c0277e156d2b1ff9fc609bb498ed4b8faee8fbcd0f667906ca5.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:49:52.975Z
+kind: image
+language: en-US
+text: |-
+  4
+  Drone Spy Plane N1098L
+  Spy Plane N1098L @ Sept 10th. Designed to drop off/pick up drones.
+  AXEL10. HADES
+  caram.
+  487 knots speed
+  The Flight N1098L is designed to launch military drones.
+  Normally flies at 41,000' altitude. Dropped to 203' altitude
+  116 knots stall speed @ 9:16am MT 1-mile from UVU.
+  Then looped back to 1-mile from UVU and 203' altitude @
+  stall speed 25 minutes after assassination.
+  41,000
+  Altitude
+  Powell Slough
+  Nifty Productions O
+  Orem Utah Temple O
+  Four Sisters Child Care C
+  & Barelt O
+  Walmart Supercenter ®
+  Utah Valley
+  -University
+blocks:
+  - text: "4"
+    confidence: 0.5
+    bbox:
+      - 0.0232558138531386
+      - 0.03412073603944754
+      - 0.020348837534586585
+      - 0.041994748993470776
+  - text: Drone Spy Plane N1098L
+    confidence: 1
+    bbox:
+      - 0.06516174382287053
+      - 0.017809750639441235
+      - 0.5106136067708333
+      - 0.08840883624539331
+  - text: Spy Plane N1098L @ Sept 10th. Designed to drop off/pick up drones.
+    confidence: 1
+    bbox:
+      - 0.027616284624061335
+      - 0.10761154913059945
+      - 0.5334302164713542
+      - 0.03937007660756753
+  - text: AXEL10. HADES
+    confidence: 1
+    bbox:
+      - 0.027616282751143105
+      - 0.1546329719326246
+      - 0.12645348103841145
+      - 0.031889290012033666
+  - text: caram.
+    confidence: 1
+    bbox:
+      - 0.20494186011177484
+      - 0.1574803150976134
+      - 0.056686045328776025
+      - 0.02362204688263847
+  - text: 487 knots speed
+    confidence: 1
+    bbox:
+      - 0.005813953831331532
+      - 0.2099737537543701
+      - 0.13081395467122395
+      - 0.03149606174510311
+  - text: The Flight N1098L is designed to launch military drones.
+    confidence: 1
+    bbox:
+      - 0.7122093100949308
+      - 0.026246719575779287
+      - 0.2674418538411458
+      - 0.021286373390904667
+  - text: Normally flies at 41,000' altitude. Dropped to 203' altitude
+    confidence: 1
+    bbox:
+      - 0.7122093136393228
+      - 0.05511811030193847
+      - 0.28343021647135413
+      - 0.02129584931007511
+  - text: 116 knots stall speed @ 9:16am MT 1-mile from UVU.
+    confidence: 1
+    bbox:
+      - 0.7122093037590086
+      - 0.08122743639108254
+      - 0.26162790934244795
+      - 0.02113476786515911
+  - text: Then looped back to 1-mile from UVU and 203' altitude @
+    confidence: 1
+    bbox:
+      - 0.7122093050406523
+      - 0.10761154923457195
+      - 0.27616278076171874
+      - 0.02114898002248089
+  - text: stall speed 25 minutes after assassination.
+    confidence: 1
+    bbox:
+      - 0.7122093110018471
+      - 0.13357400739976355
+      - 0.2020348714192708
+      - 0.01865696361922753
+  - text: 41,000
+    confidence: 1
+    bbox:
+      - 0.155451720648213
+      - 0.30672421954059437
+      - 0.05682911682128908
+      - 0.03747019670213314
+  - text: Altitude
+    confidence: 1
+    bbox:
+      - 0.15393389582671724
+      - 0.3533639625477287
+      - 0.06713220723470051
+      - 0.03342955551422899
+  - text: Powell Slough
+    confidence: 1
+    bbox:
+      - 0.5203488372382113
+      - 0.6456077014109673
+      - 0.03197674306233722
+      - 0.013237063778580027
+  - text: Nifty Productions O
+    confidence: 1
+    bbox:
+      - 0.18895348836291412
+      - 0.7346570394569405
+      - 0.053779067993164065
+      - 0.016245487364620947
+  - text: Orem Utah Temple O
+    confidence: 1
+    bbox:
+      - 0.2921511635368407
+      - 0.7900120336222588
+      - 0.058139531453450466
+      - 0.01865222623345364
+  - text: Four Sisters Child Care C
+    confidence: 1
+    bbox:
+      - 0.07558139506249247
+      - 0.8451443574421145
+      - 0.06686046346028647
+      - 0.015866472976445833
+  - text: "& Barelt O"
+    confidence: 0.5
+    bbox:
+      - 0.8241279075436141
+      - 0.8530183730153738
+      - 0.02906976572672526
+      - 0.023636260187582803
+  - text: Walmart Supercenter ®
+    confidence: 1
+    bbox:
+      - 0.2340116287159339
+      - 0.8844765345221446
+      - 0.06104650878906248
+      - 0.01865222623345375
+  - text: Utah Valley
+    confidence: 1
+    bbox:
+      - 0.3953488377818026
+      - 0.8844765341885673
+      - 0.036337209065755216
+      - 0.013237063778580027
+  - text: -University
+    confidence: 1
+    bbox:
+      - 0.3953488377818026
+      - 0.900262467410425
+      - 0.036337209065755216
+      - 0.020997374496735444

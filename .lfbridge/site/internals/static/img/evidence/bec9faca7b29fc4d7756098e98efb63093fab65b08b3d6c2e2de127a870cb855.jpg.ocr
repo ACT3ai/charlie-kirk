@@ -1,0 +1,33 @@
+source: site/internals/static/img/evidence/bec9faca7b29fc4d7756098e98efb63093fab65b08b3d6c2e2de127a870cb855.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:50:10.962Z
+kind: image
+language: en-US
+text: |-
+  KIRK
+  EBA nn
+  FREDOM
+blocks:
+  - text: KIRK
+    confidence: 1
+    bbox:
+      - 0.5095143192692196
+      - 0.5123532200857912
+      - 0.1917271763086319
+      - 0.0639563500881195
+  - text: EBA nn
+    confidence: 0.3
+    bbox:
+      - 0.7979651154628177
+      - 0.5014534892077473
+      - 0.1860465109348297
+      - 0.05232558026909828
+  - text: FREDOM
+    confidence: 1
+    bbox:
+      - 0.5595930236963786
+      - 0.726744186110051
+      - 0.04360464960336685
+      - 0.02616279013454914

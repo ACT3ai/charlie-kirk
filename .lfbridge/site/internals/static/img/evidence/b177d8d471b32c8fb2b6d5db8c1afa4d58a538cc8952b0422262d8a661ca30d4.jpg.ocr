@@ -1,0 +1,33 @@
+source: site/internals/static/img/evidence/b177d8d471b32c8fb2b6d5db8c1afa4d58a538cc8952b0422262d8a661ca30d4.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:49:51.775Z
+kind: image
+language: en-US
+text: |-
+  OLVED •
+  MOMETAN
+  ANI
+blocks:
+  - text: OLVED •
+    confidence: 1
+    bbox:
+      - -7.557149664289698e-10
+      - 0.6452184178512139
+      - 0.1506550248520412
+      - 0.02193274492356123
+  - text: MOMETAN
+    confidence: 0.3
+    bbox:
+      - 0.4825327490577737
+      - 0.5436046517919301
+      - 0.176855896971789
+      - 0.03779069704598481
+  - text: ANI
+    confidence: 0.5
+    bbox:
+      - 0.609170307563351
+      - 0.545058139726767
+      - 0.06113536827941135
+      - 0.017441859915236835

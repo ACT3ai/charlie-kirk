@@ -1,0 +1,57 @@
+source: site/internals/static/img/evidence/d5e1ff0a2fc35811c2c7143c535a1089e801a15ce232437637e3dfbd9d594b99.webp
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:50:39.108Z
+kind: image
+language: en-US
+text: |-
+  WRONG
+  PROVE ME
+  WOLV
+  YU
+  AHO
+  FREEDOM
+blocks:
+  - text: WRONG
+    confidence: 1
+    bbox:
+      - -3.472222287470572e-10
+      - 0.030444965352589115
+      - 0.384375
+      - 0.1733021077283372
+  - text: PROVE ME
+    confidence: 1
+    bbox:
+      - 0.4451178788329674
+      - 0.022187145415414555
+      - 0.5316392421722412
+      - 0.1921596661105368
+  - text: WOLV
+    confidence: 1
+    bbox:
+      - 0.32500000028125
+      - 0.5199063230679156
+      - 0.02812500000000001
+      - 0.016393442622950838
+  - text: YU
+    confidence: 0.5
+    bbox:
+      - 0.9656249995898438
+      - 0.5316159251756439
+      - 0.03281250000000002
+      - 0.0187353629976581
+  - text: AHO
+    confidence: 1
+    bbox:
+      - 0.9671874999023438
+      - 0.550351287822014
+      - 0.029687499999999978
+      - 0.01873536299765799
+  - text: FREEDOM
+    confidence: 1
+    bbox:
+      - 0.5484375003327973
+      - 0.7100702582863732
+      - 0.059999996423721336
+      - 0.060421539413845204

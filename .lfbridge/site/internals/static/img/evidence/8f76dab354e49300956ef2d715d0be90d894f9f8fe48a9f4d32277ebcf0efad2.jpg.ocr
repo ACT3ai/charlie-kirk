@@ -1,0 +1,49 @@
+source: site/internals/static/img/evidence/8f76dab354e49300956ef2d715d0be90d894f9f8fe48a9f4d32277ebcf0efad2.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:47:50.640Z
+kind: image
+language: en-US
+text: |-
+  IDEAL CONDEAL, ING
+  MONTICELLO, VN
+  ICSEO CAL SED ACE
+  USA PATENT 0813157
+  8000
+blocks:
+  - text: IDEAL CONDEAL, ING
+    confidence: 1
+    bbox:
+      - 0.6945471119212161
+      - 0.18048491013813284
+      - 0.1544913500547409
+      - 0.022702804983478653
+  - text: MONTICELLO, VN
+    confidence: 1
+    bbox:
+      - 0.7265108659177273
+      - 0.2023267570732188
+      - 0.12404944747686386
+      - 0.023093495303637246
+  - text: ICSEO CAL SED ACE
+    confidence: 1
+    bbox:
+      - 0.7034883727635206
+      - 0.2260273975636753
+      - 0.14825581014156342
+      - 0.020547945205479534
+  - text: USA PATENT 0813157
+    confidence: 1
+    bbox:
+      - 0.690406976812669
+      - 0.25050916511781907
+      - 0.1627907007932663
+      - 0.02036659815540054
+  - text: "8000"
+    confidence: 1
+    bbox:
+      - 0.7107558145850797
+      - 0.3116089616255293
+      - 0.03633720800280571
+      - 0.016293278785601162

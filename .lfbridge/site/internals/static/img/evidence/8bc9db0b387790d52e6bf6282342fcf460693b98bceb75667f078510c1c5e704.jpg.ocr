@@ -1,0 +1,351 @@
+source: site/internals/static/img/evidence/8bc9db0b387790d52e6bf6282342fcf460693b98bceb75667f078510c1c5e704.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:47:46.782Z
+kind: image
+language: en-US
+text: >-
+  9/10/2025 12:23:34 PM
+
+  BLAKEBEDNARZ
+
+  O•C
+
+  @ Measure
+
+  Wick noints on the man
+
+  1: 4,637 t | Mediar 4,699 . 11
+
+  The person is observed at 12:23:34 already running and covers 220 feet in the
+  next 15 seconds.
+
+  That means their average speed during those 15 seconds is:
+
+  220 ft ÷ 15 s = 14.666... ft/s (exactly 44/3 ft/s).
+
+  We need to find when they crossed the start line, which was 80 feet before the
+  position where we saw them at
+
+  12:23:34.
+
+  So the question is really: how many seconds before 12:23:34 did they cross the
+  start line, assuming they ran at the
+
+  same constant speed the whole time?
+
+  Distance to cover to reach the observation point from the start line = 80 ft
+
+  Speed = 220 ft / 15 s = 14.666... ft/s
+
+  Time to cover those 80 ft = 80 ft ÷ (220 ft / 15 s) = 80 × (15 / 220) = (80 ×
+  15) / 220 = 1200 / 220 = 120 / 22 = 60 /
+
+  11 seconds
+
+  60 ÷ 11 = 5.454545... seconds
+
+  So they crossed the start line 60/11 seconds (about 5.45 seconds) before
+  12:23:34.
+
+  Now subtract that from 12:23:34:
+
+  12:23:34 minus 5 full seconds = 12:23:29
+
+  Then subtract the remaining 0.454545... seconds (which is exactly 5/11 of a
+  second).
+
+  So the exact start time is:
+
+  12:23:34 - 60/11 seconds = 12:23:28 + (11/11 - 5/11) seconds = 12:23:28 and
+  6/11 of a second.
+
+  Or more cleanly:
+
+  12:23:34 - 5 and 5/11 seconds = 12:23:28 and (1 - 5/11) = 12:23:28 and 6/11
+  seconds.
+
+  Therefore, they began running (crossed the start line) at exactly:
+
+  12:23:28 + 6/11 seconds (approximately 12:23:28.545).
+
+  If you want it in pure seconds notation: 12:23:28.54545... (repeating 45).
+
+  Charlie Kirk was fatally shot at 12:23:30 p.m. MDT on September 10, 2025,
+  during a speaking event at Utah Valley
+
+  University in Orem, Utah. This precise timestamp comes from official
+  investigations, eyewitness accounts, and
+
+  video analyses reviewed by multiple outlets, including a Deseret News reporter
+  who described seeing blood from
+
+  Kirk's neck wound immediately after the shot rang out. Police dispatch
+  recordings confirm the initial report of
+
+  "shots fired" and Kirk down at exactly 12:23 p.m., with forensic video
+  synchronization pinpointing the 30-second
+
+  mark as the bullet impact.
+blocks:
+  - text: 9/10/2025 12:23:34 PM
+    confidence: 1
+    bbox:
+      - 0.013227514930734187
+      - 0.01162790681871817
+      - 0.19576719562354036
+      - 0.010344749316573143
+  - text: BLAKEBEDNARZ
+    confidence: 0.5
+    bbox:
+      - 0.11855509618555576
+      - 0.13964536003299055
+      - 0.583078676271269
+      - 0.03506000339984894
+  - text: O•C
+    confidence: 0.5
+    bbox:
+      - 0.8756613761109275
+      - 0.16424418636826066
+      - 0.04232804037073745
+      - 0.008720929734408855
+  - text: "@ Measure"
+    confidence: 1
+    bbox:
+      - 0.7989418006235168
+      - 0.19622093028983567
+      - 0.050264548576599344
+      - 0.007392351049929857
+  - text: Wick noints on the man
+    confidence: 1
+    bbox:
+      - 0.7989418046076108
+      - 0.20639534895903933
+      - 0.06878306432975145
+      - 0.0030773072503507137
+  - text: "1: 4,637 t | Mediar 4,699 . 11"
+    confidence: 1
+    bbox:
+      - 0.8095238128936503
+      - 0.25290697684991326
+      - 0.07936507527090053
+      - 0.007346929283812642
+  - text: The person is observed at 12:23:34 already running and covers 220 feet in
+      the next 15 seconds.
+    confidence: 1
+    bbox:
+      - 0.02116404827992662
+      - 0.4213867188076367
+      - 0.7671957321438502
+      - 0.010299327783286572
+  - text: "That means their average speed during those 15 seconds is:"
+    confidence: 1
+    bbox:
+      - 0.021164046471451783
+      - 0.4433139538323446
+      - 0.4841269496496886
+      - 0.010299327317625284
+  - text: 220 ft ÷ 15 s = 14.666... ft/s (exactly 44/3 ft/s).
+    confidence: 1
+    bbox:
+      - 0.021164029666656276
+      - 0.46366279058204185
+      - 0.3756613680476396
+      - 0.010174418799579144
+  - text: We need to find when they crossed the start line, which was 80 feet before
+      the position where we saw them at
+    confidence: 1
+    bbox:
+      - 0.021164032451856208
+      - 0.4853515627232077
+      - 0.8915343912470807
+      - 0.010287972167134285
+  - text: 12:23:34.
+    confidence: 1
+    bbox:
+      - 0.021121787961567374
+      - 0.5013535452760707
+      - 0.07944954841586618
+      - 0.010374304838478565
+  - text: "So the question is really: how many seconds before 12:23:34 did they
+      cross the start line, assuming they ran at the"
+    confidence: 1
+    bbox:
+      - 0.021164047007941333
+      - 0.5218023255449145
+      - 0.9179893846613656
+      - 0.011627906933426857
+  - text: same constant speed the whole time?
+    confidence: 1
+    bbox:
+      - 0.02116402416478614
+      - 0.5390624999430815
+      - 0.30952380305931665
+      - 0.01035610493272543
+  - text: Distance to cover to reach the observation point from the start line = 80
+      ft
+    confidence: 1
+    bbox:
+      - 0.02380953493349904
+      - 0.5595703123190323
+      - 0.5952380848949066
+      - 0.01025390625
+  - text: Speed = 220 ft / 15 s = 14.666... ft/s
+    confidence: 1
+    bbox:
+      - 0.021164029317496058
+      - 0.5755813953123563
+      - 0.29100528051844693
+      - 0.011820948217064142
+  - text: Time to cover those 80 ft = 80 ft ÷ (220 ft / 15 s) = 80 × (15 / 220) =
+      (80 × 15) / 220 = 1200 / 220 = 120 / 22 = 60 /
+    confidence: 1
+    bbox:
+      - 0.021164053127870393
+      - 0.597167968661364
+      - 0.9179893846613657
+      - 0.010390170384198427
+  - text: 11 seconds
+    confidence: 1
+    bbox:
+      - 0.021127139654436213
+      - 0.6132702287587046
+      - 0.09266635446786031
+      - 0.010378147475421429
+  - text: 60 ÷ 11 = 5.454545... seconds
+    confidence: 1
+    bbox:
+      - 0.021164022398286374
+      - 0.635174418561693
+      - 0.24603173741242215
+      - 0.010333394166082144
+  - text: So they crossed the start line 60/11 seconds (about 5.45 seconds) before
+      12:23:34.
+    confidence: 1
+    bbox:
+      - 0.02116402665731511
+      - 0.6555232556983208
+      - 0.6693121750583853
+      - 0.010174418799579144
+  - text: "Now subtract that from 12:23:34:"
+    confidence: 1
+    bbox:
+      - 0.023809530432004875
+      - 0.6772460936702018
+      - 0.2671957592947203
+      - 0.008800417650491
+  - text: 12:23:34 minus 5 full seconds = 12:23:29
+    confidence: 1
+    bbox:
+      - 0.021164022848055044
+      - 0.6976744186343674
+      - 0.3280423256001863
+      - 0.010333393700420856
+  - text: Then subtract the remaining 0.454545... seconds (which is exactly 5/11 of
+      a second).
+    confidence: 1
+    bbox:
+      - 0.023809551303782185
+      - 0.7136627906829959
+      - 0.6825396446146574
+      - 0.011627906933426857
+  - text: "So the exact start time is:"
+    confidence: 1
+    bbox:
+      - 0.02116402009588291
+      - 0.7353515623019411
+      - 0.20899470590611793
+      - 0.008834484033286572
+  - text: 12:23:34 - 60/11 seconds = 12:23:28 + (11/11 - 5/11) seconds = 12:23:28
+      and 6/11 of a second.
+    confidence: 1
+    bbox:
+      - 0.023809552432354053
+      - 0.7558139538807942
+      - 0.7433862109201234
+      - 0.010299327317625284
+  - text: "Or more cleanly:"
+    confidence: 1
+    bbox:
+      - 0.023809526898802207
+      - 0.7776162796075383
+      - 0.1322751299766459
+      - 0.010174417868256569
+  - text: 12:23:34 - 5 and 5/11 seconds = 12:23:28 and (1 - 5/11) = 12:23:28 and
+      6/11 seconds.
+    confidence: 1
+    bbox:
+      - 0.021164048109937085
+      - 0.7978515623241645
+      - 0.6772486459318005
+      - 0.010287972167134285
+  - text: "Therefore, they began running (crossed the start line) at exactly:"
+    confidence: 1
+    bbox:
+      - 0.021164012671364266
+      - 0.8197674418175069
+      - 0.5185185225408697
+      - 0.010310683399438858
+  - text: 12:23:28 + 6/11 seconds (approximately 12:23:28.545).
+    confidence: 1
+    bbox:
+      - 0.021164037997212597
+      - 0.8415697677858329
+      - 0.449735431060248
+      - 0.010174417868256569
+  - text: "If you want it in pure seconds notation: 12:23:28.54545... (repeating
+      45)."
+    confidence: 1
+    bbox:
+      - 0.02380954494171169
+      - 0.8618164062821289
+      - 0.587301559719751
+      - 0.010276617016643286
+  - text: Charlie Kirk was fatally shot at 12:23:30 p.m. MDT on September 10, 2025,
+      during a speaking event at Utah Valley
+    confidence: 1
+    bbox:
+      - 0.026455022925654978
+      - 0.8938953487942511
+      - 0.9259259098365213
+      - 0.010401526000350714
+  - text: University in Orem, Utah. This precise timestamp comes from official
+      investigations, eyewitness accounts, and
+    confidence: 1
+    bbox:
+      - 0.026455048242103006
+      - 0.9096679687098136
+      - 0.9021163886127946
+      - 0.010390170384198427
+  - text: video analyses reviewed by multiple outlets, including a Deseret News
+      reporter who described seeing blood from
+    confidence: 1
+    bbox:
+      - 0.026455016449781734
+      - 0.9257812500510157
+      - 0.9153439124708075
+      - 0.01171875
+  - text: Kirk's neck wound immediately after the shot rang out. Police dispatch
+      recordings confirm the initial report of
+    confidence: 1
+    bbox:
+      - 0.026455027410969095
+      - 0.9418604652106122
+      - 0.888888864754782
+      - 0.011752815917134285
+  - text: '"shots fired" and Kirk down at exactly 12:23 p.m., with forensic video
+      synchronization pinpointing the 30-second'
+    confidence: 1
+    bbox:
+      - 0.02645501581045217
+      - 0.9578488370371625
+      - 0.9153439124708074
+      - 0.011627906933426857
+  - text: mark as the bullet impact.
+    confidence: 1
+    bbox:
+      - 0.026455033981967472
+      - 0.9750976562751488
+      - 0.21428570458897492
+      - 0.010367460083216429

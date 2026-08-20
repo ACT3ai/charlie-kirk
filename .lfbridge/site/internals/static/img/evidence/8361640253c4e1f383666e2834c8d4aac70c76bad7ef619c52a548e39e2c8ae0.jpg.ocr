@@ -1,0 +1,65 @@
+source: site/internals/static/img/evidence/8361640253c4e1f383666e2834c8d4aac70c76bad7ef619c52a548e39e2c8ae0.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:47:32.849Z
+kind: image
+language: en-US
+text: |-
+  NSA
+  CIA
+  FBI
+  UvU
+  UTAN
+  VALLEY
+  TRUSTED INVESTIGATORS
+blocks:
+  - text: NSA
+    confidence: 1
+    bbox:
+      - 0.18313953317510562
+      - 0.05729166679687503
+      - 0.07558139801025388
+      - 0.05729166666666663
+  - text: CIA
+    confidence: 1
+    bbox:
+      - 0.4752906979148032
+      - 0.05729166654647433
+      - 0.06250000000000006
+      - 0.05729166666666663
+  - text: FBI
+    confidence: 1
+    bbox:
+      - 0.6613372090404424
+      - 0.057291667041015626
+      - 0.06686046600341788
+      - 0.05989583333333337
+  - text: UvU
+    confidence: 0.5
+    bbox:
+      - 0.03633720927776959
+      - 0.4921875000868057
+      - 0.034883720397949215
+      - 0.02604166666666663
+  - text: UTAN
+    confidence: 0.5
+    bbox:
+      - 0.03779069863251678
+      - 0.52083333359375
+      - 0.021802324295043946
+      - 0.015625
+  - text: VALLEY
+    confidence: 1
+    bbox:
+      - 0.037790698380699435
+      - 0.5338541665798611
+      - 0.029069766998291023
+      - 0.015625
+  - text: TRUSTED INVESTIGATORS
+    confidence: 1
+    bbox:
+      - 0.6148255817201125
+      - 0.9086021504074261
+      - 0.3139534912109375
+      - 0.04480286738351258

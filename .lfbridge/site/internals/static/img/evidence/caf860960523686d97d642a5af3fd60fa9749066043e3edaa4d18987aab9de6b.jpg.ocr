@@ -1,0 +1,65 @@
+source: site/internals/static/img/evidence/caf860960523686d97d642a5af3fd60fa9749066043e3edaa4d18987aab9de6b.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:50:26.034Z
+kind: image
+language: en-US
+text: |-
+  Is this why they
+  Killed him...?
+  Al th. Lot
+  pin Lobo
+  Sebastian
+  THE ISRAELI GOVERNMENT
+  ILT
+blocks:
+  - text: Is this why they
+    confidence: 1
+    bbox:
+      - 0.23571428198979588
+      - 0.09375000006696432
+      - 0.5214285714285714
+      - 0.06562499999999993
+  - text: Killed him...?
+    confidence: 1
+    bbox:
+      - 0.21428571167410715
+      - 0.16875000015624997
+      - 0.4178571428571428
+      - 0.0625
+  - text: Al th. Lot
+    confidence: 0.5
+    bbox:
+      - 0.732142856505102
+      - 0.33125000033482144
+      - 0.14642857142857135
+      - 0.046875
+  - text: pin Lobo
+    confidence: 0.5
+    bbox:
+      - 0.7373910740017688
+      - 0.3567884798073848
+      - 0.25457755497523715
+      - 0.08440525531768794
+  - text: Sebastian
+    confidence: 1
+    bbox:
+      - 0.7453742913953771
+      - 0.4963086752308813
+      - 0.23987214224679143
+      - 0.09487173557281492
+  - text: THE ISRAELI GOVERNMENT
+    confidence: 1
+    bbox:
+      - 0.1607142847321429
+      - 0.6312499995312499
+      - 0.675
+      - 0.05625000000000002
+  - text: ILT
+    confidence: 1
+    bbox:
+      - 0.8714285677993774
+      - 0.9343749992187501
+      - 0.03214286395481658
+      - 0.0625

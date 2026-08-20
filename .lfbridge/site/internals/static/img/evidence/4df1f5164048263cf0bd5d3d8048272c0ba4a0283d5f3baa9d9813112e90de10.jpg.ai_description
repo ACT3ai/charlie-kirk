@@ -1,0 +1,179 @@
+source: site/internals/static/img/evidence/4df1f5164048263cf0bd5d3d8048272c0ba4a0283d5f3baa9d9813112e90de10.jpg
+status: done
+engine: gemini-flash-latest
+provider: gemini
+generated: 2026-08-20T12:47:50.825Z
+kind: image
+description: >-
+  ## Overview
+
+  This is a direct digital screenshot of the Google Trends website user
+  interface showing search term comparisons over time. The screen displays an
+  "Explore" comparison between four distinct search terms related to vehicle
+  license plates and an aircraft tail number filtered for the region of Israel
+  between April 1, 2025, and September 10, 2025. The lower portion features a
+  line graph plotting "Interest over time" with sharp, isolated spikes near
+  August and September 2025, with an active data tooltip pop-up overlaying the
+  graph.
+
+
+  ## Hyper-Detail
+
+  The user interface is set against a very pale blue-gray background with
+  rounded white card panels. 
+
+
+  At the very top header:
+
+  - Left: A hamburger menu icon (three horizontal black lines) followed
+  immediately by the "Google Trends" logo, where "Google" is rendered in its
+  signature multicolor font (blue 'G', red 'o', yellow 'o', blue 'g', green 'l',
+  red 'e') and "Trends" in gray text.
+
+  - Center-left: Navigation links "Home", "Explore" (active, highlighted with a
+  small blue horizontal bar underneath), and "Trending Now".
+
+  - Top right: A share icon (three connected nodes) and a feedback/message icon
+  (speech bubble with an exclamation mark).
+
+
+  Below the header, the search comparison cards section is presented:
+
+  1. Blue term card (far left): A solid blue circle icon followed by the
+  truncated text `"Utah License Plat..."` and the subtext `Search term`.
+
+  2. Red term card (middle-left): A solid red/salmon circle icon followed by
+  `"tail number N560..."` and the subtext `Search term`.
+
+  3. Yellow term card (middle-right): A solid yellow/amber circle icon followed
+  by `"Utah License Plat..."` and the subtext `Search term`.
+
+  4. Green term card (right): A solid green circle icon followed by `"Arizona
+  License P..."` and the subtext `Search term`.
+
+  5. Add comparison box (far right): A light-blue tinted rectangular button
+  containing a large gray plus (`+`) symbol.
+
+
+  Directly beneath the search term boxes, a row of filter pill-buttons with
+  dropdown carets:
+
+  - Location filter: `Israel ▼`
+
+  - Date range filter: `4/1/25 - 9/10/25 ▼`
+
+  - Category filter: `All categories ▼`
+
+  - Search type filter: `Web Search ▼`
+
+
+  Main content area (Interest over time card):
+
+  - The card is a large white rounded rectangle container.
+
+  - Title at the top-left: `Interest over time` followed by a small gray
+  circular question mark help icon `(?)`.
+
+  - Top-right card actions: Download icon (tray with down arrow), embed code
+  icon (`<>`), and a share icon.
+
+  - Line graph axes:
+    - Y-axis on the left shows tick marks and labels at `0`, `25`, `50`, `75`, and `100` alongside faint horizontal gridlines.
+    - X-axis shows baseline labels: `Average` (far left bottom), `Apr 1`, `May 22`, `Jul 12`, and `Sep 1`.
+    - The baseline shows virtually flat zero-activity lines across April to late August, where multiple narrow, dramatic spikes emerge:
+      - Yellow line spikes around mid-August to ~75.
+      - Blue line spikes sharply to ~90.
+      - Red line spikes sharply near the top (~97-100), with a red point highlighted.
+      - Green line shows a sharp standalone spike peaking at 100 around early September.
+    - A white rectangular hover tooltip box is positioned near the right side over the August spike area:
+      - Header: `Aug 17, 2025`
+      - Line 1: `"Utah License Plate Z923DA"` in gray with a value of `0` in blue.
+      - Line 2: `"tail number N560tw"` in gray with a value of `97` in red.
+      - Line 3: `"Utah License Plate T092ZS"` in gray with a value of `0` in yellow.
+      - Line 4: `"Arizona License Plate number..."` in gray with a value of `0` in green.
+
+  ## Composition
+
+  This is a 2D graphical user interface layout filling 100% of the digital
+  canvas:
+
+  - Top 10% (foreground/top): Navigation bar spanning horizontally across the
+  entire width.
+
+  - Upper 10%–30% (frame-center-top): Search query input comparison cards
+  occupying roughly 20% of the frame.
+
+  - Mid-upper 30%–38%: Dropdown filter bar spanning horizontally.
+
+  - Lower 40%–100% (midground/lower frame): The "Interest over time" data
+  visualization module occupying ~60% of the entire frame area.
+
+  - Visual weight and eye focus are drawn to the right third of the line graph
+  where the sharp vertical color spikes and the white hover tooltip card (~12%
+  of frame area) are situated.
+
+
+  ## Location
+
+  (indeterminate) – This is a digital software interface screenshot.
+
+
+  ## Setting & Place
+
+  Digital computer desktop/web application environment (Google Trends
+  interface).
+
+
+  ## Lighting
+
+  Not applicable; flat digital graphic render with standard software interface
+  styling, subtle drop shadows on card containers, and standard computer UI
+  contrast.
+
+
+  ## Cinematography
+
+  Direct screen capture (screengrab) / non-camera digital capture. Flat 2D
+  presentation without optical depth of field, perspective distortion, or lens
+  characteristics.
+
+
+  ## People
+
+  No people in frame.
+
+
+  ## Objects & Text
+
+  - **Brand/Logo:** "Google Trends"
+
+  - **Navigation Text:** "Home", "Explore", "Trending Now"
+
+  - **Filter Text:** "Israel", "4/1/25 - 9/10/25", "All categories", "Web
+  Search"
+
+  - **Section Headers:** "Interest over time", "Average"
+
+  - **Graph Labels & Scales:** "0", "25", "50", "75", "100", "Apr 1", "May 22",
+  "Jul 12", "Sep 1"
+
+  - **Tooltip Content:** 
+    - "Aug 17, 2025"
+    - "\"Utah License Plate Z923DA\" 0"
+    - "\"tail number N560tw\" 97"
+    - "\"Utah License Plate T092ZS\" 0"
+    - "\"Arizona License Plate number...\" 0"
+  - **Search Query Cards Text:**
+    - "\"Utah License Plat... Search term\""
+    - "\"tail number N560... Search term\""
+    - "\"Utah License Plat... Search term\""
+    - "\"Arizona License P... Search term\""
+
+  ## Colors & Mood
+
+  - **Dominant Palette:** Clean, modern tech palette composed of off-white/light
+  blue-gray (`#F0F4F9` style background), pure white cards, neutral dark grays
+  for typography, accented with Google's core primary data colors: royal blue,
+  coral red, golden yellow, and bright green.
+
+  - **Mood/Tone:** Analytical, informational, clinical, and data-driven.

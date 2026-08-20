@@ -1,0 +1,57 @@
+source: site/internals/static/img/evidence/96363fe10906f32e0644a3756925c920ba5a01d71de96481c3303929d3251633.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:48:04.945Z
+kind: image
+language: en-US
+text: |-
+  AMER CAN
+  LOMEBACE
+  X ATHEINTELSCIF
+  THE LIGHT
+  OVER THE GRASSY KNOLL
+  0:12 / 1:11 a)
+blocks:
+  - text: AMER CAN
+    confidence: 1
+    bbox:
+      - 0.06540697862755994
+      - 0.04621478873960083
+      - 0.04505813689458939
+      - 0.01320422535211263
+  - text: LOMEBACE
+    confidence: 0.5
+    bbox:
+      - 0.07122093247524919
+      - 0.06185567041065121
+      - 0.04215115971035427
+      - 0.012886597237116826
+  - text: X ATHEINTELSCIF
+    confidence: 0.5
+    bbox:
+      - 0.49709302507501313
+      - 0.42781690175799314
+      - 0.06104650951567153
+      - 0.018059386333949212
+  - text: THE LIGHT
+    confidence: 1
+    bbox:
+      - 0.6612249343790589
+      - 0.7698765258436878
+      - 0.23714315323602586
+      - 0.11488612269012022
+  - text: OVER THE GRASSY KNOLL
+    confidence: 1
+    bbox:
+      - 0.6598837166056956
+      - 0.9175257734230039
+      - 0.25436047145298546
+      - 0.04639175240422633
+  - text: 0:12 / 1:11 a)
+    confidence: 1
+    bbox:
+      - 0.9156976743592644
+      - 0.9819542253327035
+      - 0.03924418631054105
+      - 0.012891135585140101

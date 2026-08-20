@@ -1,0 +1,65 @@
+source: site/internals/static/img/evidence/8d66e62f28a06512374a670b41ff853bdbc161c89ac946c7c530afa257b10e6c.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:47:45.836Z
+kind: image
+language: en-US
+text: |-
+  •Y.COM
+  REI
+  ENTRY
+  WOUND
+  A
+  EXIT WOUND
+  RE
+blocks:
+  - text: •Y.COM
+    confidence: 0.5
+    bbox:
+      - -1.145912909535019e-9
+      - 3.400202341907743e-11
+      - 0.38961038961038963
+      - 0.08670520231213874
+  - text: REI
+    confidence: 1
+    bbox:
+      - 0.8290043283549783
+      - 0.014450867174299664
+      - 0.1688311688311689
+      - 0.08959537572254339
+  - text: ENTRY
+    confidence: 1
+    bbox:
+      - 0.03679653635161136
+      - 0.41329479815350023
+      - 0.25757575757575757
+      - 0.08381502890173409
+  - text: WOUND
+    confidence: 1
+    bbox:
+      - 0.01291170898065164
+      - 0.5284454617237209
+      - 0.30318090926001084
+      - 0.09050792076684144
+  - text: A
+    confidence: 1
+    bbox:
+      - 0.8528138527056277
+      - 0.40462427720375727
+      - 0.04761904761904767
+      - 0.06069364161849711
+  - text: EXIT WOUND
+    confidence: 1
+    bbox:
+      - 0.1341991363131313
+      - 0.7601156064643546
+      - 0.7987012987012988
+      - 0.14161849710982655
+  - text: RE
+    confidence: 1
+    bbox:
+      - 0.33982684051948053
+      - 0.8988439306069363
+      - 0.1385281385281385
+      - 0.08670520231213874

@@ -1,0 +1,41 @@
+source: site/internals/static/img/evidence/91e50b1a2c5234a413d7095b99c20e736a42c048495985c41b3296e5bbf2769b.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:47:52.546Z
+kind: image
+language: en-US
+text: |-
+  WEST
+  PRESS
+  PRESS
+  PRESS
+blocks:
+  - text: WEST
+    confidence: 1
+    bbox:
+      - 0.05324459183725801
+      - 0.4026162796406362
+      - 0.03161397754636584
+      - 0.020348835940384724
+  - text: PRESS
+    confidence: 1
+    bbox:
+      - 0.2584594839197644
+      - 0.6190051156293909
+      - 0.07727397473109748
+      - 0.05346846699121577
+  - text: PRESS
+    confidence: 1
+    bbox:
+      - 0.3893510808996638
+      - 0.6220930230265467
+      - 0.036605658354582626
+      - 0.015988372451630428
+  - text: PRESS
+    confidence: 1
+    bbox:
+      - 0.3579928824133557
+      - 0.6891994648816518
+      - 0.017791272568227212
+      - 0.027124326620528882

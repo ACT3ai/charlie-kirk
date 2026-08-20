@@ -1,0 +1,81 @@
+source: site/internals/static/img/evidence/8072748b3c6e18b221b5379c2b5721c1981db4cea43dd51563aded24db179009.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:47:22.994Z
+kind: image
+language: en-US
+text: |-
+  X
+  @MJTruthUltra
+  OREM, UT
+  LIVE
+  NEWSMAX2
+  9:16 CT LIVE
+  BREAKING NEWS
+  PATEL: WE HAVE OVER 11K LEADS
+  TRUMP SAYS HE'LL SEND NATIONAL GUARD TO MEMPHIS TO ADDRESS CRIME CONCERNS
+blocks:
+  - text: X
+    confidence: 0.3
+    bbox:
+      - 0.038333333259259264
+      - 0.07624633408276316
+      - 0.02333333333333333
+      - 0.04105571847507328
+  - text: "@MJTruthUltra"
+    confidence: 0.5
+    bbox:
+      - 0.06833333212500001
+      - 0.07917888577712606
+      - 0.14500000000000002
+      - 0.035190615835777206
+  - text: OREM, UT
+    confidence: 1
+    bbox:
+      - 0.8116298541849101
+      - 0.07007372777998933
+      - 0.07840695699055977
+      - 0.029940521262607933
+  - text: LIVE
+    confidence: 1
+    bbox:
+      - 0.9116666663166666
+      - 0.0674486804985337
+      - 0.03500000000000003
+      - 0.032258064516129004
+  - text: NEWSMAX2
+    confidence: 1
+    bbox:
+      - 0.049999999157407424
+      - 0.8328445749266863
+      - 0.15166666666666667
+      - 0.04398826979472148
+  - text: 9:16 CT LIVE
+    confidence: 1
+    bbox:
+      - 0.05666666783333331
+      - 0.9178885629276637
+      - 0.14
+      - 0.032258064516129004
+  - text: BREAKING NEWS
+    confidence: 1
+    bbox:
+      - 0.22500000096666667
+      - 0.7478005863636364
+      - 0.19333333333333336
+      - 0.04105571847507328
+  - text: "PATEL: WE HAVE OVER 11K LEADS"
+    confidence: 1
+    bbox:
+      - 0.22333332997916672
+      - 0.8240469209494135
+      - 0.5366666666666666
+      - 0.06158357771261003
+  - text: TRUMP SAYS HE'LL SEND NATIONAL GUARD TO MEMPHIS TO ADDRESS CRIME CONCERNS
+    confidence: 1
+    bbox:
+      - 0.21666667374999993
+      - 0.9178885628739002
+      - 0.7083333333333334
+      - 0.029325513196480912

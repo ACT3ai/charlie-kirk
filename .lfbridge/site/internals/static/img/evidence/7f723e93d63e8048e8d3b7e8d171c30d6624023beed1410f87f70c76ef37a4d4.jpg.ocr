@@ -1,0 +1,73 @@
+source: site/internals/static/img/evidence/7f723e93d63e8048e8d3b7e8d171c30d6624023beed1410f87f70c76ef37a4d4.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:47:22.326Z
+kind: image
+language: en-US
+text: |-
+  John Cullen f
+  ® @I_Am_JohnCullen • 34m
+  The shot fired at Charlie was at a 7 degree downward angle, according to
+  @Grok.
+  ...
+  x.com/i/grok/share/9...
+  53 feet - height differential.
+  143 yards away.
+blocks:
+  - text: John Cullen f
+    confidence: 1
+    bbox:
+      - 0.10610465447912161
+      - 0.05050505093150848
+      - 0.17441860150687305
+      - 0.08605882669860565
+  - text: ® @I_Am_JohnCullen • 34m
+    confidence: 1
+    bbox:
+      - 0.27738123475771403
+      - 0.054342067371063174
+      - 0.3347326737415942
+      - 0.11663041135813168
+  - text: The shot fired at Charlie was at a 7 degree downward angle, according to
+    confidence: 1
+    bbox:
+      - 0.10610466339650942
+      - 0.1916299572226724
+      - 0.821220919452136
+      - 0.09691629955947134
+  - text: "@Grok."
+    confidence: 1
+    bbox:
+      - 0.10755813933817265
+      - 0.3080808110107114
+      - 0.08430232760272449
+      - 0.0808080765644359
+  - text: ...
+    confidence: 1
+    bbox:
+      - 0.9331395345918937
+      - 0.0858585869909696
+      - 0.027616278732879307
+      - 0.03030302871166346
+  - text: x.com/i/grok/share/9...
+    confidence: 1
+    bbox:
+      - 0.1061046517829907
+      - 0.5353535360746061
+      - 0.26308139849312695
+      - 0.08585858450061945
+  - text: 53 feet - height differential.
+    confidence: 1
+    bbox:
+      - 0.10000000642748706
+      - 0.7533039644215475
+      - 0.3208333268950257
+      - 0.11674008810572678
+  - text: 143 yards away.
+    confidence: 1
+    bbox:
+      - 0.10610465852453554
+      - 0.8832599131673666
+      - 0.1816860343836531
+      - 0.08149779735682816

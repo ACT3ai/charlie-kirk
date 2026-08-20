@@ -1,0 +1,105 @@
+source: site/internals/static/img/evidence/7d3c42a075f5adfbb6cf8ee367f97dded2698ec4854cfb83bffb15af69f2615f.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:47:20.486Z
+kind: image
+language: en-US
+text: |-
+  GROSS
+  POLICE EVE
+  POLI
+  Police caught the suspect who shot Charlie
+  Kirk within an hour
+  pre
+  CROSS
+  NE- DO NOT CROSS PULICE
+  POLICE LINE-DO NOT CROSS
+  AINT CROSS
+  POLICE LINE -DO NOT
+  POLICE LINE-DO NOT CRU
+blocks:
+  - text: GROSS
+    confidence: 1
+    bbox:
+      - 0.005555554768518526
+      - 0.01851851856481479
+      - 0.12592592592592594
+      - 0.040740740740740744
+  - text: POLICE EVE
+    confidence: 1
+    bbox:
+      - 0.18703703849537032
+      - 0.031481481481481444
+      - 0.2333333333333333
+      - 0.03703703703703709
+  - text: POLI
+    confidence: 1
+    bbox:
+      - 0.9129629630423282
+      - 0.02777777802910053
+      - 0.08518518518518514
+      - 0.03518518518518521
+  - text: Police caught the suspect who shot Charlie
+    confidence: 1
+    bbox:
+      - 0.038888894606481435
+      - 0.05740740732638894
+      - 0.9148148148148147
+      - 0.04999999999999993
+  - text: Kirk within an hour
+    confidence: 1
+    bbox:
+      - 0.29166666525
+      - 0.09999999941666671
+      - 0.49166666666666664
+      - 0.05833333333333335
+  - text: pre
+    confidence: 1
+    bbox:
+      - 0.23703703672113288
+      - 0.6222222224727669
+      - 0.21851851851851853
+      - 0.08518518518518525
+  - text: CROSS
+    confidence: 1
+    bbox:
+      - 0.07037037008101853
+      - 0.8555555552777777
+      - 0.10185185185185185
+      - 0.04444444444444451
+  - text: NE- DO NOT CROSS PULICE
+    confidence: 1
+    bbox:
+      - 0.03987146268813938
+      - 0.912193368886025
+      - 0.36393034193250867
+      - 0.08022453166820387
+  - text: POLICE LINE-DO NOT CROSS
+    confidence: 1
+    bbox:
+      - 0.19118038921812822
+      - 0.8636254927486837
+      - 0.3856567100242332
+      - 0.09165643762659148
+  - text: AINT CROSS
+    confidence: 1
+    bbox:
+      - 0.5133251749002932
+      - 0.877612921196419
+      - 0.15265036688910594
+      - 0.052160958890561715
+  - text: POLICE LINE -DO NOT
+    confidence: 1
+    bbox:
+      - 0.6909492498690577
+      - 0.8394840621324344
+      - 0.2639125682689526
+      - 0.07097501401548034
+  - text: POLICE LINE-DO NOT CRU
+    confidence: 1
+    bbox:
+      - 0.5751923018036726
+      - 0.9168589725742268
+      - 0.35730771665219907
+      - 0.08807693057590049

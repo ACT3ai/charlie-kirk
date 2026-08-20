@@ -1,0 +1,156 @@
+source: site/internals/static/img/evidence/4a52029e51ebfe6005fda43173477f03b06e4bea7a4eea6d2e7ef00127eb4264.jpg
+status: done
+engine: gemini-flash-latest
+provider: gemini
+generated: 2026-08-20T12:47:40.726Z
+kind: image
+description: >-
+  ## Overview
+
+  This image is a vertical screenshot of a mobile application interface from the
+  flight-tracking service Flightradar24. It displays the flight history logs for
+  an aircraft registered with the tail number "SU-BND" for the year 2025
+  (uncertain context, likely an interface mock-up, test build, or futuristic
+  data set). The list enumerates specific dates and flight legs between
+  international and domestic airport codes, including Cairo (CAI), Paris Le
+  Bourget (LBG), Goose Bay (YYR), Minot (MOT), and Provo (PVU).
+
+
+  ## Hyper-Detail
+
+  The user interface features a dark grey/charcoal header bar across the top
+  spanning the full width. Within the header on the left side, the text
+  "AIRCRAFT" appears in small, uppercase white sans-serif letters, directly
+  above the larger, bold, golden-yellow text "SU-BND". On the right side of the
+  header, the logo "flightradar24" is visible in clean white font with the
+  number "24" in yellow, followed by a white "X" close icon on the far right.
+
+
+  Below the header bar is a light grey horizontal section title: "Year 2025" in
+  bold, dark grey/black text at frame-left. The remainder of the screen displays
+  a vertically scrolling list of flight entries set against alternating very
+  light grey and off-white row backgrounds, separated by thin, horizontal
+  divider lines.
+
+
+  Each flight record entry consists of:
+
+  1. **Status/Timeline indicator**: A small circular dot at the far left (some
+  in orange/yellow, others in faded pale grey/blue).
+
+  2. **Date column**: Abbreviated date (e.g., "Sep 13", "Sep 05", "Jun 10", "May
+  23", "May 22") in dark grey text.
+
+  3. **Flight/Aircraft identifier**: "SUBND" in bold black sans-serif lettering.
+
+  4. **Departure & Arrival information**:
+     - An outline icon of an airplane taking off (angled upward to the right) next to the departure city name in dark grey and its three-letter IATA code enclosed in a light-grey rounded rectangle badge with dark grey borders.
+     - Below the departure line, an outline icon of an airplane landing (angled downward to the right) next to the arrival city name and its corresponding boxed IATA code.
+  5. **Expand chevron**: A thin blue downward-pointing arrow (caret/chevron)
+  located at the far right of each entry row.
+
+
+  Listed Flight Rows (top to bottom):
+
+  - Row 1 (partially cut off at top): Orange dot, "Sep 13", "SUBND", Departure:
+  "Goose Bay" [YYR], Arrival: "Paris" [LBG], blue dropdown chevron.
+
+  - Row 2: Pale grey dot, "Sep 13", "SUBND", Departure: "Provo" [PVU], Arrival:
+  "Goose Bay" [YYR], blue dropdown chevron.
+
+  - Row 3: Pale grey dot, "Sep 05", "SUBND", Departure: "Provo" [PVU], Arrival:
+  "Provo" [PVU], blue dropdown chevron.
+
+  - Row 4: Pale grey dot, "Jun 10", "SUBND", Departure: "Provo" [PVU], Arrival:
+  "Provo" [PVU], blue dropdown chevron.
+
+  - Row 5: Pale grey dot, "May 23", "SUBND", Departure: "Minot" [MOT], Arrival:
+  "Provo" [PVU], blue dropdown chevron.
+
+  - Row 6: Pale grey dot, "May 23", "SUBND", Departure: "Goose Bay" [YYR],
+  Arrival: "Minot" [MOT], blue dropdown chevron.
+
+  - Row 7: Yellow/orange dot, "May 23", "SUBND", Departure: "Paris" [LBG],
+  Arrival: "Goose Bay" [YYR], blue dropdown chevron.
+
+  - Row 8: Pale grey dot, "May 22", "SUBND", Departure: "Cairo" [CAI], Arrival:
+  "Paris" [LBG], blue dropdown chevron.
+
+  - Row 9 (partially visible at bottom edge): Top portion of "SUBND" text cut
+  off.
+
+
+  ## Composition
+
+  - **Layout**: Strict vertical digital user interface layout.
+
+  - **Top section (~8% of frame)**: Header banner containing aircraft ID
+  ("SU-BND") and app logo ("flightradar24").
+
+  - **Body section (~92% of frame)**: Repeating list of tabular flight logs with
+  standard vertical rhythm and horizontal dividing rules.
+
+  - **Visual Balance**: Highly organized and structured tabular UI; left-aligned
+  text and airport names balanced by right-aligned boxed airport codes and
+  interactive chevrons.
+
+  - **Focus**: Pure 2D graphic rendering; 100% sharp focus across the entire
+  screen with no optical depth of field.
+
+
+  ## Location
+
+  (Indeterminate) – This is a digital software interface/screenshot, not a
+  physical photographic location. The depicted flight paths involve Egypt
+  (Cairo), France (Paris), Canada (Goose Bay, Newfoundland and Labrador), and
+  the United States (Minot, North Dakota; Provo, Utah).
+
+
+  ## Setting & Place
+
+  Digital mobile user interface screen (graphic design / software capture).
+
+
+  ## Lighting
+
+  Not applicable (flat digital UI rendering). The color scheme utilizes
+  high-contrast UI design with a dark grey top app bar (`#2B2B2B` approximate)
+  and light background (`#F4F4F4` to `#FFFFFF`).
+
+
+  ## Cinematography
+
+  Not applicable (direct flat 2D screenshot of a digital screen).
+
+
+  ## People
+
+  No people in frame.
+
+
+  ## Objects & Text
+
+  - **Logos / App Names**:
+    - `flightradar24`
+  - **Text & Identifiers**:
+    - `AIRCRAFT`
+    - `SU-BND`
+    - `Year 2025`
+    - `Sep 13`
+    - `Sep 05`
+    - `Jun 10`
+    - `May 23`
+    - `May 22`
+    - `SUBND`
+    - `Cairo CAI`
+    - `Paris LBG`
+    - `Goose Bay YYR`
+    - `Minot MOT`
+    - `Provo PVU`
+
+  ## Colors & Mood
+
+  - **Dominant Palette**: Off-white, light grey, dark slate/charcoal, accented
+  with aviation gold/yellow and subtle sky blue accents (chevrons).
+
+  - **Mood**: Utilitarian, organized, analytical, data-centric.

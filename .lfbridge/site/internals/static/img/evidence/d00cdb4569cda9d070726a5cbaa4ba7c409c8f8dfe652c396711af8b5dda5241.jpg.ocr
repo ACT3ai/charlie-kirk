@@ -1,0 +1,33 @@
+source: site/internals/static/img/evidence/d00cdb4569cda9d070726a5cbaa4ba7c409c8f8dfe652c396711af8b5dda5241.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:50:32.921Z
+kind: image
+language: en-US
+text: |-
+  EPISODE #452
+  JULIAN
+  DOREY
+blocks:
+  - text: "EPISODE #452"
+    confidence: 1
+    bbox:
+      - 0.010174418843689742
+      - 0.0177777777964353
+      - 0.16279069900512694
+      - 0.03906976699829101
+  - text: JULIAN
+    confidence: 1
+    bbox:
+      - 0.9186046531685585
+      - 0.02067183513683546
+      - 0.0712209272384643
+      - 0.02842377132839624
+  - text: DOREY
+    confidence: 1
+    bbox:
+      - 0.9215116293319703
+      - 0.0490956070982862
+      - 0.06831395149230957
+      - 0.031007751888698976

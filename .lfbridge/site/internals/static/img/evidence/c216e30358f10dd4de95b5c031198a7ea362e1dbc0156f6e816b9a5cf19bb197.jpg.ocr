@@ -1,0 +1,57 @@
+source: site/internals/static/img/evidence/c216e30358f10dd4de95b5c031198a7ea362e1dbc0156f6e816b9a5cf19bb197.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:50:14.700Z
+kind: image
+language: en-US
+text: |-
+  Kacey Welch
+  Oct 4, 2024 •
+  Night One! KWM Vegas Retreat 2024!... See more
+  Like
+  / Comment
+  Share
+blocks:
+  - text: Kacey Welch
+    confidence: 1
+    bbox:
+      - 0.03180141781347704
+      - 0.7829648931325763
+      - 0.21895245050979875
+      - 0.024186492324233422
+  - text: Oct 4, 2024 •
+    confidence: 1
+    bbox:
+      - 0.02944895061782077
+      - 0.8138335179808133
+      - 0.19908735630875923
+      - 0.02058877839937101
+  - text: Night One! KWM Vegas Retreat 2024!... See more
+    confidence: 1
+    bbox:
+      - 0.03194103141932786
+      - 0.8473473469592275
+      - 0.8255528336864406
+      - 0.023523523523523493
+  - text: Like
+    confidence: 1
+    bbox:
+      - 0.16707616732346406
+      - 0.9113372099196347
+      - 0.06879606731867385
+      - 0.01744185935508269
+  - text: / Comment
+    confidence: 1
+    bbox:
+      - 0.42630737763592097
+      - 0.908121203531173
+      - 0.18387687812417242
+      - 0.023775979921266455
+  - text: Share
+    confidence: 1
+    bbox:
+      - 0.8132678140887724
+      - 0.9098837208171727
+      - 0.09828009524587855
+      - 0.018895348748406593

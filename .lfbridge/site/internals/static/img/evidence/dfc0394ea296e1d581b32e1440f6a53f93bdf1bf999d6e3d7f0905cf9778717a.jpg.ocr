@@ -1,0 +1,25 @@
+source: site/internals/static/img/evidence/dfc0394ea296e1d581b32e1440f6a53f93bdf1bf999d6e3d7f0905cf9778717a.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:51:25.549Z
+kind: image
+language: en-US
+text: |-
+  PRIVED
+  HER CAN
+blocks:
+  - text: PRIVED
+    confidence: 0.5
+    bbox:
+      - 0.136950905245478
+      - 0.6253731342089554
+      - 0.08527131782945738
+      - 0.01492537313432829
+  - text: HER CAN
+    confidence: 1
+    bbox:
+      - 0.2891618192705149
+      - 0.5785194326895512
+      - 0.10384690237907784
+      - 0.016095463197622673

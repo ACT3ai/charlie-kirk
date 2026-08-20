@@ -1,0 +1,33 @@
+source: site/internals/static/img/evidence/7aed92d037d43f00e7013d7071c3af6309af28e9448b86b618986df0127fff4e.webp
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:47:14.064Z
+kind: image
+language: en-US
+text: |-
+  BILL
+  D.GOR
+  BUST!
+blocks:
+  - text: BILL
+    confidence: 1
+    bbox:
+      - 0.4965517242118227
+      - 0.5429864248868779
+      - 0.07241379310344831
+      - 0.06334841628959276
+  - text: D.GOR
+    confidence: 0.5
+    bbox:
+      - 0.6240688448343622
+      - 0.7418355269097172
+      - 0.09324161924164875
+      - 0.04574071012471059
+  - text: BUST!
+    confidence: 1
+    bbox:
+      - 0.6254747991496117
+      - 0.7810511657348139
+      - 0.09347480905467065
+      - 0.05828054781952596

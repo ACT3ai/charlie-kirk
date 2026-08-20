@@ -1,0 +1,73 @@
+source: site/internals/static/img/evidence/b1356f5672dd62fd6d9d48e1315f200f0bcebbdbe52ba1e81e3558a31475f234.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:49:51.877Z
+kind: image
+language: en-US
+text: |-
+  Closer Views For Clarity
+  Frame One
+  WRONG
+  PROVE MI
+  Contrast & Brightness
+  Both Boosted, But No
+  Other Enhancements
+  Made
+blocks:
+  - text: Closer Views For Clarity
+    confidence: 1
+    bbox:
+      - 0.025000002166193136
+      - 0.0222222225883838
+      - 0.48906249999999996
+      - 0.0805555555555556
+  - text: Frame One
+    confidence: 1
+    bbox:
+      - 0.26705846253813614
+      - 0.12080241825162585
+      - 0.10182057619094848
+      - 0.03339516454272806
+  - text: WRONG
+    confidence: 1
+    bbox:
+      - 0.017187500581054692
+      - 0.23333333276041668
+      - 0.2703125
+      - 0.18333333333333324
+  - text: PROVE MI
+    confidence: 1
+    bbox:
+      - 0.3283524942709164
+      - 0.16815567380015728
+      - 0.36663758754730225
+      - 0.20864603254530167
+  - text: Contrast & Brightness
+    confidence: 1
+    bbox:
+      - 0.7355446503246685
+      - 0.6562107920705996
+      - 0.19451273679733283
+      - 0.047319581773546004
+  - text: Both Boosted, But No
+    confidence: 1
+    bbox:
+      - 0.7375000007421875
+      - 0.7027777782291666
+      - 0.19062500000000004
+      - 0.036111111111111094
+  - text: Other Enhancements
+    confidence: 1
+    bbox:
+      - 0.7359374975585938
+      - 0.7444444446180556
+      - 0.1953125
+      - 0.030555555555555558
+  - text: Made
+    confidence: 1
+    bbox:
+      - 0.7358904950734768
+      - 0.7830576037378595
+      - 0.056344008445739724
+      - 0.031107015079922085

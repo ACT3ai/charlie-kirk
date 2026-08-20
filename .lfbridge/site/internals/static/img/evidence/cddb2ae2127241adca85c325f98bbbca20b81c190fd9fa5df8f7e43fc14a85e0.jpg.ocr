@@ -1,0 +1,57 @@
+source: site/internals/static/img/evidence/cddb2ae2127241adca85c325f98bbbca20b81c190fd9fa5df8f7e43fc14a85e0.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:50:31.995Z
+kind: image
+language: en-US
+text: |-
+  Raw Footage of Charlie Kirk TPUSA Shooting at Utah Valley University
+  CONS
+  ION
+  ppr
+  CONS
+  ION
+blocks:
+  - text: Raw Footage of Charlie Kirk TPUSA Shooting at Utah Valley University
+    confidence: 1
+    bbox:
+      - 0.0058139487132097805
+      - 0.012919896647221152
+      - 0.3270348878206735
+      - 0.023255814156031507
+  - text: CONS
+    confidence: 1
+    bbox:
+      - 0.8604651176565143
+      - 0.023255814875416836
+      - 0.04360464877127368
+      - 0.041343667191457545
+  - text: ION
+    confidence: 1
+    bbox:
+      - 0.9476744183351187
+      - 0.023255815069215258
+      - 0.030523256098657803
+      - 0.041343667191457545
+  - text: ppr
+    confidence: 0.5
+    bbox:
+      - 0.8997093019257966
+      - 0.857881137082191
+      - 0.02325581463677895
+      - 0.023255814156031507
+  - text: CONS
+    confidence: 1
+    bbox:
+      - 0.8837209299206322
+      - 0.8837209306039735
+      - 0.030523256098657914
+      - 0.031007751482262536
+  - text: ION
+    confidence: 1
+    bbox:
+      - 0.941860465496135
+      - 0.8863049093935033
+      - 0.021802324385636895
+      - 0.028423773099298444

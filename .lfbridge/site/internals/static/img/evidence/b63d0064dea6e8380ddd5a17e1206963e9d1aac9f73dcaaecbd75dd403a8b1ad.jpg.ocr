@@ -1,0 +1,85 @@
+source: site/internals/static/img/evidence/b63d0064dea6e8380ddd5a17e1206963e9d1aac9f73dcaaecbd75dd403a8b1ad.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:50:00.175Z
+kind: image
+language: en-US
+text: >-
+  February 27th: Sean Feucht announced as TPUSA Faith contributor
+
+  February 28th: Sean Feucht announced as heading up the "Kingdom to the
+  Capitol"
+
+  tour
+
+  February 28th: Charlie Kirk tables at UC Santa Barbara
+
+  March 1st: Charlie Kirk speaks at University of Santa Barbara on Live Free
+  tour (tweets
+
+  about tickers)
+
+  March 9th: Charlie speaks at University of Illinois, Chicago. Tweets about it.
+
+  March 14th: Charlie speaks at UC Davis
+blocks:
+  - text: "February 27th: Sean Feucht announced as TPUSA Faith contributor"
+    confidence: 1
+    bbox:
+      - 0.028571421361344645
+      - 0.02455357149553572
+      - 0.7210084033613445
+      - 0.033482142857142905
+  - text: 'February 28th: Sean Feucht announced as heading up the "Kingdom to the
+      Capitol"'
+    confidence: 1
+    bbox:
+      - 0.0285714322521008
+      - 0.1071428568080357
+      - 0.8789915966386556
+      - 0.033482142857142905
+  - text: tour
+    confidence: 1
+    bbox:
+      - 0.026890755938375362
+      - 0.14955357118675594
+      - 0.04705882352941175
+      - 0.029017857142857206
+  - text: "February 28th: Charlie Kirk tables at UC Santa Barbara"
+    confidence: 1
+    bbox:
+      - 0.028524215327083737
+      - 0.6560617735479308
+      - 0.5866548426011029
+      - 0.036313929728099326
+  - text: "March 1st: Charlie Kirk speaks at University of Santa Barbara on Live
+      Free tour (tweets"
+    confidence: 1
+    bbox:
+      - 0.033333343430015934
+      - 0.7343750010382426
+      - 0.9083332991399686
+      - 0.0502232142857143
+  - text: about tickers)
+    confidence: 1
+    bbox:
+      - 0.028571430033613412
+      - 0.7812499999107143
+      - 0.14621848739495796
+      - 0.03125
+  - text: "March 9th: Charlie speaks at University of Illinois, Chicago. Tweets
+      about it."
+    confidence: 1
+    bbox:
+      - 0.020833323333333584
+      - 0.8560267853569411
+      - 0.8
+      - 0.0502232142857143
+  - text: "March 14th: Charlie speaks at UC Davis"
+    confidence: 1
+    bbox:
+      - 0.030252105109243643
+      - 0.9464285713392858
+      - 0.426890756302521
+      - 0.03125

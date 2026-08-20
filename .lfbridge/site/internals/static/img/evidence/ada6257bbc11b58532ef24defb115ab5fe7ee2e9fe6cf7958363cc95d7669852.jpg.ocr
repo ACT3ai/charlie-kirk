@@ -1,0 +1,49 @@
+source: site/internals/static/img/evidence/ada6257bbc11b58532ef24defb115ab5fe7ee2e9fe6cf7958363cc95d7669852.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:49:46.203Z
+kind: image
+language: en-US
+text: |-
+  Brett
+  VanKacy
+  Kid
+  L
+  Blak
+blocks:
+  - text: Brett
+    confidence: 1
+    bbox:
+      - 0.38094082872014795
+      - 0.10316429794560245
+      - 0.2940505464198226
+      - 0.16294364209445011
+  - text: VanKacy
+    confidence: 0.5
+    bbox:
+      - -0.0006004451468195442
+      - 0.23370268859475118
+      - 0.4961161467988613
+      - 0.225316996201672
+  - text: Kid
+    confidence: 1
+    bbox:
+      - 2.941176402238575e-10
+      - 0.48247978390677027
+      - 0.19491525423728812
+      - 0.15633423180592987
+  - text: L
+    confidence: 1
+    bbox:
+      - 0.23559322025423726
+      - 0.6873315361571043
+      - 0.015254237288135603
+      - 0.03234501347708896
+  - text: Blak
+    confidence: 1
+    bbox:
+      - 0.7406779662953996
+      - 0.2452830194358876
+      - 0.25762711864406773
+      - 0.15902964959568733

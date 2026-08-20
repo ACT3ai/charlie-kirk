@@ -1,0 +1,33 @@
+source: site/internals/static/img/evidence/b6f64dbb04979cdcb4254735b90a85b5ef1a4b5e029b7f156fdff3a783fd47ae.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:50:00.275Z
+kind: image
+language: en-US
+text: |-
+  HER-CA
+  COMEBAEL
+  VE ME WRONG / PROVE ME WRON
+blocks:
+  - text: HER-CA
+    confidence: 1
+    bbox:
+      - 0.5958333344494048
+      - 0.4791666663690477
+      - 0.15625
+      - 0.06666666666666665
+  - text: COMEBAEL
+    confidence: 1
+    bbox:
+      - 0.5830532609449477
+      - 0.48879233894817775
+      - 0.22908198038736982
+      - 0.13476777076721191
+  - text: VE ME WRONG / PROVE ME WRON
+    confidence: 1
+    bbox:
+      - 0.4578724314100427
+      - 0.6393436588691684
+      - 0.541989262898763
+      - 0.1700036843617757

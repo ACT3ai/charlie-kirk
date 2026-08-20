@@ -1,0 +1,57 @@
+source: site/internals/static/img/evidence/ae15de89421bb1b6f23eadca03413c50ea5f3e5cdc46896152499ceadb944063.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:49:46.952Z
+kind: image
+language: en-US
+text: |-
+  1984 @TheOfficial1984 • 7h
+  * This is the @adl colluding with Israeli intelligence, and X, to track,
+  target, flag and violate your RIGHT TO FREE SPEECH.
+  Au10tix closes the loop: OHI detects, Cheq validates, Au1Otix
+  identifies-turning algorithmic flags into real-world
+  traceability.
+blocks:
+  - text: 1984 @TheOfficial1984 • 7h
+    confidence: 1
+    bbox:
+      - 0.10335195764165998
+      - 0.13138686094890517
+      - 0.3268156424581005
+      - 0.06569343065693423
+  - text: "* This is the @adl colluding with Israeli intelligence, and X, to track,"
+    confidence: 1
+    bbox:
+      - 0.10884399573267506
+      - 0.2187367797730636
+      - 0.7962864710631983
+      - 0.08971093518890605
+  - text: target, flag and violate your RIGHT TO FREE SPEECH.
+    confidence: 1
+    bbox:
+      - 0.10335195081005595
+      - 0.3138686139416058
+      - 0.611731843575419
+      - 0.08029197080291972
+  - text: "Au10tix closes the loop: OHI detects, Cheq validates, Au1Otix"
+    confidence: 1
+    bbox:
+      - 0.1424581071927373
+      - 0.525547444890511
+      - 0.7960893854748603
+      - 0.08759124087591241
+  - text: identifies-turning algorithmic flags into real-world
+    confidence: 1
+    bbox:
+      - 0.13966481003258838
+      - 0.6569343061435523
+      - 0.6675977653631285
+      - 0.08029197080291972
+  - text: traceability.
+    confidence: 1
+    bbox:
+      - 0.1396648025139665
+      - 0.7883211681569343
+      - 0.1564245810055866
+      - 0.08029197080291972

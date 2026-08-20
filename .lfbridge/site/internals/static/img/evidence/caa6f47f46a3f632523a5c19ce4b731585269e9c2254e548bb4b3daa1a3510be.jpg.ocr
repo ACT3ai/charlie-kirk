@@ -1,0 +1,41 @@
+source: site/internals/static/img/evidence/caa6f47f46a3f632523a5c19ce4b731585269e9c2254e548bb4b3daa1a3510be.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:50:25.621Z
+kind: image
+language: en-US
+text: |-
+  Tik Tok
+  @ joshisdyin
+  CON:
+  'ON
+blocks:
+  - text: Tik Tok
+    confidence: 1
+    bbox:
+      - 0.2528528104586406
+      - 0.23219303075120057
+      - 0.06551530838012692
+      - 0.031737968656751825
+  - text: "@ joshisdyin"
+    confidence: 1
+    bbox:
+      - 0.2543604664843774
+      - 0.2633333338630355
+      - 0.08866278648376463
+      - 0.031240309609307126
+  - text: "CON:"
+    confidence: 1
+    bbox:
+      - 0.9098837211799659
+      - 0.899224806084322
+      - 0.0232558131217957
+      - 0.02325581444634328
+  - text: "'ON"
+    confidence: 1
+    bbox:
+      - 0.9622093025717788
+      - 0.899224806084322
+      - 0.015988371372222865
+      - 0.02325581444634328

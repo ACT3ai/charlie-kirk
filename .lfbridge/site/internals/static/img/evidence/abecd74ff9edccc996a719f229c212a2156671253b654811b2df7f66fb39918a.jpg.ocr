@@ -1,0 +1,57 @@
+source: site/internals/static/img/evidence/abecd74ff9edccc996a719f229c212a2156671253b654811b2df7f66fb39918a.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:49:41.698Z
+kind: image
+language: en-US
+text: |-
+  CONS
+  FCT
+  ION
+  SPA
+  but the one day unit is gonna be up there to
+  interview
+blocks:
+  - text: CONS
+    confidence: 1
+    bbox:
+      - 0.883720931273126
+      - 0.12919896627787275
+      - 0.03197674274444573
+      - 0.031007751888698976
+  - text: FCT
+    confidence: 0.3
+    bbox:
+      - 0.9273255820049937
+      - 0.0981912149602635
+      - 0.023255813121795588
+      - 0.028423771328396352
+  - text: ION
+    confidence: 1
+    bbox:
+      - 0.9447674420437534
+      - 0.12919896653627072
+      - 0.023255813121795588
+      - 0.031007751888698976
+  - text: SPA
+    confidence: 1
+    bbox:
+      - 0.7470930235307587
+      - 0.4547803610583898
+      - 0.07267441749572756
+      - 0.0568475468953451
+  - text: but the one day unit is gonna be up there to
+    confidence: 1
+    bbox:
+      - 0.1250000244981868
+      - 0.7183462540228442
+      - 0.7369185638427734
+      - 0.06720930099487299
+  - text: interview
+    confidence: 1
+    bbox:
+      - 0.4229114659287086
+      - 0.7824694023686408
+      - 0.15127009391784668
+      - 0.05521623399522568

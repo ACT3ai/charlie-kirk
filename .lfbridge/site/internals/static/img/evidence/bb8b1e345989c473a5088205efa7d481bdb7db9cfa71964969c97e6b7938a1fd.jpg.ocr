@@ -1,0 +1,57 @@
+source: site/internals/static/img/evidence/bb8b1e345989c473a5088205efa7d481bdb7db9cfa71964969c97e6b7938a1fd.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:50:05.324Z
+kind: image
+language: en-US
+text: |-
+  er's Cave
+  @MJTruthUltra
+  Te Hawere a Maki
+  / Goat Island
+  3D
+  300 m
+blocks:
+  - text: er's Cave
+    confidence: 1
+    bbox:
+      - -0.00005613272233558038
+      - 0.2964403533386417
+      - 0.14539528612820607
+      - 0.028785959879557232
+  - text: "@MJTruthUltra"
+    confidence: 0.5
+    bbox:
+      - 0.06603773718867924
+      - 0.4783333333166666
+      - 0.13396226415094337
+      - 0.021666666666666723
+  - text: Te Hawere a Maki
+    confidence: 1
+    bbox:
+      - 0.3056603783018868
+      - 0.46666666645833343
+      - 0.30943396226415093
+      - 0.033333333333333215
+  - text: / Goat Island
+    confidence: 1
+    bbox:
+      - 0.33957564368392323
+      - 0.5122746335263002
+      - 0.2548109810307341
+      - 0.04211740175882983
+  - text: 3D
+    confidence: 1
+    bbox:
+      - 0.8735849059150943
+      - 0.8483333332583334
+      - 0.05094339622641508
+      - 0.02833333333333332
+  - text: 300 m
+    confidence: 1
+    bbox:
+      - 0.6830188670943396
+      - 0.87499999975
+      - 0.09433962264150952
+      - 0.025000000000000022

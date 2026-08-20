@@ -1,0 +1,41 @@
+source: site/internals/static/img/evidence/c92da2db1b3d00e15a42f1138505966a0b833d1573987a938f7ab1e4d7e0cb33.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:50:24.806Z
+kind: image
+language: en-US
+text: |-
+  PUN
+  AMERICAN
+  COMEBACK
+  nAVE ME WRONG / PROVE ME KRU
+blocks:
+  - text: PUN
+    confidence: 0.5
+    bbox:
+      - 0.7470930238291086
+      - 3.15808268425144e-10
+      - 0.0465116262435914
+      - 0.04844961166381845
+  - text: AMERICAN
+    confidence: 0.5
+    bbox:
+      - 0.38314288435318405
+      - 0.4263640899282697
+      - 0.2962142372131347
+      - 0.07504959742228179
+  - text: COMEBACK
+    confidence: 1
+    bbox:
+      - 0.4112407311200538
+      - 0.48765098805198714
+      - 0.30687900543212904
+      - 0.07508562088012694
+  - text: nAVE ME WRONG / PROVE ME KRU
+    confidence: 1
+    bbox:
+      - 0.1554250193843611
+      - 0.5781057036780712
+      - 0.7848200988769531
+      - 0.15716385523478194

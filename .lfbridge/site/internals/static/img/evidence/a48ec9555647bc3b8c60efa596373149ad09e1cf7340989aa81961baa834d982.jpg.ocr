@@ -1,0 +1,41 @@
+source: site/internals/static/img/evidence/a48ec9555647bc3b8c60efa596373149ad09e1cf7340989aa81961baa834d982.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:49:03.515Z
+kind: image
+language: en-US
+text: |-
+  TPUSA COM/WEARECHARLIEKIRK
+  TURNINC
+  A POINT USA
+  TET FREEDOM TO 71776 FOR WAYS TO TAKE AC
+blocks:
+  - text: TPUSA COM/WEARECHARLIEKIRK
+    confidence: 1
+    bbox:
+      - 3.764940168391957e-9
+      - 0.9628252786988847
+      - 0.37649402390438247
+      - 0.03345724907063197
+  - text: TURNINC
+    confidence: 1
+    bbox:
+      - 0.850597608690239
+      - 0.8364312271375465
+      - 0.08565737051792832
+      - 0.029739776951672847
+  - text: A POINT USA
+    confidence: 1
+    bbox:
+      - 0.8246596945042776
+      - 0.8583021196877614
+      - 0.12159694808412835
+      - 0.04176007238905666
+  - text: TET FREEDOM TO 71776 FOR WAYS TO TAKE AC
+    confidence: 1
+    bbox:
+      - 0.4625000026138673
+      - 0.953488372310754
+      - 0.5333333414389319
+      - 0.03907668280335608

@@ -1,0 +1,41 @@
+source: site/internals/static/img/evidence/e09b3b410a4f4d7688205f1d9f4c51a87f56bfa46abbb3a13b015313c408c619.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:51:25.406Z
+kind: image
+language: en-US
+text: |-
+  EPO
+  FORNY
+  REEDaN
+  FREEUS
+blocks:
+  - text: EPO
+    confidence: 0.5
+    bbox:
+      - 0.5674198845060631
+      - 0.8239733270889038
+      - 0.05767606452659324
+      - 0.0360487408108181
+  - text: FORNY
+    confidence: 0.3
+    bbox:
+      - 0.6388888887843488
+      - 0.6962962962365591
+      - 0.07592592592592595
+      - 0.03703703703703709
+  - text: REEDaN
+    confidence: 0.5
+    bbox:
+      - 0.6509578496303546
+      - 0.8247764998034378
+      - 0.12432951750578702
+      - 0.07279694168655959
+  - text: FREEUS
+    confidence: 0.5
+    bbox:
+      - 0.9015176139212983
+      - 0.8622113825066973
+      - 0.09700632448549618
+      - 0.01579584368952991

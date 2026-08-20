@@ -1,0 +1,105 @@
+source: site/internals/static/img/evidence/a7fe050aeb1a1d634178688eb0348dfe45992ce0a8bce321a52acb4f7414b475.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:49:11.832Z
+kind: image
+language: en-US
+text: |-
+  • Timpanogos Regional Hospital
+  Search term
+  + Compare
+  Israel
+  Past 12 months y
+  All categories
+  Web Search y
+  Interest over time
+  Hmm, your search doesn't have
+  enough data to show here.
+  Please make sure everything is spelled correctly, or
+  try a more general term.
+blocks:
+  - text: • Timpanogos Regional Hospital
+    confidence: 1
+    bbox:
+      - 0.015570937608131394
+      - 0.0813953485828488
+      - 0.2681660899653979
+      - 0.03197674418604657
+  - text: Search term
+    confidence: 1
+    bbox:
+      - 0.05017301159169545
+      - 0.1191860465116279
+      - 0.0726643598615917
+      - 0.01744186046511631
+  - text: + Compare
+    confidence: 1
+    bbox:
+      - 0.5241851893536489
+      - 0.09558311271942932
+      - 0.10733896143296184
+      - 0.03267098582068151
+  - text: Israel
+    confidence: 1
+    bbox:
+      - 0.04498269959630909
+      - 0.2529069765503875
+      - 0.038062283737024215
+      - 0.01744186046511631
+  - text: Past 12 months y
+    confidence: 1
+    bbox:
+      - 0.1591695514705882
+      - 0.2529069765988372
+      - 0.1038062283737024
+      - 0.01744186046511631
+  - text: All categories
+    confidence: 1
+    bbox:
+      - 0.32179930792964245
+      - 0.2529069771317829
+      - 0.09861591695501731
+      - 0.023255813260411262
+  - text: Web Search y
+    confidence: 1
+    bbox:
+      - 0.4740484443771626
+      - 0.24999999985465116
+      - 0.08823529411764713
+      - 0.02034883720930236
+  - text: Interest over time
+    confidence: 1
+    bbox:
+      - 0.024221455406574343
+      - 0.42441860450581403
+      - 0.16955017301038064
+      - 0.029069767441860517
+  - text: Hmm, your search doesn't have
+    confidence: 1
+    bbox:
+      - 0.3771626337946942
+      - 0.7529069765503876
+      - 0.2422145328719723
+      - 0.029069767441860517
+  - text: enough data to show here.
+    confidence: 1
+    bbox:
+      - 0.389273366547919
+      - 0.7906976744670543
+      - 0.2128027549664454
+      - 0.026162790697674354
+  - text: Please make sure everything is spelled correctly, or
+    confidence: 1
+    bbox:
+      - 0.3615917000865051
+      - 0.8372093021802325
+      - 0.2750865051903114
+      - 0.02034883720930225
+  - text: try a more general term.
+    confidence: 1
+    bbox:
+      - 0.4307958499711649
+      - 0.8662790696705427
+      - 0.13321799307958476
+      - 0.01744186046511631

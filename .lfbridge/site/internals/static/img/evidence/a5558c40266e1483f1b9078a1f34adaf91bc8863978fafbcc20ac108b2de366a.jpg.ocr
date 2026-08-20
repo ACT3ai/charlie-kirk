@@ -1,0 +1,57 @@
+source: site/internals/static/img/evidence/a5558c40266e1483f1b9078a1f34adaf91bc8863978fafbcc20ac108b2de366a.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:49:05.124Z
+kind: image
+language: en-US
+text: |-
+  T00%
+  10 11 18:23
+  HUYE TE WRỦ
+  • 1
+  Postez votre réponse
+  ihl 124
+blocks:
+  - text: T00%
+    confidence: 0.3
+    bbox:
+      - 0.04693140744584837
+      - 0.008333333499999984
+      - 0.1877256317689531
+      - 0.026666666666666727
+  - text: 10 11 18:23
+    confidence: 0.5
+    bbox:
+      - 0.6570397076263539
+      - 0.008333333437499979
+      - 0.28519855595667853
+      - 0.018333333333333313
+  - text: HUYE TE WRỦ
+    confidence: 1
+    bbox:
+      - -0.027401576461932788
+      - 0.04454602076727654
+      - 1.039966128793434
+      - 0.1732503255208333
+  - text: • 1
+    confidence: 1
+    bbox:
+      - 0.054151625270758105
+      - 0.8983333332833333
+      - 0.07220216606498196
+      - 0.018333333333333313
+  - text: Postez votre réponse
+    confidence: 1
+    bbox:
+      - 0.03249097595667865
+      - 0.9599999997833334
+      - 0.4043321299638989
+      - 0.021666666666666612
+  - text: ihl 124
+    confidence: 1
+    bbox:
+      - 0.6244541874924129
+      - 0.898205563840811
+      - 0.11571256176228994
+      - 0.018588871955871666

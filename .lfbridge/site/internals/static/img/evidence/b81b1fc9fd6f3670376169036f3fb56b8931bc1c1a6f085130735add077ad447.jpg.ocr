@@ -1,0 +1,41 @@
+source: site/internals/static/img/evidence/b81b1fc9fd6f3670376169036f3fb56b8931bc1c1a6f085130735add077ad447.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:50:03.314Z
+kind: image
+language: en-US
+text: |-
+  Raw video from a video
+  of employee of the
+  munitions plant
+  explosion
+blocks:
+  - text: Raw video from a video
+    confidence: 1
+    bbox:
+      - 0.15503876080813275
+      - 0.510174418109397
+      - 0.6925064652054398
+      - 0.02628391484419501
+  - text: of employee of the
+    confidence: 1
+    bbox:
+      - 0.21447028279424724
+      - 0.5463541666085813
+      - 0.5684754548249422
+      - 0.02922722895940144
+  - text: munitions plant
+    confidence: 1
+    bbox:
+      - 0.26098192198253967
+      - 0.5796874997503605
+      - 0.47545216878255214
+      - 0.02932412823041286
+  - text: explosion
+    confidence: 1
+    bbox:
+      - 0.3410852682920419
+      - 0.6148255815153506
+      - 0.2842377274124711
+      - 0.029069767395655255

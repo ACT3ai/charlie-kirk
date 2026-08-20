@@ -1,0 +1,97 @@
+source: site/internals/static/img/evidence/85d7bb911b3799e5264c4dbb77c545bc3c2a6191f4cf3382aa3e13b24c671849.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:47:32.760Z
+kind: image
+language: en-US
+text: |-
+  24001 is NOT real
+  24001
+  a00 0
+  This is a rendering of a FUTURE ME-11B aircraft
+  A rendering of a fully equipped HADES
+  based on the Global 6500
+  airframe. Bombardier
+  Global 6500 BD-700-1A10
+  N1098L
+  N1098L
+  This is a REAL plane
+blocks:
+  - text: 24001 is NOT real
+    confidence: 1
+    bbox:
+      - 0.017441860517667385
+      - 0.020348837415624432
+      - 0.38372093439102173
+      - 0.037790697067976
+  - text: "24001"
+    confidence: 1
+    bbox:
+      - 0.16860465173773465
+      - 0.12354651086931168
+      - 0.06104651093482971
+      - 0.03343023359775543
+  - text: a00 0
+    confidence: 1
+    bbox:
+      - 0.37808309786874383
+      - 0.1312572243183192
+      - 0.07323245704174042
+      - 0.03591174632310867
+  - text: This is a rendering of a FUTURE ME-11B aircraft
+    confidence: 1
+    bbox:
+      - 0.09302325475613693
+      - 0.28759765550696703
+      - 0.8125
+      - 0.0380859375
+  - text: A rendering of a fully equipped HADES
+    confidence: 1
+    bbox:
+      - 0.08720931491532435
+      - 0.39098837224458316
+      - 0.6918604373931885
+      - 0.04505813866853714
+  - text: based on the Global 6500
+    confidence: 1
+    bbox:
+      - 0.08866280201872534
+      - 0.45348837300211253
+      - 0.4622092843055725
+      - 0.03488371893763542
+  - text: airframe. Bombardier
+    confidence: 1
+    bbox:
+      - 0.08866278904989194
+      - 0.515988372585198
+      - 0.38081395626068115
+      - 0.037790697067976
+  - text: Global 6500 BD-700-1A10
+    confidence: 1
+    bbox:
+      - 0.40697674358403657
+      - 0.6438953488717574
+      - 0.5566860437393188
+      - 0.039244186133146286
+  - text: N1098L
+    confidence: 0.5
+    bbox:
+      - 0.2805232551725088
+      - 0.7281976748601946
+      - 0.047965116798877716
+      - 0.014534883201122284
+  - text: N1098L
+    confidence: 1
+    bbox:
+      - 0.058094665396401096
+      - 0.8355482523428744
+      - 0.1672409027814865
+      - 0.036752332001924515
+  - text: This is a REAL plane
+    confidence: 1
+    bbox:
+      - 0.5083333409691849
+      - 0.9291666657941376
+      - 0.42916664481163025
+      - 0.05000000074505806

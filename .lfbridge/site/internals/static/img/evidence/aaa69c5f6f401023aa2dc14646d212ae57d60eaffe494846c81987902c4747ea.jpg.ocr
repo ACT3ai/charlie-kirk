@@ -1,0 +1,33 @@
+source: site/internals/static/img/evidence/aaa69c5f6f401023aa2dc14646d212ae57d60eaffe494846c81987902c4747ea.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:49:40.546Z
+kind: image
+language: en-US
+text: |-
+  JAMES
+  SSG's Greg Shaffer &
+  Brian Harpole
+blocks:
+  - text: JAMES
+    confidence: 1
+    bbox:
+      - 0.8400000005614034
+      - 0.7098901096703297
+      - 0.0463157894736842
+      - 0.013186813186813251
+  - text: SSG's Greg Shaffer &
+    confidence: 1
+    bbox:
+      - 0.1536842126130031
+      - 0.8021978021266968
+      - 0.7094736842105263
+      - 0.098901098901099
+  - text: Brian Harpole
+    confidence: 1
+    bbox:
+      - 0.2799999983391813
+      - 0.9142857139194139
+      - 0.44210526315789467
+      - 0.06593406593406592

@@ -1,0 +1,57 @@
+source: site/internals/static/img/evidence/be8f842f220822bde278861ce4195bfd602eb7dc166a48dd128e6a88b8b842bd.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:50:10.416Z
+kind: image
+language: en-US
+text: |-
+  ARMSTRONG
+  WILLIAMS
+  SHOWE
+  WILLIANS
+  OLENCE IN AMERICA
+  IGWALLANS.COM
+blocks:
+  - text: ARMSTRONG
+    confidence: 1
+    bbox:
+      - 0.48882635806109126
+      - 0.5839739886262347
+      - 0.2369490556114225
+      - 0.03554039466671832
+  - text: WILLIAMS
+    confidence: 1
+    bbox:
+      - 0.4867256605764297
+      - 0.6162790699959049
+      - 0.2345132792306212
+      - 0.045058138777570034
+  - text: SHOWE
+    confidence: 1
+    bbox:
+      - 0.6194690251706021
+      - 0.6569767442144797
+      - 0.06194690434906114
+      - 0.017441860059412506
+  - text: WILLIANS
+    confidence: 0.5
+    bbox:
+      - 0.2654867271478426
+      - 0.7005813953985638
+      - 0.11725663252479529
+      - 0.020348837317490043
+  - text: OLENCE IN AMERICA
+    confidence: 1
+    bbox:
+      - 0.4048235196929665
+      - 0.7236965035081291
+      - 0.21690163027398202
+      - 0.029351178611197182
+  - text: IGWALLANS.COM
+    confidence: 0.5
+    bbox:
+      - 0.5243362848493285
+      - 0.7616279070054958
+      - 0.09292035297833412
+      - 0.008720930029706198

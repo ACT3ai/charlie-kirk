@@ -1,0 +1,41 @@
+source: site/internals/static/img/evidence/a1124ab8e32dce2e6f7a1c2665c5934eabc51e4d7f8b78ccc4afa265e103e1c1.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:48:53.631Z
+kind: image
+language: en-US
+text: |-
+  ppreFe
+  CON:
+  'ON
+  CANDACE
+blocks:
+  - text: ppreFe
+    confidence: 0.3
+    bbox:
+      - 0.8895348851340182
+      - 0.10077519399559165
+      - 0.046511626243591286
+      - 0.025839792887369706
+  - text: "CON:"
+    confidence: 1
+    bbox:
+      - 0.8808139533746586
+      - 0.13178294626409648
+      - 0.026162791252136275
+      - 0.02842377132839624
+  - text: "'ON"
+    confidence: 0.5
+    bbox:
+      - 0.934593023376133
+      - 0.13178294629962617
+      - 0.02034883737564097
+      - 0.02842377132839624
+  - text: CANDACE
+    confidence: 0.5
+    bbox:
+      - 0.810991438561868
+      - 0.8315884149475967
+      - 0.14691246986389161
+      - 0.05775340186225042

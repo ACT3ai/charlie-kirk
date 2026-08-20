@@ -1,0 +1,25 @@
+source: site/internals/static/img/evidence/c14624f85059b0fed9023377a9152e41d71cd56b45a45a500d585253a0c95ee2.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:50:12.677Z
+kind: image
+language: en-US
+text: |-
+  BRB
+  Be Right Back!
+blocks:
+  - text: BRB
+    confidence: 0.5
+    bbox:
+      - 0.41279069712294797
+      - 0.4005167982545931
+      - 0.18750000000000006
+      - 0.1731266106499566
+  - text: Be Right Back!
+    confidence: 1
+    bbox:
+      - 0.44672405711650326
+      - 0.5313059029510456
+      - 0.14361582756042485
+      - 0.09113496144612632

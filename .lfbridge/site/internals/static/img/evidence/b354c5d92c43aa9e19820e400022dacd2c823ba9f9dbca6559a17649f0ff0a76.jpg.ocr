@@ -1,0 +1,49 @@
+source: site/internals/static/img/evidence/b354c5d92c43aa9e19820e400022dacd2c823ba9f9dbca6559a17649f0ff0a76.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:49:57.306Z
+kind: image
+language: en-US
+text: |-
+  SOURCE: @PHIL_LYMAN
+  AP
+  PROVE
+  PROVE
+  1776
+blocks:
+  - text: "SOURCE: @PHIL_LYMAN"
+    confidence: 1
+    bbox:
+      - 0.04505814084233416
+      - 0.06145833375309695
+      - 0.18313952921649457
+      - 0.029674671093622873
+  - text: AP
+    confidence: 1
+    bbox:
+      - 0.8401162777342382
+      - 0.0443349761354942
+      - 0.1395348869904839
+      - 0.12068965435028078
+  - text: PROVE
+    confidence: 0.5
+    bbox:
+      - 0.6337209294878442
+      - 0.3842364538254066
+      - 0.06976744349524189
+      - 0.05418719053268428
+  - text: PROVE
+    confidence: 1
+    bbox:
+      - 0.8866279056744072
+      - 0.3497536955953917
+      - 0.11191860639492468
+      - 0.07389162381490066
+  - text: "1776"
+    confidence: 1
+    bbox:
+      - 0.7020348845382391
+      - 0.5738916252649454
+      - 0.052325579106661246
+      - 0.04679803053538001

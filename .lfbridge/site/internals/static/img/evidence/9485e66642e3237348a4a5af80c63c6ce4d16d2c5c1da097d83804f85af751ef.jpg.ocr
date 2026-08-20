@@ -1,0 +1,83 @@
+source: site/internals/static/img/evidence/9485e66642e3237348a4a5af80c63c6ce4d16d2c5c1da097d83804f85af751ef.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:47:57.058Z
+kind: image
+language: en-US
+text: >-
+  • 200% - Normaltext - Arial - - 12+
+
+  (ne tweets apour it)
+
+  April 14th: BTT From Cairo to Paris to Wichita, KS
+
+  April 20th: BTT departs Wichita, KS. Departs on April 21st from Wilmington to
+  Giza
+
+  April 23rd: Sean Feucht heads the TPUSA Faith "KINGDOM TO THE CAPITOL" tour
+
+  event in Topeka Kansas***
+
+  May 3rd: BND does a test flight
+
+  May 9th: BND departs MO back to Cairo via Goosebay and Paris
+blocks:
+  - text: • 200% - Normaltext - Arial - - 12+
+    confidence: 1
+    bbox:
+      - 5.1580696955289974e-9
+      - 0.1405750796592119
+      - 0.30948419301164726
+      - 0.025559105431309903
+  - text: (ne tweets apour it)
+    confidence: 1
+    bbox:
+      - 0.029950085274542376
+      - 0.194888178913738
+      - 0.2079866888519135
+      - 0.051118210862619806
+  - text: "April 14th: BTT From Cairo to Paris to Wichita, KS"
+    confidence: 1
+    bbox:
+      - 0.03660566102329448
+      - 0.3162939301384451
+      - 0.5274542429284527
+      - 0.051118210862619806
+  - text: "April 20th: BTT departs Wichita, KS. Departs on April 21st from
+      Wilmington to Giza"
+    confidence: 1
+    bbox:
+      - 0.036605654450915105
+      - 0.43130990372736955
+      - 0.8602329450915142
+      - 0.051118210862619806
+  - text: 'April 23rd: Sean Feucht heads the TPUSA Faith "KINGDOM TO THE CAPITOL"
+      tour'
+    confidence: 1
+    bbox:
+      - 0.036497752149492364
+      - 0.5416588909215696
+      - 0.8903966005550644
+      - 0.06298322951831758
+  - text: event in Topeka Kansas***
+    confidence: 1
+    bbox:
+      - 0.03622309846083951
+      - 0.6038408655581435
+      - 0.2771062612930273
+      - 0.06068188237686889
+  - text: "May 3rd: BND does a test flight"
+    confidence: 1
+    bbox:
+      - 0.03826955354409312
+      - 0.7284345052715655
+      - 0.32945091514143093
+      - 0.04792332268370603
+  - text: "May 9th: BND departs MO back to Cairo via Goosebay and Paris"
+    confidence: 1
+    bbox:
+      - 0.03826955495008312
+      - 0.8466453672923323
+      - 0.6722129783693844
+      - 0.04472843450479225

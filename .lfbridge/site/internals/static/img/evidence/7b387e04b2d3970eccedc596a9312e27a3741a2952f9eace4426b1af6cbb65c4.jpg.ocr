@@ -1,0 +1,49 @@
+source: site/internals/static/img/evidence/7b387e04b2d3970eccedc596a9312e27a3741a2952f9eace4426b1af6cbb65c4.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:47:14.236Z
+kind: image
+language: en-US
+text: |-
+  FOX 13
+  UVU ARREST
+  Video shows man being arrested on
+  UVU campus today after entering
+  shooting scene and fleeing police
+blocks:
+  - text: FOX 13
+    confidence: 1
+    bbox:
+      - 0.7669902914644013
+      - 0.04065040670731712
+      - 0.18446601941747576
+      - 0.04878048780487798
+  - text: UVU ARREST
+    confidence: 1
+    bbox:
+      - 0.15533980349514565
+      - 0.7317073180487804
+      - 0.6601941747572816
+      - 0.09756097560975618
+  - text: Video shows man being arrested on
+    confidence: 1
+    bbox:
+      - 0.0776698943365699
+      - 0.8211382104336045
+      - 0.8446601941747572
+      - 0.05691056910569103
+  - text: UVU campus today after entering
+    confidence: 1
+    bbox:
+      - 0.10679610667475749
+      - 0.86991869949187
+      - 0.7864077669902912
+      - 0.05691056910569103
+  - text: shooting scene and fleeing police
+    confidence: 1
+    bbox:
+      - 0.10679612944983774
+      - 0.9268292677506774
+      - 0.7766990291262136
+      - 0.04878048780487809

@@ -1,0 +1,169 @@
+source: site/internals/static/img/evidence/5cfa61171c57ae41382c3e6dab8f3403772498b7ca123e1d5e9808c36dd4608b.jpg
+status: done
+engine: gemini-flash-latest
+provider: gemini
+generated: 2026-08-20T12:50:01.258Z
+kind: image
+description: >-
+  ## Overview
+
+  This image is a full-screen computer screenshot of an open project in the
+  open-source digital audio workstation (DAW) Audacity, running on macOS. The
+  interface displays a stereo waveform track titled "Adam Bartholomew crackthump
+  Audio offset" with prominent transient spikes and clipping indicators. Above
+  the track are the standard Audacity transport, editing, and audio level meter
+  toolbars, and below are the timeline position, tempo, and selection controls.
+
+
+  ## Hyper-Detail
+
+  The user interface is set in a light theme. 
+
+
+  At the very top of the window is the macOS title bar showing the standard
+  traffic-light window controls (red close, yellow minimize, green maximize
+  buttons at the top left) and the document title centered: "Adam Bartholomew
+  crackthump Audio offset".
+
+
+  Below the title bar sits the main Audacity control toolbar:
+
+  - **Left transport controls**: Gray rounded buttons with black icons for Pause
+  (`||`), Play (green triangle `▶`), Stop (black square `■`), Skip to Start
+  (`|◀`), Skip to End (`▶|`), and Record (red circle `●`).
+
+  - **Tool buttons**: Selection tool (`I`), Envelope tool (`/ \`), Draw tool
+  (pencil), Zoom tool (magnifying glass), and Time Shift / Multi-Tool icons.
+
+  - **Audio Setup & Sharing**: "Audio Setup" with a speaker icon and dropdown
+  arrow, and "Share Audio" with an upload icon.
+
+  - **Recording & Playback Meters**: Horizontal decibel meters labeled `L` and
+  `R` spanning values from `-54` dB to `0` dB.
+
+  - **Settings/Gear icon**: Positioned at the far upper right.
+
+
+  Beneath the toolbars is the horizontal timeline ruler measuring seconds, with
+  tick marks labeled `0.00`, `0.05`, `0.10`, `0.15`, `0.20`, `0.25`, `0.30`, and
+  `0.35` across the screen width.
+
+
+  The main track panel consists of:
+
+  - **Track Control Panel (Left column)**: Displays a close button `X`, track
+  name `Adam Bartholo...`, dropdown arrow, `Mute` and `Solo` toggle buttons, an
+  `Effects` button, and horizontal slider bars for Gain (`-` / `+`, labeled `L`
+  and `R`) and Pan.
+
+  - **Waveform Display (Main area)**: A stereo track (Left on top, Right on
+  bottom) set against a pale grayish-blue background (`#eef0f8`). The waveform
+  lines are rendered in a medium periwinkle blue (`#6a7fc8`).
+    - Vertical amplitude scale ranges symmetrically from `1.0` at the top, through `0.0` at the center horizontal line, down to `-1.0` at the bottom for each channel.
+    - From `0.00` to approximately `0.07` seconds, the audio signal shows low-level background noise with subtle oscillations.
+    - Starting abruptly around `0.075` seconds, a massive transient peak appears, hitting near full-scale amplitude (`-1.0` to `+1.0`).
+    - Additional sharp transient peaks occur prominently near `0.11` s, `0.18` s, and a double peak near `0.21`–`0.22` s, followed by sustained, dense, high-amplitude acoustic energy filling out the rest of the visible timeline past `0.35` s.
+
+  At the bottom of the window:
+
+  - Status bar on the left indicating "Stopped." and hover tooltip text: "Click
+  and drag to move left selection boundary."
+
+  - Project properties: `Tempo` set to `120`, `Time Signature` set to `4 / 4`,
+  with a checkbox for `Snap` (checked) set to `1/8`.
+
+  - Large digital readout clock displaying time in hours, minutes, seconds: `00
+  h 00 m 00 s` with a dropdown arrow.
+
+  - Selection length indicator showing start/end/length: `Selection` `00 h 00 m
+  00.444 s` across two rows.
+
+
+  ## Composition
+
+  This is a digital screen capture. The composition is strictly UI-grid based:
+
+  - **Top 12%**: Title bar, playback controls, editing tools, and level meters.
+
+  - **Central 80%**: Waveform timeline and track controls spanning the full
+  width from left to right.
+
+  - **Bottom 8%**: Timecode readout, project tempo, and selection settings bar.
+
+  - **Balance & Symmetry**: Highly horizontal layout. The stereo audio channels
+  split the main viewport into two vertically mirrored horizontal halves (top
+  channel and bottom channel).
+
+  - **Focus**: Pure digital rendering; every vector, line, and pixel of text is
+  in sharp 2D focus with zero depth of field.
+
+
+  ## Location
+
+  (indeterminate) – This is a software screen capture of a computer operating
+  system. The interface language is English, and the operating system is Apple
+  macOS.
+
+
+  ## Setting & Place
+
+  INSIDE / Virtual environment: A graphical user interface (GUI) of the digital
+  audio editor Audacity running on macOS.
+
+
+  ## Lighting
+
+  Not applicable (flat digital display graphics with standard UI interface
+  backlighting).
+
+
+  ## Cinematography
+
+  Direct digital screen capture / UI render. No camera, lens, or optical
+  elements were used.
+
+
+  ## People
+
+  No people in frame.
+
+
+  ## Objects & Text
+
+  **Identified Software & OS**:
+
+  - Audacity (Audio Editing Software)
+
+  - macOS (Apple operating system window decoration)
+
+
+  **Legible Text**:
+
+  - Title bar & Track name: "Adam Bartholomew crackthump Audio offset"
+
+  - Track panel buttons: "Mute", "Solo", "Effects", "L", "R", "-", "+"
+
+  - Toolbars: "Audio Setup", "Share Audio"
+
+  - Timeline numbers: `0.00`, `0.05`, `0.10`, `0.15`, `0.20`, `0.25`, `0.30`,
+  `0.35`
+
+  - Meter scale: `-54 -48 -42 -36 -30 -24 -18 -12 -6 0`
+
+  - Track amplitude values: `1.0`, `0.9`, `0.8`, `0.7`, `0.6`, `0.5`, `0.4`,
+  `0.3`, `0.2`, `0.1`, `0.0`, `-0.1`, `-0.2`, `-0.3`, `-0.4`, `-0.5`, `-0.6`,
+  `-0.7`, `-0.8`, `-0.9`, `-1.0`
+
+  - Bottom bar text: "Stopped.", "Click and drag to move left selection
+  boundary.", "Tempo", "120", "Time Signature", "4 / 4", "Snap", "1/8",
+  "Selection", "00 h 00 m 00 s", "00 h 00 m 00.444 s".
+
+
+  ## Colors & Mood
+
+  - **Color Palette**: Dominant light gray (`#D9D9D9` to `#ECECEC`), soft
+  periwinkle/slate blue (`#6a7fc8`) for the waveform, light lavender-blue track
+  background, with small accents of green (play button), red (record button),
+  and dark gray/black text and UI lines.
+
+  - **Mood**: Utilitarian, analytical, technical, digital.

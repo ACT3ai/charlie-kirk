@@ -1,0 +1,49 @@
+source: site/internals/static/img/evidence/8ed200224b8a73a44e66f691c1b1c3f9010853e396117257e319ba8d5a5ac404.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:47:47.512Z
+kind: image
+language: en-US
+text: |-
+  The
+  Megyn
+  Kelly
+  Show
+  SiriusXM
+blocks:
+  - text: The
+    confidence: 1
+    bbox:
+      - 0.15920397987147597
+      - 0.803124999609375
+      - 0.03150912106135986
+      - 0.03125
+  - text: Megyn
+    confidence: 1
+    bbox:
+      - 0.14891058937521814
+      - 0.8292814164039047
+      - 0.07862990017158675
+      - 0.053937166929244995
+  - text: Kelly
+    confidence: 1
+    bbox:
+      - 0.13101160902629708
+      - 0.8687500004241071
+      - 0.06633499170812604
+      - 0.05937500000000007
+  - text: Show
+    confidence: 1
+    bbox:
+      - 0.12924851996746053
+      - 0.9119955211180824
+      - 0.06322767090046189
+      - 0.047883957624435425
+  - text: SiriusXM
+    confidence: 0.5
+    bbox:
+      - 0.7876451156357538
+      - 0.861645505231403
+      - 0.1610281771886013
+      - 0.05795899033546448

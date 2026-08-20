@@ -1,0 +1,48 @@
+source: site/internals/static/img/evidence/c79196e66c1f7e455d9484fb1355bfb06a984396140c25d125d3950dfcd3cbf8.png
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:50:22.558Z
+kind: image
+language: en-US
+text: >-
+  N888KG - N888KG LLC (LEHI UT)
+
+  This aircraft (N888KG) is not available for public tracking per request from
+  the owner/operator.
+
+  That's my airplane! How do I track my airplane on FlightAware?
+
+  FlightAware can provide aircraft owner/operators with secure access to their
+  own flight data. Contact FlightAware for help.
+blocks:
+  - text: N888KG - N888KG LLC (LEHI UT)
+    confidence: 1
+    bbox:
+      - 0.35350318835589156
+      - 0.22047244045275594
+      - 0.2914012738853503
+      - 0.08661417322834641
+  - text: This aircraft (N888KG) is not available for public tracking per request
+      from the owner/operator.
+    confidence: 1
+    bbox:
+      - 0.20541402263800393
+      - 0.39370078753280835
+      - 0.5939490445859873
+      - 0.07086614173228345
+  - text: That's my airplane! How do I track my airplane on FlightAware?
+    confidence: 1
+    bbox:
+      - 0.3439490434447983
+      - 0.5118110244494901
+      - 0.3168789808917198
+      - 0.06299212410694033
+  - text: FlightAware can provide aircraft owner/operators with secure access to
+      their own flight data. Contact FlightAware for help.
+    confidence: 1
+    bbox:
+      - 0.19745223690286604
+      - 0.653543306988189
+      - 0.60828025477707
+      - 0.055118110236220486

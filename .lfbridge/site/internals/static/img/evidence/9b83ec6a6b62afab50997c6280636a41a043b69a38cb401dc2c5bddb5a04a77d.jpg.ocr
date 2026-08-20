@@ -1,0 +1,25 @@
+source: site/internals/static/img/evidence/9b83ec6a6b62afab50997c6280636a41a043b69a38cb401dc2c5bddb5a04a77d.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:48:13.795Z
+kind: image
+language: en-US
+text: |-
+  I think they just found the guy right outside of
+  carry-on.
+blocks:
+  - text: I think they just found the guy right outside of
+    confidence: 1
+    bbox:
+      - 0.020044540997327425
+      - 0.8820960701593933
+      - 0.9777283021553077
+      - 0.03505509180793598
+  - text: carry-on.
+    confidence: 1
+    bbox:
+      - 0.4118401451059519
+      - 0.9209327501857937
+      - 0.19859142718802347
+      - 0.028774034508451063

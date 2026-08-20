@@ -1,0 +1,81 @@
+source: site/internals/static/img/evidence/86836ec03a58be019f72a8e872133b9a75ba4e22b3793150864d8eccae08ee71.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:47:32.657Z
+kind: image
+language: en-US
+text: |-
+  Garbage Human
+  @GarbageHuman24 • 4h
+  He was dead within 48 hours of saying this btw
+  "Jewish donors play into all
+  the stereotypes. I cannot and
+  will not be bullied like this.
+  Leaving me no choice but to
+  leave the pro Israel cause."
+  -Charlie Kirk
+blocks:
+  - text: Garbage Human
+    confidence: 1
+    bbox:
+      - 0.12328766958904111
+      - 0.03260869521059784
+      - 0.24109589041095889
+      - 0.03532608695652173
+  - text: "@GarbageHuman24 • 4h"
+    confidence: 1
+    bbox:
+      - 0.4136986292054795
+      - 0.035326087282608665
+      - 0.3506849315068493
+      - 0.03260869565217395
+  - text: He was dead within 48 hours of saying this btw
+    confidence: 1
+    bbox:
+      - 0.12300789392665798
+      - 0.07176509329724423
+      - 0.6663080502862799
+      - 0.04168467806733167
+  - text: '"Jewish donors play into all'
+    confidence: 1
+    bbox:
+      - 0.15275384965492753
+      - 0.5158785262072219
+      - 0.6093981599154538
+      - 0.0610589670098346
+  - text: the stereotypes. I cannot and
+    confidence: 1
+    bbox:
+      - 0.12876712415525116
+      - 0.5869565213315219
+      - 0.6575342465753424
+      - 0.048913043478260865
+  - text: will not be bullied like this.
+    confidence: 1
+    bbox:
+      - 0.16164384061643827
+      - 0.6467391305480072
+      - 0.6000000000000001
+      - 0.05163043478260876
+  - text: Leaving me no choice but to
+    confidence: 1
+    bbox:
+      - 0.14246574815068502
+      - 0.7119565218523551
+      - 0.6328767123287671
+      - 0.05163043478260865
+  - text: leave the pro Israel cause."
+    confidence: 1
+    bbox:
+      - 0.1508385379201255
+      - 0.7704825859251732
+      - 0.6102712134792381
+      - 0.061643082162608276
+  - text: -Charlie Kirk
+    confidence: 1
+    bbox:
+      - 0.3095890424885845
+      - 0.9021739126811594
+      - 0.2931506849315068
+      - 0.04347826086956519

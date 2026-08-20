@@ -1,0 +1,33 @@
+source: site/internals/static/img/evidence/b46e267597902bf52e94956ff797d045e6fb76854cfe82c927f997948192cd87.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:49:56.965Z
+kind: image
+language: en-US
+text: |-
+  ALL STOOD UP TO DEMOCRATS
+  JEREMEN
+  ALL WERE SHOT
+blocks:
+  - text: ALL STOOD UP TO DEMOCRATS
+    confidence: 1
+    bbox:
+      - -6.262480146411974e-11
+      - 0.24166666625411826
+      - 0.9907407284817313
+      - 0.0416666679084301
+  - text: JEREMEN
+    confidence: 1
+    bbox:
+      - 0.1935483889130308
+      - 0.473837209312293
+      - 0.09999999669006751
+      - 0.01308139506727457
+  - text: ALL WERE SHOT
+    confidence: 1
+    bbox:
+      - 0.01612902529750206
+      - 0.672851561591679
+      - 0.9806451694049959
+      - 0.07861328125

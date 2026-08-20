@@ -1,0 +1,65 @@
+source: site/internals/static/img/evidence/a87bd52698c41e7b879484d67668b79ed47992d38020a40fa7b51a90d66b4179.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:49:39.413Z
+kind: image
+language: en-US
+text: |-
+  FINNERTY
+  NEWSMAX2
+  4:51 CT
+  FINNERTY
+  DIGGING DEEPER INTO THE CHARLIE KIRK ASSASSINATION
+  LIVE NON'T REOPEN HORMUZ AS LONG AS A US BLOCKADE REMAINS
+  IRAN: WE WON'T REOPE!
+blocks:
+  - text: FINNERTY
+    confidence: 1
+    bbox:
+      - 0.06535195673081866
+      - 0.06377053519956632
+      - 0.06551701785953902
+      - 0.02412988044120179
+  - text: NEWSMAX2
+    confidence: 1
+    bbox:
+      - 0.04796511902063362
+      - 0.8406169666461973
+      - 0.14970929871382
+      - 0.04370179906621707
+  - text: 4:51 CT
+    confidence: 1
+    bbox:
+      - 0.053754209851979276
+      - 0.9278314948612517
+      - 0.06836367502770654
+      - 0.028655776032456393
+  - text: FINNERTY
+    confidence: 1
+    bbox:
+      - 0.21220930540712032
+      - 0.7583547556003107
+      - 0.13953487988343374
+      - 0.04113110550889021
+  - text: DIGGING DEEPER INTO THE CHARLIE KIRK ASSASSINATION
+    confidence: 1
+    bbox:
+      - 0.21511627691892982
+      - 0.8299549560143624
+      - 0.71220929871382
+      - 0.057432432432432456
+  - text: LIVE NON'T REOPEN HORMUZ AS LONG AS A US BLOCKADE REMAINS
+    confidence: 1
+    bbox:
+      - 0.14680233392596853
+      - 0.925449871796034
+      - 0.5697674156751948
+      - 0.03341902268899455
+  - text: "IRAN: WE WON'T REOPE!"
+    confidence: 1
+    bbox:
+      - 0.7529069761825716
+      - 0.9254498712953487
+      - 0.203488376607725
+      - 0.030848329131667684

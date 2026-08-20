@@ -1,0 +1,745 @@
+source: site/internals/static/img/evidence/e07e4196d3bd6d56f1add5c4245f4ae8d34d8a578f20f449af578e027e70040b.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:51:25.769Z
+kind: image
+language: en-US
+text: |-
+  Subarachnoid hemorrhage - cerebellar vermis
+  ME Report, Id. at 3-4
+  Subarachnoid hemorrhage - parietal regions
+  ME Report, Id. at 3-4
+  53 Hz cavity-mode dominant peak (30-60 Hz
+  band)
+  UCCU Audio, 11 cameras
+  +14.1 dB cavity-to-structural energy ratio
+  IMG_6368 (10.1m)
+  Low energy above 500 Hz (no Cooper Injury
+  Range signal)
+  UCCU Audio
+  104 microsecond rise time (4.9x faster than
+  PETN)
+  Canon XA55 (Video 15)
+  Cooper acoustic coupling effect (foam on thorax
+  amplifies injury)
+  Cooper et al. 1991, J Biomech
+  Courtney thoracic-to-brain TBI mechanism
+  Courtney & Courtney 2009, Med Hypotheses
+  .. BAN
+  2/5
+  Requires retrograde vertebral artery flow - projectile
+  is above posterior fossa; needs vertebral artery
+  disruption + retrograde hemorrhage
+  1/5
+  Difficult to explain - parietal lobes supplied by carotid
+  system (MCA), not vertebrobasilar; requires CSF
+  spread from distant source
+  3/5
+  Possible if bullet enters thorax - could excite
+  Helmholtz mode, but less violent pressure discontinuity
+  Inan explosive decompression
+  2/5
+  Unusually high for ballistic event - 25:1 energy ratio
+  favoring cavity mode is extreme for a decelerating
+  projectile
+  3/5
+  Consistent - rifle produces no high-frequency stress
+  waves; absence of 1-3 kHz energy is expected for
+  ballistic event
+  1/5
+  Cannot explain - no ballistic mechanism produces a
+  rise time faster than PETN detonation
+  0/5
+  Not applicable - no surface detonation on chest;
+  acoustic coupling mechanism does not apply to
+  ballistic events
+  2/5
+  Possible but weaker driver — bullet entering thorax
+  creates pressure transient, but much lower magnitude
+  -than exolosive event
+  9 4/5
+  Courtney thoracic vascular surge mechanism —
+  thoracic pressure event creates vascular surge to brain
+  (validated experimentally, 2009/2014)
+  4/5
+  Courtney thoracic vascular surge - systemic vascular
+  surge affects entire cerebral vasculature including
+  MCA/parietal territory
+  • 5/5
+  Direct Helmholtz prediction — jet transition from tissue
+  to air inside lung = explosive decompression at FRC
+  volume (-3 L)
+  5/5
+  Predicted by internal excitation - jet + detonation
+  deposits energy directly inside cavity; cavity-mode
+  dominance expected
+  3/5
+  Consistent — micro-charge may not generate
+  detectable 1-3 kHz at distance; foam coupling may
+  filter high frequencies
+  2/3
+  Consistent with high-VOD explosive -
+  detonation with shock-focused geometry can exceed
+  PETN rise time
+  5/5
+  Direct match - battery/device padding on chest
+  functions as Cooper's foam coupler, amplifying stress
+  wave transmission
+  5/5
+  High-magnitude thoracic pressure event - detonation
+  + jet = large thoracic pressure transient; predicts
+  widespread cerebrovascular injury
+  SC +2
+  SC +3
+  SC + 2
+  SC +3
+  EQUAL
+  sc
+  SC +5
+  SC +3
+blocks:
+  - text: Subarachnoid hemorrhage - cerebellar vermis
+    confidence: 1
+    bbox:
+      - 0.07326733177173972
+      - 0.10901162809429465
+      - 0.2772277196248372
+      - 0.008725374845918843
+  - text: ME Report, Id. at 3-4
+    confidence: 1
+    bbox:
+      - 0.07128713119154663
+      - 0.12487257891785608
+      - 0.11881187227037217
+      - 0.007645259938837912
+  - text: Subarachnoid hemorrhage - parietal regions
+    confidence: 1
+    bbox:
+      - 0.07326732535275653
+      - 0.17732558161011158
+      - 0.26930692460801864
+      - 0.010238128821541181
+  - text: ME Report, Id. at 3-4
+    confidence: 1
+    bbox:
+      - 0.07128713515194257
+      - 0.19317023464033922
+      - 0.11881187227037218
+      - 0.00886464872369952
+  - text: 53 Hz cavity-mode dominant peak (30-60 Hz
+    confidence: 1
+    bbox:
+      - 0.07326733626883547
+      - 0.2761627910093365
+      - 0.2574257320827908
+      - 0.010279614626449884
+  - text: band)
+    confidence: 1
+    bbox:
+      - 0.07326732630024306
+      - 0.2892441862366657
+      - 0.035643564330206975
+      - 0.007267441589168699
+  - text: UCCU Audio, 11 cameras
+    confidence: 1
+    bbox:
+      - 0.0712871303911374
+      - 0.30377166135828393
+      - 0.12277226977878147
+      - 0.008728338430173399
+  - text: +14.1 dB cavity-to-structural energy ratio
+    confidence: 1
+    bbox:
+      - 0.0732673323810675
+      - 0.345930232383729
+      - 0.2396039538913303
+      - 0.010338880964740005
+  - text: IMG_6368 (10.1m)
+    confidence: 1
+    bbox:
+      - 0.07326732758833375
+      - 0.3618756371171006
+      - 0.0891089121500651
+      - 0.007310409186204847
+  - text: Low energy above 500 Hz (no Cooper Injury
+    confidence: 1
+    bbox:
+      - 0.07326732965467792
+      - 0.41569767497251475
+      - 0.25544554392496743
+      - 0.010398145844812356
+  - text: Range signal)
+    confidence: 1
+    bbox:
+      - 0.0732673261651853
+      - 0.42711518873932053
+      - 0.08316831588745119
+      - 0.01038481141692138
+  - text: UCCU Audio
+    confidence: 1
+    bbox:
+      - 0.07128713193240692
+      - 0.44331395355134573
+      - 0.05940593613518609
+      - 0.0072674415891689215
+  - text: 104 microsecond rise time (4.9x faster than
+    confidence: 1
+    bbox:
+      - 0.07326733524746266
+      - 0.48521916426357936
+      - 0.25346533457438153
+      - 0.00917431192660556
+  - text: PETN)
+    confidence: 0.5
+    bbox:
+      - 0.07326732792999201
+      - 0.497093023809724
+      - 0.039603959189520935
+      - 0.010174417835978389
+  - text: Canon XA55 (Video 15)
+    confidence: 1
+    bbox:
+      - 0.07326732820775193
+      - 0.513081395411811
+      - 0.11683168411254884
+      - 0.007305964538931953
+  - text: Cooper acoustic coupling effect (foam on thorax
+    confidence: 1
+    bbox:
+      - 0.07326733040194426
+      - 0.5828488370530602
+      - 0.2851485146416558
+      - 0.010423334123648376
+  - text: amplifies injury)
+    confidence: 1
+    bbox:
+      - 0.07326732937151449
+      - 0.594291539098702
+      - 0.09702969657050238
+      - 0.010359623138085472
+  - text: Cooper et al. 1991, J Biomech
+    confidence: 1
+    bbox:
+      - 0.07326732716551262
+      - 0.6119186048413167
+      - 0.15841583675808377
+      - 0.007347450100804509
+  - text: Courtney thoracic-to-brain TBI mechanism
+    confidence: 1
+    bbox:
+      - 0.07326733197323894
+      - 0.6523955149568498
+      - 0.25148514641655817
+      - 0.010395182260558022
+  - text: Courtney & Courtney 2009, Med Hypotheses
+    confidence: 1
+    bbox:
+      - 0.07326732965014429
+      - 0.6686046515681318
+      - 0.2178217781914605
+      - 0.008765379101736692
+  - text: .. BAN
+    confidence: 0.3
+    bbox:
+      - 0.3821782186774426
+      - 0.09302325592537686
+      - 0.08910891215006511
+      - 0.007384491258440318
+  - text: 2/5
+    confidence: 1
+    bbox:
+      - 0.5029702975254381
+      - 0.10755813974320627
+      - 0.023762374454074364
+      - 0.0072674415891688104
+  - text: Requires retrograde vertebral artery flow - projectile
+    confidence: 1
+    bbox:
+      - 0.38217822210873165
+      - 0.12209302331878769
+      - 0.22574257320827906
+      - 0.0073667116972041535
+  - text: is above posterior fossa; needs vertebral artery
+    confidence: 1
+    bbox:
+      - 0.3801980203983626
+      - 0.13226744211480546
+      - 0.1999999788072374
+      - 0.005856920819763745
+  - text: disruption + retrograde hemorrhage
+    confidence: 1
+    bbox:
+      - 0.38019802341563136
+      - 0.14098837249836438
+      - 0.1524752404954699
+      - 0.008858722527335772
+  - text: 1/5
+    confidence: 1
+    bbox:
+      - 0.5029702976244479
+      - 0.17732558158550282
+      - 0.023762374454074475
+      - 0.0072674415891688104
+  - text: Difficult to explain - parietal lobes supplied by carotid
+    confidence: 1
+    bbox:
+      - 0.3821782169518869
+      - 0.1916411826461314
+      - 0.22970297071668833
+      - 0.00917431192660556
+  - text: system (MCA), not vertebrobasilar; requires CSF
+    confidence: 1
+    bbox:
+      - 0.3801980197658145
+      - 0.20058139570572875
+      - 0.20990098317464195
+      - 0.00889872678315351
+  - text: spread from distant source
+    confidence: 1
+    bbox:
+      - 0.3801980212770588
+      - 0.21075581401646215
+      - 0.1168316841125488
+      - 0.00738893614874947
+  - text: 3/5
+    confidence: 1
+    bbox:
+      - 0.5029702975254381
+      - 0.274709302533904
+      - 0.023762374454074364
+      - 0.007267441589168699
+  - text: Possible if bullet enters thorax - could excite
+    confidence: 1
+    bbox:
+      - 0.3801980229674515
+      - 0.2889908258059639
+      - 0.1940593931410048
+      - 0.007645259938837912
+  - text: Helmholtz mode, but less violent pressure discontinuity
+    confidence: 1
+    bbox:
+      - 0.380198014963359
+      - 0.2991845055209421
+      - 0.23366336822509765
+      - 0.007645259938837912
+  - text: Inan explosive decompression
+    confidence: 1
+    bbox:
+      - 0.3801980192070253
+      - 0.3109072374303872
+      - 0.12871286604139537
+      - 0.004587155963302725
+  - text: 2/5
+    confidence: 1
+    bbox:
+      - 0.5029702975254381
+      - 0.34447674439436904
+      - 0.023762374454074364
+      - 0.0072674415891689215
+  - text: Unusually high for ballistic event - 25:1 energy ratio
+    confidence: 1
+    bbox:
+      - 0.38019802226257265
+      - 0.35881753313269327
+      - 0.22376236385769316
+      - 0.008915024795298931
+  - text: favoring cavity mode is extreme for a decelerating
+    confidence: 1
+    bbox:
+      - 0.3801980252030287
+      - 0.3674821610125014
+      - 0.21386138068305127
+      - 0.00917431192660545
+  - text: projectile
+    confidence: 1
+    bbox:
+      - 0.38015403376535206
+      - 0.379222435544869
+      - 0.04167212910122342
+      - 0.007543501139416264
+  - text: 3/5
+    confidence: 1
+    bbox:
+      - 0.5029702975254381
+      - 0.4142441862548343
+      - 0.023762374454074364
+      - 0.007267441589168699
+  - text: Consistent - rifle produces no high-frequency stress
+    confidence: 1
+    bbox:
+      - 0.38217822210873165
+      - 0.42864424074847673
+      - 0.22574257320827906
+      - 0.008855758943081327
+  - text: waves; absence of 1-3 kHz energy is expected for
+    confidence: 1
+    bbox:
+      - 0.3801980220017087
+      - 0.4373088686161726
+      - 0.21386138068305127
+      - 0.008912061211044486
+  - text: ballistic event
+    confidence: 1
+    bbox:
+      - 0.38019802243154227
+      - 0.44750254854068594
+      - 0.06138613488939071
+      - 0.007645259938837912
+  - text: 1/5
+    confidence: 1
+    bbox:
+      - 0.5029702976244479
+      - 0.4840116280971307
+      - 0.023762374454074475
+      - 0.0072674415891689215
+  - text: Cannot explain - no ballistic mechanism produces a
+    confidence: 1
+    bbox:
+      - 0.38217822210873165
+      - 0.49847094806955417
+      - 0.22574257320827906
+      - 0.007343005210495357
+  - text: rise time faster than PETN detonation
+    confidence: 1
+    bbox:
+      - 0.38019801930239716
+      - 0.5071355761334804
+      - 0.16237623426649306
+      - 0.008852795844899508
+  - text: 0/5
+    confidence: 1
+    bbox:
+      - 0.5029702976244479
+      - 0.5828488373994563
+      - 0.023762374454074475
+      - 0.0072674415891688104
+  - text: Not applicable - no surface detonation on chest;
+    confidence: 1
+    bbox:
+      - 0.38019802064040187
+      - 0.5958205914530619
+      - 0.2099009831746419
+      - 0.008830571150317934
+  - text: acoustic coupling mechanism does not apply to
+    confidence: 1
+    bbox:
+      - 0.3801980272577219
+      - 0.6060142710226913
+      - 0.20198018815782337
+      - 0.008811310039990805
+  - text: ballistic events
+    confidence: 1
+    bbox:
+      - 0.3801980201129812
+      - 0.616207950983542
+      - 0.06534653239780003
+      - 0.007338560563222574
+  - text: 2/5
+    confidence: 1
+    bbox:
+      - 0.5029702976739528
+      - 0.651162790848655
+      - 0.023762374454074475
+      - 0.008720929712573544
+  - text: Possible but weaker driver — bullet entering thorax
+    confidence: 1
+    bbox:
+      - 0.3801980212012994
+      - 0.665647298561768
+      - 0.21782177819146054
+      - 0.01022479390757769
+  - text: creates pressure transient, but much lower magnitude
+    confidence: 1
+    bbox:
+      - 0.38019802838452615
+      - 0.6758409786110298
+      - 0.23168315887451169
+      - 0.007298556064368578
+  - text: -than exolosive event
+    confidence: 1
+    bbox:
+      - 0.38019801907348233
+      - 0.6875000000024221
+      - 0.08910891215006506
+      - 0.003121814475025464
+  - text: 9 4/5
+    confidence: 1
+    bbox:
+      - 0.7445544559042035
+      - 0.10601427102269134
+      - 0.03564356433020699
+      - 0.008811310039990805
+  - text: Courtney thoracic vascular surge mechanism —
+    confidence: 1
+    bbox:
+      - 0.6336633690015707
+      - 0.12209302331878769
+      - 0.20396039750840922
+      - 0.0073667116972041535
+  - text: thoracic pressure event creates vascular surge to brain
+    confidence: 1
+    bbox:
+      - 0.6336633683131937
+      - 0.13081395367568993
+      - 0.2336633682250977
+      - 0.008839461417008643
+  - text: (validated experimentally, 2009/2014)
+    confidence: 1
+    bbox:
+      - 0.6336633691002914
+      - 0.1409883724620271
+      - 0.16039603551228843
+      - 0.008858722527335883
+  - text: 4/5
+    confidence: 1
+    bbox:
+      - 0.7564356432215924
+      - 0.1773255815640309
+      - 0.02376237710316975
+      - 0.007267441589168699
+  - text: Courtney thoracic vascular surge - systemic vascular
+    confidence: 1
+    bbox:
+      - 0.6336633749191797
+      - 0.1916411825468003
+      - 0.23168315887451174
+      - 0.007645259938837912
+  - text: surge affects entire cerebral vasculature including
+    confidence: 1
+    bbox:
+      - 0.6336633750463421
+      - 0.2018348624531452
+      - 0.2099009831746419
+      - 0.006116207951070374
+  - text: MCA/parietal territory
+    confidence: 1
+    bbox:
+      - 0.6336633661361093
+      - 0.21075581403463062
+      - 0.09306930965847438
+      - 0.007388936148749581
+  - text: • 5/5
+    confidence: 1
+    bbox:
+      - 0.7425742588665003
+      - 0.27470930240672375
+      - 0.037623760435316234
+      - 0.007267441589168699
+  - text: Direct Helmholtz prediction — jet transition from tissue
+    confidence: 1
+    bbox:
+      - 0.6336633749191797
+      - 0.288990825809184
+      - 0.23168315887451174
+      - 0.00917431192660545
+  - text: to air inside lung = explosive decompression at FRC
+    confidence: 1
+    bbox:
+      - 0.6316831732196685
+      - 0.29918450571796074
+      - 0.2237623638576931
+      - 0.00917431192660545
+  - text: volume (-3 L)
+    confidence: 1
+    bbox:
+      - 0.6336633691559647
+      - 0.3081395352890621
+      - 0.06138613488939082
+      - 0.008883910320099164
+  - text: 5/5
+    confidence: 1
+    bbox:
+      - 0.7564356430325735
+      - 0.3444767442914136
+      - 0.023762377103169863
+      - 0.0072674415891689215
+  - text: Predicted by internal excitation - jet + detonation
+    confidence: 1
+    bbox:
+      - 0.6336633667819405
+      - 0.35881753301156927
+      - 0.21188119252522797
+      - 0.008915024795298931
+  - text: deposits energy directly inside cavity; cavity-mode
+    confidence: 1
+    bbox:
+      - 0.6336633726287714
+      - 0.369011213088276
+      - 0.21386138068305116
+      - 0.007645259938837912
+  - text: dominance expected
+    confidence: 1
+    bbox:
+      - 0.6336633642013305
+      - 0.3792048929304346
+      - 0.09108911090426974
+      - 0.007645259938837912
+  - text: 3/5
+    confidence: 1
+    bbox:
+      - 0.7564356447531608
+      - 0.414244186127654
+      - 0.023762374454074475
+      - 0.007267441589168699
+  - text: Consistent — micro-charge may not generate
+    confidence: 1
+    bbox:
+      - 0.6336633751621709
+      - 0.4286442407242519
+      - 0.19405939314100484
+      - 0.008855758943081438
+  - text: detectable 1-3 kHz at distance; foam coupling may
+    confidence: 1
+    bbox:
+      - 0.633663376693424
+      - 0.43883792057609083
+      - 0.21584156884087458
+      - 0.007383009466313206
+  - text: filter high frequencies
+    confidence: 1
+    bbox:
+      - 0.6336633661361093
+      - 0.4475025484038253
+      - 0.09306930965847438
+      - 0.008892800100717357
+  - text: 2/3
+    confidence: 1
+    bbox:
+      - 0.7940594073744927
+      - 0.46802325552327195
+      - 0.0673267311520046
+      - 0.02034883761624684
+  - text: Consistent with high-VOD explosive -
+    confidence: 1
+    bbox:
+      - 0.6336633713899349
+      - 0.49847094806955417
+      - 0.1584158367580838
+      - 0.007343005210495357
+  - text: detonation with shock-focused geometry can exceed
+    confidence: 1
+    bbox:
+      - 0.6336633706235831
+      - 0.5071355758912323
+      - 0.22574257320827906
+      - 0.008852795844899508
+  - text: PETN rise time
+    confidence: 1
+    bbox:
+      - 0.6336633679388491
+      - 0.517329255767296
+      - 0.0673267311520046
+      - 0.007380046368131388
+  - text: 5/5
+    confidence: 1
+    bbox:
+      - 0.7564356447036558
+      - 0.5828488374357935
+      - 0.023762374454074364
+      - 0.0072674415891688104
+  - text: Direct match - battery/device padding on chest
+    confidence: 1
+    bbox:
+      - 0.6336633681517359
+      - 0.595820591307713
+      - 0.20396039750840933
+      - 0.008830571150317934
+  - text: functions as Cooper's foam coupler, amplifying stress
+    confidence: 1
+    bbox:
+      - 0.633663374638731
+      - 0.6060142710226913
+      - 0.22772276136610237
+      - 0.008811310039990805
+  - text: wave transmission
+    confidence: 1
+    bbox:
+      - 0.6336633681908024
+      - 0.6162079511175668
+      - 0.08118811713324658
+      - 0.007338560320186316
+  - text: 5/5
+    confidence: 1
+    bbox:
+      - 0.754455446143385
+      - 0.651162790848655
+      - 0.025742573208279107
+      - 0.008720929712573544
+  - text: High-magnitude thoracic pressure event - detonation
+    confidence: 1
+    bbox:
+      - 0.6316831691766058
+      - 0.6656472986554471
+      - 0.23168315887451163
+      - 0.008771305784172956
+  - text: + jet = large thoracic pressure transient; predicts
+    confidence: 1
+    bbox:
+      - 0.6336633703352005
+      - 0.6758409784673247
+      - 0.20594058566623263
+      - 0.008752044673845827
+  - text: widespread cerebrovascular injury
+    confidence: 1
+    bbox:
+      - 0.6336633671200349
+      - 0.6845056067145039
+      - 0.14653465482923722
+      - 0.00880834645573636
+  - text: SC +2
+    confidence: 1
+    bbox:
+      - 0.8910434669896472
+      - 0.11034641359420194
+      - 0.04167544311947291
+      - 0.008958335316509247
+  - text: SC +3
+    confidence: 1
+    bbox:
+      - 0.8910434669896472
+      - 0.18011385545466707
+      - 0.04167544311947291
+      - 0.008958335316509247
+  - text: SC + 2
+    confidence: 1
+    bbox:
+      - 0.891023887614288
+      - 0.2788632129377848
+      - 0.04171460204654265
+      - 0.007680550749270321
+  - text: SC +3
+    confidence: 1
+    bbox:
+      - 0.8910891092410086
+      - 0.34862385326308987
+      - 0.04158415794372561
+      - 0.007645259938837912
+  - text: EQUAL
+    confidence: 1
+    bbox:
+      - 0.8910891096667509
+      - 0.4186046513501085
+      - 0.04158415794372561
+      - 0.008720929712573655
+  - text: sc
+    confidence: 1
+    bbox:
+      - 0.8910891089504516
+      - 0.4869186047658063
+      - 0.01782178216510344
+      - 0.008720929712573544
+  - text: SC +5
+    confidence: 1
+    bbox:
+      - 0.8910891096667509
+      - 0.5856269111066621
+      - 0.04158415794372561
+      - 0.00884983274671769
+  - text: SC +3
+    confidence: 1
+    bbox:
+      - 0.8910891096667509
+      - 0.6554536188193447
+      - 0.04158415794372561
+      - 0.008790566894500196

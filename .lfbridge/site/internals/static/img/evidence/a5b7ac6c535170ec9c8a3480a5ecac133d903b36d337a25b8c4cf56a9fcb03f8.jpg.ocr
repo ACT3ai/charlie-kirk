@@ -1,0 +1,49 @@
+source: site/internals/static/img/evidence/a5b7ac6c535170ec9c8a3480a5ecac133d903b36d337a25b8c4cf56a9fcb03f8.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:49:06.603Z
+kind: image
+language: en-US
+text: |-
+  E WRONG 7 PROV
+  MERCAN/
+  ik Tok
+  @ caseypo
+  son
+blocks:
+  - text: E WRONG 7 PROV
+    confidence: 1
+    bbox:
+      - 0.012993213312287089
+      - 0.011906546365411774
+      - 0.9861979822958669
+      - 0.09914162457871889
+  - text: MERCAN/
+    confidence: 1
+    bbox:
+      - 0.902612826766054
+      - 0.29505813963000116
+      - 0.0783847993420016
+      - 0.014534883414416333
+  - text: ik Tok
+    confidence: 1
+    bbox:
+      - 0.8812351548369549
+      - 0.8444767448135178
+      - 0.10688835882371472
+      - 0.0203488360270343
+  - text: "@ caseypo"
+    confidence: 1
+    bbox:
+      - 0.769442793383827
+      - 0.8673118039018597
+      - 0.15707641109343495
+      - 0.022643833970035
+  - text: son
+    confidence: 1
+    bbox:
+      - 0.9334916862780226
+      - 0.8735465117152994
+      - 0.05700712511616368
+      - 0.013081395261261841

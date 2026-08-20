@@ -1,0 +1,113 @@
+source: site/internals/static/img/evidence/9f9df9e2c28be66807d69913d4cb4a5b468747095f5e302e13d92029ea71bd37.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:48:54.575Z
+kind: image
+language: en-US
+text: |-
+  Search Google Maps
+  2 Share
+  22 S 200 W
+  Provo, Utah
+  Google Street View
+  See more dates
+  ention Center
+  bvo
+  DORNTOWN
+  Google Maps
+  © 2026 Google
+  Terms
+  Privacy Report a problem
+blocks:
+  - text: Search Google Maps
+    confidence: 1
+    bbox:
+      - 0.03924418451634633
+      - 0.029250457446953093
+      - 0.06831395436847021
+      - 0.016204087782167642
+  - text: 2 Share
+    confidence: 1
+    bbox:
+      - 0.9243133049043054
+      - 0.02328619310041058
+      - 0.03364083123585537
+      - 0.01759873622078345
+  - text: 22 S 200 W
+    confidence: 1
+    bbox:
+      - 0.04215116378456813
+      - 0.08546617913917065
+      - 0.03779069582621256
+      - 0.013464302205952294
+  - text: Provo, Utah
+    confidence: 1
+    bbox:
+      - 0.04215116451622056
+      - 0.10420475335693302
+      - 0.034883718641977465
+      - 0.013442304932003268
+  - text: Google Street View
+    confidence: 1
+    bbox:
+      - 0.056686048928337306
+      - 0.12834224625651824
+      - 0.05523255514720129
+      - 0.013368983155412684
+  - text: See more dates
+    confidence: 1
+    bbox:
+      - 0.06976744376000633
+      - 0.16310160454528833
+      - 0.04796511407882448
+      - 0.013368983155412684
+  - text: ention Center
+    confidence: 1
+    bbox:
+      - 0.01308139537462115
+      - 0.8848263252396853
+      - 0.04069767301044767
+      - 0.013711151736745864
+  - text: bvo
+    confidence: 0.3
+    bbox:
+      - 0.01017441874200069
+      - 0.9197860963219894
+      - 0.014534883082859102
+      - 0.01336898402714426
+  - text: DORNTOWN
+    confidence: 1
+    bbox:
+      - 0.050872092780565606
+      - 0.9064171122435252
+      - 0.04360465019468278
+      - 0.021390374443430837
+  - text: Google Maps
+    confidence: 1
+    bbox:
+      - 0.4738165213836201
+      - 0.9570270496312621
+      - 0.05091347013201025
+      - 0.019100980741232343
+  - text: © 2026 Google
+    confidence: 1
+    bbox:
+      - 0.8284883715754129
+      - 0.9812614261564031
+      - 0.036337209126306
+      - 0.013390979993495922
+  - text: Terms
+    confidence: 1
+    bbox:
+      - 0.9026162798467414
+      - 0.9812834227271066
+      - 0.01889534791310632
+      - 0.013368983155412684
+  - text: Privacy Report a problem
+    confidence: 1
+    bbox:
+      - 0.9258720963814048
+      - 0.9812614257998966
+      - 0.06395348291548475
+      - 0.013390979993495922

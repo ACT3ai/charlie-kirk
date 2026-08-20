@@ -1,0 +1,49 @@
+source: site/internals/static/img/evidence/8b7ca7590bb357819de541847443259dcd1d48dbf51648115c4240705b7594b9.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:47:45.503Z
+kind: image
+language: en-US
+text: |-
+  0159
+  BA 20/5
+  GERMAN
+  Ni-MH Battery
+  HHR150AA
+blocks:
+  - text: "0159"
+    confidence: 1
+    bbox:
+      - 0.34226805889143164
+      - 0.20849019263862634
+      - 0.14167115275065106
+      - 0.11791761703367964
+  - text: BA 20/5
+    confidence: 1
+    bbox:
+      - 0.5543583585382734
+      - 0.1928030173100842
+      - 0.13560046386718738
+      - 0.10928274472040977
+  - text: GERMAN
+    confidence: 0.5
+    bbox:
+      - 0.7028931845964214
+      - 0.15038296526505834
+      - 0.12294502766927085
+      - 0.09459515573134913
+  - text: Ni-MH Battery
+    confidence: 1
+    bbox:
+      - 0.4401569221998908
+      - 0.35660717989836055
+      - 0.4379594726562499
+      - 0.322138057579324
+  - text: HHR150AA
+    confidence: 0.5
+    bbox:
+      - 0.5147540246366195
+      - 0.34737803959726943
+      - 0.20068192545572916
+      - 0.16116458726429972

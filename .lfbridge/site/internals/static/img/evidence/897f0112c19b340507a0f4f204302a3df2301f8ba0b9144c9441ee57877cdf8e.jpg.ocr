@@ -1,0 +1,57 @@
+source: site/internals/static/img/evidence/897f0112c19b340507a0f4f204302a3df2301f8ba0b9144c9441ee57877cdf8e.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:47:37.942Z
+kind: image
+language: en-US
+text: |-
+  +
+  Waleed E. Mahmoud
+  Departement of Physics, Faculty of Science, Suez Canal
+  University, Egypt
+  Verified email at science.suez.edu.eg - Homepage
+  Natura science/Physics
+blocks:
+  - text: +
+    confidence: 1
+    bbox:
+      - 0.9279999998933333
+      - 0.18315018282051287
+      - 0.021333333333333315
+      - 0.03296703296703285
+  - text: Waleed E. Mahmoud
+    confidence: 1
+    bbox:
+      - 0.045333333276190504
+      - 0.6373626378597593
+      - 0.4933333333333334
+      - 0.06959706959706957
+  - text: Departement of Physics, Faculty of Science, Suez Canal
+    confidence: 1
+    bbox:
+      - 0.042666665546666614
+      - 0.7289377294871795
+      - 0.8693333333333334
+      - 0.05494505494505497
+  - text: University, Egypt
+    confidence: 1
+    bbox:
+      - 0.042666667399999976
+      - 0.7912087918498169
+      - 0.26133333333333336
+      - 0.05128205128205132
+  - text: Verified email at science.suez.edu.eg - Homepage
+    confidence: 1
+    bbox:
+      - 0.03733332777142861
+      - 0.8534798535845107
+      - 0.7786666666666666
+      - 0.05128205128205132
+  - text: Natura science/Physics
+    confidence: 1
+    bbox:
+      - 0.042666671266666525
+      - 0.9706959706501832
+      - 0.368
+      - 0.02564102564102566

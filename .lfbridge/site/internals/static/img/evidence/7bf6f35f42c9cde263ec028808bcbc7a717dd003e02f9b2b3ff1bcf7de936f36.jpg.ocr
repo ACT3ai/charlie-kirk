@@ -1,0 +1,57 @@
+source: site/internals/static/img/evidence/7bf6f35f42c9cde263ec028808bcbc7a717dd003e02f9b2b3ff1bcf7de936f36.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:47:16.851Z
+kind: image
+language: en-US
+text: |-
+  Harrison H. Smith t
+  • @Harri... 13/08/2025
+  I'm not gonna name names, but I was told by
+  someone close to Charlie Kirk that Charlie thinks
+  Israel will kill him if he turns against them.
+  ...
+blocks:
+  - text: Harrison H. Smith t
+    confidence: 1
+    bbox:
+      - 0.1374999993362798
+      - 0.15416666732683248
+      - 0.3215909139915818
+      - 0.13000599428904147
+  - text: • @Harri... 13/08/2025
+    confidence: 1
+    bbox:
+      - 0.4583333333768428
+      - 0.15107913580347276
+      - 0.3958333233504815
+      - 0.13679964765370323
+  - text: I'm not gonna name names, but I was told by
+    confidence: 1
+    bbox:
+      - 0.134090911588103
+      - 0.32913668861142886
+      - 0.7022727240056121
+      - 0.1420863309352518
+  - text: someone close to Charlie Kirk that Charlie thinks
+    confidence: 1
+    bbox:
+      - 0.13522725935154714
+      - 0.49583333434139965
+      - 0.7863636559663273
+      - 0.11249999862780669
+  - text: Israel will kill him if he turns against them.
+    confidence: 1
+    bbox:
+      - 0.1352272792671151
+      - 0.6618705063831755
+      - 0.6545454480112243
+      - 0.12589928057553956
+  - text: ...
+    confidence: 0.5
+    bbox:
+      - 0.9352272735150577
+      - 0.1874999999449123
+      - 0.04431817950397521
+      - 0.04583333379073107

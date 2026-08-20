@@ -1,0 +1,33 @@
+source: site/internals/static/img/evidence/a7f36baa888151d2fcda128971cb0a313a912c328984836d3017fe316ef3dd44.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:49:10.177Z
+kind: image
+language: en-US
+text: |-
+  09-09-2025
+  Tue
+  09:17:36
+blocks:
+  - text: 09-09-2025
+    confidence: 1
+    bbox:
+      - 0.0638297855319149
+      - 0.856250000125
+      - 0.34042553191489366
+      - 0.03749999999999998
+  - text: Tue
+    confidence: 1
+    bbox:
+      - 0.4361702135068388
+      - 0.8583333332886905
+      - 0.10372340425531912
+      - 0.03541666666666665
+  - text: 09:17:36
+    confidence: 1
+    bbox:
+      - 0.5663625319174599
+      - 0.8556728761674656
+      - 0.2741898272899871
+      - 0.03865424791971839

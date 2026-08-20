@@ -1,0 +1,57 @@
+source: site/internals/static/img/evidence/9cc6832ff6f2ec5c2bcfea899c17dfcaaeeaabe83635dc2a240fbd63c549ae03.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:48:14.199Z
+kind: image
+language: en-US
+text: |-
+  & Shooting Position
+  UVU Army ROTC
+  Limping s
+  & Route Back
+  & Car Parked ?
+  835
+blocks:
+  - text: "& Shooting Position"
+    confidence: 1
+    bbox:
+      - 0.2323232326060606
+      - 0.055555555233918086
+      - 0.16565656565656564
+      - 0.032163742690058506
+  - text: UVU Army ROTC
+    confidence: 1
+    bbox:
+      - 0.28080808237373733
+      - 0.22222222203947373
+      - 0.12525252525252528
+      - 0.02631578947368418
+  - text: Limping s
+    confidence: 1
+    bbox:
+      - 0.4242424247362514
+      - 0.6052631577160494
+      - 0.0888888888888889
+      - 0.03801169590643272
+  - text: "& Route Back"
+    confidence: 1
+    bbox:
+      - 0.17979797862626265
+      - 0.7543859650292398
+      - 0.11717171717171712
+      - 0.0292397660818714
+  - text: "& Car Parked ?"
+    confidence: 1
+    bbox:
+      - 0.4484848471515152
+      - 0.8216374270175439
+      - 0.13333333333333336
+      - 0.0292397660818714
+  - text: "835"
+    confidence: 1
+    bbox:
+      - 0.2585858587710438
+      - 0.900584795199805
+      - 0.0222222222222222
+      - 0.020467836257309968

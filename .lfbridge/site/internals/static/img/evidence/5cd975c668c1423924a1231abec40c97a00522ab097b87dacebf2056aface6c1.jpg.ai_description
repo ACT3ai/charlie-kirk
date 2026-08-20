@@ -1,0 +1,83 @@
+source: site/internals/static/img/evidence/5cd975c668c1423924a1231abec40c97a00522ab097b87dacebf2056aface6c1.jpg
+status: done
+engine: gemini-flash-latest
+provider: gemini
+generated: 2026-08-20T12:49:55.848Z
+kind: image
+description: |-
+  ## Overview
+  This image is a direct digital screen capture of a Google Chrome web browser window displaying a Google Trends search result page. The search term queried is `"tyler james robinson"` within the region of Egypt for the future-dated or hypothetical timeframe of July 5, 2025, to September 9, 2025. The page features the standard Google Trends interface, including search filters and an "Interest over time" line graph showing two distinct sharp spikes.
+
+  ## Hyper-Detail
+  At the very top of the screen capture is the Google Chrome browser navigation bar:
+  - The left side shows navigation controls: back arrow (left), forward arrow (right, grayed out), and a reload/refresh icon.
+  - A lock icon sits next to the URL input field, which contains `trends.google.com/trends/explore?date=2025-07-05%202025-09-09&geo=EG&q="tyler%20james%20robinson"&h...`. A bookmark star icon is on the far right of the address box.
+  - To the right of the URL bar are extension/browser icons: a fox icon (MetaMask or similar), a ghost/alien icon (Discord), a puzzle piece icon, an app icon, a dark green circular profile icon containing the letter "J", and a blue rounded button stating "New Chrome available".
+
+  Below the browser controls is the Google Trends website header:
+  - A hamburger menu icon (three horizontal lines) at the far left, followed by the multicolor "Google Trends" logo.
+  - Navigation tabs: "Home", "Explore" (active, indicated by a blue underline), and "Trending now".
+  - On the top right of the page header: a share icon, a speech bubble feedback icon, a Google 9-dot app launcher grid, and a dark green circle profile avatar with the letter "J".
+
+  Below the header is the main page content:
+  - A rounded white card on the left contains a blue circle dot, the text `"tyler james robinson"` in bold, and below it the subtitle `Search term`.
+  - To the right is a light blue/lavender rounded box with a plus sign `+` and the label `Compare`.
+  - Beneath these search cards is a row of four dropdown filter buttons with subtle grey borders and down arrows:
+    1. `Egypt`
+    2. `05/07/2025 - 09/09/2025`
+    3. `All categories`
+    4. `Web Search`
+
+  The lower half displays a large white rounded card titled **"Interest over time"** accompanied by a small circular help/info icon `?`.
+  - On the top right of this card are three action icons: download (down arrow into tray), embed code (`< >`), and share.
+  - The chart has a Y-axis ranging from `0` to `100` with horizontal gridlines at increments of 25 (`0`, `25`, `50`, `75`, `100`).
+  - The X-axis has date markers: `5 Jul`, `24 Jul`, `12 Aug`, and `31 Aug`.
+  - The line graph is bright blue (`#4285F4`). It remains flat at zero across most of the timeline, with two sharp peaks:
+    1. The first peak occurs around July 21, 2025. A hover tooltip is visible here: a white rectangular card displaying `21 Jul 2025` and `"tyler james robinson"  77` with a corresponding blue data point dot on the line.
+    2. The second peak rises to the maximum value of `100` between August 12 and August 31 (around late August).
+
+  ## Composition
+  - **Layout:** Digital user interface layout. The browser chrome occupies the top ~8% of the frame. The Google Trends header fills ~7% below that. The search query inputs and filter buttons occupy the upper-middle ~25% of the frame. The "Interest over time" graph card fills the remaining bottom ~60% of the frame.
+  - **Visual Balance:** Centered, symmetric modular card layout typical of modern Google Material Design. The blue line spikes create strong vertical focal points in the lower half of the screen.
+
+  ## Location
+  - **Digital Artifact:** Not a physical geographical location; this is a software interface screenshot.
+  - **Queried Region:** The filter specifies `Egypt` (indeterminate physical user location).
+
+  ## Setting & Place
+  - **Type:** Software Application / Web Browser GUI.
+  - **Application:** Google Chrome browser viewing the Google Trends web service.
+
+  ## Lighting
+  - **Type:** N/A (Digital UI screenshot with flat digital rendering). The interface uses a standard light mode with high-key white backgrounds (`#FFFFFF` and `#F0F4F9` light grey/blue page background) and subtle drop shadows beneath cards.
+
+  ## Cinematography
+  - **Shot Type:** Direct full-screen digital screen grab / capture.
+  - **Angle/Aspect:** 2D flat planar digital graphic.
+
+  ## People
+  No people in frame.
+
+  ## Objects & Text
+  - **Visible Text:**
+    - `trends.google.com/trends/explore?date=2025-07-05%202025-09-09&geo=EG&q="tyler%20james%20robinson"&h...`
+    - `New Chrome available`
+    - `Google Trends`
+    - `Home`, `Explore`, `Trending now`
+    - `"tyler james robinson"`
+    - `Search term`
+    - `Compare`
+    - `Egypt`
+    - `05/07/2025 - 09/09/2025`
+    - `All categories`
+    - `Web Search`
+    - `Interest over time`
+    - `21 Jul 2025`
+    - `77`
+    - `100`, `75`, `50`, `25`, `0`
+    - `5 Jul`, `24 Jul`, `12 Aug`, `31 Aug`
+    - User avatar initial `J`
+
+  ## Colors & Mood
+  - **Color Palette:** Clean digital UI palette dominated by crisp white (`#FFFFFF`), light grayish-blue background (`#F1F4F9`), Google blue accents (`#4285F4`), dark slate grey typography (`#202124`), and dark green profile circle.
+  - **Mood:** Analytical, objective, digital, structured, and informative.

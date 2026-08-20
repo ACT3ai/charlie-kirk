@@ -1,0 +1,89 @@
+source: site/internals/static/img/evidence/b5851db4460aa83bb374542d007bfcb5c8cd78cbe5ae2a3436018b3cc016fd43.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:49:57.783Z
+kind: image
+language: en-US
+text: |-
+  Q Search along the route...
+  Gas
+  Bi EV charging
+  P Hotels
+  Browning
+  Administration
+  Building
+  UCCU - UVU Branch
+  9 Layers
+  Google Maps
+blocks:
+  - text: Q Search along the route...
+    confidence: 1
+    bbox:
+      - 0.026162792667096438
+      - 0.033879781549312815
+      - 0.15406976863867516
+      - 0.01696767598553439
+  - text: Gas
+    confidence: 1
+    bbox:
+      - 0.26598837219163235
+      - 0.035781544735980164
+      - 0.02325581298107643
+      - 0.013182673428227987
+  - text: Bi EV charging
+    confidence: 1
+    bbox:
+      - 0.31104651432189667
+      - 0.0338797819332014
+      - 0.08575580976463693
+      - 0.01885091437668096
+  - text: P Hotels
+    confidence: 1
+    bbox:
+      - 0.4171511615585157
+      - 0.03551912548279634
+      - 0.05668604755884077
+      - 0.0153283322443728
+  - text: Browning
+    confidence: 1
+    bbox:
+      - 0.6930926831193607
+      - 0.04242102553172311
+      - 0.05137257310632515
+      - 0.016934459456980466
+  - text: Administration
+    confidence: 1
+    bbox:
+      - 0.6933139563864694
+      - 0.06026365352918295
+      - 0.07848836760496813
+      - 0.016949152295055336
+  - text: Building
+    confidence: 1
+    bbox:
+      - 0.6933139542064235
+      - 0.07721280625618021
+      - 0.04651162596215286
+      - 0.022598869031895674
+  - text: UCCU - UVU Branch
+    confidence: 1
+    bbox:
+      - 0.7383720942810378
+      - 0.2806026367526606
+      - 0.10610464652513374
+      - 0.01721157115665295
+  - text: 9 Layers
+    confidence: 1
+    bbox:
+      - 0.02318425502068014
+      - 0.9657766025042854
+      - 0.045201258152773566
+      - 0.0175993372182377
+  - text: Google Maps
+    confidence: 1
+    bbox:
+      - 0.45628567405677145
+      - 0.9655754270444915
+      - 0.0903356272293786
+      - 0.033067601104903144

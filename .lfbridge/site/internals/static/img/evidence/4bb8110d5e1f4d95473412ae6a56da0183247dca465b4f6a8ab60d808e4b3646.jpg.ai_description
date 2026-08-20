@@ -1,0 +1,244 @@
+source: site/internals/static/img/evidence/4bb8110d5e1f4d95473412ae6a56da0183247dca465b4f6a8ab60d808e4b3646.jpg
+status: done
+engine: gemini-flash-latest
+provider: gemini
+generated: 2026-08-20T12:47:41.312Z
+kind: image
+description: >-
+  ## Overview
+
+  This image is a direct digital capture or screenshot of a data spreadsheet
+  comparing flight records ("Owens Sheet") with verified "Aircraft Actual
+  Location" data over various dates between 2022 and 2025. The top section
+  presents summary statistics regarding accuracy rates, while the main body
+  consists of a color-coded table where rows are highlighted in red
+  (inaccurate), green (accurate), or yellow (partially accurate). The flight
+  IDs, routes, and discrepancy descriptions predominantly reference aircraft
+  registrations "SU-BTT" and "SU-BND" traveling between international and US
+  domestic destinations.
+
+
+  ## Hyper-Detail
+
+  The image consists entirely of a structured spreadsheet interface with
+  standard rectangular cells, gridlines, and sans-serif typography.
+
+
+  ### Top Summary Block:
+
+  Located in the upper-left to upper-center region (rows 1 to 3):
+
+  - **Row 1:** Highlighted in medium green fill across the left data segment.
+    - Text in column A: `% of claims that were accurate or partially accurate`
+    - Text in column B: `34% 22 of 65`
+  - **Row 2:** Highlighted in medium bright red fill.
+    - Text in column A: `% of claims that were inaccurate`
+    - Text in column B: `66% 43 of 65`
+  - **Row 3:** Highlighted in dark red/crimson fill.
+    - Text in column A: `% of claims where the plane was on a different continent`
+    - Text in column B: `60% 39 of 65`
+  - The right side of rows 1–3 consists of blank, uncolored white cells with
+  faint gray grid lines.
+
+
+  ### Main Data Table Header:
+
+  - Positioned across the middle-upper section with a solid medium blue
+  background (`#3366CC` tone) and bold white centered/left-aligned text.
+
+  - **Column 1 Header:** `Index (From Owens Sheet)`
+
+  - **Column 2 Header:** `Date (From Owens Sheet)`
+
+  - **Column 3 Header:** `Flight (From Owens Sheet)`
+
+  - **Column 4 Header:** `Route (From Owens Sheet)`
+
+  - **Column 5 Header:** `Aircraft Actual Location`
+
+
+  ### Main Data Rows (Index 1 to 31):
+
+  Columns 2, 3, and 4 maintain a uniform light blue/periwinkle fill (`#C6D9F1`
+  tone) across almost all data rows, while Column 1 (Index) and Column 5 (Actual
+  Location) are color-coded based on verification status (Red = Inaccurate,
+  Green = Accurate, Yellow = Partially accurate):
+
+
+  - **Row Index 1 (Red):** Date: `10/5/2022` | Flight: `SU-BTT` | Route:
+  `CAIRO→PARIS→NEW YORK` | Actual: `The plane was in France from 9/25 until
+  11/10`
+
+  - **Row Index 2 (Red):** Date: `10/20/2022` | Flight: `SU-BTT` | Route: `NEW
+  YORK→PARIS→CHICAGO` | Actual: `The plane was in France from 9/25 until 11/10`
+
+  - **Row Index 3 (Red):** Date: `11/1/2022` | Flight: `SU-BTT` | Route:
+  `CHICAGO→PARIS→BOSTON` | Actual: `The plane was in France from 9/25 until
+  11/10`
+
+  - **Row Index 4 (Green):** Date: `11/13/2022` | Flight: `SU-BTT` | Route:
+  `CAIRO→PARIS→WICHITA` | Actual: `Accurate — Cairo→Paris on 11/12 and
+  Paris→Wichita on 11/13`
+
+  - **Row Index 5 (Red):** Date: `11/17/2022` | Flight: `SU-BTT` | Route:
+  `WILMINGTON, DE→CAIRO` | Actual: `The flight did not occur until 11/20`
+
+  - **Row Index 6 (Green):** Date: `12/20/2022` | Flight: `SU-BTT` | Route:
+  `CAIRO→PARIS→ST. LOUIS` | Actual: `Accurate — Cairo→Paris on 12/19 and
+  Paris→STL on 12/20`
+
+  - **Row Index 7 (Green):** Date: `12/27/2022` | Flight: `SU-BTT` | Route: `ST.
+  LOUIS→BANGOR→CAIRO` | Actual: `Accurate — STL→Bangor→Cairo on 12/27`
+
+  - **Row Index 8 (Red):** Date: `1/15/2023` | Flight: `SU-BTT` | Route:
+  `CAIRO→PARIS→ATLANTA` | Actual: `The plane was in Egypt landed 1/5 and
+  departed 1/24`
+
+  - **Row Index 9 (Red):** Date: `2/10/2023` | Flight: `SU-BTT` | Route:
+  `ATLANTA→WILMINGTON→PARIS` | Actual: `The plane was in Egypt landed 1/29 and
+  departed 2/14`
+
+  - **Row Index 10 (Green):** Date: `4/1/2023` | Flight: `SU-BTT` | Route:
+  `CAIRO→PARIS→ST. LOUIS` | Actual: `Accurate — Cairo→Paris on 3/31 and
+  Paris→STL on 4/1`
+
+  - **Row Index 11 (Green):** Date: `4/6/2023` | Flight: `SU-BTT` | Route:
+  `MISSOURI→WILMINGTON→CAIRO` | Actual: `Accurate — Missouri→Wilmington on 4/6
+  and Wilmington→Cairo on 4/8`
+
+  - **Row Index 12 (Green):** Date: `4/14/2023` | Flight: `SU-BTT` | Route:
+  `CAIRO→PARIS→WICHITA` | Actual: `Accurate — Cairo→Paris→Wichita on 4/14`
+
+  - **Row Index 13 (Green):** Date: `4/20/2023` | Flight: `SU-BTT` | Route:
+  `WICHITA→WILMINGTON→GIZA` | Actual: `Accurate — Wichita→Wilmington on 4/20 and
+  Wilmington→Giza on 4/21`
+
+  - **Row Index 14 (Green):** Date: `5/3/2023` | Flight: `SU-BND` | Route:
+  `"TEST FLIGHT"→MISSOURI` | Actual: `Accurate`
+
+  - *(Blank row with green index block separating sections)*
+
+  - **Row Index 15 (Green):** Date: `5/9/2023` | Flight: `SU-BND` | Route:
+  `MISSOURI→CAIRO` | Actual: `Accurate — STL→Goose Bay→Paris on 5/9 and
+  Paris→Cairo on 5/12`
+
+  - **Row Index 16 (Red):** Date: `6/12/2023` | Flight: `SU-BND` | Route:
+  `PROVO→PARIS→SALT LAKE CITY` | Actual: `The plane was in Egypt from 5/12 until
+  7/22`
+
+  - **Row Index 17 (Red):** Date: `7/25/2023` | Flight: `SU-BTT` | Route:
+  `CAIRO→PARIS→LINCOLN` | Actual: `The plane was in Egypt`
+
+  - **Row Index 18 (Red):** Date: `9/3/2023` | Flight: `SU-BTT` | Route:
+  `LINCOLN→WILMINGTON→CAIRO` | Actual: `The plane was in Egypt`
+
+  - **Row Index 19 (Red):** Date: `1/10/2024` | Flight: `SU-BTT` | Route:
+  `CAIRO→PARIS→SACREMENTO` | Actual: `The plane was in Egypt`
+
+  - **Row Index 20 (Yellow):** Date: `2/9/2024` | Flight: `SU-BTT` | Route:
+  `CAIRO→PARIS→OMAHA` | Actual: `Partially accurate — Cairo→Paris on 2/8 and
+  Paris→Omaha→Lincoln on 2/9`
+
+  - **Row Index 21 (Red):** Date: `2/14/2024` | Flight: `SU-BTT` | Route:
+  `OMAHA→WILMINGTON→CAIRO` | Actual: `The plane flew from Lincoln to Wilmington,
+  not Omaha to Wilmington, then it flew to Egypt on 2/16`
+
+  - **Row Index 22 (Red):** Date: `3/18/2024` | Flight: `SU-BTT` | Route:
+  `PARIS→WICHITA` | Actual: `The plane was in Egypt from 2/16 until 3/26`
+
+  - **Row Index 23 (Green):** Date: `3/29/2024` | Flight: `SU-BTT` | Route:
+  `CAIRO→PARIS→WICHITA` | Actual: `Accurate — Cairo→Paris→Wichita on 3/28 and
+  3/29`
+
+  - **Row Index 24 (Yellow):** Date: `4/3/2024` | Flight: `SU-BTT` | Route:
+  `KANSAS→WILMINGTON→CAIRO` | Actual: `Partially accurate — Wichita→Wilmington
+  on 4/3, plane sits for two days, Wilmington→Cairo on 4/5`
+
+  - **Row Index 25 (Red):** Date: `4/19/2024` | Flight: `SU-BND` | Route:
+  `PROVO→PARIS→SALT LAKE CITY→PROVO` | Actual: `The plane flew from
+  Cairo→Paris→Goose Bay→Salt Lake City→Provo on 4/18 and 4/19`
+
+  - **Row Index 26 (Green):** Date: `4/23/2024` | Flight: `SU-BTT` | Route:
+  `CAIRO→PARIS→WILLISTON→PROVO` | Actual: `Accurate —
+  Cairo→Paris→Williston→Provo on 4/22 and 4/23`
+
+  - **Row Index 27 (Green):** Date: *(blank)* | Flight: `SU-BTT` | Route:
+  `PROVO→WILMINGTON→CAIRO` | Actual: `Accurate — Provo→Wilmington→Cairo on 4/28
+  and 4/30`
+
+  - **Row Index 28 (Red):** Date: `7/20/2024` | Flight: `SU-BTT` | Route:
+  `CAIRO→PARIS→OMAHA→LINCOLN→WILMINGTON→CAIRO` | Actual: `The plane was in
+  Egypt`
+
+  - **Row Index 29 (Red):** Date: `8/17/2024` | Flight: `SU-BTT` | Route:
+  `PARIS→OMAHA→LINCOLN→WILMINGTON→CAIRO` | Actual: `The plane was in Egypt`
+
+  - **Row Index 30 (Red):** Date: `12/8/2024` | Flight: `SU-BND` | Route:
+  `PROVO→PARIS→SALT LAKE CITY` | Actual: `The plane was in Egypt`
+
+  - **Row Index 31 (Red):** Date: `1/12/2025` | Flight: `SU-BTT` | Route:
+  `PARIS→WICHITA→CAIRO` | Actual: `The plane was in Egypt`
+
+
+  ## Composition
+
+  - **Summary Metrics (Top Left to Center):** Occupies ~10% of the upper frame
+  area.
+
+  - **Column 1 (`Index`):** Positioned along the far left vertical strip
+  (FRAME-LEFT), occupying ~5% of frame width.
+
+  - **Columns 2–4 (`Date`, `Flight`, `Route`):** Spans from FRAME-LEFT-CENTER to
+  FRAME-CENTER, taking up ~50% of the horizontal grid.
+
+  - **Column 5 (`Aircraft Actual Location`):** Fills the entire FRAME-RIGHT
+  portion from center to edge, taking up ~45% of total width.
+
+  - **Overall Layout:** Flat 2D planar rectangular table arrangement with high
+  visual symmetry and hard horizontal/vertical border dividing lines.
+
+
+  ## Location
+
+  (indeterminate) – Digital graphic / spreadsheet data document.
+
+
+  ## Setting & Place
+
+  Digital computer screenshot/graphic representing data auditing flight logs.
+
+
+  ## Lighting
+
+  Non-photographic / flat digital display rendering. Uniform synthetic
+  brightness across all pixels with no light sources, shadows, or gradients.
+
+
+  ## Cinematography
+
+  Direct screengrab / orthographic 2D digital capture. Zero optical distortion,
+  infinite flat depth of field.
+
+
+  ## People
+
+  No people in frame.
+
+
+  ## Objects & Text
+
+  - **Table Data Text:** Full textual entries recording dates, tail numbers
+  (`SU-BTT`, `SU-BND`), city names (`Cairo`, `Paris`, `New York`, `Chicago`,
+  `Boston`, `Wichita`, `Wilmington`, `St. Louis`, `Bangor`, `Atlanta`, `Giza`,
+  `Missouri`, `Provo`, `Salt Lake City`, `Lincoln`, `Sacramento`, `Omaha`,
+  `Kansas`, `Goose Bay`, `Williston`), and analytical comparison notes.
+
+
+  ## Colors & Mood
+
+  - **Color Palette:** Dominated by contrasting saturated alert colors: Vivid
+  Red (`#D32F2F`), Forest/Emerald Green (`#2E7D32`), Canary Yellow (`#FFEB3B`),
+  Soft Sky Blue (`#C6D9F1`), Royal Blue (`#3366CC`), and White/Black text
+  elements.
+
+  - **Mood:** Analytical, formal, forensic, investigative data presentation.

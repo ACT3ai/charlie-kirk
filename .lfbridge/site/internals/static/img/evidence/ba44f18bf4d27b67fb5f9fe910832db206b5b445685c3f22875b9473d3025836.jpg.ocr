@@ -1,0 +1,33 @@
+source: site/internals/static/img/evidence/ba44f18bf4d27b67fb5f9fe910832db206b5b445685c3f22875b9473d3025836.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:50:04.198Z
+kind: image
+language: en-US
+text: |-
+  PROVE ME WRONG
+  kTok
+  PROV
+blocks:
+  - text: PROVE ME WRONG
+    confidence: 1
+    bbox:
+      - 0.12067093371725984
+      - 0.11462842681641205
+      - 0.6420234171549479
+      - 0.2100308209481324
+  - text: kTok
+    confidence: 0.5
+    bbox:
+      - -0.00007411873386769111
+      - 0.910942455430772
+      - 0.0834815724690755
+      - 0.06568905305580275
+  - text: PROV
+    confidence: 1
+    bbox:
+      - 0.820000000648148
+      - 0.08875739549638406
+      - 0.17666666666666664
+      - 0.17159763313609466

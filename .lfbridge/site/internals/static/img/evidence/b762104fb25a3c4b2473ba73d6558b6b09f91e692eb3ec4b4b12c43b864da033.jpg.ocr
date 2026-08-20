@@ -1,0 +1,74 @@
+source: site/internals/static/img/evidence/b762104fb25a3c4b2473ba73d6558b6b09f91e692eb3ec4b4b12c43b864da033.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:50:00.473Z
+kind: image
+language: en-US
+text: |-
+  Dave Smith • @ComicDaveSmith • 15h
+  O ••
+  Hey @josh_hammer @DailyMail what the hell do you mean when you write
+  that @TuckerCarlson must be "neutralized?"
+  Seems like a pretty reckless thing to say in the wake of the biggest political
+  assassination of our lifetime (which is the topic of the piece).
+  Also, who the fuck is
+  Show more
+blocks:
+  - text: Dave Smith • @ComicDaveSmith • 15h
+    confidence: 1
+    bbox:
+      - 0.10666666379166669
+      - 0.07333333370833328
+      - 0.45999999999999996
+      - 0.07333333333333336
+  - text: O ••
+    confidence: 0.5
+    bbox:
+      - 0.8955555563111111
+      - 0.073333333
+      - 0.0755555555555556
+      - 0.07333333333333336
+  - text: Hey @josh_hammer @DailyMail what the hell do you mean when you write
+    confidence: 1
+    bbox:
+      - 0.10444443383333357
+      - 0.18666666683333333
+      - 0.8488888888888889
+      - 0.07999999999999996
+  - text: that @TuckerCarlson must be "neutralized?"
+    confidence: 1
+    bbox:
+      - 0.10444444122222225
+      - 0.28000000037500006
+      - 0.5155555555555554
+      - 0.07333333333333325
+  - text: Seems like a pretty reckless thing to say in the wake of the biggest
+      political
+    confidence: 1
+    bbox:
+      - 0.10444443375000023
+      - 0.48666666683333326
+      - 0.8555555555555555
+      - 0.07999999999999996
+  - text: assassination of our lifetime (which is the topic of the piece).
+    confidence: 1
+    bbox:
+      - 0.10666667362222206
+      - 0.5866666666666667
+      - 0.6955555555555556
+      - 0.07999999999999996
+  - text: Also, who the fuck is
+    confidence: 1
+    bbox:
+      - 0.10666666546666673
+      - 0.7866666675333333
+      - 0.23555555555555555
+      - 0.08666666666666667
+  - text: Show more
+    confidence: 1
+    bbox:
+      - 0.10444444577777776
+      - 0.8933333331333332
+      - 0.13333333333333333
+      - 0.05999999999999994

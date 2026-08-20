@@ -1,0 +1,57 @@
+source: site/internals/static/img/evidence/8a568ed54db71fec22b9e55126b552667cdaf1b076036766674ef1fdd40b63a2.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:47:40.160Z
+kind: image
+language: en-US
+text: |-
+  x. com/FurkanGozukara
+  TCN
+  THE
+  TUCKER
+  CARLSON
+  SHOW
+blocks:
+  - text: x. com/FurkanGozukara
+    confidence: 1
+    bbox:
+      - 0.332848846377256
+      - 0.036175711275707956
+      - 0.3328488159179688
+      - 0.051679585774739634
+  - text: TCN
+    confidence: 0.3
+    bbox:
+      - 0.5232558141704204
+      - 0.6692506467432092
+      - 0.03052325487136842
+      - 0.02842377132839624
+  - text: THE
+    confidence: 1
+    bbox:
+      - 0.8909883727995671
+      - 0.8630490954364077
+      - 0.0232558131217957
+      - 0.018087855445014123
+  - text: TUCKER
+    confidence: 1
+    bbox:
+      - 0.8647397312635411
+      - 0.8803823759382193
+      - 0.07720658302307126
+      - 0.02993292278713644
+  - text: CARLSON
+    confidence: 1
+    bbox:
+      - 0.8604056915206919
+      - 0.9089827181665975
+      - 0.08587466239929209
+      - 0.02957978354559998
+  - text: SHOW
+    confidence: 1
+    bbox:
+      - 0.8866279073341724
+      - 0.9379844962352742
+      - 0.03197674274444584
+      - 0.020671833886040658

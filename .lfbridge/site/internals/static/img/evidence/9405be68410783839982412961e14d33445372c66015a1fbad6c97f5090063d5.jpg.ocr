@@ -1,0 +1,81 @@
+source: site/internals/static/img/evidence/9405be68410783839982412961e14d33445372c66015a1fbad6c97f5090063d5.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:47:56.946Z
+kind: image
+language: en-US
+text: |-
+  COMPANY CONTACTS
+  DUANE BURT
+  Director
+  943 E. Lockwood St 943 E. Lockwood St
+  Mesa, AZ 85203
+  DUANE BURT
+  President/Ceo
+  943 E Lockwood St
+  Mesa, AZ 85203
+blocks:
+  - text: COMPANY CONTACTS
+    confidence: 1
+    bbox:
+      - 0.04215116864054912
+      - 0.04882812491536459
+      - 0.45494185179835905
+      - 0.048828125
+  - text: DUANE BURT
+    confidence: 1
+    bbox:
+      - 0.043604646055613205
+      - 0.21441605850069467
+      - 0.27616279840145863
+      - 0.04744525547445244
+  - text: Director
+    confidence: 1
+    bbox:
+      - 0.04360465122718869
+      - 0.29687500008138024
+      - 0.15116278804949862
+      - 0.044921875
+  - text: 943 E. Lockwood St 943 E. Lockwood St
+    confidence: 1
+    bbox:
+      - 0.1499999811662428
+      - 0.3740875905115597
+      - 0.7791666887508482
+      - 0.05608000720504425
+  - text: Mesa, AZ 85203
+    confidence: 1
+    bbox:
+      - 0.1540697725865135
+      - 0.44335937532226566
+      - 0.3139534772979032
+      - 0.06485230383211682
+  - text: DUANE BURT
+    confidence: 1
+    bbox:
+      - 0.04360465423607487
+      - 0.6131386860337306
+      - 0.27761627569936187
+      - 0.04744525547445255
+  - text: President/Ceo
+    confidence: 1
+    bbox:
+      - 0.0436046494590526
+      - 0.6914062500887784
+      - 0.26889534980018237
+      - 0.046875
+  - text: 943 E Lockwood St
+    confidence: 1
+    bbox:
+      - 0.15416666816140526
+      - 0.7653631282051837
+      - 0.37083333609385605
+      - 0.05586592124326384
+  - text: Mesa, AZ 85203
+    confidence: 1
+    bbox:
+      - 0.15697674860846977
+      - 0.8417968752929686
+      - 0.31104650199817674
+      - 0.05875057025547448

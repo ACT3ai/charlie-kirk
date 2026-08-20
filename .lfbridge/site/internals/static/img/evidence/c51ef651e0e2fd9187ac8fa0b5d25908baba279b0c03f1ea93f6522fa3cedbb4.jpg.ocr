@@ -1,0 +1,33 @@
+source: site/internals/static/img/evidence/c51ef651e0e2fd9187ac8fa0b5d25908baba279b0c03f1ea93f6522fa3cedbb4.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:50:19.224Z
+kind: image
+language: en-US
+text: |-
+  APLACE
+  UVU
+  CROWDSOURCE THE TRUTH GigaSync
+blocks:
+  - text: APLACE
+    confidence: 1
+    bbox:
+      - 0.7020348841755905
+      - 0.49354005134303625
+      - 0.020348836978276497
+      - 0.015503876297562225
+  - text: UVU
+    confidence: 0.5
+    bbox:
+      - 0.8081395341631462
+      - 0.4573643420930942
+      - 0.05232558250427244
+      - 0.04909560592086226
+  - text: CROWDSOURCE THE TRUTH GigaSync
+    confidence: 1
+    bbox:
+      - 0.027469772917405717
+      - 0.9183710167410993
+      - 0.5991308212280274
+      - 0.08077144622802734

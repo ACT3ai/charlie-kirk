@@ -1,0 +1,33 @@
+source: site/internals/static/img/evidence/aedeb6f5a437494ea0794eb506cf5d8730478a3de328cc6bba33d5e2961e7ae8.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:49:47.832Z
+kind: image
+language: en-US
+text: |-
+  CONS
+  ECT
+  ION
+blocks:
+  - text: CONS
+    confidence: 1
+    bbox:
+      - 0.8685185184012345
+      - 0.9148148147407407
+      - 0.03888888888888897
+      - 0.022222222222222254
+  - text: ECT
+    confidence: 0.5
+    bbox:
+      - 0.9203703702623457
+      - 0.8944444443595679
+      - 0.02962962962962945
+      - 0.020370370370370372
+  - text: ION
+    confidence: 1
+    bbox:
+      - 0.9425925925000002
+      - 0.9166666665895061
+      - 0.025925925925925908
+      - 0.01851851851851849

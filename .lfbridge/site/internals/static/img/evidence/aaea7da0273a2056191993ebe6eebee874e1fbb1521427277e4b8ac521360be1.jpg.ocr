@@ -1,0 +1,41 @@
+source: site/internals/static/img/evidence/aaea7da0273a2056191993ebe6eebee874e1fbb1521427277e4b8ac521360be1.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:49:41.320Z
+kind: image
+language: en-US
+text: |-
+  AMER CAN
+  COMEBACK
+  PROVE ME WRONG / PROVE
+  KRUP
+blocks:
+  - text: AMER CAN
+    confidence: 1
+    bbox:
+      - 0.3600827415167396
+      - 0.035437315967623784
+      - 0.30309033393859863
+      - 0.13777676673784645
+  - text: COMEBACK
+    confidence: 1
+    bbox:
+      - 0.3749392078228504
+      - 0.04584231444450004
+      - 0.3436594605445862
+      - 0.1883201991042046
+  - text: PROVE ME WRONG / PROVE
+    confidence: 1
+    bbox:
+      - 0.09312374956569525
+      - 0.2705291979529819
+      - 0.6751697063446045
+      - 0.20809877735294713
+  - text: KRUP
+    confidence: 0.5
+    bbox:
+      - 0.8357558114859762
+      - 0.2798982184996681
+      - 0.13226744532585144
+      - 0.07888040803883167

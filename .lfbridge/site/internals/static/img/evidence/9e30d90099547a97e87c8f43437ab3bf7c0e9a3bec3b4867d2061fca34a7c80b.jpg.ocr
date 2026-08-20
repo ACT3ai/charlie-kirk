@@ -1,0 +1,113 @@
+source: site/internals/static/img/evidence/9e30d90099547a97e87c8f43437ab3bf7c0e9a3bec3b4867d2061fca34a7c80b.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:48:20.854Z
+kind: image
+language: en-US
+text: |-
+  Jon Bray
+  @jonaaronbray • 16h
+  ...
+  BREAKING FORENSIC BOMBSHELL: I hacked phone camera glitches to
+  uncover hidden truths in the UVU incident videos using high quality mov
+  files recorded that day.
+  Rolling shutter "jello" effect via CMOS sensor scanning? Turned it into a
+  super-precise impulse detector. Analyzed
+  Show more
+  IRO T PADy
+  Watch again
+  0:00
+  I| 0:06
+blocks:
+  - text: Jon Bray
+    confidence: 1
+    bbox:
+      - 0.1018781627810472
+      - 0.04325794199245836
+      - 0.10444766296251387
+      - 0.03403206263502978
+  - text: "@jonaaronbray • 16h"
+    confidence: 1
+    bbox:
+      - 0.2505543238359202
+      - 0.041095890054794526
+      - 0.23281596452328163
+      - 0.03561643835616435
+  - text: ...
+    confidence: 1
+    bbox:
+      - 0.9356984487660838
+      - 0.04657534273972597
+      - 0.03325942138874882
+      - 0.016438356164383605
+  - text: "BREAKING FORENSIC BOMBSHELL: I hacked phone camera glitches to"
+    confidence: 1
+    bbox:
+      - 0.14412416042128617
+      - 0.08767123298630142
+      - 0.8093126385809313
+      - 0.0328767123287671
+  - text: uncover hidden truths in the UVU incident videos using high quality mov
+    confidence: 1
+    bbox:
+      - 0.10410132167816694
+      - 0.12218466537889583
+      - 0.8295347632431402
+      - 0.04133126507066698
+  - text: files recorded that day.
+    confidence: 1
+    bbox:
+      - 0.10421286243532886
+      - 0.16986301397260273
+      - 0.2638580931263858
+      - 0.0328767123287671
+  - text: Rolling shutter "jello" effect via CMOS sensor scanning? Turned it into a
+    confidence: 1
+    bbox:
+      - 0.10421286844789347
+      - 0.24931506841095885
+      - 0.8137472283813747
+      - 0.03561643835616435
+  - text: super-precise impulse detector. Analyzed
+    confidence: 1
+    bbox:
+      - 0.10421285633776796
+      - 0.29315068506849307
+      - 0.47671840354767187
+      - 0.03287671232876721
+  - text: Show more
+    confidence: 1
+    bbox:
+      - 0.1042128590465632
+      - 0.3342465750684931
+      - 0.13082039911308202
+      - 0.027397260273972712
+  - text: IRO T PADy
+    confidence: 0.5
+    bbox:
+      - 0.6186252758536585
+      - 0.43287671249315074
+      - 0.13082039911308208
+      - 0.02739726027397249
+  - text: Watch again
+    confidence: 1
+    bbox:
+      - 0.24611973453436806
+      - 0.679452055068493
+      - 0.14855875831485585
+      - 0.0328767123287671
+  - text: 0:00
+    confidence: 1
+    bbox:
+      - 0.1662677332408783
+      - 0.9341616198858119
+      - 0.0466219612341498
+      - 0.024827445043276386
+  - text: I| 0:06
+    confidence: 1
+    bbox:
+      - 0.5631929041851442
+      - 0.9342465756849314
+      - 0.08203991130820398
+      - 0.027397260273972712

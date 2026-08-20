@@ -1,0 +1,81 @@
+source: site/internals/static/img/evidence/909c7ff5285b8cb36b8adde1df37404f86560f61bfdc60637d0a77211e149f2b.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:47:50.932Z
+kind: image
+language: en-US
+text: |-
+  LIVE
+  1:16 PM
+  FOX 13 NEWS | UTAH
+  SHOOTING ON UTAH VALLEY UNIVERSITY CAMPUS
+  SCHOOL OFFICIALS CONFIRM SHOTS FIRED DURING CHARLIE KIRK EVENT
+  1:16
+  87°
+  FOX
+  13
+blocks:
+  - text: LIVE
+    confidence: 1
+    bbox:
+      - 0.06540697575879356
+      - 0.0956072352959606
+      - 0.045058140754699716
+      - 0.031007751888698976
+  - text: 1:16 PM
+    confidence: 1
+    bbox:
+      - 0.3894039281712893
+      - 0.6812083522749468
+      - 0.2444479560852051
+      - 0.10786753336588539
+  - text: FOX 13 NEWS | UTAH
+    confidence: 1
+    bbox:
+      - 0.0901162833632358
+      - 0.8033333331881185
+      - 0.15261627197265623
+      - 0.026666666666666616
+  - text: SHOOTING ON UTAH VALLEY UNIVERSITY CAMPUS
+    confidence: 1
+    bbox:
+      - 0.09447674632811236
+      - 0.8677777780921484
+      - 0.704941864013672
+      - 0.04444444444444451
+  - text: SCHOOL OFFICIALS CONFIRM SHOTS FIRED DURING CHARLIE KIRK EVENT
+    confidence: 1
+    bbox:
+      - 0.09583333813232443
+      - 0.9185185198422279
+      - 0.6166666412353515
+      - 0.037037035624186254
+  - text: 1:16
+    confidence: 1
+    bbox:
+      - 0.8313953494850721
+      - 0.8630490951579145
+      - 0.037790696620941144
+      - 0.036175710890028245
+  - text: 87°
+    confidence: 1
+    bbox:
+      - 0.831395348525522
+      - 0.9095607241975217
+      - 0.04069767475128172
+      - 0.03875968933105467
+  - text: FOX
+    confidence: 1
+    bbox:
+      - 0.9200581395192807
+      - 0.8578811365235983
+      - 0.026162791252136275
+      - 0.023255814446343392
+  - text: "13"
+    confidence: 1
+    bbox:
+      - 0.9098837214445956
+      - 0.8837209297198417
+      - 0.04360465049743656
+      - 0.05943152533637153

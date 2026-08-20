@@ -1,0 +1,105 @@
+source: site/internals/static/img/evidence/b88c9ec42b867f691d781266afca4a026514c4e0c687ccf69a7ad4144fbedd3e.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:50:03.215Z
+kind: image
+language: en-US
+text: |-
+  #1
+  #2
+  Organized Murder
+  #1 Tayler + Distraction Patsy #1 + Distraction
+  Patsy #2 means organized sophistication.
+  NOT A Lone Wolf Murder
+  #3
+  Pellet Gun Man
+  P
+  Distraction
+  Patsy #1
+  Distraction Patsy #2
+blocks:
+  - text: "#1"
+    confidence: 1
+    bbox:
+      - -2.124999980424036e-10
+      - 0.509316769701087
+      - 0.066
+      - 0.07763975155279501
+  - text: "#2"
+    confidence: 1
+    bbox:
+      - 0.26999999965
+      - 0.506211180295031
+      - 0.07
+      - 0.07763975155279501
+  - text: Organized Murder
+    confidence: 1
+    bbox:
+      - 0.41399999811250004
+      - 0.03416149132375779
+      - 0.49400000000000005
+      - 0.10248447204968936
+  - text: "#1 Tayler + Distraction Patsy #1 + Distraction"
+    confidence: 1
+    bbox:
+      - 0.3339999955000001
+      - 0.18012422373558112
+      - 0.6299999999999999
+      - 0.05590062111801242
+  - text: "Patsy #2 means organized sophistication."
+    confidence: 1
+    bbox:
+      - 0.3583333633311629
+      - 0.23870967834365353
+      - 0.5791666259765624
+      - 0.058064514065381045
+  - text: NOT A Lone Wolf Murder
+    confidence: 1
+    bbox:
+      - 0.4220000028333333
+      - 0.3322981365424431
+      - 0.51
+      - 0.06211180124223603
+  - text: "#3"
+    confidence: 1
+    bbox:
+      - 0.6160000002916667
+      - 0.4999999998576605
+      - 0.06999999999999995
+      - 0.08385093167701851
+  - text: Pellet Gun Man
+    confidence: 1
+    bbox:
+      - 0.7119999997375001
+      - 0.48447204934006205
+      - 0.274
+      - 0.05590062111801242
+  - text: P
+    confidence: 1
+    bbox:
+      - 0.8940000001
+      - 0.8136645965838508
+      - 0.018000000000000016
+      - 0.03105590062111807
+  - text: Distraction
+    confidence: 1
+    bbox:
+      - 0.3199126892604579
+      - 0.8470674306440078
+      - 0.21017462158203126
+      - 0.0605235247878555
+  - text: "Patsy #1"
+    confidence: 1
+    bbox:
+      - 0.34600000021999994
+      - 0.9254658388664597
+      - 0.15599999999999997
+      - 0.0714285714285714
+  - text: "Distraction Patsy #2"
+    confidence: 1
+    bbox:
+      - 0.6400000016571429
+      - 0.9285714290150844
+      - 0.344
+      - 0.06211180124223603

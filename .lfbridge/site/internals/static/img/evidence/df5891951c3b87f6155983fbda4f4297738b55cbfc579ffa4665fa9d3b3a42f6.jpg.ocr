@@ -1,0 +1,81 @@
+source: site/internals/static/img/evidence/df5891951c3b87f6155983fbda4f4297738b55cbfc579ffa4665fa9d3b3a42f6.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:51:25.982Z
+kind: image
+language: en-US
+text: |-
+  UK-Med
+  Se: 1002
+  X
+  undefined
+  MEDAID
+  undefined
+  Meet Razan, the 3-year-old child
+  shot in the neck in Gaza
+  Visit >
+blocks:
+  - text: UK-Med
+    confidence: 1
+    bbox:
+      - 0.1538700533091252
+      - 0.026279707263881846
+      - 0.13504596412873784
+      - 0.03432583105368692
+  - text: "Se: 1002"
+    confidence: 1
+    bbox:
+      - -0.000059155514932746405
+      - 0.11120381660222134
+      - 0.09132892614968775
+      - 0.020215317460357096
+  - text: X
+    confidence: 0.3
+    bbox:
+      - 0.8756218908697255
+      - 0.02786885238615666
+      - 0.05804311774461035
+      - 0.0360655737704918
+  - text: undefined
+    confidence: 1
+    bbox:
+      - 0.9053934100966963
+      - 0.11270716159964134
+      - 0.09302744066735014
+      - 0.018847972056904805
+  - text: MEDAID
+    confidence: 1
+    bbox:
+      - 0.9220316337700902
+      - 0.15728283882968785
+      - 0.07633474296202902
+      - 0.019860552178054602
+  - text: undefined
+    confidence: 1
+    bbox:
+      - 0.9038142610779436
+      - 0.18196721322950826
+      - 0.09452736318407962
+      - 0.0180327868852459
+  - text: Meet Razan, the 3-year-old child
+    confidence: 1
+    bbox:
+      - 0.04145936866856198
+      - 0.8868852462177987
+      - 0.6119402985074627
+      - 0.04426229508196722
+  - text: shot in the neck in Gaza
+    confidence: 1
+    bbox:
+      - 0.03375529302762617
+      - 0.9333333333336337
+      - 0.45569616921900913
+      - 0.04166666562439958
+  - text: Visit >
+    confidence: 1
+    bbox:
+      - 0.8059701491708126
+      - 0.9065573768032786
+      - 0.10779436152570476
+      - 0.03442622950819674

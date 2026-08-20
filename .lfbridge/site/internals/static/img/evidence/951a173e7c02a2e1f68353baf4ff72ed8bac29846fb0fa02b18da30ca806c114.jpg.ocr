@@ -1,0 +1,57 @@
+source: site/internals/static/img/evidence/951a173e7c02a2e1f68353baf4ff72ed8bac29846fb0fa02b18da30ca806c114.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:47:58.025Z
+kind: image
+language: en-US
+text: |-
+  ACE
+  (DU
+  ÄMER CAN/
+  COMEBACK
+  PROVE ME WRONG PROVE ME WRONG
+  (MER
+blocks:
+  - text: ACE
+    confidence: 1
+    bbox:
+      - 1.705652989434664e-10
+      - 0.0672514622989766
+      - 0.03118908382066277
+      - 0.049707602339181256
+  - text: (DU
+    confidence: 1
+    bbox:
+      - 0.005847953338206627
+      - 0.14327485413011698
+      - 0.027290448343079927
+      - 0.05263157894736836
+  - text: ÄMER CAN/
+    confidence: 1
+    bbox:
+      - 0.21052631668291094
+      - 0.3567251460038986
+      - 0.10721247563352826
+      - 0.03508771929824561
+  - text: COMEBACK
+    confidence: 1
+    bbox:
+      - 0.21029874033750642
+      - 0.3834840016866716
+      - 0.10015939039561253
+      - 0.029876115029318306
+  - text: PROVE ME WRONG PROVE ME WRONG
+    confidence: 1
+    bbox:
+      - 0.10584968281023138
+      - 0.4167960445957475
+      - 0.2931480482075414
+      - 0.06641049691808143
+  - text: (MER
+    confidence: 0.5
+    bbox:
+      - 0.2865497080084471
+      - 0.6111111109649122
+      - 0.04873294346978557
+      - 0.03508771929824561

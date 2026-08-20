@@ -1,0 +1,57 @@
+source: site/internals/static/img/evidence/ce722c40440d12316222d066b55fe4d51c533b58f0fffb6011dfa8ea20f9593a.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:50:32.387Z
+kind: image
+language: en-US
+text: |-
+  LAN I
+  AMMERANI
+  MRONG 2 PROVE ME WRONG
+  AMER LAN
+  COMEBACK
+  6:29 / 13•58
+blocks:
+  - text: LAN I
+    confidence: 1
+    bbox:
+      - 0.20167510757126547
+      - 0.04355312474445261
+      - 0.09092218161432028
+      - 0.051251113414764404
+  - text: AMMERANI
+    confidence: 0.5
+    bbox:
+      - 0.04708026257415357
+      - 0.02747608185150241
+      - 0.24643930762705177
+      - 0.09622438137347877
+  - text: MRONG 2 PROVE ME WRONG
+    confidence: 1
+    bbox:
+      - -0.0010562625666057943
+      - 0.15140874722675646
+      - 0.5103991986926558
+      - 0.11614380433009219
+  - text: AMER LAN
+    confidence: 1
+    bbox:
+      - 0.21511627736066458
+      - 0.6917067297049051
+      - 0.19331395826757153
+      - 0.11917409988550043
+  - text: COMEBACK
+    confidence: 1
+    bbox:
+      - 0.22083333445833334
+      - 0.7777777770680713
+      - 0.2041666666666667
+      - 0.11851851756756127
+  - text: 6:29 / 13•58
+    confidence: 1
+    bbox:
+      - 0.05087209293671601
+      - 0.9765625000463866
+      - 0.03924418491145177
+      - 0.013221153846153855

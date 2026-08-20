@@ -1,0 +1,57 @@
+source: site/internals/static/img/evidence/93f9a81cd4f40b0fd91dd874167bfd8ec438d93e0cc344e48cff156e1f406370.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:47:56.234Z
+kind: image
+language: en-US
+text: |-
+  GRONBING ADMINISTRATION
+  A PLACE
+  FOR YOU
+  UVU
+  AMERCAMI
+  COMEBAC
+blocks:
+  - text: GRONBING ADMINISTRATION
+    confidence: 1
+    bbox:
+      - 0.5517214999963436
+      - 0.27046677620875226
+      - 0.06527515649795534
+      - 0.04349264774724526
+  - text: A PLACE
+    confidence: 1
+    bbox:
+      - 0.5418761234482201
+      - 0.515466654492509
+      - 0.042701241374015764
+      - 0.032247517650523916
+  - text: FOR YOU
+    confidence: 1
+    bbox:
+      - 0.5421511624033434
+      - 0.557734204275901
+      - 0.04505814015865328
+      - 0.03485838869974822
+  - text: UVU
+    confidence: 0.5
+    bbox:
+      - 0.7470930230979768
+      - 0.5076252726456417
+      - 0.08866279125213627
+      - 0.07407407291599954
+  - text: AMERCAMI
+    confidence: 0.5
+    bbox:
+      - 0.4955860813219025
+      - 0.708911209200566
+      - 0.07168233990669248
+      - 0.04665496701099836
+  - text: COMEBAC
+    confidence: 1
+    bbox:
+      - 0.5050612841038951
+      - 0.7312630620062027
+      - 0.06402009129524233
+      - 0.02580095956699624

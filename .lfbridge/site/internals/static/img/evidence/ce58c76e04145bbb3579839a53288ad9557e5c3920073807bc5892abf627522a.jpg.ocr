@@ -1,0 +1,57 @@
+source: site/internals/static/img/evidence/ce58c76e04145bbb3579839a53288ad9557e5c3920073807bc5892abf627522a.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:50:31.907Z
+kind: image
+language: en-US
+text: |-
+  Google Earth
+  LOCATION OF
+  CHARLIE KIRK
+  POSSIBLE LOCATION
+  OF SHOOTER
+  LOSEE CENTER
+blocks:
+  - text: Google Earth
+    confidence: 1
+    bbox:
+      - 0.055133944792487864
+      - 0.09460348024159837
+      - 0.11356931924819946
+      - 0.03818322111059114
+  - text: LOCATION OF
+    confidence: 1
+    bbox:
+      - 0.06976744674720527
+      - 0.3333333343849326
+      - 0.19186045726140344
+      - 0.041343666889049335
+  - text: CHARLIE KIRK
+    confidence: 1
+    bbox:
+      - 0.06976744631212221
+      - 0.3744212952943333
+      - 0.19476743539174396
+      - 0.04166666666666674
+  - text: POSSIBLE LOCATION
+    confidence: 1
+    bbox:
+      - 0.6133720945149627
+      - 0.1006944444211586
+      - 0.2790697614351909
+      - 0.03645833333333337
+  - text: OF SHOOTER
+    confidence: 1
+    bbox:
+      - 0.6686046526788706
+      - 0.14211886349354153
+      - 0.1758720874786377
+      - 0.031007751270576644
+  - text: LOSEE CENTER
+    confidence: 1
+    bbox:
+      - 0.7383720982182934
+      - 0.3049095614157401
+      - 0.17296510934829712
+      - 0.03363210514739701

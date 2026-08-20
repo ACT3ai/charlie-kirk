@@ -1,0 +1,89 @@
+source: site/internals/static/img/evidence/ad99bfbf8444d03233f30b368500d37d88bcaeb6b0547faf7b4e374b665cf891.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:49:46.589Z
+kind: image
+language: en-US
+text: |-
+  REEON
+  111C
+  LUMEBACH
+  10W
+  PROVE ME WRUNG, PRUVETHE WRUNG
+  AMER
+  yrely
+  THOVY OUTO
+  COML
+  TITL
+blocks:
+  - text: REEON
+    confidence: 1
+    bbox:
+      - 0.6916832162854876
+      - 0.22420944472476534
+      - 0.06283677369356155
+      - 0.025258788838982582
+  - text: 111C
+    confidence: 1
+    bbox:
+      - 0.21511627953630058
+      - 0.6148255815959738
+      - 0.018895348533988
+      - 0.008720929734408855
+  - text: LUMEBACH
+    confidence: 0.5
+    bbox:
+      - 0.22805015116888006
+      - 0.6532354661535376
+      - 0.1354694664478302
+      - 0.026377905160188675
+  - text: 10W
+    confidence: 0.5
+    bbox:
+      - 0.3459302332757487
+      - 0.6787790699680669
+      - 0.02616279013454914
+      - 0.008720929734408855
+  - text: PROVE ME WRUNG, PRUVETHE WRUNG
+    confidence: 1
+    bbox:
+      - 0.08898802430187724
+      - 0.696855325197975
+      - 0.409237265586853
+      - 0.050980500876903534
+  - text: AMER
+    confidence: 1
+    bbox:
+      - 0.14825581678058095
+      - 0.7340116273144943
+      - 0.06831394881010056
+      - 0.03343023359775543
+  - text: yrely
+    confidence: 0.5
+    bbox:
+      - 0.32267441937964203
+      - 0.7412790701000203
+      - 0.042151160538196564
+      - 0.014534883201122284
+  - text: THOVY OUTO
+    confidence: 0.5
+    bbox:
+      - 0.31104651117225524
+      - 0.7572674420449229
+      - 0.05377906933426857
+      - 0.007380995433777571
+  - text: COML
+    confidence: 1
+    bbox:
+      - 0.1526162786739946
+      - 0.7688953485846588
+      - 0.06540697813034058
+      - 0.031976744532585144
+  - text: TITL
+    confidence: 0.5
+    bbox:
+      - 0.03052325579121737
+      - 0.8444767443705044
+      - 0.01308139506727457
+      - 0.007267441600561142

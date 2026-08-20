@@ -1,0 +1,33 @@
+source: site/internals/static/img/evidence/cef9693171f66378da868fa201119e1091682b94d15f6b464e3012c32a978a9e.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:50:32.478Z
+kind: image
+language: en-US
+text: |-
+  UVU
+  Charles-McClintock Wilson
+  charlesmcclintockwilson.com All rights reserved.
+blocks:
+  - text: UVU
+    confidence: 0.3
+    bbox:
+      - 0.5712209302905475
+      - 0.3536121672429777
+      - 0.013081395559893294
+      - 0.011406844031154773
+  - text: Charles-McClintock Wilson
+    confidence: 1
+    bbox:
+      - 0.6002906993311784
+      - 0.5247148283626432
+      - 0.38953488597219466
+      - 0.038109679335993185
+  - text: charlesmcclintockwilson.com All rights reserved.
+    confidence: 1
+    bbox:
+      - 0.604651169266368
+      - 0.5778816202074687
+      - 0.3808139495486593
+      - 0.026681116684451167

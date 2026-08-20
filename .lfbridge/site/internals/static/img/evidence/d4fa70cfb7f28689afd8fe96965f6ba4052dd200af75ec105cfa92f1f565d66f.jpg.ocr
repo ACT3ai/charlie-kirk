@@ -1,0 +1,41 @@
+source: site/internals/static/img/evidence/d4fa70cfb7f28689afd8fe96965f6ba4052dd200af75ec105cfa92f1f565d66f.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:50:37.283Z
+kind: image
+language: en-US
+text: |-
+  Losee Roof
+  Alleged Shooting location
+  PERSON WEARING BLACK AT THE ROOF ACCESS
+  BEFORE THE SHOOTING 11:35 PM LOCAL TIME
+blocks:
+  - text: Losee Roof
+    confidence: 1
+    bbox:
+      - 0.16715117182900283
+      - 0.31007751938860506
+      - 0.2674418449401855
+      - 0.07235142036720565
+  - text: Alleged Shooting location
+    confidence: 1
+    bbox:
+      - 0.03779069534855806
+      - 0.7388888892345893
+      - 0.3691860516866048
+      - 0.051851851851851816
+  - text: PERSON WEARING BLACK AT THE ROOF ACCESS
+    confidence: 1
+    bbox:
+      - 0.3502906989449434
+      - 0.8083333337600064
+      - 0.58430233001709
+      - 0.041795864811649985
+  - text: BEFORE THE SHOOTING 11:35 PM LOCAL TIME
+    confidence: 1
+    bbox:
+      - 0.372093040752218
+      - 0.8499999996654449
+      - 0.5421511332194011
+      - 0.04166666666666663

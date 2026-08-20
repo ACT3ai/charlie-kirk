@@ -1,0 +1,25 @@
+source: site/internals/static/img/evidence/7f5b41921750135d5be208a53171f5106985d9dd1115f6ff3ba48ad85f30d58a.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:47:22.705Z
+kind: image
+language: en-US
+text: |-
+  UVU
+  SORENSE
+blocks:
+  - text: UVU
+    confidence: 0.5
+    bbox:
+      - 0.6533333329444445
+      - 0.3567251459795322
+      - 0.03555555555555556
+      - 0.01754385964912275
+  - text: SORENSE
+    confidence: 1
+    bbox:
+      - 0.9444444442875817
+      - 0.5877192982026145
+      - 0.05333333333333323
+      - 0.014619883040935644

@@ -1,0 +1,64 @@
+source: site/internals/static/img/evidence/84cc3a0a41aee90b078643e2aa4dada0c226787fdcff212cf686a85959ee693d.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:47:29.572Z
+kind: image
+language: en-US
+text: >-
+  CONS
+
+  CONS
+
+  MON
+
+  Project Constitution
+
+  Charlie Kirk Investigator
+
+  ROJECTCONSTITUTION / WE ARE FAN FUNDED AND APPRECIATE YOUR SUPPORT -DONATE
+  HERE- CA
+blocks:
+  - text: CONS
+    confidence: 1
+    bbox:
+      - 0.9098837210505516
+      - 0.09043927675207009
+      - 0.02034883737564086
+      - 0.020671833886040658
+  - text: CONS
+    confidence: 1
+    bbox:
+      - 0.8851744184579556
+      - 0.11369509042061898
+      - 0.034883720874786306
+      - 0.036175710890028134
+  - text: MON
+    confidence: 1
+    bbox:
+      - 0.9476744185944196
+      - 0.09043927694156195
+      - 0.014534883499145557
+      - 0.020671833886040547
+  - text: Project Constitution
+    confidence: 1
+    bbox:
+      - 0.017441860932815915
+      - 0.8139534898294927
+      - 0.23691860198974607
+      - 0.04392764621310763
+  - text: Charlie Kirk Investigator
+    confidence: 1
+    bbox:
+      - 0.015802886726045705
+      - 0.8870778001870386
+      - 0.18201978683471678
+      - 0.03389617178175186
+  - text: ROJECTCONSTITUTION / WE ARE FAN FUNDED AND APPRECIATE YOUR SUPPORT -DONATE
+      HERE- CA
+    confidence: 1
+    bbox:
+      - 3.787923141373994e-8
+      - 0.9477777788202583
+      - 0.995833282470703
+      - 0.044814813401964027

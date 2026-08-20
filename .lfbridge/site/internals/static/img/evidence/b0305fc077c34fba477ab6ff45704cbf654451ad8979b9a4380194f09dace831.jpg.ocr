@@ -1,0 +1,137 @@
+source: site/internals/static/img/evidence/b0305fc077c34fba477ab6ff45704cbf654451ad8979b9a4380194f09dace831.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:49:50.244Z
+kind: image
+language: en-US
+text: |-
+  I Aver
+  @i_aver • 59m
+  Flight path leads past Page, AZ to super-remote "Tuba City Airport".
+  Perfect for your quick landing and hit team transfer needs.
+  maps.app.goo.gl/zcvTncnFEKRRCk...
+  •••
+  Da Da 8a
+  N888KG - Provo
+  Regional Airport is 5
+  miles from Utah
+  Valley University
+  Times in UTC
+  Assassination: 18:10
+  Take off: 19:12
+  Illegally turns off
+  ADS-B radar: 19:44
+blocks:
+  - text: I Aver
+    confidence: 1
+    bbox:
+      - 0.09302325511627908
+      - 0.05211726397394134
+      - 0.06976744186046512
+      - 0.032573289902280145
+  - text: "@i_aver • 59m"
+    confidence: 1
+    bbox:
+      - 0.23237291969326732
+      - 0.04738730889640097
+      - 0.14836198028499933
+      - 0.048547855029277054
+  - text: Flight path leads past Page, AZ to super-remote "Tuba City Airport".
+    confidence: 1
+    bbox:
+      - 0.09513742686751227
+      - 0.10097719866992405
+      - 0.7378435517970401
+      - 0.04234527687296408
+  - text: Perfect for your quick landing and hit team transfer needs.
+    confidence: 1
+    bbox:
+      - 0.0951374270824523
+      - 0.15309446254071668
+      - 0.6363636363636364
+      - 0.03908794788273606
+  - text: maps.app.goo.gl/zcvTncnFEKRRCk...
+    confidence: 0.5
+    bbox:
+      - 0.09513741569767452
+      - 0.20195439755700328
+      - 0.40169133192389006
+      - 0.039087947882736174
+  - text: •••
+    confidence: 0.5
+    bbox:
+      - 0.8900634245771671
+      - 0.058631921946254106
+      - 0.029598308668076112
+      - 0.016286644951140072
+  - text: Da Da 8a
+    confidence: 0.3
+    bbox:
+      - 0.5095137432875264
+      - 0.2866449510179153
+      - 0.09725158562367864
+      - 0.016286644951140072
+  - text: N888KG - Provo
+    confidence: 1
+    bbox:
+      - 0.289640593128964
+      - 0.540716612247557
+      - 0.1162790697674419
+      - 0.019543973941368087
+  - text: Regional Airport is 5
+    confidence: 1
+    bbox:
+      - 0.2896405934883721
+      - 0.5700325731270359
+      - 0.1522198731501057
+      - 0.0228013029315961
+  - text: miles from Utah
+    confidence: 1
+    bbox:
+      - 0.2896405931501057
+      - 0.5993485340390878
+      - 0.11839323467230439
+      - 0.0228013029315961
+  - text: Valley University
+    confidence: 1
+    bbox:
+      - 0.2896405930056377
+      - 0.6286644949782845
+      - 0.1247357293868922
+      - 0.0228013029315961
+  - text: Times in UTC
+    confidence: 1
+    bbox:
+      - 0.2896405929598308
+      - 0.6872964168078176
+      - 0.09936575052854124
+      - 0.019543973941368087
+  - text: "Assassination: 18:10"
+    confidence: 1
+    bbox:
+      - 0.28964059048625795
+      - 0.7166123781351791
+      - 0.1522198731501057
+      - 0.0228013029315961
+  - text: "Take off: 19:12"
+    confidence: 1
+    bbox:
+      - 0.2896405938336857
+      - 0.7459283386536374
+      - 0.1120507399577167
+      - 0.019543973941368087
+  - text: Illegally turns off
+    confidence: 1
+    bbox:
+      - 0.2896405932346723
+      - 0.7752442995114006
+      - 0.12684989429175475
+      - 0.0228013029315961
+  - text: "ADS-B radar: 19:44"
+    confidence: 1
+    bbox:
+      - 0.28964059336152215
+      - 0.804560260456026
+      - 0.13953488372093026
+      - 0.019543973941368087

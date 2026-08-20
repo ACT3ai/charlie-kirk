@@ -1,0 +1,57 @@
+source: site/internals/static/img/evidence/9d50dc00798946d518f528a560ce8e869fc5d36803592ad2e4e4a3247d4d26a6.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:48:20.210Z
+kind: image
+language: en-US
+text: |-
+  CM US
+  Subscribe
+  New Mexico compound
+  suspects were training
+  children for school shootings,
+  prosecutors say
+blocks:
+  - text: CM US
+    confidence: 1
+    bbox:
+      - 0.10900136227524071
+      - 0.0198447687851544
+      - 0.1939630883371728
+      - 0.12697712880260537
+  - text: Subscribe
+    confidence: 1
+    bbox:
+      - 0.7862390251296075
+      - 0.052555954302939356
+      - 0.15401767828525637
+      - 0.052120796539498526
+  - text: New Mexico compound
+    confidence: 1
+    bbox:
+      - 0.04102564234188032
+      - 0.34905660414046125
+      - 0.7128205128205128
+      - 0.11006289308176087
+  - text: suspects were training
+    confidence: 1
+    bbox:
+      - 0.03931624268376063
+      - 0.49371069237421383
+      - 0.694017094017094
+      - 0.11006289308176098
+  - text: children for school shootings,
+    confidence: 1
+    bbox:
+      - 0.03678553930203945
+      - 0.5986547864746411
+      - 0.9144411266359509
+      - 0.158236341656379
+  - text: prosecutors say
+    confidence: 1
+    bbox:
+      - 0.041025641100427286
+      - 0.7798742131878932
+      - 0.4871794871794872
+      - 0.10377358490566035

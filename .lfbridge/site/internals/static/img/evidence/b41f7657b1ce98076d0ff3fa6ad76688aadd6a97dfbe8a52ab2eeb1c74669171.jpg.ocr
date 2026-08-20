@@ -1,0 +1,81 @@
+source: site/internals/static/img/evidence/b41f7657b1ce98076d0ff3fa6ad76688aadd6a97dfbe8a52ab2eeb1c74669171.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:49:57.433Z
+kind: image
+language: en-US
+text: |-
+  Cancel
+  Video
+  Adjust
+  Filters
+  Crop
+  VIDEO
+  AMED
+  COVE ME Won
+  ANER CAL
+blocks:
+  - text: Cancel
+    confidence: 1
+    bbox:
+      - 0.03837953353449349
+      - 0.013081395326101086
+      - 0.07249466555361425
+      - 0.01308139506727457
+  - text: Video
+    confidence: 1
+    bbox:
+      - 0.07036247383683615
+      - 0.39825581412988864
+      - 0.04264392332845986
+      - 0.008720929734408855
+  - text: Adjust
+    confidence: 1
+    bbox:
+      - 0.06819881294083155
+      - 0.46503744524776836
+      - 0.046971243115374484
+      - 0.008878597989678383
+  - text: Filters
+    confidence: 1
+    bbox:
+      - 0.06820944703019399
+      - 0.5304735918521737
+      - 0.04481778083264913
+      - 0.00882025808095932
+  - text: Crop
+    confidence: 1
+    bbox:
+      - 0.07249467103163905
+      - 0.5973837214680034
+      - 0.036247332776807126
+      - 0.010174417868256569
+  - text: VIDEO
+    confidence: 1
+    bbox:
+      - 0.5308162674257869
+      - 0.012842671380138726
+      - 0.066299235974699
+      - 0.013558843173086643
+  - text: AMED
+    confidence: 0.5
+    bbox:
+      - 0.5223880607685678
+      - 0.5087209309165202
+      - 0.22601278953606974
+      - 0.075581394135952
+  - text: COVE ME Won
+    confidence: 1
+    bbox:
+      - 0.7974413696459897
+      - 0.14534883740606874
+      - 0.20042642732945892
+      - 0.05386991240084171
+  - text: ANER CAL
+    confidence: 1
+    bbox:
+      - 0.7633262257099678
+      - 0.3343023247278597
+      - 0.23454157693827338
+      - 0.049486737698316574

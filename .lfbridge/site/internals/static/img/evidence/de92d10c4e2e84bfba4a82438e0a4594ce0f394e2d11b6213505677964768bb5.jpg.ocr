@@ -1,0 +1,73 @@
+source: site/internals/static/img/evidence/de92d10c4e2e84bfba4a82438e0a4594ce0f394e2d11b6213505677964768bb5.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:51:25.107Z
+kind: image
+language: en-US
+text: |-
+  BREEZ
+  POLITICS
+  BREEZY _POLITICS
+  I GOT
+  Earth Hippy
+  @hippyygoat • 21h Follon
+  Charlie Kirk was changing his direction of
+  travelmerican Commentator & Activist
+blocks:
+  - text: BREEZ
+    confidence: 1
+    bbox:
+      - 0.8386606705198015
+      - 0.046837847019231105
+      - 0.11990088356865769
+      - 0.024092900851541366
+  - text: POLITICS
+    confidence: 1
+    bbox:
+      - 0.8611111152416879
+      - 0.06818181804407719
+      - 0.08888888359069824
+      - 0.012396694214875992
+  - text: BREEZY _POLITICS
+    confidence: 1
+    bbox:
+      - 0.6972222238055555
+      - 0.2954545451859505
+      - 0.22499999999999998
+      - 0.02685950413223137
+  - text: I GOT
+    confidence: 1
+    bbox:
+      - 0.3996437490117722
+      - 0.6852523554437009
+      - 0.2034902784559462
+      - 0.05924735581579288
+  - text: Earth Hippy
+    confidence: 1
+    bbox:
+      - 0.17777777658333338
+      - 0.7685950414049587
+      - 0.23888888888888882
+      - 0.03305785123966942
+  - text: "@hippyygoat • 21h Follon"
+    confidence: 1
+    bbox:
+      - 0.1731843731352172
+      - 0.807851239384115
+      - 0.5139664543999566
+      - 0.0423553719008265
+  - text: Charlie Kirk was changing his direction of
+    confidence: 1
+    bbox:
+      - 0.03910617736419353
+      - 0.8666666678443006
+      - 0.8044692145453559
+      - 0.041666665353065624
+  - text: travelmerican Commentator & Activist
+    confidence: 1
+    bbox:
+      - 0.04093968438933773
+      - 0.9098649883346944
+      - 0.7402758280436198
+      - 0.049236514351584715

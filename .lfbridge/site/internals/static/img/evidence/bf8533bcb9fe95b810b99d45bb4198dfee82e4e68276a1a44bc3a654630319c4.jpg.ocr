@@ -1,0 +1,113 @@
+source: site/internals/static/img/evidence/bf8533bcb9fe95b810b99d45bb4198dfee82e4e68276a1a44bc3a654630319c4.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:50:11.338Z
+kind: image
+language: en-US
+text: |-
+  7
+  1896
+  139.1k+
+  • LIVENOW FROM FOX
+  LIVE
+  UTAH POLICE HOLD PRESS CONFERENCE ON TYLER ROBINSON'S SURRENDER
+  NOW
+  WASHINGTON COUNTY SHERIFF NATE BROOKSBY
+  4:22 PM ET [LE PARTLY CLOUDY 71º
+  LIVENOW
+  TAMPA CLOUDY 80°
+  LIVENOW
+  WASHINGTON, CURRENT TEMPS
+blocks:
+  - text: "7"
+    confidence: 0.5
+    bbox:
+      - 0.9078124998046875
+      - 0.036111111249999994
+      - 0.015625
+      - 0.033333333333333326
+  - text: "1896"
+    confidence: 1
+    bbox:
+      - 0.8078125005022322
+      - 0.31944444431547625
+      - 0.140625
+      - 0.09166666666666656
+  - text: 139.1k+
+    confidence: 1
+    bbox:
+      - 0.08736087603776262
+      - 0.8267795020624088
+      - 0.06121574640274048
+      - 0.029774329397413424
+  - text: • LIVENOW FROM FOX
+    confidence: 1
+    bbox:
+      - 0.16875000162499995
+      - 0.8277777776666666
+      - 0.1625
+      - 0.02777777777777779
+  - text: LIVE
+    confidence: 1
+    bbox:
+      - 0.0640625000625
+      - 0.8583333336388889
+      - 0.034375
+      - 0.030555555555555558
+  - text: UTAH POLICE HOLD PRESS CONFERENCE ON TYLER ROBINSON'S SURRENDER
+    confidence: 1
+    bbox:
+      - 0.17656250391927078
+      - 0.8638888885648147
+      - 0.7765625
+      - 0.03888888888888897
+  - text: NOW
+    confidence: 1
+    bbox:
+      - 0.0638430092327635
+      - 0.8850193260620254
+      - 0.08637648224830628
+      - 0.057739125357733845
+  - text: WASHINGTON COUNTY SHERIFF NATE BROOKSBY
+    confidence: 1
+    bbox:
+      - 0.17656250315104166
+      - 0.9027777775925927
+      - 0.378125
+      - 0.02777777777777768
+  - text: 4:22 PM ET [LE PARTLY CLOUDY 71º
+    confidence: 1
+    bbox:
+      - 0.06087314927053526
+      - 0.9414950709347228
+      - 0.325128698348999
+      - 0.03367652363247342
+  - text: LIVENOW
+    confidence: 1
+    bbox:
+      - 0.38593749917968745
+      - 0.9416666668055556
+      - 0.06562500000000004
+      - 0.02777777777777768
+  - text: TAMPA CLOUDY 80°
+    confidence: 1
+    bbox:
+      - 0.46875000238281245
+      - 0.9416666664930555
+      - 0.190625
+      - 0.030555555555555558
+  - text: LIVENOW
+    confidence: 1
+    bbox:
+      - 0.6655650057449485
+      - 0.9412226900614075
+      - 0.06418249011039734
+      - 0.028665730688307023
+  - text: WASHINGTON, CURRENT TEMPS
+    confidence: 1
+    bbox:
+      - 0.7468750001302084
+      - 0.9444444447222221
+      - 0.234375
+      - 0.033333333333333326

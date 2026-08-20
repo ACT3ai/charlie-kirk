@@ -1,0 +1,41 @@
+source: site/internals/static/img/evidence/7a07c9a99a470b551e34dbdf324e8cf5b7f92ea6aef7a4f045c2ba42f903710a.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:47:16.588Z
+kind: image
+language: en-US
+text: |-
+  SANCHEZ
+  US.ARMY
+  13B M10:
+  3rd ID, Fort Stew
+blocks:
+  - text: SANCHEZ
+    confidence: 1
+    bbox:
+      - 0.18939394031723483
+      - 0.5549295772887324
+      - 0.1477272727272727
+      - 0.03380281690140852
+  - text: US.ARMY
+    confidence: 1
+    bbox:
+      - 0.5871212104640152
+      - 0.5577464784859154
+      - 0.1477272727272727
+      - 0.030985915492957816
+  - text: "13B M10:"
+    confidence: 1
+    bbox:
+      - 0.24215906515968988
+      - 0.8018519813450177
+      - 0.7543182373046875
+      - 0.11742279160190627
+  - text: 3rd ID, Fort Stew
+    confidence: 1
+    bbox:
+      - 0.3219696932239058
+      - 0.9380281690923318
+      - 0.6742424242424242
+      - 0.05915492957746482

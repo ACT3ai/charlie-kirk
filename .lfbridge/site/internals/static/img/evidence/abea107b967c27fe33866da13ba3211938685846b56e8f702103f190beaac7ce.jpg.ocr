@@ -1,0 +1,57 @@
+source: site/internals/static/img/evidence/abea107b967c27fe33866da13ba3211938685846b56e8f702103f190beaac7ce.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:49:42.460Z
+kind: image
+language: en-US
+text: |-
+  BREAKING
+  NEWS
+  JOSH BRESLOW
+  Watch again
+  @JOSHBRESLO
+  SKYLER BAIRD / WITNESS
+blocks:
+  - text: BREAKING
+    confidence: 1
+    bbox:
+      - 0.05884129488099262
+      - 0.09750962739162428
+      - 0.34717240992600357
+      - 0.05748037648755455
+  - text: NEWS
+    confidence: 1
+    bbox:
+      - 0.07106599069520898
+      - 0.1468023253237315
+      - 0.19543146893260926
+      - 0.0566860465116279
+  - text: JOSH BRESLOW
+    confidence: 1
+    bbox:
+      - 0.1279190761113161
+      - 0.4622992080502003
+      - 0.4597356532647358
+      - 0.04256173777025796
+  - text: Watch again
+    confidence: 1
+    bbox:
+      - 0.44920584468179564
+      - 0.49700112067495383
+      - 0.11174059611995052
+      - 0.013265200326609161
+  - text: "@JOSHBRESLO"
+    confidence: 1
+    bbox:
+      - 0.6240794442898205
+      - 0.4804424446289546
+      - 0.3739395761877541
+      - 0.028153292633766314
+  - text: SKYLER BAIRD / WITNESS
+    confidence: 1
+    bbox:
+      - 0.2558829701995649
+      - 0.8941135786022115
+      - 0.6434253723640753
+      - 0.05890874995741735

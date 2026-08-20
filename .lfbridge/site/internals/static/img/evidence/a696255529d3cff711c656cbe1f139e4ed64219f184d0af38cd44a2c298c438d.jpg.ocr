@@ -1,0 +1,617 @@
+source: site/internals/static/img/evidence/a696255529d3cff711c656cbe1f139e4ed64219f184d0af38cd44a2c298c438d.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:49:09.177Z
+kind: image
+language: en-US
+text: |-
+  Post
+  98
+  3. Hate Speech Classification with OHI V3:
+  • The transcribed text is fed into OHI V3's core
+  model, a fine-tuned transformer-based neural
+  network (built on architectures like BERT or
+  RoBERTa). The model evaluates:
+  »
+  @TheOfficial1984
+  Did you know the ADL is assigning your
+  social credit score on X using machine
+  learning and neural networks created at
+  Uc Berkley D-Lab?
+  Online Hate Index V3 (OHI V3)
+  It can identity you by your voice from
+  analyzing spaces
+  It flags the content.
+  Israeli intelligence removes it
+  2:55 PM • Nov 3, 2025 • 7,389 Views
+  • 16 L7 92
+  184
+  • 38
+  Post your reply
+  Reply
+  • Semantic Analysis: Detects implicit bias,
+  dog-whistles (e.g., coded references to
+  conspiracy theories), and intersectional hate
+  (e.g., antisemitism combined with racism).
+  • Contextual Scoring: Considers surrounding
+  dialogue; isolated phrases are cross-
+  referenced with the full transcript to avoid
+  misclassification.
+  →
+  • Thresholding: Content scoring above 0.9
+  (high confidence) triggers alerts. V3
+  improves on prior versions by incorporating
+  multilingual support (e.g., Arabic, Spanish)
+  and reducing bias against non-English
+  dialects.
+  • Outputs include severity levels (e.g., "mild
+  harassment" vs. "direct incitement") and
+  recommendations for moderation, such as de-
+  amaltination rant cuchancinn
+  1984 @TheOfficial1984 • 4h
+  ...
+  The ADL monitors 10,000 spaces a
+  day and feeds all that data into the OHI
+  V3 that analyzes it in real time to
+  identify you by your voice.
+  For private subscription spaces, they
+  use their backdoor through CHEQ.
+  1. Data Collection and Access:
+  • ADL gains access to Spaces content through
+  partnerships with X. Under these agreements, X
+  provides API access or direct feeds of public
+  Spaces data, including audio streams, participant
+  metadata (e.g., usernames, follower counts), and
+  timestamps. Public Spaces are inherently open,
+  but OHI V3 extends to monitoring thousands of
+  sessions daily-reports indicate up to 10,000
+  Spaces per day as of late 2024.
+  • For non-public or invite-only Spaces, access may
+  rely on user reports or embedded monitoring tools
+  within X's backend, though ADL claims to focus
+  on public content. Integration with X's algorithm
+  allows real-time ingestion, where audio is
+  prioritized based on engagement metrics (e.g.,
+  listener count, virality).
+  0 1
+  176
+  • 19
+  ill 216 1
+  1984 @TheOfficial1984 • 4h
+  They also tie your voice to a
+  geolocation.
+  2. Audio Transcription:
+blocks:
+  - text: Post
+    confidence: 1
+    bbox:
+      - 0.15301391137185733
+      - 0.004360465289959481
+      - 0.04018546973438944
+      - 0.01308139478345316
+  - text: "98"
+    confidence: 1
+    bbox:
+      - 0.14992272005267887
+      - 0.047965116423891674
+      - 0.01854714042014463
+      - 0.008720930039813557
+  - text: "3. Hate Speech Classification with OHI V3:"
+    confidence: 1
+    bbox:
+      - 0.05564142463345249
+      - 0.0770348839502375
+      - 0.46213291605656587
+      - 0.023255813439502893
+  - text: • The transcribed text is fed into OHI V3's core
+    confidence: 1
+    bbox:
+      - 0.11437404575303424
+      - 0.133720930117332
+      - 0.48531683041046936
+      - 0.02180232537580118
+  - text: model, a fine-tuned transformer-based neural
+    confidence: 1
+    bbox:
+      - 0.1373719987876507
+      - 0.1701780795095169
+      - 0.4810272856499499
+      - 0.026839389999937735
+  - text: network (built on architectures like BERT or
+    confidence: 1
+    bbox:
+      - 0.13755796683346033
+      - 0.2107558141055782
+      - 0.44976814166538226
+      - 0.02041452149250833
+  - text: "RoBERTa). The model evaluates:"
+    confidence: 1
+    bbox:
+      - 0.1375579620052684
+      - 0.24681344098374758
+      - 0.3353941290651973
+      - 0.022081907765199582
+  - text: »
+    confidence: 1
+    bbox:
+      - 0.6383307579269406
+      - -1.9495627334720211e-10
+      - 0.034003089594341285
+      - 0.029069767904447374
+  - text: "@TheOfficial1984"
+    confidence: 1
+    bbox:
+      - 0.7449768181852077
+      - 0.00436046518248312
+      - 0.11437403141496794
+      - 0.011627906719751446
+  - text: Did you know the ADL is assigning your
+    confidence: 1
+    bbox:
+      - 0.7001545603775841
+      - 0.033430232532860815
+      - 0.2843894911459136
+      - 0.01755470362074263
+  - text: social credit score on X using machine
+    confidence: 1
+    bbox:
+      - 0.6986089705226909
+      - 0.05504055629293836
+      - 0.2766615071514238
+      - 0.016222479721900385
+  - text: learning and neural networks created at
+    confidence: 1
+    bbox:
+      - 0.6970633732119094
+      - 0.07531865570322405
+      - 0.2905718595267224
+      - 0.01625111150023284
+  - text: Uc Berkley D-Lab?
+    confidence: 1
+    bbox:
+      - 0.7001545590665761
+      - 0.09733487819574416
+      - 0.13446677098585846
+      - 0.016222479721900385
+  - text: Online Hate Index V3 (OHI V3)
+    confidence: 1
+    bbox:
+      - 0.6986089611306613
+      - 0.13789107790420418
+      - 0.21792890405243337
+      - 0.014725200546989559
+  - text: It can identity you by your voice from
+    confidence: 1
+    bbox:
+      - 0.6970633663162181
+      - 0.18018539996605054
+      - 0.26738794517281905
+      - 0.016222479721900385
+  - text: analyzing spaces
+    confidence: 1
+    bbox:
+      - 0.6986089639365449
+      - 0.20046349927216967
+      - 0.1251931995998623
+      - 0.016222479721900274
+  - text: It flags the content.
+    confidence: 1
+    bbox:
+      - 0.6970633738741153
+      - 0.2427325581962524
+      - 0.1452859297633612
+      - 0.016247743250735303
+  - text: Israeli intelligence removes it
+    confidence: 1
+    bbox:
+      - 0.6970633691690391
+      - 0.2848837208727253
+      - 0.21329211365573952
+      - 0.014652779867585619
+  - text: 2:55 PM • Nov 3, 2025 • 7,389 Views
+    confidence: 1
+    bbox:
+      - 0.6986089685910397
+      - 0.31807647721876875
+      - 0.22565686923214012
+      - 0.016225848523932385
+  - text: • 16 L7 92
+    confidence: 1
+    bbox:
+      - 0.7047913473683065
+      - 0.3603707997457809
+      - 0.10510046002897178
+      - 0.016222479721900385
+  - text: "184"
+    confidence: 1
+    bbox:
+      - 0.8593508517711642
+      - 0.3633720928764326
+      - 0.03554868404139122
+      - 0.010174418656049622
+  - text: • 38
+    confidence: 1
+    bbox:
+      - 0.9057187014865333
+      - 0.3603707995824228
+      - 0.03554868639323916
+      - 0.017536177143437248
+  - text: Post your reply
+    confidence: 1
+    bbox:
+      - 0.746522409241556
+      - 0.4142441862807844
+      - 0.1267387963987603
+      - 0.017441860079627114
+  - text: Reply
+    confidence: 1
+    bbox:
+      - 0.9381761980132082
+      - 0.41424418578551603
+      - 0.038639875287339365
+      - 0.014534883952223687
+  - text: "• Semantic Analysis: Detects implicit bias,"
+    confidence: 1
+    bbox:
+      - 0.17156105999335083
+      - 0.3035921201878713
+      - 0.4574961256598721
+      - 0.024913093858632607
+  - text: dog-whistles (e.g., coded references to
+    confidence: 1
+    bbox:
+      - 0.1931993795275693
+      - 0.34009270042349315
+      - 0.4064915065553715
+      - 0.024913093858632718
+  - text: conspiracy theories), and intersectional hate
+    confidence: 1
+    bbox:
+      - 0.19319938924460173
+      - 0.38064889932932644
+      - 0.46367851285546396
+      - 0.022016222479721903
+  - text: (e.g., antisemitism combined with racism).
+    confidence: 1
+    bbox:
+      - 0.19165380343228663
+      - 0.4154113557872039
+      - 0.4435857544697903
+      - 0.023754345307068325
+  - text: "• Contextual Scoring: Considers surrounding"
+    confidence: 1
+    bbox:
+      - 0.17001546196460612
+      - 0.4663962918717153
+      - 0.4822256368126734
+      - 0.023429289339315318
+  - text: dialogue; isolated phrases are cross-
+    confidence: 1
+    bbox:
+      - 0.19319939437813957
+      - 0.5057937429043282
+      - 0.3833075545719019
+      - 0.022016222479721903
+  - text: referenced with the full transcript to avoid
+    confidence: 1
+    bbox:
+      - 0.19306676121324004
+      - 0.5397294286352596
+      - 0.43459217527791694
+      - 0.025192437553184677
+  - text: misclassification.
+    confidence: 1
+    bbox:
+      - 0.193199382074992
+      - 0.5784883723775064
+      - 0.1854714089051422
+      - 0.02180232537580118
+  - text: →
+    confidence: 1
+    bbox:
+      - 0.6398763529235489
+      - 0.5363372095677446
+      - 0.027820709454293047
+      - 0.017441860079627225
+  - text: "• Thresholding: Content scoring above 0.9"
+    confidence: 1
+    bbox:
+      - 0.17156105692791626
+      - 0.6279069769082813
+      - 0.45285933526317823
+      - 0.024709301503204717
+  - text: (high confidence) triggers alerts. V3
+    confidence: 1
+    bbox:
+      - 0.1916537805848115
+      - 0.6671511629370994
+      - 0.3709428178102844
+      - 0.021802325375801068
+  - text: improves on prior versions by incorporating
+    confidence: 1
+    bbox:
+      - 0.19010819378649452
+      - 0.7049418605860819
+      - 0.4528593352631782
+      - 0.02180232537580118
+  - text: multilingual support (e.g., Arabic, Spanish)
+    confidence: 1
+    bbox:
+      - 0.19319937890824573
+      - 0.741019698597197
+      - 0.4420401953004585
+      - 0.02496867329054886
+  - text: and reducing bias against non-English
+    confidence: 1
+    bbox:
+      - 0.19319938245131119
+      - 0.7775202784581775
+      - 0.39721792576198367
+      - 0.023351814075527333
+  - text: dialects.
+    confidence: 1
+    bbox:
+      - 0.19319938294286976
+      - 0.8183139532973128
+      - 0.09119010765367314
+      - 0.01889534924839764
+  - text: • Outputs include severity levels (e.g., "mild
+    confidence: 1
+    bbox:
+      - 0.11437404343659174
+      - 0.8706395357107328
+      - 0.4559505288609741
+      - 0.026231843101881647
+  - text: harassment" vs. "direct incitement") and
+    confidence: 1
+    bbox:
+      - 0.136012372249285
+      - 0.9096176129283763
+      - 0.4188562433169891
+      - 0.022068433662140508
+  - text: recommendations for moderation, such as de-
+    confidence: 1
+    bbox:
+      - 0.1360123770444662
+      - 0.949015063989216
+      - 0.48686242720936723
+      - 0.022016222479721903
+  - text: amaltination rant cuchancinn
+    confidence: 0.5
+    bbox:
+      - 0.13601238067987115
+      - 0.9895712631473549
+      - 0.380216360974106
+      - 0.00897524834784269
+  - text: 1984 @TheOfficial1984 • 4h
+    confidence: 1
+    bbox:
+      - 0.7434312233818756
+      - 0.47508690608154247
+      - 0.18238021530734627
+      - 0.01332560834298957
+  - text: ...
+    confidence: 1
+    bbox:
+      - 0.9768160748708635
+      - 0.4781976744344032
+      - 0.01700154479717053
+      - 0.005813953359875779
+  - text: The ADL monitors 10,000 spaces a
+    confidence: 1
+    bbox:
+      - 0.7449768240809059
+      - 0.4953650056129524
+      - 0.22411127243324214
+      - 0.013355924246070794
+  - text: day and feeds all that data into the OHI
+    confidence: 1
+    bbox:
+      - 0.7434312179048619
+      - 0.5115874854185342
+      - 0.2519319959986225
+      - 0.016222479721900274
+  - text: V3 that analyzes it in real time to
+    confidence: 1
+    bbox:
+      - 0.7434312281502299
+      - 0.5289687137270713
+      - 0.20865532325904557
+      - 0.014635936962494545
+  - text: identify you by your voice.
+    confidence: 1
+    bbox:
+      - 0.7418856245781129
+      - 0.5463499422238781
+      - 0.17001545973094556
+      - 0.016222479721900385
+  - text: For private subscription spaces, they
+    confidence: 1
+    bbox:
+      - 0.744976818109338
+      - 0.5811123985625265
+      - 0.23493045002552781
+      - 0.015063731170336103
+  - text: use their backdoor through CHEQ.
+    confidence: 1
+    bbox:
+      - 0.7434312216299758
+      - 0.5988372091866789
+      - 0.21947450085133124
+      - 0.014720148725277604
+  - text: "1. Data Collection and Access:"
+    confidence: 1
+    bbox:
+      - 0.7666151508466382
+      - 0.6263035920403047
+      - 0.12055640920316835
+      - 0.007531865585168052
+  - text: • ADL gains access to Spaces content through
+    confidence: 1
+    bbox:
+      - 0.7882534838189297
+      - 0.6465816917259101
+      - 0.17619782811175433
+      - 0.008941563918996698
+  - text: partnerships with X. Under these agreements, X
+    confidence: 1
+    bbox:
+      - 0.7959814570775634
+      - 0.6581691775558424
+      - 0.18083461850844829
+      - 0.010435473463073941
+  - text: provides API access or direct feeds of public
+    confidence: 1
+    bbox:
+      - 0.7959814577208183
+      - 0.6743916569891528
+      - 0.16537866933425172
+      - 0.005840901013459465
+  - text: Spaces data, including audio streams, participant
+    confidence: 1
+    bbox:
+      - 0.795981450857408
+      - 0.6874999999451797
+      - 0.18701700570404023
+      - 0.007267441976111844
+  - text: metadata (e.g., usernames, follower counts), and
+    confidence: 1
+    bbox:
+      - 0.7944358554649973
+      - 0.7004634993989293
+      - 0.18547140890514213
+      - 0.00883882623144272
+  - text: timestamps. Public Spaces are inherently open,
+    confidence: 1
+    bbox:
+      - 0.794435862229547
+      - 0.713662790745597
+      - 0.18083461850844829
+      - 0.00881693122837246
+  - text: but OHI V3 extends to monitoring thousands of
+    confidence: 1
+    bbox:
+      - 0.7959814569612115
+      - 0.7265353417984882
+      - 0.17774342491065231
+      - 0.008929774493220743
+  - text: sessions daily-reports indicate up to 10,000
+    confidence: 1
+    bbox:
+      - 0.7944358606925316
+      - 0.7398255815886204
+      - 0.17310663451395847
+      - 0.008725982690327094
+  - text: Spaces per day as of late 2024.
+    confidence: 1
+    bbox:
+      - 0.7959814523313306
+      - 0.7543453071021339
+      - 0.11746522501276402
+      - 0.007531865585168052
+  - text: • For non-public or invite-only Spaces, access may
+    confidence: 1
+    bbox:
+      - 0.7882534838424285
+      - 0.7717265352948557
+      - 0.193199374084849
+      - 0.00879672035005108
+  - text: rely on user reports or embedded monitoring tools
+    confidence: 1
+    bbox:
+      - 0.7944358657649742
+      - 0.7848837209539303
+      - 0.19010818048705302
+      - 0.00885903683349687
+  - text: within X's backend, though ADL claims to focus
+    confidence: 1
+    bbox:
+      - 0.7959814582363275
+      - 0.7977983777307519
+      - 0.17774342491065243
+      - 0.008887668611829325
+  - text: on public content. Integration with X's algorithm
+    confidence: 1
+    bbox:
+      - 0.7959814572836428
+      - 0.8122827345160839
+      - 0.18083461850844829
+      - 0.007531865585168052
+  - text: allows real-time ingestion, where audio is
+    confidence: 1
+    bbox:
+      - 0.795981456068376
+      - 0.825581395372535
+      - 0.15610509794825544
+      - 0.008720930039813557
+  - text: prioritized based on engagement metrics (e.g.,
+    confidence: 1
+    bbox:
+      - 0.7959814599424897
+      - 0.8386627907577096
+      - 0.17465223131285645
+      - 0.008961774797317967
+  - text: listener count, virality).
+    confidence: 1
+    bbox:
+      - 0.7944358612873627
+      - 0.8516801854862399
+      - 0.08809891405587722
+      - 0.008784930648008116
+  - text: 0 1
+    confidence: 1
+    bbox:
+      - 0.7449768172971107
+      - 0.8777520275498653
+      - 0.034003089594341174
+      - 0.01332560834298957
+  - text: "176"
+    confidence: 1
+    bbox:
+      - 0.7990726436602262
+      - 0.8779069769723723
+      - 0.03709428084028932
+      - 0.01308139478345316
+  - text: • 19
+    confidence: 1
+    bbox:
+      - 0.8608964455892281
+      - 0.879360465302915
+      - 0.034003089594341174
+      - 0.011717170856780812
+  - text: ill 216 1
+    confidence: 1
+    bbox:
+      - 0.9180834618490461
+      - 0.8777520276770454
+      - 0.07418856168057864
+      - 0.01332560834298957
+  - text: 1984 @TheOfficial1984 • 4h
+    confidence: 1
+    bbox:
+      - 0.7434312237221503
+      - 0.9154113557402287
+      - 0.18083461850844829
+      - 0.013367713671846748
+  - text: They also tie your voice to a
+    confidence: 1
+    bbox:
+      - 0.7449768192276521
+      - 0.934530707098665
+      - 0.17465223131285645
+      - 0.01332560834298957
+  - text: geolocation.
+    confidence: 1
+    bbox:
+      - 0.7449035628815162
+      - 0.9516174094904368
+      - 0.08206304698337319
+      - 0.013916343830413624
+  - text: "2. Audio Transcription:"
+    confidence: 1
+    bbox:
+      - 0.7666151486203556
+      - 0.9808806488057655
+      - 0.09119010765367308
+      - 0.008944932444761466

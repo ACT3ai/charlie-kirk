@@ -1,0 +1,73 @@
+source: site/internals/static/img/evidence/a2322242d2c8fdf3a0c25bbd81c933c7843a4bb0ca4f2f5cbf845ddaaa4517f6.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:49:03.826Z
+kind: image
+language: en-US
+text: |-
+  MER CAN
+  COMEBAN
+  PROVE ME WRONG / PROVE ME WRONG
+  VREN
+  AMER CAN
+  COMEBACK
+  TOUR
+  7:47 / 13:58
+blocks:
+  - text: MER CAN
+    confidence: 1
+    bbox:
+      - 0.3343023272847204
+      - 0.09870129874566591
+      - 0.1715116269504927
+      - 0.046753246812935356
+  - text: COMEBAN
+    confidence: 1
+    bbox:
+      - 0.29455358264773884
+      - 0.11343567990256043
+      - 0.21334337095687333
+      - 0.05988068638077704
+  - text: PROVE ME WRONG / PROVE ME WRONG
+    confidence: 1
+    bbox:
+      - 0.044556752859389655
+      - 0.19228834087921454
+      - 0.6775639783340002
+      - 0.1296907907508943
+  - text: VREN
+    confidence: 0.3
+    bbox:
+      - 0.0524041504645964
+      - 0.34517317307776196
+      - 0.032055307270060326
+      - 0.02920437548533983
+  - text: AMER CAN
+    confidence: 1
+    bbox:
+      - 0.4273255853593662
+      - 0.7324675347197007
+      - 0.1845930156039421
+      - 0.09885776473815178
+  - text: COMEBACK
+    confidence: 1
+    bbox:
+      - 0.43342829049618564
+      - 0.8267563166084753
+      - 0.1885196654944407
+      - 0.08784759705325207
+  - text: TOUR
+    confidence: 1
+    bbox:
+      - 0.5842131743897943
+      - 0.9009476713529699
+      - 0.03506202389287816
+      - 0.02927348814814923
+  - text: 7:47 / 13:58
+    confidence: 1
+    bbox:
+      - 0.04941860551211812
+      - 0.9765060241482044
+      - 0.03779069689727536
+      - 0.013253012048192736

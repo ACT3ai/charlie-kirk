@@ -1,0 +1,73 @@
+source: site/internals/static/img/evidence/c92ec4f6b2390915ef025aea45714f7db7455ee172506170b55eea240b916b91.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:50:24.601Z
+kind: image
+language: en-US
+text: |-
+  FBI Told him
+  to delete this
+  Charlie Kirk video
+  @NOTHINGSERIOUSNETWORK
+  STEW
+  & TiKTok
+  @710zhellahashish8
+  Brynesin too
+blocks:
+  - text: FBI Told him
+    confidence: 1
+    bbox:
+      - 0.25694444748263884
+      - 0.15624999995117195
+      - 0.4861111111111111
+      - 0.0390625
+  - text: to delete this
+    confidence: 1
+    bbox:
+      - 0.23958333702876977
+      - 0.20703124994419642
+      - 0.5173611111111112
+      - 0.0390625
+  - text: Charlie Kirk video
+    confidence: 1
+    bbox:
+      - 0.15625000381944432
+      - 0.25585937495659716
+      - 0.6875
+      - 0.0390625
+  - text: "@NOTHINGSERIOUSNETWORK"
+    confidence: 1
+    bbox:
+      - 0.6006944471643518
+      - 0.2929687499023438
+      - 0.32638888888888895
+      - 0.015625
+  - text: STEW
+    confidence: 0.5
+    bbox:
+      - 0.46220619852598255
+      - 0.435697116331904
+      - 0.09989315933651388
+      - 0.023137018084526062
+  - text: "& TiKTok"
+    confidence: 0.5
+    bbox:
+      - 0.02777777910879626
+      - 0.4628906249240452
+      - 0.23958333333333331
+      - 0.037109375
+  - text: "@710zhellahashish8"
+    confidence: 1
+    bbox:
+      - 0.024305553075396835
+      - 0.5078125001116072
+      - 0.34722222222222227
+      - 0.01953125
+  - text: Brynesin too
+    confidence: 0.5
+    bbox:
+      - 0.1458333358940972
+      - 0.6035156249267578
+      - 0.2048611111111111
+      - 0.017578125

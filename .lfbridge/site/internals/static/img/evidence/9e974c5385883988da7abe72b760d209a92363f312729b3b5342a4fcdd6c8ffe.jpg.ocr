@@ -1,0 +1,57 @@
+source: site/internals/static/img/evidence/9e974c5385883988da7abe72b760d209a92363f312729b3b5342a4fcdd6c8ffe.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:48:20.691Z
+kind: image
+language: en-US
+text: |-
+  Kevin Sorbo v
+  @ksorbs • 3h
+  Tyler Robinson's supposed boyfriend is gone.
+  0 ...
+  FREEDOM
+  Boyfriend of Kirk Suspect Disappears - Alarming Thing Left Behind
+blocks:
+  - text: Kevin Sorbo v
+    confidence: 1
+    bbox:
+      - 0.11246943907905457
+      - 0.0560344825071839
+      - 0.1711491442542787
+      - 0.03879310344827591
+  - text: "@ksorbs • 3h"
+    confidence: 1
+    bbox:
+      - 0.3325183362836186
+      - 0.056034483189655204
+      - 0.1466992665036675
+      - 0.04310344827586199
+  - text: Tyler Robinson's supposed boyfriend is gone.
+    confidence: 1
+    bbox:
+      - 0.11246944276283614
+      - 0.12499999995689659
+      - 0.5110024449877751
+      - 0.04741379310344829
+  - text: 0 ...
+    confidence: 0.5
+    bbox:
+      - 0.8875305630806847
+      - 0.051724137715517204
+      - 0.07334963325183363
+      - 0.04741379310344829
+  - text: FREEDOM
+    confidence: 1
+    bbox:
+      - 0.23960880038421242
+      - 0.8146551725985222
+      - 0.2200488997555012
+      - 0.051724137931034586
+  - text: Boyfriend of Kirk Suspect Disappears - Alarming Thing Left Behind
+    confidence: 1
+    bbox:
+      - 0.14583332923717032
+      - 0.9044117645163923
+      - 0.6583333283589929
+      - 0.0441176480260389

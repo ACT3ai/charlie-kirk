@@ -1,0 +1,81 @@
+source: site/internals/static/img/evidence/a383efdac3ed7746dc7aa7ca99aee7809cc436d14f4b83b0d1202ca505dc90a2.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:49:04.299Z
+kind: image
+language: en-US
+text: |-
+  NSA
+  CIA
+  MOSSAD
+  UVU
+  UTAH
+  VALLEY
+  UNIVERSITY
+  DIA
+  TRUSTED INVESTIGATORS
+blocks:
+  - text: NSA
+    confidence: 1
+    bbox:
+      - 0.18313953588469753
+      - 0.05927835077364385
+      - 0.07703488159179686
+      - 0.059278349258124696
+  - text: CIA
+    confidence: 1
+    bbox:
+      - 0.343023256035407
+      - 0.061855670685997954
+      - 0.06395348739624024
+      - 0.05670103001975668
+  - text: MOSSAD
+    confidence: 1
+    bbox:
+      - 0.4738372091732717
+      - 0.0644329900861097
+      - 0.13226744079589842
+      - 0.05412371078138878
+  - text: UVU
+    confidence: 0.5
+    bbox:
+      - 0.03633720874623853
+      - 0.4922680413925953
+      - 0.03343023300170898
+      - 0.025773195771510493
+  - text: UTAH
+    confidence: 0.5
+    bbox:
+      - 0.03779069859012337
+      - 0.520618556630576
+      - 0.021802324295043946
+      - 0.012886597885755191
+  - text: VALLEY
+    confidence: 1
+    bbox:
+      - 0.03633720950331579
+      - 0.5335051549259109
+      - 0.030523254394531255
+      - 0.015463917124123205
+  - text: UNIVERSITY
+    confidence: 1
+    bbox:
+      - 0.03779069800980441
+      - 0.5489690720622771
+      - 0.03343023300170898
+      - 0.012886597885755191
+  - text: DIA
+    confidence: 1
+    bbox:
+      - 0.6627906991381673
+      - 0.06185567066758846
+      - 0.06831394958496095
+      - 0.05670103001975679
+  - text: TRUSTED INVESTIGATORS
+    confidence: 1
+    bbox:
+      - 0.6148255817201125
+      - 0.904639174709753
+      - 0.3139534912109375
+      - 0.04385105627679908

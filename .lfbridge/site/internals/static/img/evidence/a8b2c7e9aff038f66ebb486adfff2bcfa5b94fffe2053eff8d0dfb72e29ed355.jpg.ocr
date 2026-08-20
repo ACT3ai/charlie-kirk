@@ -1,0 +1,25 @@
+source: site/internals/static/img/evidence/a8b2c7e9aff038f66ebb486adfff2bcfa5b94fffe2053eff8d0dfb72e29ed355.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:49:39.326Z
+kind: image
+language: en-US
+text: |-
+  © 2023 Google
+  W 800S
+blocks:
+  - text: © 2023 Google
+    confidence: 1
+    bbox:
+      - 0.01580524930339137
+      - 0.7976455990184907
+      - 0.13342962355840773
+      - 0.09732823699485249
+  - text: W 800S
+    confidence: 0.5
+    bbox:
+      - 0.37904761174071266
+      - 0.5916030527262814
+      - 0.10857144310360861
+      - 0.2977099236641221

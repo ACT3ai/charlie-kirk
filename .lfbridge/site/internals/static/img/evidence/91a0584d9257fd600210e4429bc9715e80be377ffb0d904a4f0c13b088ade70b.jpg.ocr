@@ -1,0 +1,105 @@
+source: site/internals/static/img/evidence/91a0584d9257fd600210e4429bc9715e80be377ffb0d904a4f0c13b088ade70b.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:47:52.644Z
+kind: image
+language: en-US
+text: |-
+  Tyler Robinson
+  walking by at 11.49am
+  Phil Lyman's car
+  parked at 11:30am
+  Phil Lyman's Aunt's driveway
+  /FOX
+  NEWS
+  7:35 CT
+  NEW VIDEO OF ALLEGED "PERSON OF INTEREST"
+  /FOX NEWS ALERT
+  2040910
+  49
+blocks:
+  - text: Tyler Robinson
+    confidence: 1
+    bbox:
+      - 0.3864734295974235
+      - 0.19373219321937318
+      - 0.19323671497584538
+      - 0.05128205128205132
+  - text: walking by at 11.49am
+    confidence: 1
+    bbox:
+      - 0.3429951714304884
+      - 0.2535612533713201
+      - 0.2818035426731079
+      - 0.05128205128205121
+  - text: Phil Lyman's car
+    confidence: 1
+    bbox:
+      - 0.2818035423395445
+      - 0.4245014249084249
+      - 0.22705314009661837
+      - 0.056980056980056926
+  - text: parked at 11:30am
+    confidence: 1
+    bbox:
+      - 0.2640901753220612
+      - 0.4871794876305793
+      - 0.25603864734299514
+      - 0.054131054131054124
+  - text: Phil Lyman's Aunt's driveway
+    confidence: 1
+    bbox:
+      - 0.05314009744140278
+      - 0.6837606831908832
+      - 0.6634460547504025
+      - 0.10256410256410253
+  - text: /FOX
+    confidence: 0.5
+    bbox:
+      - 0.04830917928073
+      - 0.8062678061570118
+      - 0.09661835748792272
+      - 0.0883190883190883
+  - text: NEWS
+    confidence: 1
+    bbox:
+      - 0.06419869861890434
+      - 0.8763347170553747
+      - 0.08255268410208144
+      - 0.05074936847741107
+  - text: 7:35 CT
+    confidence: 1
+    bbox:
+      - 0.061169342831752675
+      - 0.928580467875966
+      - 0.07894955817819985
+      - 0.02887895100476734
+  - text: NEW VIDEO OF ALLEGED "PERSON OF INTEREST"
+    confidence: 1
+    bbox:
+      - 0.1674718231005708
+      - 0.809116808883709
+      - 0.7600644122383253
+      - 0.07407407407407407
+  - text: /FOX NEWS ALERT
+    confidence: 1
+    bbox:
+      - 0.40096618567977915
+      - 0.9116809115995116
+      - 0.2946859903381642
+      - 0.04558404558404561
+  - text: "2040910"
+    confidence: 0.3
+    bbox:
+      - 0.7278582944578637
+      - 0.9572649570987654
+      - 0.16586151368760071
+      - 0.031339031339031376
+  - text: "49"
+    confidence: 1
+    bbox:
+      - 0.9452495977133654
+      - 0.9487179491168091
+      - 0.03542673107890504
+      - 0.03988603988603989

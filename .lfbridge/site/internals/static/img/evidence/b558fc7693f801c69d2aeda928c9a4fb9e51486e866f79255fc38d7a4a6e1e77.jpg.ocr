@@ -1,0 +1,57 @@
+source: site/internals/static/img/evidence/b558fc7693f801c69d2aeda928c9a4fb9e51486e866f79255fc38d7a4a6e1e77.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:49:58.931Z
+kind: image
+language: en-US
+text: |-
+  Jon Bray
+  @jonaaronbray • Sep 20
+  ...
+  This is the murder weapon. The only projectile that hit Charlie was the
+  magnetic clasp used to hold his RØDE Wireless PRO microphone under his
+  shirt. Rectangular wound.. Rectangular projectile
+blocks:
+  - text: Jon Bray
+    confidence: 1
+    bbox:
+      - 0.1024948985967021
+      - 0.04090170482778288
+      - 0.10779559340106842
+      - 0.0317768391267752
+  - text: "@jonaaronbray • Sep 20"
+    confidence: 0.5
+    bbox:
+      - 0.25342465833333333
+      - 0.041975309012345696
+      - 0.28310502283105027
+      - 0.02962962962962956
+  - text: ...
+    confidence: 0.5
+    bbox:
+      - 0.9566210050460513
+      - 0.04691358037037041
+      - 0.03652967818795816
+      - 0.012345679012345623
+  - text: This is the murder weapon. The only projectile that hit Charlie was the
+    confidence: 1
+    bbox:
+      - 0.10273971780821935
+      - 0.08148148153086421
+      - 0.8219178082191781
+      - 0.029629629629629672
+  - text: magnetic clasp used to hold his RØDE Wireless PRO microphone under his
+    confidence: 1
+    bbox:
+      - 0.10502282376331822
+      - 0.11851851864197527
+      - 0.8744292237442923
+      - 0.029629629629629672
+  - text: shirt. Rectangular wound.. Rectangular projectile
+    confidence: 0.5
+    bbox:
+      - 0.10502283463184926
+      - 0.15555555543209876
+      - 0.5730593607305937
+      - 0.029629629629629672

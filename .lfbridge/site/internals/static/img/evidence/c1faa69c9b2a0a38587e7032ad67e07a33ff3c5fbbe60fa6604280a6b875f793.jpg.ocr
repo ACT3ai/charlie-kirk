@@ -1,0 +1,41 @@
+source: site/internals/static/img/evidence/c1faa69c9b2a0a38587e7032ad67e07a33ff3c5fbbe60fa6604280a6b875f793.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:50:13.595Z
+kind: image
+language: en-US
+text: |-
+  efx.
+  FY.COM
+  Y
+  FREEDON
+blocks:
+  - text: efx.
+    confidence: 0.3
+    bbox:
+      - 0.15384615161751858
+      - 0.07848837161118183
+      - 0.36538461755823204
+      - 0.10610465235358113
+  - text: FY.COM
+    confidence: 0.5
+    bbox:
+      - 2.904925656400371e-9
+      - 0.2020348832656822
+      - 0.4759615297670718
+      - 0.07703488411786041
+  - text: Y
+    confidence: 0.5
+    bbox:
+      - 0.8798076948899629
+      - 0.2209302334777905
+      - 0.08173076488353581
+      - 0.05232557941069804
+  - text: FREEDON
+    confidence: 0.5
+    bbox:
+      - 0.3894230881515981
+      - 0.8430232563173391
+      - 0.6081730595341436
+      - 0.05377906867588389

@@ -1,0 +1,49 @@
+source: site/internals/static/img/evidence/7c8edeccede2893f10c781c78ff9c291a3b23135ac66ae52527e2f8615548c93.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:47:18.250Z
+kind: image
+language: en-US
+text: |-
+  During the past year, the Trump insider was told by
+  contacts in the White House that the Secret Service had
+  caught Israeli government personnel placing electronic
+  devices on its emergency response vehicles on two
+  separate occasions.
+blocks:
+  - text: During the past year, the Trump insider was told by
+    confidence: 1
+    bbox:
+      - 0.035416665742187506
+      - 0.08609271601821189
+      - 0.8020833333333334
+      - 0.1258278145695364
+  - text: contacts in the White House that the Secret Service had
+    confidence: 1
+    bbox:
+      - 0.0333333333506945
+      - 0.26490066307947013
+      - 0.88125
+      - 0.09933774834437092
+  - text: caught Israeli government personnel placing electronic
+    confidence: 1
+    bbox:
+      - 0.03333332715773813
+      - 0.443708609602649
+      - 0.8645833333333333
+      - 0.11258278145695366
+  - text: devices on its emergency response vehicles on two
+    confidence: 1
+    bbox:
+      - 0.03333332889583337
+      - 0.6158940385430465
+      - 0.7979166666666666
+      - 0.11920529801324498
+  - text: separate occasions.
+    confidence: 1
+    bbox:
+      - 0.03302448851318799
+      - 0.8042232527549196
+      - 0.30675986607869465
+      - 0.11202473672020508

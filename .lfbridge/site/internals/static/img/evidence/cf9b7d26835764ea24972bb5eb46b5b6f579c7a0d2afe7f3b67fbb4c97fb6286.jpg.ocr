@@ -1,0 +1,169 @@
+source: site/internals/static/img/evidence/cf9b7d26835764ea24972bb5eb46b5b6f579c7a0d2afe7f3b67fbb4c97fb6286.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:50:32.732Z
+kind: image
+language: en-US
+text: |-
+  X
+  governor.utah.gov
+  10:30 a.m. Budget Hearing: Governor's Office of Economic
+  Opportunity
+  Location: Rampton Boardroom, Utah State Capitol
+  11:00 a.m. Budget Hearing: Utah Trust Lands Administration
+  Location: Rampton Boardroom, Utah State Capitol
+  11:30 a.m. Meeting with the Ambassador of Egypt
+  ion: Gold Room, Utah State Capitol
+  .m. Budget Hearing: Utah Office of State Treasurer
+  Location: Rampton Boardroom, Utah State Capitol
+  1:30 p.m. Budget Hearing: Utah Department of Workforce
+  Services
+  Location: Rampton Boardroom, Utah State Capitol
+  2:00 p.m. Budget Hearing: Utah National Guard
+  Location: Rampton Boardroom, Utah State Capitol
+  г.
+  L
+  3:00 p.m. Budget Hearing: Utah Office of the State Auditor
+  J
+blocks:
+  - text: X
+    confidence: 0.3
+    bbox:
+      - 0.104615385010989
+      - 0.018333333238095273
+      - 0.05538461538461538
+      - 0.029999999999999916
+  - text: governor.utah.gov
+    confidence: 1
+    bbox:
+      - 0.3415384580769231
+      - 0.018333333472222213
+      - 0.4153846153846154
+      - 0.026666666666666727
+  - text: "10:30 a.m. Budget Hearing: Governor's Office of Economic"
+    confidence: 1
+    bbox:
+      - 0.03692308342857132
+      - 0.12666666658333336
+      - 0.9107692307692308
+      - 0.021666666666666612
+  - text: Opportunity
+    confidence: 1
+    bbox:
+      - 0.03999999812307697
+      - 0.1616666664666666
+      - 0.19384615384615383
+      - 0.020000000000000018
+  - text: "Location: Rampton Boardroom, Utah State Capitol"
+    confidence: 1
+    bbox:
+      - 0.04000000203076918
+      - 0.22666666690000004
+      - 0.7938461538461538
+      - 0.023333333333333317
+  - text: "11:00 a.m. Budget Hearing: Utah Trust Lands Administration"
+    confidence: 1
+    bbox:
+      - 0.036923086369230654
+      - 0.2916666665833334
+      - 0.9446153846153845
+      - 0.021666666666666612
+  - text: "Location: Rampton Boardroom, Utah State Capitol"
+    confidence: 1
+    bbox:
+      - 0.03692308111538453
+      - 0.356666666375
+      - 0.7969230769230768
+      - 0.023333333333333317
+  - text: 11:30 a.m. Meeting with the Ambassador of Egypt
+    confidence: 1
+    bbox:
+      - 0.03692306715384636
+      - 0.4233333333541667
+      - 0.7815384615384614
+      - 0.021666666666666612
+  - text: "ion: Gold Room, Utah State Capitol"
+    confidence: 1
+    bbox:
+      - 0.11076922510769237
+      - 0.48833333334999995
+      - 0.5661538461538461
+      - 0.021666666666666723
+  - text: ".m. Budget Hearing: Utah Office of State Treasurer"
+    confidence: 1
+    bbox:
+      - 0.1200000057142856
+      - 0.55333333325
+      - 0.8
+      - 0.021666666666666723
+  - text: "Location: Rampton Boardroom, Utah State Capitol"
+    confidence: 1
+    bbox:
+      - 0.03692306696153869
+      - 0.618333333375
+      - 0.796923076923077
+      - 0.023333333333333317
+  - text: "1:30 p.m. Budget Hearing: Utah Department of Workforce"
+    confidence: 1
+    bbox:
+      - 0.03692307557692306
+      - 0.6833333336249999
+      - 0.9015384615384614
+      - 0.023333333333333317
+  - text: Services
+    confidence: 1
+    bbox:
+      - 0.03681928612030506
+      - 0.7197490327334041
+      - 0.13559219360351563
+      - 0.017168601353963253
+  - text: "Location: Rampton Boardroom, Utah State Capitol"
+    confidence: 1
+    bbox:
+      - 0.036923068953846304
+      - 0.7850000000166667
+      - 0.7969230769230768
+      - 0.021666666666666612
+  - text: "2:00 p.m. Budget Hearing: Utah National Guard"
+    confidence: 1
+    bbox:
+      - 0.03692307074358986
+      - 0.8500000000694444
+      - 0.7415384615384615
+      - 0.021666666666666723
+  - text: "Location: Rampton Boardroom, Utah State Capitol"
+    confidence: 1
+    bbox:
+      - 0.03692307949999995
+      - 0.9150000002916666
+      - 0.796923076923077
+      - 0.023333333333333317
+  - text: г.
+    confidence: 0.3
+    bbox:
+      - 0.9169230767692307
+      - 0.9316666665555556
+      - 0.024615384615384595
+      - 0.013333333333333308
+  - text: L
+    confidence: 1
+    bbox:
+      - 0.9169230767692307
+      - 0.9566666665555555
+      - 0.024615384615384595
+      - 0.01333333333333342
+  - text: "3:00 p.m. Budget Hearing: Utah Office of the State Auditor"
+    confidence: 1
+    bbox:
+      - 0.03692308340659329
+      - 0.9799999999404763
+      - 0.9076923076923076
+      - 0.018333333333333313
+  - text: J
+    confidence: 1
+    bbox:
+      - 0.9630769232
+      - 0.9566666668166666
+      - 0.024615384615384706
+      - 0.015000000000000013

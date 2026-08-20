@@ -1,0 +1,49 @@
+source: site/internals/static/img/evidence/a35abcdcc3a49fb1706d6d1bbb528235ebb51a4ab6f2081d215c0d507388da98.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:49:00.772Z
+kind: image
+language: en-US
+text: |-
+  NITRE
+  JESUS
+  WAS
+  LIMMIGRANTI
+  Du SU
+blocks:
+  - text: NITRE
+    confidence: 0.3
+    bbox:
+      - 0.2887254908541711
+      - 0.30821078457350415
+      - 0.057679737938774955
+      - 0.022303920984268255
+  - text: JESUS
+    confidence: 1
+    bbox:
+      - 0.3027777785912698
+      - 0.4062499999255953
+      - 0.11388888888888887
+      - 0.039583333333333304
+  - text: WAS
+    confidence: 1
+    bbox:
+      - 0.3194444450925926
+      - 0.4354166665972222
+      - 0.03888888888888886
+      - 0.012500000000000067
+  - text: LIMMIGRANTI
+    confidence: 0.5
+    bbox:
+      - 0.29948889210803886
+      - 0.44559999951960205
+      - 0.12095555199517144
+      - 0.03386666774749769
+  - text: Du SU
+    confidence: 0.3
+    bbox:
+      - 0.0722222231597222
+      - 0.49166666658854163
+      - 0.075
+      - 0.01041666666666674

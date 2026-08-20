@@ -1,0 +1,105 @@
+source: site/internals/static/img/evidence/7ac0124208fc391f991990a4eea5a01dbf102d31184a6cf3aa12c3ac6cda86cc.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:47:18.522Z
+kind: image
+language: en-US
+text: |-
+  4
+  Drone Spy Plane N1098L
+  Spy Plane N1098L @ Sept 10th. Designed to drop off/pick up drones.
+  AXEL10. HADES Spy program.
+  The Flight N1098L is designed to launch military drones.
+  Normally flies at 41,000' altitude. Dropped to 203' altitude
+  116 knots stall speed @ 9:16am MT 1-mile from UVU.
+  Then looped back to 1-mile from UVU and 203' altitude @
+  stall speed 25 minutes after assassination.
+  203' Altitude
+  TAVLER
+  ~1 mile
+blocks:
+  - text: "4"
+    confidence: 0.5
+    bbox:
+      - 0.024709302468256984
+      - 0.034120735821325576
+      - 0.018895348866780598
+      - 0.03937007660756753
+  - text: Drone Spy Plane N1098L
+    confidence: 1
+    bbox:
+      - 0.0651618344357541
+      - 0.017809747504547335
+      - 0.5120279134114584
+      - 0.08840836801540408
+  - text: Spy Plane N1098L @ Sept 10th. Designed to drop off/pick up drones.
+    confidence: 1
+    bbox:
+      - 0.027616284624061335
+      - 0.10469314066689095
+      - 0.5334302164713542
+      - 0.042288485273414
+  - text: AXEL10. HADES Spy program.
+    confidence: 1
+    bbox:
+      - 0.027616286851002276
+      - 0.15463297250409347
+      - 0.23401161702473958
+      - 0.03434340503385058
+  - text: The Flight N1098L is designed to launch military drones.
+    confidence: 1
+    bbox:
+      - 0.7122093103818433
+      - 0.026246719444545707
+      - 0.2659883626302084
+      - 0.021286373390904667
+  - text: Normally flies at 41,000' altitude. Dropped to 203' altitude
+    confidence: 1
+    bbox:
+      - 0.7122093136393228
+      - 0.05511811030193847
+      - 0.28343021647135413
+      - 0.02129584931007511
+  - text: 116 knots stall speed @ 9:16am MT 1-mile from UVU.
+    confidence: 1
+    bbox:
+      - 0.7122093037590086
+      - 0.08122743639108254
+      - 0.26162790934244795
+      - 0.02113476786515911
+  - text: Then looped back to 1-mile from UVU and 203' altitude @
+    confidence: 1
+    bbox:
+      - 0.7122093045319313
+      - 0.10761154907709158
+      - 0.27616278076171874
+      - 0.021148980022481
+  - text: stall speed 25 minutes after assassination.
+    confidence: 1
+    bbox:
+      - 0.7122093110018471
+      - 0.13357400739976355
+      - 0.2020348714192708
+      - 0.01865696361922753
+  - text: 203' Altitude
+    confidence: 1
+    bbox:
+      - 0.768796617631631
+      - 0.25352150279767693
+      - 0.16298815917968756
+      - 0.05201210958432634
+  - text: TAVLER
+    confidence: 0.5
+    bbox:
+      - 0.9388935466851532
+      - 0.5613065058935875
+      - 0.05971290588378908
+      - 0.03224263151056361
+  - text: ~1 mile
+    confidence: 1
+    bbox:
+      - 0.5954701807724119
+      - 0.6559557830385214
+      - 0.10852447509765617
+      - 0.1449415755472745

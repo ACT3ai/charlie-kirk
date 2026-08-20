@@ -1,0 +1,57 @@
+source: site/internals/static/img/evidence/d9520ba5e0b4e8badaeb9adbab6b0aa761395039d7605cb78956a7f5b5c7cacf.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:50:41.675Z
+kind: image
+language: en-US
+text: |-
+  TURNI
+  POIN
+  Play
+  DAN RELEP
+  sety
+  0:01
+blocks:
+  - text: TURNI
+    confidence: 1
+    bbox:
+      - 0.38461538343195273
+      - 0.3207547176100629
+      - 0.18934911242603553
+      - 0.06289308176100628
+  - text: POIN
+    confidence: 1
+    bbox:
+      - 0.3786982239053254
+      - 0.37735849119496856
+      - 0.1538461538461539
+      - 0.06289308176100628
+  - text: Play
+    confidence: 1
+    bbox:
+      - 0.029585799852070986
+      - 0.6415094346698114
+      - 0.09467455621301776
+      - 0.05660377358490565
+  - text: DAN RELEP
+    confidence: 1
+    bbox:
+      - 0.1618138052253175
+      - 0.6730182451635786
+      - 0.20920971300474991
+      - 0.0721713671894193
+  - text: sety
+    confidence: 0.5
+    bbox:
+      - 0.03550295689349117
+      - 0.7798742144025158
+      - 0.3372781065088758
+      - 0.18867924528301883
+  - text: 0:01
+    confidence: 1
+    bbox:
+      - 0.8816568039306847
+      - 0.867924528616352
+      - 0.1124260355029586
+      - 0.05660377358490565

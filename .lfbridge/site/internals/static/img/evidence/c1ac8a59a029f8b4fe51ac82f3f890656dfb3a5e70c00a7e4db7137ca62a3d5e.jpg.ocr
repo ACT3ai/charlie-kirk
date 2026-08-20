@@ -1,0 +1,49 @@
+source: site/internals/static/img/evidence/c1ac8a59a029f8b4fe51ac82f3f890656dfb3a5e70c00a7e4db7137ca62a3d5e.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:50:18.644Z
+kind: image
+language: en-US
+text: |-
+  -ppi
+  CONS
+  FCT
+  MON
+  d @universehop00
+blocks:
+  - text: -ppi
+    confidence: 0.5
+    bbox:
+      - 0.9055232562225157
+      - 0.04289544233763265
+      - 0.01598837123956154
+      - 0.024128685767094038
+  - text: CONS
+    confidence: 1
+    bbox:
+      - 0.8953488380305302
+      - 0.06970509394621172
+      - 0.02325581289242784
+      - 0.024128685767094038
+  - text: FCT
+    confidence: 0.3
+    bbox:
+      - 0.9273255821865606
+      - 0.04557640802798113
+      - 0.01744185917339036
+      - 0.024128685767094038
+  - text: MON
+    confidence: 1
+    bbox:
+      - 0.9404069768082228
+      - 0.0697050936432424
+      - 0.015988372231422465
+      - 0.02144772129260375
+  - text: d @universehop00
+    confidence: 1
+    bbox:
+      - 0.49854651711464876
+      - 0.9221902009781242
+      - 0.25145348099080217
+      - 0.056362076978289544

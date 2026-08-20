@@ -1,0 +1,142 @@
+source: site/internals/static/img/evidence/5281380355049b6c6bbf1cf8477124218caace48819d3abdc329203455f96af5.jpg
+status: done
+engine: gemini-flash-latest
+provider: gemini
+generated: 2026-08-20T12:48:14.603Z
+kind: image
+description: >-
+  ## Overview
+
+  This image is a digital screenshot of a flight-tracking web interface
+  (specifically adsbexchange.com) displaying map tracking and telemetry data for
+  an aircraft registered as N888KG. The interface consists of a dark-themed data
+  panel on the left side and an expansive geographic map on the right, covering
+  parts of Nevada, Utah, and Arizona. An overlay of bold red text on the lower
+  right of the map highlights a specific event: "20:30 UTC - Reappears on ADS-B
+  radar," near a cyan plane icon in northern Arizona/southern Utah.
+
+
+  ## Hyper-Detail
+
+  The interface is split into two primary visual sections:
+
+
+  1. **Left Information Sidebar:**
+     - **Header Section:** Features the registration "N888KG" in white bold text, an "X" close icon, "Hex: AC3C75", a "Copy Link" prompt, and the logo/URL "adsbexchange.com" in green/white with an antenna/satellite icon.
+     - **Thumbnail Image:** A small rectangular photo showing a white private business jet (Canadair / Bombardier Challenger 300) facing right on a tarmac.
+     - **Registration & Ownership Details:** 
+       - "Reg.: N888KG"
+       - "United States"
+       - "DB flags: LADD"
+       - "Type: CL30"
+       - "2013 BOMBARDIER BD-100 Challenger 300"
+       - "N888KG LLC"
+       - "Squawk: 0634"
+     - **Action Buttons:** Bright cyan/green button labeled "FULL DETAILS" with an external link icon, followed by a collapsible menu bar "FLIGHT ACTIVITY" with a cyan arrow, and a "History +" expandable section.
+     - **Telemetry Blocks (categorized by cyan subheaders):**
+       - **SPATIAL:** Groundspeed: 359 kt; Baro. altitude: ▲ 16025 ft; WGS84 altitude: ▲ 16775 ft; Vert. Rate: 3328 ft/min; Track: 358.2°; Pos.: 37.156°, -111.401°; Distance: n/a.
+       - **SIGNAL:** Source: ADS-B.
+       - **FMS SEL:** Sel. Alt.: 16512 ft; Sel. Head.: 344.5°.
+       - **WIND:** Speed: n/a; Direction (from): n/a; TAT / OAT: n/a.
+       - **SPEED:** Ground: 359 kt; True: n/a; Indicated: n/a; Mach: n/a.
+       - **ALTITUDE:** Barometric: ▲ 16025 ft; Baro. Rate: 3328 ft/min; Geom. WGS84: ▲ 16775 ft; Geom. Rate: 3136 ft/min; QNH: 1016.8 hPa.
+
+  2. **Main Map Canvas:**
+     - A topographic and navigational map displaying terrain textures (muted tans, greys, and forest green patches representing mountain ranges and national forests).
+     - Marked areas include the **Nevada Test and Training Range (NTTR)**, **Nevada National Security Site**, **Utah Test and Training Range (UTTR)**, **Dugway Proving Ground**, **Basin and Range National Monument**, **Grand Staircase-Escalante National Monument**, and **Glen Canyon National Recreation Area**.
+     - Visible cities/towns labeled: Salt Lake City, Provo, Sandy, Tooele, Layton, Price, Elko, Ely, Cedar City, St. George, Mesquite, Page.
+     - Near the bottom right, over the Colorado River / Lake Powell / Glen Canyon area, is a small bright cyan airplane icon flying in a north-northwesterly heading.
+     - Superimposed over the lower-right map area in bold sans-serif red text is:
+       "**20:30 UTC -**"
+       "**Reappears on**"
+       "**ADS-B radar**"
+     - **Bottom Navigation/Time Bar:** Dark bar along the very bottom displaying a scale "20 NM", "UTC", "Date: 2025-09-10", and "Time: 20:36:30 Z".
+
+  ## Composition
+
+  - **Sidebar (Frame-Left):** Occupies approximately 15% of the total width
+  (~15% of the frame area), structured in a vertical list format against a solid
+  dark grey/black background (`#1A1A1A` tone).
+
+  - **Map View (Frame-Center to Frame-Right):** Occupies approximately 85% of
+  the frame area.
+
+  - **Aircraft Icon:** Situated in the lower-right quadrant (~75% across, ~80%
+  down).
+
+  - **Red Text Annotation:** Positioned directly above the aircraft icon in the
+  lower-right quadrant, occupying roughly 10% of the total frame.
+
+  - **Balance & Focus:** Flat 2D graphic user interface screenshot. Uniform
+  sharp focus across all text, vector graphics, and raster map elements with
+  zero optical depth of field.
+
+
+  ## Location
+
+  - **Location:** Western United States (Intermountain West region encompassing
+  Nevada, Utah, and Northern Arizona).
+
+  - **Aircraft Coordinate Position:** Lat: 37.156° N, Long: -111.401° W (Near
+  Page, Arizona / Lake Powell / Glen Canyon National Recreation Area).
+
+  - **Type:** Regional aerial navigation map / GIS interface.
+
+
+  ## Setting & Place
+
+  - **Setting:** Digital user interface / Geographic information system (GIS)
+  screenshot.
+
+  - **Physical context represented:** Vast remote desert, national monuments,
+  military testing ranges, and mountain basins in the American Southwest.
+
+
+  ## Lighting
+
+  - **Type:** Digital display rendering (non-photographic).
+
+  - **Color Scheme:** Dark mode application interface with high-contrast colored
+  text (cyan, green, white, red) against low-saturation terrain tiles.
+
+
+  ## Cinematography
+
+  - **Shot Type:** Direct digital screenshot / Screen capture.
+
+  - **Orientation:** Landscape format.
+
+  - **Perspective:** Top-down orthographic 2D map projection with overlaid UI
+  sidebar.
+
+
+  ## People
+
+  - No people in frame.
+
+
+  ## Objects & Text
+
+  - **Aircraft:** Bombardier BD-100 Challenger 300 (shown in small thumbnail and
+  tracked via icon).
+
+  - **Logos/Brands:** ADS-B Exchange (`adsbexchange.com`), Canadair /
+  Bombardier.
+
+  - **Key Legible Text:**
+    - `"N888KG"`
+    - `"Hex: AC3C75"`
+    - `"adsbexchange.com"`
+    - `"2013 BOMBARDIER BD-100 Challenger 300"`
+    - `"20:30 UTC - Reappears on ADS-B radar"`
+    - `"Date: 2025-09-10"`
+    - `"Time: 20:36:30 Z"`
+    - Multiple geographic place names including `"Salt Lake City"`, `"Nevada Test and Training Range (NTTR)"`, `"Grand Staircase-Escalante National Monument"`, `"Glen Canyon National Recreation Area"`.
+
+  ## Colors & Mood
+
+  - **Palette:** Dark charcoal grey, slate, earthy muted beige, olive green,
+  desaturated rose/pink (restricted airspace zones), accented by high-visibility
+  cyan (`#00FFFF`), lime green, and bold crimson red text.
+
+  - **Mood:** Analytical, technical, investigative, and informational.

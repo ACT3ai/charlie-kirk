@@ -1,0 +1,113 @@
+source: site/internals/static/img/evidence/9f490ab61506492440743b2299f107a8ce1799b1f963f2e05b99530d1b9897be.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:48:54.280Z
+kind: image
+language: en-US
+text: |-
+  RealBaronPodcast
+  @realbaronpod • 21m
+  Probably a total coincidence, but noted "rooftop videographer"
+  @lifeisdriving was in the right spot at the right time to capture a white
+  Toyota Camry and silver Toyota RAV4 lined up back-to-back leaving the
+  scene of the Charlie Kirk incident.
+  ...
+  Candace Owens v
+  @RealCandaceO • 21h
+  License plates for our "Egyptians" on the day of the assasination are as
+  follows:
+  Silver 2025 Toyota Rav4, Utah license plate number T092ZS.
+  White 2025 Toyota Camry, Arizona license plate number CWN9872...
+blocks:
+  - text: RealBaronPodcast
+    confidence: 1
+    bbox:
+      - 0.07843137063725494
+      - 0.0366379311602012
+      - 0.22941176470588234
+      - 0.023706896551724088
+  - text: "@realbaronpod • 21m"
+    confidence: 1
+    bbox:
+      - 0.3470588239379085
+      - 0.03663793126795978
+      - 0.24509803921568624
+      - 0.028017241379310387
+  - text: Probably a total coincidence, but noted "rooftop videographer"
+    confidence: 1
+    bbox:
+      - 0.07916666979166656
+      - 0.06849314986963173
+      - 0.7291666666666667
+      - 0.03652968077824037
+  - text: "@lifeisdriving was in the right spot at the right time to capture a white"
+    confidence: 1
+    bbox:
+      - 0.07843136257352963
+      - 0.11422413806573273
+      - 0.7980392156862746
+      - 0.028017241379310387
+  - text: Toyota Camry and silver Toyota RAV4 lined up back-to-back leaving the
+    confidence: 1
+    bbox:
+      - 0.0784313631617649
+      - 0.15086206934267243
+      - 0.8254901960784313
+      - 0.030172413793103425
+  - text: scene of the Charlie Kirk incident.
+    confidence: 1
+    bbox:
+      - 0.0782696941856315
+      - 0.18201335832728693
+      - 0.3945314594343597
+      - 0.033659166303174226
+  - text: ...
+    confidence: 1
+    bbox:
+      - 0.9215686278186275
+      - 0.04094827578125004
+      - 0.02941176470588236
+      - 0.010775862068965525
+  - text: Candace Owens v
+    confidence: 1
+    bbox:
+      - 0.14705882537581697
+      - 0.7435344826329022
+      - 0.2215686274509804
+      - 0.0237068965517242
+  - text: "@RealCandaceO • 21h"
+    confidence: 1
+    bbox:
+      - 0.38627451194444445
+      - 0.7435344826688218
+      - 0.25686274509803925
+      - 0.023706896551724088
+  - text: License plates for our "Egyptians" on the day of the assasination are as
+    confidence: 1
+    bbox:
+      - 0.09999999605392172
+      - 0.7931034478448276
+      - 0.8254901960784313
+      - 0.034482758620689724
+  - text: "follows:"
+    confidence: 1
+    bbox:
+      - 0.09803921478431374
+      - 0.8340517238793104
+      - 0.09411764705882353
+      - 0.025862068965517238
+  - text: Silver 2025 Toyota Rav4, Utah license plate number T092ZS.
+    confidence: 1
+    bbox:
+      - 0.10000000703921554
+      - 0.9094827586206896
+      - 0.7039215686274509
+      - 0.030172413793103536
+  - text: White 2025 Toyota Camry, Arizona license plate number CWN9872...
+    confidence: 1
+    bbox:
+      - 0.10000000990196051
+      - 0.946120689682112
+      - 0.7921568627450981
+      - 0.028017241379310276

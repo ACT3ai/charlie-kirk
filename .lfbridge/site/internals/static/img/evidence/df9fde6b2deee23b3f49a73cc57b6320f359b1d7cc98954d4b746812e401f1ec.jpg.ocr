@@ -1,0 +1,41 @@
+source: site/internals/static/img/evidence/df9fde6b2deee23b3f49a73cc57b6320f359b1d7cc98954d4b746812e401f1ec.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:51:26.055Z
+kind: image
+language: en-US
+text: |-
+  A PLACE
+  UVU
+  A PLACE
+  SORENSE
+blocks:
+  - text: A PLACE
+    confidence: 1
+    bbox:
+      - 0.5318181813383839
+      - 0.34693877561224484
+      - 0.028787878787878807
+      - 0.010204081632653073
+  - text: UVU
+    confidence: 0.5
+    bbox:
+      - 0.6515151518308081
+      - 0.3530612243877551
+      - 0.037878787878787845
+      - 0.01632653061224487
+  - text: A PLACE
+    confidence: 1
+    bbox:
+      - 0.7833333338383839
+      - 0.3530612243877551
+      - 0.030303030303030276
+      - 0.010204081632653073
+  - text: SORENSE
+    confidence: 1
+    bbox:
+      - 0.9392242316579642
+      - 0.5863876942974978
+      - 0.059440676371256496
+      - 0.014533721184243897

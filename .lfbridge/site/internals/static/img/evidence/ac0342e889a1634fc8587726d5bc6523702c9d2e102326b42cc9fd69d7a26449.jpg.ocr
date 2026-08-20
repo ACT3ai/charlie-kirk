@@ -1,0 +1,57 @@
+source: site/internals/static/img/evidence/ac0342e889a1634fc8587726d5bc6523702c9d2e102326b42cc9fd69d7a26449.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:49:45.048Z
+kind: image
+language: en-US
+text: |-
+  WATCH CHARLIE KIRKS
+  HAND MOVE!!
+  TURNING
+  POINT USA
+  DININAN
+  0:01 / 1:16
+blocks:
+  - text: WATCH CHARLIE KIRKS
+    confidence: 1
+    bbox:
+      - 0.01587301494709004
+      - 0.01983002801699718
+      - 0.9761904761904763
+      - 0.09348441926345608
+  - text: HAND MOVE!!
+    confidence: 1
+    bbox:
+      - 0.22751322911522634
+      - 0.15014164291784704
+      - 0.5767195767195767
+      - 0.09065155807365444
+  - text: TURNING
+    confidence: 1
+    bbox:
+      - 0.2098873403431036
+      - 0.24909785140447438
+      - 0.31454960252872843
+      - 0.11416637863721113
+  - text: POINT USA
+    confidence: 1
+    bbox:
+      - 0.214934568708261
+      - 0.30296698332463967
+      - 0.3384667048378597
+      - 0.11718362046368735
+  - text: DININAN
+    confidence: 0.3
+    bbox:
+      - 0.8147164281131637
+      - 0.7643049001764062
+      - 0.18273645229440516
+      - 0.03796243802683885
+  - text: 0:01 / 1:16
+    confidence: 1
+    bbox:
+      - 0.6718503962421485
+      - 0.9371269292772637
+      - 0.12455317583033643
+      - 0.029428860283438274

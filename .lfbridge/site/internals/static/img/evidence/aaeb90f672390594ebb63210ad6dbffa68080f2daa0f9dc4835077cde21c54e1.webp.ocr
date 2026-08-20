@@ -1,0 +1,41 @@
+source: site/internals/static/img/evidence/aaeb90f672390594ebb63210ad6dbffa68080f2daa0f9dc4835077cde21c54e1.webp
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:49:41.776Z
+kind: image
+language: en-US
+text: |-
+  JLUMEORY
+  TOUR
+  naVE ME WRONG
+  PROV
+blocks:
+  - text: JLUMEORY
+    confidence: 0.3
+    bbox:
+      - 0.5708333302916667
+      - 6.666666108046115e-10
+      - 0.35416666666666674
+      - 0.06666666666666676
+  - text: TOUR
+    confidence: 1
+    bbox:
+      - 0.9200581406385664
+      - 0.03359173082683797
+      - 0.0639534870783488
+      - 0.031007752595124338
+  - text: naVE ME WRONG
+    confidence: 1
+    bbox:
+      - 0.30087210142226106
+      - 0.1703703702938233
+      - 0.47529067993164065
+      - 0.15004306369357634
+  - text: PROV
+    confidence: 1
+    bbox:
+      - 0.825581396373187
+      - 0.15245478304655746
+      - 0.1729651133219401
+      - 0.13178294146502467

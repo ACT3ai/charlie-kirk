@@ -1,0 +1,49 @@
+source: site/internals/static/img/evidence/d83b2b6978c4426131a6b44094e01a2891d7d75c05c1693880a5593c5f85e2cb.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:50:40.202Z
+kind: image
+language: en-US
+text: |-
+  JESUS
+  LORD
+  TINCLE TOM 11
+  pooo
+  SETO NOSAS HIM
+blocks:
+  - text: JESUS
+    confidence: 1
+    bbox:
+      - 0.23051886230793306
+      - 0.31860062515573784
+      - 0.08590802550315857
+      - 0.05812893311182665
+  - text: LORD
+    confidence: 1
+    bbox:
+      - 0.23124999972355767
+      - 0.395833333125
+      - 0.07812499999999997
+      - 0.054166666666666585
+  - text: TINCLE TOM 11
+    confidence: 1
+    bbox:
+      - 0.3830792750821958
+      - 0.759349597270895
+      - 0.11200456619262694
+      - 0.03917682568232228
+  - text: pooo
+    confidence: 0.3
+    bbox:
+      - 0.30048076573617016
+      - 0.8338141015399105
+      - 0.1415865421295166
+      - 0.08621795177459712
+  - text: SETO NOSAS HIM
+    confidence: 0.5
+    bbox:
+      - 0.6308962256585212
+      - 0.8446540903016668
+      - 0.044870284199714616
+      - 0.11918238798777259

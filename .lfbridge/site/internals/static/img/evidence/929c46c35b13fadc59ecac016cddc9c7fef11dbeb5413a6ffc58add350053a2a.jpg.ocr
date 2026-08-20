@@ -1,0 +1,89 @@
+source: site/internals/static/img/evidence/929c46c35b13fadc59ecac016cddc9c7fef11dbeb5413a6ffc58add350053a2a.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:47:53.739Z
+kind: image
+language: en-US
+text: |-
+  Governance
+  Staff
+  Board of Directors
+  ^
+  Charlie Kirk
+  Erika Kirk
+  David Engelhardt
+  Doug DeGroote
+  Mike Miller
+  Tom Sodeika
+blocks:
+  - text: Governance
+    confidence: 1
+    bbox:
+      - 0.1718749990625
+      - 0.08170515083735097
+      - 0.13749999999999998
+      - 0.019538188277086976
+  - text: Staff
+    confidence: 1
+    bbox:
+      - 0.6703125004129464
+      - 0.07815275299416391
+      - 0.057812500000000044
+      - 0.023090586145648295
+  - text: Board of Directors
+    confidence: 1
+    bbox:
+      - 0.012500002083333284
+      - 0.21847246890665084
+      - 0.375
+      - 0.04085257548845478
+  - text: ^
+    confidence: 1
+    bbox:
+      - 0.901562500107422
+      - 0.23090586136767322
+      - 0.017187500000000022
+      - 0.017761989342806372
+  - text: Charlie Kirk
+    confidence: 1
+    bbox:
+      - 0.05608893548186846
+      - 0.5690669155661868
+      - 0.12532212734222412
+      - 0.027052670981913662
+  - text: Erika Kirk
+    confidence: 1
+    bbox:
+      - 0.30463154972491785
+      - 0.5716287855801314
+      - 0.09698690176010133
+      - 0.02370513014852682
+  - text: David Engelhardt
+    confidence: 1
+    bbox:
+      - 0.4921875001822917
+      - 0.5719360570751925
+      - 0.190625
+      - 0.028419182948490218
+  - text: Doug DeGroote
+    confidence: 1
+    bbox:
+      - 0.7359374995182293
+      - 0.5719360570751925
+      - 0.17031249999999998
+      - 0.028419182948490218
+  - text: Mike Miller
+    confidence: 1
+    bbox:
+      - 0.060937499049479184
+      - 0.9325044405861456
+      - 0.11406250000000001
+      - 0.02131438721136758
+  - text: Tom Sodeika
+    confidence: 1
+    bbox:
+      - 0.27968750075
+      - 0.9307282413321493
+      - 0.14375
+      - 0.023090586145648295

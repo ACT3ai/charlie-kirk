@@ -1,0 +1,33 @@
+source: site/internals/static/img/evidence/a8098840a68acf7a66e470f30c5d0e8470f11ae9bd58edb6c35b945acc350a53.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:49:10.991Z
+kind: image
+language: en-US
+text: |-
+  TikTok
+  @ unlockine
+  truthso
+blocks:
+  - text: TikTok
+    confidence: 1
+    bbox:
+      - 0.15525267041531354
+      - 0.3450730823444761
+      - 0.32838355170355904
+      - 0.05561654688948292
+  - text: "@ unlockine"
+    confidence: 1
+    bbox:
+      - 0.15555555790123446
+      - 0.40338983041431264
+      - 0.4222222222222223
+      - 0.04406779661016946
+  - text: truthso
+    confidence: 1
+    bbox:
+      - 0.583333334675926
+      - 0.40338983014124297
+      - 0.27222222222222214
+      - 0.044067796610169574

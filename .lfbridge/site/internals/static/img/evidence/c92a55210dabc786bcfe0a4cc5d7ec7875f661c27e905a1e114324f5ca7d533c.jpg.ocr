@@ -1,0 +1,65 @@
+source: site/internals/static/img/evidence/c92a55210dabc786bcfe0a4cc5d7ec7875f661c27e905a1e114324f5ca7d533c.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:50:24.519Z
+kind: image
+language: en-US
+text: |-
+  Neodymium Magnet outside of shirt
+  Explosive propellant is in the microphone
+  A
+  RODE
+  Clip on microphone which was directed at Charles Neck
+  B
+  A
+blocks:
+  - text: Neodymium Magnet outside of shirt
+    confidence: 1
+    bbox:
+      - 0.4651162827046239
+      - 0.07249999982952737
+      - 0.4680232543945313
+      - 0.030697674751281823
+  - text: Explosive propellant is in the microphone
+    confidence: 1
+    bbox:
+      - 0.013584355162001656
+      - 0.13446607376691855
+      - 0.4998299255371093
+      - 0.10842687225341796
+  - text: A
+    confidence: 1
+    bbox:
+      - 0.7122093024887952
+      - 0.20639534938940396
+      - 0.03197674369812009
+      - 0.036337207794189474
+  - text: RODE
+    confidence: 1
+    bbox:
+      - 0.527616287939983
+      - 0.32558139551055665
+      - 0.303779052734375
+      - 0.10174418640136729
+  - text: Clip on microphone which was directed at Charles Neck
+    confidence: 1
+    bbox:
+      - 0.3604651304769511
+      - 0.5218023258294513
+      - 0.6380813598632813
+      - 0.0261976737976074
+  - text: B
+    confidence: 1
+    bbox:
+      - 0.64534883796148
+      - 0.882267441041265
+      - 0.04215116119384765
+      - 0.04360465240478517
+  - text: A
+    confidence: 1
+    bbox:
+      - 0.802325583368285
+      - 0.8720930230797853
+      - 0.07994185638427731
+      - 0.07412790679931647

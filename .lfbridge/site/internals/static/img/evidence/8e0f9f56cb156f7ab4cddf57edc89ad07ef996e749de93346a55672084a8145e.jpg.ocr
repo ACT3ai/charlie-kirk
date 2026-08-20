@@ -1,0 +1,65 @@
+source: site/internals/static/img/evidence/8e0f9f56cb156f7ab4cddf57edc89ad07ef996e749de93346a55672084a8145e.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:47:46.586Z
+kind: image
+language: en-US
+text: |-
+  CCG BRYSON • @RealBrysonGray • 16h
+  Objective facts
+  1. Tyler Robinson confessed to shooting Charlie kirk in discord messages.
+  Evidence: The literal discord logs
+  2. Tyler Robinson confessed to the shooting Charlie to his parents
+  Evidence: His parents said it
+  ...
+blocks:
+  - text: CCG BRYSON • @RealBrysonGray • 16h
+    confidence: 1
+    bbox:
+      - 0.11363636106601736
+      - 0.06726457416542098
+      - 0.46266233766233766
+      - 0.07623318385650224
+  - text: Objective facts
+    confidence: 1
+    bbox:
+      - 0.11363636272727275
+      - 0.17488789300448426
+      - 0.16883116883116883
+      - 0.06278026905829603
+  - text: 1. Tyler Robinson confessed to shooting Charlie kirk in discord messages.
+    confidence: 1
+    bbox:
+      - 0.10833335471107276
+      - 0.34482758638615363
+      - 0.8166666402445211
+      - 0.09239214311266153
+  - text: "Evidence: The literal discord logs"
+    confidence: 1
+    bbox:
+      - 0.10833333708333329
+      - 0.5172413794896018
+      - 0.375
+      - 0.09262409124673743
+  - text: 2. Tyler Robinson confessed to the shooting Charlie to his parents
+    confidence: 1
+    bbox:
+      - 0.11363636769480509
+      - 0.7130044840807175
+      - 0.7305194805194805
+      - 0.06726457399103136
+  - text: "Evidence: His parents said it"
+    confidence: 1
+    bbox:
+      - 0.11363636379870129
+      - 0.8923766822869955
+      - 0.3149350649350649
+      - 0.06726457399103136
+  - text: ...
+    confidence: 1
+    bbox:
+      - 0.9204545449134199
+      - 0.08968609887892376
+      - 0.03246753246753242
+      - 0.022421524663677084

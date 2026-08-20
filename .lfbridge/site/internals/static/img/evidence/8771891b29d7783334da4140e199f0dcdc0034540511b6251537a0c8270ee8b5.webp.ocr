@@ -1,0 +1,49 @@
+source: site/internals/static/img/evidence/8771891b29d7783334da4140e199f0dcdc0034540511b6251537a0c8270ee8b5.webp
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:47:33.505Z
+kind: image
+language: en-US
+text: |-
+  AMER CAN
+  COMEBACH
+  UVU
+  A PLACE
+  FOR YOU
+blocks:
+  - text: AMER CAN
+    confidence: 1
+    bbox:
+      - 0.11791486418563085
+      - 0.2624936799405677
+      - 0.07070313394069672
+      - 0.03318839199032608
+  - text: COMEBACH
+    confidence: 1
+    bbox:
+      - 0.12200262843094548
+      - 0.2780697401553319
+      - 0.07607518881559372
+      - 0.02981911376774138
+  - text: UVU
+    confidence: 0.5
+    bbox:
+      - 0.34179109290007736
+      - 0.04714119516712556
+      - 0.11525634676218033
+      - 0.06722137026073649
+  - text: A PLACE
+    confidence: 1
+    bbox:
+      - 0.727217680980246
+      - 0.00765074172548752
+      - 0.0767773762345314
+      - 0.036785103358830784
+  - text: FOR YOU
+    confidence: 1
+    bbox:
+      - 0.7324218756510417
+      - 0.04105571830400778
+      - 0.078125
+      - 0.032258064516129115

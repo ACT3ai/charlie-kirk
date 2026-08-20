@@ -1,0 +1,123 @@
+source: site/internals/static/img/evidence/574f2f24033090c06801c452dfd4bff5dd0e1740b6f59f6332839f938c04c82f.jpg
+status: done
+engine: gemini-flash-latest
+provider: gemini
+generated: 2026-08-20T12:49:11.549Z
+kind: image
+description: >-
+  ## Overview
+
+  This image is a composite digital screenshot of a social media post on X
+  (formerly Twitter) made by the user "John Cullen" (@I_Am_JohnCullen). The post
+  features an open audio editing software interface (Audacity on macOS)
+  displaying a dual-channel stereo waveform with distinct transient audio
+  spikes. The text of the post discusses audio analysis related to a claimed
+  shooting event involving Charlie Kirk, questioning the timing between audio
+  peaks.
+
+
+  ## Hyper-Detail
+
+  The screenshot displays a full social media feed interface overlaid with a
+  large modal viewing an image.
+
+
+  1. **Audio Editing Software Window (Foreground/Center Overlay):**
+     - The main viewer contains a screenshot of an Audacity session running on macOS (indicated by the red, yellow, and green window control dots at the top left).
+     - Track Name at top and left pane: "Adam Bartholomew crackthump Audio offset".
+     - Top Control Bar: Includes standard transport controls (pause, play, stop, rewind, fast-forward, record), tool selection icons (selection tool, envelope, draw, zoom, time shift, multi-tool), volume meters showing -54 to 0 dB ranges, and buttons labeled "Audio Setup" and "Share Audio".
+     - Main Waveform Area: Shows a light-purple/periwinkle dual-channel (stereo) waveform plot against a light gray/blue background.
+     - The horizontal timeline at the top spans from `0.00` to `0.35` seconds, marked in 0.05-second increments (`0.05`, `0.10`, `0.15`, `0.20`, `0.25`, `0.30`, `0.35`).
+     - The vertical amplitude axis ranges from `-1.0` to `1.0` for both top (Left) and bottom (Right) channels.
+     - Waveform Activity: Low noise floor from 0.00s to ~0.07s, followed by a sharp, high-amplitude transient burst peaking near ±1.0 around ~0.075s, a second prominent vertical transient line around ~0.115s, a third sharp spike at ~0.195s, and a very large dual-phase transient at ~0.205s–0.210s, followed by sustained chaotic decaying waveform data.
+     - Bottom Toolbar: Displays "Tempo: 120", "Time Signature: 4/4", Snap controls, and counter displays reading `00 h 00 m 00 s` and Selection `00 h 00 m 00.444 s`. Status text reads: "Stopped." and "Click and drag to move left selection boundary."
+
+  2. **Social Media UI (Right Side Panel & Overlays):**
+     - User Profile: "John Cullen" with an avatar of a bald man with a goatee. Beside it is a verified blue checkmark and a small cartoon rooster/chicken icon. Handle: `@I_Am_JohnCullen`.
+     - Post Text: 
+       "Did you know that two shots were fired at the Charlie Kirk shooting, within .07 seconds of each other?
+       
+       True story..
+       Microphones don't lie.
+       
+       @FBIDirectorKash does."
+     - Post Metadata: "4:16 AM · Sep 20, 2025 · 205.9K Views"
+     - Engagement Metrics: 305 replies, 869 reposts, 3.3K likes, 859 bookmarks, share icon.
+     - Reply Field: Profile icon showing a person standing in an open landscape, text prompt "Post your reply", and a "Reply" button.
+     - Threaded Reply Below: From the same user (`John Cull...` `@I_Am_John... · 2h`), reading:
+       "Does @Grok see two peaks, separated by .07 seconds?
+       
+       Yes or No?"
+       accompanied by a smaller thumbnail of the same Audacity waveform.
+     - Bottom Overlay Bar: Contains repost/interaction counters and icons over a dark translucent footer.
+
+  ## Composition
+
+  - **Audacity Window Screenshot:** Occupies ~75% of the frame on the left and
+  center (FRAME-LEFT to FRAME-CENTER).
+
+  - **Social Media Sidebar:** Occupies ~25% of the frame along the right edge
+  (FRAME-RIGHT).
+
+  - **Navigation Controls:** Left and right white circular arrow buttons
+  overlaid on the sides of the media viewer at mid-height.
+
+  - **Visual Balance:** Asymmetrical layout typical of an open media modal on a
+  desktop web browser (media on left, discussion panel on right).
+
+  - **Depth of Field:** Entire screenshot is in sharp digital focus with no
+  optical depth of field.
+
+
+  ## Location
+
+  (Indeterminate) – This is a digital screenshot of software and a web user
+  interface; it does not represent a physical geographic location.
+
+
+  ## Setting & Place
+
+  Digital computer desktop/web application interface (interior digital
+  environment).
+
+
+  ## Lighting
+
+  Not applicable (flat digital screen display UI with light-mode audio workspace
+  and dark/light hybrid web elements).
+
+
+  ## Cinematography
+
+  Not applicable (direct digital screen capture / UI render).
+
+
+  ## People
+
+  - **Profile Avatars (Micro-scale):**
+    1. Top-right avatar for "John Cullen": Bald adult male with a graying goatee and mustache, neutral expression, framed close-up on the face.
+    2. Reply box avatar: Figure in an outdoor landscape (too small to discern details).
+
+  ## Objects & Text
+
+  - **Software Interface:** Audacity Digital Audio Workstation.
+
+  - **Web Platform:** X (formerly Twitter) interface elements.
+
+  - **Key Legible Text:**
+    - "Adam Bartholomew crackthump Audio offset"
+    - "Did you know that two shots were fired at the Charlie Kirk shooting, within .07 seconds of each other?"
+    - "True story.. Microphones don't lie."
+    - "@FBIDirectorKash does."
+    - "4:16 AM · Sep 20, 2025 · 205.9K Views"
+    - "Does @Grok see two peaks, separated by .07 seconds?"
+    - "Yes or No?"
+    - Timeline and counter digits: `0.00`, `0.05`, `0.10`, `0.15`, `0.20`, `0.25`, `0.30`, `0.35`, `00 h 00 m 00 s`, `00 h 00 m 00.444 s`.
+
+  ## Colors & Mood
+
+  - **Dominant Palette:** White, light gray/silver, soft blue/lavender (waveform
+  lines), dark charcoal/black text, and accent blue (links and verification
+  badges).
+
+  - **Mood/Tone:** Analytical, conspiratorial, technical, and investigative.

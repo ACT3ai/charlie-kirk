@@ -1,0 +1,89 @@
+source: site/internals/static/img/evidence/aa90f119e4f5b5626ee625df1620dc2b4d0697955d048570cab647d2ac8c19e5.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:49:38.982Z
+kind: image
+language: en-US
+text: |-
+  AMEN
+  LARS
+  COMEBACK
+  TOUR
+  VRONG / PROVE M
+  TikTok
+  @ caseypbryson
+  I turned the camera off
+  right before the gun went:
+  off.
+blocks:
+  - text: AMEN
+    confidence: 1
+    bbox:
+      - 0.2048611097842262
+      - 7.672995572249874e-11
+      - 0.3715277777777778
+      - 0.044921875
+  - text: LARS
+    confidence: 0.5
+    bbox:
+      - 0.6249999969618056
+      - -2.1972645924961398e-10
+      - 0.24305555555555558
+      - 0.03320312499999989
+  - text: COMEBACK
+    confidence: 1
+    bbox:
+      - 0.17179793971770804
+      - 0.035545686642661556
+      - 0.7252032491895888
+      - 0.061145681887865067
+  - text: TOUR
+    confidence: 1
+    bbox:
+      - 0.7604166650173612
+      - 0.08398437509765622
+      - 0.13194444444444442
+      - 0.015625
+  - text: VRONG / PROVE M
+    confidence: 1
+    bbox:
+      - -0.002040047054195446
+      - 0.14846932734078244
+      - 0.9968418545193142
+      - 0.08972528949379921
+  - text: TikTok
+    confidence: 1
+    bbox:
+      - 0.013569343052647972
+      - 0.5071248830584193
+      - 0.12911131646898055
+      - 0.020906483754515648
+  - text: "@ caseypbryson"
+    confidence: 1
+    bbox:
+      - 0.013888889901620342
+      - 0.5292968751464844
+      - 0.22569444444444442
+      - 0.017578125
+  - text: I turned the camera off
+    confidence: 1
+    bbox:
+      - 0.07638889199942127
+      - 0.5722656248860677
+      - 0.7465277777777778
+      - 0.04296875
+  - text: "right before the gun went:"
+    confidence: 1
+    bbox:
+      - 0.08333334027777767
+      - 0.6210937497884115
+      - 0.8333333333333335
+      - 0.044921875
+  - text: off.
+    confidence: 1
+    bbox:
+      - 0.08333333420138889
+      - 0.666015625
+      - 0.1388888888888889
+      - 0.046875

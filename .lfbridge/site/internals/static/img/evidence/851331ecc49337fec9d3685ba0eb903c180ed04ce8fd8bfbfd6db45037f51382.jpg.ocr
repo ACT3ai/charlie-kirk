@@ -1,0 +1,41 @@
+source: site/internals/static/img/evidence/851331ecc49337fec9d3685ba0eb903c180ed04ce8fd8bfbfd6db45037f51382.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:47:32.349Z
+kind: image
+language: en-US
+text: |-
+  MERC
+  BEST AGAR
+  WREAMERICA
+  TREAT AGAIN
+blocks:
+  - text: MERC
+    confidence: 0.5
+    bbox:
+      - 0.12321683170363078
+      - 0.1433500308742739
+      - 0.054521365960439036
+      - 0.04328257596051244
+  - text: BEST AGAR
+    confidence: 0.5
+    bbox:
+      - 0.43895349081067214
+      - 0.136950905088981
+      - 0.09302325248718268
+      - 0.04175279935201004
+  - text: WREAMERICA
+    confidence: 1
+    bbox:
+      - 0.7935788310349323
+      - 0.06440638260279641
+      - 0.09743536313374845
+      - 0.04172987054895472
+  - text: TREAT AGAIN
+    confidence: 1
+    bbox:
+      - 0.7950581414611303
+      - 0.10555555602967504
+      - 0.08575580914815273
+      - 0.03914728694491909

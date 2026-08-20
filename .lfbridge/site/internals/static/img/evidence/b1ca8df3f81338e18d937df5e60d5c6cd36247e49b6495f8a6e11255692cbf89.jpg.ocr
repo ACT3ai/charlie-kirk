@@ -1,0 +1,97 @@
+source: site/internals/static/img/evidence/b1ca8df3f81338e18d937df5e60d5c6cd36247e49b6495f8a6e11255692cbf89.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:49:51.662Z
+kind: image
+language: en-US
+text: |-
+  EAST IDAHO
+  • NEWS.COM
+  Cellebrite DI Ltd. is a digital forensics company
+  headquartered
+  0 Petah Tikva, Israel that provides
+  tools for law enforcement agencies as well as
+  enterprise companies and service providers to
+  collect, review, analyze and manage digital data. (2]
+  Their flagship product series is the Cellebrite UFED.
+  Cellebrite DI Ltd.
+  Cellebrite
+blocks:
+  - text: EAST IDAHO
+    confidence: 1
+    bbox:
+      - 0.854687500515625
+      - 0.0509915017563739
+      - 0.11093750000000002
+      - 0.03399433427762044
+  - text: • NEWS.COM
+    confidence: 1
+    bbox:
+      - 0.8140625010825893
+      - 0.0566572238365034
+      - 0.15156250000000004
+      - 0.062322946175637495
+  - text: Cellebrite DI Ltd. is a digital forensics company
+    confidence: 1
+    bbox:
+      - 0.016666681350063505
+      - 0.45042492850127114
+      - 0.40416665077209474
+      - 0.045815671807307945
+  - text: headquartered
+    confidence: 1
+    bbox:
+      - 0.017187501359374968
+      - 0.5184135975920681
+      - 0.1359375
+      - 0.031161473087818692
+  - text: 0 Petah Tikva, Israel that provides
+    confidence: 1
+    bbox:
+      - 0.149999999515625
+      - 0.5184135981019831
+      - 0.2796875
+      - 0.03682719546742208
+  - text: tools for law enforcement agencies as well as
+    confidence: 1
+    bbox:
+      - 0.0156250008072917
+      - 0.5722379606232295
+      - 0.37812500000000004
+      - 0.03399433427762044
+  - text: enterprise companies and service providers to
+    confidence: 1
+    bbox:
+      - 0.016666671510416585
+      - 0.6161473087639836
+      - 0.38749999999999996
+      - 0.03824362606232301
+  - text: collect, review, analyze and manage digital data. (2]
+    confidence: 1
+    bbox:
+      - 0.016963403753804097
+      - 0.6737138490224602
+      - 0.42086353302001944
+      - 0.05492804746114499
+  - text: Their flagship product series is the Cellebrite UFED.
+    confidence: 1
+    bbox:
+      - 0.016666669249369416
+      - 0.729323308664353
+      - 0.42916665077209465
+      - 0.03759398473896325
+  - text: Cellebrite DI Ltd.
+    confidence: 1
+    bbox:
+      - 0.16093749840625002
+      - 0.835694051104816
+      - 0.15937500000000002
+      - 0.03399433427762033
+  - text: Cellebrite
+    confidence: 1
+    bbox:
+      - 0.18097518789203404
+      - 0.920866310286417
+      - 0.20054962635040285
+      - 0.07611440599133545

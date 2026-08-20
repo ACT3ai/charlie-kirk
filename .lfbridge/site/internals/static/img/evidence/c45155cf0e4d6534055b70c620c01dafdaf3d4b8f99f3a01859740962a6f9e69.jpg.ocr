@@ -1,0 +1,49 @@
+source: site/internals/static/img/evidence/c45155cf0e4d6534055b70c620c01dafdaf3d4b8f99f3a01859740962a6f9e69.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:50:17.589Z
+kind: image
+language: en-US
+text: |-
+  1:14
+  Charlie being rushed UREVEw
+  to the hospital
+  gang violence Thanks for
+  watching
+blocks:
+  - text: 1:14
+    confidence: 1
+    bbox:
+      - 0.09406866577862107
+      - 0.021514217061560315
+      - 0.07915826680544315
+      - 0.016564588993787766
+  - text: Charlie being rushed UREVEw
+    confidence: 1
+    bbox:
+      - 0.18553458417909918
+      - 0.31395348875606366
+      - 0.7515723327249604
+      - 0.037790697067976
+  - text: to the hospital
+    confidence: 1
+    bbox:
+      - 0.18542549729184526
+      - 0.3616388841665883
+      - 0.4341804552783926
+      - 0.03689664788544178
+  - text: gang violence Thanks for
+    confidence: 1
+    bbox:
+      - 0.16981131900006338
+      - 0.8183139536972603
+      - 0.6635220227231434
+      - 0.02616279013454914
+  - text: watching
+    confidence: 1
+    bbox:
+      - 0.37692857491624737
+      - 0.8509176728296577
+      - 0.2429981997854866
+      - 0.029269305989146233

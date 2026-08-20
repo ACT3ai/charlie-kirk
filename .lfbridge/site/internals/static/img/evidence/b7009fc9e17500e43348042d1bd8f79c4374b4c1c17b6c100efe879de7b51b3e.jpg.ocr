@@ -1,0 +1,105 @@
+source: site/internals/static/img/evidence/b7009fc9e17500e43348042d1bd8f79c4374b4c1c17b6c100efe879de7b51b3e.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:50:00.665Z
+kind: image
+language: en-US
+text: |-
+  = Daily Mail News
+  Kash Patel shuts down Charlie
+  Kirk foreign intelligence probe in
+  explosive feud with Trump's
+  counterterror chief
+  f
+  408 comments
+  *1
+  *1*
+  FBI
+  + 5
+  View gallery
+blocks:
+  - text: = Daily Mail News
+    confidence: 1
+    bbox:
+      - 0.024822699138804423
+      - 0.01764705882352946
+      - 0.5744680851063829
+      - 0.05882352941176461
+  - text: Kash Patel shuts down Charlie
+    confidence: 1
+    bbox:
+      - 0.024822687695035685
+      - 0.12647058867647054
+      - 0.8687943262411347
+      - 0.044117647058823595
+  - text: Kirk foreign intelligence probe in
+    confidence: 1
+    bbox:
+      - 0.02512564812351652
+      - 0.183333334094697
+      - 0.9296482167345411
+      - 0.05416666479671706
+  - text: explosive feud with Trump's
+    confidence: 1
+    bbox:
+      - 0.02482270187943246
+      - 0.2352941182058823
+      - 0.8120567375886524
+      - 0.055882352941176494
+  - text: counterterror chief
+    confidence: 1
+    bbox:
+      - 0.024822691981875568
+      - 0.29705882370915027
+      - 0.549645390070922
+      - 0.044117647058823595
+  - text: f
+    confidence: 1
+    bbox:
+      - 0.05673758904255319
+      - 0.4088235292352942
+      - 0.03900709219858156
+      - 0.04117647058823526
+  - text: 408 comments
+    confidence: 1
+    bbox:
+      - 0.6702127626773051
+      - 0.41470588249999996
+      - 0.2624113475177303
+      - 0.02941176470588236
+  - text: "*1"
+    confidence: 0.5
+    bbox:
+      - 0.8049645384751772
+      - 0.6000000001470589
+      - 0.042553191489361764
+      - 0.0235294117647058
+  - text: "*1*"
+    confidence: 1
+    bbox:
+      - 0.797872339929078
+      - 0.6323529408529411
+      - 0.05673758865248224
+      - 0.032352941176470584
+  - text: FBI
+    confidence: 1
+    bbox:
+      - 0.7056737581855792
+      - 0.7882352937254902
+      - 0.1028368794326241
+      - 0.04705882352941171
+  - text: + 5
+    confidence: 1
+    bbox:
+      - 0.8546099291371159
+      - 0.8970588232843136
+      - 0.05673758865248224
+      - 0.02941176470588236
+  - text: View gallery
+    confidence: 1
+    bbox:
+      - 0.7798756620397996
+      - 0.9370022015393622
+      - 0.17074513266272573
+      - 0.02893677318797383

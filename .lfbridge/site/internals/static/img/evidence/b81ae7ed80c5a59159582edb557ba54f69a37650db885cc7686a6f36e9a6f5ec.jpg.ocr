@@ -1,0 +1,81 @@
+source: site/internals/static/img/evidence/b81ae7ed80c5a59159582edb557ba54f69a37650db885cc7686a6f36e9a6f5ec.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:50:04.057Z
+kind: image
+language: en-US
+text: |-
+  CONS
+  MON
+  SHOOTER WAS HERE
+  ntain
+  d
+  SHOOTER WAS HERE
+  gettyimages
+  Credit: Chet Strange
+  35088153
+blocks:
+  - text: CONS
+    confidence: 1
+    bbox:
+      - 0.832911392653998
+      - 0.15116279075650252
+      - 0.03797468328151565
+      - 0.01162790694214444
+  - text: MON
+    confidence: 0.5
+    bbox:
+      - 0.9088607590221792
+      - 0.1511627906568348
+      - 0.025316456386021202
+      - 0.01162790694214444
+  - text: SHOOTER WAS HERE
+    confidence: 1
+    bbox:
+      - 0.07246378009245137
+      - 0.2999219983080821
+      - 0.8478260689041243
+      - 0.0500780007396584
+  - text: ntain
+    confidence: 1
+    bbox:
+      - 2.767121157153362e-9
+      - 0.41279069801172963
+      - 0.15949366563031464
+      - 0.03633720826433151
+  - text: d
+    confidence: 1
+    bbox:
+      - 0.002531646009922291
+      - 0.4549418605551224
+      - 0.0354430373834104
+      - 0.03197674446284482
+  - text: SHOOTER WAS HERE
+    confidence: 1
+    bbox:
+      - 0.21265823853247368
+      - 0.8110465118008565
+      - 0.5696202284624787
+      - 0.02906976661146521
+  - text: gettyimages
+    confidence: 1
+    bbox:
+      - 0.6024444107885277
+      - 0.8645553103323903
+      - 0.19004788560932184
+      - 0.020889378933006353
+  - text: "Credit: Chet Strange"
+    confidence: 1
+    bbox:
+      - 0.6050632922333251
+      - 0.8880655222610571
+      - 0.2101265835924213
+      - 0.014550756552662025
+  - text: "35088153"
+    confidence: 1
+    bbox:
+      - 0.03797468431055475
+      - 0.9912790698954662
+      - 0.0860759449653885
+      - 0.007267441652866302

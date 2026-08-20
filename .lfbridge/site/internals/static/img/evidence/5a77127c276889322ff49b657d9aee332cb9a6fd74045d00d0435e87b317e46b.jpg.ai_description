@@ -1,0 +1,164 @@
+source: site/internals/static/img/evidence/5a77127c276889322ff49b657d9aee332cb9a6fd74045d00d0435e87b317e46b.jpg
+status: done
+engine: gemini-flash-latest
+provider: gemini
+generated: 2026-08-20T12:49:48.192Z
+kind: image
+description: >-
+  ## Overview
+
+  This is a vertical smartphone screenshot showing the flight history interface
+  of the mobile application Flightradar24. The screen displays detailed flight
+  logs for an aircraft with the registration code "SU-BND" for the year 2025. A
+  chronological list of flight entries features dates throughout March and
+  April, showing origin and destination airport pairs, primarily operating
+  round-trips or flights within Cairo (CAI) and Hurghada (HRG).
+
+
+  ## Hyper-Detail
+
+  * **Status Bar (Top):**
+    * Time displayed at top-left: "7:16" next to a small diagonal location/arrow icon.
+    * Top-right shows mobile network signal bars (4 bars), Wi-Fi icon, and a battery icon indicating 84% charge.
+    * Background of the status bar is dark gray/black (`#1F1F1F` to `#2B2B2B`).
+
+  * **Header Section:**
+    * Sub-header text "AIRCRAFT" in small white/light-gray uppercase font.
+    * Registration code "SU-BND" directly beneath in a bold, prominent yellow font (`#E5A93C`).
+    * On the right side, the Flightradar24 logo with "flightradar" in white and "24" in yellow, followed by a white "✕" close button.
+    * A light gray section divider line separates the header from the content list.
+
+  * **List Header:**
+    * A light gray banner containing the text "Year 2025" in dark charcoal/black text aligned to the left.
+
+  * **Flight List Items (Top to Bottom):**
+    * **Entry 1 (Top, partially cut off at date):**
+      * Takeoff icon (airplane pointing up-right) next to "Cairo" and a gray rounded badge with "CAI".
+      * Landing icon (airplane pointing down-right) next to "Cairo" with badge "CAI".
+      * Blue down-chevron icon on the far right.
+    * **Entry 2 (Apr 26):**
+      * Light gray dot bullet point, date "Apr 26", callsign/code "SUBND".
+      * Departure: Cairo `CAI`
+      * Arrival: Cairo `CAI`
+      * Blue chevron icon on right.
+    * **Entry 3 (Apr 20):**
+      * Light gray dot bullet, date "Apr 20", callsign "SUBND".
+      * Departure: Cairo `CAI`
+      * Arrival: Cairo `CAI`
+      * Blue chevron on right.
+    * **Entry 4 (Apr 16):**
+      * Light gray dot bullet, date "Apr 16", callsign "SUBND".
+      * Departure: Cairo `CAI`
+      * Arrival: Cairo `CAI`
+      * Blue chevron on right.
+    * **Entry 5 (Apr 15):**
+      * Light gray dot bullet, date "Apr 15", callsign "SUBND".
+      * Departure: Cairo `CAI`
+      * Arrival: Cairo `CAI`
+      * Blue chevron on right.
+    * **Entry 6 (Apr 10):**
+      * Light gray dot bullet, date "Apr 10", callsign "SUBND".
+      * Departure: Cairo `CAI`
+      * Arrival: Cairo `CAI`
+      * Blue chevron on right.
+    * **Entry 7 (Apr 09 - upper):**
+      * Light gray dot bullet, date "Apr 09", callsign "SUBND".
+      * Departure: "N/A"
+      * Arrival: Cairo `CAI`
+      * Blue chevron on right.
+    * **Entry 8 (Apr 09 - lower):**
+      * Light gray dot bullet, date "Apr 09", callsign "SUBND".
+      * Departure: Cairo `CAI`
+      * Arrival: "N/A"
+      * Blue chevron on right.
+    * **Entry 9 (Apr 08):**
+      * Light gray dot bullet, date "Apr 08", callsign "SUBND".
+      * Departure: Cairo `CAI`
+      * Arrival: Cairo `CAI`
+      * Blue chevron on right.
+    * **Entry 10 (Mar 27 - bottom, partially cut off):**
+      * Light gray dot bullet, date "Mar 27", callsign "SUBND".
+      * Departure: Hurghada `HRG`
+      * Arrival: Partially visible "Cairo" at the bottom edge.
+      * Blue chevron on right.
+
+  * **UI Separators & Background:**
+    * The main list area has an off-white/very light gray background (`#F4F4F6`).
+    * Fine horizontal separator lines divide each list entry row.
+
+  ## Composition
+
+  * **Header Bar:** Occupies ~12% of the frame at the top (FRAME-TOP).
+
+  * **Flight Log List:** Fills the remaining ~88% of the frame from midground to
+  base (FRAME-CENTER and FRAME-BOTTOM).
+
+  * **Layout Structure:** Clean, left-aligned tabular layout with vertical
+  rhythm created by the repetitive date stamps, airport names, and airport code
+  badges. Right-aligned interactive chevrons balance the visual weight across
+  each row.
+
+  * **Focus/Depth:** Flat 2D graphic user interface (GUI); entire screen is in
+  sharp digital focus with no optical depth of field.
+
+
+  ## Location
+
+  * **Location shown in data:** Cairo (Cairo International Airport - CAI) and
+  Hurghada (Hurghada International Airport - HRG), Egypt.
+
+  * **Physical Device Location:** (indeterminate)
+
+
+  ## Setting & Place
+
+  Digital screen capture of a mobile application (Flightradar24). No physical
+  interior or exterior setting.
+
+
+  ## Lighting
+
+  Direct digital screen display / emissive backlight. Graphic elements use high
+  contrast (dark header on top, light theme content area below).
+
+
+  ## Cinematography
+
+  Not applicable (direct digital screenshot). Full-screen vertical 19.5:9 aspect
+  ratio mobile screen capture.
+
+
+  ## People
+
+  No people in frame.
+
+
+  ## Objects & Text
+
+  * **Verbatim Text Visible:**
+    * `7:16`
+    * `84`
+    * `AIRCRAFT`
+    * `SU-BND`
+    * `flightradar24`
+    * `✕`
+    * `Year 2025`
+    * `Cairo CAI`
+    * `Apr 26 SUBND`
+    * `Apr 20 SUBND`
+    * `Apr 16 SUBND`
+    * `Apr 15 SUBND`
+    * `Apr 10 SUBND`
+    * `Apr 09 SUBND`
+    * `N/A`
+    * `Apr 08 SUBND`
+    * `Mar 27 SUBND`
+    * `Hurghada HRG`
+
+  ## Colors & Mood
+
+  * **Color Palette:** Dark charcoal/black (`#222222`), bright aviation yellow
+  (`#F5A623`), light off-white/gray (`#F5F5F7`), slate blue (`#3F8CFF` for
+  arrows/chevrons), and dark gray text.
+
+  * **Mood:** Technical, clean, informative, organized, and analytical.

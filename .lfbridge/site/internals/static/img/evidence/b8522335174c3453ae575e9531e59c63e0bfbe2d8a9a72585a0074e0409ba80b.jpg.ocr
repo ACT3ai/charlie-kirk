@@ -1,0 +1,105 @@
+source: site/internals/static/img/evidence/b8522335174c3453ae575e9531e59c63e0bfbe2d8a9a72585a0074e0409ba80b.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:50:01.888Z
+kind: image
+language: en-US
+text: |-
+  TRONG
+  GDO_NOT_COMPLY
+  30.6K
+  7,356
+  1,561
+  iamirialydiaz
+  @IAM
+  RICKY
+  CUZ
+  Follow
+  VIEWER DISCRETION ADVISED: Charlie Kirk has ...
+  Followed by itsmorganfr
+blocks:
+  - text: TRONG
+    confidence: 1
+    bbox:
+      - -0.0005435506085752766
+      - 0.06479152400861699
+      - 0.6260871039496528
+      - 0.1313544511795044
+  - text: GDO_NOT_COMPLY
+    confidence: 1
+    bbox:
+      - 0.7111111100555557
+      - 0.31875000005468745
+      - 0.21111111111111103
+      - 0.020312499999999956
+  - text: 30.6K
+    confidence: 1
+    bbox:
+      - 0.8749695602521563
+      - 0.5515071271859628
+      - 0.08061643706427679
+      - 0.014173245429992765
+  - text: 7,356
+    confidence: 1
+    bbox:
+      - 0.8749999998055555
+      - 0.6453125001718749
+      - 0.07500000000000007
+      - 0.017187500000000022
+  - text: 1,561
+    confidence: 1
+    bbox:
+      - 0.8800623970909647
+      - 0.7477868800652369
+      - 0.07043076091342504
+      - 0.018488739430904344
+  - text: iamirialydiaz
+    confidence: 0.5
+    bbox:
+      - 0.17222222033333334
+      - 0.8374999998281251
+      - 0.19444444444444442
+      - 0.017187500000000022
+  - text: "@IAM"
+    confidence: 1
+    bbox:
+      - 0.5222222215277778
+      - 0.7796875000892857
+      - 0.09722222222222221
+      - 0.018749999999999933
+  - text: RICKY
+    confidence: 1
+    bbox:
+      - 0.5194444450694444
+      - 0.7984374999023437
+      - 0.09999999999999998
+      - 0.018750000000000044
+  - text: CUZ
+    confidence: 0.5
+    bbox:
+      - 0.519444443638889
+      - 0.8203125000781248
+      - 0.08055555555555549
+      - 0.014062500000000089
+  - text: Follow
+    confidence: 1
+    bbox:
+      - 0.4637053234795413
+      - 0.8386373787422388
+      - 0.10036713282267251
+      - 0.014912742376327559
+  - text: "VIEWER DISCRETION ADVISED: Charlie Kirk has ..."
+    confidence: 1
+    bbox:
+      - 0.08888889781249974
+      - 0.8937500000195312
+      - 0.7138888888888889
+      - 0.017187500000000022
+  - text: Followed by itsmorganfr
+    confidence: 1
+    bbox:
+      - 0.08888888500000007
+      - 0.9343750000585939
+      - 0.3111111111111111
+      - 0.017187500000000022

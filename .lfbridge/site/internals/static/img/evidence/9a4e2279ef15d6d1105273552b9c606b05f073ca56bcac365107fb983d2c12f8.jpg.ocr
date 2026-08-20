@@ -1,0 +1,114 @@
+source: site/internals/static/img/evidence/9a4e2279ef15d6d1105273552b9c606b05f073ca56bcac365107fb983d2c12f8.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:48:12.141Z
+kind: image
+language: en-US
+text: |-
+  SP
+  E
+  0900g Q
+  The Dre
+  4078
+  4525-64 24
+  the The th
+  SPS
+  STEW PETERS SHOW
+  wPeters.com
+  •i Join the StewCrew
+  #Stew Peters Live
+  * Stew Peters Live Indict. Try. Fry. Follow @RealStewPeters on X « Watch i
+blocks:
+  - text: SP
+    confidence: 1
+    bbox:
+      - 0.012499999955357144
+      - 0.014164306212059885
+      - 0.0375
+      - 0.03682719546742208
+  - text: E
+    confidence: 0.5
+    bbox:
+      - 0.08593749985677084
+      - 0.01699716725684608
+      - 0.01718750000000001
+      - 0.031161473087818692
+  - text: 0900g Q
+    confidence: 1
+    bbox:
+      - 0.8421874987890625
+      - 0.019830028541076516
+      - 0.09687500000000004
+      - 0.028328611898016942
+  - text: The Dre
+    confidence: 0.3
+    bbox:
+      - 0.043749999589843755
+      - 0.3909348439093485
+      - 0.0390625
+      - 0.022662889518413554
+  - text: "4078"
+    confidence: 0.5
+    bbox:
+      - 0.13906250021875
+      - 0.41076487237960335
+      - 0.021875000000000006
+      - 0.019830028328611915
+  - text: 4525-64 24
+    confidence: 1
+    bbox:
+      - 0.046875000734907815
+      - 0.5779036828611898
+      - 0.045312497019767764
+      - 0.014164305949008527
+  - text: the The th
+    confidence: 0.5
+    bbox:
+      - 0.04843750076171873
+      - 0.728045325601983
+      - 0.0609375
+      - 0.025495750708215303
+  - text: SPS
+    confidence: 1
+    bbox:
+      - 0.03125000056152345
+      - 0.8158640225035412
+      - 0.1796875
+      - 0.1076487252124646
+  - text: STEW PETERS SHOW
+    confidence: 1
+    bbox:
+      - 0.025000002031249968
+      - 0.9206798865439092
+      - 0.203125
+      - 0.025495750708215303
+  - text: wPeters.com
+    confidence: 0.5
+    bbox:
+      - 7.477678587441971e-10
+      - 0.9716713880008094
+      - 0.10468749999999999
+      - 0.025495750708215303
+  - text: •i Join the StewCrew
+    confidence: 1
+    bbox:
+      - 0.12187500120535714
+      - 0.9688385268312424
+      - 0.16875
+      - 0.028328611898017053
+  - text: "#Stew Peters Live"
+    confidence: 1
+    bbox:
+      - 0.3083333392861429
+      - 0.9546742216054588
+      - 0.15833332538604739
+      - 0.03824362606232301
+  - text: "* Stew Peters Live Indict. Try. Fry. Follow @RealStewPeters on X « Watch
+      i"
+    confidence: 1
+    bbox:
+      - 0.3125000038107638
+      - 0.9688385267862764
+      - 0.6859375
+      - 0.028328611898016942

@@ -1,0 +1,65 @@
+source: site/internals/static/img/evidence/decdb07ec819867beace4cbc29df1ed1bb4b42791b79e391f96540f5b79926f3.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:51:25.477Z
+kind: image
+language: en-US
+text: |-
+  AMEN
+  TE YES
+  LESS
+  AMER LAN
+  COMEBAC
+  PROVE ME WRUNG, PROVE ME W
+  ÄME!
+blocks:
+  - text: AMEN
+    confidence: 1
+    bbox:
+      - 0.07751937948928556
+      - 0.3037790697082342
+      - 0.06201550519024884
+      - 0.026162791252136164
+  - text: TE YES
+    confidence: 1
+    bbox:
+      - -0.006062417775684426
+      - 0.8919946323517733
+      - 0.10962036274097584
+      - 0.031920844316482566
+  - text: LESS
+    confidence: 1
+    bbox:
+      - -5.205936159524282e-10
+      - 0.9156976740977691
+      - 0.09302325778537326
+      - 0.026162791252136164
+  - text: AMER LAN
+    confidence: 1
+    bbox:
+      - 0.4160206766333755
+      - 0.024479167247682176
+      - 0.2506459836606626
+      - 0.03656734426816299
+  - text: COMEBAC
+    confidence: 1
+    bbox:
+      - 0.4470284329373587
+      - 0.05523255901536628
+      - 0.2558139377170139
+      - 0.03343023061752326
+  - text: PROVE ME WRUNG, PROVE ME W
+    confidence: 1
+    bbox:
+      - 0.2288997480855366
+      - 0.11792444264483848
+      - 0.6407543041087963
+      - 0.040823078155517556
+  - text: ÄME!
+    confidence: 1
+    bbox:
+      - 0.462532299479214
+      - 0.3066860464443326
+      - 0.10335917296233005
+      - 0.04941860437393175

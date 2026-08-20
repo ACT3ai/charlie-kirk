@@ -1,0 +1,49 @@
+source: site/internals/static/img/evidence/817c45191bb6f2da6d1f9229b5a97d92689b6d457cb470d4cca20330081d965b.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:47:24.802Z
+kind: image
+language: en-US
+text: |-
+  18:05
+  YE =401
+  + Add your own photo
+  holly
+  Replying to holly
+blocks:
+  - text: 18:05
+    confidence: 1
+    bbox:
+      - 0.05786052624428236
+      - 0.012811820370290938
+      - 0.093956364525689
+      - 0.015074033737182635
+  - text: YE =401
+    confidence: 0.5
+    bbox:
+      - 0.7516129022924607
+      - 0.011627907273554228
+      - 0.09677419662475584
+      - 0.015988371372222976
+  - text: + Add your own photo
+    confidence: 1
+    bbox:
+      - 0.05806452174664681
+      - 0.7936046517827233
+      - 0.4612903171115452
+      - 0.024709300994873118
+  - text: holly
+    confidence: 1
+    bbox:
+      - 0.08709677190267584
+      - 0.8401162788170246
+      - 0.09677419662475586
+      - 0.02034883737564086
+  - text: Replying to holly
+    confidence: 1
+    bbox:
+      - 0.2000000036626484
+      - 0.8997093027099433
+      - 0.32258063422309025
+      - 0.02180232524871828

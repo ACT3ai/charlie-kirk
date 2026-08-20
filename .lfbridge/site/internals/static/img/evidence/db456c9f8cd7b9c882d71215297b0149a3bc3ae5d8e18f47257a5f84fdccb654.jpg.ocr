@@ -1,0 +1,33 @@
+source: site/internals/static/img/evidence/db456c9f8cd7b9c882d71215297b0149a3bc3ae5d8e18f47257a5f84fdccb654.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:50:46.229Z
+kind: image
+language: en-US
+text: |-
+  OIM
+  YREFY.CC
+  FREED
+blocks:
+  - text: OIM
+    confidence: 0.5
+    bbox:
+      - 0.6351744197460112
+      - 0.5072674417875034
+      - 0.058139532804489136
+      - 0.023255813866853714
+  - text: YREFY.CC
+    confidence: 0.5
+    bbox:
+      - 0.8299418655999634
+      - 0.5087209311851282
+      - 0.16860464215278625
+      - 0.03633720800280571
+  - text: FREED
+    confidence: 1
+    bbox:
+      - 0.6479860718741728
+      - 0.8795581458098491
+      - 0.14740189909934998
+      - 0.024693217128515244

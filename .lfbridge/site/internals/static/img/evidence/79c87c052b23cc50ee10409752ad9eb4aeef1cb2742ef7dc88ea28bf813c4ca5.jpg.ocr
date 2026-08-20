@@ -1,0 +1,49 @@
+source: site/internals/static/img/evidence/79c87c052b23cc50ee10409752ad9eb4aeef1cb2742ef7dc88ea28bf813c4ca5.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:47:13.967Z
+kind: image
+language: en-US
+text: |-
+  YREFY.COM
+  TURNING
+  POINT USA
+  @INSTHINAIR
+  0:24 / 1:16 01*
+blocks:
+  - text: YREFY.COM
+    confidence: 0.5
+    bbox:
+      - 0.12828947183845035
+      - 0.010526316354775855
+      - 0.4177631578947368
+      - 0.10175438596491226
+  - text: TURNING
+    confidence: 1
+    bbox:
+      - 0.2163028087344055
+      - 0.25367438973020384
+      - 0.305668454421194
+      - 0.12539533648574563
+  - text: POINT USA
+    confidence: 1
+    bbox:
+      - 0.22297010970883988
+      - 0.3099833843184685
+      - 0.33090736991480774
+      - 0.12367409153988485
+  - text: "@INSTHINAIR"
+    confidence: 0.5
+    bbox:
+      - 0.8125000018421052
+      - 0.7719298244561402
+      - 0.1842105263157895
+      - 0.03157894736842115
+  - text: 0:24 / 1:16 01*
+    confidence: 1
+    bbox:
+      - 0.5854681020645445
+      - 0.9294539820791753
+      - 0.23366905513562652
+      - 0.04284642202812339

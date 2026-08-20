@@ -1,0 +1,33 @@
+source: site/internals/static/img/evidence/c179c1b5ed8b4d11f4954424119eb9bcb8384d2707daea475a4fe3e4e9b6c4e6.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:50:17.487Z
+kind: image
+language: en-US
+text: |-
+  ental
+  Building
+  Google Maps
+blocks:
+  - text: ental
+    confidence: 1
+    bbox:
+      - 0.016977904151351957
+      - 0.8327926647944007
+      - 0.03581163306242373
+      - 0.023757072448730487
+  - text: Building
+    confidence: 1
+    bbox:
+      - 0.01672618208284933
+      - 0.8532980422279661
+      - 0.052642841803127005
+      - 0.029755308151245052
+  - text: Google Maps
+    confidence: 1
+    bbox:
+      - 0.4301110359136805
+      - 0.9558906177572606
+      - 0.13832443960192264
+      - 0.04286729049682614

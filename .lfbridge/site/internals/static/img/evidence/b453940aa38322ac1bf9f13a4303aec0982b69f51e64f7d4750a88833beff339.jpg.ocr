@@ -1,0 +1,49 @@
+source: site/internals/static/img/evidence/b453940aa38322ac1bf9f13a4303aec0982b69f51e64f7d4750a88833beff339.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:49:57.649Z
+kind: image
+language: en-US
+text: |-
+  75 yards from stage right
+  78 yards
+  Bartholomew
+  tage right camera has Frank
+  f Flags
+blocks:
+  - text: 75 yards from stage right
+    confidence: 1
+    bbox:
+      - 0.578488372759838
+      - 0.1597510373713913
+      - 0.12209302436404501
+      - 0.01882039138248992
+  - text: 78 yards
+    confidence: 1
+    bbox:
+      - 0.6322674430483324
+      - 0.3174107139078066
+      - 0.04360464883550563
+      - 0.018750000000000044
+  - text: Bartholomew
+    confidence: 1
+    bbox:
+      - 0.31395348918209653
+      - 0.846473029436553
+      - 0.06395348781797755
+      - 0.016597509384155273
+  - text: tage right camera has Frank
+    confidence: 1
+    bbox:
+      - 0.5697674442222759
+      - 0.8111607145949931
+      - 0.1366279025438203
+      - 0.025000000000000022
+  - text: f Flags
+    confidence: 1
+    bbox:
+      - 0.5755813967727543
+      - 0.856696428268706
+      - 0.03633720736292145
+      - 0.02098214285714295

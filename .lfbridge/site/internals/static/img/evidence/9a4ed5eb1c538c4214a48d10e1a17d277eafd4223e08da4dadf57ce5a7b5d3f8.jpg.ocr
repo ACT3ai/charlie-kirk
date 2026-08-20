@@ -1,0 +1,41 @@
+source: site/internals/static/img/evidence/9a4ed5eb1c538c4214a48d10e1a17d277eafd4223e08da4dadf57ce5a7b5d3f8.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:48:22.213Z
+kind: image
+language: en-US
+text: |-
+  3t1 command
+  st-1 Commant
+  @greatest1con
+  OTI
+blocks:
+  - text: 3t1 command
+    confidence: 1
+    bbox:
+      - 0.6468023248505774
+      - 0.7104622880306821
+      - 0.23691860826660405
+      - 0.060421735604217375
+  - text: st-1 Commant
+    confidence: 1
+    bbox:
+      - 0.6468023274096848
+      - 0.7984590424548555
+      - 0.2558139484267544
+      - 0.060421735604217264
+  - text: "@greatest1con"
+    confidence: 1
+    bbox:
+      - 0.7776162762558034
+      - 0.967592591826182
+      - 0.15697674743994372
+      - 0.030092593623870623
+  - text: OTI
+    confidence: 0.5
+    bbox:
+      - 0.94622093133673
+      - 0.8171296300295279
+      - 0.04651162628002814
+      - 0.03240740637612938

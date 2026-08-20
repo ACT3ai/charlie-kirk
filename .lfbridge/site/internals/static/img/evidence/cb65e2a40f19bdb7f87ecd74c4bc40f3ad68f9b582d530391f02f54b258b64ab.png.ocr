@@ -1,0 +1,94 @@
+source: site/internals/static/img/evidence/cb65e2a40f19bdb7f87ecd74c4bc40f3ad68f9b582d530391f02f54b258b64ab.png
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:50:27.256Z
+kind: image
+language: en-US
+text: >-
+  The fact that Robinson is "still" OK and is stuck in Orem "a little while
+  longer yet" only makes
+
+  sense if Twiggs already has some awareness of the situation. Moreover, the
+  fact that he tells his
+
+  roommate that it shouldn't be long before he comes "home" implies that Lance
+  is already waiting
+
+  for him, and is not completely in the dark. From this we see how uneasily the
+  later keyboard
+
+  tory sits with what was the initial fabrication. Equally damning is the fact
+  that Lance has to ask
+
+  yler whether he committed the crime despite being told that in the note that
+  he had just read
+
+  (compare: "What?????????????? You're joking, right????" and "you weren't the
+  one who did it
+
+  right????").
+blocks:
+  - text: The fact that Robinson is "still" OK and is stuck in Orem "a little while
+      longer yet" only makes
+    confidence: 1
+    bbox:
+      - 0.030456100549898404
+      - 0.03990028873926699
+      - 0.8969431314643741
+      - 0.11355396596396838
+  - text: sense if Twiggs already has some awareness of the situation. Moreover, the
+      fact that he tells his
+    confidence: 1
+    bbox:
+      - 0.030523252149793016
+      - 0.1676829259787509
+      - 0.9345930172328059
+      - 0.09481707433374909
+  - text: roommate that it shouldn't be long before he comes "home" implies that
+      Lance is already waiting
+    confidence: 1
+    bbox:
+      - 0.03052326102228681
+      - 0.2682926851139753
+      - 0.9375
+      - 0.10060975609756095
+  - text: for him, and is not completely in the dark. From this we see how uneasily
+      the later keyboard
+    confidence: 1
+    bbox:
+      - 0.029069762022204355
+      - 0.3810975596495748
+      - 0.8938953448218705
+      - 0.10060975609756095
+  - text: tory sits with what was the initial fabrication. Equally damning is the
+      fact that Lance has to ask
+    confidence: 1
+    bbox:
+      - 0.04166669633274106
+      - 0.46341463657639137
+      - 0.9166666378900723
+      - 0.1258710768164658
+  - text: yler whether he committed the crime despite being told that in the note
+      that he had just read
+    confidence: 1
+    bbox:
+      - 0.04166668654964464
+      - 0.5884146315920308
+      - 0.8999999827340435
+      - 0.10801393811295679
+  - text: "(compare: \"What?????????????? You're joking, right????\" and \"you
+      weren't the one who did it"
+    confidence: 1
+    bbox:
+      - 0.029069773641363466
+      - 0.7000000030849635
+      - 0.9316860344656118
+      - 0.10624999534793012
+  - text: right????").
+    confidence: 1
+    bbox:
+      - 0.03045498950843703
+      - 0.8110108735898479
+      - 0.11641560383193733
+      - 0.10297825278305428

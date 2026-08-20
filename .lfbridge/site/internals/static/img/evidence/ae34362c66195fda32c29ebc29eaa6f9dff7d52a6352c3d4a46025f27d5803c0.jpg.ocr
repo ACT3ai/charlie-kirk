@@ -1,0 +1,57 @@
+source: site/internals/static/img/evidence/ae34362c66195fda32c29ebc29eaa6f9dff7d52a6352c3d4a46025f27d5803c0.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:49:47.622Z
+kind: image
+language: en-US
+text: |-
+  UVU Courtyard
+  Nov 2023
+  Expand side panel
+  Sniper's Nest
+  Share
+  Sniper
+blocks:
+  - text: UVU Courtyard
+    confidence: 1
+    bbox:
+      - 0.029069767466683095
+      - 0.03858520875500848
+      - 0.06831395514657565
+      - 0.0257826070675905
+  - text: Nov 2023
+    confidence: 1
+    bbox:
+      - 0.03052325571722466
+      - 0.1125401933162623
+      - 0.02616279023706232
+      - 0.016195438648092364
+  - text: Expand side panel
+    confidence: 1
+    bbox:
+      - 0.018895352816898962
+      - 0.5172413796818007
+      - 0.07848836674992293
+      - 0.02298850574712641
+  - text: Sniper's Nest
+    confidence: 1
+    bbox:
+      - 0.4651162809099979
+      - 0.064308682582912
+      - 0.10319767018097337
+      - 0.04501607609891345
+  - text: Share
+    confidence: 1
+    bbox:
+      - 0.92441860432899
+      - 0.02893890745598493
+      - 0.027616279023706225
+      - 0.01929260341600436
+  - text: Sniper
+    confidence: 1
+    bbox:
+      - 0.9011228508386446
+      - 0.27950181516338746
+      - 0.055312436936676534
+      - 0.0454979775965898

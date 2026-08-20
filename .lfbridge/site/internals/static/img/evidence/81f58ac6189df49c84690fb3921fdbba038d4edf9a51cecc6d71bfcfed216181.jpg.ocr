@@ -1,0 +1,41 @@
+source: site/internals/static/img/evidence/81f58ac6189df49c84690fb3921fdbba038d4edf9a51cecc6d71bfcfed216181.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:47:26.164Z
+kind: image
+language: en-US
+text: |-
+  FBI
+  EVIDENCE
+  RESPONSE
+  TEAM
+blocks:
+  - text: FBI
+    confidence: 1
+    bbox:
+      - 0.4593023248988129
+      - 0.2945736445501703
+      - 0.04505814075469977
+      - 0.05426356421576606
+  - text: EVIDENCE
+    confidence: 1
+    bbox:
+      - 0.4600528927287233
+      - 0.3484136046926316
+      - 0.04635675430297859
+      - 0.0245901658799913
+  - text: RESPONSE
+    confidence: 1
+    bbox:
+      - 0.45744453412868047
+      - 0.3669566970100362
+      - 0.048989295959472656
+      - 0.022048628065321152
+  - text: TEAM
+    confidence: 1
+    bbox:
+      - 0.46656976737294753
+      - 0.38501292042132085
+      - 0.029069766998291058
+      - 0.020671833886040547

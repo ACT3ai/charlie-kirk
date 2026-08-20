@@ -1,0 +1,39 @@
+source: site/internals/static/img/evidence/7131945e90532aa259cc1b5e09bccf4b2c4347e87fa8c722a6455f02964b771f.jpg
+status: rejected
+engine: gemini-flash-latest
+provider: gemini
+generated: 2026-08-20T12:51:26.629Z
+kind: image
+rejected:
+  finish_reason: null
+  finish_message: null
+  block_reason: PROHIBITED_CONTENT
+  model_version: gemini-3.7-flash
+  response_id: RfiGaraONb2Ez7IP6fnN8Q0
+  error: "Gemini blocked the request: PROHIBITED_CONTENT"
+safety_ratings: null
+prompt_feedback:
+  blockReason: PROHIBITED_CONTENT
+usage:
+  promptTokenCount: 2041
+  totalTokenCount: 2041
+  promptTokensDetails:
+    - modality: IMAGE
+      tokenCount: 1073
+    - modality: TEXT
+      tokenCount: 968
+  serviceTier: standard
+provider_response:
+  promptFeedback:
+    blockReason: PROHIBITED_CONTENT
+  usageMetadata:
+    promptTokenCount: 2041
+    totalTokenCount: 2041
+    promptTokensDetails:
+      - modality: IMAGE
+        tokenCount: 1073
+      - modality: TEXT
+        tokenCount: 968
+    serviceTier: standard
+  modelVersion: gemini-3.7-flash
+  responseId: RfiGaraONb2Ez7IP6fnN8Q0

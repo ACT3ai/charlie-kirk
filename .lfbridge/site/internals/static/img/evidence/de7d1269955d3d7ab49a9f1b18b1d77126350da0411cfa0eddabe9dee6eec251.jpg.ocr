@@ -1,0 +1,41 @@
+source: site/internals/static/img/evidence/de7d1269955d3d7ab49a9f1b18b1d77126350da0411cfa0eddabe9dee6eec251.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:51:26.267Z
+kind: image
+language: en-US
+text: |-
+  HDR
+  MRUNG
+  SIL CON
+  70:36
+blocks:
+  - text: HDR
+    confidence: 0.5
+    bbox:
+      - 0.4823529416292141
+      - 0.034883720865112045
+      - 0.03529411648947095
+      - 0.008720930300506802
+  - text: MRUNG
+    confidence: 0.3
+    bbox:
+      - 0.561810270880568
+      - -0.0014902137121062253
+      - 0.32579122270856575
+      - 0.049492055294560466
+  - text: SIL CON
+    confidence: 0.3
+    bbox:
+      - 0.7461154195349075
+      - 0.6356104655612027
+      - 0.06471033701820972
+      - 0.02805232534221569
+  - text: 70:36
+    confidence: 1
+    bbox:
+      - 0.48941176364597583
+      - 0.9389534881587953
+      - 0.09176470741393072
+      - 0.017441860601013714

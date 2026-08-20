@@ -1,0 +1,25 @@
+source: site/internals/static/img/evidence/7dbcc9a3a20d35536a728f55f1bd3a364c4c2b7d6a085f27c0d6d5ddf2c4437d.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:47:19.974Z
+kind: image
+language: en-US
+text: |-
+  THE
+  TEN
+blocks:
+  - text: THE
+    confidence: 1
+    bbox:
+      - 0.05398457570694088
+      - 0.5950782995246084
+      - 0.06169665809768638
+      - 0.04026845637583898
+  - text: TEN
+    confidence: 0.5
+    bbox:
+      - 0.7403598971021267
+      - 0.20805369116331096
+      - 0.046272493573264795
+      - 0.02460850111856827
