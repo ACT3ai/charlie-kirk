@@ -1,0 +1,41 @@
+source: site/internals/static/img/video_posters/f880dafcef264ca11a490d05cb2da3aaee1e53af8d0d8071f2f4b23be8fc2742.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:54:06.102Z
+kind: image
+language: en-US
+text: |-
+  Voice of God Technology.
+  TikTok
+  @ user8650466123222
+  James C. Lin Ph.D
+blocks:
+  - text: Voice of God Technology.
+    confidence: 1
+    bbox:
+      - 0.08955223717940274
+      - 0.26640926586248104
+      - 0.7686567306518555
+      - 0.04192406790597092
+  - text: TikTok
+    confidence: 1
+    bbox:
+      - 0.013888888175154336
+      - 0.505791505866581
+      - 0.12847222222222224
+      - 0.021235521235521193
+  - text: "@ user8650466123222"
+    confidence: 1
+    bbox:
+      - 0.020833330729166724
+      - 0.5289575290379666
+      - 0.3125
+      - 0.013513513513513487
+  - text: James C. Lin Ph.D
+    confidence: 1
+    bbox:
+      - 0.07266559515149525
+      - 0.5879522861950284
+      - 0.3511965804629856
+      - 0.034520138184536364

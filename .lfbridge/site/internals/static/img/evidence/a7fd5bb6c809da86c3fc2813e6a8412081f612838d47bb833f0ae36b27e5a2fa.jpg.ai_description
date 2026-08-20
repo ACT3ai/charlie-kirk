@@ -1,0 +1,125 @@
+source: site/internals/static/img/evidence/a7fd5bb6c809da86c3fc2813e6a8412081f612838d47bb833f0ae36b27e5a2fa.jpg
+status: done
+engine: gemini-flash-latest
+provider: gemini
+generated: 2026-08-20T12:54:54.417Z
+kind: image
+description: >-
+  ## Overview
+
+  The image is a direct screenshot of a Google Trends web interface displaying
+  search analytics for the term "SU-BTT" in Israel. The upper section contains
+  search parameters, comparison blocks, and dropdown filter menus, while the
+  lower portion features an "Interest over time" line graph. The graph
+  illustrates flatline activity near zero across June to August, interrupted by
+  a single, sharp peak reaching a maximum index value of 100 on July 20, 2025.
+
+
+  ## Hyper-Detail
+
+  The image presents a modern graphical user interface (Google Material Design)
+  rendered predominantly in light gray, white, and soft blue tones:
+
+
+  - **Top Card Area:**
+    - **Left Box:** A rounded rectangular card with a white background containing a bright blue solid circular bullet on the left. Next to it reads the text **"SU-BTT"** in a dark gray sans-serif font, with the subtext **"Search term"** in lighter gray underneath. On the right interior edge of this card sits a vertical three-dot options icon (kebab menu).
+    - **Right Box:** Adjacent on the upper right is a faint blue/periwinkle-tinted rounded card containing the text **"+ Compare"** in a muted blue/gray font.
+
+  - **Filter Bar (Mid-Upper Section):**
+    - A horizontal row of rounded rectangular dropdown pill buttons sits against the pale gray background:
+      1. First pill contains **"Israel"** followed by a downward-pointing gray arrow.
+      2. Second pill contains the date range **"6/11/25 - 9/1..."** followed by a downward-pointing arrow.
+      3. Third pill contains **"All categories"** followed by a downward-pointing arrow.
+      4. Fourth pill contains **"Web Search"** followed by a downward-pointing arrow.
+
+  - **Main Chart Panel ("Interest over time"):**
+    - A large white rounded rectangular container occupying the lower two-thirds of the image.
+    - At the upper-left of this panel, the heading **"Interest over time"** is rendered in dark charcoal sans-serif typography, accompanied by a small circular question-mark help/tooltip icon directly to its right.
+    - **Grid & Axes:**
+      - The vertical Y-axis on the left shows gray numerical scale labels: **"100"**, **"75"**, **"50"**, **"25"**, and an implicit baseline at **0**. Thin, horizontal light-gray grid lines run across the graph area corresponding to these levels.
+      - The horizontal X-axis marks specific timeline points along the bottom: **"Jun 11"** on the far left, **"Jul 21"** slightly left of center, and **"Aug 30"** near the bottom right.
+    - **Data Trendline:**
+      - A solid, medium-weight blue line sits flat at the zero baseline from June 11 until just before July 20/21.
+      - It surges almost vertically to form an acute, sharp triangular spike reaching precisely the **100** mark, marked at the vertex with a solid blue circular data point.
+      - It immediately drops straight back down to the baseline by July 21 and remains completely flat through August 30.
+    - **Hover Tooltip Box:**
+      - Positioned to the left of the peak (mid-left of the chart), a white rectangular pop-up box with a subtle drop shadow and gray border displays:
+        - Top line: **"Jul 20, 2025"** in bold/semi-bold dark gray.
+        - Bottom line: **"SU-BTT"** in medium gray followed by **"100"** in light blue text aligned to the right.
+
+  - **Bottom Edge:** A slight dark/gray vignette or shadow border is visible
+  along the very bottom edge of the image capture.
+
+
+  ## Composition
+
+  - **Top 20%:** Contains the search query tag ("SU-BTT") at FRAME-LEFT and the
+  "+ Compare" module at FRAME-RIGHT.
+
+  - **Middle 15%:** A horizontal row of search filter selectors running from
+  FRAME-LEFT to FRAME-RIGHT.
+
+  - **Bottom 65%:** The main white chart container covering nearly the entire
+  width (~95% of horizontal space).
+    - The tooltip box occupies roughly 6% of the frame at center-left midground.
+    - The central spike is positioned almost exactly at the horizontal center line (FRAME-CENTER).
+  - **Depth & Focus:** A flat 2D graphic user interface with no optical depth of
+  field; all vector lines and text elements are in sharp digital focus.
+
+
+  ## Location
+
+  (indeterminate) – This is a digital software user interface / web page
+  screenshot, not a physical real-world location.
+
+
+  ## Setting & Place
+
+  Digital environment: Web browser interface of the analytics tool Google
+  Trends.
+
+
+  ## Lighting
+
+  Digital user interface lighting: Flat, neutral, high-key software application
+  rendering with a standard sRGB color profile. UI elements use soft ambient
+  box-shadows to indicate elevation/layers.
+
+
+  ## Cinematography
+
+  Direct digital screen capture (UI graphic). Not captured with a physical
+  camera lens.
+
+
+  ## People
+
+  No people in frame.
+
+
+  ## Objects & Text
+
+  - **Interactive UI components:** Filter dropdowns, search query chip,
+  comparison button, chart tooltip, line graph.
+
+  - **Verbatim Text Present:**
+    - `SU-BTT`
+    - `Search term`
+    - `+ Compare`
+    - `Israel`
+    - `6/11/25 - 9/1...`
+    - `All categories`
+    - `Web Search`
+    - `Interest over time`
+    - `100`, `75`, `50`, `25`
+    - `Jul 20, 2025`
+    - `Jun 11`, `Jul 21`, `Aug 30`
+
+  ## Colors & Mood
+
+  - **Color Palette:** Dominated by Google's UI palette: pure white (`#FFFFFF`),
+  very light neutral grays (`#F1F3F4`, `#E8EAED`), slate/charcoal text
+  (`#3C4043`, `#5F6368`), and standard Google blue / royal blue accents
+  (`#1A73E8` / `#4285F4`).
+
+  - **Mood:** Objective, clinical, analytical, and informational.

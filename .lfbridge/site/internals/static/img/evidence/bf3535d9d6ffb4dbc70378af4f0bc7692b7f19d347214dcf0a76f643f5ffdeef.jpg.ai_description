@@ -1,0 +1,133 @@
+source: site/internals/static/img/evidence/bf3535d9d6ffb4dbc70378af4f0bc7692b7f19d347214dcf0a76f643f5ffdeef.jpg
+status: done
+engine: gemini-flash-latest
+provider: gemini
+generated: 2026-08-20T12:55:58.976Z
+kind: image
+description: >-
+  ## Overview
+
+  This image is a digital screenshot of the Google Trends web application
+  interface comparing search term interest over time between "tyler james
+  robinson" and "Lance Twiggs". The parameters are set to the region "Washington
+  DC" for the custom future date range "1/1/25 - 9/10/25". A line graph titled
+  "Interest over time" shows virtually flat zero-interest baselines across the
+  timeline, interrupted only by two sharp, isolated spikes—one red peak reaching
+  100 for "Lance Twiggs" around June 15, 2025, and a separate blue spike nearby.
+
+
+  ## Hyper-Detail
+
+  The user interface displays standard Google Material Design styling with
+  rounded containers, soft gradients, and modern sans-serif typography (Google
+  Sans/Roboto). 
+
+
+  * **Top Navigation Bar:** At the very top left, the "Google Trends" logo
+  appears with "Google" in standard brand typography (blue 'G', red 'o', yellow
+  'o', etc., though rendered simply in high-contrast tones here) followed by
+  "Trends" in black. The primary navigation items include "Home", "Explore"
+  (active, indicated by a thick dark blue underline), and "Trending Now". On the
+  top right, four utility icons are visible: a share icon (connected nodes), a
+  speech/feedback bubble with an exclamation mark, a 3x3 app grid (waffle icon),
+  and a circular profile avatar showing a stylized stylized logo/graphic inside
+  a black border.
+
+  * **Search Comparison Cards:** Directly below the navigation, three rounded
+  horizontal pill/card containers are arranged side by side:
+    1. The left card contains the text "tyler james robinson" above the subtext "Search term" (in dark grey).
+    2. The center card features a dark red circular indicator dot followed by "Lance Twiggs" above the subtext "Search term".
+    3. The right card is a light bluish-grey rounded box containing a plus symbol and "+ Add comparison".
+  * **Filter Dropdowns:** Positioned under the comparison boxes is a row of four
+  white rounded pill buttons with subtle grey borders and downward arrow
+  chevrons:
+    1. "Washington DC ..." (representing geographic location filter).
+    2. "1/1/25 - 9/10/25" (custom date filter).
+    3. "All categories" (category filter).
+    4. "Web Search" (search type filter).
+  * **Graph Section:** A large white card container occupies the lower half. 
+    - Header: Contains "Interest over time" followed by a circular help/info icon ("?"). On the far right of the header are three utility icons: download (down arrow into tray), embed code (`< >`), and share (node link).
+    - Graph Grid: The Y-axis has values labeled at the left: "100", "75", "50", "25", with horizontal grey gridlines spanning across to the right edge. Below 25 lies the baseline X-axis labeled with dates "Jan 1, 2025" and "May 8, 2025", plus an "Average" label in the far bottom-left corner.
+    - Plotted Data: The baselines along the zero axis are highlighted with a dark red line and a blue line. A sharp, narrow blue spike shoots up to around the 75 value mark in the right half of the graph. Slightly to the left of the blue spike, a sharp, narrow dark red spike shoots vertically all the way to 100, capped with a dark red circular dot at its peak and a small blue dot at its base.
+    - Tooltip: Hovering over the red peak is a floating white rectangular card with a subtle shadow and dark grey border, showing:
+      - "Jun 15, 2025" (bold header)
+      - "tyler james robinson" followed by "0" aligned to the right.
+      - "Lance Twiggs" followed by "100" aligned to the right.
+
+  ## Composition
+
+  * **Top Area (~15% of frame):** Contains Google Trends header branding and
+  main navigation tabs at FRAME-LEFT and FRAME-CENTER, with user tools at
+  FRAME-RIGHT.
+
+  * **Upper-Mid Area (~25% of frame):** Contains the query boxes across the
+  horizontal axis, underlaid by the four filter selector pills.
+
+  * **Lower Area (~60% of frame):** Occupied entirely by the "Interest over
+  time" line chart panel. The graph is visually weighted heavily to the right
+  side where the two stark vertical spikes occur against an otherwise empty
+  flatline grid.
+
+  * **Focal Point:** The primary visual draw is the floating data tooltip box at
+  FRAME-CENTER-RIGHT and the adjacent vertical spikes reaching toward value 100.
+
+  * **Depth & Focus:** Entire image is a flat, 2D graphic user interface with
+  infinite digital depth of field (fully sharp and in focus).
+
+
+  ## Location
+
+  (indeterminate) – Digital user interface / web screenshot.
+
+
+  ## Setting & Place
+
+  Digital screenshot of a web application / software interface.
+
+
+  ## Lighting
+
+  Digital user interface render; no physical lighting, shadows, or cinematic
+  light sources. Features standard UI flat shading with subtle drop shadows
+  beneath cards and tooltips.
+
+
+  ## Cinematography
+
+  Direct 2D flat screenshot / screengrab (orthographic digital display).
+
+
+  ## People
+
+  No people in frame.
+
+
+  ## Objects & Text
+
+  * **Verbatim Text:**
+    - "Google Trends"
+    - "Home"
+    - "Explore"
+    - "Trending Now"
+    - "tyler james robinson"
+    - "Search term"
+    - "Lance Twiggs"
+    - "+ Add comparison"
+    - "Washington DC ..."
+    - "1/1/25 - 9/10/25"
+    - "All categories"
+    - "Web Search"
+    - "Interest over time"
+    - "100", "75", "50", "25"
+    - "Average"
+    - "Jan 1, 2025", "May 8, 2025"
+    - "Jun 15, 2025"
+    - "0", "100"
+
+  ## Colors & Mood
+
+  * **Palette:** Dominated by clean web neutrals—soft light grey-blue background
+  (`#F0F4F9` style), pure white card panels, dark charcoal/black text, accented
+  with deep red and royal blue data visualization lines.
+
+  * **Mood:** Analytical, neutral, technical, informational.

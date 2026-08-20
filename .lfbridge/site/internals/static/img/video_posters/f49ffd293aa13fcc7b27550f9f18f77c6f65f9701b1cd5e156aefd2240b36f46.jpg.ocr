@@ -1,0 +1,33 @@
+source: site/internals/static/img/video_posters/f49ffd293aa13fcc7b27550f9f18f77c6f65f9701b1cd5e156aefd2240b36f46.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:54:06.252Z
+kind: image
+language: en-US
+text: |-
+  • ISRAEL LIVE NEWS
+  100D
+  PROVE ME WRONG PROVE
+blocks:
+  - text: • ISRAEL LIVE NEWS
+    confidence: 1
+    bbox:
+      - 9.630503019790904e-10
+      - 0.025862068354885026
+      - 0.29009433962264153
+      - 0.07327586206896552
+  - text: 100D
+    confidence: 1
+    bbox:
+      - 0.9009433968867925
+      - 0.030172413577586266
+      - 0.06603773584905659
+      - 0.030172413793103425
+  - text: PROVE ME WRONG PROVE
+    confidence: 1
+    bbox:
+      - 0.2353609468493597
+      - 0.13719170799894043
+      - 0.7630253917766068
+      - 0.19366328469638172

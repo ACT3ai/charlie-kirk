@@ -1,0 +1,113 @@
+source: site/internals/static/img/evidence/a696255529d3cff711c656cbe1f139e4ed64219f184d0af38cd44a2c298c438d.jpg
+status: done
+engine: gemini-flash-latest
+provider: gemini
+generated: 2026-08-20T12:54:48.656Z
+kind: image
+description: >-
+  ## Overview
+
+  This image is a composite screenshot displaying an X (formerly Twitter)
+  interface, combining a full-screen view of an informational document or slide
+  on the left and an active post feed thread on the right. The post thread by
+  the user "@TheOfficial1984" alleges that the Anti-Defamation League (ADL) uses
+  a machine-learning system called "Online Hate Index V3 (OHI V3)" to monitor
+  voice spaces and score users. The text outlines technical details concerning
+  neural network models, semantic analysis, contextual scoring, thresholding,
+  and moderation recommendations.
+
+
+  ## Hyper-Detail
+
+  The screenshot layout is divided into two primary vertical sections:
+
+  - **Left Panel (~60% width):** Displays an expanded image viewer showing white
+  text on a pure black background. At the top left, an overlay shows standard
+  navigation icons: a close icon ("X"), a back arrow, the title "Post," a book
+  icon, and double forward arrows. The main content reads:
+    - Header: `3. Hate Speech Classification with OHI V3:`
+    - Bullet points describing the process:
+      - Text feeding into core transformer models (e.g., BERT or RoBERTa).
+      - Sub-bullets for `Semantic Analysis` (detecting bias, dog-whistles, intersectional hate), `Contextual Scoring` (evaluating dialogue context), and `Thresholding` (mentioning scores above 0.9, multilingual support for Arabic, Spanish).
+      - A trailing bullet partially cropped at the bottom about `Outputs include severity levels (e.g., "mild harassment" vs. "direct incitement") and recommendations for moderation, such as de-amplification or account suspension.`
+  - **Right Panel (~40% width):** Shows the social media thread view with a
+  white background:
+    - Top post by user handle `@TheOfficial1984` stating: "Did you know the ADL is assigning your social credit score on X using machine learning and neural networks created at Uc Berkley D-Lab? Online Hate Index V3 (OHI V3) It can identity you by your voice from analyzing spaces It flags the content. Israeli intelligence removes it".
+    - Timestamp reads `2:55 PM · Nov 3, 2025 · 7,389 Views` (note the futuristic year 2025).
+    - Engagement icons: 16 comments, 92 reposts, 184 likes, bookmark (highlighted in blue with 38), and share icon.
+    - Reply bar showing a circular avatar of a mountain landscape with the placeholder "Post your reply" and a grey "Reply" button.
+    - Thread replies below from `1984 @TheOfficial1984 · 4h` with a circular profile picture of Salvador Dalí (or similar surrealist figure). The text states: "The ADL monitors 10,000 spaces a day and feeds all that data into the OHI V3 that analyzes it in real time to identify you by your voice. For private subscription spaces, they use their backdoor through CHEQ."
+    - Embedded image thumbnail within the reply detailing "1. Data Collection and Access:".
+    - A subsequent reply starting with "They also tie your voice to a geolocation." and showing the top header of "2. Audio Transcription:".
+
+  ## Composition
+
+  - **Layout:** Split-screen digital screenshot composition.
+
+  - **Left side (60% of frame):** Dark mode document viewer.
+
+  - **Right side (40% of frame):** Light mode feed view.
+
+  - **Focus:** Flat digital capture; 100% sharp focus across all graphic and
+  text elements with zero optical depth of field.
+
+  - **Visual Balance:** Strong contrast between the heavy solid black background
+  on the left and the clean white background on the right.
+
+
+  ## Location
+
+  (indeterminate) – This is a digital screenshot of a mobile/web software
+  application interface.
+
+
+  ## Setting & Place
+
+  Digital user interface / Social media feed (X / Twitter application).
+
+
+  ## Lighting
+
+  Not applicable (flat digital UI rendering). The UI elements use dark mode on
+  the left panel and light mode on the right panel.
+
+
+  ## Cinematography
+
+  Not applicable (direct digital screenshot / graphic capture).
+
+
+  ## People
+
+  No real people in frame. There are small circular avatar graphics:
+
+  - Profile picture for `@TheOfficial1984` shows a black-and-white image of
+  Salvador Dalí's face with his characteristic mustache, occupying less than 1%
+  of the frame.
+
+  - User input avatar shows a tiny circular thumbnail of a person in front of a
+  natural landscape/mountain, occupying less than 0.5% of the frame.
+
+
+  ## Objects & Text
+
+  - **Key text visible verbatim:**
+    - `3. Hate Speech Classification with OHI V3:`
+    - `The transcribed text is fed into OHI V3's core model, a fine-tuned transformer-based neural network (built on architectures like BERT or RoBERTa). The model evaluates:`
+    - `Semantic Analysis: Detects implicit bias, dog-whistles (e.g., coded references to conspiracy theories), and intersectional hate (e.g., antisemitism combined with racism).`
+    - `Contextual Scoring: Considers surrounding dialogue; isolated phrases are cross-referenced with the full transcript to avoid misclassification.`
+    - `Thresholding: Content scoring above 0.9 (high confidence) triggers alerts. V3 improves on prior versions by incorporating multilingual support (e.g., Arabic, Spanish) and reducing bias against non-English dialects.`
+    - `Outputs include severity levels (e.g., "mild harassment" vs. "direct incitement") and recommendations for moderation, such as de-amplification or account suspension.`
+    - `@TheOfficial1984`
+    - `Did you know the ADL is assigning your social credit score on X using machine learning and neural networks created at Uc Berkley D-Lab?`
+    - `Online Hate Index V3 (OHI V3)`
+    - `2:55 PM · Nov 3, 2025 · 7,389 Views`
+    - `The ADL monitors 10,000 spaces a day and feeds all that data into the OHI V3...`
+
+  ## Colors & Mood
+
+  - **Color Palette:** High-contrast monochromatic scheme dominated by deep
+  black (`#000000`) and pure white (`#FFFFFF`), with light grey UI borders, blue
+  accent for the bookmark icon (`#1D9BF0`), and muted text tones.
+
+  - **Mood:** Informational, clinical, investigative, tense, conspiratorial.

@@ -1,0 +1,119 @@
+source: site/internals/static/img/evidence/a1468e5ebb96837f4ae5b34abc2d5d09d396d32c5b3103e4a7bd4af6daa87515.jpg
+status: done
+engine: gemini-flash-latest
+provider: gemini
+generated: 2026-08-20T12:54:33.664Z
+kind: image
+description: >-
+  ## Overview
+
+  This image is a digital screenshot or graphic displaying a detailed tabular
+  flight log or aircraft tracking history for an aircraft registered with the
+  tail number "SU-BND". The table is presented across three main columns,
+  arranged chronologically from December 2024 through November 2025, listing
+  dates, departure locations, arrival locations, aircraft registration
+  identifiers, and flight durations. The design is clean, featuring a white
+  background, thin gray separator lines, black text, and blue hyperlinked
+  airport names.
+
+
+  ## Hyper-Detail
+
+  The image presents a structured dataset displayed in rows and columns:
+
+  - **Background & Structure**: The entire background is flat white (#FFFFFF).
+  Faint horizontal gray gridlines separate each flight record. A thin vertical
+  line separates the main sections. Two large, black, vertically oriented text
+  stamps reading "SU-BND" (rotated 90 degrees counter-clockwise) appear between
+  the columns (one between columns 1 and 2 in the mid-left area, and another
+  between columns 2 and 3 in the mid-right area).
+
+  - **Layout & Organization**: 
+    - The left section covers dates from 01 Dec 2024 to 22 Jan 2025 (bottom to top).
+    - The center section spans dates from 26 Jan 2025 to 20 Sep 2025 (bottom to top).
+    - The right section covers dates from 21 Sep 2025 to 19 Nov 2025 (bottom to top).
+  - **Row Details**:
+    - Each entry lists: **Date** (e.g., "19 Nov 2025"), **Origin Airport** with code (in blue text, e.g., "Cairo (CAI)"), **Destination Airport** with code (in blue text, e.g., "Cairo (CAI)"), **Aircraft Registration code in parentheses** (black text, "(SUBND)"), and **Flight Duration** (e.g., "6:16", "0:11", "1:18", or an en-dash "—" if unknown/unrecorded).
+    - Some destination or origin slots display an en-dash "—" instead of an airport when data is missing or incomplete (e.g., "01 Dec 2024 —", "15 May 2025 —", "09 Apr 2025 Cairo (CAI) —").
+  - **Airports Listed**:
+    - Frequent entries for Egyptian hubs: Cairo (CAI), Giza (SPX), Hurghada (HRG), Sharm el-Sheikh (SSH).
+    - International destinations: Paris (LBG - Le Bourget), Goose Bay (YYR), Provo (PVU), Minot (MOT), Jeddah (JED), Medina (MED), Antalya (AYT), Nice (NCE).
+  - **Selection Highlight**: A single row near the bottom of the middle column
+  ("26 Jan 2025 Hurghada (HRG) Cairo (CAI) (SUBND) 0:53") has a subtle light
+  blue/gray rectangular selection highlight across it.
+
+
+  ## Composition
+
+  - **Frame-Left (~25% of width)**: Contains the earliest flight logs (Dec 2024
+  – Jan 2025) taking up roughly 40% vertical height of the lower-left corner,
+  leaving white space above.
+
+  - **Frame-Center (~35% of width)**: Fully occupied from top to bottom with a
+  dense column of flight records spanning late January 2025 through late
+  September 2025.
+
+  - **Frame-Right (~40% of width)**: Fully occupied from top to bottom with
+  flight entries from late September 2025 through mid-November 2025.
+
+  - **Visual Balance**: The image is a dense, 2D information graphic. Vertical
+  symmetry is created by the column layout, with prominent vertical label
+  markers ("SU-BND") acting as dividing anchors.
+
+
+  ## Location
+
+  - **Indeterminate** (Digital interface / software screenshot of an aviation
+  database or tracking platform such as Flightradar24, FlightAware, or internal
+  operations log).
+
+  - Focus is heavily centered on Egypt (Cairo, Giza, Hurghada, Sharm el-Sheikh),
+  along with transcontinental routes to France, Canada, the USA, Turkey, and
+  Saudi Arabia.
+
+
+  ## Setting & Place
+
+  - **Inside/Digital**: Flat 2D computer screen/user interface display. No
+  physical real-world environment.
+
+
+  ## Lighting
+
+  - Not applicable (Digital graphic with uniform, flat digital
+  backlighting/white screen background).
+
+
+  ## Cinematography
+
+  - Flat 2D screen capture / direct digital render. Zero perspective, lens
+  distortion, or depth of field.
+
+
+  ## People
+
+  No people in frame.
+
+
+  ## Objects & Text
+
+  - **Dominant Large Text**: Two large vertical black labels reading:
+    - `"SU-BND"`
+  - **Verbatim Text Entries (Sample of prominent entries)**:
+    - `"19 Nov 2025 Cairo (CAI) Cairo (CAI) (SUBND) 6:16"`
+    - `"13 Nov 2025 Antalya (AYT) Cairo (CAI) (SUBND) 1:18"`
+    - `"06 Nov 2025 Jeddah (JED) Cairo (CAI) (SUBND) 1:51"`
+    - `"18 Oct 2025 Nice (NCE) Cairo (CAI) (SUBND) 3:16"`
+    - `"23 May 2025 Goose Bay (YYR) Minot (MOT) (SUBND) 3:44"`
+    - `"23 May 2025 Paris (LBG) Goose Bay (YYR) (SUBND) 5:48"`
+    - `"22 May 2025 Cairo (CAI) Paris (LBG) (SUBND) 4:18"`
+    - `"21 Dec 2024 Giza (SPX) Cairo (CAI) (SUBND) 2:16"`
+    - Aircraft identifier: `"(SUBND)"` or `"(SU-BND)"` represents Egyptian civil aircraft registration SU-BND.
+
+  ## Colors & Mood
+
+  - **Palette**: Clean digital palette comprising crisp white (`#FFFFFF`),
+  hyperlink blue (`#1A73E8` / `#2B6CB0`), dark charcoal/black typography, and
+  soft neutral gray dividing lines.
+
+  - **Mood**: Analytical, administrative, factual, and strictly informational.

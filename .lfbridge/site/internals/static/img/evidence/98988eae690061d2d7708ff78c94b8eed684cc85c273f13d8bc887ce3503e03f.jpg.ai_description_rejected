@@ -1,0 +1,49 @@
+source: site/internals/static/img/evidence/98988eae690061d2d7708ff78c94b8eed684cc85c273f13d8bc887ce3503e03f.jpg
+status: rejected
+engine: gemini-flash-latest
+provider: gemini
+generated: 2026-08-20T12:54:10.147Z
+kind: image
+rejected:
+  finish_reason: PROHIBITED_CONTENT
+  finish_message: The model output could not be generated. This output contains
+    sensitive words that violate Google's [Generative AI Prohibited Use
+    policy](https://policies.google.com/terms/generative-ai/use-policy). If you
+    think this was an error, [send
+    feedback](https://ai.google.dev/gemini-api/docs/troubleshooting).
+  block_reason: null
+  model_version: gemini-3.7-flash
+  response_id: 6viGav-lO8z9qtsPrrCI-QE
+  error: "Gemini returned no description (finishReason: PROHIBITED_CONTENT)"
+safety_ratings: null
+prompt_feedback: null
+usage:
+  promptTokenCount: 2068
+  totalTokenCount: 2068
+  promptTokensDetails:
+    - modality: IMAGE
+      tokenCount: 1100
+    - modality: TEXT
+      tokenCount: 968
+  serviceTier: standard
+provider_response:
+  candidates:
+    - content: {}
+      finishReason: PROHIBITED_CONTENT
+      index: 0
+      finishMessage: The model output could not be generated. This output contains
+        sensitive words that violate Google's [Generative AI Prohibited Use
+        policy](https://policies.google.com/terms/generative-ai/use-policy). If
+        you think this was an error, [send
+        feedback](https://ai.google.dev/gemini-api/docs/troubleshooting).
+  usageMetadata:
+    promptTokenCount: 2068
+    totalTokenCount: 2068
+    promptTokensDetails:
+      - modality: IMAGE
+        tokenCount: 1100
+      - modality: TEXT
+        tokenCount: 968
+    serviceTier: standard
+  modelVersion: gemini-3.7-flash
+  responseId: 6viGav-lO8z9qtsPrrCI-QE

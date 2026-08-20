@@ -1,0 +1,174 @@
+source: site/internals/static/img/evidence/ac74d8a98386a202c112a46910cbe688a1ecadb8c7a296623a59b7430e602a9a.jpg
+status: done
+engine: gemini-flash-latest
+provider: gemini
+generated: 2026-08-20T12:55:07.861Z
+kind: image
+description: >-
+  ## Overview
+
+  This image is a composite screenshot displaying flight tracking information
+  and telemetric data for a flight operated by tail number N1098L from Fort
+  Bliss / El Paso, Texas (BIF/KBIF) to Kalispell, Montana (GPI/KGPI) on
+  Wednesday, September 10, 2025. The visual is divided into two main panels: a
+  mobile flight-status overview with a map on the left, and corresponding flight
+  data graphs/tables (including speed, altitude, and timestamps) on the right.
+  Red explanatory text has been overlaid onto both sections to highlight an
+  altitude drop down to 4,700 ft ASL at 9:16 MDT (11:16 EDT).
+
+
+  ## Hyper-Detail
+
+  The left side of the composite features a mobile phone screenshot interface
+  with a top status bar reading "5:00", an app icon, an 'X' icon, an
+  envelope/message icon, and network status icons including "5Guc", full signal
+  bars, and a "78%" battery indicator. 
+
+
+  Below the status bar:
+
+  - Origin code **BIF** in large blue text, annotated beneath with "FORT BLISS /
+  EL PASO / , TX" and departure time "WED 10-SEP-2025 07:48AM MDT".
+
+  - Destination code **GPI** in blue text, annotated beneath with "KALISPELL,
+  MT" and arrival time "WED 10-SEP-2025 10:38AM MDT".
+
+  - A green route timeline connecting two circular green endpoints, with text
+  below reading "2h 50m total travel time".
+
+  - A link stating "N1098L flight schedule" in blue.
+
+  - Text reading "View track log" alongside circular UI buttons: an info icon
+  `(i)`, a star `⭐`, and a gear settings icon `⚙`.
+
+  - An embedded FlightAware/OpenStreetMap interface showing the western United
+  States. The flight trajectory is rendered as a bright lime-green line
+  traversing from southern Texas near the Mexican border (BIF), moving northwest
+  across New Mexico, Utah, and Idaho, terminating at Kalispell in northwestern
+  Montana (GPI). 
+
+  - Large red overlay text centered across the map reads:
+    "Lowest recorded attitude of"
+    "4700 ft ASL @ 9:16 MDT" (with the spelling "attitude" used instead of altitude).
+  - Map UI controls include zoom in/out (`+` / `-`), a compass needle icon,
+  weather overlay toggle, play/step timeline buttons, and layer selector icon.
+
+  - Lower map metadata includes the "FlightAware" logo with an airplane graphic,
+  "© 2025 FlightAware", "© OpenStreetMap contributors", and "Weather:
+  10-Sep-2025 11:10AM EDT".
+
+
+  The right panel shows:
+
+  - Header: "Flight Track Log - Related Links" followed by bullet points:
+    * "Live Flight Tracker (N1098L)"
+    * "Flight ✈ N1098L 10-Sep-2025 (KBIF-KGPI)"
+    * A "Google EARTH" button icon.
+  - Section: "Times and Time Zones" with explanatory text describing EDT time
+  zone default settings.
+
+  - An Altitude / Speed graph plotting flight progress from ~10:00 AM EDT to
+  12:30 PM EDT:
+    - Left axis: Altitude in feet (0 ft to 40000 ft).
+    - Right axis: Speed in mph (0 mph to 800 mph).
+    - Yellow line indicates Altitude; light blue line indicates Speed.
+    - A prominent 'V'-shaped dip in both speed and altitude occurs in the center of the graph.
+    - A vertical magenta tracking line intersects the lowest point of this dip.
+    - Large red text with white outlining overlaid at the top of the dip reads: **"11:16EDT = 9:16MDT"**.
+  - Below the graph, an ADS-B tracking log table with columns: "EDT", "Lat",
+  "Lon", "Dir", "kts", "feet", showing initial climb data starting at 09:48AM
+  EDT at KBIF.
+
+
+  ## Composition
+
+  - **Layout**: Side-by-side split screen / composite graphic.
+    - Left pane occupies ~48% of the width (full height), containing the mobile flight overview and route map.
+    - Right pane occupies ~52% of the width (full height), containing metadata links, the telemetric altitude/speed graph, and data log table.
+  - **Visual Balance & Eye Flow**: The viewer's eye is immediately drawn to the
+  bold, bright red text annotations placed at the mid-left (map overlay) and
+  mid-right (telemetry graph overlay).
+
+  - **Depth of Field**: Digital flat interface, 2D graphic rendering; all text
+  and line graphics are in sharp digital focus throughout.
+
+
+  ## Location
+
+  - Indeterminate geographic capture location (Digital Graphic / Screen
+  Capture).
+
+  - Depicted Flight Geography: United States (Inland Western US: Texas, New
+  Mexico, Utah, Idaho, Montana). Best guess origin: El Paso, Texas, USA;
+  Destination: Kalispell, Montana, USA.
+
+
+  ## Setting & Place
+
+  - **Type**: Digital Graphical User Interface (FlightAware flight tracking
+  platform via mobile app and desktop web interface).
+
+  - No physical architectural structures present.
+
+
+  ## Lighting
+
+  - Digital screen graphic lighting. Uniform high-key flat display backlighting
+  with standard digital RGB color rendition (pure white background on the right,
+  dark slate-blue map palette on the left).
+
+
+  ## Cinematography
+
+  - Not applicable (Digital 2D UI graphic / multi-panel screenshot). Flat
+  orthographic rendering of graphs, maps, and UI elements.
+
+
+  ## People
+
+  No people in frame.
+
+
+  ## Objects & Text
+
+  ### Notable Text:
+
+  - "5:00", "5Guc", "78"
+
+  - "BIF FORT BLISS / EL PASO / , TX"
+
+  - "GPI KALISPELL, MT"
+
+  - "WED 10-SEP-2025 07:48AM MDT", "WED 10-SEP-2025 10:38AM MDT"
+
+  - "2h 50m total travel time"
+
+  - "N1098L flight schedule", "View track log"
+
+  - "Lowest recorded attitude of 4700 ft ASL @ 9:16 MDT"
+
+  - "Flight Track Log - Related Links"
+
+  - "Live Flight Tracker (N1098L)", "Flight ✈ N1098L 10-Sep-2025 (KBIF-KGPI)",
+  "+ Google EARTH"
+
+  - "Times and Time Zones"
+
+  - "11:16EDT = 9:16MDT"
+
+  - "Altitude = 00000 ft", "Speed = 000 mph"
+
+  - "FlightAware ADS-B", "Departure (KBIF)"
+
+  - Coordinates and flight data table: "09:48AM", "31.85", "-106.38", "↗ 43°",
+  "173", "4200", etc.
+
+
+  ## Colors & Mood
+
+  - **Color Palette**: Clean digital UI aesthetic. White and light grey
+  backgrounds, slate blue/navy map background, vibrant lime green for the flight
+  path, yellow and sky blue for graph plots, and bold emergency-style red for
+  overlay emphasis text.
+
+  - **Mood**: Analytical, investigative, technical, and objective.

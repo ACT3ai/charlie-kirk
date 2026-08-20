@@ -1,0 +1,97 @@
+source: site/internals/static/img/video_posters/fc00145d8714271cce839f4bcb190b498160326c7e29f6c9102488f0c76b1785.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:54:06.608Z
+kind: image
+language: en-US
+text: |-
+  REAL DE
+  AMERICA'S
+  VOICE
+  THE CHARLIE KIRK SHOW
+  THE
+  CHARLIE-KIl
+  - 11:13 AM CT *
+  EMAIL: FREEDOM@CHARLIEKIRK.COM
+  AUANCANUA BARAC CIAIIA OEAANO
+  dAnAR AAR deeyA INTeOMET
+  VILTCO bINCUlAR
+blocks:
+  - text: REAL DE
+    confidence: 1
+    bbox:
+      - 0.012957034267143343
+      - 0.8053132703204413
+      - 0.09908593165410029
+      - 0.036595683627658415
+  - text: AMERICA'S
+    confidence: 1
+    bbox:
+      - 0.009498460750081162
+      - 0.8365454526342824
+      - 0.11249658658907011
+      - 0.040797983275519534
+  - text: VOICE
+    confidence: 1
+    bbox:
+      - 0.009740260227272722
+      - 0.872222222063492
+      - 0.06818181818181818
+      - 0.033333333333333326
+  - text: THE CHARLIE KIRK SHOW
+    confidence: 1
+    bbox:
+      - 0.14285714629328997
+      - 0.8333333331944444
+      - 0.6185064935064936
+      - 0.06388888888888888
+  - text: THE
+    confidence: 1
+    bbox:
+      - 0.8344155846590909
+      - 0.8361111109722221
+      - 0.029220779220779147
+      - 0.022222222222222254
+  - text: CHARLIE-KIl
+    confidence: 1
+    bbox:
+      - 0.8343495282715011
+      - 0.8522545687234006
+      - 0.16409315381731304
+      - 0.062157530254787874
+  - text: "- 11:13 AM CT *"
+    confidence: 0.5
+    bbox:
+      - 0.011279439556993382
+      - 0.9215553948168785
+      - 0.11867488514293321
+      - 0.04577809969584146
+  - text: "EMAIL: FREEDOM@CHARLIEKIRK.COM"
+    confidence: 1
+    bbox:
+      - 0.1461038918290044
+      - 0.9277777778935186
+      - 0.512987012987013
+      - 0.04166666666666663
+  - text: AUANCANUA BARAC CIAIIA OEAANO
+    confidence: 0.3
+    bbox:
+      - 5.154220669315432e-9
+      - 0.9833333332291667
+      - 0.41233766233766234
+      - 0.01388888888888884
+  - text: dAnAR AAR deeyA INTeOMET
+    confidence: 0.3
+    bbox:
+      - 0.44805194805194803
+      - 0.9805555553472222
+      - 0.35064935064935066
+      - 0.01666666666666672
+  - text: VILTCO bINCUlAR
+    confidence: 0.3
+    bbox:
+      - 0.8051948076095778
+      - 0.9833333332291667
+      - 0.19318181818181823
+      - 0.01388888888888884

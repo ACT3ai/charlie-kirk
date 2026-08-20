@@ -1,0 +1,235 @@
+source: site/internals/static/img/evidence/aeae648919c5bc12c093c0c1a9ceff1cc6f9ed9b87a7ca30cf6b0a0aba65240b.jpg
+status: done
+engine: gemini-flash-latest
+provider: gemini
+generated: 2026-08-20T12:55:17.069Z
+kind: image
+description: >-
+  ## Overview
+
+  This image is a direct digital screenshot of a flight tracking log or flight
+  history table, displaying a chronological list of aircraft movements between
+  September and November 2025. The tabular interface details dates, origin and
+  destination airports with IATA codes, callsigns/aircraft registration
+  identifiers, flight durations, and departure/arrival timestamps. The majority
+  of the listed routes originate from, arrive in, or operate locally within
+  Cairo, Egypt (CAI), with additional destinations including Antalya, Jeddah,
+  Medina, Nice, Giza, Sharm el-Sheikh, Paris Le Bourget, Goose Bay, and Provo.
+
+
+  ## Hyper-Detail
+
+  The image presents a clean web/software data table with light gray horizontal
+  row divider lines across a white/off-white background. The data columns from
+  left to right consist of:
+
+  1. **Date & Origin:** Shows the calendar date followed by the departure city
+  name and its three-letter IATA code in blue font (e.g., `13 Nov 2025 Cairo
+  (CAI)`).
+
+  2. **Destination:** Shows the arrival city name and its three-letter IATA code
+  in blue font, or a dash `—` when not specified.
+
+  3. **Identifier / Flight Code:** Displays the string `(SUBND)` in dark gray
+  font for every row.
+
+  4. **Flight Duration:** Duration formatted in hours and minutes (`H:MM`) or an
+  em-dash `—`.
+
+  5. **Scheduled/Actual Departure & Arrival Timestamps:** Three columns of times
+  formatted with `AM` or `PM` markers.
+
+
+  Row entries listed chronologically in reverse (top to bottom):
+
+  - `13 Nov 2025 Cairo (CAI)` to `Antalya (AYT)`, `(SUBND) 1:09`, `11:21 AM
+  11:21 AM 1:29 PM`
+
+  - `13 Nov 2025 Cairo (CAI)` to `Antalya (AYT)`, `(SUBND) —`, `11:00 AM 10:28
+  AM 1:37 PM`
+
+  - `06 Nov 2025 Cairo (CAI)` to `Cairo (CAI)`, `(SUBND) 0:19`, `9:38 PM 9:38 PM
+  9:57 PM`
+
+  - `06 Nov 2025 Jeddah (JED)` to `Cairo (CAI)`, `(SUBND) 1:51`, `7:32 PM 7:32
+  PM 8:23 PM`
+
+  - `06 Nov 2025 Cairo (CAI)` to `Jeddah (JED)`, `(SUBND) 2:00`, `3:09 PM 3:09
+  PM 6:09 PM`
+
+  - `04 Nov 2025 Cairo (CAI)` to `Cairo (CAI)`, `(SUBND) 2:49`, `6:46 PM 6:46 PM
+  9:35 PM`
+
+  - `04 Nov 2025 Cairo (CAI)` to `Cairo (CAI)`, `(SUBND) 6:14`, `8:37 AM 8:37 AM
+  2:52 PM`
+
+  - `03 Nov 2025 Cairo (CAI)` to `Cairo (CAI)`, `(SUBND) 3:33`, `10:56 AM 10:56
+  AM 2:29 PM`
+
+  - `01 Nov 2025 Medina (MED)` to `Cairo (CAI)`, `(SUBND) 1:56`, `7:21 PM 7:30
+  PM 8:26 PM`
+
+  - `01 Nov 2025 Cairo (CAI)` to `Medina (MED)`, `(SUBND) 1:25`, `3:14 PM 4:06
+  PM 6:31 PM`
+
+  - `01 Nov 2025 Cairo (CAI)` to `Cairo (CAI)`, `(SUBND) 0:13`, `2:19 PM 2:19 PM
+  2:33 PM`
+
+  - `29 Oct 2025 Cairo (CAI)` to `Cairo (CAI)`, `(SUBND) 3:03`, `7:11 PM 7:10 PM
+  9:13 PM`
+
+  - `29 Oct 2025 Cairo (CAI)` to `Cairo (CAI)`, `(SUBND) 1:53`, `10:02 AM 9:59
+  AM 10:53 AM`
+
+  - `28 Oct 2025 Cairo (CAI)` to `Cairo (CAI)`, `(SUBND) 3:23`, `9:13 AM 9:13 AM
+  11:37 AM`
+
+  - `26 Oct 2025 Cairo (CAI)` to `Cairo (CAI)`, `(SUBND) 1:58`, `12:46 PM 12:46
+  PM 2:43 PM`
+
+  - `25 Oct 2025 Cairo (CAI)` to `Cairo (CAI)`, `(SUBND) 6:56`, `6:37 AM 6:37 AM
+  1:33 PM`
+
+  - `22 Oct 2025 Cairo (CAI)` to `Cairo (CAI)`, `(SUBND) 1:59`, `9:10 AM 9:10 AM
+  11:09 AM`
+
+  - `18 Oct 2025 Cairo (CAI)` to `Cairo (CAI)`, `(SUBND) 0:33`, `8:40 PM 8:02 PM
+  7:35 PM`
+
+  - `18 Oct 2025 Nice (NCE)` to `Cairo (CAI)`, `(SUBND) 3:16`, `2:00 PM 2:57 PM
+  6:11 PM`
+
+  - `15 Oct 2025 Cairo (CAI)` to `Nice (NCE)`, `(SUBND) 3:35`, `2:57 PM 11:22 AM
+  12:57 PM`
+
+  - `15 Oct 2025 Cairo (CAI)` to `Nice (NCE)`, `(SUBND) —`, `11:00 AM 10:07 AM
+  1:45 PM`
+
+  - `12 Oct 2025 Cairo (CAI)` to `Cairo (CAI)`, `(SUBND) 3:02`, `12:12 PM 9:05
+  AM 11:07 AM`
+
+  - `10 Oct 2025 Cairo (CAI)` to `Cairo (CAI)`, `(SUBND) 7:17`, `2:45 PM 7:28 AM
+  1:45 PM`
+
+  - `07 Oct 2025 Cairo (CAI)` to `Cairo (CAI)`, `(SUBND) 0:15`, `5:23 PM 5:03 PM
+  4:18 PM`
+
+  - `07 Oct 2025 —` to `Cairo (CAI)`, `(SUBND) 1:42`, `1:28 PM 11:46 AM 3:28 PM`
+
+  - `07 Oct 2025 Cairo (CAI)` to `Jeddah (JED)`, `(SUBND) 1:45`, `1:15 PM 11:26
+  AM 1:11 PM`
+
+  - `05 Oct 2025 Giza (SPX)` to `Cairo (CAI)`, `(SUBND) 0:27`, `3:04 PM 2:37 PM
+  2:04 PM`
+
+  - `05 Oct 2025 Sharm el-Sheikh (SSH)` to `Giza (SPX)`, `(SUBND) 0:46`, `2:19
+  PM 1:29 PM 1:14 PM`
+
+  - `05 Oct 2025 Cairo (CAI)` to `—`, `(SUBND) 0:48`, `12:50 PM 11:59 AM —`
+
+  - `02 Oct 2025 Sharm el-Sheikh (SSH)` to `Cairo (CAI)`, `(SUBND) 0:47`, `6:32
+  PM 5:40 PM 5:28 PM`
+
+  - `02 Oct 2025 Giza (SPX)` to `Sharm el-Sheikh (SSH)`, `(SUBND) 0:47`, `5:03
+  PM 4:16 PM 4:03 PM`
+
+  - `02 Oct 2025 Cairo (CAI)` to `—`, `(SUBND) —`, `3:38 PM 3:18 PM —`
+
+  - `30 Sep 2025 Cairo (CAI)` to `Cairo (CAI)`, `(SUBND) 0:19`, `8:00 PM 7:36 PM
+  6:55 PM`
+
+  - `30 Sep 2025 Cairo (CAI)` to `Cairo (CAI)`, `(SUBND) 0:21`, `7:27 PM 7:01 PM
+  6:22 PM`
+
+  - `24 Sep 2025 Cairo (CAI)` to `Cairo (CAI)`, `(SUBND) 2:01`, `11:45 AM 9:44
+  AM 10:45 AM`
+
+  - `23 Sep 2025 Cairo (CAI)` to `Cairo (CAI)`, `(SUBND) 5:41`, `2:35 PM 8:48 AM
+  1:30 PM`
+
+  - `21 Sep 2025 Cairo (CAI)` to `Cairo (CAI)`, `(SUBND) 2:02`, `1:02 PM 10:55
+  AM 11:57 AM`
+
+  - `20 Sep 2025 Cairo (CAI)` to `Cairo (CAI)`, `(SUBND) 0:15`, `8:02 PM 7:43 PM
+  6:57 PM`
+
+  - `15 Sep 2025 Paris (LBG)` to `Cairo (CAI)`, `(SUBND) 4:08`, `2:26 PM 10:18
+  AM 2:26 PM`
+
+  - `13 Sep 2025 Goose Bay (YYR)` to `Paris (LBG)`, `(SUBND) 5:09`, `9:10 PM
+  9:57 PM 7:06 AM`
+
+  - `13 Sep 2025 Provo (PVU)` to `Goose Bay (YYR)`, `(SUBND) 5:10`, `6:07 PM
+  12:57 PM 8:07 PM`
+
+  - `05 Sep 2025 Provo (PVU)` to `Provo (PVU)`, `(SUBND) 1:08`, `1:14 PM 12:06
+  PM 12:14 PM`
+
+
+  ## Composition
+
+  The entire image is a 2D digital graphic/user interface, occupying 100% of the
+  frame. The composition is structured as a vertically aligned multi-row data
+  grid:
+
+  - **FRAME-LEFT (occupying ~35%):** Dates and Origin Airport information.
+
+  - **FRAME-CENTER-LEFT (occupying ~25%):** Destination Airport information.
+
+  - **FRAME-CENTER (occupying ~10%):** Flight/Tail Identifier `(SUBND)` and
+  duration times.
+
+  - **FRAME-RIGHT (occupying ~30%):** Departure and arrival timestamps.
+
+  There is no optical depth of field; every element is rendered in sharp digital
+  vector/raster text.
+
+
+  ## Location
+
+  (indeterminate) - Digital interface screenshot. The data displayed references
+  global airports in Egypt (Cairo, Giza, Sharm el-Sheikh), Saudi Arabia (Jeddah,
+  Medina), Turkey (Antalya), France (Nice, Paris Le Bourget), Canada (Goose
+  Bay), and the United States (Provo).
+
+
+  ## Setting & Place
+
+  Digital screen capture / UI element of a flight log / aviation tracking web
+  platform (such as FlightAware or Flightradar24).
+
+
+  ## Lighting
+
+  Not applicable (flat digital graphical screen rendering, uniform white digital
+  background).
+
+
+  ## Cinematography
+
+  Direct 2D graphical screen capture / flat digital UI display; no camera, lens,
+  or perspective angle involved.
+
+
+  ## People
+
+  No people in frame.
+
+
+  ## Objects & Text
+
+  - **Text:** Entire display consists of alphanumeric text detailing dates,
+  locations, IATA codes (`CAI`, `AYT`, `JED`, `MED`, `NCE`, `SPX`, `SSH`, `LBG`,
+  `YYR`, `PVU`), registration identifier `(SUBND)`, and time values.
+
+  - **Graphic Elements:** Fine gray horizontal separator lines between every
+  table row.
+
+
+  ## Colors & Mood
+
+  - **Palette:** Minimalist interface featuring pure white (`#FFFFFF`), light
+  charcoal/gray text, mid-blue text for hyperlinked/highlighted airport codes,
+  and subtle silver-gray row borders.
+
+  - **Mood:** Neutral, technical, data-driven, and utilitarian.

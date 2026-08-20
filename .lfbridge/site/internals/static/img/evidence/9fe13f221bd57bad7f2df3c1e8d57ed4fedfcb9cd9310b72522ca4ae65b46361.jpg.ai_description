@@ -1,0 +1,114 @@
+source: site/internals/static/img/evidence/9fe13f221bd57bad7f2df3c1e8d57ed4fedfcb9cd9310b72522ca4ae65b46361.jpg
+status: done
+engine: gemini-flash-latest
+provider: gemini
+generated: 2026-08-20T12:54:31.689Z
+kind: image
+description: >-
+  ## Overview
+
+  This image is a digital screenshot of a Google Trends web interface displaying
+  search interest data for the search term `"Michael Harlan"`. The graph shows
+  "Interest over time" between October 27, 2024, and September 28, 2025,
+  specifically filtered for the Washington DC (Hagerstown) region. The line
+  graph remains flat at near zero for almost the entire duration, except for a
+  single sharp peak reaching 100 on approximately February 16, 2025.
+
+
+  ## Hyper-Detail
+
+  The interface features Google's modern Material Design aesthetic with rounded
+  rectangular cards set against a very pale blue-gray background (`#EDF2FA`
+  approximate tone).
+
+
+  * **Top Search Header Bar**:
+    * On the left, a large white rounded rectangular container contains a solid blue circular indicator (`#4285F4`) at its left, followed by the text `"Michael Harlan"` in black sans-serif font enclosed in double quotation marks, with a smaller subtitle below reading `Search term` in a muted gray font.
+    * To the right of this box is a translucent/light gray-blue rounded rectangular card containing a gray plus icon (`+`) and the text `Compare`.
+  * **Filter Options Row**:
+    * Located immediately beneath the search terms, a horizontal white bar with rounded corners holds four drop-down filter pills/buttons with gray borders and downward-pointing chevron arrows:
+      1. `Washington DC (Hagersto...` (truncated text with dropdown arrow)
+      2. `Past 12 months` (with dropdown arrow)
+      3. `All categories` (with dropdown arrow)
+      4. `Web Search` (with dropdown arrow)
+  * **Interest Over Time Card**:
+    * A large white rounded rectangular card occupies the lower two-thirds of the image.
+    * In the upper left corner of this card, the heading reads `Interest over time` followed by a small circular help/info icon containing a question mark `(?)`.
+    * In the upper right corner, three action icons are visible in a dark gray outline format: a download arrow pointing into a tray (`⤓`), an embed code icon (`< >`), and a share icon (three connected nodes `⠪`).
+    * The line chart contains horizontal grid lines corresponding to the Y-axis values on the left: `100`, `75`, `50`, `25`, and a baseline `0`. The numbers are rendered in a light gray font.
+    * The X-axis at the bottom displays four date labels in light gray: `Oct 27, 2024`, `Feb 16, 2025`, `Jun 8, 2025`, and `Sep 28, 2025`.
+    * The data line is rendered in a solid, medium-thick blue line (`#4285F4`). It runs completely flat at 0 along the bottom axis from Oct 27, 2024, until just before Feb 16, 2025, where it spikes sharply straight up to 100, then plunges straight back down to 0 immediately after, remaining flat at zero all the way across past Jun 8, 2025, and Sep 28, 2025.
+
+  ## Composition
+
+  * **Top Area (FRAME-TOP, ~25% of frame)**: Contains the search query card on
+  the left (~50% width), the Compare button on the right (~48% width), and the
+  filter dropdown row underneath spanning across ~96% width.
+
+  * **Main Graph Area (FRAME-CENTER and FRAME-BOTTOM, ~70% of frame)**: A large
+  white card filling the horizontal width almost entirely, centered with slight
+  margins.
+
+  * **Data Line Placement**: The chart is horizontally balanced with a single
+  dramatic vertical spike positioned at horizontal frame position ~35% from the
+  left edge (corresponding to February 2025).
+
+  * **Depth of Field**: Flat 2D user interface; everything is in sharp digital
+  vector/raster focus.
+
+
+  ## Location
+
+  (indeterminate) – Digital screen capture / User Interface.
+
+
+  ## Setting & Place
+
+  Digital environment / Web application interface (Google Trends).
+
+
+  ## Lighting
+
+  Not applicable (Digital UI render with flat white and pale blue tones and no
+  artificial shading except standard soft UI drop shadows).
+
+
+  ## Cinematography
+
+  Direct digital screenshot (2D graphic capture, full screen interface crop, no
+  camera/lens used).
+
+
+  ## People
+
+  No people in frame.
+
+
+  ## Objects & Text
+
+  * **UI Controls & Icons**: Dropdown arrows, plus sign `+`, question mark
+  circle `(?)`, download icon, embed icon, share icon.
+
+  * **Legible Text**:
+    * `"Michael Harlan"`
+    * `Search term`
+    * `+ Compare`
+    * `Washington DC (Hagersto...`
+    * `Past 12 months`
+    * `All categories`
+    * `Web Search`
+    * `Interest over time`
+    * `100`, `75`, `50`, `25`
+    * `Oct 27, 2024`
+    * `Feb 16, 2025`
+    * `Jun 8, 2025`
+    * `Sep 28, 2025`
+
+  ## Colors & Mood
+
+  * **Palette**: Dominant clean white background cards (`#FFFFFF`), light
+  periwinkle/cool gray canvas background (`#EDF2FA`), Google blue accent color
+  (`#4285F4`), dark charcoal body text, and medium/light neutral gray for
+  secondary text and grid lines.
+
+  * **Mood**: Analytic, clinical, objective, and digital.

@@ -1,0 +1,65 @@
+source: site/internals/static/img/video_posters/fa7834504abe0dd8c3190240a495a5e3cd159591cb7079d99f784f6c30143317.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:54:06.447Z
+kind: image
+language: en-US
+text: |-
+  a former = intel agent said
+  WhAT about the US??
+  J
+  rikTok
+  © betshannah
+  the Iranian nuclear program is
+  going to be destroyed
+blocks:
+  - text: a former = intel agent said
+    confidence: 1
+    bbox:
+      - 0.10370371049508995
+      - 0.15416666849093974
+      - 0.7851851781209309
+      - 0.04602864384651184
+  - text: WhAT about the US??
+    confidence: 1
+    bbox:
+      - 0.15625000483630952
+      - 0.1992187498465402
+      - 0.6770833333333333
+      - 0.037109375
+  - text: J
+    confidence: 1
+    bbox:
+      - 0.0416666665625
+      - 0.45898437480468757
+      - 0.06944444444444445
+      - 0.0390625
+  - text: rikTok
+    confidence: 1
+    bbox:
+      - 0.02430555440972224
+      - 0.5078125000781251
+      - 0.11458333333333334
+      - 0.01953125
+  - text: © betshannah
+    confidence: 1
+    bbox:
+      - 0.01388889050925922
+      - 0.5292968749023437
+      - 0.19444444444444442
+      - 0.015625
+  - text: the Iranian nuclear program is
+    confidence: 1
+    bbox:
+      - 0.1597222173611112
+      - 0.7480468750837053
+      - 0.6805555555555556
+      - 0.03125
+  - text: going to be destroyed
+    confidence: 1
+    bbox:
+      - 0.2465277809461805
+      - 0.7832031248901368
+      - 0.5069444444444444
+      - 0.029296875

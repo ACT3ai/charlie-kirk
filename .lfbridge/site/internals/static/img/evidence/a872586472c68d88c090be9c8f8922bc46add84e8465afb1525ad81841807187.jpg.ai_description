@@ -1,0 +1,113 @@
+source: site/internals/static/img/evidence/a872586472c68d88c090be9c8f8922bc46add84e8465afb1525ad81841807187.jpg
+status: done
+engine: gemini-flash-latest
+provider: gemini
+generated: 2026-08-20T12:54:56.842Z
+kind: image
+description: >-
+  ## Overview
+
+  The image is a direct digital screenshot of a flight-tracking log table,
+  likely from a service such as FlightAware or ADS-B Exchange. It displays
+  historical flight records for an aircraft with the tail number "(N102DZ)"
+  across various dates in September 2025 (predated log or future/simulated
+  data). The table lists departure and destination airports, flight durations,
+  scheduled/actual times, flight status indicators, and data export buttons.
+
+
+  ## Hyper-Detail
+
+  The image captures a clean, web-based tabular user interface with a white
+  background and horizontal grey dividing lines separating each row. 
+
+
+  * **Table Rows & Columns**:
+    * **Column 1 (Date & Origin)**: Features dates ranging from "04 Sep 2025" at the bottom to "19 Sep 2025" at the top. Next to the dates are origin cities and IATA airport codes in light blue parenthetical text, such as "Dallas (DAL)", "Phoenix (PHX)", "Los Angeles (LAX)", "Scottsdale (SCF)", "Salt Lake City (SLC)", "Provo (PVU)", "Camarillo (QTC)", "Chicago (PWK)", "Hailey (SUN)", "New Braunfels (QQZ)", and "Bentonville (XNA)".
+    * **Column 2 (Destination)**: Lists the destination city and airport code in the same formatting (e.g., "Morristown (MMU)", "Bentonville (XNA)", "Scottsdale (SCF)", "Salt Lake City (SLC)", etc.).
+    * **Column 3 (Aircraft Tail Number)**: Consistently shows `(N102DZ)` in dark grey font in every row.
+    * **Column 4 (Duration)**: Lists the flight duration in hours and minutes format (e.g., "2:16", "1:54", "1:58", "2:30", "2:45", "2:53", "0:07", "1:12", "1:11", "1:38", "0:59", "1:13", "1:11", "0:54", "1:03", "2:14").
+    * **Columns 5, 6, 7 (Timestamps)**: Three columns displaying time stamps with AM/PM indicators (e.g., departure time, takeoff/en route time, estimated arrival time).
+    * **Status Column**: Contains a vertical colored bar (mostly green, some orange/yellow, one dark red/maroon near the middle) followed by text such as "Landed 1:27 PM", "Landed 9:25 AM", "Landed 9:28 PM", etc.
+    * **Action Buttons (Far Right)**: Each row ends with three interactive elements:
+      * An outlined button with a downward arrow and "KML" icon.
+      * An outlined button with a downward arrow and "CSV" icon.
+      * A solid dark blue button with a white right-pointing play triangle and the word "Play".
+  * **Interactive UI Elements**:
+    * One row (dated "10 Sep 2025 Scottsdale (SCF) to Salt Lake City (SLC)") is highlighted with a soft light-blue horizontal selection bar.
+    * A black mouse cursor arrow is positioned near the destination of this highlighted row, triggering a small dark grey tooltip/pop-up bubble that reads: `"Salt Lake City International Airport, United States"`.
+    * Along the very bottom edge of the frame, there is a tiny sliver of a light green graphic/background and faint white cursive text or logo watermark (uncertain, partially cropped).
+
+  ## Composition
+
+  * **Layout**: A full-screen horizontal user interface grid filling 100% of the
+  frame.
+
+  * **Horizontal Grid**: The table spans from FRAME-LEFT to FRAME-RIGHT.
+
+  * **Vertical Structure**: 16 visible flight rows stacked vertically from top
+  to bottom.
+
+  * **Focal Point**: The highlighted row in the lower-middle section (around 65%
+  down from top to bottom) where the blue highlight bar and the black tooltip
+  pop-up are located.
+
+  * **Depth of Field**: Perfectly flat, 2D digital screen capture; everything is
+  in sharp focus without optical depth of field.
+
+
+  ## Location
+
+  * **Digital Environment**: Web browser / software application interface.
+
+  * **Real-World Geographic Subject**: Various airports across the United States
+  (including Scottsdale, AZ; Bentonville, AR; Morristown, NJ; Chicago, IL; Salt
+  Lake City, UT; Los Angeles, CA).
+
+  * **Indeterminate Location of User**: (indeterminate).
+
+
+  ## Setting & Place
+
+  * **Setting**: Digital UI / Virtual display interface. No physical
+  architecture or interior/exterior physical setting.
+
+
+  ## Lighting
+
+  * **Lighting Style**: Flat, uniform digital screen illumination. High-key with
+  a pure white background (`#FFFFFF`) and dark, crisp typography. No shadows or
+  practical lights.
+
+
+  ## Cinematography
+
+  * **Type**: Digital capture / 2D screen capture.
+
+  * **Angle**: Direct frontal 2D alignment (0-degree planar view).
+
+  * **Framing**: Full desktop browser data table view.
+
+
+  ## People
+
+  No people in frame.
+
+
+  ## Objects & Text
+
+  * **Visible Text**:
+    * Flight dates: "19 Sep 2025", "14 Sep 2025", "11 Sep 2025", "10 Sep 2025", "07 Sep 2025", "04 Sep 2025".
+    * Aircraft registration: "(N102DZ)" on every row.
+    * Airport / City names: "Bentonville (XNA)", "Morristown (MMU)", "Scottsdale (SCF)", "New Braunfels (QQZ)", "Hailey (SUN)", "Chicago (PWK)", "Phoenix (PHX)", "Provo (PVU)", "Camarillo (QTC)", "Salt Lake City (SLC)", "Los Angeles (LAX)", "Dallas (DAL)".
+    * Tooltip: "Salt Lake City International Airport, United States".
+    * Status: "Landed [Time]" (e.g., "Landed 1:27 PM", "Landed 9:25 AM", "Landed 9:28 PM", "Landed 8:43 PM", "Landed 4:29 PM", "Landed 2:16 PM", "Landed 7:49 AM", "Landed 10:15 AM", "Landed 7:32 PM", "Landed 4:48 PM", "Landed 3:31 PM", "Landed 1:13 PM", "Landed 9:23 AM", "Landed 8:45 PM", "Landed 6:21 PM", "Landed 8:11 PM").
+    * UI Buttons: "KML", "CSV", "► Play".
+
+  ## Colors & Mood
+
+  * **Palette**: Dominant white background, slate dark grey/charcoal body text,
+  light sky-blue for airport codes, medium royal blue for interactive play
+  buttons, emerald green/yellow-orange/brick-red for status markers, and light
+  pastel blue for the row highlight.
+
+  * **Mood**: Analytic, informational, sterile, orderly, and technical.

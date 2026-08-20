@@ -1,0 +1,133 @@
+source: site/internals/static/img/evidence/9a4e2279ef15d6d1105273552b9c606b05f073ca56bcac365107fb983d2c12f8.jpg
+status: done
+engine: gemini-flash-latest
+provider: gemini
+generated: 2026-08-20T12:54:15.464Z
+kind: image
+description: >-
+  ## Overview
+
+  This image is a digital screen capture from an online video broadcast,
+  specifically "The Stew Peters Show" (SPS). The display features a live user
+  interface of an online flight tracking radar application overlaid on a muted,
+  geographical terrain map. A flight path line in yellow-green traces an
+  aircraft's route across the map, with a dedicated flight info panel and
+  airplane photo on the left-hand side, enclosed within the show's dark
+  broadcast graphics package.
+
+
+  ## Hyper-Detail
+
+  The image consists of a digital UI overlay composed of several distinct
+  modules:
+
+  - **Top Broadcast Header Banner:** A black horizontal bar containing red,
+  white, and grey elements. On the far left is an "SPN" / "SP" logo in bold font
+  with red accents. Navigation-style text reads `SHOWS`, `SUBSCRIBE`, `NEWS`,
+  `SHOP`, `LIVE`. On the far right are small circular system/notification icons
+  and a magnifying glass search icon.
+
+  - **Flight Radar Left Sidebar:** A vertical semi-transparent dark grey
+  telemetry sidebar (~18% frame width). 
+    - Top contains a rectangular thumbnail photograph of a twin-engine executive private jet / regional aircraft in flight against a bright sky, flying from right to left.
+    - Telemetry fields below the photo display flight details in small white and grey monospaced text, including registrations, callsigns, aircraft type (mentions "DASSAULT" or similar executive jet text (uncertain)), altitude, and speed metrics.
+    - A bright green horizontal separator button/bar labels a section `FLIGHT ACTIVITY`.
+    - Below this, historical playback controls, UTC date (`2023-04-24` or similar), leg information, timestamps, and playback speed buttons (`1x`, `5x`, `10x`, `25x`, `40x`) are visible.
+  - **Central/Right Map Area:** A bird's-eye satellite/topographical map
+  rendered in desaturated olive-green, khaki-brown, and grey hues. 
+    - Faint grey and reddish road network lines cross the terrain.
+    - A glowing, sharp yellow/light-green flight trajectory line traces from the upper right quadrant, curving westward, dropping straight south in a 90-degree corner turn, and terminating near a small cluster of airfield/waypoint markers near the center-left marked with text (such as an airport code or location name, illegible/blurred).
+  - **Map Control Toolbar (Far Right):** A vertical stack of small square UI
+  tool buttons on the extreme right border, containing map zoom controls (`+`,
+  `-`), layering tools, compass, target/crosshair, measuring tape, and layer
+  toggles in teal/green accents.
+
+  - **Lower Broadcast Overlay Banner:**
+    - Lower-left corner: A prominent rectangular broadcast bug reading `SPS` in large bold white lettering, underlined with the words `STEW PETERS SHOW` in smaller capital letters.
+    - Bottom scrolling ticker/bar: A dark bar running along the bottom edge showing white text separated by small logo icons: `wPeters.com`, `Join the StewCrew`, `Stew Peters Live`, `Indict. Try. Fry.`, `Follow @RealStewPeters on X`, `Watch`.
+
+  ## Composition
+
+  - **Layout Balance:** Divided into a narrow left-hand data column (~20%
+  width), a dominant central-right visual map (~75% width), and a very slim
+  right-side UI strip (~5% width).
+
+  - **Foreground:** UI text overlays, the "SPS STEW PETERS SHOW" bug at
+  bottom-left (~8% frame area), the top navigation bar (~5% height), and the
+  bottom ticker bar (~5% height).
+
+  - **Midground:** The flight tracker interface panels and the distinct
+  yellow-green vector trajectory line leading from top-right to center-left.
+
+  - **Background:** The flat digital cartographic map occupying nearly the
+  entire central field of view.
+
+  - **Focal Point:** The high-contrast bright yellow/green flight path line
+  contrasting sharply against the dull olive-brown terrain, leading the viewer's
+  eye downward toward the landing/waypoint marker near center-left.
+
+
+  ## Location
+
+  - **Estimated Location:** (indeterminate). The map display depicts inland
+  topography with sparse urban clustering, indicative of rural or semi-arid
+  central United States (uncertain), but specific geopolitical boundaries are
+  obscured or unlabelled.
+
+  - **Location Type:** Digital map interface / broadcast studio graphic.
+
+
+  ## Setting & Place
+
+  - **Type:** Digital Screen / User Interface (UI) Capture.
+
+  - **Context:** An investigative, news, or commentary broadcast segment
+  displaying tracking data from an online ADS-B/flight-radar platform (such as
+  ADS-B Exchange or Flightradar24 interface styling).
+
+
+  ## Lighting
+
+  - **Lighting Type:** Not applicable (digital display graphic). 
+
+  - **Digital Palette Tone:** Low-key, dark-mode software interface with
+  luminous vector overlays and brightly colored graphic highlights (green, red,
+  white).
+
+
+  ## Cinematography
+
+  - **Framing / Format:** Direct screen capture / flat 2D graphic broadcast
+  feed.
+
+  - **Aspect Ratio:** 16:9 standard widescreen.
+
+  - **Perspective:** Top-down 2D flat orthographic map projection.
+
+
+  ## People
+
+  No people in frame.
+
+
+  ## Objects & Text
+
+  - **Logos & Badges:**
+    - "SP / SPN" (top left)
+    - "SPS STEW PETERS SHOW" (bottom left)
+  - **Visible Text:**
+    - Header: `SHOWS`, `SUBSCRIBE`, `NEWS`, `SHOP`, `LIVE`
+    - Sidebar: `FLIGHT ACTIVITY`, `History`, `UTC day:`, `Time:`, `Click on the trace line to start playback`
+    - Ticker: `wPeters.com`, `Join the StewCrew`, `Stew Peters Live`, `Indict. Try. Fry.`, `Follow @RealStewPeters on X`, `Watch`
+  - **Graphic Elements:** Private airplane photo thumbnail, flight path track
+  vector line, digital UI buttons, map waypoint nodes.
+
+
+  ## Colors & Mood
+
+  - **Dominant Colors:** Muted army green, muddy brown, slate dark grey, solid
+  black, punctuated by high-visibility accents of lime green, bright yellow, and
+  bold red.
+
+  - **Mood / Tone:** Analytical, urgent, surveillance-oriented, investigative,
+  and informational.

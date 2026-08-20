@@ -1,0 +1,33 @@
+source: site/internals/static/img/video_posters/f46df7647fcab0835a553f989c01cd909cf5fee46a42346fa84787078f388754.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:54:05.805Z
+kind: image
+language: en-US
+text: |-
+  BRANDON
+  STRAKA
+  SHOW
+blocks:
+  - text: BRANDON
+    confidence: 1
+    bbox:
+      - 0.07455571313570758
+      - 0.748783593381147
+      - 0.0769840383529663
+      - 0.09621816847059461
+  - text: STRAKA
+    confidence: 1
+    bbox:
+      - 0.06894393604896855
+      - 0.7934500142037035
+      - 0.08582169532775878
+      - 0.11772112528483081
+  - text: SHOW
+    confidence: 1
+    bbox:
+      - 0.0819736020257462
+      - 0.8627306348691173
+      - 0.06114550590515137
+      - 0.07489350212944879
