@@ -1,0 +1,49 @@
+source: site/internals/static/img/evidence/fa9cdfb0ea0c74c22e35d558795ffdb80667092a85d21cb32aafd60378443228.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:52:51.358Z
+kind: image
+language: en-US
+text: |-
+  Necklace position
+  Shaped Charge
+  trajectory
+  Radial expansion and
+  directional force
+blocks:
+  - text: Necklace position
+    confidence: 1
+    bbox:
+      - 0.5754717029008855
+      - 0.5448717951700036
+      - 0.3805031387894241
+      - 0.023504273504273532
+  - text: Shaped Charge
+    confidence: 1
+    bbox:
+      - 0.5723270390682957
+      - 0.5696581196048681
+      - 0.3207547223126447
+      - 0.02350427350427342
+  - text: trajectory
+    confidence: 1
+    bbox:
+      - 0.5723270453791004
+      - 0.5959302328942601
+      - 0.2106918193675854
+      - 0.023255812816130872
+  - text: Radial expansion and
+    confidence: 1
+    bbox:
+      - 0.5754717009332304
+      - 0.6293604656114091
+      - 0.3805031387894242
+      - 0.018930132776244113
+  - text: directional force
+    confidence: 1
+    bbox:
+      - 0.5754717058393797
+      - 0.6482558139992739
+      - 0.3018867775245949
+      - 0.02182965645423307

@@ -1,0 +1,25 @@
+source: site/internals/static/img/video_posters/37ed2b3fb14c5253794b32c9d9242422b7bab43abb0421cc0ccd2c9f511a1a14.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:53:19.525Z
+kind: image
+language: en-US
+text: |-
+  PRIVED
+  HER CAN
+blocks:
+  - text: PRIVED
+    confidence: 0.5
+    bbox:
+      - 0.136950905245478
+      - 0.6253731342089554
+      - 0.08527131782945738
+      - 0.01492537313432829
+  - text: HER CAN
+    confidence: 1
+    bbox:
+      - 0.2891618192705149
+      - 0.5785194326895512
+      - 0.10384690237907784
+      - 0.016095463197622673

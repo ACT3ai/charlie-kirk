@@ -1,0 +1,73 @@
+source: site/internals/static/img/evidence/f20a0b06c5bd1945ed896c8bd9b942a8aedd545106c5fa410b8f44e37e8ec459.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:52:38.674Z
+kind: image
+language: en-US
+text: |-
+  Charlie Kirk, shooter found in video hiding
+  behind a plant on a balcony.
+  Here's the youtube video and a close-up screen
+  shot. white shirt, black gloves, definite rifle, and it
+  might be the lighting or lack of but that looks to
+  be a darker skin pigmentation.
+  TONE
+  https://youtu.be/MbaQadkqkzl?
+blocks:
+  - text: Charlie Kirk, shooter found in video hiding
+    confidence: 1
+    bbox:
+      - 0.05325444497041403
+      - 0.02232142838541662
+      - 0.8520710059171599
+      - 0.03125
+  - text: behind a plant on a balcony.
+    confidence: 1
+    bbox:
+      - 0.047337287771202864
+      - 0.0580357142857143
+      - 0.5798816568047338
+      - 0.0357142857142857
+  - text: Here's the youtube video and a close-up screen
+    confidence: 1
+    bbox:
+      - 0.053254448520709846
+      - 0.12053571411830355
+      - 0.8520710059171597
+      - 0.03125
+  - text: shot. white shirt, black gloves, definite rifle, and it
+    confidence: 1
+    bbox:
+      - 0.04733726708579907
+      - 0.15625000016741075
+      - 0.8816568047337277
+      - 0.03125
+  - text: might be the lighting or lack of but that looks to
+    confidence: 1
+    bbox:
+      - 0.047337292209072505
+      - 0.19196428549107147
+      - 0.8461538461538463
+      - 0.03125
+  - text: be a darker skin pigmentation.
+    confidence: 1
+    bbox:
+      - 0.04733728491124245
+      - 0.22767857126116064
+      - 0.5443786982248521
+      - 0.03125
+  - text: TONE
+    confidence: 1
+    bbox:
+      - 0.3663241105613627
+      - 0.9179931621478937
+      - 0.18451154584715346
+      - 0.039013675280979765
+  - text: https://youtu.be/MbaQadkqkzl?
+    confidence: 0.5
+    bbox:
+      - 0.04733727115384631
+      - 0.9464285715959821
+      - 0.5562130177514794
+      - 0.03125

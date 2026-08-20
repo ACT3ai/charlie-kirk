@@ -1,0 +1,41 @@
+source: site/internals/static/img/video_posters/b0e3374176a16ee70f364036780399694a36682aff6d3faae5ed6638eea194ae.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:53:49.364Z
+kind: image
+language: en-US
+text: |-
+  RONG
+  PRIY
+  THE
+  AVE
+blocks:
+  - text: RONG
+    confidence: 1
+    bbox:
+      - -0.0009020631869421436
+      - 0.07286427935283124
+      - 0.4540005111694336
+      - 0.10572493026025187
+  - text: PRIY
+    confidence: 0.5
+    bbox:
+      - 0.5865633151164751
+      - 0.07848837468674352
+      - 0.4108526992797852
+      - 0.09738371643839006
+  - text: THE
+    confidence: 1
+    bbox:
+      - 0.7312661491370087
+      - 0.5188953493185826
+      - 0.041343669891357515
+      - 0.017441859560509143
+  - text: AVE
+    confidence: 1
+    bbox:
+      - 0.7235142098276093
+      - 0.5377906982967753
+      - 0.12661499023437495
+      - 0.0552325563927073

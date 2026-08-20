@@ -1,0 +1,97 @@
+source: site/internals/static/img/video_posters/e9c0f6f5adeec89fc31a36efddc0b14dab24df0bc3107ade4fb392908a3df36f.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:54:04.053Z
+kind: image
+language: en-US
+text: |-
+  COMESALA
+  VOSON
+  PROVE ME VOONG DONC ME MRONG P LOVE ME WRONG PROVE THE WRUNG
+  viêt
+  ASTAKYLAGA
+  YRER S
+  ГО EBAL
+  yrety
+  EEY CON
+  AMER R
+  LUNP
+blocks:
+  - text: COMESALA
+    confidence: 0.5
+    bbox:
+      - 0.6546874990234375
+      - 0.03716216275337836
+      - 0.1546875000000001
+      - 0.07094594594594594
+  - text: VOSON
+    confidence: 0.3
+    bbox:
+      - 0.792187499921875
+      - 0.07770270290540537
+      - 0.0234375
+      - 0.020270270270270285
+  - text: PROVE ME VOONG DONC ME MRONG P LOVE ME WRONG PROVE THE WRUNG
+    confidence: 0.5
+    bbox:
+      - 0.32831648909282196
+      - 0.08318982829896693
+      - 0.6302761554718017
+      - 0.2208506867692277
+  - text: viêt
+    confidence: 1
+    bbox:
+      - 0.3968749994921875
+      - 0.2837837840371622
+      - 0.04062500000000002
+      - 0.04054054054054057
+  - text: ASTAKYLAGA
+    confidence: 0.3
+    bbox:
+      - 0.49218750110677084
+      - 0.2770270267454955
+      - 0.13281250000000006
+      - 0.060810810810810745
+  - text: YRER S
+    confidence: 1
+    bbox:
+      - 0.38586261026741725
+      - 0.327124559764863
+      - 0.04389978051185606
+      - 0.028183312029452012
+  - text: ГО EBAL
+    confidence: 0.3
+    bbox:
+      - 0.49375000042410716
+      - 0.32432432367277997
+      - 0.11249999999999999
+      - 0.09121621621621623
+  - text: yrety
+    confidence: 1
+    bbox:
+      - 0.36718749958984376
+      - 0.5540540543074325
+      - 0.03281250000000002
+      - 0.03378378378378377
+  - text: EEY CON
+    confidence: 1
+    bbox:
+      - 0.37031250033854163
+      - 0.5810810806869369
+      - 0.029687500000000033
+      - 0.023648648648648685
+  - text: AMER R
+    confidence: 0.3
+    bbox:
+      - 0.44374999973090273
+      - 0.5574324317567568
+      - 0.05781249999999999
+      - 0.1216216216216216
+  - text: LUNP
+    confidence: 0.5
+    bbox:
+      - 0.44843750029017854
+      - 0.6790540538127413
+      - 0.04062500000000002
+      - 0.060810810810810745

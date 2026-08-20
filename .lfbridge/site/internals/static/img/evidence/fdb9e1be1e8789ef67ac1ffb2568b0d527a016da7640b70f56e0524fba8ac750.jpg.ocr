@@ -1,0 +1,41 @@
+source: site/internals/static/img/evidence/fdb9e1be1e8789ef67ac1ffb2568b0d527a016da7640b70f56e0524fba8ac750.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:52:59.834Z
+kind: image
+language: en-US
+text: |-
+  Allan
+  NOW
+  Baron Coleman
+  DAIR
+blocks:
+  - text: Allan
+    confidence: 1
+    bbox:
+      - 0.3864168613476687
+      - 0.02499999950757581
+      - 0.11943793911007028
+      - 0.10833333333333328
+  - text: NOW
+    confidence: 0.5
+    bbox:
+      - 0.4519906332747853
+      - 0.8333333330208333
+      - 0.11475409836065575
+      - 0.0708333333333333
+  - text: Baron Coleman
+    confidence: 1
+    bbox:
+      - 0.016393440796252958
+      - 0.9416666668333333
+      - 0.18266978922716626
+      - 0.04166666666666663
+  - text: DAIR
+    confidence: 0.5
+    bbox:
+      - 0.9039812641686183
+      - 0.7791666659821428
+      - 0.07962529274004682
+      - 0.09583333333333333

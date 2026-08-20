@@ -1,0 +1,49 @@
+source: site/internals/static/img/evidence/fcdc8b51a2b703c73bbcdc0ea77cdcf25893d133a3dfa879d163e3de95829be6.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:52:56.563Z
+kind: image
+language: en-US
+text: |-
+  - 11
+  the other very delicate thing we have going
+  on
+  SPN
+  THE STEW PETERS NETWORK
+blocks:
+  - text: "- 11"
+    confidence: 1
+    bbox:
+      - 0.085937500296875
+      - 0.5176056336619718
+      - 0.02968749999999999
+      - 0.028169014084507116
+  - text: the other very delicate thing we have going
+    confidence: 1
+    bbox:
+      - 0.22187500249289763
+      - 0.721830985787452
+      - 0.5484375
+      - 0.06338028169014087
+  - text: on
+    confidence: 1
+    bbox:
+      - 0.4828124997135417
+      - 0.7957746480633803
+      - 0.034375000000000044
+      - 0.04225352112676051
+  - text: SPN
+    confidence: 1
+    bbox:
+      - 0.828124999905134
+      - 0.7746478869592555
+      - 0.14531250000000007
+      - 0.10211267605633811
+  - text: THE STEW PETERS NETWORK
+    confidence: 1
+    bbox:
+      - 0.83906249878125
+      - 0.8697183100704226
+      - 0.12187500000000007
+      - 0.021126760563380254

@@ -1,0 +1,41 @@
+source: site/internals/static/img/video_posters/82b80afa1aee164463f4a7abb476753b8dabda375b2a17cb0cf3dd28ed25499b.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:53:37.652Z
+kind: image
+language: en-US
+text: |-
+  9/10/2025 12:17:12 PM
+  COm
+  CS - Rod
+  Watch the timestamp
+blocks:
+  - text: 9/10/2025 12:17:12 PM
+    confidence: 1
+    bbox:
+      - 1.9010416352216453e-9
+      - 0.030555555370370358
+      - 0.228125
+      - 0.03888888888888886
+  - text: COm
+    confidence: 1
+    bbox:
+      - 0.7984375002951388
+      - 0.05833333320987655
+      - 0.05312499999999998
+      - 0.04444444444444451
+  - text: CS - Rod
+    confidence: 1
+    bbox:
+      - 0.7984375009895833
+      - 0.11111111099537041
+      - 0.11875000000000002
+      - 0.047222222222222165
+  - text: Watch the timestamp
+    confidence: 1
+    bbox:
+      - 0.30241700766104307
+      - 0.873103523295732
+      - 0.3968168258666992
+      - 0.09431311819288468

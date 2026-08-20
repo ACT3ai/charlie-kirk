@@ -1,0 +1,33 @@
+source: site/internals/static/img/video_posters/49329b319ae225c902bb48bebb876767cf49f761e36474e9a6d88361d857ea0f.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:53:23.944Z
+kind: image
+language: en-US
+text: |-
+  00;13;11;22
+  CROWDSCURG
+  TRUtH GigaSynd
+blocks:
+  - text: 00;13;11;22
+    confidence: 1
+    bbox:
+      - 0.7500000024418321
+      - 0.05167958763922953
+      - 0.21947673797607425
+      - 0.07751937866210934
+  - text: CROWDSCURG
+    confidence: 1
+    bbox:
+      - 0.026162788803928548
+      - 0.9250646002473633
+      - 0.21802326202392577
+      - 0.06718346065945091
+  - text: TRUtH GigaSynd
+    confidence: 1
+    bbox:
+      - 0.31971801548215467
+      - 0.9064439413093553
+      - 0.3067848968505859
+      - 0.09150487687852649

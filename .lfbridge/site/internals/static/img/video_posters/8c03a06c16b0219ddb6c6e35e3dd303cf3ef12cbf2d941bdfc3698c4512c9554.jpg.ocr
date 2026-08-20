@@ -1,0 +1,97 @@
+source: site/internals/static/img/video_posters/8c03a06c16b0219ddb6c6e35e3dd303cf3ef12cbf2d941bdfc3698c4512c9554.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:53:39.237Z
+kind: image
+language: en-US
+text: |-
+  START A
+  CHAPTER
+  TODAY!
+  REAL DE
+  AMERICA'S
+  VOICE
+  THE CHARLIE KIRK SHOW
+  EMAIL: FREEDOM@CHARLIEKIRK.COM
+  THE
+  CHARLIE- KIRK
+  *SHOW
+blocks:
+  - text: START A
+    confidence: 1
+    bbox:
+      - 0.019862765115756492
+      - 0.2708333316497462
+      - 0.14897074572543767
+      - 0.12467949125501843
+  - text: CHAPTER
+    confidence: 1
+    bbox:
+      - 0.013186481774222608
+      - 0.3431383678083766
+      - 0.16906358602461122
+      - 0.13159384197658963
+  - text: TODAY!
+    confidence: 1
+    bbox:
+      - 0.03755868495913754
+      - 0.43333333391975315
+      - 0.12832550860719877
+      - 0.10555555555555551
+  - text: REAL DE
+    confidence: 1
+    bbox:
+      - 0.07352615624220432
+      - 0.7580855380992233
+      - 0.09081936330302781
+      - 0.031051144335005
+  - text: AMERICA'S
+    confidence: 1
+    bbox:
+      - 0.07189699411947287
+      - 0.7852602917412009
+      - 0.09720757832176435
+      - 0.035034971767001655
+  - text: VOICE
+    confidence: 1
+    bbox:
+      - 0.07187441811855197
+      - 0.8159582828316464
+      - 0.05969404241475329
+      - 0.031972323523627444
+  - text: THE CHARLIE KIRK SHOW
+    confidence: 1
+    bbox:
+      - 0.18622847824726138
+      - 0.7833333335119047
+      - 0.5258215962441314
+      - 0.05277777777777781
+  - text: "EMAIL: FREEDOM@CHARLIEKIRK.COM"
+    confidence: 1
+    bbox:
+      - 0.18333335328583464
+      - 0.8592592598430662
+      - 0.4458333046783304
+      - 0.04490740696589157
+  - text: THE
+    confidence: 1
+    bbox:
+      - 0.7746478876564946
+      - 0.7833333331944443
+      - 0.026604068857589924
+      - 0.022222222222222254
+  - text: CHARLIE- KIRK
+    confidence: 1
+    bbox:
+      - 0.7762128337245697
+      - 0.7999999998611111
+      - 0.164319248826291
+      - 0.030555555555555558
+  - text: "*SHOW"
+    confidence: 1
+    bbox:
+      - 0.8967136155516433
+      - 0.8305555554166666
+      - 0.04225352112676051
+      - 0.022222222222222143

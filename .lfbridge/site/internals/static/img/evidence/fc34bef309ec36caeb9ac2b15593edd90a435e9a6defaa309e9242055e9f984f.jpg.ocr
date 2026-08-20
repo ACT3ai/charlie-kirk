@@ -1,0 +1,57 @@
+source: site/internals/static/img/evidence/fc34bef309ec36caeb9ac2b15593edd90a435e9a6defaa309e9242055e9f984f.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:52:56.017Z
+kind: image
+language: en-US
+text: |-
+  A PLACI
+  FOR
+  YO
+  CONS
+  FeT
+  ION
+blocks:
+  - text: A PLACI
+    confidence: 1
+    bbox:
+      - 0.6082751805183071
+      - 0.07446355869131305
+      - 0.3946522748028791
+      - 0.0639504690965017
+  - text: FOR
+    confidence: 1
+    bbox:
+      - 0.6242865645033657
+      - 0.1615943057312933
+      - 0.19357593677662044
+      - 0.04590421517690024
+  - text: YO
+    confidence: 1
+    bbox:
+      - 0.8527131782487211
+      - 0.15261627893809826
+      - 0.12661498740867327
+      - 0.05377906958262124
+  - text: CONS
+    confidence: 1
+    bbox:
+      - 0.4237726109625943
+      - 0.9331395349727646
+      - 0.056847544069643374
+      - 0.015988371769587117
+  - text: FeT
+    confidence: 0.5
+    bbox:
+      - 0.5012919908168018
+      - 0.9156976745076482
+      - 0.041343667772081205
+      - 0.01598837176958723
+  - text: ION
+    confidence: 1
+    bbox:
+      - 0.5322997418504898
+      - 0.9331395351786753
+      - 0.03617571018360277
+      - 0.01598837176958723

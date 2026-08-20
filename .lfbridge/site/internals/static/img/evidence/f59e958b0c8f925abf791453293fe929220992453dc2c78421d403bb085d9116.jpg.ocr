@@ -1,0 +1,49 @@
+source: site/internals/static/img/evidence/f59e958b0c8f925abf791453293fe929220992453dc2c78421d403bb085d9116.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:52:45.753Z
+kind: image
+language: en-US
+text: |-
+  CENSORED
+  CHARLIE KIRK
+  1,793 Podcasts
+  Removed from Apple Podcast
+  (of his podcasts of when he was alive)
+blocks:
+  - text: CENSORED
+    confidence: 1
+    bbox:
+      - 0.0601409357769451
+      - 0.46554773434374286
+      - 0.18648298645019531
+      - 0.08524382669865871
+  - text: CHARLIE KIRK
+    confidence: 1
+    bbox:
+      - 0.30341027776069496
+      - 0.13161166268022317
+      - 0.6417259521484375
+      - 0.21073500657167055
+  - text: 1,793 Podcasts
+    confidence: 1
+    bbox:
+      - 0.4283885155526631
+      - 0.3923556620210449
+      - 0.3815950622558594
+      - 0.14758034162623912
+  - text: Removed from Apple Podcast
+    confidence: 1
+    bbox:
+      - 0.265988374381132
+      - 0.5572916664713542
+      - 0.7194767456054687
+      - 0.13541666666666663
+  - text: (of his podcasts of when he was alive)
+    confidence: 1
+    bbox:
+      - 0.2776162738228259
+      - 0.7105734767025089
+      - 0.6889534912109374
+      - 0.09946236559139787

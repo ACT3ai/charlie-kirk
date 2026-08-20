@@ -1,0 +1,49 @@
+source: site/internals/static/img/evidence/f06aec7ed5b817c3bd362aae91156e4eeb0fec269b7753eab5c0f73e2cc9901b.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:52:35.329Z
+kind: image
+language: en-US
+text: |-
+  Environmental
+  Technology Building
+  Hallot Flags k
+  < Charlie Tent
+  & Shooter positioned here
+blocks:
+  - text: Environmental
+    confidence: 1
+    bbox:
+      - 0.7473684188304094
+      - 0.02564102576312577
+      - 0.13333333333333341
+      - 0.02197802197802201
+  - text: Technology Building
+    confidence: 1
+    bbox:
+      - 0.7192982474035087
+      - 0.047619047509157464
+      - 0.17894736842105252
+      - 0.03296703296703296
+  - text: Hallot Flags k
+    confidence: 1
+    bbox:
+      - 0.15438596536842106
+      - 0.19047619098901092
+      - 0.18596491228070175
+      - 0.05128205128205132
+  - text: < Charlie Tent
+    confidence: 1
+    bbox:
+      - 0.37874053432582844
+      - 0.20028284629948456
+      - 0.22497507731119792
+      - 0.04632075452979234
+  - text: "& Shooter positioned here"
+    confidence: 1
+    bbox:
+      - 0.23859649512280692
+      - 0.7216117215018315
+      - 0.3894736842105263
+      - 0.04029304029304026

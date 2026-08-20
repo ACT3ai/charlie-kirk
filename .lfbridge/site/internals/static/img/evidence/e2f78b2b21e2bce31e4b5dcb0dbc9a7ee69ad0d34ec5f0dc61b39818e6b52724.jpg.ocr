@@ -1,0 +1,65 @@
+source: site/internals/static/img/evidence/e2f78b2b21e2bce31e4b5dcb0dbc9a7ee69ad0d34ec5f0dc61b39818e6b52724.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:52:06.089Z
+kind: image
+language: en-US
+text: |-
+  FREEDOM
+  WE AGRIA
+  CHEAT A GARY
+  AMEN CAN
+  LUMEBADI
+  WRUK, A
+  But a
+blocks:
+  - text: FREEDOM
+    confidence: 1
+    bbox:
+      - 0.31250000062122535
+      - 0.14825581449125935
+      - 0.07267441600561142
+      - 0.010174417868256569
+  - text: WE AGRIA
+    confidence: 0.5
+    bbox:
+      - 0.36654070002960715
+      - 0.17613372058861165
+      - 0.042906973510980606
+      - 0.015697674825787544
+  - text: CHEAT A GARY
+    confidence: 1
+    bbox:
+      - 0.3707573881673271
+      - 0.184946575429485
+      - 0.038615643978118896
+      - 0.01583123579621315
+  - text: AMEN CAN
+    confidence: 1
+    bbox:
+      - 0.48401163142840686
+      - 0.771802325603054
+      - 0.06686045974493027
+      - 0.011627906933426857
+  - text: LUMEBADI
+    confidence: 0.5
+    bbox:
+      - 0.4880781579648792
+      - 0.7841393062272428
+      - 0.06317730993032455
+      - 0.011506716720759869
+  - text: WRUK, A
+    confidence: 0.3
+    bbox:
+      - 0.47383721103234844
+      - 0.8095703124650995
+      - 0.058139532804489136
+      - 0.0146484375
+  - text: But a
+    confidence: 0.3
+    bbox:
+      - 0.5348837223108436
+      - 0.8110351563927827
+      - 0.042151160538196564
+      - 0.0146484375

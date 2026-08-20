@@ -1,0 +1,41 @@
+source: site/internals/static/img/video_posters/eaf046be0e2f2a1771629a1f32045218f68d9e115ef563e234fc7f53ac60e90e.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:54:04.763Z
+kind: image
+language: en-US
+text: |-
+  NOI
+  CONS
+  FCT
+  udd
+blocks:
+  - text: NOI
+    confidence: 1
+    bbox:
+      - 0.09883720794778224
+      - 0.8911564605541022
+      - 0.020348839759826667
+      - 0.024943314492702484
+  - text: CONS
+    confidence: 1
+    bbox:
+      - 0.03779069807303673
+      - 0.8911564624644859
+      - 0.030523254871368408
+      - 0.024943310767412186
+  - text: FCT
+    confidence: 1
+    bbox:
+      - 0.07994186080269788
+      - 0.8684807257541622
+      - 0.023255813121795657
+      - 0.020408162847161293
+  - text: udd
+    confidence: 1
+    bbox:
+      - 0.053779068912930564
+      - 0.8684807220288719
+      - 0.02325581550598145
+      - 0.02040817029774189

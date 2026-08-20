@@ -1,0 +1,97 @@
+source: site/internals/static/img/video_posters/e6f31ec2b75223cabe53728173f692b8d0863c2e8cbf898c3e6fa2d9c5b3fb95.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:54:02.653Z
+kind: image
+language: en-US
+text: |-
+  Reply to B&T's comment
+  Why are you being
+  suppressed?
+  УНАЧМОЗ ИЯЗТЕЗЫ
+  Tikto
+  @rynestin
+  WO
+  SO ORIGINALLY WHEN
+  Can't keep up with all the
+  questions! I'm Trying!
+  @BasedSamParker @SamParkerSenate
+blocks:
+  - text: Reply to B&T's comment
+    confidence: 1
+    bbox:
+      - 0.13178294766795237
+      - 0.1206395347719037
+      - 0.18087854738588685
+      - 0.010174418489138248
+  - text: Why are you being
+    confidence: 1
+    bbox:
+      - 0.12919896936983538
+      - 0.13372093019442155
+      - 0.20930232295283563
+      - 0.01598837176958723
+  - text: suppressed?
+    confidence: 1
+    bbox:
+      - 0.1288011849858924
+      - 0.15052217246261457
+      - 0.14809766698766638
+      - 0.014556047320365972
+  - text: УНАЧМОЗ ИЯЗТЕЗЫ
+    confidence: 0.3
+    bbox:
+      - 0.28986235315078385
+      - 0.2732541095890666
+      - 0.3184600547507957
+      - 0.03404352466265359
+  - text: Tikto
+    confidence: 1
+    bbox:
+      - 0.09819121887570821
+      - 0.4694767445776681
+      - 0.13436691849320026
+      - 0.023255813121795588
+  - text: "@rynestin"
+    confidence: 1
+    bbox:
+      - 0.023255814739070225
+      - 0.5072674419033035
+      - 0.17312661630135995
+      - 0.020348836978276497
+  - text: WO
+    confidence: 1
+    bbox:
+      - 0.2377260997698775
+      - 0.5116279067654543
+      - 0.05426356350934061
+      - 0.013081395626068137
+  - text: SO ORIGINALLY WHEN
+    confidence: 1
+    bbox:
+      - 0.09629628829629648
+      - 0.770833333625
+      - 0.8
+      - 0.0625
+  - text: Can't keep up with all the
+    confidence: 1
+    bbox:
+      - 0.12821395465654598
+      - 0.8587651465412188
+      - 0.743425609447338
+      - 0.04788753191630046
+  - text: questions! I'm Trying!
+    confidence: 1
+    bbox:
+      - 0.1703703622222223
+      - 0.9083333335416666
+      - 0.6518518518518519
+      - 0.04166666666666674
+  - text: "@BasedSamParker @SamParkerSenate"
+    confidence: 1
+    bbox:
+      - 0.21447028108818286
+      - 0.9708333336765053
+      - 0.5710594459816262
+      - 0.018992247184117628

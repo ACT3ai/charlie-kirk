@@ -1,0 +1,33 @@
+source: site/internals/static/img/video_posters/f206e6c269bdd88ef73b8cd14f4bcbe5151dfc113d73f7d743305a08c15202d0.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:54:05.465Z
+kind: image
+language: en-US
+text: |-
+  Kael H
+  ‹ Hall of Flags
+  ••.
+blocks:
+  - text: Kael H
+    confidence: 1
+    bbox:
+      - 0.15211267451306917
+      - 0.8357558141757683
+      - 0.10704225482362692
+      - 0.01598837176958723
+  - text: ‹ Hall of Flags
+    confidence: 1
+    bbox:
+      - 0.01671925572234744
+      - 0.9442078883782197
+      - 0.43135021479442864
+      - 0.03890980482101447
+  - text: ••.
+    confidence: 0.5
+    bbox:
+      - 0.9070422540806348
+      - 0.9593023236475123
+      - 0.04507042085281521
+      - 0.008720934391021729

@@ -1,0 +1,81 @@
+source: site/internals/static/img/video_posters/eec4605afc34950544d032537ff8e68a81d427e284be26a7ac89f70f80f21db0.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:54:05.142Z
+kind: image
+language: en-US
+text: |-
+  SPN
+  "LL
+  THE STEW PETERS
+  VISIT THE ALL-NEW STEWPETERS.COM | JOIN THE STEW CREW
+  THE STEW PETERS SHOW
+  STEW PETERS SHOW
+  * Indict. Try. Fry.
+  * Follow @RealStewPeters on X i Watch Old World Order at StewPeters.com
+  * SUBSCRIBE to stewi
+blocks:
+  - text: SPN
+    confidence: 1
+    bbox:
+      - 0.014062499754464292
+      - 0.0555555558928571
+      - 0.07187500000000001
+      - 0.047222222222222276
+  - text: '"LL'
+    confidence: 0.5
+    bbox:
+      - 0.10624999881696429
+      - -1.289681694771616e-10
+      - 0.33125
+      - 0.11388888888888882
+  - text: THE STEW PETERS
+    confidence: 1
+    bbox:
+      - 0.660754705327324
+      - 0.25099513752004476
+      - 0.33786559104919434
+      - 0.1146763960520426
+  - text: VISIT THE ALL-NEW STEWPETERS.COM | JOIN THE STEW CREW
+    confidence: 1
+    bbox:
+      - 0.3500000244362383
+      - 0.8069444446202125
+      - 0.5208333015441895
+      - 0.03749999999999998
+  - text: THE STEW PETERS SHOW
+    confidence: 1
+    bbox:
+      - 0.33437499769531254
+      - 0.8500000001620369
+      - 0.553125
+      - 0.06666666666666665
+  - text: STEW PETERS SHOW
+    confidence: 1
+    bbox:
+      - 0.02343749746093755
+      - 0.9138888890277779
+      - 0.203125
+      - 0.022222222222222254
+  - text: "* Indict. Try. Fry."
+    confidence: 1
+    bbox:
+      - 0.004687500781249987
+      - 0.9555555551666667
+      - 0.140625
+      - 0.03888888888888886
+  - text: "* Follow @RealStewPeters on X i Watch Old World Order at StewPeters.com"
+    confidence: 1
+    bbox:
+      - 0.1593749962109376
+      - 0.9583333336111111
+      - 0.6359375
+      - 0.033333333333333326
+  - text: "* SUBSCRIBE to stewi"
+    confidence: 1
+    bbox:
+      - 0.8187499988769531
+      - 0.9583333334722222
+      - 0.1796875
+      - 0.033333333333333326

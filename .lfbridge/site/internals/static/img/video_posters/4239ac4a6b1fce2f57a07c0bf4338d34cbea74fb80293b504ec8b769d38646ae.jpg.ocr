@@ -1,0 +1,41 @@
+source: site/internals/static/img/video_posters/4239ac4a6b1fce2f57a07c0bf4338d34cbea74fb80293b504ec8b769d38646ae.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:53:22.509Z
+kind: image
+language: en-US
+text: |-
+  N1098L FLIGHT PATH
+  SEPTEMBER 10, 2025
+  AXLE10
+  BOMBARDIER GLOBAL 6500 HADES
+blocks:
+  - text: N1098L FLIGHT PATH
+    confidence: 1
+    bbox:
+      - 0.3502906970459565
+      - 0.29444444490667143
+      - 0.30087209701538087
+      - 0.0444444444444444
+  - text: SEPTEMBER 10, 2025
+    confidence: 1
+    bbox:
+      - 0.3488372151958219
+      - 0.3666666669934755
+      - 0.3023255729675294
+      - 0.06000000000000005
+  - text: AXLE10
+    confidence: 1
+    bbox:
+      - 0.44318898740870466
+      - 0.513229478244223
+      - 0.11362202644348146
+      - 0.04847644382052951
+  - text: BOMBARDIER GLOBAL 6500 HADES
+    confidence: 1
+    bbox:
+      - 0.24583332906250008
+      - 0.6588888899039562
+      - 0.5125
+      - 0.05222222222222217

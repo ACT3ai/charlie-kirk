@@ -1,0 +1,49 @@
+source: site/internals/static/img/video_posters/d21b100d839942c97f2858c131c420c10531b9f51a6a19ac9f209b018fcbeff8.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:53:57.521Z
+kind: image
+language: en-US
+text: |-
+  Prison/Jail
+  Utah
+  ASK YOU ABOUT
+  П.9.
+  POLIC
+blocks:
+  - text: Prison/Jail
+    confidence: 1
+    bbox:
+      - 0.15000000172222216
+      - 0.051212937556154525
+      - 0.7
+      - 0.13477088948787064
+  - text: Utah
+    confidence: 0.5
+    bbox:
+      - 0.4138888893981481
+      - 0.2102425874663073
+      - 0.15277777777777785
+      - 0.07277628032345007
+  - text: ASK YOU ABOUT
+    confidence: 1
+    bbox:
+      - 0.15833333493055557
+      - 0.4528301882580863
+      - 0.6888888888888889
+      - 0.06738544474393526
+  - text: П.9.
+    confidence: 0.3
+    bbox:
+      - 0.23055555562499996
+      - 0.7601078170148248
+      - 0.03888888888888892
+      - 0.0242587601078168
+  - text: POLIC
+    confidence: 1
+    bbox:
+      - 0.9666666666898149
+      - 0.5956873316936209
+      - 0.030555555555555558
+      - 0.018867924528301883

@@ -1,0 +1,49 @@
+source: site/internals/static/img/video_posters/1fe5ae4d2104991a346b499bc0d77c734d964bc9e7705231ed93ff727035563c.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:53:13.699Z
+kind: image
+language: en-US
+text: |-
+  PROJECT
+  CONSTITUTION
+  treate
+  Baron
+  Sidas
+blocks:
+  - text: PROJECT
+    confidence: 1
+    bbox:
+      - 0.9054916578250883
+      - 0.10319426139094579
+      - 0.05529575347900395
+      - 0.033921555413140236
+  - text: CONSTITUTION
+    confidence: 1
+    bbox:
+      - 0.8894911445494981
+      - 0.1340042875751778
+      - 0.08729678153991705
+      - 0.03431700600518117
+  - text: treate
+    confidence: 0.5
+    bbox:
+      - 0.9796511628651134
+      - 0.5788113695643147
+      - 0.018895348310470572
+      - 0.018087855445014123
+  - text: Baron
+    confidence: 1
+    bbox:
+      - 0.017441860486632363
+      - 0.9198966407995891
+      - 0.07267441749572753
+      - 0.03875968933105467
+  - text: Sidas
+    confidence: 0.5
+    bbox:
+      - 0.6249999990337165
+      - 0.9405684762598897
+      - 0.05232558250427244
+      - 0.05684754265679248

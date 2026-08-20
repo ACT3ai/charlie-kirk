@@ -1,0 +1,89 @@
+source: site/internals/static/img/evidence/f2021293be5b9bda2de550cfa6fc37460628e1eecb02085d9ce75caf69649b30.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:52:38.338Z
+kind: image
+language: en-US
+text: |-
+  Exit wound
+  @I_am_JohnCullen
+  Exit wound
+  @I_am_JohnCullen
+  Entry wound
+  amstim
+  am.
+  Entry wound
+  @lam_JohnCullen
+  dreamtime
+blocks:
+  - text: Exit wound
+    confidence: 1
+    bbox:
+      - 0.05999999988552188
+      - 0.2275862068652037
+      - 0.07555555555555557
+      - 0.020689655172413834
+  - text: "@I_am_JohnCullen"
+    confidence: 0.5
+    bbox:
+      - 0.06170456525689913
+      - 0.2662629444993926
+      - 0.1291275617811415
+      - 0.12694060226966586
+  - text: Exit wound
+    confidence: 1
+    bbox:
+      - 0.09555555544107744
+      - 0.7172413792789969
+      - 0.07555555555555557
+      - 0.020689655172413723
+  - text: "@I_am_JohnCullen"
+    confidence: 0.5
+    bbox:
+      - 0.3315555524757802
+      - 0.17793103018333112
+      - 0.12888889736599396
+      - 0.12275862858213227
+  - text: Entry wound
+    confidence: 1
+    bbox:
+      - 0.35771132564048286
+      - 0.3408063830667811
+      - 0.08457734849717885
+      - 0.025283786346172565
+  - text: amstim
+    confidence: 0.5
+    bbox:
+      - 0.2755555580546206
+      - 0.36379309998781917
+      - 0.09111111111111114
+      - 0.14137931034482754
+  - text: am.
+    confidence: 1
+    bbox:
+      - 0.2911111111020119
+      - 0.43793103474249984
+      - 0.03666666666666668
+      - 0.05689655172413799
+  - text: Entry wound
+    confidence: 1
+    bbox:
+      - 0.5976067008860279
+      - 0.5503656336758225
+      - 0.08700881958007811
+      - 0.030303215158396735
+  - text: "@lam_JohnCullen"
+    confidence: 0.5
+    bbox:
+      - 0.5403338174015047
+      - 0.5924453193858249
+      - 0.12956620110405814
+      - 0.12625995504445042
+  - text: dreamtime
+    confidence: 1
+    bbox:
+      - 0.7077870225399495
+      - 0.5110500648780983
+      - 0.09791782803005644
+      - 0.1471237051075902

@@ -1,0 +1,41 @@
+source: site/internals/static/img/video_posters/08b5d991c6aa841150efb0a2f1bf4b3685796094c74a075ce21d867b10f0015f.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:53:08.123Z
+kind: image
+language: en-US
+text: |-
+  @DiligentDenizen on X
+  THAT LITTLE STATUE
+  CONS
+  ION
+blocks:
+  - text: "@DiligentDenizen on X"
+    confidence: 1
+    bbox:
+      - 0.6191860441473774
+      - 0.007751938866151109
+      - 0.379360466003418
+      - 0.07002583821614583
+  - text: THAT LITTLE STATUE
+    confidence: 1
+    bbox:
+      - 0.3226744119433026
+      - 0.9222222217098738
+      - 0.35610466003417973
+      - 0.06485788133409287
+  - text: CONS
+    confidence: 1
+    bbox:
+      - 0.915697675331052
+      - 0.9121447024667506
+      - 0.024709300994873007
+      - 0.023255814446343392
+  - text: ION
+    confidence: 1
+    bbox:
+      - 0.9651162793302404
+      - 0.9121447027089988
+      - 0.015988371372222865
+      - 0.023255814446343392

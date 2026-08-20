@@ -1,0 +1,73 @@
+source: site/internals/static/img/evidence/eb4bc2c9387c5748317bb6b07a84e053d5a117209d6072f498e310dcd3cc9efb.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:52:24.467Z
+kind: image
+language: en-US
+text: |-
+  € DISTURBING Google
+  Searches BEFORE Charlie
+  Kirk Shooting
+  BFIVEH54B5RANSE
+  47
+  пияазим
+  SHOW YOU A
+  TER
+blocks:
+  - text: € DISTURBING Google
+    confidence: 1
+    bbox:
+      - 0.1407407750718315
+      - 0.10833333478507745
+      - 0.7259258694118924
+      - 0.045833331346511796
+  - text: Searches BEFORE Charlie
+    confidence: 1
+    bbox:
+      - 0.105555549212963
+      - 0.15468749972656248
+      - 0.788888888888889
+      - 0.03281250000000002
+  - text: Kirk Shooting
+    confidence: 1
+    bbox:
+      - 0.24975458978392467
+      - 0.20070485044373343
+      - 0.4227130466037326
+      - 0.04077779948711391
+  - text: BFIVEH54B5RANSE
+    confidence: 0.5
+    bbox:
+      - 0.7247200553878778
+      - 0.2711147399753452
+      - 0.20889322492811413
+      - 0.026520520448684692
+  - text: "47"
+    confidence: 1
+    bbox:
+      - 0.43055555611111107
+      - 0.32968749989062496
+      - 0.05555555555555558
+      - 0.020312500000000067
+  - text: пияазим
+    confidence: 0.3
+    bbox:
+      - 0.6111111095833334
+      - 0.3656250001822917
+      - 0.18333333333333335
+      - 0.028124999999999956
+  - text: SHOW YOU A
+    confidence: 1
+    bbox:
+      - 0.3361111115046296
+      - 0.640625000234375
+      - 0.33611111111111114
+      - 0.028125000000000067
+  - text: TER
+    confidence: 1
+    bbox:
+      - 0.8527777781944444
+      - 0.9749999998437499
+      - 0.061111111111111116
+      - 0.012500000000000067

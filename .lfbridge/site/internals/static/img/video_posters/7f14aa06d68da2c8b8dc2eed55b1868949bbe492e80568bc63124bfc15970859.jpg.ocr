@@ -1,0 +1,57 @@
+source: site/internals/static/img/video_posters/7f14aa06d68da2c8b8dc2eed55b1868949bbe492e80568bc63124bfc15970859.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:53:36.593Z
+kind: image
+language: en-US
+text: |-
+  PBS
+  NEWS
+  May Charlie be received into
+  the merciful arms of Jesus,
+  our loving Savior.
+  47
+blocks:
+  - text: PBS
+    confidence: 0.5
+    bbox:
+      - 0.0755813968348552
+      - 0.837209302048526
+      - 0.042151160240173347
+      - 0.036175710890028245
+  - text: NEWS
+    confidence: 1
+    bbox:
+      - 0.043414373645153714
+      - 0.887817422919992
+      - 0.0861363697052002
+      - 0.051238538953992996
+  - text: May Charlie be received into
+    confidence: 1
+    bbox:
+      - 0.22604931665709307
+      - 0.682171211500588
+      - 0.21477525711059572
+      - 0.051827129787868964
+  - text: the merciful arms of Jesus,
+    confidence: 1
+    bbox:
+      - 0.23401162781173349
+      - 0.7311111119080379
+      - 0.2005813980102539
+      - 0.03891472710503474
+  - text: our loving Savior.
+    confidence: 1
+    bbox:
+      - 0.26666666832191327
+      - 0.7777777785816691
+      - 0.13333333015441895
+      - 0.03703703562418614
+  - text: "47"
+    confidence: 1
+    bbox:
+      - 0.6002906968583289
+      - 0.8914728687146973
+      - 0.05232558250427244
+      - 0.051679585774739634

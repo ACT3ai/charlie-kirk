@@ -1,0 +1,33 @@
+source: site/internals/static/img/evidence/fd57a0d6af9631c0f2c9c27f2d6e4bb3d9957e5b1b73efd2353299139fb8027d.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:53:03.952Z
+kind: image
+language: en-US
+text: |-
+  ACK
+  TOUR
+  GUIFOF MIS
+blocks:
+  - text: ACK
+    confidence: 0.5
+    bbox:
+      - -0.019061155458078016
+      - 0.760954147701391
+      - 0.16184121370315552
+      - 0.13648191094398499
+  - text: TOUR
+    confidence: 1
+    bbox:
+      - 0.07324502113709278
+      - 0.8687002651037607
+      - 0.07092791050672531
+      - 0.04860511049628258
+  - text: GUIFOF MIS
+    confidence: 0.5
+    bbox:
+      - 0.2296347023360989
+      - 0.8019032408168238
+      - 0.08645788580179214
+      - 0.08283787965774536

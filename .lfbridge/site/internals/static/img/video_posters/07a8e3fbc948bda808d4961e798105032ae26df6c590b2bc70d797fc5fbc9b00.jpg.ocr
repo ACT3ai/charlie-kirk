@@ -1,0 +1,25 @@
+source: site/internals/static/img/video_posters/07a8e3fbc948bda808d4961e798105032ae26df6c590b2bc70d797fc5fbc9b00.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:53:06.245Z
+kind: image
+language: en-US
+text: |-
+  BRB
+  Be Right Back!
+blocks:
+  - text: BRB
+    confidence: 0.5
+    bbox:
+      - 0.41279069712294797
+      - 0.4005167982545931
+      - 0.18750000000000006
+      - 0.1731266106499566
+  - text: Be Right Back!
+    confidence: 1
+    bbox:
+      - 0.44672405711650326
+      - 0.5313059029510456
+      - 0.14361582756042485
+      - 0.09113496144612632

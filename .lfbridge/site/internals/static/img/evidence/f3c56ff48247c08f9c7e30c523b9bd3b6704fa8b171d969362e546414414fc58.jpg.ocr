@@ -1,0 +1,89 @@
+source: site/internals/static/img/evidence/f3c56ff48247c08f9c7e30c523b9bd3b6704fa8b171d969362e546414414fc58.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:52:41.260Z
+kind: image
+language: en-US
+text: |-
+  FBI guy who uses ChatGPT to fake pa...
+  @SeanMcC... • Sep 12 G .•.
+  So has there been any reason given for *why* the FBI arrested Zachariah
+  Qureshi? At the event within 25 feet of Kirk. Arabic speaker and Heritage
+  foundation intern. He's the guy Kash Patel rushed on here to announce was
+  the shooter and was in custody. Distraction? Original patsy?
+  THE
+  YESHIVA'
+  WORLD
+  NEWS
+blocks:
+  - text: FBI guy who uses ChatGPT to fake pa...
+    confidence: 1
+    bbox:
+      - 0.10163934628415296
+      - 0.0326678763309135
+      - 0.459016393442623
+      - 0.03085299455535384
+  - text: "@SeanMcC... • Sep 12 G .•."
+    confidence: 1
+    bbox:
+      - 0.608023846613809
+      - 0.031900582752767415
+      - 0.3429913880395108
+      - 0.03270756051674506
+  - text: So has there been any reason given for *why* the FBI arrested Zachariah
+    confidence: 1
+    bbox:
+      - 0.10163934614754098
+      - 0.06896551689655173
+      - 0.8081967213114754
+      - 0.034482758620689724
+  - text: Qureshi? At the event within 25 feet of Kirk. Arabic speaker and Heritage
+    confidence: 1
+    bbox:
+      - 0.10163934332786885
+      - 0.10889292166969144
+      - 0.8147540983606557
+      - 0.029038112522686066
+  - text: foundation intern. He's the guy Kash Patel rushed on here to announce was
+    confidence: 1
+    bbox:
+      - 0.09999998942622979
+      - 0.14700544469147003
+      - 0.8459016393442624
+      - 0.029038112522686066
+  - text: the shooter and was in custody. Distraction? Original patsy?
+    confidence: 1
+    bbox:
+      - 0.10163934119225043
+      - 0.18330308537370066
+      - 0.6754098360655738
+      - 0.02722323049001818
+  - text: THE
+    confidence: 1
+    bbox:
+      - 0.5377049179571247
+      - 0.2613430126692726
+      - 0.022950819672131195
+      - 0.00907441016333943
+  - text: YESHIVA'
+    confidence: 1
+    bbox:
+      - 0.5376280211056537
+      - 0.27002417923323807
+      - 0.05917018827844833
+      - 0.015305543335293326
+  - text: WORLD
+    confidence: 1
+    bbox:
+      - 0.5377049187704919
+      - 0.2849364790381126
+      - 0.05901639344262288
+      - 0.014519056261342977
+  - text: NEWS
+    confidence: 1
+    bbox:
+      - 0.5639344256557377
+      - 0.29764065347852386
+      - 0.03442622950819674
+      - 0.010889292196007316

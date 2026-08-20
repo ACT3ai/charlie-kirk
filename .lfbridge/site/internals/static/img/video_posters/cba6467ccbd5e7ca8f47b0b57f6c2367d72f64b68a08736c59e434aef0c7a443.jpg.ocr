@@ -1,0 +1,25 @@
+source: site/internals/static/img/video_posters/cba6467ccbd5e7ca8f47b0b57f6c2367d72f64b68a08736c59e434aef0c7a443.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:53:56.931Z
+kind: image
+language: en-US
+text: |-
+  NÝL
+  OW
+blocks:
+  - text: NÝL
+    confidence: 0.3
+    bbox:
+      - -8.838383654582079e-10
+      - 0.18749999975852272
+      - 0.21111111111111114
+      - 0.05312500000000009
+  - text: OW
+    confidence: 1
+    bbox:
+      - 4.629629617940938e-10
+      - 0.23593749979166667
+      - 0.2111111111111111
+      - 0.050000000000000044

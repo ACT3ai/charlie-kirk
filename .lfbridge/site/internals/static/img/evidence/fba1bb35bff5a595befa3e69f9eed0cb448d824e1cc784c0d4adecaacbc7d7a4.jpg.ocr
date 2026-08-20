@@ -1,0 +1,33 @@
+source: site/internals/static/img/evidence/fba1bb35bff5a595befa3e69f9eed0cb448d824e1cc784c0d4adecaacbc7d7a4.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:52:51.783Z
+kind: image
+language: en-US
+text: |-
+  X @THEINTELSCIF
+  THELIGHT
+  OVER THE GRASSY KNOLL..
+blocks:
+  - text: X @THEINTELSCIF
+    confidence: 0.5
+    bbox:
+      - 0.498546512252907
+      - 0.437893789637366
+      - 0.0625
+      - 0.021209112488397297
+  - text: THELIGHT
+    confidence: 1
+    bbox:
+      - 0.6435647658062857
+      - 0.7893104460041277
+      - 0.25792860606360046
+      - 0.1311416419962309
+  - text: OVER THE GRASSY KNOLL..
+    confidence: 1
+    bbox:
+      - 0.6627907007443136
+      - 0.9365436544563279
+      - 0.26744185553656674
+      - 0.05554077670340274

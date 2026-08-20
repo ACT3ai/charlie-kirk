@@ -1,0 +1,33 @@
+source: site/internals/static/img/video_posters/a0d64c2a3ca020666825f3106fa7648449815243109d66059493471efca233b9.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:53:44.968Z
+kind: image
+language: en-US
+text: |-
+  YREFY.COM
+  TURNING
+  POINT USA
+blocks:
+  - text: YREFY.COM
+    confidence: 0.5
+    bbox:
+      - 0.05652088274020462
+      - 0.07133176278401132
+      - 0.19960628509521489
+      - 0.10278741624620225
+  - text: TURNING
+    confidence: 1
+    bbox:
+      - 0.10739343061622765
+      - 0.2868721257472009
+      - 0.13857225418090818
+      - 0.08441613091362843
+  - text: POINT USA
+    confidence: 1
+    bbox:
+      - 0.10419443593694115
+      - 0.3279936346325636
+      - 0.1555688667297363
+      - 0.08819764879014769

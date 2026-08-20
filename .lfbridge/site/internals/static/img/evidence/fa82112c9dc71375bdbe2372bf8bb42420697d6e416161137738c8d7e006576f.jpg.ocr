@@ -1,0 +1,49 @@
+source: site/internals/static/img/evidence/fa82112c9dc71375bdbe2372bf8bb42420697d6e416161137738c8d7e006576f.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:52:49.787Z
+kind: image
+language: en-US
+text: |-
+  5352°
+  + Add your own photo
+  FANTØm ADRIt
+  Replying to FANFØm ADRH
+  12
+blocks:
+  - text: 5352°
+    confidence: 0.5
+    bbox:
+      - 0.11671924776595712
+      - 0.020348837547248033
+      - 0.14195582826258774
+      - 0.021802324801683426
+  - text: + Add your own photo
+    confidence: 1
+    bbox:
+      - 0.044164043441212615
+      - 0.8343023255755448
+      - 0.41324919361179163
+      - 0.018895348533988
+  - text: FANTØm ADRIt
+    confidence: 1
+    bbox:
+      - 0.07570977955970018
+      - 0.8735351560203151
+      - 0.28706624952413273
+      - 0.0205078125
+  - text: Replying to FANFØm ADRH
+    confidence: 1
+    bbox:
+      - 0.16088327486806903
+      - 0.933105468602085
+      - 0.49842271966449286
+      - 0.0205078125
+  - text: "12"
+    confidence: 1
+    bbox:
+      - 0.8958990538359248
+      - 0.8909883721728215
+      - 0.04100946248587922
+      - 0.011627906933426857

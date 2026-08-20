@@ -1,0 +1,41 @@
+source: site/internals/static/img/video_posters/313067a007acb49dc21243dea0123c26782d4038c1c689cab65de4aa8759a627.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:53:17.629Z
+kind: image
+language: en-US
+text: |-
+  -ppr.
+  CONS
+  FCT
+  ION
+blocks:
+  - text: -ppr.
+    confidence: 1
+    bbox:
+      - 0.8814814813786008
+      - 0.8962962962037037
+      - 0.03703703703703698
+      - 0.016666666666666607
+  - text: CONS
+    confidence: 1
+    bbox:
+      - 0.8685185184012345
+      - 0.9148148147407407
+      - 0.03888888888888897
+      - 0.022222222222222254
+  - text: FCT
+    confidence: 1
+    bbox:
+      - 0.9203703702623457
+      - 0.8944444443595679
+      - 0.02962962962962945
+      - 0.020370370370370372
+  - text: ION
+    confidence: 1
+    bbox:
+      - 0.9425925925000002
+      - 0.9166666665895061
+      - 0.025925925925925908
+      - 0.01851851851851849

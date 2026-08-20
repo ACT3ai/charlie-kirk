@@ -1,0 +1,57 @@
+source: site/internals/static/img/video_posters/0b9c18dbee6029f84cf97f1e8cf3711e2dd6876037ea7f9e83cd96d9a1151293.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:53:08.986Z
+kind: image
+language: en-US
+text: |-
+  WHERE ROBINSON STUDIED BRIEFLY
+  Utah State University, location
+  • of Charlie Kirk tragedy, (
+  has a unique US and Israel intelligence
+  Program, The Centre for
+  Anticipatatory Intelligence.
+blocks:
+  - text: WHERE ROBINSON STUDIED BRIEFLY
+    confidence: 1
+    bbox:
+      - 0.12500000378472206
+      - 0.5859374998730469
+      - 0.7569444444444444
+      - 0.033203125
+  - text: Utah State University, location
+    confidence: 1
+    bbox:
+      - 0.1388888949363425
+      - 0.6894531248860677
+      - 0.7256944444444444
+      - 0.033203125
+  - text: • of Charlie Kirk tragedy, (
+    confidence: 1
+    bbox:
+      - 0.1597222267939814
+      - 0.7246093753092449
+      - 0.6805555555555556
+      - 0.037109375
+  - text: has a unique US and Israel intelligence
+    confidence: 1
+    bbox:
+      - 0.048611114583333226
+      - 0.7578124996484374
+      - 0.9027777777777779
+      - 0.03515625
+  - text: Program, The Centre for
+    confidence: 1
+    bbox:
+      - 0.20833332844328714
+      - 0.7968750000325521
+      - 0.5868055555555556
+      - 0.03515625
+  - text: Anticipatatory Intelligence.
+    confidence: 1
+    bbox:
+      - 0.15972222695932536
+      - 0.83203125
+      - 0.6631944444444444
+      - 0.03125

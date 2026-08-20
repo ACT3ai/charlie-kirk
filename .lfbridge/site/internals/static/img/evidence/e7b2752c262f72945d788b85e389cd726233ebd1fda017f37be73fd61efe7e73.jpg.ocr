@@ -1,0 +1,33 @@
+source: site/internals/static/img/evidence/e7b2752c262f72945d788b85e389cd726233ebd1fda017f37be73fd61efe7e73.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:52:15.828Z
+kind: image
+language: en-US
+text: |-
+  HEX
+  OPERATION INDERGRO
+  NDRON
+blocks:
+  - text: HEX
+    confidence: 0.5
+    bbox:
+      - 0.23270439934133783
+      - 0.29941860530975073
+      - 0.1981132136338861
+      - 0.04360464960336685
+  - text: OPERATION INDERGRO
+    confidence: 1
+    bbox:
+      - 0.35649783787862827
+      - 0.5976232716437493
+      - 0.1932055612447146
+      - 0.05663594603538513
+  - text: NDRON
+    confidence: 0.5
+    bbox:
+      - 0.4720262037198048
+      - 0.67155048372781
+      - 0.18980638370957487
+      - 0.07029429078102112

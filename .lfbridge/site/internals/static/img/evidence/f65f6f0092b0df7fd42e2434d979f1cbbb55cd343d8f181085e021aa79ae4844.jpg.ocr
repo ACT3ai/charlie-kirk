@@ -1,0 +1,103 @@
+source: site/internals/static/img/evidence/f65f6f0092b0df7fd42e2434d979f1cbbb55cd343d8f181085e021aa79ae4844.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:52:43.555Z
+kind: image
+language: en-US
+text: >-
+  Moving to the next day, Thursday, the text exchanges end with a surrender, and
+  this is very strange. The
+
+  indictment has:
+
+  Im gonna turn myself in willingly, one of my neighbors here is a deputy for
+  the sheriff.
+
+  The search warrants, however, present the equivalent "Zealous Monkey"
+  confession:
+
+  Hey guys, I have bad news for you all. It was me at UVU yesterday. [ilm sorry
+  for all of this. [i]m
+
+  surrendering through a sheriff friend in a few moments. [thanks for all the
+  good times and
+
+  laughs[, you've all been so amazing. Thank you all for everything.]
+
+  he author of the search warrant, Justin Bowen, has used upper case at times
+  where the
+
+  iscord post had had lower case, and has omitted the last few words included
+  above.
+blocks:
+  - text: Moving to the next day, Thursday, the text exchanges end with a surrender,
+      and this is very strange. The
+    confidence: 1
+    bbox:
+      - 0.02083334217212544
+      - 0.060924368121115124
+      - 0.9291666321835276
+      - 0.08823529411764708
+  - text: "indictment has:"
+    confidence: 1
+    bbox:
+      - 0.020348837292020187
+      - 0.1422413803066691
+      - 0.1395348802124713
+      - 0.047413789925454974
+  - text: Im gonna turn myself in willingly, one of my neighbors here is a deputy
+      for the sheriff.
+    confidence: 1
+    bbox:
+      - 0.09447676158257337
+      - 0.2752100846246066
+      - 0.751453464314089
+      - 0.0653071563784815
+  - text: 'The search warrants, however, present the equivalent "Zealous Monkey"
+      confession:'
+    confidence: 1
+    bbox:
+      - 0.023210578771631046
+      - 0.40837736955273707
+      - 0.7500959493346134
+      - 0.07188996547410476
+  - text: Hey guys, I have bad news for you all. It was me at UVU yesterday. [ilm
+      sorry for all of this. [i]m
+    confidence: 1
+    bbox:
+      - 0.09738373862896399
+      - 0.5474137932333651
+      - 0.8401162530069296
+      - 0.06465517172292501
+  - text: surrendering through a sheriff friend in a few moments. [thanks for all
+      the good times and
+    confidence: 1
+    bbox:
+      - 0.08750000053745162
+      - 0.604938271430709
+      - 0.8083333160917638
+      - 0.08641975466944596
+  - text: laughs[, you've all been so amazing. Thank you all for everything.]
+    confidence: 1
+    bbox:
+      - 0.09447674191811464
+      - 0.6890756307412131
+      - 0.5886627886928408
+      - 0.060924369747899165
+  - text: he author of the search warrant, Justin Bowen, has used upper case at
+      times where the
+    confidence: 1
+    bbox:
+      - 0.03749998422643766
+      - 0.8271604935500507
+      - 0.858333350574903
+      - 0.08670505155034425
+  - text: iscord post had had lower case, and has omitted the last few words
+      included above.
+    confidence: 1
+    bbox:
+      - 0.03750003612277073
+      - 0.888655464151832
+      - 0.8208332816086246
+      - 0.09899885514203233

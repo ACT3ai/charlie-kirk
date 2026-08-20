@@ -1,0 +1,57 @@
+source: site/internals/static/img/evidence/ee050ebb03560bb256eaa759ab52673ac1669a226a9aaec42ddd60396e7f97a0.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:52:39.022Z
+kind: image
+language: en-US
+text: |-
+  NOI
+  SNOO
+  uddA
+  COMEDYLI
+  VNER EVN
+  П/П
+blocks:
+  - text: NOI
+    confidence: 1
+    bbox:
+      - 0.5322997377538774
+      - 0.9069767420434742
+      - 0.04392765539663812
+      - 0.017441864808400487
+  - text: SNOO
+    confidence: 1
+    bbox:
+      - 0.4160206696973153
+      - 0.9069767417405402
+      - 0.0594315281620732
+      - 0.018895353873570775
+  - text: uddA
+    confidence: 0.5
+    bbox:
+      - 0.43927648276875814
+      - 0.889534881321629
+      - 0.05426357057359482
+      - 0.014534888664881396
+  - text: COMEDYLI
+    confidence: 1
+    bbox:
+      - 0.10673822593386159
+      - 0.21500447208122542
+      - 0.1844166084572121
+      - 0.03673971494038897
+  - text: VNER EVN
+    confidence: 0.3
+    bbox:
+      - 0.11283998559056488
+      - 0.19022209750104335
+      - 0.20351643032497832
+      - 0.03814606269200638
+  - text: П/П
+    confidence: 0.3
+    bbox:
+      - 0.6434108432384054
+      - 0.11773254975073688
+      - 0.16795867637351702
+      - 0.06540699402491257

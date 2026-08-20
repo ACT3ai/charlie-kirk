@@ -1,0 +1,49 @@
+source: site/internals/static/img/video_posters/3feace6e2f43c60a15b3c8f5cd63864c7b9858b851c33f2f97dbfeec0a36b99a.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:53:22.680Z
+kind: image
+language: en-US
+text: |-
+  YREFY.COM
+  TURNING
+  POINT USA
+  RE
+  @IN2THINAIA
+blocks:
+  - text: YREFY.COM
+    confidence: 0.5
+    bbox:
+      - 0.10309278181998417
+      - 2.243589758421649e-10
+      - 0.4381443298969072
+      - 0.09722222222222221
+  - text: TURNING
+    confidence: 1
+    bbox:
+      - 0.20515077111064778
+      - 0.24422139015551092
+      - 0.31777238354240495
+      - 0.11646236843532998
+  - text: POINT USA
+    confidence: 1
+    bbox:
+      - 0.20858472995268784
+      - 0.2990998414466828
+      - 0.34331331548002575
+      - 0.11692349116007494
+  - text: RE
+    confidence: 1
+    bbox:
+      - 0.5128865975147275
+      - 0.8972222224801587
+      - 0.05927835051546393
+      - 0.047222222222222276
+  - text: "@IN2THINAIA"
+    confidence: 0.5
+    bbox:
+      - 0.80914793251267
+      - 0.7658598857145484
+      - 0.1884051647382914
+      - 0.037724672423468664

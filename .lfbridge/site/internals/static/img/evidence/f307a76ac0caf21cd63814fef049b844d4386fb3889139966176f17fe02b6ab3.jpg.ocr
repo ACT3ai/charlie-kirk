@@ -1,0 +1,41 @@
+source: site/internals/static/img/evidence/f307a76ac0caf21cd63814fef049b844d4386fb3889139966176f17fe02b6ab3.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:52:39.943Z
+kind: image
+language: en-US
+text: |-
+  LINESS
+  TO THE
+  CONS
+  ION
+blocks:
+  - text: LINESS
+    confidence: 1
+    bbox:
+      - 0.47707696793513976
+      - 0.16747576382519502
+      - 0.08018850326538085
+      - 0.1242145877414279
+  - text: TO THE
+    confidence: 1
+    bbox:
+      - 0.5727142371790597
+      - 0.1707550143497759
+      - 0.0626393795013428
+      - 0.06658171759711373
+  - text: CONS
+    confidence: 1
+    bbox:
+      - 0.8953488373438777
+      - 0.11111111122212047
+      - 0.029069766998291113
+      - 0.025839792887369817
+  - text: ION
+    confidence: 1
+    bbox:
+      - 0.9520348836621173
+      - 0.11111111117905415
+      - 0.017441860437393153
+      - 0.025839792887369706

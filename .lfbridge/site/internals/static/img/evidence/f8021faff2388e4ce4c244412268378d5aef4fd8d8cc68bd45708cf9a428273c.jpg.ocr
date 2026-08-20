@@ -1,0 +1,49 @@
+source: site/internals/static/img/evidence/f8021faff2388e4ce4c244412268378d5aef4fd8d8cc68bd45708cf9a428273c.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:52:45.829Z
+kind: image
+language: en-US
+text: |-
+  Earlier in 2025
+  Take $150 million CASH
+  From Israel. To your Turning Point TPUSA
+  NO!
+  Assassinated Sept 10th, 2025
+blocks:
+  - text: Earlier in 2025
+    confidence: 1
+    bbox:
+      - 0.4099999994166667
+      - 0.021739130900621073
+      - 0.26999999999999996
+      - 0.05590062111801242
+  - text: Take $150 million CASH
+    confidence: 1
+    bbox:
+      - 0.4316892456116135
+      - 0.10829607017557852
+      - 0.5106343383789063
+      - 0.08339085193894669
+  - text: From Israel. To your Turning Point TPUSA
+    confidence: 1
+    bbox:
+      - 0.5400000011
+      - 0.20496894440993785
+      - 0.29799999999999993
+      - 0.03105590062111807
+  - text: NO!
+    confidence: 1
+    bbox:
+      - 0.50400000034
+      - 0.5434782603416151
+      - 0.124
+      - 0.10559006211180122
+  - text: Assassinated Sept 10th, 2025
+    confidence: 1
+    bbox:
+      - 0.3041666709166666
+      - 0.896774196056675
+      - 0.6749999999999999
+      - 0.0908034425344526

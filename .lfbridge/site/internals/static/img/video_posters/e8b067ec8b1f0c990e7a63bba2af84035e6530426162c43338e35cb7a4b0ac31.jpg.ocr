@@ -1,0 +1,121 @@
+source: site/internals/static/img/video_posters/e8b067ec8b1f0c990e7a63bba2af84035e6530426162c43338e35cb7a4b0ac31.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:54:03.710Z
+kind: image
+language: en-US
+text: |-
+  Find the guy who is
+  cheering!!
+  ME WRUNG - PHUVE ME WHURU
+  MEN
+  TikTok
+  @ one_purple_sock
+  AMER LAN
+  (SMELA
+  Who celebrates
+  someone's death?
+  Divided we stand. SMH.
+  LEY DOIT
+  ONEN FATAL SHOOTING OF
+  K, SEARCH FOR SUSPECT
+blocks:
+  - text: Find the guy who is
+    confidence: 1
+    bbox:
+      - 0.18055555086805558
+      - 0.111328124625651
+      - 0.6388888888888888
+      - 0.044921875
+  - text: cheering!!
+    confidence: 1
+    bbox:
+      - 0.3194444447048611
+      - 0.160156249625651
+      - 0.34375
+      - 0.044921875
+  - text: ME WRUNG - PHUVE ME WHURU
+    confidence: 1
+    bbox:
+      - 0.20734040602688694
+      - 0.31340378592657225
+      - 0.39088074366251624
+      - 0.027570541948080063
+  - text: MEN
+    confidence: 1
+    bbox:
+      - 0.18750000004340278
+      - 0.41015624978027343
+      - 0.05902777777777782
+      - 0.017578125
+  - text: TikTok
+    confidence: 1
+    bbox:
+      - 0.013626622656975316
+      - 0.5072673091501817
+      - 0.12552453411950007
+      - 0.020621631294488907
+  - text: "@ one_purple_sock"
+    confidence: 1
+    bbox:
+      - 0.013888889453125004
+      - 0.5253906247314453
+      - 0.2673611111111111
+      - 0.021484375
+  - text: AMER LAN
+    confidence: 1
+    bbox:
+      - 0.38888888780381947
+      - 0.4726562496582032
+      - 0.19444444444444442
+      - 0.0546875
+  - text: (SMELA
+    confidence: 0.5
+    bbox:
+      - 0.42361111223958337
+      - 0.5175781247884115
+      - 0.13541666666666663
+      - 0.033203125
+  - text: Who celebrates
+    confidence: 1
+    bbox:
+      - 0.26041666906249994
+      - 0.6582031249316407
+      - 0.47916666666666663
+      - 0.033203125
+  - text: someone's death?
+    confidence: 1
+    bbox:
+      - 0.21797889043966784
+      - 0.6918767692518593
+      - 0.5606783231099446
+      - 0.048785701394081116
+  - text: Divided we stand. SMH.
+    confidence: 1
+    bbox:
+      - 0.1407407642655737
+      - 0.7916666675411982
+      - 0.7037036683824327
+      - 0.03749999776482582
+  - text: LEY DOIT
+    confidence: 0.5
+    bbox:
+      - 2.0833332836645013e-9
+      - 0.822265625048828
+      - 0.16666666666666666
+      - 0.0234375
+  - text: ONEN FATAL SHOOTING OF
+    confidence: 1
+    bbox:
+      - 2.068897369472072e-8
+      - 0.849609375625
+      - 0.9111110899183485
+      - 0.05078125
+  - text: K, SEARCH FOR SUSPECT
+    confidence: 1
+    bbox:
+      - -0.0029520004561827623
+      - 0.8864226309294814
+      - 0.9241782294379339
+      - 0.07775173336267471

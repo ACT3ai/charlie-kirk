@@ -1,0 +1,57 @@
+source: site/internals/static/img/video_posters/7b1a25738425af77e46945e487613a77fc8cffae9d863d09f4633af3de3a189d.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:53:36.048Z
+kind: image
+language: en-US
+text: |-
+  NOI
+  SNOO
+  udd-
+  COMEDYLH
+  VNER CVW
+  П/П
+blocks:
+  - text: NOI
+    confidence: 1
+    bbox:
+      - 0.5322997377538774
+      - 0.9069767420434742
+      - 0.04392765539663812
+      - 0.017441864808400487
+  - text: SNOO
+    confidence: 1
+    bbox:
+      - 0.4160206696973153
+      - 0.9069767417405402
+      - 0.0594315281620732
+      - 0.018895353873570775
+  - text: udd-
+    confidence: 0.5
+    bbox:
+      - 0.43927648276875814
+      - 0.889534881321629
+      - 0.05426357057359482
+      - 0.014534888664881396
+  - text: COMEDYLH
+    confidence: 0.5
+    bbox:
+      - 0.10673822593386159
+      - 0.21500447208122542
+      - 0.1844166084572121
+      - 0.03673971494038897
+  - text: VNER CVW
+    confidence: 0.5
+    bbox:
+      - 0.11283998559056488
+      - 0.19022209750104335
+      - 0.20351643032497832
+      - 0.03814606269200638
+  - text: П/П
+    confidence: 0.3
+    bbox:
+      - 0.6434108432384054
+      - 0.11773254975073688
+      - 0.16795867637351702
+      - 0.06540699402491257

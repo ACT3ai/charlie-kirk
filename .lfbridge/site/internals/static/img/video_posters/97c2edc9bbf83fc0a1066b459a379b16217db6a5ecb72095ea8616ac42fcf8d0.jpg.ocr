@@ -1,0 +1,57 @@
+source: site/internals/static/img/video_posters/97c2edc9bbf83fc0a1066b459a379b16217db6a5ecb72095ea8616ac42fcf8d0.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:53:43.101Z
+kind: image
+language: en-US
+text: |-
+  CONS
+  FCT
+  ION
+  BULLET
+  here
+  OH GOSH
+blocks:
+  - text: CONS
+    confidence: 1
+    bbox:
+      - 0.9186046513652033
+      - 0.07751937991290425
+      - 0.027616279125213694
+      - 0.025839792887369817
+  - text: FCT
+    confidence: 0.3
+    bbox:
+      - 0.9549418605854353
+      - 0.05167958623936064
+      - 0.02034883737564097
+      - 0.02325581444634328
+  - text: ION
+    confidence: 1
+    bbox:
+      - 0.9709302325059335
+      - 0.07751937992464963
+      - 0.017441860437393153
+      - 0.025839792887369817
+  - text: BULLET
+    confidence: 1
+    bbox:
+      - 0.5668604712521575
+      - 0.23772609899927577
+      - 0.2601744079589844
+      - 0.12919896443684897
+  - text: here
+    confidence: 1
+    bbox:
+      - 0.45058139471560066
+      - 0.4573643415286157
+      - 0.10465116500854499
+      - 0.09043927510579419
+  - text: OH GOSH
+    confidence: 1
+    bbox:
+      - 0.42716590980747304
+      - 0.9235557511581394
+      - 0.14276120185852048
+      - 0.0521133041381836

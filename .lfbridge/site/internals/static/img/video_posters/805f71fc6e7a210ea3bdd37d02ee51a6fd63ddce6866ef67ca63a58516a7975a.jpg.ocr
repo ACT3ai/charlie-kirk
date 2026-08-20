@@ -1,0 +1,25 @@
+source: site/internals/static/img/video_posters/805f71fc6e7a210ea3bdd37d02ee51a6fd63ddce6866ef67ca63a58516a7975a.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:53:36.996Z
+kind: image
+language: en-US
+text: |-
+  Nick admits Israel
+  killed Charlie Kirk
+blocks:
+  - text: Nick admits Israel
+    confidence: 1
+    bbox:
+      - 0.14919355230734763
+      - 0.14446952580887884
+      - 0.7056451612903225
+      - 0.040632054176072296
+  - text: killed Charlie Kirk
+    confidence: 1
+    bbox:
+      - 0.13709677142857143
+      - 0.1918735894711383
+      - 0.7258064516129032
+      - 0.04288939051918739

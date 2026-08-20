@@ -1,0 +1,33 @@
+source: site/internals/static/img/video_posters/eb702a94a047a40f4da9de2bb10ed39169949fc5c5a3e68145e01b7367521f16.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:54:04.607Z
+kind: image
+language: en-US
+text: |-
+  Raw Footage of Charlie Kirk TPUSA Shooting at Utah Vall >
+  lifeisdriving
+  19:52 / 1:09:43
+blocks:
+  - text: Raw Footage of Charlie Kirk TPUSA Shooting at Utah Vall >
+    confidence: 1
+    bbox:
+      - 0.06666668615315735
+      - 0.04347826208189576
+      - 0.5416666412353515
+      - 0.06564226057319766
+  - text: lifeisdriving
+    confidence: 1
+    bbox:
+      - 0.06676581111070085
+      - 0.12363163425623358
+      - 0.06995675086975098
+      - 0.03682764034706132
+  - text: 19:52 / 1:09:43
+    confidence: 1
+    bbox:
+      - 0.07994185947148527
+      - 0.8712121214006712
+      - 0.10610465049743653
+      - 0.03432533717699082

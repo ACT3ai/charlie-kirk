@@ -1,0 +1,49 @@
+source: site/internals/static/img/evidence/fd6c045b598be68d277dbcfe74885de300ad69dc3c50e08ef42994c2daf7669a.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:52:58.318Z
+kind: image
+language: en-US
+text: |-
+  TURNI
+  POINT
+  DAN RELIEF
+  ety
+  0:07 / 0:34 ₫/×
+blocks:
+  - text: TURNI
+    confidence: 1
+    bbox:
+      - 0.2401969081515117
+      - 0.621641356516531
+      - 0.12031289629717176
+      - 0.03940279997700935
+  - text: POINT
+    confidence: 1
+    bbox:
+      - 0.23431216828843468
+      - 0.6499086145325969
+      - 0.12157914663793343
+      - 0.04410868735700957
+  - text: DAN RELIEF
+    confidence: 1
+    bbox:
+      - 0.10698559473973303
+      - 0.8194618105905295
+      - 0.12557759638809907
+      - 0.04566458173017196
+  - text: ety
+    confidence: 1
+    bbox:
+      - 0.10247349890459362
+      - 0.8833922258833922
+      - 0.13427561837455831
+      - 0.09540636042402828
+  - text: 0:07 / 0:34 ₫/×
+    confidence: 1
+    bbox:
+      - 0.5406360457155476
+      - 0.9257950529151945
+      - 0.26501766784452296
+      - 0.04240282685512364

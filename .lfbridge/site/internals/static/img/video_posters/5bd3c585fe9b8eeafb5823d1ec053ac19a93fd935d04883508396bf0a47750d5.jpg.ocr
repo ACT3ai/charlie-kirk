@@ -1,0 +1,25 @@
+source: site/internals/static/img/video_posters/5bd3c585fe9b8eeafb5823d1ec053ac19a93fd935d04883508396bf0a47750d5.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:53:28.497Z
+kind: image
+language: en-US
+text: |-
+  ront Entry
+  HIT EAXET
+blocks:
+  - text: ront Entry
+    confidence: 1
+    bbox:
+      - 0.5225344709515473
+      - 0.07930607031018932
+      - 0.04372352600097662
+      - 0.02566688961452912
+  - text: HIT EAXET
+    confidence: 0.3
+    bbox:
+      - 0.7669272536094411
+      - 0.9105965437406716
+      - 0.11134084701538083
+      - 0.05248924679226352

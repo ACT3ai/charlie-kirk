@@ -1,0 +1,82 @@
+source: site/internals/static/img/video_posters/daf0c1d3e40823448735a226b898749eb36b82bf7ceafd9131da670a85a48598.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:53:59.679Z
+kind: image
+language: en-US
+text: >-
+  BERGGRUEN & CIE
+
+  THI
+
+  OW
+
+  rew
+
+  ₴98
+
+  STEW PETERS SHOW
+
+  * Stew Peters Live
+
+  *Indict. Try. Fry. *Follow @RealStewPeters on X Watch Old World Order at
+  StewPeters.co
+blocks:
+  - text: BERGGRUEN & CIE
+    confidence: 1
+    bbox:
+      - 0.6431268459876429
+      - 0.06112341942329513
+      - 0.2075886249542237
+      - 0.05126374562581382
+  - text: THI
+    confidence: 1
+    bbox:
+      - 0.4390624999921875
+      - 0.1833333328472222
+      - 0.06093749999999998
+      - 0.09722222222222232
+  - text: OW
+    confidence: 0.5
+    bbox:
+      - 0.009374999617187508
+      - 0.5888888891249999
+      - 0.0765625
+      - 0.07500000000000007
+  - text: rew
+    confidence: 1
+    bbox:
+      - 7.352941033822447e-11
+      - 0.9666666667320262
+      - 0.028124999999999997
+      - 0.022222222222222254
+  - text: ₴98
+    confidence: 1
+    bbox:
+      - 0.025000000833333313
+      - 0.8083333331712964
+      - 0.2
+      - 0.10555555555555562
+  - text: STEW PETERS SHOW
+    confidence: 1
+    bbox:
+      - 0.02343749867187501
+      - 0.9111111107986111
+      - 0.203125
+      - 0.025000000000000022
+  - text: "* Stew Peters Live"
+    confidence: 1
+    bbox:
+      - 0.049999998484375016
+      - 0.9583333334999999
+      - 0.15156250000000004
+      - 0.033333333333333326
+  - text: "*Indict. Try. Fry. *Follow @RealStewPeters on X Watch Old World Order at
+      StewPeters.co"
+    confidence: 1
+    bbox:
+      - 0.22968749450892859
+      - 0.9583333334722222
+      - 0.76875
+      - 0.036111111111111094

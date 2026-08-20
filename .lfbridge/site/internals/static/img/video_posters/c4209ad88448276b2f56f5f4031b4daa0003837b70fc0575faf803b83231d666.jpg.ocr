@@ -1,0 +1,81 @@
+source: site/internals/static/img/video_posters/c4209ad88448276b2f56f5f4031b4daa0003837b70fc0575faf803b83231d666.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:53:54.880Z
+kind: image
+language: en-US
+text: |-
+  PROVIDENCE
+  POLICE
+  DEPARTMENT
+  PROMDENG
+  DEPARTMENT
+  BLAKEBEDNA
+  D PS
+  PROVIDE
+  POLIC
+blocks:
+  - text: PROVIDENCE
+    confidence: 1
+    bbox:
+      - 0.04796511818527573
+      - 0.07493540026558021
+      - 0.13517441749572753
+      - 0.036175710890028245
+  - text: POLICE
+    confidence: 1
+    bbox:
+      - 0.07558139491467143
+      - 0.10852713133362502
+      - 0.07703488349914552
+      - 0.036175710890028134
+  - text: DEPARTMENT
+    confidence: 1
+    bbox:
+      - 0.07412790825283434
+      - 0.1421188626950023
+      - 0.0799418592453003
+      - 0.023255814446343392
+  - text: PROMDENG
+    confidence: 0.5
+    bbox:
+      - 0.08258091607516008
+      - 0.23858404688580515
+      - 0.04995444774627686
+      - 0.029291854434543296
+  - text: DEPARTMENT
+    confidence: 1
+    bbox:
+      - 0.1129653266379537
+      - 0.2696938832956072
+      - 0.03231162548065186
+      - 0.09882707383897571
+  - text: BLAKEBEDNA
+    confidence: 1
+    bbox:
+      - 0.2514534818660403
+      - 0.5478036175031163
+      - 0.42296512603759767
+      - 0.08527131822374134
+  - text: D PS
+    confidence: 0.5
+    bbox:
+      - 0.547965116442715
+      - 0.6922222224737887
+      - 0.029069766998291002
+      - 0.015788113276163696
+  - text: PROVIDE
+    confidence: 1
+    bbox:
+      - 0.04734318892407627
+      - 0.8839075392214873
+      - 0.08694138526916503
+      - 0.03732232411702474
+  - text: POLIC
+    confidence: 1
+    bbox:
+      - 0.07122093035313018
+      - 0.9198966407651495
+      - 0.05813953399658203
+      - 0.036175710890028245

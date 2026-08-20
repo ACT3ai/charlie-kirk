@@ -1,0 +1,81 @@
+source: site/internals/static/img/video_posters/465ba9f664621803a3267937eee46d28bb429ded9fd7b59314b9abf71956f758.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:53:23.699Z
+kind: image
+language: en-US
+text: |-
+  Back up now
+  DO YOU KNOW
+  THIS PERSON?
+  ppo
+  FET
+  CONS
+  ION
+  HELP ME FIND THEM
+  PROJECTCONSTITUTIONVIDEOS@GMAIL.COM
+blocks:
+  - text: Back up now
+    confidence: 1
+    bbox:
+      - 0.429923561003935
+      - -0.000482545461239825
+      - 0.22046375981083627
+      - 0.019860440133267265
+  - text: DO YOU KNOW
+    confidence: 1
+    bbox:
+      - 0.12953367521000628
+      - 0.06237006284397606
+      - 0.7435233222113715
+      - 0.055613305613305575
+  - text: THIS PERSON?
+    confidence: 1
+    bbox:
+      - 0.13973849464941365
+      - 0.12736740130288504
+      - 0.7205230147750289
+      - 0.06793961554703742
+  - text: ppo
+    confidence: 0.5
+    bbox:
+      - 0.44559585496589466
+      - 0.8284883722170729
+      - 0.04663212387650101
+      - 0.014534883836202939
+  - text: FET
+    confidence: 0.5
+    bbox:
+      - 0.5025906742275525
+      - 0.8255813954540923
+      - 0.04663212387650095
+      - 0.01744186060344355
+  - text: CONS
+    confidence: 1
+    bbox:
+      - 0.4093264241254126
+      - 0.8459302324059194
+      - 0.0673575154057256
+      - 0.01744186060344355
+  - text: ION
+    confidence: 1
+    bbox:
+      - 0.5388601039718146
+      - 0.8459302323171347
+      - 0.04145077599419489
+      - 0.018895349482736523
+  - text: HELP ME FIND THEM
+    confidence: 1
+    bbox:
+      - 0.025906736470270912
+      - 0.901162791467076
+      - 0.9455958613642941
+      - 0.04069767275867742
+  - text: PROJECTCONSTITUTIONVIDEOS@GMAIL.COM
+    confidence: 1
+    bbox:
+      - 0.020725376160574436
+      - 0.9418604643799088
+      - 0.9611399332682291
+      - 0.037790698965473046

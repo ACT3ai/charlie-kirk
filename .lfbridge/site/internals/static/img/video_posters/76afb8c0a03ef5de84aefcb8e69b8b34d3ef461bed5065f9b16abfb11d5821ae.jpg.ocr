@@ -1,0 +1,33 @@
+source: site/internals/static/img/video_posters/76afb8c0a03ef5de84aefcb8e69b8b34d3ef461bed5065f9b16abfb11d5821ae.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:53:34.655Z
+kind: image
+language: en-US
+text: |-
+  BREAKING
+  NEWS
+  SUSPECT ARRESTED IN CHARLIE K
+blocks:
+  - text: BREAKING
+    confidence: 1
+    bbox:
+      - 0.0523255821894446
+      - 0.8656330754307631
+      - 0.091569766998291
+      - 0.028423771328396352
+  - text: NEWS
+    confidence: 1
+    bbox:
+      - 0.05078384839970397
+      - 0.8908652070630245
+      - 0.09465323448181152
+      - 0.045142970614963196
+  - text: SUSPECT ARRESTED IN CHARLIE K
+    confidence: 1
+    bbox:
+      - 0.1860465092136117
+      - 0.8677777767352594
+      - 0.5566860580444335
+      - 0.07020671844482429

@@ -1,0 +1,25 @@
+source: site/internals/static/img/video_posters/c0618f366eb27f0c17efff26d940df6eddd2ec9924c77e34fca8adc14f151736.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:53:53.481Z
+kind: image
+language: en-US
+text: |-
+  pr
+  PC
+blocks:
+  - text: pr
+    confidence: 1
+    bbox:
+      - 0.4297058132359401
+      - 0.48134440451913574
+      - 0.2322084426879883
+      - 0.07421364582760226
+  - text: PC
+    confidence: 0.5
+    bbox:
+      - 0.4588980692310725
+      - 0.5916900527700312
+      - 0.34931815465291344
+      - 0.1234337085849243

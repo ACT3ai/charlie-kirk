@@ -1,0 +1,41 @@
+source: site/internals/static/img/video_posters/aec0027e9ea2715f0764639e46f5c5dca583fbb9e561a1cba79ca0cb4fe1cd85.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:53:48.400Z
+kind: image
+language: en-US
+text: |-
+  TUI
+  Salomondrin 9°
+  • 161.8K views
+  2:12 / 13:08
+blocks:
+  - text: TUI
+    confidence: 1
+    bbox:
+      - 0.37906137110709986
+      - 0.1111111110555556
+      - 0.2202166064981949
+      - 0.1333333333333333
+  - text: Salomondrin 9°
+    confidence: 1
+    bbox:
+      - 0.046931406498194994
+      - 0.969444444537037
+      - 0.08664259927797832
+      - 0.016666666666666607
+  - text: • 161.8K views
+    confidence: 1
+    bbox:
+      - 0.13537906010830328
+      - 0.9694444446296295
+      - 0.07581227436823104
+      - 0.01666666666666672
+  - text: 2:12 / 13:08
+    confidence: 1
+    bbox:
+      - 0.8355465737355153
+      - 0.9650983040274456
+      - 0.06175884012711186
+      - 0.02258117066489329

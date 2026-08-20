@@ -1,0 +1,73 @@
+source: site/internals/static/img/evidence/f2fa5fbd3c6553ec97eed22b6fa0bf10d6c88681c448b8a256fee9203b60c5bb.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:52:39.754Z
+kind: image
+language: en-US
+text: |-
+  Direct Energy Weapons were
+  used in Venezuela
+  cognitive electromagnetic
+  warfare
+  LTC EDGREEN
+  DESIGNED
+  TUPACABRA
+  MR. ZAID
+blocks:
+  - text: Direct Energy Weapons were
+    confidence: 1
+    bbox:
+      - 0.052777776892361156
+      - 0.17500000037109376
+      - 0.8805555555555555
+      - 0.059374999999999956
+  - text: used in Venezuela
+    confidence: 1
+    bbox:
+      - 0.14814814322751332
+      - 0.24140625026785711
+      - 0.6888888888888889
+      - 0.0546875
+  - text: cognitive electromagnetic
+    confidence: 1
+    bbox:
+      - 0.2666666642592593
+      - 0.30937499970052085
+      - 0.45555555555555555
+      - 0.035937499999999956
+  - text: warfare
+    confidence: 1
+    bbox:
+      - 0.42499999995370374
+      - 0.34687499972656255
+      - 0.14444444444444438
+      - 0.03281249999999991
+  - text: LTC EDGREEN
+    confidence: 0.5
+    bbox:
+      - 0.03517094456416535
+      - 0.6211852805634598
+      - 0.09912228054470486
+      - 0.013718565553426765
+  - text: DESIGNED
+    confidence: 1
+    bbox:
+      - 0.24715056669901464
+      - 0.6028720364957542
+      - 0.5029210832383897
+      - 0.04581842720508578
+  - text: TUPACABRA
+    confidence: 0.5
+    bbox:
+      - 0.433333335
+      - 0.7171874999609373
+      - 0.13333333333333336
+      - 0.009375000000000022
+  - text: MR. ZAID
+    confidence: 1
+    bbox:
+      - 0.744444443287037
+      - 0.65
+      - 0.06944444444444442
+      - 0.009375000000000022

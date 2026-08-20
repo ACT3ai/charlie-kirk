@@ -1,0 +1,33 @@
+source: site/internals/static/img/evidence/f849dfb23ff36d6c41c62e2d767e52e70cd46360eff3658df238422c6e8bd2f5.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:52:46.011Z
+kind: image
+language: en-US
+text: |-
+  MARSEILLE
+  EST. 600 BC
+  FRENCH RIVIERA
+blocks:
+  - text: MARSEILLE
+    confidence: 1
+    bbox:
+      - 0.24271765797001166
+      - 0.04649906606265941
+      - 0.46560385567801343
+      - 0.09082801018834419
+  - text: EST. 600 BC
+    confidence: 0.5
+    bbox:
+      - 0.3203214769233497
+      - 0.12853404909247368
+      - 0.266552107674735
+      - 0.041355001347144205
+  - text: FRENCH RIVIERA
+    confidence: 0.5
+    bbox:
+      - 0.24689913543549408
+      - 0.189200764818779
+      - 0.4012352534702846
+      - 0.053278491320207566

@@ -1,0 +1,33 @@
+source: site/internals/static/img/evidence/e934cb7d0a54ed4f44ed39959124f50ba04bffd35f97e973be7027f3f6ba5fae.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:52:20.430Z
+kind: image
+language: en-US
+text: |-
+  PROV
+  121-
+  МЕН СИИ
+blocks:
+  - text: PROV
+    confidence: 1
+    bbox:
+      - 0.34911242401072484
+      - 0.025000000187500038
+      - 0.6479289940828403
+      - 0.1366666666666666
+  - text: 121-
+    confidence: 1
+    bbox:
+      - 0.7455621309911242
+      - 0.4083333332708333
+      - 0.0650887573964497
+      - 0.011666666666666603
+  - text: МЕН СИИ
+    confidence: 0.3
+    bbox:
+      - 0.7662721881656805
+      - 0.3549999891476092
+      - 0.23076923076923073
+      - 0.03833335717519115

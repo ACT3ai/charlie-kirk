@@ -1,0 +1,49 @@
+source: site/internals/static/img/evidence/ff022f2b9ca68dbad89e031917e315be8ce448c78e3cc92817994341ae759997.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:53:04.022Z
+kind: image
+language: en-US
+text: |-
+  HOR
+  THE
+  A
+  HOLCON
+  0:1670:36
+blocks:
+  - text: HOR
+    confidence: 1
+    bbox:
+      - 0.48251748262588057
+      - 0.03197674414325247
+      - 0.03496503451513866
+      - 0.008720930260006754
+  - text: THE
+    confidence: 1
+    bbox:
+      - 0.9090909094954839
+      - 0.4098837207392736
+      - 0.0606060595739456
+      - 0.02470930260006754
+  - text: A
+    confidence: 1
+    bbox:
+      - 0.890442889807646
+      - 0.45058139442123646
+      - 0.07459207565065418
+      - 0.07122093144029673
+  - text: HOLCON
+    confidence: 0.5
+    bbox:
+      - 0.6867636880862343
+      - 0.6153752810362462
+      - 0.05562905281309094
+      - 0.019760121213327486
+  - text: 0:1670:36
+    confidence: 1
+    bbox:
+      - 0.41944074588668867
+      - 0.9428402198507522
+      - 0.1611185073852539
+      - 0.01984281587128589

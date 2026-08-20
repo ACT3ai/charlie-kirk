@@ -1,0 +1,49 @@
+source: site/internals/static/img/evidence/fd9546ca0791cec5626abe145d22829b92cd589385b3e96414d0fbc805a7ed13.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:52:59.356Z
+kind: image
+language: en-US
+text: |-
+  appo
+  CONS
+  ON
+  BREAKING NEWS
+  Trump says shooting is a "dark moment for Ame
+blocks:
+  - text: appo
+    confidence: 0.5
+    bbox:
+      - 0.9011627914260132
+      - 0.08527131781582198
+      - 0.024709300994873007
+      - 0.018087855445014123
+  - text: CONS
+    confidence: 1
+    bbox:
+      - 0.8909883728186762
+      - 0.1085271318508888
+      - 0.03052325487136842
+      - 0.025839792887369817
+  - text: ON
+    confidence: 1
+    bbox:
+      - 0.9476744187430975
+      - 0.11111111073548474
+      - 0.017441860437393153
+      - 0.02325581444634328
+  - text: BREAKING NEWS
+    confidence: 1
+    bbox:
+      - 0.021802324300792576
+      - 0.849999999009502
+      - 0.2761627960205078
+      - 0.07248062133789057
+  - text: Trump says shooting is a "dark moment for Ame
+    confidence: 1
+    bbox:
+      - 0.3183139557266793
+      - 0.8475452211474357
+      - 0.6802325439453125
+      - 0.07023255666097006

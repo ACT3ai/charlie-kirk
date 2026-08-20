@@ -1,0 +1,65 @@
+source: site/internals/static/img/video_posters/df4e51d98a2b90cc9e1af2c0e63564d3d90117a58468427037b803e163b8d022.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:54:00.609Z
+kind: image
+language: en-US
+text: |-
+  Breaking they are attacking
+  us even more! They are
+  erasing data off our phones!!
+  MADA BE
+  TikTok
+  @ rynestimetwo
+  HAVE STUFF ON
+blocks:
+  - text: Breaking they are attacking
+    confidence: 1
+    bbox:
+      - 0.09375000520833322
+      - 0.07617187469075515
+      - 0.8124999999999999
+      - 0.037109375
+  - text: us even more! They are
+    confidence: 1
+    bbox:
+      - 0.11851850956726996
+      - 0.12083333465925372
+      - 0.7185185220506456
+      - 0.03749999776482582
+  - text: erasing data off our phones!!
+    confidence: 1
+    bbox:
+      - 0.07291666130642366
+      - 0.16015625012207035
+      - 0.8576388888888888
+      - 0.0390625
+  - text: MADA BE
+    confidence: 0.3
+    bbox:
+      - 0.3819444425099206
+      - 0.2109375003069196
+      - 0.2708333333333333
+      - 0.05078125
+  - text: TikTok
+    confidence: 1
+    bbox:
+      - 0.013888889872685169
+      - 0.5078125001627605
+      - 0.125
+      - 0.01953125
+  - text: "@ rynestimetwo"
+    confidence: 1
+    bbox:
+      - 0.013888887916666684
+      - 0.5273437501953124
+      - 0.22222222222222224
+      - 0.01953125
+  - text: HAVE STUFF ON
+    confidence: 1
+    bbox:
+      - 0.30208333616071426
+      - 0.7832031248883928
+      - 0.39583333333333326
+      - 0.03515625

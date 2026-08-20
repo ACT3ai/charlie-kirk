@@ -1,0 +1,33 @@
+source: site/internals/static/img/video_posters/09d8e337ba01dc3e10392b4cc6a326753b5f74dc855d33cfc0a9153eb2f29053.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:53:07.899Z
+kind: image
+language: en-US
+text: |-
+  CIA
+  @MJTruthUltra
+  Candace
+blocks:
+  - text: CIA
+    confidence: 1
+    bbox:
+      - 0.13906249992187497
+      - 0.6929577464179673
+      - 0.06718750000000001
+      - 0.04507042253521121
+  - text: "@MJTruthUltra"
+    confidence: 0.5
+    bbox:
+      - 0.05919292254795554
+      - 0.8342065870970142
+      - 0.13791974782943728
+      - 0.03654514097831618
+  - text: Candace
+    confidence: 1
+    bbox:
+      - 0.8217541849058911
+      - 0.7668941504818304
+      - 0.1551143765449523
+      - 0.198910995268486

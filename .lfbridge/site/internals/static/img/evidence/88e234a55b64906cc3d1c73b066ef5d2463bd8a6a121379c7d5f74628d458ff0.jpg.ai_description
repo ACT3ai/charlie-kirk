@@ -1,0 +1,131 @@
+source: site/internals/static/img/evidence/88e234a55b64906cc3d1c73b066ef5d2463bd8a6a121379c7d5f74628d458ff0.jpg
+status: done
+engine: gemini-flash-latest
+provider: gemini
+generated: 2026-08-20T12:53:24.237Z
+kind: image
+description: >-
+  ## Overview
+
+  This image is a direct screenshot of a Google Trends comparison webpage viewed
+  on a mobile device or browser with a Brave browser interface. The data
+  visualizes search interest over time in Utah between two terms: "Tony graf"
+  (blue) and "Robert lunnen" (red). The chart shows a major spike for "Tony
+  graf" around mid-October 2025, overlaid with purple text handles
+  "@BasedSamParker @SamParkerSenate".
+
+
+  ## Hyper-Detail
+
+  - **Top Browser Bar**: 
+    - A medium-blue top navigation bar features a connection/lock-style icon on the far left.
+    - The URL text reads `trends.google.com/trends/explor` in white lettering.
+    - To the right of the URL are two browser icons: the orange/red Brave lion head logo and the triangular multi-colored Brave Rewards / BAT logo (red, purple, and blue gradients).
+  - **Google Trends Header**:
+    - Located on a white background directly below the URL bar.
+    - A three-line hamburger menu icon on the far left.
+    - "Google Trends" logo with "Google" in standard brand colors (blue, red, yellow, blue, green, red) and "Trends" in dark gray.
+    - Tab navigation links: "Home", "Explore" (underlined with a blue indicator line), and "Trending Now".
+    - Right-aligned icons: share icon (connected dots), feedback icon (speech bubble with exclamation point), Google apps 9-dot grid icon, and a small circular profile picture showing a man in a dark suit with a red tie.
+  - **Search Comparison Cards**:
+    - Left card: Rounded white rectangle containing a solid blue dot, the text "Tony graf" (bold), "Search term" below it, and a three-dot vertical menu icon on the right.
+    - Center card: Rounded white rectangle containing a solid red dot, the text "Robert lunnen" (bold), "Search term" below it, and a three-dot vertical menu icon on the right.
+    - Right card: Light blue rounded card showing a "+" symbol and "+ Add comparison" text.
+  - **Filter Dropdown Pills**:
+    - "Utah" with a downward arrow.
+    - "1/1/25 - 10/19/25" with a downward arrow.
+    - "All categories" with a downward arrow.
+    - "Web Search" with a downward arrow.
+  - **Watermark Text**:
+    - Centered purple sans-serif text reading "@BasedSamParker @SamParkerSenate" sits in the negative space between the filter pills and the graph container.
+  - **Graph Section ("Interest over time")**:
+    - Subheader "Interest over time" with a small circular question mark tooltip icon.
+    - A share icon on the upper right of the white card.
+    - Y-axis showing faint gray values: 100, 75, 50, 25, 0 (baseline).
+    - X-axis showing dates: "Average", "Dec 29, 2024", "May 18, 2025", and "Oct 5, 2025".
+    - Red line: Flatline hugging the 0-value mark horizontally across the entire timeline.
+    - Blue line: Flatline near 0 until early October 2025, where it sharply spikes up to 100, drops down, rises slightly to around 15, and drops back toward zero.
+    - Interactive Tooltip Box: A white rectangular box over the spike reading:
+      - "Oct 12 – 18, 2025" (bold)
+      - "Tony graf" with the value "10" (uncertain/displayed value next to it)
+      - "Robert lunnen" with the value "0"
+    - Highlight circles/nodes visible on the line graph corresponding to the tooltip data point.
+
+  ## Composition
+
+  - **Top 10% (Frame-Top)**: Browser address bar and upper app navigation.
+
+  - **Upper-Mid (10%–35%)**: Search comparison boxes ("Tony graf", "Robert
+  lunnen", "+ Add comparison") and filter parameters.
+
+  - **Mid-Frame (35%–42%)**: Centered purple social handle watermark text.
+
+  - **Lower 58% (Frame-Bottom)**: The large white "Interest over time" card
+  occupying the entire lower half of the frame with the Cartesian coordinate
+  line chart.
+
+  - The visual layout is strictly modular, rectilinear, and software UI-based
+  with clean vertical stacking and horizontal alignment.
+
+
+  ## Location
+
+  - (indeterminate) - Digital screenshot of a web application. The search filter
+  is geographically set to the state of Utah, United States.
+
+
+  ## Setting & Place
+
+  - (indeterminate) - Virtual / Graphic User Interface (GUI).
+
+
+  ## Lighting
+
+  - Not applicable (flat digital graphical interface with standard digital UI
+  drop shadows and solid background fills).
+
+
+  ## Cinematography
+
+  - Not applicable (digital screen capture / 2D graphic).
+
+
+  ## People
+
+  - No actual people present in the scene, with the minor exception of a tiny
+  circular profile avatar in the top-right corner (~1% of frame) depicting a man
+  in a dark suit with a red tie.
+
+
+  ## Objects & Text
+
+  - **Visible Text**:
+    - `trends.google.com/trends/explor`
+    - `Google Trends`
+    - `Home`
+    - `Explore`
+    - `Trending Now`
+    - `Tony graf`
+    - `Robert lunnen`
+    - `Search term`
+    - `+ Add comparison`
+    - `Utah`
+    - `1/1/25 - 10/19/25`
+    - `All categories`
+    - `Web Search`
+    - `@BasedSamParker @SamParkerSenate`
+    - `Interest over time`
+    - `100`, `75`, `50`, `25`
+    - `Average`, `Dec 29, 2024`, `May 18, 2025`, `Oct 5, 2025`
+    - `Oct 12 – 18, 2025`
+    - `Tony graf 10` (or peak 100)
+    - `Robert lunnen 0`
+
+  ## Colors & Mood
+
+  - **Color Palette**: Dominated by UI light mode shades: pure white
+  (`#FFFFFF`), light grayish-blue background tones, Google standard blue
+  (`#4285F4`), muted red (`#EA4335`), Brave orange, and vibrant purple for the
+  overlaid handles.
+
+  - **Mood**: Analytical, clinical, political/informational data presentation.

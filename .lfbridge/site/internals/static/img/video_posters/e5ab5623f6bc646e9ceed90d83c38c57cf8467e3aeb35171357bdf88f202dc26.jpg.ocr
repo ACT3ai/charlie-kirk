@@ -1,0 +1,33 @@
+source: site/internals/static/img/video_posters/e5ab5623f6bc646e9ceed90d83c38c57cf8467e3aeb35171357bdf88f202dc26.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:54:02.016Z
+kind: image
+language: en-US
+text: |-
+  What really happened
+  on September 10, 2025?
+  UCCU Center • Utah Valley University
+blocks:
+  - text: What really happened
+    confidence: 1
+    bbox:
+      - 0.3197674432015555
+      - 0.36729222482546375
+      - 0.3619186019897461
+      - 0.07819064245147289
+  - text: on September 10, 2025?
+    confidence: 1
+    bbox:
+      - 0.3000000076635744
+      - 0.4553571448761886
+      - 0.4041666412353515
+      - 0.08083588444195866
+  - text: UCCU Center • Utah Valley University
+    confidence: 1
+    bbox:
+      - 0.3720930233376673
+      - 0.5790884722450249
+      - 0.25872093200683594
+      - 0.03773395753098563

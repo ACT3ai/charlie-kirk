@@ -1,0 +1,41 @@
+source: site/internals/static/img/evidence/ec0b58f79784ae3a3a62ec14c95964e148370093342c2d3d5a681bef846e8abc.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:52:24.585Z
+kind: image
+language: en-US
+text: |-
+  EXI
+  INCH
+  ESPRESSO + COSTLE BAR
+  SKINNE
+blocks:
+  - text: EXI
+    confidence: 1
+    bbox:
+      - 1.999999987845058e-11
+      - 0.2080000002133333
+      - 0.018000000000000002
+      - 0.021333333333333426
+  - text: INCH
+    confidence: 1
+    bbox:
+      - 0.54200000035
+      - 0.29600000030000007
+      - 0.03600000000000003
+      - 0.02400000000000002
+  - text: ESPRESSO + COSTLE BAR
+    confidence: 1
+    bbox:
+      - 0.6499999976666668
+      - 0.2933333335555556
+      - 0.1399999999999999
+      - 0.01866666666666672
+  - text: SKINNE
+    confidence: 1
+    bbox:
+      - 0.8940000014870076
+      - 0.5360000002290026
+      - 0.031999998092651416
+      - 0.010666666030883731

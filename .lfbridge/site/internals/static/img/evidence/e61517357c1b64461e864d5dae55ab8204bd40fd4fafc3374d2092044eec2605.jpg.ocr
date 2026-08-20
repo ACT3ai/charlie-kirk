@@ -1,0 +1,57 @@
+source: site/internals/static/img/evidence/e61517357c1b64461e864d5dae55ab8204bd40fd4fafc3374d2092044eec2605.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:52:12.976Z
+kind: image
+language: en-US
+text: |-
+  Rooftop
+  Balcony POV
+  Stage Left POV
+  < Charlie
+  Livestream POV E
+  (4)
+blocks:
+  - text: Rooftop
+    confidence: 1
+    bbox:
+      - 0.5403225818212365
+      - 0.019656019563882077
+      - 0.09408602150537637
+      - 0.02211302211302213
+  - text: Balcony POV
+    confidence: 1
+    bbox:
+      - 0.5910471038622879
+      - 0.3912511655262563
+      - 0.145862784436954
+      - 0.028308479440300127
+  - text: Stage Left POV
+    confidence: 1
+    bbox:
+      - 0.4298990435866922
+      - 0.5663727602199037
+      - 0.17783632586079257
+      - 0.029416641966423684
+  - text: < Charlie
+    confidence: 1
+    bbox:
+      - 0.5859262700774893
+      - 0.6041143989631457
+      - 0.09427648975003144
+      - 0.02518643559636302
+  - text: Livestream POV E
+    confidence: 1
+    bbox:
+      - 0.43817204475806454
+      - 0.6339066337428338
+      - 0.2096774193548387
+      - 0.02457002457002455
+  - text: (4)
+    confidence: 0.5
+    bbox:
+      - 0.8387096774577573
+      - 0.5675675672692173
+      - 0.05376344086021512
+      - 0.041769041769041726

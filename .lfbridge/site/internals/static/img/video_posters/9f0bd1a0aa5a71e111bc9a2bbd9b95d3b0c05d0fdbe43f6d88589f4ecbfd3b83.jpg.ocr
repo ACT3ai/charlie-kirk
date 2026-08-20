@@ -1,0 +1,41 @@
+source: site/internals/static/img/video_posters/9f0bd1a0aa5a71e111bc9a2bbd9b95d3b0c05d0fdbe43f6d88589f4ecbfd3b83.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:53:43.876Z
+kind: image
+language: en-US
+text: |-
+  CONS
+  ION
+  @RealCandaceO -X
+  Candace
+blocks:
+  - text: CONS
+    confidence: 1
+    bbox:
+      - 0.9069767444357798
+      - 0.10077519368122112
+      - 0.0232558131217957
+      - 0.02325581444634328
+  - text: ION
+    confidence: 1
+    bbox:
+      - 0.9549418605976717
+      - 0.09819121440902823
+      - 0.018895348310470572
+      - 0.025839792887369817
+  - text: "@RealCandaceO -X"
+    confidence: 1
+    bbox:
+      - 0.014534891514389692
+      - 0.9276485798153359
+      - 0.33720928192138677
+      - 0.0545736418830024
+  - text: Candace
+    confidence: 1
+    bbox:
+      - 0.8343023247876673
+      - 0.8010335910442485
+      - 0.12936046600341788
+      - 0.15245478312174476

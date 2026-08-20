@@ -1,0 +1,25 @@
+source: site/internals/static/img/video_posters/560613c1819e78e04808d2776042699a87231f2ccd30247cc19a436bc2b7bb8a.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:53:27.016Z
+kind: image
+language: en-US
+text: |-
+  AIR
+  @IN2THINAIR
+blocks:
+  - text: AIR
+    confidence: 1
+    bbox:
+      - 0.7833333333928573
+      - 0.9531249998102679
+      - 0.05833333333333335
+      - 0.026562499999999933
+  - text: "@IN2THINAIR"
+    confidence: 0.5
+    bbox:
+      - 0.7805555541666667
+      - 0.9812500001004466
+      - 0.19444444444444442
+      - 0.017187500000000022

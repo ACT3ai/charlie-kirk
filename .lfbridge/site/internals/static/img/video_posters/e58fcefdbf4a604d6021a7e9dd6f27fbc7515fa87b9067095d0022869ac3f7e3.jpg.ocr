@@ -1,0 +1,41 @@
+source: site/internals/static/img/video_posters/e58fcefdbf4a604d6021a7e9dd6f27fbc7515fa87b9067095d0022869ac3f7e3.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:54:02.138Z
+kind: image
+language: en-US
+text: |-
+  ALE AMELEA
+  CELAT AGAN
+  HARE AMERO
+  CLEAT ACAR
+blocks:
+  - text: ALE AMELEA
+    confidence: 0.3
+    bbox:
+      - 0.6092070871568968
+      - 0.22663640862580503
+      - 0.0775729208281547
+      - 0.011153870249447695
+  - text: CELAT AGAN
+    confidence: 0.5
+    bbox:
+      - 0.6088288311779319
+      - 0.23656548613438078
+      - 0.06488138834635415
+      - 0.008465628917903145
+  - text: HARE AMERO
+    confidence: 0.5
+    bbox:
+      - 0.5424164528799665
+      - 0.29794520541121683
+      - 0.07712082140373455
+      - 0.008740841117623743
+  - text: CLEAT ACAR
+    confidence: 1
+    bbox:
+      - 0.5475578420841591
+      - 0.3081395349844016
+      - 0.0719794302275687
+      - 0.01035361583918748

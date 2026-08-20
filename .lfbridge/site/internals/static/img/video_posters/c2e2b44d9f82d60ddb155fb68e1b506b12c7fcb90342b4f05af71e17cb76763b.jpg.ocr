@@ -1,0 +1,57 @@
+source: site/internals/static/img/video_posters/c2e2b44d9f82d60ddb155fb68e1b506b12c7fcb90342b4f05af71e17cb76763b.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:53:54.013Z
+kind: image
+language: en-US
+text: |-
+  E
+  yiely
+  VEET COM
+  THE
+  AMER LAT
+  COMEBA
+blocks:
+  - text: E
+    confidence: 1
+    bbox:
+      - -4.725670432748074e-10
+      - 0.40261627923598287
+      - 0.032692308425903316
+      - 0.042151162036755174
+  - text: yiely
+    confidence: 0.5
+    bbox:
+      - 0.9096153853311627
+      - 0.09302325540580192
+      - 0.07692307472228999
+      - 0.047965117284326286
+  - text: VEET COM
+    confidence: 0.5
+    bbox:
+      - 0.8961538467734704
+      - 0.14389534926944791
+      - 0.07692307472228999
+      - 0.024709301697296016
+  - text: THE
+    confidence: 1
+    bbox:
+      - 0.3615384605520396
+      - 0.6249999993960251
+      - 0.10576923370361324
+      - 0.036337210391353514
+  - text: AMER LAT
+    confidence: 1
+    bbox:
+      - 0.3346153892734853
+      - 0.664244186199397
+      - 0.6519230651855468
+      - 0.1409883724281088
+  - text: COMEBA
+    confidence: 1
+    bbox:
+      - 0.3692307733189979
+      - 0.8023255796552976
+      - 0.4884615325927735
+      - 0.12790697942487017

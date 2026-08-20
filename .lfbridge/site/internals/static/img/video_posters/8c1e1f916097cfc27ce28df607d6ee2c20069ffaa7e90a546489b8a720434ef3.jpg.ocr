@@ -1,0 +1,57 @@
+source: site/internals/static/img/video_posters/8c1e1f916097cfc27ce28df607d6ee2c20069ffaa7e90a546489b8a720434ef3.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:53:39.719Z
+kind: image
+language: en-US
+text: |-
+  Florida, US
+  11 July 2025
+  MEE
+  • rumble
+  @UltraFrog17
+  involvement in this?
+blocks:
+  - text: Florida, US
+    confidence: 1
+    bbox:
+      - 0.10033533704903354
+      - 0.25469503355081935
+      - 0.15591847455060043
+      - 0.022586677471796657
+  - text: 11 July 2025
+    confidence: 1
+    bbox:
+      - 0.10063090916237374
+      - 0.297524407857669
+      - 0.17858314514160153
+      - 0.019776765505472915
+  - text: MEE
+    confidence: 1
+    bbox:
+      - 0.8346253247335536
+      - 0.26308139548834286
+      - 0.10852712701868128
+      - 0.027616278330484967
+  - text: • rumble
+    confidence: 1
+    bbox:
+      - 0.8059687089749334
+      - 0.5924066824620446
+      - 0.16584036085340725
+      - 0.02158198257287347
+  - text: "@UltraFrog17"
+    confidence: 0.5
+    bbox:
+      - 0.8706930148672413
+      - 0.6261032699996039
+      - 0.10099122789171
+      - 0.010874855518341109
+  - text: involvement in this?
+    confidence: 1
+    bbox:
+      - 0.20413438188779365
+      - 0.6713541664382613
+      - 0.5865632798936632
+      - 0.03229166666666661

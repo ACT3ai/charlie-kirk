@@ -1,0 +1,49 @@
+source: site/internals/static/img/video_posters/78dd362974341963b2d85a4788899450b898ddef884a6614e38a53566a9dbabc.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:53:35.411Z
+kind: image
+language: en-US
+text: |-
+  Pause (k)
+  COMING UP
+  SHOCKING New Info On Charlie Kirk's Shooter
+  WolvesAndFinance O
+  Thanko
+blocks:
+  - text: Pause (k)
+    confidence: 1
+    bbox:
+      - 0.0061211084811941706
+      - 0.7462991289048578
+      - 0.05494528412818909
+      - 0.02684618631998703
+  - text: COMING UP
+    confidence: 1
+    bbox:
+      - 0.09368919776650966
+      - 0.8135091780069447
+      - 0.18605910539627077
+      - 0.09520386589898
+  - text: SHOCKING New Info On Charlie Kirk's Shooter
+    confidence: 1
+    bbox:
+      - 0.009375002812499967
+      - 0.9138888887698412
+      - 0.39374999999999993
+      - 0.02777777777777779
+  - text: WolvesAndFinance O
+    confidence: 1
+    bbox:
+      - 0.05781250123697914
+      - 0.9722222220601852
+      - 0.1484375
+      - 0.025000000000000022
+  - text: Thanko
+    confidence: 0.5
+    bbox:
+      - 0.7937500026229285
+      - 0.9861111114422481
+      - 0.045312497019767806
+      - 0.01111111044883728

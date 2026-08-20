@@ -1,0 +1,25 @@
+source: site/internals/static/img/evidence/ffda235fa2b67f4e841bf49a94626a66fd7297cfc24e6ba9d020df062720692c.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:53:03.172Z
+kind: image
+language: en-US
+text: |-
+  PROJECT
+  CLYSTE
+blocks:
+  - text: PROJECT
+    confidence: 1
+    bbox:
+      - 0.46511627823928575
+      - 0.9215116276965064
+      - 0.06976744333903001
+      - 0.017441860834757517
+  - text: CLYSTE
+    confidence: 0.5
+    bbox:
+      - 0.4437984489165034
+      - 0.9374999997525393
+      - 0.06201550519024884
+      - 0.018895349237653902

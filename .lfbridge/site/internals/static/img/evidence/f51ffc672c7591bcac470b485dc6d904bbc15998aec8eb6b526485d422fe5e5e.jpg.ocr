@@ -1,0 +1,57 @@
+source: site/internals/static/img/evidence/f51ffc672c7591bcac470b485dc6d904bbc15998aec8eb6b526485d422fe5e5e.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:52:42.015Z
+kind: image
+language: en-US
+text: |-
+  FREED ON
+  MAKEA
+  GREAN
+  MSNBC
+  CAMERICA
+  BITAGAIN
+blocks:
+  - text: FREED ON
+    confidence: 1
+    bbox:
+      - 0.4210821922722886
+      - 0.43563721133735345
+      - 0.100275501217856
+      - 0.12601606339370652
+  - text: MAKEA
+    confidence: 0.5
+    bbox:
+      - 0.556851311771137
+      - 0.6373056999352331
+      - 0.03790087463556846
+      - 0.03626943005181338
+  - text: GREAN
+    confidence: 0.5
+    bbox:
+      - 0.5655976676627795
+      - 0.6683937826424869
+      - 0.03206997084548102
+      - 0.031088082901554404
+  - text: MSNBC
+    confidence: 1
+    bbox:
+      - 0.09613921384373443
+      - 0.869941241302453
+      - 0.23046209930330952
+      - 0.09949575434076974
+  - text: CAMERICA
+    confidence: 0.5
+    bbox:
+      - 0.6834426076454877
+      - 0.6881813694714755
+      - 0.07519491212361051
+      - 0.12779875246354333
+  - text: BITAGAIN
+    confidence: 0.5
+    bbox:
+      - 0.6614577284501835
+      - 0.709844564990191
+      - 0.07755101595953673
+      - 0.12186527746329034

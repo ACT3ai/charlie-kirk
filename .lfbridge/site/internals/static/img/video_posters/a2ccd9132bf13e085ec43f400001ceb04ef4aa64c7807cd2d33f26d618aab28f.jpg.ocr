@@ -1,0 +1,97 @@
+source: site/internals/static/img/video_posters/a2ccd9132bf13e085ec43f400001ceb04ef4aa64c7807cd2d33f26d618aab28f.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:53:46.092Z
+kind: image
+language: en-US
+text: |-
+  Cra Care
+  •APT
+  SAS
+  CEra.
+  Cra CARAND CASIS CEREYDE.
+  CERSISNSE
+  CESANVOS
+  COSNNSR
+  BYOR CREYSR CRAVSR CHAENSE
+  TARNOR
+  CEAVEA CORNEVOE
+blocks:
+  - text: Cra Care
+    confidence: 0.3
+    bbox:
+      - 0.4505813951792463
+      - 0.5865633078234277
+      - 0.0479651165008545
+      - 0.021214470333523194
+  - text: •APT
+    confidence: 0.3
+    bbox:
+      - 0.7638041461011451
+      - 0.018310539229262623
+      - 0.23610586166381842
+      - 0.15276116265190975
+  - text: SAS
+    confidence: 1
+    bbox:
+      - 0.5944767449891958
+      - 0.4237726112995852
+      - 0.15988371849060068
+      - 0.14728681776258679
+  - text: CEra.
+    confidence: 0.3
+    bbox:
+      - 0.659883720953103
+      - 0.6175710598353713
+      - 0.036337208747863725
+      - 0.02842377132839624
+  - text: Cra CARAND CASIS CEREYDE.
+    confidence: 0.3
+    bbox:
+      - 0.6031976732133236
+      - 0.6533333333765333
+      - 0.15261628150939943
+      - 0.039173126220703125
+  - text: CERSISNSE
+    confidence: 0.3
+    bbox:
+      - 0.8895348848093905
+      - 0.5038759695018434
+      - 0.049418601989746014
+      - 0.041343667772081205
+  - text: CESANVOS
+    confidence: 0.3
+    bbox:
+      - 0.9476744186916946
+      - 0.4987080103547754
+      - 0.05087209224700928
+      - 0.03875968933105467
+  - text: COSNNSR
+    confidence: 0.3
+    bbox:
+      - 0.9171511620182125
+      - 0.5529715767599542
+      - 0.05232558250427244
+      - 0.041343667772081205
+  - text: BYOR CREYSR CRAVSR CHAENSE
+    confidence: 0.3
+    bbox:
+      - 0.8066860438025896
+      - 0.6020671843708364
+      - 0.18895349502563474
+      - 0.04392764621310763
+  - text: TARNOR
+    confidence: 0.3
+    bbox:
+      - 0.8183139533113879
+      - 0.6640826876239154
+      - 0.036337208747863836
+      - 0.028423771328396352
+  - text: CEAVEA CORNEVOE
+    confidence: 0.3
+    bbox:
+      - 0.8632322755052505
+      - 0.6552146438033067
+      - 0.10202382087707518
+      - 0.04357587814331054

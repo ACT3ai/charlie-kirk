@@ -1,0 +1,97 @@
+source: site/internals/static/img/evidence/fa4f221b352cc2367373182f98da8c5690fe2b9c4b282ad75c56baf7bcad2db9.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:52:49.862Z
+kind: image
+language: en-US
+text: |-
+  Secret Service found electronic devices
+  in their emergency vehicles planted by
+  Israeli agents.
+  Max Blumenthal just told Tim Dillon that Donald Trump fears for
+  his life - specifically because of Israel, and that during one of
+  Netanyahu's visits this year, Secret Service discovered
+  "electronic devices" in their emergency response vehicles placed
+  by Israeli agents.
+  X @THEINTELSCIF
+  us open
+  *GI
+blocks:
+  - text: Secret Service found electronic devices
+    confidence: 1
+    bbox:
+      - 0.020370372438271524
+      - 0.012962963317901255
+      - 0.9481481481481482
+      - 0.042592592592592626
+  - text: in their emergency vehicles planted by
+    confidence: 1
+    bbox:
+      - 0.01666666075231494
+      - 0.0796296296296296
+      - 0.9462962962962962
+      - 0.05185185185185193
+  - text: Israeli agents.
+    confidence: 1
+    bbox:
+      - 0.01666666373456796
+      - 0.14629629631172836
+      - 0.35185185185185186
+      - 0.050000000000000044
+  - text: Max Blumenthal just told Tim Dillon that Donald Trump fears for
+    confidence: 1
+    bbox:
+      - 0.024074079645061655
+      - 0.20925925955246916
+      - 0.9462962962962964
+      - 0.03518518518518521
+  - text: his life - specifically because of Israel, and that during one of
+    confidence: 1
+    bbox:
+      - 0.02222222394179891
+      - 0.2574074076719577
+      - 0.9185185185185185
+      - 0.03703703703703698
+  - text: Netanyahu's visits this year, Secret Service discovered
+    confidence: 1
+    bbox:
+      - 0.023902684935436014
+      - 0.3008499631201791
+      - 0.8021538628472222
+      - 0.04226497367576321
+  - text: '"electronic devices" in their emergency response vehicles placed'
+    confidence: 1
+    bbox:
+      - 0.01831696806870603
+      - 0.34618700405018765
+      - 0.9614548294632523
+      - 0.04176460548683447
+  - text: by Israeli agents.
+    confidence: 1
+    bbox:
+      - 0.020370370351851838
+      - 0.39814814779629626
+      - 0.2537037037037037
+      - 0.03518518518518521
+  - text: X @THEINTELSCIF
+    confidence: 0.5
+    bbox:
+      - 0.8870370361419753
+      - 0.4370370371450618
+      - 0.1074074074074074
+      - 0.016666666666666607
+  - text: us open
+    confidence: 1
+    bbox:
+      - 0.2407407413580247
+      - 0.5777777777160494
+      - 0.037037037037037035
+      - 0.007407407407407418
+  - text: "*GI"
+    confidence: 1
+    bbox:
+      - 0.9592592592824076
+      - 0.7851851849537037
+      - 0.02777777777777768
+      - 0.01851851851851849

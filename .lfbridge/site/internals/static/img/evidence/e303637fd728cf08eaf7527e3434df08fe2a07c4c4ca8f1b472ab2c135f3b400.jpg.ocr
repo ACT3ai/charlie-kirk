@@ -1,0 +1,33 @@
+source: site/internals/static/img/evidence/e303637fd728cf08eaf7527e3434df08fe2a07c4c4ca8f1b472ab2c135f3b400.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:52:07.272Z
+kind: image
+language: en-US
+text: |-
+  LUNG
+  RED CIRCLEI
+  00:07.00
+blocks:
+  - text: LUNG
+    confidence: 1
+    bbox:
+      - -6.8198471028315535e-9
+      - -1.5576009371187638e-9
+      - 0.9189189241502048
+      - 0.1666666716337204
+  - text: RED CIRCLEI
+    confidence: 1
+    bbox:
+      - 0.4842767367657012
+      - 0.7963867179064037
+      - 0.5125785972804902
+      - 0.0439453125
+  - text: 00:07.00
+    confidence: 1
+    bbox:
+      - 0.05923802207765846
+      - 0.953977824483913
+      - 0.1991340201702481
+      - 0.025183886289596558

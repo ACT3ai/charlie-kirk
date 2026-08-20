@@ -1,0 +1,65 @@
+source: site/internals/static/img/video_posters/49fdd620336ec455498a178fcf2d9df1d4448d9b868dd57ebe48890486a96792.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:53:24.690Z
+kind: image
+language: en-US
+text: |-
+  PRESEN
+  YREFY.CU
+  SUSA
+  EBEDN
+  yref
+  EFY.CO
+  RZ
+blocks:
+  - text: PRESEN
+    confidence: 0.3
+    bbox:
+      - 0.7197153102694724
+      - 0.018101212763900643
+      - 0.3040946197509766
+      - 0.11373924974315441
+  - text: YREFY.CU
+    confidence: 0.3
+    bbox:
+      - 0.8157395827052385
+      - 0.12929338239254973
+      - 0.12521069526672357
+      - 0.015167728590395169
+  - text: SUSA
+    confidence: 0.5
+    bbox:
+      - 0.7828485940420513
+      - 0.17721245897932714
+      - 0.08546560287475591
+      - 0.02348205845399587
+  - text: EBEDN
+    confidence: 0.5
+    bbox:
+      - 0.8370370192355476
+      - 0.2416666626753261
+      - 0.13333336830139153
+      - 0.25833333762553834
+  - text: yref
+    confidence: 0.3
+    bbox:
+      - 0.8925180765952985
+      - 0.5080182873238039
+      - 0.11369508743286127
+      - 0.03847740538177269
+  - text: EFY.CO
+    confidence: 0.5
+    bbox:
+      - 0.8926162247290645
+      - 0.5422540448346906
+      - 0.10116393089294429
+      - 0.018007860572696988
+  - text: RZ
+    confidence: 0.5
+    bbox:
+      - 0.8647666283004837
+      - 0.5732132266787954
+      - 0.10042647361755375
+      - 0.09344146556827426

@@ -1,0 +1,33 @@
+source: site/internals/static/img/video_posters/bc1977b53212409c8c4020f7ae0fac770496b6b74320f3efe114890381c3b73d.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:53:51.346Z
+kind: image
+language: en-US
+text: |-
+  WYZ
+  1UBI =
+  2025-09-10 08:22:52
+blocks:
+  - text: WYZ
+    confidence: 1
+    bbox:
+      - 0.026162793248198753
+      - 0.9328165375389869
+      - 0.08430232048034667
+      - 0.05167958577473952
+  - text: 1UBI =
+    confidence: 0.3
+    bbox:
+      - 0.8357558143225026
+      - 0.47777777807588495
+      - 0.04360465049743656
+      - 0.02111111111111108
+  - text: 2025-09-10 08:22:52
+    confidence: 1
+    bbox:
+      - 0.7238372170990226
+      - 0.9431524563292774
+      - 0.2514534759521484
+      - 0.04392764621310763

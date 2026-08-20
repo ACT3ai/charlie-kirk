@@ -1,0 +1,73 @@
+source: site/internals/static/img/video_posters/09e095d2ba8f4a0cfd978d8fa972b895907cccaff39e52c349b9e51af0b895e7.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:53:09.182Z
+kind: image
+language: en-US
+text: |-
+  DISCLAIMER:
+  The views and opinions expressed in this video are my own
+  and based on publicly available information and sources cited.
+  All allegations discussed are unproven and presented
+  for informational and commentary purposes only.
+  This content is protected opinion speech and is not intended
+  as statements of fact or assertions of illegal conduct.
+  Viewers are encouraged to conduct their own research.
+blocks:
+  - text: "DISCLAIMER:"
+    confidence: 1
+    bbox:
+      - 0.32187499637500006
+      - 0.17777777799999994
+      - 0.36250000000000004
+      - 0.0888888888888889
+  - text: The views and opinions expressed in this video are my own
+    confidence: 1
+    bbox:
+      - 0.10312499209375012
+      - 0.3500000002222222
+      - 0.790625
+      - 0.05555555555555558
+  - text: and based on publicly available information and sources cited.
+    confidence: 1
+    bbox:
+      - 0.08437501039062481
+      - 0.4111111111111111
+      - 0.8312500000000002
+      - 0.05555555555555558
+  - text: All allegations discussed are unproven and presented
+    confidence: 1
+    bbox:
+      - 0.14687499515625016
+      - 0.4722222212962963
+      - 0.709375
+      - 0.05555555555555558
+  - text: for informational and commentary purposes only.
+    confidence: 1
+    bbox:
+      - 0.17187500820312476
+      - 0.5388888888194444
+      - 0.65625
+      - 0.04999999999999993
+  - text: This content is protected opinion speech and is not intended
+    confidence: 1
+    bbox:
+      - 0.0968750057366071
+      - 0.5999999996825396
+      - 0.803125
+      - 0.05555555555555558
+  - text: as statements of fact or assertions of illegal conduct.
+    confidence: 1
+    bbox:
+      - 0.15000001968339668
+      - 0.6583333330864197
+      - 0.7041666507720946
+      - 0.061111111111111116
+  - text: Viewers are encouraged to conduct their own research.
+    confidence: 1
+    bbox:
+      - 0.1312500210814413
+      - 0.7277777786111111
+      - 0.7406249523162842
+      - 0.050000000000000044

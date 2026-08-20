@@ -1,0 +1,25 @@
+source: site/internals/static/img/video_posters/8fc94b2686b8c9f3d4b83b106b92155b9abde6d1baabac3f2cdc63ffa4ece1c8.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:53:40.838Z
+kind: image
+language: en-US
+text: |-
+  PROJECT
+  CLYSTE
+blocks:
+  - text: PROJECT
+    confidence: 1
+    bbox:
+      - 0.46511627823928575
+      - 0.9215116276965064
+      - 0.06976744333903001
+      - 0.017441860834757517
+  - text: CLYSTE
+    confidence: 0.5
+    bbox:
+      - 0.4437984489165034
+      - 0.9374999997525393
+      - 0.06201550519024884
+      - 0.018895349237653902

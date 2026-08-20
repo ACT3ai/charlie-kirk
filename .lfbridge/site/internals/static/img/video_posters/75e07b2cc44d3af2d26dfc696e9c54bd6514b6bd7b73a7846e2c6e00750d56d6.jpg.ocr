@@ -1,0 +1,49 @@
+source: site/internals/static/img/video_posters/75e07b2cc44d3af2d26dfc696e9c54bd6514b6bd7b73a7846e2c6e00750d56d6.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:53:34.582Z
+kind: image
+language: en-US
+text: |-
+  FBI Told him
+  to delete this
+  Charlie Kirk video
+  kTo
+  @rynestime
+blocks:
+  - text: FBI Told him
+    confidence: 1
+    bbox:
+      - 0.16916487935012703
+      - 0.030361757067468464
+      - 0.6723768833705357
+      - 0.0626614987080103
+  - text: to delete this
+    confidence: 1
+    bbox:
+      - 0.14561028778245969
+      - 0.1162790697211945
+      - 0.7173447381882441
+      - 0.061046511627906974
+  - text: Charlie Kirk video
+    confidence: 1
+    bbox:
+      - 0.027837271083491096
+      - 0.19767441855335166
+      - 0.9635974121093749
+      - 0.06686046511627897
+  - text: kTo
+    confidence: 0.5
+    bbox:
+      - 0.13490364238024088
+      - 0.7369186046002907
+      - 0.0963597397577195
+      - 0.030523255813953543
+  - text: "@rynestime"
+    confidence: 1
+    bbox:
+      - 0.012737135007128288
+      - 0.7858416624590305
+      - 0.21021590459914435
+      - 0.02301746930262838

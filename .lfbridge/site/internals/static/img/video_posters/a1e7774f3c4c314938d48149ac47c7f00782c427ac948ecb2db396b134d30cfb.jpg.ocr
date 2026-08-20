@@ -1,0 +1,81 @@
+source: site/internals/static/img/video_posters/a1e7774f3c4c314938d48149ac47c7f00782c427ac948ecb2db396b134d30cfb.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:53:45.516Z
+kind: image
+language: en-US
+text: |-
+  BREAKING NEWS
+  TIFFANY BARKER
+  KIRK SHOOTING WITNESS
+  Taylor Belle Dean was interviewed
+  with Tiffany Barker.
+  CHARLIE
+  KIRK
+  But she never mentioned
+  she KNEW Hunter Kozak...
+blocks:
+  - text: BREAKING NEWS
+    confidence: 1
+    bbox:
+      - 0.08061002002290883
+      - 0.3037037037763781
+      - 0.21568627534089263
+      - 0.017517226419331067
+  - text: TIFFANY BARKER
+    confidence: 1
+    bbox:
+      - 0.07625272401475995
+      - 0.3343023259325575
+      - 0.3442265828450521
+      - 0.026191500675531
+  - text: KIRK SHOOTING WITNESS
+    confidence: 1
+    bbox:
+      - 0.07407407922592005
+      - 0.36172839506510623
+      - 0.3159041228117766
+      - 0.01790123456790127
+  - text: Taylor Belle Dean was interviewed
+    confidence: 1
+    bbox:
+      - 0.07843138366485705
+      - 0.4331395357248866
+      - 0.642701495135272
+      - 0.03352713055080836
+  - text: with Tiffany Barker.
+    confidence: 1
+    bbox:
+      - 0.0762527221629081
+      - 0.47962962905737416
+      - 0.3812636198820891
+      - 0.03518518518518521
+  - text: CHARLIE
+    confidence: 1
+    bbox:
+      - 0.7450980391471247
+      - 0.35465116287994114
+      - 0.06100218031141502
+      - 0.007267441572966438
+  - text: KIRK
+    confidence: 1
+    bbox:
+      - 0.7407407399050284
+      - 0.36046511626400846
+      - 0.06753812719274443
+      - 0.01744186024606953
+  - text: But she never mentioned
+    confidence: 1
+    bbox:
+      - 0.44662310120400167
+      - 0.8226744188416104
+      - 0.4901960584852431
+      - 0.026162790369104516
+  - text: she KNEW Hunter Kozak...
+    confidence: 1
+    bbox:
+      - 0.459694986044695
+      - 0.869135801940967
+      - 0.5141612300166376
+      - 0.030864197530864224

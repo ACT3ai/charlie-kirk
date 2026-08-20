@@ -1,0 +1,97 @@
+source: site/internals/static/img/evidence/e342bd05935a92300641e2fade2189700810158504a45b5cd0bddf598161f734.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:52:06.671Z
+kind: image
+language: en-US
+text: |-
+  LunKy,
+  If you are reading this pet my
+  text, then I am so Sorry. I left the
+  house this morning on a mission, and set
+  an auto text. I am likely dead, or facing
+  a lengthy Prison Sentence. I had the
+  opportunity to take out Charlie Kirk,
+  and I took it. I dun't Know if I
+  will have succeeded, but I had hoped
+  To make it home to you.
+  I wish we could have lived in
+blocks:
+  - text: LunKy,
+    confidence: 0.5
+    bbox:
+      - 0.11785714214285714
+      - 0.20258620651939663
+      - 0.11785714285714285
+      - 0.06034482758620685
+  - text: If you are reading this pet my
+    confidence: 1
+    bbox:
+      - 0.17083333495761263
+      - 0.306034480947593
+      - 0.7458333151681082
+      - 0.07112068965517238
+  - text: text, then I am so Sorry. I left the
+    confidence: 1
+    bbox:
+      - 0.1149695606683763
+      - 0.36778670486475884
+      - 0.7439158303397043
+      - 0.09648034490388013
+  - text: house this morning on a mission, and set
+    confidence: 1
+    bbox:
+      - 0.11818709863539557
+      - 0.429236752326948
+      - 0.767595945085798
+      - 0.11001003199610226
+  - text: an auto text. I am likely dead, or facing
+    confidence: 1
+    bbox:
+      - 0.11843262164496693
+      - 0.48881393234729476
+      - 0.8000767844063894
+      - 0.11998425681015534
+  - text: a lengthy Prison Sentence. I had the
+    confidence: 1
+    bbox:
+      - 0.11845438790118154
+      - 0.5561274693243791
+      - 0.7654149736676897
+      - 0.09638660529564169
+  - text: opportunity to take out Charlie Kirk,
+    confidence: 1
+    bbox:
+      - 0.11643665781133815
+      - 0.6055045841033326
+      - 0.8060616084507534
+      - 0.09669897474091627
+  - text: and I took it. I dun't Know if I
+    confidence: 1
+    bbox:
+      - 0.11101723701536628
+      - 0.6556259365584405
+      - 0.8265657697405134
+      - 0.11076958426113792
+  - text: will have succeeded, but I had hoped
+    confidence: 1
+    bbox:
+      - 0.10741764084010745
+      - 0.7123255065151326
+      - 0.8842191968645369
+      - 0.11967446886259925
+  - text: To make it home to you.
+    confidence: 1
+    bbox:
+      - 0.10232925009644493
+      - 0.7895003343223868
+      - 0.6022303989955357
+      - 0.08462770231838879
+  - text: I wish we could have lived in
+    confidence: 1
+    bbox:
+      - 0.0953308615851928
+      - 0.9124840135972477
+      - 0.8287107195172991
+      - 0.08622898726627737

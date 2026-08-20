@@ -1,0 +1,49 @@
+source: site/internals/static/img/video_posters/1a4133cb5c88ce3b08d168b8346d71a695ca81458688592aebe7953ec9b46c06.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:53:12.620Z
+kind: image
+language: en-US
+text: |-
+  Bal Oet 14 44/10PM
+  Suliartie
+  nElyptian Alr Paroe
+  - to an army base in
+  dal
+blocks:
+  - text: Bal Oet 14 44/10PM
+    confidence: 1
+    bbox:
+      - 0.11461323841102587
+      - 0.160326406247421
+      - 0.24382536146375866
+      - 0.028191773096720385
+  - text: Suliartie
+    confidence: 0.5
+    bbox:
+      - 0.05895327718017812
+      - 0.32176699209366344
+      - 0.0942795435587565
+      - 0.011692148447036699
+  - text: nElyptian Alr Paroe
+    confidence: 0.5
+    bbox:
+      - -0.0009467145661829256
+      - 0.3761171173719011
+      - 0.2290888609709563
+      - 0.022014592091242458
+  - text: "- to an army base in"
+    confidence: 1
+    bbox:
+      - 5.891969105202103e-9
+      - 0.4505208337781127
+      - 0.23255813033492476
+      - 0.021874999999999978
+  - text: dal
+    confidence: 1
+    bbox:
+      - 4.063323899572424e-10
+      - 0.5072674419495088
+      - 0.03617571018360279
+      - 0.015988371769587117

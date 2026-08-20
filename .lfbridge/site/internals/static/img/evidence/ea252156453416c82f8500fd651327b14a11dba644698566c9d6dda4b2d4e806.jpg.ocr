@@ -1,0 +1,145 @@
+source: site/internals/static/img/evidence/ea252156453416c82f8500fd651327b14a11dba644698566c9d6dda4b2d4e806.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:52:21.916Z
+kind: image
+language: en-US
+text: |-
+  The General
+  @GeneralMCNews • 27m
+  BREAKING: FBI Director Kash Patel has asked to halt public tracking of
+  government-owned jet after reportedly using it last week to fly out and
+  watch his girlfriend perform at a wrestling event.
+  S...
+  N708JH - UNITED STATES
+  GOVERNMENT (WASHINGTON
+  DC)
+  This aircraft (N708JH) is not available for
+  public tracking per request from the
+  owner/operator.
+  That's my airplane! How do I track my airplane on
+  FlightAware?
+  FlightAware can provide aircraft owner/operators
+  with secure access to their own flight data. Contact
+  FlightAware for help.
+blocks:
+  - text: The General
+    confidence: 1
+    bbox:
+      - 0.10096153725961542
+      - 0.040201005150753755
+      - 0.14423076923076927
+      - 0.035175879396984966
+  - text: "@GeneralMCNews • 27m"
+    confidence: 1
+    bbox:
+      - 0.27500000505905303
+      - 0.03894472404738181
+      - 0.28333331377078325
+      - 0.03948664785030498
+  - text: "BREAKING: FBI Director Kash Patel has asked to halt public tracking of"
+    confidence: 1
+    bbox:
+      - 0.10256409610042748
+      - 0.09547738701842545
+      - 0.7756410256410257
+      - 0.04020100502512569
+  - text: government-owned jet after reportedly using it last week to fly out and
+    confidence: 1
+    bbox:
+      - 0.10096153519230774
+      - 0.1432160799748744
+      - 0.7756410256410255
+      - 0.042713567839196
+  - text: watch his girlfriend perform at a wrestling event.
+    confidence: 1
+    bbox:
+      - 0.10256410230769233
+      - 0.19095477341708544
+      - 0.532051282051282
+      - 0.045226130653266305
+  - text: S...
+    confidence: 1
+    bbox:
+      - 0.8621794878685898
+      - 0.03768844206030153
+      - 0.06891025641025639
+      - 0.04020100502512558
+  - text: N708JH - UNITED STATES
+    confidence: 1
+    bbox:
+      - 0.5544871773637821
+      - 0.3793969851444723
+      - 0.33974358974358976
+      - 0.04020100502512558
+  - text: GOVERNMENT (WASHINGTON
+    confidence: 1
+    bbox:
+      - 0.5192307694310897
+      - 0.43467336711683413
+      - 0.41025641025641035
+      - 0.045226130653266416
+  - text: DC)
+    confidence: 0.5
+    bbox:
+      - 0.7003205125874126
+      - 0.4924623116719964
+      - 0.05128205128205121
+      - 0.04020100502512558
+  - text: This aircraft (N708JH) is not available for
+    confidence: 1
+    bbox:
+      - 0.5304487218589743
+      - 0.5778894471608039
+      - 0.39102564102564097
+      - 0.03266331658291466
+  - text: public tracking per request from the
+    confidence: 1
+    bbox:
+      - 0.5541666639730968
+      - 0.6206030149694025
+      - 0.3416666617760291
+      - 0.03952770376924286
+  - text: owner/operator.
+    confidence: 1
+    bbox:
+      - 0.6470710235144349
+      - 0.6604806037745868
+      - 0.15621728163499093
+      - 0.038535235515192
+  - text: That's my airplane! How do I track my airplane on
+    confidence: 1
+    bbox:
+      - 0.5375000061154829
+      - 0.7123115576365091
+      - 0.3749999755468125
+      - 0.039322427768803125
+  - text: FlightAware?
+    confidence: 1
+    bbox:
+      - 0.6746140743434464
+      - 0.7506660064787319
+      - 0.09948979891263532
+      - 0.028818741515653223
+  - text: FlightAware can provide aircraft owner/operators
+    confidence: 1
+    bbox:
+      - 0.5432692338007479
+      - 0.8115577888190953
+      - 0.3637820512820513
+      - 0.03015075376884424
+  - text: with secure access to their own flight data. Contact
+    confidence: 1
+    bbox:
+      - 0.5336538493456197
+      - 0.8417085426088777
+      - 0.3830128205128205
+      - 0.027638190954773822
+  - text: FlightAware for help.
+    confidence: 1
+    bbox:
+      - 0.6458333353365384
+      - 0.8718592965452261
+      - 0.16025641025641024
+      - 0.03015075376884413

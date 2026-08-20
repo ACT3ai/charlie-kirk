@@ -1,0 +1,97 @@
+source: site/internals/static/img/video_posters/53f05a5cc77911ed695633952bd60371775b383255870253c0623751470b52c0.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:53:26.636Z
+kind: image
+language: en-US
+text: |-
+  АРІЯМА 90 23ТАТЕ ОЗТИО
+  Willy's Pop Shop
+  *g rie
+  Cupbop-Kerean
+  BBg in A cup
+  Cosia Vida Fres
+  Mexlean exlll
+  MeX сам
+  * oficerd
+  UVU Campus Tours
+  Money success Center
+blocks:
+  - text: АРІЯМА 90 23ТАТЕ ОЗТИО
+    confidence: 0.3
+    bbox:
+      - 0.38430455783187456
+      - 0.18992563330402268
+      - 0.33508447717737266
+      - 0.043224000930786155
+  - text: Willy's Pop Shop
+    confidence: 1
+    bbox:
+      - 0.5167958645919731
+      - 0.744186046505682
+      - 0.08527131963659218
+      - 0.007376453528801563
+  - text: "*g rie"
+    confidence: 0.5
+    bbox:
+      - 0.9173126618074234
+      - 0.7614583333441184
+      - 0.03617571018360277
+      - 0.011979166666666652
+  - text: Cupbop-Kerean
+    confidence: 1
+    bbox:
+      - 0.4547803619726269
+      - 0.7965116278976119
+      - 0.08010335851598666
+      - 0.007267441848913814
+  - text: BBg in A cup
+    confidence: 1
+    bbox:
+      - 0.4677002575240682
+      - 0.8036458332604364
+      - 0.06976744333902996
+      - 0.007400678346554446
+  - text: Cosia Vida Fres
+    confidence: 1
+    bbox:
+      - 0.5090439266880165
+      - 0.8328125000754539
+      - 0.07751938148781101
+      - 0.005850290507078193
+  - text: Mexlean exlll
+    confidence: 1
+    bbox:
+      - 0.5090439280010001
+      - 0.8385416664975414
+      - 0.06459948221842449
+      - 0.008854166666666718
+  - text: MeX сам
+    confidence: 0.3
+    bbox:
+      - 0.5090439283408047
+      - 0.8488372093431256
+      - 0.03359172962330015
+      - 0.0029069766402244346
+  - text: "* oficerd"
+    confidence: 0.5
+    bbox:
+      - 0.2403100778921858
+      - 0.9010416667419145
+      - 0.05426356350934067
+      - 0.007388565689325333
+  - text: UVU Campus Tours
+    confidence: 1
+    bbox:
+      - 0.11627906979893902
+      - 0.9067708333789773
+      - 0.0956072348135489
+      - 0.008926841119925144
+  - text: Money success Center
+    confidence: 1
+    bbox:
+      - 0.22739017965103875
+      - 0.9869186048397062
+      - 0.10852713408293546
+      - 0.01162790656089785

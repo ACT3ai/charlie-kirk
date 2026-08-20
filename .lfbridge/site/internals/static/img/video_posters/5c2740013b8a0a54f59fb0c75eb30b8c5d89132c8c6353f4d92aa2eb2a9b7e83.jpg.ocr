@@ -1,0 +1,65 @@
+source: site/internals/static/img/video_posters/5c2740013b8a0a54f59fb0c75eb30b8c5d89132c8c6353f4d92aa2eb2a9b7e83.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:53:28.974Z
+kind: image
+language: en-US
+text: |-
+  12;04;03;02
+  On September 10, 2025
+  Adam Bartholomew began
+  livestreaming from Utah Valley
+  University at 12:04pm local
+  time...
+  CROWDSOURCE THE TRUTH
+blocks:
+  - text: 12;04;03;02
+    confidence: 1
+    bbox:
+      - 0.7703488403651605
+      - 0.07751938082398402
+      - 0.21947673797607414
+      - 0.07751937866210945
+  - text: On September 10, 2025
+    confidence: 1
+    bbox:
+      - 0.048998261625514204
+      - 0.1806005012187415
+      - 0.6693531036376953
+      - 0.12462070888943155
+  - text: Adam Bartholomew began
+    confidence: 1
+    bbox:
+      - 0.04796513076245681
+      - 0.29666666494216964
+      - 0.7616278839111328
+      - 0.10901808844672312
+  - text: livestreaming from Utah Valley
+    confidence: 1
+    bbox:
+      - 0.04215115201747224
+      - 0.4031007760917039
+      - 0.8822674560546875
+      - 0.11627906799316401
+  - text: University at 12:04pm local
+    confidence: 1
+    bbox:
+      - 0.050872107331713184
+      - 0.5188888869404197
+      - 0.7703488159179687
+      - 0.11444444444444446
+  - text: time...
+    confidence: 1
+    bbox:
+      - 0.04408847094643329
+      - 0.6311889372299045
+      - 0.18373641967773438
+      - 0.10446610344780816
+  - text: CROWDSOURCE THE TRUTH
+    confidence: 1
+    bbox:
+      - 0.016666681882324178
+      - 0.8962962956296295
+      - 0.4166666412353516
+      - 0.06703703774346248

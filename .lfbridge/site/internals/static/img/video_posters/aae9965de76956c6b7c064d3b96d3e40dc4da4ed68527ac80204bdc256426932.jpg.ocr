@@ -1,0 +1,49 @@
+source: site/internals/static/img/video_posters/aae9965de76956c6b7c064d3b96d3e40dc4da4ed68527ac80204bdc256426932.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:53:47.533Z
+kind: image
+language: en-US
+text: |-
+  SINCE
+  1991
+  COWBOY'S
+  SMOREROUSE
+  PANGUITCH, UTAH
+blocks:
+  - text: SINCE
+    confidence: 1
+    bbox:
+      - 0.2927364889405168
+      - 0.23490991072003198
+      - 0.05481418371200564
+      - 0.046021016438802076
+  - text: "1991"
+    confidence: 1
+    bbox:
+      - 0.5318014699244735
+      - 0.22096405170047217
+      - 0.04109375178813934
+      - 0.03285947905646436
+  - text: COWBOY'S
+    confidence: 1
+    bbox:
+      - 0.29610753752342983
+      - 0.286052261870691
+      - 0.10796942710876462
+      - 0.06912733183966746
+  - text: SMOREROUSE
+    confidence: 1
+    bbox:
+      - 0.4578125006640625
+      - 0.2749999999166667
+      - 0.13281250000000006
+      - 0.05555555555555558
+  - text: PANGUITCH, UTAH
+    confidence: 1
+    bbox:
+      - 0.36249999820312506
+      - 0.3500000003472221
+      - 0.14375000000000004
+      - 0.04444444444444451

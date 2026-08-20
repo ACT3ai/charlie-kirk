@@ -1,0 +1,49 @@
+source: site/internals/static/img/evidence/eadb7f55947b27d4d0e284a6205007fdcb9e3c74a6439344d67e9c16a94e86e9.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:52:21.815Z
+kind: image
+language: en-US
+text: |-
+  A PLACE
+  FOR YOU
+  UVU
+  A PLACE
+  FOR YOU
+blocks:
+  - text: A PLACE
+    confidence: 1
+    bbox:
+      - 0.2349020074361375
+      - 0.4016399477917979
+      - 0.06519598642985028
+      - 0.021164548661973703
+  - text: FOR YOU
+    confidence: 1
+    bbox:
+      - 0.23830262265423444
+      - 0.4242836537879715
+      - 0.06506142298380532
+      - 0.022543805440267017
+  - text: UVU
+    confidence: 0.5
+    bbox:
+      - 0.46333333365625
+      - 0.41555555544444456
+      - 0.051666666666666694
+      - 0.026666666666666616
+  - text: A PLACE
+    confidence: 1
+    bbox:
+      - 0.6300000004722222
+      - 0.41555555581481485
+      - 0.03166666666666662
+      - 0.015555555555555545
+  - text: FOR YOU
+    confidence: 1
+    bbox:
+      - 0.6266666662083333
+      - 0.4333333334166667
+      - 0.036666666666666736
+      - 0.015555555555555545

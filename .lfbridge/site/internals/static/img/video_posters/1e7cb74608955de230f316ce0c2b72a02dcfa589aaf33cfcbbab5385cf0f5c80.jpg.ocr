@@ -1,0 +1,33 @@
+source: site/internals/static/img/video_posters/1e7cb74608955de230f316ce0c2b72a02dcfa589aaf33cfcbbab5385cf0f5c80.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:53:13.304Z
+kind: image
+language: en-US
+text: |-
+  MER LAN
+  COMEHAC!
+  PROVE ME WAL
+blocks:
+  - text: MER LAN
+    confidence: 1
+    bbox:
+      - 0.740001227837767
+      - 0.3159357076134337
+      - 0.17329942955161037
+      - 0.07646191914876299
+  - text: COMEHAC!
+    confidence: 0.5
+    bbox:
+      - 0.7462905086218068
+      - 0.3721928320788086
+      - 0.1939431496386258
+      - 0.08273665110270179
+  - text: PROVE ME WAL
+    confidence: 1
+    bbox:
+      - 0.5731132057446091
+      - 0.5333333336904763
+      - 0.25235849056603776
+      - 0.09166666666666667

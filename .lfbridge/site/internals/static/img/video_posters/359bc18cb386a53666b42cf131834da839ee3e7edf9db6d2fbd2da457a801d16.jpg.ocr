@@ -1,0 +1,89 @@
+source: site/internals/static/img/video_posters/359bc18cb386a53666b42cf131834da839ee3e7edf9db6d2fbd2da457a801d16.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:53:18.434Z
+kind: image
+language: en-US
+text: |-
+  DRIEFCT
+  CONS
+  'ON
+  I am under a NDA so l am
+  not able to share all of the
+  information however I can
+  share certain things and
+  I'm going to. For Charlie.
+  TikTok
+  © joshisdyin
+blocks:
+  - text: DRIEFCT
+    confidence: 0.5
+    bbox:
+      - 0.8268733834015446
+      - 0.04796511620326083
+      - 0.06976744333902996
+      - 0.017441860834757406
+  - text: CONS
+    confidence: 1
+    bbox:
+      - 0.8139534889345833
+      - 0.06540697689396968
+      - 0.04392764833238383
+      - 0.01162790656089785
+  - text: "'ON"
+    confidence: 1
+    bbox:
+      - 0.8888888894606254
+      - 0.06540697689396968
+      - 0.028423772034821715
+      - 0.01162790656089785
+  - text: I am under a NDA so l am
+    confidence: 1
+    bbox:
+      - 0.09629630296296288
+      - 0.1333333331944444
+      - 0.8
+      - 0.04166666666666674
+  - text: not able to share all of the
+    confidence: 1
+    bbox:
+      - 0.09043929870630399
+      - 0.18313953497875168
+      - 0.819121410228588
+      - 0.03197674353917446
+  - text: information however I can
+    confidence: 1
+    bbox:
+      - 0.08010337031561221
+      - 0.23110465152775495
+      - 0.8320413094979745
+      - 0.031976743539174346
+  - text: share certain things and
+    confidence: 1
+    bbox:
+      - 0.11886307097658523
+      - 0.2790697673063296
+      - 0.7571059050383391
+      - 0.03924418687820441
+  - text: I'm going to. For Charlie.
+    confidence: 1
+    bbox:
+      - 0.08888887888888916
+      - 0.3250000000520833
+      - 0.7999999999999999
+      - 0.04583333333333328
+  - text: TikTok
+    confidence: 1
+    bbox:
+      - 0.01033592054655746
+      - 0.5072674422377298
+      - 0.1317829414650246
+      - 0.01889534791310632
+  - text: © joshisdyin
+    confidence: 1
+    bbox:
+      - 0.020501421992832503
+      - 0.5270811396530183
+      - 0.16829948425292968
+      - 0.018512139717737797

@@ -1,0 +1,265 @@
+source: site/internals/static/img/evidence/ef1901e6187b50127c8524ada294af83e707975dc54db80d803be063592de915.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:52:34.568Z
+kind: image
+language: en-US
+text: |-
+  1984
+  @TheOfficial1984
+  Did you know the ADL is assigning your social credit score on X using
+  machine learning and neural networks created at Uc Berkley D-Lab?
+  Online Hate Index V3 (OHI V3)
+  It can identity you by your voice from analyzing spaces
+  It flags the content.
+  Israeli intelligence removes it
+  3. Hate Speech Classification with OHI V3:
+  • The transcribed text is fed into OHI V3's core
+  model, a fine-tuned transformer-based neural
+  network (built on architectures like BERT or
+  RoBERTa). The model evaluates:
+  • Semantic Analysis: Detects implicit bias,
+  dog-whistles (e.g., coded references to
+  conspiracy theories), and intersectional hate
+  (e.g., antisemitism combined with racism).
+  • Contextual Scoring: Considers surrounding
+  dialogue; isolated phrases are cross-
+  referenced with the full transcript to avoid
+  misclassification.
+  • Thresholding: Content scoring above 0.9
+  (high confidence) triggers alerts. V3
+  improves on prior versions by incorporating
+  multilingual support (e.g., Arabic, Spanish)
+  and reducing bias against non-English
+  dialects.
+  • Outputs include severity levels (e.g., "mild
+  harassment" vs. "direct incitement") and
+  recommendations for moderation, such as de-
+  amplitication or account suspension.
+  G.••
+blocks:
+  - text: "1984"
+    confidence: 1
+    bbox:
+      - 0.08860230308051234
+      - 0.01883418568198114
+      - 0.06379262503091393
+      - 0.011750233173370317
+  - text: "@TheOfficial1984"
+    confidence: 1
+    bbox:
+      - 0.0914127427617082
+      - 0.03488372086429148
+      - 0.20221606167879974
+      - 0.013081395626068137
+  - text: Did you know the ADL is assigning your social credit score on X using
+    confidence: 1
+    bbox:
+      - 0.013850423022978328
+      - 0.06534090909241375
+      - 0.8698060667359984
+      - 0.01605443954467778
+  - text: machine learning and neural networks created at Uc Berkley D-Lab?
+    confidence: 1
+    bbox:
+      - 0.013850418328764701
+      - 0.08409090923919194
+      - 0.858725741828159
+      - 0.017653276703574416
+  - text: Online Hate Index V3 (OHI V3)
+    confidence: 1
+    bbox:
+      - 0.013850417522668579
+      - 0.12499999991002231
+      - 0.38227147354192037
+      - 0.01598837213082749
+  - text: It can identity you by your voice from analyzing spaces
+    confidence: 1
+    bbox:
+      - 0.011080319565652912
+      - 0.16704545479068167
+      - 0.6897507044144008
+      - 0.016094079884615864
+  - text: It flags the content.
+    confidence: 1
+    bbox:
+      - 0.013850421497378355
+      - 0.20784883758538852
+      - 0.24930747556479976
+      - 0.0145348830656572
+  - text: Israeli intelligence removes it
+    confidence: 1
+    bbox:
+      - 0.008310247377646811
+      - 0.2499999998221133
+      - 0.3739612133471997
+      - 0.01477272727272727
+  - text: "3. Hate Speech Classification with OHI V3:"
+    confidence: 1
+    bbox:
+      - 0.09418281577571906
+      - 0.284659090881887
+      - 0.6149584617449607
+      - 0.017666490511460742
+  - text: • The transcribed text is fed into OHI V3's core
+    confidence: 1
+    bbox:
+      - 0.1717451625136827
+      - 0.3270348839123963
+      - 0.6481994364684794
+      - 0.016146934032440163
+  - text: model, a fine-tuned transformer-based neural
+    confidence: 1
+    bbox:
+      - 0.2018437116859038
+      - 0.35129843467734345
+      - 0.6433718462527056
+      - 0.023051868785511354
+  - text: network (built on architectures like BERT or
+    confidence: 1
+    bbox:
+      - 0.2022160575432527
+      - 0.38352272732213233
+      - 0.6011080390963204
+      - 0.01477272727272727
+  - text: "RoBERTa). The model evaluates:"
+    confidence: 1
+    bbox:
+      - 0.20221607263493388
+      - 0.4113372095979584
+      - 0.4459833582758387
+      - 0.015988371588967043
+  - text: "• Semantic Analysis: Detects implicit bias,"
+    confidence: 1
+    bbox:
+      - 0.24912595511064098
+      - 0.45086785542386265
+      - 0.6070931835091992
+      - 0.020131042870608296
+  - text: dog-whistles (e.g., coded references to
+    confidence: 1
+    bbox:
+      - 0.277008322592424
+      - 0.47954545435966833
+      - 0.5401661860478388
+      - 0.01900105693123566
+  - text: conspiracy theories), and intersectional hate
+    confidence: 1
+    bbox:
+      - 0.27700833460982416
+      - 0.5085227270110318
+      - 0.6177284934303977
+      - 0.017640063437548537
+  - text: (e.g., antisemitism combined with racism).
+    confidence: 1
+    bbox:
+      - 0.27423825210459235
+      - 0.5363372094496754
+      - 0.5927977458739178
+      - 0.017640063437548537
+  - text: "• Contextual Scoring: Considers surrounding"
+    confidence: 1
+    bbox:
+      - 0.2465374219442342
+      - 0.5738636363559024
+      - 0.6426592409868777
+      - 0.017706130851398827
+  - text: dialogue; isolated phrases are cross-
+    confidence: 1
+    bbox:
+      - 0.2770083146113416
+      - 0.6017045452684584
+      - 0.5124653737782399
+      - 0.017613636363636442
+  - text: referenced with the full transcript to avoid
+    confidence: 1
+    bbox:
+      - 0.2770083296831659
+      - 0.6293604652956327
+      - 0.5817174209660781
+      - 0.01609408042647631
+  - text: misclassification.
+    confidence: 1
+    bbox:
+      - 0.2770083131958076
+      - 0.6569767444259621
+      - 0.2465373943378399
+      - 0.015988371588967043
+  - text: "• Thresholding: Content scoring above 0.9"
+    confidence: 1
+    bbox:
+      - 0.24930748130594868
+      - 0.6947674419399856
+      - 0.6011080390963203
+      - 0.017441860112276886
+  - text: (high confidence) triggers alerts. V3
+    confidence: 1
+    bbox:
+      - 0.2770083151150686
+      - 0.7221590911584858
+      - 0.4930747886756798
+      - 0.017666489969600296
+  - text: improves on prior versions by incorporating
+    confidence: 1
+    bbox:
+      - 0.2742382118676814
+      - 0.7500000002248692
+      - 0.6038781368371212
+      - 0.01761363636363633
+  - text: multilingual support (e.g., Arabic, Spanish)
+    confidence: 1
+    bbox:
+      - 0.2770083050171574
+      - 0.7776162792432533
+      - 0.5872576164476799
+      - 0.0189746293154629
+  - text: and reducing bias against non-English
+    confidence: 1
+    bbox:
+      - 0.2770083115583476
+      - 0.8051136362850939
+      - 0.5290858611399993
+      - 0.01761363636363633
+  - text: dialects.
+    confidence: 1
+    bbox:
+      - 0.27689256277082774
+      - 0.8340239424211813
+      - 0.12488523706213217
+      - 0.015091650052504124
+  - text: • Outputs include severity levels (e.g., "mild
+    confidence: 1
+    bbox:
+      - 0.17147375679791882
+      - 0.8731293381982339
+      - 0.607277742195955
+      - 0.023848748207092263
+  - text: harassment" vs. "direct incitement") and
+    confidence: 1
+    bbox:
+      - 0.20221607315056225
+      - 0.9011363633716666
+      - 0.5595567711503991
+      - 0.01892177625135938
+  - text: recommendations for moderation, such as de-
+    confidence: 1
+    bbox:
+      - 0.20221607772143876
+      - 0.9301136360641367
+      - 0.6481994364684794
+      - 0.019014270739121875
+  - text: amplitication or account suspension.
+    confidence: 1
+    bbox:
+      - 0.20221607362907237
+      - 0.9607558142520553
+      - 0.5180055362321598
+      - 0.014812367612665356
+  - text: G.••
+    confidence: 0.5
+    bbox:
+      - 0.8587257638135728
+      - 0.017441860709696333
+      - 0.07756232389639983
+      - 0.0145348830656572

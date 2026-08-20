@@ -1,0 +1,25 @@
+source: site/internals/static/img/video_posters/5b78a68bc6035ad077b791898a9624d377e5be8de845e41f3b5756b34b3613c6.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:53:28.004Z
+kind: image
+language: en-US
+text: |-
+  TouR
+  PROVE ME WRONG 7 PROVE
+blocks:
+  - text: TouR
+    confidence: 1
+    bbox:
+      - 0.9039213218803787
+      - 0.02463644118850028
+      - 0.06335173613572853
+      - 0.034060450394948316
+  - text: PROVE ME WRONG 7 PROVE
+    confidence: 1
+    bbox:
+      - 0.23925216449889264
+      - 0.13156374791759173
+      - 0.7594461552711504
+      - 0.19521055221557615

@@ -1,0 +1,73 @@
+source: site/internals/static/img/evidence/fd2103e1909e21476c168e43ca6948eae01dfd926ceb6dc0f0a16ebc76b57b50.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:52:58.139Z
+kind: image
+language: en-US
+text: |-
+  A PLACE
+  FoR You
+  This video clip is audio only
+  UVU
+  milwaukee
+  ournal sentinel
+  A PLACE
+  FOR YOU
+blocks:
+  - text: A PLACE
+    confidence: 1
+    bbox:
+      - 0.45058139632885064
+      - 0.5607235140519424
+      - 0.03052325487136842
+      - 0.015943152639600888
+  - text: FoR You
+    confidence: 1
+    bbox:
+      - 0.44767441915708145
+      - 0.5710594320233879
+      - 0.033430230617523204
+      - 0.021162790722317193
+  - text: This video clip is audio only
+    confidence: 1
+    bbox:
+      - 0.016666673191162076
+      - 0.8222222215555556
+      - 0.3583333206176758
+      - 0.06666666666666665
+  - text: UVU
+    confidence: 0.5
+    bbox:
+      - 0.569767442178886
+      - 0.565891473323757
+      - 0.034883720874786306
+      - 0.025839792887369817
+  - text: milwaukee
+    confidence: 1
+    bbox:
+      - 0.8401162777212737
+      - 0.05943152426236886
+      - 0.10029069900512688
+      - 0.031007751888698976
+  - text: ournal sentinel
+    confidence: 1
+    bbox:
+      - 0.845930234078133
+      - 0.09777777830156142
+      - 0.13517441749572745
+      - 0.023669250276353693
+  - text: A PLACE
+    confidence: 1
+    bbox:
+      - 0.696220930817715
+      - 0.5655555558083192
+      - 0.029069766998291002
+      - 0.015839792887369808
+  - text: FOR YOU
+    confidence: 1
+    bbox:
+      - 0.6947674421815563
+      - 0.5811111111710462
+      - 0.03197674274444584
+      - 0.013333333333333308

@@ -1,0 +1,65 @@
+source: site/internals/static/img/evidence/eeb41d8d6ea426dab0c15d9ceb654f0dccb05040c0dae4828edcd301a8a73248.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:52:32.530Z
+kind: image
+language: en-US
+text: |-
+  TON
+  The weird dynamics
+  ©MJTruthUltra
+  THE
+  TUCKER
+  CARLSON
+  SHO
+blocks:
+  - text: TON
+    confidence: 1
+    bbox:
+      - 0.52000000035
+      - 0.6775147927514793
+      - 0.03500000000000003
+      - 0.026627218934911268
+  - text: The weird dynamics
+    confidence: 1
+    bbox:
+      - 0.3133333339270833
+      - 0.8875739649408284
+      - 0.3716666666666667
+      - 0.07100591715976334
+  - text: ©MJTruthUltra
+    confidence: 0.5
+    bbox:
+      - 0.8466666675416668
+      - 0.06804733725345169
+      - 0.10499999999999998
+      - 0.032544378698224796
+  - text: THE
+    confidence: 1
+    bbox:
+      - 0.8933333330000001
+      - 0.8668639054240631
+      - 0.020000000000000018
+      - 0.017751479289940808
+  - text: TUCKER
+    confidence: 1
+    bbox:
+      - 0.864953909467376
+      - 0.887149266083341
+      - 0.07675884882609052
+      - 0.02747661545431823
+  - text: CARLSON
+    confidence: 1
+    bbox:
+      - 0.8599112648869591
+      - 0.9133422119094228
+      - 0.08851080576578785
+      - 0.03130374152279469
+  - text: SHO
+    confidence: 1
+    bbox:
+      - 0.8883333335833333
+      - 0.943786982137574
+      - 0.020000000000000018
+      - 0.014792899408283988

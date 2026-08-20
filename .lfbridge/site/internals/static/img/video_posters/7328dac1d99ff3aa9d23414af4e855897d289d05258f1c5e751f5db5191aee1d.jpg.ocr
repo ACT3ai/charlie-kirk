@@ -1,0 +1,81 @@
+source: site/internals/static/img/video_posters/7328dac1d99ff3aa9d23414af4e855897d289d05258f1c5e751f5db5191aee1d.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:53:33.630Z
+kind: image
+language: en-US
+text: |-
+  PROVE ME WRONG PAINE ME WRONG
+  1000
+  PRUVE ME WHOLE, PHUVE HE WRO
+  LAN
+  /CD ЛЕВАС
+  vrety
+  AMER ANd
+  ÄMER
+  RIVEN
+blocks:
+  - text: PROVE ME WRONG PAINE ME WRONG
+    confidence: 1
+    bbox:
+      - 0.16589159774346005
+      - 0.010044762858350875
+      - 0.2930228087279174
+      - 0.2096756258877841
+  - text: "1000"
+    confidence: 1
+    bbox:
+      - 0.8018018013963963
+      - 0.018181818363636415
+      - 0.04054054054054057
+      - 0.025454545454545396
+  - text: PRUVE ME WHOLE, PHUVE HE WRO
+    confidence: 1
+    bbox:
+      - 0.45564071703802356
+      - 0.055731288182773175
+      - 0.5442445084855363
+      - 0.1769567316228693
+  - text: LAN
+    confidence: 1
+    bbox:
+      - 0.4819819822072073
+      - 0.22545454495454553
+      - 0.07207207207207206
+      - 0.039999999999999925
+  - text: /CD ЛЕВАС
+    confidence: 0.3
+    bbox:
+      - 0.38038532776901796
+      - 0.2660306053926811
+      - 0.17953350307705168
+      - 0.10775877519087351
+  - text: vrety
+    confidence: 0.5
+    bbox:
+      - 0.22972972916666667
+      - 0.5090909093636363
+      - 0.04504504504504503
+      - 0.029090909090909167
+  - text: AMER ANd
+    confidence: 0.5
+    bbox:
+      - 0.3355855848777348
+      - 0.5345454537662337
+      - 0.10810810810810811
+      - 0.10909090909090913
+  - text: ÄMER
+    confidence: 1
+    bbox:
+      - 0.6441441437218469
+      - 0.5345454538863635
+      - 0.09009009009009017
+      - 0.10545454545454547
+  - text: RIVEN
+    confidence: 0.3
+    bbox:
+      - 0.7432432425163801
+      - 0.8363636357190082
+      - 0.25450450450450446
+      - 0.14181818181818184

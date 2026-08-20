@@ -1,0 +1,49 @@
+source: site/internals/static/img/evidence/fcd686eae7a3685157da7e9a2c9a0db3ce255508196f779c49f3db5698267863.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:53:03.628Z
+kind: image
+language: en-US
+text: |-
+  PITECT
+  CONS
+  ION
+  d@universehop00
+  1:13 / 1:48 G/x
+blocks:
+  - text: PITECT
+    confidence: 0.3
+    bbox:
+      - 0.9055232560086419
+      - 0.02902374633466287
+      - 0.040697673956553104
+      - 0.031662269072099125
+  - text: CONS
+    confidence: 1
+    bbox:
+      - 0.8953488374313502
+      - 0.06332453840956409
+      - 0.0232558131217957
+      - 0.021108179381399528
+  - text: ION
+    confidence: 1
+    bbox:
+      - 0.9418604654778517
+      - 0.06332453814571193
+      - 0.01598837176958723
+      - 0.021108179381399417
+  - text: d@universehop00
+    confidence: 1
+    bbox:
+      - 0.5014534901578074
+      - 0.9102902374111272
+      - 0.25
+      - 0.06332453814419825
+  - text: 1:13 / 1:48 G/x
+    confidence: 1
+    bbox:
+      - 0.9331395357401028
+      - 0.9786931816600443
+      - 0.031976743539174346
+      - 0.013391250913793451

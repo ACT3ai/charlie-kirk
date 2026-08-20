@@ -1,0 +1,49 @@
+source: site/internals/static/img/video_posters/be47178c8f0de55f9f6ac32263741695c7427c96557545eb19587b8855d11160.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:53:52.171Z
+kind: image
+language: en-US
+text: |-
+  CALL WITH ROOMATE OF ROB HILD
+  CONS
+  ION
+  LIKE I KNOW THAT YOU LOOK LANKY AND TALL
+  LIKE THE GUY IN THE VIDEO
+blocks:
+  - text: CALL WITH ROOMATE OF ROB HILD
+    confidence: 1
+    bbox:
+      - 0.09738371922711153
+      - 0.10555555474833012
+      - 0.558139533996582
+      - 0.054651162889268634
+  - text: CONS
+    confidence: 1
+    bbox:
+      - 0.8691860467891971
+      - 0.1343669250834575
+      - 0.037790696620941144
+      - 0.03875968933105478
+  - text: ION
+    confidence: 1
+    bbox:
+      - 0.9418604648123932
+      - 0.13436692496842262
+      - 0.027616279125213583
+      - 0.036175710890028134
+  - text: LIKE I KNOW THAT YOU LOOK LANKY AND TALL
+    confidence: 1
+    bbox:
+      - 0.11337209697435967
+      - 0.7233333323749078
+      - 0.7601744079589844
+      - 0.05222222222222217
+  - text: LIKE THE GUY IN THE VIDEO
+    confidence: 1
+    bbox:
+      - 0.2834302324929881
+      - 0.7777777781376224
+      - 0.43313953399658206
+      - 0.0490956073337131

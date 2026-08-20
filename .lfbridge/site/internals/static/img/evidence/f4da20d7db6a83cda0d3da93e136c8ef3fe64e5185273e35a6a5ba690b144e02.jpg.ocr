@@ -1,0 +1,49 @@
+source: site/internals/static/img/evidence/f4da20d7db6a83cda0d3da93e136c8ef3fe64e5185273e35a6a5ba690b144e02.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:52:41.870Z
+kind: image
+language: en-US
+text: |-
+  Environmental
+  Technology Building
+  & Charlie
+  & Shooting Position
+  & Stairs
+blocks:
+  - text: Environmental
+    confidence: 1
+    bbox:
+      - 0.7868217062984496
+      - 0.07371794899839745
+      - 0.1472868217054264
+      - 0.022435897435897356
+  - text: Technology Building
+    confidence: 1
+    bbox:
+      - 0.7519379828972869
+      - 0.09615384579326924
+      - 0.20542635658914732
+      - 0.028846153846153855
+  - text: "& Charlie"
+    confidence: 1
+    bbox:
+      - 0.5500053669751798
+      - 0.18461667713319396
+      - 0.15192725307257604
+      - 0.03461280083044982
+  - text: "& Shooting Position"
+    confidence: 1
+    bbox:
+      - 0.5186025160681142
+      - 0.2973762009829808
+      - 0.33056625839351683
+      - 0.04637682285064304
+  - text: "& Stairs"
+    confidence: 1
+    bbox:
+      - 0.27519379738372096
+      - 0.8237179488514957
+      - 0.12790697674418605
+      - 0.028846153846153855

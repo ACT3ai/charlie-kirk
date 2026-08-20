@@ -1,0 +1,33 @@
+source: site/internals/static/img/video_posters/674578b5b635a24f24a6ddef983c1bbef2f4e1a0126ee4b25beaf042a870c96c.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:53:31.078Z
+kind: image
+language: en-US
+text: |-
+  @ValVenisEnt
+  www.TopShelfAnarchy.com
+  THE
+blocks:
+  - text: "@ValVenisEnt"
+    confidence: 0.5
+    bbox:
+      - 0.1322674459478334
+      - 0.8320413437976137
+      - 0.1976744079589844
+      - 0.0490956073337131
+  - text: www.TopShelfAnarchy.com
+    confidence: 0.5
+    bbox:
+      - 0.030523263124876934
+      - 0.9018087866819398
+      - 0.3982558059692383
+      - 0.05684754265679259
+  - text: THE
+    confidence: 0.5
+    bbox:
+      - 0.8037790691884844
+      - 0.6692506470599602
+      - 0.05959302425384516
+      - 0.0826873355441623

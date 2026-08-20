@@ -1,0 +1,25 @@
+source: site/internals/static/img/evidence/f8df7210024598d9066f8da67ccbd897b2bca311fcf27c74619cbcff02cb594f.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:52:46.429Z
+kind: image
+language: en-US
+text: |-
+  YOU DON'T GET
+  ASSASSINATED FOR LYING.
+blocks:
+  - text: YOU DON'T GET
+    confidence: 1
+    bbox:
+      - 0.21003135265561473
+      - 0.21923828047709193
+      - 0.5862068787908754
+      - 0.03369140625
+  - text: ASSASSINATED FOR LYING.
+    confidence: 1
+    bbox:
+      - 0.01880879781331782
+      - 0.2587209297581716
+      - 0.9686520089580037
+      - 0.03343023359775543

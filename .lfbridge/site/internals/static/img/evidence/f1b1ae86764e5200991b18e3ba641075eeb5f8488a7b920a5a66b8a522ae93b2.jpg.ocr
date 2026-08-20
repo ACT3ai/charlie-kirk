@@ -1,0 +1,89 @@
+source: site/internals/static/img/evidence/f1b1ae86764e5200991b18e3ba641075eeb5f8488a7b920a5a66b8a522ae93b2.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:52:38.255Z
+kind: image
+language: en-US
+text: |-
+  32 CAVITY PHASED
+  ARRAY RADAR
+  ELECTRONIC ASSAULT
+  WEAPON
+  PHASED ARRAY VEHICLE RADAR
+  SCANNER
+  SENSYS - 2.4 GHz WIFI MAC VEHICLE
+  PASSENGER TRACKER
+  STEROSCOPIC NIR IONIZING RADIATION
+  BRAIN SCANNER
+blocks:
+  - text: 32 CAVITY PHASED
+    confidence: 1
+    bbox:
+      - 0.013409960043787642
+      - 0.5000000001524391
+      - 0.22988505747126436
+      - 0.03963414634146345
+  - text: ARRAY RADAR
+    confidence: 1
+    bbox:
+      - 0.015325671623563198
+      - 0.5518292681592988
+      - 0.18007662835249041
+      - 0.03963414634146345
+  - text: ELECTRONIC ASSAULT
+    confidence: 1
+    bbox:
+      - 0.015325672892720273
+      - 0.6067073174695121
+      - 0.27777777777777773
+      - 0.03963414634146345
+  - text: WEAPON
+    confidence: 1
+    bbox:
+      - 0.015227357320106234
+      - 0.6578388927706028
+      - 0.10939202728856112
+      - 0.04102953178126645
+  - text: PHASED ARRAY VEHICLE RADAR
+    confidence: 1
+    bbox:
+      - 0.45210728252599897
+      - 0.10365853643292688
+      - 0.39655172413793105
+      - 0.03963414634146334
+  - text: SCANNER
+    confidence: 1
+    bbox:
+      - 0.4501915698595147
+      - 0.15853658551829264
+      - 0.12260536398467436
+      - 0.03658536585365857
+  - text: SENSYS - 2.4 GHz WIFI MAC VEHICLE
+    confidence: 1
+    bbox:
+      - 0.4375000161092253
+      - 0.42378048724268913
+      - 0.44166664328154936
+      - 0.04641818709489787
+  - text: PASSENGER TRACKER
+    confidence: 1
+    bbox:
+      - 0.43869731628352493
+      - 0.47865853675685976
+      - 0.27586206896551724
+      - 0.03963414634146345
+  - text: STEROSCOPIC NIR IONIZING RADIATION
+    confidence: 1
+    bbox:
+      - 0.5038314136813539
+      - 0.722560975762195
+      - 0.4731800766283525
+      - 0.04268292682926833
+  - text: BRAIN SCANNER
+    confidence: 1
+    bbox:
+      - 0.5057471253192849
+      - 0.7774390245426831
+      - 0.20114942528735624
+      - 0.03963414634146334

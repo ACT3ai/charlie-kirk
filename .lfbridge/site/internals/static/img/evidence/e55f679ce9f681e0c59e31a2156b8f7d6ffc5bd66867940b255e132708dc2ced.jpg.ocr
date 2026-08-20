@@ -1,0 +1,97 @@
+source: site/internals/static/img/evidence/e55f679ce9f681e0c59e31a2156b8f7d6ffc5bd66867940b255e132708dc2ced.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:52:13.340Z
+kind: image
+language: en-US
+text: |-
+  Suspect's arrival
+  Rooftop access
+  Rifle found
+  Sniper's perch
+  Charlie Kirk
+  Bullet's path
+  Suspect's movements
+  An approximation of the suspected movements of Tyler Robinson,
+  Charlie Kirk's alleged assassin, based on court documents, video from
+  the scene and conversations with law enforcement sources. (Google
+  Maps, Fox News Digital)
+blocks:
+  - text: Suspect's arrival
+    confidence: 1
+    bbox:
+      - 0.7538940805555554
+      - 0.37777777797979795
+      - 0.1339563862928349
+      - 0.024242424242424288
+  - text: Rooftop access
+    confidence: 1
+    bbox:
+      - 0.753539669104164
+      - 0.4255978392400488
+      - 0.1283468917894215
+      - 0.02563924596767242
+  - text: Rifle found
+    confidence: 1
+    bbox:
+      - 0.7523364476635513
+      - 0.4727272728080807
+      - 0.09345794392523366
+      - 0.024242424242424288
+  - text: Sniper's perch
+    confidence: 1
+    bbox:
+      - 0.7522404697758642
+      - 0.5164795738402393
+      - 0.11857202119916399
+      - 0.029667114489006274
+  - text: Charlie Kirk
+    confidence: 1
+    bbox:
+      - 0.7474463581429277
+      - 0.565989819792471
+      - 0.10479575896931592
+      - 0.02761631878939541
+  - text: Bullet's path
+    confidence: 1
+    bbox:
+      - 0.7490740789763575
+      - 0.606965787561399
+      - 0.10465557775764822
+      - 0.026472465438072135
+  - text: Suspect's movements
+    confidence: 1
+    bbox:
+      - 0.7538940792679129
+      - 0.6404040401414142
+      - 0.17912772585669778
+      - 0.02626262626262621
+  - text: An approximation of the suspected movements of Tyler Robinson,
+    confidence: 1
+    bbox:
+      - 0.037383183489096576
+      - 0.7616161619191919
+      - 0.8348909657320873
+      - 0.042424242424242475
+  - text: Charlie Kirk's alleged assassin, based on court documents, video from
+    confidence: 1
+    bbox:
+      - 0.03738318307048278
+      - 0.8141414140277778
+      - 0.8800623052959501
+      - 0.042424242424242364
+  - text: the scene and conversations with law enforcement sources. (Google
+    confidence: 1
+    bbox:
+      - 0.03569987746005646
+      - 0.8638530906755559
+      - 0.8631894120546146
+      - 0.044011071715692185
+  - text: Maps, Fox News Digital)
+    confidence: 1
+    bbox:
+      - 0.03738318011422632
+      - 0.9232323229797978
+      - 0.3052959501557632
+      - 0.042424242424242475

@@ -1,0 +1,65 @@
+source: site/internals/static/img/video_posters/481359b92e495d375318d58be5d89b8b745b801a381366d87c1381960e6db1a2.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:53:23.780Z
+kind: image
+language: en-US
+text: |-
+  CONS
+  ECT
+  ION
+  Turning point was
+  infiltrated from the start
+  TikTok
+  @ joshisdyin
+blocks:
+  - text: CONS
+    confidence: 1
+    bbox:
+      - 0.7700258406840987
+      - 0.10755813928546365
+      - 0.05684754406964332
+      - 0.017441860834757517
+  - text: ECT
+    confidence: 0.5
+    bbox:
+      - 0.8449612411181698
+      - 0.09011627924602039
+      - 0.04651162536055953
+      - 0.015988371769587117
+  - text: ION
+    confidence: 1
+    bbox:
+      - 0.881136950851351
+      - 0.107558139536718
+      - 0.03617571018360277
+      - 0.01598837176958723
+  - text: Turning point was
+    confidence: 1
+    bbox:
+      - 0.21188629537697332
+      - 0.19622092948967695
+      - 0.5710594459816262
+      - 0.0392441868782043
+  - text: infiltrated from the start
+    confidence: 1
+    bbox:
+      - 0.10370369740740747
+      - 0.24166666629166667
+      - 0.7777777777777778
+      - 0.03749999999999998
+  - text: TikTok
+    confidence: 1
+    bbox:
+      - 0.015459767657028967
+      - 0.50717349141138
+      - 0.126703205815068
+      - 0.019083249568939142
+  - text: "@ joshisdyin"
+    confidence: 1
+    bbox:
+      - 0.0152443896077416
+      - 0.5239861210566337
+      - 0.17364558467158564
+      - 0.021795198321342468

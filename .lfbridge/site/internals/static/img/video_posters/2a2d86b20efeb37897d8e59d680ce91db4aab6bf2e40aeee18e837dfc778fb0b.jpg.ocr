@@ -1,0 +1,41 @@
+source: site/internals/static/img/video_posters/2a2d86b20efeb37897d8e59d680ce91db4aab6bf2e40aeee18e837dfc778fb0b.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:53:16.118Z
+kind: image
+language: en-US
+text: |-
+  1/182
+  yrely
+  47
+  E
+blocks:
+  - text: 1/182
+    confidence: 1
+    bbox:
+      - 1.5801354265675247e-9
+      - 0.010291595132933096
+      - 0.2528216704288939
+      - 0.054888507718696355
+  - text: yrely
+    confidence: 0.3
+    bbox:
+      - 0.8623024826185102
+      - 0.2984562608551825
+      - 0.06320541760722354
+      - 0.029159519725557526
+  - text: "47"
+    confidence: 1
+    bbox:
+      - 0.3431151238148984
+      - 0.6535162947855918
+      - 0.05191873589164786
+      - 0.02401372212692965
+  - text: E
+    confidence: 1
+    bbox:
+      - 7.054175653441195e-11
+      - 0.7632933107204116
+      - 0.03386004514672686
+      - 0.04116638078902235

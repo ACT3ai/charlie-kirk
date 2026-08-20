@@ -1,0 +1,497 @@
+source: site/internals/static/img/evidence/e6dba55532eda10928c59604a34a0aa88f7654033f7bd818816e572e179c8709.png
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:52:16.216Z
+kind: image
+language: en-US
+text: >-
+  UT TIME
+
+  EVENT
+
+  NOTES
+
+  Sept 11
+
+  12:25 PM BIG BANG
+
+  12:39 PM FBI assets were on the scene (Kosh Patel)
+
+  *1014 just northeast of the Lossee building. Forensics has recovered a
+  weapon...the forensics team has located
+
+  a weapon just across the street from Lot [Mike?] 20 near the Lossee building.
+
+  5:40 PM Radio says they found a weapon near Losee Center
+
+  Press conference (Beau Mason) // Weapon found "high powered rifle"... Not
+  releasing video footage at this time,
+
+  7:00 AM working through technologies to identify suspic... will release to
+  media if unsuccessful
+
+  9:58 AM First set of FBI photos released
+
+  10:44 AM FBI announces $100k prize for tips leading to an arrest
+
+  5:00 PM Kash and deputy arrive on scene in Utah
+
+  5:01 PM CNN Erin Burnett says "rapid developments" in CK case
+
+  5:30 PM AFZ lands in Phoenix w/ CK body
+
+  6:17 PM Additional photos released by FBI
+
+  6:25 PM Possibly already in custody?... (*6:25pm* Miranda timestamp on court
+  docs)
+
+  Several hours before alleged arrest time
+
+  Authorities/Patel •> press conference... show new photos and video of the
+  suspect. He also says Utah is
+
+  preparing affidavits to pursue the death penalty for when the suspect is
+  caught.
+
+  Washington County Sheriff Nate Brooksby receives a phone call from a retired
+  deputy friend... deputy informs
+
+  8:02 PM Brooksby he knows the shooter and that he is in Washington County.
+
+  8:04 PM Brooksby <> Friend phone call ends
+
+  8:05 PM 40 second phone call with Sheriff Mike Smith (Utah County)
+
+  Mike Smith is present at press conference
+
+  Retired deputy drives Tyler and his parents to the Washington County Sheriff's
+  office.
+
+  ~8:35 PM Tyler waits in a room for 2.5 hours without being interviewed.
+
+  2.5 hours from this point would be ~11PM
+
+  9:25 PM OFFICIAL "33 HOUR" MARK
+
+  The official "first" arrest time recorded on the inmate booking sheet by State
+  Bureau of Investigation (SBI) officer Arresting officer was in Utah County
+  (~3.5 hours away)... would've had to leave by AT LEAST 6:30pm to arres
+
+  Brian Davis at the Washington County office // "Arrest Agency: Other... Arrest
+  Location: Outside Utah County"
+
+  TR @ 10pm in Washington County
+
+  Sept 12
+
+  1:58 AM TR officially booked into system at Washington County
+
+  4:00 AM TR is formally arrested with Utah County
+
+  6:03 AM Trump announces on Fox & Friends... suspect in custody; found out 5min
+  before show
+
+  7:00 AM Press conference with Patel and Cox scheduled to start, delayed to
+  7:30
+
+  7:18 AM Utah County Probable Cause entered in system
+
+  7:50 AM Press conference delayed again
+
+  7:52 AM Press conference with Patel and Cox officially starts
+
+  7:58 AM TR officially booked into Utah County system
+
+  Gov Cox announces "We got him", names TR and reads probable cause affidavit
+  verbatim, discussing evidence,
+
+  cannot confirm if TR is cooperating with authorities; "There is one person
+  responsible for what happened here,
+
+  and that person is now in custody and will be charged soon"
+
+  Why would law enforcement wait almost an entire day after getting custody, and
+  10 hours after publicly
+
+  8:15 AM announcing him as the official suspect, before even speaking with him?
+
+  6:25 PM Kosh Patel press conference?
+
+  Possible time of Miranda Rights? Doesn't make sense... 10 hours AFTER Gov Cox
+  and getting custody, and 10
+
+  hours after publicly announcing him as the official suspect, before even
+  speaking with him?
+blocks:
+  - text: UT TIME
+    confidence: 1
+    bbox:
+      - -6.922257499193332e-10
+      - 0.01049868779527563
+      - 0.04153354632587859
+      - 0.013123359580052396
+  - text: EVENT
+    confidence: 1
+    bbox:
+      - 0.2715654951277955
+      - 0.010498687629506787
+      - 0.030351437699680517
+      - 0.013123359580052507
+  - text: NOTES
+    confidence: 1
+    bbox:
+      - 0.749201277879393
+      - 0.010498687631233627
+      - 0.033546325878594296
+      - 0.013123359580052507
+  - text: Sept 11
+    confidence: 1
+    bbox:
+      - 0.0015974435303514568
+      - 0.05774278223972007
+      - 0.033546325878594255
+      - 0.015748031496062964
+  - text: 12:25 PM BIG BANG
+    confidence: 1
+    bbox:
+      - 0.0015974425718850345
+      - 0.08136482952755908
+      - 0.09105431309904154
+      - 0.013123359580052507
+  - text: 12:39 PM FBI assets were on the scene (Kosh Patel)
+    confidence: 1
+    bbox:
+      - -3.780617559871094e-9
+      - 0.10498687672790896
+      - 0.2268370607028754
+      - 0.015748031496063075
+  - text: "*1014 just northeast of the Lossee building. Forensics has recovered a
+      weapon...the forensics team has located"
+    confidence: 1
+    bbox:
+      - 0.5287539877396168
+      - 0.12860892395013124
+      - 0.4696485623003195
+      - 0.015748031496062964
+  - text: a weapon just across the street from Lot [Mike?] 20 near the Lossee
+      building.
+    confidence: 1
+    bbox:
+      - 0.5271565550053245
+      - 0.14435695538057747
+      - 0.32907348242811507
+      - 0.015748031496062964
+  - text: 5:40 PM Radio says they found a weapon near Losee Center
+    confidence: 1
+    bbox:
+      - 0.007987217232428198
+      - 0.14435695547900262
+      - 0.2571884984025559
+      - 0.018372703412073532
+  - text: Press conference (Beau Mason) // Weapon found "high powered rifle"... Not
+      releasing video footage at this time,
+    confidence: 1
+    bbox:
+      - 0.0431309983493075
+      - 0.16797900258092735
+      - 0.476038338658147
+      - 0.018372703412073532
+  - text: 7:00 AM working through technologies to identify suspic... will release to
+      media if unsuccessful
+    confidence: 1
+    bbox:
+      - 0.007987239397328622
+      - 0.1863517058617673
+      - 0.40575077434698237
+      - 0.015748031496062964
+  - text: 9:58 AM First set of FBI photos released
+    confidence: 1
+    bbox:
+      - 0.007987223402555803
+      - 0.20997375310586175
+      - 0.17731629392971246
+      - 0.015748031496062964
+  - text: 10:44 AM FBI announces $100k prize for tips leading to an arrest
+    confidence: 1
+    bbox:
+      - 0.0015974394302450893
+      - 0.23097112874015746
+      - 0.27955271565495204
+      - 0.018372703412073532
+  - text: 5:00 PM Kash and deputy arrive on scene in Utah
+    confidence: 1
+    bbox:
+      - 0.007987224041533424
+      - 0.25721784759405075
+      - 0.2156549520766773
+      - 0.015748031496062964
+  - text: 5:01 PM CNN Erin Burnett says "rapid developments" in CK case
+    confidence: 1
+    bbox:
+      - 0.007987223921725158
+      - 0.2782152229986876
+      - 0.2779552715654952
+      - 0.018372703412073532
+  - text: 5:30 PM AFZ lands in Phoenix w/ CK body
+    confidence: 1
+    bbox:
+      - 0.007987222723642117
+      - 0.3044619421259842
+      - 0.18210862619808307
+      - 0.015748031496062964
+  - text: 6:17 PM Additional photos released by FBI
+    confidence: 1
+    bbox:
+      - 0.007987229656065815
+      - 0.3280839893263342
+      - 0.18690094627892245
+      - 0.015748031496062964
+  - text: 6:25 PM Possibly already in custody?... (*6:25pm* Miranda timestamp on
+      court docs)
+    confidence: 1
+    bbox:
+      - 0.00798721593450489
+      - 0.35170603687664037
+      - 0.36102236421725237
+      - 0.015748031496063075
+  - text: Several hours before alleged arrest time
+    confidence: 1
+    bbox:
+      - 0.5287539964589988
+      - 0.3517060366579178
+      - 0.17092651757188493
+      - 0.015748031496063075
+  - text: Authorities/Patel •> press conference... show new photos and video of the
+      suspect. He also says Utah is
+    confidence: 1
+    bbox:
+      - 0.04632588599573992
+      - 0.37532808390201233
+      - 0.4440894568690096
+      - 0.015748031496062964
+  - text: preparing affidavits to pursue the death penalty for when the suspect is
+      caught.
+    confidence: 1
+    bbox:
+      - 0.04472842883386604
+      - 0.391076115704287
+      - 0.34025559105431313
+      - 0.01837270341207342
+  - text: Washington County Sheriff Nate Brooksby receives a phone call from a
+      retired deputy friend... deputy informs
+    confidence: 1
+    bbox:
+      - 0.04472843083067101
+      - 0.4146981629593176
+      - 0.4664536741214057
+      - 0.01837270341207342
+  - text: 8:02 PM Brooksby he knows the shooter and that he is in Washington County.
+    confidence: 1
+    bbox:
+      - 0.007987224620606935
+      - 0.43307086607611556
+      - 0.33386581469648563
+      - 0.015748031496062964
+  - text: 8:04 PM Brooksby <> Friend phone call ends
+    confidence: 1
+    bbox:
+      - 0.007987222883386517
+      - 0.45669291325459316
+      - 0.19488817891373802
+      - 0.015748031496063075
+  - text: 8:05 PM 40 second phone call with Sheriff Mike Smith (Utah County)
+    confidence: 1
+    bbox:
+      - 0.007987221265974433
+      - 0.477690288484252
+      - 0.292332268370607
+      - 0.018372703412073532
+  - text: Mike Smith is present at press conference
+    confidence: 1
+    bbox:
+      - 0.5287539958466453
+      - 0.4803149604986877
+      - 0.17891373801916932
+      - 0.015748031496062964
+  - text: Retired deputy drives Tyler and his parents to the Washington County
+      Sheriff's office.
+    confidence: 1
+    bbox:
+      - 0.046325884664536514
+      - 0.5039370077865267
+      - 0.3642172523961661
+      - 0.015748031496062964
+  - text: ~8:35 PM Tyler waits in a room for 2.5 hours without being interviewed.
+    confidence: 1
+    bbox:
+      - 0.001597438951011891
+      - 0.5275590552055993
+      - 0.3083067092651757
+      - 0.015748031496062964
+  - text: 2.5 hours from this point would be ~11PM
+    confidence: 1
+    bbox:
+      - 0.5287539958266773
+      - 0.5275590549868767
+      - 0.1773162939297125
+      - 0.015748031496062964
+  - text: 9:25 PM OFFICIAL "33 HOUR" MARK
+    confidence: 1
+    bbox:
+      - 0.007987220523162931
+      - 0.5511811023687665
+      - 0.16773162939297126
+      - 0.013123359580052507
+  - text: The official "first" arrest time recorded on the inmate booking sheet by
+      State Bureau of Investigation (SBI) officer Arresting officer was in Utah
+      County (~3.5 hours away)... would've had to leave by AT LEAST 6:30pm to
+      arres
+    confidence: 1
+    bbox:
+      - 0.04472841871672044
+      - 0.5748031496937882
+      - 0.9472843450479235
+      - 0.015748031496063075
+  - text: 'Brian Davis at the Washington County office // "Arrest Agency: Other...
+      Arrest Location: Outside Utah County"'
+    confidence: 1
+    bbox:
+      - 0.046325886368476885
+      - 0.5905511808836397
+      - 0.4664536741214057
+      - 0.01837270341207342
+  - text: TR @ 10pm in Washington County
+    confidence: 1
+    bbox:
+      - 0.5255591035742812
+      - 0.5931758530839896
+      - 0.1485623003194888
+      - 0.015748031496062964
+  - text: Sept 12
+    confidence: 1
+    bbox:
+      - 0.003194887759584675
+      - 0.6404199476049869
+      - 0.03354632587859425
+      - 0.013123359580052507
+  - text: 1:58 AM TR officially booked into system at Washington County
+    confidence: 1
+    bbox:
+      - 0.007987217225772184
+      - 0.6614173225284341
+      - 0.27316293929712465
+      - 0.01837270341207342
+  - text: 4:00 AM TR is formally arrested with Utah County
+    confidence: 1
+    bbox:
+      - 0.007987223083067027
+      - 0.6876640418963255
+      - 0.21086261980830667
+      - 0.013123359580052507
+  - text: 6:03 AM Trump announces on Fox & Friends... suspect in custody; found out
+      5min before show
+    confidence: 1
+    bbox:
+      - 0.007987228055475942
+      - 0.7086614176290464
+      - 0.40575077434698237
+      - 0.01837270341207342
+  - text: 7:00 AM Press conference with Patel and Cox scheduled to start, delayed to
+      7:30
+    confidence: 1
+    bbox:
+      - 0.007987226198082885
+      - 0.7349081363517059
+      - 0.3450479233226837
+      - 0.013123359580052507
+  - text: 7:18 AM Utah County Probable Cause entered in system
+    confidence: 1
+    bbox:
+      - 0.007987219462193844
+      - 0.7559055121172353
+      - 0.24121405750798722
+      - 0.018372703412073532
+  - text: 7:50 AM Press conference delayed again
+    confidence: 1
+    bbox:
+      - 0.007987223402555803
+      - 0.7821522308398949
+      - 0.17731629392971246
+      - 0.013123359580052507
+  - text: 7:52 AM Press conference with Patel and Cox officially starts
+    confidence: 1
+    bbox:
+      - 0.007987224813631361
+      - 0.8031496062117236
+      - 0.26198083067092653
+      - 0.015748031496062964
+  - text: 7:58 AM TR officially booked into Utah County system
+    confidence: 1
+    bbox:
+      - 0.007987222177848703
+      - 0.8267716532370953
+      - 0.23162939297124605
+      - 0.01837270341207342
+  - text: Gov Cox announces "We got him", names TR and reads probable cause
+      affidavit verbatim, discussing evidence,
+    confidence: 1
+    bbox:
+      - 0.04632588652822124
+      - 0.850393700743657
+      - 0.47603833865814693
+      - 0.018372703412073532
+  - text: cannot confirm if TR is cooperating with authorities; "There is one person
+      responsible for what happened here,
+    confidence: 1
+    bbox:
+      - 0.04472844238551616
+      - 0.866141732327209
+      - 0.4728434504792332
+      - 0.018372703412073532
+  - text: and that person is now in custody and will be charged soon"
+    confidence: 1
+    bbox:
+      - 0.04472843011182123
+      - 0.8845144358705161
+      - 0.2635782747603834
+      - 0.015748031496062964
+  - text: Why would law enforcement wait almost an entire day after getting custody,
+      and 10 hours after publicly
+    confidence: 1
+    bbox:
+      - 0.04472842903354644
+      - 0.9081364830380577
+      - 0.4376996805111821
+      - 0.018372703412073532
+  - text: 8:15 AM announcing him as the official suspect, before even speaking with
+      him?
+    confidence: 1
+    bbox:
+      - 0.007987226198082885
+      - 0.926509186176728
+      - 0.3450479233226837
+      - 0.015748031496062964
+  - text: 6:25 PM Kosh Patel press conference?
+    confidence: 1
+    bbox:
+      - 0.007987220740149084
+      - 0.9658792653980753
+      - 0.16773162939297126
+      - 0.01837270341207342
+  - text: Possible time of Miranda Rights? Doesn't make sense... 10 hours AFTER Gov
+      Cox and getting custody, and 10
+    confidence: 1
+    bbox:
+      - 0.527156541719915
+      - 0.9501312336832896
+      - 0.46805111821086265
+      - 0.015748031496062964
+  - text: hours after publicly announcing him as the official suspect, before even
+      speaking with him?
+    confidence: 1
+    bbox:
+      - 0.5271565446285944
+      - 0.9685039370734909
+      - 0.39137380191693294
+      - 0.015748031496062964

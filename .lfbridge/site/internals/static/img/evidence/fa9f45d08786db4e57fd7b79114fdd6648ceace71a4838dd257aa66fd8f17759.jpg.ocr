@@ -1,0 +1,89 @@
+source: site/internals/static/img/evidence/fa9f45d08786db4e57fd7b79114fdd6648ceace71a4838dd257aa66fd8f17759.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:52:51.277Z
+kind: image
+language: en-US
+text: |-
+  WAR
+  REPORTER
+  War Reporter
+  @tangentsofwar
+  ...
+  BREAKING: The alleged shooter of Charlie Kirk has been arrested.
+  The weapon reportedly used appears to be a rifle.
+  #CharlieKirk #BreakingNews #Shooting #FBI x.com/tangentsofwar/...
+  1:06 / 1:37 0*
+  K
+blocks:
+  - text: WAR
+    confidence: 1
+    bbox:
+      - 0.041516245730847105
+      - 0.037790698006533674
+      - 0.030685919067788357
+      - 0.007267441341583747
+  - text: REPORTER
+    confidence: 1
+    bbox:
+      - 0.04329682737253292
+      - 0.04495200614307382
+      - 0.057810678830574516
+      - 0.008933196730792181
+  - text: War Reporter
+    confidence: 1
+    bbox:
+      - 0.11728950948353918
+      - 0.027412758557543437
+      - 0.16253289511037428
+      - 0.02075587874427831
+  - text: "@tangentsofwar"
+    confidence: 1
+    bbox:
+      - 0.11913357450110595
+      - 0.053779069686819336
+      - 0.18953068628659675
+      - 0.020348837031400113
+  - text: ...
+    confidence: 1
+    bbox:
+      - 0.9061371863071038
+      - 0.026162790968692007
+      - 0.07220216288519066
+      - 0.018895348125600564
+  - text: "BREAKING: The alleged shooter of Charlie Kirk has been arrested."
+    confidence: 1
+    bbox:
+      - 0.08303250326029736
+      - 0.10026737938264074
+      - 0.8483754408319925
+      - 0.023395721925133728
+  - text: The weapon reportedly used appears to be a rifle.
+    confidence: 1
+    bbox:
+      - 0.037906149401968396
+      - 0.13226744269067536
+      - 0.6425992642526216
+      - 0.02348121984757201
+  - text: "#CharlieKirk #BreakingNews #Shooting #FBI x.com/tangentsofwar/..."
+    confidence: 1
+    bbox:
+      - 0.03599363103744795
+      - 0.19324768839296258
+      - 0.9135694535467712
+      - 0.028303658898501505
+  - text: 1:06 / 1:37 0*
+    confidence: 1
+    bbox:
+      - 0.6064689218351701
+      - 0.9518928913945753
+      - 0.17334374716115553
+      - 0.02353979814498819
+  - text: K
+    confidence: 0.5
+    bbox:
+      - 0.9259927795539175
+      - 0.9622093023430192
+      - 0.014440433527544094
+      - 0.013081395052333633

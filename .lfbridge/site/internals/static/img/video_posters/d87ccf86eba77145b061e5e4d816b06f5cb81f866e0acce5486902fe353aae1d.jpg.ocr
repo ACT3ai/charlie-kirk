@@ -1,0 +1,97 @@
+source: site/internals/static/img/video_posters/d87ccf86eba77145b061e5e4d816b06f5cb81f866e0acce5486902fe353aae1d.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:53:58.660Z
+kind: image
+language: en-US
+text: |-
+  NATI
+  NEWS DE
+  EYEWITNESS:
+  'WHERE HIS
+  HEART IS, IT
+  STARTED GOING
+  RED*
+  It looked right, right where his heart
+  is.
+  CONS
+  TON
+blocks:
+  - text: NATI
+    confidence: 1
+    bbox:
+      - 0.7312661495039348
+      - 0.046511628441702646
+      - 0.09560723481354882
+      - 0.01889534791310632
+  - text: NEWS DE
+    confidence: 1
+    bbox:
+      - 0.7519379830439078
+      - 0.06666666689600909
+      - 0.1214470333523221
+      - 0.01327519367138541
+  - text: "EYEWITNESS:"
+    confidence: 1
+    bbox:
+      - 0.22222223276365777
+      - 0.5406976746877606
+      - 0.47803615993923615
+      - 0.036337208747863725
+  - text: "'WHERE HIS"
+    confidence: 1
+    bbox:
+      - 0.21188630777092668
+      - 0.5712209296884984
+      - 0.42377259996202254
+      - 0.0350290695826212
+  - text: HEART IS, IT
+    confidence: 1
+    bbox:
+      - 0.21951254837038103
+      - 0.6042225718733505
+      - 0.43435991075303815
+      - 0.04155485431353256
+  - text: STARTED GOING
+    confidence: 1
+    bbox:
+      - 0.2148148189629629
+      - 0.6333333329166667
+      - 0.5777777777777777
+      - 0.04166666666666663
+  - text: RED*
+    confidence: 1
+    bbox:
+      - 0.21963824569025558
+      - 0.6671511624937309
+      - 0.18346252441406247
+      - 0.03488372166951492
+  - text: It looked right, right where his heart
+    confidence: 1
+    bbox:
+      - 0.12919898121986323
+      - 0.7354166665532103
+      - 0.7338500976562501
+      - 0.02621124088764193
+  - text: is.
+    confidence: 1
+    bbox:
+      - 0.4677002585422671
+      - 0.7645348835843272
+      - 0.056847544069643374
+      - 0.024709302186965987
+  - text: CONS
+    confidence: 1
+    bbox:
+      - 0.4211886314212506
+      - 0.9244186043936676
+      - 0.056847544069643374
+      - 0.017441860834757517
+  - text: TON
+    confidence: 1
+    bbox:
+      - 0.532299741927913
+      - 0.9244186048855553
+      - 0.041343667772081205
+      - 0.015988371769587117

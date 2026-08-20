@@ -1,0 +1,41 @@
+source: site/internals/static/img/video_posters/d1f167ee3db44aa903079ba8d176aaf45b85ab8d22698f0ed91bf7d8694358dc.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:53:57.327Z
+kind: image
+language: en-US
+text: |-
+  evel 2 - Sais - ME
+  @FaithDrivUr
+  View Sonic
+  MAKES
+blocks:
+  - text: evel 2 - Sais - ME
+    confidence: 1
+    bbox:
+      - 0.5319767440309924
+      - 0.12250000009999995
+      - 0.06540697574615473
+      - 0.025000000000000022
+  - text: "@FaithDrivUr"
+    confidence: 1
+    bbox:
+      - 0.4781976729328244
+      - 0.36749999826552004
+      - 0.3052325630187988
+      - 0.08500000328145996
+  - text: View Sonic
+    confidence: 1
+    bbox:
+      - 0.6333182674525639
+      - 0.768756788668739
+      - 0.10837272644042972
+      - 0.03704056073260564
+  - text: MAKES
+    confidence: 1
+    bbox:
+      - 0.40811803074749087
+      - 0.825294899217096
+      - 0.18667091369628908
+      - 0.0844102018622942

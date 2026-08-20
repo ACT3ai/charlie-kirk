@@ -1,0 +1,105 @@
+source: site/internals/static/img/video_posters/bee7ac05382ae1b10d706c6a782985cb45ac7a6cd2c523d25f76a24354938a8a.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:53:52.622Z
+kind: image
+language: en-US
+text: |-
+  THE OTHER "SUSPEC HIFLES
+  WHOSE BEEN ARRESTED.
+  YOU CAN SEE THE
+  AT THE 1:14 MARK
+  Orem, Utah
+  10 Sept 2025
+  YUMI
+  PrOVO
+  20L1g)
+  I think they just found the guy
+  RED LINES
+  right outside the carry on
+blocks:
+  - text: THE OTHER "SUSPEC HIFLES
+    confidence: 1
+    bbox:
+      - 0.025839803145710032
+      - 0.1526041668364283
+      - 0.5529715643988715
+      - 0.056770833333333326
+  - text: WHOSE BEEN ARRESTED.
+    confidence: 1
+    bbox:
+      - 0.49354005665488226
+      - 0.15988372130895812
+      - 0.4806201510959202
+      - 0.027616278330484967
+  - text: YOU CAN SEE THE
+    confidence: 1
+    bbox:
+      - 0.04651163650730857
+      - 0.18437500037726462
+      - 0.36175709477177376
+      - 0.025000000000000022
+  - text: AT THE 1:14 MARK
+    confidence: 1
+    bbox:
+      - 0.5762273886856847
+      - 0.18437500030238996
+      - 0.37726098519784446
+      - 0.026562500000000044
+  - text: Orem, Utah
+    confidence: 1
+    bbox:
+      - 0.04864348747194782
+      - 0.22845445920291496
+      - 0.21020656161838105
+      - 0.02855619688828792
+  - text: 10 Sept 2025
+    confidence: 1
+    bbox:
+      - 0.7569112650997459
+      - 0.2261439009608046
+      - 0.23553147492585347
+      - 0.0259098728497823
+  - text: YUMI
+    confidence: 1
+    bbox:
+      - 0.3462532322795984
+      - 0.29215116254773754
+      - 0.08268733554416235
+      - 0.017441860834757517
+  - text: PrOVO
+    confidence: 1
+    bbox:
+      - 0.7519379848902075
+      - 0.5363372098391079
+      - 0.08785529666476777
+      - 0.036337208747863836
+  - text: 20L1g)
+    confidence: 0.5
+    bbox:
+      - 0.7648578825963903
+      - 0.5901162787333288
+      - 0.12919896443684897
+      - 0.05232558250427255
+  - text: I think they just found the guy
+    confidence: 1
+    bbox:
+      - 0.09302326071726585
+      - 0.7877906980186188
+      - 0.7855296947337963
+      - 0.03200096885363268
+  - text: RED LINES
+    confidence: 1
+    bbox:
+      - 0.025665875643837783
+      - 0.8440409720467539
+      - 0.1812263912624783
+      - 0.024127358198165916
+  - text: right outside the carry on
+    confidence: 1
+    bbox:
+      - 0.16537468925440604
+      - 0.8239583331276547
+      - 0.6589146931966146
+      - 0.03229166666666672

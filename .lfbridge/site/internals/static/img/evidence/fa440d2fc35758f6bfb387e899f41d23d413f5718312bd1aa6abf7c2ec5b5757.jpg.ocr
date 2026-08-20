@@ -1,0 +1,97 @@
+source: site/internals/static/img/evidence/fa440d2fc35758f6bfb387e899f41d23d413f5718312bd1aa6abf7c2ec5b5757.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:52:49.385Z
+kind: image
+language: en-US
+text: |-
+  CONE LON
+  Project Constitution
+  @ProjectConstitu • 3h
+  * EXCLUSIVE: NEW FOOTAGE Shows FBI Agents Spotted ON 925 S ST in
+  Orem Just Hours After Kirk Assassination
+  ...
+  I just obtained footage showing FBI agents combing for evidence in Orem
+  just hours after Charlie Kirk was assassinated at UVU.
+  Location: 670 925 Street, Orem - agents
+  Show more
+  0:08 / 0:23
+blocks:
+  - text: CONE LON
+    confidence: 0.5
+    bbox:
+      - 0.028199566919739683
+      - 0.07124010527704483
+      - 0.060737527114967466
+      - 0.0316622691292876
+  - text: Project Constitution
+    confidence: 1
+    bbox:
+      - 0.10369929648928145
+      - 0.03406922320575978
+      - 0.24154689565397913
+      - 0.04112253591693482
+  - text: "@ProjectConstitu • 3h"
+    confidence: 1
+    bbox:
+      - 0.38394793809110633
+      - 0.04221635915567279
+      - 0.2472885032537961
+      - 0.0316622691292876
+  - text: "* EXCLUSIVE: NEW FOOTAGE Shows FBI Agents Spotted ON 925 S ST in"
+    confidence: 1
+    bbox:
+      - 0.11055760352721752
+      - 0.08163504659185716
+      - 0.8158016577201396
+      - 0.04095417088128639
+  - text: Orem Just Hours After Kirk Assassination
+    confidence: 1
+    bbox:
+      - 0.10412147802603032
+      - 0.12401055379947223
+      - 0.46203904555314523
+      - 0.029023746701847042
+  - text: ...
+    confidence: 1
+    bbox:
+      - 0.9154013020104929
+      - 0.04749340382585754
+      - 0.03253795888573896
+      - 0.01319261213720313
+  - text: I just obtained footage showing FBI agents combing for evidence in Orem
+    confidence: 1
+    bbox:
+      - 0.10195228348311121
+      - 0.2031662267810026
+      - 0.8156182212581344
+      - 0.03430079155672827
+  - text: just hours after Charlie Kirk was assassinated at UVU.
+    confidence: 1
+    bbox:
+      - 0.0997830741865511
+      - 0.24538258588390494
+      - 0.6073752711496746
+      - 0.029023746701847042
+  - text: "Location: 670 925 Street, Orem - agents"
+    confidence: 1
+    bbox:
+      - 0.14316702910339835
+      - 0.3245382588610378
+      - 0.4642082429501085
+      - 0.03430079155672827
+  - text: Show more
+    confidence: 1
+    bbox:
+      - 0.10412147596839169
+      - 0.36411609487372787
+      - 0.1279826464208243
+      - 0.02638522427440626
+  - text: 0:08 / 0:23
+    confidence: 1
+    bbox:
+      - 0.6311457380624103
+      - 0.9387885879676874
+      - 0.13250245034306785
+      - 0.03535158464336152

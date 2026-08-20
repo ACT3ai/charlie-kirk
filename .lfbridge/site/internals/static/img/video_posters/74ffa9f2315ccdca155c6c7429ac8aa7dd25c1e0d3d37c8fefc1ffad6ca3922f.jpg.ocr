@@ -1,0 +1,33 @@
+source: site/internals/static/img/video_posters/74ffa9f2315ccdca155c6c7429ac8aa7dd25c1e0d3d37c8fefc1ffad6ca3922f.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:53:34.511Z
+kind: image
+language: en-US
+text: |-
+  TAYLER
+  *
+  TAYLER USA
+blocks:
+  - text: TAYLER
+    confidence: 1
+    bbox:
+      - 0.03750000070312498
+      - 0.9055555554166668
+      - 0.056249999999999994
+      - 0.02777777777777768
+  - text: "*"
+    confidence: 1
+    bbox:
+      - 0.0703125001875
+      - 0.9472222220555556
+      - 0.018750000000000003
+      - 0.033333333333333326
+  - text: TAYLER USA
+    confidence: 1
+    bbox:
+      - 0.8873603706645146
+      - 0.09340415631821741
+      - 0.08309175968170157
+      - 0.03819168673621276

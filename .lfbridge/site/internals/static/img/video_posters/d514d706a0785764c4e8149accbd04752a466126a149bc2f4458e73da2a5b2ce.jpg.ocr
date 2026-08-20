@@ -1,0 +1,25 @@
+source: site/internals/static/img/video_posters/d514d706a0785764c4e8149accbd04752a466126a149bc2f4458e73da2a5b2ce.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:53:58.436Z
+kind: image
+language: en-US
+text: |-
+  PROTE
+  ER CAN
+blocks:
+  - text: PROTE
+    confidence: 0.5
+    bbox:
+      - 0.365544058759305
+      - 0.11186437991849796
+      - 0.5570279312133788
+      - 0.1029205322265625
+  - text: ER CAN
+    confidence: 1
+    bbox:
+      - 9.656272652591725e-9
+      - 0.8125000002165258
+      - 0.6627906799316406
+      - 0.13531250000000006

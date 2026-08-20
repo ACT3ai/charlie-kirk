@@ -1,0 +1,65 @@
+source: site/internals/static/img/video_posters/8091ac56b007dacdb26123b94082258abb5acc9c1c2ebf82263a2bd6e78ac237.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:53:37.241Z
+kind: image
+language: en-US
+text: |-
+  Michigan House Committee Meeting
+  Election Integrity Committee
+  Room 307, Anderson House Office Building - Lansing
+  09:04 AM MFEI
+  HOUSE
+  TV
+  06/03/25
+blocks:
+  - text: Michigan House Committee Meeting
+    confidence: 1
+    bbox:
+      - 0.07412790657941506
+      - 0.7333333330566844
+      - 0.5886627960205079
+      - 0.06253229988945852
+  - text: Election Integrity Committee
+    confidence: 1
+    bbox:
+      - 0.07267442221880774
+      - 0.8111111107536743
+      - 0.2848837089538574
+      - 0.04160206688774959
+  - text: Room 307, Anderson House Office Building - Lansing
+    confidence: 1
+    bbox:
+      - 0.0741279071875283
+      - 0.8552971586925419
+      - 0.5305232620239259
+      - 0.04392764621310763
+  - text: 09:04 AM MFEI
+    confidence: 1
+    bbox:
+      - 0.8750000042859455
+      - 0.05666666624773997
+      - 0.09447673797607414
+      - 0.02602067205641001
+  - text: HOUSE
+    confidence: 1
+    bbox:
+      - 0.8270348829209851
+      - 0.7416020676083745
+      - 0.07412790775299072
+      - 0.03875968933105467
+  - text: TV
+    confidence: 1
+    bbox:
+      - 0.8459302328872806
+      - 0.7803617575499137
+      - 0.036337208747863725
+      - 0.041343667772081205
+  - text: 06/03/25
+    confidence: 1
+    bbox:
+      - 0.838616248227404
+      - 0.896274213457283
+      - 0.08294192314147941
+      - 0.03432495752970377

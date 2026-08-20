@@ -1,0 +1,25 @@
+source: site/internals/static/img/video_posters/4e0c2f1a5256f5b2d265920b943b48d910917e52c2876fcda6bbaead3ffb9607.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:53:25.599Z
+kind: image
+language: en-US
+text: |-
+  CHOPPER 6
+  KSL
+blocks:
+  - text: CHOPPER 6
+    confidence: 1
+    bbox:
+      - 0.043750000677083324
+      - 0.04444444432098771
+      - 0.12187500000000001
+      - 0.033333333333333326
+  - text: KSL
+    confidence: 0.5
+    bbox:
+      - 0.06874999965332029
+      - 0.8083333334809027
+      - 0.1109375
+      - 0.09166666666666667

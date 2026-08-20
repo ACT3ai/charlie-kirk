@@ -1,0 +1,25 @@
+source: site/internals/static/img/video_posters/0376b73091187f1e001c1c49cc0a095e0a852db2e785c80278fb83f117afeeed.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:53:06.113Z
+kind: image
+language: en-US
+text: |-
+  Watch Closely
+  ME WRONG
+blocks:
+  - text: Watch Closely
+    confidence: 1
+    bbox:
+      - 0.1910370508172146
+      - 0.027983499203465878
+      - 0.6309734743032883
+      - 0.08635395080085806
+  - text: ME WRONG
+    confidence: 1
+    bbox:
+      - -0.003534744352400946
+      - 0.15216420488087867
+      - 0.8719582628847948
+      - 0.21292217585045536

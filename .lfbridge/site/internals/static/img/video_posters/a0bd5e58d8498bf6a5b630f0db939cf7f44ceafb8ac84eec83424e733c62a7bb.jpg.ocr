@@ -1,0 +1,49 @@
+source: site/internals/static/img/video_posters/a0bd5e58d8498bf6a5b630f0db939cf7f44ceafb8ac84eec83424e733c62a7bb.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:53:44.484Z
+kind: image
+language: en-US
+text: |-
+  THIS IS WHAT THE FBI
+  WANTS YOU TO BELIEVE
+  HAPPENED.
+  MYRD
+  OH
+blocks:
+  - text: THIS IS WHAT THE FBI
+    confidence: 1
+    bbox:
+      - 0.18055555258838388
+      - 0.03437500007102268
+      - 0.6527777777777778
+      - 0.028125000000000067
+  - text: WANTS YOU TO BELIEVE
+    confidence: 1
+    bbox:
+      - 0.14074073731481493
+      - 0.07083333286458338
+      - 0.7333333333333333
+      - 0.03776041716337197
+  - text: HAPPENED.
+    confidence: 1
+    bbox:
+      - 0.2803831973368744
+      - 0.11659058187632942
+      - 0.3531224992540148
+      - 0.034006336331367515
+  - text: MYRD
+    confidence: 0.3
+    bbox:
+      - 0.34722222296296296
+      - 0.5187499999479167
+      - 0.1333333333333333
+      - 0.04062500000000002
+  - text: OH
+    confidence: 1
+    bbox:
+      - 0.32222222169753084
+      - 0.6906250000868055
+      - 0.09444444444444444
+      - 0.03125

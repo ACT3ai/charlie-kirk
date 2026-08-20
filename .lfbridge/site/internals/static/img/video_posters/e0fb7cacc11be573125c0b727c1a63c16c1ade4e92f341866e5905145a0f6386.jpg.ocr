@@ -1,0 +1,41 @@
+source: site/internals/static/img/video_posters/e0fb7cacc11be573125c0b727c1a63c16c1ade4e92f341866e5905145a0f6386.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:54:00.863Z
+kind: image
+language: en-US
+text: |-
+  NEWS
+  channel
+  AUTHORITIES SHARE NEW VIDEO OF PERSON
+  BREAKING NEWS
+blocks:
+  - text: NEWS
+    confidence: 1
+    bbox:
+      - 0.01685393344257177
+      - 0.8888888887731481
+      - 0.10299625468164793
+      - 0.036111111111111094
+  - text: channel
+    confidence: 1
+    bbox:
+      - 0.005155177436631443
+      - 0.9286765747824018
+      - 0.12087359767728084
+      - 0.030251238081190346
+  - text: AUTHORITIES SHARE NEW VIDEO OF PERSON
+    confidence: 1
+    bbox:
+      - 0.15028245370081936
+      - 0.8303320536390614
+      - 0.8494195830955935
+      - 0.11641416549682615
+  - text: BREAKING NEWS
+    confidence: 1
+    bbox:
+      - 0.5056179798455056
+      - 0.9472222222569444
+      - 0.3707865168539326
+      - 0.04999999999999993

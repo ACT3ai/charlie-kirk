@@ -1,0 +1,49 @@
+source: site/internals/static/img/evidence/e533e56d175d026d591ee48671a989a9eeed4dcd73c69a94ea046d3f01f007fd.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:52:14.563Z
+kind: image
+language: en-US
+text: |-
+  9/10/2025 12:22
+  : 15 P
+  CSe Roof
+  stea
+  CANDACE
+blocks:
+  - text: 9/10/2025 12:22
+    confidence: 1
+    bbox:
+      - 1.8229166324582973e-9
+      - 0.0027777776736110926
+      - 0.14583333333333334
+      - 0.025000000000000022
+  - text: ": 15 P"
+    confidence: 1
+    bbox:
+      - 0.14583333283333336
+      - 0.0027777779444444484
+      - 0.04999999999999999
+      - 0.022222222222222254
+  - text: CSe Roof
+    confidence: 0.5
+    bbox:
+      - 0.7416666675520833
+      - 0.049999999953703744
+      - 0.10624999999999996
+      - 0.03888888888888886
+  - text: stea
+    confidence: 0.5
+    bbox:
+      - 0.664583333923611
+      - 0.12222222212962963
+      - 0.0708333333333333
+      - 0.02777777777777779
+  - text: CANDACE
+    confidence: 1
+    bbox:
+      - 0.8249070734558548
+      - 0.8828029180360645
+      - 0.15018585522969563
+      - 0.04828305244445796

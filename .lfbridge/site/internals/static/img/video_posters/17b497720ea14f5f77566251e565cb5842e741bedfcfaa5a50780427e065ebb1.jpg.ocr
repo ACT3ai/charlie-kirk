@@ -1,0 +1,57 @@
+source: site/internals/static/img/video_posters/17b497720ea14f5f77566251e565cb5842e741bedfcfaa5a50780427e065ebb1.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:53:11.493Z
+kind: image
+language: en-US
+text: |-
+  &WuTangEconomicForum
+  TURNING POINT C
+  WHISTLEBLOWER
+  A EXPOSES ERIKA KIRK
+  TRUSA whistleblower
+  EXPLAIN
+blocks:
+  - text: "&WuTangEconomicForum"
+    confidence: 0.5
+    bbox:
+      - 0.06875000862499991
+      - 0.1157894735438596
+      - 0.8625
+      - 0.04210526315789476
+  - text: TURNING POINT C
+    confidence: 1
+    bbox:
+      - 0.1999999921875002
+      - 0.1929824562280702
+      - 0.625
+      - 0.03508771929824561
+  - text: WHISTLEBLOWER
+    confidence: 1
+    bbox:
+      - 0.19375000505208329
+      - 0.23508771912280702
+      - 0.60625
+      - 0.03508771929824561
+  - text: A EXPOSES ERIKA KIRK
+    confidence: 1
+    bbox:
+      - 0.07499999218750011
+      - 0.28070175459649116
+      - 0.7812500000000001
+      - 0.03508771929824572
+  - text: TRUSA whistleblower
+    confidence: 1
+    bbox:
+      - 0.03125000382812491
+      - 0.3543859647807017
+      - 0.30625
+      - 0.01754385964912286
+  - text: EXPLAIN
+    confidence: 1
+    bbox:
+      - 0.33125000160714285
+      - 0.6736842102005013
+      - 0.33749999999999997
+      - 0.04561403508771933

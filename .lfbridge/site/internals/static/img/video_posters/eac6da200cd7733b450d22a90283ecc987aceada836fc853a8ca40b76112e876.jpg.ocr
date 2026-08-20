@@ -1,0 +1,57 @@
+source: site/internals/static/img/video_posters/eac6da200cd7733b450d22a90283ecc987aceada836fc853a8ca40b76112e876.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:54:04.280Z
+kind: image
+language: en-US
+text: |-
+  AMER
+  COMEL
+  VE ME WRONG / P.
+  AO INTE
+  TikTok
+  @ caseypbryson
+blocks:
+  - text: AMER
+    confidence: 1
+    bbox:
+      - 0.6060952607761534
+      - 0.08871038907710715
+      - 0.37474073304070377
+      - 0.054532699286937825
+  - text: COMEL
+    confidence: 1
+    bbox:
+      - 0.5788872161340141
+      - 0.13124371367941357
+      - 0.423149029413859
+      - 0.06449390202760696
+  - text: VE ME WRONG / P.
+    confidence: 1
+    bbox:
+      - -0.000595037436092226
+      - 0.24413430661115376
+      - 0.99771785736084
+      - 0.10157513990998268
+  - text: AO INTE
+    confidence: 0.5
+    bbox:
+      - 0.7048611144097221
+      - 0.35351562456054686
+      - 0.29166666666666663
+      - 0.03515625
+  - text: TikTok
+    confidence: 1
+    bbox:
+      - 0.01035455189865675
+      - 0.5057348331720379
+      - 0.1355408959918552
+      - 0.02173345908522606
+  - text: "@ caseypbryson"
+    confidence: 1
+    bbox:
+      - 0.013888887008101881
+      - 0.5292968750651041
+      - 0.22569444444444448
+      - 0.015625

@@ -1,0 +1,41 @@
+source: site/internals/static/img/video_posters/a1d3a9e7d3a1eed443ac8d3fe64eae36e7d18256d4321cf0ca7be7a7ceed6547.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:53:45.330Z
+kind: image
+language: en-US
+text: |-
+  know, I haventt been able to faet
+  check this myselt, but with a
+  relative of Tyler Robinson that
+  @WDYFW_PodClips
+blocks:
+  - text: know, I haventt been able to faet
+    confidence: 1
+    bbox:
+      - 0.12063954441224262
+      - 0.5452196367541574
+      - 0.7616278839111328
+      - 0.12700258466932512
+  - text: check this myselt, but with a
+    confidence: 1
+    bbox:
+      - 0.16577046531406553
+      - 0.6251256197851767
+      - 0.6726728057861329
+      - 0.14631620619032115
+  - text: relative of Tyler Robinson that
+    confidence: 1
+    bbox:
+      - 0.14583333554166658
+      - 0.7333333351219979
+      - 0.7125
+      - 0.10370369805230029
+  - text: "@WDYFW_PodClips"
+    confidence: 0.5
+    bbox:
+      - 0.847383721396974
+      - 0.9509043931038711
+      - 0.14389534950256344
+      - 0.0335917303297254

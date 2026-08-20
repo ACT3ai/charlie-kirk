@@ -1,0 +1,89 @@
+source: site/internals/static/img/video_posters/bfce832d5da2c647c79a9d467019b0da19b7edf52a6d0e31a7d8c6e8a6daa684.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:53:53.179Z
+kind: image
+language: en-US
+text: |-
+  START A
+  CHAPTER
+  TODAYI
+  REAL DE
+  AMERICA'S
+  VOICE
+  JEREL
+  THE CHARLIE KIRK SHOW
+  EMAIL: FREEDOM@CHARLIEKIRK.COM
+  CHARLIE-KIRK
+blocks:
+  - text: START A
+    confidence: 1
+    bbox:
+      - 0.03617571036141786
+      - 0.2645348841134547
+      - 0.16020671703197337
+      - 0.040697673956553104
+  - text: CHAPTER
+    confidence: 1
+    bbox:
+      - 0.026038562393316794
+      - 0.28689624308780215
+      - 0.1911150755705657
+      - 0.049139086405436294
+  - text: TODAYI
+    confidence: 1
+    bbox:
+      - 0.0480316199124043
+      - 0.3128419982848456
+      - 0.15853472109194156
+      - 0.04890560706456504
+  - text: REAL DE
+    confidence: 1
+    bbox:
+      - 0.07225367636650395
+      - 0.42125712974032825
+      - 0.06996293244538485
+      - 0.00922992626825958
+  - text: AMERICA'S
+    confidence: 1
+    bbox:
+      - 0.07235142033211957
+      - 0.4316860464313299
+      - 0.09302325778537325
+      - 0.008720930417378758
+  - text: VOICE
+    confidence: 1
+    bbox:
+      - 0.07230761159304619
+      - 0.44031573429829407
+      - 0.05693516554655853
+      - 0.008903415004412385
+  - text: JEREL
+    confidence: 1
+    bbox:
+      - 0.39276485868419353
+      - 0.40843023270673906
+      - 0.06718345924660013
+      - 0.010174418489138137
+  - text: THE CHARLIE KIRK SHOW
+    confidence: 1
+    bbox:
+      - 0.18346253904037793
+      - 0.4286458335464576
+      - 0.542635656286169
+      - 0.020482073227564457
+  - text: "EMAIL: FREEDOM@CHARLIEKIRK.COM"
+    confidence: 1
+    bbox:
+      - 0.18346252633911456
+      - 0.4562499998526388
+      - 0.43927649038809324
+      - 0.01322674453258521
+  - text: CHARLIE-KIRK
+    confidence: 1
+    bbox:
+      - 0.7725319697623836
+      - 0.4299921684148127
+      - 0.16811435840747968
+      - 0.017922639846801758

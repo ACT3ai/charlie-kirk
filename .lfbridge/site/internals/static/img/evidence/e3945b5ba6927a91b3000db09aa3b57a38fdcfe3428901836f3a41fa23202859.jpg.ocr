@@ -1,0 +1,41 @@
+source: site/internals/static/img/evidence/e3945b5ba6927a91b3000db09aa3b57a38fdcfe3428901836f3a41fa23202859.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:52:07.338Z
+kind: image
+language: en-US
+text: |-
+  © TikTok
+  Lance Twiggs, seen here, the roommate of main
+  suspect Tyler Robinson, 22, made the shock remark in
+  a Reddit post
+blocks:
+  - text: © TikTok
+    confidence: 1
+    bbox:
+      - 0.012216404939728347
+      - 0.8370944993361743
+      - 0.08027923066737287
+      - 0.01480959097320167
+  - text: Lance Twiggs, seen here, the roommate of main
+    confidence: 1
+    bbox:
+      - 0.03141361685577339
+      - 0.8720930241600262
+      - 0.81151831675384
+      - 0.03343023130688583
+  - text: suspect Tyler Robinson, 22, made the shock remark in
+    confidence: 1
+    bbox:
+      - 0.029668398981908598
+      - 0.9139633289931389
+      - 0.9179755776615466
+      - 0.03244005641748948
+  - text: a Reddit post
+    confidence: 1
+    bbox:
+      - 0.029668411564472547
+      - 0.9562764454054682
+      - 0.2303664902509269
+      - 0.027735181520620822

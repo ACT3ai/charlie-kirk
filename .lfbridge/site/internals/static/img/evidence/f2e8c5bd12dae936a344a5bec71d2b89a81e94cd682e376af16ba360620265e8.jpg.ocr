@@ -1,0 +1,57 @@
+source: site/internals/static/img/evidence/f2e8c5bd12dae936a344a5bec71d2b89a81e94cd682e376af16ba360620265e8.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:52:39.346Z
+kind: image
+language: en-US
+text: |-
+  ppi.
+  CON:
+  ON
+  WHITE LAB COAT
+  DISTRICT ATTORNEY
+  PENTAGRAM
+blocks:
+  - text: ppi.
+    confidence: 0.5
+    bbox:
+      - 0.8777777776851852
+      - 0.07962962983796296
+      - 0.029629629629629672
+      - 0.01666666666666672
+  - text: "CON:"
+    confidence: 1
+    bbox:
+      - 0.8592592590211641
+      - 0.09814814798941796
+      - 0.03703703703703709
+      - 0.022222222222222254
+  - text: ON
+    confidence: 1
+    bbox:
+      - 0.9370370372376543
+      - 0.09999999990740738
+      - 0.024074074074074026
+      - 0.0185185185185186
+  - text: WHITE LAB COAT
+    confidence: 1
+    bbox:
+      - 0.008947331100695233
+      - 0.41846256240851576
+      - 0.29506830286096647
+      - 0.05381561561867043
+  - text: DISTRICT ATTORNEY
+    confidence: 1
+    bbox:
+      - 0.2018518531871345
+      - 0.6703703701461988
+      - 0.6
+      - 0.08518518518518525
+  - text: PENTAGRAM
+    confidence: 1
+    bbox:
+      - 0.6942011738329951
+      - 0.7877399125832912
+      - 0.2227087656656902
+      - 0.050446100588198095

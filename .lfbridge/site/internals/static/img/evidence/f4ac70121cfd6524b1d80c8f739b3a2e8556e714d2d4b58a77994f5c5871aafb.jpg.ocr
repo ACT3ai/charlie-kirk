@@ -1,0 +1,129 @@
+source: site/internals/static/img/evidence/f4ac70121cfd6524b1d80c8f739b3a2e8556e714d2d4b58a77994f5c5871aafb.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:52:41.467Z
+kind: image
+language: en-US
+text: |-
+  Pastor Rob McCoy
+  - Father was Naval Captain
+  Roy Edgar McCoy.
+  - Father was also the
+  assistant chief of staff for
+  psychological warfare in
+  the Navy.
+  X @THEINTELSCIF
+  Dr. Lee Trotter
+  - Completed a residency
+  at Keesler Air Force
+  Medical Center in
+  Mississippi.
+  - He is also a pilot,
+  likely in the Air Force.
+blocks:
+  - text: Pastor Rob McCoy
+    confidence: 1
+    bbox:
+      - 0.5915697734756409
+      - 0.043558850187001785
+      - 0.3284883622541446
+      - 0.04263206672845232
+  - text: "- Father was Naval Captain"
+    confidence: 1
+    bbox:
+      - 0.5872093036048573
+      - 0.11353104643662226
+      - 0.4113372125819519
+      - 0.03661472472578875
+  - text: Roy Edgar McCoy.
+    confidence: 1
+    bbox:
+      - 0.5915697700407354
+      - 0.16033364252934268
+      - 0.2906976724508289
+      - 0.03521779425393878
+  - text: "- Father was also the"
+    confidence: 1
+    bbox:
+      - 0.5886627972806621
+      - 0.2492711374885932
+      - 0.3110464945738506
+      - 0.026447120256397394
+  - text: assistant chief of staff for
+    confidence: 1
+    bbox:
+      - 0.5915697683411958
+      - 0.2928637623854691
+      - 0.3793604598688769
+      - 0.02929367192704113
+  - text: psychological warfare in
+    confidence: 1
+    bbox:
+      - 0.593023260751878
+      - 0.3367346936927569
+      - 0.36482557483609634
+      - 0.03498542297759255
+  - text: the Navy.
+    confidence: 1
+    bbox:
+      - 0.5915697671756324
+      - 0.3818350320118953
+      - 0.1468023275491711
+      - 0.035217794253938894
+  - text: X @THEINTELSCIF
+    confidence: 0.5
+    bbox:
+      - 0.890988371278696
+      - 0.4489795918503541
+      - 0.10755813937090242
+      - 0.01765618222637022
+  - text: Dr. Lee Trotter
+    confidence: 1
+    bbox:
+      - 0.4985465159868116
+      - 0.505830904017585
+      - 0.30959301735248673
+      - 0.04375204275447642
+  - text: "- Completed a residency"
+    confidence: 1
+    bbox:
+      - 0.49127907771288154
+      - 0.586005831982279
+      - 0.4462209197377542
+      - 0.042353759991890616
+  - text: at Keesler Air Force
+    confidence: 1
+    bbox:
+      - 0.4916666688167849
+      - 0.6375000008870091
+      - 0.37083333521365236
+      - 0.0376621861497598
+  - text: Medical Center in
+    confidence: 1
+    bbox:
+      - 0.4970930209647143
+      - 0.6923076922126432
+      - 0.3270348850327808
+      - 0.03660797034291008
+  - text: Mississippi.
+    confidence: 1
+    bbox:
+      - 0.49533838245286693
+      - 0.7462069006346211
+      - 0.22443951167813508
+      - 0.046944799414379346
+  - text: "- He is also a pilot,"
+    confidence: 1
+    bbox:
+      - 0.49273257058165243
+      - 0.8571428580664625
+      - 0.35174416702467937
+      - 0.042301071916497124
+  - text: likely in the Air Force.
+    confidence: 1
+    bbox:
+      - 0.4875000081021715
+      - 0.9040778493538291
+      - 0.42083331264982377
+      - 0.05008881527367737

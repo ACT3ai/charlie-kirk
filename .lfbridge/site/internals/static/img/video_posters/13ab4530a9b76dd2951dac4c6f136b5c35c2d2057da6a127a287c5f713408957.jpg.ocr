@@ -1,0 +1,49 @@
+source: site/internals/static/img/video_posters/13ab4530a9b76dd2951dac4c6f136b5c35c2d2057da6a127a287c5f713408957.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:53:10.913Z
+kind: image
+language: en-US
+text: |-
+  iollow
+  RABBITCH ASER
+  video dips on X
+  CANDACE
+  A DDVOLI
+blocks:
+  - text: iollow
+    confidence: 0.5
+    bbox:
+      - 0.05309645816017291
+      - 0.06649690824735865
+      - 0.07818208336830137
+      - 0.042006182670593306
+  - text: RABBITCH ASER
+    confidence: 1
+    bbox:
+      - 0.0546875
+      - 0.14999999958333332
+      - 0.171875
+      - 0.04166666666666663
+  - text: video dips on X
+    confidence: 1
+    bbox:
+      - 0.05291184066597414
+      - 0.19775302700072417
+      - 0.16917631626129148
+      - 0.05727172427707239
+  - text: CANDACE
+    confidence: 1
+    bbox:
+      - 0.8249542644281576
+      - 0.8468847037534766
+      - 0.1485289692878723
+      - 0.06456392606099448
+  - text: A DDVOLI
+    confidence: 0.3
+    bbox:
+      - 0.2578125008680555
+      - 0.9388888887037038
+      - 0.15625
+      - 0.05555555555555558

@@ -1,0 +1,33 @@
+source: site/internals/static/img/evidence/fe3894c36581b6df8a75c4d6f766917f92fa2bd3715e35cde1cb81ef57a54829.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:53:01.184Z
+kind: image
+language: en-US
+text: |-
+  9/15/2025
+  074 25W0401, Ex 6A, Aller preparation, 4X.
+  073 25W0401, Ex 6A, Ater preparation, 4X, 01.5F
+blocks:
+  - text: 9/15/2025
+    confidence: 1
+    bbox:
+      - 0.08418891420395544
+      - 0.03779069786872369
+      - 0.08418890838880363
+      - 0.013081394873017738
+  - text: 074 25W0401, Ex 6A, Aller preparation, 4X.
+    confidence: 1
+    bbox:
+      - 0.24229979522148118
+      - 0.034883721597684936
+      - 0.49281313608307864
+      - 0.03365024707598685
+  - text: 073 25W0401, Ex 6A, Ater preparation, 4X, 01.5F
+    confidence: 1
+    bbox:
+      - 0.23203286800049835
+      - 0.5130813958409489
+      - 0.5359342681215746
+      - 0.032210618293043725

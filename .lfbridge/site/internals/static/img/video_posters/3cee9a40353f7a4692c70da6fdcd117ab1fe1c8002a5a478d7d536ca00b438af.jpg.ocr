@@ -1,0 +1,25 @@
+source: site/internals/static/img/video_posters/3cee9a40353f7a4692c70da6fdcd117ab1fe1c8002a5a478d7d536ca00b438af.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:53:21.318Z
+kind: image
+language: en-US
+text: |-
+  PC
+  @GuilderOficial
+blocks:
+  - text: PC
+    confidence: 0.5
+    bbox:
+      - 0.2954677620384072
+      - 0.599117720741851
+      - 0.38220375908745663
+      - 0.11568866968154912
+  - text: "@GuilderOficial"
+    confidence: 1
+    bbox:
+      - 0.3388888887547349
+      - 0.7999999999884588
+      - 0.2583333333333333
+      - 0.020312499999999956

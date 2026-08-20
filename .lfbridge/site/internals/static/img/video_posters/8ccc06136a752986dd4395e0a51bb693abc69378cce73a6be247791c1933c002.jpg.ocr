@@ -1,0 +1,33 @@
+source: site/internals/static/img/video_posters/8ccc06136a752986dd4395e0a51bb693abc69378cce73a6be247791c1933c002.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:53:39.851Z
+kind: image
+language: en-US
+text: |-
+  Pray for Charlie Kirk. Lord be with him,
+  Lord heal him
+  „сыо
+blocks:
+  - text: Pray for Charlie Kirk. Lord be with him,
+    confidence: 1
+    bbox:
+      - 0.16666667199074064
+      - 0.8706199461141061
+      - 0.6388888888888888
+      - 0.040431266846361225
+  - text: Lord heal him
+    confidence: 1
+    bbox:
+      - 0.3472222236111111
+      - 0.9164420484164421
+      - 0.2222222222222222
+      - 0.03234501347708896
+  - text: „сыо
+    confidence: 0.3
+    bbox:
+      - 0.8194444432222222
+      - 0.9353099732075472
+      - 0.12222222222222223
+      - 0.03234501347708896

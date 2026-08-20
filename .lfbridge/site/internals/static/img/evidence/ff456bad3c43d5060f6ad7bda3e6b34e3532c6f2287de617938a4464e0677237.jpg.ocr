@@ -1,0 +1,73 @@
+source: site/internals/static/img/evidence/ff456bad3c43d5060f6ad7bda3e6b34e3532c6f2287de617938a4464e0677237.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:53:03.483Z
+kind: image
+language: en-US
+text: |-
+  Cell Tower
+  450 - 700 MHz
+  U.S. Patent 4,877,027
+  Mass
+  Subliminal = Formation
+  Messages
+  Psychosis
+  TargetedJustice.com
+blocks:
+  - text: Cell Tower
+    confidence: 1
+    bbox:
+      - 0.014545452949494999
+      - 0.03142857103174601
+      - 0.31272727272727274
+      - 0.07142857142857151
+  - text: 450 - 700 MHz
+    confidence: 1
+    bbox:
+      - 0.3208333327083334
+      - 0.1437908496240763
+      - 0.35000000000000003
+      - 0.08496731894356868
+  - text: U.S. Patent 4,877,027
+    confidence: 1
+    bbox:
+      - 0.25090909232467534
+      - 0.2600000003469387
+      - 0.2927272727272728
+      - 0.04857142857142871
+  - text: Mass
+    confidence: 1
+    bbox:
+      - 0.5671605329939786
+      - 0.4651334219150829
+      - 0.21476984197443183
+      - 0.10401887076241623
+  - text: Subliminal = Formation
+    confidence: 1
+    bbox:
+      - 0.024999994791666764
+      - 0.5228571427329702
+      - 0.9624999999999999
+      - 0.1634173638480051
+  - text: Messages
+    confidence: 1
+    bbox:
+      - 0.044807850970190244
+      - 0.6344258394793415
+      - 0.4212933904474432
+      - 0.13686260768345426
+  - text: Psychosis
+    confidence: 1
+    bbox:
+      - 0.5650721724705879
+      - 0.6880912067576963
+      - 0.41349201549183245
+      - 0.12667472839355465
+  - text: TargetedJustice.com
+    confidence: 1
+    bbox:
+      - 0.20181818440909088
+      - 0.8828571427755102
+      - 0.7254545454545456
+      - 0.11428571428571432

@@ -1,0 +1,41 @@
+source: site/internals/static/img/video_posters/2c2089b9bad3687bd5f880da7150e017108a7d2c055e65af7fcad3318b94ec5d.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:53:16.802Z
+kind: image
+language: en-US
+text: |-
+  Angle 2, Inside
+  the Hall of Flags
+  burg
+  @BasedSamParker @SamParkerSenate
+blocks:
+  - text: Angle 2, Inside
+    confidence: 1
+    bbox:
+      - 0.266399807721515
+      - 0.018739279039998058
+      - 0.46720038519965273
+      - 0.06696588728162967
+  - text: the Hall of Flags
+    confidence: 1
+    bbox:
+      - 0.23611111192129625
+      - 0.09333333285185186
+      - 0.5249999999999999
+      - 0.05777777777777782
+  - text: burg
+    confidence: 0.5
+    bbox:
+      - 0.3500000008333334
+      - 0.8266666666111112
+      - 0.06666666666666665
+      - 0.022222222222222254
+  - text: "@BasedSamParker @SamParkerSenate"
+    confidence: 1
+    bbox:
+      - 0.2555555494444446
+      - 0.9622222223611112
+      - 0.48888888888888893
+      - 0.02444444444444438

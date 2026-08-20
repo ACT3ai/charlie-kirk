@@ -1,0 +1,33 @@
+source: site/internals/static/img/video_posters/cadf22d1230fc44bb604988d8c08e1912e557e229de62f0218d2577344ab5085.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:53:56.290Z
+kind: image
+language: en-US
+text: |-
+  French Foreign Legion's 1er Régiment
+  étranger de cavalerie (1 er REC) Commandos
+  @I Armée de Terr They Train: 18 miles from Marseille, FR
+blocks:
+  - text: French Foreign Legion's 1er Régiment
+    confidence: 1
+    bbox:
+      - 0.2354651263328848
+      - 0.7700000002655528
+      - 0.5334302139282225
+      - 0.05687338299221467
+  - text: étranger de cavalerie (1 er REC) Commandos
+    confidence: 1
+    bbox:
+      - 0.18313953498610858
+      - 0.844444444583674
+      - 0.6351744079589844
+      - 0.05478036032782663
+  - text: "@I Armée de Terr They Train: 18 miles from Marseille, FR"
+    confidence: 1
+    bbox:
+      - 0.029069776097781316
+      - 0.9377777774302717
+      - 0.7441860198974609
+      - 0.06000000000000005
