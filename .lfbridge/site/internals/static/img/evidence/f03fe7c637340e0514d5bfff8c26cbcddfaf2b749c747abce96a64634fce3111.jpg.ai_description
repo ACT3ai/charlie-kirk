@@ -1,0 +1,141 @@
+source: site/internals/static/img/evidence/f03fe7c637340e0514d5bfff8c26cbcddfaf2b749c747abce96a64634fce3111.jpg
+status: done
+engine: gemini-flash-latest
+provider: gemini
+generated: 2026-08-20T12:58:41.421Z
+kind: image
+description: >-
+  ## Overview
+
+  This image is a composite digital screenshot from the flight tracking website
+  ADS-B Exchange (adsbexchange.com), displaying the tracked path of an aircraft
+  with registration N888KG over the state of Utah and parts of Nevada and
+  Arizona. On the left side is a dark-themed telemetry and metadata panel, while
+  the main viewing area shows a geographic map marked with a multicolor flight
+  path descending south from Provo, Utah. Superimposed over the map is prominent
+  red text drawing a timeline correlation between the flight's movement and an
+  "Assassination" event.
+
+
+  ## Hyper-Detail
+
+  The interface consists of two primary UI sections: a telemetry sidebar
+  spanning the entire left edge and a large cartographic display occupying the
+  remainder of the view.
+
+
+  *   **Left Telemetry Sidebar:**
+      *   Dark slate-gray/charcoal background (`#2b333a` aesthetic).
+      *   Top header: "N888KG" in white bold text, with an 'X' close button and an upload/external link icon. Below it, "Hex: AC3C75", a "Copy Link" button, and the "adsbexchange.com" logo with an green radar icon.
+      *   Thumbnail: A small rectangular photograph showing a white private business jet on an airport apron with "conair" (or similar logo) in red/gold lettering on the fuselage.
+      *   Aircraft Details list: "Reg.: N888KG", "United States", "DB flags: LADD", "Type: CL30", "2013 BOMBARDIER BD-100 Challenger 300", "N888KG LLC", "Squawk: n/a".
+      *   Buttons: Green button labeled "FULL DETAILS" with an external link glyph, followed by a dark button with a blue arrow labeled "FLIGHT ACTIVITY".
+      *   Telemetry Categories:
+          *   "SPATIAL": Groundspeed (266 kt), Baro. altitude (▼ 8425 ft), WGS84 altitude (▼ 8750 ft), Vert. Rate (-1856 ft/min), Track (173.7°), Pos. (37.182°, -111.503°), Distance (n/a).
+          *   "SIGNAL": Source (ADS-B).
+          *   "FMS SEL": Sel. Alt. (n/a), Sel. Head. (n/a).
+          *   "WIND": Speed (n/a), Direction (from) (n/a), TAT / OAT (n/a).
+          *   "SPEED": Ground (266 kt), True (n/a), Indicated (n/a), Mach (n/a).
+          *   "ALTITUDE": Barometric (▼ 8425 ft), Baro. Rate (n/a), Geom. WGS84 (▼ 8750 ft), Geom. Rate (-1856 ft/min), QNH (n/a).
+      *   Bottom control strip: Displays "UTC", "Date: 2025-09-10", and "Time: 19:44:00 Z".
+
+  *   **Map Display Area:**
+      *   Geographic map rendered in muted earth tones (light beige/tan land, pale green for national forests/parks, soft blue for water bodies like the Great Salt Lake and Lake Powell).
+      *   Visible geographic regions and labels: Salt Lake City, Sandy, Lehi, Provo, Tooele, Price, Elko, Ely, St. George, Mesquite, Page, Utah Test and Training Range (North and South Areas), Dugway Proving Ground, Fishlake National Forest, Capitol Reef National Park, Grand Staircase-Escalante National Monument, Glen Canyon National Recreation Area, Nevada National Security Site, Desert National Wildlife Refuge, Kaibab.
+      *   Flight path: Originates near Provo as a lime-green track, turning into cyan/blue as it heads due south in a long, nearly straight trajectory through central/southern Utah, terminating at a bright green aircraft icon near the Arizona border (Grand Staircase-Escalante/Glen Canyon area).
+      *   Map scale: A scale bar in the lower-left corner indicating "20 NM".
+
+  *   **Text Overlay:**
+      *   Large, bold red sans-serif text centered over the map:
+          "N888KG - Provo"
+          "Regional Airport is 5"
+          "miles from Utah"
+          "Valley University"
+          ""
+          "Times in UTC"
+          "Assassination: 18:10"
+          "Take off: 19:12"
+          "Illegally turns off"
+          "ADS-B radar: 19:44"
+
+  ## Composition
+
+  *   **Sidebar (Telemetry/Info Panel):** Located at FRAME-LEFT, occupying ~18%
+  of the horizontal frame width and 100% of the vertical height.
+
+  *   **Map Interface:** Occupies the remaining ~82% of the frame (FRAME-CENTER
+  to FRAME-RIGHT).
+
+  *   **Overlay Text:** Positioned directly at FRAME-CENTER, taking up
+  approximately 35% of the overall image area, rendered in bold red typography.
+
+  *   **Flight Path:** Stretches vertically along the vertical third line at
+  FRAME-RIGHT-of-center from near top-right (Provo) to bottom-right (Grand
+  Staircase/Arizona border).
+
+  *   **Depth & Focus:** Entire image is a 2D screen capture; all digital
+  elements are in sharp vector/pixel focus with no optical depth of field.
+
+
+  ## Location
+
+  *   **Display Subject:** State of Utah (covering Salt Lake City, Provo, down
+  to the Arizona border), United States.
+
+  *   **City Represented:** Provo, Utah (uncertain as the primary reference
+  point).
+
+  *   **Type of Location:** Digital representation of a regional scale map
+  encompassing mountainous terrain, deserts, and cities.
+
+
+  ## Setting & Place
+
+  *   **Setting:** Digital screen capture / User Interface (UI) overlay.
+
+  *   **Context:** Web-based aviation tracking application (ADS-B Exchange
+  interface) showing geographical GIS data and restricted airspace zones.
+
+
+  ## Lighting
+
+  *   Not applicable (digital user interface graphic). The interface employs a
+  dark-mode sidebar on the left and a neutral, daylight-balanced low-contrast
+  map base.
+
+
+  ## Cinematography
+
+  *   **Shot Type:** Screen capture / Graphic UI overview.
+
+  *   **Angle:** 2D Top-down orthographic/cartographic projection (bird's-eye
+  map view).
+
+  *   **Lens:** Flat computer rendering, zero distortion.
+
+
+  ## People
+
+  No people in frame.
+
+
+  ## Objects & Text
+
+  *   **Visible Text (Verbatim):**
+      *   "N888KG", "Hex: AC3C75", "Copy Link", "adsbexchange.com"
+      *   "Reg.: N888KG", "United States", "DB flags: LADD", "Type: CL30", "2013 BOMBARDIER BD-100", "Challenger 300", "N888KG LLC", "Squawk: n/a"
+      *   "FULL DETAILS", "FLIGHT ACTIVITY", "History", "SPATIAL", "Groundspeed: 266 kt", "Baro. altitude: ▼ 8425 ft", "WGS84 altitude: ▼ 8750 ft", "Vert. Rate: -1856 ft/min", "Track: 173.7°", "Pos.: 37.182°, -111.503°", "Distance: n/a"
+      *   "SIGNAL", "Source: ADS-B", "FMS SEL", "WIND", "SPEED", "ALTITUDE"
+      *   "20 NM", "UTC", "Date: 2025-09-10", "Time: 19:44:00 Z"
+      *   Overlay text: "N888KG - Provo Regional Airport is 5 miles from Utah Valley University Times in UTC Assassination: 18:10 Take off: 19:12 Illegally turns off ADS-B radar: 19:44"
+      *   Map labels: "Salt Lake City", "Sandy", "Lehi", "Provo", "Tooele", "Price", "Elko", "Ely", "Cedar City", "St. George", "Mesquite", "Page", "Utah Test and Training Range", "Dugway Proving Ground", "Fishlake National Forest", "Grand Staircase-Escalante National Monument", "Glen Canyon National Recreation Area", "Kaibab", "Nevada Test and Training Range (NTTR)".
+
+  ## Colors & Mood
+
+  *   **Palette:** Dark slate gray and bright teal/green accents on the UI
+  panel; beige, pale green, light gray, and sky blue on the map; stark bright
+  red for overlay text; bright lime-green to electric blue for the flight path
+  line.
+
+  *   **Mood:** Analytical, alarming, investigative, high-tension documentary
+  style.

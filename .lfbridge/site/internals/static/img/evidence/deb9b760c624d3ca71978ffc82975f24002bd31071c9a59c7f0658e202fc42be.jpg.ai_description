@@ -1,0 +1,146 @@
+source: site/internals/static/img/evidence/deb9b760c624d3ca71978ffc82975f24002bd31071c9a59c7f0658e202fc42be.jpg
+status: done
+engine: gemini-flash-latest
+provider: gemini
+generated: 2026-08-20T12:57:56.496Z
+kind: image
+description: >-
+  ## Overview
+
+  This image is a full-screen desktop web screenshot from the flight tracking
+  website Flightradar24. It displays the playback map and telemetry data for a
+  flight operated by a Piper Navajo Chieftain with aircraft registration N59906,
+  originating and ending at Provo Municipal Airport (PVU) in Utah, USA. The map
+  shows a dense, systematic parallel aerial survey/mapping flight pattern
+  consisting of multiple southwest-to-northeast flight tracks over Utah Lake,
+  Provo, Orem, and the surrounding mountain ranges.
+
+
+  ## Hyper-Detail
+
+  The user interface is structured into three main vertical sections: the top
+  navigation bar, the central satellite/terrain map view, and the lower flight
+  playback and aircraft statistics dashboard.
+
+
+  * **Top Bar:** A dark charcoal header spanning the top edge features the
+  official "flightradar24 LIVE AIR TRAFFIC" logo at top center, composed of a
+  circular target/radar icon next to white text with a yellow "24". To the far
+  right, white text indicates the current page load time as "19:59 UTC". Below
+  this, a white breadcrumb bar lists: "Flight tracker map > Aviation data >
+  Aircraft > N59906" in slate-blue and bold black text.
+
+  * **Map Display:** The background contains a high-resolution topographic and
+  terrain satellite hybrid map covering the Utah Valley region. 
+    * Notable geographic features visible: Utah Lake (elongated blue body of water running diagonally through center-left), surrounded by mountain ranges rendered in textured shades of olive green, brown, and grey with shadowed relief.
+    * Labeled peaks (with green circular mountain icons) include Flat Top Mountain (northwest), Mt Timpanogos (north), Provo Peak (center-right), Spanish Fork Peak, Loafer Mountain, and Strawberry Peak (southeast).
+    * Labeled cities, towns, and regions include: Stockton, South Rim, Mercur, Fairfield, Cedar Fort, Eagle Mountain, Mosida, Genola, Goshen, Santaquin, Rocky Ridge, Eureka, Mammoth, Faust, Vernon, Highland, Alpine, Lehi, American Fork, Saratoga Springs, Lindon, Vineyard, Orem, Provo, Springville, Mapleton, Spanish Fork, Benjamin, Salem, Payson, Thistle, Birdseye, Wallsburg, West Portal, Fruitland, Tucker, and Soldier Summit.
+    * Highway shields for routes 73, 36, 6, 15, 189, 40, and 89 are placed across the road network.
+    * The flight track is rendered as a continuous, smooth multi-colored vector line. It starts in green and light cyan representing ascent/transit, morphing into a vivid medium blue for repeated parallel lines (lawnmower survey pattern) tilted from southwest (over Utah Lake and Cedar Valley) to northeast (over Orem and Mount Timpanogos foothills), with wide teardrop and racetrack turns connecting each parallel line over the mountains and western valleys.
+    * A small yellow twin-engine airplane icon is positioned on a flight track over Vineyard/Orem. A blue location pinpoint with a white center dot sits near Provo Airport.
+  * **Bottom Overlay/Dashboard:** A large, dark grey translucent floating panel
+  occupies the bottom third of the frame.
+    * Header reads "Playback of flight N59906" in bold white text.
+    * Left column metrics: "GREAT CIRCLE DISTANCE: N/A", "AVERAGE FLIGHT TIME: -", "ACTUAL FLIGHT TIME: 2:39", "AVERAGE ARRIVAL DELAY: -", followed by the Flightradar24 logo.
+    * Central section shows "FROM Provo (PVU)" to "TO Provo (PVU)" with a dotted directional arrow in between. 
+    * Playback controls include a circular play button with a white triangle, a bright yellow progress slider bar with a white airplane scrubber icon positioned near the right end.
+    * Telemetry gauges underneath the scrubber bar list:
+      * "TIME: 5:35 PM UTC"
+      * "BAROMETRIC ALTITUDE: 19,000 FT" (with "GPS ALTITUDE" below marked by a yellow padlock icon)
+      * "GROUND SPEED: 212 KTS" (with "TRUE AIRSPEED" below marked by a yellow padlock icon)
+      * "VERTICAL SPEED: 0 FPM" (with "INDICATED AIRSPEED" below marked by a yellow padlock icon)
+      * "TRACK: 44°"
+      * "SQUAWK: 4323"
+      * Control icons for expand/fullscreen, measure/polyline, and 3D view are located under the time display.
+    * Right column: Contains a crisp inset photograph (~18% of the frame) of the actual aircraft—a twin-propeller Piper Navajo Chieftain painted white with dark blue stripes along the fuselage and tail fin, parked on an asphalt tarmac under a blue sky. The photo credit in the lower left reads "© ChrisJake | Jetphotos". A blue square close button with a white "X" is on its top right corner. Below the photo, white text lists:
+      * "AIRCRAFT: Piper Navajo Chieftain"
+      * "REGISTRATION: N59906"
+      * "SERIAL NUMBER (MSN): 31-7552027"
+  * **Bottom Status Bar:** A solid dark grey bar along the very bottom contains
+  empty table headers: "DATE", "FROM", "TO", "FLIGHT", "FLIGHT TIME", "STD",
+  "ATD", "STA", "STATUS".
+
+
+  ## Composition
+
+  * **Layout:** Flat graphic screenshot / dashboard UI overlaying a 2D
+  topographic geographic map.
+
+  * **Frame Distribution:** 
+    * The map canvas occupies ~100% of the background, with approximately 65% fully visible across the upper and middle areas.
+    * The bottom data HUD occupies ~35% of the total frame height spanning the entire width at the base.
+    * The aircraft photograph sits at FRAME-RIGHT within the dashboard, occupying approximately 12% of total screen real estate.
+  * **Visual Lines & Balance:** Strong diagonal lines formed by the parallel
+  northeast-southwest flight tracks guide the viewer's gaze across the center
+  from Utah Lake toward the Wasatch Mountain range. The bottom overlay grounds
+  the image with horizontal symmetry and balanced data blocks.
+
+
+  ## Location
+
+  * **City/Area:** Provo / Orem area (Utah County), Utah (UT), United States
+  (inland, mountain valley / Great Basin region, high elevation).
+
+  * **Reasoning:** Clearly labeled geographic map showing Provo, Utah Lake,
+  Orem, and Wasatch Range peaks, centered on Provo Municipal Airport (PVU).
+
+
+  ## Setting & Place
+
+  Digital computer screen interface showing an aerial mapping dashboard. The
+  geographic map depicts an outdoor, natural and suburban terrain setting
+  encompassing Utah Lake, agricultural patches, urban street grids of
+  Provo/Orem, and rugged mountain topography.
+
+
+  ## Lighting
+
+  Digital graphic display lighting. The embedded aircraft photo was taken in
+  direct, hard DAYTIME sunlight, casting dark shadows beneath the plane's wings
+  and fuselage onto the tarmac. The topographic map uses simulated 3D
+  sun-shading from the northwest to accentuate mountain ridges and relief
+  textures.
+
+
+  ## Cinematography
+
+  * **Shot Type:** Full-frame digital graphical user interface (GUI) capture /
+  bird's-eye satellite cartographic projection.
+
+  * **Camera Angle:** Directly overhead (orthographic top-down map view).
+
+  * **Focus/Depth:** Infinite digital focus across the UI and vector graphics;
+  all text, lines, and map terrain are pin-sharp with no optical depth of field.
+
+
+  ## People
+
+  No people in frame.
+
+
+  ## Objects & Text
+
+  * **Objects:** Computer interface elements, slider bars, buttons, digital
+  vector paths, embedded photograph of a twin-engine fixed-wing propeller
+  aircraft (Piper Navajo Chieftain).
+
+  * **Text / Signage (verbatim selections):**
+    * "flightradar24 LIVE AIR TRAFFIC"
+    * "19:59 UTC"
+    * "Flight tracker map > Aviation data > Aircraft > N59906"
+    * "Playback of flight N59906"
+    * "Provo (PVU)"
+    * "GREAT CIRCLE DISTANCE N/A", "ACTUAL FLIGHT TIME 2:39"
+    * "TIME 5:35 PM UTC", "BAROMETRIC ALTITUDE 19,000 FT", "GROUND SPEED 212 KTS", "VERTICAL SPEED 0 FPM", "TRACK 44°", "SQUAWK 4323"
+    * "© ChrisJake | Jetphotos"
+    * "AIRCRAFT Piper Navajo Chieftain", "REGISTRATION N59906", "SERIAL NUMBER (MSN) 31-7552027"
+    * Map labels: "Utah Lake", "Provo", "Orem", "Mt Timpanogos", "Spanish Fork", "Lehi", "Vineyard", etc.
+
+  ## Colors & Mood
+
+  * **Palette:** Dominant dark charcoal/black (`#222` to `#333`) in the UI
+  containers; muted earthy greens, tans, and browns in the topography; light
+  teal-blue for Utah Lake; bright cyan, sky blue, and vibrant yellow (`#FFCC00`)
+  for the flight lines, icons, and status scrubbers.
+
+  * **Mood:** Technical, analytical, precise, modern, and informative.

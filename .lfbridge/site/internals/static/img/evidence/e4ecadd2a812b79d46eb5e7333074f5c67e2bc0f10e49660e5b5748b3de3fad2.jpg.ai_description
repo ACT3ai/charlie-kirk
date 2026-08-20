@@ -1,0 +1,128 @@
+source: site/internals/static/img/evidence/e4ecadd2a812b79d46eb5e7333074f5c67e2bc0f10e49660e5b5748b3de3fad2.jpg
+status: done
+engine: gemini-flash-latest
+provider: gemini
+generated: 2026-08-20T12:58:09.345Z
+kind: image
+description: >-
+  ## Overview
+
+  This image is a digital screenshot of a Google Trends web interface displaying
+  search analytics for the term "Michael Reynolds." The interface shows filter
+  settings including a specific region ("Washington DC (Hagersto..."), a
+  12-month time range, and an "Interest over time" line chart. The line chart
+  shows near-zero search volume across most of the timeline, followed by a sharp
+  spike reaching an index value of 100 during the week of September 14–20, 2025.
+
+
+  ## Hyper-Detail
+
+  The image presents a clean, modern user interface rendered in Google's
+  Material Design style with a pale slate-blue/gray background (`#EEF2F8`
+  approximate tone) and white rounded card containers.
+
+
+  1. **Top Section / Search Bar Area:**
+     - **Left Card:** A wide, white rectangular box with rounded corners contains a solid bright blue circular dot on the left, followed by the text "Michael Reynolds" in bold sans-serif font, with the subtext "Search term" directly below in a smaller, lighter gray font.
+     - **Right Card:** Adjacent to the search term card is a light bluish-gray tinted rounded rectangular card containing a gray plus icon (`+`) and the text "Compare".
+
+  2. **Filter Controls Bar:**
+     - Below the search terms, a horizontal row contains four pill-shaped dropdown menu buttons with light gray outlines and downward-pointing triangle carets on their right sides:
+       - Button 1: "Washington DC (Hagersto... ▾"
+       - Button 2: "Past 12 months ▾"
+       - Button 3: "All categories ▾"
+       - Button 4: "Web Search ▾"
+
+  3. **Main Content Card ("Interest over time"):**
+     - A large white card with rounded corners occupies the lower ~65% of the screenshot.
+     - **Header:** Top-left of the card displays "Interest over time" followed by a small circular help/info icon containing a question mark (`?`).
+     - **Action Icons:** Top-right of the card displays three dark gray vector icons: a download/tray arrow icon, an embed code icon (`< >`), and a share/network node icon.
+     - **Graph Area:**
+       - Horizontal grid lines correspond to Y-axis index values: 0 (baseline), 25, 50, 75, and 100, labeled in small gray numbers on the left edge.
+       - X-axis date labels along the bottom baseline include "Oct 27, 2024", "Feb 16, 2025", "Jun 8, 2025", and "Sep 28, 2025".
+       - The trend line is rendered in solid blue (`#4285F4`). It remains flat at zero from October 2024 through early September 2025.
+       - In mid-September 2025, the line shoots steeply upward to a peak of 100, marked by a solid blue data point circle, drops sharply back down to zero, and shows a secondary smaller bump peaking around index value ~12 before sloping down toward zero.
+     - **Tooltip Box:**
+       - An active rectangular tooltip box with a thin gray border floats just to the left of the peak.
+       - The top line reads "Sep 14 – 20, 2025".
+       - Below a thin horizontal separator line, it lists "Michael Reynolds" on the left and "100" in blue text aligned to the right.
+
+  ## Composition
+
+  - **Layout & Structure:** UI layout organized into modular, floating
+  rectangular cards with rounded corners on a pale background.
+
+  - **Top Row (0% to ~20% vertical):** Search query and comparison input fields
+  span horizontally from FRAME-LEFT to FRAME-RIGHT.
+
+  - **Filter Row (~20% to ~30% vertical):** Four dropdown filter buttons
+  arranged left-to-right across FRAME-LEFT and FRAME-CENTER.
+
+  - **Main Chart Card (~32% to 100% vertical):** Occupies roughly 65% of the
+  overall frame, centered with margins on the left, right, and bottom.
+
+  - **Focal Point:** The high, sharp blue spike and its accompanying tooltip box
+  located at FRAME-MID-RIGHT (~75% to 85% horizontal width).
+
+  - **Balance:** Asymmetrical visual weight due to the flat baseline across the
+  left two-thirds and the sudden vertical spike on the right third.
+
+
+  ## Location
+
+  - **Indeterminate:** This is a digital software user interface screenshot, not
+  a physical real-world location. (The geographical filter setting selected
+  within the software is "Washington DC (Hagerstown MD)", United States).
+
+
+  ## Setting & Place
+
+  - **Type:** Digital graphical user interface (GUI) of a web application
+  (Google Trends).
+
+
+  ## Lighting
+
+  - **Lighting:** Not applicable (flat, digital 2D rendering with no 3D
+  lighting, shadows, or photography).
+
+
+  ## Cinematography
+
+  - **Type:** 2D digital screen capture / UI graphic. No physical camera, lens,
+  or optical perspective involved.
+
+
+  ## People
+
+  No people in frame.
+
+
+  ## Objects & Text
+
+  - **Digital UI Elements:** Search inputs, dropdown buttons, line chart, axis
+  labels, tooltip container, vector icons (plus, dropdown arrows, help icon,
+  download, embed, share).
+
+  - **Legible Text:**
+    - "Michael Reynolds"
+    - "Search term"
+    - "+ Compare"
+    - "Washington DC (Hagersto..."
+    - "Past 12 months"
+    - "All categories"
+    - "Web Search"
+    - "Interest over time"
+    - "100", "75", "50", "25"
+    - "Oct 27, 2024", "Feb 16, 2025", "Jun 8, 2025", "Sep 28, 2025"
+    - "Sep 14 – 20, 2025"
+    - "Michael Reynolds   100"
+
+  ## Colors & Mood
+
+  - **Dominant Palette:** Google Material theme palette composed of clean white
+  (`#FFFFFF`), pale slate/periwinkle gray background (`#EEF2F8`), medium neutral
+  grays for text and axes (`#5F6368` / `#70757A`), and bright Google Blue
+  accents (`#4285F4`).
+
+  - **Mood / Tone:** Objective, analytic, clean, informational, and minimalist.

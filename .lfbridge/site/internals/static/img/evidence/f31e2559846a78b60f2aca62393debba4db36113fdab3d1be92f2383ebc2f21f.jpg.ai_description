@@ -1,0 +1,147 @@
+source: site/internals/static/img/evidence/f31e2559846a78b60f2aca62393debba4db36113fdab3d1be92f2383ebc2f21f.jpg
+status: done
+engine: gemini-flash-latest
+provider: gemini
+generated: 2026-08-20T12:58:47.970Z
+kind: image
+description: >-
+  ## Overview
+
+  This is a digital screen capture of the flight tracking service interface from
+  Flightradar24 displaying a flight playback summary. The graphic details a
+  flight route operated by a Dassault Falcon 7X aircraft (registration SU-BTT)
+  traveling from Provo (PVU) to Wilmington (ILG). An inset photograph on the
+  right panel shows the private jet in flight against a bright sky, while a red
+  oval is manually drawn in the upper-left corner highlighting the text "SUBTT".
+
+
+  ## Hyper-Detail
+
+  The image presents a structured user interface divided into several functional
+  zones against a dark charcoal-gray background with white and light-gray
+  typography. 
+
+
+  At the very top, a slightly lighter gray horizontal banner spans the header
+  with white text reading "Playback of flight SUBTT", where "SUBTT" is enclosed
+  within a hand-drawn, semi-transparent red oval markup.
+
+
+  Below the top header, the main informational dashboard is split into columns:
+
+  - **Leftmost Column:** Contains text metrics including "GREAT CIRCLE DISTANCE"
+  (labeled with "3,065 KM"), "AVERAGE FLIGHT TIME" (value "-"), "ACTUAL FLIGHT
+  TIME" (value "3:37"), and "AVERAGE ARRIVAL DELAY" (value "-"). At the bottom
+  left rests the official "flightradar24" logo featuring its circular
+  yellow-and-white radar icon beside the white brand name with a gold-yellow
+  "24".
+
+  - **Central Area (Route & Flight Status):** Displays the origin "FROM" as
+  "Provo (PVU)" and destination "TO" as "Wilmington (ILG)". Between them is a
+  horizontal segmented gray arrow pointing from left to right. Beneath this
+  route line is a playback scrubber bar with a circular play button icon on the
+  left, an icon of a white passenger jet oriented toward the right along the
+  track line, and a gray progress bar.
+
+  - **Lower Telemetry Grid:** Below the playback track, live telemetry metrics
+  are displayed in neat columns:
+    - "TIME": "1:08 PM UTC", underneath which are three UI control buttons enclosed in dark gray boxes (a fullscreen/expand icon, a waypoint/route path icon, and an elevation graph icon).
+    - "BAROMETRIC ALTITUDE": "0 FT" over "GPS ALTITUDE": "N/A".
+    - "GROUND SPEED": "4 KTS" over "TRUE AIRSPEED": "N/A".
+    - "VERTICAL SPEED": "0 FPM" over "INDICATED AIRSPEED": "N/A".
+    - "TRACK": "185°" over "SQUAWK": "0000".
+  - **Rightmost Panel (Aircraft Profile):** A rectangular section occupying the
+  rightmost fifth of the frame. The upper portion contains a color photograph of
+  a Dassault Falcon 7X tri-jet airplane captured from below in flight against a
+  light blue sky with faint clouds. The aircraft features a white fuselage with
+  a red, white, and black striped vertical stabilizer (resembling the Egyptian
+  flag motif). A copyright watermark in white text at the bottom left of the
+  photo reads "© Augustin Piffard | Jetphotos". Below the photo, the panel lists
+  aircraft metadata: "AIRCRAFT" ("Dassault Falcon 7X"), "REGISTRATION"
+  ("SU-BTT"), and "SERIAL NUMBER (MSN)" ("239").
+
+
+  ## Composition
+
+  - **Layout:** A flat, digital graphical user interface layout (horizontal
+  landscape banner ratio).
+
+  - **Frame Occupancy:**
+    - Left telemetry and route summary (FRAME-LEFT to FRAME-CENTER): ~78% of the frame.
+    - Aircraft photo and specifications sidebar (FRAME-RIGHT): ~22% of the frame.
+    - Highlight annotation: Red ellipse located at TOP FRAME-LEFT / FRAME-CENTER, encircling the registration text.
+  - **Balance & Focus:** Structured visual hierarchy with large typography for
+  airport names ("Provo", "Wilmington") commanding the upper center. The visual
+  weight is balanced on the right by the photographic inset. Everything is
+  rendered digitally sharp with no lens-based depth of field.
+
+
+  ## Location
+
+  (Indeterminate). The image is a software interface screenshot. The locations
+  referenced textually are Provo, Utah, USA (PVU) and Wilmington, Delaware (or
+  North Carolina), USA (ILG).
+
+
+  ## Setting & Place
+
+  Digital application environment (Flightradar24 playback view / web interface).
+
+
+  ## Lighting
+
+  Not applicable (digital user interface graphic). The inset photograph within
+  the right panel was taken in natural daylight under bright, open-sky
+  conditions.
+
+
+  ## Cinematography
+
+  Direct digital screenshot (2D graphic capture). The inset image on the right
+  is a telephoto medium-shot tracking photo of an aircraft in mid-flight from a
+  low, ground-to-air camera angle.
+
+
+  ## People
+
+  No people in frame.
+
+
+  ## Objects & Text
+
+  - **Logos & Branding:**
+    - "flightradar24" logo with concentric circle radar symbol.
+    - "Jetphotos" credit line.
+  - **All Legible Text (verbatim):**
+    - "Playback of flight SUBTT"
+    - "GREAT CIRCLE DISTANCE 3,065 KM"
+    - "AVERAGE FLIGHT TIME -"
+    - "ACTUAL FLIGHT TIME 3:37"
+    - "AVERAGE ARRIVAL DELAY -"
+    - "flightradar24"
+    - "FROM Provo (PVU)"
+    - "TO Wilmington (ILG)"
+    - "TIME 1:08 PM UTC"
+    - "BAROMETRIC ALTITUDE 0 FT"
+    - "GPS ALTITUDE N/A"
+    - "GROUND SPEED 4 KTS"
+    - "TRUE AIRSPEED N/A"
+    - "VERTICAL SPEED 0 FPM"
+    - "INDICATED AIRSPEED N/A"
+    - "TRACK 185°"
+    - "SQUAWK 0000"
+    - "© Augustin Piffard | Jetphotos"
+    - "AIRCRAFT Dassault Falcon 7X"
+    - "REGISTRATION SU-BTT"
+    - "SERIAL NUMBER (MSN) 239"
+  - **Objects:**
+    - Dassault Falcon 7X business jet (in photo).
+    - Playback buttons, progress bar, icons, and UI telemetry blocks.
+
+  ## Colors & Mood
+
+  - **Color Palette:** Dark charcoal gray (`#333333` range), slate gray, pure
+  white text, accent yellow ("24" logo), bright red (drawn circle annotation),
+  and sky blue / white (in the aircraft photograph).
+
+  - **Mood:** Informative, analytical, technical, clean, and data-driven.

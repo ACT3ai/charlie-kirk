@@ -1,0 +1,108 @@
+source: site/internals/static/img/evidence/eab5cfe371bab4cdcac1eb213fefe6d8ffdcc89d71974d9d93ae389075308692.jpg
+status: done
+engine: gemini-flash-latest
+provider: gemini
+generated: 2026-08-20T12:58:28.502Z
+kind: image
+description: >-
+  ## Overview
+
+  This image is a direct digital screenshot of a Google Trends interface page.
+  It displays search interest data for the search term "Elena Vasquez" filtered
+  for the region of Israel over a 12-month timeline. The line graph shows a
+  single, sharp vertical spike reaching an index value of 100 in late October
+  2024, followed by a flat baseline of zero interest through September 2025.
+
+
+  ## Hyper-Detail
+
+  The entire image consists of a graphical user interface (GUI) rendered on a
+  light blue-gray canvas background (`#EBF0F8` approximate).
+
+
+  * **Top Search Box Area**:
+    * Top-left: A white rounded rectangular card containing a solid blue dot on the left, followed by the text "Elena Vasquez" in a medium sans-serif font, with "Search term" in a smaller, light-gray font beneath it.
+    * Top-right: A light blue-gray rounded rectangle container featuring a gray plus sign (`+`) and the text "Compare".
+  * **Filter Bar Area**:
+    * Located immediately below the search box inside a horizontal row are four distinct pill-shaped white dropdown buttons with gray outlines and subtle drop shadows:
+      1. "Israel" with a small downward-pointing arrow triangle.
+      2. "Past 12 months" with a downward triangle.
+      3. "All categories" with a downward triangle.
+      4. "Web Search" with a downward triangle.
+  * **Chart Card Area**:
+    * A large white rounded rectangular container covers the lower two-thirds of the screen.
+    * Header: At the top left of this card, the heading "Interest over time" is displayed next to a circular outline containing a question mark icon (`?`).
+    * Action Icons: At the top right of this card, three small gray utility icons appear in a row: a download/export arrow pointing down into an open tray, an embed code icon (`< >`), and a share/branch icon.
+    * Line Graph Grid:
+      * Vertical Y-axis (left side): Light gray horizontal grid lines correspond to numeric index markers labeled "100", "75", "50", and "25". The numbers are rendered in small gray sans-serif text.
+      * Horizontal X-axis (bottom): Shows baseline date markers: "Oct 20, 2024" (left), "Feb 9, 2025" (left-center), "Jun 1, 2025" (right-center), and "Sep 21, 2025" (right).
+      * Data Line: A solid, vibrant blue line starts near zero before rising sharply to a peak of 100 directly around "Oct 20, 2024", immediately dropping back down to 0 shortly thereafter, and remaining entirely flat at 0 along the bottom axis across the entire remaining timeline to September 2025.
+
+  ## Composition
+
+  * **Top Third**: Search bar and comparison inputs occupying approximately 25%
+  of the frame (Search term card at FRAME-LEFT occupying ~40% width, Compare
+  card at FRAME-RIGHT occupying ~45% width).
+
+  * **Middle Band**: Filter dropdown pill buttons spanning horizontally across
+  FRAME-LEFT to FRAME-CENTER, occupying ~8% of the frame height.
+
+  * **Bottom Two-Thirds**: Main "Interest over time" card occupying ~65% of the
+  frame, spanning from FRAME-LEFT to FRAME-RIGHT.
+
+  * The visual weight is anchored at the lower-left by the sharp, prominent blue
+  spike on the graph. The layout follows standard modern web design grid
+  conventions with 2D flat presentation and complete focus uniformity (no camera
+  depth of field).
+
+
+  ## Location
+
+  (indeterminate) – Digital user interface / web page capture; not a physical
+  geographical location.
+
+
+  ## Setting & Place
+
+  Digital environment: Web browser application interface (Google Trends UI).
+
+
+  ## Lighting
+
+  Not applicable (Digital UI rendering with flat graphic display, uniform
+  digital white and soft UI drop shadows).
+
+
+  ## Cinematography
+
+  Direct digital screen capture; 2D orthographic computer display rendering (no
+  camera, lens, or optical distortion).
+
+
+  ## People
+
+  No people in frame.
+
+
+  ## Objects & Text
+
+  * **Search / Filter Text**:
+    * "Elena Vasquez"
+    * "Search term"
+    * "+ Compare"
+    * "Israel"
+    * "Past 12 months"
+    * "All categories"
+    * "Web Search"
+  * **Chart Text & Values**:
+    * "Interest over time"
+    * Y-axis: "100", "75", "50", "25"
+    * X-axis: "Oct 20, 2024", "Feb 9, 2025", "Jun 1, 2025", "Sep 21, 2025"
+
+  ## Colors & Mood
+
+  * **Palette**: Clean white, light pastel blue-gray background, Google Trends
+  primary blue (`#4285F4`), and neutral mid-to-dark grays for typography and UI
+  borders.
+
+  * **Mood**: Analytic, clinical, clean, objective data visualization.

@@ -1,0 +1,163 @@
+source: site/internals/static/img/evidence/e0b9e32b67f18e795a496db4c2a23ff3ecf28f527551a5c0d00e932d82ca2802.jpg
+status: done
+engine: gemini-flash-latest
+provider: gemini
+generated: 2026-08-20T12:57:57.015Z
+kind: image
+description: >-
+  ## Overview
+
+  This image is a digital screen capture of a spreadsheet interface,
+  specifically Google Sheets, displayed on a computer screen. The spreadsheet
+  contains tabular data tracking flight itineraries, locations, dates, and
+  related events, organized under column headers such as "Index," "Date,"
+  "Flight," "Route," "Erika Location," "Event/Reason," "Overlap Window,"
+  "Charlie Present," and "Notes." The interface includes typical productivity
+  software elements such as the top toolbar with editing controls and column/row
+  identifiers along the top and left edges.
+
+
+  ## Hyper-Detail
+
+  The image presents a full software interface screenshot. Across the top
+  running horizontally is a light grey application toolbar containing various
+  spreadsheet control icons:
+
+  - Search bar ("Menus") on the far left with a magnifying glass icon.
+
+  - Undo, Redo, Print, Paint Format, Zoom dropdown (showing "100%").
+
+  - Currency ($), Percentage (%), Decimal decrease/increase (.0, .00), 123
+  format menu.
+
+  - Font dropdown ("Default..."), Font Size selector ("10"), Bold (B), Italic
+  (I), Strikethrough, Text color (A), Fill color (bucket), Borders grid icon,
+  Merge cells, Alignment options, Text wrapping, Text rotation, Link icon,
+  Comment icon, Insert chart, Filter icon, Functions ($\Sigma$).
+
+  - Below the toolbar is the formula bar area showing "H95" in the Name Box on
+  the left, followed by the formula input line.
+
+  - The spreadsheet grid features black header cells with white bold sans-serif
+  text across row 1:
+    - Column A: "Index"
+    - Column B: "Date"
+    - Column C: "Flight"
+    - Column D: "Route"
+    - Column E: "Erika Location"
+    - Column F: "Event/Reason"
+    - Column G: "Overlap Window"
+    - Column H: "Charlie Present"
+    - Column I: "Notes"
+  - Data rows span from visible row index 29 down to row 68 (labeled on the left
+  row index column). The rows alternate white backgrounds with thin grey
+  gridlines.
+
+  - The data cells contain text in a clean sans-serif typeface, aligned
+  according to standard conventions (numbers/dates/codes centered or
+  left-aligned, narrative notes left-aligned).
+
+  - Flight codes include "SU-BTT" and "SU-BND".
+
+  - Routes contain sequences connected by right arrows ($\rightarrow$), such as
+  "Cairo $\rightarrow$ Paris $\rightarrow$ Omaha $\rightarrow$ Lincoln
+  $\rightarrow$ Wilmington $\rightarrow$ Cairo", "Paris $\rightarrow$ Wichita
+  $\rightarrow$ Cairo", "Provo $\rightarrow$ Paris $\rightarrow$ Salt Lake
+  City", and "Leaves for Cairo via Goose Bay and Paris".
+
+  - "Erika Location" entries mention US states and cities: "Nebraska /
+  Delaware", "Utah", "Kansas", "Kansas / Delaware", "Provo, Utah", "Missouri",
+  "Illinois", etc.
+
+  - "Event/Reason" entries predominantly refer to "TPUSA appearances / media
+  engagements", "TPUSA / media events", "TPUSA / campus engagement", etc.
+
+  - "Overlap Window" consistently reads "$\pm 3$ days".
+
+  - "Charlie Present" column records binary "Yes" or "No" values.
+
+  - "Notes" column contains text such as "Multi-stop alignment; recurring
+  pattern", "Repeated multi-stop overlap", "Utah continues pattern of repeated
+  overlap", "Exact city-level overlap", "Kansas continues as recurring overlap
+  state", etc.
+
+  - On the right edge of the screen, a standard grey scrollbar vertical track is
+  visible with a mouse cursor arrow floating near row 56/57.
+
+
+  ## Composition
+
+  - **Screen UI Toolbar**: Occupies the top ~10% of the frame (FRAME-TOP).
+
+  - **Spreadsheet Table**: Dominates ~90% of the entire frame, stretching from
+  FRAME-LEFT to FRAME-RIGHT and down to the FRAME-BOTTOM.
+
+  - **Visual Balance**: Highly structured, grid-based layout with horizontal
+  rows and vertical columns creating strict geometric symmetry and leading
+  lines.
+
+  - **Depth of Field**: Flat 2D digital graphic rendering; edge-to-edge
+  sharpness with no focal blur.
+
+  - **Focal Point**: Drawn naturally across the tabular data from left to right
+  along the rows.
+
+
+  ## Location
+
+  - **Classification**: (indeterminate) / Digital interface.
+
+  - **Country**: United States (inferred from US-centric locations in the data:
+  Utah, Nebraska, Delaware, Kansas, Illinois, Missouri, and reference to TPUSA).
+
+
+  ## Setting & Place
+
+  - **Type**: Digital Software Interface / Web Application (Google Sheets).
+
+  - **Environment**: Virtual desktop workspace.
+
+
+  ## Lighting
+
+  - **Type**: Not applicable (direct digital screen render).
+
+  - **Luminance**: High-key, uniform digital white background with dark text and
+  black header fills.
+
+
+  ## Cinematography
+
+  - **Shot Type**: Direct digital capture / Screen capture (UI screenshot).
+
+  - **Angle**: Flat, front-on perpendicular screen presentation.
+
+  - **Lens/Distortion**: None (pixel-perfect 2D digital image).
+
+
+  ## People
+
+  No people in frame.
+
+
+  ## Objects & Text
+
+  - **Software**: Google Sheets web interface.
+
+  - **Prominent Column Headers**: "Index", "Date", "Flight", "Route", "Erika
+  Location", "Event/Reason", "Overlap Window", "Charlie Present", "Notes".
+
+  - **Selected Text Snippets**:
+    - Flight designations: "SU-BTT", "SU-BND"
+    - Acronyms: "TPUSA" (Turning Point USA)
+    - Locations: "Cairo", "Paris", "Omaha", "Lincoln", "Wilmington", "Wichita", "Provo", "Salt Lake City", "Goose Bay", "Minot", "St. Louis", "Giza"
+    - Dates visible: Various dates spanning from 2022 to 2025 (e.g., "2024-07-20", "2025-01-12", "2022-11-25", "2023-04-25").
+
+  ## Colors & Mood
+
+  - **Palette**: Monochromatic core with stark white (`#FFFFFF`), solid black
+  (`#000000`), light toolbar greys (`#E8EAED` / `#F1F3F4`), and subtle light
+  blue/grey accents on selected tool icons.
+
+  - **Mood**: Analytical, administrative, data-driven, investigative, and
+  formal.

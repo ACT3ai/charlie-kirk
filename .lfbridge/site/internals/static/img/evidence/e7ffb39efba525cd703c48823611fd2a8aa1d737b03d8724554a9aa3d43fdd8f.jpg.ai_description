@@ -1,0 +1,147 @@
+source: site/internals/static/img/evidence/e7ffb39efba525cd703c48823611fd2a8aa1d737b03d8724554a9aa3d43fdd8f.jpg
+status: done
+engine: gemini-flash-latest
+provider: gemini
+generated: 2026-08-20T12:58:21.063Z
+kind: image
+description: >-
+  ## Overview
+
+  This image is a vertical screenshot of a mobile GPS navigation application
+  (Google Maps) displaying a walking route between two urban addresses. The map
+  interface shows a downtown city grid with street names, building footprints,
+  points of interest, and a planned walking route marked in bright blue dotted
+  lines indicating an estimated travel time of 2 minutes. A navigation
+  destination pin and UI cards at the top and bottom frame the map view.
+
+
+  ## Hyper-Detail
+
+  The screenshot displays a digital map interface rendered in a flat graphic
+  vector style:
+
+  * **Top Route Input Card**: A floating white rounded rectangular card sits
+  near the top. It has two input fields connected vertically:
+    * Origin point with an open circle icon: "`919 N Market St`"
+    * Vertical three-dot ellipsis connecting the origin and destination icons.
+    * Destination point with a red map pin outline icon: "`920 N King St`"
+    * A right-hand vertical three-dot menu icon on the top right of the card, and an up/down swap arrow icon adjacent to the destination field.
+  * **Map Display Area**: 
+    * The street grid is oriented diagonally across the screen, angled from bottom-left to top-right and bottom-right to top-left.
+    * Roadways are rendered in white with green outlines (representing bike lanes or traffic flow) and yellow center/fill indicators on major paths.
+    * Building footprints are filled in pale beige/tan and light gray with subtle inner structural outlines.
+    * **Walking Route**: Depicted by a series of glowing cyan/blue circular dots starting from N Market St (represented by a gray circle origin dot) cutting through an open courtyard or walkway eastward toward N King St, ending at a prominent red 3D-style teardrop location pin located at 920 N King St.
+    * **Route Badge**: A blue rounded pill badge floating along the route displays a white walking figure icon alongside the text "`2 min`" and a small bus icon to its right.
+  * **Points of Interest / POI Markers**:
+    * Orange dining/utensil circles: "`Tonic Seafood & Steak`", "`DE.CO Food Hall`", "`Hummingbird and...`" (partially cut off), "`Br... Gr...`" (partially cut off).
+    * Pink lodging/bed icons: "`HOTEL DU PONT`", "`DoubleTree by Hilton Hotel Downtown...`" (partially cut off at bottom).
+    * Blue bank/financial circle: "`M&T Bank`" with a dollar sign icon (`$`).
+    * Purple landmark/castle icon: "`Rodney Square`".
+    * Orange coffee cup circle near Shipley St.
+    * Purple music note icon near 9th St.
+    * Light-blue square bus stop icons distributed along several corners, including route number shields labelled "`BUS 13`".
+  * **Street Labels visible**: "`Tatnall St`", "`N Shipley St`", "`N Market
+  St`", "`N French St`", "`N King St`" (implicit by destination), "`W 11th St`",
+  "`E 12th St`", "`W 9th St`", "`E 9th St`", "`E 10th St`".
+
+  * **Interactive UI Elements**:
+    * Top-right: Light-blue circular floating action button with a transit/directions icon.
+    * Bottom-left: A small rounded rectangular Street View live thumbnail preview showing a street-level perspective of tall urban buildings, asphalt road, and a parked dark sedan.
+    * Bottom-right: Floating white circular target/re-center button containing a blue dot indicator.
+  * **Bottom Sheet Navigation Bar**:
+    * Large title text: "`Walk`" on the left.
+    * Settings/filter sliders icon, share icon, and close ("`X`") button along the upper line of the bottom sheet.
+    * Action pill buttons below: A dark teal filled pill button reading "`>> Preview`", a light-cyan outline/filled button reading "`+ Add stops`", and a light-cyan button reading "`< Share`".
+    * A black home-indicator navigation bar is partially suggested by the screen bezel.
+
+  ## Composition
+
+  * **Top ~20% of frame**: Floating origin/destination search box overlaid
+  across the map background.
+
+  * **Middle ~60% of frame**: The main vector map display. The walking path and
+  destination pin are located in the center-right region.
+
+  * **Bottom ~20% of frame**: Bottom control drawer/sheet occupying the lower
+  horizontal band with action buttons.
+
+  * **Thumbnail inset**: Lower-left quadrant (~frame-left at ~75% vertical
+  height) occupying ~3% of the frame.
+
+  * **Visual balance**: Well-balanced mobile application UI with diagonal
+  leading lines created by the 45-degree rotated city street grid.
+
+
+  ## Location
+
+  * **City**: Wilmington
+
+  * **State/Region**: Delaware (DE)
+
+  * **Country**: United States
+
+  * **Reasoning**: Specific street grid intersection featuring prominent local
+  landmarks including `Rodney Square`, `HOTEL DU PONT`, `DE.CO Food Hall`, `919
+  N Market St`, and Delaware Transit Corporation bus route `BUS 13`.
+
+  * **Location Type**: Downtown urban center / medium city business district.
+
+
+  ## Setting & Place
+
+  * **Setting**: Digital user interface (UI) displaying an urban digital
+  cartography map.
+
+  * **Real-world place mapped**: Downtown Wilmington urban core, featuring
+  office buildings, historic hotel properties, public squares, and mixed-use
+  commercial food halls.
+
+
+  ## Lighting
+
+  * Not applicable (flat vector digital user interface rendering in standard
+  light/day mobile UI mode with bright white panels and clean digital drop
+  shadows beneath overlay cards).
+
+
+  ## Cinematography
+
+  * **Type**: Digital direct screenshot / screen capture from a mobile device
+  (smartphone).
+
+  * **Orientation**: Vertical / Portrait aspect ratio (9:19.5 or 9:20 typical
+  mobile phone display format).
+
+
+  ## People
+
+  No people in frame.
+
+
+  ## Objects & Text
+
+  * **Verbatim Text**:
+    * "`919 N Market St`"
+    * "`920 N King St`"
+    * "`Tonic Seafood & Steak`"
+    * "`HOTEL DU PONT`"
+    * "`DE.CO Food Hall`"
+    * "`M&T Bank`"
+    * "`Rodney Square`"
+    * "`DoubleTree by Hilton Hotel Downtown`"
+    * "`2 min`"
+    * "`Walk`"
+    * "`Preview`"
+    * "`Add stops`"
+    * "`Share`"
+    * "`W 11th St`", "`E 12th St`", "`E 10th St`", "`W 9th St`", "`E 9th St`"
+    * "`N Shipley St`", "`N Market St`", "`N French St`", "`Tatnall St`"
+    * "`BUS 13`"
+
+  ## Colors & Mood
+
+  * **Palette**: Clean white, light pastel beige, soft gray, vivid Google-map
+  cyan/blue, emerald green accents, bright red location pin marker, and
+  selective POI accents in orange, purple, and magenta.
+
+  * **Mood**: Functional, informational, modern, and navigational.

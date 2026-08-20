@@ -1,0 +1,122 @@
+source: site/internals/static/img/evidence/dd9f5ef6506242f59d81511748e22971ea91b887624c1653dfd7e983073b26c3.jpg
+status: done
+engine: gemini-flash-latest
+provider: gemini
+generated: 2026-08-20T12:57:48.153Z
+kind: image
+description: >-
+  ## Overview
+
+  The image is a direct digital screenshot of a structured spreadsheet tracking
+  flight itineraries and their verification statuses. The table features rows
+  numbered from 31 to 66 along the left edge, organized into columns covering
+  row index, date, aircraft registration/code, reported flight path, and
+  verification notes. The rows are color-coded in alternating blocks of bright
+  red, vibrant green, and yellow-green, indicating discrepancy or accuracy
+  findings.
+
+
+  ## Hyper-Detail
+
+  The image displays a clean, grid-based spreadsheet interface. 
+
+  - **Column 1 (Far Left)**: Narrow row index column with dark text over colored
+  cell backgrounds, listing sequential integers from `31` at the top to `66` at
+  the bottom.
+
+  - **Column 2 (Second from Left)**: Date column displaying dates in `M/D/YYYY`
+  format, ranging from `1/12/2025` down to `7/7/2025`, with several earlier
+  years interspersed (`2022`, `2023`, `2024`). The cells share a uniform soft
+  steel-blue background.
+
+  - **Column 3 (Center-Left)**: Aircraft/tail codes or identifiers, consistently
+  displaying either `SU-BTT` or `SU-BND` on the same steel-blue background.
+
+  - **Column 4 (Center-Right)**: Itinerary text showing departure, intermediate,
+  and destination points separated by right-facing arrows (`→`), such as
+  `PARIS→WICHITA→CAIRO`, `"LANDS IN PROVO, UTAH"`, `CAIRO→PARIS→MINOT→PROVO`,
+  and `PROVO→GOOSEBAY→PARIS→CAIRO`.
+
+  - **Column 5 (Rightmost)**: Notes and verification column. This column
+  contains categorical colored fills:
+    - **Red Cells**: Contain the repeated string `"The plane was in Egypt"`, `"Data doesn't go back this far"`, `"Provo→Wilmington→Cairo on 9/10 and 9/11"`, or `"The plane was in Provo from 5/23 until 9/13"`.
+    - **Green Cells**: Contain accuracy confirmations such as `"Accurate — Cairo→Paris→Goose Bay→Minot→Provo on 5/22 and 5/23"` and `"Accurate — Provo→Goose Bay→Paris on 9/13 and Paris→Cairo on 9/15"`.
+    - **Yellow/Light Green Cells**: Indicate partial accuracy with detailed corrections such as `"Partially Accurate — Cairo→Paris→Omaha→Lincoln on 7/19 and 7/20 Lincoln→Wilmington→Cairo on 7/26 and 7/27"`.
+  - The grid lines are fine and horizontal/vertical, separating each data point
+  cleanly. The font is a sans-serif typeface rendered in dark gray/black text.
+
+
+  ## Composition
+
+  - **Layout**: 100% of the frame is occupied by a 2D data table viewed
+  straight-on.
+
+  - **Horizontal Balance**:
+    - Left edge (~5% frame width): Row numbers.
+    - Left-center (~10% frame width): Dates.
+    - Mid-left (~8% frame width): Aircraft IDs (`SU-BTT`/`SU-BND`).
+    - Center (~32% frame width): Original itinerary routes.
+    - Right (~45% frame width): Verification remarks and status details.
+  - **Visual Weight**: Heavy visual contrast exists between the soft blue
+  central columns and the intensely saturated red and green cells on the right
+  and far-left index blocks.
+
+
+  ## Location
+
+  - **(Indeterminate)**: This is a digital software screenshot (data
+  analysis/spreadsheet) without geographic physical environment data.
+
+
+  ## Setting & Place
+
+  - **Type**: Digital document / spreadsheet view. No physical architectural
+  structure is present.
+
+
+  ## Lighting
+
+  - **Type**: Digital graphic rendering with uniform flat computer-generated
+  display luminescence; no photographic shadows, highlights, or directional
+  lighting.
+
+
+  ## Cinematography
+
+  - **Framing**: Full-frame graphic capture / screen grab.
+
+  - **Angle**: Flat, orthogonal 2D projection.
+
+  - **Depth of Field**: Infinite (flat digital graphic, everything is in sharp
+  focus).
+
+
+  ## People
+
+  No people in frame.
+
+
+  ## Objects & Text
+
+  Notable text entries visible in the table rows (31 to 66):
+
+  - **Codes**: `SU-BTT`, `SU-BND`
+
+  - **Frequent Locations Mentioned**: `PARIS`, `WICHITA`, `CAIRO`, `WILMINGTON`,
+  `PROVO`, `OMAHA`, `LINCOLN`, `MINOT`, `GOOSE BAY`, `ST. LOUIS`, `CHICAGO`,
+  `GIZA`, `MISSOURI`, `SALT LAKE CITY`.
+
+  - **Sample Key Texts**:
+    - `"The plane was in Egypt"`
+    - `"Data doesn't go back this far"`
+    - `"Accurate — Cairo→Paris→Goose Bay→Minot→Provo on 5/22 and 5/23"`
+    - `"Partially accurate — Cairo→Paris→St. Louis on 2/24 and 2/25, 1 week in St. Louis (KSUS), St. Louis→Wilmington on 3/2, Wilmington→Cairo on 3/4"`
+    - `"The plane was in Provo from 4/19 until 7/17"`
+
+  ## Colors & Mood
+
+  - **Dominant Palette**: Vibrant primary red (`#E6242B`), bright medium green
+  (`#27AE60`), pastel yellow-green (`#C8E667`), light steel/slate blue
+  (`#A6C2DE`), and white/dark gray grid/text.
+
+  - **Mood**: Analytical, administrative, factual, investigative, structured.
