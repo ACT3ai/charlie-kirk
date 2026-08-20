@@ -1,0 +1,264 @@
+source: videos/QmXnUdjEFm6WNbWboYd3cKFLT1a93E2unaTwGzmmrN5XnJ.mp4
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T13:32:09.407Z
+kind: image
+language: en-US
+text: >-
+  See All MLS Data
+
+  Is this your home?
+
+  Claim it on Homes.com to see your home stats and recent market updates in your
+  neighborhood.
+
+  Claim this home
+
+  Ownership History
+
+  We collect this data history from publicly available records. To have your
+  information removed, we recommend requesting
+
+  removal directly through your county's website.
+
+  Date
+
+  Name
+
+  Owned For
+
+  Dec 2025 - Present
+
+  13 Branches Family Trust
+
+  and Twiggs
+
+  6 Months
+
+  Owner Type
+
+  Private Individual
+
+  ^
+
+  Purchase Details
+
+  Closed on
+
+  Dec 4, 2025
+
+  Bought by
+
+  Current Estimated Value
+
+  13 Branches Family Trust
+
+  and Twiggs
+
+  $305,179
+
+  Sold by
+
+  Twiggs Amy R and Twiggs
+
+  Mikayla R
+blocks:
+  - text: See All MLS Data
+    confidence: 1
+    bbox:
+      - 0.029629630617283926
+      - -1.186239995121241e-10
+      - 0.11851851851851854
+      - 0.028469750889679735
+  - text: Is this your home?
+    confidence: 1
+    bbox:
+      - 0.06481481532407406
+      - 0.10320284653024914
+      - 0.15555555555555556
+      - 0.03558718861209964
+  - text: Claim it on Homes.com to see your home stats and recent market updates in
+      your neighborhood.
+    confidence: 1
+    bbox:
+      - 0.06250001374999954
+      - 0.15124555186419875
+      - 0.825
+      - 0.04875444771980475
+  - text: Claim this home
+    confidence: 1
+    bbox:
+      - 0.8203703713227514
+      - 0.21708185043213013
+      - 0.1333333333333333
+      - 0.042704626334519546
+  - text: Ownership History
+    confidence: 1
+    bbox:
+      - 0.03148148013888891
+      - 0.3345195731020165
+      - 0.16111111111111112
+      - 0.039145907473309594
+  - text: We collect this data history from publicly available records. To have your
+      information removed, we recommend requesting
+    confidence: 1
+    bbox:
+      - 0.033333370170596816
+      - 0.3807829186832741
+      - 0.9222221657081887
+      - 0.03202846975088969
+  - text: removal directly through your county's website.
+    confidence: 1
+    bbox:
+      - 0.03148147699074084
+      - 0.42348754466192173
+      - 0.3592592592592593
+      - 0.028469750889679624
+  - text: Date
+    confidence: 1
+    bbox:
+      - 0.038888889351851835
+      - 0.5088967975533808
+      - 0.040740740740740744
+      - 0.03202846975088969
+  - text: Name
+    confidence: 1
+    bbox:
+      - 0.274074074537037
+      - 0.5088967970462632
+      - 0.04629629629629628
+      - 0.02491103202846978
+  - text: Owned For
+    confidence: 1
+    bbox:
+      - 0.5073698266157959
+      - 0.5049954873675152
+      - 0.08711220070167824
+      - 0.03627237306370856
+  - text: Dec 2025 - Present
+    confidence: 1
+    bbox:
+      - 0.04259259407407405
+      - 0.5978647685765125
+      - 0.14814814814814814
+      - 0.02491103202846978
+  - text: 13 Branches Family Trust
+    confidence: 1
+    bbox:
+      - 0.27407407596296296
+      - 0.5800711742348755
+      - 0.18888888888888888
+      - 0.028469750889679735
+  - text: and Twiggs
+    confidence: 1
+    bbox:
+      - 0.27579703239694187
+      - 0.6177158133989556
+      - 0.08544297394929107
+      - 0.03147228756833331
+  - text: 6 Months
+    confidence: 1
+    bbox:
+      - 0.5073871053425284
+      - 0.5976733158970461
+      - 0.07226282755533853
+      - 0.02885265621850508
+  - text: Owner Type
+    confidence: 1
+    bbox:
+      - 0.7406632501921425
+      - 0.5081210406272383
+      - 0.09459942711724179
+      - 0.037138701333694235
+  - text: Private Individual
+    confidence: 1
+    bbox:
+      - 0.7407407385185186
+      - 0.5978647688612099
+      - 0.1333333333333333
+      - 0.02491103202846978
+  - text: ^
+    confidence: 1
+    bbox:
+      - 0.9370370367777778
+      - 0.59074733113879
+      - 0.025925925925925908
+      - 0.0462633451957295
+  - text: Purchase Details
+    confidence: 1
+    bbox:
+      - 0.0462962973611111
+      - 0.7010676154804271
+      - 0.1277777777777778
+      - 0.028469750889679735
+  - text: Closed on
+    confidence: 1
+    bbox:
+      - 0.04629629539351854
+      - 0.7615658359875446
+      - 0.07592592592592592
+      - 0.02491103202846967
+  - text: Dec 4, 2025
+    confidence: 1
+    bbox:
+      - 0.3869817204857523
+      - 0.7575597717500605
+      - 0.09270322587754987
+      - 0.04359931708230669
+  - text: Bought by
+    confidence: 1
+    bbox:
+      - 0.5184533358480463
+      - 0.7823085633845749
+      - 0.07975999337655526
+      - 0.03324764224558108
+  - text: Current Estimated Value
+    confidence: 1
+    bbox:
+      - 0.5203703685185185
+      - 0.8825622777580071
+      - 0.18518518518518523
+      - 0.02491103202846978
+  - text: 13 Branches Family Trust
+    confidence: 1
+    bbox:
+      - 0.7629629642592592
+      - 0.7580071179270462
+      - 0.19259259259259254
+      - 0.039145907473309594
+  - text: and Twiggs
+    confidence: 1
+    bbox:
+      - 0.8665981681244717
+      - 0.7966202497454244
+      - 0.0890258859705042
+      - 0.043770175811658985
+  - text: $305,179
+    confidence: 1
+    bbox:
+      - 0.8833333326851851
+      - 0.8754448394661921
+      - 0.07222222222222219
+      - 0.039145907473309705
+  - text: Sold by
+    confidence: 1
+    bbox:
+      - 0.04444444511574072
+      - 0.9003558723309608
+      - 0.05740740740740741
+      - 0.03558718861209964
+  - text: Twiggs Amy R and Twiggs
+    confidence: 1
+    bbox:
+      - 0.2833333347486772
+      - 0.8790035585409254
+      - 0.19814814814814813
+      - 0.039145907473309594
+  - text: Mikayla R
+    confidence: 1
+    bbox:
+      - 0.40180779936550276
+      - 0.9142853819222256
+      - 0.0797177350079572
+      - 0.043315359706131984

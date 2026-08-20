@@ -1,0 +1,307 @@
+source: videos/QmZ4hsVAUG4ZZeakKwAB1hmnoZsurUEC6ujy8aSy5ptCnY.mp4
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T13:32:10.459Z
+kind: image
+language: en-US
+text: >-
+  Ownership History
+
+  We collect this data history from publicly available records. To have your
+  information removed, we recommend requesting
+
+  removal directly through your county's website.
+
+  Date
+
+  Name
+
+  Owned For
+
+  Dec 2025 - Present
+
+  13 Branches Family Trust
+
+  and Twiggs
+
+  6 Months
+
+  Owner Type
+
+  Private Individual
+
+  ^
+
+  Purchase Details
+
+  Listed on
+
+  Oct 16, 2025
+
+  Buyer's Agent
+
+  Closed on
+
+  Sold by
+
+  Dec 4, 2025
+
+  List Price
+
+  2Ws
+
+  Current Estimated Value
+
+  Bought by
+
+  13 Branches Family Trust
+
+  and Twiggs
+
+  Daniel Salce
+
+  eXp Realty LLC
+
+  $350,000
+
+  16
+
+  $340,801
+
+  Seller's Agent
+
+  VAM Rear
+blocks:
+  - text: Ownership History
+    confidence: 1
+    bbox:
+      - 0.031481481134259276
+      - 0.05454545404545452
+      - 0.16111111111111112
+      - 0.040000000000000036
+  - text: We collect this data history from publicly available records. To have your
+      information removed, we recommend requesting
+    confidence: 1
+    bbox:
+      - 0.03148146993055581
+      - 0.10545454554545453
+      - 0.9240740740740742
+      - 0.029090909090909056
+  - text: removal directly through your county's website.
+    confidence: 1
+    bbox:
+      - 0.03148148749999977
+      - 0.14909090909090905
+      - 0.3611111111111111
+      - 0.029090909090909167
+  - text: Date
+    confidence: 1
+    bbox:
+      - 0.03888888851851853
+      - 0.23272727240000002
+      - 0.040740740740740744
+      - 0.032727272727272716
+  - text: Name
+    confidence: 1
+    bbox:
+      - 0.2720972781518718
+      - 0.23200436479249986
+      - 0.048398035543936235
+      - 0.03417308807373043
+  - text: Owned For
+    confidence: 1
+    bbox:
+      - 0.5073892070819488
+      - 0.2325395860055114
+      - 0.08707343913890697
+      - 0.03310264587402345
+  - text: Dec 2025 - Present
+    confidence: 1
+    bbox:
+      - 0.0425925944444444
+      - 0.3272727271363636
+      - 0.1481481481481481
+      - 0.025454545454545507
+  - text: 13 Branches Family Trust
+    confidence: 1
+    bbox:
+      - 0.2708333308854168
+      - 0.30327868920149825
+      - 0.1958333333333333
+      - 0.04098360581831495
+  - text: and Twiggs
+    confidence: 1
+    bbox:
+      - 0.2759259266666666
+      - 0.34545454600000003
+      - 0.0851851851851852
+      - 0.032727272727272716
+  - text: 6 Months
+    confidence: 1
+    bbox:
+      - 0.5055555564814814
+      - 0.3272727271818182
+      - 0.07407407407407418
+      - 0.029090909090909167
+  - text: Owner Type
+    confidence: 1
+    bbox:
+      - 0.740625361064731
+      - 0.2315340249175759
+      - 0.09467520537199803
+      - 0.03875013351440437
+  - text: Private Individual
+    confidence: 1
+    bbox:
+      - 0.7407407385185186
+      - 0.3272727274545455
+      - 0.1333333333333333
+      - 0.025454545454545396
+  - text: ^
+    confidence: 1
+    bbox:
+      - 0.9370370367592592
+      - 0.3163636365454545
+      - 0.02777777777777779
+      - 0.047272727272727355
+  - text: Purchase Details
+    confidence: 1
+    bbox:
+      - 0.0462962973611111
+      - 0.4327272726060607
+      - 0.1277777777777778
+      - 0.029090909090909056
+  - text: Listed on
+    confidence: 1
+    bbox:
+      - 0.04625883727920416
+      - 0.49415074315698115
+      - 0.06859343493426287
+      - 0.026243967576460414
+  - text: Oct 16, 2025
+    confidence: 1
+    bbox:
+      - 0.3832768406169384
+      - 0.48678688432345574
+      - 0.09640928197790077
+      - 0.04460805199363016
+  - text: Buyer's Agent
+    confidence: 1
+    bbox:
+      - 0.5222222232592593
+      - 0.4945454543272727
+      - 0.10370370370370363
+      - 0.029090909090909167
+  - text: Closed on
+    confidence: 1
+    bbox:
+      - 0.04813687836519896
+      - 0.6071456145676553
+      - 0.07409661610921224
+      - 0.025708772485906417
+  - text: Sold by
+    confidence: 1
+    bbox:
+      - 0.04442360530445292
+      - 0.6834948486396367
+      - 0.057449086507161455
+      - 0.033010302456942475
+  - text: Dec 4, 2025
+    confidence: 1
+    bbox:
+      - 0.3870370371296296
+      - 0.6036363641818182
+      - 0.09259259259259256
+      - 0.043636363636363584
+  - text: List Price
+    confidence: 1
+    bbox:
+      - 0.5184712169941511
+      - 0.6068129537943214
+      - 0.07231682671440975
+      - 0.030010455738414432
+  - text: 2Ws
+    confidence: 0.3
+    bbox:
+      - 0.5370370371296296
+      - 0.6872727269818182
+      - 0.02777777777777779
+      - 0.029090909090909056
+  - text: Current Estimated Value
+    confidence: 1
+    bbox:
+      - 0.5222222233641974
+      - 0.7636363641212122
+      - 0.18333333333333335
+      - 0.029090908223932455
+  - text: Bought by
+    confidence: 1
+    bbox:
+      - 0.04623767069810525
+      - 0.7848375370532134
+      - 0.07789503026891638
+      - 0.03032492377541285
+  - text: 13 Branches Family Trust
+    confidence: 1
+    bbox:
+      - 0.28888888975308646
+      - 0.7600000003333334
+      - 0.1925925925925926
+      - 0.039999999999999925
+  - text: and Twiggs
+    confidence: 1
+    bbox:
+      - 0.3925381943195048
+      - 0.7923508414448969
+      - 0.09084953731960715
+      - 0.051661952625621455
+  - text: Daniel Salce
+    confidence: 1
+    bbox:
+      - 0.8592592604629629
+      - 0.49090909077272726
+      - 0.09629629629629632
+      - 0.032727272727272716
+  - text: eXp Realty LLC
+    confidence: 1
+    bbox:
+      - 0.8500000010555555
+      - 0.5309090906545455
+      - 0.10555555555555562
+      - 0.032727272727272716
+  - text: $350,000
+    confidence: 1
+    bbox:
+      - 0.8758072006883475
+      - 0.5991694784161234
+      - 0.07801522855405452
+      - 0.04529740767045454
+  - text: "16"
+    confidence: 1
+    bbox:
+      - 0.9351851852083333
+      - 0.6799999995909091
+      - 0.020370370370370372
+      - 0.032727272727272716
+  - text: $340,801
+    confidence: 1
+    bbox:
+      - 0.8794633964965366
+      - 0.7517063240826869
+      - 0.07996209462483728
+      - 0.052950987382368586
+  - text: Seller's Agent
+    confidence: 1
+    bbox:
+      - 0.046296297592592565
+      - 0.8836363634545455
+      - 0.10370370370370369
+      - 0.029090909090909056
+  - text: VAM Rear
+    confidence: 1
+    bbox:
+      - 0.3055555567592592
+      - 0.9236363636363636
+      - 0.07222222222222224
+      - 0.021818181818181848

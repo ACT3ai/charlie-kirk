@@ -1,0 +1,201 @@
+source: videos/QmPZYMTEWB6xA3qLGzs28s4qDVDr7RuL4UJ2K6b5sMXAN5.mp4
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T13:31:55.535Z
+kind: image
+language: en-US
+text: |-
+  Jeremy Gallman
+  TPUSA camera operator
+  jeremyfilm
+  Phoenix, Arizona
+  ANETION
+  TORAYNETION
+  TONY USA
+  EB
+  FINE: PROVE ME WRONG / PROVE ME WRONG
+  yret
+  PROVE ME WRUNG PHUVE ME WRUNG
+  CHIU
+  YREFY.COM
+  COMEBAC
+  AMER LAN
+  У COMER
+  MER LAN
+  MERIA
+  Jeremy Gallman
+  Camera Operator & Video E
+  University of Alaska Anchor
+  Point USA
+  Phoeni
+  vizona, United Sta
+blocks:
+  - text: Jeremy Gallman
+    confidence: 1
+    bbox:
+      - 0.041116449100459695
+      - 0.013030554645897752
+      - 0.9090461730957031
+      - 0.1774272620677948
+  - text: TPUSA camera operator
+    confidence: 1
+    bbox:
+      - 0.1816860615420201
+      - 0.23974609429546934
+      - 0.6293604373931885
+      - 0.05821902118623257
+  - text: jeremyfilm
+    confidence: 1
+    bbox:
+      - -0.0022737780333598884
+      - 0.2976053404489083
+      - 0.11291158944368362
+      - 0.034941285848617554
+  - text: Phoenix, Arizona
+    confidence: 1
+    bbox:
+      - 0.0043604672165356295
+      - 0.32558139556002397
+      - 0.14244185388088226
+      - 0.02761627919971943
+  - text: ANETION
+    confidence: 1
+    bbox:
+      - 0.48392089228285573
+      - 0.36598733353689283
+      - 0.05541402846574783
+      - 0.018025333061814308
+  - text: TORAYNETION
+    confidence: 1
+    bbox:
+      - 0.1925398967082077
+      - 0.3938409420242246
+      - 0.0796477422118187
+      - 0.02063482254743576
+  - text: TONY USA
+    confidence: 1
+    bbox:
+      - 0.06825531101890324
+      - 0.40619572721187314
+      - 0.06343822181224824
+      - 0.024916410446166992
+  - text: EB
+    confidence: 1
+    bbox:
+      - 0.6497093022734362
+      - 0.3837209300503073
+      - 0.031976744532585144
+      - 0.010174418799579144
+  - text: "FINE: PROVE ME WRONG / PROVE ME WRONG"
+    confidence: 1
+    bbox:
+      - 0.39939623623778364
+      - 0.3859347017107868
+      - 0.45465120673179626
+      - 0.08852862566709518
+  - text: yret
+    confidence: 1
+    bbox:
+      - 0.377906976810024
+      - 0.6700581392883653
+      - 0.02761627919971943
+      - 0.015988372266292572
+  - text: PROVE ME WRUNG PHUVE ME WRUNG
+    confidence: 1
+    bbox:
+      - 0.4779487873859346
+      - 0.6150900933253541
+      - 0.32757580280303955
+      - 0.055209606885910034
+  - text: CHIU
+    confidence: 1
+    bbox:
+      - 0.4956395355648492
+      - 0.6700581394693331
+      - 0.037790697067976
+      - 0.011627906933426857
+  - text: YREFY.COM
+    confidence: 1
+    bbox:
+      - 0.5673837212698258
+      - 0.6580523253435423
+      - 0.03973837196826935
+      - 0.014447675086557865
+  - text: COMEBAC
+    confidence: 1
+    bbox:
+      - 0.4454098212059773
+      - 0.6829622387422927
+      - 0.09441935271024704
+      - 0.03728107735514641
+  - text: AMER LAN
+    confidence: 1
+    bbox:
+      - 0.40988372083787816
+      - 0.7776162799790789
+      - 0.056686047464609146
+      - 0.03634856455028057
+  - text: У COMER
+    confidence: 1
+    bbox:
+      - 0.40697674467177636
+      - 0.8066406251394982
+      - 0.050872091203927994
+      - 0.03076171875
+  - text: MER LAN
+    confidence: 1
+    bbox:
+      - 0.5854937065528858
+      - 0.7725006581097353
+      - 0.09143230319023132
+      - 0.03942381218075752
+  - text: MERIA
+    confidence: 1
+    bbox:
+      - 0.5523255818810786
+      - 0.8401162797826556
+      - 0.050872091203927994
+      - 0.024709301069378853
+  - text: Jeremy Gallman
+    confidence: 1
+    bbox:
+      - 0.8168604640953894
+      - 0.825581395182979
+      - 0.15406976640224457
+      - 0.020348837599158287
+  - text: Camera Operator & Video E
+    confidence: 1
+    bbox:
+      - 0.8168604661390615
+      - 0.8486328129414463
+      - 0.18168604373931885
+      - 0.016192768700420856
+  - text: University of Alaska Anchor
+    confidence: 1
+    bbox:
+      - 0.818313954760794
+      - 0.8676757810366977
+      - 0.18023255467414856
+      - 0.01611328125
+  - text: Point USA
+    confidence: 1
+    bbox:
+      - 0.8183139522502367
+      - 0.8866279071780876
+      - 0.06540697813034058
+      - 0.013274436350911856
+  - text: Phoeni
+    confidence: 1
+    bbox:
+      - 0.8196642686232765
+      - 0.9050818154208087
+      - 0.04817146435379982
+      - 0.012510787695646286
+  - text: vizona, United Sta
+    confidence: 1
+    bbox:
+      - 0.8837209312230089
+      - 0.9055232560092406
+      - 0.11482557654380798
+      - 0.01308139506727457

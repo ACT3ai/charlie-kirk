@@ -1,0 +1,113 @@
+source: videos/QmZj41R5rbrBAjscyahjhzGs5WBgQZC41BwhnXfsJpiH2U.mp4
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T13:32:12.700Z
+kind: image
+language: en-US
+text: |-
+  Meet EksAyn
+  Anderson
+  Believer in Jesus Christ,
+  Husband, Father, Author,
+  Speaker
+  I don't have a Ph.D. in any subject.
+  I am not a professional counselor.
+  I don't have decades of counseling
+  families or helping marriages.
+  But there is at least one thing, that
+  happened long ago, that set me on a
+  journey that now compels me to take the
+  time to share with you:
+blocks:
+  - text: Meet EksAyn
+    confidence: 1
+    bbox:
+      - 0.09444444171296296
+      - 0.0809128631396957
+      - 0.6555555555555556
+      - 0.07468879668049799
+  - text: Anderson
+    confidence: 1
+    bbox:
+      - 0.09166666871527775
+      - 0.15975103727524198
+      - 0.4916666666666667
+      - 0.05809128630705396
+  - text: Believer in Jesus Christ,
+    confidence: 1
+    bbox:
+      - 0.09166667072916658
+      - 0.2427385895357883
+      - 0.6611111111111112
+      - 0.051867219917012486
+  - text: Husband, Father, Author,
+    confidence: 1
+    bbox:
+      - 0.09166666331944448
+      - 0.31120331955394187
+      - 0.6694444444444444
+      - 0.051867219917012486
+  - text: Speaker
+    confidence: 1
+    bbox:
+      - 0.09151991692528938
+      - 0.3833800986811895
+      - 0.2308490541246202
+      - 0.04444312257885441
+  - text: I don't have a Ph.D. in any subject.
+    confidence: 1
+    bbox:
+      - 0.0888888831944445
+      - 0.5311203320020746
+      - 0.6833333333333333
+      - 0.03526970954356845
+  - text: I am not a professional counselor.
+    confidence: 1
+    bbox:
+      - 0.0888888803472224
+      - 0.5933609958506224
+      - 0.6833333333333333
+      - 0.03319502074688796
+  - text: I don't have decades of counseling
+    confidence: 1
+    bbox:
+      - 0.08888888310185195
+      - 0.6514522822095435
+      - 0.6944444444444444
+      - 0.03526970954356845
+  - text: families or helping marriages.
+    confidence: 1
+    bbox:
+      - 0.09166667095238089
+      - 0.71161825727623
+      - 0.6
+      - 0.03526970954356845
+  - text: But there is at least one thing, that
+    confidence: 1
+    bbox:
+      - 0.09444444102777783
+      - 0.7738589212344398
+      - 0.6833333333333335
+      - 0.03526970954356845
+  - text: happened long ago, that set me on a
+    confidence: 1
+    bbox:
+      - 0.09166666146825399
+      - 0.8340248963100177
+      - 0.7277777777777777
+      - 0.03526970954356845
+  - text: journey that now compels me to take the
+    confidence: 1
+    bbox:
+      - 0.08611111698412688
+      - 0.8941908712655602
+      - 0.8222222222222222
+      - 0.03526970954356845
+  - text: "time to share with you:"
+    confidence: 1
+    bbox:
+      - 0.090916569982547
+      - 0.9503987828926528
+      - 0.4598467085096571
+      - 0.04067459146016861

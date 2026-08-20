@@ -1,0 +1,158 @@
+source: videos/Qmd1tFNno6udyvMMhrTVscNRcoj3sPMfYNtfrkqL2JJZZj.mp4
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T13:31:40.712Z
+kind: image
+language: en-US
+text: >-
+  63G-2-305(11)
+
+  9/9/2025
+
+  10:35 PM
+
+  Everyone 63G-2-305(1 1) from Event Services who reports to me just came to my
+  office letting me
+
+  know that two senators are coming tomorrow. He said that two people showed up
+  at their
+
+  offices asking to talk to police about a plan. 6 said they got them to police.
+  If this is
+
+  indeed true we do need to not
+
+  Does anyone have any additional information?
+
+  UVU 25-330:0023
+
+  63G-2-305(11)
+
+  9/9/2025
+
+  11:19 PM
+
+  The two gentlemen who showed up at
+
+  636-2-305(11)
+
+  office are NOT from a senator's office. They are
+
+  GOP reps who played like they knew more than they did!
+blocks:
+  - text: 63G-2-305(11)
+    confidence: 1
+    bbox:
+      - 0.10755813571506471
+      - 0.1653746788406254
+      - 0.22674419085184733
+      - 0.05943152109781902
+  - text: 9/9/2025
+    confidence: 1
+    bbox:
+      - 0.41424418569660637
+      - 0.1757105941588446
+      - 0.08866279125213616
+      - 0.03617571018360277
+  - text: 10:35 PM
+    confidence: 1
+    bbox:
+      - 0.5101209267539805
+      - 0.1778200710337159
+      - 0.08586279551188147
+      - 0.03195675743950743
+  - text: Everyone 63G-2-305(1 1) from Event Services who reports to me just came to
+      my office letting me
+    confidence: 1
+    bbox:
+      - 0.053779074344226824
+      - 0.2527777777307213
+      - 0.9040697733561197
+      - 0.041795864811649985
+  - text: know that two senators are coming tomorrow. He said that two people showed
+      up at their
+    confidence: 1
+    bbox:
+      - 0.05377907323073743
+      - 0.30232558075893956
+      - 0.8895348866780599
+      - 0.04674849333586506
+  - text: offices asking to talk to police about a plan. 6 said they got them to
+      police. If this is
+    confidence: 1
+    bbox:
+      - 0.05000000072916659
+      - 0.3481481474074075
+      - 0.85
+      - 0.05925925925925912
+  - text: indeed true we do need to not
+    confidence: 1
+    bbox:
+      - 0.05087210079226949
+      - 0.4055555555786712
+      - 0.30087207158406576
+      - 0.03888888888888886
+  - text: Does anyone have any additional information?
+    confidence: 1
+    bbox:
+      - 0.4665697639355328
+      - 0.40555555597025816
+      - 0.465116278330485
+      - 0.04664082703767003
+  - text: UVU 25-330:0023
+    confidence: 1
+    bbox:
+      - -2.051514647050112e-9
+      - 0.560723514043422
+      - 0.18168605168660484
+      - 0.038759690743905506
+  - text: 63G-2-305(11)
+    confidence: 1
+    bbox:
+      - 0.023255813833553716
+      - 0.671834625804182
+      - 0.27034883499145507
+      - 0.07235142036720565
+  - text: 9/9/2025
+    confidence: 1
+    bbox:
+      - 0.3386627911418767
+      - 0.6873385016265449
+      - 0.09156976540883383
+      - 0.03617571018360288
+  - text: 11:19 PM
+    confidence: 1
+    bbox:
+      - 0.4461267968071797
+      - 0.6866073159555448
+      - 0.08739756743113203
+      - 0.03763808144463432
+  - text: The two gentlemen who showed up at
+    confidence: 1
+    bbox:
+      - 5.506743239180878e-9
+      - 0.782945736005853
+      - 0.4200581232706706
+      - 0.04668389426337349
+  - text: 636-2-305(11)
+    confidence: 1
+    bbox:
+      - 0.4186046541912789
+      - 0.7881136948400217
+      - 0.062499996026356974
+      - 0.015503876297562225
+  - text: office are NOT from a senator's office. They are
+    confidence: 1
+    bbox:
+      - 0.4883721042230414
+      - 0.7803617569037858
+      - 0.5101744016011556
+      - 0.046511628892686674
+  - text: GOP reps who played like they knew more than they did!
+    confidence: 1
+    bbox:
+      - -5.521817551349765e-9
+      - 0.8397932828018427
+      - 0.6206395467122396
+      - 0.04909560592086226
