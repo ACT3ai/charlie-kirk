@@ -2,107 +2,145 @@ source: videos/QmYGg8Qa7xAPLAYnjKRPQaAXzHsnzxaSGewqLk4mNV9Y2Y.mp4
 status: done
 engine: gemini-flash-latest
 provider: gemini
-generated: 2026-08-20T13:13:52.778Z
-kind: video
+generated: 2026-08-20T13:37:52.299Z
+kind: image
 description: >-
   ## Overview
 
-  This clip presents a digital screen capture or graphic showing a
-  property/ownership history table from a website or database. The graphic lists
-  historical ownership records with dates, entity names, duration of ownership,
-  and owner types. Part of the lower record's name is redacted with a black
-  digital marker. The purpose is informational/investigative reporting or
-  documentary data presentation.
+  This image is a horizontal screenshot of a digital data table or website
+  record detailing ownership history. It features four main columns: "Date",
+  "Name", "Owned For", and "Owner Type". Two chronological rows are shown, with
+  one name entry partially redacted by black digital scribbles.
 
 
   ## Hyper-Detail
 
-  The visual displays a four-column data table on a clean white background with
-  subtle horizontal divider lines.
-
-  * **Column 1 (Date):** Lists date ranges ("Dec 2025 - Present", "Feb 2021 -
-  Dec 2025").
-
-  * **Column 2 (Name):** The top row reads "13 Branches Family Trust and
-  Twiggs". The second row shows text heavily obscured by black digital redaction
-  scribbles.
-
-  * **Column 3 (Owned For):** Displays time spans ("6 Months", "4 Years and 10
-  Months").
-
-  * **Column 4 (Owner Type):** Displays classification ("Private Individual" for
-  both rows) accompanied by small downward-pointing chevron icons (`v`) on the
-  far right.
+  The image consists of a digital user interface element on a stark white
+  background (`#FFFFFF`). A thin, solid horizontal gray line sits at the very
+  bottom of the table headers, separating them from the data rows. 
 
 
-  ## Shot-by-shot / Timeline
+  The header row displays four titles aligned horizontally:
 
-  * **00:00 - End:** Static graphic/screen recording displaying the ownership
-  table interface. No camera movement, cuts, or transitions occur.
+  1. "Date" (left-aligned above column 1)
+
+  2. "Name" (left-aligned above column 2)
+
+  3. "Owned For" (left-aligned above column 3)
+
+  4. "Owner Type" (left-aligned above column 4)
+
+
+  Below the header line, there are two data rows:
+
+  - **First Row:** 
+    - Date column shows: "Dec 2025 - Present"
+    - Name column shows: "13 Branches Family Trust and Twiggs" (spanning across two lines: "13 Branches Family Trust" on line 1, "and Twiggs" on line 2)
+    - Owned For column shows: "6 Months"
+    - Owner Type column shows: "Private Individual" followed on the far right by a small downward-pointing chevron/arrow icon (`⌄`).
+  - A faint, thin horizontal gray separator line sits between the first and
+  second row.
+
+  - **Second Row:**
+    - Date column shows: "Feb 2021 - Dec 2025"
+    - Name column features heavy, opaque black digital brush strokes completely redacting the underlying text name.
+    - Owned For column shows: "4 Years and 10 Months"
+    - Owner Type column shows: "Private Individual" followed on the far right by an identical downward-pointing chevron icon (`⌄`).
+
+  The typography uses a clean, modern, sans-serif font rendered in a dark
+  charcoal gray or black shade.
 
 
   ## Composition
 
-  * **Full Frame (100%):** A flat, direct view of a digital table UI.
+  The composition is entirely flat and two-dimensional, structured as a standard
+  digital user interface table occupying 100% of the frame.
 
-  * **FRAME-LEFT (approx. 10%–30%):** "Date" column.
+  - **Header Row:** Sits in the upper third across FRAME-LEFT to FRAME-RIGHT
+  (~20% vertical frame coverage).
 
-  * **FRAME-CENTER-LEFT (approx. 30%–60%):** "Name" column with redacted second
-  row.
+  - **First Data Row:** Positioned in the midground vertical space (~35%
+  vertical frame coverage).
 
-  * **FRAME-CENTER-RIGHT (approx. 60%–80%):** "Owned For" column.
+  - **Second Data Row:** Positioned across the lower third from FRAME-LEFT to
+  FRAME-RIGHT (~35% vertical frame coverage).
 
-  * **FRAME-RIGHT (approx. 80%–95%):** "Owner Type" column and chevron drop-down
-  icons.
+  - **Redaction Marking:** Located at FRAME-CENTER-LEFT in the second row,
+  covering ~10% of the total frame area.
+
+  - Visual weight is balanced across columns from left to right, with
+  left-aligned textual elements and right-aligned dropdown chevrons.
 
 
   ## Location
 
-  * (indeterminate) — Digital screen/interface.
+  (indeterminate) - This is a digital interface screenshot with no physical
+  geographic features.
 
 
   ## Setting & Place
 
-  * Interior / Digital display UI; no physical architectural setting present.
+  Digital screen capture / User Interface element from a property records,
+  domain registry, or asset management database website.
 
 
   ## Lighting
 
-  * Flat, high-key digital UI illumination (pure white background with
-  consistent artificial screen lighting).
+  Not applicable; flat digital graphic rendering with no real-world lighting,
+  cast shadows, or ambient light.
 
 
   ## Cinematography
 
-  * Static digital screen capture; zero camera angle/movement; flat 2D graphic.
+  Direct digital capture / screen grab. No camera lens, perspective distortion,
+  focal depth, or camera angle applies.
 
 
   ## People
 
-  No people appear.
+  No people in frame.
 
 
-  ## Audio & Speech
+  ## Objects & Text
 
-  * Silent / No audio track present.
+  **Legible Text:**
+
+  - `Date`
+
+  - `Name`
+
+  - `Owned For`
+
+  - `Owner Type`
+
+  - `Dec 2025 - Present`
+
+  - `13 Branches Family Trust`
+
+  - `and Twiggs`
+
+  - `6 Months`
+
+  - `Private Individual`
+
+  - `Feb 2021 - Dec 2025`
+
+  - `4 Years and 10 Months`
+
+  - `Private Individual`
 
 
-  ## Objects, Text & Brands
+  **UI Elements / Icons:**
 
-  * **Text / Headers:** "Date", "Name", "Owned For", "Owner Type".
+  - Two downward-pointing arrow/chevron icons (`⌄`) indicating expandable
+  dropdown rows.
 
-  * **Row 1 Text:** "Dec 2025 - Present", "13 Branches Family Trust and Twiggs",
-  "6 Months", "Private Individual".
-
-  * **Row 2 Text:** "Feb 2021 - Dec 2025", "[REDACTED]", "4 Years and 10
-  Months", "Private Individual".
-
-  * **UI Elements:** Expand/collapse chevron icons (`v`).
+  - Digital redaction brush marking (opaque black).
 
 
   ## Colors & Mood
 
-  * **Palette:** Crisp white (#FFFFFF), dark gray/black typography (#333333 to
-  #000000), light gray divider lines.
+  - **Color Palette:** Pure white background, dark gray to near-black text,
+  light gray divider lines, and solid black redaction ink.
 
-  * **Mood:** Neutral, analytical, objective, and investigative.
+  - **Mood:** Neutral, utilitarian, clinical, administrative, informational.

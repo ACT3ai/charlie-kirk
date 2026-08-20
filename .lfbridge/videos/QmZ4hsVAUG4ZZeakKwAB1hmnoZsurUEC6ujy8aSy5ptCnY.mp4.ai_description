@@ -2,138 +2,189 @@ source: videos/QmZ4hsVAUG4ZZeakKwAB1hmnoZsurUEC6ujy8aSy5ptCnY.mp4
 status: done
 engine: gemini-flash-latest
 provider: gemini
-generated: 2026-08-20T13:13:54.560Z
-kind: video
+generated: 2026-08-20T13:37:54.638Z
+kind: image
 description: >-
-  Here is the factual description based on the provided image:
-
-
   ## Overview
 
-  This is a static digital screenshot of a real estate transaction and property
-  ownership history webpage. It displays historical ownership and recent sale
-  details for a property, including dates, sale prices, and buyer/agent
-  information. Some sensitive personal names and agent names have been redacted
-  with black marker strokes. The purpose is informational/record-keeping for
-  real estate property tracking.
+  This image is a digital screen capture of a real estate website's property
+  records section, specifically displaying "Ownership History" and "Purchase
+  Details." The data is presented in a structured, tabular web interface layout
+  with black text on a clean, light gray-to-white background. Portions of the
+  text containing specific personal names or sensitive transaction details have
+  been redacted with thick, hand-drawn digital black scribbles.
 
 
   ## Hyper-Detail
 
-  The image shows a clean, white user interface with dark grey and black text.
-  At the top, a section titled "Ownership History" features a disclaimer about
-  publicly available records. Below is a structured table with headers: "Date",
-  "Name", "Owned For", and "Owner Type". 
+  The screenshot shows a clean user interface of a real estate or public records
+  aggregation website. 
 
 
-  The recorded row lists:
-
-  - Date: "Dec 2025 - Present"
-
-  - Name: "13 Branches Family Trust and Twiggs"
-
-  - Owned For: "6 Months"
-
-  - Owner Type: "Private Individual" followed by an upward-pointing chevron
-  arrow.
+  At the very top left, a bold heading reads "Ownership History" in a dark gray
+  or black sans-serif font. Directly beneath it is an explanatory note in
+  smaller, lighter gray body text: "We collect this data history from publicly
+  available records. To have your information removed, we recommend requesting
+  removal directly through your county's website."
 
 
-  Below this table is a subsection titled "Purchase Details". It is organized
-  into two columns:
+  Below this introductory text is a horizontal data table with light gray column
+  headers:
 
-  - Column 1:
-    - "Listed on": "Oct 16, 2025"
-    - "Closed on": "Dec 4, 2025"
-    - "Sold by": Redacted name with a black scribble
-    - "Bought by": "13 Branches Family Trust and Twiggs"
-    - "Seller's Agent": Partially visible text "VAM Real..." followed by a heavy black redaction.
-  - Column 2:
-    - "Buyer's Agent": "Daniel Salce", with "eXp Realty LLC" listed beneath.
-    - "List Price": "$350,000"
-    - "Views": "16"
-    - "Current Estimated Value": "$340,801"
+  - `Date` (left-aligned)
 
-  A video timecode overlay reading "00:00" appears in white against a small dark
-  background in the upper left corner.
+  - `Name` (left-aligned)
+
+  - `Owned For` (left-aligned)
+
+  - `Owner Type` (left-aligned)
 
 
-  ## Shot-by-shot / Timeline
+  Underneath the headers, a single ownership record is expanded:
 
-  - **00:00**: Static graphic screen capture showing real estate ownership and
-  purchase detail data. No cuts, transitions, or camera movement.
+  - **Date**: "Dec 2025 - Present"
+
+  - **Name**: Displays the text "13 Branches Family Trust and Twiggs" (with
+  adjacent portions obscured by black digital redaction marks).
+
+  - **Owned For**: "6 Months"
+
+  - **Owner Type**: "Private Individual" followed by an upward-pointing chevron
+  arrow (`^`), indicating this entry is currently expanded.
+
+
+  Beneath the expanded ownership row is a nested section titled "Purchase
+  Details" in bold. This section is arranged in a two-column grid format:
+
+  - Left Column, Row 1: "Listed on" in gray, followed by the date **Oct 16,
+  2025** in bold black text.
+
+  - Right Column, Row 1: "Buyer's Agent" in gray, followed by the name **Daniel
+  Salce** and the brokerage **eXp Realty LLC** in black text.
+
+  - Left Column, Row 2: "Closed on" in gray, followed by the date **Dec 4,
+  2025** in bold black text.
+
+  - Right Column, Row 2: "List Price" in gray, aligned next to **$350,000** in
+  bold black text.
+
+  - Left Column, Row 3: "Sold by" in gray, with the seller's name mostly
+  obscured by a black digital scribble, leaving visible letters like "ws" and a
+  trailing number "16".
+
+  - Right Column, Row 3: "Current Estimated Value" in gray, paired with
+  **$340,801** in bold black text.
+
+  - Left Column, Row 4: "Bought by" in gray, followed by "13 Branches Family
+  Trust and Twiggs" (with a heavy black scribble underneath masking further
+  details).
+
+  - Left Column, Row 5: "Seller's Agent" in gray, followed by "VAM Rea" before
+  being cut off by another thick black scribble covering the remaining agent
+  details.
+
+
+  In the extreme bottom-left corner, a digital video player timestamp overlay
+  displays `00:00` in white monospace text.
 
 
   ## Composition
 
-  The composition is a direct 2D user-interface screen layout filling 100% of
-  the frame:
+  The image is a rectangular 2D graphical screen capture filling 100% of the
+  frame.
 
-  - **FRAME-LEFT / MIDGROUND**: Lists dates, ownership entities, list dates,
-  closing dates, and seller/buyer details (~50% width).
+  - **Top Section (0% to ~25% vertical space)**: Contains the section title
+  "Ownership History", the informational disclaimer, and table column headers
+  extending from frame-left to frame-right.
 
-  - **FRAME-RIGHT / MIDGROUND**: Lists owner type, agent details ("Daniel
-  Salce", "eXp Realty LLC"), listing price ("$350,000"), views ("16"), and
-  estimated value ("$340,801") (~50% width).
+  - **Middle Section (~25% to ~45% vertical space)**: Shows the primary table
+  row showing "Dec 2025 - Present", entity names, ownership duration, and owner
+  classification.
 
-  - **FRAME-TOP**: Header text and introductory disclaimer spanning across the
-  top 15% of the frame.
+  - **Lower Section (~45% to 100% vertical space)**: Houses the "Purchase
+  Details" dropdown box, showing the transaction attributes in two symmetrical
+  columns.
+
+  - The visual layout is aligned strictly along standard web-grid margins with
+  strong horizontal row dividers and clean left-aligned text columns.
 
 
   ## Location
 
-  (Indeterminate). The image is a digital interface showing US real estate
-  records (referenced by "county's website" and USD currency).
+  (indeterminate) – This is a digital UI screenshot from an internet browser.
+  The property details likely pertain to the United States (indicated by USD
+  currency `$`, the format of dates, and the brokerage "eXp Realty LLC"), but no
+  specific city or state is explicitly mentioned.
 
 
   ## Setting & Place
 
-  Digital screen / graphic user interface (no physical interior or exterior
-  setting).
+  Digital Graphic Interface / Software UI. Not a physical indoor or outdoor
+  location.
 
 
   ## Lighting
 
-  Digital display graphic rendering; flat, uniform artificial white UI
-  background with no photographic key, fill, or shadow lighting.
+  Not applicable (flat digital display graphics, standard non-rendered web
+  interface).
 
 
   ## Cinematography
 
-  Static 2D screengrab / graphic capture. No camera lens, shot size, or camera
-  motion applied.
+  Direct digital screen capture / UI presentation. No camera, lens, or optical
+  perspective was used.
 
 
   ## People
 
-  No people appear.
+  No people in frame.
 
 
-  ## Audio & Speech
+  ## Objects & Text
 
-  No audio (static image/screengrab).
+  **Identified Text:**
 
+  - "Ownership History"
 
-  ## Objects, Text & Brands
+  - "We collect this data history from publicly available records. To have your
+  information removed, we recommend requesting removal directly through your
+  county's website."
 
-  - **Brands / Entities**: "eXp Realty LLC", "13 Branches Family Trust and
-  Twiggs".
+  - "Date", "Name", "Owned For", "Owner Type"
 
-  - **Legible Text**:
-    - "00:00"
-    - "Ownership History"
-    - "We collect this data history from publicly available records. To have your information removed, we recommend requesting removal directly through your county's website."
-    - "Date", "Name", "Owned For", "Owner Type"
-    - "Dec 2025 - Present", "13 Branches Family Trust and Twiggs", "6 Months", "Private Individual"
-    - "Purchase Details"
-    - "Listed on", "Oct 16, 2025", "Buyer's Agent", "Daniel Salce", "eXp Realty LLC"
-    - "Closed on", "Dec 4, 2025", "List Price", "$350,000"
-    - "Sold by", "Views", "16"
-    - "Bought by", "Current Estimated Value", "$340,801"
-    - "Seller's Agent", "VAM Real..." (partially obscured).
+  - "Dec 2025 - Present"
+
+  - "13 Branches Family Trust and Twiggs"
+
+  - "6 Months"
+
+  - "Private Individual"
+
+  - "Purchase Details"
+
+  - "Listed on", "Oct 16, 2025"
+
+  - "Closed on", "Dec 4, 2025"
+
+  - "Sold by", "ws", "16"
+
+  - "Bought by"
+
+  - "Seller's Agent", "VAM Rea"
+
+  - "Buyer's Agent", "Daniel Salce", "eXp Realty LLC"
+
+  - "List Price", "$350,000"
+
+  - "Current Estimated Value", "$340,801"
+
+  - "00:00" (timestamp overlay)
+
 
   ## Colors & Mood
 
-  - **Palette**: White (#FFFFFF), charcoal grey, pure black (#000000), light
-  divider grey.
+  - **Color Palette**: Minimalist and neutral; predominantly white (`#FFFFFF`)
+  and very light gray backgrounds, charcoal/black text, muted medium-gray
+  secondary labels, and opaque solid black brush strokes for redactions.
 
-  - **Mood**: Analytical, administrative, clean, and transactional.
+  - **Mood**: Informational, formal, corporate, analytical.

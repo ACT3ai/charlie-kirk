@@ -2,146 +2,155 @@ source: videos/QmZ9WxTqgk9xvwadYX1r6S3EexQwyvTaQr8hXmPH64xNHS.mp4
 status: done
 engine: gemini-flash-latest
 provider: gemini
-generated: 2026-08-20T13:13:54.575Z
-kind: video
+generated: 2026-08-20T13:37:53.880Z
+kind: image
 description: >-
   ## Overview
 
-  This video is a static screen capture of the official Texas Secretary of State
-  business organization search portal webpage. The page displays entity details
-  for a domestic nonprofit corporation named "Faith and Family Foundation
-  Charity." The clip serves as document/record proof, likely used in
-  investigative reporting, legal verification, or research documentation.
+  This image is a direct digital screen capture of a public business entity
+  search result page from the Texas Secretary of State's official website
+  ("SOSDirect"). It displays the registration details for a non-profit
+  corporation named "Faith and Family Foundation Charity." The page presents
+  structured tables of business filing data, including filing dates, tax ID,
+  status, registered address, and listed management/directors.
 
 
   ## Hyper-Detail
 
-  The video shows a web browser interface containing a state registry record.
-  The top header features a navy blue banner with the Texas state seal and the
-  text "Texas Secretary of State Jane Nelson" alongside navigation tabs (UCC,
-  Business Organizations, Trademarks, Account, Help/Fees, Briefcase, Logout). 
+  The image consists entirely of a structured web page interface:
 
-
-  Below the header, a section titled "BUSINESS ORGANIZATIONS INQUIRY - VIEW
-  ENTITY" contains core registry data:
-
-  - Filing Number: 806497473
-
-  - Entity Type: Domestic Nonprofit Corporation
-
-  - Original Date of Filing: March 9, 2026
-
-  - Entity Status: In existence
-
-  - Formation Date: N/A
-
-  - Entity Type: N/A
-
-  - Tax ID: 32104917292
-
-  - FEIN: (blank)
-
-  - Duration: Perpetual
-
-  - Name: Faith and Family Foundation Charity
-
-  - Address: 8203 ROEBOURNE LN, HOUSTON, TX 77070-3109 USA
-
-
-  A tabbed table displays the "MANAGEMENT" tab active (highlighted in yellow),
-  showing three director records:
-
-  1. Jerry T Twiggs (Director) – Address: 8203 Roebourne Lane, Houston, TX 77070
-  USA (Last Update: March 17, 2026).
-
-  2. Amy R Twiggs (Director) – Address: 8203 Roebourne Lane, Houston, TX 77070
-  USA (Last Update: March 17, 2026).
-
-  3. Mikayla R Twiggs (Director) – Address: 8203 Roebourne Lane, Houston, TX
-  77070 USA (Last Update: March 17, 2026).
-
-
-  Buttons labeled "Order" and "Return to Search" are positioned at the bottom
-  left.
-
-
-  ## Shot-by-shot / Timeline
-
-  - **00:00 - End**: Static screen recording of the Texas Secretary of State
-  "View Entity" webpage. No cursor movement, scrolling, or camera cuts occur
-  throughout the entire duration.
-
+  - **Header Section (Top Banner):**
+    - A deep blue rectangular banner spanning the full width at the top.
+    - Left side contains a stylized logo featuring a state shape/seal graphic next to bold white text: "Texas Secretary of State" with "Jane Nelson" below it.
+    - Right/Center navigation menu bar with horizontal blue/grey tabs labeled: "UCC", "Business Organizations", "Trademarks", "Account", "Help/Fees", "Briefcase", "Logout".
+  - **Page Title:**
+    - Centered below the navigation bar in bold sans-serif text: "BUSINESS ORGANIZATIONS INQUIRY - VIEW ENTITY".
+  - **Two-Column Data Table:**
+    - **Left Column:**
+      - "Filing Number:": `806497473`
+      - "Original Date of Filing:": `March 9, 2026`
+      - "Formation Date:": `N/A`
+      - "Tax ID:": `32104917292`
+      - "Duration:": `Perpetual`
+      - "Name:": `Faith and Family Foundation Charity`
+      - "Address:": `8203 ROEBOURNE LN` / `HOUSTON, TX 77070-3109 USA`
+    - **Right Column:**
+      - "Entity Type:": `Domestic Nonprofit Corporation`
+      - "Entity Status:": `In existence`
+      - "Non-Profit Type:": `N/A`
+      - "FEIN:": (Blank)
+  - **Tabbed Sub-Table Section:**
+    - Horizontal tabs: "REGISTERED AGENT", "FILING HISTORY", "NAMES", "MANAGEMENT" (active tab highlighted in yellow/orange), "ASSUMED NAMES", "ASSOCIATED ENTITIES", "INITIAL ADDRESS".
+    - Data table below active "MANAGEMENT" tab showing three rows with blue striped borders:
+      - **Row 1:**
+        - Last Update: `March 17, 2026`
+        - Name: `Jerry T Twiggs`
+        - Title: `Director`
+        - Address: `8203 Roebourne Lane`, `Houston, TX 77070 USA`
+      - **Row 2 (Highlighted in Cyan/Light Blue):**
+        - Last Update: `March 17, 2026`
+        - Name: `Amy R Twiggs`
+        - Title: `Director`
+        - Address: `8203 Roebourne Lane`, `Houston, TX 77070 USA`
+      - **Row 3:**
+        - Last Update: `March 17, 2026`
+        - Name: `Mikayla R Twiggs`
+        - Title: `Director`
+        - Address: `8203 Roebourne Lane`, `Houston, TX 77070 USA`
+  - **Bottom Navigation Controls:**
+    - Two buttons at bottom left: "Order" and "Return to Search".
+  - **Video Timestamp Overlay:**
+    - At the very top left corner sits a translucent black rectangle containing white timecode text: `00:00`.
 
   ## Composition
 
-  - **FRAME-TOP (0%–20% vertical)**: Dark blue Texas Secretary of State header
-  with white navigation text and state seal emblem at FRAME-LEFT.
+  This is a 2D user interface screen capture, occupying 100% of the visual
+  frame. The layout is organized vertically and horizontally with standard web
+  design grid lines:
 
-  - **FRAME-MIDGROUND (20%–60% vertical)**: Two-column grid of business entity
-  metadata against a light gray/white background.
+  - Header banner occupies the top ~18% of the frame.
 
-  - **FRAME-BOTTOM (60%–95% vertical)**: Tabbed table containing officer and
-  director data, highlighted management tab in yellow, and action buttons at
-  FRAME-LEFT.
+  - Primary entity metadata occupies the upper midground (~35% of the frame).
+
+  - Management sub-table occupies the lower midground (~35% of the frame).
+
+  - Action buttons occupy the bottom ~12% at FRAME-LEFT.
+
+  - The visual hierarchy is top-down, with key focus on the central data text
+  and the highlighted light blue row in the management section.
 
 
   ## Location
 
-  - **City**: Austin (uncertain, state agency origin) / Houston (address listed
-  on record)
+  - **City:** Austin (uncertain, server/agency headquarters) / Houston (address
+  listed on record).
 
-  - **State/Region**: Texas
+  - **State/Region:** Texas.
 
-  - **Country**: United States
+  - **Country:** United States.
 
-  - **Type**: Digital web interface / Institutional record
+  - **Location Type:** Digital interface / Government web portal.
 
 
   ## Setting & Place
 
-  - **Type**: Digital capture of a public government website interface.
+  - **Type:** Digital graphical user interface (GUI).
+
+  - **Description:** A digital screenshot of the Texas SOSDirect web portal
+  operated by the Office of the Texas Secretary of State.
 
 
   ## Lighting
 
-  - **Type**: Digital UI display lighting; uniform sRGB web illumination with
-  standard digital contrast.
+  - **Lighting Type:** Not applicable (Digital UI rendering). The screen uses
+  standard high-contrast, flat digital screen illumination with white, light
+  blue, and light grey background fields.
 
 
   ## Cinematography
 
-  - **Shot Type**: Direct full-screen capture / graphic display.
+  - **Shot Type:** Direct screen capture / graphic overlay.
 
-  - **Camera Movement**: Static, no motion.
+  - **Camera Angle:** Straight-on 2D digital capture (0 degrees).
 
-  - **Lens/Framing**: Flat graphic interface, 2D rendering.
+  - **Lens:** Digital graphic rendering (no lens distortion or optical depth of
+  field).
 
 
   ## People
 
-  No people appear.
+  No people in frame.
 
 
-  ## Audio & Speech
+  ## Objects & Text
 
-  - **Audio**: Silent (no audio track).
-
-
-  ## Objects, Text & Brands
-
-  - **Text/Logos**:
-    - "Texas Secretary of State Jane Nelson"
-    - "Faith and Family Foundation Charity"
-    - "BUSINESS ORGANIZATIONS INQUIRY - VIEW ENTITY"
-    - Names listed: Jerry T Twiggs, Amy R Twiggs, Mikayla R Twiggs
-    - Address: "8203 ROEBOURNE LN, HOUSTON, TX 77070-3109 USA"
-    - Filing numbers and dates (Filing Number: 806497473, Filing Date: March 9, 2026).
-  - **Brands**: Official State of Texas government portal.
-
+  - **Verbatim Text Displayed:**
+    - `00:00`
+    - `Texas Secretary of State`
+    - `Jane Nelson`
+    - `UCC`, `Business Organizations`, `Trademarks`, `Account`, `Help/Fees`, `Briefcase`, `Logout`
+    - `BUSINESS ORGANIZATIONS INQUIRY - VIEW ENTITY`
+    - `Filing Number: 806497473`
+    - `Original Date of Filing: March 9, 2026`
+    - `Formation Date: N/A`
+    - `Tax ID: 32104917292`
+    - `Duration: Perpetual`
+    - `Entity Type: Domestic Nonprofit Corporation`
+    - `Entity Status: In existence`
+    - `Non-Profit Type: N/A`
+    - `FEIN:`
+    - `Name: Faith and Family Foundation Charity`
+    - `Address: 8203 ROEBOURNE LN HOUSTON, TX 77070-3109 USA`
+    - `REGISTERED AGENT`, `FILING HISTORY`, `NAMES`, `MANAGEMENT`, `ASSUMED NAMES`, `ASSOCIATED ENTITIES`, `INITIAL ADDRESS`
+    - `Last Update`, `Name`, `Title`, `Address`
+    - `March 17, 2026 Jerry T Twiggs Director 8203 Roebourne Lane Houston, TX 77070 USA`
+    - `March 17, 2026 Amy R Twiggs Director 8203 Roebourne Lane Houston, TX 77070 USA`
+    - `March 17, 2026 Mikayla R Twiggs Director 8203 Roebourne Lane Houston, TX 77070 USA`
+    - `Order`, `Return to Search`
 
   ## Colors & Mood
 
-  - **Palette**: Navy blue, white, slate gray, black text, and pale yellow tab
-  highlight.
+  - **Color Palette:** Navy blue, slate blue, cyan/light blue, pale yellow,
+  white, and dark grey/black typography.
 
-  - **Mood**: Formal, bureaucratic, informational, objective.
+  - **Mood:** Administrative, bureaucratic, neutral, and informative.

@@ -2,113 +2,179 @@ source: videos/QmXnUdjEFm6WNbWboYd3cKFLT1a93E2unaTwGzmmrN5XnJ.mp4
 status: done
 engine: gemini-flash-latest
 provider: gemini
-generated: 2026-08-20T13:13:49.457Z
-kind: video
+generated: 2026-08-20T13:37:55.214Z
+kind: image
 description: >-
   ## Overview
 
-  This video is a static screen recording of a real estate website, likely
-  Homes.com. It displays property ownership history and recent purchase
-  transaction details. The clip serves as an informational reference showing
-  digital public record data for a residential property.
+  This image is a direct screenshot of a digital user interface, specifically a
+  real estate or property records webpage. It displays property ownership and
+  purchase history details alongside a promotional banner prompting the
+  homeowner to claim the listing on Homes.com. The design features a modern,
+  clean, light-mode website layout with structured data columns and tabular
+  text.
 
 
   ## Hyper-Detail
 
-  The screen capture displays two main interface cards against a light
-  grey/white web background. 
+  The image consists of a digital screen capture with a clean, flat 2D graphic
+  layout on a stark white background (`#FFFFFF`). 
 
 
-  1. **Top Banner / Card:**
-     - Text asking "Is this your home?" with a sub-prompt "Claim it on Homes.com to see your home stats and recent market updates in your neighborhood."
-     - A hyperlinked text on the right: "Claim this home".
-     - Above the card, a link reads "See All MLS Data".
+  At the very top left, a blue hyperlink sits near the upper edge. Below this,
+  occupying the upper third of the canvas, is a rounded rectangular card or
+  banner outlined in a very subtle, thin light-gray border with a slightly
+  off-white interior background. Inside this card, bold dark charcoal header
+  text asks a question, followed by a secondary explanatory sentence in a
+  lighter neutral tone. In the bottom right corner of this card, another
+  underlined blue hyperlink serves as a call to action.
 
-  2. **Ownership History Section:**
-     - Section heading: "Ownership History".
-     - Subtitle: "We collect this data history from publicly available records. To have your information removed, we recommend requesting removal directly through your county's website."
-     - Table columns: "Date", "Name", "Owned For", "Owner Type".
-     - Table row: "Dec 2025 - Present" | "13 Branches Family Trust and Twiggs" | "6 Months" | "Private Individual" with an upward-pointing collapse chevron.
-     - Expanded sub-panel ("Purchase Details"):
-       - "Closed on Dec 4, 2025" (Left)
-       - "Bought by 13 Branches Family Trust and Twiggs" (Right-center)
-       - "Sold by Twiggs Amy R and Twiggs Mikayla R" (Left-center)
-       - "Current Estimated Value $305,179" (Bottom-right)
 
-  ## Shot-by-shot / Timeline
+  Below the top banner, the main body of the webpage is titled with a prominent
+  heading. Directly beneath the heading is an informational disclaimer paragraph
+  in a muted gray font explaining data sources.
 
-  * **00:00 - 00:01:** A single, static screen capture of a web page interface.
-  No camera movement, cursor movement, or visual transitions occur.
+
+  The data section is organized into a clean table structure:
+
+  - A column header row displays four categories: "Date", "Name", "Owned For",
+  and "Owner Type" in a medium gray, medium-weight font.
+
+  - Below the headers is a data row with a solid, darker charcoal text entry
+  representing an active ownership record from "Dec 2025 - Present". To the far
+  right of this row is an upward-pointing caret/chevron icon indicating an
+  expanded accordion section.
+
+  - Beneath this active record, an expanded section with a slightly recessed,
+  bordered subsection labeled "Purchase Details" is displayed. This sub-panel
+  contains two columns of key-value pairs formatted with light gray labels and
+  prominent dark text for the data:
+    - Left side includes "Closed on" with a corresponding date, and beneath it, "Sold by" with two individual names.
+    - Right side includes "Bought by" matching the trust and co-buyer names, and "Current Estimated Value" displaying a formatted currency value in bold text.
+
+  All typographic elements use a clean, geometric or humanist sans-serif digital
+  font family (similar to Inter, Roboto, or standard system UI fonts). There are
+  no photographic elements, gradients, or complex graphical textures; the visual
+  assets consist strictly of digital vector shapes, rasterized text, and flat
+  bounding boxes.
 
 
   ## Composition
 
-  * **Top Area (FRAME-TOP):** "See All MLS Data" link and the "Is this your
-  home?" callout card occupying ~25% of the upper frame.
+  - **Layout Distribution:** 
+    - Top Banner: Occupies approximately 25% of the vertical space across the upper frame (from FRAME-LEFT to FRAME-RIGHT).
+    - Main Content Area / Table: Occupies the remaining ~75% of the frame in the center and lower regions.
+    - Visual Balance: Symmetrical horizontally with structured grid alignments; left-aligned headers and right-aligned action links/chevrons create visual balance across the horizontal plane.
+  - **Rule-of-Thirds & Focus:** The primary focal point sits at the upper-third
+  line where the header "Ownership History" begins, drawing the viewer's eye
+  downward into the structured transaction data.
 
-  * **Mid-to-Bottom Area (FRAME-CENTER to FRAME-BOTTOM):** "Ownership History"
-  section with the expanded "Purchase Details" container filling ~70% of the
-  frame.
-
-  * **Focus/Depth:** Flat 2D digital graphic rendering with no physical camera
-  depth of field.
+  - **Depth of Field:** None; entirely flat 2D digital screen graphic with 100%
+  sharp focus across all elements.
 
 
   ## Location
 
-  (Indeterminate) – Digital user interface / web platform (Homes.com, United
-  States).
+  (indeterminate) - The image is a digital screenshot of a website. While the
+  currency formatting (`$`) and date styling (`Dec 4, 2025`) indicate a United
+  States real estate context, the physical location where the screenshot was
+  taken is indeterminate.
 
 
   ## Setting & Place
 
-  Digital computer screen / User Interface (UI).
+  Digital Graphic / Web User Interface. The scene is neither inside nor outside
+  a physical structure, but rather an interface element from the website
+  Homes.com.
 
 
   ## Lighting
 
-  Digital display backlighting; flat, uniform high-key UI illumination with
-  white backgrounds and light drop shadows.
+  Not applicable (Digital UI rendering). The interface uses a standard high-key
+  digital display presentation with an illuminated white background, providing
+  high contrast for dark text elements without physical light sources or
+  real-world shadows.
 
 
   ## Cinematography
 
-  * **Shot Type:** Full screen capture / UI graphic.
-
-  * **Camera Movement:** Static.
-
-  * **Aspect/Lens:** Direct digital capture.
+  Not applicable. Direct native screen capture / 2D digital render (no camera,
+  lens, focal length, or real-world perspective distortion).
 
 
   ## People
 
-  No people appear.
+  No people in frame.
 
 
-  ## Audio & Speech
+  ## Objects & Text
 
-  Silent screen recording with no audio track, speech, music, or sound effects.
+  ### Legible Text (verbatim):
+
+  - `See All MLS Data` (top-left blue text)
+
+  - `Is this your home?` (bold card header)
+
+  - `Claim it on Homes.com to see your home stats and recent market updates in
+  your neighborhood.` (card body text)
+
+  - `Claim this home` (underlined blue call-to-action link)
+
+  - `Ownership History` (main section title)
+
+  - `We collect this data history from publicly available records. To have your
+  information removed, we recommend requesting removal directly through your
+  county's website.` (disclaimer text)
+
+  - `Date` (table column header)
+
+  - `Name` (table column header)
+
+  - `Owned For` (table column header)
+
+  - `Owner Type` (table column header)
+
+  - `Dec 2025 - Present`
+
+  - `13 Branches Family Trust and Twiggs`
+
+  - `6 Months`
+
+  - `Private Individual`
+
+  - `Purchase Details` (sub-section header)
+
+  - `Closed on`
+
+  - `Dec 4, 2025`
+
+  - `Bought by`
+
+  - `13 Branches Family Trust and Twiggs`
+
+  - `Sold by`
+
+  - `Twiggs Amy R and Twiggs Mikayla R`
+
+  - `Current Estimated Value`
+
+  - `$305,179`
 
 
-  ## Objects, Text & Brands
+  ### Objects / UI Elements:
 
-  * **Brands:** Homes.com (referenced in text).
+  - Rounded rectangular banner container.
 
-  * **Verbatim Text:**
-    - "See All MLS Data"
-    - "Is this your home?"
-    - "Claim it on Homes.com to see your home stats and recent market updates in your neighborhood."
-    - "Claim this home"
-    - "Ownership History"
-    - "We collect this data history from publicly available records. To have your information removed, we recommend requesting removal directly through your county's website."
-    - "Date", "Name", "Owned For", "Owner Type"
-    - "Dec 2025 - Present", "13 Branches Family Trust and Twiggs", "6 Months", "Private Individual"
-    - "Purchase Details", "Closed on Dec 4, 2025", "Bought by 13 Branches Family Trust and Twiggs"
-    - "Sold by Twiggs Amy R and Twiggs Mikayla R", "Current Estimated Value $305,179"
+  - Table divider lines and sub-panel container borders.
+
+  - Interactive upward-pointing chevron/caret icon (`^`).
+
 
   ## Colors & Mood
 
-  * **Palette:** Clean white (#FFFFFF), light grey UI container panels, dark
-  grey/black text, and subtle dark blue hyperlinks.
+  - **Color Palette:** Dominated by clean white (`#FFFFFF`) and light
+  grayish-white backgrounds, dark charcoal/off-black for primary typography,
+  neutral medium-gray for secondary text, and royal blue for active hyperlinks.
 
-  * **Mood:** Neutral, utilitarian, and informational.
+  - **Mood / Tone:** Professional, neutral, informative, transactional, and
+  modern corporate digital design.
