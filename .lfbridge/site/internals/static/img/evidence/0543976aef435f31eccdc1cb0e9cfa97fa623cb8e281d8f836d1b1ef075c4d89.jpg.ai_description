@@ -1,0 +1,113 @@
+source: site/internals/static/img/evidence/0543976aef435f31eccdc1cb0e9cfa97fa623cb8e281d8f836d1b1ef075c4d89.jpg
+status: done
+engine: gemini-flash-latest
+provider: gemini
+generated: 2026-08-20T12:41:28.024Z
+kind: image
+description: >-
+  ## Overview
+
+  This image consists of a vertical stack of three cropped screenshots
+  displaying Google Trends search interest graphs over time. Each panel tracks a
+  specific search query localized to the "District of Columbia, Past 90 days"
+  with a single sharp spike or a few isolated sharp spikes reaching a search
+  interest index of 100 against a flat baseline of zero. The search terms
+  tracked from top to bottom are "Tyler Bowyer", "rep lyman", and "kirk
+  schedule", with interactive tooltip pop-ups showing specific peak dates in
+  July and August 2025.
+
+
+  ## Hyper-Detail
+
+  The image is divided vertically into three nearly identical white card-style
+  panels with subtle drop shadows at their top and bottom dividing seams, set
+  against a very pale grey/blue-tinted background canvas.
+
+
+  1. **Top Panel ("Tyler Bowyer"):**
+     - At the top left, a solid blue circular dot precedes the text "Tyler Bowyer" in a dark grey sans-serif typeface.
+     - At the top right, the location and timeframe descriptor reads "District of Columbia, Past 90 days" in a medium grey sans-serif font.
+     - Below the header is a line graph with a vertical Y-axis marked with grey horizontal gridlines and numeric labels "100", "75", "50", "25", and an implicit "0" along the bottom axis.
+     - The X-axis has date labels: "Jul 11" near the left and "Aug 27" toward the center-right.
+     - A bright blue line runs flat along the 0 mark from the left until it spikes sharply straight up to 100 on a single date, marked with a blue circular data node, before dropping vertically back to 0 and continuing flat along the baseline to the right edge.
+     - A rectangular white tooltip box with a light grey border and subtle shadow sits to the right of the spike. Inside, the bold date reads "Jul 31, 2025", below which is the label "Tyler Bowyer" and the value "100" in blue text.
+
+  2. **Middle Panel ("rep lyman"):**
+     - Header left: solid blue dot followed by "rep lyman".
+     - Header right: "District of Columbia, Past 90 days".
+     - Graph grid identical to the top: Y-axis marked "100", "75", "50", "25", baseline 0; X-axis marked "Jul 11" and "Aug 27".
+     - The graph features three distinct isolated spikes:
+       - First spike reaches 100 (selected with a blue node and active tooltip).
+       - Second spike (just before Aug 27) reaches around 95–100.
+       - Third spike (well after Aug 27, toward the right) reaches around 95.
+     - The active tooltip window displays "Jul 21, 2025" in bold, followed by "rep lyman" and the blue number "100".
+
+  3. **Bottom Panel ("kirk schedule"):**
+     - Header left: solid blue dot followed by "kirk schedule".
+     - Header right: "District of Columbia, Past 90 days".
+     - Graph grid identical: Y-axis markings "100", "75", "50", "25"; X-axis partially truncated at the very bottom ("Jul 11", "Aug 27").
+     - The graph features two sharp spikes:
+       - The first spike reaches 100 with a blue data point.
+       - The second spike (further right) reaches approximately 78.
+     - The active tooltip box displays "Aug 5, 2025" in bold, followed by "kirk schedule" and the blue number "100".
+
+  ## Composition
+
+  - **Layout:** Vertical 3-tier composite screenshot arrangement. Each panel
+  occupies approximately 33.3% of the total vertical height.
+
+  - **Visual Weight:** Evenly distributed vertically across the three cards.
+  High visual contrast between the stark blue vertical lines/spikes and the
+  clean, flat white rectangular graph fields.
+
+  - **Alignment:** Left-aligned query titles and Y-axis scale numbers;
+  right-aligned regional metadata; centered graph plotting areas with
+  centered/offset tooltips.
+
+
+  ## Location
+
+  - **Geographic Data Referenced:** District of Columbia, United States
+  (explicitly stated in the interface headers).
+
+  - **Format:** Digital screenshot / graphic data visualization.
+
+
+  ## Setting & Place
+
+  - Digital user interface (web browser screenshot of Google Trends UI).
+
+
+  ## Lighting
+
+  - Not applicable (digital 2D graphic user interface). Flat, consistent digital
+  white background with soft synthetic UI drop shadows.
+
+
+  ## Cinematography
+
+  - Not applicable (direct screen capture/graphic render). 
+
+
+  ## People
+
+  No people in frame.
+
+
+  ## Objects & Text
+
+  - **Legible Text:**
+    - Panel 1: "Tyler Bowyer", "District of Columbia, Past 90 days", "100", "75", "50", "25", "Jul 11", "Aug 27", "Jul 31, 2025", "Tyler Bowyer 100".
+    - Panel 2: "rep lyman", "District of Columbia, Past 90 days", "100", "75", "50", "25", "Jul 11", "Aug 27", "Jul 21, 2025", "rep lyman 100".
+    - Panel 3: "kirk schedule", "District of Columbia, Past 90 days", "100", "75", "50", "25", "Jul 11", "Aug 27", "Aug 5, 2025", "kirk schedule 100".
+  - **Visual UI Elements:** Google Trends data lines, coordinate gridlines,
+  hover cards/tooltips, categorical color-coded dots.
+
+
+  ## Colors & Mood
+
+  - **Palette:** Clean UI aesthetic dominated by pure white (`#FFFFFF`), light
+  cool grey background bands, medium grey text/axes, and Google's standard
+  primary blue (`#4285F4`) for the data traces and indicator dots.
+
+  - **Mood:** Analytical, objective, sterile, informational.

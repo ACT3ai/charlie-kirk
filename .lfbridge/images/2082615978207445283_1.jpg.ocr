@@ -1,0 +1,50 @@
+source: images/2082615978207445283_1.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:41:19.903Z
+kind: image
+language: en-US
+text: >-
+  The medical examiner concluded the manner of death "to be homicide." State's
+  Ex. 11 at
+
+  1. A forensic examination conducted by the ATF revealed that the bullet that
+  killed Mr. Kirk was
+
+  a .30 caliber class round. State's Ex. 32 at 2. It created a "complex entrance
+  gunshot wound" and
+
+  fragmented in Mr. Kirk's neck. State's Ex. 11 at 1, 3.
+blocks:
+  - text: The medical examiner concluded the manner of death "to be homicide."
+      State's Ex. 11 at
+    confidence: 1
+    bbox:
+      - 0.11400356557110039
+      - 0.08755861424166345
+      - 0.8425391106190029
+      - 0.14329461490406714
+  - text: 1. A forensic examination conducted by the ATF revealed that the bullet
+      that killed Mr. Kirk was
+    confidence: 1
+    bbox:
+      - 0.04166668499371475
+      - 0.33333333562091494
+      - 0.9166666244570151
+      - 0.13725490196078427
+  - text: a .30 caliber class round. State's Ex. 32 at 2. It created a "complex
+      entrance gunshot wound" and
+    confidence: 1
+    bbox:
+      - 0.0375000078680867
+      - 0.5490196091503268
+      - 0.9208332869027165
+      - 0.1568627450980392
+  - text: fragmented in Mr. Kirk's neck. State's Ex. 11 at 1, 3.
+    confidence: 1
+    bbox:
+      - 0.04149377515560169
+      - 0.8235294102941176
+      - 0.5103734439834025
+      - 0.11764705882352933

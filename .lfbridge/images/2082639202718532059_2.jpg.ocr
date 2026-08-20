@@ -1,0 +1,121 @@
+source: images/2082639202718532059_2.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:41:23.285Z
+kind: image
+language: en-US
+text: |-
+  @wildgeese5707 • 30 min ago
+  I am retired from medicine (cardiology). I paused
+  Candace's show to read that report and was shocked.
+  The trauma to the carotid and jugular veins make sense.
+  The cervical spine and spinal cord, I'm okay with. But
+  the injury to the heart and lungs? No. That sort of injury
+  is either from a blunt force trauma, like a terrible head
+  on car crash or crushing accident with industrial
+  machinery. Or, and I didn't think of this possibility until
+  just a half an hour ago, an explosion that went off inside
+  of him.
+  38
+  E
+  :
+blocks:
+  - text: "@wildgeese5707 • 30 min ago"
+    confidence: 1
+    bbox:
+      - 0.12372880993644074
+      - 0.07012986967532464
+      - 0.3711864406779661
+      - 0.036363636363636376
+  - text: I am retired from medicine (cardiology). I paused
+    confidence: 1
+    bbox:
+      - 0.12033897803874095
+      - 0.13246753254174393
+      - 0.7016949152542373
+      - 0.04675324675324677
+  - text: Candace's show to read that report and was shocked.
+    confidence: 1
+    bbox:
+      - 0.12357325760932997
+      - 0.1962987793351827
+      - 0.7732308597887976
+      - 0.054275557282683184
+  - text: The trauma to the carotid and jugular veins make sense.
+    confidence: 1
+    bbox:
+      - 0.12203390406779656
+      - 0.27272727276437847
+      - 0.8067796610169491
+      - 0.04675324675324677
+  - text: The cervical spine and spinal cord, I'm okay with. But
+    confidence: 1
+    bbox:
+      - 0.12192539973989427
+      - 0.33809080884363096
+      - 0.7663652840307204
+      - 0.06364973984755473
+  - text: the injury to the heart and lungs? No. That sort of injury
+    confidence: 1
+    bbox:
+      - 0.12033897505084756
+      - 0.41038961046753253
+      - 0.8
+      - 0.04935064935064937
+  - text: is either from a blunt force trauma, like a terrible head
+    confidence: 1
+    bbox:
+      - 0.11864407006779648
+      - 0.4831168836623376
+      - 0.7762711864406779
+      - 0.054545454545454564
+  - text: on car crash or crushing accident with industrial
+    confidence: 1
+    bbox:
+      - 0.12203390409604513
+      - 0.553246753030303
+      - 0.6949152542372882
+      - 0.04675324675324677
+  - text: machinery. Or, and I didn't think of this possibility until
+    confidence: 1
+    bbox:
+      - 0.12372881046610185
+      - 0.6233766238311689
+      - 0.7813559322033898
+      - 0.05454545454545445
+  - text: just a half an hour ago, an explosion that went off inside
+    confidence: 1
+    bbox:
+      - 0.11694915137005656
+      - 0.6935064939610389
+      - 0.8084745762711865
+      - 0.05454545454545445
+  - text: of him.
+    confidence: 1
+    bbox:
+      - 0.12186783301707906
+      - 0.7627362407897804
+      - 0.10033213082006424
+      - 0.045956088970233844
+  - text: "38"
+    confidence: 1
+    bbox:
+      - 0.17288135569007265
+      - 0.8909090910575139
+      - 0.033898305084745756
+      - 0.03116883116883118
+  - text: E
+    confidence: 1
+    bbox:
+      - 0.39322033900423725
+      - 0.8805194799025974
+      - 0.015254237288135575
+      - 0.04935064935064937
+  - text: ":"
+    confidence: 1
+    bbox:
+      - 0.9322033899152541
+      - 0.0857142862337662
+      - 0.013559322033898313
+      - 0.04155844155844157

@@ -1,0 +1,41 @@
+source: images/2088379865154134422_1.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:41:30.530Z
+kind: image
+language: en-US
+text: |-
+  The Rest of the
+  Cavitation is
+  loading be......
+  SaAY
+blocks:
+  - text: The Rest of the
+    confidence: 1
+    bbox:
+      - 0.03773584765839965
+      - 0.15843023282509772
+      - 0.5440251668294271
+      - 0.029176604442107346
+  - text: Cavitation is
+    confidence: 1
+    bbox:
+      - 0.03752915525481516
+      - 0.1985527810911928
+      - 0.4500989278157553
+      - 0.036033972715720175
+  - text: loading be......
+    confidence: 1
+    bbox:
+      - 0.03459120681358783
+      - 0.2512820520231418
+      - 0.5062892772533275
+      - 0.03505515726203601
+  - text: SaAY
+    confidence: 0.5
+    bbox:
+      - 0.012578617649831706
+      - 0.3531976744643901
+      - 0.1037735833062066
+      - 0.021802325126452304

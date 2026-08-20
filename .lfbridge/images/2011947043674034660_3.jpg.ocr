@@ -1,0 +1,41 @@
+source: images/2011947043674034660_3.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:40:56.159Z
+kind: image
+language: en-US
+text: |-
+  <
+  Nashville
+  September 8 5:57 PM
+  Edit
+blocks:
+  - text: <
+    confidence: 1
+    bbox:
+      - 0.013333333644444436
+      - 0.012441679505788894
+      - 0.05599999999999999
+      - 0.04043545878693622
+  - text: Nashville
+    confidence: 1
+    bbox:
+      - 0.4184285080420486
+      - 0.00873340209206619
+      - 0.168476318359375
+      - 0.024523864081636426
+  - text: September 8 5:57 PM
+    confidence: 1
+    bbox:
+      - 0.3440000031199999
+      - 0.038880248740279955
+      - 0.31200000000000006
+      - 0.018662519440124425
+  - text: Edit
+    confidence: 1
+    bbox:
+      - 0.7466666667809524
+      - 0.021772939169073524
+      - 0.08533333333333337
+      - 0.02488335925349927

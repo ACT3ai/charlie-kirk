@@ -1,0 +1,241 @@
+source: site/internals/static/img/evidence/15a6be3bbd01c5f59f736d222044f35ee5702f5042b90a60cdd9d0ac2ca1a6a1.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:42:28.434Z
+kind: image
+language: en-US
+text: |-
+  V 41 — 9/10/25 - SUBTT
+  Route: Cairo - Paris - Minot - Provo
+  Status: Correct
+  / 42 — 9/18/25 — SU-BND
+  Route: Paris - Lincoln - Wilmington - Cairo
+  Status: Correct
+  Page 2
+  × 60 - 1/12/25 — SUBTT
+  Route: Paris - Wichita - Cairo
+  Status: Incorrect - repeat of #31
+  X 61 - 2/8/25 - SUBTT
+  Route: Paris - Omaha - Cairo
+  Status: Incorrect - in Cairo
+  X 62-3/15/25 — SUBTT
+  Route: Wichita - Wilmington - Cairo
+  Status: Incorrect - duplicate of #33 except misnotated
+  X 64 — 4/19/25 — SU-BND
+  Route: Provo - Paris - SLC - Provo
+  Status: Incorrect - in Cairo
+  V 65 — 5/23/25 — SU-BND
+  Route: Lands in Provo
+  Status: Correct - repeat of #35
+  X 66-7/7/25 — SU-BND
+  Route: Leaves for Cairo via Goose Bay → Paris
+  Status: Incorrect - repeat of #37, in Cairo
+  V 67 — 7/20/25 - SUBTT
+  Route: Cairo - Paris - Omaha - Lincoln - Wilmington -
+  Cairo
+  Status: Correct - repeat of #38
+blocks:
+  - text: V 41 — 9/10/25 - SUBTT
+    confidence: 1
+    bbox:
+      - 0.15068492592059646
+      - 0.02013808987946697
+      - 0.3483366027358891
+      - 0.022013072726092764
+  - text: "Route: Cairo - Paris - Minot - Provo"
+    confidence: 1
+    bbox:
+      - 0.14677103699981903
+      - 0.04941860473897697
+      - 0.4403131056201551
+      - 0.017441860414072585
+  - text: "Status: Correct"
+    confidence: 1
+    bbox:
+      - 0.1467710365567533
+      - 0.07412790769785083
+      - 0.17808219259099442
+      - 0.01908267957294496
+  - text: / 42 — 9/18/25 — SU-BND
+    confidence: 1
+    bbox:
+      - 0.15068494414768138
+      - 0.12063953559123641
+      - 0.36594910141109493
+      - 0.023255812422178446
+  - text: "Route: Paris - Lincoln - Wilmington - Cairo"
+    confidence: 1
+    bbox:
+      - 0.14677104221715115
+      - 0.15116279068989225
+      - 0.5303326747214148
+      - 0.020348837515564377
+  - text: "Status: Correct"
+    confidence: 1
+    bbox:
+      - 0.1467710365567533
+      - 0.1772151897213744
+      - 0.17808219259099442
+      - 0.01783659378596092
+  - text: Page 2
+    confidence: 1
+    bbox:
+      - 0.1467710366170153
+      - 0.23820483318999164
+      - 0.09001956910125969
+      - 0.02359033371691599
+  - text: × 60 - 1/12/25 — SUBTT
+    confidence: 1
+    bbox:
+      - 0.14620487246750646
+      - 0.2570075779910178
+      - 0.3551289166590964
+      - 0.03260502414681421
+  - text: "Route: Paris - Wichita - Cairo"
+    confidence: 1
+    bbox:
+      - 0.14677104823278758
+      - 0.293440736677564
+      - 0.362035210188045
+      - 0.016152286419797157
+  - text: "Status: Incorrect - repeat of #31"
+    confidence: 1
+    bbox:
+      - 0.14677104530050017
+      - 0.3181818185810883
+      - 0.37573384129723836
+      - 0.020713463751438455
+  - text: X 61 - 2/8/25 - SUBTT
+    confidence: 1
+    bbox:
+      - 0.14621570919585272
+      - 0.3587123479254821
+      - 0.33951602906219713
+      - 0.03266016056951915
+  - text: "Route: Paris - Omaha - Cairo"
+    confidence: 1
+    bbox:
+      - 0.1467710443873443
+      - 0.39389534868831255
+      - 0.35420742774194525
+      - 0.017497056647192033
+  - text: "Status: Incorrect - in Cairo"
+    confidence: 1
+    bbox:
+      - 0.14677103739962682
+      - 0.420023014532348
+      - 0.3189823830774588
+      - 0.018987341772151778
+  - text: X 62-3/15/25 — SUBTT
+    confidence: 1
+    bbox:
+      - 0.14641151408254902
+      - 0.4662851183791541
+      - 0.3548070390095083
+      - 0.02960230867936775
+  - text: "Route: Wichita - Wilmington - Cairo"
+    confidence: 1
+    bbox:
+      - 0.14677103647381454
+      - 0.4953970079817036
+      - 0.44227006306019867
+      - 0.022044852358836686
+  - text: "Status: Incorrect - duplicate of #33 except misnotated"
+    confidence: 1
+    bbox:
+      - 0.1467710560651287
+      - 0.5218023261601864
+      - 0.6340508512748304
+      - 0.021926097408948797
+  - text: X 64 — 4/19/25 — SU-BND
+    confidence: 1
+    bbox:
+      - 0.14626362877023658
+      - 0.5665346469804486
+      - 0.3688202614007994
+      - 0.032576671815439884
+  - text: "Route: Provo - Paris - SLC - Provo"
+    confidence: 1
+    bbox:
+      - 0.14677103146883805
+      - 0.5988372092733415
+      - 0.426614498167999
+      - 0.017441860414072696
+  - text: "Status: Incorrect - in Cairo"
+    confidence: 1
+    bbox:
+      - 0.1467710385002391
+      - 0.6235465116049792
+      - 0.32485323174055236
+      - 0.017441860414072585
+  - text: V 65 — 5/23/25 — SU-BND
+    confidence: 1
+    bbox:
+      - 0.15068494414768138
+      - 0.6714614499463536
+      - 0.36594910141109493
+      - 0.021864211737629424
+  - text: "Route: Lands in Provo"
+    confidence: 1
+    bbox:
+      - 0.14677103840451464
+      - 0.7005813953259094
+      - 0.26614481608072915
+      - 0.01748534807264468
+  - text: "Status: Correct - repeat of #35"
+    confidence: 1
+    bbox:
+      - 0.14677103909689354
+      - 0.7252906981987038
+      - 0.3600782764050388
+      - 0.021802324968871356
+  - text: X 66-7/7/25 — SU-BND
+    confidence: 1
+    bbox:
+      - 0.14677103941914482
+      - 0.770348836985657
+      - 0.35420742774194525
+      - 0.027694890907910885
+  - text: "Route: Leaves for Cairo via Goose Bay → Paris"
+    confidence: 1
+    bbox:
+      - 0.14677103648918033
+      - 0.8008720934982132
+      - 0.5675146768259448
+      - 0.023255812422178335
+  - text: "Status: Incorrect - repeat of #37, in Cairo"
+    confidence: 1
+    bbox:
+      - 0.14677103403686004
+      - 0.8268124276348615
+      - 0.48923680505087214
+      - 0.022024781300640117
+  - text: V 67 — 7/20/25 - SUBTT
+    confidence: 1
+    bbox:
+      - 0.1506849256596702
+      - 0.8750000003789364
+      - 0.34833660273588907
+      - 0.022008055235903323
+  - text: "Route: Cairo - Paris - Omaha - Lincoln - Wilmington -"
+    confidence: 1
+    bbox:
+      - 0.14677105556080886
+      - 0.9039125426610387
+      - 0.6712328533793605
+      - 0.020713463751438455
+  - text: Cairo
+    confidence: 1
+    bbox:
+      - 0.14677103865355584
+      - 0.9302325583270575
+      - 0.06457925249439803
+      - 0.01598837186332669
+  - text: "Status: Correct - repeat of #38"
+    confidence: 1
+    bbox:
+      - 0.1467710387893733
+      - 0.9549418604573341
+      - 0.3600782764050388
+      - 0.020348837515564266

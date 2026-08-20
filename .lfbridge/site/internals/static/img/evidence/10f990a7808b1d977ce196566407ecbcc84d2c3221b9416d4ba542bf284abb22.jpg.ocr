@@ -1,0 +1,897 @@
+source: site/internals/static/img/evidence/10f990a7808b1d977ce196566407ecbcc84d2c3221b9416d4ba542bf284abb22.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:42:19.439Z
+kind: image
+language: en-US
+text: |-
+  Post
+  »
+  3. Hate Speech Classification with OHI V3:
+  • The transcribed text is fed into OHI V3's core
+  model, a fine-tuned transformer-based neural
+  network (built on architectures like BERT or
+  RoBERTa). The model evaluates:
+  • Semantic Analysis: Detects implicit bias,
+  dog-whistles (e.g., coded references to
+  conspiracy theories), and intersectional hate
+  (e.g., antisemitism combined with racism).
+  • Contextual Scoring: Considers surrounding
+  dialogue; isolated phrases are cross-
+  referenced with the full transcript to avoid >
+  misclassification.
+  • Thresholding: Content scoring above 0.9
+  (high confidence) triggers alerts. V3
+  improves on prior versions by incorporating
+  multilingual support (e.g., Arabic, Spanish)
+  and reducing bias against non-English
+  dialects.
+  • Outputs include severity levels (e.g., "mild
+  harassment" vs. "direct incitement") and
+  recommendations for moderation, such as de-
+  amplification or account suspension.
+  7.401 Views
+  2:55 PM
+  1
+  | 38
+  175
+  • 15
+  1h 175
+  L
+  Post your reply
+  Reply
+  1984 @TheOfficial1984 • 4h
+  X moderation teams=
+  CHEQ=AU10TIX=ISRAELI
+  INTELLIGENCE
+  ...
+  They can and have shut down spaces
+  im real time.
+  4. Post-Analysis Actions and Reporting:
+  • Flagged content is routed to X's moderation
+  teams or ADL's Center for Technology & Society
+  (CTS) for review. Aggregated data feeds into ADL's
+  annual reports, like the 2024 "Threads of Hate"
+  analysis, which examined reinstated accounts'
+  Spaces activity.
+  • Real-time monitoring uses edge computing to
+  process data with minimal latency (<5 seconds),
+  enabling proactive interventions during live
+  sessions.
+  This process is powered by collaborations with academic
+  labs (e.g., UC Berkeley's D-Lab, where early OHI versions
+  were developed) and tech firms, with ADL claiming it
+  processes millions of data points weekly across platforms.
+  01 174
+  • 14
+  Ill 164 L
+  1984 @TheOfficial1984 • 4h
+  The Rasch item response theory (IRT)
+  used to target and group speech
+  assigning a weight and label to score
+  the "quality" of your account, in real
+  time, continuously.
+  ..
+  Berkley DLab
+  Outcome phenomena are typically measured
+  at the binary level: a comment is toxic or not,
+  an MRI scan shows cancer or is clear, a patient
+  is diagnosed as having a disease or not. But
+  underlying that dichotomization there is often
+  a continuous spectrum or latent variable.
+  Physical quantities such as temperature and
+  weight can be measured as interval variables
+  where magnitudes are meaningful. How can
+  we achieve that same interval measurement
+  for arbitrary outcomes - creating continuous
+  scales with magnitudes?
+  We propose a general method for measuring
+  complex phenomena as continuous, interval
+  variables by integrating deep learning with
+  the Constructing Measures approach to faceted
+  Rasch item response theory (IRT). We
+  decompose the target construct into multiple
+  constituent components that are labeled as
+  ordinal survey items, and are transformed via
+  an IRT nonlinear activation into a high-quality
+  continuous measure. We estimate the survey
+  interpretation bias of the human labelers and
+  eliminate its influence on the final construct
+  when creating a training dataset, which
+  removes labeling bias and supersedes the use
+  of inter-rater reliability as a quality diagnostic.
+  Wo futhor octimato the rochance aality of
+  01
+  L7 4
+  13
+  ila 155
+  1984 @TheOfficial1984 • 4h
+  Basically, this is how you shift
+  perception using a labeling bias and
+  filtering out accounts that dont fit the
+  narrative.
+  •..
+  We propose a general method for measuring
+  complex phenomena as continuous, interval
+  variables by integrating deep learning with
+  the Constructing Measures approach to faceted
+  Rasch item response theory (IRT). We
+blocks:
+  - text: Post
+    confidence: 1
+    bbox:
+      - 0.15532286157457925
+      - 0.014534884027422867
+      - 0.041884817164977606
+      - 0.013081394856975903
+  - text: »
+    confidence: 1
+    bbox:
+      - 0.6422338568082976
+      - 0.014534883283342848
+      - 0.019197207674853223
+      - 0.017441861091121558
+  - text: "3. Hate Speech Classification with OHI V3:"
+    confidence: 1
+    bbox:
+      - 0.061082024227983325
+      - 0.07106854873638424
+      - 0.4642233860117471
+      - 0.02066532258064513
+  - text: • The transcribed text is fed into OHI V3's core
+    confidence: 1
+    bbox:
+      - 0.12216405634540754
+      - 0.12197580646135164
+      - 0.4869109885744552
+      - 0.019153225806451624
+  - text: model, a fine-tuned transformer-based neural
+    confidence: 1
+    bbox:
+      - 0.1448516676748806
+      - 0.15675403251706754
+      - 0.48342056828607366
+      - 0.02066532258064513
+  - text: network (built on architectures like BERT or
+    confidence: 1
+    bbox:
+      - 0.144851671425956
+      - 0.190406976358509
+      - 0.4537521620928231
+      - 0.017441861091121558
+  - text: "RoBERTa). The model evaluates:"
+    confidence: 1
+    bbox:
+      - 0.14485165390304153
+      - 0.22379032230757756
+      - 0.3350785373198206
+      - 0.017641129032258007
+  - text: "• Semantic Analysis: Detects implicit bias,"
+    confidence: 1
+    bbox:
+      - 0.1778116578580969
+      - 0.26999427632057404
+      - 0.45950479946182654
+      - 0.026632585833149536
+  - text: dog-whistles (e.g., coded references to
+    confidence: 1
+    bbox:
+      - 0.20069808857563318
+      - 0.3064516127900254
+      - 0.40837695696740695
+      - 0.022177419354838745
+  - text: conspiracy theories), and intersectional hate
+    confidence: 1
+    bbox:
+      - 0.2006980889414287
+      - 0.33866279111504616
+      - 0.4677137693539082
+      - 0.02325581350634187
+  - text: (e.g., antisemitism combined with racism).
+    confidence: 1
+    bbox:
+      - 0.19895289528892948
+      - 0.3734879029491409
+      - 0.44677135846228055
+      - 0.020407445969120253
+  - text: "• Contextual Scoring: Considers surrounding"
+    confidence: 1
+    bbox:
+      - 0.17801048289012192
+      - 0.41860465091458765
+      - 0.4834205682860737
+      - 0.02040744596912014
+  - text: dialogue; isolated phrases are cross-
+    confidence: 1
+    bbox:
+      - 0.2006980879568747
+      - 0.45348837182937785
+      - 0.3874345460757793
+      - 0.018895349194926525
+  - text: referenced with the full transcript to avoid >
+    confidence: 1
+    bbox:
+      - 0.20046250540942678
+      - 0.48095992833676315
+      - 0.4578291775239294
+      - 0.028362887520943958
+  - text: misclassification.
+    confidence: 1
+    bbox:
+      - 0.20244328607743495
+      - 0.5188953488945426
+      - 0.1832460675920759
+      - 0.018895349194926636
+  - text: "• Thresholding: Content scoring above 0.9"
+    confidence: 1
+    bbox:
+      - 0.17801047020215552
+      - 0.5639534882235578
+      - 0.4554973907101241
+      - 0.020348837298731715
+  - text: (high confidence) triggers alerts. V3
+    confidence: 1
+    bbox:
+      - 0.2006980893012042
+      - 0.5957661294223752
+      - 0.3734729388146943
+      - 0.022177419354838634
+  - text: improves on prior versions by incorporating
+    confidence: 1
+    bbox:
+      - 0.19895288550390844
+      - 0.6308139533458507
+      - 0.4537521620928231
+      - 0.018895349194926636
+  - text: multilingual support (e.g., Arabic, Spanish)
+    confidence: 1
+    bbox:
+      - 0.2006980827101093
+      - 0.6612903228441533
+      - 0.44502616679120005
+      - 0.023302700250379504
+  - text: and reducing bias against non-English
+    confidence: 1
+    bbox:
+      - 0.20069807652188243
+      - 0.6975806450103914
+      - 0.39965096166578395
+      - 0.019153225806451624
+  - text: dialects.
+    confidence: 1
+    bbox:
+      - 0.20057589934872147
+      - 0.7306440569665165
+      - 0.0927400011704563
+      - 0.0183630489533948
+  - text: • Outputs include severity levels (e.g., "mild
+    confidence: 1
+    bbox:
+      - 0.1221640525441271
+      - 0.780523256121406
+      - 0.45724258238120463
+      - 0.02189609889061217
+  - text: harassment" vs. "direct incitement") and
+    confidence: 1
+    bbox:
+      - 0.1448516584093396
+      - 0.8124999998826109
+      - 0.4205933725574114
+      - 0.020348837298731604
+  - text: recommendations for moderation, such as de-
+    confidence: 1
+    bbox:
+      - 0.14310644925311128
+      - 0.8472782254277907
+      - 0.4921466005339172
+      - 0.019153225806451624
+  - text: amplification or account suspension.
+    confidence: 1
+    bbox:
+      - 0.14310644898778582
+      - 0.8808139533943001
+      - 0.39092496636416085
+      - 0.018895349194926636
+  - text: 7.401 Views
+    confidence: 1
+    bbox:
+      - 0.25305410234689135
+      - 0.9258720932892975
+      - 0.06980802706887007
+      - 0.00872092958419557
+  - text: 2:55 PM
+    confidence: 1
+    bbox:
+      - 0.10471204438374636
+      - 0.9258720932505379
+      - 0.04886561617724254
+      - 0.00872092958419557
+  - text: "1"
+    confidence: 1
+    bbox:
+      - 0.11518324606124973
+      - 0.9840116277574391
+      - 0.008726003383608766
+      - 0.010174418649365857
+  - text: "| 38"
+    confidence: 1
+    bbox:
+      - 0.488656195897516
+      - 0.9636627910703053
+      - 0.024432808088621305
+      - 0.00872092958419557
+  - text: "175"
+    confidence: 1
+    bbox:
+      - 0.20942408404436644
+      - 0.9825581395553997
+      - 0.03315881262679943
+      - 0.014534883922146191
+  - text: • 15
+    confidence: 1
+    bbox:
+      - 0.3315881330981527
+      - 0.9838709677243578
+      - 0.03490401353443506
+      - 0.011768566985284168
+  - text: 1h 175
+    confidence: 1
+    bbox:
+      - 0.4467713777262804
+      - 0.982358871085131
+      - 0.04537521898024888
+      - 0.01473415186328264
+  - text: L
+    confidence: 1
+    bbox:
+      - 0.5689354279820764
+      - 0.9840116281347386
+      - 0.01570680585958184
+      - 0.013081394856975903
+  - text: Post your reply
+    confidence: 1
+    bbox:
+      - 0.738124281642762
+      - -0.0005384945523403406
+      - 0.1258456805139131
+      - 0.017065361622841113
+  - text: Reply
+    confidence: 1
+    bbox:
+      - 0.9267015710336983
+      - 3.767446354885351e-10
+      - 0.038394415349706223
+      - 0.013081394856975903
+  - text: 1984 @TheOfficial1984 • 4h
+    confidence: 1
+    bbox:
+      - 0.7347294982384988
+      - 0.052325581568605006
+      - 0.17975566577680457
+      - 0.013198612197752979
+  - text: X moderation teams=
+    confidence: 1
+    bbox:
+      - 0.7347294937019926
+      - 0.06955645169675628
+      - 0.13787085323010462
+      - 0.011838897101340784
+  - text: CHEQ=AU10TIX=ISRAELI
+    confidence: 0.5
+    bbox:
+      - 0.7364747000443225
+      - 0.08430232575465157
+      - 0.15881325488517706
+      - 0.013081394856975903
+  - text: INTELLIGENCE
+    confidence: 1
+    bbox:
+      - 0.7347294920616882
+      - 0.09883720962093068
+      - 0.09598604068340466
+      - 0.013081394856975903
+  - text: ...
+    confidence: 1
+    bbox:
+      - 0.965095986057927
+      - 0.05377906956733591
+      - 0.017452006767217587
+      - 0.008720930545560779
+  - text: They can and have shut down spaces
+    confidence: 1
+    bbox:
+      - 0.7347294957416709
+      - 0.1293604655544932
+      - 0.23734728649222536
+      - 0.014534882960780982
+  - text: im real time.
+    confidence: 1
+    bbox:
+      - 0.7329842917791761
+      - 0.14364919338905835
+      - 0.08376963432995521
+      - 0.014781038607320496
+  - text: "4. Post-Analysis Actions and Reporting:"
+    confidence: 1
+    bbox:
+      - 0.7574171049077463
+      - 0.17137096769723392
+      - 0.1553228530699058
+      - 0.007560483870967749
+  - text: • Flagged content is routed to X's moderation
+    confidence: 1
+    bbox:
+      - 0.778359507461653
+      - 0.18895348874472395
+      - 0.17102967047518158
+      - 0.008720929584195458
+  - text: teams or ADL's Center for Technology & Society
+    confidence: 1
+    bbox:
+      - 0.7870855153381942
+      - 0.20058139561487898
+      - 0.17452007229045285
+      - 0.00872092958419557
+  - text: (CTS) for review. Aggregated data feeds into ADL's
+    confidence: 1
+    bbox:
+      - 0.7853403136674725
+      - 0.21219758077186157
+      - 0.18673646940734723
+      - 0.008732651510546252
+  - text: annual reports, like the 2024 "Threads of Hate"
+    confidence: 1
+    bbox:
+      - 0.7870855165016613
+      - 0.2237903226756507
+      - 0.17452007229045285
+      - 0.007560483870967749
+  - text: analysis, which examined reinstated accounts'
+    confidence: 1
+    bbox:
+      - 0.7870855161345479
+      - 0.23538306470619252
+      - 0.17277486214626203
+      - 0.008802981626602868
+  - text: Spaces activity.
+    confidence: 1
+    bbox:
+      - 0.7870855168789895
+      - 0.24697580667145125
+      - 0.05933682162305631
+      - 0.009072580645161366
+  - text: • Real-time monitoring uses edge computing to
+    confidence: 1
+    bbox:
+      - 0.7783595125108376
+      - 0.2630813958183673
+      - 0.17801047410572413
+      - 0.008720929584195458
+  - text: process data with minimal latency (<5 seconds),
+    confidence: 1
+    bbox:
+      - 0.7870855201438839
+      - 0.2746975805347621
+      - 0.17975566577680469
+      - 0.007279163406741285
+  - text: enabling proactive interventions during live
+    confidence: 1
+    bbox:
+      - 0.7870855171071893
+      - 0.2862903226756508
+      - 0.16055846502936777
+      - 0.007560483870967749
+  - text: sessions.
+    confidence: 1
+    bbox:
+      - 0.7870855154011286
+      - 0.2979651164146013
+      - 0.0366492144420707
+      - 0.007267441480390491
+  - text: This process is powered by collaborations with academic
+    confidence: 1
+    bbox:
+      - 0.7469459034745813
+      - 0.31955645173957725
+      - 0.21116928211424602
+      - 0.009072580645161255
+  - text: labs (e.g., UC Berkeley's D-Lab, where early OHI versions
+    confidence: 1
+    bbox:
+      - 0.7469459072959497
+      - 0.33114919344217664
+      - 0.2094240719700552
+      - 0.009072580645161366
+  - text: were developed) and tech firms, with ADL claiming it
+    confidence: 1
+    bbox:
+      - 0.7452007030911623
+      - 0.3430232562834836
+      - 0.19720767485316093
+      - 0.008791259700252185
+  - text: processes millions of data points weekly across platforms.
+    confidence: 1
+    bbox:
+      - 0.7469459024287841
+      - 0.3546511629262292
+      - 0.21465968392951718
+      - 0.00726744148039038
+  - text: 01 174
+    confidence: 1
+    bbox:
+      - 0.736444027733327
+      - 0.38357763281065105
+      - 0.08732136687124026
+      - 0.0133679903322651
+  - text: • 14
+    confidence: 1
+    bbox:
+      - 0.8534031438601862
+      - 0.3850806450215438
+      - 0.0488656161772425
+      - 0.010268192137441456
+  - text: Ill 164 L
+    confidence: 1
+    bbox:
+      - 0.9040139626429693
+      - 0.38508064527681185
+      - 0.07678882608113513
+      - 0.011721680241246424
+  - text: 1984 @TheOfficial1984 • 4h
+    confidence: 1
+    bbox:
+      - 0.7364746949192148
+      - 0.4171511627247356
+      - 0.17801047410572413
+      - 0.010268192137441345
+  - text: The Rasch item response theory (IRT)
+    confidence: 1
+    bbox:
+      - 0.7364746993136463
+      - 0.434475806220622
+      - 0.2338568846769541
+      - 0.0117451240939479
+  - text: used to target and group speech
+    confidence: 1
+    bbox:
+      - 0.7364746936333666
+      - 0.44909274186283565
+      - 0.20418847848370336
+      - 0.01166307205154049
+  - text: assigning a weight and label to score
+    confidence: 1
+    bbox:
+      - 0.7364746963527538
+      - 0.4651162792542285
+      - 0.23036648286168282
+      - 0.011698236869227552
+  - text: the "quality" of your account, in real
+    confidence: 1
+    bbox:
+      - 0.7364746971731293
+      - 0.47819767473720975
+      - 0.22687608104641155
+      - 0.01323377701543993
+  - text: time, continuously.
+    confidence: 1
+    bbox:
+      - 0.7364746981020088
+      - 0.4954637098730329
+      - 0.12041884415374826
+      - 0.011803731802971118
+  - text: ..
+    confidence: 1
+    bbox:
+      - 0.9650959862674823
+      - 0.4215116279167548
+      - 0.013961604951946316
+      - 0.0029069766882927617
+  - text: Berkley DLab
+    confidence: 1
+    bbox:
+      - 0.73643068669846
+      - 0.5245110859926865
+      - 0.08385764946371821
+      - 0.013477828233472766
+  - text: Outcome phenomena are typically measured
+    confidence: 1
+    bbox:
+      - 0.7626527010968315
+      - 0.5508720934055767
+      - 0.18848167955153783
+      - 0.00872092958419557
+  - text: "at the binary level: a comment is toxic or not,"
+    confidence: 1
+    bbox:
+      - 0.7626527060467628
+      - 0.5594758065745521
+      - 0.18673646940734712
+      - 0.009072580645161255
+  - text: an MRI scan shows cancer or is clear, a patient
+    confidence: 1
+    bbox:
+      - 0.7609075096647515
+      - 0.5695564517395773
+      - 0.19720767485316093
+      - 0.009072580645161366
+  - text: is diagnosed as having a disease or not. But
+    confidence: 1
+    bbox:
+      - 0.7626527011319981
+      - 0.5799418607096594
+      - 0.1815008759209954
+      - 0.007267441480390491
+  - text: underlying that dichotomization there is often
+    confidence: 1
+    bbox:
+      - 0.7626527144082988
+      - 0.5886627909491814
+      - 0.19197206289369895
+      - 0.008720929584195458
+  - text: a continuous spectrum or latent variable.
+    confidence: 1
+    bbox:
+      - 0.7626527068799193
+      - 0.5987903226756507
+      - 0.17102967047518158
+      - 0.007560483870967749
+  - text: Physical quantities such as temperature and
+    confidence: 1
+    bbox:
+      - 0.7626527013412909
+      - 0.6073588710147029
+      - 0.18499127773626667
+      - 0.009072580645161255
+  - text: weight can be measured as interval variables
+    confidence: 1
+    bbox:
+      - 0.7626527153595645
+      - 0.6177325582568978
+      - 0.18848166107842768
+      - 0.007267441720731793
+  - text: where magnitudes are meaningful. How can
+    confidence: 1
+    bbox:
+      - 0.7609075101188977
+      - 0.6264534882770613
+      - 0.18673646940734712
+      - 0.010174418649365857
+  - text: we achieve that same interval measurement
+    confidence: 1
+    bbox:
+      - 0.7626527032784635
+      - 0.6365927418718399
+      - 0.18499127773626656
+      - 0.007302607019101348
+  - text: for arbitrary outcomes - creating continuous
+    confidence: 1
+    bbox:
+      - 0.7609075038943487
+      - 0.6451612901250996
+      - 0.18673646940734712
+      - 0.009072580645161366
+  - text: scales with magnitudes?
+    confidence: 1
+    bbox:
+      - 0.7609075070802029
+      - 0.6540697672499295
+      - 0.10471203598502754
+      - 0.010244748765422473
+  - text: We propose a general method for measuring
+    confidence: 1
+    bbox:
+      - 0.7609075091749037
+      - 0.669858870883889
+      - 0.1902268712226184
+      - 0.009072580645161255
+  - text: complex phenomena as continuous, interval
+    confidence: 1
+    bbox:
+      - 0.7626527098207592
+      - 0.6787790699826115
+      - 0.18673646940734712
+      - 0.008720930064878174
+  - text: variables by integrating deep learning with
+    confidence: 1
+    bbox:
+      - 0.7609075096726796
+      - 0.6889534886236
+      - 0.17975566577680457
+      - 0.00872092958419557
+  - text: the Constructing Measures approach to faceted
+    confidence: 1
+    bbox:
+      - 0.7609075101120651
+      - 0.697580645263792
+      - 0.19546246470897022
+      - 0.010268192137441345
+  - text: Rasch item response theory (IRT). We
+    confidence: 1
+    bbox:
+      - 0.7626527115322373
+      - 0.7076612904846582
+      - 0.1553228530699058
+      - 0.009072580645161255
+  - text: decompose the target construct into multiple
+    confidence: 1
+    bbox:
+      - 0.7626527106655957
+      - 0.7180232559313164
+      - 0.1902268712226185
+      - 0.007279163406741174
+  - text: constituent components that are labeled as
+    confidence: 1
+    bbox:
+      - 0.7609075041620773
+      - 0.7267441864675921
+      - 0.18324606759207596
+      - 0.00872092958419557
+  - text: ordinal survey items, and are transformed via
+    confidence: 1
+    bbox:
+      - 0.7626527093974169
+      - 0.7353830645027041
+      - 0.1902268712226184
+      - 0.00880298162660298
+  - text: an IRT nonlinear activation into a high-quality
+    confidence: 1
+    bbox:
+      - 0.7626527006256273
+      - 0.7454637097500939
+      - 0.18848167955153794
+      - 0.009072580645161255
+  - text: continuous measure. We estimate the survey
+    confidence: 1
+    bbox:
+      - 0.7626527053376689
+      - 0.7543604654041232
+      - 0.18848167955153794
+      - 0.008744373436897046
+  - text: interpretation bias of the human labelers and
+    confidence: 1
+    bbox:
+      - 0.7609075089109167
+      - 0.764534884117786
+      - 0.19197206289369895
+      - 0.00872092958419557
+  - text: eliminate its influence on the final construct
+    confidence: 1
+    bbox:
+      - 0.7626527097467195
+      - 0.7731854841034737
+      - 0.18324606759207596
+      - 0.008791259700252074
+  - text: when creating a training dataset, which
+    confidence: 1
+    bbox:
+      - 0.7626527064991463
+      - 0.7832661292055142
+      - 0.16404886684463904
+      - 0.009072580645161255
+  - text: removes labeling bias and supersedes the use
+    confidence: 1
+    bbox:
+      - 0.7609075058021723
+      - 0.793604651632321
+      - 0.19371727303788966
+      - 0.008814703072271057
+  - text: of inter-rater reliability as a quality diagnostic.
+    confidence: 1
+    bbox:
+      - 0.762652709872984
+      - 0.8023255816468556
+      - 0.1902268712226184
+      - 0.00872092958419557
+  - text: Wo futhor octimato the rochance aality of
+    confidence: 1
+    bbox:
+      - 0.7609075072904308
+      - 0.8124999999944237
+      - 0.1832460491189657
+      - 0.004536290322580738
+  - text: "01"
+    confidence: 1
+    bbox:
+      - 0.7382198961867315
+      - 0.828488372284448
+      - 0.029668410811528156
+      - 0.013081394856976014
+  - text: L7 4
+    confidence: 0.5
+    bbox:
+      - 0.7923211172468753
+      - 0.8299418606931821
+      - 0.03141361171916379
+      - 0.01179201035730304
+  - text: "13"
+    confidence: 1
+    bbox:
+      - 0.8673647470526913
+      - 0.8299418603155788
+      - 0.017452006767217587
+      - 0.010174418649365857
+  - text: ila 155
+    confidence: 1
+    bbox:
+      - 0.909249565895991
+      - 0.8284883721563604
+      - 0.05584641980778515
+      - 0.011733402167597107
+  - text: 1984 @TheOfficial1984 • 4h
+    confidence: 1
+    bbox:
+      - 0.7347294982384988
+      - 0.8618951613286383
+      - 0.17975566577680457
+      - 0.011651350125189697
+  - text: Basically, this is how you shift
+    confidence: 1
+    bbox:
+      - 0.7382199003277005
+      - 0.8779069767720934
+      - 0.1849912592631564
+      - 0.013222055569771851
+  - text: perception using a labeling bias and
+    confidence: 1
+    bbox:
+      - 0.7382199025833828
+      - 0.8936491936959297
+      - 0.22338567923114028
+      - 0.012096774193548376
+  - text: filtering out accounts that dont fit the
+    confidence: 1
+    bbox:
+      - 0.7364746966557452
+      - 0.9082661290076545
+      - 0.2356020948211448
+      - 0.01179201035730304
+  - text: narrative.
+    confidence: 1
+    bbox:
+      - 0.7364746946508187
+      - 0.9244186048356238
+      - 0.06282722343832758
+      - 0.011627906753170936
+  - text: •..
+    confidence: 1
+    bbox:
+      - 0.9650959862033605
+      - 0.8633720930921692
+      - 0.017452006767217476
+      - 0.007267441480390491
+  - text: We propose a general method for measuring
+    confidence: 1
+    bbox:
+      - 0.7626527091350155
+      - 0.9490927419671261
+      - 0.18848166107842768
+      - 0.010209583467052918
+  - text: complex phenomena as continuous, interval
+    confidence: 1
+    bbox:
+      - 0.7609075146614841
+      - 0.9591733870222323
+      - 0.18848166107842768
+      - 0.009072580645161255
+  - text: variables by integrating deep learning with
+    confidence: 1
+    bbox:
+      - 0.7609075104216617
+      - 0.969254032138808
+      - 0.17975566577680457
+      - 0.009072580645161366
+  - text: the Constructing Measures approach to faceted
+    confidence: 1
+    bbox:
+      - 0.7626527105142139
+      - 0.9781976746458868
+      - 0.19371727303788966
+      - 0.00872092958419557
+  - text: Rasch item response theory (IRT). We
+    confidence: 1
+    bbox:
+      - 0.762652708037473
+      - 0.9883720934055767
+      - 0.1553228530699058
+      - 0.00872092958419557

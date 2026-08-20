@@ -1,0 +1,37 @@
+source: videos/1965890646746513821.mp4
+status: done
+engine: vision
+level: fast
+generated: 2026-08-20T12:41:02.833Z
+kind: video
+language: en-US
+stride_seconds: 15
+frames_sampled: 2
+truncated: false
+text: |-
+  UTAH
+  I kind of didn't go to my knees as fast
+  as everybody because I wanted to
+  see, if anyone who was close to the
+  'iJ
+
+  UTAH
+  And people started getting up
+  and moving across
+blocks:
+  - text: |-
+      UTAH
+      I kind of didn't go to my knees as fast
+      as everybody because I wanted to
+      see, if anyone who was close to the
+      'iJ
+    confidence: 0.5
+    start: 0
+    end: 15
+  - text: |-
+      UTAH
+      And people started getting up
+      and moving across
+    confidence: 0.5
+    start: 15
+    end: 30

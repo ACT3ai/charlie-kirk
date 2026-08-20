@@ -1,0 +1,59 @@
+source: images/2082642579070546381_1.png
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:41:23.689Z
+kind: image
+language: en-US
+text: >-
+  • "Hey guys, I have bad news for you all. it was me at UVU yesterday. im sorry
+  for
+
+  all of this. im surrendering through a sheriff friend in a few moments."
+  State's Ex.
+
+  16.2 at l.
+
+  • "it was [me]. .. look at the pictures from the surveillance footage. it was
+  me. ...
+
+  im serious." State's Ex. 16.2 at 2.
+blocks:
+  - text: • "Hey guys, I have bad news for you all. it was me at UVU yesterday. im
+      sorry for
+    confidence: 1
+    bbox:
+      - 0.014598549635036349
+      - 0.04878048707317073
+      - 0.948905109489051
+      - 0.14634146341463417
+  - text: all of this. im surrendering through a sheriff friend in a few moments."
+      State's Ex.
+    confidence: 1
+    bbox:
+      - 0.05839416812652051
+      - 0.21951219491869922
+      - 0.9051094890510949
+      - 0.14634146341463417
+  - text: 16.2 at l.
+    confidence: 1
+    bbox:
+      - 0.05834783303794495
+      - 0.4014090561079169
+      - 0.1071486183036563
+      - 0.12401116185071981
+  - text: • "it was [me]. .. look at the pictures from the surveillance footage. it
+      was me. ...
+    confidence: 1
+    bbox:
+      - 0.017031645904297964
+      - 0.6463414636178862
+      - 0.9440389294403894
+      - 0.13414634146341453
+  - text: im serious." State's Ex. 16.2 at 2.
+    confidence: 1
+    bbox:
+      - 0.05596106581508527
+      - 0.8170731708841463
+      - 0.3795620437956205
+      - 0.13414634146341464

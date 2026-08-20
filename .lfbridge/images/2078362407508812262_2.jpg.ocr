@@ -1,0 +1,41 @@
+source: images/2078362407508812262_2.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:41:16.088Z
+kind: image
+language: en-US
+text: |-
+  Shaffer Security Group • Follow
+  Apr 8, 2017 •
+  alleytopfiles
+  Brian Harpole; Greg Shaffer; Justin Davis; Dutch Moyer
+blocks:
+  - text: Shaffer Security Group • Follow
+    confidence: 1
+    bbox:
+      - 0.22325581405038764
+      - 0.04142011862672579
+      - 0.5147286821705427
+      - 0.04536489151873768
+  - text: Apr 8, 2017 •
+    confidence: 1
+    bbox:
+      - 0.22318543548626224
+      - 0.10009314917748924
+      - 0.17068339503088664
+      - 0.04044486502923916
+  - text: alleytopfiles
+    confidence: 0.5
+    bbox:
+      - 0.761141341807067
+      - 0.133562925914533
+      - 0.09477158184199375
+      - 0.028732136156431998
+  - text: Brian Harpole; Greg Shaffer; Justin Davis; Dutch Moyer
+    confidence: 0.5
+    bbox:
+      - 0.029457366965670008
+      - 0.20118343160045082
+      - 0.8728682170542635
+      - 0.04930966469428011

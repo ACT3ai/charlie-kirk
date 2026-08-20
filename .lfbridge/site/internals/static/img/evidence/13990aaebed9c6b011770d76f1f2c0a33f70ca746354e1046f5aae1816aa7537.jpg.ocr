@@ -1,0 +1,113 @@
+source: site/internals/static/img/evidence/13990aaebed9c6b011770d76f1f2c0a33f70ca746354e1046f5aae1816aa7537.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:42:22.609Z
+kind: image
+language: en-US
+text: |-
+  ON
+  TURNING
+  POINT ACTION
+  JRNING
+  INTACTION
+  TURNI
+  DOIN
+  TION
+  TURNING
+  POINT ACTION
+  TURNING
+  POINT ACTION
+  TURNIN
+blocks:
+  - text: ON
+    confidence: 1
+    bbox:
+      - 8.306143461922488e-10
+      - 0.41860465092833365
+      - 0.053779067993164065
+      - 0.04651162889268656
+  - text: TURNING
+    confidence: 1
+    bbox:
+      - 0.11918604686371559
+      - 0.3746770019296257
+      - 0.16279069900512694
+      - 0.04651162889268656
+  - text: POINT ACTION
+    confidence: 1
+    bbox:
+      - 0.11918604932307751
+      - 0.4186046505407368
+      - 0.23691860198974607
+      - 0.0469509039984809
+  - text: JRNING
+    confidence: 1
+    bbox:
+      - -0.00008839579785996143
+      - 0.6736287073588388
+      - 0.12953725814819336
+      - 0.04809142218695739
+  - text: INTACTION
+    confidence: 1
+    bbox:
+      - 2.5491708299796302e-9
+      - 0.7209302323975104
+      - 0.20348836898803713
+      - 0.046511628892686674
+  - text: TURNI
+    confidence: 1
+    bbox:
+      - 0.2674418598401163
+      - 0.6744186051746457
+      - 0.125
+      - 0.051679585774739634
+  - text: DOIN
+    confidence: 1
+    bbox:
+      - 0.2718023273906867
+      - 0.7235142121009075
+      - 0.07558139324188234
+      - 0.020671833886040547
+  - text: TION
+    confidence: 1
+    bbox:
+      - 0.5726744213449116
+      - 0.42377261098351626
+      - 0.0886627864837648
+      - 0.04392764621310774
+  - text: TURNING
+    confidence: 1
+    bbox:
+      - 0.7238372131161509
+      - 0.3798449605997992
+      - 0.16133720397949214
+      - 0.046511628892686674
+  - text: POINT ACTION
+    confidence: 1
+    bbox:
+      - 0.7148083615562529
+      - 0.41273096671583764
+      - 0.24486469268798827
+      - 0.06127862718370225
+  - text: TURNING
+    confidence: 1
+    bbox:
+      - 0.571220931997657
+      - 0.679586562958193
+      - 0.16133720397949214
+      - 0.046511628892686674
+  - text: POINT ACTION
+    confidence: 1
+    bbox:
+      - 0.5708333334914144
+      - 0.7185185203943322
+      - 0.24166666030883788
+      - 0.051851849026150254
+  - text: TURNIN
+    confidence: 1
+    bbox:
+      - 0.8734349836161455
+      - 0.6837284375189201
+      - 0.12522305488586427
+      - 0.04597981770833326

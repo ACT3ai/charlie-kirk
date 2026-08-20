@@ -1,0 +1,33 @@
+source: site/internals/static/img/evidence/160a10070535469886e2cc3d3e3363b6fd16b6cb010278b6195c7b7719d4148d.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:42:29.112Z
+kind: image
+language: en-US
+text: |-
+  Happy Halloween! So weird not trick or treating with the
+  boys this year. Off they go! #halloween2017 #sans #10k
+  #trumpcostume
+blocks:
+  - text: Happy Halloween! So weird not trick or treating with the
+    confidence: 1
+    bbox:
+      - 0.012077297222222175
+      - 0.027118643457627156
+      - 0.9637681159420289
+      - 0.0610169491525423
+  - text: "boys this year. Off they go! #halloween2017 #sans #10k"
+    confidence: 1
+    bbox:
+      - 0.004166677451124819
+      - 0.09941520372302715
+      - 0.9916666371810839
+      - 0.06499157598463157
+  - text: "#trumpcostume"
+    confidence: 1
+    bbox:
+      - 0.007246379710144876
+      - 0.1728813557627119
+      - 0.2898550724637681
+      - 0.057627118644067776

@@ -1,0 +1,193 @@
+source: images/2074570091673649274_1.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:41:11.381Z
+kind: image
+language: en-US
+text: |-
+  Jack Posobiec
+  @Jack... • 02.04.22
+  Military sent me down to Ft Huachuca couple
+  times for training. We used to walk over the
+  border to get lunch in Nogales.
+  ...
+  Then there's that time I took Tanya to Juarez.
+  That was a great livestream and we almost got
+  deported (her fault not mine)
+  THEY CALL ME MR. TIBBS! • 02.04.22
+  Replying to @JackPosobiec
+  Ever been to Southern border?
+  44
+  17 18
+  399
+  ill
+  Tyler Bowyer C
+  jack stop going to huachuca
+  9
+  173
+  @tylerbowyer •2d O
+  117
+  Thil 5,3K
+blocks:
+  - text: Jack Posobiec
+    confidence: 1
+    bbox:
+      - 0.20606060756628786
+      - 0.06317411399268102
+      - 0.24090909090909085
+      - 0.03235747303543912
+  - text: "@Jack... • 02.04.22"
+    confidence: 1
+    bbox:
+      - 0.540909093073593
+      - 0.06317411393352412
+      - 0.3030303030303031
+      - 0.03389830508474578
+  - text: Military sent me down to Ft Huachuca couple
+    confidence: 1
+    bbox:
+      - 0.20416667479166645
+      - 0.1101694909427966
+      - 0.7250000000000001
+      - 0.04661016949152552
+  - text: times for training. We used to walk over the
+    confidence: 1
+    bbox:
+      - 0.2075757563131314
+      - 0.16178736547252182
+      - 0.6848484848484848
+      - 0.035439137134052445
+  - text: border to get lunch in Nogales.
+    confidence: 1
+    bbox:
+      - 0.20909090665909097
+      - 0.2080123267026195
+      - 0.4863636363636364
+      - 0.036979969183358996
+  - text: ...
+    confidence: 1
+    bbox:
+      - 0.9242424244886364
+      - 0.07241910616332825
+      - 0.037878787878787845
+      - 0.012326656394452962
+  - text: Then there's that time I took Tanya to Juarez.
+    confidence: 1
+    bbox:
+      - 0.20729250475662592
+      - 0.29317939701275797
+      - 0.7157569191672586
+      - 0.04507704324825157
+  - text: That was a great livestream and we almost got
+    confidence: 1
+    bbox:
+      - 0.20757576117424242
+      - 0.34360554666153065
+      - 0.7378787878787878
+      - 0.04006163328197221
+  - text: deported (her fault not mine)
+    confidence: 1
+    bbox:
+      - 0.20757575437229442
+      - 0.3913713402597402
+      - 0.46060606060606063
+      - 0.03697996918335911
+  - text: THEY CALL ME MR. TIBBS! • 02.04.22
+    confidence: 1
+    bbox:
+      - 0.29090908750841754
+      - 0.4884437596986817
+      - 0.6121212121212121
+      - 0.03389830508474578
+  - text: Replying to @JackPosobiec
+    confidence: 1
+    bbox:
+      - 0.23750000137500002
+      - 0.5466101690677966
+      - 0.4375
+      - 0.0423728813559322
+  - text: Ever been to Southern border?
+    confidence: 1
+    bbox:
+      - 0.24090909263528137
+      - 0.6086286593935725
+      - 0.4833333333333333
+      - 0.03235747303543912
+  - text: "44"
+    confidence: 1
+    bbox:
+      - 0.24696969664502166
+      - 0.705701078670482
+      - 0.04545454545454547
+      - 0.024653312788906034
+  - text: 17 18
+    confidence: 1
+    bbox:
+      - 0.3636363634259259
+      - 0.6979969185327856
+      - 0.08333333333333337
+      - 0.035439137134052334
+  - text: "399"
+    confidence: 1
+    bbox:
+      - 0.5710291222163877
+      - 0.705276440798677
+      - 0.0549114516287138
+      - 0.025502588421978833
+  - text: ill
+    confidence: 0.5
+    bbox:
+      - 0.6863636365056818
+      - 0.7010785826463791
+      - 0.037878787878787845
+      - 0.03389830508474567
+  - text: Tyler Bowyer C
+    confidence: 1
+    bbox:
+      - 0.20416666925
+      - 0.7966101691949152
+      - 0.2583333333333333
+      - 0.03813559322033899
+  - text: jack stop going to huachuca
+    confidence: 1
+    bbox:
+      - 0.203030302159091
+      - 0.8443759633410376
+      - 0.44999999999999996
+      - 0.03852080123266566
+  - text: "9"
+    confidence: 1
+    bbox:
+      - 0.2515151513131313
+      - 0.9106317411915767
+      - 0.024242424242424232
+      - 0.02157164869029282
+  - text: "173"
+    confidence: 1
+    bbox:
+      - 0.36666666715367974
+      - 0.9060092449262601
+      - 0.06818181818181818
+      - 0.03081664098613246
+  - text: "@tylerbowyer •2d O"
+    confidence: 1
+    bbox:
+      - 0.5606060628030303
+      - 0.7950693373170263
+      - 0.35151515151515156
+      - 0.035439137134052334
+  - text: "117"
+    confidence: 1
+    bbox:
+      - 0.5725158760747088
+      - 0.9102401410945524
+      - 0.04133188363277551
+      - 0.023895680996229074
+  - text: Thil 5,3K
+    confidence: 1
+    bbox:
+      - 0.6847705615270642
+      - 0.9088170926499118
+      - 0.10924675681374296
+      - 0.03290510544975289

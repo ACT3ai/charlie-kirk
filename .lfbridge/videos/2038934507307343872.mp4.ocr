@@ -1,0 +1,32 @@
+source: videos/2038934507307343872.mp4
+status: done
+engine: vision
+level: fast
+generated: 2026-08-20T12:41:46.488Z
+kind: video
+language: en-US
+stride_seconds: 15
+frames_sampled: 12
+truncated: false
+text: |-
+  MJTriiihU11f
+
+  Iii
+  MJTruthlJltfn
+
+  VMJTriithlJ11f
+blocks:
+  - text: MJTriiihU11f
+    confidence: 0.5
+    start: 0
+    end: 15
+  - text: |-
+      Iii
+      MJTruthlJltfn
+    confidence: 0.5
+    start: 30
+    end: 45
+  - text: VMJTriithlJ11f
+    confidence: 0.5
+    start: 45
+    end: 60

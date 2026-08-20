@@ -1,0 +1,73 @@
+source: site/internals/static/img/evidence/110952eab098fcb2277575d4ca608b64501bfc95ca18d560f6dd8ae804561bac.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:42:19.987Z
+kind: image
+language: en-US
+text: |-
+  Black shirts
+  S
+  HER LANI
+  COMERAL!
+  WRONG PROVE ME
+  Crowd
+  Control
+  COMEBACK
+blocks:
+  - text: Black shirts
+    confidence: 1
+    bbox:
+      - 0.41983044666347935
+      - 0.00317456007583361
+      - 0.4975997805595398
+      - 0.10580224543809891
+  - text: S
+    confidence: 1
+    bbox:
+      - 0.6482558138920906
+      - 0.15261627911711018
+      - 0.011627906933426857
+      - 0.01308139506727457
+  - text: HER LANI
+    confidence: 1
+    bbox:
+      - 0.5035103069140852
+      - 0.17408951242586923
+      - 0.10733874887228012
+      - 0.04371434822678566
+  - text: COMERAL!
+    confidence: 1
+    bbox:
+      - 0.4966311067904774
+      - 0.18828567052173883
+      - 0.11589165031909943
+      - 0.0384761244058609
+  - text: WRONG PROVE ME
+    confidence: 1
+    bbox:
+      - 0.46451881249412796
+      - 0.21122216510626113
+      - 0.20051127672195435
+      - 0.07082471996545792
+  - text: Crowd
+    confidence: 1
+    bbox:
+      - 0.7076343124270679
+      - 0.14922608044214103
+      - 0.19674243032932281
+      - 0.055423885583877563
+  - text: Control
+    confidence: 1
+    bbox:
+      - 0.6932148204968185
+      - 0.24665163277997637
+      - 0.2313029170036316
+      - 0.0532083623111248
+  - text: COMEBACK
+    confidence: 0.5
+    bbox:
+      - 0.5619206154117659
+      - 0.43840138798124184
+      - 0.09411342442035675
+      - 0.027013901621103287

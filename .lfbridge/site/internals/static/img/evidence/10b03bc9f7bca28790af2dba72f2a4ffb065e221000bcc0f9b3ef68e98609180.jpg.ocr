@@ -1,0 +1,41 @@
+source: site/internals/static/img/evidence/10b03bc9f7bca28790af2dba72f2a4ffb065e221000bcc0f9b3ef68e98609180.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:42:19.707Z
+kind: image
+language: en-US
+text: |-
+  CONS
+  ON
+  Jounıverseh
+  00
+blocks:
+  - text: CONS
+    confidence: 1
+    bbox:
+      - 0.8968023258095246
+      - -3.090241396108695e-10
+      - 0.023255813351881316
+      - 0.02484472095966328
+  - text: ON
+    confidence: 1
+    bbox:
+      - 0.9447674420920886
+      - -3.6941072423246624e-10
+      - 0.014534883096184448
+      - 0.02484472095966339
+  - text: Jounıverseh
+    confidence: 0.3
+    bbox:
+      - 0.5000000060846581
+      - 0.909937888354916
+      - 0.1845930136301024
+      - 0.05900620988437111
+  - text: "00"
+    confidence: 1
+    bbox:
+      - 0.7180232561922482
+      - 0.9130434775220481
+      - 0.03343023181770022
+      - 0.04968944191932678

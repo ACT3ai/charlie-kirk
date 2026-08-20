@@ -1,0 +1,121 @@
+source: images/2082500145359503672_2.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:41:20.034Z
+kind: image
+language: en-US
+text: |-
+  < UVU campus, Utah Vly... ×
+  Open now
+  Wheelchair accessible entra
+  Search this area
+  Enters frame here,
+  1-3 steps passed
+  the alleged
+  screwdriver
+  @BasedSamParker
+  @SamParkerSenate
+  Perch
+  50 ft
+  = View list
+  Google
+blocks:
+  - text: < UVU campus, Utah Vly... ×
+    confidence: 1
+    bbox:
+      - 0.06071429119897961
+      - 0.024999999892857172
+      - 0.7678571428571428
+      - 0.03166666666666662
+  - text: Open now
+    confidence: 1
+    bbox:
+      - 0.16334840936723305
+      - 0.10075443421054697
+      - 0.20844717025756837
+      - 0.021145969231923467
+  - text: Wheelchair accessible entra
+    confidence: 1
+    bbox:
+      - 0.4499999979017858
+      - 0.0983333331041667
+      - 0.5464285714285714
+      - 0.018333333333333313
+  - text: Search this area
+    confidence: 1
+    bbox:
+      - 0.3392857182142856
+      - 0.17333333329166667
+      - 0.3142857142857142
+      - 0.01666666666666672
+  - text: Enters frame here,
+    confidence: 1
+    bbox:
+      - 0.5571428597767857
+      - 0.29666666666666663
+      - 0.4214285714285714
+      - 0.026666666666666616
+  - text: 1-3 steps passed
+    confidence: 1
+    bbox:
+      - 0.5678571389285715
+      - 0.3283333333666667
+      - 0.3928571428571429
+      - 0.026666666666666616
+  - text: the alleged
+    confidence: 1
+    bbox:
+      - 0.6357142875510204
+      - 0.35999999991666676
+      - 0.2571428571428571
+      - 0.02499999999999991
+  - text: screwdriver
+    confidence: 1
+    bbox:
+      - 0.6319670277431689
+      - 0.38788545982850864
+      - 0.26820880344935827
+      - 0.024229079882303828
+  - text: "@BasedSamParker"
+    confidence: 1
+    bbox:
+      - 0.2025204956325049
+      - 0.48534589820206386
+      - 0.4482409885951451
+      - 0.03003097216288253
+  - text: "@SamParkerSenate"
+    confidence: 1
+    bbox:
+      - 0.189285711505102
+      - 0.5200000001904762
+      - 0.46785714285714286
+      - 0.026666666666666727
+  - text: Perch
+    confidence: 1
+    bbox:
+      - 5.357142665981688e-10
+      - 0.7033333335185186
+      - 0.1964285714285714
+      - 0.033333333333333326
+  - text: 50 ft
+    confidence: 1
+    bbox:
+      - 0.46428571499999993
+      - 0.8783333334833333
+      - 0.07857142857142863
+      - 0.014999999999999902
+  - text: = View list
+    confidence: 1
+    bbox:
+      - 0.6606690016191461
+      - 0.8732173060759034
+      - 0.2536620003836495
+      - 0.021898721059163462
+  - text: Google
+    confidence: 1
+    bbox:
+      - 0.042089163203006486
+      - 0.9005739197962142
+      - 0.16939310346330916
+      - 0.02885216077168784

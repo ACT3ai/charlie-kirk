@@ -1,0 +1,241 @@
+source: site/internals/static/img/evidence/12938c866f0117948189f40f373fa9591f50fa0c859868e45eb0bf3214c6cb1e.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:42:23.230Z
+kind: image
+language: en-US
+text: |-
+  Same Original Video
+  3996-R1
+  (Prosecution Version)
+  Edited Clothing Clip
+  • Video of Tyler
+  Robinson at WCSO
+  on 9/11/2025
+  • Only shows
+  6:50-7:15
+  (clothing focus)
+  • Produced
+  11/25/2025
+  3996-R2
+  (Defense Version)
+  Fuller Miranda Segment
+  • Same original
+  WCSO video
+  • Shows timestamp
+  03:36:53(06:25 PM)
+  • Miranda rights
+  reading + Tyler
+  invokes right to
+  attorney (Doug Terry)
+  and remains silent
+  Key Concept: Same core evidence (base Bates 3996)
+  → Different revisions for different purposes.
+  -R1 = edited narrow clip.
+  -R2 = later/more complete version.
+  Tyler Robinson Case Discovery Example
+blocks:
+  - text: Same Original Video
+    confidence: 1
+    bbox:
+      - 0.09438775672831624
+      - 0.053082191406250034
+      - 0.8112244897959183
+      - 0.05993150684931503
+  - text: 3996-R1
+    confidence: 1
+    bbox:
+      - 0.10170526038483499
+      - 0.2506036512833232
+      - 0.30679356321996576
+      - 0.045025574017877434
+  - text: (Prosecution Version)
+    confidence: 1
+    bbox:
+      - 0.05612244566326536
+      - 0.30821917818207756
+      - 0.3979591836734694
+      - 0.02910958904109595
+  - text: Edited Clothing Clip
+    confidence: 1
+    bbox:
+      - 0.07397959384920634
+      - 0.3749999999429223
+      - 0.3622448979591837
+      - 0.03082191780821919
+  - text: • Video of Tyler
+    confidence: 1
+    bbox:
+      - 0.05867347058354589
+      - 0.45890410977097607
+      - 0.29336734693877553
+      - 0.02910958904109595
+  - text: Robinson at WCSO
+    confidence: 1
+    bbox:
+      - 0.10204081354166672
+      - 0.48801369873002287
+      - 0.3341836734693877
+      - 0.02568493150684925
+  - text: on 9/11/2025
+    confidence: 1
+    bbox:
+      - 0.10181161541569256
+      - 0.517930409564693
+      - 0.24790738553416974
+      - 0.0309200041914639
+  - text: • Only shows
+    confidence: 1
+    bbox:
+      - 0.05855185694066792
+      - 0.5629006915611704
+      - 0.2527942462843291
+      - 0.031732861309835436
+  - text: 6:50-7:15
+    confidence: 1
+    bbox:
+      - 0.10200124952299873
+      - 0.595762655246546
+      - 0.17099750285245935
+      - 0.02422811397134439
+  - text: (clothing focus)
+    confidence: 1
+    bbox:
+      - 0.09684694089585223
+      - 0.6246151616953731
+      - 0.2833469351943658
+      - 0.031591596668713695
+  - text: • Produced
+    confidence: 1
+    bbox:
+      - 0.05859656057979183
+      - 0.6692282264496885
+      - 0.2144395283290318
+      - 0.026269576320909538
+  - text: 11/25/2025
+    confidence: 1
+    bbox:
+      - 0.09911852555871874
+      - 0.6974903458395763
+      - 0.21502825678611287
+      - 0.034813828664283175
+  - text: 3996-R2
+    confidence: 1
+    bbox:
+      - 0.5917562091333933
+      - 0.25145134033151095
+      - 0.30628350316261754
+      - 0.04333019583192599
+  - text: (Defense Version)
+    confidence: 1
+    bbox:
+      - 0.5790816354166666
+      - 0.30993150674942926
+      - 0.33163265306122447
+      - 0.02910958904109584
+  - text: Fuller Miranda Segment
+    confidence: 1
+    bbox:
+      - 0.5433673435586736
+      - 0.37500000007134704
+      - 0.4056122448979592
+      - 0.02910958904109584
+  - text: • Same original
+    confidence: 1
+    bbox:
+      - 0.5408163276239069
+      - 0.4657534248654599
+      - 0.2908163265306122
+      - 0.02910958904109584
+  - text: WCSO video
+    confidence: 1
+    bbox:
+      - 0.5866790211732388
+      - 0.4946607055070662
+      - 0.2194991014441665
+      - 0.027801876198755626
+  - text: • Shows timestamp
+    confidence: 1
+    bbox:
+      - 0.5428977068335106
+      - 0.539911925402816
+      - 0.36316606949786756
+      - 0.03055530541563689
+  - text: 03:36:53(06:25 PM)
+    confidence: 1
+    bbox:
+      - 0.5841836733928573
+      - 0.571917808510274
+      - 0.3647959183673469
+      - 0.02910958904109595
+  - text: • Miranda rights
+    confidence: 1
+    bbox:
+      - 0.5408163278972302
+      - 0.6250000002079257
+      - 0.3086734693877552
+      - 0.02910958904109584
+  - text: reading + Tyler
+    confidence: 1
+    bbox:
+      - 0.5841349212158314
+      - 0.6539175134054285
+      - 0.26795465119031003
+      - 0.031206068927294606
+  - text: invokes right to
+    confidence: 1
+    bbox:
+      - 0.581261158344322
+      - 0.6816600215601669
+      - 0.27370217381691453
+      - 0.03394023033037585
+  - text: attorney (Doug Terry)
+    confidence: 1
+    bbox:
+      - 0.5841836711415817
+      - 0.7157534247538527
+      - 0.37244897959183665
+      - 0.02910958904109584
+  - text: and remains silent
+    confidence: 1
+    bbox:
+      - 0.5841836735459184
+      - 0.7448630134417809
+      - 0.31887755102040816
+      - 0.02568493150684925
+  - text: "Key Concept: Same core evidence (base Bates 3996)"
+    confidence: 1
+    bbox:
+      - 0.06377551084183673
+      - 0.8407534243664384
+      - 0.8749999999999999
+      - 0.02910958904109595
+  - text: → Different revisions for different purposes.
+    confidence: 1
+    bbox:
+      - 0.08928570876457732
+      - 0.8698630137597847
+      - 0.7729591836734695
+      - 0.02910958904109584
+  - text: -R1 = edited narrow clip.
+    confidence: 1
+    bbox:
+      - 0.27040816690051017
+      - 0.9041095890410958
+      - 0.43622448979591844
+      - 0.0273972602739726
+  - text: -R2 = later/more complete version.
+    confidence: 1
+    bbox:
+      - 0.19132652821428578
+      - 0.9297945202226027
+      - 0.6173469387755103
+      - 0.03253424657534243
+  - text: Tyler Robinson Case Discovery Example
+    confidence: 1
+    bbox:
+      - 0.038265310969387616
+      - 0.9811643833476027
+      - 0.4387755102040816
+      - 0.017123287671232834

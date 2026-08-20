@@ -1,0 +1,65 @@
+source: site/internals/static/img/evidence/0922d1822febde4c016eed0c88f7ed2767f366d0e7f7adcd9837e5ce739eb6a2.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:42:01.480Z
+kind: image
+language: en-US
+text: |-
+  Bill Ackman's meeting with
+  Earlier in 2025.
+  Charlie Kirk was Aug 2025.
+  Take $150 million CASH
+  From Israel. To your Turning Point TPUSA
+  NO!
+  Assassinated Sept 10th, 2025
+blocks:
+  - text: Bill Ackman's meeting with
+    confidence: 1
+    bbox:
+      - 0.7316467206166465
+      - 0.011930452888864185
+      - 0.23878247070312497
+      - 0.04631182866066885
+  - text: Earlier in 2025.
+    confidence: 1
+    bbox:
+      - 0.40200000174999995
+      - 0.052795031107660484
+      - 0.20999999999999996
+      - 0.0496894409937888
+  - text: Charlie Kirk was Aug 2025.
+    confidence: 1
+    bbox:
+      - 0.73400000138
+      - 0.055900620745341634
+      - 0.23399999999999999
+      - 0.037267080745341574
+  - text: Take $150 million CASH
+    confidence: 1
+    bbox:
+      - 0.4319999984333333
+      - 0.12111801202553485
+      - 0.51
+      - 0.0714285714285714
+  - text: From Israel. To your Turning Point TPUSA
+    confidence: 1
+    bbox:
+      - 0.5380000029999998
+      - 0.2080745339751553
+      - 0.30000000000000004
+      - 0.03105590062111796
+  - text: NO!
+    confidence: 1
+    bbox:
+      - 0.5040000005272728
+      - 0.5434782613495199
+      - 0.124
+      - 0.10559006211180133
+  - text: Assassinated Sept 10th, 2025
+    confidence: 1
+    bbox:
+      - 0.3041666710416666
+      - 0.8897515523687768
+      - 0.675
+      - 0.09782608695652173

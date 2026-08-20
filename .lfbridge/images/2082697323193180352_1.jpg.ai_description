@@ -1,0 +1,168 @@
+source: images/2082697323193180352_1.jpg
+status: done
+engine: gemini-flash-latest
+provider: gemini
+generated: 2026-08-20T12:40:50.905Z
+kind: image
+description: >-
+  ## Overview
+
+  This image is a digital infographic presenting a forensic hypothesis
+  comparison titled "Injury Pattern Analysis" for a legal case captioned "State
+  of Utah v. Tyler Robinson | UCCU Center, September 10, 2025." It evaluates and
+  contrasts two competing injury mechanism theories—"Hypothesis A: .30-06 Rifle"
+  versus "Hypothesis B: Shaped Charge"—against specific pathological findings
+  from a Medical Examiner report. The layout uses data cards, comparative
+  progress bars, a 1-to-5 rating scale, and a detailed tabular breakdown scored
+  to favor the shaped charge hypothesis over the rifle hypothesis.
+
+
+  ## Hyper-Detail
+
+  The document is set against a clean white background with a dark navy/charcoal
+  top header block.
+
+
+  * **Top Header Block (Dark Charcoal/Navy):**
+    * Sub-header tag at the upper left: `FORENSIC HYPOTHESIS COMPARISON` in small cyan-tinted/grey sans-serif capitals.
+    * Main Title: `Injury Pattern Analysis` in large, bold white sans-serif typography.
+    * Subtitle text line 1: `Medical Examiner Findings + Acoustic Data` in light bluish-grey text.
+    * Subtitle text line 2: `State of Utah v. Tyler Robinson | UCCU Center, September 10, 2025` in slightly darker bluish-grey text.
+    * URL line at lower left of the header block: `followtheepicenter.com` in subdued grey text.
+
+  * **Hypothesis Summary Cards (Directly below header):**
+    * **Left Card (Hypothesis A - .30-06 Rifle):**
+      * Top solid accent bar colored reddish-brown/crimson.
+      * Card background: very light greyish-pink tint.
+      * Text: `HYPOTHESIS A` in small red capital letters.
+      * Text: `.30-06 Rifle` in bold dark charcoal font.
+      * Bullet points: "Neck Zone 2 entry, 10° down, 3° L→R" and "Single projectile wound track" in charcoal font.
+      * Numerical score: `28 / 65` in large bold red numbers, followed by `avg 2.2` in medium grey text.
+    * **Right Card (Hypothesis B - Shaped Charge):**
+      * Top solid accent bar colored deep emerald green.
+      * Card background: very light pale green tint.
+      * Text: `HYPOTHESIS B` in small green capital letters.
+      * Text: `Shaped Charge` in bold dark charcoal font.
+      * Bullet points: "Chest detonation: jet + blast + fragments" and "Three simultaneous injury mechanisms" in charcoal font.
+      * Numerical score: `57 / 65` in large bold green numbers, followed by `avg 4.4` in medium grey text.
+
+  * **Aggregate Explanatory Fit Bar:**
+    * Small uppercase label: `AGGREGATE EXPLANATORY FIT`.
+    * Horizontal split bar chart: Left side is red displaying `RIFLE 33%`, right side is green displaying `SHAPED CHARGE 67%`.
+
+  * **Rating Scale Legend:**
+    * Displays a 5-point scale with colored dots and descriptions:
+      * 1 (Dark Red Dot) = `Cannot explain`
+      * 2 (Orange Dot) = `Requires assumption`
+      * 3 (Yellow Dot) = `Possible`
+      * 4 (Teal Dot) = `Strong fit`
+      * 5 (Green Dot) = `Direct prediction`
+
+  * **Table Header:**
+    * Dark navy bar with four columns: `FINDING`, `RIFLE (.30-06)`, `SHAPED CHARGE`, and `DELTA`.
+
+  * **Table Rows (Pathological Findings):**
+    * *Category separator banner:* Faint horizontal band reading `PATHOLOGICAL FINDINGS (Medical Examiner Report)`.
+    * **Row 1:** 
+      * *Finding:* `Bilateral hemothorax (left and right)` with sub-label `ME Report, Id. at 3`.
+      * *Rifle column:* Progress bar colored orange rated `2/5` with explanation: "Requires secondary mechanism — near-midline neck entry needs temporary cavity or fragmentation to breach both pleural spaces".
+      * *Shaped Charge column:* Full green bar rated `5/5` with explanation: "Direct prediction — jet transits both pleural spaces on any front-to-back thoracic trajectory".
+      * *Delta column:* `SC +3` in green font.
+    * **Row 2:** 
+      * *Finding:* `Hemopericardium` with sub-label `ME Report, Id. at 3`.
+      * *Rifle column:* Orange bar rated `2/5` with explanation: "Requires ~35 cm wound track from neck to T2-T3 level, or hemorrhage tracking along fascial planes from great vessel injury".
+      * *Shaped Charge column:* Full green bar rated `5/5` with explanation: "Direct prediction — pericardium sits 5-8 cm behind anterior chest wall; jet reaches it immediately".
+      * *Delta column:* `SC +3` in green font.
+    * **Row 3:** 
+      * *Finding:* `Bilateral apical pulmonary hemorrhage/hematomas` with sub-label `ME Report, Id. at 3`.
+      * *Rifle column:* Teal bar rated `4/5` with explanation: "Geometrically consistent — 10 deg downward trajectory enters thoracic inlet at midline; temporary cavity may reach both apices".
+      * *Shaped Charge column:* Teal bar rated `4/5` with explanation: "Blast overpressure + jet decompression — lung apices most vulnerable to overpressure events (Cooper 1991)".
+      * *Delta column:* `EQUAL` in grey font.
+    * **Row 4:** 
+      * *Finding:* `Bilateral anterior and posterior intercostal hemorrhages` with sub-label `ME Report, Id. at 3`.
+      * *Rifle column:* Orange bar rated `2/5` with explanation: "Indirect — requires pressure wave propagation from wound track through intercostal tissue bilaterally".
+      * *Shaped Charge column:* Full green bar rated `5/5` with explanation: "Textbook blast lung injury finding — surface detonation overpressure on chest wall directly causes intercostal hemorrhage".
+      * *Delta column:* `SC +3` in green font.
+    * **Row 5:** 
+      * *Finding:* `Multiple thyroid, cricoid, and tracheal cartilage disruptions` with sub-label `ME Report, Id. at 3`.
+      * *Rifle column:* Teal/Green bar rated `4/5` with explanation: "Single-track transit — left-to-right path crosses midline at Zone 2, sequential cartilage disruption along one axis".
+      * *Shaped Charge column:* Yellow/Brown bar rated `3/5` with explanation: "Fragment spray from below — casing fragments travel upward into neck; 'multiple disruptions' possibly more consistent with scattered fragments".
+      * *Delta column:* `R +1` in red font.
+
+  ## Composition
+
+  The graphic is formatted in a vertical portrait orientation with a modular
+  grid layout:
+
+  * **Top 15% (FRAME-TOP):** Dark banner containing title, metadata, and
+  citation details spanning full width.
+
+  * **Next 15% (UPPER-MIDGROUND):** Two equal-width cards placed side-by-side
+  (Hypothesis A on the FRAME-LEFT filling ~45%, Hypothesis B on the FRAME-RIGHT
+  filling ~45%).
+
+  * **Middle 10% (MIDGROUND):** Aggregate split horizontal bar and horizontal
+  legend evenly spaced across the center width.
+
+  * **Lower 60% (LOWER-MIDGROUND to FRAME-BOTTOM):** 5-row comparative data
+  table with structured columnar alignment, alternate faint grey zebra-striping,
+  and text left-aligned in respective columns.
+
+  * Depth of field is entirely flat/digital with 100% sharp vector/text focus
+  throughout.
+
+
+  ## Location
+
+  * City/Location: Orem, Utah (uncertain - inferred from "UCCU Center" which is
+  located at Utah Valley University in Orem, Utah).
+
+  * Country: United States.
+
+  * Setting type: Digital graphic presentation / forensic legal exhibit
+  document.
+
+
+  ## Setting & Place
+
+  Digital media exhibit; not a physical real-world camera capture.
+
+
+  ## Lighting
+
+  Not applicable (uniform digital screen lighting with flat graphical shading).
+
+
+  ## Cinematography
+
+  Graphic design / 2D screen document layout. Planar overhead orthographic
+  digital view.
+
+
+  ## People
+
+  No people in frame.
+
+
+  ## Objects & Text
+
+  * **Major Text Blocks:**
+    * "FORENSIC HYPOTHESIS COMPARISON"
+    * "Injury Pattern Analysis"
+    * "Medical Examiner Findings + Acoustic Data"
+    * "State of Utah v. Tyler Robinson | UCCU Center, September 10, 2025"
+    * "followtheepicenter.com"
+    * "HYPOTHESIS A: .30-06 Rifle"
+    * "HYPOTHESIS B: Shaped Charge"
+    * "AGGREGATE EXPLANATORY FIT: RIFLE 33% | SHAPED CHARGE 67%"
+    * "RATING SCALE: 1 = Cannot explain | 2 = Requires assumption | 3 = Possible | 4 = Strong fit | 5 = Direct prediction"
+    * Full descriptions of anatomical findings and ballistic/blast mechanism notes as transcribed in the Hyper-Detail section.
+
+  ## Colors & Mood
+
+  * **Palette:** Crisp white background, dark charcoal/navy blue (`#0f172a`
+  style), brick red/crimson accents, bright emerald green accents, muted teal,
+  amber/orange progress indicators, and neutral light grey separators.
+
+  * **Mood:** Objective, clinical, analytical, forensic, scientific, and
+  authoritative.

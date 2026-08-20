@@ -1,0 +1,57 @@
+source: site/internals/static/img/evidence/1d3e64f823d3d14050a164938495478e3bdf5c6e9c170cadafc962fb87c03c38.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:42:42.072Z
+kind: image
+language: en-US
+text: |-
+  Figure in
+  white,
+  Sorensen
+  Figure in
+  black,
+  Losee
+blocks:
+  - text: Figure in
+    confidence: 1
+    bbox:
+      - 0.027083334305555547
+      - 0.4299999999166666
+      - 0.23333333333333334
+      - 0.046666666666666634
+  - text: white,
+    confidence: 1
+    bbox:
+      - 0.06250000093750001
+      - 0.4833333336770833
+      - 0.17083333333333334
+      - 0.05499999999999994
+  - text: Sorensen
+    confidence: 1
+    bbox:
+      - 0.01653262105426805
+      - 0.5411187886636962
+      - 0.25235142707824704
+      - 0.041095755894978936
+  - text: Figure in
+    confidence: 1
+    bbox:
+      - 0.6749999995370372
+      - 0.27333333358333334
+      - 0.22916666666666663
+      - 0.04500000000000004
+  - text: black,
+    confidence: 1
+    bbox:
+      - 0.7125000010546875
+      - 0.32666666673958333
+      - 0.16874999999999996
+      - 0.05166666666666664
+  - text: Losee
+    confidence: 1
+    bbox:
+      - 0.7018771262643896
+      - 0.38607290421279017
+      - 0.16291241645812993
+      - 0.03785419146219893

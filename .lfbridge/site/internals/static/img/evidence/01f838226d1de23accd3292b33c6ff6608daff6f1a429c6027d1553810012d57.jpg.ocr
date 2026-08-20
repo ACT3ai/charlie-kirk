@@ -1,0 +1,89 @@
+source: site/internals/static/img/evidence/01f838226d1de23accd3292b33c6ff6608daff6f1a429c6027d1553810012d57.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:41:45.187Z
+kind: image
+language: en-US
+text: |-
+  Pastor Rob McCoy
+  - Father was Naval Captain
+  Roy Edgar McCoy.
+  - Father was also the
+  assistant chief of staff for
+  psychological warfare in
+  the Navy.
+  X @THEINTELSCIF
+  Dr. Deirdre Smith Amaro
+  - Is a Major in the Army.
+blocks:
+  - text: Pastor Rob McCoy
+    confidence: 1
+    bbox:
+      - 0.5901162803148615
+      - 0.04537037106747788
+      - 0.32267442055798456
+      - 0.03981481481481486
+  - text: "- Father was Naval Captain"
+    confidence: 1
+    bbox:
+      - 0.5843023314183721
+      - 0.11290322531970998
+      - 0.4069767383260465
+      - 0.036656891858136254
+  - text: Roy Edgar McCoy.
+    confidence: 1
+    bbox:
+      - 0.5886627906687337
+      - 0.15972222188040353
+      - 0.2877907009299743
+      - 0.03529243999057341
+  - text: "- Father was also the"
+    confidence: 1
+    bbox:
+      - 0.5843023261057161
+      - 0.2476851855766049
+      - 0.3095930186980361
+      - 0.027974638232478366
+  - text: assistant chief of staff for
+    confidence: 1
+    bbox:
+      - 0.5872093050484691
+      - 0.29166666678480935
+      - 0.37645347665209283
+      - 0.029629628746597803
+  - text: psychological warfare in
+    confidence: 1
+    bbox:
+      - 0.5886627874660323
+      - 0.33564814845808577
+      - 0.3633721027899227
+      - 0.036785869245175906
+  - text: the Navy.
+    confidence: 1
+    bbox:
+      - 0.5870446672705236
+      - 0.38052628217683204
+      - 0.1456781089852709
+      - 0.036601395077175525
+  - text: X @THEINTELSCIF
+    confidence: 0.5
+    bbox:
+      - 0.8880813968497352
+      - 0.4472140763464414
+      - 0.11046511448851426
+      - 0.01906158305980543
+  - text: Dr. Deirdre Smith Amaro
+    confidence: 1
+    bbox:
+      - 0.4898255763635789
+      - 0.5115740741668263
+      - 0.4854651214879587
+      - 0.03981481481481486
+  - text: "- Is a Major in the Army."
+    confidence: 1
+    bbox:
+      - 0.4869186083011887
+      - 0.5835777124739094
+      - 0.4563953364660982
+      - 0.044200065400865296

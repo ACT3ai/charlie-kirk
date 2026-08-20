@@ -1,0 +1,153 @@
+source: site/internals/static/img/evidence/14b3f1e39271f4fbfdad1d53afac65a658ab87ce2081bfd2a29c89c0474ef517.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:42:25.007Z
+kind: image
+language: en-US
+text: |-
+  • Menu
+  - - 12 +
+  Tail# N560TW Cessna Citation XLS (7-8 passengers)
+  Departed: from Scottsdale at 8:00am (local)
+  Arrived: in Provo at 10:06am (local)
+  Departed: 10:24am for Santa Barbara, Landed: into SB at 11:12am
+  Departed:Santa Barbara at 11:37am
+  Arrived: into Scottsdale, landing at 12:44pm (local).
+  Passengers: ???
+  Tail# N40JD Beechcraft Premiere 1 (6 seats)
+  Departed: Scottsdale at 12:27pm Local
+  Arrived: 2:29pm (local) into Provo
+  Passengers: ???
+  N102DZ G5 (15-16 Passengers) **Charlie's Plane in SLC
+  Arrived: in Scottsdale at 1:13pm (local) time Immediately
+  Departed: 1:31pm from Scottsdale
+  Arrived: Lands into Provo at 3:31PM (local)
+  Passengers: ???
+blocks:
+  - text: • Menu
+    confidence: 1
+    bbox:
+      - 0.417151165114237
+      - 0.04111405841718885
+      - 0.026162788666874492
+      - 0.010610079259391725
+  - text: "- - 12 +"
+    confidence: 1
+    bbox:
+      - 0.6395348858521465
+      - 0.03833865849031981
+      - 0.04651162480733484
+      - 0.019169328067283775
+  - text: Tail# N560TW Cessna Citation XLS (7-8 passengers)
+    confidence: 1
+    bbox:
+      - 0.5305232522093646
+      - 0.14696485659586522
+      - 0.32994186217526356
+      - 0.032080236733434075
+  - text: "Departed: from Scottsdale at 8:00am (local)"
+    confidence: 1
+    bbox:
+      - 0.531976741910503
+      - 0.2236421728669743
+      - 0.2587209310876317
+      - 0.03232599632809585
+  - text: "Arrived: in Provo at 10:06am (local)"
+    confidence: 1
+    bbox:
+      - 0.5319767475869392
+      - 0.2619808310139391
+      - 0.21220929249223464
+      - 0.03244887739024693
+  - text: "Departed: 10:24am for Santa Barbara, Landed: into SB at 11:12am"
+    confidence: 1
+    bbox:
+      - 0.531976755615932
+      - 0.2997347486428936
+      - 0.3968023093349963
+      - 0.03315649867374004
+  - text: Departed:Santa Barbara at 11:37am
+    confidence: 1
+    bbox:
+      - 0.531976744239217
+      - 0.3381962870664226
+      - 0.2151162756494729
+      - 0.03241074180097092
+  - text: "Arrived: into Scottsdale, landing at 12:44pm (local)."
+    confidence: 1
+    bbox:
+      - 0.5319767484108217
+      - 0.37665782505134826
+      - 0.30377906891236817
+      - 0.035809018567639295
+  - text: "Passengers: ???"
+    confidence: 1
+    bbox:
+      - 0.5319767432484845
+      - 0.4151193635535386
+      - 0.10755813782473644
+      - 0.02917771883289122
+  - text: Tail# N40JD Beechcraft Premiere 1 (6 seats)
+    confidence: 1
+    bbox:
+      - 0.5305232584413828
+      - 0.49201277949186994
+      - 0.2747092924922345
+      - 0.02920738012784363
+  - text: "Departed: Scottsdale at 12:27pm Local"
+    confidence: 1
+    bbox:
+      - 0.5319767432097249
+      - 0.5649867370528824
+      - 0.23255813782473644
+      - 0.035809018567639295
+  - text: "Arrived: 2:29pm (local) into Provo"
+    confidence: 1
+    bbox:
+      - 0.5305232576246027
+      - 0.6070287545990602
+      - 0.20639534456184117
+      - 0.03222853941373538
+  - text: "Passengers: ???"
+    confidence: 1
+    bbox:
+      - 0.5305232539756478
+      - 0.6419098148474169
+      - 0.10901162940335563
+      - 0.03221159082508851
+  - text: N102DZ G5 (15-16 Passengers) **Charlie's Plane in SLC
+    confidence: 1
+    bbox:
+      - 0.5290697732877734
+      - 0.7539936108697222
+      - 0.3531976538968373
+      - 0.03514376875576353
+  - text: "Arrived: in Scottsdale at 1:13pm (local) time Immediately"
+    confidence: 1
+    bbox:
+      - 0.5319767378031202
+      - 0.833865815062319
+      - 0.3372093108763178
+      - 0.032181930794956126
+  - text: "Departed: 1:31pm from Scottsdale"
+    confidence: 1
+    bbox:
+      - 0.5319767450388216
+      - 0.872204472889795
+      - 0.20494186217526356
+      - 0.03230481059228707
+  - text: "Arrived: Lands into Provo at 3:31PM (local)"
+    confidence: 1
+    bbox:
+      - 0.5319767525304678
+      - 0.9105431306367049
+      - 0.2572674303169711
+      - 0.02875399399815559
+  - text: "Passengers: ???"
+    confidence: 1
+    bbox:
+      - 0.531976746658918
+      - 0.9482758624409868
+      - 0.10610464624611726
+      - 0.03315649867374004

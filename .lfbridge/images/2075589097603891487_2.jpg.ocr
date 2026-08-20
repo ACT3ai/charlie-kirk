@@ -1,0 +1,487 @@
+source: images/2075589097603891487_2.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:41:11.264Z
+kind: image
+language: en-US
+text: >-
+  The Last 60 Days of Charlie Kirk
+
+  July 11
+
+  Kirk hosts Tucker Carlson
+
+  at TPUSA Student Action
+
+  Summit, allowing him to
+
+  criticize Israel and claim
+
+  Jeffrey Epstein worked
+
+  Tor Israell intelligence.
+
+  August 5
+
+  Kirk attends Hamptons
+
+  meeting with pro-Israel
+
+  donor Bill Ackman, who
+
+  confronts him over
+
+  platforming Tucker.
+
+  September 8
+
+  Kirk loses a $2 million
+
+  annual donor after
+
+  reusing to cancel
+
+  Tucker Carlson.
+
+  September 9
+
+  Final interview with Ben
+
+  Shapiro, Kirk presses
+
+  tougher questions on
+
+  Israel.
+
+  July 24
+
+  Kirk posts widely viewed
+
+  YouTube roundtable
+
+  with Gen Z conservative
+
+  students questioning US
+
+  aid to Israel.
+
+  August 6
+
+  On Megyn Kelly Show,
+
+  Kirk calls pressure from
+
+  pro-Israel groups
+
+  repulsive and alienating.
+
+  "They are attacking my
+
+  character!"
+
+  August 20
+
+  Kirk texts Jewish
+
+  donors are "playing into
+
+  all the stereotypes
+
+  and
+
+  has "no choice but to
+
+  leave the pro-Israel
+
+  cause."
+
+  September 10
+
+  Charlie Kirk is
+
+  assassinated at Utah
+
+  Valley University while
+
+  speaking at a TPUSA
+
+  event.
+
+  No recordings or statements of support for Israel exist of Kirk within the
+  last 60 days.
+
+  @freddymacusa
+blocks:
+  - text: The Last 60 Days of Charlie Kirk
+    confidence: 1
+    bbox:
+      - 0.05724508048811648
+      - 0.0920634924943311
+      - 0.887298747763864
+      - 0.12063492063492065
+  - text: July 11
+    confidence: 1
+    bbox:
+      - 0.05711590681021168
+      - 0.30414912761065105
+      - 0.08075924295005729
+      - 0.05519380720834888
+  - text: Kirk hosts Tucker Carlson
+    confidence: 1
+    bbox:
+      - 0.05724508110465113
+      - 0.3619047623015873
+      - 0.16636851520572452
+      - 0.031746031746031744
+  - text: at TPUSA Student Action
+    confidence: 1
+    bbox:
+      - 0.0572450821288014
+      - 0.3904761903809524
+      - 0.16279069767441862
+      - 0.02857142857142858
+  - text: Summit, allowing him to
+    confidence: 1
+    bbox:
+      - 0.057245082075134145
+      - 0.419047618888889
+      - 0.15742397137745975
+      - 0.03492063492063491
+  - text: criticize Israel and claim
+    confidence: 1
+    bbox:
+      - 0.057245081708407815
+      - 0.44761904722222234
+      - 0.15742397137745975
+      - 0.03174603174603163
+  - text: Jeffrey Epstein worked
+    confidence: 1
+    bbox:
+      - 0.057245079136851555
+      - 0.47936507900793646
+      - 0.148479427549195
+      - 0.02857142857142858
+  - text: Tor Israell intelligence.
+    confidence: 1
+    bbox:
+      - 0.05545617356887294
+      - 0.5111111110714286
+      - 0.14669051878354203
+      - 0.02857142857142858
+  - text: August 5
+    confidence: 1
+    bbox:
+      - 0.28081913812920184
+      - 0.3235733272254607
+      - 0.10204687783884447
+      - 0.05444064670138882
+  - text: Kirk attends Hamptons
+    confidence: 1
+    bbox:
+      - 0.28085867593917707
+      - 0.380952380515873
+      - 0.15026833631484798
+      - 0.03492063492063502
+  - text: meeting with pro-Israel
+    confidence: 1
+    bbox:
+      - 0.280858675313059
+      - 0.4095238091746032
+      - 0.15026833631484793
+      - 0.03492063492063491
+  - text: donor Bill Ackman, who
+    confidence: 1
+    bbox:
+      - 0.2804136307919171
+      - 0.43334417417927096
+      - 0.15478336832391126
+      - 0.044921408759223125
+  - text: confronts him over
+    confidence: 1
+    bbox:
+      - 0.2808586774597495
+      - 0.46984126971428564
+      - 0.1252236135957066
+      - 0.031746031746031744
+  - text: platforming Tucker.
+    confidence: 1
+    bbox:
+      - 0.28085867781753127
+      - 0.498412698452381
+      - 0.12880143112701253
+      - 0.03492063492063491
+  - text: September 8
+    confidence: 1
+    bbox:
+      - 0.49552772838998216
+      - 0.3492063486349206
+      - 0.14132379248658322
+      - 0.05714285714285716
+  - text: Kirk loses a $2 million
+    confidence: 1
+    bbox:
+      - 0.4955277291081012
+      - 0.4095238093877551
+      - 0.14311270125223613
+      - 0.03174603174603163
+  - text: annual donor after
+    confidence: 1
+    bbox:
+      - 0.49373882005366726
+      - 0.4380952377777778
+      - 0.12343470483005364
+      - 0.031746031746031744
+  - text: reusing to cancel
+    confidence: 1
+    bbox:
+      - 0.49373881930232555
+      - 0.4730158732698413
+      - 0.11627906976744184
+      - 0.025396825396825418
+  - text: Tucker Carlson.
+    confidence: 1
+    bbox:
+      - 0.4955277279740608
+      - 0.4952380948412699
+      - 0.1019677996422182
+      - 0.031746031746031744
+  - text: September 9
+    confidence: 1
+    bbox:
+      - 0.7065422859276826
+      - 0.3517496022074511
+      - 0.13968823591583746
+      - 0.05523095509362608
+  - text: Final interview with Ben
+    confidence: 1
+    bbox:
+      - 0.7066189637149671
+      - 0.4095238094179894
+      - 0.15384615384615385
+      - 0.031746031746031855
+  - text: Shapiro, Kirk presses
+    confidence: 1
+    bbox:
+      - 0.7066189637924866
+      - 0.44444444431746033
+      - 0.13595706618962433
+      - 0.025396825396825418
+  - text: tougher questions on
+    confidence: 1
+    bbox:
+      - 0.7030411466681574
+      - 0.4698412697222223
+      - 0.14132379248658322
+      - 0.02857142857142847
+  - text: Israel.
+    confidence: 1
+    bbox:
+      - 0.7030051009129179
+      - 0.49825210276873566
+      - 0.04479480600101149
+      - 0.03206722320072242
+  - text: July 24
+    confidence: 1
+    bbox:
+      - 0.17324455857451587
+      - 0.6240750020991213
+      - 0.08463789610615358
+      - 0.05978650289868559
+  - text: Kirk posts widely viewed
+    confidence: 1
+    bbox:
+      - 0.1753130581753131
+      - 0.6857142860000001
+      - 0.15742397137745975
+      - 0.02857142857142858
+  - text: YouTube roundtable
+    confidence: 1
+    bbox:
+      - 0.17352414861359572
+      - 0.714285714404762
+      - 0.1323792486583184
+      - 0.022222222222222143
+  - text: with Gen Z conservative
+    confidence: 1
+    bbox:
+      - 0.17352415219141318
+      - 0.7396825400793651
+      - 0.15742397137745975
+      - 0.031746031746031744
+  - text: students questioning US
+    confidence: 1
+    bbox:
+      - 0.17352414892665474
+      - 0.7682539684391535
+      - 0.16100178890876565
+      - 0.03492063492063491
+  - text: aid to Israel.
+    confidence: 1
+    bbox:
+      - 0.17352415110912342
+      - 0.799999999968254
+      - 0.0840787119856887
+      - 0.02857142857142847
+  - text: August 6
+    confidence: 1
+    bbox:
+      - 0.38629470501366064
+      - 0.624737384898904
+      - 0.10218697754342998
+      - 0.05528713407970609
+  - text: On Megyn Kelly Show,
+    confidence: 1
+    bbox:
+      - 0.3864042951475849
+      - 0.6857142855952381
+      - 0.14132379248658322
+      - 0.02857142857142858
+  - text: Kirk calls pressure from
+    confidence: 1
+    bbox:
+      - 0.38819320127459744
+      - 0.7111111107142858
+      - 0.1520572450805009
+      - 0.031746031746031744
+  - text: pro-Israel groups
+    confidence: 1
+    bbox:
+      - 0.38640429432021467
+      - 0.7428571426984126
+      - 0.11270125223613597
+      - 0.031746031746031744
+  - text: repulsive and alienating.
+    confidence: 1
+    bbox:
+      - 0.3846153856171735
+      - 0.7714285711428572
+      - 0.16100178890876565
+      - 0.02857142857142847
+  - text: '"They are attacking my'
+    confidence: 1
+    bbox:
+      - 0.3879417107976362
+      - 0.7996032996738096
+      - 0.14715472444865274
+      - 0.030043871440584624
+  - text: character!"
+    confidence: 1
+    bbox:
+      - 0.3862833939615114
+      - 0.8214047246677934
+      - 0.07358705933490678
+      - 0.03655562930636935
+  - text: August 20
+    confidence: 1
+    bbox:
+      - 0.5939177100626118
+      - 0.625396825734127
+      - 0.11449016100178888
+      - 0.053968253968254
+  - text: Kirk texts Jewish
+    confidence: 1
+    bbox:
+      - 0.5939177113372093
+      - 0.679365078968254
+      - 0.11270125223613592
+      - 0.031746031746031744
+  - text: donors are "playing into
+    confidence: 1
+    bbox:
+      - 0.5932717502298772
+      - 0.701517714496809
+      - 0.15333847837499304
+      - 0.05124914986746654
+  - text: all the stereotypes
+    confidence: 1
+    bbox:
+      - 0.5939177117397137
+      - 0.7428571427380952
+      - 0.1234347048300537
+      - 0.02857142857142858
+  - text: and
+    confidence: 1
+    bbox:
+      - 0.7173524154069768
+      - 0.739682539484127
+      - 0.030411449016100156
+      - 0.02857142857142858
+  - text: has "no choice but to
+    confidence: 1
+    bbox:
+      - 0.5939177091457961
+      - 0.7650793646428571
+      - 0.1377459749552773
+      - 0.03492063492063491
+  - text: leave the pro-Israel
+    confidence: 1
+    bbox:
+      - 0.592128800387597
+      - 0.8000000001058201
+      - 0.12522361359570655
+      - 0.031746031746031744
+  - text: cause."
+    confidence: 1
+    bbox:
+      - 0.5939177104353011
+      - 0.822222221931217
+      - 0.05008944543828264
+      - 0.03492063492063491
+  - text: September 10
+    confidence: 1
+    bbox:
+      - 0.7995648865064524
+      - 0.6246854725360652
+      - 0.15578972504262634
+      - 0.055390960451156435
+  - text: Charlie Kirk is
+    confidence: 1
+    bbox:
+      - 0.7976907894796756
+      - 0.6777897831749489
+      - 0.0933482966823953
+      - 0.03489662352062406
+  - text: assassinated at Utah
+    confidence: 1
+    bbox:
+      - 0.7978533112254025
+      - 0.711111111031746
+      - 0.13953488372093015
+      - 0.031746031746031744
+  - text: Valley University while
+    confidence: 1
+    bbox:
+      - 0.7978533080322004
+      - 0.742857142984127
+      - 0.14490161001788904
+      - 0.025396825396825418
+  - text: speaking at a TPUSA
+    confidence: 1
+    bbox:
+      - 0.7996422193649374
+      - 0.7714285712433863
+      - 0.13416815742397137
+      - 0.02857142857142847
+  - text: event.
+    confidence: 1
+    bbox:
+      - 0.7978034050427353
+      - 0.80290639666063
+      - 0.043033620325951705
+      - 0.025933238438197614
+  - text: No recordings or statements of support for Israel exist of Kirk within the
+      last 60 days.
+    confidence: 1
+    bbox:
+      - 0.18246869864554052
+      - 0.9269841269160997
+      - 0.6368515205724509
+      - 0.041269841269841234
+  - text: "@freddymacusa"
+    confidence: 1
+    bbox:
+      - 0.8372093023076923
+      - 0.9301587304761904
+      - 0.13416815742397137
+      - 0.031746031746031744

@@ -1,0 +1,49 @@
+source: site/internals/static/img/evidence/05cfc07ca6ea1b317217efae7af38306d225a4b8e449fd1e77e959d8dc926867.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:41:56.015Z
+kind: image
+language: en-US
+text: |-
+  ppr
+  CONS
+  ON
+  Mich
+  hit the like button please! Let's get to 3,000 likes! Cashapr
+blocks:
+  - text: ppr
+    confidence: 0.5
+    bbox:
+      - 0.8837209303528772
+      - 0.09138381258958972
+      - 0.02034883737564086
+      - 0.01827676108713905
+  - text: CONS
+    confidence: 1
+    bbox:
+      - 0.8706395347933671
+      - 0.11749347284039979
+      - 0.026162791252136164
+      - 0.02349869374478797
+  - text: ON
+    confidence: 1
+    bbox:
+      - 0.9215116280675221
+      - 0.11749347306885927
+      - 0.015988371372222976
+      - 0.02349869374478797
+  - text: Mich
+    confidence: 0.5
+    bbox:
+      - 0.5479651170218002
+      - 0.8015665794455574
+      - 0.06104650974273684
+      - 0.08616188135039937
+  - text: hit the like button please! Let's get to 3,000 likes! Cashapr
+    confidence: 1
+    bbox:
+      - 0.4458333402083332
+      - 0.9477611939072563
+      - 0.55
+      - 0.04477611927503944

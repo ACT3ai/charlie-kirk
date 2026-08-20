@@ -1,0 +1,49 @@
+source: cover_image/Angel_Charlie.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:40:49.676Z
+kind: image
+language: en-US
+text: |-
+  A PLACE
+  FOR YOU
+  UVU
+  A PLACE
+  FOR YOU
+blocks:
+  - text: A PLACE
+    confidence: 1
+    bbox:
+      - 0.23546511563953487
+      - 0.37239583343749993
+      - 0.06395348837209303
+      - 0.02604166666666674
+  - text: FOR YOU
+    confidence: 1
+    bbox:
+      - 0.23835204410524544
+      - 0.40349049964124695
+      - 0.06254009867823399
+      - 0.02635233352581645
+  - text: UVU
+    confidence: 0.5
+    bbox:
+      - 0.46511627875830563
+      - 0.3906249997395834
+      - 0.04941860465116277
+      - 0.03645833333333326
+  - text: A PLACE
+    confidence: 1
+    bbox:
+      - 0.6293604645591085
+      - 0.39583333342013893
+      - 0.033430232558139594
+      - 0.015625
+  - text: FOR YOU
+    confidence: 1
+    bbox:
+      - 0.6279069771984012
+      - 0.41666666653645845
+      - 0.036337209302325535
+      - 0.02083333333333326

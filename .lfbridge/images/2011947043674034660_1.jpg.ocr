@@ -1,0 +1,121 @@
+source: images/2011947043674034660_1.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:40:54.449Z
+kind: image
+language: en-US
+text: |-
+  ANN
+  FORT HUACHUCA
+  ACCOMMODATION SCHOOLS
+  CREATING SUCCESSFUL CHILDREN
+  ABOUT US
+  OUR SCHOOLS
+  GOVERNING BOARD
+  DEPARTMENTS
+  STI
+  Library. » General Myer Elementary School Library
+  General Myer Elementary School Library
+  TRINK...
+  N..
+  CREATE...
+blocks:
+  - text: ANN
+    confidence: 1
+    bbox:
+      - 0.9549418605744425
+      - 0.03367003400745183
+      - 0.043604650459642236
+      - 0.021885521379035655
+  - text: FORT HUACHUCA
+    confidence: 1
+    bbox:
+      - 0.24127906793227236
+      - 0.060490047119305945
+      - 0.4767441944842923
+      - 0.057427258805513026
+  - text: ACCOMMODATION SCHOOLS
+    confidence: 1
+    bbox:
+      - 0.24127906435870433
+      - 0.12626262585070225
+      - 0.46802326237667186
+      - 0.02861952964233594
+  - text: CREATING SUCCESSFUL CHILDREN
+    confidence: 1
+    bbox:
+      - 0.2805232564861138
+      - 0.1851851848683017
+      - 0.3968023302690514
+      - 0.0238500371643815
+  - text: ABOUT US
+    confidence: 1
+    bbox:
+      - 0.08563242210339128
+      - 0.2753084006088373
+      - 0.10053748026234313
+      - 0.023457272311994903
+  - text: OUR SCHOOLS
+    confidence: 1
+    bbox:
+      - 0.26308139780079576
+      - 0.2760942764232768
+      - 0.14244185413678068
+      - 0.021885521379035655
+  - text: GOVERNING BOARD
+    confidence: 1
+    bbox:
+      - 0.4825581434030498
+      - 0.27411944845770786
+      - 0.19912790275785375
+      - 0.02386034940687476
+  - text: DEPARTMENTS
+    confidence: 1
+    bbox:
+      - 0.7572674441125846
+      - 0.27609427643169426
+      - 0.13808138808297044
+      - 0.021885521379035655
+  - text: STI
+    confidence: 1
+    bbox:
+      - 0.9709302323907602
+      - 0.2760942764232768
+      - 0.027616279128363175
+      - 0.021885521379035655
+  - text: Library. » General Myer Elementary School Library
+    confidence: 1
+    bbox:
+      - 0.10610465757298647
+      - 0.3989280242061629
+      - 0.4127906789237945
+      - 0.02699790212680886
+  - text: General Myer Elementary School Library
+    confidence: 1
+    bbox:
+      - 0.10610464677652802
+      - 0.4525267988924486
+      - 0.7587209321076206
+      - 0.057574212277282544
+  - text: TRINK...
+    confidence: 1
+    bbox:
+      - 0.2877906982994186
+      - 0.7424242426778613
+      - 0.0625
+      - 0.018518517977610838
+  - text: N..
+    confidence: 1
+    bbox:
+      - 0.28924418616210645
+      - 0.7676767675907141
+      - 0.020348837385089413
+      - 0.016835017007123754
+  - text: CREATE...
+    confidence: 1
+    bbox:
+      - 0.31971940867439985
+      - 0.7589880235417581
+      - 0.06986350962791293
+      - 0.017377488280876152

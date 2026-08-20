@@ -1,0 +1,41 @@
+source: site/internals/static/img/evidence/079b3e95ae5db92e8dd89e0481e540c3f8f9414ebf849d1e3a9819ffd83344b9.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:41:59.393Z
+kind: image
+language: en-US
+text: |-
+  ARIZONA
+  AR
+  TikTok
+  @ hiddentruths007
+blocks:
+  - text: ARIZONA
+    confidence: 1
+    bbox:
+      - 0.6830511396670264
+      - 0.10538389750802779
+      - 0.1801891422430939
+      - 0.0331161457001069
+  - text: AR
+    confidence: 1
+    bbox:
+      - 0.9342112071352727
+      - 0.09626189803439167
+      - 0.06250180863776866
+      - 0.019493213919706154
+  - text: TikTok
+    confidence: 0.5
+    bbox:
+      - 0.8732673283900795
+      - 0.9229651160428779
+      - 0.12475247136340517
+      - 0.03779069767441867
+  - text: "@ hiddentruths007"
+    confidence: 1
+    bbox:
+      - 0.7366336619422611
+      - 0.9577723376977508
+      - 0.26138613896696317
+      - 0.024785801713586353

@@ -1,0 +1,77 @@
+source: cover_image/charlie.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:40:51.043Z
+kind: image
+language: en-US
+text: >-
+  View all
+
+  1108
+
+  Prompt
+
+  Create a director-style PREVIS action storyboard focused on 8 continuous
+  action frames using only minimal stick figures.
+
+  No realistic anatory, clothing, pants, shoes, or character details. Show only
+  movement, camera choreography, momentum
+
+  trails, and flame motion with ember sparks trailing each strike, with only a
+  small amount of necessary text,
+
+  • Uses 10 credits
+blocks:
+  - text: View all
+    confidence: 1
+    bbox:
+      - 0.02358490507861637
+      - 0.18357487946859896
+      - 0.05817610062893082
+      - 0.0434782608695653
+  - text: "1108"
+    confidence: 1
+    bbox:
+      - 0.34583333601543764
+      - 0.11538461217216756
+      - 0.13333332613579135
+      - 0.17948718232233163
+  - text: Prompt
+    confidence: 1
+    bbox:
+      - 0.006289308569182383
+      - 0.40579710202898545
+      - 0.05503144654088051
+      - 0.05797101449275366
+  - text: Create a director-style PREVIS action storyboard focused on 8 continuous
+      action frames using only minimal stick figures.
+    confidence: 1
+    bbox:
+      - 0.0062414295717080955
+      - 0.4659605066766169
+      - 0.9387744447720127
+      - 0.08679372446548539
+  - text: No realistic anatory, clothing, pants, shoes, or character details. Show
+      only movement, camera choreography, momentum
+    confidence: 1
+    bbox:
+      - 0.00628930210691834
+      - 0.5603864727053142
+      - 0.959119496855346
+      - 0.07246376811594202
+  - text: trails, and flame motion with ember sparks trailing each strike, with only
+      a small amount of necessary text,
+    confidence: 1
+    bbox:
+      - 0.006289312805730128
+      - 0.6521739128019323
+      - 0.8333333333333333
+      - 0.07246376811594213
+  - text: • Uses 10 credits
+    confidence: 1
+    bbox:
+      - 0.655660376048218
+      - 0.8164251210950081
+      - 0.1572327044025157
+      - 0.05797101449275366

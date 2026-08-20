@@ -1,0 +1,25 @@
+source: images/2082500145359503672_3.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:41:21.365Z
+kind: image
+language: en-US
+text: |-
+  @BasedSamParker @SamParkerSenate
+  CARE
+blocks:
+  - text: "@BasedSamParker @SamParkerSenate"
+    confidence: 1
+    bbox:
+      - 0.0110905699014172
+      - 0.26987061019716574
+      - 0.6081330868761553
+      - 0.038817005545286554
+  - text: CARE
+    confidence: 1
+    bbox:
+      - 0.6913123826272194
+      - 0.2107208869500924
+      - 0.020332720715986463
+      - 0.05914972273567465

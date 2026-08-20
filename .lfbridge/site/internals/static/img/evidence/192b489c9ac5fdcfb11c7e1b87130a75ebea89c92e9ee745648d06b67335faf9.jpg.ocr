@@ -1,0 +1,57 @@
+source: site/internals/static/img/evidence/192b489c9ac5fdcfb11c7e1b87130a75ebea89c92e9ee745648d06b67335faf9.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:42:34.175Z
+kind: image
+language: en-US
+text: |-
+  Matt Tucciarone
+  @tucciarone2026 • 20h
+  CAUGHT ON CAMERA: This man ROBBING Mitch Snow's house is
+  Kyle Saltz - Ft. Huachuca-trained Counterintelligence "handler/fixer"
+  *
+  Kyle Saltz: ...
+blocks:
+  - text: Matt Tucciarone
+    confidence: 1
+    bbox:
+      - 0.09124087772201941
+      - 0.03382352936274513
+      - 0.21715328467153286
+      - 0.020588235294117574
+  - text: "@tucciarone2026 • 20h"
+    confidence: 1
+    bbox:
+      - 0.35401459708029204
+      - 0.03235294095588237
+      - 0.2956204379562044
+      - 0.022058823529411797
+  - text: "CAUGHT ON CAMERA: This man ROBBING Mitch Snow's house is"
+    confidence: 1
+    bbox:
+      - 0.08394161140510945
+      - 0.0705882350735294
+      - 0.822992700729927
+      - 0.022058823529411797
+  - text: Kyle Saltz - Ft. Huachuca-trained Counterintelligence "handler/fixer"
+    confidence: 1
+    bbox:
+      - 0.040145979949817605
+      - 0.09852941185661768
+      - 0.8722627737226277
+      - 0.026470588235294135
+  - text: "*"
+    confidence: 1
+    bbox:
+      - 0.04744525540145986
+      - 0.12941176452941183
+      - 0.02189781021897809
+      - 0.01764705882352935
+  - text: "Kyle Saltz: ..."
+    confidence: 1
+    bbox:
+      - 0.040119917351713524
+      - 0.18958713306902242
+      - 0.16428571547905024
+      - 0.023766910328584467

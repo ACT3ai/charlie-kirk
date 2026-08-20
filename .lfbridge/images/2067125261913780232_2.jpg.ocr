@@ -1,0 +1,278 @@
+source: images/2067125261913780232_2.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:41:04.269Z
+kind: image
+language: en-US
+text: >-
+  IN THE FOURTH DISTRICT COURT - ALL DEPARTMENT
+
+  IN AND FOR UTAH COUNTY, STATE OF UTAH
+
+  AFFIDAVIT FOR SEARCH WARRANT
+
+  STATE OF UTAH)
+
+  ISS
+
+  County of Utah)
+
+  The undersigned affiant, Investigator JUSTIN BOWEN of State Bureau of
+  Investigation, upon
+
+  an oath or written affidavit subscribed under criminal penalty, declares:
+
+  That your affiant has reason to believe:
+
+  THAT
+
+  On the items) described as:
+
+  1. HP Stream Tablet (Evidence item number 66, serial number: CNU444934L). This
+
+  item was found in a spare bedroom.
+
+  2. iPad (Evidence item number 71, serial number: DMPWT3MCJF89). This item was
+
+  found in the dining room area.
+
+  3. Macbook Air Laptop (Evidence item number 72, serial number:
+
+  CO2N2HE1G083). This item was found in the dining room area.
+
+  4. Computer tower (Evidence item number 26). This item was found in the
+  southeast
+
+  bedroom in the apartment.
+
+  5. Cellphone with a raspberry pie device (Evidence item number 74). This item
+  was
+
+  found in the dining room area. According to open source information, a
+  "raspberry
+
+  pie device" is a credit-card sized single-board computer that can be used for
+  learning
+
+  computer programming and edge computing, among other uses.
+
+  6. USB on backpack (Evidence item number 76). This item was found in the
+  dining
+
+  room area.
+
+  7. SD card (Evidence item number 78). This item was found in the dining room
+  area.
+
+  8. Hard drive (Evidence item number 73). This item was found in the dining
+  room
+
+  area.
+blocks:
+  - text: IN THE FOURTH DISTRICT COURT - ALL DEPARTMENT
+    confidence: 1
+    bbox:
+      - 0.23125000535416654
+      - 0.020992366297709952
+      - 0.5354166666666667
+      - 0.01908396946564883
+  - text: IN AND FOR UTAH COUNTY, STATE OF UTAH
+    confidence: 1
+    bbox:
+      - 0.27500000100694444
+      - 0.06488549635814245
+      - 0.4458333333333333
+      - 0.020992366412213803
+  - text: AFFIDAVIT FOR SEARCH WARRANT
+    confidence: 1
+    bbox:
+      - 0.3125000026785714
+      - 0.14694656477644497
+      - 0.37500000000000006
+      - 0.022900763358778553
+  - text: STATE OF UTAH)
+    confidence: 1
+    bbox:
+      - 0.08958333506249995
+      - 0.25572519104961833
+      - 0.17708333333333337
+      - 0.020992366412213803
+  - text: ISS
+    confidence: 0.5
+    bbox:
+      - 0.24374999980654763
+      - 0.2805343512268266
+      - 0.02708333333333332
+      - 0.01526717557251911
+  - text: County of Utah)
+    confidence: 1
+    bbox:
+      - 0.08958333385416667
+      - 0.29770992340171754
+      - 0.14583333333333334
+      - 0.020992366412213803
+  - text: The undersigned affiant, Investigator JUSTIN BOWEN of State Bureau of
+      Investigation, upon
+    confidence: 1
+    bbox:
+      - 0.08958333187500003
+      - 0.39885496154580147
+      - 0.8208333333333333
+      - 0.028625954198473358
+  - text: "an oath or written affidavit subscribed under criminal penalty, declares:"
+    confidence: 1
+    bbox:
+      - 0.08943802839054478
+      - 0.41951273079067697
+      - 0.6003039677937826
+      - 0.029601169906499747
+  - text: "That your affiant has reason to believe:"
+    confidence: 1
+    bbox:
+      - 0.0916666644375
+      - 0.4694656490648855
+      - 0.32708333333333334
+      - 0.020992366412213692
+  - text: THAT
+    confidence: 1
+    bbox:
+      - 0.08941132368135905
+      - 0.5109468599457223
+      - 0.05867735147476198
+      - 0.018182616197425894
+  - text: "On the items) described as:"
+    confidence: 1
+    bbox:
+      - 0.13958333335937498
+      - 0.5744274811784351
+      - 0.23541666666666664
+      - 0.020992366412213803
+  - text: "1. HP Stream Tablet (Evidence item number 66, serial number: CNU444934L).
+      This"
+    confidence: 1
+    bbox:
+      - 0.18541666445312507
+      - 0.6164122134541985
+      - 0.7062499999999999
+      - 0.022900763358778553
+  - text: item was found in a spare bedroom.
+    confidence: 1
+    bbox:
+      - 0.18750000503472203
+      - 0.6393129770992366
+      - 0.3020833333333333
+      - 0.01908396946564883
+  - text: "2. iPad (Evidence item number 71, serial number: DMPWT3MCJF89). This item
+      was"
+    confidence: 1
+    bbox:
+      - 0.18541667562499978
+      - 0.6603053434398856
+      - 0.7166666666666667
+      - 0.020992366412213803
+  - text: found in the dining room area.
+    confidence: 1
+    bbox:
+      - 0.1854166698437499
+      - 0.6812977098759543
+      - 0.25416666666666665
+      - 0.01908396946564883
+  - text: "3. Macbook Air Laptop (Evidence item number 72, serial number:"
+    confidence: 1
+    bbox:
+      - 0.1854166712847221
+      - 0.7022900762563613
+      - 0.5541666666666667
+      - 0.020992366412213692
+  - text: CO2N2HE1G083). This item was found in the dining room area.
+    confidence: 1
+    bbox:
+      - 0.18541667210416654
+      - 0.7251908396564886
+      - 0.54375
+      - 0.01908396946564883
+  - text: 4. Computer tower (Evidence item number 26). This item was found in the
+      southeast
+    confidence: 1
+    bbox:
+      - 0.1854166595833335
+      - 0.7461832063692748
+      - 0.7083333333333334
+      - 0.020992366412213803
+  - text: bedroom in the apartment.
+    confidence: 1
+    bbox:
+      - 0.1874999989930556
+      - 0.765267175254453
+      - 0.21874999999999997
+      - 0.01908396946564883
+  - text: 5. Cellphone with a raspberry pie device (Evidence item number 74). This
+      item was
+    confidence: 1
+    bbox:
+      - 0.18541666102083335
+      - 0.7881679391412213
+      - 0.6979166666666667
+      - 0.020992366412213803
+  - text: found in the dining room area. According to open source information, a
+      "raspberry
+    confidence: 1
+    bbox:
+      - 0.1874999903819448
+      - 0.8072519080470738
+      - 0.6854166666666667
+      - 0.020992366412213692
+  - text: pie device" is a credit-card sized single-board computer that can be used
+      for learning
+    confidence: 1
+    bbox:
+      - 0.18750000586805543
+      - 0.8301526716921119
+      - 0.7041666666666666
+      - 0.019083969465648942
+  - text: computer programming and edge computing, among other uses.
+    confidence: 1
+    bbox:
+      - 0.1874999975520834
+      - 0.8511450379293893
+      - 0.5333333333333334
+      - 0.01908396946564883
+  - text: 6. USB on backpack (Evidence item number 76). This item was found in the
+      dining
+    confidence: 1
+    bbox:
+      - 0.18541667539062487
+      - 0.8721374044608778
+      - 0.6979166666666666
+      - 0.020992366412213692
+  - text: room area.
+    confidence: 1
+    bbox:
+      - 0.18750000089583332
+      - 0.8988549617748092
+      - 0.08958333333333332
+      - 0.013358778625954137
+  - text: 7. SD card (Evidence item number 78). This item was found in the dining
+      room area.
+    confidence: 1
+    bbox:
+      - 0.18541667374999993
+      - 0.9160305343129771
+      - 0.7083333333333334
+      - 0.01908396946564883
+  - text: 8. Hard drive (Evidence item number 73). This item was found in the dining
+      room
+    confidence: 1
+    bbox:
+      - 0.18541667393229144
+      - 0.9370229010257634
+      - 0.6854166666666667
+      - 0.020992366412213803
+  - text: area.
+    confidence: 1
+    bbox:
+      - 0.18750000072916664
+      - 0.9618320610687023
+      - 0.04375000000000001
+      - 0.011450381679389277

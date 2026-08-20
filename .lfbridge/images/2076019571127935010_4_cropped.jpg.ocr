@@ -1,0 +1,169 @@
+source: images/2076019571127935010_4_cropped.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:41:11.638Z
+kind: image
+language: en-US
+text: |-
+  But today they said he was arrested in Washington
+  County so when and where was he mirandized
+  Mirandized at Washington County Sheriff's Office
+  Robinson was read his Miranda rights at 6:25 PM on
+  September 11, 2025, inside the Washington County Sheriff's
+  Office (WCSO) in Hurricane, Utah. Defense filings and the
+  WCSO video exhibit (Bates 3996-R1/R2) document that
+  timestamp, showing him in a "soft interview" room with family
+  present before he was later transferred to Utah County.
+  How it fits the custody timeline
+  • ~9 PM 9/11 - Investigator testimony says Robinson arrived
+  at the WCSO with his parents and a family friend.
+  • 6:25PM 9/11 - Miranda rights read and custody log
+  recorded at WCSO.
+  • 10 PM 9/11 - Utah County booking sheet entry (separate
+  jurisdiction).
+  • 04:009/12 - Utah County affidavit lists formal arrest time
+  after transport to the Utah County Jail.
+  So the Miranda occurred in Washington County, not Utah
+  County, and it predates the later booking/affidavit times.
+blocks:
+  - text: But today they said he was arrested in Washington
+    confidence: 1
+    bbox:
+      - 0.029595021290887712
+      - 0.005873715051395001
+      - 0.9143302180685359
+      - 0.03524229074889873
+  - text: County so when and where was he mirandized
+    confidence: 1
+    bbox:
+      - 0.02785795297503324
+      - 0.04152794720519126
+      - 0.833733769592095
+      - 0.04029177639102799
+  - text: Mirandized at Washington County Sheriff's Office
+    confidence: 1
+    bbox:
+      - 0.031152652349428826
+      - 0.12775330369554583
+      - 0.792834890965732
+      - 0.03230543318649037
+  - text: Robinson was read his Miranda rights at 6:25 PM on
+    confidence: 1
+    bbox:
+      - 0.02959501394081
+      - 0.18355359732745968
+      - 0.7834890965732086
+      - 0.03230543318649037
+  - text: September 11, 2025, inside the Washington County Sheriff's
+    confidence: 1
+    bbox:
+      - 0.0295100105344473
+      - 0.22104196668995557
+      - 0.9207398601781541
+      - 0.038672207735708564
+  - text: Office (WCSO) in Hurricane, Utah. Defense filings and the
+    confidence: 1
+    bbox:
+      - 0.029595015311526536
+      - 0.26138032340675466
+      - 0.8676012461059189
+      - 0.03524229074889873
+  - text: WCSO video exhibit (Bates 3996-R1/R2) document that
+    confidence: 1
+    bbox:
+      - 0.03115264336275533
+      - 0.30102790020394843
+      - 0.8302180685358256
+      - 0.027900146842878115
+  - text: timestamp, showing him in a "soft interview" room with family
+    confidence: 1
+    bbox:
+      - 0.026372425798695573
+      - 0.33341490822180964
+      - 0.9410603841145834
+      - 0.04056527506062291
+  - text: present before he was later transferred to Utah County.
+    confidence: 1
+    bbox:
+      - 0.029595021550956804
+      - 0.37885462556114957
+      - 0.8364485981308412
+      - 0.027900146842878115
+  - text: How it fits the custody timeline
+    confidence: 1
+    bbox:
+      - 0.02959501776998966
+      - 0.4757709248531572
+      - 0.49999999999999994
+      - 0.03083700440528636
+  - text: • ~9 PM 9/11 - Investigator testimony says Robinson arrived
+    confidence: 1
+    bbox:
+      - 0.028037388248528812
+      - 0.5359765050416055
+      - 0.9127725856697819
+      - 0.029368575624082238
+  - text: at the WCSO with his parents and a family friend.
+    confidence: 1
+    bbox:
+      - 0.059190035423156796
+      - 0.5712187961331375
+      - 0.7398753894080997
+      - 0.029368575624082238
+  - text: • 6:25PM 9/11 - Miranda rights read and custody log
+    confidence: 1
+    bbox:
+      - 0.02647974856697821
+      - 0.6182085165932453
+      - 0.8099688473520249
+      - 0.029368575624082238
+  - text: recorded at WCSO.
+    confidence: 1
+    bbox:
+      - 0.05919003296339562
+      - 0.6549192364353891
+      - 0.28971962616822433
+      - 0.026431718061673992
+  - text: • 10 PM 9/11 - Utah County booking sheet entry (separate
+    confidence: 1
+    bbox:
+      - 0.028037388066805096
+      - 0.7019089573503019
+      - 0.8800623052959501
+      - 0.029368575624082238
+  - text: jurisdiction).
+    confidence: 1
+    bbox:
+      - 0.056074767591510845
+      - 0.7371512481736417
+      - 0.19781931464174454
+      - 0.027900146842878115
+  - text: • 04:009/12 - Utah County affidavit lists formal arrest time
+    confidence: 1
+    bbox:
+      - 0.028037392320872177
+      - 0.7841409691042583
+      - 0.9143302180685359
+      - 0.029368575624082238
+  - text: after transport to the Utah County Jail.
+    confidence: 1
+    bbox:
+      - 0.05919003535825542
+      - 0.8208516887035873
+      - 0.588785046728972
+      - 0.027900146842878115
+  - text: So the Miranda occurred in Washington County, not Utah
+    confidence: 1
+    bbox:
+      - 0.0295950241121494
+      - 0.9016152714977974
+      - 0.8535825545171339
+      - 0.03377386196769461
+  - text: County, and it predates the later booking/affidavit times.
+    confidence: 1
+    bbox:
+      - 0.029595010371235783
+      - 0.9397944202520803
+      - 0.8551401869158879
+      - 0.03377386196769461

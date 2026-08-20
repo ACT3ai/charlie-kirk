@@ -1,0 +1,33 @@
+source: site/internals/static/img/evidence/1243c5980de52c1cf21f18beefde2423352c1df18c1ab1c91d4a8d5a402e1123.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:42:18.163Z
+kind: image
+language: en-US
+text: |-
+  THANK YOU FOR SUPPORTING
+  THIS WORK
+  DAVIDVOSE.COM
+blocks:
+  - text: THANK YOU FOR SUPPORTING
+    confidence: 1
+    bbox:
+      - 0.04694835659233178
+      - 0.22916666720486112
+      - 0.8967136150234742
+      - 0.12916666666666665
+  - text: THIS WORK
+    confidence: 1
+    bbox:
+      - 0.3047653508138759
+      - 0.3416154228349688
+      - 0.3505631925914209
+      - 0.11676915884017935
+  - text: DAVIDVOSE.COM
+    confidence: 1
+    bbox:
+      - 0.22769953171361504
+      - 0.5458333339791667
+      - 0.5023474178403756
+      - 0.12916666666666665

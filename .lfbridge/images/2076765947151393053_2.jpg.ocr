@@ -1,0 +1,88 @@
+source: images/2076765947151393053_2.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:41:12.009Z
+kind: image
+language: en-US
+text: >-
+  4%
+
+  45
+
+  MAKE AMBRO
+
+  GREAT AGION
+
+  OREM, UTAH - SEPTEMBER 10, 2025: Attendees gather in close formation at Utah
+  Valley
+
+  University for the opening stop of the American Comeback Tour. The image
+  captures a moment of
+
+  shared anticipation and civic presence, reflecting the energy, emotion, and
+  communal
+
+  engagement that defined the event's intended spirit. © Charles-McClintock
+  Wilson / ZUMA Press
+blocks:
+  - text: 4%
+    confidence: 1
+    bbox:
+      - 0.9142441859597851
+      - 0.019073569194376194
+      - 0.07122093111822092
+      - 0.07356948256492613
+  - text: "45"
+    confidence: 1
+    bbox:
+      - 0.47674418546938124
+      - 0.06539509628829188
+      - 0.07703488519703483
+      - 0.08719345927238464
+  - text: MAKE AMBRO
+    confidence: 0.5
+    bbox:
+      - 0.08720930360659758
+      - 0.20156250098898387
+      - 0.1497092984877093
+      - 0.08454104065895085
+  - text: GREAT AGION
+    confidence: 1
+    bbox:
+      - 0.10465116512291282
+      - 0.2585937513640547
+      - 0.1322674362512674
+      - 0.07656249999999998
+  - text: "OREM, UTAH - SEPTEMBER 10, 2025: Attendees gather in close formation at
+      Utah Valley"
+    confidence: 1
+    bbox:
+      - 0.3183139573585114
+      - 0.8637602180450845
+      - 0.4447674489457675
+      - 0.022177281975746088
+  - text: University for the opening stop of the American Comeback Tour. The image
+      captures a moment of
+    confidence: 1
+    bbox:
+      - 0.2965116325671858
+      - 0.8882812502300679
+      - 0.48837209184237207
+      - 0.024525289237499193
+  - text: shared anticipation and civic presence, reflecting the energy, emotion,
+      and communal
+    confidence: 1
+    bbox:
+      - 0.32267443699044757
+      - 0.9155313354302532
+      - 0.4316860205321859
+      - 0.024523159861564614
+  - text: engagement that defined the event's intended spirit. © Charles-McClintock
+      Wilson / ZUMA Press
+    confidence: 1
+    bbox:
+      - 0.29651161949506405
+      - 0.939843750420458
+      - 0.48401163263051167
+      - 0.027458702027797655

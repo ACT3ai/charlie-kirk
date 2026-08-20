@@ -1,0 +1,105 @@
+source: images/2067169575217799549_3.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:41:05.162Z
+kind: image
+language: en-US
+text: |-
+  Date
+  Dec 2025 - Present
+  Feb 2021 - Dec 2025
+  Name
+  13 Branches Family Trust
+  and Twiggs
+  Owned For
+  6 Months
+  Owner Type
+  Private Individual
+  4 Years and 10 Months
+  Private Individual
+blocks:
+  - text: Date
+    confidence: 1
+    bbox:
+      - 0.03869298699153764
+      - 0.13252887150775727
+      - 0.04113254547119141
+      - 0.11765830899462282
+  - text: Dec 2025 - Present
+    confidence: 1
+    bbox:
+      - 0.0425925944444444
+      - 0.45679012283950615
+      - 0.1481481481481481
+      - 0.09876543209876554
+  - text: Feb 2021 - Dec 2025
+    confidence: 1
+    bbox:
+      - 0.042592593904320956
+      - 0.7530864191358025
+      - 0.1574074074074074
+      - 0.09876543209876543
+  - text: Name
+    confidence: 1
+    bbox:
+      - 0.2720221152018481
+      - 0.1318219262312873
+      - 0.048548362873218676
+      - 0.11907219592435858
+  - text: 13 Branches Family Trust
+    confidence: 1
+    bbox:
+      - 0.27407407596296296
+      - 0.395061727654321
+      - 0.18888888888888888
+      - 0.09876543209876543
+  - text: and Twiggs
+    confidence: 1
+    bbox:
+      - 0.2740441060566657
+      - 0.5173307885834099
+      - 0.08709697016963253
+      - 0.10114089942272797
+  - text: Owned For
+    confidence: 1
+    bbox:
+      - 0.5072362027208054
+      - 0.11784790909874188
+      - 0.08737944850215207
+      - 0.13467456087654028
+  - text: 6 Months
+    confidence: 1
+    bbox:
+      - 0.5073780524785371
+      - 0.4559358798933715
+      - 0.07228093323884188
+      - 0.11281960687519599
+  - text: Owner Type
+    confidence: 1
+    bbox:
+      - 0.7407195240405126
+      - 0.13507689309530713
+      - 0.09448687941939737
+      - 0.12490794688095286
+  - text: Private Individual
+    confidence: 1
+    bbox:
+      - 0.7407407416931217
+      - 0.4567901227513227
+      - 0.13333333333333341
+      - 0.09876543209876554
+  - text: 4 Years and 10 Months
+    confidence: 1
+    bbox:
+      - 0.5074074088425926
+      - 0.7530864192386831
+      - 0.17222222222222217
+      - 0.11111111111111105
+  - text: Private Individual
+    confidence: 1
+    bbox:
+      - 0.7388888871990741
+      - 0.7530864202160494
+      - 0.13518518518518519
+      - 0.11111111111111105

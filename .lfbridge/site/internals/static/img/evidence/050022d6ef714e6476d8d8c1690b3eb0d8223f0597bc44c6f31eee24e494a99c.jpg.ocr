@@ -1,0 +1,25 @@
+source: site/internals/static/img/evidence/050022d6ef714e6476d8d8c1690b3eb0d8223f0597bc44c6f31eee24e494a99c.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:41:54.813Z
+kind: image
+language: en-US
+text: |-
+  - ACE
+  LYOU
+blocks:
+  - text: "- ACE"
+    confidence: 1
+    bbox:
+      - -2.0512820388154442e-10
+      - 0.6621212118863635
+      - 0.08888888888888889
+      - 0.046969696969696995
+  - text: LYOU
+    confidence: 0.5
+    bbox:
+      - -2.1367520098970594e-10
+      - 0.7212121209621212
+      - 0.09743589743589744
+      - 0.050000000000000044

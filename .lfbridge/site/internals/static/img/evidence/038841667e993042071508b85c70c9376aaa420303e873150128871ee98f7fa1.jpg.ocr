@@ -1,0 +1,25 @@
+source: site/internals/static/img/evidence/038841667e993042071508b85c70c9376aaa420303e873150128871ee98f7fa1.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:41:55.552Z
+kind: image
+language: en-US
+text: |-
+  DEPANTVENT
+  COOT ESTONG
+blocks:
+  - text: DEPANTVENT
+    confidence: 1
+    bbox:
+      - 0.2877943102594837
+      - 0.7239338669117554
+      - 0.12635953724384308
+      - 0.032939713448286057
+  - text: COOT ESTONG
+    confidence: 1
+    bbox:
+      - 0.28489562771006194
+      - 0.7433282500306754
+      - 0.1283835470676422
+      - 0.03545558825135231

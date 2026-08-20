@@ -1,0 +1,91 @@
+source: site/internals/static/img/evidence/0b4b3f6073af175df8bf1c877121e404dfffb24aad2504685f0f99d700790731.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:42:05.315Z
+kind: image
+language: en-US
+text: >-
+  TAIL#: SU-BND (Gulfstream 4) 12-16 PASSENGERS
+
+  TAIL#: SU-BTT (Falcon 7X) 12-16 PASSENGERS
+
+  2022
+
+  November 13th: BTT Cairo to Paris to Wichita, KS at 12:43PM
+
+  November 17th: BTT departs for Wilmington at 8:54am, Leaves for Cairo on
+  November
+
+  20th at 7:37am to Cairo
+
+  December 20th: BTT Cairo to Paris to St. Louis arriving at 11:37am.
+
+  December 27th: BTT leaves at St. Louis at lands MO to Bangor, ME to Cairo
+
+  2023
+blocks:
+  - text: "TAIL#: SU-BND (Gulfstream 4) 12-16 PASSENGERS"
+    confidence: 1
+    bbox:
+      - 0.1424418505512882
+      - 0.09331476375658387
+      - 0.4593023403056924
+      - 0.03826418294880041
+  - text: "TAIL#: SU-BTT (Falcon 7X) 12-16 PASSENGERS"
+    confidence: 1
+    bbox:
+      - 0.1424418648266117
+      - 0.14327485335133006
+      - 0.43168604258514864
+      - 0.040935673089412594
+  - text: "2022"
+    confidence: 1
+    bbox:
+      - 0.14230757659953752
+      - 0.2975921060270238
+      - 0.04532670776873704
+      - 0.03931871164475975
+  - text: "November 13th: BTT Cairo to Paris to Wichita, KS at 12:43PM"
+    confidence: 1
+    bbox:
+      - 0.14166668615247863
+      - 0.3949579837152756
+      - 0.5458333080075424
+      - 0.04236792189829197
+  - text: "November 17th: BTT departs for Wilmington at 8:54am, Leaves for Cairo on
+      November"
+    confidence: 1
+    bbox:
+      - 0.14244188374991704
+      - 0.5055710305931066
+      - 0.7514534471440611
+      - 0.04178272980501385
+  - text: 20th at 7:37am to Cairo
+    confidence: 1
+    bbox:
+      - 0.13750000565214912
+      - 0.5543175486835231
+      - 0.21249999577903486
+      - 0.04232110552136936
+  - text: "December 20th: BTT Cairo to Paris to St. Louis arriving at 11:37am."
+    confidence: 1
+    bbox:
+      - 0.14244186785942556
+      - 0.6573816160576135
+      - 0.5857557874497537
+      - 0.04178272980501385
+  - text: "December 27th: BTT leaves at St. Louis at lands MO to Bangor, ME to Cairo"
+    confidence: 1
+    bbox:
+      - 0.14166668771497865
+      - 0.7562674083139147
+      - 0.6708333080075424
+      - 0.05045527933699845
+  - text: "2023"
+    confidence: 1
+    bbox:
+      - 0.14244186132895165
+      - 0.9122807021370843
+      - 0.04505813830785896
+      - 0.03508771827293966

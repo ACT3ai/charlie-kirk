@@ -1,0 +1,89 @@
+source: images/2052006013684126145_1.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:41:00.553Z
+kind: image
+language: en-US
+text: |-
+  WHAT I WANT MY
+  Children
+  to KNOw
+  Before I. Die
+  With Christ, your
+  greatest pain can
+  become your
+  greatest strength.
+  EKSAYN
+  ANDERSON
+blocks:
+  - text: WHAT I WANT MY
+    confidence: 1
+    bbox:
+      - 0.23055555295634916
+      - 0.07160493844797178
+      - 0.3638888888888889
+      - 0.04938271604938271
+  - text: Children
+    confidence: 1
+    bbox:
+      - 0.2166666658169935
+      - 0.1283950614233842
+      - 0.3611111111111111
+      - 0.10370370370370363
+  - text: to KNOw
+    confidence: 1
+    bbox:
+      - 0.27222222400793644
+      - 0.22716049375661373
+      - 0.24999999999999994
+      - 0.03456790123456799
+  - text: Before I. Die
+    confidence: 1
+    bbox:
+      - 0.13845437310010517
+      - 0.27263140302241307
+      - 0.5036468082004124
+      - 0.12387299714265043
+  - text: With Christ, your
+    confidence: 1
+    bbox:
+      - 0.12641003812396837
+      - 0.49455411286783013
+      - 0.13850818210177954
+      - 0.02991790536009231
+  - text: greatest pain can
+    confidence: 1
+    bbox:
+      - 0.1305555572222222
+      - 0.5234567900308643
+      - 0.13333333333333333
+      - 0.01728395061728394
+  - text: become your
+    confidence: 1
+    bbox:
+      - 0.14296447946824742
+      - 0.5398704717032866
+      - 0.10801458358764648
+      - 0.026391420246642316
+  - text: greatest strength.
+    confidence: 1
+    bbox:
+      - 0.12734641672336583
+      - 0.5630538032945337
+      - 0.13975161446465384
+      - 0.02697881298300664
+  - text: EKSAYN
+    confidence: 0.5
+    bbox:
+      - 0.10277777934259255
+      - 0.6320987661152264
+      - 0.5805555555555555
+      - 0.20493827160493827
+  - text: ANDERSON
+    confidence: 1
+    bbox:
+      - 0.13381159503425227
+      - 0.809247807343243
+      - 0.521385998196072
+      - 0.10879470448435091

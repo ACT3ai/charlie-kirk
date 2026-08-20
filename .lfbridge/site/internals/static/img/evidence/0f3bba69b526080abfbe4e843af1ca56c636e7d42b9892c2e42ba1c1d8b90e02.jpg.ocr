@@ -1,0 +1,321 @@
+source: site/internals/static/img/evidence/0f3bba69b526080abfbe4e843af1ca56c636e7d42b9892c2e42ba1c1d8b90e02.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:42:18.426Z
+kind: image
+language: en-US
+text: |-
+  THEORETICAL RISK TO BODILY INJURY FOR PPE PFMEA:
+  MACH 8 HEMISPHERICAL SHOCKWAVE, 2g RDX,
+  0.3g LINER, 4MS DURATION TO RIGHT UPPER CHEST WITH A 2CM STANDOFF
+  Hemispherical Shockwave
+  Mach 8 (=2,700 m/s)
+  › Potential Injuries:
+  High Pressure >>
+  Severe Neurologic Injury
+  • Potential for Brain
+  Trauma & Decorticate
+  Posturing
+  EXTREME RISK
+  Shockwave
+  Traumatic Pulmonary
+  Hemorrhage
+  EXTREME RISK
+  Mach 8 (=2,700 m/s)
+  Severe Blunt Trauma
+  • Brusing & Rib Fractures
+  HIGH RISK
+  Pneumothorax
+  (Collapsed Lung)
+  HIGH RISK
+  Blast Wind
+  160 psi Overpressure
+  • Broken Bones
+  • Severe Lung Damage
+  • Massive Internal Bleeding
+  • Organ Rupture
+  • Major Vascular Injury
+  2cm
+  Standoff
+  Cardiac Contusion
+  / Arrhythmia
+  EXTREME RISK
+  Low Pressure <<
+  EXTREME RISK
+  HIGH RISK
+  MODERATE RISK
+blocks:
+  - text: "THEORETICAL RISK TO BODILY INJURY FOR PPE PFMEA:"
+    confidence: 1
+    bbox:
+      - 0.06535949380625128
+      - 0.02734374956816754
+      - 0.9193899631500244
+      - 0.02083333395421505
+  - text: MACH 8 HEMISPHERICAL SHOCKWAVE, 2g RDX,
+    confidence: 1
+    bbox:
+      - 0.11546841968232191
+      - 0.05664062514350099
+      - 0.8409585952758789
+      - 0.027661701043446896
+  - text: 0.3g LINER, 4MS DURATION TO RIGHT UPPER CHEST WITH A 2CM STANDOFF
+    confidence: 1
+    bbox:
+      - 0.02586919785858255
+      - 0.08482679071253085
+      - 0.9633989930152893
+      - 0.03141566241780913
+  - text: Hemispherical Shockwave
+    confidence: 1
+    bbox:
+      - 0.14596949786351332
+      - 0.14098837282989674
+      - 0.413943350315094
+      - 0.023255812625090244
+  - text: Mach 8 (=2,700 m/s)
+    confidence: 1
+    bbox:
+      - 0.3289760352902861
+      - 0.1770833335368217
+      - 0.24183006584644318
+      - 0.02083333333333326
+  - text: "› Potential Injuries:"
+    confidence: 1
+    bbox:
+      - 0.6143790958011339
+      - 0.14648437533066294
+      - 0.3006535768508911
+      - 0.02213541666666663
+  - text: High Pressure >>
+    confidence: 1
+    bbox:
+      - 0.019607845892348486
+      - 0.23828125012064516
+      - 0.24400870501995087
+      - 0.02043968004484975
+  - text: Severe Neurologic Injury
+    confidence: 1
+    bbox:
+      - 0.716775609347899
+      - 0.1860465117671658
+      - 0.2679738402366638
+      - 0.01772953011095524
+  - text: • Potential for Brain
+    confidence: 1
+    bbox:
+      - 0.7276688451700424
+      - 0.20768229148220885
+      - 0.20261438190937042
+      - 0.01497395833333337
+  - text: Trauma & Decorticate
+    confidence: 1
+    bbox:
+      - 0.7407407443861798
+      - 0.22656249984701593
+      - 0.23311546444892883
+      - 0.013263081510861752
+  - text: Posturing
+    confidence: 1
+    bbox:
+      - 0.7406934984183797
+      - 0.24405947751109047
+      - 0.10466964542865753
+      - 0.017694998532533646
+  - text: EXTREME RISK
+    confidence: 1
+    bbox:
+      - 0.7145969502448639
+      - 0.27604166681067466
+      - 0.19607843458652496
+      - 0.01497395833333326
+  - text: Shockwave
+    confidence: 1
+    bbox:
+      - 0.02178649606604957
+      - 0.32412790712811534
+      - 0.14596949517726898
+      - 0.0174418600896995
+  - text: Traumatic Pulmonary
+    confidence: 1
+    bbox:
+      - 0.7447456683965249
+      - 0.3102311695375475
+      - 0.25126829743385315
+      - 0.019920674463113075
+  - text: Hemorrhage
+    confidence: 1
+    bbox:
+      - 0.7581165870158523
+      - 0.33118891634693126
+      - 0.1504334956407547
+      - 0.017854725321133857
+  - text: EXTREME RISK
+    confidence: 1
+    bbox:
+      - 0.7690631824604188
+      - 0.3587239582182993
+      - 0.1917211264371872
+      - 0.014973958333333481
+  - text: Mach 8 (=2,700 m/s)
+    confidence: 1
+    bbox:
+      - 0.023965144613910166
+      - 0.39648437485694976
+      - 0.24618735909461978
+      - 0.02083333333333326
+  - text: Severe Blunt Trauma
+    confidence: 1
+    bbox:
+      - 0.7472766894854779
+      - 0.39648437474334663
+      - 0.23529411852359772
+      - 0.01497395833333326
+  - text: • Brusing & Rib Fractures
+    confidence: 1
+    bbox:
+      - 0.7538126403004821
+      - 0.41992187469783215
+      - 0.24400870501995087
+      - 0.01627604166666674
+  - text: HIGH RISK
+    confidence: 1
+    bbox:
+      - 0.7734204800506101
+      - 0.445963541695066
+      - 0.15468409657478333
+      - 0.01627604166666674
+  - text: Pneumothorax
+    confidence: 1
+    bbox:
+      - 0.773420484689922
+      - 0.4840116279851947
+      - 0.16339868307113647
+      - 0.014534883201122284
+  - text: (Collapsed Lung)
+    confidence: 1
+    bbox:
+      - 0.7821350750417682
+      - 0.5058139533290631
+      - 0.1764705926179886
+      - 0.015988372266292572
+  - text: HIGH RISK
+    confidence: 1
+    bbox:
+      - 0.8017429194320627
+      - 0.5348837210066364
+      - 0.14596949517726898
+      - 0.0132933625330528
+  - text: Blast Wind
+    confidence: 1
+    bbox:
+      - 0.036860024413990666
+      - 0.49926020622226575
+      - 0.14414487779140472
+      - 0.017467959473530414
+  - text: 160 psi Overpressure
+    confidence: 1
+    bbox:
+      - 0.03485838720521081
+      - 0.5232558144337084
+      - 0.2527233064174652
+      - 0.019061893845597977
+  - text: • Broken Bones
+    confidence: 1
+    bbox:
+      - 0.03703703874219072
+      - 0.5638020830412667
+      - 0.1917211264371872
+      - 0.01627604166666663
+  - text: • Severe Lung Damage
+    confidence: 1
+    bbox:
+      - 0.0370370475056484
+      - 0.5872093024406153
+      - 0.2745097875595093
+      - 0.017608406022191048
+  - text: • Massive Internal Bleeding
+    confidence: 1
+    bbox:
+      - 0.03703703989322085
+      - 0.6104651166411968
+      - 0.32244008779525757
+      - 0.0174418600896995
+  - text: • Organ Rupture
+    confidence: 1
+    bbox:
+      - 0.03921569111562637
+      - 0.633463541695066
+      - 0.19825707376003265
+      - 0.01627604166666663
+  - text: • Major Vascular Injury
+    confidence: 1
+    bbox:
+      - 0.03703703785562665
+      - 0.6540697676004991
+      - 0.2701525092124939
+      - 0.0174418600896995
+  - text: 2cm
+    confidence: 1
+    bbox:
+      - 0.6013071895095663
+      - 0.5552325578930165
+      - 0.056644879281520844
+      - 0.015988372266292572
+  - text: Standoff
+    confidence: 1
+    bbox:
+      - 0.5838145044571785
+      - 0.5739267489108596
+      - 0.10252349823713303
+      - 0.014937199652194977
+  - text: Cardiac Contusion
+    confidence: 1
+    bbox:
+      - 0.7843137307439639
+      - 0.585755813666999
+      - 0.2047930210828781
+      - 0.015988372266292572
+  - text: / Arrhythmia
+    confidence: 1
+    bbox:
+      - 0.7885298865265813
+      - 0.6070010349173627
+      - 0.1506090760231018
+      - 0.01855606958270073
+  - text: EXTREME RISK
+    confidence: 1
+    bbox:
+      - 0.7995642717170748
+      - 0.6380208333626904
+      - 0.17864923179149628
+      - 0.013141957422097561
+  - text: Low Pressure <<
+    confidence: 1
+    bbox:
+      - 0.021786494289399383
+      - 0.744140625129473
+      - 0.23529411852359772
+      - 0.01627604166666674
+  - text: EXTREME RISK
+    confidence: 1
+    bbox:
+      - 0.06318082864616953
+      - 0.9229651161197606
+      - 0.2222222238779068
+      - 0.015988372266292572
+  - text: HIGH RISK
+    confidence: 1
+    bbox:
+      - 0.38997821916289155
+      - 0.9212239586216366
+      - 0.15686273574829102
+      - 0.01772952949007356
+  - text: MODERATE RISK
+    confidence: 1
+    bbox:
+      - 0.6579520709847304
+      - 0.9212239586216366
+      - 0.24183006584644318
+      - 0.01772952949007356

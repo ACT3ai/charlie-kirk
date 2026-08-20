@@ -1,0 +1,33 @@
+source: site/internals/static/img/evidence/017518c66ea88b9521de987cd43fc3eb4f4eb5fcfd8db01923128317d21c249b.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:41:45.853Z
+kind: image
+language: en-US
+text: |-
+  22350948
+  gettyimages
+  Credit: Chet Strange
+blocks:
+  - text: "22350948"
+    confidence: 1
+    bbox:
+      - 0.00980392293028317
+      - 0.9558823526960785
+      - 0.08169934640522877
+      - 0.02450980392156865
+  - text: gettyimages
+    confidence: 1
+    bbox:
+      - 0.6045059704053909
+      - 0.6171324390453852
+      - 0.1929488462560317
+      - 0.05985276839312381
+  - text: "Credit: Chet Strange"
+    confidence: 1
+    bbox:
+      - 0.6111111208301153
+      - 0.6813725489379086
+      - 0.2091503143310547
+      - 0.03431372549019607

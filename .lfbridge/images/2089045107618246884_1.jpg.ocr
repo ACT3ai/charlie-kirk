@@ -1,0 +1,33 @@
+source: images/2089045107618246884_1.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:41:32.167Z
+kind: image
+language: en-US
+text: |-
+  "The bullet could have broken
+  apart in mid air for all we know!"
+  -Andrew Wilson
+blocks:
+  - text: '"The bullet could have broken'
+    confidence: 1
+    bbox:
+      - 0.5476190503793825
+      - 0.33906633903123895
+      - 0.3864468864468865
+      - 0.039312039312039415
+  - text: apart in mid air for all we know!"
+    confidence: 1
+    bbox:
+      - 0.5492017917141215
+      - 0.38553260555881574
+      - 0.41815294538225445
+      - 0.04974125995682854
+  - text: -Andrew Wilson
+    confidence: 1
+    bbox:
+      - 0.7802197812454212
+      - 0.48402948366093357
+      - 0.19047619047619047
+      - 0.03685503685503688

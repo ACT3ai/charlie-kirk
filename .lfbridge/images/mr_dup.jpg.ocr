@@ -1,0 +1,16 @@
+source: images/mr_dup.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:41:34.259Z
+kind: image
+language: en-US
+text: RODE
+blocks:
+  - text: RODE
+    confidence: 1
+    bbox:
+      - 0.1044944511271422
+      - 0.21172432494130455
+      - 0.23287156422932945
+      - 0.0765513499577839

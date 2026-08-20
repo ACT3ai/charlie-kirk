@@ -1,0 +1,33 @@
+source: site/internals/static/img/evidence/04b41888f409c5709ecd00f041729458e7aafb9a0bc77758773bbd6f5e3ad4a4.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:41:54.407Z
+kind: image
+language: en-US
+text: |-
+  POLICE
+  LIGH
+  POLICE
+blocks:
+  - text: POLICE
+    confidence: 0.5
+    bbox:
+      - 0.47267326574391805
+      - 0.26099947189270023
+      - 0.026534655888875325
+      - 0.02153025999577096
+  - text: LIGH
+    confidence: 0.5
+    bbox:
+      - 0.6203468203596417
+      - 0.06322468027991723
+      - 0.058025048573811855
+      - 0.06142901245658927
+  - text: POLICE
+    confidence: 1
+    bbox:
+      - 0.8533333332727273
+      - 0.08284023657880579
+      - 0.033333333333333326
+      - 0.023668639053254448

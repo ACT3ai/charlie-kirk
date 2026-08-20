@@ -1,0 +1,105 @@
+source: site/internals/static/img/evidence/0c63ee703e4f043acfd40e258d986ed03ffdc13b5ed23a7754e21d7cdd24553b.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:42:13.146Z
+kind: image
+language: en-US
+text: |-
+  PROVE MEI
+  1L0097
+  No Blood
+  No bullet hole
+  21 seconds after
+  Charlie Shot
+  Tyler's .30-06 didn't
+  shoot Kirk.
+  The powertul .30-06 would have caused
+  massive blood and a bullet hole. Since it shot
+  from the "front"
+  "Evil Doers" (Plural) - Wife of Charlie Kirk
+blocks:
+  - text: PROVE MEI
+    confidence: 1
+    bbox:
+      - 0.3140000008125
+      - 0.10248447195263977
+      - 0.13
+      - 0.06521739130434778
+  - text: 1L0097
+    confidence: 1
+    bbox:
+      - 0.33199999966
+      - 0.44409937903726704
+      - 0.03400000000000003
+      - 0.02795031055900621
+  - text: No Blood
+    confidence: 1
+    bbox:
+      - 0.6415704282613955
+      - 0.040168809100511016
+      - 0.22885914611816416
+      - 0.08115306404066369
+  - text: No bullet hole
+    confidence: 1
+    bbox:
+      - 0.58800000172
+      - 0.1956521738354038
+      - 0.344
+      - 0.0714285714285714
+  - text: 21 seconds after
+    confidence: 1
+    bbox:
+      - 0.5900000002125
+      - 0.3447204965256212
+      - 0.32200000000000006
+      - 0.05900621118012417
+  - text: Charlie Shot
+    confidence: 1
+    bbox:
+      - 0.6300000013444444
+      - 0.4254658384057972
+      - 0.242
+      - 0.06211180124223592
+  - text: Tyler's .30-06 didn't
+    confidence: 1
+    bbox:
+      - 0.551322176763567
+      - 0.5333169391648371
+      - 0.40927783203125
+      - 0.08917681178691217
+  - text: shoot Kirk.
+    confidence: 1
+    bbox:
+      - 0.6398620166014773
+      - 0.6293849862593806
+      - 0.2322759704589843
+      - 0.07663375546473161
+  - text: The powertul .30-06 would have caused
+    confidence: 1
+    bbox:
+      - 0.5659999977833333
+      - 0.7484472052277432
+      - 0.378
+      - 0.03105590062111807
+  - text: massive blood and a bullet hole. Since it shot
+    confidence: 1
+    bbox:
+      - 0.54000000434
+      - 0.7857142856211179
+      - 0.43399999999999994
+      - 0.03416149068322982
+  - text: from the "front"
+    confidence: 1
+    bbox:
+      - 0.6760000013399999
+      - 0.8229813661180125
+      - 0.15800000000000003
+      - 0.03416149068322982
+  - text: '"Evil Doers" (Plural) - Wife of Charlie Kirk'
+    confidence: 1
+    bbox:
+      - 0.5399999950250001
+      - 0.9440993784161491
+      - 0.41800000000000004
+      - 0.037267080745341574

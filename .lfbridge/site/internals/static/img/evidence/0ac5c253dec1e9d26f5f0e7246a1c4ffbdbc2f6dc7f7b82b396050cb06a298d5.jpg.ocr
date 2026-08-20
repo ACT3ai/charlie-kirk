@@ -1,0 +1,232 @@
+source: site/internals/static/img/evidence/0ac5c253dec1e9d26f5f0e7246a1c4ffbdbc2f6dc7f7b82b396050cb06a298d5.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:42:10.565Z
+kind: image
+language: en-US
+text: >-
+  Aircraft N59906 is currently in a registration status of "In Question,"
+  meaning its registration may not be
+
+  suitable for operation until resolved. The listed owner name is REGISTRATION
+  PENDING, with the address
+
+  101 HIGHPOINTE CT STE C, Brandon, Mississippi 39042-7041, United States. An
+  application was
+
+  submitted on July 31, 2025, by APPLICANT ALPHA WHISKEY 2 LLC.
+
+  For the most up-to-date status, contact the FAA Aircraft Registration Branch
+  at 1-866-762-9434.
+
+  Aircraft Details
+
+  Field
+
+  Type
+
+  Manufacturer
+
+  Model
+
+  Serial Number
+
+  Year Manufactured
+
+  Airworthiness Date
+
+  Engine
+
+  Mode S Code
+
+  Value
+
+  Fixed Wing Multi-Engine
+
+  PIPER
+
+  PA-31-350
+
+  31-7552027
+
+  1974
+
+  December 24, 1974
+
+  LYCOMING TIO-540 SER (Reciprocating)
+
+  A7C14D
+blocks:
+  - text: Aircraft N59906 is currently in a registration status of "In Question,"
+      meaning its registration may not be
+    confidence: 1
+    bbox:
+      - 0.04069768879598913
+      - 0.033947065798574094
+      - 0.8677325417809454
+      - 0.028317084932491965
+  - text: suitable for operation until resolved. The listed owner name is
+      REGISTRATION PENDING, with the address
+    confidence: 1
+    bbox:
+      - 0.040697687682984915
+      - 0.07710011460465593
+      - 0.8880813815069538
+      - 0.0266734694995594
+  - text: 101 HIGHPOINTE CT STE C, Brandon, Mississippi 39042-7041, United States.
+      An application was
+    confidence: 1
+    bbox:
+      - 0.03750003026053161
+      - 0.11334867600175536
+      - 0.8416666342011581
+      - 0.03800267481831321
+  - text: submitted on July 31, 2025, by APPLICANT ALPHA WHISKEY 2 LLC.
+    confidence: 1
+    bbox:
+      - 0.04069769846414232
+      - 0.15822784863549078
+      - 0.5799418239728779
+      - 0.03049482163406214
+  - text: For the most up-to-date status, contact the FAA Aircraft Registration
+      Branch at 1-866-762-9434.
+    confidence: 1
+    bbox:
+      - 0.04069768836808216
+      - 0.21509434034322394
+      - 0.8139534808219747
+      - 0.02656273682729282
+  - text: Aircraft Details
+    confidence: 1
+    bbox:
+      - 0.04069767833093098
+      - 0.3018867925388127
+      - 0.17296511061648107
+      - 0.028377879749644896
+  - text: Field
+    confidence: 1
+    bbox:
+      - 0.04215116352009396
+      - 0.37924528313903294
+      - 0.045058138827060126
+      - 0.024528301489229687
+  - text: Type
+    confidence: 1
+    bbox:
+      - 0.04215116246067647
+      - 0.4490566043054881
+      - 0.04360465124143776
+      - 0.02641509289845778
+  - text: Manufacturer
+    confidence: 1
+    bbox:
+      - 0.04360465261214995
+      - 0.5207547171663646
+      - 0.11482558013699577
+      - 0.020754716475896107
+  - text: Model
+    confidence: 1
+    bbox:
+      - 0.04215116248636319
+      - 0.5886792457270832
+      - 0.05523255869006434
+      - 0.024528301489229687
+  - text: Serial Number
+    confidence: 1
+    bbox:
+      - 0.04215116680884041
+      - 0.6582278475828321
+      - 0.12354650565073003
+      - 0.023014959723820505
+  - text: Year Manufactured
+    confidence: 1
+    bbox:
+      - 0.042151162609345844
+      - 0.7264150943340014
+      - 0.1613372099315021
+      - 0.024528301489229687
+  - text: Airworthiness Date
+    confidence: 1
+    bbox:
+      - 0.04215116228715594
+      - 0.7980437281473649
+      - 0.1613372099315021
+      - 0.022710987832933016
+  - text: Engine
+    confidence: 1
+    bbox:
+      - 0.042151161652519926
+      - 0.8679245286758702
+      - 0.05813953724313289
+      - 0.024528301489229798
+  - text: Mode S Code
+    confidence: 1
+    bbox:
+      - 0.043604651616755155
+      - 0.9358490565981524
+      - 0.11337209255137341
+      - 0.024528301489229687
+  - text: Value
+    confidence: 1
+    bbox:
+      - 0.3355722995875334
+      - 0.3785694223319249
+      - 0.05269260947585952
+      - 0.025880023442697464
+  - text: Fixed Wing Multi-Engine
+    confidence: 1
+    bbox:
+      - 0.33575581696446355
+      - 0.4487917146566862
+      - 0.20494185102746842
+      - 0.02667998279883199
+  - text: PIPER
+    confidence: 1
+    bbox:
+      - 0.33556505513486
+      - 0.5180798434302197
+      - 0.054160588176537905
+      - 0.024217671437148258
+  - text: PA-31-350
+    confidence: 1
+    bbox:
+      - 0.3356595177339836
+      - 0.5879814869046954
+      - 0.09466933527736798
+      - 0.02403702642618577
+  - text: 31-7552027
+    confidence: 1
+    bbox:
+      - 0.3357150969943577
+      - 0.6563331138482884
+      - 0.10327910700588361
+      - 0.026956413365617493
+  - text: "1974"
+    confidence: 1
+    bbox:
+      - 0.33430232526954273
+      - 0.7283018865637726
+      - 0.04360465124143781
+      - 0.022641510080001703
+  - text: December 24, 1974
+    confidence: 1
+    bbox:
+      - 0.3357558160678126
+      - 0.798043728671933
+      - 0.16424418510274685
+      - 0.028371365352933497
+  - text: LYCOMING TIO-540 SER (Reciprocating)
+    confidence: 1
+    bbox:
+      - 0.3343023303395644
+      - 0.8659378596676334
+      - 0.34447674041098736
+      - 0.02651496970612377
+  - text: A7C14D
+    confidence: 0.5
+    bbox:
+      - 0.335684147799417
+      - 0.935501040103589
+      - 0.06991077314877336
+      - 0.025224334488529676

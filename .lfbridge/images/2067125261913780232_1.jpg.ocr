@@ -1,0 +1,138 @@
+source: images/2067125261913780232_1.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:41:03.841Z
+kind: image
+language: en-US
+text: >-
+  IN THE FOURTH DISTRICT COURT - ALL DEPARTMENT
+
+  IN AND FOR UTAH COUNTY, STATE OF UTAH
+
+  AFFIDAVIT FOR SEARCH WARRANT
+
+  STATE OF UTAH)
+
+  iSS
+
+  County of Utah)
+
+  I, JUSTIN BOWEN, a Investigator with the State Bureau of Investigation,
+  currently assigned to
+
+  the Major Crimes Unit, being duly sworn, state as follows:
+
+  This affidavit is submitted in support of a search warrant application for a
+  search of the Apple
+
+  Inc. accounts) identified by this user:
+
+  lancetwiggs@icloud.com and memesinsteadofdreams@gmail.com
+
+  at
+
+  Apple Inc.,
+
+  One Apple Park Way, MS: 169-5CLP Cupertino, CA.
+blocks:
+  - text: IN THE FOURTH DISTRICT COURT - ALL DEPARTMENT
+    confidence: 1
+    bbox:
+      - 0.22916665994791685
+      - 0.18015665806135772
+      - 0.5375000000000001
+      - 0.023498694516971286
+  - text: IN AND FOR UTAH COUNTY, STATE OF UTAH
+    confidence: 1
+    bbox:
+      - 0.27499999442708345
+      - 0.23759791129242824
+      - 0.4458333333333334
+      - 0.031331592689294974
+  - text: AFFIDAVIT FOR SEARCH WARRANT
+    confidence: 1
+    bbox:
+      - 0.31250000231770836
+      - 0.3550913836814622
+      - 0.37083333333333335
+      - 0.02610966057441244
+  - text: STATE OF UTAH)
+    confidence: 1
+    bbox:
+      - 0.08958333187500003
+      - 0.5013054830939948
+      - 0.17500000000000002
+      - 0.02872062663185382
+  - text: iSS
+    confidence: 0.5
+    bbox:
+      - 0.2458333329166667
+      - 0.5352480418624891
+      - 0.024999999999999967
+      - 0.015665796344647487
+  - text: County of Utah)
+    confidence: 1
+    bbox:
+      - 0.08958333479166664
+      - 0.5587467361879895
+      - 0.14583333333333334
+      - 0.026109660574412552
+  - text: I, JUSTIN BOWEN, a Investigator with the State Bureau of Investigation,
+      currently assigned to
+    confidence: 1
+    bbox:
+      - 0.08749999015625025
+      - 0.6135770239229764
+      - 0.8208333333333334
+      - 0.03394255874673635
+  - text: "the Major Crimes Unit, being duly sworn, state as follows:"
+    confidence: 1
+    bbox:
+      - 0.08958332925347232
+      - 0.6422976502610966
+      - 0.48958333333333326
+      - 0.031331592689295085
+  - text: This affidavit is submitted in support of a search warrant application for
+      a search of the Apple
+    confidence: 1
+    bbox:
+      - 0.09166666666666666
+      - 0.7023498691383813
+      - 0.8166666666666667
+      - 0.031331592689294974
+  - text: "Inc. accounts) identified by this user:"
+    confidence: 1
+    bbox:
+      - 0.09166666909722215
+      - 0.7336814625761532
+      - 0.31666666666666665
+      - 0.026109660574412552
+  - text: lancetwiggs@icloud.com and memesinsteadofdreams@gmail.com
+    confidence: 1
+    bbox:
+      - 0.13749999507812513
+      - 0.7911227157637076
+      - 0.55625
+      - 0.02872062663185382
+  - text: at
+    confidence: 1
+    bbox:
+      - 0.08958333333333333
+      - 0.851174934464752
+      - 0.02083333333333333
+      - 0.02088772845953002
+  - text: Apple Inc.,
+    confidence: 1
+    bbox:
+      - 0.13958333453124996
+      - 0.9112271540469974
+      - 0.09583333333333335
+      - 0.026109660574412552
+  - text: "One Apple Park Way, MS: 169-5CLP Cupertino, CA."
+    confidence: 1
+    bbox:
+      - 0.13958333856770827
+      - 0.9347258481723237
+      - 0.4479166666666667
+      - 0.031331592689295085

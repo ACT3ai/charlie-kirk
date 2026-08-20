@@ -1,0 +1,25 @@
+source: images/2078856527541362697_1.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:41:16.913Z
+kind: image
+language: en-US
+text: |-
+  100 1177
+  TEGO
+blocks:
+  - text: 100 1177
+    confidence: 0.5
+    bbox:
+      - 0.307111109255076
+      - 0.11974955328245951
+      - 0.0947008573091947
+      - 0.03427549167694477
+  - text: TEGO
+    confidence: 0.5
+    bbox:
+      - 0.6837606840488675
+      - 0.7853309476254662
+      - 0.03418803418803418
+      - 0.035778175313059046

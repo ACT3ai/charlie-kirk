@@ -1,0 +1,109 @@
+source: videos/2038721750431846877.mp4
+status: done
+engine: vision
+level: fast
+generated: 2026-08-20T12:41:42.798Z
+kind: video
+language: en-US
+stride_seconds: 15
+frames_sampled: 11
+truncated: false
+text: |-
+  ,, it's not just about the advisors around him, but
+
+  " kTrumD
+  Show
+  I mean, how are they able to do that?
+
+  INFO
+
+  Trump s inner circle and President Trump himself.
+
+  IL
+  and it wasn't the best, venue
+
+  4r**
+  into official channels, creating that media echo
+
+  Iri I
+  Pi
+  11
+  ,And so that was a direct threat to the Israelis.
+
+  Iii&'
+  17 1
+  11
+  .l¢ *¥il
+  IN
+  And then they said that night after night on
+
+  Day War and about Operation Midnight Hammer,
+
+  and said, hey, Midnight Hammer is going to be.
+
+  11
+  They created a very small circle around President
+blocks:
+  - text: ",, it's not just about the advisors around him, but"
+    confidence: 0.5
+    start: 0
+    end: 15
+  - text: |-
+      " kTrumD
+      Show
+      I mean, how are they able to do that?
+    confidence: 0.5
+    start: 15
+    end: 30
+  - text: INFO
+    confidence: 0.5
+    start: 30
+    end: 45
+  - text: Trump s inner circle and President Trump himself.
+    confidence: 0.5
+    start: 45
+    end: 60
+  - text: |-
+      IL
+      and it wasn't the best, venue
+    confidence: 0.5
+    start: 60
+    end: 75
+  - text: |-
+      4r**
+      into official channels, creating that media echo
+    confidence: 0.5
+    start: 75
+    end: 90
+  - text: |-
+      Iri I
+      Pi
+      11
+      ,And so that was a direct threat to the Israelis.
+    confidence: 0.5
+    start: 90
+    end: 105
+  - text: |-
+      Iii&'
+      17 1
+      11
+      .l¢ *¥il
+      IN
+      And then they said that night after night on
+    confidence: 0.5
+    start: 105
+    end: 120
+  - text: Day War and about Operation Midnight Hammer,
+    confidence: 0.5
+    start: 120
+    end: 135
+  - text: and said, hey, Midnight Hammer is going to be.
+    confidence: 0.5
+    start: 135
+    end: 150
+  - text: |-
+      11
+      They created a very small circle around President
+    confidence: 0.5
+    start: 150
+    end: 165

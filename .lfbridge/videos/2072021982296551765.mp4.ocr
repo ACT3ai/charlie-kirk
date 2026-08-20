@@ -1,0 +1,48 @@
+source: videos/2072021982296551765.mp4
+status: done
+engine: vision
+level: fast
+generated: 2026-08-20T12:42:42.312Z
+kind: video
+language: en-US
+stride_seconds: 15
+frames_sampled: 3
+truncated: false
+text: |-
+  11
+  ',111,:I'r'
+  WASHINGT,ONpCOUNTY
+  Baron Coleman
+
+  I THINK 9:00
+  Baron Coleman
+
+  i!
+  ,Illll'F'
+  IN
+  CUSTODY
+  Baron Coleman
+blocks:
+  - text: |-
+      11
+      ',111,:I'r'
+      WASHINGT,ONpCOUNTY
+      Baron Coleman
+    confidence: 0.5
+    start: 0
+    end: 15
+  - text: |-
+      I THINK 9:00
+      Baron Coleman
+    confidence: 0.5
+    start: 15
+    end: 30
+  - text: |-
+      i!
+      ,Illll'F'
+      IN
+      CUSTODY
+      Baron Coleman
+    confidence: 0.5
+    start: 30
+    end: 45

@@ -1,0 +1,689 @@
+source: images/2082697323193180352_1.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:41:24.515Z
+kind: image
+language: en-US
+text: |-
+  FORENSIC HYPOTHESIS COMPARISON
+  Injury Pattern Analysis
+  Medical Examiner Findings + Acoustic Data
+  State of Utah v. Tyler Robinson | UCCU Center, September 10, 2025
+  followtheepicenter.com
+  HYPOTHESIS A
+  .30-06 Rifle
+  Neck Zone 2 entry, 10° down, 3° L→R
+  Single projectile wound track
+  28
+  / 65
+  avg 2.2
+  HYPOTHESIS B
+  Shaped Charge
+  Chest detonation: jet + blast + fragments
+  Three simultaneous injury mechanisms
+  57 / 65
+  avg 4.4
+  AGGREGATE EXPLANATORY FIT
+  RIFLE 33%
+  RATING SCALE:
+  FINDING
+  1 = Cannot explain
+  • 2 = Requires assumpti@n3 = Possible
+  RIFLE (.30-06)
+  SHAPED CHARGE 67%
+  • 4 = Strong fit
+  SHAPED CHARGE
+  • 5 = Direct prediction
+  DELTA
+  Bilateral hemothorax (left and right)
+  ME Report, Id. at 3
+  Hemopericardium
+  ME Report, Id. at 3
+  Bilateral apical pulmonary
+  hemorrhage/hematomas
+  ME Report, Id. at 3
+  Bilateral anterior and posterior intercostal
+  hemorrhages
+  ME Report, Id. at 3
+  Multiple thyroid, cricoid, and tracheal cartilage
+  disruptions
+  ME Report, Id. at 3
+  2/5
+  Requires secondary mechanism - near-midline neck
+  entry needs temporary cavity or fragmentation to
+  breach both pleural spaces
+  2/5
+  Requires -35 cm wound track from neck to T2-T3
+  level, or hemorrhage tracking along fascial planes from
+  great vessel injury
+  4/5
+  Geometrically consistent
+  - 10 deg downward
+  trajectory enters thoracic inlet at midline; temporary
+  cavity may reach both apices
+  5/5
+  Direct prediction - jet transits both pleural spaces on
+  any front-to-back thoracic trajectory
+  5/5
+  Direct prediction - pericardium sits 5-8 cm behind
+  anterior chest wall; jet reaches it immediately
+  SC +3
+  SC +3
+  4/5
+  Blast overpressure + jet decompression - lung apices
+  most vulnerable to overpressure events (Cooper 1991)
+  EQUAL
+  2/5
+  Indirect - requires pressure wave propagation from
+  wound track through intercostal tissue bilaterally
+  4/5
+  Single-track transit — left-to-right path crosses midline
+  at Zone 2, sequential cartilage disruption along one
+  axis
+  5/5
+  Textbook blast lung injury finding — surface
+  detonation overpressure on chest wall directly causes
+  intercostal hemorrhage
+  3/5
+  Fragment spray from below - casing fragments travel
+  upward into neck; 'multiple disruptions' possibly more
+  consistent with scattered fragments
+  SC +3
+  R +1
+blocks:
+  - text: FORENSIC HYPOTHESIS COMPARISON
+    confidence: 1
+    bbox:
+      - 0.07116105306894822
+      - 0.023168103642930316
+      - 0.23595504760742186
+      - 0.008808640570476145
+  - text: Injury Pattern Analysis
+    confidence: 1
+    bbox:
+      - 0.06741573238342204
+      - 0.04505813973963557
+      - 0.39513108995225693
+      - 0.029295308836575162
+  - text: Medical Examiner Findings + Acoustic Data
+    confidence: 1
+    bbox:
+      - 0.06928838890265053
+      - 0.08405172427839602
+      - 0.36329587300618493
+      - 0.01346982758620685
+  - text: State of Utah v. Tyler Robinson | UCCU Center, September 10, 2025
+    confidence: 1
+    bbox:
+      - 0.07116105129560653
+      - 0.10319767444331784
+      - 0.573033693101671
+      - 0.01318163604571898
+  - text: followtheepicenter.com
+    confidence: 1
+    bbox:
+      - 0.07116105409748961
+      - 0.13662790706563366
+      - 0.15168538623385958
+      - 0.01017441831786059
+  - text: HYPOTHESIS A
+    confidence: 1
+    bbox:
+      - 0.0861423237139679
+      - 0.21928879318870398
+      - 0.08426966137356229
+      - 0.009159482758620774
+  - text: .30-06 Rifle
+    confidence: 1
+    bbox:
+      - 0.0842696646776993
+      - 0.23814655168989762
+      - 0.11610486772325303
+      - 0.014760424864703192
+  - text: Neck Zone 2 entry, 10° down, 3° L→R
+    confidence: 1
+    bbox:
+      - 0.0861423283738984
+      - 0.2586206898308545
+      - 0.22284643385145397
+      - 0.0118534482758621
+  - text: Single projectile wound track
+    confidence: 1
+    bbox:
+      - 0.08614232158523928
+      - 0.2747093024909224
+      - 0.16853932274712458
+      - 0.011627906355364592
+  - text: "28"
+    confidence: 1
+    bbox:
+      - 0.08988764236978178
+      - 0.28633720881624036
+      - 0.059925089942084425
+      - 0.024709302803565758
+  - text: / 65
+    confidence: 1
+    bbox:
+      - 0.1498127354284584
+      - 0.2920258622691786
+      - 0.059925089942084425
+      - 0.01346982758620685
+  - text: avg 2.2
+    confidence: 1
+    bbox:
+      - 0.2321008303915801
+      - 0.2947317040907129
+      - 0.06388822661505808
+      - 0.01373426616191864
+  - text: HYPOTHESIS B
+    confidence: 1
+    bbox:
+      - 0.5337078667851288
+      - 0.21928879318870398
+      - 0.08426966137356229
+      - 0.009159482758620774
+  - text: Shaped Charge
+    confidence: 1
+    bbox:
+      - 0.5337078695990242
+      - 0.23814655184265732
+      - 0.15730336507161458
+      - 0.016213912902207195
+  - text: "Chest detonation: jet + blast + fragments"
+    confidence: 1
+    bbox:
+      - 0.5337078749662972
+      - 0.26017441867537205
+      - 0.23782770368787975
+      - 0.010299719099340798
+  - text: Three simultaneous injury mechanisms
+    confidence: 1
+    bbox:
+      - 0.5337078604545833
+      - 0.27470930234179636
+      - 0.22846442328559025
+      - 0.010312249434405452
+  - text: 57 / 65
+    confidence: 1
+    bbox:
+      - 0.5374531846782974
+      - 0.2877155171967979
+      - 0.12172284656100807
+      - 0.023330993693450375
+  - text: avg 4.4
+    confidence: 1
+    bbox:
+      - 0.6797752797458148
+      - 0.2950581399182479
+      - 0.06367041269938156
+      - 0.011627906355364592
+  - text: AGGREGATE EXPLANATORY FIT
+    confidence: 1
+    bbox:
+      - 0.06928838943852154
+      - 0.35319767424935655
+      - 0.17415730158487952
+      - 0.008871291218132793
+  - text: RIFLE 33%
+    confidence: 1
+    bbox:
+      - 0.17602996554329592
+      - 0.3706395347871473
+      - 0.07303370369805232
+      - 0.008720930280356587
+  - text: "RATING SCALE:"
+    confidence: 1
+    bbox:
+      - 0.06928839232695884
+      - 0.408405172341607
+      - 0.09176029629177516
+      - 0.008745990436652584
+  - text: FINDING
+    confidence: 1
+    bbox:
+      - 0.0692883888277746
+      - 0.43750000005174705
+      - 0.05056179894341363
+      - 0.007267441729019386
+  - text: 1 = Cannot explain
+    confidence: 1
+    bbox:
+      - 0.20599251191272516
+      - 0.4084051723756652
+      - 0.1235955026414659
+      - 0.010237068965517127
+  - text: • 2 = Requires assumpti@n3 = Possible
+    confidence: 1
+    bbox:
+      - 0.3426966245737903
+      - 0.4067887929222507
+      - 0.24157303704155814
+      - 0.0118534482758621
+  - text: RIFLE (.30-06)
+    confidence: 1
+    bbox:
+      - 0.3801498169480646
+      - 0.4358836209396202
+      - 0.09925093120998807
+      - 0.01033730907686825
+  - text: SHAPED CHARGE 67%
+    confidence: 1
+    bbox:
+      - 0.5711610496536885
+      - 0.37063953495672086
+      - 0.13857677247789169
+      - 0.008720930280356587
+  - text: • 4 = Strong fit
+    confidence: 1
+    bbox:
+      - 0.6367041246372105
+      - 0.40840517249073294
+      - 0.10674156612820085
+      - 0.010237068965517349
+  - text: SHAPED CHARGE
+    confidence: 1
+    bbox:
+      - 0.6348314614234009
+      - 0.4375000000342404
+      - 0.09176029629177518
+      - 0.008720930280356476
+  - text: • 5 = Direct prediction
+    confidence: 1
+    bbox:
+      - 0.7846441972828497
+      - 0.4084051723924986
+      - 0.14981273015340169
+      - 0.0118534482758621
+  - text: DELTA
+    confidence: 1
+    bbox:
+      - 0.8857439220291048
+      - 0.4374379398668329
+      - 0.037500919236077235
+      - 0.008845050787103514
+  - text: Bilateral hemothorax (left and right)
+    confidence: 1
+    bbox:
+      - 0.07303370817947305
+      - 0.48255813970250383
+      - 0.2097378200954861
+      - 0.010437549702052351
+  - text: ME Report, Id. at 3
+    confidence: 1
+    bbox:
+      - 0.07116105036286587
+      - 0.4983836208934498
+      - 0.10674156612820095
+      - 0.008883821039364248
+  - text: Hemopericardium
+    confidence: 1
+    bbox:
+      - 0.07303370845927457
+      - 0.5552325583374359
+      - 0.10486891004774307
+      - 0.01017441831786059
+  - text: ME Report, Id. at 3
+    confidence: 1
+    bbox:
+      - 0.07116105036286587
+      - 0.5711206897749941
+      - 0.10674156612820095
+      - 0.01027465894304469
+  - text: Bilateral apical pulmonary
+    confidence: 1
+    bbox:
+      - 0.073033705707572
+      - 0.6293103450015881
+      - 0.1535580529106988
+      - 0.010237068965517238
+  - text: hemorrhage/hematomas
+    confidence: 1
+    bbox:
+      - 0.07303370814367488
+      - 0.6409883720668449
+      - 0.14419475131564669
+      - 0.01017441831786059
+  - text: ME Report, Id. at 3
+    confidence: 1
+    bbox:
+      - 0.07116105242279092
+      - 0.6567887932445644
+      - 0.10674156612820096
+      - 0.010362369233164248
+  - text: Bilateral anterior and posterior intercostal
+    confidence: 1
+    bbox:
+      - 0.07303370775179256
+      - 0.7020348839188313
+      - 0.24719100528293186
+      - 0.010249598786748693
+  - text: hemorrhages
+    confidence: 1
+    bbox:
+      - 0.07116105125098257
+      - 0.715116279307783
+      - 0.08239699999491373
+      - 0.011627906355364481
+  - text: ME Report, Id. at 3
+    confidence: 1
+    bbox:
+      - 0.07303370986376893
+      - 0.7311046514333662
+      - 0.10486891004774306
+      - 0.01027465894304469
+  - text: Multiple thyroid, cricoid, and tracheal cartilage
+    confidence: 1
+    bbox:
+      - 0.07116105093686913
+      - 0.7761627910665038
+      - 0.27528088887532554
+      - 0.011627906355364481
+  - text: disruptions
+    confidence: 1
+    bbox:
+      - 0.07116104993652111
+      - 0.7877906975658955
+      - 0.0711610476175944
+      - 0.01308139542053477
+  - text: ME Report, Id. at 3
+    confidence: 1
+    bbox:
+      - 0.07303370872144684
+      - 0.8052325581737751
+      - 0.10486891004774308
+      - 0.008883821039364248
+  - text: 2/5
+    confidence: 1
+    bbox:
+      - 0.5037453186627239
+      - 0.4796511626941241
+      - 0.022471910052829336
+      - 0.008720930280356587
+  - text: Requires secondary mechanism - near-midline neck
+    confidence: 1
+    bbox:
+      - 0.3820224818861372
+      - 0.4956395347871474
+      - 0.22659174601236975
+      - 0.008720930280356587
+  - text: entry needs temporary cavity or fragmentation to
+    confidence: 1
+    bbox:
+      - 0.3820224751993815
+      - 0.5058139533917986
+      - 0.20599250793457036
+      - 0.00873346061542113
+  - text: breach both pleural spaces
+    confidence: 1
+    bbox:
+      - 0.3820224781596893
+      - 0.5159883720206744
+      - 0.11423220104641385
+      - 0.00879611074924469
+  - text: 2/5
+    confidence: 1
+    bbox:
+      - 0.5037453181009262
+      - 0.5537790698876704
+      - 0.022471910052829336
+      - 0.007267441729019497
+  - text: Requires -35 cm wound track from neck to T2-T3
+    confidence: 1
+    bbox:
+      - 0.3801498231976416
+      - 0.5695043104693218
+      - 0.21348313225640198
+      - 0.007543103448275801
+  - text: level, or hemorrhage tracking along fascial planes from
+    confidence: 1
+    bbox:
+      - 0.38202247600333866
+      - 0.5797413791181744
+      - 0.23220973544650608
+      - 0.009159482758620663
+  - text: great vessel injury
+    confidence: 1
+    bbox:
+      - 0.380149814068053
+      - 0.5899784483704821
+      - 0.08052434391445584
+      - 0.00885876088306825
+  - text: 4/5
+    confidence: 1
+    bbox:
+      - 0.5037453186627239
+      - 0.6264534882755194
+      - 0.022471910052829336
+      - 0.008720930280356587
+  - text: Geometrically consistent
+    confidence: 1
+    bbox:
+      - 0.38202247714189197
+      - 0.6422413790939495
+      - 0.10674156612820096
+      - 0.009159482758620663
+  - text: "- 10 deg downward"
+    confidence: 1
+    bbox:
+      - 0.4906367050058239
+      - 0.6422413792392984
+      - 0.08614231745402023
+      - 0.009159482758620774
+  - text: trajectory enters thoracic inlet at midline; temporary
+    confidence: 1
+    bbox:
+      - 0.38014981094780215
+      - 0.6524784485158309
+      - 0.21910112169053814
+      - 0.00885876088306825
+  - text: cavity may reach both apices
+    confidence: 1
+    bbox:
+      - 0.3820224727117265
+      - 0.6627155170046661
+      - 0.1235955026414659
+      - 0.01024959930058189
+  - text: 5/5
+    confidence: 1
+    bbox:
+      - 0.7546816488532705
+      - 0.47965116271834884
+      - 0.02621722751193578
+      - 0.008720930280356587
+  - text: Direct prediction - jet transits both pleural spaces on
+    confidence: 1
+    bbox:
+      - 0.6348314706501821
+      - 0.4956395347871474
+      - 0.22659174601236987
+      - 0.008720930280356587
+  - text: any front-to-back thoracic trajectory
+    confidence: 1
+    bbox:
+      - 0.6329588031143436
+      - 0.5058139535371473
+      - 0.15168538623385963
+      - 0.008733460101587931
+  - text: 5/5
+    confidence: 1
+    bbox:
+      - 0.7565543070522369
+      - 0.5537790698028837
+      - 0.022471910052829336
+      - 0.007267441729019497
+  - text: Direct prediction - pericardium sits 5-8 cm behind
+    confidence: 1
+    bbox:
+      - 0.6348314654448329
+      - 0.5695043105105135
+      - 0.2134831322564018
+      - 0.009159482758620663
+  - text: anterior chest wall; jet reaches it immediately
+    confidence: 1
+    bbox:
+      - 0.6329587987596377
+      - 0.5797413792392984
+      - 0.1928838941786024
+      - 0.009159482758620774
+  - text: SC +3
+    confidence: 1
+    bbox:
+      - 0.8913857691398482
+      - 0.4838362067308657
+      - 0.04119849999745695
+      - 0.009159482758620774
+  - text: SC +3
+    confidence: 1
+    bbox:
+      - 0.8893426500097488
+      - 0.5577480905368155
+      - 0.04341207875145803
+      - 0.012410795894162385
+  - text: 4/5
+    confidence: 1
+    bbox:
+      - 0.7565543070522369
+      - 0.6279069767796279
+      - 0.022471910052829336
+      - 0.007267441729019386
+  - text: Blast overpressure + jet decompression - lung apices
+    confidence: 1
+    bbox:
+      - 0.6329587988185698
+      - 0.6422413792392984
+      - 0.23220973544650614
+      - 0.009159482758620774
+  - text: most vulnerable to overpressure events (Cooper 1991)
+    confidence: 1
+    bbox:
+      - 0.6329588103049365
+      - 0.6524784483704821
+      - 0.23782770368787975
+      - 0.00885876088306825
+  - text: EQUAL
+    confidence: 1
+    bbox:
+      - 0.8913857691398482
+      - 0.6322674417784264
+      - 0.04119849999745695
+      - 0.008720930280356587
+  - text: 2/5
+    confidence: 1
+    bbox:
+      - 0.5037453182881921
+      - 0.700581395384279
+      - 0.022471910052829336
+      - 0.007267441729019497
+  - text: Indirect - requires pressure wave propagation from
+    confidence: 1
+    bbox:
+      - 0.3801498115514559
+      - 0.716569767466411
+      - 0.22097377777099614
+      - 0.008720930280356476
+  - text: wound track through intercostal tissue bilaterally
+    confidence: 1
+    bbox:
+      - 0.38014981688165356
+      - 0.7267441859741628
+      - 0.2059925079345703
+      - 0.008720930280356587
+  - text: 4/5
+    confidence: 1
+    bbox:
+      - 0.5037453181009262
+      - 0.77470930244581
+      - 0.022471910052829336
+      - 0.007267441729019386
+  - text: Single-track transit — left-to-right path crosses midline
+    confidence: 1
+    bbox:
+      - 0.38202247286095015
+      - 0.7892441859499378
+      - 0.22846442328559025
+      - 0.008720930280356587
+  - text: at Zone 2, sequential cartilage disruption along one
+    confidence: 1
+    bbox:
+      - 0.3820224779601595
+      - 0.7994186046249845
+      - 0.2153557883368598
+      - 0.010387429903293444
+  - text: axis
+    confidence: 1
+    bbox:
+      - 0.38014981285956223
+      - 0.8110465117663043
+      - 0.02059924999872842
+      - 0.007267441729019386
+  - text: 5/5
+    confidence: 1
+    bbox:
+      - 0.7546816481072482
+      - 0.700581395384279
+      - 0.02434456878238256
+      - 0.007267441729019497
+  - text: Textbook blast lung injury finding — surface
+    confidence: 1
+    bbox:
+      - 0.6329588102682163
+      - 0.7165697673452868
+      - 0.18726590474446614
+      - 0.008720930280356587
+  - text: detonation overpressure on chest wall directly causes
+    confidence: 1
+    bbox:
+      - 0.6329588024489651
+      - 0.726744185949938
+      - 0.22846442328559025
+      - 0.008720930280356587
+  - text: intercostal hemorrhage
+    confidence: 1
+    bbox:
+      - 0.6329588052985641
+      - 0.7369186046623798
+      - 0.09925093120998807
+      - 0.007267441729019497
+  - text: 3/5
+    confidence: 1
+    bbox:
+      - 0.7546816477873356
+      - 0.7747093024639786
+      - 0.02434456878238256
+      - 0.007267441729019386
+  - text: Fragment spray from below - casing fragments travel
+    confidence: 1
+    bbox:
+      - 0.6329588040201594
+      - 0.7892441859499378
+      - 0.2303370793660482
+      - 0.008720930280356587
+  - text: upward into neck; 'multiple disruptions' possibly more
+    confidence: 1
+    bbox:
+      - 0.6329588124182843
+      - 0.7994186045788139
+      - 0.22659174601236975
+      - 0.008771050592948693
+  - text: consistent with scattered fragments
+    confidence: 1
+    bbox:
+      - 0.6329588075385009
+      - 0.8108836206050312
+      - 0.15168538623385963
+      - 0.007543103448275801
+  - text: SC +3
+    confidence: 1
+    bbox:
+      - 0.8913345834238511
+      - 0.70479409943018
+      - 0.041300871637132475
+      - 0.009016452164485544
+  - text: R +1
+    confidence: 1
+    bbox:
+      - 0.893258426823674
+      - 0.779069767526973
+      - 0.03370786507924395
+      - 0.008720930280356587

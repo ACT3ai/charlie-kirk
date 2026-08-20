@@ -1,0 +1,159 @@
+source: videos/2045871393611395289_00001.mp4
+status: done
+engine: vision
+level: fast
+generated: 2026-08-20T12:41:47.372Z
+kind: video
+language: en-US
+stride_seconds: 15
+frames_sampled: 5
+truncated: false
+text: >-
+  From Soclal Media I Wednesday
+
+  Orem, Utah
+
+  SPAR
+
+  BREAKING NEWS
+
+  pp
+
+  CON,'
+
+  U,S, MARSHALS HUNT FOR KIRK SHOOTER, NOW ON RUN FOR NEARLY 30 HOURS
+
+  ION
+
+  F INTEREST THURSDAY. YOU CAN SEE THEM ON CNN.COM. CP•I.eoffl ROBERT BOHI
+
+  OLrrFRoKr
+
+
+  Google Earth
+
+  Orem, Utah
+
+  Losee Center
+
+  ), Possible shooter location
+
+  Approximately 150 yards away
+
+  Charlie Kirk Shot
+
+  CON,'
+
+  'ON
+
+  BREAKING NEWS
+
+  rY OFHCE, SAID AT A NEWS CONFERENCE THURSDAY AGENTS RECOVERED A HIGH.PO
+
+  OUTFAopir
+
+
+  BREAKING NEWS
+
+  pp
+
+  CON,'
+
+  INVESTIGATORS; TRACKED SHOOTER'S MOVEMENTS TO ROOF AND BEYOND
+
+  'ON
+
+  I INVESTORS' HOPES THAT THE FEDERAL RESERVE WILL CLrr INTEREST RATES IN SEPT
+  OUTFAONT
+
+
+  BREAKING NEWS
+
+  pp
+
+  CON,'
+
+  INVESTIGATORS; TRACKED SHOOTER'S MOVEMENTS TO ROOF AND BEYOND
+
+  'ON
+
+  ROSSING THE 46,000-POINT MARK FOR THE FIRST TIME. QH.com BORROWING R
+
+
+  BREAKING NEWS
+
+  pp
+
+  CON,'
+
+  INVESTIGATORS; TRACKED SHOOTER'S MOVEMENTS TO ROOF AND BEYOND
+
+  'ON
+
+  .35% FOR THE WEEK ENDING SEvfEMBER 11, DOWN FROM 6.50% LAST WEEK, Accofft
+blocks:
+  - text: |-
+      From Soclal Media I Wednesday
+      Orem, Utah
+      SPAR
+      BREAKING NEWS
+      pp
+      CON,'
+      U,S, MARSHALS HUNT FOR KIRK SHOOTER, NOW ON RUN FOR NEARLY 30 HOURS
+      ION
+      F INTEREST THURSDAY. YOU CAN SEE THEM ON CNN.COM. CP•I.eoffl ROBERT BOHI
+      OLrrFRoKr
+    confidence: 0.5
+    start: 0
+    end: 15
+  - text: |-
+      Google Earth
+      Orem, Utah
+      Losee Center
+      ), Possible shooter location
+      Approximately 150 yards away
+      Charlie Kirk Shot
+      CON,'
+      'ON
+      BREAKING NEWS
+      rY OFHCE, SAID AT A NEWS CONFERENCE THURSDAY AGENTS RECOVERED A HIGH.PO
+      OUTFAopir
+    confidence: 0.5
+    start: 15
+    end: 30
+  - text: >-
+      BREAKING NEWS
+
+      pp
+
+      CON,'
+
+      INVESTIGATORS; TRACKED SHOOTER'S MOVEMENTS TO ROOF AND BEYOND
+
+      'ON
+
+      I INVESTORS' HOPES THAT THE FEDERAL RESERVE WILL CLrr INTEREST RATES IN
+      SEPT OUTFAONT
+    confidence: 0.5
+    start: 30
+    end: 45
+  - text: |-
+      BREAKING NEWS
+      pp
+      CON,'
+      INVESTIGATORS; TRACKED SHOOTER'S MOVEMENTS TO ROOF AND BEYOND
+      'ON
+      ROSSING THE 46,000-POINT MARK FOR THE FIRST TIME. QH.com BORROWING R
+    confidence: 0.5833333333333334
+    start: 45
+    end: 60
+  - text: |-
+      BREAKING NEWS
+      pp
+      CON,'
+      INVESTIGATORS; TRACKED SHOOTER'S MOVEMENTS TO ROOF AND BEYOND
+      'ON
+      .35% FOR THE WEEK ENDING SEvfEMBER 11, DOWN FROM 6.50% LAST WEEK, Accofft
+    confidence: 0.5833333333333334
+    start: 60
+    end: 75

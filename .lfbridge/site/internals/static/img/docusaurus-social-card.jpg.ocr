@@ -1,0 +1,49 @@
+source: site/internals/static/img/docusaurus-social-card.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:41:40.511Z
+kind: image
+language: en-US
+text: |-
+  A PLACE
+  FOR YOU
+  UVU
+  A PLACE
+  FOR YOU
+blocks:
+  - text: A PLACE
+    confidence: 1
+    bbox:
+      - 0.2353752429237619
+      - 0.37166798868792705
+      - 0.06413323380226313
+      - 0.02749735613663984
+  - text: FOR YOU
+    confidence: 1
+    bbox:
+      - 0.2383491331806736
+      - 0.40346778033717356
+      - 0.06254592052725857
+      - 0.026397772133350372
+  - text: UVU
+    confidence: 0.5
+    bbox:
+      - 0.46511627875830563
+      - 0.3906249997395834
+      - 0.04941860465116277
+      - 0.03645833333333326
+  - text: A PLACE
+    confidence: 1
+    bbox:
+      - 0.6293604645591085
+      - 0.39583333342013893
+      - 0.033430232558139594
+      - 0.015625
+  - text: FOR YOU
+    confidence: 1
+    bbox:
+      - 0.6277336390841775
+      - 0.4156512702620152
+      - 0.03668388377788456
+      - 0.022864126910766114

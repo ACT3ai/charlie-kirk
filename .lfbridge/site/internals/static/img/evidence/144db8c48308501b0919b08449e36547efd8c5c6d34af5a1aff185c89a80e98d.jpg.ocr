@@ -1,0 +1,137 @@
+source: site/internals/static/img/evidence/144db8c48308501b0919b08449e36547efd8c5c6d34af5a1aff185c89a80e98d.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:42:26.734Z
+kind: image
+language: en-US
+text: |-
+  Mikey McCoy Call Logs
+  12:02 Danny McCoy calls Mikey McCoy.
+  12:23 Charlie Kirk shot.
+  12:24 Charlie brought to the SUV by his security detail.
+  12:24 Mikey McCoy calls Elizabeth McCoy. They will stay on the phone for
+  10 mins.
+  12:24 Blake Neff calls his mother. Call will last 45 seconds.
+  12:25 Blake Neff's phone call ends with his mother.
+  12:26 Mikey McCoy adds Erika to the Call.
+  12:28 Mikey McCoy drops Erika from the phone call.
+  12:30 Mikey McCoy then adds his father Rob to the phone call with him and
+  Elizabeth.
+  12:32 Mikey McCoy ends his phone call with his Rob McCoy.
+  12:34 Mikey McCoy ends his phone call with Elizabeth McCoy.
+  12:35 Danny McCoy calls Mike McCoy again. They will stay on the phone
+  for 10 mins.
+blocks:
+  - text: Mikey McCoy Call Logs
+    confidence: 1
+    bbox:
+      - 0.34738372541437285
+      - 0.05343511520534849
+      - 0.30959301489315355
+      - 0.08780199817775447
+  - text: 12:02 Danny McCoy calls Mikey McCoy.
+    confidence: 1
+    bbox:
+      - 0.34883721509392507
+      - 0.15648855093743386
+      - 0.3270348775883125
+      - 0.04969701668650828
+  - text: 12:23 Charlie Kirk shot.
+    confidence: 1
+    bbox:
+      - 0.348837212458542
+      - 0.21340206174881238
+      - 0.1947674387941563
+      - 0.04232312821850337
+  - text: 12:24 Charlie brought to the SUV by his security detail.
+    confidence: 1
+    bbox:
+      - 0.34583333770638286
+      - 0.2500000004071181
+      - 0.45416667305945607
+      - 0.06546391752577319
+  - text: 12:24 Mikey McCoy calls Elizabeth McCoy. They will stay on the phone for
+    confidence: 1
+    bbox:
+      - 0.3488372269911371
+      - 0.32061068790054437
+      - 0.6031976476580911
+      - 0.04580152452606501
+  - text: 10 mins.
+    confidence: 1
+    bbox:
+      - 0.3473275838003282
+      - 0.37338037971388527
+      - 0.07133320271266508
+      - 0.04331557676964204
+  - text: 12:24 Blake Neff calls his mother. Call will last 45 seconds.
+    confidence: 1
+    bbox:
+      - 0.34583334458528336
+      - 0.41304347970407695
+      - 0.483333326940544
+      - 0.054347822838222815
+  - text: 12:25 Blake Neff's phone call ends with his mother.
+    confidence: 1
+    bbox:
+      - 0.3458333295158394
+      - 0.46701030871041993
+      - 0.42083332694054404
+      - 0.054728820643474174
+  - text: 12:26 Mikey McCoy adds Erika to the Call.
+    confidence: 1
+    bbox:
+      - 0.3458333446909127
+      - 0.5216494841635902
+      - 0.345833322145952
+      - 0.05463917525773199
+  - text: 12:28 Mikey McCoy drops Erika from the phone call.
+    confidence: 1
+    bbox:
+      - 0.3473837200887607
+      - 0.5916030551033796
+      - 0.4287790686524205
+      - 0.04580152452606512
+  - text: 12:30 Mikey McCoy then adds his father Rob to the phone call with him and
+    confidence: 1
+    bbox:
+      - 0.34583335646613383
+      - 0.6304347836895842
+      - 0.6208333077621762
+      - 0.054347822838222815
+  - text: Elizabeth.
+    confidence: 1
+    bbox:
+      - 0.3488372108277023
+      - 0.6984732833214884
+      - 0.0828488358155256
+      - 0.04198473114328294
+  - text: 12:32 Mikey McCoy ends his phone call with his Rob McCoy.
+    confidence: 1
+    bbox:
+      - 0.34583334166666646
+      - 0.7278350534068907
+      - 0.5
+      - 0.0659793794769602
+  - text: 12:34 Mikey McCoy ends his phone call with Elizabeth McCoy.
+    confidence: 1
+    bbox:
+      - 0.3488372151038263
+      - 0.8051546399011068
+      - 0.5087209313475796
+      - 0.046391752577319645
+  - text: 12:35 Danny McCoy calls Mike McCoy again. They will stay on the phone
+    confidence: 1
+    bbox:
+      - 0.3458333481279251
+      - 0.8369565221462485
+      - 0.599999990410816
+      - 0.06521738976547398
+  - text: for 10 mins.
+    confidence: 1
+    bbox:
+      - 0.347190194404015
+      - 0.9133357982045767
+      - 0.09930131647030571
+      - 0.04110149501525251

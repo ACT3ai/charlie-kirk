@@ -1,0 +1,111 @@
+source: site/internals/static/img/evidence/00feaca2cd78c3b54e49091c7a5a47b850aa19a5faa69bd96f993917bed41b31.jpg
+status: done
+engine: gemini-flash-latest
+provider: gemini
+generated: 2026-08-20T12:41:13.164Z
+kind: image
+description: >-
+  ## Overview
+
+  This image is a composite digital screenshot of a social media thread on the
+  platform X (formerly Twitter) viewed in dark mode. The account
+  "@TheOfficial1984" (display name "1984") posts a series of claims alleging
+  that the ADL utilizes an AI tool ("Online Hate Index V3" or "OHI V3") to
+  monitor X Spaces, transcribe audio, perform voice identification/biometrics,
+  and score content. The image features a large modal overlay on the left
+  displaying a slide titled "1. Data Collection and Access:" over the dimmed
+  feed, while the right side shows subsequent replies and additional attached
+  slides describing audio transcription, geolocation tagging, and scoring
+  models.
+
+
+  ## Hyper-Detail
+
+  The image presents a dual-pane or modal layout of the X web interface in dark
+  mode:
+
+  - **Left Overlay / Modal Pane:**
+    - A prominent white-on-black text box sits over a dimmed background.
+    - The header reads "**1. Data Collection and Access:**" in bold white sans-serif text.
+    - Bullet points detail mechanisms of data ingestion:
+      - First bullet: Explains partnerships with X providing API access/direct feeds of public Spaces data (audio streams, usernames, follower counts, timestamps), alleging monitoring of up to 10,000 Spaces per day as of late 2024.
+      - Second bullet: Describes access to non-public/invite-only Spaces via user reports or backend monitoring tools, noting real-time ingestion prioritized by engagement metrics.
+    - Navigation arrows (left and right) appear flanking the center content modal.
+    - In the background, dimmed text and navigation elements of X (Home, Search, Notifications, Messages icons on the extreme left sidebar) are faintly visible.
+  - **Right Column / Feed Thread:**
+    - Shows sequential posts by the user "1984" with handle "@TheOfficial1984".
+    - The profile picture is a circular avatar showing a monochrome/grayscale portrait sketch or photo of George Orwell.
+    - Top visible post text: "The ADL monitors 10,000 spaces a day and feeds all that data into the OHI V3 that analyzes it in real time to identify you by your voice." followed by "For private subscription spaces, they use their backdoor through CHEQ."
+    - Metrics line below the post reads: "2:55 PM · Nov 3, 2025 · 217 Views" followed by interaction icons (Reply: 1, Repost: 6, Like: 19, Bookmark: 4, Share).
+    - A reply box shows an avatar placeholder with a scenic landscape image and an active "Reply" button.
+    - Second thread post: "1984 @TheOfficial1984 · 4h" stating "They also tie your voice to a geolocation." It includes an embedded black rounded-corner card titled "**2. Audio Transcription:**" detailing speech-to-text models (Google Speech-to-Text, OpenAI Whisper), timestamping, and speaker identification via voice biometrics and geolocation.
+    - Third thread post: "1984 @TheOfficial1984 · 4h" stating "This is how your score is calculated." It includes an embedded black card with text detailing fine-tuned transformer models (BERT, RoBERTa), Semantic Analysis, Contextual Scoring, and Thresholding.
+  - **Bottom Bar:**
+    - At the very bottom left corner, a browser link preview displays `x.com/TheOfficial1984` in a small gray tooltip box.
+
+  ## Composition
+
+  - **Layout:** Digital screenshot structured in two main visual regions.
+    - **Left Section (~68% of frame):** Dominated by a large dark-mode slide viewer overlay showing "1. Data Collection and Access:". The dark backdrop dims the surrounding main interface.
+    - **Right Section (~32% of frame):** A vertical column containing the active post thread and replies.
+  - **Visual Flow:** The viewer's eye is initially drawn to the large,
+  high-contrast white text in the center-left overlay, then moves to the
+  right-hand column to read the accompanying tweets and thumbnail attachments in
+  descending order.
+
+  - **Depth:** Purely 2D graphical user interface.
+
+
+  ## Location
+
+  - **Location:** (indeterminate). This is a purely digital software screenshot
+  showing an internet website interface (X.com).
+
+
+  ## Setting & Place
+
+  - **Setting:** Digital screen capture / User Interface environment.
+
+
+  ## Lighting
+
+  - **Lighting:** Digital display default dark mode theme (high-contrast white,
+  gray, and light-blue text on a solid black `#000000` or very dark gray
+  background). Not applicable to physical lighting.
+
+
+  ## Cinematography
+
+  - **Shot Type:** Direct full-screen digital screen capture / UI render.
+
+
+  ## People
+
+  - **No real people in frame.** The only human depictions are small digital
+  profile avatars (a historical black-and-white portrait of author George Orwell
+  for the user "@TheOfficial1984", and a small outdoor figure in the reply input
+  field).
+
+
+  ## Objects & Text
+
+  - **Platform Elements:** X UI elements including the top left back arrow,
+  search bar text "Post", side navigation icons, "Reply" button in solid
+  white/light gray rounded rectangle, bookmark, repost, like, and share icons.
+
+  - **Key Verbatim Text:**
+    - Handle: `@TheOfficial1984`
+    - "1. Data Collection and Access:"
+    - "The ADL monitors 10,000 spaces a day and feeds all that data into the OHI V3..."
+    - "2. Audio Transcription:"
+    - "This is how your score is calculated."
+    - Timestamp visible: `2:55 PM · Nov 3, 2025`
+
+  ## Colors & Mood
+
+  - **Color Palette:** Dominated by deep black (`#000000`), crisp white text,
+  medium charcoal grays for borders/overlays, and subtle accent blue/gray for
+  interactive icons.
+
+  - **Mood / Tone:** Serious, conspiratorial, analytical, and informative in a
+  technical/surveillance-themed presentation.

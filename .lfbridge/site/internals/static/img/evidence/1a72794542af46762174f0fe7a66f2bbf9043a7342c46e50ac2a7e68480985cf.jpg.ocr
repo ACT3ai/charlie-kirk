@@ -1,0 +1,41 @@
+source: site/internals/static/img/evidence/1a72794542af46762174f0fe7a66f2bbf9043a7342c46e50ac2a7e68480985cf.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:42:39.561Z
+kind: image
+language: en-US
+text: |-
+  Ruger Yukon Magnum .177 Pellet Break
+  Barrek Air Rifle Wood Stock w ...
+  Images may be subject to copyright. Learn More
+  Visit >
+blocks:
+  - text: Ruger Yukon Magnum .177 Pellet Break
+    confidence: 1
+    bbox:
+      - 0.038759687138242904
+      - 0.8277087034265839
+      - 0.6682170542635659
+      - 0.04440497335701599
+  - text: Barrek Air Rifle Wood Stock w ...
+    confidence: 1
+    bbox:
+      - 0.03333334041666649
+      - 0.8761904772390904
+      - 0.5666666666666667
+      - 0.04761904552181928
+  - text: Images may be subject to copyright. Learn More
+    confidence: 1
+    bbox:
+      - 0.0341085239689923
+      - 0.9467140322912965
+      - 0.6201550387596899
+      - 0.03197158081705154
+  - text: Visit >
+    confidence: 1
+    bbox:
+      - 0.8186046511074198
+      - 0.84902309034509
+      - 0.0976744186046512
+      - 0.03374777975133214

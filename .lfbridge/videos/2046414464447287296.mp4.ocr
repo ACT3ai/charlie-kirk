@@ -1,0 +1,67 @@
+source: videos/2046414464447287296.mp4
+status: done
+engine: vision
+level: fast
+generated: 2026-08-20T12:42:05.439Z
+kind: video
+language: en-US
+stride_seconds: 15
+frames_sampled: 7
+truncated: false
+text: |-
+  who said a lot of nonsensical thingsc
+
+  MJTr¢iihlJlir•
+  answer that question, but Cash PateP
+
+  ¢TrMJTr¢•lhllliwa
+  Roof was a very bad quality video,
+
+  abMJTr¢ithlllii•
+  text messagès that detail
+
+  crime.
+
+  going to just immediately erupt
+
+  wanted people to believe.
+  TUCKER
+  a4RLSOIY
+blocks:
+  - text: who said a lot of nonsensical thingsc
+    confidence: 0.5
+    start: 0
+    end: 15
+  - text: |-
+      MJTr¢iihlJlir•
+      answer that question, but Cash PateP
+    confidence: 0.5
+    start: 15
+    end: 30
+  - text: |-
+      ¢TrMJTr¢•lhllliwa
+      Roof was a very bad quality video,
+    confidence: 0.5
+    start: 30
+    end: 45
+  - text: |-
+      abMJTr¢ithlllii•
+      text messagès that detail
+    confidence: 0.5
+    start: 45
+    end: 60
+  - text: crime.
+    confidence: 0.5
+    start: 60
+    end: 75
+  - text: going to just immediately erupt
+    confidence: 0.5
+    start: 75
+    end: 90
+  - text: |-
+      wanted people to believe.
+      TUCKER
+      a4RLSOIY
+    confidence: 0.5
+    start: 90
+    end: 105

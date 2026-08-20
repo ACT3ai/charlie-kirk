@@ -1,0 +1,41 @@
+source: images/2075589097603891487_3.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:41:10.889Z
+kind: image
+language: en-US
+text: |-
+  I'M SORRY BIBI, I WILL
+  NOT ACCEPT YOUR
+  $150M OFFER.
+  BUT I WILL.
+blocks:
+  - text: I'M SORRY BIBI, I WILL
+    confidence: 1
+    bbox:
+      - 0.24117647242647053
+      - 0.0339506177083333
+      - 0.3529411764705882
+      - 0.03395061728395066
+  - text: NOT ACCEPT YOUR
+    confidence: 1
+    bbox:
+      - 0.26176470433823534
+      - 0.06481481520061727
+      - 0.31764705882352934
+      - 0.030864197530864224
+  - text: $150M OFFER.
+    confidence: 1
+    bbox:
+      - 0.3029411745098039
+      - 0.09876543220164613
+      - 0.23529411764705882
+      - 0.03703703703703698
+  - text: BUT I WILL.
+    confidence: 1
+    bbox:
+      - 0.7176470607941176
+      - 0.16049382753086416
+      - 0.20294117647058818
+      - 0.03703703703703709

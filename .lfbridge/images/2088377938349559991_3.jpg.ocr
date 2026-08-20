@@ -1,0 +1,121 @@
+source: images/2088377938349559991_3.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:41:32.046Z
+kind: image
+language: en-US
+text: |-
+  6. Unlike a gunshot that depends on
+  PHYSICAL IMPACT to generate high speed
+  3/4
+  radial acceleration, explosives use chemical
+  conversion of chemicals to generate radial
+  expansion which in turn accelerate
+  projectiles. EXPLOSIVE = Chemical
+  Compound > Radial expansion > Projectiles
+  accelerated> Wound
+  GUNSHOTS = Bullet accelerates > Bullet
+  impacts > Wound > Radial expansion >
+  Cavitation
+  This explains exactly why there is radial
+  expansion before there is any kind of wound.
+blocks:
+  - text: 6. Unlike a gunshot that depends on
+    confidence: 1
+    bbox:
+      - 0.03196347761557117
+      - 0.037399310483714476
+      - 0.7260273930402208
+      - 0.04176735521323105
+  - text: PHYSICAL IMPACT to generate high speed
+    confidence: 1
+    bbox:
+      - 0.038216582216077856
+      - 0.09004602986753585
+      - 0.8535031484128548
+      - 0.04228998849252019
+  - text: 3/4
+    confidence: 1
+    bbox:
+      - 0.9363057330216109
+      - 0.17587209343549626
+      - 0.03662420326978999
+      - 0.018895347867379675
+  - text: radial acceleration, explosives use chemical
+    confidence: 1
+    bbox:
+      - 0.03503185312562794
+      - 0.2543153042388049
+      - 0.8837579480481073
+      - 0.04372842347525885
+  - text: conversion of chemicals to generate radial
+    confidence: 1
+    bbox:
+      - 0.03503183263647858
+      - 0.31098964431062837
+      - 0.8566879128055994
+      - 0.04085155350978131
+  - text: expansion which in turn accelerate
+    confidence: 1
+    bbox:
+      - 0.03196347987071564
+      - 0.366666667271325
+      - 0.7031963167882491
+      - 0.04587648652914078
+  - text: projectiles. EXPLOSIVE = Chemical
+    confidence: 1
+    bbox:
+      - 0.03662419267210758
+      - 0.42002301493826466
+      - 0.7133758256111987
+      - 0.04228998849252008
+  - text: Compound > Radial expansion > Projectiles
+    confidence: 1
+    bbox:
+      - 0.036624202708278035
+      - 0.47813578734358453
+      - 0.8694267393286672
+      - 0.04085155350978131
+  - text: accelerated> Wound
+    confidence: 1
+    bbox:
+      - 0.03503184669093348
+      - 0.5333716915930545
+      - 0.4108280217986001
+      - 0.03348877295525898
+  - text: GUNSHOTS = Bullet accelerates > Bullet
+    confidence: 1
+    bbox:
+      - 0.03662421504288707
+      - 0.5886075951450674
+      - 0.805732452681388
+      - 0.034938916512545215
+  - text: impacts > Wound > Radial expansion >
+    confidence: 1
+    bbox:
+      - 0.03184713782802761
+      - 0.6438434974361342
+      - 0.7834394870120268
+      - 0.04228998849252019
+  - text: Cavitation
+    confidence: 1
+    bbox:
+      - 0.0379531171162432
+      - 0.7006683753094156
+      - 0.20116382683113168
+      - 0.036163248867653874
+  - text: This explains exactly why there is radial
+    confidence: 1
+    bbox:
+      - 0.035031867316847536
+      - 0.8124280777992521
+      - 0.7961783135350946
+      - 0.040851553509781424
+  - text: expansion before there is any kind of wound.
+    confidence: 1
+    bbox:
+      - 0.036624219373228115
+      - 0.8647871114997149
+      - 0.9076432959138406
+      - 0.046605293440736495

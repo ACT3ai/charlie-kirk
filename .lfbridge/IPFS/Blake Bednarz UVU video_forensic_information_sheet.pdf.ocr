@@ -1,0 +1,642 @@
+source: IPFS/Blake Bednarz UVU video_forensic_information_sheet.pdf
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:41:05.568Z
+kind: pdf
+language: en-US
+page_count: 2
+pages_read: 2
+truncated: false
+text: >-
+  Forensic Review of Video Metadata and File Hash
+
+  This document summarizes the metadata and file characteristics of the video
+  file reviewed from a Canon XA55
+
+  camera. The purpose is to explain, in plain language, whether the video
+  appears to be an original recording and
+
+  to explain the significance of the file hash and metadata values.
+
+  Overall Assessment
+
+  Based on the metadata reviewed, the file appears highly consistent with an
+  original, camera-generated
+
+  recording from a Canon XA55 professional camcorder. The file contains native
+  Canon camera metadata,
+
+  camera-specific compression information, a camera serial number, and an
+  original timecode track. There are
+
+  no indications that the file was exported or re-encoded by common editing
+  software such as Adobe Premiere,
+
+  Final Cut, CapCut, FFmpeg, or similar programs.
+
+  In plain language: there is no obvious sign that this file was created later
+  from another video or altered through
+
+  editing software. The metadata instead looks like the type of information that
+  is normally written directly by the
+
+  camera when the video is first recorded.
+
+  What a File Hash Is
+
+  A file hash is a unique digital fingerprint for a file. A SHA-256 hash takes
+  every single byte in the file and turns it
+
+  into a long string of letters and numbers.
+
+  If even one pixel, one frame, one piece of metadata, or one character changes
+  in the file, the hash will change
+
+  completely. Two files with the exact same SHA-256 hash are considered to be
+  exactly identical.
+
+  In plain language: a hash is like comparing fingerprints. If the fingerprints
+  match, it is the same file. If they do not
+
+  match, something changed.
+
+  Explanation of the "Minor Version 0.0.1" Field
+
+  The metadata includes the line "Minor Version: 0.0.1." This does not indicate
+  that the file is fake, altered, or not
+
+  original.
+
+  "Minor Version" is simply a technical version number used inside the MP4 file
+  format. Different cameras and
+
+  software write different values there. Canon cameras commonly use "0.0.1" as
+  part of their MP4 structure.
+
+  In plain language: this number is similar to a version number printed on the
+  inside of a product. It describes the
+
+  type of MP4 container the camera created. It does not mean "copy number one"
+  or "not the original."
+
+  Items That Might Look "Off" But Are Not
+
+  The metadata includes a warning that says "Suspicious MakerNotes offset." This
+  warning is generally minor
+
+  and is common when reading private Canon metadata. It usually occurs because
+  of the way Canon stores
+
+  hidden camera information inside the file. The remainder of the Canon metadata
+  is intact and internally
+
+  consistent.
+
+
+  The file also shows "File Creation Date/Time" in November 2025 even though the
+  video itself was recorded in
+
+  September 2025. This is not the recording date. It is simply the date the file
+  was copied or saved onto that
+
+  particular computer.
+
+  Why the Metadata Shows September 9 Instead of
+
+  September 10
+
+  The camera recorded the video on September 9, 2025 at 10:35:04 PM local time.
+  The MP4 container then
+
+  stores another timestamp in Coordinated Universal Time (UTC).
+
+  The metadata shows: Date/Time Original: 2025:09:09 22:35:04 Create Date:
+  2025:09:10 03:35:05 Time Zone:
+
+  -05:00
+
+  Because the local time zone was UTC-5, adding five hours moves the time from
+  late on September 9 to early
+
+  on September 10.
+
+  In plain language: the video was recorded at approximately 10:35 PM on
+  September 9 in the local time zone,
+
+  which equals approximately 3:35 AM on September 10 in UTC. The metadata is
+  therefore internally consistent
+
+  and does not indicate tampering.
+
+  Key Findings Supporting Originality
+
+  Camera identified as Canon XA55 professional camcorder Native Canon compressor
+  string present Original
+
+  camera serial number present Original timecode track present No evidence of
+  Adobe Premiere, Final Cut,
+
+  FFmpeg, or other editing software Timestamps and time zone information are
+  internally consistent Video
+
+  settings are consistent with direct camera recording: 1920×1080, 23.976 fps,
+  38 Mbps
+
+  Conclusion
+
+  Based on the metadata and structure of the file, the video appears highly
+  likely to be an original recording
+
+  generated directly by a Canon XA55 camera. There are no obvious signs of
+  editing, re-exporting, or
+
+  recompression. The unusual-looking metadata values, including "Minor Version:
+  0.0.1" and the September 9
+
+  versus September 10 dates, have ordinary technical explanations and do not
+  suggest the file is not original.
+blocks:
+  - text: Forensic Review of Video Metadata and File Hash
+    confidence: 1
+    bbox:
+      - 0.15413533797868534
+      - 0.07994186120078128
+      - 0.6917293153960129
+      - 0.02187632011644769
+    page: 1
+  - text: This document summarizes the metadata and file characteristics of the
+      video file reviewed from a Canon XA55
+    confidence: 1
+    bbox:
+      - 0.09774437204378915
+      - 0.14825581397505494
+      - 0.7988721315389891
+      - 0.011744185938979745
+    page: 1
+  - text: camera. The purpose is to explain, in plain language, whether the video
+      appears to be an original recording and
+    confidence: 1
+    bbox:
+      - 0.09586467444981421
+      - 0.16545454560896222
+      - 0.8063909357244319
+      - 0.014778012362393511
+    page: 1
+  - text: to explain the significance of the file hash and metadata values.
+    confidence: 1
+    bbox:
+      - 0.09774436074813737
+      - 0.18459302364089036
+      - 0.4624060269059807
+      - 0.013081394542347247
+    page: 1
+  - text: Overall Assessment
+    confidence: 1
+    bbox:
+      - 0.09774436671426072
+      - 0.22363636377515217
+      - 0.2819548699549373
+      - 0.01764270609075369
+    page: 1
+  - text: Based on the metadata reviewed, the file appears highly consistent with an
+      original, camera-generated
+    confidence: 1
+    bbox:
+      - 0.09774436913924388
+      - 0.25436046514205235
+      - 0.7424811958145572
+      - 0.015988371877959207
+    page: 1
+  - text: recording from a Canon XA55 professional camcorder. The file contains
+      native Canon camera metadata,
+    confidence: 1
+    bbox:
+      - 0.09586468866911642
+      - 0.27151515179632957
+      - 0.759398457398609
+      - 0.016363636363636358
+    page: 1
+  - text: camera-specific compression information, a camera serial number, and an
+      original timecode track. There are
+    confidence: 1
+    bbox:
+      - 0.09586465971238897
+      - 0.2877906977213034
+      - 0.7875939730940194
+      - 0.017663847605387417
+    page: 1
+  - text: no indications that the file was exported or re-encoded by common editing
+      software such as Adobe Premiere,
+    confidence: 1
+    bbox:
+      - 0.0958646748063813
+      - 0.30666666681925026
+      - 0.7932330762331015
+      - 0.01600775169603752
+    page: 1
+  - text: Final Cut, CapCut, FFmpeg, or similar programs.
+    confidence: 1
+    bbox:
+      - 0.09774436060511375
+      - 0.3254545453059492
+      - 0.35526316292981
+      - 0.014661733453923964
+    page: 1
+  - text: "In plain language: there is no obvious sign that this file was created
+      later from another video or altered through"
+    confidence: 1
+    bbox:
+      - 0.0977443528796954
+      - 0.360465116900338
+      - 0.796992478325823
+      - 0.013081394542347247
+    page: 1
+  - text: editing software. The metadata instead looks like the type of information
+      that is normally written directly by the
+    confidence: 1
+    bbox:
+      - 0.0977443542236751
+      - 0.37790697723827393
+      - 0.7932330762331015
+      - 0.013081394542347358
+    page: 1
+  - text: camera when the video is first recorded.
+    confidence: 1
+    bbox:
+      - 0.0977443698940981
+      - 0.3951515150305416
+      - 0.29135337518674076
+      - 0.0121212121212122
+    page: 1
+  - text: What a File Hash Is
+    confidence: 1
+    bbox:
+      - 0.09774436578933077
+      - 0.4331395350841396
+      - 0.2687969865470097
+      - 0.020348836725408437
+    page: 1
+  - text: A file hash is a unique digital fingerprint for a file. A SHA-256 hash
+      takes every single byte in the file and turns it
+    confidence: 1
+    bbox:
+      - 0.0977443952016934
+      - 0.4665697677239814
+      - 0.8063909357244318
+      - 0.013081394542347247
+    page: 1
+  - text: into a long string of letters and numbers.
+    confidence: 1
+    bbox:
+      - 0.09586466768075752
+      - 0.48401162829205313
+      - 0.29511277727946217
+      - 0.013081394542347247
+    page: 1
+  - text: If even one pixel, one frame, one piece of metadata, or one character
+      changes in the file, the hash will change
+    confidence: 1
+    bbox:
+      - 0.09774435017605883
+      - 0.5084848484576644
+      - 0.7951127772794623
+      - 0.01477096499818753
+    page: 1
+  - text: completely. Two files with the exact same SHA-256 hash are considered to
+      be exactly identical.
+    confidence: 1
+    bbox:
+      - 0.09586465707486601
+      - 0.527616279506842
+      - 0.6936090164423736
+      - 0.014807962937788521
+    page: 1
+  - text: "In plain language: a hash is like comparing fingerprints. If the
+      fingerprints match, it is the same file. If they do not"
+    confidence: 1
+    bbox:
+      - 0.09774438848176885
+      - 0.5521212121977233
+      - 0.8063909357244319
+      - 0.01333333333333342
+    page: 1
+  - text: match, something changed.
+    confidence: 1
+    bbox:
+      - 0.0977443642694224
+      - 0.5696969695595955
+      - 0.19924811958145572
+      - 0.013333333333333308
+    page: 1
+  - text: Explanation of the "Minor Version 0.0.1" Field
+    confidence: 1
+    bbox:
+      - 0.09962406544538144
+      - 0.6046511622543417
+      - 0.6372180328847472
+      - 0.026257928790468177
+    page: 1
+  - text: 'The metadata includes the line "Minor Version: 0.0.1." This does not
+      indicate that the file is fake, altered, or not'
+    confidence: 1
+    bbox:
+      - 0.09774439693727711
+      - 0.6409883722515126
+      - 0.8026315336317105
+      - 0.014769203301632006
+    page: 1
+  - text: original.
+    confidence: 1
+    bbox:
+      - 0.09581241159304038
+      - 0.6597385806967087
+      - 0.06025487726384943
+      - 0.0133716756647283
+    page: 1
+  - text: '"Minor Version" is simply a technical version number used inside the MP4
+      file format. Different cameras and'
+    confidence: 1
+    bbox:
+      - 0.09962407794858857
+      - 0.6830303030799312
+      - 0.7763157668158551
+      - 0.013333333333333308
+    page: 1
+  - text: software write different values there. Canon cameras commonly use "0.0.1"
+      as part of their MP4 structure.
+    confidence: 1
+    bbox:
+      - 0.09766638358028658
+      - 0.6970839155346791
+      - 0.7671203613281251
+      - 0.02004650231563687
+    page: 1
+  - text: "In plain language: this number is similar to a version number printed on
+      the inside of a product. It describes the"
+    confidence: 1
+    bbox:
+      - 0.09774436943044941
+      - 0.7266666665267847
+      - 0.7988721793721837
+      - 0.01333333333333342
+    page: 1
+  - text: type of MP4 container the camera created. It does not mean "copy number
+      one" or "not the original."
+    confidence: 1
+    bbox:
+      - 0.09774437641287323
+      - 0.7427325585135397
+      - 0.725563886397311
+      - 0.01605532039295543
+    page: 1
+  - text: Items That Might Look "Off" But Are Not
+    confidence: 1
+    bbox:
+      - 0.09563370347918611
+      - 0.7767446452548186
+      - 0.5682502196500294
+      - 0.032378056844075576
+    page: 1
+  - text: The metadata includes a warning that says "Suspicious MakerNotes offset."
+      This warning is generally minor
+    confidence: 1
+    bbox:
+      - 0.0977443574316771
+      - 0.815151514987559
+      - 0.7800751689085766
+      - 0.013336856726444135
+    page: 1
+  - text: and is common when reading private Canon metadata. It usually occurs
+      because of the way Canon stores
+    confidence: 1
+    bbox:
+      - 0.09774437942100654
+      - 0.8327272725528344
+      - 0.7669172615840516
+      - 0.014656448364257835
+    page: 1
+  - text: hidden camera information inside the file. The remainder of the Canon
+      metadata is intact and internally
+    confidence: 1
+    bbox:
+      - 0.09774436622179407
+      - 0.8502906978596402
+      - 0.7424811958145572
+      - 0.01334566578720553
+    page: 1
+  - text: consistent.
+    confidence: 1
+    bbox:
+      - 0.09774436331946729
+      - 0.8691860466568263
+      - 0.07894736621820814
+      - 0.010174418362704163
+    page: 1
+  - text: The file also shows "File Creation Date/Time" in November 2025 even though
+      the video itself was recorded in
+    confidence: 1
+    bbox:
+      - 0.09586465787655458
+      - 0.07696969705362611
+      - 0.7913533751867409
+      - 0.016053558696400017
+    page: 2
+  - text: September 2025. This is not the recording date. It is simply the date the
+      file was copied or saved onto that
+    confidence: 1
+    bbox:
+      - 0.09774438220475182
+      - 0.09575757548633834
+      - 0.7669172615840517
+      - 0.01470754045428646
+    page: 2
+  - text: particular computer.
+    confidence: 1
+    bbox:
+      - 0.09774436435337873
+      - 0.11454545427662455
+      - 0.14661653811655073
+      - 0.012121212121212088
+    page: 2
+  - text: Why the Metadata Shows September 9 Instead of
+    confidence: 1
+    bbox:
+      - 0.09774436174255405
+      - 0.1526162790575296
+      - 0.6879699133032915
+      - 0.023255814061020397
+    page: 2
+  - text: September 10
+    confidence: 1
+    bbox:
+      - 0.09962406441744098
+      - 0.17999999973877467
+      - 0.19360901644237366
+      - 0.022034883210153344
+    page: 2
+  - text: The camera recorded the video on September 9, 2025 at 10:35:04 PM local
+      time. The MP4 container then
+    confidence: 1
+    bbox:
+      - 0.09586466696956848
+      - 0.20909090931143992
+      - 0.7687969626304124
+      - 0.01765327684807061
+    page: 2
+  - text: stores another timestamp in Coordinated Universal Time (UTC).
+    confidence: 1
+    bbox:
+      - 0.09586468249995296
+      - 0.22965116304608624
+      - 0.46616538116550754
+      - 0.014591260967832587
+    page: 2
+  - text: "The metadata shows: Date/Time Original: 2025:09:09 22:35:04 Create Date:
+      2025:09:10 03:35:05 Time Zone:"
+    confidence: 1
+    bbox:
+      - 0.095864659021615
+      - 0.2514534889980884
+      - 0.7988721793721835
+      - 0.0188953480576024
+    page: 2
+  - text: -05:00
+    confidence: 1
+    bbox:
+      - 0.09586466178633929
+      - 0.2732558139992798
+      - 0.04887217937218358
+      - 0.011627907030510198
+    page: 2
+  - text: Because the local time zone was UTC-5, adding five hours moves the time
+      from late on September 9 to early
+    confidence: 1
+    bbox:
+      - 0.09774436441633616
+      - 0.2979651165864564
+      - 0.7875939730940194
+      - 0.015988371877959318
+    page: 2
+  - text: on September 10.
+    confidence: 1
+    bbox:
+      - 0.09774436537922108
+      - 0.316860465089396
+      - 0.13157894170396378
+      - 0.011627907030510198
+    page: 2
+  - text: "In plain language: the video was recorded at approximately 10:35 PM on
+      September 9 in the local time zone,"
+    confidence: 1
+    bbox:
+      - 0.09398497638689247
+      - 0.3415697677492471
+      - 0.7913533751867408
+      - 0.016005989999482217
+    page: 2
+  - text: which equals approximately 3:35 AM on September 10 in UTC. The metadata is
+      therefore internally consistent
+    confidence: 1
+    bbox:
+      - 0.09586465328696865
+      - 0.3587878788863428
+      - 0.8007518804185442
+      - 0.014758632544315198
+    page: 2
+  - text: and does not indicate tampering.
+    confidence: 1
+    bbox:
+      - 0.09774436928099933
+      - 0.37790697668096584
+      - 0.23872179372183583
+      - 0.011789992939342131
+    page: 2
+  - text: Key Findings Supporting Originality
+    confidence: 1
+    bbox:
+      - 0.09962406176065418
+      - 0.41424418637200144
+      - 0.5018797010463607
+      - 0.024709301572857556
+    page: 2
+  - text: Camera identified as Canon XA55 professional camcorder Native Canon
+      compressor string present Original
+    confidence: 1
+    bbox:
+      - 0.09962407748180183
+      - 0.4476744189061519
+      - 0.7800751689085766
+      - 0.013081394542347358
+    page: 2
+  - text: camera serial number present Original timecode track present No evidence
+      of Adobe Premiere, Final Cut,
+    confidence: 1
+    bbox:
+      - 0.0958646851854175
+      - 0.46484848473918516
+      - 0.7669172615840517
+      - 0.016363636363636358
+    page: 2
+  - text: FFmpeg, or other editing software Timestamps and time zone information are
+      internally consistent Video
+    confidence: 1
+    bbox:
+      - 0.09774436576128594
+      - 0.4824242425397489
+      - 0.755639103139082
+      - 0.016363636363636358
+    page: 2
+  - text: "settings are consistent with direct camera recording: 1920×1080, 23.976
+      fps, 38 Mbps"
+    confidence: 1
+    bbox:
+      - 0.09774436643197912
+      - 0.501212121374159
+      - 0.6221804245138617
+      - 0.013333333333333308
+    page: 2
+  - text: Conclusion
+    confidence: 1
+    bbox:
+      - 0.0996240646386188
+      - 0.5406976750446
+      - 0.15601503139005563
+      - 0.0188953480576024
+    page: 2
+  - text: Based on the metadata and structure of the file, the video appears highly
+      likely to be an original recording
+    confidence: 1
+    bbox:
+      - 0.09962407838089606
+      - 0.5712209307301946
+      - 0.759398457398609
+      - 0.014534883210153393
+    page: 2
+  - text: generated directly by a Canon XA55 camera. There are no obvious signs of
+      editing, re-exporting, or
+    confidence: 1
+    bbox:
+      - 0.09774436717101367
+      - 0.5901162795747567
+      - 0.7218044843045897
+      - 0.013081394542347247
+    page: 2
+  - text: 'recompression. The unusual-looking metadata values, including "Minor
+      Version: 0.0.1" and the September 9'
+    confidence: 1
+    bbox:
+      - 0.09774437711526295
+      - 0.6060606058721241
+      - 0.7819548699549372
+      - 0.014578928513960365
+    page: 2
+  - text: versus September 10 dates, have ordinary technical explanations and do not
+      suggest the file is not original.
+    confidence: 1
+    bbox:
+      - 0.09774436446801235
+      - 0.6248484847464197
+      - 0.7763157668158551
+      - 0.013333333333333308
+    page: 2

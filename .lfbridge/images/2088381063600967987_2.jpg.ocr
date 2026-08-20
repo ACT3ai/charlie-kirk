@@ -1,0 +1,249 @@
+source: images/2088381063600967987_2.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:41:31.933Z
+kind: image
+language: en-US
+text: |-
+  5:03 CO
+  •
+  189
+  X
+  +5
+  No, a bullet does not experience blunt impact after
+  radial expansion; rather, the initial physical resistance
+  (blunt impact/deceleration) happens at the exact
+  same micro-instant contact and triggers the radial
+  expansion (mushrooming) simultaneously.
+  Here is how terminal ballistics actually work upon
+  contact:
+  • Initial Contact: The bullet nose strikes the target
+  medium, creating an instantaneous physical
+  resistance and deceleration shock.
+  • Simultaneous Deformation: The pressure from
+  this impact forces soft lead or hollow cavity
+  structures backward, causing the outer edges to
+  flare outward radially at the same time the kinetic
+  energy transfer begins.
+  • Energy Transfer: The radial widening creates a
+  larger wound channel and brakes the projectile,
+  converting the forward momentum into a wider
+  energy spread inside the target.
+  National Insti... +1
+  If you are looking into specific terminal effects or
+  testing methods like ballistic gelatin, let me know if
+  you'd like to discuss how different designs-like
+  Ask anything
+  O
+blocks:
+  - text: 5:03 CO
+    confidence: 1
+    bbox:
+      - 0.025028032652224884
+      - 0.012812899641851505
+      - 0.1826483408610026
+      - 0.019432339301476143
+  - text: •
+    confidence: 1
+    bbox:
+      - 0.2547169814798628
+      - 0.017441860353742622
+      - 0.025157232637758598
+      - 0.010174418718386868
+  - text: "189"
+    confidence: 1
+    bbox:
+      - 0.896226417435458
+      - 0.01598837223201377
+      - 0.05974842354103371
+      - 0.011627906408065436
+  - text: X
+    confidence: 0.3
+    bbox:
+      - 0.8836478003014884
+      - 0.06686046525896372
+      - 0.04716980898821799
+      - 0.021802325126452415
+  - text: "+5"
+    confidence: 1
+    bbox:
+      - 0.1477987430713795
+      - 0.14825581406247035
+      - 0.03773584719057435
+      - 0.013081394912850097
+  - text: No, a bullet does not experience blunt impact after
+    confidence: 1
+    bbox:
+      - 0.03773585965604559
+      - 0.19186046505217857
+      - 0.8867924442997686
+      - 0.017541244702461434
+  - text: radial expansion; rather, the initial physical resistance
+    confidence: 1
+    bbox:
+      - 0.03459120095203563
+      - 0.21947674447353527
+      - 0.9182390001085071
+      - 0.018984793801593014
+  - text: (blunt impact/deceleration) happens at the exact
+    confidence: 1
+    bbox:
+      - 0.03459121842195408
+      - 0.24563953516212544
+      - 0.8522012216073495
+      - 0.01889534811688276
+  - text: same micro-instant contact and triggers the radial
+    confidence: 1
+    bbox:
+      - 0.03459120725280219
+      - 0.2717948713936471
+      - 0.8930817215530961
+      - 0.020512820512820662
+  - text: expansion (mushrooming) simultaneously.
+    confidence: 1
+    bbox:
+      - 0.03773585146713003
+      - 0.2978632480069625
+      - 0.7327043886537905
+      - 0.02051282051282044
+  - text: Here is how terminal ballistics actually work upon
+    confidence: 1
+    bbox:
+      - 0.03459120661926481
+      - 0.3430232554458572
+      - 0.8553458884910301
+      - 0.02034883743677396
+  - text: "contact:"
+    confidence: 1
+    bbox:
+      - 0.03765646952812496
+      - 0.37193909020130267
+      - 0.1448128453007451
+      - 0.016296238369411853
+  - text: "• Initial Contact: The bullet nose strikes the target"
+    confidence: 1
+    bbox:
+      - 0.043812428136932785
+      - 0.41403757646115946
+      - 0.9029411033347802
+      - 0.020762053921691503
+  - text: medium, creating an instantaneous physical
+    confidence: 1
+    bbox:
+      - 0.09119496165238343
+      - 0.4431623930523516
+      - 0.764150944462529
+      - 0.019230769230769162
+  - text: resistance and deceleration shock.
+    confidence: 1
+    bbox:
+      - 0.08805031049738497
+      - 0.46947674429221165
+      - 0.610062888816551
+      - 0.017441860427204414
+  - text: "• Simultaneous Deformation: The pressure from"
+    confidence: 1
+    bbox:
+      - 0.044025179560840136
+      - 0.5101744192010063
+      - 0.8805031105324074
+      - 0.01889534811688287
+  - text: this impact forces soft lead or hollow cavity
+    confidence: 1
+    bbox:
+      - 0.08805032984265108
+      - 0.5376068373635596
+      - 0.7610062775788484
+      - 0.01762572068434498
+  - text: structures backward, causing the outer edges to
+    confidence: 1
+    bbox:
+      - 0.08805032837715948
+      - 0.5639534888230991
+      - 0.849056554723669
+      - 0.018952494401198172
+  - text: flare outward radially at the same time the kinetic
+    confidence: 1
+    bbox:
+      - 0.0911949810390597
+      - 0.5901162793693686
+      - 0.8584905553747106
+      - 0.01889534811688287
+  - text: energy transfer begins.
+    confidence: 1
+    bbox:
+      - 0.09119497450753876
+      - 0.6175213677153482
+      - 0.408805027714482
+      - 0.019230769230769273
+  - text: "• Energy Transfer: The radial widening creates a"
+    confidence: 1
+    bbox:
+      - 0.04402514359158766
+      - 0.6584302329909771
+      - 0.8647798891420717
+      - 0.018920194185697126
+  - text: larger wound channel and brakes the projectile,
+    confidence: 1
+    bbox:
+      - 0.0849056717805856
+      - 0.685897435557016
+      - 0.8364779437029803
+      - 0.019230769230769273
+  - text: converting the forward momentum into a wider
+    confidence: 1
+    bbox:
+      - 0.09119497672644794
+      - 0.7122093028746981
+      - 0.8270439995659722
+      - 0.0189872782454531
+  - text: energy spread inside the target.
+    confidence: 1
+    bbox:
+      - 0.09119499527691094
+      - 0.7383720929095201
+      - 0.5597483882197627
+      - 0.020348837436773848
+  - text: National Insti... +1
+    confidence: 1
+    bbox:
+      - 0.7075471728823829
+      - 0.7412790700459975
+      - 0.2232704303882741
+      - 0.013081394912850097
+  - text: If you are looking into specific terminal effects or
+    confidence: 1
+    bbox:
+      - 0.034591220197373374
+      - 0.783333333002119
+      - 0.8522012216073495
+      - 0.018992247948279806
+  - text: testing methods like ballistic gelatin, let me know if
+    confidence: 1
+    bbox:
+      - 0.03459120528305993
+      - 0.8110465120334917
+      - 0.9088049994574653
+      - 0.01889534811688287
+  - text: you'd like to discuss how different designs-like
+    confidence: 1
+    bbox:
+      - 0.034591213671641044
+      - 0.8371794868414293
+      - 0.8270439995659722
+      - 0.01892516388852372
+  - text: Ask anything
+    confidence: 1
+    bbox:
+      - 0.0752858101675939
+      - 0.8934033037485146
+      - 0.22993152759693292
+      - 0.019879438938238625
+  - text: O
+    confidence: 1
+    bbox:
+      - 0.4842767292359059
+      - 0.9636627909228708
+      - 0.04088050347787364
+      - 0.01889534811688287

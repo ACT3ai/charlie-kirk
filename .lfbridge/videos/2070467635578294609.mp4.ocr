@@ -1,0 +1,101 @@
+source: videos/2070467635578294609.mp4
+status: done
+engine: vision
+level: fast
+generated: 2026-08-20T12:42:34.876Z
+kind: video
+language: en-US
+stride_seconds: 15
+frames_sampled: 7
+truncated: false
+text: |-
+  ri
+  pp(
+  CON;
+  r.T
+  'ON
+
+  r.T
+  'ON
+  CON:
+  brf
+
+  TlkTok
+  pp
+  CON:
+  r.T
+  'ON
+
+  TOkTok
+  ppf
+  CON:
+  r.T
+  'ON
+
+  TlkTok
+  pp
+  CON:
+  r.T
+  'ON
+
+  TlkTok
+  wp
+  pp
+  CON:
+  r.T
+  'ON
+blocks:
+  - text: |-
+      ri
+      pp(
+      CON;
+      r.T
+      'ON
+    confidence: 0.5
+    start: 0
+    end: 15
+  - text: |-
+      r.T
+      'ON
+      CON:
+      brf
+    confidence: 0.5
+    start: 15
+    end: 30
+  - text: |-
+      TlkTok
+      pp
+      CON:
+      r.T
+      'ON
+    confidence: 0.5
+    start: 30
+    end: 45
+  - text: |-
+      TOkTok
+      ppf
+      CON:
+      r.T
+      'ON
+    confidence: 0.5
+    start: 45
+    end: 60
+  - text: |-
+      TlkTok
+      pp
+      CON:
+      r.T
+      'ON
+    confidence: 0.5
+    start: 60
+    end: 90
+  - text: |-
+      TlkTok
+      wp
+      pp
+      CON:
+      r.T
+      'ON
+    confidence: 0.5
+    start: 90
+    end: 105

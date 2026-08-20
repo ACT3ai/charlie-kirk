@@ -1,0 +1,41 @@
+source: site/internals/static/img/evidence/111a9f134a6371eeaabf41b4ddb1fb6eea0b86275aec09d1a4d0ca84666b73e9.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:42:17.566Z
+kind: image
+language: en-US
+text: |-
+  A FEW DAYS
+  Setting the record straight on
+  the bearded man in Charlie
+  Kirk's security detail
+blocks:
+  - text: A FEW DAYS
+    confidence: 1
+    bbox:
+      - 0.3874099343584008
+      - 0.5998123388322437
+      - 0.22001217029712822
+      - 0.028572996457417732
+  - text: Setting the record straight on
+    confidence: 1
+    bbox:
+      - 0.0775193771025495
+      - 0.7427083330296331
+      - 0.8423772741247106
+      - 0.03645833333333337
+  - text: the bearded man in Charlie
+    confidence: 1
+    bbox:
+      - 0.11111112615883738
+      - 0.7863372092769786
+      - 0.7726097954644098
+      - 0.02928779025872541
+  - text: Kirk's security detail
+    confidence: 1
+    bbox:
+      - 0.2074074148148146
+      - 0.8291666664583334
+      - 0.5925925925925926
+      - 0.04166666666666674

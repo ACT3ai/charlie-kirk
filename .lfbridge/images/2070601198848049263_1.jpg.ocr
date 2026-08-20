@@ -1,0 +1,25 @@
+source: images/2070601198848049263_1.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:41:09.859Z
+kind: image
+language: en-US
+text: |-
+  CANDACE CANDACE CANDACE
+  CANDACE CANDACE CANDACE
+blocks:
+  - text: CANDACE CANDACE CANDACE
+    confidence: 1
+    bbox:
+      - 0.1061046440953679
+      - 0.03154574238649843
+      - 0.7906976938247681
+      - 0.110410092240673
+  - text: CANDACE CANDACE CANDACE
+    confidence: 1
+    bbox:
+      - 0.10833334683972695
+      - 0.8463983067365723
+      - 0.7874999642372131
+      - 0.11758474576271194

@@ -1,0 +1,153 @@
+source: site/internals/static/img/evidence/031e7470b81664a0eb7db21e55278ef0c5f0be4610f16b82f65b8288f99c6a21.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:41:48.483Z
+kind: image
+language: en-US
+text: >-
+  August 17th: Paris to Omaha at 10:49am, and lands in Lincoln at noon. Flies to
+
+  Wilmington on August 23rd, Wilmington back to Cairo on August 24th
+
+  August 21st: Charlie was speaking at "Alex McFarland Speaker Series with
+  Charlie
+
+  Kirk" in North Myrtle Beach, SC
+
+  September 2nd: Charlie was in Visalia, CA speaking at a private event at
+  Visalia First
+
+  Church
+
+  September 4th: BTT From Cairo to Paris, France —arriving in Minot, ND on
+  11:03am
+
+  then flies from Minot to Provo an hour later arriving into Provo at 12:46pm
+
+  September 5th: BND does a short test flight around Provo
+
+  September 5th & 6th: Charlie was speaking at the Build Up Korea conference in
+
+  Seoul, Korea
+
+  September 10th: BTT departed Provo, UT at 7:14am local time
+
+  September 11th: BTT departed Wilmington, DE for Cairo at 7:56am local time
+
+  September 13th: BND Departs Provo at 12:57pm and goes to Goose Bay, Canada for
+
+  fuel stop then continued onto Paris and then back home Cairo
+blocks:
+  - text: "August 17th: Paris to Omaha at 10:49am, and lands in Lincoln at noon.
+      Flies to"
+    confidence: 1
+    bbox:
+      - 0.027164692954159488
+      - 0.05466970375854219
+      - 0.8455008488964347
+      - 0.03189066059225509
+  - text: Wilmington on August 23rd, Wilmington back to Cairo on August 24th
+    confidence: 1
+    bbox:
+      - 0.02886248607809833
+      - 0.09339407731207294
+      - 0.730050933786078
+      - 0.036446469248291535
+  - text: 'August 21st: Charlie was speaking at "Alex McFarland Speaker Series with
+      Charlie'
+    confidence: 1
+    bbox:
+      - 0.0271646786502548
+      - 0.1776765376803341
+      - 0.8709677419354839
+      - 0.034168564920273314
+  - text: Kirk" in North Myrtle Beach, SC
+    confidence: 1
+    bbox:
+      - 0.028862480899830192
+      - 0.21867881581245263
+      - 0.3293718166383701
+      - 0.038724373576309645
+  - text: "September 2nd: Charlie was in Visalia, CA speaking at a private event at
+      Visalia First"
+    confidence: 1
+    bbox:
+      - 0.02716467689303923
+      - 0.30523917997722094
+      - 0.9015280135823429
+      - 0.034168564920273425
+  - text: Church
+    confidence: 1
+    bbox:
+      - 0.028814160791820444
+      - 0.3460104122170322
+      - 0.07819510882495821
+      - 0.030074847314786712
+  - text: "September 4th: BTT From Cairo to Paris, France —arriving in Minot, ND on
+      11:03am"
+    confidence: 1
+    bbox:
+      - 0.02716467694397296
+      - 0.43280182234624154
+      - 0.8964346349745332
+      - 0.0341685649202732
+  - text: then flies from Minot to Provo an hour later arriving into Provo at 12:46pm
+    confidence: 1
+    bbox:
+      - 0.025466886615733014
+      - 0.47152619595671985
+      - 0.7707979626485569
+      - 0.034168564920273314
+  - text: "September 5th: BND does a short test flight around Provo"
+    confidence: 1
+    bbox:
+      - 0.029166672333337838
+      - 0.5079726655815877
+      - 0.6041666493958245
+      - 0.03986332574031892
+  - text: "September 5th & 6th: Charlie was speaking at the Build Up Korea
+      conference in"
+    confidence: 1
+    bbox:
+      - 0.027164677402377015
+      - 0.5968109340091117
+      - 0.8505942275042444
+      - 0.034168564920273314
+  - text: Seoul, Korea
+    confidence: 1
+    bbox:
+      - 0.028731535567226227
+      - 0.6414057598185215
+      - 0.13608531595693174
+      - 0.036095085882651756
+  - text: "September 10th: BTT departed Provo, UT at 7:14am local time"
+    confidence: 1
+    bbox:
+      - 0.027164687860780894
+      - 0.7266514810649203
+      - 0.6689303904923599
+      - 0.034168564920273314
+  - text: "September 11th: BTT departed Wilmington, DE for Cairo at 7:56am local
+      time"
+    confidence: 1
+    bbox:
+      - 0.027164692756083623
+      - 0.8109339406605922
+      - 0.8217317487266554
+      - 0.03189066059225509
+  - text: "September 13th: BND Departs Provo at 12:57pm and goes to Goose Bay,
+      Canada for"
+    confidence: 1
+    bbox:
+      - 0.028862473740803713
+      - 0.8952164009870919
+      - 0.9066213921901527
+      - 0.03189066059225509
+  - text: fuel stop then continued onto Paris and then back home Cairo
+    confidence: 1
+    bbox:
+      - 0.025466884910866086
+      - 0.9362186788154897
+      - 0.6502546689303905
+      - 0.031890660592255204

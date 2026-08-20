@@ -1,0 +1,203 @@
+source: images/2078105368933142589_1.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:41:15.736Z
+kind: image
+language: en-US
+text: >-
+  Sent: Thursday, 16 July 2026 03:43:01
+
+  To: Candace Tips <tips@candaceowens.coms
+
+  Subject: Axon Body Camera
+
+  Hi Candace,
+
+  Ive been following your investigation religiously since Charlie's passing. You
+  and Charlie are both an inspiration to me.
+
+  1am
+
+  We use the same body camera that Utah city police use. The Axon
+
+  Body Cam 4 model. I would be happy to look into any questions you might have
+  about it. It bothered me that the officer claimed
+
+  his camera died when he was on the roof top. The camera battery lasts approx
+  14 hours. At the end of every shift we have to dock
+
+  our cameras, all on a detachment shared dock. The dock is also what uploads
+  all the data and videos from the shift onto the
+
+  server. We can then review the videos on the Axon website, this website is the
+  same across North America. The camera video also
+
+  captures a GPS route of exactly everywhere the officer walked. To turn on the
+  recording we press the middle button twice, it
+
+  automatically saves the 30 seconds before that. To turn the video off you have
+  to hold the button down for a few seconds. At the
+
+  end of the video you can usually see the officers hand moving toward the
+  button and even blocking the lens a bit with their hand.
+
+  I'll also mention you get a reminder when the battery is going to die, it does
+  a high pitched tone and vibrates 4 times at 10% left
+
+  and again at 5%. So there's no way he didn't know his battery was going to
+  die. The Axon Body 4 system also logs and
+
+  records the specific reason a video stops or the device turns off. All of this
+  information can be seen on the Axon site that the
+
+  police have access to and can review.
+
+  Please let me know if you want to see anything or ask any questions about the
+  Axon body camera.
+blocks:
+  - text: "Sent: Thursday, 16 July 2026 03:43:01"
+    confidence: 1
+    bbox:
+      - 0.0613598678413488
+      - 0.12094395307276307
+      - 0.2570480928689884
+      - 0.03244837758112096
+  - text: "To: Candace Tips <tips@candaceowens.coms"
+    confidence: 1
+    bbox:
+      - 0.06135987043117736
+      - 0.15634218274336287
+      - 0.31011608623548925
+      - 0.03244837758112096
+  - text: "Subject: Axon Body Camera"
+    confidence: 1
+    bbox:
+      - 0.06135986810945274
+      - 0.19174041330383484
+      - 0.1940298507462687
+      - 0.03244837758112096
+  - text: Hi Candace,
+    confidence: 1
+    bbox:
+      - 0.06120038022743479
+      - 0.2611942821550688
+      - 0.08323771285378123
+      - 0.035133558740306325
+  - text: Ive been following your investigation religiously since Charlie's passing.
+      You and Charlie are both an inspiration to me.
+    confidence: 1
+    bbox:
+      - 0.05970148464344957
+      - 0.3362831859292035
+      - 0.7893864013266998
+      - 0.03244837758112107
+  - text: 1am
+    confidence: 1
+    bbox:
+      - 0.05970149216417912
+      - 0.4070796456489676
+      - 0.03316749585406301
+      - 0.029498525073746285
+  - text: We use the same body camera that Utah city police use. The Axon
+    confidence: 1
+    bbox:
+      - 0.45273632285240456
+      - 0.4070796458702066
+      - 0.4444444444444445
+      - 0.032448377581120846
+  - text: Body Cam 4 model. I would be happy to look into any questions you might
+      have about it. It bothered me that the officer claimed
+    confidence: 1
+    bbox:
+      - 0.06135986241708137
+      - 0.44247787654867254
+      - 0.8606965174129353
+      - 0.03539823008849563
+  - text: his camera died when he was on the roof top. The camera battery lasts
+      approx 14 hours. At the end of every shift we have to dock
+    confidence: 1
+    bbox:
+      - 0.061359858689884035
+      - 0.47787610587020646
+      - 0.867330016583748
+      - 0.03244837758112096
+  - text: our cameras, all on a detachment shared dock. The dock is also what
+      uploads all the data and videos from the shift onto the
+    confidence: 1
+    bbox:
+      - 0.0613598591832506
+      - 0.5162241891961652
+      - 0.8275290215588723
+      - 0.03244837758112096
+  - text: server. We can then review the videos on the Axon website, this website is
+      the same across North America. The camera video also
+    confidence: 1
+    bbox:
+      - 0.059701483897180885
+      - 0.5516224190560471
+      - 0.8640132669983416
+      - 0.029498525073746396
+  - text: captures a GPS route of exactly everywhere the officer walked. To turn on
+      the recording we press the middle button twice, it
+    confidence: 1
+    bbox:
+      - 0.06135987421227187
+      - 0.5870206487954769
+      - 0.8258706467661693
+      - 0.03244837758112096
+  - text: automatically saves the 30 seconds before that. To turn the video off you
+      have to hold the button down for a few seconds. At the
+    confidence: 1
+    bbox:
+      - 0.06135987346600328
+      - 0.6224188789085546
+      - 0.8590381426202323
+      - 0.03244837758112096
+  - text: end of the video you can usually see the officers hand moving toward the
+      button and even blocking the lens a bit with their hand.
+    confidence: 1
+    bbox:
+      - 0.06135987813018218
+      - 0.6578171089970501
+      - 0.8640132669983416
+      - 0.03539823008849552
+  - text: I'll also mention you get a reminder when the battery is going to die, it
+      does a high pitched tone and vibrates 4 times at 10% left
+    confidence: 1
+    bbox:
+      - 0.05970150114427846
+      - 0.6932153390560473
+      - 0.8606965174129354
+      - 0.03539823008849552
+  - text: and again at 5%. So there's no way he didn't know his battery was going to
+      die. The Axon Body 4 system also logs and
+    confidence: 1
+    bbox:
+      - 0.06135987315801942
+      - 0.7315634216392752
+      - 0.8159203980099503
+      - 0.03244837758112096
+  - text: records the specific reason a video stops or the device turns off. All of
+      this information can be seen on the Axon site that the
+    confidence: 1
+    bbox:
+      - 0.05970150339966808
+      - 0.7669616518067848
+      - 0.8689883913764511
+      - 0.03244837758112096
+  - text: police have access to and can review.
+    confidence: 1
+    bbox:
+      - 0.06113462954785669
+      - 0.7996167963887938
+      - 0.2507541839953876
+      - 0.03838483422203409
+  - text: Please let me know if you want to see anything or ask any questions about
+      the Axon body camera.
+    confidence: 1
+    bbox:
+      - 0.06135987555970138
+      - 0.8761061946165193
+      - 0.6583747927031509
+      - 0.03539823008849552

@@ -1,0 +1,137 @@
+source: site/internals/static/img/evidence/1b63bf44b01524909aa20f57247c0be677eecdbfa5e46a0ea05270219892ae76.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:42:40.476Z
+kind: image
+language: en-US
+text: |-
+  Crowdsource The Truth
+  @JG_CSTT • 9h
+  ...
+  I have never seen a bird fly over 100MPH upward without flapping its wings
+  while remaining totally horizontal. Maybe @PalmerLuckey has...
+  Who killed Charlie Kirk?
+  12;24;00;05
+  0:09
+  Crowdsource The Truth
+  3:10
+  @JG_CSTT • 15h
+  These unknown flying objects were recorded by
+  @lifeisdriving at @UVU during the Charlie Kirk
+  assassination. Viewers can compare what are
+  obviously birds and insects to what I believe look like
+  as many as three different drones. Who flew the ...
+blocks:
+  - text: Crowdsource The Truth
+    confidence: 1
+    bbox:
+      - 0.09213483383895126
+      - 0.03729603717948715
+      - 0.2853932584269663
+      - 0.023310023310023298
+  - text: "@JG_CSTT • 9h"
+    confidence: 0.5
+    bbox:
+      - 0.4200891810849103
+      - 0.03645118441884265
+      - 0.17105759181333385
+      - 0.03199273556262461
+  - text: ...
+    confidence: 1
+    bbox:
+      - 0.9325842701726679
+      - 0.04195804207459208
+      - 0.033707863025450924
+      - 0.011655011655011593
+  - text: I have never seen a bird fly over 100MPH upward without flapping its wings
+    confidence: 1
+    bbox:
+      - 0.08764043856741599
+      - 0.07459207462121209
+      - 0.8696629213483146
+      - 0.030303030303030276
+  - text: while remaining totally horizontal. Maybe @PalmerLuckey has...
+    confidence: 1
+    bbox:
+      - 0.08988764655430706
+      - 0.1095571095376846
+      - 0.7325842696629213
+      - 0.030303030303030276
+  - text: Who killed Charlie Kirk?
+    confidence: 1
+    bbox:
+      - 0.0898876384751204
+      - 0.14452214463869462
+      - 0.27640449438202247
+      - 0.02564102564102566
+  - text: 12;24;00;05
+    confidence: 1
+    bbox:
+      - 0.7660374228843604
+      - 0.2317991968296459
+      - 0.19376784763979105
+      - 0.04456011454264319
+  - text: 0:09
+    confidence: 1
+    bbox:
+      - 0.1258426970411985
+      - 0.6573426572455322
+      - 0.049438202247191004
+      - 0.020979020979020935
+  - text: Crowdsource The Truth
+    confidence: 1
+    bbox:
+      - 0.1595505594194757
+      - 0.7459207460372961
+      - 0.2853932584269663
+      - 0.02331002331002341
+  - text: 3:10
+    confidence: 1
+    bbox:
+      - 0.14606741605136436
+      - 0.9184149182983682
+      - 0.0449438202247191
+      - 0.020979020979021046
+  - text: "@JG_CSTT • 15h"
+    confidence: 0.5
+    bbox:
+      - 0.48757186335410985
+      - 0.745465297364776
+      - 0.18440683772054955
+      - 0.03121392821376412
+  - text: These unknown flying objects were recorded by
+    confidence: 1
+    bbox:
+      - 0.3033707899719101
+      - 0.7972027971008159
+      - 0.552808988764045
+      - 0.030303030303030276
+  - text: "@lifeisdriving at @UVU during the Charlie Kirk"
+    confidence: 1
+    bbox:
+      - 0.30337079314606724
+      - 0.8321678320221445
+      - 0.5303370786516854
+      - 0.030303030303030276
+  - text: assassination. Viewers can compare what are
+    confidence: 1
+    bbox:
+      - 0.30337078410112367
+      - 0.867132867511655
+      - 0.5303370786516852
+      - 0.030303030303030276
+  - text: obviously birds and insects to what I believe look like
+    confidence: 1
+    bbox:
+      - 0.30318134459238705
+      - 0.8977923925547846
+      - 0.6138134902782655
+      - 0.03563228242602934
+  - text: as many as three different drones. Who flew the ...
+    confidence: 1
+    bbox:
+      - 0.3033707938483145
+      - 0.9370629370920746
+      - 0.5865168539325842
+      - 0.030303030303030276

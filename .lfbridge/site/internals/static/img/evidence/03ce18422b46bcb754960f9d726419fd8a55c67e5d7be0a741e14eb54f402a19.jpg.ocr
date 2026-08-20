@@ -1,0 +1,41 @@
+source: site/internals/static/img/evidence/03ce18422b46bcb754960f9d726419fd8a55c67e5d7be0a741e14eb54f402a19.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:41:53.699Z
+kind: image
+language: en-US
+text: |-
+  15.48 Mbps
+  THE
+  THE
+  CROWDSOURCE THE TRUTH 4K 6ofps HDR
+blocks:
+  - text: 15.48 Mbps
+    confidence: 1
+    bbox:
+      - 0.04787860497890886
+      - 0.019788134602830354
+      - 0.16441720962524414
+      - 0.05344698588053376
+  - text: THE
+    confidence: 1
+    bbox:
+      - 0.10319767428711735
+      - 0.47286821687243563
+      - 0.017441860437393195
+      - 0.02325581444634328
+  - text: THE
+    confidence: 1
+    bbox:
+      - 0.6991279058057538
+      - 0.5658914753446627
+      - 0.06395349025726316
+      - 0.08785529242621526
+  - text: CROWDSOURCE THE TRUTH 4K 6ofps HDR
+    confidence: 1
+    bbox:
+      - 0.005813958233723682
+      - 0.9377777784426308
+      - 0.40697673797607425
+      - 0.05222222222222228

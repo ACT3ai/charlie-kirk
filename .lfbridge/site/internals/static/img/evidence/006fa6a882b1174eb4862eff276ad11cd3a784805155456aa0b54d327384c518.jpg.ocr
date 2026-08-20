@@ -1,0 +1,41 @@
+source: site/internals/static/img/evidence/006fa6a882b1174eb4862eff276ad11cd3a784805155456aa0b54d327384c518.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:41:43.000Z
+kind: image
+language: en-US
+text: |-
+  08
+  s yre. y
+  YREFY.COM
+  & yreli
+blocks:
+  - text: "08"
+    confidence: 1
+    bbox:
+      - 0.09166666708333333
+      - 0.03317535600315957
+      - 0.06666666666666667
+      - 0.06635071090047395
+  - text: s yre. y
+    confidence: 0.5
+    bbox:
+      - 0.6527777785069445
+      - 0.16113744016587672
+      - 0.08611111111111103
+      - 0.04739336492891
+  - text: YREFY.COM
+    confidence: 0.5
+    bbox:
+      - 0.6527777777281746
+      - 0.20379146929587
+      - 0.09166666666666667
+      - 0.028436018957346043
+  - text: "& yreli"
+    confidence: 0.5
+    bbox:
+      - 0.7333333340046295
+      - 0.3791469187203791
+      - 0.11944444444444435
+      - 0.08530805687203791

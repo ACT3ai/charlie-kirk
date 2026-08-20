@@ -1,0 +1,25 @@
+source: site/internals/static/img/evidence/1cf66c8ea0e033affed08483cb939fdd1c15865d9e0b54fc17dd730c0fc91286.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:42:42.188Z
+kind: image
+language: en-US
+text: |-
+  Yesterday
+  12:42 AM
+blocks:
+  - text: Yesterday
+    confidence: 1
+    bbox:
+      - 0.40541130635303607
+      - 0.07359229998970518
+      - 0.1860327367802755
+      - 0.01996656320989132
+  - text: 12:42 AM
+    confidence: 1
+    bbox:
+      - 0.430754290203989
+      - 0.0943391372765402
+      - 0.13220210811300454
+      - 0.013356608804315329

@@ -1,0 +1,65 @@
+source: site/docs/Tyler_Robinson/discord/post/zJt9k_ztuh2IrW3wP9Q_eA.png
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:41:33.826Z
+kind: image
+language: en-US
+text: |-
+  I live in the United States!
+  Robot#0000
+  MEMBER SINCE
+  @ Dec 06, 2015
+  NOTE
+  Click to add a note
+  Message @Robot
+blocks:
+  - text: I live in the United States!
+    confidence: 1
+    bbox:
+      - 0.2500000068181816
+      - 0.22580645130568355
+      - 0.40909090909090906
+      - 0.027649769585253448
+  - text: Robot#0000
+    confidence: 1
+    bbox:
+      - 0.09659090665584417
+      - 0.4654377882159315
+      - 0.3409090909090909
+      - 0.04608294930875578
+  - text: MEMBER SINCE
+    confidence: 1
+    bbox:
+      - 0.0909090932291666
+      - 0.5714285711981567
+      - 0.27840909090909094
+      - 0.03686635944700467
+  - text: "@ Dec 06, 2015"
+    confidence: 1
+    bbox:
+      - 0.09659091058238634
+      - 0.6267281111175116
+      - 0.30113636363636365
+      - 0.041474654377880116
+  - text: NOTE
+    confidence: 1
+    bbox:
+      - 0.09090908970170458
+      - 0.6912442391705069
+      - 0.10795454545454544
+      - 0.03686635944700467
+  - text: Click to add a note
+    confidence: 1
+    bbox:
+      - 0.10795454204545463
+      - 0.7511520739631335
+      - 0.2727272727272727
+      - 0.027649769585253448
+  - text: Message @Robot
+    confidence: 1
+    bbox:
+      - 0.13068182119318178
+      - 0.8847926264976959
+      - 0.30113636363636365
+      - 0.032258064516129004

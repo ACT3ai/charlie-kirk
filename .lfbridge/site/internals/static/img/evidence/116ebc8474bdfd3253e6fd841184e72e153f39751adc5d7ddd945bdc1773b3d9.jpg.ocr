@@ -1,0 +1,41 @@
+source: site/internals/static/img/evidence/116ebc8474bdfd3253e6fd841184e72e153f39751adc5d7ddd945bdc1773b3d9.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:42:17.872Z
+kind: image
+language: en-US
+text: |-
+  угету
+  YREFY.COM
+  NING
+  IT USA
+blocks:
+  - text: угету
+    confidence: 0.3
+    bbox:
+      - 0.3603603568693694
+      - 5.6306292961494364e-11
+      - 0.5585585585585586
+      - 0.09009009009009006
+  - text: YREFY.COM
+    confidence: 0.5
+    bbox:
+      - 0.1579518066885983
+      - 0.0776607696940721
+      - 0.7744976421734234
+      - 0.08007224830421233
+  - text: NING
+    confidence: 1
+    bbox:
+      - 3.4909908797565115e-9
+      - 0.27027027038288287
+      - 0.27927927927927926
+      - 0.04504504504504503
+  - text: IT USA
+    confidence: 1
+    bbox:
+      - -4.354354170525947e-9
+      - 0.306306306981982
+      - 0.3153153153153153
+      - 0.04054054054054057

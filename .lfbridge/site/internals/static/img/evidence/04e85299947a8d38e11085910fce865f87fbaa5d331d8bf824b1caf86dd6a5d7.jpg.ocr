@@ -1,0 +1,41 @@
+source: site/internals/static/img/evidence/04e85299947a8d38e11085910fce865f87fbaa5d331d8bf824b1caf86dd6a5d7.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:41:54.675Z
+kind: image
+language: en-US
+text: |-
+  KEAMERIE
+  RESE AGAR
+  WIREAMERICA
+  CREAT AGAIN
+blocks:
+  - text: KEAMERIE
+    confidence: 0.3
+    bbox:
+      - 0.17120470190873968
+      - 0.08623546578285379
+      - 0.13374187505357318
+      - 0.04922398814448603
+  - text: RESE AGAR
+    confidence: 0.5
+    bbox:
+      - 0.15517241357758618
+      - 0.1314814812152778
+      - 0.14106583072100312
+      - 0.042592592592592515
+  - text: WIREAMERICA
+    confidence: 0.5
+    bbox:
+      - 0.698635411298594
+      - 0.05705989756424035
+      - 0.15131851722454193
+      - 0.04699131647745769
+  - text: CREAT AGAIN
+    confidence: 1
+    bbox:
+      - 0.6990595602860502
+      - 0.1000000001736111
+      - 0.13479623824451403
+      - 0.03888888888888886

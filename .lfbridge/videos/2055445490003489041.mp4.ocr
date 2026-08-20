@@ -1,0 +1,26 @@
+source: videos/2055445490003489041.mp4
+status: done
+engine: vision
+level: fast
+generated: 2026-08-20T12:42:16.254Z
+kind: video
+language: en-US
+stride_seconds: 15
+frames_sampled: 3
+truncated: false
+text: |-
+  FURKAN'
+  GOZUKARA
+
+  lrfith
+blocks:
+  - text: |-
+      FURKAN'
+      GOZUKARA
+    confidence: 0.5
+    start: 15
+    end: 30
+  - text: lrfith
+    confidence: 0.5
+    start: 30
+    end: 45

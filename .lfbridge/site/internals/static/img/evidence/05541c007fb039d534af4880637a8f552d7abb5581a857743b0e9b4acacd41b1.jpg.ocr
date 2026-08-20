@@ -1,0 +1,41 @@
+source: site/internals/static/img/evidence/05541c007fb039d534af4880637a8f552d7abb5581a857743b0e9b4acacd41b1.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:41:54.289Z
+kind: image
+language: en-US
+text: |-
+  Prowler wearing lab coat arrested
+  after sneaking into Charlie Kirk
+  assassination crime scene to snap
+  selfie, photos: report
+blocks:
+  - text: Prowler wearing lab coat arrested
+    confidence: 1
+    bbox:
+      - 0.04950496419141873
+      - 0.7063492059523809
+      - 0.8217821782178217
+      - 0.039682539682539764
+  - text: after sneaking into Charlie Kirk
+    confidence: 1
+    bbox:
+      - 0.04950495990098982
+      - 0.7539682535714286
+      - 0.7524752475247525
+      - 0.04761904761904756
+  - text: assassination crime scene to snap
+    confidence: 1
+    bbox:
+      - 0.049504936633663836
+      - 0.8015873021164022
+      - 0.8316831683168318
+      - 0.04761904761904756
+  - text: "selfie, photos: report"
+    confidence: 1
+    bbox:
+      - 0.04950494207920825
+      - 0.8492063497354497
+      - 0.504950495049505
+      - 0.04761904761904767

@@ -1,0 +1,122 @@
+source: images/2085788561123549371_1.jpg
+status: done
+engine: gemini-flash-latest
+provider: gemini
+generated: 2026-08-20T12:40:58.337Z
+kind: image
+description: >-
+  ## Overview
+
+  This is a direct screenshot of a Google Trends interface displayed on a mobile
+  or web browser screen. It shows the search term analytics for the exact phrase
+  `"645 W 925 S"` filtered for the region of Israel over the past 5 years. The
+  graph titled "Interest over time" displays a single isolated spike reaching an
+  index value of 100 in April 2022, while remaining flat at zero across all
+  other months between August 2021 and early 2025.
+
+
+  ## Hyper-Detail
+
+  The image presents a light-mode graphical user interface with rounded UI cards
+  and standard web typography.
+
+
+  1. **Top Header Card (Search Term Area):**
+     * A solid bright blue circular dot sits at the top left.
+     * Directly to the right is the bolded search query text in quotes: `"645 W 925 S"`.
+     * Beneath the query text is a secondary grey label: `Search term`.
+     * On the far right edge of this white rounded card is a vertical three-dot menu icon (ellipsis) in dark grey.
+
+  2. **Filter & Comparison Bar:**
+     * Below the top card is a light bluish-periwinkle pill/button containing a dark grey plus sign `+` and the uppercase text `COMPARE`.
+     * Below the compare button is a filter line featuring a funnel/filter icon (three horizontal descending lines) followed by the filter parameters text: `Israel, Past 5 years`.
+
+  3. **Graph Container Card ("Interest over time"):**
+     * A large white card with rounded upper corners encompasses the lower half of the view.
+     * Top left of this card has the title: `Interest over time` in clean sans-serif font.
+     * Top right of this card features another vertical three-dot overflow icon.
+     * The line chart area contains faint horizontal grey grid lines corresponding to the y-axis labels on the left: `100`, `75`, `50`, `25`, and the baseline `0` (obscured partially by the timeline).
+     * A vertical label reading `Note` is rotated 90 degrees counter-clockwise along the left edge of the vertical spike.
+     * The trend line itself is rendered in solid bright blue. It sits at a flat zero baseline until rising almost vertically straight to the maximum value of `100` at a point marked by a solid blue circle node. Immediately after, it plunges vertically down to a circular hollow blue ring on the baseline, then continues horizontally flat at zero across the remainder of the timeline.
+     * A rectangular tooltip box with a thin grey border and white fill is overlaid on the center of the graph. Inside the tooltip:
+       * Header: `Apr 2022` in bold black text.
+       * Content row: `"645 W 925 S"` on the left in dark grey, and `100` on the right in blue text.
+     * The x-axis along the bottom features three date labels in grey font: `Aug 1, 2021` (left), `Jun 1, 2023` (center), and `Apr 1, 2025` (right).
+
+  ## Composition
+
+  * **Frame-Top (~0% to 25% height):** Contains the search query card and
+  compare bar against a soft greyish-blue background canvas.
+
+  * **Frame-Center to Frame-Bottom (~25% to 100% height):** Dominated by the
+  main white "Interest over time" card (~70% of frame area).
+
+  * **Frame-Left (~25% horizontal width):** Contains the blue search dot, y-axis
+  scale numbers (`100`, `75`, `50`, `25`), and the start date (`Aug 1, 2021`).
+  The massive data spike is positioned at the intersection of the left third and
+  center horizontal axis.
+
+  * **Frame-Center (~30% to 75% horizontal width):** The interactive hover
+  tooltip occupies roughly 15% of the frame area in the midground over the graph
+  grid.
+
+  * **Focus/Depth of Field:** Perfectly flat 2D digital graphic rendering;
+  entire frame is in sharp digital focus with no optical lens blur.
+
+
+  ## Location
+
+  (indeterminate). This is a digital screenshot of a software interface. The
+  data within the interface specifically queries search volume from the country
+  of **Israel** (uncertain / digital data only).
+
+
+  ## Setting & Place
+
+  Digital user interface / web application. Specifically, the Google Trends
+  analytics dashboard formatted for mobile/responsive screen viewing.
+
+
+  ## Lighting
+
+  Not applicable (Digital UI render). The screen uses standard digital high-key
+  UI illumination with a clean white and light grey/periwinkle background
+  palette.
+
+
+  ## Cinematography
+
+  Not applicable (Screen capture / Graphic UI). 2D flat layout, no camera lens,
+  angle, or physical perspective distortion.
+
+
+  ## People
+
+  No people in frame.
+
+
+  ## Objects & Text
+
+  * **UI Elements:** Rounded search card, `+ COMPARE` pill button, filter
+  options, line chart, data tooltip box, vertical three-dot menu icons.
+
+  * **Verbatim Text:**
+    * `"645 W 925 S"`
+    * `Search term`
+    * `+ COMPARE`
+    * `Israel, Past 5 years`
+    * `Interest over time`
+    * `100`, `75`, `50`, `25`
+    * `Note`
+    * `Apr 2022`
+    * `Aug 1, 2021`
+    * `Jun 1, 2023`
+    * `Apr 1, 2025`
+
+  ## Colors & Mood
+
+  * **Dominant Palette:** Pure white (`#FFFFFF`), Google analytics blue
+  (`#4285F4`), soft slate blue/periwinkle background, and neutral cool grey for
+  borders and axis text.
+
+  * **Mood/Tone:** Analytical, clean, clinical, informational, and minimalist.

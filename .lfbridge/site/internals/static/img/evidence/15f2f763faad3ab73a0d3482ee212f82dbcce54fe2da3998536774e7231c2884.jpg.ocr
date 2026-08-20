@@ -1,0 +1,65 @@
+source: site/internals/static/img/evidence/15f2f763faad3ab73a0d3482ee212f82dbcce54fe2da3998536774e7231c2884.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:42:32.130Z
+kind: image
+language: en-US
+text: |-
+  NSA
+  CIA
+  FBI
+  UVU
+  A PLACE
+  FOR You
+  TRUSTED INVESTIGATORS
+blocks:
+  - text: NSA
+    confidence: 1
+    bbox:
+      - 0.2708333340394229
+      - 0.051851852673933
+      - 0.07916666412353512
+      - 0.0666666657632452
+  - text: CIA
+    confidence: 1
+    bbox:
+      - 0.4723837218749695
+      - 0.05412371184000975
+      - 0.06395348739624024
+      - 0.05927834925812481
+  - text: FBI
+    confidence: 1
+    bbox:
+      - 0.6468023248668583
+      - 0.054123712339365415
+      - 0.07122093200683588
+      - 0.05927834925812481
+  - text: UVU
+    confidence: 0.5
+    bbox:
+      - 0.2718023265898239
+      - 0.35051546457690774
+      - 0.036337207794189474
+      - 0.03092783424824641
+  - text: A PLACE
+    confidence: 1
+    bbox:
+      - 0.3648255812820789
+      - 0.3579040852275912
+      - 0.023255813598632824
+      - 0.013321492007104863
+  - text: FOR You
+    confidence: 1
+    bbox:
+      - 0.3648255818634743
+      - 0.3737113401357306
+      - 0.023255813598632824
+      - 0.012886597885755191
+  - text: TRUSTED INVESTIGATORS
+    confidence: 1
+    bbox:
+      - 0.6125000098084852
+      - 0.8888888896935117
+      - 0.3166666564941406
+      - 0.05185184851421132

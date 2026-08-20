@@ -1,0 +1,50 @@
+source: videos/2071072788132118610.mp4
+status: done
+engine: vision
+level: fast
+generated: 2026-08-20T12:42:37.878Z
+kind: video
+language: en-US
+stride_seconds: 15
+frames_sampled: 5
+truncated: false
+text: |-
+  Mini 2.5
+  ram sha
+  e char
+
+  rthvY I
+  •l
+  14
+  Mini 2.5
+  ram sha
+  e char
+
+  Mini 2.5
+  ram sha
+  e char
+blocks:
+  - text: |-
+      Mini 2.5
+      ram sha
+      e char
+    confidence: 0.5
+    start: 0
+    end: 30
+  - text: |-
+      rthvY I
+      •l
+      14
+      Mini 2.5
+      ram sha
+      e char
+    confidence: 0.5
+    start: 30
+    end: 45
+  - text: |-
+      Mini 2.5
+      ram sha
+      e char
+    confidence: 0.5
+    start: 45
+    end: 75

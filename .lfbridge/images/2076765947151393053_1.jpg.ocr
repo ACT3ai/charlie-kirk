@@ -1,0 +1,41 @@
+source: images/2076765947151393053_1.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:41:12.248Z
+kind: image
+language: en-US
+text: |-
+  3:11
+  AMERICAN
+  My POV before I spoke
+  Charlie
+blocks:
+  - text: 3:11
+    confidence: 1
+    bbox:
+      - 0.10135135165847663
+      - 0.018750000071022677
+      - 0.0810810810810811
+      - 0.015625
+  - text: AMERICAN
+    confidence: 1
+    bbox:
+      - 0.06008392650496959
+      - 0.3071515898276108
+      - 0.20316524763365051
+      - 0.04187805056571958
+  - text: My POV before I spoke
+    confidence: 1
+    bbox:
+      - 0.14864865551801787
+      - 0.64374999984375
+      - 0.8243243243243245
+      - 0.03749999999999998
+  - text: Charlie
+    confidence: 1
+    bbox:
+      - 0.3175675696509009
+      - 0.6874999998958333
+      - 0.24999999999999994
+      - 0.03125

@@ -1,0 +1,33 @@
+source: site/internals/static/img/evidence/160de08e0bd759bd973783dc7a8787eb1287939d879c4c28c1fea8c3cf9066e2.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:42:33.275Z
+kind: image
+language: en-US
+text: |-
+  UVU Army ROTC
+  LDS Institute
+  2D
+blocks:
+  - text: UVU Army ROTC
+    confidence: 1
+    bbox:
+      - 0.2776162817300653
+      - 0.3717948719742403
+      - 0.09593022963579961
+      - 0.03696425097463629
+  - text: LDS Institute
+    confidence: 1
+    bbox:
+      - 0.4389534888953883
+      - 0.6568047339901638
+      - 0.053779069489123754
+      - 0.029585798816567976
+  - text: 2D
+    confidence: 1
+    bbox:
+      - 0.9273255820394292
+      - 0.9744525543651297
+      - 0.017441859525792802
+      - 0.021897810685799213

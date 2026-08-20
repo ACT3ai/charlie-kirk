@@ -1,0 +1,65 @@
+source: images/2077277163053564059_2.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:41:12.747Z
+kind: image
+language: en-US
+text: |-
+  Step 3: Lorentz forces + magnetic pinch effect
+  (compression phase)
+  B-field
+  Lorentz forces!
+  magnetic pinch effect i
+  platform
+  underground tap
+blocks:
+  - text: "Step 3: Lorentz forces + magnetic pinch effect"
+    confidence: 1
+    bbox:
+      - 0.14144736979166667
+      - 0.03537735890330185
+      - 0.7171052631578949
+      - 0.04952830188679247
+  - text: (compression phase)
+    confidence: 1
+    bbox:
+      - 0.32500000246800254
+      - 0.08928571476153901
+      - 0.3374999949806615
+      - 0.059523807381683946
+  - text: B-field
+    confidence: 1
+    bbox:
+      - 0.562499999612312
+      - 0.20754716992924527
+      - 0.05427631578947367
+      - 0.02594339622641506
+  - text: Lorentz forces!
+    confidence: 1
+    bbox:
+      - 0.2697146889040833
+      - 0.2993552153354966
+      - 0.10695220294751617
+      - 0.028648059323148845
+  - text: magnetic pinch effect i
+    confidence: 1
+    bbox:
+      - 0.21874999868421055
+      - 0.32783018879716974
+      - 0.15789473684210528
+      - 0.028301886792452935
+  - text: platform
+    confidence: 1
+    bbox:
+      - 0.3092105269736842
+      - 0.4669811319575472
+      - 0.07894736842105265
+      - 0.03301886792452824
+  - text: underground tap
+    confidence: 1
+    bbox:
+      - 0.5197368428865131
+      - 0.8372641505306605
+      - 0.1546052631578947
+      - 0.03301886792452824

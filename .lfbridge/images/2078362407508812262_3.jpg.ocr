@@ -1,0 +1,169 @@
+source: images/2078362407508812262_3.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:41:16.788Z
+kind: image
+language: en-US
+text: |-
+  Shaffer Security_Group deleted its tweet
+  hours later - but its owner, former FBI
+  agent Greg Shaffer, reiterated the
+  information when reached by phone
+  Saturday night.
+  alleylopfiles
+  "The individuals who work for that
+  company [Integrity Security Solutions]
+  were the ones on the stage," Shaffer told
+  Headline USA.
+  Shaffer further said that Integrity Security
+  Solutions founder Brian Harpole and
+  TPUSA security director Dan Flood both
+  used to work with him until they "stabbed
+  [him] in the back."
+  "Dan Flood headed up security for Turning
+  Point USA, and Brian Harpole is his best
+  friend. Brian worked for me for seven
+  years, and then Brian started his own
+  shorted me on the
+blocks:
+  - text: Shaffer Security_Group deleted its tweet
+    confidence: 1
+    bbox:
+      - 0.0767386013325596
+      - 0.09156976778156267
+      - 0.7769784250567037
+      - 0.02616279013454914
+  - text: hours later - but its owner, former FBI
+    confidence: 1
+    bbox:
+      - 0.07673862509363348
+      - 0.12936046522390487
+      - 0.7553956554782005
+      - 0.02761627919971943
+  - text: agent Greg Shaffer, reiterated the
+    confidence: 1
+    bbox:
+      - 0.07673862919294476
+      - 0.16552734376396028
+      - 0.6546762281848538
+      - 0.02783203125
+  - text: information when reached by phone
+    confidence: 1
+    bbox:
+      - 0.07194243645800112
+      - 0.20348837239275452
+      - 0.7026379000756048
+      - 0.02616279013454914
+  - text: Saturday night.
+    confidence: 1
+    bbox:
+      - 0.07673861198824207
+      - 0.23974609364981636
+      - 0.29736209992439516
+      - 0.02783203125
+  - text: alleylopfiles
+    confidence: 0.5
+    bbox:
+      - 0.7889057344692947
+      - 0.2658348726433122
+      - 0.12482641896893898
+      - 0.019202347844839096
+  - text: '"The individuals who work for that'
+    confidence: 1
+    bbox:
+      - 0.07194243692088424
+      - 0.3110351560752941
+      - 0.7266187114100303
+      - 0.0263671875
+  - text: company [Integrity Security Solutions]
+    confidence: 1
+    bbox:
+      - 0.0767386180754527
+      - 0.35156250012455215
+      - 0.805755369124874
+      - 0.02783203125
+  - text: were the ones on the stage," Shaffer told
+    confidence: 1
+    bbox:
+      - 0.07673859734434987
+      - 0.3851744182029766
+      - 0.8321343206590222
+      - 0.031976744532585144
+  - text: Headline USA.
+    confidence: 1
+    bbox:
+      - 0.07913670060193888
+      - 0.42578124972613585
+      - 0.2901678516018775
+      - 0.02490234375
+  - text: Shaffer further said that Integrity Security
+    confidence: 1
+    bbox:
+      - 0.07673860350472395
+      - 0.5000000001651597
+      - 0.8297362296811996
+      - 0.02783203125
+  - text: Solutions founder Brian Harpole and
+    confidence: 1
+    bbox:
+      - 0.07673862732383321
+      - 0.5375976563935598
+      - 0.7673860611454134
+      - 0.0263671875
+  - text: TPUSA security director Dan Flood both
+    confidence: 1
+    bbox:
+      - 0.07673860322453623
+      - 0.5755813958172769
+      - 0.8273381387033771
+      - 0.02616279013454914
+  - text: used to work with him until they "stabbed
+    confidence: 1
+    bbox:
+      - 0.07673862419143307
+      - 0.6088867183300686
+      - 0.7937649634576613
+      - 0.029296875
+  - text: '[him] in the back."'
+    confidence: 1
+    bbox:
+      - 0.07194244139574477
+      - 0.6482558143181074
+      - 0.3573141528714088
+      - 0.02616279013454914
+  - text: '"Dan Flood headed up security for Turning'
+    confidence: 1
+    bbox:
+      - 0.06915139897142707
+      - 0.7193536041214917
+      - 0.8328631985572076
+      - 0.03297686576843262
+  - text: Point USA, and Brian Harpole is his best
+    confidence: 1
+    bbox:
+      - 0.07913668473796193
+      - 0.7616279071419039
+      - 0.7889688307239164
+      - 0.02761627919971943
+  - text: friend. Brian worked for me for seven
+    confidence: 1
+    bbox:
+      - 0.07174796166989537
+      - 0.7958883834211443
+      - 0.7246292114257812
+      - 0.027420954778790474
+  - text: years, and then Brian started his own
+    confidence: 1
+    bbox:
+      - 0.07434052037412169
+      - 0.835755814118648
+      - 0.7266187114100303
+      - 0.02761627919971943
+  - text: shorted me on the
+    confidence: 1
+    bbox:
+      - 0.4550277482655918
+      - 0.8719579686684209
+      - 0.3465419400122858
+      - 0.02636372670531273

@@ -1,0 +1,77 @@
+source: cover_image/charlie.png
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:40:52.814Z
+kind: image
+language: en-US
+text: >-
+  View all
+
+  1108
+
+  Prompt
+
+  Create a director-style PREVIS action storyboard focused on 8 continuous
+  action frames using only minimal stick figures.
+
+  No realistic anatory, clothing, pants, shoes, or character details. Show only
+  movement, camera choreography, momentum
+
+  trails, and flame motion with ember sparks trailing each strike, with only a
+  small amount of necessary text,
+
+  C, ® usest0 cedes
+blocks:
+  - text: View all
+    confidence: 1
+    bbox:
+      - 0.023584904933176117
+      - 0.1835748794082126
+      - 0.05817610062893081
+      - 0.04347826086956519
+  - text: "1108"
+    confidence: 1
+    bbox:
+      - 0.34583333582099324
+      - 0.11538461482174012
+      - 0.1333333261357913
+      - 0.17948718232233163
+  - text: Prompt
+    confidence: 1
+    bbox:
+      - 0.00604780412518759
+      - 0.4034885988765675
+      - 0.05708678263538289
+      - 0.06258801907156974
+  - text: Create a director-style PREVIS action storyboard focused on 8 continuous
+      action frames using only minimal stick figures.
+    confidence: 1
+    bbox:
+      - 0.006209393884307272
+      - 0.460852054389979
+      - 0.9388325049442315
+      - 0.09329007098064324
+  - text: No realistic anatory, clothing, pants, shoes, or character details. Show
+      only movement, camera choreography, momentum
+    confidence: 1
+    bbox:
+      - 0.006289315015723155
+      - 0.5652173910282953
+      - 0.9575471698113207
+      - 0.06763285024154597
+  - text: trails, and flame motion with ember sparks trailing each strike, with only
+      a small amount of necessary text,
+    confidence: 1
+    bbox:
+      - 0.006289313384433938
+      - 0.6521739127717391
+      - 0.8333333333333334
+      - 0.07246376811594202
+  - text: C, ® usest0 cedes
+    confidence: 0.5
+    bbox:
+      - 0.6257861651074423
+      - 0.8164251203301127
+      - 0.19025157232704404
+      - 0.08212560386473433

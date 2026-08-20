@@ -1,0 +1,81 @@
+source: site/internals/static/img/evidence/110b3c9003608c8b90d6a245174d75aa6d6e39a6083c427520f7cb69245b0553.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:42:17.397Z
+kind: image
+language: en-US
+text: |-
+  ety
+  EFY.COM:
+  IATE STUDENT LOAN RELID
+  O yrefy
+  YREFY.COM
+  G
+  ISA
+  TURNIN
+  POINT I
+blocks:
+  - text: ety
+    confidence: 0.5
+    bbox:
+      - 0.07037037039682541
+      - 0.4857142851247165
+      - 0.18888888888888888
+      - 0.08253968253968258
+  - text: "EFY.COM:"
+    confidence: 0.5
+    bbox:
+      - -0.0003904535475518171
+      - 0.5731553581126557
+      - 0.28226239239728007
+      - 0.06003849090091762
+  - text: IATE STUDENT LOAN RELID
+    confidence: 1
+    bbox:
+      - 0.49549166474508255
+      - 0.46185856174854223
+      - 0.30544772677951393
+      - 0.034607134924994565
+  - text: O yrefy
+    confidence: 0.5
+    bbox:
+      - 0.45555555646090534
+      - 0.4984126978835979
+      - 0.35555555555555557
+      - 0.09523809523809523
+  - text: YREFY.COM
+    confidence: 0.5
+    bbox:
+      - 0.4555555584876543
+      - 0.5873015872222221
+      - 0.35185185185185186
+      - 0.053968253968254
+  - text: G
+    confidence: 1
+    bbox:
+      - 0.47037037052469133
+      - 0.7365079368253968
+      - 0.040740740740740744
+      - 0.03809523809523807
+  - text: ISA
+    confidence: 1
+    bbox:
+      - 0.4592592598518518
+      - 0.7714285717777778
+      - 0.07407407407407407
+      - 0.03492063492063491
+  - text: TURNIN
+    confidence: 1
+    bbox:
+      - 0.8148148158230453
+      - 0.7492063491005291
+      - 0.18148148148148147
+      - 0.03809523809523807
+  - text: POINT I
+    confidence: 1
+    bbox:
+      - 0.8111111092592592
+      - 0.7809523810476191
+      - 0.18518518518518523
+      - 0.03492063492063491

@@ -1,0 +1,73 @@
+source: site/internals/static/img/evidence/13b8d3ae56941a2f4db0825b23b12ddd2ee21ff49b6b5c0a32b508e39d486853.png
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:42:22.444Z
+kind: image
+language: en-US
+text: |-
+  11/25/2022
+  12/5/2022
+  SU-BTT
+  SU-BTT
+  PARIS→WILMINGTON-CAIRO
+  PARIS → CHICAGO →CAIRO
+  In Cairo. Closest flight was 11/20/22 when the plane flew from
+  Still in Cairo, flew back into Cairo on 20Nov, Flew back out to Pai
+blocks:
+  - text: 11/25/2022
+    confidence: 1
+    bbox:
+      - 0.14519056186479132
+      - 0.04545454829545448
+      - 0.059891107078039935
+      - 0.40909090909090917
+  - text: 12/5/2022
+    confidence: 1
+    bbox:
+      - 0.15245009065335755
+      - 0.5909090903409091
+      - 0.05081669691470053
+      - 0.31818181818181823
+  - text: SU-BTT
+    confidence: 0.5
+    bbox:
+      - 0.2540834842861464
+      - 0.09090909318181817
+      - 0.03448275862068961
+      - 0.36363636363636354
+  - text: SU-BTT
+    confidence: 0.5
+    bbox:
+      - 0.25589836701451907
+      - 0.5909090886363637
+      - 0.03266787658802178
+      - 0.2727272727272728
+  - text: PARIS→WILMINGTON-CAIRO
+    confidence: 1
+    bbox:
+      - 0.34301270571687836
+      - 0.13636363409090912
+      - 0.12341197822141564
+      - 0.2727272727272727
+  - text: PARIS → CHICAGO →CAIRO
+    confidence: 1
+    bbox:
+      - 0.34301270458257715
+      - 0.5909090875
+      - 0.10526315789473684
+      - 0.2727272727272727
+  - text: In Cairo. Closest flight was 11/20/22 when the plane flew from
+    confidence: 1
+    bbox:
+      - 0.5916515394963704
+      - 0.18181818352272727
+      - 0.25226860254083483
+      - 0.2272727272727273
+  - text: Still in Cairo, flew back into Cairo on 20Nov, Flew back out to Pai
+    confidence: 1
+    bbox:
+      - 0.5898366574410164
+      - 0.6363636386363635
+      - 0.2540834845735027
+      - 0.2727272727272727

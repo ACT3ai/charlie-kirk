@@ -1,0 +1,31 @@
+source: videos/1965869689755812061.mp4
+status: done
+engine: vision
+level: fast
+generated: 2026-08-20T12:40:41.834Z
+kind: video
+language: en-US
+stride_seconds: 15
+frames_sampled: 2
+truncated: false
+text: |-
+  11
+  SlriusXM
+
+  &i
+  I Ikl
+  -L114
+blocks:
+  - text: |-
+      11
+      SlriusXM
+    confidence: 0.5
+    start: 0
+    end: 15
+  - text: |-
+      &i
+      I Ikl
+      -L114
+    confidence: 0.5
+    start: 15
+    end: 30

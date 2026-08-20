@@ -1,0 +1,53 @@
+source: videos/2068463186668605858.mp4
+status: done
+engine: vision
+level: fast
+generated: 2026-08-20T12:42:23.531Z
+kind: video
+language: en-US
+stride_seconds: 15
+frames_sampled: 2
+truncated: false
+text: |-
+  Can't Be
+  Censored
+
+  11
+  llii
+  -ftÉlillllU'
+  1411M•IIIIiI
+  iiilllll
+  111411X
+  uiii
+  Illllllll•
+  uiill
+  ii •illllll
+  il llilljJllP
+  lllY°
+  xii
+  Iipy;
+blocks:
+  - text: |-
+      Can't Be
+      Censored
+    confidence: 0.5
+    start: 0
+    end: 15
+  - text: |-
+      11
+      llii
+      -ftÉlillllU'
+      1411M•IIIIiI
+      iiilllll
+      111411X
+      uiii
+      Illllllll•
+      uiill
+      ii •illllll
+      il llilljJllP
+      lllY°
+      xii
+      Iipy;
+    confidence: 0.5
+    start: 15
+    end: 30

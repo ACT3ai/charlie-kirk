@@ -1,0 +1,57 @@
+source: site/internals/static/img/evidence/0a6273f90102bb14e3fd1c457cbd152fb751b9f7690a2f030750506f386b6d97.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:42:04.288Z
+kind: image
+language: en-US
+text: |-
+  yroty
+  C
+  PROVE N
+  C
+  yre/
+  YREPYO
+blocks:
+  - text: yroty
+    confidence: 0.3
+    bbox:
+      - 0.7906976743033156
+      - 0.1823899375802035
+      - 0.02761627919971943
+      - 0.022012577500454156
+  - text: C
+    confidence: 1
+    bbox:
+      - 0.8183139533290631
+      - 0.2295597475581581
+      - 0.015988372266292572
+      - 0.0471698123859301
+  - text: PROVE N
+    confidence: 0.5
+    bbox:
+      - 0.8749194570092939
+      - 0.07394788426982613
+      - 0.12385812401771545
+      - 0.0720374125506863
+  - text: C
+    confidence: 1
+    bbox:
+      - 0.8808139533290631
+      - 0.216981131071186
+      - 0.015988372266292572
+      - 0.0471698123859301
+  - text: yre/
+    confidence: 0.3
+    bbox:
+      - 0.8314808505558475
+      - 0.2959643877686282
+      - 0.04608412832021713
+      - 0.06308417290008095
+  - text: YREPYO
+    confidence: 0.3
+    bbox:
+      - 0.8203035645958242
+      - 0.3444939765063423
+      - 0.05729365721344948
+      - 0.03966964173266552

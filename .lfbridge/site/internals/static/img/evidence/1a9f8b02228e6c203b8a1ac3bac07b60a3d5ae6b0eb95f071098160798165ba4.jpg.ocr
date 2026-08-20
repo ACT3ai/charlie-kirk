@@ -1,0 +1,81 @@
+source: site/internals/static/img/evidence/1a9f8b02228e6c203b8a1ac3bac07b60a3d5ae6b0eb95f071098160798165ba4.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:42:40.293Z
+kind: image
+language: en-US
+text: |-
+  "MER CAN
+  COMEBAT
+  TOUR
+  PROVE ME WRONG Z PROVE ME WRONG
+  AMER CAN
+  OMEBACK
+  7:48 / 13:58
+  ERC/IN
+  AMERACK
+blocks:
+  - text: '"MER CAN'
+    confidence: 1
+    bbox:
+      - 0.3133041893200015
+      - 0.08925248587533696
+      - 0.18530158509162742
+      - 0.06156217380911999
+  - text: COMEBAT
+    confidence: 1
+    bbox:
+      - 0.28561511598574296
+      - 0.1179505782547503
+      - 0.21365814106369785
+      - 0.05846610154934273
+  - text: TOUR
+    confidence: 0.5
+    bbox:
+      - 0.4752906981961543
+      - 0.17829457385830338
+      - 0.03488372104955184
+      - 0.015503875366941866
+  - text: PROVE ME WRONG Z PROVE ME WRONG
+    confidence: 1
+    bbox:
+      - 0.03192472658042659
+      - 0.18923898193893396
+      - 0.6777874883101462
+      - 0.1342574433652226
+  - text: AMER CAN
+    confidence: 1
+    bbox:
+      - 0.41934815185605806
+      - 0.7279451754228752
+      - 0.1829057602411
+      - 0.09566509680833646
+  - text: OMEBACK
+    confidence: 1
+    bbox:
+      - 0.4447674426757874
+      - 0.8294573670430193
+      - 0.15552325271165202
+      - 0.0904392722124111
+  - text: 7:48 / 13:58
+    confidence: 1
+    bbox:
+      - 0.04941860472763748
+      - 0.9741602067540005
+      - 0.03779069737612037
+      - 0.012919896519826612
+  - text: ERC/IN
+    confidence: 0.5
+    bbox:
+      - 0.8822674429551529
+      - 0.813953487352338
+      - 0.07267441586030754
+      - 0.05943152604702706
+  - text: AMERACK
+    confidence: 0.5
+    bbox:
+      - 0.8735465116898458
+      - 0.860465117195337
+      - 0.08430232629731105
+      - 0.0671834614462482

@@ -1,0 +1,153 @@
+source: images/2724a3_composite_ORIGINAL_PRIVATE.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:41:32.703Z
+kind: image
+language: en-US
+text: |-
+  Omar @NajraGalvz • 1d
+  Charlie kirk is coming to my college
+  tomorrow i rlly hope someone
+  evaporates him literally
+  0348(7224
+  © 158
+  Omar @NajraGalvz • 1d
+  Lets just say something big will happen
+  tomorrow
+  ...
+  yre
+  FY.CO.
+  RAINI
+  INT US
+  • 587
+  1] 6.6K
+  • 13K
+  thal 239K
+blocks:
+  - text: Omar @NajraGalvz • 1d
+    confidence: 1
+    bbox:
+      - 0.1323529390931373
+      - 0.04332129978941035
+      - 0.24999999999999997
+      - 0.032490974729241895
+  - text: Charlie kirk is coming to my college
+    confidence: 1
+    bbox:
+      - 0.13235293955882357
+      - 0.07942238217509023
+      - 0.3823529411764707
+      - 0.03971119133574008
+  - text: tomorrow i rlly hope someone
+    confidence: 1
+    bbox:
+      - 0.13235293960784317
+      - 0.11913357346570397
+      - 0.3235294117647059
+      - 0.032490974729241895
+  - text: evaporates him literally
+    confidence: 1
+    bbox:
+      - 0.13235293861764713
+      - 0.15884476555956684
+      - 0.25588235294117645
+      - 0.03610108303249093
+  - text: 0348(7224
+    confidence: 1
+    bbox:
+      - 0.13529411970588232
+      - 0.20577617314981955
+      - 0.16470588235294117
+      - 0.032490974729241784
+  - text: © 158
+    confidence: 1
+    bbox:
+      - 0.3235294124117647
+      - 0.2057761731046932
+      - 0.06470588235294122
+      - 0.032490974729241784
+  - text: Omar @NajraGalvz • 1d
+    confidence: 1
+    bbox:
+      - 0.13235294393382346
+      - 0.277978338898917
+      - 0.25
+      - 0.03610108303249093
+  - text: Lets just say something big will happen
+    confidence: 1
+    bbox:
+      - 0.1323529444117646
+      - 0.31768953023465696
+      - 0.42352941176470593
+      - 0.036101083032491044
+  - text: tomorrow
+    confidence: 1
+    bbox:
+      - 0.135195486372976
+      - 0.3603544414306472
+      - 0.10902079413918886
+      - 0.02658353557655535
+  - text: ...
+    confidence: 0.5
+    bbox:
+      - 0.5529411769607843
+      - 0.2851985562667003
+      - 0.02941176470588236
+      - 0.014440432352279431
+  - text: yre
+    confidence: 0.3
+    bbox:
+      - 0.5911764704595589
+      - 0.48014440473826714
+      - 0.07352941176470584
+      - 0.06498194945848379
+  - text: FY.CO.
+    confidence: 0.5
+    bbox:
+      - 0.5970588243627452
+      - 0.5523465703068592
+      - 0.09999999999999998
+      - 0.04693140794223827
+  - text: RAINI
+    confidence: 0.5
+    bbox:
+      - 0.6029411765842246
+      - 0.6823104693715131
+      - 0.07941176470588229
+      - 0.025270758122743597
+  - text: INT US
+    confidence: 1
+    bbox:
+      - 0.6029411776470588
+      - 0.7075812272111912
+      - 0.09411764705882353
+      - 0.02527075812274371
+  - text: • 587
+    confidence: 1
+    bbox:
+      - 0.07058823466911765
+      - 0.8880866427797833
+      - 0.05
+      - 0.02166064981949456
+  - text: 1] 6.6K
+    confidence: 0.5
+    bbox:
+      - 0.1852941169117647
+      - 0.8880866427797833
+      - 0.05882352941176472
+      - 0.02166064981949456
+  - text: • 13K
+    confidence: 1
+    bbox:
+      - 0.30882352886029407
+      - 0.8880866423285199
+      - 0.050000000000000044
+      - 0.02166064981949456
+  - text: thal 239K
+    confidence: 1
+    bbox:
+      - 0.42647058770588236
+      - 0.8880866423465704
+      - 0.05882352941176472
+      - 0.02527075812274371

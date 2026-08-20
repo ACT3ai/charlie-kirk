@@ -1,0 +1,16 @@
+source: cover_image/cover.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T12:40:53.926Z
+kind: image
+language: en-US
+text: whoassassinatedcharliekirk.com
+blocks:
+  - text: whoassassinatedcharliekirk.com
+    confidence: 1
+    bbox:
+      - 0.43583671573736443
+      - 0.6623046251797716
+      - 0.08761256838601733
+      - 0.020750066121419275
