@@ -1,0 +1,86 @@
+source: site/internals/static/img/evidence/dd2c778f30ab825794581d577fdd42887f0e25d141181846f8be0ce3a05dd57e.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T13:25:28.255Z
+kind: image
+language: en-US
+text: >-
+  Drone Drop Off
+
+  SAI
+
+  Charlies Tent
+
+  Plane designed for Drone drop-off (US Army's Bombardier Global 6500).
+
+  3 hours before @ 203 feet altitude, over water, 116 knot stall speed. Returned
+  23 minutes after
+
+  Assassination, dropped to 203' altititude @ 116 knots (pick up?). Flight
+  N1098L. Data from Gov flight public
+
+  website (AXLE10). Take-off: Biggs Army Airfield. Spy Program: HADES (High,
+  Accuracy, Detection &
+
+  Exploitation, System)
+blocks:
+  - text: Drone Drop Off
+    confidence: 1
+    bbox:
+      - 0.06831395317873307
+      - 0.03125000013817869
+      - 0.1918604680611385
+      - 0.052739500999450684
+  - text: SAI
+    confidence: 0.5
+    bbox:
+      - 0.9505813956427467
+      - 0.1049868766374693
+      - 0.0232558138307859
+      - 0.02887139081954959
+  - text: Charlies Tent
+    confidence: 1
+    bbox:
+      - 0.6671511672148488
+      - 0.6745406835537787
+      - 0.16279069153929482
+      - 0.04199474811553949
+  - text: Plane designed for Drone drop-off (US Army's Bombardier Global 6500).
+    confidence: 1
+    bbox:
+      - -8.072916498500468e-9
+      - 0.759398496831656
+      - 0.6458333333333333
+      - 0.0456015038490295
+  - text: 3 hours before @ 203 feet altitude, over water, 116 knot stall speed.
+      Returned 23 minutes after
+    confidence: 1
+    bbox:
+      - 0.00290696823458198
+      - 0.8083989507503168
+      - 0.8502907231965334
+      - 0.0503510499000549
+  - text: Assassination, dropped to 203' altititude @ 116 knots (pick up?). Flight
+      N1098L. Data from Gov flight public
+    confidence: 1
+    bbox:
+      - 0.002906987980111117
+      - 0.8556430435686627
+      - 0.9563953193886151
+      - 0.04724409580230715
+  - text: "website (AXLE10). Take-off: Biggs Army Airfield. Spy Program: HADES
+      (High, Accuracy, Detection &"
+    confidence: 1
+    bbox:
+      - 0.0028610722957582457
+      - 0.9027960732234379
+      - 0.875095731489886
+      - 0.05575589656829838
+  - text: Exploitation, System)
+    confidence: 1
+    bbox:
+      - 0.004360463050856769
+      - 0.9550000007008036
+      - 0.18895348935371284
+      - 0.04249999999999998

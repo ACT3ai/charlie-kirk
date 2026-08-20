@@ -1,0 +1,57 @@
+source: site/internals/static/img/evidence/4eae45b370e0fc320c9f4d4d3be1f6bd1c90d750451ae2b1faf4bebe34e276d0.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T13:25:21.922Z
+kind: image
+language: en-US
+text: |-
+  • 34105 Re tell Ceorge UT
+  34795 lover koad tyler robinon
+  3419 S River Rd St. George. UT
+  - COMPARE
+  = Hots Didnt Part 90 c
+  Aup 31 - Sep 5,2025
+blocks:
+  - text: • 34105 Re tell Ceorge UT
+    confidence: 0.5
+    bbox:
+      - 0.6739130426406471
+      - 0.014285714464285726
+      - 0.18260867906653366
+      - 0.010714285714285676
+  - text: 34795 lover koad tyler robinon
+    confidence: 1
+    bbox:
+      - 0.04347828046673205
+      - 0.6357142855357143
+      - 0.22608693993609882
+      - 0.010714285714285787
+  - text: 3419 S River Rd St. George. UT
+    confidence: 1
+    bbox:
+      - 0.46521738768115956
+      - 0.6285714287499999
+      - 0.2173913043478261
+      - 0.017857142857142905
+  - text: "- COMPARE"
+    confidence: 1
+    bbox:
+      - 0.021739139581192182
+      - 0.6928571426785715
+      - 0.09999999170717985
+      - 0.010714285714285787
+  - text: = Hots Didnt Part 90 c
+    confidence: 1
+    bbox:
+      - 0.12173914894499302
+      - 0.735714285892857
+      - 0.20434780950131623
+      - 0.010714285714285787
+  - text: Aup 31 - Sep 5,2025
+    confidence: 1
+    bbox:
+      - 0.6043478324797433
+      - 0.8785714283928572
+      - 0.13478260040283208
+      - 0.017857142857142905

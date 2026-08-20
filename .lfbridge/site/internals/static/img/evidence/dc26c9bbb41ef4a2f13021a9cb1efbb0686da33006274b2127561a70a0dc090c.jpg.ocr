@@ -1,0 +1,41 @@
+source: site/internals/static/img/evidence/dc26c9bbb41ef4a2f13021a9cb1efbb0686da33006274b2127561a70a0dc090c.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T13:25:21.706Z
+kind: image
+language: en-US
+text: |-
+  918
+  875
+  UVU Army ROTE
+  895
+blocks:
+  - text: "918"
+    confidence: 1
+    bbox:
+      - 0.912790697909986
+      - 0.04590163972221761
+      - 0.023255813598632713
+      - 0.03278688383425332
+  - text: "875"
+    confidence: 1
+    bbox:
+      - 0.12500000046123416
+      - 0.39672131165732927
+      - 0.026162790298461913
+      - 0.03606557307878411
+  - text: UVU Army ROTE
+    confidence: 1
+    bbox:
+      - 0.8212209342923329
+      - 0.43566591506706787
+      - 0.12209301757812507
+      - 0.0397439207503274
+  - text: "895"
+    confidence: 1
+    bbox:
+      - 0.42441860440814766
+      - 0.7016393447053548
+      - 0.021802326202392586
+      - 0.026229507497955495

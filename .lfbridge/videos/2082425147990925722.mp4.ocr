@@ -1,0 +1,101 @@
+source: videos/2082425147990925722.mp4
+status: done
+engine: vision
+level: fast
+generated: 2026-08-20T13:25:24.880Z
+kind: video
+language: en-US
+stride_seconds: 15
+frames_sampled: 6
+truncated: false
+text: |-
+  IS HAPPENING JUST AS
+  WATCH FULL EPISODES AT
+  ITfuBE.COMniEDAcfEDEW
+  DAC
+  ED
+
+  SO TODAY WE'RE OINED
+  WATCH FULL EPISODES AT
+  ITfuBE.COM/REDAcfEDEW
+  DAC
+  ED
+
+  ALL THE WAY UP
+  WATCH FULL EPISODES AT
+  IrnJBE.COMIREDAcfEDEWS
+  DAC
+  ED
+
+  JESSE BELTRON
+  WATCH FULL EPISODES AT
+  IrnJBE.COMJREDAcfEDEWS _
+  DAC
+  ED
+
+  THE BIG BREAKING NEWS
+  WATCH FULL EPISODES AT
+  IrnJBE.COMniEDAcfEDEWS "
+  DAC
+  ED
+
+  AND _ THINK THEY'RE
+  WATCH FULL EPISODES AT
+  IrnJBE.COMniEDAcfEDEWS
+  DAC
+  ED
+blocks:
+  - text: |-
+      IS HAPPENING JUST AS
+      WATCH FULL EPISODES AT
+      ITfuBE.COMniEDAcfEDEW
+      DAC
+      ED
+    confidence: 0.6
+    start: 0
+    end: 15
+  - text: |-
+      SO TODAY WE'RE OINED
+      WATCH FULL EPISODES AT
+      ITfuBE.COM/REDAcfEDEW
+      DAC
+      ED
+    confidence: 0.6
+    start: 15
+    end: 30
+  - text: |-
+      ALL THE WAY UP
+      WATCH FULL EPISODES AT
+      IrnJBE.COMIREDAcfEDEWS
+      DAC
+      ED
+    confidence: 0.6
+    start: 30
+    end: 45
+  - text: |-
+      JESSE BELTRON
+      WATCH FULL EPISODES AT
+      IrnJBE.COMJREDAcfEDEWS _
+      DAC
+      ED
+    confidence: 0.6
+    start: 45
+    end: 60
+  - text: |-
+      THE BIG BREAKING NEWS
+      WATCH FULL EPISODES AT
+      IrnJBE.COMniEDAcfEDEWS "
+      DAC
+      ED
+    confidence: 0.6
+    start: 60
+    end: 75
+  - text: |-
+      AND _ THINK THEY'RE
+      WATCH FULL EPISODES AT
+      IrnJBE.COMniEDAcfEDEWS
+      DAC
+      ED
+    confidence: 0.6
+    start: 75
+    end: 90

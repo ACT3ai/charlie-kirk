@@ -1,0 +1,35 @@
+source: videos/2082585546191262169.mp4
+status: done
+engine: vision
+level: fast
+generated: 2026-08-20T13:25:27.782Z
+kind: video
+language: en-US
+stride_seconds: 15
+frames_sampled: 12
+truncated: false
+text: |-
+  C,I.ND,IC
+
+  C,I.ND,ICF
+
+  C,I.ND,4CF
+
+  C,4ND,ICF
+blocks:
+  - text: C,I.ND,IC
+    confidence: 0.5
+    start: 15
+    end: 30
+  - text: C,I.ND,ICF
+    confidence: 0.5
+    start: 30
+    end: 45
+  - text: C,I.ND,4CF
+    confidence: 0.5
+    start: 45
+    end: 60
+  - text: C,4ND,ICF
+    confidence: 0.5
+    start: 60
+    end: 75

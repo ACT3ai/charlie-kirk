@@ -1,0 +1,25 @@
+source: site/internals/static/img/evidence/dcec67496a2cb1fb30a25fee9523f21c1932263e4e03677163e9c4504d617816.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T13:25:29.083Z
+kind: image
+language: en-US
+text: |-
+  NO
+  Smoking
+blocks:
+  - text: NO
+    confidence: 1
+    bbox:
+      - 0.7529069764039094
+      - 0.3624031004465025
+      - 0.020348837599158287
+      - 0.021317829688390244
+  - text: Smoking
+    confidence: 1
+    bbox:
+      - 0.7529069768231222
+      - 0.3914728683607427
+      - 0.018895348533988
+      - 0.005813953156272422

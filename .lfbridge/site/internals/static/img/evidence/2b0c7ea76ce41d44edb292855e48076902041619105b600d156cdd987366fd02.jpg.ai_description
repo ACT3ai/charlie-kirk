@@ -1,0 +1,121 @@
+source: site/internals/static/img/evidence/2b0c7ea76ce41d44edb292855e48076902041619105b600d156cdd987366fd02.jpg
+status: done
+engine: gemini-flash-latest
+provider: gemini
+generated: 2026-08-20T13:25:28.373Z
+kind: image
+description: >-
+  ## Overview
+
+  This image is a direct digital screenshot of a Google Trends web interface
+  displaying search interest data for the term "Michael Harlan". The interface
+  is set against a very pale blue-gray background and shows a line graph titled
+  "Interest over time". The trend line remains at zero across most of the
+  timeline with two distinct sharp spikes reaching an index value of 100, one
+  occurring around late 2024 and another highlighted by a tooltip on August
+  24–30, 2025.
+
+
+  ## Hyper-Detail
+
+  The image presents standard Google Trends UI components rendered digitally:
+
+  - **Top Search/Comparison Area**:
+    - Top-left card (white rounded rectangle with a subtle shadow/border): Contains a solid blue circular marker (dot) followed by the bold search term text "Michael Harlan" and a smaller gray subtext underneath reading "Search term".
+    - Top-right card: A light periwinkle/lavender-tinted rounded rectangular button or container featuring a gray plus sign `+` and the text "Compare".
+  - **Filter Row**:
+    - Located beneath the search term cards, containing four rounded dropdown filter buttons with white backgrounds and gray downward-pointing chevron arrows:
+      1. "Washington DC (Hagersto..." (truncated location parameter)
+      2. "Past 12 months"
+      3. "All categories"
+      4. "Web Search"
+  - **Main Chart Container**:
+    - A large white card with rounded corners occupying the bottom two-thirds of the image.
+    - Heading at the top-left: "Interest over time" followed by an outlined circular question mark icon `(?)`.
+    - Utility icons at the top-right: A download icon (down arrow into tray), an embed/code icon (`<>`), and a share icon (three connected nodes).
+    - Graph Area:
+      - Y-axis labeled on the left with horizontal light-gray guide lines at values `100`, `75`, `50`, `25`, and `0` (implicit baseline).
+      - X-axis labeled along the bottom with date markers: "Oct 20, 2024", "Feb 9, 2025", "Jun 1, 2025", and "Sep 21, 2025".
+      - Data Line: A solid blue line (`#4285F4` Google blue) running along the 0-value baseline. It displays a sharp triangular peak up to value 100 shortly after October 2024, drops immediately back to 0, stays flat until late August 2025, where it produces a second identical sharp peak up to 100 before descending back to 0.
+      - Hover Tooltip Box: A white rectangular box with a thin gray outline positioned adjacent to the second peak. It contains the date range "Aug 24 – 30, 2025" in bold, and underneath it shows the gray text "Michael Harlan" aligned to the left and the blue number "100" aligned to the right. A small blue circular indicator dot sits directly at the apex of the second spike.
+
+  ## Composition
+
+  - **Layout & Structure**: A user interface screengrab composed on a flat 2D
+  plane.
+
+  - **Top Section (FRAME-TOP, ~20% of frame)**: Contains the query cards and
+  filter buttons.
+
+  - **Main Section (FRAME-CENTER to FRAME-BOTTOM, ~75% of frame)**: Occupied by
+  the "Interest over time" graph card.
+
+  - **Graph Spikes**:
+    - First spike located at FRAME-LEFT-CENTER (approx. 15% from the left edge).
+    - Second spike located at FRAME-RIGHT-CENTER (approx. 80% from the left edge).
+  - **Balance & Symmetry**: Asymmetrical data distribution with two sharp
+  vertical features creating strong vertical focal points against a
+  predominantly horizontal grid layout.
+
+
+  ## Location
+
+  - **Indeterminate**: This is a digital screenshot of software UI and does not
+  represent a physical geographic location. The UI filter explicitly references
+  "Washington DC (Hagersto...", United States, as the geographical scope of the
+  data.
+
+
+  ## Setting & Place
+
+  - **Indeterminate**: Digital graphical user interface (Google Trends web
+  application).
+
+
+  ## Lighting
+
+  - **Not Applicable**: Digital flat UI rendering. High-key, clean digital
+  illumination with flat vector fills, subtle drop shadows on interface cards,
+  and no photographic light sources.
+
+
+  ## Cinematography
+
+  - **Not Applicable**: 2D digital screen capture. Flat orthogonal projection
+  with zero optical distortion, infinite depth of field (all interface elements
+  are sharply rendered), and no camera lens properties.
+
+
+  ## People
+
+  No people in frame.
+
+
+  ## Objects & Text
+
+  - **Interactive UI Elements**: Dropdown menus, buttons, icons (download, code
+  embed, share, help/tooltip).
+
+  - **Legible Text**:
+    - "Michael Harlan"
+    - "Search term"
+    - "+ Compare"
+    - "Washington DC (Hagersto..."
+    - "Past 12 months"
+    - "All categories"
+    - "Web Search"
+    - "Interest over time"
+    - "100", "75", "50", "25"
+    - "Oct 20, 2024", "Feb 9, 2025", "Jun 1, 2025", "Sep 21, 2025"
+    - "Aug 24 – 30, 2025"
+    - "Michael Harlan 100"
+
+  ## Colors & Mood
+
+  - **Color Palette**: Off-white/light blue-gray background (`#EDF2F7` /
+  `#F0F4F9` style), pure white (`#FFFFFF`) card containers, primary blue
+  (`#4285F4`) data series line and accents, medium-to-dark neutral grays
+  (`#3C4043`, `#5F6368`, `#70757A`) for typography and grid lines.
+
+  - **Mood**: Analytical, objective, sterile, modern digital corporate
+  interface.

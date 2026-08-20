@@ -1,0 +1,49 @@
+source: site/internals/static/img/evidence/dc185a8161adfaee2daa5deb42d22a8001d365e5a328b380e1e3dcdddf80e4f2.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T13:25:21.663Z
+kind: image
+language: en-US
+text: |-
+  AMER
+  ГОМ
+  PROVE ME WRONG
+  12:23:42:36
+  (RENCH RIVIERA
+blocks:
+  - text: AMER
+    confidence: 1
+    bbox:
+      - 0.7384615367307693
+      - 0.04615384643956044
+      - 0.21153846153846156
+      - 0.02857142857142858
+  - text: ГОМ
+    confidence: 0.3
+    bbox:
+      - 0.738461539775641
+      - 0.07252747274725269
+      - 0.2269230769230769
+      - 0.02637362637362639
+  - text: PROVE ME WRONG
+    confidence: 1
+    bbox:
+      - 0.23437282944542231
+      - 0.1193245262981979
+      - 0.7660750169020432
+      - 0.09045348953414745
+  - text: 12:23:42:36
+    confidence: 1
+    bbox:
+      - 0.3188095989634636
+      - 0.37010848693580334
+      - 0.43161157461313093
+      - 0.048794014899285365
+  - text: (RENCH RIVIERA
+    confidence: 1
+    bbox:
+      - 0.2230769205288462
+      - 0.44175824217032966
+      - 0.24230769230769234
+      - 0.03296703296703307

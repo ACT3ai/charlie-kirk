@@ -1,0 +1,73 @@
+source: site/internals/static/img/evidence/4d3f3400b29d2b1f20ac15ec83b6f5a31790d1d04cbf74bf3c94c042c1f86a6f.jpg
+status: done
+engine: vision
+level: accurate
+generated: 2026-08-20T13:25:21.755Z
+kind: image
+language: en-US
+text: |-
+  2017.
+  Benjamin Netanyahu is surrounded by his security detail as he
+  talks to the media after arriving with his wife Sara (L) at Sydney
+  airport. Picture: AFP.
+  2025
+  Kirk's Security Detail
+  2017
+  = PM Security Detail
+blocks:
+  - text: "2017."
+    confidence: 1
+    bbox:
+      - 0.7658643332822758
+      - 0.30166666691666666
+      - 0.17505470459518602
+      - 0.04999999999999993
+  - text: Benjamin Netanyahu is surrounded by his security detail as he
+    confidence: 1
+    bbox:
+      - 0.04595185441739611
+      - 0.39500000005208336
+      - 0.8862144420131292
+      - 0.02833333333333332
+  - text: talks to the media after arriving with his wife Sara (L) at Sydney
+    confidence: 1
+    bbox:
+      - 0.04376368065645511
+      - 0.4266666666083334
+      - 0.9015317286652079
+      - 0.02833333333333332
+  - text: "airport. Picture: AFP."
+    confidence: 1
+    bbox:
+      - 0.045951858580806505
+      - 0.45833333352380956
+      - 0.2975929978118162
+      - 0.026666666666666616
+  - text: "2025"
+    confidence: 1
+    bbox:
+      - 0.2954048145088743
+      - 0.8649999999212963
+      - 0.18161925601750545
+      - 0.04833333333333334
+  - text: Kirk's Security Detail
+    confidence: 1
+    bbox:
+      - 0.056247225367712095
+      - 0.9469845789612191
+      - 0.4256959744042328
+      - 0.041846974690755157
+  - text: "2017"
+    confidence: 1
+    bbox:
+      - 0.7636761481947484
+      - 0.8616666664722222
+      - 0.16630196936542674
+      - 0.046666666666666634
+  - text: = PM Security Detail
+    confidence: 1
+    bbox:
+      - 0.5317286682557049
+      - 0.9499999999285713
+      - 0.42669584245076586
+      - 0.036666666666666625
