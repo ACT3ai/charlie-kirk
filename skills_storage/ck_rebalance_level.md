@@ -66,7 +66,8 @@ structural rebalancing. It does NOT auto-execute. It comes back with a
 proposal first. The user reviews, approves, or adjusts. Only then does
 it carry out the changes.
 
-The input text ($ARGUMENTS) is flexible:
+TEXT_INPUT_TO_SKILL is any text the user typed after /ck_rebalance_level.
+It is the run text for this skill, and it is flexible:
   * A directory name or path to focus on
   * A description of a problem ("Influencers has too many pages")
   * General guidance ("look at the whole FBI section")
@@ -215,7 +216,7 @@ NOTHING to disk.
 
 STEP 1: PARSE INPUT AND DETERMINE SCOPE
 
-* Read $ARGUMENTS.
+* Read TEXT_INPUT_TO_SKILL.
 * Extract:
     - TARGET: which Level 2 directory (or directories) to analyze.
       If input names a specific dir, use it. If input is a problem

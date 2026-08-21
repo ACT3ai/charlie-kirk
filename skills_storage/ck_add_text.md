@@ -61,7 +61,10 @@ specific stated edit — for example, restoring content AI previously destroyed.
 
 
 
-This skill has four modes. Read $ARGUMENTS to decide which mode to run.
+TEXT_INPUT_TO_SKILL is any text the user typed after /ck_add_text. It is the run
+text for this skill: either the content to add, or a mode instruction.
+
+This skill has four modes. Read TEXT_INPUT_TO_SKILL to decide which mode to run.
 
   IMPROVE MODE — triggered when the argument mentions improving, fixing, assessing,
   or upgrading pages. Examples:
@@ -105,7 +108,7 @@ ADD TEXT MODE
 
 You are helping the user add new information to the Charlie Kirk investigation file.
 
-The user provides text content as an argument: $ARGUMENTS
+The user provides the text content in TEXT_INPUT_TO_SKILL.
 
 This text may come from an X post, a news article, a transcript, personal notes,
 or any other source. Your job is to insert it into the correct place in the file,
@@ -186,7 +189,7 @@ ran, what came back, and what it wrote.
 
   ## Input
   Mode: {X POST MODE | ADD TEXT MODE}
-  Raw $ARGUMENTS (verbatim, including any line breaks or URL wrapping):
+  Raw TEXT_INPUT_TO_SKILL (verbatim, including any line breaks or URL wrapping):
   ```
   {exact raw input}
   ```
@@ -344,7 +347,7 @@ This mode processes one or more X/Twitter post URLs. For each URL it:
 X POST STEP 0: PARSE INPUT AND DETECT MULTI-URL MODE
 ============================
 
-Parse $ARGUMENTS to identify all components:
+Parse TEXT_INPUT_TO_SKILL to identify all components:
 
 **Component 1: One or more X/Twitter URLs**
 * URLs containing /status/ from x.com or twitter.com
@@ -2521,7 +2524,7 @@ Pages are organized as:
   * Level 3: {SITE_DOCS_DIR}/{TopicDir}/{specific-page}.md — individual topic pages
              that are linked from a Level 2 TOC.
 
-SCOPE PARSING — decide which pages to process based on $ARGUMENTS:
+SCOPE PARSING — decide which pages to process based on TEXT_INPUT_TO_SKILL:
 
   * "improve all" or "all pages" or "every page"
       → collect every overview.md (Level 2) and every other .md (Level 3)
@@ -2659,7 +2662,7 @@ CREATE STEPS
 ------------
 
 CREATE STEP 1: Identify scope
-  * From $ARGUMENTS, determine:
+  * From TEXT_INPUT_TO_SKILL, determine:
     - Which Level 2 page is the parent (the .md file whose TOC will be updated).
     - What Level 3 pages need to be created (titles, content, file names).
   * Read the parent Level 2 page fully.
