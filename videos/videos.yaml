@@ -13850,7 +13850,7 @@ level_3:
       site_level_2: ["Israel"]
       site_page: "site/docs/Israel/overview.mdx"
       number_of_videos: 0
-      number_of_videos_recursive: 17
+      number_of_videos_recursive: 18
       publishable: true
       needs_split: false
       videos: []
@@ -13900,11 +13900,73 @@ level_3:
             _key: Vid_Commentary_Israel_Ties
             site_level_2: []
             site_page: ""
-            number_of_videos: 1
-            number_of_videos_recursive: 1
+            number_of_videos: 2
+            number_of_videos_recursive: 2
             publishable: true
             needs_split: false
             videos:
+              - video:
+                  title: "Frank Turek on the September 9 Zoom With Israeli Officials"
+                  cid: "QmSWJ3kPpm6JfwanDp3tvXhm97e5SpRRimytvUZJCzXX4i"
+                  ipfs_pinned: true
+                  sha256: "927c3e20837d877ee672159ad6d5a863075fea62fe41dc09d5993b0773de2d76"
+                  file_path: "~/BGit/Bryan_git/charlie-kirk/videos/Frank_Kirk_9_9_2025.mp4"
+                  media_present: "video"
+                  file_size_bytes: 4696619
+                  duration: "00:00:53"
+                  audio_file: ""
+                  transcription_file: "~/BGit/Bryan_git/charlie-kirk/videos/Frank_Kirk_9_9_2025.transcription"
+                  transcription_source: "video"
+                  transcription_engine: "apple-speechanalyzer (device: on-device, language: en)"
+                  transcription_generated: "2026-08-23 18:01:39"
+                  transcript_covers: "00:00:53"
+                  transcript_complete: true
+                  ai_description_file: ""
+                  ai_description_provider: ""
+                  ai_description_engine: ""
+                  ai_description_generated: ""
+                  ai_description: "A short podcast segment in which Frank Turek, speaking to a host he addresses as \"Jack\", describes a scheduled Zoom meeting Charlie Kirk convened on September 9, 2025 with two officials in Israel and one person Turek calls a Jewish Defender of Israel in the United States. Turek says he was physically in the room along with Blake Neff, with Mikey McCoy in and out, that the meeting ran 50 minutes, and that Kirk was asking the participants how he could better defend Israel publicly. He concludes that the idea Charlie was giving up on Israel is false."
+                  shot_timeline: ""
+                  people_seen: "* **Frank Turek**: Christian apologist and Charlie Kirk mentor, speaking to camera in a podcast setting."
+                  onscreen_text: ""
+                  ocr_file: ""
+                  source_url: ""
+                  source_author: "Frank Turek (podcast segment, host addressed as \"Jack\")"
+                  source_platform: ""
+                  added_date: "2026-08-23"
+                  manifest_description: "Frank Turek first-person account of the Sept 9 2025 Zoom call with two Israeli officials at TPUSA headquarters"
+                  duplicate_paths: []
+                  video_page: "~/BGit/Bryan_git/charlie-kirk/site/docs/Videos/Vid_Israel/Vid_Commentary_Israel_Ties/Vid_Frank_Turek_Sept_9_Zoom.mdx"
+                  next_video: "~/BGit/Bryan_git/charlie-kirk/site/docs/Videos/Vid_Israel/Vid_Commentary_Israel_Ties/Vid_Rustyrockets_Russell_Brand_2055025.mdx"
+                  on_pages:
+                    - page: "~/BGit/Bryan_git/charlie-kirk/site/docs/Israel/sept-9-zoom-israeli-officials.mdx"
+                    - page: "~/BGit/Bryan_git/charlie-kirk/site/docs/Israel/overview.mdx"
+                    - page: "~/BGit/Bryan_git/charlie-kirk/site/docs/Israel/Charlie_Israel_Friction.mdx"
+                    - page: "~/BGit/Bryan_git/charlie-kirk/site/docs/Messages/sept-8-donor-group-chat.mdx"
+                    - page: "~/BGit/Bryan_git/charlie-kirk/site/docs/Messages/frank-turek-messages.mdx"
+                    - page: "~/BGit/Bryan_git/charlie-kirk/site/docs/Messages/if-i-go-against-israel.mdx"
+                    - page: "~/BGit/Bryan_git/charlie-kirk/site/docs/Timeline/high-pressure-meeting-sept-9.mdx"
+                    - page: "~/BGit/Bryan_git/charlie-kirk/site/docs/People/rabbi-pesach-wolicki.mdx"
+                    - page: "~/BGit/Bryan_git/charlie-kirk/site/docs/Suspicious/Israel/donor-texts-48-hours.mdx"
+                    - page: "~/BGit/Bryan_git/charlie-kirk/site/docs/Charlie/Text_Messages/leave-pro-israel-whatsapp.mdx"
+                    - page: "~/BGit/Bryan_git/charlie-kirk/site/docs/Charlie/Text_Messages/kill-me-03-break-away-pro-israel.mdx"
+                    - page: "~/BGit/Bryan_git/charlie-kirk/site/docs/Charlie/Fear_Kill_Warnings/Sept_48_Hours_Donor_Texts/leave-pro-israel-cause-line.mdx"
+                    - page: "~/BGit/Bryan_git/charlie-kirk/site/docs/Charlie/Fear_Kill_Warnings/August_13_Break_Away/break-away-quote.mdx"
+                  should_be_on_pages:
+                    - page: "~/BGit/Bryan_git/charlie-kirk/site/docs/Israel/sept-9-zoom-israeli-officials.mdx"
+                    - page: "~/BGit/Bryan_git/charlie-kirk/site/docs/Israel/overview.mdx"
+                    - page: "~/BGit/Bryan_git/charlie-kirk/site/docs/Israel/Charlie_Israel_Friction.mdx"
+                    - page: "~/BGit/Bryan_git/charlie-kirk/site/docs/Messages/sept-8-donor-group-chat.mdx"
+                    - page: "~/BGit/Bryan_git/charlie-kirk/site/docs/Messages/frank-turek-messages.mdx"
+                    - page: "~/BGit/Bryan_git/charlie-kirk/site/docs/Messages/if-i-go-against-israel.mdx"
+                    - page: "~/BGit/Bryan_git/charlie-kirk/site/docs/Timeline/high-pressure-meeting-sept-9.mdx"
+                    - page: "~/BGit/Bryan_git/charlie-kirk/site/docs/People/rabbi-pesach-wolicki.mdx"
+                    - page: "~/BGit/Bryan_git/charlie-kirk/site/docs/Suspicious/Israel/donor-texts-48-hours.mdx"
+                    - page: "~/BGit/Bryan_git/charlie-kirk/site/docs/Charlie/Text_Messages/leave-pro-israel-whatsapp.mdx"
+                    - page: "~/BGit/Bryan_git/charlie-kirk/site/docs/Charlie/Text_Messages/kill-me-03-break-away-pro-israel.mdx"
+                    - page: "~/BGit/Bryan_git/charlie-kirk/site/docs/Charlie/Fear_Kill_Warnings/Sept_48_Hours_Donor_Texts/leave-pro-israel-cause-line.mdx"
+                    - page: "~/BGit/Bryan_git/charlie-kirk/site/docs/Charlie/Fear_Kill_Warnings/August_13_Break_Away/break-away-quote.mdx"
+                    - page: "~/BGit/Bryan_git/charlie-kirk/site/docs/People/frank-turek.mdx"
               - video:
                   title: "@rustyrockets - Russell Brand"
                   cid: "Qma3dQgv74Lr1W6yipQU8SUZYY7WNch7P18XQ9ah15rTP2"
