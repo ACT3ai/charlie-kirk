@@ -91,6 +91,146 @@ ADS-B (Automatic Dependent Surveillance-Broadcast) has been **FAA-mandated since
 6. Why did the tail number "n888kg" reportedly trend in Utah Google searches on September 9, the day *before* the shooting?
 
 
+## The owner's statement, in full and unedited
+
+Everything on this page about "the owner's explanation" traces back to a single document: a statement **[Derek Maxfield](/People/derek-maxfield)** posted to social media on the afternoon of **September 11, 2025**, the day after the shooting. Summaries of it have been quoted, paraphrased, and argued over for months. The full text is short, it is a primary source, and it is reproduced here verbatim so a reader can weigh it without an intermediary. It ran across two images; the first carries a Facebook post header showing the account name, a verified badge, a "1m" timestamp and a public-audience globe icon, with the word "Shelaine" rendered as a blue user tag at the start.
+
+> Shelaine and I join our community, our state and our nation in mourning the death of Charlie Kirk and we pray for his family and loved ones during this difficult and tragic time. His death and the way it occurred was both horrifying and senseless. We pray that the extensive efforts by law enforcement to locate Mr. Kirk's killer will be swift and successful.
+>
+> As often happens, unfortunately, in the wake of such terrifying and public events, a variety of baseless theories and suspicions around Mr. Krik's murder immediately took hold on social media, including one that has unfairly impacted our family. To set the record straight, we provide the following facts.
+>
+> Yesterday, at approximately 1:20 pm MT a private aircraft owned by one of our companies, with tail # N888KG, departed the Provo Airport (PVU) for Page, AZ, pursuant to a prescheduled flight plan. Occupants at take-off included two pilots and no passengers. N888KG arrived at the Page, AZ Airport (PGA) at approximately 1:55 pm MT, 12:55 pm local time. Upon arrival, I, Derek Maxfield, boarded N888KG, along with 7 additional passengers for the return trip to PVU. N888KG departed PGA at approximately 1:40 pm local time (2:40 pm MT) and arrived at PVU at approximately 3:15 pm MT. Radar services with air traffic control were terminated in mutual agreement between Denver FAA center and N888KG approximately 10 miles from landing at PGA, which is consistent with generally accepted standard practice when flying in and out of non-towered airports like PGA. N888KG pilots followed all FAA requirements and protocols, tower directions and the predetermined flight plan. This roundtrip was made at my request and solely for my purposes. Any suggestion that the flights by N888KG yesterday are in any way connected to the tragic shooting of Mr. Kirk is inaccurate, false and without any credible basis of any kind. To our knowledge, no one associated with yesterday's flights by N888KG has been contacted by law enforcement for any reason.
+>
+> We ask that the focus remain on praying for and supporting those who have been deeply impacted by yesterday's events and on the critical efforts of law enforcement to bring Mr. Kirk's murderer to justice.
+
+*("Krik's" is spelled that way in the original.)*
+
+Three things in the statement are more specific than the paraphrases of it:
+
+* **It gives times to the minute** — five of them — which makes it falsifiable against tracking data rather than merely reassuring. That is the opposite of what a vague denial looks like.
+* **It states the radar termination point explicitly**: "approximately 10 miles from landing at PGA," by "mutual agreement between Denver FAA center and N888KG." Radar service termination on approach to a non-towered field is ordinary; a controller releases the aircraft because there is no tower to hand it to. This is a different thing from a transponder being switched off, and the statement is careful to describe the former.
+* **It says the aircraft departed Provo with two pilots and no passengers.** If true, the outbound leg — the one that departed shortly after the shooting and drew all the attention — carried nobody who could have been fleeing anything.
+
+## The times do not line up, and that is worth stating plainly
+
+The owner's statement and the flight-tracking record are the two accounts of the same afternoon, and they disagree on every leg. Neither is a small discrepancy of rounding.
+
+| Event | Owner's statement (Sept 11) | FlightRadar24, as reported by *People* |
+|---|---|---|
+| Departs Provo (PVU) | **~1:20 pm MT** | **~1:11 pm** local |
+| ADS-B tracking lost | (described only as radar service terminated ~10 mi from PGA) | **~1:43 pm**, near the northern Arizona border |
+| Arrives Page (PGA) | **~1:55 pm MT** (12:55 pm local) | *(not stated — aircraft was off tracking)* |
+| Departs Page (PGA) | **1:40 pm local = 2:40 pm MT** | tracking reappeared **"shortly after 2:30 pm"** as it departed PGA |
+| Arrives back at Provo | **~3:15 pm MT** | **3:06 pm** |
+
+The gaps are roughly nine minutes on departure, ten minutes on the return, and an ambiguous window on the Page departure. They are small, but they run in a consistent direction — the tracker has the aircraft moving earlier than the owner does at both ends.
+
+There is also a **time-zone trap** buried in this comparison, and it has caught commentators on both sides of this case. Page, Arizona is on **Mountain Standard Time year-round** because Arizona does not observe daylight saving, while Provo in September is on **Mountain Daylight Time**. That is the one-hour offset the owner's statement is carefully spelling out when it writes "1:55 pm MT, 12:55 pm local time." Anyone re-deriving these timings from a tracker must handle that offset, and several published attempts have not. The same daylight-saving error — assuming UTC−7 for Utah on September 10 when the correct offset was **UTC−6** — is the error later conceded and corrected in the [SU-BTT](/Planes/SU-BTT) analysis, and it is the single most common source of bogus "impossible timing" claims across this entire investigation.
+
+None of this resolves whether the gap was routine. It does mean that anyone citing "the flight records" against "the owner's statement" is comparing two accounts that were never reconciled in public.
+
+## The aircraft's technical identity
+
+A tracker record card circulated on X, credited **© KnightHammer Aviation**, gives the airframe identity independent of the registration:
+
+| Field | Value |
+|---|---|
+| Aircraft | **Bombardier Challenger 300** |
+| Type code | **CL30** |
+| Serial number | **20402** |
+| Age at capture | **12 years** (i.e. a 2013 airframe) |
+| **Mode S / ICAO hex** | **AC3C75** |
+| Airline | Private owner |
+| Operator | N/A |
+| Country of registration | United States |
+
+The **Mode S code AC3C75** is the durable identifier. It is what allows a claim about this aircraft to be checked against raw ADS-B archives even if the registration were later changed or the tail re-marked, and it is the field that should be quoted in any future audit of the September 10 track.
+
+## The aircraft is blocked from public tracking — and that is a formal FAA program, not a cover-up
+
+The most consequential detail in the original X thread has been widely repeated without being understood. A screenshot from **FlightAware** included in the thread shows:
+
+> **N888KG - N888KG LLC (LEHI UT)**
+>
+> …8KG) is not available for public tracking per request from th…
+>
+> *That's my airplane! How do I track my airplane on FlightAware?*
+>
+> …aircraft owner/operators with secure access to their own flight data. Cont…
+
+A second capture in the same set — the KnightHammer record card above — shows the flight-history panel returning **"No flights found."** The X poster's caption on that image read simply: *"And they are a ghost as well."*
+
+This needs to be stated precisely, because it is the load-bearing fact under the "ghost plane" framing:
+
+* **Blocking is a formal, legal, opt-in program.** Under the FAA's **LADD** (Limiting Aircraft Data Displayed) program — and, since the 2024 FAA reauthorisation, an expanded right for private owners to request that their registration data be withheld from public display — an owner may request that their aircraft be suppressed from the public feeds that FlightAware, Flightradar24 and similar services publish. Thousands of business aircraft are enrolled. It is a privacy request filed with the government, not a technical evasion.
+* **Blocking does not turn off the transponder.** A LADD-blocked aircraft still broadcasts ADS-B, is still tracked by ATC, and is still visible to any receiver on the ground — which is exactly why **ADS-B Exchange**, which by policy does not honour blocking requests, still carries such aircraft.
+* **Therefore "No flights found" on FlightAware is not evidence of anything about September 10.** It is evidence that the owner filed a privacy request at some point. It would return the same result for any date.
+
+That distinction cuts both ways, and honesty requires both halves. It defuses the "ghost plane" rhetoric. But it also means the public record for this aircraft is thin *by the owner's own election*, and that the only way to check the September 10 timings against a primary source is through ADS-B Exchange's unfiltered archive or through an FAA records request — neither of which any of the circulating posts appears to have done.
+
+## The original X post that started it
+
+The thread that launched the entire N888KG discussion was posted by **@stellarman22** on the evening of September 10, 2025 — within hours of the shooting. Its text in full:
+
+> 🚨 A private jet under the tail number N888KG left Provo airport an hour after the shooting
+>
+> Suspiciously 30 mins into the flight it drops off of ADS-B Illegally and reappears headed back to Provo approx. an hour later
+>
+> Why did this plane turn off its radar? Where is the shooter?
+
+The post carried four images: two ADS-B Exchange map captures with red annotations, the FlightAware blocking notice quoted above, and a photograph of a white Challenger 300 with a dark blue tail on an apron. The red annotations on the maps read, verbatim:
+
+> N888KG - Provo Regional Airport is 5 miles from Utah Valley University
+>
+> Times in UTC
+> Assassination: 18:10
+> Take off: 19:12
+> Illegally turns off ADS-B radar: 19:44
+
+and on the second map:
+
+> 20:30 UTC - Reappears on ADS-B radar
+
+Converting those UTC figures at **UTC−6** (Utah was on Mountain Daylight Time on September 10):
+
+| Annotation | UTC | Utah local (MDT) |
+|---|---|---|
+| "Assassination" | 18:10 | **12:10 pm** |
+| Take off | 19:12 | **1:12 pm** |
+| ADS-B lost | 19:44 | **1:44 pm** |
+| Reappears | 20:30 | **2:30 pm** |
+
+Those converted times land within a minute or two of the FlightRadar24 figures reported by *People* — 1:11 pm departure, 1:43 pm signal loss, reappearance shortly after 2:30 pm — which is a genuine point in the original poster's favour: **the underlying timings he published were sound.** The elapsed gap is roughly **46 minutes**.
+
+Two of his characterisations, however, do not hold:
+
+* **"Illegally."** The post asserts illegality as fact. The owner's account, and the ordinary operation of radar-service termination inbound to a non-towered field, both describe a lawful sequence. Nothing published establishes an intentional unauthorised shutoff, which is what would be illegal.
+* **The distance figure.** The annotation says Provo airport "is 5 miles from Utah Valley University." Elsewhere on this page the figure is given as a 10–12 minute drive, and *People* described PVU as "less than 15 minutes drive from UVU's campus." All three are compatible; five straight-line miles is the shortest of them. The point is only that the number cited in the viral graphic is a straight-line distance, not a driving one.
+
+## The Tuba City extension of the theory
+
+A follow-on post the same evening, from **@i_aver**, pushed the geography further south:
+
+> Flight path leads past Page, AZ to super-remote "Tuba City Airport". Perfect for your quick landing and hit team transfer needs.
+
+The attached images showed the same annotated ADS-B Exchange track alongside four Google Maps panels: a listing card for **Tuba City Airport** (Arizona 86045, phone (800) 992-7433, with a Google "popular times" bar chart), a regional map with a heavy black arrow drawn from the Provo/Salt Lake City area down to a red pin on Tuba City, and a satellite view of a single asphalt strip running northwest-to-southeast through bare desert. The tracker's status bar in that capture is stamped **"Date: 2023-09-10, Time: 19:44:00 Z"** — the year is wrong in the graphic; the underlying event is September 10, **2025**.
+
+Tuba City Airport (**TBC**) is a real, small, publicly-owned field on the Navajo Nation, roughly 55 miles southeast of Page. The argument being made is one of **capability, not evidence**: that a remote unattended strip within the dark window's range would be a suitable transfer point. Nothing in the post places the aircraft there. The track shown runs *past* Tuba City toward Page, which is where the owner's statement says it landed and where tracking re-acquired it on departure.
+
+Treat this as what it is — a map exercise identifying what would have been *possible* during a 46-minute coverage gap, offered without any positive evidence that it happened.
+
+## What *People* reported, and what it did not
+
+The mainstream account most often cited on this topic is *People* magazine's **"Owner of Plane at Center of Charlie Kirk Shooter Conspiracy Theory Speaks Out,"** by **Colson Thayer**, updated **September 12, 2025, 10:25 AM EDT**. Its reporting is the source of the FlightRadar24 timings in the comparison table above, and it is the source of the widely-repeated line that the plane's FAA registration **"shares an address with Maxfield's company Komigo."**
+
+Two limits on that article are worth recording, because it is routinely cited as though it settled the matter:
+
+* Its flight timings come from **FlightRadar24**, a public tracker — the same class of source as the X posts it is reporting on. It did not obtain FAA radar data, ATC tapes, or the flight plan.
+* It closes by noting that **neither the FBI's Salt Lake City office nor Provo Airport responded to its request for comment.** So the two bodies that could confirm or refute the routine-flight account had not done so as of publication.
+
+The article also describes the aircraft, correctly, as departing "about an hour after the shooting, which took place around 12 p.m. local time," and describes Provo (PVU) as "a public-use regional airfield less than 15 minutes drive from UVU's campus."
+
+
 {/* CK_INTERESTING_HERE_START */}
 
 ## Interesting In This Area

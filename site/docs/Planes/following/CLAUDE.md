@@ -436,3 +436,157 @@ silently pick one on a public page; state the range and state who says what.
 2. The matching rows in `{PAGES_CSV}`.
 always learn from the dir ~/BGit/Bryan_git/charlie-kirk/site/docs/Planes/ because it has important info for us to learn to build content for this dir.
 
+
+## The three data files in this directory
+
+Three CSVs sit beside this file. They are the **structured spine** the location pages are written
+from — the same role `{SISTER_OVERLAPS}` plays for the sister directory, but local, and built from
+what this repo can actually source today. They are **research data, not published pages**:
+Docusaurus does not serve a `.csv` out of `site/docs/`, so nothing in them reaches the web until a
+human puts it on a page. Everything in them still has to clear the public-content rules in this
+file before it does.
+
+    FLIGHTS_CSV is file {THIS_DIR}flights.csv
+    TPUSA_EVENTS_CSV is file {THIS_DIR}tpusa_events.csv
+    PLANES_CSV_LOCAL is file {THIS_DIR}planes.csv
+
+They join like this:
+
+    planes.csv ──(tail_number)──▶ flights.csv ◀──(date + city)──▶ tpusa_events.csv
+                                       │
+                                       └──(mdx_page)──▶ the Level 3 location pages in {THIS_DIR}
+
+`flights.csv` is where the *foreign* side lives, `tpusa_events.csv` is where the *Kirk / TPUSA*
+side lives, and an overlap claim is a row from each that share a date window and a city. Neither
+file asserts an overlap on its own. **Building a location page means picking the pairings out of
+those two files and writing the gap explicitly** — same day, day before, day after, with both
+timestamps.
+
+### `flights.csv` — one row per stay by a following plane
+
+One row = one aircraft on the ground at one location, from arrival to departure.
+
+| Column | Meaning |
+|--------|---------|
+| `plane_tail_number` | Joins to `planes.csv`. |
+| `start_date` | Date the following plane arrived. `UNKNOWN` where no source publishes it. |
+| `end_date` | Date it left. `UNKNOWN` is common — trackers post arrivals far more often than departures. |
+| `city` / `state` / `country` | Where it sat. Empty for tails with no published leg at all. |
+| `notes` | The claim, the dispute, and the counterargument, in that order. Written to be read on its own. |
+| `more_info` | The repo file that carries the fullest version of this leg. |
+| `mdx_page` | The Level 3 location page in `{THIS_DIR}` this row belongs on. Several rows share one page — that accumulation at a single field is the whole point. |
+
+**21 rows, 7 tails, 5 locations.** The five planned location pages are:
+
+    Provo_KPVU_2025-02-14_to_2025-10-02.mdx        13 rows — the centre of gravity
+    Omaha_KOMA_2025-07-20_to_2025-08-23.mdx         2 rows
+    Wilmington_KILG_2025-02-14_to_2025-09-11.mdx    3 rows
+    Wichita_KICT_2025-10-01_to_2025-12-31.mdx       1 row  — date range approximate
+    Minot_KMOT_2025-08-08_to_2025-09-04.mdx         1 row  — transit stop, not a Kirk location
+
+None of those five pages exists yet. The filenames are already fixed IDs — **write the pages under
+exactly these names** so the `mdx_page` column stays valid, and never rename one after it ships.
+
+**Deliberate scope decisions in `flights.csv`, so nobody "fixes" them back:**
+
+* **Following planes only.** The column is literally `start_date: date the following plane arrived`.
+  Kirk-party and flagged domestic tails — `N102DZ`, `N560TW`, `N888KG`, `N872RA`, `N40JD`,
+  `N59906`, `N582MM`, the SAM flights, the casket flight — are **not** in this file. They fix where
+  the Kirks were, not who followed them, and they belong to the Sept-10 day-of thread, which is
+  `{SITE_PLANES}Sept10-Flight-Timeline.mdx`'s job. **DO NOT MERGE THE THREADS.**
+* **Minot ND is in the file but marked as a transit stop.** It is on the route into Provo twice; it
+  is not a place anyone claims Charlie or Erika ever was. The note says so in capitals.
+* **`T7ELL` and `EJM36` have rows with no location.** They are named in the fleet list and have zero
+  published legs. They are carried as empty rows so the tails are not silently dropped — a gap
+  named is worth more than a gap hidden.
+* **The `2024-04-01` SU-BTT Provo row is a single unverified claim** (@AuntLinda__, Dec 2025) and it
+  is pointed at the main Provo page rather than given a 2024 page of its own. It is the only thing
+  in the file that would move the window earlier than 2025, which is why it is flagged rather than
+  built on. **This row is the live edge of the 18-month-vs-2-year-vs-2022 question.**
+
+### `tpusa_events.csv` — where Charlie and Erika actually were
+
+73 rows, January 2022 through October 2025. Columns: `dates, who, city, state, country, title,
+university_or_venue, notes, mdx_page`.
+
+**Its primary source is the podcast archive**, `{SITE_DOCS}TPUSA/apple_podcast/*.csv` — the
+Charlie Kirk Show catalogue, which records a live campus stop or TPUSA summit every time one was
+published as an episode. That makes it the densest Kirk-location record this repo holds, and it
+comes with one caveat that is repeated on nearly every row:
+
+> **THE DATE IS THE PODCAST RELEASE DATE, NOT THE EVENT DATE.** The event is normally 0–7 days
+> earlier. Any overlap computed straight off these dates is approximate until the real event date
+> is sourced. **Never publish a "same day" claim off a proxy date.**
+
+Rows whose dates *are* real event dates say so in `notes` — AmericaFest 2024 (Dec 19–24, 2024),
+SAS 2025 Tampa (Jul 11–13, 2025), UVU (Sept 10, 2025) — sourced from
+`{SITE_DOCS}Amfest/amfest-year-timeline.mdx`.
+
+City handling is graded, on purpose:
+
+* Named venue → city stated (a university's city is an ordinary public fact).
+* `UNKNOWN` → the venue city is **not stated in any repo source**. Roughly a third of rows, almost
+  all of them TPUSA Faith summits, Academy summits and YWLS. **Do not fill these from memory.**
+* `AMBIGUOUS` → the source names a system, not a campus ("University of Nevada" — Reno or Las
+  Vegas). One row.
+
+**The finding that matters most in this file is a negative one.** Of 73 rows, exactly **one** places
+**Erika Kirk** at a TPUSA event before September 10, 2025 — the June 2025 Young Women's Leadership
+Summit, sourced only from a later episode description that says "In June of 2025, Charlie and Erika
+spoke to a group of young women," with no day of the month. That is the entire documented Erika
+location record in this repo for the window the trackers counted **73 overlaps** across.
+
+This is the concrete form of the rule stated earlier in this file — **ERIKA'S SIDE IS THE WEAK
+SIDE**. The 73-overlap tally is measured against a set of Erika locations that this repo cannot
+reproduce and that no tracker has published as a dated list. Every page carrying an Erika pairing
+must say so and must link `{SITE_PLANES}Erika-Flight-Logs-Erased.mdx`. **Do not paper over this by
+treating Charlie's itinerary as a stand-in for hers** — the tallies themselves say the two counts
+differ by a factor of three.
+
+Three rows are worth knowing before writing the Omaha and Wichita pages, because they cut *against*
+the pattern as much as for it:
+
+* **2024-04-11, Omaha NE** — a documented Charlie Kirk appearance in the city SU-BTT flew into on
+  2025-07-20 and 2025-08-17. The gap is **15–16 months**. It is not an overlap and the row says so.
+* **2024-04-12, University of Kansas, Lawrence KS** — Kansas is a clustering-claim state and
+  SU-BTT later landed at Wichita. Gap ~19 months. Same caveat.
+* **2024-06-14→23, Detroit MI** — Turning Point Action's People's Convention. SU-BTU flew
+  Detroit → Provo on 2025-03-02, nine months later. No source connects the two.
+
+Those three are in the file precisely so a future writer does not "discover" them and publish them
+as hits. **A 15-month gap is not a shadowing event.**
+
+### `planes.csv` — tail number and registry
+
+Two columns, `tail_number` and `country_registered`, seven rows. Scope matches `flights.csv`: the
+following fleet only.
+
+    SU-BTT, SU-BND, SU-BTU, SU-BTV, SU-BGM   Egypt
+    T7ELL                                    San Marino
+    EJM36                                    United States
+
+The last two rows carry a correction the site's own fleet list does not yet make, and it should be
+made on any page that names them:
+
+* **`T7ELL` is not an Egyptian registration.** `T7-` is the **San Marino** civil prefix. The site
+  groups it with the "Egyptian armada" because a fleet-list thread did; the prefix says otherwise.
+* **`EJM36` is a callsign, not a registration.** `EJM` is the ICAO operator designator for
+  **Executive Jet Management**, a U.S. operator. It may not be a distinct airframe at all — it may
+  be a flight number belonging to an aircraft already on the list under another identity.
+
+Both are recorded in `flights.csv` with no legs, no dates and no location, which is the honest state
+of the evidence for them.
+
+### Keeping the three files current
+
+1. New fact lands in `{SISTER_INFO}` **with its source** first. Research before publication.
+2. Add or update the row in `flights.csv` / `tpusa_events.csv` / `planes.csv`. Keep `mdx_page`
+   pointing at a filename that follows the naming rule above, whether or not the page exists yet.
+3. Only then write or widen the location page. **If the date range at a location grows, widen it
+   inside the page and in the CSV — do not rename the shipped file.**
+4. Add or fix the matching row in `{PAGES_CSV}`.
+5. `cd {SITE_ROOT}site && npm run build` before declaring done.
+
+Never edit these three files to make the pattern look stronger. `UNKNOWN`, `AMBIGUOUS`, the
+attribution conflicts and the disputed departure times are the most valuable content in them — they
+are what makes the rest credible.
