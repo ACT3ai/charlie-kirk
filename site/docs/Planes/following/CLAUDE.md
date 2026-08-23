@@ -1,0 +1,438 @@
+# `Planes/following/` — The Public Page-Per-Location Log Of The Planes That Followed Them
+
+**THIS DIRECTORY IS THE PUBLIC DOCUSAURUS FOR PAGES WE PUBLISH PUBLICLY.** Everything in here is
+public Docusaurus content, built and served to the world at `https://whoassassinatedcharliekirk.com/Planes/following/...`. There is
+no private layer in this directory. Nothing here is a scratchpad, a research dump, a raw source
+file, or a note-to-self. If you would not want a hostile reader, a journalist, or a defamation
+lawyer reading it, it does not go in this directory.
+
+The flip side of that rule, and it is the more important half:
+
+> **ALL INFO WE CAN MAKE PUBLIC, WE WANT TO GO IN THIS DIRECTORY.**
+
+Do not hold material back for tidiness, for length, or because it is only a fragment. If a fact
+about a location, a date, an airport, a tail number, or a pairing can be published safely and
+sourced honestly, publish it here. The bar is "can this be made public", not "is this
+important enough". Sparse pages are the failure mode we are correcting, not the goal.
+
+## What this directory covers
+
+**Foreign intelligence aircraft that shadowed Charlie Kirk, Erika Kirk, and TPUSA events across
+the United States** in the roughly 18 months to 2 years before September 10, 2025.
+
+The pattern, stated plainly:
+
+* A foreign-government-registered jet — the Israel/Egyptian aircraft **SU-BTT** (the "yellow
+  plane"), **SU-BND** (the "blue plane"), **SU-BTU**, **SU-BTV**, **SU-BGM**, and others — flies
+  into **the same airport** that Charlie's, Erika's, or TPUSA's aircraft flies into.
+* Very often that airport is **small** — a regional field or an Army airfield, not a major hub —
+  which is what makes the coincidence hard to explain away.
+* The arrival is **the same day, the day before, or the day after** the Kirk/TPUSA arrival.
+* It happens again. And again. Trackers count **up to 73 overlaps with Erika Kirk** and roughly
+  **23 with Charlie Kirk**, over a window researchers variously describe as **2022 through
+  September 2025**, tightening sharply in the **final two months**.
+
+That repetition — not any single flight — is the claim. One overlap is a coincidence.
+Seventy-three is a tasking order.
+
+**THIS DIRECTORY IS NOT ABOUT THE UVU COURTYARD.** No soil excavation, no landscaping crew, no
+pavers, no "by Monday" deadline. That is a different topic entirely. If you find that material
+here, it is misfiled — remove it from this directory rather than working on it here.
+
+## Variables
+
+    SITE_ROOT dir is ~/BGit/Bryan_git/charlie-kirk/
+    SITE_DOCS dir is {SITE_ROOT}site/docs/
+    SITE_PLANES dir is {SITE_DOCS}Planes/
+    THIS_DIR dir is {SITE_PLANES}following/            ← this directory. PUBLIC.
+    OVERVIEW_FILE is file {THIS_DIR}overview.mdx       ← the Level 2 landing page
+    CATEGORY_FILE is file {THIS_DIR}_category_.json
+    HUB_FILE is file {SITE_PLANES}Following-Charlie-Erika.mdx
+                                                       (the existing hub page for this exact
+                                                        claim. These pages hang off it.)
+    SISTER_DIR dir is ~/BGit/all/movies/m/charlie_kirk_movie/research/18_month_follow_planes
+    SISTER_CLAUDE is file {SISTER_DIR}/CLAUDE.md
+    SISTER_DOCS dir is {SISTER_DIR}/docs/
+    SISTER_INFO is file {SISTER_DIR}/docs/information.yaml
+    SISTER_OVERLAPS is file {SISTER_DIR}/docs/overlaps.csv    (THE SPINE — one row per claimed
+                                                               overlap event)
+    SISTER_RESEARCH dir is {SISTER_DIR}/research/             (raw source dumps)
+    CK_FILE is file {SITE_ROOT}Charlie_Kirk.txt        ← the master investigation file. READ-ONLY.
+    PAGES_CSV is file {SITE_ROOT}pages.csv
+    ASSESS_MANUAL is file {SITE_ROOT}prompts/Assess_Manual.md
+    BAN_IMAGES_CSV is file {SITE_ROOT}images/ban_images.csv
+    BAN_VIDEOS_CSV is file {SITE_ROOT}videos/ban_videos.csv
+
+## The sister directory — learn from it, never write to it
+
+`{SISTER_DIR}` is this directory's **sister directory**. It is the private research and
+movie-beat workspace for the same topic, living in the Charlie Kirk movie repo. Read
+`{SISTER_CLAUDE}` in full before doing any work here.
+
+**The relationship, and the direction of flow:**
+
+    {SISTER_DIR}  ── research, verify, source ──▶  {THIS_DIR}  ──▶  the public web
+    (PRIVATE: raw dumps, overlaps.csv,             (PUBLIC: one page per location,
+     information.yaml, beat drafts KB73/KB407)      the overview index)
+
+* **Learn from the sister.** Its research standards, its counts, its counterarguments, its
+  sourcing discipline, its list of what is already known, and its rules about what may and may
+  not be asserted are the standards this directory inherits. When this file is silent on a
+  question, `{SISTER_CLAUDE}` is the fallback authority.
+* **`{SISTER_OVERLAPS}` is the spine.** It is the per-overlap-event record every page in this
+  directory is built from. Columns: `overlap_id, date, airport_code, airport_name,
+  airport_class, city, state, subject (Charlie|Erika|TPUSA|Both), event, venue, kirk_tail,
+  foreign_tail, foreign_type, registry, gap (same_day|day_before|day_after|other), arrived_from,
+  departed_to, transponder, source, source_url, confidence, counterargument, site_page`.
+  `overlap_id` is permanent once assigned — **never renumber it**, it is the join key between
+  the private research and these public pages.
+* **`{SISTER_INFO}` is the hierarchical research record.** All new facts land there, with a
+  source, BEFORE they appear on a page here. Research first, publication second. A page in this
+  directory must not assert anything that is not already recorded in `{SISTER_INFO}` with its
+  origin.
+* **`{SISTER_RESEARCH}` is INPUT and is never modified** — raw Grok/X capture dumps and ADS-B
+  exports, numbered `1.md`, `2.md`, ….
+* The sister directory also owns the **movie beats** — **KB73** ("Egyptian Planes Following
+  Erika & Charlie; 18 months", Act 2B, layer `INTEL DID IT`, Andrew / Alaska / FIntel, 55.0%,
+  order 67, assigned Rijan, category `Intel / Edu` — **the primary beat**) and **KB407**
+  ("INTEL: Intelligence Planes following TPUSA", Act 2B, `INTEL DID IT`, Rijan — the
+  TPUSA-events half of the same claim). KB73 is the Kirks; KB407 is the organization; they are
+  one research problem. **Beat drafts, dictation, and visual grammar are the sister's job, not
+  ours.** Nothing about camera coverage, on-screen counters, or reconstruction cards belongs on
+  a public page.
+* Neighbouring beats to be aware of and **not** write: **KB36** (Act 2A, intro to the Egyptian
+  flights, Utah airport security), **KB81** (Egyptian planes, rental cars, true destination
+  Israel, military US airports), **KB147** (just a shell company; transponder off), **KB59 /
+  KB430** (the N1098L / drone / Fort Huachuca thread and its Act 3 courtroom payoff — different
+  aircraft, different claim; **do not merge N1098L into the following-pattern**).
+* **Never write into `{SISTER_DIR}`, `{CK_FILE}`, or anywhere else outside `{THIS_DIR}` from
+  here.** This directory writes exactly two kinds of thing: files inside `{THIS_DIR}`, and the
+  matching rows in `{PAGES_CSV}`. Everything else is read-only source material.
+
+## `overview.mdx` — the Level 2 landing page
+
+`{OVERVIEW_FILE}` **is the "Following" Level 2 page.** In this repo's vocabulary, a directory
+directly under `site/docs/` is a Level 2 directory and the page that loads for it is its
+`overview.mdx` — a landing page carrying a **table of contents whose entries are hyperlinked
+paragraphs / rows leading down into the Level 3 pages beneath it**. `following/` sits one step
+deeper (under `Planes/`), but it behaves exactly the same way: **`overview.mdx` is the door,
+and every page in this directory is reachable from it.**
+
+`{OVERVIEW_FILE}` must contain:
+
+1. **The claim, in a few sentences at the top** — what the shadowing pattern is, whose tallies
+   the counts come from, and the fact that they are researcher claims from public ADS-B data.
+2. **The master index table**, sortable and complete — one row per page in this directory:
+   `location · airport code · city / state · date range · who (Charlie | Erika | TPUSA | Both) ·
+   foreign tails · overlap count · confidence`, with the location cell hyperlinked to the page.
+3. **A chronological view and a geographic view.** The filenames sort by place; the overview is
+   where the reader gets the timeline. Cluster the geography explicitly — the states and cities
+   named in the research (**Missouri, Delaware, Utah, Nebraska, Kansas**; **Omaha, Wichita,
+   Provo**) — and mark that clustering as unverified.
+4. **The count dispute, shown as a dispute** — 73/~23, 72, "70+", 68/29 — never averaged, never
+   silently reconciled.
+5. **Prose paragraphs that hyperlink down into the individual pages.** Not a bare table. A
+   reader who never clicks a row should still leave the overview understanding the pattern.
+6. **Links up** to `{HUB_FILE}` and `{SITE_PLANES}overview.mdx`, and **sideways** to each tail
+   number's page.
+7. **The counterargument section**, at overview level as well as on every child page.
+
+`{CATEGORY_FILE}` must exist, with label `"Following"`, a `position`, `"collapsed": true`, and a
+`link` of type `doc` to id `Planes/following/overview` — the same shape as
+`{SITE_PLANES}N1098L/_category_.json`:
+
+    {
+      "label": "Following",
+      "position": 2,
+      "collapsed": true,
+      "link": {
+        "type": "doc",
+        "id": "Planes/following/overview"
+      }
+    }
+
+## ONE PAGE = ONE LOCATION, WITH ITS DATE RANGE
+
+**Each aspect of the following-pattern gets its own separate page. We want a separate page for
+every location — with a date range — at which foreign planes are alleged to have followed
+Charlie, Erika, or TPUSA around.**
+
+That is the governing rule for this directory and it beats every other page-splitting scheme.
+
+* **The page identity is the LOCATION.** One airport / city where the shadowing is alleged to
+  have happened.
+* **The date range is part of that identity.** A page covers one contiguous window of alleged
+  following at that location. If the same location was shadowed in two clearly separate
+  campaigns far apart in time, that is **two pages**, each with its own range. If a location
+  was hit repeatedly inside one window, that is **one page** listing every one of those
+  arrivals — the accumulation at a single field is exactly what the page exists to show.
+* **Not one page per aircraft.** The tail numbers already have their own pages at
+  `{SITE_PLANES}` — `SU-BTT.mdx`, `SU-BND.mdx`, `SU-BTU.mdx`, `SU-BTV.mdx`, `SU-BGM.mdx`,
+  `N888KG.mdx`, `N560TW.mdx`, `N1098L/`, and the rest. Link to them; do not duplicate them.
+* **Not one page per month.** Time is the overview's axis, not the directory's.
+* **Multiple tails at one location go on the same page.** If SU-BTT and SU-BND were both at
+  Provo inside the window, that is one Provo page covering both, not two pages.
+
+> **Divergence from the sister directory, stated on purpose so nobody "corrects" it back:**
+> `{SISTER_CLAUDE}` describes a page-per-overlap-event scheme with date-first filenames. **This
+> directory does not use that.** Here the unit is the **location plus its date range**, and the
+> per-overlap rows of `{SISTER_OVERLAPS}` are the *contents* of a location page rather than
+> pages of their own. The sister's `overlap_id` values still travel with each entry so the two
+> sides stay joined.
+
+### Page naming
+
+    {THIS_DIR}<City>_<ICAO-or-IATA>_<YYYY-MM-DD>_to_<YYYY-MM-DD>.mdx
+
+Examples:
+
+    Provo_KPVU_2025-05-27_to_2025-09-11.mdx
+    Lincoln_KLNK_2025-07-20_to_2025-08-24.mdx
+    Omaha_KOMA_2024-03-11_to_2025-08-23.mdx
+    Wilmington_KILG_2025-08-23_to_2025-09-11.mdx
+
+Location-first so the directory groups by place, which is how the pages are actually read.
+Chronology is the overview's job. Use the ICAO identifier where one exists; fall back to IATA.
+Use underscores, no spaces, no special characters. Once a filename ships it is a **stable ID** —
+the URL is a join key. Never rename a published page; if the date range grows, widen the range
+inside the page and leave the filename alone unless a human approves the rename and the
+redirect.
+
+### What every location page must contain
+
+1. **The pairing, in one sentence at the top.** Who was at this location, which foreign tail
+   numbers were there, over what window, and how far apart in time.
+2. **The airport.** Name, ICAO/IATA code, size class (regional / municipal / Army airfield /
+   international), runway count, distance to the Kirk or TPUSA venue, and — this is the point —
+   **how unusual it is for a foreign government jet to be there at all.** A single strip with a
+   windsock and no terminal is the argument; say so with facts, not adjectives.
+3. **The Kirk / TPUSA side.** Every event at this location inside the window: the event, the
+   venue, the date, and the aircraft they arrived on if known.
+4. **The foreign side.** Every tail number, aircraft type, registry, where it came from, where
+   it went next, and whether the transponder was on.
+5. **The overlap table** — the heart of the page. One row per arrival pairing at this location:
+   `date · foreign tail · foreign arrival time · Kirk/TPUSA arrival or event time · gap
+   (same day | day before | day after) · arrived from · departed to · transponder · confidence ·
+   overlap_id`. Both timestamps stated explicitly. This is where the accumulation at a single
+   field becomes visible.
+6. **The gap, stated explicitly** for each pairing — same day, day before, day after — with both
+   timestamps, never just "around".
+7. **Sourcing on every claim.** ADS-B screenshot, X post with author and date, a Candace Owens
+   segment, or `{CK_FILE}`. **Say which.** An unattributed sentence does not ship.
+8. **The counterargument.** Every page carries the innocent explanation: diplomatic travel,
+   scheduled maintenance, a hub-and-spoke coincidence, a tracker misreading a
+   nearest-public-airport label (as happened with the Provo-vs-Dugway SU-BTT departure). **A page
+   without its counterargument is propaganda instead of research, and does not ship.**
+9. **What we do not know.** The holes, named. Which legs have no ADS-B coverage, which Kirk-side
+   locations are inferred rather than recorded, which tallies conflict.
+10. **Links.** Up to `{OVERVIEW_FILE}` and `{HUB_FILE}`, sideways to each tail number's page
+    under `{SITE_PLANES}`, and out to the relevant `{SITE_DOCS}TPUSA/` event page.
+
+## Site conventions every page here must match
+
+* **Frontmatter**, copied in shape from `{SITE_PLANES}SU-BTT.mdx`:
+
+      ---
+      displayed_sidebar: docs
+      title: "..."
+      sidebar_label: "..."
+      description: "..."
+      keywords:
+        - Charlie Kirk
+        - ...
+      image: "/img/docusaurus-social-card.jpg"
+      hide_table_of_contents: true
+      ---
+
+* **The full-bleed marker**, immediately after the frontmatter, exactly as the sibling pages
+  have it:
+
+      {/* Full-bleed marker: activates the site-wide full-width + text-wrap
+          layout in custom.css (full width + overflow-safe side videos). Scoped
+          via CSS :has(). */}
+      <div className="ck-full-bleed" />
+
+* **The back button block**, exactly as the sibling pages have it — for pages in this
+  directory it points back at the following overview:
+
+      <a href="/Planes/following/overview" style={{display:'inline-block', marginBottom:'1rem',
+      padding:'0.35rem 0.9rem', background:'#1a73e8', color:'#fff',
+      borderRadius:'4px', textDecoration:'none', fontSize:'0.9rem'}}>← Following</a>
+
+  `{OVERVIEW_FILE}` itself uses `← Planes` pointing at `/Planes/overview`.
+
+* **MDX gotcha — keep every `<div>` and `</div>` at column 0.** An indented closing `</div>`
+  breaks the Docusaurus build, and only `npm run build` catches it — the dev server does not.
+
+* **Build before declaring done:**
+
+      cd {SITE_ROOT}site && npm run build
+
+* **Read `{ASSESS_MANUAL}` first.** It is the authoritative writing and layout guide for every
+  page on this site. Load it into context at the start of any task that creates, edits, reviews,
+  or restructures a page in this directory.
+
+## `pages.csv` — keep it in sync, every time
+
+`{PAGES_CSV}` is the master index of every publicly visible page on the site. Every page created
+in this directory gets a row; every page renamed, re-levelled, or deleted gets its row fixed.
+
+Columns: `page_key, parent_key, level, level2_parent, level2_section, page_type, url_path,
+file_path, title, sidebar_label, directory, extension, has_frontmatter, line_count, description`.
+
+For this directory:
+
+* `page_key` — unique, four words or less, underscores only, no special characters. Prefix
+  everything here `Planes_Following_` — e.g. `Planes_Following_Index` for the overview,
+  `Planes_Following_Provo`, `Planes_Following_Lincoln`.
+* `parent_key` — `{OVERVIEW_FILE}`'s parent is `Planes`. Every location page's parent is the
+  overview's page_key.
+* `level` — the overview is **3** (an overview at depth 2). Each location page is **4** (a
+  non-overview at depth 2).
+* `level2_parent` / `level2_section` — both `Planes`.
+* `url_path` — `/Planes/following/overview` for the overview, `/Planes/following/<filename
+  without extension>` for each location page.
+* `file_path` — `site/docs/Planes/following/<filename>`, relative to the repo root.
+* `directory` — `Planes/following`.
+* `extension` — `mdx`. Everything in this directory is `.mdx`, never `.md`.
+
+Prefer incremental updates over regenerating the CSV, so hand-adjusted page_keys survive.
+
+## Rules for what may be published here
+
+These are inherited from `{SISTER_CLAUDE}` and from the repo's public-content rules, and they
+are not optional on a public page.
+
+* **Every disputed claim is ALLEGED, and is presented as a REPORTED CLAIM, not an established
+  fact.**
+* **THE COUNTS ARE TRACKERS' TALLIES, NOT RECORDS.** 73, 72, 70+, 68, 29, 23 — amateur readings
+  of public ADS-B history by independent researchers. We may say what they counted. We may not
+  say it as a verified total. **Where tallies conflict, show the conflict.** The disagreement is
+  itself a finding — report it, do not average it.
+* **ONE OVERLAP IS NOT EVIDENCE. THE PATTERN IS THE CLAIM.** Never build a page on a single
+  dramatic flight as though it proved anything. Any individual pairing has an innocent
+  explanation and a reader who will find it.
+* **EVERY PAGE CARRIES ITS COUNTERARGUMENT.** No exceptions.
+* **ADS-B HAS HOLES, AND THE HOLES CUT BOTH WAYS.** Transponders off, military fields not
+  reporting, coverage gaps. An absence in the data is not proof of a covert leg; a presence is
+  not proof of intent. Say which we have.
+* **DO NOT MERGE THE THREADS.** The 18-month following pattern (KB73/KB407), the Sept 10 day-of
+  timeline, the N1098L drone/HADES plane, and the N888KG Wendover departure are **four different
+  claims about four different aircraft sets.** Merging them is how the whole angle gets
+  dismissed at once. Link across; never blend.
+* **ERIKA'S SIDE IS THE WEAK SIDE.** Her flight logs are reported as erased, so the Erika
+  overlaps rest on the *foreign* aircraft's track plus a claimed location for her. **Say so on
+  every page carrying an Erika pairing**, and link
+  `{SITE_PLANES}Erika-Flight-Logs-Erased.mdx`.
+* **A SWORN DECLARATION OR A PRIMARY RECORD OUTRANKS A RELAYED ACCOUNT.** An FAA registry entry,
+  an FBO log, or an airport badge record beats an X post about the same flight. Where they
+  disagree, the record wins and the disagreement gets written down.
+* **Never assert who tasked an aircraft.** No public record establishes tasking in either
+  direction.
+* **Never name a living person as the accused.** Tyler Robinson is CHARGED, not convicted.
+* **Aircraft owners, crew, passengers, and ground staff are unnamed living persons and stay
+  unnamed** — except where they have been publicly and on-the-record identified in a way the
+  site already carries (e.g. Walid Mahmoud aboard SU-BTU), and then only as reported. Candace
+  Owens made these claims publicly under her own name and may be named as the person who made
+  them.
+* **Defamation-safe language throughout**, per the repo rule for all public content: attribute
+  ("according to…", "trackers say…", "reportedly"), include denials and counterarguments, frame
+  suspicion as a question or a reported allegation, never as a conclusion.
+* **Keep every stable ID unchanged** — page paths, URLs, `overlap_id`, KB_IDs. They are the
+  join keys.
+
+## Images, videos, and IPFS on these pages
+
+* **Images are tracked in git.** Never gitignore an image, never add a per-file image line to
+  `{SITE_ROOT}.gitignore`. An image that exists on disk but is untracked renders locally and
+  404s for every real visitor, because the live site is built by GitHub Pages from the repo.
+* **Never embed an image by IPFS gateway URL.** Always the local repo path, with the CID kept as
+  provenance:
+
+      <img src="/img/evidence/{sha256}.jpg" data-cid="{CID}" />
+
+  Videos are the deliberate exception and do use the gateway as their primary src.
+* **Never use `127.0.0.1` or `localhost` for an IPFS URL.** Use the public gateways:
+  `https://ipfs.io/ipfs/<CID>/<path>` or `https://<CID>.ipfs.dweb.link/<path>`.
+* **Check the ban lists before embedding anything.** `{BAN_IMAGES_CSV}` and `{BAN_VIDEOS_CSV}`
+  are the master record of media we will not publish; the union of those CSVs and the legacy
+  `image_planning/exclude_images.txt` / `videos_planning/exclude_videos.txt` is the ban set. A
+  banned item gets no page, no embed, and no served copy.
+* Audit before shipping:
+
+      python3 {SITE_ROOT}image_planning/generator/audit_image_publication.py
+
+## Related site pages to read before writing anything
+
+* `{HUB_FILE}` — **the existing hub for this exact claim. Read it first and in full.** The pages
+  in this directory must not contradict it; when they add detail, the hub links down to them.
+* `{SITE_PLANES}overview.mdx` · `Planes_Investigation_Index.mdx` — the aircraft index.
+* `{SITE_PLANES}SU-BTT.mdx` · `SU-BND.mdx` · `SU-BTU.mdx` · `SU-BTV.mdx` · `SU-BGM.mdx` — the
+  tail-number pages. Every location page links to these.
+* `{SITE_PLANES}Israel-Planes.mdx` — the Israel leg of the same aircraft, going dark over the
+  eastern Mediterranean.
+* `{SITE_PLANES}Sept10-Flight-Timeline.mdx` — the minute-by-minute of the final day. **The final
+  day is that page's job, not ours.** This directory is the 18-month run-up. Link, do not
+  restate.
+* `{SITE_PLANES}Erika-Flight-Logs-Erased.mdx` — why the Erika side of the pairing is hard to
+  verify.
+* `{SITE_PLANES}Egyptian-Crew-Hotel.mdx` · `Cox-Foreign-Meetings.mdx` · `ISR-Operations.mdx` ·
+  the `Airport-*.mdx` pages.
+* `{SITE_DOCS}TPUSA/` — the event side of every pairing: which TPUSA event, where, when.
+* `{SITE_DOCS}Israel_Main_Suspect/` and `{SITE_DOCS}Proof_Intel_Services/` — the motive layer.
+
+## What we already know — the starting facts
+
+These come from `{CK_FILE}` and `{HUB_FILE}`. They are the seed, not the finding. Everything
+here must be re-sourced into `{SISTER_INFO}` with its origin before it is published on a page.
+
+* **The counts, and that they disagree.** 73 Erika / ~23 Charlie is the headline (Candace
+  Owens's team). Other posts say 72, "70+", or 68. A separate dual-plane tally says the blue and
+  yellow jets together overlapped Erika **68 times between 2022 and September 2025**, of which
+  **29** also coincided with Charlie's location. **These tallies have never been reconciled.**
+* **The geography.** One analysis clusters the U.S. overlaps in five states: **Missouri,
+  Delaware, Utah, Nebraska, Kansas.** Cities named: **Omaha, Wichita, Provo.** Unverified.
+* **The start of the window.** Overlaps are said to begin around **2022**, which posters note
+  aligns with the Kirk marriage timeline. That is 3 years, not 18 months — see the window
+  question below.
+* **Small and military fields.** SU-BTT's **first-ever trip to America, July 20, 2025, was to an
+  Army base in Nebraska.** Trackers say all other flights of that aircraft went to Army bases,
+  and Provo may be the only U.S. stop that was not an Army field.
+* **May 27, 2025:** SU-BTU flies into Provo; Walid Mahmoud aboard. Departs June 2.
+* **Sept 4, 2025:** SU-BTT flies France → Provo, and sits there through Sept 10.
+* **Sept 10, 2025, 7:08 MT:** SU-BTT leaves Utah for Wilmington — before the assassination.
+  **Sept 11:** it leaves the U.S. for Egypt.
+* **SU-BND**, the blue plane, did not take off on Sept 10 — but its **transponder was turned ON**.
+* **Sept 10:** N560TW, Scottsdale → Provo → Santa Barbara → Scottsdale.
+* Provo airport badge access list updated **9/11/25** — the day after.
+* Counter-UAS gear reportedly tested at Provo airport **Sept 4–10**; 4–6 "contractors" with
+  claimed "US Department of Defense Liaison" badges dropped off and **not** flown back out.
+
+**THE 18-MONTH-VS-2-YEAR-VS-2022 QUESTION IS AN OPEN RESEARCH QUESTION.** The beat title says 18
+months. The filmmaker's framing says 18 months to 2 years. The trackers say 2022 → Sept 2025,
+which is closer to three years. **Resolve it with the overlap data in `{SISTER_OVERLAPS}` — find
+the earliest overlap we can actually source and let the window follow the evidence.** Do not
+silently pick one on a public page; state the range and state who says what.
+
+## Reading order, and what outranks what
+
+* **`{CK_FILE}` — `~/BGit/Bryan_git/charlie-kirk/Charlie_Kirk.txt` — is the most important
+  source there is. ALWAYS read it in. It takes PRECEDENCE over everything else, and its content
+  is what the output must express. NEVER modify it** — it is read-only to AI under an absolute
+  repo rule; new material goes to `{SITE_ROOT}Charlie_Kirk_AI_Inbox.txt` instead.
+* Then `{SISTER_CLAUDE}` and everything under `{SISTER_DOCS}` — including `{SISTER_OVERLAPS}`,
+  `{SISTER_INFO}`, and every file under `{SISTER_RESEARCH}`. **Hold the sister directory whole,
+  not sampled.**
+* Then `{HUB_FILE}`, then the tail-number pages under `{SITE_PLANES}`.
+* Then `{ASSESS_MANUAL}` for how the page must read and lay out.
+* A primary record outranks a relayed account. Where they disagree, the record wins and the
+  disagreement gets written down.
+
+## What may be written from here
+
+**Only these.** Everything else in the repo and in the sister repo is read-only source material.
+
+1. Files inside `{THIS_DIR}` — `overview.mdx`, `_category_.json`, and the location pages.
+2. The matching rows in `{PAGES_CSV}`.
+always learn from the dir ~/BGit/Bryan_git/charlie-kirk/site/docs/Planes/ because it has important info for us to learn to build content for this dir.
+
