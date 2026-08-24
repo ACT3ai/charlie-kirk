@@ -37,3 +37,25 @@ Each query was run as "summarize and get extensive detail" against public X post
 13. Summarize and get extensive detail: X posts Erika Kirk casket flight Air Force Two September 11 Phoenix SAM
 14. Summarize and get extensive detail: X posts Erika Kirk social media location posts vs flight tracking Egyptian jets
 15. Summarize and get extensive detail: X posts Duncan Aviation Provo Lincoln Egyptian jets Erika Kirk coincidence vs tracking
+
+## Location pages added from the ADS-B flight-history captures (Aug 2026)
+
+The Large File Bridge OCR / AI-description pass over the four mirrored plane directories
+(`Planes/`, `Plane_Egypt_SU_BTT/`, `Plane_N888KG/`, `Plane_Piper_N59906/`) recovered the full
+Flightradar24 aircraft-history tables for all five Egyptian tails from the `5_Planes/` screenshot
+set. Reading those tables as *stays* rather than *legs* surfaced three locations that the fleet
+used repeatedly and that had no page of their own:
+
+* **[Paris–Le Bourget (LFPB)](./Paris_LFPB_2022-10-05_to_2025-10-05)** — 18 recorded stops, every
+  westbound rotation, always an overnight, never eastbound. The busiest node in the dataset after
+  Cairo and the one nobody alleges anything about.
+* **[Goose Bay (CYYR)](./GooseBay_CYYR_2023-05-09_to_2025-09-13)** — Gulfstreams only, Falcons
+  never. Where SU-BND left North America on 13 September 2025 on a ~50-minute turn.
+* **[Williston (KXWA)](./Williston_KXWA_2024-04-23_to_2024-04-23)** — the 2024 Utah entry field,
+  and the reason "every Provo rotation entered the US through North Dakota" is a two-year pattern
+  rather than a 2025 one.
+
+`flights.csv` was rebuilt from the same tables at the same time: its five `mdx_page` join keys had
+all been pointing at filenames that were never used, and several of its tail attributions
+(notably the 27 May – 2 Jun 2025 Provo stay, which is **SU-BTV**, not SU-BTU) disagreed with the
+ADS-B record.

@@ -795,3 +795,99 @@ We have a directory where we store when the planes that followed Charlie Kirk st
 When it comes to the issue of trains, planes, following Charlie Kirk, we have the directory:
 ~/BGit/Bryan_git/charlie-kirk/site/docs/Planes/following
 
+
+
+== Infographics (info_graphics/) ==
+
+INFO_GRAPHICS_DIR dir is {ROOT_DIR}/info_graphics/
+NANO_BANANA_4K is file ~/BGit/all/tools/Nano_Banana_4K/nb_4k.js
+
+Infographics are planned here before any image is generated. They are used across
+the whole public site. One directory per infographic topic:
+
+  {INFO_GRAPHICS_DIR}{topic}/
+    goals.mdx                     The plan: audience, concept, framing, numbers,
+                                  sizing, ordering, and the exact on-image text.
+    nana_banana_pro_prompt.txt    The generation prompt, written FROM goals.mdx.
+
+TOPIC is the directory name and behaves like a page key: one or two words,
+underscores between them, no spaces and no special characters. Examples:
+Following_Planes, Bullet_vs_Explosive, Sept10_Timeline, Erika_Overlaps.
+
+Always 16:9. Always 2K. Every infographic on this site uses that shape so they
+sit together consistently on the pages, and 2K is the readable-but-not-enormous
+tier for a wide graphic embedded in a Docusaurus page.
+
+=== goals.mdx — what it must contain ===
+
+The first line of real content is the FULL PATH to the page the infographic is
+being made for — the file we are targeting, from ~ or from {ROOT_DIR}. If it
+targets more than one page, list every one of them.
+
+Then these sections, in this order. Each is a real planning section, not a label:
+
+  * Audience — who is looking at this. What they already believe, what they
+    already know, and what they are scanning for.
+  * What they should learn — the takeaway, stated as the sentence the reader
+    should be able to say out loud after four seconds of looking.
+  * Conceptual framing — how we frame it. The metaphor, the structure, the
+    shape of the argument the picture makes.
+  * What we are educating on — the actual content being taught.
+  * Perspective — what the reader gets perspective ON. What they currently
+    cannot see that this image makes visible.
+  * Polarity and scope — the size of the thing. Are we zooming IN on one
+    detail, or widening OUT to show scale? Often both, and the tension between
+    the two is the graphic. Say how the zoom level is expressed visually.
+  * Numbers — every number that appears, what it means, and how it is
+    communicated (a big numeral, a count of repeated marks, a bar, a ratio).
+    Numbers we deliberately leave out get named here too.
+  * Sizing — what is bigger and what is smaller, and why. Size carries
+    importance; state the importance ranking that drives it.
+  * Framing and placement — what is frame left, what is frame right, what sits
+    higher and what sits lower. What is inside a frame/box/card and what is
+    unframed and bleeds. Timelines: say explicitly how time is expressed —
+    left-to-right axis, stacked bands, a spiral, converging lines.
+  * Screen percentages — roughly what share of the frame each concept takes.
+    One concept might be 33%, another 22%. Assign these and reconcile them
+    against the frame-left / frame-right decision above.
+
+  These are GENERAL guidelines, not hard constraints. They exist to force the
+  planning, not to be obeyed to the pixel.
+
+  * Order of understanding — a NUMBERED list, most important first. Number 1
+    introduces the concept and the issue the reader should be trying to
+    understand. Number 2 is the first thing they should actually understand.
+    Then 3, 4, 5. This ordering is what drives sizing and placement above:
+    higher priority gets larger and lands where the eye goes first.
+  * On-image text — every word that appears in the image. The title across the
+    top, the subline if there is one, section labels, callouts, the source
+    line. People scan; the title alone has to tell them what this is about.
+    Phrase it deliberately and write the final wording here, not a description
+    of the wording.
+
+=== nana_banana_pro_prompt.txt — how to write it ===
+
+Written from goals.mdx, after goals.mdx is finished. It is raw text — the whole
+file is sent to the model as the prompt, so no markdown syntax, no headers, no
+code fences. Prose and plain lines only.
+
+It must carry everything the model needs: the layout, the framing and placement,
+the relative sizing, the percentages, the visual treatment, the timeline
+mechanics if there is one, and the EXACT text strings to render, quoted so the
+model spells them correctly. State 16:9 in the prompt itself as well as passing
+it on the command line.
+
+=== Generating the image ===
+
+  node {NANO_BANANA_4K} \
+    {INFO_GRAPHICS_DIR}{topic}/nana_banana_pro_prompt.txt \
+    {INFO_GRAPHICS_DIR}{topic}/{topic}.jpg \
+    --size 2K --aspect 16:9
+
+The tool defaults to 4K and 16:9, so --size 2K must be passed explicitly.
+Uppercase K is required by the API. Model defaults to nano-banana-pro
+(gemini-3-pro-image), which is the one that honours 2K/4K.
+
+Once generated, the image is committed like any other site image — see
+"Images Are Tracked In Git" above — and embedded by local repo path, never by
+an IPFS gateway URL.
