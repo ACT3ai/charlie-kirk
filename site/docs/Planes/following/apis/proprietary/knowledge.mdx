@@ -1,0 +1,153 @@
+---
+displayed_sidebar: docs
+title: "Commercial Flight-Data APIs — What They Would Settle, And What They Cost"
+sidebar_label: "Proprietary Data"
+description: "Flightradar24, FlightAware and ADS-B Exchange hold the deep flight history the free networks do not — including the whole 2022 window this investigation cannot otherwise reach. What each would answer, what it costs, and what their terms allow us to publish."
+keywords:
+  - Charlie Kirk
+  - Flightradar24
+  - FlightAware
+  - AeroAPI
+  - ADS-B Exchange
+  - flight data API
+  - SU-BTT
+image: "/img/docusaurus-social-card.jpg"
+hide_table_of_contents: true
+---
+
+{/* Full-bleed marker: activates the site-wide full-width + text-wrap
+    layout in custom.css (full width + overflow-safe side videos). Scoped
+    via CSS :has(). */}
+<div className="ck-full-bleed" />
+
+<a href="/Planes/following/apis/overview" style={{display:'inline-block', marginBottom:'1rem',
+padding:'0.35rem 0.9rem', background:'#1a73e8', color:'#fff',
+borderRadius:'4px', textDecoration:'none', fontSize:'0.9rem'}}>← Getting The Data</a>
+
+# Commercial Flight-Data APIs
+
+**We have not bought any of this yet. Every question below is open, and the page exists so that
+stays visible instead of quietly becoming "no comment".**
+
+The free sources answered a great deal — see [the open-source
+pass](/Planes/following/apis/public_open_source/knowledge) — but they stop dead in two places that
+matter, and commercial vendors are the only way through both.
+
+## What the free pass cannot reach
+
+1. **2022.** The free historical archive we found does not go back that far. The earliest trace we
+   obtained anywhere is 24 February 2023. The trackers date the whole pattern from **2022**. Those
+   rows are currently untestable at zero cost.
+2. **The rows with no trace.** 52 exactly-claimed dates returned nothing from the volunteer network.
+   A commercial network with denser receiver coverage and satellite ADS-B may hold some of them —
+   and a vendor with deep coverage *also* finding nothing is a considerably stronger negative than a
+   volunteer network finding nothing.
+
+## What APIs they have
+
+### Flightradar24 — the official API
+
+The vendor whose screenshots this entire claim was read off, which makes its own API the most direct
+way to check whether those screenshots were read correctly.
+
+The endpoint that matters is **flight summary** — historic and near-real-time synopses of flights,
+queryable by registration and date range. It is the machine-readable form of the aircraft-history
+table people photographed. There are also historic flight-positions and full flight-track endpoints.
+
+Bearer token, credit-metered, subscription.
+
+### FlightAware AeroAPI v4
+
+**History back to 1 January 2011** — deep enough to cover the entire 2022 to 2025 window the
+trackers counted across. That makes it the single most valuable unopened door on this page.
+
+`GET /aircraft/{registration}/flights` with a start and end is the call. Header is `x-apikey`.
+Results are cursor-paginated and **every page is a separately billed query**. Pricing is
+usage-based, advertised from around $0.002 per query.
+
+### ADS-B Exchange, via RapidAPI
+
+Once the unfiltered community feed — and this is the part that bears on the investigation. Several of
+the original claims were read off `globe.adsbexchange.com` history pages while they were open. **Those
+pages now return HTTP 403 to the public** (checked 24 August 2026). The data did not vanish; it moved
+behind a subscription. Anyone re-checking an old screenshot against that site today will find they
+cannot, and may reasonably but wrongly conclude something was removed.
+
+### Others worth knowing
+
+RadarBox (AirNav) runs an independent receiver network, which makes it a genuine cross-check rather
+than another view of the same feed. Cirium and OAG are scheduled-airline oriented and largely
+irrelevant to business jets. Spire sells satellite ADS-B, which is the only thing that would cover the
+mid-Atlantic legs nobody's ground receivers can see.
+
+## How you use them
+
+Clients are in `apis/proprietary/code/` — `fr24api.js`, `aeroapi.js`,
+`adsbexchange_rapidapi.js`. **None of them run without a credential, and that is deliberate.** Each
+one exits with the reason, and the reason is meant to be copied into this page as a
+blocked-on-credential entry.
+
+```
+export FR24_API_TOKEN=...        node fr24api.js SU-BTT 2025-09-01 2025-09-15
+export AEROAPI_KEY=...           node aeroapi.js SU-BTT 2025-09-01 2025-09-15
+export ADSBX_RAPIDAPI_KEY=...    node adsbexchange_rapidapi.js SU-BTT
+```
+
+Credentials come from the environment. Never a file in this repo, never a commit, never printed.
+
+## What their terms allow us to publish
+
+**This is the constraint that shapes every page built from this pass.**
+
+Commercial terms generally let you *use* the data and *state a conclusion*. They do not let you
+mirror the feed. So the rule here is: **publish the finding, not the payload.** The raw response
+stays in `apis/proprietary/data/` as our own audit trail, and the page says the response is held but
+not published, names the vendor, and gives the date of the query.
+
+Where a licence is unclear, we treat it as restrictive.
+
+Compare that with the [government pass](/Planes/following/apis/government/knowledge), where the data
+is public domain and mirroring it in full is the right thing to do. **The pass a fact came from
+determines what may be done with it.**
+
+## What we got so far
+
+**Nothing. No commercial query has been run.** No subscription is held for any vendor on this page.
+
+That is stated plainly rather than left implied, because the honest position is that the deepest
+available flight history has not been consulted, and every conclusion on this site should be read
+knowing it.
+
+## What we did NOT get
+
+* **The 2022 rows.** Blocked on an AeroAPI key. This is the cheapest, highest-value purchase
+  available to this investigation and nothing else can substitute for it.
+* **The 52 claimed dates with no free trace.** Blocked on any commercial subscription.
+* **Flightradar24's own record of the aircraft its screenshots were read off.** Blocked on a token.
+* **ADS-B Exchange historical.** Behind a subscription since the site commercialised.
+* **Blocking-programme status.** We do not know whether any tracked tail appears on any vendor's
+  suppression list. **This matters more than it sounds:** an aircraft suppressed from a commercial
+  display looks exactly like an aircraft that never flew. Until each vendor is checked, a commercial
+  "no result" cannot be read as an absence.
+* **The terms themselves, read and quoted with a date.** Summarised here from public documentation,
+  not from a signed agreement.
+
+## The rule that governs this pass
+
+**Run the free pass first, always.** adsb.lol serves a free historical archive at the same URL shape
+ADS-B Exchange charges for. Never buy an answer that is already free, and never spend on a sweep when
+a named question would do — "did SU-BTT land at Wilmington on 10 September 2025, and when" is a
+question; "get everything about SU-BTT" is a bill.
+
+And never work around a paywall. No scraping a vendor's site, no undocumented endpoints, no shared
+keys. **A blocked question recorded honestly is worth more to this investigation than an answer
+obtained badly** — because the answer obtained badly is the first thing a hostile reader will use to
+throw out everything else.
+
+## Related
+
+* [How we get the data — overview](/Planes/following/apis/overview)
+* [Public open-source flight data](/Planes/following/apis/public_open_source/knowledge)
+* [Government flight records](/Planes/following/apis/government/knowledge)
+* [Capturing the tracking websites](/Planes/following/apis/browser_capture/knowledge)
+* [The following-planes overview](/Planes/following/overview)

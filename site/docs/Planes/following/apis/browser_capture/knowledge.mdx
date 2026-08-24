@@ -1,0 +1,148 @@
+---
+displayed_sidebar: docs
+title: "Capturing The Tracking Websites — And Proving What They Used To Show"
+sidebar_label: "Website Capture"
+description: "Driving a real browser at the flight-tracking sites to record what the public actually sees, compare it against Internet Archive snapshots, and document honestly where data that was once public is no longer retrievable."
+keywords:
+  - Charlie Kirk
+  - flight tracking screenshots
+  - Internet Archive
+  - Wayback Machine
+  - ADS-B Exchange
+  - Flightradar24
+  - evidence capture
+image: "/img/docusaurus-social-card.jpg"
+hide_table_of_contents: true
+---
+
+{/* Full-bleed marker: activates the site-wide full-width + text-wrap
+    layout in custom.css (full width + overflow-safe side videos). Scoped
+    via CSS :has(). */}
+<div className="ck-full-bleed" />
+
+<a href="/Planes/following/apis/overview" style={{display:'inline-block', marginBottom:'1rem',
+padding:'0.35rem 0.9rem', background:'#1a73e8', color:'#fff',
+borderRadius:'4px', textDecoration:'none', fontSize:'0.9rem'}}>← Getting The Data</a>
+
+# Capturing The Tracking Websites
+
+Three jobs no API can do.
+
+**Sites with no public API at all** — the map is the only interface, so a browser is the only client.
+**Proving what a page showed on a date**, as a picture rather than a paraphrase. And the one this
+investigation needs most: **documenting, carefully, where data that was once public is no longer
+retrievable.**
+
+That last one has to be done properly or not at all. The claim "they scrubbed it" is the easiest
+thing in the world to say and the easiest thing in the world to disprove, and one bad example
+discredits every good one.
+
+## What we already know is different
+
+Two changes are confirmed from the [open-source pass](/Planes/following/apis/public_open_source/knowledge),
+both checked **24 August 2026**:
+
+* **ADS-B Exchange historical pages return HTTP 403 to the public.** Several of the original
+  screenshots behind this whole claim were taken from that site while it was open. The data did not
+  disappear — it moved behind a subscription when the site commercialised. **Anyone re-checking an old
+  screenshot there today cannot, and may wrongly conclude something was removed.**
+* **airplanes.live now returns HTTP 403** and asks you to email a description of your project first.
+  It was open before.
+
+Neither is evidence of anything about this case. Both are exactly the kind of thing that gets
+mistaken for it.
+
+And one that cuts directly against a scrubbing reading: the free historical archive returns **403 for
+every date from 12 October to at least 15 December 2025, for every aircraft we tried — including one
+with no connection to this case at all.** That band happens to cover the dates a tracker claims
+SU-BTT was photographed at Sharm el-Sheikh. **It is an archive-wide condition, not a suppression, and
+reporting it as one would be false.**
+
+## What APIs they have — read as: which sites can be captured at all
+
+`apis/browser_capture/code/targets.json` holds **128 targets** — one per (site, aircraft) across
+8 sites and 16 aircraft, each with the URL, the ICAO hex, which investigation thread the aircraft
+belongs to, and what that site is good for.
+
+| Site | What it is worth capturing for |
+|---|---|
+| **Flightradar24** | The aircraft-history table the original claims were screenshotted from. Free tier shows a limited window — **record how deep that window goes**, it is part of the finding. |
+| **ADS-B Exchange** | Free map only; historical replay is behind the paywall. Capture the paywall itself. |
+| **FlightAware** | Aggressive bot protection. If it blocks, **record the block and stop.** |
+| **RadarBox** | An independent receiver network — a genuine cross-check, not another view of the same feed. |
+| **Planespotters / JetPhotos** | Photographs with dates and places. **A photograph of an airframe at a field on a date is a different kind of evidence from a transponder reading**, and it is not vulnerable to the same failure modes. |
+| **adsb.lol globe** | The free map over the same archive the open-source scripts pull as JSON. |
+| **airplanes.live globe** | Its API is gated now; record whether the map still is not. |
+
+## How you use them
+
+Driven by Claude Code's browser tools, following `apis/browser_capture/p_get_data.mdx`. There is no
+scraper here on purpose — the point is to capture what a human visitor sees, rendered, with its
+JavaScript run.
+
+**Every capture needs four things or it does not count:** the screenshot, the page text, the URL and
+the **UTC** time of capture, and the HTTP status.
+
+Alongside the screenshot, `monolith` freezes a whole page into one self-contained file that still
+renders years later after a redesign:
+
+```
+monolith -o captures/<site>/<tail>/<utc>.html "<url>"
+```
+
+A screenshot proves what was displayed. Monolith preserves what was underneath. Use both.
+
+### Rules that are not negotiable
+
+* **Never log in, never defeat a paywall, never click through a terms gate, never create an account.**
+  A page that requires it is a finding, not an obstacle.
+* **Never trigger a JavaScript alert, confirm or prompt.** A modal blocks every further browser
+  command and the session has to be rescued by hand.
+* Images go to the repo and are embedded by **local repo path**, never by an IPFS gateway URL. Images
+  are tracked in git — an untracked image renders locally and 404s for every real visitor.
+* Check the ban list before embedding anything.
+
+## The comparison is the finding
+
+A capture alone says "this is what the page shows today". Paired with the Internet Archive snapshot
+nearest the claim date — `wayback.js` in the open-source pass, which reads the CDX API and reports
+snapshot counts, dates, HTTP statuses and content digests — it can say **"this is what the page showed
+then, and this is what it shows now."**
+
+Two things must never be blurred:
+
+* **NEVER SHOWED IT** — no evidence the page ever carried this. **That is not scrubbing.** It is the
+  absence of a claim ever having been supported.
+* **SHOWED IT AND NO LONGER DOES** — a documented change in the public record, with dates on both ends.
+
+## And it still cannot tell you why
+
+**A redesign, a URL change, a retention window rolling over, a commercial paywall and a deliberate
+removal all look identical from outside.** Nothing in this pass distinguishes them.
+
+So every page built from these captures states which of those it can and cannot rule out. A page
+that alleges scrubbing without ruling out a redesign will be taken apart by the first person who
+checks — and it deserves to be.
+
+## What we got so far
+
+**Nothing yet.** The target list is built, the tooling is installed, and no capture has been made.
+`apis/browser_capture/captures/` is empty and this section will say so until it is not.
+
+## What we did NOT get
+
+* **No captures at all**, of any site, on any aircraft. 128 targets, none done.
+* **No archive comparison run** against any original screenshot. The `wayback.js` client exists and
+  has not been pointed at the target list.
+* **No copy of the original screenshots** the claims were read off, with their own provenance —
+  which post, which date, which account. **Without those, "the page changed" has nothing to be
+  compared against**, and that is the first gap to close on this page.
+* **No record of which tracked tails, if any, appear on a vendor blocking list.**
+
+## Related
+
+* [How we get the data — overview](/Planes/following/apis/overview)
+* [Public open-source flight data](/Planes/following/apis/public_open_source/knowledge)
+* [Government flight records](/Planes/following/apis/government/knowledge)
+* [Commercial flight-data APIs](/Planes/following/apis/proprietary/knowledge)
+* [The following-planes overview](/Planes/following/overview)

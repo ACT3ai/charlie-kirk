@@ -1,0 +1,214 @@
+---
+displayed_sidebar: docs
+title: "Open Flight Data — Checking The Following Claim Against Primary ADS-B"
+sidebar_label: "Open Source Data"
+description: "The free, open flight-tracking sources: which have historical data and which only have live positions, how to call them, and what happened when we ran every claimed overlap date in this investigation through primary ADS-B traces."
+keywords:
+  - Charlie Kirk
+  - ADS-B
+  - adsb.lol
+  - OpenSky Network
+  - flight tracking
+  - SU-BTT
+  - open data
+  - flight data verification
+image: "/img/docusaurus-social-card.jpg"
+hide_table_of_contents: true
+---
+
+{/* Full-bleed marker: activates the site-wide full-width + text-wrap
+    layout in custom.css (full width + overflow-safe side videos). Scoped
+    via CSS :has(). */}
+<div className="ck-full-bleed" />
+
+<a href="/Planes/following/apis/overview" style={{display:'inline-block', marginBottom:'1rem',
+padding:'0.35rem 0.9rem', background:'#1a73e8', color:'#fff',
+borderRadius:'4px', textDecoration:'none', fontSize:'0.9rem'}}>← Getting The Data</a>
+
+# Open Flight Data
+
+The whole following-planes claim was built from screenshots. Somebody photographed an aircraft-history
+table on a tracking site, somebody typed the rows into a spreadsheet, somebody tallied the
+spreadsheet, and somebody read the tally on television. **Every step is a place a row could be
+misread**, and published audits say a great many of them were.
+
+This page is what happened when we skipped the chain and went to the primary data ourselves, using
+only sources that are free, need no account, and can be repeated by any reader with a terminal.
+
+**Everything below was retrieved on 24 August 2026.** Anything said about an API without a date on
+it is worthless six months later.
+
+## What APIs they have
+
+### The single most important thing on this page
+
+**Almost every free ADS-B network serves live positions only.** Ask adsb.lol, adsb.fi,
+airplanes.live or anonymous OpenSky about an aircraft that is not airborne at this second and you get
+**HTTP 200 with an empty array** — which reads exactly like "no such aircraft" and actually means
+"not flying right now."
+
+A researcher who does not know that will look up SU-BTT, get nothing, and conclude the aircraft was
+hidden. It was parked.
+
+| Source | Endpoint | Historical? | Auth | Status on 24 Aug 2026 |
+|---|---|---|---|---|
+| **adsb.lol globe history** | `globe_history/YYYY/MM/DD/traces/hh/trace_full_HEX.json` | **YES** | none | **200 — the workhorse** |
+| adsb.lol v2 | `/v2/hex/HEX`, `/v2/reg/REG` | no, live only | none | 200, empty when not airborne |
+| adsb.fi | `/api/v2/hex/HEX` | no, live only | none | 200, empty when not airborne |
+| airplanes.live | `/v2/reg/REG` | no, live only | **now gated** | **403 — email them first** |
+| OpenSky | `/api/flights/aircraft` | yes | **OAuth2** | **403 anonymous** |
+| OpenSky | `/api/states/all` | no, live only | optional | 200 |
+| adsbdb.com | `/v0/aircraft/REG` | no — metadata only | none | 200 |
+| ADS-B Exchange | `globe_history/...` | yes | **paid** | **403** |
+| OurAirports | `airports.csv`, `runways.csv` | reference data | none | 200, CC0 |
+| Internet Archive | CDX API | snapshots | none | 200 |
+
+### adsb.lol globe history — the one that works
+
+The only free, no-account source of **historical** ADS-B tracks we have found:
+
+```
+https://adsb.lol/globe_history/YYYY/MM/DD/traces/<last 2 of hex>/trace_full_<hex>.json
+```
+
+Gzip-compressed JSON. It self-identifies the aircraft in `r` (registration) and `t` (type) from the
+feeder database, and `trace` is an array of `[seconds after timestamp, lat, lon, alt, ...]` where
+`alt` is the literal string `ground` when the aircraft is on the surface — so takeoff and landing
+times fall straight out of it.
+
+## How you use them
+
+Everything is in `apis/public_open_source/code/`. No dependencies, Node 18+.
+
+```
+node globe_history.js SU-BTT 2025-09-10          one aircraft, one day
+node globe_history.js --following 2025-09-04 2025-09-11   the fleet, a range
+node pull_all.js --apply                          every claimed date in the spine CSVs
+node adsbdb.js                                    tail to hex, type, owner
+node live_networks.js SU-BTT                      the live-only networks side by side
+node wayback.js                                   Internet Archive snapshots
+node ourairports.js                               public-domain airport reference data
+```
+
+Every script saves the raw response with a `.meta.json` beside it recording the URL, the HTTP
+status, the byte count and the UTC time of the request. **Nothing overwrites a previous pull** — a
+re-pull lands beside the first with a timestamp suffix, because the diff between two pulls is how we
+show something stopped being retrievable.
+
+OpenSky changed its authentication on **18 March 2026**: username and password are gone, it is
+OAuth2 client credentials now, tokens last 30 minutes, and there is a daily credit budget — 400
+anonymous, 4,000 registered, 8,000 for accounts that feed data back. Without credentials, historical
+calls return `403 You cannot access historical flights`.
+
+Command-line tools installed for this work: `duckdb` for querying the spine CSVs and the FAA registry
+in place, and `monolith` for freezing a whole tracking page into one self-contained file. The ADS-B
+decoders `readsb` and `dump1090-fa` are installable but decode radio off the air — they do not query
+anybody's API.
+
+## What we got so far
+
+**478 (aircraft, date) pulls on 24 August 2026. 178 traces retrieved.** Landed in three places: the
+raw archive, each aircraft's own directory, and each overlap's own directory.
+
+### The September 10 departure, settled
+
+The disputed question of when SU-BTT left Utah has a primary answer now.
+
+| | |
+|---|---|
+| First seen, on the ground | **13:07:53 UTC** — 07:07 MDT — at 40.2303 N, 111.7283 W, **Provo Municipal (KPVU)** |
+| Wheels up | **13:14:04 UTC** — 07:14 MDT |
+| Last seen, on the ground | **16:50:37 UTC** — 12:50 EDT — at 39.6631 N, 75.6046 W, **Wilmington New Castle (KILG)** |
+| Trace points | 1,229 |
+
+That is **Provo to Wilmington, Delaware, departing about five hours before the assassination and
+landing about ninety minutes before it.** It matches the "7:08 AM MT" figure that has circulated
+almost exactly, and it is inconsistent with the competing accounts of a Dugway departure.
+
+Source: `adsb.lol/globe_history/2025/09/10/traces/d3/trace_full_0101d3.json`, retrieved 24 August
+2026, saved at `Planes/SU-BTT/data/adsb/`.
+
+**What it does not show.** It says where an airframe was. It says nothing about who was aboard, who
+tasked it, or why it went to Delaware. **No public record establishes tasking in either direction.**
+
+### The result that matters most
+
+We ran every exactly-claimed date in this repo's own spine files through the primary archive, without
+looking at anyone's audit first. Then we compared.
+
+| The repo's audit verdict on the claim | Primary trace found |
+|---|---|
+| **accurate** | **18 of 24 — 75%** |
+| **partial** | **7 of 8 — 88%** |
+| **inaccurate** | **5 of 44 — 11%** |
+
+**An independent primary-data check, run blind, lands in the same place the audit did.** The
+pairings the audit called sound are the ones with tracks behind them; the pairings it called wrong
+are overwhelmingly the ones with no track at all.
+
+And underneath that sits a second, sharper split:
+
+* **Flight legs** — the individual "this aircraft was at this field on this date" rows — verify at
+  **141 of 144, 98%.**
+* **Overlap pairings** — the "and therefore it was following them" rows — verify at **30 of 79, 38%.**
+
+**The aircraft movements are largely real. The claim that those movements constitute shadowing is
+where the sheet falls apart.** That is a more precise finding than either side of this argument has
+published, and it does not flatter either of them.
+
+## What we did NOT get
+
+The most useful section on the page.
+
+* **300 of 478 pulls returned nothing.** 52 of those were exactly-claimed dates.
+* **The archive does not reach 2022.** The earliest trace we obtained anywhere is **24 February
+  2023.** The trackers date the pattern from **2022**, and **those rows cannot be tested for free at
+  all.** Any statement about 2022 on this site rests on somebody's screenshot, not on data we hold.
+* **A whole band of the archive returns 403.** Every date from **12 October 2025 to at least 15
+  December 2025** returns HTTP 403 for **every aircraft we tried, including one with no connection to
+  this case.** 11 October works; 31 December works.
+  **This is an archive-wide condition, not a suppression of any aircraft, and it must never be
+  reported as one.** It happens to cover the dates a tracker claims SU-BTT was photographed on the
+  Sharm el-Sheikh tarmac — which means the free archive cannot check that claim either way.
+* **airplanes.live is no longer open.** Its API now returns 403 and asks you to email a description
+  of your project first. It was open before. That is a real reduction in what a member of the public
+  can retrieve, and it is why this page carries dates.
+* **ADS-B Exchange historical is paid.** `globe_history` returns 403 to the public — and several of
+  the original screenshots were taken from that site while it was open.
+* **OpenSky historical is unavailable to us.** No credentials. Its flight-list endpoint is the best
+  free cross-check on adsb.lol and we are not using it. **This is the cheapest gap on the list to
+  close.**
+* **No Erika Kirk aircraft was checked, because there is nothing to check.** Her flight logs are
+  reported erased, and this repo holds **one** sourced Erika location before 10 September 2025 — for
+  a window the trackers counted **73 overlaps** across. Every Erika pairing rests on the foreign
+  aircraft's track plus a *claimed* location for her. See
+  [Erika Kirk's flight logs reported erased](/Planes/Erika-Flight-Logs-Erased).
+* **The hex code for SU-BTT is disputed between two community databases.** adsbdb returns `0101F0`;
+  the trace at `0101D3` self-identifies as SU-BTT and carries the September 10 track, while `0101F0`
+  has no trace that day. We use `0101D3` and record the disagreement rather than resolving it
+  silently.
+
+### An empty result is not a finding
+
+Every gap above is recorded in a `MISSING_DATA.md` file inside the aircraft's directory and the
+overlap's directory — **90 of them** — naming the tail, the UTC date, the endpoint, the HTTP status,
+and who claimed the flight.
+
+Each one says the same thing, and this page says it too: **a 404 means the network holds no trace.
+It does not establish that the aircraft did not fly, and it does not establish that a transponder was
+switched off.** The ordinary explanations come first — parked and silent, outside volunteer receiver
+coverage, or a claimed date that was simply wrong. This network sees only what its volunteers heard,
+and most of the Atlantic, most of North Africa and much of the rural United States at low altitude is
+not covered by anyone.
+
+**The holes cut both ways, and they cut against us as often as for us.**
+
+## Related
+
+* [How we get the data — overview](/Planes/following/apis/overview)
+* [Government flight records](/Planes/following/apis/government/knowledge)
+* [Commercial flight-data APIs](/Planes/following/apis/proprietary/knowledge)
+* [Capturing the tracking websites](/Planes/following/apis/browser_capture/knowledge)
+* [The following-planes overview](/Planes/following/overview)
+* [SU-BTT](/Planes/SU-BTT/overview) · [SU-BND](/Planes/SU-BND/overview) · [SU-BTU](/Planes/SU-BTU/overview) · [SU-BTV](/Planes/SU-BTV/overview) · [SU-BGM](/Planes/SU-BGM/overview)
+* [September 10 flight timeline](/Planes/Sept10-Flight-Timeline)
