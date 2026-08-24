@@ -59,7 +59,7 @@ The post makes three separate claims, and they carry very different evidentiary 
 
 | Claim | Type | Status |
 |---|---|---|
-| N102DZ's public history was removed from FlightRadar24 in May 2026 | Checkable against the tracking site | **NOT CONFIRMED** — the page still loads in a browser with its record intact. Its flight table is empty, but so is a control aircraft's, because FR24 shows only 7 days to logged-out visitors. Whether a block was applied is not visible from outside |
+| N102DZ's public history was removed from FlightRadar24 in May 2026 | Checkable against the tracking site | **REFUTED** — the page loads HTTP 200 in a browser with its identity block intact, in two independent sessions on 24 Aug 2026, and nothing on it says removed, blocked or restricted. Its flight table is empty, but so is an unrelated control aircraft's to within eight bytes, because FR24 shows only 7 days to logged-out visitors. **Limit: what the table held in May 2026 is not reachable by this method in either direction** |
 | Copies of the logs were saved before removal | Claim of possession | **This site now holds one** — recovered from the Internet Archive, not from the poster |
 | The saved logs are "far from boring" | Characterisation | **Not borne out by what we recovered** — see below |
 
@@ -153,12 +153,30 @@ body. **FlightRadar24 returns 403 to scripted requests across its entire site.**
 bot protection. It is not about any aircraft, and **it cannot distinguish a removed record from a
 present one in either direction.**
 
-The strictly honest standing of the reported removal is therefore **UNTESTED — the method cannot see
-it.** Not confirmed by the 403, and not refuted by it either. Any conclusion about whether that page
-was altered has to rest on a real browser session and on nothing else. **No claim on this site should
-rest on the HTTP status a script received**, and this page has previously stated the question more
-strongly than the method could support. **A control test is what corrected it**, and running one is
-the cheapest protection this investigation has against believing its own strongest-looking material.
+Neither confirmed by the 403, then, nor refuted by it. Any conclusion about that page has to rest on
+a real browser session and on nothing else. **No claim on this site should rest on the HTTP status a
+script received**, and this page has previously stated the question more strongly than the method
+could support. **A control test is what corrected it**, and running one is the cheapest protection
+this investigation has against believing its own strongest-looking material.
+
+**That browser session has now been run, twice, and it settles the removal claim: REFUTED.** The
+first run probed sixteen case tails and four unrelated controls in a real logged-out browser —
+**HTTP 200, every one.** A second, independent session the same day reproduced it across six more
+probes fetched from inside one live session, again **HTTP 200, every one.** For N102DZ the live page
+returns page title `N102DZ - Gulfstream V [555] - Flightradar24`, MODE S **A00C85**, TYPE CODE
+**GLF5**, and **nothing on it says removed, blocked, restricted or unavailable. Nothing was taken
+down.** The empty history table is the **seven-day free-tier window**, and the control proves it: the
+unrelated aircraft **N628TS prints the identical "could not find data for specified flight" message
+at 53,318 bytes against N102DZ's 53,310**, while SU-BTT, SU-BND and a Ryanair control all render
+history because they had flown recently. Both runs are on disk at
+`site/docs/Planes/following/apis/browser_capture/captures/fr24_page_availability_2026-08-24.tsv` and
+`.../fr24_n102dz_removal_test_2026-08-24b.tsv`.
+
+**The limit travels with the refutation.** A page that loads today cannot testify about what its
+table held in **May 2026**. **"The page was taken down" is refuted; a narrower claim that history was
+specifically purged and later restored is beyond this method in either direction**, and this site does
+not assert it. A logged-out free tier is also the weakest view FlightRadar24 offers — a paid tier
+shows 90 days to 3 years, and we have not looked through one.
 
 **None of which moves the thing this page is actually about.** Sixty-six recovered aircraft-days,
 thirty-five of them inside the disputed window, three archives, four years of coverage — and **not

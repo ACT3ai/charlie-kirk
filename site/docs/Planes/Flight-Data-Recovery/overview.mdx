@@ -83,6 +83,9 @@ Every one of those responses carries the same body, about **5,877 bytes**. **Fli
 403 to a script for its entire site, including its own front page.** A response that is
 byte-identical for the front page cannot distinguish a removed record from a present one. **By
 script, the removal question is not answered badly — it is UNTESTABLE. The method cannot see it.**
+That reasoning about the script is right and it stands. What has changed since it was written is
+that a method which *can* see the question has now been used — twice, independently — so the
+standing of the removal claim is no longer "untested" but **refuted**. See below.
 
 That is the correction underneath the correction, and it deserves to be said on its own: **this page
 reported the N102DZ removal more strongly than the evidence supported, and what caught it was a
@@ -101,6 +104,17 @@ robot check is satisfied:
 The browser served N102DZ's page complete with its identity block — *Gulfstream V · GLF5 · Mode S
 A00C85* — on **24 August 2026**. The page is not gone. It was never gone.
 
+**That run was then reproduced by a second, independent browser session on the same day**, because a
+conclusion this load-bearing needed checking by someone other than the person who reached it. Six
+probes — N102DZ, SU-BTT, SU-BND, N888KG and two unrelated controls — all fetched same-origin from
+inside one real logged-out session. **HTTP 200, every one.** N102DZ returned page title
+`N102DZ - Gulfstream V [555] - Flightradar24`, MODE S **A00C85**, TYPE CODE **GLF5**, and **nothing
+on the page says removed, blocked, restricted or unavailable.** Both runs are on disk:
+`browser_capture/captures/fr24_page_availability_2026-08-24.tsv` and
+`browser_capture/captures/fr24_n102dz_removal_test_2026-08-24b.tsv`.
+
+**The claim "N102DZ was removed from FlightRadar24" is therefore REFUTED — not untested.**
+
 **The empty flight table is a paywall, not an erasure.** FlightRadar24 shows a logged-out visitor
 **the last seven days only**, and prints so under the table: *"More than 7 days of N102DZ history is
 available with an upgrade to a Silver (90 days), Gold (1 year), or Business (3 years)
@@ -108,6 +122,20 @@ subscription."* That line appears on every one of the twenty pages probed, subje
 N102DZ's table is empty because a private aircraft that has not flown in a week has nothing to show —
 and Nike's Gulfstream, the control, is empty for the same reason on the same day, while the Ryanair
 737 flying six sectors a day shows 683 rows.
+
+The second run made that control tighter still. The unrelated aircraft **N628TS prints the identical
+"could not find data for specified flight" message at 53,318 bytes, against N102DZ's 53,310** — a
+difference of eight bytes between an aircraft at the centre of this case and one with no connection
+to it. SU-BTT, SU-BND and a Ryanair control all render history on the same day, because they had
+flown recently. **An empty table on FlightRadar24's free tier means the aircraft has not flown in
+seven days. It does not mean anything was deleted.**
+
+**The limit, and it travels with the refutation everywhere it is published.** A page that loads
+today cannot testify about what its table held in **May 2026**. "The page was taken down" is
+refuted. **A narrower claim — that history was specifically purged and later restored — is beyond
+this method in either direction**, and no page on this site may assert it. A logged-out free tier is
+also the weakest view FlightRadar24 offers: a paid tier shows 90 days to 3 years, and we have not
+looked through one.
 
 This matters more than the finding it replaces. **The standard this page set for the other
 "erasures" is the standard that just took this one down.** The evidence is at
@@ -119,8 +147,8 @@ and in `page_control_probe.json`, and the method is set out on
 
 | What | Status | What it actually is |
 |---|---|---|
-| **N102DZ's FlightRadar24 page**, asked by script | **UNTESTED — the method cannot see it** | FR24 returns 403 to a script for its **own home page**, its aircraft index, and seven unrelated control aircraft, with the same ~5,877-byte body every time. That 403 is bot protection. **It can neither confirm nor refute a removal, and this page previously read it as though it could.** |
-| **N102DZ's FlightRadar24 page**, asked by browser | **NOT a removal** | Opened in a real logged-out browser on 24 Aug 2026 the page returns **HTTP 200** with its identity block intact, as do all fifteen other case aircraft and all four browser controls. The empty table is FR24's seven-day free-tier limit. |
+| **N102DZ's FlightRadar24 page**, asked by script | **UNTESTABLE BY THIS METHOD — superseded by the row below** | FR24 returns 403 to a script for its **own home page**, its aircraft index, and seven unrelated control aircraft, with the same ~5,877-byte body every time. That 403 is bot protection. **It can neither confirm nor refute a removal, and this page previously read it as though it could.** It is not the standing of the claim — the browser row is. |
+| **N102DZ's FlightRadar24 page**, asked by browser | **REFUTED — not a removal** | Opened in a real logged-out browser on 24 Aug 2026 the page returns **HTTP 200** with its identity block intact, as do all fifteen other case aircraft and all four browser controls, and **an independent second session the same day reproduced it**. The empty table is FR24's seven-day free-tier limit — the unrelated control N628TS prints the same message at 53,318 bytes against N102DZ's 53,310. **Limit: this cannot testify about what the page displayed in May 2026, and no page here may claim a purge-and-restore in either direction.** |
 | **The adsb.lol 403 band, from 12 Oct 2025** | **NOT a removal** | The archive returns 403 for **every aircraft**, controls included, beginning exactly at 2025-10-12. The same days are published in full as public backup files. |
 | **The adsb.lol 404 stretch, to about 1 Aug 2026** | **NOT a removal** | Archive-wide. Every unrelated control airframe 404s identically across the same seven months, and normal service resumes about 2 Aug 2026. |
 | **Erika Kirk's own itinerary** | **Still absent, and no archive fixes it** | Not a tracking-site question at all. No dated list of her locations has ever been published, so there is nothing for a backup to restore. |
@@ -132,7 +160,8 @@ That is what tells you it is the archive, or the paywall, or the bot filter — 
 **Read the first two rows together, because the difference between them is the whole method.** One
 says our tooling is blind to the question; the other says that when a tool that *can* see the
 question is used, the answer is that nothing was removed. Those are two different statements and
-collapsing them is exactly the mistake this page made the first time.
+collapsing them is exactly the mistake this page made the first time. **The second row is the one
+that gives the claim its standing: refuted.**
 
 The one thing on the list that genuinely has not been recovered is the last row, and it is the one no
 amount of ADS-B work can touch: an aircraft track never establishes who was aboard.
