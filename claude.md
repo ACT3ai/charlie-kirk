@@ -788,3 +788,10 @@ Under the docs directory are a number of directories immediately under there. Th
 Know that that's what we're talking about with a level two document. Sometimes we say, "Here's an image file. Add it," or "A video file. Make sure it's added to these three or four level two pages and list the names." You'll search for the directory names that best match under docs. That's the way to find these "level two directories."
 ~/BGit/Bryan_git/charlie-kirk/site/docs/{Level 2 directory}/
 
+
+We have a directory where we store when the planes that followed Charlie Kirk stopped, where they seemed to follow them around. We have the stopping locations. They're in the directory below. 
+~/BGit/Bryan_git/charlie-kirk/site/docs/Planes/following/speaking/20251009_grand_forks.mdx
+
+When it comes to the issue of trains, planes, following Charlie Kirk, we have the directory:
+~/BGit/Bryan_git/charlie-kirk/site/docs/Planes/following
+
