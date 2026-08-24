@@ -1,0 +1,31 @@
+{
+  "retrieved_utc": "2026-08-24T16:29:36.628Z",
+  "source": "airplanes-live",
+  "source_role": "BACKUP ARCHIVE — independent volunteer network",
+  "url": "https://globe.airplanes.live/globe_history/2026/04/26/traces/d0/trace_full_0101d0.json",
+  "http_status": 200,
+  "bytes": 14448,
+  "tail": "SU-BTU",
+  "hex": "0101d0",
+  "utc_date": "2026-04-26",
+  "summary": {
+    "registration": "SU-BTU",
+    "type": "FA7X",
+    "icao": "0101d0",
+    "points": 89,
+    "first_seen_utc": "2026-04-26T08:22:07.730Z",
+    "first_pos": [
+      29.958506,
+      31.270056
+    ],
+    "first_on_ground": false,
+    "last_seen_utc": "2026-04-26T09:38:11.290Z",
+    "last_pos": [
+      29.181688,
+      32.747444
+    ],
+    "last_on_ground": false,
+    "wheels_up_utc": null,
+    "wheels_down_utc": null
+  }
+}

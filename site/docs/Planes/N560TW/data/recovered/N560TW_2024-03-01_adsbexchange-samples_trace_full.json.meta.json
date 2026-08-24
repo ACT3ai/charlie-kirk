@@ -1,0 +1,28 @@
+{
+  "retrieved_utc": "2026-08-24T16:33:32.437Z",
+  "source": "adsbexchange-samples",
+  "source_role": "BACKUP ARCHIVE — ADSBX free monthly sample, reaches back to 2016; the only free source covering the 2022 dates the daily archives do not hold",
+  "url": "https://samples.adsbexchange.com/traces/2024/03/01/a8/trace_full_a728a8.json",
+  "http_status": 200,
+  "bytes": 105618,
+  "tail": "N560TW",
+  "hex": "a728a8",
+  "utc_date": "2024-03-01",
+  "summary": {
+    "registration": "N560TW",
+    "type": "C56X",
+    "points": 610,
+    "first_seen_utc": "2024-03-01T19:57:08.440Z",
+    "first_pos": [
+      43.611533,
+      -110.73573
+    ],
+    "first_on_ground": true,
+    "last_seen_utc": "2024-03-01T21:41:59.800Z",
+    "last_pos": [
+      33.622296,
+      -111.909285
+    ],
+    "last_on_ground": true
+  }
+}

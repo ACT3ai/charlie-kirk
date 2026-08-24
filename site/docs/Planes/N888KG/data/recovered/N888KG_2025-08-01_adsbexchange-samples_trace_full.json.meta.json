@@ -1,0 +1,28 @@
+{
+  "retrieved_utc": "2026-08-24T16:33:32.437Z",
+  "source": "adsbexchange-samples",
+  "source_role": "BACKUP ARCHIVE — ADSBX free monthly sample, reaches back to 2016; the only free source covering the 2022 dates the daily archives do not hold",
+  "url": "https://samples.adsbexchange.com/traces/2025/08/01/75/trace_full_ac3c75.json",
+  "http_status": 200,
+  "bytes": 136036,
+  "tail": "N888KG",
+  "hex": "ac3c75",
+  "utc_date": "2025-08-01",
+  "summary": {
+    "registration": "N888KG",
+    "type": "CL30",
+    "points": 779,
+    "first_seen_utc": "2025-08-01T20:17:07.390Z",
+    "first_pos": [
+      38.56192,
+      -90.141031
+    ],
+    "first_on_ground": false,
+    "last_seen_utc": "2025-08-01T23:12:27.880Z",
+    "last_pos": [
+      40.219504,
+      -111.719487
+    ],
+    "last_on_ground": true
+  }
+}

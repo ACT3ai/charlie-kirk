@@ -1,0 +1,28 @@
+{
+  "retrieved_utc": "2026-08-24T16:33:32.437Z",
+  "source": "adsbexchange-samples",
+  "source_role": "BACKUP ARCHIVE — ADSBX free monthly sample, reaches back to 2016; the only free source covering the 2022 dates the daily archives do not hold",
+  "url": "https://samples.adsbexchange.com/traces/2025/08/01/8a/trace_full_50018a.json",
+  "http_status": 200,
+  "bytes": 219719,
+  "tail": "T7-ELL",
+  "hex": "50018a",
+  "utc_date": "2025-08-01",
+  "summary": {
+    "registration": "T7-ELL",
+    "type": "GLEX",
+    "points": 1146,
+    "first_seen_utc": "2025-08-01T13:29:49.890Z",
+    "first_pos": [
+      47.44899,
+      8.548342
+    ],
+    "first_on_ground": true,
+    "last_seen_utc": "2025-08-01T19:24:19.130Z",
+    "last_pos": [
+      24.430929,
+      54.451442
+    ],
+    "last_on_ground": true
+  }
+}
