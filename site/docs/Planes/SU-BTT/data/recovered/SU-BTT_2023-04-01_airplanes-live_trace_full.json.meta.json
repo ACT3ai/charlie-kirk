@@ -1,0 +1,35 @@
+{
+  "retrieved_utc": "2026-08-24T17:18:17.391Z",
+  "vendor_credentials_redacted": 0,
+  "source": "airplanes-live",
+  "source_role": "BACKUP ARCHIVE — independent volunteer network",
+  "url": "https://globe.airplanes.live/globe_history/2023/04/01/traces/d3/trace_full_0101d3.json",
+  "http_status": 200,
+  "bytes": 179354,
+  "tail": "SU-BTT",
+  "hex": "0101d3",
+  "utc_date": "2023-04-01",
+  "summary": {
+    "registration": "SU-BTT",
+    "type": "FA7X",
+    "points": 897,
+    "first_seen_utc": "2023-04-01T07:19:50.310Z",
+    "first_pos": [
+      48.961945,
+      2.412626
+    ],
+    "last_seen_utc": "2023-04-01T16:01:37.760Z",
+    "last_pos": [
+      38.663818,
+      -90.622817
+    ],
+    "wheels_up_utc": null,
+    "wheels_down_utc": null
+  },
+  "pulled_for": "alleged overlap",
+  "overlap_ids": [
+    "SITE-001"
+  ],
+  "alleged_overlap_date": "2023-04-02",
+  "alleged_place": "Jefferson City (event) / St. Louis (aircraft), MO"
+}

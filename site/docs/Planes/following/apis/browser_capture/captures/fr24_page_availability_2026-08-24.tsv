@@ -1,0 +1,43 @@
+# FlightRadar24 aircraft-page availability, probed from a REAL LOGGED-OUT BROWSER SESSION.
+# Retrieved 2026-08-24 (UTC) by Claude in Chrome, fetching each page same-origin from
+# www.flightradar24.com so Cloudflare's bot check was not in the way.
+#
+# WHY THIS FILE EXISTS. Our scripted probe (recover_erased.js) records HTTP 403 from
+# flightradar24.com for every aircraft in this investigation, and that 403 was read on this
+# site as evidence that a page had been REMOVED. It is not. FlightRadar24 returns 403 to any
+# scripted request. See ../../public_open_source/data/recovery/page_control_probe.json: five
+# unrelated control aircraft got the identical 403 from the identical script.
+#
+# In a browser, EVERY aircraft page in this investigation loads, HTTP 200, with its full
+# identity block. NONE of them has been removed from FlightRadar24.
+#
+# rows      = flight-history rows the free tier rendered. FlightRadar24 shows the LAST 7 DAYS
+#             to a logged-out visitor and paywalls everything older ("More than 7 days of X
+#             history is available with an upgrade to Silver (90 days)..."). paywall=1 on
+#             every single row below, subject and control alike.
+# nodata    = the page printed "Sorry, but we could not find data for specified flight",
+#             which for a private aircraft means IT HAS NOT FLOWN IN THE LAST 7 DAYS. The
+#             unrelated control N1KE (a Nike Gulfstream) prints it too.
+# kind      = SUBJECT (this investigation) or CONTROL (nothing to do with this case).
+#
+# tail	http	bytes	rows	nodata	paywall	mode_s	type	airline	operator	kind
+SU-BND	200	57612	14	0	1	01003E	GLF4	Private owner	-	SUBJECT
+N102DZ	200	53310	0	1	1	A00C85	GLF5	Private owner	-	SUBJECT
+SU-BTU	200	68424	56	0	1	0101D0	FA7X	Egypt - Air Force	Egypt - Air Force	SUBJECT
+N888KG	200	53338	0	1	1	AC3C75	CL30	Private owner	-	SUBJECT
+SU-BTV	200	68011	54	0	1	0101D1	FA7X	Egypt - Air Force	Egypt - Air Force	SUBJECT
+N560TW	200	61364	28	0	1	A728A8	C56X	Private owner	-	SUBJECT
+SU-BGM	200	54119	0	1	1	010070	GLF4	Egypt Goverment	-	SUBJECT
+N582MM	200	53309	0	1	1	A77E75	LJ60	Private owner	-	SUBJECT
+T7-ELL	200	53400	0	1	1	50018A	GLEX	Falcon Luxe	Falcon Luxe San Marino	SUBJECT
+N872RA	200	134344	294	0	1	ABFF3C	BE40	Regency Air	Regency Air	SUBJECT
+N40JD	200	68594	56	0	1	A4AB14	PRM1	Private owner	-	SUBJECT
+N1098L	200	61748	28	0	1	A0299E	GLEX	Private owner	-	SUBJECT
+N2100L	200	156432	378	0	1	A1BBE5	GLEX	Private owner	-	SUBJECT
+N59906	200	83214	110	0	1	A7C14D	PA31	Private owner	-	SUBJECT
+N55906	200	53340	0	1	1	A72351	P28R	Private owner	-	SUBJECT
+SU-BTT	200	68606	56	0	1	0101D3	FA7X	Egypt Government	Egypt - Air Force	SUBJECT
+N1KE	200	53294	0	1	1	A000E8	GLF6	Private owner	-	CONTROL
+EI-DCL	200	238391	683	0	1	4CA242	B738	Ryanair	Ryanair	CONTROL
+N904XJ	200	248334	699	0	1	AC801E	CRJ9	Delta Connection	Endeavor Air	CONTROL
+D-AIMA	200	107019	196	0	1	3C65A1	A388	Lufthansa	Lufthansa	CONTROL

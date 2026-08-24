@@ -1,0 +1,1056 @@
+{
+  "generated_utc": "2026-08-24T17:28:18.808Z",
+  "alleged_overlaps": 69,
+  "with_a_recovered_track_on_the_alleged_day": 23,
+  "testable_against_a_us_claim": 23,
+  "consistent_with_the_claim": 21,
+  "inconsistent_with_the_claim": 2,
+  "caution": "A nearest-airport label is geometry, not a landing record, and an absent track is an absent track -- both free daily archives begin in 2023, so every 2022 row is untestable by construction and no 404 here should be read as a removal.",
+  "rows": [
+    {
+      "overlap_ids": [
+        "SITE-001"
+      ],
+      "tail": "SU-BND",
+      "date": "2023-04-02",
+      "alleged_place": "Jefferson City (event) / St. Louis (aircraft), MO",
+      "alleged_airport": "KSTL/KCPS/KSUS",
+      "verdict": "NEITHER_HAS_IT",
+      "points": null,
+      "track_starts": null,
+      "track_ends": null,
+      "same_country_as_alleged": null,
+      "test": "UNTESTED — no free archive holds a track for this aircraft on or around this day"
+    },
+    {
+      "overlap_ids": [
+        "OWENS-014"
+      ],
+      "tail": "SU-BND",
+      "date": "2023-05-03",
+      "alleged_place": "St. Louis, MO",
+      "alleged_airport": "KCPS",
+      "verdict": "BOTH_HAVE_IT",
+      "points": 460,
+      "track_starts": "KCPS/CPS (St Louis Downtown Airport, Cahokia/St Louis IL) 2.07km",
+      "track_ends": "KCPS/CPS (St Louis Downtown Airport, Cahokia/St Louis IL) 3.96km",
+      "same_country_as_alleged": true,
+      "test": "CONSISTENT — the recovered track puts the aircraft in the United States on the alleged day"
+    },
+    {
+      "overlap_ids": [
+        "OWENS-015"
+      ],
+      "tail": "SU-BND",
+      "date": "2023-05-09",
+      "alleged_place": "St. Louis then Goose Bay, MO",
+      "alleged_airport": "CYYR",
+      "verdict": "BOTH_HAVE_IT",
+      "points": 542,
+      "track_starts": "KCPS/CPS (St Louis Downtown Airport, Cahokia/St Louis IL) 4.38km",
+      "track_ends": "CYLQ/YLQ (La Tuque Airport, La Tuque CA) 40.03km",
+      "same_country_as_alleged": true,
+      "test": "CONSISTENT — the recovered track puts the aircraft in the United States on the alleged day"
+    },
+    {
+      "overlap_ids": [
+        "OWENS-050"
+      ],
+      "tail": "SU-BND",
+      "date": "2023-05-12",
+      "alleged_place": "St. Louis, MO",
+      "alleged_airport": "KSTL",
+      "verdict": "BOTH_HAVE_IT",
+      "points": 577,
+      "track_starts": "LFPB/LBG (Paris-Le Bourget International Airport, Paris FR) 4.18km",
+      "track_ends": "HE12 (Inshas Air Base, Inshas EG) 19.8km",
+      "same_country_as_alleged": false,
+      "test": "INCONSISTENT — the recovered track puts the aircraft outside the United States on the alleged day"
+    },
+    {
+      "overlap_ids": [
+        "OWENS-016"
+      ],
+      "tail": "SU-BND",
+      "date": "2023-06-12",
+      "alleged_place": "Provo, UT",
+      "alleged_airport": "KPVU",
+      "verdict": "NEITHER_HAS_IT",
+      "points": null,
+      "track_starts": null,
+      "track_ends": null,
+      "same_country_as_alleged": null,
+      "test": "UNTESTED — no track on the alleged day; the archives hold one on a neighbouring day"
+    },
+    {
+      "overlap_ids": [
+        "OWENS-052"
+      ],
+      "tail": "SU-BND",
+      "date": "2023-06-25",
+      "alleged_place": "Wilmington, DE",
+      "alleged_airport": "KILG",
+      "verdict": "NEITHER_HAS_IT",
+      "points": null,
+      "track_starts": null,
+      "track_ends": null,
+      "same_country_as_alleged": null,
+      "test": "UNTESTED — no track on the alleged day; the archives hold one on a neighbouring day"
+    },
+    {
+      "overlap_ids": [
+        "OWENS-025"
+      ],
+      "tail": "SU-BND",
+      "date": "2024-04-19",
+      "alleged_place": "Provo, UT",
+      "alleged_airport": "KPVU",
+      "verdict": "BOTH_HAVE_IT",
+      "points": 1132,
+      "track_starts": "LFPB/LBG (Paris-Le Bourget International Airport, Paris FR) 6.67km",
+      "track_ends": "KPVU/PVU (Provo Municipal Airport, Provo UT) 1.45km",
+      "same_country_as_alleged": true,
+      "test": "CONSISTENT — the recovered track puts the aircraft in the United States on the alleged day"
+    },
+    {
+      "overlap_ids": [
+        "SITE-004"
+      ],
+      "tail": "SU-BND",
+      "date": "2024-04-23",
+      "alleged_place": "Salt Lake City (event) / Provo (aircraft), UT",
+      "alleged_airport": "KPVU",
+      "verdict": "NEITHER_HAS_IT",
+      "points": null,
+      "track_starts": null,
+      "track_ends": null,
+      "same_country_as_alleged": null,
+      "test": "UNTESTED — no free archive holds a track for this aircraft on or around this day"
+    },
+    {
+      "overlap_ids": [
+        "OWENS-056"
+      ],
+      "tail": "SU-BND",
+      "date": "2024-05-03",
+      "alleged_place": "St. Louis, MO",
+      "alleged_airport": "KSTL",
+      "verdict": "NEITHER_HAS_IT",
+      "points": null,
+      "track_starts": null,
+      "track_ends": null,
+      "same_country_as_alleged": null,
+      "test": "UNTESTED — no free archive holds a track for this aircraft on or around this day"
+    },
+    {
+      "overlap_ids": [
+        "OWENS-057"
+      ],
+      "tail": "SU-BND",
+      "date": "2024-05-10",
+      "alleged_place": "St. Louis, MO",
+      "alleged_airport": "KSTL",
+      "verdict": "NEITHER_HAS_IT",
+      "points": null,
+      "track_starts": null,
+      "track_ends": null,
+      "same_country_as_alleged": null,
+      "test": "UNTESTED — no free archive holds a track for this aircraft on or around this day"
+    },
+    {
+      "overlap_ids": [
+        "OWENS-030"
+      ],
+      "tail": "SU-BND",
+      "date": "2024-12-08",
+      "alleged_place": "Provo, UT",
+      "alleged_airport": "KPVU",
+      "verdict": "NEITHER_HAS_IT",
+      "points": null,
+      "track_starts": null,
+      "track_ends": null,
+      "same_country_as_alleged": null,
+      "test": "UNTESTED — no track on the alleged day; the archives hold one on a neighbouring day"
+    },
+    {
+      "overlap_ids": [
+        "OWENS-064"
+      ],
+      "tail": "SU-BND",
+      "date": "2025-04-19",
+      "alleged_place": "Provo, UT",
+      "alleged_airport": "KPVU",
+      "verdict": "NEITHER_HAS_IT",
+      "points": null,
+      "track_starts": null,
+      "track_ends": null,
+      "same_country_as_alleged": null,
+      "test": "UNTESTED — no free archive holds a track for this aircraft on or around this day"
+    },
+    {
+      "overlap_ids": [
+        "OWENS-035",
+        "OWENS-065"
+      ],
+      "tail": "SU-BND",
+      "date": "2025-05-23",
+      "alleged_place": "Provo, UT",
+      "alleged_airport": "KPVU",
+      "verdict": "BOTH_HAVE_IT",
+      "points": 1451,
+      "track_starts": "LFPB/LBG (Paris-Le Bourget International Airport, Paris FR) 4.1km",
+      "track_ends": "KPVU/PVU (Provo Municipal Airport, Provo UT) 1.42km",
+      "same_country_as_alleged": true,
+      "test": "CONSISTENT — the recovered track puts the aircraft in the United States on the alleged day"
+    },
+    {
+      "overlap_ids": [
+        "OWENS-037",
+        "OWENS-066"
+      ],
+      "tail": "SU-BND",
+      "date": "2025-07-07",
+      "alleged_place": "Provo, UT",
+      "alleged_airport": "KPVU",
+      "verdict": "NEITHER_HAS_IT",
+      "points": null,
+      "track_starts": null,
+      "track_ends": null,
+      "same_country_as_alleged": null,
+      "test": "UNTESTED — no free archive holds a track for this aircraft on or around this day"
+    },
+    {
+      "overlap_ids": [
+        "EXTRA-006",
+        "SITE-006"
+      ],
+      "tail": "SU-BND",
+      "date": "2025-09-10",
+      "alleged_place": "Provo, UT",
+      "alleged_airport": "KPVU",
+      "verdict": "BOTH_HAVE_IT",
+      "points": 328,
+      "track_starts": "KPVU/PVU (Provo Municipal Airport, Provo UT) 1.29km",
+      "track_ends": "KPVU/PVU (Provo Municipal Airport, Provo UT) 1.3km",
+      "same_country_as_alleged": true,
+      "test": "CONSISTENT — the recovered track puts the aircraft in the United States on the alleged day"
+    },
+    {
+      "overlap_ids": [
+        "OWENS-042"
+      ],
+      "tail": "SU-BND",
+      "date": "2025-09-13",
+      "alleged_place": "Provo, UT",
+      "alleged_airport": "KPVU",
+      "verdict": "BOTH_HAVE_IT",
+      "points": 1093,
+      "track_starts": "KPVU/PVU (Provo Municipal Airport, Provo UT) 0.62km",
+      "track_ends": "CA-0761 (Nipigon Airport, Nipigon CA) 58.9km",
+      "same_country_as_alleged": true,
+      "test": "CONSISTENT — the recovered track puts the aircraft in the United States on the alleged day"
+    },
+    {
+      "overlap_ids": [
+        "OWENS-001"
+      ],
+      "tail": "SU-BTT",
+      "date": "2022-10-05",
+      "alleged_place": "New York, NY",
+      "alleged_airport": "KJFK",
+      "verdict": "NEITHER_HAS_IT",
+      "points": null,
+      "track_starts": null,
+      "track_ends": null,
+      "same_country_as_alleged": null,
+      "test": "UNTESTED — no free archive holds a track for this aircraft on or around this day"
+    },
+    {
+      "overlap_ids": [
+        "OWENS-002"
+      ],
+      "tail": "SU-BTT",
+      "date": "2022-10-20",
+      "alleged_place": "Chicago, IL",
+      "alleged_airport": "KORD",
+      "verdict": "NEITHER_HAS_IT",
+      "points": null,
+      "track_starts": null,
+      "track_ends": null,
+      "same_country_as_alleged": null,
+      "test": "UNTESTED — no free archive holds a track for this aircraft on or around this day"
+    },
+    {
+      "overlap_ids": [
+        "OWENS-003"
+      ],
+      "tail": "SU-BTT",
+      "date": "2022-11-01",
+      "alleged_place": "Boston, MA",
+      "alleged_airport": "KBOS",
+      "verdict": "NEITHER_HAS_IT",
+      "points": null,
+      "track_starts": null,
+      "track_ends": null,
+      "same_country_as_alleged": null,
+      "test": "UNTESTED — no free archive holds a track for this aircraft on or around this day"
+    },
+    {
+      "overlap_ids": [
+        "OWENS-004"
+      ],
+      "tail": "SU-BTT",
+      "date": "2022-11-13",
+      "alleged_place": "Wichita, KS",
+      "alleged_airport": "KICT",
+      "verdict": "NEITHER_HAS_IT",
+      "points": null,
+      "track_starts": null,
+      "track_ends": null,
+      "same_country_as_alleged": null,
+      "test": "UNTESTED — no free archive holds a track for this aircraft on or around this day"
+    },
+    {
+      "overlap_ids": [
+        "OWENS-005"
+      ],
+      "tail": "SU-BTT",
+      "date": "2022-11-17",
+      "alleged_place": "Wilmington, DE",
+      "alleged_airport": "KILG",
+      "verdict": "NEITHER_HAS_IT",
+      "points": null,
+      "track_starts": null,
+      "track_ends": null,
+      "same_country_as_alleged": null,
+      "test": "UNTESTED — no free archive holds a track for this aircraft on or around this day"
+    },
+    {
+      "overlap_ids": [
+        "OWENS-043"
+      ],
+      "tail": "SU-BTT",
+      "date": "2022-11-25",
+      "alleged_place": "Wilmington, DE",
+      "alleged_airport": "KILG",
+      "verdict": "NEITHER_HAS_IT",
+      "points": null,
+      "track_starts": null,
+      "track_ends": null,
+      "same_country_as_alleged": null,
+      "test": "UNTESTED — no free archive holds a track for this aircraft on or around this day"
+    },
+    {
+      "overlap_ids": [
+        "OWENS-044"
+      ],
+      "tail": "SU-BTT",
+      "date": "2022-12-05",
+      "alleged_place": "Chicago, IL",
+      "alleged_airport": "KORD",
+      "verdict": "NEITHER_HAS_IT",
+      "points": null,
+      "track_starts": null,
+      "track_ends": null,
+      "same_country_as_alleged": null,
+      "test": "UNTESTED — no free archive holds a track for this aircraft on or around this day"
+    },
+    {
+      "overlap_ids": [
+        "OWENS-006"
+      ],
+      "tail": "SU-BTT",
+      "date": "2022-12-20",
+      "alleged_place": "St. Louis, MO",
+      "alleged_airport": "KSTL",
+      "verdict": "NEITHER_HAS_IT",
+      "points": null,
+      "track_starts": null,
+      "track_ends": null,
+      "same_country_as_alleged": null,
+      "test": "UNTESTED — no free archive holds a track for this aircraft on or around this day"
+    },
+    {
+      "overlap_ids": [
+        "OWENS-007"
+      ],
+      "tail": "SU-BTT",
+      "date": "2022-12-27",
+      "alleged_place": "Bangor, ME",
+      "alleged_airport": "KBGR",
+      "verdict": "NEITHER_HAS_IT",
+      "points": null,
+      "track_starts": null,
+      "track_ends": null,
+      "same_country_as_alleged": null,
+      "test": "UNTESTED — no free archive holds a track for this aircraft on or around this day"
+    },
+    {
+      "overlap_ids": [
+        "OWENS-045"
+      ],
+      "tail": "SU-BTT",
+      "date": "2023-01-12",
+      "alleged_place": "Wichita, KS",
+      "alleged_airport": "KICT",
+      "verdict": "NEITHER_HAS_IT",
+      "points": null,
+      "track_starts": null,
+      "track_ends": null,
+      "same_country_as_alleged": null,
+      "test": "UNTESTED — no free archive holds a track for this aircraft on or around this day"
+    },
+    {
+      "overlap_ids": [
+        "OWENS-008"
+      ],
+      "tail": "SU-BTT",
+      "date": "2023-01-15",
+      "alleged_place": "Atlanta, GA",
+      "alleged_airport": "KATL",
+      "verdict": "NEITHER_HAS_IT",
+      "points": null,
+      "track_starts": null,
+      "track_ends": null,
+      "same_country_as_alleged": null,
+      "test": "UNTESTED — no free archive holds a track for this aircraft on or around this day"
+    },
+    {
+      "overlap_ids": [
+        "OWENS-009"
+      ],
+      "tail": "SU-BTT",
+      "date": "2023-02-10",
+      "alleged_place": "Wilmington, DE",
+      "alleged_airport": "KILG",
+      "verdict": "NEITHER_HAS_IT",
+      "points": null,
+      "track_starts": null,
+      "track_ends": null,
+      "same_country_as_alleged": null,
+      "test": "UNTESTED — no free archive holds a track for this aircraft on or around this day"
+    },
+    {
+      "overlap_ids": [
+        "OWENS-046"
+      ],
+      "tail": "SU-BTT",
+      "date": "2023-02-25",
+      "alleged_place": "St. Louis, MO",
+      "alleged_airport": "KSUS",
+      "verdict": "BOTH_HAVE_IT",
+      "points": 722,
+      "track_starts": "LFAD (Compiègne Margny Airfield, Margny-lès-Compiègne FR) 13.26km",
+      "track_ends": "KSUS/SUS (Spirit of St Louis Airport, St Louis MO) 2.22km",
+      "same_country_as_alleged": true,
+      "test": "CONSISTENT — the recovered track puts the aircraft in the United States on the alleged day"
+    },
+    {
+      "overlap_ids": [
+        "OWENS-047"
+      ],
+      "tail": "SU-BTT",
+      "date": "2023-03-15",
+      "alleged_place": "Omaha, NE",
+      "alleged_airport": "KOMA",
+      "verdict": "NEITHER_HAS_IT",
+      "points": null,
+      "track_starts": null,
+      "track_ends": null,
+      "same_country_as_alleged": null,
+      "test": "UNTESTED — no free archive holds a track for this aircraft on or around this day"
+    },
+    {
+      "overlap_ids": [
+        "OWENS-048"
+      ],
+      "tail": "SU-BTT",
+      "date": "2023-03-27",
+      "alleged_place": "Wilmington, DE",
+      "alleged_airport": "KILG",
+      "verdict": "NEITHER_HAS_IT",
+      "points": null,
+      "track_starts": null,
+      "track_ends": null,
+      "same_country_as_alleged": null,
+      "test": "UNTESTED — no free archive holds a track for this aircraft on or around this day"
+    },
+    {
+      "overlap_ids": [
+        "OWENS-010"
+      ],
+      "tail": "SU-BTT",
+      "date": "2023-04-01",
+      "alleged_place": "St. Louis, MO",
+      "alleged_airport": "KSTL",
+      "verdict": "BOTH_HAVE_IT",
+      "points": 897,
+      "track_starts": "LFPB/LBG (Paris-Le Bourget International Airport, Paris FR) 1.75km",
+      "track_ends": "KSUS/SUS (Spirit of St Louis Airport, St Louis MO) 2.54km",
+      "same_country_as_alleged": true,
+      "test": "CONSISTENT — the recovered track puts the aircraft in the United States on the alleged day"
+    },
+    {
+      "overlap_ids": [
+        "SITE-001"
+      ],
+      "tail": "SU-BTT",
+      "date": "2023-04-02",
+      "alleged_place": "Jefferson City (event) / St. Louis (aircraft), MO",
+      "alleged_airport": "KSTL/KCPS/KSUS",
+      "verdict": "NEITHER_HAS_IT",
+      "points": null,
+      "track_starts": null,
+      "track_ends": null,
+      "same_country_as_alleged": null,
+      "test": "UNTESTED — no track on the alleged day; the archives hold one on a neighbouring day"
+    },
+    {
+      "overlap_ids": [
+        "OWENS-011"
+      ],
+      "tail": "SU-BTT",
+      "date": "2023-04-06",
+      "alleged_place": "Wilmington, DE",
+      "alleged_airport": "KILG",
+      "verdict": "BOTH_HAVE_IT",
+      "points": 622,
+      "track_starts": "KSUS/SUS (Spirit of St Louis Airport, St Louis MO) 0.34km",
+      "track_ends": "KILG/ILG (Wilmington Airport, Wilmington DE) 1.63km",
+      "same_country_as_alleged": true,
+      "test": "CONSISTENT — the recovered track puts the aircraft in the United States on the alleged day"
+    },
+    {
+      "overlap_ids": [
+        "OWENS-012"
+      ],
+      "tail": "SU-BTT",
+      "date": "2023-04-14",
+      "alleged_place": "Wichita, KS",
+      "alleged_airport": "KICT",
+      "verdict": "BOTH_HAVE_IT",
+      "points": 787,
+      "track_starts": "LFPG/CDG (Charles de Gaulle International Airport, Paris (Roissy-en-France, Val-d'Oise) FR) 4.79km",
+      "track_ends": "SN68 (Lil Bird Airport, Valley Center KS) 0.73km",
+      "same_country_as_alleged": true,
+      "test": "CONSISTENT — the recovered track puts the aircraft in the United States on the alleged day"
+    },
+    {
+      "overlap_ids": [
+        "OWENS-013"
+      ],
+      "tail": "SU-BTT",
+      "date": "2023-04-20",
+      "alleged_place": "Wilmington, DE",
+      "alleged_airport": "KILG",
+      "verdict": "BOTH_HAVE_IT",
+      "points": 637,
+      "track_starts": "US-0656 (McMaster Gliderport, Wichita KS) 7.84km",
+      "track_ends": "KILG/ILG (Wilmington Airport, Wilmington DE) 0.69km",
+      "same_country_as_alleged": true,
+      "test": "CONSISTENT — the recovered track puts the aircraft in the United States on the alleged day"
+    },
+    {
+      "overlap_ids": [
+        "EXTRA-003"
+      ],
+      "tail": "SU-BTT",
+      "date": "2023-04-23",
+      "alleged_place": "Topeka, KS",
+      "alleged_airport": "KTOP",
+      "verdict": "NEITHER_HAS_IT",
+      "points": null,
+      "track_starts": null,
+      "track_ends": null,
+      "same_country_as_alleged": null,
+      "test": "UNTESTED — no free archive holds a track for this aircraft on or around this day"
+    },
+    {
+      "overlap_ids": [
+        "OWENS-049"
+      ],
+      "tail": "SU-BTT",
+      "date": "2023-04-25",
+      "alleged_place": "Wichita, KS",
+      "alleged_airport": "KICT",
+      "verdict": "NEITHER_HAS_IT",
+      "points": null,
+      "track_starts": null,
+      "track_ends": null,
+      "same_country_as_alleged": null,
+      "test": "UNTESTED — no free archive holds a track for this aircraft on or around this day"
+    },
+    {
+      "overlap_ids": [
+        "OWENS-051"
+      ],
+      "tail": "SU-BTT",
+      "date": "2023-06-08",
+      "alleged_place": "Wichita, KS",
+      "alleged_airport": "KICT",
+      "verdict": "NEITHER_HAS_IT",
+      "points": null,
+      "track_starts": null,
+      "track_ends": null,
+      "same_country_as_alleged": null,
+      "test": "UNTESTED — no free archive holds a track for this aircraft on or around this day"
+    },
+    {
+      "overlap_ids": [
+        "OWENS-017"
+      ],
+      "tail": "SU-BTT",
+      "date": "2023-07-25",
+      "alleged_place": "Lincoln, NE",
+      "alleged_airport": "KLNK",
+      "verdict": "NEITHER_HAS_IT",
+      "points": null,
+      "track_starts": null,
+      "track_ends": null,
+      "same_country_as_alleged": null,
+      "test": "UNTESTED — no free archive holds a track for this aircraft on or around this day"
+    },
+    {
+      "overlap_ids": [
+        "EXTRA-005"
+      ],
+      "tail": "SU-BTT",
+      "date": "2023-08-25",
+      "alleged_place": "Lincoln, NE",
+      "alleged_airport": "KLNK",
+      "verdict": "NEITHER_HAS_IT",
+      "points": null,
+      "track_starts": null,
+      "track_ends": null,
+      "same_country_as_alleged": null,
+      "test": "UNTESTED — no free archive holds a track for this aircraft on or around this day"
+    },
+    {
+      "overlap_ids": [
+        "OWENS-018"
+      ],
+      "tail": "SU-BTT",
+      "date": "2023-09-03",
+      "alleged_place": "Wilmington, DE",
+      "alleged_airport": "KILG",
+      "verdict": "NEITHER_HAS_IT",
+      "points": null,
+      "track_starts": null,
+      "track_ends": null,
+      "same_country_as_alleged": null,
+      "test": "UNTESTED — no free archive holds a track for this aircraft on or around this day"
+    },
+    {
+      "overlap_ids": [
+        "OWENS-019"
+      ],
+      "tail": "SU-BTT",
+      "date": "2024-01-10",
+      "alleged_place": "Sacramento, CA",
+      "alleged_airport": "KSMF",
+      "verdict": "NEITHER_HAS_IT",
+      "points": null,
+      "track_starts": null,
+      "track_ends": null,
+      "same_country_as_alleged": null,
+      "test": "UNTESTED — no free archive holds a track for this aircraft on or around this day"
+    },
+    {
+      "overlap_ids": [
+        "OWENS-020"
+      ],
+      "tail": "SU-BTT",
+      "date": "2024-02-09",
+      "alleged_place": "Omaha / Lincoln, NE",
+      "alleged_airport": "KOMA",
+      "verdict": "BOTH_HAVE_IT",
+      "points": 1120,
+      "track_starts": "LFPB/LBG (Paris-Le Bourget International Airport, Paris FR) 1.12km",
+      "track_ends": "KLNK/LNK (Lincoln Airport, Lincoln NE) 1.22km",
+      "same_country_as_alleged": true,
+      "test": "CONSISTENT — the recovered track puts the aircraft in the United States on the alleged day"
+    },
+    {
+      "overlap_ids": [
+        "SITE-002"
+      ],
+      "tail": "SU-BTT",
+      "date": "2024-02-11",
+      "alleged_place": "Lincoln, NE",
+      "alleged_airport": "KLNK",
+      "verdict": "NEITHER_HAS_IT",
+      "points": null,
+      "track_starts": null,
+      "track_ends": null,
+      "same_country_as_alleged": null,
+      "test": "UNTESTED — no free archive holds a track for this aircraft on or around this day"
+    },
+    {
+      "overlap_ids": [
+        "OWENS-021"
+      ],
+      "tail": "SU-BTT",
+      "date": "2024-02-14",
+      "alleged_place": "Wilmington, DE",
+      "alleged_airport": "KILG",
+      "verdict": "BOTH_HAVE_IT",
+      "points": 703,
+      "track_starts": "KLNK/LNK (Lincoln Airport, Lincoln NE) 1.04km",
+      "track_ends": "KILG/ILG (Wilmington Airport, Wilmington DE) 0.82km",
+      "same_country_as_alleged": true,
+      "test": "CONSISTENT — the recovered track puts the aircraft in the United States on the alleged day"
+    },
+    {
+      "overlap_ids": [
+        "OWENS-053"
+      ],
+      "tail": "SU-BTT",
+      "date": "2024-03-10",
+      "alleged_place": "St. Louis, MO",
+      "alleged_airport": "KSTL",
+      "verdict": "NEITHER_HAS_IT",
+      "points": null,
+      "track_starts": null,
+      "track_ends": null,
+      "same_country_as_alleged": null,
+      "test": "UNTESTED — no free archive holds a track for this aircraft on or around this day"
+    },
+    {
+      "overlap_ids": [
+        "OWENS-022"
+      ],
+      "tail": "SU-BTT",
+      "date": "2024-03-18",
+      "alleged_place": "Wichita, KS",
+      "alleged_airport": "KICT",
+      "verdict": "NEITHER_HAS_IT",
+      "points": null,
+      "track_starts": null,
+      "track_ends": null,
+      "same_country_as_alleged": null,
+      "test": "UNTESTED — no free archive holds a track for this aircraft on or around this day"
+    },
+    {
+      "overlap_ids": [
+        "OWENS-054"
+      ],
+      "tail": "SU-BTT",
+      "date": "2024-03-22",
+      "alleged_place": "Wichita, KS",
+      "alleged_airport": "KICT",
+      "verdict": "NEITHER_HAS_IT",
+      "points": null,
+      "track_starts": null,
+      "track_ends": null,
+      "same_country_as_alleged": null,
+      "test": "UNTESTED — no free archive holds a track for this aircraft on or around this day"
+    },
+    {
+      "overlap_ids": [
+        "OWENS-023"
+      ],
+      "tail": "SU-BTT",
+      "date": "2024-03-29",
+      "alleged_place": "Wichita, KS",
+      "alleged_airport": "KICT",
+      "verdict": "BOTH_HAVE_IT",
+      "points": 877,
+      "track_starts": "LFPT/POX (Pontoise-Cormeilles Aerodrome, Cormeilles-en-Vexin, Val-d'Oise FR) 16.16km",
+      "track_ends": "KICT/ICT (Wichita Dwight D. Eisenhower National Airport, Wichita KS) 1.84km",
+      "same_country_as_alleged": true,
+      "test": "CONSISTENT — the recovered track puts the aircraft in the United States on the alleged day"
+    },
+    {
+      "overlap_ids": [
+        "OWENS-024",
+        "SITE-003"
+      ],
+      "tail": "SU-BTT",
+      "date": "2024-04-03",
+      "alleged_place": "Wichita / Lawrence, KS",
+      "alleged_airport": "KICT",
+      "verdict": "BOTH_HAVE_IT",
+      "points": 737,
+      "track_starts": "KICT/ICT (Wichita Dwight D. Eisenhower National Airport, Wichita KS) 1.43km",
+      "track_ends": "KILG/ILG (Wilmington Airport, Wilmington DE) 1.15km",
+      "same_country_as_alleged": true,
+      "test": "CONSISTENT — the recovered track puts the aircraft in the United States on the alleged day"
+    },
+    {
+      "overlap_ids": [
+        "OWENS-055"
+      ],
+      "tail": "SU-BTT",
+      "date": "2024-04-15",
+      "alleged_place": "Omaha, NE",
+      "alleged_airport": "KOMA",
+      "verdict": "NEITHER_HAS_IT",
+      "points": null,
+      "track_starts": null,
+      "track_ends": null,
+      "same_country_as_alleged": null,
+      "test": "UNTESTED — no track on the alleged day; the archives hold one on a neighbouring day"
+    },
+    {
+      "overlap_ids": [
+        "OWENS-026",
+        "SITE-004"
+      ],
+      "tail": "SU-BTT",
+      "date": "2024-04-23",
+      "alleged_place": "Provo, UT",
+      "alleged_airport": "KPVU",
+      "verdict": "BOTH_HAVE_IT",
+      "points": 834,
+      "track_starts": "LFPB/LBG (Paris-Le Bourget International Airport, Paris FR) 4.05km",
+      "track_ends": "KPVU/PVU (Provo Municipal Airport, Provo UT) 1.42km",
+      "same_country_as_alleged": true,
+      "test": "CONSISTENT — the recovered track puts the aircraft in the United States on the alleged day"
+    },
+    {
+      "overlap_ids": [
+        "OWENS-027"
+      ],
+      "tail": "SU-BTT",
+      "date": "2024-04-28",
+      "alleged_place": "Wilmington, DE",
+      "alleged_airport": "KILG",
+      "verdict": "BOTH_HAVE_IT",
+      "points": 1039,
+      "track_starts": "KPVU/PVU (Provo Municipal Airport, Provo UT) 1.41km",
+      "track_ends": "KILG/ILG (Wilmington Airport, Wilmington DE) 1.57km",
+      "same_country_as_alleged": true,
+      "test": "CONSISTENT — the recovered track puts the aircraft in the United States on the alleged day"
+    },
+    {
+      "overlap_ids": [
+        "OWENS-058"
+      ],
+      "tail": "SU-BTT",
+      "date": "2024-06-18",
+      "alleged_place": "Lincoln, NE",
+      "alleged_airport": "KLNK",
+      "verdict": "NEITHER_HAS_IT",
+      "points": null,
+      "track_starts": null,
+      "track_ends": null,
+      "same_country_as_alleged": null,
+      "test": "UNTESTED — no free archive holds a track for this aircraft on or around this day"
+    },
+    {
+      "overlap_ids": [
+        "OWENS-059"
+      ],
+      "tail": "SU-BTT",
+      "date": "2024-07-05",
+      "alleged_place": "Wichita, KS",
+      "alleged_airport": "KICT",
+      "verdict": "NEITHER_HAS_IT",
+      "points": null,
+      "track_starts": null,
+      "track_ends": null,
+      "same_country_as_alleged": null,
+      "test": "UNTESTED — no free archive holds a track for this aircraft on or around this day"
+    },
+    {
+      "overlap_ids": [
+        "OWENS-028"
+      ],
+      "tail": "SU-BTT",
+      "date": "2024-07-20",
+      "alleged_place": "Omaha / Lincoln, NE",
+      "alleged_airport": "KOMA",
+      "verdict": "NEITHER_HAS_IT",
+      "points": null,
+      "track_starts": null,
+      "track_ends": null,
+      "same_country_as_alleged": null,
+      "test": "UNTESTED — no track on the alleged day; the archives hold one on a neighbouring day"
+    },
+    {
+      "overlap_ids": [
+        "OWENS-060"
+      ],
+      "tail": "SU-BTT",
+      "date": "2024-07-25",
+      "alleged_place": "Omaha / Lincoln, NE",
+      "alleged_airport": "KOMA",
+      "verdict": "NEITHER_HAS_IT",
+      "points": null,
+      "track_starts": null,
+      "track_ends": null,
+      "same_country_as_alleged": null,
+      "test": "UNTESTED — no free archive holds a track for this aircraft on or around this day"
+    },
+    {
+      "overlap_ids": [
+        "OWENS-029"
+      ],
+      "tail": "SU-BTT",
+      "date": "2024-08-17",
+      "alleged_place": "Omaha / Lincoln, NE",
+      "alleged_airport": "KOMA",
+      "verdict": "NEITHER_HAS_IT",
+      "points": null,
+      "track_starts": null,
+      "track_ends": null,
+      "same_country_as_alleged": null,
+      "test": "UNTESTED — no track on the alleged day; the archives hold one on a neighbouring day"
+    },
+    {
+      "overlap_ids": [
+        "OWENS-031",
+        "OWENS-061"
+      ],
+      "tail": "SU-BTT",
+      "date": "2025-01-12",
+      "alleged_place": "Wichita, KS",
+      "alleged_airport": "KICT",
+      "verdict": "NEITHER_HAS_IT",
+      "points": null,
+      "track_starts": null,
+      "track_ends": null,
+      "same_country_as_alleged": null,
+      "test": "UNTESTED — no free archive holds a track for this aircraft on or around this day"
+    },
+    {
+      "overlap_ids": [
+        "OWENS-032"
+      ],
+      "tail": "SU-BTT",
+      "date": "2025-01-17",
+      "alleged_place": "Wichita, KS",
+      "alleged_airport": "KICT",
+      "verdict": "NEITHER_HAS_IT",
+      "points": null,
+      "track_starts": null,
+      "track_ends": null,
+      "same_country_as_alleged": null,
+      "test": "UNTESTED — no free archive holds a track for this aircraft on or around this day"
+    },
+    {
+      "overlap_ids": [
+        "OWENS-062"
+      ],
+      "tail": "SU-BTT",
+      "date": "2025-02-08",
+      "alleged_place": "Omaha, NE",
+      "alleged_airport": "KOMA",
+      "verdict": "NEITHER_HAS_IT",
+      "points": null,
+      "track_starts": null,
+      "track_ends": null,
+      "same_country_as_alleged": null,
+      "test": "UNTESTED — no free archive holds a track for this aircraft on or around this day"
+    },
+    {
+      "overlap_ids": [
+        "OWENS-033",
+        "OWENS-063"
+      ],
+      "tail": "SU-BTT",
+      "date": "2025-03-15",
+      "alleged_place": "Wichita, KS",
+      "alleged_airport": "KICT",
+      "verdict": "NEITHER_HAS_IT",
+      "points": null,
+      "track_starts": null,
+      "track_ends": null,
+      "same_country_as_alleged": null,
+      "test": "UNTESTED — no free archive holds a track for this aircraft on or around this day"
+    },
+    {
+      "overlap_ids": [
+        "OWENS-034"
+      ],
+      "tail": "SU-BTT",
+      "date": "2025-03-22",
+      "alleged_place": "Wichita, KS",
+      "alleged_airport": "KICT",
+      "verdict": "NEITHER_HAS_IT",
+      "points": null,
+      "track_starts": null,
+      "track_ends": null,
+      "same_country_as_alleged": null,
+      "test": "UNTESTED — no free archive holds a track for this aircraft on or around this day"
+    },
+    {
+      "overlap_ids": [
+        "OWENS-036"
+      ],
+      "tail": "SU-BTT",
+      "date": "2025-06-18",
+      "alleged_place": "Omaha / Lincoln, NE",
+      "alleged_airport": "KOMA",
+      "verdict": "BOTH_HAVE_IT",
+      "points": 9,
+      "track_starts": "HEBA/HBE (Alexandria International Airport, Alexandria EG) 36.13km",
+      "track_ends": "HEAL/DBB (El Alamein International Airport, El Alamein EG) 75.92km",
+      "same_country_as_alleged": false,
+      "test": "INCONSISTENT — the recovered track puts the aircraft outside the United States on the alleged day"
+    },
+    {
+      "overlap_ids": [
+        "OWENS-038",
+        "OWENS-067"
+      ],
+      "tail": "SU-BTT",
+      "date": "2025-07-20",
+      "alleged_place": "Omaha / Lincoln, NE",
+      "alleged_airport": "KOMA",
+      "verdict": "BOTH_HAVE_IT",
+      "points": 2404,
+      "track_starts": "LFPB/LBG (Paris-Le Bourget International Airport, Paris FR) 2.36km",
+      "track_ends": "NE42 (Dream Field, Lincoln NE) 5.74km",
+      "same_country_as_alleged": true,
+      "test": "CONSISTENT — the recovered track puts the aircraft in the United States on the alleged day"
+    },
+    {
+      "overlap_ids": [
+        "OWENS-039"
+      ],
+      "tail": "SU-BTT",
+      "date": "2025-08-17",
+      "alleged_place": "Omaha / Lincoln, NE",
+      "alleged_airport": "KOMA",
+      "verdict": "BOTH_HAVE_IT",
+      "points": 1988,
+      "track_starts": "LFPB/LBG (Paris-Le Bourget International Airport, Paris FR) 2.16km",
+      "track_ends": "NE42 (Dream Field, Lincoln NE) 5.77km",
+      "same_country_as_alleged": true,
+      "test": "CONSISTENT — the recovered track puts the aircraft in the United States on the alleged day"
+    },
+    {
+      "overlap_ids": [
+        "OWENS-040"
+      ],
+      "tail": "SU-BTT",
+      "date": "2025-09-04",
+      "alleged_place": "Provo, UT",
+      "alleged_airport": "KPVU",
+      "verdict": "BOTH_HAVE_IT",
+      "points": 1971,
+      "track_starts": "LFPB/LBG (Paris-Le Bourget International Airport, Paris FR) 2.96km",
+      "track_ends": "KPVU/PVU (Provo Municipal Airport, Provo UT) 1.35km",
+      "same_country_as_alleged": true,
+      "test": "CONSISTENT — the recovered track puts the aircraft in the United States on the alleged day"
+    },
+    {
+      "overlap_ids": [
+        "OWENS-041",
+        "SITE-005",
+        "SITE-006"
+      ],
+      "tail": "SU-BTT",
+      "date": "2025-09-10",
+      "alleged_place": "Provo then Wilmington, UT/DE",
+      "alleged_airport": "KPVU",
+      "verdict": "BOTH_HAVE_IT",
+      "points": 1789,
+      "track_starts": "KPVU/PVU (Provo Municipal Airport, Provo UT) 1.37km",
+      "track_ends": "KILG/ILG (Wilmington Airport, Wilmington DE) 1.75km",
+      "same_country_as_alleged": true,
+      "test": "CONSISTENT — the recovered track puts the aircraft in the United States on the alleged day"
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "extracted_utc": "2026-08-24T17:18:33.564831Z",
+  "extractor": "extract_wayback_flights.py",
+  "supersedes": "flight_rows_recovered in the .meta.json sidecar, which was wrong",
+  "tail": "N102DZ",
+  "snapshot_utc": "20220526025401",
+  "site": "flightradar24",
+  "file": "N102DZ_20220526025401_wayback_flightradar24.html",
+  "bytes": 63651,
+  "live_http_today": 403,
+  "previously_recorded": 0,
+  "rows_recovered": 2,
+  "identity": {
+    "aircraft": "SEARCH AIRPORTS",
+    "operator": "-",
+    "type_code": "GLF5",
+    "mode_s": "A00C85",
+    "serial": "AGE"
+  },
+  "flights": [
+    {
+      "date": null,
+      "std_epoch": 1653063591,
+      "std_utc": "2022-05-20T16:19:51Z",
+      "atd_utc": "2022-05-20T16:19:51Z",
+      "sta_utc": "2022-05-20T17:33:49Z",
+      "arr_utc": null,
+      "status": null,
+      "flight_time": "1:14",
+      "from_name": "Farnborough",
+      "from_code": "FAB",
+      "to_name": "Zurich",
+      "to_code": "ZRH"
+    },
+    {
+      "date": null,
+      "std_epoch": 1653060600,
+      "std_utc": "2022-05-20T15:30:00Z",
+      "atd_utc": null,
+      "sta_utc": "2022-05-20T16:51:00Z",
+      "arr_utc": null,
+      "status": null,
+      "flight_time": null,
+      "from_name": "Farnborough",
+      "from_code": "FAB",
+      "to_name": "Zurich",
+      "to_code": "ZRH"
+    }
+  ],
+  "table_state": "POPULATED"
+}

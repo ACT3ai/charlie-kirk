@@ -1,0 +1,112 @@
+{
+  "extracted_utc": "2026-08-24T17:18:33.564831Z",
+  "extractor": "extract_wayback_flights.py",
+  "supersedes": "flight_rows_recovered in the .meta.json sidecar, which was wrong",
+  "tail": "N888KG",
+  "snapshot_utc": "20161017085324",
+  "site": "flightaware",
+  "file": "N888KG_20161017085324_wayback_flightaware.html",
+  "bytes": 53866,
+  "live_http_today": 200,
+  "previously_recorded": null,
+  "rows_recovered": 6,
+  "flights": [
+    {
+      "date": "06-Oct-2016",
+      "airports": [
+        "KPBI",
+        "KSRQ"
+      ],
+      "cells": [
+        "06-Oct-2016",
+        "C25C",
+        "Palm Beach Intl ( KPBI )",
+        "Sarasota/Bradenton Intl ( KSRQ )",
+        "09:37AM&nbsp; EDT",
+        "10:06AM&nbsp; EDT",
+        "0:28"
+      ]
+    },
+    {
+      "date": "04-Oct-2016",
+      "airports": [
+        "KCHS",
+        "KPBI"
+      ],
+      "cells": [
+        "04-Oct-2016",
+        "C25C",
+        "Charleston Afb/Intl ( KCHS )",
+        "Palm Beach Intl ( KPBI )",
+        "05:36PM&nbsp; EDT",
+        "06:41PM&nbsp; EDT",
+        "1:05"
+      ]
+    },
+    {
+      "date": "04-Oct-2016",
+      "airports": [
+        "KPBI",
+        "KCHS"
+      ],
+      "cells": [
+        "04-Oct-2016",
+        "C25C",
+        "Palm Beach Intl ( KPBI )",
+        "Charleston Afb/Intl ( KCHS )",
+        "08:10AM&nbsp; EDT",
+        "09:12AM&nbsp; EDT",
+        "1:01"
+      ]
+    },
+    {
+      "date": "03-Oct-2016",
+      "airports": [
+        "KFFC",
+        "KPBI"
+      ],
+      "cells": [
+        "03-Oct-2016",
+        "C25C",
+        "Falcon Field ( KFFC )",
+        "Palm Beach Intl ( KPBI )",
+        "05:59PM&nbsp; EDT",
+        "07:37PM&nbsp; EDT",
+        "1:38"
+      ]
+    },
+    {
+      "date": "03-Oct-2016",
+      "airports": [
+        "KPBI",
+        "KFFC"
+      ],
+      "cells": [
+        "03-Oct-2016",
+        "C25C",
+        "Palm Beach Intl ( KPBI )",
+        "Falcon Field ( KFFC )",
+        "08:12AM&nbsp; EDT",
+        "09:25AM&nbsp; EDT",
+        "1:13"
+      ]
+    },
+    {
+      "date": "03-Oct-2016",
+      "airports": [
+        "KPBI",
+        "KPDK"
+      ],
+      "cells": [
+        "03-Oct-2016",
+        "C25C",
+        "Palm Beach Intl ( KPBI )",
+        "Dekalb-Peachtree ( KPDK )",
+        "08:12AM&nbsp; EDT",
+        "",
+        "Diverted"
+      ]
+    }
+  ],
+  "table_state": "POPULATED"
+}

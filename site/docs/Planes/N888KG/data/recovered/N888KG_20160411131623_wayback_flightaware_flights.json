@@ -1,0 +1,112 @@
+{
+  "extracted_utc": "2026-08-24T17:18:33.564831Z",
+  "extractor": "extract_wayback_flights.py",
+  "supersedes": "flight_rows_recovered in the .meta.json sidecar, which was wrong",
+  "tail": "N888KG",
+  "snapshot_utc": "20160411131623",
+  "site": "flightaware",
+  "file": "N888KG_20160411131623_wayback_flightaware.html",
+  "bytes": 60586,
+  "live_http_today": 200,
+  "previously_recorded": null,
+  "rows_recovered": 6,
+  "flights": [
+    {
+      "date": "11-Apr-2016",
+      "airports": [
+        "KACT",
+        "KVNY"
+      ],
+      "cells": [
+        "11-Apr-2016",
+        "C25C",
+        "Waco Rgnl ( KACT )",
+        "Van Nuys ( KVNY )",
+        "10:30AM&nbsp; CDT",
+        "11:22AM&nbsp; PDT",
+        "Scheduled"
+      ]
+    },
+    {
+      "date": "11-Apr-2016",
+      "airports": [
+        "KPBI",
+        "KACT"
+      ],
+      "cells": [
+        "11-Apr-2016",
+        "C25C/ L",
+        "Palm Beach Intl ( KPBI )",
+        "Waco Rgnl ( KACT )",
+        "08:07AM&nbsp; EDT",
+        "10:06AM&nbsp; CDT",
+        "En Route"
+      ]
+    },
+    {
+      "date": "08-Apr-2016",
+      "airports": [
+        "KDNL",
+        "KPBI"
+      ],
+      "cells": [
+        "08-Apr-2016",
+        "C25C/ L",
+        "Daniel Field ( KDNL )",
+        "Palm Beach Intl ( KPBI )",
+        "01:35PM&nbsp; EDT",
+        "02:47PM&nbsp; EDT",
+        "1:12"
+      ]
+    },
+    {
+      "date": "08-Apr-2016",
+      "airports": [
+        "KPBI",
+        "KGVL"
+      ],
+      "cells": [
+        "08-Apr-2016",
+        "C25C/ L",
+        "Palm Beach Intl ( KPBI )",
+        "Lee Gilmer Memorial ( KGVL )",
+        "08:07AM&nbsp; EDT",
+        "09:37AM&nbsp; EDT",
+        "1:30"
+      ]
+    },
+    {
+      "date": "01-Apr-2016",
+      "airports": [
+        "TAPA",
+        "KPBI"
+      ],
+      "cells": [
+        "01-Apr-2016",
+        "C25C/ L",
+        "VC Bird Int'l ( ANU / TAPA )",
+        "Palm Beach Intl ( KPBI )",
+        "02:37PM&nbsp; AST",
+        "05:55PM&nbsp; EDT",
+        "3:18"
+      ]
+    },
+    {
+      "date": "28-Mar-2016",
+      "airports": [
+        "KPBI",
+        "TAPA"
+      ],
+      "cells": [
+        "28-Mar-2016",
+        "C25C/ L",
+        "Palm Beach Intl ( KPBI )",
+        "VC Bird Int'l ( ANU / TAPA )",
+        "01:28PM&nbsp; EDT",
+        "04:14PM&nbsp; AST",
+        "2:45"
+      ]
+    }
+  ],
+  "table_state": "POPULATED"
+}

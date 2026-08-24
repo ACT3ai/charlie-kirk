@@ -1,0 +1,35 @@
+{
+  "retrieved_utc": "2026-08-24T17:18:17.391Z",
+  "vendor_credentials_redacted": 0,
+  "source": "airplanes-live",
+  "source_role": "BACKUP ARCHIVE — independent volunteer network",
+  "url": "https://globe.airplanes.live/globe_history/2023/04/21/traces/d3/trace_full_0101d3.json",
+  "http_status": 200,
+  "bytes": 174675,
+  "tail": "SU-BTT",
+  "hex": "0101d3",
+  "utc_date": "2023-04-21",
+  "summary": {
+    "registration": "SU-BTT",
+    "type": "FA7X",
+    "points": 882,
+    "first_seen_utc": "2023-04-21T11:58:55.880Z",
+    "first_pos": [
+      39.670351,
+      -75.603714
+    ],
+    "last_seen_utc": "2023-04-21T21:45:14.000Z",
+    "last_pos": [
+      34.893814,
+      26.004807
+    ],
+    "wheels_up_utc": "2023-04-21T11:59:32.150Z",
+    "wheels_down_utc": null
+  },
+  "pulled_for": "alleged overlap",
+  "overlap_ids": [
+    "OWENS-013"
+  ],
+  "alleged_overlap_date": "2023-04-20",
+  "alleged_place": "Wilmington, DE"
+}

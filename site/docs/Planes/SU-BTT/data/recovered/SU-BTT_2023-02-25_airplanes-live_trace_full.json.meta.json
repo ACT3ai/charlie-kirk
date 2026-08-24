@@ -1,0 +1,35 @@
+{
+  "retrieved_utc": "2026-08-24T17:18:17.391Z",
+  "vendor_credentials_redacted": 0,
+  "source": "airplanes-live",
+  "source_role": "BACKUP ARCHIVE — independent volunteer network",
+  "url": "https://globe.airplanes.live/globe_history/2023/02/25/traces/d3/trace_full_0101d3.json",
+  "http_status": 200,
+  "bytes": 141781,
+  "tail": "SU-BTT",
+  "hex": "0101d3",
+  "utc_date": "2023-02-25",
+  "summary": {
+    "registration": "SU-BTT",
+    "type": "FA7X",
+    "points": 722,
+    "first_seen_utc": "2023-02-25T10:20:11.940Z",
+    "first_pos": [
+      49.48717,
+      2.639688
+    ],
+    "last_seen_utc": "2023-02-25T18:41:27.390Z",
+    "last_pos": [
+      38.66317,
+      -90.626465
+    ],
+    "wheels_up_utc": null,
+    "wheels_down_utc": null
+  },
+  "pulled_for": "alleged overlap",
+  "overlap_ids": [
+    "OWENS-046"
+  ],
+  "alleged_overlap_date": "2023-02-25",
+  "alleged_place": "St. Louis, MO"
+}

@@ -1,0 +1,35 @@
+{
+  "retrieved_utc": "2026-08-24T17:18:17.391Z",
+  "vendor_credentials_redacted": 0,
+  "source": "airplanes-live",
+  "source_role": "BACKUP ARCHIVE — independent volunteer network",
+  "url": "https://globe.airplanes.live/globe_history/2024/12/07/traces/3e/trace_full_01003e.json",
+  "http_status": 200,
+  "bytes": 5626,
+  "tail": "SU-BND",
+  "hex": "01003e",
+  "utc_date": "2024-12-07",
+  "summary": {
+    "registration": "SU-BND",
+    "type": "GLF4",
+    "points": 35,
+    "first_seen_utc": "2024-12-07T16:14:53.100Z",
+    "first_pos": [
+      29.747543,
+      31.391056
+    ],
+    "last_seen_utc": "2024-12-07T17:48:36.240Z",
+    "last_pos": [
+      29.114282,
+      31.709182
+    ],
+    "wheels_up_utc": null,
+    "wheels_down_utc": null
+  },
+  "pulled_for": "alleged overlap",
+  "overlap_ids": [
+    "OWENS-030"
+  ],
+  "alleged_overlap_date": "2024-12-08",
+  "alleged_place": "Provo, UT"
+}

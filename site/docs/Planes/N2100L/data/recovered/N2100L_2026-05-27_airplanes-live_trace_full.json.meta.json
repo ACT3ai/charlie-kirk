@@ -1,0 +1,31 @@
+{
+  "retrieved_utc": "2026-08-24T16:29:36.628Z",
+  "source": "airplanes-live",
+  "source_role": "BACKUP ARCHIVE — independent volunteer network",
+  "url": "https://globe.airplanes.live/globe_history/2026/05/27/traces/e5/trace_full_a1bbe5.json",
+  "http_status": 200,
+  "bytes": 484062,
+  "tail": "N2100L",
+  "hex": "a1bbe5",
+  "utc_date": "2026-05-27",
+  "summary": {
+    "registration": "N2100L",
+    "type": "GLEX",
+    "icao": "a1bbe5",
+    "points": 2769,
+    "first_seen_utc": "2026-05-27T15:27:28.820Z",
+    "first_pos": [
+      31.899033,
+      -106.364575
+    ],
+    "first_on_ground": false,
+    "last_seen_utc": "2026-05-27T23:18:01.830Z",
+    "last_pos": [
+      32.47522,
+      -105.331476
+    ],
+    "last_on_ground": false,
+    "wheels_up_utc": null,
+    "wheels_down_utc": null
+  }
+}

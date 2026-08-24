@@ -1,0 +1,6653 @@
+{
+  "generated_utc": "2026-08-24T17:18:17.391Z",
+  "source": "site/docs/Planes/following/overlaps.csv",
+  "neighbours": true,
+  "jobs": 69,
+  "results": [
+    {
+      "tail": "SU-BND",
+      "date": "2023-04-02",
+      "ids": [
+        "SITE-001"
+      ],
+      "places": [
+        "Jefferson City (event) / St. Louis (aircraft), MO"
+      ],
+      "hex": "01003e",
+      "overlap_ids": [
+        "SITE-001"
+      ],
+      "alleged_place": "Jefferson City (event) / St. Louis (aircraft), MO",
+      "days": [
+        {
+          "date": "2023-04-01",
+          "is_alleged_date": false,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 860,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        },
+        {
+          "date": "2023-04-02",
+          "is_alleged_date": true,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 860,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        },
+        {
+          "date": "2023-04-03",
+          "is_alleged_date": false,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 859,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        }
+      ],
+      "alleged_date_verdict": "NEITHER_HAS_IT",
+      "any_track_in_window": false,
+      "recovered_first_pos": null,
+      "recovered_last_pos": null,
+      "recovered_points": null
+    },
+    {
+      "tail": "SU-BND",
+      "date": "2023-05-03",
+      "ids": [
+        "OWENS-014"
+      ],
+      "places": [
+        "St. Louis, MO"
+      ],
+      "hex": "01003e",
+      "overlap_ids": [
+        "OWENS-014"
+      ],
+      "alleged_place": "St. Louis, MO",
+      "days": [
+        {
+          "date": "2023-05-02",
+          "is_alleged_date": false,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 860,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        },
+        {
+          "date": "2023-05-03",
+          "is_alleged_date": true,
+          "sources": {
+            "airplanes-live": {
+              "http": 200,
+              "bytes": 76780,
+              "summary": {
+                "registration": "SU-BND",
+                "type": "GLF4",
+                "points": 460,
+                "first_seen_utc": "2023-05-03T15:28:41.250Z",
+                "first_pos": [
+                  38.576908,
+                  -90.17865
+                ],
+                "last_seen_utc": "2023-05-03T16:34:59.260Z",
+                "last_pos": [
+                  38.550934,
+                  -90.118402
+                ],
+                "wheels_up_utc": null,
+                "wheels_down_utc": null
+              }
+            },
+            "adsb-lol": {
+              "http": 200,
+              "bytes": 58508,
+              "summary": {
+                "registration": "SU-BND",
+                "type": "GLF4",
+                "points": 357,
+                "first_seen_utc": "2023-05-03T15:29:24.220Z",
+                "first_pos": [
+                  38.567139,
+                  -90.232982
+                ],
+                "last_seen_utc": "2023-05-03T16:32:58.890Z",
+                "last_pos": [
+                  38.491791,
+                  -90.12073
+                ],
+                "wheels_up_utc": null,
+                "wheels_down_utc": null
+              }
+            }
+          },
+          "verdict": "BOTH_HAVE_IT"
+        },
+        {
+          "date": "2023-05-04",
+          "is_alleged_date": false,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 860,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        }
+      ],
+      "alleged_date_verdict": "BOTH_HAVE_IT",
+      "any_track_in_window": true,
+      "recovered_first_pos": [
+        38.576908,
+        -90.17865
+      ],
+      "recovered_last_pos": [
+        38.550934,
+        -90.118402
+      ],
+      "recovered_points": 460
+    },
+    {
+      "tail": "SU-BND",
+      "date": "2023-05-09",
+      "ids": [
+        "OWENS-015"
+      ],
+      "places": [
+        "St. Louis then Goose Bay, MO"
+      ],
+      "hex": "01003e",
+      "overlap_ids": [
+        "OWENS-015"
+      ],
+      "alleged_place": "St. Louis then Goose Bay, MO",
+      "days": [
+        {
+          "date": "2023-05-08",
+          "is_alleged_date": false,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 860,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        },
+        {
+          "date": "2023-05-09",
+          "is_alleged_date": true,
+          "sources": {
+            "airplanes-live": {
+              "http": 200,
+              "bytes": 95432,
+              "summary": {
+                "registration": "SU-BND",
+                "type": "GLF4",
+                "points": 542,
+                "first_seen_utc": "2023-05-09T20:02:22.800Z",
+                "first_pos": [
+                  38.548874,
+                  -90.114282
+                ],
+                "last_seen_utc": "2023-05-09T22:10:09.390Z",
+                "last_pos": [
+                  47.424042,
+                  -72.257835
+                ],
+                "wheels_up_utc": null,
+                "wheels_down_utc": null
+              }
+            },
+            "adsb-lol": {
+              "http": 200,
+              "bytes": 48809,
+              "summary": {
+                "registration": "SU-BND",
+                "type": "GLF4",
+                "points": 290,
+                "first_seen_utc": "2023-05-09T20:03:23.090Z",
+                "first_pos": [
+                  38.532963,
+                  -90.039612
+                ],
+                "last_seen_utc": "2023-05-09T21:49:59.230Z",
+                "last_pos": [
+                  46.026627,
+                  -75.389992
+                ],
+                "wheels_up_utc": null,
+                "wheels_down_utc": null
+              }
+            }
+          },
+          "verdict": "BOTH_HAVE_IT"
+        },
+        {
+          "date": "2023-05-10",
+          "is_alleged_date": false,
+          "sources": {
+            "airplanes-live": {
+              "http": 200,
+              "bytes": 103232,
+              "summary": {
+                "registration": "SU-BND",
+                "type": "GLF4",
+                "points": 504,
+                "first_seen_utc": "2023-05-10T04:18:03.530Z",
+                "first_pos": [
+                  53.761734,
+                  -12.594491
+                ],
+                "last_seen_utc": "2023-05-10T05:55:31.790Z",
+                "last_pos": [
+                  48.976089,
+                  2.651015
+                ],
+                "wheels_up_utc": null,
+                "wheels_down_utc": null
+              }
+            },
+            "adsb-lol": {
+              "http": 200,
+              "bytes": 65016,
+              "summary": {
+                "registration": "SU-BND",
+                "type": "GLF4",
+                "points": 314,
+                "first_seen_utc": "2023-05-10T04:23:06.340Z",
+                "first_pos": [
+                  53.630506,
+                  -11.450743
+                ],
+                "last_seen_utc": "2023-05-10T05:39:25.800Z",
+                "last_pos": [
+                  49.274597,
+                  2.126981
+                ],
+                "wheels_up_utc": null,
+                "wheels_down_utc": null
+              }
+            }
+          },
+          "verdict": "BOTH_HAVE_IT"
+        }
+      ],
+      "alleged_date_verdict": "BOTH_HAVE_IT",
+      "any_track_in_window": true,
+      "recovered_first_pos": [
+        38.548874,
+        -90.114282
+      ],
+      "recovered_last_pos": [
+        47.424042,
+        -72.257835
+      ],
+      "recovered_points": 542
+    },
+    {
+      "tail": "SU-BND",
+      "date": "2023-05-12",
+      "ids": [
+        "OWENS-050"
+      ],
+      "places": [
+        "St. Louis, MO"
+      ],
+      "hex": "01003e",
+      "overlap_ids": [
+        "OWENS-050"
+      ],
+      "alleged_place": "St. Louis, MO",
+      "days": [
+        {
+          "date": "2023-05-11",
+          "is_alleged_date": false,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 859,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        },
+        {
+          "date": "2023-05-12",
+          "is_alleged_date": true,
+          "sources": {
+            "airplanes-live": {
+              "http": 200,
+              "bytes": 116404,
+              "summary": {
+                "registration": "SU-BND",
+                "type": "GLF4",
+                "points": 577,
+                "first_seen_utc": "2023-05-12T07:25:01.140Z",
+                "first_pos": [
+                  48.950935,
+                  2.382082
+                ],
+                "last_seen_utc": "2023-05-12T11:15:59.660Z",
+                "last_pos": [
+                  30.290726,
+                  31.247864
+                ],
+                "wheels_up_utc": null,
+                "wheels_down_utc": null
+              }
+            },
+            "adsb-lol": {
+              "http": 200,
+              "bytes": 92913,
+              "summary": {
+                "registration": "SU-BND",
+                "type": "GLF4",
+                "points": 461,
+                "first_seen_utc": "2023-05-12T07:25:43.390Z",
+                "first_pos": [
+                  48.932327,
+                  2.312974
+                ],
+                "last_seen_utc": "2023-05-12T09:51:57.990Z",
+                "last_pos": [
+                  37.716064,
+                  21.545358
+                ],
+                "wheels_up_utc": null,
+                "wheels_down_utc": null
+              }
+            }
+          },
+          "verdict": "BOTH_HAVE_IT"
+        },
+        {
+          "date": "2023-05-13",
+          "is_alleged_date": false,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 860,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        }
+      ],
+      "alleged_date_verdict": "BOTH_HAVE_IT",
+      "any_track_in_window": true,
+      "recovered_first_pos": [
+        48.950935,
+        2.382082
+      ],
+      "recovered_last_pos": [
+        30.290726,
+        31.247864
+      ],
+      "recovered_points": 577
+    },
+    {
+      "tail": "SU-BND",
+      "date": "2023-06-12",
+      "ids": [
+        "OWENS-016"
+      ],
+      "places": [
+        "Provo, UT"
+      ],
+      "hex": "01003e",
+      "overlap_ids": [
+        "OWENS-016"
+      ],
+      "alleged_place": "Provo, UT",
+      "days": [
+        {
+          "date": "2023-06-11",
+          "is_alleged_date": false,
+          "sources": {
+            "airplanes-live": {
+              "http": 200,
+              "bytes": 5047,
+              "summary": {
+                "registration": "SU-BND",
+                "type": "GLF4",
+                "points": 32,
+                "first_seen_utc": "2023-06-11T08:21:33.320Z",
+                "first_pos": [
+                  30.228742,
+                  31.458252
+                ],
+                "last_seen_utc": "2023-06-11T09:16:13.700Z",
+                "last_pos": [
+                  30.18894,
+                  31.807507
+                ],
+                "wheels_up_utc": null,
+                "wheels_down_utc": null
+              }
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "RECOVERED_ONLY_ON_BACKUP"
+        },
+        {
+          "date": "2023-06-12",
+          "is_alleged_date": true,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 860,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        },
+        {
+          "date": "2023-06-13",
+          "is_alleged_date": false,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 859,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        }
+      ],
+      "alleged_date_verdict": "NEITHER_HAS_IT",
+      "any_track_in_window": true,
+      "recovered_first_pos": null,
+      "recovered_last_pos": null,
+      "recovered_points": null
+    },
+    {
+      "tail": "SU-BND",
+      "date": "2023-06-25",
+      "ids": [
+        "OWENS-052"
+      ],
+      "places": [
+        "Wilmington, DE"
+      ],
+      "hex": "01003e",
+      "overlap_ids": [
+        "OWENS-052"
+      ],
+      "alleged_place": "Wilmington, DE",
+      "days": [
+        {
+          "date": "2023-06-24",
+          "is_alleged_date": false,
+          "sources": {
+            "airplanes-live": {
+              "http": 200,
+              "bytes": 4016,
+              "summary": {
+                "registration": "SU-BND",
+                "type": "GLF4",
+                "points": 24,
+                "first_seen_utc": "2023-06-24T07:03:19.610Z",
+                "first_pos": [
+                  30.16095,
+                  31.134123
+                ],
+                "last_seen_utc": "2023-06-24T08:27:40.570Z",
+                "last_pos": [
+                  29.685196,
+                  31.279133
+                ],
+                "wheels_up_utc": null,
+                "wheels_down_utc": null
+              }
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "RECOVERED_ONLY_ON_BACKUP"
+        },
+        {
+          "date": "2023-06-25",
+          "is_alleged_date": true,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 860,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        },
+        {
+          "date": "2023-06-26",
+          "is_alleged_date": false,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 860,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        }
+      ],
+      "alleged_date_verdict": "NEITHER_HAS_IT",
+      "any_track_in_window": true,
+      "recovered_first_pos": null,
+      "recovered_last_pos": null,
+      "recovered_points": null
+    },
+    {
+      "tail": "SU-BND",
+      "date": "2024-04-19",
+      "ids": [
+        "OWENS-025"
+      ],
+      "places": [
+        "Provo, UT"
+      ],
+      "hex": "01003e",
+      "overlap_ids": [
+        "OWENS-025"
+      ],
+      "alleged_place": "Provo, UT",
+      "days": [
+        {
+          "date": "2024-04-18",
+          "is_alleged_date": false,
+          "sources": {
+            "airplanes-live": {
+              "http": 200,
+              "bytes": 155893,
+              "summary": {
+                "registration": "SU-BND",
+                "type": "GLF4",
+                "points": 975,
+                "first_seen_utc": "2024-04-18T07:05:21.060Z",
+                "first_pos": [
+                  30.321241,
+                  31.237372
+                ],
+                "last_seen_utc": "2024-04-18T11:31:52.290Z",
+                "last_pos": [
+                  48.957642,
+                  2.397273
+                ],
+                "wheels_up_utc": "2024-04-18T08:52:25.070Z",
+                "wheels_down_utc": "2024-04-18T08:52:06.650Z"
+              }
+            },
+            "adsb-lol": {
+              "http": 200,
+              "bytes": 92334,
+              "summary": {
+                "registration": "SU-BND",
+                "type": "GLF4",
+                "points": 467,
+                "first_seen_utc": "2024-04-18T07:11:23.330Z",
+                "first_pos": [
+                  30.724915,
+                  30.7412
+                ],
+                "last_seen_utc": "2024-04-18T11:24:43.060Z",
+                "last_pos": [
+                  48.807461,
+                  2.269616
+                ],
+                "wheels_up_utc": null,
+                "wheels_down_utc": null
+              }
+            }
+          },
+          "verdict": "BOTH_HAVE_IT"
+        },
+        {
+          "date": "2024-04-19",
+          "is_alleged_date": true,
+          "sources": {
+            "airplanes-live": {
+              "http": 200,
+              "bytes": 204305,
+              "summary": {
+                "registration": "SU-BND",
+                "type": "GLF4",
+                "points": 1132,
+                "first_seen_utc": "2024-04-19T07:52:04.170Z",
+                "first_pos": [
+                  48.943542,
+                  2.349877
+                ],
+                "last_seen_utc": "2024-04-19T21:36:25.290Z",
+                "last_pos": [
+                  40.230898,
+                  -111.729053
+                ],
+                "wheels_up_utc": "2024-04-19T21:10:05.730Z",
+                "wheels_down_utc": "2024-04-19T21:33:34.670Z"
+              }
+            },
+            "adsb-lol": {
+              "http": 200,
+              "bytes": 179025,
+              "summary": {
+                "registration": "SU-BND",
+                "type": "GLF4",
+                "points": 988,
+                "first_seen_utc": "2024-04-19T07:52:04.170Z",
+                "first_pos": [
+                  48.943542,
+                  2.349877
+                ],
+                "last_seen_utc": "2024-04-19T21:36:25.290Z",
+                "last_pos": [
+                  40.230898,
+                  -111.729053
+                ],
+                "wheels_up_utc": "2024-04-19T21:10:06.810Z",
+                "wheels_down_utc": "2024-04-19T21:33:34.670Z"
+              }
+            }
+          },
+          "verdict": "BOTH_HAVE_IT"
+        },
+        {
+          "date": "2024-04-20",
+          "is_alleged_date": false,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 860,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        }
+      ],
+      "alleged_date_verdict": "BOTH_HAVE_IT",
+      "any_track_in_window": true,
+      "recovered_first_pos": [
+        48.943542,
+        2.349877
+      ],
+      "recovered_last_pos": [
+        40.230898,
+        -111.729053
+      ],
+      "recovered_points": 1132
+    },
+    {
+      "tail": "SU-BND",
+      "date": "2024-04-23",
+      "ids": [
+        "SITE-004"
+      ],
+      "places": [
+        "Salt Lake City (event) / Provo (aircraft), UT"
+      ],
+      "hex": "01003e",
+      "overlap_ids": [
+        "SITE-004"
+      ],
+      "alleged_place": "Salt Lake City (event) / Provo (aircraft), UT",
+      "days": [
+        {
+          "date": "2024-04-22",
+          "is_alleged_date": false,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 860,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        },
+        {
+          "date": "2024-04-23",
+          "is_alleged_date": true,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 860,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        },
+        {
+          "date": "2024-04-24",
+          "is_alleged_date": false,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 860,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        }
+      ],
+      "alleged_date_verdict": "NEITHER_HAS_IT",
+      "any_track_in_window": false,
+      "recovered_first_pos": null,
+      "recovered_last_pos": null,
+      "recovered_points": null
+    },
+    {
+      "tail": "SU-BND",
+      "date": "2024-05-03",
+      "ids": [
+        "OWENS-056"
+      ],
+      "places": [
+        "St. Louis, MO"
+      ],
+      "hex": "01003e",
+      "overlap_ids": [
+        "OWENS-056"
+      ],
+      "alleged_place": "St. Louis, MO",
+      "days": [
+        {
+          "date": "2024-05-02",
+          "is_alleged_date": false,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 860,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        },
+        {
+          "date": "2024-05-03",
+          "is_alleged_date": true,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 860,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        },
+        {
+          "date": "2024-05-04",
+          "is_alleged_date": false,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 858,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        }
+      ],
+      "alleged_date_verdict": "NEITHER_HAS_IT",
+      "any_track_in_window": false,
+      "recovered_first_pos": null,
+      "recovered_last_pos": null,
+      "recovered_points": null
+    },
+    {
+      "tail": "SU-BND",
+      "date": "2024-05-10",
+      "ids": [
+        "OWENS-057"
+      ],
+      "places": [
+        "St. Louis, MO"
+      ],
+      "hex": "01003e",
+      "overlap_ids": [
+        "OWENS-057"
+      ],
+      "alleged_place": "St. Louis, MO",
+      "days": [
+        {
+          "date": "2024-05-09",
+          "is_alleged_date": false,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 859,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        },
+        {
+          "date": "2024-05-10",
+          "is_alleged_date": true,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 860,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        },
+        {
+          "date": "2024-05-11",
+          "is_alleged_date": false,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 860,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        }
+      ],
+      "alleged_date_verdict": "NEITHER_HAS_IT",
+      "any_track_in_window": false,
+      "recovered_first_pos": null,
+      "recovered_last_pos": null,
+      "recovered_points": null
+    },
+    {
+      "tail": "SU-BND",
+      "date": "2024-12-08",
+      "ids": [
+        "OWENS-030"
+      ],
+      "places": [
+        "Provo, UT"
+      ],
+      "hex": "01003e",
+      "overlap_ids": [
+        "OWENS-030"
+      ],
+      "alleged_place": "Provo, UT",
+      "days": [
+        {
+          "date": "2024-12-07",
+          "is_alleged_date": false,
+          "sources": {
+            "airplanes-live": {
+              "http": 200,
+              "bytes": 5626,
+              "summary": {
+                "registration": "SU-BND",
+                "type": "GLF4",
+                "points": 35,
+                "first_seen_utc": "2024-12-07T16:14:53.100Z",
+                "first_pos": [
+                  29.747543,
+                  31.391056
+                ],
+                "last_seen_utc": "2024-12-07T17:48:36.240Z",
+                "last_pos": [
+                  29.114282,
+                  31.709182
+                ],
+                "wheels_up_utc": null,
+                "wheels_down_utc": null
+              }
+            },
+            "adsb-lol": {
+              "http": 200,
+              "bytes": 4462,
+              "summary": {
+                "registration": "SU-BND",
+                "type": "GLF4",
+                "points": 25,
+                "first_seen_utc": "2024-12-07T16:18:04.370Z",
+                "first_pos": [
+                  29.420975,
+                  31.507786
+                ],
+                "last_seen_utc": "2024-12-07T17:48:36.250Z",
+                "last_pos": [
+                  29.114282,
+                  31.709182
+                ],
+                "wheels_up_utc": null,
+                "wheels_down_utc": null
+              }
+            }
+          },
+          "verdict": "BOTH_HAVE_IT"
+        },
+        {
+          "date": "2024-12-08",
+          "is_alleged_date": true,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 860,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        },
+        {
+          "date": "2024-12-09",
+          "is_alleged_date": false,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 860,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        }
+      ],
+      "alleged_date_verdict": "NEITHER_HAS_IT",
+      "any_track_in_window": true,
+      "recovered_first_pos": null,
+      "recovered_last_pos": null,
+      "recovered_points": null
+    },
+    {
+      "tail": "SU-BND",
+      "date": "2025-04-19",
+      "ids": [
+        "OWENS-064"
+      ],
+      "places": [
+        "Provo, UT"
+      ],
+      "hex": "01003e",
+      "overlap_ids": [
+        "OWENS-064"
+      ],
+      "alleged_place": "Provo, UT",
+      "days": [
+        {
+          "date": "2025-04-18",
+          "is_alleged_date": false,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 860,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        },
+        {
+          "date": "2025-04-19",
+          "is_alleged_date": true,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 860,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        },
+        {
+          "date": "2025-04-20",
+          "is_alleged_date": false,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 860,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        }
+      ],
+      "alleged_date_verdict": "NEITHER_HAS_IT",
+      "any_track_in_window": false,
+      "recovered_first_pos": null,
+      "recovered_last_pos": null,
+      "recovered_points": null
+    },
+    {
+      "tail": "SU-BND",
+      "date": "2025-05-23",
+      "ids": [
+        "OWENS-035",
+        "OWENS-065"
+      ],
+      "places": [
+        "Provo, UT",
+        "Provo, UT"
+      ],
+      "hex": "01003e",
+      "overlap_ids": [
+        "OWENS-035",
+        "OWENS-065"
+      ],
+      "alleged_place": "Provo, UT",
+      "days": [
+        {
+          "date": "2025-05-22",
+          "is_alleged_date": false,
+          "sources": {
+            "airplanes-live": {
+              "http": 200,
+              "bytes": 247265,
+              "summary": {
+                "registration": "SU-BND",
+                "type": "GLF4",
+                "points": 1347,
+                "first_seen_utc": "2025-05-22T05:47:44.600Z",
+                "first_pos": [
+                  30.58091,
+                  30.892676
+                ],
+                "last_seen_utc": "2025-05-22T09:56:39.390Z",
+                "last_pos": [
+                  48.968536,
+                  2.50939
+                ],
+                "wheels_up_utc": null,
+                "wheels_down_utc": null
+              }
+            },
+            "adsb-lol": {
+              "http": 200,
+              "bytes": 409723,
+              "summary": {
+                "registration": "SU-BND",
+                "type": "GLF4",
+                "points": 2060,
+                "first_seen_utc": "2025-05-22T05:47:44.600Z",
+                "first_pos": [
+                  30.58091,
+                  30.892676
+                ],
+                "last_seen_utc": "2025-05-22T09:56:39.390Z",
+                "last_pos": [
+                  48.968536,
+                  2.50939
+                ],
+                "wheels_up_utc": null,
+                "wheels_down_utc": null
+              }
+            }
+          },
+          "verdict": "BOTH_HAVE_IT"
+        },
+        {
+          "date": "2025-05-23",
+          "is_alleged_date": true,
+          "sources": {
+            "airplanes-live": {
+              "http": 200,
+              "bytes": 262592,
+              "summary": {
+                "registration": "SU-BND",
+                "type": "GLF4",
+                "points": 1451,
+                "first_seen_utc": "2025-05-23T07:20:46.910Z",
+                "first_pos": [
+                  48.981171,
+                  2.484741
+                ],
+                "last_seen_utc": "2025-05-23T20:46:42.310Z",
+                "last_pos": [
+                  40.230723,
+                  -111.728569
+                ],
+                "wheels_up_utc": null,
+                "wheels_down_utc": "2025-05-23T20:38:06.210Z"
+              }
+            },
+            "adsb-lol": {
+              "http": 200,
+              "bytes": 376364,
+              "summary": {
+                "registration": "SU-BND",
+                "type": "GLF4",
+                "points": 1963,
+                "first_seen_utc": "2025-05-23T07:20:43.030Z",
+                "first_pos": [
+                  48.979935,
+                  2.478685
+                ],
+                "last_seen_utc": "2025-05-23T20:46:42.320Z",
+                "last_pos": [
+                  40.230723,
+                  -111.728569
+                ],
+                "wheels_up_utc": null,
+                "wheels_down_utc": "2025-05-23T20:38:06.220Z"
+              }
+            }
+          },
+          "verdict": "BOTH_HAVE_IT"
+        },
+        {
+          "date": "2025-05-24",
+          "is_alleged_date": false,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 860,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        }
+      ],
+      "alleged_date_verdict": "BOTH_HAVE_IT",
+      "any_track_in_window": true,
+      "recovered_first_pos": [
+        48.981171,
+        2.484741
+      ],
+      "recovered_last_pos": [
+        40.230723,
+        -111.728569
+      ],
+      "recovered_points": 1451
+    },
+    {
+      "tail": "SU-BND",
+      "date": "2025-07-07",
+      "ids": [
+        "OWENS-037",
+        "OWENS-066"
+      ],
+      "places": [
+        "Provo, UT",
+        "Provo, UT"
+      ],
+      "hex": "01003e",
+      "overlap_ids": [
+        "OWENS-037",
+        "OWENS-066"
+      ],
+      "alleged_place": "Provo, UT",
+      "days": [
+        {
+          "date": "2025-07-06",
+          "is_alleged_date": false,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 860,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        },
+        {
+          "date": "2025-07-07",
+          "is_alleged_date": true,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 860,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        },
+        {
+          "date": "2025-07-08",
+          "is_alleged_date": false,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 859,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        }
+      ],
+      "alleged_date_verdict": "NEITHER_HAS_IT",
+      "any_track_in_window": false,
+      "recovered_first_pos": null,
+      "recovered_last_pos": null,
+      "recovered_points": null
+    },
+    {
+      "tail": "SU-BND",
+      "date": "2025-09-10",
+      "ids": [
+        "EXTRA-006",
+        "SITE-006"
+      ],
+      "places": [
+        "Provo, UT",
+        "Orem (event) / Provo (aircraft), UT"
+      ],
+      "hex": "01003e",
+      "overlap_ids": [
+        "EXTRA-006",
+        "SITE-006"
+      ],
+      "alleged_place": "Provo, UT",
+      "days": [
+        {
+          "date": "2025-09-09",
+          "is_alleged_date": false,
+          "sources": {
+            "airplanes-live": {
+              "http": 200,
+              "bytes": 18530,
+              "summary": {
+                "registration": "SU-BND",
+                "type": "GLF4",
+                "points": 124,
+                "first_seen_utc": "2025-09-09T20:03:30.650Z",
+                "first_pos": [
+                  40.229828,
+                  -111.727676
+                ],
+                "last_seen_utc": "2025-09-09T20:38:55.440Z",
+                "last_pos": [
+                  40.229815,
+                  -111.72768
+                ],
+                "wheels_up_utc": null,
+                "wheels_down_utc": null
+              }
+            },
+            "adsb-lol": {
+              "http": 200,
+              "bytes": 19626,
+              "summary": {
+                "registration": "SU-BND",
+                "type": "GLF4",
+                "points": 131,
+                "first_seen_utc": "2025-09-09T20:03:30.660Z",
+                "first_pos": [
+                  40.229828,
+                  -111.727676
+                ],
+                "last_seen_utc": "2025-09-09T20:38:55.450Z",
+                "last_pos": [
+                  40.229815,
+                  -111.72768
+                ],
+                "wheels_up_utc": null,
+                "wheels_down_utc": null
+              }
+            }
+          },
+          "verdict": "BOTH_HAVE_IT"
+        },
+        {
+          "date": "2025-09-10",
+          "is_alleged_date": true,
+          "sources": {
+            "airplanes-live": {
+              "http": 200,
+              "bytes": 48954,
+              "summary": {
+                "registration": "SU-BND",
+                "type": "GLF4",
+                "points": 328,
+                "first_seen_utc": "2025-09-10T16:05:35.760Z",
+                "first_pos": [
+                  40.229804,
+                  -111.72768
+                ],
+                "last_seen_utc": "2025-09-10T20:29:38.710Z",
+                "last_pos": [
+                  40.229827,
+                  -111.72768
+                ],
+                "wheels_up_utc": "2025-09-10T20:29:19.040Z",
+                "wheels_down_utc": "2025-09-10T20:29:19.910Z"
+              }
+            },
+            "adsb-lol": {
+              "http": 200,
+              "bytes": 38484,
+              "summary": {
+                "registration": "SU-BND",
+                "type": "GLF4",
+                "points": 257,
+                "first_seen_utc": "2025-09-10T16:05:35.770Z",
+                "first_pos": [
+                  40.229804,
+                  -111.72768
+                ],
+                "last_seen_utc": "2025-09-10T20:29:38.710Z",
+                "last_pos": [
+                  40.229827,
+                  -111.72768
+                ],
+                "wheels_up_utc": "2025-09-10T20:29:19.050Z",
+                "wheels_down_utc": "2025-09-10T20:29:19.920Z"
+              }
+            }
+          },
+          "verdict": "BOTH_HAVE_IT"
+        },
+        {
+          "date": "2025-09-11",
+          "is_alleged_date": false,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 860,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        }
+      ],
+      "alleged_date_verdict": "BOTH_HAVE_IT",
+      "any_track_in_window": true,
+      "recovered_first_pos": [
+        40.229804,
+        -111.72768
+      ],
+      "recovered_last_pos": [
+        40.229827,
+        -111.72768
+      ],
+      "recovered_points": 328
+    },
+    {
+      "tail": "SU-BND",
+      "date": "2025-09-13",
+      "ids": [
+        "OWENS-042"
+      ],
+      "places": [
+        "Provo, UT"
+      ],
+      "hex": "01003e",
+      "overlap_ids": [
+        "OWENS-042"
+      ],
+      "alleged_place": "Provo, UT",
+      "days": [
+        {
+          "date": "2025-09-12",
+          "is_alleged_date": false,
+          "sources": {
+            "airplanes-live": {
+              "http": 200,
+              "bytes": 104313,
+              "summary": {
+                "registration": "SU-BND",
+                "type": "GLF4",
+                "points": 708,
+                "first_seen_utc": "2025-09-12T13:37:35.890Z",
+                "first_pos": [
+                  40.229691,
+                  -111.727921
+                ],
+                "last_seen_utc": "2025-09-12T22:17:03.880Z",
+                "last_pos": [
+                  40.229805,
+                  -111.727676
+                ],
+                "wheels_up_utc": null,
+                "wheels_down_utc": null
+              }
+            },
+            "adsb-lol": {
+              "http": 200,
+              "bytes": 82041,
+              "summary": {
+                "registration": "SU-BND",
+                "type": "GLF4",
+                "points": 560,
+                "first_seen_utc": "2025-09-12T13:37:35.890Z",
+                "first_pos": [
+                  40.229691,
+                  -111.727921
+                ],
+                "last_seen_utc": "2025-09-12T22:17:03.880Z",
+                "last_pos": [
+                  40.229805,
+                  -111.727676
+                ],
+                "wheels_up_utc": null,
+                "wheels_down_utc": null
+              }
+            }
+          },
+          "verdict": "BOTH_HAVE_IT"
+        },
+        {
+          "date": "2025-09-13",
+          "is_alleged_date": true,
+          "sources": {
+            "airplanes-live": {
+              "http": 200,
+              "bytes": 192416,
+              "summary": {
+                "registration": "SU-BND",
+                "type": "GLF4",
+                "points": 1093,
+                "first_seen_utc": "2025-09-13T18:57:40.780Z",
+                "first_pos": [
+                  40.21429,
+                  -111.71841
+                ],
+                "last_seen_utc": "2025-09-13T21:34:06.210Z",
+                "last_pos": [
+                  49.531448,
+                  -88.504125
+                ],
+                "wheels_up_utc": null,
+                "wheels_down_utc": null
+              }
+            },
+            "adsb-lol": {
+              "http": 200,
+              "bytes": 143512,
+              "summary": {
+                "registration": "SU-BND",
+                "type": "GLF4",
+                "points": 810,
+                "first_seen_utc": "2025-09-13T18:57:40.790Z",
+                "first_pos": [
+                  40.21429,
+                  -111.71841
+                ],
+                "last_seen_utc": "2025-09-13T21:34:06.210Z",
+                "last_pos": [
+                  49.531448,
+                  -88.504125
+                ],
+                "wheels_up_utc": null,
+                "wheels_down_utc": null
+              }
+            }
+          },
+          "verdict": "BOTH_HAVE_IT"
+        },
+        {
+          "date": "2025-09-14",
+          "is_alleged_date": false,
+          "sources": {
+            "airplanes-live": {
+              "http": 200,
+              "bytes": 241899,
+              "summary": {
+                "registration": "SU-BND",
+                "type": "GLF4",
+                "points": 1323,
+                "first_seen_utc": "2025-09-14T04:19:31.570Z",
+                "first_pos": [
+                  51.01022,
+                  -15.531464
+                ],
+                "last_seen_utc": "2025-09-14T06:05:15.920Z",
+                "last_pos": [
+                  48.966385,
+                  2.470938
+                ],
+                "wheels_up_utc": null,
+                "wheels_down_utc": null
+              }
+            },
+            "adsb-lol": {
+              "http": 200,
+              "bytes": 237139,
+              "summary": {
+                "registration": "SU-BND",
+                "type": "GLF4",
+                "points": 1183,
+                "first_seen_utc": "2025-09-14T04:19:30.860Z",
+                "first_pos": [
+                  51.01022,
+                  -15.531464
+                ],
+                "last_seen_utc": "2025-09-14T06:11:36.330Z",
+                "last_pos": [
+                  48.958488,
+                  2.434898
+                ],
+                "wheels_up_utc": null,
+                "wheels_down_utc": "2025-09-14T06:06:05.650Z"
+              }
+            }
+          },
+          "verdict": "BOTH_HAVE_IT"
+        }
+      ],
+      "alleged_date_verdict": "BOTH_HAVE_IT",
+      "any_track_in_window": true,
+      "recovered_first_pos": [
+        40.21429,
+        -111.71841
+      ],
+      "recovered_last_pos": [
+        49.531448,
+        -88.504125
+      ],
+      "recovered_points": 1093
+    },
+    {
+      "tail": "SU-BTT",
+      "date": "2022-10-05",
+      "ids": [
+        "OWENS-001"
+      ],
+      "places": [
+        "New York, NY"
+      ],
+      "hex": "0101d3",
+      "overlap_ids": [
+        "OWENS-001"
+      ],
+      "alleged_place": "New York, NY",
+      "days": [
+        {
+          "date": "2022-10-04",
+          "is_alleged_date": false,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 860,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        },
+        {
+          "date": "2022-10-05",
+          "is_alleged_date": true,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 859,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        },
+        {
+          "date": "2022-10-06",
+          "is_alleged_date": false,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 860,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        }
+      ],
+      "alleged_date_verdict": "NEITHER_HAS_IT",
+      "any_track_in_window": false,
+      "recovered_first_pos": null,
+      "recovered_last_pos": null,
+      "recovered_points": null
+    },
+    {
+      "tail": "SU-BTT",
+      "date": "2022-10-20",
+      "ids": [
+        "OWENS-002"
+      ],
+      "places": [
+        "Chicago, IL"
+      ],
+      "hex": "0101d3",
+      "overlap_ids": [
+        "OWENS-002"
+      ],
+      "alleged_place": "Chicago, IL",
+      "days": [
+        {
+          "date": "2022-10-19",
+          "is_alleged_date": false,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 860,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        },
+        {
+          "date": "2022-10-20",
+          "is_alleged_date": true,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 860,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        },
+        {
+          "date": "2022-10-21",
+          "is_alleged_date": false,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 860,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        }
+      ],
+      "alleged_date_verdict": "NEITHER_HAS_IT",
+      "any_track_in_window": false,
+      "recovered_first_pos": null,
+      "recovered_last_pos": null,
+      "recovered_points": null
+    },
+    {
+      "tail": "SU-BTT",
+      "date": "2022-11-01",
+      "ids": [
+        "OWENS-003"
+      ],
+      "places": [
+        "Boston, MA"
+      ],
+      "hex": "0101d3",
+      "overlap_ids": [
+        "OWENS-003"
+      ],
+      "alleged_place": "Boston, MA",
+      "days": [
+        {
+          "date": "2022-10-31",
+          "is_alleged_date": false,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 860,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        },
+        {
+          "date": "2022-11-01",
+          "is_alleged_date": true,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 860,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        },
+        {
+          "date": "2022-11-02",
+          "is_alleged_date": false,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 860,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        }
+      ],
+      "alleged_date_verdict": "NEITHER_HAS_IT",
+      "any_track_in_window": false,
+      "recovered_first_pos": null,
+      "recovered_last_pos": null,
+      "recovered_points": null
+    },
+    {
+      "tail": "SU-BTT",
+      "date": "2022-11-13",
+      "ids": [
+        "OWENS-004"
+      ],
+      "places": [
+        "Wichita, KS"
+      ],
+      "hex": "0101d3",
+      "overlap_ids": [
+        "OWENS-004"
+      ],
+      "alleged_place": "Wichita, KS",
+      "days": [
+        {
+          "date": "2022-11-12",
+          "is_alleged_date": false,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 859,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        },
+        {
+          "date": "2022-11-13",
+          "is_alleged_date": true,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 860,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        },
+        {
+          "date": "2022-11-14",
+          "is_alleged_date": false,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 860,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        }
+      ],
+      "alleged_date_verdict": "NEITHER_HAS_IT",
+      "any_track_in_window": false,
+      "recovered_first_pos": null,
+      "recovered_last_pos": null,
+      "recovered_points": null
+    },
+    {
+      "tail": "SU-BTT",
+      "date": "2022-11-17",
+      "ids": [
+        "OWENS-005"
+      ],
+      "places": [
+        "Wilmington, DE"
+      ],
+      "hex": "0101d3",
+      "overlap_ids": [
+        "OWENS-005"
+      ],
+      "alleged_place": "Wilmington, DE",
+      "days": [
+        {
+          "date": "2022-11-16",
+          "is_alleged_date": false,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 860,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        },
+        {
+          "date": "2022-11-17",
+          "is_alleged_date": true,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 859,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        },
+        {
+          "date": "2022-11-18",
+          "is_alleged_date": false,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 860,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        }
+      ],
+      "alleged_date_verdict": "NEITHER_HAS_IT",
+      "any_track_in_window": false,
+      "recovered_first_pos": null,
+      "recovered_last_pos": null,
+      "recovered_points": null
+    },
+    {
+      "tail": "SU-BTT",
+      "date": "2022-11-25",
+      "ids": [
+        "OWENS-043"
+      ],
+      "places": [
+        "Wilmington, DE"
+      ],
+      "hex": "0101d3",
+      "overlap_ids": [
+        "OWENS-043"
+      ],
+      "alleged_place": "Wilmington, DE",
+      "days": [
+        {
+          "date": "2022-11-24",
+          "is_alleged_date": false,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 859,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        },
+        {
+          "date": "2022-11-25",
+          "is_alleged_date": true,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 860,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        },
+        {
+          "date": "2022-11-26",
+          "is_alleged_date": false,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 860,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        }
+      ],
+      "alleged_date_verdict": "NEITHER_HAS_IT",
+      "any_track_in_window": false,
+      "recovered_first_pos": null,
+      "recovered_last_pos": null,
+      "recovered_points": null
+    },
+    {
+      "tail": "SU-BTT",
+      "date": "2022-12-05",
+      "ids": [
+        "OWENS-044"
+      ],
+      "places": [
+        "Chicago, IL"
+      ],
+      "hex": "0101d3",
+      "overlap_ids": [
+        "OWENS-044"
+      ],
+      "alleged_place": "Chicago, IL",
+      "days": [
+        {
+          "date": "2022-12-04",
+          "is_alleged_date": false,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 860,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        },
+        {
+          "date": "2022-12-05",
+          "is_alleged_date": true,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 860,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        },
+        {
+          "date": "2022-12-06",
+          "is_alleged_date": false,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 860,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        }
+      ],
+      "alleged_date_verdict": "NEITHER_HAS_IT",
+      "any_track_in_window": false,
+      "recovered_first_pos": null,
+      "recovered_last_pos": null,
+      "recovered_points": null
+    },
+    {
+      "tail": "SU-BTT",
+      "date": "2022-12-20",
+      "ids": [
+        "OWENS-006"
+      ],
+      "places": [
+        "St. Louis, MO"
+      ],
+      "hex": "0101d3",
+      "overlap_ids": [
+        "OWENS-006"
+      ],
+      "alleged_place": "St. Louis, MO",
+      "days": [
+        {
+          "date": "2022-12-19",
+          "is_alleged_date": false,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 860,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        },
+        {
+          "date": "2022-12-20",
+          "is_alleged_date": true,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 860,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        },
+        {
+          "date": "2022-12-21",
+          "is_alleged_date": false,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 860,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        }
+      ],
+      "alleged_date_verdict": "NEITHER_HAS_IT",
+      "any_track_in_window": false,
+      "recovered_first_pos": null,
+      "recovered_last_pos": null,
+      "recovered_points": null
+    },
+    {
+      "tail": "SU-BTT",
+      "date": "2022-12-27",
+      "ids": [
+        "OWENS-007"
+      ],
+      "places": [
+        "Bangor, ME"
+      ],
+      "hex": "0101d3",
+      "overlap_ids": [
+        "OWENS-007"
+      ],
+      "alleged_place": "Bangor, ME",
+      "days": [
+        {
+          "date": "2022-12-26",
+          "is_alleged_date": false,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 860,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        },
+        {
+          "date": "2022-12-27",
+          "is_alleged_date": true,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 859,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        },
+        {
+          "date": "2022-12-28",
+          "is_alleged_date": false,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 860,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        }
+      ],
+      "alleged_date_verdict": "NEITHER_HAS_IT",
+      "any_track_in_window": false,
+      "recovered_first_pos": null,
+      "recovered_last_pos": null,
+      "recovered_points": null
+    },
+    {
+      "tail": "SU-BTT",
+      "date": "2023-01-12",
+      "ids": [
+        "OWENS-045"
+      ],
+      "places": [
+        "Wichita, KS"
+      ],
+      "hex": "0101d3",
+      "overlap_ids": [
+        "OWENS-045"
+      ],
+      "alleged_place": "Wichita, KS",
+      "days": [
+        {
+          "date": "2023-01-11",
+          "is_alleged_date": false,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 860,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        },
+        {
+          "date": "2023-01-12",
+          "is_alleged_date": true,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 860,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        },
+        {
+          "date": "2023-01-13",
+          "is_alleged_date": false,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 859,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        }
+      ],
+      "alleged_date_verdict": "NEITHER_HAS_IT",
+      "any_track_in_window": false,
+      "recovered_first_pos": null,
+      "recovered_last_pos": null,
+      "recovered_points": null
+    },
+    {
+      "tail": "SU-BTT",
+      "date": "2023-01-15",
+      "ids": [
+        "OWENS-008"
+      ],
+      "places": [
+        "Atlanta, GA"
+      ],
+      "hex": "0101d3",
+      "overlap_ids": [
+        "OWENS-008"
+      ],
+      "alleged_place": "Atlanta, GA",
+      "days": [
+        {
+          "date": "2023-01-14",
+          "is_alleged_date": false,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 860,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        },
+        {
+          "date": "2023-01-15",
+          "is_alleged_date": true,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 859,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        },
+        {
+          "date": "2023-01-16",
+          "is_alleged_date": false,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 859,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        }
+      ],
+      "alleged_date_verdict": "NEITHER_HAS_IT",
+      "any_track_in_window": false,
+      "recovered_first_pos": null,
+      "recovered_last_pos": null,
+      "recovered_points": null
+    },
+    {
+      "tail": "SU-BTT",
+      "date": "2023-02-10",
+      "ids": [
+        "OWENS-009"
+      ],
+      "places": [
+        "Wilmington, DE"
+      ],
+      "hex": "0101d3",
+      "overlap_ids": [
+        "OWENS-009"
+      ],
+      "alleged_place": "Wilmington, DE",
+      "days": [
+        {
+          "date": "2023-02-09",
+          "is_alleged_date": false,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 860,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        },
+        {
+          "date": "2023-02-10",
+          "is_alleged_date": true,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 860,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        },
+        {
+          "date": "2023-02-11",
+          "is_alleged_date": false,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 859,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        }
+      ],
+      "alleged_date_verdict": "NEITHER_HAS_IT",
+      "any_track_in_window": false,
+      "recovered_first_pos": null,
+      "recovered_last_pos": null,
+      "recovered_points": null
+    },
+    {
+      "tail": "SU-BTT",
+      "date": "2023-02-25",
+      "ids": [
+        "OWENS-046"
+      ],
+      "places": [
+        "St. Louis, MO"
+      ],
+      "hex": "0101d3",
+      "overlap_ids": [
+        "OWENS-046"
+      ],
+      "alleged_place": "St. Louis, MO",
+      "days": [
+        {
+          "date": "2023-02-24",
+          "is_alleged_date": false,
+          "sources": {
+            "airplanes-live": {
+              "http": 200,
+              "bytes": 38527,
+              "summary": {
+                "registration": "SU-BTT",
+                "type": "FA7X",
+                "points": 175,
+                "first_seen_utc": "2023-02-24T10:03:03.200Z",
+                "first_pos": [
+                  45.271167,
+                  8.49893
+                ],
+                "last_seen_utc": "2023-02-24T10:38:49.970Z",
+                "last_pos": [
+                  48.188502,
+                  4.077084
+                ],
+                "wheels_up_utc": null,
+                "wheels_down_utc": null
+              }
+            },
+            "adsb-lol": {
+              "http": 200,
+              "bytes": 131273,
+              "summary": {
+                "registration": "SU-BTT",
+                "type": "FA7X",
+                "points": 612,
+                "first_seen_utc": "2023-02-24T08:33:15.340Z",
+                "first_pos": [
+                  38.308228,
+                  20.784263
+                ],
+                "last_seen_utc": "2023-02-24T11:01:42.780Z",
+                "last_pos": [
+                  48.927933,
+                  2.286846
+                ],
+                "wheels_up_utc": null,
+                "wheels_down_utc": null
+              }
+            }
+          },
+          "verdict": "BOTH_HAVE_IT"
+        },
+        {
+          "date": "2023-02-25",
+          "is_alleged_date": true,
+          "sources": {
+            "airplanes-live": {
+              "http": 200,
+              "bytes": 141781,
+              "summary": {
+                "registration": "SU-BTT",
+                "type": "FA7X",
+                "points": 722,
+                "first_seen_utc": "2023-02-25T10:20:11.940Z",
+                "first_pos": [
+                  49.48717,
+                  2.639688
+                ],
+                "last_seen_utc": "2023-02-25T18:41:27.390Z",
+                "last_pos": [
+                  38.66317,
+                  -90.626465
+                ],
+                "wheels_up_utc": null,
+                "wheels_down_utc": null
+              }
+            },
+            "adsb-lol": {
+              "http": 200,
+              "bytes": 157077,
+              "summary": {
+                "registration": "SU-BTT",
+                "type": "FA7X",
+                "points": 794,
+                "first_seen_utc": "2023-02-25T10:08:44.390Z",
+                "first_pos": [
+                  48.969509,
+                  2.529891
+                ],
+                "last_seen_utc": "2023-02-25T18:41:11.860Z",
+                "last_pos": [
+                  38.664846,
+                  -90.616455
+                ],
+                "wheels_up_utc": null,
+                "wheels_down_utc": null
+              }
+            }
+          },
+          "verdict": "BOTH_HAVE_IT"
+        },
+        {
+          "date": "2023-02-26",
+          "is_alleged_date": false,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 860,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        }
+      ],
+      "alleged_date_verdict": "BOTH_HAVE_IT",
+      "any_track_in_window": true,
+      "recovered_first_pos": [
+        49.48717,
+        2.639688
+      ],
+      "recovered_last_pos": [
+        38.66317,
+        -90.626465
+      ],
+      "recovered_points": 722
+    },
+    {
+      "tail": "SU-BTT",
+      "date": "2023-03-15",
+      "ids": [
+        "OWENS-047"
+      ],
+      "places": [
+        "Omaha, NE"
+      ],
+      "hex": "0101d3",
+      "overlap_ids": [
+        "OWENS-047"
+      ],
+      "alleged_place": "Omaha, NE",
+      "days": [
+        {
+          "date": "2023-03-14",
+          "is_alleged_date": false,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 859,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        },
+        {
+          "date": "2023-03-15",
+          "is_alleged_date": true,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 860,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        },
+        {
+          "date": "2023-03-16",
+          "is_alleged_date": false,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 860,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        }
+      ],
+      "alleged_date_verdict": "NEITHER_HAS_IT",
+      "any_track_in_window": false,
+      "recovered_first_pos": null,
+      "recovered_last_pos": null,
+      "recovered_points": null
+    },
+    {
+      "tail": "SU-BTT",
+      "date": "2023-03-27",
+      "ids": [
+        "OWENS-048"
+      ],
+      "places": [
+        "Wilmington, DE"
+      ],
+      "hex": "0101d3",
+      "overlap_ids": [
+        "OWENS-048"
+      ],
+      "alleged_place": "Wilmington, DE",
+      "days": [
+        {
+          "date": "2023-03-26",
+          "is_alleged_date": false,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 860,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        },
+        {
+          "date": "2023-03-27",
+          "is_alleged_date": true,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 860,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        },
+        {
+          "date": "2023-03-28",
+          "is_alleged_date": false,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 860,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        }
+      ],
+      "alleged_date_verdict": "NEITHER_HAS_IT",
+      "any_track_in_window": false,
+      "recovered_first_pos": null,
+      "recovered_last_pos": null,
+      "recovered_points": null
+    },
+    {
+      "tail": "SU-BTT",
+      "date": "2023-04-01",
+      "ids": [
+        "OWENS-010"
+      ],
+      "places": [
+        "St. Louis, MO"
+      ],
+      "hex": "0101d3",
+      "overlap_ids": [
+        "OWENS-010"
+      ],
+      "alleged_place": "St. Louis, MO",
+      "days": [
+        {
+          "date": "2023-03-31",
+          "is_alleged_date": false,
+          "sources": {
+            "airplanes-live": {
+              "http": 200,
+              "bytes": 109142,
+              "summary": {
+                "registration": "SU-BTT",
+                "type": "FA7X",
+                "points": 523,
+                "first_seen_utc": "2023-03-31T05:19:50.170Z",
+                "first_pos": [
+                  30.622971,
+                  30.650563
+                ],
+                "last_seen_utc": "2023-03-31T09:30:22.220Z",
+                "last_pos": [
+                  48.973892,
+                  2.610309
+                ],
+                "wheels_up_utc": null,
+                "wheels_down_utc": null
+              }
+            },
+            "adsb-lol": {
+              "http": 200,
+              "bytes": 3265,
+              "summary": {
+                "registration": "SU-BTT",
+                "type": "FA7X",
+                "points": 13,
+                "first_seen_utc": "2023-03-31T08:29:31.330Z",
+                "first_pos": [
+                  45.738784,
+                  8.79277
+                ],
+                "last_seen_utc": "2023-03-31T08:33:55.560Z",
+                "last_pos": [
+                  46.025986,
+                  8.13062
+                ],
+                "wheels_up_utc": null,
+                "wheels_down_utc": null
+              }
+            }
+          },
+          "verdict": "BOTH_HAVE_IT"
+        },
+        {
+          "date": "2023-04-01",
+          "is_alleged_date": true,
+          "sources": {
+            "airplanes-live": {
+              "http": 200,
+              "bytes": 179354,
+              "summary": {
+                "registration": "SU-BTT",
+                "type": "FA7X",
+                "points": 897,
+                "first_seen_utc": "2023-04-01T07:19:50.310Z",
+                "first_pos": [
+                  48.961945,
+                  2.412626
+                ],
+                "last_seen_utc": "2023-04-01T16:01:37.760Z",
+                "last_pos": [
+                  38.663818,
+                  -90.622817
+                ],
+                "wheels_up_utc": null,
+                "wheels_down_utc": null
+              }
+            },
+            "adsb-lol": {
+              "http": 200,
+              "bytes": 108997,
+              "summary": {
+                "registration": "SU-BTT",
+                "type": "FA7X",
+                "points": 558,
+                "first_seen_utc": "2023-04-01T07:28:09.460Z",
+                "first_pos": [
+                  49.412613,
+                  2.292692
+                ],
+                "last_seen_utc": "2023-04-01T16:01:24.750Z",
+                "last_pos": [
+                  38.6651,
+                  -90.615294
+                ],
+                "wheels_up_utc": null,
+                "wheels_down_utc": null
+              }
+            }
+          },
+          "verdict": "BOTH_HAVE_IT"
+        },
+        {
+          "date": "2023-04-02",
+          "is_alleged_date": false,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 860,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        }
+      ],
+      "alleged_date_verdict": "BOTH_HAVE_IT",
+      "any_track_in_window": true,
+      "recovered_first_pos": [
+        48.961945,
+        2.412626
+      ],
+      "recovered_last_pos": [
+        38.663818,
+        -90.622817
+      ],
+      "recovered_points": 897
+    },
+    {
+      "tail": "SU-BTT",
+      "date": "2023-04-02",
+      "ids": [
+        "SITE-001"
+      ],
+      "places": [
+        "Jefferson City (event) / St. Louis (aircraft), MO"
+      ],
+      "hex": "0101d3",
+      "overlap_ids": [
+        "SITE-001"
+      ],
+      "alleged_place": "Jefferson City (event) / St. Louis (aircraft), MO",
+      "days": [
+        {
+          "date": "2023-04-01",
+          "is_alleged_date": false,
+          "sources": {
+            "airplanes-live": {
+              "http": 200,
+              "bytes": 179354,
+              "summary": {
+                "registration": "SU-BTT",
+                "type": "FA7X",
+                "points": 897,
+                "first_seen_utc": "2023-04-01T07:19:50.310Z",
+                "first_pos": [
+                  48.961945,
+                  2.412626
+                ],
+                "last_seen_utc": "2023-04-01T16:01:37.760Z",
+                "last_pos": [
+                  38.663818,
+                  -90.622817
+                ],
+                "wheels_up_utc": null,
+                "wheels_down_utc": null
+              }
+            },
+            "adsb-lol": {
+              "http": 200,
+              "bytes": 108997,
+              "summary": {
+                "registration": "SU-BTT",
+                "type": "FA7X",
+                "points": 558,
+                "first_seen_utc": "2023-04-01T07:28:09.460Z",
+                "first_pos": [
+                  49.412613,
+                  2.292692
+                ],
+                "last_seen_utc": "2023-04-01T16:01:24.750Z",
+                "last_pos": [
+                  38.6651,
+                  -90.615294
+                ],
+                "wheels_up_utc": null,
+                "wheels_down_utc": null
+              }
+            }
+          },
+          "verdict": "BOTH_HAVE_IT"
+        },
+        {
+          "date": "2023-04-02",
+          "is_alleged_date": true,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 860,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        },
+        {
+          "date": "2023-04-03",
+          "is_alleged_date": false,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 859,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        }
+      ],
+      "alleged_date_verdict": "NEITHER_HAS_IT",
+      "any_track_in_window": true,
+      "recovered_first_pos": null,
+      "recovered_last_pos": null,
+      "recovered_points": null
+    },
+    {
+      "tail": "SU-BTT",
+      "date": "2023-04-06",
+      "ids": [
+        "OWENS-011"
+      ],
+      "places": [
+        "Wilmington, DE"
+      ],
+      "hex": "0101d3",
+      "overlap_ids": [
+        "OWENS-011"
+      ],
+      "alleged_place": "Wilmington, DE",
+      "days": [
+        {
+          "date": "2023-04-05",
+          "is_alleged_date": false,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 859,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        },
+        {
+          "date": "2023-04-06",
+          "is_alleged_date": true,
+          "sources": {
+            "airplanes-live": {
+              "http": 200,
+              "bytes": 111351,
+              "summary": {
+                "registration": "SU-BTT",
+                "type": "FA7X",
+                "points": 622,
+                "first_seen_utc": "2023-04-06T13:58:09.560Z",
+                "first_pos": [
+                  38.659149,
+                  -90.651
+                ],
+                "last_seen_utc": "2023-04-06T15:33:43.900Z",
+                "last_pos": [
+                  39.664124,
+                  -75.604447
+                ],
+                "wheels_up_utc": null,
+                "wheels_down_utc": null
+              }
+            },
+            "adsb-lol": {
+              "http": 200,
+              "bytes": 93458,
+              "summary": {
+                "registration": "SU-BTT",
+                "type": "FA7X",
+                "points": 524,
+                "first_seen_utc": "2023-04-06T13:58:16.770Z",
+                "first_pos": [
+                  38.658096,
+                  -90.65715
+                ],
+                "last_seen_utc": "2023-04-06T15:33:43.920Z",
+                "last_pos": [
+                  39.664124,
+                  -75.604447
+                ],
+                "wheels_up_utc": null,
+                "wheels_down_utc": null
+              }
+            }
+          },
+          "verdict": "BOTH_HAVE_IT"
+        },
+        {
+          "date": "2023-04-07",
+          "is_alleged_date": false,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 860,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        }
+      ],
+      "alleged_date_verdict": "BOTH_HAVE_IT",
+      "any_track_in_window": true,
+      "recovered_first_pos": [
+        38.659149,
+        -90.651
+      ],
+      "recovered_last_pos": [
+        39.664124,
+        -75.604447
+      ],
+      "recovered_points": 622
+    },
+    {
+      "tail": "SU-BTT",
+      "date": "2023-04-14",
+      "ids": [
+        "OWENS-012"
+      ],
+      "places": [
+        "Wichita, KS"
+      ],
+      "hex": "0101d3",
+      "overlap_ids": [
+        "OWENS-012"
+      ],
+      "alleged_place": "Wichita, KS",
+      "days": [
+        {
+          "date": "2023-04-13",
+          "is_alleged_date": false,
+          "sources": {
+            "airplanes-live": {
+              "http": 200,
+              "bytes": 87203,
+              "summary": {
+                "registration": "SU-BTT",
+                "type": "FA7X",
+                "points": 430,
+                "first_seen_utc": "2023-04-13T08:06:00.820Z",
+                "first_pos": [
+                  30.414765,
+                  30.876196
+                ],
+                "last_seen_utc": "2023-04-13T12:17:56.010Z",
+                "last_pos": [
+                  48.976364,
+                  2.658269
+                ],
+                "wheels_up_utc": null,
+                "wheels_down_utc": null
+              }
+            },
+            "adsb-lol": {
+              "http": 200,
+              "bytes": 48115,
+              "summary": {
+                "registration": "SU-BTT",
+                "type": "FA7X",
+                "points": 228,
+                "first_seen_utc": "2023-04-13T09:40:16.470Z",
+                "first_pos": [
+                  36.864807,
+                  20.049581
+                ],
+                "last_seen_utc": "2023-04-13T12:18:12.780Z",
+                "last_pos": [
+                  48.975235,
+                  2.63643
+                ],
+                "wheels_up_utc": null,
+                "wheels_down_utc": null
+              }
+            }
+          },
+          "verdict": "BOTH_HAVE_IT"
+        },
+        {
+          "date": "2023-04-14",
+          "is_alleged_date": true,
+          "sources": {
+            "airplanes-live": {
+              "http": 200,
+              "bytes": 157365,
+              "summary": {
+                "registration": "SU-BTT",
+                "type": "FA7X",
+                "points": 787,
+                "first_seen_utc": "2023-04-14T09:01:20.690Z",
+                "first_pos": [
+                  48.969416,
+                  2.528156
+                ],
+                "last_seen_utc": "2023-04-14T18:18:17.590Z",
+                "last_pos": [
+                  37.88193,
+                  -97.316357
+                ],
+                "wheels_up_utc": null,
+                "wheels_down_utc": null
+              }
+            },
+            "adsb-lol": {
+              "http": 200,
+              "bytes": 101380,
+              "summary": {
+                "registration": "SU-BTT",
+                "type": "FA7X",
+                "points": 505,
+                "first_seen_utc": "2023-04-14T09:01:07.280Z",
+                "first_pos": [
+                  48.968625,
+                  2.513412
+                ],
+                "last_seen_utc": "2023-04-14T17:58:13.940Z",
+                "last_pos": [
+                  38.959946,
+                  -95.470117
+                ],
+                "wheels_up_utc": null,
+                "wheels_down_utc": null
+              }
+            }
+          },
+          "verdict": "BOTH_HAVE_IT"
+        },
+        {
+          "date": "2023-04-15",
+          "is_alleged_date": false,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 860,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        }
+      ],
+      "alleged_date_verdict": "BOTH_HAVE_IT",
+      "any_track_in_window": true,
+      "recovered_first_pos": [
+        48.969416,
+        2.528156
+      ],
+      "recovered_last_pos": [
+        37.88193,
+        -97.316357
+      ],
+      "recovered_points": 787
+    },
+    {
+      "tail": "SU-BTT",
+      "date": "2023-04-20",
+      "ids": [
+        "OWENS-013"
+      ],
+      "places": [
+        "Wilmington, DE"
+      ],
+      "hex": "0101d3",
+      "overlap_ids": [
+        "OWENS-013"
+      ],
+      "alleged_place": "Wilmington, DE",
+      "days": [
+        {
+          "date": "2023-04-19",
+          "is_alleged_date": false,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 860,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        },
+        {
+          "date": "2023-04-20",
+          "is_alleged_date": true,
+          "sources": {
+            "airplanes-live": {
+              "http": 200,
+              "bytes": 113710,
+              "summary": {
+                "registration": "SU-BTT",
+                "type": "FA7X",
+                "points": 637,
+                "first_seen_utc": "2023-04-20T14:49:59.490Z",
+                "first_pos": [
+                  37.83078,
+                  -97.191837
+                ],
+                "last_seen_utc": "2023-04-20T17:04:30.240Z",
+                "last_pos": [
+                  39.673668,
+                  -75.60188
+                ],
+                "wheels_up_utc": null,
+                "wheels_down_utc": "2023-04-20T17:04:07.450Z"
+              }
+            },
+            "adsb-lol": {
+              "http": 200,
+              "bytes": 75124,
+              "summary": {
+                "registration": "SU-BTT",
+                "type": "FA7X",
+                "points": 421,
+                "first_seen_utc": "2023-04-20T14:54:12.890Z",
+                "first_pos": [
+                  37.930939,
+                  -96.550598
+                ],
+                "last_seen_utc": "2023-04-20T17:04:30.200Z",
+                "last_pos": [
+                  39.673668,
+                  -75.60188
+                ],
+                "wheels_up_utc": null,
+                "wheels_down_utc": "2023-04-20T17:04:07.390Z"
+              }
+            }
+          },
+          "verdict": "BOTH_HAVE_IT"
+        },
+        {
+          "date": "2023-04-21",
+          "is_alleged_date": false,
+          "sources": {
+            "airplanes-live": {
+              "http": 200,
+              "bytes": 174675,
+              "summary": {
+                "registration": "SU-BTT",
+                "type": "FA7X",
+                "points": 882,
+                "first_seen_utc": "2023-04-21T11:58:55.880Z",
+                "first_pos": [
+                  39.670351,
+                  -75.603714
+                ],
+                "last_seen_utc": "2023-04-21T21:45:14.000Z",
+                "last_pos": [
+                  34.893814,
+                  26.004807
+                ],
+                "wheels_up_utc": "2023-04-21T11:59:32.150Z",
+                "wheels_down_utc": null
+              }
+            },
+            "adsb-lol": {
+              "http": 200,
+              "bytes": 136672,
+              "summary": {
+                "registration": "SU-BTT",
+                "type": "FA7X",
+                "points": 688,
+                "first_seen_utc": "2023-04-21T11:59:32.570Z",
+                "first_pos": [
+                  39.688797,
+                  -75.601641
+                ],
+                "last_seen_utc": "2023-04-21T21:11:33.650Z",
+                "last_pos": [
+                  37.86438,
+                  21.445432
+                ],
+                "wheels_up_utc": null,
+                "wheels_down_utc": null
+              }
+            }
+          },
+          "verdict": "BOTH_HAVE_IT"
+        }
+      ],
+      "alleged_date_verdict": "BOTH_HAVE_IT",
+      "any_track_in_window": true,
+      "recovered_first_pos": [
+        37.83078,
+        -97.191837
+      ],
+      "recovered_last_pos": [
+        39.673668,
+        -75.60188
+      ],
+      "recovered_points": 637
+    },
+    {
+      "tail": "SU-BTT",
+      "date": "2023-04-23",
+      "ids": [
+        "EXTRA-003"
+      ],
+      "places": [
+        "Topeka, KS"
+      ],
+      "hex": "0101d3",
+      "overlap_ids": [
+        "EXTRA-003"
+      ],
+      "alleged_place": "Topeka, KS",
+      "days": [
+        {
+          "date": "2023-04-22",
+          "is_alleged_date": false,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 860,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        },
+        {
+          "date": "2023-04-23",
+          "is_alleged_date": true,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 860,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        },
+        {
+          "date": "2023-04-24",
+          "is_alleged_date": false,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 860,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        }
+      ],
+      "alleged_date_verdict": "NEITHER_HAS_IT",
+      "any_track_in_window": false,
+      "recovered_first_pos": null,
+      "recovered_last_pos": null,
+      "recovered_points": null
+    },
+    {
+      "tail": "SU-BTT",
+      "date": "2023-04-25",
+      "ids": [
+        "OWENS-049"
+      ],
+      "places": [
+        "Wichita, KS"
+      ],
+      "hex": "0101d3",
+      "overlap_ids": [
+        "OWENS-049"
+      ],
+      "alleged_place": "Wichita, KS",
+      "days": [
+        {
+          "date": "2023-04-24",
+          "is_alleged_date": false,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 860,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        },
+        {
+          "date": "2023-04-25",
+          "is_alleged_date": true,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 859,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        },
+        {
+          "date": "2023-04-26",
+          "is_alleged_date": false,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 858,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        }
+      ],
+      "alleged_date_verdict": "NEITHER_HAS_IT",
+      "any_track_in_window": false,
+      "recovered_first_pos": null,
+      "recovered_last_pos": null,
+      "recovered_points": null
+    },
+    {
+      "tail": "SU-BTT",
+      "date": "2023-06-08",
+      "ids": [
+        "OWENS-051"
+      ],
+      "places": [
+        "Wichita, KS"
+      ],
+      "hex": "0101d3",
+      "overlap_ids": [
+        "OWENS-051"
+      ],
+      "alleged_place": "Wichita, KS",
+      "days": [
+        {
+          "date": "2023-06-07",
+          "is_alleged_date": false,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 859,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        },
+        {
+          "date": "2023-06-08",
+          "is_alleged_date": true,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 860,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        },
+        {
+          "date": "2023-06-09",
+          "is_alleged_date": false,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 860,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        }
+      ],
+      "alleged_date_verdict": "NEITHER_HAS_IT",
+      "any_track_in_window": false,
+      "recovered_first_pos": null,
+      "recovered_last_pos": null,
+      "recovered_points": null
+    },
+    {
+      "tail": "SU-BTT",
+      "date": "2023-07-25",
+      "ids": [
+        "OWENS-017"
+      ],
+      "places": [
+        "Lincoln, NE"
+      ],
+      "hex": "0101d3",
+      "overlap_ids": [
+        "OWENS-017"
+      ],
+      "alleged_place": "Lincoln, NE",
+      "days": [
+        {
+          "date": "2023-07-24",
+          "is_alleged_date": false,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 859,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        },
+        {
+          "date": "2023-07-25",
+          "is_alleged_date": true,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 860,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        },
+        {
+          "date": "2023-07-26",
+          "is_alleged_date": false,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 860,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        }
+      ],
+      "alleged_date_verdict": "NEITHER_HAS_IT",
+      "any_track_in_window": false,
+      "recovered_first_pos": null,
+      "recovered_last_pos": null,
+      "recovered_points": null
+    },
+    {
+      "tail": "SU-BTT",
+      "date": "2023-08-25",
+      "ids": [
+        "EXTRA-005"
+      ],
+      "places": [
+        "Lincoln, NE"
+      ],
+      "hex": "0101d3",
+      "overlap_ids": [
+        "EXTRA-005"
+      ],
+      "alleged_place": "Lincoln, NE",
+      "days": [
+        {
+          "date": "2023-08-24",
+          "is_alleged_date": false,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 859,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        },
+        {
+          "date": "2023-08-25",
+          "is_alleged_date": true,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 860,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        },
+        {
+          "date": "2023-08-26",
+          "is_alleged_date": false,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 859,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        }
+      ],
+      "alleged_date_verdict": "NEITHER_HAS_IT",
+      "any_track_in_window": false,
+      "recovered_first_pos": null,
+      "recovered_last_pos": null,
+      "recovered_points": null
+    },
+    {
+      "tail": "SU-BTT",
+      "date": "2023-09-03",
+      "ids": [
+        "OWENS-018"
+      ],
+      "places": [
+        "Wilmington, DE"
+      ],
+      "hex": "0101d3",
+      "overlap_ids": [
+        "OWENS-018"
+      ],
+      "alleged_place": "Wilmington, DE",
+      "days": [
+        {
+          "date": "2023-09-02",
+          "is_alleged_date": false,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 860,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        },
+        {
+          "date": "2023-09-03",
+          "is_alleged_date": true,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 860,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        },
+        {
+          "date": "2023-09-04",
+          "is_alleged_date": false,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 860,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        }
+      ],
+      "alleged_date_verdict": "NEITHER_HAS_IT",
+      "any_track_in_window": false,
+      "recovered_first_pos": null,
+      "recovered_last_pos": null,
+      "recovered_points": null
+    },
+    {
+      "tail": "SU-BTT",
+      "date": "2024-01-10",
+      "ids": [
+        "OWENS-019"
+      ],
+      "places": [
+        "Sacramento, CA"
+      ],
+      "hex": "0101d3",
+      "overlap_ids": [
+        "OWENS-019"
+      ],
+      "alleged_place": "Sacramento, CA",
+      "days": [
+        {
+          "date": "2024-01-09",
+          "is_alleged_date": false,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 860,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        },
+        {
+          "date": "2024-01-10",
+          "is_alleged_date": true,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 860,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        },
+        {
+          "date": "2024-01-11",
+          "is_alleged_date": false,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 860,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        }
+      ],
+      "alleged_date_verdict": "NEITHER_HAS_IT",
+      "any_track_in_window": false,
+      "recovered_first_pos": null,
+      "recovered_last_pos": null,
+      "recovered_points": null
+    },
+    {
+      "tail": "SU-BTT",
+      "date": "2024-02-09",
+      "ids": [
+        "OWENS-020"
+      ],
+      "places": [
+        "Omaha / Lincoln, NE"
+      ],
+      "hex": "0101d3",
+      "overlap_ids": [
+        "OWENS-020"
+      ],
+      "alleged_place": "Omaha / Lincoln, NE",
+      "days": [
+        {
+          "date": "2024-02-08",
+          "is_alleged_date": false,
+          "sources": {
+            "airplanes-live": {
+              "http": 200,
+              "bytes": 141953,
+              "summary": {
+                "registration": "SU-BTT",
+                "type": "FA7X",
+                "points": 878,
+                "first_seen_utc": "2024-02-08T07:12:56.880Z",
+                "first_pos": [
+                  30.714981,
+                  30.697901
+                ],
+                "last_seen_utc": "2024-02-08T11:18:02.190Z",
+                "last_pos": [
+                  48.966522,
+                  2.472839
+                ],
+                "wheels_up_utc": null,
+                "wheels_down_utc": null
+              }
+            },
+            "adsb-lol": {
+              "http": 200,
+              "bytes": 97182,
+              "summary": {
+                "registration": "SU-BTT",
+                "type": "FA7X",
+                "points": 461,
+                "first_seen_utc": "2024-02-08T07:12:56.880Z",
+                "first_pos": [
+                  30.714981,
+                  30.697901
+                ],
+                "last_seen_utc": "2024-02-08T11:18:02.180Z",
+                "last_pos": [
+                  48.966522,
+                  2.472839
+                ],
+                "wheels_up_utc": null,
+                "wheels_down_utc": null
+              }
+            }
+          },
+          "verdict": "BOTH_HAVE_IT"
+        },
+        {
+          "date": "2024-02-09",
+          "is_alleged_date": true,
+          "sources": {
+            "airplanes-live": {
+              "http": 200,
+              "bytes": 213926,
+              "summary": {
+                "registration": "SU-BTT",
+                "type": "FA7X",
+                "points": 1120,
+                "first_seen_utc": "2024-02-09T07:52:48.510Z",
+                "first_pos": [
+                  48.964575,
+                  2.421618
+                ],
+                "last_seen_utc": "2024-02-09T18:39:38.690Z",
+                "last_pos": [
+                  40.852032,
+                  -96.750839
+                ],
+                "wheels_up_utc": null,
+                "wheels_down_utc": "2024-02-09T18:39:38.690Z"
+              }
+            },
+            "adsb-lol": {
+              "http": 200,
+              "bytes": 188893,
+              "summary": {
+                "registration": "SU-BTT",
+                "type": "FA7X",
+                "points": 983,
+                "first_seen_utc": "2024-02-09T07:52:48.510Z",
+                "first_pos": [
+                  48.964575,
+                  2.421618
+                ],
+                "last_seen_utc": "2024-02-09T18:38:11.550Z",
+                "last_pos": [
+                  40.807738,
+                  -96.751099
+                ],
+                "wheels_up_utc": null,
+                "wheels_down_utc": null
+              }
+            }
+          },
+          "verdict": "BOTH_HAVE_IT"
+        },
+        {
+          "date": "2024-02-10",
+          "is_alleged_date": false,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 860,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        }
+      ],
+      "alleged_date_verdict": "BOTH_HAVE_IT",
+      "any_track_in_window": true,
+      "recovered_first_pos": [
+        48.964575,
+        2.421618
+      ],
+      "recovered_last_pos": [
+        40.852032,
+        -96.750839
+      ],
+      "recovered_points": 1120
+    },
+    {
+      "tail": "SU-BTT",
+      "date": "2024-02-11",
+      "ids": [
+        "SITE-002"
+      ],
+      "places": [
+        "Lincoln, NE"
+      ],
+      "hex": "0101d3",
+      "overlap_ids": [
+        "SITE-002"
+      ],
+      "alleged_place": "Lincoln, NE",
+      "days": [
+        {
+          "date": "2024-02-10",
+          "is_alleged_date": false,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 860,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        },
+        {
+          "date": "2024-02-11",
+          "is_alleged_date": true,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 860,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        },
+        {
+          "date": "2024-02-12",
+          "is_alleged_date": false,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 860,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        }
+      ],
+      "alleged_date_verdict": "NEITHER_HAS_IT",
+      "any_track_in_window": false,
+      "recovered_first_pos": null,
+      "recovered_last_pos": null,
+      "recovered_points": null
+    },
+    {
+      "tail": "SU-BTT",
+      "date": "2024-02-14",
+      "ids": [
+        "OWENS-021"
+      ],
+      "places": [
+        "Wilmington, DE"
+      ],
+      "hex": "0101d3",
+      "overlap_ids": [
+        "OWENS-021"
+      ],
+      "alleged_place": "Wilmington, DE",
+      "days": [
+        {
+          "date": "2024-02-13",
+          "is_alleged_date": false,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 860,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        },
+        {
+          "date": "2024-02-14",
+          "is_alleged_date": true,
+          "sources": {
+            "airplanes-live": {
+              "http": 200,
+              "bytes": 125584,
+              "summary": {
+                "registration": "SU-BTT",
+                "type": "FA7X",
+                "points": 703,
+                "first_seen_utc": "2024-02-14T14:38:25.420Z",
+                "first_pos": [
+                  40.849077,
+                  -96.750787
+                ],
+                "last_seen_utc": "2024-02-14T16:38:55.290Z",
+                "last_pos": [
+                  39.681872,
+                  -75.597839
+                ],
+                "wheels_up_utc": null,
+                "wheels_down_utc": null
+              }
+            },
+            "adsb-lol": {
+              "http": 200,
+              "bytes": 121291,
+              "summary": {
+                "registration": "SU-BTT",
+                "type": "FA7X",
+                "points": 678,
+                "first_seen_utc": "2024-02-14T14:38:37.190Z",
+                "first_pos": [
+                  40.840622,
+                  -96.750854
+                ],
+                "last_seen_utc": "2024-02-14T16:38:55.260Z",
+                "last_pos": [
+                  39.681872,
+                  -75.597839
+                ],
+                "wheels_up_utc": null,
+                "wheels_down_utc": null
+              }
+            }
+          },
+          "verdict": "BOTH_HAVE_IT"
+        },
+        {
+          "date": "2024-02-15",
+          "is_alleged_date": false,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 860,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        }
+      ],
+      "alleged_date_verdict": "BOTH_HAVE_IT",
+      "any_track_in_window": true,
+      "recovered_first_pos": [
+        40.849077,
+        -96.750787
+      ],
+      "recovered_last_pos": [
+        39.681872,
+        -75.597839
+      ],
+      "recovered_points": 703
+    },
+    {
+      "tail": "SU-BTT",
+      "date": "2024-03-10",
+      "ids": [
+        "OWENS-053"
+      ],
+      "places": [
+        "St. Louis, MO"
+      ],
+      "hex": "0101d3",
+      "overlap_ids": [
+        "OWENS-053"
+      ],
+      "alleged_place": "St. Louis, MO",
+      "days": [
+        {
+          "date": "2024-03-09",
+          "is_alleged_date": false,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 860,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        },
+        {
+          "date": "2024-03-10",
+          "is_alleged_date": true,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 860,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        },
+        {
+          "date": "2024-03-11",
+          "is_alleged_date": false,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 859,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        }
+      ],
+      "alleged_date_verdict": "NEITHER_HAS_IT",
+      "any_track_in_window": false,
+      "recovered_first_pos": null,
+      "recovered_last_pos": null,
+      "recovered_points": null
+    },
+    {
+      "tail": "SU-BTT",
+      "date": "2024-03-18",
+      "ids": [
+        "OWENS-022"
+      ],
+      "places": [
+        "Wichita, KS"
+      ],
+      "hex": "0101d3",
+      "overlap_ids": [
+        "OWENS-022"
+      ],
+      "alleged_place": "Wichita, KS",
+      "days": [
+        {
+          "date": "2024-03-17",
+          "is_alleged_date": false,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 860,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        },
+        {
+          "date": "2024-03-18",
+          "is_alleged_date": true,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 859,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        },
+        {
+          "date": "2024-03-19",
+          "is_alleged_date": false,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 860,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        }
+      ],
+      "alleged_date_verdict": "NEITHER_HAS_IT",
+      "any_track_in_window": false,
+      "recovered_first_pos": null,
+      "recovered_last_pos": null,
+      "recovered_points": null
+    },
+    {
+      "tail": "SU-BTT",
+      "date": "2024-03-22",
+      "ids": [
+        "OWENS-054"
+      ],
+      "places": [
+        "Wichita, KS"
+      ],
+      "hex": "0101d3",
+      "overlap_ids": [
+        "OWENS-054"
+      ],
+      "alleged_place": "Wichita, KS",
+      "days": [
+        {
+          "date": "2024-03-21",
+          "is_alleged_date": false,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 860,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        },
+        {
+          "date": "2024-03-22",
+          "is_alleged_date": true,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 860,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        },
+        {
+          "date": "2024-03-23",
+          "is_alleged_date": false,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 860,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        }
+      ],
+      "alleged_date_verdict": "NEITHER_HAS_IT",
+      "any_track_in_window": false,
+      "recovered_first_pos": null,
+      "recovered_last_pos": null,
+      "recovered_points": null
+    },
+    {
+      "tail": "SU-BTT",
+      "date": "2024-03-29",
+      "ids": [
+        "OWENS-023"
+      ],
+      "places": [
+        "Wichita, KS"
+      ],
+      "hex": "0101d3",
+      "overlap_ids": [
+        "OWENS-023"
+      ],
+      "alleged_place": "Wichita, KS",
+      "days": [
+        {
+          "date": "2024-03-28",
+          "is_alleged_date": false,
+          "sources": {
+            "airplanes-live": {
+              "http": 200,
+              "bytes": 151397,
+              "summary": {
+                "registration": "SU-BTT",
+                "type": "FA7X",
+                "points": 924,
+                "first_seen_utc": "2024-03-28T08:00:07.950Z",
+                "first_pos": [
+                  30.675411,
+                  30.821814
+                ],
+                "last_seen_utc": "2024-03-28T12:00:41.460Z",
+                "last_pos": [
+                  48.967941,
+                  2.498333
+                ],
+                "wheels_up_utc": null,
+                "wheels_down_utc": null
+              }
+            },
+            "adsb-lol": {
+              "http": 200,
+              "bytes": 85471,
+              "summary": {
+                "registration": "SU-BTT",
+                "type": "FA7X",
+                "points": 412,
+                "first_seen_utc": "2024-03-28T08:00:07.980Z",
+                "first_pos": [
+                  30.675411,
+                  30.821814
+                ],
+                "last_seen_utc": "2024-03-28T11:34:05.740Z",
+                "last_pos": [
+                  47.632343,
+                  4.638554
+                ],
+                "wheels_up_utc": null,
+                "wheels_down_utc": null
+              }
+            }
+          },
+          "verdict": "BOTH_HAVE_IT"
+        },
+        {
+          "date": "2024-03-29",
+          "is_alleged_date": true,
+          "sources": {
+            "airplanes-live": {
+              "http": 200,
+              "bytes": 168874,
+              "summary": {
+                "registration": "SU-BTT",
+                "type": "FA7X",
+                "points": 877,
+                "first_seen_utc": "2024-03-29T10:08:40.330Z",
+                "first_pos": [
+                  49.234451,
+                  2.102825
+                ],
+                "last_seen_utc": "2024-03-29T19:19:09.410Z",
+                "last_pos": [
+                  37.663834,
+                  -97.416648
+                ],
+                "wheels_up_utc": null,
+                "wheels_down_utc": null
+              }
+            },
+            "adsb-lol": {
+              "http": 200,
+              "bytes": 157816,
+              "summary": {
+                "registration": "SU-BTT",
+                "type": "FA7X",
+                "points": 834,
+                "first_seen_utc": "2024-03-29T10:10:54.190Z",
+                "first_pos": [
+                  49.472599,
+                  2.125409
+                ],
+                "last_seen_utc": "2024-03-29T19:19:00.940Z",
+                "last_pos": [
+                  37.667587,
+                  -97.414895
+                ],
+                "wheels_up_utc": null,
+                "wheels_down_utc": null
+              }
+            }
+          },
+          "verdict": "BOTH_HAVE_IT"
+        },
+        {
+          "date": "2024-03-30",
+          "is_alleged_date": false,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 860,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        }
+      ],
+      "alleged_date_verdict": "BOTH_HAVE_IT",
+      "any_track_in_window": true,
+      "recovered_first_pos": [
+        49.234451,
+        2.102825
+      ],
+      "recovered_last_pos": [
+        37.663834,
+        -97.416648
+      ],
+      "recovered_points": 877
+    },
+    {
+      "tail": "SU-BTT",
+      "date": "2024-04-03",
+      "ids": [
+        "OWENS-024",
+        "SITE-003"
+      ],
+      "places": [
+        "Wichita / Lawrence, KS",
+        "Lawrence (event) / Wichita (aircraft), KS"
+      ],
+      "hex": "0101d3",
+      "overlap_ids": [
+        "OWENS-024",
+        "SITE-003"
+      ],
+      "alleged_place": "Wichita / Lawrence, KS",
+      "days": [
+        {
+          "date": "2024-04-02",
+          "is_alleged_date": false,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 860,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        },
+        {
+          "date": "2024-04-03",
+          "is_alleged_date": true,
+          "sources": {
+            "airplanes-live": {
+              "http": 200,
+              "bytes": 131631,
+              "summary": {
+                "registration": "SU-BTT",
+                "type": "FA7X",
+                "points": 737,
+                "first_seen_utc": "2024-04-03T13:43:30.310Z",
+                "first_pos": [
+                  37.660295,
+                  -97.418399
+                ],
+                "last_seen_utc": "2024-04-03T16:05:35.780Z",
+                "last_pos": [
+                  39.678223,
+                  -75.619912
+                ],
+                "wheels_up_utc": null,
+                "wheels_down_utc": null
+              }
+            },
+            "adsb-lol": {
+              "http": 200,
+              "bytes": 69924,
+              "summary": {
+                "registration": "SU-BTT",
+                "type": "FA7X",
+                "points": 389,
+                "first_seen_utc": "2024-04-03T14:15:16.860Z",
+                "first_pos": [
+                  38.838299,
+                  -92.804016
+                ],
+                "last_seen_utc": "2024-04-03T16:05:30.060Z",
+                "last_pos": [
+                  39.67759,
+                  -75.623657
+                ],
+                "wheels_up_utc": null,
+                "wheels_down_utc": null
+              }
+            }
+          },
+          "verdict": "BOTH_HAVE_IT"
+        },
+        {
+          "date": "2024-04-04",
+          "is_alleged_date": false,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 859,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        }
+      ],
+      "alleged_date_verdict": "BOTH_HAVE_IT",
+      "any_track_in_window": true,
+      "recovered_first_pos": [
+        37.660295,
+        -97.418399
+      ],
+      "recovered_last_pos": [
+        39.678223,
+        -75.619912
+      ],
+      "recovered_points": 737
+    },
+    {
+      "tail": "SU-BTT",
+      "date": "2024-04-15",
+      "ids": [
+        "OWENS-055"
+      ],
+      "places": [
+        "Omaha, NE"
+      ],
+      "hex": "0101d3",
+      "overlap_ids": [
+        "OWENS-055"
+      ],
+      "alleged_place": "Omaha, NE",
+      "days": [
+        {
+          "date": "2024-04-14",
+          "is_alleged_date": false,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 860,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        },
+        {
+          "date": "2024-04-15",
+          "is_alleged_date": true,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 860,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        },
+        {
+          "date": "2024-04-16",
+          "is_alleged_date": false,
+          "sources": {
+            "airplanes-live": {
+              "http": 200,
+              "bytes": 1069,
+              "summary": {
+                "registration": "SU-BTT",
+                "type": "FA7X",
+                "points": 8,
+                "first_seen_utc": "2024-04-16T16:42:39.120Z",
+                "first_pos": [
+                  30.158728,
+                  31.355419
+                ],
+                "last_seen_utc": "2024-04-16T19:22:02.210Z",
+                "last_pos": [
+                  30.034433,
+                  31.358715
+                ],
+                "wheels_up_utc": null,
+                "wheels_down_utc": null
+              }
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "RECOVERED_ONLY_ON_BACKUP"
+        }
+      ],
+      "alleged_date_verdict": "NEITHER_HAS_IT",
+      "any_track_in_window": true,
+      "recovered_first_pos": null,
+      "recovered_last_pos": null,
+      "recovered_points": null
+    },
+    {
+      "tail": "SU-BTT",
+      "date": "2024-04-23",
+      "ids": [
+        "OWENS-026",
+        "SITE-004"
+      ],
+      "places": [
+        "Provo, UT",
+        "Salt Lake City (event) / Provo (aircraft), UT"
+      ],
+      "hex": "0101d3",
+      "overlap_ids": [
+        "OWENS-026",
+        "SITE-004"
+      ],
+      "alleged_place": "Provo, UT",
+      "days": [
+        {
+          "date": "2024-04-22",
+          "is_alleged_date": false,
+          "sources": {
+            "airplanes-live": {
+              "http": 200,
+              "bytes": 164617,
+              "summary": {
+                "registration": "SU-BTT",
+                "type": "FA7X",
+                "points": 955,
+                "first_seen_utc": "2024-04-22T05:57:17.410Z",
+                "first_pos": [
+                  30.10738,
+                  31.35932
+                ],
+                "last_seen_utc": "2024-04-22T10:13:16.510Z",
+                "last_pos": [
+                  48.956615,
+                  2.39343
+                ],
+                "wheels_up_utc": null,
+                "wheels_down_utc": null
+              }
+            },
+            "adsb-lol": {
+              "http": 200,
+              "bytes": 105255,
+              "summary": {
+                "registration": "SU-BTT",
+                "type": "FA7X",
+                "points": 503,
+                "first_seen_utc": "2024-04-22T05:57:18.910Z",
+                "first_pos": [
+                  30.108684,
+                  31.359265
+                ],
+                "last_seen_utc": "2024-04-22T10:03:54.940Z",
+                "last_pos": [
+                  48.807037,
+                  2.382273
+                ],
+                "wheels_up_utc": null,
+                "wheels_down_utc": null
+              }
+            }
+          },
+          "verdict": "BOTH_HAVE_IT"
+        },
+        {
+          "date": "2024-04-23",
+          "is_alleged_date": true,
+          "sources": {
+            "airplanes-live": {
+              "http": 200,
+              "bytes": 165788,
+              "summary": {
+                "registration": "SU-BTT",
+                "type": "FA7X",
+                "points": 834,
+                "first_seen_utc": "2024-04-23T06:53:23.000Z",
+                "first_pos": [
+                  48.967392,
+                  2.491432
+                ],
+                "last_seen_utc": "2024-04-23T18:18:45.140Z",
+                "last_pos": [
+                  40.2307,
+                  -111.728757
+                ],
+                "wheels_up_utc": "2024-04-23T18:12:53.810Z",
+                "wheels_down_utc": "2024-04-23T18:12:54.470Z"
+              }
+            },
+            "adsb-lol": {
+              "http": 200,
+              "bytes": 130144,
+              "summary": {
+                "registration": "SU-BTT",
+                "type": "FA7X",
+                "points": 659,
+                "first_seen_utc": "2024-04-23T06:53:23.000Z",
+                "first_pos": [
+                  48.967392,
+                  2.491432
+                ],
+                "last_seen_utc": "2024-04-23T18:18:45.150Z",
+                "last_pos": [
+                  40.2307,
+                  -111.728757
+                ],
+                "wheels_up_utc": "2024-04-23T18:12:53.820Z",
+                "wheels_down_utc": "2024-04-23T18:12:54.470Z"
+              }
+            }
+          },
+          "verdict": "BOTH_HAVE_IT"
+        },
+        {
+          "date": "2024-04-24",
+          "is_alleged_date": false,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 860,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        }
+      ],
+      "alleged_date_verdict": "BOTH_HAVE_IT",
+      "any_track_in_window": true,
+      "recovered_first_pos": [
+        48.967392,
+        2.491432
+      ],
+      "recovered_last_pos": [
+        40.2307,
+        -111.728757
+      ],
+      "recovered_points": 834
+    },
+    {
+      "tail": "SU-BTT",
+      "date": "2024-04-28",
+      "ids": [
+        "OWENS-027"
+      ],
+      "places": [
+        "Wilmington, DE"
+      ],
+      "hex": "0101d3",
+      "overlap_ids": [
+        "OWENS-027"
+      ],
+      "alleged_place": "Wilmington, DE",
+      "days": [
+        {
+          "date": "2024-04-27",
+          "is_alleged_date": false,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 859,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        },
+        {
+          "date": "2024-04-28",
+          "is_alleged_date": true,
+          "sources": {
+            "airplanes-live": {
+              "http": 200,
+              "bytes": 193862,
+              "summary": {
+                "registration": "SU-BTT",
+                "type": "FA7X",
+                "points": 1039,
+                "first_seen_utc": "2024-04-28T13:51:19.770Z",
+                "first_pos": [
+                  40.230629,
+                  -111.72863
+                ],
+                "last_seen_utc": "2024-04-28T17:41:20.170Z",
+                "last_pos": [
+                  39.664719,
+                  -75.604447
+                ],
+                "wheels_up_utc": "2024-04-28T13:54:54.880Z",
+                "wheels_down_utc": "2024-04-28T14:15:54.850Z"
+              }
+            },
+            "adsb-lol": {
+              "http": 200,
+              "bytes": 183503,
+              "summary": {
+                "registration": "SU-BTT",
+                "type": "FA7X",
+                "points": 976,
+                "first_seen_utc": "2024-04-28T13:52:42.280Z",
+                "first_pos": [
+                  40.230747,
+                  -111.731285
+                ],
+                "last_seen_utc": "2024-04-28T17:41:20.170Z",
+                "last_pos": [
+                  39.664719,
+                  -75.604447
+                ],
+                "wheels_up_utc": "2024-04-28T13:54:54.880Z",
+                "wheels_down_utc": null
+              }
+            }
+          },
+          "verdict": "BOTH_HAVE_IT"
+        },
+        {
+          "date": "2024-04-29",
+          "is_alleged_date": false,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 860,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        }
+      ],
+      "alleged_date_verdict": "BOTH_HAVE_IT",
+      "any_track_in_window": true,
+      "recovered_first_pos": [
+        40.230629,
+        -111.72863
+      ],
+      "recovered_last_pos": [
+        39.664719,
+        -75.604447
+      ],
+      "recovered_points": 1039
+    },
+    {
+      "tail": "SU-BTT",
+      "date": "2024-06-18",
+      "ids": [
+        "OWENS-058"
+      ],
+      "places": [
+        "Lincoln, NE"
+      ],
+      "hex": "0101d3",
+      "overlap_ids": [
+        "OWENS-058"
+      ],
+      "alleged_place": "Lincoln, NE",
+      "days": [
+        {
+          "date": "2024-06-17",
+          "is_alleged_date": false,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 860,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        },
+        {
+          "date": "2024-06-18",
+          "is_alleged_date": true,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 860,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        },
+        {
+          "date": "2024-06-19",
+          "is_alleged_date": false,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 860,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        }
+      ],
+      "alleged_date_verdict": "NEITHER_HAS_IT",
+      "any_track_in_window": false,
+      "recovered_first_pos": null,
+      "recovered_last_pos": null,
+      "recovered_points": null
+    },
+    {
+      "tail": "SU-BTT",
+      "date": "2024-07-05",
+      "ids": [
+        "OWENS-059"
+      ],
+      "places": [
+        "Wichita, KS"
+      ],
+      "hex": "0101d3",
+      "overlap_ids": [
+        "OWENS-059"
+      ],
+      "alleged_place": "Wichita, KS",
+      "days": [
+        {
+          "date": "2024-07-04",
+          "is_alleged_date": false,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 860,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        },
+        {
+          "date": "2024-07-05",
+          "is_alleged_date": true,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 860,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        },
+        {
+          "date": "2024-07-06",
+          "is_alleged_date": false,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 860,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        }
+      ],
+      "alleged_date_verdict": "NEITHER_HAS_IT",
+      "any_track_in_window": false,
+      "recovered_first_pos": null,
+      "recovered_last_pos": null,
+      "recovered_points": null
+    },
+    {
+      "tail": "SU-BTT",
+      "date": "2024-07-20",
+      "ids": [
+        "OWENS-028"
+      ],
+      "places": [
+        "Omaha / Lincoln, NE"
+      ],
+      "hex": "0101d3",
+      "overlap_ids": [
+        "OWENS-028"
+      ],
+      "alleged_place": "Omaha / Lincoln, NE",
+      "days": [
+        {
+          "date": "2024-07-19",
+          "is_alleged_date": false,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 859,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        },
+        {
+          "date": "2024-07-20",
+          "is_alleged_date": true,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 860,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        },
+        {
+          "date": "2024-07-21",
+          "is_alleged_date": false,
+          "sources": {
+            "airplanes-live": {
+              "http": 200,
+              "bytes": 32580,
+              "summary": {
+                "registration": "SU-BTT",
+                "type": "FA7X",
+                "points": 198,
+                "first_seen_utc": "2024-07-21T06:33:36.860Z",
+                "first_pos": [
+                  30.106589,
+                  31.359814
+                ],
+                "last_seen_utc": "2024-07-21T08:53:46.140Z",
+                "last_pos": [
+                  30.065689,
+                  31.222121
+                ],
+                "wheels_up_utc": null,
+                "wheels_down_utc": null
+              }
+            },
+            "adsb-lol": {
+              "http": 200,
+              "bytes": 15734,
+              "summary": {
+                "registration": "SU-BTT",
+                "type": "FA7X",
+                "points": 95,
+                "first_seen_utc": "2024-07-21T06:44:37.190Z",
+                "first_pos": [
+                  29.374146,
+                  31.544125
+                ],
+                "last_seen_utc": "2024-07-21T08:47:27.100Z",
+                "last_pos": [
+                  30.555542,
+                  31.006111
+                ],
+                "wheels_up_utc": null,
+                "wheels_down_utc": null
+              }
+            }
+          },
+          "verdict": "BOTH_HAVE_IT"
+        }
+      ],
+      "alleged_date_verdict": "NEITHER_HAS_IT",
+      "any_track_in_window": true,
+      "recovered_first_pos": null,
+      "recovered_last_pos": null,
+      "recovered_points": null
+    },
+    {
+      "tail": "SU-BTT",
+      "date": "2024-07-25",
+      "ids": [
+        "OWENS-060"
+      ],
+      "places": [
+        "Omaha / Lincoln, NE"
+      ],
+      "hex": "0101d3",
+      "overlap_ids": [
+        "OWENS-060"
+      ],
+      "alleged_place": "Omaha / Lincoln, NE",
+      "days": [
+        {
+          "date": "2024-07-24",
+          "is_alleged_date": false,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 860,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        },
+        {
+          "date": "2024-07-25",
+          "is_alleged_date": true,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 859,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        },
+        {
+          "date": "2024-07-26",
+          "is_alleged_date": false,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 860,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        }
+      ],
+      "alleged_date_verdict": "NEITHER_HAS_IT",
+      "any_track_in_window": false,
+      "recovered_first_pos": null,
+      "recovered_last_pos": null,
+      "recovered_points": null
+    },
+    {
+      "tail": "SU-BTT",
+      "date": "2024-08-17",
+      "ids": [
+        "OWENS-029"
+      ],
+      "places": [
+        "Omaha / Lincoln, NE"
+      ],
+      "hex": "0101d3",
+      "overlap_ids": [
+        "OWENS-029"
+      ],
+      "alleged_place": "Omaha / Lincoln, NE",
+      "days": [
+        {
+          "date": "2024-08-16",
+          "is_alleged_date": false,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 860,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        },
+        {
+          "date": "2024-08-17",
+          "is_alleged_date": true,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 860,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        },
+        {
+          "date": "2024-08-18",
+          "is_alleged_date": false,
+          "sources": {
+            "airplanes-live": {
+              "http": 200,
+              "bytes": 22831,
+              "summary": {
+                "registration": "SU-BTT",
+                "type": "FA7X",
+                "points": 134,
+                "first_seen_utc": "2024-08-18T09:36:54.140Z",
+                "first_pos": [
+                  30.140945,
+                  31.360034
+                ],
+                "last_seen_utc": "2024-08-18T11:23:50.460Z",
+                "last_pos": [
+                  29.720444,
+                  31.178829
+                ],
+                "wheels_up_utc": null,
+                "wheels_down_utc": null
+              }
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "RECOVERED_ONLY_ON_BACKUP"
+        }
+      ],
+      "alleged_date_verdict": "NEITHER_HAS_IT",
+      "any_track_in_window": true,
+      "recovered_first_pos": null,
+      "recovered_last_pos": null,
+      "recovered_points": null
+    },
+    {
+      "tail": "SU-BTT",
+      "date": "2025-01-12",
+      "ids": [
+        "OWENS-031",
+        "OWENS-061"
+      ],
+      "places": [
+        "Wichita, KS",
+        "Wichita, KS"
+      ],
+      "hex": "0101d3",
+      "overlap_ids": [
+        "OWENS-031",
+        "OWENS-061"
+      ],
+      "alleged_place": "Wichita, KS",
+      "days": [
+        {
+          "date": "2025-01-11",
+          "is_alleged_date": false,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 860,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        },
+        {
+          "date": "2025-01-12",
+          "is_alleged_date": true,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 860,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        },
+        {
+          "date": "2025-01-13",
+          "is_alleged_date": false,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 860,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        }
+      ],
+      "alleged_date_verdict": "NEITHER_HAS_IT",
+      "any_track_in_window": false,
+      "recovered_first_pos": null,
+      "recovered_last_pos": null,
+      "recovered_points": null
+    },
+    {
+      "tail": "SU-BTT",
+      "date": "2025-01-17",
+      "ids": [
+        "OWENS-032"
+      ],
+      "places": [
+        "Wichita, KS"
+      ],
+      "hex": "0101d3",
+      "overlap_ids": [
+        "OWENS-032"
+      ],
+      "alleged_place": "Wichita, KS",
+      "days": [
+        {
+          "date": "2025-01-16",
+          "is_alleged_date": false,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 860,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        },
+        {
+          "date": "2025-01-17",
+          "is_alleged_date": true,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 860,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        },
+        {
+          "date": "2025-01-18",
+          "is_alleged_date": false,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 860,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        }
+      ],
+      "alleged_date_verdict": "NEITHER_HAS_IT",
+      "any_track_in_window": false,
+      "recovered_first_pos": null,
+      "recovered_last_pos": null,
+      "recovered_points": null
+    },
+    {
+      "tail": "SU-BTT",
+      "date": "2025-02-08",
+      "ids": [
+        "OWENS-062"
+      ],
+      "places": [
+        "Omaha, NE"
+      ],
+      "hex": "0101d3",
+      "overlap_ids": [
+        "OWENS-062"
+      ],
+      "alleged_place": "Omaha, NE",
+      "days": [
+        {
+          "date": "2025-02-07",
+          "is_alleged_date": false,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 859,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        },
+        {
+          "date": "2025-02-08",
+          "is_alleged_date": true,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 860,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        },
+        {
+          "date": "2025-02-09",
+          "is_alleged_date": false,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 860,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        }
+      ],
+      "alleged_date_verdict": "NEITHER_HAS_IT",
+      "any_track_in_window": false,
+      "recovered_first_pos": null,
+      "recovered_last_pos": null,
+      "recovered_points": null
+    },
+    {
+      "tail": "SU-BTT",
+      "date": "2025-03-15",
+      "ids": [
+        "OWENS-033",
+        "OWENS-063"
+      ],
+      "places": [
+        "Wichita, KS",
+        "Wichita, KS"
+      ],
+      "hex": "0101d3",
+      "overlap_ids": [
+        "OWENS-033",
+        "OWENS-063"
+      ],
+      "alleged_place": "Wichita, KS",
+      "days": [
+        {
+          "date": "2025-03-14",
+          "is_alleged_date": false,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 859,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        },
+        {
+          "date": "2025-03-15",
+          "is_alleged_date": true,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 859,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        },
+        {
+          "date": "2025-03-16",
+          "is_alleged_date": false,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 860,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        }
+      ],
+      "alleged_date_verdict": "NEITHER_HAS_IT",
+      "any_track_in_window": false,
+      "recovered_first_pos": null,
+      "recovered_last_pos": null,
+      "recovered_points": null
+    },
+    {
+      "tail": "SU-BTT",
+      "date": "2025-03-22",
+      "ids": [
+        "OWENS-034"
+      ],
+      "places": [
+        "Wichita, KS"
+      ],
+      "hex": "0101d3",
+      "overlap_ids": [
+        "OWENS-034"
+      ],
+      "alleged_place": "Wichita, KS",
+      "days": [
+        {
+          "date": "2025-03-21",
+          "is_alleged_date": false,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 859,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        },
+        {
+          "date": "2025-03-22",
+          "is_alleged_date": true,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 860,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        },
+        {
+          "date": "2025-03-23",
+          "is_alleged_date": false,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 860,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        }
+      ],
+      "alleged_date_verdict": "NEITHER_HAS_IT",
+      "any_track_in_window": false,
+      "recovered_first_pos": null,
+      "recovered_last_pos": null,
+      "recovered_points": null
+    },
+    {
+      "tail": "SU-BTT",
+      "date": "2025-06-18",
+      "ids": [
+        "OWENS-036"
+      ],
+      "places": [
+        "Omaha / Lincoln, NE"
+      ],
+      "hex": "0101d3",
+      "overlap_ids": [
+        "OWENS-036"
+      ],
+      "alleged_place": "Omaha / Lincoln, NE",
+      "days": [
+        {
+          "date": "2025-06-17",
+          "is_alleged_date": false,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 860,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        },
+        {
+          "date": "2025-06-18",
+          "is_alleged_date": true,
+          "sources": {
+            "airplanes-live": {
+              "http": 200,
+              "bytes": 1983,
+              "summary": {
+                "registration": "SU-BTT",
+                "type": "FA7X",
+                "points": 9,
+                "first_seen_utc": "2025-06-18T06:23:26.520Z",
+                "first_pos": [
+                  31.249649,
+                  29.615855
+                ],
+                "last_seen_utc": "2025-06-18T06:28:54.900Z",
+                "last_pos": [
+                  31.494278,
+                  28.900775
+                ],
+                "wheels_up_utc": null,
+                "wheels_down_utc": null
+              }
+            },
+            "adsb-lol": {
+              "http": 200,
+              "bytes": 1544,
+              "summary": {
+                "registration": "SU-BTT",
+                "type": "FA7X",
+                "points": 7,
+                "first_seen_utc": "2025-06-18T06:23:26.520Z",
+                "first_pos": [
+                  31.249649,
+                  29.615855
+                ],
+                "last_seen_utc": "2025-06-18T06:28:54.900Z",
+                "last_pos": [
+                  31.494278,
+                  28.900775
+                ],
+                "wheels_up_utc": null,
+                "wheels_down_utc": null
+              }
+            }
+          },
+          "verdict": "BOTH_HAVE_IT"
+        },
+        {
+          "date": "2025-06-19",
+          "is_alleged_date": false,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 860,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        }
+      ],
+      "alleged_date_verdict": "BOTH_HAVE_IT",
+      "any_track_in_window": true,
+      "recovered_first_pos": [
+        31.249649,
+        29.615855
+      ],
+      "recovered_last_pos": [
+        31.494278,
+        28.900775
+      ],
+      "recovered_points": 9
+    },
+    {
+      "tail": "SU-BTT",
+      "date": "2025-07-20",
+      "ids": [
+        "OWENS-038",
+        "OWENS-067"
+      ],
+      "places": [
+        "Omaha / Lincoln, NE",
+        "Lincoln, NE"
+      ],
+      "hex": "0101d3",
+      "overlap_ids": [
+        "OWENS-038",
+        "OWENS-067"
+      ],
+      "alleged_place": "Omaha / Lincoln, NE",
+      "days": [
+        {
+          "date": "2025-07-19",
+          "is_alleged_date": false,
+          "sources": {
+            "airplanes-live": {
+              "http": 200,
+              "bytes": 286019,
+              "summary": {
+                "registration": "SU-BTT",
+                "type": "FA7X",
+                "points": 1367,
+                "first_seen_utc": "2025-07-19T06:11:53.560Z",
+                "first_pos": [
+                  30.4785,
+                  30.955811
+                ],
+                "last_seen_utc": "2025-07-19T10:13:18.590Z",
+                "last_pos": [
+                  48.968445,
+                  2.50939
+                ],
+                "wheels_up_utc": null,
+                "wheels_down_utc": null
+              }
+            },
+            "adsb-lol": {
+              "http": 200,
+              "bytes": 177077,
+              "summary": {
+                "registration": "SU-BTT",
+                "type": "FA7X",
+                "points": 845,
+                "first_seen_utc": "2025-07-19T06:11:53.580Z",
+                "first_pos": [
+                  30.4785,
+                  30.955811
+                ],
+                "last_seen_utc": "2025-07-19T10:14:49.560Z",
+                "last_pos": [
+                  48.964245,
+                  2.430901
+                ],
+                "wheels_up_utc": null,
+                "wheels_down_utc": "2025-07-19T10:14:39.180Z"
+              }
+            }
+          },
+          "verdict": "BOTH_HAVE_IT"
+        },
+        {
+          "date": "2025-07-20",
+          "is_alleged_date": true,
+          "sources": {
+            "airplanes-live": {
+              "http": 200,
+              "bytes": 448150,
+              "summary": {
+                "registration": "SU-BTT",
+                "type": "FA7X",
+                "points": 2404,
+                "first_seen_utc": "2025-07-20T07:28:09.610Z",
+                "first_pos": [
+                  48.959175,
+                  2.40456
+                ],
+                "last_seen_utc": "2025-07-20T22:18:53.450Z",
+                "last_pos": [
+                  40.909607,
+                  -96.76123
+                ],
+                "wheels_up_utc": null,
+                "wheels_down_utc": null
+              }
+            },
+            "adsb-lol": {
+              "http": 200,
+              "bytes": 298112,
+              "summary": {
+                "registration": "SU-BTT",
+                "type": "FA7X",
+                "points": 1561,
+                "first_seen_utc": "2025-07-20T07:24:43.090Z",
+                "first_pos": [
+                  48.968322,
+                  2.445
+                ],
+                "last_seen_utc": "2025-07-20T22:18:53.440Z",
+                "last_pos": [
+                  40.909607,
+                  -96.76123
+                ],
+                "wheels_up_utc": "2025-07-20T07:27:49.240Z",
+                "wheels_down_utc": null
+              }
+            }
+          },
+          "verdict": "BOTH_HAVE_IT"
+        },
+        {
+          "date": "2025-07-21",
+          "is_alleged_date": false,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 860,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        }
+      ],
+      "alleged_date_verdict": "BOTH_HAVE_IT",
+      "any_track_in_window": true,
+      "recovered_first_pos": [
+        48.959175,
+        2.40456
+      ],
+      "recovered_last_pos": [
+        40.909607,
+        -96.76123
+      ],
+      "recovered_points": 2404
+    },
+    {
+      "tail": "SU-BTT",
+      "date": "2025-08-17",
+      "ids": [
+        "OWENS-039"
+      ],
+      "places": [
+        "Omaha / Lincoln, NE"
+      ],
+      "hex": "0101d3",
+      "overlap_ids": [
+        "OWENS-039"
+      ],
+      "alleged_place": "Omaha / Lincoln, NE",
+      "days": [
+        {
+          "date": "2025-08-16",
+          "is_alleged_date": false,
+          "sources": {
+            "airplanes-live": {
+              "http": 200,
+              "bytes": 307321,
+              "summary": {
+                "registration": "SU-BTT",
+                "type": "FA7X",
+                "points": 1511,
+                "first_seen_utc": "2025-08-16T06:12:56.920Z",
+                "first_pos": [
+                  30.497628,
+                  31.054175
+                ],
+                "last_seen_utc": "2025-08-16T10:01:10.240Z",
+                "last_pos": [
+                  48.961316,
+                  2.410776
+                ],
+                "wheels_up_utc": null,
+                "wheels_down_utc": null
+              }
+            },
+            "adsb-lol": {
+              "http": 200,
+              "bytes": 191895,
+              "summary": {
+                "registration": "SU-BTT",
+                "type": "FA7X",
+                "points": 929,
+                "first_seen_utc": "2025-08-16T06:12:56.910Z",
+                "first_pos": [
+                  30.497628,
+                  31.054175
+                ],
+                "last_seen_utc": "2025-08-16T10:06:00.030Z",
+                "last_pos": [
+                  48.968616,
+                  2.445479
+                ],
+                "wheels_up_utc": null,
+                "wheels_down_utc": "2025-08-16T10:02:02.400Z"
+              }
+            }
+          },
+          "verdict": "BOTH_HAVE_IT"
+        },
+        {
+          "date": "2025-08-17",
+          "is_alleged_date": true,
+          "sources": {
+            "airplanes-live": {
+              "http": 200,
+              "bytes": 375576,
+              "summary": {
+                "registration": "SU-BTT",
+                "type": "FA7X",
+                "points": 1988,
+                "first_seen_utc": "2025-08-17T07:02:04.190Z",
+                "first_pos": [
+                  48.965927,
+                  2.465515
+                ],
+                "last_seen_utc": "2025-08-17T16:58:32.750Z",
+                "last_pos": [
+                  40.909222,
+                  -96.761336
+                ],
+                "wheels_up_utc": null,
+                "wheels_down_utc": null
+              }
+            },
+            "adsb-lol": {
+              "http": 200,
+              "bytes": 273836,
+              "summary": {
+                "registration": "SU-BTT",
+                "type": "FA7X",
+                "points": 1425,
+                "first_seen_utc": "2025-08-17T07:01:47.430Z",
+                "first_pos": [
+                  48.965273,
+                  2.450529
+                ],
+                "last_seen_utc": "2025-08-17T16:58:32.800Z",
+                "last_pos": [
+                  40.909222,
+                  -96.761336
+                ],
+                "wheels_up_utc": null,
+                "wheels_down_utc": null
+              }
+            }
+          },
+          "verdict": "BOTH_HAVE_IT"
+        },
+        {
+          "date": "2025-08-18",
+          "is_alleged_date": false,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 860,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        }
+      ],
+      "alleged_date_verdict": "BOTH_HAVE_IT",
+      "any_track_in_window": true,
+      "recovered_first_pos": [
+        48.965927,
+        2.465515
+      ],
+      "recovered_last_pos": [
+        40.909222,
+        -96.761336
+      ],
+      "recovered_points": 1988
+    },
+    {
+      "tail": "SU-BTT",
+      "date": "2025-09-04",
+      "ids": [
+        "OWENS-040"
+      ],
+      "places": [
+        "Provo, UT"
+      ],
+      "hex": "0101d3",
+      "overlap_ids": [
+        "OWENS-040"
+      ],
+      "alleged_place": "Provo, UT",
+      "days": [
+        {
+          "date": "2025-09-03",
+          "is_alleged_date": false,
+          "sources": {
+            "airplanes-live": {
+              "http": 200,
+              "bytes": 265005,
+              "summary": {
+                "registration": "SU-BTT",
+                "type": "FA7X",
+                "points": 1258,
+                "first_seen_utc": "2025-09-03T06:05:40.380Z",
+                "first_pos": [
+                  30.563173,
+                  30.915033
+                ],
+                "last_seen_utc": "2025-09-03T09:59:09.030Z",
+                "last_pos": [
+                  48.968857,
+                  2.516151
+                ],
+                "wheels_up_utc": null,
+                "wheels_down_utc": null
+              }
+            },
+            "adsb-lol": {
+              "http": 200,
+              "bytes": 167443,
+              "summary": {
+                "registration": "SU-BTT",
+                "type": "FA7X",
+                "points": 804,
+                "first_seen_utc": "2025-09-03T06:05:40.370Z",
+                "first_pos": [
+                  30.563173,
+                  30.915033
+                ],
+                "last_seen_utc": "2025-09-03T10:00:47.830Z",
+                "last_pos": [
+                  48.964233,
+                  2.43113
+                ],
+                "wheels_up_utc": null,
+                "wheels_down_utc": "2025-09-03T10:00:47.830Z"
+              }
+            }
+          },
+          "verdict": "BOTH_HAVE_IT"
+        },
+        {
+          "date": "2025-09-04",
+          "is_alleged_date": true,
+          "sources": {
+            "airplanes-live": {
+              "http": 200,
+              "bytes": 365406,
+              "summary": {
+                "registration": "SU-BTT",
+                "type": "FA7X",
+                "points": 1971,
+                "first_seen_utc": "2025-09-04T07:12:16.890Z",
+                "first_pos": [
+                  48.957092,
+                  2.39678
+                ],
+                "last_seen_utc": "2025-09-04T18:54:07.470Z",
+                "last_pos": [
+                  40.230246,
+                  -111.728117
+                ],
+                "wheels_up_utc": "2025-09-04T17:07:28.650Z",
+                "wheels_down_utc": "2025-09-04T18:45:52.400Z"
+              }
+            },
+            "adsb-lol": {
+              "http": 200,
+              "bytes": 225295,
+              "summary": {
+                "registration": "SU-BTT",
+                "type": "FA7X",
+                "points": 1156,
+                "first_seen_utc": "2025-09-04T07:06:21.740Z",
+                "first_pos": [
+                  48.968502,
+                  2.445286
+                ],
+                "last_seen_utc": "2025-09-04T18:54:07.470Z",
+                "last_pos": [
+                  40.230246,
+                  -111.728117
+                ],
+                "wheels_up_utc": "2025-09-04T07:11:41.060Z",
+                "wheels_down_utc": "2025-09-04T18:45:52.400Z"
+              }
+            }
+          },
+          "verdict": "BOTH_HAVE_IT"
+        },
+        {
+          "date": "2025-09-05",
+          "is_alleged_date": false,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 859,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        }
+      ],
+      "alleged_date_verdict": "BOTH_HAVE_IT",
+      "any_track_in_window": true,
+      "recovered_first_pos": [
+        48.957092,
+        2.39678
+      ],
+      "recovered_last_pos": [
+        40.230246,
+        -111.728117
+      ],
+      "recovered_points": 1971
+    },
+    {
+      "tail": "SU-BTT",
+      "date": "2025-09-10",
+      "ids": [
+        "OWENS-041",
+        "SITE-005",
+        "SITE-006"
+      ],
+      "places": [
+        "Provo then Wilmington, UT/DE",
+        "Wilmington, DE",
+        "Orem (event) / Provo (aircraft), UT"
+      ],
+      "hex": "0101d3",
+      "overlap_ids": [
+        "OWENS-041",
+        "SITE-005",
+        "SITE-006"
+      ],
+      "alleged_place": "Provo then Wilmington, UT/DE",
+      "days": [
+        {
+          "date": "2025-09-09",
+          "is_alleged_date": false,
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 859,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT"
+        },
+        {
+          "date": "2025-09-10",
+          "is_alleged_date": true,
+          "sources": {
+            "airplanes-live": {
+              "http": 200,
+              "bytes": 315232,
+              "summary": {
+                "registration": "SU-BTT",
+                "type": "FA7X",
+                "points": 1789,
+                "first_seen_utc": "2025-09-10T13:07:53.650Z",
+                "first_pos": [
+                  40.230328,
+                  -111.728273
+                ],
+                "last_seen_utc": "2025-09-10T16:50:37.520Z",
+                "last_pos": [
+                  39.663065,
+                  -75.604553
+                ],
+                "wheels_up_utc": "2025-09-10T13:14:03.820Z",
+                "wheels_down_utc": null
+              }
+            },
+            "adsb-lol": {
+              "http": 200,
+              "bytes": 218110,
+              "summary": {
+                "registration": "SU-BTT",
+                "type": "FA7X",
+                "points": 1229,
+                "first_seen_utc": "2025-09-10T13:07:53.660Z",
+                "first_pos": [
+                  40.230328,
+                  -111.728273
+                ],
+                "last_seen_utc": "2025-09-10T16:50:37.530Z",
+                "last_pos": [
+                  39.663065,
+                  -75.604553
+                ],
+                "wheels_up_utc": "2025-09-10T13:14:03.820Z",
+                "wheels_down_utc": null
+              }
+            }
+          },
+          "verdict": "BOTH_HAVE_IT"
+        },
+        {
+          "date": "2025-09-11",
+          "is_alleged_date": false,
+          "sources": {
+            "airplanes-live": {
+              "http": 200,
+              "bytes": 488726,
+              "summary": {
+                "registration": "SU-BTT",
+                "type": "FA7X",
+                "points": 2518,
+                "first_seen_utc": "2025-09-11T11:55:35.480Z",
+                "first_pos": [
+                  39.670455,
+                  -75.603699
+                ],
+                "last_seen_utc": "2025-09-11T21:35:42.550Z",
+                "last_pos": [
+                  30.052002,
+                  31.359073
+                ],
+                "wheels_up_utc": "2025-09-11T11:56:16.910Z",
+                "wheels_down_utc": null
+              }
+            },
+            "adsb-lol": {
+              "http": 200,
+              "bytes": 270070,
+              "summary": {
+                "registration": "SU-BTT",
+                "type": "FA7X",
+                "points": 1399,
+                "first_seen_utc": "2025-09-11T11:55:35.470Z",
+                "first_pos": [
+                  39.670455,
+                  -75.603699
+                ],
+                "last_seen_utc": "2025-09-11T21:35:42.540Z",
+                "last_pos": [
+                  30.052002,
+                  31.359073
+                ],
+                "wheels_up_utc": "2025-09-11T11:56:10.260Z",
+                "wheels_down_utc": null
+              }
+            }
+          },
+          "verdict": "BOTH_HAVE_IT"
+        }
+      ],
+      "alleged_date_verdict": "BOTH_HAVE_IT",
+      "any_track_in_window": true,
+      "recovered_first_pos": [
+        40.230328,
+        -111.728273
+      ],
+      "recovered_last_pos": [
+        39.663065,
+        -75.604553
+      ],
+      "recovered_points": 1789
+    }
+  ]
+}

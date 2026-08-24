@@ -1,5 +1,6 @@
 {
-  "retrieved_utc": "2026-08-24T16:29:36.628Z",
+  "retrieved_utc": "2026-08-24T17:18:17.391Z",
+  "vendor_credentials_redacted": 0,
   "source": "airplanes-live",
   "source_role": "BACKUP ARCHIVE — independent volunteer network",
   "url": "https://globe.airplanes.live/globe_history/2025/09/12/traces/3e/trace_full_01003e.json",
@@ -11,21 +12,24 @@
   "summary": {
     "registration": "SU-BND",
     "type": "GLF4",
-    "icao": "01003e",
     "points": 708,
     "first_seen_utc": "2025-09-12T13:37:35.890Z",
     "first_pos": [
       40.229691,
       -111.727921
     ],
-    "first_on_ground": true,
     "last_seen_utc": "2025-09-12T22:17:03.880Z",
     "last_pos": [
       40.229805,
       -111.727676
     ],
-    "last_on_ground": true,
     "wheels_up_utc": null,
     "wheels_down_utc": null
-  }
+  },
+  "pulled_for": "alleged overlap",
+  "overlap_ids": [
+    "OWENS-042"
+  ],
+  "alleged_overlap_date": "2025-09-13",
+  "alleged_place": "Provo, UT"
 }

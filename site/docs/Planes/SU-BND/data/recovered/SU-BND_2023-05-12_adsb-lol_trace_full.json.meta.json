@@ -1,0 +1,35 @@
+{
+  "retrieved_utc": "2026-08-24T17:18:17.391Z",
+  "vendor_credentials_redacted": 0,
+  "source": "adsb-lol",
+  "source_role": "the archive this investigation already used",
+  "url": "https://adsb.lol/globe_history/2023/05/12/traces/3e/trace_full_01003e.json",
+  "http_status": 200,
+  "bytes": 92913,
+  "tail": "SU-BND",
+  "hex": "01003e",
+  "utc_date": "2023-05-12",
+  "summary": {
+    "registration": "SU-BND",
+    "type": "GLF4",
+    "points": 461,
+    "first_seen_utc": "2023-05-12T07:25:43.390Z",
+    "first_pos": [
+      48.932327,
+      2.312974
+    ],
+    "last_seen_utc": "2023-05-12T09:51:57.990Z",
+    "last_pos": [
+      37.716064,
+      21.545358
+    ],
+    "wheels_up_utc": null,
+    "wheels_down_utc": null
+  },
+  "pulled_for": "alleged overlap",
+  "overlap_ids": [
+    "OWENS-050"
+  ],
+  "alleged_overlap_date": "2023-05-12",
+  "alleged_place": "St. Louis, MO"
+}

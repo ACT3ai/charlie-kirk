@@ -1,0 +1,31 @@
+{
+  "retrieved_utc": "2026-08-24T16:29:36.628Z",
+  "source": "adsb-lol",
+  "source_role": "the archive this investigation already used",
+  "url": "https://adsb.lol/globe_history/2025/09/10/traces/e5/trace_full_a1bbe5.json",
+  "http_status": 200,
+  "bytes": 407067,
+  "tail": "N2100L",
+  "hex": "a1bbe5",
+  "utc_date": "2025-09-10",
+  "summary": {
+    "registration": "N2100L",
+    "type": "GLEX",
+    "icao": "a1bbe5",
+    "points": 2319,
+    "first_seen_utc": "2025-09-10T14:12:05.790Z",
+    "first_pos": [
+      31.987625,
+      -104.83216
+    ],
+    "first_on_ground": false,
+    "last_seen_utc": "2025-09-10T23:59:59.180Z",
+    "last_pos": [
+      37.757542,
+      -119.620812
+    ],
+    "last_on_ground": false,
+    "wheels_up_utc": null,
+    "wheels_down_utc": null
+  }
+}

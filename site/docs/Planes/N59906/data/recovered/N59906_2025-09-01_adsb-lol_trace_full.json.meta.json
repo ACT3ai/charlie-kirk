@@ -1,0 +1,31 @@
+{
+  "retrieved_utc": "2026-08-24T16:29:36.628Z",
+  "source": "adsb-lol",
+  "source_role": "the archive this investigation already used",
+  "url": "https://adsb.lol/globe_history/2025/09/01/traces/4d/trace_full_a7c14d.json",
+  "http_status": 200,
+  "bytes": 149623,
+  "tail": "N59906",
+  "hex": "a7c14d",
+  "utc_date": "2025-09-01",
+  "summary": {
+    "registration": "N59906",
+    "type": "PA31",
+    "icao": "a7c14d",
+    "points": 839,
+    "first_seen_utc": "2025-09-01T15:16:07.070Z",
+    "first_pos": [
+      42.641291,
+      -112.479944
+    ],
+    "first_on_ground": false,
+    "last_seen_utc": "2025-09-01T17:40:00.660Z",
+    "last_pos": [
+      41.186045,
+      -112.016289
+    ],
+    "last_on_ground": true,
+    "wheels_up_utc": null,
+    "wheels_down_utc": "2025-09-01T17:33:38.550Z"
+  }
+}

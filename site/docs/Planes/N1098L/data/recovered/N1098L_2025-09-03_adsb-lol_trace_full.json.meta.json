@@ -1,0 +1,31 @@
+{
+  "retrieved_utc": "2026-08-24T16:29:36.628Z",
+  "source": "adsb-lol",
+  "source_role": "the archive this investigation already used",
+  "url": "https://adsb.lol/globe_history/2025/09/03/traces/9e/trace_full_a0299e.json",
+  "http_status": 200,
+  "bytes": 535664,
+  "tail": "N1098L",
+  "hex": "a0299e",
+  "utc_date": "2025-09-03",
+  "summary": {
+    "registration": "N1098L",
+    "type": "GLEX",
+    "icao": "a0299e",
+    "points": 3084,
+    "first_seen_utc": "2025-09-03T00:00:16.960Z",
+    "first_pos": [
+      31.699402,
+      -99.882094
+    ],
+    "first_on_ground": false,
+    "last_seen_utc": "2025-09-03T23:59:40.390Z",
+    "last_pos": [
+      42.612103,
+      -113.789935
+    ],
+    "last_on_ground": false,
+    "wheels_up_utc": "2025-09-03T18:10:02.140Z",
+    "wheels_down_utc": "2025-09-03T18:10:04.520Z"
+  }
+}

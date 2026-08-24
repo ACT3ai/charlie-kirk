@@ -1,0 +1,192 @@
+{
+  "extracted_utc": "2026-08-24T17:18:33.564831Z",
+  "extractor": "extract_wayback_flights.py",
+  "supersedes": "flight_rows_recovered in the .meta.json sidecar, which was wrong",
+  "tail": "N888KG",
+  "snapshot_utc": "20160813114715",
+  "site": "flightaware",
+  "file": "N888KG_20160813114715_wayback_flightaware.html",
+  "bytes": 56108,
+  "live_http_today": 200,
+  "previously_recorded": null,
+  "rows_recovered": 11,
+  "flights": [
+    {
+      "date": "10-Aug-2016",
+      "airports": [
+        "CYYC",
+        "KPBI"
+      ],
+      "cells": [
+        "10-Aug-2016",
+        "C25C",
+        "Calgary Int'l ( CYYC )",
+        "Palm Beach Intl ( KPBI )",
+        "11:05AM&nbsp; MDT",
+        "06:39PM&nbsp; EDT",
+        "5:34"
+      ]
+    },
+    {
+      "date": "07-Aug-2016",
+      "airports": [
+        "KFSD",
+        "CYYC"
+      ],
+      "cells": [
+        "07-Aug-2016",
+        "C25C",
+        "Joe Foss Field ( KFSD )",
+        "Calgary Int'l ( CYYC )",
+        "11:55AM&nbsp; CDT",
+        "01:25PM&nbsp; MDT",
+        "2:30"
+      ]
+    },
+    {
+      "date": "07-Aug-2016",
+      "airports": [
+        "KPBI",
+        "KFSD"
+      ],
+      "cells": [
+        "07-Aug-2016",
+        "C25C",
+        "Palm Beach Intl ( KPBI )",
+        "Joe Foss Field ( KFSD )",
+        "09:20AM&nbsp; EDT",
+        "11:32AM&nbsp; CDT",
+        "3:12"
+      ]
+    },
+    {
+      "date": "05-Aug-2016",
+      "airports": [
+        "KSFM",
+        "KPBI"
+      ],
+      "cells": [
+        "05-Aug-2016",
+        "C25C",
+        "Sanford Seacoast Rgnl ( KSFM )",
+        "Palm Beach Intl ( KPBI )",
+        "08:06AM&nbsp; EDT",
+        "10:52AM&nbsp; EDT",
+        "2:45"
+      ]
+    },
+    {
+      "date": "02-Aug-2016",
+      "airports": [
+        "KTEB",
+        "KSFM"
+      ],
+      "cells": [
+        "02-Aug-2016",
+        "C25C",
+        "Teterboro ( KTEB )",
+        "Sanford Seacoast Rgnl ( KSFM )",
+        "06:47PM&nbsp; EDT",
+        "07:30PM&nbsp; EDT",
+        "0:43"
+      ]
+    },
+    {
+      "date": "02-Aug-2016",
+      "airports": [
+        "KGVL",
+        "KTEB"
+      ],
+      "cells": [
+        "02-Aug-2016",
+        "C25C",
+        "Lee Gilmer Memorial ( KGVL )",
+        "Teterboro ( KTEB )",
+        "04:28PM&nbsp; EDT",
+        "06:09PM&nbsp; EDT",
+        "1:41"
+      ]
+    },
+    {
+      "date": "02-Aug-2016",
+      "airports": [
+        "KSRQ",
+        "KGVL"
+      ],
+      "cells": [
+        "02-Aug-2016",
+        "C25C",
+        "Sarasota/Bradenton Intl ( KSRQ )",
+        "Lee Gilmer Memorial ( KGVL )",
+        "01:28PM&nbsp; EDT",
+        "02:37PM&nbsp; EDT",
+        "1:09"
+      ]
+    },
+    {
+      "date": "02-Aug-2016",
+      "airports": [
+        "KPBI",
+        "KSRQ"
+      ],
+      "cells": [
+        "02-Aug-2016",
+        "C25C",
+        "Palm Beach Intl ( KPBI )",
+        "Sarasota/Bradenton Intl ( KSRQ )",
+        "10:05AM&nbsp; EDT",
+        "10:33AM&nbsp; EDT",
+        "0:28"
+      ]
+    },
+    {
+      "date": "01-Aug-2016",
+      "airports": [
+        "KSFM",
+        "KPBI"
+      ],
+      "cells": [
+        "01-Aug-2016",
+        "C25C",
+        "Sanford Seacoast Rgnl ( KSFM )",
+        "Palm Beach Intl ( KPBI )",
+        "04:10PM&nbsp; EDT",
+        "07:13PM&nbsp; EDT",
+        "3:03"
+      ]
+    },
+    {
+      "date": "31-Jul-2016",
+      "airports": [
+        "KBHB",
+        "KSFM"
+      ],
+      "cells": [
+        "31-Jul-2016",
+        "C25C",
+        "Hancock County-Bar Harbor ( KBHB )",
+        "Sanford Seacoast Rgnl ( KSFM )",
+        "05:30PM&nbsp; EDT",
+        "05:55PM&nbsp; EDT",
+        "0:25"
+      ]
+    },
+    {
+      "date": "31-Jul-2016",
+      "airports": [
+        "KSFM",
+        "KBHB"
+      ],
+      "cells": [
+        "31-Jul-2016",
+        "C25C",
+        "Sanford Seacoast Rgnl ( KSFM )",
+        "Hancock County-Bar Harbor ( KBHB )",
+        "10:43AM&nbsp; EDT",
+        "11:08AM&nbsp; EDT",
+        "0:24"
+      ]
+    }
+  ],
+  "table_state": "POPULATED"
+}

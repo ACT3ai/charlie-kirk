@@ -1305,3 +1305,237 @@ DIR:
 * ~/_Mirror/Politics/Charlie_Kirk_Mi/: Original source media files.
 * ~/BGit/Bryan_git/personal_large_files_bridge/_Mirror/Politics/Charlie_Kirk_Mi/:
   The matching transcriptions, AI descriptions, and OCR text for those files.
+
+
+================================================================================
+== Recovering Deleted / Unavailable Flight Data ==
+================================================================================
+
+Flight records in this investigation go missing. Sometimes a tracking site drops
+an aircraft. Sometimes an archive's retention window rolls off. Sometimes an API
+starts refusing a range of dates. From the outside ALL THREE LOOK IDENTICAL, and
+the single most important rule in this section exists because of that:
+
+  **NEVER call something a removal until a control aircraft has failed the same
+  way.** Query an airframe with NO connection to this case — e.g. hex 4ca7b5
+  (Ryanair) or 3c6444 (Lufthansa) — on the same dates and the same endpoint. If
+  the control fails identically, it is the ARCHIVE, not the airframe, and it
+  must never be published as suppression. Running this test is what separates a
+  retention boundary from a cover-up, and skipping it is how an investigation
+  destroys its own credibility on the day somebody checks.
+
+Worked example of that rule paying off, from the 2026-08-24 run: adsb.lol
+returns HTTP 403 for every date 2025-10-12 to ~2025-12-15, and HTTP 404 for ALL
+of 2026. Both looked like the case aircraft being hidden. Both control aircraft
+failed exactly the same way. Neither was suppression. Meanwhile a THIRD thing
+that did look like ordinary blocking — the N102DZ FlightRadar24 page — turned
+out to be the one real removal. The test does not only protect against false
+positives; it tells you where to spend the effort.
+
+
+=== The method: how to find a backup at all ===
+
+The routine that worked, in order. Do not skip step 1 — the answer is usually
+that somebody already mirrors the thing, and it takes one search to find out.
+
+* WEB SEARCH FOR THE MIRROR. Search the archive's own name plus "historical",
+  "download", "open data", "github", "samples", "dump". Community ADS-B networks
+  publish their archives on purpose and say so in their docs. This is how both
+  the GitHub backup and the ADSBX sample archive were found, in one search.
+* PROBE SIBLING HOSTS WITH THE SAME URL SHAPE. Most community networks run
+  tar1090/readsb, so ONE url shape works across all of them:
+      https://<host>/globe_history/YYYY/MM/DD/traces/<last2ofhex>/trace_full_<hex>.json
+  Swap the host and re-probe. That is how globe.airplanes.live was found.
+* CHECK FOR AN OFF-SITE MIRROR OF THE SAME ORGANISATION. An operator whose live
+  API refuses a date may still publish that exact day elsewhere under an open
+  licence. adsb.lol does precisely this.
+* GO UP A LAYER — FROM THE SENSOR DATA TO THE PAGE. When the numbers are gone,
+  the WEB PAGE that displayed them may survive in the Internet Archive. This is
+  the only route that recovers WHAT A SITE SAID, and therefore the only route
+  that can document a removal at all.
+* PROBE THE LIVE URL TOO — BUT IN A REAL BROWSER, AND AGAINST CONTROLS.
+  What the public gets from that URL TODAY is half the evidence. **A 403 from a
+  script is NOT that evidence.** See "The failure this section already produced"
+  below — this is the step that has actually shipped a wrong finding.
+
+
+=== The failure this section already produced — read this one ===
+
+On 2026-08-24 this investigation published, on a public page, that N102DZ's
+FlightRadar24 page "returns HTTP 403 to the public today" and called that
+A DOCUMENTED REMOVAL. IT WAS WRONG, and it had to be retracted on the page.
+
+What actually happened: flightradar24.com returns HTTP 403 to ANY scripted
+client. Not to that aircraft — to everything, including FR24's OWN HOMEPAGE.
+Opened in an ordinary browser the N102DZ page loads fine, HTTP 200, with the
+aircraft record intact.
+
+The empty flight table on it is not evidence either. FR24 shows a logged-out
+visitor SEVEN DAYS ONLY and says so under the table. A control private jet with
+no connection to this case shows the identical empty table on the same day.
+
+Three rules come out of that, and they are the expensive kind:
+
+* THE CONTROL TEST APPLIES TO WEBSITES, NOT JUST TO ARCHIVES. It is easy to
+  remember it for adsb.lol and forget it for the tracking site. Same rule.
+* NEVER READ AN HTTP STATUS FROM curl AS THE PUBLIC'S EXPERIENCE. Anti-bot
+  filters, Cloudflare, and consent walls all return 403/503 to scripts and
+  200 to browsers. Confirm in a real browser — that is PASS 4
+  (browser_capture/) and it exists precisely for this.
+* AN EMPTY TABLE IS A PAYWALL UNTIL PROVEN OTHERWISE. Check what the same
+  page shows for a control aircraft before calling emptiness a deletion.
+
+The recovery was still worth doing — the archived copy preserves a 7-day window
+that has since rolled past, which no subscription can now reconstruct. But the
+HEADLINE was false, and the control test is what caught it. Run it first, not
+after publication.
+
+
+=== Techniques tried, and which ones worked ===
+
+Run 2026-08-24. WORKED, all four are free and need no account:
+
+* globe.airplanes.live/globe_history/... — WORKED, and it is the single biggest
+  win. Independent volunteer network, same trace format as adsb.lol, typically
+  5-10x MORE data for the same aircraft-day, and it serves the whole 403 band
+  plus all of 2026. Should be queried alongside adsb.lol on every future pull.
+* github.com/adsblol/globe_history_2025 (and _2024) — WORKED. adsb.lol mirrors
+  its ENTIRE archive to GitHub Releases, one release per UTC day, ~3 GB, ODbL.
+  Every date the live API 403s is present in full. Assets are a plain `split` of
+  a tar (`.tar.aa`, `.tar.ab`) so stream them and filter instead of storing 3 GB:
+      curl -sL <base>/<TAG>.tar.aa <base>/<TAG>.tar.ab \
+        | tar -xf - --include '*trace_full_<hex>.json'
+  GOTCHA: files inside are GZIP-COMPRESSED despite the .json name — gunzip after
+  extracting. There is also a small separate `-mlatonly-` release per day.
+* samples.adsbexchange.com/traces/YYYY/MM/DD/<last2>/trace_full_<hex>.json —
+  WORKED. ADSBX's historical API is paid and 403s, but its FREE SAMPLE is a
+  whole day, the 1st of each month, back to July 2016. THE ONLY FREE ROUTE INTO
+  2022, and 2022 is where the following-planes claim starts. One day in thirty,
+  so it can never test a claim about a specific mid-month date.
+* Internet Archive CDX + raw snapshot — WORKED, and it is how the one genuine
+  removal was proven. List snapshots, then fetch the raw bytes with the `id_`
+  modifier and DECOMPRESS (the raw endpoint returns gzip):
+      https://web.archive.org/cdx/search/cdx?url=<URL>&output=json&fl=timestamp,original,statuscode,digest&collapse=digest
+      curl --compressed "https://web.archive.org/web/<TIMESTAMP>id_/<URL>"
+  FlightRadar24 renders its flight-history table server-side, so the rows parse
+  straight out of the archived HTML. Note FR24's free page only ever showed
+  SEVEN DAYS of history — no archived copy can hold a multi-year record.
+
+DID NOT WORK, recorded so nobody re-tries them blind:
+
+* globe.adsb.fi/globe_history/... — HTTP 403.
+* globe.theairtraffic.com/globe_history/... — HTTP 404.
+* samples.adsbexchange.com/readsb-hist/... — 301s to the index; the per-ICAO
+  `/traces/` path is the one that works.
+* globe.adsbexchange.com/globe_history/... — 403, paid.
+* OpenSky /api/flights/aircraft — 403 anonymous since the 2026-03-18 move to
+  OAuth2 client credentials. NOT ATTEMPTED with credentials. Cheapest remaining
+  gap to close.
+* archive.today / archive.ph — HTTP 429 rate-limited on both attempts.
+  INCONCLUSIVE, not ruled out. Worth retrying later.
+
+CROSS-CHECK BEFORE PUBLISHING. Two independent routes on the same aircraft-day
+should agree. N102DZ on 2025-10-13 came back from the GitHub backup and from
+airplanes.live matching to the SECOND on first contact and to four decimals on
+position. If two routes DISAGREE, publish the disagreement — do not pick one.
+
+
+=== The code that does it ===
+
+DIR:
+* site/docs/Planes/following/apis/public_open_source/code/: the runnable pass-1
+  clients. No dependencies, Node 18+.
+
+FILE:
+* .../code/recover_erased.js: THE RECOVERY HARNESS. Pulls airplanes.live and
+  adsb.lol side by side per aircraft-day and diffs them, then runs the Internet
+  Archive CDX + live-URL probe over the tracking-site pages and parses FR24
+  history tables out of archived HTML. Flags each day
+  RECOVERED_ONLY_ON_BACKUP / BOTH_HAVE_IT / ONLY_ON_ADSB_LOL / NEITHER_HAS_IT.
+      node recover_erased.js [--tail N102DZ] [--pages-only] [--adsb-only]
+* .../code/recover_adsbx_samples.js: the ADSBX free monthly sample sweep, the
+  2022 route.  node recover_adsbx_samples.js [--tail X] [--from 2022-01] [--to 2026-08]
+* .../code/ingest_github_backup.js: ingests traces extracted from a GitHub
+  backup tarball into the per-aircraft directories, handling the gzip.
+      node ingest_github_backup.js <extract-dir> <YYYY-MM-DD>
+* .../code/write_recovery_records.js: writes each aircraft's _RECOVERED_DATA.md.
+* .../code/lib/fleet.js: tail -> ICAO hex registry. THE join key for every
+  ADS-B source. Add a tail here and every script above picks it up.
+
+
+=== Where recovered data lands ===
+
+Per aircraft, and THE SOURCE IS PART OF THE FILENAME on purpose:
+
+    site/docs/Planes/<TAIL>/data/recovered/
+      <TAIL>_<YYYY-MM-DD>_<source-key>_trace_full.json
+      <TAIL>_<YYYY-MM-DD>_<source-key>_trace_full.json.meta.json
+      <TAIL>_<WAYBACKTIMESTAMP>_wayback_<site>.html
+      <TAIL>_<WAYBACKTIMESTAMP>_wayback_<site>_flights.json
+      _RECOVERED_DATA.md
+
+Source keys: `airplanes-live`, `adsb-lol`, `adsbexchange-samples`,
+`adsblol-github-backup`, `wayback/<site>`.
+
+* EVERY payload gets a `.meta.json` beside it recording the exact URL, HTTP
+  status, byte count, UTC retrieval time, and a summary of the trace.
+* NOTHING OVERWRITES A PREVIOUS PULL. A re-pull lands beside the first with a
+  timestamp suffix. THE DIFF BETWEEN TWO PULLS OF THE SAME URL ON TWO DATES IS
+  THE EVIDENCE THAT SOMETHING VANISHED — that is the whole point of the layout.
+* `_RECOVERED_DATA.md` leads with an underscore so Docusaurus does not publish
+  it (`**/_*.{md,mdx}` is in the exclude list). It is the audit trail, not a
+  page. NOTE: the older `MISSING_DATA.md` files under `<TAIL>/data/adsb/` do NOT
+  have the underscore and therefore DO become public pages — that looks
+  unintended; ask before renaming them.
+
+
+=== Updating the pages after a recovery ===
+
+A recovery is not finished when the JSON lands. The pages have to say WHAT was
+removed, WHEN, FROM WHERE, and WHAT THE DATA WAS. The order that worked:
+
+1. THE HUB PAGE. site/docs/Planes/Flight-Data-Recovery/overview.mdx is the Level
+   3 page for this whole effort. It carries the three-way split (real removal vs
+   retention vs coverage), the recovered content itself, the four routes, the
+   control test, and what is still gone.
+2. THE AIRCRAFT'S OWN PAGE. Put the recovered record on <TAIL>/overview.mdx —
+   the actual table, with UTC as published and local times computed beside it,
+   plus a plain statement of what it confirms, what it corrects, and what it
+   cannot show.
+3. THE PAGE THAT MADE THE ERASURE CLAIM. Erika-Flight-Logs-Erased.mdx said the
+   record was unavailable to anyone outside. It is not any more. UPDATE THE
+   CLAIM-STATUS TABLE IN PLACE and say plainly that the position changed rather
+   than quietly editing around it.
+4. THE KNOWLEDGE PAGES. following/apis/public_open_source/knowledge.mdx and
+   following/apis/overview.mdx both published gaps that are now closed. A
+   "What we did NOT get" section that is out of date is worse than no section —
+   append a dated UPDATE block that retracts the specific sentences.
+5. pages.csv — a row for any new page, and refresh `line_count` on every page
+   edited.
+6. `cd site && npm run build` before declaring done. Keep every <div> and
+   </div> at column 0; only the build catches an indented closing tag.
+
+WRITING RULES SPECIFIC TO RECOVERY PAGES, and they are not optional:
+
+* SAY WHICH OF THE THREE IT IS. Removal, retention, or coverage gap. Never let a
+  403 be described in a way a reader will take as a deletion.
+* PUBLISH THE RESULT THAT WEAKENS THE CLAIM AS PROMINENTLY AS THE ONE THAT
+  SUPPORTS IT. The 2026-08-24 run recovered T7-ELL's first-ever traces and they
+  showed a Dubai/Van Nuys global charter pattern — evidence AGAINST grouping it
+  with the Egyptian tails. It went on the page. A recovery that only ever
+  confirms what we already believed is a reason to distrust the recovery.
+* CORRECT THIS SITE WHEN THE DATA SAYS TO. The recovered FR24 table showed that
+  N102DZ "arrived Scottsdale 1:13pm and departed immediately at 1:13pm" was
+  FR24's flight-DURATION column read a second time as a clock time. Real ground
+  time ~18 minutes. That correction is more valuable than the recovery.
+* A TRACE PROVES PRESENCE, NEVER PURPOSE, AND NEVER OCCUPANCY. Recovering an
+  aircraft's full movements still does not place any person aboard. Erika Kirk's
+  itinerary is the missing document and NO BACKUP ANYWHERE PRODUCES IT — say so
+  on every page that leans on her side of a pairing.
+* AN ABSENCE IS STILL NOT A FINDING. A 404 means a volunteer network heard
+  nothing. Parked and silent, outside receiver coverage, or a wrong claimed date
+  come first, every time.
+* NEVER ASSERT INTENT. We can show that a page was public and is not any more.
+  We cannot see why. Owners lawfully request blocking; sites reorganise URLs.
+* SCOPE A CLAIM TO WHAT WAS ACTUALLY CHECKED. If only the `prod` tarball was
+  verified, say `prod` — do not generalise to "the backup".

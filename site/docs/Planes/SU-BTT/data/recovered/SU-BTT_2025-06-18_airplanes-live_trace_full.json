@@ -1,0 +1,17 @@
+{"icao":"0101d3",
+"r":"SU-BTT",
+"t":"FA7X",
+"dbFlags":1,"desc":"DASSAULT Falcon 7X",
+"version": "readsb 3.14.1676 46c61ff-dirty",
+"timestamp": 1750204800.000,
+"trace":[ 
+[23006.52,31.249649,29.615855,32000,433.4,292.0,1,0,{"type":"adsb_icao","alt_geom":33700,"ias":290,"mach":0.800,"track":291.95,"mag_heading":284.06,"true_heading":288.85,"baro_rate":0,"geom_rate":32,"nav_qnh":1013.6,"nav_altitude_mcp":32000,"nav_modes":["autopilot","althold","tcas"],"nic":8,"rc":186,"version":2,"nic_baro":1,"nac_p":10,"nac_v":2,"sil":3,"sil_type":"perhour","gva":2,"sda":2,"alert":0,"spi":0},"adsb_icao",33700,32,290,null],
+[23011.34,31.253265,29.605462,32000,434.3,291.9,0,64,null,"adsb_icao",33700,32,290,null],
+[23240.41,31.424343,29.106793,32000,null,null,1,null,null,"adsb_icao",null,null,null,null],
+[23249.02,31.430740,29.088081,32000,432.7,291.7,0,0,null,"adsb_icao",33650,null,null,null],
+[23253.97,31.434265,29.077687,32000,432.7,291.7,0,0,{"type":"adsb_icao","flight":"SUBTT   ","alt_geom":33650,"track":291.70,"baro_rate":0,"squawk":"3314","emergency":"none","category":"A2","nav_qnh":1013.6,"nav_altitude_mcp":32000,"nav_modes":["autopilot","althold","tcas"],"nic":8,"rc":186,"version":2,"nic_baro":1,"nac_p":10,"nac_v":2,"sil":3,"sil_type":"perhour","gva":2,"sda":2,"alert":0,"spi":0},"adsb_icao",33650,null,null,null],
+[23263.12,31.441242,29.057245,32000,433.6,291.6,0,0,null,"adsb_icao",33650,null,null,null],
+[23267.78,31.444656,29.047205,32000,433.6,291.6,0,0,null,"adsb_icao",33650,null,null,0.0],
+[23329.26,31.489982,28.913434,32000,433.2,291.5,1,0,null,"adsb_icao",33650,null,null,null],
+[23334.90,31.494278,28.900775,32000,433.2,291.5,0,0,{"type":"adsb_icao","alt_geom":33650,"track":291.53,"baro_rate":0,"category":"A2","nav_qnh":1013.6,"nav_altitude_mcp":32000,"nav_modes":["autopilot","althold","tcas"],"nic":8,"rc":186,"version":2,"nic_baro":1,"nac_p":10,"nac_v":2,"sil":3,"sil_type":"perhour","gva":2,"sda":2,"alert":0,"spi":0},"adsb_icao",33650,null,null,null] ]
+ }

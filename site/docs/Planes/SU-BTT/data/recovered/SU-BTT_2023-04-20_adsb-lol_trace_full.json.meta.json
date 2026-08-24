@@ -1,0 +1,35 @@
+{
+  "retrieved_utc": "2026-08-24T17:18:17.391Z",
+  "vendor_credentials_redacted": 0,
+  "source": "adsb-lol",
+  "source_role": "the archive this investigation already used",
+  "url": "https://adsb.lol/globe_history/2023/04/20/traces/d3/trace_full_0101d3.json",
+  "http_status": 200,
+  "bytes": 75124,
+  "tail": "SU-BTT",
+  "hex": "0101d3",
+  "utc_date": "2023-04-20",
+  "summary": {
+    "registration": "SU-BTT",
+    "type": "FA7X",
+    "points": 421,
+    "first_seen_utc": "2023-04-20T14:54:12.890Z",
+    "first_pos": [
+      37.930939,
+      -96.550598
+    ],
+    "last_seen_utc": "2023-04-20T17:04:30.200Z",
+    "last_pos": [
+      39.673668,
+      -75.60188
+    ],
+    "wheels_up_utc": null,
+    "wheels_down_utc": "2023-04-20T17:04:07.390Z"
+  },
+  "pulled_for": "alleged overlap",
+  "overlap_ids": [
+    "OWENS-013"
+  ],
+  "alleged_overlap_date": "2023-04-20",
+  "alleged_place": "Wilmington, DE"
+}

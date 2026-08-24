@@ -1,0 +1,35 @@
+{
+  "retrieved_utc": "2026-08-24T17:18:17.391Z",
+  "vendor_credentials_redacted": 0,
+  "source": "airplanes-live",
+  "source_role": "BACKUP ARCHIVE — independent volunteer network",
+  "url": "https://globe.airplanes.live/globe_history/2023/06/24/traces/3e/trace_full_01003e.json",
+  "http_status": 200,
+  "bytes": 4016,
+  "tail": "SU-BND",
+  "hex": "01003e",
+  "utc_date": "2023-06-24",
+  "summary": {
+    "registration": "SU-BND",
+    "type": "GLF4",
+    "points": 24,
+    "first_seen_utc": "2023-06-24T07:03:19.610Z",
+    "first_pos": [
+      30.16095,
+      31.134123
+    ],
+    "last_seen_utc": "2023-06-24T08:27:40.570Z",
+    "last_pos": [
+      29.685196,
+      31.279133
+    ],
+    "wheels_up_utc": null,
+    "wheels_down_utc": null
+  },
+  "pulled_for": "alleged overlap",
+  "overlap_ids": [
+    "OWENS-052"
+  ],
+  "alleged_overlap_date": "2023-06-25",
+  "alleged_place": "Wilmington, DE"
+}

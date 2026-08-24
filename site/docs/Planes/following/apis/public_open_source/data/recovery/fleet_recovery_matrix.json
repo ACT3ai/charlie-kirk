@@ -1,0 +1,1758 @@
+{
+  "generated_utc": "2026-08-24T17:30:09.495172+00:00",
+  "what_this_is": "Per-aircraft record of which flight-data source still serves the data, which no longer does, and what was recovered from a backup.",
+  "tails": {
+    "N102DZ": {
+      "adsb_archives": {
+        "adsb-lol": {
+          "files": 12,
+          "days": 12,
+          "earliest": "2025-09-01",
+          "latest": "2025-10-09"
+        },
+        "airplanes-live": {
+          "files": 50,
+          "days": 50,
+          "earliest": "2025-09-01",
+          "latest": "2026-06-05"
+        },
+        "adsbexchange-samples": {
+          "files": 18,
+          "days": 18,
+          "earliest": "2022-05-01",
+          "latest": "2026-06-01"
+        },
+        "adsblol-github-backup": {
+          "files": 1,
+          "days": 1,
+          "earliest": "2025-10-13",
+          "latest": "2025-10-13"
+        }
+      },
+      "tracking_site_pages": {
+        "flightradar24": {
+          "snapshots": 2,
+          "live_http_today": 403,
+          "first": "20220526025401",
+          "last": "20250911055712",
+          "captured": 2,
+          "verdict": "STILL_PUBLIC_BROWSER_VERIFIED",
+          "browser_http": 200
+        },
+        "flightaware": {
+          "snapshots": 1,
+          "live_http_today": 200,
+          "first": "20260114192750",
+          "last": "20260114192750",
+          "captured": 1,
+          "verdict": "STILL_PUBLIC",
+          "browser_http": null
+        },
+        "radarbox": {
+          "snapshots": 0,
+          "live_http_today": 403,
+          "first": null,
+          "last": null,
+          "captured": 0,
+          "verdict": "SCRIPT_BLOCKED_TELLS_US_NOTHING",
+          "browser_http": null
+        },
+        "adsbexchange": {
+          "snapshots": 0,
+          "live_http_today": 200,
+          "first": null,
+          "last": null,
+          "captured": 0,
+          "verdict": "STILL_PUBLIC",
+          "browser_http": null
+        },
+        "planespotters": {
+          "snapshots": 0,
+          "live_http_today": 403,
+          "first": null,
+          "last": null,
+          "captured": 0,
+          "verdict": "SCRIPT_BLOCKED_TELLS_US_NOTHING",
+          "browser_http": null
+        }
+      },
+      "wayback_captures": [
+        {
+          "site": "flightaware",
+          "snapshot_utc": "20260114192750",
+          "original_url": "https://www.flightaware.com/live/flight/N102DZ",
+          "live_http_today": 200,
+          "rows": 0,
+          "table_state": "JAVASCRIPT_SHELL_NO_SERVER_RENDERED_ROWS",
+          "bytes": 458025
+        },
+        {
+          "site": "flightradar24",
+          "snapshot_utc": "20220526025401",
+          "original_url": "https://www.flightradar24.com/data/aircraft/n102dz",
+          "live_http_today": 403,
+          "rows": 2,
+          "table_state": "POPULATED",
+          "bytes": 63645
+        },
+        {
+          "site": "flightradar24",
+          "snapshot_utc": "20250911055712",
+          "original_url": "https://www.flightradar24.com/data/aircraft/n102dz",
+          "live_http_today": 403,
+          "rows": 11,
+          "table_state": "POPULATED",
+          "bytes": 97123
+        }
+      ],
+      "alleged_overlaps": {},
+      "flight_rows_recovered_from_archived_pages": 13,
+      "removed_from": [],
+      "headline": "no documented page removal"
+    },
+    "N1098L": {
+      "adsb_archives": {
+        "adsb-lol": {
+          "files": 17,
+          "days": 17,
+          "earliest": "2025-09-02",
+          "latest": "2025-10-11"
+        },
+        "airplanes-live": {
+          "files": 46,
+          "days": 46,
+          "earliest": "2025-09-02",
+          "latest": "2026-06-03"
+        },
+        "adsbexchange-samples": {
+          "files": 19,
+          "days": 19,
+          "earliest": "2023-11-01",
+          "latest": "2026-08-01"
+        },
+        "adsblol-github-backup": {
+          "files": 0,
+          "days": 0,
+          "earliest": null,
+          "latest": null
+        }
+      },
+      "tracking_site_pages": {
+        "flightradar24": {
+          "snapshots": 1,
+          "live_http_today": 403,
+          "first": "20250919193242",
+          "last": "20250919193242",
+          "captured": 0,
+          "verdict": "STILL_PUBLIC_BROWSER_VERIFIED",
+          "browser_http": 200
+        },
+        "flightaware": {
+          "snapshots": 3,
+          "live_http_today": 200,
+          "first": "20230507022731",
+          "last": "20250923141540",
+          "captured": 3,
+          "verdict": "STILL_PUBLIC",
+          "browser_http": null
+        },
+        "radarbox": {
+          "snapshots": 0,
+          "live_http_today": 403,
+          "first": null,
+          "last": null,
+          "captured": 0,
+          "verdict": "SCRIPT_BLOCKED_TELLS_US_NOTHING",
+          "browser_http": null
+        },
+        "adsbexchange": {
+          "snapshots": 0,
+          "live_http_today": 200,
+          "first": null,
+          "last": null,
+          "captured": 0,
+          "verdict": "STILL_PUBLIC",
+          "browser_http": null
+        },
+        "planespotters": {
+          "snapshots": 0,
+          "live_http_today": 403,
+          "first": null,
+          "last": null,
+          "captured": 0,
+          "verdict": "SCRIPT_BLOCKED_TELLS_US_NOTHING",
+          "browser_http": null
+        }
+      },
+      "wayback_captures": [
+        {
+          "site": "flightaware",
+          "snapshot_utc": "20230507022731",
+          "original_url": "https://www.flightaware.com/live/flight/N1098L",
+          "live_http_today": 200,
+          "rows": 0,
+          "table_state": "JAVASCRIPT_SHELL_NO_SERVER_RENDERED_ROWS",
+          "bytes": 498103
+        },
+        {
+          "site": "flightaware",
+          "snapshot_utc": "20250920162925",
+          "original_url": "https://www.flightaware.com/live/flight/N1098L",
+          "live_http_today": 200,
+          "rows": 0,
+          "table_state": "JAVASCRIPT_SHELL_NO_SERVER_RENDERED_ROWS",
+          "bytes": 593086
+        },
+        {
+          "site": "flightaware",
+          "snapshot_utc": "20250923141540",
+          "original_url": "https://www.flightaware.com/live/flight/N1098L",
+          "live_http_today": 200,
+          "rows": 0,
+          "table_state": "JAVASCRIPT_SHELL_NO_SERVER_RENDERED_ROWS",
+          "bytes": 593086
+        }
+      ],
+      "alleged_overlaps": {},
+      "flight_rows_recovered_from_archived_pages": 0,
+      "removed_from": [],
+      "headline": "no documented page removal"
+    },
+    "N2100L": {
+      "adsb_archives": {
+        "adsb-lol": {
+          "files": 8,
+          "days": 8,
+          "earliest": "2025-09-04",
+          "latest": "2025-09-16"
+        },
+        "airplanes-live": {
+          "files": 29,
+          "days": 29,
+          "earliest": "2025-09-04",
+          "latest": "2026-06-05"
+        },
+        "adsbexchange-samples": {
+          "files": 17,
+          "days": 17,
+          "earliest": "2023-11-01",
+          "latest": "2026-05-01"
+        },
+        "adsblol-github-backup": {
+          "files": 0,
+          "days": 0,
+          "earliest": null,
+          "latest": null
+        }
+      },
+      "tracking_site_pages": {
+        "flightradar24": {
+          "snapshots": 0,
+          "live_http_today": 403,
+          "first": null,
+          "last": null,
+          "captured": 0,
+          "verdict": "STILL_PUBLIC_BROWSER_VERIFIED",
+          "browser_http": 200
+        },
+        "flightaware": {
+          "snapshots": 3,
+          "live_http_today": 200,
+          "first": "20230326161417",
+          "last": "20250920153138",
+          "captured": 3,
+          "verdict": "STILL_PUBLIC",
+          "browser_http": null
+        },
+        "radarbox": {
+          "snapshots": 0,
+          "live_http_today": 403,
+          "first": null,
+          "last": null,
+          "captured": 0,
+          "verdict": "SCRIPT_BLOCKED_TELLS_US_NOTHING",
+          "browser_http": null
+        },
+        "adsbexchange": {
+          "snapshots": 0,
+          "live_http_today": 200,
+          "first": null,
+          "last": null,
+          "captured": 0,
+          "verdict": "STILL_PUBLIC",
+          "browser_http": null
+        },
+        "planespotters": {
+          "snapshots": 0,
+          "live_http_today": 403,
+          "first": null,
+          "last": null,
+          "captured": 0,
+          "verdict": "SCRIPT_BLOCKED_TELLS_US_NOTHING",
+          "browser_http": null
+        }
+      },
+      "wayback_captures": [
+        {
+          "site": "flightaware",
+          "snapshot_utc": "20230326161417",
+          "original_url": "https://www.flightaware.com/live/flight/N2100L",
+          "live_http_today": 200,
+          "rows": null,
+          "table_state": null,
+          "bytes": 468283
+        },
+        {
+          "site": "flightaware",
+          "snapshot_utc": "20250306001643",
+          "original_url": "https://www.flightaware.com/live/flight/N2100L",
+          "live_http_today": 200,
+          "rows": null,
+          "table_state": null,
+          "bytes": 595933
+        },
+        {
+          "site": "flightaware",
+          "snapshot_utc": "20250920153138",
+          "original_url": "https://www.flightaware.com/live/flight/N2100L",
+          "live_http_today": 200,
+          "rows": null,
+          "table_state": null,
+          "bytes": 595933
+        }
+      ],
+      "alleged_overlaps": {},
+      "flight_rows_recovered_from_archived_pages": 0,
+      "removed_from": [],
+      "headline": "no documented page removal"
+    },
+    "N40JD": {
+      "adsb_archives": {
+        "adsb-lol": {
+          "files": 10,
+          "days": 10,
+          "earliest": "2025-09-02",
+          "latest": "2025-09-16"
+        },
+        "airplanes-live": {
+          "files": 12,
+          "days": 12,
+          "earliest": "2025-09-02",
+          "latest": "2025-10-16"
+        },
+        "adsbexchange-samples": {
+          "files": 11,
+          "days": 11,
+          "earliest": "2022-06-01",
+          "latest": "2026-04-01"
+        },
+        "adsblol-github-backup": {
+          "files": 0,
+          "days": 0,
+          "earliest": null,
+          "latest": null
+        }
+      },
+      "tracking_site_pages": {
+        "flightradar24": {
+          "snapshots": 1,
+          "live_http_today": 403,
+          "first": "20220522070338",
+          "last": "20220522070338",
+          "captured": 1,
+          "verdict": "STILL_PUBLIC_BROWSER_VERIFIED",
+          "browser_http": 200
+        },
+        "flightaware": {
+          "snapshots": 0,
+          "live_http_today": 200,
+          "first": null,
+          "last": null,
+          "captured": 0,
+          "verdict": "STILL_PUBLIC",
+          "browser_http": null
+        },
+        "radarbox": {
+          "snapshots": 0,
+          "live_http_today": 403,
+          "first": null,
+          "last": null,
+          "captured": 0,
+          "verdict": "SCRIPT_BLOCKED_TELLS_US_NOTHING",
+          "browser_http": null
+        },
+        "adsbexchange": {
+          "snapshots": 0,
+          "live_http_today": 200,
+          "first": null,
+          "last": null,
+          "captured": 0,
+          "verdict": "STILL_PUBLIC",
+          "browser_http": null
+        },
+        "planespotters": {
+          "snapshots": 0,
+          "live_http_today": 403,
+          "first": null,
+          "last": null,
+          "captured": 0,
+          "verdict": "SCRIPT_BLOCKED_TELLS_US_NOTHING",
+          "browser_http": null
+        }
+      },
+      "wayback_captures": [
+        {
+          "site": "flightradar24",
+          "snapshot_utc": "20220522070338",
+          "original_url": "https://www.flightradar24.com/data/aircraft/n40jd",
+          "live_http_today": 403,
+          "rows": 0,
+          "table_state": "PRESENT_BUT_EMPTY",
+          "bytes": 56801
+        }
+      ],
+      "alleged_overlaps": {},
+      "flight_rows_recovered_from_archived_pages": 0,
+      "removed_from": [],
+      "headline": "no documented page removal"
+    },
+    "N55906": {
+      "adsb_archives": {
+        "adsb-lol": {
+          "files": 0,
+          "days": 0,
+          "earliest": null,
+          "latest": null
+        },
+        "airplanes-live": {
+          "files": 0,
+          "days": 0,
+          "earliest": null,
+          "latest": null
+        },
+        "adsbexchange-samples": {
+          "files": 0,
+          "days": 0,
+          "earliest": null,
+          "latest": null
+        },
+        "adsblol-github-backup": {
+          "files": 0,
+          "days": 0,
+          "earliest": null,
+          "latest": null
+        }
+      },
+      "tracking_site_pages": {
+        "flightradar24": {
+          "snapshots": 0,
+          "live_http_today": 403,
+          "first": null,
+          "last": null,
+          "captured": 0,
+          "verdict": "STILL_PUBLIC_BROWSER_VERIFIED",
+          "browser_http": 200
+        },
+        "flightaware": {
+          "snapshots": 1,
+          "live_http_today": 200,
+          "first": "20100304160214",
+          "last": "20100304160214",
+          "captured": 1,
+          "verdict": "STILL_PUBLIC",
+          "browser_http": null
+        },
+        "radarbox": {
+          "snapshots": 0,
+          "live_http_today": 403,
+          "first": null,
+          "last": null,
+          "captured": 0,
+          "verdict": "SCRIPT_BLOCKED_TELLS_US_NOTHING",
+          "browser_http": null
+        },
+        "adsbexchange": {
+          "snapshots": 0,
+          "live_http_today": 200,
+          "first": null,
+          "last": null,
+          "captured": 0,
+          "verdict": "STILL_PUBLIC",
+          "browser_http": null
+        },
+        "planespotters": {
+          "snapshots": 0,
+          "live_http_today": 403,
+          "first": null,
+          "last": null,
+          "captured": 0,
+          "verdict": "SCRIPT_BLOCKED_TELLS_US_NOTHING",
+          "browser_http": null
+        }
+      },
+      "wayback_captures": [
+        {
+          "site": "flightaware",
+          "snapshot_utc": "20100304160214",
+          "original_url": "https://www.flightaware.com/live/flight/N55906",
+          "live_http_today": 200,
+          "rows": null,
+          "table_state": null,
+          "bytes": 57818
+        }
+      ],
+      "alleged_overlaps": {},
+      "flight_rows_recovered_from_archived_pages": 0,
+      "removed_from": [],
+      "headline": "no documented page removal"
+    },
+    "N560TW": {
+      "adsb_archives": {
+        "adsb-lol": {
+          "files": 9,
+          "days": 9,
+          "earliest": "2025-09-01",
+          "latest": "2025-10-09"
+        },
+        "airplanes-live": {
+          "files": 27,
+          "days": 27,
+          "earliest": "2025-09-01",
+          "latest": "2026-06-05"
+        },
+        "adsbexchange-samples": {
+          "files": 23,
+          "days": 23,
+          "earliest": "2022-01-01",
+          "latest": "2026-08-01"
+        },
+        "adsblol-github-backup": {
+          "files": 0,
+          "days": 0,
+          "earliest": null,
+          "latest": null
+        }
+      },
+      "tracking_site_pages": {
+        "flightradar24": {
+          "snapshots": 0,
+          "live_http_today": 403,
+          "first": null,
+          "last": null,
+          "captured": 0,
+          "verdict": "STILL_PUBLIC_BROWSER_VERIFIED",
+          "browser_http": 200
+        },
+        "flightaware": {
+          "snapshots": 2,
+          "live_http_today": 200,
+          "first": "20161129055521",
+          "last": "20260415163343",
+          "captured": 2,
+          "verdict": "STILL_PUBLIC",
+          "browser_http": null
+        },
+        "radarbox": {
+          "snapshots": 0,
+          "live_http_today": 403,
+          "first": null,
+          "last": null,
+          "captured": 0,
+          "verdict": "SCRIPT_BLOCKED_TELLS_US_NOTHING",
+          "browser_http": null
+        },
+        "adsbexchange": {
+          "snapshots": 0,
+          "live_http_today": 200,
+          "first": null,
+          "last": null,
+          "captured": 0,
+          "verdict": "STILL_PUBLIC",
+          "browser_http": null
+        },
+        "planespotters": {
+          "snapshots": 0,
+          "live_http_today": 403,
+          "first": null,
+          "last": null,
+          "captured": 0,
+          "verdict": "SCRIPT_BLOCKED_TELLS_US_NOTHING",
+          "browser_http": null
+        }
+      },
+      "wayback_captures": [
+        {
+          "site": "flightaware",
+          "snapshot_utc": "20161129055521",
+          "original_url": "https://www.flightaware.com/live/flight/N560TW",
+          "live_http_today": 200,
+          "rows": 9,
+          "table_state": "POPULATED",
+          "bytes": 56374
+        },
+        {
+          "site": "flightaware",
+          "snapshot_utc": "20260415163343",
+          "original_url": "https://www.flightaware.com/live/flight/N560TW",
+          "live_http_today": 200,
+          "rows": 0,
+          "table_state": "JAVASCRIPT_SHELL_NO_SERVER_RENDERED_ROWS",
+          "bytes": 502766
+        }
+      ],
+      "alleged_overlaps": {},
+      "flight_rows_recovered_from_archived_pages": 9,
+      "removed_from": [],
+      "headline": "no documented page removal"
+    },
+    "N582MM": {
+      "adsb_archives": {
+        "adsb-lol": {
+          "files": 19,
+          "days": 19,
+          "earliest": "2025-09-01",
+          "latest": "2025-10-11"
+        },
+        "airplanes-live": {
+          "files": 24,
+          "days": 24,
+          "earliest": "2025-09-01",
+          "latest": "2025-10-16"
+        },
+        "adsbexchange-samples": {
+          "files": 23,
+          "days": 23,
+          "earliest": "2022-04-01",
+          "latest": "2025-12-01"
+        },
+        "adsblol-github-backup": {
+          "files": 0,
+          "days": 0,
+          "earliest": null,
+          "latest": null
+        }
+      },
+      "tracking_site_pages": {
+        "flightradar24": {
+          "snapshots": 0,
+          "live_http_today": 403,
+          "first": null,
+          "last": null,
+          "captured": 0,
+          "verdict": "STILL_PUBLIC_BROWSER_VERIFIED",
+          "browser_http": 200
+        },
+        "flightaware": {
+          "snapshots": 7,
+          "live_http_today": 200,
+          "first": "20111220063813",
+          "last": "20151018073027",
+          "captured": 7,
+          "verdict": "STILL_PUBLIC",
+          "browser_http": null
+        },
+        "radarbox": {
+          "snapshots": 0,
+          "live_http_today": 403,
+          "first": null,
+          "last": null,
+          "captured": 0,
+          "verdict": "SCRIPT_BLOCKED_TELLS_US_NOTHING",
+          "browser_http": null
+        },
+        "adsbexchange": {
+          "snapshots": 0,
+          "live_http_today": 200,
+          "first": null,
+          "last": null,
+          "captured": 0,
+          "verdict": "STILL_PUBLIC",
+          "browser_http": null
+        },
+        "planespotters": {
+          "snapshots": 0,
+          "live_http_today": 403,
+          "first": null,
+          "last": null,
+          "captured": 0,
+          "verdict": "SCRIPT_BLOCKED_TELLS_US_NOTHING",
+          "browser_http": null
+        }
+      },
+      "wayback_captures": [
+        {
+          "site": "flightaware",
+          "snapshot_utc": "20111220063813",
+          "original_url": "https://www.flightaware.com/live/flight/N582MM",
+          "live_http_today": 200,
+          "rows": 4,
+          "table_state": "POPULATED",
+          "bytes": 87641
+        },
+        {
+          "site": "flightaware",
+          "snapshot_utc": "20150114071205",
+          "original_url": "https://www.flightaware.com/live/flight/N582MM",
+          "live_http_today": 200,
+          "rows": 8,
+          "table_state": "POPULATED",
+          "bytes": 52506
+        },
+        {
+          "site": "flightaware",
+          "snapshot_utc": "20150328021838",
+          "original_url": "https://www.flightaware.com/live/flight/N582MM",
+          "live_http_today": 200,
+          "rows": 7,
+          "table_state": "POPULATED",
+          "bytes": 52376
+        },
+        {
+          "site": "flightaware",
+          "snapshot_utc": "20150429035755",
+          "original_url": "https://www.flightaware.com/live/flight/N582MM",
+          "live_http_today": 200,
+          "rows": 7,
+          "table_state": "POPULATED",
+          "bytes": 51448
+        },
+        {
+          "site": "flightaware",
+          "snapshot_utc": "20150531103013",
+          "original_url": "https://www.flightaware.com/live/flight/N582MM",
+          "live_http_today": 200,
+          "rows": 2,
+          "table_state": "POPULATED",
+          "bytes": 47574
+        },
+        {
+          "site": "flightaware",
+          "snapshot_utc": "20150704115339",
+          "original_url": "https://www.flightaware.com/live/flight/N582MM",
+          "live_http_today": 200,
+          "rows": 6,
+          "table_state": "POPULATED",
+          "bytes": 52856
+        },
+        {
+          "site": "flightaware",
+          "snapshot_utc": "20151018073027",
+          "original_url": "https://www.flightaware.com/live/flight/N582MM",
+          "live_http_today": 200,
+          "rows": 6,
+          "table_state": "POPULATED",
+          "bytes": 45643
+        }
+      ],
+      "alleged_overlaps": {},
+      "flight_rows_recovered_from_archived_pages": 40,
+      "removed_from": [],
+      "headline": "no documented page removal"
+    },
+    "N59906": {
+      "adsb_archives": {
+        "adsb-lol": {
+          "files": 9,
+          "days": 9,
+          "earliest": "2025-09-01",
+          "latest": "2025-10-08"
+        },
+        "airplanes-live": {
+          "files": 26,
+          "days": 26,
+          "earliest": "2025-09-01",
+          "latest": "2026-05-31"
+        },
+        "adsbexchange-samples": {
+          "files": 23,
+          "days": 23,
+          "earliest": "2022-02-01",
+          "latest": "2026-07-01"
+        },
+        "adsblol-github-backup": {
+          "files": 0,
+          "days": 0,
+          "earliest": null,
+          "latest": null
+        }
+      },
+      "tracking_site_pages": {
+        "flightradar24": {
+          "snapshots": 2,
+          "live_http_today": 403,
+          "first": "20220829235831",
+          "last": "20220830011544",
+          "captured": 2,
+          "verdict": "STILL_PUBLIC_BROWSER_VERIFIED",
+          "browser_http": 200
+        },
+        "flightaware": {
+          "snapshots": 2,
+          "live_http_today": 200,
+          "first": "20220830060300",
+          "last": "20220901185052",
+          "captured": 2,
+          "verdict": "STILL_PUBLIC",
+          "browser_http": null
+        },
+        "radarbox": {
+          "snapshots": 0,
+          "live_http_today": 403,
+          "first": null,
+          "last": null,
+          "captured": 0,
+          "verdict": "SCRIPT_BLOCKED_TELLS_US_NOTHING",
+          "browser_http": null
+        },
+        "adsbexchange": {
+          "snapshots": 0,
+          "live_http_today": 200,
+          "first": null,
+          "last": null,
+          "captured": 0,
+          "verdict": "STILL_PUBLIC",
+          "browser_http": null
+        },
+        "planespotters": {
+          "snapshots": 0,
+          "live_http_today": 403,
+          "first": null,
+          "last": null,
+          "captured": 0,
+          "verdict": "SCRIPT_BLOCKED_TELLS_US_NOTHING",
+          "browser_http": null
+        }
+      },
+      "wayback_captures": [
+        {
+          "site": "flightaware",
+          "snapshot_utc": "20220830060300",
+          "original_url": "https://www.flightaware.com/live/flight/N59906",
+          "live_http_today": 200,
+          "rows": null,
+          "table_state": null,
+          "bytes": 622553
+        },
+        {
+          "site": "flightaware",
+          "snapshot_utc": "20220901185052",
+          "original_url": "https://www.flightaware.com/live/flight/N59906",
+          "live_http_today": 200,
+          "rows": null,
+          "table_state": null,
+          "bytes": 543666
+        },
+        {
+          "site": "flightradar24",
+          "snapshot_utc": "20220829235831",
+          "original_url": "https://www.flightradar24.com/data/aircraft/n59906",
+          "live_http_today": 403,
+          "rows": 0,
+          "table_state": null,
+          "bytes": 74642
+        },
+        {
+          "site": "flightradar24",
+          "snapshot_utc": "20220830011544",
+          "original_url": "https://www.flightradar24.com/data/aircraft/n59906",
+          "live_http_today": 403,
+          "rows": 0,
+          "table_state": null,
+          "bytes": 74642
+        }
+      ],
+      "alleged_overlaps": {},
+      "flight_rows_recovered_from_archived_pages": 0,
+      "removed_from": [],
+      "headline": "no documented page removal"
+    },
+    "N872RA": {
+      "adsb_archives": {
+        "adsb-lol": {
+          "files": 12,
+          "days": 12,
+          "earliest": "2025-09-01",
+          "latest": "2025-10-10"
+        },
+        "airplanes-live": {
+          "files": 48,
+          "days": 48,
+          "earliest": "2025-09-01",
+          "latest": "2026-06-05"
+        },
+        "adsbexchange-samples": {
+          "files": 24,
+          "days": 24,
+          "earliest": "2022-04-01",
+          "latest": "2026-08-01"
+        },
+        "adsblol-github-backup": {
+          "files": 0,
+          "days": 0,
+          "earliest": null,
+          "latest": null
+        }
+      },
+      "tracking_site_pages": {
+        "flightradar24": {
+          "snapshots": 0,
+          "live_http_today": 403,
+          "first": null,
+          "last": null,
+          "captured": 0,
+          "verdict": "STILL_PUBLIC_BROWSER_VERIFIED",
+          "browser_http": 200
+        },
+        "flightaware": {
+          "snapshots": 0,
+          "live_http_today": 200,
+          "first": null,
+          "last": null,
+          "captured": 0,
+          "verdict": "STILL_PUBLIC",
+          "browser_http": null
+        },
+        "radarbox": {
+          "snapshots": 0,
+          "live_http_today": 403,
+          "first": null,
+          "last": null,
+          "captured": 0,
+          "verdict": "SCRIPT_BLOCKED_TELLS_US_NOTHING",
+          "browser_http": null
+        },
+        "adsbexchange": {
+          "snapshots": 0,
+          "live_http_today": 200,
+          "first": null,
+          "last": null,
+          "captured": 0,
+          "verdict": "STILL_PUBLIC",
+          "browser_http": null
+        },
+        "planespotters": {
+          "snapshots": 0,
+          "live_http_today": 403,
+          "first": null,
+          "last": null,
+          "captured": 0,
+          "verdict": "SCRIPT_BLOCKED_TELLS_US_NOTHING",
+          "browser_http": null
+        }
+      },
+      "wayback_captures": [],
+      "alleged_overlaps": {},
+      "flight_rows_recovered_from_archived_pages": 0,
+      "removed_from": [],
+      "headline": "no documented page removal"
+    },
+    "N888KG": {
+      "adsb_archives": {
+        "adsb-lol": {
+          "files": 4,
+          "days": 4,
+          "earliest": "2025-09-07",
+          "latest": "2025-10-09"
+        },
+        "airplanes-live": {
+          "files": 12,
+          "days": 12,
+          "earliest": "2025-09-07",
+          "latest": "2026-05-28"
+        },
+        "adsbexchange-samples": {
+          "files": 13,
+          "days": 13,
+          "earliest": "2022-03-01",
+          "latest": "2026-02-01"
+        },
+        "adsblol-github-backup": {
+          "files": 0,
+          "days": 0,
+          "earliest": null,
+          "latest": null
+        }
+      },
+      "tracking_site_pages": {
+        "flightradar24": {
+          "snapshots": 13,
+          "live_http_today": 403,
+          "first": "20250911061420",
+          "last": "20260128220600",
+          "captured": 13,
+          "verdict": "STILL_PUBLIC_BROWSER_VERIFIED",
+          "browser_http": 200
+        },
+        "flightaware": {
+          "snapshots": 9,
+          "live_http_today": 200,
+          "first": "20110704021349",
+          "last": "20250911171115",
+          "captured": 9,
+          "verdict": "STILL_PUBLIC",
+          "browser_http": null
+        },
+        "radarbox": {
+          "snapshots": 0,
+          "live_http_today": 403,
+          "first": null,
+          "last": null,
+          "captured": 0,
+          "verdict": "SCRIPT_BLOCKED_TELLS_US_NOTHING",
+          "browser_http": null
+        },
+        "adsbexchange": {
+          "snapshots": 0,
+          "live_http_today": 200,
+          "first": null,
+          "last": null,
+          "captured": 0,
+          "verdict": "STILL_PUBLIC",
+          "browser_http": null
+        },
+        "planespotters": {
+          "snapshots": 0,
+          "live_http_today": 403,
+          "first": null,
+          "last": null,
+          "captured": 0,
+          "verdict": "SCRIPT_BLOCKED_TELLS_US_NOTHING",
+          "browser_http": null
+        }
+      },
+      "wayback_captures": [
+        {
+          "site": "flightaware",
+          "snapshot_utc": "20110704021349",
+          "original_url": "https://www.flightaware.com/live/flight/N888KG",
+          "live_http_today": 200,
+          "rows": 8,
+          "table_state": "POPULATED",
+          "bytes": 89631
+        },
+        {
+          "site": "flightaware",
+          "snapshot_utc": "20110804160445",
+          "original_url": "https://www.flightaware.com/live/flight/N888KG",
+          "live_http_today": 200,
+          "rows": 12,
+          "table_state": "POPULATED",
+          "bytes": 90798
+        },
+        {
+          "site": "flightaware",
+          "snapshot_utc": "20160411131623",
+          "original_url": "https://www.flightaware.com/live/flight/N888KG",
+          "live_http_today": 200,
+          "rows": 6,
+          "table_state": "POPULATED",
+          "bytes": 60821
+        },
+        {
+          "site": "flightaware",
+          "snapshot_utc": "20160512211648",
+          "original_url": "https://www.flightaware.com/live/flight/N888KG",
+          "live_http_today": 200,
+          "rows": 6,
+          "table_state": "POPULATED",
+          "bytes": 52518
+        },
+        {
+          "site": "flightaware",
+          "snapshot_utc": "20160514072707",
+          "original_url": "https://www.flightaware.com/live/flight/N888KG",
+          "live_http_today": 200,
+          "rows": 8,
+          "table_state": "POPULATED",
+          "bytes": 54976
+        },
+        {
+          "site": "flightaware",
+          "snapshot_utc": "20160813114715",
+          "original_url": "https://www.flightaware.com/live/flight/N888KG",
+          "live_http_today": 200,
+          "rows": 11,
+          "table_state": "POPULATED",
+          "bytes": 56343
+        },
+        {
+          "site": "flightaware",
+          "snapshot_utc": "20160915115945",
+          "original_url": "https://www.flightaware.com/live/flight/N888KG",
+          "live_http_today": 200,
+          "rows": 3,
+          "table_state": "POPULATED",
+          "bytes": 49299
+        },
+        {
+          "site": "flightaware",
+          "snapshot_utc": "20161017085324",
+          "original_url": "https://www.flightaware.com/live/flight/N888KG",
+          "live_http_today": 200,
+          "rows": 6,
+          "table_state": "POPULATED",
+          "bytes": 54101
+        },
+        {
+          "site": "flightaware",
+          "snapshot_utc": "20250911171115",
+          "original_url": "https://www.flightaware.com/live/flight/N888KG",
+          "live_http_today": 200,
+          "rows": 0,
+          "table_state": "JAVASCRIPT_SHELL_NO_SERVER_RENDERED_ROWS",
+          "bytes": 458001
+        },
+        {
+          "site": "flightradar24",
+          "snapshot_utc": "20250911061420",
+          "original_url": "https://www.flightradar24.com/data/aircraft/n888kg",
+          "live_http_today": 403,
+          "rows": 2,
+          "table_state": "POPULATED",
+          "bytes": 63880
+        },
+        {
+          "site": "flightradar24",
+          "snapshot_utc": "20250911092819",
+          "original_url": "https://www.flightradar24.com/data/aircraft/n888kg",
+          "live_http_today": 403,
+          "rows": 2,
+          "table_state": "POPULATED",
+          "bytes": 63880
+        },
+        {
+          "site": "flightradar24",
+          "snapshot_utc": "20250911215125",
+          "original_url": "https://www.flightradar24.com/data/aircraft/n888kg",
+          "live_http_today": 403,
+          "rows": 2,
+          "table_state": "POPULATED",
+          "bytes": 63880
+        },
+        {
+          "site": "flightradar24",
+          "snapshot_utc": "20250912163007",
+          "original_url": "https://www.flightradar24.com/data/aircraft/n888kg",
+          "live_http_today": 403,
+          "rows": 2,
+          "table_state": "POPULATED",
+          "bytes": 63880
+        },
+        {
+          "site": "flightradar24",
+          "snapshot_utc": "20250913000556",
+          "original_url": "https://www.flightradar24.com/data/aircraft/n888kg",
+          "live_http_today": 403,
+          "rows": 2,
+          "table_state": "POPULATED",
+          "bytes": 63880
+        },
+        {
+          "site": "flightradar24",
+          "snapshot_utc": "20250918040814",
+          "original_url": "https://www.flightradar24.com/data/aircraft/n888kg",
+          "live_http_today": 403,
+          "rows": 0,
+          "table_state": "PRESENT_BUT_EMPTY",
+          "bytes": 56641
+        },
+        {
+          "site": "flightradar24",
+          "snapshot_utc": "20250918132732",
+          "original_url": "https://www.flightradar24.com/data/aircraft/n888kg",
+          "live_http_today": 403,
+          "rows": 0,
+          "table_state": "PRESENT_BUT_EMPTY",
+          "bytes": 56641
+        },
+        {
+          "site": "flightradar24",
+          "snapshot_utc": "20250918152622",
+          "original_url": "https://www.flightradar24.com/data/aircraft/n888kg",
+          "live_http_today": 403,
+          "rows": 0,
+          "table_state": "PRESENT_BUT_EMPTY",
+          "bytes": 56655
+        },
+        {
+          "site": "flightradar24",
+          "snapshot_utc": "20250918192340",
+          "original_url": "https://www.flightradar24.com/data/aircraft/n888kg",
+          "live_http_today": 403,
+          "rows": 0,
+          "table_state": "PRESENT_BUT_EMPTY",
+          "bytes": 56641
+        },
+        {
+          "site": "flightradar24",
+          "snapshot_utc": "20250919060201",
+          "original_url": "https://www.flightradar24.com/data/aircraft/n888kg",
+          "live_http_today": 403,
+          "rows": 0,
+          "table_state": "PRESENT_BUT_EMPTY",
+          "bytes": 56641
+        },
+        {
+          "site": "flightradar24",
+          "snapshot_utc": "20250920144650",
+          "original_url": "https://www.flightradar24.com/data/aircraft/n888kg",
+          "live_http_today": 403,
+          "rows": 0,
+          "table_state": "PRESENT_BUT_EMPTY",
+          "bytes": 56641
+        },
+        {
+          "site": "flightradar24",
+          "snapshot_utc": "20251102174507",
+          "original_url": "https://www.flightradar24.com/data/aircraft/n888kg",
+          "live_http_today": 403,
+          "rows": 0,
+          "table_state": "PRESENT_BUT_EMPTY",
+          "bytes": 57082
+        },
+        {
+          "site": "flightradar24",
+          "snapshot_utc": "20260128220600",
+          "original_url": "https://www.flightradar24.com/data/aircraft/n888kg",
+          "live_http_today": 403,
+          "rows": 0,
+          "table_state": "PRESENT_BUT_EMPTY",
+          "bytes": 57096
+        }
+      ],
+      "alleged_overlaps": {},
+      "flight_rows_recovered_from_archived_pages": 70,
+      "removed_from": [],
+      "headline": "no documented page removal"
+    },
+    "SU-BGM": {
+      "adsb_archives": {
+        "adsb-lol": {
+          "files": 2,
+          "days": 2,
+          "earliest": "2025-09-06",
+          "latest": "2025-09-16"
+        },
+        "airplanes-live": {
+          "files": 5,
+          "days": 5,
+          "earliest": "2025-09-06",
+          "latest": "2026-05-16"
+        },
+        "adsbexchange-samples": {
+          "files": 1,
+          "days": 1,
+          "earliest": "2023-08-01",
+          "latest": "2023-08-01"
+        },
+        "adsblol-github-backup": {
+          "files": 0,
+          "days": 0,
+          "earliest": null,
+          "latest": null
+        }
+      },
+      "tracking_site_pages": {
+        "flightradar24": {
+          "snapshots": 1,
+          "live_http_today": 403,
+          "first": "20200507104145",
+          "last": "20200507104145",
+          "captured": 1,
+          "verdict": "STILL_PUBLIC_BROWSER_VERIFIED",
+          "browser_http": 200
+        },
+        "flightaware": {
+          "snapshots": 0,
+          "live_http_today": 200,
+          "first": null,
+          "last": null,
+          "captured": 0,
+          "verdict": "STILL_PUBLIC",
+          "browser_http": null
+        },
+        "radarbox": {
+          "snapshots": 0,
+          "live_http_today": 403,
+          "first": null,
+          "last": null,
+          "captured": 0,
+          "verdict": "SCRIPT_BLOCKED_TELLS_US_NOTHING",
+          "browser_http": null
+        },
+        "adsbexchange": {
+          "snapshots": 0,
+          "live_http_today": 200,
+          "first": null,
+          "last": null,
+          "captured": 0,
+          "verdict": "STILL_PUBLIC",
+          "browser_http": null
+        },
+        "planespotters": {
+          "snapshots": 0,
+          "live_http_today": 403,
+          "first": null,
+          "last": null,
+          "captured": 0,
+          "verdict": "SCRIPT_BLOCKED_TELLS_US_NOTHING",
+          "browser_http": null
+        }
+      },
+      "wayback_captures": [
+        {
+          "site": "flightradar24",
+          "snapshot_utc": "20200507104145",
+          "original_url": "https://www.flightradar24.com/data/aircraft/su-bgm",
+          "live_http_today": 403,
+          "rows": 6,
+          "table_state": "POPULATED",
+          "bytes": 82325
+        }
+      ],
+      "alleged_overlaps": {},
+      "flight_rows_recovered_from_archived_pages": 6,
+      "removed_from": [],
+      "headline": "no documented page removal"
+    },
+    "SU-BND": {
+      "adsb_archives": {
+        "adsb-lol": {
+          "files": 19,
+          "days": 19,
+          "earliest": "2023-05-03",
+          "latest": "2025-09-15"
+        },
+        "airplanes-live": {
+          "files": 27,
+          "days": 27,
+          "earliest": "2023-05-03",
+          "latest": "2026-06-04"
+        },
+        "adsbexchange-samples": {
+          "files": 6,
+          "days": 6,
+          "earliest": "2022-01-01",
+          "latest": "2026-07-01"
+        },
+        "adsblol-github-backup": {
+          "files": 0,
+          "days": 0,
+          "earliest": null,
+          "latest": null
+        }
+      },
+      "tracking_site_pages": {
+        "flightradar24": {
+          "snapshots": 2,
+          "live_http_today": 403,
+          "first": "20251012101207",
+          "last": "20251118001204",
+          "captured": 2,
+          "verdict": "STILL_PUBLIC_BROWSER_VERIFIED",
+          "browser_http": 200
+        },
+        "flightaware": {
+          "snapshots": 0,
+          "live_http_today": 200,
+          "first": null,
+          "last": null,
+          "captured": 0,
+          "verdict": "STILL_PUBLIC",
+          "browser_http": null
+        },
+        "radarbox": {
+          "snapshots": 0,
+          "live_http_today": 403,
+          "first": null,
+          "last": null,
+          "captured": 0,
+          "verdict": "SCRIPT_BLOCKED_TELLS_US_NOTHING",
+          "browser_http": null
+        },
+        "adsbexchange": {
+          "snapshots": 0,
+          "live_http_today": 200,
+          "first": null,
+          "last": null,
+          "captured": 0,
+          "verdict": "STILL_PUBLIC",
+          "browser_http": null
+        },
+        "planespotters": {
+          "snapshots": 0,
+          "live_http_today": 403,
+          "first": null,
+          "last": null,
+          "captured": 0,
+          "verdict": "SCRIPT_BLOCKED_TELLS_US_NOTHING",
+          "browser_http": null
+        }
+      },
+      "wayback_captures": [
+        {
+          "site": "flightradar24",
+          "snapshot_utc": "20251012101207",
+          "original_url": "https://www.flightradar24.com/data/aircraft/su-bnd",
+          "live_http_today": 403,
+          "rows": 7,
+          "table_state": "POPULATED",
+          "bytes": 83178
+        },
+        {
+          "site": "flightradar24",
+          "snapshot_utc": "20251118001204",
+          "original_url": "https://www.flightradar24.com/data/aircraft/su-bnd",
+          "live_http_today": 403,
+          "rows": 4,
+          "table_state": "POPULATED",
+          "bytes": 72545
+        }
+      ],
+      "alleged_overlaps": {
+        "alleged": 16,
+        "recovered": 7,
+        "window_only": 3,
+        "none": 6
+      },
+      "flight_rows_recovered_from_archived_pages": 11,
+      "removed_from": [],
+      "headline": "no documented page removal"
+    },
+    "SU-BTT": {
+      "adsb_archives": {
+        "adsb-lol": {
+          "files": 29,
+          "days": 29,
+          "earliest": "2023-02-24",
+          "latest": "2025-10-11"
+        },
+        "airplanes-live": {
+          "files": 37,
+          "days": 37,
+          "earliest": "2023-02-24",
+          "latest": "2026-05-24"
+        },
+        "adsbexchange-samples": {
+          "files": 6,
+          "days": 6,
+          "earliest": "2022-05-01",
+          "latest": "2026-03-01"
+        },
+        "adsblol-github-backup": {
+          "files": 0,
+          "days": 0,
+          "earliest": null,
+          "latest": null
+        }
+      },
+      "tracking_site_pages": {
+        "flightradar24": {
+          "snapshots": 0,
+          "live_http_today": 403,
+          "first": null,
+          "last": null,
+          "captured": 0,
+          "verdict": "STILL_PUBLIC_BROWSER_VERIFIED",
+          "browser_http": 200
+        },
+        "flightaware": {
+          "snapshots": 0,
+          "live_http_today": 200,
+          "first": null,
+          "last": null,
+          "captured": 0,
+          "verdict": "STILL_PUBLIC",
+          "browser_http": null
+        },
+        "radarbox": {
+          "snapshots": 0,
+          "live_http_today": 403,
+          "first": null,
+          "last": null,
+          "captured": 0,
+          "verdict": "SCRIPT_BLOCKED_TELLS_US_NOTHING",
+          "browser_http": null
+        },
+        "adsbexchange": {
+          "snapshots": 0,
+          "live_http_today": 200,
+          "first": null,
+          "last": null,
+          "captured": 0,
+          "verdict": "STILL_PUBLIC",
+          "browser_http": null
+        },
+        "planespotters": {
+          "snapshots": 0,
+          "live_http_today": 403,
+          "first": null,
+          "last": null,
+          "captured": 0,
+          "verdict": "SCRIPT_BLOCKED_TELLS_US_NOTHING",
+          "browser_http": null
+        }
+      },
+      "wayback_captures": [],
+      "alleged_overlaps": {
+        "alleged": 53,
+        "recovered": 16,
+        "window_only": 4,
+        "none": 33
+      },
+      "flight_rows_recovered_from_archived_pages": 0,
+      "removed_from": [],
+      "headline": "no documented page removal"
+    },
+    "SU-BTU": {
+      "adsb_archives": {
+        "adsb-lol": {
+          "files": 0,
+          "days": 0,
+          "earliest": null,
+          "latest": null
+        },
+        "airplanes-live": {
+          "files": 3,
+          "days": 3,
+          "earliest": "2026-04-26",
+          "latest": "2026-05-12"
+        },
+        "adsbexchange-samples": {
+          "files": 9,
+          "days": 9,
+          "earliest": "2022-12-01",
+          "latest": "2026-03-01"
+        },
+        "adsblol-github-backup": {
+          "files": 0,
+          "days": 0,
+          "earliest": null,
+          "latest": null
+        }
+      },
+      "tracking_site_pages": {
+        "flightradar24": {
+          "snapshots": 1,
+          "live_http_today": 403,
+          "first": "20220831143944",
+          "last": "20220831143944",
+          "captured": 1,
+          "verdict": "STILL_PUBLIC_BROWSER_VERIFIED",
+          "browser_http": 200
+        },
+        "flightaware": {
+          "snapshots": 0,
+          "live_http_today": 200,
+          "first": null,
+          "last": null,
+          "captured": 0,
+          "verdict": "STILL_PUBLIC",
+          "browser_http": null
+        },
+        "radarbox": {
+          "snapshots": 0,
+          "live_http_today": 403,
+          "first": null,
+          "last": null,
+          "captured": 0,
+          "verdict": "SCRIPT_BLOCKED_TELLS_US_NOTHING",
+          "browser_http": null
+        },
+        "adsbexchange": {
+          "snapshots": 0,
+          "live_http_today": 200,
+          "first": null,
+          "last": null,
+          "captured": 0,
+          "verdict": "STILL_PUBLIC",
+          "browser_http": null
+        },
+        "planespotters": {
+          "snapshots": 0,
+          "live_http_today": 403,
+          "first": null,
+          "last": null,
+          "captured": 0,
+          "verdict": "SCRIPT_BLOCKED_TELLS_US_NOTHING",
+          "browser_http": null
+        }
+      },
+      "wayback_captures": [
+        {
+          "site": "flightradar24",
+          "snapshot_utc": "20220831143944",
+          "original_url": "https://www.flightradar24.com/data/aircraft/su-btu",
+          "live_http_today": 403,
+          "rows": 4,
+          "table_state": "POPULATED",
+          "bytes": 71136
+        }
+      ],
+      "alleged_overlaps": {},
+      "flight_rows_recovered_from_archived_pages": 4,
+      "removed_from": [],
+      "headline": "no documented page removal"
+    },
+    "SU-BTV": {
+      "adsb_archives": {
+        "adsb-lol": {
+          "files": 1,
+          "days": 1,
+          "earliest": "2025-10-11",
+          "latest": "2025-10-11"
+        },
+        "airplanes-live": {
+          "files": 7,
+          "days": 7,
+          "earliest": "2025-10-11",
+          "latest": "2026-05-24"
+        },
+        "adsbexchange-samples": {
+          "files": 2,
+          "days": 2,
+          "earliest": "2022-10-01",
+          "latest": "2025-10-01"
+        },
+        "adsblol-github-backup": {
+          "files": 0,
+          "days": 0,
+          "earliest": null,
+          "latest": null
+        }
+      },
+      "tracking_site_pages": {
+        "flightradar24": {
+          "snapshots": 0,
+          "live_http_today": 403,
+          "first": null,
+          "last": null,
+          "captured": 0,
+          "verdict": "STILL_PUBLIC_BROWSER_VERIFIED",
+          "browser_http": 200
+        },
+        "flightaware": {
+          "snapshots": 0,
+          "live_http_today": 200,
+          "first": null,
+          "last": null,
+          "captured": 0,
+          "verdict": "STILL_PUBLIC",
+          "browser_http": null
+        },
+        "radarbox": {
+          "snapshots": 0,
+          "live_http_today": 403,
+          "first": null,
+          "last": null,
+          "captured": 0,
+          "verdict": "SCRIPT_BLOCKED_TELLS_US_NOTHING",
+          "browser_http": null
+        },
+        "adsbexchange": {
+          "snapshots": 0,
+          "live_http_today": 200,
+          "first": null,
+          "last": null,
+          "captured": 0,
+          "verdict": "STILL_PUBLIC",
+          "browser_http": null
+        },
+        "planespotters": {
+          "snapshots": 0,
+          "live_http_today": 403,
+          "first": null,
+          "last": null,
+          "captured": 0,
+          "verdict": "SCRIPT_BLOCKED_TELLS_US_NOTHING",
+          "browser_http": null
+        }
+      },
+      "wayback_captures": [],
+      "alleged_overlaps": {},
+      "flight_rows_recovered_from_archived_pages": 0,
+      "removed_from": [],
+      "headline": "no documented page removal"
+    },
+    "T7-ELL": {
+      "adsb_archives": {
+        "adsb-lol": {
+          "files": 5,
+          "days": 5,
+          "earliest": "2025-09-03",
+          "latest": "2025-10-11"
+        },
+        "airplanes-live": {
+          "files": 26,
+          "days": 26,
+          "earliest": "2025-09-03",
+          "latest": "2026-05-29"
+        },
+        "adsbexchange-samples": {
+          "files": 12,
+          "days": 12,
+          "earliest": "2022-02-01",
+          "latest": "2026-08-01"
+        },
+        "adsblol-github-backup": {
+          "files": 0,
+          "days": 0,
+          "earliest": null,
+          "latest": null
+        }
+      },
+      "tracking_site_pages": {
+        "flightradar24": {
+          "snapshots": 0,
+          "live_http_today": 403,
+          "first": null,
+          "last": null,
+          "captured": 0,
+          "verdict": "STILL_PUBLIC_BROWSER_VERIFIED",
+          "browser_http": 200
+        },
+        "flightaware": {
+          "snapshots": 0,
+          "live_http_today": 200,
+          "first": null,
+          "last": null,
+          "captured": 0,
+          "verdict": "STILL_PUBLIC",
+          "browser_http": null
+        },
+        "radarbox": {
+          "snapshots": 0,
+          "live_http_today": 403,
+          "first": null,
+          "last": null,
+          "captured": 0,
+          "verdict": "SCRIPT_BLOCKED_TELLS_US_NOTHING",
+          "browser_http": null
+        },
+        "adsbexchange": {
+          "snapshots": 0,
+          "live_http_today": 200,
+          "first": null,
+          "last": null,
+          "captured": 0,
+          "verdict": "STILL_PUBLIC",
+          "browser_http": null
+        },
+        "planespotters": {
+          "snapshots": 0,
+          "live_http_today": 403,
+          "first": null,
+          "last": null,
+          "captured": 0,
+          "verdict": "SCRIPT_BLOCKED_TELLS_US_NOTHING",
+          "browser_http": null
+        }
+      },
+      "wayback_captures": [],
+      "alleged_overlaps": {},
+      "flight_rows_recovered_from_archived_pages": 0,
+      "removed_from": [],
+      "headline": "no documented page removal"
+    }
+  }
+}

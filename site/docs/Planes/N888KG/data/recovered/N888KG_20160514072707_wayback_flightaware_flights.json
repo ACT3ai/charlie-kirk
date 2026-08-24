@@ -1,0 +1,144 @@
+{
+  "extracted_utc": "2026-08-24T17:18:33.564831Z",
+  "extractor": "extract_wayback_flights.py",
+  "supersedes": "flight_rows_recovered in the .meta.json sidecar, which was wrong",
+  "tail": "N888KG",
+  "snapshot_utc": "20160514072707",
+  "site": "flightaware",
+  "file": "N888KG_20160514072707_wayback_flightaware.html",
+  "bytes": 54741,
+  "live_http_today": 200,
+  "previously_recorded": null,
+  "rows_recovered": 8,
+  "flights": [
+    {
+      "date": "13-May-2016",
+      "airports": [
+        "KMQI",
+        "KPBI"
+      ],
+      "cells": [
+        "13-May-2016",
+        "C25C",
+        "Dare County Rgnl ( KMQI )",
+        "Palm Beach Intl ( KPBI )",
+        "08:32PM&nbsp; EDT",
+        "10:12PM&nbsp; EDT",
+        "1:40"
+      ]
+    },
+    {
+      "date": "12-May-2016",
+      "airports": [
+        "KTEB",
+        "KMQI"
+      ],
+      "cells": [
+        "12-May-2016",
+        "C25C",
+        "Teterboro ( KTEB )",
+        "Dare County Rgnl ( KMQI )",
+        "09:22PM&nbsp; EDT",
+        "10:19PM&nbsp; EDT",
+        "0:57"
+      ]
+    },
+    {
+      "date": "12-May-2016",
+      "airports": [
+        "KPBI",
+        "KTEB"
+      ],
+      "cells": [
+        "12-May-2016",
+        "C25C",
+        "Palm Beach Intl ( KPBI )",
+        "Teterboro ( KTEB )",
+        "06:20AM&nbsp; EDT",
+        "08:52AM&nbsp; EDT",
+        "2:32"
+      ]
+    },
+    {
+      "date": "10-May-2016",
+      "airports": [
+        "KCHS",
+        "KPBI"
+      ],
+      "cells": [
+        "10-May-2016",
+        "C25C",
+        "Charleston Afb/Intl ( KCHS )",
+        "Palm Beach Intl ( KPBI )",
+        "05:06PM&nbsp; EDT",
+        "06:27PM&nbsp; EDT",
+        "1:21"
+      ]
+    },
+    {
+      "date": "10-May-2016",
+      "airports": [
+        "KGVL",
+        "KCHS"
+      ],
+      "cells": [
+        "10-May-2016",
+        "C25C",
+        "Lee Gilmer Memorial ( KGVL )",
+        "Charleston Afb/Intl ( KCHS )",
+        "02:06PM&nbsp; EDT",
+        "02:37PM&nbsp; EDT",
+        "0:31"
+      ]
+    },
+    {
+      "date": "10-May-2016",
+      "airports": [
+        "KPBI",
+        "KGVL"
+      ],
+      "cells": [
+        "10-May-2016",
+        "C25C",
+        "Palm Beach Intl ( KPBI )",
+        "Lee Gilmer Memorial ( KGVL )",
+        "09:56AM&nbsp; EDT",
+        "11:18AM&nbsp; EDT",
+        "1:22"
+      ]
+    },
+    {
+      "date": "03-May-2016",
+      "airports": [
+        "KECP",
+        "KPBI"
+      ],
+      "cells": [
+        "03-May-2016",
+        "C25C/ L",
+        "Northwest Florida Beaches Intl ( KECP )",
+        "Palm Beach Intl ( KPBI )",
+        "05:17PM&nbsp; CDT",
+        "07:24PM&nbsp; EDT",
+        "1:07"
+      ]
+    },
+    {
+      "date": "03-May-2016",
+      "airports": [
+        "KPBI",
+        "KECP"
+      ],
+      "cells": [
+        "03-May-2016",
+        "C25C/ L",
+        "Palm Beach Intl ( KPBI )",
+        "Northwest Florida Beaches Intl ( KECP )",
+        "08:09AM&nbsp; EDT",
+        "08:21AM&nbsp; CDT",
+        "1:11"
+      ]
+    }
+  ],
+  "table_state": "POPULATED"
+}

@@ -1,0 +1,144 @@
+{
+  "extracted_utc": "2026-08-24T17:18:33.564831Z",
+  "extractor": "extract_wayback_flights.py",
+  "supersedes": "flight_rows_recovered in the .meta.json sidecar, which was wrong",
+  "tail": "N582MM",
+  "snapshot_utc": "20150114071205",
+  "site": "flightaware",
+  "file": "N582MM_20150114071205_wayback_flightaware.html",
+  "bytes": 52364,
+  "live_http_today": 200,
+  "previously_recorded": null,
+  "rows_recovered": 8,
+  "flights": [
+    {
+      "date": "13-Jan-2015",
+      "airports": [
+        "KSDL",
+        "KMEV"
+      ],
+      "cells": [
+        "13-Jan-2015",
+        "LJ60/ L",
+        "Scottsdale ( KSDL )",
+        "Minden-Tahoe ( KMEV )",
+        "07:20PM&nbsp; MST",
+        "07:41PM&nbsp; PST",
+        "1:21"
+      ]
+    },
+    {
+      "date": "12-Jan-2015",
+      "airports": [
+        "KLGB",
+        "KSDL"
+      ],
+      "cells": [
+        "12-Jan-2015",
+        "LJ60/ L",
+        "Daugherty Field ( KLGB )",
+        "Scottsdale ( KSDL )",
+        "04:34PM&nbsp; PST",
+        "06:27PM&nbsp; MST",
+        "0:53"
+      ]
+    },
+    {
+      "date": "12-Jan-2015",
+      "airports": [
+        "KMEV",
+        "KLGB"
+      ],
+      "cells": [
+        "12-Jan-2015",
+        "LJ60/ L",
+        "Minden-Tahoe ( KMEV )",
+        "Daugherty Field ( KLGB )",
+        "03:05PM&nbsp; PST",
+        "04:07PM&nbsp; PST",
+        "1:02"
+      ]
+    },
+    {
+      "date": "09-Jan-2015",
+      "airports": [
+        "KBUR",
+        "KMEV"
+      ],
+      "cells": [
+        "09-Jan-2015",
+        "LJ60/ L",
+        "Bob Hope ( KBUR )",
+        "Minden-Tahoe ( KMEV )",
+        "10:44AM&nbsp; PST",
+        "11:29AM&nbsp; PST",
+        "0:45"
+      ]
+    },
+    {
+      "date": "09-Jan-2015",
+      "airports": [
+        "KMEV",
+        "KBUR"
+      ],
+      "cells": [
+        "09-Jan-2015",
+        "LJ60/ L",
+        "Minden-Tahoe ( KMEV )",
+        "Bob Hope ( KBUR )",
+        "09:08AM&nbsp; PST",
+        "10:03AM&nbsp; PST",
+        "0:55"
+      ]
+    },
+    {
+      "date": "05-Jan-2015",
+      "airports": [
+        "KSAN",
+        "KMEV"
+      ],
+      "cells": [
+        "05-Jan-2015",
+        "LJ60/ L",
+        "San Diego Intl ( KSAN )",
+        "Minden-Tahoe ( KMEV )",
+        "04:06PM&nbsp; PST",
+        "05:10PM&nbsp; PST",
+        "1:04"
+      ]
+    },
+    {
+      "date": "05-Jan-2015",
+      "airports": [
+        "KSDL",
+        "KSAN"
+      ],
+      "cells": [
+        "05-Jan-2015",
+        "LJ60/ L",
+        "Scottsdale ( KSDL )",
+        "San Diego Intl ( KSAN )",
+        "03:58PM&nbsp; MST",
+        "03:45PM&nbsp; PST",
+        "0:46"
+      ]
+    },
+    {
+      "date": "03-Jan-2015",
+      "airports": [
+        "KMEV",
+        "KSDL"
+      ],
+      "cells": [
+        "03-Jan-2015",
+        "LJ60/ L",
+        "Minden-Tahoe ( KMEV )",
+        "Scottsdale ( KSDL )",
+        "09:35AM&nbsp; PST",
+        "11:55AM&nbsp; MST",
+        "1:20"
+      ]
+    }
+  ],
+  "table_state": "POPULATED"
+}

@@ -1,0 +1,35 @@
+{
+  "retrieved_utc": "2026-08-24T17:18:17.391Z",
+  "vendor_credentials_redacted": 0,
+  "source": "airplanes-live",
+  "source_role": "BACKUP ARCHIVE — independent volunteer network",
+  "url": "https://globe.airplanes.live/globe_history/2023/05/03/traces/3e/trace_full_01003e.json",
+  "http_status": 200,
+  "bytes": 76780,
+  "tail": "SU-BND",
+  "hex": "01003e",
+  "utc_date": "2023-05-03",
+  "summary": {
+    "registration": "SU-BND",
+    "type": "GLF4",
+    "points": 460,
+    "first_seen_utc": "2023-05-03T15:28:41.250Z",
+    "first_pos": [
+      38.576908,
+      -90.17865
+    ],
+    "last_seen_utc": "2023-05-03T16:34:59.260Z",
+    "last_pos": [
+      38.550934,
+      -90.118402
+    ],
+    "wheels_up_utc": null,
+    "wheels_down_utc": null
+  },
+  "pulled_for": "alleged overlap",
+  "overlap_ids": [
+    "OWENS-014"
+  ],
+  "alleged_overlap_date": "2023-05-03",
+  "alleged_place": "St. Louis, MO"
+}

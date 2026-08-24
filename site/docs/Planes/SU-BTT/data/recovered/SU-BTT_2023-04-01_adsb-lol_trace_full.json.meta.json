@@ -1,0 +1,35 @@
+{
+  "retrieved_utc": "2026-08-24T17:18:17.391Z",
+  "vendor_credentials_redacted": 0,
+  "source": "adsb-lol",
+  "source_role": "the archive this investigation already used",
+  "url": "https://adsb.lol/globe_history/2023/04/01/traces/d3/trace_full_0101d3.json",
+  "http_status": 200,
+  "bytes": 108997,
+  "tail": "SU-BTT",
+  "hex": "0101d3",
+  "utc_date": "2023-04-01",
+  "summary": {
+    "registration": "SU-BTT",
+    "type": "FA7X",
+    "points": 558,
+    "first_seen_utc": "2023-04-01T07:28:09.460Z",
+    "first_pos": [
+      49.412613,
+      2.292692
+    ],
+    "last_seen_utc": "2023-04-01T16:01:24.750Z",
+    "last_pos": [
+      38.6651,
+      -90.615294
+    ],
+    "wheels_up_utc": null,
+    "wheels_down_utc": null
+  },
+  "pulled_for": "alleged overlap",
+  "overlap_ids": [
+    "SITE-001"
+  ],
+  "alleged_overlap_date": "2023-04-02",
+  "alleged_place": "Jefferson City (event) / St. Louis (aircraft), MO"
+}

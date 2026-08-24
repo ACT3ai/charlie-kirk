@@ -1,0 +1,35 @@
+{
+  "retrieved_utc": "2026-08-24T17:18:17.391Z",
+  "vendor_credentials_redacted": 0,
+  "source": "adsb-lol",
+  "source_role": "the archive this investigation already used",
+  "url": "https://adsb.lol/globe_history/2023/04/14/traces/d3/trace_full_0101d3.json",
+  "http_status": 200,
+  "bytes": 101380,
+  "tail": "SU-BTT",
+  "hex": "0101d3",
+  "utc_date": "2023-04-14",
+  "summary": {
+    "registration": "SU-BTT",
+    "type": "FA7X",
+    "points": 505,
+    "first_seen_utc": "2023-04-14T09:01:07.280Z",
+    "first_pos": [
+      48.968625,
+      2.513412
+    ],
+    "last_seen_utc": "2023-04-14T17:58:13.940Z",
+    "last_pos": [
+      38.959946,
+      -95.470117
+    ],
+    "wheels_up_utc": null,
+    "wheels_down_utc": null
+  },
+  "pulled_for": "alleged overlap",
+  "overlap_ids": [
+    "OWENS-012"
+  ],
+  "alleged_overlap_date": "2023-04-14",
+  "alleged_place": "Wichita, KS"
+}

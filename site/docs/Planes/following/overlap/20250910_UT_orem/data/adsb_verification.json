@@ -1,0 +1,164 @@
+{
+  "verified_utc": "2026-08-24T17:33:16.248Z",
+  "overlap_id": "SITE-006",
+  "date": "2025-09-10",
+  "claimed_airport": "KPVU",
+  "claimed_city": "Orem (event) / Provo (aircraft)",
+  "claimed_state": "UT",
+  "claimed_tails": [
+    "SU-BTT",
+    "SU-BND"
+  ],
+  "subject": "Charlie",
+  "audit_verdict": "accurate",
+  "site_page": "site/docs/Planes/following/overlap/20250910_UT_orem/overview.mdx",
+  "tails": {
+    "SU-BTT": {
+      "2025-09-09": {
+        "adsb_lol_http": 404,
+        "airplanes_live_http": 404,
+        "archive_control_probe": {
+          "adsb-lol": {
+            "verdict": "COVERED",
+            "codes": [
+              404,
+              404,
+              404,
+              404,
+              404,
+              404,
+              404,
+              404,
+              200
+            ]
+          },
+          "airplanes-live": {
+            "verdict": "COVERED",
+            "codes": [
+              404,
+              404,
+              404,
+              404,
+              404,
+              404,
+              404,
+              404,
+              200
+            ]
+          }
+        },
+        "both_agree": false,
+        "heard": false,
+        "at_claimed_airport": false,
+        "airports_touched": null,
+        "first_where": null,
+        "last_where": null,
+        "points": null,
+        "verdict": "NOT_HEARD"
+      },
+      "2025-09-10": {
+        "adsb_lol_http": 200,
+        "airplanes_live_http": 200,
+        "archive_control_probe": null,
+        "both_agree": true,
+        "heard": true,
+        "at_claimed_airport": true,
+        "airports_touched": [
+          "KPVU 1.37km on_ground",
+          "KN57 7.02km below_4000ft",
+          "US-6790 9.16km below_4000ft",
+          "93MD 14.71km below_4000ft",
+          "KEVY 7.35km below_4000ft",
+          "1DE5 2.48km below_4000ft",
+          "DE34 5.45km below_4000ft",
+          "KILG 11.09km below_4000ft"
+        ],
+        "first_where": "KPVU/PVU (Provo Municipal Airport, Provo UT) 1.37km",
+        "last_where": "KILG/ILG (Wilmington Airport, Wilmington DE) 1.75km",
+        "points": 1229,
+        "verdict": "AT_CLAIMED_AIRPORT"
+      },
+      "2025-09-11": {
+        "adsb_lol_http": 200,
+        "airplanes_live_http": 200,
+        "archive_control_probe": null,
+        "both_agree": true,
+        "heard": true,
+        "at_claimed_airport": false,
+        "airports_touched": [
+          "KILG 0.95km on_ground",
+          "NJ30 11.19km below_4000ft",
+          "HEAZ 18.55km below_4000ft",
+          "HE15 11.03km below_4000ft"
+        ],
+        "first_where": "KILG/ILG (Wilmington Airport, Wilmington DE) 0.95km",
+        "last_where": "HEAZ (Almaza Air Force Base, El Nozha EG) 4.42km",
+        "points": 1399,
+        "verdict": "ELSEWHERE"
+      }
+    },
+    "SU-BND": {
+      "2025-09-09": {
+        "adsb_lol_http": 200,
+        "airplanes_live_http": 200,
+        "archive_control_probe": null,
+        "both_agree": true,
+        "heard": true,
+        "at_claimed_airport": true,
+        "airports_touched": [
+          "KPVU 1.3km on_ground"
+        ],
+        "first_where": "KPVU/PVU (Provo Municipal Airport, Provo UT) 1.3km",
+        "last_where": "KPVU/PVU (Provo Municipal Airport, Provo UT) 1.29km",
+        "points": 131,
+        "verdict": "AT_CLAIMED_AIRPORT"
+      },
+      "2025-09-10": {
+        "adsb_lol_http": 200,
+        "airplanes_live_http": 200,
+        "archive_control_probe": null,
+        "both_agree": true,
+        "heard": true,
+        "at_claimed_airport": true,
+        "airports_touched": [
+          "KPVU 1.29km on_ground"
+        ],
+        "first_where": "KPVU/PVU (Provo Municipal Airport, Provo UT) 1.29km",
+        "last_where": "KPVU/PVU (Provo Municipal Airport, Provo UT) 1.3km",
+        "points": 257,
+        "verdict": "AT_CLAIMED_AIRPORT"
+      },
+      "2025-09-11": {
+        "adsb_lol_http": 404,
+        "airplanes_live_http": 404,
+        "archive_control_probe": {
+          "adsb-lol": {
+            "verdict": "COVERED",
+            "codes": [
+              404,
+              404,
+              200
+            ]
+          },
+          "airplanes-live": {
+            "verdict": "COVERED",
+            "codes": [
+              404,
+              404,
+              200
+            ]
+          }
+        },
+        "both_agree": false,
+        "heard": false,
+        "at_claimed_airport": false,
+        "airports_touched": null,
+        "first_where": null,
+        "last_where": null,
+        "points": null,
+        "verdict": "NOT_HEARD"
+      }
+    }
+  },
+  "verdict": "AT_CLAIMED_AIRPORT"
+}

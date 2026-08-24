@@ -1,0 +1,31 @@
+{
+  "retrieved_utc": "2026-08-24T16:29:36.628Z",
+  "source": "airplanes-live",
+  "source_role": "BACKUP ARCHIVE — independent volunteer network",
+  "url": "https://globe.airplanes.live/globe_history/2026/05/15/traces/9e/trace_full_a0299e.json",
+  "http_status": 200,
+  "bytes": 604259,
+  "tail": "N1098L",
+  "hex": "a0299e",
+  "utc_date": "2026-05-15",
+  "summary": {
+    "registration": "N1098L",
+    "type": "GLEX",
+    "icao": "a0299e",
+    "points": 3449,
+    "first_seen_utc": "2026-05-15T14:32:10.740Z",
+    "first_pos": [
+      31.869141,
+      -106.306567
+    ],
+    "first_on_ground": false,
+    "last_seen_utc": "2026-05-15T23:59:59.290Z",
+    "last_pos": [
+      34.566573,
+      -99.634781
+    ],
+    "last_on_ground": false,
+    "wheels_up_utc": null,
+    "wheels_down_utc": null
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "retrieved_utc": "2026-08-24T16:29:36.628Z",
+  "source": "airplanes-live",
+  "source_role": "BACKUP ARCHIVE — independent volunteer network",
+  "url": "https://globe.airplanes.live/globe_history/2026/05/16/traces/4d/trace_full_a7c14d.json",
+  "http_status": 200,
+  "bytes": 567695,
+  "tail": "N59906",
+  "hex": "a7c14d",
+  "utc_date": "2026-05-16",
+  "summary": {
+    "registration": "N59906",
+    "type": "PA31",
+    "icao": "a7c14d",
+    "points": 3121,
+    "first_seen_utc": "2026-05-16T16:12:10.460Z",
+    "first_pos": [
+      42.594099,
+      -87.926315
+    ],
+    "first_on_ground": true,
+    "last_seen_utc": "2026-05-16T21:10:23.770Z",
+    "last_pos": [
+      42.594285,
+      -87.926426
+    ],
+    "last_on_ground": true,
+    "wheels_up_utc": "2026-05-16T16:24:45.400Z",
+    "wheels_down_utc": "2026-05-16T21:08:56.990Z"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "extracted_utc": "2026-08-24T17:18:33.564831Z",
+  "extractor": "extract_wayback_flights.py",
+  "supersedes": "flight_rows_recovered in the .meta.json sidecar, which was wrong",
+  "tail": "N40JD",
+  "snapshot_utc": "20220522070338",
+  "site": "flightradar24",
+  "file": "N40JD_20220522070338_wayback_flightradar24.html",
+  "bytes": 56792,
+  "live_http_today": 403,
+  "previously_recorded": 0,
+  "rows_recovered": 0,
+  "identity": {
+    "aircraft": "SEARCH AIRPORTS",
+    "operator": "-",
+    "type_code": "PRM1",
+    "mode_s": "A4AB14",
+    "serial": "AGE"
+  },
+  "flights": [],
+  "table_state": "PRESENT_BUT_EMPTY"
+}

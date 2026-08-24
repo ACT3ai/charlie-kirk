@@ -1,5 +1,6 @@
 {
-  "retrieved_utc": "2026-08-24T16:29:36.628Z",
+  "retrieved_utc": "2026-08-24T17:18:17.391Z",
+  "vendor_credentials_redacted": 0,
   "source": "airplanes-live",
   "source_role": "BACKUP ARCHIVE — independent volunteer network",
   "url": "https://globe.airplanes.live/globe_history/2025/09/10/traces/d3/trace_full_0101d3.json",
@@ -11,21 +12,26 @@
   "summary": {
     "registration": "SU-BTT",
     "type": "FA7X",
-    "icao": "0101d3",
     "points": 1789,
     "first_seen_utc": "2025-09-10T13:07:53.650Z",
     "first_pos": [
       40.230328,
       -111.728273
     ],
-    "first_on_ground": true,
     "last_seen_utc": "2025-09-10T16:50:37.520Z",
     "last_pos": [
       39.663065,
       -75.604553
     ],
-    "last_on_ground": false,
     "wheels_up_utc": "2025-09-10T13:14:03.820Z",
     "wheels_down_utc": null
-  }
+  },
+  "pulled_for": "alleged overlap",
+  "overlap_ids": [
+    "OWENS-041",
+    "SITE-005",
+    "SITE-006"
+  ],
+  "alleged_overlap_date": "2025-09-10",
+  "alleged_place": "Provo then Wilmington, UT/DE"
 }

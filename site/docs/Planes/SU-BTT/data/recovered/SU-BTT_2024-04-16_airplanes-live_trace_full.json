@@ -1,0 +1,16 @@
+{"icao":"0101d3",
+"r":"SU-BTT",
+"t":"FA7X",
+"dbFlags":1,
+"desc":"DASSAULT Falcon 7X",
+"timestamp": 1713225600.000,
+"trace":[ 
+[60159.12,30.158728,31.355419,3400,245.0,355.4,1,1088,{"type":"adsb_icao","flight":"SUBTT   ","track":355.40,"baro_rate":1088,"nic":4,"rc":3704,"version":2,"nic_baro":1},"adsb_icao",null,null,null,null],
+[60171.88,30.173721,31.349380,3550,268.0,340.8,0,128,null,"adsb_icao",null,null,null,null],
+[60767.29,29.781326,31.525797,8725,null,null,1,null,null,"adsb_icao",null,null,null,null],
+[69426.35,29.838181,31.265928,2525,null,141.2,1,null,null,"adsb_icao",null,null,null,null],
+[69436.05,29.841980,31.269308,2525,174.0,37.7,0,64,{"type":"adsb_icao","flight":"SUBTT   ","track":37.70,"baro_rate":64,"nic":8,"rc":185,"nic_baro":1},"adsb_icao",null,null,null,null],
+[69442.49,29.846375,31.273111,2525,174.0,36.8,0,64,null,"adsb_icao",null,null,null,null],
+[69695.36,30.015766,31.358496,2050,161.0,23.6,1,-1152,null,"adsb_icao",null,null,null,null],
+[69722.21,30.034433,31.358715,1550,161.0,0.5,1,-1152,null,"adsb_icao",null,null,null,null] ]
+ }

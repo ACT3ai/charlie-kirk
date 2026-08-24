@@ -1,8 +1,8 @@
 ---
 displayed_sidebar: docs
-title: "Flight Data Recovery — What Was Removed, And What We Got Back"
+title: "Flight Data Recovery — What Was Erased, What Was Not, And What We Got Back"
 sidebar_label: "Flight Data Recovery"
-description: "This investigation assumed the flight records had been erased and went looking for backups. One removal is real and documented; the other gaps turned out to be ordinary archive retention. Both are shown here, with the recovered data."
+description: "This investigation assumed the flight records had been erased and went looking for backups across all sixteen aircraft. No tracking site was found to have removed anything — every page still loads, and the 403s were robot blocks. What the sweep did produce is a large body of flight data nobody here had held before, including the first primary tracks behind the alleged following-flights."
 keywords:
   - Charlie Kirk
   - flight data
@@ -34,36 +34,141 @@ took that claim seriously enough to act on it as a working assumption, went look
 the data, and wrote down what we found — including the parts that did not go the way the claim
 predicted.
 
-The short version is that **three different things on this site have been described as "erased",
-and only one of them is a removal.** The other two are ordinary archive behaviour that looks
-identical from the outside. Telling them apart is most of the work, and it matters more than the
-recovery itself: an investigation that calls a retention window a cover-up burns its own
-credibility on the day somebody checks.
+The sweep has now been run across the **whole fleet — all sixteen aircraft, on five tracking sites
+and four independent archives.** The short version, stated plainly because it is not the answer the
+claim predicted:
+
+> **Nothing has been found to have been removed from any public tracking site.** Every aircraft page
+> in this investigation loads today. What was recovered instead is a large amount of flight data that
+> nobody on this site had ever held — including the first testable primary record of the alleged
+> following-flights themselves.
 
 **What did come back is substantial.** The flight-history table for the tail number at the centre of
-the dispute was recovered in full from an archived copy taken the day after the assassination. Days
-the primary archive refuses to serve were recovered from two independent backups that agree with
-each other to the second. And flight tracks from **2022** — a year this site has published as
-untestable — were recovered for the first time.
+the dispute was recovered from an archived copy taken the day after the assassination. Days the
+primary archive refuses to serve were recovered from two independent backups that agree with each
+other to the second. Flight tracks from **2022** — a year this site has published as untestable —
+were recovered for the first time. And **twenty-three of the alleged overlap dates now have a real
+ADS-B track behind them**, tested one at a time on
+[Overlap Recovery](/Planes/Flight-Data-Recovery/Overlap-Recovery).
 
-## The three things called "erased", separated
+## Correction: the FlightRadar24 "removal" does not survive its own control test
+
+**This page previously stated that N102DZ's FlightRadar24 page was "A REAL REMOVAL, DOCUMENTED",
+on the evidence that the URL returns HTTP 403. That was wrong, and this section is the retraction.**
+
+The 403 was real. What it meant was not. FlightRadar24 returns **HTTP 403 to any scripted request**,
+whichever aircraft is in the URL. When the identical script was pointed at five aircraft chosen for
+having nothing whatever to do with this case — a Ryanair 737, a Lufthansa A380, a Delta Connection
+CRJ, an American A320, and Nike's corporate Gulfstream — **all five came back 403 as well.**
+
+Then the same pages were opened in an ordinary browser, where Cloudflare's robot check is satisfied:
+
+| Asked how | N102DZ | The 15 other aircraft here | 4 unrelated control aircraft |
+|---|---|---|---|
+| By script | **403** | **403**, every one | **403**, every one |
+| By browser | **200, page loads** | **200**, every one | **200**, every one |
+
+The browser served N102DZ's page complete with its identity block — *Gulfstream V · GLF5 · Mode S
+A00C85* — on **24 August 2026**. The page is not gone. It was never gone.
+
+**The empty flight table is a paywall, not an erasure.** FlightRadar24 shows a logged-out visitor
+**the last seven days only**, and prints so under the table: *"More than 7 days of N102DZ history is
+available with an upgrade to a Silver (90 days), Gold (1 year), or Business (3 years)
+subscription."* That line appears on every one of the twenty pages probed, subject and control alike.
+N102DZ's table is empty because a private aircraft that has not flown in a week has nothing to show —
+and Nike's Gulfstream, the control, is empty for the same reason on the same day, while the Ryanair
+737 flying six sectors a day shows 683 rows.
+
+This matters more than the finding it replaces. **The standard this page set for the other two
+"erasures" is the standard that just took down the third.** The evidence is at
+[`browser_capture/captures/fr24_page_availability_2026-08-24.tsv`](https://github.com/BryanStarbuck/charlie-kirk)
+and in `page_control_probe.json`, and the method is set out on
+[What A 403 Actually Means](/Planes/Flight-Data-Recovery/What-A-403-Means).
+
+## The things called "erased", separated
 
 | What | Status | What it actually is |
 |---|---|---|
-| **N102DZ's FlightRadar24 page** | **A REAL REMOVAL, DOCUMENTED** | The Internet Archive holds a populated copy of that page with a full flight-history table. The same URL returns **HTTP 403** to the public today. |
+| **N102DZ's FlightRadar24 page** | **NOT a removal — retracted above** | The page loads in a browser, HTTP 200. The 403 was a robot block that hit four unrelated control aircraft identically. The empty table is FR24's seven-day free-tier limit. |
 | **The adsb.lol 12 Oct – 15 Dec 2025 band** | **NOT a removal** | The live API returns 403 for **every aircraft**, including airframes with no connection to this case. The same days are published in full as public backup files. |
 | **adsb.lol having no 2026 data** | **NOT a removal** | Archive-wide retention. An unrelated Ryanair and an unrelated Lufthansa airframe return 404 identically. |
+| **Erika Kirk's own itinerary** | **Still absent, and no archive fixes it** | Not a tracking-site question at all. No dated list of her locations has ever been published, so there is nothing for a backup to restore. |
 
-Only the first row is about anybody's aircraft in particular. **The other two were tested against
-control aircraft chosen precisely because they have nothing to do with this case**, and they failed
-the same way, which is what tells you it is the archive and not the airframe.
+**All three of the tracking-data "erasures" were tested against control aircraft chosen precisely
+because they have nothing to do with this case, and all three failed the same way the controls did.**
+That is what tells you it is the archive, or the paywall, or the bot filter — and not the airframe.
 
-Even the first row does not establish intent, and this page does not claim it does. Aircraft owners
-can and routinely do request removal from public tracking through ordinary, lawful privacy
-programmes, and tracking sites reorganise URLs. **A page that was public and is not any more is a
-fact. Why it stopped being public is not something we can see.**
+The one thing on the list that genuinely has not been recovered is the last row, and it is the one no
+amount of ADS-B work can touch: an aircraft track never establishes who was aboard.
+See [Erika Flight Logs Erased](/Planes/Erika-Flight-Logs-Erased).
 
-## The removal that is real: N102DZ
+## The whole fleet, swept
+
+Sixteen aircraft. Five tracking sites each. Four independent archives each. Every result is a file on
+disk under `site/docs/Planes/<TAIL>/data/recovered/`, with **the source in the filename**, so any
+line below can be checked without trusting this page.
+
+| Aircraft | adsb.lol days | airplanes.live days | ADSBX sample days | Archived pages held | Flight rows off archived pages | Page removals found |
+|---|---|---|---|---|---|---|
+| [N102DZ](/Planes/N102DZ/overview) | 12 | 50 | 18 | 3 | 13 | none |
+| [N1098L](/Planes/N1098L/overview) | 17 | 46 | 19 | 3 | — | none |
+| [N2100L](/Planes/N2100L/overview) | 8 | 29 | 17 | 3 | — | none |
+| [N40JD](/Planes/N40JD/overview) | 10 | 12 | 11 | 1 | — | none |
+| [N55906](/Planes/N55906/overview) | 0 | 0 | 0 | 1 | — | none |
+| [N560TW](/Planes/N560TW/overview) | 9 | 27 | 23 | 2 | 9 | none |
+| [N582MM](/Planes/N582MM/overview) | 19 | 24 | 23 | 7 | 40 | none |
+| [N59906](/Planes/N59906/overview) | 9 | 26 | 23 | 4 | — | none |
+| [N872RA](/Planes/N872RA/overview) | 12 | 48 | 24 | 0 | — | none |
+| [N888KG](/Planes/N888KG/overview) | 4 | 12 | 13 | 22 | 70 | none |
+| [SU-BGM](/Planes/SU-BGM/overview) | 2 | 5 | 1 | 1 | 6 | none |
+| [SU-BND](/Planes/SU-BND/overview) | 19 | 27 | 6 | 2 | 11 | none |
+| [SU-BTT](/Planes/SU-BTT/overview) | 29 | 37 | 6 | 0 | — | none |
+| [SU-BTU](/Planes/SU-BTU/overview) | 0 | 3 | 9 | 1 | 4 | none |
+| [SU-BTV](/Planes/SU-BTV/overview) | 1 | 7 | 2 | 0 | — | none |
+| [T7-ELL](/Planes/T7-ELL/overview) | 5 | 26 | 12 | 0 | — | none |
+| **Total** | **156** | **379** | **207** | **50** | **153** | **none** |
+
+Read the last column first. **It is empty for every aircraft.** Across sixteen airframes and eighty
+aircraft-page probes there is not one page that was public and is not public now.
+
+Read the second-to-last column next, because it is the one that gained something. **153 rows of
+published flight history** were pulled back out of archived copies of pages that no longer show that
+history to a logged-out visitor — not because it was removed, but because it aged past the free
+seven-day window. The Internet Archive kept a copy of the table on the day the crawler happened to
+visit, and for [N888KG](/Planes/N888KG/overview) the crawler visited twenty-two times.
+
+The full breakdown, aircraft by aircraft and source by source, is on
+**[Per-Aircraft Recovery Status](/Planes/Flight-Data-Recovery/Per-Aircraft-Status)**.
+
+## Every alleged overlap, tested
+
+The [73-overlap claim](/Planes/following/73_overlaps) is a spreadsheet: on this date, this Egyptian
+government jet was in this American city, where a Kirk was. Most of those rows have never had a
+primary flight record behind them at all. All **69** of them were pulled against both free daily
+archives, on the alleged day and the UTC day either side.
+
+| | |
+|---|---|
+| Alleged (aircraft, date) pairs tested | **69** |
+| Now have a real ADS-B track on the alleged day | **23** |
+| Track exists only on a neighbouring day | **7** |
+| No free archive holds anything in the window | **39** |
+| Of the 23 testable: track puts the aircraft in the alleged country | **21** |
+| Of the 23 testable: track puts it somewhere else entirely | **2** |
+
+**Twenty-one of twenty-three check out, and often to within two kilometres of the named airport** —
+SU-BTT arriving Wilmington 1.63 km from KILG on 6 April 2023, Provo 1.42 km from KPVU on 23 April
+2024. Two do not: SU-BND is alleged in St. Louis on 12 May 2023 while the recovered track flies Paris
+Le Bourget to Inshas Air Base in Egypt, and SU-BTT is alleged in Nebraska on 18 June 2025 while the
+track never leaves Egypt.
+
+**None of that makes the shadowing claim true.** It makes the *flight legs* real, which is a
+different and much narrower statement — the same split this investigation's own audit keeps finding.
+A track showing SU-BTT at Wichita says nothing about where anybody named Kirk was that day. Every
+row, with the recovered position and the distance attached, is on
+**[Overlap Recovery](/Planes/Flight-Data-Recovery/Overlap-Recovery)**.
+
+## N102DZ, question by question
 
 **[N102DZ](/Planes/N102DZ/overview)** is the Kirk family aircraft — a Gulfstream V, ICAO hex
 `A00C85`. Researchers reported in July 2026 that its public tracking history had been **removed from
@@ -75,13 +180,14 @@ Here is what we can now state with the evidence attached:
 | Question | Answer | Evidence |
 |---|---|---|
 | Was the FR24 page public before? | **Yes** | The Internet Archive holds snapshots from **26 May 2022** and **11 Sep 2025 05:57 UTC**. |
-| Did it carry a real flight-history table? | **Yes** | The 11 Sep 2025 snapshot contains **12 flight rows** covering 4–10 September 2025. |
-| Is it public now? | **No** | `flightradar24.com/data/aircraft/n102dz` returns **HTTP 403** on 24 August 2026. |
-| Was the underlying ADS-B record destroyed? | **No** | The aircraft's tracks are still retrievable from independent archives, **including throughout May 2026 itself**. |
+| Did it carry a real flight-history table? | **Yes** | The 11 Sep 2025 snapshot contains **11 flight rows** covering 4–10 September 2025, recovered in full below. |
+| Is it public now? | **Yes** | The page loads **HTTP 200** in a browser on 24 August 2026, with its identity block intact. The 403 our script got is a robot block — see the correction above. |
+| Does the public page show the old history? | **No — and it never did** | FR24 gives a logged-out visitor **seven days**. Everything older has always been behind a Silver/Gold/Business subscription. The multi-year history the overlap spreadsheets were built from was **never** on the free page. |
+| Was the underlying ADS-B record destroyed? | **No** | The aircraft's tracks are still retrievable from independent archives, **including throughout May 2026 itself** — 50 days of them are on disk in this repo. |
 
-That last row is the one that matters most, and it cuts against the dramatic reading of the story.
-**Whatever happened at FlightRadar24 did not remove the flight data from the world.** It is still
-there, in networks FlightRadar24 does not control, and anybody can pull it.
+The last two rows are the ones that matter, and both cut against the dramatic reading. **Nothing was
+removed from the world, and the thing people went looking for on the free FR24 page was never there
+to remove.** The data is in networks FlightRadar24 does not control, and anybody can pull it.
 
 ### The recovered table
 
@@ -317,10 +423,13 @@ The honest list, and it is the most useful section here.
   1st of a month is still untestable for free.
 * **Neither free daily archive reaches before roughly March 2023.** The ADSBX monthly sample is the
   only thing older, and it is thin.
-* **The FlightRadar24 page itself cannot be recovered beyond what a crawler captured.** Two snapshots
-  in four years is what exists. The free FR24 page only ever displayed **seven days** of history in
-  any case — the archived copy says so at the bottom of the table — so even a perfect capture would
-  never have held the multi-year history the overlap spreadsheet was built from.
+* **FlightRadar24's own multi-year history is behind a paywall and stays there.** The page is
+  public; the history is not free. Two Wayback snapshots in four years is everything the archive
+  caught, and the free FR24 page only ever displayed **seven days** — the archived copy says so at
+  the bottom of the table — so even a perfect capture would never have held the multi-year record the
+  overlap spreadsheet was built from. A Silver subscription (90 days) or Business (3 years) would
+  reach further back than anything on this page. **We have not bought one**, and that, not a removal,
+  is the reason the FR24 record here stops where it does.
 * **Absence still is not evidence.** A 404 from a volunteer network means the network heard nothing.
   It does not mean the aircraft did not fly, and it does not mean a transponder was switched off. The
   ordinary explanations — parked and silent, outside receiver coverage, or a claimed date that was
@@ -330,12 +439,15 @@ The honest list, and it is the most useful section here.
 
 ## Counterpoints
 
-* **Blocking a tail number is ordinary and lawful.** Private aircraft owners routinely request
-  removal from public tracking. A FlightRadar24 page going dark is fully consistent with a privacy
-  request and implies nothing on its own.
-* **A 403 is not a deletion.** Two of the three "erasures" examined here dissolved the moment they
-  were tested against a control aircraft. That is a caution about the third as much as a finding
-  about the first two.
+* **Blocking a tail number is ordinary and lawful, and it did not happen here.** Private aircraft
+  owners routinely request removal from public tracking through the FAA's LADD programme and the
+  trackers' own block lists. Had that been done to N102DZ the page would say so or the aircraft would
+  be absent. Instead every one of the sixteen aircraft loads normally, with a full identity block —
+  so this ordinary explanation is not needed, because there is nothing left to explain.
+* **A 403 is not a deletion.** **All three** of the tracking-data "erasures" examined here
+  dissolved the moment they were tested against control aircraft — including the one this page
+  itself had called a documented removal. The lesson is about method, not about anybody's motives:
+  ask an unrelated aircraft the same question before you conclude anything about this one.
 * **The recovered data mostly makes the case *less* dramatic, not more.** The record was not
   destroyed. The flights are ordinary point-to-point business-jet legs. One suggestive detail this
   site had published turned out to be a misread column.

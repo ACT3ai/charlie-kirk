@@ -1,0 +1,35 @@
+{
+  "retrieved_utc": "2026-08-24T17:18:17.391Z",
+  "vendor_credentials_redacted": 0,
+  "source": "airplanes-live",
+  "source_role": "BACKUP ARCHIVE — independent volunteer network",
+  "url": "https://globe.airplanes.live/globe_history/2024/02/08/traces/d3/trace_full_0101d3.json",
+  "http_status": 200,
+  "bytes": 141953,
+  "tail": "SU-BTT",
+  "hex": "0101d3",
+  "utc_date": "2024-02-08",
+  "summary": {
+    "registration": "SU-BTT",
+    "type": "FA7X",
+    "points": 878,
+    "first_seen_utc": "2024-02-08T07:12:56.880Z",
+    "first_pos": [
+      30.714981,
+      30.697901
+    ],
+    "last_seen_utc": "2024-02-08T11:18:02.190Z",
+    "last_pos": [
+      48.966522,
+      2.472839
+    ],
+    "wheels_up_utc": null,
+    "wheels_down_utc": null
+  },
+  "pulled_for": "alleged overlap",
+  "overlap_ids": [
+    "OWENS-020"
+  ],
+  "alleged_overlap_date": "2024-02-09",
+  "alleged_place": "Omaha / Lincoln, NE"
+}

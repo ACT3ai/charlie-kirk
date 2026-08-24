@@ -1,0 +1,130 @@
+{
+  "verified_utc": "2026-08-24T17:33:16.248Z",
+  "overlap_id": "SITE-002",
+  "date": "2024-02-11",
+  "claimed_airport": "KLNK",
+  "claimed_city": "Lincoln",
+  "claimed_state": "NE",
+  "claimed_tails": [
+    "SU-BTT"
+  ],
+  "subject": "TPUSA",
+  "audit_verdict": "partial",
+  "site_page": "site/docs/Planes/following/overlap/20240211_NE_lincoln/overview.mdx",
+  "tails": {
+    "SU-BTT": {
+      "2024-02-10": {
+        "adsb_lol_http": 404,
+        "airplanes_live_http": 404,
+        "archive_control_probe": {
+          "adsb-lol": {
+            "verdict": "COVERED",
+            "codes": [
+              404,
+              404,
+              404,
+              404,
+              404,
+              404,
+              404,
+              200
+            ]
+          },
+          "airplanes-live": {
+            "verdict": "COVERED",
+            "codes": [
+              404,
+              404,
+              404,
+              404,
+              404,
+              404,
+              404,
+              200
+            ]
+          }
+        },
+        "both_agree": false,
+        "heard": false,
+        "at_claimed_airport": false,
+        "airports_touched": null,
+        "first_where": null,
+        "last_where": null,
+        "points": null,
+        "verdict": "NOT_HEARD"
+      },
+      "2024-02-11": {
+        "adsb_lol_http": 404,
+        "airplanes_live_http": 404,
+        "archive_control_probe": {
+          "adsb-lol": {
+            "verdict": "NOT_COVERED",
+            "codes": [
+              404,
+              404,
+              404,
+              404,
+              404,
+              404,
+              404,
+              404,
+              404
+            ]
+          },
+          "airplanes-live": {
+            "verdict": "COVERED",
+            "codes": [
+              404,
+              404,
+              404,
+              404,
+              404,
+              404,
+              404,
+              200
+            ]
+          }
+        },
+        "both_agree": false,
+        "heard": false,
+        "at_claimed_airport": false,
+        "airports_touched": null,
+        "first_where": null,
+        "last_where": null,
+        "points": null,
+        "verdict": "NOT_HEARD"
+      },
+      "2024-02-12": {
+        "adsb_lol_http": 404,
+        "airplanes_live_http": 404,
+        "archive_control_probe": {
+          "adsb-lol": {
+            "verdict": "COVERED",
+            "codes": [
+              404,
+              404,
+              200
+            ]
+          },
+          "airplanes-live": {
+            "verdict": "COVERED",
+            "codes": [
+              404,
+              404,
+              200
+            ]
+          }
+        },
+        "both_agree": false,
+        "heard": false,
+        "at_claimed_airport": false,
+        "airports_touched": null,
+        "first_where": null,
+        "last_where": null,
+        "points": null,
+        "verdict": "NOT_HEARD"
+      }
+    }
+  },
+  "verdict": "NOT_HEARD"
+}

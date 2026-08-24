@@ -1,0 +1,20 @@
+{
+  "verified_utc": "2026-08-24T17:33:16.248Z",
+  "overlap_id": "EXTRA-007",
+  "date": "2025-04-29",
+  "claimed_airport": "KLNK",
+  "claimed_city": "Lincoln",
+  "claimed_state": "NE",
+  "claimed_tails": [
+    "UNKNOWN"
+  ],
+  "subject": "Charlie",
+  "audit_verdict": "",
+  "site_page": "site/docs/Planes/following/overlap/20250429_NE_lincoln_extra_007/overview.mdx",
+  "tails": {
+    "UNKNOWN": {
+      "error": "tail not in FLEET - no hex, cannot query"
+    }
+  },
+  "verdict": "NO_ARCHIVE_COVERAGE"
+}

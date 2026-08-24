@@ -1,0 +1,160 @@
+{
+  "extracted_utc": "2026-08-24T17:18:33.564831Z",
+  "extractor": "extract_wayback_flights.py",
+  "supersedes": "flight_rows_recovered in the .meta.json sidecar, which was wrong",
+  "tail": "N560TW",
+  "snapshot_utc": "20161129055521",
+  "site": "flightaware",
+  "file": "N560TW_20161129055521_wayback_flightaware.html",
+  "bytes": 56139,
+  "live_http_today": 200,
+  "previously_recorded": null,
+  "rows_recovered": 9,
+  "flights": [
+    {
+      "date": "26-Nov-2016",
+      "airports": [
+        "KSLC",
+        "KSDL"
+      ],
+      "cells": [
+        "26-Nov-2016",
+        "C56X",
+        "Salt Lake City Intl ( KSLC )",
+        "Scottsdale ( KSDL )",
+        "07:21PM&nbsp; MST",
+        "08:47PM&nbsp; MST",
+        "1:26"
+      ]
+    },
+    {
+      "date": "26-Nov-2016",
+      "airports": [
+        "KTUS",
+        "KSLC"
+      ],
+      "cells": [
+        "26-Nov-2016",
+        "C56X",
+        "Tucson Intl ( KTUS )",
+        "Salt Lake City Intl ( KSLC )",
+        "05:10PM&nbsp; MST",
+        "06:33PM&nbsp; MST",
+        "1:23"
+      ]
+    },
+    {
+      "date": "26-Nov-2016",
+      "airports": [
+        "KSDL",
+        "MMSD"
+      ],
+      "cells": [
+        "26-Nov-2016",
+        "C56X",
+        "Scottsdale ( KSDL )",
+        "Los Cabos Int'l ( SJD / MMSD )",
+        "11:25AM&nbsp; MST",
+        "01:17PM&nbsp; MST",
+        "1:52"
+      ]
+    },
+    {
+      "date": "21-Nov-2016",
+      "airports": [
+        "KELP",
+        "KSDL"
+      ],
+      "cells": [
+        "21-Nov-2016",
+        "C56X",
+        "El Paso Intl ( KELP )",
+        "Scottsdale ( KSDL )",
+        "12:57PM&nbsp; MST",
+        "02:06PM&nbsp; MST",
+        "1:09"
+      ]
+    },
+    {
+      "date": "21-Nov-2016",
+      "airports": [
+        "KSDL",
+        "KELP"
+      ],
+      "cells": [
+        "21-Nov-2016",
+        "C56X",
+        "Scottsdale ( KSDL )",
+        "El Paso Intl ( KELP )",
+        "06:55AM&nbsp; MST",
+        "07:48AM&nbsp; MST",
+        "0:53"
+      ]
+    },
+    {
+      "date": "18-Nov-2016",
+      "airports": [
+        "KPVU",
+        "KSDL"
+      ],
+      "cells": [
+        "18-Nov-2016",
+        "C56X",
+        "Provo Muni ( KPVU )",
+        "Scottsdale ( KSDL )",
+        "04:42PM&nbsp; MST",
+        "05:47PM&nbsp; MST",
+        "1:05"
+      ]
+    },
+    {
+      "date": "18-Nov-2016",
+      "airports": [
+        "KSDL",
+        "KPVU"
+      ],
+      "cells": [
+        "18-Nov-2016",
+        "C56X",
+        "Scottsdale ( KSDL )",
+        "Provo Muni ( KPVU )",
+        "09:24AM&nbsp; MST",
+        "10:33AM&nbsp; MST",
+        "1:08"
+      ]
+    },
+    {
+      "date": "16-Nov-2016",
+      "airports": [
+        "KELP",
+        "KSDL"
+      ],
+      "cells": [
+        "16-Nov-2016",
+        "C56X",
+        "El Paso Intl ( KELP )",
+        "Scottsdale ( KSDL )",
+        "05:27PM&nbsp; MST",
+        "06:30PM&nbsp; MST",
+        "1:03"
+      ]
+    },
+    {
+      "date": "16-Nov-2016",
+      "airports": [
+        "KSDL",
+        "KELP"
+      ],
+      "cells": [
+        "16-Nov-2016",
+        "C56X",
+        "Scottsdale ( KSDL )",
+        "El Paso Intl ( KELP )",
+        "07:08AM&nbsp; MST",
+        "08:05AM&nbsp; MST",
+        "0:57"
+      ]
+    }
+  ],
+  "table_state": "POPULATED"
+}

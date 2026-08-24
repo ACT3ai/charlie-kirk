@@ -26,6 +26,11 @@ const fingerprint = (v) => MARK + createHash("sha256").update(v).digest("hex").s
 // Unmistakable credential shapes, redacted wherever they appear — including
 // inside a URL query such as ?access_token=pk.eyJ...
 const SHAPES = [
+  // Mapbox, four-segment form first: the greedier three-dot token must be tried
+  // before the two-dot one below, or that one matches its prefix and leaves the
+  // tail of the real token sitting in the capture. Kept in step with the same
+  // pair in security/scrub_vendor_tokens.py.
+  /\b(?:pk|sk)\.eyJ[A-Za-z0-9_-]+\.[A-Za-z0-9_-]+\.[A-Za-z0-9_-]+/g, // Mapbox (4-segment)
   /\b(?:pk|sk)\.eyJ[A-Za-z0-9_-]{20,}\.[A-Za-z0-9_-]{10,}/g,   // Mapbox
   /\bAIza[0-9A-Za-z_-]{35}\b/g,                                 // Google / Firebase
   /\bAKIA[0-9A-Z]{16}\b/g,                                      // AWS

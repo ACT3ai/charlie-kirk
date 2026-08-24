@@ -1,0 +1,35 @@
+{
+  "retrieved_utc": "2026-08-24T17:18:17.391Z",
+  "vendor_credentials_redacted": 0,
+  "source": "adsb-lol",
+  "source_role": "the archive this investigation already used",
+  "url": "https://adsb.lol/globe_history/2024/12/07/traces/3e/trace_full_01003e.json",
+  "http_status": 200,
+  "bytes": 4462,
+  "tail": "SU-BND",
+  "hex": "01003e",
+  "utc_date": "2024-12-07",
+  "summary": {
+    "registration": "SU-BND",
+    "type": "GLF4",
+    "points": 25,
+    "first_seen_utc": "2024-12-07T16:18:04.370Z",
+    "first_pos": [
+      29.420975,
+      31.507786
+    ],
+    "last_seen_utc": "2024-12-07T17:48:36.250Z",
+    "last_pos": [
+      29.114282,
+      31.709182
+    ],
+    "wheels_up_utc": null,
+    "wheels_down_utc": null
+  },
+  "pulled_for": "alleged overlap",
+  "overlap_ids": [
+    "OWENS-030"
+  ],
+  "alleged_overlap_date": "2024-12-08",
+  "alleged_place": "Provo, UT"
+}

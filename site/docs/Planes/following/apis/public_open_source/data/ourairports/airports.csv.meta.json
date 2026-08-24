@@ -1,0 +1,9 @@
+{
+  "retrieved_utc": "2026-08-24T00:00:00Z",
+  "source": "ourairports",
+  "source_role": "REFERENCE - the public-domain airport gazetteer used to turn a latitude/longitude in an ADS-B trace into a named field. CC0, no auth, no rate limit.",
+  "url": "https://davidmegginson.github.io/ourairports-data/airports.csv",
+  "http_status": 200,
+  "licence": "CC0 / public domain - may be republished in full",
+  "note": "Nearest-airport resolution is GEOMETRY, not a landing record. A trace point 1.2 km from a runway threshold is strong; one 14 km away names the nearest field and nothing more. Every resolved airport on this site carries its distance for that reason."
+}

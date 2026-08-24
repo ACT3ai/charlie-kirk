@@ -7,5 +7,8 @@
   "bytes": 83178,
   "original_url": "https://www.flightradar24.com/data/aircraft/su-bnd",
   "live_http_today": 403,
-  "flight_rows_recovered": 0
+  "flight_rows_recovered": 7,
+  "flight_rows_extractor": "extract_wayback_flights.py",
+  "flight_rows_corrected_utc": "2026-08-24T17:18:33.564831Z",
+  "table_state": "POPULATED"
 }

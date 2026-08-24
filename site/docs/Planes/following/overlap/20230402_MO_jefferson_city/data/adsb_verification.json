@@ -1,0 +1,244 @@
+{
+  "verified_utc": "2026-08-24T17:33:16.248Z",
+  "overlap_id": "SITE-001",
+  "date": "2023-04-02",
+  "claimed_airport": "KSTL/KCPS/KSUS",
+  "claimed_city": "Jefferson City (event) / St. Louis (aircraft)",
+  "claimed_state": "MO",
+  "claimed_tails": [
+    "SU-BTT",
+    "SU-BND"
+  ],
+  "subject": "TPUSA",
+  "audit_verdict": "accurate",
+  "site_page": "site/docs/Planes/following/overlap/20230402_MO_jefferson_city/overview.mdx",
+  "tails": {
+    "SU-BTT": {
+      "2023-04-01": {
+        "adsb_lol_http": 200,
+        "airplanes_live_http": 200,
+        "archive_control_probe": null,
+        "both_agree": true,
+        "heard": true,
+        "at_claimed_airport": false,
+        "airports_touched": [
+          "KSTL 5.09km below_4000ft",
+          "K1H0 7.57km below_4000ft",
+          "KSUS 7.64km below_4000ft",
+          "FR-0503 10.99km first_fix"
+        ],
+        "first_where": "FR-0503 (Mouy Airfield, FR) 10.99km",
+        "last_where": "KSUS/SUS (Spirit of St Louis Airport, St Louis MO) 3.21km",
+        "points": 558,
+        "verdict": "ELSEWHERE"
+      },
+      "2023-04-02": {
+        "adsb_lol_http": 404,
+        "airplanes_live_http": 404,
+        "archive_control_probe": {
+          "adsb-lol": {
+            "verdict": "NOT_COVERED",
+            "codes": [
+              404,
+              404,
+              404,
+              404,
+              404,
+              404,
+              404,
+              404,
+              404
+            ]
+          },
+          "airplanes-live": {
+            "verdict": "NOT_COVERED",
+            "codes": [
+              404,
+              404,
+              404,
+              404,
+              404,
+              404,
+              404,
+              404,
+              404
+            ]
+          }
+        },
+        "both_agree": false,
+        "heard": false,
+        "at_claimed_airport": false,
+        "airports_touched": null,
+        "first_where": null,
+        "last_where": null,
+        "points": null,
+        "verdict": "NO_ARCHIVE_COVERAGE"
+      },
+      "2023-04-03": {
+        "adsb_lol_http": 404,
+        "airplanes_live_http": 404,
+        "archive_control_probe": {
+          "adsb-lol": {
+            "verdict": "COVERED",
+            "codes": [
+              404,
+              404,
+              404,
+              404,
+              404,
+              404,
+              404,
+              200
+            ]
+          },
+          "airplanes-live": {
+            "verdict": "COVERED",
+            "codes": [
+              404,
+              404,
+              404,
+              404,
+              404,
+              404,
+              404,
+              200
+            ]
+          }
+        },
+        "both_agree": false,
+        "heard": false,
+        "at_claimed_airport": false,
+        "airports_touched": null,
+        "first_where": null,
+        "last_where": null,
+        "points": null,
+        "verdict": "NOT_HEARD"
+      }
+    },
+    "SU-BND": {
+      "2023-04-01": {
+        "adsb_lol_http": 404,
+        "airplanes_live_http": 404,
+        "archive_control_probe": {
+          "adsb-lol": {
+            "verdict": "COVERED",
+            "codes": [
+              404,
+              404,
+              404,
+              404,
+              404,
+              404,
+              404,
+              200
+            ]
+          },
+          "airplanes-live": {
+            "verdict": "COVERED",
+            "codes": [
+              404,
+              404,
+              404,
+              404,
+              404,
+              404,
+              404,
+              200
+            ]
+          }
+        },
+        "both_agree": false,
+        "heard": false,
+        "at_claimed_airport": false,
+        "airports_touched": null,
+        "first_where": null,
+        "last_where": null,
+        "points": null,
+        "verdict": "NOT_HEARD"
+      },
+      "2023-04-02": {
+        "adsb_lol_http": 404,
+        "airplanes_live_http": 404,
+        "archive_control_probe": {
+          "adsb-lol": {
+            "verdict": "NOT_COVERED",
+            "codes": [
+              404,
+              404,
+              404,
+              404,
+              404,
+              404,
+              404,
+              404,
+              404
+            ]
+          },
+          "airplanes-live": {
+            "verdict": "NOT_COVERED",
+            "codes": [
+              404,
+              404,
+              404,
+              404,
+              404,
+              404,
+              404,
+              404,
+              404
+            ]
+          }
+        },
+        "both_agree": false,
+        "heard": false,
+        "at_claimed_airport": false,
+        "airports_touched": null,
+        "first_where": null,
+        "last_where": null,
+        "points": null,
+        "verdict": "NO_ARCHIVE_COVERAGE"
+      },
+      "2023-04-03": {
+        "adsb_lol_http": 404,
+        "airplanes_live_http": 404,
+        "archive_control_probe": {
+          "adsb-lol": {
+            "verdict": "COVERED",
+            "codes": [
+              404,
+              404,
+              404,
+              404,
+              404,
+              404,
+              404,
+              200
+            ]
+          },
+          "airplanes-live": {
+            "verdict": "COVERED",
+            "codes": [
+              404,
+              404,
+              404,
+              404,
+              404,
+              404,
+              404,
+              200
+            ]
+          }
+        },
+        "both_agree": false,
+        "heard": false,
+        "at_claimed_airport": false,
+        "airports_touched": null,
+        "first_where": null,
+        "last_where": null,
+        "points": null,
+        "verdict": "NOT_HEARD"
+      }
+    }
+  },
+  "verdict": "ELSEWHERE"
+}

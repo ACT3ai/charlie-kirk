@@ -1,0 +1,79 @@
+{
+  "extracted_utc": "2026-08-24T17:18:33.564831Z",
+  "extractor": "extract_wayback_flights.py",
+  "supersedes": "flight_rows_recovered in the .meta.json sidecar, which was wrong",
+  "tail": "SU-BND",
+  "snapshot_utc": "20251118001204",
+  "site": "flightradar24",
+  "file": "SU-BND_20251118001204_wayback_flightradar24.html",
+  "bytes": 72551,
+  "live_http_today": 403,
+  "previously_recorded": 0,
+  "rows_recovered": 4,
+  "identity": {
+    "aircraft": "Gulfstream 4SP",
+    "operator": "-",
+    "type_code": "GLF4",
+    "mode_s": "01003E",
+    "serial": "AGE"
+  },
+  "flights": [
+    {
+      "date": "13 Nov 2025",
+      "std_epoch": 1763060141,
+      "std_utc": "2025-11-13T18:55:41Z",
+      "atd_utc": "2025-11-13T18:55:41Z",
+      "sta_utc": "2025-11-13T19:06:19Z",
+      "arr_utc": "2025-11-13T19:06:19Z",
+      "status": "Landed",
+      "flight_time": "0:11",
+      "from_name": "Cairo",
+      "from_code": "CAI",
+      "to_name": "Cairo",
+      "to_code": "CAI"
+    },
+    {
+      "date": "13 Nov 2025",
+      "std_epoch": 1763053200,
+      "std_utc": "2025-11-13T17:00:00Z",
+      "atd_utc": "2025-11-13T17:08:05Z",
+      "sta_utc": "2025-11-13T18:31:00Z",
+      "arr_utc": "2025-11-13T18:25:39Z",
+      "status": "Landed",
+      "flight_time": "1:18",
+      "from_name": "Antalya",
+      "from_code": "AYT",
+      "to_name": "Cairo",
+      "to_code": "CAI"
+    },
+    {
+      "date": "13 Nov 2025",
+      "std_epoch": 1763025662,
+      "std_utc": "2025-11-13T09:21:02Z",
+      "atd_utc": "2025-11-13T09:21:02Z",
+      "sta_utc": "2025-11-13T10:29:58Z",
+      "arr_utc": "2025-11-13T10:29:58Z",
+      "status": "Landed",
+      "flight_time": "1:09",
+      "from_name": "Cairo",
+      "from_code": "CAI",
+      "to_name": "Antalya",
+      "to_code": "AYT"
+    },
+    {
+      "date": "13 Nov 2025",
+      "std_epoch": 1763024400,
+      "std_utc": "2025-11-13T09:00:00Z",
+      "atd_utc": "2025-11-13T08:28:41Z",
+      "sta_utc": "2025-11-13T10:37:00Z",
+      "arr_utc": null,
+      "status": null,
+      "flight_time": null,
+      "from_name": "Cairo",
+      "from_code": "CAI",
+      "to_name": "Antalya",
+      "to_code": "AYT"
+    }
+  ],
+  "table_state": "POPULATED"
+}

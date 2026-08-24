@@ -1,0 +1,128 @@
+{
+  "extracted_utc": "2026-08-24T17:18:33.564831Z",
+  "extractor": "extract_wayback_flights.py",
+  "supersedes": "flight_rows_recovered in the .meta.json sidecar, which was wrong",
+  "tail": "N582MM",
+  "snapshot_utc": "20150328021838",
+  "site": "flightaware",
+  "file": "N582MM_20150328021838_wayback_flightaware.html",
+  "bytes": 52232,
+  "live_http_today": 200,
+  "previously_recorded": null,
+  "rows_recovered": 7,
+  "flights": [
+    {
+      "date": "27-Mar-2015",
+      "airports": [
+        "KSDL",
+        "KMEV"
+      ],
+      "cells": [
+        "27-Mar-2015",
+        "LJ60/ L",
+        "Scottsdale ( KSDL )",
+        "Minden-Tahoe ( KMEV )",
+        "01:50PM&nbsp; MST",
+        "03:07PM&nbsp; PDT",
+        "1:17"
+      ]
+    },
+    {
+      "date": "26-Mar-2015",
+      "airports": [
+        "KMEV",
+        "KSDL"
+      ],
+      "cells": [
+        "26-Mar-2015",
+        "LJ60/ L",
+        "Minden-Tahoe ( KMEV )",
+        "Scottsdale ( KSDL )",
+        "09:04AM&nbsp; PDT",
+        "10:22AM&nbsp; MST",
+        "1:18"
+      ]
+    },
+    {
+      "date": "24-Mar-2015",
+      "airports": [
+        "KBVS",
+        "KMEV"
+      ],
+      "cells": [
+        "24-Mar-2015",
+        "LJ60/ L",
+        "Skagit Rgnl ( KBVS )",
+        "Minden-Tahoe ( KMEV )",
+        "12:09PM&nbsp; PDT",
+        "01:27PM&nbsp; PDT",
+        "1:18"
+      ]
+    },
+    {
+      "date": "24-Mar-2015",
+      "airports": [
+        "KMEV",
+        "KBVS"
+      ],
+      "cells": [
+        "24-Mar-2015",
+        "LJ60/ L",
+        "Minden-Tahoe ( KMEV )",
+        "Skagit Rgnl ( KBVS )",
+        "06:34AM&nbsp; PDT",
+        "08:14AM&nbsp; PDT",
+        "1:40"
+      ]
+    },
+    {
+      "date": "18-Mar-2015",
+      "airports": [
+        "KSDL",
+        "KMEV"
+      ],
+      "cells": [
+        "18-Mar-2015",
+        "LJ60/ L",
+        "Scottsdale ( KSDL )",
+        "Minden-Tahoe ( KMEV )",
+        "12:47PM&nbsp; MST",
+        "02:05PM&nbsp; PDT",
+        "1:18"
+      ]
+    },
+    {
+      "date": "17-Mar-2015",
+      "airports": [
+        "KMEV",
+        "KSDL"
+      ],
+      "cells": [
+        "17-Mar-2015",
+        "LJ60/ L",
+        "Minden-Tahoe ( KMEV )",
+        "Scottsdale ( KSDL )",
+        "10:36AM&nbsp; PDT",
+        "11:59AM&nbsp; MST",
+        "1:23"
+      ]
+    },
+    {
+      "date": "14-Mar-2015",
+      "airports": [
+        "KHOT",
+        "KMEV"
+      ],
+      "cells": [
+        "14-Mar-2015",
+        "LJ60/ L",
+        "Memorial Field ( KHOT )",
+        "Minden-Tahoe ( KMEV )",
+        "06:43PM&nbsp; CDT",
+        "08:10PM&nbsp; PDT",
+        "3:27"
+      ]
+    }
+  ],
+  "table_state": "POPULATED"
+}

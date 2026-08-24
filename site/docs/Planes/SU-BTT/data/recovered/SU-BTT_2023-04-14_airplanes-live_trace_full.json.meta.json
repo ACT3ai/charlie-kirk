@@ -1,0 +1,35 @@
+{
+  "retrieved_utc": "2026-08-24T17:18:17.391Z",
+  "vendor_credentials_redacted": 0,
+  "source": "airplanes-live",
+  "source_role": "BACKUP ARCHIVE — independent volunteer network",
+  "url": "https://globe.airplanes.live/globe_history/2023/04/14/traces/d3/trace_full_0101d3.json",
+  "http_status": 200,
+  "bytes": 157365,
+  "tail": "SU-BTT",
+  "hex": "0101d3",
+  "utc_date": "2023-04-14",
+  "summary": {
+    "registration": "SU-BTT",
+    "type": "FA7X",
+    "points": 787,
+    "first_seen_utc": "2023-04-14T09:01:20.690Z",
+    "first_pos": [
+      48.969416,
+      2.528156
+    ],
+    "last_seen_utc": "2023-04-14T18:18:17.590Z",
+    "last_pos": [
+      37.88193,
+      -97.316357
+    ],
+    "wheels_up_utc": null,
+    "wheels_down_utc": null
+  },
+  "pulled_for": "alleged overlap",
+  "overlap_ids": [
+    "OWENS-012"
+  ],
+  "alleged_overlap_date": "2023-04-14",
+  "alleged_place": "Wichita, KS"
+}

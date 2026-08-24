@@ -1,0 +1,79 @@
+{
+  "extracted_utc": "2026-08-24T17:18:33.564831Z",
+  "extractor": "extract_wayback_flights.py",
+  "supersedes": "flight_rows_recovered in the .meta.json sidecar, which was wrong",
+  "tail": "SU-BTU",
+  "snapshot_utc": "20220831143944",
+  "site": "flightradar24",
+  "file": "SU-BTU_20220831143944_wayback_flightradar24.html",
+  "bytes": 71142,
+  "live_http_today": 403,
+  "previously_recorded": 0,
+  "rows_recovered": 4,
+  "identity": {
+    "aircraft": "SEARCH AIRPORTS",
+    "operator": "-",
+    "type_code": "FA7X",
+    "mode_s": "0101D0",
+    "serial": "AGE"
+  },
+  "flights": [
+    {
+      "date": null,
+      "std_epoch": 1661689856,
+      "std_utc": "2022-08-28T12:30:56Z",
+      "atd_utc": "2022-08-28T12:30:56Z",
+      "sta_utc": "2022-08-28T13:08:03Z",
+      "arr_utc": null,
+      "status": null,
+      "flight_time": "0:37",
+      "from_name": "El Alamein",
+      "from_code": "DBB",
+      "to_name": "Cairo",
+      "to_code": "CAI"
+    },
+    {
+      "date": null,
+      "std_epoch": 1661684128,
+      "std_utc": "2022-08-28T10:55:28Z",
+      "atd_utc": "2022-08-28T10:55:28Z",
+      "sta_utc": "2022-08-28T11:23:05Z",
+      "arr_utc": null,
+      "status": null,
+      "flight_time": "0:28",
+      "from_name": "Cairo",
+      "from_code": "CAI",
+      "to_name": "Not available",
+      "to_code": null
+    },
+    {
+      "date": null,
+      "std_epoch": 1661507052,
+      "std_utc": "2022-08-26T09:44:12Z",
+      "atd_utc": null,
+      "sta_utc": "2022-08-26T09:44:12Z",
+      "arr_utc": null,
+      "status": null,
+      "flight_time": null,
+      "from_name": "Not available",
+      "from_code": null,
+      "to_name": "Cairo",
+      "to_code": "CAI"
+    },
+    {
+      "date": null,
+      "std_epoch": 1661493635,
+      "std_utc": "2022-08-26T06:00:35Z",
+      "atd_utc": "2022-08-26T06:00:35Z",
+      "sta_utc": null,
+      "arr_utc": null,
+      "status": null,
+      "flight_time": null,
+      "from_name": "Cairo",
+      "from_code": "CAI",
+      "to_name": "Not available",
+      "to_code": null
+    }
+  ],
+  "table_state": "POPULATED"
+}
