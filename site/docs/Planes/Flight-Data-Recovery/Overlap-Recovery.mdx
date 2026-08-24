@@ -1,0 +1,369 @@
+---
+displayed_sidebar: docs
+title: "Overlap Recovery — Every Alleged Following-Flight, Tested"
+sidebar_label: "Overlap Recovery"
+description: "The 73-overlap spreadsheet claims an Egyptian government jet was in a specific American city on a specific date. All 69 testable aircraft-and-date pairs were pulled against both free daily ADS-B archives. Twenty-three now have a primary track: twenty-one put the aircraft in the alleged country, two put it on the wrong continent. Thirty-nine have nothing in the window at all."
+keywords:
+  - Charlie Kirk
+  - Erika Kirk
+  - SU-BTT
+  - SU-BND
+  - overlap
+  - following planes
+  - ADS-B
+  - adsb.lol
+  - airplanes.live
+  - flight data recovery
+  - Candace Owens flight logs
+image: "/img/docusaurus-social-card.jpg"
+hide_table_of_contents: true
+---
+
+{/* Full-bleed marker: activates the site-wide full-width + text-wrap
+    layout in custom.css (full width + overflow-safe side videos). Scoped
+    via CSS :has(). */}
+<div className="ck-full-bleed" />
+
+<a href="/Planes/Flight-Data-Recovery/overview" style={{display:'inline-block', marginBottom:'1rem',
+padding:'0.35rem 0.9rem', background:'#1a73e8', color:'#fff',
+borderRadius:'4px', textDecoration:'none', fontSize:'0.9rem'}}>← Flight Data Recovery</a>
+
+# Overlap Recovery
+
+The [73-overlap claim](/Planes/following/73_overlaps) is a spreadsheet. Each row says: on **this
+date**, **this Egyptian government jet** was at **this American city**, where a Kirk was. Most of
+those rows have never had a primary flight record behind them — they rest on a screenshot of a
+tracking site, or on somebody's summary of one.
+
+Every row that can be reduced to an aircraft and a date was pulled directly from the raw ADS-B
+archives. **69 distinct (aircraft, date) pairs**, each one asked of **both** free daily archives —
+`globe.airplanes.live` and `adsb.lol` — on the alleged day **and the UTC day either side**, because
+an evening departure in the United States lands on tomorrow's date in UTC.
+
+| | |
+|---|---|
+| Alleged (aircraft, date) pairs tested | **69** |
+| A real ADS-B track exists **on the alleged day** | **23** |
+| A track exists **only on a neighbouring day** | **7** |
+| Neither free archive holds anything in the three-day window | **39** |
+| Of the 23: the track puts the aircraft **in the alleged country** | **21** |
+| Of the 23: the track puts it **somewhere else entirely** | **2** |
+
+Two aircraft account for the whole set: **[SU-BTT](/Planes/SU-BTT/overview)** (Dassault Falcon 7X,
+hex `0101D3`) appears in 53 of the 69 pairs, and **[SU-BND](/Planes/SU-BND/overview)** (Gulfstream,
+hex `01003E`) in the other 16.
+
+## What this tests, and what it cannot touch
+
+**This tests the flight leg. It does not test the shadowing.** That distinction is the whole page,
+so it is stated before the data rather than after it.
+
+An ADS-B trace establishes that an airframe was in a place at a time. It establishes nothing about
+who was aboard it, and nothing at all about where anybody named Kirk was that day. **A recovered
+track showing SU-BTT on the ramp at Wichita is not evidence that Charlie or Erika Kirk was in
+Wichita.** It is evidence that the aeroplane was.
+
+The overlap claim is a *pairing* — aircraft here, person here, therefore following. Everything on
+this page speaks to the first half of that pairing only. The second half still rests on a set of
+Kirk locations this repository cannot reproduce, and for Erika Kirk in particular **no dated
+itinerary has ever been published**. That gap is untouched by any amount of ADS-B work, and it is
+the weakest point in the aircraft angle. See
+[Erika Flight Logs Erased](/Planes/Erika-Flight-Logs-Erased).
+
+Two further limits carry through every line below:
+
+* **A nearest-airport label is geometry, not a landing record.** The label is simply the closest
+  known field to the first and last position in the trace. The distance is printed beside it every
+  time so the reader can judge it. A 1.4 km label is an aircraft on the airport; a 40 km label is an
+  aircraft that was still airborne when the last receiver lost it.
+* **An absent track is an absent track.** It means a volunteer receiver network heard nothing. It
+  does **not** mean the aircraft did not fly, and it does **not** mean a transponder was switched
+  off. Both free daily archives begin in 2023, so a 2022 miss is guaranteed by construction and
+  proves nothing whatever.
+
+## The twenty-three rows that now have primary data
+
+One row per alleged overlap that came back with a track on the alleged day. **Where the track
+starts** and **where it ends** are the first and last positions in the recovered trace, labelled
+with the nearest known field and the exact distance to it. **Points** is the number of position
+reports in the trace — the higher it is, the more of the flight was actually heard.
+
+The two rows that do not check out are **in bold**.
+
+| Overlap ID(s) | Aircraft | Alleged date | Alleged place | Track starts | Track ends | Points | Verdict |
+|---|---|---|---|---|---|---|---|
+| OWENS-046 | SU-BTT | 2023-02-25 | St. Louis, MO | LFAD Compiègne Margny Airfield, Margny-lès-Compiègne FR — 13.26 km | KSUS Spirit of St Louis Airport, St Louis MO — 2.22 km | 722 | Consistent |
+| OWENS-010 | SU-BTT | 2023-04-01 | St. Louis, MO | LFPB Paris-Le Bourget International Airport, Paris FR — 1.75 km | KSUS Spirit of St Louis Airport, St Louis MO — 2.54 km | 897 | Consistent |
+| OWENS-011 | SU-BTT | 2023-04-06 | Wilmington, DE | KSUS Spirit of St Louis Airport, St Louis MO — 0.34 km | KILG Wilmington Airport, Wilmington DE — 1.63 km | 622 | Consistent |
+| OWENS-012 | SU-BTT | 2023-04-14 | Wichita, KS | LFPG Charles de Gaulle International Airport, Paris FR — 4.79 km | SN68 Lil Bird Airport, Valley Center KS — 0.73 km | 787 | Consistent |
+| OWENS-013 | SU-BTT | 2023-04-20 | Wilmington, DE | US-0656 McMaster Gliderport, Wichita KS — 7.84 km | KILG Wilmington Airport, Wilmington DE — 0.69 km | 637 | Consistent |
+| OWENS-014 | SU-BND | 2023-05-03 | St. Louis, MO | KCPS St Louis Downtown Airport, Cahokia/St Louis IL — 2.07 km | KCPS St Louis Downtown Airport, Cahokia/St Louis IL — 3.96 km | 460 | Consistent |
+| OWENS-015 | SU-BND | 2023-05-09 | St. Louis then Goose Bay, MO | KCPS St Louis Downtown Airport, Cahokia/St Louis IL — 4.38 km | CYLQ La Tuque Airport, La Tuque CA — 40.03 km | 542 | Consistent |
+| **OWENS-050** | **SU-BND** | **2023-05-12** | **St. Louis, MO** | **LFPB Paris-Le Bourget International Airport, Paris FR — 4.18 km** | **HE12 Inshas Air Base, Inshas EG — 19.8 km** | **577** | **INCONSISTENT** |
+| OWENS-020 | SU-BTT | 2024-02-09 | Omaha / Lincoln, NE | LFPB Paris-Le Bourget International Airport, Paris FR — 1.12 km | KLNK Lincoln Airport, Lincoln NE — 1.22 km | 1120 | Consistent |
+| OWENS-021 | SU-BTT | 2024-02-14 | Wilmington, DE | KLNK Lincoln Airport, Lincoln NE — 1.04 km | KILG Wilmington Airport, Wilmington DE — 0.82 km | 703 | Consistent |
+| OWENS-023 | SU-BTT | 2024-03-29 | Wichita, KS | LFPT Pontoise-Cormeilles Aerodrome, Val-d'Oise FR — 16.16 km | KICT Wichita Dwight D. Eisenhower National Airport, Wichita KS — 1.84 km | 877 | Consistent |
+| OWENS-024, SITE-003 | SU-BTT | 2024-04-03 | Wichita / Lawrence, KS | KICT Wichita Dwight D. Eisenhower National Airport, Wichita KS — 1.43 km | KILG Wilmington Airport, Wilmington DE — 1.15 km | 737 | Consistent |
+| OWENS-025 | SU-BND | 2024-04-19 | Provo, UT | LFPB Paris-Le Bourget International Airport, Paris FR — 6.67 km | KPVU Provo Municipal Airport, Provo UT — 1.45 km | 1132 | Consistent |
+| OWENS-026, SITE-004 | SU-BTT | 2024-04-23 | Provo, UT | LFPB Paris-Le Bourget International Airport, Paris FR — 4.05 km | KPVU Provo Municipal Airport, Provo UT — 1.42 km | 834 | Consistent |
+| OWENS-027 | SU-BTT | 2024-04-28 | Wilmington, DE | KPVU Provo Municipal Airport, Provo UT — 1.41 km | KILG Wilmington Airport, Wilmington DE — 1.57 km | 1039 | Consistent |
+| OWENS-035, OWENS-065 | SU-BND | 2025-05-23 | Provo, UT | LFPB Paris-Le Bourget International Airport, Paris FR — 4.1 km | KPVU Provo Municipal Airport, Provo UT — 1.42 km | 1451 | Consistent |
+| **OWENS-036** | **SU-BTT** | **2025-06-18** | **Omaha / Lincoln, NE** | **HEBA Alexandria International Airport, Alexandria EG — 36.13 km** | **HEAL El Alamein International Airport, El Alamein EG — 75.92 km** | **9** | **INCONSISTENT** |
+| OWENS-038, OWENS-067 | SU-BTT | 2025-07-20 | Omaha / Lincoln, NE | LFPB Paris-Le Bourget International Airport, Paris FR — 2.36 km | NE42 Dream Field, Lincoln NE — 5.74 km | 2404 | Consistent |
+| OWENS-039 | SU-BTT | 2025-08-17 | Omaha / Lincoln, NE | LFPB Paris-Le Bourget International Airport, Paris FR — 2.16 km | NE42 Dream Field, Lincoln NE — 5.77 km | 1988 | Consistent |
+| OWENS-040 | SU-BTT | 2025-09-04 | Provo, UT | LFPB Paris-Le Bourget International Airport, Paris FR — 2.96 km | KPVU Provo Municipal Airport, Provo UT — 1.35 km | 1971 | Consistent |
+| EXTRA-006, SITE-006 | SU-BND | 2025-09-10 | Provo, UT | KPVU Provo Municipal Airport, Provo UT — 1.29 km | KPVU Provo Municipal Airport, Provo UT — 1.3 km | 328 | Consistent |
+| OWENS-041, SITE-005, SITE-006 | SU-BTT | 2025-09-10 | Provo then Wilmington, UT/DE | KPVU Provo Municipal Airport, Provo UT — 1.37 km | KILG Wilmington Airport, Wilmington DE — 1.75 km | 1789 | Consistent |
+| OWENS-042 | SU-BND | 2025-09-13 | Provo, UT | KPVU Provo Municipal Airport, Provo UT — 0.62 km | CA-0761 Nipigon Airport, Nipigon CA — 58.9 km | 1093 | Consistent |
+
+**Read the distances.** Fourteen of these twenty-three tracks end within **two kilometres** of a
+known airport — that is an aircraft on the field, not an aircraft in the general vicinity. In several
+the field is the one the spreadsheet names: SU-BTT into Wilmington at **1.63 km** on 6 April 2023,
+into Provo at **1.42 km** on 23 April 2024, into Lincoln at **1.22 km** on 9 February 2024.
+
+Read the shape of the routes too, because it is the same one over and over: **Paris-Le Bourget to an
+American field, then American field to American field, then back east.** Le Bourget is the first
+position in nine of the twenty-three. That is an ordinary long-range business-jet routing with a
+European fuel and customs stop, and it is what these traces mostly look like.
+
+### The recovered data corrects the spreadsheet in the auditor's favour
+
+Five of the twenty-three carry an `inaccurate` verdict in the spreadsheet's own audit column, and in
+three of those the audit's objection was to the **route string**, not to the aircraft being there at
+all. The recovered traces settle those three, and they settle them **against the sheet and for the
+auditor**:
+
+| Row | The sheet says | The audit said | What the recovered track shows |
+|---|---|---|---|
+| OWENS-021 (2024-02-14) | Omaha to Wilmington | *"flew from Lincoln to Wilmington, not Omaha"* | Starts **KLNK Lincoln, 1.04 km**. Ends **KILG Wilmington, 0.82 km**. |
+| OWENS-025 (2024-04-19) | route string disputed | *"4/19 Paris–Goose Bay–SLC–Provo. The arrival itself is real; the sheet's route string is wrong."* | Starts **LFPB Paris-Le Bourget, 6.67 km**. Ends **KPVU Provo, 1.45 km**. |
+| OWENS-041 (2025-09-10) | origin Paris / Lincoln | *"Sheet origin is wrong (Paris/Lincoln vs Provo)"* | Starts **KPVU Provo, 1.37 km**. Ends **KILG Wilmington, 1.75 km**. |
+
+This matters as a method result. Those audit corrections were made against **paid** data — a
+FlightRadar24 Business subscription and roughly 950 dollars of FlightAware logs. The free volunteer
+archives reproduce them independently, without an account and without a payment. **Where the paid
+audit and the free archive can be compared, they agree.**
+
+### 10 September 2025, the one date that matters most
+
+Two rows in the table fall on the day of the assassination, and both are worth reading closely
+because the departure timing has been disputed three separate ways.
+
+**SU-BTT** was heard on the Provo ramp from **13:07:53 UTC**, and both archives record the same
+**wheels-up at 13:14:03.82 UTC** — agreeing with each other to the *millisecond*. Utah was on MDT
+(UTC−6) that day, so that is **07:14:03 a.m. local**. The trace runs on to Wilmington, Delaware, last
+heard at **16:50:37 UTC**. Charlie Kirk was shot at **12:23:30 p.m. MDT**. The aircraft was airborne
+and eastbound **five hours and nine minutes before the shot**, and was already at Wilmington when it
+happened. That is the version the [Provo page](/Planes/following/Provo_KPVU_2024-04-19_to_2025-09-13/overview)
+has carried as "07:14 am", and the primary record now supports it.
+
+**SU-BND never moved.** Its first and last positions on 10 September are the same parking spot at
+Provo to five decimal places — 40.2298 N, 111.7277 W — across 328 position reports.
+
+The [Candace Owens](/People/candace-owens) broadcast of 17 November 2025 reported a transponder
+cycle on that airframe: **on 09:05:36, off 10:34:05, on 12:40:53, off 13:29:40**, with the time base
+not stated. Those four numbers are reproducible from the free archives, and **both archives agree on
+all four boundaries independently**:
+
+| | Recovered (UTC) | Read as UTC−7 | Utah local, MDT (UTC−6) | As broadcast |
+|---|---|---|---|---|
+| First contact | 16:05:35 | 09:05:35 | **10:05:35** | 09:05:36 |
+| Track goes quiet | 17:34:09 | 10:34:09 | **11:34:09** | 10:34:05 |
+| Track returns | 19:40:53 | 12:40:53 | **13:40:53** | 12:40:53 |
+| Last contact | 20:29:38 | 13:29:38 | **14:29:38** | 13:29:40 |
+
+The broadcast numbers match the recovered record **to within four seconds on every boundary** when
+they are read as **UTC−7**. Utah on 10 September 2025 was on **UTC−6**. Applying the correct offset
+moves every event **one hour later**: the transponder fell silent at **11:34 a.m. MDT — 49 minutes
+before the shot** — and came back at **1:40 p.m. MDT**, which is **77 minutes after** the shot
+rather than the 17 minutes the broadcast described.
+
+**State plainly what that is and is not.** It is a timezone reconciliation, drawn from two
+independent archives that agree to the second, and it is the same class of error the site has
+already had to correct once on the SU-BTT departure clock. It is **not** an accusation that anyone
+misled anybody — a one-hour offset on a UTC conversion is the commonest mistake in this entire
+subject. And a gap in a volunteer receiver network's coverage of a **parked** aircraft is exactly
+what a gap in a volunteer receiver network's coverage of a parked aircraft looks like. Ordinary
+explanations — the APU cycling, ground power, a single receiver going offline — come first. The
+aircraft's position is identical either side of the gap, so whatever happened, **it did not move**.
+
+## The two that do not check out
+
+Two of the twenty-three put the aircraft on the wrong continent.
+
+### SU-BND, 12 May 2023 — alleged St. Louis, Missouri
+
+The recovered track runs **Paris-Le Bourget (4.18 km) to Inshas Air Base, Egypt (19.8 km)** — 577
+position reports, a full transatlantic-side leg from France into Egypt. On the date the spreadsheet
+places this aircraft in Missouri, the primary record has it flying from France to Egypt.
+
+### SU-BTT, 18 June 2025 — alleged Omaha / Lincoln, Nebraska
+
+The recovered track runs **Alexandria International, Egypt (36.13 km) to El Alamein International,
+Egypt (75.92 km)**. On the date the spreadsheet places this aircraft in Nebraska, the primary record
+never has it leave Egypt.
+
+**This one is thin and must be labelled thin.** It is **nine position reports**, the smallest trace
+in the entire set by a factor of fifty. Nine points is a fragment — enough to say a receiver in Egypt
+heard this airframe that day, not enough to reconstruct a flight. Both distances are large, which is
+what a fragment caught at altitude looks like. It is real primary data and it points one way, but a
+nine-point fragment should not be leaned on the way a 2,404-point trace can be.
+
+### What the spreadsheet's own audit already said about these two
+
+**Both of them were already flagged.** Neither is a new finding:
+
+| Row | `audit_verdict` | `survives_audit` | The counterargument column, already published |
+|---|---|---|---|
+| OWENS-050 | `inaccurate` | `no` | *"Kanekoa audit against FlightRadar24 Business and 950 dollars of FlightAware logs places the aircraft in Egypt / on another continent on this date. Counted in the 73 anyway because it is on the Owens sheet. Auditor: Cairo."* |
+| OWENS-036 | `inaccurate` | `no` | *"Kanekoa audit against FlightRadar24 Business and 950 dollars of FlightAware logs places the aircraft in Egypt / on another continent on this date. Counted in the 73 anyway because it is on the Owens sheet."* |
+
+So the honest reading is narrow and it cuts both ways.
+
+**What it does mean:** the free archives independently reproduce a paid audit's conclusion on both
+rows, from a completely different data source, at zero cost. Anyone can check it. That is a good
+result for the method.
+
+**What it does not mean:** two wrong rows do not condemn a 73-row sheet. The sheet's own audit column
+had already marked both of them inaccurate and both as failing the audit, and they were counted in
+the 73 anyway because they appear on the source spreadsheet — a fact the site has published all
+along. **The error was already disclosed by the people compiling it.** Finding it again is
+confirmation, not exposure.
+
+## The thirty-nine with nothing in the window
+
+Thirty-nine of the sixty-nine pairs returned nothing from either archive on the alleged day or
+either side of it. **That is not a finding about deletion, and nobody should read it as one.**
+
+The year-by-year breakdown, and it explains most of the shortfall on its own:
+
+| Year | Pairs tested | Track on the alleged day | Share |
+|---|---|---|---|
+| **2022** | 9 | **0** | **0%** — untestable by construction |
+| 2023 | 23 | 8 | 35% |
+| 2024 | 22 | 7 | 32% |
+| 2025 | 15 | 8 | 53% |
+| **Total** | **69** | **23** | **33%** |
+
+The reasons, in order of how much they explain:
+
+1. **Both free daily archives begin in 2023.** Every one of the **nine** 2022 rows was untestable
+   before a single request was sent. A 404 on a 2022 date carries no information at all. The only
+   free route into 2022 is the ADS-B Exchange monthly sample archive, which holds **one day per
+   month** — see [the overview](/Planes/Flight-Data-Recovery/overview).
+2. **These are volunteer receiver networks with real coverage holes.** A foreign-registered jet over
+   the North Atlantic, over the Sahara, or on approach to Cairo is outside the dense ground-station
+   coverage that makes a US or European track look complete. Coverage over Egypt in particular is
+   sparse, and both of the archives here depend on somebody having voluntarily put an antenna on a
+   roof.
+3. **The two archives are not the same network.** `adsb.lol` and `globe.airplanes.live` are fed by
+   different volunteers, which is why they were both asked. When neither has anything, two
+   independent networks heard nothing — which is more informative than one silence, but is still
+   silence.
+4. **The aircraft may simply not have flown that day.** A parked aeroplane with no power on the bus
+   produces no ADS-B. Long stationary periods are documented for both of these airframes — SU-BND
+   sat at Provo for 113 continuous days in 2025.
+5. **The claimed date may be wrong.** Seven of the misses turned out to be exactly that; they are the
+   next section.
+
+Concentrated by aircraft, the misses are **37 of SU-BTT's 53 pairs** and **9 of SU-BND's 16** — and
+all nine of the 2022 rows are SU-BTT.
+
+## The seven that landed on the day next door
+
+Seven pairs had no track on the alleged day but **did** have one on an adjacent day:
+
+| Overlap ID | Aircraft | Alleged date | Track actually found on | Offset |
+|---|---|---|---|---|
+| SITE-001 | SU-BTT | 2023-04-02 | 2023-04-01 | day before |
+| OWENS-016 | SU-BND | 2023-06-12 | 2023-06-11 | day before |
+| OWENS-052 | SU-BND | 2023-06-25 | 2023-06-24 | day before |
+| OWENS-055 | SU-BTT | 2024-04-15 | 2024-04-16 | day after |
+| OWENS-028 | SU-BTT | 2024-07-20 | 2024-07-21 | day after |
+| OWENS-029 | SU-BTT | 2024-08-17 | 2024-08-18 | day after |
+| OWENS-030 | SU-BND | 2024-12-08 | 2024-12-07 | day before |
+
+**A one-day offset is often not a different flight.** These archives are indexed by **UTC date**. An
+aircraft leaving an American field at 7 p.m. Central is airborne at 01:00 UTC the following day, so
+the same physical flight is filed under tomorrow. A transatlantic leg routinely spans two UTC dates
+outright.
+
+**But do not over-claim it.** A one-day offset is also exactly what a genuinely wrong date in a
+spreadsheet looks like, and nothing in a date index can tell those two apart. These seven are
+**neither confirmed nor refuted**. They are counted separately from the 23 for that reason, and they
+are not added to the "consistent" tally. Each would need its own timestamp-by-timestamp check
+against the alleged event before it could be called anything.
+
+## What this changes, and what it does not
+
+### It changes this
+
+* **Rows this site published as untestable now have primary data behind them.** Twenty-three of the
+  sixty-nine have a real ADS-B trace, from two independent archives, saved to disk in this repository
+  with the source in the filename.
+* **Twenty-one of the twenty-three corroborate the flight leg**, and fourteen of the recovered tracks
+  end within two kilometres of an airport. The legs are largely real.
+* **On three rows the recovered data corrects the spreadsheet toward the auditor**, including the
+  10 September origin. The free archives reproduced a paid audit's corrections at no cost.
+* **The 10 September departure clock is settled by primary data**: SU-BTT wheels-up 13:14:03 UTC,
+  07:14 a.m. MDT, five hours before the shot, with both archives agreeing to the millisecond.
+* **Two rows are contradicted outright** by the primary record, both of them already flagged
+  `inaccurate` by the sheet's own audit.
+
+### It does not change this
+
+* **The overlap pairing is still unsourced.** Every line above is about an aircraft. Whether a Kirk
+  was in that city on that date is a separate question, and the recovered data says nothing about it.
+* **Erika Kirk's itinerary is still absent, and no archive fixes it.** There is no dated, published
+  list of her locations for a backup to restore. The 73-overlap tally is measured against something
+  this repository cannot reproduce.
+* **The audit's central finding stands.** The individual flight legs verify at a high rate while the
+  *overlaps* built on top of them do not. That was true before this sweep and it is still true after
+  it — this page is a large body of evidence for the first half of that sentence and none at all for
+  the second.
+* **Thirty-nine rows remain untested**, nine of them permanently so at free-tier cost.
+* **Presence is never purpose.** Every aircraft here has ordinary explanations available —
+  maintenance at the Duncan Aviation facilities these airframes repeatedly visit, diplomatic travel,
+  routine positioning — and those explanations are documented elsewhere on this site alongside the
+  claims.
+* **None of this is in the criminal case.** No flight record features in the prosecution of
+  [Tyler Robinson](/Tyler_Robinson/overview), who is charged and has not been convicted.
+
+## Reproduce this page
+
+Every number above comes from two scripts and no account, key or payment:
+
+```
+cd site/docs/Planes/following/apis/public_open_source/code/
+
+# pull every (aircraft, date) pair in overlaps.csv from both free daily
+# archives, on the alleged day and the UTC day either side
+node recover_overlaps.js
+
+# label each recovered track with its nearest airport and run the
+# consistency test against the alleged place
+node analyse_overlap_recovery.js
+```
+
+The outputs are `overlap_recovery_index.json` (the raw pull, including the neighbouring days and
+every HTTP status) and `overlap_recovery_analysis.json` (the nearest-airport labels and the
+verdicts), both under
+`site/docs/Planes/following/apis/public_open_source/data/recovery/`.
+
+Every raw payload is saved under the aircraft's own directory at `Planes/SU-BTT/data/recovered/` and
+`Planes/SU-BND/data/recovered/`, **with the source in the filename**, and each one has a
+`.meta.json` beside it recording the exact URL, the HTTP status, the byte count and the UTC
+retrieval time. Nothing overwrites a previous pull.
+
+The claim being tested is in `site/docs/Planes/following/overlaps.csv`.
+
+## Related pages
+
+* [Flight Data Recovery](/Planes/Flight-Data-Recovery/overview) — the whole recovery effort, and the correction at the top of it
+* [Per-Aircraft Recovery Status](/Planes/Flight-Data-Recovery/Per-Aircraft-Status) — the fleet-wide breakdown, aircraft by aircraft and source by source
+* [What A 403 Actually Means](/Planes/Flight-Data-Recovery/What-A-403-Means) — the control-test method that took down three claimed removals
+* [The 73 Overlaps](/Planes/following/73_overlaps) — the claim this page tests, row by row
+* [SU-BTT](/Planes/SU-BTT/overview) — the Falcon 7X in 53 of the 69 pairs
+* [SU-BND](/Planes/SU-BND/overview) — the Gulfstream in the other 16
+* [Overlap Window Definition](/Planes/following/Overlap_Window_Definition) — what counts as an overlap in the first place
+* [Erika Flight Logs Erased](/Planes/Erika-Flight-Logs-Erased) — the missing half of every pairing above

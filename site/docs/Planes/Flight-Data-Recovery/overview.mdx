@@ -125,7 +125,7 @@ line below can be checked without trusting this page.
 | [SU-BTT](/Planes/SU-BTT/overview) | 29 | 37 | 6 | 0 | — | none |
 | [SU-BTU](/Planes/SU-BTU/overview) | 0 | 3 | 9 | 1 | 4 | none |
 | [SU-BTV](/Planes/SU-BTV/overview) | 1 | 7 | 2 | 0 | — | none |
-| [T7-ELL](/Planes/T7-ELL/overview) | 5 | 26 | 12 | 0 | — | none |
+| [T7-ELL](/Planes/T7ELL-EJM36/overview) | 5 | 26 | 12 | 0 | — | none |
 | **Total** | **156** | **379** | **207** | **50** | **153** | **none** |
 
 Read the last column first. **It is empty for every aircraft.** Across sixteen airframes and eighty
@@ -397,6 +397,47 @@ that.** A trace showing SU-BTT at Wichita on 1 September 2022 says nothing at al
 Charlie or Erika Kirk was that day, and this repo still holds almost no sourced Erika locations for
 that entire window.
 
+## A fifth free source, found while running the sweep
+
+FlightAware refuses nothing. Where FlightRadar24, RadarBox and Planespotters block scripted
+requests, `flightaware.com` serves them **HTTP 200** — and its per-aircraft page ships a
+server-rendered JSON blob, `trackpollBootstrap`, carrying an **activity log with named airports and
+actual takeoff and landing times**. No key, no account.
+
+**It is not a recovery route.** The free log reaches back about a week, the same as everyone else's
+free tier. What it is worth is that it names *fields* instead of handing us coordinates to resolve,
+and it is independent of the ADS-B archives. Run across the fleet on 24 August 2026 it returned
+**169 legs across nine aircraft**, and two of them are worth reporting here.
+
+### N1098L and N2100L are operating out of Army airfields, this month
+
+The two [LASAI Aviation II](/Planes/LASAI-Fleet/overview) Global Expresses returned 37 legs each in
+a single week. Counting every field either end of every leg:
+
+| [N1098L](/Planes/N1098L/overview) — 10–17 Aug 2026 | | [N2100L](/Planes/N2100L/overview) — 10–24 Aug 2026 | |
+|---|---|---|---|
+| Biggs AAF (Fort Bliss) | 25 | Robert Gray AAF (Fort Hood) | 27 |
+| Amarillo Intl | 10 | Biggs AAF (Fort Bliss) | 17 |
+| March ARB | 7 | El Paso Intl | 4 |
+| Robert Gray AAF (Fort Hood) | 5 | Amarillo Intl | 4 |
+| Lubbock | 4 | Garden City | 3 |
+| **Sierra Vista Municipal** | **3** | Roswell Air Center | 2 |
+
+Three of those fields are **US Army airfields** — Biggs at Fort Bliss, Robert Gray at Fort Hood,
+and March Air Reserve Base — and the aircraft are flying almost nothing else.
+
+**Sierra Vista Municipal is the civil half of Libby Army Airfield, on Fort Huachuca.** This site has
+carried the Fort Huachuca link as *"an unverified OSINT claim, not a documented tasking record"*.
+It is still not a tasking record and it says nothing about September 2025. But it is no longer
+unsourced: **N1098L flew into Fort Huachuca's field three times in one week in August 2026**, and
+the record is a free, third-party, timestamped one that anybody can pull.
+
+**Read the limits.** This is *current* activity, not the day of the assassination. Basing an
+aircraft at an Army field is exactly what an Army-contracted aircraft does and is not itself
+remarkable — it is the confirmation of *which* fields that is worth having. And an activity log is
+a tracking site's summary of flights, not a mission record; who was aboard and what the aircraft was
+tasked to do remain outside every source on this page.
+
 ## The four backup routes, side by side
 
 | Route | Cost | Reaches | What it recovers | Limitation |
@@ -405,6 +446,7 @@ that entire window.
 | **adsb.lol GitHub releases** (ODbL) | free | 2023 → today | The complete day, including days the live API refuses. | ~3 GB per day; must be streamed and filtered. |
 | **samples.adsbexchange.com** | free | **2016** → today | Full days, **one per month**. The only free route into 2022. | One day in thirty. Cannot test a specific mid-month date. |
 | **Internet Archive** (Wayback) | free | whenever a crawler visited | The tracking-site **page** — the flight-history table as published. | Sparse and unpredictable. N102DZ has exactly two snapshots in four years. |
+| **FlightAware activity log** | free, no account | about a week back | Named airports and actual off/on times, server-rendered so a script can read it. | One week. Useless for anything historical. |
 
 The last one is the only route that recovers **what a tracking site said**, as opposed to what the
 sensors heard. That makes it the only route that can document a removal at all — and it is the
