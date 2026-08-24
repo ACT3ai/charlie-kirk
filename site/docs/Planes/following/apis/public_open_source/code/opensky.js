@@ -8,7 +8,10 @@
 // in your OpenSky account, then exchange client_id + client_secret for a bearer
 // token that expires after 30 minutes.
 //
-//   export OPENSKY_CLIENT_ID=...
+// CREDENTIALS: OPENSKY_CLIENT_ID and OPENSKY_CLIENT_SECRET. They come from
+// ~/.credentials/charlie_kirk.json (charlie_kirk.flight_apis.*) or from the
+// environment. Never from a file in this repo. See lib/credentials.js.
+//   export OPENSKY_CLIENT_ID=...      # optional, overrides the store
 //   export OPENSKY_CLIENT_SECRET=...
 //
 // WITHOUT CREDENTIALS: anonymous callers get HTTP 403 with the body
@@ -23,11 +26,12 @@
 //   node opensky.js SU-BTT 2025-09-10
 import { FLEET, byReg } from "./lib/fleet.js";
 import { savePull, getJSON, sleep } from "./lib/save.js";
+import { cred } from "./lib/credentials.js";
 const OUT = new URL("../data/opensky/", import.meta.url).pathname;
 const TOKEN_URL = "https://auth.opensky-network.org/auth/realms/opensky-network/protocol/openid-connect/token";
 
 export async function token() {
-  const id = process.env.OPENSKY_CLIENT_ID, secret = process.env.OPENSKY_CLIENT_SECRET;
+  const id = cred("OPENSKY_CLIENT_ID"), secret = cred("OPENSKY_CLIENT_SECRET");
   if (!id || !secret) return null;
   const res = await fetch(TOKEN_URL, {
     method: "POST", headers: { "Content-Type": "application/x-www-form-urlencoded" },
@@ -49,7 +53,8 @@ export async function flightsOnDay(ac, day, bearer) {
 if (import.meta.url === `file://${process.argv[1]}`) {
   const bearer = await token();
   console.log(bearer ? "authenticated via OAuth2 client credentials"
-    : "NO CREDENTIALS - set OPENSKY_CLIENT_ID / OPENSKY_CLIENT_SECRET. Historical calls will 403.");
+    : "NO CREDENTIALS - put OPENSKY_CLIENT_ID / OPENSKY_CLIENT_SECRET in\n"
+    + "~/.credentials/charlie_kirk.json under charlie_kirk.flight_apis. Historical calls will 403.");
   const [who, day] = process.argv.slice(2);
   const list = who && who !== "--following" ? [byReg(who)].filter(Boolean) : FLEET.filter((a) => a.side === "following");
   for (const ac of list) {

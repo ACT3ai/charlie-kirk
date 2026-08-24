@@ -12,7 +12,10 @@
 //   /api/historic/flight-positions/full   historic positional track
 //   /api/flight-tracks             full track for a completed flight
 //
-//   export FR24_API_TOKEN=...
+// CREDENTIAL: FR24_API_TOKEN. It comes from ~/.credentials/charlie_kirk.json
+// (charlie_kirk.flight_apis.FR24_API_TOKEN) or from the environment. Never from a
+// file in this repo. See ../../public_open_source/code/lib/credentials.js.
+//   export FR24_API_TOKEN=...     # optional, overrides the store
 //   node fr24api.js SU-BTT 2025-09-01 2025-09-15
 //
 // TERMS: read them before publishing anything. The finding may be published; the
@@ -20,11 +23,11 @@
 // audit trail and publish the conclusion with the query date.
 import { savePull, getJSON } from "../../public_open_source/code/lib/save.js";
 import { byReg } from "../../public_open_source/code/lib/fleet.js";
+import { cred, report } from "../../public_open_source/code/lib/credentials.js";
 const OUT = new URL("../data/flightradar24/", import.meta.url).pathname;
 const BASE = "https://fr24api.flightradar24.com/api";
 
-const token = process.env.FR24_API_TOKEN;
-const headers = () => ({ Authorization: `Bearer ${token}`, Accept: "application/json",
+const headers = () => ({ Authorization: `Bearer ${cred("FR24_API_TOKEN")}`, Accept: "application/json",
                          "Accept-Version": "v1" });
 
 export async function flightSummary(reg, from, to) {
@@ -38,8 +41,7 @@ export async function flightSummary(reg, from, to) {
 
 if (import.meta.url === `file://${process.argv[1]}`) {
   const [reg, from, to] = process.argv.slice(2);
-  if (!token) {
-    console.error("FR24_API_TOKEN is not set.");
+  if (!report("FR24_API_TOKEN")) {
     console.error("BLOCKED, and that is the finding: this vendor's own record of the aircraft");
     console.error("its screenshots were read off cannot be checked without a paid subscription.");
     console.error("Record it in knowledge.mdx as blocked-on-credential, do not work around it.");
