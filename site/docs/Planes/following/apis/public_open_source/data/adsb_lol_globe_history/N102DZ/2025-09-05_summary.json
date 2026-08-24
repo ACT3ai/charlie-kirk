@@ -1,0 +1,37 @@
+{
+  "icao": "a00c85",
+  "registration": "N102DZ",
+  "type": "GLF5",
+  "description": "GULFSTREAM 5",
+  "db_flags": 0,
+  "day": "2025-09-05",
+  "points": 1260,
+  "first_seen_utc": "2025-09-05T00:00:19.730Z",
+  "last_seen_utc": "2025-09-05T03:13:40.280Z",
+  "first_position": {
+    "lat": 32.312439,
+    "lon": -97.406873,
+    "alt": 11175
+  },
+  "last_position": {
+    "lat": 33.619444,
+    "lon": -111.917295,
+    "alt": "ground"
+  },
+  "ground_segments": [
+    {
+      "from": "2025-09-05T00:20:23.670Z",
+      "to": "2025-09-05T00:56:52.570Z",
+      "lat": 32.843733,
+      "lon": -96.85467
+    },
+    {
+      "from": "2025-09-05T03:10:40.190Z",
+      "to": null,
+      "lat": 33.624297,
+      "lon": -111.908898
+    }
+  ],
+  "source_url": "https://adsb.lol/globe_history/2025/09/05/traces/85/trace_full_a00c85.json",
+  "retrieved_utc": "2026-08-24T15:54:11.619Z"
+}

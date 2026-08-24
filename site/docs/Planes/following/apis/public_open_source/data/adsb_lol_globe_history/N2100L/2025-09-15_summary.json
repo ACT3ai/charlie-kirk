@@ -1,0 +1,31 @@
+{
+  "icao": "a1bbe5",
+  "registration": "N2100L",
+  "type": "GLEX",
+  "description": "BOMBARDIER BD-700 Global 6000/6500",
+  "db_flags": 0,
+  "day": "2025-09-15",
+  "points": 1932,
+  "first_seen_utc": "2025-09-15T14:39:46.400Z",
+  "last_seen_utc": "2025-09-15T23:59:41.420Z",
+  "first_position": {
+    "lat": 32.580917,
+    "lon": -107.295776,
+    "alt": 28900
+  },
+  "last_position": {
+    "lat": 35.06781,
+    "lon": -113.498915,
+    "alt": 19000
+  },
+  "ground_segments": [
+    {
+      "from": "2025-09-15T17:36:24.340Z",
+      "to": "2025-09-15T18:06:34.180Z",
+      "lat": 45.589444,
+      "lon": -122.606838
+    }
+  ],
+  "source_url": "https://adsb.lol/globe_history/2025/09/15/traces/e5/trace_full_a1bbe5.json",
+  "retrieved_utc": "2026-08-24T15:55:11.697Z"
+}
