@@ -59,9 +59,9 @@ The post makes three separate claims, and they carry very different evidentiary 
 
 | Claim | Type | Status |
 |---|---|---|
-| N102DZ's public history was removed from FlightRadar24 in May 2026 | Checkable against the tracking site | Reported by researchers; not independently confirmed on this site |
-| Copies of the logs were saved before removal | Claim of possession | Asserted; the underlying data has not been published in full |
-| The saved logs are "far from boring" | Characterisation | Opinion — no specific flight has been produced here to test it |
+| N102DZ's public history was removed from FlightRadar24 in May 2026 | Checkable against the tracking site | **Partly confirmed** — the page returns HTTP 403 to the public; the *date* of removal is not something we can establish |
+| Copies of the logs were saved before removal | Claim of possession | **This site now holds one** — recovered from the Internet Archive, not from the poster |
+| The saved logs are "far from boring" | Characterisation | **Not borne out by what we recovered** — see below |
 
 <div style={{float: 'right', width: '48%', maxWidth: '480px', marginLeft: '1.5rem', marginBottom: '1rem'}}>
   <video controls style={{width: '100%', height: 'auto', display: 'block', borderRadius: '4px'}}>
@@ -73,6 +73,54 @@ The post makes three separate claims, and they carry very different evidentiary 
     <em>Screen recording accompanying the post, shown as the tracking-record material. No spoken audio. Source: <a href="https://x.com/hurtfeelingzday/status/2079661605332062718">@hurtfeelingzday on X</a>, July 21, 2026.</em>
   </p>
 </div>
+
+## We went and got the logs back
+
+This page originally said the removal made the record unavailable to anyone outside. **That is no
+longer the position, and the change is worth stating plainly rather than quietly editing.**
+
+Treating "the logs were erased" as a working assumption, this investigation went looking for
+backups. The full method and results are on **[Flight Data
+Recovery](/Planes/Flight-Data-Recovery/overview)**. Three things came back:
+
+* **The FlightRadar24 flight-history table itself.** The Internet Archive holds a copy of the
+  N102DZ page captured **11 September 2025, 05:57 UTC** — about twenty hours after the
+  assassination, and roughly eight months before the reported removal. It contains **twelve flight
+  rows** covering 4–10 September 2025 with scheduled and actual times. It is reproduced in full on
+  **[N102DZ](/Planes/N102DZ/overview)**.
+* **The underlying ADS-B record, which was never gone at all.** N102DZ's tracks remain retrievable
+  from free archives FlightRadar24 does not control — **including right through May 2026**, the
+  month of the reported removal, on nearly every day the aircraft flew. Whatever happened at
+  FlightRadar24 did not remove the flight data from the world.
+* **Days one archive refuses.** Dates that return HTTP 403 from adsb.lol were recovered from two
+  independent backups that agree with each other to the second.
+
+### What the recovered logs actually contain
+
+The poster said the logs are "far from boring." **The recovered table does not support that.** The
+twelve rows are ordinary point-to-point business-jet legs — Scottsdale, Dallas, New Braunfels, Los
+Angeles, Phoenix, Salt Lake City, Provo, Camarillo. There is no foreign destination in them, no
+Egyptian airport, and nothing that corroborates the aircraft-swap reading the wider thread advances.
+
+**The recovered record does support Erika Kirk's flat denial on one specific point.** She said she
+was not aboard "an Egyptian plane." Nothing in the recovered N102DZ history contradicts her, and
+nothing in it places this aircraft anywhere near the foreign-registered tails.
+
+It also **corrected a detail this site had published.** A widely repeated claim that N102DZ
+*"arrived into Scottsdale at 1:13 p.m. and departed again immediately at 1:13 p.m."* turns out to
+be FlightRadar24's **flight-duration column** read a second time as a clock time. The real ground
+time was about eighteen minutes.
+
+### What recovery does not fix
+
+**The important limitation, and it is fatal to the thing this dispute is actually about.** Every
+recovery here is about *an aircraft*. **An aircraft track never establishes who was aboard it.**
+Recovering N102DZ's movements in full still does not place Erika Kirk on any leg, on any date, and
+the free FlightRadar24 page only ever displayed **seven days** of history — so no archived copy of
+it could ever have held the multi-year record the 73-overlap tally was built from.
+
+**Her itinerary remains the missing document, and no backup anywhere produces it.** That is why this
+page still exists.
 
 ## Why this matters to the investigation
 

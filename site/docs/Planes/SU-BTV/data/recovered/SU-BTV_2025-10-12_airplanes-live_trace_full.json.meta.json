@@ -1,0 +1,31 @@
+{
+  "retrieved_utc": "2026-08-24T16:29:36.628Z",
+  "source": "airplanes-live",
+  "source_role": "BACKUP ARCHIVE — independent volunteer network",
+  "url": "https://globe.airplanes.live/globe_history/2025/10/12/traces/d1/trace_full_0101d1.json",
+  "http_status": 200,
+  "bytes": 523270,
+  "tail": "SU-BTV",
+  "hex": "0101d1",
+  "utc_date": "2025-10-12",
+  "summary": {
+    "registration": "SU-BTV",
+    "type": "FA7X",
+    "icao": "0101d1",
+    "points": 2650,
+    "first_seen_utc": "2025-10-12T11:57:39.040Z",
+    "first_pos": [
+      39.671768,
+      -75.603537
+    ],
+    "first_on_ground": true,
+    "last_seen_utc": "2025-10-12T22:29:08.180Z",
+    "last_pos": [
+      30.713928,
+      30.979937
+    ],
+    "last_on_ground": false,
+    "wheels_up_utc": "2025-10-12T11:58:09.360Z",
+    "wheels_down_utc": null
+  }
+}

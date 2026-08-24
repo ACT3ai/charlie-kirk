@@ -1,0 +1,28 @@
+{
+  "retrieved_utc": "2026-08-24T16:33:32.437Z",
+  "source": "adsbexchange-samples",
+  "source_role": "BACKUP ARCHIVE — ADSBX free monthly sample, reaches back to 2016; the only free source covering the 2022 dates the daily archives do not hold",
+  "url": "https://samples.adsbexchange.com/traces/2024/10/01/3c/trace_full_abff3c.json",
+  "http_status": 200,
+  "bytes": 256649,
+  "tail": "N872RA",
+  "hex": "abff3c",
+  "utc_date": "2024-10-01",
+  "summary": {
+    "registration": "N872RA",
+    "type": "BE40",
+    "points": 1464,
+    "first_seen_utc": "2024-10-01T15:05:53.250Z",
+    "first_pos": [
+      33.676215,
+      -117.871213
+    ],
+    "first_on_ground": true,
+    "last_seen_utc": "2024-10-01T23:59:52.830Z",
+    "last_pos": [
+      35.652054,
+      -115.330982
+    ],
+    "last_on_ground": false
+  }
+}

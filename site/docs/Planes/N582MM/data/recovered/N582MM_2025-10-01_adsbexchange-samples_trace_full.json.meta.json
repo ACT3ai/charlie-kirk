@@ -1,0 +1,28 @@
+{
+  "retrieved_utc": "2026-08-24T16:33:32.437Z",
+  "source": "adsbexchange-samples",
+  "source_role": "BACKUP ARCHIVE — ADSBX free monthly sample, reaches back to 2016; the only free source covering the 2022 dates the daily archives do not hold",
+  "url": "https://samples.adsbexchange.com/traces/2025/10/01/75/trace_full_a77e75.json",
+  "http_status": 200,
+  "bytes": 3664,
+  "tail": "N582MM",
+  "hex": "a77e75",
+  "utc_date": "2025-10-01",
+  "summary": {
+    "registration": "N582MM",
+    "type": "LJ60",
+    "points": 27,
+    "first_seen_utc": "2025-10-01T20:45:36.460Z",
+    "first_pos": [
+      26.383714,
+      -80.10359
+    ],
+    "first_on_ground": false,
+    "last_seen_utc": "2025-10-01T20:54:28.300Z",
+    "last_pos": [
+      26.383714,
+      -80.10359
+    ],
+    "last_on_ground": false
+  }
+}

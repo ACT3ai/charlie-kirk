@@ -1,0 +1,23 @@
+{"icao":"0101d1",
+"r":"SU-BTV",
+"t":"FA7X",
+"dbFlags":1,"desc":"DASSAULT Falcon 7X",
+"version": "readsb 3.14.1676 46c61ff-dirty",
+"timestamp": 1777161600.000,
+"trace":[ 
+[30115.44,29.362061,31.888293,21000,423.6,135.7,1,0,{"type":"adsb_icao","alt_geom":21800,"track":135.67,"baro_rate":0,"category":"A2","nav_qnh":1013.6,"nav_altitude_mcp":21024,"nav_modes":["autopilot","althold","tcas"],"nic":8,"rc":186,"version":0,"nic_baro":1,"nac_p":8,"nac_v":2,"sil":2,"sil_type":"perhour","alert":0,"spi":0},"adsb_icao",21800,null,null,null],
+[30123.25,29.350674,31.900312,21000,423.3,137.7,0,0,null,"adsb_icao",21800,null,null,null],
+[30129.34,29.341599,31.909209,21000,423.1,138.9,0,0,null,"adsb_icao",21800,null,null,null],
+[30159.66,29.295742,31.951958,21000,422.3,141.0,1,0,null,"adsb_icao",21825,null,null,null],
+[30164.31,29.288434,31.958744,21000,425.7,140.8,0,0,{"type":"adsb_icao","alt_geom":21825,"track":140.81,"baro_rate":0,"category":"A2","nav_qnh":1013.6,"nav_altitude_mcp":21024,"nav_modes":["autopilot","althold","tcas"],"nic":8,"rc":186,"version":2,"nic_baro":1,"nac_p":9,"nac_v":2,"sil":3,"sil_type":"perhour","alert":0,"spi":0},"adsb_icao",21825,null,null,null],
+[34366.41,29.144075,32.822032,24000,null,null,1,null,null,"adsb_icao",24925,null,null,null],
+[34373.93,29.152268,32.809161,24000,396.1,305.9,0,0,null,"adsb_icao",24925,null,null,null],
+[34382.89,29.161765,32.794243,24000,396.6,306.0,0,0,null,"adsb_icao",24925,null,null,null],
+[34392.30,29.171906,32.778344,24000,396.6,306.0,0,0,{"type":"adsb_icao","flight":"SUBTV   ","alt_geom":24925,"track":305.97,"baro_rate":0,"squawk":"3744","emergency":"none","category":"A2","nav_qnh":1013.6,"nav_altitude_mcp":24000,"nav_altitude_fms":24000,"nav_modes":["autopilot","althold","tcas"],"nic":8,"rc":186,"version":2,"nic_baro":1,"nac_p":9,"nac_v":2,"sil":3,"sil_type":"perhour","gva":2,"sda":2,"alert":0,"spi":0},"adsb_icao",24925,null,null,null],
+[34399.54,29.179688,32.766090,24000,396.6,306.0,0,0,null,"adsb_icao",24925,null,null,null],
+[34407.26,29.183365,32.760315,24000,396.1,305.9,0,0,null,"adsb_icao",24925,null,null,null],
+[34416.52,29.197983,32.737211,24000,397.5,305.9,0,0,null,"adsb_icao",24925,null,null,null],
+[34430.54,29.202942,32.729433,24000,396.9,305.8,0,0,{"type":"adsb_icao","flight":"SUBTV   ","alt_geom":24925,"track":305.77,"baro_rate":0,"squawk":"3744","emergency":"none","category":"A2","nav_qnh":1013.6,"nav_altitude_mcp":24000,"nav_modes":["autopilot","althold","tcas"],"nic":8,"rc":186,"version":2,"nic_baro":1,"nac_p":9,"nac_v":2,"sil":3,"sil_type":"perhour","gva":2,"sda":2,"alert":0,"spi":0},"adsb_icao",24925,null,null,null],
+[34578.73,29.376617,32.466871,21450,null,null,1,null,null,"adsb_icao",null,null,null,null],
+[34580.58,29.378605,32.464007,21400,383.9,308.1,0,-1728,null,"adsb_icao",22225,null,null,null] ]
+ }

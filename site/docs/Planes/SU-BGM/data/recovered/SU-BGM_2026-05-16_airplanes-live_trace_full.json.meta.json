@@ -1,0 +1,31 @@
+{
+  "retrieved_utc": "2026-08-24T16:29:36.628Z",
+  "source": "airplanes-live",
+  "source_role": "BACKUP ARCHIVE — independent volunteer network",
+  "url": "https://globe.airplanes.live/globe_history/2026/05/16/traces/70/trace_full_010070.json",
+  "http_status": 200,
+  "bytes": 39172,
+  "tail": "SU-BGM",
+  "hex": "010070",
+  "utc_date": "2026-05-16",
+  "summary": {
+    "registration": "SU-BGM",
+    "type": "GLF4",
+    "icao": "010070",
+    "points": 271,
+    "first_seen_utc": "2026-05-16T07:14:20.850Z",
+    "first_pos": [
+      30.433868,
+      31.048656
+    ],
+    "first_on_ground": false,
+    "last_seen_utc": "2026-05-16T08:57:02.740Z",
+    "last_pos": [
+      29.39839,
+      30.579529
+    ],
+    "last_on_ground": false,
+    "wheels_up_utc": null,
+    "wheels_down_utc": null
+  }
+}

@@ -1,0 +1,14 @@
+{"icao":"010070",
+"r":"SU-BGM",
+"t":"GLF4",
+"dbFlags":1,"desc":"GULFSTREAM 4",
+"version": "readsb 3.14.1676 46c61ff-dirty",
+"timestamp": 1760400000.000,
+"trace":[ 
+[28956.45,30.818161,30.552925,24650,419.3,305.6,5,1920,{"type":"adsb_icao","flight":"SUBGM   ","alt_geom":25925,"track":305.59,"geom_rate":1920,"category":"A2","nic":8,"rc":186,"version":2,"nic_baro":1,"nac_p":9,"nac_v":1,"sil":3,"sil_type":"perhour","gva":2,"sda":2,"alert":0,"spi":0},"adsb_icao",25925,1920,null,null],
+[28957.63,30.819397,30.550891,24700,419.9,305.7,4,1920,null,"adsb_icao",25950,1920,null,null],
+[28980.88,30.845901,30.508064,25425,422.1,305.6,1,32,null,"adsb_icao",26725,1856,null,null],
+[29048.65,30.847687,30.505102,25450,null,null,1,null,null,"adsb_icao",null,null,null,null],
+[29195.62,31.100759,30.094299,30025,454.5,305.5,5,0,{"type":"adsb_icao","alt_geom":31475,"track":305.51,"geom_rate":0,"category":"A2","nav_qnh":1012.8,"nav_altitude_mcp":30016,"nic":8,"rc":186,"version":0,"nic_baro":1,"nac_p":8,"nac_v":1,"sil":2,"sil_type":"perhour","alert":0,"spi":0},"adsb_icao",31475,0,null,null],
+[29198.81,31.104669,30.087927,30025,454.5,305.5,4,0,null,"adsb_icao",31475,0,null,null] ]
+ }

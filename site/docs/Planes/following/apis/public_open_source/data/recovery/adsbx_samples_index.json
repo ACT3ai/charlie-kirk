@@ -1,0 +1,4854 @@
+{
+  "generated_utc": "2026-08-24T16:33:32.437Z",
+  "source": "samples.adsbexchange.com/traces (free monthly sample)",
+  "window": {
+    "from": "2022-01",
+    "to": "2026-08"
+  },
+  "note": "One day per month (the 1st). A 404 means the sample does not hold that airframe that day — almost always because it was not heard, not because anything was removed.",
+  "hits": [
+    {
+      "tail": "SU-BTT",
+      "date": "2022-05-01",
+      "bytes": 11238,
+      "summary": {
+        "registration": "SU-BTT",
+        "type": "FA7X",
+        "points": 67,
+        "first_seen_utc": "2022-05-01T13:32:51.359Z",
+        "first_pos": [
+          30.727341,
+          30.675336
+        ],
+        "first_on_ground": false,
+        "last_seen_utc": "2022-05-01T15:24:43.159Z",
+        "last_pos": [
+          30.356528,
+          31.017261
+        ],
+        "last_on_ground": false
+      },
+      "pre_2023": true
+    },
+    {
+      "tail": "SU-BTT",
+      "date": "2022-06-01",
+      "bytes": 302249,
+      "summary": {
+        "registration": "SU-BTT",
+        "type": "FA7X",
+        "points": 1508,
+        "first_seen_utc": "2022-06-01T11:31:13.112Z",
+        "first_pos": [
+          39.673439,
+          -75.601686
+        ],
+        "first_on_ground": true,
+        "last_seen_utc": "2022-06-01T22:31:43.912Z",
+        "last_pos": [
+          30.079309,
+          31.35954
+        ],
+        "last_on_ground": false
+      },
+      "pre_2023": true
+    },
+    {
+      "tail": "SU-BTT",
+      "date": "2022-09-01",
+      "bytes": 255083,
+      "summary": {
+        "registration": "SU-BTT",
+        "type": "FA7X",
+        "points": 1337,
+        "first_seen_utc": "2022-09-01T07:04:30.590Z",
+        "first_pos": [
+          48.965286,
+          2.452486
+        ],
+        "first_on_ground": false,
+        "last_seen_utc": "2022-09-01T16:59:21.900Z",
+        "last_pos": [
+          37.65723,
+          -97.423398
+        ],
+        "last_on_ground": true
+      },
+      "pre_2023": true
+    },
+    {
+      "tail": "SU-BTT",
+      "date": "2023-04-01",
+      "bytes": 229506,
+      "summary": {
+        "registration": "SU-BTT",
+        "type": "FA7X",
+        "points": 1166,
+        "first_seen_utc": "2023-04-01T07:19:30.260Z",
+        "first_pos": [
+          48.966293,
+          2.429598
+        ],
+        "first_on_ground": false,
+        "last_seen_utc": "2023-04-01T16:01:44.340Z",
+        "last_pos": [
+          38.663177,
+          -90.626519
+        ],
+        "last_on_ground": false
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "SU-BTT",
+      "date": "2023-06-01",
+      "bytes": 42816,
+      "summary": {
+        "registration": "SU-BTT",
+        "type": "FA7X",
+        "points": 201,
+        "first_seen_utc": "2023-06-01T16:17:58.840Z",
+        "first_pos": [
+          31.72656,
+          35.970062
+        ],
+        "first_on_ground": false,
+        "last_seen_utc": "2023-06-01T17:02:23.340Z",
+        "last_pos": [
+          29.546659,
+          32.639088
+        ],
+        "last_on_ground": false
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "SU-BTT",
+      "date": "2026-03-01",
+      "bytes": 14755,
+      "summary": {
+        "registration": "SU-BTT",
+        "type": "FA7X",
+        "points": 86,
+        "first_seen_utc": "2026-03-01T09:28:51.670Z",
+        "first_pos": [
+          30.154771,
+          31.434357
+        ],
+        "first_on_ground": false,
+        "last_seen_utc": "2026-03-01T10:49:50.380Z",
+        "last_pos": [
+          29.499548,
+          32.37057
+        ],
+        "last_on_ground": false
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "SU-BND",
+      "date": "2022-01-01",
+      "bytes": 5127,
+      "summary": {
+        "registration": null,
+        "type": null,
+        "points": 35,
+        "first_seen_utc": "2022-01-01T15:31:15.565Z",
+        "first_pos": [
+          29.874247,
+          31.720276
+        ],
+        "first_on_ground": false,
+        "last_seen_utc": "2022-01-01T21:23:00.965Z",
+        "last_pos": [
+          29.384052,
+          32.344289
+        ],
+        "last_on_ground": false
+      },
+      "pre_2023": true
+    },
+    {
+      "tail": "SU-BND",
+      "date": "2022-09-01",
+      "bytes": 190875,
+      "summary": {
+        "registration": "SU-BND",
+        "type": "GLF4",
+        "points": 989,
+        "first_seen_utc": "2022-09-01T00:00:18.980Z",
+        "first_pos": [
+          41.534791,
+          -86.274421
+        ],
+        "first_on_ground": false,
+        "last_seen_utc": "2022-09-01T09:37:00.230Z",
+        "last_pos": [
+          48.963213,
+          2.444982
+        ],
+        "last_on_ground": true
+      },
+      "pre_2023": true
+    },
+    {
+      "tail": "SU-BND",
+      "date": "2024-10-01",
+      "bytes": 9677,
+      "summary": {
+        "registration": "SU-BND",
+        "type": "GLF4",
+        "points": 60,
+        "first_seen_utc": "2024-10-01T08:22:36.640Z",
+        "first_pos": [
+          29.300351,
+          30.506125
+        ],
+        "first_on_ground": false,
+        "last_seen_utc": "2024-10-01T09:39:18.160Z",
+        "last_pos": [
+          29.543701,
+          32.221421
+        ],
+        "last_on_ground": false
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "SU-BND",
+      "date": "2024-12-01",
+      "bytes": 10674,
+      "summary": {
+        "registration": "SU-BND",
+        "type": "GLF4",
+        "points": 64,
+        "first_seen_utc": "2024-12-01T15:40:27.890Z",
+        "first_pos": [
+          28.887131,
+          31.72186
+        ],
+        "first_on_ground": false,
+        "last_seen_utc": "2024-12-01T15:55:24.790Z",
+        "last_pos": [
+          29.974986,
+          31.357617
+        ],
+        "last_on_ground": false
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "SU-BND",
+      "date": "2025-11-01",
+      "bytes": 36516,
+      "summary": {
+        "registration": "SU-BND",
+        "type": "GLF4",
+        "points": 209,
+        "first_seen_utc": "2025-11-01T12:21:13.280Z",
+        "first_pos": [
+          30.177721,
+          31.345807
+        ],
+        "first_on_ground": false,
+        "last_seen_utc": "2025-11-01T18:25:54.490Z",
+        "last_pos": [
+          30.06269,
+          31.3591
+        ],
+        "last_on_ground": false
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "SU-BND",
+      "date": "2026-07-01",
+      "bytes": 110551,
+      "summary": {
+        "registration": "SU-BND",
+        "type": "GLF4",
+        "points": 671,
+        "first_seen_utc": "2026-07-01T06:48:07.540Z",
+        "first_pos": [
+          30.086254,
+          31.357175
+        ],
+        "first_on_ground": true,
+        "last_seen_utc": "2026-07-01T09:22:54.570Z",
+        "last_pos": [
+          29.94548,
+          31.356973
+        ],
+        "last_on_ground": false
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "SU-BTU",
+      "date": "2022-12-01",
+      "bytes": 240135,
+      "summary": {
+        "registration": "SU-BTU",
+        "type": "FA7X",
+        "points": 1245,
+        "first_seen_utc": "2022-12-01T09:03:54.100Z",
+        "first_pos": [
+          48.964994,
+          2.445687
+        ],
+        "first_on_ground": false,
+        "last_seen_utc": "2022-12-01T18:40:48.270Z",
+        "last_pos": [
+          38.656746,
+          -90.665955
+        ],
+        "last_on_ground": false
+      },
+      "pre_2023": true
+    },
+    {
+      "tail": "SU-BTU",
+      "date": "2023-05-01",
+      "bytes": 356463,
+      "summary": {
+        "registration": "SU-BTU",
+        "type": "FA7X",
+        "points": 1882,
+        "first_seen_utc": "2023-05-01T11:13:03.900Z",
+        "first_pos": [
+          48.964142,
+          2.421429
+        ],
+        "first_on_ground": false,
+        "last_seen_utc": "2023-05-01T21:16:05.300Z",
+        "last_pos": [
+          38.662332,
+          -90.631653
+        ],
+        "last_on_ground": false
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "SU-BTU",
+      "date": "2023-10-01",
+      "bytes": 14145,
+      "summary": {
+        "registration": "SU-BTU",
+        "type": "FA7X",
+        "points": 86,
+        "first_seen_utc": "2023-10-01T07:49:16.200Z",
+        "first_pos": [
+          30.034195,
+          31.144625
+        ],
+        "first_on_ground": false,
+        "last_seen_utc": "2023-10-01T09:09:54.630Z",
+        "last_pos": [
+          29.702655,
+          31.997681
+        ],
+        "last_on_ground": false
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "SU-BTU",
+      "date": "2023-11-01",
+      "bytes": 51911,
+      "summary": {
+        "registration": "SU-BTU",
+        "type": "FA7X",
+        "points": 283,
+        "first_seen_utc": "2023-11-01T11:06:51.710Z",
+        "first_pos": [
+          30.17244,
+          31.365374
+        ],
+        "first_on_ground": false,
+        "last_seen_utc": "2023-11-01T12:21:27.470Z",
+        "last_pos": [
+          29.966141,
+          31.357123
+        ],
+        "last_on_ground": false
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "SU-BTU",
+      "date": "2024-04-01",
+      "bytes": 48327,
+      "summary": {
+        "registration": "SU-BTU",
+        "type": "FA7X",
+        "points": 251,
+        "first_seen_utc": "2024-04-01T14:12:18.830Z",
+        "first_pos": [
+          30.077499,
+          31.805097
+        ],
+        "first_on_ground": false,
+        "last_seen_utc": "2024-04-01T18:01:13.910Z",
+        "last_pos": [
+          33.818344,
+          35.490548
+        ],
+        "last_on_ground": false
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "SU-BTU",
+      "date": "2024-05-01",
+      "bytes": 46906,
+      "summary": {
+        "registration": "SU-BTU",
+        "type": "FA7X",
+        "points": 278,
+        "first_seen_utc": "2024-05-01T07:44:19.620Z",
+        "first_pos": [
+          30.268032,
+          31.343665
+        ],
+        "first_on_ground": false,
+        "last_seen_utc": "2024-05-01T18:04:36.770Z",
+        "last_pos": [
+          30.082708,
+          31.359595
+        ],
+        "last_on_ground": false
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "SU-BTU",
+      "date": "2024-12-01",
+      "bytes": 157492,
+      "summary": {
+        "registration": "SU-BTU",
+        "type": "FA7X",
+        "points": 894,
+        "first_seen_utc": "2024-12-01T14:13:45.120Z",
+        "first_pos": [
+          40.851637,
+          -96.748508
+        ],
+        "first_on_ground": true,
+        "last_seen_utc": "2024-12-01T16:28:24.250Z",
+        "last_pos": [
+          39.672783,
+          -75.60054
+        ],
+        "last_on_ground": true
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "SU-BTU",
+      "date": "2025-05-01",
+      "bytes": 315169,
+      "summary": {
+        "registration": "SU-BTU",
+        "type": "FA7X",
+        "points": 1646,
+        "first_seen_utc": "2025-05-01T11:49:46.720Z",
+        "first_pos": [
+          39.671814,
+          -75.602118
+        ],
+        "first_on_ground": true,
+        "last_seen_utc": "2025-05-01T22:39:18.960Z",
+        "last_pos": [
+          30.118227,
+          31.230505
+        ],
+        "last_on_ground": false
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "SU-BTU",
+      "date": "2026-03-01",
+      "bytes": 5603,
+      "summary": {
+        "registration": "SU-BTU",
+        "type": "FA7X",
+        "points": 32,
+        "first_seen_utc": "2026-03-01T09:17:48.870Z",
+        "first_pos": [
+          30.154999,
+          31.44244
+        ],
+        "first_on_ground": false,
+        "last_seen_utc": "2026-03-01T09:24:55.940Z",
+        "last_pos": [
+          29.406816,
+          31.627
+        ],
+        "last_on_ground": false
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "SU-BTV",
+      "date": "2022-10-01",
+      "bytes": 46497,
+      "summary": {
+        "registration": "SU-BTV",
+        "type": "FA7X",
+        "points": 269,
+        "first_seen_utc": "2022-10-01T15:20:51.370Z",
+        "first_pos": [
+          30.102074,
+          31.35954
+        ],
+        "first_on_ground": false,
+        "last_seen_utc": "2022-10-01T16:21:10.640Z",
+        "last_pos": [
+          30.060828,
+          31.359265
+        ],
+        "last_on_ground": false
+      },
+      "pre_2023": true
+    },
+    {
+      "tail": "SU-BTV",
+      "date": "2025-10-01",
+      "bytes": 3058,
+      "summary": {
+        "registration": "SU-BTV",
+        "type": "FA7X",
+        "points": 19,
+        "first_seen_utc": "2025-10-01T06:47:23.810Z",
+        "first_pos": [
+          29.582597,
+          31.262404
+        ],
+        "first_on_ground": false,
+        "last_seen_utc": "2025-10-01T06:56:34.470Z",
+        "last_pos": [
+          28.415486,
+          31.931655
+        ],
+        "last_on_ground": false
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "SU-BGM",
+      "date": "2023-08-01",
+      "bytes": 71022,
+      "summary": {
+        "registration": "SU-BGM",
+        "type": "GLF4",
+        "points": 447,
+        "first_seen_utc": "2023-08-01T06:05:58.270Z",
+        "first_pos": [
+          30.08777,
+          31.3552
+        ],
+        "first_on_ground": true,
+        "last_seen_utc": "2023-08-01T17:31:15.510Z",
+        "last_pos": [
+          29.997191,
+          31.358221
+        ],
+        "last_on_ground": false
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "T7-ELL",
+      "date": "2022-02-01",
+      "bytes": 40762,
+      "summary": {
+        "registration": "T7-ELL",
+        "type": "GLEX",
+        "points": 242,
+        "first_seen_utc": "2022-02-01T00:00:08.260Z",
+        "first_pos": [
+          33.052872,
+          -113.325897
+        ],
+        "first_on_ground": false,
+        "last_seen_utc": "2022-02-01T00:38:27.560Z",
+        "last_pos": [
+          32.114538,
+          -110.955258
+        ],
+        "last_on_ground": true
+      },
+      "pre_2023": true
+    },
+    {
+      "tail": "T7-ELL",
+      "date": "2022-08-01",
+      "bytes": 125990,
+      "summary": {
+        "registration": "T7-ELL",
+        "type": "GLEX",
+        "points": 735,
+        "first_seen_utc": "2022-08-01T00:08:18.570Z",
+        "first_pos": [
+          33.932796,
+          -118.398551
+        ],
+        "first_on_ground": true,
+        "last_seen_utc": "2022-08-01T01:41:41.010Z",
+        "last_pos": [
+          32.114061,
+          -110.955328
+        ],
+        "last_on_ground": true
+      },
+      "pre_2023": true
+    },
+    {
+      "tail": "T7-ELL",
+      "date": "2022-09-01",
+      "bytes": 271383,
+      "summary": {
+        "registration": "T7-ELL",
+        "type": "GLEX",
+        "points": 1506,
+        "first_seen_utc": "2022-09-01T02:08:02.330Z",
+        "first_pos": [
+          33.933078,
+          -118.398757
+        ],
+        "first_on_ground": true,
+        "last_seen_utc": "2022-09-01T12:24:19.360Z",
+        "last_pos": [
+          51.279583,
+          -0.779343
+        ],
+        "last_on_ground": true
+      },
+      "pre_2023": true
+    },
+    {
+      "tail": "T7-ELL",
+      "date": "2023-09-01",
+      "bytes": 209922,
+      "summary": {
+        "registration": "T7-ELL",
+        "type": "GLEX",
+        "points": 1208,
+        "first_seen_utc": "2023-09-01T14:41:22.200Z",
+        "first_pos": [
+          33.932774,
+          -118.398593
+        ],
+        "first_on_ground": true,
+        "last_seen_utc": "2023-09-01T19:05:13.940Z",
+        "last_pos": [
+          33.933008,
+          -118.397799
+        ],
+        "last_on_ground": true
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "T7-ELL",
+      "date": "2024-04-01",
+      "bytes": 155488,
+      "summary": {
+        "registration": "T7-ELL",
+        "type": "GLEX",
+        "points": 784,
+        "first_seen_utc": "2024-04-01T20:38:49.810Z",
+        "first_pos": [
+          18.014878,
+          -63.137937
+        ],
+        "first_on_ground": false,
+        "last_seen_utc": "2024-04-01T23:29:55.210Z",
+        "last_pos": [
+          25.912949,
+          -80.28223
+        ],
+        "last_on_ground": false
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "T7-ELL",
+      "date": "2024-06-01",
+      "bytes": 103406,
+      "summary": {
+        "registration": "T7-ELL",
+        "type": "GLEX",
+        "points": 519,
+        "first_seen_utc": "2024-06-01T07:02:12.220Z",
+        "first_pos": [
+          24.895485,
+          55.163442
+        ],
+        "first_on_ground": false,
+        "last_seen_utc": "2024-06-01T13:55:04.400Z",
+        "last_pos": [
+          3.1595,
+          101.532519
+        ],
+        "last_on_ground": false
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "T7-ELL",
+      "date": "2025-08-01",
+      "bytes": 219719,
+      "summary": {
+        "registration": "T7-ELL",
+        "type": "GLEX",
+        "points": 1146,
+        "first_seen_utc": "2025-08-01T13:29:49.890Z",
+        "first_pos": [
+          47.44899,
+          8.548342
+        ],
+        "first_on_ground": true,
+        "last_seen_utc": "2025-08-01T19:24:19.130Z",
+        "last_pos": [
+          24.430929,
+          54.451442
+        ],
+        "last_on_ground": true
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "T7-ELL",
+      "date": "2025-10-01",
+      "bytes": 463143,
+      "summary": {
+        "registration": "T7-ELL",
+        "type": "GLEX",
+        "points": 2414,
+        "first_seen_utc": "2025-10-01T07:48:24.740Z",
+        "first_pos": [
+          24.874775,
+          55.170301
+        ],
+        "first_on_ground": true,
+        "last_seen_utc": "2025-10-01T23:59:56.390Z",
+        "last_pos": [
+          40.510688,
+          -75.723579
+        ],
+        "last_on_ground": false
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "T7-ELL",
+      "date": "2026-01-01",
+      "bytes": 370985,
+      "summary": {
+        "registration": "T7-ELL",
+        "type": "GLEX",
+        "points": 2037,
+        "first_seen_utc": "2026-01-01T09:00:35.410Z",
+        "first_pos": [
+          24.889023,
+          55.174828
+        ],
+        "first_on_ground": true,
+        "last_seen_utc": "2026-01-01T16:56:29.320Z",
+        "last_pos": [
+          66.558952,
+          25.827663
+        ],
+        "last_on_ground": true
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "T7-ELL",
+      "date": "2026-02-01",
+      "bytes": 66638,
+      "summary": {
+        "registration": "T7-ELL",
+        "type": "GLEX",
+        "points": 347,
+        "first_seen_utc": "2026-02-01T06:59:14.190Z",
+        "first_pos": [
+          24.874537,
+          55.170788
+        ],
+        "first_on_ground": true,
+        "last_seen_utc": "2026-02-01T10:50:43.520Z",
+        "last_pos": [
+          8.864502,
+          37.888959
+        ],
+        "last_on_ground": false
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "T7-ELL",
+      "date": "2026-05-01",
+      "bytes": 239208,
+      "summary": {
+        "registration": "T7-ELL",
+        "type": "GLEX",
+        "points": 1261,
+        "first_seen_utc": "2026-05-01T08:24:09.180Z",
+        "first_pos": [
+          24.874924,
+          55.17011
+        ],
+        "first_on_ground": true,
+        "last_seen_utc": "2026-05-01T17:17:04.150Z",
+        "last_pos": [
+          34.0808,
+          -6.730099
+        ],
+        "last_on_ground": false
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "T7-ELL",
+      "date": "2026-08-01",
+      "bytes": 386845,
+      "summary": {
+        "registration": "T7-ELL",
+        "type": "GLEX",
+        "points": 1954,
+        "first_seen_utc": "2026-08-01T03:08:20.310Z",
+        "first_pos": [
+          52.700546,
+          -8.927841
+        ],
+        "first_on_ground": false,
+        "last_seen_utc": "2026-08-01T13:33:13.690Z",
+        "last_pos": [
+          24.875015,
+          55.169932
+        ],
+        "last_on_ground": true
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "N102DZ",
+      "date": "2022-05-01",
+      "bytes": 63638,
+      "summary": {
+        "registration": "N102DZ",
+        "type": "GLF5",
+        "points": 377,
+        "first_seen_utc": "2022-05-01T18:21:36.074Z",
+        "first_pos": [
+          33.869081,
+          -84.303818
+        ],
+        "first_on_ground": false,
+        "last_seen_utc": "2022-05-01T19:42:36.873Z",
+        "last_pos": [
+          25.690338,
+          -77.490997
+        ],
+        "last_on_ground": false
+      },
+      "pre_2023": true
+    },
+    {
+      "tail": "N102DZ",
+      "date": "2022-06-01",
+      "bytes": 100277,
+      "summary": {
+        "registration": "N102DZ",
+        "type": "GLF5",
+        "points": 583,
+        "first_seen_utc": "2022-06-01T11:40:02.285Z",
+        "first_pos": [
+          33.884443,
+          -84.29678
+        ],
+        "first_on_ground": false,
+        "last_seen_utc": "2022-06-01T13:20:15.185Z",
+        "last_pos": [
+          40.855047,
+          -74.055966
+        ],
+        "last_on_ground": true
+      },
+      "pre_2023": true
+    },
+    {
+      "tail": "N102DZ",
+      "date": "2022-11-01",
+      "bytes": 131364,
+      "summary": {
+        "registration": "N102DZ",
+        "type": "GLF5",
+        "points": 766,
+        "first_seen_utc": "2022-11-01T00:00:15.580Z",
+        "first_pos": [
+          34.344818,
+          -118.594553
+        ],
+        "first_on_ground": false,
+        "last_seen_utc": "2022-11-01T23:59:58.820Z",
+        "last_pos": [
+          37.450949,
+          -122.091005
+        ],
+        "last_on_ground": false
+      },
+      "pre_2023": true
+    },
+    {
+      "tail": "N102DZ",
+      "date": "2023-03-01",
+      "bytes": 117115,
+      "summary": {
+        "registration": "N102DZ",
+        "type": "GLF5",
+        "points": 747,
+        "first_seen_utc": "2023-03-01T16:46:27.930Z",
+        "first_pos": [
+          33.875565,
+          -84.30649
+        ],
+        "first_on_ground": true,
+        "last_seen_utc": "2023-03-01T19:19:21.380Z",
+        "last_pos": [
+          40.854183,
+          -74.057175
+        ],
+        "last_on_ground": true
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "N102DZ",
+      "date": "2023-04-01",
+      "bytes": 208519,
+      "summary": {
+        "registration": "N102DZ",
+        "type": "GLF5",
+        "points": 1134,
+        "first_seen_utc": "2023-04-01T12:46:27.630Z",
+        "first_pos": [
+          22.296602,
+          113.911298
+        ],
+        "first_on_ground": true,
+        "last_seen_utc": "2023-04-01T21:44:15.130Z",
+        "last_pos": [
+          -37.688866,
+          144.853662
+        ],
+        "last_on_ground": true
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "N102DZ",
+      "date": "2024-01-01",
+      "bytes": 96569,
+      "summary": {
+        "registration": "N102DZ",
+        "type": "GLF5",
+        "points": 614,
+        "first_seen_utc": "2024-01-01T18:13:03.120Z",
+        "first_pos": [
+          39.57784,
+          -104.848785
+        ],
+        "first_on_ground": true,
+        "last_seen_utc": "2024-01-01T20:33:23.570Z",
+        "last_pos": [
+          26.168701,
+          -91.145221
+        ],
+        "last_on_ground": false
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "N102DZ",
+      "date": "2024-06-01",
+      "bytes": 45718,
+      "summary": {
+        "registration": "N102DZ",
+        "type": "GLF5",
+        "points": 286,
+        "first_seen_utc": "2024-06-01T01:48:03.750Z",
+        "first_pos": [
+          23.521179,
+          -151.567633
+        ],
+        "first_on_ground": false,
+        "last_seen_utc": "2024-06-01T02:43:40.730Z",
+        "last_pos": [
+          20.899212,
+          -156.427447
+        ],
+        "last_on_ground": true
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "N102DZ",
+      "date": "2024-09-01",
+      "bytes": 43688,
+      "summary": {
+        "registration": "N102DZ",
+        "type": "GLF5",
+        "points": 283,
+        "first_seen_utc": "2024-09-01T18:27:51.010Z",
+        "first_pos": [
+          26.194462,
+          -80.169931
+        ],
+        "first_on_ground": true,
+        "last_seen_utc": "2024-09-01T19:00:38.750Z",
+        "last_pos": [
+          25.909311,
+          -80.275555
+        ],
+        "last_on_ground": true
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "N102DZ",
+      "date": "2024-10-01",
+      "bytes": 141258,
+      "summary": {
+        "registration": "N102DZ",
+        "type": "GLF5",
+        "points": 895,
+        "first_seen_utc": "2024-10-01T00:00:02.370Z",
+        "first_pos": [
+          37.366058,
+          -122.51807
+        ],
+        "first_on_ground": false,
+        "last_seen_utc": "2024-10-01T02:30:22.340Z",
+        "last_pos": [
+          34.219677,
+          -118.493657
+        ],
+        "last_on_ground": true
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "N102DZ",
+      "date": "2024-11-01",
+      "bytes": 228127,
+      "summary": {
+        "registration": "N102DZ",
+        "type": "GLF5",
+        "points": 1423,
+        "first_seen_utc": "2024-11-01T17:46:32.960Z",
+        "first_pos": [
+          40.840383,
+          -74.06366
+        ],
+        "first_on_ground": true,
+        "last_seen_utc": "2024-11-01T23:25:34.680Z",
+        "last_pos": [
+          34.202671,
+          -118.490716
+        ],
+        "last_on_ground": true
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "N102DZ",
+      "date": "2024-12-01",
+      "bytes": 345908,
+      "summary": {
+        "registration": "N102DZ",
+        "type": "GLF5",
+        "points": 2157,
+        "first_seen_utc": "2024-12-01T00:01:03.460Z",
+        "first_pos": [
+          37.323132,
+          -79.973602
+        ],
+        "first_on_ground": true,
+        "last_seen_utc": "2024-12-01T23:59:45.050Z",
+        "last_pos": [
+          40.005936,
+          -103.952454
+        ],
+        "last_on_ground": false
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "N102DZ",
+      "date": "2025-05-01",
+      "bytes": 62482,
+      "summary": {
+        "registration": "N102DZ",
+        "type": "GLF5",
+        "points": 397,
+        "first_seen_utc": "2025-05-01T00:00:16.360Z",
+        "first_pos": [
+          41.912384,
+          -80.711184
+        ],
+        "first_on_ground": false,
+        "last_seen_utc": "2025-05-01T01:04:29.790Z",
+        "last_pos": [
+          40.841093,
+          -74.064737
+        ],
+        "last_on_ground": true
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "N102DZ",
+      "date": "2025-06-01",
+      "bytes": 164292,
+      "summary": {
+        "registration": "N102DZ",
+        "type": "GLF5",
+        "points": 941,
+        "first_seen_utc": "2025-06-01T01:43:44.920Z",
+        "first_pos": [
+          51.877911,
+          -0.37875
+        ],
+        "first_on_ground": true,
+        "last_seen_utc": "2025-06-01T11:07:19.170Z",
+        "last_pos": [
+          20.613983,
+          -76.530862
+        ],
+        "last_on_ground": false
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "N102DZ",
+      "date": "2025-07-01",
+      "bytes": 273973,
+      "summary": {
+        "registration": "N102DZ",
+        "type": "GLF5",
+        "points": 1753,
+        "first_seen_utc": "2025-07-01T00:16:44.210Z",
+        "first_pos": [
+          40.842705,
+          -74.063736
+        ],
+        "first_on_ground": true,
+        "last_seen_utc": "2025-07-01T19:50:07.170Z",
+        "last_pos": [
+          34.209936,
+          -118.487091
+        ],
+        "last_on_ground": true
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "N102DZ",
+      "date": "2025-09-01",
+      "bytes": 91710,
+      "summary": {
+        "registration": "N102DZ",
+        "type": "GLF5",
+        "points": 572,
+        "first_seen_utc": "2025-09-01T17:16:20.120Z",
+        "first_pos": [
+          33.621283,
+          -111.913519
+        ],
+        "first_on_ground": true,
+        "last_seen_utc": "2025-09-01T18:43:02.550Z",
+        "last_pos": [
+          33.619469,
+          -111.917304
+        ],
+        "last_on_ground": true
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "N102DZ",
+      "date": "2025-12-01",
+      "bytes": 65491,
+      "summary": {
+        "registration": "N102DZ",
+        "type": "GLF5",
+        "points": 416,
+        "first_seen_utc": "2025-12-01T00:00:15.710Z",
+        "first_pos": [
+          30.447052,
+          -81.909754
+        ],
+        "first_on_ground": false,
+        "last_seen_utc": "2025-12-01T01:09:52.670Z",
+        "last_pos": [
+          26.679332,
+          -80.093263
+        ],
+        "last_on_ground": true
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "N102DZ",
+      "date": "2026-04-01",
+      "bytes": 75104,
+      "summary": {
+        "registration": "N102DZ",
+        "type": "GLF5",
+        "points": 470,
+        "first_seen_utc": "2026-04-01T22:39:00.610Z",
+        "first_pos": [
+          33.619142,
+          -111.916838
+        ],
+        "first_on_ground": true,
+        "last_seen_utc": "2026-04-01T23:59:46.980Z",
+        "last_pos": [
+          38.063095,
+          -100.197299
+        ],
+        "last_on_ground": false
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "N102DZ",
+      "date": "2026-06-01",
+      "bytes": 169529,
+      "summary": {
+        "registration": "N102DZ",
+        "type": "GLF5",
+        "points": 1076,
+        "first_seen_utc": "2026-06-01T00:00:00.770Z",
+        "first_pos": [
+          33.630501,
+          -111.902899
+        ],
+        "first_on_ground": true,
+        "last_seen_utc": "2026-06-01T03:49:01.530Z",
+        "last_pos": [
+          26.377476,
+          -80.110509
+        ],
+        "last_on_ground": true
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "N888KG",
+      "date": "2022-03-01",
+      "bytes": 78617,
+      "summary": {
+        "registration": "N888KG",
+        "type": "CL30",
+        "points": 407,
+        "first_seen_utc": "2022-03-01T22:32:06.345Z",
+        "first_pos": [
+          40.854904,
+          -74.061417
+        ],
+        "first_on_ground": true,
+        "last_seen_utc": "2022-03-01T23:59:55.645Z",
+        "last_pos": [
+          34.484116,
+          -77.480014
+        ],
+        "last_on_ground": false
+      },
+      "pre_2023": true
+    },
+    {
+      "tail": "N888KG",
+      "date": "2022-04-01",
+      "bytes": 124387,
+      "summary": {
+        "registration": "N888KG",
+        "type": "CL30",
+        "points": 698,
+        "first_seen_utc": "2022-04-01T11:50:01.054Z",
+        "first_pos": [
+          26.683182,
+          -80.082248
+        ],
+        "first_on_ground": true,
+        "last_seen_utc": "2022-04-01T15:23:46.454Z",
+        "last_pos": [
+          40.721337,
+          -73.40253
+        ],
+        "last_on_ground": false
+      },
+      "pre_2023": true
+    },
+    {
+      "tail": "N888KG",
+      "date": "2022-06-01",
+      "bytes": 133234,
+      "summary": {
+        "registration": "N888KG",
+        "type": "CL30",
+        "points": 779,
+        "first_seen_utc": "2022-06-01T15:49:23.827Z",
+        "first_pos": [
+          32.849587,
+          -96.846052
+        ],
+        "first_on_ground": true,
+        "last_seen_utc": "2022-06-01T18:13:48.727Z",
+        "last_pos": [
+          26.680077,
+          -80.080349
+        ],
+        "last_on_ground": true
+      },
+      "pre_2023": true
+    },
+    {
+      "tail": "N888KG",
+      "date": "2022-07-01",
+      "bytes": 113164,
+      "summary": {
+        "registration": "N888KG",
+        "type": "CL30",
+        "points": 646,
+        "first_seen_utc": "2022-07-01T00:00:01.175Z",
+        "first_pos": [
+          34.711583,
+          -117.577457
+        ],
+        "first_on_ground": false,
+        "last_seen_utc": "2022-07-01T02:39:54.274Z",
+        "last_pos": [
+          39.567633,
+          -104.848267
+        ],
+        "last_on_ground": true
+      },
+      "pre_2023": true
+    },
+    {
+      "tail": "N888KG",
+      "date": "2022-12-01",
+      "bytes": 8572,
+      "summary": {
+        "registration": "N888KG",
+        "type": "CL30",
+        "points": 57,
+        "first_seen_utc": "2022-12-01T00:00:05.140Z",
+        "first_pos": [
+          40.219236,
+          -111.719861
+        ],
+        "first_on_ground": true,
+        "last_seen_utc": "2022-12-01T00:45:02.120Z",
+        "last_pos": [
+          40.219231,
+          -111.719864
+        ],
+        "last_on_ground": true
+      },
+      "pre_2023": true
+    },
+    {
+      "tail": "N888KG",
+      "date": "2023-07-01",
+      "bytes": 99776,
+      "summary": {
+        "registration": "N888KG",
+        "type": "CL30",
+        "points": 587,
+        "first_seen_utc": "2023-07-01T14:09:05.880Z",
+        "first_pos": [
+          40.219448,
+          -111.719345
+        ],
+        "first_on_ground": true,
+        "last_seen_utc": "2023-07-01T17:31:25.070Z",
+        "last_pos": [
+          26.290329,
+          -110.823445
+        ],
+        "last_on_ground": false
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "N888KG",
+      "date": "2023-12-01",
+      "bytes": 183272,
+      "summary": {
+        "registration": "N888KG",
+        "type": "CL30",
+        "points": 1082,
+        "first_seen_utc": "2023-12-01T16:40:37.740Z",
+        "first_pos": [
+          40.21912,
+          -111.719456
+        ],
+        "first_on_ground": true,
+        "last_seen_utc": "2023-12-01T21:02:15.380Z",
+        "last_pos": [
+          35.879928,
+          -78.783967
+        ],
+        "last_on_ground": true
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "N888KG",
+      "date": "2024-06-01",
+      "bytes": 206140,
+      "summary": {
+        "registration": "N888KG",
+        "type": "CL30",
+        "points": 1197,
+        "first_seen_utc": "2024-06-01T15:08:54.030Z",
+        "first_pos": [
+          20.676689,
+          -105.252145
+        ],
+        "first_on_ground": true,
+        "last_seen_utc": "2024-06-01T18:45:34.650Z",
+        "last_pos": [
+          40.219082,
+          -111.719452
+        ],
+        "last_on_ground": true
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "N888KG",
+      "date": "2024-08-01",
+      "bytes": 152966,
+      "summary": {
+        "registration": "N888KG",
+        "type": "CL30",
+        "points": 897,
+        "first_seen_utc": "2024-08-01T15:05:25.490Z",
+        "first_pos": [
+          40.219074,
+          -111.719268
+        ],
+        "first_on_ground": true,
+        "last_seen_utc": "2024-08-01T17:51:20.970Z",
+        "last_pos": [
+          40.219036,
+          -111.719315
+        ],
+        "last_on_ground": true
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "N888KG",
+      "date": "2024-09-01",
+      "bytes": 61695,
+      "summary": {
+        "registration": "N888KG",
+        "type": "CL30",
+        "points": 356,
+        "first_seen_utc": "2024-09-01T04:39:12.680Z",
+        "first_pos": [
+          37.047855,
+          -113.503525
+        ],
+        "first_on_ground": true,
+        "last_seen_utc": "2024-09-01T05:19:58.970Z",
+        "last_pos": [
+          40.219254,
+          -111.719284
+        ],
+        "last_on_ground": true
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "N888KG",
+      "date": "2025-08-01",
+      "bytes": 136036,
+      "summary": {
+        "registration": "N888KG",
+        "type": "CL30",
+        "points": 779,
+        "first_seen_utc": "2025-08-01T20:17:07.390Z",
+        "first_pos": [
+          38.56192,
+          -90.141031
+        ],
+        "first_on_ground": false,
+        "last_seen_utc": "2025-08-01T23:12:27.880Z",
+        "last_pos": [
+          40.219504,
+          -111.719487
+        ],
+        "last_on_ground": true
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "N888KG",
+      "date": "2025-11-01",
+      "bytes": 113982,
+      "summary": {
+        "registration": "N888KG",
+        "type": "CL30",
+        "points": 661,
+        "first_seen_utc": "2025-11-01T15:09:05.790Z",
+        "first_pos": [
+          40.219048,
+          -111.719238
+        ],
+        "first_on_ground": true,
+        "last_seen_utc": "2025-11-01T20:14:28.870Z",
+        "last_pos": [
+          40.219097,
+          -111.719673
+        ],
+        "last_on_ground": true
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "N888KG",
+      "date": "2026-02-01",
+      "bytes": 2837,
+      "summary": {
+        "registration": "N888KG",
+        "type": "CL30",
+        "points": 20,
+        "first_seen_utc": "2026-02-01T16:45:09.250Z",
+        "first_pos": [
+          32.11462,
+          -110.957037
+        ],
+        "first_on_ground": false,
+        "last_seen_utc": "2026-02-01T16:58:56.290Z",
+        "last_pos": [
+          32.114639,
+          -110.95708
+        ],
+        "last_on_ground": false
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "N560TW",
+      "date": "2022-01-01",
+      "bytes": 120931,
+      "summary": {
+        "registration": "N560TW",
+        "type": "C56X",
+        "points": 889,
+        "first_seen_utc": "2022-01-01T18:52:57.148Z",
+        "first_pos": [
+          33.622517,
+          -111.909156
+        ],
+        "first_on_ground": true,
+        "last_seen_utc": "2022-01-01T23:37:38.748Z",
+        "last_pos": [
+          33.622364,
+          -111.909163
+        ],
+        "last_on_ground": true
+      },
+      "pre_2023": true
+    },
+    {
+      "tail": "N560TW",
+      "date": "2022-02-01",
+      "bytes": 196163,
+      "summary": {
+        "registration": "N560TW",
+        "type": "C56X",
+        "points": 1161,
+        "first_seen_utc": "2022-02-01T13:57:59.929Z",
+        "first_pos": [
+          33.622493,
+          -111.909142
+        ],
+        "first_on_ground": true,
+        "last_seen_utc": "2022-02-01T23:59:54.129Z",
+        "last_pos": [
+          33.471863,
+          -111.976227
+        ],
+        "last_on_ground": false
+      },
+      "pre_2023": true
+    },
+    {
+      "tail": "N560TW",
+      "date": "2022-04-01",
+      "bytes": 83768,
+      "summary": {
+        "registration": "N560TW",
+        "type": "C56X",
+        "points": 492,
+        "first_seen_utc": "2022-04-01T19:17:35.749Z",
+        "first_pos": [
+          43.607937,
+          -110.735893
+        ],
+        "first_on_ground": true,
+        "last_seen_utc": "2022-04-01T20:51:16.349Z",
+        "last_pos": [
+          33.622307,
+          -111.909261
+        ],
+        "last_on_ground": true
+      },
+      "pre_2023": true
+    },
+    {
+      "tail": "N560TW",
+      "date": "2022-05-01",
+      "bytes": 181131,
+      "summary": {
+        "registration": "N560TW",
+        "type": "C56X",
+        "points": 1072,
+        "first_seen_utc": "2022-05-01T17:39:36.018Z",
+        "first_pos": [
+          33.622478,
+          -111.908882
+        ],
+        "first_on_ground": true,
+        "last_seen_utc": "2022-05-01T21:25:22.817Z",
+        "last_pos": [
+          33.6224,
+          -111.909156
+        ],
+        "last_on_ground": true
+      },
+      "pre_2023": true
+    },
+    {
+      "tail": "N560TW",
+      "date": "2022-07-01",
+      "bytes": 412817,
+      "summary": {
+        "registration": "N560TW",
+        "type": "C56X",
+        "points": 2446,
+        "first_seen_utc": "2022-07-01T14:12:08.022Z",
+        "first_pos": [
+          33.62268,
+          -111.909013
+        ],
+        "first_on_ground": true,
+        "last_seen_utc": "2022-07-01T23:59:55.822Z",
+        "last_pos": [
+          35.285898,
+          -106.946411
+        ],
+        "last_on_ground": false
+      },
+      "pre_2023": true
+    },
+    {
+      "tail": "N560TW",
+      "date": "2022-11-01",
+      "bytes": 237463,
+      "summary": {
+        "registration": "N560TW",
+        "type": "C56X",
+        "points": 1338,
+        "first_seen_utc": "2022-11-01T20:18:38.900Z",
+        "first_pos": [
+          33.622528,
+          -111.909199
+        ],
+        "first_on_ground": true,
+        "last_seen_utc": "2022-11-01T23:59:59.010Z",
+        "last_pos": [
+          33.649933,
+          -112.012622
+        ],
+        "last_on_ground": false
+      },
+      "pre_2023": true
+    },
+    {
+      "tail": "N560TW",
+      "date": "2023-05-01",
+      "bytes": 237046,
+      "summary": {
+        "registration": "N560TW",
+        "type": "C56X",
+        "points": 1385,
+        "first_seen_utc": "2023-05-01T15:42:39.320Z",
+        "first_pos": [
+          33.622684,
+          -111.909359
+        ],
+        "first_on_ground": true,
+        "last_seen_utc": "2023-05-01T21:08:11.700Z",
+        "last_pos": [
+          33.622237,
+          -111.909156
+        ],
+        "last_on_ground": true
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "N560TW",
+      "date": "2023-07-01",
+      "bytes": 227369,
+      "summary": {
+        "registration": "N560TW",
+        "type": "C56X",
+        "points": 1341,
+        "first_seen_utc": "2023-07-01T16:35:46.380Z",
+        "first_pos": [
+          33.622354,
+          -111.90897
+        ],
+        "first_on_ground": true,
+        "last_seen_utc": "2023-07-01T19:52:20.700Z",
+        "last_pos": [
+          33.622493,
+          -111.908627
+        ],
+        "last_on_ground": true
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "N560TW",
+      "date": "2023-08-01",
+      "bytes": 231271,
+      "summary": {
+        "registration": "N560TW",
+        "type": "C56X",
+        "points": 1366,
+        "first_seen_utc": "2023-08-01T15:09:16.330Z",
+        "first_pos": [
+          33.622375,
+          -111.908938
+        ],
+        "first_on_ground": true,
+        "last_seen_utc": "2023-08-01T19:35:52.580Z",
+        "last_pos": [
+          33.622238,
+          -111.909317
+        ],
+        "last_on_ground": true
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "N560TW",
+      "date": "2023-09-01",
+      "bytes": 67250,
+      "summary": {
+        "registration": "N560TW",
+        "type": "C56X",
+        "points": 393,
+        "first_seen_utc": "2023-09-01T00:00:03.490Z",
+        "first_pos": [
+          37.159012,
+          -108.108157
+        ],
+        "first_on_ground": false,
+        "last_seen_utc": "2023-09-01T11:03:33.560Z",
+        "last_pos": [
+          42.376373,
+          -99.724586
+        ],
+        "last_on_ground": false
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "N560TW",
+      "date": "2023-10-01",
+      "bytes": 230166,
+      "summary": {
+        "registration": "N560TW",
+        "type": "C56X",
+        "points": 1340,
+        "first_seen_utc": "2023-10-01T14:30:16.650Z",
+        "first_pos": [
+          33.622365,
+          -111.908984
+        ],
+        "first_on_ground": true,
+        "last_seen_utc": "2023-10-01T17:53:00.640Z",
+        "last_pos": [
+          33.622662,
+          -111.909134
+        ],
+        "last_on_ground": true
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "N560TW",
+      "date": "2023-12-01",
+      "bytes": 216263,
+      "summary": {
+        "registration": "N560TW",
+        "type": "C56X",
+        "points": 1276,
+        "first_seen_utc": "2023-12-01T15:40:56.650Z",
+        "first_pos": [
+          33.6224,
+          -111.908913
+        ],
+        "first_on_ground": true,
+        "last_seen_utc": "2023-12-01T18:34:55.480Z",
+        "last_pos": [
+          33.622513,
+          -111.909233
+        ],
+        "last_on_ground": true
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "N560TW",
+      "date": "2024-02-01",
+      "bytes": 232871,
+      "summary": {
+        "registration": "N560TW",
+        "type": "C56X",
+        "points": 1362,
+        "first_seen_utc": "2024-02-01T16:17:47.480Z",
+        "first_pos": [
+          33.622319,
+          -111.909428
+        ],
+        "first_on_ground": true,
+        "last_seen_utc": "2024-02-01T23:59:59.370Z",
+        "last_pos": [
+          33.797836,
+          -112.555268
+        ],
+        "last_on_ground": false
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "N560TW",
+      "date": "2024-03-01",
+      "bytes": 105618,
+      "summary": {
+        "registration": "N560TW",
+        "type": "C56X",
+        "points": 610,
+        "first_seen_utc": "2024-03-01T19:57:08.440Z",
+        "first_pos": [
+          43.611533,
+          -110.73573
+        ],
+        "first_on_ground": true,
+        "last_seen_utc": "2024-03-01T21:41:59.800Z",
+        "last_pos": [
+          33.622296,
+          -111.909285
+        ],
+        "last_on_ground": true
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "N560TW",
+      "date": "2024-04-01",
+      "bytes": 237477,
+      "summary": {
+        "registration": "N560TW",
+        "type": "C56X",
+        "points": 1403,
+        "first_seen_utc": "2024-04-01T16:53:01.290Z",
+        "first_pos": [
+          33.622375,
+          -111.909303
+        ],
+        "first_on_ground": true,
+        "last_seen_utc": "2024-04-01T20:46:57.070Z",
+        "last_pos": [
+          33.62212,
+          -111.909317
+        ],
+        "last_on_ground": true
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "N560TW",
+      "date": "2024-07-01",
+      "bytes": 273781,
+      "summary": {
+        "registration": "N560TW",
+        "type": "C56X",
+        "points": 1622,
+        "first_seen_utc": "2024-07-01T18:49:37.670Z",
+        "first_pos": [
+          33.622364,
+          -111.908952
+        ],
+        "first_on_ground": true,
+        "last_seen_utc": "2024-07-01T23:59:55.820Z",
+        "last_pos": [
+          43.692813,
+          -110.471388
+        ],
+        "last_on_ground": false
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "N560TW",
+      "date": "2024-10-01",
+      "bytes": 495072,
+      "summary": {
+        "registration": "N560TW",
+        "type": "C56X",
+        "points": 2914,
+        "first_seen_utc": "2024-10-01T15:45:00.190Z",
+        "first_pos": [
+          33.622307,
+          -111.909413
+        ],
+        "first_on_ground": true,
+        "last_seen_utc": "2024-10-01T23:43:51.850Z",
+        "last_pos": [
+          33.622377,
+          -111.908913
+        ],
+        "last_on_ground": true
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "N560TW",
+      "date": "2024-11-01",
+      "bytes": 230913,
+      "summary": {
+        "registration": "N560TW",
+        "type": "C56X",
+        "points": 1354,
+        "first_seen_utc": "2024-11-01T11:33:06.550Z",
+        "first_pos": [
+          33.622353,
+          -111.908966
+        ],
+        "first_on_ground": true,
+        "last_seen_utc": "2024-11-01T15:23:55.180Z",
+        "last_pos": [
+          33.622191,
+          -111.909299
+        ],
+        "last_on_ground": true
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "N560TW",
+      "date": "2024-12-01",
+      "bytes": 201693,
+      "summary": {
+        "registration": "N560TW",
+        "type": "C56X",
+        "points": 1198,
+        "first_seen_utc": "2024-12-01T20:42:21.660Z",
+        "first_pos": [
+          30.588963,
+          -96.358365
+        ],
+        "first_on_ground": true,
+        "last_seen_utc": "2024-12-01T23:59:58.720Z",
+        "last_pos": [
+          33.940338,
+          -111.809935
+        ],
+        "last_on_ground": false
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "N560TW",
+      "date": "2025-03-01",
+      "bytes": 240992,
+      "summary": {
+        "registration": "N560TW",
+        "type": "C56X",
+        "points": 1394,
+        "first_seen_utc": "2025-03-01T14:51:03.910Z",
+        "first_pos": [
+          33.622354,
+          -111.90897
+        ],
+        "first_on_ground": true,
+        "last_seen_utc": "2025-03-01T17:53:01.810Z",
+        "last_pos": [
+          33.622098,
+          -111.909313
+        ],
+        "last_on_ground": true
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "N560TW",
+      "date": "2025-08-01",
+      "bytes": 229416,
+      "summary": {
+        "registration": "N560TW",
+        "type": "C56X",
+        "points": 1355,
+        "first_seen_utc": "2025-08-01T16:53:36.670Z",
+        "first_pos": [
+          33.622707,
+          -111.909401
+        ],
+        "first_on_ground": true,
+        "last_seen_utc": "2025-08-01T21:35:20.550Z",
+        "last_pos": [
+          33.622249,
+          -111.909227
+        ],
+        "last_on_ground": true
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "N560TW",
+      "date": "2025-09-01",
+      "bytes": 186091,
+      "summary": {
+        "registration": "N560TW",
+        "type": "C56X",
+        "points": 1100,
+        "first_seen_utc": "2025-09-01T16:21:10.930Z",
+        "first_pos": [
+          33.622354,
+          -111.909399
+        ],
+        "first_on_ground": true,
+        "last_seen_utc": "2025-09-01T23:59:35.010Z",
+        "last_pos": [
+          33.63065,
+          -111.900755
+        ],
+        "last_on_ground": true
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "N560TW",
+      "date": "2026-08-01",
+      "bytes": 292746,
+      "summary": {
+        "registration": "N560TW",
+        "type": "C56X",
+        "points": 1732,
+        "first_seen_utc": "2026-08-01T16:26:50.110Z",
+        "first_pos": [
+          33.622364,
+          -111.90898
+        ],
+        "first_on_ground": true,
+        "last_seen_utc": "2026-08-01T21:39:26.180Z",
+        "last_pos": [
+          33.6224,
+          -111.909184
+        ],
+        "last_on_ground": true
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "N582MM",
+      "date": "2022-04-01",
+      "bytes": 173940,
+      "summary": {
+        "registration": "N582MM",
+        "type": "LJ60",
+        "points": 1086,
+        "first_seen_utc": "2022-04-01T00:07:38.271Z",
+        "first_pos": [
+          36.209633,
+          -115.198874
+        ],
+        "first_on_ground": true,
+        "last_seen_utc": "2022-04-01T03:25:13.570Z",
+        "last_pos": [
+          38.996984,
+          -119.7565
+        ],
+        "last_on_ground": true
+      },
+      "pre_2023": true
+    },
+    {
+      "tail": "N582MM",
+      "date": "2023-06-01",
+      "bytes": 171533,
+      "summary": {
+        "registration": "N582MM",
+        "type": "LJ60",
+        "points": 1103,
+        "first_seen_utc": "2023-06-01T20:53:15.420Z",
+        "first_pos": [
+          33.460189,
+          -111.734502
+        ],
+        "first_on_ground": true,
+        "last_seen_utc": "2023-06-01T21:57:04.320Z",
+        "last_pos": [
+          33.460144,
+          -111.734322
+        ],
+        "last_on_ground": true
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "N582MM",
+      "date": "2023-08-01",
+      "bytes": 262080,
+      "summary": {
+        "registration": "N582MM",
+        "type": "LJ60",
+        "points": 1616,
+        "first_seen_utc": "2023-08-01T17:17:15.980Z",
+        "first_pos": [
+          31.91803,
+          -102.377556
+        ],
+        "first_on_ground": false,
+        "last_seen_utc": "2023-08-01T23:59:50.860Z",
+        "last_pos": [
+          33.587814,
+          -111.232593
+        ],
+        "last_on_ground": false
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "N582MM",
+      "date": "2023-09-01",
+      "bytes": 323191,
+      "summary": {
+        "registration": "N582MM",
+        "type": "LJ60",
+        "points": 2029,
+        "first_seen_utc": "2023-09-01T00:00:15.550Z",
+        "first_pos": [
+          44.877451,
+          -93.217319
+        ],
+        "first_on_ground": true,
+        "last_seen_utc": "2023-09-01T07:21:16.180Z",
+        "last_pos": [
+          33.460075,
+          -111.734747
+        ],
+        "last_on_ground": true
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "N582MM",
+      "date": "2024-01-01",
+      "bytes": 506372,
+      "summary": {
+        "registration": "N582MM",
+        "type": "LJ60",
+        "points": 3184,
+        "first_seen_utc": "2024-01-01T00:00:05.840Z",
+        "first_pos": [
+          40.61599,
+          -87.971399
+        ],
+        "first_on_ground": false,
+        "last_seen_utc": "2024-01-01T22:54:41.630Z",
+        "last_pos": [
+          39.649006,
+          -106.858826
+        ],
+        "last_on_ground": false
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "N582MM",
+      "date": "2024-06-01",
+      "bytes": 337339,
+      "summary": {
+        "registration": "N582MM",
+        "type": "LJ60",
+        "points": 2095,
+        "first_seen_utc": "2024-06-01T15:28:03.220Z",
+        "first_pos": [
+          40.789341,
+          -73.108063
+        ],
+        "first_on_ground": true,
+        "last_seen_utc": "2024-06-01T23:59:47.440Z",
+        "last_pos": [
+          34.902283,
+          -100.279167
+        ],
+        "last_on_ground": false
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "N582MM",
+      "date": "2024-07-01",
+      "bytes": 240463,
+      "summary": {
+        "registration": "N582MM",
+        "type": "LJ60",
+        "points": 1499,
+        "first_seen_utc": "2024-07-01T13:55:05.750Z",
+        "first_pos": [
+          33.426739,
+          -112.024265
+        ],
+        "first_on_ground": true,
+        "last_seen_utc": "2024-07-01T18:40:55.140Z",
+        "last_pos": [
+          44.751938,
+          -106.972373
+        ],
+        "last_on_ground": false
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "N582MM",
+      "date": "2024-08-01",
+      "bytes": 327399,
+      "summary": {
+        "registration": "N582MM",
+        "type": "LJ60",
+        "points": 2065,
+        "first_seen_utc": "2024-08-01T15:59:38.480Z",
+        "first_pos": [
+          30.184822,
+          -97.661591
+        ],
+        "first_on_ground": true,
+        "last_seen_utc": "2024-08-01T23:59:32.560Z",
+        "last_pos": [
+          39.979772,
+          -75.862172
+        ],
+        "last_on_ground": true
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "N582MM",
+      "date": "2024-09-01",
+      "bytes": 14560,
+      "summary": {
+        "registration": "N582MM",
+        "type": "LJ60",
+        "points": 101,
+        "first_seen_utc": "2024-09-01T15:26:43.070Z",
+        "first_pos": [
+          33.42652,
+          -112.023706
+        ],
+        "first_on_ground": true,
+        "last_seen_utc": "2024-09-01T16:08:38.560Z",
+        "last_pos": [
+          33.426404,
+          -112.023608
+        ],
+        "last_on_ground": true
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "N582MM",
+      "date": "2024-10-01",
+      "bytes": 493483,
+      "summary": {
+        "registration": "N582MM",
+        "type": "LJ60",
+        "points": 3086,
+        "first_seen_utc": "2024-10-01T00:00:15.630Z",
+        "first_pos": [
+          39.044805,
+          -112.124329
+        ],
+        "first_on_ground": false,
+        "last_seen_utc": "2024-10-01T23:59:44.130Z",
+        "last_pos": [
+          32.585037,
+          -98.877667
+        ],
+        "last_on_ground": false
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "N582MM",
+      "date": "2024-11-01",
+      "bytes": 242605,
+      "summary": {
+        "registration": "N582MM",
+        "type": "LJ60",
+        "points": 1510,
+        "first_seen_utc": "2024-11-01T14:08:03.220Z",
+        "first_pos": [
+          33.626287,
+          -111.904764
+        ],
+        "first_on_ground": true,
+        "last_seen_utc": "2024-11-01T19:15:46.260Z",
+        "last_pos": [
+          33.619812,
+          -111.91687
+        ],
+        "last_on_ground": true
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "N582MM",
+      "date": "2024-12-01",
+      "bytes": 202509,
+      "summary": {
+        "registration": "N582MM",
+        "type": "LJ60",
+        "points": 1269,
+        "first_seen_utc": "2024-12-01T19:03:15.220Z",
+        "first_pos": [
+          29.646048,
+          -95.273761
+        ],
+        "first_on_ground": false,
+        "last_seen_utc": "2024-12-01T23:59:55.780Z",
+        "last_pos": [
+          33.428836,
+          -111.988239
+        ],
+        "last_on_ground": false
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "N582MM",
+      "date": "2025-02-01",
+      "bytes": 104727,
+      "summary": {
+        "registration": "N582MM",
+        "type": "LJ60",
+        "points": 674,
+        "first_seen_utc": "2025-02-01T00:00:08.020Z",
+        "first_pos": [
+          36.081047,
+          -115.170994
+        ],
+        "first_on_ground": true,
+        "last_seen_utc": "2025-02-01T02:21:23.890Z",
+        "last_pos": [
+          33.427346,
+          -112.024127
+        ],
+        "last_on_ground": true
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "N582MM",
+      "date": "2025-03-01",
+      "bytes": 217398,
+      "summary": {
+        "registration": "N582MM",
+        "type": "LJ60",
+        "points": 1345,
+        "first_seen_utc": "2025-03-01T00:00:05.630Z",
+        "first_pos": [
+          31.858629,
+          -106.540926
+        ],
+        "first_on_ground": false,
+        "last_seen_utc": "2025-03-01T20:55:44.620Z",
+        "last_pos": [
+          33.620364,
+          -111.915207
+        ],
+        "last_on_ground": true
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "N582MM",
+      "date": "2025-04-01",
+      "bytes": 286700,
+      "summary": {
+        "registration": "N582MM",
+        "type": "LJ60",
+        "points": 1790,
+        "first_seen_utc": "2025-04-01T12:57:34.510Z",
+        "first_pos": [
+          33.619984,
+          -111.916702
+        ],
+        "first_on_ground": true,
+        "last_seen_utc": "2025-04-01T22:50:57.300Z",
+        "last_pos": [
+          33.620316,
+          -111.916365
+        ],
+        "last_on_ground": true
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "N582MM",
+      "date": "2025-05-01",
+      "bytes": 235653,
+      "summary": {
+        "registration": "N582MM",
+        "type": "LJ60",
+        "points": 1494,
+        "first_seen_utc": "2025-05-01T18:19:36.850Z",
+        "first_pos": [
+          33.619926,
+          -111.916099
+        ],
+        "first_on_ground": true,
+        "last_seen_utc": "2025-05-01T23:59:59.460Z",
+        "last_pos": [
+          37.960236,
+          -111.939288
+        ],
+        "last_on_ground": false
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "N582MM",
+      "date": "2025-06-01",
+      "bytes": 196736,
+      "summary": {
+        "registration": "N582MM",
+        "type": "LJ60",
+        "points": 1248,
+        "first_seen_utc": "2025-06-01T16:44:42.210Z",
+        "first_pos": [
+          33.42652,
+          -112.022333
+        ],
+        "first_on_ground": true,
+        "last_seen_utc": "2025-06-01T23:59:44.960Z",
+        "last_pos": [
+          41.909866,
+          -79.086082
+        ],
+        "last_on_ground": false
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "N582MM",
+      "date": "2025-07-01",
+      "bytes": 487488,
+      "summary": {
+        "registration": "N582MM",
+        "type": "LJ60",
+        "points": 3084,
+        "first_seen_utc": "2025-07-01T00:00:08.970Z",
+        "first_pos": [
+          33.73407,
+          -114.324852
+        ],
+        "first_on_ground": false,
+        "last_seen_utc": "2025-07-01T21:57:39.730Z",
+        "last_pos": [
+          39.879871,
+          -75.228043
+        ],
+        "last_on_ground": true
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "N582MM",
+      "date": "2025-08-01",
+      "bytes": 377607,
+      "summary": {
+        "registration": "N582MM",
+        "type": "LJ60",
+        "points": 2346,
+        "first_seen_utc": "2025-08-01T00:32:20.880Z",
+        "first_pos": [
+          44.878103,
+          -93.216532
+        ],
+        "first_on_ground": true,
+        "last_seen_utc": "2025-08-01T18:09:37.590Z",
+        "last_pos": [
+          44.446005,
+          -68.362226
+        ],
+        "last_on_ground": true
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "N582MM",
+      "date": "2025-09-01",
+      "bytes": 252423,
+      "summary": {
+        "registration": "N582MM",
+        "type": "LJ60",
+        "points": 1570,
+        "first_seen_utc": "2025-09-01T12:16:30.940Z",
+        "first_pos": [
+          42.933529,
+          -71.431764
+        ],
+        "first_on_ground": true,
+        "last_seen_utc": "2025-09-01T19:28:51.270Z",
+        "last_pos": [
+          33.620119,
+          -111.916122
+        ],
+        "last_on_ground": true
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "N582MM",
+      "date": "2025-10-01",
+      "bytes": 3664,
+      "summary": {
+        "registration": "N582MM",
+        "type": "LJ60",
+        "points": 27,
+        "first_seen_utc": "2025-10-01T20:45:36.460Z",
+        "first_pos": [
+          26.383714,
+          -80.10359
+        ],
+        "first_on_ground": false,
+        "last_seen_utc": "2025-10-01T20:54:28.300Z",
+        "last_pos": [
+          26.383714,
+          -80.10359
+        ],
+        "last_on_ground": false
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "N582MM",
+      "date": "2025-11-01",
+      "bytes": 521776,
+      "summary": {
+        "registration": "N582MM",
+        "type": "LJ60",
+        "points": 3278,
+        "first_seen_utc": "2025-11-01T02:16:02.330Z",
+        "first_pos": [
+          32.733427,
+          -117.178396
+        ],
+        "first_on_ground": true,
+        "last_seen_utc": "2025-11-01T23:59:54.520Z",
+        "last_pos": [
+          36.922852,
+          -76.322314
+        ],
+        "last_on_ground": false
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "N582MM",
+      "date": "2025-12-01",
+      "bytes": 503720,
+      "summary": {
+        "registration": "N582MM",
+        "type": "LJ60",
+        "points": 3988,
+        "first_seen_utc": "2025-12-01T00:00:00.810Z",
+        "first_pos": [
+          42.141737,
+          -85.961725
+        ],
+        "first_on_ground": false,
+        "last_seen_utc": "2025-12-01T23:59:54.530Z",
+        "last_pos": [
+          32.716125,
+          -92.543852
+        ],
+        "last_on_ground": false
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "N872RA",
+      "date": "2022-04-01",
+      "bytes": 162335,
+      "summary": {
+        "registration": "N872RA",
+        "type": "BE40",
+        "points": 936,
+        "first_seen_utc": "2022-04-01T17:02:04.452Z",
+        "first_pos": [
+          30.184867,
+          -97.662085
+        ],
+        "first_on_ground": true,
+        "last_seen_utc": "2022-04-01T20:27:44.152Z",
+        "last_pos": [
+          33.676331,
+          -117.870584
+        ],
+        "last_on_ground": true
+      },
+      "pre_2023": true
+    },
+    {
+      "tail": "N872RA",
+      "date": "2022-12-01",
+      "bytes": 199794,
+      "summary": {
+        "registration": "N872RA",
+        "type": "BE40",
+        "points": 1141,
+        "first_seen_utc": "2022-12-01T19:50:30.140Z",
+        "first_pos": [
+          33.619228,
+          -111.916435
+        ],
+        "first_on_ground": true,
+        "last_seen_utc": "2022-12-01T23:59:58.670Z",
+        "last_pos": [
+          34.633667,
+          -118.043611
+        ],
+        "last_on_ground": false
+      },
+      "pre_2023": true
+    },
+    {
+      "tail": "N872RA",
+      "date": "2023-05-01",
+      "bytes": 121414,
+      "summary": {
+        "registration": "N872RA",
+        "type": "BE40",
+        "points": 710,
+        "first_seen_utc": "2023-05-01T00:00:04.030Z",
+        "first_pos": [
+          33.42865,
+          -111.957466
+        ],
+        "first_on_ground": false,
+        "last_seen_utc": "2023-05-01T01:55:41.950Z",
+        "last_pos": [
+          33.674644,
+          -117.871013
+        ],
+        "last_on_ground": true
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "N872RA",
+      "date": "2024-03-01",
+      "bytes": 124407,
+      "summary": {
+        "registration": "N872RA",
+        "type": "BE40",
+        "points": 704,
+        "first_seen_utc": "2024-03-01T20:13:19.320Z",
+        "first_pos": [
+          33.675877,
+          -117.870255
+        ],
+        "first_on_ground": true,
+        "last_seen_utc": "2024-03-01T22:31:01.440Z",
+        "last_pos": [
+          36.796891,
+          -111.874773
+        ],
+        "last_on_ground": false
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "N872RA",
+      "date": "2024-04-01",
+      "bytes": 100681,
+      "summary": {
+        "registration": "N872RA",
+        "type": "BE40",
+        "points": 532,
+        "first_seen_utc": "2024-04-01T15:13:31.710Z",
+        "first_pos": [
+          33.676701,
+          -117.869708
+        ],
+        "first_on_ground": true,
+        "last_seen_utc": "2024-04-01T16:29:45.230Z",
+        "last_pos": [
+          38.218677,
+          -122.276683
+        ],
+        "last_on_ground": true
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "N872RA",
+      "date": "2024-07-01",
+      "bytes": 77100,
+      "summary": {
+        "registration": "N872RA",
+        "type": "BE40",
+        "points": 404,
+        "first_seen_utc": "2024-07-01T00:00:07.730Z",
+        "first_pos": [
+          38.62374,
+          -120.015137
+        ],
+        "first_on_ground": false,
+        "last_seen_utc": "2024-07-01T01:03:28.070Z",
+        "last_pos": [
+          33.675179,
+          -117.870895
+        ],
+        "last_on_ground": true
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "N872RA",
+      "date": "2024-10-01",
+      "bytes": 256649,
+      "summary": {
+        "registration": "N872RA",
+        "type": "BE40",
+        "points": 1464,
+        "first_seen_utc": "2024-10-01T15:05:53.250Z",
+        "first_pos": [
+          33.676215,
+          -117.871213
+        ],
+        "first_on_ground": true,
+        "last_seen_utc": "2024-10-01T23:59:52.830Z",
+        "last_pos": [
+          35.652054,
+          -115.330982
+        ],
+        "last_on_ground": false
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "N872RA",
+      "date": "2024-11-01",
+      "bytes": 278513,
+      "summary": {
+        "registration": "N872RA",
+        "type": "BE40",
+        "points": 1598,
+        "first_seen_utc": "2024-11-01T00:01:09.460Z",
+        "first_pos": [
+          33.62609,
+          -111.904321
+        ],
+        "first_on_ground": true,
+        "last_seen_utc": "2024-11-01T21:04:21.670Z",
+        "last_pos": [
+          33.676003,
+          -117.871559
+        ],
+        "last_on_ground": true
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "N872RA",
+      "date": "2024-12-01",
+      "bytes": 559996,
+      "summary": {
+        "registration": "N872RA",
+        "type": "BE40",
+        "points": 3212,
+        "first_seen_utc": "2024-12-01T00:00:00.560Z",
+        "first_pos": [
+          44.974862,
+          -122.155643
+        ],
+        "first_on_ground": false,
+        "last_seen_utc": "2024-12-01T23:01:23.660Z",
+        "last_pos": [
+          39.222704,
+          -106.867081
+        ],
+        "last_on_ground": true
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "N872RA",
+      "date": "2025-03-01",
+      "bytes": 259859,
+      "summary": {
+        "registration": "N872RA",
+        "type": "BE40",
+        "points": 1504,
+        "first_seen_utc": "2025-03-01T00:00:01.570Z",
+        "first_pos": [
+          33.749348,
+          -112.087383
+        ],
+        "first_on_ground": false,
+        "last_seen_utc": "2025-03-01T06:47:24.900Z",
+        "last_pos": [
+          40.776443,
+          -111.960251
+        ],
+        "last_on_ground": true
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "N872RA",
+      "date": "2025-04-01",
+      "bytes": 207544,
+      "summary": {
+        "registration": "N872RA",
+        "type": "BE40",
+        "points": 1191,
+        "first_seen_utc": "2025-04-01T17:12:31.990Z",
+        "first_pos": [
+          38.216309,
+          -122.273814
+        ],
+        "first_on_ground": true,
+        "last_seen_utc": "2025-04-01T23:58:33.930Z",
+        "last_pos": [
+          37.5,
+          -122.553191
+        ],
+        "last_on_ground": true
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "N872RA",
+      "date": "2025-05-01",
+      "bytes": 360471,
+      "summary": {
+        "registration": "N872RA",
+        "type": "BE40",
+        "points": 2086,
+        "first_seen_utc": "2025-05-01T14:53:53.140Z",
+        "first_pos": [
+          33.676266,
+          -117.871109
+        ],
+        "first_on_ground": true,
+        "last_seen_utc": "2025-05-01T23:18:58.330Z",
+        "last_pos": [
+          33.676285,
+          -117.87107
+        ],
+        "last_on_ground": true
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "N872RA",
+      "date": "2025-06-01",
+      "bytes": 56362,
+      "summary": {
+        "registration": "N872RA",
+        "type": "BE40",
+        "points": 326,
+        "first_seen_utc": "2025-06-01T00:00:13.940Z",
+        "first_pos": [
+          34.614853,
+          -116.092473
+        ],
+        "first_on_ground": false,
+        "last_seen_utc": "2025-06-01T01:11:09.850Z",
+        "last_pos": [
+          35.619968,
+          -106.083546
+        ],
+        "last_on_ground": true
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "N872RA",
+      "date": "2025-07-01",
+      "bytes": 312415,
+      "summary": {
+        "registration": "N872RA",
+        "type": "BE40",
+        "points": 1802,
+        "first_seen_utc": "2025-07-01T00:19:41.370Z",
+        "first_pos": [
+          33.6259,
+          -111.905253
+        ],
+        "first_on_ground": true,
+        "last_seen_utc": "2025-07-01T23:37:45.570Z",
+        "last_pos": [
+          48.116741,
+          -123.492783
+        ],
+        "last_on_ground": true
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "N872RA",
+      "date": "2025-08-01",
+      "bytes": 19815,
+      "summary": {
+        "registration": "N872RA",
+        "type": "BE40",
+        "points": 127,
+        "first_seen_utc": "2025-08-01T14:43:06.320Z",
+        "first_pos": [
+          33.676872,
+          -117.871081
+        ],
+        "first_on_ground": true,
+        "last_seen_utc": "2025-08-01T15:43:31.340Z",
+        "last_pos": [
+          33.676971,
+          -117.871184
+        ],
+        "last_on_ground": true
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "N872RA",
+      "date": "2025-09-01",
+      "bytes": 203699,
+      "summary": {
+        "registration": "N872RA",
+        "type": "BE40",
+        "points": 1184,
+        "first_seen_utc": "2025-09-01T19:57:24.610Z",
+        "first_pos": [
+          33.67598,
+          -117.871348
+        ],
+        "first_on_ground": true,
+        "last_seen_utc": "2025-09-01T23:59:59.910Z",
+        "last_pos": [
+          37.306125,
+          -121.762251
+        ],
+        "last_on_ground": false
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "N872RA",
+      "date": "2025-11-01",
+      "bytes": 407668,
+      "summary": {
+        "registration": "N872RA",
+        "type": "BE40",
+        "points": 2377,
+        "first_seen_utc": "2025-11-01T03:47:15.990Z",
+        "first_pos": [
+          33.685822,
+          -112.083907
+        ],
+        "first_on_ground": true,
+        "last_seen_utc": "2025-11-01T23:59:55.370Z",
+        "last_pos": [
+          34.541714,
+          -116.846237
+        ],
+        "last_on_ground": false
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "N872RA",
+      "date": "2025-12-01",
+      "bytes": 381368,
+      "summary": {
+        "registration": "N872RA",
+        "type": "BE40",
+        "points": 2200,
+        "first_seen_utc": "2025-12-01T00:37:09.260Z",
+        "first_pos": [
+          33.626962,
+          -116.156502
+        ],
+        "first_on_ground": false,
+        "last_seen_utc": "2025-12-01T23:59:53.140Z",
+        "last_pos": [
+          33.249284,
+          -113.213831
+        ],
+        "last_on_ground": false
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "N872RA",
+      "date": "2026-01-01",
+      "bytes": 178997,
+      "summary": {
+        "registration": "N872RA",
+        "type": "BE40",
+        "points": 1039,
+        "first_seen_utc": "2026-01-01T19:47:29.710Z",
+        "first_pos": [
+          33.676273,
+          -117.871099
+        ],
+        "first_on_ground": true,
+        "last_seen_utc": "2026-01-01T22:19:54.240Z",
+        "last_pos": [
+          34.199473,
+          -118.358917
+        ],
+        "last_on_ground": true
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "N872RA",
+      "date": "2026-02-01",
+      "bytes": 293582,
+      "summary": {
+        "registration": "N872RA",
+        "type": "BE40",
+        "points": 1690,
+        "first_seen_utc": "2026-02-01T00:00:00.960Z",
+        "first_pos": [
+          39.309357,
+          -119.557701
+        ],
+        "first_on_ground": false,
+        "last_seen_utc": "2026-02-01T23:28:39.040Z",
+        "last_pos": [
+          45.772991,
+          -111.151914
+        ],
+        "last_on_ground": true
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "N872RA",
+      "date": "2026-03-01",
+      "bytes": 267752,
+      "summary": {
+        "registration": "N872RA",
+        "type": "BE40",
+        "points": 1549,
+        "first_seen_utc": "2026-03-01T18:14:07.090Z",
+        "first_pos": [
+          33.67625,
+          -117.870927
+        ],
+        "first_on_ground": true,
+        "last_seen_utc": "2026-03-01T23:59:35.730Z",
+        "last_pos": [
+          33.934238,
+          -118.394487
+        ],
+        "last_on_ground": true
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "N872RA",
+      "date": "2026-04-01",
+      "bytes": 100736,
+      "summary": {
+        "registration": "N872RA",
+        "type": "BE40",
+        "points": 575,
+        "first_seen_utc": "2026-04-01T00:00:12.960Z",
+        "first_pos": [
+          32.150698,
+          -96.669598
+        ],
+        "first_on_ground": false,
+        "last_seen_utc": "2026-04-01T23:59:55.490Z",
+        "last_pos": [
+          31.702881,
+          -105.747717
+        ],
+        "last_on_ground": false
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "N872RA",
+      "date": "2026-05-01",
+      "bytes": 595250,
+      "summary": {
+        "registration": "N872RA",
+        "type": "BE40",
+        "points": 3420,
+        "first_seen_utc": "2026-05-01T01:48:27.800Z",
+        "first_pos": [
+          40.777611,
+          -111.959579
+        ],
+        "first_on_ground": true,
+        "last_seen_utc": "2026-05-01T23:22:03.750Z",
+        "last_pos": [
+          35.97479,
+          -115.138355
+        ],
+        "last_on_ground": true
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "N872RA",
+      "date": "2026-08-01",
+      "bytes": 405950,
+      "summary": {
+        "registration": "N872RA",
+        "type": "BE40",
+        "points": 2341,
+        "first_seen_utc": "2026-08-01T00:00:04.940Z",
+        "first_pos": [
+          34.207169,
+          -118.488263
+        ],
+        "first_on_ground": true,
+        "last_seen_utc": "2026-08-01T23:59:43.490Z",
+        "last_pos": [
+          37.262459,
+          -113.654102
+        ],
+        "last_on_ground": false
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "N40JD",
+      "date": "2022-06-01",
+      "bytes": 48614,
+      "summary": {
+        "registration": "N40JD",
+        "type": "PRM1",
+        "points": 281,
+        "first_seen_utc": "2022-06-01T23:08:08.240Z",
+        "first_pos": [
+          30.353409,
+          -85.793555
+        ],
+        "first_on_ground": false,
+        "last_seen_utc": "2022-06-01T23:59:55.440Z",
+        "last_pos": [
+          33.509371,
+          -90.766801
+        ],
+        "last_on_ground": false
+      },
+      "pre_2023": true
+    },
+    {
+      "tail": "N40JD",
+      "date": "2023-02-01",
+      "bytes": 223576,
+      "summary": {
+        "registration": "N40JD",
+        "type": "PRM1",
+        "points": 1279,
+        "first_seen_utc": "2023-02-01T14:51:17.250Z",
+        "first_pos": [
+          30.039903,
+          -90.029745
+        ],
+        "first_on_ground": true,
+        "last_seen_utc": "2023-02-01T19:47:01.040Z",
+        "last_pos": [
+          35.975441,
+          -115.137537
+        ],
+        "last_on_ground": true
+      },
+      "pre_2023": true
+    },
+    {
+      "tail": "N40JD",
+      "date": "2023-10-01",
+      "bytes": 202281,
+      "summary": {
+        "registration": "N40JD",
+        "type": "PRM1",
+        "points": 1152,
+        "first_seen_utc": "2023-10-01T18:28:19.040Z",
+        "first_pos": [
+          30.364471,
+          -85.79843
+        ],
+        "first_on_ground": false,
+        "last_seen_utc": "2023-10-01T22:47:54.500Z",
+        "last_pos": [
+          30.342957,
+          -85.789001
+        ],
+        "last_on_ground": false
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "N40JD",
+      "date": "2024-06-01",
+      "bytes": 55291,
+      "summary": {
+        "registration": "N40JD",
+        "type": "PRM1",
+        "points": 319,
+        "first_seen_utc": "2024-06-01T17:40:12.630Z",
+        "first_pos": [
+          30.351873,
+          -85.792841
+        ],
+        "first_on_ground": false,
+        "last_seen_utc": "2024-06-01T18:10:51.750Z",
+        "last_pos": [
+          30.375366,
+          -85.803061
+        ],
+        "last_on_ground": false
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "N40JD",
+      "date": "2025-01-01",
+      "bytes": 12410,
+      "summary": {
+        "registration": "N40JD",
+        "type": "PRM1",
+        "points": 81,
+        "first_seen_utc": "2025-01-01T18:44:34.830Z",
+        "first_pos": [
+          33.62304,
+          -111.913218
+        ],
+        "first_on_ground": true,
+        "last_seen_utc": "2025-01-01T18:51:36.090Z",
+        "last_pos": [
+          33.622168,
+          -111.909328
+        ],
+        "last_on_ground": true
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "N40JD",
+      "date": "2025-04-01",
+      "bytes": 4037,
+      "summary": {
+        "registration": "N40JD",
+        "type": "PRM1",
+        "points": 25,
+        "first_seen_utc": "2025-04-01T15:30:04.890Z",
+        "first_pos": [
+          33.622742,
+          -111.908644
+        ],
+        "first_on_ground": true,
+        "last_seen_utc": "2025-04-01T15:38:22.530Z",
+        "last_pos": [
+          33.622726,
+          -111.908641
+        ],
+        "last_on_ground": true
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "N40JD",
+      "date": "2025-05-01",
+      "bytes": 187919,
+      "summary": {
+        "registration": "N40JD",
+        "type": "PRM1",
+        "points": 1086,
+        "first_seen_utc": "2025-05-01T16:36:27.310Z",
+        "first_pos": [
+          33.62233,
+          -111.908966
+        ],
+        "first_on_ground": true,
+        "last_seen_utc": "2025-05-01T19:54:40.980Z",
+        "last_pos": [
+          33.622284,
+          -111.909442
+        ],
+        "last_on_ground": true
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "N40JD",
+      "date": "2025-08-01",
+      "bytes": 196237,
+      "summary": {
+        "registration": "N40JD",
+        "type": "PRM1",
+        "points": 1142,
+        "first_seen_utc": "2025-08-01T00:01:18.250Z",
+        "first_pos": [
+          33.62257,
+          -111.908756
+        ],
+        "first_on_ground": true,
+        "last_seen_utc": "2025-08-01T03:34:16.580Z",
+        "last_pos": [
+          33.622086,
+          -111.909286
+        ],
+        "last_on_ground": true
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "N40JD",
+      "date": "2025-12-01",
+      "bytes": 462242,
+      "summary": {
+        "registration": "N40JD",
+        "type": "PRM1",
+        "points": 2725,
+        "first_seen_utc": "2025-12-01T00:00:37.220Z",
+        "first_pos": [
+          39.570322,
+          -104.8479
+        ],
+        "first_on_ground": true,
+        "last_seen_utc": "2025-12-01T22:00:28.340Z",
+        "last_pos": [
+          33.622715,
+          -111.909485
+        ],
+        "last_on_ground": true
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "N40JD",
+      "date": "2026-02-01",
+      "bytes": 304372,
+      "summary": {
+        "registration": "N40JD",
+        "type": "PRM1",
+        "points": 1769,
+        "first_seen_utc": "2026-02-01T12:33:02.790Z",
+        "first_pos": [
+          33.62233,
+          -111.908956
+        ],
+        "first_on_ground": true,
+        "last_seen_utc": "2026-02-01T21:01:25.370Z",
+        "last_pos": [
+          36.10019,
+          -115.159685
+        ],
+        "last_on_ground": true
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "N40JD",
+      "date": "2026-04-01",
+      "bytes": 3478,
+      "summary": {
+        "registration": "N40JD",
+        "type": "PRM1",
+        "points": 21,
+        "first_seen_utc": "2026-04-01T23:04:33.630Z",
+        "first_pos": [
+          33.62233,
+          -111.908938
+        ],
+        "first_on_ground": true,
+        "last_seen_utc": "2026-04-01T23:23:01.700Z",
+        "last_pos": [
+          33.622319,
+          -111.908941
+        ],
+        "last_on_ground": true
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "N1098L",
+      "date": "2023-11-01",
+      "bytes": 356582,
+      "summary": {
+        "registration": "N1098L",
+        "type": "GLEX",
+        "points": 2077,
+        "first_seen_utc": "2023-11-01T15:00:03.650Z",
+        "first_pos": [
+          31.834375,
+          -106.391307
+        ],
+        "first_on_ground": true,
+        "last_seen_utc": "2023-11-01T23:16:45.940Z",
+        "last_pos": [
+          31.834562,
+          -106.391335
+        ],
+        "last_on_ground": true
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "N1098L",
+      "date": "2023-12-01",
+      "bytes": 85928,
+      "summary": {
+        "registration": "N1098L",
+        "type": "GLEX",
+        "points": 509,
+        "first_seen_utc": "2023-12-01T00:00:03.120Z",
+        "first_pos": [
+          31.913864,
+          -106.270807
+        ],
+        "first_on_ground": false,
+        "last_seen_utc": "2023-12-01T23:59:53.480Z",
+        "last_pos": [
+          30.732101,
+          -98.385046
+        ],
+        "last_on_ground": false
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "N1098L",
+      "date": "2024-02-01",
+      "bytes": 486605,
+      "summary": {
+        "registration": "N1098L",
+        "type": "GLEX",
+        "points": 2790,
+        "first_seen_utc": "2024-02-01T00:13:05.810Z",
+        "first_pos": [
+          30.128357,
+          -93.19756
+        ],
+        "first_on_ground": false,
+        "last_seen_utc": "2024-02-01T23:59:52.270Z",
+        "last_pos": [
+          32.774277,
+          -114.595587
+        ],
+        "last_on_ground": false
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "N1098L",
+      "date": "2024-03-01",
+      "bytes": 64153,
+      "summary": {
+        "registration": "N1098L",
+        "type": "GLEX",
+        "points": 376,
+        "first_seen_utc": "2024-03-01T00:00:16.480Z",
+        "first_pos": [
+          32.773334,
+          -114.204618
+        ],
+        "first_on_ground": false,
+        "last_seen_utc": "2024-03-01T16:27:05.180Z",
+        "last_pos": [
+          31.834247,
+          -106.391125
+        ],
+        "last_on_ground": true
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "N1098L",
+      "date": "2024-04-01",
+      "bytes": 63068,
+      "summary": {
+        "registration": "N1098L",
+        "type": "GLEX",
+        "points": 421,
+        "first_seen_utc": "2024-04-01T15:03:31.470Z",
+        "first_pos": [
+          31.834084,
+          -106.389486
+        ],
+        "first_on_ground": true,
+        "last_seen_utc": "2024-04-01T20:02:05.630Z",
+        "last_pos": [
+          31.834671,
+          -106.389844
+        ],
+        "last_on_ground": true
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "N1098L",
+      "date": "2024-05-01",
+      "bytes": 319568,
+      "summary": {
+        "registration": "N1098L",
+        "type": "GLEX",
+        "points": 1825,
+        "first_seen_utc": "2024-05-01T14:35:43.420Z",
+        "first_pos": [
+          31.849272,
+          -106.380167
+        ],
+        "first_on_ground": false,
+        "last_seen_utc": "2024-05-01T18:35:18.370Z",
+        "last_pos": [
+          31.859653,
+          -106.368676
+        ],
+        "last_on_ground": false
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "N1098L",
+      "date": "2024-06-01",
+      "bytes": 504637,
+      "summary": {
+        "registration": "N1098L",
+        "type": "GLEX",
+        "points": 2839,
+        "first_seen_utc": "2024-06-01T15:44:05.690Z",
+        "first_pos": [
+          31.842429,
+          -106.38807
+        ],
+        "first_on_ground": false,
+        "last_seen_utc": "2024-06-01T23:55:17.720Z",
+        "last_pos": [
+          31.846779,
+          -106.38317
+        ],
+        "last_on_ground": true
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "N1098L",
+      "date": "2024-07-01",
+      "bytes": 470082,
+      "summary": {
+        "registration": "N1098L",
+        "type": "GLEX",
+        "points": 2711,
+        "first_seen_utc": "2024-07-01T14:30:32.940Z",
+        "first_pos": [
+          31.847122,
+          -106.382593
+        ],
+        "first_on_ground": false,
+        "last_seen_utc": "2024-07-01T23:19:09.120Z",
+        "last_pos": [
+          31.838711,
+          -106.392233
+        ],
+        "last_on_ground": true
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "N1098L",
+      "date": "2024-08-01",
+      "bytes": 201496,
+      "summary": {
+        "registration": "N1098L",
+        "type": "GLEX",
+        "points": 1155,
+        "first_seen_utc": "2024-08-01T20:43:19.590Z",
+        "first_pos": [
+          31.853302,
+          -106.376001
+        ],
+        "first_on_ground": false,
+        "last_seen_utc": "2024-08-01T23:59:55.280Z",
+        "last_pos": [
+          43.700308,
+          -122.642997
+        ],
+        "last_on_ground": false
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "N1098L",
+      "date": "2024-10-01",
+      "bytes": 497917,
+      "summary": {
+        "registration": "N1098L",
+        "type": "GLEX",
+        "points": 2856,
+        "first_seen_utc": "2024-10-01T14:20:51.450Z",
+        "first_pos": [
+          31.855417,
+          -106.373328
+        ],
+        "first_on_ground": false,
+        "last_seen_utc": "2024-10-01T23:59:45.660Z",
+        "last_pos": [
+          31.788803,
+          -106.450928
+        ],
+        "last_on_ground": false
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "N1098L",
+      "date": "2024-11-01",
+      "bytes": 414280,
+      "summary": {
+        "registration": "N1098L",
+        "type": "GLEX",
+        "points": 2375,
+        "first_seen_utc": "2024-11-01T14:46:39.460Z",
+        "first_pos": [
+          31.851471,
+          -106.377759
+        ],
+        "first_on_ground": false,
+        "last_seen_utc": "2024-11-01T23:19:04.900Z",
+        "last_pos": [
+          31.840405,
+          -106.390338
+        ],
+        "last_on_ground": true
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "N1098L",
+      "date": "2025-02-01",
+      "bytes": 5371,
+      "summary": {
+        "registration": "N1098L",
+        "type": "GLEX",
+        "points": 34,
+        "first_seen_utc": "2025-02-01T00:00:22.010Z",
+        "first_pos": [
+          31.834666,
+          -106.389962
+        ],
+        "first_on_ground": true,
+        "last_seen_utc": "2025-02-01T00:26:52.000Z",
+        "last_pos": [
+          31.834751,
+          -106.389954
+        ],
+        "last_on_ground": true
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "N1098L",
+      "date": "2025-08-01",
+      "bytes": 375307,
+      "summary": {
+        "registration": "N1098L",
+        "type": "GLEX",
+        "points": 2157,
+        "first_seen_utc": "2025-08-01T00:26:43.220Z",
+        "first_pos": [
+          31.835097,
+          -106.390551
+        ],
+        "first_on_ground": true,
+        "last_seen_utc": "2025-08-01T23:59:22.340Z",
+        "last_pos": [
+          31.834678,
+          -106.389906
+        ],
+        "last_on_ground": true
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "N1098L",
+      "date": "2025-10-01",
+      "bytes": 421805,
+      "summary": {
+        "registration": "N1098L",
+        "type": "GLEX",
+        "points": 2437,
+        "first_seen_utc": "2025-10-01T14:23:39.080Z",
+        "first_pos": [
+          31.85835,
+          -106.370694
+        ],
+        "first_on_ground": false,
+        "last_seen_utc": "2025-10-01T23:59:44.800Z",
+        "last_pos": [
+          32.453156,
+          -93.834229
+        ],
+        "last_on_ground": false
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "N1098L",
+      "date": "2026-04-01",
+      "bytes": 341720,
+      "summary": {
+        "registration": "N1098L",
+        "type": "GLEX",
+        "points": 1954,
+        "first_seen_utc": "2026-04-01T14:32:13.510Z",
+        "first_pos": [
+          31.852798,
+          -106.37655
+        ],
+        "first_on_ground": false,
+        "last_seen_utc": "2026-04-01T22:08:40.650Z",
+        "last_pos": [
+          31.84322,
+          -106.387159
+        ],
+        "last_on_ground": true
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "N1098L",
+      "date": "2026-05-01",
+      "bytes": 604721,
+      "summary": {
+        "registration": "N1098L",
+        "type": "GLEX",
+        "points": 3466,
+        "first_seen_utc": "2026-05-01T14:38:17.250Z",
+        "first_pos": [
+          31.846619,
+          -106.383362
+        ],
+        "first_on_ground": false,
+        "last_seen_utc": "2026-05-01T23:59:28.310Z",
+        "last_pos": [
+          36.186619,
+          -95.88202
+        ],
+        "last_on_ground": true
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "N1098L",
+      "date": "2026-06-01",
+      "bytes": 390384,
+      "summary": {
+        "registration": "N1098L",
+        "type": "GLEX",
+        "points": 2227,
+        "first_seen_utc": "2026-06-01T14:39:28.010Z",
+        "first_pos": [
+          31.873123,
+          -106.362048
+        ],
+        "first_on_ground": false,
+        "last_seen_utc": "2026-06-01T23:07:00.880Z",
+        "last_pos": [
+          31.840765,
+          -106.38992
+        ],
+        "last_on_ground": true
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "N1098L",
+      "date": "2026-07-01",
+      "bytes": 595165,
+      "summary": {
+        "registration": "N1098L",
+        "type": "GLEX",
+        "points": 3320,
+        "first_seen_utc": "2026-07-01T00:00:09.710Z",
+        "first_pos": [
+          32.620239,
+          -102.568799
+        ],
+        "first_on_ground": false,
+        "last_seen_utc": "2026-07-01T20:11:44.670Z",
+        "last_pos": [
+          31.800568,
+          -106.358807
+        ],
+        "last_on_ground": false
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "N1098L",
+      "date": "2026-08-01",
+      "bytes": 10947,
+      "summary": {
+        "registration": "N1098L",
+        "type": "GLEX",
+        "points": 74,
+        "first_seen_utc": "2026-08-01T02:47:16.690Z",
+        "first_pos": [
+          31.834648,
+          -106.390215
+        ],
+        "first_on_ground": true,
+        "last_seen_utc": "2026-08-01T04:33:15.700Z",
+        "last_pos": [
+          31.83466,
+          -106.389899
+        ],
+        "last_on_ground": true
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "N2100L",
+      "date": "2023-11-01",
+      "bytes": 337375,
+      "summary": {
+        "registration": "N2100L",
+        "type": "GLEX",
+        "points": 1962,
+        "first_seen_utc": "2023-11-01T00:17:56.060Z",
+        "first_pos": [
+          31.834579,
+          -106.391313
+        ],
+        "first_on_ground": true,
+        "last_seen_utc": "2023-11-01T23:59:48.140Z",
+        "last_pos": [
+          31.654678,
+          -96.656961
+        ],
+        "last_on_ground": false
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "N2100L",
+      "date": "2023-12-01",
+      "bytes": 147801,
+      "summary": {
+        "registration": "N2100L",
+        "type": "GLEX",
+        "points": 864,
+        "first_seen_utc": "2023-12-01T21:00:27.620Z",
+        "first_pos": [
+          31.834751,
+          -106.391629
+        ],
+        "first_on_ground": true,
+        "last_seen_utc": "2023-12-01T23:59:54.030Z",
+        "last_pos": [
+          45.913634,
+          -108.456757
+        ],
+        "last_on_ground": false
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "N2100L",
+      "date": "2024-02-01",
+      "bytes": 120839,
+      "summary": {
+        "registration": "N2100L",
+        "type": "GLEX",
+        "points": 703,
+        "first_seen_utc": "2024-02-01T00:00:16.460Z",
+        "first_pos": [
+          39.010895,
+          -85.659445
+        ],
+        "first_on_ground": false,
+        "last_seen_utc": "2024-02-01T22:26:07.270Z",
+        "last_pos": [
+          31.834853,
+          -106.389738
+        ],
+        "last_on_ground": true
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "N2100L",
+      "date": "2024-03-01",
+      "bytes": 22269,
+      "summary": {
+        "registration": "N2100L",
+        "type": "GLEX",
+        "points": 150,
+        "first_seen_utc": "2024-03-01T00:00:03.770Z",
+        "first_pos": [
+          31.838263,
+          -106.392751
+        ],
+        "first_on_ground": true,
+        "last_seen_utc": "2024-03-01T16:03:51.750Z",
+        "last_pos": [
+          31.834236,
+          -106.390438
+        ],
+        "last_on_ground": true
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "N2100L",
+      "date": "2024-04-01",
+      "bytes": 20233,
+      "summary": {
+        "registration": "N2100L",
+        "type": "GLEX",
+        "points": 135,
+        "first_seen_utc": "2024-04-01T15:50:33.190Z",
+        "first_pos": [
+          31.834705,
+          -106.389926
+        ],
+        "first_on_ground": true,
+        "last_seen_utc": "2024-04-01T19:12:13.160Z",
+        "last_pos": [
+          31.834694,
+          -106.389899
+        ],
+        "last_on_ground": true
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "N2100L",
+      "date": "2024-05-01",
+      "bytes": 519514,
+      "summary": {
+        "registration": "N2100L",
+        "type": "GLEX",
+        "points": 2956,
+        "first_seen_utc": "2024-05-01T00:00:06.300Z",
+        "first_pos": [
+          32.180352,
+          -106.8537
+        ],
+        "first_on_ground": false,
+        "last_seen_utc": "2024-05-01T23:59:50.820Z",
+        "last_pos": [
+          32.190536,
+          -107.611084
+        ],
+        "last_on_ground": false
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "N2100L",
+      "date": "2024-06-01",
+      "bytes": 351323,
+      "summary": {
+        "registration": "N2100L",
+        "type": "GLEX",
+        "points": 2018,
+        "first_seen_utc": "2024-06-01T15:52:17.890Z",
+        "first_pos": [
+          31.844896,
+          -106.385268
+        ],
+        "first_on_ground": false,
+        "last_seen_utc": "2024-06-01T23:59:45.400Z",
+        "last_pos": [
+          36.048284,
+          -96.116872
+        ],
+        "last_on_ground": false
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "N2100L",
+      "date": "2024-07-01",
+      "bytes": 136447,
+      "summary": {
+        "registration": "N2100L",
+        "type": "GLEX",
+        "points": 775,
+        "first_seen_utc": "2024-07-01T21:46:34.000Z",
+        "first_pos": [
+          31.844477,
+          -106.385758
+        ],
+        "first_on_ground": true,
+        "last_seen_utc": "2024-07-01T23:59:48.600Z",
+        "last_pos": [
+          37.91028,
+          -110.47965
+        ],
+        "last_on_ground": false
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "N2100L",
+      "date": "2024-08-01",
+      "bytes": 208075,
+      "summary": {
+        "registration": "N2100L",
+        "type": "GLEX",
+        "points": 1189,
+        "first_seen_utc": "2024-08-01T20:46:44.320Z",
+        "first_pos": [
+          31.854538,
+          -106.374078
+        ],
+        "first_on_ground": false,
+        "last_seen_utc": "2024-08-01T23:59:59.800Z",
+        "last_pos": [
+          31.840555,
+          -106.390144
+        ],
+        "last_on_ground": true
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "N2100L",
+      "date": "2024-10-01",
+      "bytes": 386226,
+      "summary": {
+        "registration": "N2100L",
+        "type": "GLEX",
+        "points": 2201,
+        "first_seen_utc": "2024-10-01T14:41:20.400Z",
+        "first_pos": [
+          31.853369,
+          -106.375739
+        ],
+        "first_on_ground": false,
+        "last_seen_utc": "2024-10-01T22:31:26.960Z",
+        "last_pos": [
+          31.839636,
+          -106.391209
+        ],
+        "last_on_ground": true
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "N2100L",
+      "date": "2024-11-01",
+      "bytes": 455872,
+      "summary": {
+        "registration": "N2100L",
+        "type": "GLEX",
+        "points": 2605,
+        "first_seen_utc": "2024-11-01T14:36:09.130Z",
+        "first_pos": [
+          31.858292,
+          -106.368091
+        ],
+        "first_on_ground": false,
+        "last_seen_utc": "2024-11-01T23:59:42.240Z",
+        "last_pos": [
+          31.834248,
+          -106.391107
+        ],
+        "last_on_ground": true
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "N2100L",
+      "date": "2025-03-01",
+      "bytes": 430332,
+      "summary": {
+        "registration": "N2100L",
+        "type": "GLEX",
+        "points": 2455,
+        "first_seen_utc": "2025-03-01T16:31:05.770Z",
+        "first_pos": [
+          31.834457,
+          -106.390985
+        ],
+        "first_on_ground": true,
+        "last_seen_utc": "2025-03-01T23:59:55.880Z",
+        "last_pos": [
+          32.488953,
+          -107.11225
+        ],
+        "last_on_ground": false
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "N2100L",
+      "date": "2025-05-01",
+      "bytes": 515958,
+      "summary": {
+        "registration": "N2100L",
+        "type": "GLEX",
+        "points": 2969,
+        "first_seen_utc": "2025-05-01T14:03:48.320Z",
+        "first_pos": [
+          31.835213,
+          -106.390943
+        ],
+        "first_on_ground": true,
+        "last_seen_utc": "2025-05-01T23:59:46.550Z",
+        "last_pos": [
+          34.725316,
+          -113.088684
+        ],
+        "last_on_ground": false
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "N2100L",
+      "date": "2025-07-01",
+      "bytes": 568574,
+      "summary": {
+        "registration": "N2100L",
+        "type": "GLEX",
+        "points": 3286,
+        "first_seen_utc": "2025-07-01T00:00:17.170Z",
+        "first_pos": [
+          42.606628,
+          -110.083819
+        ],
+        "first_on_ground": false,
+        "last_seen_utc": "2025-07-01T23:59:59.740Z",
+        "last_pos": [
+          40.230781,
+          -111.731207
+        ],
+        "last_on_ground": true
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "N2100L",
+      "date": "2025-08-01",
+      "bytes": 370694,
+      "summary": {
+        "registration": "N2100L",
+        "type": "GLEX",
+        "points": 2114,
+        "first_seen_utc": "2025-08-01T14:35:18.070Z",
+        "first_pos": [
+          31.844055,
+          -106.386273
+        ],
+        "first_on_ground": false,
+        "last_seen_utc": "2025-08-01T23:59:59.160Z",
+        "last_pos": [
+          44.452825,
+          -88.133597
+        ],
+        "last_on_ground": false
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "N2100L",
+      "date": "2025-12-01",
+      "bytes": 387587,
+      "summary": {
+        "registration": "N2100L",
+        "type": "GLEX",
+        "points": 2236,
+        "first_seen_utc": "2025-12-01T15:42:58.030Z",
+        "first_pos": [
+          31.860771,
+          -106.367107
+        ],
+        "first_on_ground": false,
+        "last_seen_utc": "2025-12-01T23:59:50.590Z",
+        "last_pos": [
+          31.300781,
+          -93.13552
+        ],
+        "last_on_ground": false
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "N2100L",
+      "date": "2026-05-01",
+      "bytes": 188388,
+      "summary": {
+        "registration": "N2100L",
+        "type": "GLEX",
+        "points": 1087,
+        "first_seen_utc": "2026-05-01T17:31:04.640Z",
+        "first_pos": [
+          31.854207,
+          -106.374001
+        ],
+        "first_on_ground": false,
+        "last_seen_utc": "2026-05-01T22:11:56.410Z",
+        "last_pos": [
+          31.839799,
+          -106.391013
+        ],
+        "last_on_ground": true
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "N59906",
+      "date": "2022-02-01",
+      "bytes": 183881,
+      "summary": {
+        "registration": "N59906",
+        "type": "PA31",
+        "points": 1112,
+        "first_seen_utc": "2022-02-01T15:40:15.808Z",
+        "first_pos": [
+          36.36882,
+          -86.407185
+        ],
+        "first_on_ground": false,
+        "last_seen_utc": "2022-02-01T18:59:21.308Z",
+        "last_pos": [
+          36.386627,
+          -86.410618
+        ],
+        "last_on_ground": false
+      },
+      "pre_2023": true
+    },
+    {
+      "tail": "N59906",
+      "date": "2022-03-01",
+      "bytes": 505460,
+      "summary": {
+        "registration": "N59906",
+        "type": "PA31",
+        "points": 3044,
+        "first_seen_utc": "2022-03-01T00:00:02.089Z",
+        "first_pos": [
+          38.754831,
+          -90.210815
+        ],
+        "first_on_ground": false,
+        "last_seen_utc": "2022-03-01T21:12:58.089Z",
+        "last_pos": [
+          38.664054,
+          -90.621338
+        ],
+        "last_on_ground": false
+      },
+      "pre_2023": true
+    },
+    {
+      "tail": "N59906",
+      "date": "2022-05-01",
+      "bytes": 55130,
+      "summary": {
+        "registration": "N59906",
+        "type": "PA31",
+        "points": 339,
+        "first_seen_utc": "2022-05-01T19:41:36.561Z",
+        "first_pos": [
+          39.289623,
+          -94.711121
+        ],
+        "first_on_ground": false,
+        "last_seen_utc": "2022-05-01T21:19:01.161Z",
+        "last_pos": [
+          37.826294,
+          -99.833582
+        ],
+        "last_on_ground": false
+      },
+      "pre_2023": true
+    },
+    {
+      "tail": "N59906",
+      "date": "2022-06-01",
+      "bytes": 496594,
+      "summary": {
+        "registration": "N59906",
+        "type": "PA31",
+        "points": 2957,
+        "first_seen_utc": "2022-06-01T15:10:43.570Z",
+        "first_pos": [
+          36.938805,
+          -121.788134
+        ],
+        "first_on_ground": true,
+        "last_seen_utc": "2022-06-01T23:59:55.169Z",
+        "last_pos": [
+          37.656384,
+          -121.090592
+        ],
+        "last_on_ground": false
+      },
+      "pre_2023": true
+    },
+    {
+      "tail": "N59906",
+      "date": "2022-09-01",
+      "bytes": 501,
+      "summary": {
+        "registration": "N59906",
+        "type": "PA31",
+        "points": 1,
+        "first_seen_utc": "2022-09-02T00:33:02.550Z",
+        "first_pos": [
+          48.78614,
+          -122.537312
+        ],
+        "first_on_ground": false,
+        "last_seen_utc": "2022-09-02T00:33:02.550Z",
+        "last_pos": [
+          48.78614,
+          -122.537312
+        ],
+        "last_on_ground": false
+      },
+      "pre_2023": true
+    },
+    {
+      "tail": "N59906",
+      "date": "2022-12-01",
+      "bytes": 153984,
+      "summary": {
+        "registration": "N59906",
+        "type": "PA31",
+        "points": 917,
+        "first_seen_utc": "2022-12-01T19:21:24.340Z",
+        "first_pos": [
+          32.305996,
+          -90.369443
+        ],
+        "first_on_ground": false,
+        "last_seen_utc": "2022-12-01T21:56:43.060Z",
+        "last_pos": [
+          32.339933,
+          -90.474878
+        ],
+        "last_on_ground": false
+      },
+      "pre_2023": true
+    },
+    {
+      "tail": "N59906",
+      "date": "2023-03-01",
+      "bytes": 265607,
+      "summary": {
+        "registration": "N59906",
+        "type": "PA31",
+        "points": 1578,
+        "first_seen_utc": "2023-03-01T14:24:30.570Z",
+        "first_pos": [
+          37.915283,
+          -80.509916
+        ],
+        "first_on_ground": false,
+        "last_seen_utc": "2023-03-01T19:25:32.680Z",
+        "last_pos": [
+          38.024826,
+          -81.022008
+        ],
+        "last_on_ground": false
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "N59906",
+      "date": "2023-04-01",
+      "bytes": 74804,
+      "summary": {
+        "registration": "N59906",
+        "type": "PA31",
+        "points": 448,
+        "first_seen_utc": "2023-04-01T14:13:18.340Z",
+        "first_pos": [
+          41.340296,
+          -82.189095
+        ],
+        "first_on_ground": false,
+        "last_seen_utc": "2023-04-01T15:13:00.630Z",
+        "last_pos": [
+          40.082641,
+          -83.069
+        ],
+        "last_on_ground": false
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "N59906",
+      "date": "2023-06-01",
+      "bytes": 252129,
+      "summary": {
+        "registration": "N59906",
+        "type": "PA31",
+        "points": 1511,
+        "first_seen_utc": "2023-06-01T13:20:34.100Z",
+        "first_pos": [
+          43.994293,
+          -88.552982
+        ],
+        "first_on_ground": true,
+        "last_seen_utc": "2023-06-01T16:16:06.280Z",
+        "last_pos": [
+          43.99403,
+          -88.551865
+        ],
+        "last_on_ground": true
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "N59906",
+      "date": "2023-10-01",
+      "bytes": 266333,
+      "summary": {
+        "registration": "N59906",
+        "type": "PA31",
+        "points": 1599,
+        "first_seen_utc": "2023-10-01T14:20:26.470Z",
+        "first_pos": [
+          32.681044,
+          -96.86766
+        ],
+        "first_on_ground": true,
+        "last_seen_utc": "2023-10-01T17:57:36.970Z",
+        "last_pos": [
+          32.677239,
+          -96.861999
+        ],
+        "last_on_ground": true
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "N59906",
+      "date": "2023-11-01",
+      "bytes": 412870,
+      "summary": {
+        "registration": "N59906",
+        "type": "PA31",
+        "points": 2494,
+        "first_seen_utc": "2023-11-01T15:40:00.960Z",
+        "first_pos": [
+          29.889144,
+          -97.874451
+        ],
+        "first_on_ground": false,
+        "last_seen_utc": "2023-11-01T21:20:32.770Z",
+        "last_pos": [
+          27.778698,
+          -97.500351
+        ],
+        "last_on_ground": true
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "N59906",
+      "date": "2023-12-01",
+      "bytes": 45816,
+      "summary": {
+        "registration": "N59906",
+        "type": "PA31",
+        "points": 276,
+        "first_seen_utc": "2023-12-01T21:15:43.410Z",
+        "first_pos": [
+          32.395569,
+          -90.523663
+        ],
+        "first_on_ground": false,
+        "last_seen_utc": "2023-12-01T22:20:43.660Z",
+        "last_pos": [
+          32.28479,
+          -90.381607
+        ],
+        "last_on_ground": false
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "N59906",
+      "date": "2024-02-01",
+      "bytes": 329292,
+      "summary": {
+        "registration": "N59906",
+        "type": "PA31",
+        "points": 1960,
+        "first_seen_utc": "2024-02-01T15:50:04.740Z",
+        "first_pos": [
+          36.174394,
+          -86.318645
+        ],
+        "first_on_ground": false,
+        "last_seen_utc": "2024-02-01T20:01:56.430Z",
+        "last_pos": [
+          36.209774,
+          -86.313386
+        ],
+        "last_on_ground": false
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "N59906",
+      "date": "2024-03-01",
+      "bytes": 115284,
+      "summary": {
+        "registration": "N59906",
+        "type": "PA31",
+        "points": 695,
+        "first_seen_utc": "2024-03-01T20:06:21.850Z",
+        "first_pos": [
+          38.717514,
+          -77.511471
+        ],
+        "first_on_ground": false,
+        "last_seen_utc": "2024-03-01T22:13:17.520Z",
+        "last_pos": [
+          39.903599,
+          -84.198853
+        ],
+        "last_on_ground": false
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "N59906",
+      "date": "2024-05-01",
+      "bytes": 141672,
+      "summary": {
+        "registration": "N59906",
+        "type": "PA31",
+        "points": 865,
+        "first_seen_utc": "2024-05-01T16:36:55.720Z",
+        "first_pos": [
+          32.303696,
+          -90.37392
+        ],
+        "first_on_ground": false,
+        "last_seen_utc": "2024-05-01T23:59:55.110Z",
+        "last_pos": [
+          41.124893,
+          -90.937927
+        ],
+        "last_on_ground": false
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "N59906",
+      "date": "2024-11-01",
+      "bytes": 386246,
+      "summary": {
+        "registration": "N59906",
+        "type": "PA31",
+        "points": 2127,
+        "first_seen_utc": "2024-11-01T15:22:15.680Z",
+        "first_pos": [
+          36.174441,
+          -94.121349
+        ],
+        "first_on_ground": true,
+        "last_seen_utc": "2024-11-01T20:05:29.430Z",
+        "last_pos": [
+          36.173987,
+          -94.120998
+        ],
+        "last_on_ground": true
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "N59906",
+      "date": "2025-02-01",
+      "bytes": 174072,
+      "summary": {
+        "registration": "N59906",
+        "type": "PA31",
+        "points": 948,
+        "first_seen_utc": "2025-02-01T15:27:29.280Z",
+        "first_pos": [
+          33.552805,
+          -85.851746
+        ],
+        "first_on_ground": false,
+        "last_seen_utc": "2025-02-01T18:26:58.520Z",
+        "last_pos": [
+          33.62999,
+          -85.750298
+        ],
+        "last_on_ground": false
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "N59906",
+      "date": "2025-04-01",
+      "bytes": 391515,
+      "summary": {
+        "registration": "N59906",
+        "type": "PA31",
+        "points": 2156,
+        "first_seen_utc": "2025-04-01T16:08:22.400Z",
+        "first_pos": [
+          39.138691,
+          -78.141587
+        ],
+        "first_on_ground": true,
+        "last_seen_utc": "2025-04-01T23:19:01.980Z",
+        "last_pos": [
+          39.138748,
+          -78.141528
+        ],
+        "last_on_ground": true
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "N59906",
+      "date": "2025-07-01",
+      "bytes": 126593,
+      "summary": {
+        "registration": "N59906",
+        "type": "PA31",
+        "points": 698,
+        "first_seen_utc": "2025-07-01T20:13:32.160Z",
+        "first_pos": [
+          48.471268,
+          -122.417556
+        ],
+        "first_on_ground": false,
+        "last_seen_utc": "2025-07-01T21:51:10.600Z",
+        "last_pos": [
+          47.618626,
+          -117.528013
+        ],
+        "last_on_ground": true
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "N59906",
+      "date": "2025-09-01",
+      "bytes": 157283,
+      "summary": {
+        "registration": "N59906",
+        "type": "PA31",
+        "points": 874,
+        "first_seen_utc": "2025-09-01T15:02:05.620Z",
+        "first_pos": [
+          42.916939,
+          -112.577199
+        ],
+        "first_on_ground": true,
+        "last_seen_utc": "2025-09-01T17:40:40.150Z",
+        "last_pos": [
+          41.185789,
+          -112.016118
+        ],
+        "last_on_ground": true
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "N59906",
+      "date": "2025-10-01",
+      "bytes": 17928,
+      "summary": {
+        "registration": "N59906",
+        "type": "PA31",
+        "points": 117,
+        "first_seen_utc": "2025-10-01T20:19:58.060Z",
+        "first_pos": [
+          39.908198,
+          -105.103455
+        ],
+        "first_on_ground": true,
+        "last_seen_utc": "2025-10-01T21:45:43.310Z",
+        "last_pos": [
+          39.907185,
+          -105.104723
+        ],
+        "last_on_ground": true
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "N59906",
+      "date": "2026-01-01",
+      "bytes": 301821,
+      "summary": {
+        "registration": "N59906",
+        "type": "PA31",
+        "points": 1665,
+        "first_seen_utc": "2026-01-01T15:29:51.500Z",
+        "first_pos": [
+          32.331274,
+          -95.429208
+        ],
+        "first_on_ground": false,
+        "last_seen_utc": "2026-01-01T20:12:10.950Z",
+        "last_pos": [
+          32.292938,
+          -90.38985
+        ],
+        "last_on_ground": false
+      },
+      "pre_2023": false
+    },
+    {
+      "tail": "N59906",
+      "date": "2026-07-01",
+      "bytes": 119267,
+      "summary": {
+        "registration": "N59906",
+        "type": "PA31",
+        "points": 656,
+        "first_seen_utc": "2026-07-01T12:43:49.020Z",
+        "first_pos": [
+          41.704567,
+          -86.32354
+        ],
+        "first_on_ground": false,
+        "last_seen_utc": "2026-07-01T14:20:26.030Z",
+        "last_pos": [
+          41.704893,
+          -86.295883
+        ],
+        "last_on_ground": false
+      },
+      "pre_2023": false
+    }
+  ],
+  "tails": {
+    "SU-BTT": {
+      "hex": "0101d3",
+      "months_tried": 56,
+      "months_found": 6
+    },
+    "SU-BND": {
+      "hex": "01003e",
+      "months_tried": 56,
+      "months_found": 6
+    },
+    "SU-BTU": {
+      "hex": "0101d0",
+      "months_tried": 56,
+      "months_found": 9
+    },
+    "SU-BTV": {
+      "hex": "0101d1",
+      "months_tried": 56,
+      "months_found": 2
+    },
+    "SU-BGM": {
+      "hex": "010070",
+      "months_tried": 56,
+      "months_found": 1
+    },
+    "T7-ELL": {
+      "hex": "50018a",
+      "months_tried": 56,
+      "months_found": 12
+    },
+    "N102DZ": {
+      "hex": "a00c85",
+      "months_tried": 56,
+      "months_found": 18
+    },
+    "N888KG": {
+      "hex": "ac3c75",
+      "months_tried": 56,
+      "months_found": 13
+    },
+    "N560TW": {
+      "hex": "a728a8",
+      "months_tried": 56,
+      "months_found": 23
+    },
+    "N582MM": {
+      "hex": "a77e75",
+      "months_tried": 56,
+      "months_found": 23
+    },
+    "N872RA": {
+      "hex": "abff3c",
+      "months_tried": 56,
+      "months_found": 24
+    },
+    "N40JD": {
+      "hex": "a4ab14",
+      "months_tried": 56,
+      "months_found": 11
+    },
+    "N1098L": {
+      "hex": "a0299e",
+      "months_tried": 56,
+      "months_found": 19
+    },
+    "N2100L": {
+      "hex": "a1bbe5",
+      "months_tried": 56,
+      "months_found": 17
+    },
+    "N59906": {
+      "hex": "a7c14d",
+      "months_tried": 56,
+      "months_found": 23
+    },
+    "N55906": {
+      "hex": "a72351",
+      "months_tried": 56,
+      "months_found": 0
+    }
+  }
+}

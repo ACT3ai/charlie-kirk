@@ -208,6 +208,44 @@ not covered by anyone.
 
 **The holes cut both ways, and they cut against us as often as for us.**
 
+## Update — three of the holes above have since been closed
+
+**Retrieved 24 August 2026, after the pass described above.** Assuming the data had been erased, we
+went looking for backups. Three of the gaps listed in "What we did NOT get" turned out to be
+recoverable, and this section corrects them rather than leaving the older text to stand. The full
+account is on **[Flight Data Recovery](/Planes/Flight-Data-Recovery/overview)**.
+
+| Source | History? | Auth | Status on 24 Aug 2026 |
+|---|---|---|---|
+| **globe.airplanes.live** globe_history | **YES** | none | **200 — 5–10× the byte count of adsb.lol for the same aircraft-day** |
+| **adsb.lol GitHub releases** (ODbL) | **YES** | none | **200 — one ~3 GB release per day, including days the live API refuses** |
+| **samples.adsbexchange.com/traces** | **YES, monthly** | none | **200 — one day per month, back to July 2016** |
+
+* **The 12 October – 15 December 2025 403 band is recoverable.** adsb.lol publishes its entire
+  archive to `github.com/adsblol/globe_history_2025` as one Open-Database-Licence release per day,
+  and **every date in the band is present**. `globe.airplanes.live` serves the same days over HTTP.
+  **The 403 is a serving condition, not a deletion**, and this page should never have implied
+  otherwise. It also means the free archive *can* now check the 13 October 2025 Sharm el-Sheikh
+  tarmac claim.
+* **2022 is now partly reachable.** ADS-B Exchange's free monthly sample archive reaches July 2016.
+  It produced this investigation's first primary 2022 traces — SU-BTT departing **Wilmington,
+  Delaware** on 1 June 2022 and arriving **Wichita, Kansas** on 1 September 2022. It is one day in
+  thirty, so it cannot test a claim about a specific mid-month date, and the great majority of 2022
+  rows remain untestable.
+* **The N102DZ FlightRadar24 history was recovered from the Internet Archive** — twelve flight rows
+  from a snapshot taken 11 September 2025, eight months before the reported removal. The page itself
+  returns HTTP 403 to the public today.
+
+**And one hole that got wider, correctly.** adsb.lol holds **no 2026 data at all**. That was tested
+against control aircraft with no connection to this case — an unrelated Ryanair and an unrelated
+Lufthansa airframe return 404 identically — so it is **archive-wide retention, not suppression of
+anything.** Naming the control test matters more than the result: it is what separates a retention
+window from a cover-up, and without it the two look the same.
+
+**airplanes.live remains 403 on its live `/v2/` API** — the gating recorded above is real. Its
+*historical* `globe_history` path is open. Those are two different services on one domain and this
+page previously conflated them.
+
 ## Related
 
 * [How we get the data — overview](/Planes/following/apis/overview)

@@ -1,0 +1,28 @@
+{
+  "retrieved_utc": "2026-08-24T16:33:32.437Z",
+  "source": "adsbexchange-samples",
+  "source_role": "BACKUP ARCHIVE — ADSBX free monthly sample, reaches back to 2016; the only free source covering the 2022 dates the daily archives do not hold",
+  "url": "https://samples.adsbexchange.com/traces/2023/12/01/9e/trace_full_a0299e.json",
+  "http_status": 200,
+  "bytes": 85928,
+  "tail": "N1098L",
+  "hex": "a0299e",
+  "utc_date": "2023-12-01",
+  "summary": {
+    "registration": "N1098L",
+    "type": "GLEX",
+    "points": 509,
+    "first_seen_utc": "2023-12-01T00:00:03.120Z",
+    "first_pos": [
+      31.913864,
+      -106.270807
+    ],
+    "first_on_ground": false,
+    "last_seen_utc": "2023-12-01T23:59:53.480Z",
+    "last_pos": [
+      30.732101,
+      -98.385046
+    ],
+    "last_on_ground": false
+  }
+}
