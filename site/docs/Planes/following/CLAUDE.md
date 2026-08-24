@@ -437,9 +437,9 @@ silently pick one on a public page; state the range and state who says what.
 always learn from the dir ~/BGit/Bryan_git/charlie-kirk/site/docs/Planes/ because it has important info for us to learn to build content for this dir.
 
 
-## The three data files in this directory
+## The six data files in this directory
 
-Three CSVs sit beside this file. They are the **structured spine** the location pages are written
+Six CSVs sit beside this file. They are the **structured spine** the location pages are written
 from — the same role `{SISTER_OVERLAPS}` plays for the sister directory, but local, and built from
 what this repo can actually source today. They are **research data, not published pages**:
 Docusaurus does not serve a `.csv` out of `site/docs/`, so nothing in them reaches the web until a
@@ -449,12 +449,25 @@ file before it does.
     FLIGHTS_CSV is file {THIS_DIR}flights.csv
     TPUSA_EVENTS_CSV is file {THIS_DIR}tpusa_events.csv
     PLANES_CSV_LOCAL is file {THIS_DIR}planes.csv
+    OVERLAPS_CSV_LOCAL is file {THIS_DIR}overlaps.csv
+    AIRPORTS_CSV is file {THIS_DIR}airports.csv
+    SOURCES_CSV is file {THIS_DIR}sources.csv
 
 They join like this:
 
     planes.csv ──(tail_number)──▶ flights.csv ◀──(date + city)──▶ tpusa_events.csv
-                                       │
+                                       │              │                  │
+                    (airport_code) ────┼──────────────┼──────────────────┘
+                                       ▼              ▼
+                                 airports.csv    overlaps.csv ──(overlap_page)──▶ overlap/*.mdx
+                                       │              │
+                                       │              └──(source_url)──▶ sources.csv
                                        └──(mdx_page)──▶ the Level 3 location pages in {THIS_DIR}
+
+**`flights.csv`, `tpusa_events.csv` and `planes.csv` are the three ORIGINAL files.** `overlaps.csv`
+is the per-claim register. **`airports.csv` (the WHERE spine) and `sources.csv` (the WHO-SAYS spine)
+are the two reference tables** every other file joins into. Nothing is ever removed from any of
+them — they only grow, and columns are only ever added.
 
 `flights.csv` is where the *foreign* side lives, `tpusa_events.csv` is where the *Kirk / TPUSA*
 side lives, and an overlap claim is a row from each that share a date window and a city. Neither
@@ -577,16 +590,136 @@ made on any page that names them:
 Both are recorded in `flights.csv` with no legs, no dates and no location, which is the honest state
 of the evidence for them.
 
-### Keeping the three files current
+### `overlaps.csv` — one row per claimed pairing
+
+**85 rows.** The per-claim register. `overlap_id` is a **permanent join key — never renumber it.**
+
+Four ID families, and the family tells you where the claim came from:
+
+* **`OWENS-001` … `OWENS-067`** — the 67 published rows of the Candace Owens spreadsheet, carrying
+  the compiler's own `owens_index`.
+* **`EXTRA-001` … `EXTRA-007`** — pairings claimed on X outside the sheet.
+* **`UNPUB-001` … `UNPUB-005`** — the gap between the sheet's 67 published rows and the claimed
+  count of 72. **Carried as empty rows on purpose. A gap named is worth more than a gap hidden.**
+* **`SITE-001` … `SITE-006`** — pairings this repo derived itself, each already written up as a
+  page under `overlap/` before it had a row here. All six are recorded with the reason they cut
+  *against* the pattern as prominently as the reason they support it. `SITE-004` (23 Apr 2024,
+  Salt Lake City) and `SITE-006` (10 Sep 2025, Orem) are the only two pairings in this repo's own
+  data that survive a same-metro, ±3-day test.
+
+`overlap_page` links every one of the 85 rows to its dedicated page under `overlap/`.
+
+### `airports.csv` — the WHERE spine
+
+**103 rows, one per airport.** Primary key `airport_code` (ICAO). This is the table that answers the
+question the whole claim rests on: **how unusual is it for a foreign government jet to be at this
+field at all?** The columns that carry the argument:
+
+* `airport_class`, `is_us_customs_port`, `military_colocation`, `runway_longest_ft` — the facility
+  facts. A single strip with a windsock is the argument; state it with facts, not adjectives.
+* **`mro_on_field`** — the innocent explanation, made a first-class column. Duncan Aviation at
+  Provo and at Lincoln (its HQ), Yingling's Part 145 Falcon shop at Wichita. **Read this column
+  before writing a word about why an aircraft was somewhere.**
+* `how_unusual_foreign_state_jet` and `innocent_explanation` — the assessment and its counter, side
+  by side on every researched row. Where a field was never researched the cell says so plainly.
+* `role_in_case` — `foreign_plane_stop` / `kirk_tpusa_event_airport` / both /
+  `claimed_overlap_only_no_logged_leg` / `referenced_only`.
+* The count columns — `following_plane_stays`, `kirk_tpusa_events`, `overlap_claims`,
+  `overlap_audited_accurate` / `_partial` / `_inaccurate` / `_untested`, `surviving_pairings`.
+
+**Two rows to read before any other.** **KPHX (Phoenix Sky Harbor)** carries **13** sourced
+Charlie/TPUSA events — more than any other field, because TPUSA is headquartered there — and **zero
+following-plane legs, ever.** The absence of any Egyptian-registered leg at the fleet's most obvious
+target city is a finding that cuts against the shadowing claim, and it is in the table for that
+reason. **RKSI (Incheon)** records that Charlie Kirk was on a different continent for four of the
+six days SU-BTT sat at Provo.
+
+**KTOP vs KFOE is an identifier conflict, not a typo.** `overlaps.csv` logs the Topeka claim
+(`EXTRA-003`) against KTOP (Philip Billard Municipal); the larger Topeka field a bizjet would
+actually use is KFOE (Forbes Field). No source states which was meant. Both rows exist; neither is
+silently merged.
+
+### `sources.csv` — the WHO-SAYS spine
+
+**202 rows.** Every claim in this directory traces to a row here. `source_id` is the join key:
+`X-001`…`X-179` for X posts, then `ADSB-`, `BCAST-`, `VID-`, `PRESS-`, `DOC-`, `REPO-`, `REC-`.
+
+* `role` — `originator_broadcaster` / `auditor` / `rebutter` / `compiler_researcher` /
+  `independent_analyst` / `amplifier` / `aggregator` / `ai_relay` / `subject_response` /
+  `organisation_account` / `primary_data` / `repo_record`.
+* `stance` — `asserts_pattern` / `disputes_counts` / `disputes_pattern` / `corrects_detail` /
+  `neutral_restates_official` / `evidence_only`.
+* **`count_claimed`** — the published tally, verbatim, per source. 77, 73/~23, 72, 70+, 68/29, 60+,
+  65–75, 1, "66% wrong / 60% wrong continent". **These have never been reconciled. Do not average
+  them. `corroborated_by` on every asserting row says so in the cell itself.**
+* **`evidence_class`** — the honesty column, and the one that ranks everything else:
+  `adsb_public_history` > `facility_record` > `broadcast_video_frame` > `subject_denial` >
+  `broadcast_claim` > `press_relay` > `social_post_unverified` > `document_quoting_claim`.
+  **A primary record outranks a relayed account. A CourtListener PDF that quotes a claim is not a
+  finding about the claim.**
+* `corroborated_by` / `rebutted_by` — every asserting row carries its rebuttals; every disputing
+  row carries what it rests on.
+* `citation_count` / `cited_on_pages` — how load-bearing each source is across this directory.
+  @KanekoaTheGreat is the single most-cited account here, and he is the principal *auditor*, not a
+  claimant.
+
+**`REC-001` and `REC-002` are rows for records that do not exist yet** — the Provo badge access list
+and the Duncan Aviation FBO rental-car log. **Together with Erika Kirk's itinerary, those are what
+would actually settle this, and nobody on either side has published them.** They are in the table so
+the gap is a named row rather than a silence.
+
+### The `attendee_class` column, in flights / tpusa_events / overlaps
+
+The same vocabulary in all three files, so the three tables answer one question the same way:
+
+    CHARLIE_ONLY        Charlie Kirk present; Erika not documented
+    CHARLIE_AND_ERIKA   both present or both claimed
+    ERIKA_ONLY          Erika claimed; Charlie not
+    TPUSA_NO_KIRK       a TPUSA event with neither Kirk documented
+    NONE_DOCUMENTED     (flights only) no Kirk or TPUSA presence at that field in that window
+    UNKNOWN             not determinable from any source
+
+`charlie_present` and `erika_present` sit beside it so the class is always auditable rather than
+asserted, and they distinguish `yes` / `no` / `not_documented` / `claimed` / `no_deceased` /
+`no_scheduled_not_held` / `unknown`. **`not_documented` is not `no`. Keep them apart.**
+
+### The two overlap tests, run side by side
+
+`tpusa_events.csv` carries both, because the difference between them *is* the public dispute:
+
+* **`following_plane_at_airport`** — strict: same ICAO code, ±3 days. This is Liz Wheeler's rule.
+* **`following_plane_in_metro`** — loose: same metro cluster, ±3 days, via the `metro_area` column
+  shared by all three tables. This is closer to the spreadsheet's own ±3 days / 50–100 miles rule.
+
+**Across 139 sourced Charlie/TPUSA events, the strict test returns 1 and the loose test returns 2** —
+23 April 2024 (University of Utah / SU-BTT and SU-BND at Provo) and 10 September 2025 (UVU / the
+same two aircraft at the same field). **Both are Utah. Both are `CHARLIE_ONLY`.** That is this
+repo's own data reproducing the sceptics' result, and it must be reported that way and not softened.
+
+**It is not the same as saying the pattern is false.** 139 is every Kirk/TPUSA location this repo can
+source, and it is nowhere near every location the Kirks were at; the Erika side is close to empty.
+**A test that returns 1 out of 139 is a statement about what we can currently prove, not about what
+happened.** Say both halves of that whenever the number is quoted.
+
+### Keeping the six files current
 
 1. New fact lands in `{SISTER_INFO}` **with its source** first. Research before publication.
-2. Add or update the row in `flights.csv` / `tpusa_events.csv` / `planes.csv`. Keep `mdx_page`
-   pointing at a filename that follows the naming rule above, whether or not the page exists yet.
-3. Only then write or widen the location page. **If the date range at a location grows, widen it
+2. Add the source row to `sources.csv` — with its `role`, `stance` and `evidence_class` — before
+   the fact is used anywhere else.
+3. Add or update the row in `flights.csv` / `tpusa_events.csv` / `planes.csv` / `overlaps.csv`. Keep
+   `mdx_page` pointing at a filename that follows the naming rule above, whether or not the page
+   exists yet. **`overlap_id` and `source_id` are permanent once assigned.**
+4. If a new airport appears, add its `airports.csv` row and research
+   `how_unusual_foreign_state_jet`, `mro_on_field` and `innocent_explanation` **before** the airport
+   is described on a page.
+5. Recompute the derived columns — `attendee_class`, the audit counts on `planes.csv`, the two
+   overlap tests, the count columns on `airports.csv` — rather than hand-editing them.
+6. Only then write or widen the location page. **If the date range at a location grows, widen it
    inside the page and in the CSV — do not rename the shipped file.**
-4. Add or fix the matching row in `{PAGES_CSV}`.
-5. `cd {SITE_ROOT}site && npm run build` before declaring done.
+7. Add or fix the matching row in `{PAGES_CSV}`.
+8. `cd {SITE_ROOT}site && npm run build` before declaring done.
 
-Never edit these three files to make the pattern look stronger. `UNKNOWN`, `AMBIGUOUS`, the
-attribution conflicts and the disputed departure times are the most valuable content in them — they
-are what makes the rest credible.
+**Never remove a row or a column from any of these six files, and never reduce a count to make the
+pattern look tidier or stronger.** `UNKNOWN`, `AMBIGUOUS`, `not_documented`, the empty `UNPUB-`
+rows, the attribution conflicts, the KTOP/KFOE identifier clash and the three-way disputed
+departure time are the most valuable content in them — they are what makes the rest credible.
