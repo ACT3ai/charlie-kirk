@@ -35,7 +35,7 @@ AX_X1      = 1566
 N_MONTHS   = 46           # Jan 2022 .. Oct 2025
 SLOT       = (AX_X1 - AX_X0) / N_MONTHS
 BAR_W      = 17
-UNIT       = 46           # px per claimed overlap
+UNIT       = 40           # px per claimed overlap (5 units max on both bands)
 
 
 def month_list():
@@ -53,7 +53,7 @@ def load():
     upper = collections.defaultdict(collections.Counter)
     lower = collections.defaultdict(collections.Counter)
     undated = 0
-    survivors = {"upper": set(), "lower": set()}
+    survivors = {"upper": set(), "lower": set(), "dates": set()}
     with open(CSV_IN, newline="") as fh:
         for r in csv.DictReader(fh):
             date = r["date"].strip()
@@ -67,8 +67,9 @@ def load():
             v = r["audit_verdict"]
             fill = {"accurate": "A", "partial": "P", "inaccurate": "X"}.get(v, "U")
             band[mo][fill] += 1
-            if r["gap"] in ("same_day", "day_before"):
+            if r["gap"] in ("same_day", "day_before", "day_after"):
                 survivors["upper" if band is upper else "lower"].add(mo)
+                survivors["dates"].add(date)
     return upper, lower, undated, survivors
 
 
@@ -128,24 +129,24 @@ def main():
     s.append(f'<text x="{cx+22}" y="{cy+104}" fill="{DIM}" font-size="13" letter-spacing="1.1">AUDIT OF THE AIRCRAFT&#8217;S POSITION</text>')
     # 100% stacked audit bar — 18 accurate / 44 inaccurate / 5 partial
     bx, by, bw, bh = cx + 22, cy + 114, cw - 44, 16
-    a, x_, p = 18, 44, 5
+    a, x_, p = verd["A"], verd["X"], verd["P"]
     tt = a + x_ + p
     wa, wx, wp = bw * a / tt, bw * x_ / tt, bw * p / tt
     s.append(f'<rect x="{bx}" y="{by}" width="{wa:.1f}" height="{bh}" fill="{INK}"/>')
     s.append(f'<rect x="{bx+wa+0.8:.1f}" y="{by+0.8}" width="{wx-1.6:.1f}" height="{bh-1.6}" fill="none" stroke="{GREY}" stroke-width="1.5"/>')
     s.append(f'<rect x="{bx+wa+wx:.1f}" y="{by}" width="{wp:.1f}" height="{bh}" fill="url(#hatch{AMBER[1:]})" stroke="{AMBER}" stroke-width="1.2"/>')
     s.append(f'<text x="{bx}" y="{by+38}" fill="{GREY}" font-size="16">'
-             f'<tspan fill="{INK}" font-weight="600">18 accurate</tspan>  &#183;  '
-             f'<tspan>44 inaccurate</tspan>  &#183;  <tspan>5 partial</tspan></text>')
+             f'<tspan fill="{INK}" font-weight="600">{a} accurate</tspan>  &#183;  '
+             f'<tspan>{x_} inaccurate</tspan>  &#183;  <tspan>{p} partial</tspan></text>')
 
     # ── month gridlines + year separators ────────────────────────────────────
     for i, mo in enumerate(months):
         gx = AX_X0 + i * SLOT + SLOT / 2
-        s.append(f'<line x1="{gx:.1f}" y1="{AX_Y-190}" x2="{gx:.1f}" y2="{AX_Y+250}" stroke="{RULE}" stroke-width="0.5" opacity="0.32"/>')
+        s.append(f'<line x1="{gx:.1f}" y1="{AX_Y-212}" x2="{gx:.1f}" y2="{AX_Y+218}" stroke="{RULE}" stroke-width="0.5" opacity="0.32"/>')
         if mo.endswith("-01"):
             lx = AX_X0 + i * SLOT
-            s.append(f'<line x1="{lx:.1f}" y1="{AX_Y-215}" x2="{lx:.1f}" y2="{AX_Y+275}" stroke="{RULE}" stroke-width="1.2"/>')
-            s.append(f'<text x="{lx+10:.1f}" y="{AX_Y-196}" fill="{GREY}" font-size="19" font-weight="600" letter-spacing="1">{mo[:4]}</text>')
+            s.append(f'<line x1="{lx:.1f}" y1="{AX_Y-252}" x2="{lx:.1f}" y2="{AX_Y+244}" stroke="{RULE}" stroke-width="1.2"/>')
+            s.append(f'<text x="{lx+10:.1f}" y="{AX_Y-244}" fill="{GREY}" font-size="19" font-weight="600" letter-spacing="1">{mo[:4]}</text>')
 
     # ── the bars ─────────────────────────────────────────────────────────────
     marks = []
@@ -166,14 +167,14 @@ def main():
     # ── survivor diamonds ────────────────────────────────────────────────────
     for mx, my in marks:
         s.append(f'<path d="M {mx:.1f} {my-8} L {mx+8:.1f} {my} L {mx:.1f} {my+8} L {mx-8:.1f} {my} Z" fill="{INK}"/>')
-    kx, ky = AX_X0 + 15.5 * SLOT, AX_Y - 268
+    kx, ky = AX_X0 + 15.5 * SLOT, AX_Y - 300
     s.append(f'<path d="M {kx} {ky-7} L {kx+7} {ky} L {kx} {ky+7} L {kx-7} {ky} Z" fill="{INK}"/>')
     s.append(f'<text x="{kx+18}" y="{ky-2}" fill="{GREY}" font-size="16">survives a same-day test at a shared</text>')
-    s.append(f'<text x="{kx+18}" y="{ky+20}" fill="{GREY}" font-size="16">field &#8212; <tspan fill="{INK}" font-weight="600">6 dates</tspan></text>')
+    s.append(f'<text x="{kx+18}" y="{ky+20}" fill="{GREY}" font-size="16">field &#8212; <tspan fill="{INK}" font-weight="600">{len(survivors["dates"])} dates</tspan></text>')
 
     # ── band labels, frame left, inside the empty 2022 months ────────────────
     s.append(f'<text x="60" y="{AX_Y-118}" fill="{AMBER}" font-size="21" font-weight="700" letter-spacing="0.6">CHARLIE KIRK + TPUSA <tspan fill="{GREY}" font-weight="400">&#8212; {tot_u} claimed</tspan></text>')
-    s.append(f'<text x="60" y="{AX_Y+168}" fill="{BLUE}" font-size="21" font-weight="700" letter-spacing="0.6">ERIKA KIRK <tspan fill="{GREY}" font-weight="400">&#8212; {tot_l} claimed</tspan></text>')
+    s.append(f'<text x="60" y="{AX_Y+188}" fill="{BLUE}" font-size="21" font-weight="700" letter-spacing="0.6">ERIKA KIRK <tspan fill="{GREY}" font-weight="400">&#8212; {tot_l} claimed</tspan></text>')
 
     # ── ghosted never-published block, off the right end, outside time ───────
     gx0 = AX_X1 + 52
@@ -208,8 +209,8 @@ def main():
     px0, py0, pw, ph = 964, 800, 700, 218
     sep_i = months.index("2025-09")
     sep_x = AX_X0 + sep_i * SLOT + SLOT / 2
-    s.append(f'<line x1="{sep_x:.1f}" y1="{AX_Y+250}" x2="{px0+pw:.1f}" y2="{py0}" stroke="{RULE}" stroke-width="1.1"/>')
-    s.append(f'<line x1="{sep_x-14:.1f}" y1="{AX_Y+250}" x2="{px0+40:.1f}" y2="{py0}" stroke="{RULE}" stroke-width="1.1"/>')
+    s.append(f'<line x1="{sep_x:.1f}" y1="{AX_Y+222}" x2="{px0+pw:.1f}" y2="{py0}" stroke="{RULE}" stroke-width="1.1"/>')
+    s.append(f'<line x1="{sep_x-14:.1f}" y1="{AX_Y+222}" x2="{px0+40:.1f}" y2="{py0}" stroke="{RULE}" stroke-width="1.1"/>')
     s.append(f'<rect x="{px0}" y="{py0}" width="{pw}" height="{ph}" fill="{BG}" stroke="{INK}" stroke-width="1.6" rx="4"/>')
     s.append(f'<text x="{px0+26}" y="{py0+36}" fill="{AMBER}" font-size="18" font-weight="700" letter-spacing="1.1">THE PART THAT SURVIVES</text>')
     lens = [("4 SEP 2025", "SU-BTT lands Provo, 12:46 pm"),
@@ -217,10 +218,10 @@ def main():
             ("10 SEP 2025", "SU-BND on the ground, transponder cycling, never takes off")]
     for j, (d, t) in enumerate(lens):
         ly = py0 + 68 + j * 27
-        s.append(f'<text x="{px0+26}" y="{ly}" fill="{INK}" font-size="16.5" font-weight="700">{d}<tspan fill="{GREY}" font-weight="400">&#160;&#8212; {t}</tspan></text>')
+        s.append(f'<text x="{px0+26}" y="{ly}" fill="{INK}" font-size="16.5" font-weight="700">{d}<tspan fill="{GREY}" font-weight="400">&#160;&#160;&#8212; {t}</tspan></text>')
     s.append(f'<text x="{px0+26}" y="{py0+152}" fill="{INK}" font-size="16.5">Charlie Kirk is killed at UVU, Orem &#8212; 7 miles away</text>')
     s.append(f'<line x1="{px0+26}" y1="{py0+168}" x2="{px0+pw-26}" y2="{py0+168}" stroke="{RULE}" stroke-width="1"/>')
-    s.append(f'<text x="{px0+26}" y="{py0+194}" fill="{GREY}" font-size="16">Of the 6 surviving dates, <tspan fill="{INK}" font-weight="600">3 are Charlie Kirk</tspan>. <tspan fill="{INK}" font-weight="600">2 of those 3 are in Utah</tspan>.</text>')
+    s.append(f'<text x="{px0+26}" y="{py0+194}" fill="{GREY}" font-size="16">Of the {len(survivors["dates"])} surviving dates, <tspan fill="{INK}" font-weight="600">3 are Charlie Kirk</tspan>. <tspan fill="{INK}" font-weight="600">2 of those 3 are in Utah</tspan>.</text>')
 
     # ── source line, bottom edge (~3%) ───────────────────────────────────────
     s.append(f'<line x1="60" y1="1022" x2="{W-60}" y2="1022" stroke="{RULE}" stroke-width="1"/>')
@@ -236,6 +237,10 @@ def main():
     print(f"wrote {SVG_OUT}")
     print(f"  upper (Charlie/TPUSA): {tot_u}   lower (Erika): {tot_l}   undated: {undated}")
     print(f"  verdict totals: {dict(verd)}")
+    mu = max((sum(c.values()) for c in upper.values()), default=0)
+    ml = max((sum(c.values()) for c in lower.values()), default=0)
+    print(f"  max bar height: upper={mu} ({mu*UNIT}px)  lower={ml} ({ml*UNIT}px)")
+    print(f"  survivor dates: {len(survivors['dates'])}")
     print(f"  survivor months: upper={sorted(survivors['upper'])} lower={sorted(survivors['lower'])}")
 
 

@@ -164,8 +164,8 @@ The dual-track approach:
 ## Interesting
 
 * The [four-law package](/laws/explain/all/overview) targets Epstein-style token compliance head on.
-* [N888KG](/Planes/N888KG) reportedly went dark for 30-50 minutes with no filed flight plan.
-* The [Pilatus PC-12 entry](/Planes/Pilatus-PC-12) exists precisely to caveat an unverified claim.
+* [N888KG](/Planes/N888KG/overview) reportedly went dark for 30-50 minutes with no filed flight plan.
+* The [Pilatus PC-12 entry](/Planes/Pilatus-PC-12/overview) exists precisely to caveat an unverified claim.
 
 ## Related Areas
 
