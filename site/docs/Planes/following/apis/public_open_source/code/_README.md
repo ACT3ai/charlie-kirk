@@ -32,6 +32,7 @@ seriously and went looking. Run in this order.
 | `analyse_overlap_recovery.js` | Turns those pulls into the only question that matters — where does the recovered track actually put the aircraft on the day the sheet alleges it was in that American city. Nearest-airport label with the distance attached. Writes `overlap_recovery_analysis.json`. |
 | `recover_adsbx_samples.js` | The free ADSBX monthly sample archive: one whole day per month, back to July 2016. **The only free route into 2022.** |
 | `ingest_github_backup.js` | Ingests traces out of an adsb.lol GitHub Release tarball — the off-site backup of adsb.lol's own archive. |
+| `flightaware_activity.js` | A fifth free route. FlightAware serves scripts (200) and ships its activity log server-rendered in `trackpollBootstrap` — named airports and actual off/on times, no key. **Reaches about one week back**, so it is a CURRENT-activity source, not a recovery route. |
 | `control_page_probe.js` | **RUN THIS BEFORE CALLING ANY 403 A REMOVAL.** Asks the same five tracking sites about five aircraft with nothing to do with this case. Writes `../data/recovery/page_control_probe.json`. |
 | `extract_wayback_flights.py` | Re-parses the archived tracking-site HTML into flight rows properly, superseding the inline parse in `recover_erased.js`. |
 | `build_recovery_report.py` | Assembles everything on disk into `../data/recovery/fleet_recovery_matrix.json` and prints the per-aircraft markdown tables the site publishes. |
