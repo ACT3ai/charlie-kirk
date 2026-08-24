@@ -1,0 +1,31 @@
+{
+  "retrieved_utc": "2026-08-24T16:23:44.690Z",
+  "source": "airplanes-live",
+  "source_role": "BACKUP ARCHIVE — independent volunteer network",
+  "url": "https://globe.airplanes.live/globe_history/2025/09/02/traces/85/trace_full_a00c85.json",
+  "http_status": 200,
+  "bytes": 124664,
+  "tail": "N102DZ",
+  "hex": "a00c85",
+  "utc_date": "2025-09-02",
+  "summary": {
+    "registration": "N102DZ",
+    "type": "GLF5",
+    "icao": "a00c85",
+    "points": 782,
+    "first_seen_utc": "2025-09-02T21:38:41.180Z",
+    "first_pos": [
+      33.619091,
+      -111.916239
+    ],
+    "first_on_ground": true,
+    "last_seen_utc": "2025-09-02T22:54:45.690Z",
+    "last_pos": [
+      36.317589,
+      -119.39164
+    ],
+    "last_on_ground": false,
+    "wheels_up_utc": "2025-09-02T21:44:05.370Z",
+    "wheels_down_utc": null
+  }
+}

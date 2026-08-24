@@ -126,18 +126,70 @@ checks — and it deserves to be.
 
 ## What we got so far
 
-**Nothing yet.** The target list is built, the tooling is installed, and no capture has been made.
-`apis/browser_capture/captures/` is empty and this section will say so until it is not.
+**No browser captures yet.** `apis/browser_capture/captures/` is empty and this section will say so
+until it is not.
+
+But the Internet Archive half of the job has been run, and it produced the most uncomfortable finding
+on this page.
+
+### Nobody archived the evidence
+
+30 target URLs checked against the Internet Archive CDX API on **24 August 2026** — the tracking-site
+pages for the five Egyptian tails and T7-ELL across Flightradar24, ADS-B Exchange, FlightAware,
+RadarBox and Planespotters.
+
+**22 of the 30 have zero snapshots.** Including both of these:
+
+| Page | Snapshots | Range |
+|---|---|---|
+| **Flightradar24 — SU-BTT** | **0** | **never captured** |
+| **ADS-B Exchange — SU-BTT** | **0** | **never captured** |
+| Flightradar24 — SU-BND | 2 | Oct 2025 – Nov 2025 |
+| Flightradar24 — SU-BTU | 1 | Aug 2022 |
+| Flightradar24 — SU-BGM | 1 | May 2020 |
+| Flightradar24 — SU-BTV, T7-ELL | 0 | never captured |
+| ADS-B Exchange — SU-BTU / SU-BTV / T7-ELL | 3 each | 2022 – 2023 |
+| ADS-B Exchange — SU-BND / SU-BGM | 2 / 1 | 2022 |
+| FlightAware — all five | 0 | never captured |
+| RadarBox — all five | 0 | never captured |
+| Planespotters — all five | 0 | never captured |
+
+**SU-BTT is the lead aircraft of the entire following claim, and neither its Flightradar24
+aircraft-history page nor its ADS-B Exchange page was ever archived** — while all four of the other
+Egyptian tails have at least one snapshot of one or the other. Not before the claim, not during it,
+not after.
+
+The two SU-BND snapshots that do exist are both dated **after** the October 2025 broadcast that
+launched the claim. They record the reaction, not the evidence.
+
+Every ADS-B Exchange snapshot predates the claim by two to three years, so none of them shows what a
+tracker was looking at in autumn 2025 either.
+
+**What this means, stated carefully.** It does not mean anything was removed. It means that for the
+aircraft at the centre of this case **there is currently no independent record of what the tracking
+sites displayed at the time the claims were made** — so "the page changed" cannot be tested, in
+either direction, for the tail that matters most.
+
+**And one caveat that must travel with the table.** The CDX API matches exact URL strings. A page
+archived under a slightly different URL form would not appear here. "Zero snapshots for this URL" is
+not the same as "never archived anywhere", and this table should be re-run against URL variants
+before anybody leans on it.
+
+Raw responses: `apis/public_open_source/data/wayback/`.
 
 ## What we did NOT get
 
 * **No captures at all**, of any site, on any aircraft. 128 targets, none done.
-* **No archive comparison run** against any original screenshot. The `wayback.js` client exists and
-  has not been pointed at the target list.
+* **No URL-variant sweep.** The zero-snapshot result above needs re-running against trailing slashes,
+  alternate paths and the sites' older URL schemes before it is quotable.
 * **No copy of the original screenshots** the claims were read off, with their own provenance —
-  which post, which date, which account. **Without those, "the page changed" has nothing to be
-  compared against**, and that is the first gap to close on this page.
+  which post, which date, which account. Given that the Archive holds nothing for SU-BTT, **those
+  screenshots may now be the only record of what the page showed**, which makes collecting them with
+  their provenance the single most urgent task on this page.
 * **No record of which tracked tails, if any, appear on a vendor blocking list.**
+* **No capture of the sites that are now closed** — the ADS-B Exchange historical pages and the
+  airplanes.live API — as they appear today, showing the paywall and the gate. Those are quick and
+  should be done first.
 
 ## Related
 
