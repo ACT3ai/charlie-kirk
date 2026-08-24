@@ -1,0 +1,2566 @@
+{
+  "generated_utc": "2026-08-24T16:23:44.690Z",
+  "windows": [
+    {
+      "from": "2025-09-01",
+      "to": "2025-09-16",
+      "why": "the September 2025 window — the fortnight the case turns on"
+    },
+    {
+      "from": "2025-10-08",
+      "to": "2025-10-16",
+      "why": "the adsb.lol 403 BAND — dates the primary archive refuses, incl. the 13 Oct Sharm el-Sheikh tarmac claim"
+    },
+    {
+      "from": "2026-04-25",
+      "to": "2026-06-05",
+      "why": "around the reported MAY 2026 FlightRadar24 removal of N102DZ"
+    }
+  ],
+  "tails": {
+    "N102DZ": {
+      "hex": "a00c85",
+      "side": "kirk",
+      "archives": [
+        {
+          "tail": "N102DZ",
+          "hex": "a00c85",
+          "date": "2025-09-01",
+          "sources": {
+            "airplanes-live": {
+              "http": 200,
+              "bytes": 115012,
+              "summary": {
+                "registration": "N102DZ",
+                "type": "GLF5",
+                "icao": "a00c85",
+                "points": 720,
+                "first_seen_utc": "2025-09-01T17:15:57.190Z",
+                "first_pos": [
+                  33.620579,
+                  -111.914347
+                ],
+                "first_on_ground": true,
+                "last_seen_utc": "2025-09-01T18:28:08.670Z",
+                "last_pos": [
+                  33.619469,
+                  -111.91729
+                ],
+                "last_on_ground": true,
+                "wheels_up_utc": "2025-09-01T17:20:50.140Z",
+                "wheels_down_utc": "2025-09-01T18:25:40.890Z"
+              }
+            },
+            "adsb-lol": {
+              "http": 200,
+              "bytes": 110573,
+              "summary": {
+                "registration": "N102DZ",
+                "type": "GLF5",
+                "icao": "a00c85",
+                "points": 687,
+                "first_seen_utc": "2025-09-01T17:15:57.190Z",
+                "first_pos": [
+                  33.620579,
+                  -111.914347
+                ],
+                "first_on_ground": true,
+                "last_seen_utc": "2025-09-01T18:28:08.670Z",
+                "last_pos": [
+                  33.619469,
+                  -111.91729
+                ],
+                "last_on_ground": true,
+                "wheels_up_utc": "2025-09-01T17:20:50.140Z",
+                "wheels_down_utc": "2025-09-01T18:25:40.890Z"
+              }
+            }
+          },
+          "verdict": "BOTH_HAVE_IT",
+          "richer": 1
+        },
+        {
+          "tail": "N102DZ",
+          "hex": "a00c85",
+          "date": "2025-09-02",
+          "sources": {
+            "airplanes-live": {
+              "http": 200,
+              "bytes": 124664,
+              "summary": {
+                "registration": "N102DZ",
+                "type": "GLF5",
+                "icao": "a00c85",
+                "points": 782,
+                "first_seen_utc": "2025-09-02T21:38:41.180Z",
+                "first_pos": [
+                  33.619091,
+                  -111.916239
+                ],
+                "first_on_ground": true,
+                "last_seen_utc": "2025-09-02T22:54:45.690Z",
+                "last_pos": [
+                  36.317589,
+                  -119.39164
+                ],
+                "last_on_ground": false,
+                "wheels_up_utc": "2025-09-02T21:44:05.370Z",
+                "wheels_down_utc": null
+              }
+            },
+            "adsb-lol": {
+              "http": 200,
+              "bytes": 91414,
+              "summary": {
+                "registration": "N102DZ",
+                "type": "GLF5",
+                "icao": "a00c85",
+                "points": 569,
+                "first_seen_utc": "2025-09-02T21:38:41.180Z",
+                "first_pos": [
+                  33.619091,
+                  -111.916239
+                ],
+                "first_on_ground": true,
+                "last_seen_utc": "2025-09-02T22:41:17.300Z",
+                "last_pos": [
+                  35.469733,
+                  -118.820703
+                ],
+                "last_on_ground": false,
+                "wheels_up_utc": "2025-09-02T21:44:05.360Z",
+                "wheels_down_utc": null
+              }
+            }
+          },
+          "verdict": "BOTH_HAVE_IT",
+          "richer": 1.4
+        },
+        {
+          "tail": "N102DZ",
+          "hex": "a00c85",
+          "date": "2025-09-03",
+          "sources": {
+            "airplanes-live": {
+              "http": 200,
+              "bytes": 128654,
+              "summary": {
+                "registration": "N102DZ",
+                "type": "GLF5",
+                "icao": "a00c85",
+                "points": 801,
+                "first_seen_utc": "2025-09-03T04:29:19.490Z",
+                "first_pos": [
+                  36.314072,
+                  -119.387169
+                ],
+                "first_on_ground": false,
+                "last_seen_utc": "2025-09-03T05:43:03.420Z",
+                "last_pos": [
+                  33.619354,
+                  -111.916604
+                ],
+                "last_on_ground": true,
+                "wheels_up_utc": null,
+                "wheels_down_utc": "2025-09-03T05:41:14.660Z"
+              }
+            },
+            "adsb-lol": {
+              "http": 200,
+              "bytes": 94716,
+              "summary": {
+                "registration": "N102DZ",
+                "type": "GLF5",
+                "icao": "a00c85",
+                "points": 590,
+                "first_seen_utc": "2025-09-03T04:37:37.120Z",
+                "first_pos": [
+                  35.674026,
+                  -119.007397
+                ],
+                "first_on_ground": false,
+                "last_seen_utc": "2025-09-03T05:43:03.410Z",
+                "last_pos": [
+                  33.619354,
+                  -111.916604
+                ],
+                "last_on_ground": true,
+                "wheels_up_utc": null,
+                "wheels_down_utc": "2025-09-03T05:41:14.660Z"
+              }
+            }
+          },
+          "verdict": "BOTH_HAVE_IT",
+          "richer": 1.4
+        },
+        {
+          "tail": "N102DZ",
+          "hex": "a00c85",
+          "date": "2025-09-04",
+          "sources": {
+            "airplanes-live": {
+              "http": 200,
+              "bytes": 479896,
+              "summary": {
+                "registration": "N102DZ",
+                "type": "GLF5",
+                "icao": "a00c85",
+                "points": 3012,
+                "first_seen_utc": "2025-09-04T03:05:08.000Z",
+                "first_pos": [
+                  33.619118,
+                  -111.916265
+                ],
+                "first_on_ground": true,
+                "last_seen_utc": "2025-09-04T23:59:55.290Z",
+                "last_pos": [
+                  32.297745,
+                  -97.442523
+                ],
+                "last_on_ground": false,
+                "wheels_up_utc": "2025-09-04T03:08:59.440Z",
+                "wheels_down_utc": "2025-09-04T21:13:35.780Z"
+              }
+            },
+            "adsb-lol": {
+              "http": 200,
+              "bytes": 410244,
+              "summary": {
+                "registration": "N102DZ",
+                "type": "GLF5",
+                "icao": "a00c85",
+                "points": 2576,
+                "first_seen_utc": "2025-09-04T03:05:08.000Z",
+                "first_pos": [
+                  33.619118,
+                  -111.916265
+                ],
+                "first_on_ground": true,
+                "last_seen_utc": "2025-09-04T23:59:59.910Z",
+                "last_pos": [
+                  32.300537,
+                  -97.435767
+                ],
+                "last_on_ground": false,
+                "wheels_up_utc": "2025-09-04T03:08:59.440Z",
+                "wheels_down_utc": "2025-09-04T21:13:35.780Z"
+              }
+            }
+          },
+          "verdict": "BOTH_HAVE_IT",
+          "richer": 1.2
+        },
+        {
+          "tail": "N102DZ",
+          "hex": "a00c85",
+          "date": "2025-09-05",
+          "sources": {
+            "airplanes-live": {
+              "http": 200,
+              "bytes": 234101,
+              "summary": {
+                "registration": "N102DZ",
+                "type": "GLF5",
+                "icao": "a00c85",
+                "points": 1482,
+                "first_seen_utc": "2025-09-05T00:00:05.280Z",
+                "first_pos": [
+                  32.303787,
+                  -97.427911
+                ],
+                "first_on_ground": false,
+                "last_seen_utc": "2025-09-05T03:13:33.780Z",
+                "last_pos": [
+                  33.619374,
+                  -111.91721
+                ],
+                "last_on_ground": true,
+                "wheels_up_utc": "2025-09-05T00:57:04.050Z",
+                "wheels_down_utc": "2025-09-05T03:10:40.200Z"
+              }
+            },
+            "adsb-lol": {
+              "http": 200,
+              "bytes": 197923,
+              "summary": {
+                "registration": "N102DZ",
+                "type": "GLF5",
+                "icao": "a00c85",
+                "points": 1260,
+                "first_seen_utc": "2025-09-05T00:00:19.730Z",
+                "first_pos": [
+                  32.312439,
+                  -97.406873
+                ],
+                "first_on_ground": false,
+                "last_seen_utc": "2025-09-05T03:13:40.280Z",
+                "last_pos": [
+                  33.619444,
+                  -111.917295
+                ],
+                "last_on_ground": true,
+                "wheels_up_utc": "2025-09-05T00:56:52.570Z",
+                "wheels_down_utc": "2025-09-05T03:10:40.190Z"
+              }
+            }
+          },
+          "verdict": "BOTH_HAVE_IT",
+          "richer": 1.2
+        },
+        {
+          "tail": "N102DZ",
+          "hex": "a00c85",
+          "date": "2025-09-06",
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 860,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT",
+          "richer": 1.6
+        },
+        {
+          "tail": "N102DZ",
+          "hex": "a00c85",
+          "date": "2025-09-07",
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 859,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT",
+          "richer": 1.6
+        },
+        {
+          "tail": "N102DZ",
+          "hex": "a00c85",
+          "date": "2025-09-08",
+          "sources": {
+            "airplanes-live": {
+              "http": 200,
+              "bytes": 228962,
+              "summary": {
+                "registration": "N102DZ",
+                "type": "GLF5",
+                "icao": "a00c85",
+                "points": 1427,
+                "first_seen_utc": "2025-09-08T00:20:40.410Z",
+                "first_pos": [
+                  33.613449,
+                  -111.961446
+                ],
+                "first_on_ground": false,
+                "last_seen_utc": "2025-09-08T03:45:25.980Z",
+                "last_pos": [
+                  33.618921,
+                  -111.915722
+                ],
+                "last_on_ground": true,
+                "wheels_up_utc": "2025-09-08T02:50:50.810Z",
+                "wheels_down_utc": "2025-09-08T03:44:36.940Z"
+              }
+            },
+            "adsb-lol": {
+              "http": 200,
+              "bytes": 199179,
+              "summary": {
+                "registration": "N102DZ",
+                "type": "GLF5",
+                "icao": "a00c85",
+                "points": 1238,
+                "first_seen_utc": "2025-09-08T00:20:40.400Z",
+                "first_pos": [
+                  33.613449,
+                  -111.961446
+                ],
+                "first_on_ground": false,
+                "last_seen_utc": "2025-09-08T03:45:25.980Z",
+                "last_pos": [
+                  33.618921,
+                  -111.915722
+                ],
+                "last_on_ground": true,
+                "wheels_up_utc": "2025-09-08T02:50:52.250Z",
+                "wheels_down_utc": "2025-09-08T03:44:36.930Z"
+              }
+            }
+          },
+          "verdict": "BOTH_HAVE_IT",
+          "richer": 1.1
+        },
+        {
+          "tail": "N102DZ",
+          "hex": "a00c85",
+          "date": "2025-09-09",
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 860,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT",
+          "richer": 1.6
+        },
+        {
+          "tail": "N102DZ",
+          "hex": "a00c85",
+          "date": "2025-09-10",
+          "sources": {
+            "airplanes-live": {
+              "http": 200,
+              "bytes": 490226,
+              "summary": {
+                "registration": "N102DZ",
+                "type": "GLF5",
+                "icao": "a00c85",
+                "points": 3068,
+                "first_seen_utc": "2025-09-10T14:02:02.300Z",
+                "first_pos": [
+                  33.620865,
+                  -111.915497
+                ],
+                "first_on_ground": true,
+                "last_seen_utc": "2025-09-10T23:47:54.380Z",
+                "last_pos": [
+                  34.213703,
+                  -119.089821
+                ],
+                "last_on_ground": true,
+                "wheels_up_utc": "2025-09-10T14:12:35.980Z",
+                "wheels_down_utc": "2025-09-10T23:47:53.730Z"
+              }
+            },
+            "adsb-lol": {
+              "http": 200,
+              "bytes": 409776,
+              "summary": {
+                "registration": "N102DZ",
+                "type": "GLF5",
+                "icao": "a00c85",
+                "points": 2558,
+                "first_seen_utc": "2025-09-10T14:01:47.060Z",
+                "first_pos": [
+                  33.621025,
+                  -111.91523
+                ],
+                "first_on_ground": true,
+                "last_seen_utc": "2025-09-10T23:47:54.370Z",
+                "last_pos": [
+                  34.213703,
+                  -119.089821
+                ],
+                "last_on_ground": true,
+                "wheels_up_utc": "2025-09-10T14:12:34.690Z",
+                "wheels_down_utc": "2025-09-10T23:47:53.710Z"
+              }
+            }
+          },
+          "verdict": "BOTH_HAVE_IT",
+          "richer": 1.2
+        },
+        {
+          "tail": "N102DZ",
+          "hex": "a00c85",
+          "date": "2025-09-11",
+          "sources": {
+            "airplanes-live": {
+              "http": 200,
+              "bytes": 272964,
+              "summary": {
+                "registration": "N102DZ",
+                "type": "GLF5",
+                "icao": "a00c85",
+                "points": 1717,
+                "first_seen_utc": "2025-09-11T00:21:21.320Z",
+                "first_pos": [
+                  34.213707,
+                  -119.094028
+                ],
+                "first_on_ground": false,
+                "last_seen_utc": "2025-09-11T17:20:40.860Z",
+                "last_pos": [
+                  33.426415,
+                  -112.023104
+                ],
+                "last_on_ground": true,
+                "wheels_up_utc": "2025-09-11T16:03:29.100Z",
+                "wheels_down_utc": "2025-09-11T17:15:28.210Z"
+              }
+            },
+            "adsb-lol": {
+              "http": 200,
+              "bytes": 247308,
+              "summary": {
+                "registration": "N102DZ",
+                "type": "GLF5",
+                "icao": "a00c85",
+                "points": 1554,
+                "first_seen_utc": "2025-09-11T00:21:21.310Z",
+                "first_pos": [
+                  34.213707,
+                  -119.094028
+                ],
+                "first_on_ground": false,
+                "last_seen_utc": "2025-09-11T17:20:40.850Z",
+                "last_pos": [
+                  33.426415,
+                  -112.023104
+                ],
+                "last_on_ground": true,
+                "wheels_up_utc": "2025-09-11T16:03:29.100Z",
+                "wheels_down_utc": "2025-09-11T17:15:28.190Z"
+              }
+            }
+          },
+          "verdict": "BOTH_HAVE_IT",
+          "richer": 1.1
+        },
+        {
+          "tail": "N102DZ",
+          "hex": "a00c85",
+          "date": "2025-09-12",
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 860,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT",
+          "richer": 1.6
+        },
+        {
+          "tail": "N102DZ",
+          "hex": "a00c85",
+          "date": "2025-09-13",
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 859,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT",
+          "richer": 1.6
+        },
+        {
+          "tail": "N102DZ",
+          "hex": "a00c85",
+          "date": "2025-09-14",
+          "sources": {
+            "airplanes-live": {
+              "http": 200,
+              "bytes": 505069,
+              "summary": {
+                "registration": "N102DZ",
+                "type": "GLF5",
+                "icao": "a00c85",
+                "points": 3197,
+                "first_seen_utc": "2025-09-14T14:41:36.870Z",
+                "first_pos": [
+                  33.427757,
+                  -112.025157
+                ],
+                "first_on_ground": true,
+                "last_seen_utc": "2025-09-14T23:59:53.400Z",
+                "last_pos": [
+                  39.713715,
+                  -108.462158
+                ],
+                "last_on_ground": false,
+                "wheels_up_utc": "2025-09-14T14:42:55.750Z",
+                "wheels_down_utc": "2025-09-14T19:44:48.080Z"
+              }
+            },
+            "adsb-lol": {
+              "http": 200,
+              "bytes": 347483,
+              "summary": {
+                "registration": "N102DZ",
+                "type": "GLF5",
+                "icao": "a00c85",
+                "points": 2190,
+                "first_seen_utc": "2025-09-14T14:41:36.850Z",
+                "first_pos": [
+                  33.427757,
+                  -112.025157
+                ],
+                "first_on_ground": true,
+                "last_seen_utc": "2025-09-14T23:59:51.570Z",
+                "last_pos": [
+                  39.715576,
+                  -108.464375
+                ],
+                "last_on_ground": false,
+                "wheels_up_utc": "2025-09-14T14:42:55.620Z",
+                "wheels_down_utc": "2025-09-14T14:49:08.590Z"
+              }
+            }
+          },
+          "verdict": "BOTH_HAVE_IT",
+          "richer": 1.5
+        },
+        {
+          "tail": "N102DZ",
+          "hex": "a00c85",
+          "date": "2025-09-15",
+          "sources": {
+            "airplanes-live": {
+              "http": 200,
+              "bytes": 331754,
+              "summary": {
+                "registration": "N102DZ",
+                "type": "GLF5",
+                "icao": "a00c85",
+                "points": 2094,
+                "first_seen_utc": "2025-09-15T00:04:39.200Z",
+                "first_pos": [
+                  39.222169,
+                  -107.891785
+                ],
+                "first_on_ground": false,
+                "last_seen_utc": "2025-09-15T04:29:05.760Z",
+                "last_pos": [
+                  33.628278,
+                  -111.905465
+                ],
+                "last_on_ground": true,
+                "wheels_up_utc": "2025-09-15T02:30:16.460Z",
+                "wheels_down_utc": "2025-09-15T04:27:40.400Z"
+              }
+            },
+            "adsb-lol": {
+              "http": 200,
+              "bytes": 256390,
+              "summary": {
+                "registration": "N102DZ",
+                "type": "GLF5",
+                "icao": "a00c85",
+                "points": 1621,
+                "first_seen_utc": "2025-09-15T00:00:11.280Z",
+                "first_pos": [
+                  39.681965,
+                  -108.424988
+                ],
+                "first_on_ground": false,
+                "last_seen_utc": "2025-09-15T04:29:05.760Z",
+                "last_pos": [
+                  33.628278,
+                  -111.905465
+                ],
+                "last_on_ground": true,
+                "wheels_up_utc": "2025-09-15T02:30:16.580Z",
+                "wheels_down_utc": "2025-09-15T04:27:40.340Z"
+              }
+            }
+          },
+          "verdict": "BOTH_HAVE_IT",
+          "richer": 1.3
+        },
+        {
+          "tail": "N102DZ",
+          "hex": "a00c85",
+          "date": "2025-09-16",
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 859,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT",
+          "richer": 1.6
+        },
+        {
+          "tail": "N102DZ",
+          "hex": "a00c85",
+          "date": "2025-10-08",
+          "sources": {
+            "airplanes-live": {
+              "http": 200,
+              "bytes": 255168,
+              "summary": {
+                "registration": "N102DZ",
+                "type": "GLF5",
+                "icao": "a00c85",
+                "points": 1607,
+                "first_seen_utc": "2025-10-08T20:03:27.680Z",
+                "first_pos": [
+                  33.620119,
+                  -111.914992
+                ],
+                "first_on_ground": true,
+                "last_seen_utc": "2025-10-08T23:59:59.820Z",
+                "last_pos": [
+                  43.544172,
+                  -72.074759
+                ],
+                "last_on_ground": false,
+                "wheels_up_utc": "2025-10-08T20:09:11.150Z",
+                "wheels_down_utc": null
+              }
+            },
+            "adsb-lol": {
+              "http": 200,
+              "bytes": 160035,
+              "summary": {
+                "registration": "N102DZ",
+                "type": "GLF5",
+                "icao": "a00c85",
+                "points": 996,
+                "first_seen_utc": "2025-10-08T20:03:27.680Z",
+                "first_pos": [
+                  33.620119,
+                  -111.914992
+                ],
+                "first_on_ground": true,
+                "last_seen_utc": "2025-10-08T23:59:59.850Z",
+                "last_pos": [
+                  43.544172,
+                  -72.074759
+                ],
+                "last_on_ground": false,
+                "wheels_up_utc": "2025-10-08T20:09:12.970Z",
+                "wheels_down_utc": null
+              }
+            }
+          },
+          "verdict": "BOTH_HAVE_IT",
+          "richer": 1.6
+        },
+        {
+          "tail": "N102DZ",
+          "hex": "a00c85",
+          "date": "2025-10-09",
+          "sources": {
+            "airplanes-live": {
+              "http": 200,
+              "bytes": 422451,
+              "summary": {
+                "registration": "N102DZ",
+                "type": "GLF5",
+                "icao": "a00c85",
+                "points": 2658,
+                "first_seen_utc": "2025-10-09T00:00:08.240Z",
+                "first_pos": [
+                  43.54217,
+                  -72.050171
+                ],
+                "first_on_ground": false,
+                "last_seen_utc": "2025-10-09T19:03:00.620Z",
+                "last_pos": [
+                  33.619102,
+                  -111.916646
+                ],
+                "last_on_ground": true,
+                "wheels_up_utc": null,
+                "wheels_down_utc": "2025-10-09T19:00:27.640Z"
+              }
+            },
+            "adsb-lol": {
+              "http": 200,
+              "bytes": 275268,
+              "summary": {
+                "registration": "N102DZ",
+                "type": "GLF5",
+                "icao": "a00c85",
+                "points": 1726,
+                "first_seen_utc": "2025-10-09T00:00:11.650Z",
+                "first_pos": [
+                  43.541336,
+                  -72.039972
+                ],
+                "first_on_ground": false,
+                "last_seen_utc": "2025-10-09T19:03:00.620Z",
+                "last_pos": [
+                  33.619102,
+                  -111.916646
+                ],
+                "last_on_ground": true,
+                "wheels_up_utc": null,
+                "wheels_down_utc": "2025-10-09T19:00:05.660Z"
+              }
+            }
+          },
+          "verdict": "BOTH_HAVE_IT",
+          "richer": 1.5
+        },
+        {
+          "tail": "N102DZ",
+          "hex": "a00c85",
+          "date": "2025-10-10",
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 860,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT",
+          "richer": 1.6
+        },
+        {
+          "tail": "N102DZ",
+          "hex": "a00c85",
+          "date": "2025-10-11",
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 860,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT",
+          "richer": 1.6
+        },
+        {
+          "tail": "N102DZ",
+          "hex": "a00c85",
+          "date": "2025-10-12",
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 860,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 403,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT",
+          "richer": 1.6
+        },
+        {
+          "tail": "N102DZ",
+          "hex": "a00c85",
+          "date": "2025-10-13",
+          "sources": {
+            "airplanes-live": {
+              "http": 200,
+              "bytes": 299026,
+              "summary": {
+                "registration": "N102DZ",
+                "type": "GLF5",
+                "icao": "a00c85",
+                "points": 1886,
+                "first_seen_utc": "2025-10-13T16:13:17.440Z",
+                "first_pos": [
+                  33.619263,
+                  -111.916968
+                ],
+                "first_on_ground": true,
+                "last_seen_utc": "2025-10-13T20:32:20.300Z",
+                "last_pos": [
+                  38.96825,
+                  -77.454346
+                ],
+                "last_on_ground": true,
+                "wheels_up_utc": "2025-10-13T16:42:58.460Z",
+                "wheels_down_utc": "2025-10-13T20:27:26.560Z"
+              }
+            },
+            "adsb-lol": {
+              "http": 403,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "RECOVERED_ONLY_ON_BACKUP",
+          "richer": 545.7
+        },
+        {
+          "tail": "N102DZ",
+          "hex": "a00c85",
+          "date": "2025-10-14",
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 859,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 403,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT",
+          "richer": 1.6
+        },
+        {
+          "tail": "N102DZ",
+          "hex": "a00c85",
+          "date": "2025-10-15",
+          "sources": {
+            "airplanes-live": {
+              "http": 200,
+              "bytes": 234765,
+              "summary": {
+                "registration": "N102DZ",
+                "type": "GLF5",
+                "icao": "a00c85",
+                "points": 1492,
+                "first_seen_utc": "2025-10-15T20:34:04.300Z",
+                "first_pos": [
+                  38.967563,
+                  -77.455765
+                ],
+                "first_on_ground": true,
+                "last_seen_utc": "2025-10-15T23:59:50.890Z",
+                "last_pos": [
+                  36.342957,
+                  -105.217209
+                ],
+                "last_on_ground": false,
+                "wheels_up_utc": "2025-10-15T20:43:58.680Z",
+                "wheels_down_utc": null
+              }
+            },
+            "adsb-lol": {
+              "http": 403,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "RECOVERED_ONLY_ON_BACKUP",
+          "richer": 428.4
+        },
+        {
+          "tail": "N102DZ",
+          "hex": "a00c85",
+          "date": "2025-10-16",
+          "sources": {
+            "airplanes-live": {
+              "http": 200,
+              "bytes": 93320,
+              "summary": {
+                "registration": "N102DZ",
+                "type": "GLF5",
+                "icao": "a00c85",
+                "points": 596,
+                "first_seen_utc": "2025-10-16T00:00:00.760Z",
+                "first_pos": [
+                  36.337979,
+                  -105.23979
+                ],
+                "first_on_ground": false,
+                "last_seen_utc": "2025-10-16T01:04:00.660Z",
+                "last_pos": [
+                  33.619686,
+                  -111.916982
+                ],
+                "last_on_ground": true,
+                "wheels_up_utc": null,
+                "wheels_down_utc": "2025-10-16T01:02:18.660Z"
+              }
+            },
+            "adsb-lol": {
+              "http": 403,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "RECOVERED_ONLY_ON_BACKUP",
+          "richer": 170.3
+        },
+        {
+          "tail": "N102DZ",
+          "hex": "a00c85",
+          "date": "2026-04-25",
+          "sources": {
+            "airplanes-live": {
+              "http": 200,
+              "bytes": 298912,
+              "summary": {
+                "registration": "N102DZ",
+                "type": "GLF5",
+                "icao": "a00c85",
+                "points": 1830,
+                "first_seen_utc": "2026-04-25T03:14:16.720Z",
+                "first_pos": [
+                  40.854847,
+                  -74.062744
+                ],
+                "first_on_ground": true,
+                "last_seen_utc": "2026-04-25T07:08:12.310Z",
+                "last_pos": [
+                  29.698826,
+                  -98.039206
+                ],
+                "last_on_ground": true,
+                "wheels_up_utc": "2026-04-25T03:46:50.720Z",
+                "wheels_down_utc": "2026-04-25T07:05:26.750Z"
+              }
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "RECOVERED_ONLY_ON_BACKUP",
+          "richer": 545.5
+        },
+        {
+          "tail": "N102DZ",
+          "hex": "a00c85",
+          "date": "2026-04-26",
+          "sources": {
+            "airplanes-live": {
+              "http": 200,
+              "bytes": 418875,
+              "summary": {
+                "registration": "N102DZ",
+                "type": "GLF5",
+                "icao": "a00c85",
+                "points": 2654,
+                "first_seen_utc": "2026-04-26T14:17:16.160Z",
+                "first_pos": [
+                  29.699408,
+                  -98.039165
+                ],
+                "first_on_ground": true,
+                "last_seen_utc": "2026-04-26T21:24:40.680Z",
+                "last_pos": [
+                  44.928005,
+                  -93.055374
+                ],
+                "last_on_ground": false,
+                "wheels_up_utc": "2026-04-26T14:22:44.810Z",
+                "wheels_down_utc": "2026-04-26T16:24:56.850Z"
+              }
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "RECOVERED_ONLY_ON_BACKUP",
+          "richer": 764.4
+        },
+        {
+          "tail": "N102DZ",
+          "hex": "a00c85",
+          "date": "2026-04-27",
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 860,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT",
+          "richer": 1.6
+        },
+        {
+          "tail": "N102DZ",
+          "hex": "a00c85",
+          "date": "2026-04-28",
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 859,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT",
+          "richer": 1.6
+        },
+        {
+          "tail": "N102DZ",
+          "hex": "a00c85",
+          "date": "2026-04-29",
+          "sources": {
+            "airplanes-live": {
+              "http": 200,
+              "bytes": 178257,
+              "summary": {
+                "registration": "N102DZ",
+                "type": "GLF5",
+                "icao": "a00c85",
+                "points": 1121,
+                "first_seen_utc": "2026-04-29T21:14:53.110Z",
+                "first_pos": [
+                  44.937899,
+                  -93.064516
+                ],
+                "first_on_ground": false,
+                "last_seen_utc": "2026-04-29T23:59:52.850Z",
+                "last_pos": [
+                  35.515494,
+                  -114.658229
+                ],
+                "last_on_ground": false,
+                "wheels_up_utc": null,
+                "wheels_down_utc": null
+              }
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "RECOVERED_ONLY_ON_BACKUP",
+          "richer": 325.3
+        },
+        {
+          "tail": "N102DZ",
+          "hex": "a00c85",
+          "date": "2026-04-30",
+          "sources": {
+            "airplanes-live": {
+              "http": 200,
+              "bytes": 408819,
+              "summary": {
+                "registration": "N102DZ",
+                "type": "GLF5",
+                "icao": "a00c85",
+                "points": 2594,
+                "first_seen_utc": "2026-04-30T00:00:02.080Z",
+                "first_pos": [
+                  35.507487,
+                  -114.674767
+                ],
+                "first_on_ground": false,
+                "last_seen_utc": "2026-04-30T22:19:01.810Z",
+                "last_pos": [
+                  40.855396,
+                  -74.062195
+                ],
+                "last_on_ground": true,
+                "wheels_up_utc": "2026-04-30T17:33:52.340Z",
+                "wheels_down_utc": "2026-04-30T21:58:34.990Z"
+              }
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "RECOVERED_ONLY_ON_BACKUP",
+          "richer": 746
+        },
+        {
+          "tail": "N102DZ",
+          "hex": "a00c85",
+          "date": "2026-05-01",
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 860,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT",
+          "richer": 1.6
+        },
+        {
+          "tail": "N102DZ",
+          "hex": "a00c85",
+          "date": "2026-05-02",
+          "sources": {
+            "airplanes-live": {
+              "http": 200,
+              "bytes": 162123,
+              "summary": {
+                "registration": "N102DZ",
+                "type": "GLF5",
+                "icao": "a00c85",
+                "points": 1024,
+                "first_seen_utc": "2026-05-02T19:15:53.250Z",
+                "first_pos": [
+                  40.854675,
+                  -74.063126
+                ],
+                "first_on_ground": true,
+                "last_seen_utc": "2026-05-02T21:00:51.650Z",
+                "last_pos": [
+                  38.153748,
+                  -85.719872
+                ],
+                "last_on_ground": false,
+                "wheels_up_utc": "2026-05-02T19:21:31.990Z",
+                "wheels_down_utc": null
+              }
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "RECOVERED_ONLY_ON_BACKUP",
+          "richer": 295.8
+        },
+        {
+          "tail": "N102DZ",
+          "hex": "a00c85",
+          "date": "2026-05-03",
+          "sources": {
+            "airplanes-live": {
+              "http": 200,
+              "bytes": 527904,
+              "summary": {
+                "registration": "N102DZ",
+                "type": "GLF5",
+                "icao": "a00c85",
+                "points": 3286,
+                "first_seen_utc": "2026-05-03T16:05:44.060Z",
+                "first_pos": [
+                  38.159475,
+                  -85.7219
+                ],
+                "first_on_ground": false,
+                "last_seen_utc": "2026-05-03T23:59:50.620Z",
+                "last_pos": [
+                  37.470566,
+                  -110.443278
+                ],
+                "last_on_ground": false,
+                "wheels_up_utc": "2026-05-03T18:42:07.690Z",
+                "wheels_down_utc": "2026-05-03T17:55:09.060Z"
+              }
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "RECOVERED_ONLY_ON_BACKUP",
+          "richer": 963.3
+        },
+        {
+          "tail": "N102DZ",
+          "hex": "a00c85",
+          "date": "2026-05-04",
+          "sources": {
+            "airplanes-live": {
+              "http": 200,
+              "bytes": 146824,
+              "summary": {
+                "registration": "N102DZ",
+                "type": "GLF5",
+                "icao": "a00c85",
+                "points": 926,
+                "first_seen_utc": "2026-05-04T00:00:00.190Z",
+                "first_pos": [
+                  37.463844,
+                  -110.465022
+                ],
+                "first_on_ground": false,
+                "last_seen_utc": "2026-05-04T01:57:07.150Z",
+                "last_pos": [
+                  33.6744,
+                  -117.871782
+                ],
+                "last_on_ground": true,
+                "wheels_up_utc": null,
+                "wheels_down_utc": "2026-05-04T01:20:03.290Z"
+              }
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "RECOVERED_ONLY_ON_BACKUP",
+          "richer": 267.9
+        },
+        {
+          "tail": "N102DZ",
+          "hex": "a00c85",
+          "date": "2026-05-05",
+          "sources": {
+            "airplanes-live": {
+              "http": 200,
+              "bytes": 63097,
+              "summary": {
+                "registration": "N102DZ",
+                "type": "GLF5",
+                "icao": "a00c85",
+                "points": 396,
+                "first_seen_utc": "2026-05-05T22:33:45.830Z",
+                "first_pos": [
+                  33.676998,
+                  -117.86954
+                ],
+                "first_on_ground": true,
+                "last_seen_utc": "2026-05-05T23:02:33.220Z",
+                "last_pos": [
+                  34.206207,
+                  -118.493028
+                ],
+                "last_on_ground": true,
+                "wheels_up_utc": "2026-05-05T22:37:24.630Z",
+                "wheels_down_utc": "2026-05-05T22:57:41.540Z"
+              }
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "RECOVERED_ONLY_ON_BACKUP",
+          "richer": 115.1
+        },
+        {
+          "tail": "N102DZ",
+          "hex": "a00c85",
+          "date": "2026-05-06",
+          "sources": {
+            "airplanes-live": {
+              "http": 200,
+              "bytes": 559176,
+              "summary": {
+                "registration": "N102DZ",
+                "type": "GLF5",
+                "icao": "a00c85",
+                "points": 3482,
+                "first_seen_utc": "2026-05-06T02:04:04.930Z",
+                "first_pos": [
+                  34.200963,
+                  -118.488564
+                ],
+                "first_on_ground": true,
+                "last_seen_utc": "2026-05-06T23:59:54.510Z",
+                "last_pos": [
+                  40.964387,
+                  -95.40209
+                ],
+                "last_on_ground": false,
+                "wheels_up_utc": "2026-05-06T02:14:24.540Z",
+                "wheels_down_utc": "2026-05-06T06:34:06.960Z"
+              }
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "RECOVERED_ONLY_ON_BACKUP",
+          "richer": 1020.4
+        },
+        {
+          "tail": "N102DZ",
+          "hex": "a00c85",
+          "date": "2026-05-07",
+          "sources": {
+            "airplanes-live": {
+              "http": 200,
+              "bytes": 697149,
+              "summary": {
+                "registration": "N102DZ",
+                "type": "GLF5",
+                "icao": "a00c85",
+                "points": 4370,
+                "first_seen_utc": "2026-05-07T00:00:04.260Z",
+                "first_pos": [
+                  40.959961,
+                  -95.426453
+                ],
+                "first_on_ground": false,
+                "last_seen_utc": "2026-05-07T23:55:56.170Z",
+                "last_pos": [
+                  33.619258,
+                  -111.916966
+                ],
+                "last_on_ground": true,
+                "wheels_up_utc": "2026-05-07T03:23:24.450Z",
+                "wheels_down_utc": "2026-05-07T23:46:33.810Z"
+              }
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "RECOVERED_ONLY_ON_BACKUP",
+          "richer": 1272.2
+        },
+        {
+          "tail": "N102DZ",
+          "hex": "a00c85",
+          "date": "2026-05-08",
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 859,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT",
+          "richer": 1.6
+        },
+        {
+          "tail": "N102DZ",
+          "hex": "a00c85",
+          "date": "2026-05-09",
+          "sources": {
+            "airplanes-live": {
+              "http": 200,
+              "bytes": 609945,
+              "summary": {
+                "registration": "N102DZ",
+                "type": "GLF5",
+                "icao": "a00c85",
+                "points": 3862,
+                "first_seen_utc": "2026-05-09T03:58:20.800Z",
+                "first_pos": [
+                  33.619148,
+                  -111.916309
+                ],
+                "first_on_ground": true,
+                "last_seen_utc": "2026-05-09T22:22:28.770Z",
+                "last_pos": [
+                  43.1259,
+                  -89.342128
+                ],
+                "last_on_ground": false,
+                "wheels_up_utc": "2026-05-09T04:03:32.080Z",
+                "wheels_down_utc": "2026-05-09T11:23:23.930Z"
+              }
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "RECOVERED_ONLY_ON_BACKUP",
+          "richer": 1113
+        },
+        {
+          "tail": "N102DZ",
+          "hex": "a00c85",
+          "date": "2026-05-10",
+          "sources": {
+            "airplanes-live": {
+              "http": 200,
+              "bytes": 517708,
+              "summary": {
+                "registration": "N102DZ",
+                "type": "GLF5",
+                "icao": "a00c85",
+                "points": 3180,
+                "first_seen_utc": "2026-05-10T15:52:37.360Z",
+                "first_pos": [
+                  43.140152,
+                  -89.331497
+                ],
+                "first_on_ground": false,
+                "last_seen_utc": "2026-05-10T23:47:35.340Z",
+                "last_pos": [
+                  46.00058,
+                  -103.663241
+                ],
+                "last_on_ground": false,
+                "wheels_up_utc": "2026-05-10T18:21:19.600Z",
+                "wheels_down_utc": "2026-05-10T20:09:48.450Z"
+              }
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "RECOVERED_ONLY_ON_BACKUP",
+          "richer": 944.7
+        },
+        {
+          "tail": "N102DZ",
+          "hex": "a00c85",
+          "date": "2026-05-11",
+          "sources": {
+            "airplanes-live": {
+              "http": 200,
+              "bytes": 420879,
+              "summary": {
+                "registration": "N102DZ",
+                "type": "GLF5",
+                "icao": "a00c85",
+                "points": 2651,
+                "first_seen_utc": "2026-05-11T00:06:56.050Z",
+                "first_pos": [
+                  46.592331,
+                  -106.915797
+                ],
+                "first_on_ground": false,
+                "last_seen_utc": "2026-05-11T23:23:22.340Z",
+                "last_pos": [
+                  36.098557,
+                  -115.161066
+                ],
+                "last_on_ground": true,
+                "wheels_up_utc": "2026-05-11T01:39:47.510Z",
+                "wheels_down_utc": "2026-05-11T23:18:01.040Z"
+              }
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "RECOVERED_ONLY_ON_BACKUP",
+          "richer": 768
+        },
+        {
+          "tail": "N102DZ",
+          "hex": "a00c85",
+          "date": "2026-05-12",
+          "sources": {
+            "airplanes-live": {
+              "http": 200,
+              "bytes": 604563,
+              "summary": {
+                "registration": "N102DZ",
+                "type": "GLF5",
+                "icao": "a00c85",
+                "points": 3690,
+                "first_seen_utc": "2026-05-12T00:01:22.910Z",
+                "first_pos": [
+                  36.098409,
+                  -115.161029
+                ],
+                "first_on_ground": true,
+                "last_seen_utc": "2026-05-12T23:59:52.800Z",
+                "last_pos": [
+                  41.050827,
+                  -74.492188
+                ],
+                "last_on_ground": false,
+                "wheels_up_utc": "2026-05-12T00:12:45.880Z",
+                "wheels_down_utc": "2026-05-12T22:28:36.570Z"
+              }
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "RECOVERED_ONLY_ON_BACKUP",
+          "richer": 1103.2
+        },
+        {
+          "tail": "N102DZ",
+          "hex": "a00c85",
+          "date": "2026-05-13",
+          "sources": {
+            "airplanes-live": {
+              "http": 200,
+              "bytes": 64327,
+              "summary": {
+                "registration": "N102DZ",
+                "type": "GLF5",
+                "icao": "a00c85",
+                "points": 420,
+                "first_seen_utc": "2026-05-13T00:00:02.650Z",
+                "first_pos": [
+                  41.052743,
+                  -74.478378
+                ],
+                "first_on_ground": false,
+                "last_seen_utc": "2026-05-13T00:33:14.190Z",
+                "last_pos": [
+                  40.85528,
+                  -74.061647
+                ],
+                "last_on_ground": true,
+                "wheels_up_utc": null,
+                "wheels_down_utc": "2026-05-13T00:10:22.380Z"
+              }
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "RECOVERED_ONLY_ON_BACKUP",
+          "richer": 117.4
+        },
+        {
+          "tail": "N102DZ",
+          "hex": "a00c85",
+          "date": "2026-05-14",
+          "sources": {
+            "airplanes-live": {
+              "http": 200,
+              "bytes": 289224,
+              "summary": {
+                "registration": "N102DZ",
+                "type": "GLF5",
+                "icao": "a00c85",
+                "points": 1759,
+                "first_seen_utc": "2026-05-14T19:22:25.090Z",
+                "first_pos": [
+                  40.854523,
+                  -74.063285
+                ],
+                "first_on_ground": true,
+                "last_seen_utc": "2026-05-14T23:59:59.640Z",
+                "last_pos": [
+                  33.211437,
+                  -92.453651
+                ],
+                "last_on_ground": false,
+                "wheels_up_utc": "2026-05-14T19:58:31.680Z",
+                "wheels_down_utc": "2026-05-14T22:38:31.290Z"
+              }
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "RECOVERED_ONLY_ON_BACKUP",
+          "richer": 527.8
+        },
+        {
+          "tail": "N102DZ",
+          "hex": "a00c85",
+          "date": "2026-05-15",
+          "sources": {
+            "airplanes-live": {
+              "http": 200,
+              "bytes": 581801,
+              "summary": {
+                "registration": "N102DZ",
+                "type": "GLF5",
+                "icao": "a00c85",
+                "points": 3660,
+                "first_seen_utc": "2026-05-15T00:00:09.390Z",
+                "first_pos": [
+                  33.189926,
+                  -92.457532
+                ],
+                "first_on_ground": false,
+                "last_seen_utc": "2026-05-15T23:59:56.860Z",
+                "last_pos": [
+                  39.079393,
+                  -96.565674
+                ],
+                "last_on_ground": false,
+                "wheels_up_utc": "2026-05-15T01:19:31.890Z",
+                "wheels_down_utc": "2026-05-15T20:17:26.000Z"
+              }
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "RECOVERED_ONLY_ON_BACKUP",
+          "richer": 1061.7
+        },
+        {
+          "tail": "N102DZ",
+          "hex": "a00c85",
+          "date": "2026-05-16",
+          "sources": {
+            "airplanes-live": {
+              "http": 200,
+              "bytes": 106697,
+              "summary": {
+                "registration": "N102DZ",
+                "type": "GLF5",
+                "icao": "a00c85",
+                "points": 679,
+                "first_seen_utc": "2026-05-16T00:00:06.440Z",
+                "first_pos": [
+                  39.08335,
+                  -96.537598
+                ],
+                "first_on_ground": false,
+                "last_seen_utc": "2026-05-16T01:14:23.500Z",
+                "last_pos": [
+                  39.722591,
+                  -86.272948
+                ],
+                "last_on_ground": true,
+                "wheels_up_utc": null,
+                "wheels_down_utc": "2026-05-16T01:09:38.220Z"
+              }
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "RECOVERED_ONLY_ON_BACKUP",
+          "richer": 194.7
+        },
+        {
+          "tail": "N102DZ",
+          "hex": "a00c85",
+          "date": "2026-05-17",
+          "sources": {
+            "airplanes-live": {
+              "http": 200,
+              "bytes": 226041,
+              "summary": {
+                "registration": "N102DZ",
+                "type": "GLF5",
+                "icao": "a00c85",
+                "points": 1364,
+                "first_seen_utc": "2026-05-17T20:54:16.910Z",
+                "first_pos": [
+                  39.722271,
+                  -86.273336
+                ],
+                "first_on_ground": true,
+                "last_seen_utc": "2026-05-17T23:59:55.820Z",
+                "last_pos": [
+                  41.294628,
+                  -73.371693
+                ],
+                "last_on_ground": false,
+                "wheels_up_utc": "2026-05-17T20:57:14.060Z",
+                "wheels_down_utc": null
+              }
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "RECOVERED_ONLY_ON_BACKUP",
+          "richer": 412.5
+        },
+        {
+          "tail": "N102DZ",
+          "hex": "a00c85",
+          "date": "2026-05-18",
+          "sources": {
+            "airplanes-live": {
+              "http": 200,
+              "bytes": 265426,
+              "summary": {
+                "registration": "N102DZ",
+                "type": "GLF5",
+                "icao": "a00c85",
+                "points": 1562,
+                "first_seen_utc": "2026-05-18T00:00:00.980Z",
+                "first_pos": [
+                  41.30203,
+                  -73.375251
+                ],
+                "first_on_ground": false,
+                "last_seen_utc": "2026-05-18T03:56:08.070Z",
+                "last_pos": [
+                  26.06987,
+                  -80.152765
+                ],
+                "last_on_ground": true,
+                "wheels_up_utc": null,
+                "wheels_down_utc": "2026-05-18T03:53:05.500Z"
+              }
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "RECOVERED_ONLY_ON_BACKUP",
+          "richer": 484.4
+        },
+        {
+          "tail": "N102DZ",
+          "hex": "a00c85",
+          "date": "2026-05-19",
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 860,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT",
+          "richer": 1.6
+        },
+        {
+          "tail": "N102DZ",
+          "hex": "a00c85",
+          "date": "2026-05-20",
+          "sources": {
+            "airplanes-live": {
+              "http": 200,
+              "bytes": 397604,
+              "summary": {
+                "registration": "N102DZ",
+                "type": "GLF5",
+                "icao": "a00c85",
+                "points": 2432,
+                "first_seen_utc": "2026-05-20T14:04:04.650Z",
+                "first_pos": [
+                  26.068718,
+                  -80.154481
+                ],
+                "first_on_ground": true,
+                "last_seen_utc": "2026-05-20T22:27:12.110Z",
+                "last_pos": [
+                  40.854492,
+                  -74.063095
+                ],
+                "last_on_ground": true,
+                "wheels_up_utc": "2026-05-20T14:52:04.170Z",
+                "wheels_down_utc": "2026-05-20T22:10:37.880Z"
+              }
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "RECOVERED_ONLY_ON_BACKUP",
+          "richer": 725.6
+        },
+        {
+          "tail": "N102DZ",
+          "hex": "a00c85",
+          "date": "2026-05-21",
+          "sources": {
+            "airplanes-live": {
+              "http": 200,
+              "bytes": 404847,
+              "summary": {
+                "registration": "N102DZ",
+                "type": "GLF5",
+                "icao": "a00c85",
+                "points": 2519,
+                "first_seen_utc": "2026-05-21T02:16:59.130Z",
+                "first_pos": [
+                  40.854492,
+                  -74.063095
+                ],
+                "first_on_ground": true,
+                "last_seen_utc": "2026-05-21T21:52:38.250Z",
+                "last_pos": [
+                  33.236063,
+                  -96.586192
+                ],
+                "last_on_ground": false,
+                "wheels_up_utc": "2026-05-21T02:35:11.230Z",
+                "wheels_down_utc": "2026-05-21T05:55:09.240Z"
+              }
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "RECOVERED_ONLY_ON_BACKUP",
+          "richer": 738.8
+        },
+        {
+          "tail": "N102DZ",
+          "hex": "a00c85",
+          "date": "2026-05-22",
+          "sources": {
+            "airplanes-live": {
+              "http": 200,
+              "bytes": 240070,
+              "summary": {
+                "registration": "N102DZ",
+                "type": "GLF5",
+                "icao": "a00c85",
+                "points": 1473,
+                "first_seen_utc": "2026-05-22T20:50:00.000Z",
+                "first_pos": [
+                  33.170284,
+                  -96.589104
+                ],
+                "first_on_ground": false,
+                "last_seen_utc": "2026-05-22T23:35:28.230Z",
+                "last_pos": [
+                  40.855465,
+                  -74.061935
+                ],
+                "last_on_ground": true,
+                "wheels_up_utc": null,
+                "wheels_down_utc": "2026-05-22T23:30:19.270Z"
+              }
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "RECOVERED_ONLY_ON_BACKUP",
+          "richer": 438.1
+        },
+        {
+          "tail": "N102DZ",
+          "hex": "a00c85",
+          "date": "2026-05-23",
+          "sources": {
+            "airplanes-live": {
+              "http": 200,
+              "bytes": 307917,
+              "summary": {
+                "registration": "N102DZ",
+                "type": "GLF5",
+                "icao": "a00c85",
+                "points": 1896,
+                "first_seen_utc": "2026-05-23T20:16:56.970Z",
+                "first_pos": [
+                  40.855396,
+                  -74.062193
+                ],
+                "first_on_ground": true,
+                "last_seen_utc": "2026-05-23T23:54:55.590Z",
+                "last_pos": [
+                  29.698917,
+                  -98.039166
+                ],
+                "last_on_ground": true,
+                "wheels_up_utc": "2026-05-23T20:25:36.440Z",
+                "wheels_down_utc": "2026-05-23T23:45:00.680Z"
+              }
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "RECOVERED_ONLY_ON_BACKUP",
+          "richer": 561.9
+        },
+        {
+          "tail": "N102DZ",
+          "hex": "a00c85",
+          "date": "2026-05-24",
+          "sources": {
+            "airplanes-live": {
+              "http": 200,
+              "bytes": 641302,
+              "summary": {
+                "registration": "N102DZ",
+                "type": "GLF5",
+                "icao": "a00c85",
+                "points": 3895,
+                "first_seen_utc": "2026-05-24T15:45:00.930Z",
+                "first_pos": [
+                  29.698908,
+                  -98.039151
+                ],
+                "first_on_ground": true,
+                "last_seen_utc": "2026-05-24T23:52:25.990Z",
+                "last_pos": [
+                  35.032436,
+                  -89.972632
+                ],
+                "last_on_ground": true,
+                "wheels_up_utc": "2026-05-24T15:48:58.960Z",
+                "wheels_down_utc": "2026-05-24T23:52:18.950Z"
+              }
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "RECOVERED_ONLY_ON_BACKUP",
+          "richer": 1170.3
+        },
+        {
+          "tail": "N102DZ",
+          "hex": "a00c85",
+          "date": "2026-05-25",
+          "sources": {
+            "airplanes-live": {
+              "http": 200,
+              "bytes": 144932,
+              "summary": {
+                "registration": "N102DZ",
+                "type": "GLF5",
+                "icao": "a00c85",
+                "points": 909,
+                "first_seen_utc": "2026-05-25T02:50:13.570Z",
+                "first_pos": [
+                  35.058258,
+                  -89.974194
+                ],
+                "first_on_ground": false,
+                "last_seen_utc": "2026-05-25T04:13:12.150Z",
+                "last_pos": [
+                  29.702614,
+                  -98.035984
+                ],
+                "last_on_ground": true,
+                "wheels_up_utc": null,
+                "wheels_down_utc": "2026-05-25T04:11:55.110Z"
+              }
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "RECOVERED_ONLY_ON_BACKUP",
+          "richer": 264.5
+        },
+        {
+          "tail": "N102DZ",
+          "hex": "a00c85",
+          "date": "2026-05-26",
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 860,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT",
+          "richer": 1.6
+        },
+        {
+          "tail": "N102DZ",
+          "hex": "a00c85",
+          "date": "2026-05-27",
+          "sources": {
+            "airplanes-live": {
+              "http": 200,
+              "bytes": 610756,
+              "summary": {
+                "registration": "N102DZ",
+                "type": "GLF5",
+                "icao": "a00c85",
+                "points": 3859,
+                "first_seen_utc": "2026-05-27T14:34:19.930Z",
+                "first_pos": [
+                  29.698792,
+                  -98.039286
+                ],
+                "first_on_ground": true,
+                "last_seen_utc": "2026-05-27T23:12:13.720Z",
+                "last_pos": [
+                  47.524144,
+                  -122.295174
+                ],
+                "last_on_ground": true,
+                "wheels_up_utc": "2026-05-27T14:40:48.180Z",
+                "wheels_down_utc": "2026-05-27T23:06:47.160Z"
+              }
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "RECOVERED_ONLY_ON_BACKUP",
+          "richer": 1114.5
+        },
+        {
+          "tail": "N102DZ",
+          "hex": "a00c85",
+          "date": "2026-05-28",
+          "sources": {
+            "airplanes-live": {
+              "http": 200,
+              "bytes": 406125,
+              "summary": {
+                "registration": "N102DZ",
+                "type": "GLF5",
+                "icao": "a00c85",
+                "points": 2553,
+                "first_seen_utc": "2026-05-28T18:09:57.990Z",
+                "first_pos": [
+                  47.539101,
+                  -122.306877
+                ],
+                "first_on_ground": true,
+                "last_seen_utc": "2026-05-28T23:59:56.230Z",
+                "last_pos": [
+                  34.103897,
+                  -116.957815
+                ],
+                "last_on_ground": false,
+                "wheels_up_utc": "2026-05-28T18:33:11.300Z",
+                "wheels_down_utc": "2026-05-28T22:10:06.020Z"
+              }
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "RECOVERED_ONLY_ON_BACKUP",
+          "richer": 741.1
+        },
+        {
+          "tail": "N102DZ",
+          "hex": "a00c85",
+          "date": "2026-05-29",
+          "sources": {
+            "airplanes-live": {
+              "http": 200,
+              "bytes": 68734,
+              "summary": {
+                "registration": "N102DZ",
+                "type": "GLF5",
+                "icao": "a00c85",
+                "points": 429,
+                "first_seen_utc": "2026-05-29T00:00:05.810Z",
+                "first_pos": [
+                  34.106964,
+                  -116.978162
+                ],
+                "first_on_ground": false,
+                "last_seen_utc": "2026-05-29T00:30:41.810Z",
+                "last_pos": [
+                  34.428085,
+                  -119.834775
+                ],
+                "last_on_ground": true,
+                "wheels_up_utc": null,
+                "wheels_down_utc": "2026-05-29T00:29:36.550Z"
+              }
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "RECOVERED_ONLY_ON_BACKUP",
+          "richer": 125.4
+        },
+        {
+          "tail": "N102DZ",
+          "hex": "a00c85",
+          "date": "2026-05-30",
+          "sources": {
+            "airplanes-live": {
+              "http": 404,
+              "bytes": 860,
+              "summary": null
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "NEITHER_HAS_IT",
+          "richer": 1.6
+        },
+        {
+          "tail": "N102DZ",
+          "hex": "a00c85",
+          "date": "2026-05-31",
+          "sources": {
+            "airplanes-live": {
+              "http": 200,
+              "bytes": 406011,
+              "summary": {
+                "registration": "N102DZ",
+                "type": "GLF5",
+                "icao": "a00c85",
+                "points": 2561,
+                "first_seen_utc": "2026-05-31T18:15:10.540Z",
+                "first_pos": [
+                  34.429674,
+                  -119.842887
+                ],
+                "first_on_ground": true,
+                "last_seen_utc": "2026-05-31T23:59:58.870Z",
+                "last_pos": [
+                  33.630432,
+                  -111.902983
+                ],
+                "last_on_ground": true,
+                "wheels_up_utc": "2026-05-31T18:20:25.640Z",
+                "wheels_down_utc": "2026-05-31T23:00:14.410Z"
+              }
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "RECOVERED_ONLY_ON_BACKUP",
+          "richer": 740.9
+        },
+        {
+          "tail": "N102DZ",
+          "hex": "a00c85",
+          "date": "2026-06-01",
+          "sources": {
+            "airplanes-live": {
+              "http": 200,
+              "bytes": 279374,
+              "summary": {
+                "registration": "N102DZ",
+                "type": "GLF5",
+                "icao": "a00c85",
+                "points": 1778,
+                "first_seen_utc": "2026-06-01T00:00:03.770Z",
+                "first_pos": [
+                  33.630672,
+                  -111.902717
+                ],
+                "first_on_ground": true,
+                "last_seen_utc": "2026-06-01T03:43:48.680Z",
+                "last_pos": [
+                  26.377441,
+                  -80.110548
+                ],
+                "last_on_ground": true,
+                "wheels_up_utc": "2026-06-01T00:03:26.330Z",
+                "wheels_down_utc": "2026-06-01T03:40:51.890Z"
+              }
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "RECOVERED_ONLY_ON_BACKUP",
+          "richer": 509.8
+        },
+        {
+          "tail": "N102DZ",
+          "hex": "a00c85",
+          "date": "2026-06-02",
+          "sources": {
+            "airplanes-live": {
+              "http": 200,
+              "bytes": 379035,
+              "summary": {
+                "registration": "N102DZ",
+                "type": "GLF5",
+                "icao": "a00c85",
+                "points": 2390,
+                "first_seen_utc": "2026-06-02T12:29:59.650Z",
+                "first_pos": [
+                  26.377313,
+                  -80.110971
+                ],
+                "first_on_ground": true,
+                "last_seen_utc": "2026-06-02T17:42:59.280Z",
+                "last_pos": [
+                  39.570927,
+                  -104.84845
+                ],
+                "last_on_ground": true,
+                "wheels_up_utc": "2026-06-02T12:39:57.590Z",
+                "wheels_down_utc": "2026-06-02T17:40:17.680Z"
+              }
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "RECOVERED_ONLY_ON_BACKUP",
+          "richer": 691.7
+        },
+        {
+          "tail": "N102DZ",
+          "hex": "a00c85",
+          "date": "2026-06-03",
+          "sources": {
+            "airplanes-live": {
+              "http": 200,
+              "bytes": 171869,
+              "summary": {
+                "registration": "N102DZ",
+                "type": "GLF5",
+                "icao": "a00c85",
+                "points": 1031,
+                "first_seen_utc": "2026-06-03T21:43:16.770Z",
+                "first_pos": [
+                  39.570566,
+                  -104.848831
+                ],
+                "first_on_ground": true,
+                "last_seen_utc": "2026-06-03T23:59:51.450Z",
+                "last_pos": [
+                  32.841766,
+                  -86.149516
+                ],
+                "last_on_ground": false,
+                "wheels_up_utc": "2026-06-03T21:51:31.820Z",
+                "wheels_down_utc": null
+              }
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "RECOVERED_ONLY_ON_BACKUP",
+          "richer": 313.6
+        },
+        {
+          "tail": "N102DZ",
+          "hex": "a00c85",
+          "date": "2026-06-04",
+          "sources": {
+            "airplanes-live": {
+              "http": 200,
+              "bytes": 710584,
+              "summary": {
+                "registration": "N102DZ",
+                "type": "GLF5",
+                "icao": "a00c85",
+                "points": 4326,
+                "first_seen_utc": "2026-06-04T00:00:01.090Z",
+                "first_pos": [
+                  32.829057,
+                  -86.126871
+                ],
+                "first_on_ground": false,
+                "last_seen_utc": "2026-06-04T21:52:42.030Z",
+                "last_pos": [
+                  33.619022,
+                  -111.917234
+                ],
+                "last_on_ground": true,
+                "wheels_up_utc": "2026-06-04T01:33:46.480Z",
+                "wheels_down_utc": "2026-06-04T21:48:17.970Z"
+              }
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "RECOVERED_ONLY_ON_BACKUP",
+          "richer": 1296.7
+        },
+        {
+          "tail": "N102DZ",
+          "hex": "a00c85",
+          "date": "2026-06-05",
+          "sources": {
+            "airplanes-live": {
+              "http": 200,
+              "bytes": 169728,
+              "summary": {
+                "registration": "N102DZ",
+                "type": "GLF5",
+                "icao": "a00c85",
+                "points": 1066,
+                "first_seen_utc": "2026-06-05T15:59:56.410Z",
+                "first_pos": [
+                  33.619022,
+                  -111.917234
+                ],
+                "first_on_ground": true,
+                "last_seen_utc": "2026-06-05T17:54:53.490Z",
+                "last_pos": [
+                  29.548288,
+                  -98.492701
+                ],
+                "last_on_ground": false,
+                "wheels_up_utc": "2026-06-05T16:10:50.630Z",
+                "wheels_down_utc": null
+              }
+            },
+            "adsb-lol": {
+              "http": 404,
+              "bytes": 548,
+              "summary": null
+            }
+          },
+          "verdict": "RECOVERED_ONLY_ON_BACKUP",
+          "richer": 309.7
+        }
+      ],
+      "pages": [
+        {
+          "site": "flightradar24",
+          "url": "https://www.flightradar24.com/data/aircraft/n102dz",
+          "snapshots": 2,
+          "first": "20220526025401",
+          "last": "20250911055712",
+          "live_http_today": 403,
+          "live_bytes": 5749,
+          "captured": [
+            {
+              "ts": "20220526025401",
+              "bytes": 63645,
+              "flight_rows": 0,
+              "info": {
+                "aircraft": "SEARCH AIRPORTS",
+                "operator": "Private owner",
+                "type_code": "GLF5",
+                "mode_s": "A00C85",
+                "page_title": "N102DZ - Gulfstream V [555] - Flightradar24"
+              },
+              "flights": []
+            },
+            {
+              "ts": "20250911055712",
+              "bytes": 97123,
+              "flight_rows": 0,
+              "info": {
+                "aircraft": "Gulfstream V",
+                "operator": "Private owner",
+                "type_code": "GLF5",
+                "mode_s": "A00C85",
+                "page_title": "N102DZ - Gulfstream V [555] - Flightradar24"
+              },
+              "flights": []
+            }
+          ]
+        },
+        {
+          "site": "flightaware",
+          "url": "https://www.flightaware.com/live/flight/N102DZ",
+          "snapshots": 1,
+          "first": "20260114192750",
+          "last": "20260114192750",
+          "live_http_today": 200,
+          "live_bytes": 458269,
+          "captured": [
+            {
+              "ts": "20260114192750",
+              "bytes": 458025,
+              "flight_rows": null,
+              "info": null,
+              "flights": null
+            }
+          ]
+        },
+        {
+          "site": "radarbox",
+          "url": "https://www.radarbox.com/data/registration/N102DZ",
+          "snapshots": 0,
+          "first": null,
+          "last": null,
+          "live_http_today": 403,
+          "live_bytes": 5759,
+          "captured": []
+        },
+        {
+          "site": "adsbexchange",
+          "url": "https://globe.adsbexchange.com/?icao=N102DZ",
+          "snapshots": 0,
+          "first": null,
+          "last": null,
+          "live_http_today": 200,
+          "live_bytes": 107634,
+          "captured": []
+        },
+        {
+          "site": "planespotters",
+          "url": "https://www.planespotters.net/search?q=N102DZ",
+          "snapshots": 0,
+          "first": null,
+          "last": null,
+          "live_http_today": 403,
+          "live_bytes": 5749,
+          "captured": []
+        }
+      ]
+    }
+  }
+}
