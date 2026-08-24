@@ -1,0 +1,272 @@
+---
+displayed_sidebar: docs
+title: "What A 403 Actually Means"
+sidebar_label: "What A 403 Actually Means"
+description: "This site published that N102DZ's FlightRadar24 page was a documented removal because the URL returns HTTP 403. It was not. Five unrelated control aircraft got the identical 403 from the identical script, and in a real browser all twenty pages load HTTP 200. This is the method that caught it, written so any reader can run it."
+keywords:
+  - HTTP 403
+  - control test
+  - FlightRadar24
+  - N102DZ
+  - flight data removed
+  - bot block
+  - Cloudflare
+  - paywall
+  - ADS-B
+  - Charlie Kirk
+image: "/img/docusaurus-social-card.jpg"
+hide_table_of_contents: true
+---
+
+{/* Full-bleed marker: activates the site-wide full-width + text-wrap
+    layout in custom.css (full width + overflow-safe side videos). Scoped
+    via CSS :has(). */}
+<div className="ck-full-bleed" />
+
+<a href="/Planes/Flight-Data-Recovery/overview" style={{display:'inline-block', marginBottom:'1rem',
+padding:'0.35rem 0.9rem', background:'#1a73e8', color:'#fff',
+borderRadius:'4px', textDecoration:'none', fontSize:'0.9rem'}}>← Flight Data Recovery</a>
+
+# What A 403 Actually Means
+
+## The mistake
+
+This site published that **N102DZ's FlightRadar24 page was "A REAL REMOVAL, DOCUMENTED."** The
+evidence for that statement was one number: the URL `flightradar24.com/data/aircraft/n102dz` returned
+**HTTP 403** when a script asked for it.
+
+The 403 was real. The conclusion drawn from it was wrong, and it has been
+[retracted on the overview page](/Planes/Flight-Data-Recovery/overview).
+
+Here is exactly how the error was made. A script walked five tracking sites for each of the sixteen
+aircraft in this investigation and recorded the status code each site returned today. FlightRadar24
+returned 403 for **all sixteen**. So did radarbox.com. So did planespotters.net. FlightAware and
+ADS-B Exchange returned 200 for all sixteen. Eighty probes, and the pattern looked like three sites
+had shut the door on this fleet.
+
+**What was never asked was whether those three sites serve anybody at all.** They do not — not to a
+script. The number that would have caught this took eleven minutes to collect and nobody collected it
+until after the claim was published.
+
+## The three things a 403 can mean
+
+`403 Forbidden` is the server saying *"I am not giving you this."* It does not say why. From outside,
+these three situations are **indistinguishable**:
+
+| What is actually happening | What you see |
+|---|---|
+| **The page was removed** — the aircraft was taken off the site, blocked, or delisted | 403 |
+| **The site blocks robots** — a bot filter, a CDN challenge, or a missing browser fingerprint | 403 |
+| **The site is rate-limiting** — too many requests from one address, too fast | 403 |
+
+Only the first one is a finding. The other two are the weather. And the response body is no help
+either: FlightRadar24's 403 is **5,749 bytes** of challenge page for N102DZ, and **5,749 bytes** of
+the same challenge page for a Ryanair 737. Identical, to the byte.
+
+**This is exactly why the control test is not optional.** A status code on its own is a measurement
+with no baseline. It becomes evidence only when you have something to compare it against.
+
+## The control test
+
+The rule is one sentence, and it is the whole method:
+
+> **A non-200 is only evidence about an aircraft if the same site serves aircraft that have nothing
+> to do with the case.**
+
+So the identical script, from the identical address, seconds apart, was pointed at **five aircraft
+chosen for irrelevance** — two mainline airliners, one regional airliner, and two business jets with
+no connection to this case, this investigation, or anyone in it:
+
+| Control aircraft | What it is | Why it was chosen |
+|---|---|---|
+| **EI-DCL** | Ryanair Boeing 737-800 | A European short-haul workhorse flying six sectors a day. Nothing rarer or better-documented exists. |
+| **D-AIMA** | Lufthansa Airbus A380 | A flagship widebody. If any page on earth is public, this one is. |
+| **N904XJ** | Delta Connection CRJ-900, operated by Endeavor Air | A US regional jet — ordinary domestic traffic, not a flagship. |
+| **N102UW** | American Airlines Airbus A320 | A US mainline narrowbody, and a tail number one character from a subject. |
+| **N1KE** | Nike corporate Gulfstream G650 | **The closest match to our subjects that has nothing to do with the case** — a privately-owned long-range business jet that sits on the ground most days. |
+
+That last one carries most of the weight. The subjects in this investigation are private jets. If a
+private jet unconnected to any of this behaves the same way, the behaviour is about private jets, not
+about this case.
+
+### What came back
+
+Five sites, five controls, five subjects — fifty requests in one run:
+
+| Tracking site | Controls served | Subjects served | What a non-200 from this site means |
+|---|---|---|---|
+| **flightradar24.com** | **0 / 5** | **0 / 5** | **Nothing.** The site blocks all scripted requests. |
+| **radarbox.com** | **0 / 5** | **0 / 5** | **Nothing.** The site blocks all scripted requests. |
+| **planespotters.net** | **0 / 5** | **0 / 5** | **Nothing.** The site blocks all scripted requests. |
+| **flightaware.com** | **5 / 5** | **5 / 5** | Read it per aircraft — this site answers scripts. |
+| **globe.adsbexchange.com** | **5 / 5** | **5 / 5** | Read it per aircraft — this site answers scripts. |
+
+**Three of the five sites refused every single request, control and subject alike.** The Lufthansa
+A380 is as forbidden as the Kirk family Gulfstream. Whatever else that shows, it cannot show anything
+about N102DZ.
+
+The two sites that *do* answer a script — FlightAware and ADS-B Exchange — served **every one of the
+sixteen aircraft in this investigation, HTTP 200**. Not one refusal on either.
+
+The full run, every URL and every byte count, is in `page_control_probe.json`.
+
+## The browser test
+
+The control test says the 403 is meaningless. It does not say what the page actually contains. For
+that the pages have to be opened the way a person opens them — in a real browser, where the bot check
+is satisfied by the browser itself.
+
+All sixteen subjects and four controls were loaded from a **logged-out** FlightRadar24 session on
+**24 August 2026**. Every column below is what the page rendered:
+
+| Tail | Kind | HTTP | Rows rendered | "could not find data" | Type |
+|---|---|---|---|---|---|
+| N904XJ | CONTROL | **200** | **699** | no | CRJ9 |
+| EI-DCL | CONTROL | **200** | **683** | no | B738 |
+| N2100L | SUBJECT | **200** | **378** | no | GLEX |
+| N872RA | SUBJECT | **200** | **294** | no | BE40 |
+| D-AIMA | CONTROL | **200** | **196** | no | A388 |
+| N59906 | SUBJECT | **200** | **110** | no | PA31 |
+| SU-BTT | SUBJECT | **200** | **56** | no | FA7X |
+| SU-BTU | SUBJECT | **200** | **56** | no | FA7X |
+| N40JD | SUBJECT | **200** | **56** | no | PRM1 |
+| SU-BTV | SUBJECT | **200** | **54** | no | FA7X |
+| N560TW | SUBJECT | **200** | **28** | no | C56X |
+| N1098L | SUBJECT | **200** | **28** | no | GLEX |
+| SU-BND | SUBJECT | **200** | **14** | no | GLF4 |
+| **N102DZ** | SUBJECT | **200** | **0** | **yes** | GLF5 |
+| N888KG | SUBJECT | **200** | **0** | **yes** | CL30 |
+| N582MM | SUBJECT | **200** | **0** | **yes** | LJ60 |
+| SU-BGM | SUBJECT | **200** | **0** | **yes** | GLF4 |
+| T7-ELL | SUBJECT | **200** | **0** | **yes** | GLEX |
+| N55906 | SUBJECT | **200** | **0** | **yes** | P28R |
+| **N1KE** | **CONTROL** | **200** | **0** | **yes** | GLF6 |
+
+**Twenty pages. Twenty HTTP 200s.** Every one loaded with its full identity block — N102DZ as
+*Gulfstream V, GLF5, Mode S A00C85*. Nothing has been removed from FlightRadar24, for any aircraft in
+this investigation.
+
+### The pattern in that table is recency, not relevance
+
+Read the bottom seven rows against the top five. The empty pages are **N102DZ, N888KG, N582MM,
+SU-BGM, T7-ELL, N55906 — and N1KE, which is a control.** Nike's Gulfstream, an aircraft with no
+connection to anything on this site, produced *character-for-character the same result* as the tail
+number at the centre of the dispute, on the same day, in the same session.
+
+Every one of those seven is a privately-owned aircraft that had not flown in the previous week. Every
+aircraft that *had* flown that week shows rows, and the row count tracks how hard it was flying:
+the Ryanair 737 doing six sectors a day shows **683**, the Delta Connection CRJ **699**, the Lufthansa
+A380 **196**, and among the subjects [N2100L](/Planes/N2100L/overview) shows **378** and
+[N872RA](/Planes/N872RA/overview) **294**.
+
+**Sort that table by "is this aircraft part of the investigation" and it makes no pattern at all.
+Sort it by "did this aircraft fly in the last seven days" and it sorts perfectly.**
+
+## The paywall, which is the real answer
+
+There is a reason the free page only ever reflects the last week, and FlightRadar24 prints it under
+the table in plain language. On N102DZ's page it reads:
+
+> *"More than 7 days of N102DZ history is available with an upgrade to a Silver (90 days), Gold
+> (1 year), or Business (3 years) subscription."*
+
+**That line appeared on all twenty pages** — every subject and every control, the empty ones and the
+699-row ones alike. A logged-out visitor is shown **seven days**. Everything older is a paid product
+and always has been.
+
+This is the sentence that matters most on this page:
+
+> **The multi-year flight history the overlap spreadsheets were built from was never on the free
+> FlightRadar24 page. It cannot have been removed from it.**
+
+Somebody who checked N102DZ in 2023 and again in 2026 and found "the history gone" is describing the
+seven-day window rolling forward, which is what it does every day for every aircraft on the site. An
+empty table on a private jet is the normal state of that page, not an event.
+
+## The same test applied to the other two claims
+
+FlightRadar24 was the third of three "erasures" this site had published. The other two failed the
+same control test, in the same way, and both are set out in full on the
+[overview](/Planes/Flight-Data-Recovery/overview):
+
+* **The adsb.lol 12 October – 15 December 2025 band.** The live API returns HTTP 403 for those dates.
+  It returns 403 for those dates **for every aircraft asked**, including airframes with no connection
+  to this case. And adsb.lol publishes those exact days itself, in full, as one Open-Database-Licence
+  release per day on GitHub — `v2025.10.12` and `v2025.10.13` among them. **An organisation that
+  publishes the data on GitHub is not suppressing it on its API.** It is a serving condition.
+* **adsb.lol holding no 2026 data.** An unrelated Ryanair airframe and an unrelated Lufthansa
+  airframe return **404 identically** for 2026 dates. It is archive-wide retention, and the hole is
+  wider than first described rather than narrower — which is the correct direction for a finding to
+  move when it is tested.
+
+**Three claimed removals. Three control tests. Three failures.** In each case the control aircraft
+behaved exactly like the subject aircraft, which is the definition of a result that carries no
+information about the subject.
+
+## What would actually prove a removal
+
+None of this means data never gets removed from tracking sites. It does — owners request it, and the
+mechanisms are public. The point is that proving it takes more than a status code. Here is the
+checklist this site now uses:
+
+1. **An archived copy showing the page populated.** A Wayback Machine snapshot, or any dated
+   third-party capture, in which the page carried the content that is now missing. Without a "before"
+   there is no removal to demonstrate.
+2. **The same URL served to a BROWSER returning 404, or an explicit block notice, while control
+   aircraft load normally in the same session.** Not a script. A browser, and controls alongside it in
+   the same minute from the same address.
+3. **The tracking site's own block list, or the FAA's LADD list, naming the tail.** Both are
+   documented programmes with published mechanics. A tail that has been blocked can be shown to have
+   been blocked.
+4. **The data absent from independent networks the site does not control.** A removal at one company
+   does not touch volunteer ADS-B networks. If the tracks are still retrievable from archives that
+   company has no authority over, nothing has been destroyed — at most one publisher stopped
+   displaying it.
+
+**Not one of these four conditions is met for any aircraft in this investigation.** There is no
+"before" snapshot showing content since removed. Every page loads 200 in a browser. No block list or
+LADD entry names any of these tails. And the underlying ADS-B record is retrievable from independent
+archives — including
+[throughout May 2026 itself](/Planes/Flight-Data-Recovery/Per-Aircraft-Status), the month the removal
+was reported to have happened.
+
+## Why this page exists
+
+An investigation that calls a robot block a cover-up hands its opponents the entire argument. One
+demonstrable overreach is all anybody needs to dismiss every careful finding sitting next to it, and
+they will be right to, because the same standard produced both. This site drew a conclusion from a
+number it had not baselined, published it in bold, and had to take it back. **The correction is the
+credibility.** The rule that came out of it — ask an unrelated aircraft the same question before you
+conclude anything about this one — is now applied to everything on these pages, and it will keep
+removing claims as readily as it supports them.
+
+## Reproduce this
+
+Both halves of this page can be re-run by anyone. Neither needs an account, a key, or a payment.
+
+```
+# the control test: 5 unrelated aircraft + 5 subjects x 5 tracking sites
+cd site/docs/Planes/following/apis/public_open_source/code/
+node control_page_probe.js
+# writes ../data/recovery/page_control_probe.json
+```
+
+**The browser half was done by hand, by opening the twenty pages in an ordinary browser — and that is
+the entire point.** A script cannot pass the bot check, which is why a script sees 403 and a person
+sees the page. Any reader with a browser and no account can load
+`flightradar24.com/data/aircraft/n102dz` right now and see the identity block, the empty table, and
+the subscription line under it. Then load `flightradar24.com/data/aircraft/n1ke` and see the same
+three things on an aircraft nobody has ever claimed was involved in anything.
+
+The captured result of that pass is committed at
+`site/docs/Planes/following/apis/browser_capture/captures/fr24_page_availability_2026-08-24.tsv`,
+one row per aircraft, with the HTTP status, byte count, rendered row count, the no-data flag, the
+paywall flag, and the Mode S identity block for each.
+
+## Related pages
+
+* [Flight Data Recovery](/Planes/Flight-Data-Recovery/overview) — the full sweep and the retraction this method produced
+* [Per-Aircraft Recovery Status](/Planes/Flight-Data-Recovery/Per-Aircraft-Status) — all sixteen aircraft, source by source
+* [Overlap Recovery](/Planes/Flight-Data-Recovery/Overlap-Recovery) — every alleged overlap, tested against primary data
+* [Erika Flight Logs Erased](/Planes/Erika-Flight-Logs-Erased) — the removal claim this method was built to test
+* [N102DZ](/Planes/N102DZ/overview) — the aircraft the 403 was recorded against

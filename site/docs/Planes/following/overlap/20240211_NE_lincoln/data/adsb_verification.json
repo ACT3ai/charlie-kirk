@@ -1,8 +1,11 @@
 {
-  "verified_utc": "2026-08-24T17:33:16.248Z",
+  "verified_utc": "2026-08-24T17:36:21.953Z",
   "overlap_id": "SITE-002",
   "date": "2024-02-11",
   "claimed_airport": "KLNK",
+  "claimed_codes": [
+    "KLNK"
+  ],
   "claimed_city": "Lincoln",
   "claimed_state": "NE",
   "claimed_tails": [
@@ -47,6 +50,7 @@
         "both_agree": false,
         "heard": false,
         "at_claimed_airport": false,
+        "closest_approach_to_claimed_field": null,
         "airports_touched": null,
         "first_where": null,
         "last_where": null,
@@ -88,6 +92,7 @@
         "both_agree": false,
         "heard": false,
         "at_claimed_airport": false,
+        "closest_approach_to_claimed_field": null,
         "airports_touched": null,
         "first_where": null,
         "last_where": null,
@@ -118,6 +123,7 @@
         "both_agree": false,
         "heard": false,
         "at_claimed_airport": false,
+        "closest_approach_to_claimed_field": null,
         "airports_touched": null,
         "first_where": null,
         "last_where": null,

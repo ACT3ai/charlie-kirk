@@ -640,6 +640,28 @@ Falcon 7X out of production. The Falcon 8X is its direct successor at ~$58M base
 
 List price is for a green airframe — interior completion, avionics options and any mission equipment are extra, and fleet buyers do not pay list. The full table for all 33 priced airframes in this investigation, with the method behind each figure, is on **[Aircraft Costs](/Planes/Aircraft-Costs/overview)**.
 
+## Flight data recovery
+
+This is the best-covered Egyptian aircraft in the investigation. Two independent volunteer ADS-B networks hold daily tracks for it reaching back to **24 February 2023**, and its FlightRadar24 page loads normally today. Nothing about this tail's data situation is unusual.
+
+| Source | What it holds for SU-BTT |
+|---|---|
+| adsb.lol `globe_history` | **29 days**, 2023-02-24 to 2025-10-11 |
+| globe.airplanes.live | **37 days**, 2023-02-24 to 2026-05-24 |
+| ADS-B Exchange monthly sample | **6 days**, 2022-05-01 to 2026-03-01 |
+| FlightRadar24 page | HTTP **200** in a real browser on 24 Aug 2026 — **56 history rows** on the free seven-day tier, everything older paywalled |
+| Internet Archive | **0** page snapshots held; **0** flight rows recovered off them |
+
+The browser probe also returned the page's identity block: *Dassault Falcon 7X EASy · FA7X · Mode S **0101D3** · listed as "Egypt Government" with operator "Egypt - Air Force"*. That is an independent confirmation of the hex code this site chose over the conflicting value carried by adsbdb.
+
+**Alleged overlaps.** This tail carries **53 alleged overlap dates**. **16** of them now have a recovered ADS-B track for that day, and **15 of those 16 are consistent** with the alleged location. The single inconsistent result is **18 June 2025**, alleged at Omaha / Lincoln NE: the recovered track runs Alexandria to El Alamein, both in Egypt. Every date is worked through on [Overlap Recovery](/Planes/Flight-Data-Recovery/Overlap-Recovery). The 37 dates with no recovered track are not evidence of anything — a missing track means no volunteer receiver heard the aircraft, not that it did not fly.
+
+**Removed from: nothing.** No tracking site was found to have removed this aircraft's page. Our scripts recorded HTTP 403 from FlightRadar24, RadarBox and Planespotters, but all three return the identical 403 to unrelated control aircraft asked by the identical script. It is a robot block, not a deletion — see [What A 403 Means](/Planes/Flight-Data-Recovery/What-A-403-Means).
+
+Raw payloads are kept in `site/docs/Planes/SU-BTT/data/recovered/`, with the source named in every filename and a `.meta.json` sidecar per file recording source, URL, HTTP status, bytes and date.
+
+More: [Flight Data Recovery](/Planes/Flight-Data-Recovery/overview) · [Per-Aircraft Status](/Planes/Flight-Data-Recovery/Per-Aircraft-Status)
+
 {/* CK_INTERESTING_HERE_START */}
 
 ## Interesting In This Area

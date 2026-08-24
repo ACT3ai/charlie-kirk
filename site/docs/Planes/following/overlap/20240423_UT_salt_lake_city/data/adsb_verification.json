@@ -1,8 +1,11 @@
 {
-  "verified_utc": "2026-08-24T17:33:16.248Z",
+  "verified_utc": "2026-08-24T17:36:21.953Z",
   "overlap_id": "SITE-004",
   "date": "2024-04-23",
   "claimed_airport": "KPVU",
+  "claimed_codes": [
+    "KPVU"
+  ],
   "claimed_city": "Salt Lake City (event) / Provo (aircraft)",
   "claimed_state": "UT",
   "claimed_tails": [
@@ -21,6 +24,12 @@
         "both_agree": true,
         "heard": true,
         "at_claimed_airport": false,
+        "closest_approach_to_claimed_field": {
+          "code": "KPVU",
+          "km": 13817.88,
+          "utc": "2024-04-22T05:58:02.940Z",
+          "on_ground": false
+        },
         "airports_touched": [
           "HEAZ 1.89km below_4000ft",
           "LFPO 8.8km last_fix"
@@ -37,6 +46,12 @@
         "both_agree": true,
         "heard": true,
         "at_claimed_airport": true,
+        "closest_approach_to_claimed_field": {
+          "code": "KPVU",
+          "km": 0,
+          "utc": "2024-04-23T18:13:11.070Z",
+          "on_ground": true
+        },
         "airports_touched": [
           "LFPB 4.05km below_4000ft",
           "LFPG 5.45km below_4000ft",
@@ -81,6 +96,7 @@
         "both_agree": false,
         "heard": false,
         "at_claimed_airport": false,
+        "closest_approach_to_claimed_field": null,
         "airports_touched": null,
         "first_where": null,
         "last_where": null,
@@ -125,6 +141,7 @@
         "both_agree": false,
         "heard": false,
         "at_claimed_airport": false,
+        "closest_approach_to_claimed_field": null,
         "airports_touched": null,
         "first_where": null,
         "last_where": null,
@@ -165,6 +182,7 @@
         "both_agree": false,
         "heard": false,
         "at_claimed_airport": false,
+        "closest_approach_to_claimed_field": null,
         "airports_touched": null,
         "first_where": null,
         "last_where": null,
@@ -205,6 +223,7 @@
         "both_agree": false,
         "heard": false,
         "at_claimed_airport": false,
+        "closest_approach_to_claimed_field": null,
         "airports_touched": null,
         "first_where": null,
         "last_where": null,

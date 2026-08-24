@@ -260,6 +260,26 @@ G550 out of production; the G600 is Gulfstream's in-production aircraft in that 
 
 List price is for a green airframe — interior completion, avionics options and any mission equipment are extra, and fleet buyers do not pay list. The full table for all 33 priced airframes in this investigation, with the method behind each figure, is on **[Aircraft Costs](/Planes/Aircraft-Costs/overview)**.
 
+## Flight data recovery
+
+Coverage for this tail is moderate and begins on **3 May 2023**, the day of the first alleged overlap. Its FlightRadar24 page loads normally, and two archived copies of that page were recovered from the Internet Archive — the only Egyptian tail here for which archived flight rows exist.
+
+| Source | What it holds for SU-BND |
+|---|---|
+| adsb.lol `globe_history` | **19 days**, 2023-05-03 to 2025-09-15 |
+| globe.airplanes.live | **27 days**, 2023-05-03 to 2026-06-04 |
+| ADS-B Exchange monthly sample | **6 days**, 2022-01-01 to 2026-07-01 |
+| FlightRadar24 page | HTTP **200** in a real browser on 24 Aug 2026 — **14 history rows** on the free seven-day tier, everything older paywalled |
+| Internet Archive | **2** page snapshots held (12 Oct 2025, 18 Nov 2025); **11** flight rows recovered off them |
+
+**Alleged overlaps.** This tail carries **16 alleged overlap dates**. **7** of them now have a recovered ADS-B track for that day, and **6 of those 7 are consistent** with the alleged location. The single inconsistent result is **12 May 2023**, alleged at St. Louis MO: the recovered track runs Paris Le Bourget to Inshas Air Base, Egypt. The strongest confirmations run the other way — **19 April 2024** and **23 May 2025** both end 1.4 km from Provo Municipal, and the **10 September 2025** track both starts and ends at Provo. A nearest-airport label is geometry, not a landing record, so the distances travel with the claim. Working shown on [Overlap Recovery](/Planes/Flight-Data-Recovery/Overlap-Recovery).
+
+**Removed from: nothing.** No tracking site was found to have removed this aircraft's page. Our scripts recorded HTTP 403 from FlightRadar24, RadarBox and Planespotters, but all three return the identical 403 to unrelated control aircraft asked by the identical script. It is a robot block, not a deletion — see [What A 403 Means](/Planes/Flight-Data-Recovery/What-A-403-Means).
+
+Raw payloads are kept in `site/docs/Planes/SU-BND/data/recovered/`, with the source named in every filename and a `.meta.json` sidecar per file recording source, URL, HTTP status, bytes and date.
+
+More: [Flight Data Recovery](/Planes/Flight-Data-Recovery/overview) · [Per-Aircraft Status](/Planes/Flight-Data-Recovery/Per-Aircraft-Status)
+
 {/* CK_INTERESTING_HERE_START */}
 
 ## Interesting In This Area

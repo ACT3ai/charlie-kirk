@@ -69,3 +69,10 @@ export function label(lat, lon) {
   const where = [a.city, a.country === "US" ? a.region.split("-").pop() : a.country].filter(Boolean).join(" ");
   return `${a.icao}${a.iata ? "/" + a.iata : ""} (${a.name}, ${where}) ${a.km}km`;
 }
+
+// Look up a field by ICAO or IATA identifier. Prefers ICAO: IATA codes are reused
+// around the world and a three-letter match can silently pick another continent.
+export function byCode(code) {
+  const a = load(); const c = String(code).trim().toUpperCase();
+  return a.find((x) => x.icao === c) || a.find((x) => x.iata === c) || null;
+}

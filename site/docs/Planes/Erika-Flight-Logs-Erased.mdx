@@ -80,9 +80,14 @@ This page originally said the removal made the record unavailable to anyone outs
 longer the position, and the change is worth stating plainly rather than quietly editing.**
 
 Two separate things turned out to be wrong with it. **First, the removal itself could not be
-confirmed** — tested in a browser, the FlightRadar24 page still loads and still holds the aircraft's
-record, and the empty flight table it shows is the same empty table a control aircraft shows,
-because the free tier displays seven days and nothing more. **Second, and regardless of that, the
+confirmed, and has since been affirmatively ruled out** — tested in a browser on 24 August 2026, the
+FlightRadar24 page loads HTTP 200 and still holds the aircraft's record, and the empty flight table
+it shows is the same empty table a control aircraft shows, because the free tier displays seven days
+and nothing more. The test was then widened: **all sixteen aircraft in this investigation and four
+unrelated control aircraft were probed, and every single one returned HTTP 200.** The 403 that
+started this was FlightRadar24 refusing scripted requests, which it does to a Ryanair 737 and a
+Lufthansa A380 just as readily. See
+**[What A 403 Actually Means](/Planes/Flight-Data-Recovery/What-A-403-Means)**. **Second, and regardless of that, the
 data was recoverable anyway.**
 
 Treating "the logs were erased" as a working assumption, this investigation went looking for
@@ -91,7 +96,7 @@ Recovery](/Planes/Flight-Data-Recovery/overview)**. Three things came back:
 
 * **The FlightRadar24 flight-history table itself.** The Internet Archive holds a copy of the
   N102DZ page captured **11 September 2025, 05:57 UTC** — about twenty hours after the
-  assassination, and roughly eight months before the reported removal. It contains **twelve flight
+  assassination, and roughly eight months before the reported removal. It contains **eleven flight
   rows** covering 4–10 September 2025 with scheduled and actual times. It is reproduced in full on
   **[N102DZ](/Planes/N102DZ/overview)**.
 * **The underlying ADS-B record, which was never gone at all.** N102DZ's tracks remain retrievable
@@ -104,7 +109,7 @@ Recovery](/Planes/Flight-Data-Recovery/overview)**. Three things came back:
 ### What the recovered logs actually contain
 
 The poster said the logs are "far from boring." **The recovered table does not support that.** The
-twelve rows are ordinary point-to-point business-jet legs — Scottsdale, Dallas, New Braunfels, Los
+eleven rows are ordinary point-to-point business-jet legs — Scottsdale, Dallas, New Braunfels, Los
 Angeles, Phoenix, Salt Lake City, Provo, Camarillo. There is no foreign destination in them, no
 Egyptian airport, and nothing that corroborates the aircraft-swap reading the wider thread advances.
 

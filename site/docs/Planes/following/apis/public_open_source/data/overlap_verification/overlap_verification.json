@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-08-24T17:33:16.248Z",
+  "generated_utc": "2026-08-24T17:36:21.953Z",
   "radius_km": 15,
   "method": "For each claimed overlap, both free ADS-B history archives were queried for the claimed foreign tail on the claimed date and the day either side. Positions were resolved to the nearest airport in the OurAirports public-domain gazetteer. A verdict of ELSEWHERE refutes a row; NO_ARCHIVE_COVERAGE and NOT_HEARD do not.",
   "results": [
@@ -7,6 +7,9 @@
       "overlap_id": "OWENS-001",
       "date": "2022-10-05",
       "claimed_airport": "KJFK",
+      "claimed_codes": [
+        "KJFK"
+      ],
       "claimed_city": "New York",
       "claimed_state": "NY",
       "claimed_tails": [
@@ -53,6 +56,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -95,6 +99,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -137,6 +142,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -151,6 +157,9 @@
       "overlap_id": "OWENS-002",
       "date": "2022-10-20",
       "claimed_airport": "KORD",
+      "claimed_codes": [
+        "KORD"
+      ],
       "claimed_city": "Chicago",
       "claimed_state": "IL",
       "claimed_tails": [
@@ -197,6 +206,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -239,6 +249,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -281,6 +292,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -295,6 +307,9 @@
       "overlap_id": "OWENS-003",
       "date": "2022-11-01",
       "claimed_airport": "KBOS",
+      "claimed_codes": [
+        "KBOS"
+      ],
       "claimed_city": "Boston",
       "claimed_state": "MA",
       "claimed_tails": [
@@ -341,6 +356,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -383,6 +399,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -425,6 +442,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -439,6 +457,9 @@
       "overlap_id": "OWENS-004",
       "date": "2022-11-13",
       "claimed_airport": "KICT",
+      "claimed_codes": [
+        "KICT"
+      ],
       "claimed_city": "Wichita",
       "claimed_state": "KS",
       "claimed_tails": [
@@ -485,6 +506,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -527,6 +549,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -569,6 +592,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -583,6 +607,9 @@
       "overlap_id": "OWENS-005",
       "date": "2022-11-17",
       "claimed_airport": "KILG",
+      "claimed_codes": [
+        "KILG"
+      ],
       "claimed_city": "Wilmington",
       "claimed_state": "DE",
       "claimed_tails": [
@@ -629,6 +656,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -671,6 +699,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -713,6 +742,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -727,6 +757,9 @@
       "overlap_id": "OWENS-006",
       "date": "2022-12-20",
       "claimed_airport": "KSTL",
+      "claimed_codes": [
+        "KSTL"
+      ],
       "claimed_city": "St. Louis",
       "claimed_state": "MO",
       "claimed_tails": [
@@ -773,6 +806,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -815,6 +849,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -857,6 +892,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -871,6 +907,9 @@
       "overlap_id": "OWENS-007",
       "date": "2022-12-27",
       "claimed_airport": "KBGR",
+      "claimed_codes": [
+        "KBGR"
+      ],
       "claimed_city": "Bangor",
       "claimed_state": "ME",
       "claimed_tails": [
@@ -917,6 +956,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -959,6 +999,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -1001,6 +1042,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -1015,6 +1057,9 @@
       "overlap_id": "OWENS-008",
       "date": "2023-01-15",
       "claimed_airport": "KATL",
+      "claimed_codes": [
+        "KATL"
+      ],
       "claimed_city": "Atlanta",
       "claimed_state": "GA",
       "claimed_tails": [
@@ -1061,6 +1106,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -1103,6 +1149,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -1145,6 +1192,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -1159,6 +1207,9 @@
       "overlap_id": "OWENS-009",
       "date": "2023-02-10",
       "claimed_airport": "KILG",
+      "claimed_codes": [
+        "KILG"
+      ],
       "claimed_city": "Wilmington",
       "claimed_state": "DE",
       "claimed_tails": [
@@ -1205,6 +1256,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -1247,6 +1299,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -1289,6 +1342,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -1303,6 +1357,9 @@
       "overlap_id": "OWENS-010",
       "date": "2023-04-01",
       "claimed_airport": "KSTL",
+      "claimed_codes": [
+        "KSTL"
+      ],
       "claimed_city": "St. Louis",
       "claimed_state": "MO",
       "claimed_tails": [
@@ -1320,6 +1377,7 @@
             "both_agree": true,
             "heard": true,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": [
               "IT-0341 5.4km first_fix",
               "VB02 13.74km last_fix"
@@ -1336,6 +1394,12 @@
             "both_agree": true,
             "heard": true,
             "at_claimed_airport": true,
+            "closest_approach_to_claimed_field": {
+              "code": "KSTL",
+              "km": 0.48,
+              "utc": "2023-04-01T15:55:15.160Z",
+              "on_ground": false
+            },
             "airports_touched": [
               "KSTL 5.09km below_4000ft",
               "K1H0 7.57km below_4000ft",
@@ -1383,6 +1447,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -1397,6 +1462,9 @@
       "overlap_id": "OWENS-011",
       "date": "2023-04-06",
       "claimed_airport": "KILG",
+      "claimed_codes": [
+        "KILG"
+      ],
       "claimed_city": "Wilmington",
       "claimed_state": "DE",
       "claimed_tails": [
@@ -1443,6 +1511,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -1456,6 +1525,12 @@
             "both_agree": true,
             "heard": true,
             "at_claimed_airport": true,
+            "closest_approach_to_claimed_field": {
+              "code": "KILG",
+              "km": 1.63,
+              "utc": "2023-04-06T15:33:43.920Z",
+              "on_ground": false
+            },
             "airports_touched": [
               "KSUS 0.63km below_4000ft",
               "KN57 3.3km below_4000ft",
@@ -1503,6 +1578,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -1517,6 +1593,9 @@
       "overlap_id": "OWENS-012",
       "date": "2023-04-14",
       "claimed_airport": "KICT",
+      "claimed_codes": [
+        "KICT"
+      ],
       "claimed_city": "Wichita",
       "claimed_state": "KS",
       "claimed_tails": [
@@ -1534,6 +1613,12 @@
             "both_agree": true,
             "heard": true,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": {
+              "code": "KICT",
+              "km": 7419.52,
+              "utc": "2023-04-13T12:18:12.780Z",
+              "on_ground": false
+            },
             "airports_touched": [
               "LFPG 9.46km below_4000ft",
               "LGZA 123.52km first_fix"
@@ -1550,6 +1635,12 @@
             "both_agree": true,
             "heard": true,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": {
+              "code": "KICT",
+              "km": 7411.49,
+              "utc": "2023-04-14T09:01:07.280Z",
+              "on_ground": false
+            },
             "airports_touched": [
               "LFPG 5.39km below_4000ft",
               "LFPH 7.45km below_4000ft",
@@ -1596,6 +1687,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -1610,6 +1702,9 @@
       "overlap_id": "OWENS-013",
       "date": "2023-04-20",
       "claimed_airport": "KILG",
+      "claimed_codes": [
+        "KILG"
+      ],
       "claimed_city": "Wilmington",
       "claimed_state": "DE",
       "claimed_tails": [
@@ -1644,6 +1739,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -1657,6 +1753,12 @@
             "both_agree": true,
             "heard": true,
             "at_claimed_airport": true,
+            "closest_approach_to_claimed_field": {
+              "code": "KILG",
+              "km": 0.56,
+              "utc": "2023-04-20T17:04:07.390Z",
+              "on_ground": true
+            },
             "airports_touched": [
               "3PA8 4.84km below_4000ft",
               "US-6790 4.62km below_4000ft",
@@ -1678,6 +1780,12 @@
             "both_agree": true,
             "heard": true,
             "at_claimed_airport": true,
+            "closest_approach_to_claimed_field": {
+              "code": "KILG",
+              "km": 1.2,
+              "utc": "2023-04-21T11:59:32.570Z",
+              "on_ground": false
+            },
             "airports_touched": [
               "KILG 1.2km below_4000ft",
               "JY39 7.28km below_4000ft",
@@ -1697,6 +1805,9 @@
       "overlap_id": "OWENS-014",
       "date": "2023-05-03",
       "claimed_airport": "KCPS",
+      "claimed_codes": [
+        "KCPS"
+      ],
       "claimed_city": "St. Louis",
       "claimed_state": "MO",
       "claimed_tails": [
@@ -1743,6 +1854,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -1756,6 +1868,12 @@
             "both_agree": true,
             "heard": true,
             "at_claimed_airport": true,
+            "closest_approach_to_claimed_field": {
+              "code": "KCPS",
+              "km": 6.7,
+              "utc": "2023-05-03T15:29:24.220Z",
+              "on_ground": false
+            },
             "airports_touched": [
               "KCPS 6.7km below_4000ft",
               "7IS9 9.87km below_4000ft",
@@ -1805,6 +1923,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -1819,6 +1938,9 @@
       "overlap_id": "OWENS-015",
       "date": "2023-05-09",
       "claimed_airport": "CYYR",
+      "claimed_codes": [
+        "CYYR"
+      ],
       "claimed_city": "St. Louis then Goose Bay",
       "claimed_state": "MO",
       "claimed_tails": [
@@ -1865,6 +1987,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -1878,6 +2001,12 @@
             "both_agree": true,
             "heard": true,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": {
+              "code": "CYYR",
+              "km": 3057.32,
+              "utc": "2023-05-09T20:03:41.630Z",
+              "on_ground": false
+            },
             "airports_touched": [
               "7IS2 1.78km below_4000ft",
               "2IL7 2.04km below_4000ft",
@@ -1895,6 +2024,7 @@
             "both_agree": true,
             "heard": true,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": [
               "EIBT 114.6km first_fix",
               "FR-0503 13.2km last_fix"
@@ -1912,6 +2042,9 @@
       "overlap_id": "OWENS-016",
       "date": "2023-06-12",
       "claimed_airport": "KPVU",
+      "claimed_codes": [
+        "KPVU"
+      ],
       "claimed_city": "Provo",
       "claimed_state": "UT",
       "claimed_tails": [
@@ -1929,6 +2062,7 @@
             "both_agree": false,
             "heard": true,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": [
               "HE12 11.58km first_fix",
               "HECP 14.18km last_fix"
@@ -1974,6 +2108,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -2016,6 +2151,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -2030,6 +2166,9 @@
       "overlap_id": "OWENS-017",
       "date": "2023-07-25",
       "claimed_airport": "KLNK",
+      "claimed_codes": [
+        "KLNK"
+      ],
       "claimed_city": "Lincoln",
       "claimed_state": "NE",
       "claimed_tails": [
@@ -2076,6 +2215,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -2118,6 +2258,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -2160,6 +2301,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -2174,6 +2316,9 @@
       "overlap_id": "OWENS-018",
       "date": "2023-09-03",
       "claimed_airport": "KILG",
+      "claimed_codes": [
+        "KILG"
+      ],
       "claimed_city": "Wilmington",
       "claimed_state": "DE",
       "claimed_tails": [
@@ -2220,6 +2365,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -2262,6 +2408,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -2304,6 +2451,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -2318,6 +2466,9 @@
       "overlap_id": "OWENS-019",
       "date": "2024-01-10",
       "claimed_airport": "KSMF",
+      "claimed_codes": [
+        "KSMF"
+      ],
       "claimed_city": "Sacramento",
       "claimed_state": "CA",
       "claimed_tails": [
@@ -2364,6 +2515,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -2394,6 +2546,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -2424,6 +2577,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -2438,6 +2592,9 @@
       "overlap_id": "OWENS-020",
       "date": "2024-02-09",
       "claimed_airport": "KOMA",
+      "claimed_codes": [
+        "KOMA"
+      ],
       "claimed_city": "Omaha / Lincoln",
       "claimed_state": "NE",
       "claimed_tails": [
@@ -2455,6 +2612,12 @@
             "both_agree": true,
             "heard": true,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": {
+              "code": "KOMA",
+              "km": 7239.25,
+              "utc": "2024-02-08T11:18:02.180Z",
+              "on_ground": false
+            },
             "airports_touched": [
               "LFPE 10.86km below_4000ft",
               "LFPG 11.02km below_4000ft",
@@ -2473,6 +2636,12 @@
             "both_agree": true,
             "heard": true,
             "at_claimed_airport": true,
+            "closest_approach_to_claimed_field": {
+              "code": "KOMA",
+              "km": 0.31,
+              "utc": "2024-02-09T18:16:07.010Z",
+              "on_ground": false
+            },
             "airports_touched": [
               "LFPB 1.12km below_4000ft",
               "LFFE 6.59km below_4000ft",
@@ -2522,6 +2691,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -2536,6 +2706,9 @@
       "overlap_id": "OWENS-021",
       "date": "2024-02-14",
       "claimed_airport": "KILG",
+      "claimed_codes": [
+        "KILG"
+      ],
       "claimed_city": "Wilmington",
       "claimed_state": "DE",
       "claimed_tails": [
@@ -2570,6 +2743,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -2583,6 +2757,12 @@
             "both_agree": true,
             "heard": true,
             "at_claimed_airport": true,
+            "closest_approach_to_claimed_field": {
+              "code": "KILG",
+              "km": 0.82,
+              "utc": "2024-02-14T16:38:55.260Z",
+              "on_ground": false
+            },
             "airports_touched": [
               "KLNK 1.04km below_4000ft",
               "KN57 3.71km below_4000ft",
@@ -2619,6 +2799,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -2633,6 +2814,9 @@
       "overlap_id": "OWENS-022",
       "date": "2024-03-18",
       "claimed_airport": "KICT",
+      "claimed_codes": [
+        "KICT"
+      ],
       "claimed_city": "Wichita",
       "claimed_state": "KS",
       "claimed_tails": [
@@ -2677,6 +2861,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -2707,6 +2892,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -2737,6 +2923,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -2751,6 +2938,9 @@
       "overlap_id": "OWENS-023",
       "date": "2024-03-29",
       "claimed_airport": "KICT",
+      "claimed_codes": [
+        "KICT"
+      ],
       "claimed_city": "Wichita",
       "claimed_state": "KS",
       "claimed_tails": [
@@ -2768,6 +2958,7 @@
             "both_agree": true,
             "heard": true,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": [
               "HE16 21.01km first_fix",
               "LFSY 2.98km last_fix"
@@ -2784,6 +2975,12 @@
             "both_agree": true,
             "heard": true,
             "at_claimed_airport": true,
+            "closest_approach_to_claimed_field": {
+              "code": "KICT",
+              "km": 2.27,
+              "utc": "2024-03-29T19:19:00.940Z",
+              "on_ground": false
+            },
             "airports_touched": [
               "3KS7 5.32km below_4000ft",
               "KK32 4.85km below_4000ft",
@@ -2831,6 +3028,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -2845,6 +3043,9 @@
       "overlap_id": "OWENS-024",
       "date": "2024-04-03",
       "claimed_airport": "KICT",
+      "claimed_codes": [
+        "KICT"
+      ],
       "claimed_city": "Wichita / Lawrence",
       "claimed_state": "KS",
       "claimed_tails": [
@@ -2891,6 +3092,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -2904,6 +3106,12 @@
             "both_agree": true,
             "heard": true,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": {
+              "code": "KICT",
+              "km": 1852.96,
+              "utc": "2024-04-03T15:54:45.350Z",
+              "on_ground": false
+            },
             "airports_touched": [
               "3PA8 4.32km below_4000ft",
               "US-6790 1.75km below_4000ft",
@@ -2952,6 +3160,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -2966,6 +3175,9 @@
       "overlap_id": "OWENS-025",
       "date": "2024-04-19",
       "claimed_airport": "KPVU",
+      "claimed_codes": [
+        "KPVU"
+      ],
       "claimed_city": "Provo",
       "claimed_state": "UT",
       "claimed_tails": [
@@ -2983,6 +3195,7 @@
             "both_agree": true,
             "heard": true,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": [
               "HE16 22.41km first_fix",
               "LFPV 6.11km last_fix"
@@ -2999,6 +3212,12 @@
             "both_agree": true,
             "heard": true,
             "at_claimed_airport": true,
+            "closest_approach_to_claimed_field": {
+              "code": "KPVU",
+              "km": 0.05,
+              "utc": "2024-04-19T21:33:34.670Z",
+              "on_ground": true
+            },
             "airports_touched": [
               "LFPB 6.67km below_4000ft",
               "KSLC 1.6km on_ground",
@@ -3043,6 +3262,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -3057,6 +3277,9 @@
       "overlap_id": "OWENS-026",
       "date": "2024-04-23",
       "claimed_airport": "KPVU",
+      "claimed_codes": [
+        "KPVU"
+      ],
       "claimed_city": "Provo",
       "claimed_state": "UT",
       "claimed_tails": [
@@ -3074,6 +3297,12 @@
             "both_agree": true,
             "heard": true,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": {
+              "code": "KPVU",
+              "km": 13817.88,
+              "utc": "2024-04-22T05:58:02.940Z",
+              "on_ground": false
+            },
             "airports_touched": [
               "HEAZ 1.89km below_4000ft",
               "LFPO 8.8km last_fix"
@@ -3090,6 +3319,12 @@
             "both_agree": true,
             "heard": true,
             "at_claimed_airport": true,
+            "closest_approach_to_claimed_field": {
+              "code": "KPVU",
+              "km": 0,
+              "utc": "2024-04-23T18:13:11.070Z",
+              "on_ground": true
+            },
             "airports_touched": [
               "LFPB 4.05km below_4000ft",
               "LFPG 5.45km below_4000ft",
@@ -3134,6 +3369,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -3148,6 +3384,9 @@
       "overlap_id": "OWENS-027",
       "date": "2024-04-28",
       "claimed_airport": "KILG",
+      "claimed_codes": [
+        "KILG"
+      ],
       "claimed_city": "Wilmington",
       "claimed_state": "DE",
       "claimed_tails": [
@@ -3192,6 +3431,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -3205,6 +3445,12 @@
             "both_agree": true,
             "heard": true,
             "at_claimed_airport": true,
+            "closest_approach_to_claimed_field": {
+              "code": "KILG",
+              "km": 1.57,
+              "utc": "2024-04-28T17:41:20.170Z",
+              "on_ground": false
+            },
             "airports_touched": [
               "KPVU 1.52km on_ground",
               "KN57 3.26km below_4000ft",
@@ -3251,6 +3497,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -3265,6 +3512,9 @@
       "overlap_id": "OWENS-028",
       "date": "2024-07-20",
       "claimed_airport": "KOMA",
+      "claimed_codes": [
+        "KOMA"
+      ],
       "claimed_city": "Omaha / Lincoln",
       "claimed_state": "NE",
       "claimed_tails": [
@@ -3311,6 +3561,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -3351,6 +3602,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -3364,6 +3616,12 @@
             "both_agree": true,
             "heard": true,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": {
+              "code": "KOMA",
+              "km": 12019.58,
+              "utc": "2024-07-21T08:32:40.530Z",
+              "on_ground": false
+            },
             "airports_touched": [
               "HEBA 1.85km below_4000ft",
               "HE38 47.71km first_fix",
@@ -3382,6 +3640,9 @@
       "overlap_id": "OWENS-029",
       "date": "2024-08-17",
       "claimed_airport": "KOMA",
+      "claimed_codes": [
+        "KOMA"
+      ],
       "claimed_city": "Omaha / Lincoln",
       "claimed_state": "NE",
       "claimed_tails": [
@@ -3426,6 +3687,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -3466,6 +3728,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -3479,6 +3742,12 @@
             "both_agree": false,
             "heard": true,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": {
+              "code": "KOMA",
+              "km": 12309.67,
+              "utc": "2024-08-18T09:37:17.350Z",
+              "on_ground": false
+            },
             "airports_touched": [
               "HECA 4.81km below_4000ft",
               "EG-0058 12.74km last_fix"
@@ -3496,6 +3765,9 @@
       "overlap_id": "OWENS-030",
       "date": "2024-12-08",
       "claimed_airport": "KPVU",
+      "claimed_codes": [
+        "KPVU"
+      ],
       "claimed_city": "Provo",
       "claimed_state": "UT",
       "claimed_tails": [
@@ -3513,6 +3785,7 @@
             "both_agree": true,
             "heard": true,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": [
               "HE15 47.88km first_fix",
               "HE38 16.29km last_fix"
@@ -3546,6 +3819,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -3576,6 +3850,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -3590,6 +3865,9 @@
       "overlap_id": "OWENS-031",
       "date": "2025-01-12",
       "claimed_airport": "KICT",
+      "claimed_codes": [
+        "KICT"
+      ],
       "claimed_city": "Wichita",
       "claimed_state": "KS",
       "claimed_tails": [
@@ -3624,6 +3902,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -3654,6 +3933,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -3684,6 +3964,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -3698,6 +3979,9 @@
       "overlap_id": "OWENS-032",
       "date": "2025-01-17",
       "claimed_airport": "KICT",
+      "claimed_codes": [
+        "KICT"
+      ],
       "claimed_city": "Wichita",
       "claimed_state": "KS",
       "claimed_tails": [
@@ -3732,6 +4016,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -3762,6 +4047,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -3804,6 +4090,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -3818,6 +4105,9 @@
       "overlap_id": "OWENS-033",
       "date": "2025-03-15",
       "claimed_airport": "KICT",
+      "claimed_codes": [
+        "KICT"
+      ],
       "claimed_city": "Wichita",
       "claimed_state": "KS",
       "claimed_tails": [
@@ -3852,6 +4142,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -3882,6 +4173,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -3912,6 +4204,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -3926,6 +4219,9 @@
       "overlap_id": "OWENS-034",
       "date": "2025-03-22",
       "claimed_airport": "KICT",
+      "claimed_codes": [
+        "KICT"
+      ],
       "claimed_city": "Wichita",
       "claimed_state": "KS",
       "claimed_tails": [
@@ -3972,6 +4268,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -4014,6 +4311,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -4044,6 +4342,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -4058,6 +4357,9 @@
       "overlap_id": "OWENS-035",
       "date": "2025-05-23",
       "claimed_airport": "KPVU",
+      "claimed_codes": [
+        "KPVU"
+      ],
       "claimed_city": "Provo",
       "claimed_state": "UT",
       "claimed_tails": [
@@ -4075,6 +4377,12 @@
             "both_agree": true,
             "heard": true,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": {
+              "code": "KPVU",
+              "km": 8404.53,
+              "utc": "2025-05-22T09:56:39.390Z",
+              "on_ground": false
+            },
             "airports_touched": [
               "FR-0504 4.37km below_4000ft",
               "LFPK 14.89km below_4000ft",
@@ -4095,6 +4403,12 @@
             "both_agree": true,
             "heard": true,
             "at_claimed_airport": true,
+            "closest_approach_to_claimed_field": {
+              "code": "KPVU",
+              "km": 0.03,
+              "utc": "2025-05-23T20:38:06.220Z",
+              "on_ground": true
+            },
             "airports_touched": [
               "LFPB 3.65km below_4000ft",
               "LFPG 4.93km below_4000ft",
@@ -4141,6 +4455,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -4155,6 +4470,9 @@
       "overlap_id": "OWENS-036",
       "date": "2025-06-18",
       "claimed_airport": "KOMA",
+      "claimed_codes": [
+        "KOMA"
+      ],
       "claimed_city": "Omaha / Lincoln",
       "claimed_state": "NE",
       "claimed_tails": [
@@ -4199,6 +4517,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -4212,6 +4531,7 @@
             "both_agree": true,
             "heard": true,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": [
               "HEBA 36.13km first_fix",
               "HEAL 75.92km last_fix"
@@ -4245,6 +4565,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -4259,6 +4580,9 @@
       "overlap_id": "OWENS-037",
       "date": "2025-07-07",
       "claimed_airport": "KPVU",
+      "claimed_codes": [
+        "KPVU"
+      ],
       "claimed_city": "Provo",
       "claimed_state": "UT",
       "claimed_tails": [
@@ -4293,6 +4617,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -4323,6 +4648,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -4365,6 +4691,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -4379,6 +4706,9 @@
       "overlap_id": "OWENS-038",
       "date": "2025-07-20",
       "claimed_airport": "KOMA",
+      "claimed_codes": [
+        "KOMA"
+      ],
       "claimed_city": "Omaha / Lincoln",
       "claimed_state": "NE",
       "claimed_tails": [
@@ -4396,6 +4726,12 @@
             "both_agree": true,
             "heard": true,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": {
+              "code": "KOMA",
+              "km": 7236.5,
+              "utc": "2025-07-19T10:14:49.560Z",
+              "on_ground": true
+            },
             "airports_touched": [
               "FR-0504 14.72km below_4000ft",
               "LFPK 16.47km below_4000ft",
@@ -4416,6 +4752,12 @@
             "both_agree": true,
             "heard": true,
             "at_claimed_airport": true,
+            "closest_approach_to_claimed_field": {
+              "code": "KOMA",
+              "km": 1.71,
+              "utc": "2025-07-20T22:06:10.350Z",
+              "on_ground": false
+            },
             "airports_touched": [
               "LFPB 0.91km on_ground",
               "90IA 17.94km below_4000ft",
@@ -4457,6 +4799,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -4471,6 +4814,9 @@
       "overlap_id": "OWENS-039",
       "date": "2025-08-17",
       "claimed_airport": "KOMA",
+      "claimed_codes": [
+        "KOMA"
+      ],
       "claimed_city": "Omaha / Lincoln",
       "claimed_state": "NE",
       "claimed_tails": [
@@ -4488,6 +4834,12 @@
             "both_agree": true,
             "heard": true,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": {
+              "code": "KOMA",
+              "km": 7225.46,
+              "utc": "2025-08-16T09:55:44.010Z",
+              "on_ground": false
+            },
             "airports_touched": [
               "LFPV 6.04km below_4000ft",
               "LFPZ 7.02km below_4000ft",
@@ -4506,6 +4858,12 @@
             "both_agree": true,
             "heard": true,
             "at_claimed_airport": true,
+            "closest_approach_to_claimed_field": {
+              "code": "KOMA",
+              "km": 0.65,
+              "utc": "2025-08-17T16:45:18.350Z",
+              "on_ground": false
+            },
             "airports_touched": [
               "LFPB 1.08km below_4000ft",
               "LFPG 5.37km below_4000ft",
@@ -4549,6 +4907,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -4563,6 +4922,9 @@
       "overlap_id": "OWENS-040",
       "date": "2025-09-04",
       "claimed_airport": "KPVU",
+      "claimed_codes": [
+        "KPVU"
+      ],
       "claimed_city": "Provo",
       "claimed_state": "UT",
       "claimed_tails": [
@@ -4580,6 +4942,12 @@
             "both_agree": true,
             "heard": true,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": {
+              "code": "KPVU",
+              "km": 8399.51,
+              "utc": "2025-09-03T10:00:47.830Z",
+              "on_ground": true
+            },
             "airports_touched": [
               "LFPK 17.28km below_4000ft",
               "LFPE 15.7km below_4000ft",
@@ -4599,6 +4967,12 @@
             "both_agree": true,
             "heard": true,
             "at_claimed_airport": true,
+            "closest_approach_to_claimed_field": {
+              "code": "KPVU",
+              "km": 0.16,
+              "utc": "2025-09-04T18:49:38.010Z",
+              "on_ground": true
+            },
             "airports_touched": [
               "LFPB 0.94km on_ground",
               "KPVU 0.19km on_ground"
@@ -4632,6 +5006,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -4646,6 +5021,9 @@
       "overlap_id": "OWENS-041",
       "date": "2025-09-10",
       "claimed_airport": "KPVU",
+      "claimed_codes": [
+        "KPVU"
+      ],
       "claimed_city": "Provo then Wilmington",
       "claimed_state": "UT/DE",
       "claimed_tails": [
@@ -4692,6 +5070,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -4705,6 +5084,12 @@
             "both_agree": true,
             "heard": true,
             "at_claimed_airport": true,
+            "closest_approach_to_claimed_field": {
+              "code": "KPVU",
+              "km": 1.23,
+              "utc": "2025-09-10T13:08:57.280Z",
+              "on_ground": true
+            },
             "airports_touched": [
               "KPVU 1.37km on_ground",
               "KN57 7.02km below_4000ft",
@@ -4727,6 +5112,12 @@
             "both_agree": true,
             "heard": true,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": {
+              "code": "KPVU",
+              "km": 3090.41,
+              "utc": "2025-09-11T11:57:38.290Z",
+              "on_ground": false
+            },
             "airports_touched": [
               "KILG 0.95km on_ground",
               "NJ30 11.19km below_4000ft",
@@ -4746,6 +5137,9 @@
       "overlap_id": "OWENS-042",
       "date": "2025-09-13",
       "claimed_airport": "KPVU",
+      "claimed_codes": [
+        "KPVU"
+      ],
       "claimed_city": "Provo",
       "claimed_state": "UT",
       "claimed_tails": [
@@ -4763,6 +5157,12 @@
             "both_agree": true,
             "heard": true,
             "at_claimed_airport": true,
+            "closest_approach_to_claimed_field": {
+              "code": "KPVU",
+              "km": 1.29,
+              "utc": "2025-09-12T16:48:52.550Z",
+              "on_ground": true
+            },
             "airports_touched": [
               "KPVU 1.29km on_ground"
             ],
@@ -4777,7 +5177,8 @@
             "archive_control_probe": null,
             "both_agree": true,
             "heard": true,
-            "at_claimed_airport": true,
+            "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": [
               "KPVU 0.62km first_fix",
               "CA-0761 58.9km last_fix"
@@ -4785,7 +5186,7 @@
             "first_where": "KPVU/PVU (Provo Municipal Airport, Provo UT) 0.62km",
             "last_where": "CA-0761 (Nipigon Airport, Nipigon CA) 58.9km",
             "points": 810,
-            "verdict": "AT_CLAIMED_AIRPORT"
+            "verdict": "ELSEWHERE"
           },
           "2025-09-14": {
             "adsb_lol_http": 200,
@@ -4794,6 +5195,12 @@
             "both_agree": true,
             "heard": true,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": {
+              "code": "KPVU",
+              "km": 8377.26,
+              "utc": "2025-09-14T05:51:14.460Z",
+              "on_ground": false
+            },
             "airports_touched": [
               "LFAD 15.28km below_4000ft",
               "FR-0467 16.17km below_4000ft",
@@ -4816,6 +5223,9 @@
       "overlap_id": "OWENS-043",
       "date": "2022-11-25",
       "claimed_airport": "KILG",
+      "claimed_codes": [
+        "KILG"
+      ],
       "claimed_city": "Wilmington",
       "claimed_state": "DE",
       "claimed_tails": [
@@ -4862,6 +5272,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -4904,6 +5315,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -4946,6 +5358,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -4960,6 +5373,9 @@
       "overlap_id": "OWENS-044",
       "date": "2022-12-05",
       "claimed_airport": "KORD",
+      "claimed_codes": [
+        "KORD"
+      ],
       "claimed_city": "Chicago",
       "claimed_state": "IL",
       "claimed_tails": [
@@ -5006,6 +5422,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -5048,6 +5465,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -5090,6 +5508,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -5104,6 +5523,9 @@
       "overlap_id": "OWENS-045",
       "date": "2023-01-12",
       "claimed_airport": "KICT",
+      "claimed_codes": [
+        "KICT"
+      ],
       "claimed_city": "Wichita",
       "claimed_state": "KS",
       "claimed_tails": [
@@ -5150,6 +5572,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -5192,6 +5615,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -5234,6 +5658,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -5248,6 +5673,9 @@
       "overlap_id": "OWENS-046",
       "date": "2023-02-25",
       "claimed_airport": "KSUS",
+      "claimed_codes": [
+        "KSUS"
+      ],
       "claimed_city": "St. Louis",
       "claimed_state": "MO",
       "claimed_tails": [
@@ -5265,6 +5693,12 @@
             "both_agree": true,
             "heard": true,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": {
+              "code": "KSUS",
+              "km": 6892.13,
+              "utc": "2023-02-24T10:59:52.750Z",
+              "on_ground": false
+            },
             "airports_touched": [
               "LFPZ 9.7km below_4000ft",
               "LFPB 11.6km below_4000ft",
@@ -5282,6 +5716,12 @@
             "both_agree": true,
             "heard": true,
             "at_claimed_airport": true,
+            "closest_approach_to_claimed_field": {
+              "code": "KSUS",
+              "km": 3.1,
+              "utc": "2023-02-25T18:41:11.860Z",
+              "on_ground": false
+            },
             "airports_touched": [
               "LFPG 4.74km below_4000ft",
               "LFPH 7.71km below_4000ft",
@@ -5331,6 +5771,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -5345,6 +5786,9 @@
       "overlap_id": "OWENS-047",
       "date": "2023-03-15",
       "claimed_airport": "KOMA",
+      "claimed_codes": [
+        "KOMA"
+      ],
       "claimed_city": "Omaha",
       "claimed_state": "NE",
       "claimed_tails": [
@@ -5391,6 +5835,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -5421,6 +5866,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -5451,6 +5897,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -5465,6 +5912,9 @@
       "overlap_id": "OWENS-048",
       "date": "2023-03-27",
       "claimed_airport": "KILG",
+      "claimed_codes": [
+        "KILG"
+      ],
       "claimed_city": "Wilmington",
       "claimed_state": "DE",
       "claimed_tails": [
@@ -5511,6 +5961,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -5553,6 +6004,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -5595,6 +6047,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -5609,6 +6062,9 @@
       "overlap_id": "OWENS-049",
       "date": "2023-04-25",
       "claimed_airport": "KICT",
+      "claimed_codes": [
+        "KICT"
+      ],
       "claimed_city": "Wichita",
       "claimed_state": "KS",
       "claimed_tails": [
@@ -5655,6 +6111,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -5697,6 +6154,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -5739,6 +6197,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -5753,6 +6212,9 @@
       "overlap_id": "OWENS-050",
       "date": "2023-05-12",
       "claimed_airport": "KSTL",
+      "claimed_codes": [
+        "KSTL"
+      ],
       "claimed_city": "St. Louis",
       "claimed_state": "MO",
       "claimed_tails": [
@@ -5799,6 +6261,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -5812,6 +6275,7 @@
             "both_agree": true,
             "heard": true,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": [
               "LFPB 9.63km first_fix",
               "LGEP 12.22km last_fix"
@@ -5845,6 +6309,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -5859,6 +6324,9 @@
       "overlap_id": "OWENS-051",
       "date": "2023-06-08",
       "claimed_airport": "KICT",
+      "claimed_codes": [
+        "KICT"
+      ],
       "claimed_city": "Wichita",
       "claimed_state": "KS",
       "claimed_tails": [
@@ -5905,6 +6373,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -5945,6 +6414,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -5987,6 +6457,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -6001,6 +6472,9 @@
       "overlap_id": "OWENS-052",
       "date": "2023-06-25",
       "claimed_airport": "KILG",
+      "claimed_codes": [
+        "KILG"
+      ],
       "claimed_city": "Wilmington",
       "claimed_state": "DE",
       "claimed_tails": [
@@ -6018,6 +6492,7 @@
             "both_agree": false,
             "heard": true,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": [
               "HECW 21.61km first_fix",
               "HE15 16.08km last_fix"
@@ -6063,6 +6538,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -6105,6 +6581,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -6119,6 +6596,9 @@
       "overlap_id": "OWENS-053",
       "date": "2024-03-10",
       "claimed_airport": "KSTL",
+      "claimed_codes": [
+        "KSTL"
+      ],
       "claimed_city": "St. Louis",
       "claimed_state": "MO",
       "claimed_tails": [
@@ -6153,6 +6633,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -6193,6 +6674,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -6223,6 +6705,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -6237,6 +6720,9 @@
       "overlap_id": "OWENS-054",
       "date": "2024-03-22",
       "claimed_airport": "KICT",
+      "claimed_codes": [
+        "KICT"
+      ],
       "claimed_city": "Wichita",
       "claimed_state": "KS",
       "claimed_tails": [
@@ -6271,6 +6757,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -6311,6 +6798,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -6351,6 +6839,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -6365,6 +6854,9 @@
       "overlap_id": "OWENS-055",
       "date": "2024-04-15",
       "claimed_airport": "KOMA",
+      "claimed_codes": [
+        "KOMA"
+      ],
       "claimed_city": "Omaha",
       "claimed_state": "NE",
       "claimed_tails": [
@@ -6409,6 +6901,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -6451,6 +6944,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -6464,6 +6958,12 @@
             "both_agree": false,
             "heard": true,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": {
+              "code": "KOMA",
+              "km": 12308.01,
+              "utc": "2024-04-16T16:42:51.880Z",
+              "on_ground": false
+            },
             "airports_touched": [
               "HECA 6.59km below_4000ft",
               "HE15 6.51km below_4000ft",
@@ -6482,6 +6982,9 @@
       "overlap_id": "OWENS-056",
       "date": "2024-05-03",
       "claimed_airport": "KSTL",
+      "claimed_codes": [
+        "KSTL"
+      ],
       "claimed_city": "St. Louis",
       "claimed_state": "MO",
       "claimed_tails": [
@@ -6528,6 +7031,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -6570,6 +7074,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -6612,6 +7117,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -6626,6 +7132,9 @@
       "overlap_id": "OWENS-057",
       "date": "2024-05-10",
       "claimed_airport": "KSTL",
+      "claimed_codes": [
+        "KSTL"
+      ],
       "claimed_city": "St. Louis",
       "claimed_state": "MO",
       "claimed_tails": [
@@ -6660,6 +7169,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -6702,6 +7212,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -6744,6 +7255,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -6758,6 +7270,9 @@
       "overlap_id": "OWENS-058",
       "date": "2024-06-18",
       "claimed_airport": "KLNK",
+      "claimed_codes": [
+        "KLNK"
+      ],
       "claimed_city": "Lincoln",
       "claimed_state": "NE",
       "claimed_tails": [
@@ -6792,6 +7307,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -6834,6 +7350,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -6864,6 +7381,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -6878,6 +7396,9 @@
       "overlap_id": "OWENS-059",
       "date": "2024-07-05",
       "claimed_airport": "KICT",
+      "claimed_codes": [
+        "KICT"
+      ],
       "claimed_city": "Wichita",
       "claimed_state": "KS",
       "claimed_tails": [
@@ -6924,6 +7445,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -6954,6 +7476,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -6996,6 +7519,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -7010,6 +7534,9 @@
       "overlap_id": "OWENS-060",
       "date": "2024-07-25",
       "claimed_airport": "KOMA",
+      "claimed_codes": [
+        "KOMA"
+      ],
       "claimed_city": "Omaha / Lincoln",
       "claimed_state": "NE",
       "claimed_tails": [
@@ -7044,6 +7571,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -7074,6 +7602,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -7116,6 +7645,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -7130,6 +7660,9 @@
       "overlap_id": "OWENS-061",
       "date": "2025-01-12",
       "claimed_airport": "KICT",
+      "claimed_codes": [
+        "KICT"
+      ],
       "claimed_city": "Wichita",
       "claimed_state": "KS",
       "claimed_tails": [
@@ -7164,6 +7697,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -7194,6 +7728,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -7224,6 +7759,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -7238,6 +7774,9 @@
       "overlap_id": "OWENS-062",
       "date": "2025-02-08",
       "claimed_airport": "KOMA",
+      "claimed_codes": [
+        "KOMA"
+      ],
       "claimed_city": "Omaha",
       "claimed_state": "NE",
       "claimed_tails": [
@@ -7272,6 +7811,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -7312,6 +7852,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -7342,6 +7883,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -7356,6 +7898,9 @@
       "overlap_id": "OWENS-063",
       "date": "2025-03-15",
       "claimed_airport": "KICT",
+      "claimed_codes": [
+        "KICT"
+      ],
       "claimed_city": "Wichita",
       "claimed_state": "KS",
       "claimed_tails": [
@@ -7390,6 +7935,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -7420,6 +7966,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -7450,6 +7997,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -7464,6 +8012,9 @@
       "overlap_id": "OWENS-064",
       "date": "2025-04-19",
       "claimed_airport": "KPVU",
+      "claimed_codes": [
+        "KPVU"
+      ],
       "claimed_city": "Provo",
       "claimed_state": "UT",
       "claimed_tails": [
@@ -7498,6 +8049,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -7540,6 +8092,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -7570,6 +8123,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -7584,6 +8138,9 @@
       "overlap_id": "OWENS-065",
       "date": "2025-05-23",
       "claimed_airport": "KPVU",
+      "claimed_codes": [
+        "KPVU"
+      ],
       "claimed_city": "Provo",
       "claimed_state": "UT",
       "claimed_tails": [
@@ -7601,6 +8158,12 @@
             "both_agree": true,
             "heard": true,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": {
+              "code": "KPVU",
+              "km": 8404.53,
+              "utc": "2025-05-22T09:56:39.390Z",
+              "on_ground": false
+            },
             "airports_touched": [
               "FR-0504 4.37km below_4000ft",
               "LFPK 14.89km below_4000ft",
@@ -7621,6 +8184,12 @@
             "both_agree": true,
             "heard": true,
             "at_claimed_airport": true,
+            "closest_approach_to_claimed_field": {
+              "code": "KPVU",
+              "km": 0.03,
+              "utc": "2025-05-23T20:38:06.220Z",
+              "on_ground": true
+            },
             "airports_touched": [
               "LFPB 3.65km below_4000ft",
               "LFPG 4.93km below_4000ft",
@@ -7667,6 +8236,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -7681,6 +8251,9 @@
       "overlap_id": "OWENS-066",
       "date": "2025-07-07",
       "claimed_airport": "KPVU",
+      "claimed_codes": [
+        "KPVU"
+      ],
       "claimed_city": "Provo",
       "claimed_state": "UT",
       "claimed_tails": [
@@ -7715,6 +8288,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -7745,6 +8319,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -7787,6 +8362,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -7801,6 +8377,9 @@
       "overlap_id": "OWENS-067",
       "date": "2025-07-20",
       "claimed_airport": "KLNK",
+      "claimed_codes": [
+        "KLNK"
+      ],
       "claimed_city": "Lincoln",
       "claimed_state": "NE",
       "claimed_tails": [
@@ -7818,6 +8397,12 @@
             "both_agree": true,
             "heard": true,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": {
+              "code": "KLNK",
+              "km": 7305.62,
+              "utc": "2025-07-19T10:14:49.560Z",
+              "on_ground": true
+            },
             "airports_touched": [
               "FR-0504 14.72km below_4000ft",
               "LFPK 16.47km below_4000ft",
@@ -7837,7 +8422,13 @@
             "archive_control_probe": null,
             "both_agree": true,
             "heard": true,
-            "at_claimed_airport": false,
+            "at_claimed_airport": true,
+            "closest_approach_to_claimed_field": {
+              "code": "KLNK",
+              "km": 7.21,
+              "utc": "2025-07-20T22:18:53.440Z",
+              "on_ground": false
+            },
             "airports_touched": [
               "LFPB 0.91km on_ground",
               "90IA 17.94km below_4000ft",
@@ -7853,7 +8444,7 @@
             "first_where": "LFPB/LBG (Paris-Le Bourget International Airport, Paris FR) 0.91km",
             "last_where": "NE42 (Dream Field, Lincoln NE) 5.74km",
             "points": 1561,
-            "verdict": "ELSEWHERE"
+            "verdict": "AT_CLAIMED_AIRPORT"
           },
           "2025-07-21": {
             "adsb_lol_http": 404,
@@ -7879,6 +8470,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -7887,12 +8479,15 @@
           }
         }
       },
-      "verdict": "ELSEWHERE"
+      "verdict": "AT_CLAIMED_AIRPORT"
     },
     {
       "overlap_id": "EXTRA-001",
       "date": "2024-09-14",
       "claimed_airport": "KLNK",
+      "claimed_codes": [
+        "KLNK"
+      ],
       "claimed_city": "Lincoln",
       "claimed_state": "NE",
       "claimed_tails": [],
@@ -7906,6 +8501,9 @@
       "overlap_id": "EXTRA-002",
       "date": "2024-04-09",
       "claimed_airport": "KOMA",
+      "claimed_codes": [
+        "KOMA"
+      ],
       "claimed_city": "Omaha",
       "claimed_state": "NE",
       "claimed_tails": [],
@@ -7919,6 +8517,9 @@
       "overlap_id": "EXTRA-003",
       "date": "2023-04-23",
       "claimed_airport": "KTOP",
+      "claimed_codes": [
+        "KTOP"
+      ],
       "claimed_city": "Topeka",
       "claimed_state": "KS",
       "claimed_tails": [
@@ -7965,6 +8566,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -8007,6 +8609,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -8049,6 +8652,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -8063,6 +8667,9 @@
       "overlap_id": "EXTRA-004",
       "date": "2025-07-11",
       "claimed_airport": "KOMA",
+      "claimed_codes": [
+        "KOMA"
+      ],
       "claimed_city": "Omaha",
       "claimed_state": "NE",
       "claimed_tails": [
@@ -8082,6 +8689,9 @@
       "overlap_id": "EXTRA-005",
       "date": "2023-08-25",
       "claimed_airport": "KLNK",
+      "claimed_codes": [
+        "KLNK"
+      ],
       "claimed_city": "Lincoln",
       "claimed_state": "NE",
       "claimed_tails": [
@@ -8128,6 +8738,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -8170,6 +8781,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -8212,6 +8824,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -8226,6 +8839,9 @@
       "overlap_id": "EXTRA-006",
       "date": "2025-09-10",
       "claimed_airport": "KPVU",
+      "claimed_codes": [
+        "KPVU"
+      ],
       "claimed_city": "Provo",
       "claimed_state": "UT",
       "claimed_tails": [
@@ -8243,6 +8859,12 @@
             "both_agree": true,
             "heard": true,
             "at_claimed_airport": true,
+            "closest_approach_to_claimed_field": {
+              "code": "KPVU",
+              "km": 1.29,
+              "utc": "2025-09-09T20:03:33.780Z",
+              "on_ground": true
+            },
             "airports_touched": [
               "KPVU 1.3km on_ground"
             ],
@@ -8258,6 +8880,12 @@
             "both_agree": true,
             "heard": true,
             "at_claimed_airport": true,
+            "closest_approach_to_claimed_field": {
+              "code": "KPVU",
+              "km": 1.29,
+              "utc": "2025-09-10T16:05:35.770Z",
+              "on_ground": true
+            },
             "airports_touched": [
               "KPVU 1.29km on_ground"
             ],
@@ -8290,6 +8918,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -8304,6 +8933,9 @@
       "overlap_id": "EXTRA-007",
       "date": "2025-04-29",
       "claimed_airport": "KLNK",
+      "claimed_codes": [
+        "KLNK"
+      ],
       "claimed_city": "Lincoln",
       "claimed_state": "NE",
       "claimed_tails": [
@@ -8323,6 +8955,11 @@
       "overlap_id": "SITE-001",
       "date": "2023-04-02",
       "claimed_airport": "KSTL/KCPS/KSUS",
+      "claimed_codes": [
+        "KSTL",
+        "KCPS",
+        "KSUS"
+      ],
       "claimed_city": "Jefferson City (event) / St. Louis (aircraft)",
       "claimed_state": "MO",
       "claimed_tails": [
@@ -8340,7 +8977,13 @@
             "archive_control_probe": null,
             "both_agree": true,
             "heard": true,
-            "at_claimed_airport": false,
+            "at_claimed_airport": true,
+            "closest_approach_to_claimed_field": {
+              "code": "KSTL",
+              "km": 0.48,
+              "utc": "2023-04-01T15:55:15.160Z",
+              "on_ground": false
+            },
             "airports_touched": [
               "KSTL 5.09km below_4000ft",
               "K1H0 7.57km below_4000ft",
@@ -8350,7 +8993,7 @@
             "first_where": "FR-0503 (Mouy Airfield, FR) 10.99km",
             "last_where": "KSUS/SUS (Spirit of St Louis Airport, St Louis MO) 3.21km",
             "points": 558,
-            "verdict": "ELSEWHERE"
+            "verdict": "AT_CLAIMED_AIRPORT"
           },
           "2023-04-02": {
             "adsb_lol_http": 404,
@@ -8388,6 +9031,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -8428,6 +9072,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -8470,6 +9115,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -8512,6 +9158,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -8552,6 +9199,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -8560,12 +9208,15 @@
           }
         }
       },
-      "verdict": "ELSEWHERE"
+      "verdict": "AT_CLAIMED_AIRPORT"
     },
     {
       "overlap_id": "SITE-002",
       "date": "2024-02-11",
       "claimed_airport": "KLNK",
+      "claimed_codes": [
+        "KLNK"
+      ],
       "claimed_city": "Lincoln",
       "claimed_state": "NE",
       "claimed_tails": [
@@ -8610,6 +9261,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -8651,6 +9303,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -8681,6 +9334,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -8695,6 +9349,9 @@
       "overlap_id": "SITE-003",
       "date": "2024-04-03",
       "claimed_airport": "KICT",
+      "claimed_codes": [
+        "KICT"
+      ],
       "claimed_city": "Lawrence (event) / Wichita (aircraft)",
       "claimed_state": "KS",
       "claimed_tails": [
@@ -8741,6 +9398,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -8754,6 +9412,12 @@
             "both_agree": true,
             "heard": true,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": {
+              "code": "KICT",
+              "km": 1852.96,
+              "utc": "2024-04-03T15:54:45.350Z",
+              "on_ground": false
+            },
             "airports_touched": [
               "3PA8 4.32km below_4000ft",
               "US-6790 1.75km below_4000ft",
@@ -8802,6 +9466,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -8816,6 +9481,9 @@
       "overlap_id": "SITE-004",
       "date": "2024-04-23",
       "claimed_airport": "KPVU",
+      "claimed_codes": [
+        "KPVU"
+      ],
       "claimed_city": "Salt Lake City (event) / Provo (aircraft)",
       "claimed_state": "UT",
       "claimed_tails": [
@@ -8834,6 +9502,12 @@
             "both_agree": true,
             "heard": true,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": {
+              "code": "KPVU",
+              "km": 13817.88,
+              "utc": "2024-04-22T05:58:02.940Z",
+              "on_ground": false
+            },
             "airports_touched": [
               "HEAZ 1.89km below_4000ft",
               "LFPO 8.8km last_fix"
@@ -8850,6 +9524,12 @@
             "both_agree": true,
             "heard": true,
             "at_claimed_airport": true,
+            "closest_approach_to_claimed_field": {
+              "code": "KPVU",
+              "km": 0,
+              "utc": "2024-04-23T18:13:11.070Z",
+              "on_ground": true
+            },
             "airports_touched": [
               "LFPB 4.05km below_4000ft",
               "LFPG 5.45km below_4000ft",
@@ -8894,6 +9574,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -8938,6 +9619,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -8978,6 +9660,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -9018,6 +9701,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -9032,6 +9716,9 @@
       "overlap_id": "SITE-005",
       "date": "2025-09-10",
       "claimed_airport": "KILG",
+      "claimed_codes": [
+        "KILG"
+      ],
       "claimed_city": "Wilmington",
       "claimed_state": "DE",
       "claimed_tails": [
@@ -9078,6 +9765,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -9091,6 +9779,12 @@
             "both_agree": true,
             "heard": true,
             "at_claimed_airport": true,
+            "closest_approach_to_claimed_field": {
+              "code": "KILG",
+              "km": 1.75,
+              "utc": "2025-09-10T16:50:37.530Z",
+              "on_ground": false
+            },
             "airports_touched": [
               "KPVU 1.37km on_ground",
               "KN57 7.02km below_4000ft",
@@ -9113,6 +9807,12 @@
             "both_agree": true,
             "heard": true,
             "at_claimed_airport": true,
+            "closest_approach_to_claimed_field": {
+              "code": "KILG",
+              "km": 0.92,
+              "utc": "2025-09-11T11:55:36.850Z",
+              "on_ground": true
+            },
             "airports_touched": [
               "KILG 0.95km on_ground",
               "NJ30 11.19km below_4000ft",
@@ -9132,6 +9832,9 @@
       "overlap_id": "SITE-006",
       "date": "2025-09-10",
       "claimed_airport": "KPVU",
+      "claimed_codes": [
+        "KPVU"
+      ],
       "claimed_city": "Orem (event) / Provo (aircraft)",
       "claimed_state": "UT",
       "claimed_tails": [
@@ -9179,6 +9882,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -9192,6 +9896,12 @@
             "both_agree": true,
             "heard": true,
             "at_claimed_airport": true,
+            "closest_approach_to_claimed_field": {
+              "code": "KPVU",
+              "km": 1.23,
+              "utc": "2025-09-10T13:08:57.280Z",
+              "on_ground": true
+            },
             "airports_touched": [
               "KPVU 1.37km on_ground",
               "KN57 7.02km below_4000ft",
@@ -9214,6 +9924,12 @@
             "both_agree": true,
             "heard": true,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": {
+              "code": "KPVU",
+              "km": 3090.41,
+              "utc": "2025-09-11T11:57:38.290Z",
+              "on_ground": false
+            },
             "airports_touched": [
               "KILG 0.95km on_ground",
               "NJ30 11.19km below_4000ft",
@@ -9234,6 +9950,12 @@
             "both_agree": true,
             "heard": true,
             "at_claimed_airport": true,
+            "closest_approach_to_claimed_field": {
+              "code": "KPVU",
+              "km": 1.29,
+              "utc": "2025-09-09T20:03:33.780Z",
+              "on_ground": true
+            },
             "airports_touched": [
               "KPVU 1.3km on_ground"
             ],
@@ -9249,6 +9971,12 @@
             "both_agree": true,
             "heard": true,
             "at_claimed_airport": true,
+            "closest_approach_to_claimed_field": {
+              "code": "KPVU",
+              "km": 1.29,
+              "utc": "2025-09-10T16:05:35.770Z",
+              "on_ground": true
+            },
             "airports_touched": [
               "KPVU 1.29km on_ground"
             ],
@@ -9281,6 +10009,7 @@
             "both_agree": false,
             "heard": false,
             "at_claimed_airport": false,
+            "closest_approach_to_claimed_field": null,
             "airports_touched": null,
             "first_where": null,
             "last_where": null,
@@ -9324,8 +10053,8 @@
   ],
   "tally": {
     "NO_ARCHIVE_COVERAGE": 20,
-    "AT_CLAIMED_AIRPORT": 22,
-    "ELSEWHERE": 14,
+    "AT_CLAIMED_AIRPORT": 24,
+    "ELSEWHERE": 12,
     "NOT_HEARD": 22,
     "NO_TAIL_CLAIMED": 2,
     "NO_DATE_CLAIMED": 5

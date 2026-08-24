@@ -94,6 +94,40 @@ Premier I out of production. Nearest new light jets are the Citation CJ3 Gen2 (~
 
 List price is for a green airframe — interior completion, avionics options and any mission equipment are extra, and fleet buyers do not pay list. The full table for all 33 priced airframes in this investigation, with the method behind each figure, is on **[Aircraft Costs](/Planes/Aircraft-Costs/overview)**.
 
+## Flight data recovery
+
+Coverage for this tail is thin rather than absent — **10, 12 and 11 days** across the three
+independent archives, and airplanes.live stops carrying it after **16 October 2025**. Thin coverage
+is what a lightly-flown private aircraft over a sparse volunteer receiver network looks like; it is
+not evidence of anything having been taken away. The FlightRadar24 page loads in a browser and
+served **56 history rows** on 24 August 2026.
+
+| Source | What it holds for N40JD |
+|---|---|
+| adsb.lol `globe_history` | 10 days, 2 Sep 2025 – 16 Sep 2025 |
+| globe.airplanes.live | 12 days, 2 Sep 2025 – 16 Oct 2025 |
+| ADS-B Exchange monthly sample | 11 days, 1 Jun 2022 – 1 Apr 2026 |
+| FlightRadar24 page | HTTP 200 in a browser on 24 Aug 2026; 56 history rows on the free seven-day tier; older history paywalled |
+| Internet Archive | 1 page snapshot held (FlightRadar24, 22 May 2022); 0 flight rows recovered off it — that capture's flight table was present but empty |
+
+**Nothing here was found to have been removed.** No tracking site was found to have taken this
+aircraft's page down. Our scripted probe recorded HTTP 403 from FlightRadar24, RadarBox and
+Planespotters — but the identical script got the identical 403 for five unrelated control aircraft
+chosen for having nothing to do with this case, so a 403 is a robot block and says nothing about
+this tail. See [What A 403 Actually Means](/Planes/Flight-Data-Recovery/What-A-403-Means).
+
+Where a day is absent from an archive, that means a volunteer receiver network heard nothing on that
+day. It does not establish that the aircraft did not fly, and it does not establish that a
+transponder was switched off. Both free daily archives begin in 2023, so every 2022 date is
+untestable by construction rather than missing.
+
+The raw files are on disk at `site/docs/Planes/N40JD/data/recovered/` — the source is in every
+filename, and each file carries a `.meta.json` sidecar recording the source, the URL, the HTTP
+status, the byte count and the date, so any line above can be checked without trusting this page.
+
+More: [Flight Data Recovery](/Planes/Flight-Data-Recovery/overview) ·
+[Per-Aircraft Status](/Planes/Flight-Data-Recovery/Per-Aircraft-Status)
+
 {/* CK_INTERESTING_HERE_START */}
 
 ## Interesting In This Area

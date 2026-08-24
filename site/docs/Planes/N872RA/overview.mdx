@@ -98,6 +98,42 @@ Beechjet 400A out of production. The Citation M2 Gen2 (~$5.65M) is the closest n
 
 List price is for a green airframe — interior completion, avionics options and any mission equipment are extra, and fleet buyers do not pay list. The full table for all 33 priced airframes in this investigation, with the method behind each figure, is on **[Aircraft Costs](/Planes/Aircraft-Costs/overview)**.
 
+## Flight data recovery
+
+This aircraft is a clean illustration that a page archive and a sensor archive are two completely
+separate things. The Internet Archive holds **no snapshot of any N872RA tracking page at all** — its
+crawler simply never visited one — and yet the flight record itself is intact: **48 days** of raw
+track on airplanes.live and **24 monthly samples reaching back to April 2022**. Nothing was lost;
+nothing was ever archived on the page side to lose. In a browser today the FlightRadar24 page loads
+normally and shows **294 history rows in seven days** — under operator *Regency Air*, this airframe
+flies constantly.
+
+| Source | What it holds for N872RA |
+|---|---|
+| adsb.lol `globe_history` | 12 days, 1 Sep 2025 – 10 Oct 2025 |
+| globe.airplanes.live | 48 days, 1 Sep 2025 – 5 Jun 2026 |
+| ADS-B Exchange monthly sample | 24 days, 1 Apr 2022 – 1 Aug 2026 |
+| FlightRadar24 page | HTTP 200 in a browser on 24 Aug 2026; 294 history rows on the free seven-day tier; older history paywalled |
+| Internet Archive | 0 page snapshots held; 0 flight rows recovered off them |
+
+**Nothing here was found to have been removed.** No tracking site was found to have taken this
+aircraft's page down. Our scripted probe recorded HTTP 403 from FlightRadar24, RadarBox and
+Planespotters — but the identical script got the identical 403 for five unrelated control aircraft
+chosen for having nothing to do with this case, so a 403 is a robot block and says nothing about
+this tail. See [What A 403 Actually Means](/Planes/Flight-Data-Recovery/What-A-403-Means).
+
+Where a day is absent from an archive, that means a volunteer receiver network heard nothing on that
+day. It does not establish that the aircraft did not fly, and it does not establish that a
+transponder was switched off. Both free daily archives begin in 2023, so every 2022 date is
+untestable by construction rather than missing.
+
+The raw files are on disk at `site/docs/Planes/N872RA/data/recovered/` — the source is in every
+filename, and each file carries a `.meta.json` sidecar recording the source, the URL, the HTTP
+status, the byte count and the date, so any line above can be checked without trusting this page.
+
+More: [Flight Data Recovery](/Planes/Flight-Data-Recovery/overview) ·
+[Per-Aircraft Status](/Planes/Flight-Data-Recovery/Per-Aircraft-Status)
+
 {/* CK_INTERESTING_HERE_START */}
 
 ## Interesting In This Area

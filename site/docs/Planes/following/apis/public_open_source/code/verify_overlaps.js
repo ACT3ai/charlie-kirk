@@ -36,7 +36,7 @@
 import { mkdir, writeFile, readFile } from "node:fs/promises";
 import { existsSync } from "node:fs";
 import { FLEET, byReg, following } from "./lib/fleet.js";
-import { nearest, label } from "./lib/airports.js";
+import { nearest, label, byCode } from "./lib/airports.js";
 
 const FOLLOWING_DIR = new URL("../../../", import.meta.url).pathname;   // following/
 const OVERLAPS_CSV  = `${FOLLOWING_DIR}overlaps.csv`;
@@ -44,7 +44,17 @@ const OVERLAP_DIR   = `${FOLLOWING_DIR}overlap/`;
 const OUT_DIR       = new URL("../data/overlap_verification/", import.meta.url).pathname;
 const UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0 Safari/537.36";
 const NOW = new Date().toISOString();
-const RADIUS_KM = 15;              // generous: covers a big field's whole property
+// TWO RADII, because the sources use two different tests and the difference
+// between them IS the public dispute.
+//   AT_CLAIMED_AIRPORT  within 15 km of the claimed field -- generous enough to
+//                       cover a large airport's whole property and an approach.
+//   SAME_METRO          within 80 km (~50 miles), roughly the source
+//                       spreadsheet's own stated tolerance, and the reason a
+//                       strict same-ICAO test and a metro test disagree.
+// A row in SAME_METRO is NEITHER confirmed NOR refuted at the field it names.
+// It is reported as what it is: the right area, the wrong airport.
+const RADIUS_KM = 15;
+const METRO_KM  = 80;
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
 const NETWORKS = [
@@ -120,7 +130,11 @@ function places(json) {
   const ground = (p) => p[3] === "ground";
   const out = { registration: json.r ?? null, type: json.t ?? null, icao: json.icao ?? null,
                 points: tr.length, first_utc: iso(tr[0][0]), last_utc: iso(tr.at(-1)[0]),
-                ground_positions: [], airports_touched: [], low_positions: [] };
+                ground_positions: [], airports_touched: [], low_positions: [],
+                // Every fix on the ground or below 4,000 ft -- the only ones that
+                // can say anything about which FIELD an aircraft actually used.
+                fixes: tr.filter((p) => p[3] === "ground" || (typeof p[3] === "number" && p[3] < 4000))
+                         .map((p) => ({ utc: iso(p[0]), lat: p[1], lon: p[2], ground: p[3] === "ground" })) };
   const seen = new Set();
   const note = (p, why) => {
     const a = nearest(p[1], p[2]); if (!a) return;
@@ -213,9 +227,13 @@ const tally = {};
 
 for (const r of claims) {
   const id = col(r, "overlap_id"), date = col(r, "date"), apt = col(r, "airport_code");
+  // A few rows name more than one field ("KSTL/KCPS/KSUS"): the compiler could not
+  // tell which airport in a metro was meant. Test every one of them.
+  const claimedCodes = apt.split(/[\/;,| ]+/).map((x) => x.trim().toUpperCase()).filter(Boolean);
   const tails = (col(r, "foreign_tail") || "").split(/[;| ]+/).map(s => s.trim()).filter(Boolean);
   const page = col(r, "site_page");
-  const rec = { overlap_id: id, date, claimed_airport: apt, claimed_city: col(r, "city"),
+  const rec = { overlap_id: id, date, claimed_airport: apt, claimed_codes: claimedCodes,
+                claimed_city: col(r, "city"),
                 claimed_state: col(r, "state"), claimed_tails: tails, subject: col(r, "subject"),
                 audit_verdict: col(r, "audit_verdict"), site_page: page, tails: {} };
 
@@ -239,20 +257,35 @@ for (const r of claims) {
         }
         const archiveUp = hit ? true
           : cov["adsb-lol"].verdict === "COVERED" || cov["airplanes-live"].verdict === "COVERED";
-        let near = null;
+        // Measure the aircraft's CLOSEST APPROACH to the claimed field, in km.
+        // Not a string match on an identifier: an identifier match fails whenever
+        // the nearest gazetteer entry to a landing rollout is a private strip
+        // next door, which is exactly how a real arrival at Lincoln was scored
+        // "elsewhere" on the first run of this script.
+        let closest = null;
         if (hit) {
-          near = hit.airports_touched
-            .filter((a) => a.icao === apt || a.iata === apt)
-            .sort((a, b) => a.km - b.km)[0] ?? null;
+          for (const code of claimedCodes) {
+            const f = byCode(code); if (!f) continue;
+            for (const fx of hit.fixes) {
+              const dy = (fx.lat - f.lat) * 111.32;
+              const dx = (fx.lon - f.lon) * 111.32 * Math.cos(fx.lat * Math.PI / 180);
+              const km = Math.hypot(dx, dy);
+              if (!closest || km < closest.km)
+                closest = { code: f.icao, km: +km.toFixed(2), utc: fx.utc, on_ground: fx.ground };
+            }
+          }
         }
+        const near  = closest && closest.km <= RADIUS_KM ? closest : null;
+        const metro = closest && closest.km <= METRO_KM  ? closest : null;
         per[d] = { adsb_lol_http: q["adsb-lol"].http, airplanes_live_http: q["airplanes-live"].http,
                    archive_control_probe: cov,
                    both_agree: !!(q["adsb-lol"].places && q["airplanes-live"].places),
                    heard: !!hit, at_claimed_airport: !!near,
+                   closest_approach_to_claimed_field: closest,
                    airports_touched: hit ? hit.airports_touched.map((a) => `${a.icao} ${a.km}km ${a.how}`) : null,
                    first_where: hit?.first_where ?? null, last_where: hit?.last_where ?? null,
                    points: hit?.points ?? null };
-        let v = hit ? (near ? "AT_CLAIMED_AIRPORT" : "ELSEWHERE")
+        let v = hit ? (near ? "AT_CLAIMED_AIRPORT" : metro ? "SAME_METRO_WRONG_FIELD" : "ELSEWHERE")
               : archiveUp ? "NOT_HEARD"
               : "NO_ARCHIVE_COVERAGE";
         per[d].verdict = v;

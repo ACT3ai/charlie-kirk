@@ -244,6 +244,42 @@ Challenger 3500 is the direct in-production successor at ~$26.7M list. The Chall
 
 List price is for a green airframe — interior completion, avionics options and any mission equipment are extra, and fleet buyers do not pay list. The full table for all 33 priced airframes in this investigation, with the method behind each figure, is on **[Aircraft Costs](/Planes/Aircraft-Costs/overview)**.
 
+## Flight data recovery
+
+N888KG is the best-archived aircraft page in this fleet. The Internet Archive holds **22 captures**
+of its tracking pages, and **70 flight rows** were recovered off them — more recovered published
+history than any other aircraft in this investigation. Nothing was found to be missing from any
+tracking site.
+
+| Source | What it holds for N888KG |
+|---|---|
+| adsb.lol `globe_history` | **4 days** of track, 7 September 2025 to 9 October 2025 |
+| globe.airplanes.live | **12 days** of track, 7 September 2025 to 28 May 2026 |
+| ADS-B Exchange monthly sample | **13 days**, 1 March 2022 to 1 February 2026 |
+| FlightRadar24 page | **HTTP 200** in a browser on 24 August 2026; **0 history rows** on the free seven-day tier because the aircraft had not flown in the previous seven days; older history paywalled |
+| Internet Archive | **22 page snapshots** held — 13 of FlightRadar24, 9 of FlightAware; **70 flight rows** recovered off them |
+
+The FlightAware captures reach back to **July 2011**, which is why the recovered total is so much
+larger here than elsewhere. That depth is an accident of what the Archive happened to crawl, not a
+finding about the aircraft.
+
+**No tracking site was found to have removed this aircraft's page.** Our scripts recorded HTTP 403
+from FlightRadar24, RadarBox and Planespotters, but the same script recorded the identical 403 for
+five unrelated control aircraft, so those are robot blocks and establish nothing about this tail:
+[What A 403 Actually Means](/Planes/Flight-Data-Recovery/What-A-403-Means). FlightAware and
+ADS-B Exchange serve scripts normally and returned HTTP 200 for N888KG.
+
+Where a day is absent from an archive, that means the volunteer receiver network heard nothing on
+that day. It does not mean the aircraft did not fly, and it does not mean a transponder was off.
+Both free daily archives begin in 2023, so no 2022 date is testable at all.
+
+Raw payloads are saved at `site/docs/Planes/N888KG/data/recovered/`, with the source named in every
+filename and a `.meta.json` sidecar per file recording the source, URL, HTTP status, byte count and
+date.
+
+Method and fleet-wide results: **[Flight Data Recovery](/Planes/Flight-Data-Recovery/overview)** ·
+**[Per-Aircraft Recovery Status](/Planes/Flight-Data-Recovery/Per-Aircraft-Status)**
+
 {/* CK_INTERESTING_HERE_START */}
 
 ## Interesting In This Area

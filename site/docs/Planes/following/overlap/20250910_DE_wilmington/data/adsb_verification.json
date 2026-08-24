@@ -1,8 +1,11 @@
 {
-  "verified_utc": "2026-08-24T17:33:16.248Z",
+  "verified_utc": "2026-08-24T17:36:21.953Z",
   "overlap_id": "SITE-005",
   "date": "2025-09-10",
   "claimed_airport": "KILG",
+  "claimed_codes": [
+    "KILG"
+  ],
   "claimed_city": "Wilmington",
   "claimed_state": "DE",
   "claimed_tails": [
@@ -49,6 +52,7 @@
         "both_agree": false,
         "heard": false,
         "at_claimed_airport": false,
+        "closest_approach_to_claimed_field": null,
         "airports_touched": null,
         "first_where": null,
         "last_where": null,
@@ -62,6 +66,12 @@
         "both_agree": true,
         "heard": true,
         "at_claimed_airport": true,
+        "closest_approach_to_claimed_field": {
+          "code": "KILG",
+          "km": 1.75,
+          "utc": "2025-09-10T16:50:37.530Z",
+          "on_ground": false
+        },
         "airports_touched": [
           "KPVU 1.37km on_ground",
           "KN57 7.02km below_4000ft",
@@ -84,6 +94,12 @@
         "both_agree": true,
         "heard": true,
         "at_claimed_airport": true,
+        "closest_approach_to_claimed_field": {
+          "code": "KILG",
+          "km": 0.92,
+          "utc": "2025-09-11T11:55:36.850Z",
+          "on_ground": true
+        },
         "airports_touched": [
           "KILG 0.95km on_ground",
           "NJ30 11.19km below_4000ft",

@@ -1,0 +1,429 @@
+---
+displayed_sidebar: docs
+title: "Per-Aircraft Recovery Status"
+sidebar_label: "Per-Aircraft Status"
+description: "One row and one section per aircraft: what every flight-data source still holds for that tail, what it does not, how far back each archive reaches, and how many flight rows were recovered from archived pages. Across sixteen aircraft and five tracking sites, no page was found removed."
+keywords:
+  - Charlie Kirk
+  - flight data
+  - per aircraft
+  - N102DZ
+  - N1098L
+  - N55906
+  - SU-BTT
+  - T7-ELL
+  - adsb.lol
+  - airplanes.live
+  - ADS-B Exchange
+  - Wayback Machine
+image: "/img/docusaurus-social-card.jpg"
+hide_table_of_contents: true
+---
+
+{/* Full-bleed marker: activates the site-wide full-width + text-wrap
+    layout in custom.css (full width + overflow-safe side videos). Scoped
+    via CSS :has(). */}
+<div className="ck-full-bleed" />
+
+<a href="/Planes/Flight-Data-Recovery/overview" style={{display:'inline-block', marginBottom:'1rem',
+padding:'0.35rem 0.9rem', background:'#1a73e8', color:'#fff',
+borderRadius:'4px', textDecoration:'none', fontSize:'0.9rem'}}>← Flight Data Recovery</a>
+
+# Per-Aircraft Recovery Status
+
+This is the reference page. Pick one tail number and get a complete answer: which archives still hold
+its ADS-B tracks, how far back each one reaches, how many copies of its tracking-site page the
+Internet Archive kept, and how many rows of published flight history were pulled back out of those
+copies.
+
+**The headline first, because it is the same for all sixteen: no page was found removed.** Sixteen
+aircraft were probed on five tracking sites — flightradar24.com, flightaware.com, radarbox.com,
+globe.adsbexchange.com and planespotters.net — and every aircraft page that could be tested loads
+today. The HTTP 403s this site once read as removals are robot blocks that hit unrelated control
+aircraft identically. That correction, with the control test behind it, is on
+[Flight Data Recovery](/Planes/Flight-Data-Recovery/overview) and
+[What A 403 Actually Means](/Planes/Flight-Data-Recovery/What-A-403-Means).
+
+Everything below is generated from `fleet_recovery_matrix.json` and the `.meta.json` sidecar written
+beside every payload under `site/docs/Planes/<TAIL>/data/recovered/`. The source is in every filename.
+
+## The whole fleet, one row each
+
+| Aircraft | adsb.lol days | airplanes.live days | ADSBX sample days | Earliest date any source reaches | Wayback page captures held | Flight rows off archived pages |
+|---|---|---|---|---|---|---|
+| [N102DZ](/Planes/N102DZ/overview) | 12 | 50 | 18 | 2022-05-01 | 3 | 13 |
+| [N1098L](/Planes/N1098L/overview) | 17 | 46 | 19 | 2023-11-01 | 3 | — |
+| [N2100L](/Planes/N2100L/overview) | 8 | 29 | 17 | 2023-11-01 | 3 | — |
+| [N40JD](/Planes/N40JD/overview) | 10 | 12 | 11 | 2022-06-01 | 1 | — |
+| [N55906](/Planes/N55906/overview) | 0 | 0 | 0 | **none** | 1 | — |
+| [N560TW](/Planes/N560TW/overview) | 9 | 27 | 23 | **2022-01-01** | 2 | 9 |
+| [N582MM](/Planes/N582MM/overview) | 19 | 24 | 23 | 2022-04-01 | 7 | 40 |
+| [N59906](/Planes/N59906/overview) | 9 | 26 | 23 | 2022-02-01 | 4 | — |
+| [N872RA](/Planes/N872RA/overview) | 12 | 48 | **24** | 2022-04-01 | 0 | — |
+| [N888KG](/Planes/N888KG/overview) | 4 | 12 | 13 | 2022-03-01 | **22** | **70** |
+| [SU-BGM](/Planes/SU-BGM/overview) | 2 | 5 | 1 | 2023-08-01 | 1 | 6 |
+| [SU-BND](/Planes/SU-BND/overview) | 19 | 27 | 6 | **2022-01-01** | 2 | 11 |
+| [SU-BTT](/Planes/SU-BTT/overview) | **29** | 37 | 6 | 2022-05-01 | 0 | — |
+| [SU-BTU](/Planes/SU-BTU/overview) | 0 | 3 | 9 | 2022-12-01 | 1 | 4 |
+| [SU-BTV](/Planes/SU-BTV/overview) | 1 | 7 | 2 | 2022-10-01 | 0 | — |
+| [T7-ELL](/Planes/T7ELL-EJM36/overview) | 5 | 26 | 12 | 2022-02-01 | 0 | — |
+| **Total** | **156** | **379** | **207** | — | **50** | **153** |
+
+**How to read the columns.** The first three are days of full ADS-B trace recovered, one file per
+aircraft per day. "Earliest date any source reaches" is the oldest date on which any free archive
+holds a track for that airframe — for eleven of the sixteen that is now in 2022, a year this site
+previously published as untestable. "Wayback page captures held" counts archived copies of the
+tracking-site page itself, which is the only thing that could ever document a removal. The last
+column counts rows of published flight history recovered out of those copies.
+
+**A zero in the first three columns means a volunteer network heard nothing on those days.** It does
+not mean the aircraft did not fly and it does not mean a transponder was off. Both free daily
+archives begin in 2023, so every 2022 gap is a limit of the archive by construction.
+
+## The four things worth stopping on
+
+* **[N55906](/Planes/N55906/overview) has zero data in every archive** — zero adsb.lol, zero
+  airplanes.live, zero ADS-B Exchange monthly samples, and zero flight rows on FlightRadar24 in a
+  real browser. It is a Piper Cherokee Arrow II, a 1970s single-engine light aircraft. The honest
+  reading is that it is not fitted with, or is not being received on, ADS-B. Detail below.
+* **[N888KG](/Planes/N888KG/overview) is by far the best-archived page on the fleet** — 22 Wayback
+  captures across fifteen years and **70 recovered flight rows**, nearly half the fleet total.
+* **[T7-ELL](/Planes/T7ELL-EJM36/overview) reaches back to 1 February 2022** on the ADS-B Exchange
+  monthly samples, the joint-oldest recovery on the following side.
+* **[SU-BTU](/Planes/SU-BTU/overview) has zero adsb.lol days but three on airplanes.live** and nine
+  monthly samples. Two volunteer networks with different receiver coverage produce different
+  results for the same airframe. That is ordinary, and it is **not** evidence of anything.
+
+## The following fleet
+
+Six aircraft, five Egyptian-registered and one San Marino, named in the
+[73-overlap claim](/Planes/following/73_overlaps). Identifiers below are from
+`code/lib/fleet.js`; type codes and operator strings are as FlightRadar24 served them to a real
+browser on 24 August 2026.
+
+### SU-BTT
+
+ICAO hex `0101D3` · Falcon 7X (FA7X) · Egyptian registry · **following** side · lead tail of the
+overlap claim.
+
+* **adsb.lol** — 29 days, 24 Feb 2023 to 11 Oct 2025. The deepest adsb.lol coverage on the fleet.
+* **airplanes.live** — 37 days, 24 Feb 2023 to 24 May 2026.
+* **ADSBX monthly samples** — 6 days, 1 May 2022 to 1 Mar 2026; three of them fall before March 2023.
+* **Wayback** — no archived copy of any tracking-site page exists for this tail.
+* **Overlaps** — 53 alleged pairs tested. 16 now have a real track on the alleged day, 4 have one
+  only on a neighbouring UTC day, 33 return nothing from either free archive.
+
+This tail has the most recovered ADS-B of any aircraft here and the least recovered *page* — the
+Internet Archive never crawled it. The 2023 reach on adsb.lol exists because the overlap sweep
+deliberately pulled its alleged dates rather than a fixed recent window. `fleet.js` records a
+standing identifier disagreement: api.adsbdb.com returns `0101F0` for this registration, while the
+adsb.lol trace for `0101D3` self-identifies as SU-BTT and carries the 10 September 2025
+Provo-to-Wilmington track. We use `0101D3` and publish the conflict.
+
+### SU-BND
+
+ICAO hex `01003E` · Gulfstream IV (GLF4) · Egyptian registry · **following** side · second lead tail.
+
+* **adsb.lol** — 19 days, 3 May 2023 to 15 Sep 2025.
+* **airplanes.live** — 27 days, 3 May 2023 to 4 Jun 2026.
+* **ADSBX monthly samples** — 6 days, **1 Jan 2022** to 1 Jul 2026; two before March 2023.
+* **Wayback** — 2 FlightRadar24 captures, 12 Oct 2025 and 18 Nov 2025, both with a populated flight
+  table (7 rows and 4 rows). **11 rows recovered.**
+* **Overlaps** — 16 alleged pairs tested. 7 recovered on the day, 3 on a neighbouring day, 6 nothing.
+
+Along with SU-BTT, this is one of only two tails whose adsb.lol coverage reaches back into 2023
+(3 May 2023), and for the same reason: the overlap sweep pulled its alleged dates. Its two Wayback
+captures are recent enough to be genuinely useful — both were taken while the flights they list were
+still inside FlightRadar24's free seven-day window.
+
+### SU-BTU
+
+ICAO hex `0101D0` · Falcon 7X (FA7X) · Egyptian registry · **following** side · claimed in the
+Armada fleet list as an el-Sisi personal jet.
+
+* **adsb.lol** — **0 days.** Nothing at all.
+* **airplanes.live** — 3 days, 26 Apr 2026 to 12 May 2026.
+* **ADSBX monthly samples** — 9 days, 1 Dec 2022 to 1 Mar 2026.
+* **Wayback** — 1 FlightRadar24 capture, 31 Aug 2022, populated with 4 rows. **4 rows recovered.**
+
+This is the clean illustration of the point made above. One volunteer network holds nothing for this
+airframe; a second, independent one holds three days; the paid exchange's free monthly sample holds
+nine. The networks differ because their receiver coverage differs. FlightRadar24 served this tail's
+page in a browser with **56 flight rows** and an operator string of *Egypt - Air Force*, so the
+aircraft is plainly flying and plainly public — adsb.lol simply is not hearing it.
+
+### SU-BTV
+
+ICAO hex `0101D1` · Falcon 7X (FA7X) · Egyptian registry · **following** side · Armada tail.
+
+* **adsb.lol** — 1 day, 11 Oct 2025.
+* **airplanes.live** — 7 days, 11 Oct 2025 to 24 May 2026.
+* **ADSBX monthly samples** — 2 days, 1 Oct 2022 and 1 Oct 2025. The 2022 sample is a local Cairo
+  flight, 269 points.
+* **Wayback** — none.
+
+The thinnest ADS-B record on the following side, and the recovery pushed its documented history back
+by more than two years to October 2022. FlightRadar24 shows 54 rows in a browser, so the sparse
+archive coverage is about what volunteer receivers caught, not about how much the aircraft flies.
+
+### SU-BGM
+
+ICAO hex `010070` · Gulfstream IV (GLF4) · Egyptian registry · **following** side · Armada tail,
+carried on this site as two April 2025 Provo legs only.
+
+* **adsb.lol** — 2 days, 6 Sep 2025 and 16 Sep 2025.
+* **airplanes.live** — 5 days, 6 Sep 2025 to 16 May 2026.
+* **ADSBX monthly samples** — 1 day, 1 Aug 2023. The single thinnest sample result on the fleet.
+* **Wayback** — 1 FlightRadar24 capture, 7 May 2020, populated with 6 rows. **6 rows recovered.**
+
+The oldest populated FlightRadar24 table recovered for any following-fleet tail is this one, from
+May 2020. Its live page today shows no rows and prints *"could not find data"*, which for a private
+aircraft means it has not flown in the last seven days — the same state Nike's Gulfstream, one of
+the controls, was in on the same day.
+
+### T7-ELL
+
+ICAO hex `50018A` · Global Express (GLEX) · **San Marino registry, not Egypt** · **following** side.
+
+* **adsb.lol** — 5 days, 3 Sep 2025 to 11 Oct 2025.
+* **airplanes.live** — 26 days, 3 Sep 2025 to 29 May 2026.
+* **ADSBX monthly samples** — 12 days, **1 Feb 2022 to 1 Aug 2026**; three before March 2023.
+* **Wayback** — none.
+
+**This tail reaches further back than any other on the following side — 1 February 2022 — and what
+came back argues against its grouping.** The twelve recovered traces show a Dubai- and
+Van-Nuys-based long-range charter pattern: Van Nuys to London Luton, Dubai to Kuala Lumpur, Zurich
+to Abu Dhabi, Ireland to Dubai. Two databases also disagree about who operates it — adsbdb records
+Solairus Aviation, while FlightRadar24's browser page reads *Falcon Luxe · Falcon Luxe San Marino*.
+Neither reading is Egyptian government. The full argument is on
+[Flight Data Recovery](/Planes/Flight-Data-Recovery/overview).
+
+## The Kirk and TPUSA side
+
+Six United States-registered aircraft associated with the Kirks, TPUSA, or the 10 September 2025
+Provo movements.
+
+### N102DZ
+
+ICAO hex `A00C85` · Gulfstream V (GLF5) · United States registry · **kirk** side · registered owner
+per adsbdb: Aviation Enterprises Inc.
+
+* **adsb.lol** — 12 days, 1 Sep 2025 to 9 Oct 2025.
+* **airplanes.live** — 50 days, 1 Sep 2025 to 5 Jun 2026, **including throughout May 2026** — the
+  month the tracking history was said to have been erased.
+* **ADSBX monthly samples** — 18 days, 1 May 2022 to 1 Jun 2026; three before March 2023.
+* **adsb.lol GitHub backup** — 1 day, 13 Oct 2025, recovered from the ODbL release for a date the
+  live API refuses. It matches the airplanes.live trace to the second on first contact.
+* **Wayback** — 3 captures. FlightRadar24 on **26 May 2022** (2 rows) and **11 Sep 2025 05:57 UTC**
+  (11 rows); FlightAware on 14 Jan 2026, which archived only the JavaScript shell with no
+  server-rendered rows. **13 rows recovered.**
+
+This is the tail the whole "erased" claim was built on, and it is the one with the most recovered
+material. The 11 September 2025 snapshot — taken roughly twenty hours after the assassination —
+carries the complete 4 to 10 September flight table, reproduced in full on the
+[overview](/Planes/Flight-Data-Recovery/overview). Its live FlightRadar24 page returns HTTP 200 in a
+browser with its identity block intact and zero flight rows, because the aircraft had not flown in
+the preceding seven days.
+
+### N888KG
+
+ICAO hex `AC3C75` · Challenger 300 (CL30) · United States registry · **kirk** side · the Wendover
+departure thread, which is a separate claim and is not merged with the following-fleet one.
+
+* **adsb.lol** — 4 days, 7 Sep 2025 to 9 Oct 2025.
+* **airplanes.live** — 12 days, 7 Sep 2025 to 28 May 2026.
+* **ADSBX monthly samples** — 13 days, 1 Mar 2022 to 1 Feb 2026; five before March 2023, the most
+  of any tail.
+* **Wayback** — **22 captures, the most on the fleet**, spanning 4 Jul 2011 to 28 Jan 2026. Nine are
+  FlightAware: eight populated between 2011 and 2016 carrying 60 rows between them, plus a 2025
+  JavaScript shell. Thirteen are FlightRadar24: five populated on 11 to 13 Sep 2025 with 2 rows
+  each, then eight captures from 18 Sep 2025 to 28 Jan 2026 where the page is present and the table
+  is empty. **70 rows recovered.**
+
+**The empty-table sequence is worth reading carefully, because it looks like a removal and is not.**
+Five crawls in the days immediately after 10 September caught two flight rows; every crawl from
+18 September onward caught the same page with nothing in the table. That is FlightRadar24's
+seven-day free window closing behind a private aircraft that stopped flying, captured in slow motion
+by the Internet Archive. The page itself is present in every one of those thirteen captures and
+loads HTTP 200 today.
+
+### N560TW
+
+ICAO hex `A728A8` · Citation Excel (C56X) · United States registry · **kirk** side · flew
+Scottsdale to Provo to Santa Barbara to Scottsdale on 10 September 2025.
+
+* **adsb.lol** — 9 days, 1 Sep 2025 to 9 Oct 2025.
+* **airplanes.live** — 27 days, 1 Sep 2025 to 5 Jun 2026.
+* **ADSBX monthly samples** — 23 days, **1 Jan 2022 to 1 Aug 2026**; six before March 2023. Joint
+  earliest reach on the whole fleet, tied with SU-BND.
+* **Wayback** — 2 FlightAware captures. **29 Nov 2016**, populated with 9 rows; 15 Apr 2026, a
+  JavaScript shell with no server-rendered rows. **9 rows recovered.**
+
+Twenty-three monthly samples reaching back to the first day of 2022 makes this one of the two
+best-covered airframes in the sample archive, and the 2016 FlightAware capture is the second-oldest
+populated table recovered anywhere on this fleet.
+
+### N582MM
+
+ICAO hex `A77E75` · Learjet 60 (LJ60) · United States registry · **kirk** side · TPUSA-associated.
+
+* **adsb.lol** — 19 days, 1 Sep 2025 to 11 Oct 2025.
+* **airplanes.live** — 24 days, 1 Sep 2025 to 16 Oct 2025.
+* **ADSBX monthly samples** — 23 days, 1 Apr 2022 to 1 Dec 2025; one before March 2023.
+* **Wayback** — 7 FlightAware captures, **every one of them populated**, from 20 Dec 2011 to
+  18 Oct 2015. **40 rows recovered.**
+
+The best hit rate of any archived page on the fleet: seven crawls, seven usable flight tables, no
+empties and no JavaScript shells. All seven predate 2016, and that matches the pattern across the
+whole sweep: **every FlightAware capture anywhere on this fleet that yielded a readable flight table
+was taken before 2017.** The useful FlightAware captures are the old ones.
+
+### N872RA
+
+ICAO hex `ABFF3C` · Beechjet 400 (BE40) · United States registry · **kirk** side · Provo arrival ·
+FlightRadar24 lists the operator as Regency Air.
+
+* **adsb.lol** — 12 days, 1 Sep 2025 to 10 Oct 2025.
+* **airplanes.live** — 48 days, 1 Sep 2025 to 5 Jun 2026.
+* **ADSBX monthly samples** — **24 days, the most of any aircraft here**, 1 Apr 2022 to 1 Aug 2026;
+  two before March 2023.
+* **Wayback** — none. No archived copy of any tracking-site page exists for this tail.
+
+The most consistently heard airframe on the fleet and simultaneously one of five with no archived
+page at all. It also shows the most flight rows of any subject in the browser probe — **294** — which
+is what a busy charter aircraft looks like inside a seven-day window. Nothing about this tail is
+missing; nothing about it was ever captured either.
+
+### N40JD
+
+ICAO hex `A4AB14` · Premier 1 (PRM1) · United States registry · **kirk** side · Provo arrival.
+
+* **adsb.lol** — 10 days, 2 Sep 2025 to 16 Sep 2025.
+* **airplanes.live** — 12 days, 2 Sep 2025 to 16 Oct 2025.
+* **ADSBX monthly samples** — 11 days, 1 Jun 2022 to 1 Apr 2026.
+* **Wayback** — 1 FlightRadar24 capture, 22 May 2022. The page is present and the flight table is
+  empty. **0 rows recovered.**
+
+The single Wayback capture is a present-but-empty FlightRadar24 page from May 2022 — the same
+seven-day-window state seen on N888KG's later captures, three years earlier and on a different
+aircraft. It documents that the page existed and was public in 2022, which is all it can do.
+
+## The N1098L and survey thread
+
+Four aircraft belonging to a different claim entirely — the LASAI Aviation II and Fort Huachuca
+survey line of inquiry. This thread is kept separate from the following-fleet one on purpose.
+
+### N1098L
+
+ICAO hex `A0299E` · Global Express (GLEX) · United States registry · **n1098l** side · registered to
+LASAI Aviation II LLC.
+
+* **adsb.lol** — 17 days, 2 Sep 2025 to 11 Oct 2025.
+* **airplanes.live** — 46 days, 2 Sep 2025 to 3 Jun 2026.
+* **ADSBX monthly samples** — 19 days, 1 Nov 2023 to 1 Aug 2026. **Nothing before November 2023.**
+* **Wayback** — 3 FlightAware captures, 7 May 2023, 20 Sep 2025 and 23 Sep 2025. **All three
+  archived the JavaScript shell only, with no server-rendered flight rows.** 0 rows recovered.
+
+Well covered from late 2023 onward and completely uncovered before it — the monthly sample archive
+holds nothing for this airframe until November 2023, which is unusual on a fleet where eleven of
+sixteen reach into 2022. The three Wayback captures exist but carry no data: modern FlightAware
+loads its flight table by JavaScript after the page renders, and the Internet Archive stores the
+shell. That is an archiving limitation, not a removal, and it applies identically to every recent
+FlightAware capture on this page.
+
+### N2100L
+
+ICAO hex `A1BBE5` · Global Express (GLEX) · United States registry · **n1098l** side · same
+registered owner as N1098L.
+
+* **adsb.lol** — 8 days, 4 Sep 2025 to 16 Sep 2025.
+* **airplanes.live** — 29 days, 4 Sep 2025 to 5 Jun 2026.
+* **ADSBX monthly samples** — 17 days, 1 Nov 2023 to 1 May 2026. **Nothing before November 2023** —
+  the same start date as its sister aircraft.
+* **Wayback** — 3 FlightAware captures, 26 Mar 2023 to 20 Sep 2025, saved to disk but with no flight
+  rows parsed out of them. 0 rows recovered.
+
+The two LASAI Global Expresses have the same archive floor, November 2023, and no other aircraft on
+this fleet shares it. FlightRadar24 served this tail **378 flight rows** in a browser, the second
+highest of any subject, so this is a heavily flown aircraft whose free-archive record simply does
+not extend backwards.
+
+### N59906
+
+ICAO hex `A7C14D` · Piper Navajo (PA31) · United States registry · **n1098l** side · a MARC Inc
+survey aircraft.
+
+* **adsb.lol** — 9 days, 1 Sep 2025 to 8 Oct 2025.
+* **airplanes.live** — 26 days, 1 Sep 2025 to 31 May 2026.
+* **ADSBX monthly samples** — 23 days, 1 Feb 2022 to 1 Jul 2026; six before March 2023, tied with
+  N560TW for the most pre-2023 samples.
+* **Wayback** — 4 captures inside a four-day span: two FlightAware (30 Aug and 1 Sep 2022) and two
+  FlightRadar24 (29 and 30 Aug 2022). None yielded parsed flight rows. 0 rows recovered.
+
+A twin-engine survey aircraft that is genuinely well heard — 110 rows on its live FlightRadar24 page
+and monthly samples reaching February 2022. The Wayback cluster is an artefact of the crawler
+visiting twice in four days in 2022 and never again.
+
+### N55906
+
+ICAO hex `A72351` · Piper Cherokee Arrow II (P28R) · United States registry · **n1098l** side ·
+named in a John Cullen claim.
+
+* **adsb.lol** — **0 days.**
+* **airplanes.live** — **0 days.**
+* **ADSBX monthly samples** — **0 days**, across all 56 months tried from January 2022 to August 2026.
+* **Wayback** — 1 FlightAware capture, **4 Mar 2010**, saved but with no flight rows parsed. 0 rows
+  recovered.
+* **FlightRadar24, real browser, 24 Aug 2026** — HTTP 200, page loads with its identity block
+  (`A72351` · P28R · Private owner), and **zero flight rows**, printing *"could not find data for
+  specified flight"*.
+
+**This is the only aircraft on the fleet with nothing in any archive, and the explanation is the
+aircraft itself.** A Piper Cherokee Arrow II is a four-seat, single-engine, retractable-gear light
+aircraft of 1970s design. Aircraft in that class are frequently not equipped with ADS-B Out that the
+volunteer networks can hear, or are heard only when close to a receiver, and many are flown a few
+hours a month. Four independent archives finding nothing, over four and a half years, is what that
+looks like.
+
+**What that does and does not establish.** It establishes that no free ADS-B source can put this
+tail anywhere, on any date, and that its page has not been removed from anywhere — it loads
+normally. It does not establish that the aircraft never flew. What it does bear on is the claim
+itself: the tail was named as part of a survey-aircraft line of inquiry, and a 1970s light single is
+not a survey platform in the sense that a Global Express or a Navajo is. `fleet.js` carries that
+same note against the entry. The point here is narrow and it is about the data, not about the person
+who made the claim.
+
+## How to check any line on this page
+
+Nothing on this page needs an account, an API key or a payment. Run these from
+`site/docs/Planes/following/apis/public_open_source/code/` and compare the output to the numbers
+above.
+
+```
+# both free daily archives, day by day, for one tail
+node recover_erased.js --tail N102DZ
+
+# the free ADS-B Exchange monthly sample archive, back to 2016
+node recover_adsbx_samples.js --tail SU-BTT
+
+# every alleged overlap date for one tail, pulled on the day and the day either side
+node recover_overlaps.js --tail SU-BTT
+```
+
+Each run writes its payloads to `site/docs/Planes/<TAIL>/data/recovered/` with **the source in the
+filename**, and a `.meta.json` beside every file recording the exact URL, the HTTP status, the byte
+count and the UTC retrieval time. **Nothing overwrites a previous pull** — a re-pull lands beside the
+first with its own timestamp, because the difference between two pulls is how a disappearance would
+be shown.
+
+Two counts on this page do not come from those three commands. The **Wayback page captures** and the
+**flight rows off archived pages** columns come from the Internet Archive sweep recorded in
+`fleet_recovery_matrix.json`, and the browser row counts quoted in the per-aircraft sections come
+from `browser_capture/captures/fr24_page_availability_2026-08-24.tsv`.
+
+## Related
+
+* [Flight Data Recovery](/Planes/Flight-Data-Recovery/overview) — the parent page, the retraction, and the fleet totals
+* [Overlap Recovery](/Planes/Flight-Data-Recovery/Overlap-Recovery) — every alleged overlap date, tested one at a time
+* [What A 403 Actually Means](/Planes/Flight-Data-Recovery/What-A-403-Means) — the control test that took down the removal finding
+* [Planes](/Planes/overview) — the aircraft index

@@ -85,6 +85,40 @@ Citation XLS Gen2 is the direct in-production successor at ~$15.5M new.
 
 List price is for a green airframe — interior completion, avionics options and any mission equipment are extra, and fleet buyers do not pay list. The full table for all 33 priced airframes in this investigation, with the method behind each figure, is on **[Aircraft Costs](/Planes/Aircraft-Costs/overview)**.
 
+## Flight data recovery
+
+N560TW is still served by every source that carries it, and it is one of the two aircraft here whose
+FlightRadar24 page had actually flown recently enough to render rows on the free tier. **Nine flight
+rows** were recovered off archived pages, and the ADS-B Exchange monthly samples reach back to
+**January 2022** — the deepest reach of any free archive for this tail.
+
+| Source | What it holds for N560TW |
+|---|---|
+| adsb.lol `globe_history` | **9 days** of track, 1 September 2025 to 9 October 2025 |
+| globe.airplanes.live | **27 days** of track, 1 September 2025 to 5 June 2026 |
+| ADS-B Exchange monthly sample | **23 days**, 1 January 2022 to 1 August 2026 |
+| FlightRadar24 page | **HTTP 200** in a browser on 24 August 2026; **28 history rows** on the free seven-day tier; older history paywalled |
+| Internet Archive | **2 page snapshots** held; **9 flight rows** recovered off them |
+
+**No tracking site was found to have removed this aircraft's page.** Our scripts recorded HTTP 403
+from FlightRadar24, RadarBox and Planespotters, but the same script recorded the identical 403 for
+five unrelated control aircraft, so those are robot blocks and establish nothing about this tail:
+[What A 403 Actually Means](/Planes/Flight-Data-Recovery/What-A-403-Means). FlightAware and
+ADS-B Exchange serve scripts normally and returned HTTP 200 for N560TW.
+
+Where a day is absent from an archive, that means the volunteer receiver network heard nothing on
+that day. It does not mean the aircraft did not fly, and it does not mean a transponder was off.
+Both free daily archives begin in 2023, so no 2022 date is testable at all — the 2022 monthly
+samples above are the only window into that year, and they are monthly snapshots, not a record of
+every flight.
+
+Raw payloads are saved at `site/docs/Planes/N560TW/data/recovered/`, with the source named in every
+filename and a `.meta.json` sidecar per file recording the source, URL, HTTP status, byte count and
+date.
+
+Method and fleet-wide results: **[Flight Data Recovery](/Planes/Flight-Data-Recovery/overview)** ·
+**[Per-Aircraft Recovery Status](/Planes/Flight-Data-Recovery/Per-Aircraft-Status)**
+
 {/* CK_INTERESTING_HERE_START */}
 
 ## Interesting In This Area

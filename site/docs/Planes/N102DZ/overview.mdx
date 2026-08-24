@@ -53,12 +53,12 @@ The two record sets describe different legs of the day and are reproduced here a
 
 ## The recovered FlightRadar24 record
 
-Researchers reported that this tail number's FlightRadar24 history **was removed in May 2026**, after which no member of the public could pull it. **This site tested that and could not confirm it.** Opened in an ordinary browser on 24 August 2026 the FlightRadar24 page for N102DZ **loads normally**, with its identity block intact. Its flight table is empty, but a control private jet unconnected to this case shows the identical empty table on the same day, because FlightRadar24 shows logged-out visitors **seven days only**. Whether a block was ever applied is not visible from outside, and is neither confirmed nor refuted here. See [Flight Data Recovery](/Planes/Flight-Data-Recovery/overview).
+Researchers reported that this tail number's FlightRadar24 history **was removed in May 2026**, after which no member of the public could pull it. **This site previously carried that reading and now retracts it.** Opened in an ordinary browser on **24 August 2026** the FlightRadar24 page for N102DZ returns **HTTP 200** and renders its full identity block — **Gulfstream V**, type code **GLF5**, Mode S **A00C85**. Nothing has been taken down. The **HTTP 403** our scripted probe recorded is a robot block, not a removal: the identical script got the identical 403 for **five unrelated control aircraft**, among them a Ryanair 737, a Lufthansa A380 and Nike's corporate Gulfstream. The flight table is empty for a different and equally ordinary reason — FlightRadar24 shows a logged-out visitor the **last seven days only** and paywalls everything older, and a private jet that has not flown in a week therefore shows nothing. Nike's Gulfstream, a control with no connection to this case, printed the same empty table on the same day. See [Flight Data Recovery](/Planes/Flight-Data-Recovery/overview) and [What A 403 Actually Means](/Planes/Flight-Data-Recovery/What-A-403-Means).
 
 **The table it used to carry has been recovered.** The Internet Archive holds a copy of
 `flightradar24.com/data/aircraft/n102dz` captured at **11 September 2025, 05:57 UTC** — roughly
-twenty hours after the assassination and about eight months before the reported removal. It contains
-FlightRadar24's flight-history table intact: **twelve rows covering 4–10 September 2025**, with
+twenty hours after the assassination. It contains
+FlightRadar24's flight-history table intact: **eleven rows covering 4–10 September 2025**, with
 scheduled and actual times. The full recovery, the method, and the other aircraft it was run against
 are on **[Flight Data Recovery](/Planes/Flight-Data-Recovery/overview)**.
 
@@ -114,6 +114,8 @@ Much of the public timeline work on this aircraft rests on flight-tracking scree
 
 Per user reports, portions of that flight data were later said to have been **scrubbed or made harder to find** on some public trackers and apps. This claim is reproduced as reported by X users and has not been independently confirmed here. A common, non-suspicious explanation is that commercial trackers honor the FAA's [LADD](https://www.faa.gov/pilots/ladd) block list (see the tracking note at the bottom of this page), which can remove flights an owner or the government has asked to hide; investigators raise the disappearance of the data as an open question rather than as proof of anything.
 
+That question has now been tested directly, and the answer went the other way: the FlightRadar24 page for N102DZ still loads, HTTP 200, and the archived copy of the table it used to carry has been recovered in full. See [the recovered record above](#the-recovered-flightradar24-record) and the status block below.
+
 ## Open questions
 
 1. What is the complete, reconciled itinerary for N102DZ on September 10, 2025?
@@ -136,6 +138,41 @@ Per user reports, portions of that flight data were later said to have been **sc
 Gulfstream V is out of production. Nearest in-production Gulfstream by cabin size and range is the G600 at ~$58.8M list. Gulfstream's current large-cabin line brackets it: G500 ~$45M to G650ER ~$78M.
 
 List price is for a green airframe — interior completion, avionics options and any mission equipment are extra, and fleet buyers do not pay list. The full table for all 33 priced airframes in this investigation, with the method behind each figure, is on **[Aircraft Costs](/Planes/Aircraft-Costs/overview)**.
+
+## Flight data recovery
+
+Nothing in this aircraft's public record was found to be missing. Every archive that could plausibly
+hold N102DZ still holds it, the FlightRadar24 page still loads, and the archived copy of the flight
+table set out above was recovered intact — **13 flight rows across three archived pages**, which is
+more published history for this tail than was on this site before the sweep.
+
+| Source | What it holds for N102DZ |
+|---|---|
+| adsb.lol `globe_history` | **12 days** of track, 1 September 2025 to 9 October 2025 |
+| globe.airplanes.live | **50 days** of track, 1 September 2025 to 5 June 2026 |
+| ADS-B Exchange monthly sample | **18 days**, 1 May 2022 to 1 June 2026 |
+| FlightRadar24 page | **HTTP 200** in a browser on 24 August 2026; **0 history rows** on the free seven-day tier because the aircraft had not flown in the previous seven days; older history paywalled |
+| Internet Archive | **3 page snapshots** held; **13 flight rows** recovered off them |
+
+A fourth route, adsb.lol's own public backup files on GitHub, supplied **13 October 2025** — a date
+the live adsb.lol API refuses to everyone.
+
+**No tracking site was found to have removed this aircraft's page.** Our scripts recorded HTTP 403
+from FlightRadar24, RadarBox and Planespotters, but the same script recorded the identical 403 for
+five unrelated control aircraft, so those are robot blocks and establish nothing about this tail:
+[What A 403 Actually Means](/Planes/Flight-Data-Recovery/What-A-403-Means). FlightAware and
+ADS-B Exchange serve scripts normally and returned HTTP 200 for N102DZ.
+
+Where a day is absent from an archive, that means the volunteer receiver network heard nothing on
+that day. It does not mean the aircraft did not fly, and it does not mean a transponder was off.
+Both free daily archives begin in 2023, so no 2022 date is testable at all.
+
+Raw payloads are saved at `site/docs/Planes/N102DZ/data/recovered/`, with the source named in every
+filename and a `.meta.json` sidecar per file recording the source, URL, HTTP status, byte count and
+date.
+
+Method and fleet-wide results: **[Flight Data Recovery](/Planes/Flight-Data-Recovery/overview)** ·
+**[Per-Aircraft Recovery Status](/Planes/Flight-Data-Recovery/Per-Aircraft-Status)**
 
 {/* CK_INTERESTING_HERE_START */}
 

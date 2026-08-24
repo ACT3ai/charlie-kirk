@@ -1,8 +1,11 @@
 {
-  "verified_utc": "2026-08-24T17:33:16.248Z",
+  "verified_utc": "2026-08-24T17:36:21.953Z",
   "overlap_id": "SITE-003",
   "date": "2024-04-03",
   "claimed_airport": "KICT",
+  "claimed_codes": [
+    "KICT"
+  ],
   "claimed_city": "Lawrence (event) / Wichita (aircraft)",
   "claimed_state": "KS",
   "claimed_tails": [
@@ -49,6 +52,7 @@
         "both_agree": false,
         "heard": false,
         "at_claimed_airport": false,
+        "closest_approach_to_claimed_field": null,
         "airports_touched": null,
         "first_where": null,
         "last_where": null,
@@ -62,6 +66,12 @@
         "both_agree": true,
         "heard": true,
         "at_claimed_airport": false,
+        "closest_approach_to_claimed_field": {
+          "code": "KICT",
+          "km": 1852.96,
+          "utc": "2024-04-03T15:54:45.350Z",
+          "on_ground": false
+        },
         "airports_touched": [
           "3PA8 4.32km below_4000ft",
           "US-6790 1.75km below_4000ft",
@@ -110,6 +120,7 @@
         "both_agree": false,
         "heard": false,
         "at_claimed_airport": false,
+        "closest_approach_to_claimed_field": null,
         "airports_touched": null,
         "first_where": null,
         "last_where": null,

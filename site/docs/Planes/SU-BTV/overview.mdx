@@ -238,6 +238,26 @@ Falcon 8X successor pricing — same basis as SU-BTT.
 
 List price is for a green airframe — interior completion, avionics options and any mission equipment are extra, and fleet buyers do not pay list. The full table for all 33 priced airframes in this investigation, with the method behind each figure, is on **[Aircraft Costs](/Planes/Aircraft-Costs/overview)**.
 
+## Flight data recovery
+
+Archive coverage for this tail is thin — a single day on adsb.lol, seven on airplanes.live, two monthly samples — and it is thin for the ordinary reason. These are volunteer receiver networks, not a registry: they hold whatever their feeders happened to hear. An absent day means nobody heard the aircraft, not that it did not fly and not that a transponder was off. The FlightRadar24 page itself loads normally.
+
+| Source | What it holds for SU-BTV |
+|---|---|
+| adsb.lol `globe_history` | **1 day**, 2025-10-11 |
+| globe.airplanes.live | **7 days**, 2025-10-11 to 2026-05-24 |
+| ADS-B Exchange monthly sample | **2 days**, 2022-10-01 to 2025-10-01 |
+| FlightRadar24 page | HTTP **200** in a real browser on 24 Aug 2026 — **54 history rows** on the free seven-day tier, everything older paywalled |
+| Internet Archive | **0** page snapshots held; **0** flight rows recovered off them |
+
+**Alleged overlaps.** This tail carries **no alleged overlap dates** in the overlap register, so there is nothing here to test and nothing recovered. The Egyptian side of the following-planes claim is carried entirely by [SU-BTT](/Planes/SU-BTT/overview) with 53 alleged dates and [SU-BND](/Planes/SU-BND/overview) with 16. See [Overlap Recovery](/Planes/Flight-Data-Recovery/Overlap-Recovery).
+
+**Removed from: nothing.** No tracking site was found to have removed this aircraft's page. Our scripts recorded HTTP 403 from FlightRadar24, RadarBox and Planespotters, but all three return the identical 403 to unrelated control aircraft asked by the identical script. It is a robot block, not a deletion — see [What A 403 Means](/Planes/Flight-Data-Recovery/What-A-403-Means).
+
+Raw payloads are kept in `site/docs/Planes/SU-BTV/data/recovered/`, with the source named in every filename and a `.meta.json` sidecar per file recording source, URL, HTTP status, bytes and date.
+
+More: [Flight Data Recovery](/Planes/Flight-Data-Recovery/overview) · [Per-Aircraft Status](/Planes/Flight-Data-Recovery/Per-Aircraft-Status)
+
 {/* CK_INTERESTING_HERE_START */}
 
 ## Interesting In This Area

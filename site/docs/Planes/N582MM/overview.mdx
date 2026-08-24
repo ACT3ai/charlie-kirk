@@ -100,6 +100,39 @@ Learjet 60 out of production and the Learjet brand is retired. The Praetor 500 (
 
 List price is for a green airframe — interior completion, avionics options and any mission equipment are extra, and fleet buyers do not pay list. The full table for all 33 priced airframes in this investigation, with the method behind each figure, is on **[Aircraft Costs](/Planes/Aircraft-Costs/overview)**.
 
+## Flight data recovery
+
+N582MM came back well from the archives: **7 Internet Archive captures** of its tracking pages
+yielded **40 recovered flight rows**. Nothing was found to be missing from any tracking site. The one
+thing worth stating carefully is that airplanes.live coverage for this tail stops on
+**16 October 2025** — on the honest reading that means the volunteer receiver network heard nothing
+after that date, not that anything was deleted.
+
+| Source | What it holds for N582MM |
+|---|---|
+| adsb.lol `globe_history` | **19 days** of track, 1 September 2025 to 11 October 2025 |
+| globe.airplanes.live | **24 days** of track, 1 September 2025 to 16 October 2025 |
+| ADS-B Exchange monthly sample | **23 days**, 1 April 2022 to 1 December 2025 |
+| FlightRadar24 page | **HTTP 200** in a browser on 24 August 2026; **0 history rows** on the free seven-day tier because the aircraft had not flown in the previous seven days; older history paywalled |
+| Internet Archive | **7 page snapshots** held; **40 flight rows** recovered off them |
+
+**No tracking site was found to have removed this aircraft's page.** Our scripts recorded HTTP 403
+from FlightRadar24, RadarBox and Planespotters, but the same script recorded the identical 403 for
+five unrelated control aircraft, so those are robot blocks and establish nothing about this tail:
+[What A 403 Actually Means](/Planes/Flight-Data-Recovery/What-A-403-Means). FlightAware and
+ADS-B Exchange serve scripts normally and returned HTTP 200 for N582MM.
+
+Where a day is absent from an archive, that means the volunteer receiver network heard nothing on
+that day. It does not mean the aircraft did not fly, and it does not mean a transponder was off.
+Both free daily archives begin in 2023, so no 2022 date is testable at all.
+
+Raw payloads are saved at `site/docs/Planes/N582MM/data/recovered/`, with the source named in every
+filename and a `.meta.json` sidecar per file recording the source, URL, HTTP status, byte count and
+date.
+
+Method and fleet-wide results: **[Flight Data Recovery](/Planes/Flight-Data-Recovery/overview)** ·
+**[Per-Aircraft Recovery Status](/Planes/Flight-Data-Recovery/Per-Aircraft-Status)**
+
 {/* CK_INTERESTING_HERE_START */}
 
 ## Interesting In This Area

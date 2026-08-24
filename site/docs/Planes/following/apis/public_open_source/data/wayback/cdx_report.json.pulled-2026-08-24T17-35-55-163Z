@@ -1,0 +1,495 @@
+{
+  "generated_utc": "2026-08-24T17:35:55.162Z",
+  "targets": 30,
+  "failed_queries": [],
+  "results": [
+    {
+      "url": "https://globe.adsbexchange.com/?icao=0101d3",
+      "query_ok": true,
+      "query_http": 200,
+      "snapshots": 3,
+      "snapshots_note": "total snapshots",
+      "first": "2022-09-01",
+      "last": "2022-12-17",
+      "statuses": [
+        "200"
+      ],
+      "first_non_200": null,
+      "distinct_digests": 3,
+      "last_digest_change": "2022-12-17",
+      "identical_consecutive_captures": 0,
+      "by_year": {
+        "2022": 3
+      }
+    },
+    {
+      "url": "https://www.flightradar24.com/data/aircraft/su-btt",
+      "query_ok": true,
+      "query_http": 200,
+      "snapshots": 0,
+      "snapshots_note": "total snapshots",
+      "first": "—",
+      "last": "—",
+      "statuses": [],
+      "first_non_200": null,
+      "distinct_digests": 0,
+      "last_digest_change": null,
+      "identical_consecutive_captures": 0,
+      "by_year": {}
+    },
+    {
+      "url": "https://www.flightaware.com/live/flight/SU-BTT",
+      "query_ok": true,
+      "query_http": 200,
+      "snapshots": 0,
+      "snapshots_note": "total snapshots",
+      "first": "—",
+      "last": "—",
+      "statuses": [],
+      "first_non_200": null,
+      "distinct_digests": 0,
+      "last_digest_change": null,
+      "identical_consecutive_captures": 0,
+      "by_year": {}
+    },
+    {
+      "url": "https://www.radarbox.com/data/registration/SU-BTT",
+      "query_ok": true,
+      "query_http": 200,
+      "snapshots": 0,
+      "snapshots_note": "total snapshots",
+      "first": "—",
+      "last": "—",
+      "statuses": [],
+      "first_non_200": null,
+      "distinct_digests": 0,
+      "last_digest_change": null,
+      "identical_consecutive_captures": 0,
+      "by_year": {}
+    },
+    {
+      "url": "https://www.planespotters.net/search?q=SU-BTT",
+      "query_ok": true,
+      "query_http": 200,
+      "snapshots": 0,
+      "snapshots_note": "total snapshots",
+      "first": "—",
+      "last": "—",
+      "statuses": [],
+      "first_non_200": null,
+      "distinct_digests": 0,
+      "last_digest_change": null,
+      "identical_consecutive_captures": 0,
+      "by_year": {}
+    },
+    {
+      "url": "https://globe.adsbexchange.com/?icao=01003e",
+      "query_ok": true,
+      "query_http": 200,
+      "snapshots": 2,
+      "snapshots_note": "total snapshots",
+      "first": "2022-09-01",
+      "last": "2022-12-18",
+      "statuses": [
+        "200"
+      ],
+      "first_non_200": null,
+      "distinct_digests": 2,
+      "last_digest_change": "2022-12-18",
+      "identical_consecutive_captures": 0,
+      "by_year": {
+        "2022": 2
+      }
+    },
+    {
+      "url": "https://www.flightradar24.com/data/aircraft/su-bnd",
+      "query_ok": true,
+      "query_http": 200,
+      "snapshots": 2,
+      "snapshots_note": "total snapshots",
+      "first": "2025-10-12",
+      "last": "2025-11-18",
+      "statuses": [
+        "200"
+      ],
+      "first_non_200": null,
+      "distinct_digests": 2,
+      "last_digest_change": "2025-11-18",
+      "identical_consecutive_captures": 0,
+      "by_year": {
+        "2025": 2
+      }
+    },
+    {
+      "url": "https://www.flightaware.com/live/flight/SU-BND",
+      "query_ok": true,
+      "query_http": 200,
+      "snapshots": 0,
+      "snapshots_note": "total snapshots",
+      "first": "—",
+      "last": "—",
+      "statuses": [],
+      "first_non_200": null,
+      "distinct_digests": 0,
+      "last_digest_change": null,
+      "identical_consecutive_captures": 0,
+      "by_year": {}
+    },
+    {
+      "url": "https://www.radarbox.com/data/registration/SU-BND",
+      "query_ok": true,
+      "query_http": 200,
+      "snapshots": 0,
+      "snapshots_note": "total snapshots",
+      "first": "—",
+      "last": "—",
+      "statuses": [],
+      "first_non_200": null,
+      "distinct_digests": 0,
+      "last_digest_change": null,
+      "identical_consecutive_captures": 0,
+      "by_year": {}
+    },
+    {
+      "url": "https://www.planespotters.net/search?q=SU-BND",
+      "query_ok": true,
+      "query_http": 200,
+      "snapshots": 0,
+      "snapshots_note": "total snapshots",
+      "first": "—",
+      "last": "—",
+      "statuses": [],
+      "first_non_200": null,
+      "distinct_digests": 0,
+      "last_digest_change": null,
+      "identical_consecutive_captures": 0,
+      "by_year": {}
+    },
+    {
+      "url": "https://globe.adsbexchange.com/?icao=0101d0",
+      "query_ok": true,
+      "query_http": 200,
+      "snapshots": 3,
+      "snapshots_note": "total snapshots",
+      "first": "2022-12-01",
+      "last": "2023-05-17",
+      "statuses": [
+        "200"
+      ],
+      "first_non_200": null,
+      "distinct_digests": 3,
+      "last_digest_change": "2023-05-17",
+      "identical_consecutive_captures": 0,
+      "by_year": {
+        "2022": 2,
+        "2023": 1
+      }
+    },
+    {
+      "url": "https://www.flightradar24.com/data/aircraft/su-btu",
+      "query_ok": true,
+      "query_http": 200,
+      "snapshots": 1,
+      "snapshots_note": "total snapshots",
+      "first": "2022-08-31",
+      "last": "2022-08-31",
+      "statuses": [
+        "200"
+      ],
+      "first_non_200": null,
+      "distinct_digests": 1,
+      "last_digest_change": null,
+      "identical_consecutive_captures": 0,
+      "by_year": {
+        "2022": 1
+      }
+    },
+    {
+      "url": "https://www.flightaware.com/live/flight/SU-BTU",
+      "query_ok": true,
+      "query_http": 200,
+      "snapshots": 0,
+      "snapshots_note": "total snapshots",
+      "first": "—",
+      "last": "—",
+      "statuses": [],
+      "first_non_200": null,
+      "distinct_digests": 0,
+      "last_digest_change": null,
+      "identical_consecutive_captures": 0,
+      "by_year": {}
+    },
+    {
+      "url": "https://www.radarbox.com/data/registration/SU-BTU",
+      "query_ok": true,
+      "query_http": 200,
+      "snapshots": 0,
+      "snapshots_note": "total snapshots",
+      "first": "—",
+      "last": "—",
+      "statuses": [],
+      "first_non_200": null,
+      "distinct_digests": 0,
+      "last_digest_change": null,
+      "identical_consecutive_captures": 0,
+      "by_year": {}
+    },
+    {
+      "url": "https://www.planespotters.net/search?q=SU-BTU",
+      "query_ok": true,
+      "query_http": 200,
+      "snapshots": 0,
+      "snapshots_note": "total snapshots",
+      "first": "—",
+      "last": "—",
+      "statuses": [],
+      "first_non_200": null,
+      "distinct_digests": 0,
+      "last_digest_change": null,
+      "identical_consecutive_captures": 0,
+      "by_year": {}
+    },
+    {
+      "url": "https://globe.adsbexchange.com/?icao=0101d1",
+      "query_ok": true,
+      "query_http": 200,
+      "snapshots": 3,
+      "snapshots_note": "total snapshots",
+      "first": "2022-05-16",
+      "last": "2022-12-17",
+      "statuses": [
+        "200"
+      ],
+      "first_non_200": null,
+      "distinct_digests": 3,
+      "last_digest_change": "2022-12-17",
+      "identical_consecutive_captures": 0,
+      "by_year": {
+        "2022": 3
+      }
+    },
+    {
+      "url": "https://www.flightradar24.com/data/aircraft/su-btv",
+      "query_ok": true,
+      "query_http": 200,
+      "snapshots": 0,
+      "snapshots_note": "total snapshots",
+      "first": "—",
+      "last": "—",
+      "statuses": [],
+      "first_non_200": null,
+      "distinct_digests": 0,
+      "last_digest_change": null,
+      "identical_consecutive_captures": 0,
+      "by_year": {}
+    },
+    {
+      "url": "https://www.flightaware.com/live/flight/SU-BTV",
+      "query_ok": true,
+      "query_http": 200,
+      "snapshots": 0,
+      "snapshots_note": "total snapshots",
+      "first": "—",
+      "last": "—",
+      "statuses": [],
+      "first_non_200": null,
+      "distinct_digests": 0,
+      "last_digest_change": null,
+      "identical_consecutive_captures": 0,
+      "by_year": {}
+    },
+    {
+      "url": "https://www.radarbox.com/data/registration/SU-BTV",
+      "query_ok": true,
+      "query_http": 200,
+      "snapshots": 0,
+      "snapshots_note": "total snapshots",
+      "first": "—",
+      "last": "—",
+      "statuses": [],
+      "first_non_200": null,
+      "distinct_digests": 0,
+      "last_digest_change": null,
+      "identical_consecutive_captures": 0,
+      "by_year": {}
+    },
+    {
+      "url": "https://www.planespotters.net/search?q=SU-BTV",
+      "query_ok": true,
+      "query_http": 200,
+      "snapshots": 0,
+      "snapshots_note": "total snapshots",
+      "first": "—",
+      "last": "—",
+      "statuses": [],
+      "first_non_200": null,
+      "distinct_digests": 0,
+      "last_digest_change": null,
+      "identical_consecutive_captures": 0,
+      "by_year": {}
+    },
+    {
+      "url": "https://globe.adsbexchange.com/?icao=010070",
+      "query_ok": true,
+      "query_http": 200,
+      "snapshots": 1,
+      "snapshots_note": "total snapshots",
+      "first": "2022-12-17",
+      "last": "2022-12-17",
+      "statuses": [
+        "200"
+      ],
+      "first_non_200": null,
+      "distinct_digests": 1,
+      "last_digest_change": null,
+      "identical_consecutive_captures": 0,
+      "by_year": {
+        "2022": 1
+      }
+    },
+    {
+      "url": "https://www.flightradar24.com/data/aircraft/su-bgm",
+      "query_ok": true,
+      "query_http": 200,
+      "snapshots": 1,
+      "snapshots_note": "total snapshots",
+      "first": "2020-05-07",
+      "last": "2020-05-07",
+      "statuses": [
+        "200"
+      ],
+      "first_non_200": null,
+      "distinct_digests": 1,
+      "last_digest_change": null,
+      "identical_consecutive_captures": 0,
+      "by_year": {
+        "2020": 1
+      }
+    },
+    {
+      "url": "https://www.flightaware.com/live/flight/SU-BGM",
+      "query_ok": true,
+      "query_http": 200,
+      "snapshots": 0,
+      "snapshots_note": "total snapshots",
+      "first": "—",
+      "last": "—",
+      "statuses": [],
+      "first_non_200": null,
+      "distinct_digests": 0,
+      "last_digest_change": null,
+      "identical_consecutive_captures": 0,
+      "by_year": {}
+    },
+    {
+      "url": "https://www.radarbox.com/data/registration/SU-BGM",
+      "query_ok": true,
+      "query_http": 200,
+      "snapshots": 0,
+      "snapshots_note": "total snapshots",
+      "first": "—",
+      "last": "—",
+      "statuses": [],
+      "first_non_200": null,
+      "distinct_digests": 0,
+      "last_digest_change": null,
+      "identical_consecutive_captures": 0,
+      "by_year": {}
+    },
+    {
+      "url": "https://www.planespotters.net/search?q=SU-BGM",
+      "query_ok": true,
+      "query_http": 200,
+      "snapshots": 0,
+      "snapshots_note": "total snapshots",
+      "first": "—",
+      "last": "—",
+      "statuses": [],
+      "first_non_200": null,
+      "distinct_digests": 0,
+      "last_digest_change": null,
+      "identical_consecutive_captures": 0,
+      "by_year": {}
+    },
+    {
+      "url": "https://globe.adsbexchange.com/?icao=50018a",
+      "query_ok": true,
+      "query_http": 200,
+      "snapshots": 3,
+      "snapshots_note": "total snapshots",
+      "first": "2022-10-15",
+      "last": "2023-01-03",
+      "statuses": [
+        "200"
+      ],
+      "first_non_200": null,
+      "distinct_digests": 3,
+      "last_digest_change": "2023-01-03",
+      "identical_consecutive_captures": 0,
+      "by_year": {
+        "2022": 2,
+        "2023": 1
+      }
+    },
+    {
+      "url": "https://www.flightradar24.com/data/aircraft/t7-ell",
+      "query_ok": true,
+      "query_http": 200,
+      "snapshots": 0,
+      "snapshots_note": "total snapshots",
+      "first": "—",
+      "last": "—",
+      "statuses": [],
+      "first_non_200": null,
+      "distinct_digests": 0,
+      "last_digest_change": null,
+      "identical_consecutive_captures": 0,
+      "by_year": {}
+    },
+    {
+      "url": "https://www.flightaware.com/live/flight/T7-ELL",
+      "query_ok": true,
+      "query_http": 200,
+      "snapshots": 0,
+      "snapshots_note": "total snapshots",
+      "first": "—",
+      "last": "—",
+      "statuses": [],
+      "first_non_200": null,
+      "distinct_digests": 0,
+      "last_digest_change": null,
+      "identical_consecutive_captures": 0,
+      "by_year": {}
+    },
+    {
+      "url": "https://www.radarbox.com/data/registration/T7-ELL",
+      "query_ok": true,
+      "query_http": 200,
+      "snapshots": 0,
+      "snapshots_note": "total snapshots",
+      "first": "—",
+      "last": "—",
+      "statuses": [],
+      "first_non_200": null,
+      "distinct_digests": 0,
+      "last_digest_change": null,
+      "identical_consecutive_captures": 0,
+      "by_year": {}
+    },
+    {
+      "url": "https://www.planespotters.net/search?q=T7-ELL",
+      "query_ok": true,
+      "query_http": 200,
+      "snapshots": 0,
+      "snapshots_note": "total snapshots",
+      "first": "—",
+      "last": "—",
+      "statuses": [],
+      "first_non_200": null,
+      "distinct_digests": 0,
+      "last_digest_change": null,
+      "identical_consecutive_captures": 0,
+      "by_year": {}
+    }
+  ]
+}

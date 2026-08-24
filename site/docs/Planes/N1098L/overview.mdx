@@ -179,6 +179,41 @@ Global 6500 remains in production. Manufacturer list ~$56-58M for a green airfra
 
 List price is for a green airframe — interior completion, avionics options and any mission equipment are extra, and fleet buyers do not pay list. The full table for all 33 priced airframes in this investigation, with the method behind each figure, is on **[Aircraft Costs](/Planes/Aircraft-Costs/overview)**.
 
+## Flight data recovery
+
+This is the tail most often described online as a hidden, blacked-out or blocked military asset, so
+the result of the archive sweep deserves stating plainly: **nothing about N1098L is missing from any
+archive we checked.** It is one of the best-covered aircraft in the fleet — **46 days** of raw track
+on airplanes.live running to **3 June 2026**, and monthly samples reaching **1 August 2026**. Its
+FlightRadar24 page loads in an ordinary browser, listed openly as a **Bombardier Global 6500 (GLEX),
+"Private owner", Mode S A0299E**, and served **28 history rows** on 24 August 2026.
+
+| Source | What it holds for N1098L |
+|---|---|
+| adsb.lol `globe_history` | 17 days, 2 Sep 2025 – 11 Oct 2025 |
+| globe.airplanes.live | 46 days, 2 Sep 2025 – 3 Jun 2026 |
+| ADS-B Exchange monthly sample | 19 days, 1 Nov 2023 – 1 Aug 2026 |
+| FlightRadar24 page | HTTP 200 in a browser on 24 Aug 2026; 28 history rows on the free seven-day tier; older history paywalled |
+| Internet Archive | 3 page snapshots held (FlightAware, May 2023 – Sep 2025); 0 flight rows recovered off them — those captures are JavaScript shells with no server-rendered rows |
+
+**Nothing here was found to have been removed.** No tracking site was found to have taken this
+aircraft's page down. Our scripted probe recorded HTTP 403 from FlightRadar24, RadarBox and
+Planespotters — but the identical script got the identical 403 for five unrelated control aircraft
+chosen for having nothing to do with this case, so a 403 is a robot block and says nothing about
+this tail. See [What A 403 Actually Means](/Planes/Flight-Data-Recovery/What-A-403-Means).
+
+Where a day is absent from an archive, that means a volunteer receiver network heard nothing on that
+day. It does not establish that the aircraft did not fly, and it does not establish that a
+transponder was switched off. Both free daily archives begin in 2023, so every 2022 date is
+untestable by construction rather than missing.
+
+The raw files are on disk at `site/docs/Planes/N1098L/data/recovered/` — the source is in every
+filename, and each file carries a `.meta.json` sidecar recording the source, the URL, the HTTP
+status, the byte count and the date, so any line above can be checked without trusting this page.
+
+More: [Flight Data Recovery](/Planes/Flight-Data-Recovery/overview) ·
+[Per-Aircraft Status](/Planes/Flight-Data-Recovery/Per-Aircraft-Status)
+
 {/* CK_INTERESTING_HERE_START */}
 
 ## Interesting In This Area
