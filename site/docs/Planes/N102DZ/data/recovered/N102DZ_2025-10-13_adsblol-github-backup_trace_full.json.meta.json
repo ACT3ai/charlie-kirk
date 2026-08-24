@@ -1,0 +1,32 @@
+{
+  "retrieved_utc": "2026-08-24T16:49:21.700Z",
+  "source": "adsblol-github-backup",
+  "source_role": "OFF-SITE BACKUP of the adsb.lol archive — one GitHub release per day, Open Database Licence. Recovers days the live adsb.lol API refuses.",
+  "url": "https://github.com/adsblol/globe_history_2025/releases/tag/v2025.10.13-planes-readsb-prod-0",
+  "release_tag": "v2025.10.13-planes-readsb-prod-0",
+  "http_status": 200,
+  "bytes": 209080,
+  "tail": "N102DZ",
+  "hex": "a00c85",
+  "utc_date": "2025-10-13",
+  "summary": {
+    "registration": "N102DZ",
+    "type": "GLF5",
+    "points": 1323,
+    "first_seen_utc": "2025-10-13T16:13:17.430Z",
+    "first_pos": [
+      33.619263,
+      -111.916968
+    ],
+    "first_on_ground": true,
+    "last_seen_utc": "2025-10-13T20:31:07.820Z",
+    "last_pos": [
+      38.969158,
+      -77.456673
+    ],
+    "last_on_ground": true,
+    "wheels_up_utc": "2025-10-13T16:42:58.460Z",
+    "wheels_down_utc": "2025-10-13T20:27:26.570Z"
+  },
+  "note": "Extracted from the release tarball by streaming it and filtering to this airframe. The live adsb.lol globe_history endpoint returns HTTP 403 for this date."
+}
