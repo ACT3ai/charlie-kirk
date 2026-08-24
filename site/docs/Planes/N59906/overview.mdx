@@ -260,6 +260,33 @@ Navajo Chieftain out of production since 1984. No modern cabin-class piston twin
 
 List price is for a green airframe — interior completion, avionics options and any mission equipment are extra, and fleet buyers do not pay list. The full table for all 33 priced airframes in this investigation, with the method behind each figure, is on **[Aircraft Costs](/Planes/Aircraft-Costs/overview)**.
 
+## Flight data recovery
+
+This aircraft is **well covered and nothing about its record is missing.** It is also the only tail
+in this investigation whose FlightRadar24 page still shows a populated flight table to a logged-out
+visitor — a working survey aircraft flies most days, so the free tier's seven-day window is never
+empty for it.
+
+| Source | What it holds for N59906 |
+|---|---|
+| adsb.lol `globe_history` | **9 days**, 1 Sep 2025 – 8 Oct 2025 |
+| globe.airplanes.live | **26 days**, 1 Sep 2025 – 31 May 2026 |
+| ADS-B Exchange monthly sample | **23 days**, 1 Feb 2022 – 1 Jul 2026 |
+| FlightRadar24 page | **HTTP 200 in a browser on 24 August 2026**, identity block intact — *PA31 · Mode S A7C14D*. **110 history rows** on the free seven-day tier; older history paywalled. |
+| Internet Archive | **4 page snapshots** held (two FlightAware, two FlightRadar24, all Aug–Sep 2022); **0 flight rows** recovered off them — the archived FR24 tables are empty. |
+
+**Removed from: nothing.** No tracking site was found to have removed this aircraft's page. Our
+scripted probe recorded HTTP 403 from FlightRadar24, RadarBox and Planespotters, and those 403s are
+robot blocks rather than removals — five unrelated control aircraft got the identical 403 from the
+identical script, and all of them load normally in a browser. See
+[What A 403 Actually Means](/Planes/Flight-Data-Recovery/What-A-403-Means).
+
+Raw files: `site/docs/Planes/N59906/data/recovered/` — the source is in every filename, and each
+file has a `.meta.json` sidecar recording source, URL, HTTP status, bytes and date.
+
+Fleet-wide: [Flight Data Recovery](/Planes/Flight-Data-Recovery/overview) ·
+[Per-Aircraft Recovery Status](/Planes/Flight-Data-Recovery/Per-Aircraft-Status)
+
 {/* CK_INTERESTING_HERE_START */}
 
 ## Interesting In This Area

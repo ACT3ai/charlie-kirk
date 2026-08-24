@@ -1,0 +1,88 @@
+{
+  "hex": "0101d1",
+  "side": "following",
+  "http": 200,
+  "url": "https://www.flightaware.com/live/flight/SU-BTV",
+  "legs": 7,
+  "earliest": "2026-08-11",
+  "latest": "2026-08-22",
+  "flights": [
+    {
+      "ident": null,
+      "from": "Cairo, Egypt",
+      "from_icao": "29.10N/31.27E",
+      "to": "Cairo, Egypt",
+      "to_icao": "29.89N/31.36E",
+      "takeoff_utc": "2026-08-22T08:40:00.000Z",
+      "landing_utc": "2026-08-22T08:40:00.000Z",
+      "scheduled_out_utc": null,
+      "aircraft_type": null
+    },
+    {
+      "ident": null,
+      "from": "Cairo, Egypt",
+      "from_icao": "29.88N/31.31E",
+      "to": "Assiut, Egypt",
+      "to_icao": "28.15N/31.96E",
+      "takeoff_utc": "2026-08-22T06:31:00.000Z",
+      "landing_utc": "2026-08-22T06:31:00.000Z",
+      "scheduled_out_utc": null,
+      "aircraft_type": null
+    },
+    {
+      "ident": null,
+      "from": "Amreya, Egypt",
+      "from_icao": "31.65N/29.17E",
+      "to": "Amreya, Egypt",
+      "to_icao": "31.31N/29.65E",
+      "takeoff_utc": "2026-08-18T09:06:00.000Z",
+      "landing_utc": "2026-08-18T09:06:00.000Z",
+      "scheduled_out_utc": null,
+      "aircraft_type": null
+    },
+    {
+      "ident": null,
+      "from": "Cairo, Egypt",
+      "from_icao": "30.53N/30.95E",
+      "to": "Amreya, Egypt",
+      "to_icao": "31.55N/29.36E",
+      "takeoff_utc": "2026-08-18T07:32:00.000Z",
+      "landing_utc": "2026-08-18T07:32:00.000Z",
+      "scheduled_out_utc": null,
+      "aircraft_type": null
+    },
+    {
+      "ident": null,
+      "from": "Cairo, Egypt",
+      "from_icao": "28.99N/31.25E",
+      "to": "Cairo, Egypt",
+      "to_icao": "30.04N/31.36E",
+      "takeoff_utc": "2026-08-15T09:07:00.000Z",
+      "landing_utc": "2026-08-15T09:07:00.000Z",
+      "scheduled_out_utc": null,
+      "aircraft_type": null
+    },
+    {
+      "ident": null,
+      "from": "Almaza Afb",
+      "from_icao": "HEAZ",
+      "to": "Assiut, Egypt",
+      "to_icao": "28.04N/32.05E",
+      "takeoff_utc": "2026-08-15T06:42:00.000Z",
+      "landing_utc": "2026-08-15T06:42:00.000Z",
+      "scheduled_out_utc": null,
+      "aircraft_type": null
+    },
+    {
+      "ident": null,
+      "from": "Almaza Afb",
+      "from_icao": "HEAZ",
+      "to": "Cairo, Egypt",
+      "to_icao": "29.87N/31.36E",
+      "takeoff_utc": "2026-08-11T07:23:00.000Z",
+      "landing_utc": "2026-08-11T07:23:00.000Z",
+      "scheduled_out_utc": null,
+      "aircraft_type": null
+    }
+  ]
+}

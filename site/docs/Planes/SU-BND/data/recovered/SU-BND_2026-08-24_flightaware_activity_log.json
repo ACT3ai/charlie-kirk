@@ -1,0 +1,77 @@
+{
+  "hex": "01003e",
+  "side": "following",
+  "http": 200,
+  "url": "https://www.flightaware.com/live/flight/SU-BND",
+  "legs": 6,
+  "earliest": "2026-08-12",
+  "latest": "2026-08-18",
+  "flights": [
+    {
+      "ident": null,
+      "from": "Cairo, Egypt",
+      "from_icao": "30.14N/31.36E",
+      "to": "Cairo, Egypt",
+      "to_icao": "29.86N/31.38E",
+      "takeoff_utc": "2026-08-18T17:43:00.000Z",
+      "landing_utc": "2026-08-18T17:43:00.000Z",
+      "scheduled_out_utc": null,
+      "aircraft_type": null
+    },
+    {
+      "ident": null,
+      "from": "Cairo Intl",
+      "from_icao": "HECA",
+      "to": "Cairo, Egypt",
+      "to_icao": "29.92N/31.34E",
+      "takeoff_utc": "2026-08-16T21:07:00.000Z",
+      "landing_utc": "2026-08-16T21:07:00.000Z",
+      "scheduled_out_utc": null,
+      "aircraft_type": null
+    },
+    {
+      "ident": null,
+      "from": "Costa Smeralda",
+      "from_icao": "LIEO",
+      "to": "Cairo, Egypt",
+      "to_icao": "29.60N/30.67E",
+      "takeoff_utc": "2026-08-16T17:25:00.000Z",
+      "landing_utc": "2026-08-16T17:25:00.000Z",
+      "scheduled_out_utc": null,
+      "aircraft_type": null
+    },
+    {
+      "ident": null,
+      "from": "Cairo, Egypt",
+      "from_icao": "30.16N/31.36E",
+      "to": "Costa Smeralda",
+      "to_icao": "LIEO",
+      "takeoff_utc": "2026-08-16T11:37:00.000Z",
+      "landing_utc": "2026-08-16T14:55:00.000Z",
+      "scheduled_out_utc": null,
+      "aircraft_type": null
+    },
+    {
+      "ident": null,
+      "from": "Mersa Matruh / Intl",
+      "from_icao": "HEMM",
+      "to": "Almaza Afb",
+      "to_icao": "HEAZ",
+      "takeoff_utc": "2026-08-12T20:14:00.000Z",
+      "landing_utc": "2026-08-12T20:59:00.000Z",
+      "scheduled_out_utc": null,
+      "aircraft_type": null
+    },
+    {
+      "ident": null,
+      "from": "Almaza Afb",
+      "from_icao": "HEAZ",
+      "to": "Mersa Matruh / Intl",
+      "to_icao": "HEMM",
+      "takeoff_utc": "2026-08-12T18:56:00.000Z",
+      "landing_utc": "2026-08-12T19:43:00.000Z",
+      "scheduled_out_utc": null,
+      "aircraft_type": null
+    }
+  ]
+}

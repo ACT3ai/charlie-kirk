@@ -1,0 +1,132 @@
+{
+  "hex": "0101d3",
+  "side": "following",
+  "http": 200,
+  "url": "https://www.flightaware.com/live/flight/SU-BTT",
+  "legs": 11,
+  "earliest": "2026-08-11",
+  "latest": "2026-08-19",
+  "flights": [
+    {
+      "ident": null,
+      "from": "Mersa Matruh, Egypt",
+      "from_icao": "31.42N/27.66E",
+      "to": "Cairo, Egypt",
+      "to_icao": "30.01N/31.36E",
+      "takeoff_utc": "2026-08-19T09:24:00.000Z",
+      "landing_utc": "2026-08-19T09:24:00.000Z",
+      "scheduled_out_utc": null,
+      "aircraft_type": null
+    },
+    {
+      "ident": null,
+      "from": "Cairo, Egypt",
+      "from_icao": "30.14N/31.36E",
+      "to": "Mersa Matruh, Egypt",
+      "to_icao": "31.44N/27.04E",
+      "takeoff_utc": "2026-08-19T08:11:00.000Z",
+      "landing_utc": "2026-08-19T08:11:00.000Z",
+      "scheduled_out_utc": null,
+      "aircraft_type": null
+    },
+    {
+      "ident": null,
+      "from": "Cairo, Egypt",
+      "from_icao": "30.14N/31.35E",
+      "to": "Cairo, Egypt",
+      "to_icao": "29.75N/31.41E",
+      "takeoff_utc": "2026-08-18T18:38:00.000Z",
+      "landing_utc": "2026-08-18T18:38:00.000Z",
+      "scheduled_out_utc": null,
+      "aircraft_type": null
+    },
+    {
+      "ident": null,
+      "from": "Mersa Matruh, Egypt",
+      "from_icao": "30.95N/27.66E",
+      "to": "El Dabaa, Egypt",
+      "to_icao": "30.36N/28.73E",
+      "takeoff_utc": "2026-08-18T09:02:00.000Z",
+      "landing_utc": "2026-08-18T09:02:00.000Z",
+      "scheduled_out_utc": null,
+      "aircraft_type": null
+    },
+    {
+      "ident": null,
+      "from": "Cairo, Egypt",
+      "from_icao": "30.52N/30.95E",
+      "to": "Amreya, Egypt",
+      "to_icao": "31.52N/29.41E",
+      "takeoff_utc": "2026-08-18T07:39:00.000Z",
+      "landing_utc": "2026-08-18T07:39:00.000Z",
+      "scheduled_out_utc": null,
+      "aircraft_type": null
+    },
+    {
+      "ident": null,
+      "from": "Cairo, Egypt",
+      "from_icao": "28.91N/31.24E",
+      "to": "Cairo, Egypt",
+      "to_icao": "29.85N/31.35E",
+      "takeoff_utc": "2026-08-16T09:39:00.000Z",
+      "landing_utc": "2026-08-16T09:39:00.000Z",
+      "scheduled_out_utc": null,
+      "aircraft_type": null
+    },
+    {
+      "ident": null,
+      "from": "Almaza Afb",
+      "from_icao": "HEAZ",
+      "to": "Cairo, Egypt",
+      "to_icao": "28.50N/31.92E",
+      "takeoff_utc": "2026-08-16T07:05:00.000Z",
+      "landing_utc": "2026-08-16T07:05:00.000Z",
+      "scheduled_out_utc": null,
+      "aircraft_type": null
+    },
+    {
+      "ident": null,
+      "from": "Cairo, Egypt",
+      "from_icao": "29.02N/31.26E",
+      "to": "Cairo, Egypt",
+      "to_icao": "29.74N/31.39E",
+      "takeoff_utc": "2026-08-12T08:40:00.000Z",
+      "landing_utc": "2026-08-12T08:40:00.000Z",
+      "scheduled_out_utc": null,
+      "aircraft_type": null
+    },
+    {
+      "ident": null,
+      "from": "Almaza Afb",
+      "from_icao": "HEAZ",
+      "to": "Cairo, Egypt",
+      "to_icao": "28.73N/31.74E",
+      "takeoff_utc": "2026-08-12T06:30:00.000Z",
+      "landing_utc": "2026-08-12T06:30:00.000Z",
+      "scheduled_out_utc": null,
+      "aircraft_type": null
+    },
+    {
+      "ident": null,
+      "from": "Cairo, Egypt",
+      "from_icao": "29.22N/31.28E",
+      "to": "Cairo, Egypt",
+      "to_icao": "29.71N/31.30E",
+      "takeoff_utc": "2026-08-11T10:28:00.000Z",
+      "landing_utc": "2026-08-11T10:28:00.000Z",
+      "scheduled_out_utc": null,
+      "aircraft_type": null
+    },
+    {
+      "ident": null,
+      "from": "Almaza Afb",
+      "from_icao": "HEAZ",
+      "to": "Cairo, Egypt",
+      "to_icao": "28.65N/31.86E",
+      "takeoff_utc": "2026-08-11T07:54:00.000Z",
+      "landing_utc": "2026-08-11T07:54:00.000Z",
+      "scheduled_out_utc": null,
+      "aircraft_type": null
+    }
+  ]
+}

@@ -184,6 +184,34 @@ Gulfstream IV out of production. The G500 is the closest in-production Gulfstrea
 
 List price is for a green airframe — interior completion, avionics options and any mission equipment are extra, and fleet buyers do not pay list. The full table for all 33 priced airframes in this investigation, with the method behind each figure, is on **[Aircraft Costs](/Planes/Aircraft-Costs/overview)**.
 
+## Flight data recovery
+
+SU-BGM has the **thinnest archive coverage of any of the Egyptian tails**, and that is a coverage
+problem rather than a removal. A foreign-registered jet spends most of its life outside the range
+of the volunteer receivers that feed these archives, so the days they hold are simply the days it
+happened to fly within earshot of one. An absent day means nobody heard the aircraft; it does not
+mean the aircraft did not fly, and it does not mean a transponder was off.
+
+| Source | What it holds for SU-BGM |
+|---|---|
+| adsb.lol `globe_history` | **2 days**, 6 Sep 2025 and 16 Sep 2025 |
+| globe.airplanes.live | **5 days**, 6 Sep 2025 – 16 May 2026 |
+| ADS-B Exchange monthly sample | **1 day**, 1 Aug 2023 — a single sample, the sparsest in the fleet |
+| FlightRadar24 page | **HTTP 200 in a browser on 24 August 2026**, identity block intact — *GLF4 · Mode S 010070 · Egypt Government*. **0 history rows** on the free seven-day tier, meaning it has not flown in that window; older history paywalled. |
+| Internet Archive | **1 page snapshot** held — a FlightRadar24 page captured **7 May 2020** — and **6 flight rows** were recovered off it. That table is the only page-derived flight history this tail has. |
+
+**Removed from: nothing.** No tracking site was found to have removed this aircraft's page. Our
+scripted probe recorded HTTP 403 from FlightRadar24, RadarBox and Planespotters, and those 403s are
+robot blocks rather than removals — five unrelated control aircraft got the identical 403 from the
+identical script, and all of them load normally in a browser. See
+[What A 403 Actually Means](/Planes/Flight-Data-Recovery/What-A-403-Means).
+
+Raw files: `site/docs/Planes/SU-BGM/data/recovered/` — the source is in every filename, and each
+file has a `.meta.json` sidecar recording source, URL, HTTP status, bytes and date.
+
+Fleet-wide: [Flight Data Recovery](/Planes/Flight-Data-Recovery/overview) ·
+[Per-Aircraft Recovery Status](/Planes/Flight-Data-Recovery/Per-Aircraft-Status)
+
 {/* CK_INTERESTING_HERE_START */}
 
 ## Interesting In This Area

@@ -1,0 +1,55 @@
+{
+  "hex": "a4ab14",
+  "side": "kirk",
+  "http": 200,
+  "url": "https://www.flightaware.com/live/flight/N40JD",
+  "legs": 4,
+  "earliest": "2026-08-18",
+  "latest": "2026-08-21",
+  "flights": [
+    {
+      "ident": null,
+      "from": "Scottsdale",
+      "from_icao": "KSDL",
+      "to": "Scottsdale",
+      "to_icao": "KSDL",
+      "takeoff_utc": "2026-08-21T20:48:00.000Z",
+      "landing_utc": "2026-08-21T20:52:00.000Z",
+      "scheduled_out_utc": null,
+      "aircraft_type": "Beechcraft Premier 1 (twin-jet)"
+    },
+    {
+      "ident": null,
+      "from": "Scottsdale",
+      "from_icao": "KSDL",
+      "to": "Scottsdale",
+      "to_icao": "KSDL",
+      "takeoff_utc": "2026-08-20T16:34:00.000Z",
+      "landing_utc": "2026-08-20T16:39:00.000Z",
+      "scheduled_out_utc": null,
+      "aircraft_type": "Beechcraft Premier 1 (twin-jet)"
+    },
+    {
+      "ident": null,
+      "from": "Scottsdale",
+      "from_icao": "KSDL",
+      "to": "Scottsdale",
+      "to_icao": "KSDL",
+      "takeoff_utc": "2026-08-19T21:39:00.000Z",
+      "landing_utc": "2026-08-19T21:46:00.000Z",
+      "scheduled_out_utc": null,
+      "aircraft_type": "Beechcraft Premier 1 (twin-jet)"
+    },
+    {
+      "ident": null,
+      "from": "Scottsdale",
+      "from_icao": "KSDL",
+      "to": "Scottsdale",
+      "to_icao": "KSDL",
+      "takeoff_utc": "2026-08-18T23:42:00.000Z",
+      "landing_utc": "2026-08-18T23:52:00.000Z",
+      "scheduled_out_utc": null,
+      "aircraft_type": "Beechcraft Premier 1 (twin-jet)"
+    }
+  ]
+}

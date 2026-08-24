@@ -141,6 +141,43 @@ A 1973 four-seat single-engine piston trainer. New Piper Archer LX runs roughly 
 
 List price is for a green airframe — interior completion, avionics options and any mission equipment are extra, and fleet buyers do not pay list. The full table for all 33 priced airframes in this investigation, with the method behind each figure, is on **[Aircraft Costs](/Planes/Aircraft-Costs/overview)**.
 
+## Flight data recovery
+
+The recovery sweep found **no flight data for this tail in any source.** Three independent ADS-B
+archives hold zero days for it, and its FlightRadar24 page loads but prints *"Sorry, but we could
+not find data for specified flight"*. The reading that fits the aircraft is about equipment, not
+about erasure: N55906 is a 1973 four-seat piston single (Mode S **A72351**), and a light single of
+that vintage either is not fitted with ADS-B Out or is not being received by the volunteer network.
+**Nothing can be removed from an archive that never recorded it.**
+
+| Source | What it holds for N55906 |
+|---|---|
+| adsb.lol `globe_history` | **nothing** — 0 days |
+| globe.airplanes.live | **nothing** — 0 days |
+| ADS-B Exchange monthly sample | **nothing** — 0 days |
+| FlightRadar24 page | **HTTP 200 in a browser on 24 August 2026**, identity block intact — *P28R · Mode S A72351 · private owner*. **0 history rows**; the page prints the no-data message. |
+| Internet Archive | **1 page snapshot** held — a FlightAware page captured **4 March 2010**; **0 flight rows** recovered off it. |
+
+**Removed from: nothing.** No tracking site was found to have removed this aircraft's page. Our
+scripted probe recorded HTTP 403 from FlightRadar24, RadarBox and Planespotters, and those 403s are
+robot blocks rather than removals — five unrelated control aircraft got the identical 403 from the
+identical script, and all of them load normally in a browser. See
+[What A 403 Actually Means](/Planes/Flight-Data-Recovery/What-A-403-Means).
+
+This is the tail named in a claim by citizen investigator John Cullen, so it is worth being precise
+about what the sweep does and does not say. It does not show that anything was taken down, and it
+cannot show where the aircraft was on any given day. The one observation it supports is a narrow
+and sourceable one: a Piper Cherokee Arrow II is a four-seat piston single, not a survey or ISR
+platform, and an ADS-B blank in the volunteer archives is the ordinary condition for that class of
+aircraft. Whether the flag rests on some basis not published here is not something this sweep can
+settle.
+
+Raw files: `site/docs/Planes/N55906/data/recovered/` — the source is in every filename, and each
+file has a `.meta.json` sidecar recording source, URL, HTTP status, bytes and date.
+
+Fleet-wide: [Flight Data Recovery](/Planes/Flight-Data-Recovery/overview) ·
+[Per-Aircraft Recovery Status](/Planes/Flight-Data-Recovery/Per-Aircraft-Status)
+
 {/* CK_INTERESTING_HERE_START */}
 
 ## Interesting In This Area

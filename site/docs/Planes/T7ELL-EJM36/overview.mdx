@@ -137,6 +137,39 @@ That is the honest entry for these two tails, and it should stay on the page in 
 
 Every other aircraft in this investigation is priced on [Aircraft Costs](/Planes/Aircraft-Costs/overview). These two are the only entries on that table with no figure, and the reason is the same reason they have no published flight legs: there is not enough established about them to work with.
 
+## Flight data recovery
+
+The recovery sweep covered **T7-ELL** — EJM36 is an operator callsign, not a registration, so there
+is no aircraft page anywhere to probe for it. T7-ELL turns out to be well recorded, and what the
+archives hold argues against grouping it with the Egyptian SU- tails rather than for it.
+
+| Source | What it holds for T7-ELL |
+|---|---|
+| adsb.lol `globe_history` | **5 days**, 3 Sep 2025 – 11 Oct 2025 |
+| globe.airplanes.live | **26 days**, 3 Sep 2025 – 29 May 2026 |
+| ADS-B Exchange monthly sample | **12 days**, 1 Feb 2022 – 1 Aug 2026 |
+| FlightRadar24 page | **HTTP 200 in a browser on 24 August 2026**, identity block intact — *GLEX · Mode S 50018A*, operator **"Falcon Luxe" / "Falcon Luxe San Marino"**. **0 history rows** on the free seven-day tier, meaning it had not flown in that window; older history paywalled. |
+| Internet Archive | **0 page snapshots** held; **0 flight rows** recovered. |
+
+**An operator correction worth recording.** This repo's fleet file cites the community database
+adsbdb giving the operator as *Solairus Aviation*. FlightRadar24's own page, read in a browser on
+24 August 2026, gives **Falcon Luxe / Falcon Luxe San Marino**. Both are commercial charter
+operators and neither is an Egyptian government entity, which is consistent with the recovered
+traces — a Dubai- and Van Nuys-based global charter pattern, set out on
+[Flight Data Recovery](/Planes/Flight-Data-Recovery/overview).
+
+**Removed from: nothing.** No tracking site was found to have removed this aircraft's page. Our
+scripted probe recorded HTTP 403 from FlightRadar24, RadarBox and Planespotters, and those 403s are
+robot blocks rather than removals — five unrelated control aircraft got the identical 403 from the
+identical script, and all of them load normally in a browser. See
+[What A 403 Actually Means](/Planes/Flight-Data-Recovery/What-A-403-Means).
+
+Raw files: `site/docs/Planes/T7-ELL/data/recovered/` — the source is in every filename, and each
+file has a `.meta.json` sidecar recording source, URL, HTTP status, bytes and date.
+
+Fleet-wide: [Flight Data Recovery](/Planes/Flight-Data-Recovery/overview) ·
+[Per-Aircraft Recovery Status](/Planes/Flight-Data-Recovery/Per-Aircraft-Status)
+
 {/* CK_INTERESTING_HERE_START */}
 
 ## Interesting In This Area

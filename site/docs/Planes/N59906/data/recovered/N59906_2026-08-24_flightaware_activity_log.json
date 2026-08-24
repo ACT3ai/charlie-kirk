@@ -1,0 +1,154 @@
+{
+  "hex": "a7c14d",
+  "side": "n1098l",
+  "http": 200,
+  "url": "https://www.flightaware.com/live/flight/N59906",
+  "legs": 13,
+  "earliest": "2026-08-12",
+  "latest": "2026-08-23",
+  "flights": [
+    {
+      "ident": null,
+      "from": "Deer Lake",
+      "from_icao": "CYDF",
+      "to": "St-Honore",
+      "to_icao": "CYRC",
+      "takeoff_utc": "2026-08-23T17:42:00.000Z",
+      "landing_utc": "2026-08-23T21:23:00.000Z",
+      "scheduled_out_utc": null,
+      "aircraft_type": "Piper Navajo (twin-piston)"
+    },
+    {
+      "ident": null,
+      "from": "Gander Intl",
+      "from_icao": "CYQX",
+      "to": "Deer Lake",
+      "to_icao": "CYDF",
+      "takeoff_utc": "2026-08-23T12:16:00.000Z",
+      "landing_utc": "2026-08-23T17:13:00.000Z",
+      "scheduled_out_utc": null,
+      "aircraft_type": "Piper Navajo (twin-piston)"
+    },
+    {
+      "ident": null,
+      "from": "Gander Intl",
+      "from_icao": "CYQX",
+      "to": "Gander Intl",
+      "to_icao": "CYQX",
+      "takeoff_utc": "2026-08-22T16:04:00.000Z",
+      "landing_utc": "2026-08-22T19:51:00.000Z",
+      "scheduled_out_utc": null,
+      "aircraft_type": "Piper Navajo (twin-piston)"
+    },
+    {
+      "ident": null,
+      "from": "Gander Intl",
+      "from_icao": "CYQX",
+      "to": "Gander Intl",
+      "to_icao": "CYQX",
+      "takeoff_utc": "2026-08-22T11:35:00.000Z",
+      "landing_utc": "2026-08-22T14:12:00.000Z",
+      "scheduled_out_utc": null,
+      "aircraft_type": "Piper Navajo (twin-piston)"
+    },
+    {
+      "ident": null,
+      "from": "Fredericton Intl",
+      "from_icao": "CYFC",
+      "to": "Gander Intl",
+      "to_icao": "CYQX",
+      "takeoff_utc": "2026-08-21T20:22:00.000Z",
+      "landing_utc": "2026-08-21T23:29:00.000Z",
+      "scheduled_out_utc": null,
+      "aircraft_type": "Piper Navajo (twin-piston)"
+    },
+    {
+      "ident": null,
+      "from": "Fredericton Intl",
+      "from_icao": "CYFC",
+      "to": "Fredericton Intl",
+      "to_icao": "CYFC",
+      "takeoff_utc": "2026-08-21T12:05:00.000Z",
+      "landing_utc": "2026-08-21T13:45:00.000Z",
+      "scheduled_out_utc": null,
+      "aircraft_type": "Piper Navajo (twin-piston)"
+    },
+    {
+      "ident": null,
+      "from": "Stanfield Intl",
+      "from_icao": "CYHZ",
+      "to": "Fredericton Intl",
+      "to_icao": "CYFC",
+      "takeoff_utc": "2026-08-15T18:06:00.000Z",
+      "landing_utc": "2026-08-15T19:12:00.000Z",
+      "scheduled_out_utc": null,
+      "aircraft_type": "Piper Navajo (twin-piston)"
+    },
+    {
+      "ident": null,
+      "from": "Fredericton Intl",
+      "from_icao": "CYFC",
+      "to": "Stanfield Intl",
+      "to_icao": "CYHZ",
+      "takeoff_utc": "2026-08-15T11:01:00.000Z",
+      "landing_utc": "2026-08-15T15:33:00.000Z",
+      "scheduled_out_utc": null,
+      "aircraft_type": "Piper Navajo (twin-piston)"
+    },
+    {
+      "ident": null,
+      "from": "Fredericton Intl",
+      "from_icao": "CYFC",
+      "to": "Fredericton Intl",
+      "to_icao": "CYFC",
+      "takeoff_utc": "2026-08-14T11:45:00.000Z",
+      "landing_utc": "2026-08-14T12:33:00.000Z",
+      "scheduled_out_utc": null,
+      "aircraft_type": "Piper Navajo (twin-piston)"
+    },
+    {
+      "ident": null,
+      "from": "Fredericton Intl",
+      "from_icao": "CYFC",
+      "to": "Fredericton Intl",
+      "to_icao": "CYFC",
+      "takeoff_utc": "2026-08-12T15:25:00.000Z",
+      "landing_utc": "2026-08-12T17:26:00.000Z",
+      "scheduled_out_utc": null,
+      "aircraft_type": "Piper Navajo (twin-piston)"
+    },
+    {
+      "ident": null,
+      "from": "Fredericton Intl",
+      "from_icao": "CYFC",
+      "to": "Stanfield Intl",
+      "to_icao": "CYHZ",
+      "takeoff_utc": "2026-08-12T15:25:00.000Z",
+      "landing_utc": "2026-08-12T16:49:00.000Z",
+      "scheduled_out_utc": null,
+      "aircraft_type": "Piper Navajo (twin-piston)"
+    },
+    {
+      "ident": null,
+      "from": "Fredericton Intl",
+      "from_icao": "CYFC",
+      "to": "Fredericton Intl",
+      "to_icao": "CYFC",
+      "takeoff_utc": "2026-08-12T10:50:00.000Z",
+      "landing_utc": "2026-08-12T13:12:00.000Z",
+      "scheduled_out_utc": null,
+      "aircraft_type": "Piper Navajo (twin-piston)"
+    },
+    {
+      "ident": null,
+      "from": "Fredericton Intl",
+      "from_icao": "CYFC",
+      "to": "Stanfield Intl",
+      "to_icao": "CYHZ",
+      "takeoff_utc": "2026-08-12T10:50:00.000Z",
+      "landing_utc": "2026-08-12T12:25:00.000Z",
+      "scheduled_out_utc": null,
+      "aircraft_type": "Piper Navajo (twin-piston)"
+    }
+  ]
+}

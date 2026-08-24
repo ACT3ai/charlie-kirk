@@ -1,0 +1,77 @@
+{
+  "hex": "a728a8",
+  "side": "kirk",
+  "http": 200,
+  "url": "https://www.flightaware.com/live/flight/N560TW",
+  "legs": 6,
+  "earliest": "2026-08-11",
+  "latest": "2026-08-21",
+  "flights": [
+    {
+      "ident": null,
+      "from": "Jackson Hole",
+      "from_icao": "KJAC",
+      "to": "Scottsdale",
+      "to_icao": "KSDL",
+      "takeoff_utc": "2026-08-21T20:51:00.000Z",
+      "landing_utc": "2026-08-21T22:33:00.000Z",
+      "scheduled_out_utc": null,
+      "aircraft_type": "Cessna Citation Excel/XLS (twin-jet)"
+    },
+    {
+      "ident": null,
+      "from": "Scottsdale",
+      "from_icao": "KSDL",
+      "to": "Jackson Hole",
+      "to_icao": "KJAC",
+      "takeoff_utc": "2026-08-21T18:52:00.000Z",
+      "landing_utc": "2026-08-21T20:29:00.000Z",
+      "scheduled_out_utc": null,
+      "aircraft_type": "Cessna Citation Excel/XLS (twin-jet)"
+    },
+    {
+      "ident": null,
+      "from": "Jackson Hole",
+      "from_icao": "KJAC",
+      "to": "Scottsdale",
+      "to_icao": "KSDL",
+      "takeoff_utc": "2026-08-14T18:34:00.000Z",
+      "landing_utc": "2026-08-14T20:25:00.000Z",
+      "scheduled_out_utc": null,
+      "aircraft_type": "Cessna Citation Excel/XLS (twin-jet)"
+    },
+    {
+      "ident": null,
+      "from": "Scottsdale",
+      "from_icao": "KSDL",
+      "to": "Jackson Hole",
+      "to_icao": "KJAC",
+      "takeoff_utc": "2026-08-14T15:13:00.000Z",
+      "landing_utc": "2026-08-14T16:57:00.000Z",
+      "scheduled_out_utc": null,
+      "aircraft_type": "Cessna Citation Excel/XLS (twin-jet)"
+    },
+    {
+      "ident": null,
+      "from": "Pueblo Meml",
+      "from_icao": "KPUB",
+      "to": "Scottsdale",
+      "to_icao": "KSDL",
+      "takeoff_utc": "2026-08-12T14:23:00.000Z",
+      "landing_utc": "2026-08-12T15:41:00.000Z",
+      "scheduled_out_utc": null,
+      "aircraft_type": "Cessna Citation Excel/XLS (twin-jet)"
+    },
+    {
+      "ident": null,
+      "from": "Scottsdale",
+      "from_icao": "KSDL",
+      "to": "Pueblo Meml",
+      "to_icao": "KPUB",
+      "takeoff_utc": "2026-08-11T15:47:00.000Z",
+      "landing_utc": "2026-08-11T17:08:00.000Z",
+      "scheduled_out_utc": null,
+      "aircraft_type": "Cessna Citation Excel/XLS (twin-jet)"
+    }
+  ]
+}
