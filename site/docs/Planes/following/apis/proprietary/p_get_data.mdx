@@ -1,0 +1,126 @@
+```
+ROOT_DIR dir is ~/BGit/Bryan_git/charlie-kirk/
+SITE_DOCS dir is {ROOT_DIR}site/docs/
+FOLLOWING_DIR dir is {SITE_DOCS}Planes/following/
+APIS_DIR dir is {FOLLOWING_DIR}apis/
+THIS_DIR dir is {APIS_DIR}proprietary/
+KNOWLEDGE_FILE is file {THIS_DIR}knowledge.mdx
+CODE_DIR dir is {THIS_DIR}code/
+DATA_DIR dir is {THIS_DIR}data/
+OPEN_KNOWLEDGE is file {APIS_DIR}public_open_source/knowledge.mdx
+APIS_CLAUDE is file {APIS_DIR}CLAUDE.md
+FOLLOWING_CLAUDE is file {FOLLOWING_DIR}CLAUDE.md
+FLEET_FILE is file {APIS_DIR}public_open_source/code/lib/fleet.js
+FLIGHTS_CSV is file {FOLLOWING_DIR}flights.csv
+OVERLAPS_CSV is file {FOLLOWING_DIR}overlaps.csv
+SOURCES_CSV is file {FOLLOWING_DIR}sources.csv
+PLANES_DIR dir is {SITE_DOCS}Planes/
+OVERLAP_DIR dir is {FOLLOWING_DIR}overlap/
+CK_FILE is file {ROOT_DIR}Charlie_Kirk.txt
+
+This is the PASS 2 prompt. Pass 2 is the commercial flight-data APIs. They hold
+the deep history the free networks do not. They cost money, and their terms
+restrict what may be republished. NEVER RUN PASS 2 BEFORE PASS 1 - anything the
+free sources can prove should be proved for free, so a reader can repeat it.
+
+
+====================================================================
+STAGE 0 - READ THE KNOWLEDGE FIRST. NEVER SKIP THIS STAGE.
+====================================================================
+
+* Read {KNOWLEDGE_FILE} in full before doing anything else. It is the accumulated
+  knowledge of these vendors - endpoints, auth, credit costs, history windows,
+  what a given plan does and does not include, what we already bought, and what
+  we could not get. Every run starts by loading it.
+* Read {OPEN_KNOWLEDGE} too, and know exactly which questions Pass 1 already
+  answered. Never spend money on an answer that is already free.
+* The "What we did NOT get" section is the work list.
+* Then read {APIS_CLAUDE}, {FOLLOWING_CLAUDE}, {FLEET_FILE}, and {CK_FILE}.
+  {CK_FILE} is read-only to AI. Never write to it.
+* Output to stdout:
+  "STAGE 0 COMPLETE - knowledge loaded, N open questions, M already answered free"
+
+
+====================================================================
+STAGE 1 - CHECK THE MONEY AND THE TERMS BEFORE THE FIRST CALL
+====================================================================
+
+* State which vendor, which plan, whose account, and roughly what the run costs.
+  A per-query API is easy to run into three figures by accident.
+* Read the vendor's terms of use for redistribution BEFORE pulling. Record in
+  {KNOWLEDGE_FILE} what the terms actually say, quoted, with the date read.
+* Credentials come from the environment, never from a file in this repo, and
+  never from a page. Never commit a key. Never print a key.
+* If credentials are absent, DO NOT invent a workaround, do not scrape the
+  vendor's website to get around the paywall, and do not use an unofficial
+  endpoint the vendor has not published. Stop, and record in {KNOWLEDGE_FILE}
+  exactly which question is blocked on which credential.
+
+
+====================================================================
+STAGE 2 - PULL NARROWLY
+====================================================================
+
+* Pass 2 answers specific questions Pass 1 could not. It is not a sweep.
+* Name the question first. "Did SU-BTT land at KILG on 10 September 2025 and at
+  what time" is a question. "Get everything about SU-BTT" is a bill.
+* Use the clients in {CODE_DIR}. Match their shape: raw response saved to
+  {DATA_DIR}, .meta.json beside it, never overwrite a previous pull.
+* Land extracts in the aircraft directory {PLANES_DIR}<TAIL>/data/ and the
+  overlap directory {OVERLAP_DIR}<key>/data/, same as Pass 1.
+
+
+====================================================================
+STAGE 3 - PUBLISH THE FINDING, NOT THE PAYLOAD
+====================================================================
+
+* Commercial responses generally may NOT be republished verbatim. Most terms let
+  you use the data and state a conclusion; they do not let you mirror the feed.
+* So: publish the finding and the citation. Keep the payload in {DATA_DIR} as our
+  own audit trail. Say on the page that the underlying response is held but not
+  published, and name the vendor and the date of the query.
+* Where a licence is unclear, treat it as restrictive.
+* Add a row to {SOURCES_CSV} for every vendor query, with evidence_class
+  adsb_public_history and a reliability_note naming the vendor and the plan.
+
+
+====================================================================
+STAGE 4 - RECORD WHAT THE MONEY COULD NOT BUY
+====================================================================
+
+* Write MISSING_DATA.md entries the same way Pass 1 does, in the aircraft and
+  overlap directories, for every claimed flight the vendor also had nothing for.
+* A commercial vendor with deep history returning nothing is a STRONGER negative
+  than a volunteer network returning nothing. Say so - but still say that it is
+  not proof the aircraft did not fly.
+* Blocking programmes matter here and must be named where they apply. An aircraft
+  can be suppressed from a commercial display while still being in the raw feed,
+  and a suppressed display looks exactly like an aircraft that never flew. Record
+  which of the tracked tails is on which vendor's blocked list, with the date
+  checked.
+
+
+====================================================================
+STAGE 5 - LAST STAGE, AND IT IS MANDATORY - WRITE BACK THE KNOWLEDGE
+====================================================================
+
+* Update {KNOWLEDGE_FILE} with everything learned in this run, first command to
+  last. All four sections:
+  * What APIs they have - endpoints, history windows, what each plan includes.
+  * How you use them - auth, headers, credit cost per call, pagination, quirks.
+  * What we got so far - the queries run, their cost, and where the raw
+    responses landed.
+  * What we did NOT get - what was paywalled, blocked, out of window, or refused.
+* Record the price and the terms every time, with the date read. Vendor pricing
+  and vendor terms both change, and an undated note about either is worthless.
+* Cross off the gaps this run closed.
+* Output to stdout:
+  ------------------------------------------------------------------
+  STAGE 5 COMPLETE - knowledge.mdx updated
+    vendor / plan: ...
+    queries run and approximate cost: ...
+    findings published (not payloads): ...
+    still blocked, and on what: ...
+  ------------------------------------------------------------------
+* Then run: cd {ROOT_DIR}site && npm run build
+```

@@ -1,0 +1,24 @@
+{
+  "icao": "01003e",
+  "registration": "SU-BND",
+  "type": "GLF4",
+  "description": "GULFSTREAM 4",
+  "db_flags": 0,
+  "day": "2023-05-10",
+  "points": 314,
+  "first_seen_utc": "2023-05-10T04:23:06.340Z",
+  "last_seen_utc": "2023-05-10T05:39:25.800Z",
+  "first_position": {
+    "lat": 53.630506,
+    "lon": -11.450743,
+    "alt": 41000
+  },
+  "last_position": {
+    "lat": 49.274597,
+    "lon": 2.126981,
+    "alt": 11000
+  },
+  "ground_segments": [],
+  "source_url": "https://adsb.lol/globe_history/2023/05/10/traces/3e/trace_full_01003e.json",
+  "retrieved_utc": "2026-08-24T15:57:49.674Z"
+}

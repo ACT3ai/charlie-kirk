@@ -1,0 +1,24 @@
+{
+  "icao": "010070",
+  "registration": "SU-BGM",
+  "type": "GLF4",
+  "description": "GULFSTREAM 4",
+  "db_flags": 1,
+  "day": "2025-04-17",
+  "points": 459,
+  "first_seen_utc": "2025-04-17T03:40:22.520Z",
+  "last_seen_utc": "2025-04-17T05:20:34.880Z",
+  "first_position": {
+    "lat": 54.314917,
+    "lon": -13.7141,
+    "alt": 41000
+  },
+  "last_position": {
+    "lat": 48.962265,
+    "lon": 2.414457,
+    "alt": 325
+  },
+  "ground_segments": [],
+  "source_url": "https://adsb.lol/globe_history/2025/04/17/traces/70/trace_full_010070.json",
+  "retrieved_utc": "2026-08-24T15:57:38.843Z"
+}
