@@ -1,0 +1,31 @@
+{
+  "icao": "ac3c75",
+  "registration": "N888KG",
+  "type": "CL30",
+  "description": "BOMBARDIER BD-100 Challenger 300",
+  "db_flags": 8,
+  "day": "2025-09-08",
+  "points": 424,
+  "first_seen_utc": "2025-09-08T00:03:08.340Z",
+  "last_seen_utc": "2025-09-08T00:29:59.110Z",
+  "first_position": {
+    "lat": 38.14595,
+    "lon": -111.468045,
+    "alt": 33225
+  },
+  "last_position": {
+    "lat": 40.21907,
+    "lon": -111.719391,
+    "alt": "ground"
+  },
+  "ground_segments": [
+    {
+      "from": "2025-09-08T00:27:09.970Z",
+      "to": null,
+      "lat": 40.223356,
+      "lon": -111.726385
+    }
+  ],
+  "source_url": "https://adsb.lol/globe_history/2025/09/08/traces/75/trace_full_ac3c75.json",
+  "retrieved_utc": "2026-08-24T15:57:32.001Z"
+}
