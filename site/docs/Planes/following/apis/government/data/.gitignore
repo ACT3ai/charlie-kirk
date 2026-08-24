@@ -1,0 +1,10 @@
+# Bulk government downloads are re-fetchable from the source at any time and are
+# far too large to belong in this repo. The EXTRACTED records for the tails this
+# investigation tracks ARE committed; the multi-hundred-megabyte source archives
+# are not. Re-download with the clients in ../code/.
+#
+# NOTE: this ignores DATA ARCHIVES ONLY. It must never be used to ignore an image
+# — see "Images Are Tracked In Git" in the repo CLAUDE.md.
+*.zip
+MASTER.txt
+ACFTREF.txt

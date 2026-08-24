@@ -1,0 +1,24 @@
+{
+  "icao": "0101d1",
+  "registration": "SU-BTV",
+  "type": "FA7X",
+  "description": "DASSAULT Falcon 7X",
+  "db_flags": 1,
+  "day": "2025-08-03",
+  "points": 1004,
+  "first_seen_utc": "2025-08-03T13:39:14.720Z",
+  "last_seen_utc": "2025-08-03T16:00:33.740Z",
+  "first_position": {
+    "lat": 37.645248,
+    "lon": -97.425238,
+    "alt": 1575
+  },
+  "last_position": {
+    "lat": 39.667767,
+    "lon": -75.604065,
+    "alt": -100
+  },
+  "ground_segments": [],
+  "source_url": "https://adsb.lol/globe_history/2025/08/03/traces/d1/trace_full_0101d1.json",
+  "retrieved_utc": "2026-08-24T16:03:41.735Z"
+}

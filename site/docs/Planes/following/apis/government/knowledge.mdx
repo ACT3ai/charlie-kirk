@@ -1,0 +1,176 @@
+---
+displayed_sidebar: docs
+title: "Government Flight Records — What Is Downloadable And What Must Be Requested"
+sidebar_label: "Government Data"
+description: "The government sources for aircraft ownership, airport operations and ramp records — what downloads freely today, what has to be asked for under FOIA or state public-records law, and the fact that the five Egyptian tails at the centre of this case appear in none of it."
+keywords:
+  - Charlie Kirk
+  - FAA aircraft registry
+  - FOIA
+  - public records
+  - SU-BTT
+  - Provo airport
+  - flight records
+  - N-number registry
+image: "/img/docusaurus-social-card.jpg"
+hide_table_of_contents: true
+---
+
+{/* Full-bleed marker: activates the site-wide full-width + text-wrap
+    layout in custom.css (full width + overflow-safe side videos). Scoped
+    via CSS :has(). */}
+<div className="ck-full-bleed" />
+
+<a href="/Planes/following/apis/overview" style={{display:'inline-block', marginBottom:'1rem',
+padding:'0.35rem 0.9rem', background:'#1a73e8', color:'#fff',
+borderRadius:'4px', textDecoration:'none', fontSize:'0.9rem'}}>← Getting The Data</a>
+
+# Government Flight Records
+
+**This is the only pass that produces records instead of readings.**
+
+Everything on the rest of this site about where an aircraft was comes from somebody's radio receiver
+hearing a transponder. That is useful and it is checkable, but it is an observation. A landing-fee
+invoice, a fuel ticket, a customs entry, an airport badge log or a registry entry is a **record** —
+and on this site a record outranks every reading and every social-media post about the same flight.
+
+It is also the slowest pass. A download takes a minute. A records request takes weeks, and some of
+them come back refused.
+
+## What downloads freely, right now, with no request at all
+
+### The FAA Releasable Aircraft Database
+
+United States government work, public domain, no key, no account, refreshed daily.
+
+```
+https://registry.faa.gov/database/ReleasableAircraft.zip
+```
+
+Roughly 70 MB compressed. `MASTER.txt` is one row per registered airframe keyed on the N-number
+without its leading N; `ACFTREF.txt` is the type reference. Because it is a government work it may
+be **republished in full**, and this is the one pass where mirroring the data onto the site is the
+right thing to do rather than a licence problem.
+
+Pulled **24 August 2026** by `apis/government/code/faa_registry.js`. All ten N-registered tails this
+investigation tracks were found. The extracted records are committed at
+`apis/government/data/faa_registry/tracked_tails_faa_master.json`; the 70 MB archive is not, because
+it is re-downloadable in a minute.
+
+### And immediately it contradicted the community databases
+
+This is why the pass exists. For several tails, **the registrant the FAA actually records is not the
+owner name circulating in the tracking threads.** Both columns below were retrieved on the same day.
+
+| Tail | FAA registrant of record | Community database (adsbdb.com) |
+|---|---|---|
+| N102DZ | ELDERBERRY CHESTNUT LLC — Cheyenne, WY | Aviation Enterprises Inc |
+| N888KG | N888KG LLC — Lehi, UT | Fair Wind Air Charter |
+| N582MM | DOJA CONTRACTING LLC — Mesa, AZ | Wildhorse LLC |
+| N40JD | NUP AVIATION LLC — Princeton, IL | JDT Aviation LLC |
+| N59906 | ALPHA WHISKEY 2 LLC — Brandon, MS | Marc Inc |
+| N560TW | T W LEWIS-AVIATION LLC — Scottsdale, AZ | Pinnacle Aviation |
+| N872RA | A&E HAWKER LP — Santa Ana, CA | Regency Air |
+| N1098L | LASAI AVIATION II LLC — Manassas, VA | LASAI Aviation II LLC |
+| N2100L | LASAI AVIATION II LLC — Manassas, VA | LASAI Aviation II LLC |
+| N55906 | OPOLINER LARRY — Winter Park, FL | (individual) |
+
+**The counterargument, and it is a strong one:** these are not necessarily errors. The FAA file is
+current registration; a community database may be carrying a former owner, an operator rather than
+an owner, or a management company rather than a registrant. Aircraft change hands. Both can have
+been true at different times.
+
+But that is exactly the point. **When a claim on X names the owner of an aircraft, it is very often
+quoting a community database, not the registry** — and the two do not agree. Where this site names a
+registrant, it names the FAA one, and says the date it was retrieved.
+
+Note also that a registrant is frequently a holding LLC. **A holding company is not a person, and
+this site does not go behind one to name private individuals.**
+
+### The hole in the middle of this pass
+
+**Every one of the five Egyptian tails at the centre of the following claim — SU-BTT, SU-BND,
+SU-BTU, SU-BTV, SU-BGM — appears in none of it.** The FAA registry covers N-registered aircraft.
+Egypt publishes no equivalent public download.
+
+So the best free government record available to us describes the aircraft nobody is arguing about,
+and is silent on the aircraft everybody is arguing about. That asymmetry is not a conspiracy — most
+national registries are not published — but it does mean the foreign side of this case **cannot be
+resolved by a download.** It can only be resolved by a request.
+
+### Airport and facility data
+
+Federal airport and facility data, and the public-domain OurAirports dataset used in the open-source
+pass, supply runway lengths, elevation, ownership class and whether a field has scheduled service.
+These are the numbers behind the argument that a particular field is an odd place for a foreign
+government jet. **Use the dataset, not an adjective.**
+
+## What has to be requested — and from whom
+
+Matching the question to the right custodian is where most records requests die.
+
+| The question | Who actually holds it | Route |
+|---|---|---|
+| Who owns this airframe | Federal aviation registry | Free download, above |
+| Air traffic handling, flight strips, radar | Federal air traffic agency | Federal FOIA |
+| Customs processing of an international arrival | Federal border agency | Federal FOIA |
+| **Landing fees, fuel tickets, ramp assignment, hangar, badge access** | **The airport itself** | **State public-records law** |
+| Diplomatic clearance for a foreign state aircraft | Federal foreign-affairs department | Federal FOIA |
+
+**The fourth row is the one that matters most here and is the least used.** Most of the fields in
+this case are city-owned or run by a public airport authority. That makes them subject to **state**
+public-records law, which is generally faster, cheaper and harder to stonewall than federal FOIA.
+The ramp records — who parked where, who bought fuel, who was issued a badge — sit with the airport,
+not with Washington.
+
+There is a second point buried in the open-source data. **US customs processing for the 2025
+Provo-bound arrivals did not happen at Provo.** The aircraft entered the United States at a northern
+field first and hopped to Utah afterwards. Every published claim about passengers, contractors and
+manifests has been aimed at Provo. **The customs records are somewhere else, and as far as this repo
+can tell nobody has asked for them.**
+
+## What we got so far
+
+* **24 August 2026** — FAA Releasable Aircraft Database downloaded in full, HTTP 200, 73.1 MB.
+  Ten of ten tracked N-tails extracted with registrant, address, serial, Mode S hex, certificate
+  issue date and expiry. Saved to `apis/government/data/faa_registry/`.
+* **24 August 2026** — FAA-recorded Mode S hex codes confirmed for all ten N-tails, and they agree
+  with the hex codes the community databases give. **The hex codes agree; the owner names do not.**
+* Airport reference facts for the fields named in this case are held in
+  `Planes/following/airports.csv` and are cross-checked against the public-domain dataset.
+
+## What we did NOT get
+
+This is the work list, and it is the most useful section on this page.
+
+* **No Egyptian registry.** No public download exists for SU- registrations. Owner, operator and
+  airworthiness for the five tails at the centre of the claim are **unverified from any primary
+  registry**, and everything published about them traces back to tracker readings.
+* **No records request has been filed yet by this project.** Not one. The docket is empty. That is a
+  gap in our work, not a refusal by anyone, and it is recorded here so it stops being invisible.
+* **No customs records** for the northern-field entries, from any agency.
+* **No ramp, fuel, landing-fee or badge records** from any of the airports in this case — including
+  Provo, where a badge-access list is reported to have been updated the day after the assassination.
+  That report is a claim on social media. **A public-records request is how it stops being a claim.**
+* **No diplomatic-clearance records** for any foreign state aircraft movement in the window.
+* **No air traffic data** — no strips, no radar, no recordings.
+
+## The rule this pass runs on
+
+Ask for **records**, never for conclusions. Name the exact aircraft by registration *and* by ICAO
+hex, name the exact date range, name the record types, cite the free ADS-B trace as the reason the
+date is specific. A narrow request that gets answered beats a broad one refused as burdensome.
+
+**Never name a living private individual in a request.** Ask about an aircraft and a date.
+
+And when an agency misses its statutory deadline, **the silence is a result and it gets published**
+with the dates — as does any refusal, quoted with the exemption it cites.
+
+## Related
+
+* [How we get the data — overview](/Planes/following/apis/overview)
+* [Public open-source flight data](/Planes/following/apis/public_open_source/knowledge)
+* [Commercial flight-data APIs](/Planes/following/apis/proprietary/knowledge)
+* [Capturing the tracking websites](/Planes/following/apis/browser_capture/knowledge)
+* [The following-planes overview](/Planes/following/overview)
+* [Erika Kirk's flight logs reported erased](/Planes/Erika-Flight-Logs-Erased)

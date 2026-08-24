@@ -1,0 +1,1292 @@
+{
+  "generated_utc": "2026-08-24T16:03:23.094Z",
+  "purpose": "One entry per (site, aircraft). Pass 4 walks this list, captures screenshot + page text + URL + UTC time + HTTP status for each, and compares against the nearest Internet Archive snapshot to the claim date.",
+  "rules": [
+    "Never log in, never defeat a paywall, never click through a terms gate. A page that requires it is a finding, not an obstacle.",
+    "Never trigger a JavaScript alert/confirm/prompt - a modal blocks every further browser command.",
+    "Record the URL and the UTC capture time on the page that uses the image.",
+    "A site reorganising its URLs looks identical to a site removing an aircraft. Say which you can and cannot distinguish."
+  ],
+  "targets": [
+    {
+      "site": "flightradar24",
+      "site_name": "Flightradar24",
+      "registration": "SU-BTT",
+      "hex": "0101d3",
+      "side": "following",
+      "url": "https://www.flightradar24.com/data/aircraft/su-btt",
+      "note": "The aircraft-history table the original claims were screenshotted from. Free tier shows a limited number of past flights; the depth of that window is itself worth recording on each capture.",
+      "captured": null
+    },
+    {
+      "site": "adsbexchange",
+      "site_name": "ADS-B Exchange",
+      "registration": "SU-BTT",
+      "hex": "0101d3",
+      "side": "following",
+      "url": "https://globe.adsbexchange.com/?icao=0101d3",
+      "note": "Historical replay is subscriber-only now (globe_history returns 403 to the public, verified 2026-08-24). Capture what the free map shows and record the paywall.",
+      "captured": null
+    },
+    {
+      "site": "flightaware",
+      "site_name": "FlightAware",
+      "registration": "SU-BTT",
+      "hex": "0101d3",
+      "side": "following",
+      "url": "https://www.flightaware.com/live/flight/SU-BTT",
+      "note": "Aggressive bot protection. If it blocks, RECORD THE BLOCK and stop - do not work around it.",
+      "captured": null
+    },
+    {
+      "site": "radarbox",
+      "site_name": "AirNav RadarBox",
+      "registration": "SU-BTT",
+      "hex": "0101d3",
+      "side": "following",
+      "url": "https://www.radarbox.com/data/registration/SU-BTT",
+      "note": "Independent commercial network. A useful cross-check on the same date.",
+      "captured": null
+    },
+    {
+      "site": "planespotters",
+      "site_name": "Planespotters",
+      "registration": "SU-BTT",
+      "hex": "0101d3",
+      "side": "following",
+      "url": "https://www.planespotters.net/search?q=SU-BTT",
+      "note": "Photographs with dates and places. A photo of an airframe at a field on a date is a different KIND of evidence from a transponder reading.",
+      "captured": null
+    },
+    {
+      "site": "jetphotos",
+      "site_name": "JetPhotos",
+      "registration": "SU-BTT",
+      "hex": "0101d3",
+      "side": "following",
+      "url": "https://www.jetphotos.com/registration/SU-BTT",
+      "note": "Same idea as Planespotters. Photographer, date and location are the useful fields.",
+      "captured": null
+    },
+    {
+      "site": "adsblol_globe",
+      "site_name": "adsb.lol globe",
+      "registration": "SU-BTT",
+      "hex": "0101d3",
+      "side": "following",
+      "url": "https://globe.adsb.lol/?icao=0101d3",
+      "note": "The free map over the same archive our Pass 1 scripts pull. Useful for a visual of a track we already hold as JSON.",
+      "captured": null
+    },
+    {
+      "site": "airplaneslive",
+      "site_name": "airplanes.live",
+      "registration": "SU-BTT",
+      "hex": "0101d3",
+      "side": "following",
+      "url": "https://globe.airplanes.live/?icao=0101d3",
+      "note": "Its API went key-gated (HTTP 403, verified 2026-08-24). Record whether the MAP is still open to the public.",
+      "captured": null
+    },
+    {
+      "site": "flightradar24",
+      "site_name": "Flightradar24",
+      "registration": "SU-BND",
+      "hex": "01003e",
+      "side": "following",
+      "url": "https://www.flightradar24.com/data/aircraft/su-bnd",
+      "note": "The aircraft-history table the original claims were screenshotted from. Free tier shows a limited number of past flights; the depth of that window is itself worth recording on each capture.",
+      "captured": null
+    },
+    {
+      "site": "adsbexchange",
+      "site_name": "ADS-B Exchange",
+      "registration": "SU-BND",
+      "hex": "01003e",
+      "side": "following",
+      "url": "https://globe.adsbexchange.com/?icao=01003e",
+      "note": "Historical replay is subscriber-only now (globe_history returns 403 to the public, verified 2026-08-24). Capture what the free map shows and record the paywall.",
+      "captured": null
+    },
+    {
+      "site": "flightaware",
+      "site_name": "FlightAware",
+      "registration": "SU-BND",
+      "hex": "01003e",
+      "side": "following",
+      "url": "https://www.flightaware.com/live/flight/SU-BND",
+      "note": "Aggressive bot protection. If it blocks, RECORD THE BLOCK and stop - do not work around it.",
+      "captured": null
+    },
+    {
+      "site": "radarbox",
+      "site_name": "AirNav RadarBox",
+      "registration": "SU-BND",
+      "hex": "01003e",
+      "side": "following",
+      "url": "https://www.radarbox.com/data/registration/SU-BND",
+      "note": "Independent commercial network. A useful cross-check on the same date.",
+      "captured": null
+    },
+    {
+      "site": "planespotters",
+      "site_name": "Planespotters",
+      "registration": "SU-BND",
+      "hex": "01003e",
+      "side": "following",
+      "url": "https://www.planespotters.net/search?q=SU-BND",
+      "note": "Photographs with dates and places. A photo of an airframe at a field on a date is a different KIND of evidence from a transponder reading.",
+      "captured": null
+    },
+    {
+      "site": "jetphotos",
+      "site_name": "JetPhotos",
+      "registration": "SU-BND",
+      "hex": "01003e",
+      "side": "following",
+      "url": "https://www.jetphotos.com/registration/SU-BND",
+      "note": "Same idea as Planespotters. Photographer, date and location are the useful fields.",
+      "captured": null
+    },
+    {
+      "site": "adsblol_globe",
+      "site_name": "adsb.lol globe",
+      "registration": "SU-BND",
+      "hex": "01003e",
+      "side": "following",
+      "url": "https://globe.adsb.lol/?icao=01003e",
+      "note": "The free map over the same archive our Pass 1 scripts pull. Useful for a visual of a track we already hold as JSON.",
+      "captured": null
+    },
+    {
+      "site": "airplaneslive",
+      "site_name": "airplanes.live",
+      "registration": "SU-BND",
+      "hex": "01003e",
+      "side": "following",
+      "url": "https://globe.airplanes.live/?icao=01003e",
+      "note": "Its API went key-gated (HTTP 403, verified 2026-08-24). Record whether the MAP is still open to the public.",
+      "captured": null
+    },
+    {
+      "site": "flightradar24",
+      "site_name": "Flightradar24",
+      "registration": "SU-BTU",
+      "hex": "0101d0",
+      "side": "following",
+      "url": "https://www.flightradar24.com/data/aircraft/su-btu",
+      "note": "The aircraft-history table the original claims were screenshotted from. Free tier shows a limited number of past flights; the depth of that window is itself worth recording on each capture.",
+      "captured": null
+    },
+    {
+      "site": "adsbexchange",
+      "site_name": "ADS-B Exchange",
+      "registration": "SU-BTU",
+      "hex": "0101d0",
+      "side": "following",
+      "url": "https://globe.adsbexchange.com/?icao=0101d0",
+      "note": "Historical replay is subscriber-only now (globe_history returns 403 to the public, verified 2026-08-24). Capture what the free map shows and record the paywall.",
+      "captured": null
+    },
+    {
+      "site": "flightaware",
+      "site_name": "FlightAware",
+      "registration": "SU-BTU",
+      "hex": "0101d0",
+      "side": "following",
+      "url": "https://www.flightaware.com/live/flight/SU-BTU",
+      "note": "Aggressive bot protection. If it blocks, RECORD THE BLOCK and stop - do not work around it.",
+      "captured": null
+    },
+    {
+      "site": "radarbox",
+      "site_name": "AirNav RadarBox",
+      "registration": "SU-BTU",
+      "hex": "0101d0",
+      "side": "following",
+      "url": "https://www.radarbox.com/data/registration/SU-BTU",
+      "note": "Independent commercial network. A useful cross-check on the same date.",
+      "captured": null
+    },
+    {
+      "site": "planespotters",
+      "site_name": "Planespotters",
+      "registration": "SU-BTU",
+      "hex": "0101d0",
+      "side": "following",
+      "url": "https://www.planespotters.net/search?q=SU-BTU",
+      "note": "Photographs with dates and places. A photo of an airframe at a field on a date is a different KIND of evidence from a transponder reading.",
+      "captured": null
+    },
+    {
+      "site": "jetphotos",
+      "site_name": "JetPhotos",
+      "registration": "SU-BTU",
+      "hex": "0101d0",
+      "side": "following",
+      "url": "https://www.jetphotos.com/registration/SU-BTU",
+      "note": "Same idea as Planespotters. Photographer, date and location are the useful fields.",
+      "captured": null
+    },
+    {
+      "site": "adsblol_globe",
+      "site_name": "adsb.lol globe",
+      "registration": "SU-BTU",
+      "hex": "0101d0",
+      "side": "following",
+      "url": "https://globe.adsb.lol/?icao=0101d0",
+      "note": "The free map over the same archive our Pass 1 scripts pull. Useful for a visual of a track we already hold as JSON.",
+      "captured": null
+    },
+    {
+      "site": "airplaneslive",
+      "site_name": "airplanes.live",
+      "registration": "SU-BTU",
+      "hex": "0101d0",
+      "side": "following",
+      "url": "https://globe.airplanes.live/?icao=0101d0",
+      "note": "Its API went key-gated (HTTP 403, verified 2026-08-24). Record whether the MAP is still open to the public.",
+      "captured": null
+    },
+    {
+      "site": "flightradar24",
+      "site_name": "Flightradar24",
+      "registration": "SU-BTV",
+      "hex": "0101d1",
+      "side": "following",
+      "url": "https://www.flightradar24.com/data/aircraft/su-btv",
+      "note": "The aircraft-history table the original claims were screenshotted from. Free tier shows a limited number of past flights; the depth of that window is itself worth recording on each capture.",
+      "captured": null
+    },
+    {
+      "site": "adsbexchange",
+      "site_name": "ADS-B Exchange",
+      "registration": "SU-BTV",
+      "hex": "0101d1",
+      "side": "following",
+      "url": "https://globe.adsbexchange.com/?icao=0101d1",
+      "note": "Historical replay is subscriber-only now (globe_history returns 403 to the public, verified 2026-08-24). Capture what the free map shows and record the paywall.",
+      "captured": null
+    },
+    {
+      "site": "flightaware",
+      "site_name": "FlightAware",
+      "registration": "SU-BTV",
+      "hex": "0101d1",
+      "side": "following",
+      "url": "https://www.flightaware.com/live/flight/SU-BTV",
+      "note": "Aggressive bot protection. If it blocks, RECORD THE BLOCK and stop - do not work around it.",
+      "captured": null
+    },
+    {
+      "site": "radarbox",
+      "site_name": "AirNav RadarBox",
+      "registration": "SU-BTV",
+      "hex": "0101d1",
+      "side": "following",
+      "url": "https://www.radarbox.com/data/registration/SU-BTV",
+      "note": "Independent commercial network. A useful cross-check on the same date.",
+      "captured": null
+    },
+    {
+      "site": "planespotters",
+      "site_name": "Planespotters",
+      "registration": "SU-BTV",
+      "hex": "0101d1",
+      "side": "following",
+      "url": "https://www.planespotters.net/search?q=SU-BTV",
+      "note": "Photographs with dates and places. A photo of an airframe at a field on a date is a different KIND of evidence from a transponder reading.",
+      "captured": null
+    },
+    {
+      "site": "jetphotos",
+      "site_name": "JetPhotos",
+      "registration": "SU-BTV",
+      "hex": "0101d1",
+      "side": "following",
+      "url": "https://www.jetphotos.com/registration/SU-BTV",
+      "note": "Same idea as Planespotters. Photographer, date and location are the useful fields.",
+      "captured": null
+    },
+    {
+      "site": "adsblol_globe",
+      "site_name": "adsb.lol globe",
+      "registration": "SU-BTV",
+      "hex": "0101d1",
+      "side": "following",
+      "url": "https://globe.adsb.lol/?icao=0101d1",
+      "note": "The free map over the same archive our Pass 1 scripts pull. Useful for a visual of a track we already hold as JSON.",
+      "captured": null
+    },
+    {
+      "site": "airplaneslive",
+      "site_name": "airplanes.live",
+      "registration": "SU-BTV",
+      "hex": "0101d1",
+      "side": "following",
+      "url": "https://globe.airplanes.live/?icao=0101d1",
+      "note": "Its API went key-gated (HTTP 403, verified 2026-08-24). Record whether the MAP is still open to the public.",
+      "captured": null
+    },
+    {
+      "site": "flightradar24",
+      "site_name": "Flightradar24",
+      "registration": "SU-BGM",
+      "hex": "010070",
+      "side": "following",
+      "url": "https://www.flightradar24.com/data/aircraft/su-bgm",
+      "note": "The aircraft-history table the original claims were screenshotted from. Free tier shows a limited number of past flights; the depth of that window is itself worth recording on each capture.",
+      "captured": null
+    },
+    {
+      "site": "adsbexchange",
+      "site_name": "ADS-B Exchange",
+      "registration": "SU-BGM",
+      "hex": "010070",
+      "side": "following",
+      "url": "https://globe.adsbexchange.com/?icao=010070",
+      "note": "Historical replay is subscriber-only now (globe_history returns 403 to the public, verified 2026-08-24). Capture what the free map shows and record the paywall.",
+      "captured": null
+    },
+    {
+      "site": "flightaware",
+      "site_name": "FlightAware",
+      "registration": "SU-BGM",
+      "hex": "010070",
+      "side": "following",
+      "url": "https://www.flightaware.com/live/flight/SU-BGM",
+      "note": "Aggressive bot protection. If it blocks, RECORD THE BLOCK and stop - do not work around it.",
+      "captured": null
+    },
+    {
+      "site": "radarbox",
+      "site_name": "AirNav RadarBox",
+      "registration": "SU-BGM",
+      "hex": "010070",
+      "side": "following",
+      "url": "https://www.radarbox.com/data/registration/SU-BGM",
+      "note": "Independent commercial network. A useful cross-check on the same date.",
+      "captured": null
+    },
+    {
+      "site": "planespotters",
+      "site_name": "Planespotters",
+      "registration": "SU-BGM",
+      "hex": "010070",
+      "side": "following",
+      "url": "https://www.planespotters.net/search?q=SU-BGM",
+      "note": "Photographs with dates and places. A photo of an airframe at a field on a date is a different KIND of evidence from a transponder reading.",
+      "captured": null
+    },
+    {
+      "site": "jetphotos",
+      "site_name": "JetPhotos",
+      "registration": "SU-BGM",
+      "hex": "010070",
+      "side": "following",
+      "url": "https://www.jetphotos.com/registration/SU-BGM",
+      "note": "Same idea as Planespotters. Photographer, date and location are the useful fields.",
+      "captured": null
+    },
+    {
+      "site": "adsblol_globe",
+      "site_name": "adsb.lol globe",
+      "registration": "SU-BGM",
+      "hex": "010070",
+      "side": "following",
+      "url": "https://globe.adsb.lol/?icao=010070",
+      "note": "The free map over the same archive our Pass 1 scripts pull. Useful for a visual of a track we already hold as JSON.",
+      "captured": null
+    },
+    {
+      "site": "airplaneslive",
+      "site_name": "airplanes.live",
+      "registration": "SU-BGM",
+      "hex": "010070",
+      "side": "following",
+      "url": "https://globe.airplanes.live/?icao=010070",
+      "note": "Its API went key-gated (HTTP 403, verified 2026-08-24). Record whether the MAP is still open to the public.",
+      "captured": null
+    },
+    {
+      "site": "flightradar24",
+      "site_name": "Flightradar24",
+      "registration": "T7-ELL",
+      "hex": "50018a",
+      "side": "following",
+      "url": "https://www.flightradar24.com/data/aircraft/t7-ell",
+      "note": "The aircraft-history table the original claims were screenshotted from. Free tier shows a limited number of past flights; the depth of that window is itself worth recording on each capture.",
+      "captured": null
+    },
+    {
+      "site": "adsbexchange",
+      "site_name": "ADS-B Exchange",
+      "registration": "T7-ELL",
+      "hex": "50018a",
+      "side": "following",
+      "url": "https://globe.adsbexchange.com/?icao=50018a",
+      "note": "Historical replay is subscriber-only now (globe_history returns 403 to the public, verified 2026-08-24). Capture what the free map shows and record the paywall.",
+      "captured": null
+    },
+    {
+      "site": "flightaware",
+      "site_name": "FlightAware",
+      "registration": "T7-ELL",
+      "hex": "50018a",
+      "side": "following",
+      "url": "https://www.flightaware.com/live/flight/T7-ELL",
+      "note": "Aggressive bot protection. If it blocks, RECORD THE BLOCK and stop - do not work around it.",
+      "captured": null
+    },
+    {
+      "site": "radarbox",
+      "site_name": "AirNav RadarBox",
+      "registration": "T7-ELL",
+      "hex": "50018a",
+      "side": "following",
+      "url": "https://www.radarbox.com/data/registration/T7-ELL",
+      "note": "Independent commercial network. A useful cross-check on the same date.",
+      "captured": null
+    },
+    {
+      "site": "planespotters",
+      "site_name": "Planespotters",
+      "registration": "T7-ELL",
+      "hex": "50018a",
+      "side": "following",
+      "url": "https://www.planespotters.net/search?q=T7-ELL",
+      "note": "Photographs with dates and places. A photo of an airframe at a field on a date is a different KIND of evidence from a transponder reading.",
+      "captured": null
+    },
+    {
+      "site": "jetphotos",
+      "site_name": "JetPhotos",
+      "registration": "T7-ELL",
+      "hex": "50018a",
+      "side": "following",
+      "url": "https://www.jetphotos.com/registration/T7-ELL",
+      "note": "Same idea as Planespotters. Photographer, date and location are the useful fields.",
+      "captured": null
+    },
+    {
+      "site": "adsblol_globe",
+      "site_name": "adsb.lol globe",
+      "registration": "T7-ELL",
+      "hex": "50018a",
+      "side": "following",
+      "url": "https://globe.adsb.lol/?icao=50018a",
+      "note": "The free map over the same archive our Pass 1 scripts pull. Useful for a visual of a track we already hold as JSON.",
+      "captured": null
+    },
+    {
+      "site": "airplaneslive",
+      "site_name": "airplanes.live",
+      "registration": "T7-ELL",
+      "hex": "50018a",
+      "side": "following",
+      "url": "https://globe.airplanes.live/?icao=50018a",
+      "note": "Its API went key-gated (HTTP 403, verified 2026-08-24). Record whether the MAP is still open to the public.",
+      "captured": null
+    },
+    {
+      "site": "flightradar24",
+      "site_name": "Flightradar24",
+      "registration": "N102DZ",
+      "hex": "a00c85",
+      "side": "kirk",
+      "url": "https://www.flightradar24.com/data/aircraft/n102dz",
+      "note": "The aircraft-history table the original claims were screenshotted from. Free tier shows a limited number of past flights; the depth of that window is itself worth recording on each capture.",
+      "captured": null
+    },
+    {
+      "site": "adsbexchange",
+      "site_name": "ADS-B Exchange",
+      "registration": "N102DZ",
+      "hex": "a00c85",
+      "side": "kirk",
+      "url": "https://globe.adsbexchange.com/?icao=a00c85",
+      "note": "Historical replay is subscriber-only now (globe_history returns 403 to the public, verified 2026-08-24). Capture what the free map shows and record the paywall.",
+      "captured": null
+    },
+    {
+      "site": "flightaware",
+      "site_name": "FlightAware",
+      "registration": "N102DZ",
+      "hex": "a00c85",
+      "side": "kirk",
+      "url": "https://www.flightaware.com/live/flight/N102DZ",
+      "note": "Aggressive bot protection. If it blocks, RECORD THE BLOCK and stop - do not work around it.",
+      "captured": null
+    },
+    {
+      "site": "radarbox",
+      "site_name": "AirNav RadarBox",
+      "registration": "N102DZ",
+      "hex": "a00c85",
+      "side": "kirk",
+      "url": "https://www.radarbox.com/data/registration/N102DZ",
+      "note": "Independent commercial network. A useful cross-check on the same date.",
+      "captured": null
+    },
+    {
+      "site": "planespotters",
+      "site_name": "Planespotters",
+      "registration": "N102DZ",
+      "hex": "a00c85",
+      "side": "kirk",
+      "url": "https://www.planespotters.net/search?q=N102DZ",
+      "note": "Photographs with dates and places. A photo of an airframe at a field on a date is a different KIND of evidence from a transponder reading.",
+      "captured": null
+    },
+    {
+      "site": "jetphotos",
+      "site_name": "JetPhotos",
+      "registration": "N102DZ",
+      "hex": "a00c85",
+      "side": "kirk",
+      "url": "https://www.jetphotos.com/registration/N102DZ",
+      "note": "Same idea as Planespotters. Photographer, date and location are the useful fields.",
+      "captured": null
+    },
+    {
+      "site": "adsblol_globe",
+      "site_name": "adsb.lol globe",
+      "registration": "N102DZ",
+      "hex": "a00c85",
+      "side": "kirk",
+      "url": "https://globe.adsb.lol/?icao=a00c85",
+      "note": "The free map over the same archive our Pass 1 scripts pull. Useful for a visual of a track we already hold as JSON.",
+      "captured": null
+    },
+    {
+      "site": "airplaneslive",
+      "site_name": "airplanes.live",
+      "registration": "N102DZ",
+      "hex": "a00c85",
+      "side": "kirk",
+      "url": "https://globe.airplanes.live/?icao=a00c85",
+      "note": "Its API went key-gated (HTTP 403, verified 2026-08-24). Record whether the MAP is still open to the public.",
+      "captured": null
+    },
+    {
+      "site": "flightradar24",
+      "site_name": "Flightradar24",
+      "registration": "N888KG",
+      "hex": "ac3c75",
+      "side": "kirk",
+      "url": "https://www.flightradar24.com/data/aircraft/n888kg",
+      "note": "The aircraft-history table the original claims were screenshotted from. Free tier shows a limited number of past flights; the depth of that window is itself worth recording on each capture.",
+      "captured": null
+    },
+    {
+      "site": "adsbexchange",
+      "site_name": "ADS-B Exchange",
+      "registration": "N888KG",
+      "hex": "ac3c75",
+      "side": "kirk",
+      "url": "https://globe.adsbexchange.com/?icao=ac3c75",
+      "note": "Historical replay is subscriber-only now (globe_history returns 403 to the public, verified 2026-08-24). Capture what the free map shows and record the paywall.",
+      "captured": null
+    },
+    {
+      "site": "flightaware",
+      "site_name": "FlightAware",
+      "registration": "N888KG",
+      "hex": "ac3c75",
+      "side": "kirk",
+      "url": "https://www.flightaware.com/live/flight/N888KG",
+      "note": "Aggressive bot protection. If it blocks, RECORD THE BLOCK and stop - do not work around it.",
+      "captured": null
+    },
+    {
+      "site": "radarbox",
+      "site_name": "AirNav RadarBox",
+      "registration": "N888KG",
+      "hex": "ac3c75",
+      "side": "kirk",
+      "url": "https://www.radarbox.com/data/registration/N888KG",
+      "note": "Independent commercial network. A useful cross-check on the same date.",
+      "captured": null
+    },
+    {
+      "site": "planespotters",
+      "site_name": "Planespotters",
+      "registration": "N888KG",
+      "hex": "ac3c75",
+      "side": "kirk",
+      "url": "https://www.planespotters.net/search?q=N888KG",
+      "note": "Photographs with dates and places. A photo of an airframe at a field on a date is a different KIND of evidence from a transponder reading.",
+      "captured": null
+    },
+    {
+      "site": "jetphotos",
+      "site_name": "JetPhotos",
+      "registration": "N888KG",
+      "hex": "ac3c75",
+      "side": "kirk",
+      "url": "https://www.jetphotos.com/registration/N888KG",
+      "note": "Same idea as Planespotters. Photographer, date and location are the useful fields.",
+      "captured": null
+    },
+    {
+      "site": "adsblol_globe",
+      "site_name": "adsb.lol globe",
+      "registration": "N888KG",
+      "hex": "ac3c75",
+      "side": "kirk",
+      "url": "https://globe.adsb.lol/?icao=ac3c75",
+      "note": "The free map over the same archive our Pass 1 scripts pull. Useful for a visual of a track we already hold as JSON.",
+      "captured": null
+    },
+    {
+      "site": "airplaneslive",
+      "site_name": "airplanes.live",
+      "registration": "N888KG",
+      "hex": "ac3c75",
+      "side": "kirk",
+      "url": "https://globe.airplanes.live/?icao=ac3c75",
+      "note": "Its API went key-gated (HTTP 403, verified 2026-08-24). Record whether the MAP is still open to the public.",
+      "captured": null
+    },
+    {
+      "site": "flightradar24",
+      "site_name": "Flightradar24",
+      "registration": "N560TW",
+      "hex": "a728a8",
+      "side": "kirk",
+      "url": "https://www.flightradar24.com/data/aircraft/n560tw",
+      "note": "The aircraft-history table the original claims were screenshotted from. Free tier shows a limited number of past flights; the depth of that window is itself worth recording on each capture.",
+      "captured": null
+    },
+    {
+      "site": "adsbexchange",
+      "site_name": "ADS-B Exchange",
+      "registration": "N560TW",
+      "hex": "a728a8",
+      "side": "kirk",
+      "url": "https://globe.adsbexchange.com/?icao=a728a8",
+      "note": "Historical replay is subscriber-only now (globe_history returns 403 to the public, verified 2026-08-24). Capture what the free map shows and record the paywall.",
+      "captured": null
+    },
+    {
+      "site": "flightaware",
+      "site_name": "FlightAware",
+      "registration": "N560TW",
+      "hex": "a728a8",
+      "side": "kirk",
+      "url": "https://www.flightaware.com/live/flight/N560TW",
+      "note": "Aggressive bot protection. If it blocks, RECORD THE BLOCK and stop - do not work around it.",
+      "captured": null
+    },
+    {
+      "site": "radarbox",
+      "site_name": "AirNav RadarBox",
+      "registration": "N560TW",
+      "hex": "a728a8",
+      "side": "kirk",
+      "url": "https://www.radarbox.com/data/registration/N560TW",
+      "note": "Independent commercial network. A useful cross-check on the same date.",
+      "captured": null
+    },
+    {
+      "site": "planespotters",
+      "site_name": "Planespotters",
+      "registration": "N560TW",
+      "hex": "a728a8",
+      "side": "kirk",
+      "url": "https://www.planespotters.net/search?q=N560TW",
+      "note": "Photographs with dates and places. A photo of an airframe at a field on a date is a different KIND of evidence from a transponder reading.",
+      "captured": null
+    },
+    {
+      "site": "jetphotos",
+      "site_name": "JetPhotos",
+      "registration": "N560TW",
+      "hex": "a728a8",
+      "side": "kirk",
+      "url": "https://www.jetphotos.com/registration/N560TW",
+      "note": "Same idea as Planespotters. Photographer, date and location are the useful fields.",
+      "captured": null
+    },
+    {
+      "site": "adsblol_globe",
+      "site_name": "adsb.lol globe",
+      "registration": "N560TW",
+      "hex": "a728a8",
+      "side": "kirk",
+      "url": "https://globe.adsb.lol/?icao=a728a8",
+      "note": "The free map over the same archive our Pass 1 scripts pull. Useful for a visual of a track we already hold as JSON.",
+      "captured": null
+    },
+    {
+      "site": "airplaneslive",
+      "site_name": "airplanes.live",
+      "registration": "N560TW",
+      "hex": "a728a8",
+      "side": "kirk",
+      "url": "https://globe.airplanes.live/?icao=a728a8",
+      "note": "Its API went key-gated (HTTP 403, verified 2026-08-24). Record whether the MAP is still open to the public.",
+      "captured": null
+    },
+    {
+      "site": "flightradar24",
+      "site_name": "Flightradar24",
+      "registration": "N582MM",
+      "hex": "a77e75",
+      "side": "kirk",
+      "url": "https://www.flightradar24.com/data/aircraft/n582mm",
+      "note": "The aircraft-history table the original claims were screenshotted from. Free tier shows a limited number of past flights; the depth of that window is itself worth recording on each capture.",
+      "captured": null
+    },
+    {
+      "site": "adsbexchange",
+      "site_name": "ADS-B Exchange",
+      "registration": "N582MM",
+      "hex": "a77e75",
+      "side": "kirk",
+      "url": "https://globe.adsbexchange.com/?icao=a77e75",
+      "note": "Historical replay is subscriber-only now (globe_history returns 403 to the public, verified 2026-08-24). Capture what the free map shows and record the paywall.",
+      "captured": null
+    },
+    {
+      "site": "flightaware",
+      "site_name": "FlightAware",
+      "registration": "N582MM",
+      "hex": "a77e75",
+      "side": "kirk",
+      "url": "https://www.flightaware.com/live/flight/N582MM",
+      "note": "Aggressive bot protection. If it blocks, RECORD THE BLOCK and stop - do not work around it.",
+      "captured": null
+    },
+    {
+      "site": "radarbox",
+      "site_name": "AirNav RadarBox",
+      "registration": "N582MM",
+      "hex": "a77e75",
+      "side": "kirk",
+      "url": "https://www.radarbox.com/data/registration/N582MM",
+      "note": "Independent commercial network. A useful cross-check on the same date.",
+      "captured": null
+    },
+    {
+      "site": "planespotters",
+      "site_name": "Planespotters",
+      "registration": "N582MM",
+      "hex": "a77e75",
+      "side": "kirk",
+      "url": "https://www.planespotters.net/search?q=N582MM",
+      "note": "Photographs with dates and places. A photo of an airframe at a field on a date is a different KIND of evidence from a transponder reading.",
+      "captured": null
+    },
+    {
+      "site": "jetphotos",
+      "site_name": "JetPhotos",
+      "registration": "N582MM",
+      "hex": "a77e75",
+      "side": "kirk",
+      "url": "https://www.jetphotos.com/registration/N582MM",
+      "note": "Same idea as Planespotters. Photographer, date and location are the useful fields.",
+      "captured": null
+    },
+    {
+      "site": "adsblol_globe",
+      "site_name": "adsb.lol globe",
+      "registration": "N582MM",
+      "hex": "a77e75",
+      "side": "kirk",
+      "url": "https://globe.adsb.lol/?icao=a77e75",
+      "note": "The free map over the same archive our Pass 1 scripts pull. Useful for a visual of a track we already hold as JSON.",
+      "captured": null
+    },
+    {
+      "site": "airplaneslive",
+      "site_name": "airplanes.live",
+      "registration": "N582MM",
+      "hex": "a77e75",
+      "side": "kirk",
+      "url": "https://globe.airplanes.live/?icao=a77e75",
+      "note": "Its API went key-gated (HTTP 403, verified 2026-08-24). Record whether the MAP is still open to the public.",
+      "captured": null
+    },
+    {
+      "site": "flightradar24",
+      "site_name": "Flightradar24",
+      "registration": "N872RA",
+      "hex": "abff3c",
+      "side": "kirk",
+      "url": "https://www.flightradar24.com/data/aircraft/n872ra",
+      "note": "The aircraft-history table the original claims were screenshotted from. Free tier shows a limited number of past flights; the depth of that window is itself worth recording on each capture.",
+      "captured": null
+    },
+    {
+      "site": "adsbexchange",
+      "site_name": "ADS-B Exchange",
+      "registration": "N872RA",
+      "hex": "abff3c",
+      "side": "kirk",
+      "url": "https://globe.adsbexchange.com/?icao=abff3c",
+      "note": "Historical replay is subscriber-only now (globe_history returns 403 to the public, verified 2026-08-24). Capture what the free map shows and record the paywall.",
+      "captured": null
+    },
+    {
+      "site": "flightaware",
+      "site_name": "FlightAware",
+      "registration": "N872RA",
+      "hex": "abff3c",
+      "side": "kirk",
+      "url": "https://www.flightaware.com/live/flight/N872RA",
+      "note": "Aggressive bot protection. If it blocks, RECORD THE BLOCK and stop - do not work around it.",
+      "captured": null
+    },
+    {
+      "site": "radarbox",
+      "site_name": "AirNav RadarBox",
+      "registration": "N872RA",
+      "hex": "abff3c",
+      "side": "kirk",
+      "url": "https://www.radarbox.com/data/registration/N872RA",
+      "note": "Independent commercial network. A useful cross-check on the same date.",
+      "captured": null
+    },
+    {
+      "site": "planespotters",
+      "site_name": "Planespotters",
+      "registration": "N872RA",
+      "hex": "abff3c",
+      "side": "kirk",
+      "url": "https://www.planespotters.net/search?q=N872RA",
+      "note": "Photographs with dates and places. A photo of an airframe at a field on a date is a different KIND of evidence from a transponder reading.",
+      "captured": null
+    },
+    {
+      "site": "jetphotos",
+      "site_name": "JetPhotos",
+      "registration": "N872RA",
+      "hex": "abff3c",
+      "side": "kirk",
+      "url": "https://www.jetphotos.com/registration/N872RA",
+      "note": "Same idea as Planespotters. Photographer, date and location are the useful fields.",
+      "captured": null
+    },
+    {
+      "site": "adsblol_globe",
+      "site_name": "adsb.lol globe",
+      "registration": "N872RA",
+      "hex": "abff3c",
+      "side": "kirk",
+      "url": "https://globe.adsb.lol/?icao=abff3c",
+      "note": "The free map over the same archive our Pass 1 scripts pull. Useful for a visual of a track we already hold as JSON.",
+      "captured": null
+    },
+    {
+      "site": "airplaneslive",
+      "site_name": "airplanes.live",
+      "registration": "N872RA",
+      "hex": "abff3c",
+      "side": "kirk",
+      "url": "https://globe.airplanes.live/?icao=abff3c",
+      "note": "Its API went key-gated (HTTP 403, verified 2026-08-24). Record whether the MAP is still open to the public.",
+      "captured": null
+    },
+    {
+      "site": "flightradar24",
+      "site_name": "Flightradar24",
+      "registration": "N40JD",
+      "hex": "a4ab14",
+      "side": "kirk",
+      "url": "https://www.flightradar24.com/data/aircraft/n40jd",
+      "note": "The aircraft-history table the original claims were screenshotted from. Free tier shows a limited number of past flights; the depth of that window is itself worth recording on each capture.",
+      "captured": null
+    },
+    {
+      "site": "adsbexchange",
+      "site_name": "ADS-B Exchange",
+      "registration": "N40JD",
+      "hex": "a4ab14",
+      "side": "kirk",
+      "url": "https://globe.adsbexchange.com/?icao=a4ab14",
+      "note": "Historical replay is subscriber-only now (globe_history returns 403 to the public, verified 2026-08-24). Capture what the free map shows and record the paywall.",
+      "captured": null
+    },
+    {
+      "site": "flightaware",
+      "site_name": "FlightAware",
+      "registration": "N40JD",
+      "hex": "a4ab14",
+      "side": "kirk",
+      "url": "https://www.flightaware.com/live/flight/N40JD",
+      "note": "Aggressive bot protection. If it blocks, RECORD THE BLOCK and stop - do not work around it.",
+      "captured": null
+    },
+    {
+      "site": "radarbox",
+      "site_name": "AirNav RadarBox",
+      "registration": "N40JD",
+      "hex": "a4ab14",
+      "side": "kirk",
+      "url": "https://www.radarbox.com/data/registration/N40JD",
+      "note": "Independent commercial network. A useful cross-check on the same date.",
+      "captured": null
+    },
+    {
+      "site": "planespotters",
+      "site_name": "Planespotters",
+      "registration": "N40JD",
+      "hex": "a4ab14",
+      "side": "kirk",
+      "url": "https://www.planespotters.net/search?q=N40JD",
+      "note": "Photographs with dates and places. A photo of an airframe at a field on a date is a different KIND of evidence from a transponder reading.",
+      "captured": null
+    },
+    {
+      "site": "jetphotos",
+      "site_name": "JetPhotos",
+      "registration": "N40JD",
+      "hex": "a4ab14",
+      "side": "kirk",
+      "url": "https://www.jetphotos.com/registration/N40JD",
+      "note": "Same idea as Planespotters. Photographer, date and location are the useful fields.",
+      "captured": null
+    },
+    {
+      "site": "adsblol_globe",
+      "site_name": "adsb.lol globe",
+      "registration": "N40JD",
+      "hex": "a4ab14",
+      "side": "kirk",
+      "url": "https://globe.adsb.lol/?icao=a4ab14",
+      "note": "The free map over the same archive our Pass 1 scripts pull. Useful for a visual of a track we already hold as JSON.",
+      "captured": null
+    },
+    {
+      "site": "airplaneslive",
+      "site_name": "airplanes.live",
+      "registration": "N40JD",
+      "hex": "a4ab14",
+      "side": "kirk",
+      "url": "https://globe.airplanes.live/?icao=a4ab14",
+      "note": "Its API went key-gated (HTTP 403, verified 2026-08-24). Record whether the MAP is still open to the public.",
+      "captured": null
+    },
+    {
+      "site": "flightradar24",
+      "site_name": "Flightradar24",
+      "registration": "N1098L",
+      "hex": "a0299e",
+      "side": "n1098l",
+      "url": "https://www.flightradar24.com/data/aircraft/n1098l",
+      "note": "The aircraft-history table the original claims were screenshotted from. Free tier shows a limited number of past flights; the depth of that window is itself worth recording on each capture.",
+      "captured": null
+    },
+    {
+      "site": "adsbexchange",
+      "site_name": "ADS-B Exchange",
+      "registration": "N1098L",
+      "hex": "a0299e",
+      "side": "n1098l",
+      "url": "https://globe.adsbexchange.com/?icao=a0299e",
+      "note": "Historical replay is subscriber-only now (globe_history returns 403 to the public, verified 2026-08-24). Capture what the free map shows and record the paywall.",
+      "captured": null
+    },
+    {
+      "site": "flightaware",
+      "site_name": "FlightAware",
+      "registration": "N1098L",
+      "hex": "a0299e",
+      "side": "n1098l",
+      "url": "https://www.flightaware.com/live/flight/N1098L",
+      "note": "Aggressive bot protection. If it blocks, RECORD THE BLOCK and stop - do not work around it.",
+      "captured": null
+    },
+    {
+      "site": "radarbox",
+      "site_name": "AirNav RadarBox",
+      "registration": "N1098L",
+      "hex": "a0299e",
+      "side": "n1098l",
+      "url": "https://www.radarbox.com/data/registration/N1098L",
+      "note": "Independent commercial network. A useful cross-check on the same date.",
+      "captured": null
+    },
+    {
+      "site": "planespotters",
+      "site_name": "Planespotters",
+      "registration": "N1098L",
+      "hex": "a0299e",
+      "side": "n1098l",
+      "url": "https://www.planespotters.net/search?q=N1098L",
+      "note": "Photographs with dates and places. A photo of an airframe at a field on a date is a different KIND of evidence from a transponder reading.",
+      "captured": null
+    },
+    {
+      "site": "jetphotos",
+      "site_name": "JetPhotos",
+      "registration": "N1098L",
+      "hex": "a0299e",
+      "side": "n1098l",
+      "url": "https://www.jetphotos.com/registration/N1098L",
+      "note": "Same idea as Planespotters. Photographer, date and location are the useful fields.",
+      "captured": null
+    },
+    {
+      "site": "adsblol_globe",
+      "site_name": "adsb.lol globe",
+      "registration": "N1098L",
+      "hex": "a0299e",
+      "side": "n1098l",
+      "url": "https://globe.adsb.lol/?icao=a0299e",
+      "note": "The free map over the same archive our Pass 1 scripts pull. Useful for a visual of a track we already hold as JSON.",
+      "captured": null
+    },
+    {
+      "site": "airplaneslive",
+      "site_name": "airplanes.live",
+      "registration": "N1098L",
+      "hex": "a0299e",
+      "side": "n1098l",
+      "url": "https://globe.airplanes.live/?icao=a0299e",
+      "note": "Its API went key-gated (HTTP 403, verified 2026-08-24). Record whether the MAP is still open to the public.",
+      "captured": null
+    },
+    {
+      "site": "flightradar24",
+      "site_name": "Flightradar24",
+      "registration": "N2100L",
+      "hex": "a1bbe5",
+      "side": "n1098l",
+      "url": "https://www.flightradar24.com/data/aircraft/n2100l",
+      "note": "The aircraft-history table the original claims were screenshotted from. Free tier shows a limited number of past flights; the depth of that window is itself worth recording on each capture.",
+      "captured": null
+    },
+    {
+      "site": "adsbexchange",
+      "site_name": "ADS-B Exchange",
+      "registration": "N2100L",
+      "hex": "a1bbe5",
+      "side": "n1098l",
+      "url": "https://globe.adsbexchange.com/?icao=a1bbe5",
+      "note": "Historical replay is subscriber-only now (globe_history returns 403 to the public, verified 2026-08-24). Capture what the free map shows and record the paywall.",
+      "captured": null
+    },
+    {
+      "site": "flightaware",
+      "site_name": "FlightAware",
+      "registration": "N2100L",
+      "hex": "a1bbe5",
+      "side": "n1098l",
+      "url": "https://www.flightaware.com/live/flight/N2100L",
+      "note": "Aggressive bot protection. If it blocks, RECORD THE BLOCK and stop - do not work around it.",
+      "captured": null
+    },
+    {
+      "site": "radarbox",
+      "site_name": "AirNav RadarBox",
+      "registration": "N2100L",
+      "hex": "a1bbe5",
+      "side": "n1098l",
+      "url": "https://www.radarbox.com/data/registration/N2100L",
+      "note": "Independent commercial network. A useful cross-check on the same date.",
+      "captured": null
+    },
+    {
+      "site": "planespotters",
+      "site_name": "Planespotters",
+      "registration": "N2100L",
+      "hex": "a1bbe5",
+      "side": "n1098l",
+      "url": "https://www.planespotters.net/search?q=N2100L",
+      "note": "Photographs with dates and places. A photo of an airframe at a field on a date is a different KIND of evidence from a transponder reading.",
+      "captured": null
+    },
+    {
+      "site": "jetphotos",
+      "site_name": "JetPhotos",
+      "registration": "N2100L",
+      "hex": "a1bbe5",
+      "side": "n1098l",
+      "url": "https://www.jetphotos.com/registration/N2100L",
+      "note": "Same idea as Planespotters. Photographer, date and location are the useful fields.",
+      "captured": null
+    },
+    {
+      "site": "adsblol_globe",
+      "site_name": "adsb.lol globe",
+      "registration": "N2100L",
+      "hex": "a1bbe5",
+      "side": "n1098l",
+      "url": "https://globe.adsb.lol/?icao=a1bbe5",
+      "note": "The free map over the same archive our Pass 1 scripts pull. Useful for a visual of a track we already hold as JSON.",
+      "captured": null
+    },
+    {
+      "site": "airplaneslive",
+      "site_name": "airplanes.live",
+      "registration": "N2100L",
+      "hex": "a1bbe5",
+      "side": "n1098l",
+      "url": "https://globe.airplanes.live/?icao=a1bbe5",
+      "note": "Its API went key-gated (HTTP 403, verified 2026-08-24). Record whether the MAP is still open to the public.",
+      "captured": null
+    },
+    {
+      "site": "flightradar24",
+      "site_name": "Flightradar24",
+      "registration": "N59906",
+      "hex": "a7c14d",
+      "side": "n1098l",
+      "url": "https://www.flightradar24.com/data/aircraft/n59906",
+      "note": "The aircraft-history table the original claims were screenshotted from. Free tier shows a limited number of past flights; the depth of that window is itself worth recording on each capture.",
+      "captured": null
+    },
+    {
+      "site": "adsbexchange",
+      "site_name": "ADS-B Exchange",
+      "registration": "N59906",
+      "hex": "a7c14d",
+      "side": "n1098l",
+      "url": "https://globe.adsbexchange.com/?icao=a7c14d",
+      "note": "Historical replay is subscriber-only now (globe_history returns 403 to the public, verified 2026-08-24). Capture what the free map shows and record the paywall.",
+      "captured": null
+    },
+    {
+      "site": "flightaware",
+      "site_name": "FlightAware",
+      "registration": "N59906",
+      "hex": "a7c14d",
+      "side": "n1098l",
+      "url": "https://www.flightaware.com/live/flight/N59906",
+      "note": "Aggressive bot protection. If it blocks, RECORD THE BLOCK and stop - do not work around it.",
+      "captured": null
+    },
+    {
+      "site": "radarbox",
+      "site_name": "AirNav RadarBox",
+      "registration": "N59906",
+      "hex": "a7c14d",
+      "side": "n1098l",
+      "url": "https://www.radarbox.com/data/registration/N59906",
+      "note": "Independent commercial network. A useful cross-check on the same date.",
+      "captured": null
+    },
+    {
+      "site": "planespotters",
+      "site_name": "Planespotters",
+      "registration": "N59906",
+      "hex": "a7c14d",
+      "side": "n1098l",
+      "url": "https://www.planespotters.net/search?q=N59906",
+      "note": "Photographs with dates and places. A photo of an airframe at a field on a date is a different KIND of evidence from a transponder reading.",
+      "captured": null
+    },
+    {
+      "site": "jetphotos",
+      "site_name": "JetPhotos",
+      "registration": "N59906",
+      "hex": "a7c14d",
+      "side": "n1098l",
+      "url": "https://www.jetphotos.com/registration/N59906",
+      "note": "Same idea as Planespotters. Photographer, date and location are the useful fields.",
+      "captured": null
+    },
+    {
+      "site": "adsblol_globe",
+      "site_name": "adsb.lol globe",
+      "registration": "N59906",
+      "hex": "a7c14d",
+      "side": "n1098l",
+      "url": "https://globe.adsb.lol/?icao=a7c14d",
+      "note": "The free map over the same archive our Pass 1 scripts pull. Useful for a visual of a track we already hold as JSON.",
+      "captured": null
+    },
+    {
+      "site": "airplaneslive",
+      "site_name": "airplanes.live",
+      "registration": "N59906",
+      "hex": "a7c14d",
+      "side": "n1098l",
+      "url": "https://globe.airplanes.live/?icao=a7c14d",
+      "note": "Its API went key-gated (HTTP 403, verified 2026-08-24). Record whether the MAP is still open to the public.",
+      "captured": null
+    },
+    {
+      "site": "flightradar24",
+      "site_name": "Flightradar24",
+      "registration": "N55906",
+      "hex": "a72351",
+      "side": "n1098l",
+      "url": "https://www.flightradar24.com/data/aircraft/n55906",
+      "note": "The aircraft-history table the original claims were screenshotted from. Free tier shows a limited number of past flights; the depth of that window is itself worth recording on each capture.",
+      "captured": null
+    },
+    {
+      "site": "adsbexchange",
+      "site_name": "ADS-B Exchange",
+      "registration": "N55906",
+      "hex": "a72351",
+      "side": "n1098l",
+      "url": "https://globe.adsbexchange.com/?icao=a72351",
+      "note": "Historical replay is subscriber-only now (globe_history returns 403 to the public, verified 2026-08-24). Capture what the free map shows and record the paywall.",
+      "captured": null
+    },
+    {
+      "site": "flightaware",
+      "site_name": "FlightAware",
+      "registration": "N55906",
+      "hex": "a72351",
+      "side": "n1098l",
+      "url": "https://www.flightaware.com/live/flight/N55906",
+      "note": "Aggressive bot protection. If it blocks, RECORD THE BLOCK and stop - do not work around it.",
+      "captured": null
+    },
+    {
+      "site": "radarbox",
+      "site_name": "AirNav RadarBox",
+      "registration": "N55906",
+      "hex": "a72351",
+      "side": "n1098l",
+      "url": "https://www.radarbox.com/data/registration/N55906",
+      "note": "Independent commercial network. A useful cross-check on the same date.",
+      "captured": null
+    },
+    {
+      "site": "planespotters",
+      "site_name": "Planespotters",
+      "registration": "N55906",
+      "hex": "a72351",
+      "side": "n1098l",
+      "url": "https://www.planespotters.net/search?q=N55906",
+      "note": "Photographs with dates and places. A photo of an airframe at a field on a date is a different KIND of evidence from a transponder reading.",
+      "captured": null
+    },
+    {
+      "site": "jetphotos",
+      "site_name": "JetPhotos",
+      "registration": "N55906",
+      "hex": "a72351",
+      "side": "n1098l",
+      "url": "https://www.jetphotos.com/registration/N55906",
+      "note": "Same idea as Planespotters. Photographer, date and location are the useful fields.",
+      "captured": null
+    },
+    {
+      "site": "adsblol_globe",
+      "site_name": "adsb.lol globe",
+      "registration": "N55906",
+      "hex": "a72351",
+      "side": "n1098l",
+      "url": "https://globe.adsb.lol/?icao=a72351",
+      "note": "The free map over the same archive our Pass 1 scripts pull. Useful for a visual of a track we already hold as JSON.",
+      "captured": null
+    },
+    {
+      "site": "airplaneslive",
+      "site_name": "airplanes.live",
+      "registration": "N55906",
+      "hex": "a72351",
+      "side": "n1098l",
+      "url": "https://globe.airplanes.live/?icao=a72351",
+      "note": "Its API went key-gated (HTTP 403, verified 2026-08-24). Record whether the MAP is still open to the public.",
+      "captured": null
+    }
+  ]
+}
