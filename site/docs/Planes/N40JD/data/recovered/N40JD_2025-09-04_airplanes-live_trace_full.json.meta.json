@@ -1,0 +1,31 @@
+{
+  "retrieved_utc": "2026-08-24T16:29:36.628Z",
+  "source": "airplanes-live",
+  "source_role": "BACKUP ARCHIVE — independent volunteer network",
+  "url": "https://globe.airplanes.live/globe_history/2025/09/04/traces/14/trace_full_a4ab14.json",
+  "http_status": 200,
+  "bytes": 425696,
+  "tail": "N40JD",
+  "hex": "a4ab14",
+  "utc_date": "2025-09-04",
+  "summary": {
+    "registration": "N40JD",
+    "type": "PRM1",
+    "icao": "a4ab14",
+    "points": 2468,
+    "first_seen_utc": "2025-09-04T12:14:33.460Z",
+    "first_pos": [
+      33.62233,
+      -111.908924
+    ],
+    "first_on_ground": true,
+    "last_seen_utc": "2025-09-04T19:52:35.760Z",
+    "last_pos": [
+      33.622074,
+      -111.909328
+    ],
+    "last_on_ground": true,
+    "wheels_up_utc": "2025-09-04T12:56:49.020Z",
+    "wheels_down_utc": "2025-09-04T19:37:55.830Z"
+  }
+}

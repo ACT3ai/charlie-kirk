@@ -1,0 +1,31 @@
+{
+  "retrieved_utc": "2026-08-24T16:29:36.628Z",
+  "source": "adsb-lol",
+  "source_role": "the archive this investigation already used",
+  "url": "https://adsb.lol/globe_history/2025/09/16/traces/14/trace_full_a4ab14.json",
+  "http_status": 200,
+  "bytes": 248416,
+  "tail": "N40JD",
+  "hex": "a4ab14",
+  "utc_date": "2025-09-16",
+  "summary": {
+    "registration": "N40JD",
+    "type": "PRM1",
+    "icao": "a4ab14",
+    "points": 1449,
+    "first_seen_utc": "2025-09-16T00:38:33.830Z",
+    "first_pos": [
+      33.622342,
+      -111.908956
+    ],
+    "first_on_ground": true,
+    "last_seen_utc": "2025-09-16T16:18:37.000Z",
+    "last_pos": [
+      33.622493,
+      -111.908612
+    ],
+    "last_on_ground": true,
+    "wheels_up_utc": "2025-09-16T02:02:09.700Z",
+    "wheels_down_utc": "2025-09-16T16:15:23.650Z"
+  }
+}

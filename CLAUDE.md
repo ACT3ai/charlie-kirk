@@ -1216,9 +1216,27 @@ FILE:
   to point it at a different store. Warns if the store is group- or world-readable.
 * security/scan_secrets.py: scans tracked (or `--staged`) files for credentials and
   prints the file and line number, NEVER the value. Exit 0 clean, 1 findings.
-  Archived flight-tracker HTML under `*/data/recovered/` is skipped on purpose —
-  it carries Flightradar24's own already-public client-side Firebase key, and the
-  captures are evidence of what those pages served.
+  Archived flight-tracker HTML under `*/data/recovered/` USED to be skipped on the
+  grounds that the keys in it are the vendor's own and were already public. That
+  changed on 2026-08-24: GitHub push protection does not care whose key it is, and
+  it rejected the push of the whole investigation over FlightAware's Mapbox token
+  in a captured N102DZ page. Captures are now scanned — with the SHAPE patterns
+  only, since raw ADS-B traces are full of random-looking values that are position
+  data, not secrets.
+* security/scrub_vendor_tokens.py: the fix for that class. Redacts THIRD-PARTY
+  vendor keys inside captures (FlightAware's Mapbox / Stadia / Vicinity tokens,
+  Flightradar24's Firebase web key) by replacing just the VALUE with
+  `__REDACTED_VENDOR_CREDENTIAL_sha256_<16 hex>__`. The key name, the markup and
+  every byte of flight data are untouched, and the fingerprint is one-way but
+  stable — so "this page served the same key as that page" is still provable. We
+  lose the secret, not the proof. `--check` reports without writing.
+  Run it over everything: `python3 security/scrub_vendor_tokens.py`
+* site/docs/Planes/following/apis/public_open_source/code/lib/scrub.js: the
+  write-time twin of the above, so a capture is redacted on its way to disk rather
+  than after the fact. Wired into `save()` in recover_erased.js and into
+  recover_adsbx_samples.js; each capture's `.meta.json` records
+  `vendor_credentials_redacted: <count>`, so an altered capture says so plainly.
+  Keep it in step with the Python: same patterns, same marker.
 * security/pre-commit + security/install_hooks.sh: the hook that blocks a commit
   carrying a credential, and the installer. **.git/hooks/ is not cloned — run
   `sh security/install_hooks.sh` once on every machine that checks this repo out.**
@@ -1230,6 +1248,13 @@ Rules:
 * `.gitignore` carries a SECRETS block (`.env*`, `*.pem`, `*.key`, `id_rsa*`,
   service-account JSON, `.netrc`, …) as the backstop. It is not the policy.
 * A missing credential is reported by NAME. No script ever prints a value.
+* A THIRD-PARTY key inside an archived capture is NOT deleted and NOT skipped —
+  it is redacted in place by security/scrub_vendor_tokens.py. Never "fix" a
+  blocked push by deleting the capture; the capture is the evidence.
+* If GitHub push protection ever blocks a push again, do not click the allow-secret
+  link. Run the scrubber, and check whether the offending value is only in unpushed
+  commits — if it is, resetting to origin/main and recommitting removes it from
+  history entirely, with no force-push.
 
 === IPFS & Large Files ===
 
