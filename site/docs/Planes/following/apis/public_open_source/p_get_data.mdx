@@ -1,0 +1,192 @@
+```
+ROOT_DIR dir is ~/BGit/Bryan_git/charlie-kirk/
+SITE_DOCS dir is {ROOT_DIR}site/docs/
+FOLLOWING_DIR dir is {SITE_DOCS}Planes/following/
+APIS_DIR dir is {FOLLOWING_DIR}apis/
+THIS_DIR dir is {APIS_DIR}public_open_source/
+KNOWLEDGE_FILE is file {THIS_DIR}knowledge.mdx
+CODE_DIR dir is {THIS_DIR}code/
+DATA_DIR dir is {THIS_DIR}data/
+FLEET_FILE is file {CODE_DIR}lib/fleet.js
+APIS_CLAUDE is file {APIS_DIR}CLAUDE.md
+FOLLOWING_CLAUDE is file {FOLLOWING_DIR}CLAUDE.md
+FLIGHTS_CSV is file {FOLLOWING_DIR}flights.csv
+OVERLAPS_CSV is file {FOLLOWING_DIR}overlaps.csv
+PLANES_CSV is file {FOLLOWING_DIR}planes.csv
+AIRPORTS_CSV is file {FOLLOWING_DIR}airports.csv
+SOURCES_CSV is file {FOLLOWING_DIR}sources.csv
+PLANES_DIR dir is {SITE_DOCS}Planes/
+OVERLAP_DIR dir is {FOLLOWING_DIR}overlap/
+PAGES_CSV is file {ROOT_DIR}pages.csv
+CK_FILE is file {ROOT_DIR}Charlie_Kirk.txt
+CK_INBOX is file {ROOT_DIR}Charlie_Kirk_AI_Inbox.txt
+
+This is the PASS 1 prompt. Pass 1 is free and open sources only. No money, no
+contract, no key that a member of the public cannot get. Pass 1 always runs
+first, because anything it can prove is something any reader can reproduce.
+
+
+====================================================================
+STAGE 0 - READ THE KNOWLEDGE FIRST. NEVER SKIP THIS STAGE.
+====================================================================
+
+* Read {KNOWLEDGE_FILE} in full, start to finish, before doing anything else.
+  It is the accumulated knowledge of these sites - which endpoints exist, which
+  ones died, which auth changed, what we already pulled, and what we already
+  failed to pull. Every run of this prompt starts by loading it.
+* Reading it first is not a formality. It is how you avoid spending an hour
+  rediscovering that a network went key-only in 2026, or re-pulling data that is
+  already sitting in {DATA_DIR}.
+* Pay particular attention to the "What we did NOT get" section. That section is
+  the work list. Anything named there is a candidate for this run.
+* Then read, in this order:
+  * {APIS_CLAUDE} - the rules for this whole apis directory.
+  * {FOLLOWING_CLAUDE} - the rules for public content in the following directory.
+  * {FLEET_FILE} - the tail numbers, hex codes, and which thread each belongs to.
+  * {CK_FILE} - the master investigation file. Read it, never write to it. New
+    material for it goes to {CK_INBOX} and a human merges it.
+* Output to stdout the line:
+  "STAGE 0 COMPLETE - knowledge loaded, N open questions carried forward"
+  where N is the number of items you found in the "What we did NOT get" section.
+
+
+====================================================================
+STAGE 1 - DECIDE WHAT THIS RUN IS FOR
+====================================================================
+
+* A run of this prompt is one of four things. Pick one and say which:
+  * BACKFILL - pull claimed dates from {FLIGHTS_CSV} and {OVERLAPS_CSV} that have
+    no primary trace yet.
+  * NEW CLAIM - somebody published a new date or a new tail; go get it.
+  * RECHECK - re-pull something we already have, to see whether it is still
+    there. This is how scrubbing gets caught.
+  * DISCOVERY - go looking for a source we do not have yet.
+* Never silently do all four. A run with a stated purpose produces a page; a run
+  without one produces a pile of JSON.
+
+
+====================================================================
+STAGE 2 - PULL, USING THE CODE THAT IS ALREADY THERE
+====================================================================
+
+* The clients in {CODE_DIR} already exist. Read {CODE_DIR}_README.md and use
+  them rather than writing a new fetcher.
+  * globe_history.js - historical ADS-B traces. The workhorse.
+  * pull_all.js - bulk over every claimed (tail, date) in the spine CSVs.
+  * adsbdb.js - tail to hex, type, registered owner.
+  * live_networks.js - the live-only networks, probed side by side.
+  * opensky.js - historical flight lists, OAuth2 credentials required.
+  * wayback.js - Internet Archive snapshots. The scrubbing detector.
+  * ourairports.js - public-domain airport and runway reference data.
+* If a new source turns up, add a new client next to those. Match their shape:
+  raw response saved, .meta.json beside it, never overwrite a previous pull.
+* Prefer an installable open-source CLI over hand-rolled code where one exists,
+  and prefer a mainstream distribution channel - brew, npm, pipx, go install,
+  cargo - over downloading a binary from anywhere else. Record in
+  {KNOWLEDGE_FILE} which tool you installed, from where, and what version.
+* Be a good citizen. These are volunteer-funded services. Sleep between calls,
+  never run concurrent floods, and never re-pull what {DATA_DIR} already holds
+  unless the purpose of the run is RECHECK.
+
+
+====================================================================
+STAGE 3 - LAND THE DATA WHERE IT BELONGS
+====================================================================
+
+* The raw archive: {DATA_DIR}<source>/<tail>/<date>_<endpoint>.json, with its
+  .meta.json beside it.
+* The aircraft's own directory: {PLANES_DIR}<TAIL>/data/adsb/
+* The overlap's own directory: {OVERLAP_DIR}<overlap_key>/data/
+* One file per pull. NEVER overwrite a previous pull. The diff between two pulls
+  of the same endpoint on two dates is the evidence that something vanished.
+
+
+====================================================================
+STAGE 4 - WRITE DOWN WHAT YOU COULD NOT GET
+====================================================================
+
+* Every claimed flight that returned nothing gets recorded. Write or update
+  MISSING_DATA.md in the aircraft directory and in the overlap directory.
+* Each entry states: the tail, the UTC date, the source and endpoint tried, the
+  HTTP status, and WHO CLAIMED THE FLIGHT and where they claimed it.
+* Then state the honest reading, every time: an absent trace means the network
+  holds no trace. It does not establish that the aircraft did not fly and it does
+  not establish that a transponder was switched off. Coverage gaps, a parked
+  aircraft, and a wrong claimed date all look exactly like this.
+* Separate two different things and never blur them:
+  * NEVER HAD IT - the source never held this and we have no evidence it did.
+  * NO LONGER HAS IT - we or the Internet Archive can show it was once there.
+  The second is a finding about the record. The first is a gap in coverage.
+
+
+====================================================================
+STAGE 5 - PROMOTE FINDINGS INTO THE SPINE
+====================================================================
+
+* Research first, publication second. Nothing reaches a page before it is in the
+  data.
+* New or corrected flight leg goes into {FLIGHTS_CSV}.
+* New or corrected pairing goes into {OVERLAPS_CSV}. NEVER renumber an
+  overlap_id - it is a permanent join key.
+* Aircraft identity corrections go into {PLANES_CSV}. Where a hex code or a type
+  disagrees between two sources, record BOTH and say which one the primary trace
+  supports. Do not quietly overwrite one with the other.
+* Airport facts go into {AIRPORTS_CSV}, from the public-domain dataset, not from
+  memory.
+* Every source gets a row in {SOURCES_CSV} with its evidence_class before
+  anything it says appears on a page. Data pulled by these scripts is
+  adsb_public_history, the top tier.
+* These files only ever grow. Nothing is deleted from them.
+
+
+====================================================================
+STAGE 6 - ONLY NOW, WRITE OR UPDATE PAGES
+====================================================================
+
+* Read {ROOT_DIR}prompts/Assess_Manual.md before touching a page.
+* Every disputed claim is ALLEGED and attributed to whoever made it.
+* The counts are trackers tallies, not records. Show the conflict, never average.
+* One overlap is not evidence. The pattern is the claim.
+* Every page carries its counterargument - including the counterargument to our
+  own pull, which is that an aircraft simply was not there.
+* Do not merge the threads. The 18-month following pattern, the Sept 10 day-of
+  timeline, the N1098L thread, and the N888KG Wendover departure are four
+  different claims about four different aircraft sets.
+* Erika's side is the weak side. Her logs are reported erased. Say so on every
+  Erika pairing and link the erased-logs page.
+* Keep every div and closing div tag at column 0. An indented closing tag breaks
+  the build and only npm run build catches it.
+* Keep {PAGES_CSV} in sync for every page created, moved, or deleted.
+
+
+====================================================================
+STAGE 7 - LAST STAGE, AND IT IS MANDATORY - WRITE BACK THE KNOWLEDGE
+====================================================================
+
+* Update {KNOWLEDGE_FILE} with everything this run learned, from the first
+  command to the last. This stage is not optional and it is not a summary of the
+  findings - it is a rewrite of the operating knowledge of these sites.
+* Update all four of its sections:
+  * What APIs they have - any endpoint discovered, retired, moved, or renamed.
+  * How you use them - any change to auth, rate limits, credits, headers, the
+    shape of the response, or the gotchas. If an endpoint that used to be open
+    now demands a key, that is the single most important thing you can record.
+  * What we got so far - the pulls made in this run, the dates, the counts, and
+    where the raw responses landed.
+  * What we did NOT get - the new holes, and cross off the old ones you closed.
+* Record the negatives as carefully as the positives. A source that returned 403,
+  a CLI that would not install, an endpoint that has quietly gone away - the next
+  run needs those more than it needs another success story.
+* Stamp every entry with the UTC date it was checked. A statement about an API
+  with no date on it is worthless six months later.
+* Then output to stdout:
+  ------------------------------------------------------------------
+  STAGE 7 COMPLETE - knowledge.mdx updated
+    endpoints added/changed: ...
+    pulls landed: ...
+    new gaps recorded: ...
+    gaps closed: ...
+  ------------------------------------------------------------------
+* Finally run: cd {ROOT_DIR}site && npm run build
+  Do not declare the run finished until the build passes.
+```
