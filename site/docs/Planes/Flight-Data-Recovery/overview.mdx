@@ -61,7 +61,31 @@ whichever aircraft is in the URL. When the identical script was pointed at five 
 having nothing whatever to do with this case — a Ryanair 737, a Lufthansa A380, a Delta Connection
 CRJ, an American A320, and Nike's corporate Gulfstream — **all five came back 403 as well.**
 
-Then the same pages were opened in an ordinary browser, where Cloudflare's robot check is satisfied:
+A second, wider control run on **24 August 2026** closed the question. The same script was pointed at
+all thirteen case tails, at seven further unrelated aircraft — `N628TS`, `G-EUUU`, `VH-OQA`, `N509AY`,
+`D-AIBA`, `N1`, `EI-DYY` — and then at two URLs that are not an aircraft page at all:
+
+| Probed | HTTP |
+|---|---|
+| `flightradar24.com/data/aircraft/n102dz` | **403** |
+| The other case tails — su-btt, su-bnd, su-btu, su-btv, su-bgm, n888kg, n40jd, n560tw, n582mm, n872ra, n1098l, t7-ell | **403**, every one |
+| The seven unrelated control aircraft | **403**, every one |
+| `https://www.flightradar24.com/` — **FlightRadar24's own home page** | **403** |
+| `https://www.flightradar24.com/data/aircraft` — the aircraft index | **403** |
+
+Every one of those responses carries the same body, about **5,877 bytes**. **FlightRadar24 returns
+403 to a script for its entire site, including its own front page.** A response that is
+byte-identical for the front page cannot distinguish a removed record from a present one. **By
+script, the removal question is not answered badly — it is UNTESTABLE. The method cannot see it.**
+
+That is the correction underneath the correction, and it deserves to be said on its own: **this page
+reported the N102DZ removal more strongly than the evidence supported, and what caught it was a
+control test** — asking an unrelated aircraft, and then a home page, the same question. No argument
+about anybody's motives was involved, and none was needed.
+
+Testing the question properly needs a real browser session, which is Pass 4, `browser_capture/`.
+That pass has since been run. The same pages were opened in an ordinary browser, where Cloudflare's
+robot check is satisfied:
 
 | Asked how | N102DZ | The 15 other aircraft here | 4 unrelated control aircraft |
 |---|---|---|---|
@@ -89,14 +113,20 @@ and in `page_control_probe.json`, and the method is set out on
 
 | What | Status | What it actually is |
 |---|---|---|
-| **N102DZ's FlightRadar24 page** | **NOT a removal — retracted above** | The page loads in a browser, HTTP 200. The 403 was a robot block that hit four unrelated control aircraft identically. The empty table is FR24's seven-day free-tier limit. |
-| **The adsb.lol 12 Oct – 15 Dec 2025 band** | **NOT a removal** | The live API returns 403 for **every aircraft**, including airframes with no connection to this case. The same days are published in full as public backup files. |
-| **adsb.lol having no 2026 data** | **NOT a removal** | Archive-wide retention. An unrelated Ryanair and an unrelated Lufthansa airframe return 404 identically. |
+| **N102DZ's FlightRadar24 page**, asked by script | **UNTESTED — the method cannot see it** | FR24 returns 403 to a script for its **own home page**, its aircraft index, and seven unrelated control aircraft, with the same ~5,877-byte body every time. That 403 is bot protection. **It can neither confirm nor refute a removal, and this page previously read it as though it could.** |
+| **N102DZ's FlightRadar24 page**, asked by browser | **NOT a removal** | Opened in a real logged-out browser on 24 Aug 2026 the page returns **HTTP 200** with its identity block intact, as do all fifteen other case aircraft and all four browser controls. The empty table is FR24's seven-day free-tier limit. |
+| **The adsb.lol 403 band, from 12 Oct 2025** | **NOT a removal** | The archive returns 403 for **every aircraft**, controls included, beginning exactly at 2025-10-12. The same days are published in full as public backup files. |
+| **The adsb.lol 404 stretch, to about 1 Aug 2026** | **NOT a removal** | Archive-wide. Every unrelated control airframe 404s identically across the same seven months, and normal service resumes about 2 Aug 2026. |
 | **Erika Kirk's own itinerary** | **Still absent, and no archive fixes it** | Not a tracking-site question at all. No dated list of her locations has ever been published, so there is nothing for a backup to restore. |
 
-**All three of the tracking-data "erasures" were tested against control aircraft chosen precisely
-because they have nothing to do with this case, and all three failed the same way the controls did.**
+**Every one of the tracking-data "erasures" was tested against control aircraft chosen precisely
+because they have nothing to do with this case, and every one failed the same way the controls did.**
 That is what tells you it is the archive, or the paywall, or the bot filter — and not the airframe.
+
+**Read the first two rows together, because the difference between them is the whole method.** One
+says our tooling is blind to the question; the other says that when a tool that *can* see the
+question is used, the answer is that nothing was removed. Those are two different statements and
+collapsing them is exactly the mistake this page made the first time.
 
 The one thing on the list that genuinely has not been recovered is the last row, and it is the one no
 amount of ADS-B work can touch: an aircraft track never establishes who was aboard.
@@ -167,6 +197,49 @@ different and much narrower statement — the same split this investigation's ow
 A track showing SU-BTT at Wichita says nothing about where anybody named Kirk was that day. Every
 row, with the recovered position and the distance attached, is on
 **[Overlap Recovery](/Planes/Flight-Data-Recovery/Overlap-Recovery)**.
+
+### The complete run: all 85 rows, verdict by verdict
+
+The pass above tested 69 (aircraft, date) pairs. The register has since been checked in full —
+**every one of the 85 rows of `following/overlaps.csv`**, against both free archives on the claimed
+date and the day either side, resolving each position to the nearest airport in the public-domain
+OurAirports gazetteer with a **15 km** radius. This is the fuller and stricter run, and it is the one
+to quote.
+
+| Verdict | Rows | What it means |
+|---|---|---|
+| **AT_CLAIMED_AIRPORT** | **24** | The claimed aircraft really was at the claimed field. |
+| **ELSEWHERE** | **12** | Tracked that day, and somewhere else. **Refuted.** |
+| NOT_HEARD | 22 | The archive covers the date; no trace for that airframe. **Not a refutation.** |
+| NO_ARCHIVE_COVERAGE | 20 | No free archive reaches the date. Says nothing either way. |
+| NO_TAIL_CLAIMED | 2 | The source row names no aircraft. |
+| NO_DATE_CLAIMED | 5 | The five `UNPUB-` rows. Uncheckable by anyone, including their author. |
+
+**Of the 36 rows that could be decided, 24 are corroborated and 12 refuted.** Published audits of
+this spreadsheet said roughly two rows in three were wrong. Against primary position data it is the
+other way round — and this is the first time the sheet has been tested against position data rather
+than against somebody else's reading of a website.
+
+**Now the limit, and it is as important as the number. AT_CLAIMED_AIRPORT confirms the *aircraft*
+half of the pairing. It does not put a Kirk anywhere.** An overlap needs both halves. The Kirk half
+is unchanged by any of this work: thin for Charlie, and close to empty for Erika, whose flight logs
+are reported erased — see [Erika Flight Logs Erased](/Planes/Erika-Flight-Logs-Erased). **A confirmed
+aircraft must never be reported as a confirmed overlap.**
+
+Note also what the middle two rows are not. **NOT_HEARD and NO_ARCHIVE_COVERAGE refute nothing.** An
+archive that heard nothing is an archive that heard nothing; only ELSEWHERE refutes a row. The
+counts themselves — 73, ~23, 72, 70+, 68, 29 — remain disputed and unreconciled, and nothing here
+averages them.
+
+The per-row verdicts, each with its own page, are under
+**[Overlaps](/Planes/following/overlap/overview)**. The raw extract is
+`site/docs/Planes/following/apis/public_open_source/data/overlap_verification/overlap_verification.json`.
+
+**The counterargument, stated in the same breath.** Duncan Aviation holds Egyptian Air Force
+maintenance work and has plants at Lincoln and at Provo, which is an ordinary and sufficient reason
+for an Egyptian-registered jet to sit at either field. A confirmed landing is consistent with
+shadowing and equally consistent with a scheduled airframe visit to a maintenance shop, and this
+data cannot separate the two.
 
 ## N102DZ, question by question
 
@@ -241,6 +314,141 @@ data rather than out of an argument.
 
 **A recovered record that only ever confirmed what we already believed would be a reason to distrust
 the recovery.** This one did not.
+
+## The strongest-looking removal in the dataset, and how it dissolved
+
+Everything above is about a claim other people made. This section is about the best removal candidate
+**this page found on its own** — and it did not survive either.
+
+The Internet Archive holds **fourteen FlightRadar24 captures of the
+[N888KG](/Planes/N888KG/overview) page**. Read as a sequence they look like a record being pulled:
+
+| Snapshot (UTC) | Bytes | Flight-history table |
+|---|---|---|
+| 11 Sep 2025 06:14 | 63,886 | **POPULATED** |
+| 11 Sep 2025 09:28 | 63,886 | **POPULATED** |
+| 11 Sep 2025 21:51 | 63,886 | **POPULATED** |
+| 12 Sep 2025 16:30 | 63,886 | **POPULATED** |
+| 13 Sep 2025 00:05 | 63,886 | **POPULATED** |
+| 18 Sep 2025 04:08 | 56,647 | empty |
+| 18 Sep 2025 13:27 | 56,647 | empty |
+| 18 Sep 2025 15:26 | 56,661 | empty |
+| 18 Sep 2025 19:23 | 56,647 | empty |
+| 19 Sep 2025 06:02 | 56,647 | empty |
+| 20 Sep 2025 14:46 | 56,647 | empty |
+| 2 Nov 2025 17:45 | 57,088 | empty |
+| 28 Jan 2026 22:06 | 57,102 | empty |
+
+Same URL, same site, **every capture HTTP 200**, and the page gets 7,239 bytes lighter exactly once —
+between 13 and 18 September 2025, the week after the assassination. That is as close to a documented
+scrub as anything in this investigation has looked.
+
+**It is not one.** The empty captures say why, in FlightRadar24's own words, printed where the table
+used to be:
+
+> *"Sorry, but we could not find data for specified flight. **More than 7 days of N888KG history is
+> available with an upgrade to a Silver (90 days), Gold (1 year), or Business (3 years)
+> subscription.**"*
+
+**It is the free tier's seven-day history window, and nothing else.** The 10 September 2025 flight
+was visible on 11, 12 and 13 September because it was still inside seven days. By 18 September it had
+rolled out of the window. Every FR24 capture we hold of this aircraft is consistent with that window
+and inconsistent with nothing. The two rows always present in the populated captures are the same two
+rows; the byte drop is the table markup going away, not a record going away.
+
+**We are publishing this because it is the strongest material we had and we lost it.** A page that
+only ever reports the findings that survive is a page you should not believe. The captures are on
+disk under `site/docs/Planes/N888KG/data/recovered/`, with the snapshot timestamp in every filename,
+so a reader can check that the paywall sentence really is in the empty ones.
+
+**Do not merge this with the Wendover thread.** The N888KG departure from Wendover is a separate
+claim about a separate question, and nothing here bears on it.
+
+## 153 flight legs were on disk the whole time, recorded as zero
+
+This is a correction to our own tooling rather than to a claim, and it changes what several other
+pages rest on.
+
+The earlier harness wrote `flight_rows_recovered: 0` into twenty FlightRadar24 sidecars and `null`
+into nineteen FlightAware ones. **Both numbers were wrong.** The FlightRadar24 parser was matching a
+row shape those pages do not use, and the FlightAware captures were never parsed at all. The archived
+HTML had been downloaded correctly and saved correctly; nothing read it.
+
+`code/extract_wayback_flights.py` re-extracts all of it and rewrites the sidecars:
+
+| Source | Files | Rows recovered |
+|---|---|---|
+| FlightRadar24 (server-rendered `data-row` table) | 20 | **44** |
+| FlightAware (legacy pre-2017 tables) | 22 | **109** |
+| **Total** | **42** | **153** |
+
+**A zero in a provenance record reads as an absence of evidence. Here it was an absence of parsing.**
+Anything on this site that rested on those zeros has to be re-read, and that is a bigger correction
+than it sounds, because a zero is exactly the shape a scrub is supposed to leave.
+
+Six modern FlightAware captures really are empty, and they are now labelled honestly. They are a
+JavaScript shell — about 458 KB of page chrome around a `trackpollBootstrap` blob with no
+server-rendered rows — and they carry the state
+`JAVASCRIPT_SHELL_NO_SERVER_RENDERED_ROWS` rather than "0 rows". Nine FR24 captures are the
+seven-day-window empties described in the section above.
+
+What came back out:
+
+| Aircraft | Snapshot | What the archived page held |
+|---|---|---|
+| [SU-BND](/Planes/SU-BND/overview) | FR24, 12 Oct 2025 | **7 legs, 5–12 Oct 2025** — including **Sharm el-Sheikh (SSH) → Giza/Sphinx (SPX) → Cairo on 5 Oct** and **Cairo → Jeddah on 7 Oct**. |
+| [SU-BND](/Planes/SU-BND/overview) | FR24, 18 Nov 2025 | 4 legs, Cairo ↔ Antalya, all on 13 Nov 2025. |
+| [SU-BTU](/Planes/SU-BTU/overview) | FR24, 31 Aug 2022 | 4 legs on 26 and 28 Aug 2022 — Cairo, and El Alamein (DBB). |
+| [SU-BGM](/Planes/SU-BGM/overview) | FR24, 7 May 2020 | 6 legs, including **Cairo → Paris Le Bourget on 3 May 2020** and **Goose Bay → St. Louis → Alton on 4 May 2020**. |
+| [N560TW](/Planes/N560TW/overview) | FlightAware, 29 Nov 2016 | 9 legs across **KSDL, KPVU, KSLC, KELP, KTUS and MMSD**. |
+
+Two of those are worth a sentence each, in opposite directions.
+
+**The SU-BND October 2025 legs came off a page that today returns 403 to a script** — recovered
+content, from the same FR24 that our scripted method cannot see at all. They are the first published
+flight legs this repo holds that name **Sharm el-Sheikh** for a fleet aircraft, and they are for
+SU-BND on 5 October, which is a *different aircraft on a different date* from the SU-BTT tarmac
+claim of 13 October discussed further down. **They do not corroborate that claim and must not be
+cited as though they did.**
+
+**The SU-BGM May 2020 legs and the N560TW 2016 legs both cut against novelty.** Cairo → Le Bourget →
+Goose Bay → St. Louis is the same routing shape the 2022–2025 legs use, flown five years before this
+case existed. And N560TW was flying **Scottsdale–Provo–Salt Lake City in November 2016** — nine years
+before the Scottsdale → Provo leg attributed to that tail on 10 September 2025. A pattern that
+predates the thing it is supposed to explain is a weaker pattern, and that is the honest reading.
+
+## The Internet Archive, re-queried properly
+
+The first Wayback survey on this site was run with `collapse=digest`. That makes every count a
+**distinct-content floor rather than a total**, and it makes the one test that matters — *did this
+page stop changing?* — impossible by construction. Three of the queries had also failed outright with
+**HTTP 504** and were written down as `"snapshots": 0`.
+
+**One of those three was `globe.adsbexchange.com/?icao=0101d3`, which is
+[SU-BTT](/Planes/SU-BTT/overview)** — the most load-bearing aircraft in the case, recorded as never
+archived because a query timed out.
+
+Re-run without collapse and with retries on 24 August 2026: **30 of 30 queries succeeded, 0 failed.**
+
+* **SU-BTT's ADS-B Exchange page has 3 snapshots**, 1 September to 17 December 2022. The earlier
+  "never archived" was a failed query, not an absence. **A page this site described as unarchived was
+  archived; we simply had not asked successfully.**
+* **19 snapshots across 9 URLs. 21 URLs were genuinely never archived** — the query succeeded and came
+  back empty. **Absence of archival interest is not suppression.** Nobody ever asked the Archive to
+  crawl those pages, and there is no mechanism by which not crawling a page is somebody removing it.
+* **Every CDX row on every URL is `statuscode=200`. There is no 200→404 transition anywhere in this
+  dataset.** Any page on this site claiming one is wrong.
+* **SU-BTT has zero archived snapshots on FlightRadar24, FlightAware, RadarBox and Planespotters.**
+  The one aircraft the case turns on is the one with almost no page archive at all. That is a gap in
+  what we can check, not a finding about anybody's conduct.
+* **The ADS-B Exchange globe snapshots are empty JavaScript shells, and must not be cited as
+  evidence.** Digest `AJQHJML54QE6X2IE4TMCM24E3DPGKFD6` is byte-identical across **SU-BGM, SU-BTV and
+  SU-BTU**, and `U743ARQOTM724WNPQLSMSX7TSTHW3FYE` across **SU-BND and T7-ELL**. Identical bytes for
+  different ICAO hex codes means the Archive captured the application frame, not any aircraft's data.
+
+The report is at
+`site/docs/Planes/following/apis/public_open_source/data/wayback/cdx_report.json`, and every pull
+keeps its predecessor beside it with the retrieval timestamp in the filename.
 
 ## The gaps that turned out to be retention, not removal
 
