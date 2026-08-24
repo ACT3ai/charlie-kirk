@@ -1,0 +1,31 @@
+{
+  "retrieved_utc": "2026-08-24T16:29:36.628Z",
+  "source": "adsb-lol",
+  "source_role": "the archive this investigation already used",
+  "url": "https://adsb.lol/globe_history/2025/09/15/traces/3e/trace_full_01003e.json",
+  "http_status": 200,
+  "bytes": 556820,
+  "tail": "SU-BND",
+  "hex": "01003e",
+  "utc_date": "2025-09-15",
+  "summary": {
+    "registration": "SU-BND",
+    "type": "GLF4",
+    "icao": "01003e",
+    "points": 2807,
+    "first_seen_utc": "2025-09-15T08:13:17.320Z",
+    "first_pos": [
+      48.965436,
+      2.445343
+    ],
+    "first_on_ground": true,
+    "last_seen_utc": "2025-09-15T12:14:33.140Z",
+    "last_pos": [
+      29.898605,
+      30.98546
+    ],
+    "last_on_ground": false,
+    "wheels_up_utc": "2025-09-15T08:18:18.510Z",
+    "wheels_down_utc": null
+  }
+}
