@@ -1,0 +1,28 @@
+{
+  "retrieved_utc": "2026-08-24T16:33:32.437Z",
+  "source": "adsbexchange-samples",
+  "source_role": "BACKUP ARCHIVE — ADSBX free monthly sample, reaches back to 2016; the only free source covering the 2022 dates the daily archives do not hold",
+  "url": "https://samples.adsbexchange.com/traces/2026/03/01/d0/trace_full_0101d0.json",
+  "http_status": 200,
+  "bytes": 5603,
+  "tail": "SU-BTU",
+  "hex": "0101d0",
+  "utc_date": "2026-03-01",
+  "summary": {
+    "registration": "SU-BTU",
+    "type": "FA7X",
+    "points": 32,
+    "first_seen_utc": "2026-03-01T09:17:48.870Z",
+    "first_pos": [
+      30.154999,
+      31.44244
+    ],
+    "first_on_ground": false,
+    "last_seen_utc": "2026-03-01T09:24:55.940Z",
+    "last_pos": [
+      29.406816,
+      31.627
+    ],
+    "last_on_ground": false
+  }
+}

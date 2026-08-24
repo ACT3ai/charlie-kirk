@@ -1,0 +1,28 @@
+{
+  "retrieved_utc": "2026-08-24T16:33:32.437Z",
+  "source": "adsbexchange-samples",
+  "source_role": "BACKUP ARCHIVE — ADSBX free monthly sample, reaches back to 2016; the only free source covering the 2022 dates the daily archives do not hold",
+  "url": "https://samples.adsbexchange.com/traces/2026/07/01/3e/trace_full_01003e.json",
+  "http_status": 200,
+  "bytes": 110551,
+  "tail": "SU-BND",
+  "hex": "01003e",
+  "utc_date": "2026-07-01",
+  "summary": {
+    "registration": "SU-BND",
+    "type": "GLF4",
+    "points": 671,
+    "first_seen_utc": "2026-07-01T06:48:07.540Z",
+    "first_pos": [
+      30.086254,
+      31.357175
+    ],
+    "first_on_ground": true,
+    "last_seen_utc": "2026-07-01T09:22:54.570Z",
+    "last_pos": [
+      29.94548,
+      31.356973
+    ],
+    "last_on_ground": false
+  }
+}

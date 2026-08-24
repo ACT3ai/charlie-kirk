@@ -1,0 +1,28 @@
+{
+  "retrieved_utc": "2026-08-24T16:33:32.437Z",
+  "source": "adsbexchange-samples",
+  "source_role": "BACKUP ARCHIVE — ADSBX free monthly sample, reaches back to 2016; the only free source covering the 2022 dates the daily archives do not hold",
+  "url": "https://samples.adsbexchange.com/traces/2022/10/01/d1/trace_full_0101d1.json",
+  "http_status": 200,
+  "bytes": 46497,
+  "tail": "SU-BTV",
+  "hex": "0101d1",
+  "utc_date": "2022-10-01",
+  "summary": {
+    "registration": "SU-BTV",
+    "type": "FA7X",
+    "points": 269,
+    "first_seen_utc": "2022-10-01T15:20:51.370Z",
+    "first_pos": [
+      30.102074,
+      31.35954
+    ],
+    "first_on_ground": false,
+    "last_seen_utc": "2022-10-01T16:21:10.640Z",
+    "last_pos": [
+      30.060828,
+      31.359265
+    ],
+    "last_on_ground": false
+  }
+}

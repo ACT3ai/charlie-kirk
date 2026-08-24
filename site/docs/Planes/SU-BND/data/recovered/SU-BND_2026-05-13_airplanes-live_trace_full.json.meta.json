@@ -1,0 +1,31 @@
+{
+  "retrieved_utc": "2026-08-24T16:29:36.628Z",
+  "source": "airplanes-live",
+  "source_role": "BACKUP ARCHIVE — independent volunteer network",
+  "url": "https://globe.airplanes.live/globe_history/2026/05/13/traces/3e/trace_full_01003e.json",
+  "http_status": 200,
+  "bytes": 5717,
+  "tail": "SU-BND",
+  "hex": "01003e",
+  "utc_date": "2026-05-13",
+  "summary": {
+    "registration": "SU-BND",
+    "type": "GLF4",
+    "icao": "01003e",
+    "points": 42,
+    "first_seen_utc": "2026-05-13T23:12:54.180Z",
+    "first_pos": [
+      40.229676,
+      -111.727539
+    ],
+    "first_on_ground": true,
+    "last_seen_utc": "2026-05-13T23:59:05.070Z",
+    "last_pos": [
+      40.229676,
+      -111.727539
+    ],
+    "last_on_ground": true,
+    "wheels_up_utc": null,
+    "wheels_down_utc": null
+  }
+}
