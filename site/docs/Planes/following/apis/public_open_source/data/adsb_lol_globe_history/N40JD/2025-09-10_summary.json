@@ -1,0 +1,43 @@
+{
+  "icao": "a4ab14",
+  "registration": "N40JD",
+  "type": "PRM1",
+  "description": "RAYTHEON 390 Premier 1",
+  "db_flags": 0,
+  "day": "2025-09-10",
+  "points": 1307,
+  "first_seen_utc": "2025-09-10T19:09:20.530Z",
+  "last_seen_utc": "2025-09-10T22:28:20.820Z",
+  "first_position": {
+    "lat": 33.622673,
+    "lon": -111.908938,
+    "alt": "ground"
+  },
+  "last_position": {
+    "lat": 33.622112,
+    "lon": -111.909317,
+    "alt": "ground"
+  },
+  "ground_segments": [
+    {
+      "from": "2025-09-10T19:09:20.530Z",
+      "to": "2025-09-10T19:27:17.370Z",
+      "lat": 33.622673,
+      "lon": -111.908938
+    },
+    {
+      "from": "2025-09-10T20:29:15.120Z",
+      "to": "2025-09-10T21:12:22.760Z",
+      "lat": 40.226852,
+      "lon": -111.729477
+    },
+    {
+      "from": "2025-09-10T22:26:47.710Z",
+      "to": null,
+      "lat": 33.624413,
+      "lon": -111.90877
+    }
+  ],
+  "source_url": "https://adsb.lol/globe_history/2025/09/10/traces/14/trace_full_a4ab14.json",
+  "retrieved_utc": "2026-08-24T15:55:28.233Z"
+}

@@ -1,0 +1,43 @@
+{
+  "icao": "a728a8",
+  "registration": "N560TW",
+  "type": "C56X",
+  "description": "CESSNA 560XL Citation XLS",
+  "db_flags": 0,
+  "day": "2025-09-13",
+  "points": 1741,
+  "first_seen_utc": "2025-09-13T13:04:47.180Z",
+  "last_seen_utc": "2025-09-13T17:47:34.840Z",
+  "first_position": {
+    "lat": 33.622341,
+    "lon": -111.909401,
+    "alt": "ground"
+  },
+  "last_position": {
+    "lat": 33.622377,
+    "lon": -111.90917,
+    "alt": "ground"
+  },
+  "ground_segments": [
+    {
+      "from": "2025-09-13T13:04:47.180Z",
+      "to": "2025-09-13T13:17:49.180Z",
+      "lat": 33.622341,
+      "lon": -111.909401
+    },
+    {
+      "from": "2025-09-13T15:11:01.760Z",
+      "to": "2025-09-13T15:48:00.410Z",
+      "lat": 45.778873,
+      "lon": -111.153656
+    },
+    {
+      "from": "2025-09-13T17:44:57.560Z",
+      "to": null,
+      "lat": 33.622982,
+      "lon": -111.910443
+    }
+  ],
+  "source_url": "https://adsb.lol/globe_history/2025/09/13/traces/a8/trace_full_a728a8.json",
+  "retrieved_utc": "2026-08-24T15:56:11.871Z"
+}

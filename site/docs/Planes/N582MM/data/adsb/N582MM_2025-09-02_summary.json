@@ -1,0 +1,31 @@
+{
+  "icao": "a77e75",
+  "registration": "N582MM",
+  "type": "LJ60",
+  "description": "LEARJET 60",
+  "db_flags": 0,
+  "day": "2025-09-02",
+  "points": 382,
+  "first_seen_utc": "2025-09-02T23:12:12.650Z",
+  "last_seen_utc": "2025-09-02T23:59:58.250Z",
+  "first_position": {
+    "lat": 33.620829,
+    "lon": -111.915951,
+    "alt": "ground"
+  },
+  "last_position": {
+    "lat": 36.578293,
+    "lon": -106.623058,
+    "alt": 41000
+  },
+  "ground_segments": [
+    {
+      "from": "2025-09-02T23:12:12.650Z",
+      "to": "2025-09-02T23:15:16.340Z",
+      "lat": 33.620829,
+      "lon": -111.915951
+    }
+  ],
+  "source_url": "https://adsb.lol/globe_history/2025/09/02/traces/75/trace_full_a77e75.json",
+  "retrieved_utc": "2026-08-24T15:56:16.516Z"
+}
