@@ -1,0 +1,31 @@
+{
+  "icao": "abff3c",
+  "registration": "N872RA",
+  "type": "BE40",
+  "description": "BEECH 400 Beechjet",
+  "db_flags": 0,
+  "day": "2025-09-06",
+  "points": 1863,
+  "first_seen_utc": "2025-09-06T00:00:09.300Z",
+  "last_seen_utc": "2025-09-06T19:59:43.010Z",
+  "first_position": {
+    "lat": 34.798636,
+    "lon": -114.435024,
+    "alt": 39000
+  },
+  "last_position": {
+    "lat": 36.073654,
+    "lon": -115.125275,
+    "alt": 2025
+  },
+  "ground_segments": [
+    {
+      "from": "2025-09-06T14:52:10.790Z",
+      "to": "2025-09-06T16:27:47.880Z",
+      "lat": 43.74955,
+      "lon": -111.087953
+    }
+  ],
+  "source_url": "https://adsb.lol/globe_history/2025/09/06/traces/3c/trace_full_abff3c.json",
+  "retrieved_utc": "2026-08-24T15:57:16.134Z"
+}
