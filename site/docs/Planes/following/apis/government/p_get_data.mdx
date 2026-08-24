@@ -1,0 +1,163 @@
+```
+ROOT_DIR dir is ~/BGit/Bryan_git/charlie-kirk/
+SITE_DOCS dir is {ROOT_DIR}site/docs/
+FOLLOWING_DIR dir is {SITE_DOCS}Planes/following/
+APIS_DIR dir is {FOLLOWING_DIR}apis/
+THIS_DIR dir is {APIS_DIR}government/
+KNOWLEDGE_FILE is file {THIS_DIR}knowledge.mdx
+CODE_DIR dir is {THIS_DIR}code/
+DATA_DIR dir is {THIS_DIR}data/
+REQUESTS_DIR dir is {THIS_DIR}requests/
+OPEN_KNOWLEDGE is file {APIS_DIR}public_open_source/knowledge.mdx
+APIS_CLAUDE is file {APIS_DIR}CLAUDE.md
+FOLLOWING_CLAUDE is file {FOLLOWING_DIR}CLAUDE.md
+FLEET_FILE is file {APIS_DIR}public_open_source/code/lib/fleet.js
+AIRPORTS_CSV is file {FOLLOWING_DIR}airports.csv
+FLIGHTS_CSV is file {FOLLOWING_DIR}flights.csv
+SOURCES_CSV is file {FOLLOWING_DIR}sources.csv
+PLANES_DIR dir is {SITE_DOCS}Planes/
+CK_FILE is file {ROOT_DIR}Charlie_Kirk.txt
+
+This is the PASS 3 prompt. Pass 3 is government and public-record sources.
+
+THIS IS THE PASS THAT PRODUCES RECORDS RATHER THAN READINGS. Everything in
+Passes 1 and 2 is somebody's receiver hearing a transponder. A landing-fee
+invoice, an FBO fuel ticket, a customs entry, an airport badge log, or an FAA
+registry entry is a RECORD - and a record outranks every reading on this site.
+It is also the slowest pass. Start the requests early; they take weeks.
+
+
+====================================================================
+STAGE 0 - READ THE KNOWLEDGE FIRST. NEVER SKIP THIS STAGE.
+====================================================================
+
+* Read {KNOWLEDGE_FILE} in full before doing anything else. It holds which
+  datasets exist and where, which requests are already filed, their tracking
+  numbers, what came back, what was refused and under which exemption, and what
+  is still outstanding. A duplicate records request wastes a month.
+* Read {OPEN_KNOWLEDGE} so you know which dates the free ADS-B data already
+  establishes. A records request that names a specific date and a specific
+  aircraft gets answered. A fishing request gets refused.
+* The "What we did NOT get" section is the work list, and here it is also the
+  DOCKET - anything outstanding needs chasing.
+* Then read {APIS_CLAUDE}, {FOLLOWING_CLAUDE}, {FLEET_FILE}, {AIRPORTS_CSV}, and
+  {CK_FILE}. {CK_FILE} is read-only to AI. Never write to it.
+* Output to stdout:
+  "STAGE 0 COMPLETE - knowledge loaded, N requests outstanding, M datasets known"
+
+
+====================================================================
+STAGE 1 - PULL THE DATASETS THAT NEED NO REQUEST AT ALL
+====================================================================
+
+* Some of this is a straight download and should be done before any letter is
+  written. Use the clients in {CODE_DIR}.
+* The FAA releasable aircraft registry, the FAA airport and facility data, and
+  the public-domain airport datasets all answer ownership and facility questions
+  outright, for free, in the public domain, with no request needed.
+* Government data is public domain. It may be republished IN FULL, and it should
+  be. This is the only pass where mirroring the payload onto the site is the
+  right thing to do.
+* Land raw downloads in {DATA_DIR}<agency>/ with a .meta.json beside each.
+
+
+====================================================================
+STAGE 2 - WORK OUT WHO ACTUALLY HOLDS THE RECORD
+====================================================================
+
+* Match the question to the custodian before writing anything. Getting this wrong
+  is the single commonest reason a request comes back empty.
+  * Aircraft ownership and airworthiness - the federal aviation registry.
+  * Air traffic handling, flight strips, radar data - the federal air traffic
+    agency, via federal FOIA.
+  * Customs and immigration processing of an international arrival - the federal
+    border agency, via federal FOIA. NOTE, and this matters in this case: US
+    customs processing for the Provo arrivals happened at the ENTRY airport, not
+    at Provo. Address the request to where the entry actually occurred.
+  * Landing fees, fuel tickets, ramp assignments, badge access, hangar rental -
+    THE AIRPORT ITSELF. Most of the fields in this case are city-owned or run by
+    a public airport authority, which means STATE PUBLIC-RECORDS LAW, not
+    federal FOIA. State law is usually faster and cheaper than FOIA.
+  * Diplomatic clearance for a foreign state aircraft - the federal foreign
+    affairs department.
+* Read {AIRPORTS_CSV} to see which fields are in play and what class each is.
+  For every airport, establish and record in {KNOWLEDGE_FILE}: the owning body,
+  whether it is a public entity, which statute governs, the address for requests,
+  the statutory response deadline, and the fee schedule.
+
+
+====================================================================
+STAGE 3 - WRITE THE REQUEST SO IT CANNOT BE REFUSED FOR VAGUENESS
+====================================================================
+
+* One request per custodian per subject. Save the text as
+  {REQUESTS_DIR}<YYYY-MM-DD>_<agency>_<subject>.md before it is sent.
+* A request that gets answered names: the exact date range, the exact aircraft
+  by registration AND by ICAO hex, the exact record types wanted, and the format
+  wanted. Cite the free ADS-B trace as the basis - it shows you are asking about
+  a specific event, not fishing.
+* Ask for records, not for conclusions. Never ask an agency what it thinks.
+* State a fee cap and ask for a fee waiver where the public-interest basis is
+  real. Ask for a determination in the statutory period.
+* Keep it narrow. A narrow request that succeeds beats a broad one that is
+  refused as unduly burdensome.
+* NEVER name a living private individual as a suspect in a request. Ask for
+  records about an AIRCRAFT and a DATE, not about a person.
+
+
+====================================================================
+STAGE 4 - TRACK EVERY REQUEST AS A DOCKET
+====================================================================
+
+* Record in {KNOWLEDGE_FILE}, per request: date sent, custodian, subject,
+  tracking number, statutory due date, and current status - sent, acknowledged,
+  fee estimate received, partially released, refused, appealed, or silent.
+* SILENCE IS A RESULT. An agency that misses its statutory deadline has produced
+  a finding, and the missed deadline gets published with the dates.
+* A refusal gets published with the exemption cited, verbatim. So does a fee
+  estimate that is plainly designed to end the request.
+* Save every response as received into {DATA_DIR}<agency>/ - the letter, the
+  attachments, and the envelope metadata. Do not summarise away the original.
+
+
+====================================================================
+STAGE 5 - PROMOTE, AND RANK IT ABOVE EVERYTHING ELSE
+====================================================================
+
+* A record obtained here goes into {FLIGHTS_CSV} and {SOURCES_CSV} with
+  evidence_class facility_record - and facility_record OUTRANKS every ADS-B
+  reading and every X post on this site.
+* Where a record CONTRADICTS a tracker's claim, the record wins and the
+  disagreement gets written down on the page, with both versions and both
+  sources. Never quietly drop the losing version.
+* Where a record CONFIRMS a tracker's claim, say that plainly too. This
+  investigation is worth more when it publishes the confirmations it did not
+  expect.
+
+
+====================================================================
+STAGE 6 - LAST STAGE, AND IT IS MANDATORY - WRITE BACK THE KNOWLEDGE
+====================================================================
+
+* Update {KNOWLEDGE_FILE} with everything learned this run. All four sections,
+  plus the docket:
+  * What APIs and datasets they have - the download URLs, the file layouts, the
+    refresh schedule, and which questions each can actually answer.
+  * How you use them - the download or the request route, the statute, the
+    deadline, the fee schedule, the address, and the quirks.
+  * What we got so far - datasets downloaded, records released, with dates.
+  * What we did NOT get - refusals with their exemptions, fee walls, wrong
+    custodians we learned about the hard way, and requests still outstanding.
+* Record which custodian was WRONG as carefully as which was right. Knowing that
+  an agency does not hold a record saves the next run a month.
+* Stamp every entry with the date.
+* Output to stdout:
+  ------------------------------------------------------------------
+  STAGE 6 COMPLETE - knowledge.mdx updated
+    datasets downloaded: ...
+    requests sent this run: ...
+    responses received: ...
+    outstanding, with due dates: ...
+  ------------------------------------------------------------------
+* Then run: cd {ROOT_DIR}site && npm run build
+```

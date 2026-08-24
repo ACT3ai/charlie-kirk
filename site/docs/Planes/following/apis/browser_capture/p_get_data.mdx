@@ -1,0 +1,155 @@
+```
+ROOT_DIR dir is ~/BGit/Bryan_git/charlie-kirk/
+SITE_DOCS dir is {ROOT_DIR}site/docs/
+FOLLOWING_DIR dir is {SITE_DOCS}Planes/following/
+APIS_DIR dir is {FOLLOWING_DIR}apis/
+THIS_DIR dir is {APIS_DIR}browser_capture/
+KNOWLEDGE_FILE is file {THIS_DIR}knowledge.mdx
+CODE_DIR dir is {THIS_DIR}code/
+CAPTURES_DIR dir is {THIS_DIR}captures/
+TARGETS_FILE is file {CODE_DIR}targets.json
+OPEN_KNOWLEDGE is file {APIS_DIR}public_open_source/knowledge.mdx
+APIS_CLAUDE is file {APIS_DIR}CLAUDE.md
+FOLLOWING_CLAUDE is file {FOLLOWING_DIR}CLAUDE.md
+FLEET_FILE is file {APIS_DIR}public_open_source/code/lib/fleet.js
+BAN_IMAGES_CSV is file {ROOT_DIR}images/ban_images.csv
+SOURCES_CSV is file {FOLLOWING_DIR}sources.csv
+EVIDENCE_IMG dir is {ROOT_DIR}site/internals/static/img/evidence/
+PLANES_DIR dir is {SITE_DOCS}Planes/
+OVERLAP_DIR dir is {FOLLOWING_DIR}overlap/
+CK_FILE is file {ROOT_DIR}Charlie_Kirk.txt
+
+This is the PASS 4 prompt. Pass 4 is Claude Code driving a real browser at the
+flight-tracking websites, capturing what the public actually sees.
+
+It exists for three jobs no API can do:
+  * Sites with NO public API at all - the map is the only interface.
+  * Proving what a page showed ON A DATE, as a picture, not as a paraphrase.
+  * DOCUMENTING THAT DATA IS GONE. The whole following-planes claim was read off
+    screenshots of tracking sites. If those pages no longer show what the
+    screenshots showed, that is one of the most important facts on this site -
+    in either direction.
+
+
+====================================================================
+STAGE 0 - READ THE KNOWLEDGE FIRST. NEVER SKIP THIS STAGE.
+====================================================================
+
+* Read {KNOWLEDGE_FILE} in full before opening a browser. It records which sites
+  we have captured, which URL patterns work, which need a login, which block
+  automation, which changed their layout, and what we already hold in
+  {CAPTURES_DIR}. Re-capturing something unchanged is wasted effort; re-capturing
+  something to CHECK whether it changed is the entire point - know which you are
+  doing before you start.
+* Read {OPEN_KNOWLEDGE} so a capture can be compared against the primary trace
+  rather than standing alone.
+* The "What we did NOT get" section is the work list.
+* Then read {APIS_CLAUDE}, {FOLLOWING_CLAUDE}, {FLEET_FILE}, {TARGETS_FILE}, and
+  {CK_FILE}. {CK_FILE} is read-only to AI. Never write to it.
+* Output to stdout:
+  "STAGE 0 COMPLETE - knowledge loaded, N targets, M previously captured"
+
+
+====================================================================
+STAGE 1 - DRIVE THE BROWSER
+====================================================================
+
+* Load the browser tools first, then get the current tab context before opening
+  anything. Create a new tab; do not hijack a tab the human is using.
+* Work from {TARGETS_FILE}. One entry per site per aircraft.
+* For each target capture ALL FOUR of these, or the capture does not count:
+  * A screenshot of the rendered page.
+  * The page text.
+  * The URL and the UTC time of capture.
+  * The HTTP status the page returned.
+* Where the page is worth freezing whole, use monolith to write a single
+  self-contained file into {CAPTURES_DIR}. That survives the site changing.
+* NEVER trigger a JavaScript alert, confirm or prompt. A modal dialog blocks
+  every further browser command and the session has to be rescued by hand.
+* Do not log in to anything, do not defeat a paywall, do not click through a
+  terms gate, and do not create an account. If a page requires it, record that
+  the page requires it and stop. That refusal is itself the finding.
+* If a tool call fails two or three times, or the page will not load, stop and
+  say so. Do not loop.
+
+
+====================================================================
+STAGE 2 - CAPTURE THE DISAPPEARANCE, WHICH IS THE POINT
+====================================================================
+
+* For every page a published claim was originally read off, establish and record
+  all three of:
+  * WHAT IT SHOWS NOW - this capture.
+  * WHAT IT SHOWED THEN - the Internet Archive snapshot nearest the claim date,
+    via the wayback client in the public open source pass.
+  * WHETHER THOSE DIFFER - and if so, exactly how.
+* Separate two different things and never blur them:
+  * NEVER SHOWED IT - no evidence the page ever carried this. Not scrubbing.
+  * SHOWED IT AND NO LONGER DOES - a change in the public record, with dates.
+* A site reorganising its URLs looks identical to a site removing an aircraft.
+  SAY WHICH YOU CAN AND CANNOT DISTINGUISH, every single time. A page that
+  claims scrubbing without ruling out a redesign will be taken apart, and it
+  should be.
+
+
+====================================================================
+STAGE 3 - FILE THE CAPTURES
+====================================================================
+
+* Working captures go in {CAPTURES_DIR}<site>/<tail>/<UTC-timestamp>.<ext>,
+  with a .meta.json recording url, http status, UTC time and what was expected.
+* An image that goes ON A PAGE is copied to {EVIDENCE_IMG} named by its sha256
+  and embedded by LOCAL REPO PATH, never by an IPFS gateway URL:
+    img src="/img/evidence/SHA.jpg" data-cid="CID"
+* Images are TRACKED IN GIT. Never gitignore one and never add a per-file image
+  line to the repo .gitignore. An untracked image renders locally and 404s for
+  every real visitor, because the live site is built from the repo.
+* Check {BAN_IMAGES_CSV} before embedding anything. A banned item gets no page,
+  no embed, and no served copy.
+* Per-aircraft captures also go to {PLANES_DIR}<TAIL>/data/, per-overlap
+  captures to {OVERLAP_DIR}<key>/data/.
+* Add a row to {SOURCES_CSV} for each captured page, with the UTC capture time
+  in the reliability_note.
+
+
+====================================================================
+STAGE 4 - WHAT MAY BE SAID ABOUT A SCREENSHOT
+====================================================================
+
+* A screenshot proves what a page displayed at a time. It proves nothing about
+  whether the page was right.
+* Always caption with the URL and the UTC capture time, on the page itself.
+* Never crop in a way that changes the meaning, and never annotate an image so
+  that the annotation could be mistaken for part of the original.
+* A third-party site's screenshot is captured for evidentiary purposes. Do not
+  republish more of someone's page than the point requires.
+* Every page built from captures carries its counterargument, like every other
+  page here.
+
+
+====================================================================
+STAGE 5 - LAST STAGE, AND IT IS MANDATORY - WRITE BACK THE KNOWLEDGE
+====================================================================
+
+* Update {KNOWLEDGE_FILE} with everything learned this run:
+  * What APIs they have - for this pass, read it as: which sites have a usable
+    public URL pattern, which have none, and which have an undocumented endpoint
+    the page itself calls.
+  * How you use them - the URL patterns that work, what needs a login, what
+    blocks automation, what the layout looks like now, and the traps.
+  * What we got so far - every capture, with its UTC time and where it landed.
+  * What we did NOT get - sites that refused, blocked, demanded a login, or
+    changed so much the old capture cannot be compared.
+* Record layout changes explicitly. "The aircraft history table moved and now
+  shows fewer rows" is exactly the kind of thing that is invisible six months
+  later and decisive in an argument.
+* Stamp every entry with the UTC date.
+* Output to stdout:
+  ------------------------------------------------------------------
+  STAGE 5 COMPLETE - knowledge.mdx updated
+    sites captured: ...
+    changes detected vs archive: ...
+    sites that blocked or required login: ...
+  ------------------------------------------------------------------
+* Then run: cd {ROOT_DIR}site && npm run build
+```
