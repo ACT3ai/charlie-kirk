@@ -891,3 +891,21 @@ Uppercase K is required by the API. Model defaults to nano-banana-pro
 Once generated, the image is committed like any other site image — see
 "Images Are Tracked In Git" above — and embedded by local repo path, never by
 an IPFS gateway URL.
+
+Plane flight records have been erased. We are doing a serious investigate to keep documenting when they are claimed on twitter or documented early. But scrubbed and erased later.
+
+We want to track discrpencies in the per flight dir:
+~/BGit/Bryan_git/charlie-kirk/site/docs/Planes/{plane}/
+
+We want to store data from each serve we download and indicate in filenames or other ways which source brought the data down. Then see if we can hunt down when data was deleted.
+
+it may have been deleted from the proprietary flight tracker, but available in the open source flight tracker system.
+
+Or the open source flight tracker system may no longer diisplay the data, but the peer-to-peer tools used to collect and report the data may have it.
+
+Or it may be in the waybackmachine.
+
+We want to find and prove when data we removed. And try to get that data back.
+
+See if online if there are backups for this reason.
+

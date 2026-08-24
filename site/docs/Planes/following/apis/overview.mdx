@@ -1,0 +1,126 @@
+---
+displayed_sidebar: docs
+title: "Getting The Data — How This Investigation Checks The Flight Claims Itself"
+sidebar_label: "Getting The Data"
+description: "The four passes this investigation uses to check the following-planes claim against primary flight data: free open sources, commercial APIs, government records, and captures of the tracking websites themselves — including what each one found and what it could not."
+keywords:
+  - Charlie Kirk
+  - flight data
+  - ADS-B
+  - verification
+  - SU-BTT
+  - open data
+  - FOIA
+  - flight tracking
+image: "/img/docusaurus-social-card.jpg"
+hide_table_of_contents: true
+---
+
+{/* Full-bleed marker: activates the site-wide full-width + text-wrap
+    layout in custom.css (full width + overflow-safe side videos). Scoped
+    via CSS :has(). */}
+<div className="ck-full-bleed" />
+
+<a href="/Planes/following/overview" style={{display:'inline-block', marginBottom:'1rem',
+padding:'0.35rem 0.9rem', background:'#1a73e8', color:'#fff',
+borderRadius:'4px', textDecoration:'none', fontSize:'0.9rem'}}>← Following</a>
+
+# Getting The Data
+
+The claim that foreign-registered aircraft shadowed Charlie Kirk, Erika Kirk and TPUSA rests almost
+entirely on **third-hand readings of flight-tracking websites**. Somebody photographed an
+aircraft-history table. Somebody typed the rows into a spreadsheet. Somebody tallied the spreadsheet.
+Somebody read the tally on television. **Every one of those steps is a place a row could be misread**
+— and the published audits say a great many of them were.
+
+This section replaces that chain with data we pull ourselves, from named sources, with the raw
+response saved and timestamped. It exists so that a reader who does not believe a word of this site
+can repeat the pulls and get the same answer.
+
+## The four passes
+
+<div style={{display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem'}}>
+<div>
+
+**[1 — Public open source](/Planes/following/apis/public_open_source/knowledge)**
+Free networks, no account, no key. Repeatable by anyone. **Always runs first.**
+
+**[3 — Government records](/Planes/following/apis/government/knowledge)**
+Registries, facility data, FOIA and state public-records law. **Records, not readings.**
+
+</div>
+<div>
+
+**[2 — Commercial APIs](/Planes/following/apis/proprietary/knowledge)**
+The deep history the free networks do not hold. Costs money; terms restrict republication.
+
+**[4 — Website capture](/Planes/following/apis/browser_capture/knowledge)**
+Driving a real browser at the tracking sites. How we document that data is gone.
+
+</div>
+</div>
+
+A pass is never a substitute for another. **The same claim checked four ways and agreeing is the
+strongest thing this investigation can produce. Checked four ways and disagreeing is the second
+strongest — and it gets published too.**
+
+## What the first pass found
+
+478 pulls against the free historical archive on 24 August 2026. 178 traces retrieved. Three results
+worth stating up front.
+
+**The September 10 departure has a primary answer.** SU-BTT was on the ground at Provo Municipal at
+13:07 UTC — 07:07 Mountain — lifted off at 13:14 UTC, and was on the ground at Wilmington New Castle,
+Delaware at 16:50 UTC. That is a departure about five hours before the assassination and a landing
+about ninety minutes before it, from a 1,229-point track. It matches the "7:08 AM MT" figure that has
+circulated and is inconsistent with the competing accounts. **It says where an airframe was. It says
+nothing about who was aboard or who tasked it, and no public record establishes tasking in either
+direction.**
+
+**An independent check agrees with the audit.** Running every exactly-claimed date through primary
+traces, blind: pairings this repo's audit called **accurate** have a trace **75%** of the time, ones
+called **partial 88%**, and ones called **inaccurate only 11%**.
+
+**And the sharpest result splits the claim in two.** Individual flight legs — "this aircraft was at
+this field on this date" — verify at **98%**. Overlap pairings — "and therefore it was following
+them" — verify at **38%**. **The aircraft movements are largely real. The inference that they
+constitute shadowing is where the spreadsheet falls apart.** That finding flatters neither side of
+this argument, which is roughly the point.
+
+## What none of it can do
+
+**The counts remain trackers' tallies, not records.** 73, 72, 70+, 68, 29, 23 — amateur readings of
+public data by independent researchers, never reconciled with each other. Nothing in this section
+turns one of them into a verified total, and where they conflict this site shows the conflict rather
+than averaging it.
+
+**ADS-B has holes, and they cut both ways.** A missing trace means a volunteer network heard nothing.
+It does not establish that an aircraft did not fly and it does not establish that a transponder was
+switched off — a parked aircraft, a coverage gap over the Atlantic, and a wrong claimed date all look
+identical. Every gap we hit is written down in a `MISSING_DATA.md` file beside the relevant aircraft
+and overlap, **90 of them**, saying exactly that.
+
+**Two doors are shut.** The free archive does not reach 2022, where the trackers date the start of
+the pattern — so those rows are untestable without paying. And **Erika Kirk's side cannot be checked
+at all**: her flight logs are reported erased, and this repo holds a single sourced location for her
+before 10 September 2025, against a window somebody counted 73 overlaps across. See
+[Erika Kirk's flight logs reported erased](/Planes/Erika-Flight-Logs-Erased).
+
+## What this section will not do
+
+It will not merge the threads. The 18-month following pattern, the September 10 day-of timeline, the
+N1098L thread and the N888KG Wendover departure are **four different claims about four different sets
+of aircraft**, and blending them is how the whole angle gets dismissed at once.
+
+It will not name who tasked an aircraft, because no public record establishes it. It will not name a
+living person as an accused. And it will not publish a page without the innocent explanation beside
+the suspicious one — including the innocent explanation for our own results, which is that an
+aircraft simply was not there.
+
+## Related
+
+* [The following-planes overview](/Planes/following/overview) — the claim itself, location by location
+* [Following Charlie and Erika](/Planes/Following-Charlie-Erika) — the hub page for this claim
+* [Planes overview](/Planes/overview) — every aircraft in the investigation
+* [September 10 flight timeline](/Planes/Sept10-Flight-Timeline) — the final day, minute by minute
+* [SU-BTT](/Planes/SU-BTT/overview) · [SU-BND](/Planes/SU-BND/overview) · [SU-BTU](/Planes/SU-BTU/overview) · [SU-BTV](/Planes/SU-BTV/overview) · [SU-BGM](/Planes/SU-BGM/overview)
