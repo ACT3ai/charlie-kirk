@@ -36,6 +36,7 @@
 //   node recover_erased.js --adsb-only        skip Wayback
 import { mkdir, writeFile } from "node:fs/promises";
 import { FLEET } from "./lib/fleet.js";
+import { scrubVendorCredentials } from "./lib/scrub.js";
 
 const UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 " +
            "(KHTML, like Gecko) Chrome/125.0 Safari/537.36";
@@ -71,9 +72,19 @@ async function grab(url, { text = true } = {}) {
 }
 async function save(dir, name, body, meta) {
   await mkdir(dir, { recursive: true });
+  // The archived page carries the VENDOR'S own client-side keys. Redact them on
+  // the way to disk -- see lib/scrub.js for why, and for what survives. The
+  // redaction count is recorded in the sidecar so the capture states plainly
+  // that it was altered, and in exactly one respect.
+  let redacted = 0;
+  if (typeof body === "string") {
+    const scrubbed = scrubVendorCredentials(body);
+    body = scrubbed.text;
+    redacted = scrubbed.count;
+  }
   if (body != null && body !== "") await writeFile(`${dir}/${name}`, body);
   await writeFile(`${dir}/${name}.meta.json`,
-    JSON.stringify({ retrieved_utc: NOW, ...meta }, null, 2) + "\n");
+    JSON.stringify({ retrieved_utc: NOW, vendor_credentials_redacted: redacted, ...meta }, null, 2) + "\n");
 }
 
 // -------------------------------------------------------- A + B: the two archives

@@ -1,0 +1,31 @@
+{
+  "retrieved_utc": "2026-08-24T16:29:36.628Z",
+  "source": "adsb-lol",
+  "source_role": "the archive this investigation already used",
+  "url": "https://adsb.lol/globe_history/2025/09/10/traces/75/trace_full_ac3c75.json",
+  "http_status": 200,
+  "bytes": 125100,
+  "tail": "N888KG",
+  "hex": "ac3c75",
+  "utc_date": "2025-09-10",
+  "summary": {
+    "registration": "N888KG",
+    "type": "CL30",
+    "icao": "ac3c75",
+    "points": 730,
+    "first_seen_utc": "2025-09-10T19:06:07.720Z",
+    "first_pos": [
+      40.219248,
+      -111.719378
+    ],
+    "first_on_ground": true,
+    "last_seen_utc": "2025-09-10T21:07:54.060Z",
+    "last_pos": [
+      40.219082,
+      -111.719437
+    ],
+    "last_on_ground": true,
+    "wheels_up_utc": "2025-09-10T19:11:49.270Z",
+    "wheels_down_utc": "2025-09-10T21:05:34.680Z"
+  }
+}

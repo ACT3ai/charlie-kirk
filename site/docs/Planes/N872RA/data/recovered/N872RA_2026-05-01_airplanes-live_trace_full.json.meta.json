@@ -1,0 +1,31 @@
+{
+  "retrieved_utc": "2026-08-24T16:29:36.628Z",
+  "source": "airplanes-live",
+  "source_role": "BACKUP ARCHIVE — independent volunteer network",
+  "url": "https://globe.airplanes.live/globe_history/2026/05/01/traces/3c/trace_full_abff3c.json",
+  "http_status": 200,
+  "bytes": 746536,
+  "tail": "N872RA",
+  "hex": "abff3c",
+  "utc_date": "2026-05-01",
+  "summary": {
+    "registration": "N872RA",
+    "type": "BE40",
+    "icao": "abff3c",
+    "points": 4288,
+    "first_seen_utc": "2026-05-01T01:49:52.650Z",
+    "first_pos": [
+      40.77293,
+      -111.960678
+    ],
+    "first_on_ground": true,
+    "last_seen_utc": "2026-05-01T23:22:00.040Z",
+    "last_pos": [
+      35.974823,
+      -115.138364
+    ],
+    "last_on_ground": true,
+    "wheels_up_utc": "2026-05-01T01:52:12.490Z",
+    "wheels_down_utc": "2026-05-01T23:19:12.070Z"
+  }
+}

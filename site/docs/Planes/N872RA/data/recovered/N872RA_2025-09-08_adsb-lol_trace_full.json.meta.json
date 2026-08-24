@@ -1,0 +1,31 @@
+{
+  "retrieved_utc": "2026-08-24T16:29:36.628Z",
+  "source": "adsb-lol",
+  "source_role": "the archive this investigation already used",
+  "url": "https://adsb.lol/globe_history/2025/09/08/traces/3c/trace_full_abff3c.json",
+  "http_status": 200,
+  "bytes": 729453,
+  "tail": "N872RA",
+  "hex": "abff3c",
+  "utc_date": "2025-09-08",
+  "summary": {
+    "registration": "N872RA",
+    "type": "BE40",
+    "icao": "abff3c",
+    "points": 4214,
+    "first_seen_utc": "2025-09-08T00:00:06.990Z",
+    "first_pos": [
+      46.367615,
+      -122.930514
+    ],
+    "first_on_ground": false,
+    "last_seen_utc": "2025-09-08T22:50:45.320Z",
+    "last_pos": [
+      33.676331,
+      -117.870326
+    ],
+    "last_on_ground": true,
+    "wheels_up_utc": "2025-09-08T13:32:08.200Z",
+    "wheels_down_utc": "2025-09-08T22:48:45.430Z"
+  }
+}

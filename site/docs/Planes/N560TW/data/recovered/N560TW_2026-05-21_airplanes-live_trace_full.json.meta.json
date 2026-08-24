@@ -1,0 +1,31 @@
+{
+  "retrieved_utc": "2026-08-24T16:29:36.628Z",
+  "source": "airplanes-live",
+  "source_role": "BACKUP ARCHIVE — independent volunteer network",
+  "url": "https://globe.airplanes.live/globe_history/2026/05/21/traces/a8/trace_full_a728a8.json",
+  "http_status": 200,
+  "bytes": 372850,
+  "tail": "N560TW",
+  "hex": "a728a8",
+  "utc_date": "2026-05-21",
+  "summary": {
+    "registration": "N560TW",
+    "type": "C56X",
+    "icao": "a728a8",
+    "points": 2193,
+    "first_seen_utc": "2026-05-21T00:00:09.560Z",
+    "first_pos": [
+      39.498829,
+      -98.735718
+    ],
+    "first_on_ground": false,
+    "last_seen_utc": "2026-05-21T23:16:33.390Z",
+    "last_pos": [
+      34.882553,
+      -82.228966
+    ],
+    "last_on_ground": false,
+    "wheels_up_utc": null,
+    "wheels_down_utc": null
+  }
+}

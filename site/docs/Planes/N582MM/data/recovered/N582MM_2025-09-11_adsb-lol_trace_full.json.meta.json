@@ -1,0 +1,31 @@
+{
+  "retrieved_utc": "2026-08-24T16:29:36.628Z",
+  "source": "adsb-lol",
+  "source_role": "the archive this investigation already used",
+  "url": "https://adsb.lol/globe_history/2025/09/11/traces/75/trace_full_a77e75.json",
+  "http_status": 200,
+  "bytes": 472096,
+  "tail": "N582MM",
+  "hex": "a77e75",
+  "utc_date": "2025-09-11",
+  "summary": {
+    "registration": "N582MM",
+    "type": "LJ60",
+    "icao": "a77e75",
+    "points": 2928,
+    "first_seen_utc": "2025-09-11T00:00:06.030Z",
+    "first_pos": [
+      41.722117,
+      -105.591324
+    ],
+    "first_on_ground": false,
+    "last_seen_utc": "2025-09-11T23:59:52.300Z",
+    "last_pos": [
+      42.318146,
+      -113.129529
+    ],
+    "last_on_ground": false,
+    "wheels_up_utc": "2025-09-11T14:20:26.330Z",
+    "wheels_down_utc": "2025-09-11T00:57:14.480Z"
+  }
+}

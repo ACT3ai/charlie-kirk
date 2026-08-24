@@ -1,0 +1,590 @@
+<!DOCTYPE HTML>
+<html lang="en">
+ <head>
+  <!-- 	Attention! You must agree with FlightAware's Terms of Use at http://flightaware.com/about/termsofuse
+  Data robots and collection agents should use http://flightaware.com/commercial/flightxml/
+  	Copyright 2011 FlightAware.  All Rights Reserved. -->
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>FlightAware > N582MM </title>
+<link rel="icon" type="image/vnd.microsoft.icon" href="http://e0.flightcdn.com/images/favicon.ico" />
+
+
+
+<script type="text/javascript"> user = {"username": "", "TZ": "EST5EDT", "accounttype": "0", "id": "", "locale": "en_US", "lang": "en", "name": " ", "active": "" }; </script>
+
+<!-- non scripts -->
+  <link rel="stylesheet" type="text/css" href="http://e0.flightcdn.com/include/32e2c6686-flightaware.css" />
+  <link rel="stylesheet" type="text/css" href="http://e0.flightcdn.com/include/5e4b17597-mapstyles.css" />
+<!--[if lte IE 7]>
+   <link rel="stylesheet" type="text/css" href="http://e1.flightcdn.com/include/35a33cc67-fa_ie.css" />
+   <![endif]-->
+<!-- scripts -->
+  <script type="text/javascript" src="http://e0.flightcdn.com/include/4ca7dcfa4-flightaware.js" ></script>
+  <script type="text/javascript" src="http://e1.flightcdn.com/live/airlines_js.rvt?locale=en_US&country=US"></script>
+  <script type="text/javascript" src="http://e0.flightcdn.com/include/2b61abdb4-jquery.flot.min.js" ></script>
+  <script type="text/javascript" src="http://e0.flightcdn.com/include/2b61abdb4-jquery.flot.crosshair.min.js" ></script>
+  <script type="text/javascript">var maplayers_url = "http://e1.flightcdn.com/include/2bfb22112-maplayers.js";</script>
+  <script type="text/javascript" src="http://e0.flightcdn.com/include/5b294accd-buildmap.js" ></script>
+<!-- done emit -->
+
+        <!--[if lt IE 7]>
+
+<script type="text/javascript">
+            $(document).ready(function () {
+                var checknull = $.cookie('ie_check');
+                if (checknull == null) {
+                    $("#iecountdown").show();
+                } else {
+                   $("#iecountdown").hide();
+                }
+                $("#ie6txt, #ie6ex").click(function() {
+                    $.cookie("ie_check", "2",{expires: 7, path: '/', domain: ".flightaware.com"});
+                    $("#iecountdown").hide();
+                    });
+            });
+
+            </script>
+
+<div style=' clear: both; height: 59px; width:100%; padding:0 0 0 0px; position: relative; display:none;' id="iecountdown" >
+        <table class="fullWidth" style='background: url(http://e1.flightcdn.com/images/ie_warning.png) 0 top repeat-x;'>
+            <tr align='justify'>
+                <td align='center'><strong>Your browser is no longer supported by Microsoft.  To find out your options, Microsoft has created a page dedicated to informing you of the different browsers available.</strong>
+                <a id="ie6txt" target="_blank" href='http://www.browserchoice.eu/BrowserChoice/browserchoice_en.htm' style='font-weight: bold;'>Browser information and download link.</a></td><td valign="top"><img id="ie6ex" style="cursor:pointer;" src="http://e1.flightcdn.com/images/ieex.png"></td>
+            </tr>
+            </table>
+       </div><![endif]-->
+
+  <meta name="keywords" content="N582MM flight tracker tracking status map airport" />
+  <meta name="description" content="N582MM Flight Tracker (en route flights, arrivals, departures, history) with live maps and aircraft photos" />
+  <meta property="og:title" content="FlightAware > N582MM "/>
+  <meta property="og:site_name" content="FlightAware"/>
+  <meta property="og:url" content="http://flightaware.com/live/flight/N582MM"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:image" content="http://e1.photos.flightcdn.com/photos/retriever/0881cc6914567d4e5e11aeb82715bc124755bcb1" />
+  <noscript><meta http-equiv="refresh" content="460" /></noscript>
+
+	 <script type="text/javascript">
+		var nTime = 450000;
+		var timeoutquant;
+		$(document).ready(function() {
+				restarttimeouthandler();
+                                $(document).keydown(function(){restarttimeouthandler();});
+			});
+	 </script>
+</head>
+<body>
+<div id="pageContainer"><div id="topContainer">
+
+                <script type="text/javascript">
+
+		function openShareWindow(url,id,width,height,scrollbars) {
+   			popups = window.open(url,id,'toolbar=0,location=0,scrollbars='+scrollbars+',statusbar=0,menubar=0,resizable=0,width='+width+',height='+height+',left=20,top=40');
+   			window.popups.focus();
+ 		}
+
+                $(document).ready(function(){
+
+         $('#airport_name_or_city').autocomplete('/ajax/puts_airport_names.rvt', {
+                minChars: 3,
+                max: 50,
+                matchContains: true,
+                extraParams: { timestamp: 'null', locale: 'en_US' },
+                width: 400
+        }).result(function(event, item) {
+            //if they've selected a name from the list
+            //we can assume they are no longer searching on airport code.
+            //null out airport code field, so that airport is selected by name
+            //and automatically submit form to view activity
+            $('#airport').val('');
+                //fauxListWrapper.hide();
+            $('#airportTrackForm').submit();
+        });
+
+        $('#share_link').validate({
+                rules: {
+                        recipient: {
+                                required: true,
+                                email: true
+                        },
+                        sender: {
+                                required: true,
+                                email: true
+                        }
+                },
+                messages: {
+                        recipient: 'Please fix',
+                        sender: 'Please fix'
+                },
+            submitHandler: function(form) {
+                var scriptUrl = '/ajax/share_email.rvt';
+                var dataStr = $('form#share_link').serialize();
+                $.ajax({
+                   type: 'POST',
+                   url: scriptUrl,
+                   data: dataStr,
+                   success: function(msg) {
+                       $('#emailShareSuccessContentWrapper').html(msg);
+                   }
+               });
+            }
+        });
+        });
+</script>
+
+  <table id="topContent">
+   <tr>
+    <td rowspan="2" style="width: 160px; padding-left: 5px;">
+    <a href="/"><img src="http://e1.flightcdn.com/images/logo.png" style="width:160px;height:60; border: 0;" alt="FlightAware" /></a>
+
+    </td>
+	<td id="topSlogan"><h1><a href="/">Live Flight Tracking.</a></h1></td>
+    <td style="width:50%" id="topContainerBadgeBlock"></td>
+    <td rowspan="2" style="width:110px" id="topLinks1" class="topLinks"><a href="/account/manage">Join</a> / <a onclick="DoLoginBox(); return false" href="/account/login">Login</a></td>
+    <td rowspan="2" style="width:110px;" id="topLinks2" class="topLinks">
+    
+<a id="FacebookShare" name="fb_share" type="box_count" share_url="http://flightaware.com/live/flight/N582MM">Share</a>
+<div style="height: 5px; clear: both;">&nbsp;</div>
+<g:plusone size="small" href="http://flightaware.com/"></g:plusone>
+
+    </td>
+  </tr>
+  <tr>
+   <td id="topText" colspan="2">
+    <div id="headerText"><div id="topTextLinks"> <strong><a href="/account/manage">Join FlightAware</a> (<a href="/about/account_types.rvt">Why Join?</a>)</strong></div> |
+			<a onclick="DoLoginBox(); return false" href="/account/login">Login</a> | <a href="/account/forgot">Forgot Username/Password</a> | Tuesday 01:37AM EST
+</div>
+    <div id="LoginBox">
+		<form name="login" action="https://flightaware.com/account/session" method="post">
+		<input type='hidden' name='mode' value='login' />
+
+	 	<label for="flightaware_username">Username or E-mail address</label>
+		<input size='30' type='text' name='flightaware_username' id='flightaware_username' />
+
+	 	<label for="flightaware_password">Password</label>
+		<input size='12' type='password' name='flightaware_password' id='flightaware_password' />
+		<button class="expandbluebuttons" type="submit">Login </button></form>
+	<a href="/account/manage">Join FlightAware</a> (Free Registration) | <a href="/account/forgot">Forgot Username/Password</a> <a href='javascript:NoLoginBox()'>Cancel</a>
+	</div>
+   <div id="LocaleTopBox" style="text-align: right;"><form  action="/account/locale_switch.rvt" method="get" style="display: inline;">
+ <select name="locale"  onchange="this.form.submit();">
+  <option value="ar_SA">العربية</option>
+  <option value="cs_CZ">Čeština</option>
+  <option value="de_DE">Deutsch</option>
+  <option value="en_AU">English (Australia)</option>
+  <option value="en_CA">English (Canada)</option>
+  <option value="en_GB">English (UK)</option>
+  <option value="en_US" selected="selected">English (USA)</option>
+  <option value="es_ES">Español (España)</option>
+  <option value="es_MX">Español</option>
+  <option value="fr_CA">Français (Canada)</option>
+  <option value="fr_FR">Français (France)</option>
+  <option value="he_IL">עִבְרִית</option>
+  <option value="hi_IN">हिन्दी</option>
+  <option value="it_IT">Italiano</option>
+  <option value="ja_JP">日本語</option>
+  <option value="ko_KR">한국어</option>
+  <option value="nl_NL">Nederlands</option>
+  <option value="pl_PL">Polski</option>
+  <option value="pt_BR">Português (Brasil)</option>
+  <option value="pt_PT">Português (Portugal)</option>
+  <option value="ru_RU">Русский</option>
+  <option value="sv_SE">Svenska</option>
+  <option value="tr_TR">Türkçe</option>
+  <option value="zh_CN">中文(简体)</option>
+  <option value="zh_HK">中文(香港)</option>
+  <option value="zh_TW">中文(台灣)</option>
+ </select>
+</form>
+<a href="/account/locale_switch.rvt?locale=en_US"><img height="11" width="16" src="http://e1.flightcdn.com/images/countries/US.png" border="0" alt="US Flag" title="Switch to US FlightAware" /></a>&nbsp;</div>
+   </td>
+  </tr>
+ </table>
+</div>
+<table cellspacing="0" cellpadding="0" style="width:99%; border: 0;"><tr>
+	<td style="padding: 0; margin: 0;" valign="top"><div id="navBar" style="margin-bottom: 4px; margin-top: 4px;">
+<ul class="menulist" id="listMenuRoot">
+ <li class="item_first current">
+<a href="/live/" class="titleLink"><h4 class="HeaderIMGText navMenu">Live Flight Tracking</h4></a> 
+ <ul class="submenu">
+  <li class="submenu_item"><a href="/live/findflight/"> <h4 class="navMenuSub HeaderIMGText">Flight Finder</h4> </a></li>
+  <li class="submenu_item"><a href="/live/fleet/"> <h4 class="navMenuSub HeaderIMGText">Browse by Operator</h4> </a></li>
+  <li class="submenu_item"><a href="/resources/airport/browse/"> <h4 class="navMenuSub HeaderIMGText">Browse by Airport</h4> </a></li>
+  <li class="submenu_item"><a href="/live/aircrafttype/"> <h4 class="navMenuSub HeaderIMGText">Browse by Aircraft Type</h4> </a></li>
+  <li class="submenu_item"><a href="/live/airport/random"> <h4 class="navMenuSub HeaderIMGText">Random Airport</h4> </a></li>
+  <li class="submenu_item"><a href="/live/flight/random"> <h4 class="navMenuSub HeaderIMGText">Random Flight</h4> </a></li>
+  <li class="submenu_item"><a href="/mobile"> <h4 class="navMenuSub HeaderIMGText">Mobile Flight Tracker Apps</h4> </a></li>
+</ul>
+</li>
+ <li>
+<a href="/flightplan/" class="titleLink"><h4 class="HeaderIMGText navMenu">Flight Planning</h4></a> 
+ <ul class="submenu">
+  <li class="submenu_item"><a href="/flightplan/"> <h4 class="navMenuSub HeaderIMGText">Plan a Flight</h4> </a></li>
+  <li class="submenu_item"><a href="/flightplan/manage/flights"> <h4 class="navMenuSub HeaderIMGText">My Filed Flights</h4> </a></li>
+  <li class="submenu_item"><a href="/flightplan/manage/aircraft"> <h4 class="navMenuSub HeaderIMGText">My Aircraft</h4> </a></li>
+  <li class="submenu_item"><a href="/flightplan/manage/pilots"> <h4 class="navMenuSub HeaderIMGText">My Pilots</h4> </a></li>
+  <li class="submenu_item"><a href="/flightplan/faq.rvt"> <h4 class="navMenuSub HeaderIMGText">Flight Planning Help</h4> </a></li>
+  <li class="submenu_item"><a href="/fuelaware/"> <h4 class="navMenuSub HeaderIMGText">FuelAware</h4> </a></li>
+</ul>
+</li>
+ <li>
+<a href="/resources/" class="titleLink"><h4 class="HeaderIMGText navMenu">Pilot Resources</h4></a> 
+ <ul class="submenu">
+  <li class="submenu_item"><a href="/fuelaware/"> <h4 class="navMenuSub HeaderIMGText">FuelAware</h4> </a></li>
+  <li class="submenu_item"><a href="/mobile"> <h4 class="navMenuSub HeaderIMGText">Mobile Flight Tracker Apps</h4> </a></li>
+</ul>
+</li>
+ <li>
+<a href="/photos/" class="titleLink"><h4 class="HeaderIMGText navMenu">Aviation Photos</h4></a> 
+ <ul class="submenu">
+  <li class="submenu_item"><a href="/photos/"> <h4 class="navMenuSub HeaderIMGText">Popular Photos</h4> </a></li>
+  <li class="submenu_item"><a href="/photos/browse/newest"> <h4 class="navMenuSub HeaderIMGText">Newest Photos</h4> </a></li>
+  <li class="submenu_item"><a href="/photos/ranked/cume"> <h4 class="navMenuSub HeaderIMGText">Highest Ranked</h4> </a></li>
+  <li class="submenu_item"><a href="/photos/staffpicks/cume"> <h4 class="navMenuSub HeaderIMGText">Staff Picks</h4> </a></li>
+</ul>
+</li>
+ <li>
+<a href="/squawks/" class="titleLink"><h4 class="HeaderIMGText navMenu">Squawks & Headlines</h4></a> 
+ <ul class="submenu">
+  <li class="submenu_item"><a href="/squawks/browse/general/recently/popular"> <h4 class="navMenuSub HeaderIMGText">Current Squawks</h4> </a></li>
+  <li class="submenu_item"><a href="/squawks/browse/general/24_hours/new"> <h4 class="navMenuSub HeaderIMGText">New Squawks</h4> </a></li>
+  <li class="submenu_item"><a href="/squawks/"> <h4 class="navMenuSub HeaderIMGText">Popular Squawks</h4> </a></li>
+</ul>
+</li>
+ <li>
+<a href="http://discussions.flightaware.com/" class="titleLink"><h4 class="HeaderIMGText navMenu">Discussions</h4></a> 
+</li>
+ <li>
+<a href="/commercial/" class="titleLink"><h4 class="HeaderIMGText navMenu">Commercial Services</h4></a> 
+ <ul class="submenu">
+  <li class="submenu_item"><a href="/commercial/advertising/"> <h4 class="navMenuSub HeaderIMGText">Advertising</h4> </a></li>
+  <li class="submenu_item"><a href="/commercial/integration"> <h4 class="navMenuSub HeaderIMGText">Site Integration</h4> </a></li>
+  <li class="submenu_item"><a href="/commercial/fbotoolbox"> <h4 class="navMenuSub HeaderIMGText">FBO Toolbox</h4> </a></li>
+  <li class="submenu_item"><a href="/commercial/unblock.rvt"> <h4 class="navMenuSub HeaderIMGText">Selective Unblocking</h4> </a></li>
+  <li class="submenu_item"><a href="/commercial/flightxml/"> <h4 class="navMenuSub HeaderIMGText">FlightXML</h4> </a></li>
+  <li class="submenu_item"><a href="/commercial/airportaware/"> <h4 class="navMenuSub HeaderIMGText">AirportAware</h4> </a></li>
+  <li class="submenu_item"><a href="/about/contact/"> <h4 class="navMenuSub HeaderIMGText">Custom Reports</h4> </a></li>
+  <li class="submenu_item"><a href="/commercial/premium/"> <h4 class="navMenuSub HeaderIMGText">Premium Accounts</h4> </a></li>
+  <li class="submenu_item"><a href="/commercial/#airport_history"> <h4 class="navMenuSub HeaderIMGText">Airport History</h4> </a></li>
+  <li class="submenu_item"><a href="/commercial/#flight_history"> <h4 class="navMenuSub HeaderIMGText">Flight History</h4> </a></li>
+</ul>
+</li>
+ <li>
+<a href="/about/" class="titleLink"><h4 class="HeaderIMGText navMenu">About FlightAware</h4></a> 
+ <ul class="submenu">
+  <li class="submenu_item"><a href="/about/"> <h4 class="navMenuSub HeaderIMGText">Overview</h4> </a></li>
+  <li class="submenu_item"><a href="/about/merchandise/"> <h4 class="navMenuSub HeaderIMGText">Company Store</h4> </a></li>
+  <li class="submenu_item"><a href="/about/faq.rvt"> <h4 class="navMenuSub HeaderIMGText">FAQs</h4> </a></li>
+  <li class="submenu_item"><a href="/about/executives/"> <h4 class="navMenuSub HeaderIMGText">Executive Profiles</h4> </a></li>
+  <li class="submenu_item"><a href="/about/history.rvt"> <h4 class="navMenuSub HeaderIMGText">History</h4> </a></li>
+  <li class="submenu_item"><a href="/about/contact/"> <h4 class="navMenuSub HeaderIMGText">Contact</h4> </a></li>
+  <li class="submenu_item"><a href="/about/careers/"> <h4 class="navMenuSub HeaderIMGText">Careers</h4> </a></li>
+  <li class="submenu_item"><a href="/about/account_types.rvt"> <h4 class="navMenuSub HeaderIMGText">Account Types</h4> </a></li>
+  <li class="submenu_item"><a href="/about/advertising/"> <h4 class="navMenuSub HeaderIMGText">Advertising</h4> </a></li>
+  <li class="submenu_item"><a href="/news/#press"> <h4 class="navMenuSub HeaderIMGText">Media and Press Kit</h4> </a></li>
+  <li class="submenu_item"><a href="/news/"> <h4 class="navMenuSub HeaderIMGText">Web Site News</h4> </a></li>
+</ul>
+</li>
+ <li class="item_last">
+<a href="/about/contact/" class="titleLink"><h4 class="HeaderIMGText navMenu">Contact</h4></a> 
+</li>
+</ul>
+</div>
+ <table width="170" cellspacing="0" cellpadding="0" id="trackBox">
+<tr>
+   <td class="trackboxComGradient">   	<h2>Live <a href="/">Flight Tracker</a></h2> </td></tr><tr><td class="trackboxPriGradient"><div class="trackBoxForm"><div class="trackFormSubhead">Private <a href="/">Flight Tracker:</a></div>
+	<form name="track" id="track" action="/live/form.rvt"><label for="ident">Flight/Tail#</label><input name="ident" id="ident" type="text" value="N582MM" title="e.g. N123AB" /><br /><div id="flightTrackerIdentError" style="color: red; padding: 12px 0; display: none;"></div><button class="unifiedtrack" type="submit" title="Track Flight" style="margin-left:67px;">Track Flight</button></form></div></td></tr><tr>
+   <td class="trackboxComGradient"><div class="trackBoxForm"><div class="trackFormSubhead"><a href="/">Airline Flight Tracker:</a></div>	<form name="searchform" id="searchform" action="/live/form.rvt" style="display: inline;">
+     <input type='hidden' id="ident_prefix" name='ident_prefix' value='' />
+     <noscript><select name="airline_name_select" id="airline_name_select" style="float: right; width: 125px;"><option value="">Select an airline</option>    <option value="ACA">Air Canada (ACA)</option>    <option value="CCA">Air China (CCA)</option>    <option value="TRS">AirTran Airways(TRS)</option>    <option value="AAL">American Airlines (AAL)</option>    <option value="EGF">American Eagle(EGF)</option>    <option value="ASQ">Atlantic Southeast Air…(ASQ)</option>    <option value="COA">Continental Air Lines (COA)</option>    <option value="DAL">Delta Air Lines (DAL)</option>    <option value="BTA">ExpressJet Airlines(BTA)</option>    <option value="FDX">Federal Express Corpor…(FDX)</option>    <option value="JZA">Jazz Air Lp.(JZA)</option>    <option value="JBU">JetBlue Airways(JBU)</option>    <option value="DLH">Lufthansa (DLH)</option>    <option value="EJA">Netjets Aviation (EJA)</option>    <option value="FLG">Pinnacle Airlines(FLG)</option>    <option value="RPA">Republic Airlines(RPA)</option>    <option value="SKW">SkyWest Airlines(SKW)</option>    <option value="SWA">Southwest Airlines(SWA)</option>    <option value="AWE">US Airways (AWE)</option>    <option value="UAL">United Air Lines (UAL)</option>    <option value="-- MORE --"></option>    <option value="EIN">Aer Lingus Teoranta(EIN)</option>    <option value="AEW">AeroSvit Airlines(AEW)</option>    <option value="AFL">Aeroflot - Russian Int…(AFL)</option>    <option value="ARG">Aerolineas Argentinas(ARG)</option>    <option value="ATE">Aeromexico Travel(ATE)</option>    <option value="AMX">Aerovias de Mexico de …(AMX)</option>    <option value="RUF">Air 1st Aviation Compa…(RUF)</option>    <option value="ABL">Air Bc Ltd.(ABL)</option>    <option value="BER">Air Berlin(BER)</option>    <option value="ACA">Air Canada (ACA)</option>    <option value="SNC">Air Cargo Carriers(SNC)</option>    <option value="CCA">Air China (CCA)</option>    <option value="CAO">Air China Cargo (CAO)</option>    <option value="MPD">Air Comet(MPD)</option>    <option value="AEA">Air Europa(AEA)</option>    <option value="AFR">Air France (AFR)</option>    <option value="GGN">Air Georgian(GGN)</option>    <option value="AIC">Air India (AIC)</option>    <option value="AEY">Air Italy(AEY)</option>    <option value="AJM">Air Jamaica(AJM)</option>    <option value="AJX">Air Japan(AJX)</option>    <option value="ALK">Air Lanka (ALK)</option>    <option value="AMW">Air Midwest(AMW)</option>    <option value="ANV">Air Nevada Airlines(ANV)</option>    <option value="ANZ">Air New Zealand Ltd. (ANZ)</option>    <option value="AMR">Air Specialties Corpor…(AMR)</option>    <option value="THT">Air Tahiti Nui (THT)</option>    <option value="HMA">Air Tahoma Inc(HMA)</option>    <option value="TSC">Air Transat(TSC)</option>    <option value="ATN">Air Transport Internat…(ATN)</option>    <option value="AVN">Air Vanuatu(AVN)</option>    <option value="AWI">Air Wisconsin Airlines(AWI)</option>    <option value="TRS">AirTran Airways(TRS)</option>    <option value="ABX">Airborne Express(ABX)</option>    <option value="APC">Airpac(APC)</option>    <option value="ALV">Alas de Venezuela(ALV)</option>    <option value="ASA">Alaska Airlines(ASA)</option>    <option value="AER">Alaska Central Express(AER)</option>    <option value="AZA">Alitalia - Linee Aeree…(AZA)</option>    <option value="ANA">All Nippon Airways (ANA)</option>    <option value="AAY">Allegiant Air(AAY)</option>    <option value="AAH">Aloha Airlines(AAH)</option>    <option value="AIP">Alpine Aviation(AIP)</option>    <option value="AAL">American Airlines (AAL)</option>    <option value="EGF">American Eagle(EGF)</option>    <option value="AMT">American Trans Air(AMT)</option>    <option value="AMF">Ameriflight(AMF)</option>    <option value="AJT">Amerijet International(AJT)</option>    <option value="APW">Arrow Airways(APW)</option>    <option value="AAR">Asiana Airlines (AAR)</option>    <option value="DHL">Astar Air Cargo(DHL)</option>    <option value="SYX">Astral Aviation D/B/A …(SYX)</option>    <option value="ABS">Athabasca Airways Ltd.(ABS)</option>    <option value="ASQ">Atlantic Southeast Air…(ASQ)</option>    <option value="GTI">Atlas Air(GTI)</option>    <option value="AUA">Austrian Airlines (AUA)</option>    <option value="AVA">Avianca, Aerovias Naci…(AVA)</option>    <option value="GUG">Aviateca(GUG)</option>    <option value="BHS">Bahamasair Holdings Ltd.(BHS)</option>    <option value="BKA">Bankair(BKA)</option>    <option value="BLS">Bearskin Lake Air Serv…(BLS)</option>    <option value="BSY">Big Sky Airlines(BSY)</option>    <option value="BLF">Blue1 (BLF)</option>    <option value="CDR">Bombardier Montreal(CDR)</option>    <option value="CXS">Boston-Maine Airways(CXS)</option>    <option value="BAW">British Airways (BAW)</option>    <option value="BMA">British Midland Airways(BMA)</option>    <option value="CJA">Canjet Airlines(CJA)</option>    <option value="CCI">Capital Cargo Internat…(CCI)</option>    <option value="GGC">Cargo 360(GGC)</option>    <option value="CRG">Cargoitalia(CRG)</option>    <option value="CLX">Cargolux Airlines Inte…(CLX)</option>    <option value="BWA">Caribbean Airlines(BWA)</option>    <option value="SFG">Caribbean Sun Airlines(SFG)</option>    <option value="CPA">Cathay Pacific Airways (CPA)</option>    <option value="ICL">Cavei Avir Lemitanim(ICL)</option>    <option value="CAY">Cayman Airways Ltd.(CAY)</option>    <option value="GLR">Central Mountain Air Ltd(GLR)</option>    <option value="CWC">Centurion Air Cargo(CWC)</option>    <option value="CLG">Chalair(CLG)</option>    <option value="CHQ">Chautauqua Airlines(CHQ)</option>    <option value="CAL">China Airlines (CAL)</option>    <option value="CKK">China Cargo Airlines(CKK)</option>    <option value="CES">China Eastern Airlines (CES)</option>    <option value="CSN">China Southern Airlines (CSN)</option>    <option value="CJC">Colgan Air(CJC)</option>    <option value="COM">Comair(COM)</option>    <option value="UCA">Commutair(UCA)</option>    <option value="MXA">Compania Mexicana de A…(MXA)</option>    <option value="CPZ">Compass Airlines(CPZ)</option>    <option value="CHP">Consorcio Aviaxsa de C…(CHP)</option>    <option value="COA">Continental Air Lines (COA)</option>    <option value="CMI">Continental Micronesia (CMI)</option>    <option value="CMP">Copa Airlines(CMP)</option>    <option value="CUB">Cubana de Aviacion(CUB)</option>    <option value="CSA">Czech Airlines(CSA)</option>    <option value="DHK">DHL Air Ltd(DHK)</option>    <option value="DAL">Delta Air Lines (DAL)</option>    <option value="SPR">Eastern Flying Service…(SPR)</option>    <option value="MSR">Egypt Air (MSR)</option>    <option value="ELY">El Al - Israel Airline…(ELY)</option>    <option value="UAE">Emirates (UAE)</option>    <option value="CFS">Empire Airways(CFS)</option>    <option value="ESS">Eos Airlines(ESS)</option>    <option value="ERH">Era Helicopters(ERH)</option>    <option value="ETH">Ethiopian Airlines Cor…(ETH)</option>    <option value="ETD">Etihad Airways (ETD)</option>    <option value="EEZ">Eurofly S.p.a.(EEZ)</option>    <option value="EVA">Eva Airways Corporation (EVA)</option>    <option value="EIA">Evergreen Internationa…(EIA)</option>    <option value="BTA">ExpressJet Airlines(BTA)</option>    <option value="FDX">Federal Express Corpor…(FDX)</option>    <option value="FIN">Finnair (FIN)</option>    <option value="FLX">Flight Express(FLX)</option>    <option value="ACT">Flight Line(ACT)</option>    <option value="FWL">Florida West Internati…(FWL)</option>    <option value="FRL">Freedom Airlines(FRL)</option>    <option value="FFT">Frontier Airlines(FFT)</option>    <option value="SSX">Frontier Airlines d/b/…(SSX)</option>    <option value="FTA">Frontier Flying Service(FTA)</option>    <option value="GCO">Gemini Air Cargo, Llc(GCO)</option>    <option value="GJS">GoJet Airlines(GJS)</option>    <option value="QUE">Gouvernement Du Quebec…(QUE)</option>    <option value="GUN">Grant Aviation(GUN)</option>    <option value="GLA">Great Lakes Aviation Ltd(GLA)</option>    <option value="GWL">Great Wall(GWL)</option>    <option value="GFT">Gulfstream Internation…(GFT)</option>    <option value="CHH">Hainan Airlines (CHH)</option>    <option value="HAL">Hawaiian Airlines(HAL)</option>    <option value="CRK">Hong Kong Airlines (CRK)</option>    <option value="QXE">Horizon Airlines(QXE)</option>    <option value="KAP">Hyannis Air Service D/…(KAP)</option>    <option value="CSQ">I.b.c. Airways(CSQ)</option>    <option value="IBE">Iberia - Lineas Aereas…(IBE)</option>    <option value="IBX">Ibex Airlines(IBX)</option>    <option value="ICE">Icelandair(ICE)</option>    <option value="IDE">Independence Air(IDE)</option>    <option value="IGO">IndiGo (IGO)</option>    <option value="INC">Insel Air International(INC)</option>    <option value="MKU">Island Air(MKU)</option>    <option value="SDY">Island Express(SDY)</option>    <option value="ISR">Israir Ltd.(ISR)</option>    <option value="JAZ">Jalways Co. (JAZ)</option>    <option value="JAL">Japan Air Lines Company (JAL)</option>    <option value="JZA">Jazz Air Lp.(JZA)</option>    <option value="JAI">Jet Airways, M/s (JAI)</option>    <option value="JBU">JetBlue Airways(JBU)</option>    <option value="QNZ">Jetconnect(QNZ)</option>    <option value="KLM">KLM Royal Dutch Airlin…(KLM)</option>    <option value="CKS">Kalitta Air(CKS)</option>    <option value="KFS">Kalitta Charters(KFS)</option>    <option value="KEN">Kenmore Air Harbor, Inc(KEN)</option>    <option value="LYM">Key Lime Air(LYM)</option>    <option value="KAL">Korean Air Lines Co. (KAL)</option>    <option value="KAC">Kuwait Airways Corpora…(KAC)</option>    <option value="AVI">L'Avion(AVI)</option>    <option value="LCO">LAN Cargo(LCO)</option>    <option value="LNE">LAN Ecuador(LNE)</option>    <option value="LPE">LAN Peru(LPE)</option>    <option value="SKQ">Labcorp(SKQ)</option>    <option value="LAL">Labrador Airways Ltd.(LAL)</option>    <option value="LIA">Leeward Islands Air Tr…(LIA)</option>    <option value="LAN">Linea Aerea Nacional d…(LAN)</option>    <option value="LRC">Lineas Aereas Costarri…(LRC)</option>    <option value="LLB">Lloyd Aereo Boliviano(LLB)</option>    <option value="LOT">Lot - Polskie Linie Lo…(LOT)</option>    <option value="DLH">Lufthansa (DLH)</option>    <option value="GEC">Lufthansa Cargo Ag,(GEC)</option>    <option value="LTU">Lufttransport-Unterneh…(LTU)</option>    <option value="LYC">Lynden Air Cargo Llc(LYC)</option>    <option value="MXJ">MAXjet Airways(MXJ)</option>    <option value="SCX">MN Airlines D/B/A Sun …(SCX)</option>    <option value="MAS">Malaysian Airlines Sys…(MAS)</option>    <option value="MAH">Malev - Hungarian Airl…(MAH)</option>    <option value="MPH">Martinair Holland N.V.(MPH)</option>    <option value="ASH">Mesa Airlines(ASH)</option>    <option value="MES">Mesaba Airlines(MES)</option>    <option value="BSK">Miami Air International(BSK)</option>    <option value="MEP">Midwest Airlines(MEP)</option>    <option value="MTN">Mountain Air Cargo(MTN)</option>    <option value="EJA">Netjets Aviation (EJA)</option>    <option value="NCA">Nippon Cargo Airlines …(NCA)</option>    <option value="NAO">North American Airlines(NAO)</option>    <option value="NAC">Northern Air Cargo(NAC)</option>    <option value="NWA">Northwest Airlines (NWA)</option>    <option value="ACY">Old ASA(ACY)</option>    <option value="CAA">Old ASA(CAA)</option>    <option value="OAL">Olympic Airways S.a.(OAL)</option>    <option value="OAE">Omni Air Express(OAE)</option>    <option value="JIA">PSA Airlines(JIA)</option>    <option value="PCO">Pacific Coastal Airline(PCO)</option>    <option value="PIA">Pakistan International…(PIA)</option>    <option value="PEN">Peninsula Airways(PEN)</option>    <option value="PAL">Philippine Air Lines (PAL)</option>    <option value="PDT">Piedmont Airlines(PDT)</option>    <option value="FLG">Pinnacle Airlines(FLG)</option>    <option value="PAC">Polar Air Cargo(PAC)</option>    <option value="POE">Porter Airlines(POE)</option>    <option value="CME">Prince Edward Air Ltd(CME)</option>    <option value="QFA">Qantas Airways (QFA)</option>    <option value="QTR">Qatar Airways Company (QTR)</option>    <option value="CEA">RegionsAir(CEA)</option>    <option value="RPA">Republic Airlines(RPA)</option>    <option value="RAM">Royal Air Maroc - Comp…(RAM)</option>    <option value="RJA">Royal Jordanian(RJA)</option>    <option value="RYN">Ryan Aviation Corporat…(RYN)</option>    <option value="SAS">SAS - Scandinavian Air…(SAS)</option>    <option value="BBR">Santa Barbara Airlines…(BBR)</option>    <option value="RZO">Sata Internacional(RZO)</option>    <option value="SVA">Saudi Arabian Airlines(SVA)</option>    <option value="SQH">SeaPort Airlines(SQH)</option>    <option value="SLI">Servicios Aereos Litor…(SLI)</option>    <option value="TCF">Shuttle America(TCF)</option>    <option value="SIA">Singapore Airlines (SIA)</option>    <option value="SQC">Singapore Airlines Cargo(SQC)</option>    <option value="SKW">SkyWest Airlines(SKW)</option>    <option value="SKK">Skylink Aviation(SKK)</option>    <option value="SSV">Skyservice F.b.o.(SSV)</option>    <option value="SKZ">Skyway Enterprises(SKZ)</option>    <option value="SAA">South African Airways (SAA)</option>    <option value="SOO">Southern Air(SOO)</option>    <option value="SWA">Southwest Airlines(SWA)</option>    <option value="NKS">Spirit Airlines(NKS)</option>    <option value="CNK">Sunwest Home Aviation …(CNK)</option>    <option value="SWG">Sunwing Airlines(SWG)</option>    <option value="SLM">Surinaamse Luchtvaart …(SLM)</option>    <option value="SWR">Swiss (SWR)</option>    <option value="TAM">TAM Airlines(TAM)</option>    <option value="TAI">Taca International Air…(TAI)</option>    <option value="VTS">Tatonduk Outfitters Lt…(VTS)</option>    <option value="THA">Thai Airways (THA)</option>    <option value="TCX">Thomas Cook Airlines(TCX)</option>    <option value="TOM">Thomsonfly(TOM)</option>    <option value="GPD">Tradewind Aviation(GPD)</option>    <option value="LOF">Trans States Airlines(LOF)</option>    <option value="TPA">Transportes Aereos Mer…(TPA)</option>    <option value="TAP">Transportes Aereos Por…(TAP)</option>    <option value="TUS">Transportes Charter Tu…(TUS)</option>    <option value="THY">Turkish Airlines (THY)</option>    <option value="AWE">US Airways (AWE)</option>    <option value="USA">US Airways (USA)</option>    <option value="UAL">United Air Lines (UAL)</option>    <option value="UPS">United Parcel Service(UPS)</option>    <option value="GWY">Usa 3000 Airlines(GWY)</option>    <option value="JUS">Usa Jet Airlines(JUS)</option>    <option value="UZB">Uzbekistan Havo Jullar…(UZB)</option>    <option value="VAU">V Australia(VAU)</option>    <option value="VEC">Venezolana Servicios E…(VEC)</option>    <option value="VRG">Viacao Aerea Rio-grand…(VRG)</option>    <option value="VRD">Virgin America(VRD)</option>    <option value="VIR">Virgin Atlantic (VIR)</option>    <option value="RBY">Vision Airlines(RBY)</option>    <option value="VLE">Volare Airlines(VLE)</option>    <option value="VOI">Volaris (VOI)</option>    <option value="WAV">Warbelows Air Ventures(WAV)</option>    <option value="WSG">Wasaya Airways Ltd(WSG)</option>    <option value="PCM">Westair Industries(PCM)</option>    <option value="WAE">Western Air Express(WAE)</option>    <option value="WJA">Westjet Airlines Ltd(WJA)</option>    <option value="WOA">World Airways(WOA)</option>    <option value="TDX">Wrangler Aviation D/B/…(TDX)</option>    <option value="WRT">Wright Air Lines(WRT)</option>    <option value="CXP">Xtra Airways(CXP)</option>    <option value="YZR">Yangtze River Express …(YZR)</option>    <option value="OOM">Zoom Airlines(OOM)</option>    <option value="BMR">bmi regional(BMR)</option></select></noscript>
+
+      <div class="jsEnabledAirlineField trackFormRow" style="float: left;" >
+         <div style="float: left;">  <label for="airline_name" class="defaultLabel">Airline</label> </div></div><div class="jsEnabledAirlineField trackFormRow" style="display: none;"><input id="airline_name" name="q" type="text" value="" title="e.g. United" class="defaultComField" />
+     </div><br /><div>&nbsp;</div>
+	<div class="trackFormRow"><div style="float: left;"> <label for="ident_suffix" class="defaultLabel">Flight #</label></div><div><input id="ident_suffix" name="ident_suffix" type="text" value="" title="e.g. 450" class="defaultComField" /></div></div>
+     <button type="submit" class="unifiedtrack" title="Track Flight">Track Flight</button>
+
+        </form><br /><div class="findFlightS" style=""><a href="/live/findflight" class="titleLink"><h4 class="findFlightSide">FORGOT the FLIGHT  NUMBER?</h4></a></div></div></td>
+  </tr>
+  <tr>
+<td>
+    </td></tr>
+ <tr>
+   <td style="border-top: 5px solid white;">        <h2 class="airportInfoHeader">Airport Tracker/Info</h2></td>
+  </tr>
+  <tr>
+<td class="trackboxAirportGradient">
+    
+   <div class="trackBoxForm"><form class="trackForm" name="airport" id="airportTrackForm" action="/live/form.rvt">
+    <label for="airport">Airport Code</label>
+    <input id="airport" title="e.g. KJFK" name="airport" type="text" value="SVMI" /><br />
+	<span style="font-style: italic;">-or-</span><br />
+    <label for="airport_name_or_city">Airport City</label>
+    <input id="airport_name_or_city" title="e.g. New York" name="airport_name_or_city" type="text" class="airportNameField" /><button class="unifiedtrack" type="submit" id="trackunified" title="View Activity" name="View Activity" style="clear:right; margin-bottom:10px;">View&nbsp;Activity</button><br/><button class="unifiedtrack" type="button" id="airportInfoButton" title="View Info" name="View Info" style="clear:right; margin-bottom:10px;">View&nbsp;Info</button><br/></form></div></td>
+ </tr><tr><td><div class="bottomShadow">&nbsp;</div></td></tr>
+<tr><td colspan="2" class="bodyDivider"></td></tr>
+<tr><td style="margin: 0; padding: 0;" class="fullWidth midAd">
+		<iframe
+		 src="http://ad.doubleclick.net/adi/flight.main/live;sz=160x600,160x400,120x600,160x240,120x240;aircraft_make=Learjet;aircraft_model=60;aircraft_type=LJ60;destination=SVMI;destination_IATA=CCS;destination_state=;engine_category=turbine;engine_type=twin-jet;filed_ete=2h3h;ident=N582MM;ident_state=DE;lang=en;locale=en_US;origin=KFLL;origin_IATA=FLL;origin_state=FL;physclass=J;suffix=MM;type=ga;unitName=flight;userGen=f;userclass=G;dc_ref=http%3a%2f%2fflightaware.com%2flive%2fflight%2fN582MM?ident=N582MM;tile=1;ord=1324363093?"
+		 width="160"
+		 height="600"
+		 marginwidth="0"
+		 marginheight="0"
+		 frameborder="0"
+		 style="display: block; margin-right: auto; margin-left: auto;"
+		 scrolling="no">
+		</iframe></td></tr>
+</table>
+</td><td class="fullWidth" style="vertical-align: top;">
+<div id="bodyHeader"><h2><a class="headerLink" href="/">FlightAware</a> > <a class="headerLink" href="/live/">Live Flight Tracker</a> > <span class="bodyNavTitle">N582MM </span></h2></div><div id="Body" class="container">
+
+<table cellpadding="0" cellspacing="0" border="0">
+
+	<tr><td colspan="2" style="height: 1px;"></td></tr>
+
+	<tr>
+
+<script type="text/javascript"> 
+	        $(document).ready(function(){	
+			var ident = 'N582MM';
+			if ($.cookie('flights_tracked') && $.cookie('flights_tracked').indexOf(ident) == -1 && $.cookie('flights_tracked') != 1 && $.cookie('flights_tracked') != 0) { 
+				var value = $.cookie('flights_tracked') + '-' + ident;	
+				$.cookie('flights_tracked', value, { expires: 365, path: '/' });
+			} else if (!$.cookie('flights_tracked')) {
+				$.cookie('flights_tracked', ident, { expires: 365, path: '/' });
+			}
+
+			if ($.cookie('flights_tracked') && $.cookie('flights_tracked') != 0 && $.cookie('flights_tracked').split('-').length == 5) {
+				var badgename = "Newbie";
+				var badge_message = "You\'ve just earned the Newbie badge for tracking 5 flights! <a href=\"/account/join\">Join now</a> to claim it.";
+				if (user['id'] != "") {
+				   $.ajax({
+					url: "/ajax/badges/award_newbie_badge.rvt",
+					success: function(response){
+					    if (response == 'ok') {
+						$.jnotify(badge_message, 'error', 5000);
+					    } else if (response == 'already awarded') {
+						$.cookie('flights_tracked', 0, { expires: 10000, path: '/' });
+					    }
+					}
+				   });
+				} else { 
+				    $.jnotify(badge_message, 'error', 5000);
+				    $.cookie('flights_tracked', '1', { expires: 365, path: '/' });
+				}
+			}
+		});
+	</script>
+
+<td valign="top" align="left" width="100%" style="background-color: #002F5D;">
+<script type="text/javascript">
+		cdnEnabled = 1; weather_cdn = "e1.flightcdn.com";
+                    tile_cdn = "e1.flightcdn.com";
+                    project = true;
+                    nexrad_time = 1324362600;
+                    formatted_time = "20-Dec-2011 01:30AM";
+                    trackstring = {"type":"FeatureCollection","features":[{"type":"Feature","geometry":{"type":"Point","coordinates":[-80.15275,26.07258]},"properties":{"label":"KFLL","type":"origin"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-66.99058,10.60312]},"properties":{"label":"SVMI / CCS","type":"destination"}},{"type":"Feature","geometry":{"type":"LineString","coordinates":[[-80.12972,26.07722],[-80.07889,26.08028],[-80.03271,26.08071],[-79.99572,26.07978],[-79.96791,26.07750],[-79.94791,26.07458],[-79.93434,26.07176],[-79.92722,26.06903],[-79.92049,26.06651],[-79.90808,26.06434],[-79.89000,26.06250],[-79.86356,26.05945],[-79.82606,26.05361],[-79.77750,26.04500],[-79.24834,25.95639],[-79.17328,25.94079],[-79.11486,25.92218],[-79.07306,25.90056],[-79.03731,25.87326],[-78.99703,25.83761],[-78.95222,25.79361],[-78.86028,25.69056],[-78.76889,25.59361],[-78.67083,25.50083],[-78.20250,25.00639],[-78.09611,24.90889],[-77.77556,24.63139],[-75.10694,22.21667],[-74.55417,21.63278],[-74.46861,21.53333],[-73.20805,20.12722]]},"properties":{"label":""}}]};
+                    projectstring = {"type":"FeatureCollection","features":[{"type":"Feature","geometry":{"type":"LineString","coordinates":[[-73.20805,20.12722],[-71.24493,16.81033],[-70.92033,16.25365],[-70.61728,15.68676],[-70.33557,15.10927],[-70.07744,14.58161],[-69.84273,14.16370],[-69.63147,13.85553],[-69.45620,13.59363],[-69.32952,13.31484],[-69.25159,13.01952],[-69.17335,12.72657],[-69.04574,12.45489],[-68.86892,12.20485],[-68.61616,11.93953],[-68.26060,11.62182],[-67.80220,11.25174],[-66.96667,10.60000]]},"properties":{"label":""}},{"type":"Feature","geometry":{"type":"LineString","coordinates":[[-66.96667,10.60000],[-67.93288,10.72442]]},"properties":{"label":""}},{"type":"Feature","geometry":{"type":"LineString","coordinates":[[-67.93288,10.72442],[-66.96667,10.60000]]},"properties":{"label":""}}]};
+                    routestring = {"type":"FeatureCollection","features":[{"type":"Feature","geometry":{"type":"LineString","coordinates":[[-80.15000,26.06667],[-80.10000,26.06667],[-80.08333,26.06667],[-80.08333,26.06667],[-80.00000,26.06667],[-79.91667,26.06667],[-79.91667,26.06667],[-79.68333,26.03333],[-79.53333,26.00000],[-79.50000,25.98333],[-79.38333,25.96667],[-79.35000,25.96667],[-79.11667,25.93333],[-79.11667,25.93333],[-79.10000,25.91667],[-79.00000,25.80000],[-78.95000,25.76667],[-78.86667,25.68333],[-78.73333,25.53333],[-78.68333,25.48333],[-78.58333,25.38333],[-78.56667,25.36667],[-78.55000,25.35000],[-78.43333,25.23333],[-78.11667,24.90000],[-77.85000,24.63333],[-77.38333,24.15000],[-77.03333,23.96667],[-76.00000,22.98333],[-75.91667,22.91667],[-75.45000,22.51667],[-75.35000,22.43333],[-75.05000,22.16667],[-75.00000,22.11667],[-74.70000,21.86667],[-74.18333,21.23333],[-73.21667,20.13333],[-73.16667,20.06667],[-73.00000,19.76667],[-72.61667,19.06667],[-72.38333,18.65000],[-72.26667,18.43333],[-72.06667,18.13333],[-71.95000,17.93333],[-71.71667,17.56667],[-71.70000,17.55000],[-71.46667,17.16667],[-71.30000,16.90000],[-70.75000,16.00000],[-70.31667,15.08333],[-69.98333,14.35000],[-69.38333,13.03333],[-69.00000,12.18333],[-68.93333,12.13333],[-68.68333,11.93333],[-68.41667,11.73333],[-68.36667,11.68333],[-68.33333,11.66667],[-68.15000,11.53333],[-68.01667,11.41667],[-67.93333,11.35000],[-67.60000,11.10000],[-67.46667,10.98333],[-67.30000,10.85000],[-67.16667,10.75000],[-67.16667,10.75000],[-67.10000,10.70000],[-67.03333,10.65000],[-66.98333,10.60000],[-66.96667,10.60000]]},"properties":{"ident":"N582MM"}}]};
+                    waypointstring = {"type":"FeatureCollection","features":[{"type":"Feature","geometry":{"type":"Point","coordinates":[-80.15000,26.06667]}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-80.10000,26.06667]}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-80.08333,26.06667]}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-80.08333,26.06667]}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-80.00000,26.06667]}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-79.91667,26.06667]}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-79.91667,26.06667]}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-79.68333,26.03333]}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-79.53333,26.00000]}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-79.50000,25.98333]}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-79.38333,25.96667]}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-79.35000,25.96667]}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-79.11667,25.93333]}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-79.11667,25.93333]}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-79.10000,25.91667]}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-79.00000,25.80000]}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-78.95000,25.76667]}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-78.86667,25.68333]}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-78.73333,25.53333]}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-78.68333,25.48333]}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-78.58333,25.38333]}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-78.56667,25.36667]}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-78.55000,25.35000]}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-78.43333,25.23333]}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-78.11667,24.90000]}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-77.85000,24.63333]}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-77.38333,24.15000]}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-77.03333,23.96667]}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-76.00000,22.98333]}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-75.91667,22.91667]}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-75.45000,22.51667]}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-75.35000,22.43333]}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-75.05000,22.16667]}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-75.00000,22.11667]}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-74.70000,21.86667]}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-74.18333,21.23333]}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-73.21667,20.13333]}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-73.16667,20.06667]}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-73.00000,19.76667]}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-72.61667,19.06667]}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-72.38333,18.65000]}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-72.26667,18.43333]}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-72.06667,18.13333]}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-71.95000,17.93333]}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-71.71667,17.56667]}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-71.70000,17.55000]}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-71.46667,17.16667]}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-71.30000,16.90000]}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-70.75000,16.00000]}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-70.31667,15.08333]}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-69.98333,14.35000]}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-69.38333,13.03333]}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-69.00000,12.18333]}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-68.93333,12.13333]}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-68.68333,11.93333]}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-68.41667,11.73333]}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-68.36667,11.68333]}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-68.33333,11.66667]}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-68.15000,11.53333]}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-68.01667,11.41667]}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-67.93333,11.35000]}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-67.60000,11.10000]}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-67.46667,10.98333]}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-67.30000,10.85000]}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-67.16667,10.75000]}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-67.16667,10.75000]}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-67.10000,10.70000]}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-67.03333,10.65000]}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-66.98333,10.60000]}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-66.96667,10.60000]}}]};
+                    localized_map_strings = {"Overlays":"Overlays","Estimated":"ESTIMATED","Weather":"Weather","Flown Route":"Flown Route","Planned Route":"Planned Route","Waypoints":"Waypoints","Aircraft":"Aircraft","Major Airports":"Nearby Airports","Aviation Sectional":"Aviation Sectional","Classic":"Classic","Earth View":"Earth View","Hover for Route":"Hover for Route","Arrivals":"Arrivals","Departures":"Departures","Vicinity":"Vicinity"};
+		var major_airports = {"type":"FeatureCollection","features":[{"type":"Feature","geometry":{"type":"Point","coordinates":[-106.60919,35.04019]},"properties":{"label":"KABQ"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-84.42807,33.63672]},"properties":{"label":"KATL"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-97.66989,30.19453]},"properties":{"label":"KAUS"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-72.68322,41.93889]},"properties":{"label":"KBDL"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-86.75231,33.56389]},"properties":{"label":"KBHM"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-86.67819,36.12447]},"properties":{"label":"KBNA"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-71.00642,42.36297]},"properties":{"label":"KBOS"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-78.73058,42.94042]},"properties":{"label":"KBUF"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-118.35867,34.20067]},"properties":{"label":"KBUR"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-76.66833,39.17536]},"properties":{"label":"KBWI"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-81.85498,41.40942]},"properties":{"label":"KCLE"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-80.94907,35.21374]},"properties":{"label":"KCLT"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-82.89189,39.99797]},"properties":{"label":"KCMH"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-84.66782,39.04884]},"properties":{"label":"KCVG"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-96.85178,32.84711]},"properties":{"label":"KDAL"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-77.03772,38.85208]},"properties":{"label":"KDCA"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-104.67317,39.86167]},"properties":{"label":"KDEN"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-97.03800,32.89683]},"properties":{"label":"KDFW"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-83.35339,42.21244]},"properties":{"label":"KDTW"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-74.16867,40.69250]},"properties":{"label":"KEWR"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-80.15275,26.07258]},"properties":{"label":"KFLL"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-95.27889,29.64542]},"properties":{"label":"KHOU"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-73.70756,41.06694]},"properties":{"label":"KHPN"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-77.45994,38.94744]},"properties":{"label":"KIAD"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-95.34144,29.98443]},"properties":{"label":"KIAH"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-86.29466,39.71730]},"properties":{"label":"KIND"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-81.68786,30.49406]},"properties":{"label":"KJAX"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-73.77893,40.63975]},"properties":{"label":"KJFK"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-115.15225,36.08006]},"properties":{"label":"KLAS"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-118.40807,33.94250]},"properties":{"label":"KLAX"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-73.87261,40.77725]},"properties":{"label":"KLGA"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-94.71391,39.29761]},"properties":{"label":"KMCI"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-81.30899,28.42939]},"properties":{"label":"KMCO"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-87.75242,41.78597]},"properties":{"label":"KMDW"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-89.97667,35.04242]},"properties":{"label":"KMEM"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-80.29011,25.79536]},"properties":{"label":"KMIA"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-87.89706,42.94708]},"properties":{"label":"KMKE"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-93.22177,44.88196]},"properties":{"label":"KMSP"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-90.25803,29.99339]},"properties":{"label":"KMSY"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-122.22072,37.72128]},"properties":{"label":"KOAK"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-95.89406,41.30317]},"properties":{"label":"KOMA"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-117.60119,34.05600]},"properties":{"label":"KONT"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-87.90667,41.98165]},"properties":{"label":"KORD"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-80.09558,26.68317]},"properties":{"label":"KPBI"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-122.59687,45.58871]},"properties":{"label":"KPDX"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-75.24087,39.87225]},"properties":{"label":"KPHL"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-112.01158,33.43428]},"properties":{"label":"KPHX"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-80.23286,40.49147]},"properties":{"label":"KPIT"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-78.78747,35.87764]},"properties":{"label":"KRDU"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-77.31967,37.50517]},"properties":{"label":"KRIC"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-117.18967,32.73356]},"properties":{"label":"KSAN"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-98.46978,29.53369]},"properties":{"label":"KSAT"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-85.73650,38.17409]},"properties":{"label":"KSDF"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-122.31178,47.44989]},"properties":{"label":"KSEA"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-122.37489,37.61897]},"properties":{"label":"KSFO"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-121.92911,37.36267]},"properties":{"label":"KSJC"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-111.97777,40.78839]},"properties":{"label":"KSLC"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-121.59078,38.69544]},"properties":{"label":"KSMF"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-117.86822,33.67567]},"properties":{"label":"KSNA"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-90.37003,38.74870]},"properties":{"label":"KSTL"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-74.06084,40.85010]},"properties":{"label":"KTEB"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-82.53325,27.97547]},"properties":{"label":"KTPA"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-149.99819,61.17408]},"properties":{"label":"PANC"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-157.92243,21.31868]},"properties":{"label":"PHNL"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-66.00200,18.43929]},"properties":{"label":"TJSJ"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-113.57972,53.30972]},"properties":{"label":"CYEG"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-63.50861,44.88083]},"properties":{"label":"CYHZ"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-119.37778,49.95611]},"properties":{"label":"CYLW"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-75.66917,45.32250]},"properties":{"label":"CYOW"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-71.39333,46.79111]},"properties":{"label":"CYQB"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-104.66583,50.43194]},"properties":{"label":"CYQR"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-89.32389,48.37194]},"properties":{"label":"CYQT"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-80.79889,46.62500]},"properties":{"label":"CYSB"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-79.39611,43.62750]},"properties":{"label":"CYTZ"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-73.74139,45.46806]},"properties":{"label":"CYUL"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-123.18444,49.19389]},"properties":{"label":"CYVR"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-97.23444,49.91000]},"properties":{"label":"CYWG"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-106.69972,52.17083]},"properties":{"label":"CYXE"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-91.90528,50.11389]},"properties":{"label":"CYXL"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-114.02028,51.11389]},"properties":{"label":"CYYC"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-123.42583,48.64694]},"properties":{"label":"CYYJ"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-52.75194,47.61861]},"properties":{"label":"CYYT"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-79.63056,43.67722]},"properties":{"label":"CYYZ"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[4.48444,50.90139]},"properties":{"label":"EBBR"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[8.54312,50.02642]},"properties":{"label":"EDDF"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[9.98823,53.63039]},"properties":{"label":"EDDH"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[7.14274,50.86592]},"properties":{"label":"EDDK"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[6.76677,51.28945]},"properties":{"label":"EDDL"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[11.78609,48.35378]},"properties":{"label":"EDDM"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[11.07811,49.49864]},"properties":{"label":"EDDN"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[9.22196,48.68988]},"properties":{"label":"EDDS"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[13.28771,52.55969]},"properties":{"label":"EDDT"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[9.68508,52.46106]},"properties":{"label":"EDDV"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[24.96333,60.31722]},"properties":{"label":"EFHK"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-1.74803,52.45386]},"properties":{"label":"EGBB"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-2.27495,53.35374]},"properties":{"label":"EGCC"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-0.19028,51.14806]},"properties":{"label":"EGKK"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[0.05528,51.50528]},"properties":{"label":"EGLC"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-0.46139,51.47750]},"properties":{"label":"EGLL"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-2.19778,57.20194]},"properties":{"label":"EGPD"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-4.43306,55.87194]},"properties":{"label":"EGPF"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-3.37250,55.95000]},"properties":{"label":"EGPH"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[4.76389,52.30861]},"properties":{"label":"EHAM"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-6.27008,53.42133]},"properties":{"label":"EIDW"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[12.65597,55.61792]},"properties":{"label":"EKCH"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[5.21814,60.29339]},"properties":{"label":"ENBR"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[11.10036,60.19392]},"properties":{"label":"ENGM"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[5.63778,58.87667]},"properties":{"label":"ENZV"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[20.96712,52.16575]},"properties":{"label":"EPWA"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[12.27982,57.66284]},"properties":{"label":"ESGG"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[17.91861,59.65194]},"properties":{"label":"ESSA"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[18.60167,-33.96481]},"properties":{"label":"FACT"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[30.95052,-29.97009]},"properties":{"label":"FADN"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[28.24600,-26.13917]},"properties":{"label":"FAJS"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[31.40556,30.12194]},"properties":{"label":"HECA"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[16.06878,45.74293]},"properties":{"label":"LDZA"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-2.91061,43.30110]},"properties":{"label":"LEBB"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[2.07846,41.29708]},"properties":{"label":"LEBL"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-3.56676,40.49356]},"properties":{"label":"LEMD"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-4.49911,36.67490]},"properties":{"label":"LEMG"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[2.73881,39.55168]},"properties":{"label":"LEPA"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-0.48163,39.48931]},"properties":{"label":"LEVC"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-0.71556,44.82834]},"properties":{"label":"LFBD"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[1.36382,43.62908]},"properties":{"label":"LFBO"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[5.09083,45.72639]},"properties":{"label":"LFLL"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[5.21361,43.43556]},"properties":{"label":"LFML"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[7.21758,43.66067]},"properties":{"label":"LFMN"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[2.55000,49.01278]},"properties":{"label":"LFPG"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[2.35944,48.72528]},"properties":{"label":"LFPO"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-1.61072,47.15319]},"properties":{"label":"LFRS"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[7.52991,47.58958]},"properties":{"label":"LFSB"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[7.52991,47.58958]},"properties":{"label":"LFSB"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[7.52991,47.58958]},"properties":{"label":"LFSB"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[7.62823,48.53832]},"properties":{"label":"LFST"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[23.94447,37.93636]},"properties":{"label":"LGAV"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[19.25559,47.43693]},"properties":{"label":"LHBP"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[8.72811,45.63061]},"properties":{"label":"LIMC"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[9.27703,45.44526]},"properties":{"label":"LIML"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[11.29012,44.53492]},"properties":{"label":"LIPE"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[12.35188,45.50514]},"properties":{"label":"LIPZ"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[12.25080,41.80447]},"properties":{"label":"LIRF"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[11.20510,43.80995]},"properties":{"label":"LIRQ"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[14.26000,50.10083]},"properties":{"label":"LKPR"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[34.87690,32.00950]},"properties":{"label":"LLBG"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[16.56972,48.11028]},"properties":{"label":"LOWW"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-8.68139,41.24806]},"properties":{"label":"LPPR"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-9.13592,38.78131]},"properties":{"label":"LPPT"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[6.10895,46.23806]},"properties":{"label":"LSGG"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[8.54917,47.46472]},"properties":{"label":"LSZH"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[32.99508,40.12808]},"properties":{"label":"LTAC"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[28.82111,40.97689]},"properties":{"label":"LTBA"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-68.36343,18.56737]},"properties":{"label":"MDPC"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-69.66893,18.42966]},"properties":{"label":"MDSD"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-90.52747,14.58327]},"properties":{"label":"MGGT"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-77.91336,18.50372]},"properties":{"label":"MKJS"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-103.31117,20.52180]},"properties":{"label":"MMGL"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-111.04786,29.09586]},"properties":{"label":"MMHO"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-99.07210,19.43630]},"properties":{"label":"MMMX"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-100.10688,25.77849]},"properties":{"label":"MMMY"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-105.25417,20.68008]},"properties":{"label":"MMPR"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-109.72104,23.15185]},"properties":{"label":"MMSD"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-86.87708,21.03653]},"properties":{"label":"MMUN"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-79.38345,9.07136]},"properties":{"label":"MPTO"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-84.20881,9.99386]},"properties":{"label":"MROC"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-89.05573,13.44095]},"properties":{"label":"MSLP"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-77.46623,25.03896]},"properties":{"label":"MYNN"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[174.79167,-37.00806]},"properties":{"label":"NZAA"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[172.53223,-43.48936]},"properties":{"label":"NZCH"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[174.80528,-41.32722]},"properties":{"label":"NZWN"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[121.23282,25.07773]},"properties":{"label":"RCTP"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[140.38639,35.76472]},"properties":{"label":"RJAA"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[135.24407,34.42731]},"properties":{"label":"RJBB"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[141.69228,42.77520]},"properties":{"label":"RJCC"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[130.45020,33.58664]},"properties":{"label":"RJFF"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[136.80528,34.85833]},"properties":{"label":"RJGG"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[135.43822,34.78553]},"properties":{"label":"RJOO"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[139.77969,35.55226]},"properties":{"label":"RJTT"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[126.49303,33.51131]},"properties":{"label":"RKPC"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[126.45052,37.46907]},"properties":{"label":"RKSI"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[126.79059,37.55831]},"properties":{"label":"RKSS"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[127.64587,26.19581]},"properties":{"label":"ROAH"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-58.52880,-34.82347]},"properties":{"label":"SAEZ"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-46.46951,-23.43208]},"properties":{"label":"SBGR"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-70.78580,-33.39297]},"properties":{"label":"SCEL"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-74.14695,4.70159]},"properties":{"label":"SKBO"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-76.38158,3.54322]},"properties":{"label":"SKCL"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-75.59052,6.21996]},"properties":{"label":"SKMD"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-77.11432,-12.02189]},"properties":{"label":"SPIM"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-66.99058,10.60312]},"properties":{"label":"SVMI"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-64.97336,18.33731]},"properties":{"label":"TIST"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-64.97336,18.33731]},"properties":{"label":"TIST"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-64.80172,17.70156]},"properties":{"label":"TISX"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-64.80172,17.70156]},"properties":{"label":"TISX"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-66.00200,18.43929]},"properties":{"label":"TJSJ"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-66.00200,18.43929]},"properties":{"label":"TJSJ"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-61.33724,10.59537]},"properties":{"label":"TTPP"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[37.90631,55.40879]},"properties":{"label":"UUDD"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[113.91460,22.30892]},"properties":{"label":"VHHH"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[100.74728,13.68111]},"properties":{"label":"VTBS"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[103.98746,1.35572]},"properties":{"label":"WSSS"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[151.17722,-33.94611]},"properties":{"label":"YSSY"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[116.58456,40.08011]},"properties":{"label":"ZBAA"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[113.29879,23.39244]},"properties":{"label":"ZGGG"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[113.81241,22.63947]},"properties":{"label":"ZGSZ"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[120.43167,30.22833]},"properties":{"label":"ZSHC"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[121.79237,31.14280]},"properties":{"label":"ZSPD"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[121.33632,31.19787]},"properties":{"label":"ZSSS"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[106.64101,29.71937]},"properties":{"label":"ZUCK"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[103.94709,30.57853]},"properties":{"label":"ZUUU"}}]};
+		var flight_id = "N582MM-1324323211-150-0";
+		var imgWindow = "flight_track_bigmap.rvt?ident=N582MM-1324323211-150-0&airports=KFLL+SVMI&height=428&width=400&departuretime=1324331820&arrivaltime=";
+		var oldMapUrl = "http://flightaware.com/ajax/oldmap.rvt?mapWidth=543&mapHeight=428&type=flight&ident=N582MM&flightOrigin=KFLL&flightDestination=SVMI&departuretime=1324331820&arrivaltime=&key=c4618c914c2911bed080323a3d17f64a461d56d3&time=1324363093&flight_id=N582MM-1324323211-150-0";
+		var imgWidth = 920;
+		var imgHeight = 600;
+		var mapsize = "regular";
+		var change_baselayer = true;
+		
+		</script><div id="map" style="height: auto; width: 100%; position: relative;"><noscript><a href='/live/flight_track_bigmap.rvt?ident=N582MM-1324323211-150-0&airports=KFLL+SVMI&height=428&width=400&departuretime=1324331820&arrivaltime=' target='newwin'><img border='0' id='oldMap' src='http://flightaware.com/ajax/oldmap.rvt?mapWidth=543&mapHeight=428&type=flight&ident=N582MM&flightOrigin=KFLL&flightDestination=SVMI&departuretime=1324331820&arrivaltime=&key=c4618c914c2911bed080323a3d17f64a461d56d3&time=1324363093&flight_id=N582MM-1324323211-150-0' /></a></noscript></div>
+</td>
+ <td style="vertical-align: top; text-align: left;" width="350">
+<table cellspacing="0" cellpadding="2" height="340" width="100%"><tr><th colspan="4" class="mainTrackHeader" style="background-color: #707277; min-height: 57px; min-width: 330px;">
+			 	<table width="100%" style="color: #FFFFFF;" cellpadding="0" cellspacing="0">
+				 <tr>
+				  <td style="padding-left: 2px; padding-right: 2px; vertical-align: center; max-width: 90px;"><a href="/photos/view/221170-53cea3d480be2f32f45009968a6e95e51ad91d1b/aircrafttype/LJ60"><img src="http://e1.photos.flightcdn.com/photos/retriever/fea42c82a4b27aa6c76217eed6e5d2e80561fa6e" border="0" width="80" height="60" class="thumbnail_nav" alt="FlightAware Photo"  /></a></td>
+				  <td valign="top" style="text-align: left; font-size: 16px; font-weight: normal;" class="nowrap"> <span title="november fife eight two mike mike ">N582MM</span> <font style="font-size: 12px;"></font><br /><font style="font-size: 10px;"> (<a href="/resources/registration/N582MM">registration</a>) (<a href="/photos/aircraft/N582MM">photos</a>) </font><br /><span title="2711 CENTERVILLE RD STE 400"><font style="font-size: 10px;">L60-227 LEASING CORP<br />WILMINGTON DE</font></span></td>
+				  <td width="37" align="right" style="text-align: right; padding-left: 15px; padding-right: 5px;"><a href="/account/manage/alerts/0/add?m_ident=N582MM;mode=simple" style="text-decoration: none !important;"><img src="http://e1.flightcdn.com/images/newer_alert_icon.gif" border="0" style="padding-right: 12px;"/><p style="font-size: 7pt; margin-top:0px; white-space: nowrap;">Alert Me</p></a></td>
+				  <!-- <td id="alertLink" width="110" style="text-align: left; font-size: 10px;" align="right"><a href="/account/manage/alerts/0/add?m_ident=N582MM;mode=simple"> Get Notified </a> of <br /> this flight's activity.</td> -->
+				 </tr></table>
+				</th></tr>
+			<tr>
+				 <th class="secondaryHeader">Aircraft</th>
+				<td class="smallrow1" width="90%" colspan="3" style="padding-left: .75em; text-align: left" nowrap="nowrap">Learjet 60 (twin-jet) (LJ60/<span title="RNP and RVSM">Q</span> - <a href="/live/aircrafttype/LJ60">track</a> or <a href="/photos/aircrafttype/LJ60">photos</a>)</td>
+			</tr>
+				
+       		 	<tr>
+				<th class="secondaryHeader" width="10">Origin</th>
+				<td class="smallrow2" nowrap="nowrap" colspan="3" style="text-align: left">&nbsp;  <span title="Fort Lauderdale, FL">Hollywood Int'l</span> (KFLL - <a href="/live/airport/KFLL">track</a> or <a href="/resources/airport/KFLL">info</a>)</td>
+			</tr>
+       		 	<tr>
+				<th class="secondaryHeader">Destination</th>
+				<td class="smallrow1" nowrap="nowrap" colspan="3" style="text-align: left">&nbsp;  <span title="Maiquetia, Vargas">Simon Bolivar Int'l (Maiquetia Int'l)</span> (SVMI / CCS - <a href="/live/airport/SVMI">track</a> or <a href="/resources/airport/SVMI">info</a>)</td>
+			</tr>
+			<tr>
+				<th class="secondaryHeader">&nbsp;</th>
+				<td colspan="3" class="smallrow1">&nbsp; <i><a href="/live/findflight/KFLL/SVMI">Other flights between these airports</a></i></td>
+			</tr><tr>
+						<th class="secondaryHeader">Route</th>
+						<td colspan="3" class="smallrow2" style="font-size: 10px; padding-left: 1em;">BEECH2 BAHMA HODGY A315 PJG UG446 VSJ MIQ  </td>
+				</tr>
+       		 	<tr>
+				<th class="secondaryHeader">Date</th>
+				<td colspan="3" class="smallrow1" style="text-align: left">&nbsp; Monday, December 19 2011</td>
+			</tr>
+       		 	<tr>
+				<th class="secondaryHeader">Duration</th>
+				<td colspan="3" class="smallrow2" style="text-align: left">&nbsp; 2 hours 50 minutes</td>
+
+			</tr><tr>
+			<th class="secondaryHeader">Status</th>
+			<td class="smallrow1" colspan="3" nowrap="nowrap">&nbsp; <font size="-1"><i>result unknown (<a href="/about/faq.rvt#flightresultunknown">?</a>)</i> (<a href="/live/flight/N582MM/history/20111219/2130Z/KFLL/SVMI/tracklog">track log &amp; graph</a>)</font></td>
+			</tr><tr><th class="secondaryHeader">Distance</th>
+		<td colspan="3" class="smallrow2" style="text-align: left">&nbsp; Direct: 1,373 sm&nbsp; &nbsp; Planned: 1,412 </td></tr><tr class="thirdHeader">
+			<th class="secondaryHeader">&nbsp;</th>
+			<td>Scheduled</td>
+			
+			<td>Actual/<i>Estimated</i></td>
+			</tr><tr class="smallrow2">
+			<th class="secondaryHeader">Departure</th>
+			<td>04:30PM&nbsp;EST</td>
+			
+			<td>04:57PM&nbsp;EST</td>
+			</tr><tr class="smallrow1">
+			<th class="secondaryHeader">Arrival</th>
+			<td>07:50PM&nbsp;VET</td>
+			
+			<td><font size="-1"><i>result unknown (<a href="/about/faq.rvt#flightresultunknown">?</a>)</i> (<a href="/live/flight/N582MM/history/20111219/2130Z/KFLL/SVMI/tracklog">track log &amp; graph</a>)</font></td>
+			</tr><tr class="smallrow2">
+				<th class="secondaryHeader">Speed</th>
+				<td><span title="Mach 0.78">453 kts</span></td>
+				
+				<td></td>
+				</tr><tr class="smallrow1">
+				<th class="secondaryHeader">Altitude</th>
+				<td>39,000 feet</td>
+				
+				<td></td>
+				</tr></table>
+		</td>
+</tr>
+<tr><td colspan="2" style="text-align: center;">
+				<font class="flightStatsBad" style="font-size: 11px;">
+						 At least part of this flight occurs outside of FlightAware's primary service area.
+						 <a href="/about/faq.rvt#intl">Learn more about FlightAware's coverage and service areas here.</a>
+                       	 </td>
+                	</tr>
+<tr><td colspan="2" class="bodyDivider"></td></tr>
+</table>
+<table width="100%" cellspacing="0" cellpadding="0">
+
+<tr><td class="greyAd">
+		<iframe
+		 src="http://ad.doubleclick.net/adi/flight.main/live;sz=728x90,468x60;aircraft_make=Learjet;aircraft_model=60;aircraft_type=LJ60;destination=SVMI;destination_IATA=CCS;destination_state=;engine_category=turbine;engine_type=twin-jet;filed_ete=2h3h;ident=N582MM;ident_state=DE;lang=en;locale=en_US;origin=KFLL;origin_IATA=FLL;origin_state=FL;physclass=J;suffix=MM;type=ga;unitName=flight;userGen=f;userclass=G;dc_ref=http%3a%2f%2fflightaware.com%2flive%2fflight%2fN582MM?ident=N582MM;tile=2;ord=1324363093?"
+		 width="728"
+		 height="90"
+		 marginwidth="0"
+		 marginheight="0"
+		 frameborder="0"
+		 style="display: block; margin-right: auto; margin-left: auto;"
+		 scrolling="no">
+		</iframe></td></tr>
+<tr><td><div class="bottomShadow">&nbsp;</div></td></tr>
+<tr><td colspan="2">&nbsp;</td></tr>
+<tr><td colspan="2">
+<span class="faActionButton"><a href="/account/manage/alerts/0/add?m_ident=N582MM;mode=simple" id="alert_me" > Get Notified  of  this flight's activity. <img src="http://e0.flightcdn.com/images/orange_action_arrows.png" width="7" height="10" border="0" /></a></span>
+</td></tr>
+<tr><td colspan="2">&nbsp;</td></tr>
+<tr><td>
+
+	    <table class="fullWidth" style="border-collapse: collapse;">
+		<tr><td colspan="7" class="mainHeader">
+		 <div style="width: 25%; float: left;">ACTIVITY LOG</div>
+		 <div style="width: 75%; font-size: 12px; text-align: right; float: right;">
+		 Want a full history search for N582MM dating back to 2005? <a href="/live/flight/N582MM/history/buy">Buy now.  Get it within one hour.</a>
+		 </div>
+		 </td>
+		</tr>
+		</table>
+<table class="prettyTable" border="0" align="center" cellpadding="2" width="100%" style="border: 1px solid #b2b2b2;">
+
+    <thead>
+      <tr>
+         <th>Date</th>
+     <th>Aircraft</th>
+     <th>Origin</th>
+     <th>Destination</th>
+         <th>Departure</th>
+         <th>Arrival</th>
+         <th>Duration</th>
+      </tr>
+    </thead>
+  <tr class="smallActiverow1" style="background-color: #FAE051" onclick="" onmouseover="this.className='smallActiverow1Hover';" onmouseout="this.className='smallActiverow1';">
+					<td><a href="/live/flight/N582MM/history/20111219/2130Z/KFLL/SVMI">19-Dec-2011</a>  </td>
+<td>LJ60/<span title="RNP and RVSM">Q</span></td>
+<td><span title="Fort Lauderdale, FL">Hollywood Int'l</span> (<a href="/live/airport/KFLL">KFLL</a>)</td>
+<td><span title="Maiquetia, Vargas">Simon Bolivar Int'l (Maiquetia Int'l)</span> (<a href="/live/airport/SVMI">SVMI / CCS</a>)</td>
+
+			        	<td>04:57PM&nbsp;EST</td>
+			        	<td><font size="-1"><i>result unknown (<a href="/about/faq.rvt#flightresultunknown">?</a>)</i></font></td>
+			        	<td class="nowrap">n/a</td>
+			        	</tr>
+  <tr class="smallActiverow2"  onclick="location.href='/live/flight/N582MM/history/20111207/0131Z/SVMI/KFLL';" onmouseover="this.className='smallActiverow2Hover';" onmouseout="this.className='smallActiverow2';">
+					<td><a href="/live/flight/N582MM/history/20111207/0131Z/SVMI/KFLL">06-Dec-2011</a>  </td>
+<td>LJ60/<span title="RNP and RVSM">Q</span></td>
+<td><span title="Maiquetia, Vargas">Simon Bolivar Int'l (Maiquetia Int'l)</span> (<a href="/live/airport/SVMI">SVMI / CCS</a>)</td>
+<td><span title="Fort Lauderdale, FL">Hollywood Int'l</span> (<a href="/live/airport/KFLL">KFLL</a>)</td>
+
+			        	<td>09:11PM&nbsp;VET</td>
+			        	<td>11:02PM&nbsp;EST</td>
+			        	<td class="nowrap">2:21</td>
+			        	</tr>
+  <tr class="smallActiverow1"  onclick="location.href='/live/flight/N582MM/history/20111206/1600Z/KFLL/SVMI';" onmouseover="this.className='smallActiverow1Hover';" onmouseout="this.className='smallActiverow1';">
+					<td><a href="/live/flight/N582MM/history/20111206/1600Z/KFLL/SVMI">06-Dec-2011</a>  </td>
+<td>LJ60/<span title="RNP and RVSM">Q</span></td>
+<td><span title="Fort Lauderdale, FL">Hollywood Int'l</span> (<a href="/live/airport/KFLL">KFLL</a>)</td>
+<td><span title="Maiquetia, Vargas">Simon Bolivar Int'l (Maiquetia Int'l)</span> (<a href="/live/airport/SVMI">SVMI / CCS</a>)</td>
+
+			        	<td>11:22AM&nbsp;EST</td>
+			        	<td><font size="-1"><i>result unknown (<a href="/about/faq.rvt#flightresultunknown">?</a>)</i></font></td>
+			        	<td class="nowrap">n/a</td>
+			        	</tr>
+<tr class="smallrow2">
+ <td colspan="7" style="text-align: center'"><strong>Registered users (registering is free and easy!) view 4 months history. <a href="/account/join">Join</a></strong></td>
+</tr>
+</table>
+<div class="bottomShadow">&nbsp;</div>
+</td></tr>
+</table>
+  </div>
+
+  </td></tr></table>
+	 <div id="Footer">
+      <div id="footerLanguages">
+	  <a onclick="location.href='/account/locale_switch.rvt?locale=ar_SA'; return false;" href="http://ar.flightaware.com/live/flight/N582MM">العربية</a> | <a onclick="location.href='/account/locale_switch.rvt?locale=de_DE'; return false;" href="http://de.flightaware.com/live/flight/N582MM">Deutsch</a> | <a onclick="location.href='/account/locale_switch.rvt?locale=en_GB'; return false;" href="http://uk.flightaware.com/live/flight/N582MM">English (UK)</a> | <a onclick="location.href='/account/locale_switch.rvt?locale=en_US'; return false;" href="http://flightaware.com/live/flight/N582MM">English (USA)</a> | <a onclick="location.href='/account/locale_switch.rvt?locale=es_ES'; return false;" href="http://es.flightaware.com/live/flight/N582MM">Español (España)</a> | <a onclick="location.href='/account/locale_switch.rvt?locale=fr_FR'; return false;" href="http://fr.flightaware.com/live/flight/N582MM">Français</a> | <a onclick="location.href='/account/locale_switch.rvt?locale=he_IL'; return false;" href="http://he.flightaware.com/live/flight/N582MM">עִבְרִית</a> | <a onclick="location.href='/account/locale_switch.rvt?locale=it_IT'; return false;" href="http://it.flightaware.com/live/flight/N582MM">Italiano</a> | <a onclick="location.href='/account/locale_switch.rvt?locale=ja_JP'; return false;" href="http://ja.flightaware.com/live/flight/N582MM">日本語</a> | <a onclick="location.href='/account/locale_switch.rvt?locale=ko_KR'; return false;" href="http://ko.flightaware.com/live/flight/N582MM">한국어</a> | <a onclick="location.href='/account/locale_switch.rvt?locale=nl_NL'; return false;" href="http://nl.flightaware.com/live/flight/N582MM">Nederlands</a> | <a onclick="location.href='/account/locale_switch.rvt?locale=pt_BR'; return false;" href="http://pt.flightaware.com/live/flight/N582MM">Português</a> | <a onclick="location.href='/account/locale_switch.rvt?locale=ru_RU'; return false;" href="http://ru.flightaware.com/live/flight/N582MM">Русский</a> | <a onclick="location.href='/account/locale_switch.rvt?locale=sv_SE'; return false;" href="http://sv.flightaware.com/live/flight/N582MM">Svenska</a> | <a onclick="location.href='/account/locale_switch.rvt?locale=tr_TR'; return false;" href="http://tr.flightaware.com/live/flight/N582MM">Türkçe</a> | <a onclick="location.href='/account/locale_switch.rvt?locale=zh_CN'; return false;" href="http://zh.flightaware.com/live/flight/N582MM">中文(简体)</a> | <a onclick="location.href='/account/locale_switch.rvt?locale=zh_TW'; return false;" href="http://zh-tw.flightaware.com/live/flight/N582MM">中文(台灣)</a>
+	  </div>
+      <div id="footerCopyright">
+	  &copy; 2011 FlightAware | <a href="/about/termsofuse">Terms &amp; Conditions</a>  | <a href="/about/privacy">Privacy</a> | <a href="/about/faq.rvt">FAQs</a>
+	  </div>
+	  
+   </div>
+   </div>
+   <script>var lazyload_scripts = [];</script>
+<script>if (document.getElementById('FacebookShare') && document.querySelector) lazyload_scripts.push('http://e1.flightcdn.com/include/share_js.rvt?20111205');</script>
+<script>_qoptions = { qacct: 'p-16S-sAgkGlgVs'  }; lazyload_scripts.push('http://edge.quantserve.com/quant.js');</script>
+<noscript><img src='http://pixel.quantserve.com/pixel/p-16S-sAgkGlgVs.gif' style='display: none;' height='1' width='1' alt=''></noscript>
+<script>var _gaq = _gaq || []; _gaq.push(['_setAccount', 'UA-498336-1'], ['_trackPageview'], ['_trackPageLoadTime'], ['_setVar', 'US US/en_US'], ['_initData'] ); lazyload_scripts.push('http://www.google-analytics.com/ga.js');</script>
+<script>var _comscore = [{ c1: '2', c2: '8950477' }]; lazyload_scripts.push('http://sb.scorecardresearch.com/beacon.js');</script>
+<script type='text/javascript'>
+function lazyLoad() {
+	for (var x = 0; x < lazyload_scripts.length; x++) {
+		var el = document.createElement('script'); el.type = 'text/javascript'; el.async = true; el.src = lazyload_scripts[x];
+		document.getElementsByTagName('head')[0].appendChild(el);
+	}
+}
+if (typeof window.addEventListener !== 'undefined') window.addEventListener('load', lazyLoad, false);
+else if (typeof window.attachEvent !== 'undefined') window.attachEvent('onload', lazyLoad);
+else lazyLoad();
+</script>
+ </body>
+</html>

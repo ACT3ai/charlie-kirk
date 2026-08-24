@@ -1,0 +1,31 @@
+{
+  "retrieved_utc": "2026-08-24T16:29:36.628Z",
+  "source": "adsb-lol",
+  "source_role": "the archive this investigation already used",
+  "url": "https://adsb.lol/globe_history/2025/09/02/traces/a8/trace_full_a728a8.json",
+  "http_status": 200,
+  "bytes": 234852,
+  "tail": "N560TW",
+  "hex": "a728a8",
+  "utc_date": "2025-09-02",
+  "summary": {
+    "registration": "N560TW",
+    "type": "C56X",
+    "icao": "a728a8",
+    "points": 1389,
+    "first_seen_utc": "2025-09-02T00:00:39.320Z",
+    "first_pos": [
+      33.630791,
+      -111.901417
+    ],
+    "first_on_ground": true,
+    "last_seen_utc": "2025-09-02T02:28:45.140Z",
+    "last_pos": [
+      33.622124,
+      -111.909303
+    ],
+    "last_on_ground": true,
+    "wheels_up_utc": "2025-09-02T00:01:15.880Z",
+    "wheels_down_utc": "2025-09-02T02:24:56.690Z"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "retrieved_utc": "2026-08-24T16:29:36.628Z",
+  "source": "airplanes-live",
+  "source_role": "BACKUP ARCHIVE — independent volunteer network",
+  "url": "https://globe.airplanes.live/globe_history/2025/09/12/traces/75/trace_full_a77e75.json",
+  "http_status": 200,
+  "bytes": 544107,
+  "tail": "N582MM",
+  "hex": "a77e75",
+  "utc_date": "2025-09-12",
+  "summary": {
+    "registration": "N582MM",
+    "type": "LJ60",
+    "icao": "a77e75",
+    "points": 3440,
+    "first_seen_utc": "2025-09-12T00:00:02.210Z",
+    "first_pos": [
+      42.333627,
+      -113.144361
+    ],
+    "first_on_ground": false,
+    "last_seen_utc": "2025-09-12T17:46:01.750Z",
+    "last_pos": [
+      30.338605,
+      -85.787128
+    ],
+    "last_on_ground": false,
+    "wheels_up_utc": "2025-09-12T16:00:31.960Z",
+    "wheels_down_utc": "2025-09-12T05:00:36.840Z"
+  }
+}

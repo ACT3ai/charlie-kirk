@@ -13,13 +13,32 @@ Run it by hand, or let the pre-commit hook run it:
 Exit 0 = clean. Exit 1 = at least one finding. Findings print the file, the line
 number and the pattern that matched -- NEVER the secret itself.
 
-ONE DELIBERATE EXCLUSION, and it is the interesting one. Archived copies of
-flight-tracking pages under site/docs/Planes/*/data/recovered/ carry
-Flightradar24's OWN client-side Firebase web key, baked into the HTML they served
-to the public. That key is theirs, it was already public on their own site, and
-the captures are evidence of what those pages showed on the day we pulled them.
-Stripping it would damage the evidence. It is not our credential and it is not
-withheld -- it is skipped on purpose, and this comment is the record of why.
+ARCHIVED CAPTURES ARE SCANNED TOO -- and this is the part that changed.
+
+Archived copies of flight-tracking pages under site/docs/Planes/*/data/recovered/
+carry the VENDOR'S own client-side keys, baked into the HTML those sites served
+to the public: Flightradar24's Firebase web key, FlightAware's Mapbox token,
+Stadia Maps key and Vicinity token. Those keys are theirs and were already public
+on their own sites, so this script used to skip those paths entirely and said so.
+
+That was wrong in one practical respect: GitHub push protection does not care
+whose key it is. On 2026-08-24 it rejected the push of the entire investigation
+over FlightAware's Mapbox token in
+site/docs/Planes/N102DZ/data/recovered/N102DZ_20260114192750_wayback_flightaware.html.
+A scanner that passes a commit the remote will refuse is not protecting anything.
+
+So captures are now scanned, and the fix is redaction rather than deletion:
+security/scrub_vendor_tokens.py replaces just the VALUE with
+__REDACTED_VENDOR_CREDENTIAL_sha256_<16 hex>__, leaving the key name, the markup
+and every byte of flight data untouched. The fingerprint is one-way but stable,
+so "this page served the same key as that page" is still provable. The evidence
+survives; the credential does not.
+
+Captures are scanned with the SHAPE patterns only -- the same unmistakable
+formats GitHub itself blocks on. The looser "a name containing key/token is
+being assigned something random" heuristic is not applied to them, because raw
+ADS-B traces are full of random-looking values that are position data, not
+secrets, and 1,000 false positives train people to ignore the scanner.
 """
 import argparse
 import re
@@ -67,15 +86,24 @@ def looks_random(value: bytes) -> bool:
     wordy = len([w for w in re.split(rb"[-_.]", value) if w.isalpha() and len(w) > 2]) >= 3
     return has_digit and has_alpha and not wordy
 
-# Paths whose matches are third-party evidence, not our credentials. See the
-# module docstring -- these are skipped ON PURPOSE.
+# Paths not scanned at all: this script (it contains the patterns themselves),
+# its redacting twin, and vendored dependencies we do not author.
 SKIP = (
+    re.compile(r"^security/scan_secrets\.py$"),
+    re.compile(r"^security/scrub_vendor_tokens\.py$"),
+    re.compile(r"(^|/)node_modules/"),
+)
+
+# Verbatim third-party captures. Scanned, but with the shape patterns only --
+# see the module docstring for why the assigned-secret heuristic is held back.
+CAPTURE = (
     re.compile(r"/data/recovered/"),
     re.compile(r"/data/adsb/"),
-    re.compile(r"^security/scan_secrets\.py$"),
-    re.compile(r"^node_modules/"),
-    re.compile(r"^site/node_modules/"),
+    re.compile(r"/captures/"),
 )
+
+# The marker scrub_vendor_tokens.py leaves behind. Never a finding.
+REDACTED = re.compile(rb"__REDACTED_VENDOR_CREDENTIAL_sha256_[0-9a-f]{16}__")
 
 # Placeholder values that look like assignments but carry nothing.
 PLACEHOLDER = re.compile(rb"(?i)(your[_-]?|example|placeholder|xxxx|<[a-z_]+>|redacted|changeme|\.{3})")
@@ -91,6 +119,7 @@ def tracked(staged: bool) -> list[str]:
 def scan(path: str) -> list[tuple[int, str]]:
     if any(rx.search(path) for rx in SKIP):
         return []
+    is_capture = any(rx.search(path) for rx in CAPTURE)
     try:
         with open(path, "rb") as fh:
             data = fh.read()
@@ -105,11 +134,13 @@ def scan(path: str) -> list[tuple[int, str]]:
         matched = False
         for name, rx in PATTERNS:
             m = rx.search(line)
-            if m and not PLACEHOLDER.search(m.group(0)):
+            if m and not PLACEHOLDER.search(m.group(0)) and not REDACTED.search(line):
                 hits.append((lineno, name))
                 matched = True
                 break
         if matched:
+            continue
+        if is_capture:
             continue
         m = ASSIGNED.search(line)
         if m and looks_random(m.group(1)):
@@ -134,8 +165,9 @@ def main() -> int:
         print(f"{findings} possible credential(s) found. NOTHING IS PRINTED ABOVE EXCEPT THE LOCATION.")
         print("Move the value to ~/.credentials/charlie_kirk.json (chmod 600) and read it through")
         print("site/docs/Planes/following/apis/public_open_source/code/lib/credentials.js.")
-        print("If the value is already public third-party evidence, add its path to SKIP in this")
-        print("script WITH a comment saying why -- never by deleting the check.")
+        print("If it is a THIRD-PARTY key inside an archived capture, do not skip it and do not")
+        print("delete the file -- run:  python3 security/scrub_vendor_tokens.py")
+        print("which redacts the value in place and leaves the capture otherwise intact.")
         return 1
     print("clean: no credentials found in "
           + ("staged files" if args.staged else "tracked files"))

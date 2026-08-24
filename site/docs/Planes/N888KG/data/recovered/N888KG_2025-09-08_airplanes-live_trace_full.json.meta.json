@@ -1,0 +1,31 @@
+{
+  "retrieved_utc": "2026-08-24T16:29:36.628Z",
+  "source": "airplanes-live",
+  "source_role": "BACKUP ARCHIVE — independent volunteer network",
+  "url": "https://globe.airplanes.live/globe_history/2025/09/08/traces/75/trace_full_ac3c75.json",
+  "http_status": 200,
+  "bytes": 73379,
+  "tail": "N888KG",
+  "hex": "ac3c75",
+  "utc_date": "2025-09-08",
+  "summary": {
+    "registration": "N888KG",
+    "type": "CL30",
+    "icao": "ac3c75",
+    "points": 423,
+    "first_seen_utc": "2025-09-08T00:01:56.720Z",
+    "first_pos": [
+      37.988205,
+      -111.46489
+    ],
+    "first_on_ground": false,
+    "last_seen_utc": "2025-09-08T00:29:59.110Z",
+    "last_pos": [
+      40.21907,
+      -111.719391
+    ],
+    "last_on_ground": true,
+    "wheels_up_utc": null,
+    "wheels_down_utc": "2025-09-08T00:27:09.970Z"
+  }
+}

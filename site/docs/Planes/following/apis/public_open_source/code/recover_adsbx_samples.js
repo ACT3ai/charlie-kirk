@@ -21,6 +21,7 @@
 //   node recover_adsbx_samples.js
 //   node recover_adsbx_samples.js --tail N102DZ --from 2022-01 --to 2026-08
 import { mkdir, writeFile } from "node:fs/promises";
+import { scrubVendorCredentials } from "./lib/scrub.js";
 import { FLEET } from "./lib/fleet.js";
 
 const UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 Chrome/125.0 Safari/537.36";
@@ -73,9 +74,14 @@ for (const ac of fleet) {
     let sum = null; try { sum = summarise(JSON.parse(body)); } catch { /* */ }
     await mkdir(dir, { recursive: true });
     const name = `${ac.reg}_${date}_adsbexchange-samples_trace_full.json`;
-    await writeFile(`${dir}/${name}`, body);
+    // Belt and braces. A raw trace carries no vendor key, so this is normally a
+    // no-op recording 0 -- but every capture written by this investigation goes
+    // through the same gate, so none can quietly ship one. See lib/scrub.js.
+    const scrubbed = scrubVendorCredentials(body);
+    await writeFile(`${dir}/${name}`, scrubbed.text);
     await writeFile(`${dir}/${name}.meta.json`, JSON.stringify({
       retrieved_utc: NOW, source: "adsbexchange-samples",
+      vendor_credentials_redacted: scrubbed.count,
       source_role: "BACKUP ARCHIVE — ADSBX free monthly sample, reaches back to 2016; " +
                    "the only free source covering the 2022 dates the daily archives do not hold",
       url, http_status: 200, bytes: Buffer.byteLength(body),
