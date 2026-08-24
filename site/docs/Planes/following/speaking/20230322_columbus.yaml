@@ -1,0 +1,1362 @@
+# GENERATED FILE - regenerate, do not hand-edit.
+#   node/python: apis/public_open_source/code/airports_near.py --only 20230322_columbus
+#   The prompt that governs this file: prompts/p_airports_near.md
+schema: ck.speaking.airports_near/1
+generated_utc: "2026-08-24T19:03:26Z"
+generated_by: site/docs/Planes/following/apis/public_open_source/code/airports_near.py
+page:
+  slug: 20230322_columbus
+  mdx: site/docs/Planes/following/speaking/20230322_columbus.mdx
+  yaml: site/docs/Planes/following/speaking/20230322_columbus.yaml
+  url: /Planes/following/speaking/20230322_columbus
+event:
+  title: "Live Free Tour — Ohio State University with Candace Owens"
+  who: Charlie
+  attendee_class: CHARLIE_ONLY
+  charlie_present: "yes"
+  erika_present: not_documented
+  attendance_status: held
+  event_type: campus
+  dates:
+    raw: 2023-03-22
+    first_day: 2023-03-22
+    last_day: 2023-03-22
+    granularity: DAY
+    certainty: EVENT_DATE
+    # PODCAST_PROXY means the date is a podcast RELEASE date and the event was normally 0-7 days earlier. Never publish a same-day claim off one.
+  local_time:
+    raw: null
+    parsed_hhmm: null
+    basis: no_time_published
+    timezone: America/New_York
+    timezone_method: timezonefinder
+  location:
+    city: Columbus
+    state: OH
+    country: USA
+    venue: "Ohio State University"
+    metro_area: "Columbus OH"
+    geocode:
+      lat: 39.98394
+      lon: -82.98488
+      method: us_census_2024_gazetteer
+      matched: "Columbus city"
+  source: "TPUSA Spring 2023 Live Free press release; podcast 2023-03-25"
+  source_url: "https://backend.tpusa.com/wp-content/uploads/2023/01/Press-Release-TPUSA-Tour-Spring-2023-Live-Free.pdf"
+  days_before_sept10_2025: 903
+search:
+  radius_miles: 40
+  window_days_each_side: 2
+  window_from: 2023-03-20
+  window_to: 2023-03-24
+  window_day_count: 5
+  centre: KCMH
+  tails_searched:
+    - N102DZ
+    - N1098L
+    - N2100L
+    - N40JD
+    - N560TW
+    - N582MM
+    - N59906
+    - N872RA
+    - N888KG
+    - SU-BGM
+    - SU-BND
+    - SU-BTT
+    - SU-BTU
+    - SU-BTV
+    - T7-ELL
+  sources_searched:
+    - "recovered ADS-B traces on disk (site/docs/Planes/<TAIL>/data/recovered/)"
+    - site/docs/Planes/following/flights.csv
+    - site/docs/Planes/following/overlaps.csv
+arrival_airport:
+  # ESTIMATE. No published Kirk-side flight record exists for this event unless
+  # the observed_by_adsb block below is non-empty. This is arithmetic on the
+  # event time, not a landing record.
+  chosen_airport:
+    airport_code: KCMH
+    icao: KCMH
+    iata: CMH
+    name: "John Glenn Columbus International Airport"
+    city: Columbus
+    region: US-OH
+    country: US
+    type: large_airport
+    elevation_ft: 815
+    longest_runway_ft: 10114
+    longest_runway_surface: ASP
+    runway_count: 2
+    runways_lighted: true
+    scheduled_service: true
+    jet_capability: jet_capable
+    lat: 39.998
+    lon: -82.8919
+    distance_mi: 5.0
+    bearing: E
+  distance_from_event_city_mi: 5.0
+  selection_basis: CURATED_CSV_AND_COMPUTED_NEAREST_JET_FIELD_AGREE
+  curated_value_in_tpusa_events_csv:
+    airport_code: KCMH
+    airport_name: "John Glenn Columbus International"
+    distance_mi: 6
+  computed_nearest_jet_capable_field:
+    airport_code: KCMH
+    name: "John Glenn Columbus International Airport"
+    distance_mi: 5.0
+    longest_runway_ft: 10114
+  estimated_arrival:
+    date: 2023-03-22
+    local_time: "16:00"
+    timezone: America/New_York
+    utc: "2023-03-22T20:00:00Z"
+    basis: "no event time published; 19:00 local assumed for arithmetic only; minus 3h"
+    confidence: low
+  estimated_departure:
+    date: 2023-03-22
+    local_time: "23:00"
+    timezone: America/New_York
+    utc: "2023-03-23T03:00:00Z"
+    basis: "event end + 4h (speech, exit, wheels-up)"
+    confidence: low
+  observed_by_adsb: []
+  observed_by_adsb_note: "NO Kirk-side aircraft is on disk on the ground within 40 miles of KCMH in this window. The arrival and departure above stay estimates."
+airports_within_radius:
+  # Every field a private jet could physically use within the radius.
+  # Heliports, seaplane bases, balloonports and closed fields are excluded -
+  # a business jet cannot use any of them. Everything else is kept, including
+  # every small strip with no scheduled service: those are the point of the sweep.
+  radius_miles: 40
+  centre_airport: KCMH
+  count: 57
+  jet_capable_count: 8
+  light_jet_capable_count: 4
+  no_scheduled_service_count: 55
+  source: "OurAirports (CC0) airports.csv + runways.csv"
+  list:
+    - airport_code: KCMH
+      icao: KCMH
+      iata: CMH
+      name: "John Glenn Columbus International Airport"
+      city: Columbus
+      region: US-OH
+      country: US
+      type: large_airport
+      elevation_ft: 815
+      longest_runway_ft: 10114
+      longest_runway_surface: ASP
+      runway_count: 2
+      runways_lighted: true
+      scheduled_service: true
+      jet_capability: jet_capable
+      lat: 39.998
+      lon: -82.8919
+      distance_mi: 0.0
+      bearing: N
+      tracked_plane_presence_in_window: []
+    - airport_code: KOSU
+      icao: KOSU
+      iata: OSU
+      name: "The Ohio State University Airport - Don Scott Field"
+      city: Columbus
+      region: US-OH
+      country: US
+      type: medium_airport
+      elevation_ft: 905
+      longest_runway_ft: 5004
+      longest_runway_surface: ASP
+      runway_count: 3
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: jet_capable
+      lat: 40.0798
+      lon: -83.073
+      distance_mi: 11.1
+      bearing: WNW
+      tracked_plane_presence_in_window: []
+    - airport_code: KLCK
+      icao: KLCK
+      iata: LCK
+      name: "Rickenbacker International Airport"
+      city: Columbus
+      region: US-OH
+      country: US
+      type: medium_airport
+      elevation_ft: 744
+      longest_runway_ft: 12103
+      longest_runway_surface: PEM
+      runway_count: 2
+      runways_lighted: true
+      scheduled_service: true
+      jet_capability: jet_capable
+      lat: 39.8138
+      lon: -82.9278
+      distance_mi: 12.9
+      bearing: S
+      tracked_plane_presence_in_window: []
+    - airport_code: OI56
+      icao: null
+      iata: null
+      name: "Lee's Dogpatch Airport"
+      city: Kirkersville
+      region: US-OH
+      country: US
+      type: small_airport
+      elevation_ft: 1055
+      longest_runway_ft: 1280
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 39.9532
+      lon: -82.6407
+      distance_mi: 13.7
+      bearing: ESE
+      tracked_plane_presence_in_window: []
+    - airport_code: US-6573
+      icao: null
+      iata: null
+      name: "Warped Wing Airport"
+      city: Johnstown
+      region: US-OH
+      country: US
+      type: small_airport
+      elevation_ft: 1130
+      longest_runway_ft: 2366
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.15957
+      lon: -82.73766
+      distance_mi: 13.8
+      bearing: NE
+      tracked_plane_presence_in_window: []
+    - airport_code: OH43
+      icao: null
+      iata: null
+      name: "Anderson Airport"
+      city: "Canal Winchester"
+      region: US-OH
+      country: US
+      type: small_airport
+      elevation_ft: 800
+      longest_runway_ft: null
+      longest_runway_surface: null
+      runway_count: 0
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: unknown
+      lat: 39.8334
+      lon: -82.7332
+      distance_mi: 14.1
+      bearing: SE
+      tracked_plane_presence_in_window: []
+    - airport_code: KTZR
+      icao: null
+      iata: null
+      name: "Bolton Field"
+      city: Columbus
+      region: US-OH
+      country: US
+      type: small_airport
+      elevation_ft: 905
+      longest_runway_ft: 5500
+      longest_runway_surface: ASP
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: jet_capable
+      lat: 39.9012
+      lon: -83.1369
+      distance_mi: 14.6
+      bearing: WSW
+      tracked_plane_presence_in_window: []
+    - airport_code: OH44
+      icao: null
+      iata: null
+      name: "Head Field Airport"
+      city: Galena
+      region: US-OH
+      country: US
+      type: small_airport
+      elevation_ft: 945
+      longest_runway_ft: 3545
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.22027
+      lon: -82.94699
+      distance_mi: 15.6
+      bearing: N
+      tracked_plane_presence_in_window: []
+    - airport_code: 04I
+      icao: null
+      iata: null
+      name: "Columbus Southwest Airport"
+      city: Columbus
+      region: US-OH
+      country: US
+      type: small_airport
+      elevation_ft: 920
+      longest_runway_ft: 2382
+      longest_runway_surface: TURF-G
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 39.91151
+      lon: -83.18858
+      distance_mi: 16.8
+      bearing: WSW
+      tracked_plane_presence_in_window: []
+    - airport_code: 52OA
+      icao: null
+      iata: null
+      name: "Area 52 Airport"
+      city: Alexandria
+      region: US-OH
+      country: US
+      type: small_airport
+      elevation_ft: 1060
+      longest_runway_ft: 1032
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.10027
+      lon: -82.59654
+      distance_mi: 17.1
+      bearing: ENE
+      tracked_plane_presence_in_window: []
+    - airport_code: 7B4
+      icao: null
+      iata: null
+      name: "Miller Farm Landing Strip"
+      city: Baltimore
+      region: US-OH
+      country: US
+      type: small_airport
+      elevation_ft: 930
+      longest_runway_ft: 3250
+      longest_runway_surface: TURF-G
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 39.8845
+      lon: -82.5891
+      distance_mi: 17.9
+      bearing: ESE
+      tracked_plane_presence_in_window: []
+    - airport_code: 5OI8
+      icao: null
+      iata: null
+      name: "McKnight Airport"
+      city: Johnstown
+      region: US-OH
+      country: US
+      type: small_airport
+      elevation_ft: 1172
+      longest_runway_ft: 1900
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.19368
+      lon: -82.65667
+      distance_mi: 18.4
+      bearing: NE
+      tracked_plane_presence_in_window: []
+    - airport_code: US-0861
+      icao: null
+      iata: null
+      name: "Sky Ranch Airport"
+      city: Galloway
+      region: US-OH
+      country: US
+      type: small_airport
+      elevation_ft: 920
+      longest_runway_ft: 3000
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 39.93545
+      lon: -83.2364
+      distance_mi: 18.7
+      bearing: WSW
+      tracked_plane_presence_in_window: []
+    - airport_code: 9OA5
+      icao: null
+      iata: null
+      name: "Buckeye Executive Airport"
+      city: Hebron
+      region: US-OH
+      country: US
+      type: small_airport
+      elevation_ft: 914
+      longest_runway_ft: 2764
+      longest_runway_surface: ASPH-G
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 39.96122
+      lon: -82.54072
+      distance_mi: 18.8
+      bearing: E
+      tracked_plane_presence_in_window: []
+    - airport_code: 38OH
+      icao: null
+      iata: null
+      name: "Industry Air Park"
+      city: Baltimore
+      region: US-OH
+      country: US
+      type: small_airport
+      elevation_ft: 877
+      longest_runway_ft: 2550
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 39.8448
+      lon: -82.5796
+      distance_mi: 19.6
+      bearing: ESE
+      tracked_plane_presence_in_window: []
+    - airport_code: 6OI5
+      icao: null
+      iata: null
+      name: "Mitchell Airport"
+      city: "Plain City"
+      region: US-OH
+      country: US
+      type: small_airport
+      elevation_ft: 950
+      longest_runway_ft: 2400
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.1373
+      lon: -83.218
+      distance_mi: 19.7
+      bearing: WNW
+      tracked_plane_presence_in_window: []
+    - airport_code: 33OH
+      icao: null
+      iata: null
+      name: "Sunset Strip"
+      city: Jerome
+      region: US-OH
+      country: US
+      type: small_airport
+      elevation_ft: 945
+      longest_runway_ft: 1875
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.1853
+      lon: -83.1736
+      distance_mi: 19.7
+      bearing: NW
+      tracked_plane_presence_in_window: []
+    - airport_code: KLHQ
+      icao: null
+      iata: null
+      name: "Fairfield County Airport"
+      city: Lancaster
+      region: US-OH
+      country: US
+      type: small_airport
+      elevation_ft: 868
+      longest_runway_ft: 5003
+      longest_runway_surface: ASP
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: jet_capable
+      lat: 39.7556
+      lon: -82.6571
+      distance_mi: 20.9
+      bearing: SE
+      tracked_plane_presence_in_window: []
+    - airport_code: OH71
+      icao: null
+      iata: null
+      name: "Chapman Memorial Field"
+      city: Centerburg
+      region: US-OH
+      country: US
+      type: small_airport
+      elevation_ft: 1180
+      longest_runway_ft: 3200
+      longest_runway_surface: TURF-F
+      runway_count: 2
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.29542
+      lon: -82.72996
+      distance_mi: 22.3
+      bearing: NNE
+      tracked_plane_presence_in_window: []
+    - airport_code: 2OH8
+      icao: null
+      iata: null
+      name: "Port-O-John Airport"
+      city: Derby
+      region: US-OH
+      country: US
+      type: small_airport
+      elevation_ft: 925
+      longest_runway_ft: 2500
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 39.7953
+      lon: -83.2232
+      distance_mi: 22.5
+      bearing: SW
+      tracked_plane_presence_in_window: []
+    - airport_code: KDLZ
+      icao: null
+      iata: null
+      name: "Delaware Municipal Airport"
+      city: Delaware
+      region: US-OH
+      country: US
+      type: small_airport
+      elevation_ft: 945
+      longest_runway_ft: 5800
+      longest_runway_surface: ASP
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: jet_capable
+      lat: 40.2797
+      lon: -83.1148
+      distance_mi: 22.7
+      bearing: NNW
+      tracked_plane_presence_in_window: []
+    - airport_code: KVTA
+      icao: null
+      iata: null
+      name: "Newark Heath Airport"
+      city: Newark
+      region: US-OH
+      country: US
+      type: small_airport
+      elevation_ft: 884
+      longest_runway_ft: 4649
+      longest_runway_surface: ASP
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: light_jet_capable
+      lat: 40.0247
+      lon: -82.4618
+      distance_mi: 22.8
+      bearing: E
+      tracked_plane_presence_in_window: []
+    - airport_code: 82OI
+      icao: null
+      iata: null
+      name: "J-Em Farm Airport"
+      city: Columbus
+      region: US-OH
+      country: US
+      type: small_airport
+      elevation_ft: 1005
+      longest_runway_ft: 3000
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.1542
+      lon: -83.2749
+      distance_mi: 22.9
+      bearing: WNW
+      tracked_plane_presence_in_window: []
+    - airport_code: OA51
+      icao: null
+      iata: null
+      name: "Fighter Field Airport"
+      city: Watkins
+      region: US-OH
+      country: US
+      type: small_airport
+      elevation_ft: 980
+      longest_runway_ft: 3900
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.20611
+      lon: -83.22861
+      distance_mi: 22.9
+      bearing: NW
+      tracked_plane_presence_in_window: []
+    - airport_code: 63OH
+      icao: null
+      iata: null
+      name: "White's Airport"
+      city: Circleville
+      region: US-OH
+      country: US
+      type: small_airport
+      elevation_ft: 815
+      longest_runway_ft: 2800
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 39.7028
+      lon: -83.0939
+      distance_mi: 23.0
+      bearing: SSW
+      tracked_plane_presence_in_window: []
+    - airport_code: 38OI
+      icao: null
+      iata: null
+      name: "Ronshausen Airport"
+      city: Circleville
+      region: US-OH
+      country: US
+      type: small_airport
+      elevation_ft: 750
+      longest_runway_ft: 3000
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 39.68486
+      lon: -83.07045
+      distance_mi: 23.6
+      bearing: SSW
+      tracked_plane_presence_in_window: []
+    - airport_code: US-9311
+      icao: null
+      iata: null
+      name: "WesMar Aerodrome"
+      city: Orient
+      region: US-OH
+      country: US
+      type: small_airport
+      elevation_ft: 808
+      longest_runway_ft: null
+      longest_runway_surface: null
+      runway_count: 0
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: unknown
+      lat: 39.70313
+      lon: -83.13021
+      distance_mi: 24.0
+      bearing: SSW
+      tracked_plane_presence_in_window: []
+    - airport_code: 2OH0
+      icao: null
+      iata: null
+      name: "Bohannan Airport"
+      city: Kilbourne
+      region: US-OH
+      country: US
+      type: small_airport
+      elevation_ft: 960
+      longest_runway_ft: 2200
+      longest_runway_surface: TURF-F
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.34432
+      lon: -82.93717
+      distance_mi: 24.0
+      bearing: N
+      tracked_plane_presence_in_window: []
+    - airport_code: US-12752
+      icao: null
+      iata: null
+      name: "Tailwheel Lane Airport"
+      city: Circleville
+      region: US-OH
+      country: US
+      type: small_airport
+      elevation_ft: 1034
+      longest_runway_ft: 2100
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 39.64668
+      lon: -82.84886
+      distance_mi: 24.4
+      bearing: S
+      tracked_plane_presence_in_window: []
+    - airport_code: US-0838
+      icao: null
+      iata: null
+      name: "White Oak Field"
+      city: Centerburg
+      region: US-OH
+      country: US
+      type: small_airport
+      elevation_ft: 1169
+      longest_runway_ft: null
+      longest_runway_surface: null
+      runway_count: 0
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: unknown
+      lat: 40.33896
+      lon: -82.77231
+      distance_mi: 24.4
+      bearing: NNE
+      tracked_plane_presence_in_window: []
+    - airport_code: US-0111
+      icao: null
+      iata: null
+      name: "Boober Airport"
+      city: "Plain City"
+      region: US-OH
+      country: US
+      type: small_airport
+      elevation_ft: 980
+      longest_runway_ft: null
+      longest_runway_surface: null
+      runway_count: 0
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: unknown
+      lat: 40.0914
+      lon: -83.3591
+      distance_mi: 25.5
+      bearing: WNW
+      tracked_plane_presence_in_window: []
+    - airport_code: OI85
+      icao: null
+      iata: null
+      name: "Mill Creek Airport"
+      city: Ostrander
+      region: US-OH
+      country: US
+      type: small_airport
+      elevation_ft: 960
+      longest_runway_ft: 1550
+      longest_runway_surface: TURF-GRVL
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.2684
+      lon: -83.2216
+      distance_mi: 25.5
+      bearing: NW
+      tracked_plane_presence_in_window: []
+    - airport_code: OA86
+      icao: null
+      iata: null
+      name: "Silent P Airport"
+      city: "West Jefferson"
+      region: US-OH
+      country: US
+      type: small_airport
+      elevation_ft: 970
+      longest_runway_ft: 2400
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 39.90736
+      lon: -83.36031
+      distance_mi: 25.6
+      bearing: WSW
+      tracked_plane_presence_in_window: []
+    - airport_code: 7OH3
+      icao: null
+      iata: null
+      name: "Obi One Airport"
+      city: Delaware
+      region: US-OH
+      country: US
+      type: small_airport
+      elevation_ft: 952
+      longest_runway_ft: 2400
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.3528
+      lon: -83.051
+      distance_mi: 25.9
+      bearing: NNW
+      tracked_plane_presence_in_window: []
+    - airport_code: OH61
+      icao: null
+      iata: null
+      name: "Amanda Airport"
+      city: Amanda
+      region: US-OH
+      country: US
+      type: small_airport
+      elevation_ft: 900
+      longest_runway_ft: 2300
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 39.6353
+      lon: -82.7379
+      distance_mi: 26.4
+      bearing: SSE
+      tracked_plane_presence_in_window: []
+    - airport_code: 8OI5
+      icao: null
+      iata: null
+      name: "Clum Airport"
+      city: Thornville
+      region: US-OH
+      country: US
+      type: small_airport
+      elevation_ft: 1115
+      longest_runway_ft: 1600
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 39.8817
+      lon: -82.4146
+      distance_mi: 26.5
+      bearing: ESE
+      tracked_plane_presence_in_window: []
+    - airport_code: 63OI
+      icao: null
+      iata: null
+      name: "Bowman Field"
+      city: Delaware
+      region: US-OH
+      country: US
+      type: small_airport
+      elevation_ft: 965
+      longest_runway_ft: 2000
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.3351
+      lon: -83.136
+      distance_mi: 26.6
+      bearing: NNW
+      tracked_plane_presence_in_window: []
+    - airport_code: 2OA5
+      icao: null
+      iata: null
+      name: Fl-Airfield
+      city: Marysville
+      region: US-OH
+      country: US
+      type: small_airport
+      elevation_ft: 980
+      longest_runway_ft: 2500
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.1825
+      lon: -83.3509
+      distance_mi: 27.4
+      bearing: WNW
+      tracked_plane_presence_in_window: []
+    - airport_code: OH93
+      icao: null
+      iata: null
+      name: "Darby Airport"
+      city: "Milford Center"
+      region: US-OH
+      country: US
+      type: small_airport
+      elevation_ft: 972
+      longest_runway_ft: 1750
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.1403
+      lon: -83.3902
+      distance_mi: 28.1
+      bearing: WNW
+      tracked_plane_presence_in_window: []
+    - airport_code: OH40
+      icao: null
+      iata: null
+      name: "Shannons Landing Airport"
+      city: Radnor
+      region: US-OH
+      country: US
+      type: small_airport
+      elevation_ft: 970
+      longest_runway_ft: null
+      longest_runway_surface: null
+      runway_count: 0
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: unknown
+      lat: 40.37001
+      lon: -83.11223
+      distance_mi: 28.2
+      bearing: NNW
+      tracked_plane_presence_in_window: []
+    - airport_code: KMRT
+      icao: null
+      iata: null
+      name: "Union County Airport"
+      city: Marysville
+      region: US-OH
+      country: US
+      type: small_airport
+      elevation_ft: 1021
+      longest_runway_ft: 4218
+      longest_runway_surface: ASP
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: light_jet_capable
+      lat: 40.2247
+      lon: -83.3516
+      distance_mi: 28.9
+      bearing: WNW
+      tracked_plane_presence_in_window: []
+    - airport_code: OI49
+      icao: null
+      iata: null
+      name: "Flying Acres Airport"
+      city: Delaware
+      region: US-OH
+      country: US
+      type: small_airport
+      elevation_ft: 975
+      longest_runway_ft: 2900
+      longest_runway_surface: TURF-G
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.3839
+      lon: -83.1069
+      distance_mi: 29.0
+      bearing: NNW
+      tracked_plane_presence_in_window: []
+    - airport_code: K4I3
+      icao: null
+      iata: null
+      name: "Knox County Airport"
+      city: "Mount Vernon"
+      region: US-OH
+      country: US
+      type: small_airport
+      elevation_ft: 1191
+      longest_runway_ft: 5504
+      longest_runway_surface: ASP
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: jet_capable
+      lat: 40.3287
+      lon: -82.5238
+      distance_mi: 30.0
+      bearing: NE
+      tracked_plane_presence_in_window: []
+    - airport_code: KUYF
+      icao: null
+      iata: null
+      name: "Madison County Airport"
+      city: London
+      region: US-OH
+      country: US
+      type: small_airport
+      elevation_ft: 1082
+      longest_runway_ft: 4000
+      longest_runway_surface: ASP
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: light_jet_capable
+      lat: 39.9327
+      lon: -83.462
+      distance_mi: 30.5
+      bearing: W
+      tracked_plane_presence_in_window: []
+    - airport_code: 62OH
+      icao: null
+      iata: null
+      name: "Willard Field"
+      city: Lancaster
+      region: US-OH
+      country: US
+      type: small_airport
+      elevation_ft: 820
+      longest_runway_ft: 3400
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 39.6945
+      lon: -82.46754
+      distance_mi: 30.8
+      bearing: SE
+      tracked_plane_presence_in_window: []
+    - airport_code: US-3719
+      icao: null
+      iata: null
+      name: "Bob Jenkins"
+      city: null
+      region: US-OH
+      country: US
+      type: small_airport
+      elevation_ft: 1296
+      longest_runway_ft: null
+      longest_runway_surface: null
+      runway_count: 0
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: unknown
+      lat: 40.43
+      lon: -82.7
+      distance_mi: 31.5
+      bearing: NNE
+      tracked_plane_presence_in_window: []
+    - airport_code: US-0755
+      icao: null
+      iata: null
+      name: "Flyers Park Airport"
+      city: Newark
+      region: US-OH
+      country: US
+      type: small_airport
+      elevation_ft: 865
+      longest_runway_ft: null
+      longest_runway_surface: null
+      runway_count: 0
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: unknown
+      lat: 40.15407
+      lon: -82.30691
+      distance_mi: 32.8
+      bearing: ENE
+      tracked_plane_presence_in_window: []
+    - airport_code: K6G4
+      icao: null
+      iata: null
+      name: "Wynkoop Airport"
+      city: "Mount Vernon"
+      region: US-OH
+      country: US
+      type: small_airport
+      elevation_ft: 1041
+      longest_runway_ft: 3460
+      longest_runway_surface: GRS
+      runway_count: 2
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.3651
+      lon: -82.4957
+      distance_mi: 32.9
+      bearing: NE
+      tracked_plane_presence_in_window: []
+    - airport_code: 5E9
+      icao: null
+      iata: null
+      name: "Packer Airport"
+      city: Radnor
+      region: US-OH
+      country: US
+      type: small_airport
+      elevation_ft: 918
+      longest_runway_ft: 3470
+      longest_runway_surface: TURF-G
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.40785
+      lon: -83.21518
+      distance_mi: 33.1
+      bearing: NNW
+      tracked_plane_presence_in_window: []
+    - airport_code: 11OA
+      icao: null
+      iata: null
+      name: "Hide-A-Way Hills Resort Airport"
+      city: Bremen
+      region: US-OH
+      country: US
+      type: small_airport
+      elevation_ft: 780
+      longest_runway_ft: 2300
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 39.6431
+      lon: -82.4668
+      distance_mi: 33.3
+      bearing: SE
+      tracked_plane_presence_in_window: []
+    - airport_code: US-0320
+      icao: null
+      iata: null
+      name: "My Place Airport"
+      city: Cardington
+      region: US-OH
+      country: US
+      type: small_airport
+      elevation_ft: 1080
+      longest_runway_ft: 1950
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.47883
+      lon: -82.94379
+      distance_mi: 33.3
+      bearing: N
+      tracked_plane_presence_in_window: []
+    - airport_code: KCYO
+      icao: null
+      iata: null
+      name: "Pickaway County Memorial Airport"
+      city: Circleville
+      region: US-OH
+      country: US
+      type: small_airport
+      elevation_ft: 684
+      longest_runway_ft: 4346
+      longest_runway_surface: ASP
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: light_jet_capable
+      lat: 39.516
+      lon: -82.9821
+      distance_mi: 33.6
+      bearing: S
+      tracked_plane_presence_in_window: []
+    - airport_code: 16OH
+      icao: null
+      iata: null
+      name: "Maci's Landing"
+      city: Kingston
+      region: US-OH
+      country: US
+      type: small_airport
+      elevation_ft: 805
+      longest_runway_ft: 2000
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 39.48301
+      lon: -82.81353
+      distance_mi: 35.8
+      bearing: S
+      tracked_plane_presence_in_window: []
+    - airport_code: K4I9
+      icao: null
+      iata: null
+      name: "Morrow County Airport"
+      city: "Mount Gilead"
+      region: US-OH
+      country: US
+      type: small_airport
+      elevation_ft: 1085
+      longest_runway_ft: 3495
+      longest_runway_surface: ASP
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: marginal
+      lat: 40.5245
+      lon: -82.8501
+      distance_mi: 36.4
+      bearing: N
+      tracked_plane_presence_in_window: []
+    - airport_code: 75OI
+      icao: null
+      iata: null
+      name: "Soltis Field"
+      city: Marion
+      region: US-OH
+      country: US
+      type: small_airport
+      elevation_ft: 950
+      longest_runway_ft: 2000
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.5037
+      lon: -83.0902
+      distance_mi: 36.5
+      bearing: NNW
+      tracked_plane_presence_in_window: []
+    - airport_code: OH92
+      icao: null
+      iata: null
+      name: "Porter Airport"
+      city: Hopewell
+      region: US-OH
+      country: US
+      type: small_airport
+      elevation_ft: 1070
+      longest_runway_ft: 2000
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 39.9542
+      lon: -82.1832
+      distance_mi: 37.6
+      bearing: E
+      tracked_plane_presence_in_window: []
+    - airport_code: KRZT
+      icao: null
+      iata: null
+      name: "Ross County Airport"
+      city: Chillicothe
+      region: US-OH
+      country: US
+      type: small_airport
+      elevation_ft: 725
+      longest_runway_ft: 5405
+      longest_runway_surface: ASP
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: jet_capable
+      lat: 39.4404
+      lon: -83.0231
+      distance_mi: 39.2
+      bearing: S
+      tracked_plane_presence_in_window: []
+tracked_plane_presence:
+  # Was any tracked aircraft on the ground at any field in the list above,
+  # inside the window? Three registers are searched and kept apart, strongest
+  # first. NEVER collapse them into one number.
+  window:
+    from: 2023-03-20
+    to: 2023-03-24
+    days_each_side: 2
+  any_found: false
+  egyptian_su_found: false
+  counts:
+    adsb_ground_contacts: 0
+    adsb_ground_contacts_egyptian_su: 0
+    flights_csv_stays: 0
+    flights_csv_stays_egyptian_su: 0
+    claimed_overlaps: 0
+  from_adsb_traces: []
+  from_flights_csv: []
+  from_overlaps_csv: []
+  just_outside_the_radius:
+    # A hard radius creates a cliff and a cliff hides evidence. These fields
+    # sit between 40 and 60 miles from the arrival airport. They are NOT counted
+    # as hits and must never be published as ones - they are here so a near miss
+    # is visible rather than silently dropped.
+    outer_radius_miles: 60.0
+    adsb_ground_contacts: []
+    flights_csv_stays: []
+    claimed_overlaps: []
+  coverage:
+    # AN EMPTY RESULT ABOVE IS NOT A FINDING UNLESS THIS SAYS THE DAYS WERE HELD.
+    # aircraft_days_needed = tails x days in the window. aircraft_days_held is
+    # how many of those this repo actually has a trace for. The rest were never
+    # pulled, or the networks heard nothing - the two are indistinguishable here.
+    aircraft_days_needed: 75
+    aircraft_days_held: 0
+    coverage_pct: 0.0
+    tails_with_no_trace_in_window:
+      - N102DZ
+      - N1098L
+      - N2100L
+      - N40JD
+      - N560TW
+      - N582MM
+      - N59906
+      - N872RA
+      - N888KG
+      - SU-BGM
+      - SU-BND
+      - SU-BTT
+      - SU-BTU
+      - SU-BTV
+      - T7-ELL
+    by_side:
+      following:
+        # FOLLOWING is the side the claim is about - the Egyptian SU- tails.
+        # This percentage is the one that decides whether an empty result means
+        # anything at all.
+        tails: 6
+        aircraft_days_needed: 30
+        aircraft_days_held: 0
+        coverage_pct: 0.0
+      kirk:
+        # KIRK-side coverage is what turns an ESTIMATED arrival into an
+        # OBSERVED one. Low here means the arrival times above stay estimates.
+        tails: 6
+        aircraft_days_needed: 30
+        aircraft_days_held: 0
+        coverage_pct: 0.0
+      n1098l:
+        # Other tracked aircraft. A DIFFERENT CLAIM - do not merge the threads.
+        tails: 3
+        aircraft_days_needed: 15
+        aircraft_days_held: 0
+        coverage_pct: 0.0
+counterargument:
+  - "ONE PAIRING IS NOT EVIDENCE. The claim under test is a repetition across many stops, and any single pairing has an innocent explanation a reader will find."
+  - "A field inside the radius is a field a jet COULD have used. Nothing here shows that anyone did use it, or that two aircraft on one ramp had any connection."
+  - "Maintenance is the strongest innocent explanation in this record: Duncan Aviation (Provo and Lincoln) and Yingling (Wichita) are Part 145 Falcon and Gulfstream shops, and a Falcon 7X sitting for weeks at one reads as a maintenance visit."
+  - "Transatlantic customs and fuel stops explain the recurring East Coast fields."
+  - "ERIKA'S SIDE IS THE WEAK SIDE. Her flight logs are reported erased, so any Erika pairing rests on the foreign aircraft's track plus a CLAIMED location for her. See /Planes/Erika-Flight-Logs-Erased."
+what_we_do_not_know:
+  - "Whether Charlie Kirk, Erika Kirk, or any TPUSA party actually flew to this event, or which aircraft they used. The arrival airport above is an inference from the venue city, not a record."
+  - "Whether the estimated arrival and departure times are within hours or within days of the truth, wherever observed_by_adsb is empty."
+  - "What the tracked aircraft were doing at any field they appear at. A trace proves presence, never purpose and never occupancy."
+  - "Whether the receiver networks simply did not hear an aircraft that was there. See the coverage block - an absence is not a finding."

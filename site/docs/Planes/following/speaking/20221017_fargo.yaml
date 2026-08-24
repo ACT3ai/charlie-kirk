@@ -1,0 +1,1242 @@
+# GENERATED FILE - regenerate, do not hand-edit.
+#   node/python: apis/public_open_source/code/airports_near.py --only 20221017_fargo
+#   The prompt that governs this file: prompts/p_airports_near.md
+schema: ck.speaking.airports_near/1
+generated_utc: "2026-08-24T19:03:26Z"
+generated_by: site/docs/Planes/following/apis/public_open_source/code/airports_near.py
+page:
+  slug: 20221017_fargo
+  mdx: site/docs/Planes/following/speaking/20221017_fargo.mdx
+  yaml: site/docs/Planes/following/speaking/20221017_fargo.yaml
+  url: /Planes/following/speaking/20221017_fargo
+event:
+  title: "Live Free Tour — North Dakota State University (Candace Owens)"
+  who: TPUSA
+  attendee_class: TPUSA_NO_KIRK
+  charlie_present: "no"
+  erika_present: "no"
+  attendance_status: held
+  event_type: campus
+  dates:
+    raw: 2022-10-17
+    first_day: 2022-10-17
+    last_day: 2022-10-17
+    granularity: DAY
+    certainty: EVENT_DATE
+    # PODCAST_PROXY means the date is a podcast RELEASE date and the event was normally 0-7 days earlier. Never publish a same-day claim off one.
+  local_time:
+    raw: "19:00 CT; doors 18:00"
+    parsed_hhmm: "19:00"
+    basis: parsed_from_event_time_cell
+    timezone: America/Chicago
+    timezone_method: timezonefinder
+  location:
+    city: Fargo
+    state: ND
+    country: USA
+    venue: "NDSU Memorial Union, Oceti Sakowin Ballroom"
+    metro_area: "Fargo ND"
+    geocode:
+      lat: 46.8647
+      lon: -96.82908
+      method: us_census_2024_gazetteer
+      matched: "Fargo city"
+  source: "events2022.tpusa.com; InForum (~800 + overflow)"
+  source_url: "https://events2022.tpusa.com/events/live-free-tour-at-north-dakota-state-university"
+  days_before_sept10_2025: 1059
+search:
+  radius_miles: 40
+  window_days_each_side: 2
+  window_from: 2022-10-15
+  window_to: 2022-10-19
+  window_day_count: 5
+  centre: KFAR
+  tails_searched:
+    - N102DZ
+    - N1098L
+    - N2100L
+    - N40JD
+    - N560TW
+    - N582MM
+    - N59906
+    - N872RA
+    - N888KG
+    - SU-BGM
+    - SU-BND
+    - SU-BTT
+    - SU-BTU
+    - SU-BTV
+    - T7-ELL
+  sources_searched:
+    - "recovered ADS-B traces on disk (site/docs/Planes/<TAIL>/data/recovered/)"
+    - site/docs/Planes/following/flights.csv
+    - site/docs/Planes/following/overlaps.csv
+arrival_airport:
+  # ESTIMATE. No published Kirk-side flight record exists for this event unless
+  # the observed_by_adsb block below is non-empty. This is arithmetic on the
+  # event time, not a landing record.
+  chosen_airport:
+    airport_code: KFAR
+    icao: KFAR
+    iata: FAR
+    name: "Hector International Airport"
+    city: Fargo
+    region: US-ND
+    country: US
+    type: medium_airport
+    elevation_ft: 902
+    longest_runway_ft: 9001
+    longest_runway_surface: CON
+    runway_count: 3
+    runways_lighted: true
+    scheduled_service: true
+    jet_capability: jet_capable
+    lat: 46.9207
+    lon: -96.8158
+    distance_mi: 3.9
+    bearing: N
+  distance_from_event_city_mi: 3.9
+  selection_basis: CURATED_CSV_AND_COMPUTED_NEAREST_JET_FIELD_AGREE
+  curated_value_in_tpusa_events_csv:
+    airport_code: KFAR
+    airport_name: "Hector International"
+    distance_mi: 4
+  computed_nearest_jet_capable_field:
+    airport_code: KFAR
+    name: "Hector International Airport"
+    distance_mi: 3.9
+    longest_runway_ft: 9001
+  estimated_arrival:
+    date: 2022-10-17
+    local_time: "16:00"
+    timezone: America/Chicago
+    utc: "2022-10-17T21:00:00Z"
+    basis: "event start 19:00 local (parsed_from_event_time_cell) minus 3h"
+    confidence: medium
+  estimated_departure:
+    date: 2022-10-17
+    local_time: "23:00"
+    timezone: America/Chicago
+    utc: "2022-10-18T04:00:00Z"
+    basis: "event end + 4h (speech, exit, wheels-up)"
+    confidence: medium
+  observed_by_adsb: []
+  observed_by_adsb_note: "NO Kirk-side aircraft is on disk on the ground within 40 miles of KFAR in this window. The arrival and departure above stay estimates."
+airports_within_radius:
+  # Every field a private jet could physically use within the radius.
+  # Heliports, seaplane bases, balloonports and closed fields are excluded -
+  # a business jet cannot use any of them. Everything else is kept, including
+  # every small strip with no scheduled service: those are the point of the sweep.
+  radius_miles: 40
+  centre_airport: KFAR
+  count: 51
+  jet_capable_count: 1
+  light_jet_capable_count: 1
+  no_scheduled_service_count: 50
+  source: "OurAirports (CC0) airports.csv + runways.csv"
+  list:
+    - airport_code: KFAR
+      icao: KFAR
+      iata: FAR
+      name: "Hector International Airport"
+      city: Fargo
+      region: US-ND
+      country: US
+      type: medium_airport
+      elevation_ft: 902
+      longest_runway_ft: 9001
+      longest_runway_surface: CON
+      runway_count: 3
+      runways_lighted: true
+      scheduled_service: true
+      jet_capability: jet_capable
+      lat: 46.9207
+      lon: -96.8158
+      distance_mi: 0.0
+      bearing: N
+      tracked_plane_presence_in_window: []
+    - airport_code: MN77
+      icao: null
+      iata: null
+      name: "Jerger's Field"
+      city: Moorhead
+      region: US-MN
+      country: US
+      type: small_airport
+      elevation_ft: 900
+      longest_runway_ft: 2200
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 46.92348
+      lon: -96.71612
+      distance_mi: 4.7
+      bearing: E
+      tracked_plane_presence_in_window: []
+    - airport_code: KD54
+      icao: null
+      iata: null
+      name: "West Fargo Municipal Airport"
+      city: Fargo
+      region: US-ND
+      country: US
+      type: small_airport
+      elevation_ft: 896
+      longest_runway_ft: 3300
+      longest_runway_surface: ASP
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: marginal
+      lat: 46.9008
+      lon: -96.9187
+      distance_mi: 5.0
+      bearing: WSW
+      tracked_plane_presence_in_window: []
+    - airport_code: NA17
+      icao: null
+      iata: null
+      name: "Jacob Gust Airport"
+      city: "West Fargo"
+      region: US-ND
+      country: US
+      type: small_airport
+      elevation_ft: 895
+      longest_runway_ft: 3000
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 46.9427
+      lon: -96.929
+      distance_mi: 5.6
+      bearing: WNW
+      tracked_plane_presence_in_window: []
+    - airport_code: KJKJ
+      icao: null
+      iata: null
+      name: "Moorhead Municipal Airport"
+      city: Moorhead
+      region: US-MN
+      country: US
+      type: small_airport
+      elevation_ft: 918
+      longest_runway_ft: 4300
+      longest_runway_surface: ASP
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: light_jet_capable
+      lat: 46.83917
+      lon: -96.6637
+      distance_mi: 9.1
+      bearing: SE
+      tracked_plane_presence_in_window: []
+    - airport_code: MY98
+      icao: null
+      iata: null
+      name: "Pake Airport"
+      city: Felton
+      region: US-MN
+      country: US
+      type: small_airport
+      elevation_ft: 898
+      longest_runway_ft: null
+      longest_runway_surface: null
+      runway_count: 0
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: unknown
+      lat: 47.0455
+      lon: -96.6656
+      distance_mi: 11.2
+      bearing: NE
+      tracked_plane_presence_in_window: []
+    - airport_code: 6ND3
+      icao: null
+      iata: null
+      name: "Lisburg Airport"
+      city: Argusville
+      region: US-ND
+      country: US
+      type: small_airport
+      elevation_ft: 885
+      longest_runway_ft: 2500
+      longest_runway_surface: TURF
+      runway_count: 2
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 47.0697
+      lon: -96.9406
+      distance_mi: 11.9
+      bearing: NNW
+      tracked_plane_presence_in_window: []
+    - airport_code: ND52
+      icao: null
+      iata: null
+      name: "True North Airpark"
+      city: "West Fargo"
+      region: US-ND
+      country: US
+      type: small_airport
+      elevation_ft: 913
+      longest_runway_ft: 2244
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 46.8028
+      lon: -97.0122
+      distance_mi: 12.3
+      bearing: SW
+      tracked_plane_presence_in_window: []
+    - airport_code: MY64
+      icao: null
+      iata: null
+      name: "Schjeldrup Airport"
+      city: Felton
+      region: US-MN
+      country: US
+      type: small_airport
+      elevation_ft: 903
+      longest_runway_ft: null
+      longest_runway_surface: null
+      runway_count: 0
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: unknown
+      lat: 47.0311
+      lon: -96.6023
+      distance_mi: 12.6
+      bearing: NE
+      tracked_plane_presence_in_window: []
+    - airport_code: 3MN7
+      icao: null
+      iata: null
+      name: "Blue Sky Airport"
+      city: Sabin
+      region: US-MN
+      country: US
+      type: small_airport
+      elevation_ft: 927
+      longest_runway_ft: 2200
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 46.80068
+      lon: -96.59463
+      distance_mi: 13.3
+      bearing: SE
+      tracked_plane_presence_in_window: []
+    - airport_code: 2ND0
+      icao: null
+      iata: null
+      name: "Kraft Airport"
+      city: Mapleton
+      region: US-ND
+      country: US
+      type: small_airport
+      elevation_ft: 910
+      longest_runway_ft: 3175
+      longest_runway_surface: TURF
+      runway_count: 2
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 46.81322
+      lon: -97.05079
+      distance_mi: 13.4
+      bearing: WSW
+      tracked_plane_presence_in_window: []
+    - airport_code: 1ND4
+      icao: null
+      iata: null
+      name: "Walkinshaw Airport"
+      city: Argusville
+      region: US-ND
+      country: US
+      type: small_airport
+      elevation_ft: 900
+      longest_runway_ft: 2500
+      longest_runway_surface: TURF-F
+      runway_count: 2
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 47.0583
+      lon: -97.017
+      distance_mi: 13.4
+      bearing: NW
+      tracked_plane_presence_in_window: []
+    - airport_code: ND99
+      icao: null
+      iata: null
+      name: "Ellig Field"
+      city: Hickson
+      region: US-ND
+      country: US
+      type: small_airport
+      elevation_ft: 910
+      longest_runway_ft: 2640
+      longest_runway_surface: TURF-G
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 46.7202
+      lon: -96.8095
+      distance_mi: 13.9
+      bearing: S
+      tracked_plane_presence_in_window: []
+    - airport_code: ND74
+      icao: null
+      iata: null
+      name: "Smith Private Airport"
+      city: Amenia
+      region: US-ND
+      country: US
+      type: small_airport
+      elevation_ft: 940
+      longest_runway_ft: 2300
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 47.0166
+      lon: -97.1629
+      distance_mi: 17.7
+      bearing: WNW
+      tracked_plane_presence_in_window: []
+    - airport_code: K5N8
+      icao: null
+      iata: null
+      name: "Casselton Robert Miller Regional Airport"
+      city: Casselton
+      region: US-ND
+      country: US
+      type: small_airport
+      elevation_ft: 933
+      longest_runway_ft: 3901
+      longest_runway_surface: CON
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: marginal
+      lat: 46.854
+      lon: -97.2087
+      distance_mi: 19.1
+      bearing: WSW
+      tracked_plane_presence_in_window: []
+    - airport_code: ND01
+      icao: null
+      iata: null
+      name: "Nelson Airport"
+      city: Amenia
+      region: US-ND
+      country: US
+      type: small_airport
+      elevation_ft: 950
+      longest_runway_ft: 2440
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 47.0458
+      lon: -97.1865
+      distance_mi: 19.5
+      bearing: WNW
+      tracked_plane_presence_in_window: []
+    - airport_code: KK74
+      icao: null
+      iata: null
+      name: "Hamry Field"
+      city: Kindred
+      region: US-ND
+      country: US
+      type: small_airport
+      elevation_ft: 947
+      longest_runway_ft: 3300
+      longest_runway_surface: CON
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: marginal
+      lat: 46.64862
+      lon: -96.99873
+      distance_mi: 20.7
+      bearing: SSW
+      tracked_plane_presence_in_window: []
+    - airport_code: 34ND
+      icao: null
+      iata: null
+      name: "Plath Farms Airport"
+      city: Davenport
+      region: US-ND
+      country: US
+      type: small_airport
+      elevation_ft: 928
+      longest_runway_ft: 2600
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 46.70569
+      lon: -97.15703
+      distance_mi: 21.9
+      bearing: SW
+      tracked_plane_presence_in_window: []
+    - airport_code: K04Y
+      icao: null
+      iata: null
+      name: "Hawley Municipal Airport"
+      city: Hawley
+      region: US-MN
+      country: US
+      type: small_airport
+      elevation_ft: 1208
+      longest_runway_ft: 3404
+      longest_runway_surface: ASPH-G
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: marginal
+      lat: 46.8838
+      lon: -96.3503
+      distance_mi: 22.1
+      bearing: E
+      tracked_plane_presence_in_window: []
+    - airport_code: 1ND7
+      icao: null
+      iata: null
+      name: "Dittmer Airport"
+      city: Lynchburg
+      region: US-ND
+      country: US
+      type: small_airport
+      elevation_ft: 943
+      longest_runway_ft: 2000
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 46.8291
+      lon: -97.267
+      distance_mi: 22.2
+      bearing: WSW
+      tracked_plane_presence_in_window: []
+    - airport_code: ND73
+      icao: null
+      iata: null
+      name: "Peterson Airport"
+      city: Amenia
+      region: US-ND
+      country: US
+      type: small_airport
+      elevation_ft: 999
+      longest_runway_ft: 2300
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 47.0483
+      lon: -97.2556
+      distance_mi: 22.5
+      bearing: WNW
+      tracked_plane_presence_in_window: []
+    - airport_code: 1A2
+      icao: null
+      iata: null
+      name: "Arthur Airport"
+      city: Arthur
+      region: US-ND
+      country: US
+      type: small_airport
+      elevation_ft: 973
+      longest_runway_ft: 3100
+      longest_runway_surface: TURF-G
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 47.1111
+      lon: -97.2073
+      distance_mi: 22.7
+      bearing: NW
+      tracked_plane_presence_in_window: []
+    - airport_code: ND68
+      icao: null
+      iata: null
+      name: "Vining Airport"
+      city: Wheatland
+      region: US-ND
+      country: US
+      type: small_airport
+      elevation_ft: 980
+      longest_runway_ft: 3200
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 46.9558
+      lon: -97.3012
+      distance_mi: 23.0
+      bearing: W
+      tracked_plane_presence_in_window: []
+    - airport_code: NA60
+      icao: null
+      iata: null
+      name: "Dakota Airport"
+      city: Grandin
+      region: US-ND
+      country: US
+      type: small_airport
+      elevation_ft: 903
+      longest_runway_ft: 2600
+      longest_runway_surface: CONC
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 47.235
+      lon: -97.0384
+      distance_mi: 24.1
+      bearing: NNW
+      tracked_plane_presence_in_window: []
+    - airport_code: 57ND
+      icao: null
+      iata: null
+      name: "Odegaard Airport"
+      city: Kindred
+      region: US-ND
+      country: US
+      type: small_airport
+      elevation_ft: 1020
+      longest_runway_ft: 2100
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 46.61051
+      lon: -97.06049
+      distance_mi: 24.4
+      bearing: SSW
+      tracked_plane_presence_in_window: []
+    - airport_code: 9MN3
+      icao: null
+      iata: null
+      name: "Barnesville Municipal Airport"
+      city: Barnesville
+      region: US-MN
+      country: US
+      type: small_airport
+      elevation_ft: 980
+      longest_runway_ft: 2780
+      longest_runway_surface: TURF-G
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 46.6652
+      lon: -96.4412
+      distance_mi: 25.0
+      bearing: SE
+      tracked_plane_presence_in_window: []
+    - airport_code: MY07
+      icao: null
+      iata: null
+      name: "Nord Field"
+      city: Wolverton
+      region: US-MN
+      country: US
+      type: small_airport
+      elevation_ft: 948
+      longest_runway_ft: 2600
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 46.5833
+      lon: -96.6065
+      distance_mi: 25.3
+      bearing: SSE
+      tracked_plane_presence_in_window: []
+    - airport_code: US-11825
+      icao: null
+      iata: null
+      name: "Gudgel Airport"
+      city: Colfax
+      region: US-ND
+      country: US
+      type: small_airport
+      elevation_ft: 930
+      longest_runway_ft: 2083
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 46.54878
+      lon: -96.78709
+      distance_mi: 25.7
+      bearing: S
+      tracked_plane_presence_in_window: []
+    - airport_code: 9MN5
+      icao: null
+      iata: null
+      name: "Janssen Airport"
+      city: Barnesville
+      region: US-MN
+      country: US
+      type: small_airport
+      elevation_ft: 1100
+      longest_runway_ft: 2000
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 46.70974
+      lon: -96.35254
+      distance_mi: 26.3
+      bearing: ESE
+      tracked_plane_presence_in_window: []
+    - airport_code: MN01
+      icao: null
+      iata: null
+      name: "Hammars Farm Airport"
+      city: Ada
+      region: US-MN
+      country: US
+      type: small_airport
+      elevation_ft: 886
+      longest_runway_ft: 2500
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 47.27781
+      lon: -96.61401
+      distance_mi: 26.4
+      bearing: NNE
+      tracked_plane_presence_in_window: []
+    - airport_code: NA99
+      icao: null
+      iata: null
+      name: "Bakko Airstrip"
+      city: Walcott
+      region: US-ND
+      country: US
+      type: small_airport
+      elevation_ft: 1040
+      longest_runway_ft: 2500
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 46.55149
+      lon: -97.03217
+      distance_mi: 27.5
+      bearing: SSW
+      tracked_plane_presence_in_window: []
+    - airport_code: 94MN
+      icao: null
+      iata: null
+      name: "Ag Spray Inc Airport"
+      city: Barnesville
+      region: US-MN
+      country: US
+      type: small_airport
+      elevation_ft: 960
+      longest_runway_ft: 3000
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 46.5766
+      lon: -96.512
+      distance_mi: 27.8
+      bearing: SSE
+      tracked_plane_presence_in_window: []
+    - airport_code: MY99
+      icao: null
+      iata: null
+      name: "Johnston Airport"
+      city: Hawley
+      region: US-MN
+      country: US
+      type: small_airport
+      elevation_ft: 1360
+      longest_runway_ft: 3600
+      longest_runway_surface: TURF-G
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 46.8575
+      lon: -96.2352
+      distance_mi: 27.8
+      bearing: E
+      tracked_plane_presence_in_window: []
+    - airport_code: ND53
+      icao: null
+      iata: null
+      name: "Pueppke Airport"
+      city: Ayr
+      region: US-ND
+      country: US
+      type: small_airport
+      elevation_ft: 1099
+      longest_runway_ft: 2635
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 47.04639
+      lon: -97.38805
+      distance_mi: 28.3
+      bearing: WNW
+      tracked_plane_presence_in_window: []
+    - airport_code: 26MN
+      icao: null
+      iata: null
+      name: "Christianson Field"
+      city: Halstad
+      region: US-MN
+      country: US
+      type: small_airport
+      elevation_ft: 874
+      longest_runway_ft: 2600
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 47.33
+      lon: -96.7837
+      distance_mi: 28.3
+      bearing: N
+      tracked_plane_presence_in_window: []
+    - airport_code: ND07
+      icao: null
+      iata: null
+      name: "Punton Private Airport"
+      city: Absaraka
+      region: US-ND
+      country: US
+      type: small_airport
+      elevation_ft: 1105
+      longest_runway_ft: 2600
+      longest_runway_surface: TURF-G
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 47.0028
+      lon: -97.4072
+      distance_mi: 28.5
+      bearing: WNW
+      tracked_plane_presence_in_window: []
+    - airport_code: 8MN2
+      icao: null
+      iata: null
+      name: "Aslesen Airport"
+      city: Halstad
+      region: US-MN
+      country: US
+      type: small_airport
+      elevation_ft: 879
+      longest_runway_ft: 2505
+      longest_runway_surface: ASP
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 47.33559
+      lon: -96.74893
+      distance_mi: 28.8
+      bearing: N
+      tracked_plane_presence_in_window: []
+    - airport_code: 52ND
+      icao: null
+      iata: null
+      name: "Richtsmeier Airport"
+      city: Hunter
+      region: US-ND
+      country: US
+      type: small_airport
+      elevation_ft: 1047
+      longest_runway_ft: 3340
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 47.1894
+      lon: -97.2895
+      distance_mi: 29.0
+      bearing: NW
+      tracked_plane_presence_in_window: []
+    - airport_code: 8ND5
+      icao: null
+      iata: null
+      name: "Ausk Strip"
+      city: Chaffee
+      region: US-ND
+      country: US
+      type: small_airport
+      elevation_ft: 1020
+      longest_runway_ft: 2500
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 46.7639
+      lon: -97.4054
+      distance_mi: 29.9
+      bearing: WSW
+      tracked_plane_presence_in_window: []
+    - airport_code: 38ND
+      icao: null
+      iata: null
+      name: "Schroeder Private Airport"
+      city: Erie
+      region: US-ND
+      country: US
+      type: small_airport
+      elevation_ft: 1140
+      longest_runway_ft: 1800
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 47.098
+      lon: -97.4012
+      distance_mi: 30.2
+      bearing: WNW
+      tracked_plane_presence_in_window: []
+    - airport_code: KD00
+      icao: null
+      iata: null
+      name: "Norman County Ada/Twin Valley Airport"
+      city: "Twin Valley"
+      region: US-MN
+      country: US
+      type: small_airport
+      elevation_ft: 954
+      longest_runway_ft: 3103
+      longest_runway_surface: ASP
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: marginal
+      lat: 47.2605
+      lon: -96.4003
+      distance_mi: 30.5
+      bearing: NE
+      tracked_plane_presence_in_window: []
+    - airport_code: 8ND6
+      icao: null
+      iata: null
+      name: "J Vining Airport"
+      city: Chaffee
+      region: US-ND
+      country: US
+      type: small_airport
+      elevation_ft: 1025
+      longest_runway_ft: 2600
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 46.7127
+      lon: -97.3909
+      distance_mi: 30.8
+      bearing: WSW
+      tracked_plane_presence_in_window: []
+    - airport_code: 7NA0
+      icao: null
+      iata: null
+      name: "Downs Farm Private Airport"
+      city: Hillsboro
+      region: US-ND
+      country: US
+      type: small_airport
+      elevation_ft: 900
+      longest_runway_ft: null
+      longest_runway_surface: null
+      runway_count: 0
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: unknown
+      lat: 47.3575
+      lon: -97.0281
+      distance_mi: 31.8
+      bearing: NNW
+      tracked_plane_presence_in_window: []
+    - airport_code: K3H4
+      icao: null
+      iata: null
+      name: "Hillsboro Municipal Airport"
+      city: Hillsboro
+      region: US-ND
+      country: US
+      type: small_airport
+      elevation_ft: 905
+      longest_runway_ft: 3301
+      longest_runway_surface: ASP
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: marginal
+      lat: 47.3594
+      lon: -97.0604
+      distance_mi: 32.4
+      bearing: NNW
+      tracked_plane_presence_in_window: []
+    - airport_code: ND59
+      icao: null
+      iata: null
+      name: "Grieve Airport"
+      city: Buffalo
+      region: US-ND
+      country: US
+      type: small_airport
+      elevation_ft: 1208
+      longest_runway_ft: 2600
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 46.9875
+      lon: -97.5295
+      distance_mi: 34.0
+      bearing: W
+      tracked_plane_presence_in_window: []
+    - airport_code: MY29
+      icao: null
+      iata: null
+      name: "Kaiser's Airstrip"
+      city: "Lake Park"
+      region: US-MN
+      country: US
+      type: small_airport
+      elevation_ft: 1400
+      longest_runway_ft: 2000
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 46.7969
+      lon: -96.0996
+      distance_mi: 34.9
+      bearing: ESE
+      tracked_plane_presence_in_window: []
+    - airport_code: ND78
+      icao: null
+      iata: null
+      name: "Wilcox Farm Airport"
+      city: Ayr
+      region: US-ND
+      country: US
+      type: small_airport
+      elevation_ft: 1210
+      longest_runway_ft: 2600
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 47.04
+      lon: -97.537
+      distance_mi: 35.0
+      bearing: WNW
+      tracked_plane_presence_in_window: []
+    - airport_code: 64G
+      icao: null
+      iata: null
+      name: "Page Regional Airport"
+      city: Page
+      region: US-ND
+      country: US
+      type: small_airport
+      elevation_ft: 1215
+      longest_runway_ft: 2600
+      longest_runway_surface: ASPH-F
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 47.1697
+      lon: -97.4804
+      distance_mi: 35.7
+      bearing: WNW
+      tracked_plane_presence_in_window: []
+    - airport_code: NA05
+      icao: null
+      iata: null
+      name: "Kraig Farms Airport"
+      city: Sheldon
+      region: US-ND
+      country: US
+      type: small_airport
+      elevation_ft: 1060
+      longest_runway_ft: 2500
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 46.6122
+      lon: -97.4356
+      distance_mi: 36.3
+      bearing: SW
+      tracked_plane_presence_in_window: []
+    - airport_code: 47Y
+      icao: null
+      iata: null
+      name: "Pelican Rapids Muni-Lyon's Field"
+      city: "Pelican Rapids"
+      region: US-MN
+      country: US
+      type: small_airport
+      elevation_ft: 1389
+      longest_runway_ft: 3260
+      longest_runway_surface: TURF-F
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 46.6416
+      lon: -96.1045
+      distance_mi: 38.8
+      bearing: ESE
+      tracked_plane_presence_in_window: []
+    - airport_code: ND47
+      icao: null
+      iata: null
+      name: "Geske Airfield"
+      city: Enderlin
+      region: US-ND
+      country: US
+      type: small_airport
+      elevation_ft: 1103
+      longest_runway_ft: 2450
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 46.6408
+      lon: -97.5511
+      distance_mi: 39.8
+      bearing: WSW
+      tracked_plane_presence_in_window: []
+tracked_plane_presence:
+  # Was any tracked aircraft on the ground at any field in the list above,
+  # inside the window? Three registers are searched and kept apart, strongest
+  # first. NEVER collapse them into one number.
+  window:
+    from: 2022-10-15
+    to: 2022-10-19
+    days_each_side: 2
+  any_found: false
+  egyptian_su_found: false
+  counts:
+    adsb_ground_contacts: 0
+    adsb_ground_contacts_egyptian_su: 0
+    flights_csv_stays: 0
+    flights_csv_stays_egyptian_su: 0
+    claimed_overlaps: 0
+  from_adsb_traces: []
+  from_flights_csv: []
+  from_overlaps_csv: []
+  just_outside_the_radius:
+    # A hard radius creates a cliff and a cliff hides evidence. These fields
+    # sit between 40 and 60 miles from the arrival airport. They are NOT counted
+    # as hits and must never be published as ones - they are here so a near miss
+    # is visible rather than silently dropped.
+    outer_radius_miles: 60.0
+    adsb_ground_contacts: []
+    flights_csv_stays: []
+    claimed_overlaps: []
+  coverage:
+    # AN EMPTY RESULT ABOVE IS NOT A FINDING UNLESS THIS SAYS THE DAYS WERE HELD.
+    # aircraft_days_needed = tails x days in the window. aircraft_days_held is
+    # how many of those this repo actually has a trace for. The rest were never
+    # pulled, or the networks heard nothing - the two are indistinguishable here.
+    aircraft_days_needed: 75
+    aircraft_days_held: 0
+    coverage_pct: 0.0
+    tails_with_no_trace_in_window:
+      - N102DZ
+      - N1098L
+      - N2100L
+      - N40JD
+      - N560TW
+      - N582MM
+      - N59906
+      - N872RA
+      - N888KG
+      - SU-BGM
+      - SU-BND
+      - SU-BTT
+      - SU-BTU
+      - SU-BTV
+      - T7-ELL
+    by_side:
+      following:
+        # FOLLOWING is the side the claim is about - the Egyptian SU- tails.
+        # This percentage is the one that decides whether an empty result means
+        # anything at all.
+        tails: 6
+        aircraft_days_needed: 30
+        aircraft_days_held: 0
+        coverage_pct: 0.0
+      kirk:
+        # KIRK-side coverage is what turns an ESTIMATED arrival into an
+        # OBSERVED one. Low here means the arrival times above stay estimates.
+        tails: 6
+        aircraft_days_needed: 30
+        aircraft_days_held: 0
+        coverage_pct: 0.0
+      n1098l:
+        # Other tracked aircraft. A DIFFERENT CLAIM - do not merge the threads.
+        tails: 3
+        aircraft_days_needed: 15
+        aircraft_days_held: 0
+        coverage_pct: 0.0
+counterargument:
+  - "ONE PAIRING IS NOT EVIDENCE. The claim under test is a repetition across many stops, and any single pairing has an innocent explanation a reader will find."
+  - "A field inside the radius is a field a jet COULD have used. Nothing here shows that anyone did use it, or that two aircraft on one ramp had any connection."
+  - "Maintenance is the strongest innocent explanation in this record: Duncan Aviation (Provo and Lincoln) and Yingling (Wichita) are Part 145 Falcon and Gulfstream shops, and a Falcon 7X sitting for weeks at one reads as a maintenance visit."
+  - "Transatlantic customs and fuel stops explain the recurring East Coast fields."
+  - "ERIKA'S SIDE IS THE WEAK SIDE. Her flight logs are reported erased, so any Erika pairing rests on the foreign aircraft's track plus a CLAIMED location for her. See /Planes/Erika-Flight-Logs-Erased."
+what_we_do_not_know:
+  - "Whether Charlie Kirk, Erika Kirk, or any TPUSA party actually flew to this event, or which aircraft they used. The arrival airport above is an inference from the venue city, not a record."
+  - "Whether the estimated arrival and departure times are within hours or within days of the truth, wherever observed_by_adsb is empty."
+  - "What the tracked aircraft were doing at any field they appear at. A trace proves presence, never purpose and never occupancy."
+  - "Whether the receiver networks simply did not hear an aircraft that was there. See the coverage block - an absence is not a finding."

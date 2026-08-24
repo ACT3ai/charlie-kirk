@@ -1,0 +1,1462 @@
+# GENERATED FILE - regenerate, do not hand-edit.
+#   node/python: apis/public_open_source/code/airports_near.py --only 20241023_duluth
+#   The prompt that governs this file: prompts/p_airports_near.md
+schema: ck.speaking.airports_near/1
+generated_utc: "2026-08-24T19:03:27Z"
+generated_by: site/docs/Planes/following/apis/public_open_source/code/airports_near.py
+page:
+  slug: 20241023_duluth
+  mdx: site/docs/Planes/following/speaking/20241023_duluth.mdx
+  yaml: site/docs/Planes/following/speaking/20241023_duluth.yaml
+  url: /Planes/following/speaking/20241023_duluth
+event:
+  title: "Turning Point Action Georgia For Trump rally"
+  who: Charlie
+  attendee_class: CHARLIE_ONLY
+  charlie_present: "yes"
+  erika_present: not_documented
+  attendance_status: held
+  event_type: rally
+  dates:
+    raw: 2024-10-23
+    first_day: 2024-10-23
+    last_day: 2024-10-23
+    granularity: DAY
+    certainty: EVENT_DATE
+    # PODCAST_PROXY means the date is a podcast RELEASE date and the event was normally 0-7 days earlier. Never publish a same-day claim off one.
+  local_time:
+    raw: "afternoon (Kirk log); Trump evening"
+    parsed_hhmm: "12:00"
+    basis: "coarse_word_'noon'_mapped_to_12:00"
+    timezone: America/New_York
+    timezone_method: timezonefinder
+  location:
+    city: Duluth
+    state: GA
+    country: USA
+    venue: "Gas South Arena, Duluth / metro Atlanta"
+    metro_area: "Atlanta GA"
+    geocode:
+      lat: 34.00152
+      lon: -84.15046
+      method: us_census_2024_gazetteer
+      matched: "Duluth city"
+  source: "AP 24 Oct 2024; @charliekirk11 26 Oct 2024. Fox 5 later said Oct 24 — report the conflict, prefer Kirk log + AP Wednesday = Oct 23."
+  source_url: "https://apnews.com/article/turning-point-election-2024-donald-trump-2b3580134a6b19dff18771c3fdb0f11a"
+  days_before_sept10_2025: 322
+search:
+  radius_miles: 40
+  window_days_each_side: 2
+  window_from: 2024-10-21
+  window_to: 2024-10-25
+  window_day_count: 5
+  centre: KPDK
+  tails_searched:
+    - N102DZ
+    - N1098L
+    - N2100L
+    - N40JD
+    - N560TW
+    - N582MM
+    - N59906
+    - N872RA
+    - N888KG
+    - SU-BGM
+    - SU-BND
+    - SU-BTT
+    - SU-BTU
+    - SU-BTV
+    - T7-ELL
+  sources_searched:
+    - "recovered ADS-B traces on disk (site/docs/Planes/<TAIL>/data/recovered/)"
+    - site/docs/Planes/following/flights.csv
+    - site/docs/Planes/following/overlaps.csv
+arrival_airport:
+  # ESTIMATE. No published Kirk-side flight record exists for this event unless
+  # the observed_by_adsb block below is non-empty. This is arithmetic on the
+  # event time, not a landing record.
+  chosen_airport:
+    airport_code: KPDK
+    icao: KPDK
+    iata: PDK
+    name: "DeKalb Peachtree Airport"
+    city: Atlanta
+    region: US-GA
+    country: US
+    type: medium_airport
+    elevation_ft: 1003
+    longest_runway_ft: 6001
+    longest_runway_surface: CON
+    runway_count: 4
+    runways_lighted: true
+    scheduled_service: true
+    jet_capability: jet_capable
+    lat: 33.87633
+    lon: -84.30213
+    distance_mi: 12.3
+    bearing: SW
+  distance_from_event_city_mi: 12.3
+  selection_basis: CURATED_tpusa_events.csv_VALUE_KEPT_computed_nearest_jet_field_DIFFERS
+  curated_value_in_tpusa_events_csv:
+    airport_code: KPDK
+    airport_name: "DeKalb-Peachtree Airport"
+    distance_mi: 12
+  computed_nearest_jet_capable_field:
+    airport_code: KLZU
+    name: "Gwinnett County Briscoe Field"
+    distance_mi: 10.9
+    longest_runway_ft: 6001
+  estimated_arrival:
+    date: 2024-10-23
+    local_time: "09:00"
+    timezone: America/New_York
+    utc: "2024-10-23T13:00:00Z"
+    basis: "event start 12:00 local (coarse_word_'noon'_mapped_to_12:00) minus 3h"
+    confidence: medium
+  estimated_departure:
+    date: 2024-10-23
+    local_time: "16:00"
+    timezone: America/New_York
+    utc: "2024-10-23T20:00:00Z"
+    basis: "event end + 4h (speech, exit, wheels-up)"
+    confidence: medium
+  observed_by_adsb: []
+  observed_by_adsb_note: "NO Kirk-side aircraft is on disk on the ground within 40 miles of KPDK in this window. The arrival and departure above stay estimates."
+airports_within_radius:
+  # Every field a private jet could physically use within the radius.
+  # Heliports, seaplane bases, balloonports and closed fields are excluded -
+  # a business jet cannot use any of them. Everything else is kept, including
+  # every small strip with no scheduled service: those are the point of the sweep.
+  radius_miles: 40
+  centre_airport: KPDK
+  count: 62
+  jet_capable_count: 14
+  light_jet_capable_count: 2
+  no_scheduled_service_count: 60
+  source: "OurAirports (CC0) airports.csv + runways.csv"
+  list:
+    - airport_code: KPDK
+      icao: KPDK
+      iata: PDK
+      name: "DeKalb Peachtree Airport"
+      city: Atlanta
+      region: US-GA
+      country: US
+      type: medium_airport
+      elevation_ft: 1003
+      longest_runway_ft: 6001
+      longest_runway_surface: CON
+      runway_count: 4
+      runways_lighted: true
+      scheduled_service: true
+      jet_capability: jet_capable
+      lat: 33.87633
+      lon: -84.30213
+      distance_mi: 0.0
+      bearing: N
+      tracked_plane_presence_in_window: []
+    - airport_code: KMGE
+      icao: KMGE
+      iata: MGE
+      name: "Dobbins Air Reserve Base"
+      city: Marietta
+      region: US-GA
+      country: US
+      type: medium_airport
+      elevation_ft: 1068
+      longest_runway_ft: 10002
+      longest_runway_surface: CON
+      runway_count: 2
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: jet_capable
+      lat: 33.9154
+      lon: -84.5163
+      distance_mi: 12.6
+      bearing: WNW
+      tracked_plane_presence_in_window: []
+    - airport_code: KFTY
+      icao: KFTY
+      iata: FTY
+      name: "Fulton County Airport Brown Field"
+      city: Atlanta
+      region: US-GA
+      country: US
+      type: medium_airport
+      elevation_ft: 841
+      longest_runway_ft: 5797
+      longest_runway_surface: ASP
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: jet_capable
+      lat: 33.7791
+      lon: -84.5214
+      distance_mi: 14.3
+      bearing: WSW
+      tracked_plane_presence_in_window: []
+    - airport_code: 00GA
+      icao: null
+      iata: null
+      name: "Lt World Airport"
+      city: Lithonia
+      region: US-GA
+      country: US
+      type: small_airport
+      elevation_ft: 700
+      longest_runway_ft: 2600
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 33.7675
+      lon: -84.0683
+      distance_mi: 15.4
+      bearing: ESE
+      tracked_plane_presence_in_window: []
+    - airport_code: 5GA4
+      icao: null
+      iata: null
+      name: "Air Acres Airport"
+      city: Woodstock
+      region: US-GA
+      country: US
+      type: small_airport
+      elevation_ft: 918
+      longest_runway_ft: 2000
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 34.1059
+      lon: -84.4485
+      distance_mi: 17.9
+      bearing: NNW
+      tracked_plane_presence_in_window: []
+    - airport_code: KATL
+      icao: KATL
+      iata: ATL
+      name: "Hartsfield Jackson Atlanta International Airport"
+      city: Atlanta
+      region: US-GA
+      country: US
+      type: large_airport
+      elevation_ft: 1026
+      longest_runway_ft: 12390
+      longest_runway_surface: CON
+      runway_count: 5
+      runways_lighted: true
+      scheduled_service: true
+      jet_capability: jet_capable
+      lat: 33.6367
+      lon: -84.4281
+      distance_mi: 18.1
+      bearing: SSW
+      tracked_plane_presence_in_window: []
+    - airport_code: 2GA9
+      icao: null
+      iata: null
+      name: "Lenora Airport"
+      city: Snellville
+      region: US-GA
+      country: US
+      type: small_airport
+      elevation_ft: 940
+      longest_runway_ft: 2800
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 33.8046
+      lon: -83.9963
+      distance_mi: 18.2
+      bearing: ESE
+      tracked_plane_presence_in_window: []
+    - airport_code: 6GA0
+      icao: null
+      iata: null
+      name: "Stoney Point Field"
+      city: Cumming
+      region: US-GA
+      country: US
+      type: small_airport
+      elevation_ft: 1150
+      longest_runway_ft: 2500
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 34.1326
+      lon: -84.1994
+      distance_mi: 18.7
+      bearing: NNE
+      tracked_plane_presence_in_window: []
+    - airport_code: GA80
+      icao: null
+      iata: null
+      name: "Whispering Pines Airport"
+      city: Conyers
+      region: US-GA
+      country: US
+      type: small_airport
+      elevation_ft: 940
+      longest_runway_ft: 2600
+      longest_runway_surface: ASPH
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 33.7823
+      lon: -83.9888
+      distance_mi: 19.1
+      bearing: ESE
+      tracked_plane_presence_in_window: []
+    - airport_code: KRYY
+      icao: null
+      iata: null
+      name: "Cobb County International Airport-McCollum Field"
+      city: Atlanta
+      region: US-GA
+      country: US
+      type: medium_airport
+      elevation_ft: 1040
+      longest_runway_ft: 6295
+      longest_runway_surface: ASP
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: jet_capable
+      lat: 34.01316
+      lon: -84.59721
+      distance_mi: 19.4
+      bearing: WNW
+      tracked_plane_presence_in_window: []
+    - airport_code: KLZU
+      icao: KLZU
+      iata: LZU
+      name: "Gwinnett County Briscoe Field"
+      city: Lawrenceville
+      region: US-GA
+      country: US
+      type: small_airport
+      elevation_ft: 1061
+      longest_runway_ft: 6001
+      longest_runway_surface: ASP
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: jet_capable
+      lat: 33.9781
+      lon: -83.9624
+      distance_mi: 20.7
+      bearing: ENE
+      tracked_plane_presence_in_window: []
+    - airport_code: 36GA
+      icao: null
+      iata: null
+      name: "Lola Landing Airport"
+      city: Conyers
+      region: US-GA
+      country: US
+      type: small_airport
+      elevation_ft: 870
+      longest_runway_ft: 1500
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 33.72423
+      lon: -83.97608
+      distance_mi: 21.5
+      bearing: ESE
+      tracked_plane_presence_in_window: []
+    - airport_code: 2GE5
+      icao: null
+      iata: null
+      name: "Chukkar Farm Ultralightport"
+      city: Alpharetta
+      region: US-GA
+      country: US
+      type: small_airport
+      elevation_ft: 1000
+      longest_runway_ft: 600
+      longest_runway_surface: TURF-G
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 34.1978
+      lon: -84.3194
+      distance_mi: 22.2
+      bearing: N
+      tracked_plane_presence_in_window: []
+    - airport_code: 4GE2
+      icao: null
+      iata: null
+      name: "Gorden E Bellah International Airport"
+      city: Stockbridge
+      region: US-GA
+      country: US
+      type: small_airport
+      elevation_ft: 780
+      longest_runway_ft: null
+      longest_runway_surface: null
+      runway_count: 0
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: unknown
+      lat: 33.5501
+      lon: -84.1666
+      distance_mi: 23.8
+      bearing: SSE
+      tracked_plane_presence_in_window: []
+    - airport_code: K4A0
+      icao: null
+      iata: null
+      name: "Berry Hill Airport"
+      city: Stockbridge
+      region: US-GA
+      country: US
+      type: small_airport
+      elevation_ft: 770
+      longest_runway_ft: 3000
+      longest_runway_surface: ASP
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: marginal
+      lat: 33.53557
+      lon: -84.17908
+      distance_mi: 24.6
+      bearing: SSE
+      tracked_plane_presence_in_window: []
+    - airport_code: 3GA0
+      icao: null
+      iata: null
+      name: "Grant Airport"
+      city: Stockbridge
+      region: US-GA
+      country: US
+      type: small_airport
+      elevation_ft: 790
+      longest_runway_ft: 1100
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 33.5275
+      lon: -84.1569
+      distance_mi: 25.5
+      bearing: SSE
+      tracked_plane_presence_in_window: []
+    - airport_code: 25GA
+      icao: null
+      iata: null
+      name: "Miller Farm Airport"
+      city: Douglasville
+      region: US-GA
+      country: US
+      type: small_airport
+      elevation_ft: 750
+      longest_runway_ft: 2000
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 33.6598
+      lon: -84.6631
+      distance_mi: 25.6
+      bearing: SW
+      tracked_plane_presence_in_window: []
+    - airport_code: 4GA6
+      icao: null
+      iata: null
+      name: "Chattahoochee Air Park"
+      city: Douglasville
+      region: US-GA
+      country: US
+      type: small_airport
+      elevation_ft: 750
+      longest_runway_ft: 3200
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 33.66233
+      lon: -84.68012
+      distance_mi: 26.3
+      bearing: SW
+      tracked_plane_presence_in_window: []
+    - airport_code: 6GA4
+      icao: null
+      iata: null
+      name: "Spring Valley Farm Airport"
+      city: Loganville
+      region: US-GA
+      country: US
+      type: small_airport
+      elevation_ft: 920
+      longest_runway_ft: 3000
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 33.7971
+      lon: -83.8513
+      distance_mi: 26.4
+      bearing: ESE
+      tracked_plane_presence_in_window: []
+    - airport_code: GA95
+      icao: null
+      iata: null
+      name: "Coleman Field"
+      city: Fayetteville
+      region: US-GA
+      country: US
+      type: small_airport
+      elevation_ft: 1010
+      longest_runway_ft: 1500
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 33.5262
+      lon: -84.5022
+      distance_mi: 26.8
+      bearing: SSW
+      tracked_plane_presence_in_window: []
+    - airport_code: GA92
+      icao: null
+      iata: null
+      name: "Beck Field"
+      city: Fayetteville
+      region: US-GA
+      country: US
+      type: small_airport
+      elevation_ft: 990
+      longest_runway_ft: 1100
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 33.52123
+      lon: -84.51021
+      distance_mi: 27.3
+      bearing: SSW
+      tracked_plane_presence_in_window: []
+    - airport_code: GA89
+      icao: null
+      iata: null
+      name: "Diamond S Airport"
+      city: Lovejoy
+      region: US-GA
+      country: US
+      type: small_airport
+      elevation_ft: 910
+      longest_runway_ft: 2700
+      longest_runway_surface: ASPH-G
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 33.4758
+      lon: -84.2769
+      distance_mi: 27.7
+      bearing: S
+      tracked_plane_presence_in_window: []
+    - airport_code: 54GA
+      icao: null
+      iata: null
+      name: "Deerfield Landing Airport"
+      city: Hampton
+      region: US-GA
+      country: US
+      type: small_airport
+      elevation_ft: 890
+      longest_runway_ft: null
+      longest_runway_surface: null
+      runway_count: 0
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: unknown
+      lat: 33.4643
+      lon: -84.2683
+      distance_mi: 28.5
+      bearing: S
+      tracked_plane_presence_in_window: []
+    - airport_code: GA94
+      icao: null
+      iata: null
+      name: "McLendon Airport"
+      city: Fayetteville
+      region: US-GA
+      country: US
+      type: small_airport
+      elevation_ft: 900
+      longest_runway_ft: 1433
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 33.4915
+      lon: -84.4894
+      distance_mi: 28.7
+      bearing: SSW
+      tracked_plane_presence_in_window: []
+    - airport_code: 4GA9
+      icao: null
+      iata: null
+      name: "Ebeneezer Airport"
+      city: Cumming
+      region: US-GA
+      country: US
+      type: small_airport
+      elevation_ft: 1230
+      longest_runway_ft: 1400
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 34.2423
+      lon: -84.0571
+      distance_mi: 28.9
+      bearing: NNE
+      tracked_plane_presence_in_window: []
+    - airport_code: 2GA1
+      icao: null
+      iata: null
+      name: "Poole Farm Airport"
+      city: Oxford
+      region: US-GA
+      country: US
+      type: small_airport
+      elevation_ft: 830
+      longest_runway_ft: 2000
+      longest_runway_surface: TURF
+      runway_count: 2
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 33.6807
+      lon: -83.8527
+      distance_mi: 29.1
+      bearing: ESE
+      tracked_plane_presence_in_window: []
+    - airport_code: 0GE0
+      icao: null
+      iata: null
+      name: "Pinewood Airport"
+      city: Douglasville
+      region: US-GA
+      country: US
+      type: small_airport
+      elevation_ft: 1085
+      longest_runway_ft: 2000
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 33.7821
+      lon: -84.8008
+      distance_mi: 29.4
+      bearing: WSW
+      tracked_plane_presence_in_window: []
+    - airport_code: 0GA6
+      icao: null
+      iata: null
+      name: "Sunset Strip"
+      city: Jersey
+      region: US-GA
+      country: US
+      type: small_airport
+      elevation_ft: 780
+      longest_runway_ft: 2100
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 33.7334
+      lon: -83.8188
+      distance_mi: 29.5
+      bearing: ESE
+      tracked_plane_presence_in_window: []
+    - airport_code: US-0630
+      icao: null
+      iata: null
+      name: "The Flying W Ranch Airport"
+      city: "Flowery Branch"
+      region: US-GA
+      country: US
+      type: small_airport
+      elevation_ft: 1160
+      longest_runway_ft: null
+      longest_runway_surface: null
+      runway_count: 0
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: unknown
+      lat: 34.17662
+      lon: -83.93618
+      distance_mi: 29.5
+      bearing: NE
+      tracked_plane_presence_in_window: []
+    - airport_code: GA90
+      icao: null
+      iata: null
+      name: "Walker Field"
+      city: Fayetteville
+      region: US-GA
+      country: US
+      type: small_airport
+      elevation_ft: 875
+      longest_runway_ft: 2000
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 33.45133
+      lon: -84.40862
+      distance_mi: 30.0
+      bearing: SSW
+      tracked_plane_presence_in_window: []
+    - airport_code: 89GE
+      icao: null
+      iata: null
+      name: "South Fulton Airport"
+      city: Palmetto
+      region: US-GA
+      country: US
+      type: small_airport
+      elevation_ft: 1025
+      longest_runway_ft: 2690
+      longest_runway_surface: ASPH-P
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 33.5376
+      lon: -84.6388
+      distance_mi: 30.4
+      bearing: SW
+      tracked_plane_presence_in_window: []
+    - airport_code: 51GA
+      icao: null
+      iata: null
+      name: "Smith Field"
+      city: Tyrone
+      region: US-GA
+      country: US
+      type: small_airport
+      elevation_ft: 920
+      longest_runway_ft: 1800
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 33.5081
+      lon: -84.6005
+      distance_mi: 30.7
+      bearing: SW
+      tracked_plane_presence_in_window: []
+    - airport_code: K47A
+      icao: null
+      iata: null
+      name: "Cherokee County Regional Airport"
+      city: Canton
+      region: US-GA
+      country: US
+      type: small_airport
+      elevation_ft: 1219
+      longest_runway_ft: 5003
+      longest_runway_surface: ASP
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: jet_capable
+      lat: 34.3106
+      lon: -84.4239
+      distance_mi: 30.8
+      bearing: NNW
+      tracked_plane_presence_in_window: []
+    - airport_code: K9A1
+      icao: null
+      iata: null
+      name: "Covington Municipal Airport"
+      city: Covington
+      region: US-GA
+      country: US
+      type: small_airport
+      elevation_ft: 809
+      longest_runway_ft: 6000
+      longest_runway_surface: ASP
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: jet_capable
+      lat: 33.6325
+      lon: -83.8496
+      distance_mi: 31.0
+      bearing: ESE
+      tracked_plane_presence_in_window: []
+    - airport_code: US-5673
+      icao: null
+      iata: null
+      name: "Moore Airport"
+      city: Waleska
+      region: US-GA
+      country: US
+      type: small_airport
+      elevation_ft: 927
+      longest_runway_ft: null
+      longest_runway_surface: null
+      runway_count: 0
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: unknown
+      lat: 34.27586
+      lon: -84.59022
+      distance_mi: 32.2
+      bearing: NNW
+      tracked_plane_presence_in_window: []
+    - airport_code: 19GA
+      icao: null
+      iata: null
+      name: "Willow Pond Aviation Inc Airport"
+      city: Fayetteville
+      region: US-GA
+      country: US
+      type: small_airport
+      elevation_ft: 868
+      longest_runway_ft: 3000
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 33.42404
+      lon: -84.49837
+      distance_mi: 33.2
+      bearing: SSW
+      tracked_plane_presence_in_window: []
+    - airport_code: K4A7
+      icao: null
+      iata: null
+      name: "Atlanta Speedway Airport"
+      city: Hampton
+      region: US-GA
+      country: US
+      type: small_airport
+      elevation_ft: 882
+      longest_runway_ft: 5509
+      longest_runway_surface: ASP
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: jet_capable
+      lat: 33.38988
+      lon: -84.33101
+      distance_mi: 33.7
+      bearing: S
+      tracked_plane_presence_in_window: []
+    - airport_code: 07GA
+      icao: null
+      iata: null
+      name: "Alcovy Airport"
+      city: Covington
+      region: US-GA
+      country: US
+      type: small_airport
+      elevation_ft: 750
+      longest_runway_ft: 1700
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 33.67426
+      lon: -83.76464
+      distance_mi: 33.9
+      bearing: ESE
+      tracked_plane_presence_in_window: []
+    - airport_code: 20GA
+      icao: null
+      iata: null
+      name: "Earl L. Small Jr. Field/Stockmar Airport"
+      city: "Villa Rica"
+      region: US-GA
+      country: US
+      type: small_airport
+      elevation_ft: 1110
+      longest_runway_ft: 4500
+      longest_runway_surface: ASPH
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: light_jet_capable
+      lat: 33.7565
+      lon: -84.8847
+      distance_mi: 34.5
+      bearing: WSW
+      tracked_plane_presence_in_window: []
+    - airport_code: GA31
+      icao: null
+      iata: null
+      name: "Two Rocks Airport"
+      city: Palmetto
+      region: US-GA
+      country: US
+      type: small_airport
+      elevation_ft: 964
+      longest_runway_ft: 3200
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 33.46942
+      lon: -84.66903
+      distance_mi: 35.1
+      bearing: SW
+      tracked_plane_presence_in_window: []
+    - airport_code: 2GE8
+      icao: null
+      iata: null
+      name: "Andy Fields Airport"
+      city: Newnan
+      region: US-GA
+      country: US
+      type: small_airport
+      elevation_ft: 980
+      longest_runway_ft: 1500
+      longest_runway_surface: TURF-G
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 33.4642
+      lon: -84.6633
+      distance_mi: 35.2
+      bearing: SW
+      tracked_plane_presence_in_window: []
+    - airport_code: KD73
+      icao: null
+      iata: null
+      name: "Monroe Walton County Airport"
+      city: Monroe
+      region: US-GA
+      country: US
+      type: small_airport
+      elevation_ft: 875
+      longest_runway_ft: 4112
+      longest_runway_surface: ASP
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: light_jet_capable
+      lat: 33.7824
+      lon: -83.6929
+      distance_mi: 35.6
+      bearing: E
+      tracked_plane_presence_in_window: []
+    - airport_code: KVPC
+      icao: null
+      iata: null
+      name: "Cartersville Airport"
+      city: Cartersville
+      region: US-GA
+      country: US
+      type: small_airport
+      elevation_ft: 759
+      longest_runway_ft: 5760
+      longest_runway_surface: ASP
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: jet_capable
+      lat: 34.1231
+      lon: -84.8487
+      distance_mi: 35.6
+      bearing: WNW
+      tracked_plane_presence_in_window: []
+    - airport_code: 0GA0
+      icao: null
+      iata: null
+      name: "Halls Flying Ranch Airport"
+      city: Hampton
+      region: US-GA
+      country: US
+      type: small_airport
+      elevation_ft: 800
+      longest_runway_ft: 2150
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 33.3562
+      lon: -84.3671
+      distance_mi: 36.1
+      bearing: S
+      tracked_plane_presence_in_window: []
+    - airport_code: GA04
+      icao: null
+      iata: null
+      name: "Mallards Landing Airport"
+      city: "Locust Grove"
+      region: US-GA
+      country: US
+      type: small_airport
+      elevation_ft: 837
+      longest_runway_ft: 4500
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 33.36457
+      lon: -84.16825
+      distance_mi: 36.2
+      bearing: SSE
+      tracked_plane_presence_in_window: []
+    - airport_code: GA83
+      icao: null
+      iata: null
+      name: "Windy Hill Airport"
+      city: Covington
+      region: US-GA
+      country: US
+      type: small_airport
+      elevation_ft: 740
+      longest_runway_ft: 2000
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 33.5468
+      lon: -83.8055
+      distance_mi: 36.5
+      bearing: SE
+      tracked_plane_presence_in_window: []
+    - airport_code: KPUJ
+      icao: KPUJ
+      iata: null
+      name: "Silver Comet Field at Paulding Northwest Atlanta Airport"
+      city: Dallas
+      region: US-GA
+      country: US
+      type: small_airport
+      elevation_ft: 1289
+      longest_runway_ft: 5505
+      longest_runway_surface: CONC-G
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: jet_capable
+      lat: 33.91233
+      lon: -84.94111
+      distance_mi: 36.7
+      bearing: W
+      tracked_plane_presence_in_window: []
+    - airport_code: KWDR
+      icao: KWDR
+      iata: WDR
+      name: "Barrow County Airport"
+      city: Winder
+      region: US-GA
+      country: US
+      type: small_airport
+      elevation_ft: 943
+      longest_runway_ft: 5202
+      longest_runway_surface: ASP
+      runway_count: 2
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: jet_capable
+      lat: 33.9829
+      lon: -83.6674
+      distance_mi: 37.1
+      bearing: ENE
+      tracked_plane_presence_in_window: []
+    - airport_code: 0GE4
+      icao: null
+      iata: null
+      name: "Pecan Patch Airstrip"
+      city: Sunnyside
+      region: US-GA
+      country: US
+      type: small_airport
+      elevation_ft: 860
+      longest_runway_ft: 1045
+      longest_runway_surface: TURF
+      runway_count: 2
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 33.3314
+      lon: -84.2667
+      distance_mi: 37.7
+      bearing: S
+      tracked_plane_presence_in_window: []
+    - airport_code: 9GE7
+      icao: null
+      iata: null
+      name: "Neely Farms Airport"
+      city: Covington
+      region: US-GA
+      country: US
+      type: small_airport
+      elevation_ft: 720
+      longest_runway_ft: 2100
+      longest_runway_surface: TURF-G
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 33.53139
+      lon: -83.79194
+      distance_mi: 37.8
+      bearing: SE
+      tracked_plane_presence_in_window: []
+    - airport_code: 3RU
+      icao: null
+      iata: null
+      name: "Rust Airstrip"
+      city: Woolsey
+      region: US-GA
+      country: US
+      type: small_airport
+      elevation_ft: 810
+      longest_runway_ft: 2750
+      longest_runway_surface: TURF-F
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 33.3326
+      lon: -84.4019
+      distance_mi: 38.0
+      bearing: S
+      tracked_plane_presence_in_window: []
+    - airport_code: 10GA
+      icao: null
+      iata: null
+      name: "Beaverbrook Aerodrome"
+      city: Griffin
+      region: US-GA
+      country: US
+      type: small_airport
+      elevation_ft: 910
+      longest_runway_ft: 2100
+      longest_runway_surface: TURF-G
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 33.3251
+      lon: -84.2983
+      distance_mi: 38.1
+      bearing: S
+      tracked_plane_presence_in_window: []
+    - airport_code: 1GA9
+      icao: null
+      iata: null
+      name: "Aerie Airport"
+      city: Monroe
+      region: US-GA
+      country: US
+      type: small_airport
+      elevation_ft: 830
+      longest_runway_ft: 2000
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 33.76161
+      lon: -83.6527
+      distance_mi: 38.1
+      bearing: ESE
+      tracked_plane_presence_in_window: []
+    - airport_code: GA00
+      icao: null
+      iata: null
+      name: "Kintail Farm Airport"
+      city: Monroe
+      region: US-GA
+      country: US
+      type: small_airport
+      elevation_ft: 810
+      longest_runway_ft: 3000
+      longest_runway_surface: GRVL
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 33.8256
+      lon: -83.6397
+      distance_mi: 38.2
+      bearing: E
+      tracked_plane_presence_in_window: []
+    - airport_code: 81GA
+      icao: null
+      iata: null
+      name: "Lucky Lairds Landing Airport"
+      city: "Villa Rica"
+      region: US-GA
+      country: US
+      type: small_airport
+      elevation_ft: 1130
+      longest_runway_ft: 1650
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 33.6409
+      lon: -84.9049
+      distance_mi: 38.3
+      bearing: WSW
+      tracked_plane_presence_in_window: []
+    - airport_code: KGVL
+      icao: KGVL
+      iata: GVL
+      name: "Lee Gilmer Memorial Airport"
+      city: Gainesville
+      region: US-GA
+      country: US
+      type: small_airport
+      elevation_ft: 1276
+      longest_runway_ft: 5496
+      longest_runway_surface: ASPH-G
+      runway_count: 2
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: jet_capable
+      lat: 34.2726
+      lon: -83.8302
+      distance_mi: 38.5
+      bearing: NE
+      tracked_plane_presence_in_window: []
+    - airport_code: 85GA
+      icao: null
+      iata: null
+      name: "Aiken Field"
+      city: Talmo
+      region: US-GA
+      country: US
+      type: small_airport
+      elevation_ft: 1020
+      longest_runway_ft: 1000
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 34.1723
+      lon: -83.731
+      distance_mi: 38.6
+      bearing: ENE
+      tracked_plane_presence_in_window: []
+    - airport_code: 29GA
+      icao: null
+      iata: null
+      name: "Rolling Meadows Airfield"
+      city: Sharpsburg
+      region: US-GA
+      country: US
+      type: small_airport
+      elevation_ft: 808
+      longest_runway_ft: 1800
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 33.3843
+      lon: -84.6319
+      distance_mi: 38.9
+      bearing: SSW
+      tracked_plane_presence_in_window: []
+    - airport_code: KFFC
+      icao: null
+      iata: null
+      name: "Peachtree City Falcon Field"
+      city: "Peachtree City"
+      region: US-GA
+      country: US
+      type: small_airport
+      elevation_ft: 808
+      longest_runway_ft: 5768
+      longest_runway_surface: ASP
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: jet_capable
+      lat: 33.3573
+      lon: -84.5718
+      distance_mi: 39.1
+      bearing: SSW
+      tracked_plane_presence_in_window: []
+    - airport_code: 18GA
+      icao: null
+      iata: null
+      name: "Sleepy Hollow Airport"
+      city: "Social Circle"
+      region: US-GA
+      country: US
+      type: small_airport
+      elevation_ft: 750
+      longest_runway_ft: 2600
+      longest_runway_surface: ASPH
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 33.6932
+      lon: -83.6577
+      distance_mi: 39.1
+      bearing: ESE
+      tracked_plane_presence_in_window: []
+    - airport_code: US-4647
+      icao: null
+      iata: null
+      name: "Clint Odom Airport"
+      city: Newnan
+      region: US-GA
+      country: US
+      type: small_airport
+      elevation_ft: 928
+      longest_runway_ft: null
+      longest_runway_surface: null
+      runway_count: 0
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: unknown
+      lat: 33.41718
+      lon: -84.71221
+      distance_mi: 39.5
+      bearing: SW
+      tracked_plane_presence_in_window: []
+    - airport_code: GE53
+      icao: null
+      iata: null
+      name: "Chigger Hill Airport"
+      city: "Locust Grove"
+      region: US-GA
+      country: US
+      type: small_airport
+      elevation_ft: 800
+      longest_runway_ft: 2461
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 33.31674
+      lon: -84.15061
+      distance_mi: 39.6
+      bearing: SSE
+      tracked_plane_presence_in_window: []
+tracked_plane_presence:
+  # Was any tracked aircraft on the ground at any field in the list above,
+  # inside the window? Three registers are searched and kept apart, strongest
+  # first. NEVER collapse them into one number.
+  window:
+    from: 2024-10-21
+    to: 2024-10-25
+    days_each_side: 2
+  any_found: false
+  egyptian_su_found: false
+  counts:
+    adsb_ground_contacts: 0
+    adsb_ground_contacts_egyptian_su: 0
+    flights_csv_stays: 0
+    flights_csv_stays_egyptian_su: 0
+    claimed_overlaps: 0
+  from_adsb_traces: []
+  from_flights_csv: []
+  from_overlaps_csv: []
+  just_outside_the_radius:
+    # A hard radius creates a cliff and a cliff hides evidence. These fields
+    # sit between 40 and 60 miles from the arrival airport. They are NOT counted
+    # as hits and must never be published as ones - they are here so a near miss
+    # is visible rather than silently dropped.
+    outer_radius_miles: 60.0
+    adsb_ground_contacts: []
+    flights_csv_stays: []
+    claimed_overlaps: []
+  coverage:
+    # AN EMPTY RESULT ABOVE IS NOT A FINDING UNLESS THIS SAYS THE DAYS WERE HELD.
+    # aircraft_days_needed = tails x days in the window. aircraft_days_held is
+    # how many of those this repo actually has a trace for. The rest were never
+    # pulled, or the networks heard nothing - the two are indistinguishable here.
+    aircraft_days_needed: 75
+    aircraft_days_held: 0
+    coverage_pct: 0.0
+    tails_with_no_trace_in_window:
+      - N102DZ
+      - N1098L
+      - N2100L
+      - N40JD
+      - N560TW
+      - N582MM
+      - N59906
+      - N872RA
+      - N888KG
+      - SU-BGM
+      - SU-BND
+      - SU-BTT
+      - SU-BTU
+      - SU-BTV
+      - T7-ELL
+    by_side:
+      following:
+        # FOLLOWING is the side the claim is about - the Egyptian SU- tails.
+        # This percentage is the one that decides whether an empty result means
+        # anything at all.
+        tails: 6
+        aircraft_days_needed: 30
+        aircraft_days_held: 0
+        coverage_pct: 0.0
+      kirk:
+        # KIRK-side coverage is what turns an ESTIMATED arrival into an
+        # OBSERVED one. Low here means the arrival times above stay estimates.
+        tails: 6
+        aircraft_days_needed: 30
+        aircraft_days_held: 0
+        coverage_pct: 0.0
+      n1098l:
+        # Other tracked aircraft. A DIFFERENT CLAIM - do not merge the threads.
+        tails: 3
+        aircraft_days_needed: 15
+        aircraft_days_held: 0
+        coverage_pct: 0.0
+counterargument:
+  - "ONE PAIRING IS NOT EVIDENCE. The claim under test is a repetition across many stops, and any single pairing has an innocent explanation a reader will find."
+  - "A field inside the radius is a field a jet COULD have used. Nothing here shows that anyone did use it, or that two aircraft on one ramp had any connection."
+  - "Maintenance is the strongest innocent explanation in this record: Duncan Aviation (Provo and Lincoln) and Yingling (Wichita) are Part 145 Falcon and Gulfstream shops, and a Falcon 7X sitting for weeks at one reads as a maintenance visit."
+  - "Transatlantic customs and fuel stops explain the recurring East Coast fields."
+  - "ERIKA'S SIDE IS THE WEAK SIDE. Her flight logs are reported erased, so any Erika pairing rests on the foreign aircraft's track plus a CLAIMED location for her. See /Planes/Erika-Flight-Logs-Erased."
+what_we_do_not_know:
+  - "Whether Charlie Kirk, Erika Kirk, or any TPUSA party actually flew to this event, or which aircraft they used. The arrival airport above is an inference from the venue city, not a record."
+  - "Whether the estimated arrival and departure times are within hours or within days of the truth, wherever observed_by_adsb is empty."
+  - "What the tracked aircraft were doing at any field they appear at. A trace proves presence, never purpose and never occupancy."
+  - "Whether the receiver networks simply did not hear an aircraft that was there. See the coverage block - an absence is not a finding."

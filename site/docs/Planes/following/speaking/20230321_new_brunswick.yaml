@@ -1,0 +1,882 @@
+# GENERATED FILE - regenerate, do not hand-edit.
+#   node/python: apis/public_open_source/code/airports_near.py --only 20230321_new_brunswick
+#   The prompt that governs this file: prompts/p_airports_near.md
+schema: ck.speaking.airports_near/1
+generated_utc: "2026-08-24T19:03:26Z"
+generated_by: site/docs/Planes/following/apis/public_open_source/code/airports_near.py
+page:
+  slug: 20230321_new_brunswick
+  mdx: site/docs/Planes/following/speaking/20230321_new_brunswick.mdx
+  yaml: site/docs/Planes/following/speaking/20230321_new_brunswick.yaml
+  url: /Planes/following/speaking/20230321_new_brunswick
+event:
+  title: "Live Free Tour — Rutgers University (Candace Owens)"
+  who: TPUSA
+  attendee_class: TPUSA_NO_KIRK
+  charlie_present: "no"
+  erika_present: "no"
+  attendance_status: held
+  event_type: campus
+  dates:
+    raw: 2023-03-21
+    first_day: 2023-03-21
+    last_day: 2023-03-21
+    granularity: DAY
+    certainty: EVENT_DATE
+    # PODCAST_PROXY means the date is a podcast RELEASE date and the event was normally 0-7 days earlier. Never publish a same-day claim off one.
+  local_time:
+    raw: null
+    parsed_hhmm: null
+    basis: no_time_published
+    timezone: America/New_York
+    timezone_method: timezonefinder
+  location:
+    city: "New Brunswick"
+    state: NJ
+    country: USA
+    venue: "Rutgers University"
+    metro_area: "New York-Newark NY/NJ"
+    geocode:
+      lat: 40.48668
+      lon: -74.44441
+      method: us_census_2024_gazetteer
+      matched: "New Brunswick city"
+  source: "TPUSA vlog ('Candace Owens spoke on March 21st, 2023')"
+  source_url: "https://www.youtube.com/watch?v=jYRFBWfKOok"
+  days_before_sept10_2025: 904
+search:
+  radius_miles: 40
+  window_days_each_side: 2
+  window_from: 2023-03-19
+  window_to: 2023-03-23
+  window_day_count: 5
+  centre: KEWR
+  tails_searched:
+    - N102DZ
+    - N1098L
+    - N2100L
+    - N40JD
+    - N560TW
+    - N582MM
+    - N59906
+    - N872RA
+    - N888KG
+    - SU-BGM
+    - SU-BND
+    - SU-BTT
+    - SU-BTU
+    - SU-BTV
+    - T7-ELL
+  sources_searched:
+    - "recovered ADS-B traces on disk (site/docs/Planes/<TAIL>/data/recovered/)"
+    - site/docs/Planes/following/flights.csv
+    - site/docs/Planes/following/overlaps.csv
+arrival_airport:
+  # ESTIMATE. No published Kirk-side flight record exists for this event unless
+  # the observed_by_adsb block below is non-empty. This is arithmetic on the
+  # event time, not a landing record.
+  chosen_airport:
+    airport_code: KEWR
+    icao: KEWR
+    iata: EWR
+    name: "Newark Liberty International Airport"
+    city: Newark
+    region: US-NJ
+    country: US
+    type: large_airport
+    elevation_ft: 18
+    longest_runway_ft: 11000
+    longest_runway_surface: ASP
+    runway_count: 3
+    runways_lighted: true
+    scheduled_service: true
+    jet_capability: jet_capable
+    lat: 40.6894
+    lon: -74.17055
+    distance_mi: 20.1
+    bearing: NE
+  distance_from_event_city_mi: 20.1
+  selection_basis: CURATED_tpusa_events.csv_VALUE_KEPT_computed_nearest_jet_field_DIFFERS
+  curated_value_in_tpusa_events_csv:
+    airport_code: KEWR
+    airport_name: "Newark Liberty International"
+    distance_mi: 18
+  computed_nearest_jet_capable_field:
+    airport_code: KLDJ
+    name: "Linden Airport"
+    distance_mi: 13.8
+    longest_runway_ft: 4140
+  estimated_arrival:
+    date: 2023-03-21
+    local_time: "16:00"
+    timezone: America/New_York
+    utc: "2023-03-21T20:00:00Z"
+    basis: "no event time published; 19:00 local assumed for arithmetic only; minus 3h"
+    confidence: low
+  estimated_departure:
+    date: 2023-03-21
+    local_time: "23:00"
+    timezone: America/New_York
+    utc: "2023-03-22T03:00:00Z"
+    basis: "event end + 4h (speech, exit, wheels-up)"
+    confidence: low
+  observed_by_adsb: []
+  observed_by_adsb_note: "NO Kirk-side aircraft is on disk on the ground within 40 miles of KEWR in this window. The arrival and departure above stay estimates."
+airports_within_radius:
+  # Every field a private jet could physically use within the radius.
+  # Heliports, seaplane bases, balloonports and closed fields are excluded -
+  # a business jet cannot use any of them. Everything else is kept, including
+  # every small strip with no scheduled service: those are the point of the sweep.
+  radius_miles: 40
+  centre_airport: KEWR
+  count: 33
+  jet_capable_count: 8
+  light_jet_capable_count: 3
+  no_scheduled_service_count: 28
+  source: "OurAirports (CC0) airports.csv + runways.csv"
+  list:
+    - airport_code: KEWR
+      icao: KEWR
+      iata: EWR
+      name: "Newark Liberty International Airport"
+      city: Newark
+      region: US-NJ
+      country: US
+      type: large_airport
+      elevation_ft: 18
+      longest_runway_ft: 11000
+      longest_runway_surface: ASP
+      runway_count: 3
+      runways_lighted: true
+      scheduled_service: true
+      jet_capability: jet_capable
+      lat: 40.6894
+      lon: -74.17055
+      distance_mi: 0.0
+      bearing: N
+      tracked_plane_presence_in_window: []
+    - airport_code: KLDJ
+      icao: KLDJ
+      iata: LDJ
+      name: "Linden Airport"
+      city: Linden
+      region: US-NJ
+      country: US
+      type: small_airport
+      elevation_ft: 23
+      longest_runway_ft: 4140
+      longest_runway_surface: ASP
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: light_jet_capable
+      lat: 40.6174
+      lon: -74.2446
+      distance_mi: 6.3
+      bearing: SW
+      tracked_plane_presence_in_window: []
+    - airport_code: KTEB
+      icao: KTEB
+      iata: TEB
+      name: "Teterboro Airport"
+      city: Teterboro
+      region: US-NJ
+      country: US
+      type: medium_airport
+      elevation_ft: 9
+      longest_runway_ft: 6997
+      longest_runway_surface: ASP
+      runway_count: 2
+      runways_lighted: true
+      scheduled_service: true
+      jet_capability: jet_capable
+      lat: 40.8501
+      lon: -74.0608
+      distance_mi: 12.5
+      bearing: NNE
+      tracked_plane_presence_in_window: []
+    - airport_code: KCDW
+      icao: KCDW
+      iata: CDW
+      name: "Essex County Airport"
+      city: Caldwell
+      region: US-NJ
+      country: US
+      type: small_airport
+      elevation_ft: 173
+      longest_runway_ft: 4552
+      longest_runway_surface: ASP
+      runway_count: 2
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: light_jet_capable
+      lat: 40.8752
+      lon: -74.2814
+      distance_mi: 14.1
+      bearing: NNW
+      tracked_plane_presence_in_window: []
+    - airport_code: KMMU
+      icao: KMMU
+      iata: MMU
+      name: "Morristown Municipal Airport"
+      city: Morristown
+      region: US-NJ
+      country: US
+      type: medium_airport
+      elevation_ft: 187
+      longest_runway_ft: 5998
+      longest_runway_surface: ASP
+      runway_count: 2
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: jet_capable
+      lat: 40.79906
+      lon: -74.41495
+      distance_mi: 14.9
+      bearing: WNW
+      tracked_plane_presence_in_window: []
+    - airport_code: KLGA
+      icao: KLGA
+      iata: LGA
+      name: "LaGuardia Airport"
+      city: "New York"
+      region: US-NY
+      country: US
+      type: large_airport
+      elevation_ft: 21
+      longest_runway_ft: 7002
+      longest_runway_surface: ASP
+      runway_count: 2
+      runways_lighted: true
+      scheduled_service: true
+      jet_capability: jet_capable
+      lat: 40.7772
+      lon: -73.8726
+      distance_mi: 16.7
+      bearing: ENE
+      tracked_plane_presence_in_window: []
+    - airport_code: N07
+      icao: null
+      iata: null
+      name: "Lincoln Park Airport"
+      city: "Lincoln Park"
+      region: US-NJ
+      country: US
+      type: small_airport
+      elevation_ft: 182
+      longest_runway_ft: 2767
+      longest_runway_surface: ASPH-G
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.9475
+      lon: -74.3145
+      distance_mi: 19.4
+      bearing: NNW
+      tracked_plane_presence_in_window: []
+    - airport_code: KJFK
+      icao: KJFK
+      iata: JFK
+      name: "John F. Kennedy International Airport"
+      city: "New York"
+      region: US-NY
+      country: US
+      type: large_airport
+      elevation_ft: 13
+      longest_runway_ft: 14511
+      longest_runway_surface: PEM
+      runway_count: 4
+      runways_lighted: true
+      scheduled_service: true
+      jet_capability: jet_capable
+      lat: 40.63945
+      lon: -73.77932
+      distance_mi: 20.8
+      bearing: E
+      tracked_plane_presence_in_window: []
+    - airport_code: NJ72
+      icao: null
+      iata: null
+      name: "Hop Brook Farm Airport"
+      city: Holmdel
+      region: US-NJ
+      country: US
+      type: small_airport
+      elevation_ft: 140
+      longest_runway_ft: 2200
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.3512
+      lon: -74.1813
+      distance_mi: 23.4
+      bearing: S
+      tracked_plane_presence_in_window: []
+    - airport_code: K47N
+      icao: null
+      iata: JVI
+      name: "Central Jersey Regional Airport"
+      city: Manville
+      region: US-NJ
+      country: US
+      type: small_airport
+      elevation_ft: 86
+      longest_runway_ft: 3507
+      longest_runway_surface: ASP
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: marginal
+      lat: 40.5244
+      lon: -74.5984
+      distance_mi: 25.2
+      bearing: WSW
+      tracked_plane_presence_in_window: []
+    - airport_code: NJ75
+      icao: null
+      iata: null
+      name: "Werner Private Airport"
+      city: Jamesburg
+      region: US-NJ
+      country: US
+      type: small_airport
+      elevation_ft: 50
+      longest_runway_ft: null
+      longest_runway_surface: null
+      runway_count: 0
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: unknown
+      lat: 40.3501
+      lon: -74.3663
+      distance_mi: 25.6
+      bearing: SSW
+      tracked_plane_presence_in_window: []
+    - airport_code: K3N6
+      icao: null
+      iata: null
+      name: "Old Bridge Airport"
+      city: "Old Bridge"
+      region: US-NJ
+      country: US
+      type: small_airport
+      elevation_ft: 87
+      longest_runway_ft: 3594
+      longest_runway_surface: ASP
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: marginal
+      lat: 40.3299
+      lon: -74.3468
+      distance_mi: 26.5
+      bearing: SSW
+      tracked_plane_presence_in_window: []
+    - airport_code: KSMQ
+      icao: null
+      iata: null
+      name: "Somerset Airport"
+      city: Somerville
+      region: US-NJ
+      country: US
+      type: small_airport
+      elevation_ft: 105
+      longest_runway_ft: 2739
+      longest_runway_surface: ASP
+      runway_count: 3
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.626
+      lon: -74.6702
+      distance_mi: 26.6
+      bearing: W
+      tracked_plane_presence_in_window: []
+    - airport_code: JY43
+      icao: null
+      iata: null
+      name: "Hill Top Airport"
+      city: "West Milford"
+      region: US-NJ
+      country: US
+      type: small_airport
+      elevation_ft: 921
+      longest_runway_ft: 2150
+      longest_runway_surface: ASPH
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 41.08322
+      lon: -74.33855
+      distance_mi: 28.6
+      bearing: NNW
+      tracked_plane_presence_in_window: []
+    - airport_code: KN51
+      icao: null
+      iata: null
+      name: "Solberg/Hunterdon Airport"
+      city: "Whitehouse Station"
+      region: US-NJ
+      country: US
+      type: small_airport
+      elevation_ft: 195
+      longest_runway_ft: 3735
+      longest_runway_surface: COP
+      runway_count: 2
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.5837
+      lon: -74.7362
+      distance_mi: 30.5
+      bearing: WSW
+      tracked_plane_presence_in_window: []
+    - airport_code: NJ46
+      icao: null
+      iata: null
+      name: "Mar Bar L Farms Airport"
+      city: "Manalapan Township"
+      region: US-NJ
+      country: US
+      type: small_airport
+      elevation_ft: 80
+      longest_runway_ft: 2200
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.27699
+      lon: -74.38787
+      distance_mi: 30.7
+      bearing: SSW
+      tracked_plane_presence_in_window: []
+    - airport_code: 0NJ5
+      icao: null
+      iata: null
+      name: "Fla-Net Airport"
+      city: Netcong
+      region: US-NJ
+      country: US
+      type: small_airport
+      elevation_ft: 1040
+      longest_runway_ft: null
+      longest_runway_surface: null
+      runway_count: 0
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: unknown
+      lat: 40.8859
+      lon: -74.7057
+      distance_mi: 31.1
+      bearing: WNW
+      tracked_plane_presence_in_window: []
+    - airport_code: K4N1
+      icao: null
+      iata: null
+      name: "Greenwood Lake Airport"
+      city: "West Milford"
+      region: US-NJ
+      country: US
+      type: small_airport
+      elevation_ft: 791
+      longest_runway_ft: 3471
+      longest_runway_surface: ASP
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: marginal
+      lat: 41.1282
+      lon: -74.3467
+      distance_mi: 31.7
+      bearing: NNW
+      tracked_plane_presence_in_window: []
+    - airport_code: K39N
+      icao: null
+      iata: PCT
+      name: "Princeton Airport"
+      city: "Princeton/Rocky Hill"
+      region: US-NJ
+      country: US
+      type: small_airport
+      elevation_ft: 128
+      longest_runway_ft: 3499
+      longest_runway_surface: ASP
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: marginal
+      lat: 40.3992
+      lon: -74.6589
+      distance_mi: 32.5
+      bearing: SW
+      tracked_plane_presence_in_window: []
+    - airport_code: 62NJ
+      icao: null
+      iata: null
+      name: "Scheller Airport"
+      city: "Schooleys Mountain"
+      region: US-NJ
+      country: US
+      type: small_airport
+      elevation_ft: 1051
+      longest_runway_ft: 1800
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.80833
+      lon: -74.80833
+      distance_mi: 34.4
+      bearing: WNW
+      tracked_plane_presence_in_window: []
+    - airport_code: KBLM
+      icao: KBLM
+      iata: BLM
+      name: "Monmouth Executive Airport"
+      city: Belmar/Farmingdale
+      region: US-NJ
+      country: US
+      type: small_airport
+      elevation_ft: 153
+      longest_runway_ft: 7345
+      longest_runway_surface: ASP
+      runway_count: 2
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: jet_capable
+      lat: 40.1869
+      lon: -74.1249
+      distance_mi: 34.8
+      bearing: S
+      tracked_plane_presence_in_window: []
+    - airport_code: NJ60
+      icao: null
+      iata: null
+      name: "Cuddihy Landing Strip"
+      city: Freehold
+      region: US-NJ
+      country: US
+      type: small_airport
+      elevation_ft: 105
+      longest_runway_ft: 2800
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.1871
+      lon: -74.2671
+      distance_mi: 35.1
+      bearing: S
+      tracked_plane_presence_in_window: []
+    - airport_code: NJ59
+      icao: null
+      iata: null
+      name: "Ekdahl Airport"
+      city: Freehold
+      region: US-NJ
+      country: US
+      type: small_airport
+      elevation_ft: 118
+      longest_runway_ft: 1300
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.1829
+      lon: -74.2788
+      distance_mi: 35.5
+      bearing: S
+      tracked_plane_presence_in_window: []
+    - airport_code: KHPN
+      icao: KHPN
+      iata: HPN
+      name: "Westchester County Airport"
+      city: "White Plains"
+      region: US-NY
+      country: US
+      type: medium_airport
+      elevation_ft: 439
+      longest_runway_ft: 6549
+      longest_runway_surface: ASP
+      runway_count: 2
+      runways_lighted: true
+      scheduled_service: true
+      jet_capability: jet_capable
+      lat: 41.067
+      lon: -73.7076
+      distance_mi: 35.6
+      bearing: NE
+      tracked_plane_presence_in_window: []
+    - airport_code: 5NJ2
+      icao: null
+      iata: null
+      name: "Herr Mountain Airport"
+      city: Stanton
+      region: US-NJ
+      country: US
+      type: small_airport
+      elevation_ft: 560
+      longest_runway_ft: 2800
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.59275
+      lon: -74.84041
+      distance_mi: 35.7
+      bearing: W
+      tracked_plane_presence_in_window: []
+    - airport_code: NJ16
+      icao: null
+      iata: null
+      name: "Sliker Strip"
+      city: Califon
+      region: US-NJ
+      country: US
+      type: small_airport
+      elevation_ft: 965
+      longest_runway_ft: null
+      longest_runway_surface: null
+      runway_count: 0
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: unknown
+      lat: 40.74907
+      lon: -74.86279
+      distance_mi: 36.5
+      bearing: W
+      tracked_plane_presence_in_window: []
+    - airport_code: N05
+      icao: null
+      iata: null
+      name: "Hackettstown Airport"
+      city: Hackettstown
+      region: US-NJ
+      country: US
+      type: small_airport
+      elevation_ft: 670
+      longest_runway_ft: 2200
+      longest_runway_surface: ASPH-G
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.8201
+      lon: -74.8552
+      distance_mi: 37.0
+      bearing: WNW
+      tracked_plane_presence_in_window: []
+    - airport_code: K12N
+      icao: null
+      iata: null
+      name: "Aeroflex-Andover Airport"
+      city: Andover
+      region: US-NJ
+      country: US
+      type: small_airport
+      elevation_ft: 583
+      longest_runway_ft: 1981
+      longest_runway_surface: ASPH-G
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 41.0086
+      lon: -74.738
+      distance_mi: 37.0
+      bearing: NW
+      tracked_plane_presence_in_window: []
+    - airport_code: 60NJ
+      icao: null
+      iata: null
+      name: "O'Dwyer Airport"
+      city: Flemington
+      region: US-NJ
+      country: US
+      type: small_airport
+      elevation_ft: 200
+      longest_runway_ft: null
+      longest_runway_surface: null
+      runway_count: 0
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: unknown
+      lat: 40.4668
+      lon: -74.8329
+      distance_mi: 38.0
+      bearing: WSW
+      tracked_plane_presence_in_window: []
+    - airport_code: 3N5
+      icao: null
+      iata: null
+      name: "Newton Airport"
+      city: Newton
+      region: US-NJ
+      country: US
+      type: small_airport
+      elevation_ft: 620
+      longest_runway_ft: 2546
+      longest_runway_surface: ASPH-G
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 41.0273
+      lon: -74.7585
+      distance_mi: 38.6
+      bearing: NW
+      tracked_plane_presence_in_window: []
+    - airport_code: NJ47
+      icao: null
+      iata: null
+      name: "Teeny Weeny Acres Airport"
+      city: Flemington
+      region: US-NJ
+      country: US
+      type: small_airport
+      elevation_ft: 565
+      longest_runway_ft: null
+      longest_runway_surface: null
+      runway_count: 0
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: unknown
+      lat: 40.5168
+      lon: -74.8829
+      distance_mi: 39.2
+      bearing: WSW
+      tracked_plane_presence_in_window: []
+    - airport_code: KFRG
+      icao: KFRG
+      iata: FRG
+      name: "Republic Airport"
+      city: "East Farmingdale"
+      region: US-NY
+      country: US
+      type: medium_airport
+      elevation_ft: 82
+      longest_runway_ft: 6833
+      longest_runway_surface: ASP
+      runway_count: 2
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: jet_capable
+      lat: 40.72858
+      lon: -73.41427
+      distance_mi: 39.7
+      bearing: E
+      tracked_plane_presence_in_window: []
+    - airport_code: KN87
+      icao: null
+      iata: null
+      name: "Trenton Robbinsville Airport"
+      city: Robbinsville
+      region: US-NJ
+      country: US
+      type: small_airport
+      elevation_ft: 118
+      longest_runway_ft: 4275
+      longest_runway_surface: ASP
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: light_jet_capable
+      lat: 40.2139
+      lon: -74.6018
+      distance_mi: 39.9
+      bearing: SW
+      tracked_plane_presence_in_window: []
+tracked_plane_presence:
+  # Was any tracked aircraft on the ground at any field in the list above,
+  # inside the window? Three registers are searched and kept apart, strongest
+  # first. NEVER collapse them into one number.
+  window:
+    from: 2023-03-19
+    to: 2023-03-23
+    days_each_side: 2
+  any_found: false
+  egyptian_su_found: false
+  counts:
+    adsb_ground_contacts: 0
+    adsb_ground_contacts_egyptian_su: 0
+    flights_csv_stays: 0
+    flights_csv_stays_egyptian_su: 0
+    claimed_overlaps: 0
+  from_adsb_traces: []
+  from_flights_csv: []
+  from_overlaps_csv: []
+  just_outside_the_radius:
+    # A hard radius creates a cliff and a cliff hides evidence. These fields
+    # sit between 40 and 60 miles from the arrival airport. They are NOT counted
+    # as hits and must never be published as ones - they are here so a near miss
+    # is visible rather than silently dropped.
+    outer_radius_miles: 60.0
+    adsb_ground_contacts: []
+    flights_csv_stays: []
+    claimed_overlaps: []
+  coverage:
+    # AN EMPTY RESULT ABOVE IS NOT A FINDING UNLESS THIS SAYS THE DAYS WERE HELD.
+    # aircraft_days_needed = tails x days in the window. aircraft_days_held is
+    # how many of those this repo actually has a trace for. The rest were never
+    # pulled, or the networks heard nothing - the two are indistinguishable here.
+    aircraft_days_needed: 75
+    aircraft_days_held: 0
+    coverage_pct: 0.0
+    tails_with_no_trace_in_window:
+      - N102DZ
+      - N1098L
+      - N2100L
+      - N40JD
+      - N560TW
+      - N582MM
+      - N59906
+      - N872RA
+      - N888KG
+      - SU-BGM
+      - SU-BND
+      - SU-BTT
+      - SU-BTU
+      - SU-BTV
+      - T7-ELL
+    by_side:
+      following:
+        # FOLLOWING is the side the claim is about - the Egyptian SU- tails.
+        # This percentage is the one that decides whether an empty result means
+        # anything at all.
+        tails: 6
+        aircraft_days_needed: 30
+        aircraft_days_held: 0
+        coverage_pct: 0.0
+      kirk:
+        # KIRK-side coverage is what turns an ESTIMATED arrival into an
+        # OBSERVED one. Low here means the arrival times above stay estimates.
+        tails: 6
+        aircraft_days_needed: 30
+        aircraft_days_held: 0
+        coverage_pct: 0.0
+      n1098l:
+        # Other tracked aircraft. A DIFFERENT CLAIM - do not merge the threads.
+        tails: 3
+        aircraft_days_needed: 15
+        aircraft_days_held: 0
+        coverage_pct: 0.0
+counterargument:
+  - "ONE PAIRING IS NOT EVIDENCE. The claim under test is a repetition across many stops, and any single pairing has an innocent explanation a reader will find."
+  - "A field inside the radius is a field a jet COULD have used. Nothing here shows that anyone did use it, or that two aircraft on one ramp had any connection."
+  - "Maintenance is the strongest innocent explanation in this record: Duncan Aviation (Provo and Lincoln) and Yingling (Wichita) are Part 145 Falcon and Gulfstream shops, and a Falcon 7X sitting for weeks at one reads as a maintenance visit."
+  - "Transatlantic customs and fuel stops explain the recurring East Coast fields."
+  - "ERIKA'S SIDE IS THE WEAK SIDE. Her flight logs are reported erased, so any Erika pairing rests on the foreign aircraft's track plus a CLAIMED location for her. See /Planes/Erika-Flight-Logs-Erased."
+what_we_do_not_know:
+  - "Whether Charlie Kirk, Erika Kirk, or any TPUSA party actually flew to this event, or which aircraft they used. The arrival airport above is an inference from the venue city, not a record."
+  - "Whether the estimated arrival and departure times are within hours or within days of the truth, wherever observed_by_adsb is empty."
+  - "What the tracked aircraft were doing at any field they appear at. A trace proves presence, never purpose and never occupancy."
+  - "Whether the receiver networks simply did not hear an aircraft that was there. See the coverage block - an absence is not a finding."

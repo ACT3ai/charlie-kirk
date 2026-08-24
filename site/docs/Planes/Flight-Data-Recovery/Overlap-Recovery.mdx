@@ -53,6 +53,51 @@ Two aircraft account for the whole set: **[SU-BTT](/Planes/SU-BTT/overview)** (D
 hex `0101D3`) appears in 53 of the 69 pairs, and **[SU-BND](/Planes/SU-BND/overview)** (Gulfstream,
 hex `01003E`) in the other 16.
 
+## A second, stricter run has since been done — and it does not contradict this one
+
+**Read this before quoting any number above.** The pass on this page was run first and asks a
+deliberately loose question. A later pass asks a much harder one, over more rows, and reports a
+different-looking result. Both are on disk, both are true, and the difference between them is
+method, not disagreement.
+
+| | This page's pass | The later pass |
+|---|---|---|
+| Rows covered | **69** (aircraft, date) pairs | **all 85** rows of `overlaps.csv` |
+| Days queried | the alleged day and either side | the alleged day and either side |
+| Sources | the two free daily archives | the same two **plus** the ADS-B Exchange monthly sample |
+| The test | **same country** as alleged | **closest approach in kilometres to the field the row names** |
+| Rows it could decide | 23 | **36** |
+| Verdict | 21 consistent · 2 inconsistent | **24 confirmed · 12 refuted** |
+
+The later run finds more decidable rows because it can reach dates this one could not, and it
+refutes more of them because "the aircraft was in the United States" is a far weaker claim to
+satisfy than "the aircraft was at Wichita". **Neither number is wrong. Quote the 24/12 run**, which
+is recorded in
+`site/docs/Planes/following/apis/public_open_source/data/overlap_verification/overlap_verification.json`
+and written up row by row under [Overlap dates](/Planes/following/overlap/overview).
+
+### And the result is binary, which settles a separate argument entirely
+
+Two tests are argued in public about this spreadsheet: the sceptics' **strict** rule — same ICAO
+airport, plus or minus three days — and the sheet's own looser stated tolerance of **50 to 100
+miles**. Which rule you adopt has been treated as deciding the outcome. We banded every decidable
+row by measured distance to the field it names:
+
+| Band | Rows |
+|---|---|
+| within 15 km of the claimed field | **24** |
+| 15–80 km — same metro, wrong field | **0** |
+| 80–1,500 km — same region | **0** |
+| more than 1,500 km away | **12** |
+
+**Not one row falls in between.** Every decidable row is either at the field it names or on another
+continent. **The strict test and the loose test therefore return exactly the same answer on this
+evidence**, and the argument about which to use decides nothing at all.
+
+**None of which locates a person.** A row scored "at the claimed field" confirms the **aircraft**
+half of the pairing. The Kirk half is unchanged, and for Erika Kirk it is close to empty — see
+[Erika Flight Logs Erased](/Planes/Erika-Flight-Logs-Erased).
+
 ## What this tests, and what it cannot touch
 
 **This tests the flight leg. It does not test the shadowing.** That distinction is the whole page,
@@ -108,7 +153,7 @@ The two rows that do not check out are **in bold**.
 | OWENS-026, SITE-004 | SU-BTT | 2024-04-23 | Provo, UT | LFPB Paris-Le Bourget International Airport, Paris FR — 4.05 km | KPVU Provo Municipal Airport, Provo UT — 1.42 km | 834 | Consistent |
 | OWENS-027 | SU-BTT | 2024-04-28 | Wilmington, DE | KPVU Provo Municipal Airport, Provo UT — 1.41 km | KILG Wilmington Airport, Wilmington DE — 1.57 km | 1039 | Consistent |
 | OWENS-035, OWENS-065 | SU-BND | 2025-05-23 | Provo, UT | LFPB Paris-Le Bourget International Airport, Paris FR — 4.1 km | KPVU Provo Municipal Airport, Provo UT — 1.42 km | 1451 | Consistent |
-| **OWENS-036** | **SU-BTT** | **2025-06-18** | **Omaha / Lincoln, NE** | **HEBA Alexandria International Airport, Alexandria EG — 36.13 km** | **HEAL El Alamein International Airport, El Alamein EG — 75.92 km** | **9** | **INCONSISTENT** |
+| **OWENS-036** | **SU-BTT** | **2025-06-18** | **Omaha / Lincoln, NE** | **HEBA Alexandria International Airport, Alexandria EG — 36.13 km** | **HEAL El Alamein International Airport, El Alamein EG — 75.92 km** | **9** | **INCONSISTENT** — but see the correction below: a 5½-minute dawn fragment does not rule out a same-day US arrival |
 | OWENS-038, OWENS-067 | SU-BTT | 2025-07-20 | Omaha / Lincoln, NE | LFPB Paris-Le Bourget International Airport, Paris FR — 2.36 km | NE42 Dream Field, Lincoln NE — 5.74 km | 2404 | Consistent |
 | OWENS-039 | SU-BTT | 2025-08-17 | Omaha / Lincoln, NE | LFPB Paris-Le Bourget International Airport, Paris FR — 2.16 km | NE42 Dream Field, Lincoln NE — 5.77 km | 1988 | Consistent |
 | OWENS-040 | SU-BTT | 2025-09-04 | Provo, UT | LFPB Paris-Le Bourget International Airport, Paris FR — 2.96 km | KPVU Provo Municipal Airport, Provo UT — 1.35 km | 1971 | Consistent |
@@ -197,17 +242,51 @@ The recovered track runs **Paris-Le Bourget (4.18 km) to Inshas Air Base, Egypt 
 position reports, a full transatlantic-side leg from France into Egypt. On the date the spreadsheet
 places this aircraft in Missouri, the primary record has it flying from France to Egypt.
 
+### Country, or actually the city? Checked both ways
+
+The automatic test in `analyse_overlap_recovery.js` is deliberately crude: it asks only whether the
+recovered track puts the aircraft **in the alleged country**. A crude test is the right test to
+automate, because it cannot be talked into a match.
+
+But it under-states what came back, so the same 23 rows were also checked **against the alleged
+metro area** — does the track actually reach the city the spreadsheet names, allowing for the
+ordinary satellite fields (Valley Center for Wichita, Cahokia for St. Louis, Orem and Salt Lake for
+Provo, New Castle for Wilmington)?
+
+**The answer is the same twenty-one.** Every row that passes the country test also reaches the
+alleged city. Not one of the 23 is a case of "the aircraft was somewhere in America that day, so
+call it a match". The two failures are the two below, and they are the same two either way.
+
 ### SU-BTT, 18 June 2025 — alleged Omaha / Lincoln, Nebraska
 
 The recovered track runs **Alexandria International, Egypt (36.13 km) to El Alamein International,
-Egypt (75.92 km)**. On the date the spreadsheet places this aircraft in Nebraska, the primary record
-never has it leave Egypt.
+Egypt (75.92 km)**.
 
-**This one is thin and must be labelled thin.** It is **nine position reports**, the smallest trace
-in the entire set by a factor of fifty. Nine points is a fragment — enough to say a receiver in Egypt
-heard this airframe that day, not enough to reconstruct a flight. Both distances are large, which is
-what a fragment caught at altitude looks like. It is real primary data and it points one way, but a
-nine-point fragment should not be leaned on the way a 2,404-point trace can be.
+**This one is far thinner than the first, and the label "INCONSISTENT" overstates it.** Read the
+timestamps, which is what settles it:
+
+| | airplanes.live | adsb.lol |
+|---|---|---|
+| Points | **9** | **7** |
+| First heard | **06:23:26 UTC** — 31.2496 N, 29.6159 E | 06:23:26 UTC — identical |
+| Last heard | **06:28:54 UTC** — 31.4943 N, 28.9008 E | 06:28:54 UTC — identical |
+| Span | **5 minutes 28 seconds** | the same 5 minutes |
+
+**That is the whole record for the day: five and a half minutes, shortly after dawn, off the
+Egyptian Mediterranean coast.** The two archives agree to the second, so the fragment is real — a
+receiver heard SU-BTT there that morning. **What happens after 06:29 UTC is simply not recorded by
+either archive.**
+
+And that matters, because a Falcon 7X leaving Egypt at dawn can be in Nebraska the same calendar
+day. Cairo to the American Midwest is roughly thirteen hours with the usual European tech stop;
+06:29 UTC plus thirteen hours is **19:30 UTC, which is 14:30 in Lincoln**. **The fragment does not
+rule out the alleged arrival. It only shows where the aircraft was at breakfast time.**
+
+So the honest verdict on this row is **not "refuted" but "not supported, and not testable from what
+survives"** — and it belongs in a different class from the SU-BND row above, which has a 577-point
+track flying the wrong way for nearly four hours. The table marks both INCONSISTENT because the
+script's test is a same-day country check; **this paragraph is the correction to that label**, and
+it is here rather than buried because the difference between the two rows is large.
 
 ### What the spreadsheet's own audit already said about these two
 
@@ -305,7 +384,7 @@ against the alleged event before it could be called anything.
   end within two kilometres of an airport. The legs are largely real.
 * **On three rows the recovered data corrects the spreadsheet toward the auditor**, including the
   10 September origin. The free archives reproduced a paid audit's corrections at no cost.
-* **The 10 September departure clock is settled by primary data**: SU-BTT wheels-up 13:14:03 UTC,
+* **The 10 September departure clock is settled by primary data**: SU-BTT first airborne fix 13:14:03.82 UTC (last on-ground fix 13:13:16 UTC, so rotation is inside a 47-second window),
   07:14 a.m. MDT, five hours before the shot, with both archives agreeing to the millisecond.
 * **Two rows are contradicted outright** by the primary record, both of them already flagged
   `inaccurate` by the sheet's own audit.
@@ -367,3 +446,31 @@ The claim being tested is in `site/docs/Planes/following/overlaps.csv`.
 * [SU-BND](/Planes/SU-BND/overview) — the Gulfstream in the other 16
 * [Overlap Window Definition](/Planes/following/Overlap_Window_Definition) — what counts as an overlap in the first place
 * [Erika Flight Logs Erased](/Planes/Erika-Flight-Logs-Erased) — the missing half of every pairing above
+
+{/* CK_PAGE_FOOTER_START */}
+
+## Where this page fits
+
+Every row of [the 73-overlap spreadsheet](/Planes/following/73_overlaps) that reduces to an aircraft and a date was pulled against two free daily ADS-B archives, which is the first time [the following claim](/Planes/Following-Charlie-Erika) has been asked of primary position data instead of screenshots — two tails, [SU-BTT](/Planes/SU-BTT/overview) and [SU-BND](/Planes/SU-BND/overview), carry the whole set, and [Provo](/Planes/following/Provo_KPVU_2024-04-19_to_2025-09-13/overview) is where they cluster. A confirmed track still proves only where an airframe was — never purpose, never occupancy — which is why [the person half of every pairing](/Planes/following/Erika_Location_From_Instagram) matters more than the aircraft half, why [the disclosure laws are aimed at manifests](/laws/US_Intel/Law_2_US_Intel) rather than transponders, and why this sits beside [the sealed side of the case](/Legal/Evidence-Sealing-2026) rather than above it. Read [Overlap Window Definition](/Planes/following/Overlap_Window_Definition) next, then [the broadcasts the tally came from](/Planes/following/Candace_Owens_Broadcasts): the compilers counted a jet within 50 to 100 miles and plus or minus three days as an overlap, a net wide enough that the 39 rows with nothing in the window are not the weakest part of the count.
+
+## More across this investigation
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Israel intelligence flights and UVU](/Israel_Main_Suspect/israel-intel-flights-uvu)
+* [Egyptian foreign operations at Provo](/intelligence/Egyptian_Foreign_Ops)
+* [Foreign intelligence involvement claims](/Theories/Foreign_Intelligence_Claims)
+
+</div>
+<div>
+
+* [Wichita and the Dassault service centre](/Planes/following/Wichita_KICT_2022-11-13_to_2025-08-03/overview)
+* [Provo Municipal Airport (PVU)](/Locations/Provo_Airport)
+* [Foreign influence transparency as a proposed law](/Fix/Foreign_Influence)
+
+</div>
+</div>
+
+{/* CK_PAGE_FOOTER_END */}

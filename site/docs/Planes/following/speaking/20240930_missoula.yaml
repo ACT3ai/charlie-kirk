@@ -1,0 +1,495 @@
+# GENERATED FILE - regenerate, do not hand-edit.
+#   node/python: apis/public_open_source/code/airports_near.py --only 20240930_missoula
+#   The prompt that governs this file: prompts/p_airports_near.md
+schema: ck.speaking.airports_near/1
+generated_utc: "2026-08-24T19:03:26Z"
+generated_by: site/docs/Planes/following/apis/public_open_source/code/airports_near.py
+page:
+  slug: 20240930_missoula
+  mdx: site/docs/Planes/following/speaking/20240930_missoula.mdx
+  yaml: site/docs/Planes/following/speaking/20240930_missoula.yaml
+  url: /Planes/following/speaking/20240930_missoula
+event:
+  title: "Brainwashed Tour + TP Action Save Big Sky Rally — University of Montana"
+  who: Charlie
+  attendee_class: CHARLIE_ONLY
+  charlie_present: "yes"
+  erika_present: not_documented
+  attendance_status: held
+  event_type: campus
+  dates:
+    raw: 2024-09-30
+    first_day: 2024-09-30
+    last_day: 2024-09-30
+    granularity: DAY
+    certainty: EVENT_DATE
+    # PODCAST_PROXY means the date is a podcast RELEASE date and the event was normally 0-7 days earlier. Never publish a same-day claim off one.
+  local_time:
+    raw: "PMW 12:00–13:00 MDT; rally 15:30 MDT"
+    parsed_hhmm: "12:00"
+    basis: parsed_from_event_time_cell
+    timezone: America/Denver
+    timezone_method: timezonefinder
+  location:
+    city: Missoula
+    state: MT
+    country: USA
+    venue: "University of Montana"
+    metro_area: "Missoula MT"
+    geocode:
+      lat: 46.87436
+      lon: -114.02614
+      method: us_census_2024_gazetteer
+      matched: "Missoula city"
+  source: "Missoula GOP; @charliekirk11 30 Sep 2024"
+  source_url: "https://missoulagop.org/event/brainwashed-tour-with-charlie-kirk/"
+  days_before_sept10_2025: 345
+search:
+  radius_miles: 40
+  window_days_each_side: 2
+  window_from: 2024-09-28
+  window_to: 2024-10-02
+  window_day_count: 5
+  centre: KMSO
+  tails_searched:
+    - N102DZ
+    - N1098L
+    - N2100L
+    - N40JD
+    - N560TW
+    - N582MM
+    - N59906
+    - N872RA
+    - N888KG
+    - SU-BGM
+    - SU-BND
+    - SU-BTT
+    - SU-BTU
+    - SU-BTV
+    - T7-ELL
+  sources_searched:
+    - "recovered ADS-B traces on disk (site/docs/Planes/<TAIL>/data/recovered/)"
+    - site/docs/Planes/following/flights.csv
+    - site/docs/Planes/following/overlaps.csv
+arrival_airport:
+  # ESTIMATE. No published Kirk-side flight record exists for this event unless
+  # the observed_by_adsb block below is non-empty. This is arithmetic on the
+  # event time, not a landing record.
+  chosen_airport:
+    airport_code: KMSO
+    icao: KMSO
+    iata: MSO
+    name: "Missoula Montana Airport"
+    city: Missoula
+    region: US-MT
+    country: US
+    type: medium_airport
+    elevation_ft: 3206
+    longest_runway_ft: 9501
+    longest_runway_surface: ASP
+    runway_count: 1
+    runways_lighted: true
+    scheduled_service: true
+    jet_capability: jet_capable
+    lat: 46.91582
+    lon: -114.09111
+    distance_mi: 4.2
+    bearing: NW
+  distance_from_event_city_mi: 4.2
+  selection_basis: CURATED_CSV_AND_COMPUTED_NEAREST_JET_FIELD_AGREE
+  curated_value_in_tpusa_events_csv:
+    airport_code: KMSO
+    airport_name: "Missoula Montana Airport"
+    distance_mi: 5
+  computed_nearest_jet_capable_field:
+    airport_code: KMSO
+    name: "Missoula Montana Airport"
+    distance_mi: 4.2
+    longest_runway_ft: 9501
+  estimated_arrival:
+    date: 2024-09-30
+    local_time: "09:00"
+    timezone: America/Denver
+    utc: "2024-09-30T15:00:00Z"
+    basis: "event start 12:00 local (parsed_from_event_time_cell) minus 3h"
+    confidence: medium
+  estimated_departure:
+    date: 2024-09-30
+    local_time: "16:00"
+    timezone: America/Denver
+    utc: "2024-09-30T22:00:00Z"
+    basis: "event end + 4h (speech, exit, wheels-up)"
+    confidence: medium
+  observed_by_adsb: []
+  observed_by_adsb_note: "NO Kirk-side aircraft is on disk on the ground within 40 miles of KMSO in this window. The arrival and departure above stay estimates."
+airports_within_radius:
+  # Every field a private jet could physically use within the radius.
+  # Heliports, seaplane bases, balloonports and closed fields are excluded -
+  # a business jet cannot use any of them. Everything else is kept, including
+  # every small strip with no scheduled service: those are the point of the sweep.
+  radius_miles: 40
+  centre_airport: KMSO
+  count: 14
+  jet_capable_count: 1
+  light_jet_capable_count: 0
+  no_scheduled_service_count: 13
+  source: "OurAirports (CC0) airports.csv + runways.csv"
+  list:
+    - airport_code: KMSO
+      icao: KMSO
+      iata: MSO
+      name: "Missoula Montana Airport"
+      city: Missoula
+      region: US-MT
+      country: US
+      type: medium_airport
+      elevation_ft: 3206
+      longest_runway_ft: 9501
+      longest_runway_surface: ASP
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: true
+      jet_capability: jet_capable
+      lat: 46.91582
+      lon: -114.09111
+      distance_mi: 0.0
+      bearing: N
+      tracked_plane_presence_in_window: []
+    - airport_code: US-1510
+      icao: null
+      iata: null
+      name: "Petty Creek Mountain Ranch Airport"
+      city: Alberton
+      region: US-MT
+      country: US
+      type: small_airport
+      elevation_ft: 3519
+      longest_runway_ft: null
+      longest_runway_surface: null
+      runway_count: 0
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: unknown
+      lat: 46.90948
+      lon: -114.46537
+      distance_mi: 17.7
+      bearing: W
+      tracked_plane_presence_in_window: []
+    - airport_code: MT52
+      icao: null
+      iata: null
+      name: "Nine Mile Airport"
+      city: Huson
+      region: US-MT
+      country: US
+      type: small_airport
+      elevation_ft: 3364
+      longest_runway_ft: 2640
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 47.0777
+      lon: -114.413
+      distance_mi: 18.8
+      bearing: NW
+      tracked_plane_presence_in_window: []
+    - airport_code: US-7490
+      icao: null
+      iata: null
+      name: "Parcel Six Ranch Airport"
+      city: Florence
+      region: US-MT
+      country: US
+      type: small_airport
+      elevation_ft: 4450
+      longest_runway_ft: 2688
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 46.62493
+      lon: -113.9359
+      distance_mi: 21.4
+      bearing: SSE
+      tracked_plane_presence_in_window: []
+    - airport_code: RC0
+      icao: null
+      iata: null
+      name: "Rock Creek Airport"
+      city: Clinton
+      region: US-MT
+      country: US
+      type: small_airport
+      elevation_ft: 3547
+      longest_runway_ft: 4100
+      longest_runway_surface: TURF-F
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 46.7271
+      lon: -113.658
+      distance_mi: 24.3
+      bearing: ESE
+      tracked_plane_presence_in_window: []
+    - airport_code: MT32
+      icao: null
+      iata: null
+      name: "Ckye Field"
+      city: Stevensville
+      region: US-MT
+      country: US
+      type: small_airport
+      elevation_ft: 3600
+      longest_runway_ft: 2000
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 46.5388
+      lon: -114.04
+      distance_mi: 26.2
+      bearing: S
+      tracked_plane_presence_in_window: []
+    - airport_code: K32S
+      icao: null
+      iata: null
+      name: "Stevensville Airport"
+      city: Stevensville
+      region: US-MT
+      country: US
+      type: small_airport
+      elevation_ft: 3610
+      longest_runway_ft: 3809
+      longest_runway_surface: ASPH-G
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: marginal
+      lat: 46.5251
+      lon: -114.053
+      distance_mi: 27.1
+      bearing: S
+      tracked_plane_presence_in_window: []
+    - airport_code: 52S
+      icao: null
+      iata: null
+      name: "St Ignatius Airport"
+      city: "St Ignatius"
+      region: US-MT
+      country: US
+      type: small_airport
+      elevation_ft: 3006
+      longest_runway_ft: 2610
+      longest_runway_surface: ASPH-G
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 47.32501
+      lon: -114.08098
+      distance_mi: 28.3
+      bearing: N
+      tracked_plane_presence_in_window: []
+    - airport_code: US-7783
+      icao: null
+      iata: null
+      name: "Tarkio Montana Ranch Airport"
+      city: Superior
+      region: US-MT
+      country: US
+      type: small_airport
+      elevation_ft: 3127
+      longest_runway_ft: null
+      longest_runway_surface: null
+      runway_count: 0
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: unknown
+      lat: 47.03781
+      lon: -114.7308
+      distance_mi: 31.3
+      bearing: WNW
+      tracked_plane_presence_in_window: []
+    - airport_code: 98MT
+      icao: null
+      iata: null
+      name: "Rosemont Airport"
+      city: Stevensville
+      region: US-MT
+      country: US
+      type: small_airport
+      elevation_ft: 4172
+      longest_runway_ft: 2500
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 46.4428
+      lon: -114.003
+      distance_mi: 32.9
+      bearing: S
+      tracked_plane_presence_in_window: []
+    - airport_code: 23S
+      icao: null
+      iata: null
+      name: "Seeley Lake Airport"
+      city: "Seeley Lake"
+      region: US-MT
+      country: US
+      type: small_airport
+      elevation_ft: 4235
+      longest_runway_ft: 4575
+      longest_runway_surface: TURF-G
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 47.1791
+      lon: -113.445
+      distance_mi: 35.4
+      bearing: ENE
+      tracked_plane_presence_in_window: []
+    - airport_code: MT39
+      icao: null
+      iata: null
+      name: "Black Canyon Ranch Airport"
+      city: "Seeley Lake"
+      region: US-MT
+      country: US
+      type: small_airport
+      elevation_ft: 4260
+      longest_runway_ft: 3200
+      longest_runway_surface: TURF-DIRT
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 47.10272
+      lon: -113.3118
+      distance_mi: 38.9
+      bearing: ENE
+      tracked_plane_presence_in_window: []
+    - airport_code: MT72
+      icao: null
+      iata: null
+      name: "Hedditch Airport"
+      city: Victor
+      region: US-MT
+      country: US
+      type: small_airport
+      elevation_ft: 3663
+      longest_runway_ft: 3000
+      longest_runway_surface: TURF-DIRT
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 46.346
+      lon: -114.176
+      distance_mi: 39.6
+      bearing: S
+      tracked_plane_presence_in_window: []
+    - airport_code: K9S4
+      icao: null
+      iata: null
+      name: "Mineral County Airport"
+      city: Superior
+      region: US-MT
+      country: US
+      type: small_airport
+      elevation_ft: 2787
+      longest_runway_ft: 3450
+      longest_runway_surface: ASP
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: marginal
+      lat: 47.1683
+      lon: -114.854
+      distance_mi: 39.9
+      bearing: WNW
+      tracked_plane_presence_in_window: []
+tracked_plane_presence:
+  # Was any tracked aircraft on the ground at any field in the list above,
+  # inside the window? Three registers are searched and kept apart, strongest
+  # first. NEVER collapse them into one number.
+  window:
+    from: 2024-09-28
+    to: 2024-10-02
+    days_each_side: 2
+  any_found: false
+  egyptian_su_found: false
+  counts:
+    adsb_ground_contacts: 0
+    adsb_ground_contacts_egyptian_su: 0
+    flights_csv_stays: 0
+    flights_csv_stays_egyptian_su: 0
+    claimed_overlaps: 0
+  from_adsb_traces: []
+  from_flights_csv: []
+  from_overlaps_csv: []
+  just_outside_the_radius:
+    # A hard radius creates a cliff and a cliff hides evidence. These fields
+    # sit between 40 and 60 miles from the arrival airport. They are NOT counted
+    # as hits and must never be published as ones - they are here so a near miss
+    # is visible rather than silently dropped.
+    outer_radius_miles: 60.0
+    adsb_ground_contacts: []
+    flights_csv_stays: []
+    claimed_overlaps: []
+  coverage:
+    # AN EMPTY RESULT ABOVE IS NOT A FINDING UNLESS THIS SAYS THE DAYS WERE HELD.
+    # aircraft_days_needed = tails x days in the window. aircraft_days_held is
+    # how many of those this repo actually has a trace for. The rest were never
+    # pulled, or the networks heard nothing - the two are indistinguishable here.
+    aircraft_days_needed: 75
+    aircraft_days_held: 7
+    coverage_pct: 9.3
+    tails_with_no_trace_in_window:
+      - N40JD
+      - N59906
+      - N888KG
+      - SU-BGM
+      - SU-BTT
+      - SU-BTU
+      - SU-BTV
+      - T7-ELL
+    by_side:
+      following:
+        # FOLLOWING is the side the claim is about - the Egyptian SU- tails.
+        # This percentage is the one that decides whether an empty result means
+        # anything at all.
+        tails: 6
+        aircraft_days_needed: 30
+        aircraft_days_held: 1
+        coverage_pct: 3.3
+      kirk:
+        # KIRK-side coverage is what turns an ESTIMATED arrival into an
+        # OBSERVED one. Low here means the arrival times above stay estimates.
+        tails: 6
+        aircraft_days_needed: 30
+        aircraft_days_held: 4
+        coverage_pct: 13.3
+      n1098l:
+        # Other tracked aircraft. A DIFFERENT CLAIM - do not merge the threads.
+        tails: 3
+        aircraft_days_needed: 15
+        aircraft_days_held: 2
+        coverage_pct: 13.3
+counterargument:
+  - "ONE PAIRING IS NOT EVIDENCE. The claim under test is a repetition across many stops, and any single pairing has an innocent explanation a reader will find."
+  - "A field inside the radius is a field a jet COULD have used. Nothing here shows that anyone did use it, or that two aircraft on one ramp had any connection."
+  - "Maintenance is the strongest innocent explanation in this record: Duncan Aviation (Provo and Lincoln) and Yingling (Wichita) are Part 145 Falcon and Gulfstream shops, and a Falcon 7X sitting for weeks at one reads as a maintenance visit."
+  - "Transatlantic customs and fuel stops explain the recurring East Coast fields."
+  - "ERIKA'S SIDE IS THE WEAK SIDE. Her flight logs are reported erased, so any Erika pairing rests on the foreign aircraft's track plus a CLAIMED location for her. See /Planes/Erika-Flight-Logs-Erased."
+what_we_do_not_know:
+  - "Whether Charlie Kirk, Erika Kirk, or any TPUSA party actually flew to this event, or which aircraft they used. The arrival airport above is an inference from the venue city, not a record."
+  - "Whether the estimated arrival and departure times are within hours or within days of the truth, wherever observed_by_adsb is empty."
+  - "What the tracked aircraft were doing at any field they appear at. A trace proves presence, never purpose and never occupancy."
+  - "Whether the receiver networks simply did not hear an aircraft that was there. See the coverage block - an absence is not a finding."

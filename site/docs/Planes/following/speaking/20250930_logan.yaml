@@ -1,0 +1,477 @@
+# GENERATED FILE - regenerate, do not hand-edit.
+#   node/python: apis/public_open_source/code/airports_near.py --only 20250930_logan
+#   The prompt that governs this file: prompts/p_airports_near.md
+schema: ck.speaking.airports_near/1
+generated_utc: "2026-08-24T19:03:27Z"
+generated_by: site/docs/Planes/following/apis/public_open_source/code/airports_near.py
+page:
+  slug: 20250930_logan
+  mdx: site/docs/Planes/following/speaking/20250930_logan.mdx
+  yaml: site/docs/Planes/following/speaking/20250930_logan.yaml
+  url: /Planes/following/speaking/20250930_logan
+event:
+  title: "Turning Point Tour — Utah State University"
+  who: TPUSA
+  attendee_class: TPUSA_NO_KIRK
+  charlie_present: no_deceased
+  erika_present: unknown
+  attendance_status: held_after_death
+  event_type: campus
+  dates:
+    raw: 2025-09-30
+    first_day: 2025-09-30
+    last_day: 2025-09-30
+    granularity: DAY
+    certainty: AFTER_DEATH
+    # PODCAST_PROXY means the date is a podcast RELEASE date and the event was normally 0-7 days earlier. Never publish a same-day claim off one.
+  local_time:
+    raw: "18:30 MT (KMYU)"
+    parsed_hhmm: "18:30"
+    basis: parsed_from_event_time_cell
+    timezone: America/Denver
+    timezone_method: timezonefinder
+  location:
+    city: Logan
+    state: UT
+    country: USA
+    venue: "Utah State University, Logan"
+    metro_area: "Wasatch Front UT"
+    geocode:
+      lat: 41.74026
+      lon: -111.84176
+      method: us_census_2024_gazetteer
+      matched: "Logan city"
+  source: "KMYU (6:30 p.m.); KCRA 23 Sep 2025"
+  source_url: "https://kmyu.tv/news/politics/activist-social-media-personality-charles-kirk-schedules-events-at-two-utah-universities"
+  days_before_sept10_2025: -20
+search:
+  radius_miles: 40
+  window_days_each_side: 2
+  window_from: 2025-09-28
+  window_to: 2025-10-02
+  window_day_count: 5
+  centre: KLGU
+  tails_searched:
+    - N102DZ
+    - N1098L
+    - N2100L
+    - N40JD
+    - N560TW
+    - N582MM
+    - N59906
+    - N872RA
+    - N888KG
+    - SU-BGM
+    - SU-BND
+    - SU-BTT
+    - SU-BTU
+    - SU-BTV
+    - T7-ELL
+  sources_searched:
+    - "recovered ADS-B traces on disk (site/docs/Planes/<TAIL>/data/recovered/)"
+    - site/docs/Planes/following/flights.csv
+    - site/docs/Planes/following/overlaps.csv
+arrival_airport:
+  # ESTIMATE. No published Kirk-side flight record exists for this event unless
+  # the observed_by_adsb block below is non-empty. This is arithmetic on the
+  # event time, not a landing record.
+  chosen_airport:
+    airport_code: KLGU
+    icao: KLGU
+    iata: LGU
+    name: "Logan-Cache Airport"
+    city: Logan
+    region: US-UT
+    country: US
+    type: medium_airport
+    elevation_ft: 4457
+    longest_runway_ft: 9020
+    longest_runway_surface: ASP
+    runway_count: 2
+    runways_lighted: true
+    scheduled_service: false
+    jet_capability: jet_capable
+    lat: 41.7912
+    lon: -111.852
+    distance_mi: 3.6
+    bearing: N
+  distance_from_event_city_mi: 3.6
+  selection_basis: CURATED_CSV_AND_COMPUTED_NEAREST_JET_FIELD_AGREE
+  curated_value_in_tpusa_events_csv:
+    airport_code: KLGU
+    airport_name: "Logan-Cache Airport"
+    distance_mi: 4
+  computed_nearest_jet_capable_field:
+    airport_code: KLGU
+    name: "Logan-Cache Airport"
+    distance_mi: 3.6
+    longest_runway_ft: 9020
+  estimated_arrival:
+    date: 2025-09-30
+    local_time: "15:30"
+    timezone: America/Denver
+    utc: "2025-09-30T21:30:00Z"
+    basis: "event start 18:30 local (parsed_from_event_time_cell) minus 3h"
+    confidence: medium
+  estimated_departure:
+    date: 2025-09-30
+    local_time: "22:30"
+    timezone: America/Denver
+    utc: "2025-10-01T04:30:00Z"
+    basis: "event end + 4h (speech, exit, wheels-up)"
+    confidence: medium
+  observed_by_adsb: []
+  observed_by_adsb_note: "NO Kirk-side aircraft is on disk on the ground within 40 miles of KLGU in this window. The arrival and departure above stay estimates."
+airports_within_radius:
+  # Every field a private jet could physically use within the radius.
+  # Heliports, seaplane bases, balloonports and closed fields are excluded -
+  # a business jet cannot use any of them. Everything else is kept, including
+  # every small strip with no scheduled service: those are the point of the sweep.
+  radius_miles: 40
+  centre_airport: KLGU
+  count: 13
+  jet_capable_count: 2
+  light_jet_capable_count: 1
+  no_scheduled_service_count: 13
+  source: "OurAirports (CC0) airports.csv + runways.csv"
+  list:
+    - airport_code: KLGU
+      icao: KLGU
+      iata: LGU
+      name: "Logan-Cache Airport"
+      city: Logan
+      region: US-UT
+      country: US
+      type: medium_airport
+      elevation_ft: 4457
+      longest_runway_ft: 9020
+      longest_runway_surface: ASP
+      runway_count: 2
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: jet_capable
+      lat: 41.7912
+      lon: -111.852
+      distance_mi: 0.0
+      bearing: N
+      tracked_plane_presence_in_window: []
+    - airport_code: US-1506
+      icao: null
+      iata: null
+      name: "Holyoak Airport"
+      city: Mendon
+      region: US-UT
+      country: US
+      type: small_airport
+      elevation_ft: 4710
+      longest_runway_ft: null
+      longest_runway_surface: null
+      runway_count: 0
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: unknown
+      lat: 41.72577
+      lon: -111.9914
+      distance_mi: 8.5
+      bearing: WSW
+      tracked_plane_presence_in_window: []
+    - airport_code: UT89
+      icao: null
+      iata: null
+      name: "Cold Water Airport"
+      city: Mendon
+      region: US-UT
+      country: US
+      type: small_airport
+      elevation_ft: 4926
+      longest_runway_ft: 500
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 41.68161
+      lon: -111.98181
+      distance_mi: 10.1
+      bearing: SW
+      tracked_plane_presence_in_window: []
+    - airport_code: 2UT9
+      icao: null
+      iata: null
+      name: "Glogen Farms Airport"
+      city: Wellsville
+      region: US-UT
+      country: US
+      type: small_airport
+      elevation_ft: 4925
+      longest_runway_ft: 1500
+      longest_runway_surface: "TREATED DIRT"
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 41.59762
+      lon: -111.89787
+      distance_mi: 13.6
+      bearing: S
+      tracked_plane_presence_in_window: []
+    - airport_code: UT90
+      icao: null
+      iata: null
+      name: "CAVOK Ranch Airport"
+      city: Wellsville
+      region: US-UT
+      country: US
+      type: small_airport
+      elevation_ft: 5155
+      longest_runway_ft: 917
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 41.58537
+      lon: -111.9037
+      distance_mi: 14.5
+      bearing: S
+      tracked_plane_presence_in_window: []
+    - airport_code: 55UT
+      icao: null
+      iata: null
+      name: "Shipley Field"
+      city: Tremonton
+      region: US-UT
+      country: US
+      type: small_airport
+      elevation_ft: 4280
+      longest_runway_ft: 1088
+      longest_runway_surface: TURF/DIRT
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 41.67266
+      lon: -112.18199
+      distance_mi: 18.9
+      bearing: WSW
+      tracked_plane_presence_in_window: []
+    - airport_code: US-0626
+      icao: null
+      iata: null
+      name: "Musselman Airstrip"
+      city: Paradise
+      region: US-UT
+      country: US
+      type: small_airport
+      elevation_ft: 5505
+      longest_runway_ft: 980
+      longest_runway_surface: DIRT
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 41.51825
+      lon: -111.80242
+      distance_mi: 19.0
+      bearing: S
+      tracked_plane_presence_in_window: []
+    - airport_code: KBMC
+      icao: KBMC
+      iata: BMC
+      name: "Brigham City Regional Airport"
+      city: "Brigham City"
+      region: US-UT
+      country: US
+      type: small_airport
+      elevation_ft: 4229
+      longest_runway_ft: 8900
+      longest_runway_surface: ASP
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: jet_capable
+      lat: 41.5524
+      lon: -112.062
+      distance_mi: 19.7
+      bearing: SSW
+      tracked_plane_presence_in_window: []
+    - airport_code: KU10
+      icao: null
+      iata: null
+      name: "Preston Airport"
+      city: Preston
+      region: US-ID
+      country: US
+      type: small_airport
+      elevation_ft: 4728
+      longest_runway_ft: 3457
+      longest_runway_surface: ASP
+      runway_count: 2
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: marginal
+      lat: 42.1069
+      lon: -111.913
+      distance_mi: 22.0
+      bearing: N
+      tracked_plane_presence_in_window: []
+    - airport_code: 16UT
+      icao: null
+      iata: null
+      name: "Hinrichsen Field"
+      city: Perry
+      region: US-UT
+      country: US
+      type: small_airport
+      elevation_ft: 4266
+      longest_runway_ft: 1000
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 41.44432
+      lon: -112.04807
+      distance_mi: 26.0
+      bearing: SSW
+      tracked_plane_presence_in_window: []
+    - airport_code: 07UT
+      icao: null
+      iata: null
+      name: "E Northrop Grumman Airport"
+      city: Howell
+      region: US-UT
+      country: US
+      type: small_airport
+      elevation_ft: 4480
+      longest_runway_ft: null
+      longest_runway_surface: null
+      runway_count: 0
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: unknown
+      lat: 41.71667
+      lon: -112.44722
+      distance_mi: 31.1
+      bearing: W
+      tracked_plane_presence_in_window: []
+    - airport_code: KMLD
+      icao: KMLD
+      iata: MLD
+      name: "Malad City Airport"
+      city: "Malad City"
+      region: US-ID
+      country: US
+      type: small_airport
+      elevation_ft: 4503
+      longest_runway_ft: 4946
+      longest_runway_surface: ASP
+      runway_count: 2
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: light_jet_capable
+      lat: 42.1666
+      lon: -112.297
+      distance_mi: 34.6
+      bearing: NW
+      tracked_plane_presence_in_window: []
+    - airport_code: 11UT
+      icao: null
+      iata: null
+      name: "Flying R Airport"
+      city: Huntsville
+      region: US-UT
+      country: US
+      type: small_airport
+      elevation_ft: 5060
+      longest_runway_ft: null
+      longest_runway_surface: null
+      runway_count: 0
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: unknown
+      lat: 41.25385
+      lon: -111.71106
+      distance_mi: 37.8
+      bearing: S
+      tracked_plane_presence_in_window: []
+tracked_plane_presence:
+  # Was any tracked aircraft on the ground at any field in the list above,
+  # inside the window? Three registers are searched and kept apart, strongest
+  # first. NEVER collapse them into one number.
+  window:
+    from: 2025-09-28
+    to: 2025-10-02
+    days_each_side: 2
+  any_found: false
+  egyptian_su_found: false
+  counts:
+    adsb_ground_contacts: 0
+    adsb_ground_contacts_egyptian_su: 0
+    flights_csv_stays: 0
+    flights_csv_stays_egyptian_su: 0
+    claimed_overlaps: 0
+  from_adsb_traces: []
+  from_flights_csv: []
+  from_overlaps_csv: []
+  just_outside_the_radius:
+    # A hard radius creates a cliff and a cliff hides evidence. These fields
+    # sit between 40 and 60 miles from the arrival airport. They are NOT counted
+    # as hits and must never be published as ones - they are here so a near miss
+    # is visible rather than silently dropped.
+    outer_radius_miles: 60.0
+    adsb_ground_contacts: []
+    flights_csv_stays: []
+    claimed_overlaps: []
+  coverage:
+    # AN EMPTY RESULT ABOVE IS NOT A FINDING UNLESS THIS SAYS THE DAYS WERE HELD.
+    # aircraft_days_needed = tails x days in the window. aircraft_days_held is
+    # how many of those this repo actually has a trace for. The rest were never
+    # pulled, or the networks heard nothing - the two are indistinguishable here.
+    aircraft_days_needed: 75
+    aircraft_days_held: 5
+    coverage_pct: 6.7
+    tails_with_no_trace_in_window:
+      - N102DZ
+      - N2100L
+      - N40JD
+      - N560TW
+      - N872RA
+      - N888KG
+      - SU-BGM
+      - SU-BND
+      - SU-BTT
+      - SU-BTU
+    by_side:
+      following:
+        # FOLLOWING is the side the claim is about - the Egyptian SU- tails.
+        # This percentage is the one that decides whether an empty result means
+        # anything at all.
+        tails: 6
+        aircraft_days_needed: 30
+        aircraft_days_held: 2
+        coverage_pct: 6.7
+      kirk:
+        # KIRK-side coverage is what turns an ESTIMATED arrival into an
+        # OBSERVED one. Low here means the arrival times above stay estimates.
+        tails: 6
+        aircraft_days_needed: 30
+        aircraft_days_held: 1
+        coverage_pct: 3.3
+      n1098l:
+        # Other tracked aircraft. A DIFFERENT CLAIM - do not merge the threads.
+        tails: 3
+        aircraft_days_needed: 15
+        aircraft_days_held: 2
+        coverage_pct: 13.3
+counterargument:
+  - "ONE PAIRING IS NOT EVIDENCE. The claim under test is a repetition across many stops, and any single pairing has an innocent explanation a reader will find."
+  - "A field inside the radius is a field a jet COULD have used. Nothing here shows that anyone did use it, or that two aircraft on one ramp had any connection."
+  - "Maintenance is the strongest innocent explanation in this record: Duncan Aviation (Provo and Lincoln) and Yingling (Wichita) are Part 145 Falcon and Gulfstream shops, and a Falcon 7X sitting for weeks at one reads as a maintenance visit."
+  - "Transatlantic customs and fuel stops explain the recurring East Coast fields."
+  - "ERIKA'S SIDE IS THE WEAK SIDE. Her flight logs are reported erased, so any Erika pairing rests on the foreign aircraft's track plus a CLAIMED location for her. See /Planes/Erika-Flight-Logs-Erased."
+what_we_do_not_know:
+  - "Whether Charlie Kirk, Erika Kirk, or any TPUSA party actually flew to this event, or which aircraft they used. The arrival airport above is an inference from the venue city, not a record."
+  - "Whether the estimated arrival and departure times are within hours or within days of the truth, wherever observed_by_adsb is empty."
+  - "What the tracked aircraft were doing at any field they appear at. A trace proves presence, never purpose and never occupancy."
+  - "Whether the receiver networks simply did not hear an aircraft that was there. See the coverage block - an absence is not a finding."

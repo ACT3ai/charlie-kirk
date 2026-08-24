@@ -660,7 +660,7 @@ This is the best-covered Egyptian aircraft in the investigation. Two independent
 
 The browser probe also returned the page's identity block: *Dassault Falcon 7X EASy · FA7X · Mode S **0101D3** · listed as "Egypt Government" with operator "Egypt - Air Force"*. That is an independent confirmation of the hex code this site chose over the conflicting value carried by adsbdb.
 
-**Alleged overlaps.** This tail carries **53 alleged overlap dates**. **16** of them now have a recovered ADS-B track for that day, and **15 of those 16 are consistent** with the alleged location. The single inconsistent result is **18 June 2025**, alleged at Omaha / Lincoln NE: the recovered track runs Alexandria to El Alamein, both in Egypt. Every date is worked through on [Overlap Recovery](/Planes/Flight-Data-Recovery/Overlap-Recovery). The 37 dates with no recovered track are not evidence of anything — a missing track means no volunteer receiver heard the aircraft, not that it did not fly.
+**Alleged overlaps.** This tail carries **53 alleged overlap dates**. **16** of them now have a recovered ADS-B track for that day, and **15 of those 16 are consistent** with the alleged location. The single inconsistent result is **18 June 2025**, alleged at Omaha / Lincoln NE, and it is a weak one: all that survives is a **five-and-a-half-minute fragment** — nine points, 06:23:26 to 06:28:54 UTC — off the Egyptian coast between Alexandria and El Alamein. Both archives agree on it to the second, so the fragment is real, but **it does not rule out a same-day arrival in Nebraska**: a Falcon 7X leaving Egypt at dawn is in the Midwest that afternoon. The honest reading is *not supported*, not *refuted*. Every date is worked through on [Overlap Recovery](/Planes/Flight-Data-Recovery/Overlap-Recovery). The 37 dates with no recovered track are not evidence of anything — a missing track means no volunteer receiver heard the aircraft, not that it did not fly.
 
 **Removed from: nothing.** No tracking site was found to have removed this aircraft's page. Our scripts recorded HTTP 403 from FlightRadar24, RadarBox and Planespotters, but all three return the identical 403 to unrelated control aircraft asked by the identical script. It is a robot block, not a deletion — see [What A 403 Means](/Planes/Flight-Data-Recovery/What-A-403-Means).
 
@@ -743,7 +743,7 @@ Two independent archives hold the full day. **They agree to within ten milliseco
 | Moment | UTC | Local | Position |
 |---|---|---|---|
 | **First fix — ON THE GROUND at Provo** | **13:07:53.66** | **07:07:53 MDT** | KPVU, **1.37 km** |
-| **Wheels up** | **13:14:03.82** | **07:14:03 MDT** | climbing out of Provo |
+| **First airborne fix** | **13:14:03.82** | **07:14:03 MDT** | 4,475 ft, climbing out of Provo. The last fix flagged on the ground is **13:13:16 UTC** — rotation is inside that 47-second window, and ADS-B cannot cut it finer. |
 | **Last tracked — on approach to Wilmington, Delaware** | **16:50:37.53** | **12:50:37 EDT** | KILG, **1.75 km** |
 
 Files: `site/docs/Planes/SU-BTT/data/recovered/SU-BTT_2025-09-10_adsb-lol_trace_full.json` (1,229 points) and `SU-BTT_2025-09-10_airplanes-live_trace_full.json` (1,789 points).
@@ -1101,3 +1101,39 @@ Footage related to this page. Each card opens that clip's own page, with the vid
 </div>
 
 {/* CK_PLACED_VIDEOS_END */}
+
+{/* CK_GAP_LINK_START */}
+
+## Dates we looked for and did not find
+
+Not every claimed SU-BTT flight could be checked against a primary ADS-B trace. **Every date we queried and got nothing back for is listed — with the exact HTTP status and the reason we looked — on [ADS-B gaps for SU-BTT](/Planes/SU-BTT/data/adsb/MISSING_DATA).** That page is published for the same reason the recovered traces are: a gap that is written down can be argued with, and a gap that is quietly dropped cannot.
+
+**An absence there is not a finding.** A 404 means a volunteer receiver network heard nothing on that UTC day — parked and silent, outside coverage, or a wrong claimed date all come first, and [what a 403 means](/Planes/Flight-Data-Recovery/What-A-403-Means) sets out why a refusal and a deletion look identical from outside. The four free archives that did produce data, and the control test that separates a retention boundary from a removal, are on [Flight data recovery](/Planes/Flight-Data-Recovery/overview) and [per-aircraft recovery status](/Planes/Flight-Data-Recovery/Per-Aircraft-Status).
+
+{/* CK_PAGE_FOOTER_START */}
+
+## Where this page fits
+
+Of the five Egyptian-registered tails this is the one the whole claim rests on: the yellow plane reached [Provo](/Planes/following/Provo_KPVU_2024-04-19_to_2025-09-13/overview) on 4 September by way of [Paris-Le Bourget](/Planes/following/Paris_LFPB_2022-10-05_to_2025-10-05/overview) and [Minot](/Planes/following/Minot_KMOT_2025-04-08_to_2025-09-04/overview), then left Utah for [Wilmington](/Planes/following/Wilmington_KILG_2022-11-17_to_2025-10-12/overview) at roughly 7:08 MT on the morning of the killing, while [SU-BND](/Planes/SU-BND/overview) stayed behind on the ramp. That six-days-before, hours-before shape is what feeds the [Egyptian jets at Provo](/Proof_Intel_Services/Egyptian_Jets_Provo) argument, the [Duncan Aviation contractor and badge claims](/Locations/Provo_Airport), and the [foreign-nexus review a sitting NCTC director says was halted](/US_Intelligence/nctc) — but a trace establishes an airframe's presence and nothing more, never its purpose and never who was aboard, and no public record establishes who tasked it. The single most useful click is [what the compilers counted as an overlap](/Planes/following/Overlap_Window_Definition) — within 50 to 100 miles and plus or minus three days — because that rule is what turns [the 73 overlaps](/Planes/following/73_overlaps) into a number, and [Overlap Recovery](/Planes/Flight-Data-Recovery/Overlap-Recovery) then tests 69 of them against primary data and publishes the failures.
+
+## More across this investigation
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Counter-UAS testing claims at Provo airport](/Proof_Intel_Services/Provo_Airport_Counter_UAS)
+* [The Egyptian crew hotel claim in Orem](/Planes/Egyptian-Crew-Hotel)
+* [Heightened political tensions before UVU](/Before/Heightened-Political-Tensions)
+
+</div>
+<div>
+
+* [Law 2 would force these tails explained](/laws/US_Intel/Law_2_US_Intel)
+* [Cairo, where every leg begins and ends](/Planes/following/Cairo_HECA_2022-11-13_to_2025-10-12/overview)
+* [Cover-up claims and evidence gaps](/CoverUp/overview)
+
+</div>
+</div>
+
+{/* CK_PAGE_FOOTER_END */}

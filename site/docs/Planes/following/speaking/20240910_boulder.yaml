@@ -1,0 +1,1242 @@
+# GENERATED FILE - regenerate, do not hand-edit.
+#   node/python: apis/public_open_source/code/airports_near.py --only 20240910_boulder
+#   The prompt that governs this file: prompts/p_airports_near.md
+schema: ck.speaking.airports_near/1
+generated_utc: "2026-08-24T19:03:26Z"
+generated_by: site/docs/Planes/following/apis/public_open_source/code/airports_near.py
+page:
+  slug: 20240910_boulder
+  mdx: site/docs/Planes/following/speaking/20240910_boulder.mdx
+  yaml: site/docs/Planes/following/speaking/20240910_boulder.yaml
+  url: /Planes/following/speaking/20240910_boulder
+event:
+  title: "You're Being Brainwashed Tour — UC Boulder"
+  who: Charlie
+  attendee_class: CHARLIE_ONLY
+  charlie_present: "yes"
+  erika_present: not_documented
+  attendance_status: held
+  event_type: campus
+  dates:
+    raw: 2024-09-10
+    first_day: 2024-09-10
+    last_day: 2024-09-10
+    granularity: DAY
+    certainty: EVENT_DATE
+    # PODCAST_PROXY means the date is a podcast RELEASE date and the event was normally 0-7 days earlier. Never publish a same-day claim off one.
+  local_time:
+    raw: null
+    parsed_hhmm: null
+    basis: no_time_published
+    timezone: America/Denver
+    timezone_method: timezonefinder
+  location:
+    city: Boulder
+    state: CO
+    country: USA
+    venue: "University of Colorado Boulder"
+    metro_area: "Denver-Front Range CO"
+    geocode:
+      lat: 40.02443
+      lon: -105.25125
+      method: us_census_2024_gazetteer
+      matched: "Boulder city"
+  source: "TPUSA Brainwashed Tour press release; podcast 2024-09-25 is delayed"
+  source_url: "https://www.tpusa.com/live/youre-being-brainwashed-turning-point-usa-announces-fall-2024-campus-tour-2"
+  days_before_sept10_2025: 365
+search:
+  radius_miles: 40
+  window_days_each_side: 2
+  window_from: 2024-09-08
+  window_to: 2024-09-12
+  window_day_count: 5
+  centre: KBJC
+  tails_searched:
+    - N102DZ
+    - N1098L
+    - N2100L
+    - N40JD
+    - N560TW
+    - N582MM
+    - N59906
+    - N872RA
+    - N888KG
+    - SU-BGM
+    - SU-BND
+    - SU-BTT
+    - SU-BTU
+    - SU-BTV
+    - T7-ELL
+  sources_searched:
+    - "recovered ADS-B traces on disk (site/docs/Planes/<TAIL>/data/recovered/)"
+    - site/docs/Planes/following/flights.csv
+    - site/docs/Planes/following/overlaps.csv
+arrival_airport:
+  # ESTIMATE. No published Kirk-side flight record exists for this event unless
+  # the observed_by_adsb block below is non-empty. This is arithmetic on the
+  # event time, not a landing record.
+  chosen_airport:
+    airport_code: KBJC
+    icao: KBJC
+    iata: BJC
+    name: "Rocky Mountain Metropolitan Airport"
+    city: Denver
+    region: US-CO
+    country: US
+    type: medium_airport
+    elevation_ft: 5673
+    longest_runway_ft: 9000
+    longest_runway_surface: ASP
+    runway_count: 3
+    runways_lighted: true
+    scheduled_service: true
+    jet_capability: jet_capable
+    lat: 39.9088
+    lon: -105.117
+    distance_mi: 10.7
+    bearing: SE
+  distance_from_event_city_mi: 10.7
+  selection_basis: CURATED_tpusa_events.csv_VALUE_KEPT_computed_nearest_jet_field_DIFFERS
+  curated_value_in_tpusa_events_csv:
+    airport_code: KBJC
+    airport_name: "Rocky Mountain Metropolitan"
+    distance_mi: 15
+  computed_nearest_jet_capable_field:
+    airport_code: KBDU
+    name: "Boulder Municipal Airport"
+    distance_mi: 1.7
+    longest_runway_ft: 4100
+  estimated_arrival:
+    date: 2024-09-10
+    local_time: "16:00"
+    timezone: America/Denver
+    utc: "2024-09-10T22:00:00Z"
+    basis: "no event time published; 19:00 local assumed for arithmetic only; minus 3h"
+    confidence: low
+  estimated_departure:
+    date: 2024-09-10
+    local_time: "23:00"
+    timezone: America/Denver
+    utc: "2024-09-11T05:00:00Z"
+    basis: "event end + 4h (speech, exit, wheels-up)"
+    confidence: low
+  observed_by_adsb: []
+  observed_by_adsb_note: "NO Kirk-side aircraft is on disk on the ground within 40 miles of KBJC in this window. The arrival and departure above stay estimates."
+airports_within_radius:
+  # Every field a private jet could physically use within the radius.
+  # Heliports, seaplane bases, balloonports and closed fields are excluded -
+  # a business jet cannot use any of them. Everything else is kept, including
+  # every small strip with no scheduled service: those are the point of the sweep.
+  radius_miles: 40
+  centre_airport: KBJC
+  count: 51
+  jet_capable_count: 6
+  light_jet_capable_count: 5
+  no_scheduled_service_count: 49
+  source: "OurAirports (CC0) airports.csv + runways.csv"
+  list:
+    - airport_code: KBJC
+      icao: KBJC
+      iata: BJC
+      name: "Rocky Mountain Metropolitan Airport"
+      city: Denver
+      region: US-CO
+      country: US
+      type: medium_airport
+      elevation_ft: 5673
+      longest_runway_ft: 9000
+      longest_runway_surface: ASP
+      runway_count: 3
+      runways_lighted: true
+      scheduled_service: true
+      jet_capability: jet_capable
+      lat: 39.9088
+      lon: -105.117
+      distance_mi: 0.0
+      bearing: N
+      tracked_plane_presence_in_window: []
+    - airport_code: 0CD7
+      icao: null
+      iata: null
+      name: "Fox Hole Airport"
+      city: Lafayette
+      region: US-CO
+      country: US
+      type: small_airport
+      elevation_ft: 5135
+      longest_runway_ft: 956
+      longest_runway_surface: TURF-G
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.00392
+      lon: -105.07185
+      distance_mi: 7.0
+      bearing: NNE
+      tracked_plane_presence_in_window: []
+    - airport_code: KEIK
+      icao: null
+      iata: null
+      name: "Erie Municipal Airport"
+      city: Erie
+      region: US-CO
+      country: US
+      type: small_airport
+      elevation_ft: 5130
+      longest_runway_ft: 4700
+      longest_runway_surface: CON
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: light_jet_capable
+      lat: 40.0102
+      lon: -105.048
+      distance_mi: 7.9
+      bearing: NNE
+      tracked_plane_presence_in_window: []
+    - airport_code: CO10
+      icao: null
+      iata: null
+      name: "Lemons Private Strip"
+      city: Boulder
+      region: US-CO
+      country: US
+      type: small_airport
+      elevation_ft: 5230
+      longest_runway_ft: 3000
+      longest_runway_surface: TURF-GRVL
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 39.9947
+      lon: -105.224
+      distance_mi: 8.2
+      bearing: NW
+      tracked_plane_presence_in_window: []
+    - airport_code: 0CO1
+      icao: null
+      iata: null
+      name: "Dave's Airport"
+      city: Louisville
+      region: US-CO
+      country: US
+      type: small_airport
+      elevation_ft: 5170
+      longest_runway_ft: 2500
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.0333
+      lon: -105.124
+      distance_mi: 8.6
+      bearing: N
+      tracked_plane_presence_in_window: []
+    - airport_code: US-6650
+      icao: null
+      iata: null
+      name: "Leyners Hayfield Airport"
+      city: Lafayette
+      region: US-CO
+      country: US
+      type: small_airport
+      elevation_ft: 5056
+      longest_runway_ft: null
+      longest_runway_surface: null
+      runway_count: 0
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: unknown
+      lat: 40.04511
+      lon: -105.11635
+      distance_mi: 9.4
+      bearing: N
+      tracked_plane_presence_in_window: []
+    - airport_code: KBDU
+      icao: KBDU
+      iata: WBU
+      name: "Boulder Municipal Airport"
+      city: Boulder
+      region: US-CO
+      country: US
+      type: small_airport
+      elevation_ft: 5288
+      longest_runway_ft: 4100
+      longest_runway_surface: ASPH-G
+      runway_count: 2
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: light_jet_capable
+      lat: 40.0391
+      lon: -105.22603
+      distance_mi: 10.7
+      bearing: NNW
+      tracked_plane_presence_in_window: []
+    - airport_code: 7CO0
+      icao: null
+      iata: null
+      name: "Parkland Airport"
+      city: Erie
+      region: US-CO
+      country: US
+      type: small_airport
+      elevation_ft: 5050
+      longest_runway_ft: 4200
+      longest_runway_surface: ASPH
+      runway_count: 2
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: light_jet_capable
+      lat: 40.0717
+      lon: -105.034
+      distance_mi: 12.1
+      bearing: NNE
+      tracked_plane_presence_in_window: []
+    - airport_code: US-0074
+      icao: null
+      iata: null
+      name: "Henderson Airport"
+      city: Henderson
+      region: US-CO
+      country: US
+      type: small_airport
+      elevation_ft: 5015
+      longest_runway_ft: null
+      longest_runway_surface: null
+      runway_count: 0
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: unknown
+      lat: 39.9167
+      lon: -104.867
+      distance_mi: 13.3
+      bearing: E
+      tracked_plane_presence_in_window: []
+    - airport_code: 8CO7
+      icao: null
+      iata: null
+      name: "Colorado Antique Field"
+      city: Niwot
+      region: US-CO
+      country: US
+      type: small_airport
+      elevation_ft: 5069
+      longest_runway_ft: 3400
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.1225
+      lon: -105.172
+      distance_mi: 15.0
+      bearing: N
+      tracked_plane_presence_in_window: []
+    - airport_code: US-4982
+      icao: null
+      iata: null
+      name: "Ashlawn Airport"
+      city: Longmont
+      region: US-CO
+      country: US
+      type: small_airport
+      elevation_ft: 5313
+      longest_runway_ft: 1200
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.11061
+      lon: -105.23515
+      distance_mi: 15.3
+      bearing: NNW
+      tracked_plane_presence_in_window: []
+    - airport_code: CO58
+      icao: null
+      iata: null
+      name: "Wings N Things Airpark & Museum Airport"
+      city: Longmont
+      region: US-CO
+      country: US
+      type: small_airport
+      elevation_ft: 5000
+      longest_runway_ft: 2800
+      longest_runway_surface: DIRT
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.1058
+      lon: -104.955
+      distance_mi: 16.1
+      bearing: NNE
+      tracked_plane_presence_in_window: []
+    - airport_code: KLMO
+      icao: null
+      iata: null
+      name: "Vance Brand Airport"
+      city: Longmont
+      region: US-CO
+      country: US
+      type: small_airport
+      elevation_ft: 5055
+      longest_runway_ft: 4799
+      longest_runway_surface: CONC-G
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: light_jet_capable
+      lat: 40.1637
+      lon: -105.163
+      distance_mi: 17.8
+      bearing: N
+      tracked_plane_presence_in_window: []
+    - airport_code: CO07
+      icao: null
+      iata: null
+      name: "Athanasiou Valley Airport"
+      city: Blackhawk
+      region: US-CO
+      country: US
+      type: small_airport
+      elevation_ft: 8900
+      longest_runway_ft: 2000
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 39.8542
+      lon: -105.471
+      distance_mi: 19.1
+      bearing: WSW
+      tracked_plane_presence_in_window: []
+    - airport_code: CD28
+      icao: null
+      iata: null
+      name: "Tall Timber Airport"
+      city: "Indian Hills"
+      region: US-CO
+      country: US
+      type: small_airport
+      elevation_ft: 7360
+      longest_runway_ft: 1800
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 39.6439
+      lon: -105.268
+      distance_mi: 20.0
+      bearing: SSW
+      tracked_plane_presence_in_window: []
+    - airport_code: 0CO8
+      icao: null
+      iata: null
+      name: "Cartwheel Airport"
+      city: Mead
+      region: US-CO
+      country: US
+      type: small_airport
+      elevation_ft: 5010
+      longest_runway_ft: 2000
+      longest_runway_surface: DIRT
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.2083
+      lon: -105.013
+      distance_mi: 21.4
+      bearing: NNE
+      tracked_plane_presence_in_window: []
+    - airport_code: US-0076
+      icao: null
+      iata: null
+      name: "Frontier Airstrip"
+      city: Mead
+      region: US-CO
+      country: US
+      type: small_airport
+      elevation_ft: 4979
+      longest_runway_ft: null
+      longest_runway_surface: null
+      runway_count: 0
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: unknown
+      lat: 40.2125
+      lon: -104.982
+      distance_mi: 22.2
+      bearing: NNE
+      tracked_plane_presence_in_window: []
+    - airport_code: 05CO
+      icao: null
+      iata: null
+      name: "Rancho de Aereo Airport"
+      city: Mead
+      region: US-CO
+      country: US
+      type: small_airport
+      elevation_ft: 4978
+      longest_runway_ft: 2650
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.21498
+      lon: -104.98442
+      distance_mi: 22.3
+      bearing: NNE
+      tracked_plane_presence_in_window: []
+    - airport_code: CO12
+      icao: null
+      iata: null
+      name: "Brighton Van-Aire Estates Airport"
+      city: Brighton
+      region: US-CO
+      country: US
+      type: small_airport
+      elevation_ft: 5055
+      longest_runway_ft: 3681
+      longest_runway_surface: ASPH
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: marginal
+      lat: 39.98352
+      lon: -104.70464
+      distance_mi: 22.4
+      bearing: ENE
+      tracked_plane_presence_in_window: []
+    - airport_code: KDEN
+      icao: KDEN
+      iata: DEN
+      name: "Denver International Airport"
+      city: Denver
+      region: US-CO
+      country: US
+      type: large_airport
+      elevation_ft: 5431
+      longest_runway_ft: 16000
+      longest_runway_surface: CON
+      runway_count: 6
+      runways_lighted: true
+      scheduled_service: true
+      jet_capability: jet_capable
+      lat: 39.86003
+      lon: -104.67379
+      distance_mi: 23.7
+      bearing: E
+      tracked_plane_presence_in_window: []
+    - airport_code: KBKF
+      icao: KBKF
+      iata: BFK
+      name: "Buckley Space Force Base"
+      city: Aurora
+      region: US-CO
+      country: US
+      type: medium_airport
+      elevation_ft: 5662
+      longest_runway_ft: 11006
+      longest_runway_surface: PEM
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: jet_capable
+      lat: 39.7017
+      lon: -104.752
+      distance_mi: 24.1
+      bearing: SE
+      tracked_plane_presence_in_window: []
+    - airport_code: 34CO
+      icao: null
+      iata: null
+      name: "Simons Airport"
+      city: Aurora
+      region: US-CO
+      country: US
+      type: small_airport
+      elevation_ft: 5525
+      longest_runway_ft: 2400
+      longest_runway_surface: DIRT-GRVL
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 39.7164
+      lon: -104.732
+      distance_mi: 24.4
+      bearing: ESE
+      tracked_plane_presence_in_window: []
+    - airport_code: CO52
+      icao: null
+      iata: null
+      name: "Marshdale STOLport"
+      city: Evergreen
+      region: US-CO
+      country: US
+      type: small_airport
+      elevation_ft: 7700
+      longest_runway_ft: 850
+      longest_runway_surface: GRAVEL
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 39.5833
+      lon: -105.303
+      distance_mi: 24.6
+      bearing: SSW
+      tracked_plane_presence_in_window: []
+    - airport_code: 1CD2
+      icao: null
+      iata: null
+      name: "Tonga Airport"
+      city: Platteville
+      region: US-CO
+      country: US
+      type: small_airport
+      elevation_ft: 4925
+      longest_runway_ft: 3000
+      longest_runway_surface: ASPH
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: marginal
+      lat: 40.16738
+      lon: -104.79857
+      distance_mi: 24.6
+      bearing: NE
+      tracked_plane_presence_in_window: []
+    - airport_code: CD39
+      icao: null
+      iata: null
+      name: "Pond's Field"
+      city: Berthoud
+      region: US-CO
+      country: US
+      type: small_airport
+      elevation_ft: 5050
+      longest_runway_ft: 2500
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.265
+      lon: -105.137
+      distance_mi: 24.6
+      bearing: N
+      tracked_plane_presence_in_window: []
+    - airport_code: 17CO
+      icao: null
+      iata: null
+      name: "Skylane Ranch Airport"
+      city: Berthoud
+      region: US-CO
+      country: US
+      type: small_airport
+      elevation_ft: 5000
+      longest_runway_ft: 2500
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.27226
+      lon: -105.03262
+      distance_mi: 25.5
+      bearing: N
+      tracked_plane_presence_in_window: []
+    - airport_code: K18V
+      icao: null
+      iata: null
+      name: "Platte Valley Airpark"
+      city: Hudson
+      region: US-CO
+      country: US
+      type: small_airport
+      elevation_ft: 4965
+      longest_runway_ft: 4100
+      longest_runway_surface: ASPH-G
+      runway_count: 2
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: light_jet_capable
+      lat: 40.1
+      lon: -104.701
+      distance_mi: 25.7
+      bearing: ENE
+      tracked_plane_presence_in_window: []
+    - airport_code: KAPA
+      icao: KAPA
+      iata: APA
+      name: "Centennial Airport"
+      city: Denver
+      region: US-CO
+      country: US
+      type: medium_airport
+      elevation_ft: 5885
+      longest_runway_ft: 10001
+      longest_runway_surface: ASP
+      runway_count: 3
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: jet_capable
+      lat: 39.5701
+      lon: -104.849
+      distance_mi: 27.4
+      bearing: SSE
+      tracked_plane_presence_in_window: []
+    - airport_code: 6CO6
+      icao: null
+      iata: null
+      name: "Skywagon Ranch Airport"
+      city: Berthoud
+      region: US-CO
+      country: US
+      type: small_airport
+      elevation_ft: 5187
+      longest_runway_ft: 2600
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.31189
+      lon: -105.14583
+      distance_mi: 27.9
+      bearing: N
+      tracked_plane_presence_in_window: []
+    - airport_code: 86CO
+      icao: null
+      iata: null
+      name: "Lazy W Airport"
+      city: Berthoud
+      region: US-CO
+      country: US
+      type: small_airport
+      elevation_ft: 5200
+      longest_runway_ft: 2600
+      longest_runway_surface: TURF-DIRT
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.3136
+      lon: -105.145
+      distance_mi: 28.0
+      bearing: N
+      tracked_plane_presence_in_window: []
+    - airport_code: 34CD
+      icao: null
+      iata: null
+      name: "Elk Park Ranch Airport"
+      city: Allenspark
+      region: US-CO
+      country: US
+      type: small_airport
+      elevation_ft: 7900
+      longest_runway_ft: 1800
+      longest_runway_surface: TURF-F
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.26268
+      lon: -105.44801
+      distance_mi: 30.1
+      bearing: NW
+      tracked_plane_presence_in_window: []
+    - airport_code: CO82
+      icao: null
+      iata: null
+      name: "Land Airport"
+      city: Keenesburg
+      region: US-CO
+      country: US
+      type: small_airport
+      elevation_ft: 5000
+      longest_runway_ft: 3000
+      longest_runway_surface: ASPH
+      runway_count: 2
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: marginal
+      lat: 40.0958
+      lon: -104.589
+      distance_mi: 30.8
+      bearing: ENE
+      tracked_plane_presence_in_window: []
+    - airport_code: US-5103
+      icao: null
+      iata: null
+      name: "Fought'N'Won Ultralight Flightpark"
+      city: Johnstown
+      region: US-CO
+      country: US
+      type: small_airport
+      elevation_ft: 5000
+      longest_runway_ft: null
+      longest_runway_surface: null
+      runway_count: 0
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: unknown
+      lat: 40.34139
+      lon: -104.92265
+      distance_mi: 31.6
+      bearing: NNE
+      tracked_plane_presence_in_window: []
+    - airport_code: KFTG
+      icao: KCFO
+      iata: null
+      name: "Colorado Air and Space Port"
+      city: Denver
+      region: US-CO
+      country: US
+      type: small_airport
+      elevation_ft: 5512
+      longest_runway_ft: 8002
+      longest_runway_surface: ASP
+      runway_count: 2
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: jet_capable
+      lat: 39.78419
+      lon: -104.53764
+      distance_mi: 31.9
+      bearing: ESE
+      tracked_plane_presence_in_window: []
+    - airport_code: 22CO
+      icao: null
+      iata: null
+      name: "Flying E Airport"
+      city: Brighton
+      region: US-CO
+      country: US
+      type: small_airport
+      elevation_ft: 5100
+      longest_runway_ft: 2800
+      longest_runway_surface: TURF-DIRT
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 39.95806
+      lon: -104.48556
+      distance_mi: 33.6
+      bearing: E
+      tracked_plane_presence_in_window: []
+    - airport_code: US-1250
+      icao: null
+      iata: null
+      name: "Campbells Airport"
+      city: Bennett
+      region: US-CO
+      country: US
+      type: small_airport
+      elevation_ft: 5165
+      longest_runway_ft: null
+      longest_runway_surface: null
+      runway_count: 0
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: unknown
+      lat: 39.91389
+      lon: -104.47333
+      distance_mi: 34.1
+      bearing: E
+      tracked_plane_presence_in_window: []
+    - airport_code: 2CO3
+      icao: null
+      iata: null
+      name: "Jackrabbit Strip"
+      city: Milliken
+      region: US-CO
+      country: US
+      type: small_airport
+      elevation_ft: 5000
+      longest_runway_ft: 2500
+      longest_runway_surface: TURF-DIRT
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.375
+      lon: -104.873
+      distance_mi: 34.7
+      bearing: NNE
+      tracked_plane_presence_in_window: []
+    - airport_code: CO56
+      icao: null
+      iata: null
+      name: "Jjs Airport"
+      city: Keenesburg
+      region: US-CO
+      country: US
+      type: small_airport
+      elevation_ft: 5075
+      longest_runway_ft: 4280
+      longest_runway_surface: DIRT
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 39.9641
+      lon: -104.463
+      distance_mi: 34.9
+      bearing: E
+      tracked_plane_presence_in_window: []
+    - airport_code: 1CO8
+      icao: null
+      iata: null
+      name: "Everitt Airport"
+      city: Parker
+      region: US-CO
+      country: US
+      type: small_airport
+      elevation_ft: 6295
+      longest_runway_ft: 2200
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 39.5292
+      lon: -104.658
+      distance_mi: 35.8
+      bearing: SE
+      tracked_plane_presence_in_window: []
+    - airport_code: CD14
+      icao: null
+      iata: null
+      name: "J & S Airport"
+      city: Bennett
+      region: US-CO
+      country: US
+      type: small_airport
+      elevation_ft: 5320
+      longest_runway_ft: 2600
+      longest_runway_surface: DIRT
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 39.8289
+      lon: -104.437
+      distance_mi: 36.5
+      bearing: E
+      tracked_plane_presence_in_window: []
+    - airport_code: 9CO2
+      icao: null
+      iata: null
+      name: "Van Slyke Field"
+      city: Watkins
+      region: US-CO
+      country: US
+      type: small_airport
+      elevation_ft: 5400
+      longest_runway_ft: 2500
+      longest_runway_surface: TURF-DIRT
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 39.6961
+      lon: -104.476
+      distance_mi: 37.1
+      bearing: ESE
+      tracked_plane_presence_in_window: []
+    - airport_code: CO02
+      icao: null
+      iata: null
+      name: "Harrington Ranch Airport"
+      city: Bennet
+      region: US-CO
+      country: US
+      type: small_airport
+      elevation_ft: 5975
+      longest_runway_ft: 3500
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 39.6297
+      lon: -104.519
+      distance_mi: 37.2
+      bearing: ESE
+      tracked_plane_presence_in_window: []
+    - airport_code: 76CO
+      icao: null
+      iata: null
+      name: "Hoy Airstrip"
+      city: Bennett
+      region: US-CO
+      country: US
+      type: small_airport
+      elevation_ft: 5310
+      longest_runway_ft: 2640
+      longest_runway_surface: DIRT
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 39.8358
+      lon: -104.422
+      distance_mi: 37.2
+      bearing: E
+      tracked_plane_presence_in_window: []
+    - airport_code: US-8144
+      icao: null
+      iata: null
+      name: "Denning Airport"
+      city: Keenesburg
+      region: US-CO
+      country: US
+      type: small_airport
+      elevation_ft: 4977
+      longest_runway_ft: 863
+      longest_runway_surface: GVL
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.00193
+      lon: -104.41563
+      distance_mi: 37.7
+      bearing: E
+      tracked_plane_presence_in_window: []
+    - airport_code: KFNL
+      icao: KFNL
+      iata: FNL
+      name: "Northern Colorado Regional Airport"
+      city: Loveland
+      region: US-CO
+      country: US
+      type: medium_airport
+      elevation_ft: 5016
+      longest_runway_ft: 8500
+      longest_runway_surface: ASP
+      runway_count: 2
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: jet_capable
+      lat: 40.44969
+      lon: -105.01127
+      distance_mi: 37.8
+      bearing: N
+      tracked_plane_presence_in_window: []
+    - airport_code: CD09
+      icao: null
+      iata: null
+      name: "Yoder Airstrip"
+      city: Bennett
+      region: US-CO
+      country: US
+      type: small_airport
+      elevation_ft: 5345
+      longest_runway_ft: 2900
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 39.8197
+      lon: -104.409
+      distance_mi: 38.0
+      bearing: E
+      tracked_plane_presence_in_window: []
+    - airport_code: 96CO
+      icao: null
+      iata: null
+      name: "Logan Airport"
+      city: Bennett
+      region: US-CO
+      country: US
+      type: small_airport
+      elevation_ft: 5300
+      longest_runway_ft: 2400
+      longest_runway_surface: TURF
+      runway_count: 2
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 39.8564
+      lon: -104.396
+      distance_mi: 38.4
+      bearing: E
+      tracked_plane_presence_in_window: []
+    - airport_code: CO60
+      icao: null
+      iata: null
+      name: "Horseshoe Landings Airport"
+      city: Keenesburg
+      region: US-CO
+      country: US
+      type: small_airport
+      elevation_ft: 4800
+      longest_runway_ft: 2500
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.10534
+      lon: -104.42971
+      distance_mi: 38.8
+      bearing: ENE
+      tracked_plane_presence_in_window: []
+    - airport_code: US-2549
+      icao: null
+      iata: null
+      name: "Bigfoot Turf Airport"
+      city: "La Salle"
+      region: US-CO
+      country: US
+      type: small_airport
+      elevation_ft: 4785
+      longest_runway_ft: null
+      longest_runway_surface: null
+      runway_count: 0
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: unknown
+      lat: 40.32198
+      lon: -104.61482
+      distance_mi: 39.0
+      bearing: NE
+      tracked_plane_presence_in_window: []
+    - airport_code: K11V
+      icao: null
+      iata: null
+      name: "Easton/Valley View Airport"
+      city: Greeley
+      region: US-CO
+      country: US
+      type: small_airport
+      elevation_ft: 4820
+      longest_runway_ft: 4000
+      longest_runway_surface: TURF-DIRT-F
+      runway_count: 2
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.32881
+      lon: -104.61456
+      distance_mi: 39.3
+      bearing: NE
+      tracked_plane_presence_in_window: []
+    - airport_code: CD20
+      icao: null
+      iata: null
+      name: "Sprague Airport"
+      city: Loveland
+      region: US-CO
+      country: US
+      type: small_airport
+      elevation_ft: 5603
+      longest_runway_ft: 1750
+      longest_runway_surface: ASPH
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.475
+      lon: -105.22
+      distance_mi: 39.5
+      bearing: N
+      tracked_plane_presence_in_window: []
+tracked_plane_presence:
+  # Was any tracked aircraft on the ground at any field in the list above,
+  # inside the window? Three registers are searched and kept apart, strongest
+  # first. NEVER collapse them into one number.
+  window:
+    from: 2024-09-08
+    to: 2024-09-12
+    days_each_side: 2
+  any_found: false
+  egyptian_su_found: false
+  counts:
+    adsb_ground_contacts: 0
+    adsb_ground_contacts_egyptian_su: 0
+    flights_csv_stays: 0
+    flights_csv_stays_egyptian_su: 0
+    claimed_overlaps: 0
+  from_adsb_traces: []
+  from_flights_csv: []
+  from_overlaps_csv: []
+  just_outside_the_radius:
+    # A hard radius creates a cliff and a cliff hides evidence. These fields
+    # sit between 40 and 60 miles from the arrival airport. They are NOT counted
+    # as hits and must never be published as ones - they are here so a near miss
+    # is visible rather than silently dropped.
+    outer_radius_miles: 60.0
+    adsb_ground_contacts: []
+    flights_csv_stays: []
+    claimed_overlaps: []
+  coverage:
+    # AN EMPTY RESULT ABOVE IS NOT A FINDING UNLESS THIS SAYS THE DAYS WERE HELD.
+    # aircraft_days_needed = tails x days in the window. aircraft_days_held is
+    # how many of those this repo actually has a trace for. The rest were never
+    # pulled, or the networks heard nothing - the two are indistinguishable here.
+    aircraft_days_needed: 75
+    aircraft_days_held: 0
+    coverage_pct: 0.0
+    tails_with_no_trace_in_window:
+      - N102DZ
+      - N1098L
+      - N2100L
+      - N40JD
+      - N560TW
+      - N582MM
+      - N59906
+      - N872RA
+      - N888KG
+      - SU-BGM
+      - SU-BND
+      - SU-BTT
+      - SU-BTU
+      - SU-BTV
+      - T7-ELL
+    by_side:
+      following:
+        # FOLLOWING is the side the claim is about - the Egyptian SU- tails.
+        # This percentage is the one that decides whether an empty result means
+        # anything at all.
+        tails: 6
+        aircraft_days_needed: 30
+        aircraft_days_held: 0
+        coverage_pct: 0.0
+      kirk:
+        # KIRK-side coverage is what turns an ESTIMATED arrival into an
+        # OBSERVED one. Low here means the arrival times above stay estimates.
+        tails: 6
+        aircraft_days_needed: 30
+        aircraft_days_held: 0
+        coverage_pct: 0.0
+      n1098l:
+        # Other tracked aircraft. A DIFFERENT CLAIM - do not merge the threads.
+        tails: 3
+        aircraft_days_needed: 15
+        aircraft_days_held: 0
+        coverage_pct: 0.0
+counterargument:
+  - "ONE PAIRING IS NOT EVIDENCE. The claim under test is a repetition across many stops, and any single pairing has an innocent explanation a reader will find."
+  - "A field inside the radius is a field a jet COULD have used. Nothing here shows that anyone did use it, or that two aircraft on one ramp had any connection."
+  - "Maintenance is the strongest innocent explanation in this record: Duncan Aviation (Provo and Lincoln) and Yingling (Wichita) are Part 145 Falcon and Gulfstream shops, and a Falcon 7X sitting for weeks at one reads as a maintenance visit."
+  - "Transatlantic customs and fuel stops explain the recurring East Coast fields."
+  - "ERIKA'S SIDE IS THE WEAK SIDE. Her flight logs are reported erased, so any Erika pairing rests on the foreign aircraft's track plus a CLAIMED location for her. See /Planes/Erika-Flight-Logs-Erased."
+what_we_do_not_know:
+  - "Whether Charlie Kirk, Erika Kirk, or any TPUSA party actually flew to this event, or which aircraft they used. The arrival airport above is an inference from the venue city, not a record."
+  - "Whether the estimated arrival and departure times are within hours or within days of the truth, wherever observed_by_adsb is empty."
+  - "What the tracked aircraft were doing at any field they appear at. A trace proves presence, never purpose and never occupancy."
+  - "Whether the receiver networks simply did not hear an aircraft that was there. See the coverage block - an absence is not a finding."

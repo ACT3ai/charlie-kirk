@@ -1,0 +1,1342 @@
+# GENERATED FILE - regenerate, do not hand-edit.
+#   node/python: apis/public_open_source/code/airports_near.py --only 20240614_detroit
+#   The prompt that governs this file: prompts/p_airports_near.md
+schema: ck.speaking.airports_near/1
+generated_utc: "2026-08-24T19:03:26Z"
+generated_by: site/docs/Planes/following/apis/public_open_source/code/airports_near.py
+page:
+  slug: 20240614_detroit
+  mdx: site/docs/Planes/following/speaking/20240614_detroit.mdx
+  yaml: site/docs/Planes/following/speaking/20240614_detroit.yaml
+  url: /Planes/following/speaking/20240614_detroit
+event:
+  title: "Turning Point Action People's Convention"
+  who: Charlie
+  attendee_class: CHARLIE_ONLY
+  charlie_present: "yes"
+  erika_present: not_documented
+  attendance_status: held
+  event_type: summit
+  dates:
+    raw: "2024-06-14 to 2024-06-16"
+    first_day: 2024-06-14
+    last_day: 2024-06-16
+    granularity: DAY
+    certainty: EVENT_DATE
+    # PODCAST_PROXY means the date is a podcast RELEASE date and the event was normally 0-7 days earlier. Never publish a same-day claim off one.
+  local_time:
+    raw: null
+    parsed_hhmm: null
+    basis: no_time_published
+    timezone: America/Detroit
+    timezone_method: timezonefinder
+  location:
+    city: Detroit
+    state: MI
+    country: USA
+    venue: "Huntington Place Convention Center, Detroit"
+    metro_area: "Detroit MI"
+    geocode:
+      lat: 42.38304
+      lon: -83.10224
+      method: us_census_2024_gazetteer
+      matched: "Detroit city"
+  source: "Detroit News 4 May 2024; Mother Jones 15 June 2024; NPR/OPB 16 June 2024"
+  source_url: "https://www.detroitnews.com/story/news/politics/2024/05/04/donald-trump-conservative-turning-point-action-peoples-convention-in-detroit-huntington-place/73554323007/"
+  days_before_sept10_2025: 453
+search:
+  radius_miles: 40
+  window_days_each_side: 2
+  window_from: 2024-06-12
+  window_to: 2024-06-18
+  window_day_count: 7
+  centre: KDTW
+  tails_searched:
+    - N102DZ
+    - N1098L
+    - N2100L
+    - N40JD
+    - N560TW
+    - N582MM
+    - N59906
+    - N872RA
+    - N888KG
+    - SU-BGM
+    - SU-BND
+    - SU-BTT
+    - SU-BTU
+    - SU-BTV
+    - T7-ELL
+  sources_searched:
+    - "recovered ADS-B traces on disk (site/docs/Planes/<TAIL>/data/recovered/)"
+    - site/docs/Planes/following/flights.csv
+    - site/docs/Planes/following/overlaps.csv
+arrival_airport:
+  # ESTIMATE. No published Kirk-side flight record exists for this event unless
+  # the observed_by_adsb block below is non-empty. This is arithmetic on the
+  # event time, not a landing record.
+  chosen_airport:
+    airport_code: KDTW
+    icao: KDTW
+    iata: DTW
+    name: "Detroit Metropolitan Wayne County Airport"
+    city: Detroit
+    region: US-MI
+    country: US
+    type: large_airport
+    elevation_ft: 645
+    longest_runway_ft: 12003
+    longest_runway_surface: CON
+    runway_count: 6
+    runways_lighted: true
+    scheduled_service: true
+    jet_capability: jet_capable
+    lat: 42.21377
+    lon: -83.35379
+    distance_mi: 17.4
+    bearing: SW
+  distance_from_event_city_mi: 17.4
+  selection_basis: CURATED_tpusa_events.csv_VALUE_KEPT_computed_nearest_jet_field_DIFFERS
+  curated_value_in_tpusa_events_csv:
+    airport_code: KDTW
+    airport_name: "Detroit Metropolitan Wayne County"
+    distance_mi: 20
+  computed_nearest_jet_capable_field:
+    airport_code: KDET
+    name: "Coleman A. Young Municipal Airport"
+    distance_mi: 5.0
+    longest_runway_ft: 5092
+  estimated_arrival:
+    date: 2024-06-14
+    local_time: "16:00"
+    timezone: America/Detroit
+    utc: "2024-06-14T20:00:00Z"
+    basis: "no event time published; 19:00 local assumed for arithmetic only; minus 3h"
+    confidence: low
+  estimated_departure:
+    date: 2024-06-16
+    local_time: "23:00"
+    timezone: America/Detroit
+    utc: "2024-06-17T03:00:00Z"
+    basis: "event end + 4h (speech, exit, wheels-up)"
+    confidence: low
+  observed_by_adsb: []
+  observed_by_adsb_note: "NO Kirk-side aircraft is on disk on the ground within 40 miles of KDTW in this window. The arrival and departure above stay estimates."
+airports_within_radius:
+  # Every field a private jet could physically use within the radius.
+  # Heliports, seaplane bases, balloonports and closed fields are excluded -
+  # a business jet cannot use any of them. Everything else is kept, including
+  # every small strip with no scheduled service: those are the point of the sweep.
+  radius_miles: 40
+  centre_airport: KDTW
+  count: 56
+  jet_capable_count: 6
+  light_jet_capable_count: 4
+  no_scheduled_service_count: 54
+  source: "OurAirports (CC0) airports.csv + runways.csv"
+  list:
+    - airport_code: KDTW
+      icao: KDTW
+      iata: DTW
+      name: "Detroit Metropolitan Wayne County Airport"
+      city: Detroit
+      region: US-MI
+      country: US
+      type: large_airport
+      elevation_ft: 645
+      longest_runway_ft: 12003
+      longest_runway_surface: CON
+      runway_count: 6
+      runways_lighted: true
+      scheduled_service: true
+      jet_capability: jet_capable
+      lat: 42.21377
+      lon: -83.35379
+      distance_mi: 0.0
+      bearing: N
+      tracked_plane_presence_in_window: []
+    - airport_code: KYIP
+      icao: KYIP
+      iata: YIP
+      name: "Willow Run Airport"
+      city: Detroit
+      region: US-MI
+      country: US
+      type: medium_airport
+      elevation_ft: 716
+      longest_runway_ft: 7543
+      longest_runway_surface: CON
+      runway_count: 2
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: jet_capable
+      lat: 42.2379
+      lon: -83.5304
+      distance_mi: 9.2
+      bearing: W
+      tracked_plane_presence_in_window: []
+    - airport_code: 43G
+      icao: null
+      iata: null
+      name: "Belleville Airport"
+      city: Belleville
+      region: US-MI
+      country: US
+      type: small_airport
+      elevation_ft: 696
+      longest_runway_ft: 2253
+      longest_runway_surface: TURF-F
+      runway_count: 2
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 42.1767
+      lon: -83.5458
+      distance_mi: 10.2
+      bearing: WSW
+      tracked_plane_presence_in_window: []
+    - airport_code: 1D2
+      icao: null
+      iata: null
+      name: "Canton-Plymouth-Mettetal Airport"
+      city: Plymouth
+      region: US-MI
+      country: US
+      type: small_airport
+      elevation_ft: 696
+      longest_runway_ft: 2302
+      longest_runway_surface: ASPH-F
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 42.3482
+      lon: -83.4563
+      distance_mi: 10.7
+      bearing: NNW
+      tracked_plane_presence_in_window: []
+    - airport_code: 86MI
+      icao: null
+      iata: null
+      name: "Downwind Acres Airport"
+      city: Willis
+      region: US-MI
+      country: US
+      type: small_airport
+      elevation_ft: 683
+      longest_runway_ft: 2460
+      longest_runway_surface: TURF-P
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 42.1528
+      lon: -83.5674
+      distance_mi: 11.7
+      bearing: WSW
+      tracked_plane_presence_in_window: []
+    - airport_code: 78MI
+      icao: null
+      iata: null
+      name: "Carls Airport"
+      city: "South Rockwood"
+      region: US-MI
+      country: US
+      type: small_airport
+      elevation_ft: 598
+      longest_runway_ft: 2285
+      longest_runway_surface: TURF-F
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 42.0406
+      lon: -83.3035
+      distance_mi: 12.2
+      bearing: SSE
+      tracked_plane_presence_in_window: []
+    - airport_code: 71MI
+      icao: null
+      iata: null
+      name: "Johnston Airport"
+      city: Belleville
+      region: US-MI
+      country: US
+      type: small_airport
+      elevation_ft: 643
+      longest_runway_ft: 1420
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 42.08438
+      lon: -83.51702
+      distance_mi: 12.2
+      bearing: SW
+      tracked_plane_presence_in_window: []
+    - airport_code: KONZ
+      icao: null
+      iata: null
+      name: "Grosse Ile Municipal Airport"
+      city: "Detroit/Grosse Ile"
+      region: US-MI
+      country: US
+      type: small_airport
+      elevation_ft: 591
+      longest_runway_ft: 4846
+      longest_runway_surface: CON
+      runway_count: 2
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: light_jet_capable
+      lat: 42.0991
+      lon: -83.1615
+      distance_mi: 12.6
+      bearing: SE
+      tracked_plane_presence_in_window: []
+    - airport_code: W87
+      icao: null
+      iata: null
+      name: "Wickenheiser Airport"
+      city: Carleton
+      region: US-MI
+      country: US
+      type: small_airport
+      elevation_ft: 610
+      longest_runway_ft: 2575
+      longest_runway_surface: TURF-G
+      runway_count: 2
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 42.0181
+      lon: -83.3772
+      distance_mi: 13.6
+      bearing: S
+      tracked_plane_presence_in_window: []
+    - airport_code: MI53
+      icao: null
+      iata: null
+      name: "Mills Field"
+      city: Newport
+      region: US-MI
+      country: US
+      type: small_airport
+      elevation_ft: 590
+      longest_runway_ft: 2400
+      longest_runway_surface: TURF-G
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 42.0092
+      lon: -83.2583
+      distance_mi: 15.0
+      bearing: SSE
+      tracked_plane_presence_in_window: []
+    - airport_code: 9MI2
+      icao: null
+      iata: null
+      name: "Newport Woods Airport"
+      city: Newport
+      region: US-MI
+      country: US
+      type: small_airport
+      elevation_ft: 593
+      longest_runway_ft: 2550
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 41.9879
+      lon: -83.3076
+      distance_mi: 15.8
+      bearing: S
+      tracked_plane_presence_in_window: []
+    - airport_code: 60MI
+      icao: null
+      iata: null
+      name: "Maybee Airport"
+      city: Maybee
+      region: US-MI
+      country: US
+      type: small_airport
+      elevation_ft: 650
+      longest_runway_ft: 2020
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 42.0414
+      lon: -83.5669
+      distance_mi: 16.2
+      bearing: SW
+      tracked_plane_presence_in_window: []
+    - airport_code: US-4995
+      icao: null
+      iata: null
+      name: "Newport Meadows Airport"
+      city: Newport
+      region: US-MI
+      country: US
+      type: small_airport
+      elevation_ft: 587
+      longest_runway_ft: 1100
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 41.97787
+      lon: -83.28206
+      distance_mi: 16.7
+      bearing: SSE
+      tracked_plane_presence_in_window: []
+    - airport_code: US-8156
+      icao: null
+      iata: null
+      name: "Noye Airport"
+      city: Saline
+      region: US-MI
+      country: US
+      type: small_airport
+      elevation_ft: 826
+      longest_runway_ft: null
+      longest_runway_surface: null
+      runway_count: 0
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: unknown
+      lat: 42.16011
+      lon: -83.7111
+      distance_mi: 18.7
+      bearing: WSW
+      tracked_plane_presence_in_window: []
+    - airport_code: KTTF
+      icao: null
+      iata: null
+      name: "Custer Airport"
+      city: Monroe
+      region: US-MI
+      country: US
+      type: small_airport
+      elevation_ft: 616
+      longest_runway_ft: 4997
+      longest_runway_surface: ASP
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: light_jet_capable
+      lat: 41.9399
+      lon: -83.4347
+      distance_mi: 19.4
+      bearing: SSW
+      tracked_plane_presence_in_window: []
+    - airport_code: KARB
+      icao: KARB
+      iata: ARB
+      name: "Ann Arbor Municipal Airport"
+      city: "Ann Arbor"
+      region: US-MI
+      country: US
+      type: small_airport
+      elevation_ft: 839
+      longest_runway_ft: 3505
+      longest_runway_surface: CON
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: marginal
+      lat: 42.223
+      lon: -83.7456
+      distance_mi: 20.1
+      bearing: W
+      tracked_plane_presence_in_window: []
+    - airport_code: CYQG
+      icao: CYQG
+      iata: YQG
+      name: "Windsor International Airport"
+      city: Windsor
+      region: CA-ON
+      country: CA
+      type: medium_airport
+      elevation_ft: 622
+      longest_runway_ft: 9000
+      longest_runway_surface: ASP
+      runway_count: 2
+      runways_lighted: true
+      scheduled_service: true
+      jet_capability: jet_capable
+      lat: 42.2756
+      lon: -82.9556
+      distance_mi: 20.8
+      bearing: ENE
+      tracked_plane_presence_in_window: []
+    - airport_code: KDET
+      icao: null
+      iata: DET
+      name: "Coleman A. Young Municipal Airport"
+      city: Detroit
+      region: US-MI
+      country: US
+      type: medium_airport
+      elevation_ft: 626
+      longest_runway_ft: 5092
+      longest_runway_surface: ASP
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: jet_capable
+      lat: 42.4092
+      lon: -83.0099
+      distance_mi: 22.2
+      bearing: NE
+      tracked_plane_presence_in_window: []
+    - airport_code: US-8155
+      icao: null
+      iata: null
+      name: "Trudeau Airport"
+      city: Milan
+      region: US-MI
+      country: US
+      type: small_airport
+      elevation_ft: 735
+      longest_runway_ft: null
+      longest_runway_surface: null
+      runway_count: 0
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: unknown
+      lat: 42.08792
+      lon: -83.76487
+      distance_mi: 22.8
+      bearing: WSW
+      tracked_plane_presence_in_window: []
+    - airport_code: KY47
+      icao: null
+      iata: null
+      name: "Oakland Southwest Airport"
+      city: "New Hudson"
+      region: US-MI
+      country: US
+      type: small_airport
+      elevation_ft: 926
+      longest_runway_ft: 3128
+      longest_runway_surface: ASPH-F
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: marginal
+      lat: 42.5031
+      lon: -83.6237
+      distance_mi: 24.3
+      bearing: NW
+      tracked_plane_presence_in_window: []
+    - airport_code: KVLL
+      icao: null
+      iata: null
+      name: "Oakland Troy Airport"
+      city: Troy
+      region: US-MI
+      country: US
+      type: small_airport
+      elevation_ft: 727
+      longest_runway_ft: 3550
+      longest_runway_surface: ASP
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: marginal
+      lat: 42.5429
+      lon: -83.1779
+      distance_mi: 24.4
+      bearing: NNE
+      tracked_plane_presence_in_window: []
+    - airport_code: MI29
+      icao: null
+      iata: null
+      name: "Gooding Airport"
+      city: "Whitmore Lake"
+      region: US-MI
+      country: US
+      type: small_airport
+      elevation_ft: 920
+      longest_runway_ft: 2000
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 42.3764
+      lon: -83.7927
+      distance_mi: 25.1
+      bearing: WNW
+      tracked_plane_presence_in_window: []
+    - airport_code: US-0474
+      icao: null
+      iata: null
+      name: "Rado's Crossing Airport"
+      city: Ida
+      region: US-MI
+      country: US
+      type: small_airport
+      elevation_ft: 673
+      longest_runway_ft: null
+      longest_runway_surface: null
+      runway_count: 0
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: unknown
+      lat: 41.90555
+      lon: -83.63201
+      distance_mi: 25.6
+      bearing: SW
+      tracked_plane_presence_in_window: []
+    - airport_code: CNE9
+      icao: null
+      iata: null
+      name: "Essex Airport"
+      city: Essex
+      region: CA-ON
+      country: CA
+      type: small_airport
+      elevation_ft: 620
+      longest_runway_ft: 1935
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 42.0958
+      lon: -82.8794
+      distance_mi: 25.6
+      bearing: ESE
+      tracked_plane_presence_in_window: []
+    - airport_code: US-3817
+      icao: null
+      iata: null
+      name: "Brewer Landing Strip"
+      city: Dundee
+      region: US-MI
+      country: US
+      type: small_airport
+      elevation_ft: 673
+      longest_runway_ft: null
+      longest_runway_surface: null
+      runway_count: 0
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: unknown
+      lat: 41.94242
+      lon: -83.71501
+      distance_mi: 26.4
+      bearing: SW
+      tracked_plane_presence_in_window: []
+    - airport_code: 88G
+      icao: null
+      iata: null
+      name: "Gradolph Field"
+      city: Petersburg
+      region: US-MI
+      country: US
+      type: small_airport
+      elevation_ft: 673
+      longest_runway_ft: 2306
+      longest_runway_surface: TURF-G
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 41.9198
+      lon: -83.7349
+      distance_mi: 28.2
+      bearing: SW
+      tracked_plane_presence_in_window: []
+    - airport_code: CGL2
+      icao: null
+      iata: null
+      name: "Harrow Airport"
+      city: Harrow
+      region: CA-ON
+      country: CA
+      type: small_airport
+      elevation_ft: 610
+      longest_runway_ft: 3000
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 42.0594
+      lon: -82.8408
+      distance_mi: 28.4
+      bearing: ESE
+      tracked_plane_presence_in_window: []
+    - airport_code: MI70
+      icao: null
+      iata: null
+      name: "Carl's Airport"
+      city: Clinton
+      region: US-MI
+      country: US
+      type: small_airport
+      elevation_ft: 850
+      longest_runway_ft: 1800
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 42.0712
+      lon: -83.8836
+      distance_mi: 28.9
+      bearing: WSW
+      tracked_plane_presence_in_window: []
+    - airport_code: CEB8
+      icao: null
+      iata: null
+      name: "Essex/Billing Airstrip"
+      city: Lakeshore
+      region: CA-ON
+      country: CA
+      type: small_airport
+      elevation_ft: 630
+      longest_runway_ft: 2025
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 42.18667
+      lon: -82.78222
+      distance_mi: 29.3
+      bearing: E
+      tracked_plane_presence_in_window: []
+    - airport_code: 36MI
+      icao: null
+      iata: null
+      name: "Tecumseh Mills Airport"
+      city: Tecumseh
+      region: US-MI
+      country: US
+      type: small_airport
+      elevation_ft: 797
+      longest_runway_ft: 4278
+      longest_runway_surface: ASPH
+      runway_count: 2
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: light_jet_capable
+      lat: 42.03435
+      lon: -83.87933
+      distance_mi: 29.6
+      bearing: WSW
+      tracked_plane_presence_in_window: []
+    - airport_code: 2E8
+      icao: null
+      iata: null
+      name: "Cackleberry Airport"
+      city: Dexter
+      region: US-MI
+      country: US
+      type: small_airport
+      elevation_ft: 890
+      longest_runway_ft: 2113
+      longest_runway_surface: TURF-F
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 42.425
+      lon: -83.8694
+      distance_mi: 30.1
+      bearing: WNW
+      tracked_plane_presence_in_window: []
+    - airport_code: MI48
+      icao: null
+      iata: null
+      name: "Ham-A-Lot Field"
+      city: Petersburg
+      region: US-MI
+      country: US
+      type: small_airport
+      elevation_ft: 680
+      longest_runway_ft: 2400
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 41.84284
+      lon: -83.68415
+      distance_mi: 30.7
+      bearing: SSW
+      tracked_plane_presence_in_window: []
+    - airport_code: KPTK
+      icao: KPTK
+      iata: PTK
+      name: "Oakland County International Airport"
+      city: Pontiac
+      region: US-MI
+      country: US
+      type: medium_airport
+      elevation_ft: 980
+      longest_runway_ft: 6521
+      longest_runway_surface: ASP
+      runway_count: 3
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: jet_capable
+      lat: 42.6655
+      lon: -83.4201
+      distance_mi: 31.4
+      bearing: N
+      tracked_plane_presence_in_window: []
+    - airport_code: 4MI1
+      icao: null
+      iata: null
+      name: "Air Rahe Airport"
+      city: Petersburg
+      region: US-MI
+      country: US
+      type: small_airport
+      elevation_ft: 680
+      longest_runway_ft: 2300
+      longest_runway_surface: TURF-G
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 41.82952
+      lon: -83.6849
+      distance_mi: 31.5
+      bearing: SSW
+      tracked_plane_presence_in_window: []
+    - airport_code: CA-0469
+      icao: null
+      iata: null
+      name: "Belle River Field"
+      city: null
+      region: CA-ON
+      country: CA
+      type: small_airport
+      elevation_ft: null
+      longest_runway_ft: null
+      longest_runway_surface: null
+      runway_count: 0
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: unknown
+      lat: 42.24517
+      lon: -82.72061
+      distance_mi: 32.5
+      bearing: E
+      tracked_plane_presence_in_window: []
+    - airport_code: MI52
+      icao: null
+      iata: null
+      name: "Markham Airport"
+      city: Clinton
+      region: US-MI
+      country: US
+      type: small_airport
+      elevation_ft: 825
+      longest_runway_ft: null
+      longest_runway_surface: null
+      runway_count: 0
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: unknown
+      lat: 42.0906
+      lon: -83.968
+      distance_mi: 32.6
+      bearing: WSW
+      tracked_plane_presence_in_window: []
+    - airport_code: 3TE
+      icao: null
+      iata: null
+      name: "Al Meyers Airport"
+      city: Tecumseh
+      region: US-MI
+      country: US
+      type: small_airport
+      elevation_ft: 815
+      longest_runway_ft: 2660
+      longest_runway_surface: ASPH-P
+      runway_count: 2
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 42.0251
+      lon: -83.9392
+      distance_mi: 32.7
+      bearing: WSW
+      tracked_plane_presence_in_window: []
+    - airport_code: K45G
+      icao: null
+      iata: null
+      name: "Brighton Airport"
+      city: Brighton
+      region: US-MI
+      country: US
+      type: small_airport
+      elevation_ft: 973
+      longest_runway_ft: 3105
+      longest_runway_surface: ASP
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: marginal
+      lat: 42.5698
+      lon: -83.7785
+      distance_mi: 32.8
+      bearing: NW
+      tracked_plane_presence_in_window: []
+    - airport_code: US-4218
+      icao: null
+      iata: null
+      name: "Mynning Airport"
+      city: Chelsea
+      region: US-MI
+      country: US
+      type: small_airport
+      elevation_ft: 948
+      longest_runway_ft: null
+      longest_runway_surface: null
+      runway_count: 0
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: unknown
+      lat: 42.23346
+      lon: -84.00172
+      distance_mi: 33.2
+      bearing: W
+      tracked_plane_presence_in_window: []
+    - airport_code: 34G
+      icao: null
+      iata: null
+      name: "Merillat Airport"
+      city: Tecumseh
+      region: US-MI
+      country: US
+      type: small_airport
+      elevation_ft: 820
+      longest_runway_ft: 3608
+      longest_runway_surface: TURF-G
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 41.975
+      lon: -83.9252
+      distance_mi: 33.6
+      bearing: WSW
+      tracked_plane_presence_in_window: []
+    - airport_code: 7N4
+      icao: null
+      iata: null
+      name: "Raymond L Kussmaul Jr Memorial Airport"
+      city: Clinton
+      region: US-MI
+      country: US
+      type: small_airport
+      elevation_ft: 820
+      longest_runway_ft: 3800
+      longest_runway_surface: TURF-G
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 42.0778
+      lon: -83.9861
+      distance_mi: 33.7
+      bearing: WSW
+      tracked_plane_presence_in_window: []
+    - airport_code: MI98
+      icao: null
+      iata: null
+      name: "Poulter Field"
+      city: Chelsea
+      region: US-MI
+      country: US
+      type: small_airport
+      elevation_ft: 960
+      longest_runway_ft: 1812
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 42.36503
+      lon: -83.98087
+      distance_mi: 33.7
+      bearing: WNW
+      tracked_plane_presence_in_window: []
+    - airport_code: 75G
+      icao: null
+      iata: null
+      name: "Rossettie Airport"
+      city: Manchester
+      region: US-MI
+      country: US
+      type: small_airport
+      elevation_ft: 1005
+      longest_runway_ft: 2480
+      longest_runway_surface: TURF-F
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 42.195
+      lon: -84.0308
+      distance_mi: 34.7
+      bearing: W
+      tracked_plane_presence_in_window: []
+    - airport_code: CA-0470
+      icao: null
+      iata: null
+      name: "Ruscom Station Field"
+      city: null
+      region: CA-ON
+      country: CA
+      type: small_airport
+      elevation_ft: null
+      longest_runway_ft: null
+      longest_runway_surface: null
+      runway_count: 0
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: unknown
+      lat: 42.18831
+      lon: -82.67347
+      distance_mi: 34.9
+      bearing: E
+      tracked_plane_presence_in_window: []
+    - airport_code: 4Y1
+      icao: null
+      iata: null
+      name: "Raether Airport"
+      city: Howell
+      region: US-MI
+      country: US
+      type: small_airport
+      elevation_ft: 982
+      longest_runway_ft: 2206
+      longest_runway_surface: TURF-F
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 42.5653
+      lon: -83.8565
+      distance_mi: 35.3
+      bearing: NW
+      tracked_plane_presence_in_window: []
+    - airport_code: 44G
+      icao: null
+      iata: null
+      name: "Betz Airport"
+      city: Blissfield
+      region: US-MI
+      country: US
+      type: small_airport
+      elevation_ft: 691
+      longest_runway_ft: 2602
+      longest_runway_surface: TURF-G
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 41.8556
+      lon: -83.8708
+      distance_mi: 36.3
+      bearing: SW
+      tracked_plane_presence_in_window: []
+    - airport_code: CRB2
+      icao: null
+      iata: null
+      name: "Cottam Airport"
+      city: Cottam
+      region: CA-ON
+      country: CA
+      type: small_airport
+      elevation_ft: 635
+      longest_runway_ft: 2000
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 42.14
+      lon: -82.6528
+      distance_mi: 36.3
+      bearing: E
+      tracked_plane_presence_in_window: []
+    - airport_code: KDUH
+      icao: null
+      iata: null
+      name: "Toledo Suburban Airport"
+      city: Lambertville
+      region: US-MI
+      country: US
+      type: small_airport
+      elevation_ft: 669
+      longest_runway_ft: 4807
+      longest_runway_surface: ASP
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: light_jet_capable
+      lat: 41.7359
+      lon: -83.6554
+      distance_mi: 36.5
+      bearing: SSW
+      tracked_plane_presence_in_window: []
+    - airport_code: 1MI5
+      icao: null
+      iata: null
+      name: "McKenzie's Landing Airport"
+      city: Howell
+      region: US-MI
+      country: US
+      type: small_airport
+      elevation_ft: 955
+      longest_runway_ft: 2450
+      longest_runway_surface: TURF-G
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 42.6031
+      lon: -83.8597
+      distance_mi: 37.3
+      bearing: NW
+      tracked_plane_presence_in_window: []
+    - airport_code: MI27
+      icao: null
+      iata: null
+      name: "Haigh Airport"
+      city: Howell
+      region: US-MI
+      country: US
+      type: small_airport
+      elevation_ft: 1000
+      longest_runway_ft: 1800
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 42.61207
+      lon: -83.8591
+      distance_mi: 37.7
+      bearing: NW
+      tracked_plane_presence_in_window: []
+    - airport_code: 50OH
+      icao: null
+      iata: null
+      name: "Culver Field"
+      city: Oregon
+      region: US-OH
+      country: US
+      type: small_airport
+      elevation_ft: 620
+      longest_runway_ft: 2000
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 41.6631
+      lon: -83.4155
+      distance_mi: 38.2
+      bearing: S
+      tracked_plane_presence_in_window: []
+    - airport_code: KMTC
+      icao: KMTC
+      iata: MTC
+      name: "Selfridge Air National Guard Base Airport"
+      city: "Mount Clemens"
+      region: US-MI
+      country: US
+      type: medium_airport
+      elevation_ft: 580
+      longest_runway_ft: 9000
+      longest_runway_surface: PEM
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: jet_capable
+      lat: 42.61346
+      lon: -82.83692
+      distance_mi: 38.2
+      bearing: NE
+      tracked_plane_presence_in_window: []
+    - airport_code: 35L
+      icao: null
+      iata: null
+      name: "Carriage Lane Airport"
+      city: Gregory
+      region: US-MI
+      country: US
+      type: small_airport
+      elevation_ft: 920
+      longest_runway_ft: null
+      longest_runway_surface: null
+      runway_count: 0
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: unknown
+      lat: 42.4645
+      lon: -84.035
+      distance_mi: 38.9
+      bearing: WNW
+      tracked_plane_presence_in_window: []
+    - airport_code: 8MI9
+      icao: null
+      iata: null
+      name: "Winters Field"
+      city: "Grass Lake"
+      region: US-MI
+      country: US
+      type: small_airport
+      elevation_ft: 1000
+      longest_runway_ft: 1500
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 42.30307
+      lon: -84.10728
+      distance_mi: 39.0
+      bearing: W
+      tracked_plane_presence_in_window: []
+    - airport_code: US-12719
+      icao: null
+      iata: null
+      name: "Joyce Binns Memorial Airport"
+      city: Blissfield
+      region: US-MI
+      country: US
+      type: small_airport
+      elevation_ft: 705
+      longest_runway_ft: 1000
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 41.78173
+      lon: -83.86431
+      distance_mi: 39.7
+      bearing: SW
+      tracked_plane_presence_in_window: []
+    - airport_code: 69G
+      icao: null
+      iata: null
+      name: "Richmond Field"
+      city: Gregory
+      region: US-MI
+      country: US
+      type: small_airport
+      elevation_ft: 921
+      longest_runway_ft: 2471
+      longest_runway_surface: TURF-G
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 42.4417
+      lon: -84.0666
+      distance_mi: 39.7
+      bearing: WNW
+      tracked_plane_presence_in_window: []
+tracked_plane_presence:
+  # Was any tracked aircraft on the ground at any field in the list above,
+  # inside the window? Three registers are searched and kept apart, strongest
+  # first. NEVER collapse them into one number.
+  window:
+    from: 2024-06-12
+    to: 2024-06-18
+    days_each_side: 2
+  any_found: false
+  egyptian_su_found: false
+  counts:
+    adsb_ground_contacts: 0
+    adsb_ground_contacts_egyptian_su: 0
+    flights_csv_stays: 0
+    flights_csv_stays_egyptian_su: 0
+    claimed_overlaps: 0
+  from_adsb_traces: []
+  from_flights_csv: []
+  from_overlaps_csv: []
+  just_outside_the_radius:
+    # A hard radius creates a cliff and a cliff hides evidence. These fields
+    # sit between 40 and 60 miles from the arrival airport. They are NOT counted
+    # as hits and must never be published as ones - they are here so a near miss
+    # is visible rather than silently dropped.
+    outer_radius_miles: 60.0
+    adsb_ground_contacts: []
+    flights_csv_stays: []
+    claimed_overlaps: []
+  coverage:
+    # AN EMPTY RESULT ABOVE IS NOT A FINDING UNLESS THIS SAYS THE DAYS WERE HELD.
+    # aircraft_days_needed = tails x days in the window. aircraft_days_held is
+    # how many of those this repo actually has a trace for. The rest were never
+    # pulled, or the networks heard nothing - the two are indistinguishable here.
+    aircraft_days_needed: 105
+    aircraft_days_held: 0
+    coverage_pct: 0.0
+    tails_with_no_trace_in_window:
+      - N102DZ
+      - N1098L
+      - N2100L
+      - N40JD
+      - N560TW
+      - N582MM
+      - N59906
+      - N872RA
+      - N888KG
+      - SU-BGM
+      - SU-BND
+      - SU-BTT
+      - SU-BTU
+      - SU-BTV
+      - T7-ELL
+    by_side:
+      following:
+        # FOLLOWING is the side the claim is about - the Egyptian SU- tails.
+        # This percentage is the one that decides whether an empty result means
+        # anything at all.
+        tails: 6
+        aircraft_days_needed: 42
+        aircraft_days_held: 0
+        coverage_pct: 0.0
+      kirk:
+        # KIRK-side coverage is what turns an ESTIMATED arrival into an
+        # OBSERVED one. Low here means the arrival times above stay estimates.
+        tails: 6
+        aircraft_days_needed: 42
+        aircraft_days_held: 0
+        coverage_pct: 0.0
+      n1098l:
+        # Other tracked aircraft. A DIFFERENT CLAIM - do not merge the threads.
+        tails: 3
+        aircraft_days_needed: 21
+        aircraft_days_held: 0
+        coverage_pct: 0.0
+counterargument:
+  - "ONE PAIRING IS NOT EVIDENCE. The claim under test is a repetition across many stops, and any single pairing has an innocent explanation a reader will find."
+  - "A field inside the radius is a field a jet COULD have used. Nothing here shows that anyone did use it, or that two aircraft on one ramp had any connection."
+  - "Maintenance is the strongest innocent explanation in this record: Duncan Aviation (Provo and Lincoln) and Yingling (Wichita) are Part 145 Falcon and Gulfstream shops, and a Falcon 7X sitting for weeks at one reads as a maintenance visit."
+  - "Transatlantic customs and fuel stops explain the recurring East Coast fields."
+  - "ERIKA'S SIDE IS THE WEAK SIDE. Her flight logs are reported erased, so any Erika pairing rests on the foreign aircraft's track plus a CLAIMED location for her. See /Planes/Erika-Flight-Logs-Erased."
+what_we_do_not_know:
+  - "Whether Charlie Kirk, Erika Kirk, or any TPUSA party actually flew to this event, or which aircraft they used. The arrival airport above is an inference from the venue city, not a record."
+  - "Whether the estimated arrival and departure times are within hours or within days of the truth, wherever observed_by_adsb is empty."
+  - "What the tracked aircraft were doing at any field they appear at. A trace proves presence, never purpose and never occupancy."
+  - "Whether the receiver networks simply did not hear an aircraft that was there. See the coverage block - an absence is not a finding."

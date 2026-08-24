@@ -196,6 +196,9 @@ const config: Config = {
             // Prompt files (agent instruction sets) living inside docs
             // directories are private — never publish them as pages.
             "**/p_*.{md,mdx}",
+            // Raw weekly Grok X-search dumps (speaking/week/{year}/week_NN.md).
+            // Research files, not published pages — a tweet `{` would break MDX.
+            "**/Planes/following/speaking/week/**",
           ],
         },
         blog: false,

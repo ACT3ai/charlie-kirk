@@ -1,0 +1,1382 @@
+# GENERATED FILE - regenerate, do not hand-edit.
+#   node/python: apis/public_open_source/code/airports_near.py --only 20250408_normal
+#   The prompt that governs this file: prompts/p_airports_near.md
+schema: ck.speaking.airports_near/1
+generated_utc: "2026-08-24T19:03:27Z"
+generated_by: site/docs/Planes/following/apis/public_open_source/code/airports_near.py
+page:
+  slug: 20250408_normal
+  mdx: site/docs/Planes/following/speaking/20250408_normal.mdx
+  yaml: site/docs/Planes/following/speaking/20250408_normal.yaml
+  url: /Planes/following/speaking/20250408_normal
+event:
+  title: "American Comeback Tour — Illinois State University"
+  who: Charlie
+  attendee_class: CHARLIE_ONLY
+  charlie_present: "yes"
+  erika_present: not_documented
+  attendance_status: held
+  event_type: campus
+  dates:
+    raw: 2025-04-08
+    first_day: 2025-04-08
+    last_day: 2025-04-08
+    granularity: DAY
+    certainty: EVENT_DATE
+    # PODCAST_PROXY means the date is a podcast RELEASE date and the event was normally 0-7 days earlier. Never publish a same-day claim off one.
+  local_time:
+    raw: "~11:00–12:00 CDT"
+    parsed_hhmm: "11:00"
+    basis: parsed_from_event_time_cell
+    timezone: America/Chicago
+    timezone_method: timezonefinder
+  location:
+    city: Normal
+    state: IL
+    country: USA
+    venue: "Milner Plaza / Lincoln Statue, Illinois State University"
+    metro_area: "Bloomington-Normal IL"
+    geocode:
+      lat: 40.52014
+      lon: -88.99223
+      method: us_census_2024_gazetteer
+      matched: "Normal town"
+  source: "WGLT; Pantagraph; Vidette"
+  source_url: "https://www.wglt.org/local-news/2025-04-08/photos-conservative-political-activist-charlie-kirk-draws-hundreds-at-isu-stop"
+  days_before_sept10_2025: 155
+search:
+  radius_miles: 40
+  window_days_each_side: 2
+  window_from: 2025-04-06
+  window_to: 2025-04-10
+  window_day_count: 5
+  centre: KBMI
+  tails_searched:
+    - N102DZ
+    - N1098L
+    - N2100L
+    - N40JD
+    - N560TW
+    - N582MM
+    - N59906
+    - N872RA
+    - N888KG
+    - SU-BGM
+    - SU-BND
+    - SU-BTT
+    - SU-BTU
+    - SU-BTV
+    - T7-ELL
+  sources_searched:
+    - "recovered ADS-B traces on disk (site/docs/Planes/<TAIL>/data/recovered/)"
+    - site/docs/Planes/following/flights.csv
+    - site/docs/Planes/following/overlaps.csv
+arrival_airport:
+  # ESTIMATE. No published Kirk-side flight record exists for this event unless
+  # the observed_by_adsb block below is non-empty. This is arithmetic on the
+  # event time, not a landing record.
+  chosen_airport:
+    airport_code: KBMI
+    icao: KBMI
+    iata: BMI
+    name: "Central Illinois Regional Airport at Bloomington-Normal"
+    city: Bloomington/Normal
+    region: US-IL
+    country: US
+    type: medium_airport
+    elevation_ft: 871
+    longest_runway_ft: 8000
+    longest_runway_surface: CON
+    runway_count: 2
+    runways_lighted: true
+    scheduled_service: true
+    jet_capability: jet_capable
+    lat: 40.4771
+    lon: -88.9159
+    distance_mi: 5.0
+    bearing: SE
+  distance_from_event_city_mi: 5.0
+  selection_basis: CURATED_CSV_AND_COMPUTED_NEAREST_JET_FIELD_AGREE
+  curated_value_in_tpusa_events_csv:
+    airport_code: KBMI
+    airport_name: "Central Illinois Regional"
+    distance_mi: 3
+  computed_nearest_jet_capable_field:
+    airport_code: KBMI
+    name: "Central Illinois Regional Airport at Bloomington-Normal"
+    distance_mi: 5.0
+    longest_runway_ft: 8000
+  estimated_arrival:
+    date: 2025-04-08
+    local_time: "08:00"
+    timezone: America/Chicago
+    utc: "2025-04-08T13:00:00Z"
+    basis: "event start 11:00 local (parsed_from_event_time_cell) minus 3h"
+    confidence: medium
+  estimated_departure:
+    date: 2025-04-08
+    local_time: "15:00"
+    timezone: America/Chicago
+    utc: "2025-04-08T20:00:00Z"
+    basis: "event end + 4h (speech, exit, wheels-up)"
+    confidence: medium
+  observed_by_adsb: []
+  observed_by_adsb_note: "NO Kirk-side aircraft is on disk on the ground within 40 miles of KBMI in this window. The arrival and departure above stay estimates."
+airports_within_radius:
+  # Every field a private jet could physically use within the radius.
+  # Heliports, seaplane bases, balloonports and closed fields are excluded -
+  # a business jet cannot use any of them. Everything else is kept, including
+  # every small strip with no scheduled service: those are the point of the sweep.
+  radius_miles: 40
+  centre_airport: KBMI
+  count: 58
+  jet_capable_count: 3
+  light_jet_capable_count: 1
+  no_scheduled_service_count: 57
+  source: "OurAirports (CC0) airports.csv + runways.csv"
+  list:
+    - airport_code: KBMI
+      icao: KBMI
+      iata: BMI
+      name: "Central Illinois Regional Airport at Bloomington-Normal"
+      city: Bloomington/Normal
+      region: US-IL
+      country: US
+      type: medium_airport
+      elevation_ft: 871
+      longest_runway_ft: 8000
+      longest_runway_surface: CON
+      runway_count: 2
+      runways_lighted: true
+      scheduled_service: true
+      jet_capability: jet_capable
+      lat: 40.4771
+      lon: -88.9159
+      distance_mi: 0.0
+      bearing: N
+      tracked_plane_presence_in_window: []
+    - airport_code: IL57
+      icao: null
+      iata: null
+      name: "Cottonwood Airport"
+      city: Bloomington
+      region: US-IL
+      country: US
+      type: small_airport
+      elevation_ft: 765
+      longest_runway_ft: 1800
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.422
+      lon: -89.0206
+      distance_mi: 6.7
+      bearing: SW
+      tracked_plane_presence_in_window: []
+    - airport_code: 39IL
+      icao: null
+      iata: null
+      name: "Kieser Field"
+      city: Bloomington
+      region: US-IL
+      country: US
+      type: small_airport
+      elevation_ft: 712
+      longest_runway_ft: 2000
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.44227
+      lon: -89.06664
+      distance_mi: 8.3
+      bearing: WSW
+      tracked_plane_presence_in_window: []
+    - airport_code: 48IS
+      icao: null
+      iata: null
+      name: "P.J. Killian Airport"
+      city: Lexington
+      region: US-IL
+      country: US
+      type: small_airport
+      elevation_ft: 757
+      longest_runway_ft: 2600
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.6022
+      lon: -88.8334
+      distance_mi: 9.7
+      bearing: NNE
+      tracked_plane_presence_in_window: []
+    - airport_code: 9IS9
+      icao: null
+      iata: null
+      name: "Johnston Airport"
+      city: Heyworth
+      region: US-IL
+      country: US
+      type: small_airport
+      elevation_ft: 785
+      longest_runway_ft: 2100
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.3345
+      lon: -88.9554
+      distance_mi: 10.1
+      bearing: SSW
+      tracked_plane_presence_in_window: []
+    - airport_code: 04IL
+      icao: null
+      iata: null
+      name: "Schertz Aerial Service - Hudson Airport"
+      city: Hudson
+      region: US-IL
+      country: US
+      type: small_airport
+      elevation_ft: 755
+      longest_runway_ft: 1700
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.6375
+      lon: -89.007
+      distance_mi: 12.1
+      bearing: NNW
+      tracked_plane_presence_in_window: []
+    - airport_code: US-13003
+      icao: null
+      iata: null
+      name: "Charles Park Restricted Landing Area"
+      city: Stanford
+      region: US-IL
+      country: US
+      type: small_airport
+      elevation_ft: 711
+      longest_runway_ft: 2640
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.41773
+      lon: -89.13463
+      distance_mi: 12.2
+      bearing: WSW
+      tracked_plane_presence_in_window: []
+    - airport_code: 2IS9
+      icao: null
+      iata: null
+      name: "Pontiac Flying/Cooksville Airport"
+      city: Lexington
+      region: US-IL
+      country: US
+      type: small_airport
+      elevation_ft: 741
+      longest_runway_ft: 2415
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.5781
+      lon: -88.7078
+      distance_mi: 13.0
+      bearing: ENE
+      tracked_plane_presence_in_window: []
+    - airport_code: US-1080
+      icao: null
+      iata: null
+      name: "Kuntz Restricted Landing Area"
+      city: Gridley
+      region: US-IL
+      country: US
+      type: small_airport
+      elevation_ft: 760
+      longest_runway_ft: 2800
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.69794
+      lon: -88.947
+      distance_mi: 15.3
+      bearing: N
+      tracked_plane_presence_in_window: []
+    - airport_code: 1IL9
+      icao: null
+      iata: null
+      name: "Holland Field"
+      city: "Mc Lean"
+      region: US-IL
+      country: US
+      type: small_airport
+      elevation_ft: 715
+      longest_runway_ft: 3000
+      longest_runway_surface: TURF
+      runway_count: 2
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.3006
+      lon: -89.1244
+      distance_mi: 16.4
+      bearing: SW
+      tracked_plane_presence_in_window: []
+    - airport_code: LL34
+      icao: null
+      iata: null
+      name: "Thorp Airport"
+      city: Wapella
+      region: US-IL
+      country: US
+      type: small_airport
+      elevation_ft: 750
+      longest_runway_ft: 2300
+      longest_runway_surface: TURF-G
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.21934
+      lon: -88.92198
+      distance_mi: 17.8
+      bearing: S
+      tracked_plane_presence_in_window: []
+    - airport_code: 11LL
+      icao: null
+      iata: null
+      name: "Thacker Airport"
+      city: Chenoa
+      region: US-IL
+      country: US
+      type: small_airport
+      elevation_ft: 720
+      longest_runway_ft: 2250
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.72251
+      lon: -88.76911
+      distance_mi: 18.6
+      bearing: NNE
+      tracked_plane_presence_in_window: []
+    - airport_code: IL63
+      icao: null
+      iata: null
+      name: "Mays Aviation Airport"
+      city: Chenoa
+      region: US-IL
+      country: US
+      type: small_airport
+      elevation_ft: 720
+      longest_runway_ft: 2640
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.7
+      lon: -88.6751
+      distance_mi: 19.9
+      bearing: NE
+      tracked_plane_presence_in_window: []
+    - airport_code: US-0554
+      icao: null
+      iata: null
+      name: "Corn Alley 2 Airport"
+      city: "El Paso"
+      region: US-IL
+      country: US
+      type: small_airport
+      elevation_ft: 728
+      longest_runway_ft: null
+      longest_runway_surface: null
+      runway_count: 0
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: unknown
+      lat: 40.75568
+      lon: -89.01659
+      distance_mi: 20.0
+      bearing: NNW
+      tracked_plane_presence_in_window: []
+    - airport_code: 63IS
+      icao: null
+      iata: null
+      name: "Corn Alley Airport"
+      city: "El Paso"
+      region: US-IL
+      country: US
+      type: small_airport
+      elevation_ft: 715
+      longest_runway_ft: 1780
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.7693
+      lon: -88.9831
+      distance_mi: 20.5
+      bearing: N
+      tracked_plane_presence_in_window: []
+    - airport_code: 1IL0
+      icao: null
+      iata: null
+      name: "Barnstorm Field"
+      city: "El Paso"
+      region: US-IL
+      country: US
+      type: small_airport
+      elevation_ft: 731
+      longest_runway_ft: 2650
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.775
+      lon: -89.0011
+      distance_mi: 21.1
+      bearing: NNW
+      tracked_plane_presence_in_window: []
+    - airport_code: 33IL
+      icao: null
+      iata: null
+      name: "John Scharff Airport"
+      city: Clinton
+      region: US-IL
+      country: US
+      type: small_airport
+      elevation_ft: 730
+      longest_runway_ft: 1835
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.1661
+      lon: -88.8983
+      distance_mi: 21.5
+      bearing: S
+      tracked_plane_presence_in_window: []
+    - airport_code: 81IL
+      icao: null
+      iata: null
+      name: "Illinois Valley Parachute Club Airport"
+      city: Minier
+      region: US-IL
+      country: US
+      type: small_airport
+      elevation_ft: 646
+      longest_runway_ft: 2640
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.43394
+      lon: -89.35658
+      distance_mi: 23.4
+      bearing: W
+      tracked_plane_presence_in_window: []
+    - airport_code: 9IL6
+      icao: null
+      iata: null
+      name: "Weishaupt Airport"
+      city: Mackinaw
+      region: US-IL
+      country: US
+      type: small_airport
+      elevation_ft: 650
+      longest_runway_ft: 2300
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.5131
+      lon: -89.3673
+      distance_mi: 23.8
+      bearing: W
+      tracked_plane_presence_in_window: []
+    - airport_code: US-0482
+      icao: null
+      iata: null
+      name: "Sugar Hollow RLA Airport"
+      city: Lane
+      region: US-IL
+      country: US
+      type: small_airport
+      elevation_ft: 700
+      longest_runway_ft: null
+      longest_runway_surface: null
+      runway_count: 0
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: unknown
+      lat: 40.12929
+      lon: -88.8316
+      distance_mi: 24.4
+      bearing: S
+      tracked_plane_presence_in_window: []
+    - airport_code: IL94
+      icao: null
+      iata: null
+      name: "Hoblit Farms Airport"
+      city: Atlanta
+      region: US-IL
+      country: US
+      type: small_airport
+      elevation_ft: 623
+      longest_runway_ft: 2060
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.2263
+      lon: -89.2429
+      distance_mi: 24.4
+      bearing: SW
+      tracked_plane_presence_in_window: []
+    - airport_code: 7IS3
+      icao: null
+      iata: null
+      name: "Hooterville Airport"
+      city: Clinton
+      region: US-IL
+      country: US
+      type: small_airport
+      elevation_ft: 730
+      longest_runway_ft: 2300
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.14291
+      lon: -89.09228
+      distance_mi: 24.9
+      bearing: SSW
+      tracked_plane_presence_in_window: []
+    - airport_code: 3IL9
+      icao: null
+      iata: null
+      name: "Alekat Acres Airport"
+      city: Atlanta
+      region: US-IL
+      country: US
+      type: small_airport
+      elevation_ft: 600
+      longest_runway_ft: 1995
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.28102
+      lon: -89.31259
+      distance_mi: 24.9
+      bearing: WSW
+      tracked_plane_presence_in_window: []
+    - airport_code: IS26
+      icao: null
+      iata: null
+      name: "Niklaus RLA Restricted Landing Area"
+      city: "Farmer City"
+      region: US-IL
+      country: US
+      type: small_airport
+      elevation_ft: 725
+      longest_runway_ft: 2620
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.1834
+      lon: -88.6153
+      distance_mi: 25.7
+      bearing: SE
+      tracked_plane_presence_in_window: []
+    - airport_code: IL82
+      icao: null
+      iata: null
+      name: "Martin RLA Restricted Landing Area"
+      city: Clinton
+      region: US-IL
+      country: US
+      type: small_airport
+      elevation_ft: 725
+      longest_runway_ft: 2000
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.1095
+      lon: -88.8287
+      distance_mi: 25.8
+      bearing: S
+      tracked_plane_presence_in_window: []
+    - airport_code: 7LL4
+      icao: null
+      iata: null
+      name: "Bakers Strip"
+      city: Weldon
+      region: US-IL
+      country: US
+      type: small_airport
+      elevation_ft: 715
+      longest_runway_ft: 2200
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.1173
+      lon: -88.759
+      distance_mi: 26.2
+      bearing: SSE
+      tracked_plane_presence_in_window: []
+    - airport_code: 51IL
+      icao: null
+      iata: null
+      name: "Marvin D Bradd Airport"
+      city: Mansfield
+      region: US-IL
+      country: US
+      type: small_airport
+      elevation_ft: 797
+      longest_runway_ft: null
+      longest_runway_surface: null
+      runway_count: 0
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: unknown
+      lat: 40.2717
+      lon: -88.4945
+      distance_mi: 26.3
+      bearing: ESE
+      tracked_plane_presence_in_window: []
+    - airport_code: 4IL9
+      icao: null
+      iata: null
+      name: "Unzicker Airport"
+      city: Benson
+      region: US-IL
+      country: US
+      type: small_airport
+      elevation_ft: 745
+      longest_runway_ft: 2200
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.8275
+      lon: -89.1208
+      distance_mi: 26.5
+      bearing: NNW
+      tracked_plane_presence_in_window: []
+    - airport_code: 86IS
+      icao: null
+      iata: null
+      name: "Michael Pfister Airport"
+      city: Roanoke
+      region: US-IL
+      country: US
+      type: small_airport
+      elevation_ft: 805
+      longest_runway_ft: 2200
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.7794
+      lon: -89.2578
+      distance_mi: 27.5
+      bearing: NW
+      tracked_plane_presence_in_window: []
+    - airport_code: 04IS
+      icao: null
+      iata: null
+      name: "Van Gorder Airport"
+      city: Mansfield
+      region: US-IL
+      country: US
+      type: small_airport
+      elevation_ft: 728
+      longest_runway_ft: 2200
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.1786
+      lon: -88.569
+      distance_mi: 27.6
+      bearing: SE
+      tracked_plane_presence_in_window: []
+    - airport_code: IL80
+      icao: null
+      iata: null
+      name: "Flying Illini Airport"
+      city: "De Land"
+      region: US-IL
+      country: US
+      type: small_airport
+      elevation_ft: 710
+      longest_runway_ft: null
+      longest_runway_surface: null
+      runway_count: 0
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: unknown
+      lat: 40.10817
+      lon: -88.68313
+      distance_mi: 28.3
+      bearing: SSE
+      tracked_plane_presence_in_window: []
+    - airport_code: 26IS
+      icao: null
+      iata: null
+      name: "Ficklin-Airtech Airport"
+      city: Fairbury
+      region: US-IL
+      country: US
+      type: small_airport
+      elevation_ft: 672
+      longest_runway_ft: 2300
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.7667
+      lon: -88.5056
+      distance_mi: 29.4
+      bearing: NE
+      tracked_plane_presence_in_window: []
+    - airport_code: 93IL
+      icao: null
+      iata: null
+      name: "Scneider RLA"
+      city: Flanagan
+      region: US-IL
+      country: US
+      type: small_airport
+      elevation_ft: 661
+      longest_runway_ft: null
+      longest_runway_surface: null
+      runway_count: 0
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: unknown
+      lat: 40.91052
+      lon: -88.86757
+      distance_mi: 30.1
+      bearing: N
+      tracked_plane_presence_in_window: []
+    - airport_code: 4IL2
+      icao: null
+      iata: null
+      name: "Wayne Ziller Jr Airport"
+      city: Fairbury
+      region: US-IL
+      country: US
+      type: small_airport
+      elevation_ft: 661
+      longest_runway_ft: 1600
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.80994
+      lon: -88.53958
+      distance_mi: 30.3
+      bearing: NE
+      tracked_plane_presence_in_window: []
+    - airport_code: 83IL
+      icao: null
+      iata: null
+      name: "Oltman-Shuck Airport"
+      city: Minonk
+      region: US-IL
+      country: US
+      type: small_airport
+      elevation_ft: 736
+      longest_runway_ft: 2200
+      longest_runway_surface: TURF
+      runway_count: 2
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.8928
+      lon: -89.104
+      distance_mi: 30.4
+      bearing: NNW
+      tracked_plane_presence_in_window: []
+    - airport_code: KAAA
+      icao: null
+      iata: null
+      name: "Logan County Airport"
+      city: Lincoln
+      region: US-IL
+      country: US
+      type: small_airport
+      elevation_ft: 597
+      longest_runway_ft: 4000
+      longest_runway_surface: ASP
+      runway_count: 2
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: light_jet_capable
+      lat: 40.1587
+      lon: -89.335
+      distance_mi: 31.2
+      bearing: SW
+      tracked_plane_presence_in_window: []
+    - airport_code: IS00
+      icao: null
+      iata: null
+      name: "Jay Schertz Farm Airport"
+      city: Lowpoint
+      region: US-IL
+      country: US
+      type: small_airport
+      elevation_ft: 780
+      longest_runway_ft: 2400
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.8417
+      lon: -89.2745
+      distance_mi: 31.4
+      bearing: NW
+      tracked_plane_presence_in_window: []
+    - airport_code: 71LL
+      icao: null
+      iata: null
+      name: "Riverode Farms Airport"
+      city: Pontiac
+      region: US-IL
+      country: US
+      type: small_airport
+      elevation_ft: 651
+      longest_runway_ft: 2600
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.84399
+      lon: -88.56082
+      distance_mi: 31.4
+      bearing: NE
+      tracked_plane_presence_in_window: []
+    - airport_code: 37IL
+      icao: null
+      iata: null
+      name: "Minder Airport"
+      city: Lincoln
+      region: US-IL
+      country: US
+      type: small_airport
+      elevation_ft: 600
+      longest_runway_ft: 1600
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.1334
+      lon: -89.3251
+      distance_mi: 32.1
+      bearing: SW
+      tracked_plane_presence_in_window: []
+    - airport_code: 2LL7
+      icao: null
+      iata: null
+      name: "Adams Restricted Landing Area Number 2"
+      city: Pontiac
+      region: US-IL
+      country: US
+      type: small_airport
+      elevation_ft: 630
+      longest_runway_ft: 2450
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.93482
+      lon: -88.74066
+      distance_mi: 32.9
+      bearing: NNE
+      tracked_plane_presence_in_window: []
+    - airport_code: 70LL
+      icao: null
+      iata: null
+      name: "Adams Restricted Landing Area Number 1"
+      city: Pontiac
+      region: US-IL
+      country: US
+      type: small_airport
+      elevation_ft: 640
+      longest_runway_ft: 3600
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.93693
+      lon: -88.75374
+      distance_mi: 32.9
+      bearing: NNE
+      tracked_plane_presence_in_window: []
+    - airport_code: 00IS
+      icao: null
+      iata: null
+      name: "Hayenga's Cant Find Farms Airport"
+      city: Kings
+      region: US-IL
+      country: US
+      type: small_airport
+      elevation_ft: 820
+      longest_runway_ft: 1600
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.0256
+      lon: -89.1229
+      distance_mi: 33.1
+      bearing: SSW
+      tracked_plane_presence_in_window: []
+    - airport_code: 4IS6
+      icao: null
+      iata: null
+      name: "Hattan Farms Airport"
+      city: Minonk
+      region: US-IL
+      country: US
+      type: small_airport
+      elevation_ft: 710
+      longest_runway_ft: 1800
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.9306
+      lon: -89.1206
+      distance_mi: 33.1
+      bearing: NNW
+      tracked_plane_presence_in_window: []
+    - airport_code: LL98
+      icao: null
+      iata: null
+      name: "John W Meils Restricted Landing Area"
+      city: Toluca
+      region: US-IL
+      country: US
+      type: small_airport
+      elevation_ft: 705
+      longest_runway_ft: null
+      longest_runway_surface: null
+      runway_count: 0
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: unknown
+      lat: 40.9438
+      lon: -89.10853
+      distance_mi: 33.8
+      bearing: NNW
+      tracked_plane_presence_in_window: []
+    - airport_code: US-4782
+      icao: null
+      iata: null
+      name: "Miller Restricted Landing Area"
+      city: Lincoln
+      region: US-IL
+      country: US
+      type: small_airport
+      elevation_ft: 626
+      longest_runway_ft: 1665
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.06648
+      lon: -89.27214
+      distance_mi: 34.0
+      bearing: SSW
+      tracked_plane_presence_in_window: []
+    - airport_code: 9IS2
+      icao: null
+      iata: null
+      name: "Schertz Field"
+      city: "Gibson City"
+      region: US-IL
+      country: US
+      type: small_airport
+      elevation_ft: 758
+      longest_runway_ft: 3177
+      longest_runway_surface: ASPH-TURF-F
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: marginal
+      lat: 40.48288
+      lon: -88.26753
+      distance_mi: 34.1
+      bearing: E
+      tracked_plane_presence_in_window: []
+    - airport_code: KPNT
+      icao: null
+      iata: null
+      name: "Pontiac Municipal Airport"
+      city: Pontiac
+      region: US-IL
+      country: US
+      type: small_airport
+      elevation_ft: 666
+      longest_runway_ft: 5000
+      longest_runway_surface: ASP
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: jet_capable
+      lat: 40.92426
+      lon: -88.62447
+      distance_mi: 34.5
+      bearing: NNE
+      tracked_plane_presence_in_window: []
+    - airport_code: US-6807
+      icao: null
+      iata: null
+      name: "Hammer Restricted Landing Area"
+      city: Dana
+      region: US-IL
+      country: US
+      type: small_airport
+      elevation_ft: 705
+      longest_runway_ft: 2500
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.97436
+      lon: -89.00279
+      distance_mi: 34.7
+      bearing: N
+      tracked_plane_presence_in_window: []
+    - airport_code: US-0303
+      icao: null
+      iata: null
+      name: "Colonel Smith Memorial Airport"
+      city: Warrensburg
+      region: US-IL
+      country: US
+      type: small_airport
+      elevation_ft: 630
+      longest_runway_ft: null
+      longest_runway_surface: null
+      runway_count: 0
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: unknown
+      lat: 39.98774
+      lon: -89.06858
+      distance_mi: 34.8
+      bearing: SSW
+      tracked_plane_presence_in_window: []
+    - airport_code: IL64
+      icao: null
+      iata: null
+      name: "Martin Airport"
+      city: Lincoln
+      region: US-IL
+      country: US
+      type: small_airport
+      elevation_ft: 558
+      longest_runway_ft: 1900
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.1806
+      lon: -89.5001
+      distance_mi: 37.0
+      bearing: WSW
+      tracked_plane_presence_in_window: []
+    - airport_code: 65IS
+      icao: null
+      iata: null
+      name: "Frings Airport"
+      city: Leeds
+      region: US-IL
+      country: US
+      type: small_airport
+      elevation_ft: 675
+      longest_runway_ft: 2300
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 41.0239
+      lon: -88.9837
+      distance_mi: 37.9
+      bearing: N
+      tracked_plane_presence_in_window: []
+    - airport_code: US-0534
+      icao: null
+      iata: null
+      name: "Gaitros STOL Airport"
+      city: "Cerro Gordo"
+      region: US-IL
+      country: US
+      type: small_airport
+      elevation_ft: 683
+      longest_runway_ft: null
+      longest_runway_surface: null
+      runway_count: 0
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: unknown
+      lat: 39.94228
+      lon: -88.73328
+      distance_mi: 38.2
+      bearing: SSE
+      tracked_plane_presence_in_window: []
+    - airport_code: 86IL
+      icao: null
+      iata: null
+      name: "Wenona RLA"
+      city: Wenona
+      region: US-IL
+      country: US
+      type: small_airport
+      elevation_ft: 667
+      longest_runway_ft: 3200
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 41.03375
+      lon: -88.99538
+      distance_mi: 38.7
+      bearing: N
+      tracked_plane_presence_in_window: []
+    - airport_code: 4IS7
+      icao: null
+      iata: null
+      name: "Litchfield Restricted Landing Area"
+      city: Seymour
+      region: US-IL
+      country: US
+      type: small_airport
+      elevation_ft: 704
+      longest_runway_ft: 2200
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.0731
+      lon: -88.3995
+      distance_mi: 39.0
+      bearing: SE
+      tracked_plane_presence_in_window: []
+    - airport_code: IS62
+      icao: null
+      iata: null
+      name: "John D Rennick Airport"
+      city: "Spring Bay"
+      region: US-IL
+      country: US
+      type: small_airport
+      elevation_ft: 450
+      longest_runway_ft: 3500
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.8673
+      lon: -89.4531
+      distance_mi: 39.0
+      bearing: NW
+      tracked_plane_presence_in_window: []
+    - airport_code: 40IL
+      icao: null
+      iata: null
+      name: "Antique Aerodrome"
+      city: Cornell
+      region: US-IL
+      country: US
+      type: small_airport
+      elevation_ft: 683
+      longest_runway_ft: 2640
+      longest_runway_surface: TURF-G
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 41.00664
+      lon: -88.658
+      distance_mi: 39.0
+      bearing: NNE
+      tracked_plane_presence_in_window: []
+    - airport_code: IL56
+      icao: null
+      iata: null
+      name: "McCulley Airport"
+      city: Champaign
+      region: US-IL
+      country: US
+      type: small_airport
+      elevation_ft: 750
+      longest_runway_ft: 2300
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.21946
+      lon: -88.25418
+      distance_mi: 39.1
+      bearing: ESE
+      tracked_plane_presence_in_window: []
+    - airport_code: KC15
+      icao: null
+      iata: null
+      name: "Pekin Municipal Airport"
+      city: Pekin
+      region: US-IL
+      country: US
+      type: small_airport
+      elevation_ft: 530
+      longest_runway_ft: 5000
+      longest_runway_surface: ASP
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: jet_capable
+      lat: 40.4882
+      lon: -89.6759
+      distance_mi: 39.9
+      bearing: W
+      tracked_plane_presence_in_window: []
+tracked_plane_presence:
+  # Was any tracked aircraft on the ground at any field in the list above,
+  # inside the window? Three registers are searched and kept apart, strongest
+  # first. NEVER collapse them into one number.
+  window:
+    from: 2025-04-06
+    to: 2025-04-10
+    days_each_side: 2
+  any_found: false
+  egyptian_su_found: false
+  counts:
+    adsb_ground_contacts: 0
+    adsb_ground_contacts_egyptian_su: 0
+    flights_csv_stays: 0
+    flights_csv_stays_egyptian_su: 0
+    claimed_overlaps: 0
+  from_adsb_traces: []
+  from_flights_csv: []
+  from_overlaps_csv: []
+  just_outside_the_radius:
+    # A hard radius creates a cliff and a cliff hides evidence. These fields
+    # sit between 40 and 60 miles from the arrival airport. They are NOT counted
+    # as hits and must never be published as ones - they are here so a near miss
+    # is visible rather than silently dropped.
+    outer_radius_miles: 60.0
+    adsb_ground_contacts: []
+    flights_csv_stays: []
+    claimed_overlaps: []
+  coverage:
+    # AN EMPTY RESULT ABOVE IS NOT A FINDING UNLESS THIS SAYS THE DAYS WERE HELD.
+    # aircraft_days_needed = tails x days in the window. aircraft_days_held is
+    # how many of those this repo actually has a trace for. The rest were never
+    # pulled, or the networks heard nothing - the two are indistinguishable here.
+    aircraft_days_needed: 75
+    aircraft_days_held: 0
+    coverage_pct: 0.0
+    tails_with_no_trace_in_window:
+      - N102DZ
+      - N1098L
+      - N2100L
+      - N40JD
+      - N560TW
+      - N582MM
+      - N59906
+      - N872RA
+      - N888KG
+      - SU-BGM
+      - SU-BND
+      - SU-BTT
+      - SU-BTU
+      - SU-BTV
+      - T7-ELL
+    by_side:
+      following:
+        # FOLLOWING is the side the claim is about - the Egyptian SU- tails.
+        # This percentage is the one that decides whether an empty result means
+        # anything at all.
+        tails: 6
+        aircraft_days_needed: 30
+        aircraft_days_held: 0
+        coverage_pct: 0.0
+      kirk:
+        # KIRK-side coverage is what turns an ESTIMATED arrival into an
+        # OBSERVED one. Low here means the arrival times above stay estimates.
+        tails: 6
+        aircraft_days_needed: 30
+        aircraft_days_held: 0
+        coverage_pct: 0.0
+      n1098l:
+        # Other tracked aircraft. A DIFFERENT CLAIM - do not merge the threads.
+        tails: 3
+        aircraft_days_needed: 15
+        aircraft_days_held: 0
+        coverage_pct: 0.0
+counterargument:
+  - "ONE PAIRING IS NOT EVIDENCE. The claim under test is a repetition across many stops, and any single pairing has an innocent explanation a reader will find."
+  - "A field inside the radius is a field a jet COULD have used. Nothing here shows that anyone did use it, or that two aircraft on one ramp had any connection."
+  - "Maintenance is the strongest innocent explanation in this record: Duncan Aviation (Provo and Lincoln) and Yingling (Wichita) are Part 145 Falcon and Gulfstream shops, and a Falcon 7X sitting for weeks at one reads as a maintenance visit."
+  - "Transatlantic customs and fuel stops explain the recurring East Coast fields."
+  - "ERIKA'S SIDE IS THE WEAK SIDE. Her flight logs are reported erased, so any Erika pairing rests on the foreign aircraft's track plus a CLAIMED location for her. See /Planes/Erika-Flight-Logs-Erased."
+what_we_do_not_know:
+  - "Whether Charlie Kirk, Erika Kirk, or any TPUSA party actually flew to this event, or which aircraft they used. The arrival airport above is an inference from the venue city, not a record."
+  - "Whether the estimated arrival and departure times are within hours or within days of the truth, wherever observed_by_adsb is empty."
+  - "What the tracked aircraft were doing at any field they appear at. A trace proves presence, never purpose and never occupancy."
+  - "Whether the receiver networks simply did not hear an aircraft that was there. See the coverage block - an absence is not a finding."

@@ -1,3 +1,17 @@
+---
+displayed_sidebar: docs
+title: "ADS-B gaps for SU-BTT - claimed flights with no primary trace"
+sidebar_label: "ADS-B gaps"
+description: "Every claimed SU-BTT flight date that returned no primary ADS-B trace from the adsb.lol globe history archive, with the exact HTTP result and why we looked."
+keywords:
+  - "SU-BTT"
+  - "ADS-B"
+  - "flight tracking"
+  - "missing flight data"
+image: "/img/docusaurus-social-card.jpg"
+hide_table_of_contents: true
+---
+
 # Claimed flights we could NOT retrieve a primary ADS-B trace for
 
 Generated 2026-08-24T16:03:53.114Z by
@@ -160,3 +174,31 @@ below are already recorded in `overlaps.csv` as audited inaccurate.
 | SU-BTT | 2025-09-12 | 404 | day after claimed departure from Wilmington (KILG) |
 | SU-BTT | 2025-09-30 | 404 | day before claimed arrival at Wichita (KICT) |
 | SU-BTT | 2025-10-01 | 404 | claimed arrival at Wichita (KICT) - flights.csv |
+
+{/* CK_PAGE_FOOTER_START */}
+
+## Where this page fits
+
+SU-BTT is the most-claimed tail in this investigation and therefore the one with the longest list of dates that came back empty; every row is published beside [the SU-BTT page](/Planes/SU-BTT/overview) rather than dropped, the same discipline produced gap lists for [SU-BND](/Planes/SU-BND/data/adsb/MISSING_DATA), [SU-BTU](/Planes/SU-BTU/data/adsb/MISSING_DATA), [SU-BTV](/Planes/SU-BTV/data/adsb/MISSING_DATA) and [SU-BGM](/Planes/SU-BGM/data/adsb/MISSING_DATA), and [per-aircraft recovery status](/Planes/Flight-Data-Recovery/Per-Aircraft-Status) sets out what every source still holds for each. Nothing on this list should be carried into the [day-of event timeline](/Topic-Analyses/September_10_Event_Timeline), the [Egyptian jets at Provo](/Proof_Intel_Services/Egyptian_Jets_Provo) thread, or the [claim that foreign flight records were withheld](/CoverUp/Foreign_Flight_Records): a 404 means volunteer receivers heard nothing that UTC day, and parked-and-silent, outside-coverage and wrong-claimed-date all come before suppression. The two pages that do carry weight are [Overlap Recovery](/Planes/Flight-Data-Recovery/Overlap-Recovery), where 69 aircraft-and-date pairs were tested against two independent archives, and [what a 403 actually means](/Planes/Flight-Data-Recovery/What-A-403-Means), which retracts a removal this site had already published after five control aircraft with no connection to the case failed in exactly the same way.
+
+## Related Areas
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Minot, the 2025 point of US entry](/Planes/following/Minot_KMOT_2025-04-08_to_2025-09-04/overview)
+* [Joe Kent and the NCTC foreign review](/US_Intelligence/joe-kent)
+* [Israel intel flights and UVU](/Israel_Main_Suspect/israel-intel-flights-uvu)
+
+</div>
+<div>
+
+* [Sharm el-Sheikh, beside Air Force One](/Planes/following/SharmElSheikh_HESH_2025-10-13_to_2025-10-13/overview)
+* [State Department and diplomatic response](/Before/State-Department-Response)
+* [Sixteen Israeli-registered phones at UVU (claims)](/Suspicious/Israel/israeli-phones-at-uvu)
+
+</div>
+</div>
+
+{/* CK_PAGE_FOOTER_END */}

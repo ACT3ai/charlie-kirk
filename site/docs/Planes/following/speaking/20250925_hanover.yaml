@@ -1,0 +1,702 @@
+# GENERATED FILE - regenerate, do not hand-edit.
+#   node/python: apis/public_open_source/code/airports_near.py --only 20250925_hanover
+#   The prompt that governs this file: prompts/p_airports_near.md
+schema: ck.speaking.airports_near/1
+generated_utc: "2026-08-24T19:03:27Z"
+generated_by: site/docs/Planes/following/apis/public_open_source/code/airports_near.py
+page:
+  slug: 20250925_hanover
+  mdx: site/docs/Planes/following/speaking/20250925_hanover.mdx
+  yaml: site/docs/Planes/following/speaking/20250925_hanover.yaml
+  url: /Planes/following/speaking/20250925_hanover
+event:
+  title: "Scheduled debate vs Hasan Piker — Dartmouth College (not held by Charlie)"
+  who: Charlie
+  attendee_class: TPUSA_NO_KIRK
+  charlie_present: no_scheduled_not_held
+  erika_present: unknown
+  attendance_status: scheduled_not_held
+  event_type: debate
+  dates:
+    raw: 2025-09-25
+    first_day: 2025-09-25
+    last_day: 2025-09-25
+    granularity: DAY
+    certainty: SCHEDULED_NOT_HELD
+    # PODCAST_PROXY means the date is a podcast RELEASE date and the event was normally 0-7 days earlier. Never publish a same-day claim off one.
+  local_time:
+    raw: null
+    parsed_hhmm: null
+    basis: no_time_published
+    timezone: America/New_York
+    timezone_method: timezonefinder
+  location:
+    city: Hanover
+    state: NH
+    country: USA
+    venue: "Dartmouth College"
+    metro_area: "Upper Valley NH/VT"
+    geocode:
+      lat: 43.71159
+      lon: -72.27314
+      method: us_census_2024_gazetteer
+      matched: "Hanover CDP"
+  source: "ABC News 10 Sep 2025 (Dartmouth event page cited)"
+  source_url: "https://abcnews.com/Politics/charlie-kirks-tour-invited-political-debates-college-campuses/story?id=125459212"
+  days_before_sept10_2025: -15
+search:
+  radius_miles: 40
+  window_days_each_side: 2
+  window_from: 2025-09-23
+  window_to: 2025-09-27
+  window_day_count: 5
+  centre: KLEB
+  tails_searched:
+    - N102DZ
+    - N1098L
+    - N2100L
+    - N40JD
+    - N560TW
+    - N582MM
+    - N59906
+    - N872RA
+    - N888KG
+    - SU-BGM
+    - SU-BND
+    - SU-BTT
+    - SU-BTU
+    - SU-BTV
+    - T7-ELL
+  sources_searched:
+    - "recovered ADS-B traces on disk (site/docs/Planes/<TAIL>/data/recovered/)"
+    - site/docs/Planes/following/flights.csv
+    - site/docs/Planes/following/overlaps.csv
+arrival_airport:
+  # ESTIMATE. No published Kirk-side flight record exists for this event unless
+  # the observed_by_adsb block below is non-empty. This is arithmetic on the
+  # event time, not a landing record.
+  chosen_airport:
+    airport_code: KLEB
+    icao: KLEB
+    iata: LEB
+    name: "Lebanon Municipal Airport"
+    city: Lebanon
+    region: US-NH
+    country: US
+    type: medium_airport
+    elevation_ft: 603
+    longest_runway_ft: 5496
+    longest_runway_surface: ASP
+    runway_count: 2
+    runways_lighted: true
+    scheduled_service: true
+    jet_capability: jet_capable
+    lat: 43.6261
+    lon: -72.3042
+    distance_mi: 6.1
+    bearing: SSW
+  distance_from_event_city_mi: 6.1
+  selection_basis: CURATED_CSV_AND_COMPUTED_NEAREST_JET_FIELD_AGREE
+  curated_value_in_tpusa_events_csv:
+    airport_code: KLEB
+    airport_name: "Lebanon Municipal"
+    distance_mi: 5
+  computed_nearest_jet_capable_field:
+    airport_code: KLEB
+    name: "Lebanon Municipal Airport"
+    distance_mi: 6.1
+    longest_runway_ft: 5496
+  estimated_arrival:
+    date: 2025-09-25
+    local_time: "16:00"
+    timezone: America/New_York
+    utc: "2025-09-25T20:00:00Z"
+    basis: "no event time published; 19:00 local assumed for arithmetic only; minus 3h"
+    confidence: low
+  estimated_departure:
+    date: 2025-09-25
+    local_time: "23:00"
+    timezone: America/New_York
+    utc: "2025-09-26T03:00:00Z"
+    basis: "event end + 4h (speech, exit, wheels-up)"
+    confidence: low
+  observed_by_adsb: []
+  observed_by_adsb_note: "NO Kirk-side aircraft is on disk on the ground within 40 miles of KLEB in this window. The arrival and departure above stay estimates."
+airports_within_radius:
+  # Every field a private jet could physically use within the radius.
+  # Heliports, seaplane bases, balloonports and closed fields are excluded -
+  # a business jet cannot use any of them. Everything else is kept, including
+  # every small strip with no scheduled service: those are the point of the sweep.
+  radius_miles: 40
+  centre_airport: KLEB
+  count: 24
+  jet_capable_count: 3
+  light_jet_capable_count: 0
+  no_scheduled_service_count: 22
+  source: "OurAirports (CC0) airports.csv + runways.csv"
+  list:
+    - airport_code: KLEB
+      icao: KLEB
+      iata: LEB
+      name: "Lebanon Municipal Airport"
+      city: Lebanon
+      region: US-NH
+      country: US
+      type: medium_airport
+      elevation_ft: 603
+      longest_runway_ft: 5496
+      longest_runway_surface: ASP
+      runway_count: 2
+      runways_lighted: true
+      scheduled_service: true
+      jet_capability: jet_capable
+      lat: 43.6261
+      lon: -72.3042
+      distance_mi: 0.0
+      bearing: N
+      tracked_plane_presence_in_window: []
+    - airport_code: 01NH
+      icao: null
+      iata: null
+      name: "Moore Airfield"
+      city: Canaan
+      region: US-NH
+      country: US
+      type: small_airport
+      elevation_ft: 835
+      longest_runway_ft: 600
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 43.6445
+      lon: -72.087
+      distance_mi: 10.9
+      bearing: E
+      tracked_plane_presence_in_window: []
+    - airport_code: K2B3
+      icao: null
+      iata: NWH
+      name: "Parlin Field"
+      city: Newport
+      region: US-NH
+      country: US
+      type: small_airport
+      elevation_ft: 784
+      longest_runway_ft: 3446
+      longest_runway_surface: ASPH-F
+      runway_count: 2
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: marginal
+      lat: 43.3881
+      lon: -72.1893
+      distance_mi: 17.4
+      bearing: SSE
+      tracked_plane_presence_in_window: []
+    - airport_code: KCNH
+      icao: KCNH
+      iata: CNH
+      name: "Claremont Municipal Airport"
+      city: Claremont
+      region: US-NH
+      country: US
+      type: small_airport
+      elevation_ft: 545
+      longest_runway_ft: 3098
+      longest_runway_surface: ASP
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: marginal
+      lat: 43.3704
+      lon: -72.3687
+      distance_mi: 18.0
+      bearing: S
+      tracked_plane_presence_in_window: []
+    - airport_code: 2B9
+      icao: null
+      iata: null
+      name: "Post Mills Airport"
+      city: "Post Mills"
+      region: US-VT
+      country: US
+      type: small_airport
+      elevation_ft: 693
+      longest_runway_ft: 2900
+      longest_runway_surface: TURF-G
+      runway_count: 2
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 43.8842
+      lon: -72.2537
+      distance_mi: 18.0
+      bearing: N
+      tracked_plane_presence_in_window: []
+    - airport_code: KVSF
+      icao: KVSF
+      iata: VSF
+      name: "Hartness State Airport"
+      city: "North Springfield"
+      region: US-VT
+      country: US
+      type: small_airport
+      elevation_ft: 577
+      longest_runway_ft: 5501
+      longest_runway_surface: ASP
+      runway_count: 2
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: jet_capable
+      lat: 43.3436
+      lon: -72.5173
+      distance_mi: 22.3
+      bearing: SSW
+      tracked_plane_presence_in_window: []
+    - airport_code: NH40
+      icao: null
+      iata: null
+      name: "Eagles Nest Airport"
+      city: "New London"
+      region: US-NH
+      country: US
+      type: small_airport
+      elevation_ft: 998
+      longest_runway_ft: 2800
+      longest_runway_surface: ASPH-G
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 43.40459
+      lon: -71.94878
+      distance_mi: 23.5
+      bearing: SE
+      tracked_plane_presence_in_window: []
+    - airport_code: VT55
+      icao: null
+      iata: null
+      name: "Brandon Airport"
+      city: Randolph
+      region: US-VT
+      country: US
+      type: small_airport
+      elevation_ft: 710
+      longest_runway_ft: 1300
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 43.9012
+      lon: -72.5829
+      distance_mi: 23.6
+      bearing: NW
+      tracked_plane_presence_in_window: []
+    - airport_code: VT17
+      icao: null
+      iata: null
+      name: "Smith Airport"
+      city: Ludlow
+      region: US-VT
+      country: US
+      type: small_airport
+      elevation_ft: 1502
+      longest_runway_ft: 1600
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 43.369
+      lon: -72.6743
+      distance_mi: 25.7
+      bearing: SW
+      tracked_plane_presence_in_window: []
+    - airport_code: NH96
+      icao: null
+      iata: null
+      name: "Wentworth Aerodrome Airport"
+      city: Wentworth
+      region: US-NH
+      country: US
+      type: small_airport
+      elevation_ft: 610
+      longest_runway_ft: 1500
+      longest_runway_surface: GRASS
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 43.87234
+      lon: -71.90496
+      distance_mi: 26.2
+      bearing: NE
+      tracked_plane_presence_in_window: []
+    - airport_code: 2N2
+      icao: null
+      iata: null
+      name: "Newfound Valley Airport"
+      city: Bristol
+      region: US-NH
+      country: US
+      type: small_airport
+      elevation_ft: 510
+      longest_runway_ft: 1900
+      longest_runway_surface: ASPH-G
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 43.59112
+      lon: -71.75169
+      distance_mi: 27.7
+      bearing: E
+      tracked_plane_presence_in_window: []
+    - airport_code: 1P1
+      icao: null
+      iata: null
+      name: "Plymouth Municipal Airport"
+      city: Plymouth
+      region: US-NH
+      country: US
+      type: small_airport
+      elevation_ft: 505
+      longest_runway_ft: 2347
+      longest_runway_surface: TURF-G
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 43.7783
+      lon: -71.75392
+      distance_mi: 29.4
+      bearing: ENE
+      tracked_plane_presence_in_window: []
+    - airport_code: 94NH
+      icao: null
+      iata: null
+      name: "Tucker Farm Airport"
+      city: Andover
+      region: US-NH
+      country: US
+      type: small_airport
+      elevation_ft: 620
+      longest_runway_ft: null
+      longest_runway_surface: null
+      runway_count: 0
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: unknown
+      lat: 43.47645
+      lon: -71.7474
+      distance_mi: 29.7
+      bearing: ESE
+      tracked_plane_presence_in_window: []
+    - airport_code: VT13
+      icao: null
+      iata: null
+      name: "Holloway Airport"
+      city: Chester
+      region: US-VT
+      country: US
+      type: small_airport
+      elevation_ft: 1520
+      longest_runway_ft: 1126
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 43.3001
+      lon: -72.7176
+      distance_mi: 30.6
+      bearing: SW
+      tracked_plane_presence_in_window: []
+    - airport_code: KRUT
+      icao: KRUT
+      iata: RUT
+      name: "Rutland - Southern Vermont Regional Airport"
+      city: Rutland
+      region: US-VT
+      country: US
+      type: medium_airport
+      elevation_ft: 787
+      longest_runway_ft: 5304
+      longest_runway_surface: ASP
+      runway_count: 2
+      runways_lighted: true
+      scheduled_service: true
+      jet_capability: jet_capable
+      lat: 43.5294
+      lon: -72.9496
+      distance_mi: 33.0
+      bearing: WSW
+      tracked_plane_presence_in_window: []
+    - airport_code: 12NH
+      icao: null
+      iata: null
+      name: "Gile Pond Airport"
+      city: Sanbornton
+      region: US-NH
+      country: US
+      type: small_airport
+      elevation_ft: 485
+      longest_runway_ft: 1800
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 43.49528
+      lon: -71.65444
+      distance_mi: 33.8
+      bearing: ESE
+      tracked_plane_presence_in_window: []
+    - airport_code: NH20
+      icao: null
+      iata: null
+      name: "Ward Field"
+      city: Sanbornton
+      region: US-NH
+      country: US
+      type: small_airport
+      elevation_ft: 440
+      longest_runway_ft: 1100
+      longest_runway_surface: ASPH
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 43.4923
+      lon: -71.6459
+      distance_mi: 34.2
+      bearing: ESE
+      tracked_plane_presence_in_window: []
+    - airport_code: VT31
+      icao: null
+      iata: null
+      name: "Carriers Skypark Airport"
+      city: Washington
+      region: US-VT
+      country: US
+      type: small_airport
+      elevation_ft: 1600
+      longest_runway_ft: 1500
+      longest_runway_surface: GRAVEL
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 44.1112
+      lon: -72.444
+      distance_mi: 34.2
+      bearing: NNW
+      tracked_plane_presence_in_window: []
+    - airport_code: 23VT
+      icao: null
+      iata: null
+      name: "North Windham Airport"
+      city: Londonderry
+      region: US-VT
+      country: US
+      type: small_airport
+      elevation_ft: 1750
+      longest_runway_ft: 2270
+      longest_runway_surface: TURF-G
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 43.2215
+      lon: -72.7129
+      distance_mi: 34.7
+      bearing: SW
+      tracked_plane_presence_in_window: []
+    - airport_code: 5B9
+      icao: null
+      iata: null
+      name: "Dean Memorial Airport"
+      city: "North Haverhill"
+      region: US-NH
+      country: US
+      type: small_airport
+      elevation_ft: 582
+      longest_runway_ft: 2511
+      longest_runway_surface: ASPH-F
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 44.0806
+      lon: -72.0079
+      distance_mi: 34.7
+      bearing: NNE
+      tracked_plane_presence_in_window: []
+    - airport_code: 33VT
+      icao: null
+      iata: null
+      name: "Sky View Acres Airport"
+      city: Williamstown
+      region: US-VT
+      country: US
+      type: small_airport
+      elevation_ft: 1350
+      longest_runway_ft: 1722
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 44.11833
+      lon: -72.56583
+      distance_mi: 36.4
+      bearing: NNW
+      tracked_plane_presence_in_window: []
+    - airport_code: 23NH
+      icao: null
+      iata: null
+      name: "Windswept Airport"
+      city: Windsor
+      region: US-NH
+      country: US
+      type: small_airport
+      elevation_ft: 1289
+      longest_runway_ft: 1800
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 43.1303
+      lon: -72.015
+      distance_mi: 37.2
+      bearing: SSE
+      tracked_plane_presence_in_window: []
+    - airport_code: VT59
+      icao: null
+      iata: null
+      name: "Ardell Flying Field"
+      city: Manchester
+      region: US-VT
+      country: US
+      type: small_airport
+      elevation_ft: 1919
+      longest_runway_ft: 1900
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 43.2778
+      lon: -72.9108
+      distance_mi: 38.8
+      bearing: SW
+      tracked_plane_presence_in_window: []
+    - airport_code: NH49
+      icao: null
+      iata: null
+      name: "Bradley Field"
+      city: Woodstock
+      region: US-NH
+      country: US
+      type: small_airport
+      elevation_ft: 650
+      longest_runway_ft: 1700
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 43.96926
+      lon: -71.68076
+      distance_mi: 39.1
+      bearing: NE
+      tracked_plane_presence_in_window: []
+tracked_plane_presence:
+  # Was any tracked aircraft on the ground at any field in the list above,
+  # inside the window? Three registers are searched and kept apart, strongest
+  # first. NEVER collapse them into one number.
+  window:
+    from: 2025-09-23
+    to: 2025-09-27
+    days_each_side: 2
+  any_found: false
+  egyptian_su_found: false
+  counts:
+    adsb_ground_contacts: 0
+    adsb_ground_contacts_egyptian_su: 0
+    flights_csv_stays: 0
+    flights_csv_stays_egyptian_su: 0
+    claimed_overlaps: 0
+  from_adsb_traces: []
+  from_flights_csv: []
+  from_overlaps_csv: []
+  just_outside_the_radius:
+    # A hard radius creates a cliff and a cliff hides evidence. These fields
+    # sit between 40 and 60 miles from the arrival airport. They are NOT counted
+    # as hits and must never be published as ones - they are here so a near miss
+    # is visible rather than silently dropped.
+    outer_radius_miles: 60.0
+    adsb_ground_contacts: []
+    flights_csv_stays: []
+    claimed_overlaps: []
+  coverage:
+    # AN EMPTY RESULT ABOVE IS NOT A FINDING UNLESS THIS SAYS THE DAYS WERE HELD.
+    # aircraft_days_needed = tails x days in the window. aircraft_days_held is
+    # how many of those this repo actually has a trace for. The rest were never
+    # pulled, or the networks heard nothing - the two are indistinguishable here.
+    aircraft_days_needed: 75
+    aircraft_days_held: 0
+    coverage_pct: 0.0
+    tails_with_no_trace_in_window:
+      - N102DZ
+      - N1098L
+      - N2100L
+      - N40JD
+      - N560TW
+      - N582MM
+      - N59906
+      - N872RA
+      - N888KG
+      - SU-BGM
+      - SU-BND
+      - SU-BTT
+      - SU-BTU
+      - SU-BTV
+      - T7-ELL
+    by_side:
+      following:
+        # FOLLOWING is the side the claim is about - the Egyptian SU- tails.
+        # This percentage is the one that decides whether an empty result means
+        # anything at all.
+        tails: 6
+        aircraft_days_needed: 30
+        aircraft_days_held: 0
+        coverage_pct: 0.0
+      kirk:
+        # KIRK-side coverage is what turns an ESTIMATED arrival into an
+        # OBSERVED one. Low here means the arrival times above stay estimates.
+        tails: 6
+        aircraft_days_needed: 30
+        aircraft_days_held: 0
+        coverage_pct: 0.0
+      n1098l:
+        # Other tracked aircraft. A DIFFERENT CLAIM - do not merge the threads.
+        tails: 3
+        aircraft_days_needed: 15
+        aircraft_days_held: 0
+        coverage_pct: 0.0
+counterargument:
+  - "ONE PAIRING IS NOT EVIDENCE. The claim under test is a repetition across many stops, and any single pairing has an innocent explanation a reader will find."
+  - "A field inside the radius is a field a jet COULD have used. Nothing here shows that anyone did use it, or that two aircraft on one ramp had any connection."
+  - "Maintenance is the strongest innocent explanation in this record: Duncan Aviation (Provo and Lincoln) and Yingling (Wichita) are Part 145 Falcon and Gulfstream shops, and a Falcon 7X sitting for weeks at one reads as a maintenance visit."
+  - "Transatlantic customs and fuel stops explain the recurring East Coast fields."
+  - "ERIKA'S SIDE IS THE WEAK SIDE. Her flight logs are reported erased, so any Erika pairing rests on the foreign aircraft's track plus a CLAIMED location for her. See /Planes/Erika-Flight-Logs-Erased."
+what_we_do_not_know:
+  - "Whether Charlie Kirk, Erika Kirk, or any TPUSA party actually flew to this event, or which aircraft they used. The arrival airport above is an inference from the venue city, not a record."
+  - "Whether the estimated arrival and departure times are within hours or within days of the truth, wherever observed_by_adsb is empty."
+  - "What the tracked aircraft were doing at any field they appear at. A trace proves presence, never purpose and never occupancy."
+  - "Whether the receiver networks simply did not hear an aircraft that was there. See the coverage block - an absence is not a finding."

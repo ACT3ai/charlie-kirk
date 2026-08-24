@@ -1,0 +1,802 @@
+# GENERATED FILE - regenerate, do not hand-edit.
+#   node/python: apis/public_open_source/code/airports_near.py --only 20250220_tampa
+#   The prompt that governs this file: prompts/p_airports_near.md
+schema: ck.speaking.airports_near/1
+generated_utc: "2026-08-24T19:03:27Z"
+generated_by: site/docs/Planes/following/apis/public_open_source/code/airports_near.py
+page:
+  slug: 20250220_tampa
+  mdx: site/docs/Planes/following/speaking/20250220_tampa.mdx
+  yaml: site/docs/Planes/following/speaking/20250220_tampa.yaml
+  url: /Planes/following/speaking/20250220_tampa
+event:
+  title: "American Comeback Tour — University of South Florida (first 2025 campus stop)"
+  who: Charlie
+  attendee_class: CHARLIE_ONLY
+  charlie_present: "yes"
+  erika_present: not_documented
+  attendance_status: held
+  event_type: campus
+  dates:
+    raw: 2025-02-20
+    first_day: 2025-02-20
+    last_day: 2025-02-20
+    granularity: DAY
+    certainty: EVENT_DATE
+    # PODCAST_PROXY means the date is a podcast RELEASE date and the event was normally 0-7 days earlier. Never publish a same-day claim off one.
+  local_time:
+    raw: null
+    parsed_hhmm: null
+    basis: no_time_published
+    timezone: America/New_York
+    timezone_method: timezonefinder
+  location:
+    city: Tampa
+    state: FL
+    country: USA
+    venue: "University of South Florida"
+    metro_area: "Tampa FL"
+    geocode:
+      lat: 27.97009
+      lon: -82.47967
+      method: us_census_2024_gazetteer
+      matched: "Tampa city"
+  source: "USA TODAY Network-Florida 21 Feb 2025; The Battalion 12 Feb 2025 tour list; AZ Central 11 Sep 2025"
+  source_url: "https://www.yahoo.com/news/charlie-kirk-conservative-firebrand-coming-170850126.html"
+  days_before_sept10_2025: 202
+search:
+  radius_miles: 40
+  window_days_each_side: 2
+  window_from: 2025-02-18
+  window_to: 2025-02-22
+  window_day_count: 5
+  centre: KTPA
+  tails_searched:
+    - N102DZ
+    - N1098L
+    - N2100L
+    - N40JD
+    - N560TW
+    - N582MM
+    - N59906
+    - N872RA
+    - N888KG
+    - SU-BGM
+    - SU-BND
+    - SU-BTT
+    - SU-BTU
+    - SU-BTV
+    - T7-ELL
+  sources_searched:
+    - "recovered ADS-B traces on disk (site/docs/Planes/<TAIL>/data/recovered/)"
+    - site/docs/Planes/following/flights.csv
+    - site/docs/Planes/following/overlaps.csv
+arrival_airport:
+  # ESTIMATE. No published Kirk-side flight record exists for this event unless
+  # the observed_by_adsb block below is non-empty. This is arithmetic on the
+  # event time, not a landing record.
+  chosen_airport:
+    airport_code: KTPA
+    icao: KTPA
+    iata: TPA
+    name: "Tampa International Airport"
+    city: Tampa
+    region: US-FL
+    country: US
+    type: large_airport
+    elevation_ft: 26
+    longest_runway_ft: 11002
+    longest_runway_surface: CON
+    runway_count: 3
+    runways_lighted: true
+    scheduled_service: true
+    jet_capability: jet_capable
+    lat: 27.9755
+    lon: -82.5332
+    distance_mi: 3.3
+    bearing: W
+  distance_from_event_city_mi: 3.3
+  selection_basis: CURATED_CSV_AND_COMPUTED_NEAREST_JET_FIELD_AGREE
+  curated_value_in_tpusa_events_csv:
+    airport_code: KTPA
+    airport_name: "Tampa International"
+    distance_mi: 6
+  computed_nearest_jet_capable_field:
+    airport_code: KTPA
+    name: "Tampa International Airport"
+    distance_mi: 3.3
+    longest_runway_ft: 11002
+  estimated_arrival:
+    date: 2025-02-20
+    local_time: "16:00"
+    timezone: America/New_York
+    utc: "2025-02-20T21:00:00Z"
+    basis: "no event time published; 19:00 local assumed for arithmetic only; minus 3h"
+    confidence: low
+  estimated_departure:
+    date: 2025-02-20
+    local_time: "23:00"
+    timezone: America/New_York
+    utc: "2025-02-21T04:00:00Z"
+    basis: "event end + 4h (speech, exit, wheels-up)"
+    confidence: low
+  observed_by_adsb: []
+  observed_by_adsb_note: "NO Kirk-side aircraft is on disk on the ground within 40 miles of KTPA in this window. The arrival and departure above stay estimates."
+airports_within_radius:
+  # Every field a private jet could physically use within the radius.
+  # Heliports, seaplane bases, balloonports and closed fields are excluded -
+  # a business jet cannot use any of them. Everything else is kept, including
+  # every small strip with no scheduled service: those are the point of the sweep.
+  radius_miles: 40
+  centre_airport: KTPA
+  count: 29
+  jet_capable_count: 7
+  light_jet_capable_count: 2
+  no_scheduled_service_count: 26
+  source: "OurAirports (CC0) airports.csv + runways.csv"
+  list:
+    - airport_code: KTPA
+      icao: KTPA
+      iata: TPA
+      name: "Tampa International Airport"
+      city: Tampa
+      region: US-FL
+      country: US
+      type: large_airport
+      elevation_ft: 26
+      longest_runway_ft: 11002
+      longest_runway_surface: CON
+      runway_count: 3
+      runways_lighted: true
+      scheduled_service: true
+      jet_capability: jet_capable
+      lat: 27.9755
+      lon: -82.5332
+      distance_mi: 0.0
+      bearing: N
+      tracked_plane_presence_in_window: []
+    - airport_code: KTPF
+      icao: KTPF
+      iata: TPF
+      name: "Peter O Knight Airport"
+      city: Tampa
+      region: US-FL
+      country: US
+      type: small_airport
+      elevation_ft: 8
+      longest_runway_ft: 3583
+      longest_runway_surface: ASP
+      runway_count: 2
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: marginal
+      lat: 27.9156
+      lon: -82.4493
+      distance_mi: 6.6
+      bearing: SE
+      tracked_plane_presence_in_window: []
+    - airport_code: KMCF
+      icao: KMCF
+      iata: MCF
+      name: "MacDill Air Force Base"
+      city: Tampa
+      region: US-FL
+      country: US
+      type: medium_airport
+      elevation_ft: 14
+      longest_runway_ft: 11421
+      longest_runway_surface: ASP
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: jet_capable
+      lat: 27.8493
+      lon: -82.5212
+      distance_mi: 8.8
+      bearing: S
+      tracked_plane_presence_in_window: []
+    - airport_code: KPIE
+      icao: KPIE
+      iata: PIE
+      name: "St. Petersburg Clearwater International Airport"
+      city: "Pinellas Park"
+      region: US-FL
+      country: US
+      type: large_airport
+      elevation_ft: 11
+      longest_runway_ft: 9730
+      longest_runway_surface: CONCRETE
+      runway_count: 2
+      runways_lighted: true
+      scheduled_service: true
+      jet_capability: jet_capable
+      lat: 27.9102
+      lon: -82.6874
+      distance_mi: 10.4
+      bearing: WSW
+      tracked_plane_presence_in_window: []
+    - airport_code: KVDF
+      icao: null
+      iata: null
+      name: "Tampa Executive Airport"
+      city: Tampa
+      region: US-FL
+      country: US
+      type: small_airport
+      elevation_ft: 22
+      longest_runway_ft: 5000
+      longest_runway_surface: ASP
+      runway_count: 2
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: jet_capable
+      lat: 28.014
+      lon: -82.3453
+      distance_mi: 11.8
+      bearing: ENE
+      tracked_plane_presence_in_window: []
+    - airport_code: KCLW
+      icao: KCLW
+      iata: CLW
+      name: "Clearwater Air Park"
+      city: Clearwater
+      region: US-FL
+      country: US
+      type: small_airport
+      elevation_ft: 71
+      longest_runway_ft: 4108
+      longest_runway_surface: ASP
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: light_jet_capable
+      lat: 27.9767
+      lon: -82.7587
+      distance_mi: 13.8
+      bearing: W
+      tracked_plane_presence_in_window: []
+    - airport_code: FL35
+      icao: null
+      iata: null
+      name: "Geraci Airpark"
+      city: Lutz
+      region: US-FL
+      country: US
+      type: small_airport
+      elevation_ft: 65
+      longest_runway_ft: 3000
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 28.175
+      lon: -82.48778
+      distance_mi: 14.1
+      bearing: NNE
+      tracked_plane_presence_in_window: []
+    - airport_code: KSPG
+      icao: KSPG
+      iata: SPG
+      name: "Albert Whitted Airport"
+      city: "St Petersburg"
+      region: US-FL
+      country: US
+      type: small_airport
+      elevation_ft: 7
+      longest_runway_ft: 3676
+      longest_runway_surface: ASP
+      runway_count: 2
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: marginal
+      lat: 27.7651
+      lon: -82.627
+      distance_mi: 15.6
+      bearing: SSW
+      tracked_plane_presence_in_window: []
+    - airport_code: KX39
+      icao: null
+      iata: KYO
+      name: "Tampa North Aero Park Airport"
+      city: Tampa
+      region: US-FL
+      country: US
+      type: small_airport
+      elevation_ft: 68
+      longest_runway_ft: 3541
+      longest_runway_surface: ASP
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: marginal
+      lat: 28.2213
+      lon: -82.3745
+      distance_mi: 19.5
+      bearing: NNE
+      tracked_plane_presence_in_window: []
+    - airport_code: FL78
+      icao: null
+      iata: null
+      name: "Lewis Airport"
+      city: Brandon
+      region: US-FL
+      country: US
+      type: small_airport
+      elevation_ft: 45
+      longest_runway_ft: 2000
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 27.8986
+      lon: -82.1826
+      distance_mi: 22.1
+      bearing: ESE
+      tracked_plane_presence_in_window: []
+    - airport_code: FA40
+      icao: null
+      iata: null
+      name: "Hidden Lake Airport"
+      city: "New Port Richey"
+      region: US-FL
+      country: US
+      type: small_airport
+      elevation_ft: 30
+      longest_runway_ft: 4425
+      longest_runway_surface: ASPH-G
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: light_jet_capable
+      lat: 28.2825
+      lon: -82.6457
+      distance_mi: 22.3
+      bearing: NNW
+      tracked_plane_presence_in_window: []
+    - airport_code: KPCM
+      icao: null
+      iata: null
+      name: "Plant City Municipal Airport"
+      city: "Plant City"
+      region: US-FL
+      country: US
+      type: small_airport
+      elevation_ft: 153
+      longest_runway_ft: 3950
+      longest_runway_surface: ASP
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: marginal
+      lat: 28.0002
+      lon: -82.1642
+      distance_mi: 22.6
+      bearing: E
+      tracked_plane_presence_in_window: []
+    - airport_code: 48X
+      icao: null
+      iata: null
+      name: "Airport Manatee Airport"
+      city: Palmetto
+      region: US-FL
+      country: US
+      type: small_airport
+      elevation_ft: 27
+      longest_runway_ft: 3120
+      longest_runway_surface: TURF-G
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 27.6425
+      lon: -82.5209
+      distance_mi: 23.0
+      bearing: S
+      tracked_plane_presence_in_window: []
+    - airport_code: FD77
+      icao: null
+      iata: null
+      name: "Wimauma Air Park"
+      city: Wimauma
+      region: US-FL
+      country: US
+      type: small_airport
+      elevation_ft: 100
+      longest_runway_ft: 2700
+      longest_runway_surface: TURF-G
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 27.712
+      lon: -82.2829
+      distance_mi: 23.8
+      bearing: SE
+      tracked_plane_presence_in_window: []
+    - airport_code: KX05
+      icao: null
+      iata: null
+      name: "Pilot Country Airport"
+      city: Brooksville
+      region: US-FL
+      country: US
+      type: small_airport
+      elevation_ft: 80
+      longest_runway_ft: 3700
+      longest_runway_surface: ASP
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: marginal
+      lat: 28.3303
+      lon: -82.4965
+      distance_mi: 24.6
+      bearing: N
+      tracked_plane_presence_in_window: []
+    - airport_code: 9FD2
+      icao: null
+      iata: null
+      name: "Blackwater Creek Ultralightport"
+      city: "Plant City"
+      region: US-FL
+      country: US
+      type: small_airport
+      elevation_ft: 80
+      longest_runway_ft: 2300
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 28.137
+      lon: -82.1465
+      distance_mi: 26.1
+      bearing: ENE
+      tracked_plane_presence_in_window: []
+    - airport_code: 0FL6
+      icao: null
+      iata: null
+      name: "Stanchester Airport"
+      city: Lithia
+      region: US-FL
+      country: US
+      type: small_airport
+      elevation_ft: 96
+      longest_runway_ft: 500
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 27.8062
+      lon: -82.14136
+      distance_mi: 26.6
+      bearing: ESE
+      tracked_plane_presence_in_window: []
+    - airport_code: 23FL
+      icao: null
+      iata: null
+      name: "Gyro Town Usa STOLport"
+      city: Wimauma
+      region: US-FL
+      country: US
+      type: small_airport
+      elevation_ft: 65
+      longest_runway_ft: 2188
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 27.6844
+      lon: -82.2442
+      distance_mi: 26.8
+      bearing: SE
+      tracked_plane_presence_in_window: []
+    - airport_code: 79FD
+      icao: null
+      iata: null
+      name: "Midway Lake Airport"
+      city: "Plant City"
+      region: US-FL
+      country: US
+      type: small_airport
+      elevation_ft: 150
+      longest_runway_ft: 2200
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 28.042
+      lon: -82.0923
+      distance_mi: 27.3
+      bearing: E
+      tracked_plane_presence_in_window: []
+    - airport_code: KZPH
+      icao: KZPH
+      iata: ZPH
+      name: "Zephyrhills Municipal Airport"
+      city: Zephyrhills
+      region: US-FL
+      country: US
+      type: small_airport
+      elevation_ft: 90
+      longest_runway_ft: 5072
+      longest_runway_surface: ASP
+      runway_count: 2
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: jet_capable
+      lat: 28.2282
+      lon: -82.1559
+      distance_mi: 28.9
+      bearing: NE
+      tracked_plane_presence_in_window: []
+    - airport_code: 6FD7
+      icao: null
+      iata: null
+      name: "Thomson Airfield"
+      city: Ellenton
+      region: US-FL
+      country: US
+      type: small_airport
+      elevation_ft: 35
+      longest_runway_ft: 2750
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 27.5442
+      lon: -82.5301
+      distance_mi: 29.8
+      bearing: S
+      tracked_plane_presence_in_window: []
+    - airport_code: KX49
+      icao: null
+      iata: null
+      name: "South Lakeland Airport"
+      city: Lakeland
+      region: US-FL
+      country: US
+      type: small_airport
+      elevation_ft: 110
+      longest_runway_ft: 2412
+      longest_runway_surface: GRS
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 27.9334
+      lon: -82.044
+      distance_mi: 30.0
+      bearing: E
+      tracked_plane_presence_in_window: []
+    - airport_code: KLAL
+      icao: KLAL
+      iata: LAL
+      name: "Lakeland Linder International Airport"
+      city: Lakeland
+      region: US-FL
+      country: US
+      type: medium_airport
+      elevation_ft: 142
+      longest_runway_ft: 8500
+      longest_runway_surface: ASP
+      runway_count: 2
+      runways_lighted: true
+      scheduled_service: true
+      jet_capability: jet_capable
+      lat: 27.98927
+      lon: -82.02071
+      distance_mi: 31.3
+      bearing: E
+      tracked_plane_presence_in_window: []
+    - airport_code: KBKV
+      icao: null
+      iata: null
+      name: "Brooksville–Tampa Bay Regional Airport"
+      city: Brooksville
+      region: US-FL
+      country: US
+      type: small_airport
+      elevation_ft: 76
+      longest_runway_ft: 7001
+      longest_runway_surface: CON
+      runway_count: 2
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: jet_capable
+      lat: 28.46946
+      lon: -82.45711
+      distance_mi: 34.4
+      bearing: N
+      tracked_plane_presence_in_window: []
+    - airport_code: 5FL0
+      icao: null
+      iata: null
+      name: "Dusty Airpatch Airport"
+      city: "Dade City"
+      region: US-FL
+      country: US
+      type: small_airport
+      elevation_ft: 120
+      longest_runway_ft: 1534
+      longest_runway_surface: TURF-G
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 28.4131
+      lon: -82.2234
+      distance_mi: 35.6
+      bearing: NNE
+      tracked_plane_presence_in_window: []
+    - airport_code: FD33
+      icao: null
+      iata: null
+      name: "Green Swamp Aerodrome"
+      city: Lakeland
+      region: US-FL
+      country: US
+      type: small_airport
+      elevation_ft: 115
+      longest_runway_ft: 2600
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 28.2117
+      lon: -81.9987
+      distance_mi: 36.4
+      bearing: ENE
+      tracked_plane_presence_in_window: []
+    - airport_code: FD53
+      icao: null
+      iata: null
+      name: "Cub Haven Airport"
+      city: "Dade City"
+      region: US-FL
+      country: US
+      type: small_airport
+      elevation_ft: 70
+      longest_runway_ft: 2000
+      longest_runway_surface: TURF-F
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 28.4533
+      lon: -82.215
+      distance_mi: 38.3
+      bearing: NNE
+      tracked_plane_presence_in_window: []
+    - airport_code: 3FL1
+      icao: null
+      iata: null
+      name: "Two J's Flying Ranch Airport"
+      city: "Dade City"
+      region: US-FL
+      country: US
+      type: small_airport
+      elevation_ft: 60
+      longest_runway_ft: 2643
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 28.4525
+      lon: -82.2078
+      distance_mi: 38.5
+      bearing: NNE
+      tracked_plane_presence_in_window: []
+    - airport_code: US-0790
+      icao: null
+      iata: null
+      name: "Field of Dreams Airport"
+      city: "Dade City"
+      region: US-FL
+      country: US
+      type: small_airport
+      elevation_ft: 90
+      longest_runway_ft: 2464
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 28.47028
+      lon: -82.24092
+      distance_mi: 38.5
+      bearing: NNE
+      tracked_plane_presence_in_window: []
+tracked_plane_presence:
+  # Was any tracked aircraft on the ground at any field in the list above,
+  # inside the window? Three registers are searched and kept apart, strongest
+  # first. NEVER collapse them into one number.
+  window:
+    from: 2025-02-18
+    to: 2025-02-22
+    days_each_side: 2
+  any_found: false
+  egyptian_su_found: false
+  counts:
+    adsb_ground_contacts: 0
+    adsb_ground_contacts_egyptian_su: 0
+    flights_csv_stays: 0
+    flights_csv_stays_egyptian_su: 0
+    claimed_overlaps: 0
+  from_adsb_traces: []
+  from_flights_csv: []
+  from_overlaps_csv: []
+  just_outside_the_radius:
+    # A hard radius creates a cliff and a cliff hides evidence. These fields
+    # sit between 40 and 60 miles from the arrival airport. They are NOT counted
+    # as hits and must never be published as ones - they are here so a near miss
+    # is visible rather than silently dropped.
+    outer_radius_miles: 60.0
+    adsb_ground_contacts: []
+    flights_csv_stays: []
+    claimed_overlaps: []
+  coverage:
+    # AN EMPTY RESULT ABOVE IS NOT A FINDING UNLESS THIS SAYS THE DAYS WERE HELD.
+    # aircraft_days_needed = tails x days in the window. aircraft_days_held is
+    # how many of those this repo actually has a trace for. The rest were never
+    # pulled, or the networks heard nothing - the two are indistinguishable here.
+    aircraft_days_needed: 75
+    aircraft_days_held: 0
+    coverage_pct: 0.0
+    tails_with_no_trace_in_window:
+      - N102DZ
+      - N1098L
+      - N2100L
+      - N40JD
+      - N560TW
+      - N582MM
+      - N59906
+      - N872RA
+      - N888KG
+      - SU-BGM
+      - SU-BND
+      - SU-BTT
+      - SU-BTU
+      - SU-BTV
+      - T7-ELL
+    by_side:
+      following:
+        # FOLLOWING is the side the claim is about - the Egyptian SU- tails.
+        # This percentage is the one that decides whether an empty result means
+        # anything at all.
+        tails: 6
+        aircraft_days_needed: 30
+        aircraft_days_held: 0
+        coverage_pct: 0.0
+      kirk:
+        # KIRK-side coverage is what turns an ESTIMATED arrival into an
+        # OBSERVED one. Low here means the arrival times above stay estimates.
+        tails: 6
+        aircraft_days_needed: 30
+        aircraft_days_held: 0
+        coverage_pct: 0.0
+      n1098l:
+        # Other tracked aircraft. A DIFFERENT CLAIM - do not merge the threads.
+        tails: 3
+        aircraft_days_needed: 15
+        aircraft_days_held: 0
+        coverage_pct: 0.0
+counterargument:
+  - "ONE PAIRING IS NOT EVIDENCE. The claim under test is a repetition across many stops, and any single pairing has an innocent explanation a reader will find."
+  - "A field inside the radius is a field a jet COULD have used. Nothing here shows that anyone did use it, or that two aircraft on one ramp had any connection."
+  - "Maintenance is the strongest innocent explanation in this record: Duncan Aviation (Provo and Lincoln) and Yingling (Wichita) are Part 145 Falcon and Gulfstream shops, and a Falcon 7X sitting for weeks at one reads as a maintenance visit."
+  - "Transatlantic customs and fuel stops explain the recurring East Coast fields."
+  - "ERIKA'S SIDE IS THE WEAK SIDE. Her flight logs are reported erased, so any Erika pairing rests on the foreign aircraft's track plus a CLAIMED location for her. See /Planes/Erika-Flight-Logs-Erased."
+what_we_do_not_know:
+  - "Whether Charlie Kirk, Erika Kirk, or any TPUSA party actually flew to this event, or which aircraft they used. The arrival airport above is an inference from the venue city, not a record."
+  - "Whether the estimated arrival and departure times are within hours or within days of the truth, wherever observed_by_adsb is empty."
+  - "What the tracked aircraft were doing at any field they appear at. A trace proves presence, never purpose and never occupancy."
+  - "Whether the receiver networks simply did not hear an aircraft that was there. See the coverage block - an absence is not a finding."

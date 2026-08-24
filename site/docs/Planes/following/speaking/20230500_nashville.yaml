@@ -1,0 +1,1055 @@
+# GENERATED FILE - regenerate, do not hand-edit.
+#   node/python: apis/public_open_source/code/airports_near.py --only 20230500_nashville
+#   The prompt that governs this file: prompts/p_airports_near.md
+schema: ck.speaking.airports_near/1
+generated_utc: "2026-08-24T19:03:26Z"
+generated_by: site/docs/Planes/following/apis/public_open_source/code/airports_near.py
+page:
+  slug: 20230500_nashville
+  mdx: site/docs/Planes/following/speaking/20230500_nashville.mdx
+  yaml: site/docs/Planes/following/speaking/20230500_nashville.yaml
+  url: /Planes/following/speaking/20230500_nashville
+event:
+  title: "TPUSA Faith Pastors Summit — Nashville"
+  who: Charlie
+  attendee_class: CHARLIE_ONLY
+  charlie_present: "yes"
+  erika_present: not_documented
+  attendance_status: held
+  event_type: faith
+  dates:
+    raw: "2023-05 (month)"
+    first_day: 2023-05-01
+    last_day: 2023-05-31
+    granularity: MONTH_ONLY
+    certainty: EVENT_DATE
+    # PODCAST_PROXY means the date is a podcast RELEASE date and the event was normally 0-7 days earlier. Never publish a same-day claim off one.
+  local_time:
+    raw: null
+    parsed_hhmm: null
+    basis: no_time_published
+    timezone: America/Chicago
+    timezone_method: timezonefinder
+  location:
+    city: Nashville
+    state: TN
+    country: USA
+    venue: "Nashville, Tennessee (venue not named in ChurchLeaders recap)"
+    metro_area: "Nashville TN"
+    geocode:
+      lat: 36.07192
+      lon: -86.78239
+      method: ourairports_municipality_centroid
+      matched: "4 field(s) whose municipality is Nashville"
+  source: "ChurchLeaders 15 Sep 2023 ('The first was held in Nashville, Tennessee, in May')"
+  source_url: "https://churchleaders.com/news/458865-charlie-kirk-tpusa-faith-excommunicate-wokeism.html"
+  days_before_sept10_2025: null
+search:
+  radius_miles: 40
+  window_days_each_side: 2
+  window_from: 2023-04-29
+  window_to: 2023-06-02
+  window_day_count: 35
+  centre: KBNA
+  tails_searched:
+    - N102DZ
+    - N1098L
+    - N2100L
+    - N40JD
+    - N560TW
+    - N582MM
+    - N59906
+    - N872RA
+    - N888KG
+    - SU-BGM
+    - SU-BND
+    - SU-BTT
+    - SU-BTU
+    - SU-BTV
+    - T7-ELL
+  sources_searched:
+    - "recovered ADS-B traces on disk (site/docs/Planes/<TAIL>/data/recovered/)"
+    - site/docs/Planes/following/flights.csv
+    - site/docs/Planes/following/overlaps.csv
+arrival_airport:
+  # ESTIMATE. No published Kirk-side flight record exists for this event unless
+  # the observed_by_adsb block below is non-empty. This is arithmetic on the
+  # event time, not a landing record.
+  chosen_airport:
+    airport_code: KBNA
+    icao: KBNA
+    iata: BNA
+    name: "Nashville International Airport"
+    city: Nashville
+    region: US-TN
+    country: US
+    type: large_airport
+    elevation_ft: 599
+    longest_runway_ft: 11030
+    longest_runway_surface: ASP
+    runway_count: 4
+    runways_lighted: true
+    scheduled_service: true
+    jet_capability: jet_capable
+    lat: 36.1245
+    lon: -86.6782
+    distance_mi: 6.9
+    bearing: ENE
+  distance_from_event_city_mi: 6.9
+  selection_basis: CURATED_CSV_AND_COMPUTED_NEAREST_JET_FIELD_AGREE
+  curated_value_in_tpusa_events_csv:
+    airport_code: KBNA
+    airport_name: "Nashville International"
+    distance_mi: 7
+  computed_nearest_jet_capable_field:
+    airport_code: KBNA
+    name: "Nashville International Airport"
+    distance_mi: 6.9
+    longest_runway_ft: 11030
+  estimated_arrival:
+    date: 2023-05-01
+    local_time: "16:00"
+    timezone: America/Chicago
+    utc: "2023-05-01T21:00:00Z"
+    basis: "no event time published; 19:00 local assumed for arithmetic only; minus 3h"
+    confidence: low
+  estimated_departure:
+    date: 2023-05-31
+    local_time: "23:00"
+    timezone: America/Chicago
+    utc: "2023-06-01T04:00:00Z"
+    basis: "event end + 4h (speech, exit, wheels-up)"
+    confidence: low
+  observed_by_adsb: []
+  observed_by_adsb_note: "NO Kirk-side aircraft is on disk on the ground within 40 miles of KBNA in this window. The arrival and departure above stay estimates."
+airports_within_radius:
+  # Every field a private jet could physically use within the radius.
+  # Heliports, seaplane bases, balloonports and closed fields are excluded -
+  # a business jet cannot use any of them. Everything else is kept, including
+  # every small strip with no scheduled service: those are the point of the sweep.
+  radius_miles: 40
+  centre_airport: KBNA
+  count: 42
+  jet_capable_count: 7
+  light_jet_capable_count: 1
+  no_scheduled_service_count: 41
+  source: "OurAirports (CC0) airports.csv + runways.csv"
+  list:
+    - airport_code: KBNA
+      icao: KBNA
+      iata: BNA
+      name: "Nashville International Airport"
+      city: Nashville
+      region: US-TN
+      country: US
+      type: large_airport
+      elevation_ft: 599
+      longest_runway_ft: 11030
+      longest_runway_surface: ASP
+      runway_count: 4
+      runways_lighted: true
+      scheduled_service: true
+      jet_capability: jet_capable
+      lat: 36.1245
+      lon: -86.6782
+      distance_mi: 0.0
+      bearing: N
+      tracked_plane_presence_in_window: []
+    - airport_code: KMQY
+      icao: KMQY
+      iata: MQY
+      name: "Smyrna Airport"
+      city: Smyrna
+      region: US-TN
+      country: US
+      type: medium_airport
+      elevation_ft: 543
+      longest_runway_ft: 8038
+      longest_runway_surface: ASP
+      runway_count: 2
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: jet_capable
+      lat: 36.009
+      lon: -86.5201
+      distance_mi: 11.9
+      bearing: SE
+      tracked_plane_presence_in_window: []
+    - airport_code: KJWN
+      icao: null
+      iata: null
+      name: "John C Tune Airport"
+      city: Nashville
+      region: US-TN
+      country: US
+      type: small_airport
+      elevation_ft: 495
+      longest_runway_ft: 6001
+      longest_runway_surface: ASP
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: jet_capable
+      lat: 36.1824
+      lon: -86.8867
+      distance_mi: 12.3
+      bearing: WNW
+      tracked_plane_presence_in_window: []
+    - airport_code: TN79
+      icao: null
+      iata: null
+      name: "Oakley Airport"
+      city: Nashville
+      region: US-TN
+      country: US
+      type: small_airport
+      elevation_ft: 400
+      longest_runway_ft: 1800
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 36.17356
+      lon: -86.9522
+      distance_mi: 15.7
+      bearing: WNW
+      tracked_plane_presence_in_window: []
+    - airport_code: US-1120
+      icao: null
+      iata: null
+      name: "TK Farms Airport"
+      city: Lebanon
+      region: US-TN
+      country: US
+      type: small_airport
+      elevation_ft: 556
+      longest_runway_ft: null
+      longest_runway_surface: null
+      runway_count: 0
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: unknown
+      lat: 36.0575
+      lon: -86.3955
+      distance_mi: 16.4
+      bearing: ESE
+      tracked_plane_presence_in_window: []
+    - airport_code: US-8419
+      icao: null
+      iata: null
+      name: "Thompson Farms Airport"
+      city: Lebanon
+      region: US-TN
+      country: US
+      type: small_airport
+      elevation_ft: 675
+      longest_runway_ft: 1900
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 36.12045
+      lon: -86.35953
+      distance_mi: 17.8
+      bearing: E
+      tracked_plane_presence_in_window: []
+    - airport_code: 10TN
+      icao: null
+      iata: null
+      name: "Flatwood Field"
+      city: Lebanon
+      region: US-TN
+      country: US
+      type: small_airport
+      elevation_ft: 600
+      longest_runway_ft: 1200
+      longest_runway_surface: DIRT
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 36.0719
+      lon: -86.3544
+      distance_mi: 18.4
+      bearing: ESE
+      tracked_plane_presence_in_window: []
+    - airport_code: TN96
+      icao: null
+      iata: null
+      name: "Fall Creek Field"
+      city: Lebanon
+      region: US-TN
+      country: US
+      type: small_airport
+      elevation_ft: 675
+      longest_runway_ft: 2700
+      longest_runway_surface: TURF-G
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 36.0412
+      lon: -86.3583
+      distance_mi: 18.8
+      bearing: ESE
+      tracked_plane_presence_in_window: []
+    - airport_code: 7TN3
+      icao: null
+      iata: null
+      name: "Stones River Airport"
+      city: Murfreesboro
+      region: US-TN
+      country: US
+      type: small_airport
+      elevation_ft: 537
+      longest_runway_ft: 2075
+      longest_runway_surface: TURF-G
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 35.9708
+      lon: -86.3931
+      distance_mi: 19.1
+      bearing: ESE
+      tracked_plane_presence_in_window: []
+    - airport_code: 0TN5
+      icao: null
+      iata: null
+      name: "McDonald Airport"
+      city: Murfreesboro
+      region: US-TN
+      country: US
+      type: small_airport
+      elevation_ft: 600
+      longest_runway_ft: 2350
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 35.86773
+      lon: -86.49791
+      distance_mi: 20.4
+      bearing: SSE
+      tracked_plane_presence_in_window: []
+    - airport_code: KM54
+      icao: null
+      iata: null
+      name: "Lebanon Municipal Airport"
+      city: Lebanon
+      region: US-TN
+      country: US
+      type: small_airport
+      elevation_ft: 588
+      longest_runway_ft: 5000
+      longest_runway_surface: ASP
+      runway_count: 2
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: jet_capable
+      lat: 36.1904
+      lon: -86.3157
+      distance_mi: 20.7
+      bearing: ENE
+      tracked_plane_presence_in_window: []
+    - airport_code: TN97
+      icao: null
+      iata: null
+      name: "Triune Airfield"
+      city: Nashville
+      region: US-TN
+      country: US
+      type: small_airport
+      elevation_ft: 740
+      longest_runway_ft: 2500
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 35.8072
+      lon: -86.61246
+      distance_mi: 22.2
+      bearing: S
+      tracked_plane_presence_in_window: []
+    - airport_code: 1TN0
+      icao: null
+      iata: null
+      name: "Cedar Crest Field"
+      city: Lebanon
+      region: US-TN
+      country: US
+      type: small_airport
+      elevation_ft: 540
+      longest_runway_ft: 2600
+      longest_runway_surface: TURF-G
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 36.24641
+      lon: -86.30338
+      distance_mi: 22.5
+      bearing: ENE
+      tracked_plane_presence_in_window: []
+    - airport_code: KM33
+      icao: null
+      iata: null
+      name: "Music City Executive Airport"
+      city: Gallatin
+      region: US-TN
+      country: US
+      type: small_airport
+      elevation_ft: 583
+      longest_runway_ft: 6300
+      longest_runway_surface: ASP
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: jet_capable
+      lat: 36.37508
+      lon: -86.40841
+      distance_mi: 22.9
+      bearing: NE
+      tracked_plane_presence_in_window: []
+    - airport_code: 9TN9
+      icao: null
+      iata: null
+      name: "Toy Box Airport"
+      city: Lebanon
+      region: US-TN
+      country: US
+      type: small_airport
+      elevation_ft: 630
+      longest_runway_ft: 1500
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 36.0194
+      lon: -86.2881
+      distance_mi: 23.0
+      bearing: ESE
+      tracked_plane_presence_in_window: []
+    - airport_code: 8TN6
+      icao: null
+      iata: null
+      name: "Rachel's Landing Airport"
+      city: Murfreesboro
+      region: US-TN
+      country: US
+      type: small_airport
+      elevation_ft: 560
+      longest_runway_ft: 2000
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 35.92158
+      lon: -86.34503
+      distance_mi: 23.3
+      bearing: SE
+      tracked_plane_presence_in_window: []
+    - airport_code: KMBT
+      icao: null
+      iata: null
+      name: "City of Murfreesboro Airport"
+      city: Murfreesboro
+      region: US-TN
+      country: US
+      type: small_airport
+      elevation_ft: 614
+      longest_runway_ft: 4750
+      longest_runway_surface: ASP
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: light_jet_capable
+      lat: 35.8775
+      lon: -86.3775
+      distance_mi: 24.0
+      bearing: SE
+      tracked_plane_presence_in_window: []
+    - airport_code: 02TN
+      icao: null
+      iata: null
+      name: "Ellis Field"
+      city: Rockvale
+      region: US-TN
+      country: US
+      type: small_airport
+      elevation_ft: 840
+      longest_runway_ft: 1600
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 35.78036
+      lon: -86.58552
+      distance_mi: 24.3
+      bearing: SSE
+      tracked_plane_presence_in_window: []
+    - airport_code: 91TN
+      icao: null
+      iata: null
+      name: "Powder Mill Field"
+      city: "Ashland City"
+      region: US-TN
+      country: US
+      type: small_airport
+      elevation_ft: 625
+      longest_runway_ft: 2000
+      longest_runway_surface: GVL
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 36.31387
+      lon: -87.04615
+      distance_mi: 24.3
+      bearing: WNW
+      tracked_plane_presence_in_window: []
+    - airport_code: 9TN4
+      icao: null
+      iata: null
+      name: "Foreman Field"
+      city: Springfield
+      region: US-TN
+      country: US
+      type: small_airport
+      elevation_ft: 705
+      longest_runway_ft: 2250
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 36.4577
+      lon: -86.946
+      distance_mi: 27.4
+      bearing: NNW
+      tracked_plane_presence_in_window: []
+    - airport_code: 8TN5
+      icao: null
+      iata: null
+      name: "Nobuzzn Airport"
+      city: Springfield
+      region: US-TN
+      country: US
+      type: small_airport
+      elevation_ft: 650
+      longest_runway_ft: 1900
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 36.48602
+      lon: -86.91102
+      distance_mi: 28.1
+      bearing: NNW
+      tracked_plane_presence_in_window: []
+    - airport_code: 9TN1
+      icao: null
+      iata: null
+      name: "Versailles Aerodrome"
+      city: Eagleville
+      region: US-TN
+      country: US
+      type: small_airport
+      elevation_ft: 855
+      longest_runway_ft: 2000
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 35.73
+      lon: -86.5378
+      distance_mi: 28.4
+      bearing: SSE
+      tracked_plane_presence_in_window: []
+    - airport_code: TN77
+      icao: null
+      iata: null
+      name: "Whifferdill Airport"
+      city: Chapmansboro
+      region: US-TN
+      country: US
+      type: small_airport
+      elevation_ft: 622
+      longest_runway_ft: 3200
+      longest_runway_surface: TURF
+      runway_count: 2
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 36.3218
+      lon: -87.1507
+      distance_mi: 29.7
+      bearing: WNW
+      tracked_plane_presence_in_window: []
+    - airport_code: 6TN1
+      icao: null
+      iata: null
+      name: "Weakleys Field"
+      city: Chapmansboro
+      region: US-TN
+      country: US
+      type: small_airport
+      elevation_ft: 705
+      longest_runway_ft: 3370
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 36.4062
+      lon: -87.0822
+      distance_mi: 29.8
+      bearing: NW
+      tracked_plane_presence_in_window: []
+    - airport_code: TN14
+      icao: null
+      iata: null
+      name: "T-Top Airfield"
+      city: Eagleville
+      region: US-TN
+      country: US
+      type: small_airport
+      elevation_ft: 770
+      longest_runway_ft: 3600
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 35.6897
+      lon: -86.6358
+      distance_mi: 30.1
+      bearing: S
+      tracked_plane_presence_in_window: []
+    - airport_code: 50M
+      icao: null
+      iata: null
+      name: "Puckett Gliderport"
+      city: Eagleville
+      region: US-TN
+      country: US
+      type: small_airport
+      elevation_ft: 780
+      longest_runway_ft: 2200
+      longest_runway_surface: TURF-G
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 35.6894
+      lon: -86.615
+      distance_mi: 30.3
+      bearing: S
+      tracked_plane_presence_in_window: []
+    - airport_code: TN07
+      icao: null
+      iata: null
+      name: "Hawk Haven Airfield"
+      city: Eagleville
+      region: US-TN
+      country: US
+      type: small_airport
+      elevation_ft: 775
+      longest_runway_ft: 2400
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 35.6872
+      lon: -86.6064
+      distance_mi: 30.5
+      bearing: S
+      tracked_plane_presence_in_window: []
+    - airport_code: 41TN
+      icao: null
+      iata: null
+      name: "Stonewall Airpark"
+      city: Milton
+      region: US-TN
+      country: US
+      type: small_airport
+      elevation_ft: 760
+      longest_runway_ft: 3058
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 35.9008
+      lon: -86.2072
+      distance_mi: 30.5
+      bearing: ESE
+      tracked_plane_presence_in_window: []
+    - airport_code: TN49
+      icao: null
+      iata: null
+      name: "Bellwood Field"
+      city: Lebanon
+      region: US-TN
+      country: US
+      type: small_airport
+      elevation_ft: 589
+      longest_runway_ft: 2718
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 36.26196
+      lon: -86.14993
+      distance_mi: 30.9
+      bearing: ENE
+      tracked_plane_presence_in_window: []
+    - airport_code: US-1119
+      icao: null
+      iata: null
+      name: "Racecar Airport"
+      city: "Chapel Hill"
+      region: US-TN
+      country: US
+      type: small_airport
+      elevation_ft: 750
+      longest_runway_ft: 1710
+      longest_runway_surface: TURF/DIRT
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 35.67137
+      lon: -86.72153
+      distance_mi: 31.4
+      bearing: S
+      tracked_plane_presence_in_window: []
+    - airport_code: 7TN0
+      icao: null
+      iata: null
+      name: "Blue Bird Field"
+      city: Pleasantview
+      region: US-TN
+      country: US
+      type: small_airport
+      elevation_ft: 705
+      longest_runway_ft: 1900
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 36.4356
+      lon: -87.0914
+      distance_mi: 31.5
+      bearing: NW
+      tracked_plane_presence_in_window: []
+    - airport_code: KM91
+      icao: null
+      iata: null
+      name: "Springfield Robertson County Airport"
+      city: Springfield
+      region: US-TN
+      country: US
+      type: small_airport
+      elevation_ft: 706
+      longest_runway_ft: 5505
+      longest_runway_surface: ASP
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: jet_capable
+      lat: 36.5368
+      lon: -86.92118
+      distance_mi: 31.5
+      bearing: NNW
+      tracked_plane_presence_in_window: []
+    - airport_code: 6TN9
+      icao: null
+      iata: null
+      name: "Dripping Springs Farm Airport"
+      city: Burns
+      region: US-TN
+      country: US
+      type: small_airport
+      elevation_ft: 728
+      longest_runway_ft: 1400
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 36.0614
+      lon: -87.2472
+      distance_mi: 32.1
+      bearing: W
+      tracked_plane_presence_in_window: []
+    - airport_code: 0TN0
+      icao: null
+      iata: null
+      name: "R & S Buzzard Airport"
+      city: "Spring Hill"
+      region: US-TN
+      country: US
+      type: small_airport
+      elevation_ft: 810
+      longest_runway_ft: 1750
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 35.6767
+      lon: -86.8967
+      distance_mi: 33.3
+      bearing: SSW
+      tracked_plane_presence_in_window: []
+    - airport_code: TN65
+      icao: null
+      iata: null
+      name: "Long Meadow Airstrip"
+      city: Murfreesburg
+      region: US-TN
+      country: US
+      type: small_airport
+      elevation_ft: 750
+      longest_runway_ft: 2400
+      longest_runway_surface: GRE
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 35.6664
+      lon: -86.4853
+      distance_mi: 33.4
+      bearing: SSE
+      tracked_plane_presence_in_window: []
+    - airport_code: 06TN
+      icao: null
+      iata: null
+      name: "Hunter Airport"
+      city: Columbia
+      region: US-TN
+      country: US
+      type: small_airport
+      elevation_ft: 640
+      longest_runway_ft: 2000
+      longest_runway_surface: TURF-F
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 35.69696
+      lon: -86.95777
+      distance_mi: 33.4
+      bearing: SSW
+      tracked_plane_presence_in_window: []
+    - airport_code: K1M5
+      icao: null
+      iata: null
+      name: "Portland Municipal Airport"
+      city: Portland
+      region: US-TN
+      country: US
+      type: small_airport
+      elevation_ft: 818
+      longest_runway_ft: 5003
+      longest_runway_surface: ASPH-G
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: jet_capable
+      lat: 36.59268
+      lon: -86.47694
+      distance_mi: 34.2
+      bearing: NNE
+      tracked_plane_presence_in_window: []
+    - airport_code: 3TN9
+      icao: null
+      iata: null
+      name: "Holenthawall Airport"
+      city: Springfield
+      region: US-TN
+      country: US
+      type: small_airport
+      elevation_ft: 645
+      longest_runway_ft: 2100
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 36.6133
+      lon: -86.8103
+      distance_mi: 34.6
+      bearing: NNW
+      tracked_plane_presence_in_window: []
+    - airport_code: 36TN
+      icao: null
+      iata: null
+      name: "Ruckman Field"
+      city: Clarksville
+      region: US-TN
+      country: US
+      type: small_airport
+      elevation_ft: 660
+      longest_runway_ft: 1800
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 36.47185
+      lon: -87.13567
+      distance_mi: 35.0
+      bearing: NW
+      tracked_plane_presence_in_window: []
+    - airport_code: TN83
+      icao: null
+      iata: null
+      name: "Cedar Glade Aerodrome"
+      city: Murfreesboro
+      region: US-TN
+      country: US
+      type: small_airport
+      elevation_ft: 770
+      longest_runway_ft: 2200
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 35.72079
+      lon: -86.27502
+      distance_mi: 35.9
+      bearing: SE
+      tracked_plane_presence_in_window: []
+    - airport_code: 19TN
+      icao: null
+      iata: null
+      name: "Ferraraccio Field"
+      city: Clarksville
+      region: US-TN
+      country: US
+      type: small_airport
+      elevation_ft: 620
+      longest_runway_ft: 2200
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 36.49309
+      lon: -87.18736
+      distance_mi: 38.1
+      bearing: NW
+      tracked_plane_presence_in_window: []
+    - airport_code: 95TN
+      icao: null
+      iata: null
+      name: "Blue Ridge Field"
+      city: Adams
+      region: US-TN
+      country: US
+      type: small_airport
+      elevation_ft: 525
+      longest_runway_ft: null
+      longest_runway_surface: null
+      runway_count: 0
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: unknown
+      lat: 36.52658
+      lon: -87.17281
+      distance_mi: 39.1
+      bearing: NW
+      tracked_plane_presence_in_window: []
+tracked_plane_presence:
+  # Was any tracked aircraft on the ground at any field in the list above,
+  # inside the window? Three registers are searched and kept apart, strongest
+  # first. NEVER collapse them into one number.
+  window:
+    from: 2023-04-29
+    to: 2023-06-02
+    days_each_side: 2
+  any_found: false
+  egyptian_su_found: false
+  counts:
+    adsb_ground_contacts: 0
+    adsb_ground_contacts_egyptian_su: 0
+    flights_csv_stays: 0
+    flights_csv_stays_egyptian_su: 0
+    claimed_overlaps: 0
+  from_adsb_traces: []
+  from_flights_csv: []
+  from_overlaps_csv: []
+  just_outside_the_radius:
+    # A hard radius creates a cliff and a cliff hides evidence. These fields
+    # sit between 40 and 60 miles from the arrival airport. They are NOT counted
+    # as hits and must never be published as ones - they are here so a near miss
+    # is visible rather than silently dropped.
+    outer_radius_miles: 60.0
+    adsb_ground_contacts: []
+    flights_csv_stays: []
+    claimed_overlaps: []
+  coverage:
+    # AN EMPTY RESULT ABOVE IS NOT A FINDING UNLESS THIS SAYS THE DAYS WERE HELD.
+    # aircraft_days_needed = tails x days in the window. aircraft_days_held is
+    # how many of those this repo actually has a trace for. The rest were never
+    # pulled, or the networks heard nothing - the two are indistinguishable here.
+    aircraft_days_needed: 525
+    aircraft_days_held: 10
+    coverage_pct: 1.9
+    tails_with_no_trace_in_window:
+      - N102DZ
+      - N1098L
+      - N2100L
+      - N40JD
+      - N888KG
+      - SU-BGM
+      - SU-BTV
+      - T7-ELL
+    by_side:
+      following:
+        # FOLLOWING is the side the claim is about - the Egyptian SU- tails.
+        # This percentage is the one that decides whether an empty result means
+        # anything at all.
+        tails: 6
+        aircraft_days_needed: 210
+        aircraft_days_held: 6
+        coverage_pct: 2.9
+      kirk:
+        # KIRK-side coverage is what turns an ESTIMATED arrival into an
+        # OBSERVED one. Low here means the arrival times above stay estimates.
+        tails: 6
+        aircraft_days_needed: 210
+        aircraft_days_held: 3
+        coverage_pct: 1.4
+      n1098l:
+        # Other tracked aircraft. A DIFFERENT CLAIM - do not merge the threads.
+        tails: 3
+        aircraft_days_needed: 105
+        aircraft_days_held: 1
+        coverage_pct: 1.0
+counterargument:
+  - "ONE PAIRING IS NOT EVIDENCE. The claim under test is a repetition across many stops, and any single pairing has an innocent explanation a reader will find."
+  - "A field inside the radius is a field a jet COULD have used. Nothing here shows that anyone did use it, or that two aircraft on one ramp had any connection."
+  - "Maintenance is the strongest innocent explanation in this record: Duncan Aviation (Provo and Lincoln) and Yingling (Wichita) are Part 145 Falcon and Gulfstream shops, and a Falcon 7X sitting for weeks at one reads as a maintenance visit."
+  - "Transatlantic customs and fuel stops explain the recurring East Coast fields."
+  - "ERIKA'S SIDE IS THE WEAK SIDE. Her flight logs are reported erased, so any Erika pairing rests on the foreign aircraft's track plus a CLAIMED location for her. See /Planes/Erika-Flight-Logs-Erased."
+what_we_do_not_know:
+  - "Whether Charlie Kirk, Erika Kirk, or any TPUSA party actually flew to this event, or which aircraft they used. The arrival airport above is an inference from the venue city, not a record."
+  - "Whether the estimated arrival and departure times are within hours or within days of the truth, wherever observed_by_adsb is empty."
+  - "What the tracked aircraft were doing at any field they appear at. A trace proves presence, never purpose and never occupancy."
+  - "Whether the receiver networks simply did not hear an aircraft that was there. See the coverage block - an absence is not a finding."

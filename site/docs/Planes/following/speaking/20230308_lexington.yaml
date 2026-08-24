@@ -1,0 +1,962 @@
+# GENERATED FILE - regenerate, do not hand-edit.
+#   node/python: apis/public_open_source/code/airports_near.py --only 20230308_lexington
+#   The prompt that governs this file: prompts/p_airports_near.md
+schema: ck.speaking.airports_near/1
+generated_utc: "2026-08-24T19:03:26Z"
+generated_by: site/docs/Planes/following/apis/public_open_source/code/airports_near.py
+page:
+  slug: 20230308_lexington
+  mdx: site/docs/Planes/following/speaking/20230308_lexington.mdx
+  yaml: site/docs/Planes/following/speaking/20230308_lexington.yaml
+  url: /Planes/following/speaking/20230308_lexington
+event:
+  title: "Live Free Tour — University of Kentucky"
+  who: Charlie
+  attendee_class: CHARLIE_ONLY
+  charlie_present: "yes"
+  erika_present: not_documented
+  attendance_status: held
+  event_type: campus
+  dates:
+    raw: 2023-03-08
+    first_day: 2023-03-08
+    last_day: 2023-03-08
+    granularity: DAY
+    certainty: EVENT_DATE
+    # PODCAST_PROXY means the date is a podcast RELEASE date and the event was normally 0-7 days earlier. Never publish a same-day claim off one.
+  local_time:
+    raw: null
+    parsed_hhmm: null
+    basis: no_time_published
+    timezone: America/New_York
+    timezone_method: timezonefinder
+  location:
+    city: Lexington
+    state: KY
+    country: USA
+    venue: "University of Kentucky"
+    metro_area: "Lexington KY"
+    geocode:
+      lat: 37.99738
+      lon: -84.46006
+      method: ourairports_municipality_centroid
+      matched: "3 field(s) whose municipality is Lexington"
+  source: "TPUSA Spring 2023 Live Free press release"
+  source_url: "https://backend.tpusa.com/wp-content/uploads/2023/01/Press-Release-TPUSA-Tour-Spring-2023-Live-Free.pdf"
+  days_before_sept10_2025: 917
+search:
+  radius_miles: 40
+  window_days_each_side: 2
+  window_from: 2023-03-06
+  window_to: 2023-03-10
+  window_day_count: 5
+  centre: KLEX
+  tails_searched:
+    - N102DZ
+    - N1098L
+    - N2100L
+    - N40JD
+    - N560TW
+    - N582MM
+    - N59906
+    - N872RA
+    - N888KG
+    - SU-BGM
+    - SU-BND
+    - SU-BTT
+    - SU-BTU
+    - SU-BTV
+    - T7-ELL
+  sources_searched:
+    - "recovered ADS-B traces on disk (site/docs/Planes/<TAIL>/data/recovered/)"
+    - site/docs/Planes/following/flights.csv
+    - site/docs/Planes/following/overlaps.csv
+arrival_airport:
+  # ESTIMATE. No published Kirk-side flight record exists for this event unless
+  # the observed_by_adsb block below is non-empty. This is arithmetic on the
+  # event time, not a landing record.
+  chosen_airport:
+    airport_code: KLEX
+    icao: KLEX
+    iata: LEX
+    name: "Blue Grass Airport"
+    city: Lexington
+    region: US-KY
+    country: US
+    type: medium_airport
+    elevation_ft: 979
+    longest_runway_ft: 7004
+    longest_runway_surface: ASP
+    runway_count: 2
+    runways_lighted: true
+    scheduled_service: true
+    jet_capability: jet_capable
+    lat: 38.03507
+    lon: -84.60674
+    distance_mi: 8.4
+    bearing: WNW
+  distance_from_event_city_mi: 8.4
+  selection_basis: CURATED_CSV_AND_COMPUTED_NEAREST_JET_FIELD_AGREE
+  curated_value_in_tpusa_events_csv:
+    airport_code: KLEX
+    airport_name: "Blue Grass Airport"
+    distance_mi: 5
+  computed_nearest_jet_capable_field:
+    airport_code: KLEX
+    name: "Blue Grass Airport"
+    distance_mi: 8.4
+    longest_runway_ft: 7004
+  estimated_arrival:
+    date: 2023-03-08
+    local_time: "16:00"
+    timezone: America/New_York
+    utc: "2023-03-08T21:00:00Z"
+    basis: "no event time published; 19:00 local assumed for arithmetic only; minus 3h"
+    confidence: low
+  estimated_departure:
+    date: 2023-03-08
+    local_time: "23:00"
+    timezone: America/New_York
+    utc: "2023-03-09T04:00:00Z"
+    basis: "event end + 4h (speech, exit, wheels-up)"
+    confidence: low
+  observed_by_adsb: []
+  observed_by_adsb_note: "NO Kirk-side aircraft is on disk on the ground within 40 miles of KLEX in this window. The arrival and departure above stay estimates."
+airports_within_radius:
+  # Every field a private jet could physically use within the radius.
+  # Heliports, seaplane bases, balloonports and closed fields are excluded -
+  # a business jet cannot use any of them. Everything else is kept, including
+  # every small strip with no scheduled service: those are the point of the sweep.
+  radius_miles: 40
+  centre_airport: KLEX
+  count: 37
+  jet_capable_count: 7
+  light_jet_capable_count: 0
+  no_scheduled_service_count: 36
+  source: "OurAirports (CC0) airports.csv + runways.csv"
+  list:
+    - airport_code: KLEX
+      icao: KLEX
+      iata: LEX
+      name: "Blue Grass Airport"
+      city: Lexington
+      region: US-KY
+      country: US
+      type: medium_airport
+      elevation_ft: 979
+      longest_runway_ft: 7004
+      longest_runway_surface: ASP
+      runway_count: 2
+      runways_lighted: true
+      scheduled_service: true
+      jet_capability: jet_capable
+      lat: 38.03507
+      lon: -84.60674
+      distance_mi: 0.0
+      bearing: N
+      tracked_plane_presence_in_window: []
+    - airport_code: 79KY
+      icao: null
+      iata: null
+      name: "Lucas Field"
+      city: Nicholasville
+      region: US-KY
+      country: US
+      type: small_airport
+      elevation_ft: 906
+      longest_runway_ft: 5488
+      longest_runway_surface: CONC
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: jet_capable
+      lat: 37.8713
+      lon: -84.6105
+      distance_mi: 11.3
+      bearing: S
+      tracked_plane_presence_in_window: []
+    - airport_code: US-7438
+      icao: null
+      iata: null
+      name: "Forest Hill Airport - Silo Field"
+      city: Lexington
+      region: US-KY
+      country: US
+      type: small_airport
+      elevation_ft: 1032
+      longest_runway_ft: null
+      longest_runway_surface: null
+      runway_count: 0
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: unknown
+      lat: 37.94486
+      lon: -84.42702
+      distance_mi: 11.6
+      bearing: ESE
+      tracked_plane_presence_in_window: []
+    - airport_code: 76KY
+      icao: null
+      iata: null
+      name: "Buzzard's Roost Airport"
+      city: Lawrenceburg
+      region: US-KY
+      country: US
+      type: small_airport
+      elevation_ft: 770
+      longest_runway_ft: 1450
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 38.0148
+      lon: -84.8416
+      distance_mi: 12.9
+      bearing: W
+      tracked_plane_presence_in_window: []
+    - airport_code: US-13005
+      icao: null
+      iata: null
+      name: "Big Sky Adventures Airport"
+      city: Nicholasville
+      region: US-KY
+      country: US
+      type: small_airport
+      elevation_ft: 923
+      longest_runway_ft: 2248
+      longest_runway_surface: ASPHALT/GRAVEL
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 37.85984
+      lon: -84.48683
+      distance_mi: 13.8
+      bearing: SSE
+      tracked_plane_presence_in_window: []
+    - airport_code: US-0199
+      icao: null
+      iata: null
+      name: "Coal Field"
+      city: Lexington
+      region: US-KY
+      country: US
+      type: small_airport
+      elevation_ft: 984
+      longest_runway_ft: 2206
+      longest_runway_surface: ASPHALT
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 38.0122
+      lon: -84.34641
+      distance_mi: 14.3
+      bearing: E
+      tracked_plane_presence_in_window: []
+    - airport_code: 31KY
+      icao: null
+      iata: null
+      name: "Wild Blue Airport"
+      city: Paris
+      region: US-KY
+      country: US
+      type: small_airport
+      elevation_ft: 890
+      longest_runway_ft: 2800
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 38.10993
+      lon: -84.33874
+      distance_mi: 15.5
+      bearing: ENE
+      tracked_plane_presence_in_window: []
+    - airport_code: 14KY
+      icao: null
+      iata: null
+      name: "Blue Haven Farm Airport"
+      city: Paris
+      region: US-KY
+      country: US
+      type: small_airport
+      elevation_ft: 985
+      longest_runway_ft: 2240
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 38.1737
+      lon: -84.3683
+      distance_mi: 16.1
+      bearing: NE
+      tracked_plane_presence_in_window: []
+    - airport_code: 50KY
+      icao: null
+      iata: null
+      name: "Zanzibar Farm Airport"
+      city: Paris
+      region: US-KY
+      country: US
+      type: small_airport
+      elevation_ft: 915
+      longest_runway_ft: 2200
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 38.1298
+      lon: -84.3302
+      distance_mi: 16.4
+      bearing: ENE
+      tracked_plane_presence_in_window: []
+    - airport_code: K27K
+      icao: null
+      iata: null
+      name: "Georgetown-Scott County Regional Airport"
+      city: Georgetown
+      region: US-KY
+      country: US
+      type: small_airport
+      elevation_ft: 947
+      longest_runway_ft: 5498
+      longest_runway_surface: ASPH-F
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: jet_capable
+      lat: 38.23441
+      lon: -84.4347
+      distance_mi: 16.6
+      bearing: NE
+      tracked_plane_presence_in_window: []
+    - airport_code: 52KY
+      icao: null
+      iata: null
+      name: "Air Castle Airport"
+      city: Paris
+      region: US-KY
+      country: US
+      type: small_airport
+      elevation_ft: 900
+      longest_runway_ft: 1300
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 38.11744
+      lon: -84.30166
+      distance_mi: 17.5
+      bearing: ENE
+      tracked_plane_presence_in_window: []
+    - airport_code: 15KY
+      icao: null
+      iata: null
+      name: "Brennan Farm Airport"
+      city: Paris
+      region: US-KY
+      country: US
+      type: small_airport
+      elevation_ft: 910
+      longest_runway_ft: 2540
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 38.157
+      lon: -84.3016
+      distance_mi: 18.6
+      bearing: ENE
+      tracked_plane_presence_in_window: []
+    - airport_code: US-12840
+      icao: null
+      iata: null
+      name: "Soggy Bottom Farm Airport"
+      city: Winchester
+      region: US-KY
+      country: US
+      type: small_airport
+      elevation_ft: 912
+      longest_runway_ft: 2266
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 37.93527
+      lon: -84.28847
+      distance_mi: 18.7
+      bearing: ESE
+      tracked_plane_presence_in_window: []
+    - airport_code: KFFT
+      icao: KFFT
+      iata: FFT
+      name: "Capital City Airport"
+      city: Frankfort
+      region: US-KY
+      country: US
+      type: small_airport
+      elevation_ft: 806
+      longest_runway_ft: 5006
+      longest_runway_surface: ASP
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: jet_capable
+      lat: 38.1817
+      lon: -84.90676
+      distance_mi: 19.2
+      bearing: WNW
+      tracked_plane_presence_in_window: []
+    - airport_code: US-8413
+      icao: null
+      iata: null
+      name: "Colby Airport"
+      city: Winchester
+      region: US-KY
+      country: US
+      type: small_airport
+      elevation_ft: 1000
+      longest_runway_ft: 844
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 37.99194
+      lon: -84.25403
+      distance_mi: 19.4
+      bearing: E
+      tracked_plane_presence_in_window: []
+    - airport_code: 5KY8
+      icao: null
+      iata: null
+      name: "Harold Reynolds Airport"
+      city: Harrodsburg
+      region: US-KY
+      country: US
+      type: small_airport
+      elevation_ft: 860
+      longest_runway_ft: 1400
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 37.88972
+      lon: -84.92778
+      distance_mi: 20.2
+      bearing: WSW
+      tracked_plane_presence_in_window: []
+    - airport_code: 05KT
+      icao: null
+      iata: null
+      name: "High Point Farm Airport"
+      city: Frankfort
+      region: US-KY
+      country: US
+      type: small_airport
+      elevation_ft: 880
+      longest_runway_ft: 600
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 38.18709
+      lon: -84.93011
+      distance_mi: 20.5
+      bearing: WNW
+      tracked_plane_presence_in_window: []
+    - airport_code: US-0451
+      icao: null
+      iata: null
+      name: "Renick Field"
+      city: Winchester
+      region: US-KY
+      country: US
+      type: small_airport
+      elevation_ft: 951
+      longest_runway_ft: null
+      longest_runway_surface: null
+      runway_count: 0
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: unknown
+      lat: 38.05222
+      lon: -84.21917
+      distance_mi: 21.1
+      bearing: E
+      tracked_plane_presence_in_window: []
+    - airport_code: 1KY7
+      icao: null
+      iata: null
+      name: "Jordan Hill Farm Airport"
+      city: Richmond
+      region: US-KY
+      country: US
+      type: small_airport
+      elevation_ft: 910
+      longest_runway_ft: 2000
+      longest_runway_surface: TURF-G
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 37.8325
+      lon: -84.1808
+      distance_mi: 27.1
+      bearing: ESE
+      tracked_plane_presence_in_window: []
+    - airport_code: K0I8
+      icao: null
+      iata: null
+      name: "Cynthiana-Harrison County Airport"
+      city: Cynthiana
+      region: US-KY
+      country: US
+      type: small_airport
+      elevation_ft: 721
+      longest_runway_ft: 3850
+      longest_runway_surface: ASPH-F
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: marginal
+      lat: 38.3662
+      lon: -84.2833
+      distance_mi: 28.8
+      bearing: NE
+      tracked_plane_presence_in_window: []
+    - airport_code: 3KY9
+      icao: null
+      iata: null
+      name: "Miles Field"
+      city: Waddy
+      region: US-KY
+      country: US
+      type: small_airport
+      elevation_ft: 850
+      longest_runway_ft: 2000
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 38.12226
+      lon: -85.12617
+      distance_mi: 28.9
+      bearing: WNW
+      tracked_plane_presence_in_window: []
+    - airport_code: US-8684
+      icao: null
+      iata: null
+      name: "Papaws Landing"
+      city: Shelbyville
+      region: US-KY
+      country: US
+      type: small_airport
+      elevation_ft: 838
+      longest_runway_ft: 2602
+      longest_runway_surface: TURF/DIRT
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 38.16507
+      lon: -85.15089
+      distance_mi: 30.9
+      bearing: WNW
+      tracked_plane_presence_in_window: []
+    - airport_code: 2KY1
+      icao: null
+      iata: null
+      name: "Kitty Hawk Farm Ultralightport"
+      city: "Paint Lick"
+      region: US-KY
+      country: US
+      type: small_airport
+      elevation_ft: 980
+      longest_runway_ft: 1100
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 37.6192
+      lon: -84.3814
+      distance_mi: 31.3
+      bearing: SSE
+      tracked_plane_presence_in_window: []
+    - airport_code: KI39
+      icao: null
+      iata: null
+      name: "Central Kentucky Regional Airport"
+      city: Richmond
+      region: US-KY
+      country: US
+      type: medium_airport
+      elevation_ft: 1002
+      longest_runway_ft: 5001
+      longest_runway_surface: ASP
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: jet_capable
+      lat: 37.6308
+      lon: -84.3323
+      distance_mi: 31.7
+      bearing: SSE
+      tracked_plane_presence_in_window: []
+    - airport_code: US-3268
+      icao: null
+      iata: null
+      name: "Berea-Richmond Airport"
+      city: Berea
+      region: US-KY
+      country: US
+      type: small_airport
+      elevation_ft: null
+      longest_runway_ft: null
+      longest_runway_surface: null
+      runway_count: 0
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: unknown
+      lat: 37.64519
+      lon: -84.28297
+      distance_mi: 32.2
+      bearing: SSE
+      tracked_plane_presence_in_window: []
+    - airport_code: KDVK
+      icao: null
+      iata: null
+      name: "Stuart Powell Field"
+      city: Danville
+      region: US-KY
+      country: US
+      type: small_airport
+      elevation_ft: 1022
+      longest_runway_ft: 5000
+      longest_runway_surface: ASP
+      runway_count: 2
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: jet_capable
+      lat: 37.57941
+      lon: -84.77435
+      distance_mi: 32.8
+      bearing: SSW
+      tracked_plane_presence_in_window: []
+    - airport_code: 8KT8
+      icao: null
+      iata: null
+      name: "Cherry Hill Airport"
+      city: Pleasureville
+      region: US-KY
+      country: US
+      type: small_airport
+      elevation_ft: 879
+      longest_runway_ft: 1494
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 38.33192
+      lon: -85.07797
+      distance_mi: 32.8
+      bearing: NW
+      tracked_plane_presence_in_window: []
+    - airport_code: 75KY
+      icao: null
+      iata: null
+      name: "Hisle Field"
+      city: Winchester
+      region: US-KY
+      country: US
+      type: small_airport
+      elevation_ft: 770
+      longest_runway_ft: 2800
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 37.9442
+      lon: -83.9978
+      distance_mi: 33.7
+      bearing: E
+      tracked_plane_presence_in_window: []
+    - airport_code: KIOB
+      icao: null
+      iata: null
+      name: "Mount Sterling Montgomery County Airport"
+      city: "Mount Sterling"
+      region: US-KY
+      country: US
+      type: small_airport
+      elevation_ft: 1019
+      longest_runway_ft: 5000
+      longest_runway_surface: ASP
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: jet_capable
+      lat: 38.0581
+      lon: -83.9796
+      distance_mi: 34.2
+      bearing: E
+      tracked_plane_presence_in_window: []
+    - airport_code: US-7573
+      icao: null
+      iata: null
+      name: "Pumpkin Field"
+      city: "Clay City"
+      region: US-KY
+      country: US
+      type: small_airport
+      elevation_ft: 760
+      longest_runway_ft: 1091
+      longest_runway_surface: TURF/DIRT
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 37.8384
+      lon: -84.00907
+      distance_mi: 35.3
+      bearing: ESE
+      tracked_plane_presence_in_window: []
+    - airport_code: 05KY
+      icao: null
+      iata: null
+      name: "Cartersville Airport"
+      city: "Paint Lick"
+      region: US-KY
+      country: US
+      type: small_airport
+      elevation_ft: 1070
+      longest_runway_ft: 1270
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 37.53575
+      lon: -84.4073
+      distance_mi: 36.2
+      bearing: SSE
+      tracked_plane_presence_in_window: []
+    - airport_code: 61KY
+      icao: null
+      iata: null
+      name: "Schroder Airport"
+      city: Owenton
+      region: US-KY
+      country: US
+      type: small_airport
+      elevation_ft: 910
+      longest_runway_ft: 1900
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 38.5501
+      lon: -84.7633
+      distance_mi: 36.6
+      bearing: NNW
+      tracked_plane_presence_in_window: []
+    - airport_code: 40KY
+      icao: null
+      iata: null
+      name: "Rooster Field"
+      city: Shelbyville
+      region: US-KY
+      country: US
+      type: small_airport
+      elevation_ft: 840
+      longest_runway_ft: 2000
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 38.2934
+      lon: -85.205
+      distance_mi: 37.1
+      bearing: WNW
+      tracked_plane_presence_in_window: []
+    - airport_code: 6KY3
+      icao: null
+      iata: null
+      name: "Flying C Farms Airport"
+      city: Shelbyville
+      region: US-KY
+      country: US
+      type: small_airport
+      elevation_ft: 850
+      longest_runway_ft: 2250
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 38.32861
+      lon: -85.21417
+      distance_mi: 38.7
+      bearing: WNW
+      tracked_plane_presence_in_window: []
+    - airport_code: 4KY5
+      icao: null
+      iata: null
+      name: "Weavers Run Airport"
+      city: "West Point"
+      region: US-KY
+      country: US
+      type: small_airport
+      elevation_ft: 550
+      longest_runway_ft: 750
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 38.0286
+      lon: -83.89
+      distance_mi: 39.0
+      bearing: E
+      tracked_plane_presence_in_window: []
+    - airport_code: 36KY
+      icao: null
+      iata: null
+      name: "Arnolds Airport"
+      city: Springfield
+      region: US-KY
+      country: US
+      type: small_airport
+      elevation_ft: 843
+      longest_runway_ft: 2250
+      longest_runway_surface: TURF-F
+      runway_count: 2
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 37.6556
+      lon: -85.1538
+      distance_mi: 39.7
+      bearing: SW
+      tracked_plane_presence_in_window: []
+    - airport_code: 58KY
+      icao: null
+      iata: null
+      name: "Willow Island Airpark"
+      city: Finchville
+      region: US-KY
+      country: US
+      type: small_airport
+      elevation_ft: 740
+      longest_runway_ft: 1300
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 38.1209
+      lon: -85.3319
+      distance_mi: 39.9
+      bearing: W
+      tracked_plane_presence_in_window: []
+tracked_plane_presence:
+  # Was any tracked aircraft on the ground at any field in the list above,
+  # inside the window? Three registers are searched and kept apart, strongest
+  # first. NEVER collapse them into one number.
+  window:
+    from: 2023-03-06
+    to: 2023-03-10
+    days_each_side: 2
+  any_found: false
+  egyptian_su_found: false
+  counts:
+    adsb_ground_contacts: 0
+    adsb_ground_contacts_egyptian_su: 0
+    flights_csv_stays: 0
+    flights_csv_stays_egyptian_su: 0
+    claimed_overlaps: 0
+  from_adsb_traces: []
+  from_flights_csv: []
+  from_overlaps_csv: []
+  just_outside_the_radius:
+    # A hard radius creates a cliff and a cliff hides evidence. These fields
+    # sit between 40 and 60 miles from the arrival airport. They are NOT counted
+    # as hits and must never be published as ones - they are here so a near miss
+    # is visible rather than silently dropped.
+    outer_radius_miles: 60.0
+    adsb_ground_contacts: []
+    flights_csv_stays: []
+    claimed_overlaps: []
+  coverage:
+    # AN EMPTY RESULT ABOVE IS NOT A FINDING UNLESS THIS SAYS THE DAYS WERE HELD.
+    # aircraft_days_needed = tails x days in the window. aircraft_days_held is
+    # how many of those this repo actually has a trace for. The rest were never
+    # pulled, or the networks heard nothing - the two are indistinguishable here.
+    aircraft_days_needed: 75
+    aircraft_days_held: 0
+    coverage_pct: 0.0
+    tails_with_no_trace_in_window:
+      - N102DZ
+      - N1098L
+      - N2100L
+      - N40JD
+      - N560TW
+      - N582MM
+      - N59906
+      - N872RA
+      - N888KG
+      - SU-BGM
+      - SU-BND
+      - SU-BTT
+      - SU-BTU
+      - SU-BTV
+      - T7-ELL
+    by_side:
+      following:
+        # FOLLOWING is the side the claim is about - the Egyptian SU- tails.
+        # This percentage is the one that decides whether an empty result means
+        # anything at all.
+        tails: 6
+        aircraft_days_needed: 30
+        aircraft_days_held: 0
+        coverage_pct: 0.0
+      kirk:
+        # KIRK-side coverage is what turns an ESTIMATED arrival into an
+        # OBSERVED one. Low here means the arrival times above stay estimates.
+        tails: 6
+        aircraft_days_needed: 30
+        aircraft_days_held: 0
+        coverage_pct: 0.0
+      n1098l:
+        # Other tracked aircraft. A DIFFERENT CLAIM - do not merge the threads.
+        tails: 3
+        aircraft_days_needed: 15
+        aircraft_days_held: 0
+        coverage_pct: 0.0
+counterargument:
+  - "ONE PAIRING IS NOT EVIDENCE. The claim under test is a repetition across many stops, and any single pairing has an innocent explanation a reader will find."
+  - "A field inside the radius is a field a jet COULD have used. Nothing here shows that anyone did use it, or that two aircraft on one ramp had any connection."
+  - "Maintenance is the strongest innocent explanation in this record: Duncan Aviation (Provo and Lincoln) and Yingling (Wichita) are Part 145 Falcon and Gulfstream shops, and a Falcon 7X sitting for weeks at one reads as a maintenance visit."
+  - "Transatlantic customs and fuel stops explain the recurring East Coast fields."
+  - "ERIKA'S SIDE IS THE WEAK SIDE. Her flight logs are reported erased, so any Erika pairing rests on the foreign aircraft's track plus a CLAIMED location for her. See /Planes/Erika-Flight-Logs-Erased."
+what_we_do_not_know:
+  - "Whether Charlie Kirk, Erika Kirk, or any TPUSA party actually flew to this event, or which aircraft they used. The arrival airport above is an inference from the venue city, not a record."
+  - "Whether the estimated arrival and departure times are within hours or within days of the truth, wherever observed_by_adsb is empty."
+  - "What the tracked aircraft were doing at any field they appear at. A trace proves presence, never purpose and never occupancy."
+  - "Whether the receiver networks simply did not hear an aircraft that was there. See the coverage block - an absence is not a finding."

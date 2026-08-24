@@ -1,0 +1,1302 @@
+# GENERATED FILE - regenerate, do not hand-edit.
+#   node/python: apis/public_open_source/code/airports_near.py --only 20250922_minneapolis
+#   The prompt that governs this file: prompts/p_airports_near.md
+schema: ck.speaking.airports_near/1
+generated_utc: "2026-08-24T19:03:27Z"
+generated_by: site/docs/Planes/following/apis/public_open_source/code/airports_near.py
+page:
+  slug: 20250922_minneapolis
+  mdx: site/docs/Planes/following/speaking/20250922_minneapolis.mdx
+  yaml: site/docs/Planes/following/speaking/20250922_minneapolis.yaml
+  url: /Planes/following/speaking/20250922_minneapolis
+event:
+  title: "Turning Point Tour (resumed) — University of Minnesota Twin Cities"
+  who: TPUSA
+  attendee_class: TPUSA_NO_KIRK
+  charlie_present: no_deceased
+  erika_present: unknown
+  attendance_status: held_after_death
+  event_type: campus
+  dates:
+    raw: 2025-09-22
+    first_day: 2025-09-22
+    last_day: 2025-09-22
+    granularity: DAY
+    certainty: AFTER_DEATH
+    # PODCAST_PROXY means the date is a podcast RELEASE date and the event was normally 0-7 days earlier. Never publish a same-day claim off one.
+  local_time:
+    raw: null
+    parsed_hhmm: null
+    basis: no_time_published
+    timezone: America/Chicago
+    timezone_method: timezonefinder
+  location:
+    city: Minneapolis
+    state: MN
+    country: USA
+    venue: "University of Minnesota Twin Cities"
+    metro_area: "Minneapolis-St Paul MN"
+    geocode:
+      lat: 44.96332
+      lon: -93.26832
+      method: us_census_2024_gazetteer
+      matched: "Minneapolis city"
+  source: "NewsNation 25 Sep 2025; NY Post 22 Sep 2025; USA Today 22 Sep 2025"
+  source_url: "https://www.newsnationnow.com/politics/turning-point-usa-resumes-charlie-kirks-college-campus-tour/"
+  days_before_sept10_2025: -12
+search:
+  radius_miles: 40
+  window_days_each_side: 2
+  window_from: 2025-09-20
+  window_to: 2025-09-24
+  window_day_count: 5
+  centre: KMSP
+  tails_searched:
+    - N102DZ
+    - N1098L
+    - N2100L
+    - N40JD
+    - N560TW
+    - N582MM
+    - N59906
+    - N872RA
+    - N888KG
+    - SU-BGM
+    - SU-BND
+    - SU-BTT
+    - SU-BTU
+    - SU-BTV
+    - T7-ELL
+  sources_searched:
+    - "recovered ADS-B traces on disk (site/docs/Planes/<TAIL>/data/recovered/)"
+    - site/docs/Planes/following/flights.csv
+    - site/docs/Planes/following/overlaps.csv
+arrival_airport:
+  # ESTIMATE. No published Kirk-side flight record exists for this event unless
+  # the observed_by_adsb block below is non-empty. This is arithmetic on the
+  # event time, not a landing record.
+  chosen_airport:
+    airport_code: KMSP
+    icao: KMSP
+    iata: MSP
+    name: "Minneapolis–Saint Paul International Airport / Wold–Chamberlain Field"
+    city: Minneapolis
+    region: US-MN
+    country: US
+    type: large_airport
+    elevation_ft: 841
+    longest_runway_ft: 11006
+    longest_runway_surface: CON
+    runway_count: 4
+    runways_lighted: true
+    scheduled_service: true
+    jet_capability: jet_capable
+    lat: 44.88008
+    lon: -93.22174
+    distance_mi: 6.2
+    bearing: SSE
+  distance_from_event_city_mi: 6.2
+  selection_basis: CURATED_CSV_AND_COMPUTED_NEAREST_JET_FIELD_AGREE
+  curated_value_in_tpusa_events_csv:
+    airport_code: KMSP
+    airport_name: "Minneapolis-St Paul International"
+    distance_mi: 8
+  computed_nearest_jet_capable_field:
+    airport_code: KMSP
+    name: "Minneapolis–Saint Paul International Airport / Wold–Chamberlain Field"
+    distance_mi: 6.2
+    longest_runway_ft: 11006
+  estimated_arrival:
+    date: 2025-09-22
+    local_time: "16:00"
+    timezone: America/Chicago
+    utc: "2025-09-22T21:00:00Z"
+    basis: "no event time published; 19:00 local assumed for arithmetic only; minus 3h"
+    confidence: low
+  estimated_departure:
+    date: 2025-09-22
+    local_time: "23:00"
+    timezone: America/Chicago
+    utc: "2025-09-23T04:00:00Z"
+    basis: "event end + 4h (speech, exit, wheels-up)"
+    confidence: low
+  observed_by_adsb: []
+  observed_by_adsb_note: "NO Kirk-side aircraft is on disk on the ground within 40 miles of KMSP in this window. The arrival and departure above stay estimates."
+airports_within_radius:
+  # Every field a private jet could physically use within the radius.
+  # Heliports, seaplane bases, balloonports and closed fields are excluded -
+  # a business jet cannot use any of them. Everything else is kept, including
+  # every small strip with no scheduled service: those are the point of the sweep.
+  radius_miles: 40
+  centre_airport: KMSP
+  count: 54
+  jet_capable_count: 6
+  light_jet_capable_count: 3
+  no_scheduled_service_count: 53
+  source: "OurAirports (CC0) airports.csv + runways.csv"
+  list:
+    - airport_code: KMSP
+      icao: KMSP
+      iata: MSP
+      name: "Minneapolis–Saint Paul International Airport / Wold–Chamberlain Field"
+      city: Minneapolis
+      region: US-MN
+      country: US
+      type: large_airport
+      elevation_ft: 841
+      longest_runway_ft: 11006
+      longest_runway_surface: CON
+      runway_count: 4
+      runways_lighted: true
+      scheduled_service: true
+      jet_capability: jet_capable
+      lat: 44.88008
+      lon: -93.22174
+      distance_mi: 0.0
+      bearing: N
+      tracked_plane_presence_in_window: []
+    - airport_code: KSTP
+      icao: KSTP
+      iata: STP
+      name: "Saint Paul Downtown Holman Field"
+      city: "Saint Paul"
+      region: US-MN
+      country: US
+      type: medium_airport
+      elevation_ft: 705
+      longest_runway_ft: 6491
+      longest_runway_surface: ASP
+      runway_count: 3
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: jet_capable
+      lat: 44.93479
+      lon: -93.06004
+      distance_mi: 8.8
+      bearing: ENE
+      tracked_plane_presence_in_window: []
+    - airport_code: KSGS
+      icao: null
+      iata: null
+      name: "South St Paul Municipal Airport/Richard E Fleming Field"
+      city: "South St Paul"
+      region: US-MN
+      country: US
+      type: small_airport
+      elevation_ft: 821
+      longest_runway_ft: 4002
+      longest_runway_surface: ASP
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: light_jet_capable
+      lat: 44.8571
+      lon: -93.0329
+      distance_mi: 9.4
+      bearing: E
+      tracked_plane_presence_in_window: []
+    - airport_code: 35MN
+      icao: null
+      iata: null
+      name: "Wipline Airport"
+      city: "Inver Grove Heights"
+      region: US-MN
+      country: US
+      type: small_airport
+      elevation_ft: 687
+      longest_runway_ft: 2300
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 44.8155
+      lon: -93.0135
+      distance_mi: 11.1
+      bearing: ESE
+      tracked_plane_presence_in_window: []
+    - airport_code: KFCM
+      icao: KFCM
+      iata: FCM
+      name: "Flying Cloud Airport"
+      city: Minneapolis
+      region: US-MN
+      country: US
+      type: small_airport
+      elevation_ft: 906
+      longest_runway_ft: 5001
+      longest_runway_surface: ASP
+      runway_count: 3
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: jet_capable
+      lat: 44.8272
+      lon: -93.4571
+      distance_mi: 12.1
+      bearing: WSW
+      tracked_plane_presence_in_window: []
+    - airport_code: KMIC
+      icao: KMIC
+      iata: MIC
+      name: "Crystal Airport"
+      city: Minneapolis
+      region: US-MN
+      country: US
+      type: small_airport
+      elevation_ft: 869
+      longest_runway_ft: 3751
+      longest_runway_surface: ASP
+      runway_count: 3
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: marginal
+      lat: 45.062
+      lon: -93.3539
+      distance_mi: 14.1
+      bearing: NNW
+      tracked_plane_presence_in_window: []
+    - airport_code: 69MY
+      icao: null
+      iata: null
+      name: "Hall Airport"
+      city: Farmington
+      region: US-MN
+      country: US
+      type: small_airport
+      elevation_ft: 875
+      longest_runway_ft: 2600
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 44.6611
+      lon: -93.1002
+      distance_mi: 16.3
+      bearing: SSE
+      tracked_plane_presence_in_window: []
+    - airport_code: KLVN
+      icao: null
+      iata: null
+      name: "Airlake Airport"
+      city: Minneapolis
+      region: US-MN
+      country: US
+      type: small_airport
+      elevation_ft: 960
+      longest_runway_ft: 4099
+      longest_runway_surface: ASP
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: light_jet_capable
+      lat: 44.6279
+      lon: -93.2281
+      distance_mi: 17.4
+      bearing: S
+      tracked_plane_presence_in_window: []
+    - airport_code: KANE
+      icao: null
+      iata: null
+      name: "Anoka County-Blaine (Janes Field) Airport"
+      city: Minneapolis
+      region: US-MN
+      country: US
+      type: small_airport
+      elevation_ft: 912
+      longest_runway_ft: 5000
+      longest_runway_surface: ASP
+      runway_count: 2
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: jet_capable
+      lat: 45.145
+      lon: -93.2114
+      distance_mi: 18.3
+      bearing: N
+      tracked_plane_presence_in_window: []
+    - airport_code: US-4121
+      icao: null
+      iata: null
+      name: "Radke Airport"
+      city: Hastings
+      region: US-MN
+      country: US
+      type: small_airport
+      elevation_ft: null
+      longest_runway_ft: null
+      longest_runway_surface: null
+      runway_count: 0
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: unknown
+      lat: 44.8433
+      lon: -92.84427
+      distance_mi: 18.7
+      bearing: E
+      tracked_plane_presence_in_window: []
+    - airport_code: MN24
+      icao: null
+      iata: null
+      name: "Surfside Airport"
+      city: "Circle Pines"
+      region: US-MN
+      country: US
+      type: small_airport
+      elevation_ft: 890
+      longest_runway_ft: 1900
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 45.15
+      lon: -93.1169
+      distance_mi: 19.3
+      bearing: NNE
+      tracked_plane_presence_in_window: []
+    - airport_code: K21D
+      icao: null
+      iata: null
+      name: "Lake Elmo Airport"
+      city: "St Paul"
+      region: US-MN
+      country: US
+      type: small_airport
+      elevation_ft: 933
+      longest_runway_ft: 3504
+      longest_runway_surface: ASPH-G
+      runway_count: 2
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: marginal
+      lat: 44.9975
+      lon: -92.8557
+      distance_mi: 19.7
+      bearing: ENE
+      tracked_plane_presence_in_window: []
+    - airport_code: 6MN9
+      icao: null
+      iata: null
+      name: "Benson Airport"
+      city: "White Bear Township"
+      region: US-MN
+      country: US
+      type: small_airport
+      elevation_ft: 942
+      longest_runway_ft: 2000
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 45.1166
+      lon: -92.996
+      distance_mi: 19.7
+      bearing: NE
+      tracked_plane_presence_in_window: []
+    - airport_code: US-4461
+      icao: null
+      iata: null
+      name: "Smith Field"
+      city: Elko
+      region: US-MN
+      country: US
+      type: small_airport
+      elevation_ft: 958
+      longest_runway_ft: null
+      longest_runway_surface: null
+      runway_count: 0
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: unknown
+      lat: 44.62337
+      lon: -93.40123
+      distance_mi: 19.8
+      bearing: SSW
+      tracked_plane_presence_in_window: []
+    - airport_code: MY97
+      icao: null
+      iata: null
+      name: "Nielsen's Airport"
+      city: Farmington
+      region: US-MN
+      country: US
+      type: small_airport
+      elevation_ft: 990
+      longest_runway_ft: 2000
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 44.59914
+      lon: -93.12758
+      distance_mi: 20.0
+      bearing: SSE
+      tracked_plane_presence_in_window: []
+    - airport_code: MY35
+      icao: null
+      iata: null
+      name: "Walker Field"
+      city: Afton
+      region: US-MN
+      country: US
+      type: small_airport
+      elevation_ft: 902
+      longest_runway_ft: 2200
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 44.9335
+      lon: -92.8177
+      distance_mi: 20.1
+      bearing: E
+      tracked_plane_presence_in_window: []
+    - airport_code: MN67
+      icao: null
+      iata: null
+      name: "Sky Park Airport"
+      city: Jordan
+      region: US-MN
+      country: US
+      type: small_airport
+      elevation_ft: 940
+      longest_runway_ft: 3400
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 44.6597
+      lon: -93.5183
+      distance_mi: 21.1
+      bearing: SW
+      tracked_plane_presence_in_window: []
+    - airport_code: MN58
+      icao: null
+      iata: null
+      name: "Sky Meadow Airport"
+      city: Hastings
+      region: US-MN
+      country: US
+      type: small_airport
+      elevation_ft: 820
+      longest_runway_ft: 2300
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 44.6981
+      lon: -92.86514
+      distance_mi: 21.5
+      bearing: SE
+      tracked_plane_presence_in_window: []
+    - airport_code: MY18
+      icao: null
+      iata: null
+      name: "Lino Air Park"
+      city: "Lino Lakes"
+      region: US-MN
+      country: US
+      type: small_airport
+      elevation_ft: 907
+      longest_runway_ft: 2383
+      longest_runway_surface: TURF-G
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 45.1872
+      lon: -93.1305
+      distance_mi: 21.7
+      bearing: NNE
+      tracked_plane_presence_in_window: []
+    - airport_code: 42MN
+      icao: null
+      iata: null
+      name: "Kral's Personal Use Landing Field"
+      city: Corcoran
+      region: US-MN
+      country: US
+      type: small_airport
+      elevation_ft: 990
+      longest_runway_ft: 1700
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 45.0841
+      lon: -93.5644
+      distance_mi: 21.9
+      bearing: NW
+      tracked_plane_presence_in_window: []
+    - airport_code: MN45
+      icao: null
+      iata: null
+      name: "Jennrich Field"
+      city: Farmington
+      region: US-MN
+      country: US
+      type: small_airport
+      elevation_ft: 951
+      longest_runway_ft: 2500
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 44.5661
+      lon: -93.1322
+      distance_mi: 22.1
+      bearing: SSE
+      tracked_plane_presence_in_window: []
+    - airport_code: 6WI2
+      icao: null
+      iata: null
+      name: "St Croix Riviera Airport"
+      city: "River Falls"
+      region: US-WI
+      country: US
+      type: small_airport
+      elevation_ft: 895
+      longest_runway_ft: 1700
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 44.8439
+      lon: -92.7558
+      distance_mi: 23.0
+      bearing: E
+      tracked_plane_presence_in_window: []
+    - airport_code: MY02
+      icao: null
+      iata: null
+      name: "Demmers Field"
+      city: Jordan
+      region: US-MN
+      country: US
+      type: small_airport
+      elevation_ft: 900
+      longest_runway_ft: 1138
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 44.63224
+      lon: -93.54036
+      distance_mi: 23.2
+      bearing: SW
+      tracked_plane_presence_in_window: []
+    - airport_code: MN69
+      icao: null
+      iata: null
+      name: "Maple Airport"
+      city: "Maple Plain"
+      region: US-MN
+      country: US
+      type: small_airport
+      elevation_ft: 1026
+      longest_runway_ft: 3400
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 45.0027
+      lon: -93.6719
+      distance_mi: 23.6
+      bearing: WNW
+      tracked_plane_presence_in_window: []
+    - airport_code: 49MN
+      icao: null
+      iata: null
+      name: "Willow Ridge Airport"
+      city: Hastings
+      region: US-MN
+      country: US
+      type: small_airport
+      elevation_ft: 839
+      longest_runway_ft: 2200
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 44.67141
+      lon: -92.82717
+      distance_mi: 24.1
+      bearing: SE
+      tracked_plane_presence_in_window: []
+    - airport_code: MN63
+      icao: null
+      iata: null
+      name: "Stocker Private Airport"
+      city: Jordan
+      region: US-MN
+      country: US
+      type: small_airport
+      elevation_ft: 855
+      longest_runway_ft: 2000
+      longest_runway_surface: TURF
+      runway_count: 3
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 44.68458
+      lon: -93.63746
+      distance_mi: 24.5
+      bearing: WSW
+      tracked_plane_presence_in_window: []
+    - airport_code: US-7427
+      icao: null
+      iata: null
+      name: "Backstrom Airport"
+      city: "New Trier"
+      region: US-MN
+      country: US
+      type: small_airport
+      elevation_ft: 980
+      longest_runway_ft: null
+      longest_runway_surface: null
+      runway_count: 0
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: unknown
+      lat: 44.58305
+      lon: -92.94414
+      distance_mi: 24.6
+      bearing: SSE
+      tracked_plane_presence_in_window: []
+    - airport_code: MN66
+      icao: null
+      iata: null
+      name: "Ingleside Airport"
+      city: Loretto
+      region: US-MN
+      country: US
+      type: small_airport
+      elevation_ft: 1021
+      longest_runway_ft: 1700
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 45.0631
+      lon: -93.6523
+      distance_mi: 24.6
+      bearing: WNW
+      tracked_plane_presence_in_window: []
+    - airport_code: 1MN8
+      icao: null
+      iata: null
+      name: "Sky Harbor Residential Airpark"
+      city: Webster
+      region: US-MN
+      country: US
+      type: small_airport
+      elevation_ft: 1111
+      longest_runway_ft: 2755
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 44.52567
+      lon: -93.32744
+      distance_mi: 25.0
+      bearing: SSW
+      tracked_plane_presence_in_window: []
+    - airport_code: MN87
+      icao: null
+      iata: null
+      name: "Cooks Landing Airport"
+      city: "Ham Lake"
+      region: US-MN
+      country: US
+      type: small_airport
+      elevation_ft: 895
+      longest_runway_ft: 1070
+      longest_runway_surface: GRS
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 45.2436
+      lon: -93.2217
+      distance_mi: 25.1
+      bearing: N
+      tracked_plane_presence_in_window: []
+    - airport_code: 1MN5
+      icao: null
+      iata: null
+      name: "Molnau Airpark"
+      city: Waconia
+      region: US-MN
+      country: US
+      type: small_airport
+      elevation_ft: 1000
+      longest_runway_ft: 2700
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 44.84387
+      lon: -93.73608
+      distance_mi: 25.3
+      bearing: W
+      tracked_plane_presence_in_window: []
+    - airport_code: 27WI
+      icao: null
+      iata: null
+      name: "Tegeler Airport"
+      city: Prescott
+      region: US-WI
+      country: US
+      type: small_airport
+      elevation_ft: 950
+      longest_runway_ft: null
+      longest_runway_surface: null
+      runway_count: 0
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: unknown
+      lat: 44.8077
+      lon: -92.7138
+      distance_mi: 25.4
+      bearing: E
+      tracked_plane_presence_in_window: []
+    - airport_code: K25D
+      icao: null
+      iata: null
+      name: "Forest Lake Airport"
+      city: "Forest Lake"
+      region: US-MN
+      country: US
+      type: small_airport
+      elevation_ft: 925
+      longest_runway_ft: 2700
+      longest_runway_surface: TURF-G
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 45.2477
+      lon: -92.9944
+      distance_mi: 27.7
+      bearing: NNE
+      tracked_plane_presence_in_window: []
+    - airport_code: 9MN6
+      icao: null
+      iata: null
+      name: "Merill L Harris Field"
+      city: Jordan
+      region: US-MN
+      country: US
+      type: small_airport
+      elevation_ft: 800
+      longest_runway_ft: 2500
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 44.64422
+      lon: -93.70076
+      distance_mi: 28.6
+      bearing: SW
+      tracked_plane_presence_in_window: []
+    - airport_code: US-8414
+      icao: null
+      iata: null
+      name: "Ries Farms Runway"
+      city: Hastings
+      region: US-MN
+      country: US
+      type: small_airport
+      elevation_ft: 980
+      longest_runway_ft: 2000
+      longest_runway_surface: GVL
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 44.61208
+      lon: -92.76691
+      distance_mi: 29.0
+      bearing: SE
+      tracked_plane_presence_in_window: []
+    - airport_code: US-1159
+      icao: null
+      iata: null
+      name: "STOL Airport"
+      city: Prescott
+      region: US-WI
+      country: US
+      type: small_airport
+      elevation_ft: 980
+      longest_runway_ft: null
+      longest_runway_surface: null
+      runway_count: 0
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: unknown
+      lat: 44.69187
+      lon: -92.68028
+      distance_mi: 29.6
+      bearing: ESE
+      tracked_plane_presence_in_window: []
+    - airport_code: 02WI
+      icao: null
+      iata: null
+      name: "Beer Airport"
+      city: Hudson
+      region: US-WI
+      country: US
+      type: small_airport
+      elevation_ft: 920
+      longest_runway_ft: 2200
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 45.0319
+      lon: -92.6558
+      distance_mi: 29.6
+      bearing: ENE
+      tracked_plane_presence_in_window: []
+    - airport_code: KSYN
+      icao: KSYN
+      iata: SYN
+      name: "Stanton Airfield"
+      city: Dennison
+      region: US-MN
+      country: US
+      type: small_airport
+      elevation_ft: 920
+      longest_runway_ft: 2582
+      longest_runway_surface: "GRASS / SOD"
+      runway_count: 2
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 44.47558
+      lon: -93.01676
+      distance_mi: 29.7
+      bearing: SSE
+      tracked_plane_presence_in_window: []
+    - airport_code: MN19
+      icao: null
+      iata: null
+      name: "Brandt Airport"
+      city: Delano
+      region: US-MN
+      country: US
+      type: small_airport
+      elevation_ft: 930
+      longest_runway_ft: 1500
+      longest_runway_surface: GRS
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 45.0473
+      lon: -93.8364
+      distance_mi: 32.2
+      bearing: WNW
+      tracked_plane_presence_in_window: []
+    - airport_code: US-0052
+      icao: null
+      iata: null
+      name: "Joyner Airport"
+      city: Monticello
+      region: US-MN
+      country: US
+      type: small_airport
+      elevation_ft: 940
+      longest_runway_ft: null
+      longest_runway_surface: null
+      runway_count: 0
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: unknown
+      lat: 45.3166
+      lon: -93.47189
+      distance_mi: 32.5
+      bearing: NNW
+      tracked_plane_presence_in_window: []
+    - airport_code: 47MN
+      icao: null
+      iata: null
+      name: "Sons Private-Commercial Airport"
+      city: "Norwood Young America"
+      region: US-MN
+      country: US
+      type: small_airport
+      elevation_ft: 1000
+      longest_runway_ft: 2100
+      longest_runway_surface: TURF-G
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 44.7053
+      lon: -93.85495
+      distance_mi: 33.3
+      bearing: WSW
+      tracked_plane_presence_in_window: []
+    - airport_code: WS41
+      icao: null
+      iata: null
+      name: "Rusmar Farms Airport"
+      city: Roberts
+      region: US-WI
+      country: US
+      type: small_airport
+      elevation_ft: 1050
+      longest_runway_ft: 1500
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 45.0122
+      lon: -92.5513
+      distance_mi: 34.0
+      bearing: ENE
+      tracked_plane_presence_in_window: []
+    - airport_code: MN49
+      icao: null
+      iata: null
+      name: "Tuma Private Airport"
+      city: Montgomery
+      region: US-MN
+      country: US
+      type: small_airport
+      elevation_ft: 1100
+      longest_runway_ft: 2200
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 44.4239
+      lon: -93.4844
+      distance_mi: 34.1
+      bearing: SSW
+      tracked_plane_presence_in_window: []
+    - airport_code: US-4700
+      icao: null
+      iata: null
+      name: "Edberg Airport"
+      city: "Cannon Falls"
+      region: US-MN
+      country: US
+      type: small_airport
+      elevation_ft: 912
+      longest_runway_ft: null
+      longest_runway_surface: null
+      runway_count: 0
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: unknown
+      lat: 44.41701
+      lon: -92.92713
+      distance_mi: 35.1
+      bearing: SSE
+      tracked_plane_presence_in_window: []
+    - airport_code: 3MN9
+      icao: null
+      iata: null
+      name: "Schumacher Airport"
+      city: Oster
+      region: US-MN
+      country: US
+      type: small_airport
+      elevation_ft: 1020
+      longest_runway_ft: 2100
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 44.9844
+      lon: -93.9361
+      distance_mi: 35.7
+      bearing: WNW
+      tracked_plane_presence_in_window: []
+    - airport_code: KCFE
+      icao: null
+      iata: null
+      name: "Buffalo Municipal Airport"
+      city: Buffalo
+      region: US-MN
+      country: US
+      type: small_airport
+      elevation_ft: 967
+      longest_runway_ft: 3200
+      longest_runway_surface: ASPH-G
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: marginal
+      lat: 45.159
+      lon: -93.8433
+      distance_mi: 36.0
+      bearing: WNW
+      tracked_plane_presence_in_window: []
+    - airport_code: WI29
+      icao: null
+      iata: null
+      name: "Rush River Airport"
+      city: Baldwin
+      region: US-WI
+      country: US
+      type: small_airport
+      elevation_ft: 1078
+      longest_runway_ft: 2600
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 44.9055
+      lon: -92.4835
+      distance_mi: 36.2
+      bearing: E
+      tracked_plane_presence_in_window: []
+    - airport_code: MN40
+      icao: null
+      iata: null
+      name: "Meadowvale Airport"
+      city: "Elk River"
+      region: US-MN
+      country: US
+      type: small_airport
+      elevation_ft: 950
+      longest_runway_ft: 1500
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 45.3625
+      lon: -93.5886
+      distance_mi: 37.8
+      bearing: NNW
+      tracked_plane_presence_in_window: []
+    - airport_code: KRNH
+      icao: KRNH
+      iata: RNH
+      name: "New Richmond Regional Airport"
+      city: "New Richmond"
+      region: US-WI
+      country: US
+      type: medium_airport
+      elevation_ft: 998
+      longest_runway_ft: 5507
+      longest_runway_surface: ASP
+      runway_count: 2
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: jet_capable
+      lat: 45.1483
+      lon: -92.5381
+      distance_mi: 38.2
+      bearing: ENE
+      tracked_plane_presence_in_window: []
+    - airport_code: KFBL
+      icao: KFBL
+      iata: FBL
+      name: "Faribault Municipal Airport-Liz Wall Strohfus Field"
+      city: Faribault
+      region: US-MN
+      country: US
+      type: small_airport
+      elevation_ft: 1060
+      longest_runway_ft: 4257
+      longest_runway_surface: ASP
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: light_jet_capable
+      lat: 44.32844
+      lon: -93.31253
+      distance_mi: 38.4
+      bearing: S
+      tracked_plane_presence_in_window: []
+    - airport_code: WS30
+      icao: null
+      iata: null
+      name: "Hexum Flight Park Ultralightport"
+      city: "Star Prairie"
+      region: US-WI
+      country: US
+      type: small_airport
+      elevation_ft: 930
+      longest_runway_ft: 702
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 45.1891
+      lon: -92.5483
+      distance_mi: 39.2
+      bearing: ENE
+      tracked_plane_presence_in_window: []
+    - airport_code: KOEO
+      icao: KOEO
+      iata: OEO
+      name: "L O Simenstad Municipal Airport"
+      city: Osceola
+      region: US-WI
+      country: US
+      type: small_airport
+      elevation_ft: 903
+      longest_runway_ft: 5006
+      longest_runway_surface: ASP
+      runway_count: 2
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: jet_capable
+      lat: 45.31
+      lon: -92.6919
+      distance_mi: 39.4
+      bearing: NE
+      tracked_plane_presence_in_window: []
+    - airport_code: WN86
+      icao: null
+      iata: null
+      name: "St Croix Valley Airport"
+      city: Osceola
+      region: US-WI
+      country: US
+      type: small_airport
+      elevation_ft: 1085
+      longest_runway_ft: 3800
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 45.2639
+      lon: -92.6216
+      distance_mi: 39.5
+      bearing: NE
+      tracked_plane_presence_in_window: []
+    - airport_code: MY95
+      icao: null
+      iata: null
+      name: "Swanson Field"
+      city: Crown
+      region: US-MN
+      country: US
+      type: small_airport
+      elevation_ft: 935
+      longest_runway_ft: 2600
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 45.4464
+      lon: -93.3828
+      distance_mi: 39.9
+      bearing: NNW
+      tracked_plane_presence_in_window: []
+tracked_plane_presence:
+  # Was any tracked aircraft on the ground at any field in the list above,
+  # inside the window? Three registers are searched and kept apart, strongest
+  # first. NEVER collapse them into one number.
+  window:
+    from: 2025-09-20
+    to: 2025-09-24
+    days_each_side: 2
+  any_found: false
+  egyptian_su_found: false
+  counts:
+    adsb_ground_contacts: 0
+    adsb_ground_contacts_egyptian_su: 0
+    flights_csv_stays: 0
+    flights_csv_stays_egyptian_su: 0
+    claimed_overlaps: 0
+  from_adsb_traces: []
+  from_flights_csv: []
+  from_overlaps_csv: []
+  just_outside_the_radius:
+    # A hard radius creates a cliff and a cliff hides evidence. These fields
+    # sit between 40 and 60 miles from the arrival airport. They are NOT counted
+    # as hits and must never be published as ones - they are here so a near miss
+    # is visible rather than silently dropped.
+    outer_radius_miles: 60.0
+    adsb_ground_contacts: []
+    flights_csv_stays: []
+    claimed_overlaps: []
+  coverage:
+    # AN EMPTY RESULT ABOVE IS NOT A FINDING UNLESS THIS SAYS THE DAYS WERE HELD.
+    # aircraft_days_needed = tails x days in the window. aircraft_days_held is
+    # how many of those this repo actually has a trace for. The rest were never
+    # pulled, or the networks heard nothing - the two are indistinguishable here.
+    aircraft_days_needed: 75
+    aircraft_days_held: 0
+    coverage_pct: 0.0
+    tails_with_no_trace_in_window:
+      - N102DZ
+      - N1098L
+      - N2100L
+      - N40JD
+      - N560TW
+      - N582MM
+      - N59906
+      - N872RA
+      - N888KG
+      - SU-BGM
+      - SU-BND
+      - SU-BTT
+      - SU-BTU
+      - SU-BTV
+      - T7-ELL
+    by_side:
+      following:
+        # FOLLOWING is the side the claim is about - the Egyptian SU- tails.
+        # This percentage is the one that decides whether an empty result means
+        # anything at all.
+        tails: 6
+        aircraft_days_needed: 30
+        aircraft_days_held: 0
+        coverage_pct: 0.0
+      kirk:
+        # KIRK-side coverage is what turns an ESTIMATED arrival into an
+        # OBSERVED one. Low here means the arrival times above stay estimates.
+        tails: 6
+        aircraft_days_needed: 30
+        aircraft_days_held: 0
+        coverage_pct: 0.0
+      n1098l:
+        # Other tracked aircraft. A DIFFERENT CLAIM - do not merge the threads.
+        tails: 3
+        aircraft_days_needed: 15
+        aircraft_days_held: 0
+        coverage_pct: 0.0
+counterargument:
+  - "ONE PAIRING IS NOT EVIDENCE. The claim under test is a repetition across many stops, and any single pairing has an innocent explanation a reader will find."
+  - "A field inside the radius is a field a jet COULD have used. Nothing here shows that anyone did use it, or that two aircraft on one ramp had any connection."
+  - "Maintenance is the strongest innocent explanation in this record: Duncan Aviation (Provo and Lincoln) and Yingling (Wichita) are Part 145 Falcon and Gulfstream shops, and a Falcon 7X sitting for weeks at one reads as a maintenance visit."
+  - "Transatlantic customs and fuel stops explain the recurring East Coast fields."
+  - "ERIKA'S SIDE IS THE WEAK SIDE. Her flight logs are reported erased, so any Erika pairing rests on the foreign aircraft's track plus a CLAIMED location for her. See /Planes/Erika-Flight-Logs-Erased."
+what_we_do_not_know:
+  - "Whether Charlie Kirk, Erika Kirk, or any TPUSA party actually flew to this event, or which aircraft they used. The arrival airport above is an inference from the venue city, not a record."
+  - "Whether the estimated arrival and departure times are within hours or within days of the truth, wherever observed_by_adsb is empty."
+  - "What the tracked aircraft were doing at any field they appear at. A trace proves presence, never purpose and never occupancy."
+  - "Whether the receiver networks simply did not hear an aircraft that was there. See the coverage block - an absence is not a finding."

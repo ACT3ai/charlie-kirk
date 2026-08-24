@@ -1,3 +1,17 @@
+---
+displayed_sidebar: docs
+title: "ADS-B gaps for N888KG - claimed flights with no primary trace"
+sidebar_label: "ADS-B gaps"
+description: "Every claimed N888KG flight date that returned no primary ADS-B trace from the adsb.lol globe history archive, with the exact HTTP result and why we looked."
+keywords:
+  - "N888KG"
+  - "ADS-B"
+  - "flight tracking"
+  - "missing flight data"
+image: "/img/docusaurus-social-card.jpg"
+hide_table_of_contents: true
+---
+
 # Claimed flights we could NOT retrieve a primary ADS-B trace for
 
 Generated 2026-08-24T16:03:53.109Z by
@@ -33,3 +47,31 @@ below are already recorded in `overlaps.csv` as audited inaccurate.
 | N888KG | 2025-09-13 | 404 | September 2025 window sweep (kirk side) - not a claimed date, a systematic look |
 | N888KG | 2025-09-14 | 404 | September 2025 window sweep (kirk side) - not a claimed date, a systematic look |
 | N888KG | 2025-09-15 | 404 | September 2025 window sweep (kirk side) - not a claimed date, a systematic look |
+
+{/* CK_PAGE_FOOTER_START */}
+
+## Where this page fits
+
+Twelve September 2025 dates returned nothing for this Challenger 300, and the 10th is deliberately not among them — the [Provo departure and the mid-flight signal gap](/Planes/N888KG/overview) that made this the Provo Vanish are documented from recovered primary data, so the rows above cover the surrounding month rather than the event, at an airport whose ramp activity is tracked separately on [Provo Municipal Airport](/Locations/Provo_Airport). This airframe is formally blocked from public tracking under an FAA programme any owner may join, which is its own explanation for thin archive coverage, and it is a wholly different claim from the [HADES aircraft over UVU](/Proof_Intel_Services/N1098L_HADES_Over_UVU), the [Egyptian jets at Provo](/intelligence/Egyptian_Foreign_Ops) or the [eighteen-month following pattern](/Planes/Following-Charlie-Erika) — separate arguments about separate sets of aircraft, and merging them helps nobody, least of all the [day-of timeline](/Topic-Analyses/September_10_Event_Timeline). The recovery run made this the most instructive case on the site: what looked like the strongest removal anywhere in the investigation dissolved under a control test, and [what a 403 actually means](/Planes/Flight-Data-Recovery/What-A-403-Means) with [per-aircraft recovery status](/Planes/Flight-Data-Recovery/Per-Aircraft-Status) records exactly how, which is why sixty further legs here are logged as recorded-as-nothing rather than as erased.
+
+## Related Areas
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Provo Municipal Airport and its ramp reports](/Locations/Provo_Airport)
+* [Foreign intelligence involvement claims](/Theories/Foreign_Intelligence_Claims)
+* [Kash Patel's public statements on the case](/People/kash-patel)
+
+</div>
+<div>
+
+* [The recovery hub, source by source](/Planes/Flight-Data-Recovery/overview)
+* [How this investigation pulls flight data](/Planes/following/apis/overview)
+* [The timeline hub for the whole case](/Timeline/overview)
+
+</div>
+</div>
+
+{/* CK_PAGE_FOOTER_END */}

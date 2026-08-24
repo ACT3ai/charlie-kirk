@@ -19,6 +19,7 @@
 //   node pull_all.js --apply    do it
 
 import { readFile, mkdir, writeFile } from "node:fs/promises";
+import { readFileSync, existsSync } from "node:fs";
 import { fetchTrace } from "./globe_history.js";
 import { FLEET, byReg } from "./lib/fleet.js";
 
@@ -127,6 +128,69 @@ for (const m of misses) {
   const dirs = [`${PLANES}/${pageDir(m.reg)}/data/adsb`, ...[...m.overlapDirs].map((k) => `${FOLLOW}/overlap/${k}/data`)];
   for (const d of dirs) { if (!byDir.has(d)) byDir.set(d, []); byDir.get(d).push(m); }
 }
+
+// A MISSING_DATA.md page is a real published page on the site, so it carries real
+// frontmatter and a real cross-linking footer. Both are derived from the directory
+// the file lands in. The footer, once a human or an agent has written one, is
+// PRESERVED across regenerations - everything from CK_PAGE_FOOTER_START to the end
+// of the old file is carried forward verbatim. Without this the site-wide
+// "where this page fits" pass would be wiped every time this tool runs.
+const FOOTER_MARK = "{/* CK_PAGE_FOOTER_START */}";
+
+function pageIdentity(dir) {
+  const m = dir.match(/\/Planes\/([^/]+)\/data\/adsb$/);
+  if (m) {
+    const tail = m[1];
+    return {
+      title: `ADS-B gaps for ${tail} - claimed flights with no primary trace`,
+      label: "ADS-B gaps",
+      desc: `Every claimed ${tail} flight date that returned no primary ADS-B trace from the adsb.lol globe history archive, with the exact HTTP result and why we looked.`,
+      keywords: [tail, "ADS-B", "flight tracking", "missing flight data"],
+    };
+  }
+  const o = dir.match(/\/overlap\/([^/]+)\/data$/);
+  if (o) {
+    const key = o[1];
+    return {
+      title: `ADS-B gaps for overlap ${key}`,
+      label: "ADS-B gaps",
+      desc: `Archive lookups that returned no primary ADS-B trace for the aircraft and dates claimed in overlap row ${key}.`,
+      keywords: ["ADS-B", "overlap", "flight tracking", "missing flight data", key],
+    };
+  }
+  return {
+    title: "Claimed flights with no primary ADS-B trace",
+    label: "ADS-B gaps",
+    desc: "Claimed flight dates that returned no primary ADS-B trace from the adsb.lol globe history archive.",
+    keywords: ["ADS-B", "flight tracking", "missing flight data"],
+  };
+}
+
+function frontmatter(dir) {
+  const id = pageIdentity(dir);
+  const q = (v) => JSON.stringify(String(v));
+  return [
+    "---",
+    "displayed_sidebar: docs",
+    `title: ${q(id.title)}`,
+    `sidebar_label: ${q(id.label)}`,
+    `description: ${q(id.desc)}`,
+    "keywords:",
+    ...id.keywords.map((k) => `  - ${q(k)}`),
+    'image: "/img/docusaurus-social-card.jpg"',
+    "hide_table_of_contents: true",
+    "---",
+    "",
+  ];
+}
+
+function keepFooter(file) {
+  if (!existsSync(file)) return "";
+  const prev = readFileSync(file, "utf8");
+  const i = prev.indexOf(FOOTER_MARK);
+  return i === -1 ? "" : "\n" + prev.slice(i).replace(/\s+$/, "") + "\n";
+}
+
 for (const [dir, ms] of byDir) {
   await mkdir(dir, { recursive: true });
   const lines = [
@@ -156,7 +220,8 @@ for (const [dir, ms] of byDir) {
     ...ms.map((m) => `| ${m.reg} | ${m.date} | ${m.status} | ${m.why.join("; ").replace(/\|/g, "/")} |`),
     "",
   ];
-  await writeFile(`${dir}/MISSING_DATA.md`, lines.join("\n"));
+  const file = `${dir}/MISSING_DATA.md`;
+  await writeFile(file, frontmatter(dir).join("\n") + lines.join("\n") + keepFooter(file));
 }
 
 const hit = results.filter((r) => r.points > 0);

@@ -1,0 +1,1362 @@
+# GENERATED FILE - regenerate, do not hand-edit.
+#   node/python: apis/public_open_source/code/airports_near.py --only 20250119_washington
+#   The prompt that governs this file: prompts/p_airports_near.md
+schema: ck.speaking.airports_near/1
+generated_utc: "2026-08-24T19:03:27Z"
+generated_by: site/docs/Planes/following/apis/public_open_source/code/airports_near.py
+page:
+  slug: 20250119_washington
+  mdx: site/docs/Planes/following/speaking/20250119_washington.mdx
+  yaml: site/docs/Planes/following/speaking/20250119_washington.yaml
+  url: /Planes/following/speaking/20250119_washington
+event:
+  title: "Turning Point's Inaugural Eve Ball"
+  who: Charlie
+  attendee_class: CHARLIE_ONLY
+  charlie_present: "yes"
+  erika_present: not_documented
+  attendance_status: held
+  event_type: gala
+  dates:
+    raw: "2025-01-19 to 2025-01-20"
+    first_day: 2025-01-19
+    last_day: 2025-01-20
+    granularity: DAY
+    certainty: EVENT_DATE
+    # PODCAST_PROXY means the date is a podcast RELEASE date and the event was normally 0-7 days earlier. Never publish a same-day claim off one.
+  local_time:
+    raw: null
+    parsed_hhmm: null
+    basis: no_time_published
+    timezone: America/New_York
+    timezone_method: timezonefinder
+  location:
+    city: Washington
+    state: DC
+    country: USA
+    venue: "TPUSA Inaugural Eve Ball, Washington, D.C."
+    metro_area: "Washington DC"
+    geocode:
+      lat: 38.90425
+      lon: -77.01652
+      method: us_census_2024_gazetteer
+      matched: "Washington city"
+  source: "Charlie Kirk Show 2025-01-20 ('Toasts To Victory With JD Vance, Don Jr')"
+  source_url: site/docs/TPUSA/apple_podcast/current_apple_podcast.csv
+  days_before_sept10_2025: 234
+search:
+  radius_miles: 40
+  window_days_each_side: 2
+  window_from: 2025-01-17
+  window_to: 2025-01-22
+  window_day_count: 6
+  centre: KDCA
+  tails_searched:
+    - N102DZ
+    - N1098L
+    - N2100L
+    - N40JD
+    - N560TW
+    - N582MM
+    - N59906
+    - N872RA
+    - N888KG
+    - SU-BGM
+    - SU-BND
+    - SU-BTT
+    - SU-BTU
+    - SU-BTV
+    - T7-ELL
+  sources_searched:
+    - "recovered ADS-B traces on disk (site/docs/Planes/<TAIL>/data/recovered/)"
+    - site/docs/Planes/following/flights.csv
+    - site/docs/Planes/following/overlaps.csv
+arrival_airport:
+  # ESTIMATE. No published Kirk-side flight record exists for this event unless
+  # the observed_by_adsb block below is non-empty. This is arithmetic on the
+  # event time, not a landing record.
+  chosen_airport:
+    airport_code: KDCA
+    icao: KDCA
+    iata: DCA
+    name: "Ronald Reagan Washington National Airport"
+    city: Washington
+    region: US-DC
+    country: US
+    type: large_airport
+    elevation_ft: 15
+    longest_runway_ft: 7169
+    longest_runway_surface: ASP
+    runway_count: 3
+    runways_lighted: true
+    scheduled_service: true
+    jet_capability: jet_capable
+    lat: 38.8521
+    lon: -77.0377
+    distance_mi: 3.8
+    bearing: SSW
+  distance_from_event_city_mi: 3.8
+  selection_basis: CURATED_CSV_AND_COMPUTED_NEAREST_JET_FIELD_AGREE
+  curated_value_in_tpusa_events_csv:
+    airport_code: KDCA
+    airport_name: "Ronald Reagan Washington National"
+    distance_mi: 4
+  computed_nearest_jet_capable_field:
+    airport_code: KDCA
+    name: "Ronald Reagan Washington National Airport"
+    distance_mi: 3.8
+    longest_runway_ft: 7169
+  estimated_arrival:
+    date: 2025-01-19
+    local_time: "16:00"
+    timezone: America/New_York
+    utc: "2025-01-19T21:00:00Z"
+    basis: "no event time published; 19:00 local assumed for arithmetic only; minus 3h"
+    confidence: low
+  estimated_departure:
+    date: 2025-01-20
+    local_time: "23:00"
+    timezone: America/New_York
+    utc: "2025-01-21T04:00:00Z"
+    basis: "event end + 4h (speech, exit, wheels-up)"
+    confidence: low
+  observed_by_adsb: []
+  observed_by_adsb_note: "NO Kirk-side aircraft is on disk on the ground within 40 miles of KDCA in this window. The arrival and departure above stay estimates."
+airports_within_radius:
+  # Every field a private jet could physically use within the radius.
+  # Heliports, seaplane bases, balloonports and closed fields are excluded -
+  # a business jet cannot use any of them. Everything else is kept, including
+  # every small strip with no scheduled service: those are the point of the sweep.
+  radius_miles: 40
+  centre_airport: KDCA
+  count: 57
+  jet_capable_count: 8
+  light_jet_capable_count: 3
+  no_scheduled_service_count: 54
+  source: "OurAirports (CC0) airports.csv + runways.csv"
+  list:
+    - airport_code: KDCA
+      icao: KDCA
+      iata: DCA
+      name: "Ronald Reagan Washington National Airport"
+      city: Washington
+      region: US-DC
+      country: US
+      type: large_airport
+      elevation_ft: 15
+      longest_runway_ft: 7169
+      longest_runway_surface: ASP
+      runway_count: 3
+      runways_lighted: true
+      scheduled_service: true
+      jet_capability: jet_capable
+      lat: 38.8521
+      lon: -77.0377
+      distance_mi: 0.0
+      bearing: N
+      tracked_plane_presence_in_window: []
+    - airport_code: VKX
+      icao: null
+      iata: null
+      name: "Potomac Airfield"
+      city: Friendly
+      region: US-MD
+      country: US
+      type: small_airport
+      elevation_ft: 118
+      longest_runway_ft: 2665
+      longest_runway_surface: "ASPH/ CONC"
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 38.7476
+      lon: -76.9572
+      distance_mi: 8.4
+      bearing: SSE
+      tracked_plane_presence_in_window: []
+    - airport_code: KADW
+      icao: KADW
+      iata: ADW
+      name: "Joint Base Andrews"
+      city: "Camp Springs"
+      region: US-MD
+      country: US
+      type: medium_airport
+      elevation_ft: 280
+      longest_runway_ft: 11301
+      longest_runway_surface: CON
+      runway_count: 2
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: jet_capable
+      lat: 38.8108
+      lon: -76.867
+      distance_mi: 9.6
+      bearing: ESE
+      tracked_plane_presence_in_window: []
+    - airport_code: KCGS
+      icao: KCGS
+      iata: CGS
+      name: "College Park Airport"
+      city: "College Park"
+      region: US-MD
+      country: US
+      type: small_airport
+      elevation_ft: 48
+      longest_runway_ft: 2980
+      longest_runway_surface: ASP
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 38.9806
+      lon: -76.9223
+      distance_mi: 10.8
+      bearing: NE
+      tracked_plane_presence_in_window: []
+    - airport_code: KDAA
+      icao: KDAA
+      iata: DAA
+      name: "Davison Army Air Field"
+      city: "Fort Belvoir"
+      region: US-VA
+      country: US
+      type: medium_airport
+      elevation_ft: 73
+      longest_runway_ft: 5421
+      longest_runway_surface: ASP
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: jet_capable
+      lat: 38.715
+      lon: -77.181
+      distance_mi: 12.2
+      bearing: SW
+      tracked_plane_presence_in_window: []
+    - airport_code: W00
+      icao: null
+      iata: null
+      name: "Freeway Airport"
+      city: Bowie
+      region: US-MD
+      country: US
+      type: small_airport
+      elevation_ft: 168
+      longest_runway_ft: 2420
+      longest_runway_surface: ASPH-G
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 38.9414
+      lon: -76.7724
+      distance_mi: 15.5
+      bearing: ENE
+      tracked_plane_presence_in_window: []
+    - airport_code: K2W5
+      icao: null
+      iata: null
+      name: "Maryland Airport"
+      city: "Indian Head"
+      region: US-MD
+      country: US
+      type: small_airport
+      elevation_ft: 170
+      longest_runway_ft: 3740
+      longest_runway_surface: TURF-F
+      runway_count: 2
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 38.59657
+      lon: -77.07264
+      distance_mi: 17.8
+      bearing: S
+      tracked_plane_presence_in_window: []
+    - airport_code: 02MD
+      icao: null
+      iata: null
+      name: "Garner Field"
+      city: Brandywine
+      region: US-MD
+      country: US
+      type: small_airport
+      elevation_ft: 141
+      longest_runway_ft: 2000
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 38.67254
+      lon: -76.70974
+      distance_mi: 21.6
+      bearing: SE
+      tracked_plane_presence_in_window: []
+    - airport_code: KFME
+      icao: KFME
+      iata: FME
+      name: "Fort Meade Executive Airport"
+      city: "Fort Meade(Odenton)"
+      region: US-MD
+      country: US
+      type: medium_airport
+      elevation_ft: 150
+      longest_runway_ft: 3000
+      longest_runway_surface: ASP
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: marginal
+      lat: 39.0854
+      lon: -76.7594
+      distance_mi: 22.0
+      bearing: NE
+      tracked_plane_presence_in_window: []
+    - airport_code: KGAI
+      icao: KGAI
+      iata: GAI
+      name: "Montgomery County Airpark"
+      city: Gaithersburg
+      region: US-MD
+      country: US
+      type: small_airport
+      elevation_ft: 539
+      longest_runway_ft: 4202
+      longest_runway_surface: ASP
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: light_jet_capable
+      lat: 39.1683
+      lon: -77.166
+      distance_mi: 22.9
+      bearing: NNW
+      tracked_plane_presence_in_window: []
+    - airport_code: MD83
+      icao: null
+      iata: null
+      name: "Ty-Ti-To Airport"
+      city: "La Plata"
+      region: US-MD
+      country: US
+      type: small_airport
+      elevation_ft: 170
+      longest_runway_ft: 2400
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 38.51983
+      lon: -77.06909
+      distance_mi: 23.0
+      bearing: S
+      tracked_plane_presence_in_window: []
+    - airport_code: 3MD4
+      icao: null
+      iata: null
+      name: "Fairview Airport"
+      city: Annapolis
+      region: US-MD
+      country: US
+      type: small_airport
+      elevation_ft: 150
+      longest_runway_ft: 1800
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 38.9776
+      lon: -76.6394
+      distance_mi: 23.1
+      bearing: ENE
+      tracked_plane_presence_in_window: []
+    - airport_code: KIAD
+      icao: KIAD
+      iata: IAD
+      name: "Washington Dulles International Airport"
+      city: Dulles
+      region: US-VA
+      country: US
+      type: large_airport
+      elevation_ft: 312
+      longest_runway_ft: 11500
+      longest_runway_surface: CONC-G
+      runway_count: 4
+      runways_lighted: true
+      scheduled_service: true
+      jet_capability: jet_capable
+      lat: 38.9445
+      lon: -77.4558
+      distance_mi: 23.4
+      bearing: WNW
+      tracked_plane_presence_in_window: []
+    - airport_code: MD05
+      icao: null
+      iata: null
+      name: "Finagin Airfield"
+      city: Welcome
+      region: US-MD
+      country: US
+      type: small_airport
+      elevation_ft: 185
+      longest_runway_ft: 2575
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 38.51092
+      lon: -77.12219
+      distance_mi: 24.0
+      bearing: S
+      tracked_plane_presence_in_window: []
+    - airport_code: US-5683
+      icao: null
+      iata: null
+      name: "Mellomar Airport"
+      city: "Lower Marlboro"
+      region: US-MD
+      country: US
+      type: small_airport
+      elevation_ft: 46
+      longest_runway_ft: null
+      longest_runway_surface: null
+      runway_count: 0
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: unknown
+      lat: 38.652
+      lon: -76.674
+      distance_mi: 24.0
+      bearing: SE
+      tracked_plane_presence_in_window: []
+    - airport_code: MD39
+      icao: null
+      iata: null
+      name: "Buds Ferry Airport"
+      city: "Indian Head"
+      region: US-MD
+      country: US
+      type: small_airport
+      elevation_ft: 50
+      longest_runway_ft: 3000
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 38.521
+      lon: -77.2519
+      distance_mi: 25.6
+      bearing: SSW
+      tracked_plane_presence_in_window: []
+    - airport_code: MD22
+      icao: null
+      iata: null
+      name: "Deale Airport"
+      city: Deale
+      region: US-MD
+      country: US
+      type: small_airport
+      elevation_ft: 15
+      longest_runway_ft: 2000
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 38.7834
+      lon: -76.5647
+      distance_mi: 25.9
+      bearing: E
+      tracked_plane_presence_in_window: []
+    - airport_code: KANP
+      icao: KANP
+      iata: ANP
+      name: "Lee Airport"
+      city: Annapolis
+      region: US-MD
+      country: US
+      type: small_airport
+      elevation_ft: 34
+      longest_runway_ft: 2505
+      longest_runway_surface: ASP
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 38.9429
+      lon: -76.5684
+      distance_mi: 26.0
+      bearing: ENE
+      tracked_plane_presence_in_window: []
+    - airport_code: MD97
+      icao: null
+      iata: null
+      name: "Lanseair Farms Airport"
+      city: "La Plata"
+      region: US-MD
+      country: US
+      type: small_airport
+      elevation_ft: 40
+      longest_runway_ft: 2900
+      longest_runway_surface: ASPH
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 38.4615
+      lon: -77.0464
+      distance_mi: 27.0
+      bearing: S
+      tracked_plane_presence_in_window: []
+    - airport_code: KHEF
+      icao: KHEF
+      iata: MNZ
+      name: "Washington Manassas Harry P. Davis Field"
+      city: Manassas
+      region: US-VA
+      country: US
+      type: medium_airport
+      elevation_ft: 192
+      longest_runway_ft: 6200
+      longest_runway_surface: ASP
+      runway_count: 2
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: jet_capable
+      lat: 38.72302
+      lon: -77.51542
+      distance_mi: 27.2
+      bearing: WSW
+      tracked_plane_presence_in_window: []
+    - airport_code: W50
+      icao: null
+      iata: null
+      name: "Davis Airstrip"
+      city: Laytonsville
+      region: US-MD
+      country: US
+      type: small_airport
+      elevation_ft: 630
+      longest_runway_ft: 2600
+      longest_runway_surface: ASPH-TURF-F
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 39.2445
+      lon: -77.1486
+      distance_mi: 27.8
+      bearing: NNW
+      tracked_plane_presence_in_window: []
+    - airport_code: KNYG
+      icao: KNYG
+      iata: NYG
+      name: "Quantico Marine Corps Airfield / Turner Field"
+      city: Quantico
+      region: US-VA
+      country: US
+      type: medium_airport
+      elevation_ft: 10
+      longest_runway_ft: 4250
+      longest_runway_surface: ASP
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: light_jet_capable
+      lat: 38.5017
+      lon: -77.3053
+      distance_mi: 28.2
+      bearing: SSW
+      tracked_plane_presence_in_window: []
+    - airport_code: MD46
+      icao: null
+      iata: null
+      name: "Glenair Airport"
+      city: Dayton
+      region: US-MD
+      country: US
+      type: small_airport
+      elevation_ft: 590
+      longest_runway_ft: 2200
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 39.2696
+      lon: -77.0053
+      distance_mi: 28.9
+      bearing: N
+      tracked_plane_presence_in_window: []
+    - airport_code: US-8421
+      icao: null
+      iata: null
+      name: "Hunting Creek Farm Airport"
+      city: "Prince Frederick"
+      region: US-MD
+      country: US
+      type: small_airport
+      elevation_ft: 30
+      longest_runway_ft: 1596
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 38.55903
+      lon: -76.64528
+      distance_mi: 29.3
+      bearing: SE
+      tracked_plane_presence_in_window: []
+    - airport_code: MD14
+      icao: null
+      iata: null
+      name: "Robinson Airport"
+      city: Benedict
+      region: US-MD
+      country: US
+      type: small_airport
+      elevation_ft: 20
+      longest_runway_ft: 2600
+      longest_runway_surface: TURF
+      runway_count: 2
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 38.52421
+      lon: -76.68316
+      distance_mi: 29.6
+      bearing: SE
+      tracked_plane_presence_in_window: []
+    - airport_code: VA87
+      icao: null
+      iata: null
+      name: "Valley View Airport"
+      city: Nokesville
+      region: US-VA
+      country: US
+      type: small_airport
+      elevation_ft: 240
+      longest_runway_ft: 2050
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 38.69216
+      lon: -77.55166
+      distance_mi: 29.8
+      bearing: WSW
+      tracked_plane_presence_in_window: []
+    - airport_code: KBWI
+      icao: KBWI
+      iata: BWI
+      name: "Baltimore/Washington International Thurgood Marshall Airport"
+      city: Baltimore
+      region: US-MD
+      country: US
+      type: large_airport
+      elevation_ft: 146
+      longest_runway_ft: 10503
+      longest_runway_surface: ASP
+      runway_count: 3
+      runways_lighted: true
+      scheduled_service: true
+      jet_capability: jet_capable
+      lat: 39.1754
+      lon: -76.6683
+      distance_mi: 29.9
+      bearing: NE
+      tracked_plane_presence_in_window: []
+    - airport_code: 2MD3
+      icao: null
+      iata: null
+      name: "Fly Away Farm Airport"
+      city: Boyds
+      region: US-MD
+      country: US
+      type: small_airport
+      elevation_ft: 501
+      longest_runway_ft: 1000
+      longest_runway_surface: TURF-G
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 39.229
+      lon: -77.34533
+      distance_mi: 30.8
+      bearing: NNW
+      tracked_plane_presence_in_window: []
+    - airport_code: 8MD6
+      icao: null
+      iata: null
+      name: "Burgess Field"
+      city: Riverside
+      region: US-MD
+      country: US
+      type: small_airport
+      elevation_ft: 35
+      longest_runway_ft: 2200
+      longest_runway_surface: GRVL-P
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 38.3971
+      lon: -77.1469
+      distance_mi: 32.0
+      bearing: S
+      tracked_plane_presence_in_window: []
+    - airport_code: KJYO
+      icao: null
+      iata: null
+      name: "Leesburg Executive Airport"
+      city: Leesburg
+      region: US-VA
+      country: US
+      type: small_airport
+      elevation_ft: 389
+      longest_runway_ft: 5500
+      longest_runway_surface: ASP
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: jet_capable
+      lat: 39.078
+      lon: -77.5575
+      distance_mi: 32.0
+      bearing: WNW
+      tracked_plane_presence_in_window: []
+    - airport_code: MD55
+      icao: null
+      iata: null
+      name: "Holly Springs Farm Airport"
+      city: Nanjemoy
+      region: US-MD
+      country: US
+      type: small_airport
+      elevation_ft: 90
+      longest_runway_ft: 2300
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 38.3976
+      lon: -77.1861
+      distance_mi: 32.4
+      bearing: SSW
+      tracked_plane_presence_in_window: []
+    - airport_code: MD77
+      icao: null
+      iata: null
+      name: "Flying M Farms Airport"
+      city: Comus
+      region: US-MD
+      country: US
+      type: small_airport
+      elevation_ft: 590
+      longest_runway_ft: 1400
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 39.2598
+      lon: -77.3414
+      distance_mi: 32.5
+      bearing: NNW
+      tracked_plane_presence_in_window: []
+    - airport_code: 62MD
+      icao: null
+      iata: null
+      name: "Sandy Point Airport"
+      city: "Prince Frederick"
+      region: US-MD
+      country: US
+      type: small_airport
+      elevation_ft: 20
+      longest_runway_ft: 1800
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 38.48881
+      lon: -76.64363
+      distance_mi: 32.9
+      bearing: SE
+      tracked_plane_presence_in_window: []
+    - airport_code: VA66
+      icao: null
+      iata: null
+      name: "Breeden Airport"
+      city: Catlett
+      region: US-VA
+      country: US
+      type: small_airport
+      elevation_ft: 210
+      longest_runway_ft: 1000
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 38.6076
+      lon: -77.5694
+      distance_mi: 33.3
+      bearing: WSW
+      tracked_plane_presence_in_window: []
+    - airport_code: MD47
+      icao: null
+      iata: null
+      name: "Barnes Airport"
+      city: Lisbon
+      region: US-MD
+      country: US
+      type: small_airport
+      elevation_ft: 780
+      longest_runway_ft: 2400
+      longest_runway_surface: TURF
+      runway_count: 2
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 39.3329
+      lon: -77.0969
+      distance_mi: 33.4
+      bearing: N
+      tracked_plane_presence_in_window: []
+    - airport_code: 51VA
+      icao: null
+      iata: null
+      name: "Skyview Airport"
+      city: Manassas
+      region: US-VA
+      country: US
+      type: small_airport
+      elevation_ft: 340
+      longest_runway_ft: 2000
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 38.7162
+      lon: -77.6339
+      distance_mi: 33.5
+      bearing: WSW
+      tracked_plane_presence_in_window: []
+    - airport_code: 3VA5
+      icao: null
+      iata: null
+      name: "Goose Hunt Farm Airport"
+      city: Leesburg
+      region: US-VA
+      country: US
+      type: small_airport
+      elevation_ft: 340
+      longest_runway_ft: 1700
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 39.02889
+      lon: -77.625
+      distance_mi: 33.8
+      bearing: WNW
+      tracked_plane_presence_in_window: []
+    - airport_code: VG57
+      icao: null
+      iata: null
+      name: "Maples Field"
+      city: Catlett
+      region: US-VA
+      country: US
+      type: small_airport
+      elevation_ft: 225
+      longest_runway_ft: 2450
+      longest_runway_surface: TURF-F
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 38.6057
+      lon: -77.5847
+      distance_mi: 34.0
+      bearing: WSW
+      tracked_plane_presence_in_window: []
+    - airport_code: 5VA5
+      icao: null
+      iata: null
+      name: "Chimney View Airport"
+      city: Fredericksburg
+      region: US-VA
+      country: US
+      type: small_airport
+      elevation_ft: 25
+      longest_runway_ft: 1400
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 38.4035
+      lon: -77.3158
+      distance_mi: 34.4
+      bearing: SSW
+      tracked_plane_presence_in_window: []
+    - airport_code: KNDY
+      icao: KNDY
+      iata: DGN
+      name: "Dahlgren Naval Surface Warfare Center Airport"
+      city: Dahlgren
+      region: US-VA
+      country: US
+      type: small_airport
+      elevation_ft: 18
+      longest_runway_ft: 4191
+      longest_runway_surface: ASP
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: light_jet_capable
+      lat: 38.3325
+      lon: -77.0372
+      distance_mi: 35.9
+      bearing: S
+      tracked_plane_presence_in_window: []
+    - airport_code: US-5687
+      icao: null
+      iata: null
+      name: "Nyce Airport"
+      city: Newburg
+      region: US-MD
+      country: US
+      type: small_airport
+      elevation_ft: 19
+      longest_runway_ft: null
+      longest_runway_surface: null
+      runway_count: 0
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: unknown
+      lat: 38.35103
+      lon: -76.86327
+      distance_mi: 35.9
+      bearing: SSE
+      tracked_plane_presence_in_window: []
+    - airport_code: 8MD0
+      icao: null
+      iata: null
+      name: "Suzie Field"
+      city: Woodbine
+      region: US-MD
+      country: US
+      type: small_airport
+      elevation_ft: 560
+      longest_runway_ft: 1785
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 39.377
+      lon: -77.01716
+      distance_mi: 36.3
+      bearing: N
+      tracked_plane_presence_in_window: []
+    - airport_code: 7MD8
+      icao: null
+      iata: null
+      name: "Kent Fort Manor Airport"
+      city: Stevensville
+      region: US-MD
+      country: US
+      type: small_airport
+      elevation_ft: 10
+      longest_runway_ft: 2300
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 38.8565
+      lon: -76.3616
+      distance_mi: 36.4
+      bearing: E
+      tracked_plane_presence_in_window: []
+    - airport_code: MD06
+      icao: null
+      iata: null
+      name: "Pilots Cove Airport"
+      city: Newburg
+      region: US-MD
+      country: US
+      type: small_airport
+      elevation_ft: 20
+      longest_runway_ft: 1200
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 38.33676
+      lon: -76.88058
+      distance_mi: 36.6
+      bearing: SSE
+      tracked_plane_presence_in_window: []
+    - airport_code: MD75
+      icao: null
+      iata: null
+      name: "Stolcrest STOLport"
+      city: Urbana
+      region: US-MD
+      country: US
+      type: small_airport
+      elevation_ft: 530
+      longest_runway_ft: 600
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 39.3418
+      lon: -77.3036
+      distance_mi: 36.7
+      bearing: NNW
+      tracked_plane_presence_in_window: []
+    - airport_code: 0MD6
+      icao: null
+      iata: null
+      name: "Walters Airport"
+      city: "Mount Airy"
+      region: US-MD
+      country: US
+      type: small_airport
+      elevation_ft: 750
+      longest_runway_ft: 1800
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 39.3812
+      lon: -77.1058
+      distance_mi: 36.7
+      bearing: N
+      tracked_plane_presence_in_window: []
+    - airport_code: 3W3
+      icao: null
+      iata: null
+      name: "Kentmorr Airpark"
+      city: Stevensville
+      region: US-MD
+      country: US
+      type: small_airport
+      elevation_ft: 10
+      longest_runway_ft: 2400
+      longest_runway_surface: TURF-G
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 38.9182
+      lon: -76.358
+      distance_mi: 36.8
+      bearing: E
+      tracked_plane_presence_in_window: []
+    - airport_code: MD78
+      icao: null
+      iata: null
+      name: "Woodbine Airport"
+      city: Woodbine
+      region: US-MD
+      country: US
+      type: small_airport
+      elevation_ft: 720
+      longest_runway_ft: 1650
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 39.3834
+      lon: -77.0703
+      distance_mi: 36.8
+      bearing: N
+      tracked_plane_presence_in_window: []
+    - airport_code: 1VA9
+      icao: null
+      iata: null
+      name: "Flying T Farm Airport"
+      city: Fredericksburg
+      region: US-VA
+      country: US
+      type: small_airport
+      elevation_ft: 255
+      longest_runway_ft: 2000
+      longest_runway_surface: ASPH
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 38.4329
+      lon: -77.4705
+      distance_mi: 37.2
+      bearing: SW
+      tracked_plane_presence_in_window: []
+    - airport_code: 58VA
+      icao: null
+      iata: null
+      name: "Walnut Hill Airport"
+      city: Calverton
+      region: US-VA
+      country: US
+      type: small_airport
+      elevation_ft: 285
+      longest_runway_ft: 2490
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 38.5951
+      lon: -77.6461
+      distance_mi: 37.3
+      bearing: WSW
+      tracked_plane_presence_in_window: []
+    - airport_code: 3MD0
+      icao: null
+      iata: null
+      name: "Burhans Memorial Airport"
+      city: Frederick
+      region: US-MD
+      country: US
+      type: small_airport
+      elevation_ft: 490
+      longest_runway_ft: 2600
+      longest_runway_surface: ASPH
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 39.3482
+      lon: -77.3361
+      distance_mi: 37.8
+      bearing: NNW
+      tracked_plane_presence_in_window: []
+    - airport_code: 4MD8
+      icao: null
+      iata: null
+      name: "Ijamsville Airport"
+      city: Frederick
+      region: US-MD
+      country: US
+      type: small_airport
+      elevation_ft: 490
+      longest_runway_ft: 2800
+      longest_runway_surface: ASPH
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 39.3583
+      lon: -77.3397
+      distance_mi: 38.5
+      bearing: NNW
+      tracked_plane_presence_in_window: []
+    - airport_code: KRMN
+      icao: KRMN
+      iata: null
+      name: "Stafford Regional Airport"
+      city: Fredericksburg
+      region: US-VA
+      country: US
+      type: small_airport
+      elevation_ft: 211
+      longest_runway_ft: 6000
+      longest_runway_surface: ASP
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: jet_capable
+      lat: 38.3981
+      lon: -77.4555
+      distance_mi: 38.6
+      bearing: SW
+      tracked_plane_presence_in_window: []
+    - airport_code: VA79
+      icao: null
+      iata: null
+      name: "Hickory Tree Farms Airport"
+      city: "The Plains"
+      region: US-VA
+      country: US
+      type: small_airport
+      elevation_ft: 544
+      longest_runway_ft: 3200
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 38.9529
+      lon: -77.7469
+      distance_mi: 38.8
+      bearing: W
+      tracked_plane_presence_in_window: []
+    - airport_code: 4MD4
+      icao: null
+      iata: null
+      name: "Clements Airport"
+      city: Clements
+      region: US-MD
+      country: US
+      type: small_airport
+      elevation_ft: 105
+      longest_runway_ft: 1750
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 38.3406
+      lon: -76.7372
+      distance_mi: 38.9
+      bearing: SSE
+      tracked_plane_presence_in_window: []
+    - airport_code: W29
+      icao: null
+      iata: null
+      name: "Bay Bridge Airport"
+      city: Stevensville
+      region: US-MD
+      country: US
+      type: small_airport
+      elevation_ft: 15
+      longest_runway_ft: 2714
+      longest_runway_surface: ASPH-G
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 38.9764
+      lon: -76.3296
+      distance_mi: 39.0
+      bearing: ENE
+      tracked_plane_presence_in_window: []
+    - airport_code: 7MD9
+      icao: null
+      iata: null
+      name: "Tilghman Whipp Airport"
+      city: Tilghman
+      region: US-MD
+      country: US
+      type: small_airport
+      elevation_ft: 5
+      longest_runway_ft: 1920
+      longest_runway_surface: TURF-F
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 38.7361
+      lon: -76.3167
+      distance_mi: 39.6
+      bearing: ESE
+      tracked_plane_presence_in_window: []
+tracked_plane_presence:
+  # Was any tracked aircraft on the ground at any field in the list above,
+  # inside the window? Three registers are searched and kept apart, strongest
+  # first. NEVER collapse them into one number.
+  window:
+    from: 2025-01-17
+    to: 2025-01-22
+    days_each_side: 2
+  any_found: false
+  egyptian_su_found: false
+  counts:
+    adsb_ground_contacts: 0
+    adsb_ground_contacts_egyptian_su: 0
+    flights_csv_stays: 0
+    flights_csv_stays_egyptian_su: 0
+    claimed_overlaps: 0
+  from_adsb_traces: []
+  from_flights_csv: []
+  from_overlaps_csv: []
+  just_outside_the_radius:
+    # A hard radius creates a cliff and a cliff hides evidence. These fields
+    # sit between 40 and 60 miles from the arrival airport. They are NOT counted
+    # as hits and must never be published as ones - they are here so a near miss
+    # is visible rather than silently dropped.
+    outer_radius_miles: 60.0
+    adsb_ground_contacts: []
+    flights_csv_stays: []
+    claimed_overlaps: []
+  coverage:
+    # AN EMPTY RESULT ABOVE IS NOT A FINDING UNLESS THIS SAYS THE DAYS WERE HELD.
+    # aircraft_days_needed = tails x days in the window. aircraft_days_held is
+    # how many of those this repo actually has a trace for. The rest were never
+    # pulled, or the networks heard nothing - the two are indistinguishable here.
+    aircraft_days_needed: 90
+    aircraft_days_held: 0
+    coverage_pct: 0.0
+    tails_with_no_trace_in_window:
+      - N102DZ
+      - N1098L
+      - N2100L
+      - N40JD
+      - N560TW
+      - N582MM
+      - N59906
+      - N872RA
+      - N888KG
+      - SU-BGM
+      - SU-BND
+      - SU-BTT
+      - SU-BTU
+      - SU-BTV
+      - T7-ELL
+    by_side:
+      following:
+        # FOLLOWING is the side the claim is about - the Egyptian SU- tails.
+        # This percentage is the one that decides whether an empty result means
+        # anything at all.
+        tails: 6
+        aircraft_days_needed: 36
+        aircraft_days_held: 0
+        coverage_pct: 0.0
+      kirk:
+        # KIRK-side coverage is what turns an ESTIMATED arrival into an
+        # OBSERVED one. Low here means the arrival times above stay estimates.
+        tails: 6
+        aircraft_days_needed: 36
+        aircraft_days_held: 0
+        coverage_pct: 0.0
+      n1098l:
+        # Other tracked aircraft. A DIFFERENT CLAIM - do not merge the threads.
+        tails: 3
+        aircraft_days_needed: 18
+        aircraft_days_held: 0
+        coverage_pct: 0.0
+counterargument:
+  - "ONE PAIRING IS NOT EVIDENCE. The claim under test is a repetition across many stops, and any single pairing has an innocent explanation a reader will find."
+  - "A field inside the radius is a field a jet COULD have used. Nothing here shows that anyone did use it, or that two aircraft on one ramp had any connection."
+  - "Maintenance is the strongest innocent explanation in this record: Duncan Aviation (Provo and Lincoln) and Yingling (Wichita) are Part 145 Falcon and Gulfstream shops, and a Falcon 7X sitting for weeks at one reads as a maintenance visit."
+  - "Transatlantic customs and fuel stops explain the recurring East Coast fields."
+  - "ERIKA'S SIDE IS THE WEAK SIDE. Her flight logs are reported erased, so any Erika pairing rests on the foreign aircraft's track plus a CLAIMED location for her. See /Planes/Erika-Flight-Logs-Erased."
+what_we_do_not_know:
+  - "Whether Charlie Kirk, Erika Kirk, or any TPUSA party actually flew to this event, or which aircraft they used. The arrival airport above is an inference from the venue city, not a record."
+  - "Whether the estimated arrival and departure times are within hours or within days of the truth, wherever observed_by_adsb is empty."
+  - "What the tracked aircraft were doing at any field they appear at. A trace proves presence, never purpose and never occupancy."
+  - "Whether the receiver networks simply did not hear an aircraft that was there. See the coverage block - an absence is not a finding."

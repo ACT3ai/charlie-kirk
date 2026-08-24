@@ -1,3 +1,19 @@
+---
+displayed_sidebar: docs
+slug: /Planes/following/overlap/20240423_UT_provo_owens_026/data/MISSING_DATA
+title: "ADS-B gaps for overlap 20240423_UT_provo_owens_026"
+sidebar_label: "ADS-B gaps"
+description: "Archive lookups that returned no primary ADS-B trace for the aircraft and dates claimed in overlap row 20240423_UT_provo_owens_026 (23 April 2024 — Provo, UT)."
+keywords:
+  - "ADS-B"
+  - "overlap"
+  - "flight tracking"
+  - "missing flight data"
+  - "20240423_UT_provo_owens_026"
+image: "/img/docusaurus-social-card.jpg"
+hide_table_of_contents: true
+---
+
 # Claimed flights we could NOT retrieve a primary ADS-B trace for
 
 Generated 2026-08-24T16:03:53.121Z by
@@ -22,3 +38,31 @@ below are already recorded in `overlaps.csv` as audited inaccurate.
 | Tail | UTC date | HTTP | Why we looked |
 |---|---|---|---|
 | SU-BTT | 2024-04-24 | 404 | overlap OWENS-026 - Provo UT (audited_accurate, audit: accurate); overlap SITE-004 - Salt Lake City (event) / Provo (aircraft) UT (audited_accurate, audit: accurate) |
+
+{/* CK_PAGE_FOOTER_START */}
+
+## Where this page fits
+
+This is the gap file for [row OWENS-026](/Planes/following/overlap/20240423_UT_provo_owens_026/overview), one of the rows the audit marked correct, and the volunteer archive still returned nothing for the surrounding days, which is a useful reminder that [absence in a free network says nothing about whether the aircraft flew](/Planes/Flight-Data-Recovery/What-A-403-Means). The record that would settle it is commercial or governmental and neither is public: [the deep history sits behind paid archives](/Planes/following/apis/proprietary/knowledge), [government sources have to be requested](/Planes/following/apis/government/knowledge), and [the proposed disclosure laws](/Fix/overview) exist because [the foreign-nexus material has stayed withheld](/CoverUp/Foreign_Flight_Records). Next, read [23 April 2024, Salt Lake City](/Planes/following/overlap/20240423_UT_salt_lake_city/overview): on the same day this row covers, [SU-BTT](/Planes/SU-BTT/overview) landed at Provo at 12:13 pm while Charlie Kirk was 45 miles north at the University of Utah, a same-day, same-region pairing the audit did not dissolve, though a confirmed airframe position still places no person aboard.
+
+## Related Areas
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Row OWENS-026, the accurate Provo row](/Planes/following/overlap/20240423_UT_provo_owens_026/overview)
+* [Commercial flight-data APIs and what they cost](/Planes/following/apis/proprietary/knowledge)
+* [The four proposed federal disclosure laws](/Fix/overview)
+
+</div>
+<div>
+
+* [Legal investigation and evidence handling](/legal_investigation/overview)
+* [Property and locations index](/Locations/overview)
+* [How government handled the evidence](/gov/overview)
+
+</div>
+</div>
+
+{/* CK_PAGE_FOOTER_END */}

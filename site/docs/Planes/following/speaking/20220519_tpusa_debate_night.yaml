@@ -1,0 +1,56 @@
+# GENERATED FILE - regenerate, do not hand-edit.
+#   node/python: apis/public_open_source/code/airports_near.py --only 20220519_tpusa_debate_night
+#   The prompt that governs this file: prompts/p_airports_near.md
+schema: ck.speaking.airports_near/1
+generated_utc: "2026-08-24T19:03:26Z"
+generated_by: site/docs/Planes/following/apis/public_open_source/code/airports_near.py
+page:
+  slug: 20220519_tpusa_debate_night
+  mdx: site/docs/Planes/following/speaking/20220519_tpusa_debate_night.mdx
+  yaml: site/docs/Planes/following/speaking/20220519_tpusa_debate_night.yaml
+  url: /Planes/following/speaking/20220519_tpusa_debate_night
+event:
+  title: "Debate Night vs Briahna Joy Gray"
+  who: Charlie
+  attendee_class: CHARLIE_ONLY
+  charlie_present: "yes"
+  erika_present: not_documented
+  attendance_status: held
+  event_type: debate
+  dates:
+    raw: 2022-05-19
+    first_day: 2022-05-19
+    last_day: 2022-05-19
+    granularity: DAY
+    certainty: EVENT_DATE
+    # PODCAST_PROXY means the date is a podcast RELEASE date and the event was normally 0-7 days earlier. Never publish a same-day claim off one.
+  local_time:
+    raw: "18:00 ET / 15:00 PT"
+    parsed_hhmm: "18:00"
+    basis: parsed_from_event_time_cell
+    timezone: null
+    timezone_method: no_geocode
+  location:
+    city: UNKNOWN
+    state: null
+    country: USA
+    venue: "TPUSA Debate Night (streamed)"
+    metro_area: UNKNOWN
+    geocode:
+      lat: null
+      lon: null
+      method: FAILED
+      matched: "city is UNKNOWN or AMBIGUOUS in tpusa_events.csv - not filled in from memory, on purpose"
+  source: "Rumble promo Thursday 5/19 at 6pm EST"
+  source_url: "https://rumble.com/v157hnh-debate-night-is-back-thursday-519-at-6pm-est.html"
+  days_before_sept10_2025: 1210
+arrival_airport:
+  resolved: false
+  reason: "The event has no geocodable city or no parseable date in tpusa_events.csv. Nothing downstream can be computed and nothing is guessed."
+airports_within_radius:
+  radius_miles: 40
+  count: 0
+  list: []
+tracked_plane_presence:
+  any_found: false
+  reason: "not searched - no coordinates"

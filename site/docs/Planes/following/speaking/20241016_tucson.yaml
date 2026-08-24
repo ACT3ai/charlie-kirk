@@ -1,0 +1,682 @@
+# GENERATED FILE - regenerate, do not hand-edit.
+#   node/python: apis/public_open_source/code/airports_near.py --only 20241016_tucson
+#   The prompt that governs this file: prompts/p_airports_near.md
+schema: ck.speaking.airports_near/1
+generated_utc: "2026-08-24T19:03:26Z"
+generated_by: site/docs/Planes/following/apis/public_open_source/code/airports_near.py
+page:
+  slug: 20241016_tucson
+  mdx: site/docs/Planes/following/speaking/20241016_tucson.mdx
+  yaml: site/docs/Planes/following/speaking/20241016_tucson.yaml
+  url: /Planes/following/speaking/20241016_tucson
+event:
+  title: "TP Action / Brainwashed window — University of Arizona with Tulsi Gabbard"
+  who: Charlie
+  attendee_class: CHARLIE_ONLY
+  charlie_present: "yes"
+  erika_present: not_documented
+  attendance_status: held
+  event_type: campus
+  dates:
+    raw: 2024-10-16
+    first_day: 2024-10-16
+    last_day: 2024-10-16
+    granularity: DAY
+    certainty: EVENT_DATE
+    # PODCAST_PROXY means the date is a podcast RELEASE date and the event was normally 0-7 days earlier. Never publish a same-day claim off one.
+  local_time:
+    raw: "doors 17:30 MST; start 18:30 MST"
+    parsed_hhmm: "17:30"
+    basis: parsed_from_event_time_cell
+    timezone: America/Phoenix
+    timezone_method: timezonefinder
+  location:
+    city: Tucson
+    state: AZ
+    country: USA
+    venue: "University of Arizona Student Union"
+    metro_area: "Tucson AZ"
+    geocode:
+      lat: 32.15304
+      lon: -110.87077
+      method: us_census_2024_gazetteer
+      matched: "Tucson city"
+  source: "@charliekirk11 10 Oct 2024; State Press 20 Oct 2024"
+  source_url: "https://x.com/charliekirk11/status/1844438706054365627"
+  days_before_sept10_2025: 329
+search:
+  radius_miles: 40
+  window_days_each_side: 2
+  window_from: 2024-10-14
+  window_to: 2024-10-18
+  window_day_count: 5
+  centre: KTUS
+  tails_searched:
+    - N102DZ
+    - N1098L
+    - N2100L
+    - N40JD
+    - N560TW
+    - N582MM
+    - N59906
+    - N872RA
+    - N888KG
+    - SU-BGM
+    - SU-BND
+    - SU-BTT
+    - SU-BTU
+    - SU-BTV
+    - T7-ELL
+  sources_searched:
+    - "recovered ADS-B traces on disk (site/docs/Planes/<TAIL>/data/recovered/)"
+    - site/docs/Planes/following/flights.csv
+    - site/docs/Planes/following/overlaps.csv
+arrival_airport:
+  # ESTIMATE. No published Kirk-side flight record exists for this event unless
+  # the observed_by_adsb block below is non-empty. This is arithmetic on the
+  # event time, not a landing record.
+  chosen_airport:
+    airport_code: KTUS
+    icao: KTUS
+    iata: TUS
+    name: "Tucson International Airport"
+    city: Tucson
+    region: US-AZ
+    country: US
+    type: large_airport
+    elevation_ft: 2643
+    longest_runway_ft: 10996
+    longest_runway_surface: ASP
+    runway_count: 2
+    runways_lighted: true
+    scheduled_service: true
+    jet_capability: jet_capable
+    lat: 32.115
+    lon: -110.93805
+    distance_mi: 4.7
+    bearing: WSW
+  distance_from_event_city_mi: 4.7
+  selection_basis: CURATED_tpusa_events.csv_VALUE_KEPT_computed_nearest_jet_field_DIFFERS
+  curated_value_in_tpusa_events_csv:
+    airport_code: KTUS
+    airport_name: "Tucson International"
+    distance_mi: 8
+  computed_nearest_jet_capable_field:
+    airport_code: KDMA
+    name: "Davis Monthan Air Force Base"
+    distance_mi: 1.2
+    longest_runway_ft: 13643
+  estimated_arrival:
+    date: 2024-10-16
+    local_time: "14:30"
+    timezone: America/Phoenix
+    utc: "2024-10-16T21:30:00Z"
+    basis: "event start 17:30 local (parsed_from_event_time_cell) minus 3h"
+    confidence: medium
+  estimated_departure:
+    date: 2024-10-16
+    local_time: "21:30"
+    timezone: America/Phoenix
+    utc: "2024-10-17T04:30:00Z"
+    basis: "event end + 4h (speech, exit, wheels-up)"
+    confidence: medium
+  observed_by_adsb: []
+  observed_by_adsb_note: "NO Kirk-side aircraft is on disk on the ground within 40 miles of KTUS in this window. The arrival and departure above stay estimates."
+airports_within_radius:
+  # Every field a private jet could physically use within the radius.
+  # Heliports, seaplane bases, balloonports and closed fields are excluded -
+  # a business jet cannot use any of them. Everything else is kept, including
+  # every small strip with no scheduled service: those are the point of the sweep.
+  radius_miles: 40
+  centre_airport: KTUS
+  count: 23
+  jet_capable_count: 5
+  light_jet_capable_count: 6
+  no_scheduled_service_count: 22
+  source: "OurAirports (CC0) airports.csv + runways.csv"
+  list:
+    - airport_code: KTUS
+      icao: KTUS
+      iata: TUS
+      name: "Tucson International Airport"
+      city: Tucson
+      region: US-AZ
+      country: US
+      type: large_airport
+      elevation_ft: 2643
+      longest_runway_ft: 10996
+      longest_runway_surface: ASP
+      runway_count: 2
+      runways_lighted: true
+      scheduled_service: true
+      jet_capability: jet_capable
+      lat: 32.115
+      lon: -110.93805
+      distance_mi: 0.0
+      bearing: N
+      tracked_plane_presence_in_window: []
+    - airport_code: KDMA
+      icao: KDMA
+      iata: DMA
+      name: "Davis Monthan Air Force Base"
+      city: Tucson
+      region: US-AZ
+      country: US
+      type: medium_airport
+      elevation_ft: 2704
+      longest_runway_ft: 13643
+      longest_runway_surface: PEM
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: jet_capable
+      lat: 32.1665
+      lon: -110.883
+      distance_mi: 4.8
+      bearing: NE
+      tracked_plane_presence_in_window: []
+    - airport_code: KRYN
+      icao: null
+      iata: null
+      name: "Ryan Field"
+      city: Tucson
+      region: US-AZ
+      country: US
+      type: small_airport
+      elevation_ft: 2417
+      longest_runway_ft: 5500
+      longest_runway_surface: ASP
+      runway_count: 3
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: jet_capable
+      lat: 32.1422
+      lon: -111.175
+      distance_mi: 14.0
+      bearing: W
+      tracked_plane_presence_in_window: []
+    - airport_code: 6AZ8
+      icao: null
+      iata: null
+      name: "Flying Diamond Airport"
+      city: Sahuarita
+      region: US-AZ
+      country: US
+      type: small_airport
+      elevation_ft: 3800
+      longest_runway_ft: 2650
+      longest_runway_surface: ASPH
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 31.93775
+      lon: -111.11895
+      distance_mi: 16.2
+      bearing: SW
+      tracked_plane_presence_in_window: []
+    - airport_code: 14AZ
+      icao: null
+      iata: null
+      name: "Ruby Star Airpark"
+      city: Sahuarita
+      region: US-AZ
+      country: US
+      type: small_airport
+      elevation_ft: 4025
+      longest_runway_ft: 4300
+      longest_runway_surface: ASPH-TRTD
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: light_jet_capable
+      lat: 31.90949
+      lon: -111.12029
+      distance_mi: 17.8
+      bearing: SW
+      tracked_plane_presence_in_window: []
+    - airport_code: US-4169
+      icao: null
+      iata: null
+      name: "Schuk Toak Farms Landing Field"
+      city: Tucson
+      region: US-AZ
+      country: US
+      type: small_airport
+      elevation_ft: 2307
+      longest_runway_ft: null
+      longest_runway_surface: null
+      runway_count: 0
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: unknown
+      lat: 32.19563
+      lon: -111.27355
+      distance_mi: 20.4
+      bearing: WNW
+      tracked_plane_presence_in_window: []
+    - airport_code: US-3796
+      icao: null
+      iata: null
+      name: "Buckelew Farm Landing Field"
+      city: Tucson
+      region: US-AZ
+      country: US
+      type: small_airport
+      elevation_ft: null
+      longest_runway_ft: null
+      longest_runway_surface: null
+      runway_count: 0
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: unknown
+      lat: 32.07799
+      lon: -111.3315
+      distance_mi: 23.2
+      bearing: W
+      tracked_plane_presence_in_window: []
+    - airport_code: 57AZ
+      icao: null
+      iata: null
+      name: "La Cholla Airpark"
+      city: "Oro Valley"
+      region: US-AZ
+      country: US
+      type: small_airport
+      elevation_ft: 2940
+      longest_runway_ft: 4670
+      longest_runway_surface: ASPH-G
+      runway_count: 2
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: light_jet_capable
+      lat: 32.44663
+      lon: -111.0029
+      distance_mi: 23.2
+      bearing: N
+      tracked_plane_presence_in_window: []
+    - airport_code: 79AZ
+      icao: null
+      iata: null
+      name: "Sentiel Airport"
+      city: Marana
+      region: US-AZ
+      country: US
+      type: small_airport
+      elevation_ft: 2110
+      longest_runway_ft: 4025
+      longest_runway_surface: ASPHALT/DIRT
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: light_jet_capable
+      lat: 32.30627
+      lon: -111.28405
+      distance_mi: 24.2
+      bearing: WNW
+      tracked_plane_presence_in_window: []
+    - airport_code: US-2563
+      icao: null
+      iata: null
+      name: "Diamond Bell Airstrip"
+      city: Tucson
+      region: US-AZ
+      country: US
+      type: small_airport
+      elevation_ft: 2621
+      longest_runway_ft: null
+      longest_runway_surface: null
+      runway_count: 0
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: unknown
+      lat: 32.03294
+      lon: -111.35793
+      distance_mi: 25.2
+      bearing: WSW
+      tracked_plane_presence_in_window: []
+    - airport_code: 82AZ
+      icao: null
+      iata: null
+      name: "Ridgeline Airpark"
+      city: "Green Valley"
+      region: US-AZ
+      country: US
+      type: small_airport
+      elevation_ft: 3551
+      longest_runway_ft: 4500
+      longest_runway_surface: ASP
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: light_jet_capable
+      lat: 31.74519
+      lon: -110.95209
+      distance_mi: 25.6
+      bearing: S
+      tracked_plane_presence_in_window: []
+    - airport_code: KAVQ
+      icao: KAVQ
+      iata: AVW
+      name: "Marana Regional Airport"
+      city: Marana
+      region: US-AZ
+      country: US
+      type: small_airport
+      elevation_ft: 2031
+      longest_runway_ft: 6901
+      longest_runway_surface: ASP
+      runway_count: 2
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: jet_capable
+      lat: 32.40906
+      lon: -111.2162
+      distance_mi: 26.0
+      bearing: NW
+      tracked_plane_presence_in_window: []
+    - airport_code: 4AZ8
+      icao: null
+      iata: null
+      name: "The Ultralight Strip Ultralightport"
+      city: Marana
+      region: US-AZ
+      country: US
+      type: small_airport
+      elevation_ft: 2120
+      longest_runway_ft: 1650
+      longest_runway_surface: DIRT
+      runway_count: 3
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 32.29422
+      lon: -111.34484
+      distance_mi: 26.8
+      bearing: WNW
+      tracked_plane_presence_in_window: []
+    - airport_code: US-2562
+      icao: null
+      iata: null
+      name: "King Anvil Ranch Airstrip"
+      city: Tucson
+      region: US-AZ
+      country: US
+      type: small_airport
+      elevation_ft: 2714
+      longest_runway_ft: null
+      longest_runway_surface: null
+      runway_count: 0
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: unknown
+      lat: 31.99017
+      lon: -111.38228
+      distance_mi: 27.4
+      bearing: WSW
+      tracked_plane_presence_in_window: []
+    - airport_code: US-1654
+      icao: null
+      iata: null
+      name: "Quality Aviation Airport"
+      city: Marana
+      region: US-AZ
+      country: US
+      type: small_airport
+      elevation_ft: null
+      longest_runway_ft: null
+      longest_runway_surface: null
+      runway_count: 0
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: unknown
+      lat: 32.4226
+      lon: -111.2404
+      distance_mi: 27.6
+      bearing: NW
+      tracked_plane_presence_in_window: []
+    - airport_code: US-1656
+      icao: null
+      iata: null
+      name: "Gasline Strip"
+      city: Marana
+      region: US-AZ
+      country: US
+      type: small_airport
+      elevation_ft: null
+      longest_runway_ft: null
+      longest_runway_surface: null
+      runway_count: 0
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: unknown
+      lat: 32.37509
+      lon: -111.36956
+      distance_mi: 31.0
+      bearing: NW
+      tracked_plane_presence_in_window: []
+    - airport_code: AZ63
+      icao: null
+      iata: null
+      name: "Twin Hawks Airpark"
+      city: Redrock
+      region: US-AZ
+      country: US
+      type: small_airport
+      elevation_ft: 2290
+      longest_runway_ft: 2800
+      longest_runway_surface: DIRT
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 32.52803
+      lon: -111.19597
+      distance_mi: 32.3
+      bearing: NNW
+      tracked_plane_presence_in_window: []
+    - airport_code: AZ67
+      icao: null
+      iata: null
+      name: "El Tiro Gliderport"
+      city: Tucson
+      region: US-AZ
+      country: US
+      type: small_airport
+      elevation_ft: 2100
+      longest_runway_ft: 5120
+      longest_runway_surface: DIRT
+      runway_count: 5
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 32.427
+      lon: -111.39
+      distance_mi: 34.1
+      bearing: NW
+      tracked_plane_presence_in_window: []
+    - airport_code: KE95
+      icao: null
+      iata: null
+      name: "Benson Municipal Airport/Paul Kerchum Field"
+      city: Benson
+      region: US-AZ
+      country: US
+      type: small_airport
+      elevation_ft: 3829
+      longest_runway_ft: 4002
+      longest_runway_surface: ASP
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: light_jet_capable
+      lat: 31.9994
+      lon: -110.35822
+      distance_mi: 34.9
+      bearing: ESE
+      tracked_plane_presence_in_window: []
+    - airport_code: US-2048
+      icao: null
+      iata: null
+      name: "Palo Verde Ranch Airport"
+      city: Tucson
+      region: US-AZ
+      country: US
+      type: small_airport
+      elevation_ft: null
+      longest_runway_ft: null
+      longest_runway_surface: null
+      runway_count: 0
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: unknown
+      lat: 32.61263
+      lon: -111.04575
+      distance_mi: 35.0
+      bearing: N
+      tracked_plane_presence_in_window: []
+    - airport_code: KMZJ
+      icao: KMZJ
+      iata: MZJ
+      name: "Pinal Airpark"
+      city: Marana
+      region: US-AZ
+      country: US
+      type: small_airport
+      elevation_ft: 1893
+      longest_runway_ft: 6849
+      longest_runway_surface: ASP
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: jet_capable
+      lat: 32.5106
+      lon: -111.328
+      distance_mi: 35.6
+      bearing: NW
+      tracked_plane_presence_in_window: []
+    - airport_code: US-4710
+      icao: null
+      iata: null
+      name: "Cascabel Central Landing Field"
+      city: Benson
+      region: US-AZ
+      country: US
+      type: small_airport
+      elevation_ft: 3222
+      longest_runway_ft: null
+      longest_runway_surface: null
+      runway_count: 0
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: unknown
+      lat: 32.23618
+      lon: -110.32889
+      distance_mi: 36.6
+      bearing: ENE
+      tracked_plane_presence_in_window: []
+    - airport_code: KE77
+      icao: null
+      iata: null
+      name: "San Manuel Airport"
+      city: "San Manuel"
+      region: US-AZ
+      country: US
+      type: small_airport
+      elevation_ft: 3274
+      longest_runway_ft: 4207
+      longest_runway_surface: ASP
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: light_jet_capable
+      lat: 32.6365
+      lon: -110.647
+      distance_mi: 39.8
+      bearing: NNE
+      tracked_plane_presence_in_window: []
+tracked_plane_presence:
+  # Was any tracked aircraft on the ground at any field in the list above,
+  # inside the window? Three registers are searched and kept apart, strongest
+  # first. NEVER collapse them into one number.
+  window:
+    from: 2024-10-14
+    to: 2024-10-18
+    days_each_side: 2
+  any_found: false
+  egyptian_su_found: false
+  counts:
+    adsb_ground_contacts: 0
+    adsb_ground_contacts_egyptian_su: 0
+    flights_csv_stays: 0
+    flights_csv_stays_egyptian_su: 0
+    claimed_overlaps: 0
+  from_adsb_traces: []
+  from_flights_csv: []
+  from_overlaps_csv: []
+  just_outside_the_radius:
+    # A hard radius creates a cliff and a cliff hides evidence. These fields
+    # sit between 40 and 60 miles from the arrival airport. They are NOT counted
+    # as hits and must never be published as ones - they are here so a near miss
+    # is visible rather than silently dropped.
+    outer_radius_miles: 60.0
+    adsb_ground_contacts: []
+    flights_csv_stays: []
+    claimed_overlaps: []
+  coverage:
+    # AN EMPTY RESULT ABOVE IS NOT A FINDING UNLESS THIS SAYS THE DAYS WERE HELD.
+    # aircraft_days_needed = tails x days in the window. aircraft_days_held is
+    # how many of those this repo actually has a trace for. The rest were never
+    # pulled, or the networks heard nothing - the two are indistinguishable here.
+    aircraft_days_needed: 75
+    aircraft_days_held: 0
+    coverage_pct: 0.0
+    tails_with_no_trace_in_window:
+      - N102DZ
+      - N1098L
+      - N2100L
+      - N40JD
+      - N560TW
+      - N582MM
+      - N59906
+      - N872RA
+      - N888KG
+      - SU-BGM
+      - SU-BND
+      - SU-BTT
+      - SU-BTU
+      - SU-BTV
+      - T7-ELL
+    by_side:
+      following:
+        # FOLLOWING is the side the claim is about - the Egyptian SU- tails.
+        # This percentage is the one that decides whether an empty result means
+        # anything at all.
+        tails: 6
+        aircraft_days_needed: 30
+        aircraft_days_held: 0
+        coverage_pct: 0.0
+      kirk:
+        # KIRK-side coverage is what turns an ESTIMATED arrival into an
+        # OBSERVED one. Low here means the arrival times above stay estimates.
+        tails: 6
+        aircraft_days_needed: 30
+        aircraft_days_held: 0
+        coverage_pct: 0.0
+      n1098l:
+        # Other tracked aircraft. A DIFFERENT CLAIM - do not merge the threads.
+        tails: 3
+        aircraft_days_needed: 15
+        aircraft_days_held: 0
+        coverage_pct: 0.0
+counterargument:
+  - "ONE PAIRING IS NOT EVIDENCE. The claim under test is a repetition across many stops, and any single pairing has an innocent explanation a reader will find."
+  - "A field inside the radius is a field a jet COULD have used. Nothing here shows that anyone did use it, or that two aircraft on one ramp had any connection."
+  - "Maintenance is the strongest innocent explanation in this record: Duncan Aviation (Provo and Lincoln) and Yingling (Wichita) are Part 145 Falcon and Gulfstream shops, and a Falcon 7X sitting for weeks at one reads as a maintenance visit."
+  - "Transatlantic customs and fuel stops explain the recurring East Coast fields."
+  - "ERIKA'S SIDE IS THE WEAK SIDE. Her flight logs are reported erased, so any Erika pairing rests on the foreign aircraft's track plus a CLAIMED location for her. See /Planes/Erika-Flight-Logs-Erased."
+what_we_do_not_know:
+  - "Whether Charlie Kirk, Erika Kirk, or any TPUSA party actually flew to this event, or which aircraft they used. The arrival airport above is an inference from the venue city, not a record."
+  - "Whether the estimated arrival and departure times are within hours or within days of the truth, wherever observed_by_adsb is empty."
+  - "What the tracked aircraft were doing at any field they appear at. A trace proves presence, never purpose and never occupancy."
+  - "Whether the receiver networks simply did not hear an aircraft that was there. See the coverage block - an absence is not a finding."

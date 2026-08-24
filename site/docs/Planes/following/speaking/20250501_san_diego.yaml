@@ -1,0 +1,772 @@
+# GENERATED FILE - regenerate, do not hand-edit.
+#   node/python: apis/public_open_source/code/airports_near.py --only 20250501_san_diego
+#   The prompt that governs this file: prompts/p_airports_near.md
+schema: ck.speaking.airports_near/1
+generated_utc: "2026-08-24T19:03:27Z"
+generated_by: site/docs/Planes/following/apis/public_open_source/code/airports_near.py
+page:
+  slug: 20250501_san_diego
+  mdx: site/docs/Planes/following/speaking/20250501_san_diego.mdx
+  yaml: site/docs/Planes/following/speaking/20250501_san_diego.yaml
+  url: /Planes/following/speaking/20250501_san_diego
+event:
+  title: "American Comeback Tour — UC San Diego"
+  who: Charlie
+  attendee_class: CHARLIE_ONLY
+  charlie_present: "yes"
+  erika_present: not_documented
+  attendance_status: held
+  event_type: campus
+  dates:
+    raw: 2025-05-01
+    first_day: 2025-05-01
+    last_day: 2025-05-01
+    granularity: DAY
+    certainty: EVENT_DATE
+    # PODCAST_PROXY means the date is a podcast RELEASE date and the event was normally 0-7 days earlier. Never publish a same-day claim off one.
+  local_time:
+    raw: null
+    parsed_hhmm: null
+    basis: no_time_published
+    timezone: America/Los_Angeles
+    timezone_method: timezonefinder
+  location:
+    city: "San Diego"
+    state: CA
+    country: USA
+    venue: "UC San Diego Town Square"
+    metro_area: "San Diego CA"
+    geocode:
+      lat: 32.81498
+      lon: -117.13556
+      method: us_census_2024_gazetteer
+      matched: "San Diego city"
+  source: "Fox News 10 Sep 2025 (photo: May 1, 2025, UCSD Town Square); CalMatters later captioned a UCSD photo May 5"
+  source_url: "https://www.foxnews.com/us/turning-point-usa-co-founder-charlie-kirk-shot-kickoff-day-american-comeback-tour"
+  days_before_sept10_2025: 132
+search:
+  radius_miles: 40
+  window_days_each_side: 2
+  window_from: 2025-04-29
+  window_to: 2025-05-03
+  window_day_count: 5
+  centre: KSAN
+  tails_searched:
+    - N102DZ
+    - N1098L
+    - N2100L
+    - N40JD
+    - N560TW
+    - N582MM
+    - N59906
+    - N872RA
+    - N888KG
+    - SU-BGM
+    - SU-BND
+    - SU-BTT
+    - SU-BTU
+    - SU-BTV
+    - T7-ELL
+  sources_searched:
+    - "recovered ADS-B traces on disk (site/docs/Planes/<TAIL>/data/recovered/)"
+    - site/docs/Planes/following/flights.csv
+    - site/docs/Planes/following/overlaps.csv
+arrival_airport:
+  # ESTIMATE. No published Kirk-side flight record exists for this event unless
+  # the observed_by_adsb block below is non-empty. This is arithmetic on the
+  # event time, not a landing record.
+  chosen_airport:
+    airport_code: KSAN
+    icao: KSAN
+    iata: SAN
+    name: "San Diego International Airport"
+    city: "San Diego"
+    region: US-CA
+    country: US
+    type: large_airport
+    elevation_ft: 17
+    longest_runway_ft: 9401
+    longest_runway_surface: ASP
+    runway_count: 1
+    runways_lighted: true
+    scheduled_service: true
+    jet_capability: jet_capable
+    lat: 32.7336
+    lon: -117.19
+    distance_mi: 6.5
+    bearing: SSW
+  distance_from_event_city_mi: 6.5
+  selection_basis: CURATED_tpusa_events.csv_VALUE_KEPT_computed_nearest_jet_field_DIFFERS
+  curated_value_in_tpusa_events_csv:
+    airport_code: KSAN
+    airport_name: "San Diego International"
+    distance_mi: 4
+  computed_nearest_jet_capable_field:
+    airport_code: KMYF
+    name: "Montgomery-Gibbs Executive Airport"
+    distance_mi: 0.3
+    longest_runway_ft: 4598
+  estimated_arrival:
+    date: 2025-05-01
+    local_time: "16:00"
+    timezone: America/Los_Angeles
+    utc: "2025-05-01T23:00:00Z"
+    basis: "no event time published; 19:00 local assumed for arithmetic only; minus 3h"
+    confidence: low
+  estimated_departure:
+    date: 2025-05-01
+    local_time: "23:00"
+    timezone: America/Los_Angeles
+    utc: "2025-05-02T06:00:00Z"
+    basis: "event end + 4h (speech, exit, wheels-up)"
+    confidence: low
+  observed_by_adsb:
+    - tail: N40JD
+      airport_code: KSAN
+      date_utc: 2025-05-01
+      gap_days_from_event: 0
+      on_ground_first_local: "2025-05-01 11:16:21 PDT"
+      on_ground_last_local: "2025-05-01 12:00:05 PDT"
+      on_ground_first_utc: "2025-05-01T18:16:21.810000Z"
+      on_ground_last_utc: "2025-05-01T19:00:05.880000Z"
+      ground_minutes: 43.7
+      adsb_sources:
+        - adsbexchange-samples
+      # OBSERVED, not estimated. This is a real ground contact by a Kirk-side airframe. It still does not establish who was aboard.
+    - tail: N582MM
+      airport_code: KSAN
+      date_utc: 2025-05-01
+      gap_days_from_event: 0
+      on_ground_first_local: "2025-05-01 13:54:10 PDT"
+      on_ground_last_local: "2025-05-01 15:56:58 PDT"
+      on_ground_first_utc: "2025-05-01T20:54:10.920000Z"
+      on_ground_last_utc: "2025-05-01T22:56:58Z"
+      ground_minutes: 122.8
+      adsb_sources:
+        - adsbexchange-samples
+      # OBSERVED, not estimated. This is a real ground contact by a Kirk-side airframe. It still does not establish who was aboard.
+    - tail: N872RA
+      airport_code: KSAN
+      date_utc: 2025-05-01
+      gap_days_from_event: 0
+      on_ground_first_local: "2025-05-01 07:53:53 PDT"
+      on_ground_last_local: "2025-05-01 10:13:18 PDT"
+      on_ground_first_utc: "2025-05-01T14:53:53.140000Z"
+      on_ground_last_utc: "2025-05-01T17:13:18.090000Z"
+      ground_minutes: 139.4
+      adsb_sources:
+        - adsbexchange-samples
+      # OBSERVED, not estimated. This is a real ground contact by a Kirk-side airframe. It still does not establish who was aboard.
+airports_within_radius:
+  # Every field a private jet could physically use within the radius.
+  # Heliports, seaplane bases, balloonports and closed fields are excluded -
+  # a business jet cannot use any of them. Everything else is kept, including
+  # every small strip with no scheduled service: those are the point of the sweep.
+  radius_miles: 40
+  centre_airport: KSAN
+  count: 22
+  jet_capable_count: 7
+  light_jet_capable_count: 3
+  no_scheduled_service_count: 19
+  source: "OurAirports (CC0) airports.csv + runways.csv"
+  list:
+    - airport_code: KSAN
+      icao: KSAN
+      iata: SAN
+      name: "San Diego International Airport"
+      city: "San Diego"
+      region: US-CA
+      country: US
+      type: large_airport
+      elevation_ft: 17
+      longest_runway_ft: 9401
+      longest_runway_surface: ASP
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: true
+      jet_capability: jet_capable
+      lat: 32.7336
+      lon: -117.19
+      distance_mi: 0.0
+      bearing: N
+      tracked_plane_presence_in_window:
+        - "N40JD on 2025-05-01 - ADS-B ground contact, 43.7 min, 1 archive(s)"
+        - "N582MM on 2025-05-01 - ADS-B ground contact, 122.8 min, 1 archive(s)"
+        - "N872RA on 2025-05-01 - ADS-B ground contact, 139.4 min, 1 archive(s)"
+    - airport_code: KNZY
+      icao: KNZY
+      iata: NZY
+      name: "North Island Naval Air Station-Halsey Field"
+      city: "San Diego"
+      region: US-CA
+      country: US
+      type: medium_airport
+      elevation_ft: 26
+      longest_runway_ft: 8001
+      longest_runway_surface: PEM
+      runway_count: 2
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: jet_capable
+      lat: 32.6992
+      lon: -117.215
+      distance_mi: 2.8
+      bearing: SSW
+      tracked_plane_presence_in_window: []
+    - airport_code: KMYF
+      icao: KMYF
+      iata: MYF
+      name: "Montgomery-Gibbs Executive Airport"
+      city: "San Diego"
+      region: US-CA
+      country: US
+      type: small_airport
+      elevation_ft: 427
+      longest_runway_ft: 4598
+      longest_runway_surface: ASP
+      runway_count: 3
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: light_jet_capable
+      lat: 32.8157
+      lon: -117.14
+      distance_mi: 6.4
+      bearing: NNE
+      tracked_plane_presence_in_window: []
+    - airport_code: KNKX
+      icao: KNKX
+      iata: NKX
+      name: "Miramar Marine Corps Air Station - Mitscher Field"
+      city: "San Diego"
+      region: US-CA
+      country: US
+      type: medium_airport
+      elevation_ft: 477
+      longest_runway_ft: 12000
+      longest_runway_surface: CON
+      runway_count: 6
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: jet_capable
+      lat: 32.8684
+      lon: -117.143
+      distance_mi: 9.7
+      bearing: NNE
+      tracked_plane_presence_in_window: []
+    - airport_code: CA84
+      icao: null
+      iata: null
+      name: "Torrey Pines Gliderport"
+      city: "San Diego"
+      region: US-CA
+      country: US
+      type: small_airport
+      elevation_ft: 372
+      longest_runway_ft: 1500
+      longest_runway_surface: DIRT
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 32.8897
+      lon: -117.247
+      distance_mi: 11.3
+      bearing: NNW
+      tracked_plane_presence_in_window: []
+    - airport_code: KNRS
+      icao: KNRS
+      iata: NRS
+      name: "Naval Outlying Field Imperial Beach (Ream Field)"
+      city: "Imperial Beach"
+      region: US-CA
+      country: US
+      type: small_airport
+      elevation_ft: 24
+      longest_runway_ft: 4998
+      longest_runway_surface: PEM
+      runway_count: 2
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: light_jet_capable
+      lat: 32.5667
+      lon: -117.117
+      distance_mi: 12.3
+      bearing: SSE
+      tracked_plane_presence_in_window: []
+    - airport_code: KSEE
+      icao: KSEE
+      iata: SEE
+      name: "Gillespie Field"
+      city: "San Diego/El Cajon"
+      region: US-CA
+      country: US
+      type: small_airport
+      elevation_ft: 388
+      longest_runway_ft: 5342
+      longest_runway_surface: ASP
+      runway_count: 3
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: jet_capable
+      lat: 32.8262
+      lon: -116.972
+      distance_mi: 14.2
+      bearing: ENE
+      tracked_plane_presence_in_window: []
+    - airport_code: KSDM
+      icao: KSDM
+      iata: SDM
+      name: "Brown Field Municipal Airport"
+      city: "San Diego"
+      region: US-CA
+      country: US
+      type: medium_airport
+      elevation_ft: 526
+      longest_runway_ft: 7972
+      longest_runway_surface: PEM
+      runway_count: 2
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: jet_capable
+      lat: 32.57264
+      lon: -116.98002
+      distance_mi: 16.5
+      bearing: SE
+      tracked_plane_presence_in_window: []
+    - airport_code: US-6517
+      icao: null
+      iata: null
+      name: "Black Mountain Open Space Gliderport"
+      city: "San Diego"
+      region: US-CA
+      country: US
+      type: small_airport
+      elevation_ft: 1127
+      longest_runway_ft: null
+      longest_runway_surface: null
+      runway_count: 0
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: unknown
+      lat: 32.98795
+      lon: -117.12226
+      distance_mi: 18.0
+      bearing: NNE
+      tracked_plane_presence_in_window: []
+    - airport_code: US-4244
+      icao: null
+      iata: null
+      name: "Poway Field Gliderport"
+      city: Poway
+      region: US-CA
+      country: US
+      type: small_airport
+      elevation_ft: 560
+      longest_runway_ft: null
+      longest_runway_surface: null
+      runway_count: 0
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: unknown
+      lat: 32.95455
+      lon: -117.01223
+      distance_mi: 18.4
+      bearing: NE
+      tracked_plane_presence_in_window: []
+    - airport_code: MMTJ
+      icao: MMTJ
+      iata: TIJ
+      name: "General Abelardo L. Rodriguez International Airport"
+      city: Tijuana
+      region: MX-BCN
+      country: MX
+      type: large_airport
+      elevation_ft: 489
+      longest_runway_ft: 9711
+      longest_runway_surface: CON
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: true
+      jet_capability: jet_capable
+      lat: 32.54104
+      lon: -116.96998
+      distance_mi: 18.5
+      bearing: SE
+      tracked_plane_presence_in_window: []
+    - airport_code: 0CL3
+      icao: null
+      iata: null
+      name: "John Nichols Field Airport"
+      city: Jamul
+      region: US-CA
+      country: US
+      type: small_airport
+      elevation_ft: 490
+      longest_runway_ft: 2036
+      longest_runway_surface: DIRT
+      runway_count: 2
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 32.63346
+      lon: -116.89056
+      distance_mi: 18.7
+      bearing: ESE
+      tracked_plane_presence_in_window: []
+    - airport_code: KRNM
+      icao: null
+      iata: null
+      name: "Ramona Airport"
+      city: Ramona
+      region: US-CA
+      country: US
+      type: small_airport
+      elevation_ft: 1395
+      longest_runway_ft: 5001
+      longest_runway_surface: ASP
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: jet_capable
+      lat: 33.0392
+      lon: -116.915
+      distance_mi: 26.5
+      bearing: NE
+      tracked_plane_presence_in_window: []
+    - airport_code: 1CA6
+      icao: null
+      iata: null
+      name: "On the Rocks Airport"
+      city: Alpine
+      region: US-CA
+      country: US
+      type: small_airport
+      elevation_ft: 2650
+      longest_runway_ft: 2340
+      longest_runway_surface: GRVL
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 32.7651
+      lon: -116.723
+      distance_mi: 27.2
+      bearing: E
+      tracked_plane_presence_in_window: []
+    - airport_code: KCRQ
+      icao: KCRQ
+      iata: CLD
+      name: "McClellan-Palomar Airport"
+      city: Carlsbad
+      region: US-CA
+      country: US
+      type: medium_airport
+      elevation_ft: 331
+      longest_runway_ft: 4897
+      longest_runway_surface: ASP
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: true
+      jet_capability: light_jet_capable
+      lat: 33.1283
+      lon: -117.28
+      distance_mi: 27.8
+      bearing: N
+      tracked_plane_presence_in_window: []
+    - airport_code: 8CL1
+      icao: null
+      iata: null
+      name: "Lake Wohlford Resort Airport"
+      city: Escondido
+      region: US-CA
+      country: US
+      type: small_airport
+      elevation_ft: 1643
+      longest_runway_ft: 1345
+      longest_runway_surface: TRTD-DIRT-P
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 33.17589
+      lon: -117.00187
+      distance_mi: 32.4
+      bearing: NNE
+      tracked_plane_presence_in_window: []
+    - airport_code: CA75
+      icao: null
+      iata: null
+      name: "Reider Ranch Airport"
+      city: Potrero
+      region: US-CA
+      country: US
+      type: small_airport
+      elevation_ft: 2655
+      longest_runway_ft: 2080
+      longest_runway_surface: DIRT
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 32.63865
+      lon: -116.64087
+      distance_mi: 32.6
+      bearing: ESE
+      tracked_plane_presence_in_window: []
+    - airport_code: CA76
+      icao: null
+      iata: null
+      name: "Flying T Ranch Airport"
+      city: Ramona
+      region: US-CA
+      country: US
+      type: small_airport
+      elevation_ft: 2500
+      longest_runway_ft: 2000
+      longest_runway_surface: TURF-DIRT
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 33.0703
+      lon: -116.752
+      distance_mi: 34.5
+      bearing: NE
+      tracked_plane_presence_in_window: []
+    - airport_code: KOKB
+      icao: KOKB
+      iata: OCN
+      name: "Oceanside Municipal Airport"
+      city: Oceanside
+      region: US-CA
+      country: US
+      type: medium_airport
+      elevation_ft: 28
+      longest_runway_ft: 2712
+      longest_runway_surface: ASP
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 33.21795
+      lon: -117.35168
+      distance_mi: 34.8
+      bearing: NNW
+      tracked_plane_presence_in_window: []
+    - airport_code: 2CA4
+      icao: null
+      iata: null
+      name: "Blackinton Airport"
+      city: "Valley Center"
+      region: US-CA
+      country: US
+      type: small_airport
+      elevation_ft: 1156
+      longest_runway_ft: 2200
+      longest_runway_surface: ASPH-G
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 33.2589
+      lon: -117.092
+      distance_mi: 36.7
+      bearing: N
+      tracked_plane_presence_in_window: []
+    - airport_code: 0CA5
+      icao: null
+      iata: null
+      name: "Hoffman Private Airport"
+      city: "Santa Ysabel"
+      region: US-CA
+      country: US
+      type: small_airport
+      elevation_ft: 3100
+      longest_runway_ft: 1400
+      longest_runway_surface: ASPH
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 33.1431
+      lon: -116.745
+      distance_mi: 38.3
+      bearing: NE
+      tracked_plane_presence_in_window: []
+    - airport_code: 25CA
+      icao: null
+      iata: null
+      name: "Loma Madera Ranch Airport"
+      city: "Santa Ysabel"
+      region: US-CA
+      country: US
+      type: small_airport
+      elevation_ft: 3375
+      longest_runway_ft: 2300
+      longest_runway_surface: ASPH
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 33.1792
+      lon: -116.793
+      distance_mi: 38.4
+      bearing: NE
+      tracked_plane_presence_in_window: []
+tracked_plane_presence:
+  # Was any tracked aircraft on the ground at any field in the list above,
+  # inside the window? Three registers are searched and kept apart, strongest
+  # first. NEVER collapse them into one number.
+  window:
+    from: 2025-04-29
+    to: 2025-05-03
+    days_each_side: 2
+  any_found: true
+  egyptian_su_found: false
+  counts:
+    adsb_ground_contacts: 3
+    adsb_ground_contacts_egyptian_su: 0
+    flights_csv_stays: 0
+    flights_csv_stays_egyptian_su: 0
+    claimed_overlaps: 0
+  from_adsb_traces:
+    - tail: N40JD
+      registry: "United States"
+      side: kirk
+      aircraft_type: PRM1
+      is_egyptian_su: false
+      in_73_tally: false
+      airport_code: KSAN
+      airport_name: "San Diego International Airport"
+      distance_from_arrival_airport_mi: 0.6
+      median_distance_from_that_runway_km: 0.96
+      date_utc: 2025-05-01
+      gap_days_from_event: 0
+      on_ground_first_utc: "2025-05-01T18:16:21.810000Z"
+      on_ground_last_utc: "2025-05-01T19:00:05.880000Z"
+      on_ground_first_local: "2025-05-01 11:16:21 PDT"
+      on_ground_last_local: "2025-05-01 12:00:05 PDT"
+      ground_positions: 107
+      ground_minutes: 43.7
+      adsb_sources:
+        - adsbexchange-samples
+      source_count: 1
+      trace_files:
+        - site/docs/Planes/N40JD/data/recovered/N40JD_2025-05-01_adsbexchange-samples_trace_full.json
+      evidence_class: adsb_public_history
+      # PRESENCE ONLY. A trace never establishes purpose and never establishes who was aboard.
+      cross_source_agreement: "SINGLE SOURCE - not independently corroborated"
+    - tail: N582MM
+      registry: "United States"
+      side: kirk
+      aircraft_type: LJ60
+      is_egyptian_su: false
+      in_73_tally: false
+      airport_code: KSAN
+      airport_name: "San Diego International Airport"
+      distance_from_arrival_airport_mi: 0.4
+      median_distance_from_that_runway_km: 0.58
+      date_utc: 2025-05-01
+      gap_days_from_event: 0
+      on_ground_first_utc: "2025-05-01T20:54:10.920000Z"
+      on_ground_last_utc: "2025-05-01T22:56:58Z"
+      on_ground_first_local: "2025-05-01 13:54:10 PDT"
+      on_ground_last_local: "2025-05-01 15:56:58 PDT"
+      ground_positions: 125
+      ground_minutes: 122.8
+      adsb_sources:
+        - adsbexchange-samples
+      source_count: 1
+      trace_files:
+        - site/docs/Planes/N582MM/data/recovered/N582MM_2025-05-01_adsbexchange-samples_trace_full.json
+      evidence_class: adsb_public_history
+      # PRESENCE ONLY. A trace never establishes purpose and never establishes who was aboard.
+      cross_source_agreement: "SINGLE SOURCE - not independently corroborated"
+    - tail: N872RA
+      registry: "United States"
+      side: kirk
+      aircraft_type: BE40
+      is_egyptian_su: false
+      in_73_tally: false
+      airport_code: KSAN
+      airport_name: "San Diego International Airport"
+      distance_from_arrival_airport_mi: 0.5
+      median_distance_from_that_runway_km: 0.75
+      date_utc: 2025-05-01
+      gap_days_from_event: 0
+      on_ground_first_utc: "2025-05-01T14:53:53.140000Z"
+      on_ground_last_utc: "2025-05-01T17:13:18.090000Z"
+      on_ground_first_local: "2025-05-01 07:53:53 PDT"
+      on_ground_last_local: "2025-05-01 10:13:18 PDT"
+      ground_positions: 255
+      ground_minutes: 139.4
+      adsb_sources:
+        - adsbexchange-samples
+      source_count: 1
+      trace_files:
+        - site/docs/Planes/N872RA/data/recovered/N872RA_2025-05-01_adsbexchange-samples_trace_full.json
+      evidence_class: adsb_public_history
+      # PRESENCE ONLY. A trace never establishes purpose and never establishes who was aboard.
+      cross_source_agreement: "SINGLE SOURCE - not independently corroborated"
+  from_flights_csv: []
+  from_overlaps_csv: []
+  just_outside_the_radius:
+    # A hard radius creates a cliff and a cliff hides evidence. These fields
+    # sit between 40 and 60 miles from the arrival airport. They are NOT counted
+    # as hits and must never be published as ones - they are here so a near miss
+    # is visible rather than silently dropped.
+    outer_radius_miles: 60.0
+    adsb_ground_contacts: []
+    flights_csv_stays: []
+    claimed_overlaps: []
+  coverage:
+    # AN EMPTY RESULT ABOVE IS NOT A FINDING UNLESS THIS SAYS THE DAYS WERE HELD.
+    # aircraft_days_needed = tails x days in the window. aircraft_days_held is
+    # how many of those this repo actually has a trace for. The rest were never
+    # pulled, or the networks heard nothing - the two are indistinguishable here.
+    aircraft_days_needed: 75
+    aircraft_days_held: 6
+    coverage_pct: 8.0
+    tails_with_no_trace_in_window:
+      - N1098L
+      - N560TW
+      - N59906
+      - N888KG
+      - SU-BGM
+      - SU-BND
+      - SU-BTT
+      - SU-BTV
+      - T7-ELL
+    by_side:
+      following:
+        # FOLLOWING is the side the claim is about - the Egyptian SU- tails.
+        # This percentage is the one that decides whether an empty result means
+        # anything at all.
+        tails: 6
+        aircraft_days_needed: 30
+        aircraft_days_held: 1
+        coverage_pct: 3.3
+      kirk:
+        # KIRK-side coverage is what turns an ESTIMATED arrival into an
+        # OBSERVED one. Low here means the arrival times above stay estimates.
+        tails: 6
+        aircraft_days_needed: 30
+        aircraft_days_held: 4
+        coverage_pct: 13.3
+      n1098l:
+        # Other tracked aircraft. A DIFFERENT CLAIM - do not merge the threads.
+        tails: 3
+        aircraft_days_needed: 15
+        aircraft_days_held: 1
+        coverage_pct: 6.7
+counterargument:
+  - "ONE PAIRING IS NOT EVIDENCE. The claim under test is a repetition across many stops, and any single pairing has an innocent explanation a reader will find."
+  - "A field inside the radius is a field a jet COULD have used. Nothing here shows that anyone did use it, or that two aircraft on one ramp had any connection."
+  - "Maintenance is the strongest innocent explanation in this record: Duncan Aviation (Provo and Lincoln) and Yingling (Wichita) are Part 145 Falcon and Gulfstream shops, and a Falcon 7X sitting for weeks at one reads as a maintenance visit."
+  - "Transatlantic customs and fuel stops explain the recurring East Coast fields."
+  - "ERIKA'S SIDE IS THE WEAK SIDE. Her flight logs are reported erased, so any Erika pairing rests on the foreign aircraft's track plus a CLAIMED location for her. See /Planes/Erika-Flight-Logs-Erased."
+what_we_do_not_know:
+  - "Whether Charlie Kirk, Erika Kirk, or any TPUSA party actually flew to this event, or which aircraft they used. The arrival airport above is an inference from the venue city, not a record."
+  - "Whether the estimated arrival and departure times are within hours or within days of the truth, wherever observed_by_adsb is empty."
+  - "What the tracked aircraft were doing at any field they appear at. A trace proves presence, never purpose and never occupancy."
+  - "Whether the receiver networks simply did not hear an aircraft that was there. See the coverage block - an absence is not a finding."

@@ -1,0 +1,658 @@
+# GENERATED FILE - regenerate, do not hand-edit.
+#   node/python: apis/public_open_source/code/airports_near.py --only 20231002_san_jose
+#   The prompt that governs this file: prompts/p_airports_near.md
+schema: ck.speaking.airports_near/1
+generated_utc: "2026-08-24T19:03:26Z"
+generated_by: site/docs/Planes/following/apis/public_open_source/code/airports_near.py
+page:
+  slug: 20231002_san_jose
+  mdx: site/docs/Planes/following/speaking/20231002_san_jose.mdx
+  yaml: site/docs/Planes/following/speaking/20231002_san_jose.yaml
+  url: /Planes/following/speaking/20231002_san_jose
+event:
+  title: "Live Free Tour — San Jose State University"
+  who: Charlie
+  attendee_class: CHARLIE_ONLY
+  charlie_present: "yes"
+  erika_present: not_documented
+  attendance_status: held
+  event_type: campus
+  dates:
+    raw: 2023-10-02
+    first_day: 2023-10-02
+    last_day: 2023-10-02
+    granularity: DAY
+    certainty: EVENT_DATE
+    # PODCAST_PROXY means the date is a podcast RELEASE date and the event was normally 0-7 days earlier. Never publish a same-day claim off one.
+  local_time:
+    raw: null
+    parsed_hhmm: null
+    basis: no_time_published
+    timezone: America/Los_Angeles
+    timezone_method: timezonefinder
+  location:
+    city: "San Jose"
+    state: CA
+    country: USA
+    venue: "San Jose State University"
+    metro_area: "Bay Area CA"
+    geocode:
+      lat: 37.29601
+      lon: -121.81455
+      method: us_census_2024_gazetteer
+      matched: "San Jose city"
+  source: "TPUSA Fall 2023 Live Free press release; @charliekirk11 list"
+  source_url: "https://backend.tpusa.com/wp-content/uploads/2023/08/Press-Release-TPUSA-Tour-Fall-2023-Live-Free.pdf"
+  days_before_sept10_2025: 709
+search:
+  radius_miles: 40
+  window_days_each_side: 2
+  window_from: 2023-09-30
+  window_to: 2023-10-04
+  window_day_count: 5
+  centre: KSJC
+  tails_searched:
+    - N102DZ
+    - N1098L
+    - N2100L
+    - N40JD
+    - N560TW
+    - N582MM
+    - N59906
+    - N872RA
+    - N888KG
+    - SU-BGM
+    - SU-BND
+    - SU-BTT
+    - SU-BTU
+    - SU-BTV
+    - T7-ELL
+  sources_searched:
+    - "recovered ADS-B traces on disk (site/docs/Planes/<TAIL>/data/recovered/)"
+    - site/docs/Planes/following/flights.csv
+    - site/docs/Planes/following/overlaps.csv
+arrival_airport:
+  # ESTIMATE. No published Kirk-side flight record exists for this event unless
+  # the observed_by_adsb block below is non-empty. This is arithmetic on the
+  # event time, not a landing record.
+  chosen_airport:
+    airport_code: KSJC
+    icao: KSJC
+    iata: SJC
+    name: "Mineta San Jose International Airport"
+    city: "San Jose"
+    region: US-CA
+    country: US
+    type: large_airport
+    elevation_ft: 62
+    longest_runway_ft: 11000
+    longest_runway_surface: CON
+    runway_count: 2
+    runways_lighted: true
+    scheduled_service: true
+    jet_capability: jet_capable
+    lat: 37.36245
+    lon: -121.92919
+    distance_mi: 7.8
+    bearing: NW
+  distance_from_event_city_mi: 7.8
+  selection_basis: CURATED_CSV_AND_COMPUTED_NEAREST_JET_FIELD_AGREE
+  curated_value_in_tpusa_events_csv:
+    airport_code: KSJC
+    airport_name: "Norman Y. Mineta San Jose International"
+    distance_mi: 4
+  computed_nearest_jet_capable_field:
+    airport_code: KSJC
+    name: "Mineta San Jose International Airport"
+    distance_mi: 7.8
+    longest_runway_ft: 11000
+  estimated_arrival:
+    date: 2023-10-02
+    local_time: "16:00"
+    timezone: America/Los_Angeles
+    utc: "2023-10-02T23:00:00Z"
+    basis: "no event time published; 19:00 local assumed for arithmetic only; minus 3h"
+    confidence: low
+  estimated_departure:
+    date: 2023-10-02
+    local_time: "23:00"
+    timezone: America/Los_Angeles
+    utc: "2023-10-03T06:00:00Z"
+    basis: "event end + 4h (speech, exit, wheels-up)"
+    confidence: low
+  observed_by_adsb: []
+  observed_by_adsb_note: "NO Kirk-side aircraft is on disk on the ground within 40 miles of KSJC in this window. The arrival and departure above stay estimates."
+airports_within_radius:
+  # Every field a private jet could physically use within the radius.
+  # Heliports, seaplane bases, balloonports and closed fields are excluded -
+  # a business jet cannot use any of them. Everything else is kept, including
+  # every small strip with no scheduled service: those are the point of the sweep.
+  radius_miles: 40
+  centre_airport: KSJC
+  count: 22
+  jet_capable_count: 7
+  light_jet_capable_count: 3
+  no_scheduled_service_count: 18
+  source: "OurAirports (CC0) airports.csv + runways.csv"
+  list:
+    - airport_code: KSJC
+      icao: KSJC
+      iata: SJC
+      name: "Mineta San Jose International Airport"
+      city: "San Jose"
+      region: US-CA
+      country: US
+      type: large_airport
+      elevation_ft: 62
+      longest_runway_ft: 11000
+      longest_runway_surface: CON
+      runway_count: 2
+      runways_lighted: true
+      scheduled_service: true
+      jet_capability: jet_capable
+      lat: 37.36245
+      lon: -121.92919
+      distance_mi: 0.0
+      bearing: N
+      tracked_plane_presence_in_window: []
+    - airport_code: KRHV
+      icao: KRHV
+      iata: RHV
+      name: "Reid-Hillview Airport of Santa Clara County"
+      city: "San Jose"
+      region: US-CA
+      country: US
+      type: small_airport
+      elevation_ft: 135
+      longest_runway_ft: 3100
+      longest_runway_surface: ASP
+      runway_count: 2
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: marginal
+      lat: 37.3329
+      lon: -121.819
+      distance_mi: 6.4
+      bearing: ESE
+      tracked_plane_presence_in_window: []
+    - airport_code: KNUQ
+      icao: KNUQ
+      iata: NUQ
+      name: "Moffett Federal Airfield"
+      city: "Mountain View"
+      region: US-CA
+      country: US
+      type: medium_airport
+      elevation_ft: 32
+      longest_runway_ft: 9197
+      longest_runway_surface: CON
+      runway_count: 2
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: jet_capable
+      lat: 37.4161
+      lon: -122.049
+      distance_mi: 7.6
+      bearing: WNW
+      tracked_plane_presence_in_window: []
+    - airport_code: KPAO
+      icao: KPAO
+      iata: PAO
+      name: "Palo Alto Airport"
+      city: "Palo Alto"
+      region: US-CA
+      country: US
+      type: medium_airport
+      elevation_ft: 4
+      longest_runway_ft: 2441
+      longest_runway_surface: ASP
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 37.4611
+      lon: -122.115
+      distance_mi: 12.3
+      bearing: NW
+      tracked_plane_presence_in_window: []
+    - airport_code: KSQL
+      icao: KSQL
+      iata: SQL
+      name: "San Carlos Airport"
+      city: "San Carlos"
+      region: US-CA
+      country: US
+      type: medium_airport
+      elevation_ft: 5
+      longest_runway_ft: 2621
+      longest_runway_surface: ASP
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: true
+      jet_capability: not_jet_capable
+      lat: 37.51313
+      lon: -122.25084
+      distance_mi: 20.5
+      bearing: WNW
+      tracked_plane_presence_in_window: []
+    - airport_code: US-3395
+      icao: null
+      iata: null
+      name: "Boneyard Airstrip"
+      city: Hayward
+      region: US-CA
+      country: US
+      type: small_airport
+      elevation_ft: 727
+      longest_runway_ft: null
+      longest_runway_surface: null
+      runway_count: 0
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: unknown
+      lat: 37.66337
+      lon: -122.02126
+      distance_mi: 21.4
+      bearing: NNW
+      tracked_plane_presence_in_window: []
+    - airport_code: US-4008
+      icao: null
+      iata: null
+      name: "Isabel Valley Airport"
+      city: "Mount Hamilton"
+      region: US-CA
+      country: US
+      type: small_airport
+      elevation_ft: null
+      longest_runway_ft: null
+      longest_runway_surface: null
+      runway_count: 0
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: unknown
+      lat: 37.32354
+      lon: -121.53896
+      distance_mi: 21.6
+      bearing: E
+      tracked_plane_presence_in_window: []
+    - airport_code: CL77
+      icao: null
+      iata: null
+      name: "Bonny Doon Village Airport"
+      city: "Santa Cruz"
+      region: US-CA
+      country: US
+      type: small_airport
+      elevation_ft: 2020
+      longest_runway_ft: 2200
+      longest_runway_surface: ASPH
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 37.0705
+      lon: -122.127
+      distance_mi: 22.9
+      bearing: SSW
+      tracked_plane_presence_in_window: []
+    - airport_code: KHWD
+      icao: KHWD
+      iata: HWD
+      name: "Hayward Executive Airport"
+      city: Hayward
+      region: US-CA
+      country: US
+      type: small_airport
+      elevation_ft: 52
+      longest_runway_ft: 5694
+      longest_runway_surface: ASP
+      runway_count: 2
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: jet_capable
+      lat: 37.6592
+      lon: -122.122
+      distance_mi: 23.1
+      bearing: NNW
+      tracked_plane_presence_in_window: []
+    - airport_code: KLVK
+      icao: KLVK
+      iata: LVK
+      name: "Livermore Municipal Airport"
+      city: Livermore
+      region: US-CA
+      country: US
+      type: small_airport
+      elevation_ft: 400
+      longest_runway_ft: 5253
+      longest_runway_surface: ASP
+      runway_count: 2
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: jet_capable
+      lat: 37.6934
+      lon: -121.82
+      distance_mi: 23.6
+      bearing: NNE
+      tracked_plane_presence_in_window: []
+    - airport_code: 63CN
+      icao: null
+      iata: null
+      name: "Meadowlark Field"
+      city: Livermore
+      region: US-CA
+      country: US
+      type: small_airport
+      elevation_ft: 730
+      longest_runway_ft: 1860
+      longest_runway_surface: GRVL-TRTD
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 37.6613
+      lon: -121.694
+      distance_mi: 24.3
+      bearing: NNE
+      tracked_plane_presence_in_window: []
+    - airport_code: KE16
+      icao: null
+      iata: null
+      name: "San Martin Airport"
+      city: "San Martin"
+      region: US-CA
+      country: US
+      type: small_airport
+      elevation_ft: 281
+      longest_runway_ft: 3095
+      longest_runway_surface: ASP
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: marginal
+      lat: 37.0816
+      lon: -121.597
+      distance_mi: 26.7
+      bearing: SE
+      tracked_plane_presence_in_window: []
+    - airport_code: 17CL
+      icao: null
+      iata: null
+      name: "Las Trancas Airport"
+      city: Davenport
+      region: US-CA
+      country: US
+      type: small_airport
+      elevation_ft: 125
+      longest_runway_ft: 1300
+      longest_runway_surface: GRAVEL
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 37.08855
+      lon: -122.27369
+      distance_mi: 26.8
+      bearing: SW
+      tracked_plane_presence_in_window: []
+    - airport_code: KOAK
+      icao: KOAK
+      iata: OAK
+      name: "Oakland San Francisco Bay Airport"
+      city: Oakland
+      region: US-CA
+      country: US
+      type: large_airport
+      elevation_ft: 9
+      longest_runway_ft: 10520
+      longest_runway_surface: ASP
+      runway_count: 4
+      runways_lighted: true
+      scheduled_service: true
+      jet_capability: jet_capable
+      lat: 37.72008
+      lon: -122.22118
+      distance_mi: 29.4
+      bearing: NNW
+      tracked_plane_presence_in_window: []
+    - airport_code: KSFO
+      icao: KSFO
+      iata: SFO
+      name: "San Francisco International Airport"
+      city: "San Francisco"
+      region: US-CA
+      country: US
+      type: large_airport
+      elevation_ft: 13
+      longest_runway_ft: 11870
+      longest_runway_surface: ASP
+      runway_count: 4
+      runways_lighted: true
+      scheduled_service: true
+      jet_capability: jet_capable
+      lat: 37.61981
+      lon: -122.37482
+      distance_mi: 30.2
+      bearing: NW
+      tracked_plane_presence_in_window: []
+    - airport_code: KWVI
+      icao: KWVI
+      iata: WVI
+      name: "Watsonville Municipal Airport"
+      city: Watsonville
+      region: US-CA
+      country: US
+      type: small_airport
+      elevation_ft: 163
+      longest_runway_ft: 4502
+      longest_runway_surface: ASP
+      runway_count: 2
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: light_jet_capable
+      lat: 36.9357
+      lon: -121.79
+      distance_mi: 30.5
+      bearing: SSE
+      tracked_plane_presence_in_window: []
+    - airport_code: CA66
+      icao: null
+      iata: null
+      name: "Monterey Bay Academy Airport"
+      city: Watsonville
+      region: US-CA
+      country: US
+      type: small_airport
+      elevation_ft: 70
+      longest_runway_ft: 2200
+      longest_runway_surface: DIRT
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 36.9061
+      lon: -121.843
+      distance_mi: 31.9
+      bearing: S
+      tracked_plane_presence_in_window: []
+    - airport_code: KHAF
+      icao: KHAF
+      iata: HAF
+      name: "Half Moon Bay Airport"
+      city: "Half Moon Bay"
+      region: US-CA
+      country: US
+      type: small_airport
+      elevation_ft: 66
+      longest_runway_ft: 5000
+      longest_runway_surface: ASP
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: jet_capable
+      lat: 37.5134
+      lon: -122.501
+      distance_mi: 33.1
+      bearing: WNW
+      tracked_plane_presence_in_window: []
+    - airport_code: KTCY
+      icao: null
+      iata: null
+      name: "Tracy Municipal Airport"
+      city: Tracy
+      region: US-CA
+      country: US
+      type: small_airport
+      elevation_ft: 193
+      longest_runway_ft: 4001
+      longest_runway_surface: ASP
+      runway_count: 2
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: light_jet_capable
+      lat: 37.689
+      lon: -121.442
+      distance_mi: 35.0
+      bearing: NE
+      tracked_plane_presence_in_window: []
+    - airport_code: KC83
+      icao: null
+      iata: null
+      name: "Byron Airport"
+      city: Byron
+      region: US-CA
+      country: US
+      type: small_airport
+      elevation_ft: 79
+      longest_runway_ft: 4500
+      longest_runway_surface: ASP
+      runway_count: 2
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: light_jet_capable
+      lat: 37.82647
+      lon: -121.6217
+      distance_mi: 36.2
+      bearing: NNE
+      tracked_plane_presence_in_window: []
+    - airport_code: US-7013
+      icao: null
+      iata: null
+      name: "Jeffrey Brown Airport"
+      city: Tracy
+      region: US-CA
+      country: US
+      type: small_airport
+      elevation_ft: 167
+      longest_runway_ft: null
+      longest_runway_surface: null
+      runway_count: 0
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: unknown
+      lat: 37.64926
+      lon: -121.37479
+      distance_mi: 36.3
+      bearing: ENE
+      tracked_plane_presence_in_window: []
+    - airport_code: 1C9
+      icao: null
+      iata: null
+      name: "Frazier Lake Airpark"
+      city: Hollister
+      region: US-CA
+      country: US
+      type: small_airport
+      elevation_ft: 151
+      longest_runway_ft: 3000
+      longest_runway_surface: WATER-G
+      runway_count: 2
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 36.9533
+      lon: -121.465
+      distance_mi: 38.1
+      bearing: SE
+      tracked_plane_presence_in_window: []
+tracked_plane_presence:
+  # Was any tracked aircraft on the ground at any field in the list above,
+  # inside the window? Three registers are searched and kept apart, strongest
+  # first. NEVER collapse them into one number.
+  window:
+    from: 2023-09-30
+    to: 2023-10-04
+    days_each_side: 2
+  any_found: false
+  egyptian_su_found: false
+  counts:
+    adsb_ground_contacts: 0
+    adsb_ground_contacts_egyptian_su: 0
+    flights_csv_stays: 0
+    flights_csv_stays_egyptian_su: 0
+    claimed_overlaps: 0
+  from_adsb_traces: []
+  from_flights_csv: []
+  from_overlaps_csv: []
+  just_outside_the_radius:
+    # A hard radius creates a cliff and a cliff hides evidence. These fields
+    # sit between 40 and 60 miles from the arrival airport. They are NOT counted
+    # as hits and must never be published as ones - they are here so a near miss
+    # is visible rather than silently dropped.
+    outer_radius_miles: 60.0
+    adsb_ground_contacts: []
+    flights_csv_stays: []
+    claimed_overlaps: []
+  coverage:
+    # AN EMPTY RESULT ABOVE IS NOT A FINDING UNLESS THIS SAYS THE DAYS WERE HELD.
+    # aircraft_days_needed = tails x days in the window. aircraft_days_held is
+    # how many of those this repo actually has a trace for. The rest were never
+    # pulled, or the networks heard nothing - the two are indistinguishable here.
+    aircraft_days_needed: 75
+    aircraft_days_held: 4
+    coverage_pct: 5.3
+    tails_with_no_trace_in_window:
+      - N102DZ
+      - N1098L
+      - N2100L
+      - N582MM
+      - N872RA
+      - N888KG
+      - SU-BGM
+      - SU-BND
+      - SU-BTT
+      - SU-BTV
+      - T7-ELL
+    by_side:
+      following:
+        # FOLLOWING is the side the claim is about - the Egyptian SU- tails.
+        # This percentage is the one that decides whether an empty result means
+        # anything at all.
+        tails: 6
+        aircraft_days_needed: 30
+        aircraft_days_held: 1
+        coverage_pct: 3.3
+      kirk:
+        # KIRK-side coverage is what turns an ESTIMATED arrival into an
+        # OBSERVED one. Low here means the arrival times above stay estimates.
+        tails: 6
+        aircraft_days_needed: 30
+        aircraft_days_held: 2
+        coverage_pct: 6.7
+      n1098l:
+        # Other tracked aircraft. A DIFFERENT CLAIM - do not merge the threads.
+        tails: 3
+        aircraft_days_needed: 15
+        aircraft_days_held: 1
+        coverage_pct: 6.7
+counterargument:
+  - "ONE PAIRING IS NOT EVIDENCE. The claim under test is a repetition across many stops, and any single pairing has an innocent explanation a reader will find."
+  - "A field inside the radius is a field a jet COULD have used. Nothing here shows that anyone did use it, or that two aircraft on one ramp had any connection."
+  - "Maintenance is the strongest innocent explanation in this record: Duncan Aviation (Provo and Lincoln) and Yingling (Wichita) are Part 145 Falcon and Gulfstream shops, and a Falcon 7X sitting for weeks at one reads as a maintenance visit."
+  - "Transatlantic customs and fuel stops explain the recurring East Coast fields."
+  - "ERIKA'S SIDE IS THE WEAK SIDE. Her flight logs are reported erased, so any Erika pairing rests on the foreign aircraft's track plus a CLAIMED location for her. See /Planes/Erika-Flight-Logs-Erased."
+what_we_do_not_know:
+  - "Whether Charlie Kirk, Erika Kirk, or any TPUSA party actually flew to this event, or which aircraft they used. The arrival airport above is an inference from the venue city, not a record."
+  - "Whether the estimated arrival and departure times are within hours or within days of the truth, wherever observed_by_adsb is empty."
+  - "What the tracked aircraft were doing at any field they appear at. A trace proves presence, never purpose and never occupancy."
+  - "Whether the receiver networks simply did not hear an aircraft that was there. See the coverage block - an absence is not a finding."

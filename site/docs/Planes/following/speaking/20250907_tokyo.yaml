@@ -1,0 +1,690 @@
+# GENERATED FILE - regenerate, do not hand-edit.
+#   node/python: apis/public_open_source/code/airports_near.py --only 20250907_tokyo
+#   The prompt that governs this file: prompts/p_airports_near.md
+schema: ck.speaking.airports_near/1
+generated_utc: "2026-08-24T19:03:27Z"
+generated_by: site/docs/Planes/following/apis/public_open_source/code/airports_near.py
+page:
+  slug: 20250907_tokyo
+  mdx: site/docs/Planes/following/speaking/20250907_tokyo.mdx
+  yaml: site/docs/Planes/following/speaking/20250907_tokyo.yaml
+  url: /Planes/following/speaking/20250907_tokyo
+event:
+  title: "Charlie Kirk Symposium — Sanseito (last speech)"
+  who: Charlie
+  attendee_class: CHARLIE_ONLY
+  charlie_present: "yes"
+  erika_present: not_documented
+  attendance_status: held
+  event_type: speaking
+  dates:
+    raw: 2025-09-07
+    first_day: 2025-09-07
+    last_day: 2025-09-07
+    granularity: DAY
+    certainty: EVENT_DATE
+    # PODCAST_PROXY means the date is a podcast RELEASE date and the event was normally 0-7 days earlier. Never publish a same-day claim off one.
+  local_time:
+    raw: null
+    parsed_hhmm: null
+    basis: no_time_published
+    timezone: Asia/Tokyo
+    timezone_method: timezonefinder
+  location:
+    city: Tokyo
+    state: null
+    country: Japan
+    venue: "Sabo Kaikan Annex, Tokyo"
+    metro_area: "Tokyo JP"
+    geocode:
+      lat: 35.6895
+      lon: 139.6917
+      method: manual_table
+      matched: "Tokyo, Japan (metropolitan government)"
+  source: "Reuters 11 Sep 2025; Newsweek 'Charlie Kirk's Last Speech'; GPAHE; podcast 2025-11-23 'Charlie's Final Speech' (Sept 6 Tokyo in the episode — date disagrees with the Sept 7 listing)"
+  source_url: "https://www.reuters.com/world/us/days-before-death-charlie-kirk-debuted-his-conservative-message-asia-2025-09-11/"
+  days_before_sept10_2025: 3
+search:
+  radius_miles: 40
+  window_days_each_side: 2
+  window_from: 2025-09-05
+  window_to: 2025-09-09
+  window_day_count: 5
+  centre: RJTT
+  tails_searched:
+    - N102DZ
+    - N1098L
+    - N2100L
+    - N40JD
+    - N560TW
+    - N582MM
+    - N59906
+    - N872RA
+    - N888KG
+    - SU-BGM
+    - SU-BND
+    - SU-BTT
+    - SU-BTU
+    - SU-BTV
+    - T7-ELL
+  sources_searched:
+    - "recovered ADS-B traces on disk (site/docs/Planes/<TAIL>/data/recovered/)"
+    - site/docs/Planes/following/flights.csv
+    - site/docs/Planes/following/overlaps.csv
+arrival_airport:
+  # ESTIMATE. No published Kirk-side flight record exists for this event unless
+  # the observed_by_adsb block below is non-empty. This is arithmetic on the
+  # event time, not a landing record.
+  chosen_airport:
+    airport_code: RJTT
+    icao: RJTT
+    iata: HND
+    name: "Tokyo Haneda International Airport"
+    city: Tokyo
+    region: JP-13
+    country: JP
+    type: large_airport
+    elevation_ft: 35
+    longest_runway_ft: 11024
+    longest_runway_surface: ASP
+    runway_count: 4
+    runways_lighted: true
+    scheduled_service: true
+    jet_capability: jet_capable
+    lat: 35.54968
+    lon: 139.78696
+    distance_mi: 11.0
+    bearing: SSE
+  distance_from_event_city_mi: 11.0
+  selection_basis: CURATED_CSV_AND_COMPUTED_NEAREST_JET_FIELD_AGREE
+  curated_value_in_tpusa_events_csv:
+    airport_code: RJTT
+    airport_name: "Tokyo Haneda"
+    distance_mi: 10
+  computed_nearest_jet_capable_field:
+    airport_code: RJTT
+    name: "Tokyo Haneda International Airport"
+    distance_mi: 11.0
+    longest_runway_ft: 11024
+  estimated_arrival:
+    date: 2025-09-07
+    local_time: "16:00"
+    timezone: Asia/Tokyo
+    utc: "2025-09-07T07:00:00Z"
+    basis: "no event time published; 19:00 local assumed for arithmetic only; minus 3h"
+    confidence: low
+  estimated_departure:
+    date: 2025-09-07
+    local_time: "23:00"
+    timezone: Asia/Tokyo
+    utc: "2025-09-07T14:00:00Z"
+    basis: "event end + 4h (speech, exit, wheels-up)"
+    confidence: low
+  observed_by_adsb: []
+  observed_by_adsb_note: "NO Kirk-side aircraft is on disk on the ground within 40 miles of RJTT in this window. The arrival and departure above stay estimates."
+airports_within_radius:
+  # Every field a private jet could physically use within the radius.
+  # Heliports, seaplane bases, balloonports and closed fields are excluded -
+  # a business jet cannot use any of them. Everything else is kept, including
+  # every small strip with no scheduled service: those are the point of the sweep.
+  radius_miles: 40
+  centre_airport: RJTT
+  count: 24
+  jet_capable_count: 7
+  light_jet_capable_count: 0
+  no_scheduled_service_count: 21
+  source: "OurAirports (CC0) airports.csv + runways.csv"
+  list:
+    - airport_code: RJTT
+      icao: RJTT
+      iata: HND
+      name: "Tokyo Haneda International Airport"
+      city: Tokyo
+      region: JP-13
+      country: JP
+      type: large_airport
+      elevation_ft: 35
+      longest_runway_ft: 11024
+      longest_runway_surface: ASP
+      runway_count: 4
+      runways_lighted: true
+      scheduled_service: true
+      jet_capability: jet_capable
+      lat: 35.54968
+      lon: 139.78696
+      distance_mi: 0.0
+      bearing: N
+      tracked_plane_presence_in_window: []
+    - airport_code: JP-0117
+      icao: null
+      iata: null
+      name: "Urayasu Emergency Runway"
+      city: Urayasu
+      region: JP-12
+      country: JP
+      type: small_airport
+      elevation_ft: null
+      longest_runway_ft: null
+      longest_runway_surface: null
+      runway_count: 0
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: unknown
+      lat: 35.63819
+      lon: 139.93506
+      distance_mi: 10.3
+      bearing: NE
+      tracked_plane_presence_in_window: []
+    - airport_code: JP-0638
+      icao: null
+      iata: null
+      name: "Kisarazu Nakajima Auxiliary Airfield / Kisarazu Heliport"
+      city: Kisarazu
+      region: JP-12
+      country: JP
+      type: small_airport
+      elevation_ft: null
+      longest_runway_ft: null
+      longest_runway_surface: null
+      runway_count: 0
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: unknown
+      lat: 35.42106
+      lon: 139.91993
+      distance_mi: 11.6
+      bearing: SE
+      tracked_plane_presence_in_window: []
+    - airport_code: RJTK
+      icao: null
+      iata: null
+      name: "JGSDF Kisarazu Airfield"
+      city: Kisarazu
+      region: JP-12
+      country: JP
+      type: medium_airport
+      elevation_ft: 10
+      longest_runway_ft: 6004
+      longest_runway_surface: ASP
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: jet_capable
+      lat: 35.3983
+      lon: 139.91
+      distance_mi: 12.5
+      bearing: SSE
+      tracked_plane_presence_in_window: []
+    - airport_code: JP-0361
+      icao: null
+      iata: null
+      name: "Iwabuchi Watergate Auxiliary Airfield"
+      city: "Kita, Tokyo"
+      region: JP-13
+      country: JP
+      type: small_airport
+      elevation_ft: null
+      longest_runway_ft: null
+      longest_runway_surface: null
+      runway_count: 0
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: unknown
+      lat: 35.78203
+      lon: 139.73813
+      distance_mi: 16.3
+      bearing: N
+      tracked_plane_presence_in_window: []
+    - airport_code: RJTF
+      icao: RJTF
+      iata: null
+      name: "Chofu Airport"
+      city: Chofu
+      region: JP-13
+      country: JP
+      type: medium_airport
+      elevation_ft: 141
+      longest_runway_ft: 2625
+      longest_runway_surface: ASPHALT
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: true
+      jet_capability: not_jet_capable
+      lat: 35.6717
+      lon: 139.528
+      distance_mi: 16.8
+      bearing: WNW
+      tracked_plane_presence_in_window: []
+    - airport_code: JP-1900
+      icao: null
+      iata: null
+      name: "JGSDF Narashino Airfield"
+      city: Funabashi
+      region: JP-12
+      country: JP
+      type: small_airport
+      elevation_ft: 95
+      longest_runway_ft: null
+      longest_runway_surface: null
+      runway_count: 0
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: unknown
+      lat: 35.71426
+      lon: 140.06481
+      distance_mi: 19.3
+      bearing: NE
+      tracked_plane_presence_in_window: []
+    - airport_code: RJTA
+      icao: RJTA
+      iata: NJA
+      name: "JMSDF Atsugi Air Base / Naval Air Facility Atsugi"
+      city: "Ayase / Yamato"
+      region: JP-14
+      country: JP
+      type: medium_airport
+      elevation_ft: 205
+      longest_runway_ft: 8000
+      longest_runway_surface: CON
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: jet_capable
+      lat: 35.4546
+      lon: 139.45
+      distance_mi: 20.1
+      bearing: WSW
+      tracked_plane_presence_in_window: []
+    - airport_code: RJTL
+      icao: null
+      iata: null
+      name: "JMSDF Shimofusa Air Base"
+      city: Matsudo
+      region: JP-12
+      country: JP
+      type: medium_airport
+      elevation_ft: 98
+      longest_runway_ft: 7380
+      longest_runway_surface: CON
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: jet_capable
+      lat: 35.7989
+      lon: 140.011
+      distance_mi: 21.3
+      bearing: NE
+      tracked_plane_presence_in_window: []
+    - airport_code: RJTC
+      icao: null
+      iata: null
+      name: "Tachikawa Airfield"
+      city: Tachikawa
+      region: JP-13
+      country: JP
+      type: small_airport
+      elevation_ft: 312
+      longest_runway_ft: 2953
+      longest_runway_surface: UNK
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 35.7121
+      lon: 139.40324
+      distance_mi: 24.3
+      bearing: WNW
+      tracked_plane_presence_in_window: []
+    - airport_code: RJTY
+      icao: RJTY
+      iata: OKO
+      name: "Yokota Air Base"
+      city: Fussa
+      region: JP-13
+      country: JP
+      type: medium_airport
+      elevation_ft: 463
+      longest_runway_ft: 11000
+      longest_runway_surface: CON
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: jet_capable
+      lat: 35.7485
+      lon: 139.34801
+      distance_mi: 28.2
+      bearing: WNW
+      tracked_plane_presence_in_window: []
+    - airport_code: JP-0095
+      icao: null
+      iata: null
+      name: "Tokyo Flight Park Moriya Airstrip"
+      city: Moriya
+      region: JP-08
+      country: JP
+      type: small_airport
+      elevation_ft: null
+      longest_runway_ft: null
+      longest_runway_surface: null
+      runway_count: 0
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: unknown
+      lat: 35.92994
+      lon: 139.97419
+      distance_mi: 28.3
+      bearing: NNE
+      tracked_plane_presence_in_window: []
+    - airport_code: RJTJ
+      icao: null
+      iata: null
+      name: "Iruma Air Base"
+      city: Sayama
+      region: JP-13
+      country: JP
+      type: medium_airport
+      elevation_ft: 295
+      longest_runway_ft: 6562
+      longest_runway_surface: ASP
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: jet_capable
+      lat: 35.8419
+      lon: 139.411
+      distance_mi: 29.2
+      bearing: NW
+      tracked_plane_presence_in_window: []
+    - airport_code: JP-0097
+      icao: null
+      iata: null
+      name: "Sekiyado Gliderport"
+      city: Noda
+      region: JP-12
+      country: JP
+      type: small_airport
+      elevation_ft: null
+      longest_runway_ft: null
+      longest_runway_surface: null
+      runway_count: 0
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: unknown
+      lat: 36.01557
+      lon: 139.81656
+      distance_mi: 32.2
+      bearing: N
+      tracked_plane_presence_in_window: []
+    - airport_code: JP-0096
+      icao: null
+      iata: null
+      name: "Bando Auxiliary Airfield"
+      city: Bando
+      region: JP-08
+      country: JP
+      type: small_airport
+      elevation_ft: null
+      longest_runway_ft: null
+      longest_runway_surface: null
+      runway_count: 0
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: unknown
+      lat: 36.01571
+      lon: 139.87359
+      distance_mi: 32.6
+      bearing: N
+      tracked_plane_presence_in_window: []
+    - airport_code: JP-0320
+      icao: null
+      iata: null
+      name: "Honda Airport"
+      city: Kawajima
+      region: JP-11
+      country: JP
+      type: small_airport
+      elevation_ft: null
+      longest_runway_ft: null
+      longest_runway_surface: null
+      runway_count: 0
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: unknown
+      lat: 35.97633
+      lon: 139.52412
+      distance_mi: 33.0
+      bearing: NNW
+      tracked_plane_presence_in_window: []
+    - airport_code: JP-0092
+      icao: null
+      iata: null
+      name: "Otone Airfield"
+      city: Kawachi
+      region: JP-08
+      country: JP
+      type: small_airport
+      elevation_ft: 8
+      longest_runway_ft: 1970
+      longest_runway_surface: ASPHALT
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 35.85937
+      lon: 140.24122
+      distance_mi: 33.3
+      bearing: NE
+      tracked_plane_presence_in_window: []
+    - airport_code: JP-0098
+      icao: null
+      iata: null
+      name: "Hoshubana Gliderport"
+      city: Kasukabe
+      region: JP-11
+      country: JP
+      type: small_airport
+      elevation_ft: null
+      longest_runway_ft: null
+      longest_runway_surface: null
+      runway_count: 0
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: unknown
+      lat: 36.03903
+      lon: 139.81066
+      distance_mi: 33.8
+      bearing: N
+      tracked_plane_presence_in_window: []
+    - airport_code: JP-0395
+      icao: null
+      iata: null
+      name: "Mint Airstrip"
+      city: Kawajima
+      region: JP-11
+      country: JP
+      type: small_airport
+      elevation_ft: null
+      longest_runway_ft: null
+      longest_runway_surface: null
+      runway_count: 0
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: unknown
+      lat: 36.00216
+      lon: 139.498
+      distance_mi: 35.2
+      bearing: NNW
+      tracked_plane_presence_in_window: []
+    - airport_code: JP-0093
+      icao: null
+      iata: null
+      name: "Ryugasaki Airfield"
+      city: Ryugasaki
+      region: JP-08
+      country: JP
+      type: small_airport
+      elevation_ft: null
+      longest_runway_ft: 2625
+      longest_runway_surface: ASPHALT
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 35.90628
+      lon: 140.24215
+      distance_mi: 35.5
+      bearing: NE
+      tracked_plane_presence_in_window: []
+    - airport_code: JP-0397
+      icao: null
+      iata: null
+      name: "Yuhikoku Kawajima Airstrip"
+      city: Kawajima
+      region: JP-11
+      country: JP
+      type: small_airport
+      elevation_ft: null
+      longest_runway_ft: null
+      longest_runway_surface: null
+      runway_count: 0
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: unknown
+      lat: 36.01145
+      lon: 139.50029
+      distance_mi: 35.7
+      bearing: NNW
+      tracked_plane_presence_in_window: []
+    - airport_code: RJAA
+      icao: RJAA
+      iata: NRT
+      name: "Narita International Airport"
+      city: Narita
+      region: JP-12
+      country: JP
+      type: large_airport
+      elevation_ft: 141
+      longest_runway_ft: 13123
+      longest_runway_surface: ASP
+      runway_count: 2
+      runways_lighted: true
+      scheduled_service: true
+      jet_capability: jet_capable
+      lat: 35.76858
+      lon: 140.38871
+      distance_mi: 37.0
+      bearing: ENE
+      tracked_plane_presence_in_window: []
+    - airport_code: JP-0394
+      icao: null
+      iata: null
+      name: "Tokyo Flying Club Airstrip"
+      city: Konosu
+      region: JP-11
+      country: JP
+      type: small_airport
+      elevation_ft: null
+      longest_runway_ft: null
+      longest_runway_surface: null
+      runway_count: 0
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: unknown
+      lat: 36.03546
+      lon: 139.50088
+      distance_mi: 37.2
+      bearing: NNW
+      tracked_plane_presence_in_window: []
+    - airport_code: RJTE
+      icao: null
+      iata: null
+      name: "JMSDF Tateyama Air Base"
+      city: Tateyama
+      region: JP-12
+      country: JP
+      type: medium_airport
+      elevation_ft: 10
+      longest_runway_ft: 984
+      longest_runway_surface: CON
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 34.9871
+      lon: 139.82899
+      distance_mi: 38.9
+      bearing: S
+      tracked_plane_presence_in_window: []
+tracked_plane_presence:
+  # Was any tracked aircraft on the ground at any field in the list above,
+  # inside the window? Three registers are searched and kept apart, strongest
+  # first. NEVER collapse them into one number.
+  window:
+    from: 2025-09-05
+    to: 2025-09-09
+    days_each_side: 2
+  any_found: false
+  egyptian_su_found: false
+  counts:
+    adsb_ground_contacts: 0
+    adsb_ground_contacts_egyptian_su: 0
+    flights_csv_stays: 0
+    flights_csv_stays_egyptian_su: 0
+    claimed_overlaps: 0
+  from_adsb_traces: []
+  from_flights_csv: []
+  from_overlaps_csv: []
+  just_outside_the_radius:
+    # A hard radius creates a cliff and a cliff hides evidence. These fields
+    # sit between 40 and 60 miles from the arrival airport. They are NOT counted
+    # as hits and must never be published as ones - they are here so a near miss
+    # is visible rather than silently dropped.
+    outer_radius_miles: 60.0
+    adsb_ground_contacts: []
+    flights_csv_stays: []
+    claimed_overlaps: []
+  coverage:
+    # AN EMPTY RESULT ABOVE IS NOT A FINDING UNLESS THIS SAYS THE DAYS WERE HELD.
+    # aircraft_days_needed = tails x days in the window. aircraft_days_held is
+    # how many of those this repo actually has a trace for. The rest were never
+    # pulled, or the networks heard nothing - the two are indistinguishable here.
+    aircraft_days_needed: 75
+    aircraft_days_held: 33
+    coverage_pct: 44.0
+    tails_with_no_trace_in_window:
+      - SU-BTT
+      - SU-BTU
+      - SU-BTV
+    by_side:
+      following:
+        # FOLLOWING is the side the claim is about - the Egyptian SU- tails.
+        # This percentage is the one that decides whether an empty result means
+        # anything at all.
+        tails: 6
+        aircraft_days_needed: 30
+        aircraft_days_held: 7
+        coverage_pct: 23.3
+      kirk:
+        # KIRK-side coverage is what turns an ESTIMATED arrival into an
+        # OBSERVED one. Low here means the arrival times above stay estimates.
+        tails: 6
+        aircraft_days_needed: 30
+        aircraft_days_held: 19
+        coverage_pct: 63.3
+      n1098l:
+        # Other tracked aircraft. A DIFFERENT CLAIM - do not merge the threads.
+        tails: 3
+        aircraft_days_needed: 15
+        aircraft_days_held: 7
+        coverage_pct: 46.7
+counterargument:
+  - "ONE PAIRING IS NOT EVIDENCE. The claim under test is a repetition across many stops, and any single pairing has an innocent explanation a reader will find."
+  - "A field inside the radius is a field a jet COULD have used. Nothing here shows that anyone did use it, or that two aircraft on one ramp had any connection."
+  - "Maintenance is the strongest innocent explanation in this record: Duncan Aviation (Provo and Lincoln) and Yingling (Wichita) are Part 145 Falcon and Gulfstream shops, and a Falcon 7X sitting for weeks at one reads as a maintenance visit."
+  - "Transatlantic customs and fuel stops explain the recurring East Coast fields."
+  - "ERIKA'S SIDE IS THE WEAK SIDE. Her flight logs are reported erased, so any Erika pairing rests on the foreign aircraft's track plus a CLAIMED location for her. See /Planes/Erika-Flight-Logs-Erased."
+what_we_do_not_know:
+  - "Whether Charlie Kirk, Erika Kirk, or any TPUSA party actually flew to this event, or which aircraft they used. The arrival airport above is an inference from the venue city, not a record."
+  - "Whether the estimated arrival and departure times are within hours or within days of the truth, wherever observed_by_adsb is empty."
+  - "What the tracked aircraft were doing at any field they appear at. A trace proves presence, never purpose and never occupancy."
+  - "Whether the receiver networks simply did not hear an aircraft that was there. See the coverage block - an absence is not a finding."

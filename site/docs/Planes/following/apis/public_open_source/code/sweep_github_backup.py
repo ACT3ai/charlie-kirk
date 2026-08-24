@@ -51,18 +51,63 @@ dates = sorted(work)
 print(f"{len(dates)} dates to ask adsb.lol's off-site backup about "
       f"(~2 GB streamed each, nothing stored unless it hits)\n")
 
+
+def list_assets(repo, tag):
+    """Which files does this release actually ship? Returns them in sort order, so
+    a split tar (`.tar.aa`, `.tar.ab`, ...) concatenates back into one stream."""
+    import urllib.request, urllib.error
+    api = f"https://api.github.com/repos/{repo}/releases/tags/{tag}"
+    req = urllib.request.Request(api, headers={"Accept": "application/vnd.github+json",
+                                               "User-Agent": "ck-recovery"})
+    tok = os.environ.get("GITHUB_TOKEN")
+    if tok: req.add_header("Authorization", f"Bearer {tok}")
+    try:
+        with urllib.request.urlopen(req, timeout=30) as r:
+            j = json.load(r)
+    except Exception:
+        return []
+    return sorted(a["name"] for a in j.get("assets", []) if ".tar" in a["name"])
+
+
+def write_out(results, dates):
+    with open(OUT, "w") as f:
+        json.dump({"generated_utc": NOW, "year_floor": YEAR_FLOOR,
+                   "what_this_is": "adsb.lol's off-site GitHub Release backup, asked about every "
+                                   "alleged-overlap date that both free daily archives missed",
+                   "reading": "A MISS here means adsb.lol's feeders genuinely recorded nothing for that "
+                              "aircraft that day. It is not evidence of removal, and it is not "
+                              "independent of the adsb.lol live API -- same organisation, same data.",
+                   "note_on_split_releases": "Most days ship the tar SPLIT into .tar.aa/.tar.ab. An "
+                                             "earlier run of this script asked for a single .tar, got "
+                                             "404, and recorded 16 dates as unavailable that are in "
+                                             "fact published. The asset list is now read from the API.",
+                   "dates": len(dates), "results": results}, f, indent=2)
+        f.write("\n")
+
 results = []
 for i, date in enumerate(dates, 1):
     tails = sorted(t for t in work[date] if t in HEX)
     tag = f"v{date.replace('-', '.')}-planes-readsb-prod-0"
-    url = (f"https://github.com/adsblol/globe_history_{date[:4]}/releases/download/"
-           f"{tag}/{tag}.tar")
+    repo = f"adsblol/globe_history_{date[:4]}"
+    # THE RELEASE IS OFTEN SPLIT. Most days ship `<tag>.tar.aa` + `<tag>.tar.ab`
+    # rather than a single `<tag>.tar`, and asking for the wrong name 404s -- which
+    # looks exactly like "the day is not published" and is not. Ask the API which
+    # assets exist, then stream them IN ORDER through one tar.
+    assets = list_assets(repo, tag)
+    urls = [f"https://github.com/{repo}/releases/download/{tag}/{a}" for a in assets]
     inc = []
     for t in tails: inc += ["--include", f"*trace_full_{HEX[t]}.json"]
     tmp = tempfile.mkdtemp(prefix="ckgh_")
     rc, hits = None, []
+    if not urls:
+        results.append({"date": date, "tails_asked": tails, "release": tag, "url": None,
+                        "assets": [], "curl_exit": None, "hits": [],
+                        "verdict": "RELEASE_NOT_PUBLISHED"})
+        print(f"  [{i:>2}/{len(dates)}] {date}  {','.join(tails):<15} RELEASE_NOT_PUBLISHED")
+        write_out(results, dates)
+        continue
     try:
-        p1 = subprocess.Popen(["curl", "-sL", "--fail", url], stdout=subprocess.PIPE)
+        p1 = subprocess.Popen(["curl", "-sL", "--fail"] + urls, stdout=subprocess.PIPE)
         p2 = subprocess.Popen(["tar", "-xf", "-", "--fast-read"] + inc,
                               stdin=p1.stdout, cwd=tmp,
                               stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
@@ -78,7 +123,7 @@ for i, date in enumerate(dates, 1):
             with open(os.path.join(dest, name + ".meta.json"), "w") as m:
                 json.dump({"retrieved_utc": NOW, "source": "adsblol-github-backup",
                            "source_role": "adsb.lol's own off-site backup, one release per day, ODbL",
-                           "url": url, "release_tag": tag, "http_status": 200,
+                           "url": urls, "release_tag": tag, "http_status": 200,
                            "bytes": os.path.getsize(f), "tail": tail, "hex": h,
                            "utc_date": date,
                            "note": "pulled because BOTH free daily archives returned nothing for this "
@@ -88,23 +133,14 @@ for i, date in enumerate(dates, 1):
     finally:
         shutil.rmtree(tmp, ignore_errors=True)
 
-    rec = {"date": date, "tails_asked": tails, "release": tag, "url": url,
-           "curl_exit": rc, "hits": hits,
+    rec = {"date": date, "tails_asked": tails, "release": tag, "url": urls,
+           "assets": assets, "curl_exit": rc, "hits": hits,
            "verdict": "RECOVERED_FROM_OFFSITE_BACKUP" if hits
                       else ("RELEASE_NOT_AVAILABLE" if rc not in (0, None) else "NOT_IN_THE_BACKUP_EITHER")}
     results.append(rec)
     print(f"  [{i:>2}/{len(dates)}] {date}  {','.join(tails):<15} {rec['verdict']}"
           + (f"  <== {','.join(hits)}" if hits else ""))
-    # write as we go, so a run that is stopped early still leaves a usable record
-    with open(OUT, "w") as f:
-        json.dump({"generated_utc": NOW, "year_floor": YEAR_FLOOR,
-                   "what_this_is": "adsb.lol's off-site GitHub Release backup, asked about every "
-                                   "alleged-overlap date that both free daily archives missed",
-                   "reading": "A MISS here means adsb.lol's feeders genuinely recorded nothing for that "
-                              "aircraft that day. It is not evidence of removal, and it is not "
-                              "independent of the adsb.lol live API -- same organisation, same data.",
-                   "dates": len(dates), "results": results}, f, indent=2)
-        f.write("\n")
+    write_out(results, dates)   # as we go, so a stopped run still leaves a record
 
 got = sum(1 for r in results if r["hits"])
 print(f"\n{got} of {len(dates)} dates produced a trace from the off-site backup.")

@@ -19,6 +19,11 @@ two pulls is how we show that something that used to be retrievable no longer is
 | `opensky.js` | OpenSky Network | Historical flight list. **Needs OAuth2 credentials since March 2026.** |
 | `wayback.js` | Internet Archive CDX | Snapshot history of the tracking pages — the scrubbing detector. |
 | `ourairports.js` | OurAirports (CC0) | Public-domain airport and runway reference data. |
+| `fetch_event_windows.py` | adsb.lol + globe.airplanes.live | **Pulls the aircraft-days the speaking-event windows need.** Works out every (tail, date) inside +/- N days of every sourced Kirk/TPUSA speaking event, skips what is on disk, pulls the rest from both free archives. Records a MISS as a `.miss.json.meta.json` so "asked and got nothing" never gets confused with "never asked". `--control` runs the same dates against unrelated aircraft. |
+| `airports_near.py` | local (OurAirports + Census + the recovered traces) | **Builds one `.yaml` beside every speaking-event page**: the field they probably landed at, every airport within 40 miles a private jet could also use, and every tracked tail found at any of them inside the window. Governed by `prompts/p_airports_near.md`. |
+| `lib/geo.py` | OurAirports + US Census 2024 Gazetteer | Airport geometry and city geocoding. Every answer carries its distance and its method — a nearest-field label is never returned bare. |
+| `lib/traces.py` | the recovered traces on disk | Turns raw ADS-B traces into airport VISITS: on-ground runs resolved to a field with the median distance attached, plus low passes reported separately. |
+| `query_speaking_weeks.py` | xAI Grok `x_search` | One Grok query per calendar week, Jan 2022–Oct 2025, for Charlie Kirk / TPUSA speaking posts on X. Writes `speaking/week/{year}/week_{NN}.md`. Resume-safe. |
 
 ## The recovery harness
 
@@ -35,6 +40,8 @@ seriously and went looking. Run in this order.
 | `flightaware_activity.js` | A fifth free route. FlightAware serves scripts (200) and ships its activity log server-rendered in `trackpollBootstrap` — named airports and actual off/on times, no key. **Reaches about one week back**, so it is a CURRENT-activity source, not a recovery route. |
 | `control_page_probe.js` | **RUN THIS BEFORE CALLING ANY 403 A REMOVAL.** Asks the same five tracking sites about five aircraft with nothing to do with this case. Writes `../data/recovery/page_control_probe.json`. |
 | `extract_wayback_flights.py` | Re-parses the archived tracking-site HTML into flight rows properly, superseding the inline parse in `recover_erased.js`. |
+| `sweep_github_backup.py` | Asks adsb.lol's own OFF-SITE GitHub Release backup about every alleged-overlap date that both free daily archives missed. Streams each ~2 GB release through `tar` without storing it. **Releases are often SPLIT into `.tar.aa`/`.tar.ab`** — the asset list is read from the GitHub API, because asking for a single `.tar` 404s and that looks exactly like "the day is not published". |
+| `write_recovered_readmes.py` | Writes the `README.md` index in each `site/docs/Planes/<TAIL>/data/recovered/` — which sources are represented, how many files and days each carries, and what that source's silence does and does not mean. |
 | `build_recovery_report.py` | Assembles everything on disk into `../data/recovery/fleet_recovery_matrix.json` and prints the per-aircraft markdown tables the site publishes. |
 
 ### What the harness found, so the next person does not repeat the mistake
@@ -162,3 +169,44 @@ with backoff, and says so in the sidecar when it still fails.
 An empty response is not a finding. **An empty response plus the date we asked plus
 what the source is capable of holding** is a finding. Every script here writes all
 three.
+
+
+## The speaking-event airport sweep, added 24 August 2026
+
+`airports_near.py` and `fetch_event_windows.py` answer one question across all 139
+sourced speaking events at once: **for each place Charlie Kirk, Erika Kirk, or TPUSA
+spoke, which airports could a private jet have used, and was any tracked aircraft at one
+of them within two days.**
+
+    python3 fetch_event_windows.py --plan        # what the windows still need
+    python3 fetch_event_windows.py --run         # pull it (nothing is overwritten)
+    python3 airports_near.py --rebuild-traces --report
+
+The full contract — the yaml hierarchy, what each block may and may not be read as
+saying, and how to add a new location — is `{ROOT_DIR}/prompts/p_airports_near.md`.
+
+**Three design decisions worth defending, because each one exists to stop a specific
+wrong conclusion:**
+
+* **The radius is soft.** KSLC to KPVU is 41.6 miles. At a flat 40-mile cutoff the
+  23 April 2024 Salt Lake City pairing — one of only two in this repo's own data that
+  survives a same-metro test — disappears by 1.6 miles. The search therefore runs to 60
+  miles and reports the outer ring in a separate `just_outside_the_radius` block that is
+  explicitly not a hit. A hard radius creates a cliff, and a cliff hides evidence.
+* **Two archives are merged, and their disagreement is published.** The same
+  aircraft-day usually comes back from both adsb.lol and airplanes.live. They are merged
+  into one record carrying `cross_source_agreement`. Where the two disagree by more than
+  two minutes on first contact, the file says DISAGREE and by how much. It never picks
+  one.
+* **Every file carries a `coverage` block.** `aircraft_days_needed` versus
+  `aircraft_days_held`. An empty result with low coverage is an unasked question, not a
+  negative finding, and the block is what stops the next reader treating it as one.
+
+**What the first full run found, reported as it must be — as a fraction:** an Egyptian
+SU- tail inside 40 miles and 2 days of **1 of 139** sourced speaking events (10 Sep 2025,
+Orem/UVU, KPVU), plus **one near miss** in the outer ring (23 Apr 2024, Salt Lake City —
+SU-BTT and SU-BND on the ground at Provo, 41.3 and 41.6 miles from KSLC, gap 0 days).
+Both are Utah. That reproduces the sceptics' result off this repo's own primary data, and
+it is a statement about what can currently be proven, not about what happened: 139 rows
+is every Kirk/TPUSA location this repo can source and it is nowhere near every location
+the Kirks were at, with exactly one row placing Erika Kirk anywhere before 10 Sep 2025.

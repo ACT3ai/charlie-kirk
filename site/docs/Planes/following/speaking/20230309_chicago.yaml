@@ -1,0 +1,1222 @@
+# GENERATED FILE - regenerate, do not hand-edit.
+#   node/python: apis/public_open_source/code/airports_near.py --only 20230309_chicago
+#   The prompt that governs this file: prompts/p_airports_near.md
+schema: ck.speaking.airports_near/1
+generated_utc: "2026-08-24T19:03:26Z"
+generated_by: site/docs/Planes/following/apis/public_open_source/code/airports_near.py
+page:
+  slug: 20230309_chicago
+  mdx: site/docs/Planes/following/speaking/20230309_chicago.mdx
+  yaml: site/docs/Planes/following/speaking/20230309_chicago.yaml
+  url: /Planes/following/speaking/20230309_chicago
+event:
+  title: "Live Free Tour — University of Illinois Chicago"
+  who: Charlie
+  attendee_class: CHARLIE_ONLY
+  charlie_present: "yes"
+  erika_present: not_documented
+  attendance_status: held
+  event_type: campus
+  dates:
+    raw: 2023-03-09
+    first_day: 2023-03-09
+    last_day: 2023-03-09
+    granularity: DAY
+    certainty: EVENT_DATE
+    # PODCAST_PROXY means the date is a podcast RELEASE date and the event was normally 0-7 days earlier. Never publish a same-day claim off one.
+  local_time:
+    raw: null
+    parsed_hhmm: null
+    basis: no_time_published
+    timezone: America/Chicago
+    timezone_method: timezonefinder
+  location:
+    city: Chicago
+    state: IL
+    country: USA
+    venue: "University of Illinois Chicago"
+    metro_area: "Chicago IL"
+    geocode:
+      lat: 41.83705
+      lon: -87.68494
+      method: us_census_2024_gazetteer
+      matched: "Chicago city"
+  source: "TPUSA Spring 2023 Live Free press release"
+  source_url: "https://backend.tpusa.com/wp-content/uploads/2023/01/Press-Release-TPUSA-Tour-Spring-2023-Live-Free.pdf"
+  days_before_sept10_2025: 916
+search:
+  radius_miles: 40
+  window_days_each_side: 2
+  window_from: 2023-03-07
+  window_to: 2023-03-11
+  window_day_count: 5
+  centre: KORD
+  tails_searched:
+    - N102DZ
+    - N1098L
+    - N2100L
+    - N40JD
+    - N560TW
+    - N582MM
+    - N59906
+    - N872RA
+    - N888KG
+    - SU-BGM
+    - SU-BND
+    - SU-BTT
+    - SU-BTU
+    - SU-BTV
+    - T7-ELL
+  sources_searched:
+    - "recovered ADS-B traces on disk (site/docs/Planes/<TAIL>/data/recovered/)"
+    - site/docs/Planes/following/flights.csv
+    - site/docs/Planes/following/overlaps.csv
+arrival_airport:
+  # ESTIMATE. No published Kirk-side flight record exists for this event unless
+  # the observed_by_adsb block below is non-empty. This is arithmetic on the
+  # event time, not a landing record.
+  chosen_airport:
+    airport_code: KORD
+    icao: KORD
+    iata: ORD
+    name: "Chicago O'Hare International Airport"
+    city: Chicago
+    region: US-IL
+    country: US
+    type: large_airport
+    elevation_ft: 680
+    longest_runway_ft: 13000
+    longest_runway_surface: CON
+    runway_count: 8
+    runways_lighted: true
+    scheduled_service: true
+    jet_capability: jet_capable
+    lat: 41.9786
+    lon: -87.9048
+    distance_mi: 14.9
+    bearing: NW
+  distance_from_event_city_mi: 14.9
+  selection_basis: CURATED_tpusa_events.csv_VALUE_KEPT_computed_nearest_jet_field_DIFFERS
+  curated_value_in_tpusa_events_csv:
+    airport_code: KORD
+    airport_name: "Chicago O'Hare International"
+    distance_mi: 17
+  computed_nearest_jet_capable_field:
+    airport_code: KMDW
+    name: "Chicago Midway International Airport"
+    distance_mi: 5.0
+    longest_runway_ft: 6522
+  estimated_arrival:
+    date: 2023-03-09
+    local_time: "16:00"
+    timezone: America/Chicago
+    utc: "2023-03-09T22:00:00Z"
+    basis: "no event time published; 19:00 local assumed for arithmetic only; minus 3h"
+    confidence: low
+  estimated_departure:
+    date: 2023-03-09
+    local_time: "23:00"
+    timezone: America/Chicago
+    utc: "2023-03-10T05:00:00Z"
+    basis: "event end + 4h (speech, exit, wheels-up)"
+    confidence: low
+  observed_by_adsb: []
+  observed_by_adsb_note: "NO Kirk-side aircraft is on disk on the ground within 40 miles of KORD in this window. The arrival and departure above stay estimates."
+airports_within_radius:
+  # Every field a private jet could physically use within the radius.
+  # Heliports, seaplane bases, balloonports and closed fields are excluded -
+  # a business jet cannot use any of them. Everything else is kept, including
+  # every small strip with no scheduled service: those are the point of the sweep.
+  radius_miles: 40
+  centre_airport: KORD
+  count: 50
+  jet_capable_count: 8
+  light_jet_capable_count: 1
+  no_scheduled_service_count: 47
+  source: "OurAirports (CC0) airports.csv + runways.csv"
+  list:
+    - airport_code: KORD
+      icao: KORD
+      iata: ORD
+      name: "Chicago O'Hare International Airport"
+      city: Chicago
+      region: US-IL
+      country: US
+      type: large_airport
+      elevation_ft: 680
+      longest_runway_ft: 13000
+      longest_runway_surface: CON
+      runway_count: 8
+      runways_lighted: true
+      scheduled_service: true
+      jet_capability: jet_capable
+      lat: 41.9786
+      lon: -87.9048
+      distance_mi: 0.0
+      bearing: N
+      tracked_plane_presence_in_window: []
+    - airport_code: KPWK
+      icao: null
+      iata: PWK
+      name: "Chicago Executive Airport"
+      city: "Chicago/Prospect Heights/Wheeling"
+      region: US-IL
+      country: US
+      type: medium_airport
+      elevation_ft: 647
+      longest_runway_ft: 5001
+      longest_runway_surface: ASP
+      runway_count: 2
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: jet_capable
+      lat: 42.11422
+      lon: -87.90149
+      distance_mi: 9.4
+      bearing: N
+      tracked_plane_presence_in_window: []
+    - airport_code: K06C
+      icao: null
+      iata: null
+      name: "Schaumburg Regional Airport"
+      city: Chicago/Schaumburg
+      region: US-IL
+      country: US
+      type: small_airport
+      elevation_ft: 801
+      longest_runway_ft: 3800
+      longest_runway_surface: CONC-G
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: marginal
+      lat: 41.9893
+      lon: -88.1012
+      distance_mi: 10.1
+      bearing: W
+      tracked_plane_presence_in_window: []
+    - airport_code: KMDW
+      icao: KMDW
+      iata: MDW
+      name: "Chicago Midway International Airport"
+      city: Chicago
+      region: US-IL
+      country: US
+      type: large_airport
+      elevation_ft: 620
+      longest_runway_ft: 6522
+      longest_runway_surface: CON
+      runway_count: 4
+      runways_lighted: true
+      scheduled_service: true
+      jet_capability: jet_capable
+      lat: 41.786
+      lon: -87.7524
+      distance_mi: 15.4
+      bearing: SSE
+      tracked_plane_presence_in_window: []
+    - airport_code: LL22
+      icao: null
+      iata: null
+      name: "Brookeridge Air Park"
+      city: "Downers Grove"
+      region: US-IL
+      country: US
+      type: small_airport
+      elevation_ft: 750
+      longest_runway_ft: 2813
+      longest_runway_surface: TURF
+      runway_count: 2
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 41.7327
+      lon: -87.9993
+      distance_mi: 17.7
+      bearing: SSW
+      tracked_plane_presence_in_window: []
+    - airport_code: KDPA
+      icao: KDPA
+      iata: DPA
+      name: "Dupage Airport"
+      city: "Chicago/West Chicago"
+      region: US-IL
+      country: US
+      type: medium_airport
+      elevation_ft: 759
+      longest_runway_ft: 7571
+      longest_runway_surface: CON
+      runway_count: 4
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: jet_capable
+      lat: 41.9078
+      lon: -88.2486
+      distance_mi: 18.3
+      bearing: WSW
+      tracked_plane_presence_in_window: []
+    - airport_code: K1C5
+      icao: null
+      iata: null
+      name: "Bolingbrook's Clow International Airport"
+      city: Bolingbrook
+      region: US-IL
+      country: US
+      type: small_airport
+      elevation_ft: 670
+      longest_runway_ft: 3360
+      longest_runway_surface: ASPH-G
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: marginal
+      lat: 41.696
+      lon: -88.1292
+      distance_mi: 22.7
+      bearing: SSW
+      tracked_plane_presence_in_window: []
+    - airport_code: LL10
+      icao: null
+      iata: null
+      name: "Naper Aero Club Airport"
+      city: Naperville
+      region: US-IL
+      country: US
+      type: small_airport
+      elevation_ft: 708
+      longest_runway_ft: 2537
+      longest_runway_surface: ASPH
+      runway_count: 2
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 41.7348
+      lon: -88.2034
+      distance_mi: 22.8
+      bearing: SW
+      tracked_plane_presence_in_window: []
+    - airport_code: KC81
+      icao: null
+      iata: null
+      name: "Campbell Airport"
+      city: Grayslake
+      region: US-IL
+      country: US
+      type: small_airport
+      elevation_ft: 788
+      longest_runway_ft: 3573
+      longest_runway_surface: COP
+      runway_count: 2
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 42.3246
+      lon: -88.0741
+      distance_mi: 25.4
+      bearing: NNW
+      tracked_plane_presence_in_window: []
+    - airport_code: 7IS5
+      icao: null
+      iata: null
+      name: "Koppie Airport"
+      city: Gilberts
+      region: US-IL
+      country: US
+      type: small_airport
+      elevation_ft: 890
+      longest_runway_ft: 2300
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 42.1214
+      lon: -88.3781
+      distance_mi: 26.2
+      bearing: WNW
+      tracked_plane_presence_in_window: []
+    - airport_code: LL97
+      icao: null
+      iata: null
+      name: "Rockenbach Airport"
+      city: "Round Lake"
+      region: US-IL
+      country: US
+      type: small_airport
+      elevation_ft: 800
+      longest_runway_ft: 2000
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 42.3389
+      lon: -88.0848
+      distance_mi: 26.5
+      bearing: NNW
+      tracked_plane_presence_in_window: []
+    - airport_code: K3CK
+      icao: null
+      iata: null
+      name: "Lake in the Hills Airport"
+      city: "Chicago/Lake in the Hills"
+      region: US-IL
+      country: US
+      type: small_airport
+      elevation_ft: 888
+      longest_runway_ft: 3800
+      longest_runway_surface: ASP
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: marginal
+      lat: 42.2068
+      lon: -88.323
+      distance_mi: 26.6
+      bearing: NW
+      tracked_plane_presence_in_window: []
+    - airport_code: 85LL
+      icao: null
+      iata: null
+      name: "Wormley Airport"
+      city: Oswego
+      region: US-IL
+      country: US
+      type: small_airport
+      elevation_ft: 680
+      longest_runway_ft: 2300
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 41.6839
+      lon: -88.2623
+      distance_mi: 27.4
+      bearing: SW
+      tracked_plane_presence_in_window: []
+    - airport_code: KLOT
+      icao: KLOT
+      iata: LOT
+      name: "Lewis University Airport"
+      city: Chicago/Romeoville
+      region: US-IL
+      country: US
+      type: small_airport
+      elevation_ft: 679
+      longest_runway_ft: 6500
+      longest_runway_surface: CON
+      runway_count: 2
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: jet_capable
+      lat: 41.6073
+      lon: -88.0962
+      distance_mi: 27.5
+      bearing: SSW
+      tracked_plane_presence_in_window: []
+    - airport_code: 82IS
+      icao: null
+      iata: null
+      name: "Landings Condominium Airport"
+      city: Huntley
+      region: US-IL
+      country: US
+      type: small_airport
+      elevation_ft: 880
+      longest_runway_ft: 3141
+      longest_runway_surface: ASPH
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: marginal
+      lat: 42.1431
+      lon: -88.4029
+      distance_mi: 28.0
+      bearing: WNW
+      tracked_plane_presence_in_window: []
+    - airport_code: US-5266
+      icao: null
+      iata: null
+      name: "Aeroview Airport"
+      city: Virgil
+      region: US-IL
+      country: US
+      type: small_airport
+      elevation_ft: 905
+      longest_runway_ft: null
+      longest_runway_surface: null
+      runway_count: 0
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: unknown
+      lat: 41.97105
+      lon: -88.49246
+      distance_mi: 30.2
+      bearing: W
+      tracked_plane_presence_in_window: []
+    - airport_code: KUGN
+      icao: KUGN
+      iata: UGN
+      name: "Waukegan National Airport"
+      city: Chicago/Waukegan
+      region: US-IL
+      country: US
+      type: small_airport
+      elevation_ft: 727
+      longest_runway_ft: 6001
+      longest_runway_surface: ASP
+      runway_count: 2
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: jet_capable
+      lat: 42.4222
+      lon: -87.8679
+      distance_mi: 30.7
+      bearing: N
+      tracked_plane_presence_in_window: []
+    - airport_code: 6IL2
+      icao: null
+      iata: null
+      name: "Phyllis Field"
+      city: Huntley
+      region: US-IL
+      country: US
+      type: small_airport
+      elevation_ft: 855
+      longest_runway_ft: 2000
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 42.2211
+      lon: -88.4179
+      distance_mi: 31.2
+      bearing: WNW
+      tracked_plane_presence_in_window: []
+    - airport_code: LL51
+      icao: null
+      iata: null
+      name: "Riley's Field"
+      city: Plainfield
+      region: US-IL
+      country: US
+      type: small_airport
+      elevation_ft: 663
+      longest_runway_ft: 2000
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 41.6042
+      lon: -88.2737
+      distance_mi: 32.1
+      bearing: SW
+      tracked_plane_presence_in_window: []
+    - airport_code: KARR
+      icao: KARR
+      iata: AUZ
+      name: "Aurora Municipal Airport"
+      city: Chicago/Aurora
+      region: US-IL
+      country: US
+      type: small_airport
+      elevation_ft: 712
+      longest_runway_ft: 6501
+      longest_runway_surface: CON
+      runway_count: 3
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: jet_capable
+      lat: 41.7719
+      lon: -88.4757
+      distance_mi: 32.7
+      bearing: WSW
+      tracked_plane_presence_in_window: []
+    - airport_code: 55LL
+      icao: null
+      iata: null
+      name: "Sky Soaring Airport"
+      city: Union
+      region: US-IL
+      country: US
+      type: small_airport
+      elevation_ft: 884
+      longest_runway_ft: 3000
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 42.1542
+      lon: -88.5115
+      distance_mi: 33.4
+      bearing: WNW
+      tracked_plane_presence_in_window: []
+    - airport_code: 7IL7
+      icao: null
+      iata: null
+      name: "Edward Getzelman Airport"
+      city: Hampshire
+      region: US-IL
+      country: US
+      type: small_airport
+      elevation_ft: 870
+      longest_runway_ft: 1900
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 42.12734
+      lon: -88.52999
+      distance_mi: 33.7
+      bearing: WNW
+      tracked_plane_presence_in_window: []
+    - airport_code: IL02
+      icao: null
+      iata: null
+      name: "Herbert C. Maas Airport"
+      city: Zion
+      region: US-IL
+      country: US
+      type: small_airport
+      elevation_ft: 719
+      longest_runway_ft: 2600
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 42.4722
+      lon: -87.9084
+      distance_mi: 34.1
+      bearing: N
+      tracked_plane_presence_in_window: []
+    - airport_code: IL11
+      icao: null
+      iata: null
+      name: "Donald Alfred Gade Airport"
+      city: Antioch
+      region: US-IL
+      country: US
+      type: small_airport
+      elevation_ft: 805
+      longest_runway_ft: 1500
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 42.4653
+      lon: -88.0404
+      distance_mi: 34.3
+      bearing: NNW
+      tracked_plane_presence_in_window: []
+    - airport_code: KJOT
+      icao: KJOT
+      iata: JOT
+      name: "Joliet Regional Airport"
+      city: Joliet
+      region: US-IL
+      country: US
+      type: small_airport
+      elevation_ft: 582
+      longest_runway_ft: 2821
+      longest_runway_surface: ASP
+      runway_count: 2
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 41.5178
+      lon: -88.1755
+      distance_mi: 34.8
+      bearing: SSW
+      tracked_plane_presence_in_window: []
+    - airport_code: IL38
+      icao: null
+      iata: null
+      name: "J Maddock Airport"
+      city: "Big Rock"
+      region: US-IL
+      country: US
+      type: small_airport
+      elevation_ft: 705
+      longest_runway_ft: 2600
+      longest_runway_surface: TURF-G
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 41.767
+      lon: -88.532
+      distance_mi: 35.4
+      bearing: WSW
+      tracked_plane_presence_in_window: []
+    - airport_code: US-0479
+      icao: null
+      iata: null
+      name: "Oakfield RLA Airport"
+      city: Kaneville
+      region: US-IL
+      country: US
+      type: small_airport
+      elevation_ft: 810
+      longest_runway_ft: null
+      longest_runway_surface: null
+      runway_count: 0
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: unknown
+      lat: 41.84639
+      lon: -88.57028
+      distance_mi: 35.4
+      bearing: WSW
+      tracked_plane_presence_in_window: []
+    - airport_code: 5LL7
+      icao: null
+      iata: null
+      name: "Funny Farm Airport"
+      city: Union
+      region: US-IL
+      country: US
+      type: small_airport
+      elevation_ft: 875
+      longest_runway_ft: 2016
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 42.21048
+      lon: -88.52006
+      distance_mi: 35.4
+      bearing: WNW
+      tracked_plane_presence_in_window: []
+    - airport_code: KGYY
+      icao: KGYY
+      iata: GYY
+      name: "Gary/Chicago International Airport"
+      city: Gary
+      region: US-IN
+      country: US
+      type: medium_airport
+      elevation_ft: 591
+      longest_runway_ft: 8859
+      longest_runway_surface: ASP
+      runway_count: 2
+      runways_lighted: true
+      scheduled_service: true
+      jet_capability: jet_capable
+      lat: 41.61709
+      lon: -87.41321
+      distance_mi: 35.6
+      bearing: SE
+      tracked_plane_presence_in_window: []
+    - airport_code: 68IS
+      icao: null
+      iata: null
+      name: "Casa De Aero Park Airport"
+      city: Hampshire
+      region: US-IL
+      country: US
+      type: small_airport
+      elevation_ft: 860
+      longest_runway_ft: 2998
+      longest_runway_surface: ASPH
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 42.14861
+      lon: -88.56197
+      distance_mi: 35.7
+      bearing: WNW
+      tracked_plane_presence_in_window: []
+    - airport_code: 3LL4
+      icao: null
+      iata: null
+      name: "Pillow Hill Airport"
+      city: "Spring Grove"
+      region: US-IL
+      country: US
+      type: small_airport
+      elevation_ft: 815
+      longest_runway_ft: 2000
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 42.4472
+      lon: -88.2015
+      distance_mi: 35.8
+      bearing: NNW
+      tracked_plane_presence_in_window: []
+    - airport_code: KIGQ
+      icao: null
+      iata: null
+      name: "Lansing Municipal Airport"
+      city: Chicago
+      region: US-IL
+      country: US
+      type: small_airport
+      elevation_ft: 620
+      longest_runway_ft: 4002
+      longest_runway_surface: ASP
+      runway_count: 2
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: light_jet_capable
+      lat: 41.5349
+      lon: -87.5295
+      distance_mi: 36.2
+      bearing: SSE
+      tracked_plane_presence_in_window: []
+    - airport_code: 87IL
+      icao: null
+      iata: null
+      name: "Bushby RLA Restricted Landing Area"
+      city: Minooka
+      region: US-IL
+      country: US
+      type: small_airport
+      elevation_ft: 580
+      longest_runway_ft: 1800
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 41.5167
+      lon: -88.2667
+      distance_mi: 37.0
+      bearing: SSW
+      tracked_plane_presence_in_window: []
+    - airport_code: 30IS
+      icao: null
+      iata: null
+      name: "Aero Lake Estates Airport"
+      city: Genoa
+      region: US-IL
+      country: US
+      type: small_airport
+      elevation_ft: 875
+      longest_runway_ft: 2800
+      longest_runway_surface: ASPH
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 42.07738
+      lon: -88.62537
+      distance_mi: 37.6
+      bearing: W
+      tracked_plane_presence_in_window: []
+    - airport_code: 3LL5
+      icao: null
+      iata: null
+      name: "Richardson Field"
+      city: "Spring Grove"
+      region: US-IL
+      country: US
+      type: small_airport
+      elevation_ft: 860
+      longest_runway_ft: 1750
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 42.4645
+      lon: -88.2343
+      distance_mi: 37.6
+      bearing: NNW
+      tracked_plane_presence_in_window: []
+    - airport_code: 50IL
+      icao: null
+      iata: null
+      name: "Midland Airport"
+      city: Antioch
+      region: US-IL
+      country: US
+      type: small_airport
+      elevation_ft: 750
+      longest_runway_ft: 1700
+      longest_runway_surface: TURF-F
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 42.4889
+      lon: -88.1743
+      distance_mi: 37.9
+      bearing: NNW
+      tracked_plane_presence_in_window: []
+    - airport_code: K10C
+      icao: null
+      iata: null
+      name: "Galt Field"
+      city: "Wonder Lake"
+      region: US-IL
+      country: US
+      type: small_airport
+      elevation_ft: 875
+      longest_runway_ft: 2802
+      longest_runway_surface: ASPH-F
+      runway_count: 2
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 42.40273
+      lon: -88.37694
+      distance_mi: 38.0
+      bearing: NW
+      tracked_plane_presence_in_window: []
+    - airport_code: 63IL
+      icao: null
+      iata: null
+      name: "Emerick Airport"
+      city: Marengo
+      region: US-IL
+      country: US
+      type: small_airport
+      elevation_ft: 840
+      longest_runway_ft: 2525
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 42.1834
+      lon: -88.5945
+      distance_mi: 38.1
+      bearing: WNW
+      tracked_plane_presence_in_window: []
+    - airport_code: WI58
+      icao: null
+      iata: null
+      name: "Winfield Airport"
+      city: Bristol
+      region: US-WI
+      country: US
+      type: small_airport
+      elevation_ft: 770
+      longest_runway_ft: 2000
+      longest_runway_surface: TURF
+      runway_count: 3
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 42.5222
+      lon: -88.0279
+      distance_mi: 38.1
+      bearing: N
+      tracked_plane_presence_in_window: []
+    - airport_code: 04WI
+      icao: null
+      iata: null
+      name: "Dutch Gap Airstrip"
+      city: Bristol
+      region: US-WI
+      country: US
+      type: small_airport
+      elevation_ft: 760
+      longest_runway_ft: 1800
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 42.5234
+      lon: -88.0167
+      distance_mi: 38.1
+      bearing: N
+      tracked_plane_presence_in_window: []
+    - airport_code: 2IL9
+      icao: null
+      iata: null
+      name: "Meadow Creek Airport"
+      city: Monee
+      region: US-IL
+      country: US
+      type: small_airport
+      elevation_ft: 770
+      longest_runway_ft: 3400
+      longest_runway_surface: ASPH
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: marginal
+      lat: 41.4328
+      lon: -87.7817
+      distance_mi: 38.2
+      bearing: S
+      tracked_plane_presence_in_window: []
+    - airport_code: 4LL8
+      icao: null
+      iata: null
+      name: "Colonial Acres Airport"
+      city: Sycamore
+      region: US-IL
+      country: US
+      type: small_airport
+      elevation_ft: 840
+      longest_runway_ft: 2000
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 41.99932
+      lon: -88.64858
+      distance_mi: 38.2
+      bearing: W
+      tracked_plane_presence_in_window: []
+    - airport_code: 59IL
+      icao: null
+      iata: null
+      name: "Ruder Airport"
+      city: "Maple Park"
+      region: US-IL
+      country: US
+      type: small_airport
+      elevation_ft: 855
+      longest_runway_ft: 2200
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 41.9258
+      lon: -88.6464
+      distance_mi: 38.3
+      bearing: W
+      tracked_plane_presence_in_window: []
+    - airport_code: 62IL
+      icao: null
+      iata: null
+      name: "Ferris Field"
+      city: Marengo
+      region: US-IL
+      country: US
+      type: small_airport
+      elevation_ft: 841
+      longest_runway_ft: 1925
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 42.18601
+      lon: -88.60404
+      distance_mi: 38.6
+      bearing: WNW
+      tracked_plane_presence_in_window: []
+    - airport_code: WN63
+      icao: null
+      iata: null
+      name: "Bristol Airport"
+      city: Bristol
+      region: US-WI
+      country: US
+      type: small_airport
+      elevation_ft: 735
+      longest_runway_ft: 1500
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 42.5367
+      lon: -88.004
+      distance_mi: 38.9
+      bearing: N
+      tracked_plane_presence_in_window: []
+    - airport_code: 4LL7
+      icao: null
+      iata: null
+      name: "Willadae Farms Airport"
+      city: Sycamore
+      region: US-IL
+      country: US
+      type: small_airport
+      elevation_ft: 850
+      longest_runway_ft: 2800
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 42.00172
+      lon: -88.66493
+      distance_mi: 39.1
+      bearing: W
+      tracked_plane_presence_in_window: []
+    - airport_code: US-7144
+      icao: null
+      iata: null
+      name: "Marshall Farms Airport"
+      city: Cortland
+      region: US-IL
+      country: US
+      type: small_airport
+      elevation_ft: 841
+      longest_runway_ft: 2000
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 41.86038
+      lon: -88.65574
+      distance_mi: 39.5
+      bearing: WSW
+      tracked_plane_presence_in_window: []
+    - airport_code: US-9104
+      icao: null
+      iata: null
+      name: "Flying Q Farm Airport"
+      city: Marengo
+      region: US-IL
+      country: US
+      type: small_airport
+      elevation_ft: 860
+      longest_runway_ft: 1717
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 42.27657
+      lon: -88.56329
+      distance_mi: 39.5
+      bearing: WNW
+      tracked_plane_presence_in_window: []
+    - airport_code: 66IL
+      icao: null
+      iata: null
+      name: "Aerogrange Airport"
+      city: Marengo
+      region: US-IL
+      country: US
+      type: small_airport
+      elevation_ft: 820
+      longest_runway_ft: 2050
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 42.2692
+      lon: -88.5712
+      distance_mi: 39.6
+      bearing: WNW
+      tracked_plane_presence_in_window: []
+    - airport_code: IS57
+      icao: null
+      iata: null
+      name: "Wind Rose Farm Airport"
+      city: Marengo
+      region: US-IL
+      country: US
+      type: small_airport
+      elevation_ft: 815
+      longest_runway_ft: 2600
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 42.1797
+      lon: -88.6328
+      distance_mi: 39.8
+      bearing: WNW
+      tracked_plane_presence_in_window: []
+tracked_plane_presence:
+  # Was any tracked aircraft on the ground at any field in the list above,
+  # inside the window? Three registers are searched and kept apart, strongest
+  # first. NEVER collapse them into one number.
+  window:
+    from: 2023-03-07
+    to: 2023-03-11
+    days_each_side: 2
+  any_found: false
+  egyptian_su_found: false
+  counts:
+    adsb_ground_contacts: 0
+    adsb_ground_contacts_egyptian_su: 0
+    flights_csv_stays: 0
+    flights_csv_stays_egyptian_su: 0
+    claimed_overlaps: 0
+  from_adsb_traces: []
+  from_flights_csv: []
+  from_overlaps_csv: []
+  just_outside_the_radius:
+    # A hard radius creates a cliff and a cliff hides evidence. These fields
+    # sit between 40 and 60 miles from the arrival airport. They are NOT counted
+    # as hits and must never be published as ones - they are here so a near miss
+    # is visible rather than silently dropped.
+    outer_radius_miles: 60.0
+    adsb_ground_contacts: []
+    flights_csv_stays: []
+    claimed_overlaps: []
+  coverage:
+    # AN EMPTY RESULT ABOVE IS NOT A FINDING UNLESS THIS SAYS THE DAYS WERE HELD.
+    # aircraft_days_needed = tails x days in the window. aircraft_days_held is
+    # how many of those this repo actually has a trace for. The rest were never
+    # pulled, or the networks heard nothing - the two are indistinguishable here.
+    aircraft_days_needed: 75
+    aircraft_days_held: 0
+    coverage_pct: 0.0
+    tails_with_no_trace_in_window:
+      - N102DZ
+      - N1098L
+      - N2100L
+      - N40JD
+      - N560TW
+      - N582MM
+      - N59906
+      - N872RA
+      - N888KG
+      - SU-BGM
+      - SU-BND
+      - SU-BTT
+      - SU-BTU
+      - SU-BTV
+      - T7-ELL
+    by_side:
+      following:
+        # FOLLOWING is the side the claim is about - the Egyptian SU- tails.
+        # This percentage is the one that decides whether an empty result means
+        # anything at all.
+        tails: 6
+        aircraft_days_needed: 30
+        aircraft_days_held: 0
+        coverage_pct: 0.0
+      kirk:
+        # KIRK-side coverage is what turns an ESTIMATED arrival into an
+        # OBSERVED one. Low here means the arrival times above stay estimates.
+        tails: 6
+        aircraft_days_needed: 30
+        aircraft_days_held: 0
+        coverage_pct: 0.0
+      n1098l:
+        # Other tracked aircraft. A DIFFERENT CLAIM - do not merge the threads.
+        tails: 3
+        aircraft_days_needed: 15
+        aircraft_days_held: 0
+        coverage_pct: 0.0
+counterargument:
+  - "ONE PAIRING IS NOT EVIDENCE. The claim under test is a repetition across many stops, and any single pairing has an innocent explanation a reader will find."
+  - "A field inside the radius is a field a jet COULD have used. Nothing here shows that anyone did use it, or that two aircraft on one ramp had any connection."
+  - "Maintenance is the strongest innocent explanation in this record: Duncan Aviation (Provo and Lincoln) and Yingling (Wichita) are Part 145 Falcon and Gulfstream shops, and a Falcon 7X sitting for weeks at one reads as a maintenance visit."
+  - "Transatlantic customs and fuel stops explain the recurring East Coast fields."
+  - "ERIKA'S SIDE IS THE WEAK SIDE. Her flight logs are reported erased, so any Erika pairing rests on the foreign aircraft's track plus a CLAIMED location for her. See /Planes/Erika-Flight-Logs-Erased."
+what_we_do_not_know:
+  - "Whether Charlie Kirk, Erika Kirk, or any TPUSA party actually flew to this event, or which aircraft they used. The arrival airport above is an inference from the venue city, not a record."
+  - "Whether the estimated arrival and departure times are within hours or within days of the truth, wherever observed_by_adsb is empty."
+  - "What the tracked aircraft were doing at any field they appear at. A trace proves presence, never purpose and never occupancy."
+  - "Whether the receiver networks simply did not hear an aircraft that was there. See the coverage block - an absence is not a finding."

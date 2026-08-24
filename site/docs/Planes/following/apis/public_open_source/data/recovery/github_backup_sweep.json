@@ -1,8 +1,9 @@
 {
-  "generated_utc": "2026-08-24T17:50:08.020857+00:00",
+  "generated_utc": "2026-08-24T18:55:05.386215+00:00",
   "year_floor": "2024",
   "what_this_is": "adsb.lol's off-site GitHub Release backup, asked about every alleged-overlap date that both free daily archives missed",
   "reading": "A MISS here means adsb.lol's feeders genuinely recorded nothing for that aircraft that day. It is not evidence of removal, and it is not independent of the adsb.lol live API -- same organisation, same data.",
+  "note_on_split_releases": "Most days ship the tar SPLIT into .tar.aa/.tar.ab. An earlier run of this script asked for a single .tar, got 404, and recorded 16 dates as unavailable that are in fact published. The asset list is now read from the API.",
   "dates": 22,
   "results": [
     {
@@ -11,7 +12,12 @@
         "SU-BTT"
       ],
       "release": "v2024.01.10-planes-readsb-prod-0",
-      "url": "https://github.com/adsblol/globe_history_2024/releases/download/v2024.01.10-planes-readsb-prod-0/v2024.01.10-planes-readsb-prod-0.tar",
+      "url": [
+        "https://github.com/adsblol/globe_history_2024/releases/download/v2024.01.10-planes-readsb-prod-0/v2024.01.10-planes-readsb-prod-0.tar"
+      ],
+      "assets": [
+        "v2024.01.10-planes-readsb-prod-0.tar"
+      ],
       "curl_exit": 0,
       "hits": [],
       "verdict": "NOT_IN_THE_BACKUP_EITHER"
@@ -22,7 +28,12 @@
         "SU-BTT"
       ],
       "release": "v2024.02.11-planes-readsb-prod-0",
-      "url": "https://github.com/adsblol/globe_history_2024/releases/download/v2024.02.11-planes-readsb-prod-0/v2024.02.11-planes-readsb-prod-0.tar",
+      "url": [
+        "https://github.com/adsblol/globe_history_2024/releases/download/v2024.02.11-planes-readsb-prod-0/v2024.02.11-planes-readsb-prod-0.tar"
+      ],
+      "assets": [
+        "v2024.02.11-planes-readsb-prod-0.tar"
+      ],
       "curl_exit": 0,
       "hits": [],
       "verdict": "NOT_IN_THE_BACKUP_EITHER"
@@ -33,7 +44,12 @@
         "SU-BTT"
       ],
       "release": "v2024.03.10-planes-readsb-prod-0",
-      "url": "https://github.com/adsblol/globe_history_2024/releases/download/v2024.03.10-planes-readsb-prod-0/v2024.03.10-planes-readsb-prod-0.tar",
+      "url": [
+        "https://github.com/adsblol/globe_history_2024/releases/download/v2024.03.10-planes-readsb-prod-0/v2024.03.10-planes-readsb-prod-0.tar"
+      ],
+      "assets": [
+        "v2024.03.10-planes-readsb-prod-0.tar"
+      ],
       "curl_exit": 0,
       "hits": [],
       "verdict": "NOT_IN_THE_BACKUP_EITHER"
@@ -44,7 +60,12 @@
         "SU-BTT"
       ],
       "release": "v2024.03.18-planes-readsb-prod-0",
-      "url": "https://github.com/adsblol/globe_history_2024/releases/download/v2024.03.18-planes-readsb-prod-0/v2024.03.18-planes-readsb-prod-0.tar",
+      "url": [
+        "https://github.com/adsblol/globe_history_2024/releases/download/v2024.03.18-planes-readsb-prod-0/v2024.03.18-planes-readsb-prod-0.tar"
+      ],
+      "assets": [
+        "v2024.03.18-planes-readsb-prod-0.tar"
+      ],
       "curl_exit": 0,
       "hits": [],
       "verdict": "NOT_IN_THE_BACKUP_EITHER"
@@ -55,10 +76,19 @@
         "SU-BTT"
       ],
       "release": "v2024.03.22-planes-readsb-prod-0",
-      "url": "https://github.com/adsblol/globe_history_2024/releases/download/v2024.03.22-planes-readsb-prod-0/v2024.03.22-planes-readsb-prod-0.tar",
-      "curl_exit": 0,
+      "url": [
+        "https://github.com/adsblol/globe_history_2024/releases/download/v2024.03.22-planes-readsb-prod-0/v2024.03.22-planes-readsb-prod-0.tar",
+        "https://github.com/adsblol/globe_history_2024/releases/download/v2024.03.22-planes-readsb-prod-0/v2024.03.22-planes-readsb-prod-0.tar.aa",
+        "https://github.com/adsblol/globe_history_2024/releases/download/v2024.03.22-planes-readsb-prod-0/v2024.03.22-planes-readsb-prod-0.tar.ab"
+      ],
+      "assets": [
+        "v2024.03.22-planes-readsb-prod-0.tar",
+        "v2024.03.22-planes-readsb-prod-0.tar.aa",
+        "v2024.03.22-planes-readsb-prod-0.tar.ab"
+      ],
+      "curl_exit": 56,
       "hits": [],
-      "verdict": "NOT_IN_THE_BACKUP_EITHER"
+      "verdict": "RELEASE_NOT_AVAILABLE"
     },
     {
       "date": "2024-04-15",
@@ -66,7 +96,12 @@
         "SU-BTT"
       ],
       "release": "v2024.04.15-planes-readsb-prod-0",
-      "url": "https://github.com/adsblol/globe_history_2024/releases/download/v2024.04.15-planes-readsb-prod-0/v2024.04.15-planes-readsb-prod-0.tar",
+      "url": [
+        "https://github.com/adsblol/globe_history_2024/releases/download/v2024.04.15-planes-readsb-prod-0/v2024.04.15-planes-readsb-prod-0.tar"
+      ],
+      "assets": [
+        "v2024.04.15-planes-readsb-prod-0.tar"
+      ],
       "curl_exit": 0,
       "hits": [],
       "verdict": "NOT_IN_THE_BACKUP_EITHER"
@@ -77,10 +112,17 @@
         "SU-BND"
       ],
       "release": "v2024.04.23-planes-readsb-prod-0",
-      "url": "https://github.com/adsblol/globe_history_2024/releases/download/v2024.04.23-planes-readsb-prod-0/v2024.04.23-planes-readsb-prod-0.tar",
-      "curl_exit": 56,
+      "url": [
+        "https://github.com/adsblol/globe_history_2024/releases/download/v2024.04.23-planes-readsb-prod-0/v2024.04.23-planes-readsb-prod-0.tar.aa",
+        "https://github.com/adsblol/globe_history_2024/releases/download/v2024.04.23-planes-readsb-prod-0/v2024.04.23-planes-readsb-prod-0.tar.ab"
+      ],
+      "assets": [
+        "v2024.04.23-planes-readsb-prod-0.tar.aa",
+        "v2024.04.23-planes-readsb-prod-0.tar.ab"
+      ],
+      "curl_exit": 0,
       "hits": [],
-      "verdict": "RELEASE_NOT_AVAILABLE"
+      "verdict": "NOT_IN_THE_BACKUP_EITHER"
     },
     {
       "date": "2024-05-03",
@@ -88,10 +130,17 @@
         "SU-BND"
       ],
       "release": "v2024.05.03-planes-readsb-prod-0",
-      "url": "https://github.com/adsblol/globe_history_2024/releases/download/v2024.05.03-planes-readsb-prod-0/v2024.05.03-planes-readsb-prod-0.tar",
-      "curl_exit": 56,
+      "url": [
+        "https://github.com/adsblol/globe_history_2024/releases/download/v2024.05.03-planes-readsb-prod-0/v2024.05.03-planes-readsb-prod-0.tar.aa",
+        "https://github.com/adsblol/globe_history_2024/releases/download/v2024.05.03-planes-readsb-prod-0/v2024.05.03-planes-readsb-prod-0.tar.ab"
+      ],
+      "assets": [
+        "v2024.05.03-planes-readsb-prod-0.tar.aa",
+        "v2024.05.03-planes-readsb-prod-0.tar.ab"
+      ],
+      "curl_exit": 0,
       "hits": [],
-      "verdict": "RELEASE_NOT_AVAILABLE"
+      "verdict": "NOT_IN_THE_BACKUP_EITHER"
     },
     {
       "date": "2024-05-10",
@@ -99,10 +148,17 @@
         "SU-BND"
       ],
       "release": "v2024.05.10-planes-readsb-prod-0",
-      "url": "https://github.com/adsblol/globe_history_2024/releases/download/v2024.05.10-planes-readsb-prod-0/v2024.05.10-planes-readsb-prod-0.tar",
-      "curl_exit": 56,
+      "url": [
+        "https://github.com/adsblol/globe_history_2024/releases/download/v2024.05.10-planes-readsb-prod-0/v2024.05.10-planes-readsb-prod-0.tar.aa",
+        "https://github.com/adsblol/globe_history_2024/releases/download/v2024.05.10-planes-readsb-prod-0/v2024.05.10-planes-readsb-prod-0.tar.ab"
+      ],
+      "assets": [
+        "v2024.05.10-planes-readsb-prod-0.tar.aa",
+        "v2024.05.10-planes-readsb-prod-0.tar.ab"
+      ],
+      "curl_exit": 0,
       "hits": [],
-      "verdict": "RELEASE_NOT_AVAILABLE"
+      "verdict": "NOT_IN_THE_BACKUP_EITHER"
     },
     {
       "date": "2024-06-18",
@@ -110,10 +166,17 @@
         "SU-BTT"
       ],
       "release": "v2024.06.18-planes-readsb-prod-0",
-      "url": "https://github.com/adsblol/globe_history_2024/releases/download/v2024.06.18-planes-readsb-prod-0/v2024.06.18-planes-readsb-prod-0.tar",
-      "curl_exit": 56,
+      "url": [
+        "https://github.com/adsblol/globe_history_2024/releases/download/v2024.06.18-planes-readsb-prod-0/v2024.06.18-planes-readsb-prod-0.tar.aa",
+        "https://github.com/adsblol/globe_history_2024/releases/download/v2024.06.18-planes-readsb-prod-0/v2024.06.18-planes-readsb-prod-0.tar.ab"
+      ],
+      "assets": [
+        "v2024.06.18-planes-readsb-prod-0.tar.aa",
+        "v2024.06.18-planes-readsb-prod-0.tar.ab"
+      ],
+      "curl_exit": 0,
       "hits": [],
-      "verdict": "RELEASE_NOT_AVAILABLE"
+      "verdict": "NOT_IN_THE_BACKUP_EITHER"
     },
     {
       "date": "2024-07-05",
@@ -121,10 +184,17 @@
         "SU-BTT"
       ],
       "release": "v2024.07.05-planes-readsb-prod-0",
-      "url": "https://github.com/adsblol/globe_history_2024/releases/download/v2024.07.05-planes-readsb-prod-0/v2024.07.05-planes-readsb-prod-0.tar",
-      "curl_exit": 56,
+      "url": [
+        "https://github.com/adsblol/globe_history_2024/releases/download/v2024.07.05-planes-readsb-prod-0/v2024.07.05-planes-readsb-prod-0.tar.aa",
+        "https://github.com/adsblol/globe_history_2024/releases/download/v2024.07.05-planes-readsb-prod-0/v2024.07.05-planes-readsb-prod-0.tar.ab"
+      ],
+      "assets": [
+        "v2024.07.05-planes-readsb-prod-0.tar.aa",
+        "v2024.07.05-planes-readsb-prod-0.tar.ab"
+      ],
+      "curl_exit": 0,
       "hits": [],
-      "verdict": "RELEASE_NOT_AVAILABLE"
+      "verdict": "NOT_IN_THE_BACKUP_EITHER"
     },
     {
       "date": "2024-07-20",
@@ -132,120 +202,17 @@
         "SU-BTT"
       ],
       "release": "v2024.07.20-planes-readsb-prod-0",
-      "url": "https://github.com/adsblol/globe_history_2024/releases/download/v2024.07.20-planes-readsb-prod-0/v2024.07.20-planes-readsb-prod-0.tar",
-      "curl_exit": 56,
-      "hits": [],
-      "verdict": "RELEASE_NOT_AVAILABLE"
-    },
-    {
-      "date": "2024-07-25",
-      "tails_asked": [
-        "SU-BTT"
+      "url": [
+        "https://github.com/adsblol/globe_history_2024/releases/download/v2024.07.20-planes-readsb-prod-0/v2024.07.20-planes-readsb-prod-0.tar.aa",
+        "https://github.com/adsblol/globe_history_2024/releases/download/v2024.07.20-planes-readsb-prod-0/v2024.07.20-planes-readsb-prod-0.tar.ab"
       ],
-      "release": "v2024.07.25-planes-readsb-prod-0",
-      "url": "https://github.com/adsblol/globe_history_2024/releases/download/v2024.07.25-planes-readsb-prod-0/v2024.07.25-planes-readsb-prod-0.tar",
-      "curl_exit": 56,
-      "hits": [],
-      "verdict": "RELEASE_NOT_AVAILABLE"
-    },
-    {
-      "date": "2024-08-17",
-      "tails_asked": [
-        "SU-BTT"
+      "assets": [
+        "v2024.07.20-planes-readsb-prod-0.tar.aa",
+        "v2024.07.20-planes-readsb-prod-0.tar.ab"
       ],
-      "release": "v2024.08.17-planes-readsb-prod-0",
-      "url": "https://github.com/adsblol/globe_history_2024/releases/download/v2024.08.17-planes-readsb-prod-0/v2024.08.17-planes-readsb-prod-0.tar",
-      "curl_exit": 56,
+      "curl_exit": 0,
       "hits": [],
-      "verdict": "RELEASE_NOT_AVAILABLE"
-    },
-    {
-      "date": "2024-12-08",
-      "tails_asked": [
-        "SU-BND"
-      ],
-      "release": "v2024.12.08-planes-readsb-prod-0",
-      "url": "https://github.com/adsblol/globe_history_2024/releases/download/v2024.12.08-planes-readsb-prod-0/v2024.12.08-planes-readsb-prod-0.tar",
-      "curl_exit": 56,
-      "hits": [],
-      "verdict": "RELEASE_NOT_AVAILABLE"
-    },
-    {
-      "date": "2025-01-12",
-      "tails_asked": [
-        "SU-BTT"
-      ],
-      "release": "v2025.01.12-planes-readsb-prod-0",
-      "url": "https://github.com/adsblol/globe_history_2025/releases/download/v2025.01.12-planes-readsb-prod-0/v2025.01.12-planes-readsb-prod-0.tar",
-      "curl_exit": 56,
-      "hits": [],
-      "verdict": "RELEASE_NOT_AVAILABLE"
-    },
-    {
-      "date": "2025-01-17",
-      "tails_asked": [
-        "SU-BTT"
-      ],
-      "release": "v2025.01.17-planes-readsb-prod-0",
-      "url": "https://github.com/adsblol/globe_history_2025/releases/download/v2025.01.17-planes-readsb-prod-0/v2025.01.17-planes-readsb-prod-0.tar",
-      "curl_exit": 56,
-      "hits": [],
-      "verdict": "RELEASE_NOT_AVAILABLE"
-    },
-    {
-      "date": "2025-02-08",
-      "tails_asked": [
-        "SU-BTT"
-      ],
-      "release": "v2025.02.08-planes-readsb-prod-0",
-      "url": "https://github.com/adsblol/globe_history_2025/releases/download/v2025.02.08-planes-readsb-prod-0/v2025.02.08-planes-readsb-prod-0.tar",
-      "curl_exit": 56,
-      "hits": [],
-      "verdict": "RELEASE_NOT_AVAILABLE"
-    },
-    {
-      "date": "2025-03-15",
-      "tails_asked": [
-        "SU-BTT"
-      ],
-      "release": "v2025.03.15-planes-readsb-prod-0",
-      "url": "https://github.com/adsblol/globe_history_2025/releases/download/v2025.03.15-planes-readsb-prod-0/v2025.03.15-planes-readsb-prod-0.tar",
-      "curl_exit": 56,
-      "hits": [],
-      "verdict": "RELEASE_NOT_AVAILABLE"
-    },
-    {
-      "date": "2025-03-22",
-      "tails_asked": [
-        "SU-BTT"
-      ],
-      "release": "v2025.03.22-planes-readsb-prod-0",
-      "url": "https://github.com/adsblol/globe_history_2025/releases/download/v2025.03.22-planes-readsb-prod-0/v2025.03.22-planes-readsb-prod-0.tar",
-      "curl_exit": 56,
-      "hits": [],
-      "verdict": "RELEASE_NOT_AVAILABLE"
-    },
-    {
-      "date": "2025-04-19",
-      "tails_asked": [
-        "SU-BND"
-      ],
-      "release": "v2025.04.19-planes-readsb-prod-0",
-      "url": "https://github.com/adsblol/globe_history_2025/releases/download/v2025.04.19-planes-readsb-prod-0/v2025.04.19-planes-readsb-prod-0.tar",
-      "curl_exit": 56,
-      "hits": [],
-      "verdict": "RELEASE_NOT_AVAILABLE"
-    },
-    {
-      "date": "2025-07-07",
-      "tails_asked": [
-        "SU-BND"
-      ],
-      "release": "v2025.07.07-planes-readsb-prod-0",
-      "url": "https://github.com/adsblol/globe_history_2025/releases/download/v2025.07.07-planes-readsb-prod-0/v2025.07.07-planes-readsb-prod-0.tar",
-      "curl_exit": 56,
-      "hits": [],
-      "verdict": "RELEASE_NOT_AVAILABLE"
+      "verdict": "NOT_IN_THE_BACKUP_EITHER"
     }
   ]
 }

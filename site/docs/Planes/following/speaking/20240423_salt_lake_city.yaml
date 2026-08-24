@@ -1,0 +1,707 @@
+# GENERATED FILE - regenerate, do not hand-edit.
+#   node/python: apis/public_open_source/code/airports_near.py --only 20240423_salt_lake_city
+#   The prompt that governs this file: prompts/p_airports_near.md
+schema: ck.speaking.airports_near/1
+generated_utc: "2026-08-24T19:03:26Z"
+generated_by: site/docs/Planes/following/apis/public_open_source/code/airports_near.py
+page:
+  slug: 20240423_salt_lake_city
+  mdx: site/docs/Planes/following/speaking/20240423_salt_lake_city.mdx
+  yaml: site/docs/Planes/following/speaking/20240423_salt_lake_city.yaml
+  url: /Planes/following/speaking/20240423_salt_lake_city
+event:
+  title: "Prove Me Wrong — University of Utah"
+  who: Charlie
+  attendee_class: CHARLIE_ONLY
+  charlie_present: "yes"
+  erika_present: not_documented
+  attendance_status: held
+  event_type: campus
+  dates:
+    raw: 2024-04-23
+    first_day: 2024-04-23
+    last_day: 2024-04-23
+    granularity: DAY
+    certainty: EVENT_DATE
+    # PODCAST_PROXY means the date is a podcast RELEASE date and the event was normally 0-7 days earlier. Never publish a same-day claim off one.
+  local_time:
+    raw: null
+    parsed_hhmm: null
+    basis: no_time_published
+    timezone: America/Denver
+    timezone_method: timezonefinder
+  location:
+    city: "Salt Lake City"
+    state: UT
+    country: USA
+    venue: "University of Utah"
+    metro_area: "Wasatch Front UT"
+    geocode:
+      lat: 40.70418
+      lon: -111.98643
+      method: ourairports_municipality_centroid
+      matched: "2 field(s) whose municipality is Salt Lake City"
+  source: "Planes/following/overview.mdx: SU-BTT arrives Provo 23 April via Williston ND; Charlie does Prove Me Wrong at the University of Utah the same day. Called the tightest sourced pairing in the pre-2025 record."
+  source_url: /Planes/following/overview
+  days_before_sept10_2025: 505
+search:
+  radius_miles: 40
+  window_days_each_side: 2
+  window_from: 2024-04-21
+  window_to: 2024-04-25
+  window_day_count: 5
+  centre: KSLC
+  tails_searched:
+    - N102DZ
+    - N1098L
+    - N2100L
+    - N40JD
+    - N560TW
+    - N582MM
+    - N59906
+    - N872RA
+    - N888KG
+    - SU-BGM
+    - SU-BND
+    - SU-BTT
+    - SU-BTU
+    - SU-BTV
+    - T7-ELL
+  sources_searched:
+    - "recovered ADS-B traces on disk (site/docs/Planes/<TAIL>/data/recovered/)"
+    - site/docs/Planes/following/flights.csv
+    - site/docs/Planes/following/overlaps.csv
+arrival_airport:
+  # ESTIMATE. No published Kirk-side flight record exists for this event unless
+  # the observed_by_adsb block below is non-empty. This is arithmetic on the
+  # event time, not a landing record.
+  chosen_airport:
+    airport_code: KSLC
+    icao: KSLC
+    iata: SLC
+    name: "Salt Lake City International Airport"
+    city: "Salt Lake City"
+    region: US-UT
+    country: US
+    type: large_airport
+    elevation_ft: 4227
+    longest_runway_ft: 12002
+    longest_runway_surface: ASP
+    runway_count: 4
+    runways_lighted: true
+    scheduled_service: true
+    jet_capability: jet_capable
+    lat: 40.78886
+    lon: -111.97987
+    distance_mi: 5.9
+    bearing: N
+  distance_from_event_city_mi: 5.9
+  selection_basis: CURATED_tpusa_events.csv_VALUE_KEPT_computed_nearest_jet_field_DIFFERS
+  curated_value_in_tpusa_events_csv:
+    airport_code: KSLC
+    airport_name: "Salt Lake City International"
+    distance_mi: 5
+  computed_nearest_jet_capable_field:
+    airport_code: KU42
+    name: "South Valley Regional Airport"
+    distance_mi: 5.9
+    longest_runway_ft: 5862
+  estimated_arrival:
+    date: 2024-04-23
+    local_time: "16:00"
+    timezone: America/Denver
+    utc: "2024-04-23T22:00:00Z"
+    basis: "no event time published; 19:00 local assumed for arithmetic only; minus 3h"
+    confidence: low
+  estimated_departure:
+    date: 2024-04-23
+    local_time: "23:00"
+    timezone: America/Denver
+    utc: "2024-04-24T05:00:00Z"
+    basis: "event end + 4h (speech, exit, wheels-up)"
+    confidence: low
+  observed_by_adsb: []
+  observed_by_adsb_note: "NO Kirk-side aircraft is on disk on the ground within 40 miles of KSLC in this window. The arrival and departure above stay estimates."
+airports_within_radius:
+  # Every field a private jet could physically use within the radius.
+  # Heliports, seaplane bases, balloonports and closed fields are excluded -
+  # a business jet cannot use any of them. Everything else is kept, including
+  # every small strip with no scheduled service: those are the point of the sweep.
+  radius_miles: 40
+  centre_airport: KSLC
+  count: 20
+  jet_capable_count: 6
+  light_jet_capable_count: 1
+  no_scheduled_service_count: 18
+  source: "OurAirports (CC0) airports.csv + runways.csv"
+  list:
+    - airport_code: KSLC
+      icao: KSLC
+      iata: SLC
+      name: "Salt Lake City International Airport"
+      city: "Salt Lake City"
+      region: US-UT
+      country: US
+      type: large_airport
+      elevation_ft: 4227
+      longest_runway_ft: 12002
+      longest_runway_surface: ASP
+      runway_count: 4
+      runways_lighted: true
+      scheduled_service: true
+      jet_capability: jet_capable
+      lat: 40.78886
+      lon: -111.97987
+      distance_mi: 0.0
+      bearing: N
+      tracked_plane_presence_in_window: []
+    - airport_code: KBTF
+      icao: KBTF
+      iata: BTF
+      name: "Skypark Airport"
+      city: Bountiful
+      region: US-UT
+      country: US
+      type: small_airport
+      elevation_ft: 4234
+      longest_runway_ft: 4634
+      longest_runway_surface: ASP
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: light_jet_capable
+      lat: 40.8694
+      lon: -111.927
+      distance_mi: 6.2
+      bearing: NNE
+      tracked_plane_presence_in_window: []
+    - airport_code: KU42
+      icao: KSVR
+      iata: null
+      name: "South Valley Regional Airport"
+      city: "Salt Lake City"
+      region: US-UT
+      country: US
+      type: medium_airport
+      elevation_ft: 4607
+      longest_runway_ft: 5862
+      longest_runway_surface: ASP
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: jet_capable
+      lat: 40.6195
+      lon: -111.993
+      distance_mi: 11.7
+      bearing: S
+      tracked_plane_presence_in_window: []
+    - airport_code: UT13
+      icao: null
+      iata: null
+      name: "Number 18 Airport"
+      city: "South Jordan"
+      region: US-UT
+      country: US
+      type: small_airport
+      elevation_ft: 4820
+      longest_runway_ft: 1100
+      longest_runway_surface: GRVL-DIRT-F
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.5639
+      lon: -112.014
+      distance_mi: 15.6
+      bearing: S
+      tracked_plane_presence_in_window: []
+    - airport_code: KTVY
+      icao: null
+      iata: null
+      name: "Bolinder Field Tooele Valley Airport"
+      city: Tooele
+      region: US-UT
+      country: US
+      type: small_airport
+      elevation_ft: 4322
+      longest_runway_ft: 6102
+      longest_runway_surface: ASP
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: jet_capable
+      lat: 40.6123
+      lon: -112.351
+      distance_mi: 23.0
+      bearing: WSW
+      tracked_plane_presence_in_window: []
+    - airport_code: KHIF
+      icao: KHIF
+      iata: HIF
+      name: "Hill Air Force Base"
+      city: Ogden
+      region: US-UT
+      country: US
+      type: medium_airport
+      elevation_ft: 4789
+      longest_runway_ft: 13500
+      longest_runway_surface: PEM
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: jet_capable
+      lat: 41.12403
+      lon: -111.97309
+      distance_mi: 23.2
+      bearing: N
+      tracked_plane_presence_in_window: []
+    - airport_code: K42U
+      icao: null
+      iata: null
+      name: "Morgan County Airport"
+      city: Morgan
+      region: US-UT
+      country: US
+      type: small_airport
+      elevation_ft: 5020
+      longest_runway_ft: 3904
+      longest_runway_surface: ASP
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: marginal
+      lat: 41.1488
+      lon: -111.767
+      distance_mi: 27.2
+      bearing: NNE
+      tracked_plane_presence_in_window: []
+    - airport_code: KOGD
+      icao: KOGD
+      iata: OGD
+      name: "Ogden Hinckley Airport"
+      city: Ogden
+      region: US-UT
+      country: US
+      type: medium_airport
+      elevation_ft: 4473
+      longest_runway_ft: 8107
+      longest_runway_surface: ASP
+      runway_count: 2
+      runways_lighted: true
+      scheduled_service: true
+      jet_capability: jet_capable
+      lat: 41.1959
+      lon: -112.012
+      distance_mi: 28.2
+      bearing: N
+      tracked_plane_presence_in_window: []
+    - airport_code: UT10
+      icao: null
+      iata: null
+      name: "Cedar Valley Airport"
+      city: "Eagle Mountain"
+      region: US-UT
+      country: US
+      type: small_airport
+      elevation_ft: 5000
+      longest_runway_ft: 5100
+      longest_runway_surface: GRAVEL
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.3572
+      lon: -112.018
+      distance_mi: 29.9
+      bearing: S
+      tracked_plane_presence_in_window: []
+    - airport_code: UT41
+      icao: null
+      iata: null
+      name: "Glenmar Ranch Airport"
+      city: "Cedar Fort"
+      region: US-UT
+      country: US
+      type: small_airport
+      elevation_ft: 5030
+      longest_runway_ft: 2600
+      longest_runway_surface: DIRT
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.3394
+      lon: -111.999
+      distance_mi: 31.1
+      bearing: S
+      tracked_plane_presence_in_window: []
+    - airport_code: US-5295
+      icao: null
+      iata: null
+      name: "Glastar Airport"
+      city: Stockton
+      region: US-UT
+      country: US
+      type: small_airport
+      elevation_ft: 5081
+      longest_runway_ft: 1410
+      longest_runway_surface: DIRT/GRAVEL
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.44092
+      lon: -112.36721
+      distance_mi: 31.5
+      bearing: SW
+      tracked_plane_presence_in_window: []
+    - airport_code: US-5319
+      icao: null
+      iata: null
+      name: "Fremont Island Upper Airstrip"
+      city: Hooper
+      region: US-UT
+      country: US
+      type: small_airport
+      elevation_ft: 4654
+      longest_runway_ft: null
+      longest_runway_surface: null
+      runway_count: 0
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: unknown
+      lat: 41.16
+      lon: -112.3333
+      distance_mi: 31.6
+      bearing: NW
+      tracked_plane_presence_in_window: []
+    - airport_code: 38UT
+      icao: null
+      iata: null
+      name: "Hoytsville Airport"
+      city: Coalville
+      region: US-UT
+      country: US
+      type: small_airport
+      elevation_ft: 5800
+      longest_runway_ft: null
+      longest_runway_surface: null
+      runway_count: 0
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: unknown
+      lat: 40.87741
+      lon: -111.37608
+      distance_mi: 32.2
+      bearing: E
+      tracked_plane_presence_in_window: []
+    - airport_code: US-5318
+      icao: null
+      iata: null
+      name: "Fremont Island Lower Airstrip"
+      city: Hooper
+      region: US-UT
+      country: US
+      type: small_airport
+      elevation_ft: 4233
+      longest_runway_ft: 1843
+      longest_runway_surface: DIRT-GRVL
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 41.1757
+      lon: -112.3808
+      distance_mi: 33.9
+      bearing: NW
+      tracked_plane_presence_in_window: []
+    - airport_code: US-4598
+      icao: null
+      iata: null
+      name: "Timpanogos Canal Airport"
+      city: "Heber City"
+      region: US-UT
+      country: US
+      type: small_airport
+      elevation_ft: 5833
+      longest_runway_ft: null
+      longest_runway_surface: null
+      runway_count: 0
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: unknown
+      lat: 40.54138
+      lon: -111.40638
+      distance_mi: 34.6
+      bearing: ESE
+      tracked_plane_presence_in_window: []
+    - airport_code: 11UT
+      icao: null
+      iata: null
+      name: "Flying R Airport"
+      city: Huntsville
+      region: US-UT
+      country: US
+      type: small_airport
+      elevation_ft: 5060
+      longest_runway_ft: null
+      longest_runway_surface: null
+      runway_count: 0
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: unknown
+      lat: 41.25385
+      lon: -111.71106
+      distance_mi: 35.1
+      bearing: NNE
+      tracked_plane_presence_in_window: []
+    - airport_code: KHCR
+      icao: null
+      iata: null
+      name: "Heber Valley Airport"
+      city: Heber
+      region: US-UT
+      country: US
+      type: small_airport
+      elevation_ft: 5637
+      longest_runway_ft: 6898
+      longest_runway_surface: ASP
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: jet_capable
+      lat: 40.4818
+      lon: -111.429
+      distance_mi: 35.8
+      bearing: SE
+      tracked_plane_presence_in_window: []
+    - airport_code: US-4711
+      icao: null
+      iata: null
+      name: "Promontory Point Intermediate Field"
+      city: Corinne
+      region: US-UT
+      country: US
+      type: small_airport
+      elevation_ft: 4268
+      longest_runway_ft: null
+      longest_runway_surface: null
+      runway_count: 0
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: unknown
+      lat: 41.21148
+      lon: -112.43485
+      distance_mi: 37.6
+      bearing: NW
+      tracked_plane_presence_in_window: []
+    - airport_code: US-5322
+      icao: null
+      iata: null
+      name: "Guilder Peak Airport"
+      city: Morgan
+      region: US-UT
+      country: US
+      type: small_airport
+      elevation_ft: 8190
+      longest_runway_ft: null
+      longest_runway_surface: null
+      runway_count: 0
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: unknown
+      lat: 41.2343
+      lon: -111.55284
+      distance_mi: 38.0
+      bearing: NE
+      tracked_plane_presence_in_window: []
+    - airport_code: UT99
+      icao: null
+      iata: null
+      name: "West Desert Airpark"
+      city: Fairfield
+      region: US-UT
+      country: US
+      type: small_airport
+      elevation_ft: 4890
+      longest_runway_ft: 5200
+      longest_runway_surface: GRVL-G
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.24327
+      lon: -112.09202
+      distance_mi: 38.2
+      bearing: S
+      tracked_plane_presence_in_window: []
+tracked_plane_presence:
+  # Was any tracked aircraft on the ground at any field in the list above,
+  # inside the window? Three registers are searched and kept apart, strongest
+  # first. NEVER collapse them into one number.
+  window:
+    from: 2024-04-21
+    to: 2024-04-25
+    days_each_side: 2
+  any_found: false
+  egyptian_su_found: false
+  counts:
+    adsb_ground_contacts: 0
+    adsb_ground_contacts_egyptian_su: 0
+    flights_csv_stays: 0
+    flights_csv_stays_egyptian_su: 0
+    claimed_overlaps: 0
+  from_adsb_traces: []
+  from_flights_csv: []
+  from_overlaps_csv: []
+  just_outside_the_radius:
+    # A hard radius creates a cliff and a cliff hides evidence. These fields
+    # sit between 40 and 60 miles from the arrival airport. They are NOT counted
+    # as hits and must never be published as ones - they are here so a near miss
+    # is visible rather than silently dropped.
+    outer_radius_miles: 60.0
+    adsb_ground_contacts:
+      - tail: SU-BTT
+        registry: Egypt
+        side: following
+        aircraft_type: "Dassault Falcon 7X"
+        is_egyptian_su: true
+        in_73_tally: true
+        airport_code: KPVU
+        airport_name: "Provo Municipal Airport"
+        distance_from_arrival_airport_mi: 41.3
+        median_distance_from_that_runway_km: 0.58
+        date_utc: 2024-04-23
+        gap_days_from_event: 0
+        on_ground_first_utc: "2024-04-23T18:12:52.940000Z"
+        on_ground_last_utc: "2024-04-23T18:18:45.150000Z"
+        on_ground_first_local: "2024-04-23 12:12:52 MDT"
+        on_ground_last_local: "2024-04-23 12:18:45 MDT"
+        ground_positions: 53
+        ground_minutes: 5.9
+        adsb_sources:
+          - adsb-lol
+          - airplanes-live
+        source_count: 2
+        trace_files:
+          - site/docs/Planes/SU-BTT/data/recovered/SU-BTT_2024-04-23_adsb-lol_trace_full.json
+          - site/docs/Planes/SU-BTT/data/recovered/SU-BTT_2024-04-23_airplanes-live_trace_full.json
+        evidence_class: adsb_public_history
+        # OUTSIDE THE 40-MILE RADIUS. Reported so a near miss is not hidden by the cliff edge. This is NOT an in-radius hit.
+        cross_source_agreement: "AGREE (first-contact times within 0s across 2 independent archives)"
+    flights_csv_stays:
+      - tail: SU-BND
+        registry: Egypt
+        is_egyptian_su: true
+        in_73_tally: true
+        airport_code: KPVU
+        airport_name: "Provo Municipal Airport"
+        distance_from_arrival_airport_mi: 41.6
+        on_ground_start_date: 2024-04-19
+        on_ground_end_date: 2024-07-12
+        gap_days_from_event: 0
+        on_ground_during_event: true
+        days_on_ground: 84
+        confidence: audited_accurate
+        source: "Independent audit of Owens sheet index 25, correcting the sheet's claimed route."
+        evidence_class: curated_register_flights.csv
+        # OUTSIDE THE 40-MILE RADIUS. Reported so a near miss is not hidden by the cliff edge. This is NOT an in-radius hit.
+      - tail: SU-BTT
+        registry: Egypt
+        is_egyptian_su: true
+        in_73_tally: true
+        airport_code: KPVU
+        airport_name: "Provo Municipal Airport"
+        distance_from_arrival_airport_mi: 41.6
+        on_ground_start_date: 2024-04-23
+        on_ground_end_date: 2024-04-28
+        gap_days_from_event: 0
+        on_ground_during_event: true
+        days_on_ground: 5
+        confidence: audited_accurate
+        source: "Owens sheet index 26, marked accurate by the independent audit: 'Acc 4/22-23. Williston code XWA'; Provo landing time 12:13 pm from the three-column researcher chronology on X."
+        evidence_class: curated_register_flights.csv
+        # OUTSIDE THE 40-MILE RADIUS. Reported so a near miss is not hidden by the cliff edge. This is NOT an in-radius hit.
+    claimed_overlaps:
+      - overlap_id: OWENS-026
+        date: 2024-04-23
+        gap_days_from_event: 0
+        airport_code: KPVU
+        foreign_tail: SU-BTT
+        kirk_tail: null
+        subject: Charlie
+        confidence: audited_accurate
+        audit_verdict: accurate
+        survives_audit: "yes"
+        source: "Owens sheet via Kanekoa audit (ACCURATE 4/22–23); overlap page 20240423_UT_salt_lake_city; Owens Ep 256"
+        evidence_class: claimed_overlap_register
+        # A CLAIM, not a record. audit_verdict is this repo's own check of it.
+      - overlap_id: SITE-004
+        date: 2024-04-23
+        gap_days_from_event: 0
+        airport_code: KPVU
+        foreign_tail: "SU-BTT; SU-BND"
+        kirk_tail: null
+        subject: Charlie
+        confidence: audited_accurate
+        audit_verdict: accurate
+        survives_audit: "yes"
+        source: "Researcher-compiled timeline circulated on X; audit index 26 ('Acc 4/22-23. Williston code XWA'), index 27"
+        evidence_class: claimed_overlap_register
+        # A CLAIM, not a record. audit_verdict is this repo's own check of it.
+  coverage:
+    # AN EMPTY RESULT ABOVE IS NOT A FINDING UNLESS THIS SAYS THE DAYS WERE HELD.
+    # aircraft_days_needed = tails x days in the window. aircraft_days_held is
+    # how many of those this repo actually has a trace for. The rest were never
+    # pulled, or the networks heard nothing - the two are indistinguishable here.
+    aircraft_days_needed: 75
+    aircraft_days_held: 2
+    coverage_pct: 2.7
+    tails_with_no_trace_in_window:
+      - N102DZ
+      - N1098L
+      - N2100L
+      - N40JD
+      - N560TW
+      - N582MM
+      - N59906
+      - N872RA
+      - N888KG
+      - SU-BGM
+      - SU-BND
+      - SU-BTU
+      - SU-BTV
+      - T7-ELL
+    by_side:
+      following:
+        # FOLLOWING is the side the claim is about - the Egyptian SU- tails.
+        # This percentage is the one that decides whether an empty result means
+        # anything at all.
+        tails: 6
+        aircraft_days_needed: 30
+        aircraft_days_held: 2
+        coverage_pct: 6.7
+      kirk:
+        # KIRK-side coverage is what turns an ESTIMATED arrival into an
+        # OBSERVED one. Low here means the arrival times above stay estimates.
+        tails: 6
+        aircraft_days_needed: 30
+        aircraft_days_held: 0
+        coverage_pct: 0.0
+      n1098l:
+        # Other tracked aircraft. A DIFFERENT CLAIM - do not merge the threads.
+        tails: 3
+        aircraft_days_needed: 15
+        aircraft_days_held: 0
+        coverage_pct: 0.0
+counterargument:
+  - "ONE PAIRING IS NOT EVIDENCE. The claim under test is a repetition across many stops, and any single pairing has an innocent explanation a reader will find."
+  - "A field inside the radius is a field a jet COULD have used. Nothing here shows that anyone did use it, or that two aircraft on one ramp had any connection."
+  - "Maintenance is the strongest innocent explanation in this record: Duncan Aviation (Provo and Lincoln) and Yingling (Wichita) are Part 145 Falcon and Gulfstream shops, and a Falcon 7X sitting for weeks at one reads as a maintenance visit."
+  - "Transatlantic customs and fuel stops explain the recurring East Coast fields."
+  - "ERIKA'S SIDE IS THE WEAK SIDE. Her flight logs are reported erased, so any Erika pairing rests on the foreign aircraft's track plus a CLAIMED location for her. See /Planes/Erika-Flight-Logs-Erased."
+what_we_do_not_know:
+  - "Whether Charlie Kirk, Erika Kirk, or any TPUSA party actually flew to this event, or which aircraft they used. The arrival airport above is an inference from the venue city, not a record."
+  - "Whether the estimated arrival and departure times are within hours or within days of the truth, wherever observed_by_adsb is empty."
+  - "What the tracked aircraft were doing at any field they appear at. A trace proves presence, never purpose and never occupancy."
+  - "Whether the receiver networks simply did not hear an aircraft that was there. See the coverage block - an absence is not a finding."

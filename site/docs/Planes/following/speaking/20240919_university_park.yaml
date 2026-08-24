@@ -1,0 +1,902 @@
+# GENERATED FILE - regenerate, do not hand-edit.
+#   node/python: apis/public_open_source/code/airports_near.py --only 20240919_university_park
+#   The prompt that governs this file: prompts/p_airports_near.md
+schema: ck.speaking.airports_near/1
+generated_utc: "2026-08-24T19:03:26Z"
+generated_by: site/docs/Planes/following/apis/public_open_source/code/airports_near.py
+page:
+  slug: 20240919_university_park
+  mdx: site/docs/Planes/following/speaking/20240919_university_park.mdx
+  yaml: site/docs/Planes/following/speaking/20240919_university_park.yaml
+  url: /Planes/following/speaking/20240919_university_park
+event:
+  title: "You're Being Brainwashed Tour — Penn State"
+  who: Charlie
+  attendee_class: CHARLIE_ONLY
+  charlie_present: "yes"
+  erika_present: not_documented
+  attendance_status: held
+  event_type: campus
+  dates:
+    raw: 2024-09-19
+    first_day: 2024-09-19
+    last_day: 2024-09-19
+    granularity: DAY
+    certainty: EVENT_DATE
+    # PODCAST_PROXY means the date is a podcast RELEASE date and the event was normally 0-7 days earlier. Never publish a same-day claim off one.
+  local_time:
+    raw: noon
+    parsed_hhmm: "12:00"
+    basis: "coarse_word_'noon'_mapped_to_12:00"
+    timezone: America/New_York
+    timezone_method: timezonefinder
+  location:
+    city: "University Park"
+    state: PA
+    country: USA
+    venue: "HUB Lawn, Penn State University"
+    metro_area: "State College PA"
+    geocode:
+      lat: 40.84937
+      lon: -77.84852
+      method: curated_nearest_airport_code_in_tpusa_events_csv
+      matched: "KUNV State College Regional Airport - the CITY could not be geocoded, so the search is centred on the curated field itself"
+  source: "Onward State 11/19 Sep 2024"
+  source_url: "https://onwardstate.com/2024/09/11/turning-point-usa-bringing-youre-being-brainwashed-tour-to-penn-state-september-19/"
+  days_before_sept10_2025: 356
+search:
+  radius_miles: 40
+  window_days_each_side: 2
+  window_from: 2024-09-17
+  window_to: 2024-09-21
+  window_day_count: 5
+  centre: KUNV
+  tails_searched:
+    - N102DZ
+    - N1098L
+    - N2100L
+    - N40JD
+    - N560TW
+    - N582MM
+    - N59906
+    - N872RA
+    - N888KG
+    - SU-BGM
+    - SU-BND
+    - SU-BTT
+    - SU-BTU
+    - SU-BTV
+    - T7-ELL
+  sources_searched:
+    - "recovered ADS-B traces on disk (site/docs/Planes/<TAIL>/data/recovered/)"
+    - site/docs/Planes/following/flights.csv
+    - site/docs/Planes/following/overlaps.csv
+arrival_airport:
+  # ESTIMATE. No published Kirk-side flight record exists for this event unless
+  # the observed_by_adsb block below is non-empty. This is arithmetic on the
+  # event time, not a landing record.
+  chosen_airport:
+    airport_code: KUNV
+    icao: KUNV
+    iata: SCE
+    name: "State College Regional Airport"
+    city: "State College"
+    region: US-PA
+    country: US
+    type: medium_airport
+    elevation_ft: 1239
+    longest_runway_ft: 6701
+    longest_runway_surface: ASP
+    runway_count: 1
+    runways_lighted: true
+    scheduled_service: true
+    jet_capability: jet_capable
+    lat: 40.84937
+    lon: -77.84852
+    distance_mi: 0.0
+    bearing: N
+  distance_from_event_city_mi: 0.0
+  selection_basis: CURATED_CSV_AND_COMPUTED_NEAREST_JET_FIELD_AGREE
+  curated_value_in_tpusa_events_csv:
+    airport_code: KUNV
+    airport_name: "University Park Airport"
+    distance_mi: 3
+  computed_nearest_jet_capable_field:
+    airport_code: KUNV
+    name: "State College Regional Airport"
+    distance_mi: 0.0
+    longest_runway_ft: 6701
+  estimated_arrival:
+    date: 2024-09-19
+    local_time: "09:00"
+    timezone: America/New_York
+    utc: "2024-09-19T13:00:00Z"
+    basis: "event start 12:00 local (coarse_word_'noon'_mapped_to_12:00) minus 3h"
+    confidence: medium
+  estimated_departure:
+    date: 2024-09-19
+    local_time: "16:00"
+    timezone: America/New_York
+    utc: "2024-09-19T20:00:00Z"
+    basis: "event end + 4h (speech, exit, wheels-up)"
+    confidence: medium
+  observed_by_adsb: []
+  observed_by_adsb_note: "NO Kirk-side aircraft is on disk on the ground within 40 miles of KUNV in this window. The arrival and departure above stay estimates."
+airports_within_radius:
+  # Every field a private jet could physically use within the radius.
+  # Heliports, seaplane bases, balloonports and closed fields are excluded -
+  # a business jet cannot use any of them. Everything else is kept, including
+  # every small strip with no scheduled service: those are the point of the sweep.
+  radius_miles: 40
+  centre_airport: KUNV
+  count: 34
+  jet_capable_count: 3
+  light_jet_capable_count: 2
+  no_scheduled_service_count: 33
+  source: "OurAirports (CC0) airports.csv + runways.csv"
+  list:
+    - airport_code: KUNV
+      icao: KUNV
+      iata: SCE
+      name: "State College Regional Airport"
+      city: "State College"
+      region: US-PA
+      country: US
+      type: medium_airport
+      elevation_ft: 1239
+      longest_runway_ft: 6701
+      longest_runway_surface: ASP
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: true
+      jet_capability: jet_capable
+      lat: 40.84937
+      lon: -77.84852
+      distance_mi: 0.0
+      bearing: N
+      tracked_plane_presence_in_window: []
+    - airport_code: KN96
+      icao: null
+      iata: null
+      name: "Bellefonte Airport"
+      city: Bellefonte
+      region: US-PA
+      country: US
+      type: small_airport
+      elevation_ft: 1071
+      longest_runway_ft: 3632
+      longest_runway_surface: ASP
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: marginal
+      lat: 40.8855
+      lon: -77.8163
+      distance_mi: 3.0
+      bearing: NE
+      tracked_plane_presence_in_window: []
+    - airport_code: 79N
+      icao: null
+      iata: null
+      name: "Ridge Soaring Gliderport"
+      city: Unionville
+      region: US-PA
+      country: US
+      type: small_airport
+      elevation_ft: 815
+      longest_runway_ft: 3322
+      longest_runway_surface: ASPH-TURF-F
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: marginal
+      lat: 40.8839
+      lon: -77.9072
+      distance_mi: 3.9
+      bearing: NW
+      tracked_plane_presence_in_window: []
+    - airport_code: 09PA
+      icao: null
+      iata: null
+      name: "Eagle Field"
+      city: "Port Matilda"
+      region: US-PA
+      country: US
+      type: small_airport
+      elevation_ft: 1780
+      longest_runway_ft: 2300
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.827
+      lon: -77.9881
+      distance_mi: 7.5
+      bearing: WSW
+      tracked_plane_presence_in_window: []
+    - airport_code: 01PN
+      icao: null
+      iata: null
+      name: "Bierly(Personal Use) Airport"
+      city: Bellefonte
+      region: US-PA
+      country: US
+      type: small_airport
+      elevation_ft: 960
+      longest_runway_ft: 1700
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.9306
+      lon: -77.7389
+      distance_mi: 8.0
+      bearing: NE
+      tracked_plane_presence_in_window: []
+    - airport_code: N16
+      icao: null
+      iata: null
+      name: "Centre Airpark"
+      city: "Centre Hall"
+      region: US-PA
+      country: US
+      type: small_airport
+      elevation_ft: 1307
+      longest_runway_ft: 3100
+      longest_runway_surface: TURF-G
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.81095
+      lon: -77.65802
+      distance_mi: 10.3
+      bearing: ESE
+      tracked_plane_presence_in_window: []
+    - airport_code: 3PS4
+      icao: null
+      iata: null
+      name: "Mountain Hide-Away Airport"
+      city: Millcreek
+      region: US-PA
+      country: US
+      type: small_airport
+      elevation_ft: 1604
+      longest_runway_ft: 1400
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.7236
+      lon: -77.9874
+      distance_mi: 11.3
+      bearing: SW
+      tracked_plane_presence_in_window: []
+    - airport_code: 47PA
+      icao: null
+      iata: null
+      name: "Homan Airport"
+      city: "State College"
+      region: US-PA
+      country: US
+      type: small_airport
+      elevation_ft: 1200
+      longest_runway_ft: 2300
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.7167
+      lon: -77.9831
+      distance_mi: 11.6
+      bearing: SW
+      tracked_plane_presence_in_window: []
+    - airport_code: 44PA
+      icao: null
+      iata: null
+      name: "Pennfield Farm Airport"
+      city: "Spring Mills"
+      region: US-PA
+      country: US
+      type: small_airport
+      elevation_ft: 1200
+      longest_runway_ft: 2100
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.8501
+      lon: -77.6164
+      distance_mi: 12.1
+      bearing: E
+      tracked_plane_presence_in_window: []
+    - airport_code: KPSB
+      icao: KPSB
+      iata: PSB
+      name: "Mid-State Regional Airport"
+      city: Philipsburg
+      region: US-PA
+      country: US
+      type: small_airport
+      elevation_ft: 1948
+      longest_runway_ft: 5711
+      longest_runway_surface: ASP
+      runway_count: 2
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: jet_capable
+      lat: 40.8844
+      lon: -78.0873
+      distance_mi: 12.7
+      bearing: W
+      tracked_plane_presence_in_window: []
+    - airport_code: N74
+      icao: null
+      iata: null
+      name: "Penns Cave Airport"
+      city: "Centre Hall"
+      region: US-PA
+      country: US
+      type: small_airport
+      elevation_ft: 1260
+      longest_runway_ft: 2509
+      longest_runway_surface: ASPH-F
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.8903
+      lon: -77.6025
+      distance_mi: 13.2
+      bearing: ENE
+      tracked_plane_presence_in_window: []
+    - airport_code: 0PA6
+      icao: null
+      iata: null
+      name: "Hostetler Airport"
+      city: Huntingdon
+      region: US-PA
+      country: US
+      type: small_airport
+      elevation_ft: 760
+      longest_runway_ft: 1800
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.6309
+      lon: -77.8503
+      distance_mi: 15.1
+      bearing: S
+      tracked_plane_presence_in_window: []
+    - airport_code: KRVL
+      icao: KRVL
+      iata: RED
+      name: "Mifflin County Airport"
+      city: Reedsville
+      region: US-PA
+      country: US
+      type: small_airport
+      elevation_ft: 819
+      longest_runway_ft: 5001
+      longest_runway_surface: ASP
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: jet_capable
+      lat: 40.6774
+      lon: -77.6268
+      distance_mi: 16.6
+      bearing: SE
+      tracked_plane_presence_in_window: []
+    - airport_code: 07PN
+      icao: null
+      iata: null
+      name: "Folmar Airport"
+      city: Grassflat
+      region: US-PA
+      country: US
+      type: small_airport
+      elevation_ft: 1690
+      longest_runway_ft: 2000
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.99889
+      lon: -78.12528
+      distance_mi: 17.8
+      bearing: NW
+      tracked_plane_presence_in_window: []
+    - airport_code: PS11
+      icao: null
+      iata: null
+      name: "Mc Cardle Farm Airport"
+      city: Burnham
+      region: US-PA
+      country: US
+      type: small_airport
+      elevation_ft: 600
+      longest_runway_ft: 1800
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.6453
+      lon: -77.5553
+      distance_mi: 20.8
+      bearing: SE
+      tracked_plane_presence_in_window: []
+    - airport_code: 1N3
+      icao: null
+      iata: null
+      name: "Albert Airport"
+      city: Philipsburg
+      region: US-PA
+      country: US
+      type: small_airport
+      elevation_ft: 1784
+      longest_runway_ft: 3350
+      longest_runway_surface: TURF-GRVL-F
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.9715
+      lon: -78.2429
+      distance_mi: 22.3
+      bearing: WNW
+      tracked_plane_presence_in_window: []
+    - airport_code: 1PA4
+      icao: null
+      iata: null
+      name: "Wagner Airport"
+      city: Lewistown
+      region: US-PA
+      country: US
+      type: small_airport
+      elevation_ft: 520
+      longest_runway_ft: 1885
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.55207
+      lon: -77.61139
+      distance_mi: 24.0
+      bearing: SSE
+      tracked_plane_presence_in_window: []
+    - airport_code: PN64
+      icao: null
+      iata: null
+      name: "Hilling International Airport"
+      city: Huntingdon
+      region: US-PA
+      country: US
+      type: small_airport
+      elevation_ft: 1400
+      longest_runway_ft: 1280
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.5024
+      lon: -77.9394
+      distance_mi: 24.4
+      bearing: SSW
+      tracked_plane_presence_in_window: []
+    - airport_code: PS73
+      icao: null
+      iata: null
+      name: "Poverty Airport"
+      city: Mackeyville
+      region: US-PA
+      country: US
+      type: small_airport
+      elevation_ft: 860
+      longest_runway_ft: 2500
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 41.06174
+      lon: -77.43318
+      distance_mi: 26.2
+      bearing: NE
+      tracked_plane_presence_in_window: []
+    - airport_code: P34
+      icao: null
+      iata: null
+      name: "Mifflintown Airport"
+      city: Mifflintown
+      region: US-PA
+      country: US
+      type: small_airport
+      elevation_ft: 545
+      longest_runway_ft: 2627
+      longest_runway_surface: ASPH-F
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.5989
+      lon: -77.4057
+      distance_mi: 28.9
+      bearing: SE
+      tracked_plane_presence_in_window: []
+    - airport_code: KLHV
+      icao: KLHV
+      iata: LHV
+      name: "William T. Piper Memorial Airport"
+      city: "Lock Haven"
+      region: US-PA
+      country: US
+      type: small_airport
+      elevation_ft: 556
+      longest_runway_ft: 3799
+      longest_runway_surface: ASP
+      runway_count: 2
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: marginal
+      lat: 41.1356
+      lon: -77.4223
+      distance_mi: 29.8
+      bearing: NE
+      tracked_plane_presence_in_window: []
+    - airport_code: PS06
+      icao: null
+      iata: null
+      name: "Snook Airport"
+      city: "Beaver Springs"
+      region: US-PA
+      country: US
+      type: small_airport
+      elevation_ft: 710
+      longest_runway_ft: 1300
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.7334
+      lon: -77.2664
+      distance_mi: 31.5
+      bearing: ESE
+      tracked_plane_presence_in_window: []
+    - airport_code: 6PA8
+      icao: null
+      iata: null
+      name: "Tall Pines Airfield"
+      city: "Lock Haven"
+      region: US-PA
+      country: US
+      type: small_airport
+      elevation_ft: 1500
+      longest_runway_ft: 1550
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 41.2014
+      lon: -77.4408
+      distance_mi: 32.3
+      bearing: NE
+      tracked_plane_presence_in_window: []
+    - airport_code: KFIG
+      icao: null
+      iata: null
+      name: "Clearfield Lawrence Airport"
+      city: Clearfield
+      region: US-PA
+      country: US
+      type: small_airport
+      elevation_ft: 1516
+      longest_runway_ft: 4499
+      longest_runway_surface: ASP
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: light_jet_capable
+      lat: 41.04903
+      lon: -78.415
+      distance_mi: 32.6
+      bearing: WNW
+      tracked_plane_presence_in_window: []
+    - airport_code: PA39
+      icao: null
+      iata: null
+      name: "Beaver Springs Airport"
+      city: Benfer
+      region: US-PA
+      country: US
+      type: small_airport
+      elevation_ft: 642
+      longest_runway_ft: 4500
+      longest_runway_surface: ASP
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: light_jet_capable
+      lat: 40.7765
+      lon: -77.2164
+      distance_mi: 33.4
+      bearing: E
+      tracked_plane_presence_in_window: []
+    - airport_code: 77PN
+      icao: null
+      iata: null
+      name: "Gilfert Airport"
+      city: Benfer
+      region: US-PA
+      country: US
+      type: small_airport
+      elevation_ft: 630
+      longest_runway_ft: 2000
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.784
+      lon: -77.2066
+      distance_mi: 33.9
+      bearing: E
+      tracked_plane_presence_in_window: []
+    - airport_code: 6G6
+      icao: null
+      iata: null
+      name: "Cove Valley Airport"
+      city: Williamsburg
+      region: US-PA
+      country: US
+      type: small_airport
+      elevation_ft: 1156
+      longest_runway_ft: 2750
+      longest_runway_surface: TURF-G
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.4545
+      lon: -78.2381
+      distance_mi: 34.1
+      bearing: SW
+      tracked_plane_presence_in_window: []
+    - airport_code: PS15
+      icao: null
+      iata: null
+      name: "Vicars Private Airport"
+      city: Altoona
+      region: US-PA
+      country: US
+      type: small_airport
+      elevation_ft: 1370
+      longest_runway_ft: 1200
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.5476
+      lon: -78.3917
+      distance_mi: 35.3
+      bearing: SW
+      tracked_plane_presence_in_window: []
+    - airport_code: 4PA5
+      icao: null
+      iata: null
+      name: "Ponderosa Airport"
+      city: "Lock Haven"
+      region: US-PA
+      country: US
+      type: small_airport
+      elevation_ft: 1820
+      longest_runway_ft: 2200
+      longest_runway_surface: ASPH-G
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 41.3084
+      lon: -77.5247
+      distance_mi: 35.9
+      bearing: NNE
+      tracked_plane_presence_in_window: []
+    - airport_code: PS69
+      icao: null
+      iata: null
+      name: "Barnhart Airport"
+      city: Flinton
+      region: US-PA
+      country: US
+      type: small_airport
+      elevation_ft: 1640
+      longest_runway_ft: 2900
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.727
+      lon: -78.5395
+      distance_mi: 37.1
+      bearing: WSW
+      tracked_plane_presence_in_window: []
+    - airport_code: 5PN8
+      icao: null
+      iata: null
+      name: "Lincoln Farms Airport"
+      city: Calvin
+      region: US-PA
+      country: US
+      type: small_airport
+      elevation_ft: 1200
+      longest_runway_ft: 1420
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.3289
+      lon: -78.045
+      distance_mi: 37.4
+      bearing: SSW
+      tracked_plane_presence_in_window: []
+    - airport_code: 0PS4
+      icao: null
+      iata: null
+      name: "Old Orchard Airport"
+      city: Curwensville
+      region: US-PA
+      country: US
+      type: small_airport
+      elevation_ft: 1980
+      longest_runway_ft: 2400
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 41.00975
+      lon: -78.56184
+      distance_mi: 38.8
+      bearing: WNW
+      tracked_plane_presence_in_window: []
+    - airport_code: 37PA
+      icao: null
+      iata: null
+      name: "Roadcap Airport"
+      city: Middleburg
+      region: US-PA
+      country: US
+      type: small_airport
+      elevation_ft: 731
+      longest_runway_ft: 2500
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.7884
+      lon: -77.1061
+      distance_mi: 39.0
+      bearing: E
+      tracked_plane_presence_in_window: []
+    - airport_code: 1PA0
+      icao: null
+      iata: null
+      name: "Hinaman Acres Airport"
+      city: "Jersey Shore"
+      region: US-PA
+      country: US
+      type: small_airport
+      elevation_ft: 800
+      longest_runway_ft: 2300
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 41.1334
+      lon: -77.1997
+      distance_mi: 39.1
+      bearing: ENE
+      tracked_plane_presence_in_window: []
+tracked_plane_presence:
+  # Was any tracked aircraft on the ground at any field in the list above,
+  # inside the window? Three registers are searched and kept apart, strongest
+  # first. NEVER collapse them into one number.
+  window:
+    from: 2024-09-17
+    to: 2024-09-21
+    days_each_side: 2
+  any_found: false
+  egyptian_su_found: false
+  counts:
+    adsb_ground_contacts: 0
+    adsb_ground_contacts_egyptian_su: 0
+    flights_csv_stays: 0
+    flights_csv_stays_egyptian_su: 0
+    claimed_overlaps: 0
+  from_adsb_traces: []
+  from_flights_csv: []
+  from_overlaps_csv: []
+  just_outside_the_radius:
+    # A hard radius creates a cliff and a cliff hides evidence. These fields
+    # sit between 40 and 60 miles from the arrival airport. They are NOT counted
+    # as hits and must never be published as ones - they are here so a near miss
+    # is visible rather than silently dropped.
+    outer_radius_miles: 60.0
+    adsb_ground_contacts: []
+    flights_csv_stays: []
+    claimed_overlaps: []
+  coverage:
+    # AN EMPTY RESULT ABOVE IS NOT A FINDING UNLESS THIS SAYS THE DAYS WERE HELD.
+    # aircraft_days_needed = tails x days in the window. aircraft_days_held is
+    # how many of those this repo actually has a trace for. The rest were never
+    # pulled, or the networks heard nothing - the two are indistinguishable here.
+    aircraft_days_needed: 75
+    aircraft_days_held: 0
+    coverage_pct: 0.0
+    tails_with_no_trace_in_window:
+      - N102DZ
+      - N1098L
+      - N2100L
+      - N40JD
+      - N560TW
+      - N582MM
+      - N59906
+      - N872RA
+      - N888KG
+      - SU-BGM
+      - SU-BND
+      - SU-BTT
+      - SU-BTU
+      - SU-BTV
+      - T7-ELL
+    by_side:
+      following:
+        # FOLLOWING is the side the claim is about - the Egyptian SU- tails.
+        # This percentage is the one that decides whether an empty result means
+        # anything at all.
+        tails: 6
+        aircraft_days_needed: 30
+        aircraft_days_held: 0
+        coverage_pct: 0.0
+      kirk:
+        # KIRK-side coverage is what turns an ESTIMATED arrival into an
+        # OBSERVED one. Low here means the arrival times above stay estimates.
+        tails: 6
+        aircraft_days_needed: 30
+        aircraft_days_held: 0
+        coverage_pct: 0.0
+      n1098l:
+        # Other tracked aircraft. A DIFFERENT CLAIM - do not merge the threads.
+        tails: 3
+        aircraft_days_needed: 15
+        aircraft_days_held: 0
+        coverage_pct: 0.0
+counterargument:
+  - "ONE PAIRING IS NOT EVIDENCE. The claim under test is a repetition across many stops, and any single pairing has an innocent explanation a reader will find."
+  - "A field inside the radius is a field a jet COULD have used. Nothing here shows that anyone did use it, or that two aircraft on one ramp had any connection."
+  - "Maintenance is the strongest innocent explanation in this record: Duncan Aviation (Provo and Lincoln) and Yingling (Wichita) are Part 145 Falcon and Gulfstream shops, and a Falcon 7X sitting for weeks at one reads as a maintenance visit."
+  - "Transatlantic customs and fuel stops explain the recurring East Coast fields."
+  - "ERIKA'S SIDE IS THE WEAK SIDE. Her flight logs are reported erased, so any Erika pairing rests on the foreign aircraft's track plus a CLAIMED location for her. See /Planes/Erika-Flight-Logs-Erased."
+what_we_do_not_know:
+  - "Whether Charlie Kirk, Erika Kirk, or any TPUSA party actually flew to this event, or which aircraft they used. The arrival airport above is an inference from the venue city, not a record."
+  - "Whether the estimated arrival and departure times are within hours or within days of the truth, wherever observed_by_adsb is empty."
+  - "What the tracked aircraft were doing at any field they appear at. A trace proves presence, never purpose and never occupancy."
+  - "Whether the receiver networks simply did not hear an aircraft that was there. See the coverage block - an absence is not a finding."

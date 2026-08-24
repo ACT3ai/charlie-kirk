@@ -1,0 +1,15 @@
+{"icao":"01003e",
+"r":"SU-BND",
+"t":"GLF4",
+"dbFlags":0,
+"desc":"GULFSTREAM 4",
+"ownOp":"Government Of Egypt",
+"year":"1998",
+"timestamp": 1698278400.000,
+"trace":[ 
+[32504.99,30.122231,31.360638,1350,220.0,null,1,null,{"type":"adsb_icao","flight":"SUBND   ","nic":8,"rc":185,"version":0,"nic_baro":1,"nac_p":9,"nac_v":1,"sil":3,"sil_type":"perhour"},"adsb_icao",null,null,null,null],
+[32516.67,30.135040,31.360689,1900,220.0,0.4,0,0,null,"adsb_icao",null,null,null,null],
+[32541.08,30.164547,31.361683,2800,220.0,1.9,1,0,null,"adsb_icao",null,null,null,null],
+[32556.26,30.182377,31.361958,3475,250.0,0.6,1,null,null,"adsb_icao",null,null,null,null],
+[32562.83,30.187180,31.361336,3675,250.0,351.1,0,null,{"type":"adsb_icao","flight":"SUBND   ","track":351.10,"squawk":"3764","nic":8,"rc":185,"version":0,"nic_baro":1,"nac_p":9,"nac_v":1,"sil":3,"sil_type":"perhour"},"adsb_icao",null,null,null,null] ]
+ }

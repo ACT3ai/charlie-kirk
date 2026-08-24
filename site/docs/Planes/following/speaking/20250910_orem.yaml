@@ -1,0 +1,1136 @@
+# GENERATED FILE - regenerate, do not hand-edit.
+#   node/python: apis/public_open_source/code/airports_near.py --only 20250910_orem
+#   The prompt that governs this file: prompts/p_airports_near.md
+schema: ck.speaking.airports_near/1
+generated_utc: "2026-08-24T19:03:27Z"
+generated_by: site/docs/Planes/following/apis/public_open_source/code/airports_near.py
+page:
+  slug: 20250910_orem
+  mdx: site/docs/Planes/following/speaking/20250910_orem.mdx
+  yaml: site/docs/Planes/following/speaking/20250910_orem.yaml
+  url: /Planes/following/speaking/20250910_orem
+event:
+  title: "The American Comeback Tour — UVU (first stop of the fall tour)"
+  who: Charlie
+  attendee_class: CHARLIE_ONLY
+  charlie_present: "yes"
+  erika_present: not_documented
+  attendance_status: held
+  event_type: campus
+  dates:
+    raw: 2025-09-10
+    first_day: 2025-09-10
+    last_day: 2025-09-10
+    granularity: DAY
+    certainty: EVENT_DATE
+    # PODCAST_PROXY means the date is a podcast RELEASE date and the event was normally 0-7 days earlier. Never publish a same-day claim off one.
+  local_time:
+    raw: "event ~10:00 MDT announced; shot at 12:23:30 PM MDT"
+    parsed_hhmm: "10:00"
+    basis: parsed_from_event_time_cell
+    timezone: America/Denver
+    timezone_method: timezonefinder
+  location:
+    city: Orem
+    state: UT
+    country: USA
+    venue: "Utah Valley University, Sorensen Center courtyard"
+    metro_area: "Wasatch Front UT"
+    geocode:
+      lat: 40.29807
+      lon: -111.69944
+      method: us_census_2024_gazetteer
+      matched: "Orem city"
+  source: "KMYU (10 a.m. courtyard); UVU pages on this site; Fox/ABC 10 Sep 2025"
+  source_url: "https://kmyu.tv/news/politics/activist-social-media-personality-charles-kirk-schedules-events-at-two-utah-universities"
+  days_before_sept10_2025: 0
+search:
+  radius_miles: 40
+  window_days_each_side: 2
+  window_from: 2025-09-08
+  window_to: 2025-09-12
+  window_day_count: 5
+  centre: KPVU
+  tails_searched:
+    - N102DZ
+    - N1098L
+    - N2100L
+    - N40JD
+    - N560TW
+    - N582MM
+    - N59906
+    - N872RA
+    - N888KG
+    - SU-BGM
+    - SU-BND
+    - SU-BTT
+    - SU-BTU
+    - SU-BTV
+    - T7-ELL
+  sources_searched:
+    - "recovered ADS-B traces on disk (site/docs/Planes/<TAIL>/data/recovered/)"
+    - site/docs/Planes/following/flights.csv
+    - site/docs/Planes/following/overlaps.csv
+arrival_airport:
+  # ESTIMATE. No published Kirk-side flight record exists for this event unless
+  # the observed_by_adsb block below is non-empty. This is arithmetic on the
+  # event time, not a landing record.
+  chosen_airport:
+    airport_code: KPVU
+    icao: KPVU
+    iata: PVU
+    name: "Provo Municipal Airport"
+    city: Provo
+    region: US-UT
+    country: US
+    type: medium_airport
+    elevation_ft: 4497
+    longest_runway_ft: 8603
+    longest_runway_surface: ASP
+    runway_count: 2
+    runways_lighted: true
+    scheduled_service: true
+    jet_capability: jet_capable
+    lat: 40.21889
+    lon: -111.72244
+    distance_mi: 5.6
+    bearing: SSW
+  distance_from_event_city_mi: 5.6
+  selection_basis: CURATED_CSV_AND_COMPUTED_NEAREST_JET_FIELD_AGREE
+  curated_value_in_tpusa_events_csv:
+    airport_code: KPVU
+    airport_name: "Provo Municipal Airport"
+    distance_mi: 5
+  computed_nearest_jet_capable_field:
+    airport_code: KPVU
+    name: "Provo Municipal Airport"
+    distance_mi: 5.6
+    longest_runway_ft: 8603
+  estimated_arrival:
+    date: 2025-09-10
+    local_time: "07:00"
+    timezone: America/Denver
+    utc: "2025-09-10T13:00:00Z"
+    basis: "event start 10:00 local (parsed_from_event_time_cell) minus 3h"
+    confidence: medium
+  estimated_departure:
+    date: 2025-09-10
+    local_time: "14:00"
+    timezone: America/Denver
+    utc: "2025-09-10T20:00:00Z"
+    basis: "event end + 4h (speech, exit, wheels-up)"
+    confidence: medium
+  observed_by_adsb:
+    - tail: N888KG
+      airport_code: KPVU
+      date_utc: 2025-09-08
+      gap_days_from_event: -2
+      on_ground_first_local: "2025-09-07 18:27:09 MDT"
+      on_ground_last_local: "2025-09-07 18:29:59 MDT"
+      on_ground_first_utc: "2025-09-08T00:27:09.970000Z"
+      on_ground_last_utc: "2025-09-08T00:29:59.110000Z"
+      ground_minutes: 2.8
+      adsb_sources:
+        - adsb-lol
+        - airplanes-live
+      # OBSERVED, not estimated. This is a real ground contact by a Kirk-side airframe. It still does not establish who was aboard.
+    - tail: N102DZ
+      airport_code: KPVU
+      date_utc: 2025-09-10
+      gap_days_from_event: 0
+      on_ground_first_local: "2025-09-10 15:30:43 MDT"
+      on_ground_last_local: "2025-09-10 16:10:12 MDT"
+      on_ground_first_utc: "2025-09-10T21:30:43.910000Z"
+      on_ground_last_utc: "2025-09-10T22:10:12.880000Z"
+      ground_minutes: 39.5
+      adsb_sources:
+        - adsb-lol
+        - airplanes-live
+      # OBSERVED, not estimated. This is a real ground contact by a Kirk-side airframe. It still does not establish who was aboard.
+    - tail: N40JD
+      airport_code: KPVU
+      date_utc: 2025-09-10
+      gap_days_from_event: 0
+      on_ground_first_local: "2025-09-10 14:29:15 MDT"
+      on_ground_last_local: "2025-09-10 15:12:22 MDT"
+      on_ground_first_utc: "2025-09-10T20:29:15.110000Z"
+      on_ground_last_utc: "2025-09-10T21:12:22.320000Z"
+      ground_minutes: 43.1
+      adsb_sources:
+        - adsb-lol
+        - airplanes-live
+      # OBSERVED, not estimated. This is a real ground contact by a Kirk-side airframe. It still does not establish who was aboard.
+    - tail: N560TW
+      airport_code: KPVU
+      date_utc: 2025-09-10
+      gap_days_from_event: 0
+      on_ground_first_local: "2025-09-10 10:07:13 MDT"
+      on_ground_last_local: "2025-09-10 10:27:01 MDT"
+      on_ground_first_utc: "2025-09-10T16:07:13.460000Z"
+      on_ground_last_utc: "2025-09-10T16:27:01.420000Z"
+      ground_minutes: 19.8
+      adsb_sources:
+        - adsb-lol
+        - airplanes-live
+      # OBSERVED, not estimated. This is a real ground contact by a Kirk-side airframe. It still does not establish who was aboard.
+    - tail: N872RA
+      airport_code: KPVU
+      date_utc: 2025-09-10
+      gap_days_from_event: 0
+      on_ground_first_local: "2025-09-10 16:36:10 MDT"
+      on_ground_last_local: "2025-09-10 17:16:03 MDT"
+      on_ground_first_utc: "2025-09-10T22:36:10.610000Z"
+      on_ground_last_utc: "2025-09-10T23:16:03.720000Z"
+      ground_minutes: 39.9
+      adsb_sources:
+        - adsb-lol
+        - airplanes-live
+      # OBSERVED, not estimated. This is a real ground contact by a Kirk-side airframe. It still does not establish who was aboard.
+    - tail: N888KG
+      airport_code: KPVU
+      date_utc: 2025-09-10
+      gap_days_from_event: 0
+      on_ground_first_local: "2025-09-10 13:06:07 MDT"
+      on_ground_last_local: "2025-09-10 15:07:54 MDT"
+      on_ground_first_utc: "2025-09-10T19:06:07.720000Z"
+      on_ground_last_utc: "2025-09-10T21:07:54.060000Z"
+      ground_minutes: 121.8
+      adsb_sources:
+        - adsb-lol
+        - airplanes-live
+      # OBSERVED, not estimated. This is a real ground contact by a Kirk-side airframe. It still does not establish who was aboard.
+    - tail: N102DZ
+      airport_code: KPVU
+      date_utc: 2025-09-11
+      gap_days_from_event: 1
+      on_ground_first_local: "2025-09-10 19:31:56 MDT"
+      on_ground_last_local: "2025-09-11 10:03:20 MDT"
+      on_ground_first_utc: "2025-09-11T01:31:56.670000Z"
+      on_ground_last_utc: "2025-09-11T16:03:20.640000Z"
+      ground_minutes: 871.4
+      adsb_sources:
+        - adsb-lol
+        - airplanes-live
+      # OBSERVED, not estimated. This is a real ground contact by a Kirk-side airframe. It still does not establish who was aboard.
+    - tail: N582MM
+      airport_code: KPVU
+      date_utc: 2025-09-11
+      gap_days_from_event: 1
+      on_ground_first_local: "2025-09-10 18:57:14 MDT"
+      on_ground_last_local: "2025-09-11 08:19:56 MDT"
+      on_ground_first_utc: "2025-09-11T00:57:14.480000Z"
+      on_ground_last_utc: "2025-09-11T14:19:56.970000Z"
+      ground_minutes: 802.7
+      adsb_sources:
+        - adsb-lol
+        - airplanes-live
+      # OBSERVED, not estimated. This is a real ground contact by a Kirk-side airframe. It still does not establish who was aboard.
+airports_within_radius:
+  # Every field a private jet could physically use within the radius.
+  # Heliports, seaplane bases, balloonports and closed fields are excluded -
+  # a business jet cannot use any of them. Everything else is kept, including
+  # every small strip with no scheduled service: those are the point of the sweep.
+  radius_miles: 40
+  centre_airport: KPVU
+  count: 13
+  jet_capable_count: 5
+  light_jet_capable_count: 0
+  no_scheduled_service_count: 12
+  source: "OurAirports (CC0) airports.csv + runways.csv"
+  list:
+    - airport_code: KPVU
+      icao: KPVU
+      iata: PVU
+      name: "Provo Municipal Airport"
+      city: Provo
+      region: US-UT
+      country: US
+      type: medium_airport
+      elevation_ft: 4497
+      longest_runway_ft: 8603
+      longest_runway_surface: ASP
+      runway_count: 2
+      runways_lighted: true
+      scheduled_service: true
+      jet_capability: jet_capable
+      lat: 40.21889
+      lon: -111.72244
+      distance_mi: 0.0
+      bearing: N
+      tracked_plane_presence_in_window:
+        - "SU-BND on 2025-09-08 - ADS-B ground contact, 79.7 min, 2 archive(s)"
+        - "SU-BND on 2025-09-09 - ADS-B ground contact, 35.4 min, 2 archive(s)"
+        - "SU-BND on 2025-09-10 - ADS-B ground contact, 264.0 min, 2 archive(s)"
+        - "SU-BTT on 2025-09-10 - ADS-B ground contact, 5.4 min, 2 archive(s)"
+        - "SU-BND on 2025-09-12 - ADS-B ground contact, 519.5 min, 2 archive(s)"
+        - "N59906 on 2025-09-08 - ADS-B ground contact, 81.1 min, 2 archive(s)"
+        - "N888KG on 2025-09-08 - ADS-B ground contact, 2.8 min, 2 archive(s)"
+        - "N102DZ on 2025-09-10 - ADS-B ground contact, 39.5 min, 2 archive(s)"
+        - "N40JD on 2025-09-10 - ADS-B ground contact, 43.1 min, 2 archive(s)"
+        - "N560TW on 2025-09-10 - ADS-B ground contact, 19.8 min, 2 archive(s)"
+        - "N59906 on 2025-09-10 - ADS-B ground contact, 179.8 min, 2 archive(s)"
+        - "N872RA on 2025-09-10 - ADS-B ground contact, 39.9 min, 2 archive(s)"
+        - "N888KG on 2025-09-10 - ADS-B ground contact, 121.8 min, 2 archive(s)"
+        - "N102DZ on 2025-09-11 - ADS-B ground contact, 871.4 min, 2 archive(s)"
+        - "N582MM on 2025-09-11 - ADS-B ground contact, 802.7 min, 2 archive(s)"
+        - "SU-BND 2025-05-23..2025-09-13 (flights.csv)"
+        - "SU-BTT 2025-09-04..2025-09-10 (flights.csv)"
+    - airport_code: KSPK
+      icao: null
+      iata: null
+      name: "Spanish Fork Municipal Airport/Woodhouse Field"
+      city: "Spanish Fork"
+      region: US-UT
+      country: US
+      type: small_airport
+      elevation_ft: 4529
+      longest_runway_ft: 6500
+      longest_runway_surface: ASP
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: jet_capable
+      lat: 40.14503
+      lon: -111.66769
+      distance_mi: 5.9
+      bearing: SSE
+      tracked_plane_presence_in_window: []
+    - airport_code: UT41
+      icao: null
+      iata: null
+      name: "Glenmar Ranch Airport"
+      city: "Cedar Fort"
+      region: US-UT
+      country: US
+      type: small_airport
+      elevation_ft: 5030
+      longest_runway_ft: 2600
+      longest_runway_surface: DIRT
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.3394
+      lon: -111.999
+      distance_mi: 16.8
+      bearing: WNW
+      tracked_plane_presence_in_window: []
+    - airport_code: UT10
+      icao: null
+      iata: null
+      name: "Cedar Valley Airport"
+      city: "Eagle Mountain"
+      region: US-UT
+      country: US
+      type: small_airport
+      elevation_ft: 5000
+      longest_runway_ft: 5100
+      longest_runway_surface: GRAVEL
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.3572
+      lon: -112.018
+      distance_mi: 18.3
+      bearing: WNW
+      tracked_plane_presence_in_window: []
+    - airport_code: UT99
+      icao: null
+      iata: null
+      name: "West Desert Airpark"
+      city: Fairfield
+      region: US-UT
+      country: US
+      type: small_airport
+      elevation_ft: 4890
+      longest_runway_ft: 5200
+      longest_runway_surface: GRVL-G
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.24327
+      lon: -112.09202
+      distance_mi: 19.6
+      bearing: W
+      tracked_plane_presence_in_window: []
+    - airport_code: US-5376
+      icao: null
+      iata: null
+      name: "Wallsburg Airport"
+      city: Wallsburg
+      region: US-UT
+      country: US
+      type: small_airport
+      elevation_ft: 6030
+      longest_runway_ft: null
+      longest_runway_surface: null
+      runway_count: 0
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: unknown
+      lat: 40.3909
+      lon: -111.4044
+      distance_mi: 20.5
+      bearing: NE
+      tracked_plane_presence_in_window: []
+    - airport_code: US-4179
+      icao: null
+      iata: null
+      name: "Hillside Airstrip"
+      city: Elberta
+      region: US-UT
+      country: US
+      type: small_airport
+      elevation_ft: 5125
+      longest_runway_ft: null
+      longest_runway_surface: null
+      runway_count: 0
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: unknown
+      lat: 39.97716
+      lon: -112.005
+      distance_mi: 22.4
+      bearing: SW
+      tracked_plane_presence_in_window: []
+    - airport_code: KHCR
+      icao: null
+      iata: null
+      name: "Heber Valley Airport"
+      city: Heber
+      region: US-UT
+      country: US
+      type: small_airport
+      elevation_ft: 5637
+      longest_runway_ft: 6898
+      longest_runway_surface: ASP
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: jet_capable
+      lat: 40.4818
+      lon: -111.429
+      distance_mi: 23.8
+      bearing: NE
+      tracked_plane_presence_in_window: []
+    - airport_code: US-4598
+      icao: null
+      iata: null
+      name: "Timpanogos Canal Airport"
+      city: "Heber City"
+      region: US-UT
+      country: US
+      type: small_airport
+      elevation_ft: 5833
+      longest_runway_ft: null
+      longest_runway_surface: null
+      runway_count: 0
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: unknown
+      lat: 40.54138
+      lon: -111.40638
+      distance_mi: 27.8
+      bearing: NE
+      tracked_plane_presence_in_window: []
+    - airport_code: UT13
+      icao: null
+      iata: null
+      name: "Number 18 Airport"
+      city: "South Jordan"
+      region: US-UT
+      country: US
+      type: small_airport
+      elevation_ft: 4820
+      longest_runway_ft: 1100
+      longest_runway_surface: GRVL-DIRT-F
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.5639
+      lon: -112.014
+      distance_mi: 28.3
+      bearing: NNW
+      tracked_plane_presence_in_window: []
+    - airport_code: KU42
+      icao: KSVR
+      iata: null
+      name: "South Valley Regional Airport"
+      city: "Salt Lake City"
+      region: US-UT
+      country: US
+      type: medium_airport
+      elevation_ft: 4607
+      longest_runway_ft: 5862
+      longest_runway_surface: ASP
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: jet_capable
+      lat: 40.6195
+      lon: -111.993
+      distance_mi: 31.1
+      bearing: NNW
+      tracked_plane_presence_in_window: []
+    - airport_code: KU14
+      icao: null
+      iata: NPH
+      name: "J. Randy McKnight Nephi Municipal Airport"
+      city: Nephi
+      region: US-UT
+      country: US
+      type: small_airport
+      elevation_ft: 5022
+      longest_runway_ft: 6300
+      longest_runway_surface: ASP
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: jet_capable
+      lat: 39.73681
+      lon: -111.87006
+      distance_mi: 34.2
+      bearing: SSW
+      tracked_plane_presence_in_window: []
+    - airport_code: US-5295
+      icao: null
+      iata: null
+      name: "Glastar Airport"
+      city: Stockton
+      region: US-UT
+      country: US
+      type: small_airport
+      elevation_ft: 5081
+      longest_runway_ft: 1410
+      longest_runway_surface: DIRT/GRAVEL
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.44092
+      lon: -112.36721
+      distance_mi: 37.3
+      bearing: WNW
+      tracked_plane_presence_in_window: []
+tracked_plane_presence:
+  # Was any tracked aircraft on the ground at any field in the list above,
+  # inside the window? Three registers are searched and kept apart, strongest
+  # first. NEVER collapse them into one number.
+  window:
+    from: 2025-09-08
+    to: 2025-09-12
+    days_each_side: 2
+  any_found: true
+  egyptian_su_found: true
+  counts:
+    adsb_ground_contacts: 15
+    adsb_ground_contacts_egyptian_su: 5
+    flights_csv_stays: 2
+    flights_csv_stays_egyptian_su: 2
+    claimed_overlaps: 3
+  from_adsb_traces:
+    - tail: SU-BND
+      registry: Egypt
+      side: following
+      aircraft_type: "Gulfstream G550 / G-IV (trackers disagree on subtype)"
+      is_egyptian_su: true
+      in_73_tally: true
+      airport_code: KPVU
+      airport_name: "Provo Municipal Airport"
+      distance_from_arrival_airport_mi: 0.8
+      median_distance_from_that_runway_km: 1.29
+      date_utc: 2025-09-08
+      gap_days_from_event: -2
+      on_ground_first_utc: "2025-09-08T18:49:05.260000Z"
+      on_ground_last_utc: "2025-09-08T20:08:45.400000Z"
+      on_ground_first_local: "2025-09-08 12:49:05 MDT"
+      on_ground_last_local: "2025-09-08 14:08:45 MDT"
+      ground_positions: 182
+      ground_minutes: 79.7
+      adsb_sources:
+        - adsb-lol
+        - airplanes-live
+      source_count: 2
+      trace_files:
+        - site/docs/Planes/SU-BND/data/recovered/SU-BND_2025-09-08_adsb-lol_trace_full.json
+        - site/docs/Planes/SU-BND/data/recovered/SU-BND_2025-09-08_airplanes-live_trace_full.json
+      evidence_class: adsb_public_history
+      # PRESENCE ONLY. A trace never establishes purpose and never establishes who was aboard.
+      cross_source_agreement: "AGREE (first-contact times within 0s across 2 independent archives)"
+    - tail: SU-BND
+      registry: Egypt
+      side: following
+      aircraft_type: "Gulfstream G550 / G-IV (trackers disagree on subtype)"
+      is_egyptian_su: true
+      in_73_tally: true
+      airport_code: KPVU
+      airport_name: "Provo Municipal Airport"
+      distance_from_arrival_airport_mi: 0.8
+      median_distance_from_that_runway_km: 1.29
+      date_utc: 2025-09-09
+      gap_days_from_event: -1
+      on_ground_first_utc: "2025-09-09T20:03:30.650000Z"
+      on_ground_last_utc: "2025-09-09T20:38:55.450000Z"
+      on_ground_first_local: "2025-09-09 14:03:30 MDT"
+      on_ground_last_local: "2025-09-09 14:38:55 MDT"
+      ground_positions: 131
+      ground_minutes: 35.4
+      adsb_sources:
+        - adsb-lol
+        - airplanes-live
+      source_count: 2
+      trace_files:
+        - site/docs/Planes/SU-BND/data/recovered/SU-BND_2025-09-09_adsb-lol_trace_full.json
+        - site/docs/Planes/SU-BND/data/recovered/SU-BND_2025-09-09_airplanes-live_trace_full.json
+      evidence_class: adsb_public_history
+      # PRESENCE ONLY. A trace never establishes purpose and never establishes who was aboard.
+      cross_source_agreement: "AGREE (first-contact times within 0s across 2 independent archives)"
+    - tail: SU-BND
+      registry: Egypt
+      side: following
+      aircraft_type: "Gulfstream G550 / G-IV (trackers disagree on subtype)"
+      is_egyptian_su: true
+      in_73_tally: true
+      airport_code: KPVU
+      airport_name: "Provo Municipal Airport"
+      distance_from_arrival_airport_mi: 0.8
+      median_distance_from_that_runway_km: 1.29
+      date_utc: 2025-09-10
+      gap_days_from_event: 0
+      on_ground_first_utc: "2025-09-10T16:05:35.760000Z"
+      on_ground_last_utc: "2025-09-10T20:29:38.710000Z"
+      on_ground_first_local: "2025-09-10 10:05:35 MDT"
+      on_ground_last_local: "2025-09-10 14:29:38 MDT"
+      ground_positions: 100
+      ground_minutes: 264.0
+      adsb_sources:
+        - adsb-lol
+        - airplanes-live
+      source_count: 2
+      trace_files:
+        - site/docs/Planes/SU-BND/data/recovered/SU-BND_2025-09-10_adsb-lol_trace_full.json
+        - site/docs/Planes/SU-BND/data/recovered/SU-BND_2025-09-10_airplanes-live_trace_full.json
+      evidence_class: adsb_public_history
+      # PRESENCE ONLY. A trace never establishes purpose and never establishes who was aboard.
+      cross_source_agreement: "DISAGREE by 12918s on first contact across 2 archives - published as a disagreement, not reconciled"
+    - tail: SU-BTT
+      registry: Egypt
+      side: following
+      aircraft_type: "Dassault Falcon 7X"
+      is_egyptian_su: true
+      in_73_tally: true
+      airport_code: KPVU
+      airport_name: "Provo Municipal Airport"
+      distance_from_arrival_airport_mi: 0.8
+      median_distance_from_that_runway_km: 1.36
+      date_utc: 2025-09-10
+      gap_days_from_event: 0
+      on_ground_first_utc: "2025-09-10T13:07:53.650000Z"
+      on_ground_last_utc: "2025-09-10T13:13:16.090000Z"
+      on_ground_first_local: "2025-09-10 07:07:53 MDT"
+      on_ground_last_local: "2025-09-10 07:13:16 MDT"
+      ground_positions: 58
+      ground_minutes: 5.4
+      adsb_sources:
+        - adsb-lol
+        - airplanes-live
+      source_count: 2
+      trace_files:
+        - site/docs/Planes/SU-BTT/data/recovered/SU-BTT_2025-09-10_adsb-lol_trace_full.json
+        - site/docs/Planes/SU-BTT/data/recovered/SU-BTT_2025-09-10_airplanes-live_trace_full.json
+      evidence_class: adsb_public_history
+      # PRESENCE ONLY. A trace never establishes purpose and never establishes who was aboard.
+      cross_source_agreement: "AGREE (first-contact times within 0s across 2 independent archives)"
+    - tail: SU-BND
+      registry: Egypt
+      side: following
+      aircraft_type: "Gulfstream G550 / G-IV (trackers disagree on subtype)"
+      is_egyptian_su: true
+      in_73_tally: true
+      airport_code: KPVU
+      airport_name: "Provo Municipal Airport"
+      distance_from_arrival_airport_mi: 0.8
+      median_distance_from_that_runway_km: 1.29
+      date_utc: 2025-09-12
+      gap_days_from_event: 2
+      on_ground_first_utc: "2025-09-12T13:37:35.890000Z"
+      on_ground_last_utc: "2025-09-12T22:17:03.880000Z"
+      on_ground_first_local: "2025-09-12 07:37:35 MDT"
+      on_ground_last_local: "2025-09-12 16:17:03 MDT"
+      ground_positions: 226
+      ground_minutes: 519.5
+      adsb_sources:
+        - adsb-lol
+        - airplanes-live
+      source_count: 2
+      trace_files:
+        - site/docs/Planes/SU-BND/data/recovered/SU-BND_2025-09-12_adsb-lol_trace_full.json
+        - site/docs/Planes/SU-BND/data/recovered/SU-BND_2025-09-12_airplanes-live_trace_full.json
+      evidence_class: adsb_public_history
+      # PRESENCE ONLY. A trace never establishes purpose and never establishes who was aboard.
+      cross_source_agreement: "DISAGREE by 24707s on first contact across 2 archives - published as a disagreement, not reconciled"
+    - tail: N59906
+      registry: "United States"
+      side: n1098l
+      aircraft_type: PA31
+      is_egyptian_su: false
+      in_73_tally: false
+      airport_code: KPVU
+      airport_name: "Provo Municipal Airport"
+      distance_from_arrival_airport_mi: 0.2
+      median_distance_from_that_runway_km: 0.25
+      date_utc: 2025-09-08
+      gap_days_from_event: -2
+      on_ground_first_utc: "2025-09-08T15:45:21.120000Z"
+      on_ground_last_utc: "2025-09-08T17:06:25.070000Z"
+      on_ground_first_local: "2025-09-08 09:45:21 MDT"
+      on_ground_last_local: "2025-09-08 11:06:25 MDT"
+      ground_positions: 14
+      ground_minutes: 81.1
+      adsb_sources:
+        - adsb-lol
+        - airplanes-live
+      source_count: 2
+      trace_files:
+        - site/docs/Planes/N59906/data/recovered/N59906_2025-09-08_adsb-lol_trace_full.json
+        - site/docs/Planes/N59906/data/recovered/N59906_2025-09-08_airplanes-live_trace_full.json
+      evidence_class: adsb_public_history
+      # PRESENCE ONLY. A trace never establishes purpose and never establishes who was aboard.
+      cross_source_agreement: "DISAGREE by 4760s on first contact across 2 archives - published as a disagreement, not reconciled"
+    - tail: N888KG
+      registry: "United States"
+      side: kirk
+      aircraft_type: CL30
+      is_egyptian_su: false
+      in_73_tally: false
+      airport_code: KPVU
+      airport_name: "Provo Municipal Airport"
+      distance_from_arrival_airport_mi: 0.1
+      median_distance_from_that_runway_km: 0.24
+      date_utc: 2025-09-08
+      gap_days_from_event: -2
+      on_ground_first_utc: "2025-09-08T00:27:09.970000Z"
+      on_ground_last_utc: "2025-09-08T00:29:59.110000Z"
+      on_ground_first_local: "2025-09-07 18:27:09 MDT"
+      on_ground_last_local: "2025-09-07 18:29:59 MDT"
+      ground_positions: 132
+      ground_minutes: 2.8
+      adsb_sources:
+        - adsb-lol
+        - airplanes-live
+      source_count: 2
+      trace_files:
+        - site/docs/Planes/N888KG/data/recovered/N888KG_2025-09-08_adsb-lol_trace_full.json
+        - site/docs/Planes/N888KG/data/recovered/N888KG_2025-09-08_airplanes-live_trace_full.json
+      evidence_class: adsb_public_history
+      # PRESENCE ONLY. A trace never establishes purpose and never establishes who was aboard.
+      cross_source_agreement: "AGREE (first-contact times within 0s across 2 independent archives)"
+    - tail: N102DZ
+      registry: "United States"
+      side: kirk
+      aircraft_type: GLF5
+      is_egyptian_su: false
+      in_73_tally: false
+      airport_code: KPVU
+      airport_name: "Provo Municipal Airport"
+      distance_from_arrival_airport_mi: 0.2
+      median_distance_from_that_runway_km: 0.36
+      date_utc: 2025-09-10
+      gap_days_from_event: 0
+      on_ground_first_utc: "2025-09-10T21:30:43.910000Z"
+      on_ground_last_utc: "2025-09-10T22:10:12.880000Z"
+      on_ground_first_local: "2025-09-10 15:30:43 MDT"
+      on_ground_last_local: "2025-09-10 16:10:12 MDT"
+      ground_positions: 133
+      ground_minutes: 39.5
+      adsb_sources:
+        - adsb-lol
+        - airplanes-live
+      source_count: 2
+      trace_files:
+        - site/docs/Planes/N102DZ/data/recovered/N102DZ_2025-09-10_adsb-lol_trace_full.json
+        - site/docs/Planes/N102DZ/data/recovered/N102DZ_2025-09-10_airplanes-live_trace_full.json
+      evidence_class: adsb_public_history
+      # PRESENCE ONLY. A trace never establishes purpose and never establishes who was aboard.
+      cross_source_agreement: "AGREE (first-contact times within 0s across 2 independent archives)"
+    - tail: N40JD
+      registry: "United States"
+      side: kirk
+      aircraft_type: PRM1
+      is_egyptian_su: false
+      in_73_tally: false
+      airport_code: KPVU
+      airport_name: "Provo Municipal Airport"
+      distance_from_arrival_airport_mi: 0.2
+      median_distance_from_that_runway_km: 0.31
+      date_utc: 2025-09-10
+      gap_days_from_event: 0
+      on_ground_first_utc: "2025-09-10T20:29:15.110000Z"
+      on_ground_last_utc: "2025-09-10T21:12:22.320000Z"
+      on_ground_first_local: "2025-09-10 14:29:15 MDT"
+      on_ground_last_local: "2025-09-10 15:12:22 MDT"
+      ground_positions: 223
+      ground_minutes: 43.1
+      adsb_sources:
+        - adsb-lol
+        - airplanes-live
+      source_count: 2
+      trace_files:
+        - site/docs/Planes/N40JD/data/recovered/N40JD_2025-09-10_adsb-lol_trace_full.json
+        - site/docs/Planes/N40JD/data/recovered/N40JD_2025-09-10_airplanes-live_trace_full.json
+      evidence_class: adsb_public_history
+      # PRESENCE ONLY. A trace never establishes purpose and never establishes who was aboard.
+      cross_source_agreement: "AGREE (first-contact times within 0s across 2 independent archives)"
+    - tail: N560TW
+      registry: "United States"
+      side: kirk
+      aircraft_type: C56X
+      is_egyptian_su: false
+      in_73_tally: false
+      airport_code: KPVU
+      airport_name: "Provo Municipal Airport"
+      distance_from_arrival_airport_mi: 0.3
+      median_distance_from_that_runway_km: 0.42
+      date_utc: 2025-09-10
+      gap_days_from_event: 0
+      on_ground_first_utc: "2025-09-10T16:07:13.460000Z"
+      on_ground_last_utc: "2025-09-10T16:27:01.420000Z"
+      on_ground_first_local: "2025-09-10 10:07:13 MDT"
+      on_ground_last_local: "2025-09-10 10:27:01 MDT"
+      ground_positions: 125
+      ground_minutes: 19.8
+      adsb_sources:
+        - adsb-lol
+        - airplanes-live
+      source_count: 2
+      trace_files:
+        - site/docs/Planes/N560TW/data/recovered/N560TW_2025-09-10_adsb-lol_trace_full.json
+        - site/docs/Planes/N560TW/data/recovered/N560TW_2025-09-10_airplanes-live_trace_full.json
+      evidence_class: adsb_public_history
+      # PRESENCE ONLY. A trace never establishes purpose and never establishes who was aboard.
+      cross_source_agreement: "AGREE (first-contact times within 0s across 2 independent archives)"
+    - tail: N59906
+      registry: "United States"
+      side: n1098l
+      aircraft_type: PA31
+      is_egyptian_su: false
+      in_73_tally: false
+      airport_code: KPVU
+      airport_name: "Provo Municipal Airport"
+      distance_from_arrival_airport_mi: 0.1
+      median_distance_from_that_runway_km: 0.24
+      date_utc: 2025-09-10
+      gap_days_from_event: 0
+      on_ground_first_utc: "2025-09-10T15:08:45.010000Z"
+      on_ground_last_utc: "2025-09-10T18:08:35.070000Z"
+      on_ground_first_local: "2025-09-10 09:08:45 MDT"
+      on_ground_last_local: "2025-09-10 12:08:35 MDT"
+      ground_positions: 2
+      ground_minutes: 179.8
+      adsb_sources:
+        - adsb-lol
+        - airplanes-live
+      source_count: 2
+      trace_files:
+        - site/docs/Planes/N59906/data/recovered/N59906_2025-09-10_adsb-lol_trace_full.json
+        - site/docs/Planes/N59906/data/recovered/N59906_2025-09-10_airplanes-live_trace_full.json
+      evidence_class: adsb_public_history
+      # PRESENCE ONLY. A trace never establishes purpose and never establishes who was aboard.
+      cross_source_agreement: "DISAGREE by 10642s on first contact across 2 archives - published as a disagreement, not reconciled"
+    - tail: N872RA
+      registry: "United States"
+      side: kirk
+      aircraft_type: BE40
+      is_egyptian_su: false
+      in_73_tally: false
+      airport_code: KPVU
+      airport_name: "Provo Municipal Airport"
+      distance_from_arrival_airport_mi: 0.1
+      median_distance_from_that_runway_km: 0.11
+      date_utc: 2025-09-10
+      gap_days_from_event: 0
+      on_ground_first_utc: "2025-09-10T22:36:10.610000Z"
+      on_ground_last_utc: "2025-09-10T23:16:03.720000Z"
+      on_ground_first_local: "2025-09-10 16:36:10 MDT"
+      on_ground_last_local: "2025-09-10 17:16:03 MDT"
+      ground_positions: 173
+      ground_minutes: 39.9
+      adsb_sources:
+        - adsb-lol
+        - airplanes-live
+      source_count: 2
+      trace_files:
+        - site/docs/Planes/N872RA/data/recovered/N872RA_2025-09-10_adsb-lol_trace_full.json
+        - site/docs/Planes/N872RA/data/recovered/N872RA_2025-09-10_airplanes-live_trace_full.json
+      evidence_class: adsb_public_history
+      # PRESENCE ONLY. A trace never establishes purpose and never establishes who was aboard.
+      cross_source_agreement: "AGREE (first-contact times within 0s across 2 independent archives)"
+    - tail: N888KG
+      registry: "United States"
+      side: kirk
+      aircraft_type: CL30
+      is_egyptian_su: false
+      in_73_tally: false
+      airport_code: KPVU
+      airport_name: "Provo Municipal Airport"
+      distance_from_arrival_airport_mi: 0.6
+      median_distance_from_that_runway_km: 0.98
+      date_utc: 2025-09-10
+      gap_days_from_event: 0
+      on_ground_first_utc: "2025-09-10T19:06:07.720000Z"
+      on_ground_last_utc: "2025-09-10T21:07:54.060000Z"
+      on_ground_first_local: "2025-09-10 13:06:07 MDT"
+      on_ground_last_local: "2025-09-10 15:07:54 MDT"
+      ground_positions: 69
+      ground_minutes: 121.8
+      adsb_sources:
+        - adsb-lol
+        - airplanes-live
+      source_count: 2
+      trace_files:
+        - site/docs/Planes/N888KG/data/recovered/N888KG_2025-09-10_adsb-lol_trace_full.json
+        - site/docs/Planes/N888KG/data/recovered/N888KG_2025-09-10_airplanes-live_trace_full.json
+      evidence_class: adsb_public_history
+      # PRESENCE ONLY. A trace never establishes purpose and never establishes who was aboard.
+      cross_source_agreement: "DISAGREE by 7089s on first contact across 2 archives - published as a disagreement, not reconciled"
+    - tail: N102DZ
+      registry: "United States"
+      side: kirk
+      aircraft_type: GLF5
+      is_egyptian_su: false
+      in_73_tally: false
+      airport_code: KPVU
+      airport_name: "Provo Municipal Airport"
+      distance_from_arrival_airport_mi: 0.2
+      median_distance_from_that_runway_km: 0.27
+      date_utc: 2025-09-11
+      gap_days_from_event: 1
+      on_ground_first_utc: "2025-09-11T01:31:56.670000Z"
+      on_ground_last_utc: "2025-09-11T16:03:20.640000Z"
+      on_ground_first_local: "2025-09-10 19:31:56 MDT"
+      on_ground_last_local: "2025-09-11 10:03:20 MDT"
+      ground_positions: 57
+      ground_minutes: 871.4
+      adsb_sources:
+        - adsb-lol
+        - airplanes-live
+      source_count: 2
+      trace_files:
+        - site/docs/Planes/N102DZ/data/recovered/N102DZ_2025-09-11_adsb-lol_trace_full.json
+        - site/docs/Planes/N102DZ/data/recovered/N102DZ_2025-09-11_airplanes-live_trace_full.json
+      evidence_class: adsb_public_history
+      # PRESENCE ONLY. A trace never establishes purpose and never establishes who was aboard.
+      cross_source_agreement: "DISAGREE by 51747s on first contact across 2 archives - published as a disagreement, not reconciled"
+    - tail: N582MM
+      registry: "United States"
+      side: kirk
+      aircraft_type: LJ60
+      is_egyptian_su: false
+      in_73_tally: false
+      airport_code: KPVU
+      airport_name: "Provo Municipal Airport"
+      distance_from_arrival_airport_mi: 0.2
+      median_distance_from_that_runway_km: 0.39
+      date_utc: 2025-09-11
+      gap_days_from_event: 1
+      on_ground_first_utc: "2025-09-11T00:57:14.480000Z"
+      on_ground_last_utc: "2025-09-11T14:19:56.970000Z"
+      on_ground_first_local: "2025-09-10 18:57:14 MDT"
+      on_ground_last_local: "2025-09-11 08:19:56 MDT"
+      ground_positions: 73
+      ground_minutes: 802.7
+      adsb_sources:
+        - adsb-lol
+        - airplanes-live
+      source_count: 2
+      trace_files:
+        - site/docs/Planes/N582MM/data/recovered/N582MM_2025-09-11_adsb-lol_trace_full.json
+        - site/docs/Planes/N582MM/data/recovered/N582MM_2025-09-11_airplanes-live_trace_full.json
+      evidence_class: adsb_public_history
+      # PRESENCE ONLY. A trace never establishes purpose and never establishes who was aboard.
+      cross_source_agreement: "DISAGREE by 47473s on first contact across 2 archives - published as a disagreement, not reconciled"
+  from_flights_csv:
+    - tail: SU-BND
+      registry: Egypt
+      is_egyptian_su: true
+      in_73_tally: true
+      airport_code: KPVU
+      airport_name: "Provo Municipal Airport"
+      distance_from_arrival_airport_mi: 0.0
+      on_ground_start_date: 2025-05-23
+      on_ground_end_date: 2025-09-13
+      gap_days_from_event: 0
+      on_ground_during_event: true
+      days_on_ground: 113
+      confidence: audited_accurate
+      source: "Flightradar24 aircraft-history screenshot for this tail (@WeAre_TheElite 5-plane set, re-posted by @ProjectConstitu 1 Nov 2025). Read from the table text, not the tracker's highlighting."
+      evidence_class: curated_register_flights.csv
+    - tail: SU-BTT
+      registry: Egypt
+      is_egyptian_su: true
+      in_73_tally: true
+      airport_code: KPVU
+      airport_name: "Provo Municipal Airport"
+      distance_from_arrival_airport_mi: 0.0
+      on_ground_start_date: 2025-09-04
+      on_ground_end_date: 2025-09-10
+      gap_days_from_event: 0
+      on_ground_during_event: true
+      days_on_ground: 6
+      confidence: audited_accurate
+      source: "Flightradar24 aircraft-history screenshot for this tail (@WeAre_TheElite 5-plane set, re-posted by @ProjectConstitu 1 Nov 2025). Read from the table text, not the tracker's highlighting."
+      evidence_class: curated_register_flights.csv
+  from_overlaps_csv:
+    - overlap_id: OWENS-041
+      date: 2025-09-10
+      gap_days_from_event: 0
+      airport_code: KPVU
+      foreign_tail: SU-BTT
+      kirk_tail: null
+      subject: Both
+      confidence: audited_inaccurate
+      audit_verdict: inaccurate
+      survives_audit: "no"
+      source: "Owens sheet via Kanekoa audit (substance confirmed, origin corrected); Brick Suit time-zone correction; overlap pages 20250910_UT_orem and 20250910_DE_wilmington"
+      evidence_class: claimed_overlap_register
+      # A CLAIM, not a record. audit_verdict is this repo's own check of it.
+    - overlap_id: EXTRA-006
+      date: 2025-09-10
+      gap_days_from_event: 0
+      airport_code: KPVU
+      foreign_tail: SU-BND
+      kirk_tail: null
+      subject: Charlie
+      confidence: audited_accurate
+      audit_verdict: accurate
+      survives_audit: "yes"
+      source: "Owens Operation Mocking-Plane 17 Nov 2025; overlap page 20250910_UT_orem; SU-BND page"
+      evidence_class: claimed_overlap_register
+      # A CLAIM, not a record. audit_verdict is this repo's own check of it.
+    - overlap_id: SITE-006
+      date: 2025-09-10
+      gap_days_from_event: 0
+      airport_code: KPVU
+      foreign_tail: "SU-BTT; SU-BND"
+      kirk_tail: null
+      subject: Charlie
+      confidence: audited_accurate
+      audit_verdict: accurate
+      survives_audit: "yes"
+      source: "KMYU (10 a.m. courtyard listing); UVU pages on this site; Fox and ABC coverage 10 Sept 2025; Flightradar24 export; audit index 41"
+      evidence_class: claimed_overlap_register
+      # A CLAIM, not a record. audit_verdict is this repo's own check of it.
+  just_outside_the_radius:
+    # A hard radius creates a cliff and a cliff hides evidence. These fields
+    # sit between 40 and 60 miles from the arrival airport. They are NOT counted
+    # as hits and must never be published as ones - they are here so a near miss
+    # is visible rather than silently dropped.
+    outer_radius_miles: 60.0
+    adsb_ground_contacts:
+      - tail: N102DZ
+        registry: "United States"
+        side: kirk
+        aircraft_type: GLF5
+        is_egyptian_su: false
+        in_73_tally: false
+        airport_code: KSLC
+        airport_name: "Salt Lake City International Airport"
+        distance_from_arrival_airport_mi: 41.8
+        median_distance_from_that_runway_km: 1.86
+        date_utc: 2025-09-10
+        gap_days_from_event: 0
+        on_ground_first_utc: "2025-09-10T18:58:40.050000Z"
+        on_ground_last_utc: "2025-09-10T19:00:38.620000Z"
+        on_ground_first_local: "2025-09-10 12:58:40 MDT"
+        on_ground_last_local: "2025-09-10 13:00:38 MDT"
+        ground_positions: 39
+        ground_minutes: 2.0
+        adsb_sources:
+          - adsb-lol
+          - airplanes-live
+        source_count: 2
+        trace_files:
+          - site/docs/Planes/N102DZ/data/recovered/N102DZ_2025-09-10_adsb-lol_trace_full.json
+          - site/docs/Planes/N102DZ/data/recovered/N102DZ_2025-09-10_airplanes-live_trace_full.json
+        evidence_class: adsb_public_history
+        # OUTSIDE THE 40-MILE RADIUS. Reported so a near miss is not hidden by the cliff edge. This is NOT an in-radius hit.
+        cross_source_agreement: "AGREE (first-contact times within 0s across 2 independent archives)"
+      - tail: N872RA
+        registry: "United States"
+        side: kirk
+        aircraft_type: BE40
+        is_egyptian_su: false
+        in_73_tally: false
+        airport_code: KSLC
+        airport_name: "Salt Lake City International Airport"
+        distance_from_arrival_airport_mi: 42.0
+        median_distance_from_that_runway_km: 1.85
+        date_utc: 2025-09-11
+        gap_days_from_event: 1
+        on_ground_first_utc: "2025-09-11T22:51:11.770000Z"
+        on_ground_last_utc: "2025-09-11T22:53:17.660000Z"
+        on_ground_first_local: "2025-09-11 16:51:11 MDT"
+        on_ground_last_local: "2025-09-11 16:53:17 MDT"
+        ground_positions: 11
+        ground_minutes: 2.1
+        adsb_sources:
+          - adsb-lol
+          - airplanes-live
+        source_count: 2
+        trace_files:
+          - site/docs/Planes/N872RA/data/recovered/N872RA_2025-09-11_adsb-lol_trace_full.json
+          - site/docs/Planes/N872RA/data/recovered/N872RA_2025-09-11_airplanes-live_trace_full.json
+        evidence_class: adsb_public_history
+        # OUTSIDE THE 40-MILE RADIUS. Reported so a near miss is not hidden by the cliff edge. This is NOT an in-radius hit.
+        cross_source_agreement: "AGREE (first-contact times within 0s across 2 independent archives)"
+    flights_csv_stays: []
+    claimed_overlaps: []
+  coverage:
+    # AN EMPTY RESULT ABOVE IS NOT A FINDING UNLESS THIS SAYS THE DAYS WERE HELD.
+    # aircraft_days_needed = tails x days in the window. aircraft_days_held is
+    # how many of those this repo actually has a trace for. The rest were never
+    # pulled, or the networks heard nothing - the two are indistinguishable here.
+    aircraft_days_needed: 75
+    aircraft_days_held: 36
+    coverage_pct: 48.0
+    tails_with_no_trace_in_window:
+      - SU-BGM
+      - SU-BTU
+      - SU-BTV
+      - T7-ELL
+    by_side:
+      following:
+        # FOLLOWING is the side the claim is about - the Egyptian SU- tails.
+        # This percentage is the one that decides whether an empty result means
+        # anything at all.
+        tails: 6
+        aircraft_days_needed: 30
+        aircraft_days_held: 6
+        coverage_pct: 20.0
+      kirk:
+        # KIRK-side coverage is what turns an ESTIMATED arrival into an
+        # OBSERVED one. Low here means the arrival times above stay estimates.
+        tails: 6
+        aircraft_days_needed: 30
+        aircraft_days_held: 20
+        coverage_pct: 66.7
+      n1098l:
+        # Other tracked aircraft. A DIFFERENT CLAIM - do not merge the threads.
+        tails: 3
+        aircraft_days_needed: 15
+        aircraft_days_held: 10
+        coverage_pct: 66.7
+counterargument:
+  - "ONE PAIRING IS NOT EVIDENCE. The claim under test is a repetition across many stops, and any single pairing has an innocent explanation a reader will find."
+  - "A field inside the radius is a field a jet COULD have used. Nothing here shows that anyone did use it, or that two aircraft on one ramp had any connection."
+  - "Maintenance is the strongest innocent explanation in this record: Duncan Aviation (Provo and Lincoln) and Yingling (Wichita) are Part 145 Falcon and Gulfstream shops, and a Falcon 7X sitting for weeks at one reads as a maintenance visit."
+  - "Transatlantic customs and fuel stops explain the recurring East Coast fields."
+  - "ERIKA'S SIDE IS THE WEAK SIDE. Her flight logs are reported erased, so any Erika pairing rests on the foreign aircraft's track plus a CLAIMED location for her. See /Planes/Erika-Flight-Logs-Erased."
+what_we_do_not_know:
+  - "Whether Charlie Kirk, Erika Kirk, or any TPUSA party actually flew to this event, or which aircraft they used. The arrival airport above is an inference from the venue city, not a record."
+  - "Whether the estimated arrival and departure times are within hours or within days of the truth, wherever observed_by_adsb is empty."
+  - "What the tracked aircraft were doing at any field they appear at. A trace proves presence, never purpose and never occupancy."
+  - "Whether the receiver networks simply did not hear an aircraft that was there. See the coverage block - an absence is not a finding."

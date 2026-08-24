@@ -1,0 +1,1322 @@
+# GENERATED FILE - regenerate, do not hand-edit.
+#   node/python: apis/public_open_source/code/airports_near.py --only 20231025_buffalo
+#   The prompt that governs this file: prompts/p_airports_near.md
+schema: ck.speaking.airports_near/1
+generated_utc: "2026-08-24T19:03:26Z"
+generated_by: site/docs/Planes/following/apis/public_open_source/code/airports_near.py
+page:
+  slug: 20231025_buffalo
+  mdx: site/docs/Planes/following/speaking/20231025_buffalo.mdx
+  yaml: site/docs/Planes/following/speaking/20231025_buffalo.yaml
+  url: /Planes/following/speaking/20231025_buffalo
+event:
+  title: "Live Free Tour — University at Buffalo (Candace Owens)"
+  who: TPUSA
+  attendee_class: TPUSA_NO_KIRK
+  charlie_present: "no"
+  erika_present: "no"
+  attendance_status: held
+  event_type: campus
+  dates:
+    raw: 2023-10-25
+    first_day: 2023-10-25
+    last_day: 2023-10-25
+    granularity: DAY
+    certainty: EVENT_DATE
+    # PODCAST_PROXY means the date is a podcast RELEASE date and the event was normally 0-7 days earlier. Never publish a same-day claim off one.
+  local_time:
+    raw: "streamed ~18:26 ET"
+    parsed_hhmm: "18:26"
+    basis: parsed_from_event_time_cell
+    timezone: America/New_York
+    timezone_method: timezonefinder
+  location:
+    city: Buffalo
+    state: NY
+    country: USA
+    venue: "University at Buffalo"
+    metro_area: "Buffalo NY"
+    geocode:
+      lat: 42.89249
+      lon: -78.85969
+      method: us_census_2024_gazetteer
+      matched: "Buffalo city"
+  source: "Rumble 'LIVE from Buffalo, NY with Candace Owens'"
+  source_url: "https://rumble.com/v3robfh-tpusa-presents-the-live-free-tour-live-from-buffalo-ny-with-candace-owens.html"
+  days_before_sept10_2025: 686
+search:
+  radius_miles: 40
+  window_days_each_side: 2
+  window_from: 2023-10-23
+  window_to: 2023-10-27
+  window_day_count: 5
+  centre: KBUF
+  tails_searched:
+    - N102DZ
+    - N1098L
+    - N2100L
+    - N40JD
+    - N560TW
+    - N582MM
+    - N59906
+    - N872RA
+    - N888KG
+    - SU-BGM
+    - SU-BND
+    - SU-BTT
+    - SU-BTU
+    - SU-BTV
+    - T7-ELL
+  sources_searched:
+    - "recovered ADS-B traces on disk (site/docs/Planes/<TAIL>/data/recovered/)"
+    - site/docs/Planes/following/flights.csv
+    - site/docs/Planes/following/overlaps.csv
+arrival_airport:
+  # ESTIMATE. No published Kirk-side flight record exists for this event unless
+  # the observed_by_adsb block below is non-empty. This is arithmetic on the
+  # event time, not a landing record.
+  chosen_airport:
+    airport_code: KBUF
+    icao: KBUF
+    iata: BUF
+    name: "Buffalo Niagara International Airport"
+    city: Buffalo
+    region: US-NY
+    country: US
+    type: large_airport
+    elevation_ft: 728
+    longest_runway_ft: 8829
+    longest_runway_surface: ASP
+    runway_count: 2
+    runways_lighted: true
+    scheduled_service: true
+    jet_capability: jet_capable
+    lat: 42.9405
+    lon: -78.7322
+    distance_mi: 7.3
+    bearing: ENE
+  distance_from_event_city_mi: 7.3
+  selection_basis: CURATED_CSV_AND_COMPUTED_NEAREST_JET_FIELD_AGREE
+  curated_value_in_tpusa_events_csv:
+    airport_code: KBUF
+    airport_name: "Buffalo Niagara International"
+    distance_mi: 8
+  computed_nearest_jet_capable_field:
+    airport_code: KBUF
+    name: "Buffalo Niagara International Airport"
+    distance_mi: 7.3
+    longest_runway_ft: 8829
+  estimated_arrival:
+    date: 2023-10-25
+    local_time: "15:26"
+    timezone: America/New_York
+    utc: "2023-10-25T19:26:00Z"
+    basis: "event start 18:26 local (parsed_from_event_time_cell) minus 3h"
+    confidence: medium
+  estimated_departure:
+    date: 2023-10-25
+    local_time: "22:26"
+    timezone: America/New_York
+    utc: "2023-10-26T02:26:00Z"
+    basis: "event end + 4h (speech, exit, wheels-up)"
+    confidence: medium
+  observed_by_adsb: []
+  observed_by_adsb_note: "NO Kirk-side aircraft is on disk on the ground within 40 miles of KBUF in this window. The arrival and departure above stay estimates."
+airports_within_radius:
+  # Every field a private jet could physically use within the radius.
+  # Heliports, seaplane bases, balloonports and closed fields are excluded -
+  # a business jet cannot use any of them. Everything else is kept, including
+  # every small strip with no scheduled service: those are the point of the sweep.
+  radius_miles: 40
+  centre_airport: KBUF
+  count: 55
+  jet_capable_count: 4
+  light_jet_capable_count: 0
+  no_scheduled_service_count: 52
+  source: "OurAirports (CC0) airports.csv + runways.csv"
+  list:
+    - airport_code: KBUF
+      icao: KBUF
+      iata: BUF
+      name: "Buffalo Niagara International Airport"
+      city: Buffalo
+      region: US-NY
+      country: US
+      type: large_airport
+      elevation_ft: 728
+      longest_runway_ft: 8829
+      longest_runway_surface: ASP
+      runway_count: 2
+      runways_lighted: true
+      scheduled_service: true
+      jet_capability: jet_capable
+      lat: 42.9405
+      lon: -78.7322
+      distance_mi: 0.0
+      bearing: N
+      tracked_plane_presence_in_window: []
+    - airport_code: 9G0
+      icao: null
+      iata: null
+      name: "Buffalo Airfield"
+      city: Buffalo
+      region: US-NY
+      country: US
+      type: small_airport
+      elevation_ft: 670
+      longest_runway_ft: 2666
+      longest_runway_surface: ASPH-G
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 42.862
+      lon: -78.7166
+      distance_mi: 5.5
+      bearing: S
+      tracked_plane_presence_in_window: []
+    - airport_code: KBQR
+      icao: null
+      iata: null
+      name: "Buffalo Lancaster Regional Airport"
+      city: Lancaster
+      region: US-NY
+      country: US
+      type: small_airport
+      elevation_ft: 750
+      longest_runway_ft: 3199
+      longest_runway_surface: ASP
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: marginal
+      lat: 42.9223
+      lon: -78.6123
+      distance_mi: 6.2
+      bearing: ESE
+      tracked_plane_presence_in_window: []
+    - airport_code: NK19
+      icao: null
+      iata: null
+      name: "Potoczak Airport"
+      city: "Clarence Center"
+      region: US-NY
+      country: US
+      type: small_airport
+      elevation_ft: 582
+      longest_runway_ft: 2230
+      longest_runway_surface: TURF-G
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 43.0612
+      lon: -78.6614
+      distance_mi: 9.1
+      bearing: NNE
+      tracked_plane_presence_in_window: []
+    - airport_code: D51
+      icao: null
+      iata: null
+      name: "Clarence Aerodrome"
+      city: Buffalo
+      region: US-NY
+      country: US
+      type: small_airport
+      elevation_ft: 589
+      longest_runway_ft: 2500
+      longest_runway_surface: TURF-E
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 43.0667
+      lon: -78.6831
+      distance_mi: 9.1
+      bearing: NNE
+      tracked_plane_presence_in_window: []
+    - airport_code: 78NY
+      icao: null
+      iata: null
+      name: "Flying F Airport"
+      city: Pendleton
+      region: US-NY
+      country: US
+      type: small_airport
+      elevation_ft: 582
+      longest_runway_ft: 3750
+      longest_runway_surface: TURF-GRVL
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 43.08136
+      lon: -78.77945
+      distance_mi: 10.0
+      bearing: NNW
+      tracked_plane_presence_in_window: []
+    - airport_code: 79NY
+      icao: null
+      iata: null
+      name: "Smith Airport"
+      city: Pendleton
+      region: US-NY
+      country: US
+      type: small_airport
+      elevation_ft: 580
+      longest_runway_ft: 1750
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 43.087
+      lon: -78.8114
+      distance_mi: 10.9
+      bearing: NNW
+      tracked_plane_presence_in_window: []
+    - airport_code: NK87
+      icao: null
+      iata: null
+      name: "Merkle Airport"
+      city: "Clarence Center"
+      region: US-NY
+      country: US
+      type: small_airport
+      elevation_ft: 590
+      longest_runway_ft: 2400
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 43.0667
+      lon: -78.5997
+      distance_mi: 11.0
+      bearing: NE
+      tracked_plane_presence_in_window: []
+    - airport_code: 0G0
+      icao: null
+      iata: null
+      name: "North Buffalo Suburban Airport"
+      city: Lockport
+      region: US-NY
+      country: US
+      type: small_airport
+      elevation_ft: 588
+      longest_runway_ft: 2830
+      longest_runway_surface: ASPH-F
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 43.1032
+      lon: -78.7033
+      distance_mi: 11.3
+      bearing: N
+      tracked_plane_presence_in_window: []
+    - airport_code: CNJ3
+      icao: null
+      iata: null
+      name: "Fort Erie Airport"
+      city: "Fort Erie"
+      region: CA-ON
+      country: CA
+      type: small_airport
+      elevation_ft: 625
+      longest_runway_ft: 2350
+      longest_runway_surface: ASP
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 42.91713
+      lon: -78.95779
+      distance_mi: 11.5
+      bearing: W
+      tracked_plane_presence_in_window: []
+    - airport_code: NY49
+      icao: null
+      iata: null
+      name: "Mesmer Airport"
+      city: "Grand Island"
+      region: US-NY
+      country: US
+      type: small_airport
+      elevation_ft: 600
+      longest_runway_ft: 1470
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 42.99152
+      lon: -78.98576
+      distance_mi: 13.3
+      bearing: WNW
+      tracked_plane_presence_in_window: []
+    - airport_code: K9G3
+      icao: null
+      iata: null
+      name: "Akron Airport/Jesson Field"
+      city: Akron
+      region: US-NY
+      country: US
+      type: small_airport
+      elevation_ft: 840
+      longest_runway_ft: 3270
+      longest_runway_surface: ASP
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: marginal
+      lat: 43.0211
+      lon: -78.4825
+      distance_mi: 13.8
+      bearing: ENE
+      tracked_plane_presence_in_window: []
+    - airport_code: US-9117
+      icao: null
+      iata: null
+      name: "STOL Performance Airport"
+      city: Bennington
+      region: US-NY
+      country: US
+      type: small_airport
+      elevation_ft: 1145
+      longest_runway_ft: 1853
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 42.84889
+      lon: -78.44546
+      distance_mi: 15.8
+      bearing: ESE
+      tracked_plane_presence_in_window: []
+    - airport_code: KIAG
+      icao: KIAG
+      iata: IAG
+      name: "Niagara Falls International Airport"
+      city: "Niagara Falls"
+      region: US-NY
+      country: US
+      type: medium_airport
+      elevation_ft: 589
+      longest_runway_ft: 9826
+      longest_runway_surface: PEM
+      runway_count: 2
+      runways_lighted: true
+      scheduled_service: true
+      jet_capability: jet_capable
+      lat: 43.1073
+      lon: -78.9462
+      distance_mi: 15.8
+      bearing: NW
+      tracked_plane_presence_in_window: []
+    - airport_code: 95NY
+      icao: null
+      iata: null
+      name: "Cummings Airfield"
+      city: "Wales Center/Cowlesville/"
+      region: US-NY
+      country: US
+      type: small_airport
+      elevation_ft: 1280
+      longest_runway_ft: 1500
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 42.7892
+      lon: -78.4764
+      distance_mi: 16.6
+      bearing: SE
+      tracked_plane_presence_in_window: []
+    - airport_code: 5NK9
+      icao: null
+      iata: null
+      name: "Treichler Farm Airport"
+      city: Wales
+      region: US-NY
+      country: US
+      type: small_airport
+      elevation_ft: 1140
+      longest_runway_ft: 1500
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 42.7617
+      lon: -78.4961
+      distance_mi: 17.2
+      bearing: SE
+      tracked_plane_presence_in_window: []
+    - airport_code: CNF9
+      icao: null
+      iata: null
+      name: "Niagara South Airport"
+      city: "Niagara Falls"
+      region: CA-ON
+      country: CA
+      type: small_airport
+      elevation_ft: 576
+      longest_runway_ft: 4400
+      longest_runway_surface: GRVL
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 42.9994
+      lon: -79.0636
+      distance_mi: 17.2
+      bearing: WNW
+      tracked_plane_presence_in_window: []
+    - airport_code: NY24
+      icao: null
+      iata: null
+      name: "Taylor Johnson Airport"
+      city: "Niagara Falls"
+      region: US-NY
+      country: US
+      type: small_airport
+      elevation_ft: 633
+      longest_runway_ft: 1800
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 43.1278
+      lon: -78.97
+      distance_mi: 17.7
+      bearing: NW
+      tracked_plane_presence_in_window: []
+    - airport_code: NK25
+      icao: null
+      iata: null
+      name: "Cambria Airport"
+      city: Lockport
+      region: US-NY
+      country: US
+      type: small_airport
+      elevation_ft: 380
+      longest_runway_ft: 3000
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 43.19416
+      lon: -78.79938
+      distance_mi: 17.9
+      bearing: N
+      tracked_plane_presence_in_window: []
+    - airport_code: US-7461
+      icao: null
+      iata: null
+      name: "Sheldon Airport"
+      city: Strykersville
+      region: US-NY
+      country: US
+      type: small_airport
+      elevation_ft: 1400
+      longest_runway_ft: null
+      longest_runway_surface: null
+      runway_count: 0
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: unknown
+      lat: 42.76544
+      lon: -78.46168
+      distance_mi: 18.3
+      bearing: SE
+      tracked_plane_presence_in_window: []
+    - airport_code: US-7462
+      icao: null
+      iata: null
+      name: "[Duplicate] Sheldon Airport"
+      city: Strykersville
+      region: US-NY
+      country: US
+      type: small_airport
+      elevation_ft: 1400
+      longest_runway_ft: null
+      longest_runway_surface: null
+      runway_count: 0
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: unknown
+      lat: 42.76544
+      lon: -78.46168
+      distance_mi: 18.3
+      bearing: SE
+      tracked_plane_presence_in_window: []
+    - airport_code: 92NY
+      icao: null
+      iata: null
+      name: "Bloecher Farm Airport"
+      city: Strykersville
+      region: US-NY
+      country: US
+      type: small_airport
+      elevation_ft: 1430
+      longest_runway_ft: 3600
+      longest_runway_surface: TURF
+      runway_count: 2
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 42.75294
+      lon: -78.46212
+      distance_mi: 18.8
+      bearing: SE
+      tracked_plane_presence_in_window: []
+    - airport_code: 9G5
+      icao: null
+      iata: null
+      name: "Royalton Airport"
+      city: Gasport
+      region: US-NY
+      country: US
+      type: small_airport
+      elevation_ft: 628
+      longest_runway_ft: 2530
+      longest_runway_surface: ASPH-F
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 43.182
+      lon: -78.5578
+      distance_mi: 18.9
+      bearing: NNE
+      tracked_plane_presence_in_window: []
+    - airport_code: 4G2
+      icao: null
+      iata: null
+      name: "Hamburg Inc Airport"
+      city: Hamburg
+      region: US-NY
+      country: US
+      type: small_airport
+      elevation_ft: 751
+      longest_runway_ft: 2465
+      longest_runway_surface: ASPH-G
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 42.7009
+      lon: -78.9148
+      distance_mi: 19.0
+      bearing: SSW
+      tracked_plane_presence_in_window: []
+    - airport_code: 59NY
+      icao: null
+      iata: null
+      name: "Bent-Wing Airport"
+      city: Lockport
+      region: US-NY
+      country: US
+      type: small_airport
+      elevation_ft: 370
+      longest_runway_ft: 2000
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 43.23082
+      lon: -78.68649
+      distance_mi: 20.2
+      bearing: N
+      tracked_plane_presence_in_window: []
+    - airport_code: US-7463
+      icao: null
+      iata: null
+      name: "Sheldon Airstrip"
+      city: Strykersville
+      region: US-NY
+      country: US
+      type: small_airport
+      elevation_ft: 1511
+      longest_runway_ft: null
+      longest_runway_surface: null
+      runway_count: 0
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: unknown
+      lat: 42.75795
+      lon: -78.39325
+      distance_mi: 21.3
+      bearing: SE
+      tracked_plane_presence_in_window: []
+    - airport_code: 85N
+      icao: null
+      iata: null
+      name: "Hollands International Field"
+      city: Newfane
+      region: US-NY
+      country: US
+      type: small_airport
+      elevation_ft: 360
+      longest_runway_ft: 2875
+      longest_runway_surface: TURF-G
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 43.25473
+      lon: -78.76575
+      distance_mi: 21.8
+      bearing: N
+      tracked_plane_presence_in_window: []
+    - airport_code: 4NK3
+      icao: null
+      iata: null
+      name: "Evans Airways Airport"
+      city: Evans
+      region: US-NY
+      country: US
+      type: small_airport
+      elevation_ft: 940
+      longest_runway_ft: 2000
+      longest_runway_surface: TURF
+      runway_count: 2
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 42.66991
+      lon: -78.96831
+      distance_mi: 22.2
+      bearing: SSW
+      tracked_plane_presence_in_window: []
+    - airport_code: NY40
+      icao: null
+      iata: null
+      name: "Gentzke Aeronautical Park Airport"
+      city: Holland
+      region: US-NY
+      country: US
+      type: small_airport
+      elevation_ft: 1750
+      longest_runway_ft: 2000
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 42.6106
+      lon: -78.5956
+      distance_mi: 23.8
+      bearing: SSE
+      tracked_plane_presence_in_window: []
+    - airport_code: 88NY
+      icao: null
+      iata: null
+      name: "Zelazny Airport"
+      city: Shelby
+      region: US-NY
+      country: US
+      type: small_airport
+      elevation_ft: 635
+      longest_runway_ft: 1800
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 43.1578
+      lon: -78.3584
+      distance_mi: 24.1
+      bearing: NE
+      tracked_plane_presence_in_window: []
+    - airport_code: 6NK4
+      icao: null
+      iata: null
+      name: "TTT Air Airport"
+      city: "North Collins"
+      region: US-NY
+      country: US
+      type: small_airport
+      elevation_ft: 891
+      longest_runway_ft: 1800
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 42.62946
+      lon: -78.96506
+      distance_mi: 24.5
+      bearing: SSW
+      tracked_plane_presence_in_window: []
+    - airport_code: 49NK
+      icao: null
+      iata: null
+      name: "Trump MTN Airport"
+      city: Attica
+      region: US-NY
+      country: US
+      type: small_airport
+      elevation_ft: 1501
+      longest_runway_ft: 1600
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 42.79326
+      lon: -78.29237
+      distance_mi: 24.5
+      bearing: ESE
+      tracked_plane_presence_in_window: []
+    - airport_code: 63NY
+      icao: null
+      iata: null
+      name: "Shear Airport"
+      city: Youngstown
+      region: US-NY
+      country: US
+      type: small_airport
+      elevation_ft: 325
+      longest_runway_ft: 3153
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 43.2593
+      lon: -78.9656
+      distance_mi: 25.0
+      bearing: NNW
+      tracked_plane_presence_in_window: []
+    - airport_code: US-8256
+      icao: null
+      iata: null
+      name: "Palmer Airport"
+      city: Burt
+      region: US-NY
+      country: US
+      type: small_airport
+      elevation_ft: 318
+      longest_runway_ft: null
+      longest_runway_surface: null
+      runway_count: 0
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: unknown
+      lat: 43.30841
+      lon: -78.75472
+      distance_mi: 25.4
+      bearing: N
+      tracked_plane_presence_in_window: []
+    - airport_code: 66NY
+      icao: null
+      iata: null
+      name: "Maple Ridge Airport"
+      city: Medina
+      region: US-NY
+      country: US
+      type: small_airport
+      elevation_ft: 646
+      longest_runway_ft: 2800
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 43.2028
+      lon: -78.3539
+      distance_mi: 26.3
+      bearing: NE
+      tracked_plane_presence_in_window: []
+    - airport_code: D80
+      icao: null
+      iata: null
+      name: "Olcott-Newfane Airport"
+      city: Burt
+      region: US-NY
+      country: US
+      type: small_airport
+      elevation_ft: 315
+      longest_runway_ft: 2500
+      longest_runway_surface: TURF-F
+      runway_count: 2
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 43.32171
+      lon: -78.72603
+      distance_mi: 26.3
+      bearing: N
+      tracked_plane_presence_in_window: []
+    - airport_code: 85NY
+      icao: null
+      iata: null
+      name: "High Acres Airport"
+      city: Sardinia
+      region: US-NY
+      country: US
+      type: small_airport
+      elevation_ft: 1540
+      longest_runway_ft: 2700
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 42.5784
+      lon: -78.52
+      distance_mi: 27.2
+      bearing: SSE
+      tracked_plane_presence_in_window: []
+    - airport_code: NY00
+      icao: null
+      iata: null
+      name: "Basher Field"
+      city: Sardinia
+      region: US-NY
+      country: US
+      type: small_airport
+      elevation_ft: 1855
+      longest_runway_ft: 1600
+      longest_runway_surface: TURF-F
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 42.56705
+      lon: -78.55774
+      distance_mi: 27.3
+      bearing: SSE
+      tracked_plane_presence_in_window: []
+    - airport_code: 9G6
+      icao: null
+      iata: null
+      name: "Pine Hill Airport"
+      city: Albion
+      region: US-NY
+      country: US
+      type: small_airport
+      elevation_ft: 669
+      longest_runway_ft: 2659
+      longest_runway_surface: ASPH-E
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 43.17355
+      lon: -78.27513
+      distance_mi: 28.1
+      bearing: NE
+      tracked_plane_presence_in_window: []
+    - airport_code: CYSN
+      icao: CYSN
+      iata: YCM
+      name: "Niagara District Airport"
+      city: Niagara-on-the-Lake
+      region: CA-ON
+      country: CA
+      type: medium_airport
+      elevation_ft: 321
+      longest_runway_ft: 5000
+      longest_runway_surface: ASP
+      runway_count: 3
+      runways_lighted: true
+      scheduled_service: true
+      jet_capability: jet_capable
+      lat: 43.1916
+      lon: -79.17169
+      distance_mi: 28.2
+      bearing: NW
+      tracked_plane_presence_in_window: []
+    - airport_code: NY01
+      icao: null
+      iata: null
+      name: "Knowlesville Airport"
+      city: Knowlesville
+      region: US-NY
+      country: US
+      type: small_airport
+      elevation_ft: 555
+      longest_runway_ft: 1925
+      longest_runway_surface: TURF-G
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 43.2209
+      lon: -78.315
+      distance_mi: 28.6
+      bearing: NE
+      tracked_plane_presence_in_window: []
+    - airport_code: KGVQ
+      icao: null
+      iata: null
+      name: "Genesee County Airport"
+      city: Batavia
+      region: US-NY
+      country: US
+      type: small_airport
+      elevation_ft: 914
+      longest_runway_ft: 5499
+      longest_runway_surface: ASP
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: jet_capable
+      lat: 43.0317
+      lon: -78.1676
+      distance_mi: 29.2
+      bearing: ENE
+      tracked_plane_presence_in_window: []
+    - airport_code: 8NK4
+      icao: null
+      iata: null
+      name: "Bethany Airpark"
+      city: "Bethany Center"
+      region: US-NY
+      country: US
+      type: small_airport
+      elevation_ft: 1000
+      longest_runway_ft: 2800
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 42.9433
+      lon: -78.1383
+      distance_mi: 30.0
+      bearing: E
+      tracked_plane_presence_in_window: []
+    - airport_code: CNQ3
+      icao: null
+      iata: null
+      name: "Niagara Central Dorothy Rungeling Airport"
+      city: Welland
+      region: CA-ON
+      country: CA
+      type: small_airport
+      elevation_ft: 585
+      longest_runway_ft: 3493
+      longest_runway_surface: ASP
+      runway_count: 3
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: marginal
+      lat: 42.9792
+      lon: -79.3247
+      distance_mi: 30.1
+      bearing: W
+      tracked_plane_presence_in_window: []
+    - airport_code: KD23
+      icao: null
+      iata: null
+      name: "Arcade Tri County Airport"
+      city: Arcade
+      region: US-NY
+      country: US
+      type: small_airport
+      elevation_ft: 1745
+      longest_runway_ft: 3220
+      longest_runway_surface: GVL
+      runway_count: 2
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 42.56537
+      lon: -78.42477
+      distance_mi: 30.3
+      bearing: SSE
+      tracked_plane_presence_in_window: []
+    - airport_code: NY79
+      icao: null
+      iata: null
+      name: "Keysa Airport"
+      city: Bliss
+      region: US-NY
+      country: US
+      type: small_airport
+      elevation_ft: 1620
+      longest_runway_ft: 1860
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 42.5967
+      lon: -78.3403
+      distance_mi: 31.0
+      bearing: SE
+      tracked_plane_presence_in_window: []
+    - airport_code: US-4753
+      icao: null
+      iata: null
+      name: "R & R Aero Airport"
+      city: Warsaw
+      region: US-NY
+      country: US
+      type: small_airport
+      elevation_ft: 1650
+      longest_runway_ft: 4000
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 42.72113
+      lon: -78.18611
+      distance_mi: 31.5
+      bearing: ESE
+      tracked_plane_presence_in_window: []
+    - airport_code: NK27
+      icao: null
+      iata: null
+      name: "Hedge Hop Field"
+      city: Springville
+      region: US-NY
+      country: US
+      type: small_airport
+      elevation_ft: 1400
+      longest_runway_ft: 2200
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 42.48867
+      lon: -78.63492
+      distance_mi: 31.6
+      bearing: S
+      tracked_plane_presence_in_window: []
+    - airport_code: CPE5
+      icao: null
+      iata: null
+      name: "Port Colborne Airport"
+      city: Wainfleet
+      region: CA-ON
+      country: CA
+      type: small_airport
+      elevation_ft: 600
+      longest_runway_ft: 2200
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 42.8775
+      lon: -79.3528
+      distance_mi: 31.7
+      bearing: W
+      tracked_plane_presence_in_window: []
+    - airport_code: D59
+      icao: null
+      iata: null
+      name: "Gowanda Airport"
+      city: Gowanda
+      region: US-NY
+      country: US
+      type: small_airport
+      elevation_ft: 830
+      longest_runway_ft: 3430
+      longest_runway_surface: TURF-G
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 42.50154
+      lon: -78.95052
+      distance_mi: 32.3
+      bearing: SSW
+      tracked_plane_presence_in_window: []
+    - airport_code: 35NK
+      icao: null
+      iata: null
+      name: "Tiger Paw Aerodrome"
+      city: Lyndonville
+      region: US-NY
+      country: US
+      type: small_airport
+      elevation_ft: 295
+      longest_runway_ft: 2800
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 43.3671
+      lon: -78.41403
+      distance_mi: 33.6
+      bearing: NNE
+      tracked_plane_presence_in_window: []
+    - airport_code: 20NY
+      icao: null
+      iata: null
+      name: "Stafford Airport"
+      city: "Le Roy"
+      region: US-NY
+      country: US
+      type: small_airport
+      elevation_ft: 891
+      longest_runway_ft: 1960
+      longest_runway_surface: TURF-G
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 43.0053
+      lon: -78.03957
+      distance_mi: 35.3
+      bearing: E
+      tracked_plane_presence_in_window: []
+    - airport_code: NY06
+      icao: null
+      iata: null
+      name: "Gaines Valley Aviation Airport"
+      city: Albion
+      region: US-NY
+      country: US
+      type: small_airport
+      elevation_ft: 380
+      longest_runway_ft: 4000
+      longest_runway_surface: TURF-G
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 43.2964
+      lon: -78.2139
+      distance_mi: 35.9
+      bearing: NE
+      tracked_plane_presence_in_window: []
+    - airport_code: K01G
+      icao: null
+      iata: null
+      name: "Perry-Warsaw Airport"
+      city: Perry
+      region: US-NY
+      country: US
+      type: small_airport
+      elevation_ft: 1559
+      longest_runway_ft: 3429
+      longest_runway_surface: ASPH-G
+      runway_count: 2
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: marginal
+      lat: 42.74145
+      lon: -78.05265
+      distance_mi: 37.1
+      bearing: ESE
+      tracked_plane_presence_in_window: []
+    - airport_code: NK31
+      icao: null
+      iata: null
+      name: "Dawn Patrol Aviation Airport"
+      city: Albion
+      region: US-NY
+      country: US
+      type: small_airport
+      elevation_ft: 480
+      longest_runway_ft: 1450
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 43.2695
+      lon: -78.1453
+      distance_mi: 37.3
+      bearing: NE
+      tracked_plane_presence_in_window: []
+tracked_plane_presence:
+  # Was any tracked aircraft on the ground at any field in the list above,
+  # inside the window? Three registers are searched and kept apart, strongest
+  # first. NEVER collapse them into one number.
+  window:
+    from: 2023-10-23
+    to: 2023-10-27
+    days_each_side: 2
+  any_found: false
+  egyptian_su_found: false
+  counts:
+    adsb_ground_contacts: 0
+    adsb_ground_contacts_egyptian_su: 0
+    flights_csv_stays: 0
+    flights_csv_stays_egyptian_su: 0
+    claimed_overlaps: 0
+  from_adsb_traces: []
+  from_flights_csv: []
+  from_overlaps_csv: []
+  just_outside_the_radius:
+    # A hard radius creates a cliff and a cliff hides evidence. These fields
+    # sit between 40 and 60 miles from the arrival airport. They are NOT counted
+    # as hits and must never be published as ones - they are here so a near miss
+    # is visible rather than silently dropped.
+    outer_radius_miles: 60.0
+    adsb_ground_contacts: []
+    flights_csv_stays: []
+    claimed_overlaps: []
+  coverage:
+    # AN EMPTY RESULT ABOVE IS NOT A FINDING UNLESS THIS SAYS THE DAYS WERE HELD.
+    # aircraft_days_needed = tails x days in the window. aircraft_days_held is
+    # how many of those this repo actually has a trace for. The rest were never
+    # pulled, or the networks heard nothing - the two are indistinguishable here.
+    aircraft_days_needed: 75
+    aircraft_days_held: 0
+    coverage_pct: 0.0
+    tails_with_no_trace_in_window:
+      - N102DZ
+      - N1098L
+      - N2100L
+      - N40JD
+      - N560TW
+      - N582MM
+      - N59906
+      - N872RA
+      - N888KG
+      - SU-BGM
+      - SU-BND
+      - SU-BTT
+      - SU-BTU
+      - SU-BTV
+      - T7-ELL
+    by_side:
+      following:
+        # FOLLOWING is the side the claim is about - the Egyptian SU- tails.
+        # This percentage is the one that decides whether an empty result means
+        # anything at all.
+        tails: 6
+        aircraft_days_needed: 30
+        aircraft_days_held: 0
+        coverage_pct: 0.0
+      kirk:
+        # KIRK-side coverage is what turns an ESTIMATED arrival into an
+        # OBSERVED one. Low here means the arrival times above stay estimates.
+        tails: 6
+        aircraft_days_needed: 30
+        aircraft_days_held: 0
+        coverage_pct: 0.0
+      n1098l:
+        # Other tracked aircraft. A DIFFERENT CLAIM - do not merge the threads.
+        tails: 3
+        aircraft_days_needed: 15
+        aircraft_days_held: 0
+        coverage_pct: 0.0
+counterargument:
+  - "ONE PAIRING IS NOT EVIDENCE. The claim under test is a repetition across many stops, and any single pairing has an innocent explanation a reader will find."
+  - "A field inside the radius is a field a jet COULD have used. Nothing here shows that anyone did use it, or that two aircraft on one ramp had any connection."
+  - "Maintenance is the strongest innocent explanation in this record: Duncan Aviation (Provo and Lincoln) and Yingling (Wichita) are Part 145 Falcon and Gulfstream shops, and a Falcon 7X sitting for weeks at one reads as a maintenance visit."
+  - "Transatlantic customs and fuel stops explain the recurring East Coast fields."
+  - "ERIKA'S SIDE IS THE WEAK SIDE. Her flight logs are reported erased, so any Erika pairing rests on the foreign aircraft's track plus a CLAIMED location for her. See /Planes/Erika-Flight-Logs-Erased."
+what_we_do_not_know:
+  - "Whether Charlie Kirk, Erika Kirk, or any TPUSA party actually flew to this event, or which aircraft they used. The arrival airport above is an inference from the venue city, not a record."
+  - "Whether the estimated arrival and departure times are within hours or within days of the truth, wherever observed_by_adsb is empty."
+  - "What the tracked aircraft were doing at any field they appear at. A trace proves presence, never purpose and never occupancy."
+  - "Whether the receiver networks simply did not hear an aircraft that was there. See the coverage block - an absence is not a finding."

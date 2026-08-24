@@ -1,0 +1,560 @@
+# GENERATED FILE - regenerate, do not hand-edit.
+#   node/python: apis/public_open_source/code/airports_near.py --only 20230301_santa_barbara
+#   The prompt that governs this file: prompts/p_airports_near.md
+schema: ck.speaking.airports_near/1
+generated_utc: "2026-08-24T19:03:26Z"
+generated_by: site/docs/Planes/following/apis/public_open_source/code/airports_near.py
+page:
+  slug: 20230301_santa_barbara
+  mdx: site/docs/Planes/following/speaking/20230301_santa_barbara.mdx
+  yaml: site/docs/Planes/following/speaking/20230301_santa_barbara.yaml
+  url: /Planes/following/speaking/20230301_santa_barbara
+event:
+  title: "Live Free Tour — UC Santa Barbara"
+  who: Charlie
+  attendee_class: CHARLIE_ONLY
+  charlie_present: "yes"
+  erika_present: not_documented
+  attendance_status: held
+  event_type: campus
+  dates:
+    raw: 2023-03-01
+    first_day: 2023-03-01
+    last_day: 2023-03-01
+    granularity: DAY
+    certainty: EVENT_DATE
+    # PODCAST_PROXY means the date is a podcast RELEASE date and the event was normally 0-7 days earlier. Never publish a same-day claim off one.
+  local_time:
+    raw: null
+    parsed_hhmm: null
+    basis: no_time_published
+    timezone: America/Los_Angeles
+    timezone_method: timezonefinder
+  location:
+    city: "Santa Barbara"
+    state: CA
+    country: USA
+    venue: "University of California, Santa Barbara"
+    metro_area: "Santa Barbara CA"
+    geocode:
+      lat: 34.40359
+      lon: -119.71371
+      method: us_census_2024_gazetteer
+      matched: "Santa Barbara city"
+  source: "TPUSA Spring 2023 Live Free press release 24 Jan 2023"
+  source_url: "https://backend.tpusa.com/wp-content/uploads/2023/01/Press-Release-TPUSA-Tour-Spring-2023-Live-Free.pdf"
+  days_before_sept10_2025: 924
+search:
+  radius_miles: 40
+  window_days_each_side: 2
+  window_from: 2023-02-27
+  window_to: 2023-03-03
+  window_day_count: 5
+  centre: KSBA
+  tails_searched:
+    - N102DZ
+    - N1098L
+    - N2100L
+    - N40JD
+    - N560TW
+    - N582MM
+    - N59906
+    - N872RA
+    - N888KG
+    - SU-BGM
+    - SU-BND
+    - SU-BTT
+    - SU-BTU
+    - SU-BTV
+    - T7-ELL
+  sources_searched:
+    - "recovered ADS-B traces on disk (site/docs/Planes/<TAIL>/data/recovered/)"
+    - site/docs/Planes/following/flights.csv
+    - site/docs/Planes/following/overlaps.csv
+arrival_airport:
+  # ESTIMATE. No published Kirk-side flight record exists for this event unless
+  # the observed_by_adsb block below is non-empty. This is arithmetic on the
+  # event time, not a landing record.
+  chosen_airport:
+    airport_code: KSBA
+    icao: KSBA
+    iata: SBA
+    name: "Santa Barbara Municipal Airport"
+    city: "Santa Barbara"
+    region: US-CA
+    country: US
+    type: medium_airport
+    elevation_ft: 13
+    longest_runway_ft: 6037
+    longest_runway_surface: ASP
+    runway_count: 3
+    runways_lighted: true
+    scheduled_service: true
+    jet_capability: jet_capable
+    lat: 34.4262
+    lon: -119.84
+    distance_mi: 7.4
+    bearing: WNW
+  distance_from_event_city_mi: 7.4
+  selection_basis: CURATED_CSV_AND_COMPUTED_NEAREST_JET_FIELD_AGREE
+  curated_value_in_tpusa_events_csv:
+    airport_code: KSBA
+    airport_name: "Santa Barbara Municipal"
+    distance_mi: 8
+  computed_nearest_jet_capable_field:
+    airport_code: KSBA
+    name: "Santa Barbara Municipal Airport"
+    distance_mi: 7.4
+    longest_runway_ft: 6037
+  estimated_arrival:
+    date: 2023-03-01
+    local_time: "16:00"
+    timezone: America/Los_Angeles
+    utc: "2023-03-02T00:00:00Z"
+    basis: "no event time published; 19:00 local assumed for arithmetic only; minus 3h"
+    confidence: low
+  estimated_departure:
+    date: 2023-03-01
+    local_time: "23:00"
+    timezone: America/Los_Angeles
+    utc: "2023-03-02T07:00:00Z"
+    basis: "event end + 4h (speech, exit, wheels-up)"
+    confidence: low
+  observed_by_adsb: []
+  observed_by_adsb_note: "NO Kirk-side aircraft is on disk on the ground within 40 miles of KSBA in this window. The arrival and departure above stay estimates."
+airports_within_radius:
+  # Every field a private jet could physically use within the radius.
+  # Heliports, seaplane bases, balloonports and closed fields are excluded -
+  # a business jet cannot use any of them. Everything else is kept, including
+  # every small strip with no scheduled service: those are the point of the sweep.
+  radius_miles: 40
+  centre_airport: KSBA
+  count: 17
+  jet_capable_count: 2
+  light_jet_capable_count: 1
+  no_scheduled_service_count: 16
+  source: "OurAirports (CC0) airports.csv + runways.csv"
+  list:
+    - airport_code: KSBA
+      icao: KSBA
+      iata: SBA
+      name: "Santa Barbara Municipal Airport"
+      city: "Santa Barbara"
+      region: US-CA
+      country: US
+      type: medium_airport
+      elevation_ft: 13
+      longest_runway_ft: 6037
+      longest_runway_surface: ASP
+      runway_count: 3
+      runways_lighted: true
+      scheduled_service: true
+      jet_capability: jet_capable
+      lat: 34.4262
+      lon: -119.84
+      distance_mi: 0.0
+      bearing: N
+      tracked_plane_presence_in_window: []
+    - airport_code: 0CA3
+      icao: null
+      iata: null
+      name: "Crawford Airport"
+      city: "Santa Ynez"
+      region: US-CA
+      country: US
+      type: small_airport
+      elevation_ft: 570
+      longest_runway_ft: 2100
+      longest_runway_surface: ASPH
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 34.5875
+      lon: -120.013
+      distance_mi: 14.9
+      bearing: NW
+      tracked_plane_presence_in_window: []
+    - airport_code: KIZA
+      icao: KIZA
+      iata: SQA
+      name: "Santa Ynez Airport"
+      city: "Santa Ynez"
+      region: US-CA
+      country: US
+      type: small_airport
+      elevation_ft: 674
+      longest_runway_ft: 2803
+      longest_runway_surface: ASP
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 34.6068
+      lon: -120.076
+      distance_mi: 18.3
+      bearing: NW
+      tracked_plane_presence_in_window: []
+    - airport_code: 0CA4
+      icao: null
+      iata: null
+      name: "Shepherd Farm Airport"
+      city: "Santa Ynez"
+      region: US-CA
+      country: US
+      type: small_airport
+      elevation_ft: 660
+      longest_runway_ft: 3600
+      longest_runway_surface: TREATED
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 34.6222
+      lon: -120.065
+      distance_mi: 18.6
+      bearing: NW
+      tracked_plane_presence_in_window: []
+    - airport_code: KSZN
+      icao: KSZN
+      iata: SZN
+      name: "Santa Cruz Island Airport"
+      city: "Santa Cruz Island"
+      region: US-CA
+      country: US
+      type: small_airport
+      elevation_ft: 50
+      longest_runway_ft: 2150
+      longest_runway_surface: "NATURAL SOIL"
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 34.06007
+      lon: -119.91523
+      distance_mi: 25.7
+      bearing: S
+      tracked_plane_presence_in_window: []
+    - airport_code: CA97
+      icao: null
+      iata: null
+      name: "Christy Airstrip"
+      city: "Santa Cruz Island"
+      region: US-CA
+      country: US
+      type: small_airport
+      elevation_ft: 250
+      longest_runway_ft: 2507
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 34.01888
+      lon: -119.85162
+      distance_mi: 28.2
+      bearing: S
+      tracked_plane_presence_in_window: []
+    - airport_code: US-6969
+      icao: null
+      iata: null
+      name: "Upper Hartman Ranch Airport"
+      city: Ojai
+      region: US-CA
+      country: US
+      type: small_airport
+      elevation_ft: 4247
+      longest_runway_ft: null
+      longest_runway_surface: null
+      runway_count: 0
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: unknown
+      lat: 34.61016
+      lon: -119.38233
+      distance_mi: 29.0
+      bearing: ENE
+      tracked_plane_presence_in_window: []
+    - airport_code: US-1187
+      icao: null
+      iata: null
+      name: "Santa Cruz Ranch Airstrip"
+      city: "Santa Cruz Island"
+      region: US-CA
+      country: US
+      type: small_airport
+      elevation_ft: 420
+      longest_runway_ft: 1697
+      longest_runway_surface: DIRT
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 33.98946
+      lon: -119.68018
+      distance_mi: 31.5
+      bearing: SSE
+      tracked_plane_presence_in_window: []
+    - airport_code: US-6970
+      icao: null
+      iata: null
+      name: "Cuaslui Creek Airport"
+      city: "Santa Maria"
+      region: US-CA
+      country: US
+      type: small_airport
+      elevation_ft: 1204
+      longest_runway_ft: null
+      longest_runway_surface: null
+      runway_count: 0
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: unknown
+      lat: 34.78462
+      lon: -120.18502
+      distance_mi: 31.6
+      bearing: NW
+      tracked_plane_presence_in_window: []
+    - airport_code: US-0229
+      icao: null
+      iata: null
+      name: "Bechers Bay Airstrip"
+      city: "Santa Rosa Island"
+      region: US-CA
+      country: US
+      type: small_airport
+      elevation_ft: 88
+      longest_runway_ft: null
+      longest_runway_surface: null
+      runway_count: 0
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: unknown
+      lat: 33.99624
+      lon: -120.0456
+      distance_mi: 31.9
+      bearing: SSW
+      tracked_plane_presence_in_window: []
+    - airport_code: US-5852
+      icao: null
+      iata: null
+      name: "Smugglers Cove Airport"
+      city: "Santa Cruz Island"
+      region: US-CA
+      country: US
+      type: small_airport
+      elevation_ft: 341
+      longest_runway_ft: null
+      longest_runway_surface: null
+      runway_count: 0
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: unknown
+      lat: 34.02831
+      lon: -119.54093
+      distance_mi: 32.4
+      bearing: SSE
+      tracked_plane_presence_in_window: []
+    - airport_code: KL88
+      icao: null
+      iata: null
+      name: "New Cuyama Airport"
+      city: "New Cuyama"
+      region: US-CA
+      country: US
+      type: small_airport
+      elevation_ft: 2203
+      longest_runway_ft: 3940
+      longest_runway_surface: ASP
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: marginal
+      lat: 34.9375
+      lon: -119.688
+      distance_mi: 36.4
+      bearing: NNE
+      tracked_plane_presence_in_window: []
+    - airport_code: 5CN4
+      icao: null
+      iata: null
+      name: "Vosburgh Airfield"
+      city: "New Cuyama"
+      region: US-CA
+      country: US
+      type: small_airport
+      elevation_ft: 2349
+      longest_runway_ft: null
+      longest_runway_surface: null
+      runway_count: 0
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: unknown
+      lat: 34.9225
+      lon: -119.57118
+      distance_mi: 37.5
+      bearing: NNE
+      tracked_plane_presence_in_window: []
+    - airport_code: US-3658
+      icao: null
+      iata: null
+      name: "Ballinger Canyon Airport"
+      city: "New Cuyama"
+      region: US-CA
+      country: US
+      type: small_airport
+      elevation_ft: 2986
+      longest_runway_ft: null
+      longest_runway_surface: null
+      runway_count: 0
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: unknown
+      lat: 34.88565
+      lon: -119.46628
+      distance_mi: 38.2
+      bearing: NNE
+      tracked_plane_presence_in_window: []
+    - airport_code: KOXR
+      icao: KOXR
+      iata: OXR
+      name: "Oxnard Airport"
+      city: Oxnard
+      region: US-CA
+      country: US
+      type: medium_airport
+      elevation_ft: 45
+      longest_runway_ft: 5953
+      longest_runway_surface: ASP
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: jet_capable
+      lat: 34.2008
+      lon: -119.207
+      distance_mi: 39.3
+      bearing: ESE
+      tracked_plane_presence_in_window: []
+    - airport_code: KLPC
+      icao: KLPC
+      iata: LPC
+      name: "Lompoc Airport"
+      city: Lompoc
+      region: US-CA
+      country: US
+      type: small_airport
+      elevation_ft: 88
+      longest_runway_ft: 4600
+      longest_runway_surface: ASP
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: light_jet_capable
+      lat: 34.6656
+      lon: -120.468
+      distance_mi: 39.4
+      bearing: WNW
+      tracked_plane_presence_in_window: []
+    - airport_code: US-0227
+      icao: null
+      iata: null
+      name: "Ranger Station Airstrip"
+      city: "San Miguel Island"
+      region: US-CA
+      country: US
+      type: small_airport
+      elevation_ft: 560
+      longest_runway_ft: null
+      longest_runway_surface: null
+      runway_count: 0
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: unknown
+      lat: 34.0373
+      lon: -120.3493
+      distance_mi: 39.6
+      bearing: SW
+      tracked_plane_presence_in_window: []
+tracked_plane_presence:
+  # Was any tracked aircraft on the ground at any field in the list above,
+  # inside the window? Three registers are searched and kept apart, strongest
+  # first. NEVER collapse them into one number.
+  window:
+    from: 2023-02-27
+    to: 2023-03-03
+    days_each_side: 2
+  any_found: false
+  egyptian_su_found: false
+  counts:
+    adsb_ground_contacts: 0
+    adsb_ground_contacts_egyptian_su: 0
+    flights_csv_stays: 0
+    flights_csv_stays_egyptian_su: 0
+    claimed_overlaps: 0
+  from_adsb_traces: []
+  from_flights_csv: []
+  from_overlaps_csv: []
+  just_outside_the_radius:
+    # A hard radius creates a cliff and a cliff hides evidence. These fields
+    # sit between 40 and 60 miles from the arrival airport. They are NOT counted
+    # as hits and must never be published as ones - they are here so a near miss
+    # is visible rather than silently dropped.
+    outer_radius_miles: 60.0
+    adsb_ground_contacts: []
+    flights_csv_stays: []
+    claimed_overlaps: []
+  coverage:
+    # AN EMPTY RESULT ABOVE IS NOT A FINDING UNLESS THIS SAYS THE DAYS WERE HELD.
+    # aircraft_days_needed = tails x days in the window. aircraft_days_held is
+    # how many of those this repo actually has a trace for. The rest were never
+    # pulled, or the networks heard nothing - the two are indistinguishable here.
+    aircraft_days_needed: 75
+    aircraft_days_held: 2
+    coverage_pct: 2.7
+    tails_with_no_trace_in_window:
+      - N1098L
+      - N2100L
+      - N40JD
+      - N560TW
+      - N582MM
+      - N872RA
+      - N888KG
+      - SU-BGM
+      - SU-BND
+      - SU-BTT
+      - SU-BTU
+      - SU-BTV
+      - T7-ELL
+    by_side:
+      following:
+        # FOLLOWING is the side the claim is about - the Egyptian SU- tails.
+        # This percentage is the one that decides whether an empty result means
+        # anything at all.
+        tails: 6
+        aircraft_days_needed: 30
+        aircraft_days_held: 0
+        coverage_pct: 0.0
+      kirk:
+        # KIRK-side coverage is what turns an ESTIMATED arrival into an
+        # OBSERVED one. Low here means the arrival times above stay estimates.
+        tails: 6
+        aircraft_days_needed: 30
+        aircraft_days_held: 1
+        coverage_pct: 3.3
+      n1098l:
+        # Other tracked aircraft. A DIFFERENT CLAIM - do not merge the threads.
+        tails: 3
+        aircraft_days_needed: 15
+        aircraft_days_held: 1
+        coverage_pct: 6.7
+counterargument:
+  - "ONE PAIRING IS NOT EVIDENCE. The claim under test is a repetition across many stops, and any single pairing has an innocent explanation a reader will find."
+  - "A field inside the radius is a field a jet COULD have used. Nothing here shows that anyone did use it, or that two aircraft on one ramp had any connection."
+  - "Maintenance is the strongest innocent explanation in this record: Duncan Aviation (Provo and Lincoln) and Yingling (Wichita) are Part 145 Falcon and Gulfstream shops, and a Falcon 7X sitting for weeks at one reads as a maintenance visit."
+  - "Transatlantic customs and fuel stops explain the recurring East Coast fields."
+  - "ERIKA'S SIDE IS THE WEAK SIDE. Her flight logs are reported erased, so any Erika pairing rests on the foreign aircraft's track plus a CLAIMED location for her. See /Planes/Erika-Flight-Logs-Erased."
+what_we_do_not_know:
+  - "Whether Charlie Kirk, Erika Kirk, or any TPUSA party actually flew to this event, or which aircraft they used. The arrival airport above is an inference from the venue city, not a record."
+  - "Whether the estimated arrival and departure times are within hours or within days of the truth, wherever observed_by_adsb is empty."
+  - "What the tracked aircraft were doing at any field they appear at. A trace proves presence, never purpose and never occupancy."
+  - "Whether the receiver networks simply did not hear an aircraft that was there. See the coverage block - an absence is not a finding."

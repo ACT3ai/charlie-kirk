@@ -1,0 +1,21 @@
+{"icao":"0101d3",
+"r":"SU-BTT",
+"t":"FA7X",
+"dbFlags":1,"desc":"DASSAULT Falcon 7X",
+"version": "readsb 3.14.1676 46c61ff-dirty",
+"timestamp": 1761091200.000,
+"trace":[ 
+[33323.89,28.391235,31.939369,20000,398.6,344.4,1,64,null,"adsb_icao",21175,null,null,null],
+[33327.44,28.397644,31.937361,20000,398.6,344.4,0,64,null,"adsb_icao",21175,null,null,null],
+[34117.21,29.617310,31.471393,9000,295.6,332.8,1,0,{"type":"adsb_icao","flight":"SUBTT   ","alt_geom":9550,"track":332.83,"baro_rate":0,"squawk":"3310","emergency":"none","category":"A2","nav_qnh":1013.2,"nav_altitude_mcp":9008,"nav_altitude_fms":9008,"nav_modes":["althold"],"nic":8,"rc":186,"version":0,"nac_p":8,"nac_v":2,"sil":2,"sil_type":"perhour","alert":0,"spi":0},"adsb_icao",9550,null,null,null],
+[34136.98,29.632920,31.447233,9000,291.6,308.9,1,64,null,"adsb_icao",9550,null,null,13.0],
+[34141.95,29.634270,31.440071,9000,291.6,308.9,0,64,null,"adsb_icao",9550,null,null,13.0],
+[34149.32,29.635300,31.428716,9000,286.4,275.6,0,64,null,"adsb_icao",9550,null,null,13.0],
+[34159.43,29.636458,31.413413,9000,286.0,274.8,0,-64,{"type":"adsb_icao","alt_geom":9550,"tas":292,"track":274.81,"track_rate":-2.00,"roll":13.01,"baro_rate":-64,"squawk":"3310","emergency":"none","category":"A2","nav_qnh":1013.6,"nav_altitude_mcp":9024,"nav_modes":["autopilot","althold","tcas"],"nic":8,"rc":186,"version":2,"nic_baro":1,"nac_p":9,"nac_v":2,"sil":3,"sil_type":"perhour","gva":2,"sda":2,"alert":0,"spi":0},"adsb_icao",9550,null,null,13.0],
+[34183.18,29.639145,31.377270,9000,287.0,274.8,1,-64,null,"adsb_icao",9550,null,null,null],
+[34186.46,29.639484,31.372591,9000,287.0,274.8,0,-64,null,"adsb_icao",9550,null,null,null],
+[34317.53,29.693485,31.218136,8200,null,null,1,null,null,"adsb_icao",8750,null,null,null],
+[34333.54,29.713898,31.220028,7850,null,null,1,null,{"type":"adsb_icao","alt_geom":8400,"category":"A2","nic":8,"rc":186,"version":0,"nac_p":8,"sil":2,"sil_type":"perhour","alert":0,"spi":0},"adsb_icao",8400,null,null,null],
+[34415.67,29.806412,31.252565,5750,null,null,1,null,null,"adsb_icao",null,null,null,null],
+[34449.64,29.822620,31.293694,4700,255.2,70.8,1,-1856,null,"adsb_icao",5075,null,null,null] ]
+ }

@@ -1,0 +1,502 @@
+# GENERATED FILE - regenerate, do not hand-edit.
+#   node/python: apis/public_open_source/code/airports_near.py --only 20250821_north_myrtle_beach
+#   The prompt that governs this file: prompts/p_airports_near.md
+schema: ck.speaking.airports_near/1
+generated_utc: "2026-08-24T19:03:27Z"
+generated_by: site/docs/Planes/following/apis/public_open_source/code/airports_near.py
+page:
+  slug: 20250821_north_myrtle_beach
+  mdx: site/docs/Planes/following/speaking/20250821_north_myrtle_beach.mdx
+  yaml: site/docs/Planes/following/speaking/20250821_north_myrtle_beach.yaml
+  url: /Planes/following/speaking/20250821_north_myrtle_beach
+event:
+  title: "Alex McFarland Speaker Series featuring Charlie Kirk"
+  who: Charlie
+  attendee_class: CHARLIE_ONLY
+  charlie_present: "yes"
+  erika_present: not_documented
+  attendance_status: held
+  event_type: speaking
+  dates:
+    raw: 2025-08-21
+    first_day: 2025-08-21
+    last_day: 2025-08-21
+    granularity: DAY
+    certainty: EVENT_DATE
+    # PODCAST_PROXY means the date is a podcast RELEASE date and the event was normally 0-7 days earlier. Never publish a same-day claim off one.
+  local_time:
+    raw: null
+    parsed_hhmm: null
+    basis: no_time_published
+    timezone: America/New_York
+    timezone_method: timezonefinder
+  location:
+    city: "North Myrtle Beach"
+    state: SC
+    country: USA
+    venue: "Alabama Theatre, North Myrtle Beach, South Carolina"
+    metro_area: "Myrtle Beach SC"
+    geocode:
+      lat: 33.82196
+      lon: -78.70298
+      method: us_census_2024_gazetteer
+      matched: "North Myrtle Beach city"
+  source: charliekirk.com/events
+  source_url: "https://www.alabama-theatre.com/myrtle-beach-shows/alex-mcfarland-speaker-series-featuring-charlie-kirk/9140"
+  days_before_sept10_2025: 20
+search:
+  radius_miles: 40
+  window_days_each_side: 2
+  window_from: 2025-08-19
+  window_to: 2025-08-23
+  window_day_count: 5
+  centre: KCRE
+  tails_searched:
+    - N102DZ
+    - N1098L
+    - N2100L
+    - N40JD
+    - N560TW
+    - N582MM
+    - N59906
+    - N872RA
+    - N888KG
+    - SU-BGM
+    - SU-BND
+    - SU-BTT
+    - SU-BTU
+    - SU-BTV
+    - T7-ELL
+  sources_searched:
+    - "recovered ADS-B traces on disk (site/docs/Planes/<TAIL>/data/recovered/)"
+    - site/docs/Planes/following/flights.csv
+    - site/docs/Planes/following/overlaps.csv
+arrival_airport:
+  # ESTIMATE. No published Kirk-side flight record exists for this event unless
+  # the observed_by_adsb block below is non-empty. This is arithmetic on the
+  # event time, not a landing record.
+  chosen_airport:
+    airport_code: KCRE
+    icao: KCRE
+    iata: CRE
+    name: "Grand Strand Airport"
+    city: "North Myrtle Beach"
+    region: US-SC
+    country: US
+    type: medium_airport
+    elevation_ft: 32
+    longest_runway_ft: 5997
+    longest_runway_surface: ASP
+    runway_count: 1
+    runways_lighted: true
+    scheduled_service: false
+    jet_capability: jet_capable
+    lat: 33.8117
+    lon: -78.7239
+    distance_mi: 1.4
+    bearing: WSW
+  distance_from_event_city_mi: 1.4
+  selection_basis: CURATED_CSV_AND_COMPUTED_NEAREST_JET_FIELD_AGREE
+  curated_value_in_tpusa_events_csv:
+    airport_code: KCRE
+    airport_name: "Grand Strand Airport"
+    distance_mi: 3
+  computed_nearest_jet_capable_field:
+    airport_code: KCRE
+    name: "Grand Strand Airport"
+    distance_mi: 1.4
+    longest_runway_ft: 5997
+  estimated_arrival:
+    date: 2025-08-21
+    local_time: "16:00"
+    timezone: America/New_York
+    utc: "2025-08-21T20:00:00Z"
+    basis: "no event time published; 19:00 local assumed for arithmetic only; minus 3h"
+    confidence: low
+  estimated_departure:
+    date: 2025-08-21
+    local_time: "23:00"
+    timezone: America/New_York
+    utc: "2025-08-22T03:00:00Z"
+    basis: "event end + 4h (speech, exit, wheels-up)"
+    confidence: low
+  observed_by_adsb: []
+  observed_by_adsb_note: "NO Kirk-side aircraft is on disk on the ground within 40 miles of KCRE in this window. The arrival and departure above stay estimates."
+airports_within_radius:
+  # Every field a private jet could physically use within the radius.
+  # Heliports, seaplane bases, balloonports and closed fields are excluded -
+  # a business jet cannot use any of them. Everything else is kept, including
+  # every small strip with no scheduled service: those are the point of the sweep.
+  radius_miles: 40
+  centre_airport: KCRE
+  count: 14
+  jet_capable_count: 4
+  light_jet_capable_count: 2
+  no_scheduled_service_count: 13
+  source: "OurAirports (CC0) airports.csv + runways.csv"
+  list:
+    - airport_code: KCRE
+      icao: KCRE
+      iata: CRE
+      name: "Grand Strand Airport"
+      city: "North Myrtle Beach"
+      region: US-SC
+      country: US
+      type: medium_airport
+      elevation_ft: 32
+      longest_runway_ft: 5997
+      longest_runway_surface: ASP
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: jet_capable
+      lat: 33.8117
+      lon: -78.7239
+      distance_mi: 0.0
+      bearing: N
+      tracked_plane_presence_in_window: []
+    - airport_code: SC21
+      icao: null
+      iata: null
+      name: "Myrtle Beach Hardee Airpark"
+      city: Loris
+      region: US-SC
+      country: US
+      type: small_airport
+      elevation_ft: 45
+      longest_runway_ft: 3300
+      longest_runway_surface: TURF
+      runway_count: 2
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 33.9429
+      lon: -78.82898
+      distance_mi: 10.9
+      bearing: NNW
+      tracked_plane_presence_in_window: []
+    - airport_code: KMYR
+      icao: KMYR
+      iata: MYR
+      name: "Myrtle Beach International Airport"
+      city: "Myrtle Beach"
+      region: US-SC
+      country: US
+      type: large_airport
+      elevation_ft: 25
+      longest_runway_ft: 9503
+      longest_runway_surface: ASP
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: true
+      jet_capability: jet_capable
+      lat: 33.6797
+      lon: -78.9283
+      distance_mi: 14.9
+      bearing: SW
+      tracked_plane_presence_in_window: []
+    - airport_code: 81NC
+      icao: null
+      iata: null
+      name: "Cox Field"
+      city: "Tabor City"
+      region: US-NC
+      country: US
+      type: small_airport
+      elevation_ft: 50
+      longest_runway_ft: 3300
+      longest_runway_surface: TURF-GRVL-G
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 34.04083
+      lon: -78.74
+      distance_mi: 15.9
+      bearing: N
+      tracked_plane_presence_in_window: []
+    - airport_code: K60J
+      icao: null
+      iata: null
+      name: "Odell Williamson Municipal Airport"
+      city: "Ocean Isle Beach"
+      region: US-NC
+      country: US
+      type: small_airport
+      elevation_ft: 32
+      longest_runway_ft: 4198
+      longest_runway_surface: ASP
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: light_jet_capable
+      lat: 33.9085
+      lon: -78.4367
+      distance_mi: 17.8
+      bearing: ENE
+      tracked_plane_presence_in_window: []
+    - airport_code: US-4621
+      icao: null
+      iata: null
+      name: "Carolina Bay Airport"
+      city: Clarendon
+      region: US-NC
+      country: US
+      type: small_airport
+      elevation_ft: 50
+      longest_runway_ft: null
+      longest_runway_surface: null
+      runway_count: 0
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: unknown
+      lat: 34.09722
+      lon: -78.71972
+      distance_mi: 19.7
+      bearing: N
+      tracked_plane_presence_in_window: []
+    - airport_code: K5J9
+      icao: null
+      iata: null
+      name: "Twin City Airport"
+      city: Loris
+      region: US-SC
+      country: US
+      type: small_airport
+      elevation_ft: 99
+      longest_runway_ft: 3694
+      longest_runway_surface: ASP
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: marginal
+      lat: 34.0884
+      lon: -78.8649
+      distance_mi: 20.8
+      bearing: NNW
+      tracked_plane_presence_in_window: []
+    - airport_code: KHYW
+      icao: null
+      iata: null
+      name: "Conway Horry County Airport"
+      city: Conway
+      region: US-SC
+      country: US
+      type: small_airport
+      elevation_ft: 35
+      longest_runway_ft: 4401
+      longest_runway_surface: ASP
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: light_jet_capable
+      lat: 33.8285
+      lon: -79.1222
+      distance_mi: 22.9
+      bearing: W
+      tracked_plane_presence_in_window: []
+    - airport_code: 58SC
+      icao: null
+      iata: null
+      name: "Cherry Grove Airport"
+      city: "Green Sea"
+      region: US-SC
+      country: US
+      type: small_airport
+      elevation_ft: 104
+      longest_runway_ft: 1727
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 34.20486
+      lon: -78.96694
+      distance_mi: 30.5
+      bearing: NNW
+      tracked_plane_presence_in_window: []
+    - airport_code: S79
+      icao: null
+      iata: null
+      name: "Green Sea Airport"
+      city: "Green Sea"
+      region: US-SC
+      country: US
+      type: small_airport
+      elevation_ft: 95
+      longest_runway_ft: 3600
+      longest_runway_surface: TURF-G
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 34.18622
+      lon: -79.02004
+      distance_mi: 30.9
+      bearing: NNW
+      tracked_plane_presence_in_window: []
+    - airport_code: NC43
+      icao: null
+      iata: null
+      name: "Bear Pen Airport"
+      city: Supply
+      region: US-NC
+      country: US
+      type: small_airport
+      elevation_ft: 63
+      longest_runway_ft: 6000
+      longest_runway_surface: TURF
+      runway_count: 2
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 34.1252
+      lon: -78.3381
+      distance_mi: 31.0
+      bearing: NE
+      tracked_plane_presence_in_window: []
+    - airport_code: KCPC
+      icao: null
+      iata: null
+      name: "Columbus County Municipal Airport"
+      city: Whiteville
+      region: US-NC
+      country: US
+      type: small_airport
+      elevation_ft: 99
+      longest_runway_ft: 5500
+      longest_runway_surface: ASP
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: jet_capable
+      lat: 34.2729
+      lon: -78.715
+      distance_mi: 31.9
+      bearing: N
+      tracked_plane_presence_in_window: []
+    - airport_code: 89NC
+      icao: null
+      iata: null
+      name: "Strickland Field"
+      city: "Fair Bluff"
+      region: US-NC
+      country: US
+      type: small_airport
+      elevation_ft: 98
+      longest_runway_ft: 2642
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 34.2664
+      lon: -79.0236
+      distance_mi: 35.8
+      bearing: NNW
+      tracked_plane_presence_in_window: []
+    - airport_code: KSUT
+      icao: null
+      iata: null
+      name: "Cape Fear Regional Jetport / Howie Franklin Field Airport"
+      city: Southport
+      region: US-NC
+      country: US
+      type: small_airport
+      elevation_ft: 24
+      longest_runway_ft: 5505
+      longest_runway_surface: ASP
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: jet_capable
+      lat: 33.9293
+      lon: -78.075
+      distance_mi: 38.1
+      bearing: ENE
+      tracked_plane_presence_in_window: []
+tracked_plane_presence:
+  # Was any tracked aircraft on the ground at any field in the list above,
+  # inside the window? Three registers are searched and kept apart, strongest
+  # first. NEVER collapse them into one number.
+  window:
+    from: 2025-08-19
+    to: 2025-08-23
+    days_each_side: 2
+  any_found: false
+  egyptian_su_found: false
+  counts:
+    adsb_ground_contacts: 0
+    adsb_ground_contacts_egyptian_su: 0
+    flights_csv_stays: 0
+    flights_csv_stays_egyptian_su: 0
+    claimed_overlaps: 0
+  from_adsb_traces: []
+  from_flights_csv: []
+  from_overlaps_csv: []
+  just_outside_the_radius:
+    # A hard radius creates a cliff and a cliff hides evidence. These fields
+    # sit between 40 and 60 miles from the arrival airport. They are NOT counted
+    # as hits and must never be published as ones - they are here so a near miss
+    # is visible rather than silently dropped.
+    outer_radius_miles: 60.0
+    adsb_ground_contacts: []
+    flights_csv_stays: []
+    claimed_overlaps: []
+  coverage:
+    # AN EMPTY RESULT ABOVE IS NOT A FINDING UNLESS THIS SAYS THE DAYS WERE HELD.
+    # aircraft_days_needed = tails x days in the window. aircraft_days_held is
+    # how many of those this repo actually has a trace for. The rest were never
+    # pulled, or the networks heard nothing - the two are indistinguishable here.
+    aircraft_days_needed: 75
+    aircraft_days_held: 0
+    coverage_pct: 0.0
+    tails_with_no_trace_in_window:
+      - N102DZ
+      - N1098L
+      - N2100L
+      - N40JD
+      - N560TW
+      - N582MM
+      - N59906
+      - N872RA
+      - N888KG
+      - SU-BGM
+      - SU-BND
+      - SU-BTT
+      - SU-BTU
+      - SU-BTV
+      - T7-ELL
+    by_side:
+      following:
+        # FOLLOWING is the side the claim is about - the Egyptian SU- tails.
+        # This percentage is the one that decides whether an empty result means
+        # anything at all.
+        tails: 6
+        aircraft_days_needed: 30
+        aircraft_days_held: 0
+        coverage_pct: 0.0
+      kirk:
+        # KIRK-side coverage is what turns an ESTIMATED arrival into an
+        # OBSERVED one. Low here means the arrival times above stay estimates.
+        tails: 6
+        aircraft_days_needed: 30
+        aircraft_days_held: 0
+        coverage_pct: 0.0
+      n1098l:
+        # Other tracked aircraft. A DIFFERENT CLAIM - do not merge the threads.
+        tails: 3
+        aircraft_days_needed: 15
+        aircraft_days_held: 0
+        coverage_pct: 0.0
+counterargument:
+  - "ONE PAIRING IS NOT EVIDENCE. The claim under test is a repetition across many stops, and any single pairing has an innocent explanation a reader will find."
+  - "A field inside the radius is a field a jet COULD have used. Nothing here shows that anyone did use it, or that two aircraft on one ramp had any connection."
+  - "Maintenance is the strongest innocent explanation in this record: Duncan Aviation (Provo and Lincoln) and Yingling (Wichita) are Part 145 Falcon and Gulfstream shops, and a Falcon 7X sitting for weeks at one reads as a maintenance visit."
+  - "Transatlantic customs and fuel stops explain the recurring East Coast fields."
+  - "ERIKA'S SIDE IS THE WEAK SIDE. Her flight logs are reported erased, so any Erika pairing rests on the foreign aircraft's track plus a CLAIMED location for her. See /Planes/Erika-Flight-Logs-Erased."
+what_we_do_not_know:
+  - "Whether Charlie Kirk, Erika Kirk, or any TPUSA party actually flew to this event, or which aircraft they used. The arrival airport above is an inference from the venue city, not a record."
+  - "Whether the estimated arrival and departure times are within hours or within days of the truth, wherever observed_by_adsb is empty."
+  - "What the tracked aircraft were doing at any field they appear at. A trace proves presence, never purpose and never occupancy."
+  - "Whether the receiver networks simply did not hear an aircraft that was there. See the coverage block - an absence is not a finding."

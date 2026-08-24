@@ -1,0 +1,56 @@
+# GENERATED FILE - regenerate, do not hand-edit.
+#   node/python: apis/public_open_source/code/airports_near.py --only 20220705_tpusa_debate_night
+#   The prompt that governs this file: prompts/p_airports_near.md
+schema: ck.speaking.airports_near/1
+generated_utc: "2026-08-24T19:03:26Z"
+generated_by: site/docs/Planes/following/apis/public_open_source/code/airports_near.py
+page:
+  slug: 20220705_tpusa_debate_night
+  mdx: site/docs/Planes/following/speaking/20220705_tpusa_debate_night.mdx
+  yaml: site/docs/Planes/following/speaking/20220705_tpusa_debate_night.yaml
+  url: /Planes/following/speaking/20220705_tpusa_debate_night
+event:
+  title: "Charlie Kirk Debates Ben Carollo - Debate Night by TPUSA"
+  who: Charlie
+  attendee_class: CHARLIE_ONLY
+  charlie_present: "yes"
+  erika_present: not_documented
+  attendance_status: held_date_is_podcast_proxy
+  event_type: debate
+  dates:
+    raw: 2022-07-05
+    first_day: 2022-07-05
+    last_day: 2022-07-05
+    granularity: DAY
+    certainty: PODCAST_PROXY
+    # PODCAST_PROXY means the date is a podcast RELEASE date and the event was normally 0-7 days earlier. Never publish a same-day claim off one.
+  local_time:
+    raw: null
+    parsed_hhmm: null
+    basis: no_time_published
+    timezone: null
+    timezone_method: no_geocode
+  location:
+    city: UNKNOWN
+    state: null
+    country: USA
+    venue: "TPUSA Debate Night"
+    metro_area: UNKNOWN
+    geocode:
+      lat: null
+      lon: null
+      method: FAILED
+      matched: "city is UNKNOWN or AMBIGUOUS in tpusa_events.csv - not filled in from memory, on purpose"
+  source: "Charlie Kirk Show Apple Podcasts catalog"
+  source_url: site/docs/TPUSA/apple_podcast/current_apple_podcast.csv
+  days_before_sept10_2025: 1163
+arrival_airport:
+  resolved: false
+  reason: "The event has no geocodable city or no parseable date in tpusa_events.csv. Nothing downstream can be computed and nothing is guessed."
+airports_within_radius:
+  radius_miles: 40
+  count: 0
+  list: []
+tracked_plane_presence:
+  any_found: false
+  reason: "not searched - no coordinates"

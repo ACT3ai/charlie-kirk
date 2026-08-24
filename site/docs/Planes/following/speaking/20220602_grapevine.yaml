@@ -1,0 +1,2895 @@
+# GENERATED FILE - regenerate, do not hand-edit.
+#   node/python: apis/public_open_source/code/airports_near.py --only 20220602_grapevine
+#   The prompt that governs this file: prompts/p_airports_near.md
+schema: ck.speaking.airports_near/1
+generated_utc: "2026-08-24T19:03:26Z"
+generated_by: site/docs/Planes/following/apis/public_open_source/code/airports_near.py
+page:
+  slug: 20220602_grapevine
+  mdx: site/docs/Planes/following/speaking/20220602_grapevine.mdx
+  yaml: site/docs/Planes/following/speaking/20220602_grapevine.yaml
+  url: /Planes/following/speaking/20220602_grapevine
+event:
+  title: "Young Women's Leadership Summit 2022"
+  who: Charlie
+  attendee_class: CHARLIE_ONLY
+  charlie_present: "yes"
+  erika_present: not_documented
+  attendance_status: held
+  event_type: summit
+  dates:
+    raw: "2022-06-02 to 2022-06-04"
+    first_day: 2022-06-02
+    last_day: 2022-06-04
+    granularity: DAY
+    certainty: EVENT_DATE
+    # PODCAST_PROXY means the date is a podcast RELEASE date and the event was normally 0-7 days earlier. Never publish a same-day claim off one.
+  local_time:
+    raw: null
+    parsed_hhmm: null
+    basis: no_time_published
+    timezone: America/Chicago
+    timezone_method: timezonefinder
+  location:
+    city: Grapevine
+    state: TX
+    country: USA
+    venue: "Gaylord Texan Resort & Convention Center, Grapevine, TX"
+    metro_area: "Dallas-Fort Worth TX"
+    geocode:
+      lat: 32.93497
+      lon: -97.07591
+      method: us_census_2024_gazetteer
+      matched: "Grapevine city"
+  source: "TPUSA YWLS Day 1 YouTube 3 June 2022; @charliekirk11 2 June 2022 ('2,500+ … in Dallas')"
+  source_url: "https://www.youtube.com/watch?v=Lz5iJ5EvBzE"
+  days_before_sept10_2025: 1196
+search:
+  radius_miles: 40
+  window_days_each_side: 2
+  window_from: 2022-05-31
+  window_to: 2022-06-06
+  window_day_count: 7
+  centre: KDFW
+  tails_searched:
+    - N102DZ
+    - N1098L
+    - N2100L
+    - N40JD
+    - N560TW
+    - N582MM
+    - N59906
+    - N872RA
+    - N888KG
+    - SU-BGM
+    - SU-BND
+    - SU-BTT
+    - SU-BTU
+    - SU-BTV
+    - T7-ELL
+  sources_searched:
+    - "recovered ADS-B traces on disk (site/docs/Planes/<TAIL>/data/recovered/)"
+    - site/docs/Planes/following/flights.csv
+    - site/docs/Planes/following/overlaps.csv
+arrival_airport:
+  # ESTIMATE. No published Kirk-side flight record exists for this event unless
+  # the observed_by_adsb block below is non-empty. This is arithmetic on the
+  # event time, not a landing record.
+  chosen_airport:
+    airport_code: KDFW
+    icao: KDFW
+    iata: DFW
+    name: "Dallas Fort Worth International Airport"
+    city: "Dallas-Fort Worth"
+    region: US-TX
+    country: US
+    type: large_airport
+    elevation_ft: 607
+    longest_runway_ft: 13401
+    longest_runway_surface: CON
+    runway_count: 7
+    runways_lighted: true
+    scheduled_service: true
+    jet_capability: jet_capable
+    lat: 32.8968
+    lon: -97.038
+    distance_mi: 3.4
+    bearing: SE
+  distance_from_event_city_mi: 3.4
+  selection_basis: CURATED_CSV_AND_COMPUTED_NEAREST_JET_FIELD_AGREE
+  curated_value_in_tpusa_events_csv:
+    airport_code: KDFW
+    airport_name: "Dallas/Fort Worth International"
+    distance_mi: 5
+  computed_nearest_jet_capable_field:
+    airport_code: KDFW
+    name: "Dallas Fort Worth International Airport"
+    distance_mi: 3.4
+    longest_runway_ft: 13401
+  estimated_arrival:
+    date: 2022-06-02
+    local_time: "16:00"
+    timezone: America/Chicago
+    utc: "2022-06-02T21:00:00Z"
+    basis: "no event time published; 19:00 local assumed for arithmetic only; minus 3h"
+    confidence: low
+  estimated_departure:
+    date: 2022-06-04
+    local_time: "23:00"
+    timezone: America/Chicago
+    utc: "2022-06-05T04:00:00Z"
+    basis: "event end + 4h (speech, exit, wheels-up)"
+    confidence: low
+  observed_by_adsb:
+    - tail: N888KG
+      airport_code: KDAL
+      date_utc: 2022-06-01
+      gap_days_from_event: -1
+      on_ground_first_local: "2022-05-31 19:00:00 CDT"
+      on_ground_last_local: "2022-05-31 19:03:51 CDT"
+      on_ground_first_utc: "2022-06-01T00:00:00Z"
+      on_ground_last_utc: "2022-06-01T00:03:51.500000Z"
+      ground_minutes: 3.9
+      adsb_sources:
+        - adsbexchange-samples
+      # OBSERVED, not estimated. This is a real ground contact by a Kirk-side airframe. It still does not establish who was aboard.
+airports_within_radius:
+  # Every field a private jet could physically use within the radius.
+  # Heliports, seaplane bases, balloonports and closed fields are excluded -
+  # a business jet cannot use any of them. Everything else is kept, including
+  # every small strip with no scheduled service: those are the point of the sweep.
+  radius_miles: 40
+  centre_airport: KDFW
+  count: 132
+  jet_capable_count: 15
+  light_jet_capable_count: 3
+  no_scheduled_service_count: 129
+  source: "OurAirports (CC0) airports.csv + runways.csv"
+  list:
+    - airport_code: KDFW
+      icao: KDFW
+      iata: DFW
+      name: "Dallas Fort Worth International Airport"
+      city: "Dallas-Fort Worth"
+      region: US-TX
+      country: US
+      type: large_airport
+      elevation_ft: 607
+      longest_runway_ft: 13401
+      longest_runway_surface: CON
+      runway_count: 7
+      runways_lighted: true
+      scheduled_service: true
+      jet_capability: jet_capable
+      lat: 32.8968
+      lon: -97.038
+      distance_mi: 0.0
+      bearing: N
+      tracked_plane_presence_in_window: []
+    - airport_code: TS00
+      icao: null
+      iata: null
+      name: "Fuller Airport"
+      city: "Fort Worth"
+      region: US-TX
+      country: US
+      type: small_airport
+      elevation_ft: 490
+      longest_runway_ft: 1500
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 32.78731
+      lon: -97.1805
+      distance_mi: 11.2
+      bearing: SW
+      tracked_plane_presence_in_window: []
+    - airport_code: KDAL
+      icao: KDAL
+      iata: DAL
+      name: "Dallas Love Field"
+      city: Dallas
+      region: US-TX
+      country: US
+      type: large_airport
+      elevation_ft: 487
+      longest_runway_ft: 8800
+      longest_runway_surface: CON
+      runway_count: 2
+      runways_lighted: true
+      scheduled_service: true
+      jet_capability: jet_capable
+      lat: 32.84478
+      lon: -96.84765
+      distance_mi: 11.6
+      bearing: ESE
+      tracked_plane_presence_in_window:
+        - "N888KG on 2022-06-01 - ADS-B ground contact, 3.9 min, 1 archive(s)"
+    - airport_code: 4TX2
+      icao: null
+      iata: null
+      name: "Stage Coach Hills Airport"
+      city: Keller
+      region: US-TX
+      country: US
+      type: small_airport
+      elevation_ft: 684
+      longest_runway_ft: 2700
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 32.96669
+      lon: -97.2327
+      distance_mi: 12.3
+      bearing: WNW
+      tracked_plane_presence_in_window: []
+    - airport_code: KADS
+      icao: KADS
+      iata: ADS
+      name: "Addison Airport"
+      city: Dallas
+      region: US-TX
+      country: US
+      type: small_airport
+      elevation_ft: 644
+      longest_runway_ft: 7203
+      longest_runway_surface: ASP
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: jet_capable
+      lat: 32.9686
+      lon: -96.8364
+      distance_mi: 12.7
+      bearing: ENE
+      tracked_plane_presence_in_window: []
+    - airport_code: KGPM
+      icao: KGPM
+      iata: null
+      name: "Grand Prairie Municipal Airport"
+      city: "Grand Prairie"
+      region: US-TX
+      country: US
+      type: small_airport
+      elevation_ft: 588
+      longest_runway_ft: 4001
+      longest_runway_surface: CON
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: light_jet_capable
+      lat: 32.6988
+      lon: -97.0469
+      distance_mi: 13.7
+      bearing: S
+      tracked_plane_presence_in_window: []
+    - airport_code: 7TX4
+      icao: null
+      iata: null
+      name: "Hillcrest Airport"
+      city: Keller
+      region: US-TX
+      country: US
+      type: small_airport
+      elevation_ft: 710
+      longest_runway_ft: 2000
+      longest_runway_surface: ASPH
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 32.9668
+      lon: -97.2753
+      distance_mi: 14.6
+      bearing: WNW
+      tracked_plane_presence_in_window: []
+    - airport_code: KF69
+      icao: null
+      iata: null
+      name: "Air Park Dallas Airport"
+      city: Dallas
+      region: US-TX
+      country: US
+      type: small_airport
+      elevation_ft: 695
+      longest_runway_ft: 3080
+      longest_runway_surface: ASP
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: marginal
+      lat: 33.0235
+      lon: -96.8369
+      distance_mi: 14.6
+      bearing: NE
+      tracked_plane_presence_in_window: []
+    - airport_code: K52F
+      icao: null
+      iata: null
+      name: "Aero Valley Airport"
+      city: Roanoke
+      region: US-TX
+      country: US
+      type: small_airport
+      elevation_ft: 643
+      longest_runway_ft: 3500
+      longest_runway_surface: ASP
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: marginal
+      lat: 33.05157
+      lon: -97.23205
+      distance_mi: 15.5
+      bearing: NW
+      tracked_plane_presence_in_window: []
+    - airport_code: TX22
+      icao: null
+      iata: null
+      name: "Leroux Airport"
+      city: Argyle
+      region: US-TX
+      country: US
+      type: small_airport
+      elevation_ft: 670
+      longest_runway_ft: 2380
+      longest_runway_surface: TURF
+      runway_count: 2
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 33.1018
+      lon: -97.155
+      distance_mi: 15.7
+      bearing: NNW
+      tracked_plane_presence_in_window: []
+    - airport_code: 30F
+      icao: null
+      iata: null
+      name: "Lakeview Airport"
+      city: "Lake Dallas"
+      region: US-TX
+      country: US
+      type: small_airport
+      elevation_ft: 535
+      longest_runway_ft: 2815
+      longest_runway_surface: TURF-F
+      runway_count: 2
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 33.1321
+      lon: -97.0142
+      distance_mi: 16.3
+      bearing: N
+      tracked_plane_presence_in_window: []
+    - airport_code: KGKY
+      icao: null
+      iata: null
+      name: "Arlington Municipal Airport"
+      city: Arlington
+      region: US-TX
+      country: US
+      type: small_airport
+      elevation_ft: 628
+      longest_runway_ft: 6080
+      longest_runway_surface: CON
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: jet_capable
+      lat: 32.6639
+      lon: -97.0943
+      distance_mi: 16.4
+      bearing: SSW
+      tracked_plane_presence_in_window: []
+    - airport_code: KAFW
+      icao: KAFW
+      iata: AFW
+      name: "Perot Field/Fort Worth Alliance Airport"
+      city: "Fort Worth"
+      region: US-TX
+      country: US
+      type: medium_airport
+      elevation_ft: 722
+      longest_runway_ft: 11125
+      longest_runway_surface: CONC-GRVD
+      runway_count: 2
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: jet_capable
+      lat: 32.99044
+      lon: -97.31947
+      distance_mi: 17.6
+      bearing: WNW
+      tracked_plane_presence_in_window: []
+    - airport_code: KRBD
+      icao: KRBD
+      iata: RBD
+      name: "Dallas Executive Airport"
+      city: Dallas
+      region: US-TX
+      country: US
+      type: small_airport
+      elevation_ft: 660
+      longest_runway_ft: 7136
+      longest_runway_surface: PEM
+      runway_count: 2
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: jet_capable
+      lat: 32.6809
+      lon: -96.8682
+      distance_mi: 17.9
+      bearing: SSE
+      tracked_plane_presence_in_window: []
+    - airport_code: 2TS0
+      icao: null
+      iata: null
+      name: "Myska Field"
+      city: Denton
+      region: US-TX
+      country: US
+      type: small_airport
+      elevation_ft: 595
+      longest_runway_ft: 1250
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 33.15471
+      lon: -97.13882
+      distance_mi: 18.8
+      bearing: NNW
+      tracked_plane_presence_in_window: []
+    - airport_code: US-5083
+      icao: null
+      iata: null
+      name: "Blue Jay Airfield"
+      city: Justin
+      region: US-TX
+      country: US
+      type: small_airport
+      elevation_ft: 668
+      longest_runway_ft: 1637
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 33.09045
+      lon: -97.26787
+      distance_mi: 18.9
+      bearing: NW
+      tracked_plane_presence_in_window: []
+    - airport_code: 5TX0
+      icao: null
+      iata: null
+      name: "Hidden Valley Airpark"
+      city: "Lake Dallas"
+      region: US-TX
+      country: US
+      type: small_airport
+      elevation_ft: 611
+      longest_runway_ft: 2600
+      longest_runway_surface: ASPH
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 33.1735
+      lon: -97.0514
+      distance_mi: 19.1
+      bearing: N
+      tracked_plane_presence_in_window: []
+    - airport_code: KFTW
+      icao: KFTW
+      iata: FTW
+      name: "Fort Worth Meacham International Airport"
+      city: "Fort Worth"
+      region: US-TX
+      country: US
+      type: medium_airport
+      elevation_ft: 710
+      longest_runway_ft: 7502
+      longest_runway_surface: CON
+      runway_count: 2
+      runways_lighted: true
+      scheduled_service: true
+      jet_capability: jet_capable
+      lat: 32.81992
+      lon: -97.36082
+      distance_mi: 19.5
+      bearing: WSW
+      tracked_plane_presence_in_window: []
+    - airport_code: 0TS1
+      icao: null
+      iata: null
+      name: "Dooley Airport"
+      city: Justin
+      region: US-TX
+      country: US
+      type: small_airport
+      elevation_ft: 650
+      longest_runway_ft: 1750
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 33.09873
+      lon: -97.27252
+      distance_mi: 19.5
+      bearing: NW
+      tracked_plane_presence_in_window: []
+    - airport_code: 4TX4
+      icao: null
+      iata: null
+      name: "Birk Airport"
+      city: Kennedale
+      region: US-TX
+      country: US
+      type: small_airport
+      elevation_ft: 700
+      longest_runway_ft: 2000
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 32.6279
+      lon: -97.192
+      distance_mi: 20.6
+      bearing: SSW
+      tracked_plane_presence_in_window: []
+    - airport_code: KT67
+      icao: null
+      iata: null
+      name: "Hicks Air Field"
+      city: "Fort Worth"
+      region: US-TX
+      country: US
+      type: small_airport
+      elevation_ft: 855
+      longest_runway_ft: 3740
+      longest_runway_surface: ASP
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: marginal
+      lat: 32.93053
+      lon: -97.41233
+      distance_mi: 21.8
+      bearing: W
+      tracked_plane_presence_in_window: []
+    - airport_code: US-5810
+      icao: null
+      iata: null
+      name: "JCS Airport"
+      city: Justin
+      region: US-TX
+      country: US
+      type: small_airport
+      elevation_ft: 738
+      longest_runway_ft: null
+      longest_runway_surface: null
+      runway_count: 0
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: unknown
+      lat: 33.09126
+      lon: -97.33378
+      distance_mi: 21.8
+      bearing: NW
+      tracked_plane_presence_in_window: []
+    - airport_code: 3T6
+      icao: null
+      iata: null
+      name: "Clark Airport"
+      city: Justin
+      region: US-TX
+      country: US
+      type: small_airport
+      elevation_ft: 705
+      longest_runway_ft: 1800
+      longest_runway_surface: ASPH-F
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 33.1335
+      lon: -97.2967
+      distance_mi: 22.2
+      bearing: NW
+      tracked_plane_presence_in_window: []
+    - airport_code: XA00
+      icao: null
+      iata: null
+      name: "Prose Field"
+      city: Justin
+      region: US-TX
+      country: US
+      type: small_airport
+      elevation_ft: 685
+      longest_runway_ft: 1660
+      longest_runway_surface: TURF-G
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 33.14813
+      lon: -97.28
+      distance_mi: 22.3
+      bearing: NW
+      tracked_plane_presence_in_window: []
+    - airport_code: 16X
+      icao: null
+      iata: null
+      name: "Propwash Airport"
+      city: Justin
+      region: US-TX
+      country: US
+      type: small_airport
+      elevation_ft: 800
+      longest_runway_ft: 3000
+      longest_runway_surface: ASPH-F
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: marginal
+      lat: 33.0807
+      lon: -97.3589
+      distance_mi: 22.5
+      bearing: NW
+      tracked_plane_presence_in_window: []
+    - airport_code: KDTO
+      icao: null
+      iata: null
+      name: "Denton Enterprise Airport"
+      city: Denton
+      region: US-TX
+      country: US
+      type: small_airport
+      elevation_ft: 643
+      longest_runway_ft: 7002
+      longest_runway_surface: ASP
+      runway_count: 2
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: jet_capable
+      lat: 33.20177
+      lon: -97.19798
+      distance_mi: 23.0
+      bearing: NNW
+      tracked_plane_presence_in_window: []
+    - airport_code: 00TS
+      icao: null
+      iata: null
+      name: "Alpine Range Airport"
+      city: Everman
+      region: US-TX
+      country: US
+      type: small_airport
+      elevation_ft: 670
+      longest_runway_ft: 1200
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 32.6076
+      lon: -97.242
+      distance_mi: 23.2
+      bearing: SSW
+      tracked_plane_presence_in_window: []
+    - airport_code: 7TS4
+      icao: null
+      iata: null
+      name: "Hicks Airport"
+      city: Ponder
+      region: US-TX
+      country: US
+      type: small_airport
+      elevation_ft: 725
+      longest_runway_ft: 2400
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 33.1832
+      lon: -97.2545
+      distance_mi: 23.4
+      bearing: NNW
+      tracked_plane_presence_in_window: []
+    - airport_code: US-7564
+      icao: null
+      iata: null
+      name: "Freedom Airport"
+      city: "New Fairview"
+      region: US-TX
+      country: US
+      type: small_airport
+      elevation_ft: 840
+      longest_runway_ft: 2500
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 33.07283
+      lon: -97.39834
+      distance_mi: 24.2
+      bearing: WNW
+      tracked_plane_presence_in_window: []
+    - airport_code: 05TS
+      icao: null
+      iata: null
+      name: "Dew Drop Airport"
+      city: Justin
+      region: US-TX
+      country: US
+      type: small_airport
+      elevation_ft: 750
+      longest_runway_ft: 1700
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 33.1293
+      lon: -97.3586
+      distance_mi: 24.6
+      bearing: NW
+      tracked_plane_presence_in_window: []
+    - airport_code: 2TX7
+      icao: null
+      iata: null
+      name: "JW Airport"
+      city: Justin
+      region: US-TX
+      country: US
+      type: small_airport
+      elevation_ft: 875
+      longest_runway_ft: 2300
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 33.09347
+      lon: -97.39634
+      distance_mi: 24.8
+      bearing: WNW
+      tracked_plane_presence_in_window: []
+    - airport_code: KNFW
+      icao: KNFW
+      iata: FWH
+      name: "NAS Fort Worth JRB / Carswell Field"
+      city: "Fort Worth"
+      region: US-TX
+      country: US
+      type: medium_airport
+      elevation_ft: 650
+      longest_runway_ft: 11999
+      longest_runway_surface: CON
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: jet_capable
+      lat: 32.7692
+      lon: -97.4415
+      distance_mi: 25.0
+      bearing: WSW
+      tracked_plane_presence_in_window: []
+    - airport_code: 6TX7
+      icao: null
+      iata: null
+      name: "Flying L Airpark"
+      city: Mansfield
+      region: US-TX
+      country: US
+      type: small_airport
+      elevation_ft: 680
+      longest_runway_ft: 2600
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 32.5376
+      lon: -97.1308
+      distance_mi: 25.4
+      bearing: SSW
+      tracked_plane_presence_in_window: []
+    - airport_code: TX91
+      icao: null
+      iata: null
+      name: "Madeira Airpark"
+      city: Garland
+      region: US-TX
+      country: US
+      type: small_airport
+      elevation_ft: 450
+      longest_runway_ft: 1100
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 32.9076
+      lon: -96.5969
+      distance_mi: 25.6
+      bearing: E
+      tracked_plane_presence_in_window: []
+    - airport_code: 3TX7
+      icao: null
+      iata: null
+      name: "Flying P Airport"
+      city: Justin
+      region: US-TX
+      country: US
+      type: small_airport
+      elevation_ft: 805
+      longest_runway_ft: 2800
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 33.1408
+      lon: -97.3711
+      distance_mi: 25.6
+      bearing: NW
+      tracked_plane_presence_in_window: []
+    - airport_code: TS71
+      icao: null
+      iata: null
+      name: "Flying B Ranch Airport"
+      city: Ovilla
+      region: US-TX
+      country: US
+      type: small_airport
+      elevation_ft: 780
+      longest_runway_ft: 2400
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 32.5279
+      lon: -96.9439
+      distance_mi: 26.1
+      bearing: SSE
+      tracked_plane_presence_in_window: []
+    - airport_code: K9F9
+      icao: null
+      iata: null
+      name: "Sycamore Strip"
+      city: "Fort Worth"
+      region: US-TX
+      country: US
+      type: small_airport
+      elevation_ft: 760
+      longest_runway_ft: 3375
+      longest_runway_surface: ASP
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: marginal
+      lat: 32.6285
+      lon: -97.3536
+      distance_mi: 26.1
+      bearing: SW
+      tracked_plane_presence_in_window: []
+    - airport_code: 7XA2
+      icao: null
+      iata: null
+      name: "Sagebrush Airport"
+      city: Justin
+      region: US-TX
+      country: US
+      type: small_airport
+      elevation_ft: 810
+      longest_runway_ft: 2900
+      longest_runway_surface: null
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 33.14873
+      lon: -97.37399
+      distance_mi: 26.1
+      bearing: NW
+      tracked_plane_presence_in_window: []
+    - airport_code: 45TE
+      icao: null
+      iata: null
+      name: "Deussen Field"
+      city: Ponder
+      region: US-TX
+      country: US
+      type: small_airport
+      elevation_ft: 790
+      longest_runway_ft: 2000
+      longest_runway_surface: TURF-G
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 33.1918
+      lon: -97.32444
+      distance_mi: 26.3
+      bearing: NW
+      tracked_plane_presence_in_window: []
+    - airport_code: 47TA
+      icao: null
+      iata: null
+      name: "Pleasure Field"
+      city: Prosper
+      region: US-TX
+      country: US
+      type: small_airport
+      elevation_ft: 604
+      longest_runway_ft: 2540
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 33.256
+      lon: -96.8853
+      distance_mi: 26.3
+      bearing: NNE
+      tracked_plane_presence_in_window: []
+    - airport_code: 7TS0
+      icao: null
+      iata: null
+      name: "Fairview Airport"
+      city: Rhome
+      region: US-TX
+      country: US
+      type: small_airport
+      elevation_ft: 920
+      longest_runway_ft: 3300
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 33.09444
+      lon: -97.42731
+      distance_mi: 26.4
+      bearing: WNW
+      tracked_plane_presence_in_window: []
+    - airport_code: 4TX8
+      icao: null
+      iata: null
+      name: "Addington Field"
+      city: Krum
+      region: US-TX
+      country: US
+      type: small_airport
+      elevation_ft: 705
+      longest_runway_ft: 2600
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 33.2487
+      lon: -97.2239
+      distance_mi: 26.6
+      bearing: NNW
+      tracked_plane_presence_in_window: []
+    - airport_code: K4T2
+      icao: null
+      iata: null
+      name: "Kenneth Copeland Airport"
+      city: "Fort Worth"
+      region: US-TX
+      country: US
+      type: small_airport
+      elevation_ft: 688
+      longest_runway_ft: 5943
+      longest_runway_surface: CON
+      runway_count: 2
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: jet_capable
+      lat: 32.9773
+      lon: -97.4884
+      distance_mi: 26.7
+      bearing: WNW
+      tracked_plane_presence_in_window: []
+    - airport_code: 2TS6
+      icao: null
+      iata: null
+      name: "Eagle's Nest Estates Airport"
+      city: Midlothian
+      region: US-TX
+      country: US
+      type: small_airport
+      elevation_ft: 780
+      longest_runway_ft: 3200
+      longest_runway_surface: CONC
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: marginal
+      lat: 32.5126
+      lon: -96.92669
+      distance_mi: 27.3
+      bearing: SSE
+      tracked_plane_presence_in_window: []
+    - airport_code: KT31
+      icao: null
+      iata: null
+      name: "Aero Country Airport"
+      city: McKinney
+      region: US-TX
+      country: US
+      type: small_airport
+      elevation_ft: 792
+      longest_runway_ft: 4305
+      longest_runway_surface: COP
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 33.2085
+      lon: -96.7422
+      distance_mi: 27.5
+      bearing: NE
+      tracked_plane_presence_in_window: []
+    - airport_code: KFWS
+      icao: null
+      iata: null
+      name: "Fort Worth Spinks Airport"
+      city: "Fort Worth"
+      region: US-TX
+      country: US
+      type: small_airport
+      elevation_ft: 700
+      longest_runway_ft: 6002
+      longest_runway_surface: ASP
+      runway_count: 2
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: jet_capable
+      lat: 32.5652
+      lon: -97.3081
+      distance_mi: 27.8
+      bearing: SW
+      tracked_plane_presence_in_window: []
+    - airport_code: 4TA1
+      icao: null
+      iata: null
+      name: "Warschun Ranch Airport"
+      city: Denton
+      region: US-TX
+      country: US
+      type: small_airport
+      elevation_ft: 600
+      longest_runway_ft: 1800
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 33.30239
+      lon: -97.11318
+      distance_mi: 28.4
+      bearing: N
+      tracked_plane_presence_in_window: []
+    - airport_code: TA02
+      icao: null
+      iata: null
+      name: "Howard Field"
+      city: Rhome
+      region: US-TX
+      country: US
+      type: small_airport
+      elevation_ft: 960
+      longest_runway_ft: 2450
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 33.1029
+      lon: -97.4642
+      distance_mi: 28.5
+      bearing: WNW
+      tracked_plane_presence_in_window: []
+    - airport_code: TE81
+      icao: null
+      iata: null
+      name: "Smither Field"
+      city: Denton
+      region: US-TX
+      country: US
+      type: small_airport
+      elevation_ft: 655
+      longest_runway_ft: 2400
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 33.3097
+      lon: -97.0928
+      distance_mi: 28.7
+      bearing: N
+      tracked_plane_presence_in_window: []
+    - airport_code: KLNC
+      icao: null
+      iata: null
+      name: "Lancaster Airport"
+      city: Lancaster
+      region: US-TX
+      country: US
+      type: small_airport
+      elevation_ft: 501
+      longest_runway_ft: 6500
+      longest_runway_surface: ASP
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: jet_capable
+      lat: 32.57756
+      lon: -96.71749
+      distance_mi: 28.9
+      bearing: SE
+      tracked_plane_presence_in_window: []
+    - airport_code: XA10
+      icao: null
+      iata: null
+      name: "Ponderosa Field"
+      city: Ponder
+      region: US-TX
+      country: US
+      type: small_airport
+      elevation_ft: 840
+      longest_runway_ft: 500
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 33.23206
+      lon: -97.33842
+      distance_mi: 29.0
+      bearing: NW
+      tracked_plane_presence_in_window: []
+    - airport_code: 3TX9
+      icao: null
+      iata: null
+      name: "Rafter J Airport"
+      city: Burleson
+      region: US-TX
+      country: US
+      type: small_airport
+      elevation_ft: 710
+      longest_runway_ft: 2800
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 32.5276
+      lon: -97.2808
+      distance_mi: 29.2
+      bearing: SSW
+      tracked_plane_presence_in_window: []
+    - airport_code: 2TE2
+      icao: null
+      iata: null
+      name: "Flying Oaks Airport"
+      city: Azle
+      region: US-TX
+      country: US
+      type: small_airport
+      elevation_ft: 720
+      longest_runway_ft: 2800
+      longest_runway_surface: TURF-G
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 32.82906
+      lon: -97.53489
+      distance_mi: 29.2
+      bearing: W
+      tracked_plane_presence_in_window: []
+    - airport_code: 8XA6
+      icao: null
+      iata: null
+      name: "Blackjack Field"
+      city: Aubrey
+      region: US-TX
+      country: US
+      type: small_airport
+      elevation_ft: 680
+      longest_runway_ft: 3500
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 33.31706
+      lon: -96.98
+      distance_mi: 29.2
+      bearing: N
+      tracked_plane_presence_in_window: []
+    - airport_code: 06XS
+      icao: null
+      iata: null
+      name: "Campbell Field"
+      city: Aubrey
+      region: US-TX
+      country: US
+      type: small_airport
+      elevation_ft: 546
+      longest_runway_ft: 1750
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 33.32293
+      lon: -97.04502
+      distance_mi: 29.4
+      bearing: N
+      tracked_plane_presence_in_window: []
+    - airport_code: XA72
+      icao: null
+      iata: null
+      name: "Stocker Airport"
+      city: Krum
+      region: US-TX
+      country: US
+      type: small_airport
+      elevation_ft: 770
+      longest_runway_ft: 2400
+      longest_runway_surface: TURF
+      runway_count: 2
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 33.2769
+      lon: -97.2894
+      distance_mi: 30.0
+      bearing: NNW
+      tracked_plane_presence_in_window: []
+    - airport_code: XS60
+      icao: null
+      iata: null
+      name: "Mustang Community Airfield"
+      city: Aubrey
+      region: US-TX
+      country: US
+      type: small_airport
+      elevation_ft: 605
+      longest_runway_ft: 1800
+      longest_runway_surface: TURF
+      runway_count: 2
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 33.3184
+      lon: -96.906
+      distance_mi: 30.1
+      bearing: NNE
+      tracked_plane_presence_in_window: []
+    - airport_code: 73TE
+      icao: null
+      iata: null
+      name: "Moore Private Airport"
+      city: Azle
+      region: US-TX
+      country: US
+      type: small_airport
+      elevation_ft: 670
+      longest_runway_ft: 2700
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 32.92658
+      lon: -97.55957
+      distance_mi: 30.3
+      bearing: W
+      tracked_plane_presence_in_window: []
+    - airport_code: TA47
+      icao: null
+      iata: null
+      name: "Richards Airport"
+      city: Krum
+      region: US-TX
+      country: US
+      type: small_airport
+      elevation_ft: 785
+      longest_runway_ft: 2600
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 33.3014
+      lon: -97.245
+      distance_mi: 30.4
+      bearing: NNW
+      tracked_plane_presence_in_window: []
+    - airport_code: 25XS
+      icao: null
+      iata: null
+      name: "Moonbow Field"
+      city: Waxahachie
+      region: US-TX
+      country: US
+      type: small_airport
+      elevation_ft: 650
+      longest_runway_ft: 2035
+      longest_runway_surface: CONC-G
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 32.4865
+      lon: -96.8464
+      distance_mi: 30.5
+      bearing: SSE
+      tracked_plane_presence_in_window: []
+    - airport_code: 5XA9
+      icao: null
+      iata: null
+      name: "Venable Airpark"
+      city: Aubrey
+      region: US-TX
+      country: US
+      type: small_airport
+      elevation_ft: 638
+      longest_runway_ft: 3040
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 33.33878
+      lon: -96.99705
+      distance_mi: 30.6
+      bearing: N
+      tracked_plane_presence_in_window: []
+    - airport_code: US-0487
+      icao: null
+      iata: null
+      name: "Mena Airport"
+      city: Lillian
+      region: US-TX
+      country: US
+      type: small_airport
+      elevation_ft: 639
+      longest_runway_ft: null
+      longest_runway_surface: null
+      runway_count: 0
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: unknown
+      lat: 32.46316
+      lon: -97.14986
+      distance_mi: 30.7
+      bearing: SSW
+      tracked_plane_presence_in_window: []
+    - airport_code: 6XS8
+      icao: null
+      iata: null
+      name: "Vultures Row Airport"
+      city: Sanger
+      region: US-TX
+      country: US
+      type: small_airport
+      elevation_ft: 710
+      longest_runway_ft: 1700
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 33.339
+      lon: -97.10296
+      distance_mi: 30.8
+      bearing: N
+      tracked_plane_presence_in_window: []
+    - airport_code: KJWY
+      icao: null
+      iata: null
+      name: "Mid-Way Regional Airport"
+      city: Midlothian/Waxahachie
+      region: US-TX
+      country: US
+      type: medium_airport
+      elevation_ft: 713
+      longest_runway_ft: 6500
+      longest_runway_surface: ASP
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: jet_capable
+      lat: 32.4587
+      lon: -96.9124
+      distance_mi: 31.1
+      bearing: SSE
+      tracked_plane_presence_in_window: []
+    - airport_code: KHQZ
+      icao: null
+      iata: null
+      name: "Mesquite Metro Airport"
+      city: Mesquite
+      region: US-TX
+      country: US
+      type: small_airport
+      elevation_ft: 447
+      longest_runway_ft: 5999
+      longest_runway_surface: CON
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: jet_capable
+      lat: 32.747
+      lon: -96.5304
+      distance_mi: 31.2
+      bearing: ESE
+      tracked_plane_presence_in_window: []
+    - airport_code: 88TT
+      icao: null
+      iata: null
+      name: "Shady Lane Ranch Airport"
+      city: "Pilot Point"
+      region: US-TX
+      country: US
+      type: small_airport
+      elevation_ft: 650
+      longest_runway_ft: 1250
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 33.35125
+      lon: -97.00119
+      distance_mi: 31.5
+      bearing: N
+      tracked_plane_presence_in_window: []
+    - airport_code: T76
+      icao: null
+      iata: null
+      name: "Rhome Meadows Airport"
+      city: Rhome
+      region: US-TX
+      country: US
+      type: small_airport
+      elevation_ft: 900
+      longest_runway_ft: 3700
+      longest_runway_surface: TURF-G
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 33.1493
+      lon: -97.4961
+      distance_mi: 31.8
+      bearing: WNW
+      tracked_plane_presence_in_window: []
+    - airport_code: 15TT
+      icao: null
+      iata: null
+      name: "Fordlane Flyers Airport"
+      city: Lucas
+      region: US-TX
+      country: US
+      type: small_airport
+      elevation_ft: 547
+      longest_runway_ft: 800
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 33.11638
+      lon: -96.55382
+      distance_mi: 31.9
+      bearing: ENE
+      tracked_plane_presence_in_window: []
+    - airport_code: US-58T
+      icao: null
+      iata: null
+      name: "Heritage Creek Airstrip"
+      city: Decatur
+      region: US-TX
+      country: US
+      type: small_airport
+      elevation_ft: 883
+      longest_runway_ft: 3000
+      longest_runway_surface: TURF-G
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 33.1687
+      lon: -97.4842
+      distance_mi: 32.0
+      bearing: NW
+      tracked_plane_presence_in_window: []
+    - airport_code: T58
+      icao: null
+      iata: null
+      name: "Ironhead Airport"
+      city: Sanger
+      region: US-TX
+      country: US
+      type: small_airport
+      elevation_ft: 715
+      longest_runway_ft: 2500
+      longest_runway_surface: TURF-G
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 33.3318
+      lon: -97.2303
+      distance_mi: 32.0
+      bearing: NNW
+      tracked_plane_presence_in_window: []
+    - airport_code: US-6831
+      icao: null
+      iata: null
+      name: "Flack Field"
+      city: Decatur
+      region: US-TX
+      country: US
+      type: small_airport
+      elevation_ft: 778
+      longest_runway_ft: 2111
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 33.11346
+      lon: -97.52805
+      distance_mi: 32.1
+      bearing: WNW
+      tracked_plane_presence_in_window: []
+    - airport_code: KTKI
+      icao: KTKI
+      iata: DTX
+      name: "McKinney National Airport"
+      city: Dallas
+      region: US-TX
+      country: US
+      type: small_airport
+      elevation_ft: 585
+      longest_runway_ft: 7002
+      longest_runway_surface: ASP
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: jet_capable
+      lat: 33.1779
+      lon: -96.5905
+      distance_mi: 32.4
+      bearing: NE
+      tracked_plane_presence_in_window: []
+    - airport_code: US-0313
+      icao: null
+      iata: null
+      name: "Windmillcreek Airport"
+      city: Krum
+      region: US-TX
+      country: US
+      type: small_airport
+      elevation_ft: 800
+      longest_runway_ft: null
+      longest_runway_surface: null
+      runway_count: 0
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: unknown
+      lat: 33.30902
+      lon: -97.31128
+      distance_mi: 32.6
+      bearing: NNW
+      tracked_plane_presence_in_window: []
+    - airport_code: 51TE
+      icao: null
+      iata: null
+      name: "Barstool Ranch Airport"
+      city: Waxahachie
+      region: US-TX
+      country: US
+      type: small_airport
+      elevation_ft: 555
+      longest_runway_ft: 2080
+      longest_runway_surface: TURF-G
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 32.47242
+      lon: -96.78989
+      distance_mi: 32.7
+      bearing: SSE
+      tracked_plane_presence_in_window: []
+    - airport_code: TA87
+      icao: null
+      iata: null
+      name: "Carter-Norman Airport"
+      city: Boyd
+      region: US-TX
+      country: US
+      type: small_airport
+      elevation_ft: 737
+      longest_runway_ft: 1000
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 33.1056
+      lon: -97.54526
+      distance_mi: 32.7
+      bearing: WNW
+      tracked_plane_presence_in_window: []
+    - airport_code: XA34
+      icao: null
+      iata: null
+      name: "Allison Farm Airport"
+      city: Decatur
+      region: US-TX
+      country: US
+      type: small_airport
+      elevation_ft: 850
+      longest_runway_ft: 3000
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 33.2417
+      lon: -97.428
+      distance_mi: 32.8
+      bearing: NW
+      tracked_plane_presence_in_window: []
+    - airport_code: 75TS
+      icao: null
+      iata: null
+      name: "Venus Airport"
+      city: Venus
+      region: US-TX
+      country: US
+      type: small_airport
+      elevation_ft: 665
+      longest_runway_ft: 1600
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 32.4164
+      lon: -97.0919
+      distance_mi: 33.3
+      bearing: S
+      tracked_plane_presence_in_window: []
+    - airport_code: 79TS
+      icao: null
+      iata: null
+      name: "Tallows Field"
+      city: Celina
+      region: US-TX
+      country: US
+      type: small_airport
+      elevation_ft: 729
+      longest_runway_ft: 1000
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 33.31051
+      lon: -96.73808
+      distance_mi: 33.4
+      bearing: NNE
+      tracked_plane_presence_in_window: []
+    - airport_code: E58
+      icao: null
+      iata: null
+      name: "Bird Dog Airfield"
+      city: Krum
+      region: US-TX
+      country: US
+      type: small_airport
+      elevation_ft: 893
+      longest_runway_ft: null
+      longest_runway_surface: null
+      runway_count: 0
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: unknown
+      lat: 33.3074
+      lon: -97.3472
+      distance_mi: 33.5
+      bearing: NNW
+      tracked_plane_presence_in_window: []
+    - airport_code: T87
+      icao: null
+      iata: null
+      name: "Flying C Airport"
+      city: Sanger
+      region: US-TX
+      country: US
+      type: small_airport
+      elevation_ft: 775
+      longest_runway_ft: 1650
+      longest_runway_surface: TURF-F
+      runway_count: 2
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 33.3422
+      lon: -97.27
+      distance_mi: 33.6
+      bearing: NNW
+      tracked_plane_presence_in_window: []
+    - airport_code: US-0138
+      icao: null
+      iata: null
+      name: "Belcher Airport"
+      city: Sanger
+      region: US-TX
+      country: US
+      type: small_airport
+      elevation_ft: 709
+      longest_runway_ft: null
+      longest_runway_surface: null
+      runway_count: 0
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: unknown
+      lat: 33.38267
+      lon: -97.10751
+      distance_mi: 33.8
+      bearing: N
+      tracked_plane_presence_in_window: []
+    - airport_code: 61TE
+      icao: null
+      iata: null
+      name: "Kezer Air Ranch Airport"
+      city: Springtown
+      region: US-TX
+      country: US
+      type: small_airport
+      elevation_ft: 830
+      longest_runway_ft: 2400
+      longest_runway_surface: ASPH
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 32.9868
+      lon: -97.6197
+      distance_mi: 34.3
+      bearing: W
+      tracked_plane_presence_in_window: []
+    - airport_code: 2TX8
+      icao: null
+      iata: null
+      name: "Eagle's Landing Airport"
+      city: Krum
+      region: US-TX
+      country: US
+      type: small_airport
+      elevation_ft: 930
+      longest_runway_ft: 3300
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 33.30544
+      lon: -97.37892
+      distance_mi: 34.4
+      bearing: NW
+      tracked_plane_presence_in_window: []
+    - airport_code: TA18
+      icao: null
+      iata: null
+      name: "Sunset Airport"
+      city: Forney
+      region: US-TX
+      country: US
+      type: small_airport
+      elevation_ft: 444
+      longest_runway_ft: 2500
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 32.7071
+      lon: -96.4794
+      distance_mi: 35.0
+      bearing: ESE
+      tracked_plane_presence_in_window: []
+    - airport_code: KF46
+      icao: null
+      iata: null
+      name: "Rockwall Municipal Airport"
+      city: Rockwall
+      region: US-TX
+      country: US
+      type: small_airport
+      elevation_ft: 574
+      longest_runway_ft: 3373
+      longest_runway_surface: ASP
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: marginal
+      lat: 32.9306
+      lon: -96.4355
+      distance_mi: 35.0
+      bearing: E
+      tracked_plane_presence_in_window: []
+    - airport_code: 76T
+      icao: null
+      iata: null
+      name: "Bishop Airport"
+      city: Decatur
+      region: US-TX
+      country: US
+      type: small_airport
+      elevation_ft: 875
+      longest_runway_ft: 3730
+      longest_runway_surface: TURF-F
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 33.26895
+      lon: -97.45185
+      distance_mi: 35.1
+      bearing: NW
+      tracked_plane_presence_in_window: []
+    - airport_code: T13
+      icao: null
+      iata: null
+      name: "Dallas South Port Airport"
+      city: Palmer
+      region: US-TX
+      country: US
+      type: small_airport
+      elevation_ft: 474
+      longest_runway_ft: 3800
+      longest_runway_surface: TURF-G
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 32.48238
+      lon: -96.68597
+      distance_mi: 35.2
+      bearing: SE
+      tracked_plane_presence_in_window: []
+    - airport_code: TX32
+      icao: null
+      iata: null
+      name: "Bar V K Airport"
+      city: Bolivar
+      region: US-TX
+      country: US
+      type: small_airport
+      elevation_ft: 765
+      longest_runway_ft: 2900
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 33.3764
+      lon: -97.24342
+      distance_mi: 35.2
+      bearing: NNW
+      tracked_plane_presence_in_window: []
+    - airport_code: TS74
+      icao: null
+      iata: null
+      name: "Glass Airport"
+      city: Sanger
+      region: US-TX
+      country: US
+      type: small_airport
+      elevation_ft: 810
+      longest_runway_ft: 2300
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 33.3626
+      lon: -97.2945
+      distance_mi: 35.4
+      bearing: NNW
+      tracked_plane_presence_in_window: []
+    - airport_code: TA11
+      icao: null
+      iata: null
+      name: "Tsa Gliderport"
+      city: Midlothian
+      region: US-TX
+      country: US
+      type: small_airport
+      elevation_ft: 660
+      longest_runway_ft: 4300
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 32.3825
+      lon: -97.01185
+      distance_mi: 35.6
+      bearing: S
+      tracked_plane_presence_in_window: []
+    - airport_code: US-2995
+      icao: null
+      iata: null
+      name: "Dauenhauer Field"
+      city: Boyd
+      region: US-TX
+      country: US
+      type: small_airport
+      elevation_ft: 906
+      longest_runway_ft: 1900
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 33.01586
+      lon: -97.63488
+      distance_mi: 35.6
+      bearing: WNW
+      tracked_plane_presence_in_window: []
+    - airport_code: TE24
+      icao: null
+      iata: null
+      name: "Horseshoe Lake Airport"
+      city: Sanger
+      region: US-TX
+      country: US
+      type: small_airport
+      elevation_ft: 725
+      longest_runway_ft: 2675
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 33.3932
+      lon: -97.2053
+      distance_mi: 35.6
+      bearing: NNW
+      tracked_plane_presence_in_window: []
+    - airport_code: 5TA9
+      icao: null
+      iata: null
+      name: "Seagoville Airport"
+      city: Seagoville
+      region: US-TX
+      country: US
+      type: small_airport
+      elevation_ft: 415
+      longest_runway_ft: 2675
+      longest_runway_surface: GRVL-G
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 32.6099
+      lon: -96.5269
+      distance_mi: 35.7
+      bearing: ESE
+      tracked_plane_presence_in_window: []
+    - airport_code: 19TA
+      icao: null
+      iata: null
+      name: "Lagrone Ranch Airport"
+      city: "Mc Clendon-Chisholm"
+      region: US-TX
+      country: US
+      type: small_airport
+      elevation_ft: 567
+      longest_runway_ft: 3100
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 32.8223
+      lon: -96.4169
+      distance_mi: 36.4
+      bearing: E
+      tracked_plane_presence_in_window: []
+    - airport_code: TS63
+      icao: null
+      iata: null
+      name: "Square Air Airport"
+      city: McKinney
+      region: US-TX
+      country: US
+      type: small_airport
+      elevation_ft: 655
+      longest_runway_ft: 1850
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 33.24549
+      lon: -96.56583
+      distance_mi: 36.4
+      bearing: NE
+      tracked_plane_presence_in_window: []
+    - airport_code: 1TS9
+      icao: null
+      iata: null
+      name: "Four Winds Airport / Cavanaugh Ranch Airport"
+      city: Celina
+      region: US-TX
+      country: US
+      type: small_airport
+      elevation_ft: 775
+      longest_runway_ft: 2700
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 33.36838
+      lon: -96.75464
+      distance_mi: 36.5
+      bearing: NNE
+      tracked_plane_presence_in_window: []
+    - airport_code: 9TS6
+      icao: null
+      iata: null
+      name: "Goodlett Field"
+      city: Alvarado
+      region: US-TX
+      country: US
+      type: small_airport
+      elevation_ft: 690
+      longest_runway_ft: 1800
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 32.3789
+      lon: -97.1783
+      distance_mi: 36.7
+      bearing: SSW
+      tracked_plane_presence_in_window: []
+    - airport_code: XA99
+      icao: null
+      iata: null
+      name: "Flat Bush Airport"
+      city: Decatur
+      region: US-TX
+      country: US
+      type: small_airport
+      elevation_ft: 862
+      longest_runway_ft: 2300
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 33.1344
+      lon: -97.607
+      distance_mi: 36.8
+      bearing: WNW
+      tracked_plane_presence_in_window: []
+    - airport_code: 5TS4
+      icao: null
+      iata: null
+      name: "Mc Entire Airport"
+      city: Decatur
+      region: US-TX
+      country: US
+      type: small_airport
+      elevation_ft: 790
+      longest_runway_ft: 1520
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 33.1446
+      lon: -97.6017
+      distance_mi: 36.9
+      bearing: WNW
+      tracked_plane_presence_in_window: []
+    - airport_code: TX96
+      icao: null
+      iata: null
+      name: "Maxwell Field"
+      city: Sanger
+      region: US-TX
+      country: US
+      type: small_airport
+      elevation_ft: 825
+      longest_runway_ft: 1900
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 33.3993
+      lon: -97.257
+      distance_mi: 37.0
+      bearing: NNW
+      tracked_plane_presence_in_window: []
+    - airport_code: 01TE
+      icao: null
+      iata: null
+      name: "Smith Field"
+      city: Forney
+      region: US-TX
+      country: US
+      type: small_airport
+      elevation_ft: 505
+      longest_runway_ft: 2433
+      longest_runway_surface: TURF-F
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 32.7376
+      lon: -96.428
+      distance_mi: 37.1
+      bearing: ESE
+      tracked_plane_presence_in_window: []
+    - airport_code: XA98
+      icao: null
+      iata: null
+      name: "Jbj Ranch Airport"
+      city: Decatur
+      region: US-TX
+      country: US
+      type: small_airport
+      elevation_ft: 890
+      longest_runway_ft: 2200
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 33.3027
+      lon: -97.4581
+      distance_mi: 37.1
+      bearing: NW
+      tracked_plane_presence_in_window: []
+    - airport_code: TT32
+      icao: null
+      iata: null
+      name: "Kudlacek Field"
+      city: "Royse City"
+      region: US-TX
+      country: US
+      type: small_airport
+      elevation_ft: 524
+      longest_runway_ft: 1500
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 33.01192
+      lon: -96.41047
+      distance_mi: 37.2
+      bearing: ENE
+      tracked_plane_presence_in_window: []
+    - airport_code: 3TE3
+      icao: null
+      iata: null
+      name: "Lazy Dog Ranch Airpark"
+      city: Nevada
+      region: US-TX
+      country: US
+      type: small_airport
+      elevation_ft: 600
+      longest_runway_ft: 1300
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 33.07401
+      lon: -96.432
+      distance_mi: 37.2
+      bearing: ENE
+      tracked_plane_presence_in_window: []
+    - airport_code: 9XA4
+      icao: null
+      iata: null
+      name: "Chimera Aerodrome"
+      city: Venus
+      region: US-TX
+      country: US
+      type: small_airport
+      elevation_ft: 649
+      longest_runway_ft: null
+      longest_runway_surface: null
+      runway_count: 0
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: unknown
+      lat: 32.35575
+      lon: -97.03982
+      distance_mi: 37.4
+      bearing: S
+      tracked_plane_presence_in_window: []
+    - airport_code: US-12702
+      icao: null
+      iata: null
+      name: "Balentine Woodbine Airport"
+      city: Alvarado
+      region: US-TX
+      country: US
+      type: small_airport
+      elevation_ft: 694
+      longest_runway_ft: 2700
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 32.37781
+      lon: -97.21897
+      distance_mi: 37.4
+      bearing: SSW
+      tracked_plane_presence_in_window: []
+    - airport_code: 09TA
+      icao: null
+      iata: null
+      name: "Lazy G Bar Ranch Airport"
+      city: Decatur
+      region: US-TX
+      country: US
+      type: small_airport
+      elevation_ft: 923
+      longest_runway_ft: 1600
+      longest_runway_surface: TURF-P
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 33.28077
+      lon: -97.4967
+      distance_mi: 37.5
+      bearing: NW
+      tracked_plane_presence_in_window: []
+    - airport_code: US-8594
+      icao: null
+      iata: null
+      name: "Williams Airport"
+      city: Godley
+      region: US-TX
+      country: US
+      type: small_airport
+      elevation_ft: 919
+      longest_runway_ft: null
+      longest_runway_surface: null
+      runway_count: 0
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: unknown
+      lat: 32.52073
+      lon: -97.50874
+      distance_mi: 37.7
+      bearing: SW
+      tracked_plane_presence_in_window: []
+    - airport_code: T80
+      icao: null
+      iata: null
+      name: "Bishop's Landing Airport"
+      city: Celina
+      region: US-TX
+      country: US
+      type: small_airport
+      elevation_ft: 750
+      longest_runway_ft: 1580
+      longest_runway_surface: TURF-G
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 33.3773
+      lon: -96.7289
+      distance_mi: 37.7
+      bearing: NNE
+      tracked_plane_presence_in_window: []
+    - airport_code: 6XS7
+      icao: null
+      iata: null
+      name: "Eugene's Dream Airport"
+      city: Springtown
+      region: US-TX
+      country: US
+      type: small_airport
+      elevation_ft: 905
+      longest_runway_ft: 3200
+      longest_runway_surface: TURF
+      runway_count: 2
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 33.0453
+      lon: -97.6748
+      distance_mi: 38.3
+      bearing: WNW
+      tracked_plane_presence_in_window: []
+    - airport_code: 20XS
+      icao: null
+      iata: null
+      name: "Klutts Field"
+      city: Chisholm
+      region: US-TX
+      country: US
+      type: small_airport
+      elevation_ft: 495
+      longest_runway_ft: 1800
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 32.8354
+      lon: -96.378
+      distance_mi: 38.5
+      bearing: E
+      tracked_plane_presence_in_window: []
+    - airport_code: TE45
+      icao: null
+      iata: null
+      name: "Buffalo Chips Airpark"
+      city: Joshua
+      region: US-TX
+      country: US
+      type: small_airport
+      elevation_ft: 960
+      longest_runway_ft: 5400
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 32.4699
+      lon: -97.4653
+      distance_mi: 38.6
+      bearing: SW
+      tracked_plane_presence_in_window: []
+    - airport_code: US-0161
+      icao: null
+      iata: null
+      name: "Eisenbeck Ranch Airport"
+      city: Ferris
+      region: US-TX
+      country: US
+      type: small_airport
+      elevation_ft: 360
+      longest_runway_ft: 3000
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 32.48581
+      lon: -96.58771
+      distance_mi: 38.6
+      bearing: SE
+      tracked_plane_presence_in_window: []
+    - airport_code: 59TX
+      icao: null
+      iata: null
+      name: "Benjamin Franklin Airport"
+      city: Godley
+      region: US-TX
+      country: US
+      type: small_airport
+      elevation_ft: 990
+      longest_runway_ft: 3000
+      longest_runway_surface: TURF-F
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 32.48744
+      lon: -97.49021
+      distance_mi: 38.6
+      bearing: SW
+      tracked_plane_presence_in_window: []
+    - airport_code: US-3043
+      icao: null
+      iata: null
+      name: "Triple-Ace Field"
+      city: Decatur
+      region: US-TX
+      country: US
+      type: small_airport
+      elevation_ft: 1010
+      longest_runway_ft: null
+      longest_runway_surface: null
+      runway_count: 0
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: unknown
+      lat: 33.25212
+      lon: -97.55333
+      distance_mi: 38.6
+      bearing: NW
+      tracked_plane_presence_in_window: []
+    - airport_code: K50F
+      icao: null
+      iata: null
+      name: "Bourland Field"
+      city: Cresson
+      region: US-TX
+      country: US
+      type: small_airport
+      elevation_ft: 873
+      longest_runway_ft: 4049
+      longest_runway_surface: ASP
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: light_jet_capable
+      lat: 32.5818
+      lon: -97.5908
+      distance_mi: 38.8
+      bearing: SW
+      tracked_plane_presence_in_window: []
+    - airport_code: KWEA
+      icao: KWEA
+      iata: WEA
+      name: "Parker County Airport"
+      city: Weatherford
+      region: US-TX
+      country: US
+      type: small_airport
+      elevation_ft: 990
+      longest_runway_ft: 3298
+      longest_runway_surface: ASP
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: marginal
+      lat: 32.7463
+      lon: -97.6824
+      distance_mi: 38.8
+      bearing: WSW
+      tracked_plane_presence_in_window: []
+    - airport_code: XA68
+      icao: null
+      iata: null
+      name: "Akroville Airport"
+      city: Slidell
+      region: US-TX
+      country: US
+      type: small_airport
+      elevation_ft: 895
+      longest_runway_ft: 3100
+      longest_runway_surface: TURF-G
+      runway_count: 2
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 33.3918
+      lon: -97.3553
+      distance_mi: 38.8
+      bearing: NNW
+      tracked_plane_presence_in_window: []
+    - airport_code: 67TT
+      icao: null
+      iata: null
+      name: "Fleck Airport"
+      city: Decatur
+      region: US-TX
+      country: US
+      type: small_airport
+      elevation_ft: 883
+      longest_runway_ft: 3900
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 33.34889
+      lon: -97.44461
+      distance_mi: 39.1
+      bearing: NW
+      tracked_plane_presence_in_window: []
+    - airport_code: XA03
+      icao: null
+      iata: null
+      name: "Edgington Ranch Airport"
+      city: Sanger
+      region: US-TX
+      country: US
+      type: small_airport
+      elevation_ft: 885
+      longest_runway_ft: 2250
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 33.42751
+      lon: -97.27128
+      distance_mi: 39.1
+      bearing: NNW
+      tracked_plane_presence_in_window: []
+    - airport_code: XA78
+      icao: null
+      iata: null
+      name: "Melody Ranch Airport"
+      city: "Mountain Springs"
+      region: US-TX
+      country: US
+      type: small_airport
+      elevation_ft: 729
+      longest_runway_ft: 1600
+      longest_runway_surface: TURF-G
+      runway_count: 2
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 33.4623
+      lon: -97.071
+      distance_mi: 39.1
+      bearing: N
+      tracked_plane_presence_in_window: []
+    - airport_code: 6XS2
+      icao: null
+      iata: null
+      name: "Luscombe Acres Airport"
+      city: Alvarado
+      region: US-TX
+      country: US
+      type: small_airport
+      elevation_ft: 700
+      longest_runway_ft: 2300
+      longest_runway_surface: TURF
+      runway_count: 2
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 32.346
+      lon: -97.1992
+      distance_mi: 39.2
+      bearing: SSW
+      tracked_plane_presence_in_window: []
+    - airport_code: US-6366
+      icao: null
+      iata: null
+      name: "Cain Airport"
+      city: Slidell
+      region: US-TX
+      country: US
+      type: small_airport
+      elevation_ft: 890
+      longest_runway_ft: 1200
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 33.35426
+      lon: -97.4392
+      distance_mi: 39.2
+      bearing: NW
+      tracked_plane_presence_in_window: []
+    - airport_code: TX46
+      icao: null
+      iata: null
+      name: "Blackwood Airpark"
+      city: Cleburne
+      region: US-TX
+      country: US
+      type: small_airport
+      elevation_ft: 835
+      longest_runway_ft: 2600
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 32.4096
+      lon: -97.3872
+      distance_mi: 39.3
+      bearing: SSW
+      tracked_plane_presence_in_window: []
+    - airport_code: US-0997
+      icao: null
+      iata: null
+      name: "Underline OK Airport"
+      city: Springtown
+      region: US-TX
+      country: US
+      type: small_airport
+      elevation_ft: 1116
+      longest_runway_ft: 2244
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 32.92911
+      lon: -97.71383
+      distance_mi: 39.3
+      bearing: W
+      tracked_plane_presence_in_window: []
+    - airport_code: US-0907
+      icao: null
+      iata: null
+      name: "Embarcadero Airport"
+      city: McKinney
+      region: US-TX
+      country: US
+      type: small_airport
+      elevation_ft: 654
+      longest_runway_ft: null
+      longest_runway_surface: null
+      runway_count: 0
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: unknown
+      lat: 33.26637
+      lon: -96.51672
+      distance_mi: 39.5
+      bearing: NE
+      tracked_plane_presence_in_window: []
+    - airport_code: XA75
+      icao: null
+      iata: null
+      name: "Double A Airport"
+      city: Grandview
+      region: US-TX
+      country: US
+      type: small_airport
+      elevation_ft: 635
+      longest_runway_ft: 2800
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 32.324
+      lon: -97.0997
+      distance_mi: 39.7
+      bearing: S
+      tracked_plane_presence_in_window: []
+    - airport_code: US-1079
+      icao: null
+      iata: null
+      name: "RNW Airport"
+      city: Paradise
+      region: US-TX
+      country: US
+      type: small_airport
+      elevation_ft: 930
+      longest_runway_ft: 900
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 33.014
+      lon: -97.70848
+      distance_mi: 39.7
+      bearing: WNW
+      tracked_plane_presence_in_window: []
+    - airport_code: TX64
+      icao: null
+      iata: null
+      name: "Lazy 9 Ranch Airport"
+      city: Decatur
+      region: US-TX
+      country: US
+      type: small_airport
+      elevation_ft: 1020
+      longest_runway_ft: 4000
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 33.2993
+      lon: -97.5273
+      distance_mi: 39.7
+      bearing: NW
+      tracked_plane_presence_in_window: []
+    - airport_code: TX98
+      icao: null
+      iata: null
+      name: "Hawkins Field"
+      city: Godley
+      region: US-TX
+      country: US
+      type: small_airport
+      elevation_ft: 978
+      longest_runway_ft: 2110
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 32.47393
+      lon: -97.50164
+      distance_mi: 39.8
+      bearing: SW
+      tracked_plane_presence_in_window: []
+    - airport_code: US-0459
+      icao: null
+      iata: null
+      name: "Twisted JS Airport"
+      city: Farmersville
+      region: US-TX
+      country: US
+      type: small_airport
+      elevation_ft: 597
+      longest_runway_ft: null
+      longest_runway_surface: null
+      runway_count: 0
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: unknown
+      lat: 33.09294
+      lon: -96.39003
+      distance_mi: 39.9
+      bearing: ENE
+      tracked_plane_presence_in_window: []
+    - airport_code: KLUD
+      icao: null
+      iata: null
+      name: "Decatur Municipal Airport"
+      city: Decatur
+      region: US-TX
+      country: US
+      type: small_airport
+      elevation_ft: 1047
+      longest_runway_ft: 4200
+      longest_runway_surface: ASP
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: light_jet_capable
+      lat: 33.2546
+      lon: -97.5806
+      distance_mi: 40.0
+      bearing: NW
+      tracked_plane_presence_in_window: []
+tracked_plane_presence:
+  # Was any tracked aircraft on the ground at any field in the list above,
+  # inside the window? Three registers are searched and kept apart, strongest
+  # first. NEVER collapse them into one number.
+  window:
+    from: 2022-05-31
+    to: 2022-06-06
+    days_each_side: 2
+  any_found: true
+  egyptian_su_found: false
+  counts:
+    adsb_ground_contacts: 1
+    adsb_ground_contacts_egyptian_su: 0
+    flights_csv_stays: 0
+    flights_csv_stays_egyptian_su: 0
+    claimed_overlaps: 0
+  from_adsb_traces:
+    - tail: N888KG
+      registry: "United States"
+      side: kirk
+      aircraft_type: CL30
+      is_egyptian_su: false
+      in_73_tally: false
+      airport_code: KDAL
+      airport_name: "Dallas Love Field"
+      distance_from_arrival_airport_mi: 10.9
+      median_distance_from_that_runway_km: 1.57
+      date_utc: 2022-06-01
+      gap_days_from_event: -1
+      on_ground_first_utc: "2022-06-01T00:00:00Z"
+      on_ground_last_utc: "2022-06-01T00:03:51.500000Z"
+      on_ground_first_local: "2022-05-31 19:00:00 CDT"
+      on_ground_last_local: "2022-05-31 19:03:51 CDT"
+      ground_positions: 16
+      ground_minutes: 3.9
+      adsb_sources:
+        - adsbexchange-samples
+      source_count: 1
+      trace_files:
+        - site/docs/Planes/N888KG/data/recovered/N888KG_2022-06-01_adsbexchange-samples_trace_full.json
+      evidence_class: adsb_public_history
+      # PRESENCE ONLY. A trace never establishes purpose and never establishes who was aboard.
+      cross_source_agreement: "SINGLE SOURCE - not independently corroborated"
+  from_flights_csv: []
+  from_overlaps_csv: []
+  just_outside_the_radius:
+    # A hard radius creates a cliff and a cliff hides evidence. These fields
+    # sit between 40 and 60 miles from the arrival airport. They are NOT counted
+    # as hits and must never be published as ones - they are here so a near miss
+    # is visible rather than silently dropped.
+    outer_radius_miles: 60.0
+    adsb_ground_contacts: []
+    flights_csv_stays: []
+    claimed_overlaps: []
+  coverage:
+    # AN EMPTY RESULT ABOVE IS NOT A FINDING UNLESS THIS SAYS THE DAYS WERE HELD.
+    # aircraft_days_needed = tails x days in the window. aircraft_days_held is
+    # how many of those this repo actually has a trace for. The rest were never
+    # pulled, or the networks heard nothing - the two are indistinguishable here.
+    aircraft_days_needed: 105
+    aircraft_days_held: 5
+    coverage_pct: 4.8
+    tails_with_no_trace_in_window:
+      - N1098L
+      - N2100L
+      - N560TW
+      - N582MM
+      - N872RA
+      - SU-BGM
+      - SU-BND
+      - SU-BTU
+      - SU-BTV
+      - T7-ELL
+    by_side:
+      following:
+        # FOLLOWING is the side the claim is about - the Egyptian SU- tails.
+        # This percentage is the one that decides whether an empty result means
+        # anything at all.
+        tails: 6
+        aircraft_days_needed: 42
+        aircraft_days_held: 1
+        coverage_pct: 2.4
+      kirk:
+        # KIRK-side coverage is what turns an ESTIMATED arrival into an
+        # OBSERVED one. Low here means the arrival times above stay estimates.
+        tails: 6
+        aircraft_days_needed: 42
+        aircraft_days_held: 3
+        coverage_pct: 7.1
+      n1098l:
+        # Other tracked aircraft. A DIFFERENT CLAIM - do not merge the threads.
+        tails: 3
+        aircraft_days_needed: 21
+        aircraft_days_held: 1
+        coverage_pct: 4.8
+counterargument:
+  - "ONE PAIRING IS NOT EVIDENCE. The claim under test is a repetition across many stops, and any single pairing has an innocent explanation a reader will find."
+  - "A field inside the radius is a field a jet COULD have used. Nothing here shows that anyone did use it, or that two aircraft on one ramp had any connection."
+  - "Maintenance is the strongest innocent explanation in this record: Duncan Aviation (Provo and Lincoln) and Yingling (Wichita) are Part 145 Falcon and Gulfstream shops, and a Falcon 7X sitting for weeks at one reads as a maintenance visit."
+  - "Transatlantic customs and fuel stops explain the recurring East Coast fields."
+  - "ERIKA'S SIDE IS THE WEAK SIDE. Her flight logs are reported erased, so any Erika pairing rests on the foreign aircraft's track plus a CLAIMED location for her. See /Planes/Erika-Flight-Logs-Erased."
+what_we_do_not_know:
+  - "Whether Charlie Kirk, Erika Kirk, or any TPUSA party actually flew to this event, or which aircraft they used. The arrival airport above is an inference from the venue city, not a record."
+  - "Whether the estimated arrival and departure times are within hours or within days of the truth, wherever observed_by_adsb is empty."
+  - "What the tracked aircraft were doing at any field they appear at. A trace proves presence, never purpose and never occupancy."
+  - "Whether the receiver networks simply did not hear an aircraft that was there. See the coverage block - an absence is not a finding."

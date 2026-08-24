@@ -1,0 +1,1642 @@
+# GENERATED FILE - regenerate, do not hand-edit.
+#   node/python: apis/public_open_source/code/airports_near.py --only 20221018_kansas_city
+#   The prompt that governs this file: prompts/p_airports_near.md
+schema: ck.speaking.airports_near/1
+generated_utc: "2026-08-24T19:03:26Z"
+generated_by: site/docs/Planes/following/apis/public_open_source/code/airports_near.py
+page:
+  slug: 20221018_kansas_city
+  mdx: site/docs/Planes/following/speaking/20221018_kansas_city.mdx
+  yaml: site/docs/Planes/following/speaking/20221018_kansas_city.yaml
+  url: /Planes/following/speaking/20221018_kansas_city
+event:
+  title: "Live Free Tour — University of Missouri-Kansas City"
+  who: Charlie
+  attendee_class: CHARLIE_ONLY
+  charlie_present: "yes"
+  erika_present: not_documented
+  attendance_status: held
+  event_type: campus
+  dates:
+    raw: 2022-10-18
+    first_day: 2022-10-18
+    last_day: 2022-10-18
+    granularity: DAY
+    certainty: EVENT_DATE
+    # PODCAST_PROXY means the date is a podcast RELEASE date and the event was normally 0-7 days earlier. Never publish a same-day claim off one.
+  local_time:
+    raw: null
+    parsed_hhmm: null
+    basis: no_time_published
+    timezone: America/Chicago
+    timezone_method: timezonefinder
+  location:
+    city: "Kansas City"
+    state: MO
+    country: USA
+    venue: "University of Missouri-Kansas City"
+    metro_area: "Kansas City-Lawrence KS"
+    geocode:
+      lat: 39.12497
+      lon: -94.58563
+      method: ourairports_municipality_centroid
+      matched: "3 field(s) whose municipality is Kansas City"
+  source: "TPUSA Live Free Tour press release 31 Aug 2022"
+  source_url: "https://tpusa.com/wp-content/uploads/2025/04/Press-Release-TPUSA-Tour-2022-Live-Free-2.pdf"
+  days_before_sept10_2025: 1058
+search:
+  radius_miles: 40
+  window_days_each_side: 2
+  window_from: 2022-10-16
+  window_to: 2022-10-20
+  window_day_count: 5
+  centre: KMCI
+  tails_searched:
+    - N102DZ
+    - N1098L
+    - N2100L
+    - N40JD
+    - N560TW
+    - N582MM
+    - N59906
+    - N872RA
+    - N888KG
+    - SU-BGM
+    - SU-BND
+    - SU-BTT
+    - SU-BTU
+    - SU-BTV
+    - T7-ELL
+  sources_searched:
+    - "recovered ADS-B traces on disk (site/docs/Planes/<TAIL>/data/recovered/)"
+    - site/docs/Planes/following/flights.csv
+    - site/docs/Planes/following/overlaps.csv
+arrival_airport:
+  # ESTIMATE. No published Kirk-side flight record exists for this event unless
+  # the observed_by_adsb block below is non-empty. This is arithmetic on the
+  # event time, not a landing record.
+  chosen_airport:
+    airport_code: KMCI
+    icao: KMCI
+    iata: MCI
+    name: "Kansas City International Airport"
+    city: "Kansas City"
+    region: US-MO
+    country: US
+    type: large_airport
+    elevation_ft: 1026
+    longest_runway_ft: 10801
+    longest_runway_surface: CON
+    runway_count: 3
+    runways_lighted: true
+    scheduled_service: true
+    jet_capability: jet_capable
+    lat: 39.3017
+    lon: -94.71389
+    distance_mi: 14.0
+    bearing: NNW
+  distance_from_event_city_mi: 14.0
+  selection_basis: CURATED_tpusa_events.csv_VALUE_KEPT_computed_nearest_jet_field_DIFFERS
+  curated_value_in_tpusa_events_csv:
+    airport_code: KMCI
+    airport_name: "Kansas City International"
+    distance_mi: 15
+  computed_nearest_jet_capable_field:
+    airport_code: KMKC
+    name: "Charles B. Wheeler Downtown Airport"
+    distance_mi: 0.4
+    longest_runway_ft: 6827
+  estimated_arrival:
+    date: 2022-10-18
+    local_time: "16:00"
+    timezone: America/Chicago
+    utc: "2022-10-18T21:00:00Z"
+    basis: "no event time published; 19:00 local assumed for arithmetic only; minus 3h"
+    confidence: low
+  estimated_departure:
+    date: 2022-10-18
+    local_time: "23:00"
+    timezone: America/Chicago
+    utc: "2022-10-19T04:00:00Z"
+    basis: "event end + 4h (speech, exit, wheels-up)"
+    confidence: low
+  observed_by_adsb: []
+  observed_by_adsb_note: "NO Kirk-side aircraft is on disk on the ground within 40 miles of KMCI in this window. The arrival and departure above stay estimates."
+airports_within_radius:
+  # Every field a private jet could physically use within the radius.
+  # Heliports, seaplane bases, balloonports and closed fields are excluded -
+  # a business jet cannot use any of them. Everything else is kept, including
+  # every small strip with no scheduled service: those are the point of the sweep.
+  radius_miles: 40
+  centre_airport: KMCI
+  count: 71
+  jet_capable_count: 8
+  light_jet_capable_count: 3
+  no_scheduled_service_count: 70
+  source: "OurAirports (CC0) airports.csv + runways.csv"
+  list:
+    - airport_code: KMCI
+      icao: KMCI
+      iata: MCI
+      name: "Kansas City International Airport"
+      city: "Kansas City"
+      region: US-MO
+      country: US
+      type: large_airport
+      elevation_ft: 1026
+      longest_runway_ft: 10801
+      longest_runway_surface: CON
+      runway_count: 3
+      runways_lighted: true
+      scheduled_service: true
+      jet_capability: jet_capable
+      lat: 39.3017
+      lon: -94.71389
+      distance_mi: 0.0
+      bearing: N
+      tracked_plane_presence_in_window: []
+    - airport_code: 06MO
+      icao: null
+      iata: null
+      name: "Noahs Ark Airport"
+      city: Waldron
+      region: US-MO
+      country: US
+      type: small_airport
+      elevation_ft: 755
+      longest_runway_ft: 3000
+      longest_runway_surface: ASPH
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: marginal
+      lat: 39.2306
+      lon: -94.8044
+      distance_mi: 6.9
+      bearing: SW
+      tracked_plane_presence_in_window: []
+    - airport_code: 79MU
+      icao: null
+      iata: null
+      name: "Dunham Private Airport"
+      city: Smithville
+      region: US-MO
+      country: US
+      type: small_airport
+      elevation_ft: 1000
+      longest_runway_ft: 2000
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 39.32983
+      lon: -94.55793
+      distance_mi: 8.6
+      bearing: ENE
+      tracked_plane_presence_in_window: []
+    - airport_code: 92MU
+      icao: null
+      iata: null
+      name: "Parks Field"
+      city: Smithville
+      region: US-MO
+      country: US
+      type: small_airport
+      elevation_ft: 847
+      longest_runway_ft: 2000
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 39.40912
+      lon: -94.60623
+      distance_mi: 9.4
+      bearing: NE
+      tracked_plane_presence_in_window: []
+    - airport_code: 1MU2
+      icao: null
+      iata: null
+      name: "Smitty's Landing Airport"
+      city: Ridgely
+      region: US-MO
+      country: US
+      type: small_airport
+      elevation_ft: 800
+      longest_runway_ft: 1400
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 39.44484
+      lon: -94.6641
+      distance_mi: 10.2
+      bearing: NNE
+      tracked_plane_presence_in_window: []
+    - airport_code: 29MO
+      icao: null
+      iata: null
+      name: "Rollert Farm Airport"
+      city: Smithville
+      region: US-MO
+      country: US
+      type: small_airport
+      elevation_ft: 1000
+      longest_runway_ft: 1200
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 39.3508
+      lon: -94.5186
+      distance_mi: 11.0
+      bearing: ENE
+      tracked_plane_presence_in_window: []
+    - airport_code: MO51
+      icao: null
+      iata: null
+      name: "Schaback Strip"
+      city: Weston
+      region: US-MO
+      country: US
+      type: small_airport
+      elevation_ft: 1000
+      longest_runway_ft: 2390
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 39.4236
+      lon: -94.8477
+      distance_mi: 11.0
+      bearing: NW
+      tracked_plane_presence_in_window: []
+    - airport_code: KFLV
+      icao: KFLV
+      iata: FLV
+      name: "Sherman Army Air Field"
+      city: "Fort Leavenworth"
+      region: US-KS
+      country: US
+      type: small_airport
+      elevation_ft: 772
+      longest_runway_ft: 5318
+      longest_runway_surface: PEM
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: jet_capable
+      lat: 39.3683
+      lon: -94.9147
+      distance_mi: 11.7
+      bearing: WNW
+      tracked_plane_presence_in_window: []
+    - airport_code: SN81
+      icao: null
+      iata: null
+      name: "Hancock Airport"
+      city: Piper
+      region: US-KS
+      country: US
+      type: small_airport
+      elevation_ft: 940
+      longest_runway_ft: 1400
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 39.1819
+      lon: -94.87
+      distance_mi: 11.8
+      bearing: SW
+      tracked_plane_presence_in_window: []
+    - airport_code: 0C1
+      icao: null
+      iata: null
+      name: "Triple R Airport"
+      city: Dearborn
+      region: US-MO
+      country: US
+      type: small_airport
+      elevation_ft: 1000
+      longest_runway_ft: 2375
+      longest_runway_surface: ASPH-TRTD-P
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 39.4878
+      lon: -94.7805
+      distance_mi: 13.3
+      bearing: NNW
+      tracked_plane_presence_in_window: []
+    - airport_code: SN83
+      icao: null
+      iata: null
+      name: "Highcrest Air Park"
+      city: Lansing
+      region: US-KS
+      country: US
+      type: small_airport
+      elevation_ft: 1000
+      longest_runway_ft: 2400
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 39.2272
+      lon: -94.9514
+      distance_mi: 13.7
+      bearing: WSW
+      tracked_plane_presence_in_window: []
+    - airport_code: KMKC
+      icao: KMKC
+      iata: MKC
+      name: "Charles B. Wheeler Downtown Airport"
+      city: "Kansas City"
+      region: US-MO
+      country: US
+      type: medium_airport
+      elevation_ft: 759
+      longest_runway_ft: 6827
+      longest_runway_surface: CON
+      runway_count: 2
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: jet_capable
+      lat: 39.1232
+      lon: -94.5928
+      distance_mi: 13.9
+      bearing: SSE
+      tracked_plane_presence_in_window: []
+    - airport_code: 0N0
+      icao: null
+      iata: null
+      name: "Roosterville Airport"
+      city: Liberty
+      region: US-MO
+      country: US
+      type: small_airport
+      elevation_ft: 1004
+      longest_runway_ft: 2780
+      longest_runway_surface: ASPH-G
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 39.2911
+      lon: -94.4422
+      distance_mi: 14.5
+      bearing: E
+      tracked_plane_presence_in_window: []
+    - airport_code: 38KS
+      icao: null
+      iata: null
+      name: "Flying M Ranch Ultralight Flightpark"
+      city: Basehor
+      region: US-KS
+      country: US
+      type: small_airport
+      elevation_ft: 961
+      longest_runway_ft: 850
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 39.15237
+      lon: -94.91719
+      distance_mi: 15.0
+      bearing: SW
+      tracked_plane_presence_in_window: []
+    - airport_code: MO94
+      icao: null
+      iata: null
+      name: "Starr Airport"
+      city: Trimble
+      region: US-MO
+      country: US
+      type: small_airport
+      elevation_ft: 1000
+      longest_runway_ft: 2640
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 39.5
+      lon: -94.5802
+      distance_mi: 15.4
+      bearing: NNE
+      tracked_plane_presence_in_window: []
+    - airport_code: 8KS1
+      icao: null
+      iata: null
+      name: "Neu Field"
+      city: Basehor
+      region: US-KS
+      country: US
+      type: small_airport
+      elevation_ft: 920
+      longest_runway_ft: 2000
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 39.1719
+      lon: -94.9808
+      distance_mi: 16.9
+      bearing: WSW
+      tracked_plane_presence_in_window: []
+    - airport_code: SN22
+      icao: null
+      iata: null
+      name: "Hoelting Airport"
+      city: Basehor
+      region: US-KS
+      country: US
+      type: small_airport
+      elevation_ft: 960
+      longest_runway_ft: 2200
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 39.1122
+      lon: -94.9561
+      distance_mi: 18.4
+      bearing: SW
+      tracked_plane_presence_in_window: []
+    - airport_code: 1KS2
+      icao: null
+      iata: null
+      name: "Risky Airport"
+      city: Easton
+      region: US-KS
+      country: US
+      type: small_airport
+      elevation_ft: 1133
+      longest_runway_ft: 1500
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 39.314
+      lon: -95.0716
+      distance_mi: 19.1
+      bearing: W
+      tracked_plane_presence_in_window: []
+    - airport_code: MO71
+      icao: null
+      iata: null
+      name: "Block Air Village Airport"
+      city: Holt
+      region: US-MO
+      country: US
+      type: small_airport
+      elevation_ft: 1030
+      longest_runway_ft: 3300
+      longest_runway_surface: TURF
+      runway_count: 3
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 39.4631
+      lon: -94.4183
+      distance_mi: 19.3
+      bearing: NE
+      tracked_plane_presence_in_window: []
+    - airport_code: 61MU
+      icao: null
+      iata: null
+      name: "Farris Strip"
+      city: Faucett
+      region: US-MO
+      country: US
+      type: small_airport
+      elevation_ft: 1054
+      longest_runway_ft: 2100
+      longest_runway_surface: ASPH-P
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 39.5882
+      lon: -94.7838
+      distance_mi: 20.1
+      bearing: N
+      tracked_plane_presence_in_window: []
+    - airport_code: 03PR
+      icao: null
+      iata: null
+      name: "Sun View Field Airport"
+      city: "Bonner Springs"
+      region: US-KS
+      country: US
+      type: small_airport
+      elevation_ft: 980
+      longest_runway_ft: 2926
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 39.06593
+      lon: -94.93842
+      distance_mi: 20.2
+      bearing: SW
+      tracked_plane_presence_in_window: []
+    - airport_code: MO26
+      icao: null
+      iata: null
+      name: "Peterson Farm Airport"
+      city: Kearney
+      region: US-MO
+      country: US
+      type: small_airport
+      elevation_ft: 860
+      longest_runway_ft: 2400
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 39.3939
+      lon: -94.353
+      distance_mi: 20.3
+      bearing: ENE
+      tracked_plane_presence_in_window: []
+    - airport_code: 23KS
+      icao: null
+      iata: null
+      name: "Ney Ultralight Flightpark"
+      city: "Bonner Springs"
+      region: US-KS
+      country: US
+      type: small_airport
+      elevation_ft: 963
+      longest_runway_ft: null
+      longest_runway_surface: null
+      runway_count: 0
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: unknown
+      lat: 39.07012
+      lon: -94.94899
+      distance_mi: 20.4
+      bearing: SW
+      tracked_plane_presence_in_window: []
+    - airport_code: 8MO7
+      icao: null
+      iata: null
+      name: "Bean Lake Airport"
+      city: Rushville
+      region: US-MO
+      country: US
+      type: small_airport
+      elevation_ft: 780
+      longest_runway_ft: 2600
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 39.4917
+      lon: -95.0066
+      distance_mi: 20.4
+      bearing: NW
+      tracked_plane_presence_in_window: []
+    - airport_code: US-8268
+      icao: null
+      iata: null
+      name: "Oak Hill Airport"
+      city: Easton
+      region: US-KS
+      country: US
+      type: small_airport
+      elevation_ft: 1061
+      longest_runway_ft: null
+      longest_runway_surface: null
+      runway_count: 0
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: unknown
+      lat: 39.38118
+      lon: -95.09226
+      distance_mi: 21.0
+      bearing: WNW
+      tracked_plane_presence_in_window: []
+    - airport_code: 4MO4
+      icao: null
+      iata: null
+      name: "Liberty Landing Airport"
+      city: Liberty
+      region: US-MO
+      country: US
+      type: small_airport
+      elevation_ft: 720
+      longest_runway_ft: 2400
+      longest_runway_surface: GRVL
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 39.2167
+      lon: -94.3336
+      distance_mi: 21.2
+      bearing: ESE
+      tracked_plane_presence_in_window: []
+    - airport_code: 20MO
+      icao: null
+      iata: null
+      name: "Royal Wood Aerodrome"
+      city: Kearney
+      region: US-MO
+      country: US
+      type: small_airport
+      elevation_ft: 860
+      longest_runway_ft: 3000
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 39.3583
+      lon: -94.3169
+      distance_mi: 21.6
+      bearing: E
+      tracked_plane_presence_in_window: []
+    - airport_code: 1KS9
+      icao: null
+      iata: null
+      name: "Belleair Airport"
+      city: "Bonner Springs"
+      region: US-KS
+      country: US
+      type: small_airport
+      elevation_ft: 935
+      longest_runway_ft: 1500
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 39.0456
+      lon: -94.949
+      distance_mi: 21.7
+      bearing: SW
+      tracked_plane_presence_in_window: []
+    - airport_code: KGPH
+      icao: null
+      iata: null
+      name: "Midwest National Air Center Airport"
+      city: "Excelsior Springs"
+      region: US-MO
+      country: US
+      type: small_airport
+      elevation_ft: 777
+      longest_runway_ft: 5502
+      longest_runway_surface: ASP
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: jet_capable
+      lat: 39.3325
+      lon: -94.3096
+      distance_mi: 21.7
+      bearing: E
+      tracked_plane_presence_in_window: []
+    - airport_code: 1MU8
+      icao: null
+      iata: null
+      name: "Church's Landing Airport"
+      city: Rushville
+      region: US-MO
+      country: US
+      type: small_airport
+      elevation_ft: 826
+      longest_runway_ft: 2000
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 39.5542
+      lon: -94.9986
+      distance_mi: 23.1
+      bearing: NW
+      tracked_plane_presence_in_window: []
+    - airport_code: 4KS2
+      icao: null
+      iata: null
+      name: "Ingels Aerodrome"
+      city: "De Soto"
+      region: US-KS
+      country: US
+      type: small_airport
+      elevation_ft: 960
+      longest_runway_ft: 1700
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 39.0186
+      lon: -94.9544
+      distance_mi: 23.4
+      bearing: SSW
+      tracked_plane_presence_in_window: []
+    - airport_code: 9MO3
+      icao: null
+      iata: null
+      name: "Lawlor-Justus Airport"
+      city: Faucett
+      region: US-MO
+      country: US
+      type: small_airport
+      elevation_ft: 1100
+      longest_runway_ft: 1800
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 39.6417
+      lon: -94.8136
+      distance_mi: 24.1
+      bearing: NNW
+      tracked_plane_presence_in_window: []
+    - airport_code: 5MO
+      icao: null
+      iata: null
+      name: "Plattsburg Airpark"
+      city: Plattsburg
+      region: US-MO
+      country: US
+      type: small_airport
+      elevation_ft: 1020
+      longest_runway_ft: 2100
+      longest_runway_surface: ASPH-TURF-P
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 39.5944
+      lon: -94.4627
+      distance_mi: 24.3
+      bearing: NNE
+      tracked_plane_presence_in_window: []
+    - airport_code: 2MO2
+      icao: null
+      iata: null
+      name: "Northwood Airport"
+      city: Holt
+      region: US-MO
+      country: US
+      type: small_airport
+      elevation_ft: 1000
+      longest_runway_ft: 1400
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 39.4642
+      lon: -94.308
+      distance_mi: 24.4
+      bearing: ENE
+      tracked_plane_presence_in_window: []
+    - airport_code: 4MO8
+      icao: null
+      iata: null
+      name: "Martens Airport"
+      city: Atherton
+      region: US-MO
+      country: US
+      type: small_airport
+      elevation_ft: 720
+      longest_runway_ft: 2100
+      longest_runway_surface: TURF-G
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 39.2067
+      lon: -94.2697
+      distance_mi: 24.7
+      bearing: ESE
+      tracked_plane_presence_in_window: []
+    - airport_code: SN90
+      icao: null
+      iata: null
+      name: "Eibes Airfield"
+      city: McLouth
+      region: US-KS
+      country: US
+      type: small_airport
+      elevation_ft: 1100
+      longest_runway_ft: 2300
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 39.22696
+      lon: -95.19223
+      distance_mi: 26.1
+      bearing: WSW
+      tracked_plane_presence_in_window: []
+    - airport_code: 85KS
+      icao: null
+      iata: null
+      name: "Sanders Airport"
+      city: Winchester
+      region: US-KS
+      country: US
+      type: small_airport
+      elevation_ft: 1070
+      longest_runway_ft: 1250
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 39.30065
+      lon: -95.21509
+      distance_mi: 26.8
+      bearing: W
+      tracked_plane_presence_in_window: []
+    - airport_code: US-8165
+      icao: null
+      iata: null
+      name: "Short Field Landing Ultralight Flightpark"
+      city: Lawson
+      region: US-MO
+      country: US
+      type: small_airport
+      elevation_ft: 1073
+      longest_runway_ft: 533
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 39.45777
+      lon: -94.24759
+      distance_mi: 27.1
+      bearing: ENE
+      tracked_plane_presence_in_window: []
+    - airport_code: 51K
+      icao: null
+      iata: null
+      name: "Cedar Air Park"
+      city: Olathe
+      region: US-KS
+      country: US
+      type: small_airport
+      elevation_ft: 1020
+      longest_runway_ft: 2440
+      longest_runway_surface: TURF-G
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 38.9314
+      lon: -94.885
+      distance_mi: 27.2
+      bearing: SSW
+      tracked_plane_presence_in_window: []
+    - airport_code: 3EX
+      icao: null
+      iata: null
+      name: "Excelsior Springs Memorial Airport"
+      city: "Excelsior Springs"
+      region: US-MO
+      country: US
+      type: small_airport
+      elevation_ft: 997
+      longest_runway_ft: 2000
+      longest_runway_surface: ASPH-F
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 39.3372
+      lon: -94.1977
+      distance_mi: 27.7
+      bearing: E
+      tracked_plane_presence_in_window: []
+    - airport_code: 5KS1
+      icao: null
+      iata: null
+      name: "Threshing Bee Airport"
+      city: McLouth
+      region: US-KS
+      country: US
+      type: small_airport
+      elevation_ft: 1150
+      longest_runway_ft: 1650
+      longest_runway_surface: TURF-G
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 39.19199
+      lon: -95.21593
+      distance_mi: 27.9
+      bearing: WSW
+      tracked_plane_presence_in_window: []
+    - airport_code: 2MO9
+      icao: null
+      iata: null
+      name: "Runway Ranch Airport"
+      city: "Kansas City"
+      region: US-MO
+      country: US
+      type: small_airport
+      elevation_ft: 929
+      longest_runway_ft: 1320
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 38.95
+      lon: -94.4502
+      distance_mi: 28.1
+      bearing: SSE
+      tracked_plane_presence_in_window: []
+    - airport_code: 64MO
+      icao: null
+      iata: null
+      name: "Booze Island Airport"
+      city: "St Joseph"
+      region: US-MO
+      country: US
+      type: small_airport
+      elevation_ft: 794
+      longest_runway_ft: 3260
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 39.6653
+      lon: -95.0133
+      distance_mi: 29.8
+      bearing: NNW
+      tracked_plane_presence_in_window: []
+    - airport_code: KLXT
+      icao: null
+      iata: null
+      name: "Lee's Summit Municipal Airport"
+      city: "Lee's Summit"
+      region: US-MO
+      country: US
+      type: small_airport
+      elevation_ft: 1004
+      longest_runway_ft: 5501
+      longest_runway_surface: CON
+      runway_count: 2
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: jet_capable
+      lat: 38.9597
+      lon: -94.3714
+      distance_mi: 29.9
+      bearing: SE
+      tracked_plane_presence_in_window: []
+    - airport_code: KK59
+      icao: null
+      iata: null
+      name: "Amelia Earhart Airport"
+      city: Atchison
+      region: US-KS
+      country: US
+      type: small_airport
+      elevation_ft: 1073
+      longest_runway_ft: 3000
+      longest_runway_surface: ASP
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: marginal
+      lat: 39.5705
+      lon: -95.1803
+      distance_mi: 31.1
+      bearing: NW
+      tracked_plane_presence_in_window: []
+    - airport_code: KOJC
+      icao: KOJC
+      iata: OJC
+      name: "Johnson County Executive Airport"
+      city: Olathe
+      region: US-KS
+      country: US
+      type: small_airport
+      elevation_ft: 1096
+      longest_runway_ft: 4097
+      longest_runway_surface: CON
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: light_jet_capable
+      lat: 38.8476
+      lon: -94.7376
+      distance_mi: 31.4
+      bearing: S
+      tracked_plane_presence_in_window: []
+    - airport_code: 62MO
+      icao: null
+      iata: null
+      name: "Washburn Farm Airport"
+      city: "Grain Valley"
+      region: US-MO
+      country: US
+      type: small_airport
+      elevation_ft: 855
+      longest_runway_ft: 2600
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 39.0606
+      lon: -94.2033
+      distance_mi: 32.0
+      bearing: ESE
+      tracked_plane_presence_in_window: []
+    - airport_code: 17MU
+      icao: null
+      iata: null
+      name: "B-B Airfield"
+      city: Osborn
+      region: US-MO
+      country: US
+      type: small_airport
+      elevation_ft: 1045
+      longest_runway_ft: null
+      longest_runway_surface: null
+      runway_count: 0
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: unknown
+      lat: 39.68279
+      lon: -94.3721
+      distance_mi: 32.0
+      bearing: NE
+      tracked_plane_presence_in_window: []
+    - airport_code: 7KS0
+      icao: null
+      iata: null
+      name: "Flying T Airport"
+      city: Oskaloosa
+      region: US-KS
+      country: US
+      type: small_airport
+      elevation_ft: 1160
+      longest_runway_ft: 1600
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 39.27108
+      lon: -95.31705
+      distance_mi: 32.3
+      bearing: W
+      tracked_plane_presence_in_window: []
+    - airport_code: 69MU
+      icao: null
+      iata: null
+      name: "Blazer Airport"
+      city: Easton
+      region: US-MO
+      country: US
+      type: small_airport
+      elevation_ft: 939
+      longest_runway_ft: 1568
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 39.76424
+      lon: -94.62736
+      distance_mi: 32.3
+      bearing: N
+      tracked_plane_presence_in_window: []
+    - airport_code: SN59
+      icao: null
+      iata: null
+      name: "Hermon Farm Airport"
+      city: Gardner
+      region: US-KS
+      country: US
+      type: small_airport
+      elevation_ft: 1060
+      longest_runway_ft: 1300
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 38.8528
+      lon: -94.91
+      distance_mi: 32.8
+      bearing: SSW
+      tracked_plane_presence_in_window: []
+    - airport_code: K3GV
+      icao: null
+      iata: null
+      name: "East Kansas City Airport"
+      city: "Grain Valley"
+      region: US-MO
+      country: US
+      type: small_airport
+      elevation_ft: 835
+      longest_runway_ft: 4507
+      longest_runway_surface: ASP
+      runway_count: 2
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: light_jet_capable
+      lat: 39.01515
+      lon: -94.21525
+      distance_mi: 33.3
+      bearing: SE
+      tracked_plane_presence_in_window: []
+    - airport_code: KLWC
+      icao: KLWC
+      iata: LWC
+      name: "Lawrence Municipal Airport"
+      city: Lawrence
+      region: US-KS
+      country: US
+      type: small_airport
+      elevation_ft: 833
+      longest_runway_ft: 5701
+      longest_runway_surface: ASP
+      runway_count: 2
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: jet_capable
+      lat: 39.0112
+      lon: -95.2166
+      distance_mi: 33.6
+      bearing: SW
+      tracked_plane_presence_in_window: []
+    - airport_code: 63K
+      icao: null
+      iata: null
+      name: "Hillside Airport"
+      city: Stilwell
+      region: US-KS
+      country: US
+      type: small_airport
+      elevation_ft: 1025
+      longest_runway_ft: 2000
+      longest_runway_surface: TURF-GRVL-F
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 38.8211
+      lon: -94.6097
+      distance_mi: 33.7
+      bearing: S
+      tracked_plane_presence_in_window: []
+    - airport_code: KIXD
+      icao: KIXD
+      iata: JCI
+      name: "New Century AirCenter Airport"
+      city: "New Century"
+      region: US-KS
+      country: US
+      type: small_airport
+      elevation_ft: 1087
+      longest_runway_ft: 7339
+      longest_runway_surface: ASP
+      runway_count: 2
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: jet_capable
+      lat: 38.8309
+      lon: -94.8903
+      distance_mi: 33.9
+      bearing: SSW
+      tracked_plane_presence_in_window: []
+    - airport_code: 71KS
+      icao: null
+      iata: null
+      name: "Stonehenge Airport"
+      city: Williamstown
+      region: US-KS
+      country: US
+      type: small_airport
+      elevation_ft: 1030
+      longest_runway_ft: 1900
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 39.1042
+      lon: -95.2961
+      distance_mi: 34.0
+      bearing: WSW
+      tracked_plane_presence_in_window: []
+    - airport_code: 37MO
+      icao: null
+      iata: null
+      name: "Mayes Homestead Airport"
+      city: Polo
+      region: US-MO
+      country: US
+      type: small_airport
+      elevation_ft: 1000
+      longest_runway_ft: 2260
+      longest_runway_surface: DIRT
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 39.575
+      lon: -94.1836
+      distance_mi: 34.0
+      bearing: NE
+      tracked_plane_presence_in_window: []
+    - airport_code: KSTJ
+      icao: KSTJ
+      iata: STJ
+      name: "Rosecrans Memorial Airport"
+      city: "St Joseph"
+      region: US-MO
+      country: US
+      type: medium_airport
+      elevation_ft: 826
+      longest_runway_ft: 8061
+      longest_runway_surface: CON
+      runway_count: 2
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: jet_capable
+      lat: 39.7719
+      lon: -94.9097
+      distance_mi: 34.1
+      bearing: NNW
+      tracked_plane_presence_in_window: []
+    - airport_code: 52KS
+      icao: null
+      iata: null
+      name: "Bland Airport"
+      city: Eudora
+      region: US-KS
+      country: US
+      type: small_airport
+      elevation_ft: 935
+      longest_runway_ft: 1800
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 38.9028
+      lon: -95.1322
+      distance_mi: 35.5
+      bearing: SW
+      tracked_plane_presence_in_window: []
+    - airport_code: K34
+      icao: null
+      iata: null
+      name: "Gardner Municipal Airport"
+      city: Gardner
+      region: US-KS
+      country: US
+      type: small_airport
+      elevation_ft: 1042
+      longest_runway_ft: 3224
+      longest_runway_surface: TURF-G
+      runway_count: 3
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 38.8069
+      lon: -94.9562
+      distance_mi: 36.6
+      bearing: SSW
+      tracked_plane_presence_in_window: []
+    - airport_code: US-0624
+      icao: null
+      iata: null
+      name: "Saunders Field"
+      city: Osborn
+      region: US-MO
+      country: US
+      type: small_airport
+      elevation_ft: 1042
+      longest_runway_ft: 1140
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 39.79354
+      lon: -94.43636
+      distance_mi: 37.1
+      bearing: NNE
+      tracked_plane_presence_in_window: []
+    - airport_code: KEZZ
+      icao: null
+      iata: null
+      name: "Cameron Memorial Airport"
+      city: "Shoal Township"
+      region: US-MO
+      country: US
+      type: small_airport
+      elevation_ft: 1040
+      longest_runway_ft: 4000
+      longest_runway_surface: CON
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: light_jet_capable
+      lat: 39.7276
+      lon: -94.2764
+      distance_mi: 37.5
+      bearing: NE
+      tracked_plane_presence_in_window: []
+    - airport_code: MU26
+      icao: null
+      iata: null
+      name: "Robinson Airport"
+      city: Belton
+      region: US-MO
+      country: US
+      type: small_airport
+      elevation_ft: 1080
+      longest_runway_ft: 2260
+      longest_runway_surface: ASPH
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 38.77083
+      lon: -94.55913
+      distance_mi: 37.6
+      bearing: SSE
+      tracked_plane_presence_in_window: []
+    - airport_code: US-6572
+      icao: null
+      iata: null
+      name: "Arrowhead Airpark"
+      city: Belton
+      region: US-MO
+      country: US
+      type: small_airport
+      elevation_ft: 1107
+      longest_runway_ft: 3200
+      longest_runway_surface: ASP
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: marginal
+      lat: 38.76244
+      lon: -94.57503
+      distance_mi: 38.0
+      bearing: SSE
+      tracked_plane_presence_in_window: []
+    - airport_code: MU84
+      icao: null
+      iata: null
+      name: "Michael Farm Airport"
+      city: "Lone Jack"
+      region: US-MO
+      country: US
+      type: small_airport
+      elevation_ft: 1050
+      longest_runway_ft: 1320
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 38.8995
+      lon: -94.2294
+      distance_mi: 38.0
+      bearing: SE
+      tracked_plane_presence_in_window: []
+    - airport_code: MO87
+      icao: null
+      iata: null
+      name: "Powis Airport"
+      city: "Oak Grove"
+      region: US-MO
+      country: US
+      type: small_airport
+      elevation_ft: 879
+      longest_runway_ft: 1300
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 38.94556
+      lon: -94.16131
+      distance_mi: 38.5
+      bearing: SE
+      tracked_plane_presence_in_window: []
+    - airport_code: US-0870
+      icao: null
+      iata: null
+      name: "Dorton Airport"
+      city: Richmond
+      region: US-MO
+      country: US
+      type: small_airport
+      elevation_ft: 930
+      longest_runway_ft: null
+      longest_runway_surface: null
+      runway_count: 0
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: unknown
+      lat: 39.28883
+      lon: -93.99242
+      distance_mi: 38.6
+      bearing: E
+      tracked_plane_presence_in_window: []
+    - airport_code: 2M1
+      icao: null
+      iata: null
+      name: "Harry S Truman Regional Airport"
+      city: "Bates City"
+      region: US-MO
+      country: US
+      type: small_airport
+      elevation_ft: 860
+      longest_runway_ft: 4400
+      longest_runway_surface: GRAVEL-F
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 39.0181
+      lon: -94.0872
+      distance_mi: 38.9
+      bearing: ESE
+      tracked_plane_presence_in_window: []
+    - airport_code: 8KS7
+      icao: null
+      iata: null
+      name: "Pine Sod Ranch Airport"
+      city: Stilwell
+      region: US-KS
+      country: US
+      type: small_airport
+      elevation_ft: 1072
+      longest_runway_ft: 1800
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 38.7331
+      lon: -94.6452
+      distance_mi: 39.5
+      bearing: S
+      tracked_plane_presence_in_window: []
+    - airport_code: 41KS
+      icao: null
+      iata: null
+      name: "Flying Z Ranch Airport"
+      city: "Spring Hill"
+      region: US-KS
+      country: US
+      type: small_airport
+      elevation_ft: 1075
+      longest_runway_ft: 2600
+      longest_runway_surface: TURF
+      runway_count: 3
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 38.73431
+      lon: -94.79842
+      distance_mi: 39.5
+      bearing: S
+      tracked_plane_presence_in_window: []
+    - airport_code: MU85
+      icao: null
+      iata: null
+      name: "Thomas Airport"
+      city: "Oak Grove"
+      region: US-MO
+      country: US
+      type: small_airport
+      elevation_ft: 890
+      longest_runway_ft: 2100
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 38.955
+      lon: -94.1274
+      distance_mi: 39.5
+      bearing: SE
+      tracked_plane_presence_in_window: []
+tracked_plane_presence:
+  # Was any tracked aircraft on the ground at any field in the list above,
+  # inside the window? Three registers are searched and kept apart, strongest
+  # first. NEVER collapse them into one number.
+  window:
+    from: 2022-10-16
+    to: 2022-10-20
+    days_each_side: 2
+  any_found: false
+  egyptian_su_found: false
+  counts:
+    adsb_ground_contacts: 0
+    adsb_ground_contacts_egyptian_su: 0
+    flights_csv_stays: 0
+    flights_csv_stays_egyptian_su: 0
+    claimed_overlaps: 0
+  from_adsb_traces: []
+  from_flights_csv: []
+  from_overlaps_csv: []
+  just_outside_the_radius:
+    # A hard radius creates a cliff and a cliff hides evidence. These fields
+    # sit between 40 and 60 miles from the arrival airport. They are NOT counted
+    # as hits and must never be published as ones - they are here so a near miss
+    # is visible rather than silently dropped.
+    outer_radius_miles: 60.0
+    adsb_ground_contacts: []
+    flights_csv_stays: []
+    claimed_overlaps: []
+  coverage:
+    # AN EMPTY RESULT ABOVE IS NOT A FINDING UNLESS THIS SAYS THE DAYS WERE HELD.
+    # aircraft_days_needed = tails x days in the window. aircraft_days_held is
+    # how many of those this repo actually has a trace for. The rest were never
+    # pulled, or the networks heard nothing - the two are indistinguishable here.
+    aircraft_days_needed: 75
+    aircraft_days_held: 0
+    coverage_pct: 0.0
+    tails_with_no_trace_in_window:
+      - N102DZ
+      - N1098L
+      - N2100L
+      - N40JD
+      - N560TW
+      - N582MM
+      - N59906
+      - N872RA
+      - N888KG
+      - SU-BGM
+      - SU-BND
+      - SU-BTT
+      - SU-BTU
+      - SU-BTV
+      - T7-ELL
+    by_side:
+      following:
+        # FOLLOWING is the side the claim is about - the Egyptian SU- tails.
+        # This percentage is the one that decides whether an empty result means
+        # anything at all.
+        tails: 6
+        aircraft_days_needed: 30
+        aircraft_days_held: 0
+        coverage_pct: 0.0
+      kirk:
+        # KIRK-side coverage is what turns an ESTIMATED arrival into an
+        # OBSERVED one. Low here means the arrival times above stay estimates.
+        tails: 6
+        aircraft_days_needed: 30
+        aircraft_days_held: 0
+        coverage_pct: 0.0
+      n1098l:
+        # Other tracked aircraft. A DIFFERENT CLAIM - do not merge the threads.
+        tails: 3
+        aircraft_days_needed: 15
+        aircraft_days_held: 0
+        coverage_pct: 0.0
+counterargument:
+  - "ONE PAIRING IS NOT EVIDENCE. The claim under test is a repetition across many stops, and any single pairing has an innocent explanation a reader will find."
+  - "A field inside the radius is a field a jet COULD have used. Nothing here shows that anyone did use it, or that two aircraft on one ramp had any connection."
+  - "Maintenance is the strongest innocent explanation in this record: Duncan Aviation (Provo and Lincoln) and Yingling (Wichita) are Part 145 Falcon and Gulfstream shops, and a Falcon 7X sitting for weeks at one reads as a maintenance visit."
+  - "Transatlantic customs and fuel stops explain the recurring East Coast fields."
+  - "ERIKA'S SIDE IS THE WEAK SIDE. Her flight logs are reported erased, so any Erika pairing rests on the foreign aircraft's track plus a CLAIMED location for her. See /Planes/Erika-Flight-Logs-Erased."
+what_we_do_not_know:
+  - "Whether Charlie Kirk, Erika Kirk, or any TPUSA party actually flew to this event, or which aircraft they used. The arrival airport above is an inference from the venue city, not a record."
+  - "Whether the estimated arrival and departure times are within hours or within days of the truth, wherever observed_by_adsb is empty."
+  - "What the tracked aircraft were doing at any field they appear at. A trace proves presence, never purpose and never occupancy."
+  - "Whether the receiver networks simply did not hear an aircraft that was there. See the coverage block - an absence is not a finding."

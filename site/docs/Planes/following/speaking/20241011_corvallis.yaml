@@ -1,0 +1,1482 @@
+# GENERATED FILE - regenerate, do not hand-edit.
+#   node/python: apis/public_open_source/code/airports_near.py --only 20241011_corvallis
+#   The prompt that governs this file: prompts/p_airports_near.md
+schema: ck.speaking.airports_near/1
+generated_utc: "2026-08-24T19:03:26Z"
+generated_by: site/docs/Planes/following/apis/public_open_source/code/airports_near.py
+page:
+  slug: 20241011_corvallis
+  mdx: site/docs/Planes/following/speaking/20241011_corvallis.mdx
+  yaml: site/docs/Planes/following/speaking/20241011_corvallis.yaml
+  url: /Planes/following/speaking/20241011_corvallis
+event:
+  title: "You're Being Brainwashed Tour — Oregon State"
+  who: Charlie
+  attendee_class: CHARLIE_ONLY
+  charlie_present: "yes"
+  erika_present: not_documented
+  attendance_status: held
+  event_type: campus
+  dates:
+    raw: 2024-10-11
+    first_day: 2024-10-11
+    last_day: 2024-10-11
+    granularity: DAY
+    certainty: EVENT_DATE
+    # PODCAST_PROXY means the date is a podcast RELEASE date and the event was normally 0-7 days earlier. Never publish a same-day claim off one.
+  local_time:
+    raw: "12:00 local"
+    parsed_hhmm: "12:00"
+    basis: parsed_from_event_time_cell
+    timezone: America/Los_Angeles
+    timezone_method: timezonefinder
+  location:
+    city: Corvallis
+    state: OR
+    country: USA
+    venue: "Memorial Union quad, Oregon State University"
+    metro_area: "Corvallis OR"
+    geocode:
+      lat: 44.56995
+      lon: -123.27828
+      method: us_census_2024_gazetteer
+      matched: "Corvallis city"
+  source: "Daily Barometer 14 Oct 2024"
+  source_url: "https://dailybaro.orangemedianetwork.com/25721/daily-barometer-news/charlie-kirk-visits-osu-on-college-tour/"
+  days_before_sept10_2025: 334
+search:
+  radius_miles: 40
+  window_days_each_side: 2
+  window_from: 2024-10-09
+  window_to: 2024-10-13
+  window_day_count: 5
+  centre: KCVO
+  tails_searched:
+    - N102DZ
+    - N1098L
+    - N2100L
+    - N40JD
+    - N560TW
+    - N582MM
+    - N59906
+    - N872RA
+    - N888KG
+    - SU-BGM
+    - SU-BND
+    - SU-BTT
+    - SU-BTU
+    - SU-BTV
+    - T7-ELL
+  sources_searched:
+    - "recovered ADS-B traces on disk (site/docs/Planes/<TAIL>/data/recovered/)"
+    - site/docs/Planes/following/flights.csv
+    - site/docs/Planes/following/overlaps.csv
+arrival_airport:
+  # ESTIMATE. No published Kirk-side flight record exists for this event unless
+  # the observed_by_adsb block below is non-empty. This is arithmetic on the
+  # event time, not a landing record.
+  chosen_airport:
+    airport_code: KCVO
+    icao: KCVO
+    iata: CVO
+    name: "Corvallis Municipal Airport"
+    city: Corvallis
+    region: US-OR
+    country: US
+    type: medium_airport
+    elevation_ft: 250
+    longest_runway_ft: 5900
+    longest_runway_surface: ASP
+    runway_count: 2
+    runways_lighted: true
+    scheduled_service: false
+    jet_capability: jet_capable
+    lat: 44.4972
+    lon: -123.29
+    distance_mi: 5.1
+    bearing: S
+  distance_from_event_city_mi: 5.1
+  selection_basis: CURATED_CSV_AND_COMPUTED_NEAREST_JET_FIELD_AGREE
+  curated_value_in_tpusa_events_csv:
+    airport_code: KCVO
+    airport_name: "Corvallis Municipal"
+    distance_mi: 4
+  computed_nearest_jet_capable_field:
+    airport_code: KCVO
+    name: "Corvallis Municipal Airport"
+    distance_mi: 5.1
+    longest_runway_ft: 5900
+  estimated_arrival:
+    date: 2024-10-11
+    local_time: "09:00"
+    timezone: America/Los_Angeles
+    utc: "2024-10-11T16:00:00Z"
+    basis: "event start 12:00 local (parsed_from_event_time_cell) minus 3h"
+    confidence: medium
+  estimated_departure:
+    date: 2024-10-11
+    local_time: "16:00"
+    timezone: America/Los_Angeles
+    utc: "2024-10-11T23:00:00Z"
+    basis: "event end + 4h (speech, exit, wheels-up)"
+    confidence: medium
+  observed_by_adsb: []
+  observed_by_adsb_note: "NO Kirk-side aircraft is on disk on the ground within 40 miles of KCVO in this window. The arrival and departure above stay estimates."
+airports_within_radius:
+  # Every field a private jet could physically use within the radius.
+  # Heliports, seaplane bases, balloonports and closed fields are excluded -
+  # a business jet cannot use any of them. Everything else is kept, including
+  # every small strip with no scheduled service: those are the point of the sweep.
+  radius_miles: 40
+  centre_airport: KCVO
+  count: 63
+  jet_capable_count: 4
+  light_jet_capable_count: 0
+  no_scheduled_service_count: 61
+  source: "OurAirports (CC0) airports.csv + runways.csv"
+  list:
+    - airport_code: KCVO
+      icao: KCVO
+      iata: CVO
+      name: "Corvallis Municipal Airport"
+      city: Corvallis
+      region: US-OR
+      country: US
+      type: medium_airport
+      elevation_ft: 250
+      longest_runway_ft: 5900
+      longest_runway_surface: ASP
+      runway_count: 2
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: jet_capable
+      lat: 44.4972
+      lon: -123.29
+      distance_mi: 0.0
+      bearing: N
+      tracked_plane_presence_in_window: []
+    - airport_code: OR52
+      icao: null
+      iata: null
+      name: "Venell Airport"
+      city: Corvallis
+      region: US-OR
+      country: US
+      type: small_airport
+      elevation_ft: 246
+      longest_runway_ft: 2350
+      longest_runway_surface: ASPH
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 44.4735
+      lon: -123.303
+      distance_mi: 1.8
+      bearing: SSW
+      tracked_plane_presence_in_window: []
+    - airport_code: 55OR
+      icao: null
+      iata: null
+      name: "Muddy Creek Airport"
+      city: Corvallis
+      region: US-OR
+      country: US
+      type: small_airport
+      elevation_ft: 253
+      longest_runway_ft: 2200
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 44.436
+      lon: -123.308
+      distance_mi: 4.3
+      bearing: SSW
+      tracked_plane_presence_in_window: []
+    - airport_code: 4OR4
+      icao: null
+      iata: null
+      name: "Schrock Airport"
+      city: Corvallis
+      region: US-OR
+      country: US
+      type: small_airport
+      elevation_ft: 245
+      longest_runway_ft: 1800
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 44.4436
+      lon: -123.238
+      distance_mi: 4.5
+      bearing: SE
+      tracked_plane_presence_in_window: []
+    - airport_code: OG49
+      icao: null
+      iata: null
+      name: "Coca Cola Airport"
+      city: Corvalis
+      region: US-OR
+      country: US
+      type: small_airport
+      elevation_ft: 300
+      longest_runway_ft: 1050
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 44.4219
+      lon: -123.259
+      distance_mi: 5.4
+      bearing: SSE
+      tracked_plane_presence_in_window: []
+    - airport_code: OR54
+      icao: null
+      iata: null
+      name: "Winn Airport"
+      city: Corvallis
+      region: US-OR
+      country: US
+      type: small_airport
+      elevation_ft: 205
+      longest_runway_ft: 2300
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 44.5985
+      lon: -123.207
+      distance_mi: 8.1
+      bearing: NNE
+      tracked_plane_presence_in_window: []
+    - airport_code: OG01
+      icao: null
+      iata: null
+      name: "Dunning Vineyards Airport"
+      city: Corvallis
+      region: US-OR
+      country: US
+      type: small_airport
+      elevation_ft: 240
+      longest_runway_ft: 1600
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 44.61464
+      lon: -123.23484
+      distance_mi: 8.6
+      bearing: NNE
+      tracked_plane_presence_in_window: []
+    - airport_code: OG16
+      icao: null
+      iata: null
+      name: "Jim's Airstrip"
+      city: Halsey
+      region: US-OR
+      country: US
+      type: small_airport
+      elevation_ft: 275
+      longest_runway_ft: 2200
+      longest_runway_surface: TURF-DIRT
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 44.3826
+      lon: -123.213
+      distance_mi: 8.8
+      bearing: SSE
+      tracked_plane_presence_in_window: []
+    - airport_code: 8OR7
+      icao: null
+      iata: null
+      name: "Gates Airport"
+      city: Corvallis
+      region: US-OR
+      country: US
+      type: small_airport
+      elevation_ft: 220
+      longest_runway_ft: 1600
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 44.6271
+      lon: -123.225
+      distance_mi: 9.5
+      bearing: NNE
+      tracked_plane_presence_in_window: []
+    - airport_code: OR39
+      icao: null
+      iata: null
+      name: "Flying Tom Airport"
+      city: Corvallis
+      region: US-OR
+      country: US
+      type: small_airport
+      elevation_ft: 300
+      longest_runway_ft: 1600
+      longest_runway_surface: TURF-GRVL
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 44.6576
+      lon: -123.212
+      distance_mi: 11.7
+      bearing: NNE
+      tracked_plane_presence_in_window: []
+    - airport_code: OR20
+      icao: null
+      iata: null
+      name: "Hemmingson Airport"
+      city: Albany
+      region: US-OR
+      country: US
+      type: small_airport
+      elevation_ft: 250
+      longest_runway_ft: 1250
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 44.6582
+      lon: -123.143
+      distance_mi: 13.3
+      bearing: NNE
+      tracked_plane_presence_in_window: []
+    - airport_code: OR94
+      icao: null
+      iata: null
+      name: "J & J Airport"
+      city: Brownsville
+      region: US-OR
+      country: US
+      type: small_airport
+      elevation_ft: 298
+      longest_runway_ft: 2050
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 44.39171
+      lon: -123.02955
+      distance_mi: 14.8
+      bearing: ESE
+      tracked_plane_presence_in_window: []
+    - airport_code: KS12
+      icao: null
+      iata: null
+      name: "Albany Municipal Airport"
+      city: Albany
+      region: US-OR
+      country: US
+      type: small_airport
+      elevation_ft: 226
+      longest_runway_ft: 3004
+      longest_runway_surface: ASP
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: marginal
+      lat: 44.6378
+      lon: -123.059
+      distance_mi: 15.0
+      bearing: NE
+      tracked_plane_presence_in_window: []
+    - airport_code: OR22
+      icao: null
+      iata: null
+      name: "Roppair Airport"
+      city: Albany
+      region: US-OR
+      country: US
+      type: small_airport
+      elevation_ft: 247
+      longest_runway_ft: 1700
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 44.6193
+      lon: -123.032
+      distance_mi: 15.2
+      bearing: ENE
+      tracked_plane_presence_in_window: []
+    - airport_code: US-1090
+      icao: null
+      iata: null
+      name: "Knokey Field"
+      city: Lebanon
+      region: US-OR
+      country: US
+      type: small_airport
+      elevation_ft: 315
+      longest_runway_ft: null
+      longest_runway_surface: null
+      runway_count: 0
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: unknown
+      lat: 44.53232
+      lon: -122.98287
+      distance_mi: 15.3
+      bearing: E
+      tracked_plane_presence_in_window: []
+    - airport_code: US-8221
+      icao: null
+      iata: null
+      name: "Washburn Heights Airstrip"
+      city: Brownsville
+      region: US-OR
+      country: US
+      type: small_airport
+      elevation_ft: 1646
+      longest_runway_ft: null
+      longest_runway_surface: null
+      runway_count: 0
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: unknown
+      lat: 44.44154
+      lon: -122.97124
+      distance_mi: 16.2
+      bearing: ESE
+      tracked_plane_presence_in_window: []
+    - airport_code: OR21
+      icao: null
+      iata: null
+      name: "Miller Airstrip"
+      city: Albany
+      region: US-OR
+      country: US
+      type: small_airport
+      elevation_ft: 279
+      longest_runway_ft: 1700
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 44.5932
+      lon: -122.99
+      distance_mi: 16.2
+      bearing: ENE
+      tracked_plane_presence_in_window: []
+    - airport_code: 88OR
+      icao: null
+      iata: null
+      name: "Tallman Airport"
+      city: Lebanon
+      region: US-OR
+      country: US
+      type: small_airport
+      elevation_ft: 303
+      longest_runway_ft: 2000
+      longest_runway_surface: TURF-G
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 44.5683
+      lon: -122.971
+      distance_mi: 16.5
+      bearing: ENE
+      tracked_plane_presence_in_window: []
+    - airport_code: OG36
+      icao: null
+      iata: null
+      name: "Munson Airport"
+      city: "Junction City"
+      region: US-OR
+      country: US
+      type: small_airport
+      elevation_ft: 302
+      longest_runway_ft: 825
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 44.2504
+      lon: -123.228
+      distance_mi: 17.3
+      bearing: S
+      tracked_plane_presence_in_window: []
+    - airport_code: S30
+      icao: null
+      iata: null
+      name: "Lebanon State Airport"
+      city: Lebanon
+      region: US-OR
+      country: US
+      type: small_airport
+      elevation_ft: 344
+      longest_runway_ft: 2747
+      longest_runway_surface: ASPH-F
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 44.5298
+      lon: -122.93
+      distance_mi: 17.9
+      bearing: E
+      tracked_plane_presence_in_window: []
+    - airport_code: 9OR0
+      icao: null
+      iata: null
+      name: "Lafferty Field"
+      city: Brownsville
+      region: US-OR
+      country: US
+      type: small_airport
+      elevation_ft: 360
+      longest_runway_ft: 1800
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 44.3151
+      lon: -123.025
+      distance_mi: 18.1
+      bearing: SE
+      tracked_plane_presence_in_window: []
+    - airport_code: US-3282
+      icao: null
+      iata: null
+      name: "Pair-A-Dice Airport"
+      city: Albany
+      region: US-OR
+      country: US
+      type: small_airport
+      elevation_ft: 290
+      longest_runway_ft: 2096
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 44.67306
+      lon: -123.00486
+      distance_mi: 18.6
+      bearing: NE
+      tracked_plane_presence_in_window: []
+    - airport_code: US-5465
+      icao: null
+      iata: null
+      name: "Mitchell Field"
+      city: Albany
+      region: US-OR
+      country: US
+      type: small_airport
+      elevation_ft: 253
+      longest_runway_ft: 851
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 44.6952
+      lon: -123.01966
+      distance_mi: 19.1
+      bearing: NE
+      tracked_plane_presence_in_window: []
+    - airport_code: 4OR3
+      icao: null
+      iata: null
+      name: "Lambert Field"
+      city: Albany
+      region: US-OR
+      country: US
+      type: small_airport
+      elevation_ft: 195
+      longest_runway_ft: 1700
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 44.7304
+      lon: -123.076
+      distance_mi: 19.2
+      bearing: NNE
+      tracked_plane_presence_in_window: []
+    - airport_code: OR78
+      icao: null
+      iata: null
+      name: "Daniels Field"
+      city: Harrisburg
+      region: US-OR
+      country: US
+      type: small_airport
+      elevation_ft: 320
+      longest_runway_ft: 3000
+      longest_runway_surface: TURF-GRVL
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 44.27052
+      lon: -123.06208
+      distance_mi: 19.3
+      bearing: SE
+      tracked_plane_presence_in_window: []
+    - airport_code: 9OR8
+      icao: null
+      iata: null
+      name: "Wooldridge Agstrip Airport"
+      city: Albany
+      region: US-OR
+      country: US
+      type: small_airport
+      elevation_ft: 205
+      longest_runway_ft: 1820
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 44.7326
+      lon: -123.056
+      distance_mi: 19.9
+      bearing: NE
+      tracked_plane_presence_in_window: []
+    - airport_code: US-8342
+      icao: null
+      iata: null
+      name: "Felton Creek Airport"
+      city: Blodgett
+      region: US-OR
+      country: US
+      type: small_airport
+      elevation_ft: 699
+      longest_runway_ft: null
+      longest_runway_surface: null
+      runway_count: 0
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: unknown
+      lat: 44.65612
+      lon: -123.63574
+      distance_mi: 20.3
+      bearing: WNW
+      tracked_plane_presence_in_window: []
+    - airport_code: US-3604
+      icao: null
+      iata: null
+      name: "Wrights Airfield"
+      city: Harrisburg
+      region: US-OR
+      country: US
+      type: small_airport
+      elevation_ft: 365
+      longest_runway_ft: null
+      longest_runway_surface: null
+      runway_count: 0
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: unknown
+      lat: 44.26985
+      lon: -123.0085
+      distance_mi: 21.0
+      bearing: SE
+      tracked_plane_presence_in_window: []
+    - airport_code: OR86
+      icao: null
+      iata: null
+      name: "Gilmour Ag Air Airport"
+      city: Jefferson
+      region: US-OR
+      country: US
+      type: small_airport
+      elevation_ft: 244
+      longest_runway_ft: 2500
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 44.75549
+      lon: -123.04563
+      distance_mi: 21.5
+      bearing: NE
+      tracked_plane_presence_in_window: []
+    - airport_code: OR47
+      icao: null
+      iata: null
+      name: "Strauch Field"
+      city: "Junction City"
+      region: US-OR
+      country: US
+      type: small_airport
+      elevation_ft: 335
+      longest_runway_ft: 1600
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 44.18843
+      lon: -123.18992
+      distance_mi: 21.9
+      bearing: SSE
+      tracked_plane_presence_in_window: []
+    - airport_code: 2OR3
+      icao: null
+      iata: null
+      name: "Davidson Field"
+      city: Jefferson
+      region: US-OR
+      country: US
+      type: small_airport
+      elevation_ft: 188
+      longest_runway_ft: 2500
+      longest_runway_surface: TURF-G
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 44.7946
+      lon: -123.098
+      distance_mi: 22.6
+      bearing: NNE
+      tracked_plane_presence_in_window: []
+    - airport_code: OG10
+      icao: null
+      iata: null
+      name: "Mt Hope Airport"
+      city: Lebanon
+      region: US-OR
+      country: US
+      type: small_airport
+      elevation_ft: 400
+      longest_runway_ft: 1750
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 44.55741
+      lon: -122.82717
+      distance_mi: 23.2
+      bearing: E
+      tracked_plane_presence_in_window: []
+    - airport_code: OG48
+      icao: null
+      iata: null
+      name: "Greer Airport"
+      city: Coburg
+      region: US-OR
+      country: US
+      type: small_airport
+      elevation_ft: 360
+      longest_runway_ft: 1890
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 44.1959
+      lon: -123.073
+      distance_mi: 23.4
+      bearing: SSE
+      tracked_plane_presence_in_window: []
+    - airport_code: OR45
+      icao: null
+      iata: null
+      name: "West Point Airport"
+      city: Coburg
+      region: US-OR
+      country: US
+      type: small_airport
+      elevation_ft: 378
+      longest_runway_ft: 1100
+      longest_runway_surface: GRAVEL
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 44.1971
+      lon: -123.056
+      distance_mi: 23.7
+      bearing: SSE
+      tracked_plane_presence_in_window: []
+    - airport_code: OG52
+      icao: null
+      iata: null
+      name: "Jpm Airport"
+      city: Monmouth
+      region: US-OR
+      country: US
+      type: small_airport
+      elevation_ft: 260
+      longest_runway_ft: 1900
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 44.8392
+      lon: -123.259
+      distance_mi: 23.7
+      bearing: N
+      tracked_plane_presence_in_window: []
+    - airport_code: 21OG
+      icao: null
+      iata: null
+      name: "Ames Airport"
+      city: Jefferson
+      region: US-OR
+      country: US
+      type: small_airport
+      elevation_ft: 720
+      longest_runway_ft: 1800
+      longest_runway_surface: ASPH
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 44.77181
+      lon: -122.97074
+      distance_mi: 24.6
+      bearing: NE
+      tracked_plane_presence_in_window: []
+    - airport_code: 0OR7
+      icao: null
+      iata: null
+      name: "Marr Field"
+      city: Monmouth
+      region: US-OR
+      country: US
+      type: small_airport
+      elevation_ft: 275
+      longest_runway_ft: 1800
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 44.854
+      lon: -123.264
+      distance_mi: 24.7
+      bearing: N
+      tracked_plane_presence_in_window: []
+    - airport_code: K7S5
+      icao: null
+      iata: null
+      name: "Independence State Airport"
+      city: Independence
+      region: US-OR
+      country: US
+      type: small_airport
+      elevation_ft: 180
+      longest_runway_ft: 3002
+      longest_runway_surface: ASP
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: marginal
+      lat: 44.867
+      lon: -123.198
+      distance_mi: 25.9
+      bearing: N
+      tracked_plane_presence_in_window: []
+    - airport_code: KEUG
+      icao: KEUG
+      iata: EUG
+      name: "Eugene Airport"
+      city: Eugene
+      region: US-OR
+      country: US
+      type: medium_airport
+      elevation_ft: 374
+      longest_runway_ft: 8009
+      longest_runway_surface: ASP
+      runway_count: 2
+      runways_lighted: true
+      scheduled_service: true
+      jet_capability: jet_capable
+      lat: 44.1246
+      lon: -123.212
+      distance_mi: 26.0
+      bearing: S
+      tracked_plane_presence_in_window: []
+    - airport_code: 4OR8
+      icao: null
+      iata: null
+      name: "Wagoner Airport"
+      city: Salem
+      region: US-OR
+      country: US
+      type: small_airport
+      elevation_ft: 700
+      longest_runway_ft: 1050
+      longest_runway_surface: TURF-GRVL
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 44.8485
+      lon: -123.041
+      distance_mi: 27.2
+      bearing: NNE
+      tracked_plane_presence_in_window: []
+    - airport_code: 43OR
+      icao: null
+      iata: null
+      name: "Inspiration Airport"
+      city: Bend
+      region: US-OR
+      country: US
+      type: small_airport
+      elevation_ft: 3400
+      longest_runway_ft: null
+      longest_runway_surface: null
+      runway_count: 0
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: unknown
+      lat: 44.62266
+      lon: -122.75374
+      distance_mi: 27.8
+      bearing: ENE
+      tracked_plane_presence_in_window: []
+    - airport_code: OG28
+      icao: null
+      iata: null
+      name: "The Green Trees Ranch Airport"
+      city: Scio
+      region: US-OR
+      country: US
+      type: small_airport
+      elevation_ft: 1139
+      longest_runway_ft: 3000
+      longest_runway_surface: TURF-G
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 44.6832
+      lon: -122.783
+      distance_mi: 28.1
+      bearing: ENE
+      tracked_plane_presence_in_window: []
+    - airport_code: 5OR8
+      icao: null
+      iata: null
+      name: "Hatch Airport"
+      city: Stayton
+      region: US-OR
+      country: US
+      type: small_airport
+      elevation_ft: 380
+      longest_runway_ft: 2500
+      longest_runway_surface: TURF-GRVL
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 44.7732
+      lon: -122.85
+      distance_mi: 28.8
+      bearing: NE
+      tracked_plane_presence_in_window: []
+    - airport_code: 33OR
+      icao: null
+      iata: null
+      name: "Crow-Mag Airport"
+      city: Elmira
+      region: US-OR
+      country: US
+      type: small_airport
+      elevation_ft: 450
+      longest_runway_ft: 3000
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 44.0637
+      lon: -123.391
+      distance_mi: 30.4
+      bearing: S
+      tracked_plane_presence_in_window: []
+    - airport_code: OR25
+      icao: null
+      iata: null
+      name: "Flying E Airport"
+      city: Aumsville
+      region: US-OR
+      country: US
+      type: small_airport
+      elevation_ft: 325
+      longest_runway_ft: 2300
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 44.8448
+      lon: -122.901
+      distance_mi: 30.7
+      bearing: NE
+      tracked_plane_presence_in_window: []
+    - airport_code: KSLE
+      icao: KSLE
+      iata: SLE
+      name: "Salem-Willamette Valley Airport/McNary Field"
+      city: Salem
+      region: US-OR
+      country: US
+      type: medium_airport
+      elevation_ft: 214
+      longest_runway_ft: 5811
+      longest_runway_surface: ASP
+      runway_count: 2
+      runways_lighted: true
+      scheduled_service: true
+      jet_capability: jet_capable
+      lat: 44.9095
+      lon: -123.003
+      distance_mi: 31.8
+      bearing: NNE
+      tracked_plane_presence_in_window: []
+    - airport_code: 5OR9
+      icao: null
+      iata: null
+      name: "Lone Oaks Ranch Airport"
+      city: Stayton
+      region: US-OR
+      country: US
+      type: small_airport
+      elevation_ft: 630
+      longest_runway_ft: 1700
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 44.7768
+      lon: -122.76
+      distance_mi: 32.4
+      bearing: NE
+      tracked_plane_presence_in_window: []
+    - airport_code: 5S4
+      icao: null
+      iata: null
+      name: "Toledo State Airport"
+      city: Toledo
+      region: US-OR
+      country: US
+      type: small_airport
+      elevation_ft: 7
+      longest_runway_ft: 1750
+      longest_runway_surface: ASPH-F
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 44.601
+      lon: -123.94
+      distance_mi: 32.8
+      bearing: WNW
+      tracked_plane_presence_in_window: []
+    - airport_code: OR51
+      icao: null
+      iata: null
+      name: "Gillette Field"
+      city: Scio
+      region: US-OR
+      country: US
+      type: small_airport
+      elevation_ft: 735
+      longest_runway_ft: 2900
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 44.7196
+      lon: -122.7
+      distance_mi: 32.8
+      bearing: ENE
+      tracked_plane_presence_in_window: []
+    - airport_code: 56OG
+      icao: null
+      iata: null
+      name: "Horn Airport"
+      city: Stayton
+      region: US-OR
+      country: US
+      type: small_airport
+      elevation_ft: 950
+      longest_runway_ft: 900
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 44.77186
+      lon: -122.72763
+      distance_mi: 33.5
+      bearing: NE
+      tracked_plane_presence_in_window: []
+    - airport_code: 8OR2
+      icao: null
+      iata: null
+      name: "Kingston Airpark"
+      city: Stayton
+      region: US-OR
+      country: US
+      type: small_airport
+      elevation_ft: 871
+      longest_runway_ft: 3000
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 44.7785
+      lon: -122.73
+      distance_mi: 33.7
+      bearing: NE
+      tracked_plane_presence_in_window: []
+    - airport_code: US-12708
+      icao: null
+      iata: null
+      name: "Beggs Airstrip"
+      city: Aumsville
+      region: US-OR
+      country: US
+      type: small_airport
+      elevation_ft: 512
+      longest_runway_ft: 1100
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 44.8712
+      lon: -122.83231
+      distance_mi: 34.3
+      bearing: NE
+      tracked_plane_presence_in_window: []
+    - airport_code: 5OR3
+      icao: null
+      iata: null
+      name: "Siletz Airport"
+      city: Siletz
+      region: US-OR
+      country: US
+      type: small_airport
+      elevation_ft: 100
+      longest_runway_ft: 1300
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 44.7304
+      lon: -123.915
+      distance_mi: 34.7
+      bearing: WNW
+      tracked_plane_presence_in_window: []
+    - airport_code: 4OR5
+      icao: null
+      iata: null
+      name: "Fly 'N' W Airport"
+      city: Salem
+      region: US-OR
+      country: US
+      type: small_airport
+      elevation_ft: 206
+      longest_runway_ft: 1564
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 44.9679
+      lon: -122.941
+      distance_mi: 36.8
+      bearing: NNE
+      tracked_plane_presence_in_window: []
+    - airport_code: OR87
+      icao: null
+      iata: null
+      name: "Blue Skies Farm Airport"
+      city: Salem
+      region: US-OR
+      country: US
+      type: small_airport
+      elevation_ft: 200
+      longest_runway_ft: 1345
+      longest_runway_surface: "GRASS / SOD"
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 44.96611
+      lon: -122.9225
+      distance_mi: 37.1
+      bearing: NNE
+      tracked_plane_presence_in_window: []
+    - airport_code: 67OG
+      icao: null
+      iata: null
+      name: "George Airport"
+      city: Sheridan
+      region: US-OR
+      country: US
+      type: small_airport
+      elevation_ft: 440
+      longest_runway_ft: 1500
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 45.03139
+      lon: -123.40611
+      distance_mi: 37.3
+      bearing: N
+      tracked_plane_presence_in_window: []
+    - airport_code: 64OR
+      icao: null
+      iata: null
+      name: "Plum Valley Airport"
+      city: Amity
+      region: US-OR
+      country: US
+      type: small_airport
+      elevation_ft: 230
+      longest_runway_ft: 2300
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 45.0337
+      lon: -123.172
+      distance_mi: 37.5
+      bearing: N
+      tracked_plane_presence_in_window: []
+    - airport_code: 4OR7
+      icao: null
+      iata: null
+      name: "Lusardi Field"
+      city: Salem
+      region: US-OR
+      country: US
+      type: small_airport
+      elevation_ft: 205
+      longest_runway_ft: 2200
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 44.9854
+      lon: -122.946
+      distance_mi: 37.7
+      bearing: NNE
+      tracked_plane_presence_in_window: []
+    - airport_code: KONP
+      icao: KONP
+      iata: ONP
+      name: "Newport Municipal Airport"
+      city: Newport
+      region: US-OR
+      country: US
+      type: medium_airport
+      elevation_ft: 160
+      longest_runway_ft: 5398
+      longest_runway_surface: ASP
+      runway_count: 2
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: jet_capable
+      lat: 44.5804
+      lon: -124.058
+      distance_mi: 38.3
+      bearing: W
+      tracked_plane_presence_in_window: []
+    - airport_code: OR95
+      icao: null
+      iata: null
+      name: "Vineyard Airport"
+      city: "Mc Coy"
+      region: US-OR
+      country: US
+      type: small_airport
+      elevation_ft: 190
+      longest_runway_ft: 1800
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 45.0498
+      lon: -123.235
+      distance_mi: 38.3
+      bearing: N
+      tracked_plane_presence_in_window: []
+    - airport_code: US-1302
+      icao: null
+      iata: null
+      name: "Morgan's Airport"
+      city: Ballston
+      region: US-OR
+      country: US
+      type: small_airport
+      elevation_ft: null
+      longest_runway_ft: null
+      longest_runway_surface: null
+      runway_count: 0
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: unknown
+      lat: 45.06547
+      lon: -123.32927
+      distance_mi: 39.3
+      bearing: N
+      tracked_plane_presence_in_window: []
+    - airport_code: 36OR
+      icao: null
+      iata: null
+      name: "Jasper Ridge Airstrip"
+      city: Jasper
+      region: US-OR
+      country: US
+      type: small_airport
+      elevation_ft: 1125
+      longest_runway_ft: 1600
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 44.00362
+      lon: -122.88064
+      distance_mi: 39.7
+      bearing: SSE
+      tracked_plane_presence_in_window: []
+    - airport_code: R33
+      icao: null
+      iata: null
+      name: "Wakonda Beach State Airport"
+      city: Waldport
+      region: US-OR
+      country: US
+      type: small_airport
+      elevation_ft: 41
+      longest_runway_ft: 2000
+      longest_runway_surface: TURF-F
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 44.3846
+      lon: -124.085
+      distance_mi: 40.0
+      bearing: W
+      tracked_plane_presence_in_window: []
+tracked_plane_presence:
+  # Was any tracked aircraft on the ground at any field in the list above,
+  # inside the window? Three registers are searched and kept apart, strongest
+  # first. NEVER collapse them into one number.
+  window:
+    from: 2024-10-09
+    to: 2024-10-13
+    days_each_side: 2
+  any_found: false
+  egyptian_su_found: false
+  counts:
+    adsb_ground_contacts: 0
+    adsb_ground_contacts_egyptian_su: 0
+    flights_csv_stays: 0
+    flights_csv_stays_egyptian_su: 0
+    claimed_overlaps: 0
+  from_adsb_traces: []
+  from_flights_csv: []
+  from_overlaps_csv: []
+  just_outside_the_radius:
+    # A hard radius creates a cliff and a cliff hides evidence. These fields
+    # sit between 40 and 60 miles from the arrival airport. They are NOT counted
+    # as hits and must never be published as ones - they are here so a near miss
+    # is visible rather than silently dropped.
+    outer_radius_miles: 60.0
+    adsb_ground_contacts: []
+    flights_csv_stays: []
+    claimed_overlaps: []
+  coverage:
+    # AN EMPTY RESULT ABOVE IS NOT A FINDING UNLESS THIS SAYS THE DAYS WERE HELD.
+    # aircraft_days_needed = tails x days in the window. aircraft_days_held is
+    # how many of those this repo actually has a trace for. The rest were never
+    # pulled, or the networks heard nothing - the two are indistinguishable here.
+    aircraft_days_needed: 75
+    aircraft_days_held: 0
+    coverage_pct: 0.0
+    tails_with_no_trace_in_window:
+      - N102DZ
+      - N1098L
+      - N2100L
+      - N40JD
+      - N560TW
+      - N582MM
+      - N59906
+      - N872RA
+      - N888KG
+      - SU-BGM
+      - SU-BND
+      - SU-BTT
+      - SU-BTU
+      - SU-BTV
+      - T7-ELL
+    by_side:
+      following:
+        # FOLLOWING is the side the claim is about - the Egyptian SU- tails.
+        # This percentage is the one that decides whether an empty result means
+        # anything at all.
+        tails: 6
+        aircraft_days_needed: 30
+        aircraft_days_held: 0
+        coverage_pct: 0.0
+      kirk:
+        # KIRK-side coverage is what turns an ESTIMATED arrival into an
+        # OBSERVED one. Low here means the arrival times above stay estimates.
+        tails: 6
+        aircraft_days_needed: 30
+        aircraft_days_held: 0
+        coverage_pct: 0.0
+      n1098l:
+        # Other tracked aircraft. A DIFFERENT CLAIM - do not merge the threads.
+        tails: 3
+        aircraft_days_needed: 15
+        aircraft_days_held: 0
+        coverage_pct: 0.0
+counterargument:
+  - "ONE PAIRING IS NOT EVIDENCE. The claim under test is a repetition across many stops, and any single pairing has an innocent explanation a reader will find."
+  - "A field inside the radius is a field a jet COULD have used. Nothing here shows that anyone did use it, or that two aircraft on one ramp had any connection."
+  - "Maintenance is the strongest innocent explanation in this record: Duncan Aviation (Provo and Lincoln) and Yingling (Wichita) are Part 145 Falcon and Gulfstream shops, and a Falcon 7X sitting for weeks at one reads as a maintenance visit."
+  - "Transatlantic customs and fuel stops explain the recurring East Coast fields."
+  - "ERIKA'S SIDE IS THE WEAK SIDE. Her flight logs are reported erased, so any Erika pairing rests on the foreign aircraft's track plus a CLAIMED location for her. See /Planes/Erika-Flight-Logs-Erased."
+what_we_do_not_know:
+  - "Whether Charlie Kirk, Erika Kirk, or any TPUSA party actually flew to this event, or which aircraft they used. The arrival airport above is an inference from the venue city, not a record."
+  - "Whether the estimated arrival and departure times are within hours or within days of the truth, wherever observed_by_adsb is empty."
+  - "What the tracked aircraft were doing at any field they appear at. A trace proves presence, never purpose and never occupancy."
+  - "Whether the receiver networks simply did not hear an aircraft that was there. See the coverage block - an absence is not a finding."

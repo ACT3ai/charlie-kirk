@@ -1,0 +1,1422 @@
+# GENERATED FILE - regenerate, do not hand-edit.
+#   node/python: apis/public_open_source/code/airports_near.py --only 20240319_pittsburgh
+#   The prompt that governs this file: prompts/p_airports_near.md
+schema: ck.speaking.airports_near/1
+generated_utc: "2026-08-24T19:03:26Z"
+generated_by: site/docs/Planes/following/apis/public_open_source/code/airports_near.py
+page:
+  slug: 20240319_pittsburgh
+  mdx: site/docs/Planes/following/speaking/20240319_pittsburgh.mdx
+  yaml: site/docs/Planes/following/speaking/20240319_pittsburgh.yaml
+  url: /Planes/following/speaking/20240319_pittsburgh
+event:
+  title: "Live Free Tour — University of Pittsburgh (Candace Owens)"
+  who: TPUSA
+  attendee_class: TPUSA_NO_KIRK
+  charlie_present: "no"
+  erika_present: "no"
+  attendance_status: held
+  event_type: campus
+  dates:
+    raw: 2024-03-19
+    first_day: 2024-03-19
+    last_day: 2024-03-19
+    granularity: DAY
+    certainty: EVENT_DATE
+    # PODCAST_PROXY means the date is a podcast RELEASE date and the event was normally 0-7 days earlier. Never publish a same-day claim off one.
+  local_time:
+    raw: null
+    parsed_hhmm: null
+    basis: no_time_published
+    timezone: America/New_York
+    timezone_method: timezonefinder
+  location:
+    city: Pittsburgh
+    state: PA
+    country: USA
+    venue: "University of Pittsburgh"
+    metro_area: "Pittsburgh PA"
+    geocode:
+      lat: 40.43994
+      lon: -79.97568
+      method: us_census_2024_gazetteer
+      matched: "Pittsburgh city"
+  source: "TPUSA Spring 2024 Live Free press release; Kirk X photos from the stop"
+  source_url: "https://backend.tpusa.com/wp-content/uploads/2024/02/Press-Release-Live-Free-Tour-Spring-2024-1.pdf"
+  days_before_sept10_2025: 540
+search:
+  radius_miles: 40
+  window_days_each_side: 2
+  window_from: 2024-03-17
+  window_to: 2024-03-21
+  window_day_count: 5
+  centre: KPIT
+  tails_searched:
+    - N102DZ
+    - N1098L
+    - N2100L
+    - N40JD
+    - N560TW
+    - N582MM
+    - N59906
+    - N872RA
+    - N888KG
+    - SU-BGM
+    - SU-BND
+    - SU-BTT
+    - SU-BTU
+    - SU-BTV
+    - T7-ELL
+  sources_searched:
+    - "recovered ADS-B traces on disk (site/docs/Planes/<TAIL>/data/recovered/)"
+    - site/docs/Planes/following/flights.csv
+    - site/docs/Planes/following/overlaps.csv
+arrival_airport:
+  # ESTIMATE. No published Kirk-side flight record exists for this event unless
+  # the observed_by_adsb block below is non-empty. This is arithmetic on the
+  # event time, not a landing record.
+  chosen_airport:
+    airport_code: KPIT
+    icao: KPIT
+    iata: PIT
+    name: "Pittsburgh International Airport"
+    city: Pittsburgh
+    region: US-PA
+    country: US
+    type: large_airport
+    elevation_ft: 1203
+    longest_runway_ft: 11500
+    longest_runway_surface: CON
+    runway_count: 4
+    runways_lighted: true
+    scheduled_service: true
+    jet_capability: jet_capable
+    lat: 40.4915
+    lon: -80.2329
+    distance_mi: 14.0
+    bearing: WNW
+  distance_from_event_city_mi: 14.0
+  selection_basis: CURATED_tpusa_events.csv_VALUE_KEPT_computed_nearest_jet_field_DIFFERS
+  curated_value_in_tpusa_events_csv:
+    airport_code: KPIT
+    airport_name: "Pittsburgh International"
+    distance_mi: 15
+  computed_nearest_jet_capable_field:
+    airport_code: KAGC
+    name: "Allegheny County Airport"
+    distance_mi: 6.4
+    longest_runway_ft: 6501
+  estimated_arrival:
+    date: 2024-03-19
+    local_time: "16:00"
+    timezone: America/New_York
+    utc: "2024-03-19T20:00:00Z"
+    basis: "no event time published; 19:00 local assumed for arithmetic only; minus 3h"
+    confidence: low
+  estimated_departure:
+    date: 2024-03-19
+    local_time: "23:00"
+    timezone: America/New_York
+    utc: "2024-03-20T03:00:00Z"
+    basis: "event end + 4h (speech, exit, wheels-up)"
+    confidence: low
+  observed_by_adsb: []
+  observed_by_adsb_note: "NO Kirk-side aircraft is on disk on the ground within 40 miles of KPIT in this window. The arrival and departure above stay estimates."
+airports_within_radius:
+  # Every field a private jet could physically use within the radius.
+  # Heliports, seaplane bases, balloonports and closed fields are excluded -
+  # a business jet cannot use any of them. Everything else is kept, including
+  # every small strip with no scheduled service: those are the point of the sweep.
+  radius_miles: 40
+  centre_airport: KPIT
+  count: 60
+  jet_capable_count: 6
+  light_jet_capable_count: 4
+  no_scheduled_service_count: 59
+  source: "OurAirports (CC0) airports.csv + runways.csv"
+  list:
+    - airport_code: KPIT
+      icao: KPIT
+      iata: PIT
+      name: "Pittsburgh International Airport"
+      city: Pittsburgh
+      region: US-PA
+      country: US
+      type: large_airport
+      elevation_ft: 1203
+      longest_runway_ft: 11500
+      longest_runway_surface: CON
+      runway_count: 4
+      runways_lighted: true
+      scheduled_service: true
+      jet_capability: jet_capable
+      lat: 40.4915
+      lon: -80.2329
+      distance_mi: 0.0
+      bearing: N
+      tracked_plane_presence_in_window: []
+    - airport_code: 7PS7
+      icao: null
+      iata: null
+      name: "Lenzner Farm Airport"
+      city: Sewickley
+      region: US-PA
+      country: US
+      type: small_airport
+      elevation_ft: 1250
+      longest_runway_ft: 1500
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.5387
+      lon: -80.1173
+      distance_mi: 6.9
+      bearing: ENE
+      tracked_plane_presence_in_window: []
+    - airport_code: 82PA
+      icao: null
+      iata: null
+      name: "Frame Field"
+      city: Candor
+      region: US-PA
+      country: US
+      type: small_airport
+      elevation_ft: 1210
+      longest_runway_ft: 1200
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.3967
+      lon: -80.3053
+      distance_mi: 7.6
+      bearing: SSW
+      tracked_plane_presence_in_window: []
+    - airport_code: PN62
+      icao: null
+      iata: null
+      name: "Cataney Airport"
+      city: Midway
+      region: US-PA
+      country: US
+      type: small_airport
+      elevation_ft: 1200
+      longest_runway_ft: 1300
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.3751
+      lon: -80.2998
+      distance_mi: 8.8
+      bearing: SSW
+      tracked_plane_presence_in_window: []
+    - airport_code: 3PS9
+      icao: null
+      iata: null
+      name: "Risker Field"
+      city: Bulger
+      region: US-PA
+      country: US
+      type: small_airport
+      elevation_ft: 1100
+      longest_runway_ft: 1855
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.3784
+      lon: -80.3495
+      distance_mi: 9.9
+      bearing: SW
+      tracked_plane_presence_in_window: []
+    - airport_code: 88PA
+      icao: null
+      iata: null
+      name: "Mc Coy Airport"
+      city: Clinton
+      region: US-PA
+      country: US
+      type: small_airport
+      elevation_ft: 1200
+      longest_runway_ft: 1300
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.5392
+      lon: -80.4131
+      distance_mi: 10.0
+      bearing: WNW
+      tracked_plane_presence_in_window: []
+    - airport_code: 80PN
+      icao: null
+      iata: null
+      name: "Hanny Beaver Airpark Inc Airport"
+      city: Hookstown
+      region: US-PA
+      country: US
+      type: small_airport
+      elevation_ft: 1220
+      longest_runway_ft: 2719
+      longest_runway_surface: ASPH-TURF
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.5417
+      lon: -80.4526
+      distance_mi: 12.0
+      bearing: WNW
+      tracked_plane_presence_in_window: []
+    - airport_code: 24PA
+      icao: null
+      iata: null
+      name: "Kindelberger Landing Strip"
+      city: Freedom
+      region: US-PA
+      country: US
+      type: small_airport
+      elevation_ft: 1140
+      longest_runway_ft: 1515
+      longest_runway_surface: TURF-P
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.6917
+      lon: -80.1778
+      distance_mi: 14.1
+      bearing: NNE
+      tracked_plane_presence_in_window: []
+    - airport_code: PN37
+      icao: null
+      iata: null
+      name: "Fino Airport"
+      city: Hookstown
+      region: US-PA
+      country: US
+      type: small_airport
+      elevation_ft: 1150
+      longest_runway_ft: 1500
+      longest_runway_surface: ASPH
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.6051
+      lon: -80.4581
+      distance_mi: 14.2
+      bearing: WNW
+      tracked_plane_presence_in_window: []
+    - airport_code: US-0391
+      icao: null
+      iata: null
+      name: "Stateline Airport"
+      city: Hookstown
+      region: US-PA
+      country: US
+      type: small_airport
+      elevation_ft: 1151
+      longest_runway_ft: null
+      longest_runway_surface: null
+      runway_count: 0
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: unknown
+      lat: 40.53662
+      lon: -80.51308
+      distance_mi: 15.0
+      bearing: WNW
+      tracked_plane_presence_in_window: []
+    - airport_code: 7G1
+      icao: null
+      iata: null
+      name: "Herron Airport"
+      city: "New Cumberland"
+      region: US-WV
+      country: US
+      type: small_airport
+      elevation_ft: 1226
+      longest_runway_ft: 2030
+      longest_runway_surface: ASPH-P
+      runway_count: 2
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.5334
+      lon: -80.5401
+      distance_mi: 16.4
+      bearing: W
+      tracked_plane_presence_in_window: []
+    - airport_code: 32PN
+      icao: null
+      iata: null
+      name: "Black Rock Airport"
+      city: "New Brighton"
+      region: US-PA
+      country: US
+      type: small_airport
+      elevation_ft: 1150
+      longest_runway_ft: 1800
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.734
+      lon: -80.2759
+      distance_mi: 16.9
+      bearing: N
+      tracked_plane_presence_in_window: []
+    - airport_code: P09
+      icao: null
+      iata: null
+      name: "Lakehill Airport"
+      city: Mars
+      region: US-PA
+      country: US
+      type: small_airport
+      elevation_ft: 1030
+      longest_runway_ft: 2850
+      longest_runway_surface: TURF-F
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.707
+      lon: -80.0303
+      distance_mi: 18.3
+      bearing: NE
+      tracked_plane_presence_in_window: []
+    - airport_code: PN01
+      icao: null
+      iata: null
+      name: "Cedar Run Airport"
+      city: Dorseyville
+      region: US-PA
+      country: US
+      type: small_airport
+      elevation_ft: 1180
+      longest_runway_ft: 1800
+      longest_runway_surface: TURF-G
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.5881
+      lon: -79.9059
+      distance_mi: 18.4
+      bearing: ENE
+      tracked_plane_presence_in_window: []
+    - airport_code: KAGC
+      icao: KAGC
+      iata: AGC
+      name: "Allegheny County Airport"
+      city: Pittsburgh
+      region: US-PA
+      country: US
+      type: medium_airport
+      elevation_ft: 1252
+      longest_runway_ft: 6501
+      longest_runway_surface: CON
+      runway_count: 3
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: jet_capable
+      lat: 40.3544
+      lon: -79.9302
+      distance_mi: 18.5
+      bearing: ESE
+      tracked_plane_presence_in_window: []
+    - airport_code: 77PA
+      icao: null
+      iata: null
+      name: "Nardo Airport"
+      city: "Allison Park"
+      region: US-PA
+      country: US
+      type: small_airport
+      elevation_ft: 1140
+      longest_runway_ft: 1800
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.5834
+      lon: -79.8998
+      distance_mi: 18.6
+      bearing: ENE
+      tracked_plane_presence_in_window: []
+    - airport_code: G05
+      icao: null
+      iata: null
+      name: "Finleyville Airpark"
+      city: Finleyville
+      region: US-PA
+      country: US
+      type: small_airport
+      elevation_ft: 1240
+      longest_runway_ft: 2497
+      longest_runway_surface: ASPH-F
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.2459
+      lon: -80.0123
+      distance_mi: 20.6
+      bearing: SE
+      tracked_plane_presence_in_window: []
+    - airport_code: 1G8
+      icao: null
+      iata: null
+      name: "Eddie Dew Memorial Airpark"
+      city: Toronto
+      region: US-OH
+      country: US
+      type: small_airport
+      elevation_ft: 1084
+      longest_runway_ft: 2268
+      longest_runway_surface: TURF-G
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.4759
+      lon: -80.6281
+      distance_mi: 20.8
+      bearing: W
+      tracked_plane_presence_in_window: []
+    - airport_code: KBVI
+      icao: KBVI
+      iata: BFP
+      name: "Beaver County Airport"
+      city: "Beaver Falls"
+      region: US-PA
+      country: US
+      type: medium_airport
+      elevation_ft: 1253
+      longest_runway_ft: 4501
+      longest_runway_surface: ASP
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: light_jet_capable
+      lat: 40.7725
+      lon: -80.3914
+      distance_mi: 21.1
+      bearing: NNW
+      tracked_plane_presence_in_window: []
+    - airport_code: PN16
+      icao: null
+      iata: null
+      name: "Pabst Blue Ribbon Airport"
+      city: "Evans City"
+      region: US-PA
+      country: US
+      type: small_airport
+      elevation_ft: 1250
+      longest_runway_ft: 2500
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.7584
+      lon: -80.0137
+      distance_mi: 21.7
+      bearing: NNE
+      tracked_plane_presence_in_window: []
+    - airport_code: KPJC
+      icao: null
+      iata: null
+      name: "Zelienople Municipal Airport"
+      city: Zelienople
+      region: US-PA
+      country: US
+      type: small_airport
+      elevation_ft: 898
+      longest_runway_ft: 5002
+      longest_runway_surface: ASP
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: jet_capable
+      lat: 40.8016
+      lon: -80.1607
+      distance_mi: 21.8
+      bearing: N
+      tracked_plane_presence_in_window: []
+    - airport_code: 16PA
+      icao: null
+      iata: null
+      name: "Gregg Airport"
+      city: "Eighty Four"
+      region: US-PA
+      country: US
+      type: small_airport
+      elevation_ft: 1200
+      longest_runway_ft: 2500
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.1806
+      lon: -80.1276
+      distance_mi: 22.2
+      bearing: SSE
+      tracked_plane_presence_in_window: []
+    - airport_code: 9G1
+      icao: null
+      iata: null
+      name: "Pittsburgh Northeast Airport"
+      city: Tarentum
+      region: US-PA
+      country: US
+      type: small_airport
+      elevation_ft: 1063
+      longest_runway_ft: 3550
+      longest_runway_surface: ASPH-G
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: marginal
+      lat: 40.60329
+      lon: -79.82604
+      distance_mi: 22.7
+      bearing: ENE
+      tracked_plane_presence_in_window: []
+    - airport_code: PN38
+      icao: null
+      iata: null
+      name: "Culmerville Airport"
+      city: Culmerville
+      region: US-PA
+      country: US
+      type: small_airport
+      elevation_ft: 1220
+      longest_runway_ft: 1700
+      longest_runway_surface: TURF-F
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.6626
+      lon: -79.8456
+      distance_mi: 23.5
+      bearing: ENE
+      tracked_plane_presence_in_window: []
+    - airport_code: PN14
+      icao: null
+      iata: null
+      name: "Misty Hill Farm Airport"
+      city: "Ren Frew"
+      region: US-PA
+      country: US
+      type: small_airport
+      elevation_ft: 1243
+      longest_runway_ft: 1800
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.7894
+      lon: -79.9975
+      distance_mi: 24.0
+      bearing: NNE
+      tracked_plane_presence_in_window: []
+    - airport_code: KAFJ
+      icao: KAFJ
+      iata: WSG
+      name: "Washington County Airport"
+      city: Washington
+      region: US-PA
+      country: US
+      type: small_airport
+      elevation_ft: 1184
+      longest_runway_ft: 5004
+      longest_runway_surface: ASP
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: jet_capable
+      lat: 40.1365
+      lon: -80.2902
+      distance_mi: 24.7
+      bearing: S
+      tracked_plane_presence_in_window: []
+    - airport_code: KBTP
+      icao: KBTP
+      iata: BTP
+      name: "Pittsburgh/Butler Regional Airport"
+      city: Butler
+      region: US-PA
+      country: US
+      type: small_airport
+      elevation_ft: 1248
+      longest_runway_ft: 4801
+      longest_runway_surface: ASP
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: light_jet_capable
+      lat: 40.7769
+      lon: -79.9497
+      distance_mi: 24.7
+      bearing: NE
+      tracked_plane_presence_in_window: []
+    - airport_code: 68PN
+      icao: null
+      iata: null
+      name: "Narrigan Grass Strip"
+      city: Claysville
+      region: US-PA
+      country: US
+      type: small_airport
+      elevation_ft: 864
+      longest_runway_ft: 2250
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.18604
+      lon: -80.48065
+      distance_mi: 24.8
+      bearing: SSW
+      tracked_plane_presence_in_window: []
+    - airport_code: K02G
+      icao: null
+      iata: null
+      name: "Columbiana County Airport"
+      city: "East Liverpool"
+      region: US-OH
+      country: US
+      type: small_airport
+      elevation_ft: 1160
+      longest_runway_ft: 3503
+      longest_runway_surface: ASPH-G
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: marginal
+      lat: 40.6733
+      lon: -80.6414
+      distance_mi: 24.8
+      bearing: WNW
+      tracked_plane_presence_in_window: []
+    - airport_code: 22D
+      icao: null
+      iata: null
+      name: "Bandel Airport"
+      city: "Eighty Four"
+      region: US-PA
+      country: US
+      type: small_airport
+      elevation_ft: 1210
+      longest_runway_ft: 2260
+      longest_runway_surface: TURF-DIRT-F
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.1306
+      lon: -80.0962
+      distance_mi: 26.0
+      bearing: SSE
+      tracked_plane_presence_in_window: []
+    - airport_code: K2G2
+      icao: null
+      iata: null
+      name: "Jefferson County Airpark"
+      city: Steubenville
+      region: US-OH
+      country: US
+      type: small_airport
+      elevation_ft: 1196
+      longest_runway_ft: 5001
+      longest_runway_surface: ASPH-G
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: jet_capable
+      lat: 40.3594
+      lon: -80.7001
+      distance_mi: 26.2
+      bearing: WSW
+      tracked_plane_presence_in_window: []
+    - airport_code: 31D
+      icao: null
+      iata: null
+      name: "Inter County Airport"
+      city: Irwin
+      region: US-PA
+      country: US
+      type: small_airport
+      elevation_ft: 1250
+      longest_runway_ft: 1800
+      longest_runway_surface: TURF-DIRT-F
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.3312
+      lon: -79.7802
+      distance_mi: 26.3
+      bearing: ESE
+      tracked_plane_presence_in_window: []
+    - airport_code: 2PN7
+      icao: null
+      iata: null
+      name: "Brennan Personal Use Airport"
+      city: Zelienople
+      region: US-PA
+      country: US
+      type: small_airport
+      elevation_ft: 1210
+      longest_runway_ft: 1600
+      longest_runway_surface: ASPH
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.85585
+      lon: -80.06877
+      distance_mi: 26.6
+      bearing: NNE
+      tracked_plane_presence_in_window: []
+    - airport_code: US-6312
+      icao: null
+      iata: null
+      name: "McMillin Landingstrip"
+      city: Wampum
+      region: US-PA
+      country: US
+      type: small_airport
+      elevation_ft: 918
+      longest_runway_ft: 1295
+      longest_runway_surface: GRS
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.88737
+      lon: -80.32027
+      distance_mi: 27.7
+      bearing: N
+      tracked_plane_presence_in_window: []
+    - airport_code: 3G9
+      icao: null
+      iata: null
+      name: "Butler Farm Show Airport"
+      city: Butler
+      region: US-PA
+      country: US
+      type: small_airport
+      elevation_ft: 1333
+      longest_runway_ft: 2580
+      longest_runway_surface: ASPH-F
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.8526
+      lon: -79.9748
+      distance_mi: 28.4
+      bearing: NNE
+      tracked_plane_presence_in_window: []
+    - airport_code: PN68
+      icao: null
+      iata: null
+      name: "Jackson Airport"
+      city: "New Galilee"
+      region: US-PA
+      country: US
+      type: small_airport
+      elevation_ft: 930
+      longest_runway_ft: 1200
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.88932
+      lon: -80.36663
+      distance_mi: 28.4
+      bearing: NNW
+      tracked_plane_presence_in_window: []
+    - airport_code: PS67
+      icao: null
+      iata: null
+      name: "Uphill Airport"
+      city: Claysville
+      region: US-PA
+      country: US
+      type: small_airport
+      elevation_ft: 1360
+      longest_runway_ft: 1865
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.1062
+      lon: -80.4309
+      distance_mi: 28.6
+      bearing: SSW
+      tracked_plane_presence_in_window: []
+    - airport_code: KFWQ
+      icao: null
+      iata: null
+      name: "Rostraver Airport"
+      city: Monongahela
+      region: US-PA
+      country: US
+      type: small_airport
+      elevation_ft: 1228
+      longest_runway_ft: 4002
+      longest_runway_surface: ASP
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: light_jet_capable
+      lat: 40.2097
+      lon: -79.8314
+      distance_mi: 28.7
+      bearing: SE
+      tracked_plane_presence_in_window: []
+    - airport_code: PN95
+      icao: null
+      iata: null
+      name: "Horne Airport"
+      city: "Scenery Hill"
+      region: US-PA
+      country: US
+      type: small_airport
+      elevation_ft: 1040
+      longest_runway_ft: 1300
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.10135
+      lon: -80.03903
+      distance_mi: 28.8
+      bearing: SSE
+      tracked_plane_presence_in_window: []
+    - airport_code: 55OI
+      icao: null
+      iata: null
+      name: "Aero Flight Center Airport"
+      city: "East Palestine"
+      region: US-OH
+      country: US
+      type: small_airport
+      elevation_ft: 1140
+      longest_runway_ft: 3000
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.8587
+      lon: -80.5353
+      distance_mi: 29.9
+      bearing: NNW
+      tracked_plane_presence_in_window: []
+    - airport_code: PN11
+      icao: null
+      iata: null
+      name: "Reno Airport"
+      city: "Enon Valley"
+      region: US-PA
+      country: US
+      type: small_airport
+      elevation_ft: 1160
+      longest_runway_ft: 2100
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.8898
+      lon: -80.4865
+      distance_mi: 30.6
+      bearing: NNW
+      tracked_plane_presence_in_window: []
+    - airport_code: KHLG
+      icao: KHLG
+      iata: HLG
+      name: "Wheeling Ohio County Airport"
+      city: Wheeling
+      region: US-WV
+      country: US
+      type: medium_airport
+      elevation_ft: 1195
+      longest_runway_ft: 5002
+      longest_runway_surface: ASP
+      runway_count: 2
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: jet_capable
+      lat: 40.175
+      lon: -80.6463
+      distance_mi: 30.9
+      bearing: SW
+      tracked_plane_presence_in_window: []
+    - airport_code: OH29
+      icao: null
+      iata: null
+      name: "Petersburg Airport"
+      city: Petersburg
+      region: US-OH
+      country: US
+      type: small_airport
+      elevation_ft: 1174
+      longest_runway_ft: 2600
+      longest_runway_surface: TURF-G
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.9006
+      lon: -80.5554
+      distance_mi: 32.9
+      bearing: NNW
+      tracked_plane_presence_in_window: []
+    - airport_code: PN25
+      icao: null
+      iata: null
+      name: "Lindsay Airport"
+      city: Freeport
+      region: US-PA
+      country: US
+      type: small_airport
+      elevation_ft: 1080
+      longest_runway_ft: 1750
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.7356
+      lon: -79.6887
+      distance_mi: 33.2
+      bearing: ENE
+      tracked_plane_presence_in_window: []
+    - airport_code: 56OH
+      icao: null
+      iata: null
+      name: "Richey Airport"
+      city: Petersburg
+      region: US-OH
+      country: US
+      type: small_airport
+      elevation_ft: 1195
+      longest_runway_ft: 1500
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.9073
+      lon: -80.5515
+      distance_mi: 33.2
+      bearing: NNW
+      tracked_plane_presence_in_window: []
+    - airport_code: 85PN
+      icao: null
+      iata: null
+      name: "Kiski Airport"
+      city: Vandergrift
+      region: US-PA
+      country: US
+      type: small_airport
+      elevation_ft: 1280
+      longest_runway_ft: 1470
+      longest_runway_surface: TURF-G
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.5792
+      lon: -79.6053
+      distance_mi: 33.5
+      bearing: E
+      tracked_plane_presence_in_window: []
+    - airport_code: 5G8
+      icao: null
+      iata: null
+      name: "Greensburg Jeannette Regional Airport"
+      city: Jeannette
+      region: US-PA
+      country: US
+      type: small_airport
+      elevation_ft: 1188
+      longest_runway_ft: 2605
+      longest_runway_surface: ASPH-F
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.3765
+      lon: -79.6084
+      distance_mi: 33.8
+      bearing: ESE
+      tracked_plane_presence_in_window: []
+    - airport_code: PN84
+      icao: null
+      iata: null
+      name: "Lake Arthur Field"
+      city: Portersville
+      region: US-PA
+      country: US
+      type: small_airport
+      elevation_ft: 1240
+      longest_runway_ft: 1400
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.98419
+      lon: -80.16243
+      distance_mi: 34.2
+      bearing: N
+      tracked_plane_presence_in_window: []
+    - airport_code: 6PA1
+      icao: null
+      iata: null
+      name: "Tower Airfield"
+      city: "North Washington"
+      region: US-PA
+      country: US
+      type: small_airport
+      elevation_ft: 1300
+      longest_runway_ft: 500
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.5103
+      lon: -79.5798
+      distance_mi: 34.3
+      bearing: E
+      tracked_plane_presence_in_window: []
+    - airport_code: 8OH4
+      icao: null
+      iata: null
+      name: "York Aerodrome"
+      city: Leetonia
+      region: US-OH
+      country: US
+      type: small_airport
+      elevation_ft: 1260
+      longest_runway_ft: 2611
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.84407
+      lon: -80.70319
+      distance_mi: 34.7
+      bearing: NW
+      tracked_plane_presence_in_window: []
+    - airport_code: 3PN9
+      icao: null
+      iata: null
+      name: "Phil Cain Memorial Field Ultralight Flightpark"
+      city: Export
+      region: US-PA
+      country: US
+      type: small_airport
+      elevation_ft: 1210
+      longest_runway_ft: 700
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.4444
+      lon: -79.55805
+      distance_mi: 35.6
+      bearing: E
+      tracked_plane_presence_in_window: []
+    - airport_code: PN46
+      icao: null
+      iata: null
+      name: "River Hill Aviation Airport"
+      city: Apollo
+      region: US-PA
+      country: US
+      type: small_airport
+      elevation_ft: 1250
+      longest_runway_ft: 1700
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.5644
+      lon: -79.5458
+      distance_mi: 36.4
+      bearing: E
+      tracked_plane_presence_in_window: []
+    - airport_code: 9PS2
+      icao: null
+      iata: null
+      name: "J T Willie Airport"
+      city: Worthington
+      region: US-PA
+      country: US
+      type: small_airport
+      elevation_ft: 1200
+      longest_runway_ft: 2100
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.8087
+      lon: -79.6698
+      distance_mi: 36.8
+      bearing: NE
+      tracked_plane_presence_in_window: []
+    - airport_code: P37
+      icao: null
+      iata: null
+      name: "McVille Airport"
+      city: Freeport
+      region: US-PA
+      country: US
+      type: small_airport
+      elevation_ft: 1090
+      longest_runway_ft: 2800
+      longest_runway_surface: ASP
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.73455
+      lon: -79.59569
+      distance_mi: 37.4
+      bearing: ENE
+      tracked_plane_presence_in_window: []
+    - airport_code: KUCP
+      icao: null
+      iata: null
+      name: "New Castle Municipal Airport"
+      city: "New Castle"
+      region: US-PA
+      country: US
+      type: small_airport
+      elevation_ft: 1070
+      longest_runway_ft: 3995
+      longest_runway_surface: ASP
+      runway_count: 2
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: marginal
+      lat: 41.0253
+      lon: -80.4134
+      distance_mi: 38.1
+      bearing: NNW
+      tracked_plane_presence_in_window: []
+    - airport_code: OH27
+      icao: null
+      iata: null
+      name: "Salem Lakefront Airport"
+      city: Salem
+      region: US-OH
+      country: US
+      type: small_airport
+      elevation_ft: 1170
+      longest_runway_ft: 2110
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.8078
+      lon: -80.8454
+      distance_mi: 38.8
+      bearing: NW
+      tracked_plane_presence_in_window: []
+    - airport_code: 9PN1
+      icao: null
+      iata: null
+      name: "Seitz Field"
+      city: Perryopolis
+      region: US-PA
+      country: US
+      type: small_airport
+      elevation_ft: 1240
+      longest_runway_ft: 1500
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.039
+      lon: -79.79
+      distance_mi: 39.0
+      bearing: SE
+      tracked_plane_presence_in_window: []
+    - airport_code: 87PA
+      icao: null
+      iata: null
+      name: "Waltman Airport"
+      city: Chicora
+      region: US-PA
+      country: US
+      type: small_airport
+      elevation_ft: 1360
+      longest_runway_ft: 2600
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 40.9265
+      lon: -79.7387
+      distance_mi: 39.7
+      bearing: NE
+      tracked_plane_presence_in_window: []
+    - airport_code: 92PN
+      icao: null
+      iata: null
+      name: "Bartsch Airport"
+      city: "New Wilmington"
+      region: US-PA
+      country: US
+      type: small_airport
+      elevation_ft: 1150
+      longest_runway_ft: 2650
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 41.06776
+      lon: -80.29473
+      distance_mi: 39.9
+      bearing: N
+      tracked_plane_presence_in_window: []
+    - airport_code: K4G4
+      icao: null
+      iata: null
+      name: "Youngstown Elser Metro Airport"
+      city: Youngstown
+      region: US-OH
+      country: US
+      type: small_airport
+      elevation_ft: 1070
+      longest_runway_ft: 4012
+      longest_runway_surface: ASP
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: light_jet_capable
+      lat: 40.9618
+      lon: -80.6773
+      distance_mi: 40.0
+      bearing: NW
+      tracked_plane_presence_in_window: []
+tracked_plane_presence:
+  # Was any tracked aircraft on the ground at any field in the list above,
+  # inside the window? Three registers are searched and kept apart, strongest
+  # first. NEVER collapse them into one number.
+  window:
+    from: 2024-03-17
+    to: 2024-03-21
+    days_each_side: 2
+  any_found: false
+  egyptian_su_found: false
+  counts:
+    adsb_ground_contacts: 0
+    adsb_ground_contacts_egyptian_su: 0
+    flights_csv_stays: 0
+    flights_csv_stays_egyptian_su: 0
+    claimed_overlaps: 0
+  from_adsb_traces: []
+  from_flights_csv: []
+  from_overlaps_csv: []
+  just_outside_the_radius:
+    # A hard radius creates a cliff and a cliff hides evidence. These fields
+    # sit between 40 and 60 miles from the arrival airport. They are NOT counted
+    # as hits and must never be published as ones - they are here so a near miss
+    # is visible rather than silently dropped.
+    outer_radius_miles: 60.0
+    adsb_ground_contacts: []
+    flights_csv_stays: []
+    claimed_overlaps: []
+  coverage:
+    # AN EMPTY RESULT ABOVE IS NOT A FINDING UNLESS THIS SAYS THE DAYS WERE HELD.
+    # aircraft_days_needed = tails x days in the window. aircraft_days_held is
+    # how many of those this repo actually has a trace for. The rest were never
+    # pulled, or the networks heard nothing - the two are indistinguishable here.
+    aircraft_days_needed: 75
+    aircraft_days_held: 0
+    coverage_pct: 0.0
+    tails_with_no_trace_in_window:
+      - N102DZ
+      - N1098L
+      - N2100L
+      - N40JD
+      - N560TW
+      - N582MM
+      - N59906
+      - N872RA
+      - N888KG
+      - SU-BGM
+      - SU-BND
+      - SU-BTT
+      - SU-BTU
+      - SU-BTV
+      - T7-ELL
+    by_side:
+      following:
+        # FOLLOWING is the side the claim is about - the Egyptian SU- tails.
+        # This percentage is the one that decides whether an empty result means
+        # anything at all.
+        tails: 6
+        aircraft_days_needed: 30
+        aircraft_days_held: 0
+        coverage_pct: 0.0
+      kirk:
+        # KIRK-side coverage is what turns an ESTIMATED arrival into an
+        # OBSERVED one. Low here means the arrival times above stay estimates.
+        tails: 6
+        aircraft_days_needed: 30
+        aircraft_days_held: 0
+        coverage_pct: 0.0
+      n1098l:
+        # Other tracked aircraft. A DIFFERENT CLAIM - do not merge the threads.
+        tails: 3
+        aircraft_days_needed: 15
+        aircraft_days_held: 0
+        coverage_pct: 0.0
+counterargument:
+  - "ONE PAIRING IS NOT EVIDENCE. The claim under test is a repetition across many stops, and any single pairing has an innocent explanation a reader will find."
+  - "A field inside the radius is a field a jet COULD have used. Nothing here shows that anyone did use it, or that two aircraft on one ramp had any connection."
+  - "Maintenance is the strongest innocent explanation in this record: Duncan Aviation (Provo and Lincoln) and Yingling (Wichita) are Part 145 Falcon and Gulfstream shops, and a Falcon 7X sitting for weeks at one reads as a maintenance visit."
+  - "Transatlantic customs and fuel stops explain the recurring East Coast fields."
+  - "ERIKA'S SIDE IS THE WEAK SIDE. Her flight logs are reported erased, so any Erika pairing rests on the foreign aircraft's track plus a CLAIMED location for her. See /Planes/Erika-Flight-Logs-Erased."
+what_we_do_not_know:
+  - "Whether Charlie Kirk, Erika Kirk, or any TPUSA party actually flew to this event, or which aircraft they used. The arrival airport above is an inference from the venue city, not a record."
+  - "Whether the estimated arrival and departure times are within hours or within days of the truth, wherever observed_by_adsb is empty."
+  - "What the tracked aircraft were doing at any field they appear at. A trace proves presence, never purpose and never occupancy."
+  - "Whether the receiver networks simply did not hear an aircraft that was there. See the coverage block - an absence is not a finding."

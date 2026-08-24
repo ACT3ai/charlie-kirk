@@ -1,0 +1,755 @@
+# GENERATED FILE - regenerate, do not hand-edit.
+#   node/python: apis/public_open_source/code/airports_near.py --only 20241030_greenville
+#   The prompt that governs this file: prompts/p_airports_near.md
+schema: ck.speaking.airports_near/1
+generated_utc: "2026-08-24T19:03:27Z"
+generated_by: site/docs/Planes/following/apis/public_open_source/code/airports_near.py
+page:
+  slug: 20241030_greenville
+  mdx: site/docs/Planes/following/speaking/20241030_greenville.mdx
+  yaml: site/docs/Planes/following/speaking/20241030_greenville.yaml
+  url: /Planes/following/speaking/20241030_greenville
+event:
+  title: "You're Being Brainwashed Tour — East Carolina University"
+  who: Charlie
+  attendee_class: CHARLIE_ONLY
+  charlie_present: "yes"
+  erika_present: not_documented
+  attendance_status: held
+  event_type: campus
+  dates:
+    raw: 2024-10-30
+    first_day: 2024-10-30
+    last_day: 2024-10-30
+    granularity: DAY
+    certainty: EVENT_DATE
+    # PODCAST_PROXY means the date is a podcast RELEASE date and the event was normally 0-7 days earlier. Never publish a same-day claim off one.
+  local_time:
+    raw: null
+    parsed_hhmm: null
+    basis: no_time_published
+    timezone: America/New_York
+    timezone_method: timezonefinder
+  location:
+    city: Greenville
+    state: NC
+    country: USA
+    venue: "East Carolina University"
+    metro_area: "Greenville NC"
+    geocode:
+      lat: 35.59643
+      lon: -77.37526
+      method: us_census_2024_gazetteer
+      matched: "Greenville city"
+  source: "@charliekirk11 30 Oct 2024"
+  source_url: "https://x.com/charliekirk11/status/1851712534836867197"
+  days_before_sept10_2025: 315
+search:
+  radius_miles: 40
+  window_days_each_side: 2
+  window_from: 2024-10-28
+  window_to: 2024-11-01
+  window_day_count: 5
+  centre: KPGV
+  tails_searched:
+    - N102DZ
+    - N1098L
+    - N2100L
+    - N40JD
+    - N560TW
+    - N582MM
+    - N59906
+    - N872RA
+    - N888KG
+    - SU-BGM
+    - SU-BND
+    - SU-BTT
+    - SU-BTU
+    - SU-BTV
+    - T7-ELL
+  sources_searched:
+    - "recovered ADS-B traces on disk (site/docs/Planes/<TAIL>/data/recovered/)"
+    - site/docs/Planes/following/flights.csv
+    - site/docs/Planes/following/overlaps.csv
+arrival_airport:
+  # ESTIMATE. No published Kirk-side flight record exists for this event unless
+  # the observed_by_adsb block below is non-empty. This is arithmetic on the
+  # event time, not a landing record.
+  chosen_airport:
+    airport_code: KPGV
+    icao: KPGV
+    iata: PGV
+    name: "Pitt-Greenville Airport"
+    city: Greenville
+    region: US-NC
+    country: US
+    type: medium_airport
+    elevation_ft: 26
+    longest_runway_ft: 7175
+    longest_runway_surface: ASP
+    runway_count: 2
+    runways_lighted: true
+    scheduled_service: true
+    jet_capability: jet_capable
+    lat: 35.63553
+    lon: -77.38426
+    distance_mi: 2.7
+    bearing: N
+  distance_from_event_city_mi: 2.7
+  selection_basis: CURATED_CSV_AND_COMPUTED_NEAREST_JET_FIELD_AGREE
+  curated_value_in_tpusa_events_csv:
+    airport_code: KPGV
+    airport_name: "Pitt-Greenville Airport"
+    distance_mi: 4
+  computed_nearest_jet_capable_field:
+    airport_code: KPGV
+    name: "Pitt-Greenville Airport"
+    distance_mi: 2.7
+    longest_runway_ft: 7175
+  estimated_arrival:
+    date: 2024-10-30
+    local_time: "16:00"
+    timezone: America/New_York
+    utc: "2024-10-30T20:00:00Z"
+    basis: "no event time published; 19:00 local assumed for arithmetic only; minus 3h"
+    confidence: low
+  estimated_departure:
+    date: 2024-10-30
+    local_time: "23:00"
+    timezone: America/New_York
+    utc: "2024-10-31T03:00:00Z"
+    basis: "event end + 4h (speech, exit, wheels-up)"
+    confidence: low
+  observed_by_adsb: []
+  observed_by_adsb_note: "NO Kirk-side aircraft is on disk on the ground within 40 miles of KPGV in this window. The arrival and departure above stay estimates."
+airports_within_radius:
+  # Every field a private jet could physically use within the radius.
+  # Heliports, seaplane bases, balloonports and closed fields are excluded -
+  # a business jet cannot use any of them. Everything else is kept, including
+  # every small strip with no scheduled service: those are the point of the sweep.
+  radius_miles: 40
+  centre_airport: KPGV
+  count: 27
+  jet_capable_count: 9
+  light_jet_capable_count: 1
+  no_scheduled_service_count: 26
+  source: "OurAirports (CC0) airports.csv + runways.csv"
+  list:
+    - airport_code: KPGV
+      icao: KPGV
+      iata: PGV
+      name: "Pitt-Greenville Airport"
+      city: Greenville
+      region: US-NC
+      country: US
+      type: medium_airport
+      elevation_ft: 26
+      longest_runway_ft: 7175
+      longest_runway_surface: ASP
+      runway_count: 2
+      runways_lighted: true
+      scheduled_service: true
+      jet_capability: jet_capable
+      lat: 35.63553
+      lon: -77.38426
+      distance_mi: 0.0
+      bearing: N
+      tracked_plane_presence_in_window: []
+    - airport_code: NC47
+      icao: null
+      iata: null
+      name: "South Oaks Aerodrome"
+      city: Winterville
+      region: US-NC
+      country: US
+      type: small_airport
+      elevation_ft: 50
+      longest_runway_ft: 1850
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 35.48216
+      lon: -77.3559
+      distance_mi: 10.7
+      bearing: S
+      tracked_plane_presence_in_window: []
+    - airport_code: N08
+      icao: null
+      iata: null
+      name: "Flanagan Field"
+      city: Farmville
+      region: US-NC
+      country: US
+      type: small_airport
+      elevation_ft: 75
+      longest_runway_ft: 2500
+      longest_runway_surface: TURF-G
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 35.5567
+      lon: -77.5606
+      distance_mi: 11.3
+      bearing: WSW
+      tracked_plane_presence_in_window: []
+    - airport_code: NR40
+      icao: null
+      iata: null
+      name: "Als Airport"
+      city: Bethel
+      region: US-NC
+      country: US
+      type: small_airport
+      elevation_ft: 65
+      longest_runway_ft: 3200
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 35.82083
+      lon: -77.37889
+      distance_mi: 12.8
+      bearing: N
+      tracked_plane_presence_in_window: []
+    - airport_code: NC49
+      icao: null
+      iata: null
+      name: "Boyd Field"
+      city: Grimesland
+      region: US-NC
+      country: US
+      type: small_airport
+      elevation_ft: 50
+      longest_runway_ft: 1400
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 35.5278
+      lon: -77.1967
+      distance_mi: 12.9
+      bearing: SE
+      tracked_plane_presence_in_window: []
+    - airport_code: 58NR
+      icao: null
+      iata: null
+      name: "Chase Field"
+      city: Hookerton
+      region: US-NC
+      country: US
+      type: small_airport
+      elevation_ft: 56
+      longest_runway_ft: 1600
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 35.42527
+      lon: -77.5974
+      distance_mi: 18.8
+      bearing: SW
+      tracked_plane_presence_in_window: []
+    - airport_code: KOCW
+      icao: KOCW
+      iata: OCW
+      name: "Warren Field"
+      city: Washington
+      region: US-NC
+      country: US
+      type: small_airport
+      elevation_ft: 38
+      longest_runway_ft: 5000
+      longest_runway_surface: ASP
+      runway_count: 2
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: jet_capable
+      lat: 35.5705
+      lon: -77.0498
+      distance_mi: 19.3
+      bearing: ESE
+      tracked_plane_presence_in_window: []
+    - airport_code: KMCZ
+      icao: null
+      iata: null
+      name: "Martin County Airport"
+      city: Williamston
+      region: US-NC
+      country: US
+      type: small_airport
+      elevation_ft: 76
+      longest_runway_ft: 5000
+      longest_runway_surface: ASP
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: jet_capable
+      lat: 35.8622
+      lon: -77.1782
+      distance_mi: 19.5
+      bearing: NE
+      tracked_plane_presence_in_window: []
+    - airport_code: KETC
+      icao: null
+      iata: null
+      name: "Tarboro Edgecombe Airport"
+      city: Tarboro
+      region: US-NC
+      country: US
+      type: small_airport
+      elevation_ft: 53
+      longest_runway_ft: 3999
+      longest_runway_surface: ASP
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: marginal
+      lat: 35.9371
+      lon: -77.5466
+      distance_mi: 22.7
+      bearing: NNW
+      tracked_plane_presence_in_window: []
+    - airport_code: 18NR
+      icao: null
+      iata: null
+      name: "Suggs Field"
+      city: Kinston
+      region: US-NC
+      country: US
+      type: small_airport
+      elevation_ft: 85
+      longest_runway_ft: 2100
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 35.36494
+      lon: -77.63539
+      distance_mi: 23.4
+      bearing: SW
+      tracked_plane_presence_in_window: []
+    - airport_code: KISO
+      icao: KISO
+      iata: ISO
+      name: "Kinston Regional Jetport At Stallings Field"
+      city: Kinston
+      region: US-NC
+      country: US
+      type: medium_airport
+      elevation_ft: 93
+      longest_runway_ft: 11498
+      longest_runway_surface: ASP
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: jet_capable
+      lat: 35.3314
+      lon: -77.6088
+      distance_mi: 24.5
+      bearing: SSW
+      tracked_plane_presence_in_window: []
+    - airport_code: US-0901
+      icao: null
+      iata: null
+      name: "Ellis Airport"
+      city: Hobgood
+      region: US-NC
+      country: US
+      type: small_airport
+      elevation_ft: 91
+      longest_runway_ft: 3335
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 36.04256
+      lon: -77.37722
+      distance_mi: 28.1
+      bearing: N
+      tracked_plane_presence_in_window: []
+    - airport_code: 6NC5
+      icao: null
+      iata: null
+      name: "Thompson Farms Airport"
+      city: Whitakers
+      region: US-NC
+      country: US
+      type: small_airport
+      elevation_ft: 100
+      longest_runway_ft: 1800
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 36.02489
+      lon: -77.65942
+      distance_mi: 31.0
+      bearing: NNW
+      tracked_plane_presence_in_window: []
+    - airport_code: 66NC
+      icao: null
+      iata: null
+      name: "Hood Field"
+      city: Dover
+      region: US-NC
+      country: US
+      type: small_airport
+      elevation_ft: 59
+      longest_runway_ft: 2800
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 35.1744
+      lon: -77.4836
+      distance_mi: 32.3
+      bearing: S
+      tracked_plane_presence_in_window: []
+    - airport_code: KRWI
+      icao: KRWI
+      iata: RWI
+      name: "Rocky Mount Wilson Regional Airport"
+      city: "Rocky Mount"
+      region: US-NC
+      country: US
+      type: medium_airport
+      elevation_ft: 159
+      longest_runway_ft: 7099
+      longest_runway_surface: ASP
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: jet_capable
+      lat: 35.8563
+      lon: -77.8919
+      distance_mi: 32.3
+      bearing: WNW
+      tracked_plane_presence_in_window: []
+    - airport_code: KW03
+      icao: null
+      iata: null
+      name: "Wilson Industrial Air Center Airport"
+      city: Wilson
+      region: US-NC
+      country: US
+      type: small_airport
+      elevation_ft: 161
+      longest_runway_ft: 4500
+      longest_runway_surface: ASP
+      runway_count: 3
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: light_jet_capable
+      lat: 35.7704
+      lon: -77.9698
+      distance_mi: 34.1
+      bearing: WNW
+      tracked_plane_presence_in_window: []
+    - airport_code: 49NR
+      icao: null
+      iata: null
+      name: "Forty Niner at Middle Tract Airport"
+      city: Windsor
+      region: US-NC
+      country: US
+      type: small_airport
+      elevation_ft: 32
+      longest_runway_ft: null
+      longest_runway_surface: null
+      runway_count: 0
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: unknown
+      lat: 35.89833
+      lon: -76.8625
+      distance_mi: 34.4
+      bearing: ENE
+      tracked_plane_presence_in_window: []
+    - airport_code: NC66
+      icao: null
+      iata: null
+      name: "Ventosa Plantation Airport"
+      city: "Scotland Neck"
+      region: US-NC
+      country: US
+      type: small_airport
+      elevation_ft: 30
+      longest_runway_ft: 3400
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 36.1313
+      lon: -77.2958
+      distance_mi: 34.6
+      bearing: N
+      tracked_plane_presence_in_window: []
+    - airport_code: KGWW
+      icao: null
+      iata: null
+      name: "Wayne Executive Jetport"
+      city: Pikeville
+      region: US-NC
+      country: US
+      type: small_airport
+      elevation_ft: 134
+      longest_runway_ft: 5501
+      longest_runway_surface: ASP
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: jet_capable
+      lat: 35.4606
+      lon: -77.9649
+      distance_mi: 34.8
+      bearing: WSW
+      tracked_plane_presence_in_window: []
+    - airport_code: 33NC
+      icao: null
+      iata: null
+      name: "Easley Acres Airport"
+      city: Lucama
+      region: US-NC
+      country: US
+      type: small_airport
+      elevation_ft: 132
+      longest_runway_ft: 3100
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 35.63473
+      lon: -78.0136
+      distance_mi: 35.3
+      bearing: W
+      tracked_plane_presence_in_window: []
+    - airport_code: 6NC9
+      icao: null
+      iata: null
+      name: "Moss Hill Airport"
+      city: Kinston
+      region: US-NC
+      country: US
+      type: small_airport
+      elevation_ft: 30
+      longest_runway_ft: 3000
+      longest_runway_surface: TURF
+      runway_count: 2
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 35.20779
+      lon: -77.75977
+      distance_mi: 36.3
+      bearing: SW
+      tracked_plane_presence_in_window: []
+    - airport_code: 2NC7
+      icao: null
+      iata: null
+      name: "Scotland Neck East Airport"
+      city: "Scotland Neck"
+      region: US-NC
+      country: US
+      type: small_airport
+      elevation_ft: 103
+      longest_runway_ft: 3000
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 36.1679
+      lon: -77.3989
+      distance_mi: 36.8
+      bearing: N
+      tracked_plane_presence_in_window: []
+    - airport_code: KPMZ
+      icao: null
+      iata: null
+      name: "Plymouth Municipal Airport"
+      city: Plymouth
+      region: US-NC
+      country: US
+      type: small_airport
+      elevation_ft: 39
+      longest_runway_ft: 5500
+      longest_runway_surface: ASP
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: jet_capable
+      lat: 35.8084
+      lon: -76.7593
+      distance_mi: 37.0
+      bearing: ENE
+      tracked_plane_presence_in_window: []
+    - airport_code: NC12
+      icao: null
+      iata: null
+      name: "Lee Creek Airport"
+      city: Aurora
+      region: US-NC
+      country: US
+      type: small_airport
+      elevation_ft: 3
+      longest_runway_ft: 5070
+      longest_runway_surface: ASP
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: jet_capable
+      lat: 35.3896
+      lon: -76.7847
+      distance_mi: 37.8
+      bearing: ESE
+      tracked_plane_presence_in_window: []
+    - airport_code: KGSB
+      icao: KGSB
+      iata: GSB
+      name: "Seymour Johnson Air Force Base"
+      city: Goldsboro
+      region: US-NC
+      country: US
+      type: medium_airport
+      elevation_ft: 109
+      longest_runway_ft: 11760
+      longest_runway_surface: PEM
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: jet_capable
+      lat: 35.3394
+      lon: -77.9606
+      distance_mi: 38.3
+      bearing: WSW
+      tracked_plane_presence_in_window: []
+    - airport_code: 76NC
+      icao: null
+      iata: null
+      name: "Dunroamin Farms Airport"
+      city: Enfield
+      region: US-NC
+      country: US
+      type: small_airport
+      elevation_ft: 100
+      longest_runway_ft: 3000
+      longest_runway_surface: TURF
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 36.1599
+      lon: -77.6247
+      distance_mi: 38.6
+      bearing: NNW
+      tracked_plane_presence_in_window: []
+    - airport_code: NC20
+      icao: null
+      iata: null
+      name: "Canaan Air Base Airport"
+      city: "New Bern"
+      region: US-NC
+      country: US
+      type: small_airport
+      elevation_ft: 33
+      longest_runway_ft: 1840
+      longest_runway_surface: ASPH
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 35.08727
+      lon: -77.16247
+      distance_mi: 39.9
+      bearing: SSE
+      tracked_plane_presence_in_window: []
+tracked_plane_presence:
+  # Was any tracked aircraft on the ground at any field in the list above,
+  # inside the window? Three registers are searched and kept apart, strongest
+  # first. NEVER collapse them into one number.
+  window:
+    from: 2024-10-28
+    to: 2024-11-01
+    days_each_side: 2
+  any_found: false
+  egyptian_su_found: false
+  counts:
+    adsb_ground_contacts: 0
+    adsb_ground_contacts_egyptian_su: 0
+    flights_csv_stays: 0
+    flights_csv_stays_egyptian_su: 0
+    claimed_overlaps: 0
+  from_adsb_traces: []
+  from_flights_csv: []
+  from_overlaps_csv: []
+  just_outside_the_radius:
+    # A hard radius creates a cliff and a cliff hides evidence. These fields
+    # sit between 40 and 60 miles from the arrival airport. They are NOT counted
+    # as hits and must never be published as ones - they are here so a near miss
+    # is visible rather than silently dropped.
+    outer_radius_miles: 60.0
+    adsb_ground_contacts: []
+    flights_csv_stays: []
+    claimed_overlaps: []
+  coverage:
+    # AN EMPTY RESULT ABOVE IS NOT A FINDING UNLESS THIS SAYS THE DAYS WERE HELD.
+    # aircraft_days_needed = tails x days in the window. aircraft_days_held is
+    # how many of those this repo actually has a trace for. The rest were never
+    # pulled, or the networks heard nothing - the two are indistinguishable here.
+    aircraft_days_needed: 75
+    aircraft_days_held: 7
+    coverage_pct: 9.3
+    tails_with_no_trace_in_window:
+      - N40JD
+      - N888KG
+      - SU-BGM
+      - SU-BND
+      - SU-BTT
+      - SU-BTU
+      - SU-BTV
+      - T7-ELL
+    by_side:
+      following:
+        # FOLLOWING is the side the claim is about - the Egyptian SU- tails.
+        # This percentage is the one that decides whether an empty result means
+        # anything at all.
+        tails: 6
+        aircraft_days_needed: 30
+        aircraft_days_held: 0
+        coverage_pct: 0.0
+      kirk:
+        # KIRK-side coverage is what turns an ESTIMATED arrival into an
+        # OBSERVED one. Low here means the arrival times above stay estimates.
+        tails: 6
+        aircraft_days_needed: 30
+        aircraft_days_held: 4
+        coverage_pct: 13.3
+      n1098l:
+        # Other tracked aircraft. A DIFFERENT CLAIM - do not merge the threads.
+        tails: 3
+        aircraft_days_needed: 15
+        aircraft_days_held: 3
+        coverage_pct: 20.0
+counterargument:
+  - "ONE PAIRING IS NOT EVIDENCE. The claim under test is a repetition across many stops, and any single pairing has an innocent explanation a reader will find."
+  - "A field inside the radius is a field a jet COULD have used. Nothing here shows that anyone did use it, or that two aircraft on one ramp had any connection."
+  - "Maintenance is the strongest innocent explanation in this record: Duncan Aviation (Provo and Lincoln) and Yingling (Wichita) are Part 145 Falcon and Gulfstream shops, and a Falcon 7X sitting for weeks at one reads as a maintenance visit."
+  - "Transatlantic customs and fuel stops explain the recurring East Coast fields."
+  - "ERIKA'S SIDE IS THE WEAK SIDE. Her flight logs are reported erased, so any Erika pairing rests on the foreign aircraft's track plus a CLAIMED location for her. See /Planes/Erika-Flight-Logs-Erased."
+what_we_do_not_know:
+  - "Whether Charlie Kirk, Erika Kirk, or any TPUSA party actually flew to this event, or which aircraft they used. The arrival airport above is an inference from the venue city, not a record."
+  - "Whether the estimated arrival and departure times are within hours or within days of the truth, wherever observed_by_adsb is empty."
+  - "What the tracked aircraft were doing at any field they appear at. A trace proves presence, never purpose and never occupancy."
+  - "Whether the receiver networks simply did not hear an aircraft that was there. See the coverage block - an absence is not a finding."

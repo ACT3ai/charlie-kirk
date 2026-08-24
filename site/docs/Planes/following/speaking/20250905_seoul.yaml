@@ -1,0 +1,409 @@
+# GENERATED FILE - regenerate, do not hand-edit.
+#   node/python: apis/public_open_source/code/airports_near.py --only 20250905_seoul
+#   The prompt that governs this file: prompts/p_airports_near.md
+schema: ck.speaking.airports_near/1
+generated_utc: "2026-08-24T19:03:27Z"
+generated_by: site/docs/Planes/following/apis/public_open_source/code/airports_near.py
+page:
+  slug: 20250905_seoul
+  mdx: site/docs/Planes/following/speaking/20250905_seoul.mdx
+  yaml: site/docs/Planes/following/speaking/20250905_seoul.yaml
+  url: /Planes/following/speaking/20250905_seoul
+event:
+  title: "Build Up Korea 2025"
+  who: Charlie
+  attendee_class: CHARLIE_ONLY
+  charlie_present: "yes"
+  erika_present: not_documented
+  attendance_status: held
+  event_type: conference
+  dates:
+    raw: "2025-09-05 to 2025-09-06"
+    first_day: 2025-09-05
+    last_day: 2025-09-06
+    granularity: DAY
+    certainty: EVENT_DATE
+    # PODCAST_PROXY means the date is a podcast RELEASE date and the event was normally 0-7 days earlier. Never publish a same-day claim off one.
+  local_time:
+    raw: null
+    parsed_hhmm: null
+    basis: no_time_published
+    timezone: Asia/Seoul
+    timezone_method: timezonefinder
+  location:
+    city: Seoul
+    state: null
+    country: "South Korea"
+    venue: "Build Up Korea 2025, Seoul / Goyang-si, Gyeonggi-do"
+    metro_area: "Seoul KR"
+    geocode:
+      lat: 37.5665
+      lon: 126.978
+      method: manual_table
+      matched: "Seoul, Republic of Korea (city hall)"
+  source: "NBC News 12 Sep 2025; Reuters 11 Sep 2025; charliekirk.com/events (Goyang-si); Korea JoongAng Daily"
+  source_url: "https://www.nbcnews.com/world/asia/charlie-kirk-was-spreading-conservative-message-asia-days-was-killed-rcna230759"
+  days_before_sept10_2025: 5
+search:
+  radius_miles: 40
+  window_days_each_side: 2
+  window_from: 2025-09-03
+  window_to: 2025-09-08
+  window_day_count: 6
+  centre: RKSI
+  tails_searched:
+    - N102DZ
+    - N1098L
+    - N2100L
+    - N40JD
+    - N560TW
+    - N582MM
+    - N59906
+    - N872RA
+    - N888KG
+    - SU-BGM
+    - SU-BND
+    - SU-BTT
+    - SU-BTU
+    - SU-BTV
+    - T7-ELL
+  sources_searched:
+    - "recovered ADS-B traces on disk (site/docs/Planes/<TAIL>/data/recovered/)"
+    - site/docs/Planes/following/flights.csv
+    - site/docs/Planes/following/overlaps.csv
+arrival_airport:
+  # ESTIMATE. No published Kirk-side flight record exists for this event unless
+  # the observed_by_adsb block below is non-empty. This is arithmetic on the
+  # event time, not a landing record.
+  chosen_airport:
+    airport_code: RKSI
+    icao: RKSI
+    iata: ICN
+    name: "Incheon International Airport"
+    city: Seoul
+    region: KR-28
+    country: KR
+    type: large_airport
+    elevation_ft: 23
+    longest_runway_ft: 13123
+    longest_runway_surface: ASPH
+    runway_count: 4
+    runways_lighted: true
+    scheduled_service: true
+    jet_capability: jet_capable
+    lat: 37.4691
+    lon: 126.451
+    distance_mi: 29.7
+    bearing: WSW
+  distance_from_event_city_mi: 29.7
+  selection_basis: CURATED_tpusa_events.csv_VALUE_KEPT_computed_nearest_jet_field_DIFFERS
+  curated_value_in_tpusa_events_csv:
+    airport_code: RKSI
+    airport_name: "Incheon International"
+    distance_mi: 30
+  computed_nearest_jet_capable_field:
+    airport_code: RKSS
+    name: "Seoul Gimpo International Airport"
+    distance_mi: 10.3
+    longest_runway_ft: 11811
+  estimated_arrival:
+    date: 2025-09-05
+    local_time: "16:00"
+    timezone: Asia/Seoul
+    utc: "2025-09-05T07:00:00Z"
+    basis: "no event time published; 19:00 local assumed for arithmetic only; minus 3h"
+    confidence: low
+  estimated_departure:
+    date: 2025-09-06
+    local_time: "23:00"
+    timezone: Asia/Seoul
+    utc: "2025-09-06T14:00:00Z"
+    basis: "event end + 4h (speech, exit, wheels-up)"
+    confidence: low
+  observed_by_adsb: []
+  observed_by_adsb_note: "NO Kirk-side aircraft is on disk on the ground within 40 miles of RKSI in this window. The arrival and departure above stay estimates."
+airports_within_radius:
+  # Every field a private jet could physically use within the radius.
+  # Heliports, seaplane bases, balloonports and closed fields are excluded -
+  # a business jet cannot use any of them. Everything else is kept, including
+  # every small strip with no scheduled service: those are the point of the sweep.
+  radius_miles: 40
+  centre_airport: RKSI
+  count: 10
+  jet_capable_count: 4
+  light_jet_capable_count: 0
+  no_scheduled_service_count: 8
+  source: "OurAirports (CC0) airports.csv + runways.csv"
+  list:
+    - airport_code: RKSI
+      icao: RKSI
+      iata: ICN
+      name: "Incheon International Airport"
+      city: Seoul
+      region: KR-28
+      country: KR
+      type: large_airport
+      elevation_ft: 23
+      longest_runway_ft: 13123
+      longest_runway_surface: ASPH
+      runway_count: 4
+      runways_lighted: true
+      scheduled_service: true
+      jet_capability: jet_capable
+      lat: 37.4691
+      lon: 126.451
+      distance_mi: 0.0
+      bearing: N
+      tracked_plane_presence_in_window: []
+    - airport_code: RKRB
+      icao: null
+      iata: null
+      name: "Bucheon (G-103) Airfield"
+      city: Ilsin-ro
+      region: KR-28
+      country: KR
+      type: small_airport
+      elevation_ft: 92
+      longest_runway_ft: 1608
+      longest_runway_surface: ASPHALT
+      runway_count: 1
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 37.47492
+      lon: 126.74727
+      distance_mi: 16.3
+      bearing: E
+      tracked_plane_presence_in_window: []
+    - airport_code: RKSS
+      icao: RKSS
+      iata: GMP
+      name: "Seoul Gimpo International Airport"
+      city: Seoul
+      region: KR-11
+      country: KR
+      type: large_airport
+      elevation_ft: 59
+      longest_runway_ft: 11811
+      longest_runway_surface: ASP
+      runway_count: 2
+      runways_lighted: true
+      scheduled_service: true
+      jet_capability: jet_capable
+      lat: 37.5583
+      lon: 126.791
+      distance_mi: 19.6
+      bearing: ENE
+      tracked_plane_presence_in_window: []
+    - airport_code: RKRS
+      icao: null
+      iata: null
+      name: "Susaek (G 113) Airport"
+      city: Goyang
+      region: KR-41
+      country: KR
+      type: small_airport
+      elevation_ft: 64
+      longest_runway_ft: 3680
+      longest_runway_surface: ASPHALT
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: marginal
+      lat: 37.60054
+      lon: 126.86952
+      distance_mi: 24.7
+      bearing: ENE
+      tracked_plane_presence_in_window: []
+    - airport_code: RKRP
+      icao: null
+      iata: null
+      name: "Paju (G-110) Airport"
+      city: Paju
+      region: KR-41
+      country: KR
+      type: small_airport
+      elevation_ft: 65
+      longest_runway_ft: 1620
+      longest_runway_surface: ASP
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: not_jet_capable
+      lat: 37.76349
+      lon: 126.79255
+      distance_mi: 27.6
+      bearing: NE
+      tracked_plane_presence_in_window: []
+    - airport_code: KR-0299
+      icao: null
+      iata: null
+      name: "Sky Nuri Flight School Airstrip"
+      city: Hwaseong
+      region: KR-41
+      country: KR
+      type: small_airport
+      elevation_ft: 20
+      longest_runway_ft: null
+      longest_runway_surface: null
+      runway_count: 0
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: unknown
+      lat: 37.10731
+      lon: 126.7644
+      distance_mi: 30.4
+      bearing: SE
+      tracked_plane_presence_in_window: []
+    - airport_code: RKSW
+      icao: RKSW
+      iata: SWU
+      name: "Suwon Airport"
+      city: Suwon
+      region: KR-41
+      country: KR
+      type: medium_airport
+      elevation_ft: 88
+      longest_runway_ft: 9000
+      longest_runway_surface: ASP
+      runway_count: 3
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: jet_capable
+      lat: 37.2394
+      lon: 127.007
+      distance_mi: 34.4
+      bearing: ESE
+      tracked_plane_presence_in_window: []
+    - airport_code: RKSM
+      icao: null
+      iata: SSN
+      name: "Seoul Air Base (K-16)"
+      city: Seongnam
+      region: KR-41
+      country: KR
+      type: medium_airport
+      elevation_ft: 92
+      longest_runway_ft: 9700
+      longest_runway_surface: CON
+      runway_count: 2
+      runways_lighted: true
+      scheduled_service: false
+      jet_capability: jet_capable
+      lat: 37.44474
+      lon: 127.11272
+      distance_mi: 36.3
+      bearing: E
+      tracked_plane_presence_in_window: []
+    - airport_code: RKRA
+      icao: null
+      iata: null
+      name: "Ganap-ri (G-222) Airport"
+      city: Ganap-ri
+      region: KR-41
+      country: KR
+      type: small_airport
+      elevation_ft: 287
+      longest_runway_ft: 3915
+      longest_runway_surface: ASP
+      runway_count: 1
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: marginal
+      lat: 37.83006
+      lon: 126.99013
+      distance_mi: 38.6
+      bearing: NE
+      tracked_plane_presence_in_window: []
+    - airport_code: KR-1126
+      icao: null
+      iata: null
+      name: "Guri Airfield"
+      city: "Guri-Si (Guri City)"
+      region: KR-41
+      country: KR
+      type: small_airport
+      elevation_ft: null
+      longest_runway_ft: null
+      longest_runway_surface: null
+      runway_count: 0
+      runways_lighted: false
+      scheduled_service: false
+      jet_capability: unknown
+      lat: 37.57555
+      lon: 127.14687
+      distance_mi: 38.8
+      bearing: E
+      tracked_plane_presence_in_window: []
+tracked_plane_presence:
+  # Was any tracked aircraft on the ground at any field in the list above,
+  # inside the window? Three registers are searched and kept apart, strongest
+  # first. NEVER collapse them into one number.
+  window:
+    from: 2025-09-03
+    to: 2025-09-08
+    days_each_side: 2
+  any_found: false
+  egyptian_su_found: false
+  counts:
+    adsb_ground_contacts: 0
+    adsb_ground_contacts_egyptian_su: 0
+    flights_csv_stays: 0
+    flights_csv_stays_egyptian_su: 0
+    claimed_overlaps: 0
+  from_adsb_traces: []
+  from_flights_csv: []
+  from_overlaps_csv: []
+  just_outside_the_radius:
+    # A hard radius creates a cliff and a cliff hides evidence. These fields
+    # sit between 40 and 60 miles from the arrival airport. They are NOT counted
+    # as hits and must never be published as ones - they are here so a near miss
+    # is visible rather than silently dropped.
+    outer_radius_miles: 60.0
+    adsb_ground_contacts: []
+    flights_csv_stays: []
+    claimed_overlaps: []
+  coverage:
+    # AN EMPTY RESULT ABOVE IS NOT A FINDING UNLESS THIS SAYS THE DAYS WERE HELD.
+    # aircraft_days_needed = tails x days in the window. aircraft_days_held is
+    # how many of those this repo actually has a trace for. The rest were never
+    # pulled, or the networks heard nothing - the two are indistinguishable here.
+    aircraft_days_needed: 90
+    aircraft_days_held: 40
+    coverage_pct: 44.4
+    tails_with_no_trace_in_window:
+      - SU-BTU
+      - SU-BTV
+    by_side:
+      following:
+        # FOLLOWING is the side the claim is about - the Egyptian SU- tails.
+        # This percentage is the one that decides whether an empty result means
+        # anything at all.
+        tails: 6
+        aircraft_days_needed: 36
+        aircraft_days_held: 10
+        coverage_pct: 27.8
+      kirk:
+        # KIRK-side coverage is what turns an ESTIMATED arrival into an
+        # OBSERVED one. Low here means the arrival times above stay estimates.
+        tails: 6
+        aircraft_days_needed: 36
+        aircraft_days_held: 20
+        coverage_pct: 55.6
+      n1098l:
+        # Other tracked aircraft. A DIFFERENT CLAIM - do not merge the threads.
+        tails: 3
+        aircraft_days_needed: 18
+        aircraft_days_held: 10
+        coverage_pct: 55.6
+counterargument:
+  - "ONE PAIRING IS NOT EVIDENCE. The claim under test is a repetition across many stops, and any single pairing has an innocent explanation a reader will find."
+  - "A field inside the radius is a field a jet COULD have used. Nothing here shows that anyone did use it, or that two aircraft on one ramp had any connection."
+  - "Maintenance is the strongest innocent explanation in this record: Duncan Aviation (Provo and Lincoln) and Yingling (Wichita) are Part 145 Falcon and Gulfstream shops, and a Falcon 7X sitting for weeks at one reads as a maintenance visit."
+  - "Transatlantic customs and fuel stops explain the recurring East Coast fields."
+  - "ERIKA'S SIDE IS THE WEAK SIDE. Her flight logs are reported erased, so any Erika pairing rests on the foreign aircraft's track plus a CLAIMED location for her. See /Planes/Erika-Flight-Logs-Erased."
+what_we_do_not_know:
+  - "Whether Charlie Kirk, Erika Kirk, or any TPUSA party actually flew to this event, or which aircraft they used. The arrival airport above is an inference from the venue city, not a record."
+  - "Whether the estimated arrival and departure times are within hours or within days of the truth, wherever observed_by_adsb is empty."
+  - "What the tracked aircraft were doing at any field they appear at. A trace proves presence, never purpose and never occupancy."
+  - "Whether the receiver networks simply did not hear an aircraft that was there. See the coverage block - an absence is not a finding."
