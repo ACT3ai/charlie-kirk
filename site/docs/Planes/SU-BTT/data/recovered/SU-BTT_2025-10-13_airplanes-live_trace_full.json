@@ -1,0 +1,19 @@
+{"icao":"0101d3",
+"r":"SU-BTT",
+"t":"FA7X",
+"dbFlags":1,"desc":"DASSAULT Falcon 7X",
+"version": "readsb 3.14.1676 46c61ff-dirty",
+"timestamp": 1760313600.000,
+"trace":[ 
+[65850.46,28.987656,33.026329,22000,316.0,310.4,1,32,{"type":"adsb_icao","track":310.40,"baro_rate":32,"nic":0,"rc":0,"version":0},"adsb_icao",null,null,null,null],
+[65871.47,29.016403,32.977261,22000,489.0,303.7,1,32,null,"adsb_icao",null,null,null,null],
+[65880.48,29.027390,32.958561,22000,489.0,303.6,0,32,null,"adsb_icao",null,null,null,null],
+[65889.49,29.039192,32.938412,22000,490.0,303.8,0,32,null,"adsb_icao",null,null,null,null],
+[65898.50,29.050272,32.919510,22000,490.0,303.6,0,32,{"type":"adsb_icao","track":303.60,"baro_rate":32,"squawk":"0653","nic":0,"rc":0,"version":0,"nic_baro":1},"adsb_icao",null,null,null,null],
+[65910.51,29.063911,32.896351,21825,491.0,304.0,0,32,null,"adsb_icao",null,null,null,null],
+[65922.52,29.079693,32.869747,21900,491.0,304.0,0,32,null,"adsb_icao",null,null,null,null],
+[65934.54,29.093891,32.845673,22000,491.0,304.0,0,32,null,"adsb_icao",null,null,null,null],
+[65949.55,29.113676,32.812069,21775,486.0,304.0,1,32,{"type":"adsb_icao","track":304.00,"baro_rate":32,"squawk":"0653","nic":8,"rc":185,"version":0,"nic_baro":1},"adsb_icao",null,null,null,null],
+[65955.56,29.122149,32.797691,21450,483.0,304.0,0,32,null,"adsb_icao",null,null,null,null],
+[65958.56,29.124390,32.793873,21350,483.0,303.9,0,32,null,"adsb_icao",null,null,null,null] ]
+ }
