@@ -1,0 +1,37 @@
+{
+  "icao": "a7c14d",
+  "registration": "N59906",
+  "type": "PA31",
+  "description": "PIPER PA-31-300/310/325/350/425",
+  "db_flags": 0,
+  "day": "2025-09-03",
+  "points": 1572,
+  "first_seen_utc": "2025-09-03T15:06:11.690Z",
+  "last_seen_utc": "2025-09-03T18:26:00.910Z",
+  "first_position": {
+    "lat": 41.186646,
+    "lon": -112.0159,
+    "alt": "ground"
+  },
+  "last_position": {
+    "lat": 41.185799,
+    "lon": -112.01622,
+    "alt": "ground"
+  },
+  "ground_segments": [
+    {
+      "from": "2025-09-03T15:06:11.690Z",
+      "to": "2025-09-03T15:08:15.720Z",
+      "lat": 41.186646,
+      "lon": -112.0159
+    },
+    {
+      "from": "2025-09-03T18:19:53.970Z",
+      "to": null,
+      "lat": 41.197648,
+      "lon": -112.008175
+    }
+  ],
+  "source_url": "https://adsb.lol/globe_history/2025/09/03/traces/4d/trace_full_a7c14d.json",
+  "retrieved_utc": "2026-08-24T15:56:45.675Z"
+}
