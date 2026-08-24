@@ -909,3 +909,339 @@ We want to find and prove when data we removed. And try to get that data back.
 
 See if online if there are backups for this reason.
 
+
+
+================================================================================
+== File & Directory Map — What Does What ==
+================================================================================
+
+A map of the files and directories in this repo that DO something — generators,
+registries, charters, pipelines, and master data — as opposed to ordinary
+content. Read this before hunting for "where is the thing that builds X".
+
+Paths are relative to {ROOT_DIR} (~/BGit/Bryan_git/charlie-kirk) unless a full
+path from ~ is given.
+
+
+=== Nested CLAUDE.md Charters ===
+
+Several directories carry their OWN CLAUDE.md. These are area charters and they
+GOVERN work inside that directory. Read the nested charter before touching
+anything in its subtree — the root CLAUDE.md does not repeat their rules.
+
+DIR:
+* images/CLAUDE.md: Charter for the image pipeline. Defines IMAGES_YAML,
+  PLANNING_DIR, GENERATOR_DIR, PHOTOS_DIR and how they relate.
+* image_planning/CLAUDE.md: Charter for the image hierarchy planning pipeline.
+  Records that the hierarchy YAML MOVED to images/images.yaml on 2026-07-22 —
+  anything still saying "hierarchy_images.yaml" is stale.
+* videos_planning/CLAUDE.md: Charter for the video pipeline. Opens with a
+  self-check banner: if its first variable line says "image_planning", this file
+  was clobbered by a copy from the images side and must be restored. The two
+  pipelines are siblings, never copies of each other.
+* site/docs/laws/CLAUDE.md: Charter for the four-federal-laws drafting project —
+  the Epstein Files Transparency Act (PL 119-38) model, case 251403576, and what
+  the laws must force disclosed.
+* site/docs/Charlie/CLAUDE.md: Directory tree map for the Charlie section,
+  including the Comments/ subtree of per-remark pages.
+* site/docs/Planes/following/CLAUDE.md: Charter for the public page-per-location
+  follow log. Two rules: everything here is PUBLIC Docusaurus (no scratchpads,
+  no raw dumps), and ALL info that can safely be public SHOULD go here — do not
+  hold material back for tidiness or because it is only a fragment.
+* site/docs/Planes/following/apis/CLAUDE.md: Charter for how flight data is
+  actually fetched. Declares the variable block (FLIGHTS_CSV, OVERLAPS_CSV,
+  OVERLAP_DIR) used by the four API-source subdirectories.
+* site/docs/After/house/CLAUDE.md: Charter for 691 W 925 S St, Orem UT 84058 —
+  the staging-house line of inquiry. One .mdx per topic, parent Level 2 = After.
+
+
+=== Root-Level Master Data Files ===
+
+FILE:
+* pages.csv: Master index of every public page. See the "Pages CSV" section
+  above for the column contract. ~2 MB — grep it, do not read it whole.
+* interesting_pages.csv: Ranked shortlist of the most compelling pages, with a
+  why_interesting column holding the single strongest hook for each page and a
+  use_count tracking how often it has been surfaced. This is the file to pull
+  from when picking what to feature, tweet, or link.
+* people.csv: person_key → name → url_path → file_path for every person page
+  under site/docs/People/. The lookup table for people cross-linking.
+* planes.csv: plane_key, phrase, aliases, target page, aircraft type, operator,
+  category, autolink_terms, link_enabled. Drives tail-number autolinking across
+  the site — add a row here to make a tail number link itself everywhere.
+* planes.yaml: Long-form per-aircraft record (type, program, operator, observed
+  behavior). The narrative companion to planes.csv.
+* aircraft_costs.csv: Per-tail FAA registration facts (type, year, serial,
+  registered owner, status, seats) plus in-production status, nearest comparable
+  new aircraft, and today's new-build cost. Feeds the Planes/Aircraft-Costs page
+  and answers "who could afford to fly this".
+* videos.csv: Every video → its IPFS CID, gateway URL, the page it appears on,
+  its Level 2 parent, a not_on_any_page flag, description, and source X URL.
+* timeslines.csv: Registry of the "likelihood-of-when" timeline SVGs
+  (km-*-timeline.svg) — event_key, event, path to the SVG, and what the curve
+  actually claims. Written and consumed by prompts/p_timeline_create.md.
+* file_list.yaml: Maps each Large File Bridge "One Repo → Metrics" tile to the
+  exact absolute file paths behind it.
+* missing_videos.txt: Report of IPFS video embeds on the site whose bytes could
+  NOT be pulled from the network and are not in the repo. Broken-evidence list.
+* 404_Investigation_Report.txt: Google Search Console 404 investigation for
+  whoassassinatedcharliekirk.com — which URLs Google has that the site does not.
+* ck_main_progress.txt: Running progress notes on the Level 2 build-out.
+* Charlie_Kirk_AI_Inbox.txt: {CK_INBOX}. Append-only staging file for new
+  investigation content. AI writes HERE, never to Charlie_Kirk.txt. Bryan merges
+  by hand. See the ABSOLUTE RULE at the top of this file.
+* .gitignore: Carries a warning banner at the bottom. If ~1,950 per-image lines
+  reappear, Large File Bridge re-added them — delete them, do not work around
+  them with `git add -f`. See "Images Are Tracked In Git" above.
+
+
+=== Image Pipeline ===
+
+DIR:
+* images/: The image files themselves plus their master data. Tracked in git —
+  never gitignore an image.
+* images/GPT_Imagine/, images/laws/, images/ico/: Generated/illustrative art —
+  law card images, favicons, and GPT-generated law graphics.
+* image_planning/generator/: The Python/JS toolchain that turns images.yaml into
+  live pages. ~20 scripts, each one stage of the pipeline.
+
+FILE:
+* images/images.yaml: {IMAGES_YAML}. Master hierarchy of every image — its
+  placement, its cluster, its should_be_on_pages list, and its banned flag.
+  Edit programmatically via bind_image_pages.py's emit/recount helpers so the
+  file round-trips byte-for-byte.
+* images/manifest.yaml: Per-image provenance — filename, IPFS CID, gateway URL,
+  source X post URL, source author, description. The chain-of-custody record.
+  Note: most CIDs here came from `ipfs add -n` and are NOT retrievable from a
+  gateway — serve images from the repo path, keep the CID in data-cid only.
+* images/ban_images.csv: {BAN_IMAGES_CSV}. MASTER never-publish list for images.
+  See "Banned Media" above. Edits go here, never into images.yaml.
+* image_planning/exclude_images.txt: Legacy sha256-per-line never-publish list.
+  Still honoured — the ban set is the UNION of this and ban_images.csv.
+* image_planning/layout_guidelines.txt: Authoritative standard for how an image
+  sits on its Level 5 /Photos page and how big it gets. Every rule in it was
+  written after a real visible defect shipped — treat it as a defect log, not a
+  style preference.
+* image_planning/findings_for_hierarchy.md: Open data/clustering problems in
+  images.yaml, raised by page-generation runs that treat the YAML as read-only.
+* image_planning/generator/audit_image_publication.py: Repo-wide check that every
+  image a visitor should see is actually reachable. Exit 0 clean, 1 broken.
+  `--gateway` also probes any remaining ipfs.io <img> embeds. Run by ck_add_text
+  at step 9H-6b.
+* image_planning/generator/bind_image_pages.py: Binds images to pages and holds
+  the emit/recount helpers that keep images.yaml byte-stable.
+* image_planning/generator/gen_photos_pages.py: Generates the Level 5 one-image
+  pages under site/docs/Photos/, deleting pages for newly banned images.
+* image_planning/generator/ban_set.py: Computes the effective ban set (CSV ∪
+  exclude_images.txt) that every other stage filters against.
+* image_planning/generator/plan_should_be.py / place_should_be_images.py:
+  Decide which pages an image SHOULD appear on, then actually place it.
+* image_planning/generator/grow_hierarchy.py / update_hierarchy.py /
+  fixup_hierarchy.py: Grow, refresh, and repair the images.yaml tree.
+* image_planning/generator/add_orphan_images.py: Files images that exist on disk
+  but appear in no hierarchy entry.
+* image_planning/generator/refresh_pages_csv.py: Re-syncs pages.csv after the
+  image pipeline creates or deletes pages.
+* image_planning/generator/verify_photos.py / verify_on_pages.py /
+  verify_stage_12_13.py: Verification passes for the Photos tree.
+
+
+=== Video Pipeline ===
+
+DIR:
+* videos/: The video files (gitignored — pulled from IPFS) plus their master
+  data and .transcription / .ai_description sidecars.
+* videos_transcription/: One .md transcript per video, named by the X status ID.
+  114 files. This is where to grep for "who said what on video".
+* videos_planning/generator/: The Python toolchain for the video pipeline, plus
+  its stage report JSONs (stage2/3/10_report.json, verify_report.json) which are
+  the audit trail of the last run.
+
+FILE:
+* videos/videos.yaml: {VIDEOS_YAML}. Master video hierarchy — the video-side
+  twin of images.yaml, carrying placement and the banned flag.
+* videos/manifest.yaml: Per-video provenance — filename, CID, gateway URL,
+  source X URL, source author, description.
+* videos/videos.md: Human-readable video evidence index with access instructions.
+* videos/ban_videos.csv: {BAN_VIDEOS_CSV}. MASTER never-publish list for videos.
+* videos_planning/exclude_videos.txt: Legacy sha256 never-publish list for
+  videos. Union with the CSV, same as the image side.
+* videos_planning/generator/emit_yaml.py: The safe programmatic writer for
+  videos.yaml — use it instead of hand-editing.
+* videos_planning/generator/audit_video_registration.py: Checks every video on
+  the site is registered, hosted, and not banned.
+* videos_planning/generator/compute_cids.py: Computes IPFS CIDs; hash_cache.json
+  caches the expensive hashing between runs.
+* videos_planning/generator/harvest_sidecars.py: Pulls .transcription and
+  .ai_description sidecars produced by Large File Bridge into the pipeline.
+* videos_planning/generator/gen_videos_pages.py / bind_video_pages.py /
+  stage56_host_pages.py: Generate and bind the Level 5 video pages.
+* videos_planning/layout_guidelines.txt: Video-page layout standard, same role
+  as the image one.
+
+
+=== Site Build & Page Tooling ===
+
+FILE:
+* site/_ck_mdxcheck.mjs: Compiles pages exactly the way the real Docusaurus
+  build does, so MDX breakage is caught locally. Deliberately does NOT enable
+  @slorber/remark-comment — adding it once made every laws/*.md page pass
+  locally and fail the deploy. `node site/_ck_mdxcheck.mjs <files...>`.
+* site/inject_nav_gallery.py: Idempotently injects two-column nav galleries into
+  every non-root overview.mdx under Photos/ and Videos/, between CK_NAV_GALLERY
+  markers, above "Related Areas" and below the in-body TOC. Computes real aspect
+  ratios from the actual pixels.
+* site/sidebars.ts: Navigation structure.
+* site/docusaurus.config.ts: Site config — domain, navbar, OG social card.
+* .github/workflows/pages.yml: GitHub Pages deploy. The live site is built from
+  the REPO, not from any one machine — an untracked image 404s for every visitor.
+
+DIR:
+* site/internals/static/img/evidence/: Served evidence images, /img/evidence/<sha>.jpg.
+* site/internals/static/img/video_posters/: Video poster frames.
+* site/internals/static/img/km-timelines/: The likelihood-of-when timeline SVGs
+  registered in timeslines.csv.
+* site/internals/static/img/infographics/: Published infographic outputs.
+* site/internals/static/court/: Court exhibit assets (bindover/, mirandize/).
+* site/internals/static/data/: Site-served datasets, e.g.
+  apple-podcast-removed-episodes.csv.
+* site/internals/src/: The site's React/CSS layer — custom.css, HomepageFeatures,
+  and the 404 page.
+* site/Content_Structure/: CS_After.yaml, CS_Before.yaml, Describe.yaml — the
+  planned content structure for those Level 2 areas.
+* site/keywords/: Per-topic .keywords files (Israel, Media, People, TPUSA,
+  Tyler_Robinson) used for search/keyword mapping.
+* site/Download_Transcript/: Self-contained transcription tool with its own
+  README/USAGE/QUICK_START, a script/ dir, and to_transcribe/ + transcribed_out/
+  working directories.
+
+
+=== Prompts ===
+
+DIR:
+* prompts/: The prompt library that drives most site-wide work.
+* prompts/four_squares/: The live working state of the four-squares card build —
+  ledger.csv, card_index.csv, routes.txt, teasers/, batches/, plus ~15 repair
+  scripts. This is a RUN IN PROGRESS, not a finished artifact.
+* prompts/2_Level/, prompts/Change_Levels/, prompts/Grow_Content_Structure/,
+  prompts/Download_Transcript/: Prompt sets for building Level 2 pages, moving
+  pages between levels, growing the content structure, and transcription.
+* prompts/backup/: Superseded prompt versions kept for reference.
+
+FILE:
+* prompts/Assess_Manual.md: {ASSESS_MANUAL}. The authoritative writing and layout
+  guide. Read it into context at the START of any task that creates, edits,
+  reviews, or restructures a page.
+* prompts/p_4_squares.md: The four-squares card-block system — adds four
+  standard blocks to every page. Run by 12 parallel agents.
+* prompts/four_squares/AGENT_BRIEF.md: Operational summary handed to each of the
+  12 agents running p_4_squares.md.
+* prompts/four_squares/RESUME.md: Checkpoint state — pages complete, cards on
+  site, teasers banked. Read this to know where the run stopped.
+* prompts/four_squares/GOLDEN_EXAMPLE.mdx: The reference output every generated
+  page is matched against.
+* prompts/p_timeline_create.md: Builds the site-wide likelihood-of-when timeline
+  SVGs and their registry rows. Marked DO NOT RUN YET at the top — check that
+  line before running it.
+* prompts/p_Mirandize.md: The Miranda-timing line of inquiry (the 6:25 PM bodycam
+  vs the 8:02 PM identification call).
+* prompts/p_more_level_2.txt + prompts/more_level_2.yaml: Mines sources for
+  proposed new Level 2 sections and Level 3 pages. The YAML only GROWS and
+  nothing in it is applied to the site automatically — it is a proposal queue.
+* prompts/grok_write.mdx: Staged writing prompt; the runner passes INPUT_TEXT to
+  say what this run focuses on.
+* prompts/Create_Topic_Pages.txt / Write_Level_2_page.txt: Page-creation prompts.
+
+
+=== Planes / Flight Data ===
+
+DIR:
+* site/docs/Planes/{TAIL}/: One directory per aircraft. overview.mdx plus a
+  data/ subdir (e.g. N1098L/data/adsb/) holding the RAW downloads. Filenames
+  must record WHICH SOURCE the data came from, so deletions can be proven.
+* site/docs/Planes/following/: The public page-per-location follow log. Governed
+  by its own CLAUDE.md.
+* site/docs/Planes/following/speaking/: One .mdx per Charlie speaking event,
+  named {YYYYMMDD}_{city}.mdx.
+* site/docs/Planes/following/overlap/: One directory per plane/person overlap,
+  named {YYYYMMDD}_{ST}_{city}_{person}_{NNN}.
+* site/docs/Planes/following/apis/: Four data-source lanes — government/,
+  proprietary/, public_open_source/, browser_capture/ — each with knowledge.mdx
+  (what this source is and what it holds), p_get_data.mdx (the prompt that pulls
+  from it), code/, data/, and where applicable requests/ or captures/.
+* site/docs/Planes/Aircraft-Costs/, site/docs/Planes/LASAI-Fleet/,
+  site/docs/Planes/TPUSA-Aircraft/: Cross-cutting Planes pages — cost analysis,
+  the LASAI Aviation II fleet, and TPUSA's own aircraft.
+
+FILE:
+* site/docs/Planes/following/flights.csv: The flight records themselves.
+* site/docs/Planes/following/overlaps.csv: Computed plane/person overlaps.
+* site/docs/Planes/following/airports.csv: Airport reference table.
+* site/docs/Planes/following/tpusa_events.csv: TPUSA event dates and locations —
+  the ground truth the flights are matched against.
+* site/docs/Planes/following/planes.csv: The following-specific plane list
+  (distinct from the root planes.csv, which drives autolinking).
+* site/docs/Planes/following/Overlap_Window_Definition.mdx: Defines exactly what
+  counts as an "overlap". Read it before computing or disputing one.
+
+
+=== Infographics ===
+
+DIR:
+* info_graphics/{Topic}/: One directory per infographic — goals.mdx (the plan),
+  nana_banana_pro_prompt.txt (the generation prompt written FROM goals.mdx), and
+  the generated .jpg/.png. See the "Infographics" section above.
+* info_graphics/Overlap_Timeline/: Also carries generate_overlap_timeline.py —
+  a deterministic Python renderer, showing an infographic can be CODE-generated
+  rather than model-generated when the data must be exact.
+
+
+=== IPFS & Large Files ===
+
+DIR:
+* IPFS/: Evidence files published to IPFS so they cannot be taken down.
+* IPFS/videos/: Large source videos (gitignored) — the Blake Bednarz UVU
+  original and its transcription, chain_of_evil.mp4.
+* .lfbridge/: Large File Bridge quarantine mirror. Sidecars for files inside
+  this repo land here, mirroring the path — e.g. videos/X.mp4 →
+  .lfbridge/videos/X.mp4.transcription. Not hand-maintained.
+
+FILE:
+* IPFS/ipfs.txt: The pull-and-pin command blocks for every published file.
+* IPFS/ipfs.sh: Runnable version of the same — `ipfs pin add <CID>` per file,
+  with notes on `ipfs get -o` if you also want the bytes on disk.
+
+
+=== Research & Private Layer ===
+
+DIR:
+* Research/raw/, Research/x_posts/, Research/Topics/, Research/PDFs/,
+  Research/evidence/: Raw sources → organized topics → hosted PDFs.
+  PDFs we host on a page go in Research/PDFs/.
+* knowledge/: Synthesized long-form analysis (FULL_WRITE_UP.md, the per-model
+  Big_Write_up_*.md files, INTEL_Connections.md).
+* Details/: Private per-person profiles. See the template above.
+* ck/people/: Older per-person location, superseded by Details/.
+* tmp/: Per-question research runs, one directory per line of inquiry
+  (kill_me_research/, future_president_research/, groyper_research/,
+  leader_of_churches_research/, ...). tmp/kill_me_research/ holds the KM-01..13
+  research files behind the km-*-timeline.svg registry in timeslines.csv.
+* analysis/: One-off analyses, e.g. analysis/seo.txt.
+* Backup/: STALE — UX design page specs for an unrelated "backup viewer" app
+  that drifted into this repo. Not part of the investigation.
+* cover_image/: NanoBanana prompts and the generated OG social card. The site's
+  docusaurus-social-card.jpg symlinks back to cover_image/cover.jpg.
+
+
+=== External Tooling (outside this repo) ===
+
+DIR:
+* ~/BGit/all/politics/charlie_kirk/: The working/tooling side of this
+  investigation. Holds prompts/, research/ (Google_Searches, podcast and Discord
+  transcripts, Egyptoin_Flights, Shootings_Political), laws/ (law_fixes.txt,
+  thomas_massey/), Letters/ (Tyler, Defense_Attorneys, Amicus), emails/,
+  defemation/ (scan output + progress.txt), tweets/, podcasts/, info_graphics/,
+  fort_hauchuca/, aiattorney/, ck_Marketing_Videos/, and offline/.
+* ~/_Mirror/Politics/Charlie_Kirk_Mi/: Original source media files.
+* ~/BGit/Bryan_git/personal_large_files_bridge/_Mirror/Politics/Charlie_Kirk_Mi/:
+  The matching transcriptions, AI descriptions, and OCR text for those files.

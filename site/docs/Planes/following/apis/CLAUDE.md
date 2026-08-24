@@ -213,3 +213,74 @@ belongs in that item's directory** and the raw response stays under the pass's `
 
 Everything else — `{CK_FILE}` above all — is read-only source material. New material for the master
 file goes to `{CK_INBOX}` and a human merges it.
+
+## The source register — every site, API and dataset found, with its status
+
+Checked **24 August 2026**. Anything here without a date beside it is untrustworthy six months from
+now; re-check and re-date rather than assuming.
+
+### Pass 1 — free and open
+
+| Source | Endpoint | History? | Auth | Status |
+|---|---|---|---|---|
+| **adsb.lol globe history** | `adsb.lol/globe_history/YYYY/MM/DD/traces/hh/trace_full_HEX.json` | **YES** | none | **200 — the workhorse.** Gzip JSON, self-identifies `r`/`t`. Coverage seen: 2023-02-24 → 2025-10-11, then a 403 band, then normal again by 2025-12-31. |
+| adsb.lol v2 | `api.adsb.lol/v2/hex/HEX`, `/v2/reg/REG` | live only | none | 200; empty array when not airborne |
+| adsb.fi | `opendata.adsb.fi/api/v2/hex/HEX` | live only | none | 200; same empty-means-parked trap |
+| airplanes.live | `api.airplanes.live/v2/reg/REG` | live only | **gated** | **403** — asks you to email first. Was open before. |
+| OpenSky | `opensky-network.org/api/flights/aircraft` | yes | **OAuth2** | **403 anonymous.** Basic auth removed 18 Mar 2026. Credits: 400 anon / 4,000 registered / 8,000 feeders. |
+| OpenSky | `/api/states/all` | live only | optional | 200 |
+| adsbdb | `api.adsbdb.com/v0/aircraft/REG`, `/v0/callsign/CS` | metadata only | none | 200. Tail → hex, type, owner. **Its SU-BTT hex disagrees with the trace.** |
+| OurAirports | `davidmegginson.github.io/ourairports-data/airports.csv`, `runways.csv` | reference | none | 200, CC0 |
+| Internet Archive | `web.archive.org/cdx/search/cdx` | snapshots | none | 200 |
+
+### Pass 2 — commercial
+
+| Vendor | Endpoint | History | Credential | Status |
+|---|---|---|---|---|
+| Flightradar24 | `fr24api.flightradar24.com/api/flight-summary/full` | deep | `FR24_API_TOKEN` | **not held** |
+| FlightAware AeroAPI v4 | `aeroapi.flightaware.com/aeroapi/aircraft/REG/flights` | **to 2011** | `AEROAPI_KEY` | **not held — highest value unopened door** |
+| ADS-B Exchange | RapidAPI + `globe_history` | deep | `ADSBX_RAPIDAPI_KEY` | **403 to the public.** Several original screenshots came from here while it was open. |
+| RadarBox, Cirium, OAG, Spire | — | — | — | not investigated |
+
+### Pass 3 — government and public records
+
+| Source | What it is | Access | Status |
+|---|---|---|---|
+| **FAA Releasable Aircraft Database** | `registry.faa.gov/database/ReleasableAircraft.zip` — daily, ~70 MB, `MASTER.txt` + `ACFTREF.txt` | free download, **public domain** | **200. Pulled. All 10 tracked N-tails extracted.** |
+| FAA aircraft inquiry | `registry.faa.gov/aircraftinquiry` | web lookup | single-record UI, use the bulk file instead |
+| FAA airport / facility data | NFDC airport and facility subscription files | free download | **not pulled yet** |
+| FAA operations counts | agency operations and delay reporting systems | free, web UI | **not pulled yet** — could show foreign itinerant operations by field |
+| Federal air traffic agency | flight strips, radar, recordings | **FOIA** | **no request filed** |
+| Federal border agency | customs processing of international arrivals | **FOIA** | **no request filed.** Note: 2025 Provo arrivals cleared customs at the northern entry field, not at Provo. |
+| Federal foreign-affairs department | diplomatic clearance for foreign state aircraft | **FOIA** | **no request filed** |
+| **The airports themselves** | landing fees, fuel tickets, ramp assignment, hangar, **badge access** | **STATE public-records law** | **no request filed. This is the most under-used route in the whole investigation.** Most fields here are city-owned or run by a public airport authority, which makes state law — not federal FOIA — the route, and it is faster and cheaper. |
+| Egyptian civil aviation registry | — | — | **no public equivalent exists.** The five SU- tails at the centre of the claim cannot be resolved by any free government download. |
+
+### Pass 4 — sites to capture
+
+`browser_capture/code/targets.json` — 128 targets across 8 sites and 16 aircraft: Flightradar24,
+ADS-B Exchange, FlightAware, RadarBox, Planespotters, JetPhotos, adsb.lol globe, airplanes.live globe.
+
+### Installed command-line tools
+
+    brew install duckdb      # query the spine CSVs and the FAA registry in place
+    brew install monolith    # freeze a tracking page into one self-contained file
+
+Available and not required: `readsb`, `dump1090-fa` (decode 1090 MHz off the air — they need an SDR
+receiver and query nobody's API), `pipx install waybackpy` (CLI over the same CDX endpoints
+`wayback.js` already calls; macOS Python is PEP 668 managed so plain `pip3 install` is refused).
+
+### Standing findings that must not be misreported
+
+* **Free ADS-B networks are live-only except adsb.lol globe history.** An empty result means NOT
+  AIRBORNE NOW. It is not an absence from history and it is not evidence of suppression.
+* **The adsb.lol archive returns 403 for roughly 12 Oct – 15 Dec 2025 for EVERY aircraft**, including
+  ones with no connection to this case. **Archive-wide condition, not suppression.** It happens to
+  cover the claimed Sharm el-Sheikh dates. Never report it as scrubbing.
+* **The archive does not reach 2022.** Earliest trace obtained anywhere: 2023-02-24. Every 2022 claim
+  on this site rests on a screenshot, not on data we hold.
+* **FAA registrant names differ from community-database owner strings** for most N-tails. The FAA is
+  the record; a community database may carry a former owner, an operator, or a management company.
+  Name the FAA one and give the retrieval date.
+* **A registrant is often a holding LLC. A holding company is not a person, and we do not go behind
+  one to name private individuals.**
