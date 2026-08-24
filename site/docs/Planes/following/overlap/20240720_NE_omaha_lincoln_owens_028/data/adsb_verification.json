@@ -1,0 +1,134 @@
+{
+ "generated_utc": "2026-08-24T17:36:21.953Z",
+ "radius_km": 15,
+ "method": "For each claimed overlap, both free ADS-B history archives were queried for the claimed foreign tail on the claimed date and the day either side. Positions were resolved to the nearest airport in the OurAirports public-domain gazetteer. A verdict of ELSEWHERE refutes a row; NO_ARCHIVE_COVERAGE and NOT_HEARD do not.",
+ "note": "Per-row extract of OWENS-028 from site/docs/Planes/following/apis/public_open_source/data/overlap_verification/overlap_verification.json",
+ "result": {
+  "overlap_id": "OWENS-028",
+  "date": "2024-07-20",
+  "claimed_airport": "KOMA",
+  "claimed_codes": [
+   "KOMA"
+  ],
+  "claimed_city": "Omaha / Lincoln",
+  "claimed_state": "NE",
+  "claimed_tails": [
+   "SU-BTT"
+  ],
+  "subject": "Erika",
+  "audit_verdict": "inaccurate",
+  "site_page": "site/docs/Planes/following/Omaha_KOMA_2024-02-09_to_2025-10-05/overview.mdx",
+  "tails": {
+   "SU-BTT": {
+    "2024-07-19": {
+     "adsb_lol_http": 404,
+     "airplanes_live_http": 404,
+     "archive_control_probe": {
+      "adsb-lol": {
+       "verdict": "NOT_COVERED",
+       "codes": [
+        404,
+        404,
+        404,
+        404,
+        404,
+        404,
+        404,
+        404,
+        404
+       ]
+      },
+      "airplanes-live": {
+       "verdict": "NOT_COVERED",
+       "codes": [
+        404,
+        404,
+        404,
+        404,
+        404,
+        404,
+        404,
+        404,
+        404
+       ]
+      }
+     },
+     "both_agree": false,
+     "heard": false,
+     "at_claimed_airport": false,
+     "closest_approach_to_claimed_field": null,
+     "airports_touched": null,
+     "first_where": null,
+     "last_where": null,
+     "points": null,
+     "verdict": "NO_ARCHIVE_COVERAGE"
+    },
+    "2024-07-20": {
+     "adsb_lol_http": 404,
+     "airplanes_live_http": 404,
+     "archive_control_probe": {
+      "adsb-lol": {
+       "verdict": "COVERED",
+       "codes": [
+        404,
+        404,
+        404,
+        404,
+        404,
+        404,
+        404,
+        200
+       ]
+      },
+      "airplanes-live": {
+       "verdict": "COVERED",
+       "codes": [
+        404,
+        404,
+        404,
+        404,
+        404,
+        404,
+        404,
+        200
+       ]
+      }
+     },
+     "both_agree": false,
+     "heard": false,
+     "at_claimed_airport": false,
+     "closest_approach_to_claimed_field": null,
+     "airports_touched": null,
+     "first_where": null,
+     "last_where": null,
+     "points": null,
+     "verdict": "NOT_HEARD"
+    },
+    "2024-07-21": {
+     "adsb_lol_http": 200,
+     "airplanes_live_http": 200,
+     "archive_control_probe": null,
+     "both_agree": true,
+     "heard": true,
+     "at_claimed_airport": false,
+     "closest_approach_to_claimed_field": {
+      "code": "KOMA",
+      "km": 12019.58,
+      "utc": "2024-07-21T08:32:40.530Z",
+      "on_ground": false
+     },
+     "airports_touched": [
+      "HEBA 1.85km below_4000ft",
+      "HE38 47.71km first_fix",
+      "HE42 12.09km last_fix"
+     ],
+     "first_where": "HE38 (Abu Rish Valley Airport, EG) 47.71km",
+     "last_where": "HE42 (Quesna Airport, Quesna EG) 12.09km",
+     "points": 95,
+     "verdict": "ELSEWHERE"
+    }
+   }
+  },
+  "verdict": "ELSEWHERE"
+ }
+}

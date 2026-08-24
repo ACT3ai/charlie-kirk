@@ -44,18 +44,22 @@ can repeat the pulls and get the same answer.
 
 **[1 — Public open source](/Planes/following/apis/public_open_source/knowledge)**
 Free networks, no account, no key. Repeatable by anyone. **Always runs first.**
+**Run.** Three historical archives now in use; 152 aircraft-days recovered from the second one.
 
 **[3 — Government records](/Planes/following/apis/government/knowledge)**
 Registries, facility data, FOIA and state public-records law. **Records, not readings.**
+**Partly run.** The FAA registry is pulled. **No records request has been filed. Not one.**
 
 </div>
 <div>
 
 **[2 — Commercial APIs](/Planes/following/apis/proprietary/knowledge)**
 The deep history the free networks do not hold. Costs money; terms restrict republication.
+**Not run.** No credential held for any vendor — reported by name, never by value.
 
 **[4 — Website capture](/Planes/following/apis/browser_capture/knowledge)**
 Driving a real browser at the tracking sites. How we document that data is gone.
+**Started.** One site of eight, 20 targets of 128 — and it refuted one of our own claims.
 
 </div>
 </div>
@@ -87,6 +91,54 @@ them" — verify at **38%**. **The aircraft movements are largely real. The infe
 constitute shadowing is where the spreadsheet falls apart.** That finding flatters neither side of
 this argument, which is roughly the point.
 
+## Where the four passes stand now — 24 August 2026
+
+The figures above are from the first sweep. A later review re-ran the work with **control aircraft**
+in every basket, and the controls changed several conclusions — including three of our own.
+
+| | |
+|---|---|
+| Historical archives now in use | **3** — adsb.lol, globe.airplanes.live, and the ADS-B Exchange monthly sample |
+| Aircraft-days recovered from the **backup** archive that adsb.lol does not hold | **152** |
+| Aircraft-days held by adsb.lol that the backup does not hold | **0** |
+| Aircraft-days held by **both** archives across **1–16 September 2025** | **74**, against 1 backup-only |
+| Aircraft-days now held from **before 2023** | **34**, across 12 tails |
+| Claimed overlaps tested against primary position data | **85 of 85** |
+| Of those, **decidable** from primary data | **36** — **24 corroborated, 12 refuted** |
+| Flight legs re-extracted from archived pages that had been recorded as zero | **153** |
+| Internet Archive CDX queries, re-run without `collapse=digest` | **30 of 30 succeeded, 0 failed** |
+| 200 → 404 transitions found anywhere in the archive data | **None** |
+
+**Three corrections to this site came out of that review, and they are published as corrections:**
+
+* **The Flightradar24 403 is bot protection, site-wide.** It returns 403 to a script for 13 case
+  tails, 7 unrelated control aircraft **and its own home page**, with the same ~5,877-byte body every
+  time. **We had read a 403 as evidence a record was removed. It cannot mean that.** A browser session
+  then loaded 20 of those pages — 16 subject tails, 4 controls — **HTTP 200 on every one**, and a
+  second independent session reproduced it. **The claim that N102DZ's page was removed is refuted.**
+  What the page displayed on a past date remains beyond every method we have, and we do not claim it.
+* **The adsb.lol archive has two dead bands and both are site-wide** — 403 from exactly 12 October to
+  about 30 December 2025, then 404 to about 1 August 2026, **identical for control aircraft with no
+  connection to this case.** We had published the band as ending in December. **Neither band is
+  scrubbing.**
+* **Three "never archived" results were failed queries logged as zeros**, one of them SU-BTT's ADS-B
+  Exchange page, which has three snapshots. The re-run reports a failed query as UNKNOWN instead of
+  as zero.
+
+**And the single most important limit, restated because the numbers above invite the opposite
+reading.** Every one of the 24 corroborated overlaps is a statement about **an airframe**. **An ADS-B
+record can locate an aircraft and can never locate a passenger.** None of it puts Charlie Kirk or
+Erika Kirk anywhere. **A confirmed aircraft is not a confirmed overlap.**
+
+### Where to read the detail
+
+* **[Flight Data Recovery](/Planes/Flight-Data-Recovery/overview)** — the backup archives, the 152
+  recovered aircraft-days, the 2022 sample data, and what could not be recovered.
+* **[The overlap register](/Planes/following/overlap/overview)** — all 85 claimed pairings with their
+  verdicts: `AT_CLAIMED_AIRPORT`, `ELSEWHERE`, `NOT_HEARD`, `NO_ARCHIVE_COVERAGE`, and the rows that
+  name no aircraft or no date. **Only `ELSEWHERE` refutes anything**; the two "no data" verdicts say
+  nothing in either direction and are named separately so they cannot be counted as denials.
+
 ## What none of it can do
 
 **The counts remain trackers' tallies, not records.** 73, 72, 70+, 68, 29, 23 — amateur readings of
@@ -102,10 +154,18 @@ and overlap, **90 of them**, saying exactly that.
 
 **One of the two shut doors has since been forced.** A later pass — run on the assumption that the
 data had been erased, and looking for backups — found that **2022 is partly reachable after all**,
-that days the primary archive refuses are published in full elsewhere, and that the removed
-FlightRadar24 history for [N102DZ](/Planes/N102DZ/overview) survives in the Internet Archive. That
-work is **[Flight Data Recovery](/Planes/Flight-Data-Recovery/overview)**, and it corrects several
-statements made in this section.
+that days the primary archive refuses are published in full elsewhere, and that FlightRadar24 flight
+history for [N102DZ](/Planes/N102DZ/overview) survives in the Internet Archive. That work is
+**[Flight Data Recovery](/Planes/Flight-Data-Recovery/overview)**, and it corrects several statements
+made in this section.
+
+**One word in that paragraph was wrong and is corrected above:** the N102DZ history was described as
+*removed*. **It was not removed.** The live Flightradar24 page loads normally in a browser; the empty
+table is the free tier's seven-day window, and an unrelated control aircraft prints the identical
+"could not find data" message at almost the identical byte count. The archived copy is still worth
+holding — the seven-day window means the live page cannot show those legs to a logged-out visitor —
+but **holding a copy is not the same as documenting a removal**, and this site said the second when it
+had only the first.
 
 **The other door is still shut, and no backup opens it.** **Erika Kirk's side cannot be checked at
 all.** Every recovery in that pass is about *aircraft*, and an aircraft track never establishes who

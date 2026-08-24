@@ -82,7 +82,53 @@ Stated as a table, because the seconds are the whole point of the claim:
 * **The time base is not stated.** Local Mountain Time or UTC changes the meaning completely — and a **UTC-versus-local confusion is exactly the error that produced the disputed SU-BTT departure time** for the same morning, which is recorded on the [Provo page](./Provo_KPVU_2024-04-19_to_2025-09-13/overview) and on [SU-BTT](/Planes/SU-BTT/overview). Precision to the second is not accuracy about the hour.
 * **A separate tracker read gives different framing.** John Cullen's reading, relayed on X, puts the power-on at roughly **21 minutes before** the shot and the power cycle about **an hour after** — not 17 minutes after. **Both readings are in the record and they do not agree.**
 * **"Turned on" assumes a hand on a switch.** Transponder returns start and stop for ordinary reasons: ground power connected or pulled, an APU run, a maintenance check, a crew running a pre-flight that was then scrubbed, or simply a receiver-coverage gap in the ADS-B feed rather than the transmitter going quiet. **An absence in ADS-B data is not proof of a covert act, and a presence is not proof of intent.**
-* **Nobody has produced the raw ADS-B archive** for hex code 0101xx at Provo on 10 September 2025. It would settle the time base and the cycles in minutes.
+* ~~**Nobody has produced the raw ADS-B archive** for hex code 0101xx at Provo on 10 September 2025.~~ **This has now been done — see immediately below.**
+
+### The raw archive settles it: the times are right, the time base is one hour off
+
+The raw trace for SU-BND (hex `01003E`) on 10 September 2025 was pulled from **both** free
+historical archives — `globe.airplanes.live` and `adsb.lol` — and they agree exactly. Files are at
+`site/docs/Planes/SU-BND/data/recovered/`; the method is on
+**[Flight Data Recovery](/Planes/Flight-Data-Recovery/overview)**.
+
+| What the archive holds (UTC) | Owens, as stated on air | Difference |
+|---|---|---|
+| First transponded **16:05:35** | 09:05:36 | exactly **UTC − 7** |
+| Went quiet **17:34:09** | 10:34:05 | UTC − 7 |
+| Came back **19:40:53** | 12:40:53 | exactly **UTC − 7** |
+| Last heard **20:29:38** | 13:29:40 | UTC − 7 |
+
+**Every one of the four timings is correct to within seconds.** The broadcast's precision was real.
+**But UTC − 7 is Mountain STANDARD Time, and Utah on 10 September 2025 was on Mountain DAYLIGHT
+Time, UTC − 6.** Read in the time zone Provo was actually in that day, the same four events are:
+
+| Event | Correct local time (MDT) | Relative to the shot at **12:23:30 MDT** |
+|---|---|---|
+| Transponder on | **10:05:35** | 2 h 18 min **before** |
+| Transponder quiet | **11:34:09** | **49 minutes BEFORE the shot** |
+| Transponder back on | **13:40:53** | **1 h 17 min AFTER the shot** |
+| Transponder off | **14:29:38** | 2 h 06 min after |
+
+**So the headline — "the transponder was turned back on just 17 minutes after Charlie was shot" —
+does not survive the raw data.** It was **seventy-seven minutes** after. And the silence did not
+begin after the shooting; it began **forty-nine minutes before it**, which is a different shape of
+fact entirely.
+
+This is **the same error the same broadcast had already made once** — the UTC-versus-local confusion
+that produced the disputed SU-BTT departure time for the same morning, recorded on
+[SU-BTT](/Planes/SU-BTT/overview). It is an hour-arithmetic mistake, not a fabrication: the seconds
+were accurate, the clock they were placed on was not.
+
+**What still stands:** the aircraft was parked at Provo, it did not take off, and its transponder
+did cycle twice that day. That is unchanged and it is on the record now from primary data rather
+than from a screenshot. **What does not stand is the proximity to the shot**, which was the entire
+force of the claim. The ordinary explanations for a parked aircraft's transponder cycling — ground
+power connected or pulled, an APU run, a scrubbed pre-flight, or a gap in receiver coverage — are
+unaffected either way.
+
+**John Cullen's reading** — power-on roughly 21 minutes *before* the shot — does not match any of
+the four recovered boundaries under any offset, and is left in the record unresolved rather than
+forced to fit.
 
 The minute-by-minute of that day belongs to **[the September 10 flight timeline](/Planes/Sept10-Flight-Timeline)**, not to this directory. This page records what the broadcast said; that page holds the day.
 

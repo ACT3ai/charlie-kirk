@@ -199,6 +199,30 @@ Compiler note: Owens Ep 256: 'Charlie is speaking in Sacramento on April 13th, y
 
 More of the same discussion, grouped by research topic rather than by date, is on [X discussions of the following planes](/Planes/following/x_discussions) and [Candace Owens broadcasts](/Planes/following/Candace_Owens_Broadcasts).
 
+## We checked this row against primary ADS-B data
+
+Run 24 August 2026. Every claimed row of the sheet was tested the same way, this one included.
+
+**Refuted.** The aircraft was tracked that day and it was somewhere else. On 14 April 2023 SU-BTT's track begins at Paris–Charles de Gaulle (5.39 km) and ends near Sunset Strip Airpark, Topeka, Kansas (10.98 km) — roughly **215 km from Wichita**. Both archives hold the same trace. The only fixes at or near ground level all day were at Paris, which is why the measured closest approach to KICT reads **7,411.49 km**: the aircraft crossed into Kansas at altitude and the trace ends there without a low-level fix near the claimed field.
+
+**This is a misattribution, not an invention.** The right aircraft flew a real transatlantic leg into Kansas on the claimed date — the sheet put it at the wrong city in the right state. It is also the primary-data anchor for the **KTOP / KFOE Topeka identifier question** this directory records: the track ends over Topeka, and no source states which Topeka field was meant.
+
+| Date | adsb.lol | airplanes.live | SU-BTT heard? | Closest approach to KICT |
+|---|---|---|---|---|
+| 13 Apr | 200 | 200 | yes | **7,419.52 km** at 12:18:12 UTC |
+| **14 Apr** | 200 | 200 | yes | **7,411.49 km** at 09:01:07 UTC |
+| 15 Apr | 404 | 404 | no | no position to measure |
+
+The **bold** row is the date the sheet claims. The other two are the day either side, which is the window the compilation itself used.
+
+**Method, so a reader can repeat it.** Both free ADS-B history archives — adsb.lol globe history and airplanes.live — were queried for **SU-BTT** on **14 April 2023** and the day either side, with positions resolved to the nearest field in the OurAirports public-domain gazetteer. Positions on the ground or below 4,000 ft were measured against the claimed field's coordinates: within **15 km** counts as at the field, within **80 km** as the same metro area — and nearest-airport resolution is geometry, not a landing record.
+
+**Our verdict disagrees with the audit verdict already recorded for this row, and we are not resolving it silently.** `overlaps.csv` records this row as **audited accurate**. Primary position data refutes it. That is a correction running against the direction people expect from this directory — the audit and the compiler agreed on this row, and the position data agrees with neither.
+
+**Erika Kirk's side is unaffected by any of this.** Her flight logs are [reported erased](/Planes/Erika-Flight-Logs-Erased), so there is no itinerary for a confirmed or refuted aircraft position to be checked against. Testing the aircraft half does not make the Erika half testable.
+
+**Files.** The per-row extract is `site/docs/Planes/following/overlap/20230414_KS_wichita_owens_012/data/adsb_verification.json`. The whole run, all 85 rows, is `site/docs/Planes/following/apis/public_open_source/data/overlap_verification/overlap_verification.json`.
+
 ## Links
 
 * [Overlap dates index](/Planes/following/overlap/overview) · [The 73 overlaps — the full reconstruction](/Planes/following/73_overlaps) · [Following overview](/Planes/following/overview)

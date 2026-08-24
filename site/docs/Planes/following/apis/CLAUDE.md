@@ -223,7 +223,10 @@ now; re-check and re-date rather than assuming.
 
 | Source | Endpoint | History? | Auth | Status |
 |---|---|---|---|---|
-| **adsb.lol globe history** | `adsb.lol/globe_history/YYYY/MM/DD/traces/hh/trace_full_HEX.json` | **YES** | none | **200 — the workhorse.** Gzip JSON, self-identifies `r`/`t`. Coverage seen: 2023-02-24 → 2025-10-11, then a 403 band, then normal again by 2025-12-31. |
+| **adsb.lol globe history** | `adsb.lol/globe_history/YYYY/MM/DD/traces/hh/trace_full_HEX.json` | **YES** | none | **200 — the workhorse, but with two site-wide holes.** Gzip JSON, self-identifies `r`/`t`. Control-tested coverage as of 2026-08-24: serves through **2025-10-11**; **403 for every aircraft 2025-10-12 → ~2025-12-30**; **404 for every aircraft ~2025-12-31 → ~2026-08-01**; normal again from ~2026-08-02. |
+| **globe.airplanes.live globe history** | `globe.airplanes.live/globe_history/YYYY/MM/DD/traces/hh/trace_full_HEX.json` | **YES, from ~Nov 2023** | none | **200. THE BACKUP ARCHIVE.** A different volunteer network, same tar1090 layout. Holds **152 aircraft-days adsb.lol does not**, and covers both adsb.lol holes in full. |
+| **ADSBX monthly sample** | `samples.adsbexchange.com/traces/YYYY/MM/DD/hh/trace_full_HEX.json` | **YES, back to 2016** | none | **200. THE ONLY FREE SOURCE THAT REACHES 2022.** One full day per month, the 1st. Produced 34 aircraft-days before 2023. An aircraft that did not fly on the 1st simply is not there. |
+| **OurAirports gazetteer** | `davidmegginson.github.io/ourairports-data/airports.csv` | reference | none | 200, CC0. Held at `public_open_source/data/ourairports/airports.csv`. Resolves a trace position to a named field — **geometry, not a landing record; always publish the distance.** |
 | adsb.lol v2 | `api.adsb.lol/v2/hex/HEX`, `/v2/reg/REG` | live only | none | 200; empty array when not airborne |
 | adsb.fi | `opendata.adsb.fi/api/v2/hex/HEX` | live only | none | 200; same empty-means-parked trap |
 | airplanes.live | `api.airplanes.live/v2/reg/REG` | live only | **gated** | **403** — asks you to email first. Was open before. |
@@ -282,11 +285,56 @@ receiver and query nobody's API), `pipx install waybackpy` (CLI over the same CD
 
 * **Free ADS-B networks are live-only except adsb.lol globe history.** An empty result means NOT
   AIRBORNE NOW. It is not an absence from history and it is not evidence of suppression.
-* **The adsb.lol archive returns 403 for roughly 12 Oct – 15 Dec 2025 for EVERY aircraft**, including
-  ones with no connection to this case. **Archive-wide condition, not suppression.** It happens to
-  cover the claimed Sharm el-Sheikh dates. Never report it as scrubbing.
-* **The archive does not reach 2022.** Earliest trace obtained anywhere: 2023-02-24. Every 2022 claim
-  on this site rests on a screenshot, not on data we hold.
+* **adsb.lol has TWO site-wide holes, and neither is about this case.** Control-tested 2026-08-24
+  against a basket of unrelated airframes: **403 for EVERY aircraft from exactly 2025-10-12 to about
+  2025-12-30**, then **404 for EVERY aircraft from about 2025-12-31 to about 2026-08-01**, then
+  normal again. The 403 band happens to cover the claimed Sharm el-Sheikh dates. **Never report
+  either band as scrubbing.** CORRECTION 2026-08-24: this file previously said the archive was
+  "normal again by 2025-12-31". It is not — 2025-12-31 returns 404 for every control.
+* **Both holes are fully recoverable from the backup network.** globe.airplanes.live serves every
+  date in both bands. 152 aircraft-days were recovered that adsb.lol does not hold; adsb.lol holds
+  **zero** days the backup does not.
+* **THE 2022 WALL IS BROKEN. CORRECTION 2026-08-24.** This file previously said "the archive does not
+  reach 2022; every 2022 claim rests on a screenshot". The ADS-B Exchange **monthly sample** reaches
+  back to 2016, free and keyless, and has produced **34 aircraft-days before 2023** across 12 tails —
+  including SU-BTT **on the ground at Wilmington DE on 2022-06-01** and **at Wichita KS on
+  2022-09-01**, and SU-BTU into **St Louis MO on 2022-12-01**. The sampling caveat travels with every
+  one of them: **one day per month, the 1st.** It establishes that an aircraft was somewhere. It can
+  never establish how often.
+* **A FLIGHTRADAR24 403 IS BOT PROTECTION, NOT A REMOVAL.** FR24 returns 403 to scripted requests for
+  its ENTIRE SITE — every case tail, seven unrelated controls, and its own home page, all the same
+  ~5,877-byte body. **It cannot distinguish a removed record from a present one, and nothing on this
+  site may read it as evidence about a particular aircraft.** Reproduce with
+  `node public_open_source/code/control_probe.js --fr24`.
+* **PASS 4 WAS RUN, AND NO AIRCRAFT PAGE IN THIS INVESTIGATION HAS BEEN REMOVED FROM FLIGHTRADAR24.**
+  Two independent logged-out browser sessions on 2026-08-24 loaded every case tail plus unrelated
+  controls: **HTTP 200 every time, with the full identity block.** N102DZ returns title
+  `N102DZ - Gulfstream V [555] - Flightradar24`, MODE S `A00C85`, TYPE CODE `GLF5`, and nothing on
+  the page says removed, blocked or restricted. **The reported "N102DZ was removed from
+  FlightRadar24" claim is REFUTED, not merely untested.** Its empty history table is the seven-day
+  free-tier window: the unrelated control N628TS prints the identical "could not find data" message
+  at an almost identical byte count. Captures:
+  `browser_capture/captures/fr24_page_availability_2026-08-24.tsv` and
+  `fr24_n102dz_removal_test_2026-08-24b.tsv`.
+* **THE LIMIT OF THAT REFUTATION, AND IT TRAVELS WITH IT EVERYWHERE.** A page that loads today
+  cannot testify about what its table held in May 2026. **"The page was taken down" is refuted. A
+  narrower purge-and-restore claim is beyond this method in EITHER direction**, and no page on this
+  site may assert it. A logged-out free tier is also the weakest view FR24 offers — a paid tier
+  shows 90 days to 3 years, and we have not looked through one.
+* **FR24's free tier shows SEVEN DAYS of history.** A tracking-site history table that is populated
+  in one archived capture and empty in a later one is that window rolling over, not a deletion. This
+  is what the N888KG "vanishing table" turned out to be.
+* **A "0 rows recovered" in a sidecar is not an absence of evidence until the extractor is checked.**
+  153 flight legs sat on disk recorded as 0 or null. Sidecars now distinguish `POPULATED`,
+  `PRESENT_BUT_EMPTY` and `JAVASCRIPT_SHELL_NO_SERVER_RENDERED_ROWS`, which mean three different
+  things.
+* **Never query CDX with `collapse=digest`.** It returns only distinct-content captures, so counts
+  are floors and the "did this page stop changing?" test is impossible by construction. And a CDX
+  query that fails with HTTP 504 is **UNKNOWN, not zero** — three URLs were logged as "never
+  archived" on that mistake, one of them SU-BTT's.
+* **The globe.adsbexchange.com Wayback snapshots are empty JavaScript shells.** Identical content
+  digests across different hex codes prove the Archive captured the app frame, not aircraft data.
+  They must never be cited as per-aircraft evidence.
 * **FAA registrant names differ from community-database owner strings** for most N-tails. The FAA is
   the record; a community database may carry a former owner, an operator, or a management company.
   Name the FAA one and give the retrieval date.

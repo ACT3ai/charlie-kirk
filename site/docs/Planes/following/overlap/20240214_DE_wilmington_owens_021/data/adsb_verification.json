@@ -1,0 +1,114 @@
+{
+ "generated_utc": "2026-08-24T17:36:21.953Z",
+ "radius_km": 15,
+ "method": "For each claimed overlap, both free ADS-B history archives were queried for the claimed foreign tail on the claimed date and the day either side. Positions were resolved to the nearest airport in the OurAirports public-domain gazetteer. A verdict of ELSEWHERE refutes a row; NO_ARCHIVE_COVERAGE and NOT_HEARD do not.",
+ "note": "Per-row extract of OWENS-021 from site/docs/Planes/following/apis/public_open_source/data/overlap_verification/overlap_verification.json",
+ "result": {
+  "overlap_id": "OWENS-021",
+  "date": "2024-02-14",
+  "claimed_airport": "KILG",
+  "claimed_codes": [
+   "KILG"
+  ],
+  "claimed_city": "Wilmington",
+  "claimed_state": "DE",
+  "claimed_tails": [
+   "SU-BTT"
+  ],
+  "subject": "Erika",
+  "audit_verdict": "inaccurate",
+  "site_page": "site/docs/Planes/following/Wilmington_KILG_2022-11-17_to_2025-10-12/overview.mdx",
+  "tails": {
+   "SU-BTT": {
+    "2024-02-13": {
+     "adsb_lol_http": 404,
+     "airplanes_live_http": 404,
+     "archive_control_probe": {
+      "adsb-lol": {
+       "verdict": "COVERED",
+       "codes": [
+        404,
+        404,
+        200
+       ]
+      },
+      "airplanes-live": {
+       "verdict": "COVERED",
+       "codes": [
+        404,
+        404,
+        200
+       ]
+      }
+     },
+     "both_agree": false,
+     "heard": false,
+     "at_claimed_airport": false,
+     "closest_approach_to_claimed_field": null,
+     "airports_touched": null,
+     "first_where": null,
+     "last_where": null,
+     "points": null,
+     "verdict": "NOT_HEARD"
+    },
+    "2024-02-14": {
+     "adsb_lol_http": 200,
+     "airplanes_live_http": 200,
+     "archive_control_probe": null,
+     "both_agree": true,
+     "heard": true,
+     "at_claimed_airport": true,
+     "closest_approach_to_claimed_field": {
+      "code": "KILG",
+      "km": 0.82,
+      "utc": "2024-02-14T16:38:55.260Z",
+      "on_ground": false
+     },
+     "airports_touched": [
+      "KLNK 1.04km below_4000ft",
+      "KN57 3.71km below_4000ft",
+      "KILG 10.55km below_4000ft",
+      "7N7 10.25km below_4000ft",
+      "JY39 8.12km below_4000ft"
+     ],
+     "first_where": "KLNK/LNK (Lincoln Airport, Lincoln NE) 1.04km",
+     "last_where": "KILG/ILG (Wilmington Airport, Wilmington DE) 0.82km",
+     "points": 678,
+     "verdict": "AT_CLAIMED_AIRPORT"
+    },
+    "2024-02-15": {
+     "adsb_lol_http": 404,
+     "airplanes_live_http": 404,
+     "archive_control_probe": {
+      "adsb-lol": {
+       "verdict": "COVERED",
+       "codes": [
+        404,
+        404,
+        200
+       ]
+      },
+      "airplanes-live": {
+       "verdict": "COVERED",
+       "codes": [
+        404,
+        404,
+        200
+       ]
+      }
+     },
+     "both_agree": false,
+     "heard": false,
+     "at_claimed_airport": false,
+     "closest_approach_to_claimed_field": null,
+     "airports_touched": null,
+     "first_where": null,
+     "last_where": null,
+     "points": null,
+     "verdict": "NOT_HEARD"
+    }
+   }
+  },
+  "verdict": "AT_CLAIMED_AIRPORT"
+ }
+}

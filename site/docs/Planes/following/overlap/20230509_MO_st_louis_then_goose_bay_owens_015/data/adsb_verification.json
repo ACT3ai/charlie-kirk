@@ -1,0 +1,110 @@
+{
+ "generated_utc": "2026-08-24T17:36:21.953Z",
+ "radius_km": 15,
+ "method": "For each claimed overlap, both free ADS-B history archives were queried for the claimed foreign tail on the claimed date and the day either side. Positions were resolved to the nearest airport in the OurAirports public-domain gazetteer. A verdict of ELSEWHERE refutes a row; NO_ARCHIVE_COVERAGE and NOT_HEARD do not.",
+ "note": "Per-row extract of OWENS-015 from site/docs/Planes/following/apis/public_open_source/data/overlap_verification/overlap_verification.json",
+ "result": {
+  "overlap_id": "OWENS-015",
+  "date": "2023-05-09",
+  "claimed_airport": "CYYR",
+  "claimed_codes": [
+   "CYYR"
+  ],
+  "claimed_city": "St. Louis then Goose Bay",
+  "claimed_state": "MO",
+  "claimed_tails": [
+   "SU-BND"
+  ],
+  "subject": "Erika",
+  "audit_verdict": "accurate",
+  "site_page": "site/docs/Planes/following/StLouis_KSTL_2022-12-20_to_2025-02-23/overview.mdx",
+  "tails": {
+   "SU-BND": {
+    "2023-05-08": {
+     "adsb_lol_http": 404,
+     "airplanes_live_http": 404,
+     "archive_control_probe": {
+      "adsb-lol": {
+       "verdict": "NOT_COVERED",
+       "codes": [
+        404,
+        404,
+        404,
+        404,
+        404,
+        404,
+        404,
+        404,
+        404
+       ]
+      },
+      "airplanes-live": {
+       "verdict": "NOT_COVERED",
+       "codes": [
+        404,
+        404,
+        404,
+        404,
+        404,
+        404,
+        404,
+        404,
+        404
+       ]
+      }
+     },
+     "both_agree": false,
+     "heard": false,
+     "at_claimed_airport": false,
+     "closest_approach_to_claimed_field": null,
+     "airports_touched": null,
+     "first_where": null,
+     "last_where": null,
+     "points": null,
+     "verdict": "NO_ARCHIVE_COVERAGE"
+    },
+    "2023-05-09": {
+     "adsb_lol_http": 200,
+     "airplanes_live_http": 200,
+     "archive_control_probe": null,
+     "both_agree": true,
+     "heard": true,
+     "at_claimed_airport": false,
+     "closest_approach_to_claimed_field": {
+      "code": "CYYR",
+      "km": 3057.32,
+      "utc": "2023-05-09T20:03:41.630Z",
+      "on_ground": false
+     },
+     "airports_touched": [
+      "7IS2 1.78km below_4000ft",
+      "2IL7 2.04km below_4000ft",
+      "CAA2 39.98km last_fix"
+     ],
+     "first_where": "7IS2 (Aero Estates Airport, Belleville IL) 1.78km",
+     "last_where": "CAA2 (St. Andr\u00e9-Avellin Aerodrome, St. Andre Avellin CA) 39.98km",
+     "points": 290,
+     "verdict": "ELSEWHERE"
+    },
+    "2023-05-10": {
+     "adsb_lol_http": 200,
+     "airplanes_live_http": 200,
+     "archive_control_probe": null,
+     "both_agree": true,
+     "heard": true,
+     "at_claimed_airport": false,
+     "closest_approach_to_claimed_field": null,
+     "airports_touched": [
+      "EIBT 114.6km first_fix",
+      "FR-0503 13.2km last_fix"
+     ],
+     "first_where": "EIBT/BLY (Belmullet Aerodrome, Belmullet IE) 114.6km",
+     "last_where": "FR-0503 (Mouy Airfield, FR) 13.2km",
+     "points": 314,
+     "verdict": "ELSEWHERE"
+    }
+   }
+  },
+  "verdict": "ELSEWHERE"
+ }
+}

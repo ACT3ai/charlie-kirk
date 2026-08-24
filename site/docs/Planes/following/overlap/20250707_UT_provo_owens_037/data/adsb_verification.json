@@ -1,0 +1,127 @@
+{
+  "verified_utc": "2026-08-24T17:36:21.953Z",
+  "overlap_id": "OWENS-037",
+  "date": "2025-07-07",
+  "claimed_airport": "KPVU",
+  "claimed_codes": [
+    "KPVU"
+  ],
+  "claimed_city": "Provo",
+  "claimed_state": "UT",
+  "claimed_tails": [
+    "SU-BND"
+  ],
+  "subject": "Erika",
+  "audit_verdict": "inaccurate",
+  "site_page": "site/docs/Planes/following/Provo_KPVU_2024-04-19_to_2025-09-13/overview.mdx",
+  "tails": {
+    "SU-BND": {
+      "2025-07-06": {
+        "adsb_lol_http": 404,
+        "airplanes_live_http": 404,
+        "archive_control_probe": {
+          "adsb-lol": {
+            "verdict": "COVERED",
+            "codes": [
+              404,
+              404,
+              200
+            ]
+          },
+          "airplanes-live": {
+            "verdict": "COVERED",
+            "codes": [
+              404,
+              404,
+              200
+            ]
+          }
+        },
+        "both_agree": false,
+        "heard": false,
+        "at_claimed_airport": false,
+        "closest_approach_to_claimed_field": null,
+        "airports_touched": null,
+        "first_where": null,
+        "last_where": null,
+        "points": null,
+        "verdict": "NOT_HEARD"
+      },
+      "2025-07-07": {
+        "adsb_lol_http": 404,
+        "airplanes_live_http": 404,
+        "archive_control_probe": {
+          "adsb-lol": {
+            "verdict": "COVERED",
+            "codes": [
+              404,
+              404,
+              200
+            ]
+          },
+          "airplanes-live": {
+            "verdict": "COVERED",
+            "codes": [
+              404,
+              404,
+              200
+            ]
+          }
+        },
+        "both_agree": false,
+        "heard": false,
+        "at_claimed_airport": false,
+        "closest_approach_to_claimed_field": null,
+        "airports_touched": null,
+        "first_where": null,
+        "last_where": null,
+        "points": null,
+        "verdict": "NOT_HEARD"
+      },
+      "2025-07-08": {
+        "adsb_lol_http": 404,
+        "airplanes_live_http": 404,
+        "archive_control_probe": {
+          "adsb-lol": {
+            "verdict": "COVERED",
+            "codes": [
+              404,
+              404,
+              404,
+              404,
+              404,
+              404,
+              404,
+              404,
+              200
+            ]
+          },
+          "airplanes-live": {
+            "verdict": "COVERED",
+            "codes": [
+              404,
+              404,
+              404,
+              404,
+              404,
+              404,
+              404,
+              404,
+              200
+            ]
+          }
+        },
+        "both_agree": false,
+        "heard": false,
+        "at_claimed_airport": false,
+        "closest_approach_to_claimed_field": null,
+        "airports_touched": null,
+        "first_where": null,
+        "last_where": null,
+        "points": null,
+        "verdict": "NOT_HEARD"
+      }
+    }
+  },
+  "verdict": "NOT_HEARD"
+}

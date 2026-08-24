@@ -195,6 +195,28 @@ This row is one cell of the spreadsheet [Candace Owens](/People/candace-owens) d
 
 More of the same discussion, grouped by research topic rather than by date, is on [X discussions of the following planes](/Planes/following/x_discussions) and [Candace Owens broadcasts](/Planes/following/Candace_Owens_Broadcasts).
 
+## We checked this row against primary ADS-B data
+
+**Cannot be checked from free data — and the reason is the row, not the archive.** The tail cell for this row reads literally `UNKNOWN`. The posts say "the Egyptian jet"; they do not say which one. Every free ADS-B archive is keyed on the ICAO hex code an aircraft transmits, so a claim with no airframe cannot be entered into one. **There is nothing to query.**
+
+| Date | Claimed tail | adsb.lol | airplanes.live | Heard | Closest approach to KLNK |
+|---|---|---|---|---|---|
+| 2025-04-28 | `UNKNOWN` | not queried — no hex | not queried — no hex | — | not measurable |
+| 2025-04-29 | `UNKNOWN` | not queried — no hex | not queried — no hex | — | not measurable |
+| 2025-04-30 | `UNKNOWN` | not queried — no hex | not queried — no hex | — | not measurable |
+
+**Method.** Both free ADS-B history archives — adsb.lol globe history and the airplanes.live mirror — were queried for the claimed tail on the claimed date and on the day either side, and every position fix was resolved to the nearest field in the OurAirports public-domain gazetteer. **Nearest-airport resolution is geometry, not a landing record**, which is why the distance in kilometres is published beside every result rather than a bare airport name.
+
+**This is not a coverage problem.** The archives cover April 2025 for the fleet — the same 85-row run pulled full traces for these airframes on dates either side of it. **The data exists. The claim does not name an aircraft to look it up with.**
+
+**It agrees with what this page already says.** `overlaps.csv` records the row as not assessed, this site's own `flights.csv` holds no SU-BTT or SU-BND stay in Nebraska on 29 April 2025, and the documented 2025 Nebraska rotations are 20 July and 17 August. **A primary-data pass adds one more independent way of saying the same thing: there is no airframe here to test.**
+
+**The counterargument, and it cuts both ways.** No tail number is not proof that no jet was at Lincoln that day. It is proof that the claim, as published, **cannot be checked by anyone** — including the people repeating it. It is recorded so it is not later "discovered" and added to a total. Tyler Robinson is **charged, not convicted**, and the Google-search allegation is recorded as posted, not as proven.
+
+This row is one of **85 checked in a single run on 24 August 2026** — 24 confirmed at the claimed field, 12 refuted, 22 not heard, 20 with no archive coverage, 2 naming no aircraft, and 5 naming no date. The whole result is on [Overlap dates](/Planes/following/overlap/overview).
+
+**Files.** This row's extract: `site/docs/Planes/following/overlap/20250429_NE_lincoln_extra_007/data/adsb_verification.json`. The full 85-row run, including the archive control probes: `site/docs/Planes/following/apis/public_open_source/data/overlap_verification/overlap_verification.json`, generated 2026-08-24T17:36:21.953Z. How the archives were recovered and what a 403 does and does not mean is on [Flight data recovery](/Planes/Flight-Data-Recovery/overview).
+
 ## Links
 
 * [Overlap dates index](/Planes/following/overlap/overview) · [The 73 overlaps — the full reconstruction](/Planes/following/73_overlaps) · [Following overview](/Planes/following/overview)

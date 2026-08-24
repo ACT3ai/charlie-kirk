@@ -1,0 +1,114 @@
+{
+  "verified_utc": "2026-08-24T17:36:21.953Z",
+  "overlap_id": "OWENS-035",
+  "date": "2025-05-23",
+  "claimed_airport": "KPVU",
+  "claimed_codes": [
+    "KPVU"
+  ],
+  "claimed_city": "Provo",
+  "claimed_state": "UT",
+  "claimed_tails": [
+    "SU-BND"
+  ],
+  "subject": "Charlie",
+  "audit_verdict": "accurate",
+  "site_page": "site/docs/Planes/following/Provo_KPVU_2024-04-19_to_2025-09-13/overview.mdx",
+  "tails": {
+    "SU-BND": {
+      "2025-05-22": {
+        "adsb_lol_http": 200,
+        "airplanes_live_http": 200,
+        "archive_control_probe": null,
+        "both_agree": true,
+        "heard": true,
+        "at_claimed_airport": false,
+        "closest_approach_to_claimed_field": {
+          "code": "KPVU",
+          "km": 8404.53,
+          "utc": "2025-05-22T09:56:39.390Z",
+          "on_ground": false
+        },
+        "airports_touched": [
+          "FR-0504 4.37km below_4000ft",
+          "LFPK 14.89km below_4000ft",
+          "LFPE 14.75km below_4000ft",
+          "LFPG 11.01km below_4000ft",
+          "LFPB 5.45km below_4000ft",
+          "HE42 22.67km first_fix"
+        ],
+        "first_where": "HE42 (Quesna Airport, Quesna EG) 22.67km",
+        "last_where": "LFPB/LBG (Paris-Le Bourget International Airport, Paris FR) 5.37km",
+        "points": 2060,
+        "verdict": "ELSEWHERE"
+      },
+      "2025-05-23": {
+        "adsb_lol_http": 200,
+        "airplanes_live_http": 200,
+        "archive_control_probe": null,
+        "both_agree": true,
+        "heard": true,
+        "at_claimed_airport": true,
+        "closest_approach_to_claimed_field": {
+          "code": "KPVU",
+          "km": 0.03,
+          "utc": "2025-05-23T20:38:06.220Z",
+          "on_ground": true
+        },
+        "airports_touched": [
+          "LFPB 3.65km below_4000ft",
+          "LFPG 4.93km below_4000ft",
+          "KPVU 0.03km on_ground"
+        ],
+        "first_where": "LFPB/LBG (Paris-Le Bourget International Airport, Paris FR) 3.65km",
+        "last_where": "KPVU/PVU (Provo Municipal Airport, Provo UT) 1.42km",
+        "points": 1963,
+        "verdict": "AT_CLAIMED_AIRPORT"
+      },
+      "2025-05-24": {
+        "adsb_lol_http": 404,
+        "airplanes_live_http": 404,
+        "archive_control_probe": {
+          "adsb-lol": {
+            "verdict": "COVERED",
+            "codes": [
+              404,
+              404,
+              404,
+              404,
+              404,
+              404,
+              404,
+              404,
+              200
+            ]
+          },
+          "airplanes-live": {
+            "verdict": "COVERED",
+            "codes": [
+              404,
+              404,
+              404,
+              404,
+              404,
+              404,
+              404,
+              404,
+              200
+            ]
+          }
+        },
+        "both_agree": false,
+        "heard": false,
+        "at_claimed_airport": false,
+        "closest_approach_to_claimed_field": null,
+        "airports_touched": null,
+        "first_where": null,
+        "last_where": null,
+        "points": null,
+        "verdict": "NOT_HEARD"
+      }
+    }
+  },
+  "verdict": "AT_CLAIMED_AIRPORT"
+}

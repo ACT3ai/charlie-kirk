@@ -128,6 +128,114 @@ status, the byte count and the date, so any line above can be checked without tr
 More: [Flight Data Recovery](/Planes/Flight-Data-Recovery/overview) ·
 [Per-Aircraft Status](/Planes/Flight-Data-Recovery/Per-Aircraft-Status)
 
+## The primary flight data we hold on this aircraft, and where it came from
+
+Everything above this line came from screenshots of somebody else's screen, commentary, and a
+registry lookup. This section is the position data this investigation pulled itself, from free
+public archives anyone can query, saved to disk at `site/docs/Planes/N40JD/data/recovered/` with a
+`.meta.json` sidecar beside every payload recording the source, the URL, the HTTP status, the byte
+count and the retrieval time.
+
+| Measure | N40JD |
+|---|---|
+| Days of primary track held | **23** |
+| Span of those days | **1 June 2022 – 1 April 2026** |
+| From adsb.lol `globe_history` | 10 days |
+| From globe.airplanes.live (the backup network) | 12 days |
+| From the ADS-B Exchange monthly sample | 11 days |
+| Corroborated by **both** free daily archives | **10 days** |
+| Recovered **only** from the backup network | **2 days** |
+| Held **only** by the monthly sample | **11 days** |
+| Days before 2023 | **1** |
+| Fields touched most often | **Scottsdale (KSDL) — 31** · Panama City Beach (KECP) 5 · San Diego (KSAN) 2 |
+
+Counts from `site/docs/Planes/following/apis/public_open_source/data/provenance/tail_provenance.json`.
+
+This is the thinnest record of the four Kirk-side tails, and the reason is visible in the numbers:
+**ten of the twelve days the backup network holds are also held by adsb.lol.** The two archives
+agree almost completely, and only two days needed the second source. A lightly-flown light jet
+simply generates fewer aircraft-days than a charter airframe does. **Thin coverage of a
+lightly-flown aircraft is what a volunteer receiver network looks like. It is not evidence that
+anything was taken away.**
+
+### The 2022 trace, on this site for the first time
+
+`samples.adsbexchange.com` publishes a free full-day sample for **the first of every month**, back
+to 2016, with no account and no key. One of those sampled days falls in 2022 for N40JD.
+
+| Sampled day | First fix | Last fix |
+|---|---|---|
+| 1 June 2022 | Northwest Florida Beaches Intl, Panama City Beach, FL (KECP, 0.45 km) | a private strip near Indianola, Mississippi (7.69 km) |
+
+Positions are the nearest airport and the distance to it — **geometry, not a landing record**, and
+7.69 km is a long way from a runway. The strip is a privately owned field, and we name the place
+rather than the property. The sampling caveat travels with the row: **this is one day per month.**
+One sampled day establishes where the aircraft was on 1 June 2022 and supports nothing about any
+other date in that year.
+
+Read against the 23-day record, it points the same way the rest of the data does. **Scottsdale is
+this aircraft's base** — 31 touches, six times more than any other field — and Panama City Beach,
+the origin of the 2022 sampled day, is the second most touched at 5. The 10 September 2025 leg this
+page is built around **departed Scottsdale**. A Scottsdale-based light jet departing Scottsdale is
+the ordinary case, not the anomaly.
+
+### The one archived page, and the trap it avoids
+
+The Internet Archive holds exactly **one capture** of an N40JD tracking page: FlightRadar24, **22
+May 2022**, HTTP 200, 56,801 bytes. Its flight-history table is present and **empty**. Our sidecar
+labels it `PRESENT_BUT_EMPTY`, and the temptation with a capture like that is obvious — an empty
+history table on an archived tracking page looks like a record that was pulled.
+
+It is not, and this capture proves it out of its own text. The archived page carries FlightRadar24's
+own message:
+
+> "More than 7 days of N40JD history is available with an upgrade to a Silver (90 days), Gold (1
+> year), or Business (3 years) subscription."
+
+**That is the free tier's seven-day history window, not a removal.** The aircraft had not flown in
+the seven days before 22 May 2022, so the free page had nothing to show. This is the identical
+mechanism that dissolved the strongest-looking removal claim in this whole investigation, on
+[N888KG](/Planes/N888KG/overview), where a table that emptied out between 13 and 18 September 2025
+turned out to be the same seven-day window rolling forward. **The evidence for that explanation is
+sitting in this tail's own archived file**, at
+`site/docs/Planes/N40JD/data/recovered/N40JD_20220522070338_wayback_flightradar24.html`.
+
+### This tail is not in the overlap sheet
+
+None of the 85 claimed overlap rows in `site/docs/Planes/following/overlaps.csv` names N40JD. The
+sheet names SU-BTT, SU-BND, or no aircraft at all. N40JD belongs to the **Kirk-side** aircraft —
+tails that bear on where people were, not tails alleged to have followed anyone. **Do not merge
+those threads.** The 18-month following pattern, the 10 September day-of timeline, the
+[N1098L](/Planes/N1098L/overview) thread and the [N888KG](/Planes/N888KG/overview) Wendover
+departure are four separate claims about four separate aircraft sets. That matters especially on
+this page, which already records an attempt to sweep a 2:29 p.m. clock reading into the
+Egyptian-plane thread on the strength of a matching minute.
+
+The limit that governs everything above: **position data locates an aircraft, not a person.** Twenty-three
+days of track establish nothing about who was aboard N40JD on 10 September 2025 or on any other
+date, and nothing here supports or undercuts the unverified commentary associating the flight with
+any named individual. No wrongdoing by anyone is alleged or established. Private manifests are not
+public — which is what the [disclosure laws](/Fix/overview) are proposed to change.
+
+### The counterargument
+
+The plain reading of all of it is that N40JD is a lightly-flown Scottsdale-based light jet with a
+sparse but entirely ordinary public flight record, and that a Scottsdale-to-Provo leg on the
+afternoon of 10 September 2025 — after the shooting — is one more unremarkable trip. Nothing we
+pulled contradicts that. The empty 2022 archived page, which is the only thing on this tail that
+could be mistaken for a removal, explains itself in its own text. **On this evidence there is
+nothing anomalous about this aircraft at all**, and its place on the arrival list is completeness,
+not suspicion.
+
+### Why pulling this data matters at all
+
+The claim this section answers is not about N40JD. It is the broader claim that this category of
+record has been erased. **We pulled nearly four years of ordinary flying for this aircraft, on
+demand, from free archives.** What came back is unremarkable business aviation, and the one artefact
+that looked like a deletion turned out to be a paywall. That is a finding: a record that
+reconstructs this easily has not been scrubbed, and reporting a recovery honestly means reporting
+what it actually shows rather than what would have been more interesting.
+
 {/* CK_INTERESTING_HERE_START */}
 
 ## Interesting In This Area

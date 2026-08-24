@@ -1,0 +1,117 @@
+{
+  "verified_utc": "2026-08-24T17:36:21.953Z",
+  "overlap_id": "OWENS-041",
+  "date": "2025-09-10",
+  "claimed_airport": "KPVU",
+  "claimed_codes": [
+    "KPVU"
+  ],
+  "claimed_city": "Provo then Wilmington",
+  "claimed_state": "UT/DE",
+  "claimed_tails": [
+    "SU-BTT"
+  ],
+  "subject": "Both",
+  "audit_verdict": "inaccurate",
+  "site_page": "site/docs/Planes/following/overlap/20250910_UT_orem/overview.mdx",
+  "tails": {
+    "SU-BTT": {
+      "2025-09-09": {
+        "adsb_lol_http": 404,
+        "airplanes_live_http": 404,
+        "archive_control_probe": {
+          "adsb-lol": {
+            "verdict": "COVERED",
+            "codes": [
+              404,
+              404,
+              404,
+              404,
+              404,
+              404,
+              404,
+              404,
+              200
+            ]
+          },
+          "airplanes-live": {
+            "verdict": "COVERED",
+            "codes": [
+              404,
+              404,
+              404,
+              404,
+              404,
+              404,
+              404,
+              404,
+              200
+            ]
+          }
+        },
+        "both_agree": false,
+        "heard": false,
+        "at_claimed_airport": false,
+        "closest_approach_to_claimed_field": null,
+        "airports_touched": null,
+        "first_where": null,
+        "last_where": null,
+        "points": null,
+        "verdict": "NOT_HEARD"
+      },
+      "2025-09-10": {
+        "adsb_lol_http": 200,
+        "airplanes_live_http": 200,
+        "archive_control_probe": null,
+        "both_agree": true,
+        "heard": true,
+        "at_claimed_airport": true,
+        "closest_approach_to_claimed_field": {
+          "code": "KPVU",
+          "km": 1.23,
+          "utc": "2025-09-10T13:08:57.280Z",
+          "on_ground": true
+        },
+        "airports_touched": [
+          "KPVU 1.37km on_ground",
+          "KN57 7.02km below_4000ft",
+          "US-6790 9.16km below_4000ft",
+          "93MD 14.71km below_4000ft",
+          "KEVY 7.35km below_4000ft",
+          "1DE5 2.48km below_4000ft",
+          "DE34 5.45km below_4000ft",
+          "KILG 11.09km below_4000ft"
+        ],
+        "first_where": "KPVU/PVU (Provo Municipal Airport, Provo UT) 1.37km",
+        "last_where": "KILG/ILG (Wilmington Airport, Wilmington DE) 1.75km",
+        "points": 1229,
+        "verdict": "AT_CLAIMED_AIRPORT"
+      },
+      "2025-09-11": {
+        "adsb_lol_http": 200,
+        "airplanes_live_http": 200,
+        "archive_control_probe": null,
+        "both_agree": true,
+        "heard": true,
+        "at_claimed_airport": false,
+        "closest_approach_to_claimed_field": {
+          "code": "KPVU",
+          "km": 3090.41,
+          "utc": "2025-09-11T11:57:38.290Z",
+          "on_ground": false
+        },
+        "airports_touched": [
+          "KILG 0.95km on_ground",
+          "NJ30 11.19km below_4000ft",
+          "HEAZ 18.55km below_4000ft",
+          "HE15 11.03km below_4000ft"
+        ],
+        "first_where": "KILG/ILG (Wilmington Airport, Wilmington DE) 0.95km",
+        "last_where": "HEAZ (Almaza Air Force Base, El Nozha EG) 4.42km",
+        "points": 1399,
+        "verdict": "ELSEWHERE"
+      }
+    }
+  },
+  "verdict": "AT_CLAIMED_AIRPORT"
+}

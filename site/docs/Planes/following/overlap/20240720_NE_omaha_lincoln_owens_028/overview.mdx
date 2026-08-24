@@ -199,6 +199,30 @@ Compiler note: Year-shifted copy of a 2025 rotation.
 
 More of the same discussion, grouped by research topic rather than by date, is on [X discussions of the following planes](/Planes/following/x_discussions) and [Candace Owens broadcasts](/Planes/following/Candace_Owens_Broadcasts).
 
+## We checked this row against primary ADS-B data
+
+Run 24 August 2026. Every claimed row of the sheet was tested the same way, this one included.
+
+**Refuted, and the refutation rests on the adjacent day.** On **21 July 2024** SU-BTT was flying Egyptian domestic legs — Abu Rish Valley (47.71 km) to Quesna (12.09 km) — **12,019.58 km** from Omaha, with both archives agreeing. The claimed date itself, 20 July 2024, returned no trace from either archive although both covered it, so the direct test is empty.
+
+Be precise about what that means: an aircraft working inside Egypt on the morning of the 21st leaves very little room for a Nebraska stay on the 20th, but this row is refuted by the day after it, not by the day itself.
+
+| Date | adsb.lol | airplanes.live | SU-BTT heard? | Closest approach to KOMA |
+|---|---|---|---|---|
+| 19 Jul | 404 | 404 | no | no position to measure |
+| **20 Jul** | 404 | 404 | no | no position to measure |
+| 21 Jul | 200 | 200 | yes | **12,019.58 km** at 08:32:40 UTC |
+
+The **bold** row is the date the sheet claims. The other two are the day either side, which is the window the compilation itself used.
+
+**Method, so a reader can repeat it.** Both free ADS-B history archives — adsb.lol globe history and airplanes.live — were queried for **SU-BTT** on **20 July 2024** and the day either side, with positions resolved to the nearest field in the OurAirports public-domain gazetteer. Positions on the ground or below 4,000 ft were measured against the claimed field's coordinates: within **15 km** counts as at the field, within **80 km** as the same metro area — and nearest-airport resolution is geometry, not a landing record.
+
+**Against the earlier audit.** `overlaps.csv` records this row as **audited inaccurate**, and the primary-data verdict agrees with it. Two independent methods reaching the same answer is worth more than either on its own.
+
+**Erika Kirk's side is unaffected by any of this.** Her flight logs are [reported erased](/Planes/Erika-Flight-Logs-Erased), so there is no itinerary for a confirmed or refuted aircraft position to be checked against. Testing the aircraft half does not make the Erika half testable.
+
+**Files.** The per-row extract is `site/docs/Planes/following/overlap/20240720_NE_omaha_lincoln_owens_028/data/adsb_verification.json`. The whole run, all 85 rows, is `site/docs/Planes/following/apis/public_open_source/data/overlap_verification/overlap_verification.json`.
+
 ## Links
 
 * [Overlap dates index](/Planes/following/overlap/overview) · [The 73 overlaps — the full reconstruction](/Planes/following/73_overlaps) · [Following overview](/Planes/following/overview)

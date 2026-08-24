@@ -1,0 +1,153 @@
+{
+  "verified_utc": "2026-08-24T17:36:21.953Z",
+  "radius_km": 15,
+  "method": "For each claimed overlap, both free ADS-B history archives were queried for the claimed foreign tail on the claimed date and the day either side. Positions were resolved to the nearest airport in the OurAirports public-domain gazetteer. A verdict of ELSEWHERE refutes a row; NO_ARCHIVE_COVERAGE and NOT_HEARD do not.",
+  "overlap_id": "EXTRA-003",
+  "date": "2023-04-23",
+  "claimed_airport": "KTOP",
+  "claimed_codes": [
+    "KTOP"
+  ],
+  "claimed_city": "Topeka",
+  "claimed_state": "KS",
+  "claimed_tails": [
+    "SU-BTT"
+  ],
+  "subject": "TPUSA",
+  "audit_verdict": "",
+  "site_page": "site/docs/Planes/following/speaking/20230423_topeka.mdx",
+  "tails": {
+    "SU-BTT": {
+      "2023-04-22": {
+        "adsb_lol_http": 404,
+        "airplanes_live_http": 404,
+        "archive_control_probe": {
+          "adsb-lol": {
+            "verdict": "NOT_COVERED",
+            "codes": [
+              404,
+              404,
+              404,
+              404,
+              404,
+              404,
+              404,
+              404,
+              404
+            ]
+          },
+          "airplanes-live": {
+            "verdict": "NOT_COVERED",
+            "codes": [
+              404,
+              404,
+              404,
+              404,
+              404,
+              404,
+              404,
+              404,
+              404
+            ]
+          }
+        },
+        "both_agree": false,
+        "heard": false,
+        "at_claimed_airport": false,
+        "closest_approach_to_claimed_field": null,
+        "airports_touched": null,
+        "first_where": null,
+        "last_where": null,
+        "points": null,
+        "verdict": "NO_ARCHIVE_COVERAGE"
+      },
+      "2023-04-23": {
+        "adsb_lol_http": 404,
+        "airplanes_live_http": 404,
+        "archive_control_probe": {
+          "adsb-lol": {
+            "verdict": "NOT_COVERED",
+            "codes": [
+              404,
+              404,
+              404,
+              404,
+              404,
+              404,
+              404,
+              404,
+              404
+            ]
+          },
+          "airplanes-live": {
+            "verdict": "NOT_COVERED",
+            "codes": [
+              404,
+              404,
+              404,
+              404,
+              404,
+              404,
+              404,
+              404,
+              404
+            ]
+          }
+        },
+        "both_agree": false,
+        "heard": false,
+        "at_claimed_airport": false,
+        "closest_approach_to_claimed_field": null,
+        "airports_touched": null,
+        "first_where": null,
+        "last_where": null,
+        "points": null,
+        "verdict": "NO_ARCHIVE_COVERAGE"
+      },
+      "2023-04-24": {
+        "adsb_lol_http": 404,
+        "airplanes_live_http": 404,
+        "archive_control_probe": {
+          "adsb-lol": {
+            "verdict": "NOT_COVERED",
+            "codes": [
+              404,
+              404,
+              404,
+              404,
+              404,
+              404,
+              404,
+              404,
+              404
+            ]
+          },
+          "airplanes-live": {
+            "verdict": "NOT_COVERED",
+            "codes": [
+              404,
+              404,
+              404,
+              404,
+              404,
+              404,
+              404,
+              404,
+              404
+            ]
+          }
+        },
+        "both_agree": false,
+        "heard": false,
+        "at_claimed_airport": false,
+        "closest_approach_to_claimed_field": null,
+        "airports_touched": null,
+        "first_where": null,
+        "last_where": null,
+        "points": null,
+        "verdict": "NO_ARCHIVE_COVERAGE"
+      }
+    }
+  },
+  "verdict": "NO_ARCHIVE_COVERAGE"
+}

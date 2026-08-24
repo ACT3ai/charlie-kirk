@@ -1,0 +1,87 @@
+{
+  "verified_utc": "2026-08-24T17:36:21.953Z",
+  "overlap_id": "OWENS-042",
+  "date": "2025-09-13",
+  "claimed_airport": "KPVU",
+  "claimed_codes": [
+    "KPVU"
+  ],
+  "claimed_city": "Provo",
+  "claimed_state": "UT",
+  "claimed_tails": [
+    "SU-BND"
+  ],
+  "subject": "Erika",
+  "audit_verdict": "accurate",
+  "site_page": "site/docs/Planes/following/Provo_KPVU_2024-04-19_to_2025-09-13/overview.mdx",
+  "tails": {
+    "SU-BND": {
+      "2025-09-12": {
+        "adsb_lol_http": 200,
+        "airplanes_live_http": 200,
+        "archive_control_probe": null,
+        "both_agree": true,
+        "heard": true,
+        "at_claimed_airport": true,
+        "closest_approach_to_claimed_field": {
+          "code": "KPVU",
+          "km": 1.29,
+          "utc": "2025-09-12T16:48:52.550Z",
+          "on_ground": true
+        },
+        "airports_touched": [
+          "KPVU 1.29km on_ground"
+        ],
+        "first_where": "KPVU/PVU (Provo Municipal Airport, Provo UT) 1.29km",
+        "last_where": "KPVU/PVU (Provo Municipal Airport, Provo UT) 1.29km",
+        "points": 560,
+        "verdict": "AT_CLAIMED_AIRPORT"
+      },
+      "2025-09-13": {
+        "adsb_lol_http": 200,
+        "airplanes_live_http": 200,
+        "archive_control_probe": null,
+        "both_agree": true,
+        "heard": true,
+        "at_claimed_airport": false,
+        "closest_approach_to_claimed_field": null,
+        "airports_touched": [
+          "KPVU 0.62km first_fix",
+          "CA-0761 58.9km last_fix"
+        ],
+        "first_where": "KPVU/PVU (Provo Municipal Airport, Provo UT) 0.62km",
+        "last_where": "CA-0761 (Nipigon Airport, Nipigon CA) 58.9km",
+        "points": 810,
+        "verdict": "ELSEWHERE"
+      },
+      "2025-09-14": {
+        "adsb_lol_http": 200,
+        "airplanes_live_http": 200,
+        "archive_control_probe": null,
+        "both_agree": true,
+        "heard": true,
+        "at_claimed_airport": false,
+        "closest_approach_to_claimed_field": {
+          "code": "KPVU",
+          "km": 8377.26,
+          "utc": "2025-09-14T05:51:14.460Z",
+          "on_ground": false
+        },
+        "airports_touched": [
+          "LFAD 15.28km below_4000ft",
+          "FR-0467 16.17km below_4000ft",
+          "FR-0432 12.22km below_4000ft",
+          "LFPE 18.31km below_4000ft",
+          "LFPG 10.41km below_4000ft",
+          "LFPB 5.36km below_4000ft",
+          "EIBN 429.81km first_fix"
+        ],
+        "first_where": "EIBN/BYT (Bantry Aerodrome, Bantry IE) 429.81km",
+        "last_where": "LFPB/LBG (Paris-Le Bourget International Airport, Paris FR) 0.44km",
+        "points": 1183,
+        "verdict": "ELSEWHERE"
+      }
+    }
+  },
+  "verdict": "AT_CLAIMED_AIRPORT"
+}

@@ -199,6 +199,30 @@ Compiler note: The one time Kirk is documented in Lincoln in 2023, the audit sti
 
 More of the same discussion, grouped by research topic rather than by date, is on [X discussions of the following planes](/Planes/following/x_discussions) and [Candace Owens broadcasts](/Planes/following/Candace_Owens_Broadcasts).
 
+## We checked this row against primary ADS-B data
+
+Run 24 August 2026. Every claimed row of the sheet was tested the same way, this one included.
+
+**Cannot be checked from free data.** No free ADS-B archive reaches 25 July 2023. Both archives returned HTTP 404 for SU-BTT on the claimed date and the day either side, and the same control basket of unrelated aircraft returned 404 on those dates too — the gap is the archive's date range, not this airframe. **This says nothing either way about the claim.** Almost every 2022 and early-2023 row of this sheet lands here.
+
+The one free source that does reach 2022 is the ADS-B Exchange monthly sample, and it publishes a full day for the **1st of each month only**. The claimed date is not a 1st, so it does not help this row.
+
+| Date | adsb.lol | airplanes.live | SU-BTT heard? | Closest approach to KLNK |
+|---|---|---|---|---|
+| 24 Jul | 404 | 404 | no | no position to measure |
+| **25 Jul** | 404 | 404 | no | no position to measure |
+| 26 Jul | 404 | 404 | no | no position to measure |
+
+The **bold** row is the date the sheet claims. The other two are the day either side, which is the window the compilation itself used.
+
+**Method, so a reader can repeat it.** Both free ADS-B history archives — adsb.lol globe history and airplanes.live — were queried for **SU-BTT** on **25 July 2023** and the day either side, with positions resolved to the nearest field in the OurAirports public-domain gazetteer. Positions on the ground or below 4,000 ft were measured against the claimed field's coordinates: within **15 km** counts as at the field, within **80 km** as the same metro area — and nearest-airport resolution is geometry, not a landing record.
+
+**Against the earlier audit.** `overlaps.csv` records this row as **audited inaccurate**. We can neither support nor contradict that from free data, so the recorded verdict stands untouched — an untested row is not a corrected one.
+
+**Erika Kirk's side is unaffected by any of this.** Her flight logs are [reported erased](/Planes/Erika-Flight-Logs-Erased), so there is no itinerary for a confirmed or refuted aircraft position to be checked against. Testing the aircraft half does not make the Erika half testable.
+
+**Files.** The per-row extract is `site/docs/Planes/following/overlap/20230725_NE_lincoln_owens_017/data/adsb_verification.json`. The whole run, all 85 rows, is `site/docs/Planes/following/apis/public_open_source/data/overlap_verification/overlap_verification.json`.
+
 ## Links
 
 * [Overlap dates index](/Planes/following/overlap/overview) · [The 73 overlaps — the full reconstruction](/Planes/following/73_overlaps) · [Following overview](/Planes/following/overview)

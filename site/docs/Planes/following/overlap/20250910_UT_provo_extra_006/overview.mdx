@@ -60,6 +60,7 @@ Not a separate Owens-sheet index; it is the blue-plane half of 9/10, which the s
 | Arrived from | Provo ramp since 2025-05-23 |
 | Departed to | did not take off 9/10; left 9/13 |
 | Transponder | ON 09:05:36 / OFF 10:34:05 / ON 12:40:53 / OFF 13:29:40 (Owens 17 Nov 2025, time base unstated) |
+| Transponder — **time base now settled** | The raw trace from both free archives gives **16:05:35 / 17:34:09 / 19:40:53 / 20:29:38 UTC**. Owens' figures are those times at **UTC−7**, but Provo was on **MDT (UTC−6)** that day. Corrected: **10:05:35 / 11:34:09 / 13:40:53 / 14:29:38 MDT** — the transponder went quiet **49 min BEFORE** the shot and returned **77 min AFTER** it, not 17. See [Overlap Recovery](/Planes/Flight-Data-Recovery/Overlap-Recovery) |
 | **Audit verdict** | **AUDITED ACCURATE** |
 | Full arrival log for this field | [Provo](/Planes/following/Provo_KPVU_2024-04-19_to_2025-09-13/overview) |
 
@@ -234,6 +235,32 @@ This row is one cell of the spreadsheet [Candace Owens](/People/candace-owens) d
 Compiler note: Not a separate Owens-sheet index; it is the blue-plane half of 9/10, which the sheet's row 41 assigned to SU-BTT's (wrong-origin) departure.
 
 More of the same discussion, grouped by research topic rather than by date, is on [X discussions of the following planes](/Planes/following/x_discussions) and [Candace Owens broadcasts](/Planes/following/Candace_Owens_Broadcasts).
+
+## We checked this row against primary ADS-B data
+
+**Confirmed.** Both free archives hold SU-BND on 9 and 10 September 2025, they agree with each other, and they place the aircraft **on the ground at Provo Municipal Airport**. The closest approach to the claimed field is **1.29 km at 20:03:33 UTC on 9 September 2025** and **1.29 km at 16:05:35 UTC on 10 September 2025** — on the ground on both fixes.
+
+| Date | Tail | adsb.lol | airplanes.live | Heard | Closest approach to KPVU |
+|---|---|---|---|---|---|
+| 2025-09-09 | **SU-BND** | 200 | 200 | **yes — both agree** | **1.29 km, 20:03:33 UTC, on the ground** (131 fixes) |
+| 2025-09-10 | **SU-BND** | 200 | 200 | **yes — both agree** | **1.29 km, 16:05:35 UTC, on the ground** (257 fixes) |
+| 2025-09-11 | SU-BND | 404 | 404 | no — archives cover the date | not measurable |
+
+**Method.** Both free ADS-B history archives — adsb.lol globe history and the airplanes.live mirror — were queried for the claimed tail on the claimed date and on the day either side, and every position fix was resolved to the nearest field in the OurAirports public-domain gazetteer. **Nearest-airport resolution is geometry, not a landing record**, which is why the distance in kilometres is published beside every result rather than a bare airport name.
+
+**Every fix on both days resolves to Provo and to nothing else.** The extract's airport list for each day contains one entry — `KPVU` — and the first and last fixes of each day are the same field. **The primary data is consistent with an aircraft that sat on that ramp and did not fly.**
+
+**This confirms the AIRCRAFT half and nothing else.** Position data locates an airframe. It does not put Charlie Kirk or Erika Kirk anywhere, it does not establish that anyone aboard knew where either of them was, and it does not establish who tasked the flight. The Kirk half of this pairing is exactly as strong, or as weak, as it was before we pulled the data.
+
+**What it does not settle: the transponder timings.** The archives show that this airframe was *heard* on both days, which is what a live transponder produces. **They are not a switch-on and switch-off log**, and nothing in this pull corroborates or contradicts the specific cycle times published for 10 September, whose time base was never stated. That dispute is unchanged.
+
+**The counterargument, which this confirmation does not touch.** A parked aircraft transmitting from a maintenance ramp is what a parked aircraft does. Duncan Aviation has a Provo facility and has held the Egyptian Air Force account since 1999. **Confirming that SU-BND was on that ramp confirms the least contested fact on this page** — nobody ever disputed the aircraft was there. What is disputed is what it meant, and position data cannot reach that.
+
+**This agrees with the row's existing status.** `overlaps.csv` records it **audited accurate**, and the independent audit reached the same conclusion from paid archives. Two independent readings and one primary-data pull now agree on the aircraft's position.
+
+This row is one of **85 checked in a single run on 24 August 2026** — 24 confirmed at the claimed field, 12 refuted, 22 not heard, 20 with no archive coverage, 2 naming no aircraft, and 5 naming no date. The whole result is on [Overlap dates](/Planes/following/overlap/overview).
+
+**Files.** This row's extract: `site/docs/Planes/following/overlap/20250910_UT_provo_extra_006/data/adsb_verification.json`. The full 85-row run, including the archive control probes: `site/docs/Planes/following/apis/public_open_source/data/overlap_verification/overlap_verification.json`, generated 2026-08-24T17:36:21.953Z. How the archives were recovered and what a 403 does and does not mean is on [Flight data recovery](/Planes/Flight-Data-Recovery/overview).
 
 ## Links
 

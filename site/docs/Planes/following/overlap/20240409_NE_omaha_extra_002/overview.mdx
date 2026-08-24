@@ -175,6 +175,26 @@ Compiler note: 15–16 months before SU-BTT's 2025 Omaha landings. A 15-month ga
 
 More of the same discussion, grouped by research topic rather than by date, is on [X discussions of the following planes](/Planes/following/x_discussions) and [Candace Owens broadcasts](/Planes/following/Candace_Owens_Broadcasts).
 
+## We checked this row against primary ADS-B data
+
+**There is nothing to query.** The source row for 9 April 2024 names Omaha, names Charlie Kirk, and names **no aircraft at all** — its tail cell is empty. A flight archive is indexed by airframe, so a row with no airframe cannot be checked against one. **That is a fact about the claim, not about the data.**
+
+| Date | Claimed tail | adsb.lol | airplanes.live | Heard | Closest approach to KOMA |
+|---|---|---|---|---|---|
+| 2024-04-08 | **none named** | not queried | not queried | — | not measurable |
+| 2024-04-09 | **none named** | not queried | not queried | — | not measurable |
+| 2024-04-10 | **none named** | not queried | not queried | — | not measurable |
+
+**Method.** Both free ADS-B history archives — adsb.lol globe history and the airplanes.live mirror — were queried for the claimed tail on the claimed date and on the day either side, and every position fix was resolved to the nearest field in the OurAirports public-domain gazetteer. **Nearest-airport resolution is geometry, not a landing record**, which is why the distance in kilometres is published beside every result rather than a bare airport name.
+
+**This agrees with the row's existing status, which is that it is a clean non-overlap.** The note recorded against it says no aircraft was in Nebraska on either candidate date. Nothing in the primary-data pass changes that, because there was never an airframe named to look for. **A row with a documented Kirk appearance and no aircraft is a documented Kirk appearance, not an overlap.**
+
+**The counterargument, and it cuts both ways.** The absence of a named tail is not evidence that a jet was there and was hidden, and it is not evidence that the compilation was careless. It means the row is **untestable as written**. Publishing it is the point: a log that holds only the hits is a case, not a log.
+
+This row is one of **85 checked in a single run on 24 August 2026** — 24 confirmed at the claimed field, 12 refuted, 22 not heard, 20 with no archive coverage, 2 naming no aircraft, and 5 naming no date. The whole result is on [Overlap dates](/Planes/following/overlap/overview).
+
+**Files.** This row's extract: `site/docs/Planes/following/overlap/20240409_NE_omaha_extra_002/data/adsb_verification.json`. The full 85-row run, including the archive control probes: `site/docs/Planes/following/apis/public_open_source/data/overlap_verification/overlap_verification.json`, generated 2026-08-24T17:36:21.953Z. How the archives were recovered and what a 403 does and does not mean is on [Flight data recovery](/Planes/Flight-Data-Recovery/overview).
+
 ## Links
 
 * [Overlap dates index](/Planes/following/overlap/overview) · [The 73 overlaps — the full reconstruction](/Planes/following/73_overlaps) · [Following overview](/Planes/following/overview)

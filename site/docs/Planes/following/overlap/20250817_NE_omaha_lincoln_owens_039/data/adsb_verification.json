@@ -1,0 +1,109 @@
+{
+  "verified_utc": "2026-08-24T17:36:21.953Z",
+  "overlap_id": "OWENS-039",
+  "date": "2025-08-17",
+  "claimed_airport": "KOMA",
+  "claimed_codes": [
+    "KOMA"
+  ],
+  "claimed_city": "Omaha / Lincoln",
+  "claimed_state": "NE",
+  "claimed_tails": [
+    "SU-BTT"
+  ],
+  "subject": "Erika",
+  "audit_verdict": "partial",
+  "site_page": "site/docs/Planes/following/Omaha_KOMA_2024-02-09_to_2025-10-05/overview.mdx",
+  "tails": {
+    "SU-BTT": {
+      "2025-08-16": {
+        "adsb_lol_http": 200,
+        "airplanes_live_http": 200,
+        "archive_control_probe": null,
+        "both_agree": true,
+        "heard": true,
+        "at_claimed_airport": false,
+        "closest_approach_to_claimed_field": {
+          "code": "KOMA",
+          "km": 7225.46,
+          "utc": "2025-08-16T09:55:44.010Z",
+          "on_ground": false
+        },
+        "airports_touched": [
+          "LFPV 6.04km below_4000ft",
+          "LFPZ 7.02km below_4000ft",
+          "LFPB 15.34km below_4000ft",
+          "HE42 11.57km first_fix"
+        ],
+        "first_where": "HE42 (Quesna Airport, Quesna EG) 11.57km",
+        "last_where": "LFPB/LBG (Paris-Le Bourget International Airport, Paris FR) 0.96km",
+        "points": 929,
+        "verdict": "ELSEWHERE"
+      },
+      "2025-08-17": {
+        "adsb_lol_http": 200,
+        "airplanes_live_http": 200,
+        "archive_control_probe": null,
+        "both_agree": true,
+        "heard": true,
+        "at_claimed_airport": true,
+        "closest_approach_to_claimed_field": {
+          "code": "KOMA",
+          "km": 0.65,
+          "utc": "2025-08-17T16:45:18.350Z",
+          "on_ground": false
+        },
+        "airports_touched": [
+          "LFPB 1.08km below_4000ft",
+          "LFPG 5.37km below_4000ft",
+          "LFPH 7.92km below_4000ft",
+          "LFPE 8.63km below_4000ft",
+          "LFPP 13.51km below_4000ft",
+          "90IA 18.33km below_4000ft",
+          "US-4767 14.61km below_4000ft",
+          "75NE 9.12km below_4000ft",
+          "KOMA 4.01km below_4000ft",
+          "73NE 2.32km below_4000ft",
+          "68NE 3.75km below_4000ft",
+          "NE42 4.66km below_4000ft"
+        ],
+        "first_where": "LFPB/LBG (Paris-Le Bourget International Airport, Paris FR) 1.08km",
+        "last_where": "NE42 (Dream Field, Lincoln NE) 5.77km",
+        "points": 1425,
+        "verdict": "AT_CLAIMED_AIRPORT"
+      },
+      "2025-08-18": {
+        "adsb_lol_http": 404,
+        "airplanes_live_http": 404,
+        "archive_control_probe": {
+          "adsb-lol": {
+            "verdict": "COVERED",
+            "codes": [
+              404,
+              404,
+              200
+            ]
+          },
+          "airplanes-live": {
+            "verdict": "COVERED",
+            "codes": [
+              404,
+              404,
+              200
+            ]
+          }
+        },
+        "both_agree": false,
+        "heard": false,
+        "at_claimed_airport": false,
+        "closest_approach_to_claimed_field": null,
+        "airports_touched": null,
+        "first_where": null,
+        "last_where": null,
+        "points": null,
+        "verdict": "NOT_HEARD"
+      }
+    }
+  },
+  "verdict": "AT_CLAIMED_AIRPORT"
+}

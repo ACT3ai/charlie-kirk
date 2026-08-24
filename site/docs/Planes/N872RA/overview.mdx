@@ -134,6 +134,116 @@ status, the byte count and the date, so any line above can be checked without tr
 More: [Flight Data Recovery](/Planes/Flight-Data-Recovery/overview) ·
 [Per-Aircraft Status](/Planes/Flight-Data-Recovery/Per-Aircraft-Status)
 
+## The primary flight data we hold on this aircraft, and where it came from
+
+This page has described N872RA as a thin tail — a line on somebody's screenshot of a Provo arrival
+list. On the position side it is not thin at all. **We hold 70 days of primary track for this
+aircraft**, more than for any other Kirk-side tail in this investigation, pulled by us from free
+public archives and saved to disk at `site/docs/Planes/N872RA/data/recovered/` with a `.meta.json`
+sidecar beside every payload recording the source, the URL, the HTTP status, the byte count and the
+retrieval time.
+
+| Measure | N872RA |
+|---|---|
+| Days of primary track held | **70** |
+| Span of those days | **1 April 2022 – 1 August 2026** |
+| From adsb.lol `globe_history` | 12 days |
+| From globe.airplanes.live (the backup network) | 48 days |
+| From the ADS-B Exchange monthly sample | 24 days |
+| Corroborated by **both** free daily archives | **12 days** |
+| Recovered **only** from the backup network | **36 days** |
+| Held **only** by the monthly sample | **22 days** |
+| Days before 2023 | **2** |
+| Fields touched most often | **John Wayne / Orange County (KSNA) — 45** · Salt Lake City (KSLC) 9 · Scottsdale (KSDL) 5 |
+
+Counts from `site/docs/Planes/following/apis/public_open_source/data/provenance/tail_provenance.json`.
+
+**Thirty-six of the seventy days — more than half the record — exist only because we asked a second
+archive.** That is the single clearest demonstration on this page of why one source is not enough.
+It is not evidence that anything was removed from the first archive: the two networks run on
+different volunteer receivers with different antennas in different places, and a busy charter jet
+flying constantly will be heard unevenly. But a check of this tail against adsb.lol alone would
+have seen 12 days and concluded the record was thin. The record is not thin.
+
+### The 2022 traces, on this site for the first time
+
+`samples.adsbexchange.com` publishes a free full-day sample for **the first of every month**, back
+to 2016, with no account and no key. Two of those sampled days fall in 2022 for N872RA.
+
+| Sampled day | First fix | Last fix |
+|---|---|---|
+| 1 April 2022 | Austin-Bergstrom, TX (KAUS, 1.41 km) | John Wayne / Orange County, CA (KSNA, 0.19 km) |
+| 1 December 2022 | Scottsdale, AZ (KSDL, 0.65 km) | Palmdale, CA (KPMD, 3.82 km) |
+
+Positions are the nearest airport and the distance to it — **geometry, not a landing record.** The
+sampling caveat travels with both rows: **this is one day per month.** Two sampled days establish
+where the aircraft was on two days in 2022. They support no claim about frequency, about any other
+date, or about a pattern.
+
+Read against the 70-day record, they say something modest and useful. **KSNA is where this aircraft
+lives** — 45 touches, far more than any other field, and it matches the FAA registrant's own city:
+A&E Hawker LP of Santa Ana, California, which is Orange County. A Southern California charter jet
+that ends its day at John Wayne in 2022 is doing exactly what a Southern California charter jet
+does. The **Santa Barbara** origin this page treats as a flag is an ordinary short hop inside that
+aircraft's normal operating area.
+
+**And the fact that cuts both ways, stated plainly: Salt Lake City is this tail's second most
+touched field, at 9 days.** That does not make Utah suspicious for N872RA; it makes Utah routine
+for N872RA. An arrival into the Provo area by an aircraft that regularly works the Salt Lake
+corridor is weaker evidence of anything, not stronger.
+
+### No archived page snapshots at all — and what that does and does not mean
+
+The Internet Archive holds **zero captures of any N872RA tracking page**, on any site, ever. Our
+re-query of the Archive's CDX index on 24 August 2026 succeeded and returned an empty result, which
+is a different thing from a query that failed.
+
+**Nobody ever asked the Archive to crawl these pages. That is absence of archival interest, not
+removal.** There is no 200-to-404 transition here, because there was never a 200 to begin with.
+Across the entire archive dataset for this investigation, every recorded CDX row on every URL is
+`statuscode=200`, and there is no page in it that was archived and later disappeared. Any account
+that treats an empty Archive result for this tail as a takedown is reading a gap in crawler
+coverage as an act.
+
+This also makes N872RA a clean illustration of a distinction that gets blurred constantly: **a page
+archive and a sensor archive are two unrelated things.** The page archive holds nothing. The sensor
+archive holds 70 days. Nothing was lost, because nothing was ever archived on the page side to
+lose.
+
+### This tail is not in the overlap sheet
+
+None of the 85 claimed overlap rows in `site/docs/Planes/following/overlaps.csv` names N872RA. The
+sheet names SU-BTT, SU-BND, or no aircraft at all. N872RA belongs to the **Kirk-side** aircraft —
+tails that bear on where the Kirk party and its associates were, not tails alleged to have followed
+them. **Do not merge those threads.** The 18-month following pattern, the 10 September day-of
+timeline, the [N1098L](/Planes/N1098L/overview) thread and the
+[N888KG](/Planes/N888KG/overview) Wendover departure are four separate claims about four separate
+aircraft sets.
+
+The limit applies here with particular force, because this page raises the "tarmac hug" question:
+**position data locates an aircraft, not a person.** Nothing in 70 days of track establishes who was
+aboard N872RA on 10 September 2025, and it therefore cannot confirm or refute the identification of
+this airframe as the Santa Barbara aircraft in that account. Private manifests are not public.
+
+### The counterargument
+
+The plain reading is that N872RA is a hard-working Orange County charter jet — the FlightRadar24
+page served 294 history rows in a single seven-day window — that flies Southern California, Utah
+and Arizona constantly, and that a Santa Barbara-to-Provo leg on 10 September 2025 is one more
+ordinary day of that. Nothing we pulled contradicts that reading. The Salt Lake City count and the
+Santa Ana home base both actively support it. **On this evidence there is nothing anomalous about
+this aircraft's presence at Provo**, and its place on the arrival list is a manifest-review item
+rather than a lead.
+
+### Why pulling this data matters at all
+
+The claim this section answers is not about N872RA. It is the broader claim that this category of
+record has been erased. **We pulled more than four years of ordinary flying for this aircraft, on
+demand, from free archives — 70 days of it, for a tail whose tracking pages nobody ever bothered to
+archive.** What came back is unremarkable business aviation. That is a finding: a record that
+reconstructs this easily is not a record that has been scrubbed, and reporting the recovery honestly
+means reporting what it shows.
+
 {/* CK_INTERESTING_HERE_START */}
 
 ## Interesting In This Area

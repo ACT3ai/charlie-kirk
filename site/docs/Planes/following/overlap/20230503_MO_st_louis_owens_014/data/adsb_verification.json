@@ -1,0 +1,139 @@
+{
+ "generated_utc": "2026-08-24T17:36:21.953Z",
+ "radius_km": 15,
+ "method": "For each claimed overlap, both free ADS-B history archives were queried for the claimed foreign tail on the claimed date and the day either side. Positions were resolved to the nearest airport in the OurAirports public-domain gazetteer. A verdict of ELSEWHERE refutes a row; NO_ARCHIVE_COVERAGE and NOT_HEARD do not.",
+ "note": "Per-row extract of OWENS-014 from site/docs/Planes/following/apis/public_open_source/data/overlap_verification/overlap_verification.json",
+ "result": {
+  "overlap_id": "OWENS-014",
+  "date": "2023-05-03",
+  "claimed_airport": "KCPS",
+  "claimed_codes": [
+   "KCPS"
+  ],
+  "claimed_city": "St. Louis",
+  "claimed_state": "MO",
+  "claimed_tails": [
+   "SU-BND"
+  ],
+  "subject": "Erika",
+  "audit_verdict": "accurate",
+  "site_page": "site/docs/Planes/following/StLouis_KSTL_2022-12-20_to_2025-02-23/overview.mdx",
+  "tails": {
+   "SU-BND": {
+    "2023-05-02": {
+     "adsb_lol_http": 404,
+     "airplanes_live_http": 404,
+     "archive_control_probe": {
+      "adsb-lol": {
+       "verdict": "NOT_COVERED",
+       "codes": [
+        404,
+        404,
+        404,
+        404,
+        404,
+        404,
+        404,
+        404,
+        404
+       ]
+      },
+      "airplanes-live": {
+       "verdict": "NOT_COVERED",
+       "codes": [
+        404,
+        404,
+        404,
+        404,
+        404,
+        404,
+        404,
+        404,
+        404
+       ]
+      }
+     },
+     "both_agree": false,
+     "heard": false,
+     "at_claimed_airport": false,
+     "closest_approach_to_claimed_field": null,
+     "airports_touched": null,
+     "first_where": null,
+     "last_where": null,
+     "points": null,
+     "verdict": "NO_ARCHIVE_COVERAGE"
+    },
+    "2023-05-03": {
+     "adsb_lol_http": 200,
+     "airplanes_live_http": 200,
+     "archive_control_probe": null,
+     "both_agree": true,
+     "heard": true,
+     "at_claimed_airport": true,
+     "closest_approach_to_claimed_field": {
+      "code": "KCPS",
+      "km": 6.7,
+      "utc": "2023-05-03T15:29:24.220Z",
+      "on_ground": false
+     },
+     "airports_touched": [
+      "KCPS 6.7km below_4000ft",
+      "7IS9 9.87km below_4000ft",
+      "US-7053 5.75km below_4000ft",
+      "27LL 2.75km below_4000ft",
+      "H49 5.34km below_4000ft",
+      "7IS2 6.69km below_4000ft"
+     ],
+     "first_where": "KCPS/CPS (St Louis Downtown Airport, Cahokia/St Louis IL) 6.7km",
+     "last_where": "7IS2 (Aero Estates Airport, Belleville IL) 6.65km",
+     "points": 357,
+     "verdict": "AT_CLAIMED_AIRPORT"
+    },
+    "2023-05-04": {
+     "adsb_lol_http": 404,
+     "airplanes_live_http": 404,
+     "archive_control_probe": {
+      "adsb-lol": {
+       "verdict": "COVERED",
+       "codes": [
+        404,
+        404,
+        404,
+        404,
+        404,
+        404,
+        404,
+        404,
+        200
+       ]
+      },
+      "airplanes-live": {
+       "verdict": "COVERED",
+       "codes": [
+        404,
+        404,
+        404,
+        404,
+        404,
+        404,
+        404,
+        404,
+        200
+       ]
+      }
+     },
+     "both_agree": false,
+     "heard": false,
+     "at_claimed_airport": false,
+     "closest_approach_to_claimed_field": null,
+     "airports_touched": null,
+     "first_where": null,
+     "last_where": null,
+     "points": null,
+     "verdict": "NOT_HEARD"
+    }
+   }
+  },
+  "verdict": "AT_CLAIMED_AIRPORT"
+ }
+}

@@ -252,6 +252,32 @@ Compiler note: Audit numbering runs to 67 while summary bars count of 65.
 
 More of the same discussion, grouped by research topic rather than by date, is on [X discussions of the following planes](/Planes/following/x_discussions) and [Candace Owens broadcasts](/Planes/following/Candace_Owens_Broadcasts).
 
+## We checked this row against primary ADS-B data
+
+**Confirmed. The claimed aircraft really was at the claimed field.** SU-BTT was tracked to within **7.21 km of KLNK** at **2025-07-20T22:18:53.440Z** on 20 July 2025, airborne on approach. The trace is held by both archives, agreeing.
+
+That day the airframe was first heard at LFPB/LBG (Paris-Le Bourget International Airport, Paris FR) 0.91km and last heard at NE42 (Dream Field, Lincoln NE) 5.74km.
+
+**This confirms the aircraft half of the pairing and nothing else. It does not place Charlie Kirk or Erika Kirk anywhere.** An overlap needs both halves. The Kirk half of this row is unchanged by anything below — it is the sheet's claimed-location cell for Erika Kirk, and [her flight logs are reported erased](/Planes/Erika-Flight-Logs-Erased), so there is no itinerary to check it against.
+
+| Date | adsb.lol | airplanes.live | Heard? | Closest approach to KLNK |
+|---|---|---|---|---|
+| 2025-07-19 | 200 | 200 | **yes** | 7,305.62 km (on ground) |
+| 2025-07-20 **(claimed)** | 200 | 200 | **yes** | 7.21 km |
+| 2025-07-21 | 404 | 404 | no | — |
+
+**A first pass of our own tooling scored this row "elsewhere", and it was wrong.** The aircraft's last position that day resolved to the nearest gazetteer entry, which is **NE42 (Dream Field), a small private strip 5.74 km away** — not Lincoln Airport. Matching the identifier said "not KLNK"; measuring the distance said 7.21 km from KLNK, which is inside the 15 km radius. **The identifier was the trap and the distance was the answer.** This is the concrete case of the nearest-airport problem this site warns about, and it is written down here because it corrected us, not somebody else.
+
+**This is the same arrival that [OWENS-038](/Planes/following/overlap/20250720_NE_omaha_lincoln_owens_038/overview) scores against Omaha.** One Cairo–Paris–Nebraska leg on 20 July 2025 appears on the sheet twice, once at KLNK and once at KOMA, roughly 80 km apart. Both are true of the aircraft. **Counting them as two overlaps counts one arrival twice.**
+
+**The method, so a reader can repeat it.** Both free ADS-B history archives — adsb.lol globe history and airplanes.live — were queried for SU-BTT on 20 July 2025 and on the day either side, and every returned position that was on the ground or below 4,000 ft was measured against the published coordinates of KLNK. Within 15 km counts as at the field and within 80 km as the same metro; **nearest-airport resolution is geometry, not a landing record**, which is why the distance in kilometres is printed beside every field name rather than the name alone.
+
+**The files.** This row's extract is `site/docs/Planes/following/overlap/20250720_NE_lincoln_owens_067/data/adsb_verification.json`; the full 85-row run, its method string and its tally are in `site/docs/Planes/following/apis/public_open_source/data/overlap_verification/overlap_verification.json`. Both were written 2026-08-24T17:36:21.953Z.
+
+**Against the audit verdict already on this page.** The audit recorded on this page marks the row **accurate**, and primary position data agrees with it. Two independent methods, one on paid archives and one on free ones, reached the same answer.
+
+**What this check cannot do.** It locates an airframe. It does not identify who was aboard, it does not establish why the aircraft was where it was, and it does not distinguish a shadowing flight from the maintenance rotation set out in the counterargument above. **Absence in an archive is not proof of a covert leg, and presence is not proof of intent.**
+
 ## Links
 
 * [Overlap dates index](/Planes/following/overlap/overview) · [The 73 overlaps — the full reconstruction](/Planes/following/73_overlaps) · [Following overview](/Planes/following/overview)

@@ -1,0 +1,111 @@
+{
+ "generated_utc": "2026-08-24T17:36:21.953Z",
+ "radius_km": 15,
+ "method": "For each claimed overlap, both free ADS-B history archives were queried for the claimed foreign tail on the claimed date and the day either side. Positions were resolved to the nearest airport in the OurAirports public-domain gazetteer. A verdict of ELSEWHERE refutes a row; NO_ARCHIVE_COVERAGE and NOT_HEARD do not.",
+ "note": "Per-row extract of OWENS-023 from site/docs/Planes/following/apis/public_open_source/data/overlap_verification/overlap_verification.json",
+ "result": {
+  "overlap_id": "OWENS-023",
+  "date": "2024-03-29",
+  "claimed_airport": "KICT",
+  "claimed_codes": [
+   "KICT"
+  ],
+  "claimed_city": "Wichita",
+  "claimed_state": "KS",
+  "claimed_tails": [
+   "SU-BTT"
+  ],
+  "subject": "Charlie",
+  "audit_verdict": "accurate",
+  "site_page": "site/docs/Planes/following/Wichita_KICT_2022-11-13_to_2025-08-03/overview.mdx",
+  "tails": {
+   "SU-BTT": {
+    "2024-03-28": {
+     "adsb_lol_http": 200,
+     "airplanes_live_http": 200,
+     "archive_control_probe": null,
+     "both_agree": true,
+     "heard": true,
+     "at_claimed_airport": false,
+     "closest_approach_to_claimed_field": null,
+     "airports_touched": [
+      "HE16 21.01km first_fix",
+      "LFSY 2.98km last_fix"
+     ],
+     "first_where": "HE16 (Birma Air Base, Tanta EG) 21.01km",
+     "last_where": "LFSY (Cessey-Baigneux-les-Juffs Airfield, Baigneux-les-Juffs, C\u00f4te-d'Or FR) 2.98km",
+     "points": 412,
+     "verdict": "ELSEWHERE"
+    },
+    "2024-03-29": {
+     "adsb_lol_http": 200,
+     "airplanes_live_http": 200,
+     "archive_control_probe": null,
+     "both_agree": true,
+     "heard": true,
+     "at_claimed_airport": true,
+     "closest_approach_to_claimed_field": {
+      "code": "KICT",
+      "km": 2.27,
+      "utc": "2024-03-29T19:19:00.940Z",
+      "on_ground": false
+     },
+     "airports_touched": [
+      "3KS7 5.32km below_4000ft",
+      "KK32 4.85km below_4000ft",
+      "KICT 5.43km below_4000ft",
+      "LFOB 2.22km first_fix"
+     ],
+     "first_where": "LFOB/BVA (Beauvais-Till\u00e9 airport, Beauvais FR) 2.22km",
+     "last_where": "KICT/ICT (Wichita Dwight D. Eisenhower National Airport, Wichita KS) 2.27km",
+     "points": 834,
+     "verdict": "AT_CLAIMED_AIRPORT"
+    },
+    "2024-03-30": {
+     "adsb_lol_http": 404,
+     "airplanes_live_http": 404,
+     "archive_control_probe": {
+      "adsb-lol": {
+       "verdict": "NOT_COVERED",
+       "codes": [
+        404,
+        404,
+        404,
+        404,
+        404,
+        404,
+        404,
+        404,
+        404
+       ]
+      },
+      "airplanes-live": {
+       "verdict": "NOT_COVERED",
+       "codes": [
+        404,
+        404,
+        404,
+        404,
+        404,
+        404,
+        404,
+        404,
+        404
+       ]
+      }
+     },
+     "both_agree": false,
+     "heard": false,
+     "at_claimed_airport": false,
+     "closest_approach_to_claimed_field": null,
+     "airports_touched": null,
+     "first_where": null,
+     "last_where": null,
+     "points": null,
+     "verdict": "NO_ARCHIVE_COVERAGE"
+    }
+   }
+  },
+  "verdict": "AT_CLAIMED_AIRPORT"
+ }
+}

@@ -133,6 +133,120 @@ date.
 Method and fleet-wide results: **[Flight Data Recovery](/Planes/Flight-Data-Recovery/overview)** ·
 **[Per-Aircraft Recovery Status](/Planes/Flight-Data-Recovery/Per-Aircraft-Status)**
 
+## The primary flight data we hold on this aircraft, and where it came from
+
+The whole of this page above this line is characterization: what commentators say the aircraft is,
+who they say used it, where a draft law says it went. This section is the opposite kind of material
+— raw position data this investigation pulled itself from free public archives, plus archived
+tracking pages the Internet Archive already held, all saved to disk at
+`site/docs/Planes/N582MM/data/recovered/` with a `.meta.json` sidecar beside every payload recording
+the source, the URL, the HTTP status, the byte count and the retrieval time.
+
+| Measure | N582MM |
+|---|---|
+| Days of primary track held | **46** |
+| Span of those days | **1 April 2022 – 1 December 2025** |
+| From adsb.lol `globe_history` | 19 days |
+| From globe.airplanes.live (the backup network) | 24 days |
+| From the ADS-B Exchange monthly sample | 23 days |
+| Corroborated by **both** free daily archives | **19 days** |
+| Recovered **only** from the backup network | **5 days** |
+| Held **only** by the monthly sample | **22 days** |
+| Days before 2023 | **1** |
+| Fields touched most often | Scottsdale (KSDL) 8 · Phoenix Sky Harbor (KPHX) 6 · Panama City Beach (KECP) 4 |
+
+Counts from `site/docs/Planes/following/apis/public_open_source/data/provenance/tail_provenance.json`.
+
+**Nineteen of the forty-six days are held by both daily archives independently.** That is the
+highest agreement rate of any Kirk-side tail in this investigation, and agreement between two
+separate volunteer receiver networks is the strongest form free ADS-B evidence takes.
+
+### The 2022 trace, on this site for the first time
+
+`samples.adsbexchange.com` publishes a free full-day sample for **the first of every month**, back
+to 2016, with no account and no key. One of those sampled days falls in 2022 for N582MM.
+
+| Sampled day | First fix | Last fix |
+|---|---|---|
+| 1 April 2022 | North Las Vegas (KVGT, 0.44 km) | Minden-Tahoe, NV (KMEV, 0.60 km) |
+
+Positions are the nearest airport and the distance to it — **geometry, not a landing record.** And
+the sampling caveat travels with the row: **this is one day per month.** A single sampled day
+establishes where the aircraft was on 1 April 2022. It supports no claim about any other day of
+that year.
+
+It does, however, correct something this page said a few paragraphs up. The recovery section above
+states that "both free daily archives begin in 2023, so no 2022 date is testable at all." **That is
+too strong.** The two *daily* archives do begin in 2023 — but the ADS-B Exchange monthly sample
+reaches back to 2016, and it produced this 2022 position. The 2022 wall this site has published is
+not solid; it is a wall with one day per month cut out of it.
+
+### What the archived pages put back: 40 flight legs, and Provo in 2015
+
+The Internet Archive holds **seven captures** of this tail's FlightAware page, from **2011 and
+2015**. Our own provenance files previously recorded all seven as yielding nothing, because the
+extractor never parsed FlightAware's older table markup at all. `code/extract_wayback_flights.py`
+re-read them. **We were wrong, and this is the correction.** The seven captures yield **40 flight
+legs**:
+
+| Capture | Legs | Fields named |
+|---|---|---|
+| 20 Dec 2011 | 4 | Fort Lauderdale (KFLL), Caracas (SVMI), Albuquerque (KABQ), Atlanta (KATL) |
+| 14 Jan 2015 | 8 | KMEV, KSDL, KLGB, KBUR, KSAN |
+| 28 Mar 2015 | 7 | KMEV, KSDL, KBVS, KHOT |
+| 29 Apr 2015 | 7 | KMEV, KBFI, KBVS, KLAS, KADS |
+| **31 May 2015** | **2** | **KMEV and Provo Muni (KPVU)** |
+| 4 Jul 2015 | 6 | KMEV, KSDL, KCRQ, KBUR, KLVK |
+| 18 Oct 2015 | 6 | KMEV, KSDL, KMQY, KOAK |
+
+The 31 May 2015 capture is the one that matters to this page. It records **KMEV to KPVU on 17 May
+2015** and **KPVU back to KMEV on 30 May 2015**. **This airframe was flying into Provo in 2015 —
+ten years before the assassination, and years before the ownership and organizational associations
+this page describes.** Provo is not a novel destination for this tail.
+
+The 2011–2015 legs also show a base that is not the one it has now: **Minden-Tahoe, Nevada (KMEV)
+recurs in every 2015 capture**, while across the 46 modern days the most-touched fields are
+Scottsdale and Phoenix. An aircraft changing home base across fourteen years and more than one
+registrant is unremarkable. It is stated because it means **the 2015 legs are evidence about the
+airframe, not about anyone associated with it today**, and we do not carry a former operator's
+routes forward onto a current one.
+
+Files: `site/docs/Planes/N582MM/data/recovered/N582MM_2015*_wayback_flightaware_flights.json` and
+the matching `.html` captures.
+
+### This tail is not in the overlap sheet
+
+None of the 85 claimed overlap rows in `site/docs/Planes/following/overlaps.csv` names N582MM. The
+sheet names SU-BTT, SU-BND, or no aircraft at all. N582MM sits on the **Kirk-side / TPUSA-adjacent**
+list — the tails said to carry the people, not the tails alleged to have followed them. **Do not
+merge those threads.** The 18-month following pattern, the 10 September day-of timeline, the
+[N1098L](/Planes/N1098L/overview) thread and the [N888KG](/Planes/N888KG/overview) Wendover
+departure are four separate claims about four separate aircraft sets.
+
+And the limit that applies to every line above: **position data locates an aircraft, not a person.**
+Nothing here establishes who was aboard N582MM on any date — not in 2015, not in 2022, and not on
+the reported Fort Huachuca and Kalispell legs. Private manifests are not public, which is precisely
+what the [disclosure laws](/Fix/overview) are proposed to change.
+
+### The counterargument
+
+The plain reading of all of it is that N582MM is an ordinary midsize business jet with a fourteen-year
+public flight record of ordinary business routes, operated over that period by more than one
+registrant, and that its Provo appearances — in 2015 and since — are the same unremarkable thing.
+Nothing we pulled shows otherwise, and the 2015 Provo legs cut directly against reading a Provo
+arrival by this tail as meaningful in itself. **On this evidence the null hypothesis is the
+best-supported one**, and the reported Fort Huachuca–Kalispell leg remains reported rather than
+verified: we hold no primary trace of it.
+
+### Why pulling this data matters at all
+
+The claim this section answers is not about N582MM. It is the broader claim that this category of
+record has been erased. **We pulled four years of primary track and recovered fourteen-year-old
+flight tables for this aircraft, from free archives, on demand.** What came back is unremarkable
+business aviation. That is a finding in itself: a record that reconstructs this easily has not been
+scrubbed, and the honest way to report a recovery is to report what it actually shows rather than
+what we hoped it would.
+
 {/* CK_INTERESTING_HERE_START */}
 
 ## Interesting In This Area

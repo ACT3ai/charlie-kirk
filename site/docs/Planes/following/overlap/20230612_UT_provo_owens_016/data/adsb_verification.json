@@ -1,0 +1,130 @@
+{
+ "generated_utc": "2026-08-24T17:36:21.953Z",
+ "radius_km": 15,
+ "method": "For each claimed overlap, both free ADS-B history archives were queried for the claimed foreign tail on the claimed date and the day either side. Positions were resolved to the nearest airport in the OurAirports public-domain gazetteer. A verdict of ELSEWHERE refutes a row; NO_ARCHIVE_COVERAGE and NOT_HEARD do not.",
+ "note": "Per-row extract of OWENS-016 from site/docs/Planes/following/apis/public_open_source/data/overlap_verification/overlap_verification.json",
+ "result": {
+  "overlap_id": "OWENS-016",
+  "date": "2023-06-12",
+  "claimed_airport": "KPVU",
+  "claimed_codes": [
+   "KPVU"
+  ],
+  "claimed_city": "Provo",
+  "claimed_state": "UT",
+  "claimed_tails": [
+   "SU-BND"
+  ],
+  "subject": "Erika",
+  "audit_verdict": "inaccurate",
+  "site_page": "site/docs/Planes/following/Provo_KPVU_2024-04-19_to_2025-09-13/overview.mdx",
+  "tails": {
+   "SU-BND": {
+    "2023-06-11": {
+     "adsb_lol_http": 404,
+     "airplanes_live_http": 200,
+     "archive_control_probe": null,
+     "both_agree": false,
+     "heard": true,
+     "at_claimed_airport": false,
+     "closest_approach_to_claimed_field": null,
+     "airports_touched": [
+      "HE12 11.58km first_fix",
+      "HECP 14.18km last_fix"
+     ],
+     "first_where": "HE12 (Inshas Air Base, Inshas EG) 11.58km",
+     "last_where": "HECP/CCE (Capital International Airport, New Cairo EG) 14.18km",
+     "points": 32,
+     "verdict": "ELSEWHERE"
+    },
+    "2023-06-12": {
+     "adsb_lol_http": 404,
+     "airplanes_live_http": 404,
+     "archive_control_probe": {
+      "adsb-lol": {
+       "verdict": "NOT_COVERED",
+       "codes": [
+        404,
+        404,
+        404,
+        404,
+        404,
+        404,
+        404,
+        404,
+        404
+       ]
+      },
+      "airplanes-live": {
+       "verdict": "NOT_COVERED",
+       "codes": [
+        404,
+        404,
+        404,
+        404,
+        404,
+        404,
+        404,
+        404,
+        404
+       ]
+      }
+     },
+     "both_agree": false,
+     "heard": false,
+     "at_claimed_airport": false,
+     "closest_approach_to_claimed_field": null,
+     "airports_touched": null,
+     "first_where": null,
+     "last_where": null,
+     "points": null,
+     "verdict": "NO_ARCHIVE_COVERAGE"
+    },
+    "2023-06-13": {
+     "adsb_lol_http": 404,
+     "airplanes_live_http": 404,
+     "archive_control_probe": {
+      "adsb-lol": {
+       "verdict": "NOT_COVERED",
+       "codes": [
+        404,
+        404,
+        404,
+        404,
+        404,
+        404,
+        404,
+        404,
+        404
+       ]
+      },
+      "airplanes-live": {
+       "verdict": "NOT_COVERED",
+       "codes": [
+        404,
+        404,
+        404,
+        404,
+        404,
+        404,
+        404,
+        404,
+        404
+       ]
+      }
+     },
+     "both_agree": false,
+     "heard": false,
+     "at_claimed_airport": false,
+     "closest_approach_to_claimed_field": null,
+     "airports_touched": null,
+     "first_where": null,
+     "last_where": null,
+     "points": null,
+     "verdict": "NO_ARCHIVE_COVERAGE"
+    }
+   }
+  },
+  "verdict": "ELSEWHERE"
+ }
+}

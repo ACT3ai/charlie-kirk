@@ -136,6 +136,159 @@ status, the byte count and the date, so any line above can be checked without tr
 More: [Flight Data Recovery](/Planes/Flight-Data-Recovery/overview) ·
 [Per-Aircraft Status](/Planes/Flight-Data-Recovery/Per-Aircraft-Status)
 
+## The primary flight data we hold on this aircraft, and where it came from
+
+This page opens by saying "the hard, sourced facts on this airframe are thin." That was true when it
+was written. It is less true now, and the change came from pulling primary ADS-B position data rather
+than reading anybody's screenshot of it. Everything below was pulled from free public archives on
+**24 August 2026** and written to disk in this repository.
+
+**The thread marker first.** N2100L belongs to the **ISR / HADES** line of inquiry — the LASAI
+Aviation II Global 6500 fleet. That is a **different claim** from the eighteen-month pattern of
+foreign-registered aircraft alleged to have shadowed Charlie and Erika Kirk, which lives at
+[Following Planes](/Planes/following/overview). This site links the two and never merges them.
+
+### What we hold
+
+| | N2100L |
+|---|---|
+| Days of primary trace held | **45** |
+| Span | **1 Nov 2023 – 5 Jun 2026** |
+| Corroborated by **both** free daily archives | **8** |
+| **Recovered only from the backup network** (globe.airplanes.live) | **21** |
+| Held only by the ADS-B Exchange monthly sample | **16** |
+| Days before 2023 | **0** |
+| Archived tracking-site pages | 3, all FlightAware |
+| Field appearing on the most days | **Biggs Army Airfield (KBIF), 39 of 45 days** |
+
+Provenance of record:
+`site/docs/Planes/following/apis/public_open_source/data/provenance/tail_provenance.json`.
+Traces in `site/docs/Planes/N2100L/data/recovered/`, one file per aircraft-day, source name in every
+filename, each with a `.meta.json` sidecar carrying URL, HTTP status, byte count and pull time.
+
+### The 10 September 2025 answer, from primary data
+
+This page has said there is "no public ADS-B track in the case material placing N2100L over Orem,
+UVU, or the Utah corridor" on the day of the shooting. **Both free archives now hold that day, and
+they confirm it far more strongly than the original wording did.** On 10 September 2025 N2100L's
+**closest approach to the UVU campus was 559 km** — it was working the Texas/New Mexico corridor and
+then California. It was nowhere near Utah.
+
+**That is a finding that cuts against the claim, and it is published here for exactly that reason.**
+
+### The 11 September legs — the OSINT claim, checked against position data
+
+The claim on this page, sourced to posts by [@troofevades](/Influencers/x/troofevades) and
+[@BasedSamParker](/Influencers/x/based-sam-parker), is that N2100L departed **Ontario, California at
+roughly 6:59 PM PDT on 11 September 2025**, routed toward **El Paso**, and made **a low pass over
+St George, Utah**. Here is what the raw trace holds, from both archives, times UTC with local in
+brackets:
+
+| Time | Where | Baro alt | Groundspeed |
+|---|---|---|---|
+| 00:39–01:59Z 12 Sep (17:39–18:59 PDT 11 Sep) | **on the ground at Ontario, California** | 925 ft | — |
+| **01:59:34Z (18:59:34 PDT 11 Sep)** | **Ontario, 0.11 km — departure roll** | 1,175 ft | 159 kt |
+| **03:01:10Z (21:01:10 MDT 11 Sep)** | **directly over St George, Utah, 0.10 km** | **4,975 ft** | **173 kt** |
+| 03:41:36Z | western New Mexico, cruise | 37,000 ft | — |
+| 20:09:21Z 12 Sep | **Biggs Army Airfield, El Paso, 2.10 km** | 3,900 ft | 124 kt |
+| 23:27:42Z 12 Sep | on the ground, Austin-Bergstrom | ground | 91 kt |
+
+**Every element of the posted claim is corroborated by primary position data.** The Ontario
+departure is at **18:59:34 PDT** — the posted figure was "roughly 6:59 PM PDT", and it is right to
+the minute. The St George pass is real: the aircraft is **directly overhead at 4,975 ft**, and
+St George Regional sits at about 2,941 ft, so roughly **2,000 ft above field elevation at 173 knots**
+— low and slow for a Global 6500, which cruises above 40,000 ft at more than three times that speed.
+El Paso is reached the following afternoon.
+
+**Two things must be said in the same breath, because both are true.**
+
+* **St George is not on the way.** A direct line from Ontario to El Paso runs east-southeast.
+  St George is well to the north-east. The aircraft tracked out to St George, descended over it, then
+  turned south-east and climbed to 37,000 ft. **That is a deliberate detour and a deliberate
+  descent**, and the data shows it plainly.
+* **A descent and a slow pass over a public airport is also exactly what a practice approach looks
+  like**, and St George Regional is an ordinary public field. Nothing in a position record says why
+  an aircraft descended. **We can prove the manoeuvre. We cannot prove a reason, and we do not
+  assert one.**
+
+**The surrender-timing inference needs a correction.** This page carries a theory tying the St George
+pass to [Tyler Robinson](/People/tyler-robinson)'s reported surrender window of around 8 PM MDT on
+11 September. The overflight is at **21:01 MDT — about an hour after** that window, not during it.
+The timing correlation the posts drew is looser than the posts implied. Tyler Robinson is **charged,
+not convicted**, and nothing here bears on that case in either direction.
+
+**And the standing of the claim has changed, precisely.** It remains **not a court record and not an
+FAA record**. It is now **confirmed against primary ADS-B position data held by two independent
+volunteer archives** — which is a considerably better class of evidence than the social-media
+screenshot this page previously described it as, and it should be described that way from here.
+
+### N2100L was on the ground at Provo Municipal on 1 July 2025
+
+New to this site, and it belongs on the record. The ADS-B Exchange monthly sample for **1 July 2025**
+tracks N2100L from Miley Memorial Field, Big Piney, Wyoming, into the Utah Valley, passing
+**4.17 km from the UVU campus at 4,925 ft on the approach**, touching down and sitting **on the
+ground at Provo Municipal Airport, 0.05 km from the airport reference point, from 23:47:48Z
+(17:47 MDT) to the end of the sampled day.**
+
+**Read it carefully, because it is easy to over-read.**
+
+* This is **1 July 2025**, ten weeks before the assassination. It is not a September date.
+* **The 4.17 km figure is not a campus overflight.** [N1098L](/Planes/N1098L/overview)'s two Provo
+  approaches on 10 September bottom out at **4.16 km** from the same point. **4.16–4.17 km from the
+  UVU campus is what the Provo Municipal approach path measures** — it is a description of an
+  airport, not of an aircraft looking at a university.
+* A Global 6500 landing at a public regional airport with a full-service Duncan Aviation maintenance
+  operation on the field is unremarkable in itself.
+
+What it does establish is narrow and worth having: **a LASAI Aviation II Global 6500 was physically
+on the ground at Provo Municipal in the summer of 2025**, which is a fact rather than an inference,
+and it is the first such fact this site has held for this tail.
+
+### Why there is nothing before November 2023
+
+Neither this aircraft nor [N1098L](/Planes/N1098L/overview) has a single trace before 2023, and the
+honest explanation is about the archives and about the airframes, not about concealment. The only
+free source reaching back to 2022 is the **ADS-B Exchange monthly sample**, which publishes **one day
+a month — the 1st.** An aircraft that did not happen to fly on the first of a month simply does not
+appear in it. Beyond that, this airframe is **serial 60100, built 2023**: there is no 2022 flying to
+find. **Say the mechanism; do not imply anything about the aircraft.**
+
+### The backup network holds 21 of the 45 days, and that is not suppression
+
+**Twenty-one of N2100L's forty-five days exist only on globe.airplanes.live.** adsb.lol does not have
+them — including the El Paso leg of 12 September 2025, where adsb.lol's coverage puts the aircraft no
+closer than 104 km to Biggs while the backup network has it 2.10 km out at 3,900 ft. **Without the
+second archive that leg could not have been confirmed at all.**
+
+The control result is what keeps this honest. adsb.lol returns **HTTP 403 for every aircraft** from
+**exactly 12 October 2025** to about 30 December 2025, and **HTTP 404 for every aircraft** from about
+31 December 2025 to roughly 1 August 2026 — including unrelated control airframes with no connection
+to this case. **Those are archive-wide conditions. Nothing about N2100L was suppressed.** Two
+volunteer networks with different feeders and different antennas hold different days, and that is
+all this is.
+
+### The archived pages hold nothing usable
+
+Three Internet Archive captures of this aircraft's FlightAware page are held — **26 March 2023,
+6 March 2025 and 20 September 2025** — and **no flight rows were recovered from any of them.** That
+is not because the tables were empty. Modern FlightAware is a client-side application: the archived
+HTML is page chrome with the flight table never rendered into it. On the tails where these captures
+have been re-parsed they are labelled `JAVASCRIPT_SHELL_NO_SERVER_RENDERED_ROWS`, and **that label is
+deliberately not "0 rows"** — an unparseable capture is not an empty one, and recording it as a zero
+is how an absence of parsing gets mistaken for an absence of evidence.
+
+### The counterargument
+
+The strongest case against everything in this section is short. A Global 6500 registered to an Army
+ISR contractor, based at an Army airfield, flying approaches at public regional airports and moving
+between Texas, California and Utah, is **an aircraft doing its job**. Ontario, St George, Provo and
+El Paso are all ordinary public fields. A descent over one of them is a manoeuvre, not a motive.
+Position data shows where an aircraft was and how fast it was going and is **silent on who was
+aboard, what was fitted, what was recorded and who ordered the flight**. And the thing that would
+actually settle it — a tasking record — is not held by any archive in this section. **Our data
+locates the aircraft. It does not place Charlie Kirk, Erika Kirk or anybody else anywhere, and it
+establishes no tasking in either direction.**
+
 {/* CK_INTERESTING_HERE_START */}
 
 ## Interesting In This Area

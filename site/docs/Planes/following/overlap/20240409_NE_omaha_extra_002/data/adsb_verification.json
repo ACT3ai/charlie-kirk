@@ -1,0 +1,19 @@
+{
+  "verified_utc": "2026-08-24T17:36:21.953Z",
+  "radius_km": 15,
+  "method": "For each claimed overlap, both free ADS-B history archives were queried for the claimed foreign tail on the claimed date and the day either side. Positions were resolved to the nearest airport in the OurAirports public-domain gazetteer. A verdict of ELSEWHERE refutes a row; NO_ARCHIVE_COVERAGE and NOT_HEARD do not.",
+  "overlap_id": "EXTRA-002",
+  "date": "2024-04-09",
+  "claimed_airport": "KOMA",
+  "claimed_codes": [
+    "KOMA"
+  ],
+  "claimed_city": "Omaha",
+  "claimed_state": "NE",
+  "claimed_tails": [],
+  "subject": "Charlie",
+  "audit_verdict": "",
+  "site_page": "site/docs/Planes/following/speaking/20240409_omaha.mdx",
+  "tails": {},
+  "verdict": "NO_TAIL_CLAIMED"
+}

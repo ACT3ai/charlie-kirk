@@ -52,7 +52,9 @@ hidden. It was parked.
 
 | Source | Endpoint | Historical? | Auth | Status on 24 Aug 2026 |
 |---|---|---|---|---|
-| **adsb.lol globe history** | `globe_history/YYYY/MM/DD/traces/hh/trace_full_HEX.json` | **YES** | none | **200 — the workhorse** |
+| **adsb.lol globe history** | `globe_history/YYYY/MM/DD/traces/hh/trace_full_HEX.json` | **YES** | none | **200 — the workhorse, but it has two dead bands. See the archive map below.** |
+| **globe.airplanes.live globe history** | `globe_history/YYYY/MM/DD/traces/hh/trace_full_HEX.json` | **YES** | none | **200 — the backup archive. Serves ~Nov 2023 to the present, throughout.** |
+| **samples.adsbexchange.com** | `traces/YYYY/MM/DD/hh/trace_full_HEX.json` | **YES — one day a month** | none | **200 — the only free source that reaches 2022** |
 | adsb.lol v2 | `/v2/hex/HEX`, `/v2/reg/REG` | no, live only | none | 200, empty when not airborne |
 | adsb.fi | `/api/v2/hex/HEX` | no, live only | none | 200, empty when not airborne |
 | airplanes.live | `/v2/reg/REG` | no, live only | **now gated** | **403 — email them first** |
@@ -76,6 +78,49 @@ feeder database, and `trace` is an array of `[seconds after timestamp, lat, lon,
 `alt` is the literal string `ground` when the aircraft is on the surface — so takeoff and landing
 times fall straight out of it.
 
+### globe.airplanes.live globe history — the second archive
+
+The airplanes.live volunteer network publishes its own archive at the same URL shape:
+
+```
+https://globe.airplanes.live/globe_history/YYYY/MM/DD/traces/<last 2 of hex>/trace_full_<hex>.json
+```
+
+Same format, different receiver network, different feeders. It is not a mirror of adsb.lol — it is an
+**independent hearing of the same transponder**, which is exactly what makes it useful. It serves from
+roughly November 2023 to the present, and it kept serving through both of the windows where adsb.lol
+does not.
+
+Note the domain carefully: **`globe.airplanes.live/globe_history` is open; `api.airplanes.live/v2/` is
+gated and returns 403.** Two different services on one domain. This page previously conflated them.
+
+### samples.adsbexchange.com — the only free route to 2022
+
+ADS-B Exchange publishes a **free monthly sample**: one complete day of global traces, always the
+**first of the month**, going back to 2016. No account, no key, no subscription.
+
+```
+https://samples.adsbexchange.com/traces/YYYY/MM/DD/<last 2 of hex>/trace_full_<hex>.json
+```
+
+It has produced **34 aircraft-days before 2023** across 12 tails — the first primary position data
+this investigation has ever held for the 2022 window.
+
+**Its limit is the whole point, and it must be published every time the sample is cited.** One day in
+thirty. An aircraft that did not fly on the 1st simply is not in it, and no number of sampled days can
+support a rate. A sample can tell you an aircraft *was* somewhere. It can never tell you how often.
+
+### OurAirports — turning a latitude and longitude into a field name
+
+The public-domain (CC0) airport dataset is now held in this repo at
+`apis/public_open_source/data/ourairports/airports.csv`, and `code/lib/airports.js` uses it to resolve
+each trace position to the nearest named field.
+
+**The caveat travels with every result it produces: nearest-airport resolution is geometry, not a
+landing record.** It measures how close an aircraft got to a set of published coordinates. It does not
+know about ramps, taxiways, tenancy or whether anybody got out. That is why every distance on this
+site is published in kilometres beside the field name rather than quietly rounded to "at".
+
 ## How you use them
 
 Everything is in `apis/public_open_source/code/`. No dependencies, Node 18+.
@@ -88,7 +133,28 @@ node adsbdb.js                                    tail to hex, type, owner
 node live_networks.js SU-BTT                      the live-only networks side by side
 node wayback.js                                   Internet Archive snapshots
 node ourairports.js                               public-domain airport reference data
+node recover_erased.js                            the backup archive, for days adsb.lol refuses
+node recover_adsbx_samples.js                     the monthly sample archive, back to 2016
+node verify_overlaps.js                           all 85 claimed overlaps against both archives
+node build_tail_provenance.js                     the per-aircraft ledger of what each source holds
+python3 extract_wayback_flights.py                parse flight rows out of archived tracking pages
 ```
+
+The four at the bottom are newer than the rest and each answers a question the original pass could not:
+
+* **`verify_overlaps.js`** takes every row of `following/overlaps.csv`, pulls the claimed date and the
+  day either side from **both** archives, and measures the aircraft's closest approach in kilometres to
+  the claimed field. It writes one verdict per row —
+  `AT_CLAIMED_AIRPORT`, `ELSEWHERE`, `NOT_HEARD`, `NO_ARCHIVE_COVERAGE`, `NO_TAIL_CLAIMED`,
+  `NO_DATE_CLAIMED` — to `data/overlap_verification/overlap_verification.json` and into each
+  overlap's own directory. **Only `ELSEWHERE` refutes anything.** The two "no data" verdicts say
+  nothing in either direction and are named separately so they cannot be quietly counted as denials.
+* **`build_tail_provenance.js`** builds the per-aircraft ledger at
+  `data/provenance/tail_provenance.json`: for every aircraft-day, which of the three sources holds it,
+  which hold it jointly, and which hold it alone.
+* **`extract_wayback_flights.py`** parses server-rendered flight rows out of archived tracking pages —
+  see the extractor correction below.
+* **`lib/airports.js`** is the shared nearest-field resolver described above.
 
 Every script saves the raw response with a `.meta.json` beside it recording the URL, the HTTP
 status, the byte count and the UTC time of the request. **Nothing overwrites a previous pull** — a
@@ -156,6 +222,125 @@ And underneath that sits a second, sharper split:
 where the sheet falls apart.** That is a more precise finding than either side of this argument has
 published, and it does not flatter either of them.
 
+### The archive map, control-tested — and a correction to this page
+
+Everything above depends on knowing **when the archive is telling you something and when it is only
+telling you about itself.** So we mapped it, on 24 August 2026, against a basket of nine airframes —
+four from this case and **five unrelated control aircraft with no connection to it whatsoever.**
+
+| Window | adsb.lol | globe.airplanes.live | Reading |
+|---|---|---|---|
+| … through **2025-10-11** | serves normally | serves (from ~Nov 2023) | normal |
+| **2025-10-12 → ~2025-12-30** | **403 for EVERY aircraft, controls included** | serves normally | **site-wide condition** |
+| **~2025-12-31 → ~2026-08-01** | **404 for EVERY aircraft, controls included** | serves normally | **site-wide condition** |
+| from **~2026-08-02** | serves normally | serves normally | normal |
+
+The 403 band begins **exactly at 12 October 2025**. Every aircraft on 11 October is served; none on
+12 October is. A hard date boundary that behaves identically for a Ryanair airframe and for SU-BTT is
+an archive changing its mind about a date range. It is not a decision about anybody's aeroplane.
+
+**This corrects two things we published.** This page previously said the 403 band ran "to at least 15
+December 2025" and that "31 December works" — it does not; 31 December 2025 returns **404 for every
+control aircraft**. And `apis/CLAUDE.md` recorded adsb.lol as "normal again by 2025-12-31", which is
+also wrong: the 403 band is followed immediately by a roughly seven-month 404 stretch, with normal
+service resuming about **2 August 2026**.
+
+**Neither band is about this case, and neither may ever be reported as scrubbing.** The control test
+is the entire reason we can say that, and it is why a control basket is now run before any claim about
+a missing record is written down.
+
+### The backup network recovered 152 aircraft-days adsb.lol does not hold
+
+With the map above in hand, every case aircraft-day was pulled from **both** archives and compared —
+12 aircraft, three windows, recorded in `data/provenance/tail_provenance.json`.
+
+**Start with the control result, because it is the one that matters most.** Across
+**1–16 September 2025** — the fortnight this entire case turns on — **74 aircraft-days are held by
+BOTH archives and exactly 1 by the backup alone.** Two independent volunteer networks, agreeing,
+across the critical window. **There is no scrubbing in the September 2025 data.** If anyone had
+quietly removed those days from the primary archive, the second archive would show it, and it does
+not.
+
+| | aircraft-days |
+|---|---|
+| Held by **both** archives | **89** |
+| Recovered from the **backup network only** | **152** |
+| Held by **adsb.lol only** | **0** |
+| Held by neither | 563 |
+
+Per window:
+
+| Window | Both | Backup only | What it says |
+|---|---|---|---|
+| **1–16 Sep 2025** | **74** | **1** | The two archives agree on the critical fortnight. |
+| **8–16 Oct 2025** | every date ≤ 11 Oct | every date ≥ 12 Oct — **25 days** | The 403 band is fully navigable through the backup. |
+| **25 Apr – 5 Jun 2026** | **0** | **126** | adsb.lol holds nothing at all here — the 404 stretch. |
+
+**The honest frame, and it is not the exciting one.** A day one network holds and another does not is
+**ordinary**. Different feeders, different antennas, different geography, different retention. It
+becomes a finding only when the gap is archive-wide across control aircraft (above), or when a page
+that was public stops being public. **A single missing aircraft-day is a receiver story, not a
+cover-up story**, and this page will not be used to imply otherwise.
+
+**adsb.lol holds nothing the backup does not.** That is worth stating because it is the reverse of what
+a suppression story would predict.
+
+### 2022 now has primary data behind it
+
+`samples.adsbexchange.com` produced **34 aircraft-days before 2023** across 12 tails — the first time
+this investigation has held position data, rather than somebody's screenshot, for the year the
+trackers date the pattern from.
+
+**And it must be read with the sampling limit attached every time.** One day per month. It establishes
+that particular aircraft were in particular places on particular days. It cannot establish a
+frequency, a pattern, or a rate, and three sampled days do not make a trend. The detail is on
+**[Flight Data Recovery](/Planes/Flight-Data-Recovery/overview)**.
+
+### 153 flight legs were sitting on disk recorded as zero
+
+An earlier harness wrote `flight_rows_recovered: 0` into 20 Flightradar24 provenance sidecars and
+`null` into 19 FlightAware ones. **Both numbers were wrong, and they were our error, not anybody
+else's.** The Flightradar24 parser matched a row shape those pages do not use; the FlightAware
+captures were never parsed at all. `code/extract_wayback_flights.py` re-extracts them and rewrites
+the sidecars.
+
+| Source | Files | Rows recovered |
+|---|---|---|
+| Flightradar24 (server-rendered `data-row` table) | 20 | **44** |
+| FlightAware (legacy pre-2017 tables) | 22 | **109** |
+| **Total** | **42** | **153** |
+
+**A zero in a provenance record reads as an absence of evidence. Here it was an absence of parsing.**
+Anything on this site that rested on those zeros has to be re-read.
+
+The sidecars now distinguish three states that were previously all written as "0", and they mean three
+different things:
+
+| State | Meaning |
+|---|---|
+| `POPULATED` | Rows were present and were parsed. |
+| `PRESENT_BUT_EMPTY` | The page rendered its flight table and the table had no rows in it. |
+| `JAVASCRIPT_SHELL_NO_SERVER_RENDERED_ROWS` | The archive captured a client-side application frame — page chrome only, no rows ever existed in the saved bytes to parse. |
+
+Six modern FlightAware captures are the third kind: roughly 458 KB of page chrome around a
+`trackpollBootstrap` call, with no server-rendered rows at all. **That is a statement about how the
+page is built, not about the aircraft.**
+
+### Every claimed overlap, tested against primary position data
+
+`verify_overlaps.js` was run against all **85** rows of `following/overlaps.csv`. **36 could be
+decided from primary data; 24 of those are corroborated and 12 are refuted.** The remaining 49 are
+`NOT_HEARD`, `NO_ARCHIVE_COVERAGE`, or rows that name no aircraft or no date — **none of which
+refutes anything.** The row-by-row result is at
+[the overlap register](/Planes/following/overlap/overview).
+
+**And the limit belongs in the same breath as the number.** A corroborated row means **the aircraft
+half** of the pairing checks out. **It does not put Charlie Kirk or Erika Kirk anywhere.** An overlap
+needs both halves; the Kirk half is unchanged, still thin for Charlie and close to empty for Erika,
+whose flight logs are reported erased — see
+[Erika Kirk's flight logs reported erased](/Planes/Erika-Flight-Logs-Erased). **A confirmed aircraft
+is not a confirmed overlap, and this page will not let the two be read as the same thing.**
+
 ## What we did NOT get
 
 The most useful section on the page.
@@ -164,12 +349,20 @@ The most useful section on the page.
 * **The archive does not reach 2022.** The earliest trace we obtained anywhere is **24 February
   2023.** The trackers date the pattern from **2022**, and **those rows cannot be tested for free at
   all.** Any statement about 2022 on this site rests on somebody's screenshot, not on data we hold.
+  **— SUPERSEDED.** True of adsb.lol and airplanes.live; **not** true of the ADS-B Exchange monthly
+  sample, which reaches 2016 and has produced 34 aircraft-days before 2023. See "2022 now has primary
+  data behind it" above.
 * **A whole band of the archive returns 403.** Every date from **12 October 2025 to at least 15
   December 2025** returns HTTP 403 for **every aircraft we tried, including one with no connection to
   this case.** 11 October works; 31 December works.
   **This is an archive-wide condition, not a suppression of any aircraft, and it must never be
   reported as one.** It happens to cover the dates a tracker claims SU-BTT was photographed on the
   Sharm el-Sheikh tarmac — which means the free archive cannot check that claim either way.
+  **— PARTLY WRONG, CORRECTED ABOVE.** The band's start date is right and the archive-wide reading is
+  right. **"31 December works" is false** — 31 December 2025 returns 404 for every control aircraft,
+  and the 403 band is followed by a roughly seven-month 404 stretch running to about 1 August 2026.
+  See "The archive map, control-tested" above. The backup archive covers both bands, so the
+  Sharm el-Sheikh dates **can** now be checked.
 * **airplanes.live is no longer open.** Its API now returns 403 and asks you to email a description
   of your project first. It was open before. That is a real reduction in what a member of the public
   can retrieve, and it is why this page carries dates.
@@ -183,6 +376,14 @@ The most useful section on the page.
   Flightradar24 and the ADS-B Exchange pages for **SU-BTT, the lead aircraft of the whole claim**,
   while every other Egyptian tail has at least one. See
   [capturing the tracking websites](/Planes/following/apis/browser_capture/knowledge).
+  **— CORRECTED BELOW.** Three of those 22 were failed queries logged as zeros, one of them SU-BTT's
+  ADS-B Exchange page, which in fact has 3 snapshots. The real figure is **21 URLs genuinely never
+  archived**. See "The Internet Archive sweep was re-run, and it had three false zeros" below.
+* **Our first Internet Archive sweep undercounted, and the method was wrong.** The original CDX
+  queries used `collapse=digest`, which returns only **distinct-content** captures. Every count it
+  produced was therefore a **floor, not a total** — and the test the sweep existed to run, *did this
+  page stop changing?*, was **impossible by construction**, because collapsing on digest throws away
+  exactly the repeated captures that test needs.
 * **No Erika Kirk aircraft was checked, because there is nothing to check.** Her flight logs are
   reported erased, and this repo holds **one** sourced Erika location before 10 September 2025 — for
   a window the trackers counted **73 overlaps** across. Every Erika pairing rests on the foreign
@@ -192,6 +393,35 @@ The most useful section on the page.
   the trace at `0101D3` self-identifies as SU-BTT and carries the September 10 track, while `0101F0`
   has no trace that day. We use `0101D3` and record the disagreement rather than resolving it
   silently.
+
+### The Internet Archive sweep was re-run, and it had three false zeros
+
+Three of the original 30 CDX queries **failed with HTTP 504** and were written into the report as
+`"snapshots": 0`. One of the three was `globe.adsbexchange.com/?icao=0101d3` — **SU-BTT, the most
+load-bearing aircraft in the case.** A timeout had been recorded as an absence.
+
+The re-run drops `collapse=digest`, adds retries, and — this is the part that matters — **reports a
+failed query as `UNKNOWN` rather than as zero.** Result: **30 of 30 queries succeeded, 0 failed.**
+
+| Finding | Detail |
+|---|---|
+| SU-BTT's ADS-B Exchange page | **3 snapshots, 1 Sep – 17 Dec 2022.** The earlier "never archived" was a failed query. |
+| Total snapshots | 19, across 9 URLs |
+| Genuinely never archived | **21 URLs.** Query succeeded, result empty. |
+| HTTP status of every CDX row on every URL | **200** |
+| 200 → 404 transitions anywhere in the dataset | **None. Not one.** |
+
+**There is no 200→404 transition anywhere in this data.** Any page on this site that claims one is
+wrong, and this is the place that says so.
+
+**And the snapshots that do exist for the ADS-B Exchange globe are empty JavaScript shells.** Digest
+`AJQHJML54QE6X2IE4TMCM24E3DPGKFD6` is byte-identical across **SU-BGM, SU-BTV and SU-BTU**, and
+`U743ARQOTM724WNPQLSMSX7TSTHW3FYE` across **SU-BND and T7-ELL**. Identical bytes for different ICAO
+hex codes can only mean the Archive captured the application frame, not the aircraft data. **Those
+snapshots contain no per-aircraft evidence and must not be cited as though they did.**
+
+**Twenty-one URLs nobody ever asked the Archive to crawl is not suppression.** It is absence of
+archival interest, which is the ordinary state of almost every page on the internet.
 
 ### An empty result is not a finding
 
@@ -221,7 +451,8 @@ account is on **[Flight Data Recovery](/Planes/Flight-Data-Recovery/overview)**.
 | **adsb.lol GitHub releases** (ODbL) | **YES** | none | **200 — one ~3 GB release per day, including days the live API refuses** |
 | **samples.adsbexchange.com/traces** | **YES, monthly** | none | **200 — one day per month, back to July 2016** |
 
-* **The 12 October – 15 December 2025 403 band is recoverable.** adsb.lol publishes its entire
+* **The 403 band is recoverable.** (Its true extent is **12 October to about 30 December 2025**, not
+  "to 15 December" — see the control-tested archive map above.) adsb.lol publishes its entire
   archive to `github.com/adsblol/globe_history_2025` as one Open-Database-Licence release per day,
   and **every date in the band is present**. `globe.airplanes.live` serves the same days over HTTP.
   **The 403 is a serving condition, not a deletion**, and this page should never have implied
@@ -244,14 +475,59 @@ against control aircraft with no connection to this case — an unrelated Ryanai
 Lufthansa airframe return 404 identically — so it is **archive-wide retention, not suppression of
 anything.** Naming the control test matters more than the result: it is what separates a retention
 window from a cover-up, and without it the two look the same.
+**— NARROWED.** "No 2026 data at all" was true when written and is no longer. The 404 stretch runs to
+about **1 August 2026**, and adsb.lol serves normally again from about **2 August 2026**. The
+control-tested map above is the current statement.
 
 **airplanes.live remains 403 on its live `/v2/` API** — the gating recorded above is real. Its
 *historical* `globe_history` path is open. Those are two different services on one domain and this
 page previously conflated them.
 
+## Standing findings — the current statement, and what must not be misreported
+
+Where anything above disagrees with this block, **this block is the current statement.** Checked
+24 August 2026.
+
+1. **Free ADS-B networks are live-only, except the three globe-history archives.** adsb.lol,
+   adsb.fi, airplanes.live's `/v2/` API and anonymous OpenSky return an empty result for an aircraft
+   that is not airborne *this second*. **An empty result means NOT AIRBORNE NOW.** It is not an
+   absence from history and it is not evidence of suppression.
+2. **The adsb.lol archive has two dead bands, and both are site-wide.** **403 from exactly 12 October
+   2025 to about 30 December 2025**; **404 from about 31 December 2025 to about 1 August 2026**;
+   normal on either side. **Verified against unrelated control aircraft. Never report either band as
+   scrubbing.**
+3. **globe.airplanes.live covers both bands** and serves from about November 2023 to the present. It
+   recovered **152 aircraft-days** adsb.lol does not hold — and **adsb.lol holds none the backup does
+   not.**
+4. **The two archives agree on September 2025.** 74 aircraft-days held by both, 1 by the backup
+   alone, across 1–16 September 2025. **There is no scrubbing in the fortnight the case turns on.**
+5. **A gap in one network is ordinary.** Different feeders, different antennas, different geography.
+   It is a finding only when it is archive-wide across controls, or when a page that was public stops
+   being public.
+6. **2022 is reachable, at one day per month.** `samples.adsbexchange.com` reaches 2016 and has
+   produced 34 aircraft-days before 2023. **It cannot support a rate, a frequency or a pattern** —
+   only that a given aircraft was in a given place on a given sampled day.
+7. **Nearest-airport resolution is geometry, not a landing record.** Always read the kilometres.
+8. **There is no 200→404 transition anywhere in our Internet Archive data**, and the ADS-B Exchange
+   globe snapshots are **empty JavaScript shells** carrying no per-aircraft evidence.
+9. **A confirmed aircraft is not a confirmed overlap.** Every one of the 24 corroborated rows is a
+   statement about an airframe. **No ADS-B record has ever located a passenger**, and the Kirk half of
+   every pairing is unchanged — thin for Charlie, close to empty for Erika, whose logs are reported
+   erased.
+10. **The counts stay disputed.** 73, ~23, 72, 70+, 68, 29. They have never been reconciled and this
+    site does not average them.
+
+**The counterargument to every result on this page**, stated in the same breath: an empty API response
+means the API had nothing. The ordinary explanations come first — parked and silent, outside volunteer
+receiver coverage, a retention window, a redesign, or a claimed date that was simply wrong. And the
+innocent explanation for a confirmed Provo landing is a maintenance visit: Duncan Aviation has plants
+at Provo and at Lincoln.
+
 ## Related
 
 * [How we get the data — overview](/Planes/following/apis/overview)
+* [Flight Data Recovery](/Planes/Flight-Data-Recovery/overview) — the backup archives, in full
+* [The overlap register](/Planes/following/overlap/overview) — all 85 claimed pairings, row by row
 * [Government flight records](/Planes/following/apis/government/knowledge)
 * [Commercial flight-data APIs](/Planes/following/apis/proprietary/knowledge)
 * [Capturing the tracking websites](/Planes/following/apis/browser_capture/knowledge)

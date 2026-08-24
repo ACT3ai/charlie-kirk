@@ -129,6 +129,8 @@ There is also a **time-zone trap** buried in this comparison, and it has caught 
 
 None of this resolves whether the gap was routine. It does mean that anyone citing "the flight records" against "the owner's statement" is comparing two accounts that were never reconciled in public.
 
+**The FlightRadar24 rows behind the *People* column of that table have since been recovered from the Internet Archive, to the second, along with the scheduled times FlightRadar24 published beside them.** They are set out in [the primary-data sweep](#the-24-august-2026-primary-data-sweep) below, and they narrow the disagreement rather than widening it.
+
 ## The aircraft's technical identity
 
 A tracker record card circulated on X, credited **© KnightHammer Aviation**, gives the airframe identity independent of the registration:
@@ -265,13 +267,17 @@ finding about the aircraft.
 
 **No tracking site was found to have removed this aircraft's page.** Our scripts recorded HTTP 403
 from FlightRadar24, RadarBox and Planespotters, but the same script recorded the identical 403 for
-five unrelated control aircraft, so those are robot blocks and establish nothing about this tail:
+seven unrelated control aircraft, for every other case tail, and for FlightRadar24's own home page,
+so those are robot blocks and establish nothing about this tail:
 [What A 403 Actually Means](/Planes/Flight-Data-Recovery/What-A-403-Means). FlightAware and
 ADS-B Exchange serve scripts normally and returned HTTP 200 for N888KG.
 
 Where a day is absent from an archive, that means the volunteer receiver network heard nothing on
 that day. It does not mean the aircraft did not fly, and it does not mean a transponder was off.
-Both free daily archives begin in 2023, so no 2022 date is testable at all.
+Both free **daily** archives begin in 2023, so no 2022 date is testable from those two — but the
+ADS-B Exchange **monthly sample** publishes one full day per month back to 2016, and it has produced
+five 2022 days for this tail, including one at Provo. They are set out in the sweep section below.
+An earlier version of this page said no 2022 date was testable at all; that is no longer true.
 
 Raw payloads are saved at `site/docs/Planes/N888KG/data/recovered/`, with the source named in every
 filename and a `.meta.json` sidecar per file recording the source, URL, HTTP status, byte count and
@@ -279,6 +285,195 @@ date.
 
 Method and fleet-wide results: **[Flight Data Recovery](/Planes/Flight-Data-Recovery/overview)** ·
 **[Per-Aircraft Recovery Status](/Planes/Flight-Data-Recovery/Per-Aircraft-Status)**
+
+## The 24 August 2026 primary-data sweep
+
+This section is the result of going back to the archives and the raw position data on **24 August
+2026** and testing this page's own material against them. It contains the single most important
+correction on this site, and the correction goes **against** the suspicious reading.
+
+### The strongest-looking removal on this site, and how it dissolved
+
+Of every aircraft in this investigation, N888KG is the one where the Internet Archive holds enough
+captures to watch a tracking page change over time. It holds **13 captures of this aircraft's
+FlightRadar24 page**. Laid out in order, they look like a record being pulled.
+
+| Capture (UTC) | HTTP | Bytes | FLIGHTS HISTORY table |
+|---|---|---|---|
+| 11 Sep 2025 06:14 | 200 | 63,886 | **Populated — 2 rows** |
+| 11 Sep 2025 09:28 | 200 | 63,886 | **Populated — 2 rows** |
+| 11 Sep 2025 21:51 | 200 | 63,886 | **Populated — 2 rows** |
+| 12 Sep 2025 16:30 | 200 | 63,886 | **Populated — 2 rows** |
+| 13 Sep 2025 00:05 | 200 | 63,886 | **Populated — 2 rows** |
+| 18 Sep 2025 04:08 | 200 | 56,647 | **Empty** |
+| 18 Sep 2025 13:27 | 200 | 56,647 | **Empty** |
+| 18 Sep 2025 15:26 | 200 | 56,661 | **Empty** |
+| 18 Sep 2025 19:23 | 200 | 56,647 | **Empty** |
+| 19 Sep 2025 06:02 | 200 | 56,647 | **Empty** |
+| 20 Sep 2025 14:46 | 200 | 56,647 | **Empty** |
+| 2 Nov 2025 17:45 | 200 | 57,088 | **Empty** |
+| 28 Jan 2026 22:06 | 200 | 57,102 | **Empty** |
+
+Same URL. Same site. Every capture HTTP 200. The September 10 flight is there on the 11th, 12th and
+13th, and gone by the 18th, and the page shrinks by roughly 7,200 bytes at exactly that boundary.
+**That is what a record being pulled looks like.**
+
+**It is not one.** The empty captures are not silent about why they are empty. They carry
+FlightRadar24's own explanation, in FlightRadar24's own words, in the space where the table used to
+be:
+
+> Sorry, but we could not find data for specified flight
+>
+> More than 7 days of N888KG history is available with an upgrade to a Silver (90 days), Gold
+> (1 year), or Business (3 years) subscription.
+
+**It is the free tier's seven-day history window.** The 10 September flight was inside seven days on
+11, 12 and 13 September, and outside it by 18 September. The first empty capture falls on the first
+day the flight was more than seven days old. Every capture we hold is consistent with that window
+and with nothing else — including the November 2025 and January 2026 captures, which are empty for
+the same reason and would be empty for any aircraft that had not flown that week.
+
+This page publishes that because it is the honest result. **We went looking for a removal on the most
+promising candidate in the fleet, with a longer archive trail than any other aircraft here, and what
+we found was a paywall.** A site that only publishes the tests that come out its way is not running
+tests.
+
+**This is a separate mechanism from the FlightAware blocking described further up this page.** That
+one is real, it is the FAA's LADD programme, it is a lawful opt-in privacy request, and it explains
+"No flights found" on FlightAware for any date. The seven-day window explains the empty FlightRadar24
+captures. Two different ordinary mechanisms, neither of them a cover-up, and neither should be cited
+as evidence of the other.
+
+### The 10 September rows, recovered — and a provenance number we had wrong
+
+When those five populated captures were first processed, the harness recorded
+**`flight_rows_recovered: 0`** for every one of them. That was wrong: the extractor was matching a row
+shape FlightRadar24's server-rendered table does not use.
+`site/docs/Planes/following/apis/public_open_source/code/extract_wayback_flights.py` re-extracts them
+and rewrites the sidecars. **Each of the five carries the same two rows**, and they are the primary
+form of the numbers *People* reported.
+
+| Leg | Scheduled off (UTC) | Actual off (UTC) | Actual on (UTC) | Block |
+|---|---|---|---|---|
+| Provo (PVU) → Page, AZ (PGA) | 19:15:00 | **19:11:53** | **19:48:56** | 0:37 |
+| Page, AZ (PGA) → Provo (PVU) | 20:30:00 | **20:32:34** | **21:06:05** | 0:34 |
+
+Converted — Utah on MDT (UTC−6), Page on MST year-round (UTC−7):
+
+| Event | UTC | Utah local | Page local |
+|---|---|---|---|
+| Departs Provo | 19:11:53 | **1:11:53 pm** | — |
+| Arrives Page | 19:48:56 | 1:48:56 pm MDT | **12:48:56 pm** |
+| Departs Page | 20:32:34 | 2:32:34 pm MDT | **1:32:34 pm** |
+| Arrives Provo | 21:06:05 | **3:06:05 pm** | — |
+
+Three things follow, and they do not all point the same way.
+
+* **The tracker figures cited across this page are exact.** 1:11 pm departure and 3:06 pm return are
+  right to the minute. So were the UTC annotations in the original X thread.
+* **The owner's account is closer to the record than the comparison table above implies.** His
+  "approximately 1:55 pm MT, 12:55 pm local" arrival at Page sits six minutes off a 12:48:56 local
+  arrival, and his "1:40 pm local" departure sits eight minutes off 1:32:34. Those are the sort of
+  gaps a person writing "approximately" from memory produces. They are not a different story.
+* **FlightRadar24 published a scheduled time for both legs** — 19:15 and 20:30 UTC — beside the
+  actual ones. A schedule field on a tracker is not a filed flight plan and must not be quoted as
+  one, but it is consistent with the owner's description of a prescheduled trip rather than
+  inconsistent with it.
+
+**What these rows do not settle** is the transponder gap itself. They are FlightRadar24's *leg
+summary* — off, on, block time — not the position track. They neither show nor deny the coverage
+loss between roughly 19:44 and 20:30 UTC. That question still needs the raw ADS-B track or an FAA
+record, and it is unresolved here.
+
+### Sixty more legs that were recorded as nothing
+
+The same re-extraction was run against this aircraft's archived **FlightAware** pages, which had never
+been parsed at all — their provenance sidecars carried `null` rather than a count. Eight captures
+from **2011 and 2016** turn out to hold **60 flight rows** between them:
+
+| Capture | Rows |
+|---|---|
+| 4 Jul 2011 | 8 |
+| 4 Aug 2011 | 12 |
+| 11 Apr 2016 | 6 |
+| 12 May 2016 | 6 |
+| 14 May 2016 | 8 |
+| 13 Aug 2016 | 11 |
+| 15 Sep 2016 | 3 |
+| 17 Oct 2016 | 6 |
+
+They are ordinary domestic business flying from nine and fourteen years before this case, and they
+have no bearing on it. They are published for one reason: **a zero or a null in a provenance record
+reads as an absence of evidence, and here it was an absence of parsing.** A ninth FlightAware
+capture, from 11 September 2025, is a ~458 KB JavaScript shell with no server-rendered rows, and is
+now labelled `JAVASCRIPT_SHELL_NO_SERVER_RENDERED_ROWS` rather than "0 rows" — a page that builds its
+table in the browser has not told us its history is empty.
+
+### The position record we hold for this airframe
+
+| Measure | N888KG |
+|---|---|
+| Aircraft-days of primary position data held | **25** |
+| Span | **1 March 2022 – 28 May 2026** |
+| Days corroborated by **both** free daily archives | 4 |
+| Days recovered **only** from the backup network (globe.airplanes.live) | 8 |
+| Days recovered **only** from the ADS-B Exchange monthly sample | 13 |
+| Days before 2023 | 5 |
+
+Every trace self-identifies: registration `N888KG`, ICAO hex `AC3C75`, type `CL30`, "BOMBARDIER
+BD-100 Challenger 300", year 2013 — matching the KnightHammer record card reproduced earlier on this
+page. **The LADD block that hides this aircraft from FlightAware does not hide it from the volunteer
+networks**, which is exactly the point made further up: blocking suppresses a display, not a
+transponder.
+
+### 2022, including one day at Provo
+
+The ADS-B Exchange monthly sample publishes one free full day of global traces for the **first of
+every month back to 2016**. It holds five 2022 days for this tail.
+
+| Date sampled | What the trace shows | Points |
+|---|---|---|
+| **1 March 2022** | Teterboro, NJ (**KTEB**, 0.54 km) outbound; last fix 4.81 km from Holly Ridge / Topsail Island, NC. | 407 |
+| **1 April 2022** | West Palm Beach, FL (**KPBI**, 1.33 km) → Republic Airport, East Farmingdale, NY (**KFRG**, 1.28 km). | 698 |
+| **1 June 2022** | Dallas Love Field (**KDAL**, 0.56 km) → West Palm Beach, FL (**KPBI**, 1.56 km). | 779 |
+| **1 July 2022** | First fix 6.15 km from a landing strip at Adelanto, CA → Centennial Airport, Denver (**KAPA**, 0.28 km). | 646 |
+| **1 December 2022** | **Provo Municipal (KPVU), 0.22 km — and every one of the 57 position reports is flagged `ground`.** The aircraft was parked at Provo for the whole sampled window, from 00:00:05 to 00:45:02 UTC. It did not fly during it. | 57 |
+
+That last row deserves saying carefully, because it is on a page about a Provo departure. **This
+aircraft was already at Provo Municipal in December 2022** — nine months before the case began and
+about a year before anything on this page. It is a Utah-owned business jet based in Utah, and finding
+it parked at its home-region field on a randomly sampled day is exactly what should be expected.
+**It implies nothing whatever about September 10, 2025, and it must not be cited as an early
+"connection" to Provo.** It is published because it is what the primary data shows, and because a
+page that only publishes the data points that look suspicious is not worth reading.
+
+The sampling caveat travels with every row above: **one day per month, always the 1st.** Five sampled
+days tell you the aircraft existed and flew ordinary routes in 2022. They cannot support a rate, a
+frequency, or a pattern. And the kilometre figures are **geometry against an airport reference point,
+not landing records** — which is why the distance is printed every time.
+
+### The counterargument, and what this locates
+
+The counterargument to everything in this section is that there is nothing in it to explain. A
+seven-day paywall, a lawful FAA privacy block, a coverage gap over rural Arizona terrain, a business
+jet parked at its home field — each is the ordinary behaviour of the system it belongs to, and taken
+together they are a complete and unremarkable account of the public record for this aircraft. The
+owner's statement, the FAA's position and the FBI's position all say the same, and **fact-checks
+report that N888KG is not part of the official investigation.** Nothing recovered in this sweep
+contradicts any of that. What remains genuinely open is narrower than the viral framing: whether the
+ADS-B loss between roughly 19:44 and 20:30 UTC was a coverage dropout or something else, which
+neither the archived rows nor the free position archives can answer.
+
+And the limit that governs the whole section: **this data locates an airframe, not a person.** A
+position report says a Challenger 300 with hex AC3C75 was at a set of coordinates at a timestamp. It
+says nothing about who was aboard, who arranged the trip, or why — and this page names no person as
+having done anything wrong. This aircraft's thread is also its own: **the Provo departure is a
+separate claim from the eighteen-month foreign-aircraft following pattern, from the September 10
+day-of aviation timeline, and from the N1098L thread.** They are linked from this page and they are
+not merged into it.
+
+Raw files: `site/docs/Planes/N888KG/data/recovered/`. Method, control tests and fleet-wide results:
+[Flight Data Recovery](/Planes/Flight-Data-Recovery/overview).
 
 {/* CK_INTERESTING_HERE_START */}
 

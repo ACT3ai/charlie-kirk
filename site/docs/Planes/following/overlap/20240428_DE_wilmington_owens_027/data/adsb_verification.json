@@ -1,0 +1,134 @@
+{
+ "generated_utc": "2026-08-24T17:36:21.953Z",
+ "radius_km": 15,
+ "method": "For each claimed overlap, both free ADS-B history archives were queried for the claimed foreign tail on the claimed date and the day either side. Positions were resolved to the nearest airport in the OurAirports public-domain gazetteer. A verdict of ELSEWHERE refutes a row; NO_ARCHIVE_COVERAGE and NOT_HEARD do not.",
+ "note": "Per-row extract of OWENS-027 from site/docs/Planes/following/apis/public_open_source/data/overlap_verification/overlap_verification.json",
+ "result": {
+  "overlap_id": "OWENS-027",
+  "date": "2024-04-28",
+  "claimed_airport": "KILG",
+  "claimed_codes": [
+   "KILG"
+  ],
+  "claimed_city": "Wilmington",
+  "claimed_state": "DE",
+  "claimed_tails": [
+   "SU-BTT"
+  ],
+  "subject": "Erika",
+  "audit_verdict": "accurate",
+  "site_page": "site/docs/Planes/following/Wilmington_KILG_2022-11-17_to_2025-10-12/overview.mdx",
+  "tails": {
+   "SU-BTT": {
+    "2024-04-27": {
+     "adsb_lol_http": 404,
+     "airplanes_live_http": 404,
+     "archive_control_probe": {
+      "adsb-lol": {
+       "verdict": "COVERED",
+       "codes": [
+        404,
+        404,
+        404,
+        404,
+        404,
+        404,
+        404,
+        200
+       ]
+      },
+      "airplanes-live": {
+       "verdict": "COVERED",
+       "codes": [
+        404,
+        404,
+        404,
+        404,
+        404,
+        404,
+        404,
+        200
+       ]
+      }
+     },
+     "both_agree": false,
+     "heard": false,
+     "at_claimed_airport": false,
+     "closest_approach_to_claimed_field": null,
+     "airports_touched": null,
+     "first_where": null,
+     "last_where": null,
+     "points": null,
+     "verdict": "NOT_HEARD"
+    },
+    "2024-04-28": {
+     "adsb_lol_http": 200,
+     "airplanes_live_http": 200,
+     "archive_control_probe": null,
+     "both_agree": true,
+     "heard": true,
+     "at_claimed_airport": true,
+     "closest_approach_to_claimed_field": {
+      "code": "KILG",
+      "km": 1.57,
+      "utc": "2024-04-28T17:41:20.170Z",
+      "on_ground": false
+     },
+     "airports_touched": [
+      "KPVU 1.52km on_ground",
+      "KN57 3.26km below_4000ft",
+      "KILG 11.83km below_4000ft",
+      "93MD 12.2km below_4000ft",
+      "KEVY 7.5km below_4000ft"
+     ],
+     "first_where": "KPVU/PVU (Provo Municipal Airport, Provo UT) 1.52km",
+     "last_where": "KILG/ILG (Wilmington Airport, Wilmington DE) 1.57km",
+     "points": 976,
+     "verdict": "AT_CLAIMED_AIRPORT"
+    },
+    "2024-04-29": {
+     "adsb_lol_http": 404,
+     "airplanes_live_http": 404,
+     "archive_control_probe": {
+      "adsb-lol": {
+       "verdict": "COVERED",
+       "codes": [
+        404,
+        404,
+        404,
+        404,
+        404,
+        404,
+        404,
+        200
+       ]
+      },
+      "airplanes-live": {
+       "verdict": "COVERED",
+       "codes": [
+        404,
+        404,
+        404,
+        404,
+        404,
+        404,
+        404,
+        200
+       ]
+      }
+     },
+     "both_agree": false,
+     "heard": false,
+     "at_claimed_airport": false,
+     "closest_approach_to_claimed_field": null,
+     "airports_touched": null,
+     "first_where": null,
+     "last_where": null,
+     "points": null,
+     "verdict": "NOT_HEARD"
+    }
+   }
+  },
+  "verdict": "AT_CLAIMED_AIRPORT"
+ }
+}

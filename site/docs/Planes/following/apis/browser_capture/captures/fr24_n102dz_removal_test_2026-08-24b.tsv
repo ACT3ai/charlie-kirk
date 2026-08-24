@@ -1,0 +1,37 @@
+# INDEPENDENT RE-TEST of the FlightRadar24 "N102DZ was removed" claim.
+# Retrieved 2026-08-24 (UTC) from a REAL LOGGED-OUT BROWSER SESSION, second run,
+# by a different operator than fr24_page_availability_2026-08-24.tsv, on purpose:
+# the first run's conclusion is load-bearing enough that it needed reproducing.
+#
+# METHOD. Navigate a browser to https://www.flightradar24.com/data/aircraft/n102dz,
+# read the rendered page, then fetch five more aircraft SAME-ORIGIN from inside that
+# page so every probe carries the same real session and Cloudflare is not in the way.
+#
+# WHAT IT SETTLES, AND WHAT IT DOES NOT.
+#
+#   SETTLED: the page is NOT removed. It returns HTTP 200 with its full identity
+#   block -- title "N102DZ - Gulfstream V [555] - Flightradar24", MODE S A00C85,
+#   TYPE CODE GLF5. Nothing on it says removed, blocked, restricted or unavailable.
+#   The HTTP 403 our scripts record is bot protection and nothing else; FlightRadar24
+#   answers 403 to a script for its own home page too.
+#
+#   SETTLED: the empty flight-history table is the FREE-TIER SEVEN-DAY WINDOW, not a
+#   deletion. N102DZ prints "could not find data for specified flight" because it has
+#   not flown in seven days -- and the UNRELATED CONTROL N628TS prints the identical
+#   message at an almost identical byte count (53,318 vs 53,310). SU-BTT, SU-BND and
+#   the Ryanair control all show history, because they flew recently. Every row,
+#   subject and control alike, carries the upgrade paywall notice.
+#
+#   NOT SETTLED, and nobody should claim it is: what this page displayed in MAY 2026.
+#   A page that loads today cannot testify about a table's contents eight months ago.
+#   The claim "the page was taken down" is refuted. A narrower claim -- that history
+#   was specifically purged and later restored -- is not something this method can
+#   reach in either direction, and no page on this site may assert it.
+#
+# tail	http	bytes	mode_s	type	nodata	paywall	kind	note
+n102dz	200	53310	A00C85	GLF5	1	1	SUBJECT	page present, full identity block; no history because it has not flown in 7 days
+su-btt	200	68606	0101D3	FA7X	0	1	SUBJECT	history rendered
+su-bnd	200	57612	01003E	GLF4	0	1	SUBJECT	history rendered
+n888kg	200	53338	AC3C75	CL30	1	1	SUBJECT	same 7-day-window state as n102dz
+n628ts	200	53318	A835AF	-	1	1	CONTROL	unrelated aircraft, IDENTICAL behaviour to n102dz
+ei-dcl	200	238357	4CA242	B738	0	1	CONTROL	unrelated airliner, flies daily, history rendered

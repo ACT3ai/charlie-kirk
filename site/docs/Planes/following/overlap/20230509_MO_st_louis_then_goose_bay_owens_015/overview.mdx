@@ -199,6 +199,30 @@ Compiler note: STL to Goose Bay, GB to Paris, Paris to Cairo.
 
 More of the same discussion, grouped by research topic rather than by date, is on [X discussions of the following planes](/Planes/following/x_discussions) and [Candace Owens broadcasts](/Planes/following/Candace_Owens_Broadcasts).
 
+## We checked this row against primary ADS-B data
+
+Run 24 August 2026. Every claimed row of the sheet was tested the same way, this one included.
+
+**Refuted, in part.** The aircraft was tracked that day and it was not at Goose Bay. On 9 May 2023 SU-BND's track begins at Aero Estates Airport, Belleville, Illinois (1.78 km) — the St Louis metro, which the row also names — and ends near St André-Avellin Aerodrome, Quebec (39.98 km). Its closest approach to **CYYR was 3,057.32 km**. The next day it is over Belmullet, Ireland and then Mouy, France. Both archives agree.
+
+**This is a misattribution, not an invention.** The St Louis half of the row is corroborated and the eastbound transatlantic routing is real; the Goose Bay half is not in the data. A Labrador fuel stop is the obvious innocent reading of what the compiler was looking at, but the archives do not record one.
+
+| Date | adsb.lol | airplanes.live | SU-BND heard? | Closest approach to CYYR |
+|---|---|---|---|---|
+| 8 May | 404 | 404 | no | no position to measure |
+| **9 May** | 200 | 200 | yes | **3,057.32 km** at 20:03:41 UTC |
+| 10 May | 200 | 200 | yes | no position to measure |
+
+The **bold** row is the date the sheet claims. The other two are the day either side, which is the window the compilation itself used.
+
+**Method, so a reader can repeat it.** Both free ADS-B history archives — adsb.lol globe history and airplanes.live — were queried for **SU-BND** on **9 May 2023** and the day either side, with positions resolved to the nearest field in the OurAirports public-domain gazetteer. Positions on the ground or below 4,000 ft were measured against the claimed field's coordinates: within **15 km** counts as at the field, within **80 km** as the same metro area — and nearest-airport resolution is geometry, not a landing record.
+
+**Our verdict disagrees with the audit verdict already recorded for this row, and we are not resolving it silently.** `overlaps.csv` records this row as **audited accurate**. Primary position data refutes it. That is a correction running against the direction people expect from this directory — the audit and the compiler agreed on this row, and the position data agrees with neither.
+
+**Erika Kirk's side is unaffected by any of this.** Her flight logs are [reported erased](/Planes/Erika-Flight-Logs-Erased), so there is no itinerary for a confirmed or refuted aircraft position to be checked against. Testing the aircraft half does not make the Erika half testable.
+
+**Files.** The per-row extract is `site/docs/Planes/following/overlap/20230509_MO_st_louis_then_goose_bay_owens_015/data/adsb_verification.json`. The whole run, all 85 rows, is `site/docs/Planes/following/apis/public_open_source/data/overlap_verification/overlap_verification.json`.
+
 ## Links
 
 * [Overlap dates index](/Planes/following/overlap/overview) · [The 73 overlaps — the full reconstruction](/Planes/following/73_overlaps) · [Following overview](/Planes/following/overview)

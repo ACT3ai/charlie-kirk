@@ -1,0 +1,113 @@
+{
+  "verified_utc": "2026-08-24T17:36:21.953Z",
+  "overlap_id": "OWENS-050",
+  "date": "2023-05-12",
+  "claimed_airport": "KSTL",
+  "claimed_codes": [
+    "KSTL"
+  ],
+  "claimed_city": "St. Louis",
+  "claimed_state": "MO",
+  "claimed_tails": [
+    "SU-BND"
+  ],
+  "subject": "Erika",
+  "audit_verdict": "inaccurate",
+  "site_page": "site/docs/Planes/following/StLouis_KSTL_2022-12-20_to_2025-02-23/overview.mdx",
+  "tails": {
+    "SU-BND": {
+      "2023-05-11": {
+        "adsb_lol_http": 404,
+        "airplanes_live_http": 404,
+        "archive_control_probe": {
+          "adsb-lol": {
+            "verdict": "NOT_COVERED",
+            "codes": [
+              404,
+              404,
+              404,
+              404,
+              404,
+              404,
+              404,
+              404,
+              404
+            ]
+          },
+          "airplanes-live": {
+            "verdict": "NOT_COVERED",
+            "codes": [
+              404,
+              404,
+              404,
+              404,
+              404,
+              404,
+              404,
+              404,
+              404
+            ]
+          }
+        },
+        "both_agree": false,
+        "heard": false,
+        "at_claimed_airport": false,
+        "closest_approach_to_claimed_field": null,
+        "airports_touched": null,
+        "first_where": null,
+        "last_where": null,
+        "points": null,
+        "verdict": "NO_ARCHIVE_COVERAGE"
+      },
+      "2023-05-12": {
+        "adsb_lol_http": 200,
+        "airplanes_live_http": 200,
+        "archive_control_probe": null,
+        "both_agree": true,
+        "heard": true,
+        "at_claimed_airport": false,
+        "closest_approach_to_claimed_field": null,
+        "airports_touched": [
+          "LFPB 9.63km first_fix",
+          "LGEP 12.22km last_fix"
+        ],
+        "first_where": "LFPB/LBG (Paris-Le Bourget International Airport, Paris FR) 9.63km",
+        "last_where": "LGEP (Epitalion Airfield, Pyrgos GR) 12.22km",
+        "points": 461,
+        "verdict": "ELSEWHERE"
+      },
+      "2023-05-13": {
+        "adsb_lol_http": 404,
+        "airplanes_live_http": 404,
+        "archive_control_probe": {
+          "adsb-lol": {
+            "verdict": "COVERED",
+            "codes": [
+              404,
+              404,
+              200
+            ]
+          },
+          "airplanes-live": {
+            "verdict": "COVERED",
+            "codes": [
+              404,
+              404,
+              200
+            ]
+          }
+        },
+        "both_agree": false,
+        "heard": false,
+        "at_claimed_airport": false,
+        "closest_approach_to_claimed_field": null,
+        "airports_touched": null,
+        "first_where": null,
+        "last_where": null,
+        "points": null,
+        "verdict": "NOT_HEARD"
+      }
+    }
+  },
+  "verdict": "ELSEWHERE"
+}

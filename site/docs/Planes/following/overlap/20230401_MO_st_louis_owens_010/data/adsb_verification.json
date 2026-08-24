@@ -1,0 +1,111 @@
+{
+ "generated_utc": "2026-08-24T17:36:21.953Z",
+ "radius_km": 15,
+ "method": "For each claimed overlap, both free ADS-B history archives were queried for the claimed foreign tail on the claimed date and the day either side. Positions were resolved to the nearest airport in the OurAirports public-domain gazetteer. A verdict of ELSEWHERE refutes a row; NO_ARCHIVE_COVERAGE and NOT_HEARD do not.",
+ "note": "Per-row extract of OWENS-010 from site/docs/Planes/following/apis/public_open_source/data/overlap_verification/overlap_verification.json",
+ "result": {
+  "overlap_id": "OWENS-010",
+  "date": "2023-04-01",
+  "claimed_airport": "KSTL",
+  "claimed_codes": [
+   "KSTL"
+  ],
+  "claimed_city": "St. Louis",
+  "claimed_state": "MO",
+  "claimed_tails": [
+   "SU-BTT"
+  ],
+  "subject": "TPUSA",
+  "audit_verdict": "accurate",
+  "site_page": "site/docs/Planes/following/overlap/20230402_MO_jefferson_city/overview.mdx",
+  "tails": {
+   "SU-BTT": {
+    "2023-03-31": {
+     "adsb_lol_http": 200,
+     "airplanes_live_http": 200,
+     "archive_control_probe": null,
+     "both_agree": true,
+     "heard": true,
+     "at_claimed_airport": false,
+     "closest_approach_to_claimed_field": null,
+     "airports_touched": [
+      "IT-0341 5.4km first_fix",
+      "VB02 13.74km last_fix"
+     ],
+     "first_where": "IT-0341 (Oasi Airfield, Cassano Magnago (VA) IT) 5.4km",
+     "last_where": "VB02 (Megolo Airfield, Megolo di Mezzo (VB) IT) 13.74km",
+     "points": 13,
+     "verdict": "ELSEWHERE"
+    },
+    "2023-04-01": {
+     "adsb_lol_http": 200,
+     "airplanes_live_http": 200,
+     "archive_control_probe": null,
+     "both_agree": true,
+     "heard": true,
+     "at_claimed_airport": true,
+     "closest_approach_to_claimed_field": {
+      "code": "KSTL",
+      "km": 0.48,
+      "utc": "2023-04-01T15:55:15.160Z",
+      "on_ground": false
+     },
+     "airports_touched": [
+      "KSTL 5.09km below_4000ft",
+      "K1H0 7.57km below_4000ft",
+      "KSUS 7.64km below_4000ft",
+      "FR-0503 10.99km first_fix"
+     ],
+     "first_where": "FR-0503 (Mouy Airfield, FR) 10.99km",
+     "last_where": "KSUS/SUS (Spirit of St Louis Airport, St Louis MO) 3.21km",
+     "points": 558,
+     "verdict": "AT_CLAIMED_AIRPORT"
+    },
+    "2023-04-02": {
+     "adsb_lol_http": 404,
+     "airplanes_live_http": 404,
+     "archive_control_probe": {
+      "adsb-lol": {
+       "verdict": "NOT_COVERED",
+       "codes": [
+        404,
+        404,
+        404,
+        404,
+        404,
+        404,
+        404,
+        404,
+        404
+       ]
+      },
+      "airplanes-live": {
+       "verdict": "NOT_COVERED",
+       "codes": [
+        404,
+        404,
+        404,
+        404,
+        404,
+        404,
+        404,
+        404,
+        404
+       ]
+      }
+     },
+     "both_agree": false,
+     "heard": false,
+     "at_claimed_airport": false,
+     "closest_approach_to_claimed_field": null,
+     "airports_touched": null,
+     "first_where": null,
+     "last_where": null,
+     "points": null,
+     "verdict": "NO_ARCHIVE_COVERAGE"
+    }
+   }
+  },
+  "verdict": "AT_CLAIMED_AIRPORT"
+ }
+}

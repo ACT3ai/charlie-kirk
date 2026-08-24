@@ -119,6 +119,120 @@ date.
 Method and fleet-wide results: **[Flight Data Recovery](/Planes/Flight-Data-Recovery/overview)** ·
 **[Per-Aircraft Recovery Status](/Planes/Flight-Data-Recovery/Per-Aircraft-Status)**
 
+## The primary flight data we hold on this aircraft, and where it came from
+
+Everything above this line rests on commentary, a registry lookup, and screenshots of somebody
+else's screen. This section does not. It is raw position data this investigation pulled itself,
+from free public archives anyone can query, and saved to disk at
+`site/docs/Planes/N560TW/data/recovered/` with a `.meta.json` sidecar beside every payload
+recording the source, the URL, the HTTP status, the byte count and the retrieval time.
+
+| Measure | N560TW |
+|---|---|
+| Days of primary track held | **49** |
+| Span of those days | **1 January 2022 – 1 August 2026** |
+| From adsb.lol `globe_history` | 9 days |
+| From globe.airplanes.live (the backup network) | 27 days |
+| From the ADS-B Exchange monthly sample | 23 days |
+| Corroborated by **both** free daily archives | **9 days** |
+| Recovered **only** from the backup network | **18 days** |
+| Held **only** by the monthly sample | **22 days** |
+| Days before 2023 | **6** |
+| Field touched most often across all days | **Scottsdale (KSDL) — 77 times** |
+
+Counts from `site/docs/Planes/following/apis/public_open_source/data/provenance/tail_provenance.json`.
+
+Eighteen of those forty-nine days exist only because we asked a second archive. That is ordinary,
+not sinister: the two networks run on different volunteer receivers, with different antennas, in
+different places, and a day one hears and the other does not is a coverage difference. It is worth
+stating because a single-source check of this tail would have under-reported its record by more
+than a third.
+
+### The 2022 traces, on this site for the first time
+
+`samples.adsbexchange.com` publishes a free full-day sample for **the first of every month**, back
+to 2016, with no account and no key. Six of those sampled days fall in 2022 for N560TW. Positions
+are given as the nearest airport and the distance to it — **that is geometry, not a landing
+record.**
+
+| Sampled day | First fix | Last fix |
+|---|---|---|
+| 1 Jan 2022 | Scottsdale (KSDL, 0.18 km) | Scottsdale (KSDL, 0.18 km) |
+| 1 Feb 2022 | Scottsdale (KSDL, 0.18 km) | Phoenix Sky Harbor (KPHX, 4.92 km) |
+| 1 Apr 2022 | Jackson Hole, WY (KJAC, 0.18 km) | Scottsdale (KSDL, 0.17 km) |
+| 1 May 2022 | Scottsdale (KSDL, 0.20 km) | Scottsdale (KSDL, 0.18 km) |
+| 1 Jul 2022 | Scottsdale (KSDL, 0.19 km) | Double Eagle II, Albuquerque, NM (KAEG, 20.85 km) |
+| 1 Nov 2022 | Scottsdale (KSDL, 0.17 km) | Phoenix Deer Valley (KDVT, 7.80 km) |
+
+**The sampling caveat has to travel with every one of those rows: this is one day per month.** Six
+sampled days establish where the aircraft was on six days. They cannot support a rate, a frequency,
+or a claim about how often it flew anywhere.
+
+Within that limit, one thing is clear and it bears directly on this page. **Five of the six sampled
+2022 days start or end at Scottsdale, and KSDL is the field this aircraft touches more than any
+other across the whole 49-day record — 77 times.** Scottsdale is this aircraft's home base, and has
+been since at least January 2022. The route this page is built around — Scottsdale to Provo to
+Santa Barbara and back on 10 September 2025 — begins and ends where this aircraft always begins and
+ends. **A Scottsdale-based jet departing Scottsdale is the ordinary case, not the anomaly.**
+Whatever is interesting about that morning, the Scottsdale end of it is not.
+
+### What an archived page put back: a 2016 precedent for the same routing
+
+The Internet Archive holds two captures of this tail's FlightAware page. Both were previously
+recorded in our own provenance files as yielding nothing — the extractor never parsed FlightAware's
+older table markup at all. `code/extract_wayback_flights.py` re-read them. **We were wrong, and this
+is the correction.**
+
+The capture of **29 November 2016** yields **nine flight legs**, naming **KSDL, KPVU, KSLC, KELP,
+KTUS and MMSD**. Two of those nine are a single day:
+
+* **18 November 2016, 09:24 MST — Scottsdale (KSDL) to Provo Muni (KPVU), landing 10:33 MST.**
+* **18 November 2016, 16:42 MST — Provo Muni (KPVU) back to Scottsdale (KSDL), landing 17:47 MST.**
+
+That is a Scottsdale–Provo land-and-turn, flown by this exact airframe, **nine years before the
+assassination**, with no possible connection to this case. It is close to conclusive that the
+Scottsdale–Provo shape attributed to N560TW on 10 September 2025 is ordinary flying for this
+aircraft rather than a signature of anything. File:
+`site/docs/Planes/N560TW/data/recovered/N560TW_20161129055521_wayback_flightaware_flights.json`.
+
+The second capture, **15 April 2026**, returns no rows — but not because the record was gone. The
+archived page is a **JavaScript shell**: 502,766 bytes of page chrome with the flight table rendered
+client-side and therefore never captured. It is labelled
+`JAVASCRIPT_SHELL_NO_SERVER_RENDERED_ROWS` in its sidecar, **not "0 rows"**, because those two
+things mean completely different things and reading one as the other is how an absence of parsing
+gets published as an absence of evidence.
+
+### This tail is not in the overlap sheet
+
+None of the 85 claimed overlap rows in
+`site/docs/Planes/following/overlaps.csv` names N560TW. The sheet names SU-BTT, SU-BND, or no
+aircraft at all. N560TW belongs to the **Kirk-side** aircraft — the tails that fix where the Kirk
+party and its associates were, not the tails alleged to have followed them. **Do not merge those
+two threads.** The 18-month following pattern, the 10 September day-of timeline, the
+[N1098L](/Planes/N1098L/overview) thread and the [N888KG](/Planes/N888KG/overview) Wendover
+departure are four separate claims about four separate aircraft sets.
+
+And the harder limit: **position data locates an aircraft. It does not locate a person.** Nothing
+above establishes who was aboard N560TW on any date, in 2016, in 2022 or on 10 September 2025.
+Manifests for private aircraft are not public.
+
+### The counterargument
+
+The plainest reading of this whole section is that N560TW is an ordinary corporate light jet based
+at Scottsdale that flies ordinary corporate routes, that Provo is one of many fields it has used
+over a decade, and that its appearance on 10 September 2025 has an unremarkable business
+explanation nobody has published because nobody is obliged to. Nothing in the data we pulled
+contradicts that reading; in the case of the 2016 Provo turn, the data actively supports it. The
+counterargument is not a formality here — it is the better-supported position.
+
+### Why pulling this data matters at all
+
+The claim this section answers is not about N560TW. It is the broader claim that this category of
+record has been erased. **We pulled four and a half years of ordinary flying for this aircraft, on
+demand, from free archives, in an afternoon.** What came back is unremarkable business aviation.
+That is a finding: a record that can be reconstructed this easily is not a record that has been
+scrubbed, and the honest way to report the recovery is to report what it actually shows.
+
 {/* CK_INTERESTING_HERE_START */}
 
 ## Interesting In This Area

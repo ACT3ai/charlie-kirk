@@ -1,0 +1,108 @@
+{
+ "generated_utc": "2026-08-24T17:36:21.953Z",
+ "radius_km": 15,
+ "method": "For each claimed overlap, both free ADS-B history archives were queried for the claimed foreign tail on the claimed date and the day either side. Positions were resolved to the nearest airport in the OurAirports public-domain gazetteer. A verdict of ELSEWHERE refutes a row; NO_ARCHIVE_COVERAGE and NOT_HEARD do not.",
+ "note": "Per-row extract of OWENS-025 from site/docs/Planes/following/apis/public_open_source/data/overlap_verification/overlap_verification.json",
+ "result": {
+  "overlap_id": "OWENS-025",
+  "date": "2024-04-19",
+  "claimed_airport": "KPVU",
+  "claimed_codes": [
+   "KPVU"
+  ],
+  "claimed_city": "Provo",
+  "claimed_state": "UT",
+  "claimed_tails": [
+   "SU-BND"
+  ],
+  "subject": "Erika",
+  "audit_verdict": "inaccurate",
+  "site_page": "site/docs/Planes/following/Provo_KPVU_2024-04-19_to_2025-09-13/overview.mdx",
+  "tails": {
+   "SU-BND": {
+    "2024-04-18": {
+     "adsb_lol_http": 200,
+     "airplanes_live_http": 200,
+     "archive_control_probe": null,
+     "both_agree": true,
+     "heard": true,
+     "at_claimed_airport": false,
+     "closest_approach_to_claimed_field": null,
+     "airports_touched": [
+      "HE16 22.41km first_fix",
+      "LFPV 6.11km last_fix"
+     ],
+     "first_where": "HE16 (Birma Air Base, Tanta EG) 22.41km",
+     "last_where": "LFPV/VIY (V\u00e9lizy-Villacoublay Air Base, V\u00e9lizy-Villacoublay, Yvelines FR) 6.11km",
+     "points": 467,
+     "verdict": "ELSEWHERE"
+    },
+    "2024-04-19": {
+     "adsb_lol_http": 200,
+     "airplanes_live_http": 200,
+     "archive_control_probe": null,
+     "both_agree": true,
+     "heard": true,
+     "at_claimed_airport": true,
+     "closest_approach_to_claimed_field": {
+      "code": "KPVU",
+      "km": 0.05,
+      "utc": "2024-04-19T21:33:34.670Z",
+      "on_ground": true
+     },
+     "airports_touched": [
+      "LFPB 6.67km below_4000ft",
+      "KSLC 1.6km on_ground",
+      "KPVU 0.05km on_ground"
+     ],
+     "first_where": "LFPB/LBG (Paris-Le Bourget International Airport, Paris FR) 6.67km",
+     "last_where": "KPVU/PVU (Provo Municipal Airport, Provo UT) 1.45km",
+     "points": 988,
+     "verdict": "AT_CLAIMED_AIRPORT"
+    },
+    "2024-04-20": {
+     "adsb_lol_http": 404,
+     "airplanes_live_http": 404,
+     "archive_control_probe": {
+      "adsb-lol": {
+       "verdict": "COVERED",
+       "codes": [
+        404,
+        404,
+        404,
+        404,
+        404,
+        404,
+        404,
+        200
+       ]
+      },
+      "airplanes-live": {
+       "verdict": "COVERED",
+       "codes": [
+        404,
+        404,
+        404,
+        404,
+        404,
+        404,
+        404,
+        200
+       ]
+      }
+     },
+     "both_agree": false,
+     "heard": false,
+     "at_claimed_airport": false,
+     "closest_approach_to_claimed_field": null,
+     "airports_touched": null,
+     "first_where": null,
+     "last_where": null,
+     "points": null,
+     "verdict": "NOT_HEARD"
+    }
+   }
+  },
+  "verdict": "AT_CLAIMED_AIRPORT"
+ }
+}

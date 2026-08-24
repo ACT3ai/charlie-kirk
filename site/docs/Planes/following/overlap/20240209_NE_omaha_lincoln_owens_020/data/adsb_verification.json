@@ -1,0 +1,120 @@
+{
+ "generated_utc": "2026-08-24T17:36:21.953Z",
+ "radius_km": 15,
+ "method": "For each claimed overlap, both free ADS-B history archives were queried for the claimed foreign tail on the claimed date and the day either side. Positions were resolved to the nearest airport in the OurAirports public-domain gazetteer. A verdict of ELSEWHERE refutes a row; NO_ARCHIVE_COVERAGE and NOT_HEARD do not.",
+ "note": "Per-row extract of OWENS-020 from site/docs/Planes/following/apis/public_open_source/data/overlap_verification/overlap_verification.json",
+ "result": {
+  "overlap_id": "OWENS-020",
+  "date": "2024-02-09",
+  "claimed_airport": "KOMA",
+  "claimed_codes": [
+   "KOMA"
+  ],
+  "claimed_city": "Omaha / Lincoln",
+  "claimed_state": "NE",
+  "claimed_tails": [
+   "SU-BTT"
+  ],
+  "subject": "TPUSA",
+  "audit_verdict": "partial",
+  "site_page": "site/docs/Planes/following/overlap/20240211_NE_lincoln/overview.mdx",
+  "tails": {
+   "SU-BTT": {
+    "2024-02-08": {
+     "adsb_lol_http": 200,
+     "airplanes_live_http": 200,
+     "archive_control_probe": null,
+     "both_agree": true,
+     "heard": true,
+     "at_claimed_airport": false,
+     "closest_approach_to_claimed_field": {
+      "code": "KOMA",
+      "km": 7239.25,
+      "utc": "2024-02-08T11:18:02.180Z",
+      "on_ground": false
+     },
+     "airports_touched": [
+      "LFPE 10.86km below_4000ft",
+      "LFPG 11.02km below_4000ft",
+      "LFPB 5.02km below_4000ft",
+      "HE28 23.47km first_fix"
+     ],
+     "first_where": "HE28 (Gebel El Basur Air Base, Markaz Ad Delingat EG) 23.47km",
+     "last_where": "LFPB/LBG (Paris-Le Bourget International Airport, Paris FR) 2.69km",
+     "points": 461,
+     "verdict": "ELSEWHERE"
+    },
+    "2024-02-09": {
+     "adsb_lol_http": 200,
+     "airplanes_live_http": 200,
+     "archive_control_probe": null,
+     "both_agree": true,
+     "heard": true,
+     "at_claimed_airport": true,
+     "closest_approach_to_claimed_field": {
+      "code": "KOMA",
+      "km": 0.31,
+      "utc": "2024-02-09T18:16:07.010Z",
+      "on_ground": false
+     },
+     "airports_touched": [
+      "LFPB 1.12km below_4000ft",
+      "LFFE 6.59km below_4000ft",
+      "KCBF 8.75km below_4000ft",
+      "KOMA 6.83km below_4000ft",
+      "NE59 7.05km below_4000ft",
+      "NE80 9.22km below_4000ft",
+      "NE40 10.81km below_4000ft",
+      "KLNK 9.85km below_4000ft"
+     ],
+     "first_where": "LFPB/LBG (Paris-Le Bourget International Airport, Paris FR) 1.12km",
+     "last_where": "KLNK/LNK (Lincoln Airport, Lincoln NE) 4.23km",
+     "points": 983,
+     "verdict": "AT_CLAIMED_AIRPORT"
+    },
+    "2024-02-10": {
+     "adsb_lol_http": 404,
+     "airplanes_live_http": 404,
+     "archive_control_probe": {
+      "adsb-lol": {
+       "verdict": "COVERED",
+       "codes": [
+        404,
+        404,
+        404,
+        404,
+        404,
+        404,
+        404,
+        200
+       ]
+      },
+      "airplanes-live": {
+       "verdict": "COVERED",
+       "codes": [
+        404,
+        404,
+        404,
+        404,
+        404,
+        404,
+        404,
+        200
+       ]
+      }
+     },
+     "both_agree": false,
+     "heard": false,
+     "at_claimed_airport": false,
+     "closest_approach_to_claimed_field": null,
+     "airports_touched": null,
+     "first_where": null,
+     "last_where": null,
+     "points": null,
+     "verdict": "NOT_HEARD"
+    }
+   }
+  },
+  "verdict": "AT_CLAIMED_AIRPORT"
+ }
+}

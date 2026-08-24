@@ -204,6 +204,30 @@ Compiler note: Recorded because the query returned a dated Omaha claim not on th
 
 More of the same discussion, grouped by research topic rather than by date, is on [X discussions of the following planes](/Planes/following/x_discussions) and [Candace Owens broadcasts](/Planes/following/Candace_Owens_Broadcasts).
 
+## We checked this row against primary ADS-B data
+
+**Cannot be checked from free data — and the reason is the row, not the archive.** The tail cell for this row reads literally `UNKNOWN`. There is no registration, therefore no ICAO hex code, therefore nothing to look up. Every free ADS-B archive is keyed on the hex code an aircraft transmits; a claim that names "the Egyptian jet" and no airframe cannot be entered into one.
+
+| Date | Claimed tail | adsb.lol | airplanes.live | Heard | Closest approach to KOMA |
+|---|---|---|---|---|---|
+| 2025-07-10 | `UNKNOWN` | not queried — no hex | not queried — no hex | — | not measurable |
+| 2025-07-11 | `UNKNOWN` | not queried — no hex | not queried — no hex | — | not measurable |
+| 2025-07-12 | `UNKNOWN` | not queried — no hex | not queried — no hex | — | not measurable |
+
+**Method.** Both free ADS-B history archives — adsb.lol globe history and the airplanes.live mirror — were queried for the claimed tail on the claimed date and on the day either side, and every position fix was resolved to the nearest field in the OurAirports public-domain gazetteer. **Nearest-airport resolution is geometry, not a landing record**, which is why the distance in kilometres is published beside every result rather than a bare airport name.
+
+**This is worth separating from a coverage gap.** The archives do cover July 2025 well — the same run confirmed SU-BTT to within a kilometre at Omaha on **17 August 2025**, five weeks later. The data for this window exists. **The claim is what is missing.**
+
+**This agrees with the row's existing status.** `overlaps.csv` records it as not assessed, and the note against it already says there is no tail number in the post. Our pass confirms the shape of the problem rather than the claim: **an unverified amplifier claim with no airframe is not an ADS-B fact, and a Hebrew-language search attributed to an unnamed aircraft is not one either.**
+
+**The counterargument, and it cuts both ways.** The absence of a tail number does not mean no jet was at Omaha that day, and it does not mean one was. It means **nobody has published enough to check**. If a tail number is published, this row becomes testable in about a minute, and this page will record the answer whichever way it goes.
+
+**And Erika's side is the weak side.** Her flight logs are reported erased, so any Erika pairing rests on the foreign aircraft's track plus a *claimed* location for her. See [Erika flight logs erased](/Planes/Erika-Flight-Logs-Erased).
+
+This row is one of **85 checked in a single run on 24 August 2026** — 24 confirmed at the claimed field, 12 refuted, 22 not heard, 20 with no archive coverage, 2 naming no aircraft, and 5 naming no date. The whole result is on [Overlap dates](/Planes/following/overlap/overview).
+
+**Files.** This row's extract: `site/docs/Planes/following/overlap/20250711_NE_omaha_extra_004/data/adsb_verification.json`. The full 85-row run, including the archive control probes: `site/docs/Planes/following/apis/public_open_source/data/overlap_verification/overlap_verification.json`, generated 2026-08-24T17:36:21.953Z. How the archives were recovered and what a 403 does and does not mean is on [Flight data recovery](/Planes/Flight-Data-Recovery/overview).
+
 ## Links
 
 * [Overlap dates index](/Planes/following/overlap/overview) · [The 73 overlaps — the full reconstruction](/Planes/following/73_overlaps) · [Following overview](/Planes/following/overview)

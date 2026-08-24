@@ -33,11 +33,104 @@ The free sources answered a great deal — see [the open-source
 pass](/Planes/following/apis/public_open_source/knowledge) — but they stop dead in two places that
 matter, and commercial vendors are the only way through both.
 
+## Read this before you read anything else on this page
+
+**Flightradar24 returns HTTP 403 to scripted requests across its entire site, including its own home
+page. A 403 from Flightradar24 says nothing whatsoever about any particular aircraft's record — and
+this site has been reading it as though it did.**
+
+That is our error and it is stated first because everything else on this page depends on it.
+
+### The control test, run 24 August 2026
+
+| Probed | HTTP |
+|---|---|
+| `flightradar24.com/data/aircraft/n102dz` | **403** |
+| The other 12 case tails — SU-BTT, SU-BND, SU-BTU, SU-BTV, SU-BGM, N888KG, N40JD, N560TW, N582MM, N872RA, N1098L, T7-ELL | **403 — every one** |
+| **7 unrelated control aircraft** with no connection to this case — N628TS, G-EUUU, VH-OQA, N509AY, D-AIBA, N1, EI-DYY | **403 — every one** |
+| `https://www.flightradar24.com/` — the **home page** | **403** |
+| `https://www.flightradar24.com/data/aircraft` — the index | **403** |
+
+**Every single response is the same body, roughly 5,877 bytes.** A block that treats an airliner in
+everyday service, a retired museum aircraft and the front door of the site itself identically is
+**bot protection**. It is not a decision about an aeroplane, and it **cannot distinguish a removed
+record from a present one.**
+
+### What that corrects on this site
+
+`Planes/Flight-Data-Recovery/overview` recorded N102DZ's Flightradar24 page as **"A REAL REMOVAL,
+DOCUMENTED"**, reasoning that the Internet Archive holds a populated copy while the live URL returns
+403 to the public today. **The second half of that reasoning does not survive the control test.**
+
+And then the browser pass went and looked. **In a real logged-out browser session the page loads
+normally — HTTP 200, full identity block, title "N102DZ - Gulfstream V [555] - Flightradar24", MODE S
+`A00C85`, type code `GLF5`. Nothing on it says removed, blocked, restricted or unavailable.** Twenty
+aircraft pages were probed that way — 16 subject tails and 4 unrelated controls — and **every single
+one returned 200.** A second, independent session re-ran six of them and agreed.
+
+**The claim "N102DZ was removed from Flightradar24" is REFUTED.** Not untested — refuted. We reported
+it more strongly than the evidence supported, and a control test plus a browser session is what
+corrected it. The captures are at
+`apis/browser_capture/captures/fr24_page_availability_2026-08-24.tsv` and
+`fr24_n102dz_removal_test_2026-08-24b.tsv`.
+
+**The limit travels with the refutation everywhere it is published.** A page that loads today cannot
+testify about what its table held in May 2026. **"The page was taken down" is refuted. A narrower
+claim — that history was specifically purged and later restored — is beyond this method in either
+direction, and no page on this site may assert it.** A logged-out free tier is also the weakest view
+Flightradar24 offers.
+
+### And the corollary that has to be understood with it
+
+**Flightradar24's free tier shows seven days of aircraft history.** That single fact dissolved what
+looked like the strongest removal in this whole investigation.
+
+The Internet Archive holds 14 Flightradar24 captures of the **N888KG** page. The flights-history table
+is **populated** on 11 September 2025 (three captures), 12 September and 13 September — and **empty**
+on every capture from 18 September 2025 through 28 January 2026. Same URL, same site, **all HTTP
+200**. The byte count drops from 63,886 to 56,647.
+
+That is exactly the shape of a record being pulled. It is not one. The empty captures carry
+Flightradar24's own text:
+
+> "Sorry, but we could not find data for specified flight. More than 7 days of N888KG history is
+> available with an upgrade to a Silver (90 days), Gold (1 year), or Business (3 years)
+> subscription."
+
+**The 10 September 2025 flight was visible on 11–13 September because it was inside seven days, and
+had rolled out of the window by 18 September.** Every Flightradar24 capture we hold is consistent with
+that window and with nothing else.
+
+**The browser session then supplied the control that proves it.** N102DZ prints the "could not find
+data for specified flight" message at **53,310 bytes**; the **unrelated control N628TS prints the
+identical message at 53,318 bytes.** N888KG prints it too, at 53,338. Meanwhile SU-BTT, SU-BND and a
+Ryanair control all render full history in the same session, because they had flown recently. **The
+empty table tracks whether the aircraft flew in the last seven days, and nothing else.** Every row in
+that capture, subject and control alike, carries the upgrade paywall notice.
+
+**Both facts have to be held at once before any Flightradar24 observation is worth anything:** a 403
+is a robot block, and an empty free-tier table is a retention window. Neither is evidence about an
+aircraft. **This page publishes its own dissolved claim because a site that only reports the findings
+that survive is not reporting.**
+
+### FlightAware, by contrast, answers
+
+The same scripted requests to FlightAware return **HTTP 200.** It is not blocking us, and it remains a
+usable route.
+
+Its modern aircraft pages are a client-side application, so an archived copy of one holds **no
+server-rendered flight rows** — the Archive saved the frame, not the data. Its **pre-2017** pages are
+server-rendered tables, and **109 flight legs** were recovered out of them. Details are in
+[the open-source pass](/Planes/following/apis/public_open_source/knowledge).
+
 ## What the free pass cannot reach
 
 1. **2022.** The free historical archive we found does not go back that far. The earliest trace we
    obtained anywhere is 24 February 2023. The trackers date the whole pattern from **2022**. Those
    rows are currently untestable at zero cost.
+   **— NARROWED.** ADS-B Exchange's free monthly sample archive reaches 2016 and has produced 34
+   aircraft-days before 2023. But it is **one day per month**, so a claim about a specific mid-month
+   2022 date is still untestable for free. The commercial case below stands; it is just smaller.
 2. **The rows with no trace.** 52 exactly-claimed dates returned nothing from the volunteer network.
    A commercial network with denser receiver coverage and satellite ADS-B may hold some of them —
    and a vendor with deep coverage *also* finding nothing is a considerably stronger negative than a
@@ -55,6 +148,10 @@ queryable by registration and date range. It is the machine-readable form of the
 table people photographed. There are also historic flight-positions and full flight-track endpoints.
 
 Bearer token, credit-metered, subscription.
+
+**And it is the only way to see Flightradar24 at all from a script.** The public web pages return 403
+to everything automated, as shown above. Without the API or a real browser, this vendor is opaque to
+us — which is precisely why a 403 from it has to be reported as opacity rather than as a finding.
 
 ### FlightAware AeroAPI v4
 
@@ -121,11 +218,27 @@ determines what may be done with it.**
 
 ## What we got so far
 
-**Nothing. No commercial query has been run.** No subscription is held for any vendor on this page.
+**No commercial API query has been run, and no subscription is held for any vendor on this page.**
 
 That is stated plainly rather than left implied, because the honest position is that the deepest
 available flight history has not been consulted, and every conclusion on this site should be read
 knowing it.
+
+What we *do* have is a set of **observations about the vendors themselves**, taken on **24 August
+2026**, and they turned out to matter more than a purchased answer would have:
+
+| Observation | Result | What it means |
+|---|---|---|
+| Flightradar24 probed, 13 case tails + 7 unrelated controls + the home page | **403 on all of them**, identical ~5,877-byte body | **Site-wide bot protection.** No aircraft-level reading is possible. |
+| The same Flightradar24 pages opened in a **real logged-out browser** — 16 subject tails, 4 unrelated controls | **HTTP 200 on all 20**, full identity blocks | **No aircraft page in this investigation has been removed from Flightradar24.** |
+| Flightradar24 free-tier history depth, read from its own error text and confirmed against controls in the browser | **7 days** | Explains the N888KG and N102DZ "vanishing tables" completely. |
+| FlightAware probed with the same scripted requests | **HTTP 200** | Not blocking. A usable route. |
+| FlightAware modern aircraft pages, as archived | Client-side application, **no server-rendered rows** | An archived modern page holds no flight data to recover. |
+| FlightAware **pre-2017** pages, as archived | Server-rendered tables — **109 legs recovered** | The old pages are the ones worth going to the Archive for. |
+| ADS-B Exchange history pages | **403 to the public** | Behind a subscription since the site commercialised. |
+
+**The counterargument to every row of that table:** each of these is a statement about how a website
+responds to a script on one day. None of them is a statement about whether an aircraft flew.
 
 ## What we did NOT get
 
@@ -140,6 +253,21 @@ knowing it.
   "no result" cannot be read as an absence.
 * **The terms themselves, read and quoted with a date.** Summarised here from public documentation,
   not from a signed agreement.
+* **No credential is held for any vendor on this page.** `AEROAPI_KEY` — **not held.**
+  `FR24_API_TOKEN` — **not held.** `ADSBX_RAPIDAPI_KEY` — **not held.** Those are names, not values:
+  a missing credential is reported **by name only**, and **no script on this site ever prints a
+  credential value.** The clients exit with the name of what they are missing, and that exit message
+  is what becomes a blocked-on-credential entry here.
+* **Whether Flightradar24's paid tiers show history its free tier hides.** Untested. **Every
+  Flightradar24 observation in this investigation was made through a logged-out free tier, which is
+  the weakest view the vendor offers** — 7 days, against 90 days on Silver, a year on Gold and three
+  years on Business. A paid session is the obvious next step and nobody has taken it, us included.
+* **What any Flightradar24 page displayed on a past date.** The live page loads today; that says
+  nothing about what its table held in May 2026. **A narrower purge-and-restore claim is beyond every
+  method we have, in either direction, and no page on this site may assert it.**
+* **Anything about an individual aircraft from Flightradar24 *by script*.** The 403 is site-wide, so
+  the scripted route cannot see even whether a record exists, let alone whether one changed. **A 403
+  here must never be quoted as a removal** — the browser pass is what actually sees these pages.
 
 ## The rule that governs this pass
 
@@ -159,4 +287,5 @@ throw out everything else.
 * [Public open-source flight data](/Planes/following/apis/public_open_source/knowledge)
 * [Government flight records](/Planes/following/apis/government/knowledge)
 * [Capturing the tracking websites](/Planes/following/apis/browser_capture/knowledge)
+* [Flight Data Recovery](/Planes/Flight-Data-Recovery/overview) — where the N102DZ verdict is recorded
 * [The following-planes overview](/Planes/following/overview)

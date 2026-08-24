@@ -244,6 +244,111 @@ Raw payloads are kept in `site/docs/Planes/SU-BTU/data/recovered/`, with the sou
 
 More: [Flight Data Recovery](/Planes/Flight-Data-Recovery/overview) · [Per-Aircraft Status](/Planes/Flight-Data-Recovery/Per-Aircraft-Status)
 
+## The primary flight data we hold on this aircraft, and where it came from
+
+Everything above this line is a reading of a tracking website — a screenshot, an export, a thread someone typed out. This section is the opposite. It is position data this investigation pulled itself, from named free archives, with the raw response written to disk and the source recorded in the filename. It is also the section that says how little of that data exists for this tail.
+
+### What we hold for SU-BTU
+
+| Measure | SU-BTU |
+|---|---|
+| Days of primary trace held | **12** |
+| Span | 2022-12-01 to 2026-05-12 |
+| ADS-B Exchange monthly sample | 9 days |
+| globe.airplanes.live (the backup network) | 3 days |
+| adsb.lol `globe_history` | **0 days** |
+| Days corroborated by **both** free archives | **0** |
+| Days held only by the backup network | 3 |
+| Days held only by the monthly sample | **9** |
+| Days before 2023 | 1 — 2022-12-01 |
+| Archived tracking-site pages held | 1 — FlightRadar24, 31 Aug 2022 |
+| Flight rows recovered off that page | 4 |
+
+Source of record: `site/docs/Planes/following/apis/public_open_source/data/provenance/tail_provenance.json`, and the raw files in `site/docs/Planes/SU-BTU/data/recovered/`.
+
+### This is one of the three aircraft the investigation can say least about
+
+Set the same measure against the two lead jets and the gap is not small:
+
+| Tail | Days of primary trace | Days both archives agree on |
+|---|---|---|
+| [SU-BTT](/Planes/SU-BTT/overview) | **42** | **29** |
+| [SU-BND](/Planes/SU-BND/overview) | **33** | **19** |
+| **SU-BTU** | **12** | **0** |
+| [SU-BTV](/Planes/SU-BTV/overview) | 9 | 1 |
+| [SU-BGM](/Planes/SU-BGM/overview) | 6 | 2 |
+
+SU-BTU, SU-BTV and SU-BGM are **thinly covered**, and SU-BTU is the starkest case: **not one of its twelve aircraft-days is held by two independent archives**, and **nine of the twelve come from a single source that samples one day per calendar month**. There is no day for this tail where two networks corroborate each other.
+
+That has a direct consequence for how the fleet is written about. **Any page — on this site or anywhere else — that presents all five Egyptian tails as equally documented is overstating three of them.** The evidence base under SU-BTT is roughly three and a half times deeper than the one under SU-BTU, and the difference is not a detail. It is the difference between a claim that can be checked and one that cannot.
+
+### The 2022 trace, and a correction to this site
+
+`samples.adsbexchange.com/traces/` publishes a free full-day global sample for **the first of every month, back to 2016** — no account, no key. It reaches this tail once.
+
+**2022-12-01.** The trace opens at **Paris–Le Bourget (LFPB), 0.73 km from the field**, and closes **on final approach to Spirit of St Louis Airport (KSUS), Missouri — 150 feet, 18:40:48 UTC, 1.35 km out.** 1,245 position points. The file self-identifies as `"r": "SU-BTU"`, `"t": "FA7X"`. It is `site/docs/Planes/SU-BTU/data/recovered/SU-BTU_2022-12-01_adsbexchange-samples_trace_full.json`.
+
+**Missouri is one of the five states in the clustering claim** — Missouri, Delaware, Utah, Nebraska, Kansas — which this site carries marked *unverified*. This is **the first primary position data supporting that part of the claim for this tail**, as opposed to a reading of a tracker page.
+
+**It also corrects a standing statement on this site.** We have published that "the archive does not reach 2022; every 2022 claim rests on a screenshot." **That is no longer true.** Primary 2022 position data now exists for this aircraft, and we found it with a free public dataset that was available the whole time.
+
+**The sampling caveat has to travel with this fact every time it is cited.** The sample is **one day per month, the 1st**. For SU-BTU that is a single day in the whole of 2022. It establishes that the aircraft flew Paris to St Louis on 1 December 2022. **It cannot support a rate, a frequency or a pattern**, and nobody should build one on it.
+
+And it locates the airframe only. **No source in this repo places Charlie Kirk or Erika Kirk in Missouri on or near that date.**
+
+### The archived page that was recorded as empty, and was not
+
+The Internet Archive holds one capture of this tail's FlightRadar24 page, taken **31 August 2022**. Our own earlier harness wrote `flight_rows_recovered: 0` into its sidecar. **That zero was wrong.** The parser was matching a table row shape those pages do not use, and nobody had checked. Re-extracted with `code/extract_wayback_flights.py`, the same file on the same disk yields **4 legs**:
+
+| Departure (UTC) | From | To | Time |
+|---|---|---|---|
+| 2022-08-26 06:00:35 | Cairo (CAI) | not available in the capture | — |
+| 2022-08-26 09:44:12 | not available in the capture | Cairo (CAI) | — |
+| 2022-08-28 10:55:28 | Cairo (CAI) | not available in the capture | 0:28 |
+| 2022-08-28 12:30:56 | **El Alamein / Dabaa (DBB)** | Cairo (CAI) | 0:37 |
+
+Files: `SU-BTU_20220831143944_wayback_flightradar24.html` and `..._flights.json`, both under `site/docs/Planes/SU-BTU/data/recovered/`.
+
+**State the correction without softening it: a zero in a provenance record reads as an absence of evidence, and here it was an absence of parsing.** Four Egyptian domestic legs had been sitting on this machine, described as nothing. The same fault ran across the whole recovery set — 42 archived pages, **153 flight legs**, all of them previously logged as 0 or null.
+
+The legs themselves are unremarkable — short Cairo-area hops, three years before the case, no US content at all. Their value is as a demonstration that our own numbers get audited.
+
+### What the Internet Archive actually holds for this tail
+
+Three snapshots exist of the ADS-B Exchange globe page for hex `0101D0`, spanning **December 2022 to May 2023**. They contain **no aircraft data**.
+
+The Archive's own content digest for all three, `AJQHJML54QE6X2IE4TMCM24E3DPGKFD6`, is **byte-identical across SU-BGM, SU-BTV and SU-BTU**. Three different hex codes cannot produce three identical files if the files contain per-aircraft data. What the Archive captured is the **empty JavaScript application frame** that loads before the map fetches anything. **These snapshots must never be cited as though they held evidence about this aircraft.**
+
+Two related points, both from the re-run of the Archive query on 24 August 2026:
+
+* **Every CDX row across every URL in this dataset returns `statuscode=200`.** There is no 200-to-404 transition anywhere in it. Any page claiming one for these aircraft is wrong.
+* Where the Archive has nothing, it is because **nobody ever asked it to crawl the page**. Absence of archival interest is not suppression, and we do not report it as such.
+
+The live FlightRadar24 URL for this tail returns HTTP 403 to a script today. That is not a removal either: FlightRadar24 returns the identical 403 to unrelated control aircraft and **to its own home page** — see [What A 403 Means](/Planes/Flight-Data-Recovery/What-A-403-Means).
+
+### The overlap register does not name this aircraft at all
+
+We tested all **85 rows** of `site/docs/Planes/following/overlaps.csv` against both free archives, on the claimed date and the day either side, measuring the aircraft's closest approach in kilometres to the claimed field. Across the whole register: **24 rows put the claimed aircraft at the claimed field, 12 put it somewhere else entirely**, 22 were not heard, 20 fall outside any free archive's coverage, and 7 name no tail or no date.
+
+**None of those 85 rows names SU-BTU.** Nor SU-BTV, nor SU-BGM. The register is 57 rows naming [SU-BTT](/Planes/SU-BTT/overview), 16 naming [SU-BND](/Planes/SU-BND/overview), 3 naming both, 5 naming "SU-BTT or SU-BND", and 4 naming no aircraft at all.
+
+That is worth saying out loud on a page this long: **this site gives SU-BTU considerable space, and the overlap claim itself does not rest on this aircraft in any way.** There is nothing here to verify, and correspondingly nothing here that has been verified. The disputed tallies — 73 and about 23, or 72, or "70-plus", or 68 and 29 — were never counted against this tail. Those figures conflict with one another and this site does not reconcile them; it reports the conflict.
+
+### The counterargument, which on this page is the stronger reading
+
+The innocent explanation is not a formality here. It is what the data actually looks like.
+
+**Duncan Aviation has held the Egyptian Air Force maintenance account since 1999**, with plants at **Lincoln, Nebraska** and **Provo, Utah**. The rotation table earlier on this page puts SU-BTU at Lincoln in three of five rotations and at Provo once, with Wichita — home of Yingling Aviation's FAA Part 145 Falcon shop — carrying the same role for [SU-BTV](/Planes/SU-BTV/overview). The [SU-BTV page](/Planes/SU-BTV/overview) states that it is the page where the maintenance reading is hardest to argue against. **Nothing in the primary data weakens that; the twelve days we hold do nothing to contradict it, and the fourteen clean calendar misses recorded on that page reinforce it.** A movement pattern that correlates with a maintenance contract and not with an itinerary is a maintenance pattern until something else is produced.
+
+The counterargument to an empty archive is equally plain: **an empty archive means the archive had nothing.** It does not mean the aircraft was hidden, and it does not mean a transponder was off. These are volunteer receiver networks, not registries — they hold whatever a feeder happened to hear.
+
+### What all of this locates, and what it does not
+
+**Every fact in this section locates an aircraft. Not one of them locates a Kirk.**
+
+A confirmed airframe is one half of an overlap. The other half — where Charlie or Erika Kirk actually was — is unchanged by anything here: sourced but incomplete for Charlie, and close to empty for Erika. Of the 139 dated rows in `tpusa_events.csv`, exactly **one** places Erika Kirk at a TPUSA event before 10 September 2025, and **her flight logs are reported erased** — see [Erika's Flight Logs Erased](/Planes/Erika-Flight-Logs-Erased). Any overlap tally counted against her claimed locations cannot be reproduced from public data, for this tail or any other.
+
+
 {/* CK_INTERESTING_HERE_START */}
 
 ## Interesting In This Area

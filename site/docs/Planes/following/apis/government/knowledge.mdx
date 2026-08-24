@@ -138,10 +138,78 @@ can tell nobody has asked for them.**
   with the hex codes the community databases give. **The hex codes agree; the owner names do not.**
 * Airport reference facts for the fields named in this case are held in
   `Planes/following/airports.csv` and are cross-checked against the public-domain dataset.
+* **The FAA pull still stands, re-checked 24 August 2026.** Nothing in the later flight-data review
+  changed it: ten of ten tracked N-tails present, registrant and Mode S hex unchanged, the extract
+  still committed at `apis/government/data/faa_registry/tracked_tails_faa_master.json`. It is the one
+  result on this site that has needed no correction, which is what a **record** looks like next to a
+  reading.
+* **The public-domain OurAirports dataset is now held in the repo** at
+  `apis/public_open_source/data/ourairports/airports.csv` (CC0), and is what resolves a trace position
+  to a named field. **That resolution is geometry, not a landing record** — it measures distance to a
+  set of published coordinates and knows nothing about ramps, tenancy or who got out, which is why
+  every distance on this site is published in kilometres.
+
+**Still not pulled, and both are free downloads:**
+
+* **The federal NFDC airport and facility subscription files.** Runway surfaces and dimensions,
+  lighting, ownership class, based-aircraft counts, FBO and fuel availability, customs status. These
+  are the numbers behind "an odd field for a foreign state jet", and we are currently leaning on the
+  community dataset for facts a government file publishes.
+* **Federal operations counts by airport.** These would show **itinerant foreign operations by
+  field**, which is the closest thing to a population baseline this investigation could have. Without
+  it, "unusual" is an adjective. With it, "unusual" is a number with a denominator. **This is the
+  cheapest unfired shot in this pass** — it is a free download, not a request.
 
 ## What we did NOT get
 
 This is the work list, and it is the most useful section on this page.
+
+### The thing this pass exists for, and it has still not been asked for
+
+**An ADS-B record can locate an aircraft. It can never locate a passenger. Not once, not ever, not
+under any conditions.**
+
+That is not a limitation of our tooling. It is what the technology is. A transponder broadcasts an
+airframe's identity and position. It broadcasts nothing about who is aboard, who chartered it, who
+authorised it or why it went.
+
+Take the strongest primary-data result this investigation has produced. Every row of the 85-row
+overlap register was tested against primary position data from two independent archives. **36 rows
+could be decided. 24 of them are corroborated** — the claimed aircraft really was at the claimed
+field, some to within tens of metres and to the second, with both archives agreeing.
+
+**Every one of those 24 confirmations is about an airframe.** Not one of them puts Charlie Kirk or
+Erika Kirk anywhere. The Kirk half of every pairing is unchanged: thin for Charlie, and close to
+empty for Erika, whose flight logs are reported erased — see
+[Erika Kirk's flight logs reported erased](/Planes/Erika-Flight-Logs-Erased). **A confirmed aircraft
+is not a confirmed overlap**, and no amount of additional ADS-B will ever close that gap, because
+ADS-B is the wrong instrument for the question.
+
+**What would close it is a facility record.** Specifically:
+
+| Record | Custodian | Route | Status |
+|---|---|---|---|
+| **The Provo airport badge access list** — reported updated 11 September 2025 | The airport | **State public-records law** | **No request filed** |
+| **The Duncan Aviation FBO rental-car log** | The FBO / the airport | **State public-records law** | **No request filed** |
+| **FBO ramp assignment and hangar records** — who parked where | The airport | **State public-records law** | **No request filed** |
+| **Fuel tickets and landing-fee invoices** — who paid, for what airframe | The airport | **State public-records law** | **No request filed** |
+| **Customs manifests** for the international arrivals | Federal border agency | Federal FOIA | **No request filed** |
+
+**Every one of those says No request filed. That is the loudest fact on this page and it should stay
+loud until it changes.**
+
+Most of the fields in this case are **city-owned or run by a public airport authority**, which puts
+them under **state** public-records law rather than federal FOIA — generally faster, cheaper and much
+harder to stonewall. **It remains the most under-used route in the entire investigation**, and it is
+the only route that produces the kind of record that could put a named human being on a named ramp on
+a named date.
+
+**The counterargument, and it is a real one.** A badge log, a fuel ticket and a rental-car record may
+come back showing exactly what an ordinary maintenance visit looks like — Duncan Aviation has plants
+at Provo and at Lincoln, and an Egyptian-registered aircraft in a Duncan hangar is a mundane
+explanation that fits the observed positions perfectly. **That is a reason to file the request, not a
+reason not to.** A request that comes back innocent is still a record, and this site would publish it
+the same way it publishes everything else.
 
 * **No Egyptian registry.** No public download exists for SU- registrations. Owner, operator and
   airworthiness for the five tails at the centre of the claim are **unverified from any primary
@@ -173,4 +241,5 @@ with the dates — as does any refusal, quoted with the exemption it cites.
 * [Commercial flight-data APIs](/Planes/following/apis/proprietary/knowledge)
 * [Capturing the tracking websites](/Planes/following/apis/browser_capture/knowledge)
 * [The following-planes overview](/Planes/following/overview)
+* [The overlap register](/Planes/following/overlap/overview) — the 85 claimed pairings, row by row
 * [Erika Kirk's flight logs reported erased](/Planes/Erika-Flight-Logs-Erased)

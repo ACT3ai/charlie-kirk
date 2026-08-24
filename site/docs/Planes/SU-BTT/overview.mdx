@@ -410,6 +410,12 @@ Times below are as displayed in the export. Flight durations are the tracker's o
 
 The **September 10 Provo→Wilmington leg** is logged with **STD 10:51 AM, ATD 7:14 AM, STA 11:51 AM** — the 7:14 a.m. actual departure being the figure that matches the "7:08 AM" account listed among the three competing departure timelines earlier on this page, and matching the "departed Provo, UT at 7:14am local time" line in the Owens-team timeline. It is roughly **five hours before** the shooting.
 
+> **Checked against our own primary ADS-B traces, August 2026 — the export holds up, with two notes.** Every leg in the table above for which this repository holds a raw track is corroborated by that track, in three cases to the minute. The notes are recorded here rather than by editing the table, because the table is a reproduction of somebody else's document and it stays as published.
+>
+> * **10 Sep, ATD 7:14 AM — confirmed exactly.** Wheels up at **13:14:03.82 UTC = 07:14:03 MDT**, from two archives agreeing to within ten milliseconds. See [the primary-data section below](#the-primary-flight-data-we-hold-on-this-aircraft-and-where-it-came-from).
+> * **4 Sep, LBG→MOT 8:52 and MOT→PVU 1:39 — confirmed, and the Minot field is identified.** The track leaves Paris-Le Bourget at **07:11 UTC**, is on the ground and off the air from **16:03 to 17:07 UTC**, and reappears climbing out **0.04 km from Minot International Airport (KMOT)** at 17:07:34 UTC before landing at Provo at 18:45 UTC. Elapsed Le Bourget to Minot: **8 hours 52 minutes.** Minot to Provo: **1 hour 38 minutes.** That matches the export's own durations almost exactly. It also bears directly on **open question 9** further up this page, which asks whether this aircraft routed through *Minot Air Force Base*: the closest this track ever comes to the Air Force base is **16.47 km**, while it comes within **0.04 km of the civil airport**. On this evidence the stop was **the public field, not the nuclear-mission base** — the export's own "MOT" was right, and the military framing later attached to it was not. The stop is visible only in the `airplanes-live` copy of the day (1,971 points); the `adsb-lol` copy (1,156 points) has a coverage gap straight through it and on its own would have supported the wrong answer.
+> * **11 Sep, ILG→"Cairo (CAI)" — the Egyptian end may be Almaza, not Cairo International.** The 11 September track's last fix, at 21:35:42 UTC and 1,125 ft, is **4.42 km from Almaza Air Force Base (HEAZ)** and about 8.9 km from Cairo International. The trace ends before touchdown, so this is descent geometry rather than a landing record, and it is not conclusive on its own. It is noted because the same aircraft's 2022-06-01 transatlantic leg ends **1.38 km from Almaza**, and its 2024-04-22 day *begins* 1.89 km from Almaza. A state aircraft using a state airfield is unremarkable in itself; the point is only that "CAI" in this export should not be read as a confirmed Cairo International arrival.
+
 ### What the shape of that record actually shows
 
 Read as a whole rather than as a highlight reel, the log has a very regular structure, and it is not the structure of a surveillance mission:
@@ -661,6 +667,160 @@ The browser probe also returned the page's identity block: *Dassault Falcon 7X E
 Raw payloads are kept in `site/docs/Planes/SU-BTT/data/recovered/`, with the source named in every filename and a `.meta.json` sidecar per file recording source, URL, HTTP status, bytes and date.
 
 More: [Flight Data Recovery](/Planes/Flight-Data-Recovery/overview) · [Per-Aircraft Status](/Planes/Flight-Data-Recovery/Per-Aircraft-Status)
+
+## The primary flight data we hold on this aircraft, and where it came from
+
+Everything above this line on this page is, in the end, somebody's reading of a flight-tracking website — a screenshot, a spreadsheet built from screenshots, or a tally built from that spreadsheet. This section is different. It is the position data this repository holds for SU-BTT itself, pulled from free public ADS-B archives on **24 August 2026**, saved to disk, and readable by anyone who clones the repo. Where it agrees with the claims above, it is said so. Where it corrects them — including where it corrects this site — it is said so with equal plainness.
+
+### Provenance: what we hold, and which archive it came from
+
+| Measure | SU-BTT |
+|---|---|
+| Days of primary trace held | **42** |
+| Span | **2022-05-01 to 2026-05-24** |
+| From adsb.lol `globe_history` | 29 days |
+| From globe.airplanes.live | 37 days |
+| From the ADS-B Exchange monthly sample | 6 days |
+| **Corroborated by BOTH free archives** | **29 days** |
+| Held **only** by the backup network (airplanes.live) | 8 days |
+| Held **only** by the ADS-B Exchange monthly sample | 5 days |
+| **Days before 2023** | **3** — 2022-05-01, 2022-06-01, 2022-09-01 |
+
+Twenty-nine of the forty-two days are held by two independently operated volunteer networks that agree with each other. Eight days exist only because the backup network was queried at all — adsb.lol does not have them. That is not a finding about suppression; different networks have different feeders, different antennas and different geography, and a day one has and the other lacks is ordinary. It is a finding about method: a single-source pull would have missed a fifth of what we hold.
+
+Source of the counts: `site/docs/Planes/following/apis/public_open_source/data/provenance/tail_provenance.json`. Raw payloads and their `.meta.json` sidecars are in `site/docs/Planes/SU-BTT/data/recovered/`.
+
+### What the data actually shows
+
+Across those 42 days, the fields SU-BTT's track comes closest to, most often, are:
+
+| Field | Days touched |
+|---|---|
+| **LFPB — Paris-Le Bourget, France** | 11 |
+| **KILG — Wilmington, Delaware** | 9 |
+| HE15 — Helwan Air Base, Egypt | 6 |
+| HE42 — Quesna Airport, Egypt | 5 |
+| **HEAZ — Almaza Air Force Base, Cairo** | 4 |
+| **KPVU — Provo Municipal, Utah** | 4 |
+| EG-AUE, Egypt | 4 |
+| LFPG — Paris Charles de Gaulle | 3 |
+| **KSUS — Spirit of St Louis, Missouri** | 3 |
+| HE45, HECA (Cairo International) | 3 each |
+| HE28, **KICT (Wichita)**, **KLNK (Lincoln)** | 2 each |
+
+Read against the leg-by-leg export earlier on this page, that distribution is the same shape: Le Bourget as the transatlantic staging field, Wilmington as the outbound customs stop, and the US destinations thin.
+
+**One caveat travels with every line of it. Nearest-airport resolution is geometry, not a landing record.** These labels are produced by measuring the aircraft's position against a database of airfields and naming the closest one. An aircraft at 30,000 feet over Kansas gets a nearest-airport label too. That is why **every distance in this section is published in kilometres** — a 0.05 km label and a 7 km label are not the same claim, and only one of them is close to being a landing.
+
+### The 2022 traces — and a correction to this site
+
+**This site has published, in more than one place, that "the archive does not reach 2022; every 2022 claim rests on a screenshot." That is no longer true, and we are correcting it here.**
+
+`samples.adsbexchange.com/traces/` publishes a free full-day globe sample for the **first of every month back to 2016**, with no account and no key. It has produced three pre-2023 days for SU-BTT, each from a trace that carries its own registration in the payload:
+
+| Sampled day | Points | What the trace shows |
+|---|---|---|
+| **2022-06-01** | 1,508 | **On the ground at Wilmington Airport, Delaware (KILG, 0.72 km) at 11:31:13 UTC**, then a transatlantic leg ending at **Almaza Air Force Base, Cairo (HEAZ, 1.38 km)** |
+| **2022-09-01** | 1,337 | Airborne off **Paris-Le Bourget** in the morning, then **on the ground at Wichita Dwight D. Eisenhower National Airport, Kansas (KICT, 0.69 km) at 16:33:26 UTC** |
+| **2022-05-01** | 67 | Egypt only — Gebel El Basur Air Base to Quesna |
+
+Three things follow, and the third is the most important.
+
+* **SU-BTT was in the United States in 2022.** Wilmington in June, Wichita in September. Both are ground positions under one kilometre, not overflight labels. The site's flight-history section above records the July 20, 2025 Nebraska arrival as **"reported as the jet's first-ever trip to the United States."** That was the trackers' characterisation, and the 2022 data does not support it. It is a **correction to the reported claim**, not a finding about anyone's motive for making it.
+* **Delaware and Kansas are two of the five states in the clustering claim.** The "Missouri, Delaware, Utah, Nebraska, Kansas" cluster is marked unverified everywhere it appears on this site. Two of those five now have primary 2022 position data for this aircraft behind them. Missouri has it for the sister aircraft [SU-BTU](/Planes/SU-BTU/overview), at Spirit of St Louis on 2022-12-01.
+* **The Egyptian end of the June leg is Almaza Air Force Base, not Cairo International.** HEAZ is an Egyptian military field. That is worth stating precisely because it is an ordinary fact about a state-operated aircraft — a government jet using a government field — and not, on its own, evidence of anything about this case.
+
+**The sampling caveat is not optional and must travel with every one of these dates.** This is **one day per month, the 1st, and nothing else.** Two of the three sampled 2022 days put SU-BTT in the United States. **Three sampled days cannot support a rate.** They establish that the aircraft was in the US in 2022. They say nothing whatsoever about how often, and anyone extrapolating a frequency from them is doing arithmetic the data does not carry.
+
+Files: `site/docs/Planes/SU-BTT/data/recovered/SU-BTT_2022-06-01_adsbexchange-samples_trace_full.json`, `..._2022-09-01_...`, `..._2022-05-01_...`.
+
+### The September 10, 2025 departure, settled from primary data
+
+The section [Conflicting accounts of the Sept 10 departure](#conflicting-accounts-of-the-sept-10-departure) sets out three versions of how SU-BTT left Utah that morning: a **7:08 AM** departure, Candace Owens's **9:05 AM power-up / go dark / reactivate 17 minutes after the shot / idle until 1:29 PM** account, and the **Dugway origin** claim that it never left Provo at all. That section says the three cannot all be true. They cannot, and the primary track decides between them.
+
+Two independent archives hold the full day. **They agree to within ten milliseconds at every one of the three moments below** — the same track, fed by overlapping receivers, recorded twice:
+
+| Moment | UTC | Local | Position |
+|---|---|---|---|
+| **First fix — ON THE GROUND at Provo** | **13:07:53.66** | **07:07:53 MDT** | KPVU, **1.37 km** |
+| **Wheels up** | **13:14:03.82** | **07:14:03 MDT** | climbing out of Provo |
+| **Last tracked — on approach to Wilmington, Delaware** | **16:50:37.53** | **12:50:37 EDT** | KILG, **1.75 km** |
+
+Files: `site/docs/Planes/SU-BTT/data/recovered/SU-BTT_2025-09-10_adsb-lol_trace_full.json` (1,229 points) and `SU-BTT_2025-09-10_airplanes-live_trace_full.json` (1,789 points).
+
+**What that settles, connected to the three accounts by name:**
+
+* **The 7:08 AM account is right, to the minute.** The transponder came alive on the Provo ramp at 07:07:53 MDT and the aircraft was airborne at 07:14:03 MDT. It also matches the Flightradar24 export reproduced further down this page, which logs the leg with **ATD 7:14 AM** — the export and the raw position data agree exactly.
+* **The 9:05 AM power-up / 1:29 PM idle account does not survive it.** By 9:05 AM MDT the aircraft had been airborne for nearly two hours and was over the eastern United States. There is no reactivation on the Provo tarmac after the shot in this data, because the aircraft was not at Provo after the shot. That account is superseded, and it should be read from here on as an early reconstruction that the position data corrected — not as one of three live options.
+* **The Dugway origin claim does not survive it either.** The first fix of the day is a **ground** fix 1.37 km from Provo Municipal, six minutes before the aircraft moves. A jet that took off from Michael Army Airfield with its transponder off does not appear parked at Provo first. Dugway is roughly 90 miles west of Provo.
+
+**And the consequence, stated plainly and no further.** Charlie Kirk was shot at roughly **12:20 MDT — 18:20 UTC, 14:20 EDT**. SU-BTT's last tracked fix that day is at **16:50:37 UTC**, 1.75 km from Wilmington Airport at field elevation, on the way down. **The aircraft was on the ground in Delaware roughly ninety minutes before the shooting, and about 2,000 miles from Utah Valley University.**
+
+That is a position, and it is the whole of what the data says. It does not establish who was aboard, why the flight was made, why it was made that morning, or whether it has any connection to the event at all. This page does not extend it past the position.
+
+### The overlap register, tested against this aircraft's own tracks
+
+`site/docs/Planes/following/overlaps.csv` holds 85 claimed pairings. **Sixty of them name SU-BTT.** Each was checked against both archives on the claimed date and the day either side, measuring the aircraft's closest approach in kilometres to the claimed field.
+
+| Verdict | Rows | What it means |
+|---|---|---|
+| **AT_CLAIMED_AIRPORT** | **18** | The aircraft really was at the claimed field. **Confirmed.** |
+| **ELSEWHERE** | **7** | Tracked that day, and somewhere else. **Refuted.** |
+| NOT_HEARD | 17 | The archive covers the date; no trace for this airframe. **Not a refutation.** |
+| NO_ARCHIVE_COVERAGE | 18 | No free archive reaches the date. Says nothing either way. |
+
+**Of the 25 rows that could be decided, 18 are corroborated and 7 refuted.** Published audits of this spreadsheet — including the one quoted in the counterpoints section above, which put five of eight cited overlaps in error — concluded that roughly two rows in three were wrong. **Against primary position data, for this tail, it runs the other way.** That is the first time the sheet has been tested against position data rather than against another reading of a website, and the result belongs on the page whichever direction it points.
+
+**The strongest confirmations**, with the distance published because the distance is the claim:
+
+| Overlap ID | Date | Claimed | Closest approach | On ground? |
+|---|---|---|---|---|
+| **OWENS-026 / SITE-004** | 23 Apr 2024 | Provo, UT | **0 km** from KPVU, 18:13:11 UTC | **yes** |
+| **OWENS-041 / SITE-006** | 10 Sep 2025 | Provo, UT | **1.23 km** from KPVU, 13:08:57 UTC | **yes** |
+| **SITE-005** | 10–11 Sep 2025 | Wilmington, DE | 1.75 km on approach; **0.92 km on the ground** 11 Sep 11:55:36 UTC | yes |
+| OWENS-020 | 9 Feb 2024 | Omaha / Lincoln, NE | **0.31 km** from KOMA, 18:16:07 UTC | no |
+| OWENS-013 | 20 Apr 2023 | Wilmington, DE | **0.56 km** from KILG, 17:04:07 UTC | **yes** |
+| OWENS-039 | 17 Aug 2025 | Omaha / Lincoln, NE | **0.65 km** from KOMA, 16:45:18 UTC | no |
+| OWENS-021 | 14 Feb 2024 | Wilmington, DE | 0.82 km from KILG, 16:38:55 UTC | no |
+| OWENS-040 | 4 Sep 2025 | Provo, UT | **0.16 km** from KPVU, 18:49:38 UTC | **yes** |
+| OWENS-010 / SITE-001 | 1 Apr 2023 | St Louis, MO | 0.48 km from KSTL, 15:55:15 UTC | no |
+| OWENS-046 | 25 Feb 2023 | St Louis, MO | 3.10 km from KSUS, 18:41:11 UTC | no |
+| OWENS-011 | 6 Apr 2023 | Wilmington, DE | 1.63 km from KILG, 15:33:43 UTC | no |
+| OWENS-023 | 29 Mar 2024 | Wichita, KS | 2.27 km from KICT, 19:19:00 UTC | no |
+| OWENS-027 | 28 Apr 2024 | Wilmington, DE | 1.57 km from KILG, 17:41:20 UTC | no |
+| OWENS-038 / OWENS-067 | 20 Jul 2025 | Omaha / Lincoln, NE | 1.71 km from KOMA; 7.21 km from KLNK | no |
+
+**The refutations, which matter at least as much:**
+
+* **OWENS-012 — claimed at Wichita, Kansas, 14 April 2023.** SU-BTT flew **Paris Charles de Gaulle to Topeka, Kansas** that day, ending 10.98 km from Sunset Strip Airpark, Topeka. Closest approach to Wichita: **7,411 km.** Right state, wrong city — this is a **misattributed row, not an invented one**, and it is the primary-data anchor for the KTOP-versus-KFOE Topeka identifier question recorded in the following directory's own notes.
+* **OWENS-024 and SITE-003 — claimed at Wichita, 3 April 2024.** SU-BTT was over Missouri that morning and landed at **Wilmington, Delaware (1.48 km)** that afternoon. Closest approach to Wichita: **1,853 km.** A real United States day, on the wrong field. SITE-003 is one of this repository's own derived pairings, and it is refuted by this repository's own data.
+* **Four refutations put the aircraft in Egypt** on the claimed date: OWENS-028 (20 Jul 2024, claimed Omaha — Abu Rish to Quesna, 12,020 km away), OWENS-029 (17 Aug 2024, claimed Omaha — Cairo International, 12,310 km), OWENS-036 (18 Jun 2025, claimed Omaha — Alexandria to El Alamein), OWENS-055 (15 Apr 2024, claimed Omaha — Cairo International to Almaza, 12,308 km). Those are clean.
+* **Two of those four rest on the backup network alone.** adsb.lol returns nothing for OWENS-029 and OWENS-055; only airplanes.live holds the day. **Without the recovery work those two rows could not have been refuted at all.** The recovery effort on this page earned its keep by debunking, which is the most credible possible use of it.
+
+**And the 35 undecided rows are undecided, not favourable.** NOT_HEARD means no volunteer receiver logged this airframe that day — over Egypt, over the Atlantic, or anywhere with thin coverage, that is completely ordinary. NO_ARCHIVE_COVERAGE means no free archive reaches the date at all; every one of the 2022 and early-2023 claimed overlaps falls in that band. **An absence in the data is not proof of a covert leg, and it is not proof the claim was false either.** It is silence, and it is reported as silence.
+
+Working file: `site/docs/Planes/following/apis/public_open_source/data/overlap_verification/overlap_verification.json`.
+
+### The counterargument
+
+Every confirmation above has an innocent explanation available to it, and on this aircraft the innocent explanation is unusually strong and unusually specific.
+
+**Duncan Aviation has held an Egyptian Air Force maintenance contract since 1999, with plants at Lincoln, Nebraska and Provo, Utah.** That is documented at length in [its own section on this page](#duncan-aviation-has-held-an-egyptian-air-force-maintenance-contract-since-1999--and-its-main-plant-is-in-lincoln-nebraska), and it is not restated here because it does not need strengthening — it needs applying. **Every one of the confirmed Provo and Lincoln positions above is exactly what an aircraft under that contract would produce.** Confirming that SU-BTT was on the ground at Provo on 23 April 2024 and 4–10 September 2025 confirms it was at its operator's contracted maintenance facility. The Wichita confirmation has the same shape: Yingling Aviation at Wichita is an FAA Part 145 shop that services Dassault Falcons. And Wilmington is on the outbound leg of every single US rotation and never on the inbound — which is what a customs and fuel clearance point looks like, not a destination.
+
+For the **2022 United States legs**, the innocent explanation is the ordinary one: **diplomatic travel and maintenance travel by a state-operated aircraft.** A government jet crossing the Atlantic to Delaware and Kansas in 2022 is unremarkable in itself. What the 2022 data changes is not the character of those trips; it is only that they are now on record instead of asserted.
+
+The counterargument to the **refutations** deserves saying too, because it runs the other way: seven refuted rows out of sixty do not collapse the register, and NOT_HEARD is not a hit. A reader who takes the 18 confirmations as vindication has to take the 7 refutations as a real error rate in the same document.
+
+### What none of this establishes
+
+**All of it locates the aircraft. None of it locates a Kirk.**
+
+Every confirmation above is a confirmation of one half of a pairing. An overlap needs two halves — an aircraft at a place, and a person at that place — and the Kirk half is unchanged by anything in this section. On Charlie Kirk's side, the test run further up this page against 139 sourced events produced **one** same-state, same-week hit for this aircraft, and it is 10 September 2025. On **Erika Kirk's** side the position is weaker still: her flight logs are reported erased (see [Erika's Flight Logs Erased](/Planes/Erika-Flight-Logs-Erased)), and in 139 rows exactly one places her at a TPUSA event before 10 September 2025. **The 73-overlap tally was measured against her claimed locations, and this repository cannot reproduce the list it was measured against.** That is not a refutation of the tally; it is a statement that the tally is untestable with anything public.
+
+The counts remain in dispute and are not reconciled here: **73 / about 23** (Owens's team), **72**, **"70+"**, and a separate dual-plane tally of **68 / 29**. They have never been reconciled by anyone, and averaging them would invent a number nobody published.
+
+Nothing in this section establishes who was aboard SU-BTT on any date, who tasked it, or why. No public record establishes tasking in either direction, and this page does not assert one.
+
 
 {/* CK_INTERESTING_HERE_START */}
 

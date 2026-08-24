@@ -48,6 +48,143 @@ A date gets a page here only if **both** are true:
 
 Everything else is on the [location pages](/Planes/following/overview), where it belongs. **A three-day gap is not an overlap. A 15-month gap is not an overlap.** Both appear in the published tallies.
 
+## Every one of these rows has now been checked against primary ADS-B data
+
+**On 24 August 2026 all 85 reconstructed rows were queried against two free ADS-B history archives** — adsb.lol globe history and the airplanes.live mirror — for the claimed tail, on the claimed date and the day either side. Every position fix was resolved to the nearest field in the OurAirports public-domain gazetteer, and the aircraft's **closest approach in kilometres** to the claimed field was measured. The raw run is `site/docs/Planes/following/apis/public_open_source/data/overlap_verification/overlap_verification.json`; each row's extract sits in its own page directory as `data/adsb_verification.json`. How the archives were reached, and what a 403 does and does not mean, is on [Flight data recovery](/Planes/Flight-Data-Recovery/overview).
+
+**This is the first time the sheet has been tested against position data rather than against another reading of a tracking website.** Every published audit of it so far — including the one this directory's verdict column comes from — was one person reading a flight-tracking site and comparing it to another person's reading of a flight-tracking site. This run went to the archives.
+
+| Verdict | Rows | What it means |
+|---|---|---|
+| **Confirmed at the claimed field** | **24** | The claimed aircraft really was at the claimed field, inside 15 km, on the claimed date or the day either side |
+| **Refuted** | **12** | The aircraft was tracked that day and was somewhere else |
+| Not heard | **22** | The archives cover the date and hold no trace for that airframe. **Not a refutation** |
+| No archive coverage | **20** | No free archive reaches the date. Says nothing either way |
+| Names no aircraft | **2** | The source row has an empty tail cell. Nothing to query |
+| Names no date | **5** | The five `UNPUB` rows. Uncheckable by anyone, including their author |
+| **Total** | **85** | |
+
+**Of the 36 rows that could be decided, 24 are corroborated and 12 refuted.** Published audits of this spreadsheet reported roughly **two rows in three wrong** — "66% of the location claims are wrong, 60% on the wrong continent." **Against primary position data it is the other way round: two in three of the decidable rows hold up.** Both statements can be true at once, and the reason they can is worth stating: the audits and this run are not measuring the same 85 rows. Forty-two of them cannot be decided from free archives at all, and the rows a free archive can reach are weighted towards the later, better-covered dates.
+
+**A confirmed aircraft is NOT a confirmed overlap, and this belongs beside the number rather than under it.** The archives locate an **airframe**. They do not put Charlie Kirk or Erika Kirk anywhere, they do not establish that anyone aboard knew where either of them was, and they establish nothing about tasking in any direction. **An overlap needs both halves.** The Kirk half is exactly as it was before this run: **still weak for Charlie, still close to empty for Erika** — of 139 catalogued Turning Point appearances, exactly one places Erika Kirk at an event before 10 September 2025 with a firm date, and her flight logs are [reported as erased](/Planes/Erika-Flight-Logs-Erased). **Twenty-four confirmed aircraft positions measured against an itinerary nobody has published is twenty-four confirmed aircraft positions.**
+
+### The recovery earned its keep by debunking
+
+**Four of the twelve refutations rest on the backup network alone.** adsb.lol holds nothing for [OWENS-016](./20230612_UT_provo_owens_016/overview), [OWENS-029](./20240817_NE_omaha_lincoln_owens_029/overview), [OWENS-052](./20230625_DE_wilmington_owens_052/overview) or [OWENS-055](./20240415_NE_omaha_owens_055/overview) on their claimed days; the airplanes.live mirror does. **Without the recovery work those four rows could not have been refuted at all** — they would have come back "not heard" and stayed undecided.
+
+That is the most credible possible use of a data-recovery effort: **it was built to find flights that had gone missing, and the first thing it did was knock four claims out of the count.** Seven of the twelve refutations put the aircraft in Egypt on the claimed date; those are clean.
+
+### Three pairs of rows are the same event counted twice
+
+Because the headline is a **count**, duplicates matter as much as errors:
+
+* **OWENS-031 and OWENS-061** — the same 12 January 2025 Wichita claim, entered twice.
+* **OWENS-033 and OWENS-063** — the same 15 March 2025 Wichita claim, entered twice.
+* **OWENS-035 and OWENS-065** — the same 23 May 2025 Provo claim, entered twice. *(This one is **confirmed**: SU-BND on the ground at Provo, 0.03 km, 20:38:06 UTC — confirmed once, counted twice.)*
+
+**A duplicate is not a wrong row. It is a row that should not be added.** Any tally quoting 72, 73 or 77 is quoting a number that includes these three pairs.
+
+### The counterargument, which applies to this section too
+
+* **Absence is not proof, and the 42 undecided rows are not a hidden reserve of hits.** "Not heard" means the archive held nothing for that airframe that day — a parked aircraft with its transponder off produces that, and so does a receiver-coverage hole. "No archive coverage" means no free archive reaches the date at all. **Neither refutes anything and neither confirms anything.**
+* **Nearest-airport resolution is geometry, not a landing record.** A fix 0.48 km from a runway threshold is an aircraft in that airspace, not a logged arrival. That is why the distance is published with every verdict on every page.
+* **A confirmed landing has an innocent explanation sitting on top of it at almost every field in this record.** Duncan Aviation has held the Egyptian Air Force maintenance account since 1999, with its main plant at Lincoln and a facility at Provo; Wichita is a Part 145 Falcon service centre; Wilmington appears on the outbound leg only, twenty-one times, never inbound.
+* **The counts stay disputed.** 73 / ~23 · 72 · 70+ · 68 / 29 · 77 · 1. **This run does not reconcile them and does not replace them.** It reports what two archives held for 85 specific rows on one specific day.
+
+### All 85 rows, with the primary-data verdict
+
+Sorted as the register is sorted. Each identifier links to that row's page, where the archive responses, the timestamps and the closest approach are set out in full.
+
+| Overlap | Date | Claimed field | Claimed tail | Primary-data verdict |
+|---|---|---|---|---|
+| [OWENS-001](./20221005_NY_new_york_owens_001/overview) | 2022-10-05 | KJFK · New York | SU-BTT | No archive coverage |
+| [OWENS-002](./20221020_IL_chicago_owens_002/overview) | 2022-10-20 | KORD · Chicago | SU-BTT | No archive coverage |
+| [OWENS-003](./20221101_MA_boston_owens_003/overview) | 2022-11-01 | KBOS · Boston | SU-BTT | No archive coverage |
+| [OWENS-004](./20221113_KS_wichita_owens_004/overview) | 2022-11-13 | KICT · Wichita | SU-BTT | No archive coverage |
+| [OWENS-005](./20221117_DE_wilmington_owens_005/overview) | 2022-11-17 | KILG · Wilmington | SU-BTT | No archive coverage |
+| [OWENS-006](./20221220_MO_st_louis_owens_006/overview) | 2022-12-20 | KSTL · St. Louis | SU-BTT | No archive coverage |
+| [OWENS-007](./20221227_ME_bangor_owens_007/overview) | 2022-12-27 | KBGR · Bangor | SU-BTT | No archive coverage |
+| [OWENS-008](./20230115_GA_atlanta_owens_008/overview) | 2023-01-15 | KATL · Atlanta | SU-BTT | No archive coverage |
+| [OWENS-009](./20230210_DE_wilmington_owens_009/overview) | 2023-02-10 | KILG · Wilmington | SU-BTT | No archive coverage |
+| [OWENS-010](./20230401_MO_st_louis_owens_010/overview) | 2023-04-01 | KSTL · St. Louis | SU-BTT | **Confirmed** |
+| [OWENS-011](./20230406_DE_wilmington_owens_011/overview) | 2023-04-06 | KILG · Wilmington | SU-BTT | **Confirmed** |
+| [OWENS-012](./20230414_KS_wichita_owens_012/overview) | 2023-04-14 | KICT · Wichita | SU-BTT | **Refuted** |
+| [OWENS-013](./20230420_DE_wilmington_owens_013/overview) | 2023-04-20 | KILG · Wilmington | SU-BTT | **Confirmed** |
+| [OWENS-014](./20230503_MO_st_louis_owens_014/overview) | 2023-05-03 | KCPS · St. Louis | SU-BND | **Confirmed** |
+| [OWENS-015](./20230509_MO_st_louis_then_goose_bay_owens_015/overview) | 2023-05-09 | CYYR · St. Louis then Goose Bay | SU-BND | **Refuted** |
+| [OWENS-016](./20230612_UT_provo_owens_016/overview) | 2023-06-12 | KPVU · Provo | SU-BND | **Refuted** |
+| [OWENS-017](./20230725_NE_lincoln_owens_017/overview) | 2023-07-25 | KLNK · Lincoln | SU-BTT | No archive coverage |
+| [OWENS-018](./20230903_DE_wilmington_owens_018/overview) | 2023-09-03 | KILG · Wilmington | SU-BTT | No archive coverage |
+| [OWENS-019](./20240110_CA_sacramento_owens_019/overview) | 2024-01-10 | KSMF · Sacramento | SU-BTT | Not heard |
+| [OWENS-020](./20240209_NE_omaha_lincoln_owens_020/overview) | 2024-02-09 | KOMA · Omaha / Lincoln | SU-BTT | **Confirmed** |
+| [OWENS-021](./20240214_DE_wilmington_owens_021/overview) | 2024-02-14 | KILG · Wilmington | SU-BTT | **Confirmed** |
+| [OWENS-022](./20240318_KS_wichita_owens_022/overview) | 2024-03-18 | KICT · Wichita | SU-BTT | Not heard |
+| [OWENS-023](./20240329_KS_wichita_owens_023/overview) | 2024-03-29 | KICT · Wichita | SU-BTT | **Confirmed** |
+| [OWENS-024](./20240403_KS_wichita_lawrence_owens_024/overview) | 2024-04-03 | KICT · Wichita / Lawrence | SU-BTT | **Refuted** |
+| [OWENS-025](./20240419_UT_provo_owens_025/overview) | 2024-04-19 | KPVU · Provo | SU-BND | **Confirmed** |
+| [OWENS-026](./20240423_UT_provo_owens_026/overview) | 2024-04-23 | KPVU · Provo | SU-BTT | **Confirmed** |
+| [OWENS-027](./20240428_DE_wilmington_owens_027/overview) | 2024-04-28 | KILG · Wilmington | SU-BTT | **Confirmed** |
+| [OWENS-028](./20240720_NE_omaha_lincoln_owens_028/overview) | 2024-07-20 | KOMA · Omaha / Lincoln | SU-BTT | **Refuted** |
+| [OWENS-029](./20240817_NE_omaha_lincoln_owens_029/overview) | 2024-08-17 | KOMA · Omaha / Lincoln | SU-BTT | **Refuted** |
+| [OWENS-030](./20241208_UT_provo_owens_030/overview) | 2024-12-08 | KPVU · Provo | SU-BND | **Refuted** |
+| [OWENS-031](./20250112_KS_wichita_owens_031/overview) | 2025-01-12 | KICT · Wichita | SU-BTT | Not heard |
+| [OWENS-032](./20250117_KS_wichita_owens_032/overview) | 2025-01-17 | KICT · Wichita | SU-BTT | Not heard |
+| [OWENS-033](./20250315_KS_wichita_owens_033/overview) | 2025-03-15 | KICT · Wichita | SU-BTT | Not heard |
+| [OWENS-034](./20250322_KS_wichita_owens_034/overview) | 2025-03-22 | KICT · Wichita | SU-BTT | Not heard |
+| [OWENS-035](./20250523_UT_provo_owens_035/overview) | 2025-05-23 | KPVU · Provo | SU-BND | **Confirmed** |
+| [OWENS-036](./20250618_NE_omaha_lincoln_owens_036/overview) | 2025-06-18 | KOMA · Omaha / Lincoln | SU-BTT | **Refuted** |
+| [OWENS-037](./20250707_UT_provo_owens_037/overview) | 2025-07-07 | KPVU · Provo | SU-BND | Not heard |
+| [OWENS-038](./20250720_NE_omaha_lincoln_owens_038/overview) | 2025-07-20 | KOMA · Omaha / Lincoln | SU-BTT | **Confirmed** |
+| [OWENS-039](./20250817_NE_omaha_lincoln_owens_039/overview) | 2025-08-17 | KOMA · Omaha / Lincoln | SU-BTT | **Confirmed** |
+| [OWENS-040](./20250904_UT_provo_owens_040/overview) | 2025-09-04 | KPVU · Provo | SU-BTT | **Confirmed** |
+| [OWENS-041](./20250910_UTDE_provo_then_wilmington_owens_041/overview) | 2025-09-10 | KPVU · Provo then Wilmington | SU-BTT | **Confirmed** |
+| [OWENS-042](./20250913_UT_provo_owens_042/overview) | 2025-09-13 | KPVU · Provo | SU-BND | **Confirmed** |
+| [OWENS-043](./20221125_DE_wilmington_owens_043/overview) | 2022-11-25 | KILG · Wilmington | SU-BTT | No archive coverage |
+| [OWENS-044](./20221205_IL_chicago_owens_044/overview) | 2022-12-05 | KORD · Chicago | SU-BTT | No archive coverage |
+| [OWENS-045](./20230112_KS_wichita_owens_045/overview) | 2023-01-12 | KICT · Wichita | SU-BTT | No archive coverage |
+| [OWENS-046](./20230225_MO_st_louis_owens_046/overview) | 2023-02-25 | KSUS · St. Louis | SU-BTT | **Confirmed** |
+| [OWENS-047](./20230315_NE_omaha_owens_047/overview) | 2023-03-15 | KOMA · Omaha | SU-BTT | Not heard |
+| [OWENS-048](./20230327_DE_wilmington_owens_048/overview) | 2023-03-27 | KILG · Wilmington | SU-BTT | No archive coverage |
+| [OWENS-049](./20230425_KS_wichita_owens_049/overview) | 2023-04-25 | KICT · Wichita | SU-BTT | No archive coverage |
+| [OWENS-050](./20230512_MO_st_louis_owens_050/overview) | 2023-05-12 | KSTL · St. Louis | SU-BND | **Refuted** |
+| [OWENS-051](./20230608_KS_wichita_owens_051/overview) | 2023-06-08 | KICT · Wichita | SU-BTT | Not heard |
+| [OWENS-052](./20230625_DE_wilmington_owens_052/overview) | 2023-06-25 | KILG · Wilmington | SU-BND | **Refuted** |
+| [OWENS-053](./20240310_MO_st_louis_owens_053/overview) | 2024-03-10 | KSTL · St. Louis | SU-BTT | Not heard |
+| [OWENS-054](./20240322_KS_wichita_owens_054/overview) | 2024-03-22 | KICT · Wichita | SU-BTT | Not heard |
+| [OWENS-055](./20240415_NE_omaha_owens_055/overview) | 2024-04-15 | KOMA · Omaha | SU-BTT | **Refuted** |
+| [OWENS-056](./20240503_MO_st_louis_owens_056/overview) | 2024-05-03 | KSTL · St. Louis | SU-BND | Not heard |
+| [OWENS-057](./20240510_MO_st_louis_owens_057/overview) | 2024-05-10 | KSTL · St. Louis | SU-BND | Not heard |
+| [OWENS-058](./20240618_NE_lincoln_owens_058/overview) | 2024-06-18 | KLNK · Lincoln | SU-BTT | Not heard |
+| [OWENS-059](./20240705_KS_wichita_owens_059/overview) | 2024-07-05 | KICT · Wichita | SU-BTT | Not heard |
+| [OWENS-060](./20240725_NE_omaha_lincoln_owens_060/overview) | 2024-07-25 | KOMA · Omaha / Lincoln | SU-BTT | Not heard |
+| [OWENS-061](./20250112_KS_wichita_owens_061/overview) | 2025-01-12 | KICT · Wichita | SU-BTT | Not heard |
+| [OWENS-062](./20250208_NE_omaha_owens_062/overview) | 2025-02-08 | KOMA · Omaha | SU-BTT | Not heard |
+| [OWENS-063](./20250315_KS_wichita_owens_063/overview) | 2025-03-15 | KICT · Wichita | SU-BTT | Not heard |
+| [OWENS-064](./20250419_UT_provo_owens_064/overview) | 2025-04-19 | KPVU · Provo | SU-BND | Not heard |
+| [OWENS-065](./20250523_UT_provo_owens_065/overview) | 2025-05-23 | KPVU · Provo | SU-BND | **Confirmed** |
+| [OWENS-066](./20250707_UT_provo_owens_066/overview) | 2025-07-07 | KPVU · Provo | SU-BND | Not heard |
+| [OWENS-067](./20250720_NE_lincoln_owens_067/overview) | 2025-07-20 | KLNK · Lincoln | SU-BTT | **Confirmed** |
+| [UNPUB-001](./unpublished_unpub_001/overview) | — | — | SU-BTT or SU-BND | No date |
+| [UNPUB-002](./unpublished_unpub_002/overview) | — | — | SU-BTT or SU-BND | No date |
+| [UNPUB-003](./unpublished_unpub_003/overview) | — | — | SU-BTT or SU-BND | No date |
+| [UNPUB-004](./unpublished_unpub_004/overview) | — | — | SU-BTT or SU-BND | No date |
+| [UNPUB-005](./unpublished_unpub_005/overview) | — | — | SU-BTT or SU-BND | No date |
+| [EXTRA-001](./20240914_NE_lincoln_extra_001/overview) | 2024-09-14 | KLNK · Lincoln | — | No aircraft named |
+| [EXTRA-002](./20240409_NE_omaha_extra_002/overview) | 2024-04-09 | KOMA · Omaha | — | No aircraft named |
+| [EXTRA-003](./20230423_KS_topeka_extra_003/overview) | 2023-04-23 | KTOP · Topeka | SU-BTT | No archive coverage |
+| [EXTRA-004](./20250711_NE_omaha_extra_004/overview) | 2025-07-11 | KOMA · Omaha | UNKNOWN | No archive coverage |
+| [EXTRA-005](./20230825_NE_lincoln_extra_005/overview) | 2023-08-25 | KLNK · Lincoln | SU-BTT | No archive coverage |
+| [EXTRA-006](./20250910_UT_provo_extra_006/overview) | 2025-09-10 | KPVU · Provo | SU-BND | **Confirmed** |
+| [EXTRA-007](./20250429_NE_lincoln_extra_007/overview) | 2025-04-29 | KLNK · Lincoln | UNKNOWN | No archive coverage |
+| [SITE-001](./20230402_MO_jefferson_city/overview) | 2023-04-02 | KSTL/KCPS/KSUS · Jefferson City (event) / St. Louis (aircraft) | SU-BTT; SU-BND | **Confirmed** |
+| [SITE-002](./20240211_NE_lincoln/overview) | 2024-02-11 | KLNK · Lincoln | SU-BTT | Not heard |
+| [SITE-003](./20240403_KS_lawrence/overview) | 2024-04-03 | KICT · Lawrence (event) / Wichita (aircraft) | SU-BTT | **Refuted** |
+| [SITE-004](./20240423_UT_salt_lake_city/overview) | 2024-04-23 | KPVU · Salt Lake City (event) / Provo (aircraft) | SU-BTT; SU-BND | **Confirmed** |
+| [SITE-005](./20250910_DE_wilmington/overview) | 2025-09-10 | KILG · Wilmington | SU-BTT | **Confirmed** |
+| [SITE-006](./20250910_UT_orem/overview) | 2025-09-10 | KPVU · Orem (event) / Provo (aircraft) | SU-BTT; SU-BND | **Confirmed** |
+
+**Read the two right-hand columns together and neither one alone.** A **Confirmed** row says an airframe was where the sheet said it was. It does not say a person was. A **Refuted** row is the only kind that takes something away from the count.
+
 ## The six dates
 
 | Date | Where | Who | Foreign tails | Distance | Gap | What it actually shows |

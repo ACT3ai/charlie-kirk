@@ -1,0 +1,125 @@
+{
+  "verified_utc": "2026-08-24T17:36:21.953Z",
+  "overlap_id": "OWENS-052",
+  "date": "2023-06-25",
+  "claimed_airport": "KILG",
+  "claimed_codes": [
+    "KILG"
+  ],
+  "claimed_city": "Wilmington",
+  "claimed_state": "DE",
+  "claimed_tails": [
+    "SU-BND"
+  ],
+  "subject": "Erika",
+  "audit_verdict": "inaccurate",
+  "site_page": "site/docs/Planes/following/Wilmington_KILG_2022-11-17_to_2025-10-12/overview.mdx",
+  "tails": {
+    "SU-BND": {
+      "2023-06-24": {
+        "adsb_lol_http": 404,
+        "airplanes_live_http": 200,
+        "archive_control_probe": null,
+        "both_agree": false,
+        "heard": true,
+        "at_claimed_airport": false,
+        "closest_approach_to_claimed_field": null,
+        "airports_touched": [
+          "HECW 21.61km first_fix",
+          "HE15 16.08km last_fix"
+        ],
+        "first_where": "HECW (Cairo West Air Base, Cairo EG) 21.61km",
+        "last_where": "HE15 (Helwan Air Base, Helwan EG) 16.08km",
+        "points": 24,
+        "verdict": "ELSEWHERE"
+      },
+      "2023-06-25": {
+        "adsb_lol_http": 404,
+        "airplanes_live_http": 404,
+        "archive_control_probe": {
+          "adsb-lol": {
+            "verdict": "NOT_COVERED",
+            "codes": [
+              404,
+              404,
+              404,
+              404,
+              404,
+              404,
+              404,
+              404,
+              404
+            ]
+          },
+          "airplanes-live": {
+            "verdict": "NOT_COVERED",
+            "codes": [
+              404,
+              404,
+              404,
+              404,
+              404,
+              404,
+              404,
+              404,
+              404
+            ]
+          }
+        },
+        "both_agree": false,
+        "heard": false,
+        "at_claimed_airport": false,
+        "closest_approach_to_claimed_field": null,
+        "airports_touched": null,
+        "first_where": null,
+        "last_where": null,
+        "points": null,
+        "verdict": "NO_ARCHIVE_COVERAGE"
+      },
+      "2023-06-26": {
+        "adsb_lol_http": 404,
+        "airplanes_live_http": 404,
+        "archive_control_probe": {
+          "adsb-lol": {
+            "verdict": "NOT_COVERED",
+            "codes": [
+              404,
+              404,
+              404,
+              404,
+              404,
+              404,
+              404,
+              404,
+              404
+            ]
+          },
+          "airplanes-live": {
+            "verdict": "NOT_COVERED",
+            "codes": [
+              404,
+              404,
+              404,
+              404,
+              404,
+              404,
+              404,
+              404,
+              404
+            ]
+          }
+        },
+        "both_agree": false,
+        "heard": false,
+        "at_claimed_airport": false,
+        "closest_approach_to_claimed_field": null,
+        "airports_touched": null,
+        "first_where": null,
+        "last_where": null,
+        "points": null,
+        "verdict": "NO_ARCHIVE_COVERAGE"
+      }
+    }
+  },
+  "verdict": "ELSEWHERE"
+}

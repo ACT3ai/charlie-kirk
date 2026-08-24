@@ -256,6 +256,150 @@ status, the byte count and the date, so any line above can be checked without tr
 More: [Flight Data Recovery](/Planes/Flight-Data-Recovery/overview) ·
 [Per-Aircraft Status](/Planes/Flight-Data-Recovery/Per-Aircraft-Status)
 
+## The primary flight data we hold on this aircraft, and where it came from
+
+Everything above this line is read off screenshots, posts and other people's summaries. This section
+is the opposite. It is the raw ADS-B position data this repository actually holds for N1098L, pulled
+from free public archives on **24 August 2026**, written to disk, and open to anyone who wants to
+re-run the same query and check the answer.
+
+**The thread marker first, because it matters.** N1098L belongs to the **ISR / HADES** line of
+inquiry — an Army-contracted Global 6500 over the Utah Valley on 10 September 2025. That is a
+**different claim** from the eighteen-month pattern of foreign-registered aircraft alleged to have
+shadowed Charlie and Erika Kirk, which lives at
+[Following Planes](/Planes/following/overview). This site links the two threads and never merges
+them: different aircraft, different operators, different evidence, and merging them is how both get
+dismissed at once.
+
+### What we hold
+
+| | N1098L |
+|---|---|
+| Days of primary trace held | **63** |
+| Span | **1 Nov 2023 – 1 Aug 2026** |
+| Corroborated by **both** free daily archives | **17** |
+| **Recovered only from the backup network** (globe.airplanes.live) | **29** |
+| Held only by the ADS-B Exchange monthly sample | **17** |
+| Days before 2023 | **0** |
+| Archived tracking-site pages | 3, all FlightAware, all JavaScript shells |
+| Field appearing on the most days | **Biggs Army Airfield (KBIF), 50 of 63 days** |
+
+Provenance of record:
+`site/docs/Planes/following/apis/public_open_source/data/provenance/tail_provenance.json`.
+The traces themselves are in `site/docs/Planes/N1098L/data/recovered/`, one file per aircraft-day,
+the source name in every filename, each with a `.meta.json` sidecar carrying the URL, the HTTP
+status, the byte count and the pull time.
+
+### What the 10 September 2025 trace actually shows
+
+**Both free archives hold that day in full and they agree with each other.** adsb.lol returns 2,872
+position points; globe.airplanes.live returns 4,439 of the same flight. Distances below are
+great-circle from the position fix to the airport reference point or to the UVU campus, measured off
+the raw trace. Times are UTC with MDT in brackets.
+
+| Time | Where | Baro alt | Groundspeed |
+|---|---|---|---|
+| 13:48:19Z (07:48) | Biggs Army Airfield, El Paso | 4,850 ft | 202 kt |
+| 15:04–15:28Z (09:04–09:28) | **first Utah Valley descent** | down to **4,700 ft** | down to **117 kt** |
+| 15:16:45Z (09:16) | 2.6 km NW of Provo Municipal, closest to UVU **4.16 km** | 4,700 ft | 117 kt |
+| 15:17:17Z (09:17) | **over Provo Municipal, 0.06 km**, climbing | 5,575 ft | 191 kt |
+| 17:33:47Z (11:33) | nearest Kalispell MT — **27.4 km away** | 21,500 ft | 414 kt |
+| 18:38–19:00Z (12:38–13:00) | **second Utah Valley descent** | down to **4,750 ft** | down to **125 kt** |
+| 18:48:28Z (12:48) | closest to UVU, **4.16 km** | 5,100 ft | **129 kt** |
+| 18:49:32Z (12:49) | **over Provo Municipal, 0.10 km**, climbing | 5,675 ft | 196 kt |
+| 21:15:25Z (15:15) | back at Biggs Army Airfield | 3,850 ft | 120 kt |
+| 23:40Z | Salinas, California | — | — |
+
+**The two passes are the same manoeuvre flown twice, three and a half hours apart.** Same inbound
+ground track of about **146°**. Same bottom-out point, at 40.2388 N, 111.7401 W both times — the two
+low points are within **100 metres of each other**. Same slow-down to around 120 knots, same
+acceleration through 190 knots on the climb-out, and both times the aircraft crosses **directly over
+Provo Municipal Airport** rather than over the campus. The two independent archives return the same
+closest-approach distance to UVU, **4.16 km**, to two decimal places, on both passes.
+
+**Two readings, and the geometry is the whole of the evidence.** A steady 146° track, descending to
+roughly 200 feet above Provo's field elevation about 1.4 nautical miles out, then full power and a
+climb over the runway, is the shape of **a straight-in approach to Provo Municipal followed by a
+go-around** — an ordinary currency or training manoeuvre, and the reading the geometry fits most
+directly. What the data will not tell you is *why*, and no position record ever can. Whatever else
+it was, it was flown **at Provo Municipal Airport**, not over the UVU campus 4.16 km away.
+
+### Where this corrects what is written higher on this page
+
+**Publishing our own corrections is what makes the rest of the page worth believing.**
+
+* **The 07:48 MDT Biggs departure is confirmed.** The trace has the aircraft at Biggs Army Airfield
+  at 13:48:19Z, which is 07:48 MDT, climbing at 202 knots. The published figure was right.
+* **The "204 ft" altitude figure is confirmed, if it is read above Provo field elevation.** Provo
+  Municipal sits at **4,497 ft**. Minimum baro on the first pass is **4,700 ft** — 203 feet above
+  field elevation. The second pass bottoms at 4,750 ft, 253 feet above field elevation. Both sit
+  inside the 204–335 ft band already published here.
+* **The "118–129 knots" figure is confirmed.** Closest approach on the second pass reads **129
+  knots**.
+* **The "~11:47 AM MDT" first descent is not supported.** There is no Utah Valley descent at 11:47
+  MDT in either archive. The first descent runs **09:04–09:28 MDT** — which is what the same
+  sentence's "≈3 hours before the shooting" describes. The interval was right; the clock time was
+  not.
+* **"Within about 1–2 miles of the UVU campus" is too close.** Closest approach on both passes is
+  **4.16 km, which is 2.6 miles.** Worth knowing why: [N2100L](/Planes/N2100L/overview) landing at
+  Provo on 1 July 2025 passed **4.17 km** from the same point. **4.16 km from the UVU campus is
+  simply what the Provo Municipal approach path measures.** It is a description of an airport
+  approach, not of an aircraft going to look at a campus.
+* **The KGPI arrival is not in the data, and that is a gap rather than a refutation.** The trace
+  never brings the aircraft closer than **27.4 km** to Glacier Park International, and its nearest
+  point to Kalispell is at 21,500 ft. But there is a **75-minute coverage hole** from 16:18Z to
+  17:33Z, and a landing and quick turn could hide inside it. **Absence of a track is not proof of
+  absence of a flight.** We report the gap; we do not report a refutation.
+* **Open question 5 on this page — "why are some September 10 segments missing from public ADS-B
+  data?" — now has a partial answer.** Both free archives hold the day, and they agree. The holes in
+  the trace are three ordinary receiver-coverage gaps: ten hours ending with the aircraft at Biggs at
+  07:48 MDT, the 75 minutes above, and 45 minutes in the afternoon. That is what a volunteer network
+  looks like. Nothing in the data suggests selective removal.
+
+### The correction about 2022, and about the backup network
+
+The **Flight data recovery** section immediately above says "both free daily archives begin in 2023,
+so every 2022 date is untestable by construction." **That is no longer true site-wide.** The ADS-B
+Exchange public sample publishes one full day — the first of every month — back to 2016, free and
+without an account, and it has produced primary 2022 position data elsewhere in this investigation.
+For **this** aircraft the conclusion is unchanged, and for a second reason: the record card above
+gives a **February 2023 build date**, so there is no 2022 flying to find. The right way to state it
+is that the monthly sample holds one day in thirty, an aircraft that did not fly on the 1st does not
+appear, and this airframe did not exist for most of the window anyway.
+
+**Twenty-nine of the sixty-three days are held only by globe.airplanes.live.** adsb.lol does not
+have them. That sounds like suppression and it is not, and the control test is what settles it:
+adsb.lol returns **HTTP 403 for every aircraft** from **exactly 12 October 2025** to about 30
+December 2025, and **HTTP 404 for every aircraft** from about 31 December 2025 until roughly 1 August
+2026 — including unrelated control airframes chosen for having nothing to do with this case. **The
+gaps are archive-wide conditions, not decisions about N1098L.** A second free archive simply holds
+days the first one does not, which is what two volunteer networks with different feeders and
+different antennas produce.
+
+### The archived tracking pages hold nothing
+
+Three Internet Archive captures of this aircraft's FlightAware page are held — **7 May 2023,
+20 September 2025 and 23 September 2025**. All three recovered **zero flight rows**, and the reason
+is not that the tables were empty. Modern FlightAware is a client-side application: the archived
+HTML is roughly 458 KB of page chrome with the flight table never rendered into it. They are
+labelled `JAVASCRIPT_SHELL_NO_SERVER_RENDERED_ROWS` in
+`site/docs/Planes/following/apis/public_open_source/data/recovery/wayback_flight_rows.json`, and
+**that label is deliberately not "0 rows"** — the two mean different things, and recording an
+unparseable capture as a zero is how an absence of parsing gets mistaken for an absence of evidence.
+
+### The counterargument
+
+Take this section at its weakest and it still has to be said. An Army-contracted surveillance
+aircraft flying repeated instrument approaches at a public regional airport is **exactly what such an
+aircraft does**, at Provo and at a hundred other fields, and the fact that these two were flown on
+10 September 2025 is the entire reason anyone looked. Position data is the weakest possible evidence
+of purpose: it shows where an aircraft was and how fast it was going, and it is silent on who was
+aboard, what sensors were fitted, what was recorded, and who ordered the sortie. **Our data locates
+the aircraft. It does not place Charlie Kirk, Erika Kirk or anyone else anywhere, and it establishes
+no tasking in either direction.** Those records exist — a tasking order, a crew manifest, a sensor
+log — and every one of them sits behind a door this investigation cannot open, which is what the
+[Charlie Kirk Investigation Laws](/Fix/overview) are written to force.
+
 {/* CK_INTERESTING_HERE_START */}
 
 ## Interesting In This Area

@@ -1,0 +1,97 @@
+{
+  "verified_utc": "2026-08-24T17:36:21.953Z",
+  "radius_km": 15,
+  "method": "For each claimed overlap, both free ADS-B history archives were queried for the claimed foreign tail on the claimed date and the day either side. Positions were resolved to the nearest airport in the OurAirports public-domain gazetteer. A verdict of ELSEWHERE refutes a row; NO_ARCHIVE_COVERAGE and NOT_HEARD do not.",
+  "overlap_id": "EXTRA-006",
+  "date": "2025-09-10",
+  "claimed_airport": "KPVU",
+  "claimed_codes": [
+    "KPVU"
+  ],
+  "claimed_city": "Provo",
+  "claimed_state": "UT",
+  "claimed_tails": [
+    "SU-BND"
+  ],
+  "subject": "Charlie",
+  "audit_verdict": "accurate",
+  "site_page": "site/docs/Planes/following/overlap/20250910_UT_orem/overview.mdx",
+  "tails": {
+    "SU-BND": {
+      "2025-09-09": {
+        "adsb_lol_http": 200,
+        "airplanes_live_http": 200,
+        "archive_control_probe": null,
+        "both_agree": true,
+        "heard": true,
+        "at_claimed_airport": true,
+        "closest_approach_to_claimed_field": {
+          "code": "KPVU",
+          "km": 1.29,
+          "utc": "2025-09-09T20:03:33.780Z",
+          "on_ground": true
+        },
+        "airports_touched": [
+          "KPVU 1.3km on_ground"
+        ],
+        "first_where": "KPVU/PVU (Provo Municipal Airport, Provo UT) 1.3km",
+        "last_where": "KPVU/PVU (Provo Municipal Airport, Provo UT) 1.29km",
+        "points": 131,
+        "verdict": "AT_CLAIMED_AIRPORT"
+      },
+      "2025-09-10": {
+        "adsb_lol_http": 200,
+        "airplanes_live_http": 200,
+        "archive_control_probe": null,
+        "both_agree": true,
+        "heard": true,
+        "at_claimed_airport": true,
+        "closest_approach_to_claimed_field": {
+          "code": "KPVU",
+          "km": 1.29,
+          "utc": "2025-09-10T16:05:35.770Z",
+          "on_ground": true
+        },
+        "airports_touched": [
+          "KPVU 1.29km on_ground"
+        ],
+        "first_where": "KPVU/PVU (Provo Municipal Airport, Provo UT) 1.29km",
+        "last_where": "KPVU/PVU (Provo Municipal Airport, Provo UT) 1.3km",
+        "points": 257,
+        "verdict": "AT_CLAIMED_AIRPORT"
+      },
+      "2025-09-11": {
+        "adsb_lol_http": 404,
+        "airplanes_live_http": 404,
+        "archive_control_probe": {
+          "adsb-lol": {
+            "verdict": "COVERED",
+            "codes": [
+              404,
+              404,
+              200
+            ]
+          },
+          "airplanes-live": {
+            "verdict": "COVERED",
+            "codes": [
+              404,
+              404,
+              200
+            ]
+          }
+        },
+        "both_agree": false,
+        "heard": false,
+        "at_claimed_airport": false,
+        "closest_approach_to_claimed_field": null,
+        "airports_touched": null,
+        "first_where": null,
+        "last_where": null,
+        "points": null,
+        "verdict": "NOT_HEARD"
+      }
+    }
+  },
+  "verdict": "AT_CLAIMED_AIRPORT"
+}

@@ -1,0 +1,179 @@
+---
+displayed_sidebar: docs
+title: "T7-ELL San Marino Global Express"
+sidebar_label: "T7-ELL"
+description: "T7-ELL is the San Marino-registered Bombardier Global Express carried on this site's Egyptian armada fleet list. Thirty-seven aircraft-days of primary ADS-B data, 2022 to 2026, show a US and Gulf charter aircraft — not an Egyptian government jet, and not at any Kirk or TPUSA location."
+keywords:
+  - Charlie Kirk
+  - Charlie Kirk assassination
+  - T7-ELL
+  - T7ELL
+  - San Marino
+  - Bombardier Global Express
+  - flight tracking
+  - "ADS-B"
+  - Egyptian Plane Armada
+image: "/img/docusaurus-social-card.jpg"
+hide_table_of_contents: true
+---
+
+{/* Full-bleed marker: activates the site-wide full-width + text-wrap
+    layout in custom.css (full width + overflow-safe side videos). Scoped
+    via CSS :has(). */}
+<div className="ck-full-bleed" />
+
+<a href="/Planes/overview" style={{display:'inline-block', marginBottom:'1rem',
+padding:'0.35rem 0.9rem', background:'#1a73e8', color:'#fff',
+borderRadius:'4px', textDecoration:'none', fontSize:'0.9rem'}}>← Planes</a>
+
+# T7-ELL San Marino Global Express
+
+**T7-ELL** entered this investigation as a name on a list. When a fleet-list thread on X expanded the Egypt story from two jets to a "five-plane armada", it added two more identifiers — **T7ELL** and **EJM36** — and this site catalogued them alongside the five Egyptian SU- tails. For a long time nothing more was known about either, and the site said so plainly: [placeholder flags](/Planes/T7ELL-EJM36/overview), not established participants.
+
+That is no longer the state of the evidence for this tail. A recovery sweep of the free ADS-B archives on **24 August 2026** returned **37 aircraft-days of primary position data for T7-ELL**, spanning **1 February 2022 to 1 August 2026**. The raw traces are on disk in this repo at `site/docs/Planes/T7-ELL/data/recovered/`, each with a `.meta.json` sidecar recording the source, the URL, the HTTP status, the byte count and the retrieval time.
+
+What that data shows is the opposite of what the fleet list implies. **This page exists to state that correction rather than bury it.**
+
+## Aircraft identification
+
+* **Registration:** T7-ELL. The site's fleet list writes it **T7ELL**, without the hyphen; the registration itself carries one.
+* **Mode S / ICAO hex:** `50018a`. Every recovered trace self-identifies with this hex and with the string `"r": "T7-ELL"`, so the identity is carried by the data rather than assumed by us.
+* **Type:** ICAO type code **GLEX** — Bombardier Global Express. The trace files' own `desc` field reads *"BOMBARDIER BD-700 Global 6000/6500"*.
+* **Registry:** **`T7-` is the civil registration prefix of the Republic of San Marino.** It is **not** Egyptian. Egyptian civil registrations use **`SU-`**, which is what the five armada tails ([SU-BTT](/Planes/SU-BTT/overview), [SU-BND](/Planes/SU-BND/overview), [SU-BTU](/Planes/SU-BTU/overview), [SU-BTV](/Planes/SU-BTV/overview), [SU-BGM](/Planes/SU-BGM/overview)) actually carry. This site grouped T7-ELL with them because a fleet-list thread did. The prefix says otherwise, and the prefix is the record.
+* **Operator — two readings, neither Egyptian.** The community database **adsbdb returns "Solairus Aviation"**, a United States operator; this is the string recorded in `site/docs/Planes/following/apis/public_open_source/code/lib/fleet.js`. FlightRadar24's own page, read in a browser on 24 August 2026, gives **"Falcon Luxe" / "Falcon Luxe San Marino"** — see [T7ELL & EJM36](/Planes/T7ELL-EJM36/overview) for that reading. The two sources disagree and we are not reconciling them here. Both name a commercial charter operator. Neither names an Egyptian government entity.
+* **Row in the local plane register:** `site/docs/Planes/following/planes.csv`, which still records `NO PUBLISHED LEGS` for this tail. That row predates the recovery sweep.
+
+## What the primary flight data shows
+
+Provenance for the 37 days, from `site/docs/Planes/following/apis/public_open_source/data/provenance/tail_provenance.json`:
+
+| | days |
+|---|---|
+| Total aircraft-days of primary trace held | **37** |
+| Span | **2022-02-01 → 2026-08-01** |
+| Corroborated by **both** free daily archives | **5** |
+| **Recovered only from the backup network** (globe.airplanes.live) | **21** |
+| Held only by the ADS-B Exchange free monthly sample | **11** |
+| By source | adsbexchange-samples 12 · adsb.lol 5 · airplanes.live 26 |
+
+**Twenty-one of the thirty-seven days exist only because a second archive was checked.** adsb.lol does not hold them. That is not a finding about T7-ELL — a day one volunteer network hears and another does not is ordinary, and the archive-wide 403 and 404 bands described on [Flight Data Recovery](/Planes/Flight-Data-Recovery/overview) hit every aircraft tested, including unrelated controls. It is a finding about method: without the backup network this page would have had 16 days instead of 37.
+
+### The three 2022 days
+
+The free ADS-B Exchange sample publishes one full day per month, the **1st**, back to 2016. Three of those sampled days fall in 2022:
+
+| Date | First position | Last position | Points |
+|---|---|---|---|
+| **2022-02-01** | Agua Caliente Airport, **Dateland, Arizona** (6.89 km) | **Tucson International (KTUS)**, 1.62 km — on the ground | 242 |
+| **2022-08-01** | **Los Angeles International (KLAX)**, 1.39 km | **Tucson International (KTUS)**, 1.63 km — on the ground | 735 |
+| **2022-09-01** | **Los Angeles International (KLAX)**, 1.35 km | **Farnborough, United Kingdom (EGLF)**, 0.47 km — on the ground | 1,506 |
+
+**The sampling caveat travels with every one of these figures.** This is one day per month, not continuous coverage. Three sampled days establish that the aircraft was operating US domestic and transatlantic legs in 2022. They cannot support a rate, a frequency, or a pattern, and nothing on this page should be read as claiming one.
+
+The distances are **nearest-airport geometry computed from the trace**, not landing records. A last fix 1.62 km from Tucson International with the ground flag set is an aircraft on that field's surface; it is not an FBO receipt.
+
+### The shape of the whole record
+
+Across all 37 days the fields the aircraft touched most often are **Al Maktoum International, Dubai (OMDW) — 12 days**, then Los Angeles (KLAX) and Paris-Le Bourget (LFPB) at 4 each, Tucson (KTUS) and Chicago O'Hare (KORD) at 2 each, and then a long tail of single days across the Caribbean, Mexico, Brazil, Paraguay, West Africa, the Seychelles, the Gulf, Scandinavia, Romania and Ireland.
+
+**That is what a Dubai-based global charter aircraft looks like.** It is consistent with a San Marino flag of convenience and a commercial operator. It is not consistent with the profile of the SU- fleet, which concentrates on Egyptian fields, Paris-Le Bourget, and a short list of US airports.
+
+Eight of the 37 days touch the United States: Arizona and California in 2022, Los Angeles again in 2023, Miami-Opa Locka in 2024, and a Pennsylvania–Dulles–O'Hare sequence in early October 2025. **Not one of the 37 days puts this aircraft in Utah**, and **not one puts it at Provo Municipal (KPVU)** — the field the whole Provo claim turns on. None of the five states in the site's unverified clustering claim — Missouri, Delaware, Utah, Nebraska, Kansas — appears anywhere in its 37 days.
+
+The aircraft does reach Egypt: on **25–26 May 2026** the trace runs Paris-Le Bourget → Alexandria, then out of Egypt to Saudi Arabia the next day. That is **more than eight months after** the assassination, and it is one stop in a circuit that in the same fortnight also took in Rabat, Mexico, Paraguay, Rio de Janeiro, São Tomé, Gabon, Turkmenistan and Oman. It is recorded here because leaving it out would be selective; it does not carry the fleet-list claim.
+
+### Where it was in the September 2025 window
+
+The archives hold three days inside the fortnight the case turns on:
+
+| Date | Where the trace puts it |
+|---|---|
+| **2025-09-03** | Al Maktoum, **Dubai** → Margariti, **Greece** |
+| **2025-09-04** | Margariti, **Greece** → **Paris-Le Bourget** |
+| **2025-09-07** | **Paris-Le Bourget** → Al Maktoum, **Dubai** |
+
+Those are the days [SU-BTT](/Planes/SU-BTT/overview) is claimed to have been sitting on the ground at Provo. T7-ELL was on the other side of the Atlantic for all three of them, in both archives, which agree.
+
+**Absence is not proof, and this cuts in the honest direction.** We hold **no data at all** for 10 September 2025 for this tail — the next day held after 7 September is 1 October. Nothing here establishes where it was on the day itself. What it does establish is that on the three nearby days we can see, this aircraft was in Europe and the Gulf, and no source has ever placed it in Utah on any day.
+
+## What the Internet Archive holds
+
+Queried on 24 August 2026 without digest collapse and with retries, from `site/docs/Planes/following/apis/public_open_source/data/wayback/cdx_report.json.pulled-2026-08-24T17-35-55-163Z`:
+
+| Archived page | Snapshots | Statuses |
+|---|---|---|
+| `globe.adsbexchange.com/?icao=50018a` | **3**, 15 Oct 2022 → 3 Jan 2023 | all `200` |
+| `flightradar24.com/data/aircraft/t7-ell` | **0 — never archived** | — |
+| `flightaware.com/live/flight/T7-ELL` | **0 — never archived** | — |
+| `radarbox.com/data/registration/T7-ELL` | **0 — never archived** | — |
+| `planespotters.net/search?q=T7-ELL` | **0 — never archived** | — |
+
+**The three ADS-B Exchange snapshots are empty JavaScript shells and must not be cited as aircraft evidence.** The 18 December 2022 capture carries digest `U743ARQOTM724WNPQLSMSX7TSTHW3FYE`, which is **byte-identical to a snapshot of [SU-BND](/Planes/SU-BND/overview)'s page** at a different hex code. Identical bytes for two different aircraft means the Archive captured the application frame, not the aircraft data. There is no per-aircraft content in those files at all.
+
+**A correction to our own earlier run.** The first CDX pass recorded the RadarBox query for this tail as `"snapshots": 0`. It was not zero — the query had **failed with HTTP 504**, and the raw response saved at `data/wayback/https_www_radarbox_com_data_registration_T7_ELL_cdx.json` is an nginx gateway-timeout page. A failed query has an unknown count, not a zero one. The re-run on 24 August 2026 succeeded and returned a genuine empty result. The answer did not change; the reason it was believed did. We are stating it because a zero that was really an error is exactly the kind of thing that quietly hardens into a finding.
+
+**Four never-archived pages are absence of archival interest, not removal.** Nobody ever asked the Internet Archive to crawl them. Every CDX row we do hold for this tail is `statuscode=200`; there is no 200→404 transition anywhere in the dataset. **Nothing about T7-ELL was found to have been taken down.**
+
+## The overlap claim: T7-ELL is in none of it
+
+`site/docs/Planes/following/overlaps.csv` is the per-claim register for this investigation — **85 rows**, covering the Candace Owens spreadsheet, pairings claimed on X outside it, the five undated `UNPUB-` rows, and six pairings this repo derived itself.
+
+**T7-ELL appears in zero of those 85 rows.** So does EJM36. No researcher, on any side of this argument, has ever published a date, an airport, or a Kirk or TPUSA pairing for either identifier. The tail was never part of the 73 / ~23 / 72 / 70+ / 68 / 29 tallies — those counts belong to SU-BTT and SU-BND, and they remain disputed among themselves and are not averaged anywhere on this site.
+
+So the correction runs in both directions and both halves belong on the page:
+
+* **We now hold substantial primary data on this aircraft** — 37 days across four and a half years, more than we hold for [SU-BTU](/Planes/SU-BTU/overview), [SU-BTV](/Planes/SU-BTV/overview) or [SU-BGM](/Planes/SU-BGM/overview).
+* **None of it supports the reason the tail was listed.** It has no claimed overlap to test, it never touched Utah, and its registration and operator both point away from Egypt.
+
+## Counterpoints and innocent explanations
+
+* **The simplest explanation of every fact on this page is a commercial charter aircraft.** A San Marino registration, a US or Gulf commercial operator, a Dubai home base and a route map spanning five continents describe an ordinary long-range business jet for hire. Nothing on this page requires any other reading.
+* **A fleet-list mention is not evidence.** T7-ELL is on this site because one X thread grouped it with the SU- tails. Grouping is not sourcing. The identifier itself contradicts the grouping.
+* **Absence of Utah days is not proof it was never there.** Free ADS-B archives are volunteer-fed and have real holes; 37 days out of roughly 1,640 in the span is thin coverage by any measure. What we can say is that no archive we checked and no researcher we know of has placed it in Utah. That is a statement about the record, not about the aircraft.
+* **The 2022 legs come from one-day-per-month sampling.** Three US days in 2022 do not establish how often it was in the United States, and no sentence on this page should be read as claiming they do.
+* **The T7- register does host at least one Egyptian government aircraft.** A separately sourced case — the Bombardier Global 7500 registered **T7-EGY**, reported by aviation-tracking accounts as carrying the head of Egyptian General Intelligence — is set out on [T7ELL & EJM36](/Planes/T7ELL-EJM36/overview). **T7-EGY and T7-ELL are different registrations.** That precedent is a reason the San Marino register is worth a records request; it is not evidence about this airframe, and it must not be used as if it were.
+* **Nothing here identifies any owner, crew member, passenger or ground employee, and nothing here alleges wrongdoing by anyone.** No public record ties this aircraft to the events of 10 September 2025.
+
+## Open questions
+
+1. **What does the San Marino Civil Aviation Authority register say?** The register is small and the type, owner and operator record should be obtainable. That would settle the Solairus-versus-Falcon-Luxe disagreement from a primary record rather than from two community readings.
+2. **Which operator is correct, and were there more than one?** adsbdb and FlightRadar24 return different strings. Management companies change; a community database may carry a former operator.
+3. **Where was it on 10 September 2025?** No free archive holds that date for this tail. A commercial-tier history query (Pass 2) or an FBO record would answer it.
+4. **Why was it added to the fleet list at all?** The originating thread grouped it with five Egyptian tails without publishing a leg. Whether that was a misread registration, a second-hand list, or something with a source behind it has never been explained.
+5. **Is there any Kirk or TPUSA co-location anywhere in its 37 days?** On the record we hold, no — but 37 days is a sample, and the [event calendar](/Planes/following/overview) it would be tested against is itself incomplete.
+
+## Sources
+
+* `site/docs/Planes/T7-ELL/data/recovered/` — 44 raw trace files plus `.meta.json` sidecars, from adsb.lol `globe_history`, globe.airplanes.live, and the ADS-B Exchange free monthly sample. Source and date are in every filename.
+* `site/docs/Planes/following/apis/public_open_source/data/provenance/tail_provenance.json` — the per-tail day counts, sources, spans and first/last positions quoted above.
+* `site/docs/Planes/following/apis/public_open_source/data/wayback/cdx_report.json.pulled-2026-08-24T17-35-55-163Z` — the Internet Archive CDX re-run, and `.../https_www_radarbox_com_data_registration_T7_ELL_cdx.json` — the saved HTTP 504 body behind the corrected zero.
+* `site/docs/Planes/following/apis/public_open_source/code/lib/fleet.js` — the identifier, hex, type, registry and the adsbdb operator string, with its provenance recorded per field.
+* `site/docs/Planes/following/planes.csv` — the local plane register row, which still reads `NO PUBLISHED LEGS`.
+* `site/docs/Planes/following/overlaps.csv` — the 85-row overlap register in which this tail does not appear.
+
+## Related
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [T7ELL & EJM36 (Flagged Tails)](/Planes/T7ELL-EJM36/overview)
+* [Planes](/Planes/overview)
+* [Flight Data Recovery](/Planes/Flight-Data-Recovery/overview)
+
+</div>
+<div>
+
+* [Israel Planes](/Planes/Israel-Planes)
+* [The Following Pattern](/Planes/following/overview)
+* [SU-BTT](/Planes/SU-BTT/overview)
+
+</div>
+</div>
+
+## Track This Aircraft
+
+Research this aircraft's flight history yourself. The two major trackers differ in one important way:
+
+* [FlightRadar24 — T7-ELL](https://www.flightradar24.com/data/aircraft/t7-ell) — large commercial tracker that honors the FAA's [LADD](https://www.faa.gov/pilots/ladd) block list, so flights an owner has asked to hide can be missing.
+* [ADS-B Exchange — T7-ELL](https://globe.adsbexchange.com/?icao=50018a) — volunteer-fed, unfiltered tracker that does **not** honor LADD.

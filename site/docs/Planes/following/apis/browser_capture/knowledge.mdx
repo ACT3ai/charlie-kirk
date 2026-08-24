@@ -37,6 +37,93 @@ That last one has to be done properly or not at all. The claim "they scrubbed it
 thing in the world to say and the easiest thing in the world to disprove, and one bad example
 discredits every good one.
 
+## This pass had one specific job, it was run, and it refuted one of our own claims
+
+This pass used to be a general good idea. Then it acquired exactly one question that no other pass
+could answer — **and answering it took a claim off this site.**
+
+**Flightradar24 returns HTTP 403 to every scripted request, site-wide.** Tested 24 August 2026
+against 13 case tails, **7 unrelated control aircraft**, and Flightradar24's own home page: 403 on all
+of them, the same roughly 5,877-byte body every time. It is bot protection. It is not a decision about
+any aeroplane, and **it cannot tell a removed record from a present one.** The full control test is on
+[the commercial-API page](/Planes/following/apis/proprietary/knowledge).
+
+The consequence was direct. This site recorded the Flightradar24 history for
+[N102DZ](/Planes/N102DZ/overview) as **"a real removal, documented"**, on the reasoning that the
+Internet Archive holds a populated copy while the live URL 403s today. **The second half of that
+reasoning was gone**, and only a browser could see past the block — because a browser is what
+Flightradar24 will actually serve.
+
+### The capture, and what it found
+
+Run **24 August 2026**, from a real logged-out browser session, fetching each aircraft same-origin
+from inside www.flightradar24.com so the bot check was not in the way.
+
+`captures/fr24_page_availability_2026-08-24.tsv` — **20 aircraft pages: 16 subject tails and 4
+unrelated controls. HTTP 200 on every single one**, each with its full identity block.
+
+For N102DZ specifically the live page returns:
+
+| Field | Value |
+|---|---|
+| Title | `N102DZ - Gulfstream V [555] - Flightradar24` |
+| MODE S | `A00C85` |
+| Type code | `GLF5` |
+| Anything saying removed, blocked, restricted or unavailable | **Nothing** |
+
+Because that conclusion is load-bearing, it was **reproduced by a second, independent session** —
+`captures/fr24_n102dz_removal_test_2026-08-24b.tsv`, six probes, HTTP 200 every one. **Both runs
+agree.**
+
+**The claim "N102DZ was removed from Flightradar24" is REFUTED. Say refuted, not untested.** No
+aircraft page in this investigation has been removed from that site.
+
+### The control is what turned the empty table from a removal into a paywall
+
+N102DZ's flight-history table *is* empty. That is not a deletion — it is the free tier's **seven-day
+window**, and the controls prove it in the same session:
+
+| Aircraft | Bytes | History rows | Reading |
+|---|---|---|---|
+| **N102DZ** (subject) | 53,310 | 0 — "could not find data for specified flight" | Has not flown in seven days |
+| **N628TS** (**unrelated control**) | **53,318** | 0 — **the identical message** | Has not flown in seven days |
+| N888KG (subject) | 53,338 | 0 — same message | Same state |
+| SU-BTT (subject) | 68,606 | 56 | Flew recently |
+| SU-BND (subject) | 57,612 | 14 | Flew recently |
+| EI-DCL (control, Ryanair) | 238,357 | 683 | Flies daily |
+
+**Every row, subject and control alike, carries the upgrade paywall notice.** The empty table tracks
+whether the aircraft flew in the last seven days, and nothing else. **A control aircraft captured in
+the same session on the same day is not a nicety here — it is the entire method.** A capture of
+N102DZ alone would have proved nothing, whatever it showed, because there would have been nothing to
+compare it against.
+
+### What this does NOT settle, and it travels with the refutation everywhere
+
+**A page that loads today cannot testify about what its table held in May 2026.**
+
+* **"The page was taken down" — REFUTED.**
+* **"History was specifically purged and later restored" — beyond this method IN EITHER DIRECTION.**
+  Not supported, not refuted. **No page on this site may assert it.**
+* **A logged-out free tier is the weakest view Flightradar24 offers.** Silver shows 90 days, Gold a
+  year, Business three years. **We have not looked through a paid tier**, so every Flightradar24
+  observation in this investigation is a free-tier observation and should be read as one.
+
+The honest three lines, for any page that touches this:
+
+1. The Flightradar24 **403 our scripts see is bot protection.** It says nothing about any aircraft.
+2. The Flightradar24 **page is present and complete in a browser.** Nothing was taken down.
+3. **What it displayed in May 2026 is not reachable by any method we have, and we do not claim it.**
+
+And the general limit still stands for every other capture this pass will ever make: **a page that
+was public and is not now is a fact. Why is not something a capture can see.** A redesign, a URL
+change, a retention window, a commercial paywall, an owner's lawful blocking request and a deliberate
+removal all look identical from outside.
+
+**Do not defeat a paywall to run the paid-tier test.** A subscription honestly bought is a
+subscription; a workaround is the first thing a hostile reader uses to discard everything else on
+this site.
+
 ## What we already know is different
 
 Two changes are confirmed from the [open-source pass](/Planes/following/apis/public_open_source/knowledge),
@@ -57,6 +144,16 @@ every date from 12 October to at least 15 December 2025, for every aircraft we t
 with no connection to this case at all.** That band happens to cover the dates a tracker claims
 SU-BTT was photographed at Sharm el-Sheikh. **It is an archive-wide condition, not a suppression, and
 reporting it as one would be false.**
+
+**Corrected and extended, 24 August 2026.** A control basket of nine airframes — four from this case,
+**five unrelated** — mapped adsb.lol precisely: it serves normally through **11 October 2025**, then
+**403 for every aircraft from exactly 12 October 2025 to about 30 December 2025**, then **404 for
+every aircraft from about 31 December 2025 to about 1 August 2026**, then normal again from about
+**2 August 2026**. The earlier "31 December works" was wrong. A second archive,
+`globe.airplanes.live`, serves from about November 2023 to the present **throughout both bands**, so
+the Sharm el-Sheikh dates can now be checked after all. **Both bands behave identically for control
+aircraft. Neither is about this case and neither may be reported as scrubbing.** The full map is on
+[the open-source page](/Planes/following/apis/public_open_source/knowledge).
 
 ## What APIs they have — read as: which sites can be captured at all
 
@@ -126,10 +223,19 @@ checks — and it deserves to be.
 
 ## What we got so far
 
-**No browser captures yet.** `apis/browser_capture/captures/` is empty and this section will say so
-until it is not.
+**One site captured, out of eight. Flightradar24, twice, on 24 August 2026.**
 
-But the Internet Archive half of the job has been run, and it produced the most uncomfortable finding
+| Capture | What it covers | Result |
+|---|---|---|
+| `captures/fr24_page_availability_2026-08-24.tsv` | 16 subject tails + 4 unrelated controls | **HTTP 200 on all 20.** Full identity blocks. Nothing removed. |
+| `captures/fr24_n102dz_removal_test_2026-08-24b.tsv` | Independent re-test, 6 probes, different operator | **HTTP 200 on all 6.** Reproduces the first run. |
+
+**That is 1 site of 8** — all 16 Flightradar24 targets, plus 4 control aircraft that are not in
+`targets.json` at all and were added precisely because a capture without a control proves nothing.
+ADS-B Exchange, FlightAware, RadarBox, Planespotters, JetPhotos, the adsb.lol globe and the
+airplanes.live globe have not been captured at all: **112 of the 128 targets are untouched.**
+
+The Internet Archive half of the job has also been run, and it produced the most uncomfortable finding
 on this page.
 
 ### Nobody archived the evidence
@@ -140,10 +246,14 @@ RadarBox and Planespotters.
 
 **22 of the 30 have zero snapshots.** Including both of these:
 
+> **CORRECTED — the figure is 21, and one of the zeros below was ours.** See "The sweep was re-run,
+> and three of its zeros were failed queries" below. **SU-BTT's ADS-B Exchange page has 3 snapshots,
+> not 0.** The Flightradar24 row is unchanged and still reads zero.
+
 | Page | Snapshots | Range |
 |---|---|---|
 | **Flightradar24 — SU-BTT** | **0** | **never captured** |
-| **ADS-B Exchange — SU-BTT** | **0** | **never captured** |
+| ~~**ADS-B Exchange — SU-BTT**~~ **corrected → 3** | ~~0~~ **3** | ~~never captured~~ **1 Sep – 17 Dec 2022** |
 | Flightradar24 — SU-BND | 2 | Oct 2025 – Nov 2025 |
 | Flightradar24 — SU-BTU | 1 | Aug 2022 |
 | Flightradar24 — SU-BGM | 1 | May 2020 |
@@ -159,11 +269,53 @@ aircraft-history page nor its ADS-B Exchange page was ever archived** — while 
 Egyptian tails have at least one snapshot of one or the other. Not before the claim, not during it,
 not after.
 
+**Corrected.** SU-BTT's **ADS-B Exchange** page **was** archived — 3 snapshots, 1 September to
+17 December 2022. What survives is the narrower and still-uncomfortable version: **SU-BTT has zero
+archived snapshots on Flightradar24, FlightAware, RadarBox and Planespotters**, and its three ADS-B
+Exchange snapshots all predate the claim by three years. The aircraft the case turns on is still the
+one with almost no page archive — but the sentence above overstated it, and the overstatement was
+caused by our own failed query.
+
 The two SU-BND snapshots that do exist are both dated **after** the October 2025 broadcast that
 launched the claim. They record the reaction, not the evidence.
 
 Every ADS-B Exchange snapshot predates the claim by two to three years, so none of them shows what a
 tracker was looking at in autumn 2025 either.
+
+### The sweep was re-run, and three of its zeros were failed queries
+
+Two things were wrong with the first sweep, and both were ours.
+
+**One — the query threw away the evidence it was looking for.** It used `collapse=digest`, which
+returns only **distinct-content** captures. Every count it produced was a **floor, not a total**, and
+the test the sweep exists to run — *did this page stop changing?* — was **impossible by
+construction**, because collapsing on digest discards exactly the repeated captures that test needs.
+
+**Two — three queries failed with HTTP 504 and were written into the report as `"snapshots": 0`.** A
+timeout was recorded as an absence. One of the three was `globe.adsbexchange.com/?icao=0101d3` —
+**SU-BTT**.
+
+The re-run drops the collapse, adds retries, and **reports a failed query as `UNKNOWN` rather than as
+zero.** **30 of 30 queries succeeded, 0 failed.**
+
+| | |
+|---|---|
+| Total snapshots | 19, across 9 URLs |
+| Genuinely never archived | **21 URLs** — query succeeded, result empty |
+| HTTP status of every CDX row on every URL | **200** |
+| **200 → 404 transitions anywhere in the dataset** | **None** |
+
+**There is no 200→404 transition anywhere in this data.** Any page on this site claiming one is wrong.
+
+**And the ADS-B Exchange snapshots that do exist are empty JavaScript shells.** Digest
+`AJQHJML54QE6X2IE4TMCM24E3DPGKFD6` is byte-identical across **SU-BGM, SU-BTV and SU-BTU**;
+`U743ARQOTM724WNPQLSMSX7TSTHW3FYE` across **SU-BND and T7-ELL**. Identical bytes for different ICAO
+hex codes can only mean the Archive captured the application frame, not the aircraft data. **Those
+snapshots carry no per-aircraft evidence and must not be cited as if they did** — which means the
+"3 snapshots" correction above restores a count, not an item of evidence.
+
+**Twenty-one URLs nobody ever asked the Archive to crawl is not suppression.** It is the ordinary
+state of almost every page on the internet.
 
 **What this means, stated carefully.** It does not mean anything was removed. It means that for the
 aircraft at the centre of this case **there is currently no independent record of what the tracking
@@ -179,13 +331,24 @@ Raw responses: `apis/public_open_source/data/wayback/`.
 
 ## What we did NOT get
 
-* **No captures at all**, of any site, on any aircraft. 128 targets, none done.
+* **What any Flightradar24 page displayed on a past date.** The removal claim is refuted; the
+  narrower purge-and-restore question is **beyond this method in either direction**, and no page on
+  this site may assert it.
+* **The paid-tier Flightradar24 view.** Every observation we hold is from a **logged-out free tier**
+  — 7 days, against 90 days on Silver, a year on Gold, three years on Business. Nobody has looked
+  through a paid account, us included.
+* **No screenshot or `monolith` freeze accompanies the two Flightradar24 captures.** They are
+  tab-separated readings of the rendered pages. **A capture is supposed to carry the picture as well**
+  — that is a gap in our own method, not in the finding.
+* **Seven of the eight target sites, uncaptured.** 112 of 128 targets untouched: ADS-B Exchange,
+  FlightAware, RadarBox, Planespotters, JetPhotos, the adsb.lol globe, the airplanes.live globe.
 * **No URL-variant sweep.** The zero-snapshot result above needs re-running against trailing slashes,
   alternate paths and the sites' older URL schemes before it is quotable.
 * **No copy of the original screenshots** the claims were read off, with their own provenance —
-  which post, which date, which account. Given that the Archive holds nothing for SU-BTT, **those
-  screenshots may now be the only record of what the page showed**, which makes collecting them with
-  their provenance the single most urgent task on this page.
+  which post, which date, which account. Given that the Archive holds nothing usable for SU-BTT —
+  zero on four sites, and three empty JavaScript shells on the fifth — **those screenshots may now be
+  the only record of what the page showed**, which makes collecting them with their provenance the
+  single most urgent task on this page.
 * **No record of which tracked tails, if any, appear on a vendor blocking list.**
 * **No capture of the sites that are now closed** — the ADS-B Exchange historical pages and the
   airplanes.live API — as they appear today, showing the paywall and the gate. Those are quick and

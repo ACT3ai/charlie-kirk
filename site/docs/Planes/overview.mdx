@@ -58,6 +58,9 @@ that matches your question.
 * [TPUSA Events + Aircraft](/Planes/following/TPUSA_events)
 * [Erika Flight Logs Erased](./Erika-Flight-Logs-Erased)
 * [Flight Data Recovery — what came back](./Flight-Data-Recovery/overview)
+  * [Per-Aircraft Recovery Status](./Flight-Data-Recovery/Per-Aircraft-Status) — one row per tail, every source
+  * [Overlap Recovery](./Flight-Data-Recovery/Overlap-Recovery) — all 69 alleged following-flights, tested
+  * [What A 403 Actually Means](./Flight-Data-Recovery/What-A-403-Means) — the control test, and the removal claim it retracted
 * [Erika Kirk's flights](/Planes/following/Erika_Kirk_Flights)
 * [Sept 10 Flight Timeline](./Sept10-Flight-Timeline)
 * [N1098L Spy Plane](./N1098L/overview)
@@ -198,6 +201,27 @@ Every claimed overlap has been reconstructed from the compilation that produced 
 
 That is a narrower claim than the broadcast one and a far harder one to dismiss. Full working: **[Following overview](/Planes/following/overview)**.
 
+### Every claimed overlap has now been tested against primary ADS-B position data
+
+On **24 August 2026** all 85 rows of the overlap register were checked against raw position traces from two independent free archives — the claimed date and the day either side, measured as the aircraft's closest approach in kilometres to the claimed field. **This is the first time the sheet has been tested against position data rather than against another reading of a tracking website.**
+
+| Verdict | Rows |
+|---|---|
+| **At the claimed airport** — confirmed | **24** |
+| **Elsewhere** — refuted | **12** |
+| Not heard / no archive coverage — **undecidable** | 42 |
+| No aircraft or no date named in the source row | 7 |
+
+**Of the 36 rows that could be decided, 24 are corroborated and 12 refuted.** Published audits of this sheet put roughly two rows in three in the wrong place; against primary position data it runs the other way. Where the two disagree — 7 rows of the 36 — **the disagreement is shown, not reconciled**: full cross-tabulation on [Following Charlie or Erika](/Planes/Following-Charlie-Erika).
+
+**The limit is the same size as the number.** A confirmed position confirms **the aircraft half** of a pairing. It does not put Charlie Kirk or Erika Kirk anywhere. The Kirk half is unchanged — thin for Charlie, close to empty for Erika, whose [flight logs are reported erased](/Planes/Erika-Flight-Logs-Erased). **A confirmed aircraft is not a confirmed overlap.** And the 42 undecidable rows are holes: an empty archive response means the archive had nothing, not that the aircraft was hidden or absent. Counterargument, unchanged and carried on every page below: Duncan Aviation's Egyptian Air Force maintenance account dates to about 1999, and a Falcon on a Duncan ramp is what a maintenance visit looks like.
+
+**Three other results from the same run**, each argued in full on the page named:
+
+* **The 2022 wall is broken.** This site published that no free archive reaches 2022 and that every 2022 claim rested on a screenshot. **A free monthly full-day sample reaches back to 2016**, and it puts **SU-BTT on the ground at Wilmington, Delaware on 1 June 2022** and **at Wichita, Kansas on 1 September 2022**, and **SU-BTU on final approach into St Louis, Missouri on 1 December 2022** — three of the five claimed clustering states, now with primary position data behind them instead of a tally. **Sampling caveat, mandatory every time: one day per month, the first. It shows the aircraft was in the United States in 2022; it says nothing about how often.** → [Following overview](/Planes/following/overview)
+* **152 aircraft-days were recovered from a backup network that the primary archive does not hold**, across 12 aircraft — and the run's control result matters more than the headline: over **1–16 September 2025**, the fortnight the case turns on, **the two archives agree on 74 of 75 days. There is no scrubbing in the critical window.** → [Flight Data Recovery](/Planes/Flight-Data-Recovery/overview)
+* **153 flight legs were recovered from archived tracking pages that a previous run had recorded as zero.** The zeros were a parsing failure, not an absence of evidence. **Anything on this site that rested on them has to be re-read.** → [Overlap Recovery](/Planes/Flight-Data-Recovery/Overlap-Recovery)
+
 ### The top issues inside that section, and where each is argued
 
 **The count itself, and who it is really about** — [Following overview](/Planes/following/overview) opens with the breakdown above. The row-by-row reconstruction of the sheet is [The 73 overlaps](/Planes/following/73_overlaps), and every claimed overlap has a page under [Overlap dates](/Planes/following/overlap/overview).
@@ -242,7 +266,11 @@ Stating both halves, because the section is only as strong as its weakest claim.
 **Established from primary records:**
 
 * The full **Flightradar24 flight histories** for all five Egyptian-registered aircraft, leg by leg, with aircraft serial numbers, hex codes and operator entries.
-* **SU-BTT at Provo 4–10 September 2025**, departing for Wilmington at **07:14 local**, reaching Cairo on 11 September. Confirmed by the hostile audit of the overlap sheet as well as by the export.
+* **SU-BTT at Provo 4–10 September 2025**, departing for Wilmington at **07:14 local**, reaching Cairo on 11 September. Confirmed by the hostile audit of the overlap sheet as well as by the export — **and now settled to the second from raw ADS-B traces held by two independent archives that agree to within 10 milliseconds**: first fix **on the ground at Provo (KPVU, 1.37 km) 13:07:53.66 UTC = 07:07:53 MDT**, **wheels up 13:14:03.82 UTC = 07:14:03 MDT**, last tracked **on approach to Wilmington, Delaware (KILG, 1.75 km) 16:50:37.53 UTC = 12:50:37 EDT**. The three competing departure narratives this section carried are resolved: the "~07:08" figure is the day's first fix, not a second departure, and the Dugway-origin reading does not survive. **SU-BTT was on the ground in Delaware roughly ninety minutes before the shooting.** → [Sept 10 Flight Timeline](/Planes/Sept10-Flight-Timeline)
+* **SU-BND did not move on 10 September 2025.** Its first and last fixes that day are the same Provo position, **1.29 km, 16:05:35 UTC**; it is also recorded on the ground at Provo at **20:03:33 UTC on 9 September** and **16:48:52 UTC on 12 September**. A claim that previously rested on a broadcast reading of a tracker is now primary data.
+* **The 2022 window has position data behind it for the first time.** SU-BTT on the ground at **Wilmington, Delaware on 1 June 2022** and at **Wichita, Kansas on 1 September 2022**; SU-BTU on final approach into **St Louis, Missouri on 1 December 2022**; SU-BND at 41,000 ft **over Indiana on 1 September 2022**. **One day per month, the first — a sample, never a rate.**
+* **Twenty-four of the 85 claimed overlaps are confirmed and twelve refuted from primary position data**, with 42 undecidable. **A confirmed aircraft is not a confirmed overlap** — the Kirk half of every one of the 24 is unchanged.
+* **152 aircraft-days recovered from a backup ADS-B network** the primary archive does not hold, and **153 flight legs re-extracted from archived tracking pages a previous run had recorded as zero**.
 * **SU-BND at Provo 23 May – 13 September 2025 — 113 days, with exactly two flights in all of it**, both Provo→Provo round-robins.
 * **Two Egyptian jets at Provo simultaneously in April 2025** (SU-BTU and SU-BGM) — five months before the assassination, and not previously recorded here.
 * **N59906**'s five survey passes at 11:01, 11:09, 11:18, **11:26** and 11:35 — five, not four — at 19,000 ft under a discrete ATC squawk on a 2h39m closed loop out of Provo.
@@ -255,6 +283,9 @@ Stating both halves, because the section is only as strong as its weakest claim.
 * Which aircraft was actually at **Provo on 27 May 2025** — the export says [SU-BTV](/Planes/SU-BTV/overview), the Owens account says [SU-BTU](/Planes/SU-BTU/overview), and a named-passenger inference rests on the answer.
 * Whether **N59906's registration is genuinely "In Question"** on the FAA registry, as alleged. No registry screenshot has been produced.
 * Who was aboard any of these aircraft. **No manifest for any leg has been published by anyone.** Note that these aircraft cleared US customs at **Minot, North Dakota** — not at Provo — so the entry records are North Dakota records.
+* **Whether the reported FlightRadar24 removal of [N102DZ](/Planes/N102DZ/overview) ever happened.** This is a correction to this site. A scripted probe returned HTTP 403 and that was reported here as evidence. **A control test on 24 August 2026 voided the method**: all 13 case tails, seven unrelated control aircraft, the FlightRadar24 index and **FlightRadar24's own home page** all returned 403, every one with the same ~5,877-byte body. **The site returns 403 to scripted requests everywhere.** The status code cannot distinguish a removed record from a present one, in either direction. The honest standing is **UNTESTED — the method cannot see it**. Meanwhile the aircraft-side data was recovered anyway: **66 days of N102DZ position trace, 2022 to 2026, including 35 days inside the window the removal was reported for.** → [What A 403 Actually Means](/Planes/Flight-Data-Recovery/What-A-403-Means) and [Erika Flight Logs Erased](/Planes/Erika-Flight-Logs-Erased)
+* **Where Erika Kirk was on any of the claimed dates.** Zero recovered aircraft-days produce an itinerary for a person. No dated Erika Kirk itinerary has been published by anyone, and of **139 sourced Kirk and Turning Point appearances**, exactly one places her at an event before 10 September 2025 with a firm date. **This is the gap the largest number in the investigation is measured against, and none of the recovery work narrows it.**
+* **Whether any archive gap is suppression.** Two long gaps in the primary free archive — a 403 band from 12 October 2025 and a 404 stretch running into mid-2026 — **return the same result for unrelated control aircraft with no connection to this case.** They are archive-wide conditions. **They must never be reported as scrubbing**, and the one band that happens to cover dates of interest is the one most likely to be misreported that way.
 
 
 {/* CK_INTERESTING_HERE_START */}

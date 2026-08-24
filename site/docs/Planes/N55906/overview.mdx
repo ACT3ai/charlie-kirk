@@ -178,6 +178,102 @@ file has a `.meta.json` sidecar recording source, URL, HTTP status, bytes and da
 Fleet-wide: [Flight Data Recovery](/Planes/Flight-Data-Recovery/overview) ·
 [Per-Aircraft Recovery Status](/Planes/Flight-Data-Recovery/Per-Aircraft-Status)
 
+## The primary flight data we hold on this aircraft, and where it came from
+
+**None. Not one position fix, on any date, from any free archive.**
+
+Every other aircraft page in this investigation carries a table of aircraft-days and archives. This
+one carries the opposite, and the empty result is the finding rather than an apology for the absence
+of one.
+
+**The thread marker first.** N55906 was raised inside the **ISR / HADES** line of inquiry, beside
+[N1098L](/Planes/N1098L/overview). That is a **different claim** from the eighteen-month pattern of
+foreign-registered aircraft alleged to have shadowed Charlie and Erika Kirk, which lives at
+[Following Planes](/Planes/following/overview). This site links the two threads and never merges
+them.
+
+### What we looked for, and where
+
+Pulled **24 August 2026**, matching on the Mode S hex **`a72351`** rather than on the printed
+registration, because hex codes are copied from tracker output and registrations are retyped by
+hand:
+
+| Source | Queried | Result |
+|---|---|---|
+| **adsb.lol** globe history | **67 dates** across all three case windows | HTTP 404 or 403 on every one — **0 days** |
+| **globe.airplanes.live** | the **same 67 dates** | HTTP 404 on every one — **0 days** |
+| **ADS-B Exchange monthly sample** | **56 months** back to 2022 | **0 months found** |
+| **FlightAware activity log** | live, 24 Aug 2026 | **HTTP 200 — 0 legs** |
+| Internet Archive | all tracking-site URLs for this tail | **1 snapshot**, a FlightAware page from **4 March 2010**; 0 flight rows |
+
+The three case windows are **1–16 September 2025** (the fortnight the case turns on), **8–16 October
+2025**, and **25 April – 5 June 2026**. Every date in all three was asked of both archives
+independently. Every one came back empty. The verdict recorded against all 67 rows in
+`site/docs/Planes/following/apis/public_open_source/data/recovery/recovery_index.json` is the same
+word: `NEITHER_HAS_IT`. The list of the September dates and their HTTP codes is on disk at
+`site/docs/Planes/N55906/data/adsb/MISSING_DATA.md`.
+
+**The FlightAware line is the one that carries the most weight, because it is a control rather than
+an absence.** The same script, the same endpoint, the same afternoon: **N1098L returned 37 legs,
+N2100L returned 37 legs, N59906 returned 13 legs. N55906 returned zero.** The method works. It found
+flights for the other three aircraft on this thread. It found none for this one.
+
+### Both readings, side by side, and we do not choose between them
+
+**Reading one — the aircraft.** N55906 is a **1973 Piper PA-28R-200 Cherokee Arrow**, a four-seat
+piston single. A light aircraft of that vintage may carry no ADS-B Out transmitter at all, and even
+where one is fitted, a low-and-slow single operating from small fields is exactly the class of
+aircraft the volunteer receiver networks hear worst — coverage thins out sharply below a few thousand
+feet away from the big metropolitan areas. An ADS-B blank is the **ordinary condition** for this
+class of aircraft, not an anomaly.
+
+**Reading two — the limit of the method.** **An absence of a track is not evidence of anything being
+hidden.** It is not evidence that the aircraft was grounded, that a transponder was switched off, or
+that a record was removed. **Nothing can be removed from an archive that never recorded it.** These
+archives serve what volunteer receivers happened to hear; silence in them is silence, and it does not
+travel in either direction as proof.
+
+Both of those are true at once and neither is chosen over the other here.
+
+### What the empty result does do — it strengthens the transposition warning
+
+This page already warns, at length, that **N55906 and [N59906](/Planes/N59906/overview) differ by a
+single digit** and that the digit-transposition risk is high. **The empty result makes that warning
+stronger, and the two findings should be read together.**
+
+Hold the two tails side by side as the primary data actually returns them:
+
+| | N55906 | [N59906](/Planes/N59906/overview) |
+|---|---|---|
+| Mode S hex | `a72351` | `a7c14d` |
+| Type | Piper PA-28R-200, four-seat piston single | Piper PA-31 Navajo Chieftain, survey twin |
+| Days of primary trace held | **0** | **48**, spanning 2022–2026 |
+| Trace on 10 September 2025 | **none** | **held by both archives**, 1,289 and 1,579 points |
+| Utah Valley on 10 Sep 2025 | **nothing** | **five passes over UVU at 19,000 ft, 11:01–11:35 MDT**, matching the published timeline to the minute |
+| FlightAware legs, 24 Aug 2026 | **0** | 13 |
+
+Every checkable detail that circulates attached to "N55906" — the survey passes, the mapping grid,
+the Provo round trip, the MARC Inc. operator, the ADS-B Exchange capture stamped
+**2025-09-10 18:06:10 Z** — now has **primary position data behind it under the other tail number**,
+and **none at all under this one**. On this evidence, **a source naming N55906 has most likely meant
+N59906.**
+
+**The rule that follows is a practical one: match on the hex code, never on the printed
+registration.** `a7c14d` is the survey Piper. `a72351` is a fifty-three-year-old four-seat single
+that two independent archives have never heard, on any of the 67 dates that matter to this case.
+
+### The counterargument
+
+The counterargument to an empty result is the simplest one on this site: **the aircraft was not
+there, or it was there and nobody heard it, and our method cannot tell those apart.** It also cannot
+tell you whether [John Cullen](/Influencers/john-cullen) has some basis for flagging this tail that
+has never been published — he may, and this sweep says nothing about that either way. What it does
+establish is narrower and firmer than any of that: **we looked, in two independent archives, on 67
+dates, plus 56 monthly full-day samples and a live activity log that returned flights for the other
+three aircraft on this thread, and we found no trace of this airframe.** Our data locates aircraft;
+it places no person anywhere, and it establishes nothing about tasking in either direction. **The
+burden sits on the claim.**
+
 {/* CK_INTERESTING_HERE_START */}
 
 ## Interesting In This Area

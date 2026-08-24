@@ -1,0 +1,9 @@
+{
+  "verified_utc": "2026-08-24T17:36:21.953Z",
+  "radius_km": 15,
+  "method": "For each claimed overlap, both free ADS-B history archives were queried for the claimed foreign tail on the claimed date and the day either side. Positions were resolved to the nearest airport in the OurAirports public-domain gazetteer. A verdict of ELSEWHERE refutes a row; NO_ARCHIVE_COVERAGE and NOT_HEARD do not.",
+  "overlap_id": "UNPUB-003",
+  "date": "UNKNOWN",
+  "verdict": "NO_DATE_CLAIMED",
+  "note": "This row has no date. It is one of the five carried to mark the gap between the 67 rows the source sheet published and the 72 overlaps it claims. A claim with no date cannot be checked by anyone, including its author."
+}

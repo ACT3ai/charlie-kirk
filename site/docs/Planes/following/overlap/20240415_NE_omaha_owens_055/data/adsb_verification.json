@@ -1,0 +1,129 @@
+{
+  "verified_utc": "2026-08-24T17:36:21.953Z",
+  "overlap_id": "OWENS-055",
+  "date": "2024-04-15",
+  "claimed_airport": "KOMA",
+  "claimed_codes": [
+    "KOMA"
+  ],
+  "claimed_city": "Omaha",
+  "claimed_state": "NE",
+  "claimed_tails": [
+    "SU-BTT"
+  ],
+  "subject": "Erika",
+  "audit_verdict": "inaccurate",
+  "site_page": "site/docs/Planes/following/Omaha_KOMA_2024-02-09_to_2025-10-05/overview.mdx",
+  "tails": {
+    "SU-BTT": {
+      "2024-04-14": {
+        "adsb_lol_http": 404,
+        "airplanes_live_http": 404,
+        "archive_control_probe": {
+          "adsb-lol": {
+            "verdict": "COVERED",
+            "codes": [
+              404,
+              404,
+              404,
+              404,
+              404,
+              404,
+              404,
+              200
+            ]
+          },
+          "airplanes-live": {
+            "verdict": "COVERED",
+            "codes": [
+              404,
+              404,
+              404,
+              404,
+              404,
+              404,
+              404,
+              200
+            ]
+          }
+        },
+        "both_agree": false,
+        "heard": false,
+        "at_claimed_airport": false,
+        "closest_approach_to_claimed_field": null,
+        "airports_touched": null,
+        "first_where": null,
+        "last_where": null,
+        "points": null,
+        "verdict": "NOT_HEARD"
+      },
+      "2024-04-15": {
+        "adsb_lol_http": 404,
+        "airplanes_live_http": 404,
+        "archive_control_probe": {
+          "adsb-lol": {
+            "verdict": "COVERED",
+            "codes": [
+              404,
+              404,
+              404,
+              404,
+              404,
+              404,
+              404,
+              404,
+              200
+            ]
+          },
+          "airplanes-live": {
+            "verdict": "COVERED",
+            "codes": [
+              404,
+              404,
+              404,
+              404,
+              404,
+              404,
+              404,
+              404,
+              200
+            ]
+          }
+        },
+        "both_agree": false,
+        "heard": false,
+        "at_claimed_airport": false,
+        "closest_approach_to_claimed_field": null,
+        "airports_touched": null,
+        "first_where": null,
+        "last_where": null,
+        "points": null,
+        "verdict": "NOT_HEARD"
+      },
+      "2024-04-16": {
+        "adsb_lol_http": 404,
+        "airplanes_live_http": 200,
+        "archive_control_probe": null,
+        "both_agree": false,
+        "heard": true,
+        "at_claimed_airport": false,
+        "closest_approach_to_claimed_field": {
+          "code": "KOMA",
+          "km": 12308.01,
+          "utc": "2024-04-16T16:42:51.880Z",
+          "on_ground": false
+        },
+        "airports_touched": [
+          "HECA 6.59km below_4000ft",
+          "HE15 6.51km below_4000ft",
+          "HEAZ 8.45km below_4000ft"
+        ],
+        "first_where": "HECA/CAI (Cairo International Airport, Cairo EG) 6.59km",
+        "last_where": "HEAZ (Almaza Air Force Base, El Nozha EG) 6.38km",
+        "points": 8,
+        "verdict": "ELSEWHERE"
+      }
+    }
+  },
+  "verdict": "ELSEWHERE"
+}

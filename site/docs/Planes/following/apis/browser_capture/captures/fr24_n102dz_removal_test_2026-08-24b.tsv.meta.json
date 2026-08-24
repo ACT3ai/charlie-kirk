@@ -1,0 +1,13 @@
+{
+  "retrieved_utc": "2026-08-24T18:05:00Z",
+  "source": "browser_capture/flightradar24",
+  "source_role": "PASS 4 - a real logged-out browser session, which is the only way to ask FlightRadar24 anything. Scripted requests get 403 site-wide.",
+  "method": "Chrome navigation to the N102DZ aircraft page, then same-origin fetch of five further aircraft from inside that page so all six share one real session.",
+  "http_status": 200,
+  "reproduces": "fr24_page_availability_2026-08-24.tsv",
+  "independent": true,
+  "finding": "The FlightRadar24 page for N102DZ is NOT removed. HTTP 200, full identity block, MODE S A00C85, TYPE CODE GLF5. The empty history table is the free tier's seven-day window; the unrelated control N628TS behaves identically.",
+  "does_not_establish": "What this page displayed in May 2026. A page loading today cannot testify about a table's contents eight months ago. 'The page was taken down' is refuted; a narrower purge-and-restore claim is beyond this method in either direction.",
+  "controls_used": ["N628TS", "EI-DCL"],
+  "counterargument": "A logged-out free-tier session is the weakest view FlightRadar24 offers. A paid tier shows 90 days to 3 years, and this test cannot see what a paid tier would show for the disputed window."
+}

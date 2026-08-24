@@ -1,0 +1,114 @@
+{
+  "verified_utc": "2026-08-24T17:36:21.953Z",
+  "overlap_id": "OWENS-046",
+  "date": "2023-02-25",
+  "claimed_airport": "KSUS",
+  "claimed_codes": [
+    "KSUS"
+  ],
+  "claimed_city": "St. Louis",
+  "claimed_state": "MO",
+  "claimed_tails": [
+    "SU-BTT"
+  ],
+  "subject": "Erika",
+  "audit_verdict": "partial",
+  "site_page": "site/docs/Planes/following/StLouis_KSTL_2022-12-20_to_2025-02-23/overview.mdx",
+  "tails": {
+    "SU-BTT": {
+      "2023-02-24": {
+        "adsb_lol_http": 200,
+        "airplanes_live_http": 200,
+        "archive_control_probe": null,
+        "both_agree": true,
+        "heard": true,
+        "at_claimed_airport": false,
+        "closest_approach_to_claimed_field": {
+          "code": "KSUS",
+          "km": 6892.13,
+          "utc": "2023-02-24T10:59:52.750Z",
+          "on_ground": false
+        },
+        "airports_touched": [
+          "LFPZ 9.7km below_4000ft",
+          "LFPB 11.6km below_4000ft",
+          "LGKF 32.45km first_fix"
+        ],
+        "first_where": "LGKF/EFL (Kefallinia Airport, Kefallinia Island GR) 32.45km",
+        "last_where": "LFPB/LBG (Paris-Le Bourget International Airport, Paris FR) 11.6km",
+        "points": 612,
+        "verdict": "ELSEWHERE"
+      },
+      "2023-02-25": {
+        "adsb_lol_http": 200,
+        "airplanes_live_http": 200,
+        "archive_control_probe": null,
+        "both_agree": true,
+        "heard": true,
+        "at_claimed_airport": true,
+        "closest_approach_to_claimed_field": {
+          "code": "KSUS",
+          "km": 3.1,
+          "utc": "2023-02-25T18:41:11.860Z",
+          "on_ground": false
+        },
+        "airports_touched": [
+          "LFPG 4.74km below_4000ft",
+          "LFPH 7.71km below_4000ft",
+          "LFPE 7.5km below_4000ft",
+          "KSTL 0.6km below_4000ft",
+          "K1H0 7.16km below_4000ft",
+          "KSUS 7.3km below_4000ft"
+        ],
+        "first_where": "LFPG/CDG (Charles de Gaulle International Airport, Paris (Roissy-en-France, Val-d'Oise) FR) 4.74km",
+        "last_where": "KSUS/SUS (Spirit of St Louis Airport, St Louis MO) 3.1km",
+        "points": 794,
+        "verdict": "AT_CLAIMED_AIRPORT"
+      },
+      "2023-02-26": {
+        "adsb_lol_http": 404,
+        "airplanes_live_http": 404,
+        "archive_control_probe": {
+          "adsb-lol": {
+            "verdict": "NOT_COVERED",
+            "codes": [
+              404,
+              404,
+              404,
+              404,
+              404,
+              404,
+              404,
+              404,
+              404
+            ]
+          },
+          "airplanes-live": {
+            "verdict": "NOT_COVERED",
+            "codes": [
+              404,
+              404,
+              404,
+              404,
+              404,
+              404,
+              404,
+              404,
+              404
+            ]
+          }
+        },
+        "both_agree": false,
+        "heard": false,
+        "at_claimed_airport": false,
+        "closest_approach_to_claimed_field": null,
+        "airports_touched": null,
+        "first_where": null,
+        "last_where": null,
+        "points": null,
+        "verdict": "NO_ARCHIVE_COVERAGE"
+      }
+    }
+  },
+  "verdict": "AT_CLAIMED_AIRPORT"
+}

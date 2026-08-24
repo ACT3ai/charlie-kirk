@@ -69,6 +69,94 @@ Useful, not required:
                                        # PEP 668 managed — plain `pip3 install` is
                                        # refused, use pipx or a venv.
 
+
+## Scripts added on 24 August 2026, and the mistakes that produced them
+
+Four scripts joined this directory in one run, and three of them exist because an
+earlier run of this pass got something wrong. That is worth stating in the README
+rather than in a commit message nobody reads.
+
+### `extract_wayback_flights.py` — because "0 rows" was a parser bug
+
+`recover_erased.js` pulled 42 archived tracking-site pages and wrote
+`flight_rows_recovered: 0` (Flightradar24) or `null` (FlightAware) into every one of
+their sidecars. **Both numbers were wrong.** The FR24 parser matched a row shape those
+pages do not use; the FlightAware captures were never parsed at all. **153 flight legs
+were on disk the whole time** — 44 from FR24, 109 from FlightAware.
+
+A zero in a provenance record reads as an absence of evidence. Here it was an absence
+of parsing. The rewritten extractor now distinguishes three states that had all been
+collapsed into "0":
+
+    POPULATED                                 rows were found
+    PRESENT_BUT_EMPTY                         the table is there and has no rows
+    JAVASCRIPT_SHELL_NO_SERVER_RENDERED_ROWS  the page is a client-side app; the
+                                              archived HTML is ~458 KB of chrome
+
+    python3 extract_wayback_flights.py --dry-run   # report, write nothing
+    python3 extract_wayback_flights.py             # rewrite the sidecars
+
+### `lib/airports.js` — resolve a position to a named field
+
+Loads the CC0 OurAirports gazetteer from `../data/ourairports/airports.csv`.
+`nearest(lat,lon)`, `label(lat,lon)` and `byCode(icaoOrIata)`.
+
+**This is geometry, not a landing record**, and the library is built to keep saying so:
+every label it returns carries its distance in km. A fix 0.2 km from a runway with the
+on-ground flag set is as good as this method gets. A fix 14 km away names the closest
+field and nothing more. The Provo-versus-Dugway mislabel this investigation already had
+to correct is what happens when a nearest-field label is read as a destination.
+
+### `verify_overlaps.js` — test every claimed overlap against position data
+
+Reads `following/overlaps.csv` and, for each of the 85 rows, queries both free archives
+for the claimed tail on the claimed date and the day either side, then measures the
+aircraft's **closest approach in kilometres** to the claimed field.
+
+Two things in it are worth copying into any similar tool:
+
+**The control basket.** Before any absence is reported, the same date is asked of nine
+airframes with nothing to do with this case. If one of them has a track, the archive
+holds that date and a missing case aircraft is a genuine absence. If none does, the
+archive does not cover the date and the absence says nothing at all. That is the
+difference between "the record does not show it" and "we cannot see the record", and
+every NOT_HEARD verdict this script emits is backed by it.
+
+**Distance, not identifier matching.** The first version compared ICAO strings and
+scored a real arrival at Lincoln as "elsewhere", because the nearest gazetteer entry to
+the landing rollout was a private strip next door. It also scored a confirmed St Louis
+arrival as "elsewhere" because the source row names three fields in one cell
+(`KSTL/KCPS/KSUS`) and the matcher compared that whole string as one identifier. Both
+were false refutations, and both were found by reading the output rather than trusting
+the verdict.
+
+    node verify_overlaps.js                 # all 85 rows
+    node verify_overlaps.js --id OWENS-041
+    node verify_overlaps.js --limit 5
+
+### `build_tail_provenance.js` — the per-aircraft ledger
+
+Walks every `.meta.json` under `Planes/*/data/` and answers, per tail: which archives
+hold it and over what span, which days only one archive has, which days both have,
+where the aircraft actually was, and which tracking-site pages were archived versus
+what they serve today. Writes `../data/provenance/tail_provenance.json`, which is what
+the aircraft pages' provenance sections are built from.
+
+    node build_tail_provenance.js
+
+### And one fix in `wayback.js`
+
+The CDX queries used `collapse=digest`, which returns only distinct-content captures.
+Every count it produced was a floor rather than a total, and — worse — it made the
+"did this page stop changing?" test impossible by construction, since adjacent identical
+digests are exactly what it throws away. The endpoint also answers **HTTP 504** under
+load with an HTML error body, and three of those were logged as `"snapshots": 0`. One of
+them was SU-BTT's, the most load-bearing aircraft in the case, which in fact has three
+snapshots.
+
+**A failed query is UNKNOWN, not zero.** The function now drops the collapse, retries
+with backoff, and says so in the sidecar when it still fails.
+
 ## The rule that matters more than any of this
 
 An empty response is not a finding. **An empty response plus the date we asked plus

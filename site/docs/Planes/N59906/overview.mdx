@@ -287,6 +287,167 @@ file has a `.meta.json` sidecar recording source, URL, HTTP status, bytes and da
 Fleet-wide: [Flight Data Recovery](/Planes/Flight-Data-Recovery/overview) ·
 [Per-Aircraft Recovery Status](/Planes/Flight-Data-Recovery/Per-Aircraft-Status)
 
+## The primary flight data we hold on this aircraft, and where it came from
+
+Everything above this line about the 10 September passes comes from two artifacts: an annotated
+ADS-B Exchange screen capture and a Flightradar24 playback card, both compiled by other people. This
+section is different in kind. It is the **raw ADS-B position data** this repository holds for
+N59906, pulled from free public archives on **24 August 2026**, saved to disk, and re-runnable by
+anyone with a terminal.
+
+**The thread marker first.** N59906 sits in the **ISR / survey-aircraft** line of inquiry that runs
+through [N1098L](/Planes/N1098L/overview). That is a **different claim** from the eighteen-month
+pattern of foreign-registered aircraft alleged to have shadowed Charlie and Erika Kirk, which lives
+at [Following Planes](/Planes/following/overview). This site links the two threads and never merges
+them.
+
+### What we hold
+
+| | N59906 |
+|---|---|
+| Days of primary trace held | **48** |
+| Span | **1 Feb 2022 – 1 Jul 2026** |
+| Corroborated by **both** free daily archives | **9** |
+| **Recovered only from the backup network** (globe.airplanes.live) | **17** |
+| Held only by the ADS-B Exchange monthly sample | **22** |
+| **Days before 2023** | **6** |
+| Archived tracking-site pages | 4 — two FlightRadar24, two FlightAware, all Aug–Sep 2022 |
+| Field appearing on the most days | Kenosha Regional, Wisconsin (KENW), 31 days — then **Provo (KPVU), 9** |
+
+Provenance of record:
+`site/docs/Planes/following/apis/public_open_source/data/provenance/tail_provenance.json`.
+Traces in `site/docs/Planes/N59906/data/recovered/`, one file per aircraft-day, source name in every
+filename, each with a `.meta.json` sidecar carrying URL, HTTP status, byte count and pull time.
+
+### The five passes are confirmed from primary data, to the minute
+
+**This is the most significant result on this page and it did not come from us reading a
+screenshot.** Both free daily archives independently hold the full 10 September 2025 trace —
+adsb.lol returns 1,289 position points, globe.airplanes.live 1,579 of the same flight — and both
+self-identify the airframe as **N59906, type PA31**.
+
+Counting every point that comes within 5 km of the UVU campus, the survey block runs like this
+(UTC, with MDT in brackets), set beside the times printed on the Eric Rosenwald graphic reproduced
+higher on this page:
+
+| Pass | Primary trace (UTC) | Primary trace (MDT) | Printed on the graphic |
+|---|---|---|---|
+| 1 | 17:01:06Z | **11:01** | 11:01 am |
+| 2 | 17:08:36Z | **11:08–11:09** | 11:09 am |
+| 3 | 17:17:34Z | **11:17–11:18** | 11:18 am |
+| 4 | 17:25:40Z | **11:25–11:26** | 11:26 am |
+| 5 | 17:34:58Z | **11:34–11:35** | 11:35 am |
+
+**Five passes. All five match the compiler's published times.** The compiler's timeline was
+reconstructed by hand off a tracking website; ours is measured off the raw position points held by
+two independent volunteer networks. **They agree.** That is as good a corroboration as citizen
+open-source work gets, and the correction this page already made — five passes, not four — is
+confirmed by primary data.
+
+Everything else in the trace lines up as well:
+
+* **Altitude: 19,000 ft barometric, held flat across the entire block.** The Flightradar24 playback
+  card reproduced above reads 19,000 ft. The raw data reads 19,000 ft, with a whole-day maximum of
+  19,150 ft. UVU sits at roughly 4,600 ft, so the passes were about **14,400 ft above the ground** —
+  a mapping altitude. **The "low pass over the crowd" framing is flatly refuted by primary data.**
+* **Closest approach to the campus: 0.79 km (airplanes.live) and 1.02 km (adsb.lol)** — directly
+  overhead, at nearly three miles up.
+* **Groundspeed alternates, leg by leg, between about 125 kt and about 210 kt.** That is what a
+  back-and-forth grid flown into and out of the wind produces, and it is what the Flightradar24
+  card's 212 kt cursor reading was catching. It is an ordinary photogrammetric survey signature.
+* **Airborne time.** The trace has the aircraft on the ground at Provo at 15:08:45Z, rolling by
+  15:28, and back on the ground at Provo by 18:08:35Z — **about 2 hours 40 minutes**, against the
+  Flightradar24 card's stated **2:39**. Confirmed.
+* **It landed before the shooting.** The final descent crosses within 5 km of campus at 18:03:30Z
+  (**12:03:30 MDT**) at 5,725 ft, and the trace ends **on the ground at Provo Municipal, 0.26 km from
+  the airport reference point, at 18:08:35Z (12:08 MDT)** — roughly **fifteen minutes before Charlie
+  Kirk was shot at 12:23 MDT**. The much-circulated ADS-B Exchange capture stamped
+  **2025-09-10 18:06:10 Z** showing the aircraft *on the ground at 11 knots* is therefore exactly
+  right, and our data explains what it was: the aircraft taxiing in after the survey sortie.
+
+**And the limit, stated as plainly as the confirmation.** All of this locates **the aircraft**. It
+establishes that a survey-configured Piper flew a mapping grid over the Utah Valley at 19,000 ft on
+the morning of 10 September 2025 and landed fifteen minutes before the shooting. **It says nothing
+about who tasked it, what its sensors were set to record, whether anything was recorded at all, or
+where that data is now.** Those remain the open questions on this page, and no free archive can
+answer any of them.
+
+### Six 2022 days, new to this site — and they support the mundane explanation
+
+The site has published that "the archive does not reach 2022." **That is no longer true.** The
+ADS-B Exchange public sample publishes one full day — the **first of every month** — back to 2016,
+free and without an account, and for N59906 it has produced **six pre-2023 aircraft-days**:
+
+| Date | What the trace shows |
+|---|---|
+| 2022-02-01 | Music City Executive, Gallatin **TN** (KM33) — out and back, local sortie, 1,112 points |
+| 2022-03-01 | St Louis Lambert → Spirit of St Louis, **MO** (KSTL → KSUS), 3,044 points |
+| 2022-05-01 | Kansas City International → Dodge City, **MO to KS** (KMCI → KDDC), 339 points |
+| 2022-06-01 | Watsonville Municipal, **CA** (KWVI) — local, ending near Modesto, 2,957 points |
+| 2022-09-01 | Bellingham International, **WA** (KBLI) — a single position point |
+| 2022-12-01 | John Bell Williams → Freebird, **MS** (KM16 → 7MS7), 917 points |
+
+**The sampling caveat travels with these every time they are cited, without exception.** This is
+**one day in thirty** — the 1st of the month and nothing else. Six sampled days across a year cannot
+support a rate, a frequency, or a pattern. They establish where the aircraft was on six specific
+days and nothing more.
+
+What they do show is a **flight profile**: short local sorties, a different state most months,
+regional and municipal fields, often out and back from the same strip. **That is the working pattern
+of a contract aerial-survey aircraft**, and it matches what MARC Inc.'s own published fleet and
+sensor list — described higher on this page — says the company does. **This corroborates the mundane
+explanation for the UVU flight, and it is reported here as corroboration because that is what it
+is.**
+
+### The backup network, and why the gaps are not about this aircraft
+
+**Seventeen of N59906's forty-eight days exist only on globe.airplanes.live** — adsb.lol does not
+hold them. That includes 14 October 2025 and the entire May 2026 run at Kenosha. It is not
+suppression, and the control test is what settles it: adsb.lol returns **HTTP 403 for every
+aircraft** from **exactly 12 October 2025** to about 30 December 2025, and **HTTP 404 for every
+aircraft** from about 31 December 2025 until roughly 1 August 2026 — including unrelated control
+airframes chosen for having nothing to do with this case. **Archive-wide conditions, not decisions
+about N59906.**
+
+The 10 September window is the reassuring case and deserves saying out loud: **for 1–16 September
+2025 the two archives agree with each other on this aircraft on every day either of them holds.**
+**There is no scrubbing in the fortnight the case turns on.**
+
+### The four archived tracking pages, and a correction about what they prove
+
+The Internet Archive holds four captures of this aircraft's pages — two of **FlightRadar24**
+(29 and 30 August 2022) and two of **FlightAware** (30 August and 1 September 2022). **No flight
+rows were recovered from any of them.**
+
+Two corrections about how those are read:
+
+* **"0 rows" is not the same as "the table was empty."** The FlightAware captures were never parsed
+  into a row state at all; elsewhere in this fleet, modern FlightAware captures have been re-labelled
+  `JAVASCRIPT_SHELL_NO_SERVER_RENDERED_ROWS` precisely because FlightAware is now a client-side
+  application whose archived HTML holds page chrome and no server-rendered flight table. **An absence
+  of parsing is not an absence of evidence**, and this site recorded 153 real flight legs across the
+  fleet that had previously been written down as zeros.
+* **The provenance record flags two of these pages as "public then, not public now" and that flag is
+  wrong.** It rests on the archived captures returning HTTP 200 while the live FlightRadar24 URL
+  returns HTTP 403 to a script. A control test settled it: **FlightRadar24 returns 403 to scripted
+  requests across its entire site, including its own front page**, and a browser session returns
+  **HTTP 200** for this aircraft's page with the identity block intact. **Nothing was taken down.**
+  See [What A 403 Actually Means](/Planes/Flight-Data-Recovery/What-A-403-Means).
+
+### The counterargument
+
+Read this section at its least flattering and it still holds. **Confirming the five passes confirms a
+survey flight, and a survey flight is the innocent explanation.** Everything the primary data adds —
+the 19,000 ft mapping band, the metronomic 8-to-9-minute spacing, the alternating into-wind and
+downwind groundspeeds, the closed Provo-to-Provo loop, the 2022 profile of short local sorties across
+six states — points at a contractor flying a photogrammetric grid, which is what MARC Inc. is in
+business to do. The timing remains the only thing that makes it interesting, and **timing is not
+tasking**. Nothing in a position record identifies a client, a sensor setting, or a frame of
+imagery. **Our data locates the aircraft; it does not place Charlie Kirk, Erika Kirk or anyone else
+anywhere, and it establishes no tasking in either direction.** The records that would — the contract,
+the client, the imagery and its chain of custody — are exactly the ones the
+[Charlie Kirk Investigation Laws](/Fix/overview) are written to force open.
+
 {/* CK_INTERESTING_HERE_START */}
 
 ## Interesting In This Area

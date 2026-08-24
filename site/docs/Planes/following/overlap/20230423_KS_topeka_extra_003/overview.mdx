@@ -175,6 +175,35 @@ Compiler note: Charlie Kirk is not named as the speaker on the speaking page.
 
 More of the same discussion, grouped by research topic rather than by date, is on [X discussions of the following planes](/Planes/following/x_discussions) and [Candace Owens broadcasts](/Planes/following/Candace_Owens_Broadcasts).
 
+## We checked this row against primary ADS-B data
+
+**Cannot be checked from free data.** Neither free archive reaches 23 April 2023. A control basket of unrelated airframes was probed on the same three dates and came back **not covered** as well, so this is the reach of the archives and not something about SU-BTT. **It says nothing either way about this row.**
+
+| Date | Tail | adsb.lol | airplanes.live | Heard | Closest approach to KTOP |
+|---|---|---|---|---|---|
+| 2023-04-22 | SU-BTT | 404 | 404 | no | not measurable — archive does not reach the date |
+| 2023-04-23 | SU-BTT | 404 | 404 | no | not measurable — archive does not reach the date |
+| 2023-04-24 | SU-BTT | 404 | 404 | no | not measurable — archive does not reach the date |
+
+**Method.** Both free ADS-B history archives — adsb.lol globe history and the airplanes.live mirror — were queried for the claimed tail on the claimed date and on the day either side, and every position fix was resolved to the nearest field in the OurAirports public-domain gazetteer. **Nearest-airport resolution is geometry, not a landing record**, which is why the distance in kilometres is published beside every result rather than a bare airport name.
+
+**Absence is not proof, and it is not proof in either direction.** A 404 from an archive means the archive holds nothing for that airframe on that UTC day. It does not establish that the aircraft did not fly, and it does not establish that a track was suppressed. The ordinary explanations come first: the aircraft was parked and silent, or it flew outside volunteer receiver coverage.
+
+### A different row on this same aircraft does reach primary data, and it lands on Topeka
+
+[OWENS-012](../20230414_KS_wichita_owens_012/overview) claims **Wichita on 14 April 2023**. Both archives hold SU-BTT that day, they agree, and they place it flying **Paris Charles de Gaulle eastward across the Atlantic to Kansas** — 505 fixes, and a closest approach to Wichita of **7,411 km**. That row is refuted. What it puts in its place is this: **the trace's last fix is 10.98 km from Sunset Strip Airpark, Topeka, Kansas**, on descent.
+
+Two things follow, and only two:
+
+* **A Topeka arrival by this airframe is now anchored in primary position data** rather than in a screenshot. It is nine days before this page's date, and **nine days is nine days** — it does not make 23 April checkable and it is not a second overlap.
+* **The KTOP-versus-KFOE identifier question is still open.** `overlaps.csv` logs the Topeka claim against **KTOP** (Philip Billard Municipal); the larger Topeka field a business jet would normally use is **KFOE** (Forbes Field). The archived trace ends before touchdown, so it names neither. **The conflict is not resolved and is not being quietly merged.**
+
+**This does not disturb the row's existing status.** `overlaps.csv` records it as not assessed, and after this pass it is still not assessed. The page's own reason for excluding it — SU-BTT had departed Wichita on 20 April, three days and 135 miles earlier, outside the one-day rule — stands on the record it always stood on.
+
+This row is one of **85 checked in a single run on 24 August 2026** — 24 confirmed at the claimed field, 12 refuted, 22 not heard, 20 with no archive coverage, 2 naming no aircraft, and 5 naming no date. The whole result is on [Overlap dates](/Planes/following/overlap/overview).
+
+**Files.** This row's extract: `site/docs/Planes/following/overlap/20230423_KS_topeka_extra_003/data/adsb_verification.json`. The full 85-row run, including the archive control probes: `site/docs/Planes/following/apis/public_open_source/data/overlap_verification/overlap_verification.json`, generated 2026-08-24T17:36:21.953Z. How the archives were recovered and what a 403 does and does not mean is on [Flight data recovery](/Planes/Flight-Data-Recovery/overview).
+
 ## Links
 
 * [Overlap dates index](/Planes/following/overlap/overview) · [The 73 overlaps — the full reconstruction](/Planes/following/73_overlaps) · [Following overview](/Planes/following/overview)

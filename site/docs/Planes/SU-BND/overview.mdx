@@ -280,6 +280,192 @@ Raw payloads are kept in `site/docs/Planes/SU-BND/data/recovered/`, with the sou
 
 More: [Flight Data Recovery](/Planes/Flight-Data-Recovery/overview) · [Per-Aircraft Status](/Planes/Flight-Data-Recovery/Per-Aircraft-Status)
 
+## The primary flight data we hold on this aircraft, and where it came from
+
+Almost everything above this line is a reading of a flight-tracking website — a screenshot, a spreadsheet built from screenshots, or a tally built from that spreadsheet. This section is the position data this repository holds for SU-BND itself: pulled from free public ADS-B archives on **24 August 2026**, saved to disk, and re-checkable by anyone who clones the repo. Where it confirms a claim above, it says so. Where it corrects one — including where it corrects this site — it says so just as plainly.
+
+### Provenance: what we hold, and which archive it came from
+
+| Measure | SU-BND |
+|---|---|
+| Days of primary trace held | **33** |
+| Span | **2022-01-01 to 2026-07-01** |
+| From adsb.lol `globe_history` | 19 days |
+| From globe.airplanes.live | 27 days |
+| From the ADS-B Exchange monthly sample | 6 days |
+| **Corroborated by BOTH free archives** | **19 days** |
+| Held **only** by the backup network (airplanes.live) | 8 days |
+| Held **only** by the ADS-B Exchange monthly sample | 6 days |
+| **Days before 2023** | **2** — 2022-01-01, 2022-09-01 |
+| Archived tracking-site pages recovered | **2** (both Flightradar24, via the Internet Archive) |
+| Flight legs recovered off those pages | **11** |
+
+Nineteen of the thirty-three days are held by two independently operated volunteer networks that agree with each other. Eight exist only because the backup network was queried at all. That is not a suppression finding — different networks have different feeders and different geography, and a day one holds and the other does not is ordinary. It is a finding about method: a single-source pull would have missed a quarter of what we hold.
+
+Source of the counts: `site/docs/Planes/following/apis/public_open_source/data/provenance/tail_provenance.json`. Raw payloads with their `.meta.json` sidecars are in `site/docs/Planes/SU-BND/data/recovered/`.
+
+### What the data actually shows
+
+Across those 33 days, the fields SU-BND's track comes closest to, most often:
+
+| Field | Days touched |
+|---|---|
+| **KPVU — Provo Municipal, Utah** | **27** |
+| **LFPB — Paris-Le Bourget, France** | 7 |
+| HE15 — Helwan Air Base, Egypt | 3 |
+| **HEAZ — Almaza Air Force Base, Cairo** | 3 |
+| HECP — Capital International, New Cairo | 2 |
+| HE45 — Ras Sedr, Egypt | 2 |
+| 7IS2 — Aero Estates, Belleville IL | 2 |
+| HE38 — Abu Rish Valley, Egypt | 2 |
+| **3II8 — Birkey Private Airport, Bremen IN** | 1 |
+| **KCPS — St Louis Downtown, Illinois** | 1 |
+| CAA2 (Quebec), EIBT (Ireland), FR-0503 (France), LGEP (Greece) | 1 each |
+
+**Twenty-seven of thirty-three days touch Provo.** That is not thirty-three days of shadowing; it is the arithmetic consequence of the 113-day stationary stay described above, plus the fact that a parked aircraft with its transponder on is easy for a volunteer receiver to hear. It is a measure of where our sampling landed, not a measure of the aircraft's behaviour.
+
+**One caveat travels with every line of this table. Nearest-airport resolution is geometry, not a landing record.** These labels come from measuring a position against a database of airfields and naming the closest one. An aircraft at 41,000 feet over Indiana gets a nearest-airport label too — and one of the rows above is exactly that. **Every distance in this section is published in kilometres** for that reason: a 0.03 km label and a 10 km label are not the same claim.
+
+### The 2022 traces — and a correction to this site
+
+**This site has published, in more than one place, that "the archive does not reach 2022; every 2022 claim rests on a screenshot." That is no longer true, and we are correcting it here.**
+
+`samples.adsbexchange.com/traces/` publishes a free full-day globe sample for the **first of every month back to 2016**, with no account and no key. It has produced two pre-2023 days for SU-BND, each from a trace carrying its own registration in the payload:
+
+| Sampled day | Points | What the trace shows |
+|---|---|---|
+| **2022-09-01** | 989 | **At 41,000 ft over Bremen, Indiana at 00:00:18 UTC** — crossing the United States eastbound — then on the ground at **Paris-Le Bourget at about 09:30 UTC** |
+| **2022-01-01** | 35 | Egypt only — Capital International, New Cairo, to Ras Sedr |
+
+What that does and does not do:
+
+* **It puts SU-BND over the continental United States on 1 September 2022, eastbound**, and then across the Atlantic to Paris the same day. The trackers' window for this pattern starts around 2022. For this tail, a 2022 United States transit is now on record from primary position data rather than from a screenshot.
+* **It is an overflight, not a stop.** 41,000 feet over Indiana is a nearest-airport label attached to cruise altitude. Nobody was picked up or dropped off at Birkey Private Airport, Bremen. The trace establishes that the aircraft was crossing the US that night and nothing more, and it should never be cited as a landing.
+* **The 1 January 2022 day is Egypt only** — 35 points, a domestic hop. It is included because a day that shows nothing is part of the record too.
+
+**The sampling caveat is not optional and must travel with both dates.** This is **one day per month, the 1st, and nothing else.** One of the two sampled 2022 days puts SU-BND over the United States. **Two sampled days cannot support a rate.** They establish that the aircraft transited US airspace in 2022. They say nothing about how often.
+
+Files: `site/docs/Planes/SU-BND/data/recovered/SU-BND_2022-09-01_adsbexchange-samples_trace_full.json` and `..._2022-01-01_...`.
+
+### The recovered Flightradar24 legs — 11 rows that had been recorded as zero
+
+The Internet Archive holds **two** Flightradar24 aircraft-history pages for SU-BND — more than for any other Egyptian tail in this investigation, and the only two dated after the assassination. ([SU-BTU](/Planes/SU-BTU/overview) has one, from August 2022; [SU-BGM](/Planes/SU-BGM/overview) has one, from May 2020.) Both SU-BND captures are populated, and **both had been logged in this repository's own provenance sidecars as `flight_rows_recovered: 0`.** That figure was wrong: the extractor was matching a table row shape those pages do not use, so it read a populated page as an empty one. A zero in a provenance record reads as an absence of evidence; here it was an absence of parsing. **The extractor was rewritten (`code/extract_wayback_flights.py`) and the sidecars were re-cut. Eleven legs came back.**
+
+Both source URLs return **HTTP 403 to a script today** — which is Flightradar24's site-wide bot block, applied identically to its own front page and to unrelated control aircraft, and **not** a removal of this aircraft's record.
+
+**Snapshot of 12 October 2025 — 7 legs, 5 to 12 October 2025:**
+
+| Date | From | To | Block time |
+|---|---|---|---|
+| 05 Oct 2025 | **Sharm el-Sheikh (SSH)** | Sphinx / Giza (SPX) | 0:46 |
+| 05 Oct 2025 | Sphinx / Giza (SPX) | Cairo (CAI) | 0:27 |
+| 07 Oct 2025 | Cairo (CAI) | **Jeddah (JED)** | 1:45 |
+| 07 Oct 2025 | *(origin not available)* | Cairo (CAI) | 1:42 |
+| 07 Oct 2025 | Cairo (CAI) | Cairo (CAI) | 0:15 |
+| 10 Oct 2025 | Cairo (CAI) | Cairo (CAI) | 7:17 |
+| 12 Oct 2025 | Cairo (CAI) | Cairo (CAI) | 3:02 |
+
+**Snapshot of 18 November 2025 — 4 legs, all 13 November 2025:**
+
+| Date | From | To | Block time |
+|---|---|---|---|
+| 13 Nov 2025 | Cairo (CAI) | **Antalya (AYT)** | *(no arrival logged)* |
+| 13 Nov 2025 | Cairo (CAI) | **Antalya (AYT)** | 1:09 |
+| 13 Nov 2025 | Antalya (AYT) | Cairo (CAI) | 1:18 |
+| 13 Nov 2025 | Cairo (CAI) | Cairo (CAI) | 0:11 |
+
+Files: `site/docs/Planes/SU-BND/data/recovered/SU-BND_20251012101207_wayback_flightradar24_flights.json` and `SU-BND_20251118001204_wayback_flightradar24_flights.json`, with the archived HTML alongside each.
+
+**On the Sharm el-Sheikh legs, and why they must not be merged into the other claim.** The [SU-BTT page carries a claim](/Planes/SU-BTT/overview) that **SU-BTT** appears in broadcast footage from the **13 October 2025** Gaza summit at Sharm el-Sheikh, parked near Air Force One. **These recovered legs are SU-BND's, not SU-BTT's, and they are dated 5 October, not 13 October.** They show a different aircraft in the same fleet flying out of Sharm el-Sheikh eight days earlier. That is genuinely relevant context — it establishes that this fleet used SSH in that period — and it is **not corroboration of the SU-BTT tarmac identification**, which still turns on whether a tail number can be read off a video frame. Two aircraft in one fleet are two claims, and blending them is how the whole line of inquiry gets dismissed at once.
+
+The **10 October Cairo→Cairo leg of 7 hours 17 minutes** is worth flagging on its own terms. A same-airport round trip of that length is not a maintenance run-up. It is also not proof of a destination — the log records where the aircraft was logged as departing and arriving, and a same-airport pair of that duration is exactly the entry shape that the compiled "transponder-off flights" lists elsewhere on this site are built from. **What it is cannot be determined from the log.** That ambiguity is the finding.
+
+### The September 10, 2025 transponder windows, from primary data
+
+The most-shared item on this page is [the screenshot claiming the transponder "ONLY goes on THESE 3 TIMES"](#the-transponder-on-only-three-times-screenshot-claim) on 10 September 2025, at **10:05 AM**, **1:40 PM** and **2:29 PM**. That section says it is an unverified screenshot claim and should be read with strong caution. The raw track for that day lets the timing half of it be checked directly, and the result is precise.
+
+Both archives hold the day and record **the same 257-to-328 position samples in two blocks**, with nothing at all in between:
+
+| Block | UTC | Local (MDT) | Duration |
+|---|---|---|---|
+| **First transponder window** | 16:05:35 → 17:34:09 | **10:05:35 → 11:34:09 AM** | 1 h 28 min |
+| *(nothing recorded)* | 17:34 → 19:40 | 11:34 AM → 1:40 PM | 2 h 06 min of silence |
+| **Second transponder window** | 19:40:53 → 20:29:38 | **1:40:53 → 2:29:38 PM** | 48 min |
+
+**The screenshot's three times are confirmed to the minute, and one thing about them is corrected.** 10:05 AM is the start of the first window, 1:40 PM is the start of the second, and 2:29 PM is **the end of the second** — not a third ping. So the day contains **two transponder windows, not three events**. Two independently operated archives record identical block boundaries.
+
+**And the aircraft did not take off.** Every fix in both windows is tagged **on the ground** except a single sample at 20:29:19 UTC reading 4,525 ft barometric — which is essentially Provo's own field elevation of 4,497 ft, i.e. one sample where the ground bit dropped out, not a departure. Both archives carry that same anomalous sample, which is a useful reminder that these two networks share upstream feeders and are not fully independent of one another.
+
+**What that settles, and what it emphatically does not.** It settles that SU-BND's transponder was live on the Provo ramp in two windows on 10 September 2025, one of which began at 10:05 AM local and one of which ended at 2:29 PM local, and that the aircraft never moved. It settles nothing about the screenshot's *interpretation* of those times — the claim that they line up with Erika Kirk landing, with a named private individual collecting a phone in Scottsdale, or with [Tyler Robinson](/People/tyler-robinson) landing. **No public record ties this aircraft's ground activity to any person, phone or vehicle**, that linkage exists only in the screenshot's captions, and the accusatory element about living private individuals remains uncorroborated by anything. Tyler Robinson is charged, not convicted.
+
+The innocent reading of the two windows is unchanged and is at least as strong: a parked aircraft on ground power, or one being repositioned on a maintenance ramp, produces exactly this pattern.
+
+Files: `SU-BND_2025-09-10_adsb-lol_trace_full.json` and `SU-BND_2025-09-10_airplanes-live_trace_full.json`.
+
+### Two more page questions the primary data answers
+
+**The 5 September sortie was 1 hour 8 minutes and it reached 45,025 feet.** The export above logs a Provo→Provo round-robin on 5 September with a block time of **1:08**, and this page describes it as possibly a corridor run north of Provo. The raw track gives it exactly: **airborne 18:06:12 UTC, back on the ground 19:14:00 UTC — 1 hour 8 minutes, matching the export precisely — with a maximum recorded altitude of 45,025 ft.** That is the certified ceiling of a Gulfstream IV-SP. A flight that climbs straight to the aircraft's ceiling and comes home is the classic shape of a **post-maintenance certification check**, and it is a poor fit for a low-level survey pattern. This does not close the question — an aircraft can do anything at altitude — but the "corridor run" reading now has a specific number to answer.
+
+**The departure was 13 September, not 14 September.** [The departure-sequence section](#the-departure-sequence-and-the-19-hour-question) records that the export dates the outbound leg to 13 September while an independent analysis quoted on this page gives 14 September, and notes that neither had been reconciled against the raw archive. It can be reconciled now. On **12 September** the aircraft is on the ground at Provo all day (13:37 to 22:17 UTC, no airborne fix). On **13 September** the track begins at **18:57:40 UTC already climbing through 4,500 ft**, 0.62 km from Provo, and ends at **41,000 ft at 21:34:06 UTC** on an eastbound track; by **14 September** it is inbound to Paris-Le Bourget. **The 13 September date is correct and the 14 September date is wrong by a day.**
+
+### The overlap register, tested against this aircraft's own tracks
+
+`site/docs/Planes/following/overlaps.csv` holds 85 claimed pairings. **Nineteen of them name SU-BND.** Each was checked against both archives on the claimed date and the day either side, measuring closest approach in kilometres to the claimed field. Two of the nineteen — SITE-001 and SITE-004 — are confirmed on the *SU-BTT* half of a joint claim and have no decisive SU-BND track of their own, so they are not counted for this tail.
+
+| Verdict | Rows | What it means |
+|---|---|---|
+| **AT_CLAIMED_AIRPORT** | **7** | The aircraft really was at the claimed field. **Confirmed.** |
+| **ELSEWHERE** | **5** | Tracked that day, and somewhere else. **Refuted.** |
+| NOT_HEARD | 5 | The archive covers the date; no trace for this airframe. **Not a refutation.** |
+| Decided on the other tail only | 2 | SITE-001, SITE-004 |
+
+**Of the 12 rows that could be decided on this tail's own data, 7 are corroborated and 5 refuted.** The confirmations, with distances:
+
+| Overlap ID | Date | Claimed | Closest approach | On ground? |
+|---|---|---|---|---|
+| **OWENS-035 / OWENS-065** | 23 May 2025 | Provo, UT | **0.03 km** from KPVU, 20:38:06 UTC | **yes** |
+| **OWENS-025** | 19 Apr 2024 | Provo, UT | **0.05 km** from KPVU, 21:33:34 UTC | **yes** |
+| **EXTRA-006 / SITE-006** | 9–10 Sep 2025 | Provo, UT | **1.29 km** from KPVU on both days | **yes, both days** |
+| **OWENS-042** | 12–13 Sep 2025 | Provo, UT | 1.29 km on 12 Sep; 0.62 km on departure 13 Sep | yes on 12 Sep |
+| OWENS-014 | 3 May 2023 | St Louis, MO (KCPS) | 6.70 km from KCPS, 15:29:24 UTC | no |
+
+The two 0.03 km and 0.05 km results are the closest ground fixes anywhere in this repository's verification run. They confirm what the maintenance reading and the shadowing reading both already agreed on — that this aircraft flew Paris-Le Bourget to Provo and parked. **OWENS-035 and OWENS-065 are the same claim entered twice** in the source spreadsheet; so are OWENS-037 and OWENS-066. Duplicate rows inflate a tally without adding an event, and that is worth knowing when reading any published count.
+
+**The refutations:**
+
+* **OWENS-050 — claimed St Louis, Missouri, 12 May 2023.** The track runs **Paris-Le Bourget to Epitalion Airfield, Greece.** Not in the United States.
+* **OWENS-015 — claimed Goose Bay, 9 May 2023.** The aircraft is over Illinois in the morning and ends the day 39.98 km from an aerodrome in Quebec; closest approach to Goose Bay: **3,057 km.**
+* **OWENS-016 — claimed Provo, Utah, 12 June 2023.** On 11 June the aircraft is at **Inshas Air Base and Capital International, New Cairo — in Egypt.**
+* **OWENS-052 — claimed Wilmington, Delaware, 25 June 2023.** On 24 June it is at **Cairo West Air Base and Helwan Air Base — in Egypt.**
+* **OWENS-030 — claimed Provo, Utah, 8 December 2024.** On 7 December it is at **Helwan Air Base and Abu Rish Valley — in Egypt.**
+
+**Two of those five rest on the backup network alone.** adsb.lol returns nothing for OWENS-016 and OWENS-052; only airplanes.live holds the day. **Without the recovery work those two rows could not have been refuted at all** — the recovery effort earned its keep here by debunking, which is the most credible possible use of it.
+
+**The 5 NOT_HEARD rows are undecided, not favourable.** NOT_HEARD means the archive covers the date and no volunteer receiver logged this airframe. Over Egypt, over the Atlantic, or anywhere with thin coverage that is completely ordinary. **An absence in the data is not proof of a covert leg, and it is not proof the claim was false either.**
+
+Working file: `site/docs/Planes/following/apis/public_open_source/data/overlap_verification/overlap_verification.json`.
+
+### The counterargument
+
+**Duncan Aviation has held an Egyptian Air Force maintenance contract since 1999, with plants at Lincoln, Nebraska and Provo, Utah.** That contract is documented at length on the [SU-BTT page](/Planes/SU-BTT/overview) and is referenced rather than restated here, because it does not need strengthening — it needs applying. **Every confirmed position in the table above is at Provo**, which is where that contract puts this operator's aircraft. Confirming SU-BND on the Provo ramp on 19 April 2024, 23 May 2025 and 9–13 September 2025 confirms it was at its operator's contracted maintenance facility. It is also the reading this page's own [Cullen section](#john-cullens-maintenance-contract-dismissal) and [113-day test](#the-113-day-provo-stay-tested-against-the-tpusa-event-calendar) already reach independently, and the primary data does nothing to weaken it: a 27-year-old Gulfstream IV-SP that sits for 113 days and flies twice, once straight to its certified ceiling, looks like an airframe in and out of a heavy check.
+
+For the **2022 United States transit**, the innocent explanation is the ordinary one: a state-operated aircraft crossing the Atlantic. An overflight of Indiana at 41,000 feet is not an event.
+
+And the counterargument runs both ways here, which is why it is worth stating: **five refuted rows out of nineteen is a real error rate** in the source document, and a reader who takes the seven confirmations as vindication has to take the five refutations at the same strength.
+
+### What none of this establishes
+
+**All of it locates the aircraft. None of it locates a Kirk.**
+
+Every confirmation above confirms one half of a pairing. An overlap needs two halves — an aircraft at a place and a person at that place — and the person half is unchanged by anything in this section. For this tail that gap is at its widest, because **a stationary aircraft cannot follow anyone**: for 113 days SU-BND had exactly one location while [TPUSA](/TPUSA/overview) held eleven events across Texas, Florida, California, South Carolina, Korea and Japan.
+
+**Erika Kirk's side is the weak side and this page must keep saying so.** Her flight logs are reported erased — see [Erika's Flight Logs Erased](/Planes/Erika-Flight-Logs-Erased) — and in the 139 dated rows this repository can source, exactly one places her at a TPUSA event before 10 September 2025. **The 68- and 73-overlap tallies were measured against her claimed locations, and this repository cannot reproduce the list they were measured against.** That is not a refutation of those tallies. It is the more honest and more damaging statement that they are untestable with anything public.
+
+The counts remain in dispute and are not reconciled here: **73 / about 23**, **72**, **"70+"**, and the separate dual-plane tally of **68 / 29**. Nobody has reconciled them, and averaging them would invent a figure nobody published.
+
+Nothing in this section establishes who was aboard SU-BND on any date, who tasked it, or why. No public record establishes tasking in either direction, and this page does not assert one.
+
+
 {/* CK_INTERESTING_HERE_START */}
 
 ## Interesting In This Area

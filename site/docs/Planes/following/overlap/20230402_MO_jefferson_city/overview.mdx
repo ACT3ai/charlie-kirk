@@ -169,6 +169,39 @@ Compiler note: One of six dates that survive the directory's same-day-or-adjacen
 
 More of the same discussion, grouped by research topic rather than by date, is on [X discussions of the following planes](/Planes/following/x_discussions) and [Candace Owens broadcasts](/Planes/following/Candace_Owens_Broadcasts).
 
+## We checked this row against primary ADS-B data
+
+**Confirmed — for SU-BTT.** Both free archives hold SU-BTT on 1 April 2023, they agree with each other, and they put the aircraft over St. Louis: **closest approach 0.48 km from Lambert International (KSTL) at 15:55:15 UTC**, descending, with the last fix of the day 3.21 km from Spirit of St. Louis (KSUS). The day's trace runs from Mouy Airfield in France to the St. Louis metro in 558 fixes, touching **KSTL at 5.09 km, K1H0 at 7.57 km and KSUS at 7.64 km** below 4,000 ft.
+
+| Date | Tail | adsb.lol | airplanes.live | Heard | Closest approach to the claimed field |
+|---|---|---|---|---|---|
+| 2023-04-01 | **SU-BTT** | 200 | 200 | **yes — both agree** | **0.48 km from KSTL, 15:55:15 UTC**, on descent (558 fixes) |
+| 2023-04-02 | SU-BTT | 404 | 404 | no — archives do not reach the date | not measurable |
+| 2023-04-03 | SU-BTT | 404 | 404 | no — archives cover the date | not measurable |
+| 2023-04-01 | SU-BND | 404 | 404 | no — archives cover the date | not measurable |
+| 2023-04-02 | SU-BND | 404 | 404 | no — archives do not reach the date | not measurable |
+| 2023-04-03 | SU-BND | 404 | 404 | no — archives cover the date | not measurable |
+
+**Method.** Both free ADS-B history archives — adsb.lol globe history and the airplanes.live mirror — were queried for the claimed tail on the claimed date and on the day either side, and every position fix was resolved to the nearest field in the OurAirports public-domain gazetteer. **Nearest-airport resolution is geometry, not a landing record**, which is why the distance in kilometres is published beside every result rather than a bare airport name.
+
+**This confirms the AIRCRAFT half and nothing else.** Position data locates an airframe. It does not put Charlie Kirk or Erika Kirk anywhere, it does not establish that anyone aboard knew where either of them was, and it does not establish who tasked the flight. The Kirk half of this pairing is exactly as strong, or as weak, as it was before we pulled the data.
+
+**SU-BND's eleven-week St. Louis stay is NOT corroborated by this pull, and it is not refuted either.** Neither archive holds a trace for that airframe on any of the three days. A parked aircraft with its transponder off produces exactly this, and so does a coverage hole. **Absence is not proof.** Half the foreign side of this page therefore remains where it was: on a researcher-compiled record, not on position data.
+
+### Why the first pass got this wrong, and why that is worth writing down
+
+**Our own first automated pass scored this row ELSEWHERE.** The row's airport cell holds three identifiers in one string — `KSTL/KCPS/KSUS` — because the St. Louis metro has three fields a state-level tally cannot tell apart. The matcher compared that whole string as a single identifier, found no airport called `KSTL/KCPS/KSUS`, and scored the aircraft as being somewhere else. Splitting the cell into its three codes and measuring distance to each fixed it, and the row came back **confirmed at 0.48 km**.
+
+**A compound cell in a source spreadsheet is a hazard, and this is a concrete example of it.** It is exactly the class of error the published audits of this material have been finding in the other direction. We found it in our own tooling, and correcting it turned a false refutation into a confirmation. **Stating that is what makes the other eighty-four verdicts worth anything.**
+
+**The counterargument is untouched.** Confirming that SU-BTT was over St. Louis on 1 April 2023 does not shorten the **130 miles and two hours' drive** to Jefferson City, and it was the compiler who footnoted that distance in the first place. Neither Kirk is placed in Missouri on any date in this window by any source, and the rotation SU-BTT flew — Cairo, Le Bourget, a US field, sit, Wilmington, Cairo — is the one it flew everywhere else.
+
+**This agrees with the row's existing status.** `overlaps.csv` records it accurate, and the independent audit reached the same conclusion from paid archives. Two independent readings and one primary-data pull now agree on where SU-BTT was.
+
+This row is one of **85 checked in a single run on 24 August 2026** — 24 confirmed at the claimed field, 12 refuted, 22 not heard, 20 with no archive coverage, 2 naming no aircraft, and 5 naming no date. The whole result is on [Overlap dates](/Planes/following/overlap/overview).
+
+**Files.** This row's extract: `site/docs/Planes/following/overlap/20230402_MO_jefferson_city/data/adsb_verification.json`. The full 85-row run, including the archive control probes: `site/docs/Planes/following/apis/public_open_source/data/overlap_verification/overlap_verification.json`, generated 2026-08-24T17:36:21.953Z. How the archives were recovered and what a 403 does and does not mean is on [Flight data recovery](/Planes/Flight-Data-Recovery/overview).
+
 ## Links
 
 * [Overlap dates index](/Planes/following/overlap/overview) · [Following overview](/Planes/following/overview)

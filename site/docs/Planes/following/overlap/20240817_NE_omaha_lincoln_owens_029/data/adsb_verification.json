@@ -1,0 +1,131 @@
+{
+ "generated_utc": "2026-08-24T17:36:21.953Z",
+ "radius_km": 15,
+ "method": "For each claimed overlap, both free ADS-B history archives were queried for the claimed foreign tail on the claimed date and the day either side. Positions were resolved to the nearest airport in the OurAirports public-domain gazetteer. A verdict of ELSEWHERE refutes a row; NO_ARCHIVE_COVERAGE and NOT_HEARD do not.",
+ "note": "Per-row extract of OWENS-029 from site/docs/Planes/following/apis/public_open_source/data/overlap_verification/overlap_verification.json",
+ "result": {
+  "overlap_id": "OWENS-029",
+  "date": "2024-08-17",
+  "claimed_airport": "KOMA",
+  "claimed_codes": [
+   "KOMA"
+  ],
+  "claimed_city": "Omaha / Lincoln",
+  "claimed_state": "NE",
+  "claimed_tails": [
+   "SU-BTT"
+  ],
+  "subject": "Erika",
+  "audit_verdict": "inaccurate",
+  "site_page": "site/docs/Planes/following/Omaha_KOMA_2024-02-09_to_2025-10-05/overview.mdx",
+  "tails": {
+   "SU-BTT": {
+    "2024-08-16": {
+     "adsb_lol_http": 404,
+     "airplanes_live_http": 404,
+     "archive_control_probe": {
+      "adsb-lol": {
+       "verdict": "COVERED",
+       "codes": [
+        404,
+        404,
+        404,
+        404,
+        404,
+        404,
+        404,
+        200
+       ]
+      },
+      "airplanes-live": {
+       "verdict": "COVERED",
+       "codes": [
+        404,
+        404,
+        404,
+        404,
+        404,
+        404,
+        404,
+        200
+       ]
+      }
+     },
+     "both_agree": false,
+     "heard": false,
+     "at_claimed_airport": false,
+     "closest_approach_to_claimed_field": null,
+     "airports_touched": null,
+     "first_where": null,
+     "last_where": null,
+     "points": null,
+     "verdict": "NOT_HEARD"
+    },
+    "2024-08-17": {
+     "adsb_lol_http": 404,
+     "airplanes_live_http": 404,
+     "archive_control_probe": {
+      "adsb-lol": {
+       "verdict": "COVERED",
+       "codes": [
+        404,
+        404,
+        404,
+        404,
+        404,
+        404,
+        404,
+        200
+       ]
+      },
+      "airplanes-live": {
+       "verdict": "COVERED",
+       "codes": [
+        404,
+        404,
+        404,
+        404,
+        404,
+        404,
+        404,
+        200
+       ]
+      }
+     },
+     "both_agree": false,
+     "heard": false,
+     "at_claimed_airport": false,
+     "closest_approach_to_claimed_field": null,
+     "airports_touched": null,
+     "first_where": null,
+     "last_where": null,
+     "points": null,
+     "verdict": "NOT_HEARD"
+    },
+    "2024-08-18": {
+     "adsb_lol_http": 404,
+     "airplanes_live_http": 200,
+     "archive_control_probe": null,
+     "both_agree": false,
+     "heard": true,
+     "at_claimed_airport": false,
+     "closest_approach_to_claimed_field": {
+      "code": "KOMA",
+      "km": 12309.67,
+      "utc": "2024-08-18T09:37:17.350Z",
+      "on_ground": false
+     },
+     "airports_touched": [
+      "HECA 4.81km below_4000ft",
+      "EG-0058 12.74km last_fix"
+     ],
+     "first_where": "HECA/CAI (Cairo International Airport, Cairo EG) 4.81km",
+     "last_where": "EG-0058 (Sahra' Muhafadhat al-Jeezah Airfield, 6th of October EG) 12.74km",
+     "points": 134,
+     "verdict": "ELSEWHERE"
+    }
+   }
+  },
+  "verdict": "ELSEWHERE"
+ }
+}

@@ -1,0 +1,64 @@
+{
+  "generated_utc": "2026-08-24T17:50:08.020857+00:00",
+  "year_floor": "2024",
+  "what_this_is": "adsb.lol's off-site GitHub Release backup, asked about every alleged-overlap date that both free daily archives missed",
+  "reading": "A MISS here means adsb.lol's feeders genuinely recorded nothing for that aircraft that day. It is not evidence of removal, and it is not independent of the adsb.lol live API -- same organisation, same data.",
+  "dates": 22,
+  "results": [
+    {
+      "date": "2024-01-10",
+      "tails_asked": [
+        "SU-BTT"
+      ],
+      "release": "v2024.01.10-planes-readsb-prod-0",
+      "url": "https://github.com/adsblol/globe_history_2024/releases/download/v2024.01.10-planes-readsb-prod-0/v2024.01.10-planes-readsb-prod-0.tar",
+      "curl_exit": 0,
+      "hits": [],
+      "verdict": "NOT_IN_THE_BACKUP_EITHER"
+    },
+    {
+      "date": "2024-02-11",
+      "tails_asked": [
+        "SU-BTT"
+      ],
+      "release": "v2024.02.11-planes-readsb-prod-0",
+      "url": "https://github.com/adsblol/globe_history_2024/releases/download/v2024.02.11-planes-readsb-prod-0/v2024.02.11-planes-readsb-prod-0.tar",
+      "curl_exit": 0,
+      "hits": [],
+      "verdict": "NOT_IN_THE_BACKUP_EITHER"
+    },
+    {
+      "date": "2024-03-10",
+      "tails_asked": [
+        "SU-BTT"
+      ],
+      "release": "v2024.03.10-planes-readsb-prod-0",
+      "url": "https://github.com/adsblol/globe_history_2024/releases/download/v2024.03.10-planes-readsb-prod-0/v2024.03.10-planes-readsb-prod-0.tar",
+      "curl_exit": 0,
+      "hits": [],
+      "verdict": "NOT_IN_THE_BACKUP_EITHER"
+    },
+    {
+      "date": "2024-03-18",
+      "tails_asked": [
+        "SU-BTT"
+      ],
+      "release": "v2024.03.18-planes-readsb-prod-0",
+      "url": "https://github.com/adsblol/globe_history_2024/releases/download/v2024.03.18-planes-readsb-prod-0/v2024.03.18-planes-readsb-prod-0.tar",
+      "curl_exit": 0,
+      "hits": [],
+      "verdict": "NOT_IN_THE_BACKUP_EITHER"
+    },
+    {
+      "date": "2024-03-22",
+      "tails_asked": [
+        "SU-BTT"
+      ],
+      "release": "v2024.03.22-planes-readsb-prod-0",
+      "url": "https://github.com/adsblol/globe_history_2024/releases/download/v2024.03.22-planes-readsb-prod-0/v2024.03.22-planes-readsb-prod-0.tar",
+      "curl_exit": 0,
+      "hits": [],
+      "verdict": "NOT_IN_THE_BACKUP_EITHER"
+    }
+  ]
+}

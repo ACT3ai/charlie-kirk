@@ -47,9 +47,15 @@ claim predicted:
 the dispute was recovered from an archived copy taken the day after the assassination. Days the
 primary archive refuses to serve were recovered from two independent backups that agree with each
 other to the second. Flight tracks from **2022** — a year this site has published as untestable —
-were recovered for the first time. And **twenty-three of the alleged overlap dates now have a real
-ADS-B track behind them**, tested one at a time on
-[Overlap Recovery](/Planes/Flight-Data-Recovery/Overlap-Recovery).
+were recovered for the first time, and put three of the five claimed clustering states on primary
+position data. **153 flight legs that our own tooling had recorded as zero** turned out to be sitting
+on disk unparsed. And **all 85 claimed overlaps have now been checked against primary position data:
+24 have the aircraft where the claim said it was, and 12 do not** — tested one at a time on
+[Overlap Recovery](/Planes/Flight-Data-Recovery/Overlap-Recovery) and under
+[Overlaps](/Planes/following/overlap/overview).
+
+**Four of the findings on this page correct this site rather than anybody else.** They are marked as
+corrections where they appear, and they are the reason the rest of it is worth reading.
 
 ## Correction: the FlightRadar24 "removal" does not survive its own control test
 
@@ -103,8 +109,8 @@ N102DZ's table is empty because a private aircraft that has not flown in a week 
 and Nike's Gulfstream, the control, is empty for the same reason on the same day, while the Ryanair
 737 flying six sectors a day shows 683 rows.
 
-This matters more than the finding it replaces. **The standard this page set for the other two
-"erasures" is the standard that just took down the third.** The evidence is at
+This matters more than the finding it replaces. **The standard this page set for the other
+"erasures" is the standard that just took this one down.** The evidence is at
 [`browser_capture/captures/fr24_page_availability_2026-08-24.tsv`](https://github.com/BryanStarbuck/charlie-kirk)
 and in `page_control_probe.json`, and the method is set out on
 [What A 403 Actually Means](/Planes/Flight-Data-Recovery/What-A-403-Means).
@@ -460,6 +466,30 @@ October 2025.
 **That is no longer true, and this page retracts it.** Those days are recoverable, from two separate
 places, and we have them.
 
+### First, the map of the archive itself — corrected
+
+The band was described wrongly here and in this repo's own working notes, which said adsb.lol was
+"normal again by 2025-12-31". **It is not.** A basket of **nine airframes — four from this case, five
+unrelated controls — was probed date by date on 24 August 2026**, and the picture is this:
+
+| Window | adsb.lol | globe.airplanes.live | Reading |
+|---|---|---|---|
+| … through **2025-10-11** | serves normally | serves from about Nov 2023 | normal |
+| **2025-10-12 → about 2025-12-30** | **403 for every aircraft**, controls included | serves normally | **site-wide** |
+| **about 2025-12-31 → about 2026-08-01** | **404 for every aircraft**, controls included | serves normally | **site-wide** |
+| from **about 2026-08-02** | serves normally | serves normally | normal |
+
+Two corrections come out of that. **The 403 band begins exactly at 2025-10-12** — every aircraft in
+the basket is served on 11 October and none on 12 October. And **the 403 band does not end in
+December; it is followed straight away by a roughly seven-month 404 stretch**, with normal service
+resuming about 2 August 2026. 2025-12-31, the date this repo had recorded as the return to normal,
+returns 404 for every control.
+
+**Neither condition is about this case, and neither may ever be reported as scrubbing.** A hard
+boundary that lands on the same date for a Ryanair 737 and a Lufthansa A380 is an archive changing
+its mind about a date range. It is also the reason a second network matters, which is the next
+section.
+
 ### Backup one: adsb.lol publishes its own archive to GitHub
 
 adsb.lol mirrors its entire historical database to public GitHub releases — **one release per day**,
@@ -496,6 +526,41 @@ were run independently and compared:
 **Identical to the second on first contact, and to four decimal places on position, from two
 archives that do not share a feeder network.** That is what a good recovery looks like, and it is
 the standard the rest of this page is held to.
+
+### How much the second network actually recovered — and the control result inside it
+
+Twelve aircraft were run across the three windows this case cares about, day by day, against both
+archives:
+
+| | Aircraft-days |
+|---|---|
+| Both archives hold the day | **89** |
+| **Recovered only from the backup network (globe.airplanes.live)** | **152** |
+| Held only by adsb.lol | **0** |
+| Neither archive holds anything | 563 |
+
+**Lead with the control result, because it is the one that answers the question people actually
+have.** For **1–16 September 2025 — the fortnight this entire case turns on — 74 days are held by
+BOTH archives and exactly 1 is backup-only.** Two independent volunteer networks, with different
+feeders and different antennas, agree almost completely across the critical window. **There is no
+scrubbing in that fortnight.** If data had been pulled from one of them, this is precisely where the
+two would diverge, and they do not.
+
+The other two windows behave exactly as the archive map above predicts:
+
+* **8–16 October 2025** — every date on or before 11 October is held by both; **every date from 12
+  October is backup-only.** 25 aircraft-days recovered. The 403 band is fully navigable through the
+  second network.
+* **25 April – 5 June 2026** — **126 backup-only, 0 both.** adsb.lol holds nothing at all in the 404
+  stretch, and every day in that window came from globe.airplanes.live.
+
+**The honest frame, and it is the counterargument to our own number.** A day one network has and the
+other does not is **ordinary**. Volunteer ADS-B networks have different feeders in different places;
+disagreement about a single aircraft-day is the normal condition and means nothing on its own. It
+becomes a finding only in the two cases seen here — when the gap is archive-wide across unrelated
+control aircraft, or when a page that was public stops being public. Neither of those is about an
+airframe. **The 152 is a measure of how much a second source is worth, not a measure of how much
+somebody deleted.**
 
 ### And it produced the first primary data on the Sharm el-Sheikh claim
 
@@ -552,10 +617,54 @@ can establish that an airframe existed, flew, and was being received in a month 
 reaches.
 
 Running it across the fleet retrieved **207 full-day traces spanning 15 aircraft, 35 of them before
-March 2023** — dates neither daily archive can reach at all.
+March 2023** — dates neither daily archive can reach at all. **34 of those aircraft-days fall before
+2023 outright**, across twelve tails.
 
-The legs that matter most, because they are the first primary 2022 traces this investigation has
-ever held for the aircraft at the centre of the claim:
+**The wall this site published is down.** The statement carried here and in this repo's working notes
+— *"the archive does not reach 2022; every 2022 claim rests on a screenshot"* — **is no longer true,
+and this is the retraction.** There is now primary position data for 2022, free, with no account and
+no key, and every trace below self-identifies its own registration inside the file.
+
+**Read the sampling caveat first, and carry it every single time these are quoted. This is one day
+per month, the 1st.** Two of the three sampled 2022 days put SU-BTT in the United States — but three
+sampled days cannot support a rate. **These traces establish that the aircraft was in the United
+States in 2022. They say nothing about how often, and they can never test a claim about the 13th of
+anything.**
+
+### Ground-verified 2022 positions
+
+Resolved to the nearest airport in the OurAirports public-domain gazetteer, with the distance
+published because **nearest-airport resolution is geometry, not a landing record**:
+
+| Date | Aircraft | What the trace shows |
+|---|---|---|
+| **2022-06-01** | [SU-BTT](/Planes/SU-BTT/overview) | **On the ground at Wilmington, Delaware (KILG, 0.72 km) at 11:31:13 UTC**, then flies to **Almaza Air Force Base, Cairo (HEAZ, 1.38 km)**. 1,508 points. |
+| **2022-09-01** | [SU-BTT](/Planes/SU-BTT/overview) | Paris–Le Bourget → **on the ground at Wichita, Kansas (KICT, 0.69 km) at 16:33:26 UTC**. 1,337 points. |
+| **2022-12-01** | [SU-BTU](/Planes/SU-BTU/overview) | Paris–Le Bourget → **Spirit of St. Louis, Missouri (KSUS)**, on final approach at 150 ft, 18:40:48 UTC. 1,245 points. |
+| **2022-09-01** | [SU-BND](/Planes/SU-BND/overview) | **41,000 ft over Bremen, Indiana at 00:00:18 UTC**, crossing the United States eastbound, then on the ground at Le Bourget 09:30 UTC. 989 points. |
+| 2022-05-01 | [SU-BTT](/Planes/SU-BTT/overview) | Egypt only — Gebel El Basur ↔ Quesna. |
+| 2022-10-01 | [SU-BTV](/Planes/SU-BTV/overview) | Egypt only — Almaza AFB round trip. |
+| 2022-01-01 | [SU-BND](/Planes/SU-BND/overview) | Egypt only — New Cairo ↔ Ras Sedr. |
+
+**Three of the five claimed clustering states now have primary position data behind them.** This site
+carries a clustering claim — overlaps concentrated in **Missouri, Delaware, Utah, Nebraska and
+Kansas** — marked *unverified*. **Delaware** (SU-BTT on the ground at Wilmington), **Kansas** (SU-BTT
+on the ground at Wichita) and **Missouri** (SU-BTU into St. Louis) are corroborated by 2022 position
+data for the first time. Utah and Nebraska are not, on these samples.
+
+**And one detail cuts against the fleet's own description.** On 1 June 2022 SU-BTT's destination
+resolves to **Almaza Air Force Base**, an Egyptian military field, not Cairo International. That is
+worth stating plainly and worth stating as exactly what it is: a state aircraft using a state
+airfield, which is ordinary for a government fleet and is not by itself evidence of anything.
+
+**None of this puts a Kirk anywhere.** It locates aircraft in 2022. The clustering claim is about
+*overlaps*, and the other half of every overlap — where Charlie or Erika Kirk actually was — is
+untouched by position data and remains the weakest part of the whole angle. Erika Kirk's flight logs
+are reported erased; see [Erika Flight Logs Erased](/Planes/Erika-Flight-Logs-Erased).
+
+### The wider set, 2022 through 2024
+
+The legs below, including the ones already published here, are the fuller set:
 
 | Aircraft | Date | What the recovered trace shows |
 |---|---|---|
@@ -686,6 +795,14 @@ The honest list, and it is the most useful section here.
   simply wrong — come first every time.
 * **We cannot see intent.** Not at FlightRadar24, not anywhere. This page documents what changed and
   when. It does not tell you why, and nobody should read it as though it did.
+* **Our scripted method cannot test a FlightRadar24 removal at all.** It gets 403 for the front page.
+  Every statement this page makes about an FR24 page being present rests on the Pass 4 browser
+  capture, not on the script, and the browser pass has been run once, on one day.
+* **A confirmed aircraft is still not a confirmed overlap.** Twenty-four claimed pairings now have
+  the aircraft where the claim said it was. Not one of them establishes that a Kirk was there.
+* **Twenty-one pages of the fleet were never archived at all**, and SU-BTT — the aircraft the case
+  turns on — has zero archived snapshots on FlightRadar24, FlightAware, RadarBox and Planespotters.
+  Nothing can be recovered from a page nobody ever crawled.
 
 ## Counterpoints
 
@@ -694,10 +811,17 @@ The honest list, and it is the most useful section here.
   trackers' own block lists. Had that been done to N102DZ the page would say so or the aircraft would
   be absent. Instead every one of the sixteen aircraft loads normally, with a full identity block —
   so this ordinary explanation is not needed, because there is nothing left to explain.
-* **A 403 is not a deletion.** **All three** of the tracking-data "erasures" examined here
-  dissolved the moment they were tested against control aircraft — including the one this page
-  itself had called a documented removal. The lesson is about method, not about anybody's motives:
-  ask an unrelated aircraft the same question before you conclude anything about this one.
+* **A 403 is not a deletion.** **Every** tracking-data "erasure" examined here dissolved the moment
+  it was tested against control aircraft — including the one this page itself had called a documented
+  removal, and including the N888KG capture sequence this page found for itself and then lost. The
+  lesson is about method, not about anybody's motives: ask an unrelated aircraft, and then a home
+  page, the same question before you conclude anything about this one.
+* **A zero can be your own bug.** Thirty-nine provenance records here read `0` or `null` and meant
+  "nobody parsed this", not "nothing was there". **A zero is the exact shape a scrub is supposed to
+  leave**, which is why it has to be checked before it is published.
+* **An empty API response means the API had nothing.** It does not mean the aircraft was hidden.
+  Only a track putting the aircraft somewhere else refutes a claim; silence refutes nothing, and
+  cannot support anything either.
 * **The recovered data mostly makes the case *less* dramatic, not more.** The record was not
   destroyed. The flights are ordinary point-to-point business-jet legs. One suggestive detail this
   site had published turned out to be a misread column.
@@ -715,10 +839,25 @@ a word of this should be able to run it and get the same answer.
 
 ```
 # the two-archive comparison, per aircraft, per date
+# (this is what produced the 89 both / 152 backup-only / 0 adsb.lol-only split)
 node recover_erased.js --tail N102DZ
 
-# the free monthly sample archive, back to 2016
+# the free monthly sample archive, back to 2016 - the only free route into 2022
 node recover_adsbx_samples.js --tail SU-BTT --from 2022-01 --to 2026-08
+
+# re-extract the flight rows from every archived tracking page on disk
+# (this is the script that turned 39 sidecars reading 0 or null into 153 flight legs)
+python3 extract_wayback_flights.py
+
+# ask the Internet Archive what it holds, without collapse=digest, with retries
+# (30 of 30 queries succeed; three earlier HTTP 504s had been logged as "0 snapshots")
+node wayback.js
+
+# test all 85 claimed overlaps against both archives, nearest airport, 15 km radius
+node verify_overlaps.js
+
+# rebuild the per-aircraft provenance record the fleet table above is drawn from
+node build_tail_provenance.js
 
 # one day from the adsb.lol GitHub backup, filtered to one airframe
 curl -sL <release>.tar.aa <release>.tar.ab | tar -xf - --include '*trace_full_a00c85.json'
@@ -737,6 +876,7 @@ what, and which days were recovered from a backup after the primary archive retu
 
 * [Erika Flight Logs Erased](/Planes/Erika-Flight-Logs-Erased) — the removal claim this page tests
 * [N102DZ](/Planes/N102DZ/overview) — the aircraft whose FR24 history was recovered
+* [Overlaps](/Planes/following/overlap/overview) — all 85 claimed pairings, one page each, with the verdict
 * [Getting The Data](/Planes/following/apis/overview) — the four-pass verification effort this belongs to
 * [Open Source Data](/Planes/following/apis/public_open_source/knowledge) — the free-source knowledge page
 * [Planes Following Charlie or Erika](/Planes/Following-Charlie-Erika) — the claim the data is used to test

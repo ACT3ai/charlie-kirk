@@ -1,0 +1,100 @@
+{
+  "verified_utc": "2026-08-24T17:36:21.953Z",
+  "overlap_id": "OWENS-040",
+  "date": "2025-09-04",
+  "claimed_airport": "KPVU",
+  "claimed_codes": [
+    "KPVU"
+  ],
+  "claimed_city": "Provo",
+  "claimed_state": "UT",
+  "claimed_tails": [
+    "SU-BTT"
+  ],
+  "subject": "Charlie",
+  "audit_verdict": "accurate",
+  "site_page": "site/docs/Planes/following/overlap/20250910_UT_orem/overview.mdx",
+  "tails": {
+    "SU-BTT": {
+      "2025-09-03": {
+        "adsb_lol_http": 200,
+        "airplanes_live_http": 200,
+        "archive_control_probe": null,
+        "both_agree": true,
+        "heard": true,
+        "at_claimed_airport": false,
+        "closest_approach_to_claimed_field": {
+          "code": "KPVU",
+          "km": 8399.51,
+          "utc": "2025-09-03T10:00:47.830Z",
+          "on_ground": true
+        },
+        "airports_touched": [
+          "LFPK 17.28km below_4000ft",
+          "LFPE 15.7km below_4000ft",
+          "LFPG 11.06km below_4000ft",
+          "LFPB 5.48km below_4000ft",
+          "HE42 20.6km first_fix"
+        ],
+        "first_where": "HE42 (Quesna Airport, Quesna EG) 20.6km",
+        "last_where": "LFPB/LBG (Paris-Le Bourget International Airport, Paris FR) 0.45km",
+        "points": 804,
+        "verdict": "ELSEWHERE"
+      },
+      "2025-09-04": {
+        "adsb_lol_http": 200,
+        "airplanes_live_http": 200,
+        "archive_control_probe": null,
+        "both_agree": true,
+        "heard": true,
+        "at_claimed_airport": true,
+        "closest_approach_to_claimed_field": {
+          "code": "KPVU",
+          "km": 0.16,
+          "utc": "2025-09-04T18:49:38.010Z",
+          "on_ground": true
+        },
+        "airports_touched": [
+          "LFPB 0.94km on_ground",
+          "KPVU 0.19km on_ground"
+        ],
+        "first_where": "LFPB/LBG (Paris-Le Bourget International Airport, Paris FR) 0.94km",
+        "last_where": "KPVU/PVU (Provo Municipal Airport, Provo UT) 1.35km",
+        "points": 1156,
+        "verdict": "AT_CLAIMED_AIRPORT"
+      },
+      "2025-09-05": {
+        "adsb_lol_http": 404,
+        "airplanes_live_http": 404,
+        "archive_control_probe": {
+          "adsb-lol": {
+            "verdict": "COVERED",
+            "codes": [
+              404,
+              404,
+              200
+            ]
+          },
+          "airplanes-live": {
+            "verdict": "COVERED",
+            "codes": [
+              404,
+              404,
+              200
+            ]
+          }
+        },
+        "both_agree": false,
+        "heard": false,
+        "at_claimed_airport": false,
+        "closest_approach_to_claimed_field": null,
+        "airports_touched": null,
+        "first_where": null,
+        "last_where": null,
+        "points": null,
+        "verdict": "NOT_HEARD"
+      }
+    }
+  },
+  "verdict": "AT_CLAIMED_AIRPORT"
+}
