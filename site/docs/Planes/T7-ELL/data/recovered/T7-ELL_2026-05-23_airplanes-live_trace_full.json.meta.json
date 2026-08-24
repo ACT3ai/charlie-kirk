@@ -1,0 +1,31 @@
+{
+  "retrieved_utc": "2026-08-24T16:29:36.628Z",
+  "source": "airplanes-live",
+  "source_role": "BACKUP ARCHIVE — independent volunteer network",
+  "url": "https://globe.airplanes.live/globe_history/2026/05/23/traces/8a/trace_full_50018a.json",
+  "http_status": 200,
+  "bytes": 456021,
+  "tail": "T7-ELL",
+  "hex": "50018a",
+  "utc_date": "2026-05-23",
+  "summary": {
+    "registration": "T7-ELL",
+    "type": "GLEX",
+    "icao": "50018a",
+    "points": 2462,
+    "first_seen_utc": "2026-05-23T05:32:10.540Z",
+    "first_pos": [
+      25.075241,
+      54.46106
+    ],
+    "first_on_ground": false,
+    "last_seen_utc": "2026-05-23T14:37:47.200Z",
+    "last_pos": [
+      44.570515,
+      26.102535
+    ],
+    "last_on_ground": true,
+    "wheels_up_utc": "2026-05-23T12:59:35.120Z",
+    "wheels_down_utc": "2026-05-23T14:36:02.530Z"
+  }
+}

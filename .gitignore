@@ -10,10 +10,35 @@ site/.cache-loader
 
 # Misc
 .DS_Store
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
+
+# ============================================================================
+# SECRETS — never commit a credential to this repo.
+# Credentials live OUTSIDE every git repo, in ~/.credentials/charlie_kirk.json
+# (mode 600), and are read at run time by
+# site/docs/Planes/following/apis/public_open_source/code/lib/credentials.js.
+# These patterns are the backstop, not the policy.
+# ============================================================================
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+!*.public.key
+*.p12
+*.pfx
+*.keystore
+id_rsa
+id_rsa.*
+id_ed25519
+id_ed25519.*
+credentials.json
+!site/docs/Planes/following/apis/public_open_source/code/lib/credentials.js
+service-account*.json
+*credentials*.yaml
+*secrets*.yaml
+.netrc
+cookies.txt
+**/captures/**/cookies*.json
 
 npm-debug.log*
 yarn-debug.log*

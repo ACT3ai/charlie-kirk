@@ -1,0 +1,31 @@
+{
+  "retrieved_utc": "2026-08-24T16:29:36.628Z",
+  "source": "adsb-lol",
+  "source_role": "the archive this investigation already used",
+  "url": "https://adsb.lol/globe_history/2025/10/11/traces/8a/trace_full_50018a.json",
+  "http_status": 200,
+  "bytes": 101892,
+  "tail": "T7-ELL",
+  "hex": "50018a",
+  "utc_date": "2025-10-11",
+  "summary": {
+    "registration": "T7-ELL",
+    "type": "GLEX",
+    "icao": "50018a",
+    "points": 604,
+    "first_seen_utc": "2025-10-11T19:48:05.760Z",
+    "first_pos": [
+      41.983927,
+      -87.918793
+    ],
+    "first_on_ground": true,
+    "last_seen_utc": "2025-10-11T21:51:22.750Z",
+    "last_pos": [
+      51.418716,
+      -69.259338
+    ],
+    "last_on_ground": false,
+    "wheels_up_utc": "2025-10-11T19:48:08.820Z",
+    "wheels_down_utc": null
+  }
+}

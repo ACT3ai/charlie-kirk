@@ -242,6 +242,14 @@ now; re-check and re-date rather than assuming.
 | ADS-B Exchange | RapidAPI + `globe_history` | deep | `ADSBX_RAPIDAPI_KEY` | **403 to the public.** Several original screenshots came from here while it was open. |
 | RadarBox, Cirium, OAG, Spire | — | — | — | not investigated |
 
+**Where those credentials live.** Not in this repo, and not in any file under it. Every client
+resolves its credential through `public_open_source/code/lib/credentials.js`, which reads the
+environment first and then `~/.credentials/charlie_kirk.json` — mode `600`, outside every git repo,
+one key per vendor under `charlie_kirk.flight_apis`. `CK_CREDENTIALS_FILE` overrides the path.
+The loader warns if the file is group- or world-readable, and a missing credential is reported by
+NAME only; no script ever prints a value. **Never paste a key into a script, a page, a prompt file,
+a CSV, or a commit — put it in the store and let the loader find it.**
+
 ### Pass 3 — government and public records
 
 | Source | What it is | Access | Status |

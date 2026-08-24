@@ -12,8 +12,12 @@ fails loudly with the reason, and the reason is meant to be copied into
 
 ## Rules
 
-* **Credentials come from the environment.** Never a file in this repo, never a
-  page, never a commit, never printed.
+* **Credentials never live in this repo.** `../../public_open_source/code/lib/credentials.js`
+  reads them at run time from the environment first, then from
+  `~/.credentials/charlie_kirk.json` (`charlie_kirk.flight_apis.<NAME>`, mode `600`,
+  outside every git repo). Never a file in this repo, never a page, never a
+  commit, never printed. Set `CK_CREDENTIALS_FILE` to point the loader elsewhere.
+  A missing credential is reported by name only — the value is never echoed.
 * **Run Pass 1 first.** adsb.lol serves a free historical archive at the same URL
   shape ADS-B Exchange charges for. Do not buy an answer that is already free.
 * **Publish the finding, not the payload.** Commercial terms generally permit

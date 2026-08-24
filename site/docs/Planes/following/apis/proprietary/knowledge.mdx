@@ -88,12 +88,21 @@ one exits with the reason, and the reason is meant to be copied into this page a
 blocked-on-credential entry.
 
 ```
-export FR24_API_TOKEN=...        node fr24api.js SU-BTT 2025-09-01 2025-09-15
-export AEROAPI_KEY=...           node aeroapi.js SU-BTT 2025-09-01 2025-09-15
-export ADSBX_RAPIDAPI_KEY=...    node adsbexchange_rapidapi.js SU-BTT
+node fr24api.js SU-BTT 2025-09-01 2025-09-15
+node aeroapi.js SU-BTT 2025-09-01 2025-09-15
+node adsbexchange_rapidapi.js SU-BTT
 ```
 
-Credentials come from the environment. Never a file in this repo, never a commit, never printed.
+**Credentials never live in this repo.** They are read at run time by
+`public_open_source/code/lib/credentials.js`, which looks in two places, in this order:
+
+1. the environment — `export FR24_API_TOKEN=...` still works and still wins;
+2. a credential file outside every git repo, `~/.credentials/charlie_kirk.json`, mode `600`, one
+   key per vendor under `charlie_kirk.flight_apis`.
+
+Never a file in this repo, never a commit, never a page, never printed. A reader repeating our
+pulls supplies their own credential the same way — that is the point of publishing the method
+rather than the key.
 
 ## What their terms allow us to publish
 

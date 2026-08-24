@@ -1196,6 +1196,41 @@ DIR:
   rather than model-generated when the data must be exact.
 
 
+=== Credentials & Secrets ===
+
+**No credential of ours has ever lived in this repo, and none may.** API keys for
+the flight-tracking vendors live OUTSIDE every git repo, in the house credential
+store, and are read at run time.
+
+FILE:
+* ~/.credentials/charlie_kirk.json: THE credential store for this investigation.
+  Mode 600, outside every repo, same one-file-per-app shape the other apps on this
+  machine use. Keys sit under `charlie_kirk.flight_apis`: `FR24_API_TOKEN`,
+  `AEROAPI_KEY`, `ADSBX_RAPIDAPI_KEY`, `OPENSKY_CLIENT_ID`, `OPENSKY_CLIENT_SECRET`.
+  An empty string means "not held", and the client then reports BLOCKED on
+  credential — which is itself a publishable finding, not a failure to hide.
+* site/docs/Planes/following/apis/public_open_source/code/lib/credentials.js: the
+  ONLY thing that knows where credentials live. `cred(NAME)` reads the environment
+  first, then the store; `have(...)` and `report(...)` let a script say what it is
+  missing without putting the value anywhere near stdout. Set `CK_CREDENTIALS_FILE`
+  to point it at a different store. Warns if the store is group- or world-readable.
+* security/scan_secrets.py: scans tracked (or `--staged`) files for credentials and
+  prints the file and line number, NEVER the value. Exit 0 clean, 1 findings.
+  Archived flight-tracker HTML under `*/data/recovered/` is skipped on purpose —
+  it carries Flightradar24's own already-public client-side Firebase key, and the
+  captures are evidence of what those pages served.
+* security/pre-commit + security/install_hooks.sh: the hook that blocks a commit
+  carrying a credential, and the installer. **.git/hooks/ is not cloned — run
+  `sh security/install_hooks.sh` once on every machine that checks this repo out.**
+  Emergency escape is `git commit --no-verify`, and it should never be needed.
+
+Rules:
+* Never paste a key into a script, a page, a prompt file, a CSV, or a commit. Put
+  it in the store and let the loader find it.
+* `.gitignore` carries a SECRETS block (`.env*`, `*.pem`, `*.key`, `id_rsa*`,
+  service-account JSON, `.netrc`, …) as the backstop. It is not the policy.
+* A missing credential is reported by NAME. No script ever prints a value.
+
 === IPFS & Large Files ===
 
 DIR:
