@@ -1,0 +1,22 @@
+{"icao":"010070",
+"r":"SU-BGM",
+"t":"GLF4",
+"dbFlags":1,"desc":"GULFSTREAM 4",
+"version": "readsb 3.14.1676 46c61ff-dirty",
+"timestamp": 1761004800.000,
+"trace":[ 
+[39616.86,29.711334,31.069917,6875,219.1,358.2,5,-704,{"type":"adsb_icao","flight":"SUBGM   ","alt_geom":7250,"track":358.17,"geom_rate":-704,"squawk":"3770","emergency":"none","category":"A2","nav_qnh":1012.8,"nav_altitude_mcp":6016,"nic":8,"rc":186,"version":2,"nic_baro":1,"nac_p":9,"nac_v":1,"sil":3,"sil_type":"perhour","gva":2,"sda":2,"alert":0,"spi":0},"adsb_icao",7250,-704,null,null],
+[39618.17,29.712753,31.070075,6850,219.1,358.2,4,-704,null,"adsb_icao",7225,-704,null,null],
+[39619.92,29.714401,31.070339,6825,219.5,8.6,4,-768,null,"adsb_icao",7200,-768,null,null],
+[39622.97,29.717412,31.071275,6800,219.3,13.7,4,-832,null,"adsb_icao",7200,-832,null,null],
+[39624.07,29.718475,31.071713,6775,218.8,18.9,4,-896,{"type":"adsb_icao","flight":"SUBGM   ","alt_geom":7150,"track":18.93,"geom_rate":-896,"squawk":"3770","emergency":"none","category":"A2","nav_qnh":1012.8,"nav_altitude_mcp":6016,"nic":8,"rc":186,"version":2,"nic_baro":1,"nac_p":9,"nac_v":1,"sil":3,"sil_type":"perhour","gva":2,"sda":2,"alert":0,"spi":0},"adsb_icao",7150,-896,null,null],
+[39626.69,29.720856,31.073033,6750,218.4,24.3,4,-768,null,"adsb_icao",7150,-768,null,null],
+[39629.09,29.722952,31.074614,6725,217.2,29.5,4,-768,null,"adsb_icao",7125,-768,null,null],
+[39631.72,29.724930,31.076361,6675,216.4,34.6,4,-832,null,"adsb_icao",7050,-832,null,null],
+[39643.52,29.731983,31.087000,6525,216.4,34.6,4,-832,{"type":"adsb_icao","flight":"SUBGM   ","alt_geom":6900,"track":34.64,"geom_rate":-832,"squawk":"3770","emergency":"none","category":"A2","nav_qnh":1012.8,"nav_altitude_mcp":6016,"nic":8,"rc":186,"version":2,"nic_baro":1,"nac_p":9,"nac_v":1,"sil":3,"sil_type":"perhour","gva":2,"sda":2,"alert":0,"spi":0},"adsb_icao",6900,-832,null,null],
+[39644.61,29.732529,31.088034,6500,210.0,57.5,4,-896,null,"adsb_icao",6875,-896,null,null],
+[39646.79,29.733673,31.090094,6475,208.7,58.5,4,-832,null,"adsb_icao",6850,-832,null,null],
+[39655.31,29.737756,31.098148,6375,208.7,58.5,4,-832,null,"adsb_icao",6750,-832,null,null],
+[39743.78,29.775789,31.178068,5225,null,null,1,null,{"type":"adsb_icao","squawk":"3770","emergency":"none","category":"A2","nic":8,"rc":186,"version":0,"nac_p":8,"sil":2,"sil_type":"perhour","alert":0,"spi":0},"adsb_icao",null,null,null,null],
+[39821.99,29.805350,31.243178,4075,null,null,1,null,null,"adsb_icao",null,null,null,null] ]
+ }

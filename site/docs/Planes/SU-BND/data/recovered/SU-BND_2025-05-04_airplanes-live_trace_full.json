@@ -1,0 +1,21 @@
+{"icao":"01003e",
+"r":"SU-BND",
+"t":"GLF4",
+"dbFlags":0,"desc":"GULFSTREAM 4",
+"ownOp":"Government Of Egypt",
+"year":"1998",
+"timestamp": 1746316800.000,
+"trace":[ 
+[43581.83,28.870022,33.091305,29925,423.6,314.0,1,-288,{"type":"adsb_icao","callsign":"SUBND   ","alt_geom":30350,"ias":300,"mach":0.792,"track":313.95,"mag_heading":307.44,"true_heading":312.06,"baro_rate":-288,"geom_rate":-256,"squawk":"3725","category":"A2","nav_qnh":1013.6,"nav_altitude_mcp":26016,"nic":8,"rc":186,"version":2,"nic_baro":1,"nac_p":9,"nac_v":1,"sil":3,"sil_type":"perhour","gva":2,"sda":2,"alert":0,"spi":0},"adsb_icao",30350,-256,300,null],
+[43592.04,28.881866,33.077299,29850,423.6,314.0,0,-416,null,"adsb_icao",30300,-640,301,0.5],
+[43605.82,28.902603,33.052896,29700,424.3,313.9,0,-416,null,"adsb_icao",30150,-768,301,0.5],
+[43617.14,28.907547,33.047086,29650,424.3,313.9,0,-416,null,"adsb_icao",30075,-768,301,0.5],
+[43635.45,28.943388,33.004761,29250,423.6,314.0,5,-1024,{"type":"adsb_icao","callsign":"SUBND   ","alt_geom":29675,"tas":470,"track":313.95,"track_rate":0.03,"roll":0.35,"geom_rate":-1024,"squawk":"3725","emergency":"none","category":"A2","nav_qnh":1013.6,"nav_altitude_mcp":26016,"nic":8,"rc":186,"version":2,"nic_baro":1,"nac_p":9,"nac_v":1,"sil":3,"sil_type":"perhour","gva":2,"sda":2,"alert":0,"spi":0},"adsb_icao",29675,-1024,null,0.3],
+[43648.01,28.960373,32.984707,29050,422.2,313.9,4,-1024,null,"adsb_icao",29475,-1024,null,0.3],
+[43655.74,28.970947,32.972242,28925,421.5,313.9,4,-1088,null,"adsb_icao",29325,-1088,null,null],
+[43671.31,28.990872,32.948698,28650,422.2,313.9,5,-1216,null,"adsb_icao",29050,-1216,null,null],
+[43686.20,28.997948,32.940351,28500,422.2,313.9,4,-1600,{"type":"adsb_icao","callsign":"SUBND   ","alt_geom":28875,"track":313.94,"geom_rate":-1600,"squawk":"3725","emergency":"none","category":"A2","nav_qnh":1013.6,"nav_altitude_mcp":26016,"nic":8,"rc":186,"version":2,"nic_baro":1,"nac_p":9,"nac_v":1,"sil":3,"sil_type":"perhour","gva":2,"sda":2,"alert":0,"spi":0},"adsb_icao",28875,-1600,null,null],
+[43712.32,29.047211,32.882080,27575,414.5,313.8,5,-1600,null,"adsb_icao",27950,-1600,null,null],
+[43723.64,29.061026,32.865654,27275,408.8,313.8,4,-1664,null,"adsb_icao",27650,-1664,null,null],
+[43730.30,29.070007,32.854984,27100,408.8,313.8,4,-1664,null,"adsb_icao",27475,-1664,null,null] ]
+ }

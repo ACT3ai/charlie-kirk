@@ -723,3 +723,72 @@ happened.** Say both halves of that whenever the number is quoted.
 pattern look tidier or stronger.** `UNKNOWN`, `AMBIGUOUS`, `not_documented`, the empty `UNPUB-`
 rows, the attribution conflicts, the KTOP/KFOE identifier clash and the three-way disputed
 departure time are the most valuable content in them — they are what makes the rest credible.
+
+## The `speaking/` yaml layer — airports near every speaking location
+
+Beside every `speaking/*.mdx` sits a `speaking/*.yaml` of the same name. It is **generated,
+never hand-edited**, and it answers one question per event:
+
+> Which airports could a private jet have used for this appearance, and was any tracked
+> aircraft — above all an Egyptian `SU-` tail — at one of them within ±2 days?
+
+    SPEAKING_YAML pattern is {THIS_DIR}speaking/{YYYYMMDD}_{city}.yaml
+    SPEAKING_SUMMARY is file {THIS_DIR}speaking/_airports_near_summary.csv   (the roll-up)
+    AIRPORTS_NEAR_PROMPT is file {SITE_ROOT}prompts/p_airports_near.md       (the contract)
+    BUILDER is file {THIS_DIR}apis/public_open_source/code/airports_near.py
+    FETCHER is file {THIS_DIR}apis/public_open_source/code/fetch_event_windows.py
+
+Regenerate the whole set — it takes about a second off the cached trace index:
+
+    cd {THIS_DIR}apis/public_open_source/code
+    ~/.venvs/ck_flight/bin/python airports_near.py --rebuild-traces --report
+
+**A new speaking location needs NO code change.** Add its row to `{TPUSA_EVENTS_CSV}` with
+`mdx_page` pointing at the `.mdx`, run `fetch_event_windows.py` for the new window, then
+re-run the builder. The `.yaml` appears on its own. `p_airports_near.md` carries the full
+stage-by-stage procedure and the yaml block-by-block contract; read it before changing
+anything here.
+
+Docusaurus never serves a `.yaml` out of `site/docs`, so these are research data sitting
+beside the pages exactly as the six spine CSVs sit beside this file. **Nothing in them
+reaches the public web until a human puts it on a page**, and it must clear the
+public-content rules above first.
+
+### The three things in these files that a future run will be tempted to break
+
+* **`selection_basis` IS THE WHOLE HONESTY OF `arrival_airport`.** "Probably landed at"
+  means *nearest jet-capable field to the venue city*. No published Kirk-side flight
+  record exists for the overwhelming majority of these events. Never restate the chosen
+  field on a page as a known airport, and where the curated and computed values disagree,
+  BOTH are kept in the file — publish the disagreement, never resolve it silently.
+* **`estimated_arrival` / `estimated_departure` ARE ARITHMETIC, NOT RECORDS.** Event start
+  minus 3 hours, event end plus 4, and where no event time is published 19:00 local is
+  assumed *for the arithmetic only* with confidence dropped to low. The one exception is
+  `observed_by_adsb`, which holds real ground contacts by a Kirk-side airframe with actual
+  first and last times. **Only that block may be described as observed.**
+* **`coverage` DECIDES WHETHER AN EMPTY RESULT MEANS ANYTHING.** It splits every
+  aircraft-day in the window three ways: a trace is *held*, the archive was *asked and is
+  empty*, or nobody has *ever asked*. Only the first two are evidence of anything. An
+  empty `tracked_plane_presence` sitting on top of a low `queried_pct` is an UNASKED
+  QUESTION, not a negative finding, and `by_side.following.coverage_pct` is the number
+  that decides it.
+
+### What the first full run found, and how it must be quoted
+
+An Egyptian `SU-` tail inside 40 miles and ±2 days of **1 of 139** sourced speaking
+events — 10 Sep 2025, Orem/UVU, KPVU. Plus **one near miss** in the outer ring: 23 Apr
+2024, Salt Lake City, SU-BTT and SU-BND on the ground at Provo, **41.3 and 41.6 miles**
+from KSLC, gap 0 days. Both are Utah. Both are `CHARLIE_ONLY`.
+
+That is this repo's own primary ADS-B data reproducing the sceptics' result, and it must
+be reported that way and not softened. **It is also not the same as saying the pattern is
+false.** 139 rows is every Kirk/TPUSA location this repo can source and it is nowhere near
+every location the Kirks were at; exactly one of those rows places Erika Kirk anywhere
+before 10 September 2025, against a tally that claims 73 overlaps with her. **A test that
+returns 1 out of 139 is a statement about what we can currently prove, not about what
+happened. Say both halves of that whenever the number is quoted.**
+
+The 40-mile radius is deliberately **soft**. KSLC to KPVU is 41.6 miles, so a flat cutoff
+loses the 23 Apr 2024 pairing by 1.6 miles. The search runs to 60 and reports the outer
+ring in `just_outside_the_radius`, which is **not a hit list** and must never be published
+as one.

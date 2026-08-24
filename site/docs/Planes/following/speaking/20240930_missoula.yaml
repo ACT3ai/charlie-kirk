@@ -2,7 +2,7 @@
 #   node/python: apis/public_open_source/code/airports_near.py --only 20240930_missoula
 #   The prompt that governs this file: prompts/p_airports_near.md
 schema: ck.speaking.airports_near/1
-generated_utc: "2026-08-24T19:03:26Z"
+generated_utc: "2026-08-24T22:38:51Z"
 generated_by: site/docs/Planes/following/apis/public_open_source/code/airports_near.py
 page:
   slug: 20240930_missoula
@@ -120,8 +120,19 @@ arrival_airport:
     utc: "2024-09-30T22:00:00Z"
     basis: "event end + 4h (speech, exit, wheels-up)"
     confidence: medium
-  observed_by_adsb: []
-  observed_by_adsb_note: "NO Kirk-side aircraft is on disk on the ground within 40 miles of KMSO in this window. The arrival and departure above stay estimates."
+  observed_by_adsb:
+    - tail: N582MM
+      airport_code: KMSO
+      date_utc: 2024-09-30
+      gap_days_from_event: 0
+      on_ground_first_local: "2024-09-29 23:32:08 MDT"
+      on_ground_last_local: "2024-09-30 14:32:11 MDT"
+      on_ground_first_utc: "2024-09-30T05:32:08.330000Z"
+      on_ground_last_utc: "2024-09-30T20:32:11.340000Z"
+      ground_minutes: 900.1
+      adsb_sources:
+        - airplanes-live
+      # OBSERVED, not estimated. This is a real ground contact by a Kirk-side airframe. It still does not establish who was aboard.
 airports_within_radius:
   # Every field a private jet could physically use within the radius.
   # Heliports, seaplane bases, balloonports and closed fields are excluded -
@@ -154,7 +165,8 @@ airports_within_radius:
       lon: -114.09111
       distance_mi: 0.0
       bearing: N
-      tracked_plane_presence_in_window: []
+      tracked_plane_presence_in_window:
+        - "N582MM on 2024-09-30 - ADS-B ground contact, 900.1 min, 1 archive(s)"
     - airport_code: US-1510
       icao: null
       iata: null
@@ -423,15 +435,41 @@ tracked_plane_presence:
     from: 2024-09-28
     to: 2024-10-02
     days_each_side: 2
-  any_found: false
+  any_found: true
   egyptian_su_found: false
   counts:
-    adsb_ground_contacts: 0
+    adsb_ground_contacts: 1
     adsb_ground_contacts_egyptian_su: 0
     flights_csv_stays: 0
     flights_csv_stays_egyptian_su: 0
     claimed_overlaps: 0
-  from_adsb_traces: []
+  from_adsb_traces:
+    - tail: N582MM
+      registry: "United States"
+      side: kirk
+      aircraft_type: LJ60
+      is_egyptian_su: false
+      in_73_tally: false
+      airport_code: KMSO
+      airport_name: "Missoula Montana Airport"
+      distance_from_arrival_airport_mi: 0.0
+      median_distance_from_that_runway_km: 0.0
+      date_utc: 2024-09-30
+      gap_days_from_event: 0
+      on_ground_first_utc: "2024-09-30T05:32:08.330000Z"
+      on_ground_last_utc: "2024-09-30T20:32:11.340000Z"
+      on_ground_first_local: "2024-09-29 23:32:08 MDT"
+      on_ground_last_local: "2024-09-30 14:32:11 MDT"
+      ground_positions: 1
+      ground_minutes: 900.1
+      adsb_sources:
+        - airplanes-live
+      source_count: 1
+      trace_files:
+        - site/docs/Planes/N582MM/data/recovered/N582MM_2024-09-30_airplanes-live_trace_full.json.gz
+      evidence_class: adsb_public_history
+      # PRESENCE ONLY. A trace never establishes purpose and never establishes who was aboard.
+      cross_source_agreement: "SINGLE SOURCE - not independently corroborated"
   from_flights_csv: []
   from_overlaps_csv: []
   just_outside_the_radius:
@@ -445,21 +483,35 @@ tracked_plane_presence:
     claimed_overlaps: []
   coverage:
     # AN EMPTY RESULT ABOVE IS NOT A FINDING UNLESS THIS SAYS THE DAYS WERE HELD.
-    # aircraft_days_needed = tails x days in the window. aircraft_days_held is
-    # how many of those this repo actually has a trace for. The rest were never
-    # pulled, or the networks heard nothing - the two are indistinguishable here.
+    # aircraft_days_needed = tails x days in the window.
+    #   aircraft_days_held                     a trace is on disk
+    #   aircraft_days_asked_and_archive_empty  the archive WAS asked and holds
+    #                                          nothing for that aircraft-day
+    #   aircraft_days_never_asked               nobody has queried it yet
+    # Only the FIRST TWO are evidence of anything. The third is an open question,
+    # and closing it is what fetch_event_windows.py is for. Even an asked-and-empty
+    # day is NOT proof the aircraft was elsewhere: a volunteer receiver network
+    # heard nothing, and transponder-off, out-of-coverage, and a wrong claimed date
+    # all look identical from here.
     aircraft_days_needed: 75
-    aircraft_days_held: 7
-    coverage_pct: 9.3
+    aircraft_days_held: 22
+    aircraft_days_asked_and_archive_empty: 40
+    aircraft_days_never_asked: 13
+    coverage_pct: 29.3
+    queried_pct: 82.7
     tails_with_no_trace_in_window:
       - N40JD
       - N59906
-      - N888KG
       - SU-BGM
       - SU-BTT
       - SU-BTU
-      - SU-BTV
       - T7-ELL
+    archive_control_test:
+      # The control test, run 24 Aug 2026 over every 8th window day against two
+      # aircraft with no connection to this case. Full record:
+      # apis/public_open_source/data/recovery/archive_control_probe.json
+      control_hit_pct_this_year: 94.4
+      verdict: "ARCHIVE HEALTHY. Unrelated control aircraft return 94.4% for 2024, so an empty result here is a fact about the AIRCRAFT rather than about the archive. It is still not proof the aircraft was elsewhere: transponder off, outside receiver coverage, and a wrong claimed date all look identical from here."
     by_side:
       following:
         # FOLLOWING is the side the claim is about - the Egyptian SU- tails.
@@ -467,21 +519,30 @@ tracked_plane_presence:
         # anything at all.
         tails: 6
         aircraft_days_needed: 30
-        aircraft_days_held: 1
-        coverage_pct: 3.3
+        aircraft_days_held: 3
+        aircraft_days_asked_and_archive_empty: 27
+        aircraft_days_never_asked: 0
+        coverage_pct: 10.0
+        queried_pct: 100.0
       kirk:
         # KIRK-side coverage is what turns an ESTIMATED arrival into an
         # OBSERVED one. Low here means the arrival times above stay estimates.
         tails: 6
         aircraft_days_needed: 30
-        aircraft_days_held: 4
-        coverage_pct: 13.3
+        aircraft_days_held: 17
+        aircraft_days_asked_and_archive_empty: 13
+        aircraft_days_never_asked: 0
+        coverage_pct: 56.7
+        queried_pct: 100.0
       n1098l:
         # Other tracked aircraft. A DIFFERENT CLAIM - do not merge the threads.
         tails: 3
         aircraft_days_needed: 15
         aircraft_days_held: 2
+        aircraft_days_asked_and_archive_empty: 0
+        aircraft_days_never_asked: 13
         coverage_pct: 13.3
+        queried_pct: 13.3
 counterargument:
   - "ONE PAIRING IS NOT EVIDENCE. The claim under test is a repetition across many stops, and any single pairing has an innocent explanation a reader will find."
   - "A field inside the radius is a field a jet COULD have used. Nothing here shows that anyone did use it, or that two aircraft on one ramp had any connection."

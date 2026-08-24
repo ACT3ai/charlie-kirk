@@ -206,6 +206,21 @@ def emit(node, indent=0, out=None):
 # the fleet, and which side of the claim each tail sits on
 # --------------------------------------------------------------------------
 
+CONTROL_PROBE = os.path.join(HERE, "..", "data", "recovery", "archive_control_probe.json")
+
+
+def load_control_by_year():
+    """Per-year archive hit rate for aircraft with NO connection to this case."""
+    try:
+        with open(os.path.normpath(CONTROL_PROBE), encoding="utf-8") as fh:
+            return json.load(fh)["by_year"]["control"]
+    except (OSError, ValueError, KeyError):
+        return {}
+
+
+CONTROL_BY_YEAR = load_control_by_year()
+
+
 def load_fleet():
     """tail -> {registry, side, type, is_su}. planes.csv first, lib/fleet.js second."""
     fleet = {}
@@ -489,6 +504,35 @@ def build_event(row, radius_mi, window_days, tindex, midx, fleet, flights, overl
         if s0 > d(last):
             return (s0 - d(last)).days
         return 0
+
+    # ---- the control test, read for THIS event's year --------------------
+    # A gap can only be called a removal once an unrelated airframe has failed
+    # the same way on the same dates. The 2022 line below is the whole reason
+    # this block exists: BOTH free archives return nothing at all for 2022,
+    # for the control aircraft as much as for the case aircraft.
+    year = first[:4]
+    ctl = CONTROL_BY_YEAR.get(year)
+    ctl_pct = ctl["hit_pct"] if ctl else None
+    if ctl is None:
+        ctl_verdict = ("NO CONTROL DATA FOR %s. Do not characterise any gap in this window "
+                       "until the control test has been run for it." % year)
+    elif ctl["hit_pct"] < 10:
+        ctl_verdict = (
+            "ARCHIVE RETENTION BOUNDARY. Unrelated control aircraft return %s%% for %s from "
+            "these archives - they hold essentially nothing for this year at all. AN EMPTY "
+            "RESULT IN THIS WINDOW SAYS NOTHING ABOUT ANY AIRCRAFT AND MUST NEVER BE "
+            "PUBLISHED AS A REMOVAL OR AS AN ABSENCE. The ADS-B Exchange monthly sample "
+            "(one day per month) is the only free route into this period."
+            % (ctl["hit_pct"], year))
+    elif ctl["hit_pct"] < 60:
+        ctl_verdict = ("PARTIAL ARCHIVE COVERAGE. Control aircraft return %s%% for %s. Treat a "
+                       "gap here as inconclusive." % (ctl["hit_pct"], year))
+    else:
+        ctl_verdict = (
+            "ARCHIVE HEALTHY. Unrelated control aircraft return %s%% for %s, so an empty result "
+            "here is a fact about the AIRCRAFT rather than about the archive. It is still not "
+            "proof the aircraft was elsewhere: transponder off, outside receiver coverage, and a "
+            "wrong claimed date all look identical from here." % (ctl["hit_pct"], year))
 
     # ---- 1. primary: recovered ADS-B ground contacts ---------------------
     adsb_hits, coverage_days, no_coverage = [], 0, {}
@@ -784,6 +828,13 @@ def build_event(row, radius_mi, window_days, tindex, midx, fleet, flights, overl
                                  / max(1, len(tindex) * len(window_days_list)), 1),
             "tails_with_no_trace_in_window": sorted(
                 t for t, miss in no_coverage.items() if len(miss) == len(window_days_list)),
+            "archive_control_test": {
+                "#0": "The control test, run 24 Aug 2026 over every 8th window day against two\n"
+                      "aircraft with no connection to this case. Full record:\n"
+                      "apis/public_open_source/data/recovery/archive_control_probe.json",
+                "control_hit_pct_this_year": ctl_pct,
+                "verdict": ctl_verdict,
+            },
             "by_side": {
                 side: {
                     "#0": ("FOLLOWING is the side the claim is about - the Egyptian SU- tails.\n"
@@ -916,6 +967,8 @@ def main():
                 "claimed_overlaps": tp.get("counts", {}).get("claimed_overlaps", 0),
                 "su_just_outside_radius": len(outer_su),
                 "su_just_outside_tails": ";".join(sorted({h["tail"] for h in outer_su})),
+                "archive_control_verdict": (cov.get("archive_control_test", {})
+                                            .get("verdict", "") or "").split(".")[0],
                 "aircraft_days_needed": cov.get("aircraft_days_needed", 0),
                 "aircraft_days_held": cov.get("aircraft_days_held", 0),
                 "coverage_pct_all_tails": cov.get("coverage_pct", 0),

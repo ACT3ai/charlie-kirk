@@ -2,7 +2,7 @@
 #   node/python: apis/public_open_source/code/airports_near.py --only 20241219_phoenix
 #   The prompt that governs this file: prompts/p_airports_near.md
 schema: ck.speaking.airports_near/1
-generated_utc: "2026-08-24T19:03:27Z"
+generated_utc: "2026-08-24T22:38:51Z"
 generated_by: site/docs/Planes/following/apis/public_open_source/code/airports_near.py
 page:
   slug: 20241219_phoenix
@@ -120,8 +120,176 @@ arrival_airport:
     utc: "2024-12-23T06:00:00Z"
     basis: "event end + 4h (speech, exit, wheels-up)"
     confidence: low
-  observed_by_adsb: []
-  observed_by_adsb_note: "NO Kirk-side aircraft is on disk on the ground within 40 miles of KPHX in this window. The arrival and departure above stay estimates."
+  observed_by_adsb:
+    - tail: N560TW
+      airport_code: KSDL
+      date_utc: 2024-12-17
+      gap_days_from_event: -2
+      on_ground_first_local: "2024-12-17 11:48:10 MST"
+      on_ground_last_local: "2024-12-17 12:09:45 MST"
+      on_ground_first_utc: "2024-12-17T18:48:10.790000Z"
+      on_ground_last_utc: "2024-12-17T19:09:45.230000Z"
+      ground_minutes: 21.6
+      adsb_sources:
+        - adsb-lol
+        - airplanes-live
+      # OBSERVED, not estimated. This is a real ground contact by a Kirk-side airframe. It still does not establish who was aboard.
+    - tail: N582MM
+      airport_code: KPHX
+      date_utc: 2024-12-17
+      gap_days_from_event: -2
+      on_ground_first_local: "2024-12-16 17:00:53 MST"
+      on_ground_last_local: "2024-12-16 17:04:44 MST"
+      on_ground_first_utc: "2024-12-17T00:00:53.910000Z"
+      on_ground_last_utc: "2024-12-17T00:04:44.180000Z"
+      ground_minutes: 3.8
+      adsb_sources:
+        - adsb-lol
+        - airplanes-live
+      # OBSERVED, not estimated. This is a real ground contact by a Kirk-side airframe. It still does not establish who was aboard.
+    - tail: N582MM
+      airport_code: KSDL
+      date_utc: 2024-12-18
+      gap_days_from_event: -1
+      on_ground_first_local: "2024-12-17 17:28:10 MST"
+      on_ground_last_local: "2024-12-18 12:53:47 MST"
+      on_ground_first_utc: "2024-12-18T00:28:10.120000Z"
+      on_ground_last_utc: "2024-12-18T19:53:47.520000Z"
+      ground_minutes: 1165.6
+      adsb_sources:
+        - adsb-lol
+        - airplanes-live
+      # OBSERVED, not estimated. This is a real ground contact by a Kirk-side airframe. It still does not establish who was aboard.
+    - tail: N560TW
+      airport_code: KSDL
+      date_utc: 2024-12-20
+      gap_days_from_event: 0
+      on_ground_first_local: "2024-12-20 13:39:36 MST"
+      on_ground_last_local: "2024-12-20 13:42:09 MST"
+      on_ground_first_utc: "2024-12-20T20:39:36.550000Z"
+      on_ground_last_utc: "2024-12-20T20:42:09.910000Z"
+      ground_minutes: 2.6
+      adsb_sources:
+        - adsb-lol
+        - airplanes-live
+      # OBSERVED, not estimated. This is a real ground contact by a Kirk-side airframe. It still does not establish who was aboard.
+    - tail: N582MM
+      airport_code: KSDL
+      date_utc: 2024-12-20
+      gap_days_from_event: 0
+      on_ground_first_local: "2024-12-19 21:05:49 MST"
+      on_ground_last_local: "2024-12-20 10:08:45 MST"
+      on_ground_first_utc: "2024-12-20T04:05:49.400000Z"
+      on_ground_last_utc: "2024-12-20T17:08:45.390000Z"
+      ground_minutes: 782.9
+      adsb_sources:
+        - adsb-lol
+        - airplanes-live
+      # OBSERVED, not estimated. This is a real ground contact by a Kirk-side airframe. It still does not establish who was aboard.
+    - tail: N872RA
+      airport_code: KPHX
+      date_utc: 2024-12-20
+      gap_days_from_event: 0
+      on_ground_first_local: "2024-12-20 12:15:34 MST"
+      on_ground_last_local: "2024-12-20 13:07:27 MST"
+      on_ground_first_utc: "2024-12-20T19:15:34.930000Z"
+      on_ground_last_utc: "2024-12-20T20:07:27.090000Z"
+      ground_minutes: 51.9
+      adsb_sources:
+        - adsb-lol
+        - airplanes-live
+      # OBSERVED, not estimated. This is a real ground contact by a Kirk-side airframe. It still does not establish who was aboard.
+    - tail: N560TW
+      airport_code: KSDL
+      date_utc: 2024-12-21
+      gap_days_from_event: 0
+      on_ground_first_local: "2024-12-21 07:33:30 MST"
+      on_ground_last_local: "2024-12-21 11:51:30 MST"
+      on_ground_first_utc: "2024-12-21T14:33:30.410000Z"
+      on_ground_last_utc: "2024-12-21T18:51:30.410000Z"
+      ground_minutes: 258.0
+      adsb_sources:
+        - adsb-lol
+        - airplanes-live
+      # OBSERVED, not estimated. This is a real ground contact by a Kirk-side airframe. It still does not establish who was aboard.
+    - tail: N582MM
+      airport_code: KSDL
+      date_utc: 2024-12-21
+      gap_days_from_event: 0
+      on_ground_first_local: "2024-12-20 17:20:27 MST"
+      on_ground_last_local: "2024-12-21 05:54:41 MST"
+      on_ground_first_utc: "2024-12-21T00:20:27.600000Z"
+      on_ground_last_utc: "2024-12-21T12:54:41.240000Z"
+      ground_minutes: 754.2
+      adsb_sources:
+        - adsb-lol
+        - airplanes-live
+      # OBSERVED, not estimated. This is a real ground contact by a Kirk-side airframe. It still does not establish who was aboard.
+    - tail: N582MM
+      airport_code: KPHX
+      date_utc: 2024-12-22
+      gap_days_from_event: 0
+      on_ground_first_local: "2024-12-22 14:53:18 MST"
+      on_ground_last_local: "2024-12-22 14:54:26 MST"
+      on_ground_first_utc: "2024-12-22T21:53:18.600000Z"
+      on_ground_last_utc: "2024-12-22T21:54:26.350000Z"
+      ground_minutes: 1.1
+      adsb_sources:
+        - adsb-lol
+        - airplanes-live
+      # OBSERVED, not estimated. This is a real ground contact by a Kirk-side airframe. It still does not establish who was aboard.
+    - tail: N582MM
+      airport_code: KPHX
+      date_utc: 2024-12-23
+      gap_days_from_event: 1
+      on_ground_first_local: "2024-12-23 08:43:21 MST"
+      on_ground_last_local: "2024-12-23 10:32:24 MST"
+      on_ground_first_utc: "2024-12-23T15:43:21.830000Z"
+      on_ground_last_utc: "2024-12-23T17:32:24.280000Z"
+      ground_minutes: 109.0
+      adsb_sources:
+        - adsb-lol
+        - airplanes-live
+      # OBSERVED, not estimated. This is a real ground contact by a Kirk-side airframe. It still does not establish who was aboard.
+    - tail: N872RA
+      airport_code: KPHX
+      date_utc: 2024-12-23
+      gap_days_from_event: 1
+      on_ground_first_local: "2024-12-22 19:02:39 MST"
+      on_ground_last_local: "2024-12-23 09:02:43 MST"
+      on_ground_first_utc: "2024-12-23T02:02:39.440000Z"
+      on_ground_last_utc: "2024-12-23T16:02:43.710000Z"
+      ground_minutes: 840.1
+      adsb_sources:
+        - adsb-lol
+        - airplanes-live
+      # OBSERVED, not estimated. This is a real ground contact by a Kirk-side airframe. It still does not establish who was aboard.
+    - tail: N872RA
+      airport_code: KSDL
+      date_utc: 2024-12-23
+      gap_days_from_event: 1
+      on_ground_first_local: "2024-12-23 14:53:27 MST"
+      on_ground_last_local: "2024-12-23 15:54:49 MST"
+      on_ground_first_utc: "2024-12-23T21:53:27.220000Z"
+      on_ground_last_utc: "2024-12-23T22:54:49Z"
+      ground_minutes: 61.4
+      adsb_sources:
+        - adsb-lol
+        - airplanes-live
+      # OBSERVED, not estimated. This is a real ground contact by a Kirk-side airframe. It still does not establish who was aboard.
+    - tail: N582MM
+      airport_code: KSDL
+      date_utc: 2024-12-24
+      gap_days_from_event: 2
+      on_ground_first_local: "2024-12-23 19:47:40 MST"
+      on_ground_last_local: "2024-12-23 20:44:36 MST"
+      on_ground_first_utc: "2024-12-24T02:47:40.850000Z"
+      on_ground_last_utc: "2024-12-24T03:44:36.010000Z"
+      ground_minutes: 56.9
+      adsb_sources:
+        - adsb-lol
+        - airplanes-live
+      # OBSERVED, not estimated. This is a real ground contact by a Kirk-side airframe. It still does not establish who was aboard.
 airports_within_radius:
   # Every field a private jet could physically use within the radius.
   # Heliports, seaplane bases, balloonports and closed fields are excluded -
@@ -154,7 +322,12 @@ airports_within_radius:
       lon: -112.0059
       distance_mi: 0.0
       bearing: N
-      tracked_plane_presence_in_window: []
+      tracked_plane_presence_in_window:
+        - "N582MM on 2024-12-17 - ADS-B ground contact, 3.8 min, 2 archive(s)"
+        - "N872RA on 2024-12-20 - ADS-B ground contact, 51.9 min, 2 archive(s)"
+        - "N582MM on 2024-12-22 - ADS-B ground contact, 1.1 min, 2 archive(s)"
+        - "N582MM on 2024-12-23 - ADS-B ground contact, 109.0 min, 2 archive(s)"
+        - "N872RA on 2024-12-23 - ADS-B ground contact, 840.1 min, 2 archive(s)"
     - airport_code: AZ90
       icao: null
       iata: null
@@ -274,7 +447,15 @@ airports_within_radius:
       lon: -111.911
       distance_mi: 14.1
       bearing: NNE
-      tracked_plane_presence_in_window: []
+      tracked_plane_presence_in_window:
+        - "N560TW on 2024-12-17 - ADS-B ground contact, 21.6 min, 2 archive(s)"
+        - "N582MM on 2024-12-18 - ADS-B ground contact, 1165.6 min, 2 archive(s)"
+        - "N560TW on 2024-12-20 - ADS-B ground contact, 2.6 min, 2 archive(s)"
+        - "N582MM on 2024-12-20 - ADS-B ground contact, 782.9 min, 2 archive(s)"
+        - "N560TW on 2024-12-21 - ADS-B ground contact, 258.0 min, 2 archive(s)"
+        - "N582MM on 2024-12-21 - ADS-B ground contact, 754.2 min, 2 archive(s)"
+        - "N872RA on 2024-12-23 - ADS-B ground contact, 61.4 min, 2 archive(s)"
+        - "N582MM on 2024-12-24 - ADS-B ground contact, 56.9 min, 2 archive(s)"
     - airport_code: KCHD
       icao: null
       iata: null
@@ -1003,15 +1184,379 @@ tracked_plane_presence:
     from: 2024-12-17
     to: 2024-12-24
     days_each_side: 2
-  any_found: false
+  any_found: true
   egyptian_su_found: false
   counts:
-    adsb_ground_contacts: 0
+    adsb_ground_contacts: 13
     adsb_ground_contacts_egyptian_su: 0
     flights_csv_stays: 0
     flights_csv_stays_egyptian_su: 0
     claimed_overlaps: 0
-  from_adsb_traces: []
+  from_adsb_traces:
+    - tail: N560TW
+      registry: "United States"
+      side: kirk
+      aircraft_type: C56X
+      is_egyptian_su: false
+      in_73_tally: false
+      airport_code: KSDL
+      airport_name: "Scottsdale Airport"
+      distance_from_arrival_airport_mi: 14.4
+      median_distance_from_that_runway_km: 0.65
+      date_utc: 2024-12-17
+      gap_days_from_event: -2
+      on_ground_first_utc: "2024-12-17T18:48:10.790000Z"
+      on_ground_last_utc: "2024-12-17T19:09:45.230000Z"
+      on_ground_first_local: "2024-12-17 11:48:10 MST"
+      on_ground_last_local: "2024-12-17 12:09:45 MST"
+      ground_positions: 88
+      ground_minutes: 21.6
+      adsb_sources:
+        - adsb-lol
+        - airplanes-live
+      source_count: 2
+      trace_files:
+        - site/docs/Planes/N560TW/data/recovered/N560TW_2024-12-17_adsb-lol_trace_full.json.gz
+        - site/docs/Planes/N560TW/data/recovered/N560TW_2024-12-17_airplanes-live_trace_full.json.gz
+      evidence_class: adsb_public_history
+      # PRESENCE ONLY. A trace never establishes purpose and never establishes who was aboard.
+      cross_source_agreement: "AGREE (first-contact times within 0s across 2 independent archives)"
+    - tail: N582MM
+      registry: "United States"
+      side: kirk
+      aircraft_type: LJ60
+      is_egyptian_su: false
+      in_73_tally: false
+      airport_code: KPHX
+      airport_name: "Phoenix Sky Harbor International Airport"
+      distance_from_arrival_airport_mi: 0.5
+      median_distance_from_that_runway_km: 0.85
+      date_utc: 2024-12-17
+      gap_days_from_event: -2
+      on_ground_first_utc: "2024-12-17T00:00:53.910000Z"
+      on_ground_last_utc: "2024-12-17T00:04:44.180000Z"
+      on_ground_first_local: "2024-12-16 17:00:53 MST"
+      on_ground_last_local: "2024-12-16 17:04:44 MST"
+      ground_positions: 29
+      ground_minutes: 3.8
+      adsb_sources:
+        - adsb-lol
+        - airplanes-live
+      source_count: 2
+      trace_files:
+        - site/docs/Planes/N582MM/data/recovered/N582MM_2024-12-17_adsb-lol_trace_full.json.gz
+        - site/docs/Planes/N582MM/data/recovered/N582MM_2024-12-17_airplanes-live_trace_full.json.gz
+      evidence_class: adsb_public_history
+      # PRESENCE ONLY. A trace never establishes purpose and never establishes who was aboard.
+      cross_source_agreement: "AGREE (first-contact times within 0s across 2 independent archives)"
+    - tail: N582MM
+      registry: "United States"
+      side: kirk
+      aircraft_type: LJ60
+      is_egyptian_su: false
+      in_73_tally: false
+      airport_code: KSDL
+      airport_name: "Scottsdale Airport"
+      distance_from_arrival_airport_mi: 13.8
+      median_distance_from_that_runway_km: 0.44
+      date_utc: 2024-12-18
+      gap_days_from_event: -1
+      on_ground_first_utc: "2024-12-18T00:28:10.120000Z"
+      on_ground_last_utc: "2024-12-18T19:53:47.520000Z"
+      on_ground_first_local: "2024-12-17 17:28:10 MST"
+      on_ground_last_local: "2024-12-18 12:53:47 MST"
+      ground_positions: 29
+      ground_minutes: 1165.6
+      adsb_sources:
+        - adsb-lol
+        - airplanes-live
+      source_count: 2
+      trace_files:
+        - site/docs/Planes/N582MM/data/recovered/N582MM_2024-12-18_adsb-lol_trace_full.json.gz
+        - site/docs/Planes/N582MM/data/recovered/N582MM_2024-12-18_airplanes-live_trace_full.json.gz
+      evidence_class: adsb_public_history
+      # PRESENCE ONLY. A trace never establishes purpose and never establishes who was aboard.
+      cross_source_agreement: "DISAGREE by 65964s on first contact across 2 archives - published as a disagreement, not reconciled"
+    - tail: N560TW
+      registry: "United States"
+      side: kirk
+      aircraft_type: C56X
+      is_egyptian_su: false
+      in_73_tally: false
+      airport_code: KSDL
+      airport_name: "Scottsdale Airport"
+      distance_from_arrival_airport_mi: 14.1
+      median_distance_from_that_runway_km: 0.13
+      date_utc: 2024-12-20
+      gap_days_from_event: 0
+      on_ground_first_utc: "2024-12-20T20:39:36.550000Z"
+      on_ground_last_utc: "2024-12-20T20:42:09.910000Z"
+      on_ground_first_local: "2024-12-20 13:39:36 MST"
+      on_ground_last_local: "2024-12-20 13:42:09 MST"
+      ground_positions: 51
+      ground_minutes: 2.6
+      adsb_sources:
+        - adsb-lol
+        - airplanes-live
+      source_count: 2
+      trace_files:
+        - site/docs/Planes/N560TW/data/recovered/N560TW_2024-12-20_adsb-lol_trace_full.json.gz
+        - site/docs/Planes/N560TW/data/recovered/N560TW_2024-12-20_airplanes-live_trace_full.json.gz
+      evidence_class: adsb_public_history
+      # PRESENCE ONLY. A trace never establishes purpose and never establishes who was aboard.
+      cross_source_agreement: "AGREE (first-contact times within 0s across 2 independent archives)"
+    - tail: N582MM
+      registry: "United States"
+      side: kirk
+      aircraft_type: LJ60
+      is_egyptian_su: false
+      in_73_tally: false
+      airport_code: KSDL
+      airport_name: "Scottsdale Airport"
+      distance_from_arrival_airport_mi: 14.4
+      median_distance_from_that_runway_km: 0.63
+      date_utc: 2024-12-20
+      gap_days_from_event: 0
+      on_ground_first_utc: "2024-12-20T04:05:49.400000Z"
+      on_ground_last_utc: "2024-12-20T17:08:45.390000Z"
+      on_ground_first_local: "2024-12-19 21:05:49 MST"
+      on_ground_last_local: "2024-12-20 10:08:45 MST"
+      ground_positions: 180
+      ground_minutes: 782.9
+      adsb_sources:
+        - adsb-lol
+        - airplanes-live
+      source_count: 2
+      trace_files:
+        - site/docs/Planes/N582MM/data/recovered/N582MM_2024-12-20_adsb-lol_trace_full.json.gz
+        - site/docs/Planes/N582MM/data/recovered/N582MM_2024-12-20_airplanes-live_trace_full.json.gz
+      evidence_class: adsb_public_history
+      # PRESENCE ONLY. A trace never establishes purpose and never establishes who was aboard.
+      cross_source_agreement: "DISAGREE by 39193s on first contact across 2 archives - published as a disagreement, not reconciled"
+    - tail: N872RA
+      registry: "United States"
+      side: kirk
+      aircraft_type: BE40
+      is_egyptian_su: false
+      in_73_tally: false
+      airport_code: KPHX
+      airport_name: "Phoenix Sky Harbor International Airport"
+      distance_from_arrival_airport_mi: 0.8
+      median_distance_from_that_runway_km: 1.29
+      date_utc: 2024-12-20
+      gap_days_from_event: 0
+      on_ground_first_utc: "2024-12-20T19:15:34.930000Z"
+      on_ground_last_utc: "2024-12-20T20:07:27.090000Z"
+      on_ground_first_local: "2024-12-20 12:15:34 MST"
+      on_ground_last_local: "2024-12-20 13:07:27 MST"
+      ground_positions: 34
+      ground_minutes: 51.9
+      adsb_sources:
+        - adsb-lol
+        - airplanes-live
+      source_count: 2
+      trace_files:
+        - site/docs/Planes/N872RA/data/recovered/N872RA_2024-12-20_adsb-lol_trace_full.json.gz
+        - site/docs/Planes/N872RA/data/recovered/N872RA_2024-12-20_airplanes-live_trace_full.json.gz
+      evidence_class: adsb_public_history
+      # PRESENCE ONLY. A trace never establishes purpose and never establishes who was aboard.
+      cross_source_agreement: "AGREE (first-contact times within 3s across 2 independent archives)"
+    - tail: N560TW
+      registry: "United States"
+      side: kirk
+      aircraft_type: C56X
+      is_egyptian_su: false
+      in_73_tally: false
+      airport_code: KSDL
+      airport_name: "Scottsdale Airport"
+      distance_from_arrival_airport_mi: 14.0
+      median_distance_from_that_runway_km: 0.17
+      date_utc: 2024-12-21
+      gap_days_from_event: 0
+      on_ground_first_utc: "2024-12-21T14:33:30.410000Z"
+      on_ground_last_utc: "2024-12-21T18:51:30.410000Z"
+      on_ground_first_local: "2024-12-21 07:33:30 MST"
+      on_ground_last_local: "2024-12-21 11:51:30 MST"
+      ground_positions: 75
+      ground_minutes: 258.0
+      adsb_sources:
+        - adsb-lol
+        - airplanes-live
+      source_count: 2
+      trace_files:
+        - site/docs/Planes/N560TW/data/recovered/N560TW_2024-12-21_adsb-lol_trace_full.json.gz
+        - site/docs/Planes/N560TW/data/recovered/N560TW_2024-12-21_airplanes-live_trace_full.json.gz
+      evidence_class: adsb_public_history
+      # PRESENCE ONLY. A trace never establishes purpose and never establishes who was aboard.
+      cross_source_agreement: "DISAGREE by 15303s on first contact across 2 archives - published as a disagreement, not reconciled"
+    - tail: N582MM
+      registry: "United States"
+      side: kirk
+      aircraft_type: LJ60
+      is_egyptian_su: false
+      in_73_tally: false
+      airport_code: KSDL
+      airport_name: "Scottsdale Airport"
+      distance_from_arrival_airport_mi: 13.9
+      median_distance_from_that_runway_km: 0.2
+      date_utc: 2024-12-21
+      gap_days_from_event: 0
+      on_ground_first_utc: "2024-12-21T00:20:27.600000Z"
+      on_ground_last_utc: "2024-12-21T12:54:41.240000Z"
+      on_ground_first_local: "2024-12-20 17:20:27 MST"
+      on_ground_last_local: "2024-12-21 05:54:41 MST"
+      ground_positions: 50
+      ground_minutes: 754.2
+      adsb_sources:
+        - adsb-lol
+        - airplanes-live
+      source_count: 2
+      trace_files:
+        - site/docs/Planes/N582MM/data/recovered/N582MM_2024-12-21_adsb-lol_trace_full.json.gz
+        - site/docs/Planes/N582MM/data/recovered/N582MM_2024-12-21_airplanes-live_trace_full.json.gz
+      evidence_class: adsb_public_history
+      # PRESENCE ONLY. A trace never establishes purpose and never establishes who was aboard.
+      cross_source_agreement: "DISAGREE by 42426s on first contact across 2 archives - published as a disagreement, not reconciled"
+    - tail: N582MM
+      registry: "United States"
+      side: kirk
+      aircraft_type: LJ60
+      is_egyptian_su: false
+      in_73_tally: false
+      airport_code: KPHX
+      airport_name: "Phoenix Sky Harbor International Airport"
+      distance_from_arrival_airport_mi: 1.1
+      median_distance_from_that_runway_km: 1.82
+      date_utc: 2024-12-22
+      gap_days_from_event: 0
+      on_ground_first_utc: "2024-12-22T21:53:18.600000Z"
+      on_ground_last_utc: "2024-12-22T21:54:26.350000Z"
+      on_ground_first_local: "2024-12-22 14:53:18 MST"
+      on_ground_last_local: "2024-12-22 14:54:26 MST"
+      ground_positions: 18
+      ground_minutes: 1.1
+      adsb_sources:
+        - adsb-lol
+        - airplanes-live
+      source_count: 2
+      trace_files:
+        - site/docs/Planes/N582MM/data/recovered/N582MM_2024-12-22_adsb-lol_trace_full.json.gz
+        - site/docs/Planes/N582MM/data/recovered/N582MM_2024-12-22_airplanes-live_trace_full.json.gz
+      evidence_class: adsb_public_history
+      # PRESENCE ONLY. A trace never establishes purpose and never establishes who was aboard.
+      cross_source_agreement: "AGREE (first-contact times within 0s across 2 independent archives)"
+    - tail: N582MM
+      registry: "United States"
+      side: kirk
+      aircraft_type: LJ60
+      is_egyptian_su: false
+      in_73_tally: false
+      airport_code: KPHX
+      airport_name: "Phoenix Sky Harbor International Airport"
+      distance_from_arrival_airport_mi: 1.3
+      median_distance_from_that_runway_km: 2.1
+      date_utc: 2024-12-23
+      gap_days_from_event: 1
+      on_ground_first_utc: "2024-12-23T15:43:21.830000Z"
+      on_ground_last_utc: "2024-12-23T17:32:24.280000Z"
+      on_ground_first_local: "2024-12-23 08:43:21 MST"
+      on_ground_last_local: "2024-12-23 10:32:24 MST"
+      ground_positions: 27
+      ground_minutes: 109.0
+      adsb_sources:
+        - adsb-lol
+        - airplanes-live
+      source_count: 2
+      trace_files:
+        - site/docs/Planes/N582MM/data/recovered/N582MM_2024-12-23_adsb-lol_trace_full.json.gz
+        - site/docs/Planes/N582MM/data/recovered/N582MM_2024-12-23_airplanes-live_trace_full.json.gz
+      evidence_class: adsb_public_history
+      # PRESENCE ONLY. A trace never establishes purpose and never establishes who was aboard.
+      cross_source_agreement: "DISAGREE by 5854s on first contact across 2 archives - published as a disagreement, not reconciled"
+    - tail: N872RA
+      registry: "United States"
+      side: kirk
+      aircraft_type: BE40
+      is_egyptian_su: false
+      in_73_tally: false
+      airport_code: KPHX
+      airport_name: "Phoenix Sky Harbor International Airport"
+      distance_from_arrival_airport_mi: 1.1
+      median_distance_from_that_runway_km: 1.74
+      date_utc: 2024-12-23
+      gap_days_from_event: 1
+      on_ground_first_utc: "2024-12-23T02:02:39.440000Z"
+      on_ground_last_utc: "2024-12-23T16:02:43.710000Z"
+      on_ground_first_local: "2024-12-22 19:02:39 MST"
+      on_ground_last_local: "2024-12-23 09:02:43 MST"
+      ground_positions: 19
+      ground_minutes: 840.1
+      adsb_sources:
+        - adsb-lol
+        - airplanes-live
+      source_count: 2
+      trace_files:
+        - site/docs/Planes/N872RA/data/recovered/N872RA_2024-12-23_adsb-lol_trace_full.json.gz
+        - site/docs/Planes/N872RA/data/recovered/N872RA_2024-12-23_airplanes-live_trace_full.json.gz
+      evidence_class: adsb_public_history
+      # PRESENCE ONLY. A trace never establishes purpose and never establishes who was aboard.
+      cross_source_agreement: "DISAGREE by 49837s on first contact across 2 archives - published as a disagreement, not reconciled"
+    - tail: N872RA
+      registry: "United States"
+      side: kirk
+      aircraft_type: BE40
+      is_egyptian_su: false
+      in_73_tally: false
+      airport_code: KSDL
+      airport_name: "Scottsdale Airport"
+      distance_from_arrival_airport_mi: 14.4
+      median_distance_from_that_runway_km: 0.71
+      date_utc: 2024-12-23
+      gap_days_from_event: 1
+      on_ground_first_utc: "2024-12-23T21:53:27.220000Z"
+      on_ground_last_utc: "2024-12-23T22:54:49Z"
+      on_ground_first_local: "2024-12-23 14:53:27 MST"
+      on_ground_last_local: "2024-12-23 15:54:49 MST"
+      ground_positions: 118
+      ground_minutes: 61.4
+      adsb_sources:
+        - adsb-lol
+        - airplanes-live
+      source_count: 2
+      trace_files:
+        - site/docs/Planes/N872RA/data/recovered/N872RA_2024-12-23_adsb-lol_trace_full.json.gz
+        - site/docs/Planes/N872RA/data/recovered/N872RA_2024-12-23_airplanes-live_trace_full.json.gz
+      evidence_class: adsb_public_history
+      # PRESENCE ONLY. A trace never establishes purpose and never establishes who was aboard.
+      cross_source_agreement: "AGREE (first-contact times within 0s across 2 independent archives)"
+    - tail: N582MM
+      registry: "United States"
+      side: kirk
+      aircraft_type: LJ60
+      is_egyptian_su: false
+      in_73_tally: false
+      airport_code: KSDL
+      airport_name: "Scottsdale Airport"
+      distance_from_arrival_airport_mi: 14.4
+      median_distance_from_that_runway_km: 0.66
+      date_utc: 2024-12-24
+      gap_days_from_event: 2
+      on_ground_first_utc: "2024-12-24T02:47:40.850000Z"
+      on_ground_last_utc: "2024-12-24T03:44:36.010000Z"
+      on_ground_first_local: "2024-12-23 19:47:40 MST"
+      on_ground_last_local: "2024-12-23 20:44:36 MST"
+      ground_positions: 269
+      ground_minutes: 56.9
+      adsb_sources:
+        - adsb-lol
+        - airplanes-live
+      source_count: 2
+      trace_files:
+        - site/docs/Planes/N582MM/data/recovered/N582MM_2024-12-24_adsb-lol_trace_full.json.gz
+        - site/docs/Planes/N582MM/data/recovered/N582MM_2024-12-24_airplanes-live_trace_full.json.gz
+      evidence_class: adsb_public_history
+      # PRESENCE ONLY. A trace never establishes purpose and never establishes who was aboard.
+      cross_source_agreement: "AGREE (first-contact times within 0s across 2 independent archives)"
   from_flights_csv: []
   from_overlaps_csv: []
   just_outside_the_radius:
@@ -1025,28 +1570,39 @@ tracked_plane_presence:
     claimed_overlaps: []
   coverage:
     # AN EMPTY RESULT ABOVE IS NOT A FINDING UNLESS THIS SAYS THE DAYS WERE HELD.
-    # aircraft_days_needed = tails x days in the window. aircraft_days_held is
-    # how many of those this repo actually has a trace for. The rest were never
-    # pulled, or the networks heard nothing - the two are indistinguishable here.
+    # aircraft_days_needed = tails x days in the window.
+    #   aircraft_days_held                     a trace is on disk
+    #   aircraft_days_asked_and_archive_empty  the archive WAS asked and holds
+    #                                          nothing for that aircraft-day
+    #   aircraft_days_never_asked               nobody has queried it yet
+    # Only the FIRST TWO are evidence of anything. The third is an open question,
+    # and closing it is what fetch_event_windows.py is for. Even an asked-and-empty
+    # day is NOT proof the aircraft was elsewhere: a volunteer receiver network
+    # heard nothing, and transponder-off, out-of-coverage, and a wrong claimed date
+    # all look identical from here.
     aircraft_days_needed: 120
-    aircraft_days_held: 0
-    coverage_pct: 0.0
+    aircraft_days_held: 24
+    aircraft_days_asked_and_archive_empty: 72
+    aircraft_days_never_asked: 24
+    coverage_pct: 20.0
+    queried_pct: 80.0
     tails_with_no_trace_in_window:
-      - N102DZ
       - N1098L
       - N2100L
       - N40JD
-      - N560TW
-      - N582MM
       - N59906
-      - N872RA
       - N888KG
       - SU-BGM
       - SU-BND
       - SU-BTT
       - SU-BTU
       - SU-BTV
-      - T7-ELL
+    archive_control_test:
+      # The control test, run 24 Aug 2026 over every 8th window day against two
+      # aircraft with no connection to this case. Full record:
+      # apis/public_open_source/data/recovery/archive_control_probe.json
+      control_hit_pct_this_year: 94.4
+      verdict: "ARCHIVE HEALTHY. Unrelated control aircraft return 94.4% for 2024, so an empty result here is a fact about the AIRCRAFT rather than about the archive. It is still not proof the aircraft was elsewhere: transponder off, outside receiver coverage, and a wrong claimed date all look identical from here."
     by_side:
       following:
         # FOLLOWING is the side the claim is about - the Egyptian SU- tails.
@@ -1054,21 +1610,30 @@ tracked_plane_presence:
         # anything at all.
         tails: 6
         aircraft_days_needed: 48
-        aircraft_days_held: 0
-        coverage_pct: 0.0
+        aircraft_days_held: 6
+        aircraft_days_asked_and_archive_empty: 42
+        aircraft_days_never_asked: 0
+        coverage_pct: 12.5
+        queried_pct: 100.0
       kirk:
         # KIRK-side coverage is what turns an ESTIMATED arrival into an
         # OBSERVED one. Low here means the arrival times above stay estimates.
         tails: 6
         aircraft_days_needed: 48
-        aircraft_days_held: 0
-        coverage_pct: 0.0
+        aircraft_days_held: 18
+        aircraft_days_asked_and_archive_empty: 30
+        aircraft_days_never_asked: 0
+        coverage_pct: 37.5
+        queried_pct: 100.0
       n1098l:
         # Other tracked aircraft. A DIFFERENT CLAIM - do not merge the threads.
         tails: 3
         aircraft_days_needed: 24
         aircraft_days_held: 0
+        aircraft_days_asked_and_archive_empty: 0
+        aircraft_days_never_asked: 24
         coverage_pct: 0.0
+        queried_pct: 0.0
 counterargument:
   - "ONE PAIRING IS NOT EVIDENCE. The claim under test is a repetition across many stops, and any single pairing has an innocent explanation a reader will find."
   - "A field inside the radius is a field a jet COULD have used. Nothing here shows that anyone did use it, or that two aircraft on one ramp had any connection."

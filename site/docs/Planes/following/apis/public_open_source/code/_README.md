@@ -210,3 +210,38 @@ Both are Utah. That reproduces the sceptics' result off this repo's own primary 
 it is a statement about what can currently be proven, not about what happened: 139 rows
 is every Kirk/TPUSA location this repo can source and it is nowhere near every location
 the Kirks were at, with exactly one row placing Erika Kirk anywhere before 10 Sep 2025.
+
+
+### The control test that run produced, and the one finding nobody should skip
+
+After both sweeps (6,523 Kirk-side and 5,950 Egyptian-fleet requests across all 139
+speaking-event windows), the archives had returned **nothing** for most Egyptian
+aircraft-days. Before that could be characterised at all, the control test was run:
+every 8th window day, both archives, two aircraft with no connection to this case
+(Ryanair `4ca7b5`, Lufthansa `3c6444`). Full record:
+`../data/recovery/archive_control_probe.json`.
+
+| year | control hit % | Egyptian SU- fleet | Kirk-side N- tails |
+|---|---|---|---|
+| 2022 | **0%** (0 of 56) | 1% | 2% |
+| 2023 | 94% | 14% | 23% |
+| 2024 | 94% | 16% | 41% |
+| 2025 | 82% | 19% | 46% |
+
+**2022 IS AN ARCHIVE RETENTION BOUNDARY, NOT A REMOVAL.** Both free archives hold
+essentially nothing for 2022 — for two ordinary European airliners exactly as much as for
+the case aircraft. **No 2022 gap in this investigation may be published as suppression.**
+That matters more than it looks: the following-planes claim is said to *begin* in 2022, so
+these two archives cannot test the earliest and most load-bearing part of it at all. The
+ADS-B Exchange monthly sample — one day per month — remains the only free route in.
+
+**From 2023 the archives are healthy**, so an empty 2023–2025 result is a fact about the
+aircraft rather than the archive. The Egyptian fleet's 14–19% against an 82–94% control is
+the expected profile of a government VIP jet based in Egypt and outside volunteer receiver
+coverage for most of its life — **it is not evidence of hiding**, and the Kirk-side bizjets
+sit exactly where you would expect in between, at 41–46%, because a business jet flies a
+few days a week and an airliner flies daily.
+
+Every speaking-event yaml now carries this verdict for its own year in
+`tracked_plane_presence.coverage.archive_control_test`. 25 of the 139 events fall inside
+the 2022 boundary and say so.

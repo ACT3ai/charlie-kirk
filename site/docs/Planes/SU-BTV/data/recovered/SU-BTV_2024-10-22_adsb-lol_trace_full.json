@@ -1,0 +1,11 @@
+{"icao":"0101d1",
+"r":"SU-BTV",
+"t":"FA7X",
+"dbFlags":1,
+"desc":"DASSAULT Falcon 7X",
+"timestamp": 1729555200.000,
+"trace":[ 
+[33163.33,29.295882,31.999781,25000,489.5,142.1,1,64,{"type":"adsb_icao","alt_geom":26400,"track":142.05,"baro_rate":64,"squawk":"3767","nic":8,"rc":186,"version":0,"nac_p":8,"nac_v":1,"sil":2,"sil_type":"perhour","alert":0,"spi":0},"adsb_icao",26400,null,null,null],
+[33206.28,29.218277,32.068775,25500,null,null,1,null,null,"adsb_icao",26900,null,null,null],
+[33302.31,29.043457,32.223745,27025,498.9,142.2,1,64,null,"adsb_icao",28550,null,null,null] ]
+ }

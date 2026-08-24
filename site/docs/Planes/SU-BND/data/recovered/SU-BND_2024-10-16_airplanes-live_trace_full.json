@@ -1,0 +1,17 @@
+{"icao":"01003e",
+"r":"SU-BND",
+"t":"GLF4",
+"dbFlags":0,
+"desc":"GULFSTREAM 4",
+"ownOp":"Government Of Egypt",
+"year":"1998",
+"timestamp": 1729036800.000,
+"trace":[ 
+[26724.70,29.174706,32.813631,23975,416.0,306.6,5,-64,null,"adsb_icao",25100,-64,null,null],
+[26744.57,29.197540,32.778502,23900,416.0,306.6,4,-320,{"type":"adsb_icao","flight":"SUBND   ","alt_geom":25025,"track":306.59,"geom_rate":-320,"squawk":"3720","emergency":"none","category":"A2","nav_qnh":1013.6,"nav_altitude_mcp":12992,"nic":8,"rc":186,"version":2,"nic_baro":1,"nac_p":9,"nac_v":1,"sil":3,"sil_type":"perhour","gva":2,"sda":2,"alert":0,"spi":0},"adsb_icao",25025,-320,null,null],
+[26764.19,29.219955,32.744105,23750,416.0,306.6,4,-576,null,"adsb_icao",24875,-576,null,null],
+[26770.94,29.227776,32.732095,23675,416.0,306.6,4,-512,null,"adsb_icao",24800,-512,null,null],
+[26837.85,29.303558,32.615239,22500,405.4,306.5,5,-1472,null,"adsb_icao",23575,-1472,null,null],
+[26850.28,29.317296,32.594066,22175,405.4,306.5,4,-1664,{"type":"adsb_icao","alt_geom":23250,"track":306.47,"geom_rate":-1664,"squawk":"3720","category":"A2","nav_qnh":1013.6,"nav_altitude_mcp":12992,"nic":8,"rc":186,"version":2,"nic_baro":1,"nac_p":9,"nac_v":1,"sil":3,"sil_type":"perhour","gva":2,"sda":2,"alert":0,"spi":0},"adsb_icao",23250,-1664,null,null],
+[26855.69,29.323348,32.584749,22025,404.8,306.4,4,-1728,null,"adsb_icao",23125,-1728,null,null] ]
+ }

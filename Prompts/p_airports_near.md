@@ -169,6 +169,13 @@ Rules this stage keeps, and they are not optional:
   * NOTHING IS EVER OVERWRITTEN. A day already on disk is skipped. --repull writes the
     new copy ALONGSIDE the old with a timestamp suffix, because the diff between two
     pulls of one URL on two dates is the evidence that something vanished.
+  * PAYLOADS ARE STORED GZIPPED as <TAIL>_<DATE>_<source>_trace_full.json.gz. A trace
+    gzips to about 15% of its size and a full fleet sweep in raw JSON would add most of
+    a gigabyte to a repo an automated job pushes every few minutes. gzip is LOSSLESS —
+    gunzip -c returns exactly what the server sent, the .meta.json records
+    stored_gzipped and both byte counts, and {TRACES_LIB} reads .json and .json.gz
+    transparently. The uncompressed files already on disk are LEFT AS THEY ARE; nothing
+    that is already evidence is rewritten to save space.
   * A MISS IS RECORDED, NOT DISCARDED. An HTTP 404 writes a .miss.json.meta.json so the
     next run does not re-ask and so the builder can tell "asked and got nothing" apart
     from "never asked".
@@ -180,6 +187,25 @@ Rules this stage keeps, and they are not optional:
     same dates. If the controls fail identically it is the ARCHIVE, not the airframe,
     and it must never be published as suppression. This investigation has already had to
     retract one such claim on a public page. Do not make it two.
+
+    THE CONTROL TEST HAS ALREADY BEEN RUN ONCE AND IT FOUND SOMETHING. The record is
+    {DATA_DIR}/recovery/archive_control_probe.json. Both free archives hold ESSENTIALLY
+    NOTHING FOR 2022 - the control aircraft return 0 of 56, the case aircraft 1 to 2%.
+    2022 IS A RETENTION BOUNDARY, NOT A REMOVAL, and no 2022 gap may be published as
+    suppression. That is the year the following-planes claim is said to BEGIN, so these
+    two archives cannot test the earliest and most load-bearing part of it at all; the
+    ADS-B Exchange monthly sample, one day per month, is the only free route in. From
+    2023 the control runs 82 to 94% per year, so an empty 2023-2025 result is a fact
+    about the AIRCRAFT and not about the archive. The Egyptian fleet sits at 14 to 19%
+    against that control, which is the expected profile of a government VIP jet based in
+    Egypt and outside volunteer receiver coverage - IT IS NOT EVIDENCE OF HIDING.
+
+    {BUILDER} reads that json and stamps the verdict for each event's own year into
+    tracked_plane_presence.coverage.archive_control_test. 25 of the 139 events fall
+    inside the 2022 boundary and say so in their own file. RE-RUN THE CONTROL whenever
+    the window range grows past the years it covers, and rewrite that json when you do:
+
+        {PYTHON} fetch_event_windows.py --run --control --every 8 --sleep 0.3
 
 
 ====================================================================

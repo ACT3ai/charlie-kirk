@@ -2,7 +2,7 @@
 #   node/python: apis/public_open_source/code/airports_near.py --only 20240327_lubbock
 #   The prompt that governs this file: prompts/p_airports_near.md
 schema: ck.speaking.airports_near/1
-generated_utc: "2026-08-24T19:03:26Z"
+generated_utc: "2026-08-24T22:38:51Z"
 generated_by: site/docs/Planes/following/apis/public_open_source/code/airports_near.py
 page:
   slug: 20240327_lubbock
@@ -665,27 +665,36 @@ tracked_plane_presence:
     claimed_overlaps: []
   coverage:
     # AN EMPTY RESULT ABOVE IS NOT A FINDING UNLESS THIS SAYS THE DAYS WERE HELD.
-    # aircraft_days_needed = tails x days in the window. aircraft_days_held is
-    # how many of those this repo actually has a trace for. The rest were never
-    # pulled, or the networks heard nothing - the two are indistinguishable here.
+    # aircraft_days_needed = tails x days in the window.
+    #   aircraft_days_held                     a trace is on disk
+    #   aircraft_days_asked_and_archive_empty  the archive WAS asked and holds
+    #                                          nothing for that aircraft-day
+    #   aircraft_days_never_asked               nobody has queried it yet
+    # Only the FIRST TWO are evidence of anything. The third is an open question,
+    # and closing it is what fetch_event_windows.py is for. Even an asked-and-empty
+    # day is NOT proof the aircraft was elsewhere: a volunteer receiver network
+    # heard nothing, and transponder-off, out-of-coverage, and a wrong claimed date
+    # all look identical from here.
     aircraft_days_needed: 75
-    aircraft_days_held: 2
-    coverage_pct: 2.7
+    aircraft_days_held: 16
+    aircraft_days_asked_and_archive_empty: 44
+    aircraft_days_never_asked: 15
+    coverage_pct: 21.3
+    queried_pct: 80.0
     tails_with_no_trace_in_window:
-      - N102DZ
       - N1098L
       - N2100L
       - N40JD
-      - N560TW
-      - N582MM
       - N59906
-      - N872RA
-      - N888KG
       - SU-BGM
-      - SU-BND
       - SU-BTU
       - SU-BTV
-      - T7-ELL
+    archive_control_test:
+      # The control test, run 24 Aug 2026 over every 8th window day against two
+      # aircraft with no connection to this case. Full record:
+      # apis/public_open_source/data/recovery/archive_control_probe.json
+      control_hit_pct_this_year: 94.4
+      verdict: "ARCHIVE HEALTHY. Unrelated control aircraft return 94.4% for 2024, so an empty result here is a fact about the AIRCRAFT rather than about the archive. It is still not proof the aircraft was elsewhere: transponder off, outside receiver coverage, and a wrong claimed date all look identical from here."
     by_side:
       following:
         # FOLLOWING is the side the claim is about - the Egyptian SU- tails.
@@ -693,21 +702,30 @@ tracked_plane_presence:
         # anything at all.
         tails: 6
         aircraft_days_needed: 30
-        aircraft_days_held: 2
-        coverage_pct: 6.7
+        aircraft_days_held: 6
+        aircraft_days_asked_and_archive_empty: 24
+        aircraft_days_never_asked: 0
+        coverage_pct: 20.0
+        queried_pct: 100.0
       kirk:
         # KIRK-side coverage is what turns an ESTIMATED arrival into an
         # OBSERVED one. Low here means the arrival times above stay estimates.
         tails: 6
         aircraft_days_needed: 30
-        aircraft_days_held: 0
-        coverage_pct: 0.0
+        aircraft_days_held: 10
+        aircraft_days_asked_and_archive_empty: 20
+        aircraft_days_never_asked: 0
+        coverage_pct: 33.3
+        queried_pct: 100.0
       n1098l:
         # Other tracked aircraft. A DIFFERENT CLAIM - do not merge the threads.
         tails: 3
         aircraft_days_needed: 15
         aircraft_days_held: 0
+        aircraft_days_asked_and_archive_empty: 0
+        aircraft_days_never_asked: 15
         coverage_pct: 0.0
+        queried_pct: 0.0
 counterargument:
   - "ONE PAIRING IS NOT EVIDENCE. The claim under test is a repetition across many stops, and any single pairing has an innocent explanation a reader will find."
   - "A field inside the radius is a field a jet COULD have used. Nothing here shows that anyone did use it, or that two aircraft on one ramp had any connection."

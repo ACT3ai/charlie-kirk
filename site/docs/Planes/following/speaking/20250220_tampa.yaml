@@ -2,7 +2,7 @@
 #   node/python: apis/public_open_source/code/airports_near.py --only 20250220_tampa
 #   The prompt that governs this file: prompts/p_airports_near.md
 schema: ck.speaking.airports_near/1
-generated_utc: "2026-08-24T19:03:27Z"
+generated_utc: "2026-08-24T22:38:51Z"
 generated_by: site/docs/Planes/following/apis/public_open_source/code/airports_near.py
 page:
   slug: 20250220_tampa
@@ -120,8 +120,32 @@ arrival_airport:
     utc: "2025-02-21T04:00:00Z"
     basis: "event end + 4h (speech, exit, wheels-up)"
     confidence: low
-  observed_by_adsb: []
-  observed_by_adsb_note: "NO Kirk-side aircraft is on disk on the ground within 40 miles of KTPA in this window. The arrival and departure above stay estimates."
+  observed_by_adsb:
+    - tail: N582MM
+      airport_code: KTPA
+      date_utc: 2025-02-20
+      gap_days_from_event: 0
+      on_ground_first_local: "2025-02-19 23:51:25 EST"
+      on_ground_last_local: "2025-02-20 17:45:03 EST"
+      on_ground_first_utc: "2025-02-20T04:51:25.120000Z"
+      on_ground_last_utc: "2025-02-20T22:45:03.240000Z"
+      ground_minutes: 1073.6
+      adsb_sources:
+        - adsb-lol
+        - airplanes-live
+      # OBSERVED, not estimated. This is a real ground contact by a Kirk-side airframe. It still does not establish who was aboard.
+    - tail: N582MM
+      airport_code: KLAL
+      date_utc: 2025-02-21
+      gap_days_from_event: 1
+      on_ground_first_local: "2025-02-20 21:55:45 EST"
+      on_ground_last_local: "2025-02-20 21:55:48 EST"
+      on_ground_first_utc: "2025-02-21T02:55:45.260000Z"
+      on_ground_last_utc: "2025-02-21T02:55:48.400000Z"
+      ground_minutes: 0.1
+      adsb_sources:
+        - airplanes-live
+      # OBSERVED, not estimated. This is a real ground contact by a Kirk-side airframe. It still does not establish who was aboard.
 airports_within_radius:
   # Every field a private jet could physically use within the radius.
   # Heliports, seaplane bases, balloonports and closed fields are excluded -
@@ -154,7 +178,8 @@ airports_within_radius:
       lon: -82.5332
       distance_mi: 0.0
       bearing: N
-      tracked_plane_presence_in_window: []
+      tracked_plane_presence_in_window:
+        - "N582MM on 2025-02-20 - ADS-B ground contact, 1073.6 min, 2 archive(s)"
     - airport_code: KTPF
       icao: KTPF
       iata: TPF
@@ -594,7 +619,8 @@ airports_within_radius:
       lon: -82.02071
       distance_mi: 31.3
       bearing: E
-      tracked_plane_presence_in_window: []
+      tracked_plane_presence_in_window:
+        - "N582MM on 2025-02-21 - ADS-B ground contact, 0.1 min, 1 archive(s)"
     - airport_code: KBKV
       icao: null
       iata: null
@@ -723,15 +749,69 @@ tracked_plane_presence:
     from: 2025-02-18
     to: 2025-02-22
     days_each_side: 2
-  any_found: false
+  any_found: true
   egyptian_su_found: false
   counts:
-    adsb_ground_contacts: 0
+    adsb_ground_contacts: 2
     adsb_ground_contacts_egyptian_su: 0
     flights_csv_stays: 0
     flights_csv_stays_egyptian_su: 0
     claimed_overlaps: 0
-  from_adsb_traces: []
+  from_adsb_traces:
+    - tail: N582MM
+      registry: "United States"
+      side: kirk
+      aircraft_type: LJ60
+      is_egyptian_su: false
+      in_73_tally: false
+      airport_code: KTPA
+      airport_name: "Tampa International Airport"
+      distance_from_arrival_airport_mi: 0.8
+      median_distance_from_that_runway_km: 1.27
+      date_utc: 2025-02-20
+      gap_days_from_event: 0
+      on_ground_first_utc: "2025-02-20T04:51:25.120000Z"
+      on_ground_last_utc: "2025-02-20T22:45:03.240000Z"
+      on_ground_first_local: "2025-02-19 23:51:25 EST"
+      on_ground_last_local: "2025-02-20 17:45:03 EST"
+      ground_positions: 10
+      ground_minutes: 1073.6
+      adsb_sources:
+        - adsb-lol
+        - airplanes-live
+      source_count: 2
+      trace_files:
+        - site/docs/Planes/N582MM/data/recovered/N582MM_2025-02-20_adsb-lol_trace_full.json.gz
+        - site/docs/Planes/N582MM/data/recovered/N582MM_2025-02-20_airplanes-live_trace_full.json.gz
+      evidence_class: adsb_public_history
+      # PRESENCE ONLY. A trace never establishes purpose and never establishes who was aboard.
+      cross_source_agreement: "DISAGREE by 63196s on first contact across 2 archives - published as a disagreement, not reconciled"
+    - tail: N582MM
+      registry: "United States"
+      side: kirk
+      aircraft_type: LJ60
+      is_egyptian_su: false
+      in_73_tally: false
+      airport_code: KLAL
+      airport_name: "Lakeland Linder International Airport"
+      distance_from_arrival_airport_mi: 31.8
+      median_distance_from_that_runway_km: 0.78
+      date_utc: 2025-02-21
+      gap_days_from_event: 1
+      on_ground_first_utc: "2025-02-21T02:55:45.260000Z"
+      on_ground_last_utc: "2025-02-21T02:55:48.400000Z"
+      on_ground_first_local: "2025-02-20 21:55:45 EST"
+      on_ground_last_local: "2025-02-20 21:55:48 EST"
+      ground_positions: 2
+      ground_minutes: 0.1
+      adsb_sources:
+        - airplanes-live
+      source_count: 1
+      trace_files:
+        - site/docs/Planes/N582MM/data/recovered/N582MM_2025-02-21_airplanes-live_trace_full.json.gz
+      evidence_class: adsb_public_history
+      # PRESENCE ONLY. A trace never establishes purpose and never establishes who was aboard.
+      cross_source_agreement: "SINGLE SOURCE - not independently corroborated"
   from_flights_csv: []
   from_overlaps_csv: []
   just_outside_the_radius:
@@ -745,28 +825,37 @@ tracked_plane_presence:
     claimed_overlaps: []
   coverage:
     # AN EMPTY RESULT ABOVE IS NOT A FINDING UNLESS THIS SAYS THE DAYS WERE HELD.
-    # aircraft_days_needed = tails x days in the window. aircraft_days_held is
-    # how many of those this repo actually has a trace for. The rest were never
-    # pulled, or the networks heard nothing - the two are indistinguishable here.
+    # aircraft_days_needed = tails x days in the window.
+    #   aircraft_days_held                     a trace is on disk
+    #   aircraft_days_asked_and_archive_empty  the archive WAS asked and holds
+    #                                          nothing for that aircraft-day
+    #   aircraft_days_never_asked               nobody has queried it yet
+    # Only the FIRST TWO are evidence of anything. The third is an open question,
+    # and closing it is what fetch_event_windows.py is for. Even an asked-and-empty
+    # day is NOT proof the aircraft was elsewhere: a volunteer receiver network
+    # heard nothing, and transponder-off, out-of-coverage, and a wrong claimed date
+    # all look identical from here.
     aircraft_days_needed: 75
-    aircraft_days_held: 0
-    coverage_pct: 0.0
+    aircraft_days_held: 17
+    aircraft_days_asked_and_archive_empty: 43
+    aircraft_days_never_asked: 15
+    coverage_pct: 22.7
+    queried_pct: 80.0
     tails_with_no_trace_in_window:
-      - N102DZ
       - N1098L
       - N2100L
-      - N40JD
-      - N560TW
-      - N582MM
       - N59906
-      - N872RA
       - N888KG
       - SU-BGM
       - SU-BND
       - SU-BTT
-      - SU-BTU
-      - SU-BTV
       - T7-ELL
+    archive_control_test:
+      # The control test, run 24 Aug 2026 over every 8th window day against two
+      # aircraft with no connection to this case. Full record:
+      # apis/public_open_source/data/recovery/archive_control_probe.json
+      control_hit_pct_this_year: 81.9
+      verdict: "ARCHIVE HEALTHY. Unrelated control aircraft return 81.9% for 2025, so an empty result here is a fact about the AIRCRAFT rather than about the archive. It is still not proof the aircraft was elsewhere: transponder off, outside receiver coverage, and a wrong claimed date all look identical from here."
     by_side:
       following:
         # FOLLOWING is the side the claim is about - the Egyptian SU- tails.
@@ -774,21 +863,30 @@ tracked_plane_presence:
         # anything at all.
         tails: 6
         aircraft_days_needed: 30
-        aircraft_days_held: 0
-        coverage_pct: 0.0
+        aircraft_days_held: 2
+        aircraft_days_asked_and_archive_empty: 28
+        aircraft_days_never_asked: 0
+        coverage_pct: 6.7
+        queried_pct: 100.0
       kirk:
         # KIRK-side coverage is what turns an ESTIMATED arrival into an
         # OBSERVED one. Low here means the arrival times above stay estimates.
         tails: 6
         aircraft_days_needed: 30
-        aircraft_days_held: 0
-        coverage_pct: 0.0
+        aircraft_days_held: 15
+        aircraft_days_asked_and_archive_empty: 15
+        aircraft_days_never_asked: 0
+        coverage_pct: 50.0
+        queried_pct: 100.0
       n1098l:
         # Other tracked aircraft. A DIFFERENT CLAIM - do not merge the threads.
         tails: 3
         aircraft_days_needed: 15
         aircraft_days_held: 0
+        aircraft_days_asked_and_archive_empty: 0
+        aircraft_days_never_asked: 15
         coverage_pct: 0.0
+        queried_pct: 0.0
 counterargument:
   - "ONE PAIRING IS NOT EVIDENCE. The claim under test is a repetition across many stops, and any single pairing has an innocent explanation a reader will find."
   - "A field inside the radius is a field a jet COULD have used. Nothing here shows that anyone did use it, or that two aircraft on one ramp had any connection."

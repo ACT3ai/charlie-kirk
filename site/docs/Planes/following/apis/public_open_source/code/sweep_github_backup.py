@@ -61,12 +61,30 @@ def list_assets(repo, tag):
                                                "User-Agent": "ck-recovery"})
     tok = os.environ.get("GITHUB_TOKEN")
     if tok: req.add_header("Authorization", f"Bearer {tok}")
-    try:
-        with urllib.request.urlopen(req, timeout=30) as r:
-            j = json.load(r)
-    except Exception:
-        return []
-    return sorted(a["name"] for a in j.get("assets", []) if ".tar" in a["name"])
+    import time
+    last = None
+    for attempt in range(4):
+        try:
+            with urllib.request.urlopen(req, timeout=30) as r:
+                j = json.load(r)
+            names = sorted(a["name"] for a in j.get("assets", []) if ".tar" in a["name"])
+            # SOME DAYS SHIP BOTH. e.g. v2024.03.22 carries a 0.25 GB standalone
+            # `.tar` AND a 2 GB split `.tar.aa`/`.tar.ab` pair -- adsb.lol
+            # publishes a smaller companion release alongside the main one.
+            # Concatenating all three produces a corrupt stream that tar cannot
+            # read, and the failure looks exactly like "the aircraft is not in
+            # there". Take the SPLIT SET when one exists; never mix the two.
+            split = [n for n in names if ".tar.a" in n]
+            return split if split else names
+        except urllib.error.HTTPError as e:
+            if e.code == 404:            # a genuine "this day was never published"
+                return []
+            last = e                     # 403 rate-limit, 5xx -- worth another go
+        except Exception as e:
+            last = e
+        time.sleep(5 * (attempt + 1))
+    # Could not find out. Say so; do NOT let it read as "the archive lacks this day".
+    raise RuntimeError(f"asset listing failed for {tag}: {last}")
 
 
 def write_out(results, dates):
@@ -93,17 +111,22 @@ for i, date in enumerate(dates, 1):
     # rather than a single `<tag>.tar`, and asking for the wrong name 404s -- which
     # looks exactly like "the day is not published" and is not. Ask the API which
     # assets exist, then stream them IN ORDER through one tar.
-    assets = list_assets(repo, tag)
+    try:
+        assets = list_assets(repo, tag)
+        listing_failed = False
+    except RuntimeError as e:
+        assets, listing_failed = [], str(e)
     urls = [f"https://github.com/{repo}/releases/download/{tag}/{a}" for a in assets]
     inc = []
     for t in tails: inc += ["--include", f"*trace_full_{HEX[t]}.json"]
     tmp = tempfile.mkdtemp(prefix="ckgh_")
     rc, hits = None, []
     if not urls:
+        v = "COULD_NOT_ASK" if listing_failed else "RELEASE_NOT_PUBLISHED"
         results.append({"date": date, "tails_asked": tails, "release": tag, "url": None,
                         "assets": [], "curl_exit": None, "hits": [],
-                        "verdict": "RELEASE_NOT_PUBLISHED"})
-        print(f"  [{i:>2}/{len(dates)}] {date}  {','.join(tails):<15} RELEASE_NOT_PUBLISHED")
+                        "error": listing_failed or None, "verdict": v})
+        print(f"  [{i:>2}/{len(dates)}] {date}  {','.join(tails):<15} {v}")
         write_out(results, dates)
         continue
     try:
@@ -136,7 +159,12 @@ for i, date in enumerate(dates, 1):
     rec = {"date": date, "tails_asked": tails, "release": tag, "url": urls,
            "assets": assets, "curl_exit": rc, "hits": hits,
            "verdict": "RECOVERED_FROM_OFFSITE_BACKUP" if hits
-                      else ("RELEASE_NOT_AVAILABLE" if rc not in (0, None) else "NOT_IN_THE_BACKUP_EITHER")}
+                      # curl exit 56 is the EXPECTED signature of a hit: --fast-read
+                      # found the file and closed the pipe under curl. Any OTHER
+                      # non-zero exit means the download broke, which says nothing
+                      # about the archive and must not be recorded as if it did.
+                      else ("DOWNLOAD_FAILED_RETRY_THIS" if rc not in (0, None, 56)
+                            else "NOT_IN_THE_BACKUP_EITHER")}
     results.append(rec)
     print(f"  [{i:>2}/{len(dates)}] {date}  {','.join(tails):<15} {rec['verdict']}"
           + (f"  <== {','.join(hits)}" if hits else ""))

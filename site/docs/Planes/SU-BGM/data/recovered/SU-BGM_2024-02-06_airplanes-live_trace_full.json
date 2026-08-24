@@ -1,0 +1,19 @@
+{"icao":"010070",
+"r":"SU-BGM",
+"t":"GLF4",
+"dbFlags":1,
+"desc":"GULFSTREAM 4",
+"ownOp":"Government Of Egypt",
+"timestamp": 1707177600.000,
+"trace":[ 
+[58236.51,29.423355,31.516078,24975,453.2,154.8,5,128,{"type":"adsb_icao","flight":"SUBGM   ","alt_geom":26050,"track":154.79,"geom_rate":128,"squawk":"3764","emergency":"none","nav_qnh":1012.8,"nav_altitude_mcp":24992,"nic":8,"rc":186,"version":2,"nic_baro":1,"nac_p":9,"nac_v":1,"sil":3,"sil_type":"perhour","gva":2,"sda":2,"alert":0,"spi":0},"adsb_icao",26050,128,null,null],
+[58256.16,29.385867,31.536255,25000,454.1,154.9,4,-64,null,"adsb_icao",26075,-64,null,null],
+[58275.84,29.348486,31.556343,24975,455.4,154.8,4,0,null,"adsb_icao",26050,0,null,null],
+[58295.43,29.311198,31.576323,25000,452.3,154.7,4,64,null,"adsb_icao",26075,64,null,null],
+[58300.77,29.301178,31.581732,25000,450.9,154.8,4,0,{"type":"adsb_icao","flight":"SUBGM   ","alt_geom":26075,"track":154.80,"geom_rate":0,"squawk":"3764","emergency":"none","category":"A2","nav_qnh":1012.8,"nav_altitude_mcp":24992,"nic":8,"rc":186,"version":2,"nic_baro":1,"nac_p":9,"nac_v":1,"sil":3,"sil_type":"perhour","gva":2,"sda":2,"alert":0,"spi":0},"adsb_icao",26075,0,null,null],
+[58322.93,29.259478,31.604112,25000,449.6,154.9,5,0,null,"adsb_icao",26075,0,null,null],
+[58342.44,29.222609,31.623876,24975,447.8,154.8,4,-64,null,"adsb_icao",26050,-64,null,null],
+[58344.77,29.218323,31.626153,24975,447.4,154.9,4,0,null,"adsb_icao",26050,0,null,null],
+[58415.24,29.085800,31.697036,25000,null,null,1,null,{"type":"adsb_icao","alt_geom":26075,"squawk":"3764","category":"A2","nav_qnh":1012.8,"nav_altitude_mcp":24992,"nic":8,"rc":186,"version":2,"nic_baro":1,"nac_p":9,"sil":3,"sil_type":"perhour","alert":0,"spi":0},"adsb_icao",26075,null,null,null],
+[58420.15,29.076574,31.701965,25000,448.7,154.8,4,-64,null,"adsb_icao",26075,-64,null,null] ]
+ }

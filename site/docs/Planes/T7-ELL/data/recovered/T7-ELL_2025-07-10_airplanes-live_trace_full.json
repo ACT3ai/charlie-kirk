@@ -1,0 +1,18 @@
+{"icao":"50018a",
+"r":"T7-ELL",
+"t":"GLEX",
+"dbFlags":0,"desc":"BOMBARDIER BD-700 Global 6000/6500",
+"version": "readsb 3.14.1676 46c61ff-dirty",
+"timestamp": 1752105600.000,
+"trace":[ 
+[47014.83,37.923199,23.938015,"ground",3.8,null,1,null,{"type":"adsb_icao","flight":"T7ELL   ","squawk":"2000","category":"A3","nic":8,"rc":186,"version":0,"nac_p":8,"sil":2,"sil_type":"perhour","alert":1,"spi":0},"adsb_icao",null,null,null,null],
+[47019.19,37.923203,23.938099,"ground",3.2,null,0,null,null,"adsb_icao",null,null,null,null],
+[47020.21,37.923199,23.938119,"ground",3.2,null,0,null,null,"adsb_icao",null,null,null,null],
+[47025.26,37.923175,23.938209,"ground",3.2,null,0,null,null,"adsb_icao",null,null,null,null],
+[47029.80,37.923145,23.938303,"ground",4.2,null,0,null,{"type":"adsb_icao","flight":"T7ELL   ","squawk":"2000","emergency":"none","category":"A3","nic":8,"rc":186,"version":2,"nac_p":10,"nac_v":2,"sil":3,"sil_type":"perhour","sda":2,"alert":1,"spi":0},"adsb_icao",null,null,null,null],
+[47034.40,37.923122,23.938420,"ground",4.2,null,0,null,null,"adsb_icao",null,null,null,null],
+[47039.30,37.923140,23.938552,"ground",4.2,null,0,null,null,"adsb_icao",null,null,null,null],
+[47044.08,37.923187,23.938657,"ground",4.8,null,0,null,null,"adsb_icao",null,null,null,null],
+[47048.03,37.923248,23.938727,"ground",4.8,null,0,null,{"type":"adsb_icao","flight":"T7ELL   ","squawk":"2000","emergency":"none","category":"A3","nic":8,"rc":186,"version":2,"nac_p":10,"nac_v":2,"sil":3,"sil_type":"perhour","sda":2,"alert":0,"spi":0},"adsb_icao",null,null,null,null],
+[47049.45,37.923280,23.938761,"ground",5.2,null,0,null,null,"adsb_icao",null,null,null,null] ]
+ }

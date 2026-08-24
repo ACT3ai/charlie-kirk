@@ -348,6 +348,51 @@ The reasons, in order of how much they explain:
 Concentrated by aircraft, the misses are **37 of SU-BTT's 53 pairs** and **9 of SU-BND's 16** — and
 all nine of the 2022 rows are SU-BTT.
 
+### The last free door: adsb.lol's own off-site backup, asked and closed
+
+Points 2 and 3 above are an argument, not a measurement. So the measurement was taken.
+
+`adsb.lol` mirrors its entire historical database to **public GitHub Releases** — one release per
+day, roughly 2 GB, under the Open Database Licence. That is a different service from the live API,
+and it holds days the live API refuses. Every alleged-overlap date **from 2024 onward** that both
+daily archives missed — **22 dates** — was put to it. Each release was streamed straight through
+`tar` and filtered, so about 44 GB crossed the wire and nothing but a matching trace could have
+touched the disk.
+
+| | |
+|---|---|
+| Dates asked | **22** |
+| Traces recovered | **0** |
+| Verdict on every one | `NOT_IN_THE_BACKUP_EITHER` |
+
+**A sweep that returns nothing 22 times out of 22 is exactly what a broken script also returns**, so
+before any of it was believed the same code was pointed at a **control**: SU-BTT on **1 April 2023**,
+a date the adsb.lol live API is known to serve. It came back `RECOVERED_FROM_OFFSITE_BACKUP` with the
+trace in hand. The extraction works. The misses are real.
+
+**What that establishes, stated narrowly.** The backup is *the same organisation's data* as the live
+API, so a miss here is **not** independent corroboration — it cannot tell you anything the live 404
+did not. What it does do is close the last free door: for those 22 dates, "no adsb.lol receiver
+recorded this aircraft" is now a **checked** statement rather than an inference from an API response.
+It remains **no evidence whatever that anything was removed**.
+
+**Three bugs were found and fixed on our side before these numbers were trusted**, and they are
+recorded because each one would have produced a *false statement about the archive*:
+
+* Most daily releases ship the tar **split** as `.tar.aa` + `.tar.ab`. An early run asked for a
+  single `.tar`, got 404, and recorded **16 published dates as "not available"**.
+* A transient API or download failure was being written down as a verdict. Two dates were wrongly
+  marked unavailable; both are published, and both re-ran to genuine misses.
+* A few days ship **both** a small standalone `.tar` and a large split pair — `v2024.03.22` is the
+  one in this set. Concatenating all three produces a stream `tar` cannot read, and that failure
+  looks identical to "the aircraft is not in there". **All 22 dates were audited for this layout
+  before any verdict was accepted.**
+
+The script now reports `COULD_NOT_ASK` and `DOWNLOAD_FAILED_RETRY_THIS` as distinct from a real miss,
+so a failure on our end can never again be recorded as a fact about somebody else's archive. Raw
+record: `data/recovery/github_backup_sweep.json`. Re-run it with
+`python3 sweep_github_backup.py`.
+
 ## The seven that landed on the day next door
 
 Seven pairs had no track on the alleged day but **did** have one on an adjacent day:

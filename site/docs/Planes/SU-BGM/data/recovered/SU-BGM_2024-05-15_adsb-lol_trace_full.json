@@ -1,0 +1,11 @@
+{"icao":"010070",
+"r":"SU-BGM",
+"t":"GLF4",
+"dbFlags":1,
+"desc":"GULFSTREAM 4",
+"timestamp": 1715731200.000,
+"trace":[ 
+[25746.51,30.587800,30.679047,23975,404.4,327.2,5,1408,{"type":"adsb_icao","flight":"SUBGM   ","alt_geom":25000,"track":327.21,"geom_rate":1408,"squawk":"3720","emergency":"none","category":"A2","nav_qnh":1012.8,"nav_altitude_mcp":24000,"nic":8,"rc":186,"version":2,"nic_baro":1,"nac_p":9,"nac_v":1,"sil":3,"sil_type":"perhour","gva":2,"sda":2,"alert":0,"spi":0},"adsb_icao",25000,1408,null,null],
+[25770.77,30.626298,30.650427,24025,408.0,327.2,5,-64,null,"adsb_icao",25075,-64,null,null],
+[25783.75,30.646874,30.635101,24025,406.7,327.2,4,64,null,"adsb_icao",25075,64,null,null] ]
+ }

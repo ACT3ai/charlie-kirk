@@ -1,0 +1,21 @@
+{"icao":"0101d0",
+"r":"SU-BTU",
+"t":"FA7X",
+"dbFlags":1,"desc":"DASSAULT Falcon 7X",
+"version": "readsb 3.14.1676 46c61ff-dirty",
+"timestamp": 1749859200.000,
+"trace":[ 
+[62007.53,29.913208,31.180007,4950,null,null,1,null,{"type":"adsb_icao","category":"A2","nic":8,"rc":186,"version":0,"nac_p":8,"sil":2,"sil_type":"perhour","alert":0,"spi":0},"adsb_icao",null,null,null,null],
+[62010.37,29.910873,31.181946,4900,224.0,143.9,0,-1280,null,"adsb_icao",5150,null,null,null],
+[62037.04,29.886164,31.202357,4250,233.1,144.6,1,-1984,null,"adsb_icao",4450,null,null,null],
+[62040.00,29.883418,31.204565,4150,233.1,144.6,0,-1984,null,"adsb_icao",4350,null,null,null],
+[62068.48,29.857544,31.225416,3600,238.1,144.6,1,-2048,{"type":"adsb_icao","alt_geom":3800,"track":144.57,"baro_rate":-2048,"squawk":"3307","emergency":"none","category":"A2","nav_qnh":1010.4,"nav_altitude_mcp":3520,"nav_modes":["autopilot","tcas"],"nic":8,"rc":186,"version":0,"nic_baro":1,"nac_p":8,"nac_v":0,"sil":2,"sil_type":"perhour","alert":0,"spi":0},"adsb_icao",3800,null,null,null],
+[62069.53,29.856604,31.226214,3575,236.4,145.2,0,-128,null,"adsb_icao",3750,null,null,null],
+[62076.88,29.850449,31.231120,3575,231.4,145.2,0,-64,null,"adsb_icao",3750,null,null,null],
+[62083.33,29.849396,31.231912,3575,230.0,145.3,0,-64,null,"adsb_icao",3750,null,null,null],
+[62141.29,29.824036,31.287584,3525,null,null,1,null,{"type":"adsb_icao","category":"A2","nic":8,"rc":186,"version":2,"sil_type":"perhour","alert":0,"spi":0},"adsb_icao",null,null,null,null],
+[62154.93,29.824814,31.301581,3375,204.4,86.6,0,-384,null,"adsb_icao",3550,null,null,null],
+[62159.32,29.825043,31.306651,3375,202.3,86.9,0,-192,null,"adsb_icao",3550,null,null,null],
+[62167.16,29.825274,31.311789,3350,193.2,87.3,0,-256,null,"adsb_icao",3500,null,null,null],
+[62393.11,29.984110,31.357782,2575,null,null,1,null,{"type":"adsb_icao","category":"A2","nav_qnh":1010.4,"nav_altitude_mcp":2496,"nav_modes":["autopilot","althold","tcas"],"nic":8,"rc":186,"version":0,"nic_baro":1,"nac_p":8,"sil":2,"sil_type":"perhour","alert":0,"spi":0},"adsb_icao",null,null,null,null] ]
+ }

@@ -1,0 +1,100 @@
+{
+  "probe": "archive availability control test",
+  "run_utc": "2026-08-24T22:38:29Z",
+  "why": "Before any gap in this investigation can be called a REMOVAL, an airframe with no connection to the case must be asked the same question on the same dates from the same endpoints. If the control fails the same way it is the ARCHIVE, not the airframe.",
+  "method": "Every 8th day of the 553 speaking-event window days, both free historical archives (globe.airplanes.live and adsb.lol globe_history), two unrelated aircraft.",
+  "controls": [
+    {
+      "label": "Ryanair",
+      "hex": "4ca7b5"
+    },
+    {
+      "label": "Lufthansa",
+      "hex": "3c6444"
+    }
+  ],
+  "by_year": {
+    "control": {
+      "2022": {
+        "traces": 0,
+        "asked_and_empty": 56,
+        "hit_pct": 0.0
+      },
+      "2023": {
+        "traces": 75,
+        "asked_and_empty": 5,
+        "hit_pct": 93.8
+      },
+      "2024": {
+        "traces": 68,
+        "asked_and_empty": 4,
+        "hit_pct": 94.4
+      },
+      "2025": {
+        "traces": 59,
+        "asked_and_empty": 13,
+        "hit_pct": 81.9
+      }
+    },
+    "egyptian_su_fleet": {
+      "2022": {
+        "traces": 7,
+        "asked_and_empty": 1110,
+        "hit_pct": 0.6
+      },
+      "2023": {
+        "traces": 229,
+        "asked_and_empty": 1452,
+        "hit_pct": 13.6
+      },
+      "2024": {
+        "traces": 243,
+        "asked_and_empty": 1305,
+        "hit_pct": 15.7
+      },
+      "2025": {
+        "traces": 295,
+        "asked_and_empty": 1277,
+        "hit_pct": 18.8
+      },
+      "2026": {
+        "traces": 21,
+        "asked_and_empty": 0,
+        "hit_pct": 100.0
+      }
+    },
+    "kirk_side_tails": {
+      "2022": {
+        "traces": 24,
+        "asked_and_empty": 1332,
+        "hit_pct": 1.8
+      },
+      "2023": {
+        "traces": 439,
+        "asked_and_empty": 1471,
+        "hit_pct": 23.0
+      },
+      "2024": {
+        "traces": 716,
+        "asked_and_empty": 1041,
+        "hit_pct": 40.8
+      },
+      "2025": {
+        "traces": 865,
+        "asked_and_empty": 1007,
+        "hit_pct": 46.2
+      },
+      "2026": {
+        "traces": 174,
+        "asked_and_empty": 0,
+        "hit_pct": 100.0
+      }
+    }
+  },
+  "findings": [
+    "2022 IS AN ARCHIVE RETENTION BOUNDARY, NOT A REMOVAL. The control aircraft return 0 of 56 for 2022 from both archives. So do the case aircraft, at 1-2%. NO 2022 GAP IN THIS INVESTIGATION MAY BE PUBLISHED AS SUPPRESSION. This matters because the following-planes claim is said to begin in 2022 - these two archives cannot test that claim at all, and the ADS-B Exchange monthly sample (one day per month) remains the only free route into it.",
+    "FROM 2023 THE ARCHIVES ARE HEALTHY. Control hit rate is 82-94% per year. An empty result on a 2023-2025 date is therefore a fact about the AIRCRAFT, not about the archive.",
+    "THE EGYPTIAN FLEET IS GENUINELY SPARSE IN THESE ARCHIVES - 14-19% per year from 2023, against a 82-94% control. That is the expected profile of a government VIP aircraft based in Egypt and outside volunteer ADS-B receiver coverage for most of its life. IT IS NOT EVIDENCE OF HIDING. It is the reason the coverage block exists on every speaking-event yaml.",
+    "THE KIRK-SIDE BIZJETS SIT IN BETWEEN at 41-46% from 2024. A business jet flies a few days a week; an airliner flies daily. Nothing in that gap needs explaining."
+  ]
+}

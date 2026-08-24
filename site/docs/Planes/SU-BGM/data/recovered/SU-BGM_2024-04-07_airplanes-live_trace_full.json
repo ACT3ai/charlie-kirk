@@ -1,0 +1,12 @@
+{"icao":"010070",
+"r":"SU-BGM",
+"t":"GLF4",
+"dbFlags":1,
+"desc":"GULFSTREAM 4",
+"ownOp":"Government Of Egypt",
+"timestamp": 1712448000.000,
+"trace":[ 
+[29856.25,29.386985,31.799496,26850,489.1,139.0,5,1600,{"type":"adsb_icao","alt_geom":27600,"track":138.98,"geom_rate":1600,"squawk":"3763","nav_qnh":1013.6,"nav_altitude_mcp":27008,"nic":8,"rc":186,"version":2,"nic_baro":1,"nac_p":9,"nac_v":1,"sil":3,"sil_type":"perhour","gva":2,"sda":2,"alert":0,"spi":0},"adsb_icao",27600,1600,null,null],
+[29859.81,29.380840,31.805689,26950,490.4,138.8,4,1600,null,"adsb_icao",27700,1600,null,null],
+[29890.47,29.327408,31.857605,27000,490.4,138.8,5,1600,null,"adsb_icao",27750,1600,null,null] ]
+ }

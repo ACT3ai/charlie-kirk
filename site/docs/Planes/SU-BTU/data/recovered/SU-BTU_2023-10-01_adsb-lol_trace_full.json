@@ -1,0 +1,18 @@
+{"icao":"0101d0",
+"r":"SU-BTU",
+"t":"FA7X",
+"dbFlags":1,
+"desc":"DASSAULT Falcon 7X",
+"timestamp": 1696118400.000,
+"trace":[ 
+[28592.94,29.515748,31.878339,23025,495.7,144.2,1,128,{"type":"adsb_icao","flight":"SUBTU   ","alt_geom":24425,"track":144.19,"baro_rate":128,"squawk":"3721","emergency":"none","category":"A2","nav_qnh":1013.6,"nav_altitude_mcp":23008,"nav_modes":["althold","tcas"],"nic":8,"rc":186,"version":2,"nic_baro":1,"nac_p":9,"nac_v":2,"sil":3,"sil_type":"perhour","gva":2,"sda":2,"alert":0,"spi":0},"adsb_icao",24425,null,null,null],
+[28602.22,29.501175,31.890300,23050,495.3,144.4,0,128,null,"adsb_icao",24450,null,null,null],
+[28635.60,29.436702,31.945172,23000,495.4,143.4,1,-128,null,"adsb_icao",24425,null,null,null],
+[28665.44,29.396109,31.979370,23000,494.2,143.6,1,192,null,"adsb_icao",24425,null,null,null],
+[28706.54,29.309010,32.052289,23000,493.8,143.9,1,128,{"type":"adsb_icao","alt_geom":24425,"track":143.90,"baro_rate":128,"squawk":"3721","emergency":"none","category":"A2","nav_qnh":1013.6,"nav_altitude_mcp":23008,"nav_modes":["althold","tcas"],"nic":8,"rc":186,"version":2,"nic_baro":1,"nac_p":9,"nac_v":2,"sil":3,"sil_type":"perhour","gva":2,"sda":2,"alert":0,"spi":0},"adsb_icao",24425,null,null,null],
+[28715.73,29.294586,32.064285,23025,493.8,143.9,0,128,null,"adsb_icao",24450,null,null,null],
+[32837.79,29.510069,32.295550,21450,465.4,306.5,1,-768,null,"adsb_icao",22750,null,null,null],
+[32849.32,29.525012,32.272554,21300,466.2,306.5,0,-768,null,"adsb_icao",22600,null,null,null],
+[32853.10,29.526306,32.270543,21275,466.8,306.5,0,-1536,{"type":"adsb_icao","flight":"SUBTU   ","alt_geom":22550,"track":306.55,"baro_rate":-1536,"squawk":"3373","emergency":"none","category":"A2","nav_qnh":1013.6,"nav_altitude_mcp":12000,"nav_modes":["autopilot","tcas"],"nic":8,"rc":186,"version":2,"nic_baro":1,"nac_p":9,"nac_v":2,"sil":3,"sil_type":"perhour","gva":2,"sda":2,"alert":0,"spi":0},"adsb_icao",22550,null,null,null],
+[32862.05,29.530226,32.264422,21175,466.8,306.5,0,-1536,null,"adsb_icao",22450,null,null,null] ]
+ }

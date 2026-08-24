@@ -1,0 +1,22 @@
+{"icao":"010070",
+"r":"SU-BGM",
+"t":"GLF4",
+"dbFlags":1,"desc":"GULFSTREAM 4",
+"timestamp": 1745884800.000,
+"trace":[ 
+[25002.71,29.936254,31.207104,22650,381.6,171.1,5,2304,{"type":"adsb_icao","flight":"SUBGM   ","alt_geom":23450,"track":171.11,"geom_rate":2304,"emergency":"none","category":"A2","nav_qnh":1012.8,"nav_altitude_mcp":27008,"nic":8,"rc":186,"version":0,"nic_baro":1,"nac_p":8,"nac_v":1,"sil":2,"sil_type":"perhour","alert":0,"spi":0},"adsb_icao",23450,2304,null,null],
+[25313.87,29.343784,31.296441,32325,436.6,186.3,5,960,null,"adsb_icao",33375,960,null,null],
+[25330.47,29.309801,31.292132,32675,440.6,186.2,4,1472,null,"adsb_icao",33725,1472,null,null],
+[25345.21,29.279892,31.288429,33050,442.6,186.2,4,1664,null,"adsb_icao",34125,1664,null,null],
+[25354.33,29.261294,31.286154,33275,442.6,186.2,4,1536,{"type":"adsb_icao","flight":"SUBGM   ","alt_geom":34350,"track":186.23,"geom_rate":1536,"squawk":"3301","emergency":"none","category":"A2","nav_qnh":1012.8,"nav_altitude_mcp":36992,"nic":8,"rc":186,"version":2,"nic_baro":1,"nac_p":9,"nac_v":1,"sil":3,"sil_type":"perhour","gva":2,"sda":2,"alert":0,"spi":0},"adsb_icao",34350,1536,null,null],
+[25369.51,29.229904,31.282302,33600,446.6,186.2,4,1280,null,"adsb_icao",34700,1280,null,null],
+[25384.00,29.200195,31.278657,33925,448.6,186.1,4,1472,null,"adsb_icao",35025,1472,null,null],
+[25385.20,29.197936,31.278345,33950,448.6,186.1,4,1472,null,"adsb_icao",35050,1472,null,null],
+[25406.44,29.153778,31.273006,34450,449.6,186.1,5,1536,{"type":"adsb_icao","flight":"SUBGM   ","alt_geom":35550,"track":186.13,"geom_rate":1536,"squawk":"3301","emergency":"none","category":"A2","nic":8,"rc":186,"version":2,"nic_baro":1,"nac_p":9,"nac_v":1,"sil":3,"sil_type":"perhour","gva":2,"sda":2,"alert":0,"spi":0},"adsb_icao",35550,1536,null,null],
+[25415.51,29.135101,31.270734,34675,450.6,186.1,4,1536,null,"adsb_icao",35800,1536,null,null],
+[25430.69,29.103516,31.266879,35050,450.6,186.1,5,1536,null,"adsb_icao",36175,1536,null,null],
+[25446.28,29.070969,31.262917,35375,453.5,186.1,4,1216,null,"adsb_icao",36525,1216,null,null],
+[25462.43,29.037048,31.258797,35700,455.5,186.1,4,1344,{"type":"adsb_icao","flight":"SUBGM   ","alt_geom":36850,"track":186.05,"geom_rate":1344,"squawk":"3301","emergency":"none","category":"A2","nav_qnh":1012.8,"nav_altitude_mcp":36992,"nic":8,"rc":186,"version":2,"nic_baro":1,"nac_p":9,"nac_v":1,"sil":3,"sil_type":"perhour","gva":2,"sda":2,"alert":0,"spi":0},"adsb_icao",36850,1344,null,null],
+[25480.72,28.998871,31.254202,36150,455.5,186.1,5,1280,null,"adsb_icao",37300,1280,null,null],
+[25493.64,28.971366,31.250880,36450,455.5,186.1,4,1216,null,"adsb_icao",37625,1216,null,null] ]
+ }

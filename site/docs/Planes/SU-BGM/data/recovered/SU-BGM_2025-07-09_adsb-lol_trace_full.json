@@ -1,0 +1,18 @@
+{"icao":"010070",
+"r":"SU-BGM",
+"t":"GLF4",
+"dbFlags":1,"desc":"GULFSTREAM 4",
+"version": "readsb 3.14.1682 04b69df",
+"timestamp": 1752019200.000,
+"trace":[ 
+[30018.55,29.744552,31.320675,6400,237.5,353.5,5,-1088,{"type":"adsb_icao","alt_geom":6700,"track":353.47,"geom_rate":-1088,"nav_qnh":1012.8,"nav_altitude_mcp":3488,"nic":8,"rc":186,"version":0,"nic_baro":1,"nac_p":8,"nac_v":1,"sil":2,"sil_type":"perhour","alert":0,"spi":0},"adsb_icao",6700,-1088,null,null],
+[30029.91,29.756699,31.319116,6200,232.3,353.8,4,-1088,null,"adsb_icao",6475,-1088,null,null],
+[30035.81,29.762940,31.318306,6100,231.4,353.8,4,-1088,null,"adsb_icao",6375,-1088,null,null],
+[30039.47,29.766944,31.317821,6050,228.5,353.5,4,-1088,null,"adsb_icao",6325,-1088,null,null],
+[30088.35,29.818151,31.314805,5325,226.3,8.1,5,-960,{"type":"adsb_icao","alt_geom":5550,"track":8.13,"geom_rate":-960,"squawk":"3737","category":"A2","nav_qnh":1008.0,"nav_altitude_mcp":3488,"nic":8,"rc":186,"version":2,"nic_baro":1,"nac_p":9,"nac_v":1,"sil":3,"sil_type":"perhour","gva":2,"sda":2,"alert":0,"spi":0},"adsb_icao",5550,-960,null,null],
+[30089.00,29.818680,31.314891,5325,226.2,9.7,4,-960,null,"adsb_icao",5550,-960,null,null],
+[30091.46,29.821410,31.315774,5300,225.6,14.9,4,-1024,null,"adsb_icao",5525,-1024,null,null],
+[30093.81,29.823552,31.316690,5250,224.3,19.8,4,-960,null,"adsb_icao",5475,-960,null,null],
+[30095.94,29.825500,31.317849,5225,224.6,25.3,4,-896,{"type":"adsb_icao","alt_geom":5450,"track":25.31,"geom_rate":-896,"squawk":"3737","category":"A2","nav_qnh":1008.0,"nav_altitude_mcp":3488,"nic":8,"rc":186,"version":2,"nic_baro":1,"nac_p":9,"nac_v":1,"sil":3,"sil_type":"perhour","gva":2,"sda":2,"alert":0,"spi":0},"adsb_icao",5450,-896,null,null],
+[30100.80,29.829483,31.321176,5150,222.9,38.3,4,-896,null,"adsb_icao",5375,-896,null,null] ]
+ }

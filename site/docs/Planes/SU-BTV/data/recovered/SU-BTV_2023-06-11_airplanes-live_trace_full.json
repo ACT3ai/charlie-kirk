@@ -1,0 +1,12 @@
+{"icao":"0101d1",
+"r":"SU-BTV",
+"t":"FA7X",
+"dbFlags":1,
+"desc":"DASSAULT Falcon 7X",
+"timestamp": 1686441600.000,
+"trace":[ 
+[26358.90,29.752396,31.250188,23950,null,null,1,null,{"type":"adsb_icao","flight":"SUBTV   ","squawk":"3771","nav_qnh":1013.6,"nav_altitude_mcp":25024,"nav_modes":["autopilot","tcas"],"nic":8,"rc":186,"version":0,"nic_baro":1,"nac_p":8,"sil":2,"sil_type":"perhour","alert":0,"spi":0},"adsb_icao",null,null,null,null],
+[26363.76,29.743835,31.251508,24200,389.4,172.5,0,3008,null,"adsb_icao",25475,null,null,null],
+[26371.68,29.729462,31.253621,24575,391.3,172.5,0,2816,null,"adsb_icao",25900,null,null,null],
+[26377.69,29.718613,31.255258,24825,392.3,172.5,0,2560,null,"adsb_icao",26150,null,null,null] ]
+ }

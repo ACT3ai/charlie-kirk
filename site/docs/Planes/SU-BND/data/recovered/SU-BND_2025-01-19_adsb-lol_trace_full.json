@@ -1,0 +1,12 @@
+{"icao":"01003e",
+"r":"SU-BND",
+"t":"GLF4",
+"dbFlags":0,"desc":"GULFSTREAM 4",
+"timestamp": 1737244800.000,
+"trace":[ 
+[32961.81,29.372543,31.510955,26450,495.4,151.4,5,1472,{"type":"adsb_icao","alt_geom":27375,"track":151.42,"geom_rate":1472,"nic":8,"rc":186,"version":0,"nac_p":8,"nac_v":1,"sil":2,"sil_type":"perhour","alert":0,"spi":0},"adsb_icao",27375,1472,null,null],
+[32962.71,29.370738,31.512074,26475,496.3,151.5,4,1408,null,"adsb_icao",27375,1408,null,null],
+[32985.35,29.324698,31.540671,26950,504.3,151.4,5,1472,null,"adsb_icao",27900,1472,null,null],
+[32999.03,29.296509,31.558175,27300,506.5,151.5,4,1856,null,"adsb_icao",28275,1856,null,null],
+[33004.88,29.284515,31.565622,27475,507.4,151.5,4,1792,{"type":"adsb_icao","flight":"SUBND   ","alt_geom":28450,"track":151.52,"geom_rate":1792,"squawk":"3776","category":"A2","nav_qnh":1013.6,"nav_altitude_mcp":31008,"nic":8,"rc":186,"version":2,"nic_baro":1,"nac_p":9,"nac_v":1,"sil":3,"sil_type":"perhour","gva":2,"sda":2,"alert":0,"spi":0},"adsb_icao",28450,1792,null,null] ]
+ }

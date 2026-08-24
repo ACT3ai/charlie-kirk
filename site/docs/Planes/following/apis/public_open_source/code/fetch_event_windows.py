@@ -199,6 +199,10 @@ def main():
     ap.add_argument("--from", dest="dfrom", default=None)
     ap.add_argument("--to", dest="dto", default=None)
     ap.add_argument("--limit", type=int, default=0)
+    ap.add_argument("--every", type=int, default=0,
+                    help="sample every Nth window day - for the control test, where a "
+                         "stratified sample across the whole range answers 'is the "
+                         "archive serving these dates at all' without re-walking 553 days")
     ap.add_argument("--sleep", type=float, default=0.4, help="seconds between requests")
     ap.add_argument("--repull", action="store_true")
     ap.add_argument("--control", action="store_true")
@@ -217,6 +221,8 @@ def main():
         days = [d for d in days if d >= args.dfrom]
     if args.dto:
         days = [d for d in days if d <= args.dto]
+    if args.every > 1:
+        days = days[::args.every]
 
     jobs = []
     for ac in fleet:

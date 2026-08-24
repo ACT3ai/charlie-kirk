@@ -1468,14 +1468,32 @@ FILE:
 Per aircraft, and THE SOURCE IS PART OF THE FILENAME on purpose:
 
     site/docs/Planes/<TAIL>/data/recovered/
-      <TAIL>_<YYYY-MM-DD>_<source-key>_trace_full.json
-      <TAIL>_<YYYY-MM-DD>_<source-key>_trace_full.json.meta.json
+      <TAIL>_<YYYY-MM-DD>_<source-key>_trace_full.json          (pulls before 24 Aug 2026)
+      <TAIL>_<YYYY-MM-DD>_<source-key>_trace_full.json.gz       (pulls from 24 Aug 2026 on)
+      <TAIL>_<YYYY-MM-DD>_<source-key>_trace_full.json[.gz].meta.json
       <TAIL>_<WAYBACKTIMESTAMP>_wayback_<site>.html
       <TAIL>_<WAYBACKTIMESTAMP>_wayback_<site>_flights.json
       _RECOVERED_DATA.md
 
 Source keys: `airplanes-live`, `adsb-lol`, `adsbexchange-samples`,
 `adsblol-github-backup`, `wayback/<site>`.
+
+**`.json` AND `.json.gz` ARE THE SAME EVIDENCE IN TWO CONTAINERS.** A trace is
+repetitive JSON and gzips to about 15% of its size; a full fleet sweep across all 139
+speaking-event windows in raw JSON would add most of a gigabyte to a tree an automated
+job pushes every few minutes. gzip is lossless — `gunzip -c` returns the exact bytes the
+server sent, and the `.meta.json` records `stored_gzipped` plus both the wire and stored
+byte counts. `lib/traces.py` reads either form transparently. **The uncompressed files
+already on disk are LEFT AS THEY ARE** — nothing that is already evidence gets rewritten
+to save space.
+
+**A DAY THE ARCHIVE WAS ASKED ABOUT AND HAD NOTHING** gets a
+`..._trace_full.miss.json.meta.json` and no payload. That record is what separates
+**"asked, and the archive holds nothing"** from **"nobody has queried it yet"**. Those
+two must never be merged: the first is a coverage fact, the second is an open question,
+and only the first belongs anywhere near a published sentence. Neither is proof the
+aircraft was elsewhere — a volunteer network heard nothing, and transponder-off,
+out-of-coverage, and a wrong claimed date all look identical from here.
 
 * EVERY payload gets a `.meta.json` beside it recording the exact URL, HTTP
   status, byte count, UTC retrieval time, and a summary of the trace.

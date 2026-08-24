@@ -193,6 +193,13 @@ line below can be checked without trusting this page.
 | [T7-ELL](/Planes/T7ELL-EJM36/overview) | 5 | 26 | 12 | 0 | — | none |
 | **Total** | **156** | **379** | **207** | **50** | **153** | **none** |
 
+**One column needs a definition before it can be read.** "Archived pages held" counts the captures
+**this repository has downloaded and stored**, not the number the Internet Archive holds. Those are
+different numbers, and a later section on this page re-queries the Archive properly and reports the
+larger figure — for [N888KG](/Planes/N888KG/overview) it finds **fourteen** FlightRadar24 captures
+where the table below counts **22 files on disk** across FlightRadar24 *and* FlightAware. Neither is
+wrong; they measure different things.
+
 Read the last column first. **It is empty for every aircraft.** Across sixteen airframes and eighty
 aircraft-page probes there is not one page that was public and is not public now.
 
@@ -791,6 +798,23 @@ remarkable — it is the confirmation of *which* fields that is worth having. An
 a tracking site's summary of flights, not a mission record; who was aboard and what the aircraft was
 tasked to do remain outside every source on this page.
 
+## The last free door, asked and closed
+
+For **22** of the alleged overlap dates from 2024 onward, both free daily archives returned nothing.
+Rather than write that down as "nobody heard it", the one remaining free source was asked:
+**adsb.lol's own off-site backup on GitHub Releases** — one ~2 GB tar per day under the Open Database
+Licence, streamed and filtered without being stored.
+
+**22 dates asked. Zero traces recovered.** A control run on a date the live API *does* serve
+(SU-BTT, 1 April 2023) came back with the trace in hand, so the extraction works and the misses are
+real.
+
+This does **not** add independent corroboration — the backup is the same organisation's data as the
+live API. What it does is turn an inference into a checked statement, and it closes the last free
+route for those dates. **It is not evidence that anything was removed.** The per-date record, and the
+three bugs on our side that had to be fixed before the numbers could be trusted, are on
+**[Overlap Recovery](/Planes/Flight-Data-Recovery/Overlap-Recovery)**.
+
 ## The five free routes, side by side
 
 | Route | Cost | Reaches | What it recovers | Limitation |
@@ -800,6 +824,7 @@ tasked to do remain outside every source on this page.
 | **samples.adsbexchange.com** | free | **2016** → today | Full days, **one per month**. The only free route into 2022. | One day in thirty. Cannot test a specific mid-month date. |
 | **Internet Archive** (Wayback) | free | whenever a crawler visited | The tracking-site **page** — the flight-history table as published. | Sparse and unpredictable. N102DZ has exactly two snapshots in four years. |
 | **FlightAware activity log** | free, no account | about a week back | Named airports and actual off/on times, server-rendered so a script can read it. | One week. Useless for anything historical. |
+| **adsb.lol GitHub Releases** (ODbL) | free, no account | 2023 → today | The complete day, including days the live API refuses. Often **split** as `.tar.aa`/`.tar.ab`. | ~2 GB per day, and it is adsb.lol's own data — a hit is not independent corroboration. |
 
 The last one is the only route that recovers **what a tracking site said**, as opposed to what the
 sensors heard. That makes it the only route that can document a removal at all — and it is the

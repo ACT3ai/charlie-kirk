@@ -1,0 +1,19 @@
+{"icao":"50018a",
+"r":"T7-ELL",
+"t":"GLEX",
+"dbFlags":0,
+"desc":"BOMBARDIER BD-700 Global 6000/6500",
+"timestamp": 1699660800.000,
+"trace":[ 
+[51862.11,25.217834,54.304352,16125,387.8,149.5,1,-2688,{"type":"adsb_icao","alt_geom":17000,"ias":292,"mach":0.596,"track":149.47,"mag_heading":148.54,"true_heading":150.91,"baro_rate":-2688,"geom_rate":-2752,"nav_qnh":1017.6,"nav_altitude_mcp":12992,"nic":8,"rc":186,"version":2,"nic_baro":1,"nac_p":9,"nac_v":2,"sil":3,"sil_type":"perhour","gva":2,"sda":2,"alert":0,"spi":0},"adsb_icao",17000,-2752,292,null],
+[51872.28,25.202362,54.314473,15675,383.8,149.3,0,-2688,null,"adsb_icao",16525,-2752,292,null],
+[51881.00,25.189041,54.323120,15275,383.8,149.3,0,-2688,null,"adsb_icao",16125,-2720,291,null],
+[51913.06,25.140976,54.354451,13900,375.8,149.3,1,-2688,null,"adsb_icao",14675,-2688,291,null],
+[51920.22,25.130447,54.361318,13725,369.4,149.4,0,-1728,{"type":"adsb_icao","flight":"T7ELL   ","alt_geom":14475,"ias":291,"mach":0.568,"track":149.41,"mag_heading":147.66,"true_heading":150.06,"baro_rate":-1728,"geom_rate":-2688,"squawk":"4476","category":"A3","nav_qnh":1017.2,"nav_altitude_mcp":13008,"nic":8,"rc":186,"version":2,"nac_v":2,"sil_type":"perhour","alert":0,"spi":0},"adsb_icao",14475,-2688,291,null],
+[51926.44,25.121543,54.367140,13600,369.4,149.4,0,-1728,null,"adsb_icao",14350,-1056,284,null],
+[52094.43,24.988310,54.562148,10050,null,null,1,null,null,"adsb_icao",null,null,null,null],
+[52105.13,24.986618,54.577840,9925,291.0,96.7,0,-576,null,"adsb_icao",10425,null,null,null],
+[52119.35,24.984400,54.598631,9775,291.0,96.7,0,-576,{"type":"adsb_icao","flight":"T7ELL   ","alt_geom":10275,"ias":250,"tas":294,"mach":0.452,"wd":32,"ws":7,"oat":5,"tat":17,"track":96.71,"track_rate":0.00,"roll":0.53,"mag_heading":93.16,"true_heading":95.50,"baro_rate":-576,"geom_rate":-608,"squawk":"4476","category":"A3","nav_qnh":1017.6,"nav_altitude_mcp":6016,"nic":8,"rc":186,"version":2,"nic_baro":1,"nac_p":9,"nac_v":2,"sil":3,"sil_type":"perhour","gva":2,"sda":2,"alert":0,"spi":0},"adsb_icao",10275,-608,250,0.5],
+[52136.04,24.981793,54.623298,9625,291.0,96.7,0,-640,null,"adsb_icao",10125,-608,250,0.3],
+[52143.14,24.980667,54.633636,9550,291.0,96.7,0,-576,null,"adsb_icao",10050,-608,250,0.5] ]
+ }

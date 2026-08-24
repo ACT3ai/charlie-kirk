@@ -1,0 +1,17 @@
+{"icao":"0101d0",
+"timestamp": 1696118400.000,
+"trace":[ 
+[28600.93,29.510488,31.882647,23050,495.1,144.3,1,128,{"type":"adsb_icao","flight":"SUBTU   ","alt_geom":24475,"track":144.29,"baro_rate":128,"squawk":"3721","emergency":"none","category":"A2","nav_qnh":1013.6,"nav_altitude_mcp":23008,"nav_modes":["althold","tcas"],"nic":8,"rc":186,"version":2,"nic_baro":1,"nac_p":9,"nac_v":2,"sil":3,"sil_type":"perhour","gva":2,"sda":2,"alert":0,"spi":0},"adsb_icao",24475,null,null,null],
+[28602.22,29.501175,31.890300,23050,495.9,144.4,0,128,null,"adsb_icao",24450,null,null,null],
+[28635.59,29.436702,31.945172,23000,495.9,144.4,1,128,null,"adsb_icao",24400,null,null,null],
+[28665.44,29.396109,31.979370,23000,494.8,143.6,1,-128,null,"adsb_icao",24400,null,null,null],
+[28674.07,29.370365,32.001074,23025,492.6,143.5,0,0,{"type":"adsb_icao","alt_geom":24450,"track":143.50,"baro_rate":0,"squawk":"3721","category":"A2","nav_qnh":1013.6,"nav_altitude_mcp":23008,"nav_modes":["althold","tcas"],"nic":8,"rc":186,"version":2,"nic_baro":1,"nac_p":9,"nac_v":2,"sil":3,"sil_type":"perhour","alert":0,"spi":0},"adsb_icao",24450,null,null,null],
+[28706.53,29.309010,32.052289,23000,493.8,143.9,1,128,null,"adsb_icao",24425,null,null,null],
+[28723.91,29.275725,32.079917,23050,493.8,143.9,0,128,null,"adsb_icao",24475,null,null,null],
+[32816.20,29.476040,32.348003,21800,460.0,306.7,1,0,null,"adsb_icao",null,null,null,null],
+[32836.32,29.508270,32.298326,21475,460.0,306.7,1,0,{"type":"adsb_icao","flight":"SUBTU   ","track":306.70,"baro_rate":0,"nic":8,"rc":185,"version":0,"nic_baro":0,"nac_p":8,"nac_v":2,"sil":2,"sil_type":"perhour","alert":0,"spi":0},"adsb_icao",null,null,null,null],
+[32837.79,29.510069,32.295550,21450,465.4,306.5,0,-768,null,"adsb_icao",22750,null,null,null],
+[32849.32,29.525012,32.272554,21300,466.2,306.5,0,-768,null,"adsb_icao",22600,null,null,null],
+[32853.10,29.526306,32.270543,21275,466.8,306.5,0,-1536,null,"adsb_icao",22550,null,null,null],
+[32862.04,29.530226,32.264422,21175,466.8,306.5,0,-1536,{"type":"adsb_icao","flight":"SUBTU   ","alt_geom":22450,"track":306.55,"baro_rate":-1536,"squawk":"3373","emergency":"none","category":"A2","nav_qnh":1013.6,"nav_altitude_mcp":12000,"nav_modes":["autopilot","tcas"],"nic":8,"rc":186,"version":2,"nic_baro":1,"nac_p":9,"nac_v":2,"sil":3,"sil_type":"perhour","gva":2,"sda":2,"alert":0,"spi":0},"adsb_icao",22450,null,null,null] ]
+ }

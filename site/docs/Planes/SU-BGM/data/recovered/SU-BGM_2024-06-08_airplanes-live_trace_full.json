@@ -1,0 +1,17 @@
+{"icao":"010070",
+"r":"SU-BGM",
+"t":"GLF4",
+"dbFlags":1,
+"desc":"GULFSTREAM 4",
+"ownOp":"Government Of Egypt",
+"timestamp": 1717804800.000,
+"trace":[ 
+[36826.26,30.966202,30.442846,26775,477.5,136.8,5,-1984,{"type":"adsb_icao","flight":"SUBGM   ","alt_geom":28200,"track":136.78,"geom_rate":-1984,"squawk":"3736","category":"A2","nav_qnh":1013.6,"nav_altitude_mcp":24992,"nic":8,"rc":186,"version":2,"nic_baro":1,"nac_p":9,"nac_v":1,"sil":3,"sil_type":"perhour","gva":2,"sda":2,"alert":0,"spi":0},"adsb_icao",28200,-1984,null,null],
+[36863.79,30.941254,30.469181,26325,null,null,1,null,null,"adsb_icao",27750,null,null,null],
+[36970.78,30.744867,30.682617,22475,443.0,136.9,1,32,null,"adsb_icao",null,null,null,null],
+[36982.79,30.727478,30.701616,22100,441.0,136.9,0,32,null,"adsb_icao",null,null,null,null],
+[36988.79,30.721207,30.708456,21975,440.0,136.8,0,32,{"type":"adsb_icao","track":136.80,"baro_rate":32,"squawk":"3736","category":"A2","nic":8,"rc":185,"version":2,"nic_baro":0},"adsb_icao",null,null,null,null],
+[37578.87,29.949921,31.168267,6000,null,null,1,null,null,"adsb_icao",null,null,null,null],
+[37591.07,29.936325,31.168051,6000,null,null,0,null,null,"adsb_icao",null,null,null,null],
+[37639.48,29.885056,31.167526,6000,227.0,180.5,5,0,null,"adsb_icao",6275,0,null,null] ]
+ }

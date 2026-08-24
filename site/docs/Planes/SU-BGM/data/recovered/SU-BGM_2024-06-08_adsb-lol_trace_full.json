@@ -1,0 +1,14 @@
+{"icao":"010070",
+"r":"SU-BGM",
+"t":"GLF4",
+"dbFlags":1,
+"desc":"GULFSTREAM 4",
+"timestamp": 1717804800.000,
+"trace":[ 
+[32155.13,31.234177,29.876495,30000,478.0,306.1,5,-64,{"type":"adsb_icao","alt_geom":31625,"track":306.15,"geom_rate":-64,"squawk":"3736","emergency":"none","category":"A2","nav_qnh":1013.6,"nav_altitude_mcp":30016,"nic":8,"rc":186,"version":2,"nic_baro":1,"nac_p":9,"nac_v":1,"sil":3,"sil_type":"perhour","gva":2,"sda":2,"alert":0,"spi":0},"adsb_icao",31625,-64,null,null],
+[32169.86,31.244372,29.860291,30000,478.0,306.1,4,-64,null,"adsb_icao",31625,-64,null,null],
+[36740.91,31.099823,30.243261,28950,529.0,114.3,1,-384,null,"adsb_icao",30500,64,319,null],
+[36758.50,31.070407,30.301996,28525,509.1,122.2,1,-1152,null,"adsb_icao",30075,-1280,311,7.0],
+[36758.50,31.069794,30.303147,28525,509.1,122.2,0,-1152,{"type":"adsb_icao","alt_geom":30075,"ias":311,"tas":482,"mach":0.796,"wd":242,"ws":60,"track":122.16,"track_rate":0.28,"roll":7.03,"mag_heading":123.40,"true_heading":128.32,"baro_rate":-1152,"geom_rate":-1280,"squawk":"3736","emergency":"none","nav_qnh":1013.6,"nav_altitude_mcp":28992,"nic":8,"rc":186,"version":0,"nic_baro":1,"nac_p":8,"nac_v":1,"sil":2,"sil_type":"perhour","alert":0,"spi":0},"adsb_icao",30075,-1280,311,7.0],
+[36802.35,31.027725,30.368257,27850,491.9,127.7,5,-1472,null,"adsb_icao",29350,-1472,null,null] ]
+ }
