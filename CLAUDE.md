@@ -1459,6 +1459,41 @@ FILE:
   backup tarball into the per-aircraft directories, handling the gzip.
       node ingest_github_backup.js <extract-dir> <YYYY-MM-DD>
 * .../code/write_recovery_records.js: writes each aircraft's _RECOVERED_DATA.md.
+* .../code/geo_sweep.py: **THE GEOGRAPHIC SWEEP — asks what was there, not who.**
+  Every other client in this repo asks a PER-TAIL question and can therefore only
+  ever find an aircraft somebody already named; that route holds ~9% of the
+  aircraft-days the speaking-event windows need. This one streams a whole UTC day
+  of adsb.lol's GitHub Release backup (~2-5 GB, ODbL, no account, ~74k-95k
+  aircraft) and filters it by GEOGRAPHY: a 50-mile circle on the US Census
+  centroid of every sourced US event city, +/-1 day. 187 event-days, 278 UTC
+  dates. Writes a CSV row for EVERY aircraft that entered a circle (that is the
+  coverage record) and keeps the full track only for aircraft ON THE GROUND in an
+  event circle that were foreign / unregistered / military / PIA, plus any tracked
+  tail anywhere. **The six control cities are swept on the same days in the same
+  run** — that is built in, not bolted on, because this repo has already had to
+  retract a finding for skipping a control.
+      python3 geo_sweep.py --plan | --run --jobs 8 | --run --date YYYY-MM-DD | --report
+  `--jobs` uses PROCESSES not threads (the JSON half serialises on the GIL). The
+  GitHub API is never touched — 60 requests/hour cannot cover 278 dates, so the
+  release URL is built (`v2025.09.10-planes-readsb-prod-0`, DOTS in the date) and
+  probed on the CDN. **Files inside the tarballs are gzip despite the `.json`
+  name.**
+* .../code/lib/targets.py: builds that target set out of `tpusa_events.csv` —
+  circles, date windows, multi-day conference ranges, and the control cities.
+  Rows naming only a month, or no usable city, are returned SEPARATELY and named
+  in `data/geo_sweep/targets.json` rather than dropped.
+* .../code/geo_sweep_samples.py: the same sweep against ADS-B Exchange's free
+  monthly sample — **the only free archive that reaches before 2023**. One day a
+  month, so it covers **2 of this investigation's 38 US event-days in 2022** and
+  the other 36 are covered by nothing free that exists. `--city Provo --state UT`
+  runs a ramp baseline across a range of months instead of an event test; say
+  which one was run.
+* .../code/analyse_geo_sweep.py: turns the swept days into (1) the notable-aircraft
+  rate in EVENT circles against CONTROL circles, (2) which aircraft recur on the
+  ground near 2+ events in 2+ states — the question the following claim actually
+  makes, and the one per-tail probing can never ask — and (3) what the controls do
+  to that recurrence list. An aircraft recurring near events AND near Des Moines
+  is a busy charter, not a shadow.
 * .../code/lib/fleet.js: tail -> ICAO hex registry. THE join key for every
   ADS-B source. Add a tail here and every script above picks it up.
 
