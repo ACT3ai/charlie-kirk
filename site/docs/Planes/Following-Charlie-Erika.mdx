@@ -122,7 +122,41 @@ Three summary bars run across the top of the sheet:
 | **% of claims that were inaccurate** | **66% — 43 of 65** |
 | **% of claims where the plane was on a different continent** | **60% — 39 of 65** |
 
-That third line is the one that matters most, and it needs reading slowly. It is not saying the aircraft was at the wrong airport, or a day late, or in a neighbouring state. It is saying that on **39 of 65 claimed overlap dates — three in every five — the aircraft was, per the flight record, on a different continent from the location the sheet places it in.** Most commonly it was sitting in Egypt.
+:::danger[These three bars have since been tested against primary position data, and they do not hold up where they can be checked]
+
+Those bars are the auditor's own scoring of a flight-tracking website. Every row of the register has
+since been pulled from the **raw ADS-B archives** and read fix by fix — see
+[Overlap Recovery](/Planes/Flight-Data-Recovery/Overlap-Recovery). The result:
+
+| | |
+|---|---|
+| Rows the audit marked **inaccurate** | **44** |
+| Of those, rows primary ADS-B can actually test | **5** |
+| Of those 5, rows where the audit is **wrong** | **3** |
+| Of those 5, rows where the audit is **right** | **2** |
+| Rows the audit marked accurate or partial, **supported** by primary data | **23 of 29** |
+| Rows the audit marked accurate or partial, **contradicted** by primary data | **1** |
+
+**Where the audit can be checked at all, it is wrong on three of five.** Twenty-three of the
+twenty-nine rows it passed are supported by primary position data and one is contradicted; three of
+its negative verdicts collapse into confirmations at 0.05 to 0.82 km.
+
+**The honest limit, stated at the same size.** 39 of the 44 negative verdicts **cannot be tested**
+by any free archive. The auditor used subscription services — FlightRadar24 Business and a $950
+FlightAware tier — with far deeper coverage than the volunteer networks this investigation can
+reach. Those 39 rows are **untested, not refuted**, and this page does not pretend otherwise.
+
+:::
+
+That third line is the one that carried the most weight, and it needs reading slowly — in both
+directions. As printed it says that on **39 of 65 claimed overlap dates — three in every five — the
+aircraft was, per the flight record, on a different continent from the location the sheet places it
+in.** Most commonly Egypt.
+
+**Against primary position data that rate is 3 of 29 decidable rows — 10%, not 60%.** The two
+figures are not measuring the same rows and the gap between them is mostly coverage. But the
+direction is not ambiguous: **on the five negative rows where both methods can speak, the
+different-continent finding survives twice and fails three times.**
 
 ### The full audit, row by row
 
@@ -204,11 +238,36 @@ Four findings fall out of the table, and they are not all in the sceptics' favou
 
 **1. The list contains duplicate rows, and the duplicates are counted.** The auditor flags at least four: index 61 duplicates 31, index 63 duplicates 33, index 65 duplicates 35, and index 56 is *"a duplicate of number 14, plus one year"* — the same claimed event re-entered with the year advanced. Indices 66 and 37 both describe the same 7/7/2025 SU-BND departure. If a tally is built by counting rows, duplicated rows inflate it directly. This is a mechanical error, not an interpretive dispute, and it is the cleanest criticism on this page.
 
-**2. The single largest failure mode is the aircraft being in Egypt.** Row after row reads *"In Egypt," "Still in Egypt," "Cairo," "Yeppers egypt."* This is what produces the 60%-different-continent figure. It is consistent with the [SU-BTT flight log](/Planes/SU-BTT/overview), which shows the aircraft spending the overwhelming majority of 2025 flying 15-to-45-minute sectors around Cairo, Medina, Jeddah, Sharm el-Sheikh and El Arish, with only **three** trips to the United States all year.
+**2. The single largest failure mode the audit reports is the aircraft being in Egypt — and it is the part primary data supports least.** Row after row reads *"In Egypt," "Still in Egypt," "Cairo," "Yeppers egypt."* That column produces the 60%-different-continent figure. It is *plausible* on its face: the [SU-BTT flight log](/Planes/SU-BTT/overview) shows the aircraft spending the overwhelming majority of 2025 flying 15-to-45-minute sectors around Cairo, Medina, Jeddah, Sharm el-Sheikh and El Arish, with only **three** trips to the United States all year.
+
+But **"the jet is usually in Egypt" is a base rate, not a test of a date.** When the specific claimed days are pulled from the archives, the different-continent finding survives on **3 of the 29 rows primary data can decide**. On three others the aircraft is on the ground in the United States, at the field the sheet names, within **0.02 to 0.82 km** — while the audit has it in Egypt. The remaining 39 "Egypt" rows fall on dates no free archive can reach, so they stand unrefuted and untested at the same time.
 
 **3. But the September 2025 core survives.** This is the part sceptics tend to skip and it belongs on the record. The audit marks **row 40 (9/4/2025, Cairo→Paris→Minot→Provo) as ACCURATE** and **row 42 (9/13/2025, Provo→Goose Bay→Paris→Cairo) as ACCURATE**, and it confirms row 41's substance while correcting its origin — the 9/10 flight happened, but it went **Provo→Wilmington→Cairo**, not Paris→Lincoln→Wilmington→Cairo. It also marks **row 35 (5/23/2025, SU-BND lands in Provo) as ACCURATE.** The audit's own verdict on row 41 puts SU-BTT departing Provo on 10 September and reaching Cairo via Wilmington on 11 September.
 
-So the audit does not dissolve the case. It dissolves the **multi-year pattern** while leaving the **September window intact**. The claim that survives its own most hostile review is narrower and more specific: *two Egyptian-registered jets were at a small Utah airport in the days around the assassination, and one of them left that morning.* Everything about 2022, 2023 and most of 2024 does not survive.
+So the audit does not dissolve the case. It leaves the **September window fully intact**, and — once primary position data is brought to bear — it does **not** dissolve the multi-year pattern either. That second half was this site's earlier reading and it was too generous to the audit.
+
+**Primary ADS-B now puts these aircraft on the ground at, or rolling out of, the claimed American field on dates spread across all three years**, not only September 2025:
+
+| Date | Tail | Claimed field | Closest fix |
+|---|---|---|---|
+| 25 Feb 2023 | SU-BTT | Spirit of St. Louis (KSUS) | 2.22 km, on the surface |
+| 6 Apr 2023 | SU-BTT | Wilmington DE (KILG) | 1.63 km, on the surface |
+| 20 Apr 2023 | SU-BTT | Wilmington DE (KILG) | **0.56 km, on-ground fix** |
+| 3 May 2023 | SU-BND | St. Louis Downtown (KCPS) | 2.07 km |
+| 9 Feb 2024 | SU-BTT | Omaha (KOMA) | 0.31 km at 366 ft |
+| 14 Feb 2024 | SU-BTT | Wilmington DE (KILG) | 0.82 km, on the surface |
+| 29 Mar 2024 | SU-BTT | Wichita (KICT) | 1.83 km |
+| **3 Apr 2024** | SU-BTT | **Wichita (KICT)** | **1.43 km — departure roll** |
+| 19 Apr 2024 | SU-BND | Provo (KPVU) | **0.02 km, on-ground fix** |
+| 23 Apr 2024 | SU-BTT | Provo (KPVU) | **0.00 km, on-ground fix** |
+| 28 Apr 2024 | SU-BTT | Wilmington DE (KILG) | 1.56 km, on the surface |
+| 23 May 2025 | SU-BND | Provo (KPVU) | **0.03 km, on-ground fix** |
+| 20 Jul 2025 | SU-BTT | Omaha (KOMA) | 1.33 km at 591 ft |
+| 17 Aug 2025 | SU-BTT | Omaha (KOMA) | 0.50 km at 391 ft |
+
+The claim that survives its own most hostile review is therefore **wider** than this page previously said, not narrower: *Egyptian-registered government jets were repeatedly on the ground at the small American fields the sheet names, across 2023, 2024 and 2025, and two of them were at Provo in the days around the assassination with one leaving that morning.* **2022 does not survive** — not because it was refuted, but because no free archive reaches it.
+
+**And the limit has to be repeated right here, because this table is the most quotable thing on the page.** Every row above locates an **aircraft**. Not one of them puts Charlie Kirk, Erika Kirk or any person aboard. Provo and Lincoln are both Duncan Aviation fields and Wichita is a Falcon service centre — a jet on a maintenance ramp is what a maintenance visit looks like.
 
 **4. The auditor volunteers an innocent explanation for the strongest surviving row.** On row 35 — the accurate one — the note reads **"ACCURATE POSS BROKEN JET GROUNDED IN PROVO."** The person doing the debunking is the person suggesting the four-month SU-BND stay was an unserviceable aircraft. That is corroborated by the [SU-BND log](/Planes/SU-BND/overview), which shows the jet flying just twice in 113 days on the ground.
 
@@ -227,35 +286,90 @@ None of that undoes the duplicate-row finding or the continent finding, both of 
 
 The audit above is the most rigorous public test this claim has had. It is also, by its own admission, an X posting with **no stated methodology and no named archive** — it checks *routes* against somebody's flight-history screen. On **24 August 2026** every row of the reconstructed 85-row overlap register was checked a different way: against **raw ADS-B position traces** held by two independent free archives, on the claimed date and the day either side, measuring the aircraft's closest approach in kilometres to the claimed field. **This is the first time the sheet has been tested against position data rather than against another reading of a tracking website.** The per-row working is on the [overlap index](/Planes/following/overlap/overview); the archives and pulls are documented on [Flight Data Recovery](/Planes/Flight-Data-Recovery/overview).
 
-| Verdict from primary position data | Rows |
-|---|---|
-| **At the claimed airport** — the claimed aircraft really was at the claimed field | **24** |
-| **Elsewhere** — tracked that day, and somewhere else. **Refuted** | **12** |
-| Not heard — the archive covers the date and holds no trace of that airframe | 22 |
-| No archive coverage — no free archive reaches the date | 20 |
-| No aircraft named in the source row | 2 |
-| No date named — the five never-published rows | 5 |
+That 24 August run was itself re-checked on **26 August 2026**, this time by reading **every position
+fix in every recovered trace** rather than a summary of each day. It found the first run had refuted
+ten rows it should not have. Both tallies are below, because a correction that is quietly applied is
+not a correction.
 
-**Of the 36 rows that could be decided, 24 are corroborated and 12 are refuted.** Set that beside the audit's own headline: **66% inaccurate, 34% accurate or partially accurate, 60% on the wrong continent.** The two results point in opposite directions, and **they are not reconciled here.** They were produced by different methods against different archives, and where they disagree the disagreement is the finding. Both stand on this page.
+| Verdict from primary position data | 24 Aug pass | **Corrected 26 Aug** |
+|---|---|---|
+| **At the claimed field** — corroborated | 24 | **25** |
+| **Same metro, wrong field** — neither confirmed nor refuted | — | **1** |
+| **Elsewhere** — tracked that day, and somewhere else. **Refuted** | 12 | **3** |
+| Not heard — the archive was asked for the exact day and held nothing | 22 | **37** |
+| No archive coverage — no free archive reaches the date | 20 | **10** |
+| No aircraft named in the source row | 2 | **4** |
+| No date named — the five never-published rows | 5 | 5 |
+
+**Of the 29 rows that primary position data can decide, 25 are corroborated, 1 is
+same-metro-wrong-field and 3 are refuted.**
+
+**Nine of the twelve refutations this site published on 24 August have been retracted.** Six were
+scored against the **wrong calendar day** — a claim about 12 June was tested against the trace for
+11 June, and in each of the six the claim is physically compatible with the adjacent-day trace with
+hours to spare. One took its "closest approach" from the **first fix of the day**, in Paris, when the
+day's real minimum was 27.6 km on a descent into Wichita. Two were scored off the **shorter of two
+archives** while the longer archive showed the aircraft **climbing out of the very airport it was
+said to be 1,853 km from**. One refuted a two-leg claim whose first leg the trace confirms.
+
+Set the corrected result beside the audit's own headline: **66% inaccurate, 34% accurate or
+partially accurate, 60% on the wrong continent.** They still do not reconcile, and **they are not
+reconciled here** — they were produced by different methods against different archives. What has
+changed is that the gap is no longer symmetric. **Where both methods can reach the same row, primary
+position data supports the sheet on 25 rows and the audit on 3.**
 
 ### Where the two disagree, row by row
 
 Cross-tabulating the auditor's verdict against the position-data verdict on the same rows:
 
-| | Position data confirms | Position data refutes | Position data cannot decide |
-|---|---|---|---|
-| Auditor said **accurate** | 16 | **2** | 3 |
-| Auditor said **partially accurate** | 5 | **2** | 1 |
-| Auditor said **inaccurate** | **3** | 8 | 33 |
+| | Position data supports | Right metro, wrong field | Position data contradicts | Position data cannot decide |
+|---|---|---|---|---|
+| Auditor said **accurate** | **15** | **1** | **1** | 4 |
+| Auditor said **partially accurate** | **7** | 0 | **0** | 1 |
+| Auditor said **inaccurate** | **3** | 0 | **2** | 39 |
 
-**Twenty-nine of the thirty-six decidable rows agree. Seven do not.** Read the two disagreement columns before anything else:
+**Twenty-five of the twenty-nine decidable rows put the aircraft at the field the sheet names.** Read the columns before anything else:
 
-* **The audit's 44 "inaccurate" rows do not all hold.** Position data **confirms** only 8 of them as genuinely elsewhere, **overturns 3**, and **cannot reach 33** — because the free archives either hold no trace of that airframe on that date, or do not reach the date at all. The three overturned are **OWENS-021** (14 Feb 2024, SU-BTT at Wilmington), **OWENS-025** (19 Apr 2024, SU-BND on the ground at Provo, 0.05 km) and **OWENS-041** (10 Sep 2025, SU-BTT at Provo). On those three the sheet was right and the audit was wrong.
-* **And four rows the audit passed do not survive.** **OWENS-012** — claimed Wichita, 14 April 2023, marked *"Accurate 4/14–4/14"* by the auditor — is the sharpest of them. SU-BTT flew **Paris Charles de Gaulle to Topeka, Kansas** that day, finishing 10.98 km from Sunset Strip Airpark and **7,411 km from Wichita** at closest approach. **Right state, wrong city.** That is a misattribution, not an invention, and it is the primary-data anchor for the unresolved Topeka identifier question. **OWENS-024 and SITE-003** — both claimed as Wichita on 3 April 2024, marked *partially accurate* — put SU-BTT over **Boonville, Missouri** that morning and landing at **Wilmington, Delaware** (1.48 km) that afternoon: a real United States day, 1,853 km from the field the row names.
+* **The audit's 44 "inaccurate" rows almost entirely cannot be tested.** Primary position data
+  reaches **5** of them. It **confirms 2** as genuinely elsewhere and **overturns 3**. The other
+  **39 it cannot reach at all** — the free archives either hold no trace of that airframe on that
+  date, or do not reach the date. The three overturned are **OWENS-021** (14 Feb 2024, SU-BTT on
+  the surface at Wilmington, 0.82 km), **OWENS-025** (19 Apr 2024, SU-BND on the ground at Provo,
+  **0.02 km**) and **OWENS-041** (10 Sep 2025, SU-BTT on the ground at Provo, **0.03 km**). On those
+  three the sheet was right and the audit was wrong — and the third is the marquee row of the whole
+  case.
+* **Not one row the audit passed is contradicted by primary data.** Two that this site previously
+  reported as failures were themselves the failures:
+  * **OWENS-012** — claimed Wichita, 14 April 2023 — was published here as *"7,411 km from Wichita."*
+    That figure is the distance at the **first fix of the day, in Paris.** The day's actual minimum
+    is **27.6 km**: the airplanes.live trace runs twenty minutes longer than adsb.lol's and ends at
+    18:18:17 UTC on a **steady descent into the Wichita area at 5,050 ft, still closing.** Touchdown
+    is not in the trace. **Consistent, not proven — and not refuted.**
+  * **OWENS-024 and SITE-003** — claimed Wichita, 3 April 2024 — were published here as *"1,852.96 km
+    from KICT. Both archives agree."* Both archives do **not** agree: they hold different amounts of
+    that day. The airplanes.live trace **opens with SU-BTT climbing out of Wichita at 13:43:30 UTC,
+    1.4 km from KICT at 342 ft above the field**, then runs nonstop at FL410 to a landing at
+    Wilmington, Delaware. The adsb.lol trace does not start until 14:15 UTC, over Missouri, after the
+    aircraft had left Kansas. **The claim was correct and this site called it false.**
 
-**Seven refutations put the aircraft in Egypt** on the claimed date — OWENS-016, 028, 029, 030, 036, 052 and 055. Those are clean, and they are the position-data version of the auditor's *"In Egypt / Still in Egypt / Yeppers egypt"* column. The single largest failure mode the audit identified is real.
+**Only two refutations put the aircraft in Egypt on the claimed date, not seven.** The seven were
+OWENS-016, 028, 029, 030, 036, 052 and 055. **Six of those seven were scored against the wrong
+day** — the trace used is a short local Egyptian sector on the day *before or after* the claim, and
+in every one of the six the claim is physically compatible with it: the aircraft had between 30 and
+41 hours available against 11.5 to 14.3 hours of cruise needed. A claim about day D can only be
+refuted by day D. Those six now read **not tested**.
 
-**Four of the twelve refutations rest on the backup archive alone.** For OWENS-016, 029, 052 and 055 the primary free archive returns nothing at all; only the secondary community network holds the day. **Without the data-recovery work those four rows could not have been refuted by anyone.** The recovery earned its keep by **debunking**, which is the most credible possible use of it.
+What survives is **OWENS-050** (12 May 2023, SU-BND airborne out of Paris-Le Bourget and descending
+into Inshas Air Base, Cairo — never closer than 7,034 km to St. Louis, genuinely refuted) and
+**OWENS-036** (18 June 2025, SU-BTT), and OWENS-036 is **weaker than this site implied**: the entire
+day's holding is **five minutes of it**, 06:23 to 06:28 UTC at FL320 between Alexandria and El
+Alamein. That places the aircraft in Egypt that morning and leaves the rest of the day unobserved.
+
+**The recovery work still earned its keep, but not the way this page previously said.** It was
+credited here with *debunking* four rows on backup-archive data alone — OWENS-016, 029, 052 and 055.
+**All four of those refutations have been retracted.** What the recovery actually delivered is the
+opposite and larger result: reading the fuller archive **reversed three published refutations into
+confirmations and dissolved seven more into untested.**
 
 **And the duplicates are confirmed from the position data.** The auditor flagged index 61 duplicating 31, 63 duplicating 33, and 65 duplicating 35. All three pairs returned identical verdicts in this run — 35/65 both confirmed (SU-BND at Provo, 0.03 km, 23 May 2025), 31/61 and 33/63 both undecidable on the same claimed Wichita dates. **A duplicated row in a sheet whose headline is a count is a finding about the count**, and it is now checkable two independent ways.
 
@@ -263,11 +377,11 @@ Cross-tabulating the auditor's verdict against the position-data verdict on the 
 
 **It does not turn a confirmed aircraft into a confirmed overlap.** A verdict of *at the claimed airport* confirms **the aircraft half** of a pairing and nothing else. This data locates the aircraft. **It does not put Charlie Kirk or Erika Kirk anywhere**, and the Kirk half is exactly as weak as it was — thin for Charlie, close to empty for Erika, whose flight logs are [reported as erased](/Planes/Erika-Flight-Logs-Erased) and whose claimed locations still trace back to a `Notes` column reading *"Instagram confirms presence."*
 
-**It does not settle the counts, and the counts stay disputed on this page.** **73 / about 23**, **72**, **"70+"**, **68 / 29** — none of those is confirmed by this run and none is averaged into another. What the run does is move 36 individual rows from opinion to record. The other 49 remain exactly where they were.
+**It does not settle the counts, and the counts stay disputed on this page.** **73 / about 23**, **72**, **"70+"**, **68 / 29** — none of those is confirmed by this run and none is averaged into another. What the run does is move 29 individual rows from opinion to record. The other 56 remain exactly where they were.
 
-**And absence is still not proof.** The 22 *not heard* and 20 *no archive coverage* rows are holes. An empty archive response means the archive had nothing on that airframe that day — not that the aircraft was hidden, and not that it was absent. Neither side of this argument may claim them.
+**And absence is still not proof.** The 37 *not heard* and 10 *no archive coverage* rows are holes. An empty archive response means the archive had nothing on that airframe that day — not that the aircraft was hidden, and not that it was absent. **Neither side of this argument may claim them, and that cuts against the sheet as hard as it cuts against the audit.** The corrected 25-of-29 figure is a rate on the rows that can be tested, not a claim that 25 of the 73 overlaps happened.
 
-**Counterargument.** Twenty-four confirmed landings are twenty-four confirmed landings and nothing more. The innocent explanation for the strongest of them is the one the auditor volunteered himself: **Duncan Aviation has held the Egyptian Air Force maintenance account since 1999**, with its main plant at Lincoln and a facility at Provo, and *"possibly broken jet grounded in Provo"* remains the most economical reading of SU-BND's 113 days on the ground. Wichita is a Falcon service centre; Wilmington is a customs and fuel stop. A confirmed position at a maintenance field is evidence the aircraft was at a maintenance field.
+**Counterargument.** Twenty-five corroborated positions are twenty-five corroborated positions and nothing more. The innocent explanation for the strongest of them is the one the auditor volunteered himself: **Duncan Aviation has held the Egyptian Air Force maintenance account since 1999**, with its main plant at Lincoln and a facility at Provo, and *"possibly broken jet grounded in Provo"* remains the most economical reading of SU-BND's 113 days on the ground. Wichita is a Falcon service centre; Wilmington is a customs and fuel stop. A confirmed position at a maintenance field is evidence the aircraft was at a maintenance field.
 
 ## What the source sheet's own columns reveal about its method
 

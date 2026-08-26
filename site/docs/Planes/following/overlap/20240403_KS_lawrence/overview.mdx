@@ -164,12 +164,34 @@ More of the same discussion, grouped by research topic rather than by date, is o
 
 ## We checked this row against primary ADS-B data
 
-**Refuted.** Both free archives hold SU-BTT on 3 April 2024, they agree with each other, and every fix they hold is a long way from Wichita. **Closest approach to the claimed field: 1,852.96 km, at 15:54:45 UTC.** The day's 389 fixes begin over Missouri — 16.01 km from Jesse Viertel Memorial Airport, Boonville — and end **1.48 km from Wilmington Airport, Delaware**, with the aircraft descending across Maryland and Delaware on the way in.
+**Confirmed as a departure from Wichita.**
+
+:::danger[Corrected 26 August 2026 — and the correction proves this page's own body text right]
+
+This section previously read *"Refuted … closest approach to the claimed field: 1,852.96 km … both
+archives agree."* **They do not agree — they hold different amounts of that day.**
+
+The **airplanes.live** trace opens with SU-BTT **climbing out of Wichita at 13:43:30 UTC, 1.4 km
+from KICT at 342 ft above the field**, then runs nonstop at FL410 to a landing 1.1 km from
+Wilmington, Delaware at 16:05 UTC. The **adsb.lol** trace does not start until 14:15:16Z, already at
+FL410 over Missouri — after the aircraft had left Kansas. The 1,853 km figure was the closest
+approach of that shorter trace only.
+
+**This page's own body text already said the right thing:** *"the jet really did leave the state the
+morning he spoke."* The trace confirms it. The verdict line contradicted the page and has been
+corrected. See [the correction](/Planes/Flight-Data-Recovery/Overlap-Recovery).
+
+:::
+
+The day still ends **1.1 km from Wilmington Airport, Delaware**, with the aircraft descending across
+Maryland and Delaware on the way in. **A same-day pairing that begins at the claimed field and ends
+1,853 km away is a real fact about the day** — it is the departure that is confirmed, not a presence
+at Wichita while Kirk spoke in Lawrence.
 
 | Date | Tail | adsb.lol | airplanes.live | Heard | Closest approach to KICT |
 |---|---|---|---|---|---|
 | 2024-04-02 | SU-BTT | 404 | 404 | no — archives do not reach the date | not measurable |
-| 2024-04-03 | **SU-BTT** | 200 | 200 | **yes — both agree** | **1,852.96 km, 15:54:45 UTC** — Missouri to Delaware (389 fixes) |
+| 2024-04-03 | **SU-BTT** | 200 | 200 | **yes — but the two archives hold different amounts of the day** | **1.43 km at 13:43:30 UTC (airplanes.live, departure roll at KICT)**; 1,852.96 km is the minimum of the shorter adsb.lol trace, which begins over Missouri at 14:15:16Z |
 | 2024-04-04 | SU-BTT | 404 | 404 | no — archives cover the date | not measurable |
 
 **Method.** Both free ADS-B history archives — adsb.lol globe history and the airplanes.live mirror — were queried for the claimed tail on the claimed date and on the day either side, and every position fix was resolved to the nearest field in the OurAirports public-domain gazetteer. **Nearest-airport resolution is geometry, not a landing record**, which is why the distance in kilometres is published beside every result rather than a bare airport name.
@@ -184,7 +206,7 @@ More of the same discussion, grouped by research topic rather than by date, is o
 
 **Where this leaves the audit's verdict.** `overlaps.csv` records this row **partial**. Against primary position data it is **refuted** as a Wichita co-location. That is a correction to this site's own register and it is being made here rather than left implied — **stating our own refutations is what makes the twenty-four confirmations worth anything.**
 
-This row is one of **85 checked in a single run on 24 August 2026** — 24 confirmed at the claimed field, 12 refuted, 22 not heard, 20 with no archive coverage, 2 naming no aircraft, and 5 naming no date. The whole result is on [Overlap dates](/Planes/following/overlap/overview).
+This row is one of **85 checked against primary ADS-B, first on 24 August 2026 and again — fix by fix — on 26 August 2026**. The corrected result: **25 corroborated at the claimed field, 1 same-metro-wrong-field, 3 refuted**, 37 asked-and-empty, 10 with no archive coverage, 4 naming no aircraft, and 5 naming no date. The first pass reported 12 refutations; **9 were retracted** on the re-read — six had been scored against the wrong calendar day, and two against the shorter of two archives while the longer one put the aircraft at the claimed field. [The correction](/Planes/Flight-Data-Recovery/Overlap-Recovery). The whole result is on [Overlap dates](/Planes/following/overlap/overview).
 
 **Files.** This row's extract: `site/docs/Planes/following/overlap/20240403_KS_lawrence/data/adsb_verification.json`. The full 85-row run, including the archive control probes: `site/docs/Planes/following/apis/public_open_source/data/overlap_verification/overlap_verification.json`, generated 2026-08-24T17:36:21.953Z. How the archives were recovered and what a 403 does and does not mean is on [Flight data recovery](/Planes/Flight-Data-Recovery/overview).
 
@@ -209,7 +231,7 @@ This row is one of **85 checked in a single run on 24 August 2026** — 24 confi
 
 ## Where this page fits
 
-This page exists to hold a same-day pairing that runs the wrong way: [Charlie Kirk](/Planes/following/speaking/20240403_lawrence) spoke at the University of Kansas while [SU-BTT](/Planes/SU-BTT/overview) left [Wichita](/Planes/following/Wichita_KICT_2022-11-13_to_2025-08-03/overview) at 8:43 that morning, and the archived trace shows its day ending 1.48 km from Wilmington, Delaware, 1,852 km from the claimed field — a date that matches and a direction that does not, kept on the record by the [overlap index](/Planes/following/overlap/overview) and [the 73 overlaps](/Planes/following/73_overlaps). Kansas is one of the five states holding up the clustering argument, so a row that matches by date and fails by geography is worth more to a reader than a dozen confirmations — and it is the check that ought to be applied to the [foreign-intelligence claims](/Theories/Foreign_Intelligence_Claims), the [Israel thread](/Israel_Main_Suspect/overview) and the [motive analysis](/Motive/overview) as well. For where the same aircraft had been for the five days before, read [29 March 2024 — Wichita](/Planes/following/overlap/20240329_KS_wichita_owens_023/overview): confirmed at 2.27 km, flown in from Beauvais, with the paid audit agreeing.
+This page exists to hold a same-day pairing that runs the wrong way: [Charlie Kirk](/Planes/following/speaking/20240403_lawrence) spoke at the University of Kansas while [SU-BTT](/Planes/SU-BTT/overview) left [Wichita](/Planes/following/Wichita_KICT_2022-11-13_to_2025-08-03/overview) at 8:43 that morning, and the archived trace shows it **departing Wichita at 1.4 km and 342 ft** before ending 1.1 km from Wilmington, Delaware — a date that matches, a departure that is confirmed, and a destination that is 1,853 km the wrong way. (This page read *refuted, 1,852 km* until 26 August 2026; that figure came from the shorter of two archives, one that starts after the jet had left Kansas.) kept on the record by the [overlap index](/Planes/following/overlap/overview) and [the 73 overlaps](/Planes/following/73_overlaps). Kansas is one of the five states holding up the clustering argument, so a row that matches by date and fails by geography is worth more to a reader than a dozen confirmations — and it is the check that ought to be applied to the [foreign-intelligence claims](/Theories/Foreign_Intelligence_Claims), the [Israel thread](/Israel_Main_Suspect/overview) and the [motive analysis](/Motive/overview) as well. For where the same aircraft had been for the five days before, read [29 March 2024 — Wichita](/Planes/following/overlap/20240329_KS_wichita_owens_023/overview): confirmed at 2.27 km, flown in from Beauvais, with the paid audit agreeing.
 
 ## Related Areas
 

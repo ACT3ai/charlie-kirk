@@ -54,23 +54,36 @@ Everything else is on the [location pages](/Planes/following/overview), where it
 
 **This is the first time the sheet has been tested against position data rather than against another reading of a tracking website.** Every published audit of it so far — including the one this directory's verdict column comes from — was one person reading a flight-tracking site and comparing it to another person's reading of a flight-tracking site. This run went to the archives.
 
-| Verdict | Rows | What it means |
-|---|---|---|
-| **Confirmed at the claimed field** | **24** | The claimed aircraft really was at the claimed field, inside 15 km, on the claimed date or the day either side |
-| **Refuted** | **12** | The aircraft was tracked that day and was somewhere else |
-| Not heard | **22** | The archives cover the date and hold no trace for that airframe. **Not a refutation** |
-| No archive coverage | **20** | No free archive reaches the date. Says nothing either way |
-| Names no aircraft | **2** | The source row has an empty tail cell. Nothing to query |
-| Names no date | **5** | The five `UNPUB` rows. Uncheckable by anyone, including their author |
-| **Total** | **85** | |
+| Verdict | 24 Aug pass | **Corrected 26 Aug** | What it means |
+|---|---|---|---|
+| **Corroborated at the claimed field** | 24 | **25** | The claimed aircraft really was at, arriving at, or departing the claimed field on the claimed date |
+| **Same metro, wrong field** | — | **1** | Inside the sheet's own 50-mile tolerance, outside a same-airport test. Neither confirmed nor refuted |
+| **Contradicted** | 12 | **3** | The aircraft was tracked that day and was somewhere else |
+| Not heard | 22 | **37** | The archives were asked for the exact day and held nothing. **Not a refutation** |
+| No archive coverage | 20 | **10** | No free archive reaches the date. Says nothing either way |
+| Names no aircraft | 2 | **4** | The source row has an empty tail cell. Nothing to query |
+| Names no date | 5 | 5 | The five `UNPUB` rows. Uncheckable by anyone, including their author |
+| **Total** | 85 | **85** | |
 
-**Of the 36 rows that could be decided, 24 are corroborated and 12 refuted.** Published audits of this spreadsheet reported roughly **two rows in three wrong** — "66% of the location claims are wrong, 60% on the wrong continent." **Against primary position data it is the other way round: two in three of the decidable rows hold up.** Both statements can be true at once, and the reason they can is worth stating: the audits and this run are not measuring the same 85 rows. Forty-two of them cannot be decided from free archives at all, and the rows a free archive can reach are weighted towards the later, better-covered dates.
+**The 24 / 12 line above is the 24 August pass and is superseded.** A fix-by-fix re-read on
+26 August retracts **9 of the 12 refutations** and downgrades one confirmation. The corrected
+verdicts are in the row beneath each old one, and the working is on
+[Overlap Recovery](/Planes/Flight-Data-Recovery/Overlap-Recovery).
+
+
+**Of the 29 rows that primary position data can decide, 25 are corroborated, 1 is same-metro-wrong-field and 3 are refuted.** Published audits of this spreadsheet reported roughly **two rows in three wrong** — "66% of the location claims are wrong, 60% on the wrong continent." **Against primary position data it is not the other way round by a little, it is the other way round by a lot: 27 of 29 decidable rows hold up.**
+
+The gap is mostly about what each side could test, and that has to be said plainly. Of the **44 rows the X audit marked inaccurate, primary ADS-B can reach only 5**. On those 5 the audit is **wrong on 3 and right on 2**. The other 39 rest entirely on subscription archives and an unpublished method, and nobody outside can check them. **Where the audit can be checked, it is wrong more often than it is right** — but 39 of its 44 negative verdicts remain untested rather than refuted, and this page does not pretend otherwise.
+
+Of the **29 rows the audit marked accurate or partially accurate, 23 are supported by primary position data and 1 is contradicted.**
 
 **A confirmed aircraft is NOT a confirmed overlap, and this belongs beside the number rather than under it.** The archives locate an **airframe**. They do not put Charlie Kirk or Erika Kirk anywhere, they do not establish that anyone aboard knew where either of them was, and they establish nothing about tasking in any direction. **An overlap needs both halves.** The Kirk half is exactly as it was before this run: **still weak for Charlie, still close to empty for Erika** — of 139 catalogued Turning Point appearances, exactly one places Erika Kirk at an event before 10 September 2025 with a firm date, and her flight logs are [reported as erased](/Planes/Erika-Flight-Logs-Erased). **Twenty-four confirmed aircraft positions measured against an itinerary nobody has published is twenty-four confirmed aircraft positions.**
 
 ### The recovery earned its keep by debunking
 
-**Four of the twelve refutations rest on the backup network alone.** adsb.lol holds nothing for [OWENS-016](./20230612_UT_provo_owens_016/overview), [OWENS-029](./20240817_NE_omaha_lincoln_owens_029/overview), [OWENS-052](./20230625_DE_wilmington_owens_052/overview) or [OWENS-055](./20240415_NE_omaha_owens_055/overview) on their claimed days; the airplanes.live mirror does. **Without the recovery work those four rows could not have been refuted at all** — they would have come back "not heard" and stayed undecided.
+~~**Four of the twelve refutations rest on the backup network alone.**~~ **All four of those refutations have been withdrawn.** [OWENS-016](./20230612_UT_provo_owens_016/overview), [OWENS-029](./20240817_NE_omaha_lincoln_owens_029/overview), [OWENS-052](./20230625_DE_wilmington_owens_052/overview) and [OWENS-055](./20240415_NE_omaha_owens_055/overview) were each scored against a **short Egyptian sector on the adjacent day**, not on the claimed day, and in every one the claim is physically compatible with the trace — 30 to 41 hours available against 11.5 to 14.3 hours of cruise needed. **A claim about day D can only be refuted by day D.** All four now read *not tested*.
+
+**What the backup network actually delivered is the reverse, and it is larger.** Reading the fuller archive **turned three published refutations into confirmations** — including SU-BTT climbing out of Wichita on 3 April 2024, 1.4 km from the field this site had said it was 1,853 km from. The recovery work earned its keep by **correcting this investigation**, not by debunking the sheet.
 
 That is the most credible possible use of a data-recovery effort: **it was built to find flights that had gone missing, and the first thing it did was knock four claims out of the count.** Seven of the twelve refutations put the aircraft in Egypt on the claimed date; those are clean.
 

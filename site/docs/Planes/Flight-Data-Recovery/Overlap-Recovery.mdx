@@ -2,7 +2,7 @@
 displayed_sidebar: docs
 title: "Overlap Recovery — Every Alleged Following-Flight, Tested"
 sidebar_label: "Overlap Recovery"
-description: "The 73-overlap spreadsheet claims an Egyptian government jet was in a specific American city on a specific date. All 69 testable aircraft-and-date pairs were pulled against both free daily ADS-B archives. Twenty-three now have a primary track: twenty-one put the aircraft in the alleged country, two put it on the wrong continent. Thirty-nine have nothing in the window at all."
+description: "The 73-overlap spreadsheet claims an Egyptian government jet was in a specific American city on a specific date. Every row was pulled from the raw ADS-B archives and read fix by fix. Of the 29 rows primary position data can decide, 27 hold up and 2 do not. An earlier pass on this site published 12 refutations; 9 of them do not survive the raw files, including one where the aircraft was climbing out of the airport it was said to be 1,853 km from."
 keywords:
   - Charlie Kirk
   - Erika Kirk
@@ -35,6 +35,17 @@ date**, **this Egyptian government jet** was at **this American city**, where a 
 those rows have never had a primary flight record behind them — they rest on a screenshot of a
 tracking site, or on somebody's summary of one.
 
+:::danger[The number on this page was corrected on 26 August 2026]
+
+This site published **24 confirmed · 12 refuted** for two days. Reading every position fix in every
+recovered trace shows **9 of those 12 refutations were wrong** — six were scored against the wrong
+day, and two were scored off the shorter of two archives while the longer one showed the aircraft
+**at the airport it was said to be 1,853 km from**. The corrected result is **25 at the claimed field ·
+1 right metro · 3 refuted** of the 29 rows primary data can decide. The old figures are kept below so the
+correction is visible rather than quietly edited away.
+
+:::
+
 Every row that can be reduced to an aircraft and a date was pulled directly from the raw ADS-B
 archives. **69 distinct (aircraft, date) pairs**, each one asked of **both** free daily archives —
 `globe.airplanes.live` and `adsb.lol` — on the alleged day **and the UTC day either side**, because
@@ -53,46 +64,114 @@ Two aircraft account for the whole set: **[SU-BTT](/Planes/SU-BTT/overview)** (D
 hex `0101D3`) appears in 53 of the 69 pairs, and **[SU-BND](/Planes/SU-BND/overview)** (Gulfstream,
 hex `01003E`) in the other 16.
 
-## A second, stricter run has since been done — and it does not contradict this one
+## Two later runs have since been done — and the third one is the number to quote
 
-**Read this before quoting any number above.** The pass on this page was run first and asks a
-deliberately loose question. A later pass asks a much harder one, over more rows, and reports a
-different-looking result. Both are on disk, both are true, and the difference between them is
-method, not disagreement.
+**Read this before quoting any number above.** Three passes have now been made over this
+spreadsheet, each one asking a harder question of more data than the last. The third pass read
+**every position fix in every recovered trace**, and it found that the second pass — the
+**24 confirmed · 12 refuted** run that this site published for two days — was wrong in a specific,
+enumerable way. **Nine of its twelve refutations do not survive contact with the raw files.**
 
-| | This page's pass | The later pass |
+| | Pass 1 (this page) | Pass 2 (published 24 Aug) | **Pass 3 (26 Aug — quote this)** |
+|---|---|---|---|
+| Rows covered | **69** (aircraft, date) pairs | **all 85** rows of `overlaps.csv` | **all 85** rows |
+| Sources | the two free daily archives | the same two **plus** the ADS-B Exchange monthly sample | the same three **plus** the adsb.lol GitHub backup, read **fix by fix** |
+| The test | **same country** as alleged | closest approach to the named field | closest approach **over every fix in every source**, with **altitude above the field** and on-ground flags |
+| Rows it could decide | 23 | 36 | **29** |
+| Verdict | 21 consistent · 2 inconsistent | 24 confirmed · **12 refuted** | **25 at the claimed field · 1 right metro · 3 refuted** |
+| Share of decidable rows contradicted | 9% | 33% | **7%** |
+
+### Why pass 2 refuted nine rows it should not have
+
+Pass 2 did not have a bad rule. It read too little of each day, and it read the wrong day. Five
+defects were found, each one traced to named rows:
+
+| Defect | What it did | Rows affected |
 |---|---|---|
-| Rows covered | **69** (aircraft, date) pairs | **all 85** rows of `overlaps.csv` |
-| Days queried | the alleged day and either side | the alleged day and either side |
-| Sources | the two free daily archives | the same two **plus** the ADS-B Exchange monthly sample |
-| The test | **same country** as alleged | **closest approach in kilometres to the field the row names** |
-| Rows it could decide | 23 | **36** |
-| Verdict | 21 consistent · 2 inconsistent | **24 confirmed · 12 refuted** |
+| **Refuted on the wrong date** | A claim about 12 June was scored against the trace for 11 June. A claim about day D can only be refuted by day D. | **6 rows** — OWENS-016, 028, 029, 030, 052, 055 |
+| **Closest approach read off the shorter archive** | airplanes.live is routinely the larger archive (787 fixes vs 505; 2,518 vs 1,399). Where only it covers the decisive part of the day, reading adsb.lol alone reverses the answer. | OWENS-012, OWENS-024, SITE-003 |
+| **"Both archives agree" asserted where they do not** | Published on two rows where the two archives hold materially different amounts of the day. | OWENS-012, OWENS-024 |
+| **Closest approach taken from one fix** | OWENS-012 was scored 7,411 km — the distance at the *first fix of the day*, in Paris. The day's actual minimum is **27.6 km**, on a descent into Wichita. | OWENS-012 |
+| **Half a row refuted as a whole row** | OWENS-015 claims "St. Louis then Goose Bay". The trace **confirms the St. Louis departure** and is silent on Goose Bay. It was scored as refuted. | OWENS-015 |
 
-The later run finds more decidable rows because it can reach dates this one could not, and it
-refutes more of them because "the aircraft was in the United States" is a far weaker claim to
-satisfy than "the aircraft was at Wichita". **Neither number is wrong. Quote the 24/12 run**, which
-is recorded in
-`site/docs/Planes/following/apis/public_open_source/data/overlap_verification/overlap_verification.json`
-and written up row by row under [Overlap dates](/Planes/following/overlap/overview).
+### The single hardest reversal
 
-### And the result is binary, which settles a separate argument entirely
+**OWENS-024 / SITE-003 — SU-BTT, 3 April 2024, claimed Wichita (KICT).** This site published
+*"Refuted. Its closest approach to KICT was 1,852.96 km. Both archives agree."*
+
+The airplanes.live trace for that day **opens with the aircraft climbing out of Wichita** —
+13:43:30 UTC, **1.4 km from KICT at 342 ft above the field** — and runs nonstop at FL410 to a
+landing at Wilmington, Delaware at 16:05 UTC. The adsb.lol trace does not begin until 14:15 UTC,
+already over Missouri, *after the aircraft had left Kansas*. The published 1,853 km figure was the
+closest approach of the shorter trace only.
+
+**The claim was correct and this site called it false.** It is now scored
+`CONFIRMS_DEPARTURE_FROM_CLAIMED_FIELD`.
+
+### The corrected result
+
+| Verdict against recovered primary ADS-B | Rows |
+|---|---:|
+| On-ground fix within 3 km of the claimed field, on the claimed day | **10** |
+| Departure roll out of the claimed field | **2** |
+| Approach or departure at the claimed field, no on-ground fix held | **11** |
+| Low over the claimed metro, no landing at the claimed field | **2** |
+| Descending toward the claimed field, coverage ends before touchdown | **1** |
+| One leg of a two-leg claim confirmed | **1** |
+| **Supported by same-day primary position data** | **27** |
+| Contradicted by same-day primary position data | **1** |
+| Weakly contradicted — five minutes of coverage | **1** |
+| **Contradicted** | **2** |
+| Archive asked for the exact day and held nothing | 30 |
+| No coverage — 2022 retention floor, or never queried | 17 |
+| Row names no date, or no tail | 9 |
+| **Primary data says nothing either way** | **56** |
+
+**Of the 29 rows primary position data can decide, 25 are corroborated, 1 is same-metro-wrong-field and 3 are refuted.**
+
+The two that survive are worth naming, because a check that only ever confirms is not a check:
+
+* **OWENS-050 — SU-BND, 12 May 2023, claimed St. Louis.** The same-day trace is airborne out of
+  Paris-Le Bourget at 07:25Z and ends descending into Inshas Air Base, Cairo at 11:15Z. Never
+  closer than **7,034 km** to St. Louis. **Genuinely refuted, and now by position data rather than
+  by an auditor's assertion.**
+* **OWENS-036 — SU-BTT, 18 June 2025, claimed Omaha.** Weaker than this site implied. The **whole
+  day's holding is five minutes of it** — 06:23 to 06:28 UTC, at FL320 between Alexandria and El
+  Alamein, Egypt. That places the aircraft in Egypt that morning and leaves the rest of the day
+  unobserved. It is not a day's track.
+
+Re-run it yourself:
+`python3 site/docs/Planes/following/apis/public_open_source/data/analysis/2026-08-26_nearby_airports/code/corrected_tally.py`
+
+### And the result is still binary, which settles a separate argument entirely
 
 Two tests are argued in public about this spreadsheet: the sceptics' **strict** rule — same ICAO
 airport, plus or minus three days — and the sheet's own looser stated tolerance of **50 to 100
-miles**. Which rule you adopt has been treated as deciding the outcome. We banded every decidable
-row by measured distance to the field it names:
+miles**. Which rule you adopt has been treated as deciding the outcome. Every decidable row was
+banded by measured distance to the field it names:
 
 | Band | Rows |
 |---|---|
-| within 15 km of the claimed field | **24** |
-| 15–80 km — same metro, wrong field | **0** |
-| 80–1,500 km — same region | **0** |
-| more than 1,500 km away | **12** |
+| within 15 km of the claimed field | **25** |
+| 15–80 km — same metro, wrong field | **1** (OWENS-010, landed at KSUS, 24 km from the claimed KSTL) |
+| 80–1,500 km — same region | **1** (OWENS-012, coverage ends 27.6 km out on a descent) |
+| more than 1,500 km away | **2** |
 
-**Not one row falls in between.** Every decidable row is either at the field it names or on another
-continent. **The strict test and the loose test therefore return exactly the same answer on this
-evidence**, and the argument about which to use decides nothing at all.
+**The strict test and the loose test return the same answer on this evidence**, and the argument
+about which to use decides almost nothing.
+
+### One confirmation was downgraded too — this is not a one-way correction
+
+**OWENS-010 — SU-BTT, 1 April 2023, claimed St. Louis Lambert (KSTL).** Pass 2 scored it
+AT_CLAIMED_AIRPORT on a 0.48 km closest approach. That 0.48 km happened at **3,357 ft above the
+field** — an overflight. The trace then continues away from Lambert and ends on final approach to a
+**different airport**, 2.2 km from **KSUS (Spirit of St. Louis)** at 600 ft. Four independent
+sources agree fix for fix. The aircraft reached the St. Louis metro; it did not land at the field
+the row names. **Distance without altitude is not a landing record.**
+
+**SITE-001 — 2 April 2023** was scored as confirmed on a note dated 1 April. **No trace exists for
+2 April 2023 for either tail.** Both archives were asked and held nothing. That row is now
+**not tested**.
 
 **None of which locates a person.** A row scored "at the claimed field" confirms the **aircraft**
 half of the pairing. The Kirk half is unchanged, and for Erika Kirk it is close to empty — see

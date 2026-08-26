@@ -413,14 +413,14 @@ Files: `SU-BND_2025-09-10_adsb-lol_trace_full.json` and `SU-BND_2025-09-10_airpl
 
 `site/docs/Planes/following/overlaps.csv` holds 85 claimed pairings. **Nineteen of them name SU-BND.** Each was checked against both archives on the claimed date and the day either side, measuring closest approach in kilometres to the claimed field. Two of the nineteen — SITE-001 and SITE-004 — are confirmed on the *SU-BTT* half of a joint claim and have no decisive SU-BND track of their own, so they are not counted for this tail.
 
-| Verdict | Rows | What it means |
-|---|---|---|
-| **AT_CLAIMED_AIRPORT** | **7** | The aircraft really was at the claimed field. **Confirmed.** |
-| **ELSEWHERE** | **5** | Tracked that day, and somewhere else. **Refuted.** |
-| NOT_HEARD | 5 | The archive covers the date; no trace for this airframe. **Not a refutation.** |
-| Decided on the other tail only | 2 | SITE-001, SITE-004 |
+| Verdict | 24 Aug pass | **Corrected 26 Aug** | What it means |
+|---|---|---|---|
+| **At or departing the claimed field** | 7 | **7** | The aircraft really was at the claimed field. **Confirmed.** |
+| **ELSEWHERE** | 5 | **1** | Tracked that day, and somewhere else. **Refuted.** |
+| NOT_HEARD | 5 | **8** | The archive was asked for the exact day and held nothing. **Not a refutation.** |
+| Decided on the other tail only | 2 | 2 | SITE-001, SITE-004 |
 
-**Of the 12 rows that could be decided on this tail's own data, 7 are corroborated and 5 refuted.** The confirmations, with distances:
+**Of the 8 rows that could be decided on this tail's own data, 7 are corroborated and 1 refuted.** The confirmations, with distances:
 
 | Overlap ID | Date | Claimed | Closest approach | On ground? |
 |---|---|---|---|---|
@@ -434,15 +434,41 @@ The two 0.03 km and 0.05 km results are the closest ground fixes anywhere in thi
 
 **The refutations:**
 
-* **OWENS-050 — claimed St Louis, Missouri, 12 May 2023.** The track runs **Paris-Le Bourget to Epitalion Airfield, Greece.** Not in the United States.
-* **OWENS-015 — claimed Goose Bay, 9 May 2023.** The aircraft is over Illinois in the morning and ends the day 39.98 km from an aerodrome in Quebec; closest approach to Goose Bay: **3,057 km.**
-* **OWENS-016 — claimed Provo, Utah, 12 June 2023.** On 11 June the aircraft is at **Inshas Air Base and Capital International, New Cairo — in Egypt.**
-* **OWENS-052 — claimed Wilmington, Delaware, 25 June 2023.** On 24 June it is at **Cairo West Air Base and Helwan Air Base — in Egypt.**
-* **OWENS-030 — claimed Provo, Utah, 8 December 2024.** On 7 December it is at **Helwan Air Base and Abu Rish Valley — in Egypt.**
+* **OWENS-050 — claimed St Louis, Missouri, 12 May 2023. HOLDS — the one surviving refutation on this tail.** The same-day trace is airborne out of **Paris-Le Bourget at 07:25Z** and ends **descending into Inshas Air Base, Cairo at 11:15Z**, never closer than **7,034 km** to St. Louis. (The 24 August pass resolved the last fix it read to Epitalion Airfield, Greece — a mid-route nearest-airport hit; the fix-by-fix read carries the track through to Cairo. Either way the aircraft is not in the United States.) The **9 May** trace separately shows it leaving St. Louis Downtown for Europe, which is what puts it out of position on the 12th.
+* ~~**OWENS-015 — claimed Goose Bay, 9 May 2023.**~~ **RETRACTED.** The same-day trace departs **St. Louis Downtown (KCPS) at 20:02Z** — confirming the row's first leg — and ends over Quebec, north-eastbound, 1,063 km from Goose Bay, with the aircraft next seen over Ireland. **Half confirmed, half untested.**
+* ~~**OWENS-016 — claimed Provo, Utah, 12 June 2023.**~~ **RETRACTED — wrong day.** The Egyptian sectors cited are on **11 June**, ending 09:16Z, 11,330 km away, with 38.7 h available against 14.2 h needed.
+* ~~**OWENS-052 — claimed Wilmington, Delaware, 25 June 2023.**~~ **RETRACTED — wrong day.** The Egyptian sectors cited are on **24 June**, ending 08:27Z, 9,228 km away, with 39.5 h available against 11.5 h needed.
+* ~~**OWENS-030 — claimed Provo, Utah, 8 December 2024.**~~ **RETRACTED — wrong day.** The Egyptian sectors cited are on **7 December**, ending 17:48Z, 11,431 km away, with 30.2 h available against 14.3 h needed.
 
-**Two of those five rest on the backup network alone.** adsb.lol returns nothing for OWENS-016 and OWENS-052; only airplanes.live holds the day. **Without the recovery work those two rows could not have been refuted at all** — the recovery effort earned its keep here by debunking, which is the most credible possible use of it.
+:::danger[Four of those five refutations were withdrawn on 26 August 2026]
 
-**The 5 NOT_HEARD rows are undecided, not favourable.** NOT_HEARD means the archive covers the date and no volunteer receiver logged this airframe. Over Egypt, over the Atlantic, or anywhere with thin coverage that is completely ordinary. **An absence in the data is not proof of a covert leg, and it is not proof the claim was false either.**
+This page previously credited the recovery work with **debunking** OWENS-016 and OWENS-052 on
+backup-archive data alone. **Both of those refutations have been retracted**, along with two more:
+
+* **OWENS-016 (Provo, 12 Jun 2023), OWENS-052 (Wilmington, 25 Jun 2023), OWENS-030 (Provo,
+  8 Dec 2024)** — each was scored against a **Cairo-area local sector on the day before the claim**,
+  not on the claimed day. The gaps are 30 to 40 hours available against 11.5 to 14.3 hours of cruise
+  needed, so the claim is physically compatible with the trace in all three. **A claim about day D can
+  only be refuted by day D.** All three now read **not tested**.
+* **OWENS-015 (St. Louis then Goose Bay, 9 May 2023)** — the same-day trace **departs KCPS St. Louis
+  Downtown at 20:02Z**, which *confirms the St. Louis half of the row*, and ends over La Tuque, Quebec
+  at 22:10Z heading north-east, 1,063 km from Goose Bay. The next trace picks the aircraft up over
+  Ireland at 04:18Z. A Goose Bay fuel stop fits that gap exactly and is neither shown nor excluded.
+  **Half confirmed, half untested — not refuted.**
+
+**Only OWENS-050 survives**, and it survives strongly: the same-day trace is airborne out of
+Paris-Le Bourget at 07:25Z and ends descending into **Inshas Air Base, Cairo** at 11:15Z, never closer
+than **7,034 km** to St. Louis. The 9 May trace separately shows the aircraft leaving St. Louis
+Downtown for Europe. That one is genuinely refuted, and it is now backed by primary position data
+rather than by an auditor's assertion.
+
+**What the recovery work actually delivered on this tail is the opposite of what this page said.**
+It did not earn its keep by debunking. It earned it by showing that four published debunks rested on
+the wrong calendar day. Working: [Overlap Recovery](/Planes/Flight-Data-Recovery/Overlap-Recovery).
+
+:::
+
+**The NOT_HEARD rows are undecided, not favourable.** NOT_HEARD means the archive covers the date and no volunteer receiver logged this airframe. Over Egypt, over the Atlantic, or anywhere with thin coverage that is completely ordinary. **An absence in the data is not proof of a covert leg, and it is not proof the claim was false either.**
 
 Working file: `site/docs/Planes/following/apis/public_open_source/data/overlap_verification/overlap_verification.json`.
 
@@ -454,7 +480,7 @@ Working file: `site/docs/Planes/following/apis/public_open_source/data/overlap_v
 
 For the **2022 United States transit**, the innocent explanation is the ordinary one: a state-operated aircraft crossing the Atlantic. An overflight of Indiana at 41,000 feet is not an event.
 
-And the counterargument runs both ways here, which is why it is worth stating: **five refuted rows out of nineteen is a real error rate** in the source document, and a reader who takes the seven confirmations as vindication has to take the five refutations at the same strength.
+And the counterargument runs both ways here, which is why it is worth stating. This page previously read **five refuted rows out of nineteen** and called that a real error rate in the source document. **Four of those five were withdrawn on 26 August 2026** — three had been scored against the day before the claim, and one was a two-leg row whose first leg the trace confirms. **One refutation out of eight decidable rows is what the primary data actually supports.** The symmetry still holds and still binds: a reader who takes the seven confirmations as vindication has to take OWENS-050 at the same strength, and has to accept that **eight of nineteen rows on this tail can be decided at all.**
 
 ### What none of this establishes
 

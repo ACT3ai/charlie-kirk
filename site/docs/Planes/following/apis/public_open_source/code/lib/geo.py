@@ -279,6 +279,11 @@ def _gazetteer():
 MANUAL_PLACES = {
     ("SEOUL", "", "SOUTH KOREA"): (37.5665, 126.9780, "Seoul, Republic of Korea (city hall)"),
     ("TOKYO", "", "JAPAN"): (35.6895, 139.6917, "Tokyo, Japan (metropolitan government)"),
+    # University Park is the Penn State main campus. The US Census carries it
+    # inside State College borough rather than as its own place, so the census
+    # file cannot answer it. Coordinate is the Old Main / campus centre.
+    ("UNIVERSITY PARK", "PA", "USA"): (40.7982, -77.8599,
+                                       "University Park (Penn State main campus), State College PA"),
 }
 
 

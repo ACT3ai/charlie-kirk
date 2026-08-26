@@ -106,6 +106,89 @@ volunteer hardware.**
 
 ---
 
+## The count: how much was recovered, and how much was actually removed
+
+The question this page gets asked most is a number one. *How many records were deleted, and how many
+did you get back?* Both halves now have an answer, and the two halves do not match the shape of the
+question.
+
+### What was recovered
+
+| | |
+|---|---|
+| **Aircraft-days of primary position data recovered** | **1,831** |
+| Across | **15 case aircraft** |
+| Trace files on disk | **3,619** |
+| Volume of raw position data held | **308 MB** |
+| Independent sources it came from | **4** |
+| Control-aircraft days pulled alongside, to keep the test honest | **404** |
+
+By source, and this is worth reading, because three of the four routes did not exist in this
+investigation a week before they were used:
+
+| Source | Trace files | What it is |
+|---|---:|---|
+| `globe.airplanes.live` | **1,906** | Volunteer network. Routinely the **larger** of the two daily archives — 787 fixes against adsb.lol's 505 on one contested day, 2,518 against 1,399 on another |
+| `adsb.lol` | **1,504** | Volunteer network, ODbL |
+| `samples.adsbexchange.com` | **207** | Free monthly full-day sample, 1st of each month, back to 2016. **The only free route into 2022** |
+| adsb.lol **GitHub backup** | **2** | The whole archive mirrored to GitHub Releases, one release per UTC day — it serves every date the live API refuses |
+
+By year, which shows exactly where the record thins out:
+
+| Year | Trace files recovered |
+|---|---:|
+| 2022 | **34** — monthly samples only |
+| 2023 | 807 |
+| 2024 | 1,211 |
+| 2025 | **1,351** |
+| 2026 | 216 |
+
+### What was actually removed
+
+**Zero flight records have been shown to be removed from anywhere.** That is the finding of this
+page and the controls are what make it sayable. It is not a comfortable answer and it is not the
+answer this investigation started with — three separate "removals" were published on this site
+before an unrelated airliner was asked the same question and failed in exactly the same place.
+
+There is one number on the other side of the ledger, and it is large:
+
+| | |
+|---|---|
+| **Days an archive was asked about and held nothing** | **15,721** |
+
+**That is a coverage fact, not a deletion count, and the distinction is the whole page.** An
+asked-and-empty day means a volunteer receiver network heard nothing. Transponder off, parked at a
+home stand in Cairo with no receiver within range, or a claimed date that was simply wrong — all
+three produce the identical record. **A record that was never captured was never deleted.**
+
+Each of those 15,721 days is written to disk as its own `.miss.json.meta.json` file, with the exact
+URL, the HTTP status and the retrieval time, precisely so that *"we asked and the archive was
+empty"* can never be confused with *"nobody has looked."* Those are different facts and only the
+first one belongs near a published sentence.
+
+### The one thing that genuinely changed
+
+Not a flight record. **N102DZ's FAA registration** was re-issued on **16 October 2025** — thirty-six
+days after the assassination — with a further registry action on **23 December 2025**. It is the only
+case-central aircraft whose registration moved after 10 September 2025. It is documented below.
+
+### And the correction that came out of the recovered data
+
+The recovered files did overturn something — but it was **this site's own analysis**, not a tracking
+company's archive. A first pass over the 85-row overlap register reported **12 refutations**. Reading
+every position fix in every one of the 3,619 recovered trace files retracts **9 of the 12**: six had
+been scored against the wrong calendar day, and two had been scored off the shorter of two archives
+while the longer archive showed the aircraft **climbing out of the very airport it was said to be
+1,853 km from**. The corrected result is **25 corroborated, 1 same-metro and 3 refuted** of the 29 rows
+primary data can decide. Full working on
+[Overlap Recovery](/Planes/Flight-Data-Recovery/Overlap-Recovery).
+
+**That is what the recovery was for.** Not to prove a deletion — it did not find one — but to replace
+somebody's reading of a website with a position report, and then to correct the readings that turned
+out to be wrong, in whichever direction they turned out to be wrong.
+
+---
+
 ## How any of this can be said at all: the control test
 
 **Nothing on this page may be read as a removal unless an aircraft with no connection to this case

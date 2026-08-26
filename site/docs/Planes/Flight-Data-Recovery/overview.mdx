@@ -255,19 +255,36 @@ date and the day either side, resolving each position to the nearest airport in 
 OurAirports gazetteer with a **15 km** radius. This is the fuller and stricter run, and it is the one
 to quote.
 
-| Verdict | Rows | What it means |
-|---|---|---|
-| **AT_CLAIMED_AIRPORT** | **24** | The claimed aircraft really was at the claimed field. |
-| **ELSEWHERE** | **12** | Tracked that day, and somewhere else. **Refuted.** |
-| NOT_HEARD | 22 | The archive covers the date; no trace for that airframe. **Not a refutation.** |
-| NO_ARCHIVE_COVERAGE | 20 | No free archive reaches the date. Says nothing either way. |
-| NO_TAIL_CLAIMED | 2 | The source row names no aircraft. |
-| NO_DATE_CLAIMED | 5 | The five `UNPUB-` rows. Uncheckable by anyone, including their author. |
+| Verdict | 24 Aug pass | **Corrected 26 Aug** | What it means |
+|---|---|---|---|
+| **AT_CLAIMED_AIRPORT** | 24 | **25** | The claimed aircraft really was at the claimed field. |
+| **SAME_METRO_WRONG_FIELD** | — | **1** | Inside the sheet's own 50-mile tolerance, outside a same-airport test. Neither. |
+| **ELSEWHERE** | 12 | **3** | Tracked that day, and somewhere else. **Refuted.** |
+| NOT_HEARD | 22 | **37** | The archive was asked and held nothing. **Not a refutation.** |
+| NO_ARCHIVE_COVERAGE | 20 | **10** | No free archive reaches the date. Says nothing either way. |
+| NO_TAIL_CLAIMED | 2 | 4 | The source row names no aircraft. |
+| NO_DATE_CLAIMED | 5 | 5 | The five `UNPUB-` rows. Uncheckable by anyone, including their author. |
 
-**Of the 36 rows that could be decided, 24 are corroborated and 12 refuted.** Published audits of
-this spreadsheet said roughly two rows in three were wrong. Against primary position data it is the
-other way round — and this is the first time the sheet has been tested against position data rather
-than against somebody else's reading of a website.
+**The 24 / 12 line above is the 24 August pass and is superseded.** A fix-by-fix re-read on
+26 August retracts **9 of the 12 refutations** and downgrades one confirmation. The corrected
+verdicts are in the row beneath each old one, and the working is on
+[Overlap Recovery](/Planes/Flight-Data-Recovery/Overlap-Recovery).
+
+
+**Of the 29 rows that primary position data can decide, 25 are corroborated, 1 is same-metro-wrong-field and 3 are refuted.** Published audits of
+this spreadsheet said roughly two rows in three were wrong. Against primary position data the
+wrong-place rate on decidable rows is **10%** — and this is the first time the sheet has been tested
+against position data rather than against somebody else's reading of a website.
+
+**This number replaces one this site published.** The tally in the table above — 24 corroborated,
+**12 refuted** — came from a pass that read each day too narrowly. Re-reading every position fix in
+every recovered trace retracts **9 of the 12 refutations**: six were scored against the wrong
+calendar day, one took its closest approach from the *first fix of the day* in Paris when the day's
+actual minimum was 27.6 km on a descent into Wichita, and two were scored off the shorter of two
+archives while the longer one showed the aircraft **on the runway at the field it was said to be
+1,853 km from**. One confirmation was downgraded in the same pass — OWENS-010 landed at Spirit of
+St. Louis, 24 km from the Lambert field the row names. **The correction runs both ways and both
+directions are published.** See [Overlap Recovery](/Planes/Flight-Data-Recovery/Overlap-Recovery).
 
 **Now the limit, and it is as important as the number. AT_CLAIMED_AIRPORT confirms the *aircraft*
 half of the pairing. It does not put a Kirk anywhere.** An overlap needs both halves. The Kirk half
