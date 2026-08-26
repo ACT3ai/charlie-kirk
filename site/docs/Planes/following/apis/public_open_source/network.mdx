@@ -1,0 +1,304 @@
+---
+displayed_sidebar: docs
+title: "The Volunteer Network — The Open ADS-B System That Runs Parallel To The Paid Trackers"
+sidebar_label: "The Volunteer Network"
+description: "How the community ADS-B system actually collects, shares and archives flight data; why it shows aircraft the commercial trackers are asked to hide; and the geographic sweep this investigation built on top of it to ask what was near every Charlie Kirk event, rather than asking about tails somebody already named."
+keywords:
+  - Charlie Kirk
+  - ADS-B
+  - adsb.lol
+  - airplanes.live
+  - ADS-B Exchange
+  - readsb
+  - LADD
+  - Privacy ICAO Address
+  - open data
+  - flight tracking
+  - volunteer network
+image: "/img/docusaurus-social-card.jpg"
+hide_table_of_contents: true
+---
+
+{/* Full-bleed marker: activates the site-wide full-width + text-wrap
+    layout in custom.css. Scoped via CSS :has(). */}
+<div className="ck-full-bleed" />
+
+<a href="/Planes/following/apis/overview" style={{display:'inline-block', marginBottom:'1rem',
+padding:'0.35rem 0.9rem', background:'#1a73e8', color:'#fff',
+borderRadius:'4px', textDecoration:'none', fontSize:'0.9rem'}}>← Getting The Data</a>
+
+# The Volunteer Network
+
+Two flight-tracking systems watch the same sky. One is commercial — Flightradar24, FlightAware,
+ADS-B Exchange since its sale — and it is the one every screenshot in this case came from. The
+other is a **volunteer network of private receivers**, owned by nobody, feeding open databases
+under an open licence.
+
+They see the same radio signal. **They do not publish the same thing**, they do not answer to the
+same people, and one of them keeps an archive the other has no obligation to keep.
+
+This page is about the second system: how it collects, how the networks share with each other, what
+it will show you that the paid trackers will not, where its archives live — and the sweep this
+investigation built on top of it to stop asking *"was this aircraft here"* and start asking
+**"what was here"**.
+
+## How a position gets from an aircraft to this page
+
+Nothing in this chain is owned by an aviation company. That is the whole point of it.
+
+| Step | What happens | Who runs it |
+|---|---|---|
+| 1 | An aircraft's transponder broadcasts its identity, position and altitude on **1090 MHz**, twice a second, unencrypted, to nobody in particular. This is **ADS-B Out**, mandatory in nearly all controlled US airspace since 1 January 2020. | The aircraft |
+| 2 | A **software-defined radio dongle** on somebody's roof — a $25 RTL-SDR and a quarter-wave antenna — receives it. | A hobbyist |
+| 3 | **`dump1090`** or its modern successor **`readsb`** decodes the raw pulses into aircraft records. Both are open source. | Open-source maintainers |
+| 4 | A feeder client forwards those records to one or more **aggregators**. Most feeders send to several at once. | The same hobbyist |
+| 5 | The aggregator merges thousands of receivers, runs **MLAT** — multilateration, timing the same signal at four or more stations to locate aircraft that broadcast no position of their own — and serves a live map. | adsb.lol, airplanes.live, adsb.fi, ADS-B Exchange |
+| 6 | At the end of the UTC day the aggregator writes each aircraft's whole track to a **`trace_full_<hex>.json`** file and keeps it. | The aggregator |
+| 7 | That archive is **mirrored off-site**, in adsb.lol's case to public GitHub Releases under the **Open Database Licence**. | adsb.lol |
+| 8 | We download it, filter it and publish what it says. | This investigation |
+
+**Step 7 is the step that matters most to this case**, and it exists only because of step 3. The
+decoders are open source and the data is open-licensed, so nothing stops a third party from holding
+a complete copy. **A commercial tracker's history is a product; a volunteer network's history is a
+public file.** When a record disappears from the first, the second is where you go looking — and
+[three of the four routes this investigation uses to recover erased flight data](/Planes/Flight-Data-Recovery/overview)
+exist because of that one licensing decision.
+
+## Why there is more than one network, and what happened in January 2023
+
+For years the unfiltered-tracking world was essentially one site. **ADS-B Exchange** was built by
+volunteers on the explicit promise that it would never suppress an aircraft — not a billionaire's,
+not a government's, not a police department's.
+
+In **January 2023 it was sold to JETNET**, a business-aviation data company backed by the private
+equity firm Silversmith Capital Partners, for a figure reported at around $20 million.
+([JETNET press release](https://www.jetnet.com/resources/press-releases/jetnet-acquires-ads-b-exchange),
+[Aviation International News](https://www.ainonline.com/aviation-news/business-aviation/2023-01-25/jetnet-buys-ads-b-exchange),
+[RTL-SDR.com](https://www.rtl-sdr.com/ads-b-exchange-acquired-by-private-firm-jetnet/))
+
+The volunteers who had built and fed it had not been consulted and were not paid. A large number of
+them **pulled their receivers and pointed them somewhere else**, and the somewhere else had to be
+built in a hurry. **adsb.fi**, **theairtraffic.com** and — the one that grew the largest —
+**[airplanes.live](https://airplanes.live/history-and-moving-forward/)** all date from that moment.
+**adsb.lol** was already running and absorbed feeders too.
+
+Three consequences follow, and every one of them shapes what this investigation can and cannot do:
+
+* **There are now several independent archives of the same sky.** adsb.lol and airplanes.live are
+  not mirrors of each other. They are **separate networks of separate receivers**, so an aircraft
+  present in both was heard twice, by two different sets of antennas, and that is the strongest
+  form of confirmation a trace can have. It is also why this repo pulls both and publishes the
+  disagreements.
+* **ADS-B Exchange's own deep history went behind a paywall.** Its `globe_history` endpoint returns
+  **403** without a subscription. What survives free is a **monthly sample** — one complete day, the
+  first of each month, back to 2016 — and that sample is the **only free route into 2022 at all**.
+* **Coverage before roughly November 2023 is thin.** The replacement networks were new. An aircraft
+  missing from a 2022 or early-2023 query may simply have been over a part of the country where the
+  new network had no receivers yet. **That is a fact about the network, not about the aircraft**, and
+  it is the single easiest mistake to make with this data.
+
+## The part the paid trackers will not do
+
+This is the practical reason an investigation like this one belongs on the open track, and it is not
+a small effect.
+
+The FAA runs two programmes that let an aircraft owner disappear from public view:
+
+* **LADD — Limiting Aircraft Data Displayed.** The owner asks the FAA to suppress the tail from the
+  **FAA's own data feed**, which is the feed the large commercial trackers license and blend with
+  their receiver data. LADD does not touch the radio broadcast at all: the aircraft keeps
+  transmitting its real identity in the clear. ([FAA](https://www.faa.gov/air_traffic/technology/equipadsb/privacy),
+  [NBAA](https://nbaa.org/aircraft-operations/security/privacy/limiting-aircraft-data-displayed-ladd/))
+* **PIA — Privacy ICAO Address.** A stronger measure: the aircraft is issued a **temporary ICAO
+  address not linked to its tail number** and broadcasts that instead. This one does change what
+  goes out over the air, so it defeats the volunteer networks as well — an aircraft on PIA appears as
+  a real track belonging to nobody.
+
+**The commercial trackers honour LADD. The volunteer networks do not**, because they take no FAA
+feed and are under no obligation to. That is the founding principle ADS-B Exchange was built on and
+the one its successors kept.
+
+The size of that gap is measurable in this investigation's own data. Sweeping **10 September 2025**
+— the day of the assassination — the open archive put **141 notable aircraft on the ground** inside
+the two event circles. **Most of them were flagged `LADD` in the aircraft database**: business jets
+at Provo and Salt Lake City whose owners had asked to be left off the public displays, sitting there
+in the open archive with tail number, type and operator attached.
+
+**Any research that starts at a commercial tracker starts with those aircraft already removed** —
+and it will never know which ones were taken out, because the removal is silent. This is the
+strongest single argument for running the open pass first, and it is why
+[this section's charter](/Planes/following/apis/overview) says the free pass **always runs first**.
+
+## Where the archives actually are
+
+Four free routes, all in use, none needing an account or a payment. The detail — endpoints, gotchas,
+retrieval dates and the control tests — is on
+[Open Flight Data](/Planes/following/apis/public_open_source/knowledge).
+
+| Route | What it is | Reach | Shape |
+|---|---|---|---|
+| **globe.airplanes.live/globe_history** | The airplanes.live network's own daily archive | ~Nov 2023 → today, throughout | One aircraft, one day |
+| **adsb.lol/globe_history** | The adsb.lol network's daily archive | 2023 → today, with two dead bands | One aircraft, one day |
+| **github.com/adsblol/globe_history_YYYY** | adsb.lol's **entire database**, mirrored to GitHub Releases, ODbL, one ~2–5 GB tar per UTC day | 2023 → today, including the dead bands | **The whole sky, one day** |
+| **samples.adsbexchange.com/traces** | ADS-B Exchange's free monthly sample | 1st of each month, back to 2016 | One aircraft, one sampled day |
+
+The third row is different in kind from the other three, and that difference is what the rest of this
+page is about. The first, second and fourth all answer **"where was this aircraft"** and need a hex
+code before you can ask. The GitHub mirror holds **every aircraft the network heard that day** —
+roughly **74,000 to 95,000 airframes** — so it can answer a question none of the others can.
+
+## The geographic sweep
+
+Everything this investigation had pulled from the open archives before 26 August 2026 was a
+**per-tail** question: *was SU-BTT at Provo on 10 September?* That question can only ever confirm or
+fail to confirm an aircraft **somebody had already named**. It holds about **9% of the aircraft-days
+the speaking-event windows need**, and it is structurally incapable of finding an aircraft nobody
+thought to look for. A
+[recent hunt for overlaps at airports near the events](/Planes/Flight-Data-Recovery/overview)
+came back empty for exactly that reason: coverage, not effort, was the ceiling.
+
+The sweep turns the question inside out:
+
+> **What was within 50 miles of this city on this day — whoever it turns out to be?**
+
+Code: `apis/public_open_source/code/geo_sweep.py`, with the target builder in `code/lib/targets.py`.
+No dependencies, Python 3.
+
+**How it works.** Each sourced US speaking event in `tpusa_events.csv` becomes a **circle**: the US
+Census centroid of the event city, **50 miles** in radius, which contains every airport within 50
+miles of that city by construction. Each event is widened to **±1 day** so an arrival the evening
+before and a departure the morning after are both inside the window — a UTC day boundary falls in
+the middle of the American evening, so this is not optional. That produces **187 event-days across
+278 UTC dates**. For each date the whole day's tar is **streamed and never stored**: `curl` pipes it
+into Python, each aircraft is decompressed in memory, and a byte pre-filter discards the ~92% that
+were never in the right degree square before any JSON is parsed.
+
+**What lands on disk.** A CSV row for **every aircraft that entered any circle** — that is the
+coverage record, and it is the part that makes an absence mean anything. The full track is kept only
+for aircraft that were **on the ground** inside an event circle and were foreign-registered,
+unregistered, military or PIA, plus any tail this repo already tracks. Every day gets a
+`_sweep.meta.json` recording the release tag, the asset URLs, the HTTP result, the byte count and
+the UTC time of the pull. **Nothing overwrites a previous sweep** — a re-sweep lands beside the
+first, because the diff between two pulls of one URL on two dates is how this repo proves something
+stopped being retrievable.
+
+**The control cities are swept on the same days, in the same run, by the same code.** Des Moines,
+Chattanooga, Spokane, Albuquerque, Syracuse and Shreveport have no connection to this case.
+"Foreign-registered jets were within 50 miles of the event" means **nothing** until you know how many
+were within 50 miles of Des Moines that day. This investigation has already had to
+[retract one published finding](/Planes/Flight-Data-Recovery/overview) for skipping a control test,
+and the control is built into the sweep rather than bolted on afterwards so it cannot be skipped
+again.
+
+## What the sweep found on the day itself
+
+**10 September 2025.** The archive held **74,405 aircraft** that UTC day. **1,113** of them entered
+the 50-mile circle around Orem. Working purely from geography — **no tail numbers, no hex codes, no
+prior list** — the sweep recovered every aircraft this investigation already knew about:
+
+| Aircraft | Type | On the ground | Nearest field | UTC window |
+|---|---|---|---|---|
+| **[SU-BTT](/Planes/SU-BTT/overview)** | Falcon 7X | yes | **KPVU**, 0.8 mi | 13:07:53 – 13:27:34 |
+| **[SU-BND](/Planes/SU-BND/overview)** | Gulfstream IV | yes | **KPVU**, 0.8 mi | 16:05:35 – 20:29:38 |
+| [N102DZ](/Planes/N102DZ/overview) | Gulfstream V | yes | KSLC, 1.1 mi | 15:00:51 – 22:18:44 |
+| [N888KG](/Planes/N888KG/overview) | Challenger 300 | yes | KPVU, 0.2 mi | 19:06:07 – 21:07:54 |
+| [N872RA](/Planes/N872RA/overview) | Hawker 400 | yes | KPVU, 0.2 mi | 22:25:35 – 23:32:34 |
+| [N560TW](/Planes/N560TW/overview) | Citation Excel | yes | KPVU, 0.7 mi | 15:54:12 – 16:36:42 |
+| [N40JD](/Planes/N40JD/overview) | Premier I | yes | KPVU, 0.7 mi | 20:18:12 – 21:22:18 |
+| [N59906](/Planes/N59906/overview) | Navajo | yes | KPVU, 0.1 mi | 15:08:45 – 18:08:35 |
+| [N1098L](/Planes/N1098L/overview) | Global Express | **no — airborne** | KPVU, 8.4 mi | 14:58:21 – 19:02:25 |
+
+**This is a validation result, not a new discovery, and it should be read as one.** Every row above
+was already on this site, pulled tail-by-tail from the two daily archives on 24 August 2026. The
+sweep reached the same aircraft by a completely different road, and the timings match the previously
+published figures to the second — SU-BTT's first ground fix at **13:07:53 UTC**, SU-BND's at
+**16:05:35 UTC**, matching the
+[September 10 flight timeline](/Planes/Sept10-Flight-Timeline) exactly.
+
+**What is new is the denominator.** The old method could say "SU-BND was at Provo". The sweep can say
+SU-BND was at Provo **and so were 1,112 other aircraft, and here is every one of them**, which is the
+only basis on which anybody can argue about whether two Egyptian jets on a Utah ramp is remarkable.
+
+Three things in that 1,113 could not have been found by asking about known tails at all:
+
+* **Aircraft with no registration in the database**, appearing only as a raw hex address.
+* **Aircraft broadcasting a non-ICAO address** — the `~`-prefixed records that are TIS-B or ADS-R
+  rebroadcasts rather than a real airframe address.
+* **The LADD-flagged business jets** described above, which a commercial tracker would have silently
+  removed.
+
+## What this system cannot tell you
+
+None of these limits is a technicality, and none of them may be dropped when a result from this
+sweep is quoted anywhere else on this site.
+
+* **A trace proves presence. It never proves purpose, and it never proves occupancy.** The sweep can
+  put an airframe on a ramp. It cannot put a person on it, and **no public record establishes who was
+  aboard any aircraft in this case, or who tasked any of them.**
+* **A circle is not an airport and a position is not a landing.** Every row carries the distance in
+  miles to the nearest field. Reading a nearest-field label as a destination is exactly the mistake
+  that produced the Provo-versus-Dugway correction on this site.
+* **An empty day is a coverage fact, not an absence.** A swept day with no hits means the archive was
+  **asked** and held nothing. Transponder off, outside receiver coverage, and a wrong claimed date
+  all look identical from here — and a volunteer network's coverage is wherever volunteers happen to
+  live.
+* **Ground coverage is the weakest coverage there is.** An aircraft on a ramp is transmitting from
+  ground level behind buildings. Some fields are heard well, some are barely heard at all, and the
+  difference is antenna geometry rather than anything about the aircraft.
+* **2022 cannot be swept.** There is **no daily archive on GitHub before 2023**. The following-planes
+  claim starts in 2022, and for that year the only free source is the monthly sample — one day in
+  thirty, which can place an aircraft somewhere but can never support a rate.
+* **PIA defeats it.** An aircraft on a Privacy ICAO Address is in the archive as a real track with no
+  identity attached. It is not hidden; it is anonymous, which is different and harder.
+* **31 event rows are not swept at all.** Two name only a month rather than a date, five have no
+  usable city, and 28 of the 2022 rows fall below the archive floor. They are listed by name in
+  `data/geo_sweep/targets.json` rather than quietly dropped.
+
+## Do it yourself
+
+Every command below is free, needs no account and no key, and can be run by any reader with a
+terminal. That is the test this section exists to pass.
+
+```bash
+# One aircraft, one day, straight from a volunteer network
+curl -s https://globe.airplanes.live/globe_history/2025/09/10/traces/d3/trace_full_0101d3.json | gunzip | head -c 400
+
+# The same day from the second, independent network
+curl -s https://adsb.lol/globe_history/2025/09/10/traces/d3/trace_full_0101d3.json | gunzip | head -c 400
+
+# The whole sky for one UTC day, streamed and filtered, nothing stored
+TAG=v2025.09.10-planes-readsb-prod-0
+curl -sL https://github.com/adsblol/globe_history_2025/releases/download/$TAG/$TAG.tar.a{a,b} \
+  | tar -xf - --include '*trace_full_0101d3.json' -O | gunzip
+
+# This investigation's sweep
+cd site/docs/Planes/following/apis/public_open_source/code
+python3 geo_sweep.py --plan                    # what it would sweep, in priority order
+python3 geo_sweep.py --run --date 2025-09-10   # one day
+python3 geo_sweep.py --run --jobs 8            # the whole target set, resumable
+python3 geo_sweep.py --report                  # event circles vs control circles
+```
+
+**One gotcha worth stating plainly, because it costs an afternoon:** the files inside the GitHub
+tarballs are **gzip-compressed despite ending in `.json`**. Pipe them through `gunzip` or you will
+conclude the archive is corrupt.
+
+## Related Areas
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [What it costs to own and fly these aircraft](/Planes/Aircraft-Costs/overview)
+* [The claim that Erika Kirk's flight logs were erased](/Planes/Erika-Flight-Logs-Erased)
+* [How the surveillance camera evidence was handled](/cameras/overview)
+
+</div>
+<div>
+
+* [Recovering flight records that were taken down](/Planes/Flight-Data-Recovery/overview)
+* [Government records requests we have and have not filed](/Planes/following/apis/government/knowledge)
+* [Where the censorship of this investigation shows up](/Censorship/overview)
+
+</div>
+</div>

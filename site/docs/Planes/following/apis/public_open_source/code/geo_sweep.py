@@ -116,6 +116,11 @@ def load_fleet_hexes():
 
 FLEET_HEX = load_fleet_hexes()
 
+# US military aircraft carry a fiscal-year serial ("07-7189", "94-7315"), not an
+# N-number. Treating those as "foreign registration" is exactly the kind of
+# quiet mislabel that turns a routine C-17 at Peterson SFB into a finding.
+US_MIL_SERIAL = __import__("re").compile(r"^\d{2}-\d{3,5}$")
+
 GOV_WORDS = ("AIR FORCE", "ARMY", "NAVY", "MARINE CORPS", "COAST GUARD",
              "DEPARTMENT OF", "UNITED STATES OF AMERICA", "GOVERNMENT",
              "STATE OF", "FEDERAL", "CUSTOMS", "BORDER PROTECTION",
@@ -123,9 +128,15 @@ GOV_WORDS = ("AIR FORCE", "ARMY", "NAVY", "MARINE CORPS", "COAST GUARD",
 
 
 def flag_aircraft(d):
-    """Why this aircraft is worth storing in full. Returns a list of reasons;
-    an empty list means CSV row only. The reasons are published as-is so a
-    reader can see exactly what the filter did and disagree with it."""
+    """Everything notable about this aircraft, as a list of reason strings.
+
+    This is a DESCRIPTION, not a verdict. The reasons are published verbatim in
+    the CSV so a reader can see exactly what the filter noticed and disagree
+    with any of it. `dbflag:LADD` in particular is very common and means only
+    that the owner has asked the FAA to keep the tail off the commercial
+    displays -- which is a finding about the tracking industry, not about the
+    aircraft.
+    """
     reasons = []
     hexid = (d.get("icao") or "").lower().lstrip("~")
     reg = (d.get("r") or "").strip()
@@ -138,6 +149,8 @@ def flag_aircraft(d):
         reasons.append("non_icao_address")       # TIS-B / ADS-R, not a real airframe address
     if not reg:
         reasons.append("no_registration")
+    elif US_MIL_SERIAL.match(reg):
+        reasons.append("us_military_serial")
     elif not reg.upper().startswith("N"):
         reasons.append("non_us_registration")
     for bit, name in DB_FLAGS.items():
@@ -146,6 +159,32 @@ def flag_aircraft(d):
     if any(w in own for w in GOV_WORDS):
         reasons.append("government_operator_string")
     return reasons
+
+
+# Storing a trace and noticing an aircraft are two different decisions. A day
+# holds ~1,400 notable aircraft across all circles; keeping every one of their
+# traces would add gigabytes to a repo an automated job pushes every few
+# minutes. So the CSV records ALL of them -- that is the coverage evidence --
+# and only these get the full track kept:
+STORE_REASONS = ("tracked_fleet:", "non_us_registration", "no_registration",
+                 "non_icao_address", "dbflag:military", "dbflag:PIA")
+
+
+def store_worthy(reasons, hits):
+    """Keep the whole trace only for a foreign, unregistered, military or PIA
+    aircraft that was ON THE GROUND inside an EVENT circle -- plus any tail
+    this repo already tracks, wherever it turns up.
+
+    THE GROUND TEST IS THE POINT. Most foreign registrations inside a 50-mile
+    circle are airliners at 35,000 ft on a great-circle route; a Westjet 737
+    over Utah is not "at" Orem in any sense the following-planes claim means.
+    An aircraft that reported itself on the ground was on somebody's ramp.
+    """
+    if any(r.startswith("tracked_fleet:") for r in reasons):
+        return True
+    if not any(r.startswith(p) for r in reasons for p in STORE_REASONS):
+        return False
+    return any(h["circle"]["kind"] == "event" and h["ground"] for h in hits)
 
 
 # --------------------------------------------------------------------------
@@ -379,7 +418,7 @@ def sweep_date(date_iso, circles, outdir, prefilter=True, timeout=30, verbose=Tr
                     "nearest_field": field or "",
                     "nearest_field_mi": fdist if fdist is not None else "",
                 })
-            if reasons:
+            if store_worthy(reasons, got):
                 keep[d.get("icao")] = b
         tf.close()
     finally:
@@ -412,6 +451,35 @@ def sweep_date(date_iso, circles, outdir, prefilter=True, timeout=30, verbose=Tr
     return hits, meta
 
 
+def _worker(job):
+    """One UTC day, in its own process.
+
+    Processes rather than threads on purpose: the work is gzip and JSON over
+    ~20 GB of decompressed trace per day, and Python threads serialise the JSON
+    half on the GIL -- five threads measured no faster than one. Separate
+    processes use the cores AND overlap the five downloads.
+    """
+    i, total, d, circles, prefilter = job
+    ev = ", ".join(f"{c['city']},{c['state']}" for c in circles if c["kind"] == "event")
+    head = f"[{i}/{total}] {d}  {ev or '(controls only)'}"
+    try:
+        hits, m = sweep_date(d, circles, os.path.join(OUT_ROOT, d), prefilter=prefilter)
+    except Exception as e:
+        return f"{head}\n    ERROR {type(e).__name__}: {e}"
+    write_day(d, hits, m)
+    if m["status"] != "SWEPT":
+        return f"{head}\n    {m['status']}"
+    gnd = sorted({h["reg"] or h["hex"] for h in hits
+                  if h["flagged"] and h["circle_kind"] == "event" and h["on_ground_in_circle"]})
+    out = (f"{head}\n    {m['aircraft_in_archive']} aircraft in archive, "
+           f"{m['distinct_aircraft_in_circles']} in circles, "
+           f"{m['flagged_aircraft_stored']} traces kept, {m['seconds']}s")
+    if gnd:
+        out += ("\n    notable, on the ground in an event circle: "
+                + ", ".join(gnd[:20]) + (f" ... +{len(gnd) - 20}" if len(gnd) > 20 else ""))
+    return out
+
+
 HITS_FIELDS = ["sweep_date", "circle_key", "circle_kind", "city", "state", "event_date",
                "offset_days", "who", "hex", "reg", "type", "own_op", "year", "db_flags",
                "flag_reasons", "flagged", "points_in_circle", "first_utc", "last_utc",
@@ -427,10 +495,14 @@ def write_day(date_iso, hits, meta):
         mp = os.path.join(outdir, f"_sweep.{utcnow()[:19].replace(':', '')}.meta.json")
     with open(mp, "w") as fh:
         json.dump(meta, fh, indent=2)
-    hp = os.path.join(outdir, "hits.csv")
+    # gzipped: ~7,800 rows a day across 278 days is 400 MB raw and 40 MB
+    # compressed, in a repo an automated job pushes constantly. gzip is
+    # lossless -- `gunzip -c hits.csv.gz` returns the exact bytes -- and every
+    # reader in this directory opens either form transparently.
+    hp = os.path.join(outdir, "hits.csv.gz")
     if os.path.exists(hp):
-        hp = os.path.join(outdir, f"hits.{utcnow()[:19].replace(':', '')}.csv")
-    with open(hp, "w", newline="") as fh:
+        hp = os.path.join(outdir, f"hits.{utcnow()[:19].replace(':', '')}.csv.gz")
+    with gzip.open(hp, "wt", newline="") as fh:
         w = csv.DictWriter(fh, fieldnames=HITS_FIELDS)
         w.writeheader()
         for h in sorted(hits, key=lambda x: (not x["flagged"], x["circle_key"], x["hex"])):
@@ -440,6 +512,18 @@ def write_day(date_iso, hits, meta):
 
 def already_swept(date_iso):
     return os.path.exists(os.path.join(OUT_ROOT, date_iso, "_sweep.meta.json"))
+
+
+def open_hits(date_iso):
+    """`hits.csv` and `hits.csv.gz` are the SAME EVIDENCE in two containers.
+    Sweeps before 26 Aug 2026 wrote the plain form and are left exactly as they
+    are -- nothing that is already evidence gets rewritten to save space."""
+    d = os.path.join(OUT_ROOT, date_iso)
+    for name in ("hits.csv.gz", "hits.csv"):
+        p = os.path.join(d, name)
+        if os.path.exists(p):
+            return gzip.open(p, "rt", newline="") if p.endswith(".gz") else open(p, newline="")
+    return None
 
 
 # --------------------------------------------------------------------------
@@ -458,6 +542,10 @@ def main():
     ap.add_argument("--no-prefilter", action="store_true",
                     help="parse every aircraft; slow, used to verify the pre-filter")
     ap.add_argument("--repull", action="store_true", help="re-sweep dates already on disk")
+    ap.add_argument("--jobs", type=int, default=1,
+                    help="sweep this many UTC dates at once. The work is roughly "
+                         "half wire and half CPU, so 3-6 is the useful range on a "
+                         "laptop; more than that just starves the download.")
     args = ap.parse_args()
 
     by_date, meta = build_targets(args.radius, args.window, controls=not args.no_controls)
@@ -511,27 +599,17 @@ def main():
             print(f"  ... and {len(order) - 40} more")
         return
 
-    for i, d in enumerate(order, 1):
-        circles = by_date[d]
-        ev = ", ".join(f"{c['city']},{c['state']}" for c in circles if c["kind"] == "event")
-        print(f"[{i}/{len(order)}] {d}  {ev or '(controls only)'}", flush=True)
-        try:
-            hits, m = sweep_date(d, circles, os.path.join(OUT_ROOT, d),
-                                 prefilter=not args.no_prefilter)
-        except Exception as e:
-            print(f"    ERROR {type(e).__name__}: {e}", flush=True)
-            continue
-        write_day(d, hits, m)
-        if m["status"] != "SWEPT":
-            print(f"    {m['status']}", flush=True)
-            continue
-        fl = sorted({h["reg"] or h["hex"] for h in hits if h["flagged"]})
-        print(f"    {m['aircraft_in_archive']} aircraft in archive, "
-              f"{m['distinct_aircraft_in_circles']} in circles, "
-              f"{m['flagged_aircraft_stored']} flagged, {m['seconds']}s", flush=True)
-        if fl:
-            print("    flagged: " + ", ".join(fl[:25])
-                  + (f" ... +{len(fl) - 25}" if len(fl) > 25 else ""), flush=True)
+    jobs = [(i, len(order), d, by_date[d], not args.no_prefilter)
+            for i, d in enumerate(order, 1)]
+    if args.jobs > 1:
+        from concurrent.futures import ProcessPoolExecutor, as_completed
+        with ProcessPoolExecutor(max_workers=args.jobs) as ex:
+            futs = [ex.submit(_worker, j) for j in jobs]
+            for f in as_completed(futs):        # report as they land, not in order
+                print(f.result(), flush=True)
+    else:
+        for j in jobs:
+            print(_worker(j), flush=True)
 
 
 def report():
@@ -540,10 +618,10 @@ def report():
     tot = flagged = 0
     ev_f = ct_f = 0
     for d in days:
-        hp = os.path.join(OUT_ROOT, d, "hits.csv")
-        if not os.path.exists(hp):
+        fh = open_hits(d)
+        if fh is None:
             continue
-        for r in csv.DictReader(open(hp)):
+        for r in csv.DictReader(fh):
             tot += 1
             if r["flagged"] == "True":
                 flagged += 1

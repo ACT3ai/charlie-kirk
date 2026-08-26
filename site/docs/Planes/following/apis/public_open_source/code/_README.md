@@ -25,6 +25,43 @@ two pulls is how we show that something that used to be retrievable no longer is
 | `lib/traces.py` | the recovered traces on disk | Turns raw ADS-B traces into airport VISITS: on-ground runs resolved to a field with the median distance attached, plus low passes reported separately. |
 | `query_speaking_weeks.py` | xAI Grok `x_search` | One Grok query per calendar week, Jan 2022–Oct 2025, for Charlie Kirk / TPUSA speaking posts on X. Writes `speaking/week/{year}/week_{NN}.md`. Resume-safe. |
 
+## The geographic sweep — asking what was there, not who
+
+Everything above asks a **per-tail** question and therefore can only find an
+aircraft somebody already named. `geo_sweep.py` asks the other one.
+
+| script | what it does |
+|---|---|
+| `lib/targets.py` | Turns `following/tpusa_events.csv` into **circles on the map and UTC dates**: the US Census centroid of each event city, 50 miles in radius, widened +/- 1 day. Multi-day conferences expand to every day in the range. Rows that name only a month, or no usable city, are returned SEPARATELY and listed by name rather than dropped. Also supplies the **control cities**. |
+| `geo_sweep.py` | Streams one whole UTC day of adsb.lol's GitHub Release backup (~2-5 GB, ODbL, no account) and filters **every aircraft the network heard** — roughly 74,000-95,000 airframes — by geography. Writes a CSV row for every aircraft that entered any circle, and keeps the full track only for aircraft that were ON THE GROUND in an event circle and were foreign, unregistered, military or PIA, plus any tracked tail anywhere. |
+
+```
+python3 geo_sweep.py --plan                    what it would sweep, priority order
+python3 geo_sweep.py --run --date 2025-09-10   one day
+python3 geo_sweep.py --run --jobs 8            the whole target set, resumable
+python3 geo_sweep.py --report                  event circles vs control circles
+```
+
+Four things about it that are not incidental:
+
+* **The control cities are swept on the same days, in the same run, by the same
+  code.** Des Moines, Chattanooga, Spokane, Albuquerque, Syracuse and Shreveport
+  have no connection to this case. "Six foreign jets were within 50 miles of the
+  event" means nothing until you know the number for Des Moines that day. The
+  control is built in rather than bolted on so it cannot be skipped.
+* **`--jobs` uses PROCESSES, not threads.** The work is gzip and JSON over ~20 GB
+  of decompressed trace per day; five threads measured no faster than one because
+  the JSON half serialises on the GIL. Separate processes use the cores and
+  overlap the downloads.
+* **The GitHub API is never touched.** 60 unauthenticated requests an hour cannot
+  cover 278 dates, so the release URL is constructed (`v2025.09.10-planes-readsb-prod-0`
+  — DOTS in the date) and probed directly on the CDN. A day is either one `.tar` or
+  a `split` into `.tar.aa`, `.tar.ab`, ... which concatenate back in sort order.
+* **Files inside the tarballs are GZIP-COMPRESSED despite the `.json` name.** Pipe
+  through `gunzip` or the archive looks corrupt.
+
+Published as [The Volunteer Network](https://whoassassinatedcharliekirk.com/Planes/following/apis/public_open_source/network).
+
 ## The recovery harness
 
 Added when this investigation took the claim "the flight records were erased"

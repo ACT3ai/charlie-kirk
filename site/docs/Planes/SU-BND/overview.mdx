@@ -415,12 +415,12 @@ Files: `SU-BND_2025-09-10_adsb-lol_trace_full.json` and `SU-BND_2025-09-10_airpl
 
 | Verdict | 24 Aug pass | **Corrected 26 Aug** | What it means |
 |---|---|---|---|
-| **At or departing the claimed field** | 7 | **7** | The aircraft really was at the claimed field. **Confirmed.** |
-| **ELSEWHERE** | 5 | **1** | Tracked that day, and somewhere else. **Refuted.** |
+| **AT_CLAIMED_AIRPORT** | 7 | **6** | The aircraft really was at the claimed field. **Confirmed.** |
+| **ELSEWHERE** | 5 | **2** | Tracked that day, and somewhere else. **Refuted.** |
 | NOT_HEARD | 5 | **8** | The archive was asked for the exact day and held nothing. **Not a refutation.** |
 | Decided on the other tail only | 2 | 2 | SITE-001, SITE-004 |
 
-**Of the 8 rows that could be decided on this tail's own data, 7 are corroborated and 1 refuted.** The confirmations, with distances:
+**Of the 8 rows that could be decided on this tail's own data, 6 are corroborated and 2 refuted.** The confirmations, with distances:
 
 | Overlap ID | Date | Claimed | Closest approach | On ground? |
 |---|---|---|---|---|
@@ -440,7 +440,7 @@ The two 0.03 km and 0.05 km results are the closest ground fixes anywhere in thi
 * ~~**OWENS-052 — claimed Wilmington, Delaware, 25 June 2023.**~~ **RETRACTED — wrong day.** The Egyptian sectors cited are on **24 June**, ending 08:27Z, 9,228 km away, with 39.5 h available against 11.5 h needed.
 * ~~**OWENS-030 — claimed Provo, Utah, 8 December 2024.**~~ **RETRACTED — wrong day.** The Egyptian sectors cited are on **7 December**, ending 17:48Z, 11,431 km away, with 30.2 h available against 14.3 h needed.
 
-:::danger[Four of those five refutations were withdrawn on 26 August 2026]
+:::danger[Three of those five refutations were withdrawn on 26 August 2026]
 
 This page previously credited the recovery work with **debunking** OWENS-016 and OWENS-052 on
 backup-archive data alone. **Both of those refutations have been retracted**, along with two more:
@@ -450,13 +450,17 @@ backup-archive data alone. **Both of those refutations have been retracted**, al
   not on the claimed day. The gaps are 30 to 40 hours available against 11.5 to 14.3 hours of cruise
   needed, so the claim is physically compatible with the trace in all three. **A claim about day D can
   only be refuted by day D.** All three now read **not tested**.
-* **OWENS-015 (St. Louis then Goose Bay, 9 May 2023)** — the same-day trace **departs KCPS St. Louis
-  Downtown at 20:02Z**, which *confirms the St. Louis half of the row*, and ends over La Tuque, Quebec
-  at 22:10Z heading north-east, 1,063 km from Goose Bay. The next trace picks the aircraft up over
-  Ireland at 04:18Z. A Goose Bay fuel stop fits that gap exactly and is neither shown nor excluded.
-  **Half confirmed, half untested — not refuted.**
+**OWENS-015 (St. Louis then Goose Bay, 9 May 2023) is disputed between two runs of our own, and the
+dispute is published rather than resolved.** The row names two places. The same-day trace **departs
+KCPS St. Louis Downtown at 20:02Z**, which *confirms the first half of the row*, and ends over
+La Tuque, Quebec at 22:10Z heading north-east, **1,063 km from Goose Bay**; the aircraft is next seen
+over Ireland at 04:18Z. The **automated same-day run scores it ELSEWHERE** — closest recovered
+position 1,063 km from the named field, which is the rule applied to every other row. The **fix-by-fix
+read calls it half-confirmed and half-untested** — a Goose Bay fuel stop fits that six-hour gap
+exactly and is neither shown nor excluded. **Both readings are on disk and neither is folded into the
+other.** What is not in dispute: the St. Louis departure happened.
 
-**Only OWENS-050 survives**, and it survives strongly: the same-day trace is airborne out of
+**OWENS-050 survives on both runs**, and it survives strongly: the same-day trace is airborne out of
 Paris-Le Bourget at 07:25Z and ends descending into **Inshas Air Base, Cairo** at 11:15Z, never closer
 than **7,034 km** to St. Louis. The 9 May trace separately shows the aircraft leaving St. Louis
 Downtown for Europe. That one is genuinely refuted, and it is now backed by primary position data
