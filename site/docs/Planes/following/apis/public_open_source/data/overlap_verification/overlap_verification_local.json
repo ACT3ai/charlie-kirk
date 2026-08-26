@@ -1,9 +1,9 @@
 {
-  "verified_utc": "2026-08-26T18:07:29Z",
+  "verified_utc": "2026-08-26T18:12:53Z",
   "method": "Every verdict computed from recovered trace files held in this repo under <TAIL>/data/recovered/, measured point-by-point off the raw trace_full, not from a live archive query. AT_CLAIMED_AIRPORT = within 15 km of the claimed field on the claimed date, with on-ground positions ranked above airborne ones. Only ELSEWHERE refutes a row; NOT_HEARD, NO_ARCHIVE_COVERAGE and NOT_QUERIED do not. A trace proves presence, never purpose, never occupancy.",
   "counts": {
-    "NO_ARCHIVE_COVERAGE": 15,
-    "NOT_HEARD": 32,
+    "NO_ARCHIVE_COVERAGE": 10,
+    "NOT_HEARD": 37,
     "AT_CLAIMED_AIRPORT": 25,
     "SAME_METRO_WRONG_FIELD": 1,
     "ELSEWHERE": 3,
@@ -18,6 +18,7 @@
       "tails": [
         "SU-BTT"
       ],
+      "on_ground": false,
       "claimed_airport": "KJFK",
       "subject": "Erika",
       "kanekoa_audit_verdict": "inaccurate",
@@ -35,6 +36,7 @@
       "tails": [
         "SU-BTT"
       ],
+      "on_ground": false,
       "claimed_airport": "KORD",
       "subject": "Erika",
       "kanekoa_audit_verdict": "inaccurate",
@@ -52,6 +54,7 @@
       "tails": [
         "SU-BTT"
       ],
+      "on_ground": false,
       "claimed_airport": "KBOS",
       "subject": "Erika",
       "kanekoa_audit_verdict": "inaccurate",
@@ -69,6 +72,7 @@
       "tails": [
         "SU-BTT"
       ],
+      "on_ground": false,
       "claimed_airport": "KICT",
       "subject": "Erika",
       "kanekoa_audit_verdict": "accurate",
@@ -86,6 +90,7 @@
       "tails": [
         "SU-BTT"
       ],
+      "on_ground": false,
       "claimed_airport": "KILG",
       "subject": "Erika",
       "kanekoa_audit_verdict": "inaccurate",
@@ -103,6 +108,7 @@
       "tails": [
         "SU-BTT"
       ],
+      "on_ground": false,
       "claimed_airport": "KSTL",
       "subject": "Erika",
       "kanekoa_audit_verdict": "accurate",
@@ -120,6 +126,7 @@
       "tails": [
         "SU-BTT"
       ],
+      "on_ground": false,
       "claimed_airport": "KBGR",
       "subject": "Erika",
       "kanekoa_audit_verdict": "accurate",
@@ -137,6 +144,7 @@
       "tails": [
         "SU-BTT"
       ],
+      "on_ground": false,
       "claimed_airport": "KATL",
       "subject": "Erika",
       "kanekoa_audit_verdict": "inaccurate",
@@ -154,6 +162,7 @@
       "tails": [
         "SU-BTT"
       ],
+      "on_ground": false,
       "claimed_airport": "KILG",
       "subject": "Erika",
       "kanekoa_audit_verdict": "inaccurate",
@@ -171,6 +180,7 @@
       "tails": [
         "SU-BTT"
       ],
+      "on_ground": false,
       "claimed_airport": "KSTL",
       "subject": "TPUSA",
       "kanekoa_audit_verdict": "accurate",
@@ -190,6 +200,7 @@
       "tails": [
         "SU-BTT"
       ],
+      "on_ground": false,
       "claimed_airport": "KILG",
       "subject": "Erika",
       "kanekoa_audit_verdict": "accurate",
@@ -207,6 +218,7 @@
       "tails": [
         "SU-BTT"
       ],
+      "on_ground": false,
       "claimed_airport": "KICT",
       "subject": "Erika",
       "kanekoa_audit_verdict": "accurate",
@@ -224,6 +236,7 @@
       "tails": [
         "SU-BTT"
       ],
+      "on_ground": true,
       "claimed_airport": "KILG",
       "subject": "Erika",
       "kanekoa_audit_verdict": "accurate",
@@ -241,6 +254,7 @@
       "tails": [
         "SU-BND"
       ],
+      "on_ground": false,
       "claimed_airport": "KCPS",
       "subject": "Erika",
       "kanekoa_audit_verdict": "accurate",
@@ -258,6 +272,7 @@
       "tails": [
         "SU-BND"
       ],
+      "on_ground": false,
       "claimed_airport": "CYYR",
       "subject": "Erika",
       "kanekoa_audit_verdict": "accurate",
@@ -275,6 +290,7 @@
       "tails": [
         "SU-BND"
       ],
+      "on_ground": false,
       "claimed_airport": "KPVU",
       "subject": "Erika",
       "kanekoa_audit_verdict": "inaccurate",
@@ -292,6 +308,7 @@
       "tails": [
         "SU-BTT"
       ],
+      "on_ground": false,
       "claimed_airport": "KLNK",
       "subject": "Erika",
       "kanekoa_audit_verdict": "inaccurate",
@@ -309,6 +326,7 @@
       "tails": [
         "SU-BTT"
       ],
+      "on_ground": false,
       "claimed_airport": "KILG",
       "subject": "Erika",
       "kanekoa_audit_verdict": "inaccurate",
@@ -326,6 +344,7 @@
       "tails": [
         "SU-BTT"
       ],
+      "on_ground": false,
       "claimed_airport": "KSMF",
       "subject": "Erika",
       "kanekoa_audit_verdict": "inaccurate",
@@ -343,6 +362,7 @@
       "tails": [
         "SU-BTT"
       ],
+      "on_ground": false,
       "claimed_airport": "KOMA",
       "subject": "TPUSA",
       "kanekoa_audit_verdict": "partial",
@@ -360,6 +380,7 @@
       "tails": [
         "SU-BTT"
       ],
+      "on_ground": false,
       "claimed_airport": "KILG",
       "subject": "Erika",
       "kanekoa_audit_verdict": "inaccurate",
@@ -377,6 +398,7 @@
       "tails": [
         "SU-BTT"
       ],
+      "on_ground": false,
       "claimed_airport": "KICT",
       "subject": "Erika",
       "kanekoa_audit_verdict": "inaccurate",
@@ -394,6 +416,7 @@
       "tails": [
         "SU-BTT"
       ],
+      "on_ground": false,
       "claimed_airport": "KICT",
       "subject": "Charlie",
       "kanekoa_audit_verdict": "accurate",
@@ -411,6 +434,7 @@
       "tails": [
         "SU-BTT"
       ],
+      "on_ground": false,
       "claimed_airport": "KICT",
       "subject": "Charlie",
       "kanekoa_audit_verdict": "partial",
@@ -428,6 +452,7 @@
       "tails": [
         "SU-BND"
       ],
+      "on_ground": true,
       "claimed_airport": "KPVU",
       "subject": "Erika",
       "kanekoa_audit_verdict": "inaccurate",
@@ -445,6 +470,7 @@
       "tails": [
         "SU-BTT"
       ],
+      "on_ground": true,
       "claimed_airport": "KPVU",
       "subject": "Charlie",
       "kanekoa_audit_verdict": "accurate",
@@ -462,6 +488,7 @@
       "tails": [
         "SU-BTT"
       ],
+      "on_ground": false,
       "claimed_airport": "KILG",
       "subject": "Erika",
       "kanekoa_audit_verdict": "accurate",
@@ -479,6 +506,7 @@
       "tails": [
         "SU-BTT"
       ],
+      "on_ground": false,
       "claimed_airport": "KOMA",
       "subject": "Erika",
       "kanekoa_audit_verdict": "inaccurate",
@@ -496,6 +524,7 @@
       "tails": [
         "SU-BTT"
       ],
+      "on_ground": false,
       "claimed_airport": "KOMA",
       "subject": "Erika",
       "kanekoa_audit_verdict": "inaccurate",
@@ -513,16 +542,17 @@
       "tails": [
         "SU-BND"
       ],
+      "on_ground": false,
       "claimed_airport": "KPVU",
       "subject": "Erika",
       "kanekoa_audit_verdict": "inaccurate",
-      "verdict": "NO_ARCHIVE_COVERAGE",
+      "verdict": "NOT_HEARD",
       "closest_approach_km": null,
       "sources": [
         "adsb-lol",
         "airplanes-live"
       ],
-      "note": "SAYS NOTHING EITHER WAY. Neither free archive holds this date for any airframe we probed, so this is an archive limit and not suppression."
+      "note": "SAYS ALMOST NOTHING. adsb-lol/airplanes-live served other airframes that day but holds no trace for this one. Parked with the transponder off, outside receiver coverage, and a wrong claimed date all look identical from here. AN ABSENCE IS NOT A FINDING."
     },
     {
       "overlap_id": "OWENS-031",
@@ -530,16 +560,17 @@
       "tails": [
         "SU-BTT"
       ],
+      "on_ground": false,
       "claimed_airport": "KICT",
       "subject": "Erika",
       "kanekoa_audit_verdict": "inaccurate",
-      "verdict": "NO_ARCHIVE_COVERAGE",
+      "verdict": "NOT_HEARD",
       "closest_approach_km": null,
       "sources": [
         "adsb-lol",
         "airplanes-live"
       ],
-      "note": "SAYS NOTHING EITHER WAY. Neither free archive holds this date for any airframe we probed, so this is an archive limit and not suppression."
+      "note": "SAYS ALMOST NOTHING. adsb-lol/airplanes-live served other airframes that day but holds no trace for this one. Parked with the transponder off, outside receiver coverage, and a wrong claimed date all look identical from here. AN ABSENCE IS NOT A FINDING."
     },
     {
       "overlap_id": "OWENS-032",
@@ -547,6 +578,7 @@
       "tails": [
         "SU-BTT"
       ],
+      "on_ground": false,
       "claimed_airport": "KICT",
       "subject": "Erika",
       "kanekoa_audit_verdict": "inaccurate",
@@ -564,6 +596,7 @@
       "tails": [
         "SU-BTT"
       ],
+      "on_ground": false,
       "claimed_airport": "KICT",
       "subject": "Charlie",
       "kanekoa_audit_verdict": "inaccurate",
@@ -581,6 +614,7 @@
       "tails": [
         "SU-BTT"
       ],
+      "on_ground": false,
       "claimed_airport": "KICT",
       "subject": "Charlie",
       "kanekoa_audit_verdict": "inaccurate",
@@ -598,6 +632,7 @@
       "tails": [
         "SU-BND"
       ],
+      "on_ground": true,
       "claimed_airport": "KPVU",
       "subject": "Charlie",
       "kanekoa_audit_verdict": "accurate",
@@ -615,6 +650,7 @@
       "tails": [
         "SU-BTT"
       ],
+      "on_ground": false,
       "claimed_airport": "KOMA",
       "subject": "Erika",
       "kanekoa_audit_verdict": "inaccurate",
@@ -632,6 +668,7 @@
       "tails": [
         "SU-BND"
       ],
+      "on_ground": false,
       "claimed_airport": "KPVU",
       "subject": "Erika",
       "kanekoa_audit_verdict": "inaccurate",
@@ -649,6 +686,7 @@
       "tails": [
         "SU-BTT"
       ],
+      "on_ground": false,
       "claimed_airport": "KOMA",
       "subject": "Erika",
       "kanekoa_audit_verdict": "partial",
@@ -666,6 +704,7 @@
       "tails": [
         "SU-BTT"
       ],
+      "on_ground": false,
       "claimed_airport": "KOMA",
       "subject": "Erika",
       "kanekoa_audit_verdict": "partial",
@@ -683,6 +722,7 @@
       "tails": [
         "SU-BTT"
       ],
+      "on_ground": true,
       "claimed_airport": "KPVU",
       "subject": "Charlie",
       "kanekoa_audit_verdict": "accurate",
@@ -700,6 +740,7 @@
       "tails": [
         "SU-BTT"
       ],
+      "on_ground": true,
       "claimed_airport": "KPVU",
       "subject": "Both",
       "kanekoa_audit_verdict": "inaccurate",
@@ -717,6 +758,7 @@
       "tails": [
         "SU-BND"
       ],
+      "on_ground": false,
       "claimed_airport": "KPVU",
       "subject": "Erika",
       "kanekoa_audit_verdict": "accurate",
@@ -734,6 +776,7 @@
       "tails": [
         "SU-BTT"
       ],
+      "on_ground": false,
       "claimed_airport": "KILG",
       "subject": "Erika",
       "kanekoa_audit_verdict": "archive_gap",
@@ -751,6 +794,7 @@
       "tails": [
         "SU-BTT"
       ],
+      "on_ground": false,
       "claimed_airport": "KORD",
       "subject": "Erika",
       "kanekoa_audit_verdict": "archive_gap",
@@ -768,6 +812,7 @@
       "tails": [
         "SU-BTT"
       ],
+      "on_ground": false,
       "claimed_airport": "KICT",
       "subject": "Erika",
       "kanekoa_audit_verdict": "inaccurate",
@@ -785,6 +830,7 @@
       "tails": [
         "SU-BTT"
       ],
+      "on_ground": false,
       "claimed_airport": "KSUS",
       "subject": "Erika",
       "kanekoa_audit_verdict": "partial",
@@ -802,6 +848,7 @@
       "tails": [
         "SU-BTT"
       ],
+      "on_ground": false,
       "claimed_airport": "KOMA",
       "subject": "Erika",
       "kanekoa_audit_verdict": "inaccurate",
@@ -819,6 +866,7 @@
       "tails": [
         "SU-BTT"
       ],
+      "on_ground": false,
       "claimed_airport": "KILG",
       "subject": "Erika",
       "kanekoa_audit_verdict": "inaccurate",
@@ -836,6 +884,7 @@
       "tails": [
         "SU-BTT"
       ],
+      "on_ground": false,
       "claimed_airport": "KICT",
       "subject": "TPUSA",
       "kanekoa_audit_verdict": "inaccurate",
@@ -853,6 +902,7 @@
       "tails": [
         "SU-BND"
       ],
+      "on_ground": false,
       "claimed_airport": "KSTL",
       "subject": "Erika",
       "kanekoa_audit_verdict": "inaccurate",
@@ -870,6 +920,7 @@
       "tails": [
         "SU-BTT"
       ],
+      "on_ground": false,
       "claimed_airport": "KICT",
       "subject": "Erika",
       "kanekoa_audit_verdict": "inaccurate",
@@ -887,6 +938,7 @@
       "tails": [
         "SU-BND"
       ],
+      "on_ground": false,
       "claimed_airport": "KILG",
       "subject": "Erika",
       "kanekoa_audit_verdict": "inaccurate",
@@ -904,6 +956,7 @@
       "tails": [
         "SU-BTT"
       ],
+      "on_ground": false,
       "claimed_airport": "KSTL",
       "subject": "Erika",
       "kanekoa_audit_verdict": "inaccurate",
@@ -921,6 +974,7 @@
       "tails": [
         "SU-BTT"
       ],
+      "on_ground": false,
       "claimed_airport": "KICT",
       "subject": "Erika",
       "kanekoa_audit_verdict": "inaccurate",
@@ -938,6 +992,7 @@
       "tails": [
         "SU-BTT"
       ],
+      "on_ground": false,
       "claimed_airport": "KOMA",
       "subject": "Erika",
       "kanekoa_audit_verdict": "inaccurate",
@@ -955,6 +1010,7 @@
       "tails": [
         "SU-BND"
       ],
+      "on_ground": false,
       "claimed_airport": "KSTL",
       "subject": "Erika",
       "kanekoa_audit_verdict": "inaccurate",
@@ -972,6 +1028,7 @@
       "tails": [
         "SU-BND"
       ],
+      "on_ground": false,
       "claimed_airport": "KSTL",
       "subject": "Erika",
       "kanekoa_audit_verdict": "inaccurate",
@@ -989,6 +1046,7 @@
       "tails": [
         "SU-BTT"
       ],
+      "on_ground": false,
       "claimed_airport": "KLNK",
       "subject": "Erika",
       "kanekoa_audit_verdict": "inaccurate",
@@ -1006,6 +1064,7 @@
       "tails": [
         "SU-BTT"
       ],
+      "on_ground": false,
       "claimed_airport": "KICT",
       "subject": "Erika",
       "kanekoa_audit_verdict": "inaccurate",
@@ -1023,6 +1082,7 @@
       "tails": [
         "SU-BTT"
       ],
+      "on_ground": false,
       "claimed_airport": "KOMA",
       "subject": "Erika",
       "kanekoa_audit_verdict": "inaccurate",
@@ -1040,16 +1100,17 @@
       "tails": [
         "SU-BTT"
       ],
+      "on_ground": false,
       "claimed_airport": "KICT",
       "subject": "Erika",
       "kanekoa_audit_verdict": "inaccurate",
-      "verdict": "NO_ARCHIVE_COVERAGE",
+      "verdict": "NOT_HEARD",
       "closest_approach_km": null,
       "sources": [
         "adsb-lol",
         "airplanes-live"
       ],
-      "note": "SAYS NOTHING EITHER WAY. Neither free archive holds this date for any airframe we probed, so this is an archive limit and not suppression."
+      "note": "SAYS ALMOST NOTHING. adsb-lol/airplanes-live served other airframes that day but holds no trace for this one. Parked with the transponder off, outside receiver coverage, and a wrong claimed date all look identical from here. AN ABSENCE IS NOT A FINDING."
     },
     {
       "overlap_id": "OWENS-062",
@@ -1057,16 +1118,17 @@
       "tails": [
         "SU-BTT"
       ],
+      "on_ground": false,
       "claimed_airport": "KOMA",
       "subject": "Erika",
       "kanekoa_audit_verdict": "inaccurate",
-      "verdict": "NO_ARCHIVE_COVERAGE",
+      "verdict": "NOT_HEARD",
       "closest_approach_km": null,
       "sources": [
         "adsb-lol",
         "airplanes-live"
       ],
-      "note": "SAYS NOTHING EITHER WAY. Neither free archive holds this date for any airframe we probed, so this is an archive limit and not suppression."
+      "note": "SAYS ALMOST NOTHING. adsb-lol/airplanes-live served other airframes that day but holds no trace for this one. Parked with the transponder off, outside receiver coverage, and a wrong claimed date all look identical from here. AN ABSENCE IS NOT A FINDING."
     },
     {
       "overlap_id": "OWENS-063",
@@ -1074,6 +1136,7 @@
       "tails": [
         "SU-BTT"
       ],
+      "on_ground": false,
       "claimed_airport": "KICT",
       "subject": "Charlie",
       "kanekoa_audit_verdict": "inaccurate",
@@ -1091,16 +1154,17 @@
       "tails": [
         "SU-BND"
       ],
+      "on_ground": false,
       "claimed_airport": "KPVU",
       "subject": "Erika",
       "kanekoa_audit_verdict": "inaccurate",
-      "verdict": "NO_ARCHIVE_COVERAGE",
+      "verdict": "NOT_HEARD",
       "closest_approach_km": null,
       "sources": [
         "adsb-lol",
         "airplanes-live"
       ],
-      "note": "SAYS NOTHING EITHER WAY. Neither free archive holds this date for any airframe we probed, so this is an archive limit and not suppression."
+      "note": "SAYS ALMOST NOTHING. adsb-lol/airplanes-live served other airframes that day but holds no trace for this one. Parked with the transponder off, outside receiver coverage, and a wrong claimed date all look identical from here. AN ABSENCE IS NOT A FINDING."
     },
     {
       "overlap_id": "OWENS-065",
@@ -1108,6 +1172,7 @@
       "tails": [
         "SU-BND"
       ],
+      "on_ground": true,
       "claimed_airport": "KPVU",
       "subject": "Charlie",
       "kanekoa_audit_verdict": "accurate",
@@ -1125,6 +1190,7 @@
       "tails": [
         "SU-BND"
       ],
+      "on_ground": false,
       "claimed_airport": "KPVU",
       "subject": "Erika",
       "kanekoa_audit_verdict": "inaccurate",
@@ -1142,6 +1208,7 @@
       "tails": [
         "SU-BTT"
       ],
+      "on_ground": false,
       "claimed_airport": "KLNK",
       "subject": "Erika",
       "kanekoa_audit_verdict": "accurate",
@@ -1160,6 +1227,7 @@
         "SU-BTT",
         "SU-BND"
       ],
+      "on_ground": false,
       "claimed_airport": "",
       "subject": "Erika",
       "kanekoa_audit_verdict": "unpublished",
@@ -1175,6 +1243,7 @@
         "SU-BTT",
         "SU-BND"
       ],
+      "on_ground": false,
       "claimed_airport": "",
       "subject": "Erika",
       "kanekoa_audit_verdict": "unpublished",
@@ -1190,6 +1259,7 @@
         "SU-BTT",
         "SU-BND"
       ],
+      "on_ground": false,
       "claimed_airport": "",
       "subject": "Erika",
       "kanekoa_audit_verdict": "unpublished",
@@ -1205,6 +1275,7 @@
         "SU-BTT",
         "SU-BND"
       ],
+      "on_ground": false,
       "claimed_airport": "",
       "subject": "Erika",
       "kanekoa_audit_verdict": "unpublished",
@@ -1220,6 +1291,7 @@
         "SU-BTT",
         "SU-BND"
       ],
+      "on_ground": false,
       "claimed_airport": "",
       "subject": "Erika",
       "kanekoa_audit_verdict": "unpublished",
@@ -1232,6 +1304,7 @@
       "overlap_id": "EXTRA-001",
       "date": "2024-09-14",
       "tails": [],
+      "on_ground": false,
       "claimed_airport": "KLNK",
       "subject": "Charlie",
       "kanekoa_audit_verdict": "",
@@ -1244,6 +1317,7 @@
       "overlap_id": "EXTRA-002",
       "date": "2024-04-09",
       "tails": [],
+      "on_ground": false,
       "claimed_airport": "KOMA",
       "subject": "Charlie",
       "kanekoa_audit_verdict": "",
@@ -1258,6 +1332,7 @@
       "tails": [
         "SU-BTT"
       ],
+      "on_ground": false,
       "claimed_airport": "KTOP",
       "subject": "TPUSA",
       "kanekoa_audit_verdict": "",
@@ -1273,6 +1348,7 @@
       "overlap_id": "EXTRA-004",
       "date": "2025-07-11",
       "tails": [],
+      "on_ground": false,
       "claimed_airport": "KOMA",
       "subject": "Erika",
       "kanekoa_audit_verdict": "",
@@ -1287,6 +1363,7 @@
       "tails": [
         "SU-BTT"
       ],
+      "on_ground": false,
       "claimed_airport": "KLNK",
       "subject": "Charlie",
       "kanekoa_audit_verdict": "inaccurate",
@@ -1304,6 +1381,7 @@
       "tails": [
         "SU-BND"
       ],
+      "on_ground": true,
       "claimed_airport": "KPVU",
       "subject": "Charlie",
       "kanekoa_audit_verdict": "accurate",
@@ -1319,6 +1397,7 @@
       "overlap_id": "EXTRA-007",
       "date": "2025-04-29",
       "tails": [],
+      "on_ground": false,
       "claimed_airport": "KLNK",
       "subject": "Charlie",
       "kanekoa_audit_verdict": "",
@@ -1334,6 +1413,7 @@
         "SU-BTT",
         "SU-BND"
       ],
+      "on_ground": false,
       "claimed_airport": "KSTL/KCPS/KSUS",
       "subject": "TPUSA",
       "kanekoa_audit_verdict": "accurate",
@@ -1351,6 +1431,7 @@
       "tails": [
         "SU-BTT"
       ],
+      "on_ground": false,
       "claimed_airport": "KLNK",
       "subject": "TPUSA",
       "kanekoa_audit_verdict": "partial",
@@ -1368,6 +1449,7 @@
       "tails": [
         "SU-BTT"
       ],
+      "on_ground": false,
       "claimed_airport": "KICT",
       "subject": "Charlie",
       "kanekoa_audit_verdict": "partial",
@@ -1386,6 +1468,7 @@
         "SU-BTT",
         "SU-BND"
       ],
+      "on_ground": true,
       "claimed_airport": "KPVU",
       "subject": "Charlie",
       "kanekoa_audit_verdict": "accurate",
@@ -1403,6 +1486,7 @@
       "tails": [
         "SU-BTT"
       ],
+      "on_ground": false,
       "claimed_airport": "KILG",
       "subject": "Erika",
       "kanekoa_audit_verdict": "partial",
@@ -1421,6 +1505,7 @@
         "SU-BTT",
         "SU-BND"
       ],
+      "on_ground": true,
       "claimed_airport": "KPVU",
       "subject": "Charlie",
       "kanekoa_audit_verdict": "accurate",

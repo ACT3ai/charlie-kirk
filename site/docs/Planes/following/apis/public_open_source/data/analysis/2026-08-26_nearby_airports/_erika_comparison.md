@@ -233,8 +233,6 @@ recovered data now supports it rather than merely coexisting with it:
   companies"* to reach its facilities.
 * The hostile line-by-line auditor of the overlap sheet volunteered the same reading
   unprompted: **"ACCURATE POSS BROKEN JET GROUNDED IN PROVO."**
-* [John Cullen](/Influencers/john-cullen), central to the plane research, dismissed a
-  strong assassination association on exactly these grounds.
 
 **The 2026 record is the confirmation that was previously unavailable.** Every prior
 version of the maintenance argument was an *inference* about intent from a pattern
