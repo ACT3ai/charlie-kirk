@@ -2,7 +2,7 @@
 #   node/python: apis/public_open_source/code/airports_near.py --only 20230500_nashville
 #   The prompt that governs this file: prompts/p_airports_near.md
 schema: ck.speaking.airports_near/1
-generated_utc: "2026-08-24T22:38:51Z"
+generated_utc: "2026-08-26T19:34:03Z"
 generated_by: site/docs/Planes/following/apis/public_open_source/code/airports_near.py
 page:
   slug: 20230500_nashville
@@ -52,6 +52,8 @@ search:
   window_day_count: 35
   centre: KBNA
   tails_searched:
+    - CONTROL-LUFTHANSA
+    - CONTROL-RYANAIR
     - N102DZ
     - N1098L
     - N2100L
@@ -1015,12 +1017,12 @@ tracked_plane_presence:
     # day is NOT proof the aircraft was elsewhere: a volunteer receiver network
     # heard nothing, and transponder-off, out-of-coverage, and a wrong claimed date
     # all look identical from here.
-    aircraft_days_needed: 525
-    aircraft_days_held: 64
-    aircraft_days_asked_and_archive_empty: 357
-    aircraft_days_never_asked: 104
-    coverage_pct: 12.2
-    queried_pct: 80.2
+    aircraft_days_needed: 595
+    aircraft_days_held: 89
+    aircraft_days_asked_and_archive_empty: 358
+    aircraft_days_never_asked: 148
+    coverage_pct: 15.0
+    queried_pct: 75.1
     tails_with_no_trace_in_window:
       - N102DZ
       - N1098L
@@ -1065,6 +1067,15 @@ tracked_plane_presence:
         aircraft_days_never_asked: 104
         coverage_pct: 1.0
         queried_pct: 1.0
+      unknown:
+        # Other tracked aircraft. A DIFFERENT CLAIM - do not merge the threads.
+        tails: 2
+        aircraft_days_needed: 70
+        aircraft_days_held: 25
+        aircraft_days_asked_and_archive_empty: 1
+        aircraft_days_never_asked: 44
+        coverage_pct: 35.7
+        queried_pct: 37.1
 counterargument:
   - "ONE PAIRING IS NOT EVIDENCE. The claim under test is a repetition across many stops, and any single pairing has an innocent explanation a reader will find."
   - "A field inside the radius is a field a jet COULD have used. Nothing here shows that anyone did use it, or that two aircraft on one ramp had any connection."

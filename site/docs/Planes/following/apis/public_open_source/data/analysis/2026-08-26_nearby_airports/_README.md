@@ -46,3 +46,23 @@ that nothing is there IN WHAT WE HOLD.
 
 Bryan's written answer for this run:
 ~/BGit/all/politics/charlie_kirk/bryan/spy_planes_near_charlie.txt
+
+## Update, same day — the +/-7 day pull
+
+Every CSV in this directory was computed BEFORE the wider archive pull finished. The pull then
+completed: 4,999 requests, 333 new traces, 4,539 asked-and-empty, 127 transport errors (network
+failures, NOT misses — those days stay NEVER_ASKED and are retryable). The trace index was
+rebuilt to 2,235 aircraft-days and all 139 event yaml files were regenerated.
+
+IT DID NOT CHANGE THE ANSWER. Events with an Egyptian SU- tail inside the radius: still 1 of 139.
+Scoring the 42 new foreign-fleet ground-visit days against all 139 events at 150 mi / +/-7 days
+yielded one candidate — SU-BTU at KILG on 2025-01-24, 92.5 mi and +4 days from the 2025-01-19
+Washington event — which is the documented customs-and-fuel stop, i.e. KNOWN_TRANSIT, not an
+overlap. It is NOT proposed as a new row.
+
+What did shift: four new Egyptian-tail Provo days with no Kirk/TPUSA event near them in time or
+space (SU-BND 2024-07-17, SU-BTU 2025-04-14, SU-BGM 2025-04-16), across THREE tails. The Provo
+visits are therefore not time-locked to Charlie Kirk's calendar. That says the visits are not
+explained by his schedule; it does not say what does explain them.
+
+So the CSVs here are the +/-2 baseline. Re-run code/ against the rebuilt index to refresh them.

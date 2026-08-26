@@ -2,7 +2,7 @@
 #   node/python: apis/public_open_source/code/airports_near.py --only 20240403_lawrence
 #   The prompt that governs this file: prompts/p_airports_near.md
 schema: ck.speaking.airports_near/1
-generated_utc: "2026-08-24T22:38:51Z"
+generated_utc: "2026-08-26T19:34:03Z"
 generated_by: site/docs/Planes/following/apis/public_open_source/code/airports_near.py
 page:
   slug: 20240403_lawrence
@@ -52,6 +52,8 @@ search:
   window_day_count: 5
   centre: KLWC
   tails_searched:
+    - CONTROL-LUFTHANSA
+    - CONTROL-RYANAIR
     - N102DZ
     - N1098L
     - N2100L
@@ -1575,12 +1577,12 @@ tracked_plane_presence:
     # day is NOT proof the aircraft was elsewhere: a volunteer receiver network
     # heard nothing, and transponder-off, out-of-coverage, and a wrong claimed date
     # all look identical from here.
-    aircraft_days_needed: 75
-    aircraft_days_held: 22
+    aircraft_days_needed: 85
+    aircraft_days_held: 28
     aircraft_days_asked_and_archive_empty: 40
-    aircraft_days_never_asked: 13
-    coverage_pct: 29.3
-    queried_pct: 82.7
+    aircraft_days_never_asked: 17
+    coverage_pct: 32.9
+    queried_pct: 80.0
     tails_with_no_trace_in_window:
       - N40JD
       - N59906
@@ -1624,6 +1626,15 @@ tracked_plane_presence:
         aircraft_days_never_asked: 13
         coverage_pct: 13.3
         queried_pct: 13.3
+      unknown:
+        # Other tracked aircraft. A DIFFERENT CLAIM - do not merge the threads.
+        tails: 2
+        aircraft_days_needed: 10
+        aircraft_days_held: 6
+        aircraft_days_asked_and_archive_empty: 0
+        aircraft_days_never_asked: 4
+        coverage_pct: 60.0
+        queried_pct: 60.0
 counterargument:
   - "ONE PAIRING IS NOT EVIDENCE. The claim under test is a repetition across many stops, and any single pairing has an innocent explanation a reader will find."
   - "A field inside the radius is a field a jet COULD have used. Nothing here shows that anyone did use it, or that two aircraft on one ramp had any connection."

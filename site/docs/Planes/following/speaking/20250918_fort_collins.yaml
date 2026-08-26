@@ -2,7 +2,7 @@
 #   node/python: apis/public_open_source/code/airports_near.py --only 20250918_fort_collins
 #   The prompt that governs this file: prompts/p_airports_near.md
 schema: ck.speaking.airports_near/1
-generated_utc: "2026-08-24T22:38:51Z"
+generated_utc: "2026-08-26T19:34:03Z"
 generated_by: site/docs/Planes/following/apis/public_open_source/code/airports_near.py
 page:
   slug: 20250918_fort_collins
@@ -52,6 +52,8 @@ search:
   window_day_count: 5
   centre: KFNL
   tails_searched:
+    - CONTROL-LUFTHANSA
+    - CONTROL-RYANAIR
     - N102DZ
     - N1098L
     - N2100L
@@ -1356,12 +1358,12 @@ tracked_plane_presence:
     # day is NOT proof the aircraft was elsewhere: a volunteer receiver network
     # heard nothing, and transponder-off, out-of-coverage, and a wrong claimed date
     # all look identical from here.
-    aircraft_days_needed: 75
-    aircraft_days_held: 17
+    aircraft_days_needed: 85
+    aircraft_days_held: 19
     aircraft_days_asked_and_archive_empty: 46
-    aircraft_days_never_asked: 12
-    coverage_pct: 22.7
-    queried_pct: 84.0
+    aircraft_days_never_asked: 20
+    coverage_pct: 22.4
+    queried_pct: 76.5
     tails_with_no_trace_in_window:
       - N872RA
       - N888KG
@@ -1403,6 +1405,15 @@ tracked_plane_presence:
         aircraft_days_held: 3
         aircraft_days_asked_and_archive_empty: 0
         aircraft_days_never_asked: 12
+        coverage_pct: 20.0
+        queried_pct: 20.0
+      unknown:
+        # Other tracked aircraft. A DIFFERENT CLAIM - do not merge the threads.
+        tails: 2
+        aircraft_days_needed: 10
+        aircraft_days_held: 2
+        aircraft_days_asked_and_archive_empty: 0
+        aircraft_days_never_asked: 8
         coverage_pct: 20.0
         queried_pct: 20.0
 counterargument:
