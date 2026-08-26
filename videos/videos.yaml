@@ -311,10 +311,10 @@ level_3:
             needs_split: false
             videos: []
         - level_4:
-            title: "N55906 Cullen Flight"
-            _key: Vid_N55906_Cullen_Flight
+            title: "N55906"
+            _key: Vid_N55906
             site_level_2: []
-            site_page: "site/docs/Planes/N55906.mdx"
+            site_page: "site/docs/Planes/N55906/overview.mdx"
             number_of_videos: 0
             number_of_videos_recursive: 0
             publishable: false
@@ -535,6 +535,7 @@ level_3:
                   cid: "QmNtqunqiMioUUmPqbQ82jTw51CkTGJyYJzhooZvVtHmGZ"
                   ipfs_pinned: true
                   sha256: "4239ac4a6b1fce2f57a07c0bf4338d34cbea74fb80293b504ec8b769d38646ae"
+                  banned: true
                   file_path: "~/_Mirror/Politics/Charlie_Kirk_Mi/Spy_Plane/John Cullen \U0001F413 - @BenSwann_ I thought the HADES spy plane and the four UAVs were what ... [1969719868892291072].mp4"
                   media_present: "video"
                   file_size_bytes: 16000910
@@ -614,7 +615,6 @@ level_3:
                   manifest_description: ""
                   duplicate_paths: []
                   video_page: ""
-                  next_video: "~/BGit/Bryan_git/charlie-kirk/site/docs/Videos/Vid_Aircraft_Flight_Evidence/Vid_Spy_Plane_Footage/Vid_John_Cullen_Friday_Night_1977319.mdx"
                   on_pages: []
                   should_be_on_pages:
                     - page: "~/BGit/Bryan_git/charlie-kirk/site/docs/Planes/N1098L/overview.mdx"
@@ -623,6 +623,7 @@ level_3:
                   cid: "QmR2oBiw9CSL19D1MMnLUdCL7GoQb135Q3oLDAxzsARLrA"
                   ipfs_pinned: true
                   sha256: "e684df87a4bbaab59fdbdacb48d68f0b552d2501fcbf8521ba0b5f2c57f37732"
+                  banned: true
                   file_path: "~/_Mirror/Politics/Charlie_Kirk_Mi/Spy_Plane/More/John Cullen \U0001F413 - Friday night, October 10th, I broke the story of an Egyptian governme... #1 [1977319734136758272].mp4"
                   media_present: "video"
                   file_size_bytes: 1329416
@@ -778,7 +779,6 @@ level_3:
                   manifest_description: ""
                   duplicate_paths: []
                   video_page: ""
-                  next_video: "~/BGit/Bryan_git/charlie-kirk/site/docs/Videos/Vid_Aircraft_Flight_Evidence/Vid_Spy_Plane_Footage/Vid_John_Cullen_SharylAttkisson_4_1969372.mdx"
                   on_pages: []
                   should_be_on_pages:
                     - page: "~/BGit/Bryan_git/charlie-kirk/site/docs/TPUSA/LLCs/lasai-aviation-ii-llc.mdx"
@@ -787,6 +787,7 @@ level_3:
                   cid: "QmcgNskR6Wz9PMPPKRhM6XzqJtG5sHezAGJeTJbcHgUTF5"
                   ipfs_pinned: true
                   sha256: "e9bd8770187437fd73474a299394938b806f579852a8c5269d7c0736e86adede"
+                  banned: true
                   file_path: "~/_Mirror/Politics/Charlie_Kirk_Mi/Spy_Plane/John Cullen \U0001F413 - @SharylAttkisson 4 of them onsite, plus a CIA spyplane. The HADES G65... [1969372782472658944].mp4"
                   media_present: "video"
                   file_size_bytes: 3496148
@@ -6659,7 +6660,7 @@ level_3:
                           - **02:26 - 02:44**: Starry background displaying patron links, followed by scrolling copyright credits over blue digital circles.
                           - **02:44 - 02:48**: Final graphic of a gold Sheriff star badge rotating on a black screen with rising smoke.
                         people_seen: "A large crowd of young adults, likely college students, wearing casual summer clothing such as T-shirts, shorts, jeans, and hoodies. Due to the distance and camera movement, specific facial features or detailed outfits are indiscernible. Protesters on an elevated balcony are seen holding placards and a Pride flag."
-                        onscreen_text: "- **Objects**: Rainbow flag, camera equipment, a small aerial drone (UAV), a gold sheriff star. - **Text**: - \"A shooting at Charlie's event\" - \"@petemiller661\" - \"#IAMJOHNCULLEN\" - \"#WEWONTSTOP\" - \"SUBSCRIBESTAR.COM/IAMJOHNCULLEN\" - \"PATREON.COM/IAMJOHNCULLEN\" - \"SHERIFF\""
+                        onscreen_text: "- **Objects**: Rainbow flag, camera equipment, a small aerial drone (UAV), a gold sheriff star. - **Text**: - \"A shooting at Charlie's event\" - \"@petemiller661\" - \"#WEWONTSTOP\" - \"SHERIFF\""
                         ocr_file: "~/BGit/Bryan_git/personal_large_files_bridge/_Mirror/Politics/Charlie_Kirk_Mi/Drone/11_Drones.mp4.ocr"
                         source_url: ""
                         source_author: ""
@@ -6958,7 +6959,6 @@ level_3:
                         manifest_description: ""
                         duplicate_paths: []
                         video_page: ""
-                        next_video: "~/BGit/Bryan_git/charlie-kirk/site/docs/Videos/Vid_Drones/Vid_Drone_Sightings_UVU/Vid_Drone_Sightings_e435/Vid_John_Cullen_Bug_What_1977161.mdx"
                         on_pages: []
                         should_be_on_pages:
                           - page: "~/BGit/Bryan_git/charlie-kirk/site/docs/Suspicious/Medical/body-transport-burial.mdx"
@@ -6969,6 +6969,7 @@ level_3:
                         cid: "QmXNjnv1WfAsYdDdGS2pCpFb7FJHDe66nMeDDMH17pmntm"
                         ipfs_pinned: true
                         sha256: "42bf8aa69294421dcde7fcef2f750e45506d5cc6d056f58c9fd12e44cfea4d9b"
+                        banned: true
                         file_path: "~/_Mirror/Politics/Charlie_Kirk_Mi/Drone/John Cullen \U0001F413 - Is this a bug\uFF1F If so, what kind of bug\uFF1F  h\u29F8t\uFF1A  @LMBubba [1977161668284063744].mp4"
                         media_present: "video"
                         file_size_bytes: 8369986
@@ -7011,8 +7012,6 @@ level_3:
                         next_video: "~/BGit/Bryan_git/charlie-kirk/site/docs/Videos/Vid_Drones/Vid_Drone_Sightings_UVU/Vid_Drone_Sightings_e435/Vid_Drone_Shot_South_g1FoVJ3.mdx"
                         on_pages: []
                         should_be_on_pages:
-                          - page: "~/BGit/Bryan_git/charlie-kirk/site/docs/Influencers/x/john-cullen.mdx"
-                          - page: "~/BGit/Bryan_git/charlie-kirk/site/docs/Influencers/john-cullen.mdx"
                     - video:
                         title: "Drone Shot South"
                         cid: "QmZehE7iEvzqDwhHsXjTTgwUcdYczGJgNWg1FoVJ3dCsNF"
@@ -7307,7 +7306,7 @@ level_3:
                         manifest_description: ""
                         duplicate_paths: []
                         video_page: ""
-                        next_video: "~/BGit/Bryan_git/charlie-kirk/site/docs/Videos/Vid_Drones/Vid_Drone_Sightings_UVU/Vid_Drone_Sightings_7ea0/Vid_Thomas_Perera_Am_JohnCullen_1977744.mdx"
+                        next_video: "~/BGit/Bryan_git/charlie-kirk/site/docs/Videos/Vid_Drones/Vid_Drone_Sightings_UVU/Vid_Drone_Sightings_7ea0/Vid_Thomas_Perera_Frame_Order_1977744.mdx"
                         on_pages: []
                         should_be_on_pages:
                           - page: "~/BGit/Bryan_git/charlie-kirk/site/docs/Influencers/podcasts-project-constitution.mdx"
@@ -7371,7 +7370,7 @@ level_3:
                   needs_split: false
                   videos:
                     - video:
-                        title: "thomas perera - @I_Am_JohnCullen Bullet casing falling from above tent ？ Bullet..."
+                        title: "thomas perera - Bullet casing falling from above tent ？ Bullet..."
                         cid: "QmTfMnk3xpRwhq3AkUxLja3dXFZVbZSNP3YPgBjhGMeMhT"
                         ipfs_pinned: true
                         sha256: "4dce731b177fa3011d381f37db63b0e33023ee9af5f06f33c63e0bfba1bdd9ed"
@@ -7451,12 +7450,12 @@ level_3:
                         manifest_description: ""
                         duplicate_paths: []
                         video_page: ""
-                        next_video: "~/BGit/Bryan_git/charlie-kirk/site/docs/Videos/Vid_Drones/Vid_Drone_Sightings_UVU/Vid_Drone_Sightings_7ea0/Vid_Thomas_Perera_Am_JohnCullen_1977744_2.mdx"
+                        next_video: "~/BGit/Bryan_git/charlie-kirk/site/docs/Videos/Vid_Drones/Vid_Drone_Sightings_UVU/Vid_Drone_Sightings_7ea0/Vid_Thomas_Perera_Frame_Order_1977744_2.mdx"
                         on_pages: []
                         should_be_on_pages:
                           - page: "~/BGit/Bryan_git/charlie-kirk/site/docs/Drones/Butler_PA_Drone_Parallel.mdx"
                     - video:
-                        title: "thomas perera - @I_Am_JohnCullen Bullet casing falling from above tent ？ Bullet..."
+                        title: "thomas perera - Bullet casing falling from above tent ？ Bullet..."
                         cid: "QmYU9gTLdMbvrCXwg7hwNzgrkA1Wn7zcN4MvnPobKXPp2L"
                         ipfs_pinned: true
                         sha256: "3d5e9ced4ca1ede009fa9d6e602083925e988f3db2fa63b0ab80a096dbe41821"
@@ -7492,12 +7491,12 @@ level_3:
                         manifest_description: ""
                         duplicate_paths: []
                         video_page: ""
-                        next_video: "~/BGit/Bryan_git/charlie-kirk/site/docs/Videos/Vid_Drones/Vid_Drone_Sightings_UVU/Vid_Drone_Sightings_7ea0/Vid_Thomas_Perera_Am_JohnCullen_1977744_3.mdx"
+                        next_video: "~/BGit/Bryan_git/charlie-kirk/site/docs/Videos/Vid_Drones/Vid_Drone_Sightings_UVU/Vid_Drone_Sightings_7ea0/Vid_Thomas_Perera_Frame_Order_1977744_3.mdx"
                         on_pages: []
                         should_be_on_pages:
                           - page: "~/BGit/Bryan_git/charlie-kirk/site/docs/Drones/Butler_PA_Drone_Parallel.mdx"
                     - video:
-                        title: "thomas perera - @I_Am_JohnCullen Bullet casing falling from above tent ？ Bullet..."
+                        title: "thomas perera - Bullet casing falling from above tent ？ Bullet..."
                         cid: "QmaSaDobiUFhUyERcPK2bj4ZAbkTRYQo2kNr4EJ6LJ5vfq"
                         ipfs_pinned: true
                         sha256: "231fc9c56e1fccd6b75a4eb6ae3141aa2066aa6fb59568eb57d0af32d5979bab"
@@ -8656,7 +8655,7 @@ level_3:
                     * **02:32 - 03:44**: Full-screen webcam of Baron speaking and gesturing.
                     * **03:45 - 04:23**: Screencast of Google Trends for "Deirdre Amaro."
                     * **04:24 - 05:56**: Full-screen webcam of Baron continuing his monologue.
-                    * **05:57 - 08:46**: Screencast of a Twitter/X post by John Cullen featuring Flightradar24 maps and flight details.
+                    * **05:57 - 08:46**: Screencast of a Twitter/X post featuring Flightradar24 maps and flight details.
                     * **08:47 - 09:09**: Screencast of Google Trends for aircraft registration "N109BL."
                     * **09:10 - 10:14**: Full-screen webcam of Baron.
                     * **10:15 - 10:39**: Screencast of Google Trends for "mehtab syed."
@@ -10902,26 +10901,6 @@ level_3:
             _key: Vid_Joe_Kent_X
             site_level_2: []
             site_page: "site/docs/Influencers/x/joekent16jan19.mdx"
-            number_of_videos: 0
-            number_of_videos_recursive: 0
-            publishable: false
-            needs_split: false
-            videos: []
-        - level_4:
-            title: "John Cullen"
-            _key: Vid_John_Cullen
-            site_level_2: []
-            site_page: "site/docs/Influencers/john-cullen.mdx"
-            number_of_videos: 0
-            number_of_videos_recursive: 0
-            publishable: false
-            needs_split: false
-            videos: []
-        - level_4:
-            title: "John Cullen — X Posts"
-            _key: Vid_John_Cullen_X
-            site_level_2: []
-            site_page: "site/docs/Influencers/x/john-cullen.mdx"
             number_of_videos: 0
             number_of_videos_recursive: 0
             publishable: false
@@ -36313,7 +36292,6 @@ level_3:
                   manifest_description: "Man identified as Cooper Brown reportedly stopping a TPUSA young man from testifying on camera; Fox News clip"
                   duplicate_paths: []
                   video_page: ""
-                  next_video: "~/BGit/Bryan_git/charlie-kirk/site/docs/Videos/Vid_Aircraft_Flight_Evidence/Vid_Spy_Plane_Footage/Vid_John_Cullen_BenSwann_Thought_1969719.mdx"
                   on_pages:
                     - page: "~/BGit/Bryan_git/charlie-kirk/site/docs/Witnesses/cooper-brown.mdx"
                   should_be_on_pages:

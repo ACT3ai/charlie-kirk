@@ -158,7 +158,7 @@ def main():
     # ── title + subline (upper left, ~12% of frame) ──────────────────────────
     s.append(f'<text x="60" y="100" fill="{INK}" font-size="46" font-weight="700" letter-spacing="0.5">THE OVERLAPS, RE-TESTED AGAINST RECOVERED DATA</text>')
     s.append(f'<text x="62" y="139" fill="{GREY}" font-size="20">Egyptian-registered jets and the Kirks, January 2022 &#8211; October 2025. Each bar is one month.</text>')
-    s.append(f'<text x="62" y="167" fill="{GREY}" font-size="20">The tracking-site records were scrubbed, so every claim was re-checked against raw ADS-B traces we pulled and kept.</text>')
+    s.append(f'<text x="62" y="167" fill="{GREY}" font-size="20">Records in this case go missing, so every claim was re-tested against raw ADS-B traces we pulled and kept &#8212; not a live tracking site.</text>')
 
     # ── stat card (upper right, ~10%) ────────────────────────────────────────
     cx, cy, cw, ch = 1386, 40, 474, 188
@@ -180,7 +180,7 @@ def main():
     s.append(f'<text x="{bx}" y="{by+38}" fill="{GREY}" font-size="16">'
              f'<tspan fill="{INK}" font-weight="600">{c_} corroborated</tspan>  &#183;  '
              f'<tspan>{r_} refuted</tspan>  &#183;  <tspan>{m_} wrong field</tspan></text>')
-    s.append(f'<text x="{bx}" y="{by+60}" fill="{DIM}" font-size="16">{u_} no surviving archive can answer  &#183;  {n_} name no aircraft</text>')
+    s.append(f'<text x="{bx}" y="{by+60}" fill="{DIM}" font-size="16">{u_} the archives cannot answer  &#183;  {n_} name no aircraft</text>')
 
     # ── month gridlines + year separators ────────────────────────────────────
     for i, mo in enumerate(months):
@@ -230,7 +230,7 @@ def main():
         s.append(f'<text x="{gx0}" y="{AX_Y+54+j*21}" fill="{DIM}" font-size="15">{ln}</text>')
 
     # ── legend, lower left (~5%) ─────────────────────────────────────────────
-    lx0, ly0 = 60, 838
+    lx0, ly0 = 60, 830
     s.append(f'<rect x="{lx0}" y="{ly0}" width="596" height="150" fill="none" stroke="{RULE}" stroke-width="1.5" rx="4"/>')
     rows = [("C", "corroborated &#8212; a trace we hold puts the jet at the claimed field"),
             ("M", "right area, wrong field &#8212; within 50 miles, not at the airport named"),
@@ -249,7 +249,7 @@ def main():
         s.append(f'<text x="{lx0+50}" y="{sy+3}" fill="{GREY}" font-size="15.5">{txt}</text>')
 
     # ── September call-out lens, lower right (~16%) ──────────────────────────
-    px0, py0, pw, ph = 964, 786, 700, 232
+    px0, py0, pw, ph = 964, 772, 700, 222
     sep_i = months.index("2025-09")
     sep_x = AX_X0 + sep_i * SLOT + SLOT / 2
     s.append(f'<line x1="{sep_x:.1f}" y1="{AX_Y+222}" x2="{px0+pw:.1f}" y2="{py0}" stroke="{RULE}" stroke-width="1.1"/>')
@@ -261,16 +261,25 @@ def main():
             ("10 SEP 2025", "SU-BTT departs Provo, 07:14 am"),
             ("10 SEP 2025", "SU-BND still on the ground at 2:29 pm &#8212; it never leaves")]
     for j, (d, t) in enumerate(lens):
-        ly = py0 + 66 + j * 27
+        ly = py0 + 64 + j * 26
         s.append(f'<text x="{px0+26}" y="{ly}" fill="{INK}" font-size="16.5" font-weight="700">{d}<tspan fill="{GREY}" font-weight="400">&#160;&#160;&#8212; {t}</tspan></text>')
-    s.append(f'<text x="{px0+26}" y="{py0+186}" fill="{INK}" font-size="16.5">Charlie Kirk is killed at UVU, Orem &#8212; 7 miles away &#8212; at 12:23 pm</text>')
-    s.append(f'<line x1="{px0+26}" y1="{py0+200}" x2="{px0+pw-26}" y2="{py0+200}" stroke="{RULE}" stroke-width="1"/>')
-    s.append(f'<text x="{px0+26}" y="{py0+222}" fill="{GREY}" font-size="15.5">Times are Mountain, read off the trace. A trace proves presence &#8212; never who was aboard.</text>')
+    s.append(f'<text x="{px0+26}" y="{py0+178}" fill="{INK}" font-size="16.5">Charlie Kirk is killed at UVU, Orem &#8212; 7 miles away &#8212; at 12:23 pm</text>')
+    s.append(f'<line x1="{px0+26}" y1="{py0+191}" x2="{px0+pw-26}" y2="{py0+191}" stroke="{RULE}" stroke-width="1"/>')
+    s.append(f'<text x="{px0+26}" y="{py0+212}" fill="{GREY}" font-size="15.5">Times are Mountain, read off the trace. A trace proves presence &#8212; never who was aboard.</text>')
 
     # ── source line, bottom edge (~3%) ───────────────────────────────────────
-    s.append(f'<line x1="60" y1="1022" x2="{W-60}" y2="1022" stroke="{RULE}" stroke-width="1"/>')
-    s.append(f'<text x="60" y="1046" fill="{DIM}" font-size="13.5">Claim counts are researcher tallies attributed to Candace Owens and others. Every fill is computed from raw ADS-B trace files recovered from adsb.lol and airplanes.live and kept in this repo, measured point-by-point: corroborated = within 15 km of the claimed field that day.</text>')
-    s.append(f'<text x="60" y="1065" fill="{DIM}" font-size="13.5">Dotted bars are days no free archive reaches &#8212; a retention limit, tested against unrelated control aircraft, not evidence of anything. Erika Kirk&#8217;s itinerary has never been published, so no trace can place her aboard. Nothing here is a finding of wrongdoing by any living person.</text>')
+    # Three rows, not two. A single row long enough to hold the coverage caveat
+    # runs off the right edge of the frame, and a source line that is cut in half
+    # is worse than no source line: it reads as if something was hidden.
+    s.append(f'<line x1="60" y1="1006" x2="{W-60}" y2="1006" stroke="{RULE}" stroke-width="1"/>')
+    src = [
+        "Claim counts are researcher tallies attributed to Candace Owens and others. Every fill is computed from raw ADS-B trace files recovered from adsb.lol and airplanes.live and kept in this repo,",
+        "measured point-by-point: corroborated = within 15 km of the claimed field that day. Dotted bars could not be tested &#8212; either no free archive reaches that day, or an archive that was serving other",
+        "aircraft did not hear this one. Control aircraft with no connection to this case were queried on the same dates to tell those apart, and neither is evidence of anything. Erika Kirk&#8217;s itinerary has never",
+        "been published, so no trace can place her aboard. Nothing here is a finding of wrongdoing by any living person.",
+    ]
+    for j, ln in enumerate(src):
+        s.append(f'<text x="60" y="{1024 + j*16}" fill="{DIM}" font-size="13">{ln}</text>')
 
     s.append('</svg>')
 

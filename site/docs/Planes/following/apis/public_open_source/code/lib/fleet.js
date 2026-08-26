@@ -47,7 +47,7 @@ export const FLEET = [
   { reg: "N59906",  hex: "a7c14d", side: "n1098l", type: "PA31", registry: "United States",
     note: "MARC Inc survey aircraft.", hexSource: "adsbdb" },
   { reg: "N55906",  hex: "a72351", side: "n1098l", type: "P28R", registry: "United States",
-    note: "Piper Arrow. Named in a Cullen claim; a light single, not a survey platform.",
+    note: "Piper Arrow. Named in an unsourced open-source flight thread; a light single, not a survey platform.",
     hexSource: "adsbdb" },
 ];
 

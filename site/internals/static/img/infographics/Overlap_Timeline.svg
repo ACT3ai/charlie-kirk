@@ -6,7 +6,7 @@
 <rect width="1920" height="1080" fill="#1b1b1f"/>
 <text x="60" y="100" fill="#f4f4f6" font-size="46" font-weight="700" letter-spacing="0.5">THE OVERLAPS, RE-TESTED AGAINST RECOVERED DATA</text>
 <text x="62" y="139" fill="#9b9ba3" font-size="20">Egyptian-registered jets and the Kirks, January 2022 &#8211; October 2025. Each bar is one month.</text>
-<text x="62" y="167" fill="#9b9ba3" font-size="20">The tracking-site records were scrubbed, so every claim was re-checked against raw ADS-B traces we pulled and kept.</text>
+<text x="62" y="167" fill="#9b9ba3" font-size="20">Records in this case go missing, so every claim was re-tested against raw ADS-B traces we pulled and kept &#8212; not a live tracking site.</text>
 <rect x="1386" y="40" width="474" height="188" fill="none" stroke="#3a3a42" stroke-width="1.5" rx="4"/>
 <text x="1408" y="96" fill="#f4f4f6" font-size="46" font-weight="700">80</text>
 <text x="1482" y="82" fill="#9b9ba3" font-size="17">dated claimed overlaps</text>
@@ -18,7 +18,7 @@
 <rect x="1548.5" y="152.8" width="14.5" height="14.4" fill="none" stroke="#9b9ba3" stroke-width="1.5"/>
 <rect x="1564.7" y="152.8" width="272.5" height="14.4" fill="none" stroke="#6e6e77" stroke-width="1.4" stroke-dasharray="3 3"/>
 <text x="1408" y="190" fill="#9b9ba3" font-size="16"><tspan fill="#f4f4f6" font-weight="600">25 corroborated</tspan>  &#183;  <tspan>3 refuted</tspan>  &#183;  <tspan>1 wrong field</tspan></text>
-<text x="1408" y="212" fill="#6e6e77" font-size="16">47 no surviving archive can answer  &#183;  4 name no aircraft</text>
+<text x="1408" y="212" fill="#6e6e77" font-size="16">47 the archives cannot answer  &#183;  4 name no aircraft</text>
 <line x1="165.4" y1="318" x2="165.4" y2="748" stroke="#3a3a42" stroke-width="0.5" opacity="0.32"/>
 <line x1="150.0" y1="278" x2="150.0" y2="774" stroke="#3a3a42" stroke-width="1.2"/>
 <text x="160.0" y="286" fill="#9b9ba3" font-size="19" font-weight="600" letter-spacing="1">2022</text>
@@ -185,27 +185,29 @@
 <text x="1618" y="584" fill="#6e6e77" font-size="15">never published &#8212; no date, no city,</text>
 <text x="1618" y="605" fill="#6e6e77" font-size="15">no airport, no tail. Cannot be placed</text>
 <text x="1618" y="626" fill="#6e6e77" font-size="15">on this timeline.</text>
-<rect x="60" y="838" width="596" height="150" fill="none" stroke="#3a3a42" stroke-width="1.5" rx="4"/>
-<rect x="80" y="853" width="17" height="17" fill="#f4f4f6"/>
-<text x="110" y="867" fill="#9b9ba3" font-size="15.5">corroborated &#8212; a trace we hold puts the jet at the claimed field</text>
-<rect x="80" y="885" width="17" height="17" fill="url(#hatche0a33e)" stroke="#9b9ba3" stroke-width="1.4"/>
-<text x="110" y="899" fill="#9b9ba3" font-size="15.5">right area, wrong field &#8212; within 50 miles, not at the airport named</text>
-<rect x="80.8" y="917.8" width="15.4" height="15.4" fill="none" stroke="#9b9ba3" stroke-width="1.6"/>
-<text x="110" y="931" fill="#9b9ba3" font-size="15.5">refuted &#8212; a trace we hold puts the jet somewhere else</text>
-<rect x="80.8" y="949.8" width="15.4" height="15.4" fill="none" stroke="#6e6e77" stroke-width="1.4" stroke-dasharray="3 3"/>
-<text x="110" y="963" fill="#9b9ba3" font-size="15.5">not testable &#8212; no archive reaches back, or no aircraft was named</text>
-<line x1="1519.8" y1="752" x2="1664.0" y2="786" stroke="#3a3a42" stroke-width="1.1"/>
-<line x1="1505.8" y1="752" x2="1004.0" y2="786" stroke="#3a3a42" stroke-width="1.1"/>
-<rect x="964" y="786" width="700" height="232" fill="#1b1b1f" stroke="#f4f4f6" stroke-width="1.6" rx="4"/>
-<text x="990" y="820" fill="#e0a33e" font-size="18" font-weight="700" letter-spacing="1.1">WHAT THE RECOVERED TRACES SHOW AT PROVO</text>
-<text x="990" y="852" fill="#f4f4f6" font-size="16.5" font-weight="700">4 SEP 2025<tspan fill="#9b9ba3" font-weight="400">&#160;&#160;&#8212; SU-BTT lands Provo, 12:45 pm &#8212; inbound from 8,100 km out</tspan></text>
-<text x="990" y="879" fill="#f4f4f6" font-size="16.5" font-weight="700">5&#8211;10 SEP<tspan fill="#9b9ba3" font-weight="400">&#160;&#160;&#8212; SU-BND transmits from the ground at Provo every day</tspan></text>
-<text x="990" y="906" fill="#f4f4f6" font-size="16.5" font-weight="700">10 SEP 2025<tspan fill="#9b9ba3" font-weight="400">&#160;&#160;&#8212; SU-BTT departs Provo, 07:14 am</tspan></text>
-<text x="990" y="933" fill="#f4f4f6" font-size="16.5" font-weight="700">10 SEP 2025<tspan fill="#9b9ba3" font-weight="400">&#160;&#160;&#8212; SU-BND still on the ground at 2:29 pm &#8212; it never leaves</tspan></text>
-<text x="990" y="972" fill="#f4f4f6" font-size="16.5">Charlie Kirk is killed at UVU, Orem &#8212; 7 miles away &#8212; at 12:23 pm</text>
-<line x1="990" y1="986" x2="1638" y2="986" stroke="#3a3a42" stroke-width="1"/>
-<text x="990" y="1008" fill="#9b9ba3" font-size="15.5">Times are Mountain, read off the trace. A trace proves presence &#8212; never who was aboard.</text>
-<line x1="60" y1="1022" x2="1860" y2="1022" stroke="#3a3a42" stroke-width="1"/>
-<text x="60" y="1046" fill="#6e6e77" font-size="13.5">Claim counts are researcher tallies attributed to Candace Owens and others. Every fill is computed from raw ADS-B trace files recovered from adsb.lol and airplanes.live and kept in this repo, measured point-by-point: corroborated = within 15 km of the claimed field that day.</text>
-<text x="60" y="1065" fill="#6e6e77" font-size="13.5">Dotted bars are days no free archive reaches &#8212; a retention limit, tested against unrelated control aircraft, not evidence of anything. Erika Kirk&#8217;s itinerary has never been published, so no trace can place her aboard. Nothing here is a finding of wrongdoing by any living person.</text>
+<rect x="60" y="830" width="596" height="150" fill="none" stroke="#3a3a42" stroke-width="1.5" rx="4"/>
+<rect x="80" y="845" width="17" height="17" fill="#f4f4f6"/>
+<text x="110" y="859" fill="#9b9ba3" font-size="15.5">corroborated &#8212; a trace we hold puts the jet at the claimed field</text>
+<rect x="80" y="877" width="17" height="17" fill="url(#hatche0a33e)" stroke="#9b9ba3" stroke-width="1.4"/>
+<text x="110" y="891" fill="#9b9ba3" font-size="15.5">right area, wrong field &#8212; within 50 miles, not at the airport named</text>
+<rect x="80.8" y="909.8" width="15.4" height="15.4" fill="none" stroke="#9b9ba3" stroke-width="1.6"/>
+<text x="110" y="923" fill="#9b9ba3" font-size="15.5">refuted &#8212; a trace we hold puts the jet somewhere else</text>
+<rect x="80.8" y="941.8" width="15.4" height="15.4" fill="none" stroke="#6e6e77" stroke-width="1.4" stroke-dasharray="3 3"/>
+<text x="110" y="955" fill="#9b9ba3" font-size="15.5">not testable &#8212; no archive reaches back, or no aircraft was named</text>
+<line x1="1519.8" y1="752" x2="1664.0" y2="772" stroke="#3a3a42" stroke-width="1.1"/>
+<line x1="1505.8" y1="752" x2="1004.0" y2="772" stroke="#3a3a42" stroke-width="1.1"/>
+<rect x="964" y="772" width="700" height="222" fill="#1b1b1f" stroke="#f4f4f6" stroke-width="1.6" rx="4"/>
+<text x="990" y="806" fill="#e0a33e" font-size="18" font-weight="700" letter-spacing="1.1">WHAT THE RECOVERED TRACES SHOW AT PROVO</text>
+<text x="990" y="836" fill="#f4f4f6" font-size="16.5" font-weight="700">4 SEP 2025<tspan fill="#9b9ba3" font-weight="400">&#160;&#160;&#8212; SU-BTT lands Provo, 12:45 pm &#8212; inbound from 8,100 km out</tspan></text>
+<text x="990" y="862" fill="#f4f4f6" font-size="16.5" font-weight="700">5&#8211;10 SEP<tspan fill="#9b9ba3" font-weight="400">&#160;&#160;&#8212; SU-BND transmits from the ground at Provo every day</tspan></text>
+<text x="990" y="888" fill="#f4f4f6" font-size="16.5" font-weight="700">10 SEP 2025<tspan fill="#9b9ba3" font-weight="400">&#160;&#160;&#8212; SU-BTT departs Provo, 07:14 am</tspan></text>
+<text x="990" y="914" fill="#f4f4f6" font-size="16.5" font-weight="700">10 SEP 2025<tspan fill="#9b9ba3" font-weight="400">&#160;&#160;&#8212; SU-BND still on the ground at 2:29 pm &#8212; it never leaves</tspan></text>
+<text x="990" y="950" fill="#f4f4f6" font-size="16.5">Charlie Kirk is killed at UVU, Orem &#8212; 7 miles away &#8212; at 12:23 pm</text>
+<line x1="990" y1="963" x2="1638" y2="963" stroke="#3a3a42" stroke-width="1"/>
+<text x="990" y="984" fill="#9b9ba3" font-size="15.5">Times are Mountain, read off the trace. A trace proves presence &#8212; never who was aboard.</text>
+<line x1="60" y1="1006" x2="1860" y2="1006" stroke="#3a3a42" stroke-width="1"/>
+<text x="60" y="1024" fill="#6e6e77" font-size="13">Claim counts are researcher tallies attributed to Candace Owens and others. Every fill is computed from raw ADS-B trace files recovered from adsb.lol and airplanes.live and kept in this repo,</text>
+<text x="60" y="1040" fill="#6e6e77" font-size="13">measured point-by-point: corroborated = within 15 km of the claimed field that day. Dotted bars could not be tested &#8212; either no free archive reaches that day, or an archive that was serving other</text>
+<text x="60" y="1056" fill="#6e6e77" font-size="13">aircraft did not hear this one. Control aircraft with no connection to this case were queried on the same dates to tell those apart, and neither is evidence of anything. Erika Kirk&#8217;s itinerary has never</text>
+<text x="60" y="1072" fill="#6e6e77" font-size="13">been published, so no trace can place her aboard. Nothing here is a finding of wrongdoing by any living person.</text>
 </svg>
