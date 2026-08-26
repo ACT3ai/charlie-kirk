@@ -1,0 +1,14 @@
+visit_date,tail,ground_airport,event_slug,event_date,event_city,event_who,attendee_class,event_airport,same_airport,dist_to_event_city_mi,dist_to_event_airport_mi,gap_days,score,bucket_pm3,tail_date_in_overlaps_csv,source
+2025-09-10,SU-BND,KPVU,20250910_orem,2025-09-10,"Orem, UT",Charlie,CHARLIE_ONLY,KPVU,yes,4.9,0.8,+0,0.049,SAME_AIRPORT,yes,adsb-lol;airplanes-live
+2025-09-10,SU-BTT,KPVU,20250910_orem,2025-09-10,"Orem, UT",Charlie,CHARLIE_ONLY,KPVU,yes,5.0,0.8,+0,0.05,SAME_AIRPORT,yes,adsb-lol;airplanes-live
+2024-04-23,SU-BTT,KPVU,20240423_salt_lake_city,2024-04-23,"Salt Lake City, UT",Charlie,CHARLIE_ONLY,KSLC,no,35.9,41.3,+0,0.359,SAME_METRO,yes,adsb-lol;airplanes-live
+2025-09-09,SU-BND,KPVU,20250910_orem,2025-09-10,"Orem, UT",Charlie,CHARLIE_ONLY,KPVU,yes,4.9,0.8,-1,0.383,SAME_AIRPORT,no,adsb-lol;airplanes-live
+2025-09-08,SU-BND,KPVU,20250910_orem,2025-09-10,"Orem, UT",Charlie,CHARLIE_ONLY,KPVU,yes,4.9,0.8,-2,0.716,SAME_AIRPORT,no,adsb-lol;airplanes-live
+2025-09-12,SU-BND,KPVU,20250910_orem,2025-09-10,"Orem, UT",Charlie,CHARLIE_ONLY,KPVU,yes,5.0,0.8,+2,0.716,SAME_AIRPORT,no,adsb-lol;airplanes-live
+2025-09-07,SU-BND,KPVU,20250910_orem,2025-09-10,"Orem, UT",Charlie,CHARLIE_ONLY,KPVU,yes,4.9,0.8,-3,1.049,SAME_AIRPORT,no,adsb-lol;airplanes-live
+2025-09-06,SU-BND,KPVU,20250910_orem,2025-09-10,"Orem, UT",Charlie,CHARLIE_ONLY,KPVU,yes,4.9,0.8,-4,1.383,DISTANT,no,adsb-lol;airplanes-live
+2024-04-19,SU-BND,KSLC,20240423_salt_lake_city,2024-04-23,"Salt Lake City, UT",Charlie,CHARLIE_ONLY,KSLC,yes,5.6,1.1,-4,1.39,KNOWN_TRANSIT,yes,adsb-lol;airplanes-live
+2024-04-19,SU-BND,KPVU,20240423_salt_lake_city,2024-04-23,"Salt Lake City, UT",Charlie,CHARLIE_ONLY,KSLC,no,35.7,41.0,-4,1.69,DISTANT,yes,adsb-lol;airplanes-live
+2025-09-05,SU-BND,KPVU,20250910_orem,2025-09-10,"Orem, UT",Charlie,CHARLIE_ONLY,KPVU,yes,5.0,0.9,-5,1.717,DISTANT,no,adsb-lol;airplanes-live
+2024-04-28,SU-BTT,KPVU,20240423_salt_lake_city,2024-04-23,"Salt Lake City, UT",Charlie,CHARLIE_ONLY,KSLC,no,35.4,40.7,+5,2.02,DISTANT,yes,adsb-lol;airplanes-live
+2025-09-04,SU-BTT,KPVU,20250910_orem,2025-09-10,"Orem, UT",Charlie,CHARLIE_ONLY,KPVU,yes,5.1,0.6,-6,2.051,DISTANT,yes,adsb-lol;airplanes-live

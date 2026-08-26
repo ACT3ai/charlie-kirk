@@ -64,7 +64,6 @@ marginTop:'0.5rem'}}>
 <div>
 
 * [The survey plane one digit away](/Planes/N59906/overview)
-* [John Cullen's flight research](/Influencers/john-cullen)
 * [Independent investigators and X researchers](/Influencers/overview)
 
 </div>
