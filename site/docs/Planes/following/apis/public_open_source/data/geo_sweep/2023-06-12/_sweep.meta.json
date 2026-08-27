@@ -1,27 +1,27 @@
 {
-  "sweep_date": "2023-04-02",
-  "retrieved_utc": "2026-08-26T20:36:27.295984+00:00",
+  "sweep_date": "2023-06-12",
+  "retrieved_utc": "2026-08-27T00:25:48.017895+00:00",
   "source": "adsblol-github-backup",
   "github_repo": "adsblol/globe_history_2023",
-  "release_tag": "v2023.04.02-planes-readsb-prod-0",
+  "release_tag": "v2023.06.12-planes-readsb-prod-0",
   "asset_urls": [
-    "https://github.com/adsblol/globe_history_2023/releases/download/v2023.04.02-planes-readsb-prod-0/v2023.04.02-planes-readsb-prod-0.tar"
+    "https://github.com/adsblol/globe_history_2023/releases/download/v2023.06.12-planes-readsb-prod-0/v2023.06.12-planes-readsb-prod-0.tar"
   ],
   "licence": "Open Database Licence (ODbL), adsb.lol",
   "radius_mi": 50.0,
   "circles": [
     {
-      "key": "20230402_jefferson_city",
+      "key": "20230611_grapevine",
       "kind": "event",
-      "city": "Jefferson City",
-      "state": "MO",
-      "lat": 38.5912017822,
-      "lon": -92.15609741210001,
+      "city": "Grapevine",
+      "state": "TX",
+      "lat": 32.934969,
+      "lon": -97.075912,
       "radius_mi": 50.0,
-      "offset_days": 0,
-      "center_basis": "ourairports_municipality_centroid",
-      "event_date": "2023-04-02",
-      "who": "TPUSA"
+      "offset_days": 1,
+      "center_basis": "us_census_2024_gazetteer",
+      "event_date": "2023-06-11",
+      "who": "Charlie"
     },
     {
       "key": "control_des_moines",
@@ -104,12 +104,16 @@
   ],
   "prefilter": true,
   "status": "SWEPT",
-  "aircraft_in_archive": 33712,
-  "deep_parsed": 11759,
-  "archive_bytes_streamed": 550688248,
-  "hits": 3360,
-  "distinct_aircraft_in_circles": 2896,
-  "flagged_aircraft_stored": 0,
-  "seconds": 493.7,
+  "curl_exit": 0,
+  "archive_bytes_expected": 1180661760,
+  "archive_bytes_read_from_wire": 1180661760,
+  "truncation_error": null,
+  "aircraft_in_archive": 40138,
+  "deep_parsed": 14920,
+  "archive_bytes_streamed": 947049037,
+  "hits": 6699,
+  "distinct_aircraft_in_circles": 5074,
+  "flagged_aircraft_stored": 32,
+  "seconds": 151.4,
   "note": "A swept day with no hits means the archive was ASKED and held nothing inside these circles. It is not evidence that no aircraft was there: a volunteer network heard nothing, and transponder-off, out-of-coverage and a wrong claimed date all look identical from here."
 }

@@ -282,7 +282,73 @@ def resolve_field(lat, lon):
 # The archive
 # --------------------------------------------------------------------------
 
-def asset_urls(date_iso, timeout=30):
+class _Counting:
+    """Counts bytes actually read off the pipe.
+
+    The completeness test compares this against the assets' total Content-Length.
+    It must NOT be computed from tar member sizes: a tar pads every member to a
+    512-byte boundary and prefixes a 512-byte header, and members that are not
+    traces are skipped entirely, so member payload always undershoots the wire
+    figure and every day looks truncated. That mistake fired on the first
+    attempt at this check and is why the counter lives here instead."""
+
+    def __init__(self, fh):
+        self._fh = fh
+        self.count = 0
+
+    def read(self, n=-1):
+        b = self._fh.read(n)
+        self.count += len(b)
+        return b
+
+    def close(self):
+        return self._fh.close()
+
+
+def _probe(url, timeout=45, tries=4):
+    """PRESENT / ABSENT / UNKNOWN — and the three are never merged.
+
+    THIS FUNCTION EXISTS BECAUSE IT GOT THIS WRONG ONCE. The first version
+    treated any non-200 as "the archive does not have this day", ran eight
+    concurrent multi-gigabyte streams alongside it, and wrote
+    NO_RELEASE_FOR_THIS_DATE onto 230 of 278 dates. Every one of those days was
+    checked by hand afterwards and the release was there. A timeout under load
+    had been recorded as an archive fact.
+
+    So: only an HTTP 404 means ABSENT. A timeout, a reset, a 429 or a 5xx means
+    UNKNOWN, is retried with backoff, and if it still will not resolve the day
+    is left UNSWEPT rather than written down as empty. An unasked question and
+    an answered one are different things and this repo does not merge them.
+    """
+    last = None
+    for i in range(tries):
+        r = subprocess.run(["curl", "-sS", "-L", "-r", "0-1", "--max-time", str(timeout),
+                            "-o", os.devnull, "-w", "%{http_code}", url],
+                           capture_output=True, text=True)
+        code = r.stdout.strip()
+        last = code
+        if code in ("200", "206"):
+            return "PRESENT", code
+        if code == "404":
+            return "ABSENT", code
+        time.sleep(2 ** i)                    # 1s, 2s, 4s, 8s
+    return "UNKNOWN", last
+
+
+def content_length(url, timeout=45):
+    """Total asset size, read out of the Content-Range of a 2-byte GET.
+    Used to prove a stream ran to the end rather than dying quietly."""
+    r = subprocess.run(["curl", "-sS", "-L", "-r", "0-1", "-D", "-", "--max-time", str(timeout),
+                        "-o", os.devnull, url], capture_output=True, text=True)
+    for line in r.stdout.splitlines():
+        if line.lower().startswith("content-range:") and "/" in line:
+            tail = line.split("/")[-1].strip()
+            if tail.isdigit():
+                return int(tail)
+    return None
+
+
+def asset_urls(date_iso, timeout=45):
     """Locate one UTC day in the GitHub backup WITHOUT touching the GitHub API.
 
     The API allows 60 unauthenticated requests an hour and a full sweep needs
@@ -297,38 +363,35 @@ def asset_urls(date_iso, timeout=30):
     """
     y, m, d = date_iso.split("-")
     tag = TAG.format(y=y, m=m, d=d)
-    years = [int(y), int(y) - 1, int(y) + 1]
-    for yr in years:
+    unknown = False
+    for yr in (int(y), int(y) - 1, int(y) + 1):
         repo = REPO.format(year=yr)
         base = DL.format(repo=repo, tag=tag, asset="")
-        single = base + tag + ".tar"
-        if _exists(single, timeout):
-            return [single], repo, tag
+        st, _ = _probe(base + tag + ".tar", timeout)
+        if st == "PRESENT":
+            return [base + tag + ".tar"], repo, tag, "OK"
+        if st == "UNKNOWN":
+            unknown = True
         parts, suf = [], 0
-        while True:
-            name = f"{tag}.tar.a{chr(ord('a') + suf)}"
-            url = base + name
-            if not _exists(url, timeout):
-                break
-            parts.append(url)
-            suf += 1
-            if suf > 25:
-                break
+        while suf <= 25:
+            url = base + f"{tag}.tar.a{chr(ord('a') + suf)}"
+            st, _ = _probe(url, timeout)
+            if st == "PRESENT":
+                parts.append(url)
+                suf += 1
+                continue
+            if st == "UNKNOWN":
+                unknown = True
+            break
         if parts:
-            return parts, repo, tag
-    return [], None, tag
-
-
-def _exists(url, timeout=30):
-    p = subprocess.run(["curl", "-sL", "-r", "0-1", "--max-time", str(timeout),
-                        "-o", os.devnull, "-w", "%{http_code}", url],
-                       capture_output=True, text=True)
-    return p.stdout.strip() in ("200", "206")
+            return parts, repo, tag, "OK"
+    # Nothing found. Say WHICH kind of nothing.
+    return [], None, tag, ("PROBE_UNRESOLVED" if unknown else "ABSENT")
 
 
 def sweep_date(date_iso, circles, outdir, prefilter=True, timeout=30, verbose=True):
     """Stream one UTC day and return the hits. Nothing but hits touches disk."""
-    urls, repo, tag = asset_urls(date_iso, timeout)
+    urls, repo, tag, probe_verdict = asset_urls(date_iso, timeout)
     meta = {
         "sweep_date": date_iso, "retrieved_utc": utcnow(), "source": "adsblol-github-backup",
         "github_repo": repo, "release_tag": tag, "asset_urls": urls,
@@ -343,11 +406,30 @@ def sweep_date(date_iso, circles, outdir, prefilter=True, timeout=30, verbose=Tr
         "prefilter": prefilter,
     }
     if not urls:
-        meta.update(status="NO_RELEASE_FOR_THIS_DATE", aircraft_in_archive=0, hits=0,
-                    note="The backup has no prod release for this UTC day. That is an "
-                         "ARCHIVE fact, not an aircraft fact, and it is not evidence "
-                         "that anything was or was not here.")
+        if probe_verdict == "ABSENT":
+            meta.update(status="NO_RELEASE_FOR_THIS_DATE", aircraft_in_archive=0, hits=0,
+                        note="Every candidate asset URL returned HTTP 404. The backup has "
+                             "no prod release for this UTC day. That is an ARCHIVE fact, "
+                             "not an aircraft fact, and it is not evidence that anything "
+                             "was or was not here.")
+        else:
+            meta.update(status="PROBE_UNRESOLVED", aircraft_in_archive=0, hits=0,
+                        note="The probe never got a clean answer — timeouts or transient "
+                             "errors, not a 404. THIS DAY IS UNSWEPT AND UNKNOWN. It must "
+                             "never be counted as an empty day; re-run it. Recording a "
+                             "timeout as an archive fact is the exact mistake that put a "
+                             "false NO_RELEASE on 230 dates on 26 Aug 2026.")
         return [], meta
+
+    # What SHOULD cross the wire, so a stream that dies halfway cannot be
+    # written down as a completed sweep.
+    expected = 0
+    for u in urls:
+        n = content_length(u, timeout)
+        if n is None:
+            expected = None
+            break
+        expected += n
 
     pl, po = prefilter_patterns(circles) if prefilter else ([], [])
     t0 = time.time()
@@ -355,11 +437,15 @@ def sweep_date(date_iso, circles, outdir, prefilter=True, timeout=30, verbose=Tr
     hits = []
     keep = {}
 
-    proc = subprocess.Popen(["curl", "-sL", "--max-time", "5400"] + urls,
+    truncated = None
+    proc = subprocess.Popen(["curl", "-sS", "-L", "--retry", "3", "--retry-delay", "3",
+                             "--retry-all-errors", "--speed-time", "120", "--speed-limit", "1024",
+                             "--max-time", "10800"] + urls,
                             stdout=subprocess.PIPE, stderr=subprocess.DEVNULL,
                             bufsize=1024 * 1024)
+    wire = _Counting(proc.stdout)
     try:
-        tf = tarfile.open(fileobj=proc.stdout, mode="r|")
+        tf = tarfile.open(fileobj=wire, mode="r|")
         for m in tf:
             if not m.isfile() or "trace_full_" not in m.name:
                 continue
@@ -367,8 +453,9 @@ def sweep_date(date_iso, circles, outdir, prefilter=True, timeout=30, verbose=Tr
             n_bytes += m.size
             try:
                 raw = tf.extractfile(m).read()
-            except Exception:
-                break                       # truncated stream; recorded below
+            except Exception as ex:
+                truncated = f"{type(ex).__name__}: {ex}"
+                break
             try:
                 b = gzip.decompress(raw)
             except Exception:
@@ -421,6 +508,8 @@ def sweep_date(date_iso, circles, outdir, prefilter=True, timeout=30, verbose=Tr
             if store_worthy(reasons, got):
                 keep[d.get("icao")] = b
         tf.close()
+    except Exception as ex:
+        truncated = truncated or f"{type(ex).__name__}: {ex}"
     finally:
         try:
             proc.stdout.close()
@@ -438,16 +527,31 @@ def sweep_date(date_iso, circles, outdir, prefilter=True, timeout=30, verbose=Tr
             with gzip.open(path, "wb") as fh:
                 fh.write(b)
 
-    meta.update(status="SWEPT", aircraft_in_archive=n_files, deep_parsed=n_deep,
+    # A short stream is NOT a sweep. Recording one as complete would silently
+    # publish a fraction of the sky as if it were all of it -- the 26 Aug 2026
+    # run read 39,076 aircraft for 10 September against 74,405 on a clean pull
+    # and called both SWEPT.
+    short = expected is not None and wire.count < expected * 0.999
+    status = "TRUNCATED" if (truncated or short) else "SWEPT"
+
+    meta.update(status=status, curl_exit=proc.returncode,
+                archive_bytes_expected=expected,
+                archive_bytes_read_from_wire=wire.count,
+                truncation_error=truncated,
+                aircraft_in_archive=n_files, deep_parsed=n_deep,
                 archive_bytes_streamed=n_bytes, hits=len(hits),
                 distinct_aircraft_in_circles=len({h["hex"] for h in hits}),
                 flagged_aircraft_stored=len(keep),
                 seconds=round(time.time() - t0, 1),
-                note="A swept day with no hits means the archive was ASKED and held "
+                note=("THIS DAY IS INCOMPLETE. The stream ended early, so the counts below "
+                      "are a FRACTION of the day and mean nothing on their own. Re-sweep it; "
+                      "do not quote it, and do not treat a missing aircraft here as absent."
+                      if status == "TRUNCATED" else
+                      "A swept day with no hits means the archive was ASKED and held "
                      "nothing inside these circles. It is not evidence that no "
                      "aircraft was there: a volunteer network heard nothing, and "
-                     "transponder-off, out-of-coverage and a wrong claimed date all "
-                     "look identical from here.")
+                      "transponder-off, out-of-coverage and a wrong claimed date all "
+                      "look identical from here."))
     return hits, meta
 
 
@@ -511,7 +615,16 @@ def write_day(date_iso, hits, meta):
 
 
 def already_swept(date_iso):
-    return os.path.exists(os.path.join(OUT_ROOT, date_iso, "_sweep.meta.json"))
+    """Only a CLEAN result counts as done. A TRUNCATED or PROBE_UNRESOLVED day is
+    an open question, so a resumed run picks it up again instead of inheriting a
+    partial answer forever."""
+    mp = os.path.join(OUT_ROOT, date_iso, "_sweep.meta.json")
+    if not os.path.exists(mp):
+        return False
+    try:
+        return json.load(open(mp)).get("status") in ("SWEPT", "NO_RELEASE_FOR_THIS_DATE")
+    except Exception:
+        return False
 
 
 def open_hits(date_iso):

@@ -67,6 +67,14 @@ def rows():
             d = os.path.join(root, day)
             if not os.path.isdir(d):
                 continue
+            mp = os.path.join(d, "_sweep.meta.json")
+            if os.path.exists(mp):
+                try:
+                    if json.load(open(mp)).get("status") not in (
+                            "SWEPT", "NO_RELEASE_FOR_THIS_DATE"):
+                        continue      # TRUNCATED / PROBE_UNRESOLVED: an open question,
+                except Exception:     # not a result. Never fold it into a total.
+                    continue
             for name in ("hits.csv.gz", "hits.csv"):
                 p = os.path.join(d, name)
                 if not os.path.exists(p):
@@ -77,6 +85,32 @@ def rows():
                         r["_source"] = os.path.basename(root)
                         yield r
                 break
+
+
+# Scheduled airliners. A 50-mile circle around Grapevine TX is a circle around
+# DFW, and a sweep of it returns Qatar, Emirates, Lufthansa and British Airways
+# widebodies on the ground every single day. They are not a finding, they are an
+# airline timetable. Tagged rather than deleted, and both figures are reported,
+# because the tag is a heuristic on the type code and heuristics get things
+# wrong -- a head-of-state aircraft is very often an airliner type.
+AIRLINER_TYPES = (
+    "A19", "A20", "A21", "A22", "A30", "A31", "A32", "A33", "A34", "A35", "A38",
+    "B37", "B38", "B39", "B73", "B74", "B75", "B76", "B77", "B78", "BCS",
+    "CRJ", "CR7", "CR9", "DH8", "AT4", "AT5", "AT7", "E17", "E19", "E29",
+    "E75", "E90", "E95", "MD8", "MD9", "B461", "B462", "B463",
+)
+AIRLINE_WORDS = ("AIRLINE", "AIRWAYS", "AIR CANADA", "WESTJET", "LUFTHANSA", "EMIRATES",
+                 "QATAR", "DELTA", "UNITED AIR", "AMERICAN AIR", "SOUTHWEST",
+                 "ALASKA AIR", "JETBLUE", "SPIRIT", "FRONTIER", "AER LINGUS",
+                 "KLM", "BRITISH AIR", "AIR FRANCE", "TURKISH", "SUNWING",
+                 "PORTER AIR", "FLAIR", "AIR TRANSAT", "CARGO", "FEDERAL EXPRESS",
+                 "UNITED PARCEL", "ATLAS AIR", "KALITTA", "AIRBUS", "BOEING COMPANY")
+
+
+def is_airliner(r):
+    t = (r.get("type") or "").upper()
+    own = (r.get("own_op") or "").upper()
+    return t.startswith(AIRLINER_TYPES) or any(w in own for w in AIRLINE_WORDS)
 
 
 def is_ground(r):
@@ -114,12 +148,14 @@ def main():
 
     def stats(rs, ndays):
         g = [r for r in rs if is_ground(r)]
-        n = [r for r in g if notable(r)]
+        n_all = [r for r in g if notable(r)]
+        n = [r for r in n_all if not is_airliner(r)]
         ladd = [r for r in g if "dbflag:LADD" in r["flag_reasons"]]
         return {
             "circle_days": ndays,
             "aircraft_entering": len({r["hex"] for r in rs}),
             "on_ground": len({r["hex"] for r in g}),
+            "notable_on_ground_incl_airliners": len({r["hex"] for r in n_all}),
             "notable_on_ground": len({r["hex"] for r in n}),
             "ladd_on_ground": len({r["hex"] for r in ladd}),
             "notable_on_ground_per_circle_day": round(len(n) / ndays, 2) if ndays else 0,
@@ -136,7 +172,8 @@ def main():
         for label, k in [("circle-days swept", "circle_days"),
                          ("distinct aircraft entering the circle", "aircraft_entering"),
                          ("distinct aircraft ON THE GROUND", "on_ground"),
-                         ("  of those, foreign/unreg/military/PIA", "notable_on_ground"),
+                         ("  foreign/unreg/mil/PIA incl. airliners", "notable_on_ground_incl_airliners"),
+                         ("  the same, SCHEDULED AIRLINERS REMOVED", "notable_on_ground"),
                          ("  of those, FAA LADD-listed", "ladd_on_ground"),
                          ("notable on the ground PER CIRCLE-DAY", "notable_on_ground_per_circle_day"),
                          ("LADD on the ground PER CIRCLE-DAY", "ladd_on_ground_per_circle_day")]:
@@ -158,7 +195,7 @@ def main():
                                             "controls": set(), "reg": "", "type": "",
                                             "own": "", "reasons": set(), "fields": set()})
     for r in all_rows:
-        if not (is_ground(r) and notable(r)):
+        if not (is_ground(r) and notable(r)) or is_airliner(r):
             continue
         s = seen[r["hex"]]
         s["reg"] = s["reg"] or r["reg"]

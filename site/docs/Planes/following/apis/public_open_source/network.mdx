@@ -164,12 +164,19 @@ The sweep turns the question inside out:
 Code: `apis/public_open_source/code/geo_sweep.py`, with the target builder in `code/lib/targets.py`.
 No dependencies, Python 3.
 
+**Status, as of 26 August 2026: the sweep is running.** The engine, the target set and the control
+design are finished and validated; the 278-date collection run is in flight and takes hours of
+streaming. The single-day results below are complete and checked. **The site-wide totals are not
+published until the run finishes**, because a partial sweep quoted as a total is the same error as
+a truncated stream quoted as a day.
+
 **How it works.** Each sourced US speaking event in `tpusa_events.csv` becomes a **circle**: the US
 Census centroid of the event city, **50 miles** in radius, which contains every airport within 50
 miles of that city by construction. Each event is widened to **±1 day** so an arrival the evening
 before and a departure the morning after are both inside the window — a UTC day boundary falls in
-the middle of the American evening, so this is not optional. That produces **187 event-days across
-278 UTC dates**. For each date the whole day's tar is **streamed and never stored**: `curl` pipes it
+the middle of the American evening, so this is not optional. That produces **152 sweepable event-days across
+278 UTC dates** — 187 event-days sit on the map, and **35 of them fall below the archive's 2023
+floor** and cannot be swept at all. For each date the whole day's tar is **streamed and never stored**: `curl` pipes it
 into Python, each aircraft is decompressed in memory, and a byte pre-filter discards the ~92% that
 were never in the right degree square before any JSON is parsed.
 
@@ -189,6 +196,33 @@ were within 50 miles of Des Moines that day. This investigation has already had 
 [retract one published finding](/Planes/Flight-Data-Recovery/overview) for skipping a control test,
 and the control is built into the sweep rather than bolted on afterwards so it cannot be skipped
 again.
+
+### Two mistakes this sweep made before it produced anything
+
+Both were caught by checks built into the tool, both were the same mistake in different clothes,
+and both are on this page because
+[the last time this investigation skipped a check it published something false](/Planes/Flight-Data-Recovery/overview).
+
+**It recorded a timeout as an archive fact.** The first version treated any non-200 response from
+the release probe as *"the backup has no release for this day"*, and ran it alongside eight
+concurrent multi-gigabyte downloads. It wrote **NO RELEASE FOR THIS DATE onto 230 of 278 dates.**
+Every one of those days was then checked by hand and **the release was there every time** — the
+probe had simply timed out under its own load. Had that shipped, this page would have published a
+mass absence in a public archive that does not exist. The probe now treats **only an HTTP 404** as
+absence; a timeout, a reset, a 429 or a 5xx is retried and, if it still will not resolve, the day is
+left explicitly **unswept and unknown** rather than counted as empty.
+
+**It recorded a truncated download as a complete day.** A stream that died three-quarters of the
+way through still wrote `status: SWEPT`. On 10 September that meant **39,076 aircraft recorded for a
+day that actually holds 74,405** — and nothing in the output said so. A researcher reading it would
+have concluded an aircraft was absent when the file describing it simply never arrived. Each day's
+expected byte count is now read from the asset's `Content-Length` before the pull and compared
+against the bytes actually taken off the wire; a short read is marked **TRUNCATED**, excluded from
+every total, and automatically re-swept.
+
+The shared lesson is the one this section keeps relearning: **an unasked question, an answered
+question, and a question whose answer got lost in transit look identical from the outside, and
+merging any two of them manufactures a finding.**
 
 ## What the sweep found on the day itself
 
@@ -250,9 +284,11 @@ sweep is quoted anywhere else on this site.
   thirty, which can place an aircraft somewhere but can never support a rate.
 * **PIA defeats it.** An aircraft on a Privacy ICAO Address is in the archive as a real track with no
   identity attached. It is not hidden; it is anonymous, which is different and harder.
-* **31 event rows are not swept at all.** Two name only a month rather than a date, five have no
-  usable city, and 28 of the 2022 rows fall below the archive floor. They are listed by name in
-  `data/geo_sweep/targets.json` rather than quietly dropped.
+* **42 event-days are not swept at all.** **35** fall below the archive's 2023 floor, **two** rows
+  name only a month rather than a date, and **five** have no usable city — the event source says
+  `UNKNOWN` or `AMBIGUOUS` and this repo does not fill a city in from memory. Every one is listed by
+  name in `data/geo_sweep/targets.json` rather than quietly dropped, because a gap named is worth
+  more than a gap hidden.
 
 ## Do it yourself
 
