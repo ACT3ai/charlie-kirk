@@ -1,0 +1,30 @@
+{
+  "sweep_date": "2022-06-01",
+  "retrieved_utc": "2026-08-27T01:07:37.649483+00:00",
+  "source": "adsbexchange-samples",
+  "index_url": "https://samples.adsbexchange.com/traces/2022/06/01/index.json",
+  "sample_basis": "ADS-B Exchange free monthly sample: ONE DAY A MONTH, always the 1st. A hit fixes a position on this date and says NOTHING about frequency. 36 of this investigation's 38 US event-days in 2022 are not covered by this or by any other free source.",
+  "circles": [
+    {
+      "key": "20220602_grapevine",
+      "kind": "event",
+      "city": "Grapevine",
+      "state": "TX",
+      "lat": 32.934969,
+      "lon": -97.075912,
+      "radius_mi": 50.0,
+      "offset_days": -1,
+      "event_date": "2022-06-02"
+    }
+  ],
+  "status": "SWEPT",
+  "aircraft_in_index": 75026,
+  "aircraft_in_archive": 75026,
+  "not_retrievable": 0,
+  "deep_parsed": 6625,
+  "archive_bytes": 13135230901,
+  "hits": 2258,
+  "distinct_aircraft_in_circles": 2258,
+  "flagged_aircraft_stored": 71,
+  "seconds": 7995.7
+}
