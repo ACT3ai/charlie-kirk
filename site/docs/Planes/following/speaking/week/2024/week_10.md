@@ -523,3 +523,21 @@ Search twitter and x.com posts for where Charlie Kirk or TPUSA has public speaki
 **Notes on other search results:** Many unrelated posts appeared in broader searches (e.g., political commentary, sports references to "Charlie Kirk," or unrelated events). No additional specific upcoming speaking events for Charlie Kirk/TPUSA were identified in the exact date range beyond the Live Free Tour (Candace Owens at UNC Chapel Hill on ~March 6, University of Tennessee Knoxville prior, upcoming with Charlie Kirk at Cal Poly SLO on March 7), the Cal Poly SLO Change My Mind tabling (March 7), the announced Cal State Fullerton event (March 14), and the University of Memphis TPUSA chapter event with Kyle Rittenhouse (later in March, facing protests). All posts within the week range are captured above. No posts found referencing events strictly between March 4-10 outside these.
 ```
 
+
+---
+
+{/* CK_NEW_EVIDENCE_LINKS:START */}
+
+## Flight-record pages for what is on this page
+
+This investigation keeps one page per airport and one page per recorded ground contact, built directly from the recovered ADS-B traces. These are the ones that fall inside **2024-03-04 to 2024-03-10**, the range this page covers.
+
+**No tracked aircraft was on the ground near a sourced event in this window.** Across 2024-03-04 to 2024-03-10 the recovered traces record no contact. That is a coverage statement as much as anything — see the limits on the linked pages.
+
+**The two indexes:**
+
+* [Every airport in this investigation](/Planes/Airports/overview) — 290 fields, each with its complete recovered ground-visit and flight-leg record
+* [Every interesting date, all aircraft](/Planes/Incidents/overview) — 147 ground contacts near a sourced event, across 110 pages
+* [Investigating Deleted Flights](/Planes/investigating_deleted_flights) — how the data was recovered, how much of it we hold, and where it is still missing
+
+{/* CK_NEW_EVIDENCE_LINKS:END */}

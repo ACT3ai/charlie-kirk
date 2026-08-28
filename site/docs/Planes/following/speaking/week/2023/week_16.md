@@ -457,3 +457,21 @@ Search twitter and x.com posts for where Charlie Kirk or TPUSA has public speaki
 No other posts in the results (across keyword searches for terms like "speaking", "event", "campus event", "will speak", "tour", etc., or semantic search for events/appearances in the exact week) referenced additional Charlie Kirk or TPUSA speaking events, tours, or appearances between April 16–22, 2023. The primary confirmed event discussed is the planned TPUSA campus event at SFSU featuring Jon Root (canceled/revoked by the university, originally set for ~April 20, 2023, per context). All data is pulled directly from the tool results.
 ```
 
+
+---
+
+{/* CK_NEW_EVIDENCE_LINKS:START */}
+
+## Flight-record pages for what is on this page
+
+This investigation keeps one page per airport and one page per recorded ground contact, built directly from the recovered ADS-B traces. These are the ones that fall inside **2023-04-16 to 2023-04-22**, the range this page covers.
+
+**No tracked aircraft was on the ground near a sourced event in this window.** Across 2023-04-16 to 2023-04-22 the recovered traces record no contact. That is a coverage statement as much as anything — see the limits on the linked pages.
+
+**The two indexes:**
+
+* [Every airport in this investigation](/Planes/Airports/overview) — 290 fields, each with its complete recovered ground-visit and flight-leg record
+* [Every interesting date, all aircraft](/Planes/Incidents/overview) — 147 ground contacts near a sourced event, across 110 pages
+* [Investigating Deleted Flights](/Planes/investigating_deleted_flights) — how the data was recovered, how much of it we hold, and where it is still missing
+
+{/* CK_NEW_EVIDENCE_LINKS:END */}

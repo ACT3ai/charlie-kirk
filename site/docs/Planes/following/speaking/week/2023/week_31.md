@@ -498,3 +498,21 @@ Search twitter and x.com posts for where Charlie Kirk or TPUSA has public speaki
 No direct posts from @TPUSA official account in the results for this exact range. No other specific dates/locations for Charlie Kirk personal speaking appearances found in the searched posts. All data extracted directly from tool outputs without alteration.
 ```
 
+
+---
+
+{/* CK_NEW_EVIDENCE_LINKS:START */}
+
+## Flight-record pages for what is on this page
+
+This investigation keeps one page per airport and one page per recorded ground contact, built directly from the recovered ADS-B traces. These are the ones that fall inside **2023-07-30 to 2023-08-05**, the range this page covers.
+
+**No tracked aircraft was on the ground near a sourced event in this window.** Across 2023-07-30 to 2023-08-05 the recovered traces record no contact. That is a coverage statement as much as anything — see the limits on the linked pages.
+
+**The two indexes:**
+
+* [Every airport in this investigation](/Planes/Airports/overview) — 290 fields, each with its complete recovered ground-visit and flight-leg record
+* [Every interesting date, all aircraft](/Planes/Incidents/overview) — 147 ground contacts near a sourced event, across 110 pages
+* [Investigating Deleted Flights](/Planes/investigating_deleted_flights) — how the data was recovered, how much of it we hold, and where it is still missing
+
+{/* CK_NEW_EVIDENCE_LINKS:END */}

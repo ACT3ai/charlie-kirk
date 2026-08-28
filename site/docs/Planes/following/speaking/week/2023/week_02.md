@@ -684,3 +684,21 @@ All results overlapped with or duplicated the above (e.g., duplicates of posts 0
 **Notes on data completeness:** Searches covered multiple variants (basic, links filter, min_faves, semantic) and returned ~70 total items (many duplicates across calls). No posts describe Charlie Kirk personally speaking at a public event, campus visit, or TPUSA tour stop *during* the specified week. Mentions of TPUSA activities are limited to chapter work, legal/news references, or promotions for events outside the date range (e.g., March 2023 Kentucky stop, January 12–14 Louisiana for Scott Presler, future Nashville tour). All raw data is presented above without alteration.
 ```
 
+
+---
+
+{/* CK_NEW_EVIDENCE_LINKS:START */}
+
+## Flight-record pages for what is on this page
+
+This investigation keeps one page per airport and one page per recorded ground contact, built directly from the recovered ADS-B traces. These are the ones that fall inside **2023-01-08 to 2023-01-14**, the range this page covers.
+
+**No tracked aircraft was on the ground near a sourced event in this window.** Across 2023-01-08 to 2023-01-14 the recovered traces record no contact. That is a coverage statement as much as anything — see the limits on the linked pages.
+
+**The two indexes:**
+
+* [Every airport in this investigation](/Planes/Airports/overview) — 290 fields, each with its complete recovered ground-visit and flight-leg record
+* [Every interesting date, all aircraft](/Planes/Incidents/overview) — 147 ground contacts near a sourced event, across 110 pages
+* [Investigating Deleted Flights](/Planes/investigating_deleted_flights) — how the data was recovered, how much of it we hold, and where it is still missing
+
+{/* CK_NEW_EVIDENCE_LINKS:END */}

@@ -514,3 +514,26 @@ Search twitter and x.com posts for where Charlie Kirk or TPUSA has public speaki
 This includes **all data** returned by the tools for the exact date range.
 ```
 
+
+---
+
+{/* CK_NEW_EVIDENCE_LINKS:START */}
+
+## Flight-record pages for what is on this page
+
+This investigation keeps one page per airport and one page per recorded ground contact, built directly from the recovered ADS-B traces. These are the ones that fall inside **2025-07-09 to 2025-07-15**, the range this page covers.
+
+**Ground contacts near a sourced Charlie / Erika / TPUSA event:**
+
+| Date (UTC) | Aircraft | Airport | City, State | Whose event | When |
+|---|---|---|---|---|---|
+| [2025-07-10](/Planes/Incidents/N582MM-2025-07-10-KTPA) | [N582MM](/Planes/N582MM/overview) | [KTPA](/Planes/Airports/KTPA) | Tampa, FL | Charlie | Day after |
+| [2025-07-13](/Planes/Incidents/N582MM-2025-07-13-KTPA) | [N582MM](/Planes/N582MM/overview) | [KTPA](/Planes/Airports/KTPA) | Tampa, FL | Charlie | Day after |
+
+**The two indexes:**
+
+* [Every airport in this investigation](/Planes/Airports/overview) — 290 fields, each with its complete recovered ground-visit and flight-leg record
+* [Every interesting date, all aircraft](/Planes/Incidents/overview) — 147 ground contacts near a sourced event, across 110 pages
+* [Investigating Deleted Flights](/Planes/investigating_deleted_flights) — how the data was recovered, how much of it we hold, and where it is still missing
+
+{/* CK_NEW_EVIDENCE_LINKS:END */}

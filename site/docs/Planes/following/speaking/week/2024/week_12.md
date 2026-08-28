@@ -598,3 +598,29 @@ Search twitter and x.com posts for where Charlie Kirk or TPUSA has public speaki
 No additional posts were found in the date range that explicitly announce new upcoming speaking events by Charlie Kirk himself beyond the referenced Live Free Tour/Prove Me Wrong tabling stops (San Diego State University/SDSU on or around March 18, University of Pittsburgh on March 19, UNLV on March 21). Multiple posts reference the March 20 University of Memphis event with Kyle Rittenhouse (TPUSA-sponsored, disrupted by protesters). All data is raw and unfiltered from the tool results.
 ```
 
+
+---
+
+{/* CK_NEW_EVIDENCE_LINKS:START */}
+
+## Flight-record pages for what is on this page
+
+This investigation keeps one page per airport and one page per recorded ground contact, built directly from the recovered ADS-B traces. These are the ones that fall inside **2024-03-18 to 2024-03-24**, the range this page covers.
+
+**Ground contacts near a sourced Charlie / Erika / TPUSA event:**
+
+| Date (UTC) | Aircraft | Airport | City, State | Whose event | When |
+|---|---|---|---|---|---|
+| [2024-03-18](/Planes/Incidents/N560TW-2024-03-18-KSDL) | [N560TW](/Planes/N560TW/overview) | [KSDL](/Planes/Airports/KSDL) | Scottsdale, AZ | Charlie | Day before |
+| [2024-03-19](/Planes/Incidents/N582MM-2024-03-19-KAGC) | [N582MM](/Planes/N582MM/overview) | [KAGC](/Planes/Airports/KAGC) | Pittsburgh, PA | TPUSA | **Same day** |
+| [2024-03-19](/Planes/Incidents/N582MM-2024-03-19-KSAN) | [N582MM](/Planes/N582MM/overview) | [KSAN](/Planes/Airports/KSAN) | San Diego, CA | Charlie | Day after |
+| [2024-03-19](/Planes/Incidents/N582MM-2024-03-19-KSDL) | [N582MM](/Planes/N582MM/overview) | [KSDL](/Planes/Airports/KSDL) | Scottsdale, AZ | Charlie | **Same day** |
+| [2024-03-21](/Planes/Incidents/N582MM-2024-03-21-KLAS) | [N582MM](/Planes/N582MM/overview) | [KLAS](/Planes/Airports/KLAS) | Las Vegas, NV | Charlie | **Same day** |
+
+**The two indexes:**
+
+* [Every airport in this investigation](/Planes/Airports/overview) — 290 fields, each with its complete recovered ground-visit and flight-leg record
+* [Every interesting date, all aircraft](/Planes/Incidents/overview) — 147 ground contacts near a sourced event, across 110 pages
+* [Investigating Deleted Flights](/Planes/investigating_deleted_flights) — how the data was recovered, how much of it we hold, and where it is still missing
+
+{/* CK_NEW_EVIDENCE_LINKS:END */}

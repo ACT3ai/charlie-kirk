@@ -257,3 +257,28 @@ All matching or relevant posts from the tool results are included below in full 
 No other posts in the date range announced or detailed additional Charlie Kirk/TPUSA speaking events, tours, or appearances specifically for April 22–28, 2024. References to past/recent campus tabling (e.g., Univ of Utah), TPUSA Faith events, pro-life actions in Arizona, and alleged campus disruptions are the only matches. Future events (e.g., June conventions) were mentioned in unrelated posts outside the strict date filter. All data from tool results is provided verbatim above.
 ```
 
+
+---
+
+{/* CK_NEW_EVIDENCE_LINKS:START */}
+
+## Flight-record pages for what is on this page
+
+This investigation keeps one page per airport and one page per recorded ground contact, built directly from the recovered ADS-B traces. These are the ones that fall inside **2024-04-22 to 2024-04-28**, the range this page covers.
+
+**Ground contacts near a sourced Charlie / Erika / TPUSA event:**
+
+| Date (UTC) | Aircraft | Airport | City, State | Whose event | When |
+|---|---|---|---|---|---|
+| [2024-04-23](/Planes/Incidents/N582MM-2024-04-23-KSLC) | [N582MM](/Planes/N582MM/overview) | [KSLC](/Planes/Airports/KSLC) | Salt Lake City, UT | Charlie | **Same day** |
+| [2024-04-23](/Planes/Incidents/N888KG-2024-04-23-KPVU) | [N888KG](/Planes/N888KG/overview) | [KPVU](/Planes/Airports/KPVU) | Provo, UT | Charlie | **Same day** |
+| [2024-04-23](/Planes/Incidents/SU-BTT-2024-04-23-KPVU) | [SU-BTT](/Planes/SU-BTT/overview) | [KPVU](/Planes/Airports/KPVU) | Provo, UT | Charlie | **Same day** |
+| [2024-04-24](/Planes/Incidents/N582MM-2024-04-24-KSLC) | [N582MM](/Planes/N582MM/overview) | [KSLC](/Planes/Airports/KSLC) | Salt Lake City, UT | Charlie | Day after |
+
+**The two indexes:**
+
+* [Every airport in this investigation](/Planes/Airports/overview) — 290 fields, each with its complete recovered ground-visit and flight-leg record
+* [Every interesting date, all aircraft](/Planes/Incidents/overview) — 147 ground contacts near a sourced event, across 110 pages
+* [Investigating Deleted Flights](/Planes/investigating_deleted_flights) — how the data was recovered, how much of it we hold, and where it is still missing
+
+{/* CK_NEW_EVIDENCE_LINKS:END */}

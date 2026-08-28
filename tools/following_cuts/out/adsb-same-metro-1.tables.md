@@ -8,7 +8,7 @@
 
 | Row | Date claimed | Who the sheet claims was present | Erika location as the sheet gives it | Sourced Kirk / TPUSA appearance same day | Venue | Local time | Nearest airport to that venue | Kirk-side aircraft on record |
 |---|---|---|---|---|---|---|---|---|
-| [OWENS-012](/Planes/following/overlap/20230414_KS_wichita_owens_012/overview) | **14 April 2023** | Charlie: **not claimed** · Erika: **claimed** | Kansas | **None.** No sourced Kirk or TPUSA appearance within three days, anywhere. | — | — | — | *none recorded* |
+| [OWENS-012](/Planes/following/overlap/20230414_KS_wichita_owens_012/overview) | **14 April 2023** | Charlie: **not claimed** · Erika: **claimed** | Kansas | **None same-day.** **Register's nearest sourced appearance:** TPUSA Faith Kingdom to the Capitol Topeka KS 2023-04-23 (register: 9 days away) | — | — | — | *none recorded* |
 
 ## TABLE C — sourcing and both verdicts
 

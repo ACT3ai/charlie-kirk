@@ -516,3 +516,21 @@ Search twitter and x.com posts for where Charlie Kirk or TPUSA has public speaki
 All other posts from the searches (e.g., [post:1], [post:2], [post:4], [post:7], [post:8], [post:12], [post:14], [post:16], [post:18], [post:20]–[post:22], [post:24]–[post:26], [post:28], [post:29]–[post:31], [post:36]–[post:38], [post:40]–[post:45]) were unrelated to specific speaking events/locations for Charlie Kirk or TPUSA in the requested date range and were excluded from this compilation. No additional relevant posts were found in the targeted searches for Purdue, Riley Gaines/OU, or general event keywords within the exact week.
 ```
 
+
+---
+
+{/* CK_NEW_EVIDENCE_LINKS:START */}
+
+## Flight-record pages for what is on this page
+
+This investigation keeps one page per airport and one page per recorded ground contact, built directly from the recovered ADS-B traces. These are the ones that fall inside **2025-03-26 to 2025-04-01**, the range this page covers.
+
+**No tracked aircraft was on the ground near a sourced event in this window.** Across 2025-03-26 to 2025-04-01 the recovered traces record no contact. That is a coverage statement as much as anything — see the limits on the linked pages.
+
+**The two indexes:**
+
+* [Every airport in this investigation](/Planes/Airports/overview) — 290 fields, each with its complete recovered ground-visit and flight-leg record
+* [Every interesting date, all aircraft](/Planes/Incidents/overview) — 147 ground contacts near a sourced event, across 110 pages
+* [Investigating Deleted Flights](/Planes/investigating_deleted_flights) — how the data was recovered, how much of it we hold, and where it is still missing
+
+{/* CK_NEW_EVIDENCE_LINKS:END */}

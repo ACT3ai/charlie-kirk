@@ -1185,6 +1185,61 @@ FILE:
   counts as an "overlap". Read it before computing or disputing one.
 
 
+=== Generated Plane Pages (added 2026-08-28) ===
+
+Most of what a reader sees under `/Planes/` is now GENERATED from the recovered
+ADS-B data rather than written by hand. Every generator writes ONLY between its
+own markers, so all of them are idempotent and safe to re-run.
+
+DIR:
+* site/docs/Planes/Airports/: **NEW page type.** One page per airport (290) that
+  a case aircraft was on the ground at, or flew a recovered leg into or out of.
+  Each carries the field's identity, every recovered ground visit with times,
+  every leg, and the sourced events near it. Control-airliner-only fields get NO
+  page on purpose — the controls test the archives, they are not case record.
+* site/docs/Planes/Incidents/: **NEW page type.** One page per (tail, UTC date,
+  field) ground contact within 50 miles of a sourced event — 147 contacts across
+  110 pages. Several ground segments on one day at one field are ONE page with
+  both segments, never two pages colliding on a filename.
+
+FILE (all under following/apis/public_open_source/code/):
+* rebuild_plane_pages.sh: **run this, not the scripts individually.** Order
+  matters — the airport and incident pages must exist before any table links to
+  them, because links are gated on page existence.
+* lib/pagefacts.py: shared fact resolution. Airport identity (case-curated
+  airports.csv, then the 85,945-row OurAirports database this pipeline already
+  downloaded), date maths, MDX-safe cells, and marker splicing. `ap_link()`
+  links an airport ONLY if its page exists.
+* build_interesting_dates.py: per-aircraft "interesting dates" table. Writes
+  analysis/interesting_dates.json, which every other generator reads.
+* build_airport_incident_pages.py: creates the two new page types above.
+* build_flight_record.py: per-aircraft "where it actually went" — every
+  recovered leg and every airport touched.
+* build_following_tables.py: the Charlie-side and Erika-side following tables.
+* build_event_aircraft.py: per speaking-event blind-sweep result.
+* build_overlap_verdicts.py: the ADS-B verdict on each of the 85 claimed
+  overlaps.
+* link_new_evidence.py: adds inbound links on every visible page to the airport
+  and contact pages that page actually mentions.
+
+THREE TRAPS THESE GENERATORS EXIST TO AVOID. All three were live defects found
+while building them, and any future work on this data must not reintroduce them:
+
+* **THE TWO CSVs DISAGREE ON THE SIGN OF THEIR OFFSET COLUMN.**
+  `master_proximity.csv` stores `event_date - visit_date`; `geo_ground_foreign.csv`
+  stores `sweep_date - event_date`. Reading one as the other turns *the day
+  before the assassination* into *the day after*. Never use either column —
+  recompute from the dates, which is what `days_between()` is for.
+* **`dbflag:LADD` IS NOT SUSPICIOUS.** 12,889 of the ~16,000 rows in
+  geo_ground_foreign.csv carry only the FAA's Limiting Aircraft Data Displayed
+  privacy flag; at Provo that is mostly flight-school Cessna 172s. Printing the
+  raw "notable" count beside a Kirk event would claim ~50 suspicious aircraft
+  where ~45 are trainers whose owner filed a routine form. LADD is always broken
+  out, labelled ordinary, and excluded from any named table.
+* **TWO GROUND SEGMENTS IN A DAY ARE A FLIGHT, NOT A WAIT.** Merging them hides
+  it — N59906 on 10 September 2025 is exactly this case. Segments are listed
+  separately and the page says what the gap between them means.
+
 === Infographics ===
 
 DIR:

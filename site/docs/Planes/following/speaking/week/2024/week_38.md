@@ -648,3 +648,26 @@ Search twitter and x.com posts for where Charlie Kirk or TPUSA has public speaki
 This captures **all data** from the tool results within the exact date range. No additional posts were found in the searches that explicitly announced future speaking dates for Charlie Kirk or TPUSA beyond the referenced tours/events above. The “You’re Being Brainwashed Tour” (with stops implied at Pitt, Penn State, K-State) and the Scottsdale “Make America Healthy Again” townhall are the primary events highlighted in this period. The Rescue the Republic event is noted as upcoming on Sept. 29.
 ```
 
+
+---
+
+{/* CK_NEW_EVIDENCE_LINKS:START */}
+
+## Flight-record pages for what is on this page
+
+This investigation keeps one page per airport and one page per recorded ground contact, built directly from the recovered ADS-B traces. These are the ones that fall inside **2024-09-16 to 2024-09-22**, the range this page covers.
+
+**Ground contacts near a sourced Charlie / Erika / TPUSA event:**
+
+| Date (UTC) | Aircraft | Airport | City, State | Whose event | When |
+|---|---|---|---|---|---|
+| [2024-09-18](/Planes/Incidents/N582MM-2024-09-18-KAGC) | [N582MM](/Planes/N582MM/overview) | [KAGC](/Planes/Airports/KAGC) | Pittsburgh, PA | Charlie | **Same day** |
+| [2024-09-19](/Planes/Incidents/N582MM-2024-09-19-KUNV) | [N582MM](/Planes/N582MM/overview) | [KUNV](/Planes/Airports/KUNV) | University Park, PA | Charlie | **Same day** |
+
+**The two indexes:**
+
+* [Every airport in this investigation](/Planes/Airports/overview) — 290 fields, each with its complete recovered ground-visit and flight-leg record
+* [Every interesting date, all aircraft](/Planes/Incidents/overview) — 147 ground contacts near a sourced event, across 110 pages
+* [Investigating Deleted Flights](/Planes/investigating_deleted_flights) — how the data was recovered, how much of it we hold, and where it is still missing
+
+{/* CK_NEW_EVIDENCE_LINKS:END */}

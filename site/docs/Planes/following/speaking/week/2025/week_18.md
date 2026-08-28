@@ -421,3 +421,29 @@ Search twitter and x.com posts for where Charlie Kirk or TPUSA has public speaki
 **No other posts matched the exact date range and search criteria in the tool outputs.** All data above is included verbatim as returned.
 ```
 
+
+---
+
+{/* CK_NEW_EVIDENCE_LINKS:START */}
+
+## Flight-record pages for what is on this page
+
+This investigation keeps one page per airport and one page per recorded ground contact, built directly from the recovered ADS-B traces. These are the ones that fall inside **2025-04-30 to 2025-05-06**, the range this page covers.
+
+**Ground contacts near a sourced Charlie / Erika / TPUSA event:**
+
+| Date (UTC) | Aircraft | Airport | City, State | Whose event | When |
+|---|---|---|---|---|---|
+| [2025-04-30](/Planes/Incidents/N872RA-2025-04-30-KCRQ) | [N872RA](/Planes/N872RA/overview) | [KCRQ](/Planes/Airports/KCRQ) | Carlsbad, CA | Charlie | Day before |
+| [2025-05-01](/Planes/Incidents/N40JD-2025-05-01-KSAN) | [N40JD](/Planes/N40JD/overview) | [KSAN](/Planes/Airports/KSAN) | San Diego, CA | Charlie | **Same day** |
+| [2025-05-01](/Planes/Incidents/N582MM-2025-05-01-KSAN) | [N582MM](/Planes/N582MM/overview) | [KSAN](/Planes/Airports/KSAN) | San Diego, CA | Charlie | **Same day** |
+| [2025-05-01](/Planes/Incidents/N872RA-2025-05-01-KSAN) | [N872RA](/Planes/N872RA/overview) | [KSAN](/Planes/Airports/KSAN) | San Diego, CA | Charlie | **Same day** |
+| [2025-05-06](/Planes/Incidents/N582MM-2025-05-06-KSFO) | [N582MM](/Planes/N582MM/overview) | [KSFO](/Planes/Airports/KSFO) | San Francisco, CA | Charlie | **Same day** |
+
+**The two indexes:**
+
+* [Every airport in this investigation](/Planes/Airports/overview) — 290 fields, each with its complete recovered ground-visit and flight-leg record
+* [Every interesting date, all aircraft](/Planes/Incidents/overview) — 147 ground contacts near a sourced event, across 110 pages
+* [Investigating Deleted Flights](/Planes/investigating_deleted_flights) — how the data was recovered, how much of it we hold, and where it is still missing
+
+{/* CK_NEW_EVIDENCE_LINKS:END */}

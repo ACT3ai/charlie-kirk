@@ -29,6 +29,9 @@ import re
 import sys
 from collections import defaultdict
 
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "lib"))
+import pagefacts as _pf  # noqa: E402
+
 ROOT = os.path.expanduser("~/BGit/Bryan_git/charlie-kirk")
 PLANES = os.path.join(ROOT, "site/docs/Planes")
 FOLLOWING = os.path.join(PLANES, "following")
@@ -395,12 +398,13 @@ def incident_table(rows, defs, show_tail=False):
             mi = f"{float(r['miles']):.1f}"
         except (TypeError, ValueError):
             mi = "—"
-        cells = [r["date"], r["win"]]
+        inc_url = f"/Planes/Incidents/{r['tail']}-{r['date']}-{r['airport']}"
+        cells = [f"[{r['date']}]({inc_url})", r["win"]]
         if show_tail:
             cells.insert(0, f"**{r['tail']}**")
         cells += [
             esc(r["who"]),
-            f"**{r['airport']}**",
+            _pf.ap_link(r["airport"], bold=True),
             esc(r["place"]),
             ev,
             esc(ecity),
@@ -415,11 +419,13 @@ def incident_table(rows, defs, show_tail=False):
 
 def provo_table(rows):
     """Foreign-fleet ground presence at Provo, event or not."""
-    out = ["| Date (UTC) | Aircraft | Ground window (UTC) | km from field | Ground fixes |",
-           "|---|---|---|---:|---:|"]
+    out = ["| Date (UTC) | Aircraft | Ground window (UTC) | km from field | "
+           "Ground fixes | Field |",
+           "|---|---|---|---:|---:|---|"]
     for r in rows:
         out.append(
-            f"| {r['date']} | **{r['tail']}** | {r['win']} | {r['km']} | {r['points']} |"
+            f"| {r['date']} | **{r['tail']}** | {r['win']} | {r['km']} | "
+            f"{r['points']} | [KPVU](/Planes/Airports/KPVU) |"
         )
     return "\n".join(out)
 
@@ -512,6 +518,16 @@ def build_block_for_tail(tail, rows, defs, all_ground):
         L.append(provo_table(all_ground))
         L.append("")
 
+    L.append(
+        "Each date above opens its own page with the full record for that "
+        "contact — the exact ground window, the archives that hold it, the "
+        "other aircraft at the same field, and what it does and does not "
+        "establish. Each airport code opens that field's complete recovered "
+        "record. See also "
+        "[every interesting date across all aircraft](/Planes/Incidents/overview) "
+        "and [every airport in this investigation](/Planes/Airports/overview)."
+    )
+    L.append("")
     L.append(
         "*Built by `build_interesting_dates.py` from the recovered traces. "
         "See [Investigating Deleted Flights](/Planes/investigating_deleted_flights) "

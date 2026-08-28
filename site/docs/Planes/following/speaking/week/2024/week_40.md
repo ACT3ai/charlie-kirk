@@ -642,3 +642,25 @@ I included **every matching post** returned by the searches (no summarization or
 - All content is directly from the tool results. No external links or media were altered. If more posts exist beyond the tool limits, they were not returned in these searches.
 ```
 
+
+---
+
+{/* CK_NEW_EVIDENCE_LINKS:START */}
+
+## Flight-record pages for what is on this page
+
+This investigation keeps one page per airport and one page per recorded ground contact, built directly from the recovered ADS-B traces. These are the ones that fall inside **2024-09-30 to 2024-10-06**, the range this page covers.
+
+**Ground contacts near a sourced Charlie / Erika / TPUSA event:**
+
+| Date (UTC) | Aircraft | Airport | City, State | Whose event | When |
+|---|---|---|---|---|---|
+| [2024-09-30](/Planes/Incidents/N582MM-2024-09-30-KMSO) | [N582MM](/Planes/N582MM/overview) | [KMSO](/Planes/Airports/KMSO) | Missoula, MT | Charlie | **Same day** |
+
+**The two indexes:**
+
+* [Every airport in this investigation](/Planes/Airports/overview) — 290 fields, each with its complete recovered ground-visit and flight-leg record
+* [Every interesting date, all aircraft](/Planes/Incidents/overview) — 147 ground contacts near a sourced event, across 110 pages
+* [Investigating Deleted Flights](/Planes/investigating_deleted_flights) — how the data was recovered, how much of it we hold, and where it is still missing
+
+{/* CK_NEW_EVIDENCE_LINKS:END */}

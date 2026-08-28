@@ -454,3 +454,26 @@ Search twitter and x.com posts for where Charlie Kirk or TPUSA has public speaki
 No other posts in the tool results directly announced or described additional public speaking events, speeches, or tour stops for Charlie Kirk or TPUSA strictly within March 12–18, 2025. All retrieved data is included above.
 ```
 
+
+---
+
+{/* CK_NEW_EVIDENCE_LINKS:START */}
+
+## Flight-record pages for what is on this page
+
+This investigation keeps one page per airport and one page per recorded ground contact, built directly from the recovered ADS-B traces. These are the ones that fall inside **2025-03-12 to 2025-03-18**, the range this page covers.
+
+**Ground contacts near a sourced Charlie / Erika / TPUSA event:**
+
+| Date (UTC) | Aircraft | Airport | City, State | Whose event | When |
+|---|---|---|---|---|---|
+| [2025-03-13](/Planes/Incidents/N582MM-2025-03-13-KTYS) | [N582MM](/Planes/N582MM/overview) | [KTYS](/Planes/Airports/KTYS) | Knoxville, TN | Charlie | **Same day** |
+| [2025-03-18](/Planes/Incidents/N582MM-2025-03-18-KLZU) | [N582MM](/Planes/N582MM/overview) | [KLZU](/Planes/Airports/KLZU) | Lawrenceville, GA | Charlie | **Same day** |
+
+**The two indexes:**
+
+* [Every airport in this investigation](/Planes/Airports/overview) — 290 fields, each with its complete recovered ground-visit and flight-leg record
+* [Every interesting date, all aircraft](/Planes/Incidents/overview) — 147 ground contacts near a sourced event, across 110 pages
+* [Investigating Deleted Flights](/Planes/investigating_deleted_flights) — how the data was recovered, how much of it we hold, and where it is still missing
+
+{/* CK_NEW_EVIDENCE_LINKS:END */}

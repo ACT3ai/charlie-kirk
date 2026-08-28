@@ -649,3 +649,29 @@ Search twitter and x.com posts for where Charlie Kirk or TPUSA has public speaki
 **No other posts in the exact date range from the searches matched the criteria for public speaking events or appearances by Charlie Kirk or TPUSA.** All data pulled directly from tool results.
 ```
 
+
+---
+
+{/* CK_NEW_EVIDENCE_LINKS:START */}
+
+## Flight-record pages for what is on this page
+
+This investigation keeps one page per airport and one page per recorded ground contact, built directly from the recovered ADS-B traces. These are the ones that fall inside **2024-09-09 to 2024-09-15**, the range this page covers.
+
+**Ground contacts near a sourced Charlie / Erika / TPUSA event:**
+
+| Date (UTC) | Aircraft | Airport | City, State | Whose event | When |
+|---|---|---|---|---|---|
+| [2024-09-10](/Planes/Incidents/N582MM-2024-09-10-KBJC) | [N582MM](/Planes/N582MM/overview) | [KBJC](/Planes/Airports/KBJC) | Boulder, CO | Charlie | **Same day** |
+| [2024-09-10](/Planes/Incidents/N872RA-2024-09-10-KAPA) | [N872RA](/Planes/N872RA/overview) | [KAPA](/Planes/Airports/KAPA) | Denver, CO | Charlie | **Same day** |
+| [2024-09-11](/Planes/Incidents/N582MM-2024-09-11-KDAL) | [N582MM](/Planes/N582MM/overview) | [KDAL](/Planes/Airports/KDAL) | Dallas, TX | Charlie | **Same day** |
+| [2024-09-11](/Planes/Incidents/N872RA-2024-09-11-KAPA) | [N872RA](/Planes/N872RA/overview) | [KAPA](/Planes/Airports/KAPA) | Denver, CO | Charlie | Day after |
+| [2024-09-12](/Planes/Incidents/N582MM-2024-09-12-KDAL) | [N582MM](/Planes/N582MM/overview) | [KDAL](/Planes/Airports/KDAL) | Dallas, TX | Charlie | Day after |
+
+**The two indexes:**
+
+* [Every airport in this investigation](/Planes/Airports/overview) — 290 fields, each with its complete recovered ground-visit and flight-leg record
+* [Every interesting date, all aircraft](/Planes/Incidents/overview) — 147 ground contacts near a sourced event, across 110 pages
+* [Investigating Deleted Flights](/Planes/investigating_deleted_flights) — how the data was recovered, how much of it we hold, and where it is still missing
+
+{/* CK_NEW_EVIDENCE_LINKS:END */}

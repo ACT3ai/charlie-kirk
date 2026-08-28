@@ -814,3 +814,21 @@ No posts from @charliekirk11 were found in the range. All direct matches and con
 No other posts matched the search criteria for public speaking events or appearances by Charlie Kirk or TPUSA in the exact week. Future events (e.g., Oct 14 Ohio, Oct 16 Oklahoma) were mentioned but fall outside the date range. All data pulled directly from tool results.
 ```
 
+
+---
+
+{/* CK_NEW_EVIDENCE_LINKS:START */}
+
+## Flight-record pages for what is on this page
+
+This investigation keeps one page per airport and one page per recorded ground contact, built directly from the recovered ADS-B traces. These are the ones that fall inside **2025-10-01 to 2025-10-07**, the range this page covers.
+
+**No tracked aircraft was on the ground near a sourced event in this window.** Across 2025-10-01 to 2025-10-07 the recovered traces record no contact. That is a coverage statement as much as anything — see the limits on the linked pages.
+
+**The two indexes:**
+
+* [Every airport in this investigation](/Planes/Airports/overview) — 290 fields, each with its complete recovered ground-visit and flight-leg record
+* [Every interesting date, all aircraft](/Planes/Incidents/overview) — 147 ground contacts near a sourced event, across 110 pages
+* [Investigating Deleted Flights](/Planes/investigating_deleted_flights) — how the data was recovered, how much of it we hold, and where it is still missing
+
+{/* CK_NEW_EVIDENCE_LINKS:END */}

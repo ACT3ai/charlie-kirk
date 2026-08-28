@@ -10,9 +10,9 @@
 
 | Row | Date claimed | Who the sheet claims was present | Erika location as the sheet gives it | Sourced Kirk / TPUSA appearance same day | Venue | Local time | Nearest airport to that venue | Kirk-side aircraft on record |
 |---|---|---|---|---|---|---|---|---|
-| [OWENS-015](/Planes/following/overlap/20230509_MO_st_louis_then_goose_bay_owens_015/overview) | **9 May 2023** | Charlie: **not claimed** · Erika: **claimed** | Missouri / Cairo | **None.** No sourced Kirk or TPUSA appearance within three days, anywhere. | — | — | — | *none recorded* |
-| [OWENS-050](/Planes/following/overlap/20230512_MO_st_louis_owens_050/overview) | **12 May 2023** | Charlie: **not claimed** · Erika: **claimed** | Missouri / Cairo | **None.** No sourced Kirk or TPUSA appearance within three days, anywhere. | — | — | — | *none recorded* |
-| [OWENS-036](/Planes/following/overlap/20250618_NE_omaha_lincoln_owens_036/overview) | **18 June 2025** | Charlie: **not claimed** · Erika: **claimed** | Nebraska | **None.** No sourced Kirk or TPUSA appearance within three days, anywhere. | — | — | — | *none recorded* |
+| [OWENS-015](/Planes/following/overlap/20230509_MO_st_louis_then_goose_bay_owens_015/overview) | **9 May 2023** | Charlie: **not claimed** · Erika: **claimed** | Missouri / Cairo | **None same-day.** Neither this register's own nearest-event column nor a date join against the sourced speaking-events catalog finds a Kirk or TPUSA appearance within three days. | — | — | — | *none recorded* |
+| [OWENS-050](/Planes/following/overlap/20230512_MO_st_louis_owens_050/overview) | **12 May 2023** | Charlie: **not claimed** · Erika: **claimed** | Missouri / Cairo | **None same-day.** **Register's nearest sourced appearance:** none in MO mid-May 2023 (register, gap not stated) | — | — | — | *none recorded* |
+| [OWENS-036](/Planes/following/overlap/20250618_NE_omaha_lincoln_owens_036/overview) | **18 June 2025** | Charlie: **not claimed** · Erika: **claimed** | Nebraska | **None same-day.** **Register's nearest sourced appearance:** YWLS Grapevine TX 2025-06-13 to 2025-06-15 (the only well-dated joint Charlie-and-Erika appearance before Sept 10 — and no aircraft in Texas) (register, gap not stated) | — | — | — | *none recorded* |
 
 ## TABLE C — sourcing and both verdicts
 

@@ -430,3 +430,21 @@ Search twitter and x.com posts for where Charlie Kirk or TPUSA has public speaki
 **Note:** Additional searches for exact phrases like "Charlie Kirk speaking" or "TPUSA tour" within the date range primarily returned these results or unrelated content (e.g., general discussions of his legacy). No direct announcements of Charlie Kirk personally speaking at events in Sept 24-30 2025 appear in the results. TPUSA activities referenced include t-shirt giveaways at a college football game (Oregon vs. Penn State, planned for that weekend) and tributes/events honoring him. If more posts exist beyond the top/latest limits, they were not surfaced in these searches.
 ```
 
+
+---
+
+{/* CK_NEW_EVIDENCE_LINKS:START */}
+
+## Flight-record pages for what is on this page
+
+This investigation keeps one page per airport and one page per recorded ground contact, built directly from the recovered ADS-B traces. These are the ones that fall inside **2025-09-24 to 2025-09-30**, the range this page covers.
+
+**No tracked aircraft was on the ground near a sourced event in this window.** Across 2025-09-24 to 2025-09-30 the recovered traces record no contact. That is a coverage statement as much as anything — see the limits on the linked pages.
+
+**The two indexes:**
+
+* [Every airport in this investigation](/Planes/Airports/overview) — 290 fields, each with its complete recovered ground-visit and flight-leg record
+* [Every interesting date, all aircraft](/Planes/Incidents/overview) — 147 ground contacts near a sourced event, across 110 pages
+* [Investigating Deleted Flights](/Planes/investigating_deleted_flights) — how the data was recovered, how much of it we hold, and where it is still missing
+
+{/* CK_NEW_EVIDENCE_LINKS:END */}

@@ -604,3 +604,21 @@ All matching or closely related posts are included in full (no summarization or 
 **No other posts** in the full search results (including semantic search for "Charlie Kirk or TPUSA public speaking events, appearances, tours, or where Charlie will speak in May 2024") contained schedules, announcements, or details of Charlie Kirk/TPUSA public speaking events in the week of 2024-05-13 to 2024-05-19. The only concrete event reference is the **past May 7, 2024, Charlie Kirk event at UW** (with related counterprotest activity on May 14). Future events mentioned are in July/September 2024 or unrelated. All data from the tool results is reproduced exactly above.
 ```
 
+
+---
+
+{/* CK_NEW_EVIDENCE_LINKS:START */}
+
+## Flight-record pages for what is on this page
+
+This investigation keeps one page per airport and one page per recorded ground contact, built directly from the recovered ADS-B traces. These are the ones that fall inside **2024-05-13 to 2024-05-19**, the range this page covers.
+
+**No tracked aircraft was on the ground near a sourced event in this window.** Across 2024-05-13 to 2024-05-19 the recovered traces record no contact. That is a coverage statement as much as anything — see the limits on the linked pages.
+
+**The two indexes:**
+
+* [Every airport in this investigation](/Planes/Airports/overview) — 290 fields, each with its complete recovered ground-visit and flight-leg record
+* [Every interesting date, all aircraft](/Planes/Incidents/overview) — 147 ground contacts near a sourced event, across 110 pages
+* [Investigating Deleted Flights](/Planes/investigating_deleted_flights) — how the data was recovered, how much of it we hold, and where it is still missing
+
+{/* CK_NEW_EVIDENCE_LINKS:END */}

@@ -321,3 +321,21 @@ These are semantically related posts (not exact keyword matches); none announce 
 **Additional notes from all results:** The only explicit "speaking" reference tied to Charlie Kirk in the window is [post:14], noting him speaking at Capital One Arena on Jan 20 (inauguration-related, with quote provided). TPUSA mentions are limited to general chapter activity ([post:6], [post:9], [post:57]). No campus-specific events, tours, or future speaking schedules were posted in the range. All data from tool results is reproduced exactly above.
 ```
 
+
+---
+
+{/* CK_NEW_EVIDENCE_LINKS:START */}
+
+## Flight-record pages for what is on this page
+
+This investigation keeps one page per airport and one page per recorded ground contact, built directly from the recovered ADS-B traces. These are the ones that fall inside **2025-01-15 to 2025-01-21**, the range this page covers.
+
+**No tracked aircraft was on the ground near a sourced event in this window.** Across 2025-01-15 to 2025-01-21 the recovered traces record no contact. That is a coverage statement as much as anything — see the limits on the linked pages.
+
+**The two indexes:**
+
+* [Every airport in this investigation](/Planes/Airports/overview) — 290 fields, each with its complete recovered ground-visit and flight-leg record
+* [Every interesting date, all aircraft](/Planes/Incidents/overview) — 147 ground contacts near a sourced event, across 110 pages
+* [Investigating Deleted Flights](/Planes/investigating_deleted_flights) — how the data was recovered, how much of it we hold, and where it is still missing
+
+{/* CK_NEW_EVIDENCE_LINKS:END */}

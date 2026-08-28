@@ -407,3 +407,21 @@ Search twitter and x.com posts for where Charlie Kirk or TPUSA has public speaki
 No other posts in the searched results referenced specific public speaking events, tours, or appearances by Charlie Kirk or TPUSA within the exact week range (March 25–31, 2024). The primary confirmed event is the **Live Free Tour stop at Texas Tech University** (March 27, 2024 evening, with Charlie Kirk speaking; live stream noted). A separate TPUSA event at **Western Kentucky University (WKU)** featuring Kyle Rittenhouse was promoted for March 27, 2024, at 7pm. All full post content and engagement data included as retrieved.
 ```
 
+
+---
+
+{/* CK_NEW_EVIDENCE_LINKS:START */}
+
+## Flight-record pages for what is on this page
+
+This investigation keeps one page per airport and one page per recorded ground contact, built directly from the recovered ADS-B traces. These are the ones that fall inside **2024-03-25 to 2024-03-31**, the range this page covers.
+
+**No tracked aircraft was on the ground near a sourced event in this window.** Across 2024-03-25 to 2024-03-31 the recovered traces record no contact. That is a coverage statement as much as anything — see the limits on the linked pages.
+
+**The two indexes:**
+
+* [Every airport in this investigation](/Planes/Airports/overview) — 290 fields, each with its complete recovered ground-visit and flight-leg record
+* [Every interesting date, all aircraft](/Planes/Incidents/overview) — 147 ground contacts near a sourced event, across 110 pages
+* [Investigating Deleted Flights](/Planes/investigating_deleted_flights) — how the data was recovered, how much of it we hold, and where it is still missing
+
+{/* CK_NEW_EVIDENCE_LINKS:END */}

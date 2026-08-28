@@ -278,6 +278,36 @@ def splice(path, block, start, end, anchor=None):
     return False
 
 
+_KNOWN_AP = None
+
+
+def known_airports():
+    """The airport codes that actually have a page under /Planes/Airports/."""
+    global _KNOWN_AP
+    if _KNOWN_AP is None:
+        d = os.path.join(PLANES, "Airports")
+        _KNOWN_AP = set()
+        if os.path.isdir(d):
+            _KNOWN_AP = {f[:-4] for f in os.listdir(d)
+                         if f.endswith(".mdx") and f != "overview.mdx"}
+    return _KNOWN_AP
+
+
+def ap_link(code, bold=False):
+    """
+    Link an airport code ONLY if the page exists.  A sweep can name a field no
+    case aircraft ever touched (Offutt AFB, a private strip); linking those
+    would ship a 404, and inventing a page for them would bury the case record.
+    """
+    code = (code or "").strip()
+    if not code:
+        return "—"
+    label = f"**{code}**" if bold else code
+    if code in known_airports():
+        return f"[{label}](/Planes/Airports/{code})"
+    return label
+
+
 def read_csv(name, base=None):
     p = os.path.join(base or ANALYSIS, name)
     if not os.path.exists(p):

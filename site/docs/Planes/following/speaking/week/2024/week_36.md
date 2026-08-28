@@ -600,3 +600,29 @@ Posts are ordered by approximate recency within the tool results (newest first w
 This exhausts all results from the tool calls within the date range. No additional posts were found in the searches. All data is presented exactly as returned.
 ```
 
+
+---
+
+{/* CK_NEW_EVIDENCE_LINKS:START */}
+
+## Flight-record pages for what is on this page
+
+This investigation keeps one page per airport and one page per recorded ground contact, built directly from the recovered ADS-B traces. These are the ones that fall inside **2024-09-02 to 2024-09-08**, the range this page covers.
+
+**Ground contacts near a sourced Charlie / Erika / TPUSA event:**
+
+| Date (UTC) | Aircraft | Airport | City, State | Whose event | When |
+|---|---|---|---|---|---|
+| [2024-09-03](/Planes/Incidents/N560TW-2024-09-03-KSDL) | [N560TW](/Planes/N560TW/overview) | [KSDL](/Planes/Airports/KSDL) | Scottsdale, AZ | Charlie | **Same day** |
+| [2024-09-04](/Planes/Incidents/N2100L-2024-09-04-KMSN) | [N2100L](/Planes/N2100L/overview) | [KMSN](/Planes/Airports/KMSN) | Madison, WI | Charlie | Day before |
+| [2024-09-04](/Planes/Incidents/N560TW-2024-09-04-KSDL) | [N560TW](/Planes/N560TW/overview) | [KSDL](/Planes/Airports/KSDL) | Scottsdale, AZ | Charlie | Day after |
+| [2024-09-04](/Planes/Incidents/N582MM-2024-09-04-KPHX) | [N582MM](/Planes/N582MM/overview) | [KPHX](/Planes/Airports/KPHX) | Phoenix, AZ | Charlie | Day after |
+| [2024-09-05](/Planes/Incidents/N582MM-2024-09-05-KMSN) | [N582MM](/Planes/N582MM/overview) | [KMSN](/Planes/Airports/KMSN) | Madison, WI | Charlie | **Same day** |
+
+**The two indexes:**
+
+* [Every airport in this investigation](/Planes/Airports/overview) — 290 fields, each with its complete recovered ground-visit and flight-leg record
+* [Every interesting date, all aircraft](/Planes/Incidents/overview) — 147 ground contacts near a sourced event, across 110 pages
+* [Investigating Deleted Flights](/Planes/investigating_deleted_flights) — how the data was recovered, how much of it we hold, and where it is still missing
+
+{/* CK_NEW_EVIDENCE_LINKS:END */}

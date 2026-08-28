@@ -571,3 +571,21 @@ Here is what actually happened:
 **No other posts in the results referenced additional specific public speaking events, tours, or appearances by Charlie Kirk or TPUSA within the exact week of September 17–23, 2023.** The dominant theme across posts is the Northern Arizona University (NAU) campus visit/tabling/speaking event on or around September 19–20, 2023, including protests, media claims of heckling, and Kirk/TPUSA rebuttals. The "Made in America Tour" is promoted as an ongoing fall series but without specific dates in this window. The TPUSA Faith Pastor’s Summit speech is referenced retrospectively on September 17.
 ```
 
+
+---
+
+{/* CK_NEW_EVIDENCE_LINKS:START */}
+
+## Flight-record pages for what is on this page
+
+This investigation keeps one page per airport and one page per recorded ground contact, built directly from the recovered ADS-B traces. These are the ones that fall inside **2023-09-17 to 2023-09-23**, the range this page covers.
+
+**No tracked aircraft was on the ground near a sourced event in this window.** Across 2023-09-17 to 2023-09-23 the recovered traces record no contact. That is a coverage statement as much as anything — see the limits on the linked pages.
+
+**The two indexes:**
+
+* [Every airport in this investigation](/Planes/Airports/overview) — 290 fields, each with its complete recovered ground-visit and flight-leg record
+* [Every interesting date, all aircraft](/Planes/Incidents/overview) — 147 ground contacts near a sourced event, across 110 pages
+* [Investigating Deleted Flights](/Planes/investigating_deleted_flights) — how the data was recovered, how much of it we hold, and where it is still missing
+
+{/* CK_NEW_EVIDENCE_LINKS:END */}

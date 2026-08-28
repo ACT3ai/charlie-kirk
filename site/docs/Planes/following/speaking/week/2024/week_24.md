@@ -497,3 +497,25 @@ Search twitter and x.com posts for where Charlie Kirk or TPUSA has public speaki
 - No other Charlie Kirk or TPUSA speaking events, campus stops, tours, or locations identified in the date range. Tucker Carlson-related posts mention Charlie Kirk only as a future tour guest (September 2024 onward, not in this week).
 ```
 
+
+---
+
+{/* CK_NEW_EVIDENCE_LINKS:START */}
+
+## Flight-record pages for what is on this page
+
+This investigation keeps one page per airport and one page per recorded ground contact, built directly from the recovered ADS-B traces. These are the ones that fall inside **2024-06-10 to 2024-06-16**, the range this page covers.
+
+**Ground contacts near a sourced Charlie / Erika / TPUSA event:**
+
+| Date (UTC) | Aircraft | Airport | City, State | Whose event | When |
+|---|---|---|---|---|---|
+| [2024-06-15](/Planes/Incidents/N582MM-2024-06-15-KDTW) | [N582MM](/Planes/N582MM/overview) | [KDTW](/Planes/Airports/KDTW) | Romulus, MI | Charlie | Day after |
+
+**The two indexes:**
+
+* [Every airport in this investigation](/Planes/Airports/overview) — 290 fields, each with its complete recovered ground-visit and flight-leg record
+* [Every interesting date, all aircraft](/Planes/Incidents/overview) — 147 ground contacts near a sourced event, across 110 pages
+* [Investigating Deleted Flights](/Planes/investigating_deleted_flights) — how the data was recovered, how much of it we hold, and where it is still missing
+
+{/* CK_NEW_EVIDENCE_LINKS:END */}

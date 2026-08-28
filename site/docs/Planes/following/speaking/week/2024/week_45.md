@@ -334,3 +334,21 @@ All retrieved posts from keyword and semantic searches (including from @charliek
 **All other posts returned** (e.g., discussions of voter registration, election reactions, unrelated events, or quotes) contain no mentions of scheduled speaking events, tours, appearances, or locations for Charlie Kirk or TPUSA in the 2024-11-04 to 2024-11-10 window. Searches for specific terms like "Brainwashed Tour," "Prove Me Wrong," campus events, or combinations with locations (Seattle, Auburn, Phoenix/GCU, Georgia) yielded only historical references. No announcements of future events within or immediately after the range were found.
 ```
 
+
+---
+
+{/* CK_NEW_EVIDENCE_LINKS:START */}
+
+## Flight-record pages for what is on this page
+
+This investigation keeps one page per airport and one page per recorded ground contact, built directly from the recovered ADS-B traces. These are the ones that fall inside **2024-11-04 to 2024-11-10**, the range this page covers.
+
+**No tracked aircraft was on the ground near a sourced event in this window.** Across 2024-11-04 to 2024-11-10 the recovered traces record no contact. That is a coverage statement as much as anything — see the limits on the linked pages.
+
+**The two indexes:**
+
+* [Every airport in this investigation](/Planes/Airports/overview) — 290 fields, each with its complete recovered ground-visit and flight-leg record
+* [Every interesting date, all aircraft](/Planes/Incidents/overview) — 147 ground contacts near a sourced event, across 110 pages
+* [Investigating Deleted Flights](/Planes/investigating_deleted_flights) — how the data was recovered, how much of it we hold, and where it is still missing
+
+{/* CK_NEW_EVIDENCE_LINKS:END */}

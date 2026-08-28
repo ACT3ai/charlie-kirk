@@ -284,13 +284,26 @@ def table_people(rs):
             if same["airport_distance_mi"]:
                 apx += f", {same['airport_distance_mi']} mi"
         else:
+            # the register keeps its OWN nearest-event columns, curated by hand; they do not
+            # always agree with the date join against the speaking-events catalog. Show both
+            # rather than letting either one print "none" over the top of the other.
+            parts = []
+            reg = esc(r["nearest_sourced_kirk_event"])
+            if reg and reg.lower() not in ("none", "none sourced", "unknown"):
+                g = r["nearest_event_gap_days"].strip()
+                gs = f" (register: {g} day{'s' if g not in ('1',) else ''} away)" if g else " (register, gap not stated)"
+                parts.append(f"**Register's nearest sourced appearance:** {reg}{gs}")
             nearest = r["nearby_events"][0] if r["nearby_events"] else None
             if nearest:
                 t = esc(f"{nearest['who']} — {nearest['title']}, {nearest['city']}, {nearest['state']}")
                 lbl = f"[{t}]({nearest['page']})" if nearest["page"] else t
-                ev_cell = f"**None same-day.** Nearest sourced: {lbl} ({nearest['gap_days']:+d} days)"
+                parts.append(f"**Nearest in the events catalog:** {lbl} ({nearest['gap_days']:+d} days)")
+            if not parts:
+                ev_cell = ("**None same-day.** Neither this register's own nearest-event column nor a "
+                           "date join against the sourced speaking-events catalog finds a Kirk or TPUSA "
+                           "appearance within three days.")
             else:
-                ev_cell = "**None.** No sourced Kirk or TPUSA appearance within three days, anywhere."
+                ev_cell = "**None same-day.** " + " · ".join(parts)
             venue = tm = apx = "—"
         who = {"claimed": "claimed", "not_claimed": "not claimed", "unknown": "unknown"}
         pres = (f"Charlie: **{who.get(r['charlie_present'], r['charlie_present'])}** · "

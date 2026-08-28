@@ -684,3 +684,21 @@ Search twitter and x.com posts for where Charlie Kirk or TPUSA has public speaki
 All other search results in the date range were either unrelated (e.g., general mentions without event/speaking details) or outside the exact week bounds. No additional posts from the searches referenced events in the 10/8–10/14 window beyond those listed. Thread context (replies/quotes) is included inline where it directly ties to the event mentions above.
 ```
 
+
+---
+
+{/* CK_NEW_EVIDENCE_LINKS:START */}
+
+## Flight-record pages for what is on this page
+
+This investigation keeps one page per airport and one page per recorded ground contact, built directly from the recovered ADS-B traces. These are the ones that fall inside **2023-10-08 to 2023-10-14**, the range this page covers.
+
+**No tracked aircraft was on the ground near a sourced event in this window.** Across 2023-10-08 to 2023-10-14 the recovered traces record no contact. That is a coverage statement as much as anything — see the limits on the linked pages.
+
+**The two indexes:**
+
+* [Every airport in this investigation](/Planes/Airports/overview) — 290 fields, each with its complete recovered ground-visit and flight-leg record
+* [Every interesting date, all aircraft](/Planes/Incidents/overview) — 147 ground contacts near a sourced event, across 110 pages
+* [Investigating Deleted Flights](/Planes/investigating_deleted_flights) — how the data was recovered, how much of it we hold, and where it is still missing
+
+{/* CK_NEW_EVIDENCE_LINKS:END */}

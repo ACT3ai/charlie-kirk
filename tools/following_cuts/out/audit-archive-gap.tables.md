@@ -9,8 +9,8 @@
 
 | Row | Date claimed | Who the sheet claims was present | Erika location as the sheet gives it | Sourced Kirk / TPUSA appearance same day | Venue | Local time | Nearest airport to that venue | Kirk-side aircraft on record |
 |---|---|---|---|---|---|---|---|---|
-| [OWENS-043](/Planes/following/overlap/20221125_DE_wilmington_owens_043/overview) | **25 November 2022** | Charlie: **not claimed** · Erika: **claimed** | Delaware | **None.** No sourced Kirk or TPUSA appearance within three days, anywhere. | — | — | — | *none recorded* |
-| [OWENS-044](/Planes/following/overlap/20221205_IL_chicago_owens_044/overview) | **5 December 2022** | Charlie: **not claimed** · Erika: **claimed** | Illinois | **None.** No sourced Kirk or TPUSA appearance within three days, anywhere. | — | — | — | *none recorded* |
+| [OWENS-043](/Planes/following/overlap/20221125_DE_wilmington_owens_043/overview) | **25 November 2022** | Charlie: **not claimed** · Erika: **claimed** | Delaware | **None same-day.** **Register's nearest sourced appearance:** Charlie UNM Albuquerque 2022-11-30 (different state) (register, gap not stated) | — | — | — | *none recorded* |
+| [OWENS-044](/Planes/following/overlap/20221205_IL_chicago_owens_044/overview) | **5 December 2022** | Charlie: **not claimed** · Erika: **claimed** | Illinois | **None same-day.** **Register's nearest sourced appearance:** none in IL Dec 2022 (register, gap not stated) | — | — | — | *none recorded* |
 
 ## TABLE C — sourcing and both verdicts
 

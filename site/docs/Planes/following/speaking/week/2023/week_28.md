@@ -473,3 +473,21 @@ These reference the same or related TPUSA events but are more peripheral (e.g., 
 No other distinct Charlie Kirk solo speaking events, TPUSA campus tours, or additional public appearances were found in the searched posts for this exact week. All references cluster around the West Palm Beach ACTCON2023 event. Posts are from the `x_keyword_search` and `x_semantic_search` results; threads expanded where relevant for full context.
 ```
 
+
+---
+
+{/* CK_NEW_EVIDENCE_LINKS:START */}
+
+## Flight-record pages for what is on this page
+
+This investigation keeps one page per airport and one page per recorded ground contact, built directly from the recovered ADS-B traces. These are the ones that fall inside **2023-07-09 to 2023-07-15**, the range this page covers.
+
+**No tracked aircraft was on the ground near a sourced event in this window.** Across 2023-07-09 to 2023-07-15 the recovered traces record no contact. That is a coverage statement as much as anything — see the limits on the linked pages.
+
+**The two indexes:**
+
+* [Every airport in this investigation](/Planes/Airports/overview) — 290 fields, each with its complete recovered ground-visit and flight-leg record
+* [Every interesting date, all aircraft](/Planes/Incidents/overview) — 147 ground contacts near a sourced event, across 110 pages
+* [Investigating Deleted Flights](/Planes/investigating_deleted_flights) — how the data was recovered, how much of it we hold, and where it is still missing
+
+{/* CK_NEW_EVIDENCE_LINKS:END */}

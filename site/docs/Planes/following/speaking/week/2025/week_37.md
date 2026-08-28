@@ -454,3 +454,38 @@ Charlie Kirk was fatally shot on September 10, 2025, during a TPUSA speaking eve
 No additional posts in the results described other confirmed speaking dates/locations for Charlie Kirk or TPUSA within September 10–16. All data from searches included above (no summarization).
 ```
 
+
+---
+
+{/* CK_NEW_EVIDENCE_LINKS:START */}
+
+## Flight-record pages for what is on this page
+
+This investigation keeps one page per airport and one page per recorded ground contact, built directly from the recovered ADS-B traces. These are the ones that fall inside **2025-09-10 to 2025-09-16**, the range this page covers.
+
+**Ground contacts near a sourced Charlie / Erika / TPUSA event:**
+
+| Date (UTC) | Aircraft | Airport | City, State | Whose event | When |
+|---|---|---|---|---|---|
+| [2025-09-10](/Planes/Incidents/N102DZ-2025-09-10-KPVU) | [N102DZ](/Planes/N102DZ/overview) | [KPVU](/Planes/Airports/KPVU) | Provo, UT | Charlie | **Same day** |
+| [2025-09-10](/Planes/Incidents/N102DZ-2025-09-10-KSLC) | [N102DZ](/Planes/N102DZ/overview) | [KSLC](/Planes/Airports/KSLC) | Salt Lake City, UT | Charlie | **Same day** |
+| [2025-09-10](/Planes/Incidents/N40JD-2025-09-10-KPVU) | [N40JD](/Planes/N40JD/overview) | [KPVU](/Planes/Airports/KPVU) | Provo, UT | Charlie | **Same day** |
+| [2025-09-10](/Planes/Incidents/N560TW-2025-09-10-KPVU) | [N560TW](/Planes/N560TW/overview) | [KPVU](/Planes/Airports/KPVU) | Provo, UT | Charlie | **Same day** |
+| [2025-09-10](/Planes/Incidents/N59906-2025-09-10-KPVU) | [N59906](/Planes/N59906/overview) | [KPVU](/Planes/Airports/KPVU) | Provo, UT | Charlie | **Same day** |
+| [2025-09-10](/Planes/Incidents/N872RA-2025-09-10-KPVU) | [N872RA](/Planes/N872RA/overview) | [KPVU](/Planes/Airports/KPVU) | Provo, UT | Charlie | **Same day** |
+| [2025-09-10](/Planes/Incidents/N888KG-2025-09-10-KPVU) | [N888KG](/Planes/N888KG/overview) | [KPVU](/Planes/Airports/KPVU) | Provo, UT | Charlie | **Same day** |
+| [2025-09-10](/Planes/Incidents/SU-BND-2025-09-10-KPVU) | [SU-BND](/Planes/SU-BND/overview) | [KPVU](/Planes/Airports/KPVU) | Provo, UT | Charlie | **Same day** |
+| [2025-09-10](/Planes/Incidents/SU-BTT-2025-09-10-KPVU) | [SU-BTT](/Planes/SU-BTT/overview) | [KPVU](/Planes/Airports/KPVU) | Provo, UT | Charlie | **Same day** |
+| [2025-09-11](/Planes/Incidents/N102DZ-2025-09-11-KPVU) | [N102DZ](/Planes/N102DZ/overview) | [KPVU](/Planes/Airports/KPVU) | Provo, UT | Charlie | Day after |
+
+**Airports named on this page:**
+
+* [KSFO — San Francisco International](/Planes/Airports/KSFO), San Francisco, CA — 21 recorded ground visits, 4 tracked aircraft
+
+**The two indexes:**
+
+* [Every airport in this investigation](/Planes/Airports/overview) — 290 fields, each with its complete recovered ground-visit and flight-leg record
+* [Every interesting date, all aircraft](/Planes/Incidents/overview) — 147 ground contacts near a sourced event, across 110 pages
+* [Investigating Deleted Flights](/Planes/investigating_deleted_flights) — how the data was recovered, how much of it we hold, and where it is still missing
+
+{/* CK_NEW_EVIDENCE_LINKS:END */}

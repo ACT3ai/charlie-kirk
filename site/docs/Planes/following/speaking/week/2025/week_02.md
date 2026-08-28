@@ -593,3 +593,21 @@ The semantic search surfaced overlapping posts already listed above (e.g., the T
 **Summary of findings across all data:** The only confirmed TPUSA/Charlie Kirk-linked public event in or near the date range is the **Turning Point Inaugural-eve Ball** (announced Jan 8 and updated Jan 13, 2025), featuring performances and appearances by listed figures (Vance, Trump Jr., etc.). No specific date, venue, or additional speaking stops/tours/campus events were mentioned in any post. No other public speaking schedules, appearances, or visits were posted. All posts are included in full above.
 ```
 
+
+---
+
+{/* CK_NEW_EVIDENCE_LINKS:START */}
+
+## Flight-record pages for what is on this page
+
+This investigation keeps one page per airport and one page per recorded ground contact, built directly from the recovered ADS-B traces. These are the ones that fall inside **2025-01-08 to 2025-01-14**, the range this page covers.
+
+**No tracked aircraft was on the ground near a sourced event in this window.** Across 2025-01-08 to 2025-01-14 the recovered traces record no contact. That is a coverage statement as much as anything — see the limits on the linked pages.
+
+**The two indexes:**
+
+* [Every airport in this investigation](/Planes/Airports/overview) — 290 fields, each with its complete recovered ground-visit and flight-leg record
+* [Every interesting date, all aircraft](/Planes/Incidents/overview) — 147 ground contacts near a sourced event, across 110 pages
+* [Investigating Deleted Flights](/Planes/investigating_deleted_flights) — how the data was recovered, how much of it we hold, and where it is still missing
+
+{/* CK_NEW_EVIDENCE_LINKS:END */}

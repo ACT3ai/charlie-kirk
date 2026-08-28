@@ -630,3 +630,25 @@ I conducted multiple targeted searches using keywords like ("Charlie Kirk" OR TP
 **No additional posts** were returned in the searches for the exact date range that announced or detailed specific public speaking events, tours, or appearances by Charlie Kirk or TPUSA during March 19–25, 2025. Mentions are primarily general references to past campus debates, hiring for events, or unrelated political commentary. The March 26 dialogue with Pastor Jack Hibbs is noted but falls outside the strict end-of-week cutoff. All data from tool results is included verbatim above.
 ```
 
+
+---
+
+{/* CK_NEW_EVIDENCE_LINKS:START */}
+
+## Flight-record pages for what is on this page
+
+This investigation keeps one page per airport and one page per recorded ground contact, built directly from the recovered ADS-B traces. These are the ones that fall inside **2025-03-19 to 2025-03-25**, the range this page covers.
+
+**Ground contacts near a sourced Charlie / Erika / TPUSA event:**
+
+| Date (UTC) | Aircraft | Airport | City, State | Whose event | When |
+|---|---|---|---|---|---|
+| [2025-03-19](/Planes/Incidents/N582MM-2025-03-19-KLZU) | [N582MM](/Planes/N582MM/overview) | [KLZU](/Planes/Airports/KLZU) | Lawrenceville, GA | Charlie | Day after |
+
+**The two indexes:**
+
+* [Every airport in this investigation](/Planes/Airports/overview) — 290 fields, each with its complete recovered ground-visit and flight-leg record
+* [Every interesting date, all aircraft](/Planes/Incidents/overview) — 147 ground contacts near a sourced event, across 110 pages
+* [Investigating Deleted Flights](/Planes/investigating_deleted_flights) — how the data was recovered, how much of it we hold, and where it is still missing
+
+{/* CK_NEW_EVIDENCE_LINKS:END */}

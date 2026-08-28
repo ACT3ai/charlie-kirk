@@ -568,3 +568,25 @@ Search twitter and x.com posts for where Charlie Kirk or TPUSA has public speaki
 **Notes on completeness**: Searches covered exact phrases for speaking events, locations, tours, and appearances by Charlie Kirk/TPUSA. No other public speaking events, tours, or appearances by Charlie Kirk or TPUSA were found in the 2022-05-28 to 2022-06-03 window beyond the Dallas YWLS2022 summit (which ran starting ~June 2-3, 2022, with live coverage and Charlie Kirk speaking). Searches from official accounts (@charliekirk11, @TPUSA) returned no results in this narrow window for additional events. All data pulled directly; no external assumptions added.
 ```
 
+
+---
+
+{/* CK_NEW_EVIDENCE_LINKS:START */}
+
+## Flight-record pages for what is on this page
+
+This investigation keeps one page per airport and one page per recorded ground contact, built directly from the recovered ADS-B traces. These are the ones that fall inside **2022-05-28 to 2022-06-03**, the range this page covers.
+
+**Ground contacts near a sourced Charlie / Erika / TPUSA event:**
+
+| Date (UTC) | Aircraft | Airport | City, State | Whose event | When |
+|---|---|---|---|---|---|
+| [2022-06-01](/Planes/Incidents/N888KG-2022-06-01-KDAL) | [N888KG](/Planes/N888KG/overview) | [KDAL](/Planes/Airports/KDAL) | Dallas, TX | Charlie | Day before |
+
+**The two indexes:**
+
+* [Every airport in this investigation](/Planes/Airports/overview) — 290 fields, each with its complete recovered ground-visit and flight-leg record
+* [Every interesting date, all aircraft](/Planes/Incidents/overview) — 147 ground contacts near a sourced event, across 110 pages
+* [Investigating Deleted Flights](/Planes/investigating_deleted_flights) — how the data was recovered, how much of it we hold, and where it is still missing
+
+{/* CK_NEW_EVIDENCE_LINKS:END */}

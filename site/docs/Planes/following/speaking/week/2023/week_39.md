@@ -506,3 +506,26 @@ No results found.
 This constitutes the complete, unsummarized dataset of all matching posts from the tools for the exact week range. Key events referenced include a Charlie Kirk/TPUSA event at ASU (Arizona State University) on or around September 27-28, 2023 (including campus debate and "Health, Wealth & Happiness 2.0"), a TPUSA event with Riley Gaines by @tpusaetsu, and a TPUSA High School event cancellation at Red Mountain High School in Mesa, AZ. Other posts mention TPUSA activities but do not detail additional speaking dates in the range.
 ```
 
+
+---
+
+{/* CK_NEW_EVIDENCE_LINKS:START */}
+
+## Flight-record pages for what is on this page
+
+This investigation keeps one page per airport and one page per recorded ground contact, built directly from the recovered ADS-B traces. These are the ones that fall inside **2023-09-24 to 2023-09-30**, the range this page covers.
+
+**Ground contacts near a sourced Charlie / Erika / TPUSA event:**
+
+| Date (UTC) | Aircraft | Airport | City, State | Whose event | When |
+|---|---|---|---|---|---|
+| [2023-09-28](/Planes/Incidents/N560TW-2023-09-28-KSDL) | [N560TW](/Planes/N560TW/overview) | [KSDL](/Planes/Airports/KSDL) | Scottsdale, AZ | Charlie | Day after |
+| [2023-09-28](/Planes/Incidents/N582MM-2023-09-28-KPHX) | [N582MM](/Planes/N582MM/overview) | [KPHX](/Planes/Airports/KPHX) | Phoenix, AZ | Charlie | Day after |
+
+**The two indexes:**
+
+* [Every airport in this investigation](/Planes/Airports/overview) — 290 fields, each with its complete recovered ground-visit and flight-leg record
+* [Every interesting date, all aircraft](/Planes/Incidents/overview) — 147 ground contacts near a sourced event, across 110 pages
+* [Investigating Deleted Flights](/Planes/investigating_deleted_flights) — how the data was recovered, how much of it we hold, and where it is still missing
+
+{/* CK_NEW_EVIDENCE_LINKS:END */}

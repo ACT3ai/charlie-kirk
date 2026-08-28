@@ -237,6 +237,65 @@ This row is one of **85 checked against primary ADS-B, first on 24 August 2026 a
 
 **A 404 there means a volunteer network heard nothing; it is not evidence the aircraft did not fly.** [What a 403 means](/Planes/Flight-Data-Recovery/What-A-403-Means) explains why a refusal, a retention boundary and a real removal are indistinguishable from outside, and [Flight data recovery](/Planes/Flight-Data-Recovery/overview) sets out the four free archives and the control test that tells them apart. The same reasoning governs every row in the [overlap index](/Planes/following/overlap/overview).
 
+
+---
+
+{/* CK_NEW_EVIDENCE_LINKS:START */}
+
+## Flight-record pages for what is on this page
+
+This investigation keeps one page per airport and one page per recorded ground contact, built directly from the recovered ADS-B traces. These are the ones this page touches.
+
+**Airports named on this page:**
+
+* [KSTL — Lambert-St. Louis International Airport](/Planes/Airports/KSTL), St. Louis, MO — 2 recorded ground visits, 1 tracked aircraft
+* [KSUS — Spirit of St. Louis Airport](/Planes/Airports/KSUS), Chesterfield, MO — 1 recorded ground visit, 1 tracked aircraft
+
+**Aircraft named on this page:**
+
+* [SU-BND](/Planes/SU-BND/overview) — full recovered movement record, every airport and every leg
+* [SU-BTT](/Planes/SU-BTT/overview) — full recovered movement record, every airport and every leg
+
+**The two indexes:**
+
+* [Every airport in this investigation](/Planes/Airports/overview) — 290 fields, each with its complete recovered ground-visit and flight-leg record
+* [Every interesting date, all aircraft](/Planes/Incidents/overview) — 147 ground contacts near a sourced event, across 110 pages
+* [Investigating Deleted Flights](/Planes/investigating_deleted_flights) — how the data was recovered, how much of it we hold, and where it is still missing
+
+{/* CK_NEW_EVIDENCE_LINKS:END */}
+
+
+---
+
+{/* CK_ADSB_VERDICT:START */}
+
+## What the recovered flight data says about this claim
+
+This page records what somebody **claimed**. This section records what the recovered public ADS-B actually shows, tested independently of the claim.
+
+### Verdict: Archives were asked and hold nothing
+
+| Field | Value |
+|---|---|
+| Claim ID | **SITE-001** |
+| Claimed date | 2023-04-02 |
+| Claimed aircraft | SU-BTT; SU-BND *(no page on this site for this tail)* |
+| Claimed airport | **KSTL/KCPS/KSUS** USA |
+| Claimed location | Jefferson City (event) / St. Louis (aircraft), MO |
+| Claimed subject | TPUSA |
+| **ADS-B verdict** | **NOT_HEARD** |
+| Independent audit's verdict | accurate |
+
+**What that verdict means.** **This is not a refutation and must never be quoted as one.** The free archives hear a Provo-parked jet on 9 of the 114 days it undisputedly sat there. A `NOT_HEARD` is a statement about volunteer receiver coverage, not about whether the aircraft was present.
+
+**On this specific row:** SAYS ALMOST NOTHING. adsb-lol/airplanes-live served other airframes that day but holds no trace for this one. Parked with the transponder off, outside receiver coverage, and a wrong claimed date all look identical from here. AN ABSENCE IS NOT A FINDING.
+
+**And the person half of this claim is not confirmed by anything here.** No ADS-B record anywhere places any person aboard any aircraft. Across all 85 claimed overlaps the `erika_present` column is `claimed` on 70 rows and `not_claimed` on 15 — **it is never `yes` on any row.** Erika Kirk's flight logs are reported erased and no backup anywhere produces her itinerary. See [Erika Flight Logs Erased](/Planes/Erika-Flight-Logs-Erased).
+
+*Verdicts come from `overlaps.csv`, derived from the recovered traces. See [Investigating Deleted Flights](/Planes/investigating_deleted_flights) §4.13 for how the 85 claims break down as a whole, and [the overlap window definition](/Planes/following/Overlap_Window_Definition) for what counts as an overlap at all.*
+
+{/* CK_ADSB_VERDICT:END */}
+
 {/* CK_PAGE_FOOTER_START */}
 
 ## Where this page fits

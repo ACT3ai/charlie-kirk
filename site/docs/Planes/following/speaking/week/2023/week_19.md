@@ -447,3 +447,21 @@ Search twitter and x.com posts for where Charlie Kirk or TPUSA has public speaki
 **No other posts matched the exact criteria across all searches. No direct mentions of specific Charlie Kirk/TPUSA speaking events strictly within May 7-13, 2023 (most references are to upcoming July events, Reawaken America Tour, or past/past-tense tours). All raw data above is exhaustive from the tool results.**
 ```
 
+
+---
+
+{/* CK_NEW_EVIDENCE_LINKS:START */}
+
+## Flight-record pages for what is on this page
+
+This investigation keeps one page per airport and one page per recorded ground contact, built directly from the recovered ADS-B traces. These are the ones that fall inside **2023-05-07 to 2023-05-13**, the range this page covers.
+
+**No tracked aircraft was on the ground near a sourced event in this window.** Across 2023-05-07 to 2023-05-13 the recovered traces record no contact. That is a coverage statement as much as anything — see the limits on the linked pages.
+
+**The two indexes:**
+
+* [Every airport in this investigation](/Planes/Airports/overview) — 290 fields, each with its complete recovered ground-visit and flight-leg record
+* [Every interesting date, all aircraft](/Planes/Incidents/overview) — 147 ground contacts near a sourced event, across 110 pages
+* [Investigating Deleted Flights](/Planes/investigating_deleted_flights) — how the data was recovered, how much of it we hold, and where it is still missing
+
+{/* CK_NEW_EVIDENCE_LINKS:END */}

@@ -235,6 +235,67 @@ No free archive reaches 5 December 2022. Both adsb.lol globe history and the bac
 
 **A 404 there means a volunteer network heard nothing; it is not evidence the aircraft did not fly.** [What a 403 means](/Planes/Flight-Data-Recovery/What-A-403-Means) explains why a refusal, a retention boundary and a real removal are indistinguishable from outside, and [Flight data recovery](/Planes/Flight-Data-Recovery/overview) sets out the four free archives and the control test that tells them apart. The same reasoning governs every row in the [overlap index](/Planes/following/overlap/overview).
 
+
+---
+
+{/* CK_NEW_EVIDENCE_LINKS:START */}
+
+## Flight-record pages for what is on this page
+
+This investigation keeps one page per airport and one page per recorded ground contact, built directly from the recovered ADS-B traces. These are the ones this page touches.
+
+**Airports named on this page:**
+
+* [KORD — Chicago O'Hare International Airport](/Planes/Airports/KORD), Chicago, IL — 3 recorded ground visits, 2 tracked aircraft
+
+**Aircraft named on this page:**
+
+* [SU-BGM](/Planes/SU-BGM/overview) — full recovered movement record, every airport and every leg
+* [SU-BND](/Planes/SU-BND/overview) — full recovered movement record, every airport and every leg
+* [SU-BTT](/Planes/SU-BTT/overview) — full recovered movement record, every airport and every leg
+* [SU-BTU](/Planes/SU-BTU/overview) — full recovered movement record, every airport and every leg
+* [SU-BTV](/Planes/SU-BTV/overview) — full recovered movement record, every airport and every leg
+
+**The two indexes:**
+
+* [Every airport in this investigation](/Planes/Airports/overview) — 290 fields, each with its complete recovered ground-visit and flight-leg record
+* [Every interesting date, all aircraft](/Planes/Incidents/overview) — 147 ground contacts near a sourced event, across 110 pages
+* [Investigating Deleted Flights](/Planes/investigating_deleted_flights) — how the data was recovered, how much of it we hold, and where it is still missing
+
+{/* CK_NEW_EVIDENCE_LINKS:END */}
+
+
+---
+
+{/* CK_ADSB_VERDICT:START */}
+
+## What the recovered flight data says about this claim
+
+This page records what somebody **claimed**. This section records what the recovered public ADS-B actually shows, tested independently of the claim.
+
+### Verdict: No free archive covers this date
+
+| Field | Value |
+|---|---|
+| Claim ID | **OWENS-044** |
+| Claimed date | 2022-12-05 |
+| Claimed aircraft | [SU-BTT](/Planes/SU-BTT/overview) |
+| Claimed airport | [**KORD**](/Planes/Airports/KORD) Chicago, IL |
+| Claimed location | Chicago, IL |
+| Claimed subject | Erika |
+| **ADS-B verdict** | **NO_ARCHIVE_COVERAGE** |
+| Independent audit's verdict | archive_gap |
+
+**What that verdict means.** Neither free archive holds this date for any airframe we probed — including the control aircraft. This is an **archive limit**, not suppression, and it says nothing either way about the claim.
+
+**On this specific row:** SAYS NOTHING EITHER WAY. Neither free archive holds this date for any airframe we probed, so this is an archive limit and not suppression.
+
+**And the person half of this claim is not confirmed by anything here.** No ADS-B record anywhere places any person aboard any aircraft. Across all 85 claimed overlaps the `erika_present` column is `claimed` on 70 rows and `not_claimed` on 15 — **it is never `yes` on any row.** Erika Kirk's flight logs are reported erased and no backup anywhere produces her itinerary. See [Erika Flight Logs Erased](/Planes/Erika-Flight-Logs-Erased).
+
+*Verdicts come from `overlaps.csv`, derived from the recovered traces. See [Investigating Deleted Flights](/Planes/investigating_deleted_flights) §4.13 for how the 85 claims break down as a whole, and [the overlap window definition](/Planes/following/Overlap_Window_Definition) for what counts as an overlap at all.*
+
+{/* CK_ADSB_VERDICT:END */}
+
 {/* CK_PAGE_FOOTER_START */}
 
 ## Where this page fits

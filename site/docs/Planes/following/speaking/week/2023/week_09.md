@@ -483,3 +483,21 @@ Posts were retrieved via keyword searches (general + from specific accounts) and
 - All data included verbatim; no filtering beyond tool returns. No other @TPUSA or @charliekirk11 posts in the range detailed additional stops. For full context, the Live Free Tour link (tpusa.com/livefree) was promoted multiple times.
 ```
 
+
+---
+
+{/* CK_NEW_EVIDENCE_LINKS:START */}
+
+## Flight-record pages for what is on this page
+
+This investigation keeps one page per airport and one page per recorded ground contact, built directly from the recovered ADS-B traces. These are the ones that fall inside **2023-02-26 to 2023-03-04**, the range this page covers.
+
+**No tracked aircraft was on the ground near a sourced event in this window.** Across 2023-02-26 to 2023-03-04 the recovered traces record no contact. That is a coverage statement as much as anything — see the limits on the linked pages.
+
+**The two indexes:**
+
+* [Every airport in this investigation](/Planes/Airports/overview) — 290 fields, each with its complete recovered ground-visit and flight-leg record
+* [Every interesting date, all aircraft](/Planes/Incidents/overview) — 147 ground contacts near a sourced event, across 110 pages
+* [Investigating Deleted Flights](/Planes/investigating_deleted_flights) — how the data was recovered, how much of it we hold, and where it is still missing
+
+{/* CK_NEW_EVIDENCE_LINKS:END */}

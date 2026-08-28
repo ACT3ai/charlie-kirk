@@ -69,8 +69,8 @@ def leg_table(legs):
             arr = f"{arr_date} {arr}"
         out.append(
             f"| {r['utc_date']} "
-            f"| **{r['origin']}** {pf.esc(oplace)} "
-            f"| **{r['dest']}** {pf.esc(dplace)} "
+            f"| {pf.ap_link(r['origin'], bold=True)} {pf.esc(oplace)} "
+            f"| {pf.ap_link(r['dest'], bold=True)} {pf.esc(dplace)} "
             f"| {pf.hhmm(r.get('depart_after_utc','')) or '—'} "
             f"| {arr} "
             f"| {conf_cell(r)} |"
@@ -88,7 +88,8 @@ def airport_table(visits):
         vs = sorted(visits[code], key=lambda x: x["date"])
         name, where = pf.place(code, vs[0].get("name", ""))
         out.append(
-            f"| **{code}** | {pf.esc(name)} | {pf.esc(where)} | {len(vs)} "
+            f"| {pf.ap_link(code, bold=True)} | {pf.esc(name)} "
+            f"| {pf.esc(where)} | {len(vs)} "
             f"| {vs[0]['date']} | {vs[-1]['date']} |"
         )
     return "\n".join(out)
@@ -153,6 +154,13 @@ def build(tail, legs, visits):
         if note:
             L.append(note)
 
+    L.append(
+        "Every airport code above opens that field's own page — every recovered "
+        "ground visit and flight leg there, by every aircraft this "
+        "investigation tracks. See also "
+        "[every airport in this investigation](/Planes/Airports/overview)."
+    )
+    L.append("")
     L.append(
         "*Times are UTC as the archives recorded them — the last on-ground "
         "position before departure and the first on-ground position after "

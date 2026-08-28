@@ -531,3 +531,21 @@ No results were found for posts strictly within 2023-09-03 to 2023-09-09 that de
 No other posts in the results described Charlie Kirk or TPUSA events, tours, or speaking appearances specifically occurring or announced for the week of 2023-09-03 to 2023-09-09. Searches for @TPAction and additional keyword variations returned no relevant results in the date range. The Live Free Tour announcement (Sept 8) and the TPUSA Faith summit (with Charlie Kirk on Sept 13-15) are the closest matches but fall outside the exact week. All data from tool results is included without summarization.
 ```
 
+
+---
+
+{/* CK_NEW_EVIDENCE_LINKS:START */}
+
+## Flight-record pages for what is on this page
+
+This investigation keeps one page per airport and one page per recorded ground contact, built directly from the recovered ADS-B traces. These are the ones that fall inside **2023-09-03 to 2023-09-09**, the range this page covers.
+
+**No tracked aircraft was on the ground near a sourced event in this window.** Across 2023-09-03 to 2023-09-09 the recovered traces record no contact. That is a coverage statement as much as anything — see the limits on the linked pages.
+
+**The two indexes:**
+
+* [Every airport in this investigation](/Planes/Airports/overview) — 290 fields, each with its complete recovered ground-visit and flight-leg record
+* [Every interesting date, all aircraft](/Planes/Incidents/overview) — 147 ground contacts near a sourced event, across 110 pages
+* [Investigating Deleted Flights](/Planes/investigating_deleted_flights) — how the data was recovered, how much of it we hold, and where it is still missing
+
+{/* CK_NEW_EVIDENCE_LINKS:END */}

@@ -560,3 +560,21 @@ Search twitter and x.com posts for where Charlie Kirk or TPUSA has public speaki
 **No other posts in the tool results referenced Charlie Kirk or TPUSA public speaking events, tours, or appearances strictly occurring or announced for the exact week of Feb 5–11, 2023.** The dominant event referenced across posts is the ASU (Arizona State University / Lewis Center / Barrett Honors) appearance featuring Charlie Kirk, Dennis Prager, and Robert Kiyosaki (with associated controversy and coverage). Other mentions are of past/recent TPUSA campus events (e.g., Oregon, GCU) or unrelated/future items. All data from the searches is presented verbatim above.
 ```
 
+
+---
+
+{/* CK_NEW_EVIDENCE_LINKS:START */}
+
+## Flight-record pages for what is on this page
+
+This investigation keeps one page per airport and one page per recorded ground contact, built directly from the recovered ADS-B traces. These are the ones that fall inside **2023-02-05 to 2023-02-11**, the range this page covers.
+
+**No tracked aircraft was on the ground near a sourced event in this window.** Across 2023-02-05 to 2023-02-11 the recovered traces record no contact. That is a coverage statement as much as anything — see the limits on the linked pages.
+
+**The two indexes:**
+
+* [Every airport in this investigation](/Planes/Airports/overview) — 290 fields, each with its complete recovered ground-visit and flight-leg record
+* [Every interesting date, all aircraft](/Planes/Incidents/overview) — 147 ground contacts near a sourced event, across 110 pages
+* [Investigating Deleted Flights](/Planes/investigating_deleted_flights) — how the data was recovered, how much of it we hold, and where it is still missing
+
+{/* CK_NEW_EVIDENCE_LINKS:END */}

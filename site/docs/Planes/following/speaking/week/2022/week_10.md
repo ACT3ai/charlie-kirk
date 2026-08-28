@@ -931,3 +931,21 @@ Search twitter and x.com posts for where Charlie Kirk or TPUSA has public speaki
 **No results** were returned for dedicated @TPUSAevents account searches or other targeted queries (e.g., from:TPUSAevents or pure tour-specific phrases) within the date range. No posts from TPUSA's official accounts announced Charlie Kirk speaking events in this exact week. The only explicit Charlie Kirk appearance referenced is his participation in the Florida Citizens Alliance "Kids & Country Gala" (held the evening of March 9, 2022, referenced in posts on March 10). Other mentions are general or unrelated to events in the specified week. All data above is exhaustive from the tool outputs.
 ```
 
+
+---
+
+{/* CK_NEW_EVIDENCE_LINKS:START */}
+
+## Flight-record pages for what is on this page
+
+This investigation keeps one page per airport and one page per recorded ground contact, built directly from the recovered ADS-B traces. These are the ones that fall inside **2022-03-05 to 2022-03-11**, the range this page covers.
+
+**No tracked aircraft was on the ground near a sourced event in this window.** Across 2022-03-05 to 2022-03-11 the recovered traces record no contact. That is a coverage statement as much as anything — see the limits on the linked pages.
+
+**The two indexes:**
+
+* [Every airport in this investigation](/Planes/Airports/overview) — 290 fields, each with its complete recovered ground-visit and flight-leg record
+* [Every interesting date, all aircraft](/Planes/Incidents/overview) — 147 ground contacts near a sourced event, across 110 pages
+* [Investigating Deleted Flights](/Planes/investigating_deleted_flights) — how the data was recovered, how much of it we hold, and where it is still missing
+
+{/* CK_NEW_EVIDENCE_LINKS:END */}

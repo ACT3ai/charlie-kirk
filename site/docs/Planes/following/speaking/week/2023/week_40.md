@@ -222,3 +222,25 @@ Search twitter and x.com posts for where Charlie Kirk or TPUSA has public speaki
 This exhausts all posts returned by the tool calls for the exact query parameters. No other posts in the results directly announced or detailed additional Charlie Kirk/TPUSA speaking events in the Oct 1–7 2023 window beyond the San Jose State University "Live Free Tour" event (Oct 2/3 references) and the University of Albany Candace Owens event (Oct 3). All other mentions are tangential or unrelated to scheduled appearances.
 ```
 
+
+---
+
+{/* CK_NEW_EVIDENCE_LINKS:START */}
+
+## Flight-record pages for what is on this page
+
+This investigation keeps one page per airport and one page per recorded ground contact, built directly from the recovered ADS-B traces. These are the ones that fall inside **2023-10-01 to 2023-10-07**, the range this page covers.
+
+**Ground contacts near a sourced Charlie / Erika / TPUSA event:**
+
+| Date (UTC) | Aircraft | Airport | City, State | Whose event | When |
+|---|---|---|---|---|---|
+| [2023-10-03](/Planes/Incidents/N708JH-2023-10-03-KSJC) | [N708JH](/Planes/N708JH/overview) | [KSJC](/Planes/Airports/KSJC) | San Jose, CA | Charlie | Day after |
+
+**The two indexes:**
+
+* [Every airport in this investigation](/Planes/Airports/overview) — 290 fields, each with its complete recovered ground-visit and flight-leg record
+* [Every interesting date, all aircraft](/Planes/Incidents/overview) — 147 ground contacts near a sourced event, across 110 pages
+* [Investigating Deleted Flights](/Planes/investigating_deleted_flights) — how the data was recovered, how much of it we hold, and where it is still missing
+
+{/* CK_NEW_EVIDENCE_LINKS:END */}

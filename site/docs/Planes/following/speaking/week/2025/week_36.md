@@ -451,3 +451,25 @@ I used keyword searches (including terms like "speaking", "speak", "event", "tou
 No other X posts in the results announced or detailed events strictly within September 3–9, 2025. References point to events **before**, **after**, or **ongoing/international** (e.g., South Korea). All raw post data is included above as requested.
 ```
 
+
+---
+
+{/* CK_NEW_EVIDENCE_LINKS:START */}
+
+## Flight-record pages for what is on this page
+
+This investigation keeps one page per airport and one page per recorded ground contact, built directly from the recovered ADS-B traces. These are the ones that fall inside **2025-09-03 to 2025-09-09**, the range this page covers.
+
+**Ground contacts near a sourced Charlie / Erika / TPUSA event:**
+
+| Date (UTC) | Aircraft | Airport | City, State | Whose event | When |
+|---|---|---|---|---|---|
+| [2025-09-09](/Planes/Incidents/SU-BND-2025-09-09-KPVU) | [SU-BND](/Planes/SU-BND/overview) | [KPVU](/Planes/Airports/KPVU) | Provo, UT | Charlie | Day before |
+
+**The two indexes:**
+
+* [Every airport in this investigation](/Planes/Airports/overview) — 290 fields, each with its complete recovered ground-visit and flight-leg record
+* [Every interesting date, all aircraft](/Planes/Incidents/overview) — 147 ground contacts near a sourced event, across 110 pages
+* [Investigating Deleted Flights](/Planes/investigating_deleted_flights) — how the data was recovered, how much of it we hold, and where it is still missing
+
+{/* CK_NEW_EVIDENCE_LINKS:END */}

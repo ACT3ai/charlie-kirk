@@ -513,3 +513,21 @@ No results found.
 **Overall findings:** No in-person public speaking events, campus appearances, tours, or specific locations/dates for Charlie Kirk or TPUSA events were announced or discussed in any posts within the exact date range of June 24–30, 2024. The only forward-looking "event" tied to Charlie Kirk is his virtual hosting of a Steve Bannon interview on June 30, 2024 (8-9pm ET). Mentions of past or unrelated events appear but do not provide new scheduling data. All posts are listed in full with no omissions or summaries.
 ```
 
+
+---
+
+{/* CK_NEW_EVIDENCE_LINKS:START */}
+
+## Flight-record pages for what is on this page
+
+This investigation keeps one page per airport and one page per recorded ground contact, built directly from the recovered ADS-B traces. These are the ones that fall inside **2024-06-24 to 2024-06-30**, the range this page covers.
+
+**No tracked aircraft was on the ground near a sourced event in this window.** Across 2024-06-24 to 2024-06-30 the recovered traces record no contact. That is a coverage statement as much as anything — see the limits on the linked pages.
+
+**The two indexes:**
+
+* [Every airport in this investigation](/Planes/Airports/overview) — 290 fields, each with its complete recovered ground-visit and flight-leg record
+* [Every interesting date, all aircraft](/Planes/Incidents/overview) — 147 ground contacts near a sourced event, across 110 pages
+* [Investigating Deleted Flights](/Planes/investigating_deleted_flights) — how the data was recovered, how much of it we hold, and where it is still missing
+
+{/* CK_NEW_EVIDENCE_LINKS:END */}

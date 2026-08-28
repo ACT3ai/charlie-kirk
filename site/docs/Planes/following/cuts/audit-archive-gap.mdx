@@ -59,8 +59,8 @@ A row lands here when `audit_verdict` in `overlaps.csv` reads `archive_gap` — 
 
 | Row | Date claimed | Who the sheet claims was present | Erika location as the sheet gives it | Sourced Kirk / TPUSA appearance same day | Venue | Local time | Nearest airport to that venue | Kirk-side aircraft on record |
 |---|---|---|---|---|---|---|---|---|
-| [OWENS-043](/Planes/following/overlap/20221125_DE_wilmington_owens_043/overview) | **25 November 2022** | Charlie: **not claimed** · Erika: **claimed** | Delaware | **None.** No sourced Kirk or TPUSA appearance within three days, anywhere. | — | — | — | *none recorded* |
-| [OWENS-044](/Planes/following/overlap/20221205_IL_chicago_owens_044/overview) | **5 December 2022** | Charlie: **not claimed** · Erika: **claimed** | Illinois | **None.** No sourced Kirk or TPUSA appearance within three days, anywhere. | — | — | — | *none recorded* |
+| [OWENS-043](/Planes/following/overlap/20221125_DE_wilmington_owens_043/overview) | **25 November 2022** | Charlie: **not claimed** · Erika: **claimed** | Delaware | **None same-day.** **Register's nearest sourced appearance:** Charlie UNM Albuquerque 2022-11-30 (different state) (register, gap not stated) | — | — | — | *none recorded* |
+| [OWENS-044](/Planes/following/overlap/20221205_IL_chicago_owens_044/overview) | **5 December 2022** | Charlie: **not claimed** · Erika: **claimed** | Illinois | **None same-day.** **Register's nearest sourced appearance:** none in IL Dec 2022 (register, gap not stated) | — | — | — | *none recorded* |
 
 ## TABLE C — sourcing and both verdicts
 
@@ -73,7 +73,7 @@ A row lands here when `audit_verdict` in `overlaps.csv` reads `archive_gap` — 
 
 **This is the smallest cell on the overview, and it is small for a boring reason: the archives run out in 2022.** Both rows are from 2022 — `OWENS-043` on 25 November and `OWENS-044` on 5 December — and 2022 is the year the free and paid flight histories used in this investigation thin out or stop. Ten days apart, both naming SU-BTT, both claiming a Paris arrival and a Cairo departure, both attributed by the compilation to Erika Kirk alone.
 
-**Neither pass could rule, and they failed for the same reason.** The auditor's own note on both rows is "Data doesn't go back this far", and the independent ADS-B pass afterwards returned `NO_ARCHIVE_COVERAGE` — no free archive holds that date for any airframe probed, control aircraft included. When a control aircraft with no connection to this case fails the same way on the same date, the failure belongs to the archive and not to the airframe. **That is why these two rows must never be described as removals.**
+**Neither pass could rule, and they failed for the same reason.** The auditor's own note on both rows is "Data doesn't go back this far", and the independent ADS-B pass afterwards returned `NO_ARCHIVE_COVERAGE` — no free archive holds that date for any airframe probed. That is the wording the register itself uses, and it is the reason the two passes agree: both ran out of archive rather than out of aircraft. When a control aircraft with no connection to this case fails the same way on the same date, the failure belongs to the archive and not to the airframe. **That is why these two rows must never be described as removals.**
 
 **The auditor did not leave it there, and what he added cuts against the claim.** On both rows he records his own belief about where the aircraft actually was: on `OWENS-043`, "In Cairo; closest flight was 11/20/22, Wilmington to Cairo", and on `OWENS-044`, "Still in Cairo; flew back into Cairo 20 Nov, out to Paris then St. Louis 20 Dec." That is the auditor's reading, offered without the archive coverage that would settle it, and it is recorded here as his statement rather than as a finding.
 
@@ -97,3 +97,36 @@ A row lands here when `audit_verdict` in `overlaps.csv` reads `archive_gap` — 
 * [Rows the audit never reached](/Planes/following/cuts/audit-not-reached) — the other kind of unassessed row, and a different reason
 * [The 37 rows the archives cover but do not hear](/Planes/following/cuts/adsb-not-heard-37) — where an archive *does* cover the date and still holds no trace
 * [Rows the tracking-site audit called inaccurate](/Planes/following/cuts/audit-inaccurate) — what the auditor found where he could rule
+
+
+---
+
+{/* CK_NEW_EVIDENCE_LINKS:START */}
+
+## Flight-record pages for what is on this page
+
+This investigation keeps one page per airport and one page per recorded ground contact, built directly from the recovered ADS-B traces. These are the ones this page touches.
+
+**Ground contacts near a sourced Charlie / Erika / TPUSA event:**
+
+| Date (UTC) | Aircraft | Airport | City, State | Whose event | When |
+|---|---|---|---|---|---|
+| [2024-04-23](/Planes/Incidents/SU-BTT-2024-04-23-KPVU) | [SU-BTT](/Planes/SU-BTT/overview) | [KPVU](/Planes/Airports/KPVU) | Provo, UT | Charlie | **Same day** |
+| [2025-09-10](/Planes/Incidents/SU-BTT-2025-09-10-KPVU) | [SU-BTT](/Planes/SU-BTT/overview) | [KPVU](/Planes/Airports/KPVU) | Provo, UT | Charlie | **Same day** |
+
+**Airports named on this page:**
+
+* [KILG — Wilmington Airport / New Castle Airport](/Planes/Airports/KILG), Wilmington, DE — 28 recorded ground visits, 3 tracked aircraft
+* [KORD — Chicago O'Hare International Airport](/Planes/Airports/KORD), Chicago, IL — 3 recorded ground visits, 2 tracked aircraft
+
+**Aircraft named on this page:**
+
+* [SU-BTT](/Planes/SU-BTT/overview) — full recovered movement record, every airport and every leg
+
+**The two indexes:**
+
+* [Every airport in this investigation](/Planes/Airports/overview) — 290 fields, each with its complete recovered ground-visit and flight-leg record
+* [Every interesting date, all aircraft](/Planes/Incidents/overview) — 147 ground contacts near a sourced event, across 110 pages
+* [Investigating Deleted Flights](/Planes/investigating_deleted_flights) — how the data was recovered, how much of it we hold, and where it is still missing
+
+{/* CK_NEW_EVIDENCE_LINKS:END */}

@@ -208,7 +208,7 @@ def build(stem, ev, circle_rows, ground_rows, control_by_date):
             L.append(
                 f"| {r['sweep_date']} | **{pf.esc(reg)}** "
                 f"| {pf.esc(r.get('type') or '—')} | {pf.esc(op)} "
-                f"| **{pf.esc(r.get('nearest_field') or '—')}** {pf.esc(fplace)} "
+                f"| {pf.ap_link(r.get('nearest_field'), bold=True)} {pf.esc(fplace)} "
                 f"| {r.get('nearest_field_mi','—')} "
                 f"| {pf.window(r.get('first_utc'), r.get('last_utc'))} "
                 f"| {pf.esc(why)} |"
@@ -264,6 +264,13 @@ def build(stem, ev, circle_rows, ground_rows, control_by_date):
         "routine: the Utah Air National Guard's refuelling wing is based at the "
         "airport and the Army Guard flies helicopters from South Valley Regional. "
         "An aircraft being in a circle is not an aircraft being *at* an event."
+    )
+    L.append("")
+    L.append(
+        "Every airport code above opens that field's own page — every recovered "
+        "ground visit and flight leg there. See also "
+        "[every airport in this investigation](/Planes/Airports/overview) and "
+        "[every interesting date across all aircraft](/Planes/Incidents/overview)."
     )
     L.append("")
     L.append(

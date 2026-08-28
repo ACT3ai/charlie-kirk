@@ -223,6 +223,77 @@ This row is one of **85 checked against primary ADS-B, first on 24 August 2026 a
 
 **A 404 there means a volunteer network heard nothing; it is not evidence the aircraft did not fly.** [What a 403 means](/Planes/Flight-Data-Recovery/What-A-403-Means) explains why a refusal, a retention boundary and a real removal are indistinguishable from outside, and [Flight data recovery](/Planes/Flight-Data-Recovery/overview) sets out the four free archives and the control test that tells them apart. The same reasoning governs every row in the [overlap index](/Planes/following/overlap/overview).
 
+
+---
+
+{/* CK_NEW_EVIDENCE_LINKS:START */}
+
+## Flight-record pages for what is on this page
+
+This investigation keeps one page per airport and one page per recorded ground contact, built directly from the recovered ADS-B traces. These are the ones this page touches.
+
+**Ground contacts near a sourced Charlie / Erika / TPUSA event:**
+
+| Date (UTC) | Aircraft | Airport | City, State | Whose event | When |
+|---|---|---|---|---|---|
+| [2024-04-23](/Planes/Incidents/N582MM-2024-04-23-KSLC) | [N582MM](/Planes/N582MM/overview) | [KSLC](/Planes/Airports/KSLC) | Salt Lake City, UT | Charlie | **Same day** |
+| [2024-04-23](/Planes/Incidents/N888KG-2024-04-23-KPVU) | [N888KG](/Planes/N888KG/overview) | [KPVU](/Planes/Airports/KPVU) | Provo, UT | Charlie | **Same day** |
+| [2024-04-23](/Planes/Incidents/SU-BTT-2024-04-23-KPVU) | [SU-BTT](/Planes/SU-BTT/overview) | [KPVU](/Planes/Airports/KPVU) | Provo, UT | Charlie | **Same day** |
+| [2024-04-24](/Planes/Incidents/N582MM-2024-04-24-KSLC) | [N582MM](/Planes/N582MM/overview) | [KSLC](/Planes/Airports/KSLC) | Salt Lake City, UT | Charlie | Day after |
+
+**Airports named on this page:**
+
+* [KPVU — Provo Municipal Airport](/Planes/Airports/KPVU), Provo, UT — 135 recorded ground visits, 13 tracked aircraft
+* [KSLC — Salt Lake City International Airport](/Planes/Airports/KSLC), Salt Lake City, UT — 33 recorded ground visits, 7 tracked aircraft
+* [KMOT — Minot International Airport](/Planes/Airports/KMOT), Minot, ND — 2 recorded ground visits, 2 tracked aircraft
+
+**Aircraft named on this page:**
+
+* [SU-BND](/Planes/SU-BND/overview) — full recovered movement record, every airport and every leg
+* [SU-BTT](/Planes/SU-BTT/overview) — full recovered movement record, every airport and every leg
+
+**The two indexes:**
+
+* [Every airport in this investigation](/Planes/Airports/overview) — 290 fields, each with its complete recovered ground-visit and flight-leg record
+* [Every interesting date, all aircraft](/Planes/Incidents/overview) — 147 ground contacts near a sourced event, across 110 pages
+* [Investigating Deleted Flights](/Planes/investigating_deleted_flights) — how the data was recovered, how much of it we hold, and where it is still missing
+
+{/* CK_NEW_EVIDENCE_LINKS:END */}
+
+
+---
+
+{/* CK_ADSB_VERDICT:START */}
+
+## What the recovered flight data says about this claim
+
+This page records what somebody **claimed**. This section records what the recovered public ADS-B actually shows, tested independently of the claim.
+
+### Verdict: Aircraft was at the claimed field
+
+| Field | Value |
+|---|---|
+| Claim ID | **SITE-004** |
+| Claimed date | 2024-04-23 |
+| Claimed aircraft | SU-BTT; SU-BND *(no page on this site for this tail)* |
+| Claimed airport | [**KPVU**](/Planes/Airports/KPVU) Provo, UT |
+| Claimed location | Salt Lake City (event) / Provo (aircraft), UT |
+| Claimed subject | Charlie |
+| **ADS-B verdict** | **AT_CLAIMED_AIRPORT** |
+| Closest recovered approach | 0.00 km |
+| Wheels on the ground? | **Yes** — on-ground positions recorded |
+| Independent audit's verdict | accurate |
+
+**What that verdict means.** A recovered trace puts this airframe at the claimed airport on the claimed date. **This corroborates the aircraft half of the claim, and only the aircraft half.**
+
+**On this specific row:** CORROBORATED, AND ON THE GROUND. A trace we pulled and kept puts this airframe on the ground 0.0 km from KPVU on the claimed date. It places NOBODY aboard.
+
+**And the person half of this claim is not confirmed by anything here.** No ADS-B record anywhere places any person aboard any aircraft. Across all 85 claimed overlaps the `erika_present` column is `claimed` on 70 rows and `not_claimed` on 15 — **it is never `yes` on any row.** Erika Kirk's flight logs are reported erased and no backup anywhere produces her itinerary. See [Erika Flight Logs Erased](/Planes/Erika-Flight-Logs-Erased).
+
+*Verdicts come from `overlaps.csv`, derived from the recovered traces. See [Investigating Deleted Flights](/Planes/investigating_deleted_flights) §4.13 for how the 85 claims break down as a whole, and [the overlap window definition](/Planes/following/Overlap_Window_Definition) for what counts as an overlap at all.*
+
+{/* CK_ADSB_VERDICT:END */}
+
 {/* CK_PAGE_FOOTER_START */}
 
 ## Where this page fits

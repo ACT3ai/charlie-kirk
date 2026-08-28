@@ -327,3 +327,21 @@ All relevant X posts from the keyword searches (general terms like "Charlie Kirk
 **Key observation from all data**: Posts reference past or generic "Charlie Kirk on campus" videos/debates, TPUSA student chapters, or off-topic events (e.g., Scott Presler's TPUSA Detroit convention June 14-16; Tulsi Gabbard event). No posts announce, promote, or detail any Charlie Kirk/TPUSA speaking events, locations, or schedules specifically for May 27–June 2, 2024. Official accounts focused on political commentary, Trump verdict reactions, and general promotions rather than event logistics. All data included above without omission.
 ```
 
+
+---
+
+{/* CK_NEW_EVIDENCE_LINKS:START */}
+
+## Flight-record pages for what is on this page
+
+This investigation keeps one page per airport and one page per recorded ground contact, built directly from the recovered ADS-B traces. These are the ones that fall inside **2024-05-27 to 2024-06-02**, the range this page covers.
+
+**No tracked aircraft was on the ground near a sourced event in this window.** Across 2024-05-27 to 2024-06-02 the recovered traces record no contact. That is a coverage statement as much as anything — see the limits on the linked pages.
+
+**The two indexes:**
+
+* [Every airport in this investigation](/Planes/Airports/overview) — 290 fields, each with its complete recovered ground-visit and flight-leg record
+* [Every interesting date, all aircraft](/Planes/Incidents/overview) — 147 ground contacts near a sourced event, across 110 pages
+* [Investigating Deleted Flights](/Planes/investigating_deleted_flights) — how the data was recovered, how much of it we hold, and where it is still missing
+
+{/* CK_NEW_EVIDENCE_LINKS:END */}

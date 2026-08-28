@@ -342,3 +342,31 @@ Search twitter and x.com posts for where Charlie Kirk or TPUSA has public speaki
 This constitutes **all** matching data from the searches for the specified week. No additional relevant posts appeared in the results.
 ```
 
+
+---
+
+{/* CK_NEW_EVIDENCE_LINKS:START */}
+
+## Flight-record pages for what is on this page
+
+This investigation keeps one page per airport and one page per recorded ground contact, built directly from the recovered ADS-B traces. These are the ones that fall inside **2024-10-21 to 2024-10-27**, the range this page covers.
+
+**Ground contacts near a sourced Charlie / Erika / TPUSA event:**
+
+| Date (UTC) | Aircraft | Airport | City, State | Whose event | When |
+|---|---|---|---|---|---|
+| [2024-10-21](/Planes/Incidents/N582MM-2024-10-21-KATL) | [N582MM](/Planes/N582MM/overview) | [KATL](/Planes/Airports/KATL) | Atlanta, GA | Charlie | **Same day** |
+| [2024-10-21](/Planes/Incidents/N582MM-2024-10-21-KRDU) | [N582MM](/Planes/N582MM/overview) | [KRDU](/Planes/Airports/KRDU) | Chapel Hill, NC | Charlie | **Same day** |
+| [2024-10-22](/Planes/Incidents/N582MM-2024-10-22-KRDU) | [N582MM](/Planes/N582MM/overview) | [KRDU](/Planes/Airports/KRDU) | Chapel Hill, NC | Charlie | Day after |
+| [2024-10-23](/Planes/Incidents/N582MM-2024-10-23-KLZU) | [N582MM](/Planes/N582MM/overview) | [KLZU](/Planes/Airports/KLZU) | Lawrenceville, GA | Charlie | **Same day** |
+| [2024-10-24](/Planes/Incidents/N582MM-2024-10-24-KLAS) | [N582MM](/Planes/N582MM/overview) | [KLAS](/Planes/Airports/KLAS) | Las Vegas, NV | Charlie | **Same day** |
+| [2024-10-24](/Planes/Incidents/N582MM-2024-10-24-KLZU) | [N582MM](/Planes/N582MM/overview) | [KLZU](/Planes/Airports/KLZU) | Lawrenceville, GA | Charlie | Day after |
+| [2024-10-27](/Planes/Incidents/N582MM-2024-10-27-KSDL) | [N582MM](/Planes/N582MM/overview) | [KSDL](/Planes/Airports/KSDL) | Scottsdale, AZ | Charlie | Day before |
+
+**The two indexes:**
+
+* [Every airport in this investigation](/Planes/Airports/overview) — 290 fields, each with its complete recovered ground-visit and flight-leg record
+* [Every interesting date, all aircraft](/Planes/Incidents/overview) — 147 ground contacts near a sourced event, across 110 pages
+* [Investigating Deleted Flights](/Planes/investigating_deleted_flights) — how the data was recovered, how much of it we hold, and where it is still missing
+
+{/* CK_NEW_EVIDENCE_LINKS:END */}

@@ -379,3 +379,33 @@ I searched using keyword and semantic tools for terms like "Charlie Kirk", TPUSA
 All posts are included verbatim or with direct excerpts above; no filtering or summarization applied. Additional context from links (e.g., theturningpointtour.com for full schedule) is referenced where posted. Data covers all tool results for the date range.
 ```
 
+
+---
+
+{/* CK_NEW_EVIDENCE_LINKS:START */}
+
+## Flight-record pages for what is on this page
+
+This investigation keeps one page per airport and one page per recorded ground contact, built directly from the recovered ADS-B traces. These are the ones that fall inside **2025-09-17 to 2025-09-23**, the range this page covers.
+
+**Ground contacts near a sourced Charlie / Erika / TPUSA event:**
+
+| Date (UTC) | Aircraft | Airport | City, State | Whose event | When |
+|---|---|---|---|---|---|
+| [2025-09-19](/Planes/Incidents/N582MM-2025-09-19-KBJC) | [N582MM](/Planes/N582MM/overview) | [KBJC](/Planes/Airports/KBJC) | Boulder, CO | Charlie | Day after |
+| [2025-09-20](/Planes/Incidents/N102DZ-2025-09-20-KSDL) | [N102DZ](/Planes/N102DZ/overview) | [KSDL](/Planes/Airports/KSDL) | Scottsdale, AZ | Erika | Day before |
+| [2025-09-20](/Planes/Incidents/N40JD-2025-09-20-KSDL) | [N40JD](/Planes/N40JD/overview) | [KSDL](/Planes/Airports/KSDL) | Scottsdale, AZ | Erika | Day before |
+| [2025-09-21](/Planes/Incidents/N560TW-2025-09-21-KSDL) | [N560TW](/Planes/N560TW/overview) | [KSDL](/Planes/Airports/KSDL) | Scottsdale, AZ | Erika | **Same day** |
+| [2025-09-21](/Planes/Incidents/N708JH-2025-09-21-KSDL) | [N708JH](/Planes/N708JH/overview) | [KSDL](/Planes/Airports/KSDL) | Scottsdale, AZ | Erika | **Same day** |
+| [2025-09-22](/Planes/Incidents/N102DZ-2025-09-22-KSDL) | [N102DZ](/Planes/N102DZ/overview) | [KSDL](/Planes/Airports/KSDL) | Scottsdale, AZ | Erika | Day after |
+| [2025-09-22](/Planes/Incidents/N40JD-2025-09-22-KSDL) | [N40JD](/Planes/N40JD/overview) | [KSDL](/Planes/Airports/KSDL) | Scottsdale, AZ | Erika | Day after |
+| [2025-09-22](/Planes/Incidents/N560TW-2025-09-22-KSDL) | [N560TW](/Planes/N560TW/overview) | [KSDL](/Planes/Airports/KSDL) | Scottsdale, AZ | Erika | Day after |
+| [2025-09-22](/Planes/Incidents/N708JH-2025-09-22-KSDL) | [N708JH](/Planes/N708JH/overview) | [KSDL](/Planes/Airports/KSDL) | Scottsdale, AZ | Erika | Day after |
+
+**The two indexes:**
+
+* [Every airport in this investigation](/Planes/Airports/overview) — 290 fields, each with its complete recovered ground-visit and flight-leg record
+* [Every interesting date, all aircraft](/Planes/Incidents/overview) — 147 ground contacts near a sourced event, across 110 pages
+* [Investigating Deleted Flights](/Planes/investigating_deleted_flights) — how the data was recovered, how much of it we hold, and where it is still missing
+
+{/* CK_NEW_EVIDENCE_LINKS:END */}

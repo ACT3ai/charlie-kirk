@@ -43,6 +43,17 @@ END = "{/* CK_FOLLOWING_TABLE:END */}"
 # yardstick every other row is read against.
 KIRK_FLEET = {"N582MM", "N560TW", "N872RA", "N102DZ", "N888KG", "N40JD"}
 
+TAIL_PAGE = {
+    "N102DZ": "/Planes/N102DZ/overview", "N1098L": "/Planes/N1098L/overview",
+    "N2100L": "/Planes/N2100L/overview", "N40JD": "/Planes/N40JD/overview",
+    "N560TW": "/Planes/N560TW/overview", "N582MM": "/Planes/N582MM/overview",
+    "N59906": "/Planes/N59906/overview", "N708JH": "/Planes/N708JH/overview",
+    "N872RA": "/Planes/N872RA/overview", "N888KG": "/Planes/N888KG/overview",
+    "SU-BGM": "/Planes/SU-BGM/overview", "SU-BND": "/Planes/SU-BND/overview",
+    "SU-BTT": "/Planes/SU-BTT/overview", "SU-BTU": "/Planes/SU-BTU/overview",
+    "SU-BTV": "/Planes/SU-BTV/overview", "T7-ELL": "/Planes/T7-ELL/overview",
+}
+
 TAIL_NOTE = {
     "N582MM": "TPUSA-associated Learjet",
     "N560TW": "Kirk-side jet, Scottsdale base",
@@ -86,10 +97,13 @@ def table(rows, show_event=True):
         if link and ev != "—":
             ev = f"[{ev}]({link})"
         ecity = f"{r['event_city']}, {r['event_state']}".strip(", ") or "—"
+        inc = f"/Planes/Incidents/{r['tail']}-{r['date']}-{r['airport']}"
         cells = [
-            r["date"], r["win"], f"**{r['tail']}**",
+            f"[{r['date']}]({inc})", r["win"],
+            f"[**{r['tail']}**]({TAIL_PAGE.get(r['tail'], '/Planes/overview')})",
             bid.esc(TAIL_NOTE.get(r["tail"], "—")),
-            f"**{r['airport']}**", bid.esc(r["place"]), bid.esc(r["who"]),
+            bid._pf.ap_link(r["airport"], bold=True),
+            bid.esc(r["place"]), bid.esc(r["who"]),
         ]
         if show_event:
             cells += [ev, bid.esc(ecity)]
@@ -113,9 +127,11 @@ def summary_by_tail(rows, label):
     for tail in sorted(by, key=lambda t: (-len(by[t]), t)):
         rs = sorted(by[tail], key=lambda x: x["date"])
         aps = sorted({x["airport"] for x in rs})
+        aplinks = ", ".join(bid._pf.ap_link(a) for a in aps)
         out.append(
-            f"| **{tail}** | {bid.esc(TAIL_NOTE.get(tail, '—'))} | {len(rs)} | "
-            f"{len({x['date'] for x in rs})} | {', '.join(aps)} | "
+            f"| [**{tail}**]({TAIL_PAGE.get(tail, '/Planes/overview')}) "
+            f"| {bid.esc(TAIL_NOTE.get(tail, '—'))} | {len(rs)} | "
+            f"{len({x['date'] for x in rs})} | {aplinks} | "
             f"{rs[0]['date']} | {rs[-1]['date']} |"
         )
     return "\n".join(out)
@@ -243,6 +259,13 @@ def build_block(person, rows_all, self_page=""):
     L.append(
         "* **2022 is effectively blank.** No free archive covers it, so no row "
         "above and no gap above can speak to that year."
+    )
+    L.append("")
+    L.append(
+        "Every date above opens the full record for that contact, and every "
+        "airport code opens that field's complete recovered record. See also "
+        "[every interesting date across all aircraft](/Planes/Incidents/overview) "
+        "and [every airport in this investigation](/Planes/Airports/overview)."
     )
     L.append("")
     L.append(

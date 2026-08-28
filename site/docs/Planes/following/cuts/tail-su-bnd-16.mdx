@@ -33,17 +33,18 @@ borderRadius:'4px', textDecoration:'none', fontSize:'0.9rem'}}>← Table drill-d
 splits the overlap register **by aircraft** carries a cell reading "Overlaps where the aircraft was
 SU-BND, the blue plane". This page is that cell. It holds **16 rows** — every row in the register
 whose named airframe is SU-BND, the Gulfstream carrying ICAO hex `01003E`. The register's other
-large aircraft cell, SU-BTT, holds 57 rows; three further rows name both tails at once and are
-counted in each.
+large aircraft cell, SU-BTT, holds 57 rows; three further rows name both tails at once and sit in
+their own cell rather than in either of these two.
 
 ## What this slice is
 
 A row is in this list if the compiler's sheet, or the site's own reconstruction of it, names
-**SU-BND** as the aircraft for that claimed overlap. Rows naming only SU-BTT are excluded. Rows that
-name both tails on the same line are included here and in the SU-BTT list, which is why the
-per-aircraft cells add to more than the register's row count. Nothing about a Kirk, a date or an
-airport enters the filter: reproduce the list by taking `overlaps.csv` and keeping every row whose
-tail field contains SU-BND.
+**SU-BND alone** as the aircraft for that claimed overlap. Rows naming only SU-BTT are excluded, and
+so are the three rows that name both tails on the same line — those carry the tail value
+"SU-BTT; SU-BND" and are held in [their own cell](/Planes/following/cuts/tail-both-3), which is why
+the per-aircraft cells add to the register's row count exactly rather than double-counting. Nothing
+about a Kirk, a date or an airport enters the filter: reproduce the list by taking `overlaps.csv` and
+keeping every row whose tail field is SU-BND on its own.
 
 ## At a glance
 
@@ -87,22 +88,22 @@ tail field contains SU-BND.
 
 | Row | Date claimed | Who the sheet claims was present | Erika location as the sheet gives it | Sourced Kirk / TPUSA appearance same day | Venue | Local time | Nearest airport to that venue | Kirk-side aircraft on record |
 |---|---|---|---|---|---|---|---|---|
-| [OWENS-014](/Planes/following/overlap/20230503_MO_st_louis_owens_014/overview) | **3 May 2023** | Charlie: **not claimed** · Erika: **claimed** | Missouri | **None.** No sourced Kirk or TPUSA appearance within three days, anywhere. | — | — | — | *none recorded* |
-| [OWENS-015](/Planes/following/overlap/20230509_MO_st_louis_then_goose_bay_owens_015/overview) | **9 May 2023** | Charlie: **not claimed** · Erika: **claimed** | Missouri / Cairo | **None.** No sourced Kirk or TPUSA appearance within three days, anywhere. | — | — | — | *none recorded* |
-| [OWENS-050](/Planes/following/overlap/20230512_MO_st_louis_owens_050/overview) | **12 May 2023** | Charlie: **not claimed** · Erika: **claimed** | Missouri / Cairo | **None.** No sourced Kirk or TPUSA appearance within three days, anywhere. | — | — | — | *none recorded* |
-| [OWENS-016](/Planes/following/overlap/20230612_UT_provo_owens_016/overview) | **12 June 2023** | Charlie: **not claimed** · Erika: **claimed** | Utah | **None same-day.** Nearest sourced: [Charlie — Young Women's Leadership Summit 2023, Grapevine, TX](/Planes/following/speaking/20230609_grapevine) (-3 days) | — | — | — | *none recorded* |
-| [OWENS-052](/Planes/following/overlap/20230625_DE_wilmington_owens_052/overview) | **25 June 2023** | Charlie: **not claimed** · Erika: **claimed** | Delaware | **None.** No sourced Kirk or TPUSA appearance within three days, anywhere. | — | — | — | *none recorded* |
-| [OWENS-025](/Planes/following/overlap/20240419_UT_provo_owens_025/overview) | **19 April 2024** | Charlie: **not claimed** · Erika: **claimed** | Utah | **None.** No sourced Kirk or TPUSA appearance within three days, anywhere. | — | — | — | *none recorded* |
-| [OWENS-056](/Planes/following/overlap/20240503_MO_st_louis_owens_056/overview) | **3 May 2024** | Charlie: **not claimed** · Erika: **claimed** | Missouri | **None.** No sourced Kirk or TPUSA appearance within three days, anywhere. | — | — | — | *none recorded* |
-| [OWENS-057](/Planes/following/overlap/20240510_MO_st_louis_owens_057/overview) | **10 May 2024** | Charlie: **not claimed** · Erika: **claimed** | Missouri | **None same-day.** Nearest sourced: [Charlie — Prove Me Wrong tabling — UNLV, Las Vegas, NV](/Planes/following/speaking/20240508_las_vegas) (-2 days) | — | — | — | *none recorded* |
-| [OWENS-030](/Planes/following/overlap/20241208_UT_provo_owens_030/overview) | **8 December 2024** | Charlie: **not claimed** · Erika: **claimed** | Utah | **None.** No sourced Kirk or TPUSA appearance within three days, anywhere. | — | — | — | *none recorded* |
-| [OWENS-064](/Planes/following/overlap/20250419_UT_provo_owens_064/overview) | **19 April 2025** | Charlie: **not claimed** · Erika: **claimed** | Utah | **None same-day.** Nearest sourced: [Charlie — American Comeback Tour — Texas A&M, College Station, TX](/Planes/following/speaking/20250422_college_station) (+3 days) | — | — | — | *none recorded* |
-| [OWENS-035](/Planes/following/overlap/20250523_UT_provo_owens_035/overview) | **23 May 2025** | Charlie: **claimed** · Erika: **claimed** | Utah | **None.** No sourced Kirk or TPUSA appearance within three days, anywhere. | — | — | — | *none recorded* |
-| [OWENS-065](/Planes/following/overlap/20250523_UT_provo_owens_065/overview) | **23 May 2025** | Charlie: **claimed** · Erika: **claimed** | Utah | **None.** No sourced Kirk or TPUSA appearance within three days, anywhere. | — | — | — | *none recorded* |
-| [OWENS-037](/Planes/following/overlap/20250707_UT_provo_owens_037/overview) | **7 July 2025** | Charlie: **not claimed** · Erika: **claimed** | Utah | **None same-day.** Nearest sourced: [Charlie — Chapter Leadership Summit 2025, Tampa, FL](/Planes/following/speaking/20250709_tampa) (+2 days) | — | — | — | *none recorded* |
-| [OWENS-066](/Planes/following/overlap/20250707_UT_provo_owens_066/overview) | **7 July 2025** | Charlie: **not claimed** · Erika: **claimed** | Utah | **None same-day.** Nearest sourced: [Charlie — Chapter Leadership Summit 2025, Tampa, FL](/Planes/following/speaking/20250709_tampa) (+2 days) | — | — | — | *none recorded* |
+| [OWENS-014](/Planes/following/overlap/20230503_MO_st_louis_owens_014/overview) | **3 May 2023** | Charlie: **not claimed** · Erika: **claimed** | Missouri | **None same-day.** **Register's nearest sourced appearance:** Charlie Nashville Pastors Summit May 2023 (month only, different state) (register, gap not stated) | — | — | — | *none recorded* |
+| [OWENS-015](/Planes/following/overlap/20230509_MO_st_louis_then_goose_bay_owens_015/overview) | **9 May 2023** | Charlie: **not claimed** · Erika: **claimed** | Missouri / Cairo | **None same-day.** Neither this register's own nearest-event column nor a date join against the sourced speaking-events catalog finds a Kirk or TPUSA appearance within three days. | — | — | — | *none recorded* |
+| [OWENS-050](/Planes/following/overlap/20230512_MO_st_louis_owens_050/overview) | **12 May 2023** | Charlie: **not claimed** · Erika: **claimed** | Missouri / Cairo | **None same-day.** **Register's nearest sourced appearance:** none in MO mid-May 2023 (register, gap not stated) | — | — | — | *none recorded* |
+| [OWENS-016](/Planes/following/overlap/20230612_UT_provo_owens_016/overview) | **12 June 2023** | Charlie: **not claimed** · Erika: **claimed** | Utah | **None same-day.** **Register's nearest sourced appearance:** none sourced in UT in June 2023; Utah record on this site begins April 2024 (register, gap not stated) · **Nearest in the events catalog:** [Charlie — Young Women's Leadership Summit 2023, Grapevine, TX](/Planes/following/speaking/20230609_grapevine) (-3 days) | — | — | — | *none recorded* |
+| [OWENS-052](/Planes/following/overlap/20230625_DE_wilmington_owens_052/overview) | **25 June 2023** | Charlie: **not claimed** · Erika: **claimed** | Delaware | **None same-day.** **Register's nearest sourced appearance:** none in DE June 2023 (register, gap not stated) | — | — | — | *none recorded* |
+| [OWENS-025](/Planes/following/overlap/20240419_UT_provo_owens_025/overview) | **19 April 2024** | Charlie: **not claimed** · Erika: **claimed** | Utah | **None same-day.** **Register's nearest sourced appearance:** Charlie Prove Me Wrong University of Utah 2024-04-23 (4 days later) (register: 4 days away) | — | — | — | *none recorded* |
+| [OWENS-056](/Planes/following/overlap/20240503_MO_st_louis_owens_056/overview) | **3 May 2024** | Charlie: **not claimed** · Erika: **claimed** | Missouri | **None same-day.** **Register's nearest sourced appearance:** Charlie Seattle 2024-05-07 (different state) (register, gap not stated) | — | — | — | *none recorded* |
+| [OWENS-057](/Planes/following/overlap/20240510_MO_st_louis_owens_057/overview) | **10 May 2024** | Charlie: **not claimed** · Erika: **claimed** | Missouri | **None same-day.** **Register's nearest sourced appearance:** none in MO May 2024 (register, gap not stated) · **Nearest in the events catalog:** [Charlie — Prove Me Wrong tabling — UNLV, Las Vegas, NV](/Planes/following/speaking/20240508_las_vegas) (-2 days) | — | — | — | *none recorded* |
+| [OWENS-030](/Planes/following/overlap/20241208_UT_provo_owens_030/overview) | **8 December 2024** | Charlie: **not claimed** · Erika: **claimed** | Utah | **None same-day.** **Register's nearest sourced appearance:** AmericaFest 2024 Phoenix 2024-12-19 to 2024-12-24 (different state) (register, gap not stated) | — | — | — | *none recorded* |
+| [OWENS-064](/Planes/following/overlap/20250419_UT_provo_owens_064/overview) | **19 April 2025** | Charlie: **not claimed** · Erika: **claimed** | Utah | **None same-day.** **Register's nearest sourced appearance:** Charlie Laramie 2025-04-24 (different state). SU-BGM WAS at Provo 2025-04-16 — different tail, not in the 73-tally. (register, gap not stated) · **Nearest in the events catalog:** [Charlie — American Comeback Tour — Texas A&M, College Station, TX](/Planes/following/speaking/20250422_college_station) (+3 days) | — | — | — | *none recorded* |
+| [OWENS-035](/Planes/following/overlap/20250523_UT_provo_owens_035/overview) | **23 May 2025** | Charlie: **claimed** · Erika: **claimed** | Utah | **None same-day.** **Register's nearest sourced appearance:** Charlie San Francisco 2025-05-06; YWLS Grapevine TX 2025-06-13 (neither Provo). No sourced Kirk presence at Provo during the 113-day stay. (register, gap not stated) | — | — | — | *none recorded* |
+| [OWENS-065](/Planes/following/overlap/20250523_UT_provo_owens_065/overview) | **23 May 2025** | Charlie: **claimed** · Erika: **claimed** | Utah | **None same-day.** **Register's nearest sourced appearance:** none in UT 23 May 2025 (register, gap not stated) | — | — | — | *none recorded* |
+| [OWENS-037](/Planes/following/overlap/20250707_UT_provo_owens_037/overview) | **7 July 2025** | Charlie: **not claimed** · Erika: **claimed** | Utah | **None same-day.** **Register's nearest sourced appearance:** Charlie SAS Tampa 2025-07-11 (different state) (register, gap not stated) · **Nearest in the events catalog:** [Charlie — Chapter Leadership Summit 2025, Tampa, FL](/Planes/following/speaking/20250709_tampa) (+2 days) | — | — | — | *none recorded* |
+| [OWENS-066](/Planes/following/overlap/20250707_UT_provo_owens_066/overview) | **7 July 2025** | Charlie: **not claimed** · Erika: **claimed** | Utah | **None same-day.** **Register's nearest sourced appearance:** SAS Tampa 2025-07-11 (register, gap not stated) · **Nearest in the events catalog:** [Charlie — Chapter Leadership Summit 2025, Tampa, FL](/Planes/following/speaking/20250709_tampa) (+2 days) | — | — | — | *none recorded* |
 | [EXTRA-006](/Planes/following/overlap/20250910_UT_provo_extra_006/overview) | **10 September 2025** | Charlie: **claimed** · Erika: **claimed** | disputed: sheet Nebraska/Delaware vs Erika Arizona | [Charlie — The American Comeback Tour — UVU (first stop of the fall tour), Orem, UT](/Planes/following/speaking/20250910_orem) | Utah Valley University, Sorensen Center courtyard | event ~10:00 MDT announced; shot at 12:23:30 PM MDT | KPVU — Provo Municipal Airport, 5 mi | *none recorded* |
-| [OWENS-042](/Planes/following/overlap/20250913_UT_provo_owens_042/overview) | **13 September 2025** | Charlie: **not claimed** · Erika: **claimed** | Utah | **None same-day.** Nearest sourced: [Charlie — The American Comeback Tour — UVU (first stop of the fall tour), Orem, UT](/Planes/following/speaking/20250910_orem) (-3 days) | — | — | — | *none recorded* |
+| [OWENS-042](/Planes/following/overlap/20250913_UT_provo_owens_042/overview) | **13 September 2025** | Charlie: **not claimed** · Erika: **claimed** | Utah | **None same-day.** **Register's nearest sourced appearance:** UVU 2025-09-10 (3 days earlier) (register: 3 days away) · **Nearest in the events catalog:** [Charlie — The American Comeback Tour — UVU (first stop of the fall tour), Orem, UT](/Planes/following/speaking/20250910_orem) (-3 days) | — | — | — | *none recorded* |
 
 ## TABLE C — sourcing and both verdicts
 
@@ -191,3 +192,47 @@ other states.
 * [Utah — every overlap, every landing, every event](/Planes/following/cuts/state-utah)
 * [The ten ground-position confirmations](/Planes/following/cuts/ground-confirmed-10)
 * [The 25 rows corroborated by recovered position data](/Planes/following/cuts/adsb-at-claimed-airport-25)
+
+
+---
+
+{/* CK_NEW_EVIDENCE_LINKS:START */}
+
+## Flight-record pages for what is on this page
+
+This investigation keeps one page per airport and one page per recorded ground contact, built directly from the recovered ADS-B traces. These are the ones this page touches.
+
+**Ground contacts near a sourced Charlie / Erika / TPUSA event:**
+
+| Date (UTC) | Aircraft | Airport | City, State | Whose event | When |
+|---|---|---|---|---|---|
+| [2024-04-23](/Planes/Incidents/N888KG-2024-04-23-KPVU) | [N888KG](/Planes/N888KG/overview) | [KPVU](/Planes/Airports/KPVU) | Provo, UT | Charlie | **Same day** |
+| [2024-04-23](/Planes/Incidents/SU-BTT-2024-04-23-KPVU) | [SU-BTT](/Planes/SU-BTT/overview) | [KPVU](/Planes/Airports/KPVU) | Provo, UT | Charlie | **Same day** |
+| [2025-09-10](/Planes/Incidents/N102DZ-2025-09-10-KPVU) | [N102DZ](/Planes/N102DZ/overview) | [KPVU](/Planes/Airports/KPVU) | Provo, UT | Charlie | **Same day** |
+| [2025-09-10](/Planes/Incidents/N40JD-2025-09-10-KPVU) | [N40JD](/Planes/N40JD/overview) | [KPVU](/Planes/Airports/KPVU) | Provo, UT | Charlie | **Same day** |
+| [2025-09-10](/Planes/Incidents/N560TW-2025-09-10-KPVU) | [N560TW](/Planes/N560TW/overview) | [KPVU](/Planes/Airports/KPVU) | Provo, UT | Charlie | **Same day** |
+| [2025-09-10](/Planes/Incidents/N59906-2025-09-10-KPVU) | [N59906](/Planes/N59906/overview) | [KPVU](/Planes/Airports/KPVU) | Provo, UT | Charlie | **Same day** |
+| [2025-09-10](/Planes/Incidents/N872RA-2025-09-10-KPVU) | [N872RA](/Planes/N872RA/overview) | [KPVU](/Planes/Airports/KPVU) | Provo, UT | Charlie | **Same day** |
+| [2025-09-10](/Planes/Incidents/N888KG-2025-09-10-KPVU) | [N888KG](/Planes/N888KG/overview) | [KPVU](/Planes/Airports/KPVU) | Provo, UT | Charlie | **Same day** |
+| [2025-09-10](/Planes/Incidents/SU-BND-2025-09-10-KPVU) | [SU-BND](/Planes/SU-BND/overview) | [KPVU](/Planes/Airports/KPVU) | Provo, UT | Charlie | **Same day** |
+| [2025-09-10](/Planes/Incidents/SU-BTT-2025-09-10-KPVU) | [SU-BTT](/Planes/SU-BTT/overview) | [KPVU](/Planes/Airports/KPVU) | Provo, UT | Charlie | **Same day** |
+
+**Airports named on this page:**
+
+* [KPVU — Provo Municipal Airport](/Planes/Airports/KPVU), Provo, UT — 135 recorded ground visits, 13 tracked aircraft
+* [KILG — Wilmington Airport / New Castle Airport](/Planes/Airports/KILG), Wilmington, DE — 28 recorded ground visits, 3 tracked aircraft
+* [KSTL — Lambert-St. Louis International Airport](/Planes/Airports/KSTL), St. Louis, MO — 2 recorded ground visits, 1 tracked aircraft
+
+**Aircraft named on this page:**
+
+* [SU-BGM](/Planes/SU-BGM/overview) — full recovered movement record, every airport and every leg
+* [SU-BND](/Planes/SU-BND/overview) — full recovered movement record, every airport and every leg
+* [SU-BTT](/Planes/SU-BTT/overview) — full recovered movement record, every airport and every leg
+
+**The two indexes:**
+
+* [Every airport in this investigation](/Planes/Airports/overview) — 290 fields, each with its complete recovered ground-visit and flight-leg record
+* [Every interesting date, all aircraft](/Planes/Incidents/overview) — 147 ground contacts near a sourced event, across 110 pages
+* [Investigating Deleted Flights](/Planes/investigating_deleted_flights) — how the data was recovered, how much of it we hold, and where it is still missing
+
+{/* CK_NEW_EVIDENCE_LINKS:END */}

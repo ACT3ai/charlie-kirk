@@ -422,3 +422,21 @@ Search twitter and x.com posts for where Charlie Kirk or TPUSA has public speaki
 This includes **every matching post** returned across all tool calls (duplicates noted where they overlap). No external links or media beyond what's in the posts were followed.
 ```
 
+
+---
+
+{/* CK_NEW_EVIDENCE_LINKS:START */}
+
+## Flight-record pages for what is on this page
+
+This investigation keeps one page per airport and one page per recorded ground contact, built directly from the recovered ADS-B traces. These are the ones that fall inside **2022-04-30 to 2022-05-06**, the range this page covers.
+
+**No tracked aircraft was on the ground near a sourced event in this window.** Across 2022-04-30 to 2022-05-06 the recovered traces record no contact. That is a coverage statement as much as anything — see the limits on the linked pages.
+
+**The two indexes:**
+
+* [Every airport in this investigation](/Planes/Airports/overview) — 290 fields, each with its complete recovered ground-visit and flight-leg record
+* [Every interesting date, all aircraft](/Planes/Incidents/overview) — 147 ground contacts near a sourced event, across 110 pages
+* [Investigating Deleted Flights](/Planes/investigating_deleted_flights) — how the data was recovered, how much of it we hold, and where it is still missing
+
+{/* CK_NEW_EVIDENCE_LINKS:END */}

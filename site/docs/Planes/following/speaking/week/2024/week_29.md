@@ -693,3 +693,21 @@ Search twitter and x.com posts for where Charlie Kirk or TPUSA has public speaki
 **Key observations from the raw data (no summary, just noting explicit mentions):** Multiple posts reference Charlie Kirk speaking or appearing at the Republican National Convention (RNC) in Milwaukee during the week (e.g., live with Marco Rubio, discussions, reactions to speeches, “Charlie Kirk at the RNC”). TPUSA-related events mentioned include the Believers’ Summit (upcoming “next week” with George Janko speaking; one post notes worship leader at TPUSA’s Believers Summit; prior event references like 2021 Student Action Summit). Other posts discuss past or unrelated TPUSA events, debates involving Charlie Kirk, or RNC schedule/speakers without specific new dates/locations for Charlie Kirk outside the RNC context. No additional specific campus tours, new speaking dates, or locations beyond RNC/Milwaukee and the Believers’ Summit promo were detailed in these posts. All data is directly from the tool results.
 ```
 
+
+---
+
+{/* CK_NEW_EVIDENCE_LINKS:START */}
+
+## Flight-record pages for what is on this page
+
+This investigation keeps one page per airport and one page per recorded ground contact, built directly from the recovered ADS-B traces. These are the ones that fall inside **2024-07-15 to 2024-07-21**, the range this page covers.
+
+**No tracked aircraft was on the ground near a sourced event in this window.** Across 2024-07-15 to 2024-07-21 the recovered traces record no contact. That is a coverage statement as much as anything — see the limits on the linked pages.
+
+**The two indexes:**
+
+* [Every airport in this investigation](/Planes/Airports/overview) — 290 fields, each with its complete recovered ground-visit and flight-leg record
+* [Every interesting date, all aircraft](/Planes/Incidents/overview) — 147 ground contacts near a sourced event, across 110 pages
+* [Investigating Deleted Flights](/Planes/investigating_deleted_flights) — how the data was recovered, how much of it we hold, and where it is still missing
+
+{/* CK_NEW_EVIDENCE_LINKS:END */}
