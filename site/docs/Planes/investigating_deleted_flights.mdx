@@ -305,14 +305,15 @@ The recovery ledger holds **10,104 (tail, UTC day) rows**:
 | Held by ADS-B Exchange samples alone | 153 |
 | Asked of both, **neither has it** | 7,869 |
 
-**318 aircraft-days were recovered from inside the window where adsb.lol serves
-nothing at all** (2025-10-12 onward) — 281 from airplanes.live, 29 from ADS-B
-Exchange's free samples, 7 from both, 1 from the GitHub backup. **210 of them
-are in 2026, where adsb.lol returns HTTP 404 for every date.** 41 of the 318 are
-the Egyptian fleet plus T7-ELL. That is real recovery: nobody working only from
-adsb.lol has any of it. It is also, unambiguously, a **retention boundary and
-not suppression** — the same archive refuses those dates for the control
-airliners too.
+**325 aircraft-days were recovered from inside the two windows where adsb.lol
+serves nothing at all** — 281 from airplanes.live, 29 from ADS-B Exchange's free
+samples, 8 from the GitHub backup, 7 from the samples and airplanes.live
+together. **115 fall in the 403 band and 210 in the 404 band**, the latter being
+all of 2026, where adsb.lol returns HTTP 404 for every date. **76 of the 325 are
+the Egyptian fleet plus T7-ELL, and 3 are the control airliners.** That is real
+recovery: nobody working only from adsb.lol has any of it. It is also,
+unambiguously, a **retention and serving boundary rather than suppression** — the
+same archive refuses those dates for the control airliners too.
 
 Of the **182 aircraft-days that exist on airplanes.live and not on adsb.lol**:
 
@@ -968,7 +969,7 @@ Three rules came out of it, and they govern everything above:
 | `geo_rates.csv` | event-circle versus control-circle base rates |
 | `geo_recurrence.csv` | 799 aircraft near 2+ events in 2+ states, with control contamination flagged |
 | `su_presence_union.csv` | the four-row union of both routes (§4.9) |
-| `flight_legs.csv` | 2,282 flight legs, each labelled direct / overnight / gap |
+| `flight_legs.csv` | 2,349 flight legs, each labelled direct / overnight / gap |
 | `al_only_classified.csv` | every one-archive-only aircraft-day, classified against four independent tests |
 | `wayback_trackpoll_legs.json` | the 85 legs re-parsed out of pages scored as empty |
 | `recurrence_hardtest.csv` | the 3,032-aircraft recurrence population and the hard test applied to it |
@@ -1013,9 +1014,9 @@ Three rules came out of it, and they govern everything above:
 | **4 foreign-fleet ground presences within 50 mi of a sourced event** — SU-BTT 23 Apr 2024 Provo; SU-BND 9 and 10 Sep 2025 Provo; SU-BTT 10 Sep 2025 Provo | `su_presence_union.csv` |
 | **30 foreign-fleet ground visits at Provo**, Apr 2024 → Jun 2026, including SU-BND parked continuously 5–12 Sep 2025 | `master_proximity.csv` |
 | **7 aircraft-days with wheels on the ground at a claimed overlap field** — six Provo, one Wilmington | `overlaps.csv` |
-| **2,282 flight legs** across 17 aircraft, each labelled direct / overnight / gap | `flight_legs.csv` |
+| **2,349 flight legs** across 17 aircraft, each labelled direct / overnight / gap — 110 of them foreign-fleet, 139 near a sourced event | `flight_legs.csv` |
 | **6,502 airport ground visits** over 2,346 aircraft-days | `trace_visit_index.json` |
-| **318 aircraft-days pulled from inside adsb.lol's two archive holes**, 210 of them in 2026 | `recovery_ledger.csv` |
+| **325 aircraft-days pulled from inside adsb.lol's two archive holes**, 210 of them in 2026 | `recovery_ledger.csv` |
 | **111 aircraft-days already downloaded but never filed** — N1098L, N2100L, N59906 | `ingest_sweep_traces.py` |
 | **85 flight legs re-parsed out of archived pages scored as empty** | §4.17 |
 | **N708JH at Provo the day after, and at Scottsdale for the memorial** — answering an open question this site had posted | §4.7 |
