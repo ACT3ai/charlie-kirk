@@ -1,0 +1,23 @@
+## TABLE A — the following aircraft
+
+| Row | Date claimed | Airport | City / State | Following aircraft | Type | ICAO hex | Arrived from | Departed to | Ground stay logged, arrived | Departed | Days | Transponder / ground flag | ADS-B verdict | Closest approach |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| [OWENS-015](/Planes/following/overlap/20230509_MO_st_louis_then_goose_bay_owens_015/overview) | **9 May 2023** | [**CYYR**](/Planes/following/GooseBay_CYYR_2023-05-09_to_2025-09-13/overview)<br/>Goose Bay (via St. Louis → Cairo) | St. Louis then Goose Bay, MO | [SU-BND](/Planes/SU-BND/overview) | Gulfstream (G550/G-IV, trackers disagree) | `01003E` | St. Louis | Goose Bay → Paris → Cairo | 9 May 2023 | 9 May 2023 | 0 | — | **Elsewhere — refuted** | 1062.56 km |
+| [OWENS-050](/Planes/following/overlap/20230512_MO_st_louis_owens_050/overview) | **12 May 2023** | [**KSTL**](/Planes/following/StLouis_KSTL_2022-12-20_to_2025-02-23/overview)<br/>St. Louis (claimed) | St. Louis, MO | [SU-BND](/Planes/SU-BND/overview) | Gulfstream (G550/G-IV, trackers disagree) | `01003E` | Missouri (claimed) | Paris / Cairo (claimed) | *no logged stay covers this date* | — | — | — | **Elsewhere — refuted** | 7034.48 km |
+| [OWENS-036](/Planes/following/overlap/20250618_NE_omaha_lincoln_owens_036/overview) | **18 June 2025** | [**KOMA**](/Planes/following/Omaha_KOMA_2024-02-09_to_2025-10-05/overview)<br/>Omaha then Lincoln (claimed) | Omaha / Lincoln, NE | [SU-BTT](/Planes/SU-BTT/overview) | Dassault Falcon 7X | `0101D3` | Paris (claimed) | Wilmington / Cairo (claimed) | *no logged stay covers this date* | — | — | — | **Elsewhere — refuted** | 10139.55 km |
+
+## TABLE B — who they are claimed to have been following
+
+| Row | Date claimed | Who the sheet claims was present | Erika location as the sheet gives it | Sourced Kirk / TPUSA appearance same day | Venue | Local time | Nearest airport to that venue | Kirk-side aircraft on record |
+|---|---|---|---|---|---|---|---|---|
+| [OWENS-015](/Planes/following/overlap/20230509_MO_st_louis_then_goose_bay_owens_015/overview) | **9 May 2023** | Charlie: **not claimed** · Erika: **claimed** | Missouri / Cairo | **None.** No sourced Kirk or TPUSA appearance within three days, anywhere. | — | — | — | *none recorded* |
+| [OWENS-050](/Planes/following/overlap/20230512_MO_st_louis_owens_050/overview) | **12 May 2023** | Charlie: **not claimed** · Erika: **claimed** | Missouri / Cairo | **None.** No sourced Kirk or TPUSA appearance within three days, anywhere. | — | — | — | *none recorded* |
+| [OWENS-036](/Planes/following/overlap/20250618_NE_omaha_lincoln_owens_036/overview) | **18 June 2025** | Charlie: **not claimed** · Erika: **claimed** | Nebraska | **None.** No sourced Kirk or TPUSA appearance within three days, anywhere. | — | — | — | *none recorded* |
+
+## TABLE C — sourcing and both verdicts
+
+| Row | Sheet index | Audit verdict (tracking-site pass) | ADS-B verdict (position data) | What the position data says | Source of the claim | Source post | Full row page |
+|---|---|---|---|---|---|---|---|
+| `OWENS-015` | 15 | **Accurate** | **Elsewhere — refuted** | REFUTED. The airframe was tracked that day and its closest recovered position is 1,063 km from CYYR. | Owens sheet via Kanekoa audit (ACCURATE overall) | [post](https://x.com/KanekoaTheGreat/status/2000701268806062358) | [open](/Planes/following/overlap/20230509_MO_st_louis_then_goose_bay_owens_015/overview) |
+| `OWENS-050` | 50 | **Inaccurate** | **Elsewhere — refuted** | REFUTED. The airframe was tracked that day and its closest recovered position is 7,034 km from KSTL. | Owens sheet via Kanekoa audit | [post](https://x.com/KanekoaTheGreat/status/2000701268806062358) | [open](/Planes/following/overlap/20230512_MO_st_louis_owens_050/overview) |
+| `OWENS-036` | 36 | **Inaccurate** | **Elsewhere — refuted** | REFUTED. The airframe was tracked that day and its closest recovered position is 10,140 km from KOMA. | Owens sheet via Kanekoa audit | [post](https://x.com/KanekoaTheGreat/status/2000701268806062358) | [open](/Planes/following/overlap/20250618_NE_omaha_lincoln_owens_036/overview) |

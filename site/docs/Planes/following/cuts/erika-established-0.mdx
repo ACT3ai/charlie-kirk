@@ -1,0 +1,119 @@
+---
+id: cuts-erika-established-0
+slug: /Planes/following/cuts/erika-established-0
+displayed_sidebar: docs
+title: "The rows where Erika Kirk's presence is actually established"
+sidebar_label: "Erika established — 0 rows"
+description: "The 'Overlaps where Erika Kirk's presence is established' cell of the who-is-being-followed table on the Following overview. It holds zero rows."
+keywords:
+  - Charlie Kirk
+  - Erika Kirk
+  - SU-BTT
+  - SU-BND
+  - Egyptian registered aircraft
+  - flight tracking
+image: "/img/docusaurus-social-card.jpg"
+hide_table_of_contents: true
+---
+
+<div className="ck-full-bleed" />
+
+<a href="/Planes/following/cuts/overview" style={{display:'inline-block', marginBottom:'1rem',
+padding:'0.35rem 0.9rem', background:'#1a73e8', color:'#fff',
+borderRadius:'4px', textDecoration:'none', fontSize:'0.9rem'}}>← Table drill-downs</a>
+
+# The rows where Erika Kirk's presence is actually established
+
+**Where this came from.** On [the Following overview](/Planes/following/overview), the table that
+splits the overlap register by *who the row claims was being followed* carries a cell reading
+"Overlaps where Erika Kirk's presence is established". This page is that cell. The count in it is
+**0**. Every other cell in that table drills down into a list of rows; this one drills down into an
+empty list, and the empty list is the point.
+
+## What this slice is
+
+A row qualifies for this list only if some source independently places **Erika Kirk herself** at the
+claimed city on the claimed date — a published itinerary, a dated photograph, a venue record, a
+manifest, a named appearance. Being written in the "Erika location" cell of the compiler's
+spreadsheet does **not** qualify: that cell is the claim, not evidence for the claim. An aircraft
+being at the airport does not qualify either, because a trace locates an airframe and never a
+passenger. Filter `overlaps.csv` for rows carrying independent, dated, sourced confirmation of Erika
+Kirk's own physical presence and the filter returns nothing. That is how this page ends up with zero
+rows.
+
+## At a glance
+
+| Measure | Value |
+|---|---|
+| Rows in this slice | **0** |
+| Distinct dates | 0 |
+| Aircraft named | none |
+| Airports | none |
+| States | none |
+| ADS-B verdicts represented | none |
+| Ground-position confirmations | 0 |
+| Rows landing on a same-day sourced Kirk or TPUSA appearance | 0 |
+
+## TABLE A — the following aircraft
+
+| Row | Date claimed | Airport | City / State | Following aircraft | Type | ICAO hex | Arrived from | Departed to | Ground stay logged, arrived | Departed | Days | Transponder / ground flag | ADS-B verdict | Closest approach |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+
+## TABLE B — who they are claimed to have been following
+
+| Row | Date claimed | Who the sheet claims was present | Erika location as the sheet gives it | Sourced Kirk / TPUSA appearance same day | Venue | Local time | Nearest airport to that venue | Kirk-side aircraft on record |
+|---|---|---|---|---|---|---|---|---|
+
+## TABLE C — sourcing and both verdicts
+
+| Row | Sheet index | Audit verdict (tracking-site pass) | ADS-B verdict (position data) | What the position data says | Source of the claim | Source post | Full row page |
+|---|---|---|---|---|---|---|---|
+
+## What the specifics show
+
+There are no specifics, and that is the finding. The three tables above are the real generated
+output for this slice — they carry their headers and not a single data row, because the join that
+produced every other cuts page returned an empty set here.
+
+This matters because of where the register's weight sits. In the same index of slices, the
+Erika-side lists are the large ones: the register counts 70 rows that involve Erika Kirk at all and
+61 that rest on her alone, against 18 that involve Charlie Kirk in any way. So the majority of the
+"following" claim is carried by a person whose presence is confirmed on **zero** of its rows. The
+supporting material for those 70 rows is a location cell on a circulated spreadsheet — sometimes a
+state, sometimes two states, sometimes hedged — and no dated itinerary behind it.
+
+The nearest thing the register has to a sourced Erika appearance is not in this register at all. On
+the refuted-Erika slice, the row for 18 June 2025 records that the only well-dated joint Charlie-and-
+Erika appearance in the whole pre-September-10 window is Grapevine, Texas, 13–15 June 2025 — and no
+aircraft in this investigation was in Texas for it. That is the strongest available Erika datum, and
+it points away from the claim rather than toward it.
+
+## What this list cannot tell you
+
+* **A trace proves an aircraft was there. It never proves who was aboard.** Every corroborated row
+  elsewhere in this register corroborates a tail number and a position, nothing more. No ADS-B
+  record in existence can put a named passenger in a cabin.
+* **Erika Kirk's presence is not established on any row.** Her flight logs are
+  [reported erased](/Planes/Erika-Flight-Logs-Erased) and no dated itinerary was ever published.
+  Every claim about where she was on these dates is attributed to the compiler's spreadsheet.
+* **Zero here is not proof she was elsewhere.** An empty list means nobody has produced sourced
+  evidence of her presence to this register. It does not establish absence, and it is not an
+  accusation against anyone. It is a statement about the state of the sourcing.
+* **This page contains no archive verdicts, so no archive gap is being read as anything.** Where
+  `NOT_HEARD` and `NO_ARCHIVE_COVERAGE` appear on sibling pages they are limits of what volunteer
+  ADS-B archives hold — never deletions, never suppression.
+* **Where the overview and this register disagree, both figures get printed.** The tracking-site
+  audit worked from 78 rows; this register holds 85. Counts sourced from the audit and counts
+  sourced from the register will not match, and neither is being quietly preferred.
+
+## Related
+
+* [The Following overview](/Planes/following/overview) — the table this cell sits in
+* [The overlap index](/Planes/following/overlap/overview) — every row as its own page
+* [The speaking-events catalog](/Planes/following/speaking/overview) — the sourced Kirk and TPUSA appearances
+* [Erika Kirk's flight logs, reported erased](/Planes/Erika-Flight-Logs-Erased)
+* [Every row that involves Erika Kirk at all — 70 rows](/Planes/following/cuts/erika-any-70)
+* [The 61 rows resting on Erika Kirk alone](/Planes/following/cuts/erika-only-61)
+* [The three Erika rows position data refutes](/Planes/following/cuts/ledger-erika-refuted-3)
+* [The 61 rows where no Kirk can be placed at all](/Planes/following/cuts/no-kirk-placeable-61)
+* [SU-BTT](/Planes/SU-BTT/overview) and [SU-BND](/Planes/SU-BND/overview) — the two aircraft the register names most
