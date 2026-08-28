@@ -1,0 +1,2960 @@
+{
+  "event": {
+    "circle_days": 360,
+    "aircraft_entering": 98473,
+    "on_ground": 30719,
+    "notable_on_ground_incl_airliners": 4190,
+    "notable_on_ground": 2479,
+    "ladd_on_ground": 4007,
+    "notable_on_ground_per_circle_day": 12.65,
+    "ladd_on_ground_per_circle_day": 31.58
+  },
+  "control": {
+    "circle_days": 1392,
+    "aircraft_entering": 70710,
+    "on_ground": 11661,
+    "notable_on_ground_incl_airliners": 583,
+    "notable_on_ground": 553,
+    "ladd_on_ground": 1150,
+    "notable_on_ground_per_circle_day": 1.59,
+    "ladd_on_ground_per_circle_day": 2.39
+  },
+  "recurrence": [
+    {
+      "hex": "c030ea",
+      "reg": "C-FSNP",
+      "type": "C25B",
+      "operator": "Airsprint Inc.",
+      "events": [
+        [
+          "2023-03-21",
+          "New Brunswick",
+          "NJ"
+        ],
+        [
+          "2024-02-01",
+          "Las Vegas",
+          "NV"
+        ],
+        [
+          "2024-02-02",
+          "Las Vegas",
+          "NV"
+        ],
+        [
+          "2024-02-03",
+          "Las Vegas",
+          "NV"
+        ],
+        [
+          "2024-05-07",
+          "Seattle",
+          "WA"
+        ],
+        [
+          "2024-09-03",
+          "Phoenix",
+          "AZ"
+        ],
+        [
+          "2025-08-06",
+          "Rancho Palos Verdes",
+          "CA"
+        ],
+        [
+          "2025-08-07",
+          "Rancho Palos Verdes",
+          "CA"
+        ]
+      ],
+      "states": [
+        "AZ",
+        "CA",
+        "NJ",
+        "NV",
+        "WA"
+      ],
+      "also_near_controls": [
+        "Spokane"
+      ],
+      "fields": [
+        "KBFI",
+        "KBUR",
+        "KGEG",
+        "KLAS",
+        "KPHX",
+        "KTEB"
+      ],
+      "reasons": [
+        "non_us_registration"
+      ]
+    },
+    {
+      "hex": "2998c2",
+      "reg": "",
+      "type": "",
+      "operator": "",
+      "events": [
+        [
+          "2024-01-31",
+          "Las Vegas",
+          "NV"
+        ],
+        [
+          "2024-02-01",
+          "Las Vegas",
+          "NV"
+        ],
+        [
+          "2024-02-02",
+          "Las Vegas",
+          "NV"
+        ],
+        [
+          "2024-12-19",
+          "Phoenix",
+          "AZ"
+        ],
+        [
+          "2024-12-20",
+          "Phoenix",
+          "AZ"
+        ],
+        [
+          "2024-12-21",
+          "Phoenix",
+          "AZ"
+        ],
+        [
+          "2024-12-22",
+          "Phoenix",
+          "AZ"
+        ],
+        [
+          "2025-09-21",
+          "Glendale",
+          "AZ"
+        ]
+      ],
+      "states": [
+        "AZ",
+        "NV"
+      ],
+      "also_near_controls": [
+        "Albuquerque"
+      ],
+      "fields": [
+        "KABQ",
+        "KGYR",
+        "KLAS",
+        "KSDL"
+      ],
+      "reasons": [
+        "no_registration"
+      ]
+    },
+    {
+      "hex": "0d09d4",
+      "reg": "XA-COS",
+      "type": "E550",
+      "operator": "",
+      "events": [
+        [
+          "2024-02-01",
+          "Las Vegas",
+          "NV"
+        ],
+        [
+          "2024-02-02",
+          "Las Vegas",
+          "NV"
+        ],
+        [
+          "2024-02-03",
+          "Las Vegas",
+          "NV"
+        ],
+        [
+          "2024-07-24",
+          "West Palm Beach",
+          "FL"
+        ],
+        [
+          "2024-07-25",
+          "West Palm Beach",
+          "FL"
+        ],
+        [
+          "2024-07-26",
+          "West Palm Beach",
+          "FL"
+        ],
+        [
+          "2024-07-27",
+          "West Palm Beach",
+          "FL"
+        ]
+      ],
+      "states": [
+        "FL",
+        "NV"
+      ],
+      "also_near_controls": [],
+      "fields": [
+        "KFLL",
+        "KLAS"
+      ],
+      "reasons": [
+        "non_us_registration"
+      ]
+    },
+    {
+      "hex": "000001",
+      "reg": "",
+      "type": "",
+      "operator": "",
+      "events": [
+        [
+          "2023-09-14",
+          "San Diego",
+          "CA"
+        ],
+        [
+          "2023-09-15",
+          "San Diego",
+          "CA"
+        ],
+        [
+          "2023-09-27",
+          "Tempe",
+          "AZ"
+        ],
+        [
+          "2024-05-16",
+          "San Diego",
+          "CA"
+        ],
+        [
+          "2024-09-10",
+          "Boulder",
+          "CO"
+        ],
+        [
+          "2025-02-19",
+          "Phoenix",
+          "AZ"
+        ]
+      ],
+      "states": [
+        "AZ",
+        "CA",
+        "CO"
+      ],
+      "also_near_controls": [
+        "Albuquerque"
+      ],
+      "fields": [
+        "5AZ3",
+        "KABQ",
+        "KBKF",
+        "KFFZ",
+        "KNKX",
+        "KNZY"
+      ],
+      "reasons": [
+        "no_registration"
+      ]
+    },
+    {
+      "hex": "0d0fb1",
+      "reg": "XA-MLE",
+      "type": "C68A",
+      "operator": "",
+      "events": [
+        [
+          "2024-03-19",
+          "Phoenix",
+          "AZ"
+        ],
+        [
+          "2025-01-19",
+          "Washington",
+          "DC"
+        ],
+        [
+          "2025-01-20",
+          "Washington",
+          "DC"
+        ],
+        [
+          "2025-08-20",
+          "Dallas",
+          "TX"
+        ],
+        [
+          "2025-08-21",
+          "Dallas",
+          "TX"
+        ],
+        [
+          "2025-08-22",
+          "Dallas",
+          "TX"
+        ]
+      ],
+      "states": [
+        "AZ",
+        "DC",
+        "TX"
+      ],
+      "also_near_controls": [],
+      "fields": [
+        "KDFW",
+        "KIAD",
+        "KSDL"
+      ],
+      "reasons": [
+        "no_registration",
+        "non_us_registration"
+      ]
+    },
+    {
+      "hex": "a0fef7",
+      "reg": "",
+      "type": "",
+      "operator": "",
+      "events": [
+        [
+          "2024-09-11",
+          "Denton",
+          "TX"
+        ],
+        [
+          "2024-12-22",
+          "Phoenix",
+          "AZ"
+        ],
+        [
+          "2025-08-20",
+          "Dallas",
+          "TX"
+        ],
+        [
+          "2025-08-21",
+          "Dallas",
+          "TX"
+        ],
+        [
+          "2025-08-22",
+          "Dallas",
+          "TX"
+        ],
+        [
+          "2025-10-07",
+          "Bozeman",
+          "MT"
+        ]
+      ],
+      "states": [
+        "AZ",
+        "MT",
+        "TX"
+      ],
+      "also_near_controls": [],
+      "fields": [
+        "KBZN",
+        "KFTW",
+        "KGYR"
+      ],
+      "reasons": [
+        "dbflag:PIA",
+        "no_registration"
+      ]
+    },
+    {
+      "hex": "ae06e1",
+      "reg": "163553",
+      "type": "BE20",
+      "operator": "",
+      "events": [
+        [
+          "2023-03-14",
+          "Davis",
+          "CA"
+        ],
+        [
+          "2023-09-13",
+          "San Diego",
+          "CA"
+        ],
+        [
+          "2023-12-16",
+          "Phoenix",
+          "AZ"
+        ],
+        [
+          "2023-12-17",
+          "Phoenix",
+          "AZ"
+        ],
+        [
+          "2023-12-18",
+          "Phoenix",
+          "AZ"
+        ],
+        [
+          "2024-03-18",
+          "San Diego",
+          "CA"
+        ]
+      ],
+      "states": [
+        "AZ",
+        "CA"
+      ],
+      "also_near_controls": [
+        "Albuquerque"
+      ],
+      "fields": [
+        "KABQ",
+        "KAEG",
+        "KMHR",
+        "KNKX",
+        "KSDL"
+      ],
+      "reasons": [
+        "dbflag:military",
+        "non_us_registration"
+      ]
+    },
+    {
+      "hex": "c051ec",
+      "reg": "C-GFAP",
+      "type": "CL60",
+      "operator": "2106701 Ontario Inc (NOVAJET)",
+      "events": [
+        [
+          "2024-02-01",
+          "Las Vegas",
+          "NV"
+        ],
+        [
+          "2024-02-02",
+          "Las Vegas",
+          "NV"
+        ],
+        [
+          "2024-02-03",
+          "Las Vegas",
+          "NV"
+        ],
+        [
+          "2024-02-04",
+          "Las Vegas",
+          "NV"
+        ],
+        [
+          "2024-12-21",
+          "Phoenix",
+          "AZ"
+        ],
+        [
+          "2024-12-22",
+          "Phoenix",
+          "AZ"
+        ]
+      ],
+      "states": [
+        "AZ",
+        "NV"
+      ],
+      "also_near_controls": [],
+      "fields": [
+        "KLAS",
+        "KSDL"
+      ],
+      "reasons": [
+        "dbflag:LADD",
+        "non_us_registration"
+      ]
+    },
+    {
+      "hex": "c017d7",
+      "reg": "C-FJAS",
+      "type": "E545",
+      "operator": "Airsprint Inc.",
+      "events": [
+        [
+          "2024-02-02",
+          "Las Vegas",
+          "NV"
+        ],
+        [
+          "2024-02-03",
+          "Las Vegas",
+          "NV"
+        ],
+        [
+          "2024-02-04",
+          "Las Vegas",
+          "NV"
+        ],
+        [
+          "2024-06-14",
+          "Detroit",
+          "MI"
+        ],
+        [
+          "2024-06-15",
+          "Detroit",
+          "MI"
+        ],
+        [
+          "2024-06-16",
+          "Detroit",
+          "MI"
+        ]
+      ],
+      "states": [
+        "MI",
+        "NV"
+      ],
+      "also_near_controls": [],
+      "fields": [
+        "CYQG",
+        "KLAS"
+      ],
+      "reasons": [
+        "non_us_registration"
+      ]
+    },
+    {
+      "hex": "c0301a",
+      "reg": "C-FSFP",
+      "type": "C25B",
+      "operator": "Airsprint Inc.",
+      "events": [
+        [
+          "2024-12-19",
+          "Phoenix",
+          "AZ"
+        ],
+        [
+          "2024-12-20",
+          "Phoenix",
+          "AZ"
+        ],
+        [
+          "2024-12-21",
+          "Phoenix",
+          "AZ"
+        ],
+        [
+          "2025-08-06",
+          "Rancho Palos Verdes",
+          "CA"
+        ],
+        [
+          "2025-08-07",
+          "Rancho Palos Verdes",
+          "CA"
+        ],
+        [
+          "2025-08-08",
+          "Rancho Palos Verdes",
+          "CA"
+        ]
+      ],
+      "states": [
+        "AZ",
+        "CA"
+      ],
+      "also_near_controls": [
+        "Syracuse"
+      ],
+      "fields": [
+        "KSDL",
+        "KSNA",
+        "KSYR"
+      ],
+      "reasons": [
+        "non_us_registration"
+      ]
+    },
+    {
+      "hex": "adfee0",
+      "reg": "87-00160",
+      "type": "BE20",
+      "operator": "",
+      "events": [
+        [
+          "2022-11-30",
+          "Albuquerque",
+          "NM"
+        ],
+        [
+          "2025-06-13",
+          "Grapevine",
+          "TX"
+        ],
+        [
+          "2025-06-15",
+          "Grapevine",
+          "TX"
+        ],
+        [
+          "2025-08-20",
+          "Dallas",
+          "TX"
+        ],
+        [
+          "2025-08-21",
+          "Dallas",
+          "TX"
+        ],
+        [
+          "2025-08-22",
+          "Dallas",
+          "TX"
+        ]
+      ],
+      "states": [
+        "NM",
+        "TX"
+      ],
+      "also_near_controls": [],
+      "fields": [
+        "KNFW",
+        "KSAF"
+      ],
+      "reasons": [
+        "dbflag:military",
+        "us_military_serial"
+      ]
+    },
+    {
+      "hex": "4d247f",
+      "reg": "9H-VIT",
+      "type": "GL7T",
+      "operator": "",
+      "events": [
+        [
+          "2023-03-21",
+          "New Brunswick",
+          "NJ"
+        ],
+        [
+          "2023-12-16",
+          "Phoenix",
+          "AZ"
+        ],
+        [
+          "2023-12-17",
+          "Phoenix",
+          "AZ"
+        ],
+        [
+          "2023-12-18",
+          "Phoenix",
+          "AZ"
+        ],
+        [
+          "2025-05-06",
+          "San Francisco",
+          "CA"
+        ]
+      ],
+      "states": [
+        "AZ",
+        "CA",
+        "NJ"
+      ],
+      "also_near_controls": [],
+      "fields": [
+        "KPHX",
+        "KSFO",
+        "KTEB"
+      ],
+      "reasons": [
+        "non_us_registration"
+      ]
+    },
+    {
+      "hex": "0d09b3",
+      "reg": "XA-BRA",
+      "type": "E55P",
+      "operator": "",
+      "events": [
+        [
+          "2023-12-19",
+          "Phoenix",
+          "AZ"
+        ],
+        [
+          "2024-01-31",
+          "Las Vegas",
+          "NV"
+        ],
+        [
+          "2024-02-01",
+          "Las Vegas",
+          "NV"
+        ],
+        [
+          "2024-02-02",
+          "Las Vegas",
+          "NV"
+        ],
+        [
+          "2024-06-09",
+          "San Antonio",
+          "TX"
+        ]
+      ],
+      "states": [
+        "AZ",
+        "NV",
+        "TX"
+      ],
+      "also_near_controls": [],
+      "fields": [
+        "KLAS",
+        "KPHX",
+        "KSAT"
+      ],
+      "reasons": [
+        "non_us_registration"
+      ]
+    },
+    {
+      "hex": "a100f3",
+      "reg": "",
+      "type": "",
+      "operator": "",
+      "events": [
+        [
+          "2024-01-29",
+          "Las Vegas",
+          "NV"
+        ],
+        [
+          "2024-01-30",
+          "Las Vegas",
+          "NV"
+        ],
+        [
+          "2024-01-31",
+          "Las Vegas",
+          "NV"
+        ],
+        [
+          "2024-04-23",
+          "Salt Lake City",
+          "UT"
+        ],
+        [
+          "2024-10-11",
+          "Corvallis",
+          "OR"
+        ]
+      ],
+      "states": [
+        "NV",
+        "OR",
+        "UT"
+      ],
+      "also_near_controls": [],
+      "fields": [
+        "KLAS",
+        "KSLC",
+        "KSLE"
+      ],
+      "reasons": [
+        "dbflag:PIA",
+        "no_registration"
+      ]
+    },
+    {
+      "hex": "c04688",
+      "reg": "C-GASL",
+      "type": "E545",
+      "operator": "Airsprint Inc.",
+      "events": [
+        [
+          "2023-12-16",
+          "Phoenix",
+          "AZ"
+        ],
+        [
+          "2025-01-19",
+          "Washington",
+          "DC"
+        ],
+        [
+          "2025-01-20",
+          "Washington",
+          "DC"
+        ],
+        [
+          "2025-02-19",
+          "Phoenix",
+          "AZ"
+        ],
+        [
+          "2025-09-21",
+          "Glendale",
+          "AZ"
+        ]
+      ],
+      "states": [
+        "AZ",
+        "DC"
+      ],
+      "also_near_controls": [
+        "Albuquerque"
+      ],
+      "fields": [
+        "KIAD",
+        "KIWA",
+        "KSAF",
+        "KSDL"
+      ],
+      "reasons": [
+        "non_us_registration"
+      ]
+    },
+    {
+      "hex": "ae10c1",
+      "reg": "01",
+      "type": "GLF5",
+      "operator": "",
+      "events": [
+        [
+          "2025-07-10",
+          "Tampa",
+          "FL"
+        ],
+        [
+          "2025-07-11",
+          "Tampa",
+          "FL"
+        ],
+        [
+          "2025-07-12",
+          "Tampa",
+          "FL"
+        ],
+        [
+          "2025-07-13",
+          "Tampa",
+          "FL"
+        ],
+        [
+          "2025-09-21",
+          "Glendale",
+          "AZ"
+        ]
+      ],
+      "states": [
+        "AZ",
+        "FL"
+      ],
+      "also_near_controls": [],
+      "fields": [
+        "KDVT",
+        "KTPA"
+      ],
+      "reasons": [
+        "dbflag:military",
+        "non_us_registration"
+      ]
+    },
+    {
+      "hex": "adfe52",
+      "reg": "94-00323",
+      "type": "BE20",
+      "operator": "",
+      "events": [
+        [
+          "2024-09-10",
+          "Boulder",
+          "CO"
+        ],
+        [
+          "2024-10-21",
+          "Atlanta",
+          "GA"
+        ],
+        [
+          "2025-08-06",
+          "Rancho Palos Verdes",
+          "CA"
+        ],
+        [
+          "2025-08-07",
+          "Rancho Palos Verdes",
+          "CA"
+        ]
+      ],
+      "states": [
+        "CA",
+        "CO",
+        "GA"
+      ],
+      "also_near_controls": [],
+      "fields": [
+        "KATL",
+        "KDEN",
+        "KSLI"
+      ],
+      "reasons": [
+        "dbflag:military",
+        "us_military_serial"
+      ]
+    },
+    {
+      "hex": "424786",
+      "reg": "VP-CBB",
+      "type": "GLF6",
+      "operator": "",
+      "events": [
+        [
+          "2025-01-19",
+          "Washington",
+          "DC"
+        ],
+        [
+          "2025-01-20",
+          "Washington",
+          "DC"
+        ],
+        [
+          "2025-02-18",
+          "Phoenix",
+          "AZ"
+        ],
+        [
+          "2025-05-01",
+          "San Diego",
+          "CA"
+        ]
+      ],
+      "states": [
+        "AZ",
+        "CA",
+        "DC"
+      ],
+      "also_near_controls": [],
+      "fields": [
+        "KIAD",
+        "KIWA",
+        "KSAN"
+      ],
+      "reasons": [
+        "dbflag:LADD",
+        "non_us_registration"
+      ]
+    },
+    {
+      "hex": "adfecf",
+      "reg": "84-00489",
+      "type": "BE20",
+      "operator": "",
+      "events": [
+        [
+          "2023-03-14",
+          "Davis",
+          "CA"
+        ],
+        [
+          "2024-02-02",
+          "Las Vegas",
+          "NV"
+        ],
+        [
+          "2024-02-03",
+          "Las Vegas",
+          "NV"
+        ],
+        [
+          "2024-02-04",
+          "Las Vegas",
+          "NV"
+        ]
+      ],
+      "states": [
+        "CA",
+        "NV"
+      ],
+      "also_near_controls": [],
+      "fields": [
+        "KLAS",
+        "KMHR"
+      ],
+      "reasons": [
+        "dbflag:military",
+        "us_military_serial"
+      ]
+    },
+    {
+      "hex": "a0fefb",
+      "reg": "",
+      "type": "",
+      "operator": "",
+      "events": [
+        [
+          "2023-09-27",
+          "Tempe",
+          "AZ"
+        ],
+        [
+          "2025-08-06",
+          "Rancho Palos Verdes",
+          "CA"
+        ],
+        [
+          "2025-08-07",
+          "Rancho Palos Verdes",
+          "CA"
+        ],
+        [
+          "2025-08-08",
+          "Rancho Palos Verdes",
+          "CA"
+        ]
+      ],
+      "states": [
+        "AZ",
+        "CA"
+      ],
+      "also_near_controls": [],
+      "fields": [
+        "KSDL",
+        "KVNY"
+      ],
+      "reasons": [
+        "dbflag:PIA",
+        "no_registration"
+      ]
+    },
+    {
+      "hex": "0d0e65",
+      "reg": "XA-JTS",
+      "type": "H25B",
+      "operator": "",
+      "events": [
+        [
+          "2023-11-09",
+          "Los Angeles",
+          "CA"
+        ],
+        [
+          "2023-12-16",
+          "Phoenix",
+          "AZ"
+        ],
+        [
+          "2023-12-17",
+          "Phoenix",
+          "AZ"
+        ],
+        [
+          "2023-12-18",
+          "Phoenix",
+          "AZ"
+        ]
+      ],
+      "states": [
+        "AZ",
+        "CA"
+      ],
+      "also_near_controls": [],
+      "fields": [
+        "KLGB",
+        "KPHX"
+      ],
+      "reasons": [
+        "dbflag:LADD",
+        "non_us_registration"
+      ]
+    },
+    {
+      "hex": "0d0adf",
+      "reg": "XA-PMS",
+      "type": "CL60",
+      "operator": "",
+      "events": [
+        [
+          "2023-12-16",
+          "Phoenix",
+          "AZ"
+        ],
+        [
+          "2023-12-17",
+          "Phoenix",
+          "AZ"
+        ],
+        [
+          "2024-02-03",
+          "Las Vegas",
+          "NV"
+        ],
+        [
+          "2024-02-04",
+          "Las Vegas",
+          "NV"
+        ]
+      ],
+      "states": [
+        "AZ",
+        "NV"
+      ],
+      "also_near_controls": [
+        "Chattanooga"
+      ],
+      "fields": [
+        "KCHA",
+        "KLAS",
+        "KSDL"
+      ],
+      "reasons": [
+        "non_us_registration"
+      ]
+    },
+    {
+      "hex": "c05271",
+      "reg": "C-GFFS",
+      "type": "C25B",
+      "operator": "Airsprint Inc.",
+      "events": [
+        [
+          "2022-06-02",
+          "Grapevine",
+          "TX"
+        ],
+        [
+          "2023-12-16",
+          "Phoenix",
+          "AZ"
+        ],
+        [
+          "2023-12-17",
+          "Phoenix",
+          "AZ"
+        ],
+        [
+          "2024-03-19",
+          "Phoenix",
+          "AZ"
+        ]
+      ],
+      "states": [
+        "AZ",
+        "TX"
+      ],
+      "also_near_controls": [
+        "Des Moines"
+      ],
+      "fields": [
+        "KDAL",
+        "KDSM",
+        "KFFZ",
+        "KSDL"
+      ],
+      "reasons": [
+        "non_us_registration"
+      ]
+    },
+    {
+      "hex": "c00394",
+      "reg": "C-FBJF",
+      "type": "TAIL",
+      "operator": "Sunwest Aviation Ltd.",
+      "events": [
+        [
+          "2023-12-16",
+          "Phoenix",
+          "AZ"
+        ],
+        [
+          "2023-12-17",
+          "Phoenix",
+          "AZ"
+        ],
+        [
+          "2023-12-18",
+          "Phoenix",
+          "AZ"
+        ],
+        [
+          "2025-05-01",
+          "San Diego",
+          "CA"
+        ]
+      ],
+      "states": [
+        "AZ",
+        "CA"
+      ],
+      "also_near_controls": [],
+      "fields": [
+        "KSAN",
+        "KSDL"
+      ],
+      "reasons": [
+        "non_us_registration"
+      ]
+    },
+    {
+      "hex": "0d0c45",
+      "reg": "XA-ASR",
+      "type": "H25B",
+      "operator": "",
+      "events": [
+        [
+          "2024-02-03",
+          "Las Vegas",
+          "NV"
+        ],
+        [
+          "2024-02-04",
+          "Las Vegas",
+          "NV"
+        ],
+        [
+          "2024-06-08",
+          "San Antonio",
+          "TX"
+        ],
+        [
+          "2024-06-09",
+          "San Antonio",
+          "TX"
+        ]
+      ],
+      "states": [
+        "NV",
+        "TX"
+      ],
+      "also_near_controls": [],
+      "fields": [
+        "KLAS",
+        "KSAT"
+      ],
+      "reasons": [
+        "dbflag:LADD",
+        "non_us_registration"
+      ]
+    },
+    {
+      "hex": "ae0000",
+      "reg": "63-8146",
+      "type": "T38",
+      "operator": "",
+      "events": [
+        [
+          "2024-04-09",
+          "Omaha",
+          "NE"
+        ],
+        [
+          "2024-06-07",
+          "San Antonio",
+          "TX"
+        ],
+        [
+          "2024-06-08",
+          "San Antonio",
+          "TX"
+        ],
+        [
+          "2024-06-09",
+          "San Antonio",
+          "TX"
+        ]
+      ],
+      "states": [
+        "NE",
+        "TX"
+      ],
+      "also_near_controls": [],
+      "fields": [
+        "KOFF",
+        "KRND"
+      ],
+      "reasons": [
+        "dbflag:military",
+        "us_military_serial"
+      ]
+    },
+    {
+      "hex": "a038c0",
+      "reg": "",
+      "type": "",
+      "operator": "",
+      "events": [
+        [
+          "2024-05-07",
+          "Seattle",
+          "WA"
+        ],
+        [
+          "2025-08-06",
+          "Rancho Palos Verdes",
+          "CA"
+        ],
+        [
+          "2025-08-07",
+          "Rancho Palos Verdes",
+          "CA"
+        ],
+        [
+          "2025-08-08",
+          "Rancho Palos Verdes",
+          "CA"
+        ]
+      ],
+      "states": [
+        "CA",
+        "WA"
+      ],
+      "also_near_controls": [
+        "Albuquerque"
+      ],
+      "fields": [
+        "KABQ",
+        "KBFI",
+        "KBUR"
+      ],
+      "reasons": [
+        "dbflag:PIA",
+        "no_registration"
+      ]
+    },
+    {
+      "hex": "123456",
+      "reg": "",
+      "type": "",
+      "operator": "",
+      "events": [
+        [
+          "2024-07-26",
+          "West Palm Beach",
+          "FL"
+        ],
+        [
+          "2024-07-27",
+          "West Palm Beach",
+          "FL"
+        ],
+        [
+          "2024-07-28",
+          "West Palm Beach",
+          "FL"
+        ],
+        [
+          "2024-10-23",
+          "Duluth",
+          "GA"
+        ]
+      ],
+      "states": [
+        "FL",
+        "GA"
+      ],
+      "also_near_controls": [],
+      "fields": [
+        "KFLL",
+        "KMGE"
+      ],
+      "reasons": [
+        "no_registration"
+      ]
+    },
+    {
+      "hex": "ae5735",
+      "reg": "169018",
+      "type": "C30J",
+      "operator": "",
+      "events": [
+        [
+          "2022-06-02",
+          "Grapevine",
+          "TX"
+        ],
+        [
+          "2024-09-05",
+          "Madison",
+          "WI"
+        ],
+        [
+          "2024-09-11",
+          "Denton",
+          "TX"
+        ],
+        [
+          "2025-06-13",
+          "Grapevine",
+          "TX"
+        ]
+      ],
+      "states": [
+        "TX",
+        "WI"
+      ],
+      "also_near_controls": [],
+      "fields": [
+        "KMSN",
+        "KNFW"
+      ],
+      "reasons": [
+        "dbflag:military",
+        "non_us_registration"
+      ]
+    },
+    {
+      "hex": "c03c3c",
+      "reg": "C-FWVB",
+      "type": "PRM1",
+      "operator": "Eleva Aviation Ltd.",
+      "events": [
+        [
+          "2024-12-19",
+          "Phoenix",
+          "AZ"
+        ],
+        [
+          "2024-12-20",
+          "Phoenix",
+          "AZ"
+        ],
+        [
+          "2024-12-21",
+          "Phoenix",
+          "AZ"
+        ],
+        [
+          "2025-09-11",
+          "Woodland Park",
+          "CO"
+        ]
+      ],
+      "states": [
+        "AZ",
+        "CO"
+      ],
+      "also_near_controls": [],
+      "fields": [
+        "KCOS",
+        "KSDL"
+      ],
+      "reasons": [
+        "dbflag:LADD",
+        "non_us_registration"
+      ]
+    },
+    {
+      "hex": "06a1d3",
+      "reg": "A7-CGO",
+      "type": "GLF6",
+      "operator": "",
+      "events": [
+        [
+          "2025-01-19",
+          "Washington",
+          "DC"
+        ],
+        [
+          "2025-01-20",
+          "Washington",
+          "DC"
+        ],
+        [
+          "2025-08-06",
+          "Rancho Palos Verdes",
+          "CA"
+        ],
+        [
+          "2025-08-07",
+          "Rancho Palos Verdes",
+          "CA"
+        ]
+      ],
+      "states": [
+        "CA",
+        "DC"
+      ],
+      "also_near_controls": [],
+      "fields": [
+        "KIAD",
+        "KLAX"
+      ],
+      "reasons": [
+        "non_us_registration"
+      ]
+    },
+    {
+      "hex": "a4d3a6",
+      "reg": "",
+      "type": "",
+      "operator": "",
+      "events": [
+        [
+          "2025-07-13",
+          "Tampa",
+          "FL"
+        ],
+        [
+          "2025-08-20",
+          "Dallas",
+          "TX"
+        ],
+        [
+          "2025-08-21",
+          "Dallas",
+          "TX"
+        ],
+        [
+          "2025-08-22",
+          "Dallas",
+          "TX"
+        ]
+      ],
+      "states": [
+        "FL",
+        "TX"
+      ],
+      "also_near_controls": [],
+      "fields": [
+        "KDFW",
+        "KTPA"
+      ],
+      "reasons": [
+        "no_registration"
+      ]
+    },
+    {
+      "hex": "48c9cf",
+      "reg": "SP-TOP",
+      "type": "GLF6",
+      "operator": "",
+      "events": [
+        [
+          "2025-08-08",
+          "Rancho Palos Verdes",
+          "CA"
+        ],
+        [
+          "2025-08-20",
+          "Dallas",
+          "TX"
+        ],
+        [
+          "2025-08-21",
+          "Dallas",
+          "TX"
+        ],
+        [
+          "2025-08-22",
+          "Dallas",
+          "TX"
+        ]
+      ],
+      "states": [
+        "CA",
+        "TX"
+      ],
+      "also_near_controls": [],
+      "fields": [
+        "KDAL",
+        "KLAX"
+      ],
+      "reasons": [
+        "dbflag:LADD",
+        "non_us_registration"
+      ]
+    },
+    {
+      "hex": "c03140",
+      "reg": "C-FSQX",
+      "type": "C25B",
+      "operator": "Airsprint Inc.",
+      "events": [
+        [
+          "2023-09-27",
+          "Tempe",
+          "AZ"
+        ],
+        [
+          "2024-05-08",
+          "Las Vegas",
+          "NV"
+        ],
+        [
+          "2025-02-19",
+          "Phoenix",
+          "AZ"
+        ]
+      ],
+      "states": [
+        "AZ",
+        "NV"
+      ],
+      "also_near_controls": [
+        "Albuquerque",
+        "Spokane"
+      ],
+      "fields": [
+        "KABQ",
+        "KCOE",
+        "KLAS",
+        "KSDL"
+      ],
+      "reasons": [
+        "non_us_registration"
+      ]
+    },
+    {
+      "hex": "200654",
+      "reg": "",
+      "type": "",
+      "operator": "",
+      "events": [
+        [
+          "2023-06-17",
+          "Deerfield",
+          "IL"
+        ],
+        [
+          "2023-06-18",
+          "Deerfield",
+          "IL"
+        ],
+        [
+          "2025-03-18",
+          "Gainesville",
+          "GA"
+        ]
+      ],
+      "states": [
+        "GA",
+        "IL"
+      ],
+      "also_near_controls": [],
+      "fields": [
+        "KARR",
+        "KLZU"
+      ],
+      "reasons": [
+        "no_registration"
+      ]
+    },
+    {
+      "hex": "ae1258",
+      "reg": "166376",
+      "type": "GLF5",
+      "operator": "",
+      "events": [
+        [
+          "2023-10-02",
+          "San Jose",
+          "CA"
+        ],
+        [
+          "2024-10-21",
+          "Atlanta",
+          "GA"
+        ],
+        [
+          "2024-10-23",
+          "Duluth",
+          "GA"
+        ]
+      ],
+      "states": [
+        "CA",
+        "GA"
+      ],
+      "also_near_controls": [],
+      "fields": [
+        "KATL",
+        "KOAK"
+      ],
+      "reasons": [
+        "dbflag:military",
+        "non_us_registration"
+      ]
+    },
+    {
+      "hex": "c04852",
+      "reg": "C-GBKB",
+      "type": "CL60",
+      "operator": "Morningstar Partners Ltd.",
+      "events": [
+        [
+          "2023-12-16",
+          "Phoenix",
+          "AZ"
+        ],
+        [
+          "2023-12-17",
+          "Phoenix",
+          "AZ"
+        ],
+        [
+          "2025-09-11",
+          "Woodland Park",
+          "CO"
+        ]
+      ],
+      "states": [
+        "AZ",
+        "CO"
+      ],
+      "also_near_controls": [],
+      "fields": [
+        "KAPA",
+        "KSDL"
+      ],
+      "reasons": [
+        "non_us_registration"
+      ]
+    },
+    {
+      "hex": "ae03eb",
+      "reg": "165314",
+      "type": "C130",
+      "operator": "",
+      "events": [
+        [
+          "2024-03-18",
+          "San Diego",
+          "CA"
+        ],
+        [
+          "2025-06-13",
+          "Grapevine",
+          "TX"
+        ],
+        [
+          "2025-06-14",
+          "Grapevine",
+          "TX"
+        ]
+      ],
+      "states": [
+        "CA",
+        "TX"
+      ],
+      "also_near_controls": [],
+      "fields": [
+        "KNFW",
+        "KNZY"
+      ],
+      "reasons": [
+        "dbflag:military",
+        "non_us_registration"
+      ]
+    },
+    {
+      "hex": "43e7a2",
+      "reg": "M-SNER",
+      "type": "F2TH",
+      "operator": "",
+      "events": [
+        [
+          "2024-03-21",
+          "Las Vegas",
+          "NV"
+        ],
+        [
+          "2024-10-28",
+          "Phoenix",
+          "AZ"
+        ],
+        [
+          "2025-09-21",
+          "Glendale",
+          "AZ"
+        ]
+      ],
+      "states": [
+        "AZ",
+        "NV"
+      ],
+      "also_near_controls": [],
+      "fields": [
+        "KLAS",
+        "KSDL"
+      ],
+      "reasons": [
+        "non_us_registration"
+      ]
+    },
+    {
+      "hex": "ae1e81",
+      "reg": "166035",
+      "type": "TEX2",
+      "operator": "",
+      "events": [
+        [
+          "2024-06-07",
+          "San Antonio",
+          "TX"
+        ],
+        [
+          "2024-06-08",
+          "San Antonio",
+          "TX"
+        ],
+        [
+          "2024-10-28",
+          "Phoenix",
+          "AZ"
+        ]
+      ],
+      "states": [
+        "AZ",
+        "TX"
+      ],
+      "also_near_controls": [],
+      "fields": [
+        "KSAT",
+        "KSDL"
+      ],
+      "reasons": [
+        "dbflag:military",
+        "non_us_registration"
+      ]
+    },
+    {
+      "hex": "ae14c7",
+      "reg": "161070",
+      "type": "BE9L",
+      "operator": "",
+      "events": [
+        [
+          "2024-06-07",
+          "San Antonio",
+          "TX"
+        ],
+        [
+          "2024-06-08",
+          "San Antonio",
+          "TX"
+        ],
+        [
+          "2025-08-08",
+          "Rancho Palos Verdes",
+          "CA"
+        ]
+      ],
+      "states": [
+        "CA",
+        "TX"
+      ],
+      "also_near_controls": [
+        "Albuquerque"
+      ],
+      "fields": [
+        "K8T8",
+        "KABQ",
+        "KVNY"
+      ],
+      "reasons": [
+        "dbflag:military",
+        "non_us_registration"
+      ]
+    },
+    {
+      "hex": "0aa918",
+      "reg": "",
+      "type": "",
+      "operator": "",
+      "events": [
+        [
+          "2024-09-10",
+          "Boulder",
+          "CO"
+        ],
+        [
+          "2025-03-03",
+          "Los Angeles",
+          "CA"
+        ],
+        [
+          "2025-09-11",
+          "Woodland Park",
+          "CO"
+        ]
+      ],
+      "states": [
+        "CA",
+        "CO"
+      ],
+      "also_near_controls": [],
+      "fields": [
+        "KAPA",
+        "KLAX"
+      ],
+      "reasons": [
+        "no_registration"
+      ]
+    },
+    {
+      "hex": "3c582d",
+      "reg": "D-AFAM",
+      "type": "GLEX",
+      "operator": "",
+      "events": [
+        [
+          "2025-01-19",
+          "Washington",
+          "DC"
+        ],
+        [
+          "2025-01-20",
+          "Washington",
+          "DC"
+        ],
+        [
+          "2025-08-22",
+          "Dallas",
+          "TX"
+        ]
+      ],
+      "states": [
+        "DC",
+        "TX"
+      ],
+      "also_near_controls": [],
+      "fields": [
+        "KDAL",
+        "KIAD"
+      ],
+      "reasons": [
+        "non_us_registration"
+      ]
+    },
+    {
+      "hex": "7c4325",
+      "reg": "VH-NJR",
+      "type": "E55P",
+      "operator": "AVCAIR PTY LTD",
+      "events": [
+        [
+          "2025-01-19",
+          "Washington",
+          "DC"
+        ],
+        [
+          "2025-01-20",
+          "Washington",
+          "DC"
+        ],
+        [
+          "2025-02-18",
+          "Phoenix",
+          "AZ"
+        ]
+      ],
+      "states": [
+        "AZ",
+        "DC"
+      ],
+      "also_near_controls": [],
+      "fields": [
+        "KIAD",
+        "KIWA"
+      ],
+      "reasons": [
+        "dbflag:LADD",
+        "non_us_registration"
+      ]
+    },
+    {
+      "hex": "c053b4",
+      "reg": "C-GFSD",
+      "type": "C25B",
+      "operator": "Airsprint Inc.",
+      "events": [
+        [
+          "2025-01-19",
+          "Washington",
+          "DC"
+        ],
+        [
+          "2025-01-20",
+          "Washington",
+          "DC"
+        ],
+        [
+          "2025-02-19",
+          "Phoenix",
+          "AZ"
+        ]
+      ],
+      "states": [
+        "AZ",
+        "DC"
+      ],
+      "also_near_controls": [],
+      "fields": [
+        "KIAD",
+        "KSDL"
+      ],
+      "reasons": [
+        "non_us_registration"
+      ]
+    },
+    {
+      "hex": "c04ed6",
+      "reg": "C-GDWF",
+      "type": "CL60",
+      "operator": "Chartright Air Inc.",
+      "events": [
+        [
+          "2025-05-01",
+          "San Diego",
+          "CA"
+        ],
+        [
+          "2025-06-13",
+          "Grapevine",
+          "TX"
+        ],
+        [
+          "2025-06-14",
+          "Grapevine",
+          "TX"
+        ]
+      ],
+      "states": [
+        "CA",
+        "TX"
+      ],
+      "also_near_controls": [],
+      "fields": [
+        "KDAL",
+        "KSAN"
+      ],
+      "reasons": [
+        "dbflag:LADD",
+        "non_us_registration"
+      ]
+    },
+    {
+      "hex": "4403bd",
+      "reg": "OE-IIS",
+      "type": "GLF5",
+      "operator": "",
+      "events": [
+        [
+          "2025-06-13",
+          "Grapevine",
+          "TX"
+        ],
+        [
+          "2025-06-14",
+          "Grapevine",
+          "TX"
+        ],
+        [
+          "2025-08-08",
+          "Rancho Palos Verdes",
+          "CA"
+        ]
+      ],
+      "states": [
+        "CA",
+        "TX"
+      ],
+      "also_near_controls": [],
+      "fields": [
+        "KDAL",
+        "KLAX"
+      ],
+      "reasons": [
+        "dbflag:LADD",
+        "non_us_registration"
+      ]
+    },
+    {
+      "hex": "030012",
+      "reg": "OK1",
+      "type": "GLEX",
+      "operator": "Government of Botswana",
+      "events": [
+        [
+          "2023-03-21",
+          "New Brunswick",
+          "NJ"
+        ],
+        [
+          "2025-03-03",
+          "Los Angeles",
+          "CA"
+        ]
+      ],
+      "states": [
+        "CA",
+        "NJ"
+      ],
+      "also_near_controls": [],
+      "fields": [
+        "KLAX",
+        "KTEB"
+      ],
+      "reasons": [
+        "dbflag:LADD",
+        "dbflag:military",
+        "government_operator_string",
+        "non_us_registration"
+      ]
+    },
+    {
+      "hex": "0d0339",
+      "reg": "XA-KCM",
+      "type": "LJ60",
+      "operator": "",
+      "events": [
+        [
+          "2023-03-21",
+          "New Brunswick",
+          "NJ"
+        ],
+        [
+          "2025-03-03",
+          "Los Angeles",
+          "CA"
+        ]
+      ],
+      "states": [
+        "CA",
+        "NJ"
+      ],
+      "also_near_controls": [],
+      "fields": [
+        "KLAX",
+        "KTEB"
+      ],
+      "reasons": [
+        "non_us_registration"
+      ]
+    },
+    {
+      "hex": "491d8a",
+      "reg": "CS-GLJ",
+      "type": "GLEX",
+      "operator": "",
+      "events": [
+        [
+          "2023-03-21",
+          "New Brunswick",
+          "NJ"
+        ],
+        [
+          "2025-05-06",
+          "San Francisco",
+          "CA"
+        ]
+      ],
+      "states": [
+        "CA",
+        "NJ"
+      ],
+      "also_near_controls": [],
+      "fields": [
+        "KSFO",
+        "KTEB"
+      ],
+      "reasons": [
+        "non_us_registration"
+      ]
+    },
+    {
+      "hex": "0d0d61",
+      "reg": "XA-FTY",
+      "type": "FA7X",
+      "operator": "",
+      "events": [
+        [
+          "2023-03-21",
+          "New Brunswick",
+          "NJ"
+        ],
+        [
+          "2025-01-20",
+          "Washington",
+          "DC"
+        ]
+      ],
+      "states": [
+        "DC",
+        "NJ"
+      ],
+      "also_near_controls": [],
+      "fields": [
+        "KEWR",
+        "KIAD"
+      ],
+      "reasons": [
+        "dbflag:LADD",
+        "non_us_registration"
+      ]
+    },
+    {
+      "hex": "c03019",
+      "reg": "C-FSFO",
+      "type": "C25B",
+      "operator": "Airsprint Inc.",
+      "events": [
+        [
+          "2023-03-21",
+          "New Brunswick",
+          "NJ"
+        ],
+        [
+          "2024-09-03",
+          "Phoenix",
+          "AZ"
+        ]
+      ],
+      "states": [
+        "AZ",
+        "NJ"
+      ],
+      "also_near_controls": [],
+      "fields": [
+        "KSDL",
+        "KTEB"
+      ],
+      "reasons": [
+        "non_us_registration"
+      ]
+    },
+    {
+      "hex": "c0737b",
+      "reg": "C-GRTA",
+      "type": "F2TH",
+      "operator": "Anderson Air Ltd",
+      "events": [
+        [
+          "2022-06-02",
+          "Grapevine",
+          "TX"
+        ],
+        [
+          "2023-03-21",
+          "New Brunswick",
+          "NJ"
+        ]
+      ],
+      "states": [
+        "NJ",
+        "TX"
+      ],
+      "also_near_controls": [],
+      "fields": [
+        "KDFW",
+        "KEWR"
+      ],
+      "reasons": [
+        "dbflag:LADD",
+        "non_us_registration"
+      ]
+    },
+    {
+      "hex": "c07864",
+      "reg": "C-GTPJ",
+      "type": "CL35",
+      "operator": "Chartright Air Inc.",
+      "events": [
+        [
+          "2023-09-27",
+          "Tempe",
+          "AZ"
+        ],
+        [
+          "2025-08-08",
+          "Rancho Palos Verdes",
+          "CA"
+        ]
+      ],
+      "states": [
+        "AZ",
+        "CA"
+      ],
+      "also_near_controls": [],
+      "fields": [
+        "KSDL",
+        "KVNY"
+      ],
+      "reasons": [
+        "non_us_registration"
+      ]
+    },
+    {
+      "hex": "ae116a",
+      "reg": "84-00166",
+      "type": "BE20",
+      "operator": "",
+      "events": [
+        [
+          "2024-04-23",
+          "Salt Lake City",
+          "UT"
+        ],
+        [
+          "2024-09-10",
+          "Boulder",
+          "CO"
+        ]
+      ],
+      "states": [
+        "CO",
+        "UT"
+      ],
+      "also_near_controls": [
+        "Albuquerque",
+        "Spokane"
+      ],
+      "fields": [
+        "KABQ",
+        "KBKF",
+        "KCOE",
+        "KSLC"
+      ],
+      "reasons": [
+        "dbflag:military",
+        "us_military_serial"
+      ]
+    },
+    {
+      "hex": "4d23ab",
+      "reg": "9H-VISTA",
+      "type": "GL7T",
+      "operator": "",
+      "events": [
+        [
+          "2023-10-02",
+          "San Jose",
+          "CA"
+        ],
+        [
+          "2024-07-28",
+          "West Palm Beach",
+          "FL"
+        ]
+      ],
+      "states": [
+        "CA",
+        "FL"
+      ],
+      "also_near_controls": [],
+      "fields": [
+        "KFLL",
+        "KSFO"
+      ],
+      "reasons": [
+        "non_us_registration"
+      ]
+    },
+    {
+      "hex": "ae5c77",
+      "reg": "169319",
+      "type": "B350",
+      "operator": "",
+      "events": [
+        [
+          "2024-05-16",
+          "San Diego",
+          "CA"
+        ],
+        [
+          "2025-02-19",
+          "Phoenix",
+          "AZ"
+        ]
+      ],
+      "states": [
+        "AZ",
+        "CA"
+      ],
+      "also_near_controls": [
+        "Albuquerque",
+        "Spokane"
+      ],
+      "fields": [
+        "KABQ",
+        "KGEG",
+        "KNFG",
+        "KSDL"
+      ],
+      "reasons": [
+        "dbflag:military",
+        "non_us_registration"
+      ]
+    },
+    {
+      "hex": "ae14b4",
+      "reg": "160977",
+      "type": "BE9L",
+      "operator": "",
+      "events": [
+        [
+          "2023-12-16",
+          "Phoenix",
+          "AZ"
+        ],
+        [
+          "2024-09-11",
+          "Denton",
+          "TX"
+        ]
+      ],
+      "states": [
+        "AZ",
+        "TX"
+      ],
+      "also_near_controls": [
+        "Albuquerque"
+      ],
+      "fields": [
+        "KABQ",
+        "KNFW",
+        "NM74",
+        "US-1816"
+      ],
+      "reasons": [
+        "dbflag:military",
+        "non_us_registration"
+      ]
+    },
+    {
+      "hex": "06a1cc",
+      "reg": "A7-CGG",
+      "type": "GLF6",
+      "operator": "",
+      "events": [
+        [
+          "2024-03-19",
+          "Phoenix",
+          "AZ"
+        ],
+        [
+          "2025-05-06",
+          "San Francisco",
+          "CA"
+        ]
+      ],
+      "states": [
+        "AZ",
+        "CA"
+      ],
+      "also_near_controls": [],
+      "fields": [
+        "KPHX",
+        "KSFO"
+      ],
+      "reasons": [
+        "non_us_registration"
+      ]
+    },
+    {
+      "hex": "ae0806",
+      "reg": "99-0060",
+      "type": "C17",
+      "operator": "",
+      "events": [
+        [
+          "2024-03-21",
+          "Las Vegas",
+          "NV"
+        ],
+        [
+          "2025-09-22",
+          "Minneapolis",
+          "MN"
+        ]
+      ],
+      "states": [
+        "MN",
+        "NV"
+      ],
+      "also_near_controls": [],
+      "fields": [
+        "KLAS",
+        "KMSP"
+      ],
+      "reasons": [
+        "dbflag:military",
+        "us_military_serial"
+      ]
+    },
+    {
+      "hex": "0c0920",
+      "reg": "",
+      "type": "",
+      "operator": "",
+      "events": [
+        [
+          "2024-05-08",
+          "Las Vegas",
+          "NV"
+        ],
+        [
+          "2024-06-07",
+          "San Antonio",
+          "TX"
+        ]
+      ],
+      "states": [
+        "NV",
+        "TX"
+      ],
+      "also_near_controls": [],
+      "fields": [
+        "KLAS",
+        "KSAT"
+      ],
+      "reasons": [
+        "no_registration"
+      ]
+    },
+    {
+      "hex": "ae1481",
+      "reg": "166764",
+      "type": "C30J",
+      "operator": "",
+      "events": [
+        [
+          "2024-09-05",
+          "Madison",
+          "WI"
+        ],
+        [
+          "2024-09-11",
+          "Denton",
+          "TX"
+        ]
+      ],
+      "states": [
+        "TX",
+        "WI"
+      ],
+      "also_near_controls": [],
+      "fields": [
+        "KMSN",
+        "KNFW"
+      ],
+      "reasons": [
+        "dbflag:military",
+        "non_us_registration"
+      ]
+    },
+    {
+      "hex": "ae06d9",
+      "reg": "163561",
+      "type": "BE20",
+      "operator": "",
+      "events": [
+        [
+          "2024-09-11",
+          "Denton",
+          "TX"
+        ],
+        [
+          "2024-10-23",
+          "Duluth",
+          "GA"
+        ]
+      ],
+      "states": [
+        "GA",
+        "TX"
+      ],
+      "also_near_controls": [],
+      "fields": [
+        "KFTW",
+        "KRYY"
+      ],
+      "reasons": [
+        "dbflag:military",
+        "non_us_registration"
+      ]
+    },
+    {
+      "hex": "ae03dc",
+      "reg": "165352",
+      "type": "C130",
+      "operator": "",
+      "events": [
+        [
+          "2024-09-11",
+          "Denton",
+          "TX"
+        ],
+        [
+          "2025-05-01",
+          "San Diego",
+          "CA"
+        ]
+      ],
+      "states": [
+        "CA",
+        "TX"
+      ],
+      "also_near_controls": [],
+      "fields": [
+        "KNFW",
+        "KNZY"
+      ],
+      "reasons": [
+        "dbflag:military",
+        "non_us_registration"
+      ]
+    },
+    {
+      "hex": "ae6ceb",
+      "reg": "6056",
+      "type": "H60",
+      "operator": "",
+      "events": [
+        [
+          "2024-10-15",
+          "Flagstaff",
+          "AZ"
+        ],
+        [
+          "2025-05-01",
+          "San Diego",
+          "CA"
+        ]
+      ],
+      "states": [
+        "AZ",
+        "CA"
+      ],
+      "also_near_controls": [],
+      "fields": [
+        "KSAN",
+        "KSEZ"
+      ],
+      "reasons": [
+        "dbflag:military",
+        "no_registration",
+        "non_us_registration"
+      ]
+    },
+    {
+      "hex": "ae2eee",
+      "reg": "166113",
+      "type": "TEX2",
+      "operator": "",
+      "events": [
+        [
+          "2024-10-21",
+          "Atlanta",
+          "GA"
+        ],
+        [
+          "2024-10-21",
+          "Chapel Hill",
+          "NC"
+        ]
+      ],
+      "states": [
+        "GA",
+        "NC"
+      ],
+      "also_near_controls": [],
+      "fields": [
+        "KRDU",
+        "KRYY"
+      ],
+      "reasons": [
+        "dbflag:military",
+        "non_us_registration"
+      ]
+    },
+    {
+      "hex": "ae0406",
+      "reg": "99-0402",
+      "type": "GLF5",
+      "operator": "",
+      "events": [
+        [
+          "2024-10-24",
+          "Las Vegas",
+          "NV"
+        ],
+        [
+          "2025-09-21",
+          "Glendale",
+          "AZ"
+        ]
+      ],
+      "states": [
+        "AZ",
+        "NV"
+      ],
+      "also_near_controls": [],
+      "fields": [
+        "KLAS",
+        "KPHX"
+      ],
+      "reasons": [
+        "dbflag:military",
+        "us_military_serial"
+      ]
+    },
+    {
+      "hex": "0d0309",
+      "reg": "XA-AFA",
+      "type": "BE40",
+      "operator": "",
+      "events": [
+        [
+          "2024-10-24",
+          "Las Vegas",
+          "NV"
+        ],
+        [
+          "2025-06-15",
+          "Grapevine",
+          "TX"
+        ]
+      ],
+      "states": [
+        "NV",
+        "TX"
+      ],
+      "also_near_controls": [],
+      "fields": [
+        "KDAL",
+        "KLAS"
+      ],
+      "reasons": [
+        "non_us_registration"
+      ]
+    },
+    {
+      "hex": "0d063d",
+      "reg": "XB-GTH",
+      "type": "LJ45",
+      "operator": "",
+      "events": [
+        [
+          "2024-10-24",
+          "Las Vegas",
+          "NV"
+        ],
+        [
+          "2025-05-01",
+          "San Diego",
+          "CA"
+        ]
+      ],
+      "states": [
+        "CA",
+        "NV"
+      ],
+      "also_near_controls": [],
+      "fields": [
+        "KCRQ",
+        "KLAS"
+      ],
+      "reasons": [
+        "non_us_registration"
+      ]
+    },
+    {
+      "hex": "0d0d74",
+      "reg": "XA-AAL",
+      "type": "H25B",
+      "operator": "",
+      "events": [
+        [
+          "2022-06-02",
+          "Grapevine",
+          "TX"
+        ],
+        [
+          "2024-10-24",
+          "Las Vegas",
+          "NV"
+        ]
+      ],
+      "states": [
+        "NV",
+        "TX"
+      ],
+      "also_near_controls": [],
+      "fields": [
+        "KDFW",
+        "KLAS"
+      ],
+      "reasons": [
+        "dbflag:LADD",
+        "non_us_registration"
+      ]
+    },
+    {
+      "hex": "c06a2c",
+      "reg": "C-GOFJ",
+      "type": "FA7X",
+      "operator": "Sunwest Aviation Ltd.",
+      "events": [
+        [
+          "2025-02-18",
+          "Phoenix",
+          "AZ"
+        ],
+        [
+          "2025-05-01",
+          "San Diego",
+          "CA"
+        ]
+      ],
+      "states": [
+        "AZ",
+        "CA"
+      ],
+      "also_near_controls": [],
+      "fields": [
+        "KSAN",
+        "KSDL"
+      ],
+      "reasons": [
+        "dbflag:LADD",
+        "non_us_registration"
+      ]
+    },
+    {
+      "hex": "ae1480",
+      "reg": "166763",
+      "type": "C30J",
+      "operator": "",
+      "events": [
+        [
+          "2025-06-15",
+          "Grapevine",
+          "TX"
+        ],
+        [
+          "2025-10-16",
+          "Norman",
+          "OK"
+        ]
+      ],
+      "states": [
+        "OK",
+        "TX"
+      ],
+      "also_near_controls": [
+        "Albuquerque"
+      ],
+      "fields": [
+        "KABQ",
+        "KNFW",
+        "KPWA"
+      ],
+      "reasons": [
+        "dbflag:military",
+        "non_us_registration"
+      ]
+    },
+    {
+      "hex": "3ffb77",
+      "reg": "D-MCVA",
+      "type": "CLON",
+      "operator": "",
+      "events": [
+        [
+          "2025-06-13",
+          "Grapevine",
+          "TX"
+        ],
+        [
+          "2025-08-08",
+          "Rancho Palos Verdes",
+          "CA"
+        ]
+      ],
+      "states": [
+        "CA",
+        "TX"
+      ],
+      "also_near_controls": [],
+      "fields": [
+        "KSNA",
+        "KT67"
+      ],
+      "reasons": [
+        "non_us_registration"
+      ]
+    },
+    {
+      "hex": "a4a9e6",
+      "reg": "",
+      "type": "",
+      "operator": "",
+      "events": [
+        [
+          "2025-09-11",
+          "Woodland Park",
+          "CO"
+        ],
+        [
+          "2025-09-21",
+          "Glendale",
+          "AZ"
+        ]
+      ],
+      "states": [
+        "AZ",
+        "CO"
+      ],
+      "also_near_controls": [],
+      "fields": [
+        "KAPA",
+        "KSDL"
+      ],
+      "reasons": [
+        "no_registration"
+      ]
+    },
+    {
+      "hex": "adfd8a",
+      "reg": "94-0263",
+      "type": "SW4",
+      "operator": "",
+      "events": [
+        [
+          "2022-06-02",
+          "Grapevine",
+          "TX"
+        ],
+        [
+          "2022-11-30",
+          "Albuquerque",
+          "NM"
+        ]
+      ],
+      "states": [
+        "NM",
+        "TX"
+      ],
+      "also_near_controls": [],
+      "fields": [
+        "KABQ",
+        "TT32"
+      ],
+      "reasons": [
+        "dbflag:military",
+        "us_military_serial"
+      ]
+    }
+  ]
+}

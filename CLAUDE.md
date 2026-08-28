@@ -1196,6 +1196,36 @@ DIR:
   rather than model-generated when the data must be exact.
 
 
+=== Pushing This Repo ===
+
+FILE:
+* tools/push.sh: **Use this instead of a bare `git push`.** A plain push here
+  fails intermittently with `cannot lock ref 'refs/heads/main': is at <A> but
+  expected <B>`. That is a lost compare-and-swap on the remote ref — NOT a size
+  problem, NOT a non-fast-forward, and NOT lost data. This repo uploads ~180 MB
+  of gzipped ADS-B evidence at a few MB/s, so a push holds the connection open
+  for most of a minute, and the external auto-commit job on the other machine
+  ("Bryan 26 Tower" / "Bryan 27 Laptop") can land its own push inside that
+  window. GitHub then rejects the entire upload even though every object arrived.
+  The script retries: it first checks whether HEAD is already contained in
+  origin/main and says so plainly (the usual answer — nothing was lost), and only
+  rebases and re-pushes if we are genuinely behind. It never force-pushes and
+  never creates or switches a branch.
+      sh tools/push.sh [max_attempts]     # default 5
+  **Before concluding a push failed, run `git fetch origin` and compare HEAD to
+  origin/main.** The rejection message says nothing about whether the content
+  landed, and it usually did.
+* .gitattributes: marks the ~15,500 already-compressed tracked files (`*.gz`,
+  `*.jpg`, `*.png`, `*.pdf`, ...) as `binary -delta`. Git cannot shrink a gzip or
+  JPEG stream: measured over 3,000 geo_sweep `.json.gz` traces, the default pack
+  was 146,283,926 bytes and one with compression and delta search disabled was
+  146,284,199 — a 273-byte difference across 146 MB, bought with double the
+  packing CPU. On a single `.gz` blob git's zlib pass makes the object 0.04%
+  LARGER. `binary` also stops any text/eol conversion from ever touching a byte
+  of evidence. This does not rewrite history and produces no diff on tracked
+  files. Do NOT "fix" push failures by migrating to Git LFS — that rewrites
+  history, needs a force-push, and would break the auto-push machine.
+
 === Credentials & Secrets ===
 
 **No credential of ours has ever lived in this repo, and none may.** API keys for
