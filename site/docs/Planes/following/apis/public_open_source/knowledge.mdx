@@ -544,6 +544,71 @@ at Provo and at Lincoln.
 
 {/* CK_PAGE_FOOTER_START */}
 
+## UPDATE — 28 August 2026: what changed, and what this page got wrong
+
+This page's "what we did NOT get" section is the most valuable part of it, which
+is exactly why an out-of-date one is worse than none. Four things have changed.
+
+**1. The coverage numbers now have denominators, and they disagree with each
+other on purpose.** Asking *"where was this tail on this date"* returns a trace on
+**8.95%** of the 363 event-window days for the Egyptian fleet, and **that number
+has stopped moving** — every one of those days has now been put to every free
+archive that exists, so never-asked is zero. Asking *"what was on the ground
+inside a fifty-mile circle"* covers **71.9%** of the same window, and **82.7% /
+98.0% / 92.2%** for 2023 / 2024 / 2025. **2022 is 0.43% per-tail and 0% swept.**
+Same investigation, same archives, two different questions, two very different
+answers. Quote the denominator or the number means nothing.
+
+**2. This pass produced 100% of the flight data in the investigation.** 2,346
+aircraft-days, all of it free and open: airplanes.live 2,072 (371 of them existing
+nowhere else), adsb.lol 1,702, the ADS-B Exchange monthly samples 207 (153 unique,
+and the only free route into 2022), and the adsb.lol GitHub Release backup 113.
+**Pass 2 produced zero aircraft-days, because no credential is held for any
+commercial archive.** That is a publishable fact, not a failure to hide, and it is
+the cheapest remaining way to raise the per-tail figure.
+
+**3. The two adsb.lol holes are now bounded precisely, and 318 aircraft-days were
+recovered from inside them.** The archive returns **403 for every aircraft from
+2025-10-12** through at least 2025-11-05 — 258 of 258 requests across 14 tails
+including **both control airliners**, a clean step function on a single date — and
+**404 for every aircraft through 2026**. The backup network serves all of it: 281
+of the 318 came from airplanes.live, 29 from the ADS-B Exchange samples, 7 from
+both, 1 from the GitHub backup, and **210 of the 318 are 2026 dates**. **This is a
+retention and serving boundary, not suppression**, and nothing on this site may
+describe it otherwise.
+
+**RETRACTION.** An earlier figure on this site put the "airplanes.live only" rate
+at 9.6%–72.4% for the case aircraft. **That was wrong.** It merged *"adsb.lol was
+asked and had nothing"* with *"adsb.lol was never asked"* — and 198 aircraft-days
+had never been asked at all. Counting only days where **both** archives were
+genuinely queried, and excluding both holes, the controls sit at 2.5% and the case
+aircraft at 0.0%–17.1%. The Egyptian tails are still the highest, and two tests
+say that is receiver coverage rather than deletion: days only one archive holds
+carry a **median 83 trace points against 1,388** on days both hold — seventeen
+times thinner, the signature of a barely-heard day — and **not one of the 81
+residue aircraft-days puts an aircraft within 50 miles of a sourced event.**
+
+**4. A defect in our own tooling, published against ourselves.** The geographic
+sweep's byte pre-filter built its longitude tokens with `math.floor()`.
+`math.floor(-111.73)` is **−112**, but a trace file *prints* `-111.73` — so on
+every negative longitude the band was shifted one degree west and **the eastern
+edge of every western-hemisphere circle went unexamined**: 28.7% of each event
+circle's area on average, 50.9% for Salt Lake City. It cost a real hit — **SU-BTT
+on the ground at Provo on 23 April 2024**, which the per-tail route holds in full
+and which is how the defect was caught rather than shipped. Fixed in
+`geo_sweep.py`; locked by `code/test_prefilter.py`. **Until the sweep is re-run,
+every sweep-only count is a floor, not a total.** The bias ran against the
+pattern-supporting side, since event circles were blinder than control circles.
+
+Two smaller ones in the same pass: the `government_operator_string` flag was
+firing on **FEDERAL EXPRESS, EXECUTIVE JET MANAGEMENT and ROYAL AIR** and those
+words have been retired from the match list, and the airliner exclusion set was
+missing BCS1/BCS3, B712 and the regional Embraers, which were leaking into the
+recurrence output as if they were business jets.
+
+Full accounting, with every derived file and script named:
+[Investigating Deleted Flights](/Planes/investigating_deleted_flights).
+
 ## Where this page fits
 
 This is the pass that skipped the screenshot chain entirely and went to primary ADS-B, using only sources that are free, need no account and can be repeated from any terminal — the first of [four passes](/Planes/following/apis/overview), and the one every location page in the [Following log](/Planes/following/overview) leans on, from [Provo](/Planes/following/Provo_KPVU_2024-04-19_to_2025-09-13/overview) to [Wilmington](/Planes/following/Wilmington_KILG_2022-11-17_to_2025-10-12/overview). An absence in this data is not a finding — a 404 means a volunteer network heard nothing, and parked-and-silent, outside-coverage or a wrong claimed date all come first — which is the same discipline owed to [the drone counts](/Drones/overview), [the foreign-phone counts](/intelligence/Foreign_Phones_UVU) and [every camera gap in the case](/cameras/overview). Read [the flight data recovery hub](/Planes/Flight-Data-Recovery/overview) next for what the free routes actually recovered: two independent archives returned the same aircraft-day matching to the second on first contact, and one recovery produced evidence against grouping [T7-ELL](/Planes/T7-ELL/overview) with the Egyptian tails at all.

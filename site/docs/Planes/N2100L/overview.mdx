@@ -116,7 +116,44 @@ airframe has flown a great deal in the last week.
 | globe.airplanes.live | 29 days, 4 Sep 2025 – 5 Jun 2026 |
 | ADS-B Exchange monthly sample | 17 days, 1 Nov 2023 – 1 May 2026 |
 | FlightRadar24 page | HTTP 200 in a browser on 24 Aug 2026; 378 history rows on the free seven-day tier; older history paywalled |
-| Internet Archive | 3 page snapshots held (FlightAware, Mar 2023 – Sep 2025); 0 flight rows recovered off them |
+| Internet Archive | 3 page snapshots held (FlightAware, Mar 2023 – Sep 2025); **27 flight legs recovered off them — see the correction below** |
+| adsb.lol GitHub Release backup | **45 days**, filed 28 Aug 2026 from data already on disk — see below |
+
+### Two corrections to this section, both made on 28 August 2026
+
+**The coverage figure above was too low, and the missing data was already in this
+repository.** The geographic sweep files a tracked tail's trace under the **date**
+it swept; the per-aircraft record looks under the **tail**. 45 aircraft-days of
+N2100L sat here uncounted. Filing them across took this aircraft's coverage of the
+event windows from **2.75% to 15.15%**, with no network request of any kind.
+
+**The "0 flight rows recovered" was a parser failure, not an empty page.** Those
+archived FlightAware captures ship a `trackpollBootstrap` JSON blob carrying the
+whole activity log; re-parsing offline recovers **27 distinct flight legs** this
+repository had scored as zero. A "0 rows recovered" is not an absence of evidence
+until the extractor has been checked.
+
+### What the newly filed days show — and what they do not
+
+* **It transmits only the callsign `AXEL21`.** Not a civil flight number.
+* **Its dominant ground field is Biggs Army Airfield (KBIF) at Fort Bliss — 25
+  days**, ahead of Austin (6) and El Paso (5).
+* Across 110 recovered ground visits, **two** fall within 50 miles of a sourced
+  Charlie Kirk or TPUSA event: **Madison, Wisconsin (KMSN), 4 September 2024, 5.4
+  miles, the day after**, and **Long Beach, California (KLGB), 8 August 2025, 13.7
+  miles, the day before** a Rancho Palos Verdes event.
+
+**Two events on 59 observed days is 3.4%** — squarely inside the range the
+ordinary Kirk-side jets produce (2.8% to 8.2%) and far below the TPUSA-associated
+Learjet N582MM at **19.2%**, which is what an aircraft that genuinely travels with
+the organisation looks like in this data. **These two events are worth recording
+and are not evidence of anything on their own**, and neither puts any person
+aboard the aircraft.
+
+The sister aircraft [N1098L](/Planes/N1098L/overview) — same owner, same type,
+callsign `AXEL10` — gained 53 days in the same pass and comes out at 1.6%. Full
+accounting on
+[Investigating Deleted Flights](/Planes/investigating_deleted_flights).
 
 **Nothing here was found to have been removed.** No tracking site was found to have taken this
 aircraft's page down. Our scripted probe recorded HTTP 403 from FlightRadar24, RadarBox and

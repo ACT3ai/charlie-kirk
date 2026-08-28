@@ -668,6 +668,67 @@ Raw payloads are kept in `site/docs/Planes/SU-BTT/data/recovered/`, with the sou
 
 More: [Flight Data Recovery](/Planes/Flight-Data-Recovery/overview) · [Per-Aircraft Status](/Planes/Flight-Data-Recovery/Per-Aircraft-Status)
 
+### Flying over a city is not being at it — and this aircraft proves the point
+
+A geographic sweep of an open archive was run across 187 sourced Charlie, Erika
+and TPUSA event-days and, on the same days in the same run, across six **control
+cities** with no known Kirk event. SU-BTT appears in both sets — and the
+difference between the two appearances is the single most important distinction
+in this entire line of inquiry.
+
+| Date | Circle | What the trace says |
+|---|---|---|
+| **2025-09-10** | **Orem, UT — event** | **On the ground at Provo, 0.8 mi from the field** |
+| 2025-09-10 | Des Moines, IA — **control** | Overhead at **41,000 ft** |
+| 2025-08-23 | Des Moines, IA — control | Overhead at **41,000 ft** |
+
+**On the same day, this aircraft is inside two fifty-mile circles.** In one it is
+parked on a ramp. In the other it is seven and a half miles straight up, crossing
+Iowa on its way somewhere else. A tally that counts *circle entries* rather than
+*ground presence* would score both, and would be wrong to. **Every overlap count
+quoted anywhere on this site should be read with that in mind**, and it is why the
+overlap register carries a separate `adsb_ground_position` column: of the 25
+claimed overlaps recovered ADS-B places at the claimed field, only **10** put
+wheels on the ground, and those collapse to **seven distinct aircraft-days**.
+
+### The sweep missed 23 April 2024 — and the fault was ours
+
+The 23 April 2024 Provo presence confirmed above **did not come from the
+geographic sweep. The sweep returned nothing for it**, on a day it downloaded
+whole and processed cleanly.
+
+The cause was a defect in this investigation's own filtering code, fixed on 28
+August 2026. The sweep pre-filters a day's data by looking for the integer part of
+a coordinate in the raw bytes, and it built those tokens with `math.floor()` —
+which turns **−111.73 into −112**, while the file itself *prints* `-111.73`. Every
+western-hemisphere circle was therefore shifted one degree west and **never
+examined its own eastern edge**. The Salt Lake City circle was 50.9% blind, and
+SU-BTT was parked 39.7 miles inside it.
+
+**Nothing was removed and nothing was hidden.** adsb.lol served the day on
+request, the backup tarball downloaded at full size, and the per-tail route holds
+the aircraft-day in full — 53 ground fixes at a median 0.58 km from the field.
+**Our own filter threw the file away before the geometry check ever ran, and the
+per-tail route is how we caught it.** Fixed and locked with a regression test;
+until the sweep is re-run, every sweep-only count on this site is a floor rather
+than a total. Full detail:
+[Investigating Deleted Flights](/Planes/investigating_deleted_flights).
+
+### Two events on nineteen observed days is not a rate
+
+Across every day this investigation holds a trace for SU-BTT, **2 of 19 observed
+ground-visit days** fall within fifty miles of a sourced Charlie, Erika or TPUSA
+event — 23 April 2024 and 10 September 2025, **both at the same airport**. That
+is 10.5% on a denominator of nineteen. **It is not a frequency and must not be
+quoted as one**; it is two events with a percent sign attached.
+
+For comparison, from the same data: the TPUSA-associated Learjet
+[N582MM](/Planes/N582MM/overview) sits at **19.2% across 276 observed days**,
+which is what an aircraft that genuinely travels with the organisation looks like.
+And of the six aircraft in the "following" fleet, **four — SU-BTU, SU-BTV, SU-BGM
+and T7-ELL — never come within fifty miles of a sourced event on any day we
+hold. Not once.**
+
 ## The primary flight data we hold on this aircraft, and where it came from
 
 Everything above this line on this page is, in the end, somebody's reading of a flight-tracking website — a screenshot, a spreadsheet built from screenshots, or a tally built from that spreadsheet. This section is different. It is the position data this repository holds for SU-BTT itself, pulled from free public ADS-B archives on **24 August 2026**, saved to disk, and readable by anyone who clones the repo. Where it agrees with the claims above, it is said so. Where it corrects them — including where it corrects this site — it is said so with equal plainness.

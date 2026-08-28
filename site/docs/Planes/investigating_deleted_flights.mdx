@@ -82,6 +82,14 @@ gap between 78% and 9% is mostly *what kind of aircraft this is*, not *who is
 hiding it*. Both controls are airliners, which makes them a weak control for a
 private jet — that limitation is stated here rather than hidden.
 
+**A second warning, this one about our own bookkeeping.** D2 is only meaningful
+where a *miss* was recorded as well as a hit. Three of the four sources —
+the ADS-B Exchange monthly samples, the GitHub backup ingest, and the page
+archive — write a record **only when they succeed**, so their asked-hit rate is
+100% by construction and means nothing. The same defect makes the 2026 row of
+any coverage table read 100%. **Quote D2 only for adsb.lol and airplanes.live,
+which write a `.miss` record when the archive was asked and had nothing.**
+
 ### D3 — Event-window coverage (the number that matters)
 *Restricted to the 363 UTC days that are a sourced Charlie / Erika / TPUSA event
 date ±1 day.*
@@ -682,7 +690,12 @@ Read that table carefully, because it cuts in three directions at once.
 * **N582MM at 19.2% is the positive control this investigation did not know it
   had.** An aircraft that genuinely does travel with the organisation produces a
   clear, high, sustained rate across 276 observed days. That is the shape a
-  following pattern makes in this data, and it proves the method can detect one.
+  following pattern makes in this data. **One caveat, and the verification pass
+  insisted on it: this table is built from the PER-TAIL route, not from the blind
+  sweep.** N582MM's rows in the sweep all carry the flag `tracked_fleet:N582MM`,
+  meaning it was kept because it was already on our list — it was retrieved by
+  name, not discovered. The per-tail rate is still a valid comparison between
+  aircraft; it is not evidence that a blind search would have found it.
 * **The two LASAI aircraft come in at 1.6% and 3.4% — at or below the ordinary
   Kirk-side jets.** The three new proximity events are real, and they are also
   what a busy government-contract aircraft flying into major metros produces by
@@ -724,15 +737,174 @@ survey company, was airborne over the Utah Valley on the morning of 10 September
 | 09:54 – 11:41 | **Level at 19,000 ft, flying parallel lines** across a block spanning the Utah Valley and out over Tooele County |
 | 11:10 / 11:25 / 11:35 | Passes 3.8 – 4.5 km from UVU — **at 19,000 feet**, on a survey line |
 | 11:46 – 12:01 | Descending |
-| **12:07:46** | **On the ground at Provo again, 0.3 km from the field** |
-| ~12:20 | **The shooting** |
+| 12:03:30 | Final descent, crossing within 5 km of the campus at 5,725 ft |
+| **12:08:35** | **On the ground at Provo again, 0.26 km from the field reference point** |
+| ~12:23 | **The shooting** |
 
-**It landed roughly twelve minutes before the shooting.** The pattern — constant
+**It landed roughly fifteen minutes before the shooting** — the same figure the
+[N59906 page](/Planes/N59906/overview) already carries, re-derived here
+independently from the raw trace rather than from the circulated screenshot.
+The pattern — constant
 19,000 ft, long parallel legs, a wide rectangular block, a return to the field it
 launched from — is a standard aerial-mapping grid. **It passed near UVU because
 UVU sits inside the survey block, not because it was watching it**, and it was on
 the ground when the shooting happened. Publishing the near-UVU distances without
 the altitude, the grid, and the landing time would be a serious misrepresentation.
+
+### 4.13 The one sentence the recovered data supports about the headline number
+
+The tallies behind this whole line of inquiry — 65, 68, 70, 72, 73, 77 — are
+trackers' counts, never records, and they have never been reconciled with each
+other. The register of what was actually claimed holds **85 rows**. Here is what
+the recovered data does to them, in a sentence a reader can repeat:
+
+> **Of the 85 claimed overlaps behind the 68-to-77 tallies, recovered public
+> ADS-B can decide 29 — it puts the aircraft at the claimed field on 25 of them,
+> 10 with wheels actually on the ground collapsing to seven aircraft-days at just
+> two airports, and somewhere else on 2 — while the remaining 56 cannot be
+> decided by any free archive; and on the person the count was named for, not one
+> of the 85 rows records Erika Kirk as documented present.**
+
+**The sentence that must go next to it, or the first one misleads:** the free
+archives hold a trace on roughly **8% of the 114 days SU-BND provably sat at
+Provo**, and on about **1% of the 85 days of its 2024 stay**. That is the ceiling
+on what this method can ever prove or disprove. **The 56 undecidable rows are a
+statement about the archives, not about the claim, and the 25 confirmations are a
+floor rather than a total.**
+
+The seven aircraft-days with wheels actually on the ground at a claimed field:
+
+| Tail | Date | Field | Closest approach |
+|---|---|---|---:|
+| SU-BTT | 2023-04-20 | KILG Wilmington | 0.56 km |
+| SU-BND | 2024-04-19 | KPVU Provo | 0.05 km |
+| SU-BTT | 2024-04-23 | KPVU Provo | 0.00 km |
+| SU-BND | 2025-05-23 | KPVU Provo | 0.03 km |
+| SU-BTT | 2025-09-04 | KPVU Provo | 0.16 km |
+| SU-BTT | 2025-09-10 | KPVU Provo | 1.23 km |
+| SU-BND | 2025-09-10 | KPVU Provo | 1.29 km |
+
+The other 15 "at the claimed airport" rows are **airborne fixes near the field** —
+an arrival, a departure, or a low pass. That distinction is on every row in the
+register and it must not be dropped when the number is quoted.
+
+**On the person the count is named for:** the register's `erika_present` column
+is `claimed` on 70 rows and `not_claimed` on 15. **It is never `yes` on any row.**
+The aircraft half of this claim is now checkable on 29 of 85 rows and confirmed
+on 25; **the person half is confirmed on zero.** Erika Kirk's flight logs are
+reported erased and no backup anywhere produces her itinerary —
+see [Erika Flight Logs Erased](/Planes/Erika-Flight-Logs-Erased).
+
+### 4.14 Corrections that favour the claim, published because they do
+
+A page that only ever corrects in one direction should not be believed. These
+cut the other way and are published for that reason.
+
+**The hostile audit's negative calls are the unreliable half.** Of the 44 register
+rows an independent audit marked *inaccurate*, recovered ADS-B reaches 5 and
+**contradicts the audit on 3** — OWENS-021 (14 Feb 2024, SU-BTT at Wilmington,
+0.82 km), OWENS-025 (19 Apr 2024, SU-BND at Provo, 0.05 km, on the ground) and
+OWENS-041 (10 Sep 2025, SU-BTT at Provo, 1.23 km, on the ground). Of the 29 rows
+it marked *accurate* or *partial*, ADS-B reaches 24 and contradicts it on 2. **This
+site currently publishes the first half of that finding and not the second.**
+
+**OWENS-015 is scored REFUTED and the raw trace corroborates it.** The row claims
+SU-BND flew Missouri → Goose Bay → Paris → Cairo on 9 May 2023, and carries the
+verdict `ELSEWHERE` with the note that its closest recovered position is 1,063 km
+from Goose Bay. Both archives say otherwise, independently and agreeing to the
+minute: the trace **begins 4.4 km from St. Louis Downtown at 1,725 ft climbing**
+and ends over Quebec at 41,000 ft tracking northeast. The aircraft did leave the
+St. Louis area for Goose Bay on the claimed date. **The `ELSEWHERE` verdict is an
+artifact of scoring a multi-leg route row against the LAST airport in the route
+string**, at the point where volunteer receiver coverage over Labrador runs out.
+Reclassifying it takes the published "10% wrong continent" (3 of 29) down to
+**6.9% (2 of 29)**. The other two refutations are solid and stand.
+
+**"Not heard" is nearly worthless as a refutation here.** The free archives hear
+a Provo-parked jet on **9 of 114 undisputed days**. A `NOT_HEARD` verdict on a
+claimed overlap is a statement about receiver coverage, not about whether the
+aircraft was there.
+
+### 4.15 Four things the traces say that reframe the fleet
+
+**Wilmington, not Provo, is the Egyptian fleet's dominant American field.** Across
+every recovered trace the five SU- tails are on the ground at Wilmington (KILG)
+**26 times** and at Provo (KPVU) **30 times** — but 21 of the 30 Provo contacts
+are **SU-BND alone**. Excluding that one airframe, the fleet's US ground presence
+is **26 Wilmington against 9 Provo, roughly three to one**. SU-BTV, one of the
+five, has **no recorded ground contact at Provo at any time** across 85 held days
+spanning October 2022 to May 2026. Provo is the field the public argument is
+built on; the primary data says the fleet's habitual American destination is
+Wilmington, and that within Provo the recurring aircraft is **one specific
+airframe, not a fleet**.
+
+**Four of the five Egyptian tails carry the community database's military flag —
+and SU-BND does not.** In the `dbFlags` bitfield inside the traces themselves,
+SU-BTT, SU-BTU, SU-BTV and SU-BGM are flagged military on every payload from
+every archive; SU-BND is flagged 0 on all 237 of its payloads. Same-day
+cross-archive agreement is **100%** on all five, so this is not one network's
+opinion. **It is also a community-derived classification, not a government record
+and not an assertion of ownership** — and the aircraft it does *not* apply to is
+the one that sat at Provo through the September window.
+
+**T7-ELL does not belong in an Egyptian-fleet total.** Its largest ground presence
+by a wide margin is **Dubai World Central (27 visits)**, then Athens (14), Los
+Angeles (8), Rome Ciampino (6), Vienna and Zurich (5 each). Its heard positions
+are 49.6% Europe, 25.6% Middle East and South Asia, 13.3% the Americas. It has
+**no recorded ground contact at Provo, at Wilmington, or at any other field
+connected to this case**, across 140 held days from February 2022 to August 2026.
+The `T7-` prefix is **San Marino**, not Egypt. It was grouped with the "Egyptian
+armada" because a fleet-list thread grouped it. **Every count that includes
+T7-ELL in an Egyptian-fleet total is inflated by an aircraft that never went to
+any of the fields in question.**
+
+**Zero emergency or interesting squawks across 6.2 million trace points.** The
+only emergency squawk values anywhere in the archive are on a **control
+airliner**. Whatever these aircraft were doing, none of them declared anything.
+
+### 4.16 The one real page-level suppression — and it is lawful and ordinary
+
+Two archived FlightAware pages carry FlightAware's **own machine-readable
+suppression state**: `blocked: true`, `blockedForUser: true`, an empty activity
+log, and the site's verbatim text *"This aircraft is not available for public
+tracking per request from the owner/operator."*
+
+| Tail | Snapshot | Owner on the page |
+|---|---|---|
+| **N888KG** | 2025-09-11 17:11:15 UTC — **about 23 hours after the shooting** | N888KG LLC, Lehi UT |
+| **N102DZ** | 2026-01-14 19:27:50 UTC | Elderberry Chestnut LLC, Cheyenne WY |
+
+**This is not a 403 and not a paywall. It is the site stating that the data is
+withheld**, and it is the only thing in this entire recovery effort that is.
+
+**And it is an ordinary, lawful privacy program.** The FAA's LADD scheme and
+FlightAware's owner-request block exist precisely for this, thousands of aircraft
+use them, and **nothing in the archived page dates when either block was filed or
+says who asked for it.** The snapshot date is when a crawler visited, not when
+the block began. The flag also **varies inside our own subject set** — N1098L,
+N2100L, N560TW and N59906 all come back `blocked: false` with full activity logs
+on the same kind of page — so it is not boilerplate. And on the same days
+FlightAware was suppressing N888KG, **Flightradar24 was still publishing it.**
+A blocking claim must always name the network.
+
+### 4.17 85 flight legs recovered from pages this repo had scored as empty
+
+Six archived FlightAware captures were logged in this repository as
+`JAVASCRIPT_SHELL_NO_SERVER_RENDERED_ROWS` with **0 rows**. They were not empty.
+The same pages ship a `trackpollBootstrap` JSON blob carrying the whole activity
+log, and re-parsing them offline recovers **85 distinct flight legs** the repo's
+own totals scored as zero: **N1098L 47, N2100L 27, N59906 6, N560TW 5.**
+
+The worked example matters. N1098L's 20 September 2025 capture holds 46 legs and
+independently corroborates the two 10 September legs this site publishes — while
+**adding landing times it does not**: KBIF→KGPI took off 13:48Z and landed 16:38Z;
+KGPI→KBIF took off **17:27Z**, not the 17:32Z this site prints, and landed 20:33Z.
+The archived log also shows the aircraft flew that pair **twice in 24 hours** and
+continued KBIF→KHII→KSNS the same evening — **six legs on the 10 September UTC
+day where the page names two.**
+
+**A "0 rows recovered" is not an absence of evidence until the extractor has been
+checked.** That is now a standing rule here.
 
 ---
 
@@ -794,7 +966,12 @@ Three rules came out of it, and they govern everything above:
 | `recovery_ledger_summary.json` | the verdict counts and the 403-band split |
 | `geo_ground_foreign.csv` | 17,266 foreign / unregistered / military / blocked aircraft on the ground in an event circle |
 | `geo_rates.csv` | event-circle versus control-circle base rates |
-| `geo_recurrence.csv` | 857 aircraft near 2+ events in 2+ states, with control contamination flagged |
+| `geo_recurrence.csv` | 799 aircraft near 2+ events in 2+ states, with control contamination flagged |
+| `su_presence_union.csv` | the four-row union of both routes (§4.9) |
+| `flight_legs.csv` | 2,282 flight legs, each labelled direct / overnight / gap |
+| `al_only_classified.csv` | every one-archive-only aircraft-day, classified against four independent tests |
+| `wayback_trackpoll_legs.json` | the 85 legs re-parsed out of pages scored as empty |
+| `recurrence_hardtest.csv` | the 3,032-aircraft recurrence population and the hard test applied to it |
 
 ### Code that produced it
 `site/docs/Planes/following/apis/public_open_source/code/`
@@ -805,6 +982,11 @@ Three rules came out of it, and they govern everything above:
 | `build_recovery_ledger.py` | the three-state ledger — HELD / ASKED_NONE / NOT_ASKED |
 | `build_geo_findings.py` | mines the 1.77 M sweep rows into the three geo CSVs |
 | `coverage_percent.py` | every percentage in section 2, with each denominator named |
+| `normalise_event_control.py` | the three normalisations in §4.5 |
+| `ingest_sweep_traces.py` | files sweep-downloaded traces under their aircraft (§2.5) |
+| `union_su_presence.py` | the union of both routes (§4.9) |
+| `test_prefilter.py` | the regression test locking the §4.8 fix |
+| `build_flight_legs.py` | ground runs → legs, with cross-midnight stitching |
 | `geo_sweep.py` | the sweep itself — streams a whole UTC day, filters by circle |
 | `recover_erased.js` | pulls two archives side by side per aircraft-day and diffs them |
 | `recover_adsbx_samples.js` | the 2022 bridge — free monthly samples |
@@ -822,10 +1004,98 @@ Three rules came out of it, and they govern everything above:
 
 ---
 
-## 7. Where this stands
+## 7. Which flights we found, and which we did not
 
-* **Deep analysis of every lane is still running.** Sections 4 and 5 will grow.
-* Site pages have not yet been updated from these findings.
-* 2022 is the real hole and no free source closes it.
-* The one action that would raise the per-tail percentage is a credential for a
-  proprietary archive. Everything free has been asked.
+### Found — and confirmed by two independent archives
+
+| What | Where it is |
+|---|---|
+| **4 foreign-fleet ground presences within 50 mi of a sourced event** — SU-BTT 23 Apr 2024 Provo; SU-BND 9 and 10 Sep 2025 Provo; SU-BTT 10 Sep 2025 Provo | `su_presence_union.csv` |
+| **30 foreign-fleet ground visits at Provo**, Apr 2024 → Jun 2026, including SU-BND parked continuously 5–12 Sep 2025 | `master_proximity.csv` |
+| **7 aircraft-days with wheels on the ground at a claimed overlap field** — six Provo, one Wilmington | `overlaps.csv` |
+| **2,282 flight legs** across 17 aircraft, each labelled direct / overnight / gap | `flight_legs.csv` |
+| **6,502 airport ground visits** over 2,346 aircraft-days | `trace_visit_index.json` |
+| **318 aircraft-days pulled from inside adsb.lol's two archive holes**, 210 of them in 2026 | `recovery_ledger.csv` |
+| **111 aircraft-days already downloaded but never filed** — N1098L, N2100L, N59906 | `ingest_sweep_traces.py` |
+| **85 flight legs re-parsed out of archived pages scored as empty** | §4.17 |
+| **N708JH at Provo the day after, and at Scottsdale for the memorial** — answering an open question this site had posted | §4.7 |
+| **N59906's complete 10 September survey flight**, takeoff to landing | §4.12 |
+
+### Not found — and honestly, why
+
+| What is missing | Which of the three it is |
+|---|---|
+| **2022 entirely.** 3 of 38 sourced 2022 US event-days are covered by anything free that exists, and **zero on the event day itself** | **Coverage gap.** Neither daily archive holds anything before 2 February 2023, for the case aircraft *or* the controls |
+| **All nine claimed 2022 overlaps** | **Untestable.** Not refuted — untestable |
+| **56 of the 85 claimed overlaps** | **Undecidable by any free archive.** 37 not heard, 10 no coverage, 5 no date claimed, 4 no tail claimed |
+| **7,869 aircraft-days asked of both archives, held by neither** | **Asked and empty.** A coverage fact. Never an absence |
+| **Erika Kirk's itinerary** | **Never published by anyone.** No backup produces it. This is the single largest hole in the whole claim |
+| **The original overlap spreadsheet as a file** | Never released |
+| **The 5 unpublished rows** that took the count from 68 to 73 | No dates, no tails. Untestable as published |
+| **36 sweep days** lost to a download failure | **Our own bug** — see below. Not a deletion |
+| **9 UTC days with no adsb.lol release at all**, costing 3 event-days | A hole in **adsb.lol's own archive**, control-confirmed |
+
+**Not one thing on that list is a removal.** Every single gap classified out as a
+retention boundary, an archive coverage hole, or a defect in our own tooling.
+
+### The 36 lost sweep days were our bug, and it is provably not date-selective
+
+28 sweep days ended TRUNCATED and 8 unresolved. **35 of the 36 fall on a date
+whose day-of-month ends in 8 or 9.** The cause is in our own code: the queue
+sorts ordinary dates on the *reversed* date string, which orders them by the last
+digit of the day, so every `*8` and `*9` date landed at the very end of a 22-hour
+run and died to `curl` network errors. On every one of those days **the server
+reported a full Content-Length and the asset exists on the CDN at full size** —
+we simply failed to finish downloading it.
+
+**Does any of it coincide with an important date? No.** 9, 10, 11 and 12 September
+2025 are the *first four* entries in the queue by design and all four came back
+fully swept with 74,000–80,000 aircraft each. The nearest failures are 18 and 19
+September, eight and nine days after the killing.
+
+---
+
+## 8. Status, and the one thing only a human can do
+
+**Where this stands.** The mining is done and adversarially verified: ten
+independent analysis lanes produced 102 findings, **94 survived a three-lens
+refutation pass and 8 were killed or sent back for rewording.** Every number on
+this page is either re-derived directly from the payload files or carries a
+verified finding behind it.
+
+**What is genuinely finished:**
+
+* Every event-window day for every Egyptian tail has been put to every free
+  archive that exists. **Never-asked is zero.**
+* Both recovery routes have been run and cross-checked, and **they never
+  contradict each other** on any aircraft-day where both hold data.
+* Two defects in our own code found, fixed, and locked with a regression test.
+* Three aircraft raised out of the worst-covered tier using data already on disk.
+
+**What is blocked, and by what:**
+
+| Blocked on | What it would unlock |
+|---|---|
+| **A credential for a proprietary archive** (FlightAware AeroAPI reaches back to 2011; FR24; ADS-B Exchange historical) | **The only remaining way to raise the per-tail percentage.** Everything free has already been asked. AeroAPI is the highest-value unopened door |
+| **A re-run of the geographic sweep** with the fixed pre-filter | Would turn every sweep-only count from a floor into a total, and recover the 36 lost days |
+| **Erika Kirk's itinerary** | The person half of every overlap claim. **No archive anywhere holds it** |
+| **State public-records requests** at the city-owned airports — landing fees, fuel tickets, ramp assignment, badge access | **Records rather than readings.** The most under-used route in the whole investigation, and it is state law, not federal FOIA — faster and cheaper |
+
+**The honest bottom line.** The archives have been squeezed. What is left is not
+more scraping; it is one API key and a handful of public-records letters.
+
+---
+
+## 9. What this page does not claim
+
+* **No trace here places any person aboard any aircraft.** Presence is not
+  purpose and it is not occupancy.
+* **No removal was found.** One lawful owner-requested tracking block was found,
+  and it is described as exactly that.
+* **No intent is asserted anywhere.** We can show a page was public and is not;
+  we cannot see why. Owners lawfully request blocking and sites reorganise URLs.
+* **Every tally quoted is a tracker's count, never a record.** Where they
+  conflict, the conflict is shown rather than averaged.
+* **The four Egyptian ground presences are what we can currently prove, not a
+  statement about what happened.** 139 sourced events is nowhere near every place
+  the Kirks went, and the person side of the claim is close to empty.

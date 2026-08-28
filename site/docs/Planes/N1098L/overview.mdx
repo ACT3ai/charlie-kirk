@@ -193,7 +193,59 @@ FlightRadar24 page loads in an ordinary browser, listed openly as a **Bombardier
 | globe.airplanes.live | 46 days, 2 Sep 2025 – 3 Jun 2026 |
 | ADS-B Exchange monthly sample | 19 days, 1 Nov 2023 – 1 Aug 2026 |
 | FlightRadar24 page | HTTP 200 in a browser on 24 Aug 2026; 28 history rows on the free seven-day tier; older history paywalled |
-| Internet Archive | 3 page snapshots held (FlightAware, May 2023 – Sep 2025); 0 flight rows recovered off them — those captures are JavaScript shells with no server-rendered rows |
+| Internet Archive | 3 page snapshots held (FlightAware, May 2023 – Sep 2025); **47 flight legs recovered off them — see the correction below** |
+| adsb.lol GitHub Release backup | **53 days**, filed 28 Aug 2026 from data already on disk — see below |
+
+### Two corrections to this section, both made on 28 August 2026
+
+**First: the coverage figure above was too low, and the missing data was already
+in this repository.** The geographic sweep keeps the full trace of any tracked
+tail it meets, filed under the **date** it swept. The per-aircraft record looks
+under the **tail**. 53 aircraft-days of N1098L sat in the repository uncounted
+because of that mismatch. Filing them across took this aircraft's coverage of the
+event windows from **4.68% to 19.28%** — from the worst-covered aircraft in the
+whole investigation to a mid-ranking one — **with no network request of any kind.**
+Before concluding data is missing, check whether it is merely filed under a
+different key.
+
+**Second: the "0 flight rows recovered" was a parser failure, not an empty page.**
+Those archived FlightAware captures were scored as JavaScript shells with nothing
+in them. They are not empty — the same pages ship a `trackpollBootstrap` JSON blob
+carrying the whole activity log. Re-parsing offline recovers **47 distinct flight
+legs** for this aircraft. The 20 September 2025 capture alone holds 46 legs and
+**independently corroborates the two 10 September legs this page publishes, while
+adding times the page does not**: KBIF→KGPI took off 13:48Z and landed 16:38Z;
+KGPI→KBIF took off **17:27Z** — five minutes earlier than the 17:32Z printed here
+— and landed 20:33Z. The reported Orem low pass at roughly 18:24–18:48Z falls
+inside that second leg. The archived log also shows this aircraft flew the
+KBIF↔KGPI pair **twice in 24 hours** and continued KBIF→KHII→KSNS the same
+evening — **six legs on the 10 September UTC day where this page names two.**
+
+**A "0 rows recovered" is not an absence of evidence until the extractor has been
+checked.**
+
+### What the newly filed days show — and what they do not
+
+With 53 more days visible, this aircraft's own record becomes legible:
+
+* **It transmits only the callsign `AXEL10`.** Not a civil flight number.
+* **Its dominant ground field is Biggs Army Airfield (KBIF) at Fort Bliss — 28
+  days, more than every other field it touches.** El Paso (KELP) is second at 6.
+* Across all 115 recovered ground visits, **exactly one** falls within 50 miles of
+  a sourced Charlie Kirk or TPUSA event: **Phoenix Sky Harbor, 18 December 2024,
+  10.8 miles from the event city, the day after.**
+
+**And that one event is not a pattern, by this investigation's own measure.** It is
+**1.6% of this aircraft's observed ground-visit days** — at or *below* every
+ordinary Kirk-side jet in the fleet (2.8% to 8.2%) and far below the
+TPUSA-associated Learjet N582MM, which sits at **19.2%** and is what an aircraft
+that genuinely travels with the organisation looks like in this data. One
+proximity event on 62 observed days is a record worth keeping, not a finding.
+
+The sister aircraft [N2100L](/Planes/N2100L/overview) — same registered owner,
+same type, callsign `AXEL21` — gained 45 days in the same pass and comes out at
+3.4%. Full accounting on
+[Investigating Deleted Flights](/Planes/investigating_deleted_flights).
 
 **Nothing here was found to have been removed.** No tracking site was found to have taken this
 aircraft's page down. Our scripted probe recorded HTTP 403 from FlightRadar24, RadarBox and

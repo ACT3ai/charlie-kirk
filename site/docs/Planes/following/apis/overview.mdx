@@ -143,6 +143,44 @@ Erika Kirk anywhere. **A confirmed aircraft is not a confirmed overlap.**
   name no aircraft or no date. **Only `ELSEWHERE` refutes anything**; the two "no data" verdicts say
   nothing in either direction and are named separately so they cannot be counted as denials.
 
+## Where the passes stand — 28 August 2026
+
+The four-pass design assumed the passes would each contribute. In practice one of
+them has done all the work, and saying so plainly is more useful than pretending
+otherwise.
+
+| Pass | Aircraft-days produced | Status |
+|---|---:|---|
+| **1 — free and open** | **2,346** | **100% of every trace this investigation holds** |
+| 2 — commercial | **0** | **No credential is held for any vendor.** Nothing was queried |
+| 3 — government records | 0 traces | The FAA registry was pulled; **no records request has been filed anywhere** |
+| 4 — browser capture | 0 traces | Ran, and its result stands: no aircraft page in this investigation has been removed |
+
+**Pass 1's split, by source:** globe.airplanes.live 2,072 aircraft-days (371 of
+them existing nowhere else), adsb.lol 1,702, ADS-B Exchange free monthly samples
+207 (153 unique, and the only free route that reaches 2022), adsb.lol's GitHub
+Release backup 113. Plus 66 archived web-page captures, which are counted in pages
+and not in aircraft-days because a crawler's visit date is not a flight date.
+
+**Pass 2 producing zero is a finding, not an embarrassment.** The credential slots
+exist in the house credential store; an empty string means "not held", and the
+client reports `BLOCKED on credential` by name without ever printing a value.
+**FlightAware's AeroAPI reaches back to 2011 and is the highest-value unopened
+door in the whole investigation.** It is also the only remaining way to raise the
+per-tail coverage figure, because every free archive has now been asked every
+event-window day for every aircraft in the fleet.
+
+**Pass 3 is the genuinely under-used route**, and it is the one that produces
+*records* rather than *readings*. Most of the fields in this case are city-owned
+or run by a public airport authority, which makes **state public-records law** —
+not federal FOIA — the route: landing fees, fuel tickets, ramp assignment, hangar
+and badge-access logs. It is faster and cheaper than FOIA and nobody has filed
+one.
+
+Coverage percentages, the archive holes, and the defects found in this section's
+own code are all accounted for on
+[Investigating Deleted Flights](/Planes/investigating_deleted_flights).
+
 ## What none of it can do
 
 **The counts remain trackers' tallies, not records.** 73, 72, 70+, 68, 29, 23 — amateur readings of
