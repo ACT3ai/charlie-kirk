@@ -68,7 +68,52 @@ US_FALLBACK = {
     "KMSN": ("Madison", "WI"), "KSAN": ("San Diego", "CA"),
 }
 
+OURAIRPORTS = os.path.join(
+    FOLLOWING, "apis/public_open_source/data/ourairports/airports.csv")
+
+# ISO 3166-1 alpha-2 -> display name, for the countries this record touches.
+ISO_COUNTRY = {
+    "US": "USA", "CA": "Canada", "MX": "Mexico", "EG": "Egypt", "FR": "France",
+    "IT": "Italy", "ES": "Spain", "DE": "Germany", "GB": "United Kingdom",
+    "IE": "Ireland", "NL": "Netherlands", "BE": "Belgium", "LU": "Luxembourg",
+    "DK": "Denmark", "NO": "Norway", "SE": "Sweden", "FI": "Finland",
+    "EE": "Estonia", "LV": "Latvia", "LT": "Lithuania", "PL": "Poland",
+    "CZ": "Czechia", "SK": "Slovakia", "HU": "Hungary", "AT": "Austria",
+    "CH": "Switzerland", "GR": "Greece", "TR": "Turkey", "CY": "Cyprus",
+    "BG": "Bulgaria", "RO": "Romania", "RS": "Serbia", "BA": "Bosnia",
+    "HR": "Croatia", "SI": "Slovenia", "MT": "Malta", "AL": "Albania",
+    "MK": "North Macedonia", "PT": "Portugal", "IL": "Israel", "MD": "Moldova",
+    "MC": "Monaco", "AE": "United Arab Emirates", "SA": "Saudi Arabia",
+    "BH": "Bahrain", "KW": "Kuwait", "QA": "Qatar", "JO": "Jordan",
+    "LB": "Lebanon", "SY": "Syria", "IR": "Iran", "IQ": "Iraq",
+    "DZ": "Algeria", "TN": "Tunisia", "MA": "Morocco", "LY": "Libya",
+    "SD": "Sudan", "JP": "Japan", "KR": "South Korea", "HK": "Hong Kong",
+    "AR": "Argentina", "BR": "Brazil", "AU": "Australia", "NZ": "New Zealand",
+    "UA": "Ukraine", "RU": "Russia", "IS": "Iceland", "SM": "San Marino",
+}
+
 _AIRPORTS = None
+_OA = None
+
+US_STATE = {}  # filled from iso_region on first load
+
+
+def ourairports():
+    """
+    The full OurAirports database (85,945 rows) that this pipeline already
+    downloaded.  It is the authority for airport name / municipality / region;
+    the case-curated following/airports.csv wins where it has an opinion.
+    """
+    global _OA
+    if _OA is None:
+        _OA = {}
+        if os.path.exists(OURAIRPORTS):
+            with open(OURAIRPORTS, newline="", encoding="utf-8") as fh:
+                for r in csv.DictReader(fh):
+                    ident = (r.get("ident") or "").strip()
+                    if ident:
+                        _OA[ident] = r
+    return _OA
 
 
 def airports():
@@ -97,6 +142,17 @@ def place(code, name_hint=""):
     city = (a or {}).get("city", "")
     state = (a or {}).get("state", "")
     country = (a or {}).get("country", "")
+
+    o = ourairports().get(code)
+    if o:
+        name = name or (o.get("name") or "").strip()
+        city = city or (o.get("municipality") or "").strip()
+        region = (o.get("iso_region") or "").strip()
+        iso = (o.get("iso_country") or "").strip()
+        if not state and iso == "US" and region.startswith("US-"):
+            state = region[3:]
+        if not country and iso:
+            country = "USA" if iso == "US" else ISO_COUNTRY.get(iso, iso)
 
     if code in US_FALLBACK:
         fc, fs = US_FALLBACK[code]
@@ -132,6 +188,11 @@ def country(code):
     c = (a.get("country") or "").strip()
     if c:
         return c
+    o = ourairports().get(code)
+    if o:
+        iso = (o.get("iso_country") or "").strip()
+        if iso:
+            return "USA" if iso == "US" else ISO_COUNTRY.get(iso, iso)
     if code in US_FALLBACK:
         return "USA"
     for n in (2, 1):

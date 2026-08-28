@@ -1,0 +1,270 @@
+---
+id: cuts-state-utah
+slug: /Planes/following/cuts/state-utah
+displayed_sidebar: docs
+title: "Utah — every overlap, every landing, every event"
+sidebar_label: "Utah — 15 overlaps"
+description: "The Utah cell of the by-state table on the Following overview: all 15 claimed overlaps at Provo, the eight separately logged ground stays, and the three sourced Kirk or TPUSA appearances in the state."
+keywords:
+  - Charlie Kirk
+  - Erika Kirk
+  - SU-BTT
+  - SU-BND
+  - SU-BTU
+  - SU-BTV
+  - SU-BGM
+  - KPVU Provo
+  - Utah
+  - flight tracking
+image: "/img/docusaurus-social-card.jpg"
+hide_table_of_contents: true
+---
+
+<div className="ck-full-bleed" />
+
+<a href="/Planes/following/cuts/overview" style={{display:'inline-block', marginBottom:'1rem',
+padding:'0.35rem 0.9rem', background:'#1a73e8', color:'#fff',
+borderRadius:'4px', textDecoration:'none', fontSize:'0.9rem'}}>← Table drill-downs</a>
+
+# Utah — every overlap, every landing, every event
+
+**Where this came from.** On [the Following overview](/Planes/following/overview), the geographic
+table gives Utah one line — one field, Provo (KPVU), and one number. This page is that cell opened
+up: **15 claimed overlap rows**, plus the **8** separately logged ground presences in the state and
+the **3** sourced Kirk or TPUSA appearances held in Utah, so the aircraft side and the people side
+can be read against each other on one page. The overview's own summary of this state is that four of
+the five clustered states resolve to a maintenance or clearance function and **Utah is the one that
+does not resolve cleanly** — which is why it gets the most careful reading of the five.
+
+## What this slice is
+
+Every row of the overlap register whose claimed location resolves to the state of Utah, on any date,
+for any aircraft, regardless of what either verdict says about it. Nothing is filtered out for being
+refuted, unheard, or audited inaccurate — this is the whole state, warts included. Filter
+`overlaps.csv` on `state = UT` and you get these fifteen, with one boundary case: `OWENS-041` is
+logged `UT/DE` because it is a single claimed movement **Provo then Wilmington** on 10 September
+2025, and it is counted here on its Utah half.
+
+Utah is unusual among the five states in having exactly **one** field. All 15 rows name **KPVU**,
+Provo Municipal — a regional/municipal airport with a **Duncan Aviation** full-service facility on
+the field and no routine international customs function. Table D then adds the state's rows from
+`flights.csv` (logged aircraft ground presences that are not overlap claims) and Table E adds the
+state's rows from `tpusa_events.csv` (sourced appearances).
+
+## At a glance
+
+| Measure | Value |
+|---|---|
+| Overlap rows in this slice | **15** |
+| Distinct dates | 10 — four dates carry more than one row: 23 April 2024 (2), 23 May 2025 (2), 7 July 2025 (2) and 10 September 2025 (3) |
+| Date range | 12 June 2023 → 13 September 2025 |
+| Aircraft named | SU-BND — 10 rows · SU-BTT — 3 · both tails on one row — 2 |
+| Airports claimed | KPVU Provo — 15 of 15 |
+| States | UT — 14 · UT/DE (`OWENS-041`, Provo then Wilmington) — 1 |
+| Years | 2023 — 1 · 2024 — 4 · 2025 — 10 |
+| ADS-B verdict | At the claimed airport, corroborated — 10 · Not heard — 5 · Refuted — 0 · No archive coverage — 0 |
+| Tracking-site audit verdict | Accurate — 8 · Inaccurate — 7 |
+| Who the sheet claims | Erika Kirk alone — 7 · Both Kirks — 6 · Charlie Kirk alone — 2 · TPUSA event, neither Kirk — 0 |
+| Ground-position confirmations | **9 of 15** |
+| Rows on a same-day sourced Kirk or TPUSA appearance | 5 of 15 |
+| Erika Kirk's presence established | 0 of 15 |
+| Separately logged ground presences in the state | 8, across 5 tails |
+| Sourced Kirk / TPUSA appearances in the state | 3 |
+
+## TABLE A — the following aircraft
+
+| Row | Date claimed | Airport | City / State | Following aircraft | Type | ICAO hex | Arrived from | Departed to | Ground stay logged, arrived | Departed | Days | Transponder / ground flag | ADS-B verdict | Closest approach |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| [OWENS-016](/Planes/following/overlap/20230612_UT_provo_owens_016/overview) | **12 June 2023** | [**KPVU**](/Planes/following/Provo_KPVU_2024-04-19_to_2025-09-13/overview)<br/>Provo Municipal (claimed) | Provo, UT | [SU-BND](/Planes/SU-BND/overview) | Gulfstream (G550/G-IV, trackers disagree) | `01003E` | Provo (claimed) | Paris / SLC (claimed) | *no logged stay covers this date* | — | — | — | **Not heard** | — |
+| [OWENS-025](/Planes/following/overlap/20240419_UT_provo_owens_025/overview) | **19 April 2024** | [**KPVU**](/Planes/following/Provo_KPVU_2024-04-19_to_2025-09-13/overview)<br/>Provo Municipal via SLC | Provo, UT | [SU-BND](/Planes/SU-BND/overview) | Gulfstream (G550/G-IV, trackers disagree) | `01003E` | Cairo via Paris, Goose Bay, SLC (audit) | sat until 12 July (audit) | 19 April 2024 | 12 July 2024 | 84 | on the ground, transmitting | **At the claimed airport — corroborated** | 0.05 km — **on the ground** |
+| [OWENS-026](/Planes/following/overlap/20240423_UT_provo_owens_026/overview) | **23 April 2024** | [**KPVU**](/Planes/following/Provo_KPVU_2024-04-19_to_2025-09-13/overview)<br/>Provo Municipal via Williston XWA | Provo, UT | [SU-BTT](/Planes/SU-BTT/overview) | Dassault Falcon 7X | `0101D3` | Cairo via Paris via Williston ND (XWA) | Wilmington 2024-04-28 | 23 April 2024 | 28 April 2024 | 5 | on the ground, transmitting | **At the claimed airport — corroborated** | 0.00 km — **on the ground** |
+| [SITE-004](/Planes/following/overlap/20240423_UT_salt_lake_city/overview) | **23 April 2024** | [**KPVU**](/Planes/following/Provo_KPVU_2024-04-19_to_2025-09-13/overview)<br/>Provo Municipal Airport | Salt Lake City (event) / Provo (aircraft), UT | [SU-BTT](/Planes/SU-BTT/overview), [SU-BND](/Planes/SU-BND/overview) — *both named on the row* | Dassault Falcon 7X (0101D3); Gulfstream 4SP (01003E) | `0101D3; 01003E` | SU-BTT: Paris-Le Bourget -> Williston ND (KXWA) -> Provo, landing 12:13 pm 23 Apr. SU-BND: Goose Bay -> SALT LAKE CITY (KSLC) -> Provo, 19 Apr 3:33 pm | SU-BTT: Wilmington 28 Apr, Cairo 30 Apr. SU-BND: 12 Jul 2024 (reported) | 23 April 2024 | 28 April 2024 | 5 | on | **At the claimed airport — corroborated** | 0.00 km — **on the ground** |
+| [OWENS-030](/Planes/following/overlap/20241208_UT_provo_owens_030/overview) | **8 December 2024** | [**KPVU**](/Planes/following/Provo_KPVU_2024-04-19_to_2025-09-13/overview)<br/>Provo (claimed) | Provo, UT | [SU-BND](/Planes/SU-BND/overview) | Gulfstream (G550/G-IV, trackers disagree) | `01003E` | Provo (claimed) | Paris / SLC (claimed) | *no logged stay covers this date* | — | — | — | **Not heard** | — |
+| [OWENS-064](/Planes/following/overlap/20250419_UT_provo_owens_064/overview) | **19 April 2025** | [**KPVU**](/Planes/following/Provo_KPVU_2024-04-19_to_2025-09-13/overview)<br/>Provo (claimed) | Provo, UT | [SU-BND](/Planes/SU-BND/overview) | Gulfstream (G550/G-IV, trackers disagree) | `01003E` | Provo (claimed) | Paris / SLC / Provo (claimed) | *no logged stay covers this date* | — | — | — | **Not heard** | — |
+| [OWENS-035](/Planes/following/overlap/20250523_UT_provo_owens_035/overview) | **23 May 2025** | [**KPVU**](/Planes/following/Provo_KPVU_2024-04-19_to_2025-09-13/overview)<br/>Provo Municipal | Provo, UT | [SU-BND](/Planes/SU-BND/overview) | Gulfstream (G550/G-IV, trackers disagree) | `01003E` | *not recorded* | sat until 2025-09-13 (113 days) | 23 May 2025 | 13 September 2025 | 113 | on the ground, transmitting | **At the claimed airport — corroborated** | 0.03 km — **on the ground** |
+| [OWENS-065](/Planes/following/overlap/20250523_UT_provo_owens_065/overview) | **23 May 2025** | [**KPVU**](/Planes/following/Provo_KPVU_2024-04-19_to_2025-09-13/overview)<br/>Provo Municipal | Provo, UT | [SU-BND](/Planes/SU-BND/overview) | Gulfstream (G550/G-IV, trackers disagree) | `01003E` | *not recorded* | sat until 2025-09-13 | 23 May 2025 | 13 September 2025 | 113 | on the ground, transmitting | **At the claimed airport — corroborated** | 0.03 km — **on the ground** |
+| [OWENS-037](/Planes/following/overlap/20250707_UT_provo_owens_037/overview) | **7 July 2025** | [**KPVU**](/Planes/following/Provo_KPVU_2024-04-19_to_2025-09-13/overview)<br/>Provo (sheet said leaving; audit says still there) | Provo, UT | [SU-BND](/Planes/SU-BND/overview) | Gulfstream (G550/G-IV, trackers disagree) | `01003E` | Provo (actual) | nowhere — still in Provo | 23 May 2025 | 13 September 2025 | 113 | — | **Not heard** | — |
+| [OWENS-066](/Planes/following/overlap/20250707_UT_provo_owens_066/overview) | **7 July 2025** | [**KPVU**](/Planes/following/Provo_KPVU_2024-04-19_to_2025-09-13/overview)<br/>Provo (sheet said leaving) | Provo, UT | [SU-BND](/Planes/SU-BND/overview) | Gulfstream (G550/G-IV, trackers disagree) | `01003E` | Provo | nowhere — still in Provo | 23 May 2025 | 13 September 2025 | 113 | — | **Not heard** | — |
+| [OWENS-040](/Planes/following/overlap/20250904_UT_provo_owens_040/overview) | **4 September 2025** | [**KPVU**](/Planes/following/Provo_KPVU_2024-04-19_to_2025-09-13/overview)<br/>Provo Municipal via Minot | Provo, UT | [SU-BTT](/Planes/SU-BTT/overview) | Dassault Falcon 7X | `0101D3` | Cairo via Paris via Minot ND | Wilmington 2025-09-10 | 4 September 2025 | 10 September 2025 | 6 | on the ground, transmitting | **At the claimed airport — corroborated** | 0.16 km — **on the ground** |
+| [EXTRA-006](/Planes/following/overlap/20250910_UT_provo_extra_006/overview) | **10 September 2025** | [**KPVU**](/Planes/following/Provo_KPVU_2024-04-19_to_2025-09-13/overview)<br/>Provo Municipal | Provo, UT | [SU-BND](/Planes/SU-BND/overview) | Gulfstream (G550/G-IV, trackers disagree) | `01003E` | Provo ramp since 2025-05-23 | did not take off 9/10; left 9/13 | 23 May 2025 | 13 September 2025 | 113 | ON 09:05:36 / OFF 10:34:05 / ON 12:40:53 / OFF 13:29:40 (Owens 17 Nov 2025, time base… | **At the claimed airport — corroborated** | 1.29 km — **on the ground** |
+| [OWENS-041](/Planes/following/overlap/20250910_UTDE_provo_then_wilmington_owens_041/overview) | **10 September 2025** | [**KPVU**](/Planes/following/Provo_KPVU_2024-04-19_to_2025-09-13/overview)<br/>Provo Municipal (origin) then Wilmington | Provo then Wilmington, UT/DE | [SU-BTT](/Planes/SU-BTT/overview) | Dassault Falcon 7X | `0101D3` | Provo ramp (not Paris) | Wilmington evening 9/10 then Cairo 9/11 | 4 September 2025 | 10 September 2025 | 6 | on the ground, transmitting | **At the claimed airport — corroborated** | 1.23 km — **on the ground** |
+| [SITE-006](/Planes/following/overlap/20250910_UT_orem/overview) | **10 September 2025** | [**KPVU**](/Planes/following/Provo_KPVU_2024-04-19_to_2025-09-13/overview)<br/>Provo Municipal Airport | Orem (event) / Provo (aircraft), UT | [SU-BTT](/Planes/SU-BTT/overview), [SU-BND](/Planes/SU-BND/overview) — *both named on the row* | Dassault Falcon 7X (0101D3); Gulfstream 4SP (01003E) | `0101D3; 01003E` | SU-BTT: Paris-Le Bourget -> Minot ND (KMOT, landed 11:03 am, departed ~11:45 am) -> Provo, 4 Sept 12:46 pm. SU-BND: Paris -> Goose Bay -> Minot -> Provo, 23 May 2:38 pm | SU-BTT: Wilmington (KILG), 10 Sept - TIME DISPUTED. SU-BND: 13 Sept 12:57 pm -> Goose Bay -> Paris -> Cairo | 4 September 2025 | 10 September 2025 | 6 | SU-BTT on. SU-BND ON THE GROUND, TRANSPONDER REPORTED ACTIVE, NO TAKEOFF | **At the claimed airport — corroborated** | 1.23 km — **on the ground** |
+| [OWENS-042](/Planes/following/overlap/20250913_UT_provo_owens_042/overview) | **13 September 2025** | [**KPVU**](/Planes/following/Provo_KPVU_2024-04-19_to_2025-09-13/overview)<br/>Provo Municipal | Provo, UT | [SU-BND](/Planes/SU-BND/overview) | Gulfstream (G550/G-IV, trackers disagree) | `01003E` | Provo ramp since 2025-05-23 | Goose Bay → Paris 9/13; Paris → Cairo 9/15 | 23 May 2025 | 13 September 2025 | 113 | airborne position | **At the claimed airport — corroborated** | 0.62 km |
+
+## TABLE B — who they are claimed to have been following
+
+| Row | Date claimed | Who the sheet claims was present | Erika location as the sheet gives it | Sourced Kirk / TPUSA appearance same day | Venue | Local time | Nearest airport to that venue | Kirk-side aircraft on record |
+|---|---|---|---|---|---|---|---|---|
+| [OWENS-016](/Planes/following/overlap/20230612_UT_provo_owens_016/overview) | **12 June 2023** | Charlie: **not claimed** · Erika: **claimed** | Utah | **None same-day.** Nearest sourced: [Charlie — Young Women's Leadership Summit 2023, Grapevine, TX](/Planes/following/speaking/20230609_grapevine) (-3 days) | — | — | — | *none recorded* |
+| [OWENS-025](/Planes/following/overlap/20240419_UT_provo_owens_025/overview) | **19 April 2024** | Charlie: **not claimed** · Erika: **claimed** | Utah | **None.** No sourced Kirk or TPUSA appearance within three days, anywhere. | — | — | — | *none recorded* |
+| [OWENS-026](/Planes/following/overlap/20240423_UT_provo_owens_026/overview) | **23 April 2024** | Charlie: **unknown** · Erika: **not claimed** | Utah | [Charlie — Prove Me Wrong — University of Utah, Salt Lake City, UT](/Planes/following/speaking/20240423_salt_lake_city) | University of Utah | — | KSLC — Salt Lake City International, 5 mi | *none recorded* |
+| [SITE-004](/Planes/following/overlap/20240423_UT_salt_lake_city/overview) | **23 April 2024** | Charlie: **claimed** · Erika: **claimed** | Utah | [Charlie — Prove Me Wrong — University of Utah, Salt Lake City, UT](/Planes/following/speaking/20240423_salt_lake_city) | University of Utah | — | KSLC — Salt Lake City International, 5 mi | *none recorded* |
+| [OWENS-030](/Planes/following/overlap/20241208_UT_provo_owens_030/overview) | **8 December 2024** | Charlie: **not claimed** · Erika: **claimed** | Utah | **None.** No sourced Kirk or TPUSA appearance within three days, anywhere. | — | — | — | *none recorded* |
+| [OWENS-064](/Planes/following/overlap/20250419_UT_provo_owens_064/overview) | **19 April 2025** | Charlie: **not claimed** · Erika: **claimed** | Utah | **None same-day.** Nearest sourced: [Charlie — American Comeback Tour — Texas A&M, College Station, TX](/Planes/following/speaking/20250422_college_station) (+3 days) | — | — | — | *none recorded* |
+| [OWENS-035](/Planes/following/overlap/20250523_UT_provo_owens_035/overview) | **23 May 2025** | Charlie: **claimed** · Erika: **claimed** | Utah | **None.** No sourced Kirk or TPUSA appearance within three days, anywhere. | — | — | — | *none recorded* |
+| [OWENS-065](/Planes/following/overlap/20250523_UT_provo_owens_065/overview) | **23 May 2025** | Charlie: **claimed** · Erika: **claimed** | Utah | **None.** No sourced Kirk or TPUSA appearance within three days, anywhere. | — | — | — | *none recorded* |
+| [OWENS-037](/Planes/following/overlap/20250707_UT_provo_owens_037/overview) | **7 July 2025** | Charlie: **not claimed** · Erika: **claimed** | Utah | **None same-day.** Nearest sourced: [Charlie — Chapter Leadership Summit 2025, Tampa, FL](/Planes/following/speaking/20250709_tampa) (+2 days) | — | — | — | *none recorded* |
+| [OWENS-066](/Planes/following/overlap/20250707_UT_provo_owens_066/overview) | **7 July 2025** | Charlie: **not claimed** · Erika: **claimed** | Utah | **None same-day.** Nearest sourced: [Charlie — Chapter Leadership Summit 2025, Tampa, FL](/Planes/following/speaking/20250709_tampa) (+2 days) | — | — | — | *none recorded* |
+| [OWENS-040](/Planes/following/overlap/20250904_UT_provo_owens_040/overview) | **4 September 2025** | Charlie: **claimed** · Erika: **not claimed** | Utah | **None same-day.** Nearest sourced: [Charlie — Build Up Korea 2025, Seoul,](/Planes/following/speaking/20250905_seoul) (+1 days) | — | — | — | *none recorded* |
+| [EXTRA-006](/Planes/following/overlap/20250910_UT_provo_extra_006/overview) | **10 September 2025** | Charlie: **claimed** · Erika: **claimed** | disputed: sheet Nebraska/Delaware vs Erika Arizona | [Charlie — The American Comeback Tour — UVU (first stop of the fall tour), Orem, UT](/Planes/following/speaking/20250910_orem) | Utah Valley University, Sorensen Center courtyard | event ~10:00 MDT announced; shot at 12:23:30 PM MDT | KPVU — Provo Municipal Airport, 5 mi | *none recorded* |
+| [OWENS-041](/Planes/following/overlap/20250910_UTDE_provo_then_wilmington_owens_041/overview) | **10 September 2025** | Charlie: **claimed** · Erika: **claimed** | Nebraska / Delaware (spreadsheet) vs Arizona (Erika's own account) | [Charlie — The American Comeback Tour — UVU (first stop of the fall tour), Orem, UT](/Planes/following/speaking/20250910_orem) | Utah Valley University, Sorensen Center courtyard | event ~10:00 MDT announced; shot at 12:23:30 PM MDT | KPVU — Provo Municipal Airport, 5 mi | *none recorded* |
+| [SITE-006](/Planes/following/overlap/20250910_UT_orem/overview) | **10 September 2025** | Charlie: **claimed** · Erika: **claimed** | DISPUTED: 'Nebraska/Delaware' (spreadsheet) vs ARIZONA (Erika Kirk's own account) | [Charlie — The American Comeback Tour — UVU (first stop of the fall tour), Orem, UT](/Planes/following/speaking/20250910_orem) | Utah Valley University, Sorensen Center courtyard | event ~10:00 MDT announced; shot at 12:23:30 PM MDT | KPVU — Provo Municipal Airport, 5 mi | *none recorded* |
+| [OWENS-042](/Planes/following/overlap/20250913_UT_provo_owens_042/overview) | **13 September 2025** | Charlie: **not claimed** · Erika: **claimed** | Utah | **None same-day.** Nearest sourced: [Charlie — The American Comeback Tour — UVU (first stop of the fall tour), Orem, UT](/Planes/following/speaking/20250910_orem) (-3 days) | — | — | — | *none recorded* |
+
+## TABLE C — sourcing and both verdicts
+
+| Row | Sheet index | Audit verdict (tracking-site pass) | ADS-B verdict (position data) | What the position data says | Source of the claim | Source post | Full row page |
+|---|---|---|---|---|---|---|---|
+| `OWENS-016` | 16 | **Inaccurate** | **Not heard** | SAYS ALMOST NOTHING. adsb-lol/airplanes-live served other airframes that day but holds no trace for this one. Parked with the transponder off, outside receiver coverage, and a wrong claimed date all look identical from here. AN… | Owens sheet via Kanekoa audit | [post](https://x.com/KanekoaTheGreat/status/2000701268806062358) | [open](/Planes/following/overlap/20230612_UT_provo_owens_016/overview) |
+| `OWENS-025` | 25 | **Inaccurate** | **At the claimed airport — corroborated** | CORROBORATED, AND ON THE GROUND. A trace we pulled and kept puts this airframe on the ground 0.1 km from KPVU on the claimed date. It places NOBODY aboard. | Owens sheet via Kanekoa audit (route wrong); Owens Ep 256 | [post](https://www.youtube.com/watch?v=YFmRH8p5lt0) | [open](/Planes/following/overlap/20240419_UT_provo_owens_025/overview) |
+| `OWENS-026` | 26 | **Accurate** | **At the claimed airport — corroborated** | CORROBORATED, AND ON THE GROUND. A trace we pulled and kept puts this airframe on the ground 0.0 km from KPVU on the claimed date. It places NOBODY aboard. | Owens sheet via Kanekoa audit (ACCURATE 4/22–23); overlap page 20240423_UT_salt_lake_city; Owens Ep 256 | [post](https://x.com/KanekoaTheGreat/status/2000701268806062358) | [open](/Planes/following/overlap/20240423_UT_provo_owens_026/overview) |
+| `SITE-004` | — | **Accurate** | **At the claimed airport — corroborated** | CORROBORATED, AND ON THE GROUND. A trace we pulled and kept puts this airframe on the ground 0.0 km from KPVU on the claimed date. It places NOBODY aboard. | Researcher-compiled timeline circulated on X; audit index 26 ('Acc 4/22-23. Williston code XWA'), index 27 | — | [open](/Planes/following/overlap/20240423_UT_salt_lake_city/overview) |
+| `OWENS-030` | 30 | **Inaccurate** | **Not heard** | SAYS ALMOST NOTHING. adsb-lol/airplanes-live served other airframes that day but holds no trace for this one. Parked with the transponder off, outside receiver coverage, and a wrong claimed date all look identical from here. AN… | Owens sheet via Kanekoa audit | [post](https://x.com/KanekoaTheGreat/status/2000701268806062358) | [open](/Planes/following/overlap/20241208_UT_provo_owens_030/overview) |
+| `OWENS-064` | 64 | **Inaccurate** | **Not heard** | SAYS ALMOST NOTHING. adsb-lol/airplanes-live served other airframes that day but holds no trace for this one. Parked with the transponder off, outside receiver coverage, and a wrong claimed date all look identical from here. AN… | Owens sheet via Kanekoa audit | [post](https://x.com/KanekoaTheGreat/status/2000701268806062358) | [open](/Planes/following/overlap/20250419_UT_provo_owens_064/overview) |
+| `OWENS-035` | 35 | **Accurate** | **At the claimed airport — corroborated** | CORROBORATED, AND ON THE GROUND. A trace we pulled and kept puts this airframe on the ground 0.0 km from KPVU on the claimed date. It places NOBODY aboard. | Owens sheet via Kanekoa audit (ACCURATE); SU-BND page | [post](https://x.com/KanekoaTheGreat/status/2000701268806062358) | [open](/Planes/following/overlap/20250523_UT_provo_owens_035/overview) |
+| `OWENS-065` | 65 | **Accurate** | **At the claimed airport — corroborated** | CORROBORATED, AND ON THE GROUND. A trace we pulled and kept puts this airframe on the ground 0.0 km from KPVU on the claimed date. It places NOBODY aboard. | Owens sheet via Kanekoa audit (ACCURATE landing, counted twice) | [post](https://x.com/KanekoaTheGreat/status/2000701268806062358) | [open](/Planes/following/overlap/20250523_UT_provo_owens_065/overview) |
+| `OWENS-037` | 37 | **Inaccurate** | **Not heard** | SAYS ALMOST NOTHING. adsb-lol/airplanes-live served other airframes that day but holds no trace for this one. Parked with the transponder off, outside receiver coverage, and a wrong claimed date all look identical from here. AN… | Owens sheet via Kanekoa audit | [post](https://x.com/KanekoaTheGreat/status/2000701268806062358) | [open](/Planes/following/overlap/20250707_UT_provo_owens_037/overview) |
+| `OWENS-066` | 66 | **Inaccurate** | **Not heard** | SAYS ALMOST NOTHING. adsb-lol/airplanes-live served other airframes that day but holds no trace for this one. Parked with the transponder off, outside receiver coverage, and a wrong claimed date all look identical from here. AN… | Owens sheet via Kanekoa audit | [post](https://x.com/KanekoaTheGreat/status/2000701268806062358) | [open](/Planes/following/overlap/20250707_UT_provo_owens_066/overview) |
+| `OWENS-040` | 40 | **Accurate** | **At the claimed airport — corroborated** | CORROBORATED, AND ON THE GROUND. A trace we pulled and kept puts this airframe on the ground 0.2 km from KPVU on the claimed date. It places NOBODY aboard. | Owens sheet via Kanekoa audit (ACCURATE 9/3 and 9/4); overlap page 20250910_UT_orem | [post](https://x.com/KanekoaTheGreat/status/2000701268806062358) | [open](/Planes/following/overlap/20250904_UT_provo_owens_040/overview) |
+| `EXTRA-006` | — | **Accurate** | **At the claimed airport — corroborated** | CORROBORATED, AND ON THE GROUND. A trace we pulled and kept puts this airframe on the ground 1.3 km from KPVU on the claimed date. It places NOBODY aboard. | Owens Operation Mocking-Plane 17 Nov 2025; overlap page 20250910_UT_orem; SU-BND page | [post](https://www.youtube.com/watch?v=JQjCAsfoXEE) | [open](/Planes/following/overlap/20250910_UT_provo_extra_006/overview) |
+| `OWENS-041` | 41 | **Inaccurate** | **At the claimed airport — corroborated** | CORROBORATED, AND ON THE GROUND. A trace we pulled and kept puts this airframe on the ground 1.2 km from KPVU on the claimed date. It places NOBODY aboard. | Owens sheet via Kanekoa audit (substance confirmed, origin corrected); Brick Suit time-zone correction; overlap pages 20250910_UT_orem and 20250910_DE_wilmington | [post](https://x.com/Brick_Suit/status/1977228792868618560) | [open](/Planes/following/overlap/20250910_UTDE_provo_then_wilmington_owens_041/overview) |
+| `SITE-006` | — | **Accurate** | **At the claimed airport — corroborated** | CORROBORATED, AND ON THE GROUND. A trace we pulled and kept puts this airframe on the ground 1.2 km from KPVU on the claimed date. It places NOBODY aboard. | KMYU (10 a.m. courtyard listing); UVU pages on this site; Fox and ABC coverage 10 Sept 2025; Flightradar24 export; audit index 41 | — | [open](/Planes/following/overlap/20250910_UT_orem/overview) |
+| `OWENS-042` | 42 | **Accurate** | **At the claimed airport — corroborated** | CORROBORATED IN THE AIR, NOT ON THE GROUND. Closest recovered position is 0.6 km from KPVU at 3 ft above the field - an arrival, a departure or a low pass. This trace holds no on-ground positions at all, which is ordinary:… | Owens sheet via Kanekoa audit (ACCURATE) | [post](https://x.com/KanekoaTheGreat/status/2000701268806062358) | [open](/Planes/following/overlap/20250913_UT_provo_owens_042/overview) |
+
+## TABLE D — every logged ground presence in this state
+
+| Aircraft | Airport | City / State | Arrived | Departed | Days on ground | Confidence in the leg | Location page | What the record says |
+|---|---|---|---|---|---|---|---|---|
+| [SU-BGM](/Planes/SU-BGM/overview) | [KPVU](/Planes/following/Provo_KPVU_2024-04-19_to_2025-09-13/overview) | Provo, UT | UNKNOWN | 16 April 2025 | 0 | adsb_captured | [open](/Planes/following/Provo_KPVU_2024-04-19_to_2025-09-13/overview) | Arrival date not captured - the Flightradar24 history for this tail begins with a 0:55 Provo-Provo local flight on 10 Apr 2025, so the aircraft was already on the ramp by then. A local out-and-back is the classic post-maintenance test-flight profile. |
+| [SU-BND](/Planes/SU-BND/overview) | [KPVU](/Planes/following/Provo_KPVU_2024-04-19_to_2025-09-13/overview) | Provo, UT | 19 April 2024 | 12 July 2024 | 84 | audited_accurate | [open](/Planes/following/Provo_KPVU_2024-04-19_to_2025-09-13/overview) | ROUGHLY TWELVE WEEKS at Provo in 2024 - the 2024 precedent for the 113-day 2025 stay. Audit: 'No the plane didn't fly from Provo to Paris, then back to Salt Lake. Route was on 4/18 Cairo-Paris, 4/19 Paris to Goose Bay, Goose Bay to SLC, SLC to Provo. Then… |
+| [SU-BND](/Planes/SU-BND/overview) | [KPVU](/Planes/following/Provo_KPVU_2024-04-19_to_2025-09-13/overview) | Provo, UT | 23 May 2025 | 13 September 2025 | 113 | audited_accurate | [open](/Planes/following/Provo_KPVU_2024-04-19_to_2025-09-13/overview) | 113 CONTINUOUS DAYS on the Provo ramp - the longest published stay by any aircraft in this investigation, covering 10 September. Only local flights were flown during it: Provo-Provo on 10 Jun and a 1:08 Provo-Provo on 5 Sep. Audit: 'ACCURATE POSS BROKEN JET… |
+| [SU-BTT](/Planes/SU-BTT/overview) | [KPVU](/Planes/following/Provo_KPVU_2024-04-19_to_2025-09-13/overview) | Provo, UT | 1 April 2024 | UNKNOWN | 0 | disputed_unverified | [open](/Planes/following/Provo_KPVU_2024-04-19_to_2025-09-13/overview) | DISPUTED / UNVERIFIED. If true it undercuts the 'first US trip was 20 July 2025' framing. Kept as a flagged row rather than built on. NOTE: the audited 23 Apr 2024 Williston-Provo arrival is a separate, sourced event - see the Williston page. |
+| [SU-BTT](/Planes/SU-BTT/overview) | [KPVU](/Planes/following/Provo_KPVU_2024-04-19_to_2025-09-13/overview) | Provo, UT | 23 April 2024 | 28 April 2024 | 5 | audited_accurate | [open](/Planes/following/Provo_KPVU_2024-04-19_to_2025-09-13/overview) | Entered the US at WILLISTON, ND (XWA). Charlie Kirk was at the University of Utah, Salt Lake City, the same day for a 'Prove Me Wrong' event - the tightest sourced pre-2025 pairing. COUNTERARGUMENT: the Kirk-side event is UNCITED; no ticket page, venue… |
+| [SU-BTT](/Planes/SU-BTT/overview) | [KPVU](/Planes/following/Provo_KPVU_2024-04-19_to_2025-09-13/overview) | Provo, UT | 4 September 2025 | 10 September 2025 | 6 | audited_accurate | [open](/Planes/following/Provo_KPVU_2024-04-19_to_2025-09-13/overview) | THE SEPTEMBER WINDOW. Six days on the Provo ramp, departing the morning of the assassination. The audit marks the arrival accurate and the departure accurate while CORRECTING its stated origin from 'Paris' to Provo: 'PROVO, NOT PARIS, FOLLOWED BY WILMINGTON… |
+| [SU-BTU](/Planes/SU-BTU/overview) | [KPVU](/Planes/following/Provo_KPVU_2024-04-19_to_2025-09-13/overview) | Provo, UT | 8 April 2025 | 14 April 2025 | 6 | adsb_captured | [open](/Planes/following/Provo_KPVU_2024-04-19_to_2025-09-13/overview) | Six-day stay. Charlie Kirk was on the American Comeback Tour in Illinois, Indiana and Michigan across this window - not in Utah. No pairing claimed for these dates by anyone. |
+| [SU-BTV](/Planes/SU-BTV/overview) | [KPVU](/Planes/following/Provo_KPVU_2024-04-19_to_2025-09-13/overview) | Provo, UT | 27 May 2025 | 2 June 2025 | 6 | adsb_captured | [open](/Planes/following/Provo_KPVU_2024-04-19_to_2025-09-13/overview) | TAIL CORRECTION. The earlier version of this file attributed this stay to SU-BTU; the ADS-B history for SU-BTV shows Minot-Provo on 27 May and Provo-Wilmington on 2 Jun, and SU-BTV.mdx already carries it. The Walid Mahmoud passenger claim attached to this… |
+
+## TABLE E — the Kirk / TPUSA appearances in this state
+
+| Date | Who | Event | City / State | Venue | Local time | Nearest airport | Miles | Charlie present | Erika present | Event page |
+|---|---|---|---|---|---|---|---|---|---|---|
+| **2024-04-23** | Charlie | [Prove Me Wrong — University of Utah](/Planes/following/speaking/20240423_salt_lake_city) | Salt Lake City, UT | University of Utah | — | KSLC — Salt Lake City International | 5 | yes | not_documented | [open](/Planes/following/speaking/20240423_salt_lake_city) |
+| **2025-09-10** | Charlie | [The American Comeback Tour — UVU (first stop of the fall tour)](/Planes/following/speaking/20250910_orem) | Orem, UT | Utah Valley University, Sorensen Center courtyard | event ~10:00 MDT announced; shot at 12:23:30 PM MDT | KPVU — Provo Municipal Airport | 5 | yes | not_documented | [open](/Planes/following/speaking/20250910_orem) |
+| **2025-09-30** | TPUSA | [Turning Point Tour — Utah State University](/Planes/following/speaking/20250930_logan) | Logan, UT | Utah State University, Logan | 18:30 MT (KMYU) | KLGU — Logan-Cache Airport | 4 | no_deceased | unknown | [open](/Planes/following/speaking/20250930_logan) |
+
+## What the specifics show
+
+**Utah is where the aircraft side of this register is strongest, by a wide margin.** Ten of the
+fifteen rows are corroborated by recovered position data and **nine of those ten carry the on-ground
+flag** — the aircraft transmitting its own position from the surface, not passing overhead. The
+whole register holds only ten ground-flag rows; **nine of them are on this page**, and the tenth is
+`OWENS-013` at Wilmington on 20 April 2023. The distances are not marginal either: `OWENS-026` and
+`SITE-004` both measure **0.00 km** from KPVU on 23 April 2024, `OWENS-035` and `OWENS-065` both
+**0.03 km** on 23 May 2025, `OWENS-025` **0.05 km** on 19 April 2024, and `OWENS-040` **0.16 km** on
+4 September 2025. Not one Utah row is refuted, and not one falls in a window no free archive reaches.
+
+**The 10 September 2025 rows are the tightest aircraft-to-event pairing in the whole register, and
+they are also where the people column falls apart.** Three rows share that date — `EXTRA-006` at
+1.29 km, `OWENS-041` at 1.23 km and `SITE-006` at 1.23 km, all three with the ground flag set — and
+the same-day sourced appearance is Charlie Kirk at Utah Valley University in **Orem, five miles from
+KPVU**. That is as close as anything on this site gets. But read the Erika column on those same three
+rows: the sheet places her in "Nebraska / Delaware" while the register records that **Erika Kirk has
+reportedly said she stayed home in Arizona that day**. The register carries the disagreement on the
+row rather than choosing a side. On the strongest aircraft date in the file, the sheet's own claim
+about her is contradicted by her own reported account.
+
+**The other same-day pairing is 23 April 2024**, `OWENS-026` and `SITE-004`, both ground-confirmed at
+Provo, against Charlie Kirk sourced at a "Prove Me Wrong" event at the University of Utah in Salt
+Lake City. The register flags its own weakness there in the flight log: that Kirk-side event is
+recorded as **uncited**, with no ticket page or venue confirmation behind it. The pairing is
+published with that caveat attached, not without it.
+
+**The five Not-heard rows are where this state's list is thin, and two of them are the same claim
+twice.** `OWENS-016` (12 June 2023) is the first claimed Utah row and the audit places the aircraft
+in Egypt that day, noting that the sheet's Provo cluster starts a year early — this site's own Utah
+record begins April 2024. `OWENS-030` (8 December 2024) and `OWENS-064` (19 April 2025) return
+nothing. `OWENS-037` and `OWENS-066` are a duplicated pair on 7 July 2025, both claiming a
+Provo-to-Goose-Bay-to-Paris-to-Cairo departure; the register's flight log records SU-BND as sitting
+on the Provo ramp continuously from 23 May to 13 September 2025, so the sheet has the aircraft flying
+home on a day it did not move, and it has that error entered twice.
+
+**Table D is the part of this page that was never a claim to begin with, and it is the heart of the
+Utah question.** Eight logged ground presences, five different Egyptian-registered tails, all at
+Provo: **SU-BND for 84 days** (19 April to 12 July 2024) and then **113 continuous days** (23 May to
+13 September 2025, the longest published stay by any aircraft in this investigation, covering
+10 September); **SU-BTT** for 5 days in April 2024 and 6 days from 4 to 10 September 2025, departing
+the morning of the assassination; **SU-BTU** for 6 days in April 2025; **SU-BTV** for 6 days from 27
+May to 2 June 2025; and **SU-BGM** on the ramp until 16 April 2025 with its arrival date not
+captured. One of the eight, the SU-BTT stay dated from 1 April 2024, is marked
+**disputed and unverified** — a relayed month-only claim with no primary screenshot — and is flagged
+rather than built on.
+
+**And the counter-reading is on the same page, in the same table.** Duncan Aviation is on the Provo
+field, the register records its Egyptian Air Force account, and a **four-month stay is a
+maintenance-visit length, not a surveillance length**. The audit's own note on the 113-day stay reads
+"ACCURATE POSS BROKEN JET GROUNDED IN PROVO", with only two local Provo-to-Provo flights flown in the
+entire window — the classic post-maintenance test-flight profile. The SU-BGM entry opens the same way,
+with a 55-minute Provo-to-Provo local. The register also records that during SU-BTU's six days in
+April 2025 Charlie Kirk was touring Illinois, Indiana and Michigan, and that **no pairing is claimed
+by anyone for those dates**. Three of the five sourced Utah aircraft stays have no Kirk documented in
+the state at all.
+
+**The two verdict passes disagree on this state more than on most.** The audit called 8 rows accurate
+and 7 inaccurate; the position data corroborated 10 and refuted none. `OWENS-025` (19 April 2024,
+0.05 km with the ground flag set) and `OWENS-041` (10 September 2025, 1.23 km with the ground flag
+set) were both called **inaccurate** by the audit and are **corroborated** here. Both results stay on
+the row. And the final Utah row, `OWENS-042` on 13 September 2025 at 0.62 km, closes the September
+window for the blue plane — corroborated in the air, without a ground position.
+
+## What this list cannot tell you
+
+* **A trace locates an aircraft. It never places a person aboard.** The nine ground-flag rows on this
+  page are the strongest evidence class this investigation has, and they establish that an
+  Egyptian-registered jet was physically on the Provo ramp. They establish nothing whatsoever about
+  who was inside it, on 10 September 2025 or on any other date here.
+* **Erika Kirk's presence is not established on any of these 15 rows**, and it is established on
+  [zero rows anywhere in the register](/Planes/following/cuts/erika-established-0). Her flight logs
+  are [reported erased](/Planes/Erika-Flight-Logs-Erased) and no dated itinerary was ever published,
+  so the *Erika Location* column is the compilers' claim rather than a source for it. On the three
+  10 September rows that claim reads "Nebraska / Delaware" and is contradicted by her own reported
+  statement that she was in Arizona — printed here because it weakens the register's own strongest
+  date.
+* **Charlie Kirk's presence in Utah on 10 September 2025 is sourced independently of this
+  register**, from the Utah Valley University event. What no page can supply is a link between a man
+  standing in a courtyard in Orem and a jet parked five miles away. Proximity is not connection.
+* **The five Not-heard rows are archive limits, not deletions.** *Not heard* means the volunteer
+  archives covered those dates and served other airframes on them while holding no trace for this
+  one. Parked with the transponder off, outside receiver coverage, and a wrong claimed date all look
+  identical from outside. None of the five is evidence of absence and none is evidence of
+  suppression.
+* **The maintenance explanation is not disposed of by anything on this page.** Duncan Aviation
+  Provo is on the field; the stays are of maintenance length; the flights inside them are local
+  out-and-backs. That is the ordinary reading of five foreign-registered aircraft rotating through
+  one regional field, and it is published here as prominently as the pairing.
+* **One Table D row is disputed and one Table E pairing is uncited.** The 1 April 2024 SU-BTT entry
+  is a relayed month-only claim with no primary source, and the 23 April 2024 University of Utah
+  event carries no ticket page or venue confirmation. Both are flagged on their own rows and neither
+  should be leaned on.
+* **No crime is asserted against anyone.** The sheet is the compilers'; the audit verdicts are the
+  auditor's; the ADS-B verdicts are this investigation's, measured off raw traces; the reported
+  Arizona statement is attributed to Erika Kirk's own account as the register records it.
+* **On the count.** The overview prints Utah as **15 rows** and the data behind this page returns the
+  same 15, so there is nothing to reconcile for this cell. Note separately that the tracking-site
+  audit worked from a **78-row** version of the register while this register holds **85**; where an
+  audit percentage and a register count appear to disagree, that is usually why.
+
+## Related
+
+* [The Following overview](/Planes/following/overview) — the geographic table this cell sits in
+* [The overlap index](/Planes/following/overlap/overview) — every row as its own page
+* [The speaking-events catalog](/Planes/following/speaking/overview) — the sourced Kirk and TPUSA appearances
+* [The Provo KPVU location page](/Planes/following/Provo_KPVU_2024-04-19_to_2025-09-13/overview) — the field itself, stay by stay
+* [The ten ground-position confirmations](/Planes/following/cuts/ground-confirmed-10) — nine of the ten are Utah rows
+* [Rows that land on a day this site independently sources a Kirk or TPUSA appearance](/Planes/following/cuts/same-day-sourced-event-10) — that cut applies the stricter shared-field test and takes four of these Utah rows (`SITE-004`, `EXTRA-006`, `OWENS-041`, `SITE-006`) out of the five counted above
+* [The nine rows claiming both Kirks together](/Planes/following/cuts/charlie-and-erika-9) — six of the nine are Utah rows
+* [Nebraska — every overlap, every landing, every event](/Planes/following/cuts/state-nebraska)
+* [Kansas — every overlap, every landing, every event](/Planes/following/cuts/state-kansas)
+* [Missouri — every overlap, every landing, every event](/Planes/following/cuts/state-missouri)
+* [Delaware — every overlap, every landing, every event](/Planes/following/cuts/state-delaware)
+* [Erika Kirk's flight logs, reported erased](/Planes/Erika-Flight-Logs-Erased)
+* Aircraft pages: [SU-BND](/Planes/SU-BND/overview) · [SU-BTT](/Planes/SU-BTT/overview) · [SU-BTU](/Planes/SU-BTU/overview) · [SU-BTV](/Planes/SU-BTV/overview) · [SU-BGM](/Planes/SU-BGM/overview)
