@@ -1,0 +1,132 @@
+{
+ "al_only_rows": 182,
+ "by_classification": {
+  "ADSB_LOL_ARCHIVE_ABSENT_THAT_DAY": 11,
+  "ARCHIVE_COVERAGE_GAP_WHOLE_DAY": 20,
+  "ONE_ARCHIVE_ONLY": 60,
+  "RETENTION_SERVING_BOUNDARY": 91
+ },
+ "by_class_and_group": {
+  "ADSB_LOL_ARCHIVE_ABSENT_THAT_DAY|CONTROL_AIRLINER": 3,
+  "ARCHIVE_COVERAGE_GAP_WHOLE_DAY|CONTROL_AIRLINER": 4,
+  "ONE_ARCHIVE_ONLY|CONTROL_AIRLINER": 3,
+  "RETENTION_SERVING_BOUNDARY|CONTROL_AIRLINER": 3,
+  "ARCHIVE_COVERAGE_GAP_WHOLE_DAY|US_PRIVATE": 6,
+  "ADSB_LOL_ARCHIVE_ABSENT_THAT_DAY|US_PRIVATE": 7,
+  "ONE_ARCHIVE_ONLY|US_PRIVATE": 17,
+  "RETENTION_SERVING_BOUNDARY|US_PRIVATE": 53,
+  "ONE_ARCHIVE_ONLY|EGYPT_SU": 35,
+  "RETENTION_SERVING_BOUNDARY|EGYPT_SU": 20,
+  "ARCHIVE_COVERAGE_GAP_WHOLE_DAY|EGYPT_SU": 8,
+  "ADSB_LOL_ARCHIVE_ABSENT_THAT_DAY|EGYPT_SU": 1,
+  "ARCHIVE_COVERAGE_GAP_WHOLE_DAY|T7_ELL": 2,
+  "ONE_ARCHIVE_ONLY|T7_ELL": 5,
+  "RETENTION_SERVING_BOUNDARY|T7_ELL": 15
+ },
+ "rate_by_group_and_region": {
+  "CONTROL_AIRLINER|AFRICA": {
+   "al_only": 0,
+   "both": 1,
+   "rate": 0.0
+  },
+  "CONTROL_AIRLINER|EUROPE": {
+   "al_only": 10,
+   "both": 388,
+   "rate": 0.0251
+  },
+  "EGYPT_SU|EUROPE": {
+   "al_only": 4,
+   "both": 81,
+   "rate": 0.0471
+  },
+  "EGYPT_SU|MIDEAST_EGYPT": {
+   "al_only": 37,
+   "both": 162,
+   "rate": 0.1859
+  },
+  "EGYPT_SU|OTHER": {
+   "al_only": 0,
+   "both": 3,
+   "rate": 0.0
+  },
+  "EGYPT_SU|USA": {
+   "al_only": 3,
+   "both": 64,
+   "rate": 0.0448
+  },
+  "T7_ELL|AFRICA": {
+   "al_only": 2,
+   "both": 2,
+   "rate": 0.5
+  },
+  "T7_ELL|EUROPE": {
+   "al_only": 2,
+   "both": 38,
+   "rate": 0.05
+  },
+  "T7_ELL|MIDEAST_EGYPT": {
+   "al_only": 0,
+   "both": 33,
+   "rate": 0.0
+  },
+  "T7_ELL|OTHER": {
+   "al_only": 3,
+   "both": 8,
+   "rate": 0.2727
+  },
+  "T7_ELL|USA": {
+   "al_only": 0,
+   "both": 14,
+   "rate": 0.0
+  },
+  "US_PRIVATE|EUROPE": {
+   "al_only": 0,
+   "both": 3,
+   "rate": 0.0
+  },
+  "US_PRIVATE|OTHER": {
+   "al_only": 4,
+   "both": 12,
+   "rate": 0.25
+  },
+  "US_PRIVATE|USA": {
+   "al_only": 26,
+   "both": 883,
+   "rate": 0.0286
+  }
+ },
+ "median_al_trace_points": {
+  "CONTROL_AIRLINER|ALONLY": {
+   "n": 10,
+   "median": 1626.5
+  },
+  "CONTROL_AIRLINER|BOTH": {
+   "n": 389,
+   "median": 3024
+  },
+  "EGYPT_SU|ALONLY": {
+   "n": 44,
+   "median": 30.5
+  },
+  "EGYPT_SU|BOTH": {
+   "n": 310,
+   "median": 194.0
+  },
+  "T7_ELL|ALONLY": {
+   "n": 7,
+   "median": 371
+  },
+  "T7_ELL|BOTH": {
+   "n": 95,
+   "median": 784
+  },
+  "US_PRIVATE|ALONLY": {
+   "n": 30,
+   "median": 332.5
+  },
+  "US_PRIVATE|BOTH": {
+   "n": 898,
+   "median": 1066.0
+  }
+ }
+}

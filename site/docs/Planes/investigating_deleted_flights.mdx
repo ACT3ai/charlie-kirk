@@ -1,0 +1,584 @@
+---
+title: "Investigating Deleted Flights — Status, Coverage, and What We Recovered"
+sidebar_label: "Investigating Deleted Flights"
+description: "Working status of the effort to recover flight records that went missing from the public trackers: what percentage of the data we now hold, which lane produced it, what we found, and what is still gone."
+---
+
+# Investigating Deleted Flights
+
+**Status file. Updated 2026-08-28.** This is the working record of one effort:
+going back through the enormous volume of flight data already downloaded to this
+repository, and finding out how much of the erased record we actually got back.
+
+It is not a summary of the case. It is a **coverage and progress report**, written
+so that the next person can see exactly what was asked, what came back, what did
+not, and which claims the data can and cannot carry.
+
+---
+
+## 1. The one-paragraph answer
+
+**Three different answers, and all three are true of different questions.**
+
+* **The foreign fleet's per-tail percentage did not move: still 8.95%.** Every
+  event-window day for every Egyptian tail has now been put to every free
+  archive that exists. That number is maxed out against free sources.
+* **The geographic percentage went from nothing to 71.9%** — 82.7% / 98.0% /
+  92.2% for 2023 / 2024 / 2025 — by asking *what was there* instead of *where
+  was this tail*.
+* **Three aircraft gained coverage today from data already on disk.** 111
+  aircraft-days had been downloaded by the geographic sweep and never filed
+  under the aircraft they belong to. Filing them raised **N1098L from 4.68% to
+  19.28%**, **N2100L from 2.75% to 15.15%** and **N59906 from 3.31% to 6.89%**
+  in the event window — no network call, just data we already had in the wrong
+  place. See §2.5.
+
+Asking *"where was SU-BTT on this date"* still returns a trace only **8.95%** of
+the time across the event windows that matter. Every one of those days has now
+been asked of every free archive that exists, so that number is not going to
+improve without a paid credential. But the investigation stopped depending on
+that question. A second lane — streaming a whole day of the open archive and
+filtering it by **geography instead of by tail number** — now covers **71.9% of
+the event-window days**, and **82.7% / 98.0% / 92.2%** for 2023 / 2024 / 2025.
+That lane does not need to know a tail number in advance, which means it can
+answer *"was anything foreign on the ground near this event"* on days where the
+per-tail lane is blank.
+
+**2022 remains at zero.** No free archive covers it.
+
+---
+
+## 2. What percentage of the data do we have now?
+
+A percentage is meaningless without naming the denominator, so here are four,
+because four different questions get asked and quoting the wrong one is how
+"9%" and "72%" end up both being true statements about the same investigation.
+
+### D1 — Calendar coverage
+*Of every UTC day from 1 Jan 2022 to 31 Dec 2025, how many do we hold a trace for?*
+
+| Fleet | Aircraft-days held | Of | Coverage |
+|---|---:|---:|---:|
+| Foreign fleet (SU-BTT, SU-BND, SU-BTU, SU-BTV, SU-BGM, T7-ELL) | 509 | 8,766 | **5.81%** |
+| US / Kirk-associated fleet (10 tails) | 1,223 | 14,610 | **8.37%** |
+| Control airliners (Lufthansa, Ryanair) | 404 | 2,922 | **13.83%** |
+
+This is the honest ceiling on *"do we know where this plane was"*. It is low
+because a business jet parked with its transponder off is invisible to a
+volunteer receiver network, and because the archives themselves are incomplete.
+
+### D2 — Asked-hit rate
+*Of the aircraft-days we actually queried an archive about, how many came back?*
+
+| Fleet | Asked | Hit rate |
+|---|---:|---:|
+| Foreign fleet | 5,870 | **8.67%** |
+| US fleet | 3,484 | **31.92%** |
+| Control airliners | 516 | **78.29%** |
+
+The control line is the important one and it is a **warning, not a finding**. A
+scheduled airliner over Europe is heard by everybody; a private jet is not. The
+gap between 78% and 9% is mostly *what kind of aircraft this is*, not *who is
+hiding it*. Both controls are airliners, which makes them a weak control for a
+private jet — that limitation is stated here rather than hidden.
+
+### D3 — Event-window coverage (the number that matters)
+*Restricted to the 363 UTC days that are a sourced Charlie / Erika / TPUSA event
+date ±1 day.*
+
+| Fleet | Held | Of | Coverage | Never asked |
+|---|---:|---:|---:|---:|
+| Foreign fleet | 195 | 2,178 | **8.95%** | **0** |
+| US / Kirk-associated fleet | 805 | 3,630 | **22.18%** | 1,302 |
+| Control airliners | 149 | 726 | 20.52% | 530 |
+
+**Zero never-asked for the foreign fleet.** Every event-window day for every
+Egyptian-registered aircraft and T7-ELL has been put to every free archive that
+exists. The 91% that is blank is not un-attempted work; it is **archives that
+were asked and had nothing**. Those two states are recorded separately on disk
+(`.miss.json.meta.json` files) and must never be merged.
+
+### D3 by year — the foreign fleet, the fleet the claim is about
+
+| Year | Window days | Fleet-days needed | Held | Coverage |
+|---|---:|---:|---:|---:|
+| 2022 | 78 | 468 | 2 | **0.43%** |
+| 2023 | 81 | 486 | 45 | **9.26%** |
+| 2024 | 101 | 606 | 67 | **11.06%** |
+| 2025 | 103 | 618 | 81 | **13.11%** |
+
+2022 is the year the following claim *starts*, and it is the year we have almost
+nothing for. Two aircraft-days out of 468.
+
+### D4 — Geographic-sweep coverage: **this is where the number went up**
+*The lane that needs no tail number. It streams an entire UTC day of the open
+archive — 74,000 to 95,000 aircraft — and filters by a 50-mile circle on the
+event city.*
+
+| Year | Window days swept | Of | Coverage |
+|---|---:|---:|---:|
+| 2022 | 0 | 78 | **0.00%** |
+| 2023 | 67 | 81 | **82.72%** |
+| 2024 | 99 | 101 | **98.02%** |
+| 2025 | 95 | 103 | **92.23%** |
+| **All years** | **261** | **363** | **71.90%** |
+
+278 day-directories are on disk: **233 fully swept, 28 truncated, 9 with no
+release published for that date, 8 unresolved on probe.** 1,772,543
+aircraft-circle rows were scanned.
+
+**So: have we increased the percentage?** For the question *"was a foreign jet
+on the ground near this event"* — yes, from near-zero to **72%**, and to
+**92–98% for 2024 and 2025**. For the question *"where was this specific tail on
+this specific day"* — no, it is still **~9%**, and it is now provably maxed out
+against free sources.
+
+### 2.5 The one increase that came from data we already had
+
+The geographic sweep keeps the **full trace of any tracked tail it meets**, as a
+by-product of asking a geographic question. Those traces were written to
+`data/geo_sweep/<date>/traces/<hex>.json.gz` — filed under the **date**, because
+that is how a sweep works — and the per-aircraft lane, which looks under the
+**tail**, never saw them. **111 aircraft-days of already-downloaded evidence were
+sitting in the repository uncounted.**
+
+`ingest_sweep_traces.py` files them where the per-tail lane can read them. It
+copies rather than moves, so the sweep artifact stays intact; it refuses to
+shadow a day the per-tail lane already holds, because a trace fetched *for* an
+aircraft is the better artifact than one harvested in passing; and it writes the
+same `.meta.json` shape every other client writes, with source key
+`adsblol-github-backup`, so the provenance is exactly as auditable.
+
+| Aircraft | Event-window coverage before | After | Days added |
+|---|---:|---:|---:|
+| **N1098L** | 4.68% | **19.28%** | 53 |
+| **N2100L** | 2.75% | **15.15%** | 45 |
+| **N59906** | 3.31% | **6.89%** | 13 |
+| US fleet total | 19.12% | **22.18%** | 111 |
+
+Those three tails are the LASAI Aviation / survey-aircraft thread, and they were
+the *worst-covered* aircraft in the whole investigation. They are now
+mid-ranking. **The foreign fleet gained nothing from this pass** — every sweep
+trace for an Egyptian tail had already been pulled directly by the per-tail lane,
+which is itself a useful confirmation that the two lanes agree.
+
+The lesson generalises: **before concluding that data is missing, check whether it
+is merely filed under a different key.** A sweep indexes by date, a per-tail pull
+indexes by tail, and the join between them is not automatic.
+
+---
+
+## 3. Is the data local, and where did it come from?
+
+All of it is local, under `site/docs/Planes/`. Nothing in the numbers above
+depends on a live network call. The source is recorded in every filename and in
+a `.meta.json` beside every payload, carrying the exact URL, the HTTP status,
+the byte count, and the UTC retrieval time.
+
+### Open source versus proprietary — the answer is stark
+
+| Lane | Aircraft-days held | Share |
+|---|---:|---:|
+| **Open source, free, no account** | **2,235** | **100%** |
+| Proprietary / paid | **0** | **0%** |
+
+**Every single trace in this investigation came from a free, open, no-account
+archive.** No proprietary API contributed one aircraft-day.
+
+Broken down by individual open source:
+
+| Source | Aircraft-days | Share of held | Days where it is the **only** source |
+|---|---:|---:|---:|
+| **globe.airplanes.live** | 2,072 | 88.32% | **371** |
+| adsb.lol | 1,702 | 72.55% | 10 |
+| ADS-B Exchange free monthly samples | 207 | 8.82% | **153** |
+| **adsb.lol GitHub Release backup** | 113 | 4.82% | **111** |
+
+Total aircraft-days held: **2,346**.
+
+Two lines carry the whole recovery story:
+
+* **airplanes.live is the single biggest win — 371 aircraft-days exist nowhere
+  else on disk.** It is an independent volunteer network running the same
+  `tar1090`/`readsb` URL shape, and it was found by swapping the hostname on a
+  URL that already worked. It typically holds 5–10× more data for the same
+  aircraft-day than adsb.lol.
+* **ADS-B Exchange's free monthly sample is the only free route into 2022 — 153
+  aircraft-days exist nowhere else.** It publishes one whole day per month, the
+  1st, back to July 2016. One day in thirty can never test a claim about a
+  specific mid-month date, which is exactly why 2022 sits at 0.43%.
+
+The geographic sweep on top of these ran against **adsb.lol's GitHub Release
+backup** — the same operator's entire archive, mirrored one release per UTC day
+under the Open Database Licence, including every date the live API refuses.
+
+### The page-archive lane, counted in pages not aircraft-days
+
+| Source | Captures held |
+|---|---:|
+| Internet Archive → FlightAware | 28 |
+| Internet Archive → Flightradar24 | 22 |
+| FlightAware activity log | 16 |
+| **Total** | **66** |
+
+A web-page snapshot is dated by when the crawler visited, not by when an
+aircraft flew, so it cannot enter any denominator above. It is the only lane
+that can document a **page-level** removal — what a tracking site *said* and no
+longer says — and the only lane that reaches back before 2022.
+
+### Proprietary lanes: not blocked by policy, blocked by a missing key
+
+FlightRadar24's API, FlightAware AeroAPI, ADS-B Exchange's historical API and
+OpenSky's OAuth endpoint all returned **nothing, because no credential is held
+for any of them**. That is itself a publishable fact rather than a failure to
+hide: the credential slots exist in `~/.credentials/charlie_kirk.json`, an empty
+string means "not held", and the client reports `BLOCKED on credential` by name
+without ever printing a value. **This is the single cheapest remaining way to
+raise the per-tail percentage, and it is the one step a human has to take.**
+
+---
+
+## 4. What we found
+
+### 4.1 The finding that matters most
+
+A **blind geographic sweep** — one that does not know a tail number and cannot
+be steered toward a wanted answer — was run across **187 sourced event-days** and
+**1,772,543 aircraft-circle rows**. It asked one question: *which
+foreign-registered, unregistered, military, or blocked aircraft were **on the
+ground** inside a 50-mile circle of a city where Charlie Kirk, Erika Kirk, or
+TPUSA had a sourced event, on the event date ±1 day?*
+
+Egyptian-registered aircraft come back **exactly three times**:
+
+| Sweep date | Tail | Type | Field | Distance to field | Event city | Offset |
+|---|---|---|---|---:|---|---|
+| 2025-09-09 | **SU-BND** | Gulfstream IV | **KPVU Provo** | 0.8 mi | Orem, UT | day −1 |
+| 2025-09-10 | **SU-BND** | Gulfstream IV | **KPVU Provo** | 0.8 mi | Orem, UT | **day 0** |
+| 2025-09-10 | **SU-BTT** | Falcon 7X | **KPVU Provo** | 0.8 mi | Orem, UT | **day 0** |
+
+Both readings have to be published together, and neither is allowed to bury the
+other:
+
+* **It independently confirms the single most important claim in the case.** Two
+  Egyptian-registered jets were on the ground at Provo Municipal — 4.9 miles from
+  Orem — the day before and the day of the assassination. This was found by
+  geography, in an archive mirror, without being told what to look for.
+* **It does not reproduce a "73 times" pattern anywhere in the swept range.** In
+  261 usefully swept UTC days covering 72% of the event windows, and 92–98% of
+  2024 and 2025, no other Egyptian-registered aircraft is on the ground near any
+  other sourced event. That is a real result and it points the other way.
+
+The honest scope: the sweep covers **0% of 2022**, is US-only, and cannot speak
+to overseas overlaps at all. It also proves **presence, never purpose and never
+occupancy** — no trace places any person aboard any aircraft.
+
+### 4.2 The control test caught something
+
+The same sweep runs six control cities with no known Kirk or TPUSA event, on the
+same days, in the same run. SU-BTT and SU-BTU both turn up over **Des Moines** —
+but at **24,000 to 41,000 feet**, in transit, never on the ground. SU-BTT is over
+Des Moines at 41,000 ft on 10 September 2025, the same day it is parked at Provo.
+
+**That distinction is the finding.** An aircraft inside a 50-mile circle is not
+an aircraft *at* a place. Any tally that counts circle entries rather than ground
+presence will inflate, and this is the mechanism by which it inflates.
+
+### 4.3 What was recovered that one archive no longer serves
+
+The recovery ledger holds **10,104 (tail, UTC day) rows**:
+
+| Verdict | Rows |
+|---|---:|
+| Both archives have it | 1,692 |
+| **Only on airplanes.live** | **182** |
+| Only on adsb.lol | 10 |
+| Held by airplanes.live alone (no paired ask) | 191 |
+| Held by ADS-B Exchange samples alone | 153 |
+| Asked of both, **neither has it** | 7,869 |
+
+**318 aircraft-days were recovered from inside the window where adsb.lol serves
+nothing at all** (2025-10-12 onward) — 281 from airplanes.live, 29 from ADS-B
+Exchange's free samples, 7 from both, 1 from the GitHub backup. **210 of them
+are in 2026, where adsb.lol returns HTTP 404 for every date.** 41 of the 318 are
+the Egyptian fleet plus T7-ELL. That is real recovery: nobody working only from
+adsb.lol has any of it. It is also, unambiguously, a **retention boundary and
+not suppression** — the same archive refuses those dates for the control
+airliners too.
+
+Of the **182 aircraft-days that exist on airplanes.live and not on adsb.lol**:
+
+* **88 fall inside adsb.lol's known 403 band** (2025-10-12 onward), which that
+  archive returns for *every* aircraft including both control airliners. That is
+  a **retention boundary — an archive fact, not suppression.**
+* **81 fall outside the band on case aircraft.**
+* **10 fall outside the band on the control airliners** — the background rate.
+  Any reading of the 81 has to be net of this.
+
+Per-tail, the "airplanes.live only" rate is 2.5% and 4.0% for the two controls
+and 9.6% to 72.4% for the case aircraft. **That gap is not evidence of deletion.**
+Both controls are scheduled airliners in dense European receiver coverage and are
+the wrong shape of control for a private jet. A private-jet-versus-private-jet
+comparison inside the fleet is the right test and is part of the work in flight.
+
+### 4.4 Proximity — every tracked aircraft near Charlie or Erika
+
+4,214 airport ground visits were extracted from the recovered traces and joined
+to every sourced event. **137 put a tracked aircraft on the ground within 50
+miles of a sourced event city, same day or ±1 day. 60 of those are same-day.**
+
+Split by fleet, because the split is the whole point:
+
+| Tail | Proximity hits | Reading |
+|---|---:|---|
+| N582MM | 82 | US private jet — proximity is **expected**, not a finding |
+| N560TW | 19 | US private jet — Scottsdale home base |
+| N872RA | 15 | US private jet |
+| N102DZ | 6 | US private jet |
+| N888KG, N40JD | 4 each | US private jet |
+| N59906 | 2 | US private jet |
+| **SU-BND** | **3** | **Foreign — Provo, 2024-04 and 2025-09-09/10** |
+| **SU-BTT** | **2** | **Foreign — Provo, 2024-04-23 and 2025-09-10** |
+
+Several of the N-tails are Kirk- or TPUSA-associated aircraft. **An aircraft that
+carries the man showing up where the man is, is not surveillance.** Those 82 rows
+are a data-quality check on the method, not evidence of anything.
+
+### 4.5 The naive ratio does not survive normalisation — and the honest number is better
+
+The first thing the sweep appears to say is that event circles hold **5.81×** more
+notable aircraft per circle-day than control circles — 49.61 against 8.54. **That
+number is worthless and publishing it alone would have been a mistake.**
+
+The event circles are wherever Charlie Kirk spoke: Phoenix, Dallas, Las Vegas,
+Los Angeles, West Palm Beach. The controls are Des Moines, Chattanooga, Spokane,
+Albuquerque, Syracuse, Shreveport. Phoenix Sky Harbor moves an order of magnitude
+more business aviation than Shreveport. A per-circle-day comparison between those
+two sets measures **airport size**, not surveillance.
+
+Three normalisations were run. All are reported.
+
+**N1 — per aircraft on the ground.** Divide out airport size by asking what
+*fraction* of the aircraft on the ground were notable.
+
+| Circle kind | On ground | Notable | Notable % | Foreign % | Military % | Unregistered % |
+|---|---:|---:|---:|---:|---:|---:|
+| Event | 153,613 | 17,266 | **11.24%** | 1.02% | 0.83% | 1.77% |
+| Control | 51,006 | 6,727 | **13.19%** | 0.54% | 3.96% | 0.27% |
+
+**Event:control ratio = 0.85×.** Event circles hold a *lower* share of notable
+aircraft than the controls. The 5.81× was airport size and nothing else.
+
+**N2 — size-matched.** Bucket every circle-day by how busy it was, then compare
+inside each bucket.
+
+| Aircraft on ground | Event days | Event notable % | Control days | Control notable % | Ratio |
+|---|---:|---:|---:|---:|---:|
+| 1–5 | 40 | 15.53% | 308 | 19.57% | 0.79 |
+| 6–20 | 31 | 18.98% | 72 | 21.96% | 0.86 |
+| 21–50 | 26 | 15.42% | 14 | 13.46% | 1.15 |
+| 51–150 | 37 | 16.51% | 312 | 12.06% | 1.37 |
+| 151–400 | 70 | 14.83% | 82 | 15.04% | 0.99 |
+| 400+ | 144 | 10.57% | 0 | — | — |
+
+Flat, in every bucket that has both. **No aggregate excess of foreign,
+unregistered, military or blocked aircraft near Charlie Kirk's events survives a
+size-matched control.**
+
+**N3 — the rate the claim is actually about.** "Foreign-registered" has thousands
+of members and is dominated by Canadian and Mexican business jets. The claim is
+about **Egyptian** registrations, and there are a handful.
+
+| Sweep date | Registration | Type | Field | Circle | What it is |
+|---|---|---|---|---|---|
+| 2023-03-22 | SU-GDN | Boeing 777-300ER | KJFK | New Brunswick, NJ | **EgyptAir scheduled service** |
+| 2025-01-21 | SU-GET | Boeing 787-9 | KIAD | Washington, DC | **EgyptAir scheduled service** |
+| **2025-09-09** | **SU-BND** | **Gulfstream IV** | **KPVU Provo** | **Orem, UT** | **the claim** |
+| **2025-09-10** | **SU-BND** | **Gulfstream IV** | **KPVU Provo** | **Orem, UT** | **the claim** |
+| **2025-09-10** | **SU-BTT** | **Falcon 7X** | **KPVU Provo** | **Orem, UT** | **the claim** |
+
+**In control circles: zero.**
+
+Strip the two EgyptAir widebodies on scheduled airline service and the entire
+swept record — 261 UTC days, 348 event circle-days, 153,613 aircraft on the
+ground — contains **exactly three Egyptian-registered business-jet ground
+presences inside a Kirk/TPUSA event circle, and all three are Provo on 9 and 10
+September 2025.**
+
+That is the strongest and the most limiting sentence this investigation can
+currently write. It is very hard to explain away, and it is also very far from
+"73 times".
+
+### 4.6 The Provo record, in full
+
+Every ground presence by the foreign fleet at Provo Municipal that the recovered
+traces hold — 30 visits, both archives agreeing except where noted:
+
+| UTC date | Tail | km from field | Ground points | Window (UTC) | Archives |
+|---|---|---:|---:|---|---|
+| 2024-04-19 | SU-BND | 1.03 | 23 | 21:33–21:36 | both |
+| 2024-04-23 | SU-BTT | 0.58 | 53 | 18:12–18:18 | both |
+| 2024-04-28 | SU-BTT | 1.52 | 3 | 13:52–13:54 | both |
+| 2024-07-17 | SU-BND | 1.51 | 16 | 15:49–15:53 | both |
+| 2025-04-08 | SU-BTU | 0.95 | 7 | 18:32–18:33 | both |
+| 2025-04-10 | SU-BGM | 1.44 / 0.38 | 41 + 63 | 21:13–22:16 | both |
+| 2025-04-14 | SU-BTU | 1.25 | 16 | 12:00–12:02 | both |
+| 2025-04-16 | SU-BGM | 1.41 | 69 | 18:09–18:14 | both |
+| 2025-05-23 | SU-BND | 1.13 | 141 | 20:38–20:46 | both |
+| **2025-09-04** | **SU-BTT** | 1.04 | 141 | 18:45–18:54 | both |
+| **2025-09-05** | **SU-BND** | 1.51 / 0.89 / 1.29 | 2 + 73 + 148 | 18:05–23:49 | both |
+| **2025-09-06** | **SU-BND** | 1.29 | 140 | 19:18–20:02 | both |
+| **2025-09-07** | **SU-BND** | 1.29 | 206 | 16:31–18:13 | both |
+| **2025-09-08** | **SU-BND** | 1.29 | 182 | 18:49–20:08 | both |
+| **2025-09-09** | **SU-BND** | 1.29 | 131 | 20:03–20:38 | both |
+| **2025-09-10** | **SU-BND** | 1.29 | 100 + 156 | 16:05–20:29 | both |
+| **2025-09-10** | **SU-BTT** | 1.36 | 58 | 13:07–13:13 | both |
+| **2025-09-12** | **SU-BND** | 1.29 | 226 + 34 + 300 | 13:37–22:17 | both |
+| 2026-05-13 | SU-BND | 1.27 | 42 | 23:12–23:59 | **airplanes.live only** |
+| 2026-05-14 | SU-BND | 1.28 | 1 | 00:00 | **airplanes.live only** |
+| 2026-05-20 | SU-BND | 1.11 | 1,019 | 13:46–18:14 | **airplanes.live only** |
+| 2026-06-02 | SU-BND | 1.51 / 0.92 | 9 + 160 | 17:04–18:23 | **airplanes.live only** |
+| 2026-06-04 | SU-BND | 1.05 | 168 | 21:16–22:12 | **airplanes.live only** |
+
+Three things fall out of this table and each has to be said plainly.
+
+* **SU-BND sat at Provo continuously from 5 to 12 September 2025.** Every fix
+  from 6 to 12 September is at the *same* distance from the field reference
+  point — **1.29 km, unchanged across eight days.** The aircraft did not move.
+  It was parked there before Charlie Kirk arrived and it was still parked there
+  two days after he was killed.
+* **SU-BTT's Provo presence on 10 September lasted about five minutes of
+  transmission and it left.** 13:07:53 to 13:13:16 UTC, then airborne — 07:07 to
+  07:14 Mountain, roughly five hours before the shooting.
+* **SU-BND was back at Provo in May and June 2026** — and those five days exist
+  **only** on airplanes.live, because adsb.lol serves nothing for any date in
+  2026. Without the second archive this investigation would not know the aircraft
+  returned at all.
+
+None of this establishes purpose or occupancy. A parked airframe is a parked
+airframe. **No archive anywhere produces a passenger manifest, and none of these
+traces places any person aboard any aircraft.**
+
+### 4.7 An open question on the site, answered by the sweep
+
+The [N708JH page](/Planes/N708JH/overview) — a 2019 Gulfstream G550 registered
+directly to the **United States Government, Department of Justice** — carries an
+open question it could not answer: *"Did N708JH operate into Utah at any point in
+September 2025?"*
+
+The geographic sweep answers it. **Yes.**
+
+| Sweep date | Field | Distance | Ground fixes | Window (UTC) | Circle |
+|---|---|---:|---:|---|---|
+| 2025-09-11 | **KPVU Provo** | **0.0 mi** | 565 | 15:21–17:37 | Orem, UT — day +1 |
+| 2025-09-21 | KSDL Scottsdale | 0.1 mi | 304 | 18:58–19:09 | Glendale, AZ — day 0 |
+| 2025-09-22 | KSDL Scottsdale | 0.3 mi | 240 | 00:16–00:29 | Glendale, AZ — day +1 |
+| 2023-10-03 | KSJC San Jose | 0.3 mi | 146 | 20:18–20:32 | San Jose, CA — day +1 |
+
+The DOJ Gulfstream was on the ground at Provo Municipal **the day after the
+assassination**, and at Scottsdale on the day of and the day after the **21
+September memorial at State Farm Stadium in Glendale**.
+
+**The ordinary explanation fits this completely.** A federal aircraft arriving at
+the scene of a federal investigation the day after, and at a national memorial
+service, is what that aircraft is for. It is recorded here because the site asked
+the question in public and the data on disk answers it — and because the same
+sweep row shows N708JH on the ground at **Albuquerque, a control city, on the
+same 2023-10-03 day it was at San Jose.** This aircraft goes everywhere. That is
+the correct frame for it.
+
+---
+
+## 5. What worked, and what did not
+
+### Worked
+
+* **Swapping the hostname on a working URL.** Most community ADS-B networks run
+  `tar1090`/`readsb`, so one URL shape works across all of them. That single move
+  found globe.airplanes.live and 371 aircraft-days that exist nowhere else.
+* **Going to the operator's own off-site mirror.** adsb.lol publishes its entire
+  archive to GitHub Releases, one release per UTC day, ODbL. Every date the live
+  API refuses is there in full. Stream and filter it — do not store 3 GB per day.
+* **Asking by geography instead of by tail.** This is the change that moved the
+  percentage from 9% to 72%. Every per-tail client can only ever find an aircraft
+  somebody already named.
+* **Running the control in the same pass.** Not afterwards, not as a check — in
+  the same run, on the same days. It has already caught two false positives.
+* **Recording "asked and nothing" as its own artifact.** 15,959 `.miss` records
+  are what let this document say "0 never asked" and mean it.
+
+### Did not work
+
+* `globe.adsb.fi` — HTTP 403. `globe.theairtraffic.com` — HTTP 404.
+* `globe.adsbexchange.com/globe_history/` — 403, paid tier.
+* `samples.adsbexchange.com/readsb-hist/` — redirects to an index; the per-ICAO
+  `/traces/` path is the one that works.
+* OpenSky `/api/flights/aircraft` — 403 anonymous since the March 2026 move to
+  OAuth2 client credentials. **Not attempted with credentials.** Cheapest gap left.
+* archive.today / archive.ph — HTTP 429 both attempts. **Inconclusive, not ruled
+  out.** Worth retrying.
+
+### The expensive lesson this effort already paid for
+
+This investigation once published that N102DZ's Flightradar24 page "returns HTTP
+403 to the public today" and called it a documented removal. **It was wrong and
+had to be retracted.** FR24 returns 403 to *any* scripted client — including on
+its own homepage — and serves the page normally in a real browser. The empty
+flight table underneath is a paywall: a logged-out visitor sees seven days, and a
+control private jet shows the identical empty table.
+
+Three rules came out of it, and they govern everything above:
+
+1. **The control test applies to websites, not just archives.**
+2. **Never read an HTTP status from `curl` as the public's experience.**
+3. **An empty table is a paywall until proven otherwise.**
+
+---
+
+## 6. Which files mean what
+
+### Derived analysis built for this run
+`site/docs/Planes/following/apis/public_open_source/data/analysis/`
+
+| File | What it holds |
+|---|---|
+| `master_proximity.csv` | 4,214 ground visits joined to sourced events; 137 within 50 mi |
+| `recovery_ledger.csv` | 10,104 (tail, day) rows and which archive answered |
+| `recovery_ledger_summary.json` | the verdict counts and the 403-band split |
+| `geo_ground_foreign.csv` | 17,266 foreign / unregistered / military / blocked aircraft on the ground in an event circle |
+| `geo_rates.csv` | event-circle versus control-circle base rates |
+| `geo_recurrence.csv` | 857 aircraft near 2+ events in 2+ states, with control contamination flagged |
+
+### Code that produced it
+`site/docs/Planes/following/apis/public_open_source/code/`
+
+| Script | What it does |
+|---|---|
+| `build_master_proximity.py` | joins ground visits to events; drops un-geocodable event rows rather than guessing |
+| `build_recovery_ledger.py` | the three-state ledger — HELD / ASKED_NONE / NOT_ASKED |
+| `build_geo_findings.py` | mines the 1.77 M sweep rows into the three geo CSVs |
+| `coverage_percent.py` | every percentage in section 2, with each denominator named |
+| `geo_sweep.py` | the sweep itself — streams a whole UTC day, filters by circle |
+| `recover_erased.js` | pulls two archives side by side per aircraft-day and diffs them |
+| `recover_adsbx_samples.js` | the 2022 bridge — free monthly samples |
+
+### Raw evidence
+
+| Path | What it holds |
+|---|---|
+| `site/docs/Planes/<TAIL>/data/recovered/` | 20,437 `.meta.json`; 4,478 payloads; 15,959 "asked and nothing" records |
+| `.../data/recovery/trace_visit_index.json` | 17 MB — 6,429 airport ground visits over 2,235 tail-days |
+| `.../data/geo_sweep/<date>/hits.csv.gz` | 278 day-directories, 1,772,543 aircraft-circle rows |
+| `.../data/geo_sweep_samples/` | the three 2022 sample days |
+| `<TAIL>_<date>_<source>_trace_full.json[.gz]` | the trace. `.json` and `.json.gz` are the **same evidence**; the source key is in the filename on purpose |
+| `..._trace_full.miss.json.meta.json` | **asked, and the archive holds nothing.** Not the same as never asked |
+
+---
+
+## 7. Where this stands
+
+* **Deep analysis of every lane is still running.** Sections 4 and 5 will grow.
+* Site pages have not yet been updated from these findings.
+* 2022 is the real hole and no free source closes it.
+* The one action that would raise the per-tail percentage is a credential for a
+  proprietary archive. Everything free has been asked.

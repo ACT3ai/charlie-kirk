@@ -1,0 +1,17 @@
+{
+ "rows": 10215,
+ "verdicts": {
+  "NEITHER_HAS_IT": 7869,
+  "ONLY_ON_AIRPLANES_LIVE": 182,
+  "BOTH_HAVE_IT": 1692,
+  "ONLY_ON_ADSB_LOL": 10,
+  "HELD_BY_ADSBEXCHANGE-SAMPLES": 153,
+  "HELD_BY_ADSBLOL-GITHUB-BACKUP+AIRPLANES-LIVE": 1,
+  "HELD_BY_AIRPLANES-LIVE": 191,
+  "HELD_BY_ADSBEXCHANGE-SAMPLES+AIRPLANES-LIVE": 6,
+  "HELD_BY_ADSBLOL-GITHUB-BACKUP": 111
+ },
+ "only_airplanes_live_in_band": 88,
+ "only_airplanes_live_outside_band": 81,
+ "control_only_airplanes_live_outside_band": 10
+}

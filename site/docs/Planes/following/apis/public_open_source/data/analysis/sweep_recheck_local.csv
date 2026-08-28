@@ -1,0 +1,805 @@
+sweep_date,tail,source,circle_key,circle_kind,city,state,event_date,offset_days,who,points_in_circle,on_ground_in_circle,min_dist_mi,ground_lat,ground_lon,passed_geo_sweep_prefilter,trace_file
+2023-02-07,N872RA,airplanes-live,20230208_tempe,event,Tempe,AZ,2023-02-08,-1,Charlie,263,False,2.78,,,True,N872RA/data/recovered/N872RA_2023-02-07_airplanes-live_trace_full.json.gz
+2023-02-08,N582MM,airplanes-live,20230208_tempe,event,Tempe,AZ,2023-02-08,0,Charlie,142,False,10.16,,,True,N582MM/data/recovered/N582MM_2023-02-08_airplanes-live_trace_full.json.gz
+2023-03-08,N560TW,airplanes-live,20230308_lexington,event,Lexington,KY,2023-03-08,0,Charlie,179,False,8.95,,,True,N560TW/data/recovered/N560TW_2023-03-08_airplanes-live_trace_full.json.gz
+2023-03-08,N560TW,adsb-lol,control_albuquerque,control,Albuquerque,NM,,0,CONTROL — no known Kirk/TPUSA event,44,False,6.18,,,True,N560TW/data/recovered/N560TW_2023-03-08_adsb-lol_trace_full.json.gz
+2023-03-08,N560TW,airplanes-live,control_albuquerque,control,Albuquerque,NM,,0,CONTROL — no known Kirk/TPUSA event,32,False,6.32,,,True,N560TW/data/recovered/N560TW_2023-03-08_airplanes-live_trace_full.json.gz
+2023-03-09,N560TW,airplanes-live,20230308_lexington,event,Lexington,KY,2023-03-08,1,Charlie,129,False,2.15,,,True,N560TW/data/recovered/N560TW_2023-03-09_airplanes-live_trace_full.json.gz
+2023-03-21,N582MM,adsb-lol,control_albuquerque,control,Albuquerque,NM,,0,CONTROL — no known Kirk/TPUSA event,4,False,49.17,,,True,N582MM/data/recovered/N582MM_2023-03-21_adsb-lol_trace_full.json.gz
+2023-03-21,N582MM,airplanes-live,control_albuquerque,control,Albuquerque,NM,,0,CONTROL — no known Kirk/TPUSA event,5,False,49.14,,,True,N582MM/data/recovered/N582MM_2023-03-21_airplanes-live_trace_full.json.gz
+2023-03-22,N582MM,adsb-lol,control_albuquerque,control,Albuquerque,NM,,0,CONTROL — no known Kirk/TPUSA event,27,False,30.63,,,True,N582MM/data/recovered/N582MM_2023-03-22_adsb-lol_trace_full.json.gz
+2023-03-22,N582MM,airplanes-live,control_albuquerque,control,Albuquerque,NM,,0,CONTROL — no known Kirk/TPUSA event,40,False,30.63,,,True,N582MM/data/recovered/N582MM_2023-03-22_airplanes-live_trace_full.json.gz
+2023-03-23,N102DZ,adsb-lol,control_albuquerque,control,Albuquerque,NM,,0,CONTROL — no known Kirk/TPUSA event,28,False,4.12,,,True,N102DZ/data/recovered/N102DZ_2023-03-23_adsb-lol_trace_full.json.gz
+2023-03-23,N102DZ,airplanes-live,control_albuquerque,control,Albuquerque,NM,,0,CONTROL — no known Kirk/TPUSA event,39,False,3.87,,,True,N102DZ/data/recovered/N102DZ_2023-03-23_airplanes-live_trace_full.json.gz
+2023-03-23,N582MM,adsb-lol,control_albuquerque,control,Albuquerque,NM,,0,CONTROL — no known Kirk/TPUSA event,35,False,5.12,,,True,N582MM/data/recovered/N582MM_2023-03-23_adsb-lol_trace_full.json.gz
+2023-03-23,N582MM,airplanes-live,control_albuquerque,control,Albuquerque,NM,,0,CONTROL — no known Kirk/TPUSA event,50,False,5.13,,,True,N582MM/data/recovered/N582MM_2023-03-23_airplanes-live_trace_full.json.gz
+2023-03-26,N582MM,adsb-lol,20230327_fort_worth,event,Fort Worth,TX,2023-03-27,-1,Charlie,141,False,16.14,,,True,N582MM/data/recovered/N582MM_2023-03-26_adsb-lol_trace_full.json.gz
+2023-03-26,N582MM,airplanes-live,20230327_fort_worth,event,Fort Worth,TX,2023-03-27,-1,Charlie,146,False,16.14,,,True,N582MM/data/recovered/N582MM_2023-03-26_airplanes-live_trace_full.json.gz
+2023-03-26,N582MM,adsb-lol,control_albuquerque,control,Albuquerque,NM,,0,CONTROL — no known Kirk/TPUSA event,23,False,33.48,,,True,N582MM/data/recovered/N582MM_2023-03-26_adsb-lol_trace_full.json.gz
+2023-03-26,N582MM,airplanes-live,control_albuquerque,control,Albuquerque,NM,,0,CONTROL — no known Kirk/TPUSA event,35,False,33.46,,,True,N582MM/data/recovered/N582MM_2023-03-26_airplanes-live_trace_full.json.gz
+2023-04-03,N102DZ,adsb-lol,control_albuquerque,control,Albuquerque,NM,,0,CONTROL — no known Kirk/TPUSA event,17,False,19.93,,,True,N102DZ/data/recovered/N102DZ_2023-04-03_adsb-lol_trace_full.json.gz
+2023-04-03,N102DZ,airplanes-live,control_albuquerque,control,Albuquerque,NM,,0,CONTROL — no known Kirk/TPUSA event,25,False,19.93,,,True,N102DZ/data/recovered/N102DZ_2023-04-03_airplanes-live_trace_full.json.gz
+2023-06-16,N582MM,adsb-lol,control_syracuse,control,Syracuse,NY,,0,CONTROL — no known Kirk/TPUSA event,23,False,23.08,,,True,N582MM/data/recovered/N582MM_2023-06-16_adsb-lol_trace_full.json.gz
+2023-06-16,N582MM,airplanes-live,control_syracuse,control,Syracuse,NY,,0,CONTROL — no known Kirk/TPUSA event,51,False,22.95,,,True,N582MM/data/recovered/N582MM_2023-06-16_airplanes-live_trace_full.json.gz
+2023-06-20,N582MM,adsb-lol,control_des_moines,control,Des Moines,IA,,0,CONTROL — no known Kirk/TPUSA event,19,False,33.77,,,True,N582MM/data/recovered/N582MM_2023-06-20_adsb-lol_trace_full.json.gz
+2023-06-20,N582MM,airplanes-live,control_des_moines,control,Des Moines,IA,,0,CONTROL — no known Kirk/TPUSA event,28,False,33.79,,,True,N582MM/data/recovered/N582MM_2023-06-20_airplanes-live_trace_full.json.gz
+2023-07-16,N582MM,adsb-lol,control_albuquerque,control,Albuquerque,NM,,0,CONTROL — no known Kirk/TPUSA event,18,False,29.76,,,True,N582MM/data/recovered/N582MM_2023-07-16_adsb-lol_trace_full.json.gz
+2023-07-16,N582MM,airplanes-live,control_albuquerque,control,Albuquerque,NM,,0,CONTROL — no known Kirk/TPUSA event,27,False,29.73,,,True,N582MM/data/recovered/N582MM_2023-07-16_airplanes-live_trace_full.json.gz
+2023-07-17,N582MM,adsb-lol,control_chattanooga,control,Chattanooga,TN,,0,CONTROL — no known Kirk/TPUSA event,7,False,48.54,,,True,N582MM/data/recovered/N582MM_2023-07-17_adsb-lol_trace_full.json.gz
+2023-07-17,N582MM,airplanes-live,control_chattanooga,control,Chattanooga,TN,,0,CONTROL — no known Kirk/TPUSA event,10,False,48.54,,,True,N582MM/data/recovered/N582MM_2023-07-17_airplanes-live_trace_full.json.gz
+2023-07-17,N582MM,adsb-lol,control_shreveport,control,Shreveport,LA,,0,CONTROL — no known Kirk/TPUSA event,18,False,30.43,,,True,N582MM/data/recovered/N582MM_2023-07-17_adsb-lol_trace_full.json.gz
+2023-07-17,N582MM,airplanes-live,control_shreveport,control,Shreveport,LA,,0,CONTROL — no known Kirk/TPUSA event,27,False,30.39,,,True,N582MM/data/recovered/N582MM_2023-07-17_airplanes-live_trace_full.json.gz
+2023-07-17,N582MM,adsb-lol,control_syracuse,control,Syracuse,NY,,0,CONTROL — no known Kirk/TPUSA event,37,False,17.29,,,True,N582MM/data/recovered/N582MM_2023-07-17_adsb-lol_trace_full.json.gz
+2023-07-17,N582MM,airplanes-live,control_syracuse,control,Syracuse,NY,,0,CONTROL — no known Kirk/TPUSA event,50,False,17.23,,,True,N582MM/data/recovered/N582MM_2023-07-17_airplanes-live_trace_full.json.gz
+2023-08-24,N582MM,adsb-lol,20230825_lincoln,event,Lincoln,NE,2023-08-25,-1,Charlie,38,False,14.9,,,True,N582MM/data/recovered/N582MM_2023-08-24_adsb-lol_trace_full.json.gz
+2023-08-24,N582MM,airplanes-live,20230825_lincoln,event,Lincoln,NE,2023-08-25,-1,Charlie,39,False,14.9,,,True,N582MM/data/recovered/N582MM_2023-08-24_airplanes-live_trace_full.json.gz
+2023-08-24,N582MM,adsb-lol,control_des_moines,control,Des Moines,IA,,0,CONTROL — no known Kirk/TPUSA event,38,False,12.59,,,True,N582MM/data/recovered/N582MM_2023-08-24_adsb-lol_trace_full.json.gz
+2023-08-24,N582MM,airplanes-live,control_des_moines,control,Des Moines,IA,,0,CONTROL — no known Kirk/TPUSA event,38,False,12.62,,,True,N582MM/data/recovered/N582MM_2023-08-24_airplanes-live_trace_full.json.gz
+2023-09-14,N582MM,adsb-lol,20230913_san_diego,event,San Diego,CA,2023-09-13,1,Charlie,193,True,1.41,32.735161,-117.198138,True,N582MM/data/recovered/N582MM_2023-09-14_adsb-lol_trace_full.json.gz
+2023-09-14,N582MM,airplanes-live,20230913_san_diego,event,San Diego,CA,2023-09-13,1,Charlie,242,True,1.44,32.734085,-117.191821,True,N582MM/data/recovered/N582MM_2023-09-14_airplanes-live_trace_full.json.gz
+2023-09-14,N582MM,adsb-lol,20230914_san_diego,event,San Diego,CA,2023-09-14,0,Charlie,193,True,1.41,32.735161,-117.198138,True,N582MM/data/recovered/N582MM_2023-09-14_adsb-lol_trace_full.json.gz
+2023-09-14,N582MM,airplanes-live,20230914_san_diego,event,San Diego,CA,2023-09-14,0,Charlie,242,True,1.44,32.734085,-117.191821,True,N582MM/data/recovered/N582MM_2023-09-14_airplanes-live_trace_full.json.gz
+2023-09-14,N582MM,adsb-lol,20230915_san_diego,event,San Diego,CA,2023-09-15,-1,Charlie,193,True,1.41,32.735161,-117.198138,True,N582MM/data/recovered/N582MM_2023-09-14_adsb-lol_trace_full.json.gz
+2023-09-14,N582MM,airplanes-live,20230915_san_diego,event,San Diego,CA,2023-09-15,-1,Charlie,242,True,1.44,32.734085,-117.191821,True,N582MM/data/recovered/N582MM_2023-09-14_airplanes-live_trace_full.json.gz
+2023-09-15,N582MM,adsb-lol,20230914_san_diego,event,San Diego,CA,2023-09-14,1,Charlie,144,False,6.52,,,True,N582MM/data/recovered/N582MM_2023-09-15_adsb-lol_trace_full.json.gz
+2023-09-15,N582MM,airplanes-live,20230914_san_diego,event,San Diego,CA,2023-09-14,1,Charlie,197,True,6.32,32.730587,-117.177345,True,N582MM/data/recovered/N582MM_2023-09-15_airplanes-live_trace_full.json.gz
+2023-09-15,N582MM,adsb-lol,20230915_san_diego,event,San Diego,CA,2023-09-15,0,Charlie,144,False,6.52,,,True,N582MM/data/recovered/N582MM_2023-09-15_adsb-lol_trace_full.json.gz
+2023-09-15,N582MM,airplanes-live,20230915_san_diego,event,San Diego,CA,2023-09-15,0,Charlie,197,True,6.32,32.730587,-117.177345,True,N582MM/data/recovered/N582MM_2023-09-15_airplanes-live_trace_full.json.gz
+2023-09-18,N560TW,adsb-lol,20230919_flagstaff,event,Flagstaff,AZ,2023-09-19,-1,Charlie,45,False,32.61,,,True,N560TW/data/recovered/N560TW_2023-09-18_adsb-lol_trace_full.json.gz
+2023-09-18,N560TW,airplanes-live,20230919_flagstaff,event,Flagstaff,AZ,2023-09-19,-1,Charlie,16,False,38.11,,,True,N560TW/data/recovered/N560TW_2023-09-18_airplanes-live_trace_full.json.gz
+2023-09-19,N582MM,adsb-lol,20230919_flagstaff,event,Flagstaff,AZ,2023-09-19,0,Charlie,37,False,35.92,,,True,N582MM/data/recovered/N582MM_2023-09-19_adsb-lol_trace_full.json.gz
+2023-09-19,N582MM,airplanes-live,20230919_flagstaff,event,Flagstaff,AZ,2023-09-19,0,Charlie,37,False,35.92,,,True,N582MM/data/recovered/N582MM_2023-09-19_airplanes-live_trace_full.json.gz
+2023-09-20,N560TW,adsb-lol,20230919_flagstaff,event,Flagstaff,AZ,2023-09-19,1,Charlie,29,False,24.59,,,True,N560TW/data/recovered/N560TW_2023-09-20_adsb-lol_trace_full.json.gz
+2023-09-20,N560TW,airplanes-live,20230919_flagstaff,event,Flagstaff,AZ,2023-09-19,1,Charlie,11,False,38.2,,,True,N560TW/data/recovered/N560TW_2023-09-20_airplanes-live_trace_full.json.gz
+2023-09-20,N560TW,adsb-lol,control_spokane,control,Spokane,WA,,0,CONTROL — no known Kirk/TPUSA event,159,False,34.73,,,True,N560TW/data/recovered/N560TW_2023-09-20_adsb-lol_trace_full.json.gz
+2023-09-20,N560TW,airplanes-live,control_spokane,control,Spokane,WA,,0,CONTROL — no known Kirk/TPUSA event,163,False,34.73,,,True,N560TW/data/recovered/N560TW_2023-09-20_airplanes-live_trace_full.json.gz
+2023-09-28,N560TW,adsb-lol,20230927_tempe,event,Tempe,AZ,2023-09-27,1,Charlie,248,True,3.66,33.628848,-111.902533,True,N560TW/data/recovered/N560TW_2023-09-28_adsb-lol_trace_full.json.gz
+2023-09-28,N560TW,airplanes-live,20230927_tempe,event,Tempe,AZ,2023-09-27,1,Charlie,245,True,3.65,33.628848,-111.902533,True,N560TW/data/recovered/N560TW_2023-09-28_airplanes-live_trace_full.json.gz
+2023-09-28,N582MM,adsb-lol,20230927_tempe,event,Tempe,AZ,2023-09-27,1,Charlie,189,True,4.63,33.42773,-112.010268,True,N582MM/data/recovered/N582MM_2023-09-28_adsb-lol_trace_full.json.gz
+2023-09-28,N582MM,airplanes-live,20230927_tempe,event,Tempe,AZ,2023-09-27,1,Charlie,204,True,4.63,33.426182,-112.022934,True,N582MM/data/recovered/N582MM_2023-09-28_airplanes-live_trace_full.json.gz
+2023-10-09,N582MM,adsb-lol,control_des_moines,control,Des Moines,IA,,0,CONTROL — no known Kirk/TPUSA event,19,False,44.13,,,True,N582MM/data/recovered/N582MM_2023-10-09_adsb-lol_trace_full.json.gz
+2023-10-09,N582MM,airplanes-live,control_des_moines,control,Des Moines,IA,,0,CONTROL — no known Kirk/TPUSA event,19,False,44.12,,,True,N582MM/data/recovered/N582MM_2023-10-09_airplanes-live_trace_full.json.gz
+2023-10-12,N582MM,adsb-lol,20231012_atlanta,event,Atlanta,GA,2023-10-12,0,TPUSA,117,False,6.46,,,True,N582MM/data/recovered/N582MM_2023-10-12_adsb-lol_trace_full.json.gz
+2023-10-12,N582MM,airplanes-live,20231012_atlanta,event,Atlanta,GA,2023-10-12,0,TPUSA,98,False,6.46,,,True,N582MM/data/recovered/N582MM_2023-10-12_airplanes-live_trace_full.json.gz
+2023-10-12,N582MM,adsb-lol,control_chattanooga,control,Chattanooga,TN,,0,CONTROL — no known Kirk/TPUSA event,140,False,4.15,,,True,N582MM/data/recovered/N582MM_2023-10-12_adsb-lol_trace_full.json.gz
+2023-10-12,N582MM,airplanes-live,control_chattanooga,control,Chattanooga,TN,,0,CONTROL — no known Kirk/TPUSA event,143,False,4.15,,,True,N582MM/data/recovered/N582MM_2023-10-12_airplanes-live_trace_full.json.gz
+2023-10-13,N582MM,adsb-lol,20231012_atlanta,event,Atlanta,GA,2023-10-12,1,TPUSA,113,False,11.84,,,True,N582MM/data/recovered/N582MM_2023-10-13_adsb-lol_trace_full.json.gz
+2023-10-13,N582MM,airplanes-live,20231012_atlanta,event,Atlanta,GA,2023-10-12,1,TPUSA,97,False,13.48,,,True,N582MM/data/recovered/N582MM_2023-10-13_airplanes-live_trace_full.json.gz
+2023-10-13,N582MM,adsb-lol,control_chattanooga,control,Chattanooga,TN,,0,CONTROL — no known Kirk/TPUSA event,62,False,2.68,,,True,N582MM/data/recovered/N582MM_2023-10-13_adsb-lol_trace_full.json.gz
+2023-10-13,N582MM,airplanes-live,control_chattanooga,control,Chattanooga,TN,,0,CONTROL — no known Kirk/TPUSA event,68,False,2.66,,,True,N582MM/data/recovered/N582MM_2023-10-13_airplanes-live_trace_full.json.gz
+2023-10-18,N582MM,adsb-lol,20231019_springfield,event,Springfield,MO,2023-10-19,-1,Charlie,37,False,43.51,,,True,N582MM/data/recovered/N582MM_2023-10-18_adsb-lol_trace_full.json.gz
+2023-10-18,N582MM,airplanes-live,20231019_springfield,event,Springfield,MO,2023-10-19,-1,Charlie,36,False,43.5,,,True,N582MM/data/recovered/N582MM_2023-10-18_airplanes-live_trace_full.json.gz
+2023-11-09,N560TW,adsb-lol,control_albuquerque,control,Albuquerque,NM,,0,CONTROL — no known Kirk/TPUSA event,36,False,1.97,,,True,N560TW/data/recovered/N560TW_2023-11-09_adsb-lol_trace_full.json.gz
+2023-11-09,N560TW,airplanes-live,control_albuquerque,control,Albuquerque,NM,,0,CONTROL — no known Kirk/TPUSA event,47,False,1.41,,,True,N560TW/data/recovered/N560TW_2023-11-09_airplanes-live_trace_full.json.gz
+2023-11-09,N582MM,adsb-lol,20231109_los_angeles,event,Los Angeles,CA,2023-11-09,0,Charlie,262,False,11.96,,,True,N582MM/data/recovered/N582MM_2023-11-09_adsb-lol_trace_full.json.gz
+2023-11-09,N582MM,airplanes-live,20231109_los_angeles,event,Los Angeles,CA,2023-11-09,0,Charlie,272,False,11.86,,,True,N582MM/data/recovered/N582MM_2023-11-09_airplanes-live_trace_full.json.gz
+2023-11-09,N582MM,adsb-lol,control_des_moines,control,Des Moines,IA,,0,CONTROL — no known Kirk/TPUSA event,6,False,48.55,,,True,N582MM/data/recovered/N582MM_2023-11-09_adsb-lol_trace_full.json.gz
+2023-11-09,N582MM,airplanes-live,control_des_moines,control,Des Moines,IA,,0,CONTROL — no known Kirk/TPUSA event,6,False,48.56,,,True,N582MM/data/recovered/N582MM_2023-11-09_airplanes-live_trace_full.json.gz
+2023-11-10,N582MM,adsb-lol,control_syracuse,control,Syracuse,NY,,0,CONTROL — no known Kirk/TPUSA event,26,False,9.95,,,True,N582MM/data/recovered/N582MM_2023-11-10_adsb-lol_trace_full.json.gz
+2023-11-10,N582MM,airplanes-live,control_syracuse,control,Syracuse,NY,,0,CONTROL — no known Kirk/TPUSA event,27,False,10.06,,,True,N582MM/data/recovered/N582MM_2023-11-10_airplanes-live_trace_full.json.gz
+2023-12-15,N560TW,adsb-lol,20231216_phoenix,event,Phoenix,AZ,2023-12-16,-1,Charlie,298,True,7.59,33.624939,-111.908196,False,N560TW/data/recovered/N560TW_2023-12-15_adsb-lol_trace_full.json.gz
+2023-12-15,N560TW,airplanes-live,20231216_phoenix,event,Phoenix,AZ,2023-12-16,-1,Charlie,293,True,7.59,33.623245,-111.910115,False,N560TW/data/recovered/N560TW_2023-12-15_airplanes-live_trace_full.json.gz
+2023-12-16,N582MM,adsb-lol,20231216_phoenix,event,Phoenix,AZ,2023-12-16,0,Charlie,347,True,8.79,33.624262,-111.908941,True,N582MM/data/recovered/N582MM_2023-12-16_adsb-lol_trace_full.json.gz
+2023-12-16,N582MM,airplanes-live,20231216_phoenix,event,Phoenix,AZ,2023-12-16,0,Charlie,338,True,8.79,33.625935,-111.905771,True,N582MM/data/recovered/N582MM_2023-12-16_airplanes-live_trace_full.json.gz
+2023-12-16,N582MM,adsb-lol,20231217_phoenix,event,Phoenix,AZ,2023-12-17,-1,Charlie,347,True,8.79,33.624262,-111.908941,True,N582MM/data/recovered/N582MM_2023-12-16_adsb-lol_trace_full.json.gz
+2023-12-16,N582MM,airplanes-live,20231217_phoenix,event,Phoenix,AZ,2023-12-17,-1,Charlie,338,True,8.79,33.625935,-111.905771,True,N582MM/data/recovered/N582MM_2023-12-16_airplanes-live_trace_full.json.gz
+2023-12-16,N582MM,adsb-lol,control_shreveport,control,Shreveport,LA,,0,CONTROL — no known Kirk/TPUSA event,24,False,40.53,,,True,N582MM/data/recovered/N582MM_2023-12-16_adsb-lol_trace_full.json.gz
+2023-12-16,N582MM,airplanes-live,control_shreveport,control,Shreveport,LA,,0,CONTROL — no known Kirk/TPUSA event,24,False,40.53,,,True,N582MM/data/recovered/N582MM_2023-12-16_airplanes-live_trace_full.json.gz
+2023-12-17,N582MM,adsb-lol,20231216_phoenix,event,Phoenix,AZ,2023-12-16,1,Charlie,339,True,0.68,33.620934,-111.912804,True,N582MM/data/recovered/N582MM_2023-12-17_adsb-lol_trace_full.json.gz
+2023-12-17,N582MM,airplanes-live,20231216_phoenix,event,Phoenix,AZ,2023-12-16,1,Charlie,322,True,0.67,33.620934,-111.912804,True,N582MM/data/recovered/N582MM_2023-12-17_airplanes-live_trace_full.json.gz
+2023-12-17,N582MM,adsb-lol,20231217_phoenix,event,Phoenix,AZ,2023-12-17,0,Charlie,339,True,0.68,33.620934,-111.912804,True,N582MM/data/recovered/N582MM_2023-12-17_adsb-lol_trace_full.json.gz
+2023-12-17,N582MM,airplanes-live,20231217_phoenix,event,Phoenix,AZ,2023-12-17,0,Charlie,322,True,0.67,33.620934,-111.912804,True,N582MM/data/recovered/N582MM_2023-12-17_airplanes-live_trace_full.json.gz
+2023-12-17,N582MM,adsb-lol,20231218_phoenix,event,Phoenix,AZ,2023-12-18,-1,Charlie,339,True,0.68,33.620934,-111.912804,True,N582MM/data/recovered/N582MM_2023-12-17_adsb-lol_trace_full.json.gz
+2023-12-17,N582MM,airplanes-live,20231218_phoenix,event,Phoenix,AZ,2023-12-18,-1,Charlie,322,True,0.67,33.620934,-111.912804,True,N582MM/data/recovered/N582MM_2023-12-17_airplanes-live_trace_full.json.gz
+2023-12-18,N582MM,adsb-lol,20231217_phoenix,event,Phoenix,AZ,2023-12-17,1,Charlie,250,True,10.55,33.425601,-112.026901,True,N582MM/data/recovered/N582MM_2023-12-18_adsb-lol_trace_full.json.gz
+2023-12-18,N582MM,airplanes-live,20231217_phoenix,event,Phoenix,AZ,2023-12-17,1,Charlie,250,True,10.55,33.425601,-112.026873,True,N582MM/data/recovered/N582MM_2023-12-18_airplanes-live_trace_full.json.gz
+2023-12-18,N582MM,adsb-lol,20231218_phoenix,event,Phoenix,AZ,2023-12-18,0,Charlie,250,True,10.55,33.425601,-112.026901,True,N582MM/data/recovered/N582MM_2023-12-18_adsb-lol_trace_full.json.gz
+2023-12-18,N582MM,airplanes-live,20231218_phoenix,event,Phoenix,AZ,2023-12-18,0,Charlie,250,True,10.55,33.425601,-112.026873,True,N582MM/data/recovered/N582MM_2023-12-18_airplanes-live_trace_full.json.gz
+2023-12-18,N582MM,adsb-lol,20231219_phoenix,event,Phoenix,AZ,2023-12-19,-1,Charlie,250,True,10.55,33.425601,-112.026901,True,N582MM/data/recovered/N582MM_2023-12-18_adsb-lol_trace_full.json.gz
+2023-12-18,N582MM,airplanes-live,20231219_phoenix,event,Phoenix,AZ,2023-12-19,-1,Charlie,250,True,10.55,33.425601,-112.026873,True,N582MM/data/recovered/N582MM_2023-12-18_airplanes-live_trace_full.json.gz
+2023-12-19,N560TW,adsb-lol,20231218_phoenix,event,Phoenix,AZ,2023-12-18,1,Charlie,144,True,7.79,33.622819,-111.909442,True,N560TW/data/recovered/N560TW_2023-12-19_adsb-lol_trace_full.json.gz
+2023-12-19,N560TW,airplanes-live,20231218_phoenix,event,Phoenix,AZ,2023-12-18,1,Charlie,138,True,7.79,33.628819,-111.902562,True,N560TW/data/recovered/N560TW_2023-12-19_airplanes-live_trace_full.json.gz
+2023-12-19,N560TW,adsb-lol,20231219_phoenix,event,Phoenix,AZ,2023-12-19,0,Charlie,144,True,7.79,33.622819,-111.909442,True,N560TW/data/recovered/N560TW_2023-12-19_adsb-lol_trace_full.json.gz
+2023-12-19,N560TW,airplanes-live,20231219_phoenix,event,Phoenix,AZ,2023-12-19,0,Charlie,138,True,7.79,33.628819,-111.902562,True,N560TW/data/recovered/N560TW_2023-12-19_airplanes-live_trace_full.json.gz
+2023-12-19,N582MM,adsb-lol,20231218_phoenix,event,Phoenix,AZ,2023-12-18,1,Charlie,315,True,7.92,33.686642,-112.085352,True,N582MM/data/recovered/N582MM_2023-12-19_adsb-lol_trace_full.json.gz
+2023-12-19,N582MM,airplanes-live,20231218_phoenix,event,Phoenix,AZ,2023-12-18,1,Charlie,326,True,7.92,33.686642,-112.085352,True,N582MM/data/recovered/N582MM_2023-12-19_airplanes-live_trace_full.json.gz
+2023-12-19,N582MM,adsb-lol,20231219_phoenix,event,Phoenix,AZ,2023-12-19,0,Charlie,315,True,7.92,33.686642,-112.085352,True,N582MM/data/recovered/N582MM_2023-12-19_adsb-lol_trace_full.json.gz
+2023-12-19,N582MM,airplanes-live,20231219_phoenix,event,Phoenix,AZ,2023-12-19,0,Charlie,326,True,7.92,33.686642,-112.085352,True,N582MM/data/recovered/N582MM_2023-12-19_airplanes-live_trace_full.json.gz
+2024-01-28,N102DZ,adsb-lol,20240129_las_vegas,event,Las Vegas,NV,2024-01-29,-1,Charlie,9,False,38.83,,,True,N102DZ/data/recovered/N102DZ_2024-01-28_adsb-lol_trace_full.json.gz
+2024-01-28,N102DZ,airplanes-live,20240129_las_vegas,event,Las Vegas,NV,2024-01-29,-1,Charlie,9,False,38.91,,,True,N102DZ/data/recovered/N102DZ_2024-01-28_airplanes-live_trace_full.json.gz
+2024-01-28,N560TW,adsb-lol,20240129_las_vegas,event,Las Vegas,NV,2024-01-29,-1,Charlie,133,False,6.76,,,True,N560TW/data/recovered/N560TW_2024-01-28_adsb-lol_trace_full.json.gz
+2024-01-28,N560TW,airplanes-live,20240129_las_vegas,event,Las Vegas,NV,2024-01-29,-1,Charlie,132,False,6.76,,,True,N560TW/data/recovered/N560TW_2024-01-28_airplanes-live_trace_full.json.gz
+2024-01-29,N102DZ,adsb-lol,20240129_las_vegas,event,Las Vegas,NV,2024-01-29,0,Charlie,36,False,31.17,,,True,N102DZ/data/recovered/N102DZ_2024-01-29_adsb-lol_trace_full.json.gz
+2024-01-29,N102DZ,airplanes-live,20240129_las_vegas,event,Las Vegas,NV,2024-01-29,0,Charlie,36,False,31.17,,,True,N102DZ/data/recovered/N102DZ_2024-01-29_airplanes-live_trace_full.json.gz
+2024-01-29,N102DZ,adsb-lol,20240130_las_vegas,event,Las Vegas,NV,2024-01-30,-1,Charlie,36,False,31.17,,,True,N102DZ/data/recovered/N102DZ_2024-01-29_adsb-lol_trace_full.json.gz
+2024-01-29,N102DZ,airplanes-live,20240130_las_vegas,event,Las Vegas,NV,2024-01-30,-1,Charlie,36,False,31.17,,,True,N102DZ/data/recovered/N102DZ_2024-01-29_airplanes-live_trace_full.json.gz
+2024-01-30,N102DZ,adsb-lol,20240129_las_vegas,event,Las Vegas,NV,2024-01-29,1,Charlie,273,False,10.17,,,True,N102DZ/data/recovered/N102DZ_2024-01-30_adsb-lol_trace_full.json.gz
+2024-01-30,N102DZ,airplanes-live,20240129_las_vegas,event,Las Vegas,NV,2024-01-29,1,Charlie,290,True,10.17,36.082466,-115.167542,True,N102DZ/data/recovered/N102DZ_2024-01-30_airplanes-live_trace_full.json.gz
+2024-01-30,N102DZ,adsb-lol,20240130_las_vegas,event,Las Vegas,NV,2024-01-30,0,Charlie,273,False,10.17,,,True,N102DZ/data/recovered/N102DZ_2024-01-30_adsb-lol_trace_full.json.gz
+2024-01-30,N102DZ,airplanes-live,20240130_las_vegas,event,Las Vegas,NV,2024-01-30,0,Charlie,290,True,10.17,36.082466,-115.167542,True,N102DZ/data/recovered/N102DZ_2024-01-30_airplanes-live_trace_full.json.gz
+2024-01-30,N102DZ,adsb-lol,20240131_las_vegas,event,Las Vegas,NV,2024-01-31,-1,Charlie,273,False,10.17,,,True,N102DZ/data/recovered/N102DZ_2024-01-30_adsb-lol_trace_full.json.gz
+2024-01-30,N102DZ,airplanes-live,20240131_las_vegas,event,Las Vegas,NV,2024-01-31,-1,Charlie,290,True,10.17,36.082466,-115.167542,True,N102DZ/data/recovered/N102DZ_2024-01-30_airplanes-live_trace_full.json.gz
+2024-01-30,N102DZ,adsb-lol,control_albuquerque,control,Albuquerque,NM,,0,CONTROL — no known Kirk/TPUSA event,8,False,48.63,,,True,N102DZ/data/recovered/N102DZ_2024-01-30_adsb-lol_trace_full.json.gz
+2024-01-30,N102DZ,airplanes-live,control_albuquerque,control,Albuquerque,NM,,0,CONTROL — no known Kirk/TPUSA event,8,False,48.62,,,True,N102DZ/data/recovered/N102DZ_2024-01-30_airplanes-live_trace_full.json.gz
+2024-02-02,N102DZ,adsb-lol,control_chattanooga,control,Chattanooga,TN,,0,CONTROL — no known Kirk/TPUSA event,57,False,4.1,,,True,N102DZ/data/recovered/N102DZ_2024-02-02_adsb-lol_trace_full.json.gz
+2024-02-02,N102DZ,airplanes-live,control_chattanooga,control,Chattanooga,TN,,0,CONTROL — no known Kirk/TPUSA event,60,False,4.1,,,True,N102DZ/data/recovered/N102DZ_2024-02-02_airplanes-live_trace_full.json.gz
+2024-02-03,N102DZ,adsb-lol,control_chattanooga,control,Chattanooga,TN,,0,CONTROL — no known Kirk/TPUSA event,6,False,49.26,,,True,N102DZ/data/recovered/N102DZ_2024-02-03_adsb-lol_trace_full.json.gz
+2024-02-03,N102DZ,airplanes-live,control_chattanooga,control,Chattanooga,TN,,0,CONTROL — no known Kirk/TPUSA event,8,False,49.26,,,True,N102DZ/data/recovered/N102DZ_2024-02-03_airplanes-live_trace_full.json.gz
+2024-03-06,N560TW,adsb-lol,control_albuquerque,control,Albuquerque,NM,,0,CONTROL — no known Kirk/TPUSA event,5,False,49.14,,,True,N560TW/data/recovered/N560TW_2024-03-06_adsb-lol_trace_full.json.gz
+2024-03-06,N560TW,airplanes-live,control_albuquerque,control,Albuquerque,NM,,0,CONTROL — no known Kirk/TPUSA event,4,False,49.14,,,True,N560TW/data/recovered/N560TW_2024-03-06_airplanes-live_trace_full.json.gz
+2024-03-06,N560TW,adsb-lol,control_shreveport,control,Shreveport,LA,,0,CONTROL — no known Kirk/TPUSA event,29,False,18.2,,,True,N560TW/data/recovered/N560TW_2024-03-06_adsb-lol_trace_full.json.gz
+2024-03-06,N560TW,airplanes-live,control_shreveport,control,Shreveport,LA,,0,CONTROL — no known Kirk/TPUSA event,29,False,18.19,,,True,N560TW/data/recovered/N560TW_2024-03-06_airplanes-live_trace_full.json.gz
+2024-03-07,N582MM,adsb-lol,20240307_san_luis_obispo,event,San Luis Obispo,CA,2024-03-07,0,Charlie,281,False,0.75,,,True,N582MM/data/recovered/N582MM_2024-03-07_adsb-lol_trace_full.json.gz
+2024-03-07,N582MM,airplanes-live,20240307_san_luis_obispo,event,San Luis Obispo,CA,2024-03-07,0,Charlie,287,False,0.75,,,True,N582MM/data/recovered/N582MM_2024-03-07_airplanes-live_trace_full.json.gz
+2024-03-07,N872RA,adsb-lol,control_albuquerque,control,Albuquerque,NM,,0,CONTROL — no known Kirk/TPUSA event,212,True,4.55,35.039381,-106.616192,True,N872RA/data/recovered/N872RA_2024-03-07_adsb-lol_trace_full.json.gz
+2024-03-07,N872RA,airplanes-live,control_albuquerque,control,Albuquerque,NM,,0,CONTROL — no known Kirk/TPUSA event,183,True,4.55,35.039555,-106.616485,True,N872RA/data/recovered/N872RA_2024-03-07_airplanes-live_trace_full.json.gz
+2024-03-14,N582MM,adsb-lol,20240314_fullerton,event,Fullerton,CA,2024-03-14,0,Charlie,220,True,14.8,33.674126,-117.869848,True,N582MM/data/recovered/N582MM_2024-03-14_adsb-lol_trace_full.json.gz
+2024-03-14,N582MM,airplanes-live,20240314_fullerton,event,Fullerton,CA,2024-03-14,0,Charlie,225,True,14.8,33.674126,-117.869848,True,N582MM/data/recovered/N582MM_2024-03-14_airplanes-live_trace_full.json.gz
+2024-03-14,N872RA,adsb-lol,20240314_fullerton,event,Fullerton,CA,2024-03-14,0,Charlie,194,False,0.62,,,True,N872RA/data/recovered/N872RA_2024-03-14_adsb-lol_trace_full.json.gz
+2024-03-14,N872RA,airplanes-live,20240314_fullerton,event,Fullerton,CA,2024-03-14,0,Charlie,195,False,0.64,,,True,N872RA/data/recovered/N872RA_2024-03-14_airplanes-live_trace_full.json.gz
+2024-03-15,N582MM,adsb-lol,20240314_fullerton,event,Fullerton,CA,2024-03-14,1,Charlie,158,False,11.88,,,True,N582MM/data/recovered/N582MM_2024-03-15_adsb-lol_trace_full.json.gz
+2024-03-15,N582MM,airplanes-live,20240314_fullerton,event,Fullerton,CA,2024-03-14,1,Charlie,192,False,11.88,,,True,N582MM/data/recovered/N582MM_2024-03-15_airplanes-live_trace_full.json.gz
+2024-03-15,N872RA,adsb-lol,20240314_fullerton,event,Fullerton,CA,2024-03-14,1,Charlie,794,False,6.1,,,True,N872RA/data/recovered/N872RA_2024-03-15_adsb-lol_trace_full.json.gz
+2024-03-15,N872RA,airplanes-live,20240314_fullerton,event,Fullerton,CA,2024-03-14,1,Charlie,803,False,6.1,,,True,N872RA/data/recovered/N872RA_2024-03-15_airplanes-live_trace_full.json.gz
+2024-03-18,N102DZ,adsb-lol,20240319_phoenix,event,Phoenix,AZ,2024-03-19,-1,Charlie,25,False,35.46,,,True,N102DZ/data/recovered/N102DZ_2024-03-18_adsb-lol_trace_full.json.gz
+2024-03-18,N102DZ,airplanes-live,20240319_phoenix,event,Phoenix,AZ,2024-03-19,-1,Charlie,25,False,35.45,,,True,N102DZ/data/recovered/N102DZ_2024-03-18_airplanes-live_trace_full.json.gz
+2024-03-18,N560TW,adsb-lol,20240318_san_diego,event,San Diego,CA,2024-03-18,0,Charlie,17,False,47.45,,,True,N560TW/data/recovered/N560TW_2024-03-18_adsb-lol_trace_full.json.gz
+2024-03-18,N560TW,airplanes-live,20240318_san_diego,event,San Diego,CA,2024-03-18,0,Charlie,18,False,47.45,,,True,N560TW/data/recovered/N560TW_2024-03-18_airplanes-live_trace_full.json.gz
+2024-03-18,N560TW,adsb-lol,20240319_phoenix,event,Phoenix,AZ,2024-03-19,-1,Charlie,456,True,10.24,33.622662,-111.909022,True,N560TW/data/recovered/N560TW_2024-03-18_adsb-lol_trace_full.json.gz
+2024-03-18,N560TW,airplanes-live,20240319_phoenix,event,Phoenix,AZ,2024-03-19,-1,Charlie,414,True,10.24,33.618292,-111.914706,True,N560TW/data/recovered/N560TW_2024-03-18_airplanes-live_trace_full.json.gz
+2024-03-18,N582MM,adsb-lol,20240318_san_diego,event,San Diego,CA,2024-03-18,0,Charlie,127,False,6.51,,,True,N582MM/data/recovered/N582MM_2024-03-18_adsb-lol_trace_full.json.gz
+2024-03-18,N582MM,airplanes-live,20240318_san_diego,event,San Diego,CA,2024-03-18,0,Charlie,166,True,6.19,32.732758,-117.179764,True,N582MM/data/recovered/N582MM_2024-03-18_airplanes-live_trace_full.json.gz
+2024-03-19,N582MM,adsb-lol,20240318_san_diego,event,San Diego,CA,2024-03-18,1,Charlie,172,True,6.19,32.733439,-117.179601,True,N582MM/data/recovered/N582MM_2024-03-19_adsb-lol_trace_full.json.gz
+2024-03-19,N582MM,airplanes-live,20240318_san_diego,event,San Diego,CA,2024-03-18,1,Charlie,219,True,6.16,32.733427,-117.178284,True,N582MM/data/recovered/N582MM_2024-03-19_airplanes-live_trace_full.json.gz
+2024-03-19,N582MM,adsb-lol,20240319_phoenix,event,Phoenix,AZ,2024-03-19,0,Charlie,348,True,1.96,33.623075,-111.910329,True,N582MM/data/recovered/N582MM_2024-03-19_adsb-lol_trace_full.json.gz
+2024-03-19,N582MM,airplanes-live,20240319_phoenix,event,Phoenix,AZ,2024-03-19,0,Charlie,375,True,1.93,33.622889,-111.910543,True,N582MM/data/recovered/N582MM_2024-03-19_airplanes-live_trace_full.json.gz
+2024-03-19,N582MM,adsb-lol,20240319_pittsburgh,event,Pittsburgh,PA,2024-03-19,0,TPUSA,316,True,6.07,40.354296,-79.931514,True,N582MM/data/recovered/N582MM_2024-03-19_adsb-lol_trace_full.json.gz
+2024-03-19,N582MM,airplanes-live,20240319_pittsburgh,event,Pittsburgh,PA,2024-03-19,0,TPUSA,345,True,6.07,40.354296,-79.931514,True,N582MM/data/recovered/N582MM_2024-03-19_airplanes-live_trace_full.json.gz
+2024-03-19,N582MM,adsb-lol,control_albuquerque,control,Albuquerque,NM,,0,CONTROL — no known Kirk/TPUSA event,10,False,47.91,,,True,N582MM/data/recovered/N582MM_2024-03-19_adsb-lol_trace_full.json.gz
+2024-03-19,N582MM,airplanes-live,control_albuquerque,control,Albuquerque,NM,,0,CONTROL — no known Kirk/TPUSA event,3,False,48.76,,,True,N582MM/data/recovered/N582MM_2024-03-19_airplanes-live_trace_full.json.gz
+2024-03-20,N582MM,adsb-lol,control_albuquerque,control,Albuquerque,NM,,0,CONTROL — no known Kirk/TPUSA event,22,False,41.93,,,True,N582MM/data/recovered/N582MM_2024-03-20_adsb-lol_trace_full.json.gz
+2024-03-20,N582MM,airplanes-live,control_albuquerque,control,Albuquerque,NM,,0,CONTROL — no known Kirk/TPUSA event,29,False,41.94,,,True,N582MM/data/recovered/N582MM_2024-03-20_airplanes-live_trace_full.json.gz
+2024-03-21,N560TW,adsb-lol,control_albuquerque,control,Albuquerque,NM,,0,CONTROL — no known Kirk/TPUSA event,8,False,49.16,,,True,N560TW/data/recovered/N560TW_2024-03-21_adsb-lol_trace_full.json.gz
+2024-03-21,N560TW,airplanes-live,control_albuquerque,control,Albuquerque,NM,,0,CONTROL — no known Kirk/TPUSA event,8,False,49.17,,,True,N560TW/data/recovered/N560TW_2024-03-21_airplanes-live_trace_full.json.gz
+2024-03-21,N582MM,adsb-lol,20240321_las_vegas,event,Las Vegas,NV,2024-03-21,0,Charlie,156,True,11.73,36.073677,-115.143557,True,N582MM/data/recovered/N582MM_2024-03-21_adsb-lol_trace_full.json.gz
+2024-03-21,N582MM,airplanes-live,20240321_las_vegas,event,Las Vegas,NV,2024-03-21,0,Charlie,157,True,11.73,36.073677,-115.143557,True,N582MM/data/recovered/N582MM_2024-03-21_airplanes-live_trace_full.json.gz
+2024-03-22,N102DZ,adsb-lol,control_syracuse,control,Syracuse,NY,,0,CONTROL — no known Kirk/TPUSA event,42,False,13.47,,,True,N102DZ/data/recovered/N102DZ_2024-03-22_adsb-lol_trace_full.json.gz
+2024-03-22,N102DZ,airplanes-live,control_syracuse,control,Syracuse,NY,,0,CONTROL — no known Kirk/TPUSA event,41,False,13.47,,,True,N102DZ/data/recovered/N102DZ_2024-03-22_airplanes-live_trace_full.json.gz
+2024-03-22,N560TW,airplanes-live,control_shreveport,control,Shreveport,LA,,0,CONTROL — no known Kirk/TPUSA event,29,False,20.1,,,True,N560TW/data/recovered/N560TW_2024-03-22_airplanes-live_trace_full.json.gz
+2024-03-22,N582MM,airplanes-live,20240321_las_vegas,event,Las Vegas,NV,2024-03-21,1,Charlie,268,True,10.96,36.081953,-115.168991,True,N582MM/data/recovered/N582MM_2024-03-22_airplanes-live_trace_full.json.gz
+2024-03-27,N582MM,airplanes-live,20240327_lubbock,event,Lubbock,TX,2024-03-27,0,Charlie,118,False,10.44,,,True,N582MM/data/recovered/N582MM_2024-03-27_airplanes-live_trace_full.json.gz
+2024-03-28,N582MM,airplanes-live,20240327_lubbock,event,Lubbock,TX,2024-03-27,1,Charlie,148,False,8.69,,,True,N582MM/data/recovered/N582MM_2024-03-28_airplanes-live_trace_full.json.gz
+2024-03-28,N582MM,adsb-lol,control_albuquerque,control,Albuquerque,NM,,0,CONTROL — no known Kirk/TPUSA event,23,False,43.36,,,True,N582MM/data/recovered/N582MM_2024-03-28_adsb-lol_trace_full.json.gz
+2024-03-28,N582MM,airplanes-live,control_albuquerque,control,Albuquerque,NM,,0,CONTROL — no known Kirk/TPUSA event,26,False,43.37,,,True,N582MM/data/recovered/N582MM_2024-03-28_airplanes-live_trace_full.json.gz
+2024-04-03,N582MM,adsb-lol,control_chattanooga,control,Chattanooga,TN,,0,CONTROL — no known Kirk/TPUSA event,8,False,48.75,,,True,N582MM/data/recovered/N582MM_2024-04-03_adsb-lol_trace_full.json.gz
+2024-04-03,N582MM,airplanes-live,control_chattanooga,control,Chattanooga,TN,,0,CONTROL — no known Kirk/TPUSA event,8,False,48.75,,,True,N582MM/data/recovered/N582MM_2024-04-03_airplanes-live_trace_full.json.gz
+2024-04-03,SU-BTT,airplanes-live,20240403_lawrence,event,Lawrence,KS,2024-04-03,0,Charlie,21,False,39.93,,,True,SU-BTT/data/recovered/SU-BTT_2024-04-03_airplanes-live_trace_full.json
+2024-04-04,N102DZ,adsb-lol,control_des_moines,control,Des Moines,IA,,0,CONTROL — no known Kirk/TPUSA event,17,False,43.2,,,True,N102DZ/data/recovered/N102DZ_2024-04-04_adsb-lol_trace_full.json.gz
+2024-04-04,N102DZ,airplanes-live,control_des_moines,control,Des Moines,IA,,0,CONTROL — no known Kirk/TPUSA event,18,False,43.2,,,True,N102DZ/data/recovered/N102DZ_2024-04-04_airplanes-live_trace_full.json.gz
+2024-04-08,N102DZ,adsb-lol,20240409_omaha,event,Omaha,NE,2024-04-09,-1,Charlie,20,False,37.25,,,True,N102DZ/data/recovered/N102DZ_2024-04-08_adsb-lol_trace_full.json.gz
+2024-04-08,N102DZ,airplanes-live,20240409_omaha,event,Omaha,NE,2024-04-09,-1,Charlie,19,False,37.23,,,True,N102DZ/data/recovered/N102DZ_2024-04-08_airplanes-live_trace_full.json.gz
+2024-04-08,N102DZ,adsb-lol,control_des_moines,control,Des Moines,IA,,0,CONTROL — no known Kirk/TPUSA event,25,False,26.63,,,True,N102DZ/data/recovered/N102DZ_2024-04-08_adsb-lol_trace_full.json.gz
+2024-04-08,N102DZ,airplanes-live,control_des_moines,control,Des Moines,IA,,0,CONTROL — no known Kirk/TPUSA event,25,False,26.63,,,True,N102DZ/data/recovered/N102DZ_2024-04-08_airplanes-live_trace_full.json.gz
+2024-04-08,N582MM,adsb-lol,control_albuquerque,control,Albuquerque,NM,,0,CONTROL — no known Kirk/TPUSA event,21,False,40.47,,,True,N582MM/data/recovered/N582MM_2024-04-08_adsb-lol_trace_full.json.gz
+2024-04-08,N582MM,airplanes-live,control_albuquerque,control,Albuquerque,NM,,0,CONTROL — no known Kirk/TPUSA event,23,False,40.48,,,True,N582MM/data/recovered/N582MM_2024-04-08_airplanes-live_trace_full.json.gz
+2024-04-09,N582MM,adsb-lol,20240409_omaha,event,Omaha,NE,2024-04-09,0,Charlie,108,False,9.3,,,True,N582MM/data/recovered/N582MM_2024-04-09_adsb-lol_trace_full.json.gz
+2024-04-09,N582MM,airplanes-live,20240409_omaha,event,Omaha,NE,2024-04-09,0,Charlie,108,False,9.3,,,True,N582MM/data/recovered/N582MM_2024-04-09_airplanes-live_trace_full.json.gz
+2024-04-09,N582MM,adsb-lol,control_des_moines,control,Des Moines,IA,,0,CONTROL — no known Kirk/TPUSA event,63,False,2.48,,,True,N582MM/data/recovered/N582MM_2024-04-09_adsb-lol_trace_full.json.gz
+2024-04-09,N582MM,airplanes-live,control_des_moines,control,Des Moines,IA,,0,CONTROL — no known Kirk/TPUSA event,61,False,2.5,,,True,N582MM/data/recovered/N582MM_2024-04-09_airplanes-live_trace_full.json.gz
+2024-04-10,N582MM,adsb-lol,20240409_omaha,event,Omaha,NE,2024-04-09,1,Charlie,160,False,1.8,,,True,N582MM/data/recovered/N582MM_2024-04-10_adsb-lol_trace_full.json.gz
+2024-04-10,N582MM,airplanes-live,20240409_omaha,event,Omaha,NE,2024-04-09,1,Charlie,171,False,1.8,,,True,N582MM/data/recovered/N582MM_2024-04-10_airplanes-live_trace_full.json.gz
+2024-04-23,N582MM,adsb-lol,20240423_salt_lake_city,event,Salt Lake City,UT,2024-04-23,0,Charlie,114,True,1.43,40.782006,-111.960016,True,N582MM/data/recovered/N582MM_2024-04-23_adsb-lol_trace_full.json.gz
+2024-04-23,N582MM,airplanes-live,20240423_salt_lake_city,event,Salt Lake City,UT,2024-04-23,0,Charlie,123,True,1.43,40.782006,-111.960016,True,N582MM/data/recovered/N582MM_2024-04-23_airplanes-live_trace_full.json.gz
+2024-04-23,N888KG,adsb-lol,20240423_salt_lake_city,event,Salt Lake City,UT,2024-04-23,0,Charlie,54,True,36.31,40.219504,-111.719549,False,N888KG/data/recovered/N888KG_2024-04-23_adsb-lol_trace_full.json.gz
+2024-04-23,N888KG,airplanes-live,20240423_salt_lake_city,event,Salt Lake City,UT,2024-04-23,0,Charlie,54,True,36.31,40.219504,-111.719549,False,N888KG/data/recovered/N888KG_2024-04-23_airplanes-live_trace_full.json.gz
+2024-04-23,SU-BTT,adsb-lol,20240423_salt_lake_city,event,Salt Lake City,UT,2024-04-23,0,Charlie,177,True,27.72,40.225342,-111.728119,False,SU-BTT/data/recovered/SU-BTT_2024-04-23_adsb-lol_trace_full.json
+2024-04-23,SU-BTT,airplanes-live,20240423_salt_lake_city,event,Salt Lake City,UT,2024-04-23,0,Charlie,180,True,27.72,40.225342,-111.728119,True,SU-BTT/data/recovered/SU-BTT_2024-04-23_airplanes-live_trace_full.json
+2024-04-24,N102DZ,adsb-lol,20240423_salt_lake_city,event,Salt Lake City,UT,2024-04-23,1,Charlie,30,False,1.93,,,True,N102DZ/data/recovered/N102DZ_2024-04-24_adsb-lol_trace_full.json.gz
+2024-04-24,N102DZ,airplanes-live,20240423_salt_lake_city,event,Salt Lake City,UT,2024-04-23,1,Charlie,30,False,1.9,,,True,N102DZ/data/recovered/N102DZ_2024-04-24_airplanes-live_trace_full.json.gz
+2024-04-24,N102DZ,adsb-lol,control_des_moines,control,Des Moines,IA,,0,CONTROL — no known Kirk/TPUSA event,13,False,44.68,,,True,N102DZ/data/recovered/N102DZ_2024-04-24_adsb-lol_trace_full.json.gz
+2024-04-24,N102DZ,airplanes-live,control_des_moines,control,Des Moines,IA,,0,CONTROL — no known Kirk/TPUSA event,13,False,44.67,,,True,N102DZ/data/recovered/N102DZ_2024-04-24_airplanes-live_trace_full.json.gz
+2024-04-24,N560TW,adsb-lol,control_albuquerque,control,Albuquerque,NM,,0,CONTROL — no known Kirk/TPUSA event,32,False,4.96,,,True,N560TW/data/recovered/N560TW_2024-04-24_adsb-lol_trace_full.json.gz
+2024-04-24,N560TW,airplanes-live,control_albuquerque,control,Albuquerque,NM,,0,CONTROL — no known Kirk/TPUSA event,33,False,4.93,,,True,N560TW/data/recovered/N560TW_2024-04-24_airplanes-live_trace_full.json.gz
+2024-04-24,N582MM,adsb-lol,20240423_salt_lake_city,event,Salt Lake City,UT,2024-04-23,1,Charlie,154,True,4.91,40.775454,-111.96064,True,N582MM/data/recovered/N582MM_2024-04-24_adsb-lol_trace_full.json.gz
+2024-04-24,N582MM,airplanes-live,20240423_salt_lake_city,event,Salt Lake City,UT,2024-04-23,1,Charlie,181,True,4.91,40.775454,-111.96064,True,N582MM/data/recovered/N582MM_2024-04-24_airplanes-live_trace_full.json.gz
+2024-05-07,N102DZ,adsb-lol,control_des_moines,control,Des Moines,IA,,0,CONTROL — no known Kirk/TPUSA event,31,False,17.58,,,True,N102DZ/data/recovered/N102DZ_2024-05-07_adsb-lol_trace_full.json.gz
+2024-05-07,N102DZ,airplanes-live,control_des_moines,control,Des Moines,IA,,0,CONTROL — no known Kirk/TPUSA event,30,False,17.6,,,True,N102DZ/data/recovered/N102DZ_2024-05-07_airplanes-live_trace_full.json.gz
+2024-05-09,N102DZ,adsb-lol,control_chattanooga,control,Chattanooga,TN,,0,CONTROL — no known Kirk/TPUSA event,39,False,15.53,,,True,N102DZ/data/recovered/N102DZ_2024-05-09_adsb-lol_trace_full.json.gz
+2024-05-09,N102DZ,airplanes-live,control_chattanooga,control,Chattanooga,TN,,0,CONTROL — no known Kirk/TPUSA event,39,False,15.51,,,True,N102DZ/data/recovered/N102DZ_2024-05-09_airplanes-live_trace_full.json.gz
+2024-05-16,N102DZ,adsb-lol,control_des_moines,control,Des Moines,IA,,0,CONTROL — no known Kirk/TPUSA event,26,False,35.04,,,True,N102DZ/data/recovered/N102DZ_2024-05-16_adsb-lol_trace_full.json.gz
+2024-05-16,N102DZ,airplanes-live,control_des_moines,control,Des Moines,IA,,0,CONTROL — no known Kirk/TPUSA event,26,False,35.04,,,True,N102DZ/data/recovered/N102DZ_2024-05-16_airplanes-live_trace_full.json.gz
+2024-05-17,N102DZ,adsb-lol,control_albuquerque,control,Albuquerque,NM,,0,CONTROL — no known Kirk/TPUSA event,27,False,25.67,,,True,N102DZ/data/recovered/N102DZ_2024-05-17_adsb-lol_trace_full.json.gz
+2024-05-17,N102DZ,airplanes-live,control_albuquerque,control,Albuquerque,NM,,0,CONTROL — no known Kirk/TPUSA event,28,False,25.67,,,True,N102DZ/data/recovered/N102DZ_2024-05-17_airplanes-live_trace_full.json.gz
+2024-05-17,N102DZ,adsb-lol,control_shreveport,control,Shreveport,LA,,0,CONTROL — no known Kirk/TPUSA event,29,False,18.65,,,True,N102DZ/data/recovered/N102DZ_2024-05-17_adsb-lol_trace_full.json.gz
+2024-05-17,N102DZ,airplanes-live,control_shreveport,control,Shreveport,LA,,0,CONTROL — no known Kirk/TPUSA event,30,False,18.72,,,True,N102DZ/data/recovered/N102DZ_2024-05-17_airplanes-live_trace_full.json.gz
+2024-06-07,N582MM,adsb-lol,20240607_san_antonio,event,San Antonio,TX,2024-06-07,0,Charlie,542,True,5.67,29.535976,-98.47681,True,N582MM/data/recovered/N582MM_2024-06-07_adsb-lol_trace_full.json.gz
+2024-06-07,N582MM,airplanes-live,20240607_san_antonio,event,San Antonio,TX,2024-06-07,0,Charlie,412,False,5.69,,,True,N582MM/data/recovered/N582MM_2024-06-07_airplanes-live_trace_full.json.gz
+2024-06-07,N582MM,adsb-lol,20240608_san_antonio,event,San Antonio,TX,2024-06-08,-1,Charlie,542,True,5.67,29.535976,-98.47681,True,N582MM/data/recovered/N582MM_2024-06-07_adsb-lol_trace_full.json.gz
+2024-06-07,N582MM,airplanes-live,20240608_san_antonio,event,San Antonio,TX,2024-06-08,-1,Charlie,412,False,5.69,,,True,N582MM/data/recovered/N582MM_2024-06-07_airplanes-live_trace_full.json.gz
+2024-06-08,N582MM,adsb-lol,20240607_san_antonio,event,San Antonio,TX,2024-06-07,1,Charlie,433,True,5.68,29.537807,-98.484522,True,N582MM/data/recovered/N582MM_2024-06-08_adsb-lol_trace_full.json.gz
+2024-06-08,N582MM,airplanes-live,20240607_san_antonio,event,San Antonio,TX,2024-06-07,1,Charlie,177,True,5.68,29.537807,-98.48452,True,N582MM/data/recovered/N582MM_2024-06-08_airplanes-live_trace_full.json.gz
+2024-06-08,N582MM,adsb-lol,20240608_san_antonio,event,San Antonio,TX,2024-06-08,0,Charlie,433,True,5.68,29.537807,-98.484522,True,N582MM/data/recovered/N582MM_2024-06-08_adsb-lol_trace_full.json.gz
+2024-06-08,N582MM,airplanes-live,20240608_san_antonio,event,San Antonio,TX,2024-06-08,0,Charlie,177,True,5.68,29.537807,-98.48452,True,N582MM/data/recovered/N582MM_2024-06-08_airplanes-live_trace_full.json.gz
+2024-06-08,N582MM,adsb-lol,20240609_san_antonio,event,San Antonio,TX,2024-06-09,-1,Charlie,433,True,5.68,29.537807,-98.484522,True,N582MM/data/recovered/N582MM_2024-06-08_adsb-lol_trace_full.json.gz
+2024-06-08,N582MM,airplanes-live,20240609_san_antonio,event,San Antonio,TX,2024-06-09,-1,Charlie,177,True,5.68,29.537807,-98.48452,True,N582MM/data/recovered/N582MM_2024-06-08_airplanes-live_trace_full.json.gz
+2024-06-10,N582MM,adsb-lol,control_spokane,control,Spokane,WA,,0,CONTROL — no known Kirk/TPUSA event,17,False,35.28,,,True,N582MM/data/recovered/N582MM_2024-06-10_adsb-lol_trace_full.json.gz
+2024-06-10,N582MM,airplanes-live,control_spokane,control,Spokane,WA,,0,CONTROL — no known Kirk/TPUSA event,231,True,24.29,47.773734,-116.829951,True,N582MM/data/recovered/N582MM_2024-06-10_airplanes-live_trace_full.json.gz
+2024-06-13,N582MM,adsb-lol,20240614_detroit,event,Detroit,MI,2024-06-14,-1,Charlie,321,False,7.87,,,True,N582MM/data/recovered/N582MM_2024-06-13_adsb-lol_trace_full.json.gz
+2024-06-13,N582MM,airplanes-live,20240614_detroit,event,Detroit,MI,2024-06-14,-1,Charlie,310,False,7.87,,,True,N582MM/data/recovered/N582MM_2024-06-13_airplanes-live_trace_full.json.gz
+2024-06-13,N582MM,adsb-lol,control_albuquerque,control,Albuquerque,NM,,0,CONTROL — no known Kirk/TPUSA event,35,False,1.87,,,True,N582MM/data/recovered/N582MM_2024-06-13_adsb-lol_trace_full.json.gz
+2024-06-13,N582MM,airplanes-live,control_albuquerque,control,Albuquerque,NM,,0,CONTROL — no known Kirk/TPUSA event,36,False,2.06,,,True,N582MM/data/recovered/N582MM_2024-06-13_airplanes-live_trace_full.json.gz
+2024-06-15,N582MM,adsb-lol,20240614_detroit,event,Detroit,MI,2024-06-14,1,Charlie,218,True,16.11,42.213787,-83.341005,True,N582MM/data/recovered/N582MM_2024-06-15_adsb-lol_trace_full.json.gz
+2024-06-15,N582MM,airplanes-live,20240614_detroit,event,Detroit,MI,2024-06-14,1,Charlie,223,True,16.11,42.213787,-83.341005,True,N582MM/data/recovered/N582MM_2024-06-15_airplanes-live_trace_full.json.gz
+2024-06-15,N582MM,adsb-lol,20240615_detroit,event,Detroit,MI,2024-06-15,0,Charlie,218,True,16.11,42.213787,-83.341005,True,N582MM/data/recovered/N582MM_2024-06-15_adsb-lol_trace_full.json.gz
+2024-06-15,N582MM,airplanes-live,20240615_detroit,event,Detroit,MI,2024-06-15,0,Charlie,223,True,16.11,42.213787,-83.341005,True,N582MM/data/recovered/N582MM_2024-06-15_airplanes-live_trace_full.json.gz
+2024-06-15,N582MM,adsb-lol,20240616_detroit,event,Detroit,MI,2024-06-16,-1,Charlie,218,True,16.11,42.213787,-83.341005,True,N582MM/data/recovered/N582MM_2024-06-15_adsb-lol_trace_full.json.gz
+2024-06-15,N582MM,airplanes-live,20240616_detroit,event,Detroit,MI,2024-06-16,-1,Charlie,223,True,16.11,42.213787,-83.341005,True,N582MM/data/recovered/N582MM_2024-06-15_airplanes-live_trace_full.json.gz
+2024-06-16,N582MM,adsb-lol,20240615_detroit,event,Detroit,MI,2024-06-15,1,Charlie,137,False,18.26,,,True,N582MM/data/recovered/N582MM_2024-06-16_adsb-lol_trace_full.json.gz
+2024-06-16,N582MM,airplanes-live,20240615_detroit,event,Detroit,MI,2024-06-15,1,Charlie,117,False,18.26,,,True,N582MM/data/recovered/N582MM_2024-06-16_airplanes-live_trace_full.json.gz
+2024-06-16,N582MM,adsb-lol,20240616_detroit,event,Detroit,MI,2024-06-16,0,Charlie,137,False,18.26,,,True,N582MM/data/recovered/N582MM_2024-06-16_adsb-lol_trace_full.json.gz
+2024-06-16,N582MM,airplanes-live,20240616_detroit,event,Detroit,MI,2024-06-16,0,Charlie,117,False,18.26,,,True,N582MM/data/recovered/N582MM_2024-06-16_airplanes-live_trace_full.json.gz
+2024-06-16,N582MM,adsb-lol,control_albuquerque,control,Albuquerque,NM,,0,CONTROL — no known Kirk/TPUSA event,14,False,46.82,,,True,N582MM/data/recovered/N582MM_2024-06-16_adsb-lol_trace_full.json.gz
+2024-06-16,N582MM,airplanes-live,control_albuquerque,control,Albuquerque,NM,,0,CONTROL — no known Kirk/TPUSA event,14,False,46.83,,,True,N582MM/data/recovered/N582MM_2024-06-16_airplanes-live_trace_full.json.gz
+2024-06-17,N582MM,adsb-lol,control_albuquerque,control,Albuquerque,NM,,0,CONTROL — no known Kirk/TPUSA event,70,False,42.07,,,True,N582MM/data/recovered/N582MM_2024-06-17_adsb-lol_trace_full.json.gz
+2024-06-17,N582MM,airplanes-live,control_albuquerque,control,Albuquerque,NM,,0,CONTROL — no known Kirk/TPUSA event,11,False,48.92,,,True,N582MM/data/recovered/N582MM_2024-06-17_airplanes-live_trace_full.json.gz
+2024-07-23,N872RA,adsb-lol,control_albuquerque,control,Albuquerque,NM,,0,CONTROL — no known Kirk/TPUSA event,281,True,4.42,35.039404,-106.616249,True,N872RA/data/recovered/N872RA_2024-07-23_adsb-lol_trace_full.json.gz
+2024-07-23,N872RA,airplanes-live,control_albuquerque,control,Albuquerque,NM,,0,CONTROL — no known Kirk/TPUSA event,225,True,4.64,35.039567,-106.616521,True,N872RA/data/recovered/N872RA_2024-07-23_airplanes-live_trace_full.json.gz
+2024-07-24,N40JD,adsb-lol,20240724_west_palm_beach,event,West Palm Beach,FL,2024-07-24,0,Charlie,275,False,31.08,,,True,N40JD/data/recovered/N40JD_2024-07-24_adsb-lol_trace_full.json.gz
+2024-07-24,N40JD,airplanes-live,20240724_west_palm_beach,event,West Palm Beach,FL,2024-07-24,0,Charlie,268,False,31.08,,,True,N40JD/data/recovered/N40JD_2024-07-24_airplanes-live_trace_full.json.gz
+2024-07-24,N40JD,adsb-lol,20240725_west_palm_beach,event,West Palm Beach,FL,2024-07-25,-1,Charlie,275,False,31.08,,,True,N40JD/data/recovered/N40JD_2024-07-24_adsb-lol_trace_full.json.gz
+2024-07-24,N40JD,airplanes-live,20240725_west_palm_beach,event,West Palm Beach,FL,2024-07-25,-1,Charlie,268,False,31.08,,,True,N40JD/data/recovered/N40JD_2024-07-24_airplanes-live_trace_full.json.gz
+2024-07-24,N582MM,adsb-lol,control_des_moines,control,Des Moines,IA,,0,CONTROL — no known Kirk/TPUSA event,32,False,22.92,,,True,N582MM/data/recovered/N582MM_2024-07-24_adsb-lol_trace_full.json.gz
+2024-07-24,N582MM,airplanes-live,control_des_moines,control,Des Moines,IA,,0,CONTROL — no known Kirk/TPUSA event,35,False,22.92,,,True,N582MM/data/recovered/N582MM_2024-07-24_airplanes-live_trace_full.json.gz
+2024-07-26,N582MM,adsb-lol,20240725_west_palm_beach,event,West Palm Beach,FL,2024-07-25,1,Charlie,246,False,5.7,,,True,N582MM/data/recovered/N582MM_2024-07-26_adsb-lol_trace_full.json.gz
+2024-07-26,N582MM,airplanes-live,20240725_west_palm_beach,event,West Palm Beach,FL,2024-07-25,1,Charlie,268,False,4.22,,,True,N582MM/data/recovered/N582MM_2024-07-26_airplanes-live_trace_full.json.gz
+2024-07-26,N582MM,adsb-lol,20240726_west_palm_beach,event,West Palm Beach,FL,2024-07-26,0,Charlie,492,False,5.7,,,True,N582MM/data/recovered/N582MM_2024-07-26_adsb-lol_trace_full.json.gz
+2024-07-26,N582MM,airplanes-live,20240726_west_palm_beach,event,West Palm Beach,FL,2024-07-26,0,Charlie,536,False,4.22,,,True,N582MM/data/recovered/N582MM_2024-07-26_airplanes-live_trace_full.json.gz
+2024-07-26,N582MM,adsb-lol,20240727_west_palm_beach,event,West Palm Beach,FL,2024-07-27,-1,Charlie,246,False,5.7,,,True,N582MM/data/recovered/N582MM_2024-07-26_adsb-lol_trace_full.json.gz
+2024-07-26,N582MM,airplanes-live,20240727_west_palm_beach,event,West Palm Beach,FL,2024-07-27,-1,Charlie,268,False,4.22,,,True,N582MM/data/recovered/N582MM_2024-07-26_airplanes-live_trace_full.json.gz
+2024-07-26,N582MM,adsb-lol,control_chattanooga,control,Chattanooga,TN,,0,CONTROL — no known Kirk/TPUSA event,40,False,15.4,,,True,N582MM/data/recovered/N582MM_2024-07-26_adsb-lol_trace_full.json.gz
+2024-07-26,N582MM,airplanes-live,control_chattanooga,control,Chattanooga,TN,,0,CONTROL — no known Kirk/TPUSA event,40,False,15.38,,,True,N582MM/data/recovered/N582MM_2024-07-26_airplanes-live_trace_full.json.gz
+2024-07-27,N582MM,adsb-lol,20240726_west_palm_beach,event,West Palm Beach,FL,2024-07-26,1,Charlie,510,False,3.22,,,True,N582MM/data/recovered/N582MM_2024-07-27_adsb-lol_trace_full.json.gz
+2024-07-27,N582MM,airplanes-live,20240726_west_palm_beach,event,West Palm Beach,FL,2024-07-26,1,Charlie,488,False,3.19,,,True,N582MM/data/recovered/N582MM_2024-07-27_airplanes-live_trace_full.json.gz
+2024-07-27,N582MM,adsb-lol,20240727_west_palm_beach,event,West Palm Beach,FL,2024-07-27,0,Charlie,255,False,3.22,,,True,N582MM/data/recovered/N582MM_2024-07-27_adsb-lol_trace_full.json.gz
+2024-07-27,N582MM,airplanes-live,20240727_west_palm_beach,event,West Palm Beach,FL,2024-07-27,0,Charlie,244,False,3.19,,,True,N582MM/data/recovered/N582MM_2024-07-27_airplanes-live_trace_full.json.gz
+2024-07-27,N582MM,adsb-lol,20240728_west_palm_beach,event,West Palm Beach,FL,2024-07-28,-1,Charlie,255,False,3.22,,,True,N582MM/data/recovered/N582MM_2024-07-27_adsb-lol_trace_full.json.gz
+2024-07-27,N582MM,airplanes-live,20240728_west_palm_beach,event,West Palm Beach,FL,2024-07-28,-1,Charlie,244,False,3.19,,,True,N582MM/data/recovered/N582MM_2024-07-27_airplanes-live_trace_full.json.gz
+2024-07-28,N872RA,adsb-lol,control_albuquerque,control,Albuquerque,NM,,0,CONTROL — no known Kirk/TPUSA event,164,False,28.85,,,True,N872RA/data/recovered/N872RA_2024-07-28_adsb-lol_trace_full.json.gz
+2024-07-28,N872RA,airplanes-live,control_albuquerque,control,Albuquerque,NM,,0,CONTROL — no known Kirk/TPUSA event,179,False,28.85,,,True,N872RA/data/recovered/N872RA_2024-07-28_airplanes-live_trace_full.json.gz
+2024-09-03,N560TW,adsb-lol,20240903_phoenix,event,Phoenix,AZ,2024-09-03,0,Charlie,362,True,3.89,33.622365,-111.908941,True,N560TW/data/recovered/N560TW_2024-09-03_adsb-lol_trace_full.json.gz
+2024-09-03,N560TW,airplanes-live,20240903_phoenix,event,Phoenix,AZ,2024-09-03,0,Charlie,229,True,3.88,33.62249,-111.909135,True,N560TW/data/recovered/N560TW_2024-09-03_airplanes-live_trace_full.json.gz
+2024-09-03,N582MM,adsb-lol,20240903_phoenix,event,Phoenix,AZ,2024-09-03,0,Charlie,1,False,10.81,,,True,N582MM/data/recovered/N582MM_2024-09-03_adsb-lol_trace_full.json.gz
+2024-09-03,N872RA,adsb-lol,control_spokane,control,Spokane,WA,,0,CONTROL — no known Kirk/TPUSA event,89,False,23.51,,,True,N872RA/data/recovered/N872RA_2024-09-03_adsb-lol_trace_full.json.gz
+2024-09-03,N872RA,airplanes-live,control_spokane,control,Spokane,WA,,0,CONTROL — no known Kirk/TPUSA event,140,False,23.5,,,True,N872RA/data/recovered/N872RA_2024-09-03_airplanes-live_trace_full.json.gz
+2024-09-04,N560TW,adsb-lol,20240903_phoenix,event,Phoenix,AZ,2024-09-03,1,Charlie,241,True,10.73,33.625786,-111.907243,True,N560TW/data/recovered/N560TW_2024-09-04_adsb-lol_trace_full.json.gz
+2024-09-04,N560TW,airplanes-live,20240903_phoenix,event,Phoenix,AZ,2024-09-03,1,Charlie,232,True,10.73,33.625786,-111.907243,True,N560TW/data/recovered/N560TW_2024-09-04_airplanes-live_trace_full.json.gz
+2024-09-04,N582MM,adsb-lol,20240903_phoenix,event,Phoenix,AZ,2024-09-03,1,Charlie,190,True,10.64,33.427195,-112.024183,True,N582MM/data/recovered/N582MM_2024-09-04_adsb-lol_trace_full.json.gz
+2024-09-04,N582MM,airplanes-live,20240903_phoenix,event,Phoenix,AZ,2024-09-03,1,Charlie,200,True,10.57,33.426997,-112.023496,True,N582MM/data/recovered/N582MM_2024-09-04_airplanes-live_trace_full.json.gz
+2024-09-04,N872RA,adsb-lol,control_albuquerque,control,Albuquerque,NM,,0,CONTROL — no known Kirk/TPUSA event,74,False,28.85,,,True,N872RA/data/recovered/N872RA_2024-09-04_adsb-lol_trace_full.json.gz
+2024-09-04,N872RA,airplanes-live,control_albuquerque,control,Albuquerque,NM,,0,CONTROL — no known Kirk/TPUSA event,189,True,28.85,35.62207,-106.084389,True,N872RA/data/recovered/N872RA_2024-09-04_airplanes-live_trace_full.json.gz
+2024-09-05,N582MM,adsb-lol,20240905_madison,event,Madison,WI,2024-09-05,0,Charlie,281,True,1.25,43.142228,-89.33415,True,N582MM/data/recovered/N582MM_2024-09-05_adsb-lol_trace_full.json.gz
+2024-09-05,N582MM,airplanes-live,20240905_madison,event,Madison,WI,2024-09-05,0,Charlie,275,False,1.24,,,True,N582MM/data/recovered/N582MM_2024-09-05_airplanes-live_trace_full.json.gz
+2024-09-05,N582MM,adsb-lol,control_des_moines,control,Des Moines,IA,,0,CONTROL — no known Kirk/TPUSA event,34,False,13.45,,,True,N582MM/data/recovered/N582MM_2024-09-05_adsb-lol_trace_full.json.gz
+2024-09-05,N582MM,airplanes-live,control_des_moines,control,Des Moines,IA,,0,CONTROL — no known Kirk/TPUSA event,34,False,13.44,,,True,N582MM/data/recovered/N582MM_2024-09-05_airplanes-live_trace_full.json.gz
+2024-09-06,N582MM,adsb-lol,control_des_moines,control,Des Moines,IA,,0,CONTROL — no known Kirk/TPUSA event,55,False,12.75,,,True,N582MM/data/recovered/N582MM_2024-09-06_adsb-lol_trace_full.json.gz
+2024-09-06,N582MM,airplanes-live,control_des_moines,control,Des Moines,IA,,0,CONTROL — no known Kirk/TPUSA event,57,False,12.76,,,True,N582MM/data/recovered/N582MM_2024-09-06_airplanes-live_trace_full.json.gz
+2024-09-10,N582MM,adsb-lol,20240910_boulder,event,Boulder,CO,2024-09-10,0,Charlie,582,True,9.95,39.908815,-105.116058,True,N582MM/data/recovered/N582MM_2024-09-10_adsb-lol_trace_full.json.gz
+2024-09-10,N582MM,airplanes-live,20240910_boulder,event,Boulder,CO,2024-09-10,0,Charlie,383,True,9.95,39.908733,-105.115906,True,N582MM/data/recovered/N582MM_2024-09-10_airplanes-live_trace_full.json.gz
+2024-09-10,N872RA,adsb-lol,20240910_boulder,event,Boulder,CO,2024-09-10,0,Charlie,231,True,11.08,39.576641,-104.851135,True,N872RA/data/recovered/N872RA_2024-09-10_adsb-lol_trace_full.json.gz
+2024-09-10,N872RA,airplanes-live,20240910_boulder,event,Boulder,CO,2024-09-10,0,Charlie,224,True,11.08,39.576641,-104.851135,True,N872RA/data/recovered/N872RA_2024-09-10_airplanes-live_trace_full.json.gz
+2024-09-11,N582MM,adsb-lol,20240911_denton,event,Denton,TX,2024-09-11,0,Charlie,340,True,3.28,32.845886,-96.855343,True,N582MM/data/recovered/N582MM_2024-09-11_adsb-lol_trace_full.json.gz
+2024-09-11,N582MM,airplanes-live,20240911_denton,event,Denton,TX,2024-09-11,0,Charlie,354,True,3.28,32.845886,-96.855343,True,N582MM/data/recovered/N582MM_2024-09-11_airplanes-live_trace_full.json.gz
+2024-09-11,N582MM,adsb-lol,control_albuquerque,control,Albuquerque,NM,,0,CONTROL — no known Kirk/TPUSA event,5,False,49.22,,,True,N582MM/data/recovered/N582MM_2024-09-11_adsb-lol_trace_full.json.gz
+2024-09-11,N582MM,airplanes-live,control_albuquerque,control,Albuquerque,NM,,0,CONTROL — no known Kirk/TPUSA event,6,False,49.22,,,True,N582MM/data/recovered/N582MM_2024-09-11_airplanes-live_trace_full.json.gz
+2024-09-11,N872RA,adsb-lol,20240910_boulder,event,Boulder,CO,2024-09-10,1,Charlie,291,True,29.86,39.577363,-104.851166,True,N872RA/data/recovered/N872RA_2024-09-11_adsb-lol_trace_full.json.gz
+2024-09-11,N872RA,airplanes-live,20240910_boulder,event,Boulder,CO,2024-09-10,1,Charlie,301,True,29.86,39.577363,-104.851166,True,N872RA/data/recovered/N872RA_2024-09-11_airplanes-live_trace_full.json.gz
+2024-09-12,N102DZ,adsb-lol,control_des_moines,control,Des Moines,IA,,0,CONTROL — no known Kirk/TPUSA event,16,False,43.56,,,True,N102DZ/data/recovered/N102DZ_2024-09-12_adsb-lol_trace_full.json.gz
+2024-09-12,N102DZ,airplanes-live,control_des_moines,control,Des Moines,IA,,0,CONTROL — no known Kirk/TPUSA event,15,False,43.54,,,True,N102DZ/data/recovered/N102DZ_2024-09-12_airplanes-live_trace_full.json.gz
+2024-09-12,N582MM,adsb-lol,20240911_denton,event,Denton,TX,2024-09-11,1,Charlie,163,True,22.65,32.852019,-96.848883,True,N582MM/data/recovered/N582MM_2024-09-12_adsb-lol_trace_full.json.gz
+2024-09-12,N582MM,airplanes-live,20240911_denton,event,Denton,TX,2024-09-11,1,Charlie,162,True,22.65,32.852019,-96.848883,True,N582MM/data/recovered/N582MM_2024-09-12_airplanes-live_trace_full.json.gz
+2024-09-12,N872RA,adsb-lol,control_albuquerque,control,Albuquerque,NM,,0,CONTROL — no known Kirk/TPUSA event,70,False,33.77,,,True,N872RA/data/recovered/N872RA_2024-09-12_adsb-lol_trace_full.json.gz
+2024-09-12,N872RA,airplanes-live,control_albuquerque,control,Albuquerque,NM,,0,CONTROL — no known Kirk/TPUSA event,62,False,33.77,,,True,N872RA/data/recovered/N872RA_2024-09-12_airplanes-live_trace_full.json.gz
+2024-09-13,N582MM,adsb-lol,20240913_manhattan,event,Manhattan,KS,2024-09-13,0,Charlie,99,False,4.14,,,True,N582MM/data/recovered/N582MM_2024-09-13_adsb-lol_trace_full.json.gz
+2024-09-13,N582MM,airplanes-live,20240913_manhattan,event,Manhattan,KS,2024-09-13,0,Charlie,136,False,1.61,,,True,N582MM/data/recovered/N582MM_2024-09-13_airplanes-live_trace_full.json.gz
+2024-09-13,N582MM,adsb-lol,control_albuquerque,control,Albuquerque,NM,,0,CONTROL — no known Kirk/TPUSA event,36,False,1.36,,,True,N582MM/data/recovered/N582MM_2024-09-13_adsb-lol_trace_full.json.gz
+2024-09-13,N582MM,airplanes-live,control_albuquerque,control,Albuquerque,NM,,0,CONTROL — no known Kirk/TPUSA event,36,False,1.24,,,True,N582MM/data/recovered/N582MM_2024-09-13_airplanes-live_trace_full.json.gz
+2024-09-13,N872RA,adsb-lol,control_albuquerque,control,Albuquerque,NM,,0,CONTROL — no known Kirk/TPUSA event,43,False,45.53,,,True,N872RA/data/recovered/N872RA_2024-09-13_adsb-lol_trace_full.json.gz
+2024-09-14,N582MM,adsb-lol,20240913_manhattan,event,Manhattan,KS,2024-09-13,1,Charlie,50,False,9.49,,,True,N582MM/data/recovered/N582MM_2024-09-14_adsb-lol_trace_full.json.gz
+2024-09-14,N582MM,airplanes-live,20240913_manhattan,event,Manhattan,KS,2024-09-13,1,Charlie,50,False,9.49,,,True,N582MM/data/recovered/N582MM_2024-09-14_airplanes-live_trace_full.json.gz
+2024-09-17,N102DZ,adsb-lol,control_des_moines,control,Des Moines,IA,,0,CONTROL — no known Kirk/TPUSA event,24,False,33.63,,,True,N102DZ/data/recovered/N102DZ_2024-09-17_adsb-lol_trace_full.json.gz
+2024-09-17,N102DZ,airplanes-live,control_des_moines,control,Des Moines,IA,,0,CONTROL — no known Kirk/TPUSA event,24,False,33.62,,,True,N102DZ/data/recovered/N102DZ_2024-09-17_airplanes-live_trace_full.json.gz
+2024-09-17,N582MM,adsb-lol,20240918_pittsburgh,event,Pittsburgh,PA,2024-09-18,-1,Charlie,32,False,26.23,,,True,N582MM/data/recovered/N582MM_2024-09-17_adsb-lol_trace_full.json.gz
+2024-09-17,N582MM,airplanes-live,20240918_pittsburgh,event,Pittsburgh,PA,2024-09-18,-1,Charlie,32,False,26.24,,,True,N582MM/data/recovered/N582MM_2024-09-17_airplanes-live_trace_full.json.gz
+2024-09-17,N582MM,adsb-lol,control_des_moines,control,Des Moines,IA,,0,CONTROL — no known Kirk/TPUSA event,34,False,6.61,,,True,N582MM/data/recovered/N582MM_2024-09-17_adsb-lol_trace_full.json.gz
+2024-09-17,N582MM,airplanes-live,control_des_moines,control,Des Moines,IA,,0,CONTROL — no known Kirk/TPUSA event,34,False,6.58,,,True,N582MM/data/recovered/N582MM_2024-09-17_airplanes-live_trace_full.json.gz
+2024-09-18,N582MM,adsb-lol,20240918_pittsburgh,event,Pittsburgh,PA,2024-09-18,0,Charlie,305,True,5.93,40.354308,-79.925615,True,N582MM/data/recovered/N582MM_2024-09-18_adsb-lol_trace_full.json.gz
+2024-09-18,N582MM,airplanes-live,20240918_pittsburgh,event,Pittsburgh,PA,2024-09-18,0,Charlie,307,True,5.93,40.354308,-79.925615,True,N582MM/data/recovered/N582MM_2024-09-18_airplanes-live_trace_full.json.gz
+2024-09-18,N582MM,adsb-lol,20240919_university_park,event,University Park,PA,2024-09-19,-1,Charlie,130,False,33.61,,,True,N582MM/data/recovered/N582MM_2024-09-18_adsb-lol_trace_full.json.gz
+2024-09-18,N582MM,airplanes-live,20240919_university_park,event,University Park,PA,2024-09-19,-1,Charlie,167,False,33.61,,,True,N582MM/data/recovered/N582MM_2024-09-18_airplanes-live_trace_full.json.gz
+2024-09-18,N582MM,adsb-lol,control_albuquerque,control,Albuquerque,NM,,0,CONTROL — no known Kirk/TPUSA event,30,False,4.42,,,True,N582MM/data/recovered/N582MM_2024-09-18_adsb-lol_trace_full.json.gz
+2024-09-18,N582MM,airplanes-live,control_albuquerque,control,Albuquerque,NM,,0,CONTROL — no known Kirk/TPUSA event,30,False,4.36,,,True,N582MM/data/recovered/N582MM_2024-09-18_airplanes-live_trace_full.json.gz
+2024-09-18,N872RA,adsb-lol,control_albuquerque,control,Albuquerque,NM,,0,CONTROL — no known Kirk/TPUSA event,32,False,37.8,,,True,N872RA/data/recovered/N872RA_2024-09-18_adsb-lol_trace_full.json.gz
+2024-09-18,N872RA,airplanes-live,control_albuquerque,control,Albuquerque,NM,,0,CONTROL — no known Kirk/TPUSA event,33,False,37.79,,,True,N872RA/data/recovered/N872RA_2024-09-18_airplanes-live_trace_full.json.gz
+2024-09-19,N582MM,adsb-lol,20240919_university_park,event,University Park,PA,2024-09-19,0,Charlie,81,False,17.02,,,True,N582MM/data/recovered/N582MM_2024-09-19_adsb-lol_trace_full.json.gz
+2024-09-19,N582MM,airplanes-live,20240919_university_park,event,University Park,PA,2024-09-19,0,Charlie,315,True,2.46,40.854709,-77.844549,True,N582MM/data/recovered/N582MM_2024-09-19_airplanes-live_trace_full.json.gz
+2024-09-20,N102DZ,adsb-lol,20240919_university_park,event,University Park,PA,2024-09-19,1,Charlie,22,False,41.12,,,True,N102DZ/data/recovered/N102DZ_2024-09-20_adsb-lol_trace_full.json.gz
+2024-09-20,N102DZ,airplanes-live,20240919_university_park,event,University Park,PA,2024-09-19,1,Charlie,21,False,41.12,,,True,N102DZ/data/recovered/N102DZ_2024-09-20_airplanes-live_trace_full.json.gz
+2024-09-20,N872RA,adsb-lol,control_albuquerque,control,Albuquerque,NM,,0,CONTROL — no known Kirk/TPUSA event,159,False,7.35,,,True,N872RA/data/recovered/N872RA_2024-09-20_adsb-lol_trace_full.json.gz
+2024-09-20,N872RA,airplanes-live,control_albuquerque,control,Albuquerque,NM,,0,CONTROL — no known Kirk/TPUSA event,171,True,7.36,35.619118,-106.090065,True,N872RA/data/recovered/N872RA_2024-09-20_airplanes-live_trace_full.json.gz
+2024-09-30,N582MM,airplanes-live,20240930_missoula,event,Missoula,MT,2024-09-30,0,Charlie,327,True,0.17,46.915833,-114.091164,True,N582MM/data/recovered/N582MM_2024-09-30_airplanes-live_trace_full.json.gz
+2024-09-30,N872RA,adsb-lol,control_albuquerque,control,Albuquerque,NM,,0,CONTROL — no known Kirk/TPUSA event,194,True,28.87,35.615513,-106.090007,True,N872RA/data/recovered/N872RA_2024-09-30_adsb-lol_trace_full.json.gz
+2024-09-30,N872RA,airplanes-live,control_albuquerque,control,Albuquerque,NM,,0,CONTROL — no known Kirk/TPUSA event,175,True,28.86,35.612701,-106.092461,True,N872RA/data/recovered/N872RA_2024-09-30_airplanes-live_trace_full.json.gz
+2024-10-01,N582MM,adsb-lol,control_spokane,control,Spokane,WA,,0,CONTROL — no known Kirk/TPUSA event,173,True,25.29,47.777275,-116.815207,True,N582MM/data/recovered/N582MM_2024-10-01_adsb-lol_trace_full.json.gz
+2024-10-01,N582MM,adsbexchange-samples,control_spokane,control,Spokane,WA,,0,CONTROL — no known Kirk/TPUSA event,370,True,25.29,47.776257,-116.819395,True,N582MM/data/recovered/N582MM_2024-10-01_adsbexchange-samples_trace_full.json
+2024-10-01,N582MM,airplanes-live,control_spokane,control,Spokane,WA,,0,CONTROL — no known Kirk/TPUSA event,224,True,25.29,47.776852,-116.81694,True,N582MM/data/recovered/N582MM_2024-10-01_airplanes-live_trace_full.json.gz
+2024-10-01,N872RA,adsbexchange-samples,20240930_missoula,event,Missoula,MT,2024-09-30,1,Charlie,52,False,33.78,,,True,N872RA/data/recovered/N872RA_2024-10-01_adsbexchange-samples_trace_full.json
+2024-10-10,N102DZ,adsb-lol,control_syracuse,control,Syracuse,NY,,0,CONTROL — no known Kirk/TPUSA event,49,False,21.07,,,True,N102DZ/data/recovered/N102DZ_2024-10-10_adsb-lol_trace_full.json.gz
+2024-10-10,N102DZ,airplanes-live,control_syracuse,control,Syracuse,NY,,0,CONTROL — no known Kirk/TPUSA event,56,False,21.07,,,True,N102DZ/data/recovered/N102DZ_2024-10-10_airplanes-live_trace_full.json.gz
+2024-10-10,N582MM,adsb-lol,control_spokane,control,Spokane,WA,,0,CONTROL — no known Kirk/TPUSA event,170,True,24.89,47.776131,-116.825831,True,N582MM/data/recovered/N582MM_2024-10-10_adsb-lol_trace_full.json.gz
+2024-10-10,N582MM,airplanes-live,control_spokane,control,Spokane,WA,,0,CONTROL — no known Kirk/TPUSA event,225,True,24.89,47.776829,-116.816976,True,N582MM/data/recovered/N582MM_2024-10-10_airplanes-live_trace_full.json.gz
+2024-10-10,N872RA,adsb-lol,control_spokane,control,Spokane,WA,,0,CONTROL — no known Kirk/TPUSA event,38,False,26.09,,,True,N872RA/data/recovered/N872RA_2024-10-10_adsb-lol_trace_full.json.gz
+2024-10-10,N872RA,airplanes-live,control_spokane,control,Spokane,WA,,0,CONTROL — no known Kirk/TPUSA event,37,False,26.11,,,True,N872RA/data/recovered/N872RA_2024-10-10_airplanes-live_trace_full.json.gz
+2024-10-11,N582MM,adsb-lol,20241011_corvallis,event,Corvallis,OR,2024-10-11,0,Charlie,254,False,1.4,,,True,N582MM/data/recovered/N582MM_2024-10-11_adsb-lol_trace_full.json.gz
+2024-10-11,N582MM,airplanes-live,20241011_corvallis,event,Corvallis,OR,2024-10-11,0,Charlie,269,False,1.4,,,True,N582MM/data/recovered/N582MM_2024-10-11_airplanes-live_trace_full.json.gz
+2024-10-11,N872RA,adsb-lol,control_spokane,control,Spokane,WA,,0,CONTROL — no known Kirk/TPUSA event,29,False,32.17,,,True,N872RA/data/recovered/N872RA_2024-10-11_adsb-lol_trace_full.json.gz
+2024-10-11,N872RA,airplanes-live,control_spokane,control,Spokane,WA,,0,CONTROL — no known Kirk/TPUSA event,27,False,32.17,,,True,N872RA/data/recovered/N872RA_2024-10-11_airplanes-live_trace_full.json.gz
+2024-10-12,N582MM,adsb-lol,20241011_corvallis,event,Corvallis,OR,2024-10-11,1,Charlie,205,True,7.38,44.123561,-123.218978,True,N582MM/data/recovered/N582MM_2024-10-12_adsb-lol_trace_full.json.gz
+2024-10-12,N582MM,airplanes-live,20241011_corvallis,event,Corvallis,OR,2024-10-11,1,Charlie,184,True,7.38,44.123561,-123.218978,True,N582MM/data/recovered/N582MM_2024-10-12_airplanes-live_trace_full.json.gz
+2024-10-14,N872RA,adsb-lol,20241015_flagstaff,event,Flagstaff,AZ,2024-10-15,-1,Charlie,39,False,2.17,,,True,N872RA/data/recovered/N872RA_2024-10-14_adsb-lol_trace_full.json.gz
+2024-10-14,N872RA,airplanes-live,20241015_flagstaff,event,Flagstaff,AZ,2024-10-15,-1,Charlie,39,False,2.1,,,True,N872RA/data/recovered/N872RA_2024-10-14_airplanes-live_trace_full.json.gz
+2024-10-14,N872RA,adsb-lol,control_albuquerque,control,Albuquerque,NM,,0,CONTROL — no known Kirk/TPUSA event,84,False,28.79,,,True,N872RA/data/recovered/N872RA_2024-10-14_adsb-lol_trace_full.json.gz
+2024-10-14,N872RA,airplanes-live,control_albuquerque,control,Albuquerque,NM,,0,CONTROL — no known Kirk/TPUSA event,99,False,28.8,,,True,N872RA/data/recovered/N872RA_2024-10-14_airplanes-live_trace_full.json.gz
+2024-10-15,N582MM,adsb-lol,20241015_flagstaff,event,Flagstaff,AZ,2024-10-15,0,Charlie,211,True,3.68,35.146088,-111.664885,True,N582MM/data/recovered/N582MM_2024-10-15_adsb-lol_trace_full.json.gz
+2024-10-15,N582MM,airplanes-live,20241015_flagstaff,event,Flagstaff,AZ,2024-10-15,0,Charlie,231,False,4.69,,,True,N582MM/data/recovered/N582MM_2024-10-15_airplanes-live_trace_full.json.gz
+2024-10-15,N872RA,adsb-lol,20241015_flagstaff,event,Flagstaff,AZ,2024-10-15,0,Charlie,39,False,1.65,,,True,N872RA/data/recovered/N872RA_2024-10-15_adsb-lol_trace_full.json.gz
+2024-10-15,N872RA,airplanes-live,20241015_flagstaff,event,Flagstaff,AZ,2024-10-15,0,Charlie,39,False,1.83,,,True,N872RA/data/recovered/N872RA_2024-10-15_airplanes-live_trace_full.json.gz
+2024-10-16,N102DZ,adsb-lol,20241015_flagstaff,event,Flagstaff,AZ,2024-10-15,1,Charlie,49,False,34.13,,,True,N102DZ/data/recovered/N102DZ_2024-10-16_adsb-lol_trace_full.json.gz
+2024-10-16,N102DZ,airplanes-live,20241015_flagstaff,event,Flagstaff,AZ,2024-10-15,1,Charlie,48,False,34.1,,,True,N102DZ/data/recovered/N102DZ_2024-10-16_airplanes-live_trace_full.json.gz
+2024-10-16,N102DZ,adsb-lol,control_albuquerque,control,Albuquerque,NM,,0,CONTROL — no known Kirk/TPUSA event,9,False,48.34,,,True,N102DZ/data/recovered/N102DZ_2024-10-16_adsb-lol_trace_full.json.gz
+2024-10-16,N102DZ,airplanes-live,control_albuquerque,control,Albuquerque,NM,,0,CONTROL — no known Kirk/TPUSA event,9,False,48.34,,,True,N102DZ/data/recovered/N102DZ_2024-10-16_airplanes-live_trace_full.json.gz
+2024-10-16,N102DZ,adsb-lol,control_shreveport,control,Shreveport,LA,,0,CONTROL — no known Kirk/TPUSA event,36,False,13.95,,,True,N102DZ/data/recovered/N102DZ_2024-10-16_adsb-lol_trace_full.json.gz
+2024-10-16,N102DZ,airplanes-live,control_shreveport,control,Shreveport,LA,,0,CONTROL — no known Kirk/TPUSA event,36,False,13.92,,,True,N102DZ/data/recovered/N102DZ_2024-10-16_airplanes-live_trace_full.json.gz
+2024-10-16,N560TW,adsb-lol,20241015_flagstaff,event,Flagstaff,AZ,2024-10-15,1,Charlie,48,False,24.58,,,True,N560TW/data/recovered/N560TW_2024-10-16_adsb-lol_trace_full.json.gz
+2024-10-16,N560TW,airplanes-live,20241015_flagstaff,event,Flagstaff,AZ,2024-10-15,1,Charlie,50,False,24.57,,,True,N560TW/data/recovered/N560TW_2024-10-16_airplanes-live_trace_full.json.gz
+2024-10-16,N582MM,adsb-lol,20241016_tucson,event,Tucson,AZ,2024-10-16,0,Charlie,97,False,5.42,,,True,N582MM/data/recovered/N582MM_2024-10-16_adsb-lol_trace_full.json.gz
+2024-10-16,N582MM,airplanes-live,20241016_tucson,event,Tucson,AZ,2024-10-16,0,Charlie,105,False,4.7,,,True,N582MM/data/recovered/N582MM_2024-10-16_airplanes-live_trace_full.json.gz
+2024-10-16,N872RA,adsb-lol,20241015_flagstaff,event,Flagstaff,AZ,2024-10-15,1,Charlie,50,False,3.6,,,True,N872RA/data/recovered/N872RA_2024-10-16_adsb-lol_trace_full.json.gz
+2024-10-16,N872RA,airplanes-live,20241015_flagstaff,event,Flagstaff,AZ,2024-10-15,1,Charlie,51,False,3.6,,,True,N872RA/data/recovered/N872RA_2024-10-16_airplanes-live_trace_full.json.gz
+2024-10-16,N888KG,adsb-lol,20241015_flagstaff,event,Flagstaff,AZ,2024-10-15,1,Charlie,35,False,7.81,,,True,N888KG/data/recovered/N888KG_2024-10-16_adsb-lol_trace_full.json.gz
+2024-10-16,N888KG,airplanes-live,20241015_flagstaff,event,Flagstaff,AZ,2024-10-15,1,Charlie,34,False,7.77,,,True,N888KG/data/recovered/N888KG_2024-10-16_airplanes-live_trace_full.json.gz
+2024-10-16,N888KG,adsb-lol,20241016_tucson,event,Tucson,AZ,2024-10-16,0,Charlie,34,False,14.66,,,True,N888KG/data/recovered/N888KG_2024-10-16_adsb-lol_trace_full.json.gz
+2024-10-16,N888KG,airplanes-live,20241016_tucson,event,Tucson,AZ,2024-10-16,0,Charlie,34,False,14.68,,,True,N888KG/data/recovered/N888KG_2024-10-16_airplanes-live_trace_full.json.gz
+2024-10-17,N582MM,adsb-lol,20241016_tucson,event,Tucson,AZ,2024-10-16,1,Charlie,122,False,2.22,,,True,N582MM/data/recovered/N582MM_2024-10-17_adsb-lol_trace_full.json.gz
+2024-10-17,N582MM,airplanes-live,20241016_tucson,event,Tucson,AZ,2024-10-16,1,Charlie,128,False,2.21,,,True,N582MM/data/recovered/N582MM_2024-10-17_airplanes-live_trace_full.json.gz
+2024-10-20,N582MM,adsb-lol,control_albuquerque,control,Albuquerque,NM,,0,CONTROL — no known Kirk/TPUSA event,13,False,47.9,,,True,N582MM/data/recovered/N582MM_2024-10-20_adsb-lol_trace_full.json.gz
+2024-10-20,N582MM,airplanes-live,control_albuquerque,control,Albuquerque,NM,,0,CONTROL — no known Kirk/TPUSA event,13,False,47.9,,,True,N582MM/data/recovered/N582MM_2024-10-20_airplanes-live_trace_full.json.gz
+2024-10-21,N582MM,adsb-lol,20241021_atlanta,event,Atlanta,GA,2024-10-21,0,Charlie,512,True,7.65,33.649544,-84.423317,True,N582MM/data/recovered/N582MM_2024-10-21_adsb-lol_trace_full.json.gz
+2024-10-21,N582MM,airplanes-live,20241021_atlanta,event,Atlanta,GA,2024-10-21,0,Charlie,459,True,7.65,33.649544,-84.423317,True,N582MM/data/recovered/N582MM_2024-10-21_airplanes-live_trace_full.json.gz
+2024-10-21,N582MM,adsb-lol,20241021_chapel_hill,event,Chapel Hill,NC,2024-10-21,0,Charlie,143,True,12.12,35.885642,-78.787167,True,N582MM/data/recovered/N582MM_2024-10-21_adsb-lol_trace_full.json.gz
+2024-10-21,N582MM,airplanes-live,20241021_chapel_hill,event,Chapel Hill,NC,2024-10-21,0,Charlie,137,True,12.12,35.885642,-78.787167,True,N582MM/data/recovered/N582MM_2024-10-21_airplanes-live_trace_full.json.gz
+2024-10-21,N582MM,adsb-lol,20241022_athens,event,Athens,GA,2024-10-22,-1,Charlie,144,False,20.24,,,True,N582MM/data/recovered/N582MM_2024-10-21_adsb-lol_trace_full.json.gz
+2024-10-21,N582MM,airplanes-live,20241022_athens,event,Athens,GA,2024-10-22,-1,Charlie,165,False,20.24,,,True,N582MM/data/recovered/N582MM_2024-10-21_airplanes-live_trace_full.json.gz
+2024-10-22,N582MM,adsb-lol,20241021_chapel_hill,event,Chapel Hill,NC,2024-10-21,1,Charlie,182,True,0.27,35.87582,-78.785448,True,N582MM/data/recovered/N582MM_2024-10-22_adsb-lol_trace_full.json.gz
+2024-10-22,N582MM,airplanes-live,20241021_chapel_hill,event,Chapel Hill,NC,2024-10-21,1,Charlie,182,True,0.38,35.87582,-78.785448,True,N582MM/data/recovered/N582MM_2024-10-22_airplanes-live_trace_full.json.gz
+2024-10-22,N582MM,adsb-lol,20241022_athens,event,Athens,GA,2024-10-22,0,Charlie,166,False,2.66,,,True,N582MM/data/recovered/N582MM_2024-10-22_adsb-lol_trace_full.json.gz
+2024-10-22,N582MM,airplanes-live,20241022_athens,event,Athens,GA,2024-10-22,0,Charlie,235,False,2.52,,,True,N582MM/data/recovered/N582MM_2024-10-22_airplanes-live_trace_full.json.gz
+2024-10-22,N582MM,adsb-lol,20241022_omaha,event,Omaha,NE,2024-10-22,0,Charlie,120,False,9.29,,,True,N582MM/data/recovered/N582MM_2024-10-22_adsb-lol_trace_full.json.gz
+2024-10-22,N582MM,airplanes-live,20241022_omaha,event,Omaha,NE,2024-10-22,0,Charlie,126,False,8.92,,,True,N582MM/data/recovered/N582MM_2024-10-22_airplanes-live_trace_full.json.gz
+2024-10-22,N582MM,adsb-lol,20241023_duluth,event,Duluth,GA,2024-10-23,-1,Charlie,118,False,40.6,,,True,N582MM/data/recovered/N582MM_2024-10-22_adsb-lol_trace_full.json.gz
+2024-10-22,N582MM,airplanes-live,20241023_duluth,event,Duluth,GA,2024-10-23,-1,Charlie,167,False,40.6,,,True,N582MM/data/recovered/N582MM_2024-10-22_airplanes-live_trace_full.json.gz
+2024-10-22,N582MM,adsb-lol,control_chattanooga,control,Chattanooga,TN,,0,CONTROL — no known Kirk/TPUSA event,53,False,21.15,,,True,N582MM/data/recovered/N582MM_2024-10-22_adsb-lol_trace_full.json.gz
+2024-10-22,N582MM,airplanes-live,control_chattanooga,control,Chattanooga,TN,,0,CONTROL — no known Kirk/TPUSA event,61,False,21.14,,,True,N582MM/data/recovered/N582MM_2024-10-22_airplanes-live_trace_full.json.gz
+2024-10-22,N872RA,adsb-lol,control_albuquerque,control,Albuquerque,NM,,0,CONTROL — no known Kirk/TPUSA event,27,False,30.18,,,True,N872RA/data/recovered/N872RA_2024-10-22_adsb-lol_trace_full.json.gz
+2024-10-22,N872RA,airplanes-live,control_albuquerque,control,Albuquerque,NM,,0,CONTROL — no known Kirk/TPUSA event,26,False,30.19,,,True,N872RA/data/recovered/N872RA_2024-10-22_airplanes-live_trace_full.json.gz
+2024-10-23,N582MM,adsb-lol,20241022_athens,event,Athens,GA,2024-10-22,1,Charlie,74,True,36.02,33.978409,-83.961639,True,N582MM/data/recovered/N582MM_2024-10-23_adsb-lol_trace_full.json.gz
+2024-10-23,N582MM,airplanes-live,20241022_athens,event,Athens,GA,2024-10-22,1,Charlie,60,True,36.02,33.978409,-83.961639,True,N582MM/data/recovered/N582MM_2024-10-23_airplanes-live_trace_full.json.gz
+2024-10-23,N582MM,adsb-lol,20241022_omaha,event,Omaha,NE,2024-10-22,1,Charlie,133,False,8.64,,,True,N582MM/data/recovered/N582MM_2024-10-23_adsb-lol_trace_full.json.gz
+2024-10-23,N582MM,airplanes-live,20241022_omaha,event,Omaha,NE,2024-10-22,1,Charlie,135,False,8.64,,,True,N582MM/data/recovered/N582MM_2024-10-23_airplanes-live_trace_full.json.gz
+2024-10-23,N582MM,adsb-lol,20241023_duluth,event,Duluth,GA,2024-10-23,0,Charlie,176,True,1.83,33.978409,-83.961639,True,N582MM/data/recovered/N582MM_2024-10-23_adsb-lol_trace_full.json.gz
+2024-10-23,N582MM,airplanes-live,20241023_duluth,event,Duluth,GA,2024-10-23,0,Charlie,161,True,1.83,33.978409,-83.961639,True,N582MM/data/recovered/N582MM_2024-10-23_airplanes-live_trace_full.json.gz
+2024-10-23,N582MM,adsb-lol,control_chattanooga,control,Chattanooga,TN,,0,CONTROL — no known Kirk/TPUSA event,68,False,18.35,,,True,N582MM/data/recovered/N582MM_2024-10-23_adsb-lol_trace_full.json.gz
+2024-10-23,N582MM,airplanes-live,control_chattanooga,control,Chattanooga,TN,,0,CONTROL — no known Kirk/TPUSA event,70,False,18.38,,,True,N582MM/data/recovered/N582MM_2024-10-23_airplanes-live_trace_full.json.gz
+2024-10-24,N102DZ,adsb-lol,20241024_las_vegas,event,Las Vegas,NV,2024-10-24,0,Charlie,34,False,15.58,,,True,N102DZ/data/recovered/N102DZ_2024-10-24_adsb-lol_trace_full.json.gz
+2024-10-24,N102DZ,airplanes-live,20241024_las_vegas,event,Las Vegas,NV,2024-10-24,0,Charlie,34,False,15.58,,,True,N102DZ/data/recovered/N102DZ_2024-10-24_airplanes-live_trace_full.json.gz
+2024-10-24,N560TW,adsb-lol,control_albuquerque,control,Albuquerque,NM,,0,CONTROL — no known Kirk/TPUSA event,34,False,17.78,,,True,N560TW/data/recovered/N560TW_2024-10-24_adsb-lol_trace_full.json.gz
+2024-10-24,N560TW,airplanes-live,control_albuquerque,control,Albuquerque,NM,,0,CONTROL — no known Kirk/TPUSA event,33,False,17.75,,,True,N560TW/data/recovered/N560TW_2024-10-24_airplanes-live_trace_full.json.gz
+2024-10-24,N582MM,adsb-lol,20241023_duluth,event,Duluth,GA,2024-10-23,1,Charlie,213,True,2.24,33.980946,-83.953099,True,N582MM/data/recovered/N582MM_2024-10-24_adsb-lol_trace_full.json.gz
+2024-10-24,N582MM,airplanes-live,20241023_duluth,event,Duluth,GA,2024-10-23,1,Charlie,216,True,2.18,33.980946,-83.953099,True,N582MM/data/recovered/N582MM_2024-10-24_airplanes-live_trace_full.json.gz
+2024-10-24,N582MM,adsb-lol,20241024_las_vegas,event,Las Vegas,NV,2024-10-24,0,Charlie,149,True,11.55,36.075279,-115.151224,True,N582MM/data/recovered/N582MM_2024-10-24_adsb-lol_trace_full.json.gz
+2024-10-24,N582MM,airplanes-live,20241024_las_vegas,event,Las Vegas,NV,2024-10-24,0,Charlie,129,True,11.55,36.075279,-115.151224,True,N582MM/data/recovered/N582MM_2024-10-24_airplanes-live_trace_full.json.gz
+2024-10-24,N872RA,adsb-lol,20241024_las_vegas,event,Las Vegas,NV,2024-10-24,0,Charlie,39,False,27.15,,,True,N872RA/data/recovered/N872RA_2024-10-24_adsb-lol_trace_full.json.gz
+2024-10-24,N872RA,airplanes-live,20241024_las_vegas,event,Las Vegas,NV,2024-10-24,0,Charlie,40,False,27.15,,,True,N872RA/data/recovered/N872RA_2024-10-24_airplanes-live_trace_full.json.gz
+2024-10-25,N582MM,adsb-lol,20241024_las_vegas,event,Las Vegas,NV,2024-10-24,1,Charlie,117,False,11.81,,,True,N582MM/data/recovered/N582MM_2024-10-25_adsb-lol_trace_full.json.gz
+2024-10-25,N582MM,airplanes-live,20241024_las_vegas,event,Las Vegas,NV,2024-10-24,1,Charlie,127,False,11.81,,,True,N582MM/data/recovered/N582MM_2024-10-25_airplanes-live_trace_full.json.gz
+2024-10-27,N582MM,adsb-lol,20241028_phoenix,event,Phoenix,AZ,2024-10-28,-1,Charlie,391,True,8.04,33.621243,-111.912442,True,N582MM/data/recovered/N582MM_2024-10-27_adsb-lol_trace_full.json.gz
+2024-10-27,N582MM,airplanes-live,20241028_phoenix,event,Phoenix,AZ,2024-10-28,-1,Charlie,335,True,8.04,33.621243,-111.912442,True,N582MM/data/recovered/N582MM_2024-10-27_airplanes-live_trace_full.json.gz
+2024-10-27,N582MM,adsb-lol,control_des_moines,control,Des Moines,IA,,0,CONTROL — no known Kirk/TPUSA event,27,False,37.54,,,True,N582MM/data/recovered/N582MM_2024-10-27_adsb-lol_trace_full.json.gz
+2024-10-27,N582MM,airplanes-live,control_des_moines,control,Des Moines,IA,,0,CONTROL — no known Kirk/TPUSA event,27,False,37.55,,,True,N582MM/data/recovered/N582MM_2024-10-27_airplanes-live_trace_full.json.gz
+2024-10-28,N560TW,adsb-lol,20241028_phoenix,event,Phoenix,AZ,2024-10-28,0,Charlie,234,True,10.73,33.624856,-111.908283,True,N560TW/data/recovered/N560TW_2024-10-28_adsb-lol_trace_full.json.gz
+2024-10-28,N560TW,airplanes-live,20241028_phoenix,event,Phoenix,AZ,2024-10-28,0,Charlie,224,True,10.73,33.624856,-111.908283,True,N560TW/data/recovered/N560TW_2024-10-28_airplanes-live_trace_full.json.gz
+2024-10-28,N582MM,adsb-lol,20241028_phoenix,event,Phoenix,AZ,2024-10-28,0,Charlie,135,True,10.69,33.428867,-112.015379,True,N582MM/data/recovered/N582MM_2024-10-28_adsb-lol_trace_full.json.gz
+2024-10-28,N582MM,airplanes-live,20241028_phoenix,event,Phoenix,AZ,2024-10-28,0,Charlie,7,True,10.69,33.428045,-112.021969,True,N582MM/data/recovered/N582MM_2024-10-28_airplanes-live_trace_full.json.gz
+2024-10-29,N560TW,adsb-lol,20241028_phoenix,event,Phoenix,AZ,2024-10-28,1,Charlie,601,True,7.8,33.62233,-111.909428,True,N560TW/data/recovered/N560TW_2024-10-29_adsb-lol_trace_full.json.gz
+2024-10-29,N560TW,airplanes-live,20241028_phoenix,event,Phoenix,AZ,2024-10-28,1,Charlie,595,True,7.8,33.62233,-111.909428,True,N560TW/data/recovered/N560TW_2024-10-29_airplanes-live_trace_full.json.gz
+2024-10-29,N582MM,adsb-lol,20241028_phoenix,event,Phoenix,AZ,2024-10-28,1,Charlie,905,True,3.26,33.426951,-112.023594,True,N582MM/data/recovered/N582MM_2024-10-29_adsb-lol_trace_full.json.gz
+2024-10-29,N582MM,airplanes-live,20241028_phoenix,event,Phoenix,AZ,2024-10-28,1,Charlie,534,True,3.26,33.426951,-112.023594,True,N582MM/data/recovered/N582MM_2024-10-29_airplanes-live_trace_full.json.gz
+2024-10-30,N582MM,adsb-lol,20241030_greenville,event,Greenville,NC,2024-10-30,0,Charlie,134,False,4.78,,,True,N582MM/data/recovered/N582MM_2024-10-30_adsb-lol_trace_full.json.gz
+2024-10-30,N582MM,airplanes-live,20241030_greenville,event,Greenville,NC,2024-10-30,0,Charlie,123,False,2.33,,,True,N582MM/data/recovered/N582MM_2024-10-30_airplanes-live_trace_full.json.gz
+2024-10-30,N582MM,adsb-lol,20241031_high_point,event,High Point,NC,2024-10-31,-1,Charlie,28,False,42.85,,,True,N582MM/data/recovered/N582MM_2024-10-30_adsb-lol_trace_full.json.gz
+2024-10-30,N582MM,airplanes-live,20241031_high_point,event,High Point,NC,2024-10-31,-1,Charlie,28,False,42.85,,,True,N582MM/data/recovered/N582MM_2024-10-30_airplanes-live_trace_full.json.gz
+2024-10-31,N582MM,adsb-lol,20241030_greenville,event,Greenville,NC,2024-10-30,1,Charlie,117,False,1.14,,,True,N582MM/data/recovered/N582MM_2024-10-31_adsb-lol_trace_full.json.gz
+2024-10-31,N582MM,airplanes-live,20241030_greenville,event,Greenville,NC,2024-10-30,1,Charlie,102,False,1.14,,,True,N582MM/data/recovered/N582MM_2024-10-31_airplanes-live_trace_full.json.gz
+2024-10-31,N582MM,adsb-lol,20241031_high_point,event,High Point,NC,2024-10-31,0,Charlie,166,False,7.17,,,True,N582MM/data/recovered/N582MM_2024-10-31_adsb-lol_trace_full.json.gz
+2024-10-31,N582MM,airplanes-live,20241031_high_point,event,High Point,NC,2024-10-31,0,Charlie,171,False,7.17,,,True,N582MM/data/recovered/N582MM_2024-10-31_airplanes-live_trace_full.json.gz
+2024-11-01,N102DZ,adsb-lol,control_des_moines,control,Des Moines,IA,,0,CONTROL — no known Kirk/TPUSA event,40,False,12.52,,,True,N102DZ/data/recovered/N102DZ_2024-11-01_adsb-lol_trace_full.json.gz
+2024-11-01,N102DZ,adsbexchange-samples,control_des_moines,control,Des Moines,IA,,0,CONTROL — no known Kirk/TPUSA event,39,False,12.48,,,True,N102DZ/data/recovered/N102DZ_2024-11-01_adsbexchange-samples_trace_full.json
+2024-11-01,N102DZ,airplanes-live,control_des_moines,control,Des Moines,IA,,0,CONTROL — no known Kirk/TPUSA event,40,False,12.52,,,True,N102DZ/data/recovered/N102DZ_2024-11-01_airplanes-live_trace_full.json.gz
+2024-11-01,N1098L,adsbexchange-samples,control_albuquerque,control,Albuquerque,NM,,0,CONTROL — no known Kirk/TPUSA event,72,False,7.72,,,True,N1098L/data/recovered/N1098L_2024-11-01_adsbexchange-samples_trace_full.json
+2024-12-18,N582MM,adsb-lol,20241219_phoenix,event,Phoenix,AZ,2024-12-19,-1,Charlie,598,True,6.98,33.623099,-111.910286,True,N582MM/data/recovered/N582MM_2024-12-18_adsb-lol_trace_full.json.gz
+2024-12-18,N582MM,airplanes-live,20241219_phoenix,event,Phoenix,AZ,2024-12-19,-1,Charlie,391,True,6.98,33.623099,-111.910286,True,N582MM/data/recovered/N582MM_2024-12-18_airplanes-live_trace_full.json.gz
+2024-12-18,N582MM,adsb-lol,control_syracuse,control,Syracuse,NY,,0,CONTROL — no known Kirk/TPUSA event,42,False,33.79,,,True,N582MM/data/recovered/N582MM_2024-12-18_adsb-lol_trace_full.json.gz
+2024-12-18,N582MM,airplanes-live,control_syracuse,control,Syracuse,NY,,0,CONTROL — no known Kirk/TPUSA event,38,False,33.79,,,True,N582MM/data/recovered/N582MM_2024-12-18_airplanes-live_trace_full.json.gz
+2024-12-19,N582MM,adsb-lol,control_syracuse,control,Syracuse,NY,,0,CONTROL — no known Kirk/TPUSA event,37,False,26.39,,,True,N582MM/data/recovered/N582MM_2024-12-19_adsb-lol_trace_full.json.gz
+2024-12-19,N582MM,airplanes-live,control_syracuse,control,Syracuse,NY,,0,CONTROL — no known Kirk/TPUSA event,37,False,26.39,,,True,N582MM/data/recovered/N582MM_2024-12-19_airplanes-live_trace_full.json.gz
+2024-12-20,N560TW,adsb-lol,20241219_phoenix,event,Phoenix,AZ,2024-12-19,1,Charlie,196,True,10.73,33.625832,-111.907173,False,N560TW/data/recovered/N560TW_2024-12-20_adsb-lol_trace_full.json.gz
+2024-12-20,N560TW,airplanes-live,20241219_phoenix,event,Phoenix,AZ,2024-12-19,1,Charlie,197,True,10.73,33.625832,-111.907173,False,N560TW/data/recovered/N560TW_2024-12-20_airplanes-live_trace_full.json.gz
+2024-12-20,N560TW,adsb-lol,20241220_phoenix,event,Phoenix,AZ,2024-12-20,0,Charlie,196,True,10.73,33.625832,-111.907173,False,N560TW/data/recovered/N560TW_2024-12-20_adsb-lol_trace_full.json.gz
+2024-12-20,N560TW,airplanes-live,20241220_phoenix,event,Phoenix,AZ,2024-12-20,0,Charlie,197,True,10.73,33.625832,-111.907173,False,N560TW/data/recovered/N560TW_2024-12-20_airplanes-live_trace_full.json.gz
+2024-12-20,N560TW,adsb-lol,20241221_phoenix,event,Phoenix,AZ,2024-12-21,-1,Charlie,196,True,10.73,33.625832,-111.907173,False,N560TW/data/recovered/N560TW_2024-12-20_adsb-lol_trace_full.json.gz
+2024-12-20,N560TW,airplanes-live,20241221_phoenix,event,Phoenix,AZ,2024-12-21,-1,Charlie,197,True,10.73,33.625832,-111.907173,False,N560TW/data/recovered/N560TW_2024-12-20_airplanes-live_trace_full.json.gz
+2024-12-20,N582MM,adsb-lol,20241219_phoenix,event,Phoenix,AZ,2024-12-19,1,Charlie,975,True,7.73,33.62169,-111.911931,True,N582MM/data/recovered/N582MM_2024-12-20_adsb-lol_trace_full.json.gz
+2024-12-20,N582MM,airplanes-live,20241219_phoenix,event,Phoenix,AZ,2024-12-19,1,Charlie,477,True,7.73,33.621803,-111.911797,True,N582MM/data/recovered/N582MM_2024-12-20_airplanes-live_trace_full.json.gz
+2024-12-20,N582MM,adsb-lol,20241220_phoenix,event,Phoenix,AZ,2024-12-20,0,Charlie,975,True,7.73,33.62169,-111.911931,True,N582MM/data/recovered/N582MM_2024-12-20_adsb-lol_trace_full.json.gz
+2024-12-20,N582MM,airplanes-live,20241220_phoenix,event,Phoenix,AZ,2024-12-20,0,Charlie,477,True,7.73,33.621803,-111.911797,True,N582MM/data/recovered/N582MM_2024-12-20_airplanes-live_trace_full.json.gz
+2024-12-20,N582MM,adsb-lol,20241221_phoenix,event,Phoenix,AZ,2024-12-21,-1,Charlie,975,True,7.73,33.62169,-111.911931,True,N582MM/data/recovered/N582MM_2024-12-20_adsb-lol_trace_full.json.gz
+2024-12-20,N582MM,airplanes-live,20241221_phoenix,event,Phoenix,AZ,2024-12-21,-1,Charlie,477,True,7.73,33.621803,-111.911797,True,N582MM/data/recovered/N582MM_2024-12-20_airplanes-live_trace_full.json.gz
+2024-12-20,N582MM,adsb-lol,control_spokane,control,Spokane,WA,,0,CONTROL — no known Kirk/TPUSA event,239,False,17.38,,,True,N582MM/data/recovered/N582MM_2024-12-20_adsb-lol_trace_full.json.gz
+2024-12-20,N582MM,airplanes-live,control_spokane,control,Spokane,WA,,0,CONTROL — no known Kirk/TPUSA event,495,True,13.16,47.776749,-116.817352,True,N582MM/data/recovered/N582MM_2024-12-20_airplanes-live_trace_full.json.gz
+2024-12-20,N872RA,adsb-lol,20241219_phoenix,event,Phoenix,AZ,2024-12-19,1,Charlie,318,True,7.84,33.428867,-112.016862,True,N872RA/data/recovered/N872RA_2024-12-20_adsb-lol_trace_full.json.gz
+2024-12-20,N872RA,airplanes-live,20241219_phoenix,event,Phoenix,AZ,2024-12-19,1,Charlie,335,True,7.84,33.428856,-112.015572,True,N872RA/data/recovered/N872RA_2024-12-20_airplanes-live_trace_full.json.gz
+2024-12-20,N872RA,adsb-lol,20241220_phoenix,event,Phoenix,AZ,2024-12-20,0,Charlie,318,True,7.84,33.428867,-112.016862,True,N872RA/data/recovered/N872RA_2024-12-20_adsb-lol_trace_full.json.gz
+2024-12-20,N872RA,airplanes-live,20241220_phoenix,event,Phoenix,AZ,2024-12-20,0,Charlie,335,True,7.84,33.428856,-112.015572,True,N872RA/data/recovered/N872RA_2024-12-20_airplanes-live_trace_full.json.gz
+2024-12-20,N872RA,adsb-lol,20241221_phoenix,event,Phoenix,AZ,2024-12-21,-1,Charlie,318,True,7.84,33.428867,-112.016862,True,N872RA/data/recovered/N872RA_2024-12-20_adsb-lol_trace_full.json.gz
+2024-12-20,N872RA,airplanes-live,20241221_phoenix,event,Phoenix,AZ,2024-12-21,-1,Charlie,335,True,7.84,33.428856,-112.015572,True,N872RA/data/recovered/N872RA_2024-12-20_airplanes-live_trace_full.json.gz
+2024-12-21,N560TW,adsb-lol,20241220_phoenix,event,Phoenix,AZ,2024-12-20,1,Charlie,455,True,9.67,33.622341,-111.909387,True,N560TW/data/recovered/N560TW_2024-12-21_adsb-lol_trace_full.json.gz
+2024-12-21,N560TW,airplanes-live,20241220_phoenix,event,Phoenix,AZ,2024-12-20,1,Charlie,455,True,9.67,33.622341,-111.909387,True,N560TW/data/recovered/N560TW_2024-12-21_airplanes-live_trace_full.json.gz
+2024-12-21,N560TW,adsb-lol,20241221_phoenix,event,Phoenix,AZ,2024-12-21,0,Charlie,455,True,9.67,33.622341,-111.909387,True,N560TW/data/recovered/N560TW_2024-12-21_adsb-lol_trace_full.json.gz
+2024-12-21,N560TW,airplanes-live,20241221_phoenix,event,Phoenix,AZ,2024-12-21,0,Charlie,455,True,9.67,33.622341,-111.909387,True,N560TW/data/recovered/N560TW_2024-12-21_airplanes-live_trace_full.json.gz
+2024-12-21,N560TW,adsb-lol,20241222_phoenix,event,Phoenix,AZ,2024-12-22,-1,Charlie,455,True,9.67,33.622341,-111.909387,True,N560TW/data/recovered/N560TW_2024-12-21_adsb-lol_trace_full.json.gz
+2024-12-21,N560TW,airplanes-live,20241222_phoenix,event,Phoenix,AZ,2024-12-22,-1,Charlie,455,True,9.67,33.622341,-111.909387,True,N560TW/data/recovered/N560TW_2024-12-21_airplanes-live_trace_full.json.gz
+2024-12-21,N582MM,adsb-lol,20241220_phoenix,event,Phoenix,AZ,2024-12-20,1,Charlie,637,True,10.24,33.622456,-111.911026,True,N582MM/data/recovered/N582MM_2024-12-21_adsb-lol_trace_full.json.gz
+2024-12-21,N582MM,airplanes-live,20241220_phoenix,event,Phoenix,AZ,2024-12-20,1,Charlie,453,True,10.24,33.62268,-111.910772,True,N582MM/data/recovered/N582MM_2024-12-21_airplanes-live_trace_full.json.gz
+2024-12-21,N582MM,adsb-lol,20241221_phoenix,event,Phoenix,AZ,2024-12-21,0,Charlie,637,True,10.24,33.622456,-111.911026,True,N582MM/data/recovered/N582MM_2024-12-21_adsb-lol_trace_full.json.gz
+2024-12-21,N582MM,airplanes-live,20241221_phoenix,event,Phoenix,AZ,2024-12-21,0,Charlie,453,True,10.24,33.62268,-111.910772,True,N582MM/data/recovered/N582MM_2024-12-21_airplanes-live_trace_full.json.gz
+2024-12-21,N582MM,adsb-lol,20241222_phoenix,event,Phoenix,AZ,2024-12-22,-1,Charlie,637,True,10.24,33.622456,-111.911026,True,N582MM/data/recovered/N582MM_2024-12-21_adsb-lol_trace_full.json.gz
+2024-12-21,N582MM,airplanes-live,20241222_phoenix,event,Phoenix,AZ,2024-12-22,-1,Charlie,453,True,10.24,33.62268,-111.910772,True,N582MM/data/recovered/N582MM_2024-12-21_airplanes-live_trace_full.json.gz
+2024-12-22,N582MM,adsb-lol,20241221_phoenix,event,Phoenix,AZ,2024-12-21,1,Charlie,125,True,10.68,33.428833,-112.016629,True,N582MM/data/recovered/N582MM_2024-12-22_adsb-lol_trace_full.json.gz
+2024-12-22,N582MM,airplanes-live,20241221_phoenix,event,Phoenix,AZ,2024-12-21,1,Charlie,121,True,10.68,33.428833,-112.016629,True,N582MM/data/recovered/N582MM_2024-12-22_airplanes-live_trace_full.json.gz
+2024-12-22,N582MM,adsb-lol,20241222_phoenix,event,Phoenix,AZ,2024-12-22,0,Charlie,125,True,10.68,33.428833,-112.016629,True,N582MM/data/recovered/N582MM_2024-12-22_adsb-lol_trace_full.json.gz
+2024-12-22,N582MM,airplanes-live,20241222_phoenix,event,Phoenix,AZ,2024-12-22,0,Charlie,121,True,10.68,33.428833,-112.016629,True,N582MM/data/recovered/N582MM_2024-12-22_airplanes-live_trace_full.json.gz
+2024-12-22,N872RA,adsb-lol,control_albuquerque,control,Albuquerque,NM,,0,CONTROL — no known Kirk/TPUSA event,158,True,28.55,35.616646,-106.08902,True,N872RA/data/recovered/N872RA_2024-12-22_adsb-lol_trace_full.json.gz
+2024-12-22,N872RA,airplanes-live,control_albuquerque,control,Albuquerque,NM,,0,CONTROL — no known Kirk/TPUSA event,160,True,28.55,35.626717,-106.079964,True,N872RA/data/recovered/N872RA_2024-12-22_airplanes-live_trace_full.json.gz
+2024-12-23,N582MM,adsb-lol,20241222_phoenix,event,Phoenix,AZ,2024-12-22,1,Charlie,164,True,10.55,33.427218,-112.024281,True,N582MM/data/recovered/N582MM_2024-12-23_adsb-lol_trace_full.json.gz
+2024-12-23,N582MM,airplanes-live,20241222_phoenix,event,Phoenix,AZ,2024-12-22,1,Charlie,199,True,10.55,33.426346,-112.023608,True,N582MM/data/recovered/N582MM_2024-12-23_airplanes-live_trace_full.json.gz
+2024-12-23,N872RA,adsb-lol,20241222_phoenix,event,Phoenix,AZ,2024-12-22,1,Charlie,682,True,4.54,33.428848,-112.012342,True,N872RA/data/recovered/N872RA_2024-12-23_adsb-lol_trace_full.json.gz
+2024-12-23,N872RA,airplanes-live,20241222_phoenix,event,Phoenix,AZ,2024-12-22,1,Charlie,776,True,4.53,33.428848,-112.012342,True,N872RA/data/recovered/N872RA_2024-12-23_airplanes-live_trace_full.json.gz
+2025-01-18,N582MM,adsb-lol,control_albuquerque,control,Albuquerque,NM,,0,CONTROL — no known Kirk/TPUSA event,10,False,47.1,,,True,N582MM/data/recovered/N582MM_2025-01-18_adsb-lol_trace_full.json.gz
+2025-01-18,N582MM,airplanes-live,control_albuquerque,control,Albuquerque,NM,,0,CONTROL — no known Kirk/TPUSA event,11,False,47.1,,,True,N582MM/data/recovered/N582MM_2025-01-18_airplanes-live_trace_full.json.gz
+2025-01-21,N560TW,adsb-lol,control_albuquerque,control,Albuquerque,NM,,0,CONTROL — no known Kirk/TPUSA event,389,True,0.31,35.028706,-106.622861,True,N560TW/data/recovered/N560TW_2025-01-21_adsb-lol_trace_full.json.gz
+2025-01-21,N560TW,airplanes-live,control_albuquerque,control,Albuquerque,NM,,0,CONTROL — no known Kirk/TPUSA event,289,True,0.3,35.028706,-106.622861,True,N560TW/data/recovered/N560TW_2025-01-21_airplanes-live_trace_full.json.gz
+2025-01-21,N582MM,adsb-lol,20250120_washington,event,Washington,DC,2025-01-20,1,Charlie,129,False,40.32,,,True,N582MM/data/recovered/N582MM_2025-01-21_adsb-lol_trace_full.json.gz
+2025-01-21,N582MM,airplanes-live,20250120_washington,event,Washington,DC,2025-01-20,1,Charlie,137,False,40.32,,,True,N582MM/data/recovered/N582MM_2025-01-21_airplanes-live_trace_full.json.gz
+2025-02-17,N102DZ,adsb-lol,20250218_phoenix,event,Phoenix,AZ,2025-02-18,-1,Charlie,26,False,24.67,,,True,N102DZ/data/recovered/N102DZ_2025-02-17_adsb-lol_trace_full.json.gz
+2025-02-17,N102DZ,airplanes-live,20250218_phoenix,event,Phoenix,AZ,2025-02-18,-1,Charlie,725,False,24.65,,,True,N102DZ/data/recovered/N102DZ_2025-02-17_airplanes-live_trace_full.json.gz
+2025-02-17,N872RA,adsb-lol,20250218_phoenix,event,Phoenix,AZ,2025-02-18,-1,Charlie,9,False,47.66,,,True,N872RA/data/recovered/N872RA_2025-02-17_adsb-lol_trace_full.json.gz
+2025-02-17,N872RA,airplanes-live,20250218_phoenix,event,Phoenix,AZ,2025-02-18,-1,Charlie,269,False,47.66,,,True,N872RA/data/recovered/N872RA_2025-02-17_airplanes-live_trace_full.json.gz
+2025-02-17,N872RA,adsb-lol,control_albuquerque,control,Albuquerque,NM,,0,CONTROL — no known Kirk/TPUSA event,47,False,8.91,,,True,N872RA/data/recovered/N872RA_2025-02-17_adsb-lol_trace_full.json.gz
+2025-02-17,N872RA,airplanes-live,control_albuquerque,control,Albuquerque,NM,,0,CONTROL — no known Kirk/TPUSA event,62,False,8.88,,,True,N872RA/data/recovered/N872RA_2025-02-17_airplanes-live_trace_full.json.gz
+2025-02-18,N560TW,adsb-lol,20250218_phoenix,event,Phoenix,AZ,2025-02-18,0,Charlie,238,True,7.65,33.619863,-111.916823,True,N560TW/data/recovered/N560TW_2025-02-18_adsb-lol_trace_full.json.gz
+2025-02-18,N560TW,airplanes-live,20250218_phoenix,event,Phoenix,AZ,2025-02-18,0,Charlie,244,True,7.65,33.619863,-111.916823,True,N560TW/data/recovered/N560TW_2025-02-18_airplanes-live_trace_full.json.gz
+2025-02-18,N560TW,adsb-lol,20250219_phoenix,event,Phoenix,AZ,2025-02-19,-1,Charlie,238,True,7.65,33.619863,-111.916823,True,N560TW/data/recovered/N560TW_2025-02-18_adsb-lol_trace_full.json.gz
+2025-02-18,N560TW,airplanes-live,20250219_phoenix,event,Phoenix,AZ,2025-02-19,-1,Charlie,244,True,7.65,33.619863,-111.916823,True,N560TW/data/recovered/N560TW_2025-02-18_airplanes-live_trace_full.json.gz
+2025-02-19,N560TW,adsb-lol,20250218_phoenix,event,Phoenix,AZ,2025-02-18,1,Charlie,217,True,10.52,33.62517,-111.907926,True,N560TW/data/recovered/N560TW_2025-02-19_adsb-lol_trace_full.json.gz
+2025-02-19,N560TW,airplanes-live,20250218_phoenix,event,Phoenix,AZ,2025-02-18,1,Charlie,221,True,10.52,33.62517,-111.907926,True,N560TW/data/recovered/N560TW_2025-02-19_airplanes-live_trace_full.json.gz
+2025-02-19,N560TW,adsb-lol,20250219_phoenix,event,Phoenix,AZ,2025-02-19,0,Charlie,217,True,10.52,33.62517,-111.907926,True,N560TW/data/recovered/N560TW_2025-02-19_adsb-lol_trace_full.json.gz
+2025-02-19,N560TW,airplanes-live,20250219_phoenix,event,Phoenix,AZ,2025-02-19,0,Charlie,221,True,10.52,33.62517,-111.907926,True,N560TW/data/recovered/N560TW_2025-02-19_airplanes-live_trace_full.json.gz
+2025-02-19,N582MM,adsb-lol,20250218_phoenix,event,Phoenix,AZ,2025-02-18,1,Charlie,595,True,1.69,33.428859,-112.014373,True,N582MM/data/recovered/N582MM_2025-02-19_adsb-lol_trace_full.json.gz
+2025-02-19,N582MM,airplanes-live,20250218_phoenix,event,Phoenix,AZ,2025-02-18,1,Charlie,624,True,1.69,33.428859,-112.014373,True,N582MM/data/recovered/N582MM_2025-02-19_airplanes-live_trace_full.json.gz
+2025-02-19,N582MM,adsb-lol,20250219_phoenix,event,Phoenix,AZ,2025-02-19,0,Charlie,595,True,1.69,33.428859,-112.014373,True,N582MM/data/recovered/N582MM_2025-02-19_adsb-lol_trace_full.json.gz
+2025-02-19,N582MM,airplanes-live,20250219_phoenix,event,Phoenix,AZ,2025-02-19,0,Charlie,624,True,1.69,33.428859,-112.014373,True,N582MM/data/recovered/N582MM_2025-02-19_airplanes-live_trace_full.json.gz
+2025-02-20,N582MM,adsb-lol,20250219_phoenix,event,Phoenix,AZ,2025-02-19,1,Charlie,522,True,7.23,33.626183,-111.904306,True,N582MM/data/recovered/N582MM_2025-02-20_adsb-lol_trace_full.json.gz
+2025-02-20,N582MM,airplanes-live,20250219_phoenix,event,Phoenix,AZ,2025-02-19,1,Charlie,519,True,7.23,33.626183,-111.904306,True,N582MM/data/recovered/N582MM_2025-02-20_airplanes-live_trace_full.json.gz
+2025-02-20,N582MM,adsb-lol,20250220_tampa,event,Tampa,FL,2025-02-20,0,Charlie,352,True,2.87,27.981434,-82.528399,True,N582MM/data/recovered/N582MM_2025-02-20_adsb-lol_trace_full.json.gz
+2025-02-20,N582MM,airplanes-live,20250220_tampa,event,Tampa,FL,2025-02-20,0,Charlie,385,True,2.87,27.981434,-82.528399,True,N582MM/data/recovered/N582MM_2025-02-20_airplanes-live_trace_full.json.gz
+2025-02-21,N582MM,adsb-lol,20250220_tampa,event,Tampa,FL,2025-02-20,1,Charlie,206,False,10.08,,,True,N582MM/data/recovered/N582MM_2025-02-21_adsb-lol_trace_full.json.gz
+2025-02-21,N582MM,airplanes-live,20250220_tampa,event,Tampa,FL,2025-02-20,1,Charlie,221,True,10.06,27.990394,-82.013088,True,N582MM/data/recovered/N582MM_2025-02-21_airplanes-live_trace_full.json.gz
+2025-02-26,N582MM,adsb-lol,control_albuquerque,control,Albuquerque,NM,,0,CONTROL — no known Kirk/TPUSA event,27,False,10.71,,,True,N582MM/data/recovered/N582MM_2025-02-26_adsb-lol_trace_full.json.gz
+2025-02-26,N582MM,airplanes-live,control_albuquerque,control,Albuquerque,NM,,0,CONTROL — no known Kirk/TPUSA event,37,False,10.72,,,True,N582MM/data/recovered/N582MM_2025-02-26_airplanes-live_trace_full.json.gz
+2025-02-27,N582MM,adsb-lol,20250227_gainesville,event,Gainesville,FL,2025-02-27,0,Charlie,240,False,2.03,,,True,N582MM/data/recovered/N582MM_2025-02-27_adsb-lol_trace_full.json.gz
+2025-02-27,N582MM,airplanes-live,20250227_gainesville,event,Gainesville,FL,2025-02-27,0,Charlie,209,False,3.72,,,True,N582MM/data/recovered/N582MM_2025-02-27_airplanes-live_trace_full.json.gz
+2025-02-28,N582MM,adsb-lol,20250228_tallahassee,event,Tallahassee,FL,2025-02-28,0,Charlie,324,False,6.33,,,True,N582MM/data/recovered/N582MM_2025-02-28_adsb-lol_trace_full.json.gz
+2025-02-28,N582MM,airplanes-live,20250228_tallahassee,event,Tallahassee,FL,2025-02-28,0,Charlie,328,False,6.33,,,True,N582MM/data/recovered/N582MM_2025-02-28_airplanes-live_trace_full.json.gz
+2025-02-28,N582MM,adsb-lol,control_shreveport,control,Shreveport,LA,,0,CONTROL — no known Kirk/TPUSA event,43,False,12.0,,,True,N582MM/data/recovered/N582MM_2025-02-28_adsb-lol_trace_full.json.gz
+2025-02-28,N582MM,airplanes-live,control_shreveport,control,Shreveport,LA,,0,CONTROL — no known Kirk/TPUSA event,56,False,11.97,,,True,N582MM/data/recovered/N582MM_2025-02-28_airplanes-live_trace_full.json.gz
+2025-03-02,N872RA,adsb-lol,20250303_los_angeles,event,Los Angeles,CA,2025-03-03,-1,Charlie,35,False,44.58,,,True,N872RA/data/recovered/N872RA_2025-03-02_adsb-lol_trace_full.json.gz
+2025-03-02,N872RA,airplanes-live,20250303_los_angeles,event,Los Angeles,CA,2025-03-03,-1,Charlie,41,False,44.58,,,True,N872RA/data/recovered/N872RA_2025-03-02_airplanes-live_trace_full.json.gz
+2025-03-03,N582MM,adsb-lol,20250303_los_angeles,event,Los Angeles,CA,2025-03-03,0,Charlie,104,True,7.87,33.922737,-118.337622,True,N582MM/data/recovered/N582MM_2025-03-03_adsb-lol_trace_full.json.gz
+2025-03-03,N582MM,airplanes-live,20250303_los_angeles,event,Los Angeles,CA,2025-03-03,0,Charlie,137,True,7.83,33.922779,-118.336916,True,N582MM/data/recovered/N582MM_2025-03-03_airplanes-live_trace_full.json.gz
+2025-03-03,N872RA,adsb-lol,20250303_los_angeles,event,Los Angeles,CA,2025-03-03,0,Charlie,509,False,3.33,,,True,N872RA/data/recovered/N872RA_2025-03-03_adsb-lol_trace_full.json.gz
+2025-03-03,N872RA,airplanes-live,20250303_los_angeles,event,Los Angeles,CA,2025-03-03,0,Charlie,683,True,3.33,34.204222,-118.489881,True,N872RA/data/recovered/N872RA_2025-03-03_airplanes-live_trace_full.json.gz
+2025-03-04,N582MM,adsb-lol,20250303_los_angeles,event,Los Angeles,CA,2025-03-03,1,Charlie,230,False,7.34,,,True,N582MM/data/recovered/N582MM_2025-03-04_adsb-lol_trace_full.json.gz
+2025-03-04,N582MM,airplanes-live,20250303_los_angeles,event,Los Angeles,CA,2025-03-03,1,Charlie,230,True,7.34,33.923035,-118.33126,True,N582MM/data/recovered/N582MM_2025-03-04_airplanes-live_trace_full.json.gz
+2025-03-13,N582MM,adsb-lol,20250313_knoxville,event,Knoxville,TN,2025-03-13,0,Charlie,253,False,5.86,,,True,N582MM/data/recovered/N582MM_2025-03-13_adsb-lol_trace_full.json.gz
+2025-03-13,N582MM,airplanes-live,20250313_knoxville,event,Knoxville,TN,2025-03-13,0,Charlie,296,True,5.86,35.806675,-83.995156,True,N582MM/data/recovered/N582MM_2025-03-13_airplanes-live_trace_full.json.gz
+2025-03-13,N582MM,adsb-lol,control_albuquerque,control,Albuquerque,NM,,0,CONTROL — no known Kirk/TPUSA event,44,False,5.71,,,True,N582MM/data/recovered/N582MM_2025-03-13_adsb-lol_trace_full.json.gz
+2025-03-13,N582MM,airplanes-live,control_albuquerque,control,Albuquerque,NM,,0,CONTROL — no known Kirk/TPUSA event,60,False,5.63,,,True,N582MM/data/recovered/N582MM_2025-03-13_airplanes-live_trace_full.json.gz
+2025-03-13,N582MM,adsb-lol,control_chattanooga,control,Chattanooga,TN,,0,CONTROL — no known Kirk/TPUSA event,45,False,20.63,,,True,N582MM/data/recovered/N582MM_2025-03-13_adsb-lol_trace_full.json.gz
+2025-03-13,N582MM,airplanes-live,control_chattanooga,control,Chattanooga,TN,,0,CONTROL — no known Kirk/TPUSA event,52,False,20.63,,,True,N582MM/data/recovered/N582MM_2025-03-13_airplanes-live_trace_full.json.gz
+2025-03-17,N582MM,adsb-lol,control_des_moines,control,Des Moines,IA,,0,CONTROL — no known Kirk/TPUSA event,26,False,29.2,,,True,N582MM/data/recovered/N582MM_2025-03-17_adsb-lol_trace_full.json.gz
+2025-03-17,N582MM,airplanes-live,control_des_moines,control,Des Moines,IA,,0,CONTROL — no known Kirk/TPUSA event,34,False,29.2,,,True,N582MM/data/recovered/N582MM_2025-03-17_airplanes-live_trace_full.json.gz
+2025-03-18,N582MM,adsb-lol,20250318_gainesville,event,Gainesville,GA,2025-03-18,0,Charlie,252,True,5.95,33.976593,-83.966002,True,N582MM/data/recovered/N582MM_2025-03-18_adsb-lol_trace_full.json.gz
+2025-03-18,N582MM,airplanes-live,20250318_gainesville,event,Gainesville,GA,2025-03-18,0,Charlie,256,True,5.95,33.976593,-83.966002,True,N582MM/data/recovered/N582MM_2025-03-18_airplanes-live_trace_full.json.gz
+2025-03-18,N582MM,adsb-lol,20250319_gainesville,event,Gainesville,GA,2025-03-19,-1,Charlie,252,True,5.95,33.976593,-83.966002,True,N582MM/data/recovered/N582MM_2025-03-18_adsb-lol_trace_full.json.gz
+2025-03-18,N582MM,airplanes-live,20250319_gainesville,event,Gainesville,GA,2025-03-19,-1,Charlie,256,True,5.95,33.976593,-83.966002,True,N582MM/data/recovered/N582MM_2025-03-18_airplanes-live_trace_full.json.gz
+2025-03-18,N582MM,adsb-lol,control_chattanooga,control,Chattanooga,TN,,0,CONTROL — no known Kirk/TPUSA event,10,False,49.71,,,True,N582MM/data/recovered/N582MM_2025-03-18_adsb-lol_trace_full.json.gz
+2025-03-18,N582MM,airplanes-live,control_chattanooga,control,Chattanooga,TN,,0,CONTROL — no known Kirk/TPUSA event,9,False,49.71,,,True,N582MM/data/recovered/N582MM_2025-03-18_airplanes-live_trace_full.json.gz
+2025-03-19,N582MM,adsb-lol,20250318_gainesville,event,Gainesville,GA,2025-03-18,1,Charlie,221,True,22.4,33.981085,-83.964014,True,N582MM/data/recovered/N582MM_2025-03-19_adsb-lol_trace_full.json.gz
+2025-03-19,N582MM,airplanes-live,20250318_gainesville,event,Gainesville,GA,2025-03-18,1,Charlie,225,True,22.4,33.981085,-83.964014,True,N582MM/data/recovered/N582MM_2025-03-19_airplanes-live_trace_full.json.gz
+2025-03-19,N582MM,adsb-lol,20250319_gainesville,event,Gainesville,GA,2025-03-19,0,Charlie,221,True,22.4,33.981085,-83.964014,True,N582MM/data/recovered/N582MM_2025-03-19_adsb-lol_trace_full.json.gz
+2025-03-19,N582MM,airplanes-live,20250319_gainesville,event,Gainesville,GA,2025-03-19,0,Charlie,225,True,22.4,33.981085,-83.964014,True,N582MM/data/recovered/N582MM_2025-03-19_airplanes-live_trace_full.json.gz
+2025-03-19,N582MM,adsb-lol,20250320_gainesville,event,Gainesville,GA,2025-03-20,-1,Charlie,221,True,22.4,33.981085,-83.964014,True,N582MM/data/recovered/N582MM_2025-03-19_adsb-lol_trace_full.json.gz
+2025-03-19,N582MM,airplanes-live,20250320_gainesville,event,Gainesville,GA,2025-03-20,-1,Charlie,225,True,22.4,33.981085,-83.964014,True,N582MM/data/recovered/N582MM_2025-03-19_airplanes-live_trace_full.json.gz
+2025-03-19,N582MM,adsb-lol,control_albuquerque,control,Albuquerque,NM,,0,CONTROL — no known Kirk/TPUSA event,44,False,8.84,,,True,N582MM/data/recovered/N582MM_2025-03-19_adsb-lol_trace_full.json.gz
+2025-03-19,N582MM,airplanes-live,control_albuquerque,control,Albuquerque,NM,,0,CONTROL — no known Kirk/TPUSA event,59,False,8.82,,,True,N582MM/data/recovered/N582MM_2025-03-19_airplanes-live_trace_full.json.gz
+2025-03-21,N582MM,adsb-lol,control_des_moines,control,Des Moines,IA,,0,CONTROL — no known Kirk/TPUSA event,19,False,41.9,,,True,N582MM/data/recovered/N582MM_2025-03-21_adsb-lol_trace_full.json.gz
+2025-03-21,N582MM,airplanes-live,control_des_moines,control,Des Moines,IA,,0,CONTROL — no known Kirk/TPUSA event,24,False,41.9,,,True,N582MM/data/recovered/N582MM_2025-03-21_airplanes-live_trace_full.json.gz
+2025-04-07,N40JD,adsb-lol,control_albuquerque,control,Albuquerque,NM,,0,CONTROL — no known Kirk/TPUSA event,279,False,17.07,,,True,N40JD/data/recovered/N40JD_2025-04-07_adsb-lol_trace_full.json.gz
+2025-04-07,N40JD,airplanes-live,control_albuquerque,control,Albuquerque,NM,,0,CONTROL — no known Kirk/TPUSA event,274,False,17.07,,,True,N40JD/data/recovered/N40JD_2025-04-07_airplanes-live_trace_full.json.gz
+2025-04-07,N582MM,adsb-lol,control_shreveport,control,Shreveport,LA,,0,CONTROL — no known Kirk/TPUSA event,19,False,41.49,,,True,N582MM/data/recovered/N582MM_2025-04-07_adsb-lol_trace_full.json.gz
+2025-04-07,N582MM,airplanes-live,control_shreveport,control,Shreveport,LA,,0,CONTROL — no known Kirk/TPUSA event,23,False,41.49,,,True,N582MM/data/recovered/N582MM_2025-04-07_airplanes-live_trace_full.json.gz
+2025-04-08,N582MM,adsb-lol,20250408_normal,event,Normal,IL,2025-04-08,0,Charlie,292,False,4.8,,,True,N582MM/data/recovered/N582MM_2025-04-08_adsb-lol_trace_full.json.gz
+2025-04-08,N582MM,airplanes-live,20250408_normal,event,Normal,IL,2025-04-08,0,Charlie,226,False,7.06,,,True,N582MM/data/recovered/N582MM_2025-04-08_airplanes-live_trace_full.json.gz
+2025-04-08,N582MM,adsb-lol,20250408_urbana,event,Urbana,IL,2025-04-08,0,Charlie,315,False,3.75,,,True,N582MM/data/recovered/N582MM_2025-04-08_adsb-lol_trace_full.json.gz
+2025-04-08,N582MM,airplanes-live,20250408_urbana,event,Urbana,IL,2025-04-08,0,Charlie,239,False,3.75,,,True,N582MM/data/recovered/N582MM_2025-04-08_airplanes-live_trace_full.json.gz
+2025-04-09,N40JD,adsb-lol,control_albuquerque,control,Albuquerque,NM,,0,CONTROL — no known Kirk/TPUSA event,32,False,15.87,,,True,N40JD/data/recovered/N40JD_2025-04-09_adsb-lol_trace_full.json.gz
+2025-04-09,N40JD,airplanes-live,control_albuquerque,control,Albuquerque,NM,,0,CONTROL — no known Kirk/TPUSA event,43,False,15.86,,,True,N40JD/data/recovered/N40JD_2025-04-09_airplanes-live_trace_full.json.gz
+2025-04-09,N582MM,adsb-lol,20250408_normal,event,Normal,IL,2025-04-08,1,Charlie,104,False,44.46,,,True,N582MM/data/recovered/N582MM_2025-04-09_adsb-lol_trace_full.json.gz
+2025-04-09,N582MM,airplanes-live,20250408_normal,event,Normal,IL,2025-04-08,1,Charlie,102,False,44.46,,,True,N582MM/data/recovered/N582MM_2025-04-09_airplanes-live_trace_full.json.gz
+2025-04-09,N582MM,adsb-lol,20250408_urbana,event,Urbana,IL,2025-04-08,1,Charlie,147,False,3.33,,,True,N582MM/data/recovered/N582MM_2025-04-09_adsb-lol_trace_full.json.gz
+2025-04-09,N582MM,airplanes-live,20250408_urbana,event,Urbana,IL,2025-04-08,1,Charlie,153,False,3.27,,,True,N582MM/data/recovered/N582MM_2025-04-09_airplanes-live_trace_full.json.gz
+2025-04-09,N582MM,adsb-lol,20250410_west_lafayette,event,West Lafayette,IN,2025-04-10,-1,Charlie,99,False,7.54,,,True,N582MM/data/recovered/N582MM_2025-04-09_adsb-lol_trace_full.json.gz
+2025-04-09,N582MM,airplanes-live,20250410_west_lafayette,event,West Lafayette,IN,2025-04-10,-1,Charlie,115,False,7.53,,,True,N582MM/data/recovered/N582MM_2025-04-09_airplanes-live_trace_full.json.gz
+2025-04-09,N582MM,adsb-lol,control_syracuse,control,Syracuse,NY,,0,CONTROL — no known Kirk/TPUSA event,19,False,38.07,,,True,N582MM/data/recovered/N582MM_2025-04-09_adsb-lol_trace_full.json.gz
+2025-04-09,N582MM,airplanes-live,control_syracuse,control,Syracuse,NY,,0,CONTROL — no known Kirk/TPUSA event,26,False,38.08,,,True,N582MM/data/recovered/N582MM_2025-04-09_airplanes-live_trace_full.json.gz
+2025-04-10,N582MM,adsb-lol,20250410_west_lafayette,event,West Lafayette,IN,2025-04-10,0,Charlie,182,False,6.78,,,True,N582MM/data/recovered/N582MM_2025-04-10_adsb-lol_trace_full.json.gz
+2025-04-10,N582MM,airplanes-live,20250410_west_lafayette,event,West Lafayette,IN,2025-04-10,0,Charlie,287,False,2.4,,,True,N582MM/data/recovered/N582MM_2025-04-10_airplanes-live_trace_full.json.gz
+2025-04-11,N582MM,adsb-lol,20250411_east_lansing,event,East Lansing,MI,2025-04-11,0,Charlie,322,False,2.41,,,True,N582MM/data/recovered/N582MM_2025-04-11_adsb-lol_trace_full.json.gz
+2025-04-11,N582MM,airplanes-live,20250411_east_lansing,event,East Lansing,MI,2025-04-11,0,Charlie,357,False,2.41,,,True,N582MM/data/recovered/N582MM_2025-04-11_airplanes-live_trace_full.json.gz
+2025-04-11,N582MM,adsb-lol,control_des_moines,control,Des Moines,IA,,0,CONTROL — no known Kirk/TPUSA event,18,False,42.45,,,True,N582MM/data/recovered/N582MM_2025-04-11_adsb-lol_trace_full.json.gz
+2025-04-11,N582MM,airplanes-live,control_des_moines,control,Des Moines,IA,,0,CONTROL — no known Kirk/TPUSA event,25,False,42.45,,,True,N582MM/data/recovered/N582MM_2025-04-11_airplanes-live_trace_full.json.gz
+2025-04-12,N40JD,adsb-lol,control_albuquerque,control,Albuquerque,NM,,0,CONTROL — no known Kirk/TPUSA event,204,True,0.34,35.039314,-106.616135,True,N40JD/data/recovered/N40JD_2025-04-12_adsb-lol_trace_full.json.gz
+2025-04-12,N40JD,airplanes-live,control_albuquerque,control,Albuquerque,NM,,0,CONTROL — no known Kirk/TPUSA event,215,True,0.36,35.03952,-106.616457,True,N40JD/data/recovered/N40JD_2025-04-12_airplanes-live_trace_full.json.gz
+2025-04-21,N560TW,adsb-lol,control_albuquerque,control,Albuquerque,NM,,0,CONTROL — no known Kirk/TPUSA event,303,True,4.65,35.039346,-106.616149,True,N560TW/data/recovered/N560TW_2025-04-21_adsb-lol_trace_full.json.gz
+2025-04-21,N560TW,airplanes-live,control_albuquerque,control,Albuquerque,NM,,0,CONTROL — no known Kirk/TPUSA event,227,True,4.65,35.03966,-106.616664,True,N560TW/data/recovered/N560TW_2025-04-21_airplanes-live_trace_full.json.gz
+2025-04-22,N582MM,adsb-lol,20250422_college_station,event,College Station,TX,2025-04-22,0,Charlie,119,False,4.38,,,True,N582MM/data/recovered/N582MM_2025-04-22_adsb-lol_trace_full.json.gz
+2025-04-22,N582MM,airplanes-live,20250422_college_station,event,College Station,TX,2025-04-22,0,Charlie,125,False,4.38,,,True,N582MM/data/recovered/N582MM_2025-04-22_airplanes-live_trace_full.json.gz
+2025-04-23,N40JD,adsb-lol,control_des_moines,control,Des Moines,IA,,0,CONTROL — no known Kirk/TPUSA event,229,False,3.73,,,True,N40JD/data/recovered/N40JD_2025-04-23_adsb-lol_trace_full.json.gz
+2025-04-23,N40JD,airplanes-live,control_des_moines,control,Des Moines,IA,,0,CONTROL — no known Kirk/TPUSA event,240,False,3.63,,,True,N40JD/data/recovered/N40JD_2025-04-23_airplanes-live_trace_full.json.gz
+2025-04-23,N582MM,adsb-lol,20250422_college_station,event,College Station,TX,2025-04-22,1,Charlie,198,False,3.74,,,True,N582MM/data/recovered/N582MM_2025-04-23_adsb-lol_trace_full.json.gz
+2025-04-23,N582MM,airplanes-live,20250422_college_station,event,College Station,TX,2025-04-22,1,Charlie,191,False,3.74,,,True,N582MM/data/recovered/N582MM_2025-04-23_airplanes-live_trace_full.json.gz
+2025-04-24,N582MM,adsb-lol,20250424_laramie,event,Laramie,WY,2025-04-24,0,Charlie,76,False,2.51,,,True,N582MM/data/recovered/N582MM_2025-04-24_adsb-lol_trace_full.json.gz
+2025-04-24,N582MM,airplanes-live,20250424_laramie,event,Laramie,WY,2025-04-24,0,Charlie,92,False,2.51,,,True,N582MM/data/recovered/N582MM_2025-04-24_airplanes-live_trace_full.json.gz
+2025-04-24,SU-BTU,adsb-lol,control_des_moines,control,Des Moines,IA,,0,CONTROL — no known Kirk/TPUSA event,29,False,42.04,,,True,SU-BTU/data/recovered/SU-BTU_2025-04-24_adsb-lol_trace_full.json
+2025-04-24,SU-BTU,adsb-lol,control_des_moines,control,Des Moines,IA,,0,CONTROL — no known Kirk/TPUSA event,29,False,42.04,,,True,SU-BTU/data/recovered/SU-BTU_2025-04-24_adsb-lol_trace_full.json.gz
+2025-04-24,SU-BTU,airplanes-live,control_des_moines,control,Des Moines,IA,,0,CONTROL — no known Kirk/TPUSA event,35,False,42.04,,,True,SU-BTU/data/recovered/SU-BTU_2025-04-24_airplanes-live_trace_full.json
+2025-04-24,SU-BTU,airplanes-live,control_des_moines,control,Des Moines,IA,,0,CONTROL — no known Kirk/TPUSA event,35,False,42.04,,,True,SU-BTU/data/recovered/SU-BTU_2025-04-24_airplanes-live_trace_full.json.gz
+2025-04-25,N582MM,adsb-lol,20250424_laramie,event,Laramie,WY,2025-04-24,1,Charlie,98,False,1.56,,,True,N582MM/data/recovered/N582MM_2025-04-25_adsb-lol_trace_full.json.gz
+2025-04-25,N582MM,airplanes-live,20250424_laramie,event,Laramie,WY,2025-04-24,1,Charlie,103,False,1.56,,,True,N582MM/data/recovered/N582MM_2025-04-25_airplanes-live_trace_full.json.gz
+2025-04-30,N102DZ,adsb-lol,control_albuquerque,control,Albuquerque,NM,,0,CONTROL — no known Kirk/TPUSA event,8,False,49.15,,,True,N102DZ/data/recovered/N102DZ_2025-04-30_adsb-lol_trace_full.json.gz
+2025-04-30,N102DZ,airplanes-live,control_albuquerque,control,Albuquerque,NM,,0,CONTROL — no known Kirk/TPUSA event,11,False,49.14,,,True,N102DZ/data/recovered/N102DZ_2025-04-30_airplanes-live_trace_full.json.gz
+2025-04-30,N872RA,adsb-lol,20250501_san_diego,event,San Diego,CA,2025-05-01,-1,Charlie,292,True,22.83,33.128036,-117.281456,True,N872RA/data/recovered/N872RA_2025-04-30_adsb-lol_trace_full.json.gz
+2025-04-30,N872RA,airplanes-live,20250501_san_diego,event,San Diego,CA,2025-05-01,-1,Charlie,273,True,22.83,33.128036,-117.281456,True,N872RA/data/recovered/N872RA_2025-04-30_airplanes-live_trace_full.json.gz
+2025-04-30,N872RA,adsb-lol,control_albuquerque,control,Albuquerque,NM,,0,CONTROL — no known Kirk/TPUSA event,5,False,49.58,,,True,N872RA/data/recovered/N872RA_2025-04-30_adsb-lol_trace_full.json.gz
+2025-04-30,N872RA,airplanes-live,control_albuquerque,control,Albuquerque,NM,,0,CONTROL — no known Kirk/TPUSA event,7,False,49.57,,,True,N872RA/data/recovered/N872RA_2025-04-30_airplanes-live_trace_full.json.gz
+2025-04-30,SU-BTU,adsb-lol,control_des_moines,control,Des Moines,IA,,0,CONTROL — no known Kirk/TPUSA event,19,False,39.27,,,True,SU-BTU/data/recovered/SU-BTU_2025-04-30_adsb-lol_trace_full.json
+2025-04-30,SU-BTU,adsb-lol,control_des_moines,control,Des Moines,IA,,0,CONTROL — no known Kirk/TPUSA event,19,False,39.27,,,True,SU-BTU/data/recovered/SU-BTU_2025-04-30_adsb-lol_trace_full.json.gz
+2025-04-30,SU-BTU,airplanes-live,control_des_moines,control,Des Moines,IA,,0,CONTROL — no known Kirk/TPUSA event,24,False,39.26,,,True,SU-BTU/data/recovered/SU-BTU_2025-04-30_airplanes-live_trace_full.json
+2025-04-30,SU-BTU,airplanes-live,control_des_moines,control,Des Moines,IA,,0,CONTROL — no known Kirk/TPUSA event,24,False,39.26,,,True,SU-BTU/data/recovered/SU-BTU_2025-04-30_airplanes-live_trace_full.json.gz
+2025-05-01,N2100L,adsbexchange-samples,control_albuquerque,control,Albuquerque,NM,,0,CONTROL — no known Kirk/TPUSA event,43,False,9.04,,,True,N2100L/data/recovered/N2100L_2025-05-01_adsbexchange-samples_trace_full.json
+2025-05-01,N40JD,adsb-lol,20250501_san_diego,event,San Diego,CA,2025-05-01,0,Charlie,434,True,6.17,32.732826,-117.186603,True,N40JD/data/recovered/N40JD_2025-05-01_adsb-lol_trace_full.json.gz
+2025-05-01,N40JD,adsbexchange-samples,20250501_san_diego,event,San Diego,CA,2025-05-01,0,Charlie,412,True,6.15,32.732826,-117.186603,True,N40JD/data/recovered/N40JD_2025-05-01_adsbexchange-samples_trace_full.json
+2025-05-01,N40JD,airplanes-live,20250501_san_diego,event,San Diego,CA,2025-05-01,0,Charlie,413,True,6.17,32.732826,-117.186603,True,N40JD/data/recovered/N40JD_2025-05-01_airplanes-live_trace_full.json.gz
+2025-05-01,N582MM,adsb-lol,20250501_san_diego,event,San Diego,CA,2025-05-01,0,Charlie,463,True,6.16,32.734303,-117.192659,True,N582MM/data/recovered/N582MM_2025-05-01_adsb-lol_trace_full.json.gz
+2025-05-01,N582MM,adsbexchange-samples,20250501_san_diego,event,San Diego,CA,2025-05-01,0,Charlie,385,True,6.15,32.734044,-117.191611,True,N582MM/data/recovered/N582MM_2025-05-01_adsbexchange-samples_trace_full.json
+2025-05-01,N582MM,airplanes-live,20250501_san_diego,event,San Diego,CA,2025-05-01,0,Charlie,451,True,6.16,32.734303,-117.192659,True,N582MM/data/recovered/N582MM_2025-05-01_airplanes-live_trace_full.json.gz
+2025-05-01,N872RA,adsb-lol,20250501_san_diego,event,San Diego,CA,2025-05-01,0,Charlie,473,True,2.5,32.732826,-117.18663,True,N872RA/data/recovered/N872RA_2025-05-01_adsb-lol_trace_full.json.gz
+2025-05-01,N872RA,adsbexchange-samples,20250501_san_diego,event,San Diego,CA,2025-05-01,0,Charlie,511,True,2.5,32.732508,-117.185347,True,N872RA/data/recovered/N872RA_2025-05-01_adsbexchange-samples_trace_full.json
+2025-05-01,N872RA,airplanes-live,20250501_san_diego,event,San Diego,CA,2025-05-01,0,Charlie,463,True,2.5,32.732826,-117.18663,True,N872RA/data/recovered/N872RA_2025-05-01_airplanes-live_trace_full.json.gz
+2025-05-02,N872RA,adsb-lol,20250501_san_diego,event,San Diego,CA,2025-05-01,1,Charlie,18,False,47.53,,,True,N872RA/data/recovered/N872RA_2025-05-02_adsb-lol_trace_full.json.gz
+2025-05-02,N872RA,airplanes-live,20250501_san_diego,event,San Diego,CA,2025-05-01,1,Charlie,20,False,47.53,,,True,N872RA/data/recovered/N872RA_2025-05-02_airplanes-live_trace_full.json.gz
+2025-05-02,N872RA,adsb-lol,control_albuquerque,control,Albuquerque,NM,,0,CONTROL — no known Kirk/TPUSA event,62,False,45.55,,,True,N872RA/data/recovered/N872RA_2025-05-02_adsb-lol_trace_full.json.gz
+2025-05-02,N872RA,airplanes-live,control_albuquerque,control,Albuquerque,NM,,0,CONTROL — no known Kirk/TPUSA event,65,False,45.54,,,True,N872RA/data/recovered/N872RA_2025-05-02_airplanes-live_trace_full.json.gz
+2025-05-06,N582MM,adsb-lol,20250506_san_francisco,event,San Francisco,CA,2025-05-06,0,Charlie,286,True,27.35,37.618223,-122.373873,True,N582MM/data/recovered/N582MM_2025-05-06_adsb-lol_trace_full.json.gz
+2025-05-06,N582MM,airplanes-live,20250506_san_francisco,event,San Francisco,CA,2025-05-06,0,Charlie,436,True,27.34,37.618057,-122.37348,True,N582MM/data/recovered/N582MM_2025-05-06_airplanes-live_trace_full.json.gz
+2025-06-12,N102DZ,adsb-lol,control_albuquerque,control,Albuquerque,NM,,0,CONTROL — no known Kirk/TPUSA event,13,False,45.87,,,True,N102DZ/data/recovered/N102DZ_2025-06-12_adsb-lol_trace_full.json.gz
+2025-06-12,N102DZ,airplanes-live,control_albuquerque,control,Albuquerque,NM,,0,CONTROL — no known Kirk/TPUSA event,26,False,45.86,,,True,N102DZ/data/recovered/N102DZ_2025-06-12_airplanes-live_trace_full.json.gz
+2025-06-12,N582MM,adsb-lol,control_spokane,control,Spokane,WA,,0,CONTROL — no known Kirk/TPUSA event,258,False,25.3,,,True,N582MM/data/recovered/N582MM_2025-06-12_adsb-lol_trace_full.json.gz
+2025-06-12,N582MM,airplanes-live,control_spokane,control,Spokane,WA,,0,CONTROL — no known Kirk/TPUSA event,490,True,25.3,47.767426,-116.82062,True,N582MM/data/recovered/N582MM_2025-06-12_airplanes-live_trace_full.json.gz
+2025-06-13,N582MM,adsb-lol,20250613_grapevine,event,Grapevine,TX,2025-06-13,0,Both,707,True,2.9,32.842127,-96.852806,True,N582MM/data/recovered/N582MM_2025-06-13_adsb-lol_trace_full.json.gz
+2025-06-13,N582MM,airplanes-live,20250613_grapevine,event,Grapevine,TX,2025-06-13,0,Both,583,False,2.9,,,True,N582MM/data/recovered/N582MM_2025-06-13_airplanes-live_trace_full.json.gz
+2025-06-13,N582MM,adsb-lol,20250614_grapevine,event,Grapevine,TX,2025-06-14,-1,Both,707,True,2.9,32.842127,-96.852806,True,N582MM/data/recovered/N582MM_2025-06-13_adsb-lol_trace_full.json.gz
+2025-06-13,N582MM,airplanes-live,20250614_grapevine,event,Grapevine,TX,2025-06-14,-1,Both,583,False,2.9,,,True,N582MM/data/recovered/N582MM_2025-06-13_airplanes-live_trace_full.json.gz
+2025-06-15,N582MM,adsb-lol,20250614_grapevine,event,Grapevine,TX,2025-06-14,1,Both,248,True,2.02,32.910512,-97.034683,True,N582MM/data/recovered/N582MM_2025-06-15_adsb-lol_trace_full.json.gz
+2025-06-15,N582MM,airplanes-live,20250614_grapevine,event,Grapevine,TX,2025-06-14,1,Both,236,True,2.02,32.910512,-97.034683,True,N582MM/data/recovered/N582MM_2025-06-15_airplanes-live_trace_full.json.gz
+2025-06-15,N582MM,adsb-lol,20250615_grapevine,event,Grapevine,TX,2025-06-15,0,Both,248,True,2.02,32.910512,-97.034683,True,N582MM/data/recovered/N582MM_2025-06-15_adsb-lol_trace_full.json.gz
+2025-06-15,N582MM,airplanes-live,20250615_grapevine,event,Grapevine,TX,2025-06-15,0,Both,236,True,2.02,32.910512,-97.034683,True,N582MM/data/recovered/N582MM_2025-06-15_airplanes-live_trace_full.json.gz
+2025-06-15,N582MM,adsb-lol,control_albuquerque,control,Albuquerque,NM,,0,CONTROL — no known Kirk/TPUSA event,34,False,23.17,,,True,N582MM/data/recovered/N582MM_2025-06-15_adsb-lol_trace_full.json.gz
+2025-06-15,N582MM,airplanes-live,control_albuquerque,control,Albuquerque,NM,,0,CONTROL — no known Kirk/TPUSA event,73,False,23.17,,,True,N582MM/data/recovered/N582MM_2025-06-15_airplanes-live_trace_full.json.gz
+2025-06-16,N582MM,adsb-lol,control_albuquerque,control,Albuquerque,NM,,0,CONTROL — no known Kirk/TPUSA event,21,False,38.7,,,True,N582MM/data/recovered/N582MM_2025-06-16_adsb-lol_trace_full.json.gz
+2025-06-16,N582MM,airplanes-live,control_albuquerque,control,Albuquerque,NM,,0,CONTROL — no known Kirk/TPUSA event,44,False,38.7,,,True,N582MM/data/recovered/N582MM_2025-06-16_airplanes-live_trace_full.json.gz
+2025-06-16,N582MM,adsb-lol,control_chattanooga,control,Chattanooga,TN,,0,CONTROL — no known Kirk/TPUSA event,31,False,25.5,,,True,N582MM/data/recovered/N582MM_2025-06-16_adsb-lol_trace_full.json.gz
+2025-06-16,N582MM,airplanes-live,control_chattanooga,control,Chattanooga,TN,,0,CONTROL — no known Kirk/TPUSA event,64,False,25.51,,,True,N582MM/data/recovered/N582MM_2025-06-16_airplanes-live_trace_full.json.gz
+2025-07-08,N40JD,adsb-lol,control_albuquerque,control,Albuquerque,NM,,0,CONTROL — no known Kirk/TPUSA event,41,False,2.41,,,True,N40JD/data/recovered/N40JD_2025-07-08_adsb-lol_trace_full.json.gz
+2025-07-08,N40JD,airplanes-live,control_albuquerque,control,Albuquerque,NM,,0,CONTROL — no known Kirk/TPUSA event,74,False,2.42,,,True,N40JD/data/recovered/N40JD_2025-07-08_airplanes-live_trace_full.json.gz
+2025-07-09,N582MM,adsb-lol,control_chattanooga,control,Chattanooga,TN,,0,CONTROL — no known Kirk/TPUSA event,42,False,8.51,,,True,N582MM/data/recovered/N582MM_2025-07-09_adsb-lol_trace_full.json.gz
+2025-07-09,N582MM,airplanes-live,control_chattanooga,control,Chattanooga,TN,,0,CONTROL — no known Kirk/TPUSA event,78,False,8.48,,,True,N582MM/data/recovered/N582MM_2025-07-09_airplanes-live_trace_full.json.gz
+2025-07-10,N582MM,adsb-lol,20250709_tampa,event,Tampa,FL,2025-07-09,1,Charlie,495,True,2.78,27.974522,-82.52865,True,N582MM/data/recovered/N582MM_2025-07-10_adsb-lol_trace_full.json.gz
+2025-07-10,N582MM,airplanes-live,20250709_tampa,event,Tampa,FL,2025-07-09,1,Charlie,504,True,2.78,27.974522,-82.52865,True,N582MM/data/recovered/N582MM_2025-07-10_airplanes-live_trace_full.json.gz
+2025-07-10,N582MM,adsb-lol,20250710_tampa,event,Tampa,FL,2025-07-10,0,Charlie,990,True,2.78,27.974522,-82.52865,True,N582MM/data/recovered/N582MM_2025-07-10_adsb-lol_trace_full.json.gz
+2025-07-10,N582MM,airplanes-live,20250710_tampa,event,Tampa,FL,2025-07-10,0,Charlie,1008,True,2.78,27.974522,-82.52865,True,N582MM/data/recovered/N582MM_2025-07-10_airplanes-live_trace_full.json.gz
+2025-07-10,N582MM,adsb-lol,20250711_tampa,event,Tampa,FL,2025-07-11,-1,Charlie,1485,True,2.78,27.974522,-82.52865,True,N582MM/data/recovered/N582MM_2025-07-10_adsb-lol_trace_full.json.gz
+2025-07-10,N582MM,airplanes-live,20250711_tampa,event,Tampa,FL,2025-07-11,-1,Charlie,1512,True,2.78,27.974522,-82.52865,True,N582MM/data/recovered/N582MM_2025-07-10_airplanes-live_trace_full.json.gz
+2025-07-11,N582MM,adsb-lol,20250710_tampa,event,Tampa,FL,2025-07-10,1,Charlie,50,False,41.81,,,True,N582MM/data/recovered/N582MM_2025-07-11_adsb-lol_trace_full.json.gz
+2025-07-11,N582MM,airplanes-live,20250710_tampa,event,Tampa,FL,2025-07-10,1,Charlie,80,False,41.8,,,True,N582MM/data/recovered/N582MM_2025-07-11_airplanes-live_trace_full.json.gz
+2025-07-11,N582MM,adsb-lol,20250711_tampa,event,Tampa,FL,2025-07-11,0,Charlie,75,False,41.81,,,True,N582MM/data/recovered/N582MM_2025-07-11_adsb-lol_trace_full.json.gz
+2025-07-11,N582MM,airplanes-live,20250711_tampa,event,Tampa,FL,2025-07-11,0,Charlie,120,False,41.8,,,True,N582MM/data/recovered/N582MM_2025-07-11_airplanes-live_trace_full.json.gz
+2025-07-11,N582MM,adsb-lol,20250712_tampa,event,Tampa,FL,2025-07-12,-1,Charlie,50,False,41.81,,,True,N582MM/data/recovered/N582MM_2025-07-11_adsb-lol_trace_full.json.gz
+2025-07-11,N582MM,airplanes-live,20250712_tampa,event,Tampa,FL,2025-07-12,-1,Charlie,80,False,41.8,,,True,N582MM/data/recovered/N582MM_2025-07-11_airplanes-live_trace_full.json.gz
+2025-07-12,N582MM,adsb-lol,control_albuquerque,control,Albuquerque,NM,,0,CONTROL — no known Kirk/TPUSA event,34,False,9.79,,,True,N582MM/data/recovered/N582MM_2025-07-12_adsb-lol_trace_full.json.gz
+2025-07-12,N582MM,airplanes-live,control_albuquerque,control,Albuquerque,NM,,0,CONTROL — no known Kirk/TPUSA event,70,False,9.76,,,True,N582MM/data/recovered/N582MM_2025-07-12_airplanes-live_trace_full.json.gz
+2025-07-13,N582MM,adsb-lol,20250712_tampa,event,Tampa,FL,2025-07-12,1,Charlie,1028,True,2.85,27.972038,-82.528729,True,N582MM/data/recovered/N582MM_2025-07-13_adsb-lol_trace_full.json.gz
+2025-07-13,N582MM,airplanes-live,20250712_tampa,event,Tampa,FL,2025-07-12,1,Charlie,996,True,2.85,27.972038,-82.528729,True,N582MM/data/recovered/N582MM_2025-07-13_airplanes-live_trace_full.json.gz
+2025-07-13,N582MM,adsb-lol,20250713_tampa,event,Tampa,FL,2025-07-13,0,Charlie,1028,True,2.85,27.972038,-82.528729,True,N582MM/data/recovered/N582MM_2025-07-13_adsb-lol_trace_full.json.gz
+2025-07-13,N582MM,airplanes-live,20250713_tampa,event,Tampa,FL,2025-07-13,0,Charlie,996,True,2.85,27.972038,-82.528729,True,N582MM/data/recovered/N582MM_2025-07-13_airplanes-live_trace_full.json.gz
+2025-07-14,N582MM,adsb-lol,control_albuquerque,control,Albuquerque,NM,,0,CONTROL — no known Kirk/TPUSA event,32,False,23.92,,,True,N582MM/data/recovered/N582MM_2025-07-14_adsb-lol_trace_full.json.gz
+2025-07-14,N582MM,airplanes-live,control_albuquerque,control,Albuquerque,NM,,0,CONTROL — no known Kirk/TPUSA event,70,False,23.92,,,True,N582MM/data/recovered/N582MM_2025-07-14_airplanes-live_trace_full.json.gz
+2025-08-05,N40JD,adsb-lol,control_albuquerque,control,Albuquerque,NM,,0,CONTROL — no known Kirk/TPUSA event,75,False,12.98,,,True,N40JD/data/recovered/N40JD_2025-08-05_adsb-lol_trace_full.json.gz
+2025-08-05,N40JD,airplanes-live,control_albuquerque,control,Albuquerque,NM,,0,CONTROL — no known Kirk/TPUSA event,146,False,12.99,,,True,N40JD/data/recovered/N40JD_2025-08-05_airplanes-live_trace_full.json.gz
+2025-08-07,N40JD,adsb-lol,control_albuquerque,control,Albuquerque,NM,,0,CONTROL — no known Kirk/TPUSA event,7,False,49.18,,,True,N40JD/data/recovered/N40JD_2025-08-07_adsb-lol_trace_full.json.gz
+2025-08-07,N40JD,airplanes-live,control_albuquerque,control,Albuquerque,NM,,0,CONTROL — no known Kirk/TPUSA event,13,False,49.18,,,True,N40JD/data/recovered/N40JD_2025-08-07_airplanes-live_trace_full.json.gz
+2025-08-07,N582MM,adsb-lol,20250806_rancho_palos_verdes,event,Rancho Palos Verdes,CA,2025-08-06,1,Charlie,222,True,4.62,33.804886,-118.340859,True,N582MM/data/recovered/N582MM_2025-08-07_adsb-lol_trace_full.json.gz
+2025-08-07,N582MM,airplanes-live,20250806_rancho_palos_verdes,event,Rancho Palos Verdes,CA,2025-08-06,1,Charlie,207,True,4.62,33.804886,-118.340859,True,N582MM/data/recovered/N582MM_2025-08-07_airplanes-live_trace_full.json.gz
+2025-08-07,N582MM,adsb-lol,20250807_rancho_palos_verdes,event,Rancho Palos Verdes,CA,2025-08-07,0,Charlie,222,True,4.62,33.804886,-118.340859,True,N582MM/data/recovered/N582MM_2025-08-07_adsb-lol_trace_full.json.gz
+2025-08-07,N582MM,airplanes-live,20250807_rancho_palos_verdes,event,Rancho Palos Verdes,CA,2025-08-07,0,Charlie,207,True,4.62,33.804886,-118.340859,True,N582MM/data/recovered/N582MM_2025-08-07_airplanes-live_trace_full.json.gz
+2025-08-07,N582MM,adsb-lol,20250808_rancho_palos_verdes,event,Rancho Palos Verdes,CA,2025-08-08,-1,Charlie,222,True,4.62,33.804886,-118.340859,True,N582MM/data/recovered/N582MM_2025-08-07_adsb-lol_trace_full.json.gz
+2025-08-07,N582MM,airplanes-live,20250808_rancho_palos_verdes,event,Rancho Palos Verdes,CA,2025-08-08,-1,Charlie,207,True,4.62,33.804886,-118.340859,True,N582MM/data/recovered/N582MM_2025-08-07_airplanes-live_trace_full.json.gz
+2025-08-08,N582MM,adsb-lol,20250807_rancho_palos_verdes,event,Rancho Palos Verdes,CA,2025-08-07,1,Charlie,214,False,3.33,,,True,N582MM/data/recovered/N582MM_2025-08-08_adsb-lol_trace_full.json.gz
+2025-08-08,N582MM,airplanes-live,20250807_rancho_palos_verdes,event,Rancho Palos Verdes,CA,2025-08-07,1,Charlie,214,False,3.33,,,True,N582MM/data/recovered/N582MM_2025-08-08_airplanes-live_trace_full.json.gz
+2025-08-08,N582MM,adsb-lol,20250808_rancho_palos_verdes,event,Rancho Palos Verdes,CA,2025-08-08,0,Charlie,214,False,3.33,,,True,N582MM/data/recovered/N582MM_2025-08-08_adsb-lol_trace_full.json.gz
+2025-08-08,N582MM,airplanes-live,20250808_rancho_palos_verdes,event,Rancho Palos Verdes,CA,2025-08-08,0,Charlie,214,False,3.33,,,True,N582MM/data/recovered/N582MM_2025-08-08_airplanes-live_trace_full.json.gz
+2025-08-09,N582MM,adsb-lol,20250808_rancho_palos_verdes,event,Rancho Palos Verdes,CA,2025-08-08,1,Charlie,437,True,7.14,33.818548,-118.153424,True,N582MM/data/recovered/N582MM_2025-08-09_adsb-lol_trace_full.json.gz
+2025-08-09,N582MM,airplanes-live,20250808_rancho_palos_verdes,event,Rancho Palos Verdes,CA,2025-08-08,1,Charlie,499,True,7.14,33.816349,-118.149619,True,N582MM/data/recovered/N582MM_2025-08-09_airplanes-live_trace_full.json.gz
+2025-08-09,N582MM,adsb-lol,control_des_moines,control,Des Moines,IA,,0,CONTROL — no known Kirk/TPUSA event,21,False,38.5,,,True,N582MM/data/recovered/N582MM_2025-08-09_adsb-lol_trace_full.json.gz
+2025-08-09,N582MM,airplanes-live,control_des_moines,control,Des Moines,IA,,0,CONTROL — no known Kirk/TPUSA event,44,False,38.5,,,True,N582MM/data/recovered/N582MM_2025-08-09_airplanes-live_trace_full.json.gz
+2025-08-21,N582MM,adsb-lol,control_albuquerque,control,Albuquerque,NM,,0,CONTROL — no known Kirk/TPUSA event,39,False,1.99,,,True,N582MM/data/recovered/N582MM_2025-08-21_adsb-lol_trace_full.json.gz
+2025-08-21,N582MM,airplanes-live,control_albuquerque,control,Albuquerque,NM,,0,CONTROL — no known Kirk/TPUSA event,75,False,1.63,,,True,N582MM/data/recovered/N582MM_2025-08-21_airplanes-live_trace_full.json.gz
+2025-08-21,N582MM,adsb-lol,control_des_moines,control,Des Moines,IA,,0,CONTROL — no known Kirk/TPUSA event,29,False,30.19,,,True,N582MM/data/recovered/N582MM_2025-08-21_adsb-lol_trace_full.json.gz
+2025-08-21,N582MM,airplanes-live,control_des_moines,control,Des Moines,IA,,0,CONTROL — no known Kirk/TPUSA event,58,False,30.19,,,True,N582MM/data/recovered/N582MM_2025-08-21_airplanes-live_trace_full.json.gz
+2025-08-23,SU-BTT,adsb-lol,control_des_moines,control,Des Moines,IA,,0,CONTROL — no known Kirk/TPUSA event,16,False,41.66,,,True,SU-BTT/data/recovered/SU-BTT_2025-08-23_adsb-lol_trace_full.json
+2025-08-23,SU-BTT,adsb-lol,control_des_moines,control,Des Moines,IA,,0,CONTROL — no known Kirk/TPUSA event,16,False,41.66,,,True,SU-BTT/data/recovered/SU-BTT_2025-08-23_adsb-lol_trace_full.json.gz
+2025-08-23,SU-BTT,airplanes-live,control_des_moines,control,Des Moines,IA,,0,CONTROL — no known Kirk/TPUSA event,31,False,41.66,,,True,SU-BTT/data/recovered/SU-BTT_2025-08-23_airplanes-live_trace_full.json
+2025-08-23,SU-BTT,airplanes-live,control_des_moines,control,Des Moines,IA,,0,CONTROL — no known Kirk/TPUSA event,31,False,41.66,,,True,SU-BTT/data/recovered/SU-BTT_2025-08-23_airplanes-live_trace_full.json.gz
+2025-09-09,N1098L,adsb-lol,control_albuquerque,control,Albuquerque,NM,,0,CONTROL — no known Kirk/TPUSA event,32,False,29.7,,,True,N1098L/data/recovered/N1098L_2025-09-09_adsb-lol_trace_full.json
+2025-09-09,N1098L,airplanes-live,control_albuquerque,control,Albuquerque,NM,,0,CONTROL — no known Kirk/TPUSA event,56,False,29.69,,,True,N1098L/data/recovered/N1098L_2025-09-09_airplanes-live_trace_full.json
+2025-09-09,SU-BND,adsb-lol,20250910_orem,event,Orem,UT,2025-09-10,-1,Charlie,131,True,4.94,40.229828,-111.727676,True,SU-BND/data/recovered/SU-BND_2025-09-09_adsb-lol_trace_full.json
+2025-09-09,SU-BND,adsb-lol,20250910_orem,event,Orem,UT,2025-09-10,-1,Charlie,131,True,4.94,40.229828,-111.727676,True,SU-BND/data/recovered/SU-BND_2025-09-09_adsb-lol_trace_full.json.gz
+2025-09-09,SU-BND,airplanes-live,20250910_orem,event,Orem,UT,2025-09-10,-1,Charlie,124,True,4.94,40.229828,-111.727676,True,SU-BND/data/recovered/SU-BND_2025-09-09_airplanes-live_trace_full.json
+2025-09-09,SU-BND,airplanes-live,20250910_orem,event,Orem,UT,2025-09-10,-1,Charlie,124,True,4.94,40.229828,-111.727676,True,SU-BND/data/recovered/SU-BND_2025-09-09_airplanes-live_trace_full.json.gz
+2025-09-10,N102DZ,adsb-lol,20250910_orem,event,Orem,UT,2025-09-10,0,Charlie,832,True,4.07,40.792385,-111.960022,True,N102DZ/data/recovered/N102DZ_2025-09-10_adsb-lol_trace_full.json
+2025-09-10,N102DZ,airplanes-live,20250910_orem,event,Orem,UT,2025-09-10,0,Charlie,851,True,4.07,40.792385,-111.960022,True,N102DZ/data/recovered/N102DZ_2025-09-10_airplanes-live_trace_full.json
+2025-09-10,N1098L,adsb-lol,20250910_orem,event,Orem,UT,2025-09-10,0,Charlie,577,False,3.04,,,True,N1098L/data/recovered/N1098L_2025-09-10_adsb-lol_trace_full.json
+2025-09-10,N1098L,airplanes-live,20250910_orem,event,Orem,UT,2025-09-10,0,Charlie,660,False,3.05,,,True,N1098L/data/recovered/N1098L_2025-09-10_airplanes-live_trace_full.json
+2025-09-10,N1098L,adsb-lol,control_albuquerque,control,Albuquerque,NM,,0,CONTROL — no known Kirk/TPUSA event,32,False,12.53,,,True,N1098L/data/recovered/N1098L_2025-09-10_adsb-lol_trace_full.json
+2025-09-10,N1098L,airplanes-live,control_albuquerque,control,Albuquerque,NM,,0,CONTROL — no known Kirk/TPUSA event,62,False,12.43,,,True,N1098L/data/recovered/N1098L_2025-09-10_airplanes-live_trace_full.json
+2025-09-10,N40JD,adsb-lol,20250910_orem,event,Orem,UT,2025-09-10,0,Charlie,569,True,4.03,40.226852,-111.729477,True,N40JD/data/recovered/N40JD_2025-09-10_adsb-lol_trace_full.json
+2025-09-10,N40JD,airplanes-live,20250910_orem,event,Orem,UT,2025-09-10,0,Charlie,568,True,4.03,40.226852,-111.729477,True,N40JD/data/recovered/N40JD_2025-09-10_airplanes-live_trace_full.json
+2025-09-10,N560TW,adsb-lol,20250910_orem,event,Orem,UT,2025-09-10,0,Charlie,496,True,4.05,40.211231,-111.71431,True,N560TW/data/recovered/N560TW_2025-09-10_adsb-lol_trace_full.json
+2025-09-10,N560TW,airplanes-live,20250910_orem,event,Orem,UT,2025-09-10,0,Charlie,559,True,4.05,40.211231,-111.71431,True,N560TW/data/recovered/N560TW_2025-09-10_airplanes-live_trace_full.json
+2025-09-10,N582MM,adsb-lol,control_des_moines,control,Des Moines,IA,,0,CONTROL — no known Kirk/TPUSA event,41,False,29.57,,,True,N582MM/data/recovered/N582MM_2025-09-10_adsb-lol_trace_full.json
+2025-09-10,N582MM,airplanes-live,control_des_moines,control,Des Moines,IA,,0,CONTROL — no known Kirk/TPUSA event,65,False,29.57,,,True,N582MM/data/recovered/N582MM_2025-09-10_airplanes-live_trace_full.json
+2025-09-10,N59906,adsb-lol,20250910_orem,event,Orem,UT,2025-09-10,0,Charlie,1289,True,0.39,40.219723,-111.719818,True,N59906/data/recovered/N59906_2025-09-10_adsb-lol_trace_full.json
+2025-09-10,N59906,airplanes-live,20250910_orem,event,Orem,UT,2025-09-10,0,Charlie,1579,True,0.12,40.219723,-111.719818,True,N59906/data/recovered/N59906_2025-09-10_airplanes-live_trace_full.json
+2025-09-10,N872RA,adsb-lol,20250910_orem,event,Orem,UT,2025-09-10,0,Charlie,663,True,4.06,40.221541,-111.724762,True,N872RA/data/recovered/N872RA_2025-09-10_adsb-lol_trace_full.json
+2025-09-10,N872RA,airplanes-live,20250910_orem,event,Orem,UT,2025-09-10,0,Charlie,635,True,4.06,40.221541,-111.724762,True,N872RA/data/recovered/N872RA_2025-09-10_airplanes-live_trace_full.json
+2025-09-10,N888KG,adsb-lol,20250910_orem,event,Orem,UT,2025-09-10,0,Charlie,523,True,4.07,40.219248,-111.719378,True,N888KG/data/recovered/N888KG_2025-09-10_adsb-lol_trace_full.json
+2025-09-10,N888KG,airplanes-live,20250910_orem,event,Orem,UT,2025-09-10,0,Charlie,489,True,4.07,40.219248,-111.719378,True,N888KG/data/recovered/N888KG_2025-09-10_airplanes-live_trace_full.json
+2025-09-10,SU-BND,adsb-lol,20250910_orem,event,Orem,UT,2025-09-10,0,Charlie,257,True,4.94,40.229804,-111.72768,True,SU-BND/data/recovered/SU-BND_2025-09-10_adsb-lol_trace_full.json
+2025-09-10,SU-BND,airplanes-live,20250910_orem,event,Orem,UT,2025-09-10,0,Charlie,328,True,4.94,40.229804,-111.72768,True,SU-BND/data/recovered/SU-BND_2025-09-10_airplanes-live_trace_full.json
+2025-09-10,SU-BTT,adsb-lol,20250910_orem,event,Orem,UT,2025-09-10,0,Charlie,292,True,4.92,40.230328,-111.728273,True,SU-BTT/data/recovered/SU-BTT_2025-09-10_adsb-lol_trace_full.json
+2025-09-10,SU-BTT,airplanes-live,20250910_orem,event,Orem,UT,2025-09-10,0,Charlie,305,True,4.92,40.230328,-111.728273,True,SU-BTT/data/recovered/SU-BTT_2025-09-10_airplanes-live_trace_full.json
+2025-09-10,SU-BTT,adsb-lol,control_des_moines,control,Des Moines,IA,,0,CONTROL — no known Kirk/TPUSA event,27,False,22.53,,,True,SU-BTT/data/recovered/SU-BTT_2025-09-10_adsb-lol_trace_full.json
+2025-09-10,SU-BTT,airplanes-live,control_des_moines,control,Des Moines,IA,,0,CONTROL — no known Kirk/TPUSA event,55,False,22.53,,,True,SU-BTT/data/recovered/SU-BTT_2025-09-10_airplanes-live_trace_full.json
+2025-09-11,N102DZ,adsb-lol,20250910_orem,event,Orem,UT,2025-09-10,1,Charlie,498,True,4.05,40.21867,-111.722214,True,N102DZ/data/recovered/N102DZ_2025-09-11_adsb-lol_trace_full.json
+2025-09-11,N102DZ,airplanes-live,20250910_orem,event,Orem,UT,2025-09-10,1,Charlie,481,True,4.05,40.21867,-111.722214,True,N102DZ/data/recovered/N102DZ_2025-09-11_airplanes-live_trace_full.json
+2025-09-11,N582MM,adsb-lol,20250910_orem,event,Orem,UT,2025-09-10,1,Charlie,694,True,4.0,40.219059,-111.722565,True,N582MM/data/recovered/N582MM_2025-09-11_adsb-lol_trace_full.json
+2025-09-11,N582MM,airplanes-live,20250910_orem,event,Orem,UT,2025-09-10,1,Charlie,701,True,4.0,40.219059,-111.722565,True,N582MM/data/recovered/N582MM_2025-09-11_airplanes-live_trace_full.json
+2025-09-11,N872RA,adsb-lol,20250910_orem,event,Orem,UT,2025-09-10,1,Charlie,114,True,35.3,40.797124,-111.960031,True,N872RA/data/recovered/N872RA_2025-09-11_adsb-lol_trace_full.json
+2025-09-11,N872RA,airplanes-live,20250910_orem,event,Orem,UT,2025-09-10,1,Charlie,110,True,35.3,40.797124,-111.960031,True,N872RA/data/recovered/N872RA_2025-09-11_airplanes-live_trace_full.json
+2025-09-12,N582MM,adsb-lol,control_des_moines,control,Des Moines,IA,,0,CONTROL — no known Kirk/TPUSA event,34,False,1.09,,,True,N582MM/data/recovered/N582MM_2025-09-12_adsb-lol_trace_full.json
+2025-09-12,N582MM,airplanes-live,control_des_moines,control,Des Moines,IA,,0,CONTROL — no known Kirk/TPUSA event,68,False,0.42,,,True,N582MM/data/recovered/N582MM_2025-09-12_airplanes-live_trace_full.json
+2025-09-18,N582MM,adsb-lol,20250918_fort_collins,event,Fort Collins,CO,2025-09-18,0,Charlie,5,False,45.63,,,True,N582MM/data/recovered/N582MM_2025-09-18_adsb-lol_trace_full.json.gz
+2025-09-18,N582MM,airplanes-live,20250918_fort_collins,event,Fort Collins,CO,2025-09-18,0,Charlie,6,False,45.44,,,True,N582MM/data/recovered/N582MM_2025-09-18_airplanes-live_trace_full.json.gz
+2025-09-19,N102DZ,adsb-lol,control_albuquerque,control,Albuquerque,NM,,0,CONTROL — no known Kirk/TPUSA event,11,False,47.92,,,True,N102DZ/data/recovered/N102DZ_2025-09-19_adsb-lol_trace_full.json.gz
+2025-09-19,N102DZ,airplanes-live,control_albuquerque,control,Albuquerque,NM,,0,CONTROL — no known Kirk/TPUSA event,5,False,47.97,,,True,N102DZ/data/recovered/N102DZ_2025-09-19_airplanes-live_trace_full.json.gz
+2025-09-19,N102DZ,adsb-lol,control_des_moines,control,Des Moines,IA,,0,CONTROL — no known Kirk/TPUSA event,19,False,41.43,,,True,N102DZ/data/recovered/N102DZ_2025-09-19_adsb-lol_trace_full.json.gz
+2025-09-19,N102DZ,airplanes-live,control_des_moines,control,Des Moines,IA,,0,CONTROL — no known Kirk/TPUSA event,38,False,41.41,,,True,N102DZ/data/recovered/N102DZ_2025-09-19_airplanes-live_trace_full.json.gz
+2025-09-19,N560TW,adsb-lol,control_albuquerque,control,Albuquerque,NM,,0,CONTROL — no known Kirk/TPUSA event,10,False,47.92,,,True,N560TW/data/recovered/N560TW_2025-09-19_adsb-lol_trace_full.json.gz
+2025-09-19,N560TW,airplanes-live,control_albuquerque,control,Albuquerque,NM,,0,CONTROL — no known Kirk/TPUSA event,22,False,47.92,,,True,N560TW/data/recovered/N560TW_2025-09-19_airplanes-live_trace_full.json.gz
+2025-09-19,N582MM,adsb-lol,20250918_fort_collins,event,Fort Collins,CO,2025-09-18,1,Charlie,707,True,30.34,39.90864,-105.115784,True,N582MM/data/recovered/N582MM_2025-09-19_adsb-lol_trace_full.json.gz
+2025-09-19,N582MM,airplanes-live,20250918_fort_collins,event,Fort Collins,CO,2025-09-18,1,Charlie,743,True,30.34,39.909004,-105.116486,True,N582MM/data/recovered/N582MM_2025-09-19_airplanes-live_trace_full.json.gz
+2025-09-19,N582MM,adsb-lol,control_des_moines,control,Des Moines,IA,,0,CONTROL — no known Kirk/TPUSA event,19,False,40.52,,,True,N582MM/data/recovered/N582MM_2025-09-19_adsb-lol_trace_full.json.gz
+2025-09-19,N582MM,airplanes-live,control_des_moines,control,Des Moines,IA,,0,CONTROL — no known Kirk/TPUSA event,40,False,40.52,,,True,N582MM/data/recovered/N582MM_2025-09-19_airplanes-live_trace_full.json.gz
+2025-09-20,N102DZ,adsb-lol,20250921_glendale,event,Glendale,AZ,2025-09-21,-1,Erika,215,True,15.37,33.620739,-111.91303,False,N102DZ/data/recovered/N102DZ_2025-09-20_adsb-lol_trace_full.json.gz
+2025-09-20,N102DZ,airplanes-live,20250921_glendale,event,Glendale,AZ,2025-09-21,-1,Erika,162,True,15.47,33.620887,-111.912847,False,N102DZ/data/recovered/N102DZ_2025-09-20_airplanes-live_trace_full.json.gz
+2025-09-20,N40JD,adsb-lol,20250921_glendale,event,Glendale,AZ,2025-09-21,-1,Erika,307,True,4.47,33.622307,-111.908952,True,N40JD/data/recovered/N40JD_2025-09-20_adsb-lol_trace_full.json.gz
+2025-09-20,N40JD,airplanes-live,20250921_glendale,event,Glendale,AZ,2025-09-21,-1,Erika,344,True,4.47,33.622307,-111.908952,True,N40JD/data/recovered/N40JD_2025-09-20_airplanes-live_trace_full.json.gz
+2025-09-21,N40JD,adsb-lol,20250921_glendale,event,Glendale,AZ,2025-09-21,0,Erika,66,False,5.41,,,True,N40JD/data/recovered/N40JD_2025-09-21_adsb-lol_trace_full.json.gz
+2025-09-21,N40JD,airplanes-live,20250921_glendale,event,Glendale,AZ,2025-09-21,0,Erika,100,False,5.43,,,True,N40JD/data/recovered/N40JD_2025-09-21_airplanes-live_trace_full.json.gz
+2025-09-21,N560TW,adsb-lol,20250921_glendale,event,Glendale,AZ,2025-09-21,0,Erika,362,True,17.05,33.625147,-111.90794,True,N560TW/data/recovered/N560TW_2025-09-21_adsb-lol_trace_full.json.gz
+2025-09-21,N560TW,airplanes-live,20250921_glendale,event,Glendale,AZ,2025-09-21,0,Erika,308,True,17.05,33.625147,-111.90794,True,N560TW/data/recovered/N560TW_2025-09-21_airplanes-live_trace_full.json.gz
+2025-09-21,N560TW,adsb-lol,control_albuquerque,control,Albuquerque,NM,,0,CONTROL — no known Kirk/TPUSA event,45,False,7.4,,,True,N560TW/data/recovered/N560TW_2025-09-21_adsb-lol_trace_full.json.gz
+2025-09-21,N560TW,airplanes-live,control_albuquerque,control,Albuquerque,NM,,0,CONTROL — no known Kirk/TPUSA event,40,False,7.39,,,True,N560TW/data/recovered/N560TW_2025-09-21_airplanes-live_trace_full.json.gz
+2025-09-22,N102DZ,adsb-lol,20250921_glendale,event,Glendale,AZ,2025-09-21,1,Erika,229,True,16.51,33.61916,-111.916323,True,N102DZ/data/recovered/N102DZ_2025-09-22_adsb-lol_trace_full.json.gz
+2025-09-22,N102DZ,airplanes-live,20250921_glendale,event,Glendale,AZ,2025-09-21,1,Erika,224,True,16.51,33.61916,-111.916323,True,N102DZ/data/recovered/N102DZ_2025-09-22_airplanes-live_trace_full.json.gz
+2025-09-22,N102DZ,adsb-lol,control_albuquerque,control,Albuquerque,NM,,0,CONTROL — no known Kirk/TPUSA event,31,False,1.67,,,True,N102DZ/data/recovered/N102DZ_2025-09-22_adsb-lol_trace_full.json.gz
+2025-09-22,N102DZ,airplanes-live,control_albuquerque,control,Albuquerque,NM,,0,CONTROL — no known Kirk/TPUSA event,52,False,2.47,,,True,N102DZ/data/recovered/N102DZ_2025-09-22_airplanes-live_trace_full.json.gz
+2025-09-22,N40JD,adsb-lol,20250921_glendale,event,Glendale,AZ,2025-09-21,1,Erika,300,True,13.16,33.621213,-111.912489,True,N40JD/data/recovered/N40JD_2025-09-22_adsb-lol_trace_full.json.gz
+2025-09-22,N40JD,airplanes-live,20250921_glendale,event,Glendale,AZ,2025-09-21,1,Erika,265,True,13.16,33.621213,-111.912489,True,N40JD/data/recovered/N40JD_2025-09-22_airplanes-live_trace_full.json.gz
+2025-09-22,N560TW,adsb-lol,20250921_glendale,event,Glendale,AZ,2025-09-21,1,Erika,666,True,13.44,33.622524,-111.909233,True,N560TW/data/recovered/N560TW_2025-09-22_adsb-lol_trace_full.json.gz
+2025-09-22,N560TW,airplanes-live,20250921_glendale,event,Glendale,AZ,2025-09-21,1,Erika,636,True,13.44,33.622707,-111.909415,True,N560TW/data/recovered/N560TW_2025-09-22_airplanes-live_trace_full.json.gz
+2025-09-22,N560TW,adsb-lol,control_albuquerque,control,Albuquerque,NM,,0,CONTROL — no known Kirk/TPUSA event,59,False,32.81,,,True,N560TW/data/recovered/N560TW_2025-09-22_adsb-lol_trace_full.json.gz
+2025-09-24,N102DZ,adsb-lol,control_spokane,control,Spokane,WA,,0,CONTROL — no known Kirk/TPUSA event,407,True,1.03,47.626791,-117.52496,True,N102DZ/data/recovered/N102DZ_2025-09-24_adsb-lol_trace_full.json.gz
+2025-09-24,N102DZ,airplanes-live,control_spokane,control,Spokane,WA,,0,CONTROL — no known Kirk/TPUSA event,403,True,1.02,47.626791,-117.52496,True,N102DZ/data/recovered/N102DZ_2025-09-24_airplanes-live_trace_full.json.gz
+2025-09-29,N560TW,adsb-lol,20250930_logan,event,Logan,UT,2025-09-30,-1,TPUSA,56,False,27.22,,,True,N560TW/data/recovered/N560TW_2025-09-29_adsb-lol_trace_full.json.gz
+2025-09-29,N560TW,airplanes-live,20250930_logan,event,Logan,UT,2025-09-30,-1,TPUSA,93,False,27.23,,,True,N560TW/data/recovered/N560TW_2025-09-29_airplanes-live_trace_full.json.gz
+2025-10-01,N1098L,adsbexchange-samples,control_shreveport,control,Shreveport,LA,,0,CONTROL — no known Kirk/TPUSA event,197,False,2.63,,,True,N1098L/data/recovered/N1098L_2025-10-01_adsbexchange-samples_trace_full.json
+2025-10-06,N582MM,adsb-lol,control_albuquerque,control,Albuquerque,NM,,0,CONTROL — no known Kirk/TPUSA event,10,False,48.52,,,True,N582MM/data/recovered/N582MM_2025-10-06_adsb-lol_trace_full.json.gz
+2025-10-06,N582MM,airplanes-live,control_albuquerque,control,Albuquerque,NM,,0,CONTROL — no known Kirk/TPUSA event,6,False,48.51,,,True,N582MM/data/recovered/N582MM_2025-10-06_airplanes-live_trace_full.json.gz
+2025-10-08,N102DZ,adsb-lol,control_des_moines,control,Des Moines,IA,,0,CONTROL — no known Kirk/TPUSA event,27,False,29.91,,,True,N102DZ/data/recovered/N102DZ_2025-10-08_adsb-lol_trace_full.json
+2025-10-08,N102DZ,airplanes-live,control_des_moines,control,Des Moines,IA,,0,CONTROL — no known Kirk/TPUSA event,51,False,29.88,,,True,N102DZ/data/recovered/N102DZ_2025-10-08_airplanes-live_trace_full.json
+2025-10-08,N582MM,adsb-lol,control_albuquerque,control,Albuquerque,NM,,0,CONTROL — no known Kirk/TPUSA event,19,False,45.12,,,True,N582MM/data/recovered/N582MM_2025-10-08_adsb-lol_trace_full.json
+2025-10-08,N582MM,airplanes-live,control_albuquerque,control,Albuquerque,NM,,0,CONTROL — no known Kirk/TPUSA event,24,False,45.11,,,True,N582MM/data/recovered/N582MM_2025-10-08_airplanes-live_trace_full.json
+2025-10-08,N582MM,adsb-lol,control_spokane,control,Spokane,WA,,0,CONTROL — no known Kirk/TPUSA event,106,False,32.61,,,True,N582MM/data/recovered/N582MM_2025-10-08_adsb-lol_trace_full.json
+2025-10-08,N582MM,airplanes-live,control_spokane,control,Spokane,WA,,0,CONTROL — no known Kirk/TPUSA event,172,True,28.98,47.774746,-116.825558,True,N582MM/data/recovered/N582MM_2025-10-08_airplanes-live_trace_full.json
+2025-10-09,N1098L,adsb-lol,control_albuquerque,control,Albuquerque,NM,,0,CONTROL — no known Kirk/TPUSA event,40,False,11.66,,,True,N1098L/data/recovered/N1098L_2025-10-09_adsb-lol_trace_full.json
+2025-10-09,N560TW,adsb-lol,control_albuquerque,control,Albuquerque,NM,,0,CONTROL — no known Kirk/TPUSA event,678,True,4.42,35.029575,-106.621796,True,N560TW/data/recovered/N560TW_2025-10-09_adsb-lol_trace_full.json
+2025-10-09,N560TW,airplanes-live,control_albuquerque,control,Albuquerque,NM,,0,CONTROL — no known Kirk/TPUSA event,204,False,4.74,,,True,N560TW/data/recovered/N560TW_2025-10-09_airplanes-live_trace_full.json
+2025-10-09,N582MM,adsb-lol,control_spokane,control,Spokane,WA,,0,CONTROL — no known Kirk/TPUSA event,81,False,26.19,,,True,N582MM/data/recovered/N582MM_2025-10-09_adsb-lol_trace_full.json
+2025-10-09,N582MM,airplanes-live,control_spokane,control,Spokane,WA,,0,CONTROL — no known Kirk/TPUSA event,174,True,26.18,47.778133,-116.817627,True,N582MM/data/recovered/N582MM_2025-10-09_airplanes-live_trace_full.json
+2025-10-10,N1098L,adsb-lol,control_albuquerque,control,Albuquerque,NM,,0,CONTROL — no known Kirk/TPUSA event,231,False,8.06,,,True,N1098L/data/recovered/N1098L_2025-10-10_adsb-lol_trace_full.json
+2025-10-10,N1098L,airplanes-live,control_albuquerque,control,Albuquerque,NM,,0,CONTROL — no known Kirk/TPUSA event,239,False,8.06,,,True,N1098L/data/recovered/N1098L_2025-10-10_airplanes-live_trace_full.json
+2025-10-10,N582MM,adsb-lol,control_des_moines,control,Des Moines,IA,,0,CONTROL — no known Kirk/TPUSA event,52,False,8.71,,,True,N582MM/data/recovered/N582MM_2025-10-10_adsb-lol_trace_full.json
+2025-10-10,N582MM,airplanes-live,control_des_moines,control,Des Moines,IA,,0,CONTROL — no known Kirk/TPUSA event,78,False,8.65,,,True,N582MM/data/recovered/N582MM_2025-10-10_airplanes-live_trace_full.json
+2025-10-15,N582MM,airplanes-live,20251016_norman,event,Norman,OK,2025-10-16,-1,TPUSA,53,False,33.01,,,True,N582MM/data/recovered/N582MM_2025-10-15_airplanes-live_trace_full.json
+2025-10-15,N582MM,airplanes-live,control_albuquerque,control,Albuquerque,NM,,0,CONTROL — no known Kirk/TPUSA event,20,False,24.56,,,True,N582MM/data/recovered/N582MM_2025-10-15_airplanes-live_trace_full.json
+2025-10-15,N582MM,airplanes-live,control_chattanooga,control,Chattanooga,TN,,0,CONTROL — no known Kirk/TPUSA event,17,False,49.69,,,True,N582MM/data/recovered/N582MM_2025-10-15_airplanes-live_trace_full.json
+2025-10-16,T7-ELL,airplanes-live,control_syracuse,control,Syracuse,NY,,0,CONTROL — no known Kirk/TPUSA event,22,False,47.47,,,True,T7-ELL/data/recovered/T7-ELL_2025-10-16_airplanes-live_trace_full.json
+2025-10-17,N582MM,airplanes-live,control_des_moines,control,Des Moines,IA,,0,CONTROL — no known Kirk/TPUSA event,63,False,26.17,,,True,N582MM/data/recovered/N582MM_2025-10-17_airplanes-live_trace_full.json.gz
+2025-10-20,N102DZ,airplanes-live,control_des_moines,control,Des Moines,IA,,0,CONTROL — no known Kirk/TPUSA event,53,False,14.73,,,True,N102DZ/data/recovered/N102DZ_2025-10-20_airplanes-live_trace_full.json.gz
+2025-10-20,N102DZ,airplanes-live,control_syracuse,control,Syracuse,NY,,0,CONTROL — no known Kirk/TPUSA event,33,False,42.27,,,True,N102DZ/data/recovered/N102DZ_2025-10-20_airplanes-live_trace_full.json.gz
+2025-10-21,N102DZ,airplanes-live,20251021_bloomington,event,Bloomington,IN,2025-10-21,0,TPUSA,87,False,42.31,,,True,N102DZ/data/recovered/N102DZ_2025-10-21_airplanes-live_trace_full.json.gz
+2025-10-21,N102DZ,airplanes-live,control_syracuse,control,Syracuse,NY,,0,CONTROL — no known Kirk/TPUSA event,78,False,2.63,,,True,N102DZ/data/recovered/N102DZ_2025-10-21_airplanes-live_trace_full.json.gz
+2025-10-21,N582MM,airplanes-live,20251021_bloomington,event,Bloomington,IN,2025-10-21,0,TPUSA,173,False,42.26,,,True,N582MM/data/recovered/N582MM_2025-10-21_airplanes-live_trace_full.json.gz
+2025-10-21,N582MM,airplanes-live,control_shreveport,control,Shreveport,LA,,0,CONTROL — no known Kirk/TPUSA event,18,False,49.07,,,True,N582MM/data/recovered/N582MM_2025-10-21_airplanes-live_trace_full.json.gz
+2025-10-22,N102DZ,airplanes-live,20251021_bloomington,event,Bloomington,IN,2025-10-21,1,TPUSA,107,False,33.83,,,True,N102DZ/data/recovered/N102DZ_2025-10-22_airplanes-live_trace_full.json.gz
+2025-10-22,N102DZ,airplanes-live,control_des_moines,control,Des Moines,IA,,0,CONTROL — no known Kirk/TPUSA event,56,False,32.31,,,True,N102DZ/data/recovered/N102DZ_2025-10-22_airplanes-live_trace_full.json.gz
+2025-10-22,N102DZ,airplanes-live,control_syracuse,control,Syracuse,NY,,0,CONTROL — no known Kirk/TPUSA event,85,False,36.59,,,True,N102DZ/data/recovered/N102DZ_2025-10-22_airplanes-live_trace_full.json.gz
+2025-10-22,N582MM,airplanes-live,20251021_bloomington,event,Bloomington,IN,2025-10-21,1,TPUSA,167,False,17.33,,,True,N582MM/data/recovered/N582MM_2025-10-22_airplanes-live_trace_full.json.gz
+2025-10-22,N582MM,airplanes-live,control_shreveport,control,Shreveport,LA,,0,CONTROL — no known Kirk/TPUSA event,94,False,16.87,,,True,N582MM/data/recovered/N582MM_2025-10-22_airplanes-live_trace_full.json.gz
+2025-10-22,N872RA,airplanes-live,control_albuquerque,control,Albuquerque,NM,,0,CONTROL — no known Kirk/TPUSA event,169,False,17.13,,,True,N872RA/data/recovered/N872RA_2025-10-22_airplanes-live_trace_full.json.gz
+2025-10-28,N582MM,airplanes-live,control_des_moines,control,Des Moines,IA,,0,CONTROL — no known Kirk/TPUSA event,355,False,15.6,,,True,N582MM/data/recovered/N582MM_2025-10-28_airplanes-live_trace_full.json.gz
+2025-10-29,N102DZ,airplanes-live,20251029_oxford,event,Oxford,MS,2025-10-29,0,TPUSA,117,False,7.3,,,True,N102DZ/data/recovered/N102DZ_2025-10-29_airplanes-live_trace_full.json.gz
+2025-10-29,N582MM,airplanes-live,control_albuquerque,control,Albuquerque,NM,,0,CONTROL — no known Kirk/TPUSA event,18,False,19.03,,,True,N582MM/data/recovered/N582MM_2025-10-29_airplanes-live_trace_full.json.gz
+2025-10-30,N102DZ,airplanes-live,20251029_oxford,event,Oxford,MS,2025-10-29,1,TPUSA,95,False,3.66,,,True,N102DZ/data/recovered/N102DZ_2025-10-30_airplanes-live_trace_full.json.gz
+2025-10-30,N102DZ,airplanes-live,control_albuquerque,control,Albuquerque,NM,,0,CONTROL — no known Kirk/TPUSA event,72,False,10.17,,,True,N102DZ/data/recovered/N102DZ_2025-10-30_airplanes-live_trace_full.json.gz
+2025-10-30,N872RA,airplanes-live,control_albuquerque,control,Albuquerque,NM,,0,CONTROL — no known Kirk/TPUSA event,74,False,5.76,,,True,N872RA/data/recovered/N872RA_2025-10-30_airplanes-live_trace_full.json.gz

@@ -1,0 +1,33 @@
+{
+ "url": "https://github.com/adsblol/globe_history_2025/releases/tag/v2025.09.22-planes-readsb-prod-0",
+ "http_status": 200,
+ "stored_gzipped": true,
+ "stored_bytes": 44235,
+ "retrieved_utc": null,
+ "tail": "N1098L",
+ "hex": "a0299e",
+ "date_utc": "2025-09-22",
+ "source": "adsblol-github-backup",
+ "source_key": "adsblol-github-backup",
+ "source_role": "adsb.lol's own off-site mirror of its entire archive, ODbL",
+ "tool": "apis/public_open_source/code/ingest_sweep_traces.py",
+ "ingested_from": "following/apis/public_open_source/data/geo_sweep/2025-09-22/traces/a0299e.json.gz",
+ "note": "Downloaded by the GEOGRAPHIC sweep, which streams a whole UTC day and keeps the full trace for any tracked tail it meets. Copied here so the per-aircraft lane can see it; the sweep copy is untouched. Same bytes, same archive, filed under the tail instead of the date.",
+ "summary": {
+  "registration": "N1098L",
+  "type": "GLEX",
+  "points": 1588,
+  "first_seen_utc": "2025-09-22T14:50:49.310000Z",
+  "last_seen_utc": "2025-09-22T23:59:58.990000Z",
+  "first_pos": [
+   32.528046,
+   -107.224969
+  ],
+  "last_pos": [
+   43.475098,
+   -116.478967
+  ],
+  "wheels_up_utc": null,
+  "wheels_down_utc": null
+ }
+}
