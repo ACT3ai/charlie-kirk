@@ -40,6 +40,7 @@ const sidebars: SidebarsConfig = {
     {type: 'doc', id: 'People/overview', label: 'People'},
     {type: 'doc', id: 'Witnesses/overview', label: 'Witnesses'},
     {type: 'doc', id: 'Before/overview', label: 'Before the Shooting'},
+    {type: 'doc', id: 'meeting/overview', label: 'The Meeting'},
     {type: 'doc', id: 'intelligence/overview', label: 'Intelligence Services'},
     {type: 'doc', id: 'After/overview', label: 'After the Shooting'},
     {type: 'doc', id: 'Motive/overview', label: 'Motive'},
