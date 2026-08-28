@@ -24,9 +24,9 @@
 | [OWENS-043](/Planes/following/overlap/20221125_DE_wilmington_owens_043/overview) | **25 November 2022** | Charlie: **not claimed** · Erika: **claimed** | Delaware | **None.** No sourced Kirk or TPUSA appearance within three days, anywhere. | — | — | — | *none recorded* |
 | [OWENS-044](/Planes/following/overlap/20221205_IL_chicago_owens_044/overview) | **5 December 2022** | Charlie: **not claimed** · Erika: **claimed** | Illinois | **None.** No sourced Kirk or TPUSA appearance within three days, anywhere. | — | — | — | *none recorded* |
 | [OWENS-006](/Planes/following/overlap/20221220_MO_st_louis_owens_006/overview) | **20 December 2022** | Charlie: **not claimed** · Erika: **claimed** | Missouri | **None same-day.** Nearest sourced: [Charlie — AmericaFest 2022, Phoenix, AZ](/Planes/following/speaking/20221217_phoenix) (-3 days) | — | — | — | *none recorded* |
-| [OWENS-007](/Planes/following/overlap/20221227_ME_bangor_owens_007/overview) | **27 December 2022** | Charlie: **not claimed** · Erika: **claimed** | UNKNOWN | **None.** No sourced Kirk or TPUSA appearance within three days, anywhere. | — | — | — | *none recorded* |
+| [OWENS-007](/Planes/following/overlap/20221227_ME_bangor_owens_007/overview) | **27 December 2022** | Charlie: **not claimed** · Erika: **claimed** | *never stated* | **None.** No sourced Kirk or TPUSA appearance within three days, anywhere. | — | — | — | *none recorded* |
 | [OWENS-045](/Planes/following/overlap/20230112_KS_wichita_owens_045/overview) | **12 January 2023** | Charlie: **not claimed** · Erika: **claimed** | Kansas | **None.** No sourced Kirk or TPUSA appearance within three days, anywhere. | — | — | — | *none recorded* |
-| [OWENS-008](/Planes/following/overlap/20230115_GA_atlanta_owens_008/overview) | **15 January 2023** | Charlie: **not claimed** · Erika: **claimed** | UNKNOWN | **None.** No sourced Kirk or TPUSA appearance within three days, anywhere. | — | — | — | *none recorded* |
+| [OWENS-008](/Planes/following/overlap/20230115_GA_atlanta_owens_008/overview) | **15 January 2023** | Charlie: **not claimed** · Erika: **claimed** | *never stated* | **None.** No sourced Kirk or TPUSA appearance within three days, anywhere. | — | — | — | *none recorded* |
 
 ## TABLE C — sourcing and both verdicts
 

@@ -1,0 +1,242 @@
+---
+id: cuts-state-nebraska
+slug: /Planes/following/cuts/state-nebraska
+displayed_sidebar: docs
+title: "Nebraska — every overlap, every landing, every event"
+sidebar_label: "Nebraska — 19 rows"
+description: "The Nebraska cell of the by-state table on the Following overview: 19 claimed overlaps, the 15 logged ground stays at Omaha and Lincoln, and the three sourced Kirk appearances in the state."
+keywords:
+  - Charlie Kirk
+  - Erika Kirk
+  - SU-BTT
+  - SU-BTU
+  - SU-BTV
+  - KOMA
+  - KLNK
+  - Omaha Eppley
+  - Lincoln Airport
+  - Duncan Aviation
+  - flight tracking
+image: "/img/docusaurus-social-card.jpg"
+hide_table_of_contents: true
+---
+
+<div className="ck-full-bleed" />
+
+<a href="/Planes/following/cuts/overview" style={{display:'inline-block', marginBottom:'1rem',
+padding:'0.35rem 0.9rem', background:'#1a73e8', color:'#fff',
+borderRadius:'4px', textDecoration:'none', fontSize:'0.9rem'}}>← Table drill-downs</a>
+
+# Nebraska — every overlap, every landing, every event
+
+**Where this came from.** On [the Following overview](/Planes/following/overview), the table that
+breaks the overlap register down **by state** carries a cell reading "Nebraska". This page is that
+cell. It holds **19 claimed overlap rows**. Because Nebraska is also where the fleet's logged ground
+stays are densest, this page carries three further tables the state cells elsewhere do not always
+need: the **15 logged ground presences** in the state, and the **three sourced Kirk or TPUSA
+appearances** the site can independently date to Nebraska.
+
+## What this slice is
+
+Three separate filters, kept separate on purpose. **Table A, B and C** hold every row in
+`overlaps.csv` whose claimed location is in Nebraska — 19 rows, at Omaha Eppley (KOMA) or Lincoln
+(KLNK). **Table D** holds every leg in `flights.csv` that logs an aircraft on the ground in Nebraska,
+whether or not any overlap row was ever built on it — 15 legs. **Table E** holds every entry in
+`tpusa_events.csv` for a Kirk or TPUSA appearance in Nebraska — 3 events. A row in Table D is not a
+claim about anybody; it is a landing record. Reproduce all three by filtering each file on
+`state = NE`.
+
+## At a glance
+
+| Measure | Value |
+|---|---|
+| Claimed overlap rows | **19** |
+| Distinct dates | 18 |
+| Date range | 15 March 2023 → 17 August 2025 |
+| Airports | KOMA 12 · KLNK 7 |
+| Aircraft named on the overlap rows | SU-BTT 15 · no aircraft named 4 (logged as "no tail named" 2 and "UNKNOWN" 2) |
+| By year | 2023: 3 · 2024: 9 · 2025: 7 |
+| ADS-B verdicts | Not heard 10 · At the claimed airport — corroborated 4 · No aircraft named 4 · Elsewhere — refuted 1 |
+| Audit verdicts | Inaccurate 10 · Not reached by the audit 4 · Partially accurate 4 · Accurate 1 |
+| Who the sheet claims | Erika Kirk alone 13 · Charlie Kirk alone 4 · TPUSA event, neither Kirk 2 |
+| Ground-position confirmations among the overlap rows | 0 |
+| Rows landing on a same-day sourced Kirk or TPUSA appearance | 4 |
+| Logged ground presences in the state (Table D) | 15, flown by SU-BTT, SU-BTU and SU-BTV |
+| Sourced Kirk / TPUSA appearances in the state (Table E) | 3 |
+
+## TABLE A — the following aircraft
+
+| Row | Date claimed | Airport | City / State | Following aircraft | Type | ICAO hex | Arrived from | Departed to | Ground stay logged, arrived | Departed | Days | Transponder / ground flag | ADS-B verdict | Closest approach |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| [OWENS-047](/Planes/following/overlap/20230315_NE_omaha_owens_047/overview) | **15 March 2023** | [**KOMA**](/Planes/following/Omaha_KOMA_2024-02-09_to_2025-10-05/overview)<br/>Omaha (claimed) | Omaha, NE | [SU-BTT](/Planes/SU-BTT/overview) | Dassault Falcon 7X | `0101D3` | Paris (claimed) | *not recorded* | *no logged stay covers this date* | — | — | — | **Not heard** | — |
+| [OWENS-017](/Planes/following/overlap/20230725_NE_lincoln_owens_017/overview) | **25 July 2023** | [**KLNK**](/Planes/following/Lincoln_KLNK_2024-02-09_to_2025-10-11/overview)<br/>Lincoln (claimed) | Lincoln, NE | [SU-BTT](/Planes/SU-BTT/overview) | Dassault Falcon 7X | `0101D3` | Cairo via Paris | *not recorded* | *no logged stay covers this date* | — | — | — | **Not heard** | — |
+| [EXTRA-005](/Planes/following/overlap/20230825_NE_lincoln_extra_005/overview) | **25 August 2023** | [**KLNK**](/Planes/following/Lincoln_KLNK_2024-02-09_to_2025-10-11/overview)<br/>Lincoln (Kirk location; jet in Egypt per audit) | Lincoln, NE | [SU-BTT](/Planes/SU-BTT/overview) | Dassault Falcon 7X | `0101D3` | *not recorded* | *not recorded* | *no logged stay covers this date* | — | — | — | **Not heard** | — |
+| [OWENS-020](/Planes/following/overlap/20240209_NE_omaha_lincoln_owens_020/overview) | **9 February 2024** | [**KOMA**](/Planes/following/Omaha_KOMA_2024-02-09_to_2025-10-05/overview)<br/>Omaha Eppley then Lincoln | Omaha / Lincoln, NE | [SU-BTT](/Planes/SU-BTT/overview) | Dassault Falcon 7X | `0101D3` | Cairo via Paris | Lincoln same day then Wilmington 2024-02-14 | *no logged stay covers this date* | — | — | airborne position | **At the claimed airport — corroborated** | 0.31 km |
+| [SITE-002](/Planes/following/overlap/20240211_NE_lincoln/overview) | **11 February 2024** | [**KLNK**](/Planes/following/Lincoln_KLNK_2024-02-09_to_2025-10-11/overview)<br/>Lincoln Airport | Lincoln, NE | [SU-BTT](/Planes/SU-BTT/overview) | Dassault Falcon 7X (hex 0101D3) | `0101D3` | Cairo -> Paris-Le Bourget -> Omaha (KOMA) 10:57 am 9 Feb, then the 15-19 min hop to Lincoln | Wilmington 14 Feb 08:38 am, then Cairo 16 Feb | *no logged stay covers this date* | — | — | on | **Not heard** | — |
+| [EXTRA-002](/Planes/following/overlap/20240409_NE_omaha_extra_002/overview) | **9 April 2024** | [**KOMA**](/Planes/following/Omaha_KOMA_2024-02-09_to_2025-10-05/overview)<br/>Omaha (Kirk location; no jet) | Omaha, NE | *no tail named* | *not stated* | — | *not recorded* | *not recorded* | *no logged stay covers this date* | — | — | — | **No aircraft named** | — |
+| [OWENS-055](/Planes/following/overlap/20240415_NE_omaha_owens_055/overview) | **15 April 2024** | [**KOMA**](/Planes/following/Omaha_KOMA_2024-02-09_to_2025-10-05/overview)<br/>Omaha (claimed) | Omaha, NE | [SU-BTT](/Planes/SU-BTT/overview) | Dassault Falcon 7X | `0101D3` | Paris (claimed) | Cairo (claimed) | *no logged stay covers this date* | — | — | — | **Not heard** | — |
+| [OWENS-058](/Planes/following/overlap/20240618_NE_lincoln_owens_058/overview) | **18 June 2024** | [**KLNK**](/Planes/following/Lincoln_KLNK_2024-02-09_to_2025-10-11/overview)<br/>Lincoln (claimed) | Lincoln, NE | [SU-BTT](/Planes/SU-BTT/overview) | Dassault Falcon 7X | `0101D3` | Paris (claimed) | Wilmington / Cairo (claimed) | *no logged stay covers this date* | — | — | — | **Not heard** | — |
+| [OWENS-028](/Planes/following/overlap/20240720_NE_omaha_lincoln_owens_028/overview) | **20 July 2024** | [**KOMA**](/Planes/following/Omaha_KOMA_2024-02-09_to_2025-10-05/overview)<br/>Omaha then Lincoln (claimed) | Omaha / Lincoln, NE | [SU-BTT](/Planes/SU-BTT/overview) | Dassault Falcon 7X | `0101D3` | Cairo via Paris | Wilmington / Cairo (claimed) | *no logged stay covers this date* | — | — | — | **Not heard** | — |
+| [OWENS-060](/Planes/following/overlap/20240725_NE_omaha_lincoln_owens_060/overview) | **25 July 2024** | [**KOMA**](/Planes/following/Omaha_KOMA_2024-02-09_to_2025-10-05/overview)<br/>Omaha then Lincoln (claimed) | Omaha / Lincoln, NE | [SU-BTT](/Planes/SU-BTT/overview) | Dassault Falcon 7X | `0101D3` | Paris (claimed) | Wilmington / Cairo (claimed) | *no logged stay covers this date* | — | — | — | **Not heard** | — |
+| [OWENS-029](/Planes/following/overlap/20240817_NE_omaha_lincoln_owens_029/overview) | **17 August 2024** | [**KOMA**](/Planes/following/Omaha_KOMA_2024-02-09_to_2025-10-05/overview)<br/>Omaha then Lincoln (claimed) | Omaha / Lincoln, NE | [SU-BTT](/Planes/SU-BTT/overview) | Dassault Falcon 7X | `0101D3` | Paris (claimed) | Wilmington / Cairo (claimed) | *no logged stay covers this date* | — | — | — | **Not heard** | — |
+| [EXTRA-001](/Planes/following/overlap/20240914_NE_lincoln_extra_001/overview) | **14 September 2024** | [**KLNK**](/Planes/following/Lincoln_KLNK_2024-02-09_to_2025-10-11/overview)<br/>Lincoln (Kirk location only — no jet claimed that day) | Lincoln, NE | *no tail named* | *not stated* | — | *not recorded* | *not recorded* | *no logged stay covers this date* | — | — | — | **No aircraft named** | — |
+| [OWENS-062](/Planes/following/overlap/20250208_NE_omaha_owens_062/overview) | **8 February 2025** | [**KOMA**](/Planes/following/Omaha_KOMA_2024-02-09_to_2025-10-05/overview)<br/>Omaha (claimed) | Omaha, NE | [SU-BTT](/Planes/SU-BTT/overview) | Dassault Falcon 7X | `0101D3` | Paris (claimed) | Cairo (claimed) | *no logged stay covers this date* | — | — | — | **Not heard** | — |
+| [EXTRA-007](/Planes/following/overlap/20250429_NE_lincoln_extra_007/overview) | **29 April 2025** | [**KLNK**](/Planes/following/Lincoln_KLNK_2024-02-09_to_2025-10-11/overview)<br/>Lincoln (claimed by amplifier — no tail, not on Owens sheet) | Lincoln, NE | *no tail named* | *not stated* | — | *not recorded* | *not recorded* | *no logged stay covers this date* | — | — | — | **No aircraft named** | — |
+| [OWENS-036](/Planes/following/overlap/20250618_NE_omaha_lincoln_owens_036/overview) | **18 June 2025** | [**KOMA**](/Planes/following/Omaha_KOMA_2024-02-09_to_2025-10-05/overview)<br/>Omaha then Lincoln (claimed) | Omaha / Lincoln, NE | [SU-BTT](/Planes/SU-BTT/overview) | Dassault Falcon 7X | `0101D3` | Paris (claimed) | Wilmington / Cairo (claimed) | *no logged stay covers this date* | — | — | — | **Elsewhere — refuted** | 10139.55 km |
+| [EXTRA-004](/Planes/following/overlap/20250711_NE_omaha_extra_004/overview) | **11 July 2025** | [**KOMA**](/Planes/following/Omaha_KOMA_2024-02-09_to_2025-10-05/overview)<br/>Omaha (claimed by amplifier, not Owens sheet) | Omaha, NE | *no tail named* | *not stated* | — | *not recorded* | *not recorded* | *no logged stay covers this date* | — | — | — | **No aircraft named** | — |
+| [OWENS-038](/Planes/following/overlap/20250720_NE_omaha_lincoln_owens_038/overview) | **20 July 2025** | [**KOMA**](/Planes/following/Omaha_KOMA_2024-02-09_to_2025-10-05/overview)<br/>Omaha Eppley then Lincoln | Omaha / Lincoln, NE | [SU-BTT](/Planes/SU-BTT/overview) | Dassault Falcon 7X | `0101D3` | Cairo via Paris | Lincoln same day; Wilmington 2025-07-26; Cairo 2025-07-27 | 20 July 2025 | 20 July 2025 | 0 | airborne position | **At the claimed airport — corroborated** | 1.33 km |
+| [OWENS-067](/Planes/following/overlap/20250720_NE_lincoln_owens_067/overview) | **20 July 2025** | [**KLNK**](/Planes/following/Lincoln_KLNK_2024-02-09_to_2025-10-11/overview)<br/>Lincoln (audit: terminated 20 Jul in Lincoln) | Lincoln, NE | [SU-BTT](/Planes/SU-BTT/overview) | Dassault Falcon 7X | `0101D3` | Cairo via Paris via Omaha | Lincoln 20 Jul; return 26 Jul | 20 July 2025 | 26 July 2025 | 6 | airborne position | **At the claimed airport — corroborated** | 7.20 km |
+| [OWENS-039](/Planes/following/overlap/20250817_NE_omaha_lincoln_owens_039/overview) | **17 August 2025** | [**KOMA**](/Planes/following/Omaha_KOMA_2024-02-09_to_2025-10-05/overview)<br/>Omaha Eppley then Lincoln | Omaha / Lincoln, NE | [SU-BTT](/Planes/SU-BTT/overview) | Dassault Falcon 7X | `0101D3` | Cairo via Paris 16 Aug (audit) | Lincoln; Wilmington 8/23; Cairo 8/24 | 17 August 2025 | 17 August 2025 | 0 | airborne position | **At the claimed airport — corroborated** | 0.50 km |
+
+## TABLE B — who they are claimed to have been following
+
+| Row | Date claimed | Who the sheet claims was present | Erika location as the sheet gives it | Sourced Kirk / TPUSA appearance same day | Venue | Local time | Nearest airport to that venue | Kirk-side aircraft on record |
+|---|---|---|---|---|---|---|---|---|
+| [OWENS-047](/Planes/following/overlap/20230315_NE_omaha_owens_047/overview) | **15 March 2023** | Charlie: **not claimed** · Erika: **claimed** | Nebraska | **None same-day.** Nearest sourced: [Charlie — Live Free Tour — UC Davis, Davis, CA](/Planes/following/speaking/20230314_davis) (-1 days) | — | — | — | *none recorded* |
+| [OWENS-017](/Planes/following/overlap/20230725_NE_lincoln_owens_017/overview) | **25 July 2023** | Charlie: **not claimed** · Erika: **claimed** | Nebraska | **None.** No sourced Kirk or TPUSA appearance within three days, anywhere. | — | — | — | *none recorded* |
+| [EXTRA-005](/Planes/following/overlap/20230825_NE_lincoln_extra_005/overview) | **25 August 2023** | Charlie: **claimed** · Erika: **not claimed** | *blank on the sheet* | [Charlie — Charlie Kirk speaking appearance — Lincoln, Nebraska, Lincoln, NE](/Planes/following/speaking/20230825_lincoln) | Lincoln, Nebraska (venue not named on the following overview) | — | KLNK — Lincoln Airport, 4 mi | *none recorded* |
+| [OWENS-020](/Planes/following/overlap/20240209_NE_omaha_lincoln_owens_020/overview) | **9 February 2024** | Charlie: **not claimed** · Erika: **not claimed** | Nebraska | **None.** No sourced Kirk or TPUSA appearance within three days, anywhere. | — | — | — | *none recorded* |
+| [SITE-002](/Planes/following/overlap/20240211_NE_lincoln/overview) | **11 February 2024** | Charlie: **not claimed** · Erika: **not claimed** | *blank on the sheet* | **None.** No sourced Kirk or TPUSA appearance within three days, anywhere. | — | — | — | *none recorded* |
+| [EXTRA-002](/Planes/following/overlap/20240409_NE_omaha_extra_002/overview) | **9 April 2024** | Charlie: **claimed** · Erika: **not claimed** | *blank on the sheet* | [Charlie — Win Every Vote / Winner-Take-All rally — Omaha, Omaha, NE](/Planes/following/speaking/20240409_omaha) | Lord of Hosts Church, 5351 S. 139th Plaza, Omaha | 19:00 CT | KOMA — Eppley Airfield, 4 mi | *none recorded* |
+| [OWENS-055](/Planes/following/overlap/20240415_NE_omaha_owens_055/overview) | **15 April 2024** | Charlie: **not claimed** · Erika: **claimed** | Nebraska | **None.** No sourced Kirk or TPUSA appearance within three days, anywhere. | — | — | — | *none recorded* |
+| [OWENS-058](/Planes/following/overlap/20240618_NE_lincoln_owens_058/overview) | **18 June 2024** | Charlie: **not claimed** · Erika: **claimed** | Nebraska | **None.** No sourced Kirk or TPUSA appearance within three days, anywhere. | — | — | — | *none recorded* |
+| [OWENS-028](/Planes/following/overlap/20240720_NE_omaha_lincoln_owens_028/overview) | **20 July 2024** | Charlie: **not claimed** · Erika: **claimed** | Nebraska | **None.** No sourced Kirk or TPUSA appearance within three days, anywhere. | — | — | — | *none recorded* |
+| [OWENS-060](/Planes/following/overlap/20240725_NE_omaha_lincoln_owens_060/overview) | **25 July 2024** | Charlie: **not claimed** · Erika: **claimed** | Nebraska | **None same-day.** Nearest sourced: [Charlie — Turning Point Academy Educators' Summit 2024, West Palm Beach, FL](/Planes/following/speaking/20240724_west_palm_beach) (-1 days) | — | — | — | *none recorded* |
+| [OWENS-029](/Planes/following/overlap/20240817_NE_omaha_lincoln_owens_029/overview) | **17 August 2024** | Charlie: **not claimed** · Erika: **claimed** | Nebraska | **None.** No sourced Kirk or TPUSA appearance within three days, anywhere. | — | — | — | *none recorded* |
+| [EXTRA-001](/Planes/following/overlap/20240914_NE_lincoln_extra_001/overview) | **14 September 2024** | Charlie: **claimed** · Erika: **not claimed** | *blank on the sheet* | **None same-day.** Nearest sourced: [Charlie — You're Being Brainwashed Tour — Kansas State University, Manhattan, KS](/Planes/following/speaking/20240913_manhattan) (-1 days) | — | — | — | *none recorded* |
+| [OWENS-062](/Planes/following/overlap/20250208_NE_omaha_owens_062/overview) | **8 February 2025** | Charlie: **not claimed** · Erika: **claimed** | Nebraska | **None.** No sourced Kirk or TPUSA appearance within three days, anywhere. | — | — | — | *none recorded* |
+| [EXTRA-007](/Planes/following/overlap/20250429_NE_lincoln_extra_007/overview) | **29 April 2025** | Charlie: **claimed** · Erika: **not claimed** | *blank on the sheet* | [Charlie — Town Hall with TPUSA Students and Treasury Secretary Bessent, UNKNOWN,](/Planes/following/speaking/20250429_tpusa_student_town_h) | TPUSA student town hall | — | UNKNOWN — UNKNOWN | *none recorded* |
+| [OWENS-036](/Planes/following/overlap/20250618_NE_omaha_lincoln_owens_036/overview) | **18 June 2025** | Charlie: **not claimed** · Erika: **claimed** | Nebraska | **None.** No sourced Kirk or TPUSA appearance within three days, anywhere. | — | — | — | *none recorded* |
+| [EXTRA-004](/Planes/following/overlap/20250711_NE_omaha_extra_004/overview) | **11 July 2025** | Charlie: **not claimed** · Erika: **claimed** | *never stated* | [Charlie — TPUSA Student Action Summit 2025, Tampa, FL](/Planes/following/speaking/20250711_tampa) | Tampa Convention Center, 333 S Franklin St, Tampa, FL | — | KTPA — Tampa International, 6 mi | *none recorded* |
+| [OWENS-038](/Planes/following/overlap/20250720_NE_omaha_lincoln_owens_038/overview) | **20 July 2025** | Charlie: **not claimed** · Erika: **claimed** | Nebraska | **None.** No sourced Kirk or TPUSA appearance within three days, anywhere. | — | — | — | *none recorded* |
+| [OWENS-067](/Planes/following/overlap/20250720_NE_lincoln_owens_067/overview) | **20 July 2025** | Charlie: **not claimed** · Erika: **claimed** | Nebraska | **None.** No sourced Kirk or TPUSA appearance within three days, anywhere. | — | — | — | *none recorded* |
+| [OWENS-039](/Planes/following/overlap/20250817_NE_omaha_lincoln_owens_039/overview) | **17 August 2025** | Charlie: **not claimed** · Erika: **claimed** | Nebraska | **None same-day.** Nearest sourced: [Charlie — Win the Storm, Dallas, TX](/Planes/following/speaking/20250820_dallas) (+3 days) | — | — | — | *none recorded* |
+
+## TABLE C — sourcing and both verdicts
+
+| Row | Sheet index | Audit verdict (tracking-site pass) | ADS-B verdict (position data) | What the position data says | Source of the claim | Source post | Full row page |
+|---|---|---|---|---|---|---|---|
+| `OWENS-047` | 47 | **Inaccurate** | **Not heard** | SAYS ALMOST NOTHING. adsb-lol/airplanes-live served other airframes that day but holds no trace for this one. Parked with the transponder off, outside receiver coverage, and a wrong claimed date all look identical from here. AN… | Owens sheet via Kanekoa audit | [post](https://x.com/KanekoaTheGreat/status/2000701268806062358) | [open](/Planes/following/overlap/20230315_NE_omaha_owens_047/overview) |
+| `OWENS-017` | 17 | **Inaccurate** | **Not heard** | SAYS ALMOST NOTHING. adsb-lol/airplanes-live served other airframes that day but holds no trace for this one. Parked with the transponder off, outside receiver coverage, and a wrong claimed date all look identical from here. AN… | Owens sheet via Kanekoa audit | [post](https://x.com/KanekoaTheGreat/status/2000701268806062358) | [open](/Planes/following/overlap/20230725_NE_lincoln_owens_017/overview) |
+| `EXTRA-005` | — | **Inaccurate** | **Not heard** | SAYS ALMOST NOTHING. adsb-lol/airplanes-live served other airframes that day but holds no trace for this one. Parked with the transponder off, outside receiver coverage, and a wrong claimed date all look identical from here. AN… | tpusa_events.csv; overlap overview tested-and-failed table; audit of claimed Lincoln 2023 rows | — | [open](/Planes/following/overlap/20230825_NE_lincoln_extra_005/overview) |
+| `OWENS-020` | 20 | **Partially accurate** | **At the claimed airport — corroborated** | CORROBORATED IN THE AIR, NOT ON THE GROUND. Closest recovered position is 0.3 km from KOMA at 366 ft above the field - an arrival, a departure or a low pass. The only on-ground positions in this trace are at KLNK (Lincoln… | Owens sheet via Kanekoa audit (partial — flew Omaha to Lincoln); Owens Ep 256; overlap page 20240211_NE_lincoln | [post](https://www.youtube.com/watch?v=YFmRH8p5lt0) | [open](/Planes/following/overlap/20240209_NE_omaha_lincoln_owens_020/overview) |
+| `SITE-002` | — | **Partially accurate** | **Not heard** | SAYS ALMOST NOTHING. adsb-lol/airplanes-live served other airframes that day but holds no trace for this one. Parked with the transponder off, outside receiver coverage, and a wrong claimed date all look identical from here. AN… | Researcher-compiled timeline circulated on X; audit indices 20 (partial) and 21 (inaccurate) | — | [open](/Planes/following/overlap/20240211_NE_lincoln/overview) |
+| `EXTRA-002` | — | **Not reached by the audit** | **No aircraft named** | The claim names no tail number, so there is no airframe to look up. Untestable as published. | Owens Ep 256 names April 9 Omaha; AP 10 Apr 2024; tpusa_events.csv; overlap overview tested-and-failed table | [post](https://apnews.com/article/winner-take-all-electoral-votes-nebraska-trump-d5fb580a7f2ee1d4bb88bc3ae7d09d93) | [open](/Planes/following/overlap/20240409_NE_omaha_extra_002/overview) |
+| `OWENS-055` | 55 | **Inaccurate** | **Not heard** | SAYS ALMOST NOTHING. adsb-lol/airplanes-live served other airframes that day but holds no trace for this one. Parked with the transponder off, outside receiver coverage, and a wrong claimed date all look identical from here. AN… | Owens sheet via Kanekoa audit | [post](https://x.com/KanekoaTheGreat/status/2000701268806062358) | [open](/Planes/following/overlap/20240415_NE_omaha_owens_055/overview) |
+| `OWENS-058` | 58 | **Inaccurate** | **Not heard** | SAYS ALMOST NOTHING. adsb-lol/airplanes-live served other airframes that day but holds no trace for this one. Parked with the transponder off, outside receiver coverage, and a wrong claimed date all look identical from here. AN… | Owens sheet via Kanekoa audit | [post](https://x.com/KanekoaTheGreat/status/2000701268806062358) | [open](/Planes/following/overlap/20240618_NE_lincoln_owens_058/overview) |
+| `OWENS-028` | 28 | **Inaccurate** | **Not heard** | SAYS ALMOST NOTHING. adsb-lol/airplanes-live served other airframes that day but holds no trace for this one. Parked with the transponder off, outside receiver coverage, and a wrong claimed date all look identical from here. AN… | Owens sheet via Kanekoa audit | [post](https://x.com/KanekoaTheGreat/status/2000701268806062358) | [open](/Planes/following/overlap/20240720_NE_omaha_lincoln_owens_028/overview) |
+| `OWENS-060` | 60 | **Inaccurate** | **Not heard** | SAYS ALMOST NOTHING. adsb-lol/airplanes-live served other airframes that day but holds no trace for this one. Parked with the transponder off, outside receiver coverage, and a wrong claimed date all look identical from here. AN… | Owens sheet via Kanekoa audit | [post](https://x.com/KanekoaTheGreat/status/2000701268806062358) | [open](/Planes/following/overlap/20240725_NE_omaha_lincoln_owens_060/overview) |
+| `OWENS-029` | 29 | **Inaccurate** | **Not heard** | SAYS ALMOST NOTHING. adsb-lol/airplanes-live served other airframes that day but holds no trace for this one. Parked with the transponder off, outside receiver coverage, and a wrong claimed date all look identical from here. AN… | Owens sheet via Kanekoa audit | [post](https://x.com/KanekoaTheGreat/status/2000701268806062358) | [open](/Planes/following/overlap/20240817_NE_omaha_lincoln_owens_029/overview) |
+| `EXTRA-001` | — | **Not reached by the audit** | **No aircraft named** | The claim names no tail number, so there is no airframe to look up. Untestable as published. | @RealCandaceO reply to @alsacetx 1 Nov 2025: 'on September 14th 2024, Charlie was in Lincoln Nebraska with Mikey McCoy.' | [post](https://x.com/RealCandaceO/status/1984666106569900231) | [open](/Planes/following/overlap/20240914_NE_lincoln_extra_001/overview) |
+| `OWENS-062` | 62 | **Inaccurate** | **Not heard** | SAYS ALMOST NOTHING. adsb-lol/airplanes-live served other airframes that day but holds no trace for this one. Parked with the transponder off, outside receiver coverage, and a wrong claimed date all look identical from here. AN… | Owens sheet via Kanekoa audit | [post](https://x.com/KanekoaTheGreat/status/2000701268806062358) | [open](/Planes/following/overlap/20250208_NE_omaha_owens_062/overview) |
+| `EXTRA-007` | — | **Not reached by the audit** | **No aircraft named** | The claim names no tail number, so there is no airframe to look up. Untestable as published. | @Omaruncovered / @ZeroBarkThirty2 / @DrAngKozak 5-6 Aug 2026 crediting Stew Peters | [post](https://x.com/Omaruncovered/status/2084952708708982850) | [open](/Planes/following/overlap/20250429_NE_lincoln_extra_007/overview) |
+| `OWENS-036` | 36 | **Inaccurate** | **Elsewhere — refuted** | REFUTED. The airframe was tracked that day and its closest recovered position is 10,140 km from KOMA. | Owens sheet via Kanekoa audit | [post](https://x.com/KanekoaTheGreat/status/2000701268806062358) | [open](/Planes/following/overlap/20250618_NE_omaha_lincoln_owens_036/overview) |
+| `EXTRA-004` | — | **Not reached by the audit** | **No aircraft named** | The claim names no tail number, so there is no airframe to look up. Untestable as published. | @bfr1273 19 Aug 2026 citing a Stew Peters X post of 5 Aug 2026 and a guest | [post](https://x.com/bfr1273/status/2089920452051263518) | [open](/Planes/following/overlap/20250711_NE_omaha_extra_004/overview) |
+| `OWENS-038` | 38 | **Partially accurate** | **At the claimed airport — corroborated** | CORROBORATED IN THE AIR, NOT ON THE GROUND. Closest recovered position is 1.3 km from KOMA at 591 ft above the field - an arrival, a departure or a low pass. The only on-ground positions in this trace are at LFPB (Paris-Le… | Owens sheet via Kanekoa audit (partial); Candace first posts; flights.csv | [post](https://x.com/RealCandaceO/status/1977168281456066960) | [open](/Planes/following/overlap/20250720_NE_omaha_lincoln_owens_038/overview) |
+| `OWENS-067` | 67 | **Accurate** | **At the claimed airport — corroborated** | CORROBORATED IN THE AIR, NOT ON THE GROUND. Closest recovered position is 7.2 km from KLNK at 881 ft above the field - an arrival, a departure or a low pass. The only on-ground positions in this trace are at LFPB (Paris-Le… | Owens sheet via Kanekoa audit (accurate-ish) | [post](https://x.com/KanekoaTheGreat/status/2000701268806062358) | [open](/Planes/following/overlap/20250720_NE_lincoln_owens_067/overview) |
+| `OWENS-039` | 39 | **Partially accurate** | **At the claimed airport — corroborated** | CORROBORATED IN THE AIR, NOT ON THE GROUND. Closest recovered position is 0.5 km from KOMA at 391 ft above the field - an arrival, a departure or a low pass. This trace holds no on-ground positions at all, which is ordinary:… | Owens sheet via Kanekoa audit (partial); flights.csv | [post](https://x.com/KanekoaTheGreat/status/2000701268806062358) | [open](/Planes/following/overlap/20250817_NE_omaha_lincoln_owens_039/overview) |
+
+## TABLE D — every logged ground presence in this state
+
+| Aircraft | Airport | City / State | Arrived | Departed | Days on ground | Confidence in the leg | Location page | What the record says |
+|---|---|---|---|---|---|---|---|---|
+| [SU-BTT](/Planes/SU-BTT/overview) | [KOMA](/Planes/following/Omaha_KOMA_2024-02-09_to_2025-10-05/overview) | Omaha, NE | 20 July 2025 | 20 July 2025 | 0 | adsb_captured | [open](/Planes/following/Omaha_KOMA_2024-02-09_to_2025-10-05/overview) | Trackers call this SU-BTT's first-ever US landing. @Borrowed7Time logged Paris-Omaha Eppley (KOMA), a CIVIL field; later compilations relabel it 'an Army base' and NO primary post naming Offutt, Camp Ashland or any Army installation has been found. Hop to… |
+| [SU-BTT](/Planes/SU-BTT/overview) | [KLNK](/Planes/following/Lincoln_KLNK_2024-02-09_to_2025-10-11/overview) | Lincoln, NE | 20 July 2025 | 26 July 2025 | 6 | adsb_captured | [open](/Planes/following/Lincoln_KLNK_2024-02-09_to_2025-10-11/overview) | Six-day stay at Duncan Aviation's main plant. Audit verdict on this rotation: 'Partially Accurate - Cairo/Paris/Omaha/Lincoln on 7/19 and 7/20; Lincoln/Wilmington/Cairo on 7/26 and 7/27.' |
+| [SU-BTT](/Planes/SU-BTT/overview) | [KOMA](/Planes/following/Omaha_KOMA_2024-02-09_to_2025-10-05/overview) | Omaha, NE | 17 August 2025 | 17 August 2025 | 0 | adsb_captured | [open](/Planes/following/Omaha_KOMA_2024-02-09_to_2025-10-05/overview) | Entry field. Paris-Omaha 8:48; hop to Lincoln 0:18. Audit: 'ACCURATE-ISH. FLIGHT BEGAN IN CAIRO 16AUG STRAIGHT THROUGH TO PARIS/OMAHA/LINCOLN.' |
+| [SU-BTT](/Planes/SU-BTT/overview) | [KLNK](/Planes/following/Lincoln_KLNK_2024-02-09_to_2025-10-11/overview) | Lincoln, NE | 17 August 2025 | 23 August 2025 | 6 | adsb_captured | [open](/Planes/following/Lincoln_KLNK_2024-02-09_to_2025-10-11/overview) | Six-day stay at Duncan Aviation's main plant. |
+| [SU-BTU](/Planes/SU-BTU/overview) | [KOMA](/Planes/following/Omaha_KOMA_2024-02-09_to_2025-10-05/overview) | Omaha, NE | 26 November 2024 | 26 November 2024 | 0 | adsb_captured | [open](/Planes/following/Omaha_KOMA_2024-02-09_to_2025-10-05/overview) | Entry field. Paris-Omaha 9:12, landed 1:45 PM; hop to Lincoln 0:19, landed 4:28 PM. Not a destination - every Omaha arrival by this fleet is followed within twenty minutes by a hop to Lincoln. |
+| [SU-BTU](/Planes/SU-BTU/overview) | [KLNK](/Planes/following/Lincoln_KLNK_2024-02-09_to_2025-10-11/overview) | Lincoln, NE | 26 November 2024 | 1 December 2024 | 5 | adsb_captured | [open](/Planes/following/Lincoln_KLNK_2024-02-09_to_2025-10-11/overview) | Five-day stay. Lincoln is Duncan Aviation's main plant; the Egyptian Air Force has held an account there since 1999 under a five-year contract announced 29 Oct 2015 (Duncan press release, quoting Manager of Government & Special Programs Dave Shipperbottom;… |
+| [SU-BTU](/Planes/SU-BTU/overview) | [KOMA](/Planes/following/Omaha_KOMA_2024-02-09_to_2025-10-05/overview) | Omaha, NE | 17 January 2025 | 17 January 2025 | 0 | adsb_captured | [open](/Planes/following/Omaha_KOMA_2024-02-09_to_2025-10-05/overview) | Entry field. Paris-Omaha 9:10; hop to Lincoln 0:15. |
+| [SU-BTU](/Planes/SU-BTU/overview) | [KLNK](/Planes/following/Lincoln_KLNK_2024-02-09_to_2025-10-11/overview) | Lincoln, NE | 17 January 2025 | 23 January 2025 | 6 | adsb_captured | [open](/Planes/following/Lincoln_KLNK_2024-02-09_to_2025-10-11/overview) | Six-day stay at Duncan Aviation's main plant. |
+| [SU-BTU](/Planes/SU-BTU/overview) | [KOMA](/Planes/following/Omaha_KOMA_2024-02-09_to_2025-10-05/overview) | Omaha, NE | 24 April 2025 | 24 April 2025 | 0 | adsb_captured | [open](/Planes/following/Omaha_KOMA_2024-02-09_to_2025-10-05/overview) | Entry field. Paris-Omaha 8:52; hop to Lincoln 0:16. |
+| [SU-BTU](/Planes/SU-BTU/overview) | [KLNK](/Planes/following/Lincoln_KLNK_2024-02-09_to_2025-10-11/overview) | Lincoln, NE | 24 April 2025 | 30 April 2025 | 6 | adsb_captured | [open](/Planes/following/Lincoln_KLNK_2024-02-09_to_2025-10-11/overview) | Six-day stay at Duncan Aviation's main plant. |
+| [SU-BTV](/Planes/SU-BTV/overview) | [KLNK](/Planes/following/Lincoln_KLNK_2024-02-09_to_2025-10-11/overview) | Lincoln, NE | 3 February 2025 | 9 February 2025 | 6 | adsb_captured | [open](/Planes/following/Lincoln_KLNK_2024-02-09_to_2025-10-11/overview) | Six-day stay at Duncan Aviation's main plant. |
+| [SU-BTV](/Planes/SU-BTV/overview) | [KOMA](/Planes/following/Omaha_KOMA_2024-02-09_to_2025-10-05/overview) | Omaha, NE | 17 March 2025 | 17 March 2025 | 0 | adsb_captured | [open](/Planes/following/Omaha_KOMA_2024-02-09_to_2025-10-05/overview) | Entry field. Paris-Omaha 8:39; hop to Lincoln 0:18. |
+| [SU-BTV](/Planes/SU-BTV/overview) | [KLNK](/Planes/following/Lincoln_KLNK_2024-02-09_to_2025-10-11/overview) | Lincoln, NE | 17 March 2025 | 23 March 2025 | 6 | adsb_captured | [open](/Planes/following/Lincoln_KLNK_2024-02-09_to_2025-10-11/overview) | Six-day stay at Duncan Aviation's main plant. |
+| [SU-BTV](/Planes/SU-BTV/overview) | [KOMA](/Planes/following/Omaha_KOMA_2024-02-09_to_2025-10-05/overview) | Omaha, NE | 5 October 2025 | 5 October 2025 | 0 | adsb_captured | [open](/Planes/following/Omaha_KOMA_2024-02-09_to_2025-10-05/overview) | Entry field. Paris-Omaha 9:20; hop to Lincoln 0:19. THIS IS A MONTH AFTER THE ASSASSINATION. |
+| [SU-BTV](/Planes/SU-BTV/overview) | [KLNK](/Planes/following/Lincoln_KLNK_2024-02-09_to_2025-10-11/overview) | Lincoln, NE | 5 October 2025 | 11 October 2025 | 6 | adsb_captured | [open](/Planes/following/Lincoln_KLNK_2024-02-09_to_2025-10-11/overview) | Six-day stay - the identical Nebraska rotation, flown a month after Charlie Kirk's death. THE ROTATIONS CONTINUE AFTERWARDS, which is the single strongest argument that the pattern is a maintenance schedule rather than a tasking. |
+
+## TABLE E — the Kirk / TPUSA appearances in this state
+
+| Date | Who | Event | City / State | Venue | Local time | Nearest airport | Miles | Charlie present | Erika present | Event page |
+|---|---|---|---|---|---|---|---|---|---|---|
+| **2023-08-25** | Charlie | [Charlie Kirk speaking appearance — Lincoln, Nebraska](/Planes/following/speaking/20230825_lincoln) | Lincoln, NE | Lincoln, Nebraska (venue not named on the following overview) | — | KLNK — Lincoln Airport | 4 | yes | not_documented | [open](/Planes/following/speaking/20230825_lincoln) |
+| **2024-04-09** | Charlie | [Win Every Vote / Winner-Take-All rally — Omaha](/Planes/following/speaking/20240409_omaha) | Omaha, NE | Lord of Hosts Church, 5351 S. 139th Plaza, Omaha | 19:00 CT | KOMA — Eppley Airfield | 4 | yes | not_documented | [open](/Planes/following/speaking/20240409_omaha) |
+| **2024-10-22** | Charlie | [Campaign mobilization — Omaha (second 2024 visit)](/Planes/following/speaking/20241022_omaha) | Omaha, NE | Omaha, Nebraska (venue not named in Kirk's week log) | evening | KOMA — Eppley Airfield | 4 | yes | not_documented | [open](/Planes/following/speaking/20241022_omaha) |
+
+## What the specifics show
+
+Nebraska is the state where the aircraft records are strongest and the following claim is weakest,
+and the gap between Table D and Table B is the reason. Table D holds **15 logged ground presences**
+in the state, all of them adsb_captured, flown by **three different Egyptian-registered tails** —
+SU-BTT four times, SU-BTU six times, SU-BTV five times. Two of those three tails, SU-BTU and SU-BTV,
+appear on **no overlap row in this register at all**. They are in the landing log and nowhere else.
+
+The shape of the Nebraska rotation is consistent to the point of being mechanical: a long Paris leg
+into Omaha Eppley — 8:39, 8:48, 8:52, 9:10, 9:12, 9:20 hours across the six logged entries — then a
+hop to Lincoln of 15 to 19 minutes, then a stay of five or six days, then out again via Wilmington to
+Cairo. Table D's own note says Omaha is an entry field, not a destination, because every Omaha
+arrival by this fleet is followed within twenty minutes by the Lincoln hop. Lincoln is Duncan
+Aviation's main plant; Table D records that the Egyptian Air Force has held an account there since
+1999, citing a Duncan Aviation press release of 29 October 2015.
+
+**The single strongest counterargument on this page is in Table D, and it is published here as
+prominently as anything that supports the claim.** SU-BTV flew the identical rotation on 5–11 October
+2025: Paris to Omaha in 9:20, a 19-minute hop to Lincoln, six days on the ground. That is roughly a
+month after 10 September 2025. Table D states it plainly — the rotations continue afterwards, which
+is the strongest argument the pattern is a maintenance schedule rather than a tasking. Table D's
+Omaha note also corrects a claim that circulated about the July 2025 arrival: @Borrowed7Time logged
+Paris to Omaha Eppley, a **civil** field, and later compilations relabelled it "an Army base"; no
+primary post naming Offutt, Camp Ashland or any Army installation has been found.
+
+On the overlap side the results are thin. Of 19 rows, **10 are Not heard** and **4 name no aircraft
+at all** (EXTRA-002, EXTRA-001, EXTRA-007, EXTRA-004), leaving 4 corroborated and 1 refuted.
+**Ground-position confirmations among the overlap rows are zero.** All four corroborated rows —
+OWENS-020 at 0.31 km from KOMA, OWENS-038 at 1.33 km, OWENS-067 at 7.20 km from KLNK, OWENS-039 at
+0.50 km — are described in Table C as corroborated in the air, not on the ground: an arrival, a
+departure or a low pass at 366, 591, 881 and 391 feet above the field. OWENS-036, dated 18 June 2025,
+is affirmatively refuted; the airframe's closest recovered position that day was 10,139.55 km from
+Omaha. The tracking-site audit called 10 of the 19 rows **Inaccurate** and reached only one as
+**Accurate**.
+
+The who-was-followed side splits against itself. Thirteen of the 19 rows rest on **Erika Kirk alone**,
+sourced to a spreadsheet cell reading "Nebraska" — yet all **three** independently sourced Kirk
+appearances in the state, in Table E, are **Charlie's**, and Erika is recorded `not_documented` on
+every one of them. Only four rows land on a same-day sourced appearance, and one of those four,
+EXTRA-004 on 11 July 2025, pairs an Omaha aircraft claim with a Charlie Kirk appearance in **Tampa,
+Florida**. EXTRA-005 is stronger against the claim still: Charlie's Lincoln appearance of 25 August
+2023 is sourced, and the audit places the jet in Egypt that day. Two rows, EXTRA-007 and EXTRA-004,
+trace to amplifier accounts posting in August 2026 rather than to any flight record.
+
+## What this list cannot tell you
+
+* **A trace proves an aircraft was there. It never proves who was aboard.** Every leg in Table D is
+  an airframe on a ramp. None of the 15 legs, and none of the four corroborated overlap rows, places
+  any named person in a cabin.
+* **Erika Kirk's presence is not established on any row.** Thirteen of these 19 rows rest on her
+  alone and all thirteen source her location to the compiler's spreadsheet. In Table E she is
+  `not_documented` at all three sourced Nebraska events. Her flight logs are
+  [reported erased](/Planes/Erika-Flight-Logs-Erased) and no dated itinerary was ever published.
+* **The ten Not heard rows are an archive limit, not a deletion.** Volunteer ADS-B networks hear what
+  their receivers hear. A parked aircraft with the transponder off, an airframe outside receiver
+  coverage, and a wrong claimed date all look identical from the outside. **Nothing on this page is
+  evidence that any record was removed.**
+* **The four rows naming no aircraft are untestable as published,** not disproved.
+* **A landing record is not an allegation.** Table D lists ground stays at a commercial airport and
+  at a maintenance plant. Attributing a purpose to any of them goes beyond what the record shows, and
+  the continuation of the rotations after September 2025 points toward maintenance.
+* **Where the overview and this register disagree, both figures get printed.** The tracking-site
+  audit worked from 78 rows; this register holds 85, and four of the 19 Nebraska rows were never
+  reached by that audit.
+
+## Related
+
+* [The Following overview](/Planes/following/overview) — the table this cell sits in
+* [The overlap index](/Planes/following/overlap/overview) — every row as its own page
+* [The speaking-events catalog](/Planes/following/speaking/overview) — the sourced Kirk and TPUSA appearances
+* [Kansas — every overlap, every landing, every event](/Planes/following/cuts/state-kansas)
+* [Every row naming SU-BTT, the yellow plane — 57 rows](/Planes/following/cuts/tail-su-btt-57)
+* [The Charlie/TPUSA rows the archives cannot decide — 11 rows](/Planes/following/cuts/ledger-charlie-undecided-11)
+* [The 61 rows resting on Erika Kirk alone](/Planes/following/cuts/erika-only-61)
+* [The 37 rows the archives cover but do not hear](/Planes/following/cuts/adsb-not-heard-37)
+* [SU-BTT](/Planes/SU-BTT/overview) · [SU-BTU](/Planes/SU-BTU/overview) · [SU-BTV](/Planes/SU-BTV/overview) — the three tails logged on the ground in Nebraska

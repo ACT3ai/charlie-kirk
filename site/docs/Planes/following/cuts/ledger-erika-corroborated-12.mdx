@@ -1,0 +1,193 @@
+---
+id: cuts-ledger-erika-corroborated-12
+slug: /Planes/following/cuts/ledger-erika-corroborated-12
+displayed_sidebar: docs
+title: "The 12 Erika rows position data corroborates"
+sidebar_label: "Erika corroborated — 12 rows"
+description: "The 'Erika Kirk — corroborated' cell of the two-ledgers table on the Following overview: the 12 of 56 Erika-side rows where recovered ADS-B traces put the named aircraft at the named airport."
+keywords:
+  - Charlie Kirk
+  - Erika Kirk
+  - SU-BTT
+  - SU-BND
+  - KILG
+  - KPVU
+  - KOMA
+  - KLNK
+  - KCPS
+  - KSUS
+  - Wilmington
+  - Provo
+  - flight tracking
+image: "/img/docusaurus-social-card.jpg"
+hide_table_of_contents: true
+---
+
+<div className="ck-full-bleed" />
+
+<a href="/Planes/following/cuts/overview" style={{display:'inline-block', marginBottom:'1rem',
+padding:'0.35rem 0.9rem', background:'#1a73e8', color:'#fff',
+borderRadius:'4px', textDecoration:'none', fontSize:'0.9rem'}}>← Table drill-downs</a>
+
+# The 12 Erika rows position data corroborates
+
+**Where this came from.** On [the Following overview](/Planes/following/overview), the table headed
+"The two ledgers do not behave the same way" has an **Erika Kirk** row reading 56 claimed, **12
+corroborated**, 3 refuted, 39 the archives cannot answer. This page is the **12**. The register holds
+12 rows in this slice, matching the figure printed on the overview, and it is the number behind the
+overview's sentence that on the Erika side "barely a fifth are corroborated".
+
+## What this slice is
+
+A row is here when **two things are both true**: the row's claim is about Erika Kirk (Charlie is not
+claimed on it), and a raw ADS-B trace this investigation recovered and stored puts the **named
+aircraft** within 15 km of the **named airport** on the **claimed date**. Corroboration is measured
+against the aircraft half of the claim only. Nothing in this slice tests the person half — no trace
+carries a passenger list. Filter `overlaps.csv` for rows with `attendee_class = ERIKA_ONLY` and an
+ADS-B verdict of "At the claimed airport — corroborated" and you reproduce these 12 exactly.
+
+## At a glance
+
+| Measure | Value |
+|---|---|
+| Rows in this slice | **12** |
+| Distinct dates | **11** — 20 July 2025 carries two rows, KOMA and KLNK |
+| Date range | 25 February 2023 – 13 September 2025 |
+| Aircraft | [SU-BTT](/Planes/SU-BTT/overview) **9** · [SU-BND](/Planes/SU-BND/overview) **3** |
+| Airports | KILG **5** · KOMA **2** · KPVU **2** · KCPS **1** · KLNK **1** · KSUS **1** |
+| States | Delaware **5** · Nebraska **3** · Missouri **2** · Utah **2** |
+| Years | 2023 **4** · 2024 **3** · 2025 **5** |
+| ADS-B verdicts | At the claimed airport — corroborated **12** (all of them) |
+| Audit verdicts | Accurate **6** · Partially accurate **4** · Inaccurate **2** |
+| Who the row claims | Erika Kirk alone **12** (all of them) |
+| Ground-position confirmations | **2** — OWENS-013 and OWENS-025 |
+| Rows landing on a same-day sourced Kirk or TPUSA appearance | **1** — SITE-005 |
+
+## TABLE A — the following aircraft
+
+| Row | Date claimed | Airport | City / State | Following aircraft | Type | ICAO hex | Arrived from | Departed to | Ground stay logged, arrived | Departed | Days | Transponder / ground flag | ADS-B verdict | Closest approach |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| [OWENS-046](/Planes/following/overlap/20230225_MO_st_louis_owens_046/overview) | **25 February 2023** | [**KSUS**](/Planes/following/StLouis_KSTL_2022-12-20_to_2025-02-23/overview)<br/>St. Louis Spirit of St. Louis (audit: one week at KSUS) | St. Louis, MO | [SU-BTT](/Planes/SU-BTT/overview) | Dassault Falcon 7X | `0101D3` | Cairo via Paris | Wilmington 3/2; Cairo 3/4 (audit) | *no logged stay covers this date* | — | — | airborne position | **At the claimed airport — corroborated** | 2.22 km |
+| [OWENS-011](/Planes/following/overlap/20230406_DE_wilmington_owens_011/overview) | **6 April 2023** | [**KILG**](/Planes/following/Wilmington_KILG_2022-11-17_to_2025-10-12/overview)<br/>Wilmington New Castle | Wilmington, DE | [SU-BTT](/Planes/SU-BTT/overview) | Dassault Falcon 7X | `0101D3` | Missouri / St. Louis | Cairo (audit 4/6–4/8) | *no logged stay covers this date* | — | — | airborne position | **At the claimed airport — corroborated** | 1.63 km |
+| [OWENS-013](/Planes/following/overlap/20230420_DE_wilmington_owens_013/overview) | **20 April 2023** | [**KILG**](/Planes/following/Wilmington_KILG_2022-11-17_to_2025-10-12/overview)<br/>Wilmington New Castle | Wilmington, DE | [SU-BTT](/Planes/SU-BTT/overview) | Dassault Falcon 7X | `0101D3` | Wichita | Giza / Cairo 2023-04-21 | *no logged stay covers this date* | — | — | on the ground, transmitting | **At the claimed airport — corroborated** | 0.56 km — **on the ground** |
+| [OWENS-014](/Planes/following/overlap/20230503_MO_st_louis_owens_014/overview) | **3 May 2023** | [**KCPS**](/Planes/following/StLouis_KSTL_2022-12-20_to_2025-02-23/overview)<br/>St. Louis Downtown (sheet: Missouri test flight) | St. Louis, MO | [SU-BND](/Planes/SU-BND/overview) | Gulfstream (G550/G-IV, trackers disagree) | `01003E` | *not recorded* | Cairo 2023-05-09 | *no logged stay covers this date* | — | — | airborne position | **At the claimed airport — corroborated** | 2.07 km |
+| [OWENS-021](/Planes/following/overlap/20240214_DE_wilmington_owens_021/overview) | **14 February 2024** | [**KILG**](/Planes/following/Wilmington_KILG_2022-11-17_to_2025-10-12/overview)<br/>Wilmington New Castle | Wilmington, DE | [SU-BTT](/Planes/SU-BTT/overview) | Dassault Falcon 7X | `0101D3` | Lincoln (audit) / Omaha (sheet) | Cairo (Wilmington 2 days per Ep 256, Cairo 16th) | *no logged stay covers this date* | — | — | airborne position | **At the claimed airport — corroborated** | 0.82 km |
+| [OWENS-025](/Planes/following/overlap/20240419_UT_provo_owens_025/overview) | **19 April 2024** | [**KPVU**](/Planes/following/Provo_KPVU_2024-04-19_to_2025-09-13/overview)<br/>Provo Municipal via SLC | Provo, UT | [SU-BND](/Planes/SU-BND/overview) | Gulfstream (G550/G-IV, trackers disagree) | `01003E` | Cairo via Paris, Goose Bay, SLC (audit) | sat until 12 July (audit) | 19 April 2024 | 12 July 2024 | 84 | on the ground, transmitting | **At the claimed airport — corroborated** | 0.05 km — **on the ground** |
+| [OWENS-027](/Planes/following/overlap/20240428_DE_wilmington_owens_027/overview) | **28 April 2024** | [**KILG**](/Planes/following/Wilmington_KILG_2022-11-17_to_2025-10-12/overview)<br/>Wilmington New Castle | Wilmington, DE | [SU-BTT](/Planes/SU-BTT/overview) | Dassault Falcon 7X | `0101D3` | Provo | Cairo | 23 April 2024 | 28 April 2024 | 5 | airborne position | **At the claimed airport — corroborated** | 1.56 km |
+| [OWENS-038](/Planes/following/overlap/20250720_NE_omaha_lincoln_owens_038/overview) | **20 July 2025** | [**KOMA**](/Planes/following/Omaha_KOMA_2024-02-09_to_2025-10-05/overview)<br/>Omaha Eppley then Lincoln | Omaha / Lincoln, NE | [SU-BTT](/Planes/SU-BTT/overview) | Dassault Falcon 7X | `0101D3` | Cairo via Paris | Lincoln same day; Wilmington 2025-07-26; Cairo 2025-07-27 | 20 July 2025 | 20 July 2025 | 0 | airborne position | **At the claimed airport — corroborated** | 1.33 km |
+| [OWENS-067](/Planes/following/overlap/20250720_NE_lincoln_owens_067/overview) | **20 July 2025** | [**KLNK**](/Planes/following/Lincoln_KLNK_2024-02-09_to_2025-10-11/overview)<br/>Lincoln (audit: terminated 20 Jul in Lincoln) | Lincoln, NE | [SU-BTT](/Planes/SU-BTT/overview) | Dassault Falcon 7X | `0101D3` | Cairo via Paris via Omaha | Lincoln 20 Jul; return 26 Jul | 20 July 2025 | 26 July 2025 | 6 | airborne position | **At the claimed airport — corroborated** | 7.20 km |
+| [OWENS-039](/Planes/following/overlap/20250817_NE_omaha_lincoln_owens_039/overview) | **17 August 2025** | [**KOMA**](/Planes/following/Omaha_KOMA_2024-02-09_to_2025-10-05/overview)<br/>Omaha Eppley then Lincoln | Omaha / Lincoln, NE | [SU-BTT](/Planes/SU-BTT/overview) | Dassault Falcon 7X | `0101D3` | Cairo via Paris 16 Aug (audit) | Lincoln; Wilmington 8/23; Cairo 8/24 | 17 August 2025 | 17 August 2025 | 0 | airborne position | **At the claimed airport — corroborated** | 0.50 km |
+| [SITE-005](/Planes/following/overlap/20250910_DE_wilmington/overview) | **10 September 2025** | [**KILG**](/Planes/following/Wilmington_KILG_2022-11-17_to_2025-10-12/overview)<br/>Wilmington Airport / New Castle Airport | Wilmington, DE | [SU-BTT](/Planes/SU-BTT/overview) | Dassault Falcon 7X (hex 0101D3) | `0101D3` | Provo (KPVU), departed 07:14 am MT (time DISPUTED three ways - see SITE-006) | Cairo, 11 Sept - reported as 07:56 am and as ~11:56 UTC | 10 September 2025 | 11 September 2025 | 1 | on | **At the claimed airport — corroborated** | 1.75 km |
+| [OWENS-042](/Planes/following/overlap/20250913_UT_provo_owens_042/overview) | **13 September 2025** | [**KPVU**](/Planes/following/Provo_KPVU_2024-04-19_to_2025-09-13/overview)<br/>Provo Municipal | Provo, UT | [SU-BND](/Planes/SU-BND/overview) | Gulfstream (G550/G-IV, trackers disagree) | `01003E` | Provo ramp since 2025-05-23 | Goose Bay → Paris 9/13; Paris → Cairo 9/15 | 23 May 2025 | 13 September 2025 | 113 | airborne position | **At the claimed airport — corroborated** | 0.62 km |
+
+## TABLE B — who they are claimed to have been following
+
+| Row | Date claimed | Who the sheet claims was present | Erika location as the sheet gives it | Sourced Kirk / TPUSA appearance same day | Venue | Local time | Nearest airport to that venue | Kirk-side aircraft on record |
+|---|---|---|---|---|---|---|---|---|
+| [OWENS-046](/Planes/following/overlap/20230225_MO_st_louis_owens_046/overview) | **25 February 2023** | Charlie: **not claimed** · Erika: **claimed** | Missouri | **None.** No sourced Kirk or TPUSA appearance within three days, anywhere. | — | — | — | *none recorded* |
+| [OWENS-011](/Planes/following/overlap/20230406_DE_wilmington_owens_011/overview) | **6 April 2023** | Charlie: **not claimed** · Erika: **claimed** | Delaware / Missouri | **None.** No sourced Kirk or TPUSA appearance within three days, anywhere. | — | — | — | *none recorded* |
+| [OWENS-013](/Planes/following/overlap/20230420_DE_wilmington_owens_013/overview) | **20 April 2023** | Charlie: **not claimed** · Erika: **claimed** | Wichita / DE / potentially Giza | **None same-day.** Nearest sourced: [TPUSA — TPUSA Faith Kingdom to the Capitol — Topeka, Topeka, KS](/Planes/following/speaking/20230423_topeka) (+3 days) | — | — | — | *none recorded* |
+| [OWENS-014](/Planes/following/overlap/20230503_MO_st_louis_owens_014/overview) | **3 May 2023** | Charlie: **not claimed** · Erika: **claimed** | Missouri | **None.** No sourced Kirk or TPUSA appearance within three days, anywhere. | — | — | — | *none recorded* |
+| [OWENS-021](/Planes/following/overlap/20240214_DE_wilmington_owens_021/overview) | **14 February 2024** | Charlie: **not claimed** · Erika: **claimed** | Delaware / Nebraska | **None.** No sourced Kirk or TPUSA appearance within three days, anywhere. | — | — | — | *none recorded* |
+| [OWENS-025](/Planes/following/overlap/20240419_UT_provo_owens_025/overview) | **19 April 2024** | Charlie: **not claimed** · Erika: **claimed** | Utah | **None.** No sourced Kirk or TPUSA appearance within three days, anywhere. | — | — | — | *none recorded* |
+| [OWENS-027](/Planes/following/overlap/20240428_DE_wilmington_owens_027/overview) | **28 April 2024** | Charlie: **not claimed** · Erika: **claimed** | Delaware / Utah | **None.** No sourced Kirk or TPUSA appearance within three days, anywhere. | — | — | — | *none recorded* |
+| [OWENS-038](/Planes/following/overlap/20250720_NE_omaha_lincoln_owens_038/overview) | **20 July 2025** | Charlie: **not claimed** · Erika: **claimed** | Nebraska | **None.** No sourced Kirk or TPUSA appearance within three days, anywhere. | — | — | — | *none recorded* |
+| [OWENS-067](/Planes/following/overlap/20250720_NE_lincoln_owens_067/overview) | **20 July 2025** | Charlie: **not claimed** · Erika: **claimed** | Nebraska | **None.** No sourced Kirk or TPUSA appearance within three days, anywhere. | — | — | — | *none recorded* |
+| [OWENS-039](/Planes/following/overlap/20250817_NE_omaha_lincoln_owens_039/overview) | **17 August 2025** | Charlie: **not claimed** · Erika: **claimed** | Nebraska | **None same-day.** Nearest sourced: [Charlie — Win the Storm, Dallas, TX](/Planes/following/speaking/20250820_dallas) (+3 days) | — | — | — | *none recorded* |
+| [SITE-005](/Planes/following/overlap/20250910_DE_wilmington/overview) | **10 September 2025** | Charlie: **not claimed** · Erika: **claimed** | 'Nebraska/Delaware' (spreadsheet) vs ARIZONA (Erika Kirk's own account) | [Charlie — The American Comeback Tour — UVU (first stop of the fall tour), Orem, UT](/Planes/following/speaking/20250910_orem) | Utah Valley University, Sorensen Center courtyard | event ~10:00 MDT announced; shot at 12:23:30 PM MDT | KPVU — Provo Municipal Airport, 5 mi | *none recorded* |
+| [OWENS-042](/Planes/following/overlap/20250913_UT_provo_owens_042/overview) | **13 September 2025** | Charlie: **not claimed** · Erika: **claimed** | Utah | **None same-day.** Nearest sourced: [Charlie — The American Comeback Tour — UVU (first stop of the fall tour), Orem, UT](/Planes/following/speaking/20250910_orem) (-3 days) | — | — | — | *none recorded* |
+
+## TABLE C — sourcing and both verdicts
+
+| Row | Sheet index | Audit verdict (tracking-site pass) | ADS-B verdict (position data) | What the position data says | Source of the claim | Source post | Full row page |
+|---|---|---|---|---|---|---|---|
+| `OWENS-046` | 46 | **Partially accurate** | **At the claimed airport — corroborated** | CORROBORATED IN THE AIR, NOT ON THE GROUND. Closest recovered position is 2.2 km from KSUS at -113 ft above the field - an arrival, a departure or a low pass. This trace holds no on-ground positions at all, which is ordinary:… | Owens sheet via Kanekoa audit (partial) | [post](https://x.com/KanekoaTheGreat/status/2000701268806062358) | [open](/Planes/following/overlap/20230225_MO_st_louis_owens_046/overview) |
+| `OWENS-011` | 11 | **Accurate** | **At the claimed airport — corroborated** | CORROBORATED IN THE AIR, NOT ON THE GROUND. Closest recovered position is 1.6 km from KILG at -105 ft above the field - an arrival, a departure or a low pass. This trace holds no on-ground positions at all, which is ordinary:… | Owens sheet via Kanekoa audit (ACCURATE 4/6–4/8) | [post](https://x.com/KanekoaTheGreat/status/2000701268806062358) | [open](/Planes/following/overlap/20230406_DE_wilmington_owens_011/overview) |
+| `OWENS-013` | 13 | **Accurate** | **At the claimed airport — corroborated** | CORROBORATED, AND ON THE GROUND. A trace we pulled and kept puts this airframe on the ground 0.6 km from KILG on the claimed date. It places NOBODY aboard. | Owens sheet via Kanekoa audit (ACCURATE — second leg of ref 12); @liztalny1023 19 Nov 2025 on the Giza cell | [post](https://x.com/liztalny1023/status/1991170383488372929) | [open](/Planes/following/overlap/20230420_DE_wilmington_owens_013/overview) |
+| `OWENS-014` | 14 | **Accurate** | **At the claimed airport — corroborated** | CORROBORATED IN THE AIR, NOT ON THE GROUND. Closest recovered position is 2.1 km from KCPS at 1,137 ft above the field - an arrival, a departure or a low pass. This trace holds no on-ground positions at all, which is ordinary:… | Owens sheet via Kanekoa audit (ACCURATE that it flew in St. Louis; data does not say test flight) | [post](https://x.com/KanekoaTheGreat/status/2000701268806062358) | [open](/Planes/following/overlap/20230503_MO_st_louis_owens_014/overview) |
+| `OWENS-021` | 21 | **Inaccurate** | **At the claimed airport — corroborated** | CORROBORATED IN THE AIR, NOT ON THE GROUND. Closest recovered position is 0.8 km from KILG at -180 ft above the field - an arrival, a departure or a low pass. This trace holds no on-ground positions at all, which is ordinary:… | Owens sheet via Kanekoa audit (INACCURATE origin city); Owens Ep 256 | [post](https://x.com/KanekoaTheGreat/status/2000701268806062358) | [open](/Planes/following/overlap/20240214_DE_wilmington_owens_021/overview) |
+| `OWENS-025` | 25 | **Inaccurate** | **At the claimed airport — corroborated** | CORROBORATED, AND ON THE GROUND. A trace we pulled and kept puts this airframe on the ground 0.1 km from KPVU on the claimed date. It places NOBODY aboard. | Owens sheet via Kanekoa audit (route wrong); Owens Ep 256 | [post](https://www.youtube.com/watch?v=YFmRH8p5lt0) | [open](/Planes/following/overlap/20240419_UT_provo_owens_025/overview) |
+| `OWENS-027` | 27 | **Accurate** | **At the claimed airport — corroborated** | CORROBORATED IN THE AIR, NOT ON THE GROUND. Closest recovered position is 1.6 km from KILG at -80 ft above the field - an arrival, a departure or a low pass. The only on-ground positions in this trace are at KPVU (Provo… | Owens sheet via Kanekoa audit (ACCURATE); Owens Ep 256 | [post](https://www.youtube.com/watch?v=YFmRH8p5lt0) | [open](/Planes/following/overlap/20240428_DE_wilmington_owens_027/overview) |
+| `OWENS-038` | 38 | **Partially accurate** | **At the claimed airport — corroborated** | CORROBORATED IN THE AIR, NOT ON THE GROUND. Closest recovered position is 1.3 km from KOMA at 591 ft above the field - an arrival, a departure or a low pass. The only on-ground positions in this trace are at LFPB (Paris-Le… | Owens sheet via Kanekoa audit (partial); Candace first posts; flights.csv | [post](https://x.com/RealCandaceO/status/1977168281456066960) | [open](/Planes/following/overlap/20250720_NE_omaha_lincoln_owens_038/overview) |
+| `OWENS-067` | 67 | **Accurate** | **At the claimed airport — corroborated** | CORROBORATED IN THE AIR, NOT ON THE GROUND. Closest recovered position is 7.2 km from KLNK at 881 ft above the field - an arrival, a departure or a low pass. The only on-ground positions in this trace are at LFPB (Paris-Le… | Owens sheet via Kanekoa audit (accurate-ish) | [post](https://x.com/KanekoaTheGreat/status/2000701268806062358) | [open](/Planes/following/overlap/20250720_NE_lincoln_owens_067/overview) |
+| `OWENS-039` | 39 | **Partially accurate** | **At the claimed airport — corroborated** | CORROBORATED IN THE AIR, NOT ON THE GROUND. Closest recovered position is 0.5 km from KOMA at 391 ft above the field - an arrival, a departure or a low pass. This trace holds no on-ground positions at all, which is ordinary:… | Owens sheet via Kanekoa audit (partial); flights.csv | [post](https://x.com/KanekoaTheGreat/status/2000701268806062358) | [open](/Planes/following/overlap/20250817_NE_omaha_lincoln_owens_039/overview) |
+| `SITE-005` | — | **Partially accurate** | **At the claimed airport — corroborated** | CORROBORATED IN THE AIR, NOT ON THE GROUND. Closest recovered position is 1.7 km from KILG at -105 ft above the field - an arrival, a departure or a low pass. The only on-ground positions in this trace are at KPVU (Provo… | Compilation spreadsheet circulated by trackers; alternate tracker read @troofevades (takeoff ~13:14 UTC, landing ~16:52 UTC); audit index 41 (flight confirmed, origin corrected from… | — | [open](/Planes/following/overlap/20250910_DE_wilmington/overview) |
+| `OWENS-042` | 42 | **Accurate** | **At the claimed airport — corroborated** | CORROBORATED IN THE AIR, NOT ON THE GROUND. Closest recovered position is 0.6 km from KPVU at 3 ft above the field - an arrival, a departure or a low pass. This trace holds no on-ground positions at all, which is ordinary:… | Owens sheet via Kanekoa audit (ACCURATE) | [post](https://x.com/KanekoaTheGreat/status/2000701268806062358) | [open](/Planes/following/overlap/20250913_UT_provo_owens_042/overview) |
+
+## What the specifics show
+
+**Corroborated here means the aircraft, not the person.** All 12 rows carry the same ADS-B verdict —
+the named jet was inside 15 km of the named field on the claimed date — and all 12 are rows where
+the compilers claim **Erika Kirk and not Charlie Kirk**. The register establishes Erika Kirk's
+presence on **zero** of them. What has been corroborated on this page is the aircraft half of a
+two-part claim whose other half has no document behind it.
+
+**Only two of the 12 are the strongest evidence class.** OWENS-013 (20 April 2023) puts SU-BTT on
+the ground, transmitting, 0.56 km from Wilmington New Castle; OWENS-025 (19 April 2024) puts SU-BND
+on the ground 0.05 km from Provo Municipal. The other ten are airborne positions below 4,000 ft and
+within 15 km of the field — an arrival, a departure or a low pass — and the register labels them
+that way row by row rather than rolling them in with the ground records. Read strictly, the ground
+count for the whole Erika-corroborated ledger is **2**.
+
+**The two longest rows here argue against following rather than for it.** OWENS-025 records SU-BND
+arriving Provo on 19 April 2024 and sitting there until 12 July — **84 days**. OWENS-042 records the
+same aircraft on the Provo ramp from 23 May 2025 to 13 September 2025 — **113 days**. An aircraft
+parked on one ramp for three or four months is not tracking anybody's itinerary, and both of those
+rows are counted in this slice as corroborations. That is the honest shape of the corroboration: it
+confirms where the metal was, and in these two cases where it was is *stationary*.
+
+**The Kirk side of these rows is almost entirely empty.** Eight of the 12 carry no sourced Kirk or
+TPUSA appearance within three days anywhere in the country. Three more have a nearest sourced
+appearance exactly three days away — OWENS-013 against Topeka, OWENS-039 against Dallas, OWENS-042
+against Orem. Exactly **one** row falls on a day this site independently sources a Kirk appearance:
+SITE-005, 10 September 2025 — and on that row the corroborated position is **Wilmington, Delaware**
+while the sourced appearance is **Charlie Kirk at Utah Valley University in Orem, Utah**. The same
+row records the spreadsheet placing Erika in "Nebraska/Delaware" against Erika Kirk's own account
+placing her in Arizona. On the register's single best-dated day, the sheet's own Erika cell is
+contradicted by the person it describes.
+
+**The audit and the position data disagree on this slice, and both results stand.** Six of the 12
+were called **Accurate** by the tracking-site audit, four **Partially accurate**, and two —
+OWENS-021 and OWENS-025 — **Inaccurate**, yet the recovered traces corroborate the airport on all
+12. The two methods were run against different evidence: one re-read tracking-site pages, the other
+measured stored position traces. Where they disagree the disagreement is the finding, and neither is
+quietly preferred here.
+
+## What this list cannot tell you
+
+* **A trace proves an aircraft was there. It never proves who was aboard.** Two of these rows say so
+  in the data itself: the ground-flag entries for OWENS-013 and OWENS-025 both end with the phrase
+  "It places NOBODY aboard."
+* **Erika Kirk's presence is not established on any row** — not on these 12, not anywhere in the
+  register. Her flight logs are [reported erased](/Planes/Erika-Flight-Logs-Erased) and no dated
+  itinerary has ever been published. Every location attributed to her on this page is a cell on a
+  circulated compilation spreadsheet, and the compilers' own cells frequently name two states at
+  once.
+* **Corroborating an airport is not corroborating a purpose.** Wilmington is a customs and fuel
+  field, Provo and Lincoln both host Duncan Aviation facilities, and each of the 12 rows carries its
+  own innocent explanation on its full row page. Nothing here establishes tasking, and no public
+  record establishes tasking in either direction.
+* **This slice contains no archive gaps, so none is being read as anything.** All 12 rows returned
+  data. Where `NOT_HEARD` and `NO_ARCHIVE_COVERAGE` appear on
+  [the sibling undecided page](/Planes/following/cuts/ledger-erika-undecided-41) they are limits on
+  what volunteer ADS-B archives hold — never deletions, never suppression.
+* **No crime is asserted against anyone.** Candace Owens made the compilation claims publicly under
+  her own name; the audit is attributed to @KanekoaTheGreat. Aircraft owners, crew and passengers
+  are unnamed living persons and stay unnamed.
+* **Where the overview and this register disagree, both figures get printed.** On this cell they
+  agree — the overview's Erika row prints 12 corroborated out of 56 claimed, and the register holds
+  12. On the register as a whole they do not: the tracking-site audit worked from **78** rows, this
+  register holds **85**.
+
+## Related
+
+* [The Following overview](/Planes/following/overview) — the two-ledgers table this cell sits in
+* [The overlap index](/Planes/following/overlap/overview) — every row as its own page
+* [The speaking-events catalog](/Planes/following/speaking/overview) — the sourced Kirk and TPUSA appearances
+* [The Erika Kirk ledger — all 56 dated rows](/Planes/following/cuts/ledger-erika-56) — the denominator these 12 come out of
+* [The three Erika rows position data refutes](/Planes/following/cuts/ledger-erika-refuted-3) — the other side of the same test
+* [The Erika rows the archives cannot decide](/Planes/following/cuts/ledger-erika-undecided-41) — the largest block, and why it is undecided
+* [The rows where Erika Kirk's presence is actually established](/Planes/following/cuts/erika-established-0) — there are none, and that is the point of this page's caveat
+* [SU-BTT](/Planes/SU-BTT/overview) and [SU-BND](/Planes/SU-BND/overview) — the two aircraft on this slice
+* [Wilmington, KILG](/Planes/following/Wilmington_KILG_2022-11-17_to_2025-10-12/overview) and [Provo, KPVU](/Planes/following/Provo_KPVU_2024-04-19_to_2025-09-13/overview) — the two fields carrying the ground confirmations
+* [Erika Kirk's flight logs, reported erased](/Planes/Erika-Flight-Logs-Erased)

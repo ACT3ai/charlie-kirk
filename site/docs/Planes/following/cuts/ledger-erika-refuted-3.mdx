@@ -1,0 +1,148 @@
+---
+id: cuts-ledger-erika-refuted-3
+slug: /Planes/following/cuts/ledger-erika-refuted-3
+displayed_sidebar: docs
+title: "The three Erika rows position data refutes"
+sidebar_label: "Erika ledger — refuted (3)"
+description: "The 'Erika Kirk — refuted' cell of the ledger table on the Following overview: the three Erika-side rows where recovered ADS-B position data puts the aircraft somewhere else."
+keywords:
+  - Charlie Kirk
+  - Erika Kirk
+  - SU-BND
+  - SU-BTT
+  - CYYR
+  - KSTL
+  - KOMA
+  - flight tracking
+image: "/img/docusaurus-social-card.jpg"
+hide_table_of_contents: true
+---
+
+<div className="ck-full-bleed" />
+
+<a href="/Planes/following/cuts/overview" style={{display:'inline-block', marginBottom:'1rem',
+padding:'0.35rem 0.9rem', background:'#1a73e8', color:'#fff',
+borderRadius:'4px', textDecoration:'none', fontSize:'0.9rem'}}>← Table drill-downs</a>
+
+# The three Erika rows position data refutes
+
+**Where this came from.** On [the Following overview](/Planes/following/overview), the ledger table
+splits the register by whose presence the row claims and then by what recovered position data says
+about it. The cell reading "Erika Kirk — refuted" holds **3 rows**. This page is those three rows,
+in full.
+
+## What this slice is
+
+A row lands here when two things are both true. First, the compiler's sheet claims **Erika Kirk
+alone** — Charlie Kirk is not claimed on the row, and no TPUSA event is attached to it. All three
+rows carry the attendee class "Erika Kirk alone". Second, recovered ADS-B position data for the
+named airframe on the claimed date exists **and puts it somewhere else**: the verdict `ELSEWHERE`,
+which requires that the aircraft was actually heard that day, so the closest recovered position can
+be measured against the claimed airport. That second condition is what separates this list from the
+much larger undecided one — a row where the archives simply hold nothing is not refuted, it is
+unheard. Filter `overlaps.csv` for `attendee_class = ERIKA_ONLY` and `adsb_verdict = ELSEWHERE` and
+you reproduce these three.
+
+## At a glance
+
+| Measure | Value |
+|---|---|
+| Rows in this slice | **3** |
+| Distinct dates | 3 |
+| Date range | 9 May 2023 → 18 June 2025 |
+| Aircraft | SU-BND — 2 rows · SU-BTT — 1 row |
+| Airports claimed | CYYR — 1 · KSTL — 1 · KOMA — 1 |
+| States | MO — 2 · NE — 1 |
+| Years | 2023 — 2 · 2025 — 1 |
+| ADS-B verdict | Elsewhere — refuted — 3 |
+| Tracking-site audit verdict | Inaccurate — 2 · Accurate — 1 |
+| Who the sheet claims | Erika Kirk alone — 3 |
+| Ground-position confirmations | 0 |
+| Rows on a same-day sourced Kirk or TPUSA appearance | 0 |
+
+## TABLE A — the following aircraft
+
+| Row | Date claimed | Airport | City / State | Following aircraft | Type | ICAO hex | Arrived from | Departed to | Ground stay logged, arrived | Departed | Days | Transponder / ground flag | ADS-B verdict | Closest approach |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| [OWENS-015](/Planes/following/overlap/20230509_MO_st_louis_then_goose_bay_owens_015/overview) | **9 May 2023** | [**CYYR**](/Planes/following/GooseBay_CYYR_2023-05-09_to_2025-09-13/overview)<br/>Goose Bay (via St. Louis → Cairo) | St. Louis then Goose Bay, MO | [SU-BND](/Planes/SU-BND/overview) | Gulfstream (G550/G-IV, trackers disagree) | `01003E` | St. Louis | Goose Bay → Paris → Cairo | 9 May 2023 | 9 May 2023 | 0 | — | **Elsewhere — refuted** | 1062.56 km |
+| [OWENS-050](/Planes/following/overlap/20230512_MO_st_louis_owens_050/overview) | **12 May 2023** | [**KSTL**](/Planes/following/StLouis_KSTL_2022-12-20_to_2025-02-23/overview)<br/>St. Louis (claimed) | St. Louis, MO | [SU-BND](/Planes/SU-BND/overview) | Gulfstream (G550/G-IV, trackers disagree) | `01003E` | Missouri (claimed) | Paris / Cairo (claimed) | *no logged stay covers this date* | — | — | — | **Elsewhere — refuted** | 7034.48 km |
+| [OWENS-036](/Planes/following/overlap/20250618_NE_omaha_lincoln_owens_036/overview) | **18 June 2025** | [**KOMA**](/Planes/following/Omaha_KOMA_2024-02-09_to_2025-10-05/overview)<br/>Omaha then Lincoln (claimed) | Omaha / Lincoln, NE | [SU-BTT](/Planes/SU-BTT/overview) | Dassault Falcon 7X | `0101D3` | Paris (claimed) | Wilmington / Cairo (claimed) | *no logged stay covers this date* | — | — | — | **Elsewhere — refuted** | 10139.55 km |
+
+## TABLE B — who they are claimed to have been following
+
+| Row | Date claimed | Who the sheet claims was present | Erika location as the sheet gives it | Sourced Kirk / TPUSA appearance same day | Venue | Local time | Nearest airport to that venue | Kirk-side aircraft on record |
+|---|---|---|---|---|---|---|---|---|
+| [OWENS-015](/Planes/following/overlap/20230509_MO_st_louis_then_goose_bay_owens_015/overview) | **9 May 2023** | Charlie: **not claimed** · Erika: **claimed** | Missouri / Cairo | **None.** No sourced Kirk or TPUSA appearance within three days, anywhere. | — | — | — | *none recorded* |
+| [OWENS-050](/Planes/following/overlap/20230512_MO_st_louis_owens_050/overview) | **12 May 2023** | Charlie: **not claimed** · Erika: **claimed** | Missouri / Cairo | **None.** No sourced Kirk or TPUSA appearance within three days, anywhere. | — | — | — | *none recorded* |
+| [OWENS-036](/Planes/following/overlap/20250618_NE_omaha_lincoln_owens_036/overview) | **18 June 2025** | Charlie: **not claimed** · Erika: **claimed** | Nebraska | **None.** No sourced Kirk or TPUSA appearance within three days, anywhere. | — | — | — | *none recorded* |
+
+## TABLE C — sourcing and both verdicts
+
+| Row | Sheet index | Audit verdict (tracking-site pass) | ADS-B verdict (position data) | What the position data says | Source of the claim | Source post | Full row page |
+|---|---|---|---|---|---|---|---|
+| `OWENS-015` | 15 | **Accurate** | **Elsewhere — refuted** | REFUTED. The airframe was tracked that day and its closest recovered position is 1,063 km from CYYR. | Owens sheet via Kanekoa audit (ACCURATE overall) | [post](https://x.com/KanekoaTheGreat/status/2000701268806062358) | [open](/Planes/following/overlap/20230509_MO_st_louis_then_goose_bay_owens_015/overview) |
+| `OWENS-050` | 50 | **Inaccurate** | **Elsewhere — refuted** | REFUTED. The airframe was tracked that day and its closest recovered position is 7,034 km from KSTL. | Owens sheet via Kanekoa audit | [post](https://x.com/KanekoaTheGreat/status/2000701268806062358) | [open](/Planes/following/overlap/20230512_MO_st_louis_owens_050/overview) |
+| `OWENS-036` | 36 | **Inaccurate** | **Elsewhere — refuted** | REFUTED. The airframe was tracked that day and its closest recovered position is 10,140 km from KOMA. | Owens sheet via Kanekoa audit | [post](https://x.com/KanekoaTheGreat/status/2000701268806062358) | [open](/Planes/following/overlap/20250618_NE_omaha_lincoln_owens_036/overview) |
+
+## What the specifics show
+
+The three refutations are not the same size. `OWENS-050` (12 May 2023, KSTL) and `OWENS-036`
+(18 June 2025, KOMA) are refuted by 7,034 km and 10,140 km respectively — continental distances,
+consistent with the Kanekoa audit's own conclusion that the airframe was in Egypt on both dates.
+`OWENS-015` (9 May 2023, CYYR) is refuted by 1,063 km, which is a different kind of miss: an
+aircraft on a transatlantic leg is 1,063 km from Goose Bay for part of the day almost by definition.
+Two of these three rows are wrong about the continent; one is wrong about the waypoint on a routing
+the sheet otherwise describes correctly.
+
+`OWENS-015` is also the only row in the slice where the two passes disagree with each other. The
+tracking-site audit called it **Accurate** overall; the recovered position data reads `ELSEWHERE`.
+Both readings are published here rather than reconciled. The register does not silently pick a
+winner when its two independent passes conflict.
+
+The other pattern is that all three dates are Erika-only rows with nothing on the Kirk side. Table B
+records the same result on every line: no sourced Kirk or TPUSA appearance within three days,
+anywhere, and no Kirk-side aircraft on record. Even before the position data is consulted, these
+three rows have no confirmed person at either end. The `OWENS-036` row makes the point most
+sharply — the register notes that the only well-dated joint Charlie-and-Erika appearance in the
+whole window before 10 September 2025 is Grapevine, Texas, 13–15 June 2025, and that no aircraft in
+this investigation was in Texas for it.
+
+This slice weakens the compiler's claim rather than supporting it, and it is published on the same
+footing as the corroborated slices for exactly that reason. Note also how small it is: 3 rows.
+Position data refutes far fewer rows than it corroborates or fails to reach, so the honest headline
+is that most of the register is still undecided, not that most of it is disproven.
+
+## What this list cannot tell you
+
+* **A trace proves an aircraft was there. It never proves who was aboard.** These three refutations
+  work in the negative direction only: they show the airframe was elsewhere. Even a corroborated
+  position would not have placed any passenger in the cabin.
+* **Erika Kirk's presence is not established on any row** — not on these three and not anywhere in
+  the register, where the count of rows with established Erika presence is
+  [zero](/Planes/following/cuts/erika-established-0). Her flight logs are
+  [reported erased](/Planes/Erika-Flight-Logs-Erased) and no dated itinerary was ever published, so
+  the "Erika location" column here is the compiler's claim rather than a source.
+* **"Refuted" refutes the claimed location, not the compiler's honesty.** A wrong cell in a
+  volunteer spreadsheet is an error. Nothing on this page asserts that anyone committed a crime or
+  falsified anything, and no such assertion should be read into it.
+* **No archive gap appears in this slice, and none is being read as a deletion.** Every row here was
+  *heard* — that is the precondition for `ELSEWHERE`. Where sibling pages carry `NOT_HEARD` or
+  `NO_ARCHIVE_COVERAGE`, those are limits of what free volunteer archives hold, never suppression
+  and never evidence of absence.
+* **Ground confirmations here are 0.** The 9 May 2023 Goose Bay row has a logged ground stay of 0
+  days with no times captured; that is a logged transit, not a recovered on-ground position.
+* **Where this count differs from the overview, both are printed.** The tracking-site audit worked
+  from 78 rows; this register holds 85. Any audit-derived figure and any register-derived figure are
+  counting different populations.
+
+## Related
+
+* [The Following overview](/Planes/following/overview) — the ledger table this cell sits in
+* [The overlap index](/Planes/following/overlap/overview) — every row as its own page
+* [The speaking-events catalog](/Planes/following/speaking/overview) — the sourced Kirk and TPUSA appearances
+* [The three rows refuted by recovered position data](/Planes/following/cuts/adsb-elsewhere-3) — the whole refuted set, which is identical to this one
+* [The 12 Erika rows position data corroborates](/Planes/following/cuts/ledger-erika-corroborated-12)
+* [The Erika rows the archives cannot decide — 41](/Planes/following/cuts/ledger-erika-undecided-41)
+* [The rows where Erika Kirk's presence is actually established — 0](/Planes/following/cuts/erika-established-0)
+* [Missouri — every overlap, every landing, every event](/Planes/following/cuts/state-missouri) — where `OWENS-050` sits. Two of these three rows are filed under Missouri in the register, but the Missouri slice lists only `OWENS-050`: `OWENS-015`'s claimed airport is Goose Bay in Canada, so the airport-level filter leaves it out
+* Aircraft pages: [SU-BND](/Planes/SU-BND/overview) · [SU-BTT](/Planes/SU-BTT/overview)

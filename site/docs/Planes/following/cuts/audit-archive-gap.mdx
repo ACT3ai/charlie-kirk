@@ -1,0 +1,99 @@
+---
+id: cuts-audit-archive-gap
+slug: /Planes/following/cuts/audit-archive-gap
+displayed_sidebar: docs
+title: "Rows the audit could not assess"
+sidebar_label: "Audit — archive gap (2 rows)"
+description: "The two overlap rows the tracking-site audit marked not assessable because the flight archive does not reach back to 2022 — both Wilmington and Chicago claims for SU-BTT."
+keywords:
+  - Charlie Kirk
+  - Erika Kirk
+  - SU-BTT
+  - KILG
+  - KORD
+  - flight tracking
+image: "/img/docusaurus-social-card.jpg"
+hide_table_of_contents: true
+---
+
+<div className="ck-full-bleed" />
+
+<a href="/Planes/following/cuts/overview" style={{display:'inline-block', marginBottom:'1rem',
+padding:'0.35rem 0.9rem', background:'#1a73e8', color:'#fff',
+borderRadius:'4px', textDecoration:'none', fontSize:'0.9rem'}}>← Table drill-downs</a>
+
+# Rows the audit could not assess
+
+**Where this came from.** [The Following overview](/Planes/following/overview) carries a table of the independent line-by-line audit of the overlap sheet against paid flight-history archives. The cell reading **"Not assessable — the flight archive does not reach back that far — 2"** links here. This page is those two rows in full. The count on this page and the count on the overview agree at two.
+
+## What this slice is
+
+A row lands here when `audit_verdict` in `overlaps.csv` reads `archive_gap` — the auditor examined the claim, found the archive he was working from did not extend to that date, and recorded that he could not rule on it. It is not a verdict of accurate, inaccurate or partially accurate; it is a statement about the archive's reach. **It is not a finding that anything was removed.** Both rows also carry the independent ADS-B verdict `NO_ARCHIVE_COVERAGE`, meaning the free archives this investigation queried afterwards likewise hold nothing for that date, for any airframe probed — again an archive limit, not suppression. Rows the audit simply never reached, and rows an archive covers but does not hear, are different categories and live on their own pages.
+
+## At a glance
+
+| | |
+|---|---|
+| Rows in this slice | **2** |
+| Distinct dates | **2** |
+| Date range | 25 November 2022 – 5 December 2022 |
+| Aircraft named | SU-BTT on both |
+| Airports | KILG 1 · KORD 1 |
+| States | DE 1 · IL 1 |
+| By year | 2022: 2 — every row in this slice is from 2022 |
+| ADS-B verdicts | No archive coverage 2 |
+| Audit verdicts | Not assessable — archive gap 2 |
+| Who the sheet claims | Erika Kirk alone on both |
+| Ground confirmations | **0** |
+| Rows with a same-day sourced Kirk or TPUSA appearance | **0** |
+| Rows where Erika Kirk's presence is established | **0** |
+
+## TABLE A — the following aircraft
+
+| Row | Date claimed | Airport | City / State | Following aircraft | Type | ICAO hex | Arrived from | Departed to | Ground stay logged, arrived | Departed | Days | Transponder / ground flag | ADS-B verdict | Closest approach |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| [OWENS-043](/Planes/following/overlap/20221125_DE_wilmington_owens_043/overview) | **25 November 2022** | [**KILG**](/Planes/following/Wilmington_KILG_2022-11-17_to_2025-10-12/overview)<br/>Wilmington (claimed) | Wilmington, DE | [SU-BTT](/Planes/SU-BTT/overview) | Dassault Falcon 7X | `0101D3` | Paris (claimed) | Cairo (claimed) | *no logged stay covers this date* | — | — | — | **No archive coverage** | — |
+| [OWENS-044](/Planes/following/overlap/20221205_IL_chicago_owens_044/overview) | **5 December 2022** | **KORD**<br/>Chicago (claimed) | Chicago, IL | [SU-BTT](/Planes/SU-BTT/overview) | Dassault Falcon 7X | `0101D3` | Paris (claimed) | Cairo (claimed) | *no logged stay covers this date* | — | — | — | **No archive coverage** | — |
+
+## TABLE B — who they are claimed to have been following
+
+| Row | Date claimed | Who the sheet claims was present | Erika location as the sheet gives it | Sourced Kirk / TPUSA appearance same day | Venue | Local time | Nearest airport to that venue | Kirk-side aircraft on record |
+|---|---|---|---|---|---|---|---|---|
+| [OWENS-043](/Planes/following/overlap/20221125_DE_wilmington_owens_043/overview) | **25 November 2022** | Charlie: **not claimed** · Erika: **claimed** | Delaware | **None.** No sourced Kirk or TPUSA appearance within three days, anywhere. | — | — | — | *none recorded* |
+| [OWENS-044](/Planes/following/overlap/20221205_IL_chicago_owens_044/overview) | **5 December 2022** | Charlie: **not claimed** · Erika: **claimed** | Illinois | **None.** No sourced Kirk or TPUSA appearance within three days, anywhere. | — | — | — | *none recorded* |
+
+## TABLE C — sourcing and both verdicts
+
+| Row | Sheet index | Audit verdict (tracking-site pass) | ADS-B verdict (position data) | What the position data says | Source of the claim | Source post | Full row page |
+|---|---|---|---|---|---|---|---|
+| `OWENS-043` | 43 | **Not assessable — archive gap** | **No archive coverage** | SAYS NOTHING EITHER WAY. Neither free archive holds this date for any airframe we probed, so this is an archive limit and not suppression. | Owens sheet via Kanekoa audit (archive gap) | [post](https://x.com/KanekoaTheGreat/status/2000701268806062358) | [open](/Planes/following/overlap/20221125_DE_wilmington_owens_043/overview) |
+| `OWENS-044` | 44 | **Not assessable — archive gap** | **No archive coverage** | SAYS NOTHING EITHER WAY. Neither free archive holds this date for any airframe we probed, so this is an archive limit and not suppression. | Owens sheet via Kanekoa audit (archive gap) | [post](https://x.com/KanekoaTheGreat/status/2000701268806062358) | [open](/Planes/following/overlap/20221205_IL_chicago_owens_044/overview) |
+
+## What the specifics show
+
+**This is the smallest cell on the overview, and it is small for a boring reason: the archives run out in 2022.** Both rows are from 2022 — `OWENS-043` on 25 November and `OWENS-044` on 5 December — and 2022 is the year the free and paid flight histories used in this investigation thin out or stop. Ten days apart, both naming SU-BTT, both claiming a Paris arrival and a Cairo departure, both attributed by the compilation to Erika Kirk alone.
+
+**Neither pass could rule, and they failed for the same reason.** The auditor's own note on both rows is "Data doesn't go back this far", and the independent ADS-B pass afterwards returned `NO_ARCHIVE_COVERAGE` — no free archive holds that date for any airframe probed, control aircraft included. When a control aircraft with no connection to this case fails the same way on the same date, the failure belongs to the archive and not to the airframe. **That is why these two rows must never be described as removals.**
+
+**The auditor did not leave it there, and what he added cuts against the claim.** On both rows he records his own belief about where the aircraft actually was: on `OWENS-043`, "In Cairo; closest flight was 11/20/22, Wilmington to Cairo", and on `OWENS-044`, "Still in Cairo; flew back into Cairo 20 Nov, out to Paris then St. Louis 20 Dec." That is the auditor's reading, offered without the archive coverage that would settle it, and it is recorded here as his statement rather than as a finding.
+
+**Nothing on either row can be paired with an appearance.** Table B shows no sourced Kirk or Turning Point appearance within three days of either date, anywhere in the country — not merely none in Delaware or Illinois. Neither row has a logged ground stay in this site's flight records, and neither has a ground confirmation. Whatever these two rows are, they are not evidence of anyone being followed to an event.
+
+## What this list cannot tell you
+
+* **A trace locates an aircraft. It never places a person aboard.** On these two rows there is no trace at all, so the point is doubly true: nothing here locates the aircraft, and nothing here locates a person.
+* **This is an archive limit, not a deletion.** `NO_ARCHIVE_COVERAGE` and the auditor's `archive_gap` both mean the record was never reachable from these sources for these dates. No page on this site should read them as suppression, and this one does not.
+* **Erika Kirk's presence is established on zero rows** — on these two and across the whole register. Both rows are attributed to her alone by the compilation. Her flight logs are [reported erased](/Planes/Erika-Flight-Logs-Erased) and no itinerary was ever published, so there is no document to check her against on any date.
+* **An absence in an archive is not evidence of absence.** Nothing here shows SU-BTT was at Wilmington or Chicago, and nothing here shows it was not. Both claims remain exactly as unverified as they were when they were published.
+* **This cell is stated against 78 rows, not 85.** The audit table on the overview reports the auditor's figures against the **78 rows he worked from**, not the 85 this register now holds; the seven later additions were reconstructed by this site from overlap pages he never saw. Both rows on this page are Owens sheet indices 43 and 44, so both are inside the 78 and the count of two is unaffected.
+
+## Related
+
+* [The Following overview](/Planes/following/overview) — the tables these drill-downs come from
+* [The overlap index](/Planes/following/overlap/overview) — one page per claimed overlap
+* [The speaking-events catalog](/Planes/following/speaking/overview) — the sourced Kirk and TPUSA appearances
+* [SU-BTT](/Planes/SU-BTT/overview) — the Dassault Falcon 7X named on both rows
+* [The ten rows no free archive reaches](/Planes/following/cuts/adsb-no-archive-coverage-10) — the full set of rows the ADS-B pass could not cover, of which these two are part
+* [Rows the audit never reached](/Planes/following/cuts/audit-not-reached) — the other kind of unassessed row, and a different reason
+* [The 37 rows the archives cover but do not hear](/Planes/following/cuts/adsb-not-heard-37) — where an archive *does* cover the date and still holds no trace
+* [Rows the tracking-site audit called inaccurate](/Planes/following/cuts/audit-inaccurate) — what the auditor found where he could rule

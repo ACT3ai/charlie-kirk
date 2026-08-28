@@ -820,6 +820,48 @@ Not every claimed SU-BND flight could be checked against a primary ADS-B trace. 
 
 **An absence there is not a finding.** A 404 means a volunteer receiver network heard nothing on that UTC day — parked and silent, outside coverage, or a wrong claimed date all come first, and [what a 403 means](/Planes/Flight-Data-Recovery/What-A-403-Means) sets out why a refusal and a deletion look identical from outside. The four free archives that did produce data, and the control test that separates a retention boundary from a removal, are on [Flight data recovery](/Planes/Flight-Data-Recovery/overview) and [per-aircraft recovery status](/Planes/Flight-Data-Recovery/Per-Aircraft-Status).
 
+
+---
+
+{/* CK_FLIGHT_RECORD:START */}
+
+## Where this aircraft actually went, and when
+
+**9 flight legs recovered, 2022-09-01 to 2026-06-04, touching 8 airports in 5 countries. 2 of the 9 are continuously observed end to end.**
+
+**Read the last column before you read anything else.** A leg marked *gap* means the archives saw this aircraft at one field and then, some number of days later, at another. It is not a claim that the aircraft flew directly between them, and intermediate stops are **not** ruled out. A leg marked *direct* is one the traces actually follow from wheels-up to wheels-down.
+
+### Every airport this aircraft was on the ground at
+
+| Airport | Name | Where | Ground visits | First seen | Last seen |
+|---|---|---|---:|---|---|
+| **KPVU** | Provo Municipal Airport | Provo, UT | 21 | 2024-04-19 | 2026-06-04 |
+| **LFPB** | Paris-Le Bourget Airport | Le Bourget, France | 3 | 2022-09-01 | 2025-09-15 |
+| **HEAL** | El Alamein International Airport | Egypt | 1 | 2023-07-22 | 2023-07-22 |
+| **HEAZ** | Almaza Air Force Base | Egypt | 1 | 2026-07-01 | 2026-07-01 |
+| **KSLC** | Salt Lake City International Airport | Salt Lake City, UT | 1 | 2024-04-19 | 2024-04-19 |
+| **LFMN** | Nice-Côte d'Azur Airport | France | 1 | 2025-10-15 | 2025-10-15 |
+| **LGPZ** | Aktion National Airport | Greece | 1 | 2024-04-18 | 2024-04-18 |
+| **LIRA** | Ciampino–G. B. Pastine International Airport | Italy | 1 | 2023-07-22 | 2023-07-22 |
+
+### Every recovered flight leg
+
+| Leg date (UTC) | From | To | Left after (UTC) | Arrived by (UTC) | How well observed |
+|---|---|---|---|---|---|
+| 2022-09-01 | **LFPB** Le Bourget, France | **HEAL** Egypt | 09:37 | 2023-07-22 04:52 | **gap — unobserved 323 days** |
+| 2023-07-22 | **HEAL** Egypt | **LIRA** Italy | 04:52 | 08:51 | **direct** — continuous |
+| 2023-07-22 | **LIRA** Italy | **LGPZ** Greece | 08:54 | 2024-04-18 08:52 | **gap — unobserved 270 days** |
+| 2024-04-18 | **LGPZ** Greece | **KSLC** Salt Lake City, UT | 08:52 | 2024-04-19 20:03 | overnight — crossed a UTC midnight |
+| 2024-04-19 | **KSLC** Salt Lake City, UT | **KPVU** Provo, UT | 20:07 | 21:33 | **direct** — continuous |
+| 2025-09-12 | **KPVU** Provo, UT | **LFPB** Le Bourget, France | 22:17 | 2025-09-14 06:06 | **gap — unobserved 1 day** |
+| 2025-09-15 | **LFPB** Le Bourget, France | **LFMN** France | 08:18 | 2025-10-15 12:01 | **gap — unobserved 29 days** |
+| 2025-10-15 | **LFMN** France | **KPVU** Provo, UT | 12:05 | 2026-05-13 23:12 | **gap — unobserved 209 days** |
+| 2026-06-04 | **KPVU** Provo, UT | **HEAZ** Egypt | 22:12 | 2026-07-01 06:48 | **gap — unobserved 26 days** |
+
+*Times are UTC as the archives recorded them — the last on-ground position before departure and the first on-ground position after arrival — not filed or scheduled times. Built by `build_flight_record.py`; see [Investigating Deleted Flights](/Planes/investigating_deleted_flights) for how much of the record is missing and why.*
+
+{/* CK_FLIGHT_RECORD:END */}
+
 {/* CK_PAGE_FOOTER_START */}
 
 ## Where this page fits
@@ -847,3 +889,59 @@ marginTop:'0.5rem'}}>
 </div>
 
 {/* CK_PAGE_FOOTER_END */}
+
+---
+
+{/* CK_INTERESTING_DATES:START */}
+
+## Interesting dates for this aircraft
+
+Every date on which the recovered ADS-B traces put this aircraft **on the ground** within 50 miles of a sourced Charlie Kirk, Erika Kirk, or TPUSA event. One row per ground contact. The ground window is the first and last on-ground position the archives recorded that day, in UTC, not a filed departure or arrival time.
+
+**What this aircraft is:** Egyptian-registered Gulfstream.
+
+**3 ground contacts across 2 dates, at 1 airport. 2 land on the event date itself.**
+
+One row is one continuous run of on-ground positions. Two rows on the same date at the same field mean the aircraft took off and came back, not that it waited.
+
+| Date (UTC) | Ground window (UTC) | Who | Airport | City, State | Event | Event city | Mi | When | Found by |
+| --- | --- | --- | --- | --- | --- | --- | ---: | --- | --- |
+| 2025-09-09 | 20:03–20:38 | Charlie | **KPVU** | Provo, UT | [The American Comeback Tour — UVU (first stop of the fal…](/Planes/following/speaking/20250910_orem) | Orem, UT | 4.9 | Day before | **both routes** |
+| 2025-09-10 | 16:05–17:34 | Charlie | **KPVU** | Provo, UT | [The American Comeback Tour — UVU (first stop of the fal…](/Planes/following/speaking/20250910_orem) | Orem, UT | 4.9 | **Same day** | **both routes** |
+| 2025-09-10 | 19:40–20:29 | Charlie | **KPVU** | Provo, UT | [The American Comeback Tour — UVU (first stop of the fal…](/Planes/following/speaking/20250910_orem) | Orem, UT | 4.9 | **Same day** | **both routes** |
+
+**Two events on twenty-two observed days is not a rate.** The aircraft did not shuttle between these dates — it sat at Provo continuously from 5 to 12 September 2025 at an unchanging 1.29 km from the field reference point. It was parked there before Charlie Kirk arrived and still parked two days after he was killed.
+
+**What these rows do and do not establish.** A trace proves presence. It never proves purpose and it never proves occupancy — no ADS-B record places any person aboard any aircraft.
+
+### Every recorded ground presence at Provo Municipal (KPVU)
+
+Provo is the field the public argument is built on, so this aircraft's Provo record is listed in full — including the days that pair with no event at all.
+
+| Date (UTC) | Aircraft | Ground window (UTC) | km from field | Ground fixes |
+|---|---|---|---:|---:|
+| 2024-04-19 | **SU-BND** | 21:33–21:36 | 1.03 | 23 |
+| 2024-07-17 | **SU-BND** | 15:49–15:53 | 1.51 | 16 |
+| 2025-05-23 | **SU-BND** | 20:38–20:46 | 1.13 | 141 |
+| 2025-09-05 | **SU-BND** | 18:05 only | 1.51 | 2 |
+| 2025-09-05 | **SU-BND** | 19:14–19:22 | 0.89 | 73 |
+| 2025-09-05 | **SU-BND** | 22:53–23:49 | 1.29 | 148 |
+| 2025-09-06 | **SU-BND** | 19:18–20:02 | 1.29 | 140 |
+| 2025-09-07 | **SU-BND** | 16:31–18:13 | 1.29 | 206 |
+| 2025-09-08 | **SU-BND** | 18:49–20:08 | 1.29 | 182 |
+| 2025-09-09 | **SU-BND** | 20:03–20:38 | 1.29 | 131 |
+| 2025-09-10 | **SU-BND** | 16:05–17:34 | 1.29 | 100 |
+| 2025-09-10 | **SU-BND** | 19:40–20:29 | 1.29 | 156 |
+| 2025-09-12 | **SU-BND** | 13:37–16:48 | 1.29 | 226 |
+| 2025-09-12 | **SU-BND** | 19:03–19:20 | 1.29 | 34 |
+| 2025-09-12 | **SU-BND** | 20:29–22:17 | 1.29 | 300 |
+| 2026-05-13 | **SU-BND** | 23:12–23:59 | 1.27 | 42 |
+| 2026-05-14 | **SU-BND** | 00:00 only | 1.28 | 1 |
+| 2026-05-20 | **SU-BND** | 13:46–18:14 | 1.11 | 1019 |
+| 2026-06-02 | **SU-BND** | 17:04–17:06 | 1.51 | 9 |
+| 2026-06-02 | **SU-BND** | 18:15–18:23 | 0.92 | 160 |
+| 2026-06-04 | **SU-BND** | 21:16–22:12 | 1.05 | 168 |
+
+*Built by `build_interesting_dates.py` from the recovered traces. See [Investigating Deleted Flights](/Planes/investigating_deleted_flights) for how the underlying data was recovered and what its limits are.*
+
+{/* CK_INTERESTING_DATES:END */}

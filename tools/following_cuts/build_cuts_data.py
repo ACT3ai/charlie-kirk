@@ -145,7 +145,7 @@ for o in overlaps:
         "owens_index": o["owens_index"],
         "date": ds if d(ds) else "",
         "date_raw": ds,
-        "date_pretty": pretty(ds) if d(ds) else "**no date was ever published**",
+        "date_pretty": pretty(ds) if d(ds) else "no date was ever published",
         "airport_code": code,
         "airport_name": o["airport_name"] or ap.get("airport_name", ""),
         "airport_class": o["airport_class"] or ap.get("airport_class", ""),
@@ -253,7 +253,7 @@ def table_aircraft(rs):
                                        else ("airborne position" if r["adsb_ground"] == "no" else "—"))
         out.append("| " + " | ".join([
             row_link(r), f"**{r['date_pretty']}**", f"{ap}<br/>{apn}" if apn else ap,
-            esc(f"{r['city']}, {r['state']}") or "—", tails, esc(r["following_type"]) or "—",
+            esc(", ".join(x for x in (r["city"], r["state"]) if x.strip())) or "*none named*", tails, (esc(r["following_type"]) if r["following_type"].strip().upper() not in ("", "UNKNOWN") else "*not stated*"),
             f"`{r['following_hex']}`" if r["following_hex"] else "—",
             (esc(r["arrived_from"]) if r["arrived_from"] not in ("", "UNKNOWN") else "*not recorded*"),
             (esc(r["departed_to"]) if r["departed_to"] not in ("", "UNKNOWN") else "*not recorded*"),
@@ -295,7 +295,8 @@ def table_people(rs):
         who = {"claimed": "claimed", "not_claimed": "not claimed", "unknown": "unknown"}
         pres = (f"Charlie: **{who.get(r['charlie_present'], r['charlie_present'])}** · "
                 f"Erika: **{who.get(r['erika_present'], r['erika_present'])}**")
-        el = esc(r["claimed_erika_location"]) or "*blank on the sheet*"
+        el = esc(r["claimed_erika_location"])
+        el = "*blank on the sheet*" if not el else ("*never stated*" if el.upper() == "UNKNOWN" else el)
         kt = esc(r["kirk_tail"]) or "*none recorded*"
         out.append("| " + " | ".join([
             row_link(r), f"**{r['date_pretty']}**", pres, el, ev_cell, venue, tm, apx, kt,

@@ -535,6 +535,46 @@ Not every claimed SU-BGM flight could be checked against a primary ADS-B trace. 
 
 **An absence there is not a finding.** A 404 means a volunteer receiver network heard nothing on that UTC day — parked and silent, outside coverage, or a wrong claimed date all come first, and [what a 403 means](/Planes/Flight-Data-Recovery/What-A-403-Means) sets out why a refusal and a deletion look identical from outside. The four free archives that did produce data, and the control test that separates a retention boundary from a removal, are on [Flight data recovery](/Planes/Flight-Data-Recovery/overview) and [per-aircraft recovery status](/Planes/Flight-Data-Recovery/Per-Aircraft-Status).
 
+
+---
+
+{/* CK_FLIGHT_RECORD:START */}
+
+## Where this aircraft actually went, and when
+
+**8 flight legs recovered, 2023-03-13 to 2025-04-16, touching 7 airports in 6 countries. 1 of the 8 are continuously observed end to end.**
+
+**Read the last column before you read anything else.** A leg marked *gap* means the archives saw this aircraft at one field and then, some number of days later, at another. It is not a claim that the aircraft flew directly between them, and intermediate stops are **not** ruled out. A leg marked *direct* is one the traces actually follow from wheels-up to wheels-down.
+
+### Every airport this aircraft was on the ground at
+
+| Airport | Name | Where | Ground visits | First seen | Last seen |
+|---|---|---|---:|---|---|
+| **HEAZ** | Almaza Air Force Base | Egypt | 3 | 2023-08-01 | 2025-10-22 |
+| **KPVU** | Provo Municipal Airport | Provo, UT | 3 | 2025-04-10 | 2025-04-16 |
+| **EDDB** | Berlin Brandenburg Airport | Germany | 1 | 2024-06-05 | 2024-06-05 |
+| **HE45** | Ras Sedr Airport | Egypt | 1 | 2023-10-25 | 2023-10-25 |
+| **LBSF** | Sofia Airport | Bulgaria | 1 | 2023-12-19 | 2023-12-19 |
+| **LIRA** | Ciampino–G. B. Pastine International Airport | Italy | 1 | 2023-03-13 | 2023-03-13 |
+| **LRBS** | Bucharest Băneasa Aurel Vlaicu International Airport | Romania | 1 | 2024-06-03 | 2024-06-03 |
+
+### Every recovered flight leg
+
+| Leg date (UTC) | From | To | Left after (UTC) | Arrived by (UTC) | How well observed |
+|---|---|---|---|---|---|
+| 2023-03-13 | **LIRA** Italy | **HEAZ** Egypt | 10:59 | 2023-08-01 06:05 | **gap — unobserved 140 days** |
+| 2023-08-01 | **HEAZ** Egypt | **HE45** Egypt | 06:06 | 2023-10-25 15:34 | **gap — unobserved 84 days** |
+| 2023-10-25 | **HE45** Egypt | **LBSF** Bulgaria | 15:34 | 2023-12-19 10:59 | **gap — unobserved 54 days** |
+| 2023-12-19 | **LBSF** Bulgaria | **LRBS** Romania | 11:04 | 2024-06-03 07:29 | **gap — unobserved 166 days** |
+| 2024-06-03 | **LRBS** Romania | **HEAZ** Egypt | 07:30 | 2024-06-05 04:48 | **gap — unobserved 1 day** |
+| 2024-06-05 | **HEAZ** Egypt | **EDDB** Germany | 04:49 | 08:35 | **direct** — continuous |
+| 2024-06-05 | **EDDB** Germany | **KPVU** Provo, UT | 08:35 | 2025-04-10 21:13 | **gap — unobserved 308 days** |
+| 2025-04-16 | **KPVU** Provo, UT | **HEAZ** Egypt | 18:14 | 2025-10-22 07:07 | **gap — unobserved 188 days** |
+
+*Times are UTC as the archives recorded them — the last on-ground position before departure and the first on-ground position after arrival — not filed or scheduled times. Built by `build_flight_record.py`; see [Investigating Deleted Flights](/Planes/investigating_deleted_flights) for how much of the record is missing and why.*
+
+{/* CK_FLIGHT_RECORD:END */}
+
 {/* CK_PAGE_FOOTER_START */}
 
 ## Where this page fits
@@ -562,3 +602,31 @@ marginTop:'0.5rem'}}>
 </div>
 
 {/* CK_PAGE_FOOTER_END */}
+
+---
+
+{/* CK_INTERESTING_DATES:START */}
+
+## Interesting dates for this aircraft
+
+Every date on which the recovered ADS-B traces put this aircraft **on the ground** within 50 miles of a sourced Charlie Kirk, Erika Kirk, or TPUSA event. One row per ground contact. The ground window is the first and last on-ground position the archives recorded that day, in UTC, not a filed departure or arrival time.
+
+**What this aircraft is:** Egyptian-registered Gulfstream IV.
+
+**No incidents. Not one.** Across every day of recovered trace this investigation holds for this aircraft, it never comes within 50 miles of a sourced Charlie Kirk, Erika Kirk, or TPUSA event on the event date or either adjacent day.
+
+That is a published result rather than an empty section. It is also not proof the aircraft was elsewhere: coverage is thin, and a jet parked with its transponder off is invisible to a volunteer receiver network.
+
+### Every recorded ground presence at Provo Municipal (KPVU)
+
+Provo is the field the public argument is built on, so this aircraft's Provo record is listed in full — including the days that pair with no event at all.
+
+| Date (UTC) | Aircraft | Ground window (UTC) | km from field | Ground fixes |
+|---|---|---|---:|---:|
+| 2025-04-10 | **SU-BGM** | 21:13–21:17 | 1.44 | 41 |
+| 2025-04-10 | **SU-BGM** | 22:11–22:16 | 0.38 | 63 |
+| 2025-04-16 | **SU-BGM** | 18:09–18:14 | 1.41 | 69 |
+
+*Built by `build_interesting_dates.py` from the recovered traces. See [Investigating Deleted Flights](/Planes/investigating_deleted_flights) for how the underlying data was recovered and what its limits are.*
+
+{/* CK_INTERESTING_DATES:END */}

@@ -545,6 +545,45 @@ Not every claimed SU-BTU flight could be checked against a primary ADS-B trace. 
 
 **An absence there is not a finding.** A 404 means a volunteer receiver network heard nothing on that UTC day — parked and silent, outside coverage, or a wrong claimed date all come first, and [what a 403 means](/Planes/Flight-Data-Recovery/What-A-403-Means) sets out why a refusal and a deletion look identical from outside. The four free archives that did produce data, and the control test that separates a retention boundary from a removal, are on [Flight data recovery](/Planes/Flight-Data-Recovery/overview) and [per-aircraft recovery status](/Planes/Flight-Data-Recovery/Per-Aircraft-Status).
 
+
+---
+
+{/* CK_FLIGHT_RECORD:START */}
+
+## Where this aircraft actually went, and when
+
+**8 flight legs recovered, 2023-03-13 to 2025-04-14, touching 6 airports in 3 countries. 2 of the 8 are continuously observed end to end.**
+
+**Read the last column before you read anything else.** A leg marked *gap* means the archives saw this aircraft at one field and then, some number of days later, at another. It is not a claim that the aircraft flew directly between them, and intermediate stops are **not** ruled out. A leg marked *direct* is one the traces actually follow from wheels-up to wheels-down.
+
+### Every airport this aircraft was on the ground at
+
+| Airport | Name | Where | Ground visits | First seen | Last seen |
+|---|---|---|---:|---|---|
+| **KILG** | Wilmington Airport / New Castle Airport | Wilmington, DE | 11 | 2023-03-13 | 2025-05-01 |
+| **KBGR** | Bangor International Airport | Bangor, ME | 2 | 2023-05-01 | 2023-05-01 |
+| **KPVU** | Provo Municipal Airport | Provo, UT | 2 | 2025-04-08 | 2025-04-14 |
+| **EGLF** | Farnborough Airport | Farnborough, Hampshire | 1 | 2023-10-19 | 2023-10-19 |
+| **KLNK** | Lincoln Airport | Lincoln, NE | 1 | 2024-12-01 | 2024-12-01 |
+| **LGKR** | Corfu Ioannis Kapodistrias International Airport | Greece | 1 | 2023-10-19 | 2023-10-19 |
+
+### Every recovered flight leg
+
+| Leg date (UTC) | From | To | Left after (UTC) | Arrived by (UTC) | How well observed |
+|---|---|---|---|---|---|
+| 2023-03-13 | **KILG** Wilmington, DE | **KBGR** Bangor, ME | 16:40 | 2023-05-01 17:49 | **gap — unobserved 48 days** |
+| 2023-05-01 | **KBGR** Bangor, ME | **KILG** Wilmington, DE | 18:45 | 2023-05-06 15:18 | **gap — unobserved 4 days** |
+| 2023-10-13 | **KILG** Wilmington, DE | **LGKR** Greece | 16:29 | 2023-10-19 03:43 | **gap — unobserved 5 days** |
+| 2023-10-19 | **LGKR** Greece | **EGLF** Farnborough, Hampshire | 03:43 | 06:35 | **direct** — continuous |
+| 2023-10-19 | **EGLF** Farnborough, Hampshire | **KLNK** Lincoln, NE | 06:36 | 2024-12-01 14:13 | **gap — unobserved 408 days** |
+| 2024-12-01 | **KLNK** Lincoln, NE | **KILG** Wilmington, DE | 14:18 | 16:26 | **direct** — continuous |
+| 2025-01-24 | **KILG** Wilmington, DE | **KPVU** Provo, UT | 12:58 | 2025-04-08 18:32 | **gap — unobserved 73 days** |
+| 2025-04-14 | **KPVU** Provo, UT | **KILG** Wilmington, DE | 12:02 | 2025-04-15 10:06 | overnight — crossed a UTC midnight |
+
+*Times are UTC as the archives recorded them — the last on-ground position before departure and the first on-ground position after arrival — not filed or scheduled times. Built by `build_flight_record.py`; see [Investigating Deleted Flights](/Planes/investigating_deleted_flights) for how much of the record is missing and why.*
+
+{/* CK_FLIGHT_RECORD:END */}
+
 {/* CK_PAGE_FOOTER_START */}
 
 ## Where this page fits
@@ -572,3 +611,30 @@ marginTop:'0.5rem'}}>
 </div>
 
 {/* CK_PAGE_FOOTER_END */}
+
+---
+
+{/* CK_INTERESTING_DATES:START */}
+
+## Interesting dates for this aircraft
+
+Every date on which the recovered ADS-B traces put this aircraft **on the ground** within 50 miles of a sourced Charlie Kirk, Erika Kirk, or TPUSA event. One row per ground contact. The ground window is the first and last on-ground position the archives recorded that day, in UTC, not a filed departure or arrival time.
+
+**What this aircraft is:** Egyptian-registered Dassault Falcon 7X.
+
+**No incidents. Not one.** Across every day of recovered trace this investigation holds for this aircraft, it never comes within 50 miles of a sourced Charlie Kirk, Erika Kirk, or TPUSA event on the event date or either adjacent day.
+
+That is a published result rather than an empty section. It is also not proof the aircraft was elsewhere: coverage is thin, and a jet parked with its transponder off is invisible to a volunteer receiver network.
+
+### Every recorded ground presence at Provo Municipal (KPVU)
+
+Provo is the field the public argument is built on, so this aircraft's Provo record is listed in full — including the days that pair with no event at all.
+
+| Date (UTC) | Aircraft | Ground window (UTC) | km from field | Ground fixes |
+|---|---|---|---:|---:|
+| 2025-04-08 | **SU-BTU** | 18:32–18:33 | 0.95 | 7 |
+| 2025-04-14 | **SU-BTU** | 12:00–12:02 | 1.25 | 16 |
+
+*Built by `build_interesting_dates.py` from the recovered traces. See [Investigating Deleted Flights](/Planes/investigating_deleted_flights) for how the underlying data was recovered and what its limits are.*
+
+{/* CK_INTERESTING_DATES:END */}

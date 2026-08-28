@@ -677,6 +677,63 @@ Not every claimed N59906 flight could be checked against a primary ADS-B trace. 
 
 **An absence there is not a finding.** A 404 means a volunteer receiver network heard nothing on that UTC day — parked and silent, outside coverage, or a wrong claimed date all come first, and [what a 403 means](/Planes/Flight-Data-Recovery/What-A-403-Means) sets out why a refusal and a deletion look identical from outside. The four free archives that did produce data, and the control test that separates a retention boundary from a removal, are on [Flight data recovery](/Planes/Flight-Data-Recovery/overview) and [per-aircraft recovery status](/Planes/Flight-Data-Recovery/Per-Aircraft-Status).
 
+
+---
+
+{/* CK_FLIGHT_RECORD:START */}
+
+## Where this aircraft actually went, and when
+
+**16 flight legs recovered, 2022-06-01 to 2026-05-31, touching 16 airports in 1 country. 5 of the 16 are continuously observed end to end.**
+
+**Read the last column before you read anything else.** A leg marked *gap* means the archives saw this aircraft at one field and then, some number of days later, at another. It is not a claim that the aircraft flew directly between them, and intermediate stops are **not** ruled out. A leg marked *direct* is one the traces actually follow from wheels-up to wheels-down.
+
+### Every airport this aircraft was on the ground at
+
+| Airport | Name | Where | Ground visits | First seen | Last seen |
+|---|---|---|---:|---|---|
+| **KENW** | Kenosha Regional Airport | USA | 31 | 2026-05-02 | 2026-05-31 |
+| **KGEG** | Spokane International Airport | USA | 7 | 2025-07-01 | 2025-08-05 |
+| **KPVU** | Provo Municipal Airport | Provo, UT | 7 | 2025-09-08 | 2025-09-16 |
+| **KBJC** | Rocky Mountain Metropolitan | Boulder, CO | 6 | 2025-10-01 | 2025-10-14 |
+| **KOGD** | Ogden Hinckley Airport | USA | 6 | 2025-09-01 | 2025-09-06 |
+| **KASG** | Springdale Municipal Airport | USA | 2 | 2024-11-01 | 2024-11-01 |
+| **KOKV** | Winchester Regional Airport | USA | 2 | 2025-04-01 | 2025-04-01 |
+| **KOSH** | Wittman Regional Airport | USA | 2 | 2023-06-01 | 2023-06-01 |
+| **KRBD** | Dallas Executive Airport | USA | 2 | 2023-10-01 | 2023-10-01 |
+| **K09M** | Charleston Municipal Airport | USA | 1 | 2026-05-31 | 2026-05-31 |
+| **KAEG** | Double Eagle II Airport | USA | 1 | 2023-08-26 | 2023-08-26 |
+| **KCRP** | Corpus Christi International Airport | USA | 1 | 2023-11-01 | 2023-11-01 |
+| **KHYI** | San Marcos Regional Airport | USA | 1 | 2023-11-01 | 2023-11-01 |
+| **KMQS** | Chester County G O Carlson Airport | USA | 1 | 2025-04-01 | 2025-04-01 |
+| **KPIH** | Pocatello Regional Airport | USA | 1 | 2025-09-01 | 2025-09-01 |
+| **KWVI** | Watsonville Municipal Airport | USA | 1 | 2022-06-01 | 2022-06-01 |
+
+### Every recovered flight leg
+
+| Leg date (UTC) | From | To | Left after (UTC) | Arrived by (UTC) | How well observed |
+|---|---|---|---|---|---|
+| 2022-06-01 | **KWVI** USA | **KOSH** USA | 00:00 | 2023-06-01 13:20 | **gap — unobserved 364 days** |
+| 2023-06-01 | **KOSH** USA | **KAEG** USA | 16:16 | 2023-08-26 17:43 | **gap — unobserved 85 days** |
+| 2023-08-26 | **KAEG** USA | **KRBD** USA | 17:44 | 2023-10-01 14:20 | **gap — unobserved 35 days** |
+| 2023-10-01 | **KRBD** USA | **KHYI** USA | 17:57 | 2023-11-01 15:40 | **gap — unobserved 30 days** |
+| 2023-11-01 | **KHYI** USA | **KCRP** USA | 15:40 | 21:15 | **direct** — continuous |
+| 2023-11-01 | **KCRP** USA | **KASG** USA | 21:20 | 2024-11-01 15:22 | **gap — unobserved 365 days** |
+| 2024-11-01 | **KASG** USA | **KOKV** USA | 20:05 | 2025-04-01 16:08 | **gap — unobserved 150 days** |
+| 2025-04-01 | **KOKV** USA | **KMQS** USA | 16:17 | 21:38 | **direct** — continuous |
+| 2025-04-01 | **KMQS** USA | **KOKV** USA | 22:26 | 23:15 | **direct** — continuous |
+| 2025-04-01 | **KOKV** USA | **KGEG** USA | 23:19 | 2025-07-01 21:49 | **gap — unobserved 90 days** |
+| 2025-08-05 | **KGEG** USA | **KPIH** USA | 20:17 | 2025-09-01 15:02 | **gap — unobserved 26 days** |
+| 2025-09-01 | **KPIH** USA | **KOGD** USA | 15:04 | 17:33 | **direct** — continuous |
+| 2025-09-06 | **KOGD** USA | **KPVU** Provo, UT | 18:29 | 2025-09-08 15:45 | **gap — unobserved 1 day** |
+| 2025-09-16 | **KPVU** Provo, UT | **KBJC** Boulder, CO | 18:51 | 2025-10-01 20:19 | **gap — unobserved 14 days** |
+| 2025-10-14 | **KBJC** Boulder, CO | **KENW** USA | 19:14 | 2026-05-02 14:12 | **gap — unobserved 199 days** |
+| 2026-05-31 | **KENW** USA | **K09M** USA | 16:03 | 19:17 | **direct** — continuous |
+
+*Times are UTC as the archives recorded them — the last on-ground position before departure and the first on-ground position after arrival — not filed or scheduled times. Built by `build_flight_record.py`; see [Investigating Deleted Flights](/Planes/investigating_deleted_flights) for how much of the record is missing and why.*
+
+{/* CK_FLIGHT_RECORD:END */}
+
 {/* CK_PAGE_FOOTER_START */}
 
 ## Where this page fits
@@ -704,3 +761,30 @@ marginTop:'0.5rem'}}>
 </div>
 
 {/* CK_PAGE_FOOTER_END */}
+
+---
+
+{/* CK_INTERESTING_DATES:START */}
+
+## Interesting dates for this aircraft
+
+Every date on which the recovered ADS-B traces put this aircraft **on the ground** within 50 miles of a sourced Charlie Kirk, Erika Kirk, or TPUSA event. One row per ground contact. The ground window is the first and last on-ground position the archives recorded that day, in UTC, not a filed departure or arrival time.
+
+**What this aircraft is:** Piper Navajo aerial-survey aircraft.
+
+**2 ground contacts across 1 date, at 1 airport. 2 land on the event date itself.**
+
+One row is one continuous run of on-ground positions. Two rows on the same date at the same field mean the aircraft took off and came back, not that it waited.
+
+| Date (UTC) | Ground window (UTC) | Who | Airport | City, State | Event | Event city | Mi | When | Found by |
+| --- | --- | --- | --- | --- | --- | --- | ---: | --- | --- |
+| 2025-09-10 | 15:08 only | Charlie | **KPVU** | Provo, UT | [The American Comeback Tour — UVU (first stop of the fal…](/Planes/following/speaking/20250910_orem) | Orem, UT | 5.5 | **Same day** | **both routes** |
+| 2025-09-10 | 18:06–18:08 | Charlie | **KPVU** | Provo, UT | [The American Comeback Tour — UVU (first stop of the fal…](/Planes/following/speaking/20250910_orem) | Orem, UT | 5.7 | **Same day** | **both routes** |
+
+**The two 10 September contacts are the same survey flight, and the gap between them is a flight, not a wait.** This aircraft was on the ground at Provo at 15:08 UTC (09:08 MDT), flew a standard aerial-mapping grid at a constant 19,000 ft over the Utah Valley, and was back on the ground at 18:08 UTC (12:08 MDT) — roughly fifteen minutes before the shooting. It passed near UVU because UVU sits inside the survey block. Publishing the distance without the altitude, the grid, and the landing time would be a serious misrepresentation.
+
+**What these rows do and do not establish.** A trace proves presence. It never proves purpose and it never proves occupancy — no ADS-B record places any person aboard any aircraft.
+
+*Built by `build_interesting_dates.py` from the recovered traces. See [Investigating Deleted Flights](/Planes/investigating_deleted_flights) for how the underlying data was recovered and what its limits are.*
+
+{/* CK_INTERESTING_DATES:END */}

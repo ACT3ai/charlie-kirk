@@ -1,0 +1,181 @@
+---
+id: cuts-ledger-charlie-undecided-11
+slug: /Planes/following/cuts/ledger-charlie-undecided-11
+displayed_sidebar: docs
+title: "The Charlie/TPUSA rows the archives cannot decide"
+sidebar_label: "Charlie/TPUSA undecided — 11"
+description: "The 'Charlie Kirk + TPUSA — archives cannot answer' cell of the ledger table on the Following overview: 11 rows that free ADS-B archives can neither corroborate nor refute."
+keywords:
+  - Charlie Kirk
+  - Erika Kirk
+  - TPUSA
+  - SU-BTT
+  - SU-BND
+  - KICT
+  - KLNK
+  - KOMA
+  - KTOP
+  - Wichita
+  - Lincoln
+  - flight tracking
+image: "/img/docusaurus-social-card.jpg"
+hide_table_of_contents: true
+---
+
+<div className="ck-full-bleed" />
+
+<a href="/Planes/following/cuts/overview" style={{display:'inline-block', marginBottom:'1rem',
+padding:'0.35rem 0.9rem', background:'#1a73e8', color:'#fff',
+borderRadius:'4px', textDecoration:'none', fontSize:'0.9rem'}}>← Table drill-downs</a>
+
+# The Charlie/TPUSA rows the archives cannot decide
+
+**Where this came from.** On [the Following overview](/Planes/following/overview), the ledger table
+that splits the Charlie Kirk and TPUSA side of the register into corroborated, refuted and undecided
+carries a cell reading "Charlie Kirk + TPUSA — archives cannot answer". This page is that cell, and
+it holds **11 rows**. The same ledger holds 24 rows in total: 13 that recovered position data
+corroborates, 0 that it refutes, and these 11 that it can neither corroborate nor refute.
+
+## What this slice is
+
+A row is in this list if two things are true. First, the claim involves **Charlie Kirk or a Turning
+Point USA event** — either Charlie's presence is claimed on the row, or both Kirks are claimed, or
+the row is matched to a TPUSA appearance with neither Kirk named. Second, the ADS-B pass came back
+**undecided**: either the free archives cover the date but hold no trace for the named airframe
+(**Not heard**, 8 rows), or the claim names no tail number at all, so there is nothing to look up
+(**No aircraft named**, 3 rows). Rows that came back corroborated or refuted are in the sibling
+cells, not here. Reproduce the list from `overlaps.csv` by keeping every Charlie-or-TPUSA row whose
+ADS-B verdict is neither "at the claimed airport" nor "elsewhere".
+
+## At a glance
+
+| Measure | Value |
+|---|---|
+| Rows in this slice | **11** |
+| Distinct dates | 10 |
+| Date range | 2 April 2023 → 29 April 2025 |
+| Aircraft named | SU-BTT 7 · SU-BTT and SU-BND together 1 · no aircraft named 3 |
+| Airports | KICT 4 · KLNK 4 · KOMA 1 · KTOP 1 · KSTL/KCPS/KSUS 1 |
+| States | Kansas 5 · Nebraska 5 · Missouri 1 |
+| By year | 2023: 4 · 2024: 3 · 2025: 4 |
+| ADS-B verdicts | Not heard 8 · No aircraft named 3 |
+| Audit verdicts | Inaccurate 5 · Not reached by the audit 4 · Accurate 1 · Partially accurate 1 |
+| Who the sheet claims | Charlie Kirk alone 4 · TPUSA event, neither Kirk 4 · both Kirks 3 |
+| Ground-position confirmations | 0 |
+| Rows landing on a same-day sourced Kirk or TPUSA appearance | 5 |
+
+## TABLE A — the following aircraft
+
+| Row | Date claimed | Airport | City / State | Following aircraft | Type | ICAO hex | Arrived from | Departed to | Ground stay logged, arrived | Departed | Days | Transponder / ground flag | ADS-B verdict | Closest approach |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| [SITE-001](/Planes/following/overlap/20230402_MO_jefferson_city/overview) | **2 April 2023** | **KSTL/KCPS/KSUS**<br/>St. Louis metro (Lambert / Downtown-Cahokia / Spirit) | Jefferson City (event) / St. Louis (aircraft), MO | [SU-BTT](/Planes/SU-BTT/overview), [SU-BND](/Planes/SU-BND/overview) — *both named on the row* | Dassault Falcon 7X; Gulfstream 4SP | `0101D3; 01003E` | Cairo -> Paris-Le Bourget (31 Mar) -> St. Louis (SU-BTT); SU-BND on the ground since 21 Feb | Wilmington then Cairo 8 Apr (SU-BTT); Goose Bay -> Paris -> Cairo 9 May (SU-BND) | *no logged stay covers this date* | — | — | on | **Not heard** | — |
+| [EXTRA-003](/Planes/following/overlap/20230423_KS_topeka_extra_003/overview) | **23 April 2023** | **KTOP**<br/>Topeka / Philip Billard (event city; jet was at Wichita 3 days earlier) | Topeka, KS | [SU-BTT](/Planes/SU-BTT/overview) | Dassault Falcon 7X | `0101D3` | Wichita (had already left 2023-04-20) | *not recorded* | *no logged stay covers this date* | — | — | — | **Not heard** | — |
+| [OWENS-049](/Planes/following/overlap/20230425_KS_wichita_owens_049/overview) | **25 April 2023** | [**KICT**](/Planes/following/Wichita_KICT_2022-11-13_to_2025-08-03/overview)<br/>Wichita (claimed departure date) | Wichita, KS | [SU-BTT](/Planes/SU-BTT/overview) | Dassault Falcon 7X | `0101D3` | Wichita (claimed) | Wilmington / Giza (claimed) | *no logged stay covers this date* | — | — | — | **Not heard** | — |
+| [EXTRA-005](/Planes/following/overlap/20230825_NE_lincoln_extra_005/overview) | **25 August 2023** | [**KLNK**](/Planes/following/Lincoln_KLNK_2024-02-09_to_2025-10-11/overview)<br/>Lincoln (Kirk location; jet in Egypt per audit) | Lincoln, NE | [SU-BTT](/Planes/SU-BTT/overview) | Dassault Falcon 7X | `0101D3` | *not recorded* | *not recorded* | *no logged stay covers this date* | — | — | — | **Not heard** | — |
+| [SITE-002](/Planes/following/overlap/20240211_NE_lincoln/overview) | **11 February 2024** | [**KLNK**](/Planes/following/Lincoln_KLNK_2024-02-09_to_2025-10-11/overview)<br/>Lincoln Airport | Lincoln, NE | [SU-BTT](/Planes/SU-BTT/overview) | Dassault Falcon 7X (hex 0101D3) | `0101D3` | Cairo -> Paris-Le Bourget -> Omaha (KOMA) 10:57 am 9 Feb, then the 15-19 min hop to Lincoln | Wilmington 14 Feb 08:38 am, then Cairo 16 Feb | *no logged stay covers this date* | — | — | on | **Not heard** | — |
+| [EXTRA-002](/Planes/following/overlap/20240409_NE_omaha_extra_002/overview) | **9 April 2024** | [**KOMA**](/Planes/following/Omaha_KOMA_2024-02-09_to_2025-10-05/overview)<br/>Omaha (Kirk location; no jet) | Omaha, NE | *no tail named* | *not stated* | — | *not recorded* | *not recorded* | *no logged stay covers this date* | — | — | — | **No aircraft named** | — |
+| [EXTRA-001](/Planes/following/overlap/20240914_NE_lincoln_extra_001/overview) | **14 September 2024** | [**KLNK**](/Planes/following/Lincoln_KLNK_2024-02-09_to_2025-10-11/overview)<br/>Lincoln (Kirk location only — no jet claimed that day) | Lincoln, NE | *no tail named* | *not stated* | — | *not recorded* | *not recorded* | *no logged stay covers this date* | — | — | — | **No aircraft named** | — |
+| [OWENS-033](/Planes/following/overlap/20250315_KS_wichita_owens_033/overview) | **15 March 2025** | [**KICT**](/Planes/following/Wichita_KICT_2022-11-13_to_2025-08-03/overview)<br/>Wichita (claimed) | Wichita, KS | [SU-BTT](/Planes/SU-BTT/overview) | Dassault Falcon 7X | `0101D3` | Wichita (claimed) | Wilmington / Cairo (claimed) | *no logged stay covers this date* | — | — | — | **Not heard** | — |
+| [OWENS-063](/Planes/following/overlap/20250315_KS_wichita_owens_063/overview) | **15 March 2025** | [**KICT**](/Planes/following/Wichita_KICT_2022-11-13_to_2025-08-03/overview)<br/>Wichita (claimed) | Wichita, KS | [SU-BTT](/Planes/SU-BTT/overview) | Dassault Falcon 7X | `0101D3` | Wichita (claimed) | Wilmington / Cairo (claimed) | *no logged stay covers this date* | — | — | — | **Not heard** | — |
+| [OWENS-034](/Planes/following/overlap/20250322_KS_wichita_owens_034/overview) | **22 March 2025** | [**KICT**](/Planes/following/Wichita_KICT_2022-11-13_to_2025-08-03/overview)<br/>Wichita (claimed) | Wichita, KS | [SU-BTT](/Planes/SU-BTT/overview) | Dassault Falcon 7X | `0101D3` | Wichita (claimed) | Wilmington / Cairo (claimed) | *no logged stay covers this date* | — | — | — | **Not heard** | — |
+| [EXTRA-007](/Planes/following/overlap/20250429_NE_lincoln_extra_007/overview) | **29 April 2025** | [**KLNK**](/Planes/following/Lincoln_KLNK_2024-02-09_to_2025-10-11/overview)<br/>Lincoln (claimed by amplifier — no tail, not on Owens sheet) | Lincoln, NE | *no tail named* | *not stated* | — | *not recorded* | *not recorded* | *no logged stay covers this date* | — | — | — | **No aircraft named** | — |
+
+## TABLE B — who they are claimed to have been following
+
+| Row | Date claimed | Who the sheet claims was present | Erika location as the sheet gives it | Sourced Kirk / TPUSA appearance same day | Venue | Local time | Nearest airport to that venue | Kirk-side aircraft on record |
+|---|---|---|---|---|---|---|---|---|
+| [SITE-001](/Planes/following/overlap/20230402_MO_jefferson_city/overview) | **2 April 2023** | Charlie: **not claimed** · Erika: **not claimed** | *blank on the sheet* | [TPUSA — TPUSA Faith tour launch — Sean Feucht, Jefferson City, Jefferson City, MO](/Planes/following/speaking/20230402_jefferson_city) | Jefferson City, Missouri (TPUSA Faith / Sean Feucht) | — | KJEF — Jefferson City Memorial, 3 mi | *none recorded* |
+| [EXTRA-003](/Planes/following/overlap/20230423_KS_topeka_extra_003/overview) | **23 April 2023** | Charlie: **not claimed** · Erika: **not claimed** | *blank on the sheet* | [TPUSA — TPUSA Faith Kingdom to the Capitol — Topeka, Topeka, KS](/Planes/following/speaking/20230423_topeka) | Topeka, Kansas (TPUSA Faith) | — | KFOE — Topeka Regional, 7 mi | *none recorded* |
+| [OWENS-049](/Planes/following/overlap/20230425_KS_wichita_owens_049/overview) | **25 April 2023** | Charlie: **not claimed** · Erika: **not claimed** | Kansas / Delaware | **None same-day.** Nearest sourced: [TPUSA — TPUSA Faith Kingdom to the Capitol — Topeka, Topeka, KS](/Planes/following/speaking/20230423_topeka) (-2 days) | — | — | — | *none recorded* |
+| [EXTRA-005](/Planes/following/overlap/20230825_NE_lincoln_extra_005/overview) | **25 August 2023** | Charlie: **claimed** · Erika: **not claimed** | *blank on the sheet* | [Charlie — Charlie Kirk speaking appearance — Lincoln, Nebraska, Lincoln, NE](/Planes/following/speaking/20230825_lincoln) | Lincoln, Nebraska (venue not named on the following overview) | — | KLNK — Lincoln Airport, 4 mi | *none recorded* |
+| [SITE-002](/Planes/following/overlap/20240211_NE_lincoln/overview) | **11 February 2024** | Charlie: **not claimed** · Erika: **not claimed** | *blank on the sheet* | **None.** No sourced Kirk or TPUSA appearance within three days, anywhere. | — | — | — | *none recorded* |
+| [EXTRA-002](/Planes/following/overlap/20240409_NE_omaha_extra_002/overview) | **9 April 2024** | Charlie: **claimed** · Erika: **not claimed** | *blank on the sheet* | [Charlie — Win Every Vote / Winner-Take-All rally — Omaha, Omaha, NE](/Planes/following/speaking/20240409_omaha) | Lord of Hosts Church, 5351 S. 139th Plaza, Omaha | 19:00 CT | KOMA — Eppley Airfield, 4 mi | *none recorded* |
+| [EXTRA-001](/Planes/following/overlap/20240914_NE_lincoln_extra_001/overview) | **14 September 2024** | Charlie: **claimed** · Erika: **not claimed** | *blank on the sheet* | **None same-day.** Nearest sourced: [Charlie — You're Being Brainwashed Tour — Kansas State University, Manhattan, KS](/Planes/following/speaking/20240913_manhattan) (-1 days) | — | — | — | *none recorded* |
+| [OWENS-033](/Planes/following/overlap/20250315_KS_wichita_owens_033/overview) | **15 March 2025** | Charlie: **claimed** · Erika: **claimed** | Kansas / Delaware | **None same-day.** Nearest sourced: [Charlie — American Comeback Tour — University of Tennessee, Knoxville, TN](/Planes/following/speaking/20250313_knoxville) (-2 days) | — | — | — | *none recorded* |
+| [OWENS-063](/Planes/following/overlap/20250315_KS_wichita_owens_063/overview) | **15 March 2025** | Charlie: **claimed** · Erika: **claimed** | Kansas / Delaware | **None same-day.** Nearest sourced: [Charlie — American Comeback Tour — University of Tennessee, Knoxville, TN](/Planes/following/speaking/20250313_knoxville) (-2 days) | — | — | — | *none recorded* |
+| [OWENS-034](/Planes/following/overlap/20250322_KS_wichita_owens_034/overview) | **22 March 2025** | Charlie: **claimed** · Erika: **claimed** | Kansas / Delaware | **None.** No sourced Kirk or TPUSA appearance within three days, anywhere. | — | — | — | *none recorded* |
+| [EXTRA-007](/Planes/following/overlap/20250429_NE_lincoln_extra_007/overview) | **29 April 2025** | Charlie: **claimed** · Erika: **not claimed** | *blank on the sheet* | [Charlie — Town Hall with TPUSA Students and Treasury Secretary Bessent, UNKNOWN,](/Planes/following/speaking/20250429_tpusa_student_town_h) | TPUSA student town hall | — | UNKNOWN — UNKNOWN | *none recorded* |
+
+## TABLE C — sourcing and both verdicts
+
+| Row | Sheet index | Audit verdict (tracking-site pass) | ADS-B verdict (position data) | What the position data says | Source of the claim | Source post | Full row page |
+|---|---|---|---|---|---|---|---|
+| `SITE-001` | — | **Accurate** | **Not heard** | SAYS ALMOST NOTHING. adsb-lol/airplanes-live served other airframes that day but holds no trace for this one. Parked with the transponder off, outside receiver coverage, and a wrong claimed date all look identical from here. AN… | Researcher-compiled timeline circulated on X; audit indices 10, 11, 15, 46 | — | [open](/Planes/following/overlap/20230402_MO_jefferson_city/overview) |
+| `EXTRA-003` | — | **Not reached by the audit** | **Not heard** | SAYS ALMOST NOTHING. adsb-lol/airplanes-live served other airframes that day but holds no trace for this one. Parked with the transponder off, outside receiver coverage, and a wrong claimed date all look identical from here. AN… | Owens Ep 256; tpusa_events.csv; overlap overview tested-and-failed table | [post](https://www.youtube.com/watch?v=YFmRH8p5lt0) | [open](/Planes/following/overlap/20230423_KS_topeka_extra_003/overview) |
+| `OWENS-049` | 49 | **Inaccurate** | **Not heard** | SAYS ALMOST NOTHING. adsb-lol/airplanes-live served other airframes that day but holds no trace for this one. Parked with the transponder off, outside receiver coverage, and a wrong claimed date all look identical from here. AN… | Owens sheet via Kanekoa audit | [post](https://x.com/KanekoaTheGreat/status/2000701268806062358) | [open](/Planes/following/overlap/20230425_KS_wichita_owens_049/overview) |
+| `EXTRA-005` | — | **Inaccurate** | **Not heard** | SAYS ALMOST NOTHING. adsb-lol/airplanes-live served other airframes that day but holds no trace for this one. Parked with the transponder off, outside receiver coverage, and a wrong claimed date all look identical from here. AN… | tpusa_events.csv; overlap overview tested-and-failed table; audit of claimed Lincoln 2023 rows | — | [open](/Planes/following/overlap/20230825_NE_lincoln_extra_005/overview) |
+| `SITE-002` | — | **Partially accurate** | **Not heard** | SAYS ALMOST NOTHING. adsb-lol/airplanes-live served other airframes that day but holds no trace for this one. Parked with the transponder off, outside receiver coverage, and a wrong claimed date all look identical from here. AN… | Researcher-compiled timeline circulated on X; audit indices 20 (partial) and 21 (inaccurate) | — | [open](/Planes/following/overlap/20240211_NE_lincoln/overview) |
+| `EXTRA-002` | — | **Not reached by the audit** | **No aircraft named** | The claim names no tail number, so there is no airframe to look up. Untestable as published. | Owens Ep 256 names April 9 Omaha; AP 10 Apr 2024; tpusa_events.csv; overlap overview tested-and-failed table | [post](https://apnews.com/article/winner-take-all-electoral-votes-nebraska-trump-d5fb580a7f2ee1d4bb88bc3ae7d09d93) | [open](/Planes/following/overlap/20240409_NE_omaha_extra_002/overview) |
+| `EXTRA-001` | — | **Not reached by the audit** | **No aircraft named** | The claim names no tail number, so there is no airframe to look up. Untestable as published. | @RealCandaceO reply to @alsacetx 1 Nov 2025: 'on September 14th 2024, Charlie was in Lincoln Nebraska with Mikey McCoy.' | [post](https://x.com/RealCandaceO/status/1984666106569900231) | [open](/Planes/following/overlap/20240914_NE_lincoln_extra_001/overview) |
+| `OWENS-033` | 33 | **Inaccurate** | **Not heard** | SAYS ALMOST NOTHING. adsb-lol/airplanes-live served other airframes that day but holds no trace for this one. Parked with the transponder off, outside receiver coverage, and a wrong claimed date all look identical from here. AN… | Owens sheet via Kanekoa audit; Following-Charlie-Erika.mdx on Charlie Present = Yes for 3/15/2025, 3/22/2025, 5/23/2025 | [post](https://x.com/KanekoaTheGreat/status/2000701268806062358) | [open](/Planes/following/overlap/20250315_KS_wichita_owens_033/overview) |
+| `OWENS-063` | 63 | **Inaccurate** | **Not heard** | SAYS ALMOST NOTHING. adsb-lol/airplanes-live served other airframes that day but holds no trace for this one. Parked with the transponder off, outside receiver coverage, and a wrong claimed date all look identical from here. AN… | Owens sheet via Kanekoa audit | [post](https://x.com/KanekoaTheGreat/status/2000701268806062358) | [open](/Planes/following/overlap/20250315_KS_wichita_owens_063/overview) |
+| `OWENS-034` | 34 | **Inaccurate** | **Not heard** | SAYS ALMOST NOTHING. adsb-lol/airplanes-live served other airframes that day but holds no trace for this one. Parked with the transponder off, outside receiver coverage, and a wrong claimed date all look identical from here. AN… | Owens sheet via Kanekoa audit; Following-Charlie-Erika.mdx Charlie Present extract | [post](https://x.com/KanekoaTheGreat/status/2000701268806062358) | [open](/Planes/following/overlap/20250322_KS_wichita_owens_034/overview) |
+| `EXTRA-007` | — | **Not reached by the audit** | **No aircraft named** | The claim names no tail number, so there is no airframe to look up. Untestable as published. | @Omaruncovered / @ZeroBarkThirty2 / @DrAngKozak 5-6 Aug 2026 crediting Stew Peters | [post](https://x.com/Omaruncovered/status/2084952708708982850) | [open](/Planes/following/overlap/20250429_NE_lincoln_extra_007/overview) |
+
+## What the specifics show
+
+This is the part of the Charlie and TPUSA ledger where the evidence runs out, and it runs out in two
+different ways. Eight rows are **Not heard**: the free volunteer archives cover the date and served
+other airframes, but hold no trace for the tail on the row. Three rows — EXTRA-002 (9 April 2024,
+Omaha), EXTRA-001 (14 September 2024, Lincoln) and EXTRA-007 (29 April 2025, Lincoln) — name **no
+aircraft at all**, so there is nothing to look up. Table C calls those three untestable as published,
+which is the honest description.
+
+The list has a sharp internal paradox, and it is the most useful thing on this page. Five of the 11
+rows land on a same-day, independently sourced Kirk or TPUSA appearance — SITE-001 at the TPUSA
+Faith tour launch in Jefferson City, EXTRA-003 at TPUSA Faith's Kingdom to the Capitol in Topeka,
+EXTRA-005 at Charlie's Lincoln appearance, EXTRA-002 at the Win Every Vote rally in Omaha, and
+EXTRA-007 at a TPUSA student town hall. Those are the best-sourced *events* in the whole ledger. They
+are also, three times over, the rows with the worst aircraft sourcing: EXTRA-002, EXTRA-001 and
+EXTRA-007 name no tail. A well-documented Kirk appearance does not make an aircraft claim testable.
+
+EXTRA-005 goes further and cuts against the register. Charlie Kirk's Lincoln appearance on 25 August
+2023 is sourced, but the same audit places SU-BTT in Egypt that day, and Table A records that the jet
+was elsewhere per the audit. The row is kept in the register so the negative is not lost. It is
+recorded here as **Not heard** on the ADS-B pass and **Inaccurate** on the tracking-site audit.
+
+Kansas and Nebraska carry this list almost entirely — five rows each, one Missouri row. Four of the
+Kansas rows are Wichita (KICT), and three of those four are the March 2025 pair-plus-one: OWENS-033
+and OWENS-063 are the same 15 March 2025 claim carried under two sheet indices, which is why 11 rows
+resolve to 10 distinct dates, and OWENS-034 repeats the pattern a week later on 22 March 2025. All
+three are **Not heard** and all three were marked **Inaccurate** by the audit.
+
+Nothing in this list is confirmed on the ground: **ground-position confirmations are zero**. And the
+tracking-site audit did not reach four of these 11 rows at all, so on those four there is neither an
+audit verdict nor an ADS-B verdict to lean on. Two of the newest rows, EXTRA-007 and the amplifier
+sourcing behind it, trace to accounts posting in August 2026 crediting a broadcaster rather than to
+any flight record.
+
+## What this list cannot tell you
+
+* **Nothing here is a deletion.** Every one of the eight **Not heard** rows means a volunteer ADS-B
+  network's receivers did not hear that airframe on that date. A parked aircraft with the
+  transponder off, an airframe outside receiver coverage, and a wrong claimed date all look identical
+  from the outside. **No archive gap on this page is being read as suppression.**
+* **The three "no aircraft named" rows are not weak evidence — they are absent evidence.** With no
+  tail number there is no airframe to query, so there is nothing to be right or wrong about.
+* **A trace proves an aircraft was there. It never proves who was aboard.** No row in this list even
+  reaches that point, because no row here has a trace.
+* **Erika Kirk's presence is not established on any row.** Three of these rows claim both Kirks, and
+  on all three the Erika side is a location cell on the compiler's spreadsheet reading "Kansas /
+  Delaware". Her flight logs are [reported erased](/Planes/Erika-Flight-Logs-Erased) and no dated
+  itinerary was ever published.
+* **A sourced event proves the event, not the pairing.** The five same-day appearances above are
+  sourced to this site's own speaking-events catalog. They say where a Kirk or a TPUSA event was.
+  They say nothing about any aircraft.
+* **Where the overview and this register disagree, both figures get printed.** The tracking-site
+  audit worked from 78 rows; this register holds 85. Four rows here were never reached by that audit
+  at all.
+
+## Related
+
+* [The Following overview](/Planes/following/overview) — the table this cell sits in
+* [The overlap index](/Planes/following/overlap/overview) — every row as its own page
+* [The speaking-events catalog](/Planes/following/speaking/overview) — the sourced Kirk and TPUSA appearances
+* [The Charlie Kirk and TPUSA ledger — all 24 rows](/Planes/following/cuts/ledger-charlie-tpusa-24)
+* [The 13 Charlie/TPUSA rows position data corroborates](/Planes/following/cuts/ledger-charlie-corroborated-13)
+* [The Charlie/TPUSA rows position data refutes — there are none](/Planes/following/cuts/ledger-charlie-refuted-0)
+* [The 37 rows the archives cover but do not hear](/Planes/following/cuts/adsb-not-heard-37)
+* [Nebraska — every overlap, every landing, every event](/Planes/following/cuts/state-nebraska)
+* [Kansas — every overlap, every landing, every event](/Planes/following/cuts/state-kansas)
+* [SU-BTT](/Planes/SU-BTT/overview) and [SU-BND](/Planes/SU-BND/overview) — the two aircraft named on these rows

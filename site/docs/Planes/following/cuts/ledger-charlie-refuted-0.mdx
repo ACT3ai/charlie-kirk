@@ -1,0 +1,137 @@
+---
+id: cuts-ledger-charlie-refuted-0
+slug: /Planes/following/cuts/ledger-charlie-refuted-0
+displayed_sidebar: docs
+title: "The Charlie/TPUSA rows position data refutes — there are none"
+sidebar_label: "Charlie + TPUSA — refuted (0)"
+description: "The empty cell of the Charlie Kirk and TPUSA ledger on the Following overview: zero of the 24 rows are refuted by recovered position data."
+keywords:
+  - Charlie Kirk
+  - Erika Kirk
+  - SU-BTT
+  - SU-BND
+  - KPVU
+  - KICT
+  - KLNK
+  - flight tracking
+image: "/img/docusaurus-social-card.jpg"
+hide_table_of_contents: true
+---
+
+<div className="ck-full-bleed" />
+
+<a href="/Planes/following/cuts/overview" style={{display:'inline-block', marginBottom:'1rem',
+padding:'0.35rem 0.9rem', background:'#1a73e8', color:'#fff',
+borderRadius:'4px', textDecoration:'none', fontSize:'0.9rem'}}>← Table drill-downs</a>
+
+# The Charlie/TPUSA rows position data refutes — there are none
+
+**Where this came from.** On [the Following overview](/Planes/following/overview), the Charlie
+Kirk and TPUSA ledger splits its 24 rows three ways by what recovered ADS-B position data says:
+corroborated, refuted, and the rows the archives cannot answer. This page is the **refuted**
+cell. It holds **0 rows**. The other two cells hold 13 and 11, and 13 + 0 + 11 = 24, so nothing
+is missing here — the cell really is empty.
+
+## What this slice is
+
+A row joins the Charlie Kirk and TPUSA ledger when the compilers' sheet places Charlie Kirk on it,
+places both Kirks on it, or ties it to a Turning Point USA event with neither Kirk named — 9, 9 and
+6 rows respectively. A ledger row lands on **this** page only if the recovered position data for
+the named aircraft, on the claimed date, puts that aircraft somewhere other than the claimed
+airport — the verdict this project writes as `ELSEWHERE`. Across all 24 ledger rows that verdict
+is returned **zero times**. To reproduce the list from `overlaps.csv`: take the rows whose
+attendee class is `CHARLIE_ONLY`, `CHARLIE_AND_ERIKA` or `TPUSA_NO_KIRK`, then keep only those
+whose ADS-B verdict is `ELSEWHERE`. Nothing survives.
+
+## At a glance
+
+| Measure | Value |
+|---|---|
+| Rows in this slice | **0** |
+| Distinct dates | 0 |
+| Date range | — |
+| Aircraft | none |
+| Airports | none |
+| States | none |
+| ADS-B verdict breakdown | none |
+| Ground-position confirmations | 0 |
+| Rows in the parent ledger | 24 |
+| Parent ledger — corroborated | 13 |
+| Parent ledger — archives cannot answer | 11 |
+| Parent ledger — refuted | **0** |
+
+## TABLE A — the following aircraft
+
+| Row | Date claimed | Airport | City / State | Following aircraft | Type | ICAO hex | Arrived from | Departed to | Ground stay logged, arrived | Departed | Days | Transponder / ground flag | ADS-B verdict | Closest approach |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+
+## TABLE B — who they are claimed to have been following
+
+| Row | Date claimed | Who the sheet claims was present | Erika location as the sheet gives it | Sourced Kirk / TPUSA appearance same day | Venue | Local time | Nearest airport to that venue | Kirk-side aircraft on record |
+|---|---|---|---|---|---|---|---|---|
+
+## TABLE C — sourcing and both verdicts
+
+| Row | Sheet index | Audit verdict (tracking-site pass) | ADS-B verdict (position data) | What the position data says | Source of the claim | Source post | Full row page |
+|---|---|---|---|---|---|---|---|
+
+## What the specifics show
+
+The three tables above are empty on purpose. Every column heading is left in place so a reader can
+see exactly what a row in this cell would have had to contain, and see that no row does.
+
+An empty refuted cell is a real result, and it points in the direction the compilers would want.
+On the Charlie Kirk and TPUSA side of the sheet, the position data we recovered never once caught
+the named jet somewhere else on the claimed day. Where it could speak at all it agreed: 13 of the
+24 ledger rows come back **At the claimed airport — corroborated**, and 8 of the 24 carry a
+transmitted on-ground position rather than an overflight. Those 24 rows fall on 18 distinct dates
+— 5 in 2023, 9 in 2024, 10 in 2025 — across seven airport entries, most heavily KPVU (8 rows),
+KICT (7) and KLNK (4).
+
+The result is much weaker than it first sounds, and the reason is arithmetic rather than argument.
+Only 13 of the 24 rows got an answer at all. Eight came back **Not heard** and three name no
+aircraft, so 11 of 24 — nearly half the ledger — were never in a position to be refuted. A test
+that cannot fail on 11 rows has not passed on those 11 rows; it was not run. The honest sentence
+is: *of the 13 Charlie/TPUSA rows the archives could actually adjudicate, 13 were corroborated and
+0 were refuted.* That is a clean 13-for-13 on a small sample, not a 24-for-24 on the whole ledger.
+
+The absence also cannot be read as the aircraft being somewhere else and hidden. `Not heard` and
+`No archive coverage` are limits of the volunteer receiver networks and of what the free archives
+retain — not deletions, and not evidence the aircraft was elsewhere.
+
+## What this list cannot tell you
+
+* **A trace locates an aircraft. It never places a person aboard.** Not one row in the parent
+  ledger, and therefore not one row that could ever have appeared here, carries a passenger
+  manifest, a boarding record, or any document naming who was on the jet.
+* **Erika Kirk's presence is established on zero rows** anywhere in this register, including every
+  row of the Charlie/TPUSA ledger that names her alongside Charlie. Her flight logs are
+  [reported erased](/Planes/Erika-Flight-Logs-Erased) and no itinerary was ever published, so
+  there is no document against which any of it can be checked.
+* **An empty cell is not a verdict of innocence and not a verdict of guilt.** It records that one
+  specific test — "does the position data put the jet somewhere else that day?" — returned nothing
+  on this side of the sheet. It says nothing about intent, ownership, or why an Egyptian-registered
+  jet was on a US ramp on any given date.
+* **An absence in an archive is not evidence of absence.** The 11 undecided rows are undecided.
+  Parked with the transponder off, outside receiver coverage, and a wrong claimed date all look
+  identical from the outside.
+* **Where the count here differs from the overview page**, this register is the newer of the two.
+  The tracking-site audit worked from 78 rows; this register holds 85, of which 24 form the
+  Charlie/TPUSA ledger. Four of those 24 were never reached by that audit at all. Where a figure
+  on the overview and a figure here disagree, the JSON behind this page is the count of record and
+  the difference is the audit's smaller starting set, not a changed finding.
+* **No living person is accused of anything here.** The claims summarised are the compilers' and
+  the auditors'; this page reports what their rows say and what the recovered position data does
+  and does not confirm.
+
+## Related
+
+* [The Following overview](/Planes/following/overview) — the tables these drill-downs sit under
+* [The overlap index](/Planes/following/overlap/overview) — every claimed overlap, one page each
+* [The speaking-events catalog](/Planes/following/speaking/overview) — the sourced Kirk and TPUSA appearances
+* [SU-BTT](/Planes/SU-BTT/overview) — the Dassault Falcon 7X named on most of the parent ledger
+* [SU-BND](/Planes/SU-BND/overview) — the Gulfstream named alongside it
+* [The Charlie Kirk and TPUSA ledger — all 24 rows](/Planes/following/cuts/ledger-charlie-tpusa-24) — the parent this cell is carved out of
+* [The 13 Charlie/TPUSA rows position data corroborates](/Planes/following/cuts/ledger-charlie-corroborated-13) — the cell that did fill
+* [The Charlie/TPUSA rows the archives cannot decide](/Planes/following/cuts/ledger-charlie-undecided-11) — the 11 rows that were never testable
+* [The three Erika rows position data refutes](/Planes/following/cuts/ledger-erika-refuted-3) — the same test on the Erika side, where it did return refutations

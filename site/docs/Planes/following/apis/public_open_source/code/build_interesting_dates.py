@@ -22,6 +22,7 @@ and can be re-run after any new recovery pass.
 """
 
 import csv
+import datetime
 import json
 import os
 import re
@@ -90,6 +91,79 @@ TAIL_KIND = {
 
 FOREIGN = {"SU-BTT", "SU-BND", "SU-BTU", "SU-BTV", "SU-BGM", "T7-ELL"}
 
+# A bare proximity row is misleading for some of these airframes.  The caveat
+# ships with the table, never separately from it.
+TAIL_CAVEAT = {
+    "N59906": (
+        "**The two 10 September contacts are the same survey flight, and the gap "
+        "between them is a flight, not a wait.** This aircraft was on the ground at "
+        "Provo at 15:08 UTC (09:08 MDT), flew a standard aerial-mapping grid at a "
+        "constant 19,000 ft over the Utah Valley, and was back on the ground at "
+        "18:08 UTC (12:08 MDT) — roughly fifteen minutes before the shooting. It "
+        "passed near UVU because UVU sits inside the survey block. Publishing the "
+        "distance without the altitude, the grid, and the landing time would be a "
+        "serious misrepresentation."
+    ),
+    "N708JH": (
+        "**The ordinary explanation fits this completely.** A federal aircraft "
+        "arriving at the scene of a federal investigation the day after, and at a "
+        "national memorial service, is what this aircraft is for. The same sweep "
+        "also puts it on the ground at Albuquerque — a control city — so it goes "
+        "everywhere. That is the correct frame for these rows."
+    ),
+    "N1098L": (
+        "**Base rate first.** These rows are 1.6% of this aircraft's observed "
+        "ground days. That is at or below the ordinary Kirk-side jets and is what a "
+        "busy government-contract aircraft flying into major metros produces by "
+        "chance."
+    ),
+    "N2100L": (
+        "**Base rate first.** These rows are 3.4% of this aircraft's observed "
+        "ground days — at or below the ordinary Kirk-side jets, and consistent with "
+        "chance for an aircraft whose dominant field is Biggs Army Airfield."
+    ),
+    "SU-BTT": (
+        "**Two events on nineteen observed days is not a rate.** With a denominator "
+        "that small this is an anecdote with a percent sign on it and must not be "
+        "quoted as a frequency. Both of this aircraft's events are the same airport "
+        "as SU-BND's, on the same two dates."
+    ),
+    "SU-BND": (
+        "**Two events on twenty-two observed days is not a rate.** The aircraft did "
+        "not shuttle between these dates — it sat at Provo continuously from 5 to 12 "
+        "September 2025 at an unchanging 1.29 km from the field reference point. It "
+        "was parked there before Charlie Kirk arrived and still parked two days "
+        "after he was killed."
+    ),
+    "N582MM": (
+        "**This is the positive control.** An aircraft that genuinely does travel "
+        "with the organisation produces a clear, high, sustained rate — 19.2% across "
+        "276 observed days. That is the shape a following pattern makes in this data, "
+        "and it is the yardstick every other table on this site should be read "
+        "against."
+    ),
+}
+
+
+def load_events():
+    """(event_date, city) -> (title, page).  The blind sweep records only a city
+    and a date, so the human-readable event name is joined back on here."""
+    out = {}
+    path = os.path.join(FOLLOWING, "tpusa_events.csv")
+    if not os.path.exists(path):
+        return out
+    with open(path, newline="", encoding="utf-8") as fh:
+        for r in csv.DictReader(fh):
+            d = (r.get("dates") or "").strip()
+            city = (r.get("city") or "").strip()
+            if not d or not city:
+                continue
+            key = (d, city.lower())
+            if key not in out:
+                out[key] = ((r.get("title") or "").strip(),
+                            (r.get("mdx_page") or "").strip())
+    return out
+
 
 def load_airports():
     out = {}
@@ -142,51 +216,126 @@ def window(first, last):
     return f"{a}–{b}"
 
 
-def offset_label(off):
+def days_after_event(visit_date, event_date):
+    """
+    THE two source CSVs disagree on the sign of their offset column.
+    master_proximity.csv stores (event_date - visit_date); geo_ground_foreign.csv
+    stores (sweep_date - event_date).  Reading either one as the other silently
+    turns "the day before the assassination" into "the day after".  So neither
+    column is ever used: the offset is recomputed here from the two dates.
+
+    Returns visit_date - event_date.  Negative = aircraft was there BEFORE.
+    """
     try:
-        n = int(off)
+        a = datetime.date.fromisoformat(visit_date)
+        b = datetime.date.fromisoformat(event_date)
     except (TypeError, ValueError):
+        return None
+    return (a - b).days
+
+
+def offset_label(n):
+    if n is None:
         return "—"
     if n == 0:
-        return "**day 0**"
-    return f"day {n:+d}"
+        return "**Same day**"
+    if n == -1:
+        return "Day before"
+    if n == 1:
+        return "Day after"
+    if n < 0:
+        return f"{abs(n)} days before"
+    return f"{n} days after"
 
 
-def load_incidents(airports):
-    """One row per (tail, date, airport) ground visit inside 50 mi of an event."""
-    path = os.path.join(ANALYSIS, "master_proximity.csv")
-    rows = []
-    with open(path, newline="", encoding="utf-8") as fh:
+def _incident(tail, date, airport, apname_hint, apcity_hint, first, last,
+              who, ev_city, ev_state, ev_date, ev_title, miles, km, points,
+              archives, sources, event_page, found_by, airports):
+    place, apname = airport_place(airport, apname_hint, apcity_hint, airports)
+    off = days_after_event(date, ev_date)
+    return {
+        "tail": tail, "date": date, "airport": airport, "airport_name": apname,
+        "win": window(first, last), "first": first or "",
+        "who": who or "—", "place": place,
+        "event_city": ev_city or "", "event_state": ev_state or "",
+        "event_date": ev_date or "", "event_title": (ev_title or "").strip(),
+        "offset": off, "miles": miles, "km": km, "points": points,
+        "archives": archives, "sources": sources,
+        "same_day": off == 0, "event_page": event_page or "",
+        "found_by": found_by,
+    }
+
+
+def load_incidents(airports, events=None):
+    """
+    One row per ground contact inside 50 miles of a sourced event, from BOTH
+    recovery lanes:
+
+      per-tail  master_proximity.csv    - asks "where was this tail on this day"
+      sweep     geo_ground_foreign.csv  - asks "what was on the ground near this
+                                          event", and so can find an aircraft
+                                          nobody named
+
+    Neither lane is complete alone.  A contact both lanes hold is marked "both";
+    that agreement is itself part of the evidence.
+    """
+    events = events or {}
+    rows = {}
+
+    per_tail = os.path.join(ANALYSIS, "master_proximity.csv")
+    with open(per_tail, newline="", encoding="utf-8") as fh:
         for r in csv.DictReader(fh):
             if r.get("within_50mi") != "yes":
                 continue
-            place, apname = airport_place(
-                r["airport_code"], r.get("airport_name"), r.get("airport_city"), airports
+            inc = _incident(
+                r["tail"], r["date"], r["airport_code"], r.get("airport_name"),
+                r.get("airport_city"), r.get("first_seen_utc"), r.get("last_seen_utc"),
+                r.get("nearest_event_who"), r.get("nearest_event_city"),
+                r.get("nearest_event_state"), r.get("nearest_event_date"),
+                r.get("nearest_event_title"), r.get("miles_to_event_city"),
+                r.get("median_km_from_field"), r.get("ground_points"),
+                r.get("archives_agreeing"), r.get("sources"), r.get("event_page"),
+                "per-tail", airports,
             )
-            rows.append({
-                "tail": r["tail"],
-                "date": r["date"],
-                "win": window(r.get("first_seen_utc"), r.get("last_seen_utc")),
-                "first": r.get("first_seen_utc", ""),
-                "who": r.get("nearest_event_who") or "—",
-                "airport": r["airport_code"],
-                "airport_name": apname,
-                "place": place,
-                "event_city": r.get("nearest_event_city", ""),
-                "event_state": r.get("nearest_event_state", ""),
-                "event_date": r.get("nearest_event_date", ""),
-                "event_title": (r.get("nearest_event_title") or "").strip(),
-                "offset": r.get("event_offset_days", ""),
-                "miles": r.get("miles_to_event_city", ""),
-                "km": r.get("median_km_from_field", ""),
-                "points": r.get("ground_points", ""),
-                "archives": r.get("archives_agreeing", ""),
-                "sources": r.get("sources", ""),
-                "same_day": r.get("same_day") == "yes",
-                "event_page": r.get("event_page", ""),
-            })
-    rows.sort(key=lambda x: (x["tail"], x["date"], x["airport"]))
-    return rows
+            rows[(inc["tail"], inc["date"], inc["airport"], inc["win"])] = inc
+
+    sweep = os.path.join(ANALYSIS, "geo_ground_foreign.csv")
+    if os.path.exists(sweep):
+        with open(sweep, newline="", encoding="utf-8") as fh:
+            for r in csv.DictReader(fh):
+                tail = (r.get("reg") or "").strip().upper()
+                if tail not in TAIL_DIR:
+                    continue
+                title, page = events.get(
+                    ((r.get("event_date") or "").strip(),
+                     (r.get("city") or "").strip().lower()), ("", ""))
+                inc = _incident(
+                    tail, r["sweep_date"], r.get("nearest_field", ""), "",
+                    r.get("city"), r.get("first_utc"), r.get("last_utc"),
+                    r.get("who"), r.get("city"), r.get("state"), r.get("event_date"),
+                    title, r.get("closest_mi_to_city"), "", r.get("points_in_circle"),
+                    "", "adsblol-github-backup (geographic sweep)", page,
+                    "sweep", airports,
+                )
+                key = (inc["tail"], inc["date"], inc["airport"], inc["win"])
+                if key in rows:
+                    rows[key]["found_by"] = "both"
+                else:
+                    # A near-match on tail+date+airport is the same contact seen
+                    # through a slightly different window; mark it rather than
+                    # double-count it.
+                    near = [k for k in rows
+                            if k[0] == inc["tail"] and k[1] == inc["date"]
+                            and k[2] == inc["airport"]]
+                    if near:
+                        for k in near:
+                            rows[k]["found_by"] = "both"
+                    else:
+                        rows[key] = inc
+
+    out = list(rows.values())
+    out.sort(key=lambda x: (x["tail"], x["date"], x["airport"], x["win"]))
+    return out
 
 
 def load_definitive():
@@ -227,7 +376,7 @@ def incident_table(rows, defs, show_tail=False):
     head = ["Date (UTC)", "Ground window (UTC)"]
     if show_tail:
         head.insert(0, "Aircraft")
-    head += ["Who", "Airport", "City, State", "Event", "Event city", "Mi", "When"]
+    head += ["Who", "Airport", "City, State", "Event", "Event city", "Mi", "When", "Found by"]
     out = ["| " + " | ".join(head) + " |"]
     align = ["---"] * len(head)
     align[head.index("Mi")] = "---:"
@@ -257,6 +406,8 @@ def incident_table(rows, defs, show_tail=False):
             esc(ecity),
             mi,
             offset_label(r["offset"]),
+            {"both": "**both routes**", "sweep": "blind sweep",
+             "per-tail": "per-tail"}.get(r["found_by"], r["found_by"]),
         ]
         out.append("| " + " | ".join(cells) + " |")
     return "\n".join(out)
@@ -283,7 +434,7 @@ def build_block_for_tail(tail, rows, defs, all_ground):
     L.append(
         "Every date on which the recovered ADS-B traces put this aircraft **on the "
         "ground** within 50 miles of a sourced Charlie Kirk, Erika Kirk, or TPUSA "
-        "event. One row per incident. The ground window is the first and last "
+        "event. One row per ground contact. The ground window is the first and last "
         "on-ground position the archives recorded that day, in UTC, not a filed "
         "departure or arrival time."
     )
@@ -292,17 +443,28 @@ def build_block_for_tail(tail, rows, defs, all_ground):
     L.append("")
 
     if rows:
+        ndates = len({r["date"] for r in rows})
+        naps = len({r["airport"] for r in rows})
         L.append(
-            f"**{len(rows)} incident{'s' if len(rows) != 1 else ''} "
-            f"across {len({r['date'] for r in rows})} date"
-            f"{'s' if len({r['date'] for r in rows}) != 1 else ''}, "
-            f"at {len({r['airport'] for r in rows})} airport"
-            f"{'s' if len({r['airport'] for r in rows}) != 1 else ''}. "
-            f"{sum(1 for r in rows if r['same_day'])} of them are same-day.**"
+            f"**{len(rows)} ground contact{'s' if len(rows) != 1 else ''} "
+            f"across {ndates} date{'s' if ndates != 1 else ''}, "
+            f"at {naps} airport{'s' if naps != 1 else ''}. "
+            f"{sum(1 for r in rows if r['same_day'])} "
+            f"{'lands' if sum(1 for r in rows if r['same_day']) == 1 else 'land'} "
+            f"on the event date itself.**"
+        )
+        L.append("")
+        L.append(
+            "One row is one continuous run of on-ground positions. Two rows on the "
+            "same date at the same field mean the aircraft took off and came back, "
+            "not that it waited."
         )
         L.append("")
         L.append(incident_table(rows, defs))
         L.append("")
+        if tail in TAIL_CAVEAT:
+            L.append(TAIL_CAVEAT[tail])
+            L.append("")
         if expect == "expected":
             L.append(
                 "**Read this table the right way.** This is a Kirk- or "
@@ -379,7 +541,8 @@ def splice(path, block):
 
 def main():
     airports = load_airports()
-    incidents = load_incidents(airports)
+    events = load_events()
+    incidents = load_incidents(airports, events)
     defs = load_definitive()
 
     by_tail = defaultdict(list)

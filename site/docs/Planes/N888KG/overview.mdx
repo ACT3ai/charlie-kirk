@@ -693,6 +693,94 @@ Not every claimed N888KG flight could be checked against a primary ADS-B trace. 
 
 **An absence there is not a finding.** A 404 means a volunteer receiver network heard nothing on that UTC day — parked and silent, outside coverage, or a wrong claimed date all come first, and [what a 403 means](/Planes/Flight-Data-Recovery/What-A-403-Means) sets out why a refusal and a deletion look identical from outside. The four free archives that did produce data, and the control test that separates a retention boundary from a removal, are on [Flight data recovery](/Planes/Flight-Data-Recovery/overview) and [per-aircraft recovery status](/Planes/Flight-Data-Recovery/Per-Aircraft-Status).
 
+
+---
+
+{/* CK_FLIGHT_RECORD:START */}
+
+## Where this aircraft actually went, and when
+
+**44 flight legs recovered, 2022-03-01 to 2026-02-01, touching 19 airports in 3 countries. 22 of the 44 are continuously observed end to end.**
+
+**Read the last column before you read anything else.** A leg marked *gap* means the archives saw this aircraft at one field and then, some number of days later, at another. It is not a claim that the aircraft flew directly between them, and intermediate stops are **not** ruled out. A leg marked *direct* is one the traces actually follow from wheels-up to wheels-down.
+
+### Every airport this aircraft was on the ground at
+
+| Airport | Name | Where | Ground visits | First seen | Last seen |
+|---|---|---|---:|---|---|
+| **KPVU** | Provo Municipal Airport | Provo, UT | 79 | 2022-12-01 | 2026-05-28 |
+| **KTUS** | Tucson International | Tucson, AZ | 8 | 2023-08-26 | 2026-02-01 |
+| **KIAD** | Washington Dulles International Airport | Washington, DC | 3 | 2023-09-26 | 2023-09-29 |
+| **CYHZ** | Halifax / Stanfield International Airport | Canada | 2 | 2023-10-27 | 2023-10-27 |
+| **KBNA** | Nashville International | Nashville, TN | 2 | 2025-10-15 | 2025-10-16 |
+| **KFLL** | Fort Lauderdale Hollywood International Airport | USA | 2 | 2023-05-24 | 2023-05-25 |
+| **KPBI** | Palm Beach International | West Palm Beach, FL | 2 | 2022-04-01 | 2022-06-01 |
+| **KSDL** | Scottsdale Airport | Scottsdale, AZ | 2 | 2023-06-17 | 2023-06-17 |
+| **MMPR** | Puerto Vallarta International Airport | Mexico | 2 | 2023-10-18 | 2024-06-01 |
+| **MMUN** | Cancún International Airport | Mexico | 2 | 2024-05-15 | 2024-05-18 |
+| **KAPA** | Centennial Airport | Englewood, CO | 1 | 2022-07-01 | 2022-07-01 |
+| **KDAL** | Dallas Love Field | Dallas, TX | 1 | 2022-06-01 | 2022-06-01 |
+| **KELP** | El Paso International Airport | USA | 1 | 2024-05-18 | 2024-05-18 |
+| **KPHL** | Philadelphia International Airport | USA | 1 | 2023-09-25 | 2023-09-25 |
+| **KRDU** | Raleigh-Durham International | Chapel Hill, NC | 1 | 2023-12-01 | 2023-12-01 |
+| **KSGU** | St George Regional Airport | USA | 1 | 2025-07-07 | 2025-07-07 |
+| **KSNA** | John Wayne Orange County International Airport | Santa Ana, CA | 1 | 2023-12-21 | 2023-12-21 |
+| **KTEB** | Teterboro Airport | USA | 1 | 2022-03-01 | 2022-03-01 |
+| **KXNA** | Northwest Arkansas National | Fayetteville, AR | 1 | 2023-10-18 | 2023-10-18 |
+
+### Every recovered flight leg
+
+| Leg date (UTC) | From | To | Left after (UTC) | Arrived by (UTC) | How well observed |
+|---|---|---|---|---|---|
+| 2022-03-01 | **KTEB** USA | **KPBI** West Palm Beach, FL | 00:25 | 2022-04-01 00:00 | **gap — unobserved 30 days** |
+| 2022-04-01 | **KPBI** West Palm Beach, FL | **KDAL** Dallas, TX | 00:01 | 2022-06-01 00:00 | **gap — unobserved 60 days** |
+| 2022-06-01 | **KDAL** Dallas, TX | **KPBI** West Palm Beach, FL | 00:03 | 02:21 | **direct** — continuous |
+| 2022-06-01 | **KPBI** West Palm Beach, FL | **KAPA** Englewood, CO | 02:24 | 2022-07-01 02:37 | **gap — unobserved 29 days** |
+| 2022-07-01 | **KAPA** Englewood, CO | **KPVU** Provo, UT | 02:39 | 2022-12-01 00:00 | **gap — unobserved 152 days** |
+| 2023-05-17 | **KPVU** Provo, UT | **KFLL** USA | 21:26 | 2023-05-24 18:43 | **gap — unobserved 6 days** |
+| 2023-05-25 | **KFLL** USA | **KPVU** Provo, UT | 13:18 | 2023-05-27 18:01 | **gap — unobserved 1 day** |
+| 2023-05-27 | **KPVU** Provo, UT | **KSDL** Scottsdale, AZ | 18:03 | 2023-06-17 22:49 | **gap — unobserved 20 days** |
+| 2023-06-17 | **KSDL** Scottsdale, AZ | **KPVU** Provo, UT | 23:44 | 2023-07-01 14:09 | **gap — unobserved 13 days** |
+| 2023-08-24 | **KPVU** Provo, UT | **KTUS** Tucson, AZ | 21:39 | 2023-08-26 21:02 | **gap — unobserved 1 day** |
+| 2023-08-26 | **KTUS** Tucson, AZ | **KPVU** Provo, UT | 21:05 | 22:51 | **direct** — continuous |
+| 2023-09-25 | **KPVU** Provo, UT | **KPHL** USA | 15:41 | 19:41 | **direct** — continuous |
+| 2023-09-25 | **KPHL** USA | **KIAD** Washington, DC | 19:42 | 2023-09-26 18:39 | overnight — crossed a UTC midnight |
+| 2023-09-29 | **KIAD** Washington, DC | **KPVU** Provo, UT | 18:22 | 22:12 | **direct** — continuous |
+| 2023-10-17 | **KPVU** Provo, UT | **KXNA** Fayetteville, AR | 14:42 | 2023-10-18 15:18 | overnight — crossed a UTC midnight |
+| 2023-10-18 | **KXNA** Fayetteville, AR | **KPVU** Provo, UT | 15:22 | 17:34 | **direct** — continuous |
+| 2023-10-18 | **KPVU** Provo, UT | **MMPR** Mexico | 19:09 | 22:06 | **direct** — continuous |
+| 2023-10-18 | **MMPR** Mexico | **KTUS** Tucson, AZ | 22:10 | 2023-10-26 00:36 | **gap — unobserved 7 days** |
+| 2023-10-26 | **KTUS** Tucson, AZ | **KPVU** Provo, UT | 00:39 | 01:50 | **direct** — continuous |
+| 2023-10-27 | **KPVU** Provo, UT | **CYHZ** Canada | 14:56 | 19:19 | **direct** — continuous |
+| 2023-10-27 | **CYHZ** Canada | **KPVU** Provo, UT | 23:57 | 2023-12-01 16:40 | **gap — unobserved 34 days** |
+| 2023-12-01 | **KPVU** Provo, UT | **KRDU** Chapel Hill, NC | 17:31 | 20:55 | **direct** — continuous |
+| 2023-12-01 | **KRDU** Chapel Hill, NC | **KPVU** Provo, UT | 21:02 | 2023-12-21 16:28 | **gap — unobserved 19 days** |
+| 2023-12-21 | **KPVU** Provo, UT | **KSNA** Santa Ana, CA | 16:28 | 17:57 | **direct** — continuous |
+| 2023-12-21 | **KSNA** Santa Ana, CA | **KPVU** Provo, UT | 17:57 | 2024-03-04 14:05 | **gap — unobserved 73 days** |
+| 2024-05-15 | **KPVU** Provo, UT | **MMUN** Mexico | 16:15 | 19:59 | **direct** — continuous |
+| 2024-05-18 | **MMUN** Mexico | **KELP** USA | 14:22 | 17:38 | **direct** — continuous |
+| 2024-05-18 | **KELP** USA | **KPVU** Provo, UT | 18:33 | 20:00 | **direct** — continuous |
+| 2024-05-18 | **KPVU** Provo, UT | **MMPR** Mexico | 20:05 | 2024-06-01 15:08 | **gap — unobserved 13 days** |
+| 2024-06-01 | **MMPR** Mexico | **KTUS** Tucson, AZ | 15:14 | 17:04 | **direct** — continuous |
+| 2024-06-01 | **KTUS** Tucson, AZ | **KPVU** Provo, UT | 17:24 | 18:40 | **direct** — continuous |
+| 2024-10-16 | **KPVU** Provo, UT | **KTUS** Tucson, AZ | 20:09 | 2024-10-19 21:59 | **gap — unobserved 2 days** |
+| 2024-10-19 | **KTUS** Tucson, AZ | **KPVU** Provo, UT | 22:06 | 23:32 | **direct** — continuous |
+| 2025-03-05 | **KPVU** Provo, UT | **KTUS** Tucson, AZ | 04:45 | 2025-03-14 16:37 | **gap — unobserved 8 days** |
+| 2025-03-14 | **KTUS** Tucson, AZ | **KPVU** Provo, UT | 17:12 | 18:29 | **direct** — continuous |
+| 2025-07-07 | **KPVU** Provo, UT | **KSGU** USA | 15:09 | 16:17 | **direct** — continuous |
+| 2025-07-07 | **KSGU** USA | **KTUS** Tucson, AZ | 16:19 | 2025-07-11 18:15 | **gap — unobserved 3 days** |
+| 2025-07-11 | **KTUS** Tucson, AZ | **KPVU** Provo, UT | 18:38 | 20:01 | **direct** — continuous |
+| 2025-10-09 | **KPVU** Provo, UT | **KTUS** Tucson, AZ | 21:15 | 2025-10-12 19:57 | **gap — unobserved 2 days** |
+| 2025-10-12 | **KTUS** Tucson, AZ | **KPVU** Provo, UT | 20:19 | 21:30 | **direct** — continuous |
+| 2025-10-15 | **KPVU** Provo, UT | **KBNA** Nashville, TN | 18:04 | 20:53 | **direct** — continuous |
+| 2025-10-16 | **KBNA** Nashville, TN | **KPVU** Provo, UT | 04:00 | 07:05 | **direct** — continuous |
+| 2025-11-01 | **KPVU** Provo, UT | **KTUS** Tucson, AZ | 20:14 | 2026-02-01 16:48 | **gap — unobserved 91 days** |
+| 2026-02-01 | **KTUS** Tucson, AZ | **KPVU** Provo, UT | 16:48 | 2026-04-25 17:46 | **gap — unobserved 82 days** |
+
+*Times are UTC as the archives recorded them — the last on-ground position before departure and the first on-ground position after arrival — not filed or scheduled times. Built by `build_flight_record.py`; see [Investigating Deleted Flights](/Planes/investigating_deleted_flights) for how much of the record is missing and why.*
+
+{/* CK_FLIGHT_RECORD:END */}
+
 {/* CK_PAGE_FOOTER_START */}
 
 ## Where this page fits
@@ -720,3 +808,30 @@ marginTop:'0.5rem'}}>
 </div>
 
 {/* CK_PAGE_FOOTER_END */}
+
+---
+
+{/* CK_INTERESTING_DATES:START */}
+
+## Interesting dates for this aircraft
+
+Every date on which the recovered ADS-B traces put this aircraft **on the ground** within 50 miles of a sourced Charlie Kirk, Erika Kirk, or TPUSA event. One row per ground contact. The ground window is the first and last on-ground position the archives recorded that day, in UTC, not a filed departure or arrival time.
+
+**What this aircraft is:** Kirk-side jet.
+
+**4 ground contacts across 3 dates, at 2 airports. 3 land on the event date itself.**
+
+One row is one continuous run of on-ground positions. Two rows on the same date at the same field mean the aircraft took off and came back, not that it waited.
+
+| Date (UTC) | Ground window (UTC) | Who | Airport | City, State | Event | Event city | Mi | When | Found by |
+| --- | --- | --- | --- | --- | --- | --- | ---: | --- | --- |
+| 2022-06-01 | 00:00–00:03 | Charlie | **KDAL** | Dallas, TX | [Young Women's Leadership Summit 2022](/Planes/following/speaking/20220602_grapevine) | Grapevine, TX | 13.8 | Day before | per-tail |
+| 2024-04-23 | 15:24–15:46 | Charlie | **KPVU** | Provo, UT | [Prove Me Wrong — University of Utah](/Planes/following/speaking/20240423_salt_lake_city) | Salt Lake City, UT | 40.1 | **Same day** | per-tail |
+| 2025-09-10 | 19:06–19:11 | Charlie | **KPVU** | Provo, UT | [The American Comeback Tour — UVU (first stop of the fal…](/Planes/following/speaking/20250910_orem) | Orem, UT | 5.1 | **Same day** | **both routes** |
+| 2025-09-10 | 21:04–21:07 | Charlie | **KPVU** | Provo, UT | [The American Comeback Tour — UVU (first stop of the fal…](/Planes/following/speaking/20250910_orem) | Orem, UT | 5.6 | **Same day** | **both routes** |
+
+**Read this table the right way.** This is a Kirk- or TPUSA-associated aircraft. An aircraft that carries the man showing up where the man is, is not surveillance — these rows are a data-quality check on the method, not evidence of anything.
+
+*Built by `build_interesting_dates.py` from the recovered traces. See [Investigating Deleted Flights](/Planes/investigating_deleted_flights) for how the underlying data was recovered and what its limits are.*
+
+{/* CK_INTERESTING_DATES:END */}

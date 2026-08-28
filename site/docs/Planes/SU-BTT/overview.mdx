@@ -1199,6 +1199,50 @@ Not every claimed SU-BTT flight could be checked against a primary ADS-B trace. 
 
 **An absence there is not a finding.** A 404 means a volunteer receiver network heard nothing on that UTC day — parked and silent, outside coverage, or a wrong claimed date all come first, and [what a 403 means](/Planes/Flight-Data-Recovery/What-A-403-Means) sets out why a refusal and a deletion look identical from outside. The four free archives that did produce data, and the control test that separates a retention boundary from a removal, are on [Flight data recovery](/Planes/Flight-Data-Recovery/overview) and [per-aircraft recovery status](/Planes/Flight-Data-Recovery/Per-Aircraft-Status).
 
+
+---
+
+{/* CK_FLIGHT_RECORD:START */}
+
+## Where this aircraft actually went, and when
+
+**12 flight legs recovered, 2022-06-01 to 2025-09-10, touching 7 airports in 3 countries. 2 of the 12 are continuously observed end to end.**
+
+**Read the last column before you read anything else.** A leg marked *gap* means the archives saw this aircraft at one field and then, some number of days later, at another. It is not a claim that the aircraft flew directly between them, and intermediate stops are **not** ruled out. A leg marked *direct* is one the traces actually follow from wheels-up to wheels-down.
+
+### Every airport this aircraft was on the ground at
+
+| Airport | Name | Where | Ground visits | First seen | Last seen |
+|---|---|---|---:|---|---|
+| **KILG** | Wilmington Airport / New Castle Airport | Wilmington, DE | 8 | 2022-06-01 | 2025-09-11 |
+| **LFPB** | Paris-Le Bourget Airport | Le Bourget, France | 5 | 2025-07-19 | 2025-09-04 |
+| **KPVU** | Provo Municipal Airport | Provo, UT | 4 | 2024-04-23 | 2025-09-10 |
+| **HEAR** | El Arish International Airport | Egypt | 2 | 2025-04-08 | 2025-04-08 |
+| **KICT** | Wichita Dwight D. Eisenhower National Airport | Wichita, KS | 1 | 2022-09-01 | 2022-09-01 |
+| **KLNK** | Lincoln Airport | Lincoln, NE | 1 | 2024-02-09 | 2024-02-09 |
+| **KMOT** | Minot International Airport | Minot, ND | 1 | 2025-09-04 | 2025-09-04 |
+
+### Every recovered flight leg
+
+| Leg date (UTC) | From | To | Left after (UTC) | Arrived by (UTC) | How well observed |
+|---|---|---|---|---|---|
+| 2022-06-01 | **KILG** Wilmington, DE | **KICT** Wichita, KS | 00:01 | 2022-09-01 16:33 | **gap — unobserved 91 days** |
+| 2022-09-01 | **KICT** Wichita, KS | **KILG** Wilmington, DE | 16:59 | 2023-03-02 15:34 | **gap — unobserved 181 days** |
+| 2023-04-21 | **KILG** Wilmington, DE | **KLNK** Lincoln, NE | 11:59 | 2024-02-09 18:39 | **gap — unobserved 293 days** |
+| 2024-02-09 | **KLNK** Lincoln, NE | **KPVU** Provo, UT | 18:39 | 2024-04-23 18:12 | **gap — unobserved 73 days** |
+| 2024-04-28 | **KPVU** Provo, UT | **KILG** Wilmington, DE | 14:16 | 2024-04-30 11:56 | **gap — unobserved 1 day** |
+| 2024-04-30 | **KILG** Wilmington, DE | **HEAR** Egypt | 11:56 | 2025-04-08 08:15 | **gap — unobserved 342 days** |
+| 2025-04-08 | **HEAR** Egypt | **LFPB** Le Bourget, France | 10:42 | 2025-07-19 10:14 | **gap — unobserved 101 days** |
+| 2025-08-16 | **LFPB** Le Bourget, France | **KILG** Wilmington, DE | 10:06 | 2025-08-23 14:44 | **gap — unobserved 6 days** |
+| 2025-08-23 | **KILG** Wilmington, DE | **LFPB** Le Bourget, France | 14:44 | 2025-09-03 10:00 | **gap — unobserved 10 days** |
+| 2025-09-04 | **LFPB** Le Bourget, France | **KMOT** Minot, ND | 07:11 | 16:03 | **direct** — continuous |
+| 2025-09-04 | **KMOT** Minot, ND | **KPVU** Provo, UT | 16:03 | 18:45 | **direct** — continuous |
+| 2025-09-10 | **KPVU** Provo, UT | **KILG** Wilmington, DE | 13:13 | 2025-09-11 11:55 | overnight — crossed a UTC midnight |
+
+*Times are UTC as the archives recorded them — the last on-ground position before departure and the first on-ground position after arrival — not filed or scheduled times. Built by `build_flight_record.py`; see [Investigating Deleted Flights](/Planes/investigating_deleted_flights) for how much of the record is missing and why.*
+
+{/* CK_FLIGHT_RECORD:END */}
+
 {/* CK_PAGE_FOOTER_START */}
 
 ## Where this page fits
@@ -1226,3 +1270,41 @@ marginTop:'0.5rem'}}>
 </div>
 
 {/* CK_PAGE_FOOTER_END */}
+
+---
+
+{/* CK_INTERESTING_DATES:START */}
+
+## Interesting dates for this aircraft
+
+Every date on which the recovered ADS-B traces put this aircraft **on the ground** within 50 miles of a sourced Charlie Kirk, Erika Kirk, or TPUSA event. One row per ground contact. The ground window is the first and last on-ground position the archives recorded that day, in UTC, not a filed departure or arrival time.
+
+**What this aircraft is:** Egyptian-registered Dassault Falcon 7X.
+
+**2 ground contacts across 2 dates, at 1 airport. 2 land on the event date itself.**
+
+One row is one continuous run of on-ground positions. Two rows on the same date at the same field mean the aircraft took off and came back, not that it waited.
+
+| Date (UTC) | Ground window (UTC) | Who | Airport | City, State | Event | Event city | Mi | When | Found by |
+| --- | --- | --- | --- | --- | --- | --- | ---: | --- | --- |
+| 2024-04-23 | 18:12–18:18 | Charlie | **KPVU** | Provo, UT | [Prove Me Wrong — University of Utah](/Planes/following/speaking/20240423_salt_lake_city) | Salt Lake City, UT | 39.7 | **Same day** | per-tail |
+| 2025-09-10 | 13:07–13:13 | Charlie | **KPVU** | Provo, UT | [The American Comeback Tour — UVU (first stop of the fal…](/Planes/following/speaking/20250910_orem) | Orem, UT | 5.0 | **Same day** | **both routes** |
+
+**Two events on nineteen observed days is not a rate.** With a denominator that small this is an anecdote with a percent sign on it and must not be quoted as a frequency. Both of this aircraft's events are the same airport as SU-BND's, on the same two dates.
+
+**What these rows do and do not establish.** A trace proves presence. It never proves purpose and it never proves occupancy — no ADS-B record places any person aboard any aircraft.
+
+### Every recorded ground presence at Provo Municipal (KPVU)
+
+Provo is the field the public argument is built on, so this aircraft's Provo record is listed in full — including the days that pair with no event at all.
+
+| Date (UTC) | Aircraft | Ground window (UTC) | km from field | Ground fixes |
+|---|---|---|---:|---:|
+| 2024-04-23 | **SU-BTT** | 18:12–18:18 | 0.58 | 53 |
+| 2024-04-28 | **SU-BTT** | 13:52–13:54 | 1.52 | 3 |
+| 2025-09-04 | **SU-BTT** | 18:45–18:54 | 1.04 | 141 |
+| 2025-09-10 | **SU-BTT** | 13:07–13:13 | 1.36 | 58 |
+
+*Built by `build_interesting_dates.py` from the recovered traces. See [Investigating Deleted Flights](/Planes/investigating_deleted_flights) for how the underlying data was recovered and what its limits are.*
+
+{/* CK_INTERESTING_DATES:END */}

@@ -1,0 +1,230 @@
+---
+id: cuts-state-delaware
+slug: /Planes/following/cuts/state-delaware
+displayed_sidebar: docs
+title: "Delaware — every overlap, every landing, every event"
+sidebar_label: "Delaware — 11 overlaps"
+description: "The Delaware row of the five-state clustering table on the Following overview: 11 claimed overlaps, all at Wilmington New Castle, plus every logged ground stay and the one Kirk-side event in the state."
+keywords:
+  - Charlie Kirk
+  - Erika Kirk
+  - SU-BTT
+  - SU-BND
+  - SU-BTU
+  - SU-BTV
+  - KILG
+  - Wilmington
+  - Delaware
+  - flight tracking
+image: "/img/docusaurus-social-card.jpg"
+hide_table_of_contents: true
+---
+
+<div className="ck-full-bleed" />
+
+<a href="/Planes/following/cuts/overview" style={{display:'inline-block', marginBottom:'1rem',
+padding:'0.35rem 0.9rem', background:'#1a73e8', color:'#fff',
+borderRadius:'4px', textDecoration:'none', fontSize:'0.9rem'}}>← Table drill-downs</a>
+
+# Delaware — every overlap, every landing, every event
+
+**Where this came from.** On [the Following overview](/Planes/following/overview), the geographic
+view carries a five-state clustering table — Missouri, **Delaware**, Utah, Nebraska, Kansas — whose
+Delaware cell reads "Wilmington (KILG) — a major business-aviation customs and fuel field, used
+outbound only". This page is that cell, opened up. The register holds **11** claimed overlaps in
+Delaware, **16** logged ground stays at the state's one field, and **1** sourced Kirk-side event in
+the whole state.
+
+## What this slice is
+
+Everything in the register that touches the state of Delaware, joined from three directions. A row
+is in the overlap tables if `overlaps.csv` gives its state as DE — that is 11 rows, and every one of
+them names the same airport, **KILG, Wilmington New Castle**. A row is in the landings table if
+`flights.csv` logs a following aircraft on the ground at a Delaware field, whether or not anyone ever
+claimed an overlap for it — that is 16 stays. A row is in the events table if `tpusa_events.csv`
+places a sourced Charlie Kirk or Turning Point appearance in Delaware — that is one, in 2022. The
+three tables are deliberately not filtered to agree with each other; the gaps between them are the
+finding.
+
+## At a glance
+
+| Measure | Value |
+|---|---|
+| Overlap rows in this slice | **11** |
+| Distinct dates | **11** |
+| Date range | 17 November 2022 – 10 September 2025 |
+| Airports | KILG **11** (every row — Delaware has one field in this register) |
+| Aircraft named in the claims | [SU-BTT](/Planes/SU-BTT/overview) **10** · [SU-BND](/Planes/SU-BND/overview) **1** |
+| Years | 2022 **2** · 2023 **6** · 2024 **2** · 2025 **1** |
+| ADS-B verdicts | At the claimed airport — corroborated **5** · Not heard **4** · No archive coverage **2** |
+| Audit verdicts | Inaccurate **6** · Accurate **3** · Partially accurate **1** · Not assessable — archive gap **1** |
+| Who the rows claim | Erika Kirk alone **11** (all of them) |
+| Ground-position confirmations | **1** — OWENS-013 |
+| Rows landing on a same-day sourced Kirk or TPUSA appearance | **2** — both appearances in other states |
+| Logged ground stays at Delaware fields | **16** — SU-BTV **7** · SU-BTU **5** · SU-BTT **4** |
+| Sourced Kirk / TPUSA appearances in Delaware | **1** — 3 October 2022, neither Kirk present |
+
+## TABLE A — the following aircraft
+
+| Row | Date claimed | Airport | City / State | Following aircraft | Type | ICAO hex | Arrived from | Departed to | Ground stay logged, arrived | Departed | Days | Transponder / ground flag | ADS-B verdict | Closest approach |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| [OWENS-005](/Planes/following/overlap/20221117_DE_wilmington_owens_005/overview) | **17 November 2022** | [**KILG**](/Planes/following/Wilmington_KILG_2022-11-17_to_2025-10-12/overview)<br/>Wilmington New Castle | Wilmington, DE | [SU-BTT](/Planes/SU-BTT/overview) | Dassault Falcon 7X | `0101D3` | Wichita | Cairo (sheet said 11/17; audit says 11/20) | *no logged stay covers this date* | — | — | — | **No archive coverage** | — |
+| [OWENS-043](/Planes/following/overlap/20221125_DE_wilmington_owens_043/overview) | **25 November 2022** | [**KILG**](/Planes/following/Wilmington_KILG_2022-11-17_to_2025-10-12/overview)<br/>Wilmington (claimed) | Wilmington, DE | [SU-BTT](/Planes/SU-BTT/overview) | Dassault Falcon 7X | `0101D3` | Paris (claimed) | Cairo (claimed) | *no logged stay covers this date* | — | — | — | **No archive coverage** | — |
+| [OWENS-009](/Planes/following/overlap/20230210_DE_wilmington_owens_009/overview) | **10 February 2023** | [**KILG**](/Planes/following/Wilmington_KILG_2022-11-17_to_2025-10-12/overview)<br/>Wilmington (claimed) | Wilmington, DE | [SU-BTT](/Planes/SU-BTT/overview) | Dassault Falcon 7X | `0101D3` | Atlanta | Paris / Cairo | *no logged stay covers this date* | — | — | — | **Not heard** | — |
+| [OWENS-048](/Planes/following/overlap/20230327_DE_wilmington_owens_048/overview) | **27 March 2023** | [**KILG**](/Planes/following/Wilmington_KILG_2022-11-17_to_2025-10-12/overview)<br/>Wilmington (claimed) | Wilmington, DE | [SU-BTT](/Planes/SU-BTT/overview) | Dassault Falcon 7X | `0101D3` | Omaha (claimed) | Cairo (claimed) | *no logged stay covers this date* | — | — | — | **Not heard** | — |
+| [OWENS-011](/Planes/following/overlap/20230406_DE_wilmington_owens_011/overview) | **6 April 2023** | [**KILG**](/Planes/following/Wilmington_KILG_2022-11-17_to_2025-10-12/overview)<br/>Wilmington New Castle | Wilmington, DE | [SU-BTT](/Planes/SU-BTT/overview) | Dassault Falcon 7X | `0101D3` | Missouri / St. Louis | Cairo (audit 4/6–4/8) | *no logged stay covers this date* | — | — | airborne position | **At the claimed airport — corroborated** | 1.63 km |
+| [OWENS-013](/Planes/following/overlap/20230420_DE_wilmington_owens_013/overview) | **20 April 2023** | [**KILG**](/Planes/following/Wilmington_KILG_2022-11-17_to_2025-10-12/overview)<br/>Wilmington New Castle | Wilmington, DE | [SU-BTT](/Planes/SU-BTT/overview) | Dassault Falcon 7X | `0101D3` | Wichita | Giza / Cairo 2023-04-21 | *no logged stay covers this date* | — | — | on the ground, transmitting | **At the claimed airport — corroborated** | 0.56 km — **on the ground** |
+| [OWENS-052](/Planes/following/overlap/20230625_DE_wilmington_owens_052/overview) | **25 June 2023** | [**KILG**](/Planes/following/Wilmington_KILG_2022-11-17_to_2025-10-12/overview)<br/>Wilmington (claimed) | Wilmington, DE | [SU-BND](/Planes/SU-BND/overview) | Gulfstream (G550/G-IV, trackers disagree) | `01003E` | Wilmington (claimed) | Paris / Cairo (claimed) | *no logged stay covers this date* | — | — | — | **Not heard** | — |
+| [OWENS-018](/Planes/following/overlap/20230903_DE_wilmington_owens_018/overview) | **3 September 2023** | [**KILG**](/Planes/following/Wilmington_KILG_2022-11-17_to_2025-10-12/overview)<br/>Wilmington (claimed) | Wilmington, DE | [SU-BTT](/Planes/SU-BTT/overview) | Dassault Falcon 7X | `0101D3` | Lincoln (claimed) | Cairo (claimed) | *no logged stay covers this date* | — | — | — | **Not heard** | — |
+| [OWENS-021](/Planes/following/overlap/20240214_DE_wilmington_owens_021/overview) | **14 February 2024** | [**KILG**](/Planes/following/Wilmington_KILG_2022-11-17_to_2025-10-12/overview)<br/>Wilmington New Castle | Wilmington, DE | [SU-BTT](/Planes/SU-BTT/overview) | Dassault Falcon 7X | `0101D3` | Lincoln (audit) / Omaha (sheet) | Cairo (Wilmington 2 days per Ep 256, Cairo 16th) | *no logged stay covers this date* | — | — | airborne position | **At the claimed airport — corroborated** | 0.82 km |
+| [OWENS-027](/Planes/following/overlap/20240428_DE_wilmington_owens_027/overview) | **28 April 2024** | [**KILG**](/Planes/following/Wilmington_KILG_2022-11-17_to_2025-10-12/overview)<br/>Wilmington New Castle | Wilmington, DE | [SU-BTT](/Planes/SU-BTT/overview) | Dassault Falcon 7X | `0101D3` | Provo | Cairo | 23 April 2024 | 28 April 2024 | 5 | airborne position | **At the claimed airport — corroborated** | 1.56 km |
+| [SITE-005](/Planes/following/overlap/20250910_DE_wilmington/overview) | **10 September 2025** | [**KILG**](/Planes/following/Wilmington_KILG_2022-11-17_to_2025-10-12/overview)<br/>Wilmington Airport / New Castle Airport | Wilmington, DE | [SU-BTT](/Planes/SU-BTT/overview) | Dassault Falcon 7X (hex 0101D3) | `0101D3` | Provo (KPVU), departed 07:14 am MT (time DISPUTED three ways - see SITE-006) | Cairo, 11 Sept - reported as 07:56 am and as ~11:56 UTC | 10 September 2025 | 11 September 2025 | 1 | on | **At the claimed airport — corroborated** | 1.75 km |
+
+## TABLE B — who they are claimed to have been following
+
+| Row | Date claimed | Who the sheet claims was present | Erika location as the sheet gives it | Sourced Kirk / TPUSA appearance same day | Venue | Local time | Nearest airport to that venue | Kirk-side aircraft on record |
+|---|---|---|---|---|---|---|---|---|
+| [OWENS-005](/Planes/following/overlap/20221117_DE_wilmington_owens_005/overview) | **17 November 2022** | Charlie: **not claimed** · Erika: **claimed** | Delaware | **None.** No sourced Kirk or TPUSA appearance within three days, anywhere. | — | — | — | *none recorded* |
+| [OWENS-043](/Planes/following/overlap/20221125_DE_wilmington_owens_043/overview) | **25 November 2022** | Charlie: **not claimed** · Erika: **claimed** | Delaware | **None.** No sourced Kirk or TPUSA appearance within three days, anywhere. | — | — | — | *none recorded* |
+| [OWENS-009](/Planes/following/overlap/20230210_DE_wilmington_owens_009/overview) | **10 February 2023** | Charlie: **not claimed** · Erika: **claimed** | Delaware | **None same-day.** Nearest sourced: [Charlie — Health, Wealth and Happiness — ASU Gammage, Tempe, AZ](/Planes/following/speaking/20230208_tempe) (-2 days) | — | — | — | *none recorded* |
+| [OWENS-048](/Planes/following/overlap/20230327_DE_wilmington_owens_048/overview) | **27 March 2023** | Charlie: **not claimed** · Erika: **claimed** | Delaware / Nebraska | [Charlie — Live Free Tour — Texas Christian University, Fort Worth, TX](/Planes/following/speaking/20230327_fort_worth) | Texas Christian University | — | KFTW — Fort Worth Meacham International, 5 mi | *none recorded* |
+| [OWENS-011](/Planes/following/overlap/20230406_DE_wilmington_owens_011/overview) | **6 April 2023** | Charlie: **not claimed** · Erika: **claimed** | Delaware / Missouri | **None.** No sourced Kirk or TPUSA appearance within three days, anywhere. | — | — | — | *none recorded* |
+| [OWENS-013](/Planes/following/overlap/20230420_DE_wilmington_owens_013/overview) | **20 April 2023** | Charlie: **not claimed** · Erika: **claimed** | Wichita / DE / potentially Giza | **None same-day.** Nearest sourced: [TPUSA — TPUSA Faith Kingdom to the Capitol — Topeka, Topeka, KS](/Planes/following/speaking/20230423_topeka) (+3 days) | — | — | — | *none recorded* |
+| [OWENS-052](/Planes/following/overlap/20230625_DE_wilmington_owens_052/overview) | **25 June 2023** | Charlie: **not claimed** · Erika: **claimed** | Delaware | **None.** No sourced Kirk or TPUSA appearance within three days, anywhere. | — | — | — | *none recorded* |
+| [OWENS-018](/Planes/following/overlap/20230903_DE_wilmington_owens_018/overview) | **3 September 2023** | Charlie: **not claimed** · Erika: **claimed** | Delaware / Nebraska | **None.** No sourced Kirk or TPUSA appearance within three days, anywhere. | — | — | — | *none recorded* |
+| [OWENS-021](/Planes/following/overlap/20240214_DE_wilmington_owens_021/overview) | **14 February 2024** | Charlie: **not claimed** · Erika: **claimed** | Delaware / Nebraska | **None.** No sourced Kirk or TPUSA appearance within three days, anywhere. | — | — | — | *none recorded* |
+| [OWENS-027](/Planes/following/overlap/20240428_DE_wilmington_owens_027/overview) | **28 April 2024** | Charlie: **not claimed** · Erika: **claimed** | Delaware / Utah | **None.** No sourced Kirk or TPUSA appearance within three days, anywhere. | — | — | — | *none recorded* |
+| [SITE-005](/Planes/following/overlap/20250910_DE_wilmington/overview) | **10 September 2025** | Charlie: **not claimed** · Erika: **claimed** | 'Nebraska/Delaware' (spreadsheet) vs ARIZONA (Erika Kirk's own account) | [Charlie — The American Comeback Tour — UVU (first stop of the fall tour), Orem, UT](/Planes/following/speaking/20250910_orem) | Utah Valley University, Sorensen Center courtyard | event ~10:00 MDT announced; shot at 12:23:30 PM MDT | KPVU — Provo Municipal Airport, 5 mi | *none recorded* |
+
+## TABLE C — sourcing and both verdicts
+
+| Row | Sheet index | Audit verdict (tracking-site pass) | ADS-B verdict (position data) | What the position data says | Source of the claim | Source post | Full row page |
+|---|---|---|---|---|---|---|---|
+| `OWENS-005` | 5 | **Inaccurate** | **No archive coverage** | SAYS NOTHING EITHER WAY. Neither free archive holds this date for any airframe we probed, so this is an archive limit and not suppression. | Owens sheet via Kanekoa audit; Owens Ep 268 | [post](https://x.com/KanekoaTheGreat/status/2000701268806062358) | [open](/Planes/following/overlap/20221117_DE_wilmington_owens_005/overview) |
+| `OWENS-043` | 43 | **Not assessable — archive gap** | **No archive coverage** | SAYS NOTHING EITHER WAY. Neither free archive holds this date for any airframe we probed, so this is an archive limit and not suppression. | Owens sheet via Kanekoa audit (archive gap) | [post](https://x.com/KanekoaTheGreat/status/2000701268806062358) | [open](/Planes/following/overlap/20221125_DE_wilmington_owens_043/overview) |
+| `OWENS-009` | 9 | **Inaccurate** | **Not heard** | SAYS ALMOST NOTHING. airplanes-live served other airframes that day but holds no trace for this one. Parked with the transponder off, outside receiver coverage, and a wrong claimed date all look identical from here. AN ABSENCE… | Owens sheet via Kanekoa audit | [post](https://x.com/KanekoaTheGreat/status/2000701268806062358) | [open](/Planes/following/overlap/20230210_DE_wilmington_owens_009/overview) |
+| `OWENS-048` | 48 | **Inaccurate** | **Not heard** | SAYS ALMOST NOTHING. adsb-lol/airplanes-live served other airframes that day but holds no trace for this one. Parked with the transponder off, outside receiver coverage, and a wrong claimed date all look identical from here. AN… | Owens sheet via Kanekoa audit | [post](https://x.com/KanekoaTheGreat/status/2000701268806062358) | [open](/Planes/following/overlap/20230327_DE_wilmington_owens_048/overview) |
+| `OWENS-011` | 11 | **Accurate** | **At the claimed airport — corroborated** | CORROBORATED IN THE AIR, NOT ON THE GROUND. Closest recovered position is 1.6 km from KILG at -105 ft above the field - an arrival, a departure or a low pass. This trace holds no on-ground positions at all, which is ordinary:… | Owens sheet via Kanekoa audit (ACCURATE 4/6–4/8) | [post](https://x.com/KanekoaTheGreat/status/2000701268806062358) | [open](/Planes/following/overlap/20230406_DE_wilmington_owens_011/overview) |
+| `OWENS-013` | 13 | **Accurate** | **At the claimed airport — corroborated** | CORROBORATED, AND ON THE GROUND. A trace we pulled and kept puts this airframe on the ground 0.6 km from KILG on the claimed date. It places NOBODY aboard. | Owens sheet via Kanekoa audit (ACCURATE — second leg of ref 12); @liztalny1023 19 Nov 2025 on the Giza cell | [post](https://x.com/liztalny1023/status/1991170383488372929) | [open](/Planes/following/overlap/20230420_DE_wilmington_owens_013/overview) |
+| `OWENS-052` | 52 | **Inaccurate** | **Not heard** | SAYS ALMOST NOTHING. adsb-lol/airplanes-live served other airframes that day but holds no trace for this one. Parked with the transponder off, outside receiver coverage, and a wrong claimed date all look identical from here. AN… | Owens sheet via Kanekoa audit | [post](https://x.com/KanekoaTheGreat/status/2000701268806062358) | [open](/Planes/following/overlap/20230625_DE_wilmington_owens_052/overview) |
+| `OWENS-018` | 18 | **Inaccurate** | **Not heard** | SAYS ALMOST NOTHING. adsb-lol/airplanes-live served other airframes that day but holds no trace for this one. Parked with the transponder off, outside receiver coverage, and a wrong claimed date all look identical from here. AN… | Owens sheet via Kanekoa audit | [post](https://x.com/KanekoaTheGreat/status/2000701268806062358) | [open](/Planes/following/overlap/20230903_DE_wilmington_owens_018/overview) |
+| `OWENS-021` | 21 | **Inaccurate** | **At the claimed airport — corroborated** | CORROBORATED IN THE AIR, NOT ON THE GROUND. Closest recovered position is 0.8 km from KILG at -180 ft above the field - an arrival, a departure or a low pass. This trace holds no on-ground positions at all, which is ordinary:… | Owens sheet via Kanekoa audit (INACCURATE origin city); Owens Ep 256 | [post](https://x.com/KanekoaTheGreat/status/2000701268806062358) | [open](/Planes/following/overlap/20240214_DE_wilmington_owens_021/overview) |
+| `OWENS-027` | 27 | **Accurate** | **At the claimed airport — corroborated** | CORROBORATED IN THE AIR, NOT ON THE GROUND. Closest recovered position is 1.6 km from KILG at -80 ft above the field - an arrival, a departure or a low pass. The only on-ground positions in this trace are at KPVU (Provo… | Owens sheet via Kanekoa audit (ACCURATE); Owens Ep 256 | [post](https://www.youtube.com/watch?v=YFmRH8p5lt0) | [open](/Planes/following/overlap/20240428_DE_wilmington_owens_027/overview) |
+| `SITE-005` | — | **Partially accurate** | **At the claimed airport — corroborated** | CORROBORATED IN THE AIR, NOT ON THE GROUND. Closest recovered position is 1.7 km from KILG at -105 ft above the field - an arrival, a departure or a low pass. The only on-ground positions in this trace are at KPVU (Provo… | Compilation spreadsheet circulated by trackers; alternate tracker read @troofevades (takeoff ~13:14 UTC, landing ~16:52 UTC); audit index 41 (flight confirmed, origin corrected from… | — | [open](/Planes/following/overlap/20250910_DE_wilmington/overview) |
+
+## TABLE D — every logged ground presence in this state
+
+| Aircraft | Airport | City / State | Arrived | Departed | Days on ground | Confidence in the leg | Location page | What the record says |
+|---|---|---|---|---|---|---|---|---|
+| [SU-BTT](/Planes/SU-BTT/overview) | [KILG](/Planes/following/Wilmington_KILG_2022-11-17_to_2025-10-12/overview) | Wilmington, DE | 26 July 2025 | 27 July 2025 | 1 | adsb_captured | [open](/Planes/following/Wilmington_KILG_2022-11-17_to_2025-10-12/overview) | Outbound stop. Cairo direct 10:19. |
+| [SU-BTT](/Planes/SU-BTT/overview) | [KILG](/Planes/following/Wilmington_KILG_2022-11-17_to_2025-10-12/overview) | Wilmington, DE | 23 August 2025 | 24 August 2025 | 1 | adsb_captured | [open](/Planes/following/Wilmington_KILG_2022-11-17_to_2025-10-12/overview) | Outbound stop. Cairo direct 10:07. |
+| [SU-BTT](/Planes/SU-BTT/overview) | [KILG](/Planes/following/Wilmington_KILG_2022-11-17_to_2025-10-12/overview) | Wilmington, DE | 10 September 2025 | 11 September 2025 | 1 | adsb_captured | [open](/Planes/following/Wilmington_KILG_2022-11-17_to_2025-10-12/overview) | Provo-Wilmington 3:37, departing the morning of 10 September BEFORE the assassination. Wilmington-Cairo 9:43 on 11 September. Squawk 0000 on the Provo-Wilmington leg per the Flightradar24 playback card. |
+| [SU-BTU](/Planes/SU-BTU/overview) | [KILG](/Planes/following/Wilmington_KILG_2022-11-17_to_2025-10-12/overview) | Wilmington, DE | 1 December 2024 | 3 December 2024 | 2 | adsb_captured | [open](/Planes/following/Wilmington_KILG_2022-11-17_to_2025-10-12/overview) | Outbound customs and fuel stop. Wilmington appears on the outbound leg only, every time, for three years. Cairo direct 9:36. |
+| [SU-BTU](/Planes/SU-BTU/overview) | [KILG](/Planes/following/Wilmington_KILG_2022-11-17_to_2025-10-12/overview) | Wilmington, DE | 23 January 2025 | 24 January 2025 | 1 | adsb_captured | [open](/Planes/following/Wilmington_KILG_2022-11-17_to_2025-10-12/overview) | Outbound stop. Cairo direct 9:52. |
+| [SU-BTU](/Planes/SU-BTU/overview) | [KILG](/Planes/following/Wilmington_KILG_2022-11-17_to_2025-10-12/overview) | Wilmington, DE | 22 February 2025 | 23 February 2025 | 1 | adsb_captured | [open](/Planes/following/Wilmington_KILG_2022-11-17_to_2025-10-12/overview) | Outbound stop. Cairo direct 9:52. |
+| [SU-BTU](/Planes/SU-BTU/overview) | [KILG](/Planes/following/Wilmington_KILG_2022-11-17_to_2025-10-12/overview) | Wilmington, DE | 14 April 2025 | 15 April 2025 | 1 | adsb_captured | [open](/Planes/following/Wilmington_KILG_2022-11-17_to_2025-10-12/overview) | Outbound stop. Cairo direct 10:10. |
+| [SU-BTU](/Planes/SU-BTU/overview) | [KILG](/Planes/following/Wilmington_KILG_2022-11-17_to_2025-10-12/overview) | Wilmington, DE | 30 April 2025 | 1 May 2025 | 1 | adsb_captured | [open](/Planes/following/Wilmington_KILG_2022-11-17_to_2025-10-12/overview) | Outbound stop. Cairo direct 10:57. |
+| [SU-BTV](/Planes/SU-BTV/overview) | [KILG](/Planes/following/Wilmington_KILG_2022-11-17_to_2025-10-12/overview) | Wilmington, DE | 10 December 2024 | 15 December 2024 | 5 | adsb_captured | [open](/Planes/following/Wilmington_KILG_2022-11-17_to_2025-10-12/overview) | Outbound stop. Cairo direct 10:38. |
+| [SU-BTV](/Planes/SU-BTV/overview) | [KILG](/Planes/following/Wilmington_KILG_2022-11-17_to_2025-10-12/overview) | Wilmington, DE | 9 February 2025 | 10 February 2025 | 1 | adsb_captured | [open](/Planes/following/Wilmington_KILG_2022-11-17_to_2025-10-12/overview) | Outbound stop. Cairo direct 10:19. |
+| [SU-BTV](/Planes/SU-BTV/overview) | [KILG](/Planes/following/Wilmington_KILG_2022-11-17_to_2025-10-12/overview) | Wilmington, DE | 23 March 2025 | 24 March 2025 | 1 | adsb_captured | [open](/Planes/following/Wilmington_KILG_2022-11-17_to_2025-10-12/overview) | Outbound stop. Cairo direct 10:29. |
+| [SU-BTV](/Planes/SU-BTV/overview) | [KILG](/Planes/following/Wilmington_KILG_2022-11-17_to_2025-10-12/overview) | Wilmington, DE | 3 April 2025 | 6 April 2025 | 3 | adsb_captured | [open](/Planes/following/Wilmington_KILG_2022-11-17_to_2025-10-12/overview) | Outbound stop. Cairo direct 11:11. |
+| [SU-BTV](/Planes/SU-BTV/overview) | [KILG](/Planes/following/Wilmington_KILG_2022-11-17_to_2025-10-12/overview) | Wilmington, DE | 2 June 2025 | 3 June 2025 | 1 | adsb_captured | [open](/Planes/following/Wilmington_KILG_2022-11-17_to_2025-10-12/overview) | Outbound stop. Cairo direct 10:26. |
+| [SU-BTV](/Planes/SU-BTV/overview) | [KILG](/Planes/following/Wilmington_KILG_2022-11-17_to_2025-10-12/overview) | Wilmington, DE | 3 August 2025 | 6 August 2025 | 3 | adsb_captured | [open](/Planes/following/Wilmington_KILG_2022-11-17_to_2025-10-12/overview) | Outbound stop. Cairo direct 10:01. |
+| [SU-BTV](/Planes/SU-BTV/overview) | [KILG](/Planes/following/Wilmington_KILG_2022-11-17_to_2025-10-12/overview) | Wilmington, DE | 11 October 2025 | 12 October 2025 | 1 | adsb_captured | [open](/Planes/following/Wilmington_KILG_2022-11-17_to_2025-10-12/overview) | Outbound stop. Cairo direct 10:53. |
+| [SU-BTT](/Planes/SU-BTT/overview) | [KILG](/Planes/following/Wilmington_KILG_2022-11-17_to_2025-10-12/overview) | Wilmington, DE | 1 June 2022 | 1 June 2022 | 0 | adsb_captured | [open](/Planes/following/Wilmington_KILG_2022-11-17_to_2025-10-12/overview) | CLAIM: none - this leg was not previously claimed by any tracker; it is a leg THIS REPO SOURCED ITSELF from primary data, and it is the EARLIEST US position we hold for this aircraft. ON THE GROUND at Wilmington DE (KILG), first fix 11:31:13 UTC at 0.71 km,… |
+
+## TABLE E — the Kirk / TPUSA appearances in this state
+
+| Date | Who | Event | City / State | Venue | Local time | Nearest airport | Miles | Charlie present | Erika present | Event page |
+|---|---|---|---|---|---|---|---|---|---|---|
+| **2022-10-03** | TPUSA | [Live Free Tour — University of Delaware (Candace Owens)](/Planes/following/speaking/20221003_newark) | Newark, DE | University of Delaware | 18:00–20:45 EDT; doors 18:00 | KILG — Wilmington / New Castle Airport | 12 | no | no | [open](/Planes/following/speaking/20221003_newark) |
+
+## What the specifics show
+
+**Delaware is a one-field state in this register, and a one-person claim.** All 11 overlap rows name
+KILG and nothing else, and all 11 are **Erika Kirk alone** — Charlie Kirk is claimed on none of them.
+That is different from every other state in the clustering table, and it means the Delaware column of
+the five-state argument stands or falls entirely on where Erika Kirk was, which is the half of the
+claim with no published document behind it.
+
+**The archives split the 11 three ways, and only one of those ways is a positive result.** Five rows
+are corroborated by recovered position data — OWENS-011, OWENS-013, OWENS-021, OWENS-027 and
+SITE-005. Four rows come back **Not heard**: the archives served other airframes those days and hold
+no trace for this one, which is an archive limit, not a deletion. Two rows — OWENS-005 and OWENS-043,
+both November 2022 — come back **No archive coverage**: no free archive we can reach holds that date
+at all, for any airframe, which is again an archive limit and not suppression. Exactly **one** row in
+the state is the strongest evidence class: OWENS-013, 20 April 2023, SU-BTT on the ground and
+transmitting 0.56 km from the field.
+
+**The two same-day pairings both point out of state.** OWENS-048 (27 March 2023) sits against a
+sourced Charlie Kirk appearance at Texas Christian University in Fort Worth, Texas. SITE-005
+(10 September 2025) sits against Charlie Kirk at Utah Valley University in Orem, Utah — and on that
+row the compilation spreadsheet places Erika Kirk in "Nebraska/Delaware" while Erika Kirk's own
+account places her in Arizona. Seven of the 11 rows have no sourced Kirk or TPUSA appearance within
+three days anywhere in the country, and two more have their nearest sourced appearance two or three
+days away, in Arizona and Kansas.
+
+**The landings table is where the innocent explanation gets its teeth.** Delaware carries **16**
+logged ground stays at KILG, and only four of them are the aircraft the overlap claims name: SU-BTT
+appears four times, while **SU-BTU appears five times and SU-BTV seven** — and neither of those two
+tails is claimed as a following aircraft on a single Delaware overlap row. Every one of those stays
+but one carries the same note: an outbound stop, followed by a direct run to Cairo, timed between
+9:36 and 11:11. The 1 December 2024 SU-BTU row states the pattern in full — "Wilmington appears on
+the outbound leg only, every time, for three years." A field that the whole fleet uses on its way
+home, on a fixed rhythm, whether or not anybody claims a Kirk was near it, is behaving like a customs
+and fuel stop.
+
+**The one Kirk-side event in the state cuts the same way.** Table E holds a single row: 3 October
+2022, the Live Free Tour at the University of Delaware, 12 miles from KILG — and the register records
+**Charlie present: no, Erika present: no**. The speaker of record was Candace Owens, who later
+compiled the overlap sheet. It also predates all 11 overlap claims. Delaware has, in this register,
+no sourced Charlie Kirk appearance at all.
+
+**One row here is older than every claim and was not claimed by anyone.** The final line of Table D
+records SU-BTT on the ground at Wilmington on **1 June 2022**, first fix 11:31:13 UTC at 0.71 km,
+sourced by this investigation from primary data rather than from any tracker. It is the earliest US
+position held for that aircraft. It supports the aircraft being in the United States earlier than the
+published claims say, and it supports nothing at all about who was near it.
+
+## What this list cannot tell you
+
+* **A trace proves an aircraft was there. It never proves who was aboard.** The one ground
+  confirmation in this state, OWENS-013, says so in the register's own words: "It places NOBODY
+  aboard."
+* **Erika Kirk's presence is not established on any row** — and all 11 Delaware rows are Erika
+  claims. Her flight logs are [reported erased](/Planes/Erika-Flight-Logs-Erased) and no dated
+  itinerary was ever published. Six of the 11 rows give her location as a single state, four give
+  **two states at once** — "Delaware / Nebraska", "Delaware / Missouri", "Delaware / Utah",
+  "Wichita / DE / potentially Giza" — and the eleventh is contradicted by Erika Kirk's own account.
+  A state is not a location.
+* **The six rows that returned nothing are archive limits, not deletions.** Four **Not heard** and
+  two **No archive coverage**. Parked with the transponder off, outside volunteer receiver coverage,
+  and a wrong claimed date all look identical from the outside. None of the six is evidence the
+  aircraft was elsewhere, and none of them is evidence anything was suppressed.
+* **A customs stop is an explanation, not a verdict.** The 16 logged stays are consistent with
+  Wilmington being an outbound clearance field, and this page reports that because it is what the
+  record says. It does not rule out any other use of the field; it removes the surprise from the
+  count.
+* **Nobody is accused of anything here.** Candace Owens made the compilation claims publicly under
+  her own name and is named as the person who made them; @KanekoaTheGreat is named as the auditor.
+  Aircraft owners, crew, passengers and ground staff are unnamed living persons and stay unnamed.
+* **Where the overview and this register disagree, both figures get printed.** They disagree on
+  Delaware. The overview's location table prints **21** landings for Wilmington and its closing
+  paragraph says "twelve departures and zero arrivals"; the flights table behind this page holds
+  **16** logged ground stays at KILG. This page's number is the flights table's, the overview's
+  numbers are the location page's tallies, and neither has been quietly conformed to the other. On
+  the register as a whole the same applies: the tracking-site audit worked from **78** rows, this
+  register holds **85**.
+
+## Related
+
+* [The Following overview](/Planes/following/overview) — the five-state clustering table this cell sits in
+* [Wilmington, KILG](/Planes/following/Wilmington_KILG_2022-11-17_to_2025-10-12/overview) — the location page for Delaware's only field
+* [The overlap index](/Planes/following/overlap/overview) — every row as its own page
+* [The speaking-events catalog](/Planes/following/speaking/overview) — the sourced Kirk and TPUSA appearances
+* [Nebraska — every overlap, every landing, every event](/Planes/following/cuts/state-nebraska) — the Duncan Aviation state
+* [Kansas — every overlap, every landing, every event](/Planes/following/cuts/state-kansas) — the Falcon service-centre state
+* [Missouri — every overlap, every landing, every event](/Planes/following/cuts/state-missouri) — three metro fields counted separately
+* [Utah — every overlap, every landing, every event](/Planes/following/cuts/state-utah) — the one state that does not resolve cleanly
+* [SU-BTT](/Planes/SU-BTT/overview), [SU-BND](/Planes/SU-BND/overview), [SU-BTU](/Planes/SU-BTU/overview) and [SU-BTV](/Planes/SU-BTV/overview) — the four tails on this page
+* [Erika Kirk's flight logs, reported erased](/Planes/Erika-Flight-Logs-Erased)

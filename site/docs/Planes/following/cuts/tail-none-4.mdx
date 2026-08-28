@@ -1,0 +1,110 @@
+---
+id: cuts-tail-none-4
+slug: /Planes/following/cuts/tail-none-4
+displayed_sidebar: docs
+title: "The four rows with no tail number at all"
+sidebar_label: "No tail number — 4 rows"
+description: "The drill-down behind the No tail number recorded at all cell of the aircraft table on the Following overview — four Nebraska rows that name a date and a field but never name an aircraft."
+keywords:
+  - Charlie Kirk
+  - Erika Kirk
+  - KLNK Lincoln
+  - KOMA Omaha
+  - Nebraska
+  - flight tracking
+image: "/img/docusaurus-social-card.jpg"
+hide_table_of_contents: true
+---
+
+<div className="ck-full-bleed" />
+
+<a href="/Planes/following/cuts/overview" style={{display:'inline-block', marginBottom:'1rem',
+padding:'0.35rem 0.9rem', background:'#1a73e8', color:'#fff',
+borderRadius:'4px', textDecoration:'none', fontSize:'0.9rem'}}>← Table drill-downs</a>
+
+# The four rows with no tail number at all
+
+**Where this came from.** On [the Following overview](/Planes/following/overview), in the table headed *Which Egyptian plane, and how many each*, the row **"No tail number recorded at all"** reads **4** rows — 3 Charlie-involved, 1 Erika-involved, 0 TPUSA-only. This page is those four rows. The count here, **4**, and the Charlie/Erika split, **3 and 1**, both agree exactly with the figures printed on the overview.
+
+## What this slice is
+
+A row is in this list if the register holds **no aircraft identifier for it whatsoever** — no tail, no ICAO hex, not even an ambiguous pair. Reproduce it from `overlaps.csv` by taking every row whose tail field is empty or literally `UNKNOWN`: four rows, indexed `EXTRA-001`, `EXTRA-002`, `EXTRA-004` and `EXTRA-007`. They are distinct from the [five rows logged as "SU-BTT or SU-BND"](/Planes/following/cuts/tail-either-btt-or-bnd-5), where the source named two candidate aircraft and could not choose between them; here the source named none.
+
+These are the same four rows the ADS-B verdict table reports as [no aircraft named](/Planes/following/cuts/adsb-no-tail-4). One set of four rows, failing two tests for the same reason: with no airframe to look up, there is nothing to query an archive for.
+
+## At a glance
+
+| | |
+|---|---|
+| Rows | **4** |
+| Distinct dates | **4** |
+| Date range | 9 April 2024 → 11 July 2025 |
+| Who the sheet claims | Charlie Kirk alone **3** · Erika Kirk alone **1** |
+| Aircraft | no tail named **2** · recorded as UNKNOWN **2** |
+| Airports | [KLNK](/Planes/following/Lincoln_KLNK_2024-02-09_to_2025-10-11/overview) Lincoln **2** · [KOMA](/Planes/following/Omaha_KOMA_2024-02-09_to_2025-10-05/overview) Omaha **2** |
+| States | Nebraska **4** — every row |
+| By year | 2024 **2** · 2025 **2** |
+| ADS-B verdict | No aircraft named — **4** |
+| Audit verdict | Not reached by the audit — **4** |
+| Ground-position confirmations | **0** |
+| Rows with a sourced Kirk or TPUSA appearance on the same calendar date | **3** |
+
+## TABLE A — the following aircraft
+
+| Row | Date claimed | Airport | City / State | Following aircraft | Type | ICAO hex | Arrived from | Departed to | Ground stay logged, arrived | Departed | Days | Transponder / ground flag | ADS-B verdict | Closest approach |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| [EXTRA-002](/Planes/following/overlap/20240409_NE_omaha_extra_002/overview) | **9 April 2024** | [**KOMA**](/Planes/following/Omaha_KOMA_2024-02-09_to_2025-10-05/overview)<br/>Omaha (Kirk location; no jet) | Omaha, NE | *no tail named* | *not stated* | — | *not recorded* | *not recorded* | *no logged stay covers this date* | — | — | — | **No aircraft named** | — |
+| [EXTRA-001](/Planes/following/overlap/20240914_NE_lincoln_extra_001/overview) | **14 September 2024** | [**KLNK**](/Planes/following/Lincoln_KLNK_2024-02-09_to_2025-10-11/overview)<br/>Lincoln (Kirk location only — no jet claimed that day) | Lincoln, NE | *no tail named* | *not stated* | — | *not recorded* | *not recorded* | *no logged stay covers this date* | — | — | — | **No aircraft named** | — |
+| [EXTRA-007](/Planes/following/overlap/20250429_NE_lincoln_extra_007/overview) | **29 April 2025** | [**KLNK**](/Planes/following/Lincoln_KLNK_2024-02-09_to_2025-10-11/overview)<br/>Lincoln (claimed by amplifier — no tail, not on Owens sheet) | Lincoln, NE | *no tail named* | *not stated* | — | *not recorded* | *not recorded* | *no logged stay covers this date* | — | — | — | **No aircraft named** | — |
+| [EXTRA-004](/Planes/following/overlap/20250711_NE_omaha_extra_004/overview) | **11 July 2025** | [**KOMA**](/Planes/following/Omaha_KOMA_2024-02-09_to_2025-10-05/overview)<br/>Omaha (claimed by amplifier, not Owens sheet) | Omaha, NE | *no tail named* | *not stated* | — | *not recorded* | *not recorded* | *no logged stay covers this date* | — | — | — | **No aircraft named** | — |
+
+## TABLE B — who they are claimed to have been following
+
+| Row | Date claimed | Who the sheet claims was present | Erika location as the sheet gives it | Sourced Kirk / TPUSA appearance same day | Venue | Local time | Nearest airport to that venue | Kirk-side aircraft on record |
+|---|---|---|---|---|---|---|---|---|
+| [EXTRA-002](/Planes/following/overlap/20240409_NE_omaha_extra_002/overview) | **9 April 2024** | Charlie: **claimed** · Erika: **not claimed** | *blank on the sheet* | [Charlie — Win Every Vote / Winner-Take-All rally — Omaha, Omaha, NE](/Planes/following/speaking/20240409_omaha) | Lord of Hosts Church, 5351 S. 139th Plaza, Omaha | 19:00 CT | KOMA — Eppley Airfield, 4 mi | *none recorded* |
+| [EXTRA-001](/Planes/following/overlap/20240914_NE_lincoln_extra_001/overview) | **14 September 2024** | Charlie: **claimed** · Erika: **not claimed** | *blank on the sheet* | **None same-day.** Nearest sourced: [Charlie — You're Being Brainwashed Tour — Kansas State University, Manhattan, KS](/Planes/following/speaking/20240913_manhattan) (-1 days) | — | — | — | *none recorded* |
+| [EXTRA-007](/Planes/following/overlap/20250429_NE_lincoln_extra_007/overview) | **29 April 2025** | Charlie: **claimed** · Erika: **not claimed** | *blank on the sheet* | [Charlie — Town Hall with TPUSA Students and Treasury Secretary Bessent, UNKNOWN,](/Planes/following/speaking/20250429_tpusa_student_town_h) | TPUSA student town hall | — | UNKNOWN — UNKNOWN | *none recorded* |
+| [EXTRA-004](/Planes/following/overlap/20250711_NE_omaha_extra_004/overview) | **11 July 2025** | Charlie: **not claimed** · Erika: **claimed** | *never stated* | [Charlie — TPUSA Student Action Summit 2025, Tampa, FL](/Planes/following/speaking/20250711_tampa) | Tampa Convention Center, 333 S Franklin St, Tampa, FL | — | KTPA — Tampa International, 6 mi | *none recorded* |
+
+## TABLE C — sourcing and both verdicts
+
+| Row | Sheet index | Audit verdict (tracking-site pass) | ADS-B verdict (position data) | What the position data says | Source of the claim | Source post | Full row page |
+|---|---|---|---|---|---|---|---|
+| `EXTRA-002` | — | **Not reached by the audit** | **No aircraft named** | The claim names no tail number, so there is no airframe to look up. Untestable as published. | Owens Ep 256 names April 9 Omaha; AP 10 Apr 2024; tpusa_events.csv; overlap overview tested-and-failed table | [post](https://apnews.com/article/winner-take-all-electoral-votes-nebraska-trump-d5fb580a7f2ee1d4bb88bc3ae7d09d93) | [open](/Planes/following/overlap/20240409_NE_omaha_extra_002/overview) |
+| `EXTRA-001` | — | **Not reached by the audit** | **No aircraft named** | The claim names no tail number, so there is no airframe to look up. Untestable as published. | @RealCandaceO reply to @alsacetx 1 Nov 2025: 'on September 14th 2024, Charlie was in Lincoln Nebraska with Mikey McCoy.' | [post](https://x.com/RealCandaceO/status/1984666106569900231) | [open](/Planes/following/overlap/20240914_NE_lincoln_extra_001/overview) |
+| `EXTRA-007` | — | **Not reached by the audit** | **No aircraft named** | The claim names no tail number, so there is no airframe to look up. Untestable as published. | @Omaruncovered / @ZeroBarkThirty2 / @DrAngKozak 5-6 Aug 2026 crediting Stew Peters | [post](https://x.com/Omaruncovered/status/2084952708708982850) | [open](/Planes/following/overlap/20250429_NE_lincoln_extra_007/overview) |
+| `EXTRA-004` | — | **Not reached by the audit** | **No aircraft named** | The claim names no tail number, so there is no airframe to look up. Untestable as published. | @bfr1273 19 Aug 2026 citing a Stew Peters X post of 5 Aug 2026 and a guest | [post](https://x.com/bfr1273/status/2089920452051263518) | [open](/Planes/following/overlap/20250711_NE_omaha_extra_004/overview) |
+
+## What the specifics show
+
+**All four are Nebraska, and two of them do not claim a jet at all.** Every row sits at Lincoln or Omaha. `EXTRA-002` (9 April 2024, KOMA) and `EXTRA-001` (14 September 2024, KLNK) are recorded in the register as Kirk-location markers — the airport column on each says so in plain words, "no jet" and "no jet claimed that day". They mark where a Kirk is reported to have been, not where an aircraft was seen. Calling them overlaps at all is generous to the claim.
+
+**The same-day count of 3 is weaker than it looks, and unpacking it is the point of this page.** `EXTRA-002` is the one row where the sourced appearance and the claimed field are in the same city: Charlie Kirk at the Lord of Hosts Church in Omaha on 9 April 2024, four miles from Eppley Airfield. `EXTRA-007` (29 April 2025, KLNK) matches to a TPUSA student town hall whose venue and city the register records as UNKNOWN, so there is no location to compare. `EXTRA-004` (11 July 2025, KOMA) matches to Charlie Kirk at the TPUSA Student Action Summit in **Tampa, Florida** — a same-day appearance most of a continent away from the Nebraska field the row claims. That row is the one of the four attributed to Erika Kirk, and its same-day event actively cuts against it.
+
+**The remaining row has no same-day match.** `EXTRA-001` (14 September 2024, Lincoln) is nearest to a sourced Charlie Kirk appearance at Kansas State University in Manhattan, Kansas the day before — one day early and one state over.
+
+**Sourcing thins out across the four.** `EXTRA-002` rests on an Owens episode and a contemporaneous AP report of the Omaha event. `EXTRA-001` rests on a single reply post by [@RealCandaceO](https://x.com/RealCandaceO/status/1984666106569900231) dated 1 November 2025. `EXTRA-007` and `EXTRA-004` rest on amplifier accounts posting in August 2026 and crediting Stew Peters — that is, on secondary posts about a claim, not on the claim's own documentation.
+
+**None of the four was reached by the tracking-site audit.** The audit worked from a 78-row version of the sheet; these four were added to the register later, from amplifier claims and overlap pages that had no row in the file. Their audit column reads "not reached", which is a statement about the audit's scope, not about the rows.
+
+## What this list cannot tell you
+
+* **A trace locates an aircraft. It never places a person aboard.** There are no traces here at all — with no tail number there is no airframe to query — but the rule is why even the corroborated rows elsewhere in this register cannot show who was flying.
+* **Erika Kirk's presence is not established on any row here.** One of the four, `EXTRA-004`, names her, and the register records her location on it as UNKNOWN. Her flight logs are [reported erased](/Planes/Erika-Flight-Logs-Erased) and no dated itinerary has ever been published. Site-wide, the number of rows on which her presence is actually established is [zero](/Planes/following/cuts/erika-established-0).
+* **Charlie Kirk's sourced presence on three of these dates says nothing about any aircraft.** That he spoke in Omaha on 9 April 2024 is well sourced. It is not evidence that any jet was at Eppley Airfield that day, because no row here names a jet.
+* **This is not an archive gap and must not be read as one.** These four are not "not heard" and not "no archive coverage" — those are limits of what an archive holds. These rows are untestable as published, because the claim itself withholds the aircraft. Nothing has been deleted, hidden, or suppressed here.
+* **An untestable claim is not a false claim.** Four rows with no airframe are unverifiable, not disproved. They carry no evidentiary weight in either direction.
+* **Every claim on this page is somebody else's.** The rows record what Candace Owens, named X accounts, and accounts crediting Stew Peters have stated. This site asserts no crime by any person named here and no purpose behind any flight.
+* **On the counts, this page and the overview agree** — 4 rows, 3 Charlie-involved, 1 Erika-involved. Where wider figures differ, note that the audit ran against 78 rows and this register holds 85; all four of these rows are among the later additions the audit never saw.
+
+## Related
+
+* [Following overview](/Planes/following/overview) — the tables this page drills into
+* [The overlap index](/Planes/following/overlap/overview) — all 85 rows, one page each
+* [The speaking-events catalog](/Planes/following/speaking/overview) — the sourced Kirk and TPUSA appearances these rows are tested against
+* [Lincoln KLNK](/Planes/following/Lincoln_KLNK_2024-02-09_to_2025-10-11/overview) and [Omaha KOMA](/Planes/following/Omaha_KOMA_2024-02-09_to_2025-10-05/overview) — the two fields all four rows claim
+* [The four rows that name no aircraft](/Planes/following/cuts/adsb-no-tail-4) — the same four, seen from the ADS-B verdict table
+* [The nine rows that cannot name the aircraft](/Planes/following/cuts/tail-unresolved-9) — these four plus the five logged as "SU-BTT or SU-BND"
+* [Nebraska — every overlap, every landing, every event](/Planes/following/cuts/state-nebraska) — the state all four sit in
+* [The nine rows claiming Charlie Kirk without Erika](/Planes/following/cuts/charlie-only-9) — where three of these four also appear

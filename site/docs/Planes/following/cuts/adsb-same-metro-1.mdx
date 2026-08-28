@@ -1,0 +1,91 @@
+---
+id: cuts-adsb-same-metro-1
+slug: /Planes/following/cuts/adsb-same-metro-1
+displayed_sidebar: docs
+title: "The one row that is right area, wrong field"
+sidebar_label: "Right area, wrong field — 1"
+description: "The single register row behind the 'right area, wrong field' cell on the Following overview: SU-BTT at Wichita on 14 April 2023, recovered 27.58 km from the claimed airport."
+keywords:
+  - Charlie Kirk
+  - Erika Kirk
+  - SU-BTT
+  - KICT
+  - Wichita
+  - flight tracking
+image: "/img/docusaurus-social-card.jpg"
+hide_table_of_contents: true
+---
+
+<div className="ck-full-bleed" />
+
+<a href="/Planes/following/cuts/overview" style={{display:'inline-block', marginBottom:'1rem',
+padding:'0.35rem 0.9rem', background:'#1a73e8', color:'#fff',
+borderRadius:'4px', textDecoration:'none', fontSize:'0.9rem'}}>← Table drill-downs</a>
+
+# The one row that is right area, wrong field
+
+**Where this came from.** On [the Following overview](/Planes/following/overview), the table that scores each claimed overlap against recovered ADS-B position data has a verdict cell reading *"Right area, wrong field."* That cell counts **1 row**. This page is that row: `OWENS-012`, 14 April 2023, Wichita, Kansas.
+
+## What this slice is
+
+A row lands here when recovered position data puts the named aircraft in the claimed metropolitan area on the claimed date, but not at the claimed airport. The threshold this register uses is a same-field test: a recovered position has to sit close enough to the named airport to be an arrival, a departure or a low pass over it. This row misses that test and clears the looser one. To reproduce it from `overlaps.csv`, take every row whose `adsb_verified_verdict` is `SAME_METRO_WRONG_FIELD`. Exactly one row qualifies out of the 85 in the register.
+
+## At a glance
+
+| | |
+|---|---|
+| Rows | 1 |
+| Distinct dates | 1 |
+| Date range | 14 April 2023 only |
+| Aircraft | SU-BTT — 1 |
+| Airports | KICT (Wichita Dwight D. Eisenhower National) — 1 |
+| States | Kansas — 1 |
+| ADS-B verdict | Right area, wrong field — 1 |
+| Audit verdict | Accurate — 1 |
+| Who is claimed present | Erika Kirk alone — 1 |
+| Closest recovered position | 27.58 km from KICT |
+| Ground-position confirmations | 0 |
+| Rows on a day with a sourced Kirk or TPUSA appearance | 0 |
+
+## TABLE A — the following aircraft
+
+| Row | Date claimed | Airport | City / State | Following aircraft | Type | ICAO hex | Arrived from | Departed to | Ground stay logged, arrived | Departed | Days | Transponder / ground flag | ADS-B verdict | Closest approach |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| [OWENS-012](/Planes/following/overlap/20230414_KS_wichita_owens_012/overview) | **14 April 2023** | [**KICT**](/Planes/following/Wichita_KICT_2022-11-13_to_2025-08-03/overview)<br/>Wichita Dwight D. Eisenhower National | Wichita, KS | [SU-BTT](/Planes/SU-BTT/overview) | Dassault Falcon 7X | `0101D3` | Cairo via Paris | Wilmington 2023-04-20 | *no logged stay covers this date* | — | — | — | **Right area, wrong field** | 27.58 km |
+
+## TABLE B — who they are claimed to have been following
+
+| Row | Date claimed | Who the sheet claims was present | Erika location as the sheet gives it | Sourced Kirk / TPUSA appearance same day | Venue | Local time | Nearest airport to that venue | Kirk-side aircraft on record |
+|---|---|---|---|---|---|---|---|---|
+| [OWENS-012](/Planes/following/overlap/20230414_KS_wichita_owens_012/overview) | **14 April 2023** | Charlie: **not claimed** · Erika: **claimed** | Kansas | **None.** No sourced Kirk or TPUSA appearance within three days, anywhere. | — | — | — | *none recorded* |
+
+## TABLE C — sourcing and both verdicts
+
+| Row | Sheet index | Audit verdict (tracking-site pass) | ADS-B verdict (position data) | What the position data says | Source of the claim | Source post | Full row page |
+|---|---|---|---|---|---|---|---|
+| `OWENS-012` | 12 | **Accurate** | **Right area, wrong field** | RIGHT AREA, WRONG FIELD. Closest recovered position is 28 km from KICT - inside the source sheet's own 50-100 mile tolerance, outside a same-airport test. Neither confirmed nor refuted. | Owens sheet via Kanekoa audit (ACCURATE 4/14); Owens Ep 256 INFILTRATION (Sacramento 4/13 then Cairo-to-Kansas) | [post](https://www.youtube.com/watch?v=YFmRH8p5lt0) | [open](/Planes/following/overlap/20230414_KS_wichita_owens_012/overview) |
+
+## What the specifics show
+
+`OWENS-012` is the only row in the register where the two verdict columns pull in different directions without contradicting each other. The tracking-site audit calls the flight **Accurate**: SU-BTT, an Egyptian government-registered Dassault Falcon 7X, hex `0101D3`, inbound from Cairo via Paris on 14 April 2023 and outbound to Wilmington on 20 April. The recovered position data agrees the aircraft was in the Wichita area and disagrees about the field — its closest recovered position is 27.58 km from KICT. That distance sits comfortably inside the 50-to-100-mile tolerance the source sheet applies to itself, and comfortably outside a test that asks whether the aircraft actually touched the named runway. Neither confirmed nor refuted is the correct reading, and it is the only row in the register that earns it.
+
+The Kirk side of this row is the weak side. The sheet gives Erika Kirk's location as "Kansas" — a state, not a place — and claims Charlie Kirk not at all. There is no sourced Kirk or Turning Point appearance anywhere within three days of 14 April 2023; the nearest this site can independently source is TPUSA Faith's *Kingdom to the Capitol* in Topeka on 23 April 2023, nine days later and roughly 135 miles from Wichita, by which time the aircraft had already left for Wilmington. The row's own recorded counterargument notes an ordinary explanation sitting directly on top of it: Yingling Aviation at KICT is an FAA Part 145 repair station servicing Dassault Falcon aircraft, and Duncan Aviation is recorded as having held the Egyptian Air Force Falcon maintenance account since 1999 — a Falcon 7X landing near Wichita is close to the least remarkable thing a Falcon 7X can do. The claim also arrives with a pairing attached: Candace Owens' Episode 256 places Charlie Kirk in Sacramento on 13 April and the aircraft coming in "Cairo to Kansas" the next day. Sacramento and Wichita are not the same overlap, and the sheet does not treat them as one.
+
+## What this list cannot tell you
+
+* **A trace proves an aircraft was there. It never proves who was aboard.** The recovered positions show a Falcon 7X near Wichita on 14 April 2023 and nothing else. They do not name a passenger, a crew, or a purpose.
+* **27.58 km is a measurement, not a verdict.** It does not show the aircraft avoiding KICT, and it does not show it landing anywhere in particular. There are zero ground-position confirmations on this row, meaning the recovered trace contains no positions transmitted with the on-ground flag set — which is ordinary, because receiver coverage of a parked aircraft is thin.
+* **Erika Kirk's presence is established on zero rows,** here and across the whole register. Her flight logs are [reported erased](/Planes/Erika-Flight-Logs-Erased) and no itinerary was ever published. "Kansas" in the sheet's location cell is an assertion by the compilers, not a document. Erika Kirk is a living person, not charged with anything, and named on this page only as the subject of an unverified claim.
+* **An absence in an archive is not evidence of absence.** Where this row's trace stops, the correct reading is that a volunteer receiver network heard nothing more — not that the aircraft did nothing more.
+* **Counting note.** This register holds 85 rows and the ADS-B pass scored all of them, so "1" here is one row in 85. The tracking-site audit reached fewer: it returned a substantive verdict on **73** rows, with five never published, five added to the register after the audit and never reached by it, and two outside what the flight archive can assess. Audit-verdict percentages elsewhere on the site therefore run on a smaller denominator than the ADS-B ones do, and the two should not be compared without saying which denominator each uses.
+
+## Related
+
+* [The Following overview](/Planes/following/overview) — the page whose table cell links here
+* [The overlap index](/Planes/following/overlap/overview) — every row in the register, one page each
+* [The speaking-events catalog](/Planes/following/speaking/overview) — the sourced Kirk and TPUSA appearances rows are tested against
+* [SU-BTT](/Planes/SU-BTT/overview) — the aircraft on this row
+* [The 25 rows corroborated by recovered position data](/Planes/following/cuts/adsb-at-claimed-airport-25) — the rows that did clear the same-field test
+* [The three rows refuted by recovered position data](/Planes/following/cuts/adsb-elsewhere-3) — the rows where the aircraft was somewhere else entirely
+* [Rows the tracking-site audit called accurate](/Planes/following/cuts/audit-accurate) — the audit verdict this row carries
+* [Kansas — every overlap, every landing, every event](/Planes/following/cuts/state-kansas) — the state this row sits in
