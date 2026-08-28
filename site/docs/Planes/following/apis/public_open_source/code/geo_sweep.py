@@ -121,10 +121,22 @@ FLEET_HEX = load_fleet_hexes()
 # quiet mislabel that turns a routine C-17 at Peterson SFB into a finding.
 US_MIL_SERIAL = __import__("re").compile(r"^\d{2}-\d{3,5}$")
 
+# Substring matching on an owner string is a false-positive machine and this
+# list has already produced three classes of them, found on 2026-08-28 by
+# re-deriving the flag from the stored own_op column:
+#   "FEDERAL"   -> FEDERAL EXPRESS CORP. FedEx is not a government operator.
+#   "EXECUTIVE" -> EXECUTIVE JET MANAGEMENT, and every "...EXECUTIVE AIR" charter.
+#   "ROYAL"     -> ROYAL AIR, ROYAL JET-style civil charter names.
+# Those three were removed. A word only belongs here if a CIVIL operator would
+# never plausibly put it in its registered-owner name.
 GOV_WORDS = ("AIR FORCE", "ARMY", "NAVY", "MARINE CORPS", "COAST GUARD",
              "DEPARTMENT OF", "UNITED STATES OF AMERICA", "GOVERNMENT",
-             "STATE OF", "FEDERAL", "CUSTOMS", "BORDER PROTECTION",
-             "EXECUTIVE", "ROYAL", "REPUBLIC OF", "MINISTRY")
+             "STATE OF", "CUSTOMS AND BORDER", "BORDER PROTECTION",
+             "REPUBLIC OF", "MINISTRY OF")
+
+# Retired from GOV_WORDS. Kept named so nobody re-adds them: each matched a
+# civil operator far more often than a government one.
+GOV_WORDS_RETIRED_FALSE_POSITIVES = ("FEDERAL", "EXECUTIVE", "ROYAL", "CUSTOMS")
 
 
 def flag_aircraft(d):
@@ -191,6 +203,42 @@ def store_worthy(reasons, hits):
 # The byte pre-filter
 # --------------------------------------------------------------------------
 
+def _printed_int_parts(lo, hi):
+    """Every integer part that can appear in the PRINTED form of a coordinate
+    between lo and hi, as the string tokens actually written in a trace file.
+
+    THIS FUNCTION EXISTS BECAUSE THE OBVIOUS VERSION IS WRONG ON NEGATIVE
+    LONGITUDES AND THAT BUG COST THIS INVESTIGATION A REAL HIT.
+
+    A trace file prints -111.73 as the seven characters "-111.73", so its token
+    is ",-111.". But math.floor(-111.73) is -112, so a band built from floor()
+    generates ",-112." and ",-113." and never ",-111." -- the EASTERN edge of
+    every western-hemisphere circle went unexamined. Measured over the 146 event
+    circles of the 2026-08 sweep, 28.7% of each circle's area on average could
+    never produce a hit, and the Salt Lake City circle (50.9% blind) missed
+    SU-BTT on the ground at Provo on 2024-04-23 -- an aircraft-day the per-tail
+    route holds in full, which is how the defect was caught.
+
+    The printed integer part is TRUNCATION TOWARD ZERO, which is what int() does
+    and what math.floor() does not. -0.5 prints as "-0.5", so a range spanning
+    the prime meridian needs BOTH "0" and "-0"; that is handled explicitly.
+
+    Returns a set of strings, not ints, so "-0" survives.
+    """
+    lo, hi = (lo, hi) if lo <= hi else (hi, lo)
+    out = set()
+    n = math.floor(lo)
+    while n <= math.ceil(hi):
+        # The printed integer part of any value in [n, n+1) is trunc(n) with the
+        # sign of the value: [-112, -111) all print as "-111.xx".
+        span_lo, span_hi = max(lo, n), min(hi, n + 1)
+        if span_lo <= span_hi:
+            for v in (span_lo, span_hi, (span_lo + span_hi) / 2.0):
+                out.add(("-" if v < 0 else "") + str(abs(int(v))))
+        n += 1
+    return out
+
+
 def prefilter_patterns(circles):
     """Degree-square tokens for one day's circles.
 
@@ -209,15 +257,11 @@ def prefilter_patterns(circles):
     for c in circles:
         pad_lat = c["radius_mi"] / 69.0 + 0.02
         pad_lon = c["radius_mi"] / (69.0 * max(0.15, math.cos(math.radians(c["lat"])))) + 0.02
-        for v in (c["lat"] - pad_lat, c["lat"] + pad_lat):
-            lats.add(int(math.floor(v)))
-        for v in (c["lon"] - pad_lon, c["lon"] + pad_lon):
-            lons.add(int(math.floor(v)))
-        lats.update(range(int(math.floor(c["lat"] - pad_lat)), int(math.floor(c["lat"] + pad_lat)) + 1))
-        lons.update(range(int(math.floor(c["lon"] - pad_lon)), int(math.floor(c["lon"] + pad_lon)) + 1))
-    pats_lat = [p for n in sorted(lats) for p in (f",{n}.".encode(), f",{n},".encode())]
-    pats_lon = [p for n in sorted(lons) for p in (f",{n}.".encode(), f",{n},".encode())]
-    return pats_lat, pats_lon
+        lats.update(_printed_int_parts(c["lat"] - pad_lat, c["lat"] + pad_lat))
+        lons.update(_printed_int_parts(c["lon"] - pad_lon, c["lon"] + pad_lon))
+    pats_lat = [p for n in lats for p in (f",{n}.".encode(), f",{n},".encode())]
+    pats_lon = [p for n in lons for p in (f",{n}.".encode(), f",{n},".encode())]
+    return sorted(set(pats_lat)), sorted(set(pats_lon))
 
 
 # --------------------------------------------------------------------------

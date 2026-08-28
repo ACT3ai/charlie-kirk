@@ -315,11 +315,55 @@ Of the **182 aircraft-days that exist on airplanes.live and not on adsb.lol**:
 * **10 fall outside the band on the control airliners** — the background rate.
   Any reading of the 81 has to be net of this.
 
-Per-tail, the "airplanes.live only" rate is 2.5% and 4.0% for the two controls
-and 9.6% to 72.4% for the case aircraft. **That gap is not evidence of deletion.**
-Both controls are scheduled airliners in dense European receiver coverage and are
-the wrong shape of control for a private jet. A private-jet-versus-private-jet
-comparison inside the fleet is the right test and is part of the work in flight.
+**A correction to our own first pass.** An earlier draft of this page put the
+per-tail "airplanes.live only" rate at 9.6% to 72.4% for the case aircraft. That
+was wrong: it merged *"adsb.lol was asked and had nothing"* with *"adsb.lol was
+never asked at all"*, which the ledger's own three-state contract forbids. **198
+aircraft-days had never been put to adsb.lol** — nearly the whole of N1098L,
+N2100L and N59906. Counting only the days where **both** archives were genuinely
+asked, and excluding both known archive holes:
+
+| Aircraft | Days both archives were asked | airplanes.live only | Rate |
+|---|---:|---:|---:|
+| CONTROL — Lufthansa | 199 | 5 | **2.5%** |
+| CONTROL — Ryanair | 202 | 5 | **2.5%** |
+| N560TW | 160 | 2 | 1.2% |
+| N40JD | 78 | 1 | 1.3% |
+| N582MM | 288 | 4 | 1.4% |
+| N888KG | 77 | 2 | 2.6% |
+| N872RA | 166 | 11 | 6.6% |
+| N102DZ | 129 | 10 | 7.8% |
+| N1098L / N2100L / N59906 | 17 / 8 / 9 | 0 | **0.0%** |
+| T7-ELL | 102 | 7 | 6.9% |
+| SU-BTU | 80 | 5 | 6.2% |
+| SU-BGM | 41 | 3 | 7.3% |
+| **SU-BTT** | 79 | 10 | **12.7%** |
+| **SU-BND** | 82 | 13 | **15.9%** |
+| **SU-BTV** | 76 | 13 | **17.1%** |
+
+The Egyptian tails still sit above the US private jets. **Two tests say that is
+receiver coverage, not deletion, and both are decisive.**
+
+**Test one — the size signature.** On days both archives hold, the median trace
+carries **1,388 position points**. On days only airplanes.live holds, the median
+is **83** — seventeen times thinner. A day that only one network heard is a day
+that was *barely heard at all*. Deletion does not preferentially remove the
+sparse days; **thin receiver coverage produces exactly this and nothing else.**
+
+**Test two — where the residue lands.** Strip the archive holes and the controls
+and **81 case aircraft-days survive as genuinely "one archive had it, the other
+was asked and did not"**. If records were being removed to conceal a following
+pattern, those 81 days would cluster on the days that matter.
+
+**Not one of the 81 puts an aircraft within 50 miles of a sourced Charlie, Erika
+or TPUSA event.** Zero. The residue is scattered across ordinary transatlantic
+legs, which is what a coverage artifact looks like and is not what suppression
+looks like.
+
+The Egyptian fleet flies Cairo–Europe–US transatlantic routing, where the two
+volunteer networks have genuinely different receiver footprints. The US jets fly
+domestically inside dense coverage. **That difference in flight geography, not a
+difference in treatment, is the whole of the remaining gap.**
 
 ### 4.4 Proximity — every tracked aircraft near Charlie or Erika
 
@@ -399,14 +443,17 @@ about **Egyptian** registrations, and there are a handful.
 
 **In control circles: zero.**
 
-Strip the two EgyptAir widebodies on scheduled airline service and the entire
-swept record — 261 UTC days, 348 event circle-days, 153,613 aircraft on the
-ground — contains **exactly three Egyptian-registered business-jet ground
-presences inside a Kirk/TPUSA event circle, and all three are Provo on 9 and 10
-September 2025.**
+Strip the two EgyptAir widebodies on scheduled airline service and the swept
+record — 261 UTC days, 348 event circle-days, 153,613 aircraft on the ground —
+contains **three Egyptian-registered business-jet ground presences inside a
+Kirk/TPUSA event circle, and all three are Provo on 9 and 10 September 2025.**
 
-That is the strongest and the most limiting sentence this investigation can
-currently write. It is very hard to explain away, and it is also very far from
+**Three is a floor, not a total — and the reason is a defect in our own code.**
+See §4.8. The union of both routes gives **four**, and the fourth is 23 April
+2024, also Provo.
+
+That is the strongest and the most limiting result this investigation can
+currently produce. It is very hard to explain away, and it is also very far from
 "73 times".
 
 ### 4.6 The Provo record, in full
@@ -486,6 +533,206 @@ the question in public and the data on disk answers it — and because the same
 sweep row shows N708JH on the ground at **Albuquerque, a control city, on the
 same 2023-10-03 day it was at San Jose.** This aircraft goes everywhere. That is
 the correct frame for it.
+
+### 4.8 A defect in our own filter — found, fixed, and published against ourselves
+
+The adversarial verification pass turned up a bug in `geo_sweep.py` that
+**understated the sweep's own results**, and it is recorded here rather than
+quietly patched, because a page that only ever reports errors in the *other*
+direction should not be believed.
+
+**The bug.** The sweep's cheap byte pre-filter builds substring tokens out of the
+integer part of a coordinate, so a circle near Provo looks for `,-111.` in the
+raw bytes before parsing any JSON. It built those tokens with `math.floor()`.
+But `math.floor(-111.73)` is **−112**, while a trace file *prints* `-111.73`.
+On every negative longitude the generated band was shifted one degree west, so
+**the eastern edge of every circle in the western hemisphere was never
+examined.**
+
+**What it cost.** Averaged over the 146 event circles, **28.7% of each circle's
+area could not produce a hit**; for the six control circles, 20.1%. The Salt Lake
+City circle was **50.9% blind** — and that is the one that matters, because on
+**23 April 2024 SU-BTT was on the ground at Provo, 39.7 miles inside it, and the
+sweep returned nothing.** The day was streamed whole and completed cleanly; the
+pre-filter threw the file away before the exact geometry check ever ran. The
+per-tail route holds that same aircraft-day in full, with 53 ground points at a
+median 0.58 km from the field — **which is how the defect was caught rather than
+shipped.**
+
+**The direction of the bias matters and cuts against us.** Event circles were
+*more* blind than control circles, 28.7% against 20.1%. The defect suppressed the
+pattern-supporting side of the comparison. It is not the sort of error that
+flatters a conclusion.
+
+**This is not a removal and must never be written as one.** adsb.lol served the
+day on request. The GitHub backup tarball downloaded whole. Nobody deleted
+anything — we failed to look at part of what we had.
+
+**The fix.** The printed integer part is truncation toward zero, which is what
+`int()` does and `math.floor()` does not. `_printed_int_parts()` now generates the
+tokens for every integer part a coordinate can actually print inside the range,
+including the `-0` case at the prime meridian.
+`code/test_prefilter.py` locks it: 6,000 random circles × 12 interior points
+each, plus the Provo point asserted directly against the Salt Lake City circle.
+All pass. The sweep is one line different and one degree wider where it matters.
+
+**Until the sweep is re-run, every sweep-only count on this page is a FLOOR.**
+That scoping travels with the number everywhere it is quoted.
+
+### 4.9 The union of both routes — the complete answer for the tracked tails
+
+Neither route is complete alone. The per-tail route is complete for the sixteen
+tails in `lib/fleet.js` and structurally incapable of finding anything else. The
+sweep finds aircraft nobody named, but its 2026-08 run was area-blind. **The
+union is the honest answer for the fleet, and a floor for everything outside it.**
+
+| UTC date | Tail | Type | Field | Miles from field | Event city | Offset | Found by |
+|---|---|---|---|---:|---|---:|---|
+| 2024-04-23 | **SU-BTT** | Falcon 7X | KPVU | 0.36 | Salt Lake City, UT | day 0 | **per-tail only** |
+| 2025-09-09 | **SU-BND** | Gulfstream IV | KPVU | 0.80 | Orem, UT | day −1 | **both routes** |
+| 2025-09-10 | **SU-BND** | Gulfstream IV | KPVU | 0.80 | Orem, UT | **day 0** | **both routes** |
+| 2025-09-10 | **SU-BTT** | Falcon 7X | KPVU | 0.80 | Orem, UT | **day 0** | **both routes** |
+
+**Four rows. Two dates. One airport. Both Charlie-only.**
+
+This reproduces, from raw ADS-B rather than from anybody's spreadsheet, exactly
+what this repository's own strict and loose overlap tests already returned across
+139 sourced Kirk/TPUSA events: 23 April 2024 and 10 September 2025, both Utah.
+
+Both halves of that have to be said whenever the number is quoted:
+
+* **It is this investigation's own primary data reproducing the sceptics'
+  result**, and it must be reported that way rather than softened.
+* **It is not the same as saying the pattern is false.** 139 events is every
+  Kirk/TPUSA location this repo can source and nowhere near every location the
+  Kirks were at. Exactly **one** of those rows places **Erika Kirk** anywhere
+  before 10 September 2025 — against a tally claiming **73 overlaps with her**.
+  Her flight logs are reported erased and no archive anywhere produces her
+  itinerary. **A test that returns 4 is a statement about what we can currently
+  prove, not about what happened.**
+
+### 4.10 A flaw in our own control design, and why it did not bite
+
+The six control cities exist so that "a foreign jet was within 50 miles of the
+event" can be measured against how often one is within 50 miles of somewhere
+uninteresting. One of them should not have been chosen.
+
+**Albuquerque, New Mexico is also a sourced Charlie Kirk event city** — 30
+November 2022, University of New Mexico. It is in `tpusa_events.csv` as an event
+and in the sweep as a control. It also supplies **102 of the 186 control-city
+touches** in the recurrence list, so it is not a minor member of the set.
+
+**It did not contaminate the measurements, and the reason is checkable.** The
+sweep's earliest successfully swept UTC day is **2023-03-10**. The Albuquerque
+Kirk event is 30 November 2022, more than fifteen months earlier and outside the
+swept range entirely. On every single day the sweep actually ran, Albuquerque was
+a genuine control with no Kirk or TPUSA event anywhere near it.
+
+Both halves are published because a control set that has to be defended is worth
+less than one that does not. **Any future sweep that reaches back into 2022 must
+drop Albuquerque from the control set or the control becomes circular.**
+
+### 4.11 What the recovered 111 days actually showed
+
+Filing those 111 aircraft-days under their aircraft (§2.5) was not bookkeeping.
+It made three proximity events visible that no page on this site had, because
+until today the per-tail record for those aircraft did not contain the days.
+
+**N1098L** and **N2100L** are Bombardier Global 6500s registered to LASAI
+Aviation II LLC. In the recovered traces they transmit only the callsigns
+**AXEL10** and **AXEL21**, and their dominant ground field is **Biggs Army
+Airfield (KBIF) at Fort Bliss** — 28 and 25 days respectively, more than any
+other field either one touches.
+
+| UTC date | Aircraft | Field | Miles to event city | Event | Offset | Source |
+|---|---|---|---:|---|---:|---|
+| 2024-09-04 | **N2100L** | KMSN Madison, WI | 5.4 | Charlie Kirk event | day +1 | GitHub backup |
+| 2024-12-18 | **N1098L** | KPHX Phoenix Sky Harbor | 10.8 | Charlie Kirk event | day +1 | GitHub backup |
+| 2025-08-08 | **N2100L** | KLGB Long Beach, CA | 13.7 | Rancho Palos Verdes | day −1 | GitHub backup |
+
+All three come from the `adsblol-github-backup` source key — **they exist on this
+site only because of today's ingest.**
+
+**And now the part that has to be said just as loudly.** Three events is not a
+pattern, and the base rate says so plainly. Across every ground-visit day this
+investigation holds, the share that falls within 50 miles of a sourced Kirk or
+TPUSA event is:
+
+| Aircraft | Event-proximate days / days observed | Rate | What it is |
+|---|---|---:|---|
+| **N582MM** | 53 / 276 | **19.2%** | **TPUSA-associated Learjet — this is what "travels with them" looks like** |
+| N560TW | 15 / 184 | 8.2% | Kirk-side jet |
+| N40JD | 4 / 78 | 5.1% | Kirk-side jet |
+| N872RA | 9 / 215 | 4.2% | Kirk-side jet |
+| N888KG | 3 / 75 | 4.0% | Kirk-side jet |
+| **N2100L** | 2 / 59 | **3.4%** | LASAI / AXEL21 |
+| N102DZ | 4 / 144 | 2.8% | Kirk-side jet |
+| N59906 | 1 / 40 | 2.5% | survey aircraft |
+| **N1098L** | 1 / 62 | **1.6%** | LASAI / AXEL10 |
+| **SU-BTT** | 2 / 19 | 10.5% | **2 events on 19 observed days** |
+| **SU-BND** | 2 / 22 | 9.1% | **2 events on 22 observed days** |
+| **SU-BTU** | 0 / 15 | **0.0%** | never |
+| **SU-BTV** | 0 / 16 | **0.0%** | never |
+| **SU-BGM** | 0 / 9 | **0.0%** | never |
+| **T7-ELL** | 0 / 76 | **0.0%** | never |
+| CONTROL — Lufthansa / Ryanair | 0 / 169, 0 / 163 | 0.0% | **a null control, see below** |
+
+Read that table carefully, because it cuts in three directions at once.
+
+* **N582MM at 19.2% is the positive control this investigation did not know it
+  had.** An aircraft that genuinely does travel with the organisation produces a
+  clear, high, sustained rate across 276 observed days. That is the shape a
+  following pattern makes in this data, and it proves the method can detect one.
+* **The two LASAI aircraft come in at 1.6% and 3.4% — at or below the ordinary
+  Kirk-side jets.** The three new proximity events are real, and they are also
+  what a busy government-contract aircraft flying into major metros produces by
+  chance. They are worth recording and they are not evidence of anything on their
+  own.
+* **Four of the six foreign tails are at exactly zero. Never. Not once.** SU-BTU,
+  SU-BTV, SU-BGM and T7-ELL never come within 50 miles of a sourced Charlie,
+  Erika or TPUSA event on any day this investigation holds. **SU-BTT and SU-BND's
+  9–10% is two events each, on nineteen and twenty-two observed days, and both
+  aircraft's two events are the same two dates at the same airport.** With a
+  denominator that small, that is not a rate. It is an anecdote with a percent
+  sign on it, and it must not be quoted as a frequency.
+* **The two control airliners are a NULL control for any US proximity question.**
+  Lufthansa and Ryanair fly in Europe; they were never going to be within 50 miles
+  of a Kirk event. Their 0.0% measures nothing and must never be cited as if it
+  established a baseline.
+
+### 4.12 Two corrections to the record, from the raw traces
+
+**SU-BND did not take off on 10 September 2025.** Derived metadata on this site
+records a wheels-up for it. The raw trace says otherwise, and both archives agree
+to the point: of **257 position points that day, 256 report the aircraft ON THE
+GROUND.** The single point that does not is the very last fix of the day,
+20:29:19 UTC, reporting **4,525 ft** — at the same position it had held all day.
+Provo Municipal's field elevation is **4,497 ft**. That is a barometric reading of
+an aircraft sitting on the ramp, not a departure. The aircraft never moved, and
+the "wheels-up" is an artifact of treating any non-`ground` altitude string as
+airborne.
+
+**The survey aircraft flew a mapping grid, not an orbit of the campus — and it
+had landed before the shooting.** N59906, a Piper Navajo operated by an aerial
+survey company, was airborne over the Utah Valley on the morning of 10 September
+2025. The raw trace, identical in both archives, gives the whole flight:
+
+| Local (MDT) | What the trace shows |
+|---|---|
+| 09:08:45 | On the ground at Provo (KPVU), 0.3 km from the field |
+| 09:28:53 | Airborne, climbing |
+| 09:54 – 11:41 | **Level at 19,000 ft, flying parallel lines** across a block spanning the Utah Valley and out over Tooele County |
+| 11:10 / 11:25 / 11:35 | Passes 3.8 – 4.5 km from UVU — **at 19,000 feet**, on a survey line |
+| 11:46 – 12:01 | Descending |
+| **12:07:46** | **On the ground at Provo again, 0.3 km from the field** |
+| ~12:20 | **The shooting** |
+
+**It landed roughly twelve minutes before the shooting.** The pattern — constant
+19,000 ft, long parallel legs, a wide rectangular block, a return to the field it
+launched from — is a standard aerial-mapping grid. **It passed near UVU because
+UVU sits inside the survey block, not because it was watching it**, and it was on
+the ground when the shooting happened. Publishing the near-UVU distances without
+the altitude, the grid, and the landing time would be a serious misrepresentation.
 
 ---
 

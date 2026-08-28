@@ -26,10 +26,37 @@ SWEEP = os.path.join(DATA, "geo_sweep")
 OUT = os.path.join(DATA, "analysis")
 os.makedirs(OUT, exist_ok=True)
 
-AIRLINER = {"A19N","A20N","A21N","A319","A320","A321","A332","A333","A339","A343","A359","A35K",
-            "A388","B38M","B39M","B738","B739","B737","B752","B753","B762","B763","B764","B772",
-            "B77L","B77W","B788","B789","B78X","B744","B748","E170","E175","E190","E195","CRJ2",
-            "CRJ7","CRJ9","E75L","E75S","A306","B733","B734","B735","MD11","B39M"}
+# Scheduled airliners are excluded from "notable" because an EgyptAir 777 at JFK
+# is scheduled service, not a shadow. BCS1/BCS3 (A220), B712, E135/E145 and the
+# regional Embraers were missing from this set until 2026-08-28 and were leaking
+# into the recurrence list as if they were business jets.
+AIRLINER = {"A19N","A20N","A21N","A318","A319","A320","A321","A332","A333","A338","A339",
+            "A343","A346","A359","A35K","A388","A306","A310","A30B",
+            "B38M","B39M","B3XM","B733","B734","B735","B736","B737","B738","B739",
+            "B744","B748","B752","B753","B762","B763","B764","B772","B77L","B77W",
+            "B788","B789","B78X","B712","BCS1","BCS3",
+            "CRJ1","CRJ2","CRJ7","CRJ9","E135","E145","E45X","E170","E175","E190","E195",
+            "E75L","E75S","E290","E295","MD11","MD82","MD83","MD88","MD90","AT72","AT75","AT76",
+            "DH8A","DH8B","DH8C","DH8D","SF34","B463","B462","RJ85","RJ1H"}
+
+# The government_operator_string flag in the stored sweep rows was produced by a
+# substring match that also fired on FEDERAL EXPRESS, EXECUTIVE JET MANAGEMENT
+# and ROYAL AIR. Rather than re-sweep 546 MB over the network, the flag is
+# RE-DERIVED here from the own_op column that is already in every hits row.
+GOV_WORDS = ("AIR FORCE", "ARMY", "NAVY", "MARINE CORPS", "COAST GUARD",
+             "DEPARTMENT OF", "UNITED STATES OF AMERICA", "GOVERNMENT",
+             "STATE OF", "CUSTOMS AND BORDER", "BORDER PROTECTION",
+             "REPUBLIC OF", "MINISTRY OF")
+
+
+def rederive_reasons(r):
+    """Stored flag_reasons, with government_operator_string recomputed."""
+    reasons = [x for x in (r.get("flag_reasons") or "").split("|")
+               if x and x != "government_operator_string"]
+    own = (r.get("own_op") or "").upper()
+    if any(w in own for w in GOV_WORDS):
+        reasons.append("government_operator_string")
+    return reasons
 
 
 def rows():
@@ -52,7 +79,7 @@ def main():
         rate[(kind, "entering")] += 1
         on_ground = r["on_ground_in_circle"] == "True"
         if on_ground: rate[(kind, "on_ground")] += 1
-        reasons = [x for x in (r.get("flag_reasons") or "").split("|") if x]
+        reasons = rederive_reasons(r)
         notable = bool(reasons)
         typ = (r.get("type") or "").upper()
         if notable and on_ground:
