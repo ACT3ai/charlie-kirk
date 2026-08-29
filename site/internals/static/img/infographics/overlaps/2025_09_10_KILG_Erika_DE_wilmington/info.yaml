@@ -1,7 +1,7 @@
-overlap_id: OWENS-011
-date: 2023-04-06
+overlap_id: SITE-005
+date: 2025-09-10
 person: erika
-dir_name: 2023_04_06_KILG_Erika_DE_wilmington
+dir_name: 2025_09_10_KILG_Erika_DE_wilmington
 evidence_basis: adsb_ground_contact
 airport:
   code: KILG
@@ -17,11 +17,11 @@ following_plane:
   type: Dassault Falcon 7X
   operator: Egyptian / foreign VIP
   segments:
-    - from: {utc: 2023-04-06T15:26:04Z, source_zone: UTC}
-      to:   {utc: 2023-04-06T15:33:43Z, source_zone: UTC}
+    - from: {utc: 2025-09-10T16:40:31Z, source_zone: UTC}
+      to:   {utc: 2025-09-10T16:50:37Z, source_zone: UTC}
       basis: near_field_pass
-      ground_points: 126
-      min_km: 1.63
+      ground_points: 235
+      min_km: 1.75
       min_alt_ft: -25
       sources: adsb-lol|airplanes-live
 kirk_plane:
@@ -34,11 +34,11 @@ source_line: "Source: recovered ADS-B traces, adsb.lol and airplanes.live. Groun
 sources:
   - site/docs/Planes/following/overlaps.csv
   - site/docs/Planes/following/airports.csv
-  - site/docs/Planes/SU-BTT/data/recovered/SU-BTT_2023-04-06_adsb-lol_trace_full.json
-  - site/docs/Planes/SU-BTT/data/recovered/SU-BTT_2023-04-06_airplanes-live_trace_full.json
+  - site/docs/Planes/SU-BTT/data/recovered/SU-BTT_2025-09-10_adsb-lol_trace_full.json
+  - site/docs/Planes/SU-BTT/data/recovered/SU-BTT_2025-09-10_airplanes-live_trace_full.json
   - site/docs/Planes/info_graphic/code/build_info_yaml.py
 notes: >-
   SU-BTT was heard airborne within 15 km 1 time at KILG on this date.
-  NO Kirk-party or TPUSA-linked airframe was heard on the ground at this field on this date. Queried: N872RA, N40JD. Held by neither archive for this date: N102DZ, N582MM, N560TW, N888KG. The lower band is drawn hollow because the claim on this row is a PERSON IN A CITY, and a claimed itinerary is not an aircraft.
-  A hatched window is an AIRBORNE pass near the field - an approach, a departure climb or an overflight. It is not evidence the aircraft landed. Closest approach and lowest altitude heard, per pass: 1.63 km at -25 ft.
+  NO Kirk-party or TPUSA-linked airframe was heard on the ground at this field on this date. Queried: N102DZ, N582MM, N872RA, N40JD, N560TW, N888KG. Held by neither archive for this date: none. The lower band is drawn hollow because the claim on this row is a PERSON IN A CITY, and a claimed itinerary is not an aircraft.
+  A hatched window is an AIRBORNE pass near the field - an approach, a departure climb or an overflight. It is not evidence the aircraft landed. Closest approach and lowest altitude heard, per pass: 1.75 km at -25 ft.
   A trace proves presence, never purpose, and never occupancy. Nothing here places any person aboard any aircraft.

@@ -57,8 +57,8 @@
   <!-- upper bar: the following / intelligence aircraft -->
   <text class="t sm" font-size="26" x="260" y="862">Following aircraft — SU-BND (Gulfstream G550) · 2 ground contacts</text>
   <rect x="260" y="872" width="1400" height="60" fill="#D9D9D9" fill-opacity="0.5" stroke="#000000" stroke-width="5"/>
-  <rect x="260.0" y="878" width="340.1" height="48" fill="#9B1B1E"><title>10:05 am to 11:34 am (1 hr 29 min) — heard on the ground, 268 positions, adsb-lol|airplanes-live</title></rect>
-  <rect x="1086.7" y="878" width="187.2" height="48" fill="#9B1B1E"><title>1:40 pm to 2:29 pm (49 min) — heard on the ground, 315 positions, adsb-lol|airplanes-live</title></rect>
+  <rect x="260.0" y="878" width="340.1" height="48" fill="#9B1B1E"><title>10:05 am to 11:34 am (1 hr 29 min) — heard on the ground, closest 1.29 km, 268 positions, adsb-lol|airplanes-live</title></rect>
+  <rect x="1086.7" y="878" width="187.2" height="48" fill="#9B1B1E"><title>1:40 pm to 2:29 pm (49 min) — heard on the ground, closest 1.29 km, 315 positions, adsb-lol|airplanes-live</title></rect>
   <!-- lower bar: the Charlie Kirk aircraft -->
   <text class="t sm" font-size="26" x="260" y="958">Charlie Kirk aircraft — N102DZ (Gulfstream V) · 1 ground contact</text>
   <rect x="260" y="968" width="1400" height="60" fill="#D9D9D9" fill-opacity="0.5" stroke="#000000" stroke-width="5"/>
@@ -72,5 +72,5 @@
   <text class="t xs" x="1271" y="1046" text-anchor="middle">last heard 2:29 pm</text>
   <!-- required furniture: the claim this picture must not be read as, and the source -->
   <text class="t xs" font-size="22" x="64" y="622">ADS-B ground contacts heard by volunteer receivers. Presence only — this places no person aboard either aircraft.</text>
-  <text class="t xs" font-size="22" x="64" y="662">Source: recovered ADS-B traces, adsb.lol and airplanes.live, both archives agreeing. Ground contacts only. As of 29 August 2026.</text>
+  <text class="t xs" font-size="22" x="64" y="662">Source: recovered ADS-B traces, adsb.lol and airplanes.live. Ground contacts and near-field passes measured point by point. As of 2026-08-29.</text>
 </svg>

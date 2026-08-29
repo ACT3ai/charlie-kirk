@@ -23,12 +23,26 @@ Runs shorter than MIN_WINDOW_SEC are dropped rather than drawn: below that the
 generator has to widen them to a visible minimum and the width stops being
 proportional, which is a bar that lies about its own duration.
 
-  python3 build_info_yaml.py            write every graphic in BUILD
+SCOPE, CHANGED 2026-08-29. This used to carry a hand-written BUILD list of ten
+overlap_ids. It now walks EVERY row of overlaps.csv and builds a graphic for
+every row that has a measured window, so "100% of the overlap rows" is a fact
+about the code rather than about who remembered to add a line. Which rows those
+are is decided by the DATA, in pick_build(), and every row that does not make it
+is written into ledger.csv with the reason kept separate from the other reasons.
+
+The windows themselves are measured by measure_windows.py, which writes
+CK_WINDOWS_JSON. Run that first; this script never measures and never guesses.
+
+  python3 measure_windows.py            measure every row of overlaps.csv
+  python3 build_info_yaml.py            write every graphic that has a window
   python3 build_info_yaml.py --check    report, write nothing
 """
-import datetime as dt, json, os, sys
+import csv, datetime as dt, json, os, re, sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
+sys.path.insert(0, os.path.normpath(os.path.join(
+    HERE, "..", "..", "following", "apis", "public_open_source", "code", "lib")))
+from geo import airport_by_code  # noqa: E402
 PLANES = os.path.normpath(os.path.join(HERE, "..", ".."))
 OUT_ROOT = os.path.normpath(os.path.join(
     PLANES, "..", "..", "internals", "static", "img", "infographics", "overlaps"))
@@ -37,6 +51,9 @@ WINDOWS = os.environ.get("CK_WINDOWS_JSON", "/tmp/ck_windows.json")
 # A near-field PASS shorter than this is two or three position reports, not a
 # window, and drawing it forces the generator to widen it past its true width.
 MIN_PASS_SEC = 60
+# A near-field window whose lowest altitude is more than this above the field is
+# an aircraft crossing the circle, not one visiting the field. See field_ceiling.
+NEAR_FIELD_AGL = 6000
 # A GROUND CONTACT is never dropped for being short. SU-BTT was on the ground at
 # Wilmington for 23 seconds on 20 April 2023 — that is the single genuine ground
 # contact in the whole Erika set at that field, and an earlier version of this
@@ -58,6 +75,12 @@ KIRK_TAILS = ["N102DZ", "N582MM", "N872RA", "N40JD", "N560TW", "N888KG"]
 # absence on the lower band is a wide and auditable one.
 BAR_TAILS = ["N102DZ", "N582MM"]
 
+# Field identity. The three fields the first run covered carry a CURATED entry,
+# because a hand-checked name and a sourced US Census population are better than
+# anything derivable. Every other field is resolved from the OurAirports
+# database the flight pipeline already downloaded, and its population comes back
+# `unknown` — the generator then omits the population line rather than printing
+# a figure nobody sourced. NEVER fill one of those in from memory.
 AIRPORTS = {
     "KILG": dict(name="Wilmington Airport / New Castle Airport", city="Wilmington",
                  state="DE", state_name="Delaware", timezone="America/New_York",
@@ -69,28 +92,166 @@ AIRPORTS = {
                  state="NE", state_name="Nebraska", timezone="America/Chicago",
                  town_population=486051, town_population_source="US Census 2020"),
 }
+
+# The IANA zone for every other field this investigation touches, stated rather
+# than inferred. geo.timezone_at() falls back to a per-STATE table when
+# timezonefinder is not installed, and several states straddle two zones — an
+# approximate zone would silently shift every clock time on the picture by an
+# hour. Each line below is a claim about one named field, not about a state.
+FIELD_TZ = {
+    "KICT": "America/Chicago",     "KLNK": "America/Chicago",
+    "KSTL": "America/Chicago",     "KSUS": "America/Chicago",
+    "KCPS": "America/Chicago",     "KTOP": "America/Chicago",
+    "KORD": "America/Chicago",     "KJFK": "America/New_York",
+    "KBOS": "America/New_York",    "KBGR": "America/New_York",
+    "KATL": "America/New_York",    "KSMF": "America/Los_Angeles",
+    "CYYR": "America/Goose_Bay",
+}
+STATE_NAME = {
+    "AL": "Alabama", "AK": "Alaska", "AZ": "Arizona", "AR": "Arkansas",
+    "CA": "California", "CO": "Colorado", "CT": "Connecticut", "DE": "Delaware",
+    "DC": "District of Columbia", "FL": "Florida", "GA": "Georgia", "HI": "Hawaii",
+    "ID": "Idaho", "IL": "Illinois", "IN": "Indiana", "IA": "Iowa", "KS": "Kansas",
+    "KY": "Kentucky", "LA": "Louisiana", "ME": "Maine", "MD": "Maryland",
+    "MA": "Massachusetts", "MI": "Michigan", "MN": "Minnesota", "MS": "Mississippi",
+    "MO": "Missouri", "MT": "Montana", "NE": "Nebraska", "NV": "Nevada",
+    "NH": "New Hampshire", "NJ": "New Jersey", "NM": "New Mexico", "NY": "New York",
+    "NC": "North Carolina", "ND": "North Dakota", "OH": "Ohio", "OK": "Oklahoma",
+    "OR": "Oregon", "PA": "Pennsylvania", "RI": "Rhode Island", "SC": "South Carolina",
+    "SD": "South Dakota", "TN": "Tennessee", "TX": "Texas", "UT": "Utah",
+    "VT": "Vermont", "VA": "Virginia", "WA": "Washington", "WV": "West Virginia",
+    "WI": "Wisconsin", "WY": "Wyoming",
+    "NL": "Newfoundland and Labrador",
+}
+
+
+def airport_facts(code):
+    """Curated entry if there is one, otherwise resolved from OurAirports.
+
+    Returns None when the field cannot be resolved at all — the caller then
+    skips the row and says so, rather than drawing a picture headed UNKNOWN.
+    """
+    if code in AIRPORTS:
+        return AIRPORTS[code]
+    ap = airport_by_code(code)
+    if not ap:
+        return None
+    st = (ap.get("iso_region") or "").split("-")[-1].upper()
+    tz = FIELD_TZ.get(code)
+    if not tz:                       # never guess a zone; the clock times depend on it
+        return None
+    city = (ap.get("municipality") or "").split("/")[0].strip()
+    return dict(name=ap["name"], city=city, state=st,
+                state_name=STATE_NAME.get(st, st), timezone=tz,
+                town_population="unknown",
+                town_population_source="no sourced figure held for this place")
+
+
+# Aircraft type and operator. The three that carry the argument are curated; any
+# other tail is looked up in planes.csv rather than typed from memory.
 PLANE = {
     "SU-BTT": dict(type="Dassault Falcon 7X", operator="Egyptian / foreign VIP"),
     "SU-BND": dict(type="Gulfstream G550", operator="Egyptian / foreign VIP"),
     "N102DZ": dict(type="Gulfstream V", operator="Private / Kirk party"),
 }
+PLANES_CSV = os.path.normpath(os.path.join(PLANES, "..", "..", "..", "planes.csv"))
+
+
+def plane_facts(tail):
+    if tail in PLANE:
+        return PLANE[tail]
+    try:
+        with open(PLANES_CSV, newline="", encoding="utf-8") as fh:
+            for r in csv.DictReader(fh):
+                if (r.get("tail") or r.get("plane_key") or "").strip().upper() == tail:
+                    return dict(type=(r.get("aircraft_type") or "type not published").strip(),
+                                operator=(r.get("operator") or r.get("category") or "operator not published").strip())
+    except OSError:
+        pass
+    return dict(type="type not published", operator="operator not published")
+
+
 PERSON_DIR = {"charlie": "Charlie", "erika": "Erika", "both": "Both"}
 
-# (overlap_id, following tail, person). One row is one graphic. Duplicate rows in
-# overlaps.csv that describe the SAME (date, field, person, tail) are named in
-# `duplicates` rather than given a second directory of their own.
-BUILD = [
-    ("OWENS-011", "SU-BTT", "erika",   []),
-    ("OWENS-013", "SU-BTT", "erika",   []),
-    ("OWENS-021", "SU-BTT", "erika",   []),
-    ("OWENS-027", "SU-BTT", "erika",   []),
-    ("OWENS-025", "SU-BND", "erika",   []),
-    ("SITE-004",  "SU-BTT", "charlie", ["OWENS-026"]),
-    ("OWENS-035", "SU-BND", "charlie", ["OWENS-065"]),
-    ("OWENS-038", "SU-BTT", "erika",   []),
-    ("OWENS-039", "SU-BTT", "erika",   []),
-    ("OWENS-042", "SU-BND", "erika",   []),
-]
+# WHICH ROWS BECOME GRAPHICS is decided by pick_build() out of the measured
+# windows, not by a hand-written list. See the SCOPE note in the docstring.
+#
+# One graphic is ONE following aircraft, at ONE instance of overlap, against ONE
+# Kirk side. Duplicate rows in overlaps.csv that describe the SAME
+# (date, field, person, tail) are named in `duplicates` rather than given a
+# second directory of their own.
+
+
+def person_for(rec):
+    """Charlie / Erika / Both, or None when this row is not a Kirk overlap.
+
+    A TPUSA event with neither Kirk claimed present is not a Charlie-or-Erika
+    overlap and this template does not cover it. That is a scope fact and it is
+    recorded, not silently dropped.
+    """
+    subj = (rec.get("subject") or "").strip().lower()
+    if subj in ("charlie", "erika", "both"):
+        return subj
+    ch = (rec.get("charlie") or "").strip().lower() in ("yes", "claimed", "true")
+    er = (rec.get("erika") or "").strip().lower() in ("yes", "claimed", "true")
+    if ch and er:
+        return "both"
+    if ch:
+        return "charlie"
+    if er:
+        return "erika"
+    return None
+
+
+def row_tails(rec):
+    """Every following tail a row names. "SU-BTT or SU-BND" names two."""
+    raw = (rec.get("foreign_tail") or "").strip()
+    if not raw or raw.upper() == "UNKNOWN":
+        return []
+    return [t.strip().upper() for t in re.split(r"[;,]| or ", raw) if t.strip()]
+
+
+def pick_build(recs):
+    """(overlap_id, tail, person, duplicates) for every row with a real window.
+
+    A row earns a graphic when, and only when, the archives hold a MEASURED
+    window for the tail it names at the field it names on the date it names.
+    Nothing here widens a date into a time and nothing here promotes a row that
+    came back empty; those rows go to the ledger with their reason.
+
+    WHEN ONE ROW NAMES TWO TAILS and both were heard, the graphic goes to the
+    one with real GROUND contact — a stay at the field is the claim being made,
+    and an airborne pass is not the same event. The other tail is named in the
+    notes so the choice is visible rather than quiet.
+    """
+    chosen, dups = {}, {}
+    for oid in sorted(recs, key=lambda k: (recs[k].get("date") or "", k)):
+        rec = recs[oid]
+        if rec.get("unmeasurable"):
+            continue
+        person = person_for(rec)
+        if person is None:
+            continue
+        best = None
+        for tail in row_tails(rec):
+            wins = windows_for(rec, tail)
+            if not wins:
+                continue
+            rank = (sum(1 for w in wins if w["kind"] == "ground_contact"),
+                    sum(w["n"] for w in wins))
+            if best is None or rank > best[0]:
+                best = (rank, tail, wins)
+        if best is None:
+            continue
+        tail = best[1]
+        key = (rec["date"], rec["airport"], person)
+        if key in chosen:
+            # Same date, same field, same Kirk side: one graphic, not several.
+            dups.setdefault(chosen[key][0], []).append(oid)
+            continue
+        chosen[key] = (oid, tail, person)
+    return [(oid, tail, person, dups.get(oid, []))
+            for oid, tail, person in chosen.values()]
 
 
 def secs(a, b):
@@ -103,26 +264,57 @@ def trim(iso):
     return iso.split(".")[0] + ("Z" if not iso.split(".")[0].endswith("Z") else "")
 
 
-def windows_for(per_tail, tail):
+def field_ceiling(code):
+    """Barometric altitude above which a window near the field is a TRANSIT.
+
+    measure_windows.py deliberately applies no altitude limit — it measures, it
+    does not judge. The judgement is here, and it matters: within 15 km of a
+    field is a circle roughly 30 km across, and an airliner at cruise crosses
+    one of those every few minutes. Drawing that as a hatched "near-field pass"
+    beside a claim that an aircraft was following somebody would manufacture a
+    bar out of an aircraft that never came near the ground. NEAR_FIELD_AGL above
+    the field's own elevation is an approach, a departure climb or a low
+    overflight — something that happened AT the field.
+    """
+    ap = airport_by_code(code)
+    elev = 0.0
+    try:
+        elev = float(ap.get("elevation_ft") or 0)
+    except (AttributeError, TypeError, ValueError):
+        elev = 0.0
+    return elev + NEAR_FIELD_AGL
+
+
+def windows_for(rec, tail):
+    per_tail = rec["per_tail"]
+    if tail not in per_tail:
+        return []
     out = []
     for r in per_tail[tail]["ground"]:
         out.append(dict(kind="ground_contact", **r))
+    ceiling = field_ceiling(rec["airport"])
     for r in per_tail[tail]["near"]:
-        if secs(r["first"], r["last"]) >= MIN_PASS_SEC:
-            out.append(dict(kind="near_field_pass", **r))
+        if secs(r["first"], r["last"]) < MIN_PASS_SEC:
+            continue
+        alt = r.get("min_alt_ft")
+        if alt is None or alt > ceiling:
+            continue                    # a transit over the circle, not a pass at the field
+        out.append(dict(kind="near_field_pass", **r))
     return sorted(out, key=lambda r: r["first"])
 
 
 def yaml_for(oid, tail, person, dups, rec):
     code = rec["airport"]
-    ap = AIRPORTS[code]
+    ap = airport_facts(code)
+    if ap is None:
+        return None, code, "field %s could not be resolved to a name and an IANA time zone" % code
     date = rec["date"]
     # The city and state come from the curated AIRPORTS table, NOT from the
     # overlaps.csv cell: that cell is free text and holds things like
     # "Salt Lake City (event) / Provo (aircraft)", which is not a directory name.
     dirn = "%s_%s_%s_%s_%s" % (date.replace("-", "_"), code, PERSON_DIR[person],
                                ap["state"], ap["city"].lower().replace(" ", "_"))
-    wins = windows_for(rec["per_tail"], tail)
+    wins = windows_for(rec, tail)
     if not wins:
         return None, dirn, "no measured window for %s at %s on %s" % (tail, code, date)
 
@@ -149,12 +341,12 @@ def yaml_for(oid, tail, person, dups, rec):
     a("  state: %s" % ap["state"])
     a("  state_name: %s" % ap["state_name"])
     a("  timezone: %s" % ap["timezone"])
-    a("  town_population: %d" % ap["town_population"])
+    a("  town_population: %s" % ap["town_population"])
     a("  town_population_source: %s" % ap["town_population_source"])
     a("following_plane:")
     a("  tail: %s" % tail)
-    a("  type: %s" % PLANE[tail]["type"])
-    a("  operator: %s" % PLANE[tail]["operator"])
+    a("  type: %s" % plane_facts(tail)["type"])
+    a("  operator: %s" % plane_facts(tail)["operator"])
     a("  segments:")
     for w in wins:
         a("    - from: {utc: %s, source_zone: UTC}" % trim(w["first"]))
@@ -169,8 +361,8 @@ def yaml_for(oid, tail, person, dups, rec):
     if kirk_hits:
         t, runs = kirk_hits[0]
         a("  tail: %s" % t)
-        a("  type: %s" % PLANE.get(t, {}).get("type", "type not published"))
-        a("  operator: %s" % PLANE.get(t, {}).get("operator", "Private"))
+        a("  type: %s" % plane_facts(t)["type"])
+        a("  operator: %s" % plane_facts(t)["operator"])
         a("  segments:")
         for r in runs:
             a("    - from: {utc: %s, source_zone: UTC}" % trim(r["first"]))
@@ -219,8 +411,15 @@ def yaml_for(oid, tail, person, dups, rec):
                     "(%s), but none of them is a Kirk aircraft - they belong to separate claims in "
                     "this investigation and are not drawn as the Kirk bar." % ", ".join(other_hits))
     if npass:
+        # THE DISTANCE IS THE NUMBER THAT MATTERS on a pass and the bar label
+        # only carries the altitude, so it is stated here. Within 15 km is a
+        # circle 30 km across, and "0.2 km at 4,325 ft" and "7.2 km at 2,100 ft"
+        # are not the same event even though both are drawn the same way.
         note.append("A hatched window is an AIRBORNE pass near the field - an approach, a departure "
-                    "climb or an overflight. It is not evidence the aircraft landed.")
+                    "climb or an overflight. It is not evidence the aircraft landed. Closest "
+                    "approach and lowest altitude heard, per pass: "
+                    + "; ".join("%s km at %s ft" % (w["min_km"], w.get("min_alt_ft"))
+                                for w in wins if w["kind"] == "near_field_pass") + ".")
     if dups:
         note.append("overlaps.csv holds this same claim more than once: %s. One graphic, not several."
                     % ", ".join([oid] + dups))
@@ -235,18 +434,21 @@ def yaml_for(oid, tail, person, dups, rec):
 def write_ledger(recs, built):
     """Every candidate row on the qualifying field-years, drawn or not.
 
-    A SKIP IS A COVERAGE FACT AND IT IS PUBLISHED, not hidden. The three reasons
-    are different claims and are never collapsed into one:
+    A SKIP IS A COVERAGE FACT AND IT IS PUBLISHED, not hidden. The reasons are
+    different claims and are never collapsed into one:
+      * the row was never measurable — no date, or a metro area and not a field
+      * the row names no following tail at all
       * archive held nothing for the claimed tail on the claimed date
       * archive held the tail, but it was nowhere near the claimed field
-      * the row names no following tail at all
+      * archive held it near the field, but only airborne above the pass ceiling
+      * a duplicate of a row already built for that date, field and Kirk side
     """
     import csv as _csv
     path = os.path.join(OUT_ROOT, "ledger.csv")
     cols = ["overlap_id", "dir_name", "person", "following_tail", "kirk_tail",
             "airport_code", "date", "times_status", "drawable", "built_date", "skip_reason"]
     rows = []
-    for oid in sorted(recs, key=lambda k: (recs[k]["date"], k)):
+    for oid in sorted(recs, key=lambda k: (recs[k].get("date") or "", k)):
         r = recs[oid]
         hit = built.get(oid)
         tails = [t.strip() for t in r["foreign_tail"].split(";") if t.strip() and t.strip() != "UNKNOWN"]
@@ -255,11 +457,28 @@ def write_ledger(recs, built):
                                         hit["kirk"] or "", r["airport"], r["date"], "complete",
                                         "yes", AS_OF, ""])))
             continue
-        if not tails:
+        if r.get("unmeasurable"):
+            # NOT an archive result. A row with no date, or naming a metro area
+            # rather than a field, was never a measurable question in the first
+            # place, and calling it "the archive holds nothing" would turn a
+            # bookkeeping gap into a negative finding about an aircraft.
+            why = r["unmeasurable"]
+        elif not tails:
             why = "no following tail named on this row"
         else:
-            windows = {t: windows_for(r["per_tail"], t) for t in tails if t in r["per_tail"]}
-            if any(windows.values()):
+            windows = {t: windows_for(r, t) for t in tails if t in r["per_tail"]}
+            if person_for(r) is None:
+                # OUT OF SCOPE, NOT A DUPLICATE AND NOT AN EMPTY ARCHIVE. A TPUSA
+                # event with neither Kirk claimed present is not a Charlie-or-
+                # Erika overlap, so this template has nothing to draw for it even
+                # when the archives held the aircraft. Two of these rows DO have
+                # a measured near-field window, and calling them duplicates would
+                # bury a real measurement under a bookkeeping word.
+                why = ("TPUSA event with neither Kirk claimed present - outside this template, "
+                       "which draws one following aircraft against one Kirk side"
+                       + (" (a measured window for %s DOES exist at this field on this date)"
+                          % "/".join(t for t, w in windows.items() if w) if any(windows.values()) else ""))
+            elif any(windows.values()):
                 why = "duplicate of another row already built for this date, field and person"
             else:
                 held = [t for t in tails if r["per_tail"].get(t, {}).get("queried")]
@@ -285,7 +504,10 @@ def main():
     recs = json.load(open(WINDOWS))
     made = skipped = 0
     built = {}
-    for oid, tail, person, dups in BUILD:
+    build = pick_build(recs)
+    print("%d overlap rows measured, %d of them become a graphic.\n" % (
+        sum(1 for r in recs.values() if not r.get("unmeasurable")), len(build)))
+    for oid, tail, person, dups in sorted(build, key=lambda b: (recs[b[0]]["date"], b[0])):
         rec = recs.get(oid)
         if rec is None:
             print("MISSING  %s not in %s" % (oid, WINDOWS)); skipped += 1; continue
@@ -305,13 +527,6 @@ def main():
         print("%-8s %-11s %-42s %s" % ("OK" if check else "WROTE", oid, dirn,
                                        "HOLLOW Kirk band" if hollow else "two real bars"))
         made += 1
-    # The two 10 September 2025 Provo graphics are written by hand rather than by
-    # this script - they are the only rows with a real Kirk-party aircraft bar -
-    # so they are named here so the ledger is the whole run and not part of it.
-    for oid, dirn, person, tail in (("EXTRA-006", "2025_09_10_KPVU_Charlie_UT_provo", "charlie", "SU-BND"),
-                                    ("OWENS-041", "2025_09_10_KPVU_Both_UT_provo", "both", "SU-BTT"),
-                                    ("SITE-006", "2025_09_10_KPVU_Charlie_UT_provo", "charlie", "SU-BND")):
-        built.setdefault(oid, dict(dir=dirn, person=person, tail=tail, kirk="N102DZ"))
     print("\n%d written, %d skipped." % (made, skipped))
     if not check:
         write_ledger(recs, built)

@@ -10,9 +10,13 @@ and could not be re-run. This is that step, written down, covering ALL rows.
 WHAT IT MEASURES, per (overlap row, tail):
   * ground windows  runs of positions with the ADS-B on-ground flag set within
                     GROUND_MAX_KM of the claimed field. A real stay.
-  * near windows    runs of AIRBORNE positions within NEAR_FIELD_KM of the field
-                    and below NEAR_FIELD_AGL above field elevation. Real,
-                    measured, and NOT a landing.
+  * near windows    runs of AIRBORNE positions within NEAR_FIELD_KM of the
+                    field. Real, measured, and NOT a landing. NO ALTITUDE FLOOR
+                    IS APPLIED HERE, so a jet crossing the circle at cruise
+                    produces a window like an approach does; every window
+                    carries its lowest altitude and build_info_yaml.py is what
+                    decides whether that altitude makes it a pass worth drawing.
+                    Measuring and judging are kept apart on purpose.
   * closest         the single closest position of the day, whatever it was, so
                     "the archive holds this tail but it was 27 km away" can be
                     told apart from "the archive holds nothing".
@@ -52,11 +56,9 @@ from traces import open_trace, TRACE_RE        # noqa: E402
 # field. 8 km covers a large international ramp and excludes the next field over.
 GROUND_MAX_KM = 8.0
 # Airborne and within this of the field is a PASS — an approach, a departure
-# climb, an overflight. It is never a landing.
+# climb, an overflight. It is never a landing, and at cruise altitude it is not
+# even a look at the field: see the docstring on where that judgement is made.
 NEAR_FIELD_KM = 15.0
-# ...and only below this above the field's own elevation. Without the ceiling a
-# jet at cruise crossing the circle would be drawn as if it came to look.
-NEAR_FIELD_AGL = 6000
 # Gap that splits one run into two. Below it the aircraft never left.
 RUN_GAP_SEC = 45 * 60
 
@@ -152,8 +154,6 @@ def measure(tail, date, ap):
     rec = {"closest": None, "ground": [], "near": [], "points": len(pts), "queried": sources}
     if not pts:
         return rec
-    elev = _num(ap.get("elevation_ft")) or 0.0
-    ceiling = elev + NEAR_FIELD_AGL
     best = None
     ground_hits, near_hits = [], []
     for t, lat, lon, alt, src in pts:
@@ -163,7 +163,7 @@ def measure(tail, date, ap):
         if alt is None:
             if km <= GROUND_MAX_KM:
                 ground_hits.append((t, km, None, src))
-        elif km <= NEAR_FIELD_KM and alt <= ceiling:
+        elif km <= NEAR_FIELD_KM:
             near_hits.append((t, km, alt, src))
     rec["closest"] = {"km": round(best[0], 2), "utc": _iso(date, best[1]),
                       "alt_ft": None if best[2] is None else int(best[2]),

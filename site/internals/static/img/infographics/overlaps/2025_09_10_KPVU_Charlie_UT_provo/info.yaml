@@ -19,11 +19,15 @@ following_plane:
   segments:
     - from: {utc: 2025-09-10T16:05:35Z, source_zone: UTC}
       to:   {utc: 2025-09-10T17:34:09Z, source_zone: UTC}
+      basis: ground_contact
       ground_points: 268
+      min_km: 1.29
       sources: adsb-lol|airplanes-live
     - from: {utc: 2025-09-10T19:40:53Z, source_zone: UTC}
       to:   {utc: 2025-09-10T20:29:38Z, source_zone: UTC}
+      basis: ground_contact
       ground_points: 315
+      min_km: 1.29
       sources: adsb-lol|airplanes-live
 kirk_plane:
   tail: N102DZ
@@ -32,11 +36,12 @@ kirk_plane:
   segments:
     - from: {utc: 2025-09-10T21:30:43Z, source_zone: UTC}
       to:   {utc: 2025-09-10T22:10:12Z, source_zone: UTC}
+      basis: ground_contact
       ground_points: 267
       sources: adsb-lol|airplanes-live
 times_status: complete
 as_of: 2026-08-29
-source_line: "Source: recovered ADS-B traces, adsb.lol and airplanes.live, both archives agreeing. Ground contacts only. As of 29 August 2026."
+source_line: "Source: recovered ADS-B traces, adsb.lol and airplanes.live. Ground contacts and near-field passes measured point by point. As of 2026-08-29."
 sources:
   - site/docs/Planes/following/overlaps.csv
   - site/docs/Planes/following/airports.csv
@@ -44,10 +49,8 @@ sources:
   - site/docs/Planes/SU-BND/data/recovered/SU-BND_2025-09-10_airplanes-live_trace_full.json
   - site/docs/Planes/N102DZ/data/recovered/N102DZ_2025-09-10_adsb-lol_trace_full.json
   - site/docs/Planes/N102DZ/data/recovered/N102DZ_2025-09-10_airplanes-live_trace_full.json
+  - site/docs/Planes/info_graphic/code/build_info_yaml.py
 notes: >-
-  The day of the assassination. SU-BND was heard on the ground at Provo twice,
-  with a gap between the two contacts that is a FLIGHT and not a wait. N102DZ was
-  first heard on the ground more than an hour after SU-BND was last heard, so the
-  two aircraft were never on the ground at the same moment. Median distance from
-  the field: SU-BND 1.29 km, N102DZ 0.41 km. Nothing here places any person
-  aboard either aircraft.
+  SU-BND was heard on the ground 2 times at KPVU on this date.
+  overlaps.csv holds this same claim more than once: EXTRA-006, SITE-006. One graphic, not several.
+  A trace proves presence, never purpose, and never occupancy. Nothing here places any person aboard any aircraft.
