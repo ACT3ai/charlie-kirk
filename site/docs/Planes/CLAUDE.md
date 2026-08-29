@@ -258,3 +258,207 @@ idempotent. To rebuild them:
 Order matters in that script — the airport and incident pages must exist before
 any table links to them, because links are gated on page existence. Run the
 script, not the individual builders.
+
+
+================================================================================
+== The "Plane Overlap" Infographic Template ==
+================================================================================
+
+Added 2026-08-29. The FIRST NAMED TEMPLATE in the pattern library, and the only
+one with a real generator behind it. Every instance has the same composition,
+the same bar mechanics and the same text furniture; only the aircraft, the
+place, the person and the times change.
+
+WHAT ONE INSTANCE IS. Exactly one following/intelligence aircraft, at exactly
+one instance of overlap, against exactly one Kirk side — Charlie, or Erika, or
+both. Never two overlaps in one graphic and never two following aircraft in one
+graphic. That triple IS the identity of the graphic and the directory name
+carries it, so the identity is visible without opening anything.
+
+
+=== The four files, and which one does what ===
+
+  {PLANES_DIR}/info_graphic/p_create_svgs.md
+        THE PROMPT. Walks the overlap records, resolves the ground-contact times
+        out of the flight data, writes one info.yaml per overlap and renders it.
+        Runs for ALL overlaps by default; can be scoped to one overlap_id, one
+        tail, one person, one airport, or a date range. May fan out to 12
+        agents, partitioned by overlap, never by stage.
+        IT DOES NOT BUILD THE CODE OR THE TEMPLATE. Both already exist. If
+        either is missing the prompt stops rather than writing a replacement.
+
+  {PLANES_DIR}/info_graphic/template.svg
+        THE PATTERN. A real rendering, annotated. Its header comment is the
+        anatomy of the graphic, top to bottom. Every STRING in it is
+        illustrative; every POSITION in it is authoritative and mirrors the
+        LAYOUT block in the generator. Change one, change the other.
+
+  {PLANES_DIR}/info_graphic/code/build_overlap_svg.ts
+        THE GENERATOR. Reads info.yaml, writes the SVG. Node 22+ runs the .ts
+        directly; code/package.json marks the directory ESM and js-yaml
+        resolves from site/node_modules.
+            node build_overlap_svg.ts <dir>                  one graphic
+            node build_overlap_svg.ts --all <root>           everything
+            node build_overlap_svg.ts --all <root> --check   report only
+        Exit 0 = written, 2 = something was not drawable, 3 = bad usage.
+
+  {SITE_DIR}/internals/static/img/infographics/overlaps/{DIR}/
+        THE OUTPUT, one directory per graphic, holding info.yaml and {DIR}.svg,
+        plus ledger.csv one level up recording every overlap and its status.
+
+{DIR} is the overlap, spelled out:
+
+    {YYYY}_{MM}_{DD}_{AIRPORT}_{Person}_{ST}_{city}
+
+    2025_09_10_KPVU_Charlie_UT_provo
+    2025_09_08_KILG_Both_DE_wilmington
+
+{Person} is exactly Charlie, Erika or Both. {AIRPORT} is the ICAO code. The
+directory behaves like a page key — underscores, no spaces, no special
+characters. Served at /img/infographics/overlaps/{DIR}/{DIR}.svg. An SVG left
+under {SITE_DIR}/docs/ is NOT served and 404s for every real visitor, which is
+why the output does not live beside the generator.
+
+Aspect 16:9, viewBox 1920x1080. Fixed.
+
+
+=== It is a HYBRID: model-generated scene, PLOTTED bars ===
+
+Read the PLOTTED vs MODEL-GENERATED rule above before touching one. This
+template deliberately straddles it:
+
+  * THE BACKGROUND SCENE is MODEL-GENERATED — NanoBanana Pro draws the town, the
+    airport and the sky. No readable values, so a plausible drawing is honest.
+    NOT BUILT YET. Until it exists the ground is a flat medium green, chosen so
+    the white-with-black-pen-edge type will still read once a photograph sits
+    behind it. The generator emits a commented-out <image> slot at the top of
+    every SVG; drop {DIR}_bg.jpg in the directory and uncomment it.
+  * THE BARS, TIMES, DATES AND LABELS ARE VALUES A READER READS OFF THE PICTURE.
+    They are PLOTTED by the generator from info.yaml. A generative model draws a
+    plausible bar, not a real one — the 26 Aug 2026 Overlap_Timeline render got
+    every string right and every bar wrong, and this is where that would repeat.
+
+A NanoBanana-only version may be made as a DESIGN REFERENCE while a composition
+is being worked out. It is never the published artefact and no number is ever
+read off it.
+
+
+=== The anatomy ===
+
+  TITLE, centred across the whole frame: "Following plane overlaps with
+  {Charlie Kirk | Erika Kirk | Charlie and Erika Kirk}".
+
+  BIG NAME BLOCK, frame LEFT, under the title. NEVER WIDER THAN 15% OF THE
+  FRAME. Wraps onto rows — 2 rows for one name, 3 rows for both. The generator
+  shrinks the type until it fits, so a long name cannot break the layout.
+
+  PLACE BLOCK, frame RIGHT, high up, under the title. NEVER WIDER THAN 50% OF
+  THE FRAME. Four right-aligned rows, in this order: airport name, state, city,
+  YEAR — the year set largest. THE YEAR APPEARS ONLY HERE. That is precisely why
+  no date anywhere around the bars carries a year, and the generator's date
+  formatter has no year in it at all.
+
+  THE TOWN, left of centre, between the frame centre and the top: a label rising
+  out of the town centre on a leader line, giving the town and its population.
+  The population line is OMITTED when we have no sourced figure — never guessed.
+
+  THE CENTRE OF THE FRAME IS DELIBERATELY EMPTY. That is where the scene goes.
+
+  CAPTION AND SOURCE, two left-aligned lines above the axis. The caption is not
+  decoration: a trace proves presence, never occupancy.
+
+  THE SHARED TIME AXIS, drawn twice. Left edge = the earlier of the two
+  aircraft's first ground contact. Right edge = the later of the two last
+  contacts. Date over time, centred on each edge, leader line straight down.
+  BOTH BACKGROUND RECTANGLES SHARE THE SAME LEFT AND RIGHT EDGES — one axis,
+  drawn twice, which is what makes the two bars comparable at a glance. Light
+  grey at 50% transparency with a thick black pen edge.
+
+  UPPER BAR = the FOLLOWING / intelligence aircraft, dark red #9B1B1E.
+  LOWER BAR = the CHARLIE / ERIKA / BOTH aircraft, bright yellow #FFE21F.
+  A label sits just above each rectangle naming the aircraft and its type.
+
+  THE BOTTOM 5% BAND belongs to the INNER TIME LABELS and nothing else. They
+  mark the two events that are NOT the axis ends — the later first-contact and
+  the earlier last-contact — on a tick line dropped from the bar. Time alone
+  inside one day; date and time when the window is longer. Never a year.
+
+
+=== The three things the generator REFUSES to do ===
+
+Each one is a rule from the root charter expressed as code, and each one is a
+place a prettier graphic would quietly lie. Do not work around them, and do not
+edit an info.yaml to get past a refusal.
+
+  1. IT WILL NOT DRAW A BAR FROM A MISSING OR "unknown" TIME. A drawn bar is a
+     claim about a duration. overlaps.csv holds DATES, NOT CLOCK TIMES, so most
+     rows will not be drawable until their times are recovered — and that is the
+     correct outcome, recorded in ledger.csv, not a problem to route around.
+  2. IT WILL NOT MERGE TWO GROUND CONTACTS IN A DAY. Every contact is its own
+     filled block on the axis. A gap between two blocks is a FLIGHT, not a wait.
+     SU-BND at KPVU on 2025-09-10 is exactly that case — two contacts, 16:05 to
+     17:34Z and 19:40 to 20:29Z — and merging them would erase a whole flight.
+  3. IT WILL NOT SAY "arrived" OR "departed" FOR ADS-B DATA. What the archives
+     hold is the first and last position a volunteer receiver HEARD. With
+     evidence_basis: adsb_ground_contact every label reads "first heard" and
+     "last heard". Use published_flight_record only when a real arrival or
+     departure record exists, and name it in the sources list.
+
+It also WARNS, and the warnings are findings rather than noise. "THE TWO
+AIRCRAFT WERE NEVER HEARD ON THE GROUND AT THE SAME MOMENT" means same field,
+same day, different hours — a real, publishable result that usually WEAKENS the
+following claim, and it goes on the page at the same size as anything that
+supports it.
+
+
+=== Times and time zones ===
+
+  * info.yaml stores every instant as an ABSOLUTE UTC INSTANT ENDING IN Z,
+    exactly as the source recorded it. Never a local clock time.
+  * The generator converts to the AIRPORT'S OWN LOCAL TIME for display, from the
+    airport.timezone IANA key. Every date and time on the graphic is local.
+  * The YAML is loaded with js-yaml CORE_SCHEMA on purpose. The DEFAULT schema
+    parses an ISO timestamp into a JS Date, which throws the written zone away
+    and would let an unzoned local clock time through as though it were an
+    instant. An instant with no Z and no offset is REFUSED.
+  * Never trust the machine's own zone. The machine this was built on runs on
+    Hawaii time, which is how that bug was found in the first place.
+
+
+=== The Kirk-side aircraft is the hard one ===
+
+The kirk_tail column in overlaps.csv is EMPTY on nearly every row, because the
+claim behind those rows is about a PERSON being in a CITY, not about a Kirk
+aircraft. The lower bar is an AIRCRAFT. A claimed itinerary is not one, and must
+never be substituted for one. If no Kirk-side aircraft has a ground contact in
+the data, there is no second bar and THERE IS NO GRAPHIC — skip the row and
+record why. planes.csv category "Private / Kirk party" is where to look;
+N102DZ is the main one.
+
+
+=== Where the numbers come from ===
+
+  * following/apis/public_open_source/data/analysis/master_proximity.csv — the
+    best source. One row per tail per ground contact, with first_seen_utc,
+    last_seen_utc, airport_code, ground_points, sources, archives_agreeing.
+  * {PLANES_DIR}/{TAIL}/data/recovered/ — the traces themselves.
+  * following/overlaps.csv, flights.csv, airports.csv, tpusa_events.csv, and
+    the root planes.csv for tails, types and categories.
+
+info.yaml carries a sources list naming the file every number came from. It is
+not a formality — it is the reason a reader can check us.
+
+
+=== Build order ===
+
+  1. Run {PLANES_DIR}/info_graphic/p_create_svgs.md, scoped or for everything.
+  2. LOOK AT WHAT WAS DRAWN. rsvg-convert -w 1600 <svg> -o /tmp/check.png and
+     open it. Long airport names, long tail-and-type labels, and early or late
+     inner labels are the three things that break first.
+  3. Read every WARN line and decide what each one means for the page.
+  4. Commit the SVG and its info.yaml like any other tracked file.
+  5. EMBEDDING IS A SEPARATE, DELIBERATE ACT — it changes what the public sees.
+     The prompt lists target pages and does not touch them. The natural targets
+     are the overlap's own page under following/overlap/ and the aircraft's
+     {PLANES_DIR}/{TAIL}/overview.mdx. When a page is edited, refresh its
+     line_count in pages.csv and run `cd site && npm run build`.

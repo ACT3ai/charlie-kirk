@@ -1,0 +1,70 @@
+# Plane Overlap infographic — one following aircraft, one Kirk-side aircraft,
+# one airport, one date. Written by p_create_svgs.md, drawn by
+# site/docs/Planes/info_graphic/code/build_overlap_svg.ts
+#
+# EVERY time below is an ABSOLUTE INSTANT ending in Z. The generator converts to
+# airport local time for display. Never write a local clock time here.
+
+overlap_id: EXTRA-006
+date: 2025-09-10
+person: charlie                      # charlie | erika | both
+dir_name: 2025_09_10_KPVU_Charlie_UT_provo
+
+# adsb_ground_contact  = first/last position a volunteer receiver HEARD.
+# published_flight_record = a real arrival/departure record exists.
+evidence_basis: adsb_ground_contact
+
+airport:
+  code: KPVU
+  name: Provo Municipal Airport
+  city: Provo
+  state: UT
+  state_name: Utah
+  timezone: America/Denver
+  town_population: 115162
+  town_population_source: US Census 2020
+
+following_plane:
+  tail: SU-BND
+  type: Gulfstream G550
+  operator: Egyptian / foreign VIP
+  segments:
+    - from: {utc: 2025-09-10T16:05:35Z, source_zone: UTC}
+      to:   {utc: 2025-09-10T17:34:09Z, source_zone: UTC}
+      ground_points: 100
+      sources: adsb-lol|airplanes-live
+      note: first of two ground contacts this UTC day
+    - from: {utc: 2025-09-10T19:40:53Z, source_zone: UTC}
+      to:   {utc: 2025-09-10T20:29:38Z, source_zone: UTC}
+      ground_points: 156
+      sources: adsb-lol|airplanes-live
+      note: >-
+        Second ground contact. The gap between the two is a FLIGHT, not a wait.
+        Never merged into one bar.
+
+kirk_plane:
+  tail: N102DZ
+  type: Gulfstream V
+  operator: Private / Kirk party
+  segments:
+    - from: {utc: 2025-09-10T21:30:43Z, source_zone: UTC}
+      to:   {utc: 2025-09-10T22:10:12Z, source_zone: UTC}
+      ground_points: 133
+      sources: adsb-lol|airplanes-live
+
+times_status: complete
+as_of: 2026-08-29
+source_line: "Source: master_proximity.csv from recovered adsb-lol + airplanes-live traces, as of 2026-08-29"
+
+sources:
+  - site/docs/Planes/following/apis/public_open_source/data/analysis/master_proximity.csv
+  - site/docs/Planes/SU-BND/data/recovered/SU-BND_2025-09-10_adsb-lol_trace_full.json
+  - site/docs/Planes/SU-BND/data/recovered/SU-BND_2025-09-10_airplanes-live_trace_full.json
+  - site/docs/Planes/N102DZ/data/recovered/N102DZ_2025-09-10_adsb-lol_trace_full.json
+  - site/docs/Planes/N102DZ/data/recovered/N102DZ_2025-09-10_airplanes-live_trace_full.json
+  - site/docs/Planes/following/overlaps.csv
+
+notes: >-
+  Charlie Kirk was killed at Utah Valley University in Orem, 5 miles from this
+  field, at about 12:20 pm local on this date. Both aircraft were heard on the
+  ground at KPVU that day. They were NOT heard on the ground at the same moment.

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  TEMPLATE — Plane Overlap infographic. 16:9, viewBox 1920 x 1080.
+
+  THIS IS THE PATTERN, NOT A FINISHED GRAPHIC, and it is not published anywhere.
+  It is a real rendering (overlap EXTRA-006, KPVU, 10 Sep 2025) kept here so the
+  layout can be read without running anything. Every STRING in it is
+  illustrative. Every POSITION in it is authoritative and mirrors the LAYOUT
+  block in:
+
+      site/docs/Planes/info_graphic/code/build_overlap_svg.ts
+
+  Real graphics are never hand-written from this file. They are emitted by that
+  generator from an info.yaml into
+
+      site/internals/static/img/infographics/overlaps/{DIR}/{DIR}.svg
+
+  where {DIR} is {YYYY}_{MM}_{DD}_{AIRPORT}_{Charlie|Erika|Both}_{ST}_{city}.
+
+  If a constant changes here, change LAYOUT in the generator, and the other way
+  round. The generator is what actually ships; this file exists to be read.
+
+  THE ANATOMY, top to bottom
+  --------------------------
+  title            y 60, centred across the WHOLE frame, "Following plane
+                   overlaps with {Charlie Kirk | Erika Kirk | Charlie and Erika
+                   Kirk}".
+  name block       frame LEFT, x 64, under the title. NEVER WIDER THAN 15% OF
+                   THE FRAME (288px). Wraps: 2 rows for one name, 3 for both.
+                   The generator shrinks the type until it fits.
+  place block      frame RIGHT, x 1856, high up, under the title. NEVER WIDER
+                   THAN 50% OF THE FRAME (960px). Four rows, in this order:
+                   airport name, state, city, YEAR. The year is the largest
+                   thing in the block — and it is the ONLY place the year
+                   appears, which is why no date around the bars carries one.
+  town             label rises out of the town centre on a leader line, left of
+                   centre, between the frame centre and the top. Town name and
+                   population. Population line is omitted when we do not have a
+                   sourced figure — never guessed.
+  centre           DELIBERATELY EMPTY. This is where the generated town/airport
+                   scene goes. Nothing is laid over the middle.
+  caption + source two left-aligned lines above the axis. The caption is not
+                   decoration: a trace proves presence, never occupancy.
+  axis             ONE shared time axis drawn twice. x 260 to x 1660. Left edge
+                   = the earlier of the two aircraft's first ground contact.
+                   Right edge = the later of the two last contacts. Date over
+                   time, centred on each edge, leader line straight down.
+                   ALL TIMES ARE LOCAL TO THE AIRPORT. Never UTC.
+  upper bar        the FOLLOWING / intelligence aircraft. Dark red #9B1B1E.
+  lower bar        the CHARLIE / ERIKA / BOTH aircraft. Bright yellow #FFE21F.
+                   Both sit in a light-grey 50%-transparent rectangle with a
+                   thick black pen edge, and BOTH RECTANGLES SHARE THE SAME LEFT
+                   AND RIGHT EDGES — that is what makes the two comparable.
+  segments         EACH GROUND CONTACT IS ITS OWN FILLED BLOCK. Two blocks in a
+                   day are never merged into one: a gap between them is a
+                   FLIGHT, not a wait. The example below shows SU-BND with two.
+  inner labels     the 5% band under the lower rectangle, and nothing else goes
+                   there. They mark the two events that are NOT the axis ends:
+                   the later first-contact and the earlier last-contact. Time
+                   only inside one day; date and time when the window is longer.
+                   Never a year.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img">
+  <title>Following plane overlaps with Charlie Kirk — Provo Municipal Airport, Provo, Utah, 2025</title>
+  <desc>Following aircraft — SU-BND (Gulfstream G550) · 2 ground contacts. Charlie Kirk aircraft — N102DZ (Gulfstream V) · 1 ground contact. Shared axis runs Wed 10 Sep 10:05 am to Wed 10 Sep 4:10 pm 2025, airport local time, a window of 6 hr 5 min. ADS-B ground contacts heard by volunteer receivers. Presence only — this places no person aboard either aircraft.</desc>
+  <rect x="0" y="0" width="1920" height="1080" fill="#5F9C6C"/>
+  <!-- BACKGROUND IMAGE SLOT — the generated town/airport scene goes here when it exists.
+       <image href="2025_09_10_KPVU_Charlie_UT_provo_bg.jpg" x="0" y="0" width="1920" height="1080" preserveAspectRatio="xMidYMid slice"/> -->
+  <style>
+    .t  { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+          fill: #FFFFFF; stroke: #000000; paint-order: stroke; stroke-linejoin: round; }
+    .xl { font-weight: 800; stroke-width: 3.5px; }
+    .lg { font-weight: 600; stroke-width: 2.5px; }
+    .md { font-weight: 700; stroke-width: 2px; }
+    .sm { font-weight: 600; stroke-width: 1.6px; }
+    .xs { font-size: 20px; font-weight: 500; stroke-width: 1.2px; }
+  </style>
+  <!-- title, centred across the whole frame -->
+  <text class="t lg" font-size="42" x="960" y="60" text-anchor="middle">Following plane overlaps with Charlie Kirk</text>
+  <!-- big name block: frame left, never wider than 15% of the frame -->
+  <text class="t xl" font-size="71" x="64" y="156">Charlie</text>
+  <text class="t xl" font-size="71" x="64" y="231">Kirk</text>
+  <!-- airport / state / city / year: frame right, high, never wider than 50% -->
+  <text class="t xl" font-size="54" x="1856" y="150" text-anchor="end">Provo Municipal Airport</text>
+  <text class="t xl" font-size="46" x="1856" y="208" text-anchor="end">Utah</text>
+  <text class="t xl" font-size="46" x="1856" y="263" text-anchor="end">Provo</text>
+  <text class="t xl" font-size="88" x="1856" y="354" text-anchor="end">2025</text>
+  <!-- the town behind the field: label rises out of the town centre -->
+  <text class="t sm" font-size="32" x="660" y="224" text-anchor="middle">Provo, Utah</text>
+  <text class="t sm" font-size="26" x="660" y="260" text-anchor="middle">population 115,162</text>
+  <line x1="660" y1="276" x2="660" y2="330" stroke="#000000" stroke-width="3"/>
+  <circle cx="660" cy="330" r="6" fill="#FFFFFF" stroke="#000000" stroke-width="3"/>
+  <!-- shared time axis: left = first heard on the ground, right = last heard on the ground. Airport local time. -->
+  <text class="t xs" x="260" y="716" text-anchor="middle">first heard on the ground</text>
+  <text class="t sm" font-size="26" x="260" y="754" text-anchor="middle">Wed 10 Sep</text>
+  <text class="t md" font-size="34" x="260" y="792" text-anchor="middle">10:05 am</text>
+  <line x1="260" y1="804" x2="260" y2="1032" stroke="#000000" stroke-width="3"/>
+  <text class="t xs" x="1660" y="716" text-anchor="middle">last heard on the ground</text>
+  <text class="t sm" font-size="26" x="1660" y="754" text-anchor="middle">Wed 10 Sep</text>
+  <text class="t md" font-size="34" x="1660" y="792" text-anchor="middle">4:10 pm</text>
+  <line x1="1660" y1="804" x2="1660" y2="1032" stroke="#000000" stroke-width="3"/>
+  <text class="t xs" x="960" y="716" text-anchor="middle">window 6 hr 5 min · times local to the airport</text>
+  <!-- upper bar: the following / intelligence aircraft -->
+  <text class="t sm" font-size="26" x="260" y="862">Following aircraft — SU-BND (Gulfstream G550) · 2 ground contacts</text>
+  <rect x="260" y="872" width="1400" height="60" fill="#D9D9D9" fill-opacity="0.5" stroke="#000000" stroke-width="5"/>
+  <rect x="260.0" y="878" width="340.1" height="48" fill="#9B1B1E"><title>10:05 am to 11:34 am (1 hr 29 min), 100 ground points, adsb-lol|airplanes-live</title></rect>
+  <rect x="1086.7" y="878" width="187.2" height="48" fill="#9B1B1E"><title>1:40 pm to 2:29 pm (49 min), 156 ground points, adsb-lol|airplanes-live</title></rect>
+  <!-- lower bar: the Charlie Kirk aircraft -->
+  <text class="t sm" font-size="26" x="260" y="958">Charlie Kirk aircraft — N102DZ (Gulfstream V) · 1 ground contact</text>
+  <rect x="260" y="968" width="1400" height="60" fill="#D9D9D9" fill-opacity="0.5" stroke="#000000" stroke-width="5"/>
+  <rect x="1508.4" y="974" width="151.6" height="48" fill="#FFE21F"><title>3:30 pm to 4:10 pm (39 min), 133 ground points, adsb-lol|airplanes-live</title></rect>
+  <!-- inner labels: the later first-contact and the earlier last-contact -->
+  <line x1="1508" y1="872" x2="1508" y2="1038" stroke="#000000" stroke-width="3"/>
+  <line x1="1508" y1="1038" x2="1511" y2="1046" stroke="#000000" stroke-width="2"/>
+  <text class="t xs" x="1511" y="1052" text-anchor="middle">first heard 3:30 pm</text>
+  <line x1="1274" y1="872" x2="1274" y2="1038" stroke="#000000" stroke-width="3"/>
+  <line x1="1274" y1="1038" x2="1271" y2="1046" stroke="#000000" stroke-width="2"/>
+  <text class="t xs" x="1271" y="1052" text-anchor="middle">last heard 2:29 pm</text>
+  <!-- required furniture: the claim this picture must not be read as, and the source -->
+  <text class="t xs" font-size="22" x="64" y="630">ADS-B ground contacts heard by volunteer receivers. Presence only — this places no person aboard either aircraft.</text>
+  <text class="t xs" font-size="22" x="64" y="662">Source: master_proximity.csv from recovered adsb-lol + airplanes-live traces, as of 2026-08-29</text>
+</svg>

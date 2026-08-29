@@ -11,6 +11,34 @@ docs `exclude` list, so these never become pages.
     _goals_template.mdx                     copy to {infographic dir}/goals.mdx
     _nana_banana_pro_prompt_template.txt    copy to {infographic dir}/nana_banana_pro_prompt.txt
 
+## The Plane Overlap template
+
+The first NAMED template in this library, and the only one so far with a real
+generator behind it. One graphic = one following aircraft x one overlap x one
+Kirk side (Charlie / Erika / both).
+
+    p_create_svgs.md            the prompt that walks the overlaps and builds them
+    template.svg                the pattern. A real rendering, annotated. Read the
+                                header comment for the anatomy of the graphic.
+    code/build_overlap_svg.ts   the generator. Reads info.yaml, writes the SVG.
+    code/package.json           marks code/ as ESM so node runs the .ts directly
+
+Run it:
+
+    node code/build_overlap_svg.ts <dir>                     one graphic
+    node code/build_overlap_svg.ts --all <root>              everything
+    node code/build_overlap_svg.ts --all <root> --check      report only
+
+Output goes to site/internals/static/img/infographics/overlaps/{DIR}/, where
+{DIR} is {YYYY}_{MM}_{DD}_{AIRPORT}_{Charlie|Erika|Both}_{ST}_{city}.
+
+THE BARS ARE PLOTTED, NOT PROMPTED. A reader reads values off them, so a
+generative model never draws them. The town/airport scene behind them may be
+model-generated; the bars never are. The generator refuses missing times,
+refuses to merge two ground contacts in a day, and refuses to say "arrived" for
+data that only says "heard". Do not work around any of those - they are the
+rules from site/docs/Planes/CLAUDE.md expressed as code.
+
 ## Where a real infographic goes
 
 NOT here. A real infographic goes where Docusaurus can serve the image at a
