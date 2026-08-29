@@ -1009,9 +1009,10 @@ record either way — **and the record does not claim more than it can support.*
 That last point matters more than it looks. It would be easy to write "the sweep
 streamed this whole day and this aircraft was not in it, therefore the archive
 had nothing." **That would be false**, because the sweep's byte pre-filter
-rejects a file *before* the aircraft is ever identified. So each absence is now
-classified, and where we hold that aircraft-day from another archive the cause is
-**tested** by replaying both filter versions against its real positions:
+rejects a file *before* the aircraft is ever identified. So each absence is now sorted
+into one of four causes — *categorized*, in the ordinary sense, nothing to do with
+government classification — and where we hold that aircraft-day from another
+archive the cause is **tested** by replaying both filter versions against its real positions:
 
 | Verdict | Count | What it means |
 |---|---:|---|
@@ -1165,7 +1166,7 @@ Three rules came out of it, and they govern everything above:
 | `geo_recurrence.csv` | 799 aircraft near 2+ events in 2+ states, with control contamination flagged |
 | `su_presence_union.csv` | the four-row union of both routes (§4.9) |
 | `flight_legs.csv` | 2,349 flight legs, each labelled direct / overnight / gap |
-| `al_only_classified.csv` | every one-archive-only aircraft-day, classified against four independent tests |
+| `al_only_classified.csv` | every one-archive-only aircraft-day, sorted into a cause by four independent tests |
 | `wayback_trackpoll_legs.json` | the 85 legs re-parsed out of pages scored as empty |
 | `recurrence_hardtest.csv` | the 3,032-aircraft recurrence population and the hard test applied to it |
 | `data_integrity.json` | the current integrity audit result |
@@ -1242,7 +1243,7 @@ Three rules came out of it, and they govern everything above:
 | **811 aircraft-days unresolved by our own tooling** | Ours, not the archive's. Kept as a separate ledger state so they never inflate coverage |
 | **9 UTC days with no adsb.lol release at all**, costing 3 event-days | A hole in **adsb.lol's own archive**, control-confirmed |
 
-**Not one thing on that list is a removal.** Every single gap classified out as a
+**Not one thing on that list is a removal.** Every single gap resolves to a
 retention boundary, an archive coverage hole, or a defect in our own tooling.
 
 ### The 36 lost sweep days were our bug, and it is provably not date-selective
