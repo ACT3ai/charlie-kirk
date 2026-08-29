@@ -124,14 +124,22 @@ def main():
                 lat, lon = g.get("lat"), g.get("lon")
                 if lat is None: continue
                 best = None
-                d0 = dt.date.fromisoformat(day)
+                # THE VISIT'S OWN UTC DATE, not the file's. A track that straddles
+                # midnight is written into the NEXT day's file with negative
+                # second-offsets, so the file name is 24 hours later than the
+                # positions in it. Two N102DZ ground visits at Bozeman were dated
+                # 2025-08-20 when they actually happened on 2025-08-19.
+                visit_day = g.get("utc_date") or day
+                d0 = dt.date.fromisoformat(visit_day)
                 for off in range(-WINDOW, WINDOW + 1):
                     for ev in by_date.get((d0 + dt.timedelta(days=off)).isoformat(), []):
                         mi = haversine_km(lat, lon, ev["lat"], ev["lon"]) * MI_PER_KM
                         if best is None or mi < best[0]: best = (mi, ev, off)
                 mi, ev, off = best if best else (None, {}, None)
                 rows.append(dict(
-                    tail=tail, date=day, airport_code=code,
+                    tail=tail, date=visit_day, file_date=day,
+                    dated_from_previous_utc_day=g.get("dated_from_previous_utc_day", False),
+                    airport_code=code,
                     airport_name=g.get("airport_name",""), airport_city=g.get("airport_city",""),
                     median_km_from_field=g.get("median_distance_km"),
                     ground_points=g.get("ground_points"),

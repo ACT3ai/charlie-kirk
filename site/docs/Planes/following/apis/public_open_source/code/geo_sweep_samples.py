@@ -57,6 +57,7 @@ from targets import load_events                                        # noqa: E
 from geo_sweep import (check_trace, flag_aircraft, store_worthy,        # noqa: E402
                        prefilter_patterns, resolve_field, utcnow,
                        HITS_FIELDS, OUT_ROOT)
+from atomic import write_json   # atomic: never leave a spliced evidence file  # noqa: E402
 
 BASE = "https://samples.adsbexchange.com/traces/{y}/{m}/{d}"
 SAMPLES_FLOOR = dt.date(2016, 7, 1)
@@ -201,7 +202,7 @@ def write_day(day, hits, meta):
     mp = os.path.join(outdir, "_sweep.meta.json")
     if os.path.exists(mp):
         mp = os.path.join(outdir, f"_sweep.{utcnow()[:19].replace(':', '')}.meta.json")
-    json.dump(meta, open(mp, "w"), indent=2)
+    write_json(mp, meta, indent=2)
     hp = os.path.join(outdir, "hits.csv.gz")
     if os.path.exists(hp):
         hp = os.path.join(outdir, f"hits.{utcnow()[:19].replace(':', '')}.csv.gz")

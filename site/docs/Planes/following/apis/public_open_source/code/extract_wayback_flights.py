@@ -30,6 +30,10 @@ disagreement gets written down.
   python3 extract_wayback_flights.py --dry-run  # report only
 """
 import re, os, json, glob, sys, datetime
+import os
+import sys
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "lib"))
+from atomic import write_json   # atomic: never leave a spliced evidence file
 
 PLANES = os.path.abspath(os.path.join(os.path.dirname(__file__), "../../../../"))
 DRY = "--dry-run" in sys.argv
@@ -138,7 +142,7 @@ for path in sorted(glob.glob(os.path.join(PLANES, "*/data/recovered/*_wayback_*.
         meta["flight_rows_extractor"] = "extract_wayback_flights.py"
         meta["flight_rows_corrected_utc"] = NOW
         meta["table_state"] = rec["table_state"]
-        json.dump(meta, open(meta_path, "w"), indent=2)
+        write_json(meta_path, meta, indent=2)
     print(f"{tail:8s} {ts} {site:14s} {rec['rows_recovered']:3d} rows  "
           f"(was {rec['previously_recorded']})  {rec['table_state']}  live_today={rec['live_http_today']}")
 

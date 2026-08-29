@@ -1,0 +1,49 @@
+{
+  "extracted_utc": "2026-08-29T02:51:54.110390Z",
+  "extractor": "extract_wayback_flights.py",
+  "supersedes": "flight_rows_recovered in the .meta.json sidecar, which was wrong",
+  "tail": "N55906",
+  "snapshot_utc": "20100304160214",
+  "site": "flightaware",
+  "file": "N55906_20100304160214_wayback_flightaware.html",
+  "bytes": 57818,
+  "live_http_today": 200,
+  "previously_recorded": null,
+  "rows_recovered": 2,
+  "flights": [
+    {
+      "date": "28-Feb-2010",
+      "airports": [
+        "PARO",
+        "KJQF",
+        "KHLX"
+      ],
+      "cells": [
+        "28-Feb-2010",
+        "PARO/ T",
+        "Concord Rgnl ( KJQF )",
+        "Twin County ( KHLX )",
+        "04:38PM&nbsp;EST",
+        "05:32PM&nbsp;EST",
+        "0:54"
+      ]
+    },
+    {
+      "date": "28-Feb-2010",
+      "airports": [
+        "KORL",
+        "KEQY"
+      ],
+      "cells": [
+        "28-Feb-2010",
+        "P28R/ T",
+        "Executive ( KORL )",
+        "Charlotte-Monroe Executive ( KEQY )",
+        "10:30AM&nbsp;EST",
+        "01:54PM&nbsp;EST",
+        "3:24"
+      ]
+    }
+  ],
+  "table_state": "POPULATED"
+}

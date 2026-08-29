@@ -1,13 +1,12 @@
 {
-  "url": "https://globe.airplanes.live/globe_history/2024/04/07/traces/d3/trace_full_0101d3.json",
-  "http_status": 404,
-  "bytes": 0,
-  "retrieved_utc": "2026-08-24T19:09:15Z",
-  "tail": "SU-BTT",
-  "date_utc": "2024-04-07",
-  "source_key": "airplanes-live",
-  "tool": "apis/public_open_source/code/fetch_event_windows.py",
-  "note": "NO TRACE FOR THIS AIRCRAFT ON THIS DATE. A volunteer receiver network heard nothing. Parked with the transponder off, outside coverage, or the claimed date is wrong - all three look identical from here. AN ABSENCE IS NOT A FINDING."
-}
-ical from here. AN ABSENCE IS NOT A FINDING."
+ "url": "https://globe.airplanes.live/globe_history/2024/04/07/traces/d3/trace_full_0101d3.json",
+ "http_status": 404,
+ "bytes": 0,
+ "retrieved_utc": "2026-08-24T19:09:15Z",
+ "tail": "SU-BTT",
+ "date_utc": "2024-04-07",
+ "source_key": "airplanes-live",
+ "tool": "apis/public_open_source/code/fetch_event_windows.py",
+ "note": "NO TRACE FOR THIS AIRCRAFT ON THIS DATE. A volunteer receiver network heard nothing. Parked with the transponder off, outside coverage, or the claimed date is wrong - all three look identical from here. AN ABSENCE IS NOT A FINDING.",
+ "_repair_note": "Repaired 2026-08-28. The raw bytes were one complete JSON object followed by a 49-byte fragment: the tail of an earlier, LONGER write that a shorter second write failed to truncate. json.load() refused the file, so this ask record was invisible to every audit that used it. No content was lost - the fragment is the tail of the same record. The writer was made atomic in the same commit so a partial overwrite cannot recur."
 }

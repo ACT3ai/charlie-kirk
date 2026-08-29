@@ -1,11 +1,11 @@
 {
-  "generated_utc": "2026-08-24T17:18:33.564831Z",
+  "generated_utc": "2026-08-29T02:51:54.110390Z",
   "totals": {
-    "fr24_rows": 44,
-    "fa_rows": 109,
-    "fr24_files": 20,
-    "fa_files": 22,
-    "fa_shell": 6,
+    "fr24_rows": 54,
+    "fa_rows": 111,
+    "fr24_files": 22,
+    "fa_files": 28,
+    "fa_shell": 11,
     "fr24_empty": 9
   },
   "captures": [
@@ -16,7 +16,7 @@
       "file": "N102DZ_20220526025401_wayback_flightradar24.html",
       "bytes": 63651,
       "live_http_today": 403,
-      "previously_recorded": 0,
+      "previously_recorded": 2,
       "rows_recovered": 2,
       "identity": {
         "aircraft": "SEARCH AIRPORTS",
@@ -64,7 +64,7 @@
       "file": "N102DZ_20250911055712_wayback_flightradar24.html",
       "bytes": 97129,
       "live_http_today": 403,
-      "previously_recorded": 0,
+      "previously_recorded": 11,
       "rows_recovered": 11,
       "identity": {
         "aircraft": "Gulfstream V",
@@ -238,7 +238,7 @@
       "file": "N102DZ_20260114192750_wayback_flightaware.html",
       "bytes": 457855,
       "live_http_today": 200,
-      "previously_recorded": null,
+      "previously_recorded": 0,
       "rows_recovered": 0,
       "flights": [],
       "table_state": "JAVASCRIPT_SHELL_NO_SERVER_RENDERED_ROWS"
@@ -248,9 +248,9 @@
       "snapshot_utc": "20230507022731",
       "site": "flightaware",
       "file": "N1098L_20230507022731_wayback_flightaware.html",
-      "bytes": 497941,
+      "bytes": 497915,
       "live_http_today": 200,
-      "previously_recorded": null,
+      "previously_recorded": 0,
       "rows_recovered": 0,
       "flights": [],
       "table_state": "JAVASCRIPT_SHELL_NO_SERVER_RENDERED_ROWS"
@@ -260,9 +260,9 @@
       "snapshot_utc": "20250920162925",
       "site": "flightaware",
       "file": "N1098L_20250920162925_wayback_flightaware.html",
-      "bytes": 592924,
+      "bytes": 592898,
       "live_http_today": 200,
-      "previously_recorded": null,
+      "previously_recorded": 0,
       "rows_recovered": 0,
       "flights": [],
       "table_state": "JAVASCRIPT_SHELL_NO_SERVER_RENDERED_ROWS"
@@ -272,7 +272,43 @@
       "snapshot_utc": "20250923141540",
       "site": "flightaware",
       "file": "N1098L_20250923141540_wayback_flightaware.html",
-      "bytes": 592924,
+      "bytes": 592898,
+      "live_http_today": 200,
+      "previously_recorded": 0,
+      "rows_recovered": 0,
+      "flights": [],
+      "table_state": "JAVASCRIPT_SHELL_NO_SERVER_RENDERED_ROWS"
+    },
+    {
+      "tail": "N2100L",
+      "snapshot_utc": "20230326161417",
+      "site": "flightaware",
+      "file": "N2100L_20230326161417_wayback_flightaware.html",
+      "bytes": 468093,
+      "live_http_today": 200,
+      "previously_recorded": null,
+      "rows_recovered": 0,
+      "flights": [],
+      "table_state": "JAVASCRIPT_SHELL_NO_SERVER_RENDERED_ROWS"
+    },
+    {
+      "tail": "N2100L",
+      "snapshot_utc": "20250306001643",
+      "site": "flightaware",
+      "file": "N2100L_20250306001643_wayback_flightaware.html",
+      "bytes": 595739,
+      "live_http_today": 200,
+      "previously_recorded": null,
+      "rows_recovered": 0,
+      "flights": [],
+      "table_state": "JAVASCRIPT_SHELL_NO_SERVER_RENDERED_ROWS"
+    },
+    {
+      "tail": "N2100L",
+      "snapshot_utc": "20250920153138",
+      "site": "flightaware",
+      "file": "N2100L_20250920153138_wayback_flightaware.html",
+      "bytes": 595739,
       "live_http_today": 200,
       "previously_recorded": null,
       "rows_recovered": 0,
@@ -284,7 +320,7 @@
       "snapshot_utc": "20220522070338",
       "site": "flightradar24",
       "file": "N40JD_20220522070338_wayback_flightradar24.html",
-      "bytes": 56792,
+      "bytes": 56807,
       "live_http_today": 403,
       "previously_recorded": 0,
       "rows_recovered": 0,
@@ -299,13 +335,59 @@
       "table_state": "PRESENT_BUT_EMPTY"
     },
     {
+      "tail": "N55906",
+      "snapshot_utc": "20100304160214",
+      "site": "flightaware",
+      "file": "N55906_20100304160214_wayback_flightaware.html",
+      "bytes": 57818,
+      "live_http_today": 200,
+      "previously_recorded": null,
+      "rows_recovered": 2,
+      "flights": [
+        {
+          "date": "28-Feb-2010",
+          "airports": [
+            "PARO",
+            "KJQF",
+            "KHLX"
+          ],
+          "cells": [
+            "28-Feb-2010",
+            "PARO/ T",
+            "Concord Rgnl ( KJQF )",
+            "Twin County ( KHLX )",
+            "04:38PM&nbsp;EST",
+            "05:32PM&nbsp;EST",
+            "0:54"
+          ]
+        },
+        {
+          "date": "28-Feb-2010",
+          "airports": [
+            "KORL",
+            "KEQY"
+          ],
+          "cells": [
+            "28-Feb-2010",
+            "P28R/ T",
+            "Executive ( KORL )",
+            "Charlotte-Monroe Executive ( KEQY )",
+            "10:30AM&nbsp;EST",
+            "01:54PM&nbsp;EST",
+            "3:24"
+          ]
+        }
+      ],
+      "table_state": "POPULATED"
+    },
+    {
       "tail": "N560TW",
       "snapshot_utc": "20161129055521",
       "site": "flightaware",
       "file": "N560TW_20161129055521_wayback_flightaware.html",
       "bytes": 56139,
       "live_http_today": 200,
-      "previously_recorded": null,
+      "previously_recorded": 9,
       "rows_recovered": 9,
       "flights": [
         {
@@ -462,7 +544,7 @@
       "file": "N560TW_20260415163343_wayback_flightaware.html",
       "bytes": 502596,
       "live_http_today": 200,
-      "previously_recorded": null,
+      "previously_recorded": 0,
       "rows_recovered": 0,
       "flights": [],
       "table_state": "JAVASCRIPT_SHELL_NO_SERVER_RENDERED_ROWS"
@@ -474,7 +556,7 @@
       "file": "N582MM_20111220063813_wayback_flightaware.html",
       "bytes": 87392,
       "live_http_today": 200,
-      "previously_recorded": null,
+      "previously_recorded": 4,
       "rows_recovered": 4,
       "flights": [
         {
@@ -551,7 +633,7 @@
       "file": "N582MM_20150114071205_wayback_flightaware.html",
       "bytes": 52364,
       "live_http_today": 200,
-      "previously_recorded": null,
+      "previously_recorded": 8,
       "rows_recovered": 8,
       "flights": [
         {
@@ -692,7 +774,7 @@
       "file": "N582MM_20150328021838_wayback_flightaware.html",
       "bytes": 52232,
       "live_http_today": 200,
-      "previously_recorded": null,
+      "previously_recorded": 7,
       "rows_recovered": 7,
       "flights": [
         {
@@ -817,7 +899,7 @@
       "file": "N582MM_20150429035755_wayback_flightaware.html",
       "bytes": 51304,
       "live_http_today": 200,
-      "previously_recorded": null,
+      "previously_recorded": 7,
       "rows_recovered": 7,
       "flights": [
         {
@@ -942,7 +1024,7 @@
       "file": "N582MM_20150531103013_wayback_flightaware.html",
       "bytes": 47434,
       "live_http_today": 200,
-      "previously_recorded": null,
+      "previously_recorded": 2,
       "rows_recovered": 2,
       "flights": [
         {
@@ -987,7 +1069,7 @@
       "file": "N582MM_20150704115339_wayback_flightaware.html",
       "bytes": 52712,
       "live_http_today": 200,
-      "previously_recorded": null,
+      "previously_recorded": 6,
       "rows_recovered": 6,
       "flights": [
         {
@@ -1096,7 +1178,7 @@
       "file": "N582MM_20151018073027_wayback_flightaware.html",
       "bytes": 45499,
       "live_http_today": 200,
-      "previously_recorded": null,
+      "previously_recorded": 6,
       "rows_recovered": 6,
       "flights": [
         {
@@ -1199,13 +1281,217 @@
       "table_state": "POPULATED"
     },
     {
+      "tail": "N59906",
+      "snapshot_utc": "20220829235831",
+      "site": "flightradar24",
+      "file": "N59906_20220829235831_wayback_flightradar24.html",
+      "bytes": 74648,
+      "live_http_today": 403,
+      "previously_recorded": 0,
+      "rows_recovered": 5,
+      "identity": {
+        "aircraft": "SEARCH AIRPORTS",
+        "operator": "-",
+        "type_code": "PA31",
+        "mode_s": "A7C14D",
+        "serial": "AGE"
+      },
+      "flights": [
+        {
+          "date": null,
+          "std_epoch": 1661789676,
+          "std_utc": "2022-08-29T16:14:36Z",
+          "atd_utc": "2022-08-29T16:14:36Z",
+          "sta_utc": "2022-08-29T23:08:44Z",
+          "arr_utc": null,
+          "status": null,
+          "flight_time": "6:54",
+          "from_name": "Bellingham",
+          "from_code": "BLI",
+          "to_name": "Bellingham",
+          "to_code": "BLI"
+        },
+        {
+          "date": null,
+          "std_epoch": 1661562106,
+          "std_utc": "2022-08-27T01:01:46Z",
+          "atd_utc": null,
+          "sta_utc": "2022-08-27T02:27:49Z",
+          "arr_utc": null,
+          "status": null,
+          "flight_time": null,
+          "from_name": "Bellingham",
+          "from_code": "BLI",
+          "to_name": "Bellingham",
+          "to_code": "BLI"
+        },
+        {
+          "date": null,
+          "std_epoch": 1661531700,
+          "std_utc": "2022-08-26T16:35:00Z",
+          "atd_utc": "2022-08-26T17:04:55Z",
+          "sta_utc": "2022-08-26T18:19:29Z",
+          "arr_utc": null,
+          "status": null,
+          "flight_time": "3:26",
+          "from_name": "Bellingham",
+          "from_code": "BLI",
+          "to_name": "Bellingham",
+          "to_code": "BLI"
+        },
+        {
+          "date": null,
+          "std_epoch": 1661362199,
+          "std_utc": "2022-08-24T17:29:59Z",
+          "atd_utc": "2022-08-24T17:29:59Z",
+          "sta_utc": "2022-08-24T21:50:53Z",
+          "arr_utc": null,
+          "status": null,
+          "flight_time": "4:21",
+          "from_name": "Bellingham",
+          "from_code": "BLI",
+          "to_name": "Bellingham",
+          "to_code": "BLI"
+        },
+        {
+          "date": null,
+          "std_epoch": 1661270400,
+          "std_utc": "2022-08-23T16:00:00Z",
+          "atd_utc": "2022-08-23T19:56:17Z",
+          "sta_utc": "2022-08-23T19:02:56Z",
+          "arr_utc": null,
+          "status": null,
+          "flight_time": "1:36",
+          "from_name": "Bellingham",
+          "from_code": "BLI",
+          "to_name": "Bellingham",
+          "to_code": "BLI"
+        }
+      ],
+      "table_state": "POPULATED"
+    },
+    {
+      "tail": "N59906",
+      "snapshot_utc": "20220830011544",
+      "site": "flightradar24",
+      "file": "N59906_20220830011544_wayback_flightradar24.html",
+      "bytes": 74648,
+      "live_http_today": 403,
+      "previously_recorded": 0,
+      "rows_recovered": 5,
+      "identity": {
+        "aircraft": "SEARCH AIRPORTS",
+        "operator": "-",
+        "type_code": "PA31",
+        "mode_s": "A7C14D",
+        "serial": "AGE"
+      },
+      "flights": [
+        {
+          "date": null,
+          "std_epoch": 1661789676,
+          "std_utc": "2022-08-29T16:14:36Z",
+          "atd_utc": "2022-08-29T16:14:36Z",
+          "sta_utc": "2022-08-29T23:08:44Z",
+          "arr_utc": null,
+          "status": null,
+          "flight_time": "6:54",
+          "from_name": "Bellingham",
+          "from_code": "BLI",
+          "to_name": "Bellingham",
+          "to_code": "BLI"
+        },
+        {
+          "date": null,
+          "std_epoch": 1661562106,
+          "std_utc": "2022-08-27T01:01:46Z",
+          "atd_utc": null,
+          "sta_utc": "2022-08-27T02:27:49Z",
+          "arr_utc": null,
+          "status": null,
+          "flight_time": null,
+          "from_name": "Bellingham",
+          "from_code": "BLI",
+          "to_name": "Bellingham",
+          "to_code": "BLI"
+        },
+        {
+          "date": null,
+          "std_epoch": 1661531700,
+          "std_utc": "2022-08-26T16:35:00Z",
+          "atd_utc": "2022-08-26T17:04:55Z",
+          "sta_utc": "2022-08-26T18:19:29Z",
+          "arr_utc": null,
+          "status": null,
+          "flight_time": "3:26",
+          "from_name": "Bellingham",
+          "from_code": "BLI",
+          "to_name": "Bellingham",
+          "to_code": "BLI"
+        },
+        {
+          "date": null,
+          "std_epoch": 1661362199,
+          "std_utc": "2022-08-24T17:29:59Z",
+          "atd_utc": "2022-08-24T17:29:59Z",
+          "sta_utc": "2022-08-24T21:50:53Z",
+          "arr_utc": null,
+          "status": null,
+          "flight_time": "4:21",
+          "from_name": "Bellingham",
+          "from_code": "BLI",
+          "to_name": "Bellingham",
+          "to_code": "BLI"
+        },
+        {
+          "date": null,
+          "std_epoch": 1661270400,
+          "std_utc": "2022-08-23T16:00:00Z",
+          "atd_utc": "2022-08-23T19:56:17Z",
+          "sta_utc": "2022-08-23T19:02:56Z",
+          "arr_utc": null,
+          "status": null,
+          "flight_time": "1:36",
+          "from_name": "Bellingham",
+          "from_code": "BLI",
+          "to_name": "Bellingham",
+          "to_code": "BLI"
+        }
+      ],
+      "table_state": "POPULATED"
+    },
+    {
+      "tail": "N59906",
+      "snapshot_utc": "20220830060300",
+      "site": "flightaware",
+      "file": "N59906_20220830060300_wayback_flightaware.html",
+      "bytes": 621890,
+      "live_http_today": 200,
+      "previously_recorded": null,
+      "rows_recovered": 0,
+      "flights": [],
+      "table_state": "JAVASCRIPT_SHELL_NO_SERVER_RENDERED_ROWS"
+    },
+    {
+      "tail": "N59906",
+      "snapshot_utc": "20220901185052",
+      "site": "flightaware",
+      "file": "N59906_20220901185052_wayback_flightaware.html",
+      "bytes": 543476,
+      "live_http_today": 200,
+      "previously_recorded": null,
+      "rows_recovered": 0,
+      "flights": [],
+      "table_state": "JAVASCRIPT_SHELL_NO_SERVER_RENDERED_ROWS"
+    },
+    {
       "tail": "N888KG",
       "snapshot_utc": "20110704021349",
       "site": "flightaware",
       "file": "N888KG_20110704021349_wayback_flightaware.html",
       "bytes": 89379,
       "live_http_today": 200,
-      "previously_recorded": null,
+      "previously_recorded": 8,
       "rows_recovered": 8,
       "flights": [
         {
@@ -1346,7 +1632,7 @@
       "file": "N888KG_20110804160445_wayback_flightaware.html",
       "bytes": 90543,
       "live_http_today": 200,
-      "previously_recorded": null,
+      "previously_recorded": 12,
       "rows_recovered": 12,
       "flights": [
         {
@@ -1551,7 +1837,7 @@
       "file": "N888KG_20160411131623_wayback_flightaware.html",
       "bytes": 60586,
       "live_http_today": 200,
-      "previously_recorded": null,
+      "previously_recorded": 6,
       "rows_recovered": 6,
       "flights": [
         {
@@ -1660,7 +1946,7 @@
       "file": "N888KG_20160512211648_wayback_flightaware.html",
       "bytes": 52283,
       "live_http_today": 200,
-      "previously_recorded": null,
+      "previously_recorded": 6,
       "rows_recovered": 6,
       "flights": [
         {
@@ -1769,7 +2055,7 @@
       "file": "N888KG_20160514072707_wayback_flightaware.html",
       "bytes": 54741,
       "live_http_today": 200,
-      "previously_recorded": null,
+      "previously_recorded": 8,
       "rows_recovered": 8,
       "flights": [
         {
@@ -1910,7 +2196,7 @@
       "file": "N888KG_20160813114715_wayback_flightaware.html",
       "bytes": 56108,
       "live_http_today": 200,
-      "previously_recorded": null,
+      "previously_recorded": 11,
       "rows_recovered": 11,
       "flights": [
         {
@@ -2099,7 +2385,7 @@
       "file": "N888KG_20160915115945_wayback_flightaware.html",
       "bytes": 49068,
       "live_http_today": 200,
-      "previously_recorded": null,
+      "previously_recorded": 3,
       "rows_recovered": 3,
       "flights": [
         {
@@ -2160,7 +2446,7 @@
       "file": "N888KG_20161017085324_wayback_flightaware.html",
       "bytes": 53866,
       "live_http_today": 200,
-      "previously_recorded": null,
+      "previously_recorded": 6,
       "rows_recovered": 6,
       "flights": [
         {
@@ -2269,7 +2555,7 @@
       "file": "N888KG_20250911061420_wayback_flightradar24.html",
       "bytes": 63886,
       "live_http_today": 403,
-      "previously_recorded": 0,
+      "previously_recorded": 2,
       "rows_recovered": 2,
       "identity": {
         "aircraft": "Bombardier Challenger 300",
@@ -2317,7 +2603,7 @@
       "file": "N888KG_20250911092819_wayback_flightradar24.html",
       "bytes": 63886,
       "live_http_today": 403,
-      "previously_recorded": 0,
+      "previously_recorded": 2,
       "rows_recovered": 2,
       "identity": {
         "aircraft": "Bombardier Challenger 300",
@@ -2365,7 +2651,7 @@
       "file": "N888KG_20250911171115_wayback_flightaware.html",
       "bytes": 457813,
       "live_http_today": 200,
-      "previously_recorded": null,
+      "previously_recorded": 0,
       "rows_recovered": 0,
       "flights": [],
       "table_state": "JAVASCRIPT_SHELL_NO_SERVER_RENDERED_ROWS"
@@ -2377,7 +2663,7 @@
       "file": "N888KG_20250911215125_wayback_flightradar24.html",
       "bytes": 63886,
       "live_http_today": 403,
-      "previously_recorded": 0,
+      "previously_recorded": 2,
       "rows_recovered": 2,
       "identity": {
         "aircraft": "Bombardier Challenger 300",
@@ -2425,7 +2711,7 @@
       "file": "N888KG_20250912163007_wayback_flightradar24.html",
       "bytes": 63886,
       "live_http_today": 403,
-      "previously_recorded": 0,
+      "previously_recorded": 2,
       "rows_recovered": 2,
       "identity": {
         "aircraft": "Bombardier Challenger 300",
@@ -2473,7 +2759,7 @@
       "file": "N888KG_20250913000556_wayback_flightradar24.html",
       "bytes": 63886,
       "live_http_today": 403,
-      "previously_recorded": 0,
+      "previously_recorded": 2,
       "rows_recovered": 2,
       "identity": {
         "aircraft": "Bombardier Challenger 300",
@@ -2673,7 +2959,7 @@
       "file": "SU-BGM_20200507104145_wayback_flightradar24.html",
       "bytes": 82331,
       "live_http_today": 403,
-      "previously_recorded": 0,
+      "previously_recorded": 6,
       "rows_recovered": 6,
       "identity": {
         "aircraft": "SEARCH AIRPORTS",
@@ -2777,7 +3063,7 @@
       "file": "SU-BND_20251012101207_wayback_flightradar24.html",
       "bytes": 83184,
       "live_http_today": 403,
-      "previously_recorded": 0,
+      "previously_recorded": 7,
       "rows_recovered": 7,
       "identity": {
         "aircraft": "Gulfstream 4SP",
@@ -2895,7 +3181,7 @@
       "file": "SU-BND_20251118001204_wayback_flightradar24.html",
       "bytes": 72551,
       "live_http_today": 403,
-      "previously_recorded": 0,
+      "previously_recorded": 4,
       "rows_recovered": 4,
       "identity": {
         "aircraft": "Gulfstream 4SP",
@@ -2971,7 +3257,7 @@
       "file": "SU-BTU_20220831143944_wayback_flightradar24.html",
       "bytes": 71142,
       "live_http_today": 403,
-      "previously_recorded": 0,
+      "previously_recorded": 4,
       "rows_recovered": 4,
       "identity": {
         "aircraft": "SEARCH AIRPORTS",

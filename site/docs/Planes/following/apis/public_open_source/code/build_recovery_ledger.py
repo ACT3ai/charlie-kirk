@@ -51,7 +51,7 @@ def hole(date):
 
 
 def main():
-    rows = collections.defaultdict(lambda: {"held": {}, "none": set()})
+    rows = collections.defaultdict(lambda: {"held": {}, "none": set(), "tooling": set()})
     for f in glob.glob(os.path.join(PLANES, "*", "data", "recovered", "*.meta.json")):
         try: m = json.load(open(f))
         except Exception: continue
@@ -70,21 +70,39 @@ def main():
                 url=m.get("url"), file=os.path.relpath(payload, PLANES),
                 retrieved=m.get("retrieved_utc"))
         else:
-            rows[k]["none"].add(src)
+            # A `.miss` file is not automatically an ASK. The sweep-absence
+            # records written by ingest_sweep_traces.py carry a `verdict`, and
+            # only two of its four values mean the archive was genuinely
+            # consulted about this airframe:
+            #   ARCHIVE_HELD_NOTHING       the filter would have surfaced it
+            #   NOT_NEAR_ANY_SWEPT_CIRCLE  correct rejection, aircraft elsewhere
+            # The other two mean our own tooling is the reason we have nothing:
+            #   LOST_TO_OUR_PREFILTER_BUG  provably lost to the floor() defect
+            #   NOT_SURFACED_BY_SWEEP      cause indeterminate
+            # Counting those last two as "asked and empty" would repeat exactly
+            # the error this ledger exists to prevent.
+            v = m.get("verdict")
+            if v in ("LOST_TO_OUR_PREFILTER_BUG", "NOT_SURFACED_BY_SWEEP"):
+                rows[k].setdefault("tooling", set()).add(f"{src}:{v}")
+            else:
+                rows[k]["none"].add(src)
 
     out = []
     for (tail, date), v in sorted(rows.items()):
-        held, none = v["held"], v["none"]
+        held, none, tooling = v["held"], v["none"], v.get("tooling", set())
         h = set(held)
         if "adsb-lol" in h and "airplanes-live" in h: verdict = "BOTH_HAVE_IT"
         elif "airplanes-live" in h and "adsb-lol" in none: verdict = "ONLY_ON_AIRPLANES_LIVE"
         elif "adsb-lol" in h and "airplanes-live" in none: verdict = "ONLY_ON_ADSB_LOL"
+        elif not h and not none and tooling: verdict = "UNRESOLVED_OUR_TOOLING"
         elif not h: verdict = "NEITHER_HAS_IT"
         else: verdict = "HELD_BY_" + "+".join(sorted(h)).upper()
         best = max(held.values(), key=lambda x: x.get("points") or 0, default={})
         out.append(dict(
             tail=tail, date=date, verdict=verdict,
             archives_held="|".join(sorted(h)), archives_asked_none="|".join(sorted(none)),
+            # NOT an ask: we have nothing here because of our own tooling.
+            unresolved_by_our_tooling="|".join(sorted(tooling)),
             adsb_lol_hole=hole(date),
             adsb_lol_403_band="yes" if hole(date) != "no" else "no",
             is_control="yes" if tail.startswith("CONTROL-") else "no",

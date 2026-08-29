@@ -80,16 +80,58 @@ def _iso(day, secs):
     return (base + dt.timedelta(seconds=float(secs))).isoformat().replace("+00:00", "Z")
 
 
+GZIP_MAGIC = b"\x1f\x8b"
+
+
+def open_trace(path):
+    """Open a trace payload by SNIFFING ITS BYTES, never by its file name.
+
+    WHY THIS IS NOT A STYLE CHOICE. On 2026-08-28 an audit found
+    SU-BTT_2023-04-01_adsblol-github-backup_trace_full.json holding GZIP bytes
+    under a `.json` name. The old extension-based opener handed those bytes to
+    a plain reader, the exception was swallowed, and the aircraft-day was
+    recorded as READ WITH NOTHING IN IT -- a record indistinguishable from a
+    genuine empty day. An unreadable payload counted as an empty one is worse
+    than a missing payload, because the missing one gets counted as missing.
+
+    Files inside the adsb.lol GitHub Release tarballs are gzip-compressed
+    DESPITE their `.json` names, so this is not a one-off: it is the archive's
+    normal shape, and any reader that trusts the extension will keep hitting it.
+    """
+    with open(path, "rb") as fh:
+        head = fh.read(2)
+    opener = gzip.open if head == GZIP_MAGIC else open
+    return opener(path, "rt", encoding="utf-8")
+
+
+def _num(v):
+    try:
+        return float(v)
+    except (TypeError, ValueError):
+        return None
+
+
 def visits_from_trace(path, day):
     """Ground visits and near-field passes for one aircraft-day."""
     try:
-        opener = gzip.open if path.endswith(".gz") else open
-        with opener(path, "rt", encoding="utf-8") as fh:
+        with open_trace(path) as fh:
             doc = json.load(fh)
-    except (OSError, ValueError, EOFError):
-        return {"error": "unreadable", "ground_visits": [], "near_field": []}
+    except (OSError, ValueError, EOFError) as exc:
+        # LOUD, and distinguishable from an empty day. `unreadable` is True only
+        # here; a genuine empty day has unreadable False and ground_visits [].
+        return {"error": f"unreadable: {type(exc).__name__}", "unreadable": True,
+                "ground_visits": [], "near_field": [], "trace_points": None}
 
     pts = doc.get("trace") or []
+
+    # POINTS WITH A NEGATIVE SECONDS-AFTER-MIDNIGHT BELONG TO THE PREVIOUS UTC
+    # DAY. readsb writes them when a track straddles midnight. Their computed
+    # timestamp is already correct (base + a negative delta walks backwards),
+    # but the FILE'S date is not their date, so a caller that keys a visit by
+    # the file's day mis-dates them by 24 hours. Six payloads on disk carry
+    # them, one with 61 of its 64 points -- including SU-BTT's 2025-10-12 file,
+    # whose points are almost entirely 2025-10-11.
+    n_neg = sum(1 for p in pts if isinstance(p, (list, tuple)) and p and _num(p[0]) is not None and _num(p[0]) < 0)
     ground, air = [], []
     for p in pts:
         if len(p) < 4:
@@ -130,6 +172,13 @@ def visits_from_trace(path, day):
             "ground_points": len(run),
             "lat": round(mlat, 5),
             "lon": round(mlon, 5),
+            # THE VISIT'S OWN UTC DATE, derived from its first fix rather than
+            # inherited from the file name. For a track that straddles midnight
+            # these differ, and the file's date is the wrong one.
+            "utc_date": _iso(day, run[0][0])[:10],
+            "file_date": day,
+            "crosses_utc_midnight": _iso(day, run[0][0])[:10] != _iso(day, run[-1][0])[:10],
+            "dated_from_previous_utc_day": _num(run[0][0]) is not None and _num(run[0][0]) < 0,
         })
 
     # --- low passes near a field, when there is no ground contact ----------
@@ -151,7 +200,14 @@ def visits_from_trace(path, day):
                 "note": "LOW PASS ONLY - no on-ground position at this field in this trace.",
             })
     return {"ground_visits": out, "near_field": near,
-            "trace_points": len(pts), "registration": doc.get("r"), "type": doc.get("t")}
+            "trace_points": len(pts), "registration": doc.get("r"), "type": doc.get("t"),
+            "unreadable": False,
+            # Straddle accounting, so a caller can never silently mis-date a claim.
+            "points_from_previous_utc_day": n_neg,
+            "straddles_utc_midnight": n_neg > 0,
+            "actual_utc_dates": sorted({_iso(day, p[0])[:10] for p in pts
+                                        if isinstance(p, (list, tuple)) and p
+                                        and _num(p[0]) is not None})}
 
 
 def build_index(tails=None, cache_path=None, rebuild=False):

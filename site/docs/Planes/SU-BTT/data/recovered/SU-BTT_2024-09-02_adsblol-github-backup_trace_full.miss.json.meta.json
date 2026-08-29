@@ -1,0 +1,17 @@
+{
+ "url": "https://github.com/adsblol/globe_history_2024/releases/tag/v2024.09.02-planes-readsb-prod-0",
+ "http_status": 200,
+ "bytes": 0,
+ "tail": "SU-BTT",
+ "hex": "0101d3",
+ "date_utc": "2024-09-02",
+ "source": "adsblol-github-backup",
+ "source_key": "adsblol-github-backup",
+ "verdict": "NOT_SURFACED_BY_SWEEP",
+ "retrieved_utc": "2026-08-27T02:51:54.170054+00:00",
+ "tool": "apis/public_open_source/code/ingest_sweep_traces.py",
+ "aircraft_in_archive": 59671,
+ "prefilter_replayed_fixed": null,
+ "prefilter_replayed_old": null,
+ "note": "The sweep streamed this whole UTC day and this airframe was not among the traces it kept. TWO CAUSES ARE INDISTINGUISHABLE FROM HERE: the archive held nothing, or our byte pre-filter skipped the file before identifying it. We hold no trace for this aircraft-day from any other archive, so the two cannot be separated. This is NOT 'asked and empty' and must never be counted as one."
+}

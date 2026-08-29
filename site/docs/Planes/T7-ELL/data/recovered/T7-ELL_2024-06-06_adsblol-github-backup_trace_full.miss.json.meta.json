@@ -1,0 +1,17 @@
+{
+ "url": "https://github.com/adsblol/globe_history_2024/releases/tag/v2024.06.06-planes-readsb-prod-0",
+ "http_status": 200,
+ "bytes": 0,
+ "tail": "T7-ELL",
+ "hex": "50018a",
+ "date_utc": "2024-06-06",
+ "source": "adsblol-github-backup",
+ "source_key": "adsblol-github-backup",
+ "verdict": "NOT_NEAR_ANY_SWEPT_CIRCLE",
+ "retrieved_utc": "2026-08-27T05:29:13.041886+00:00",
+ "tool": "apis/public_open_source/code/ingest_sweep_traces.py",
+ "aircraft_in_archive": 65197,
+ "prefilter_replayed_fixed": false,
+ "prefilter_replayed_old": false,
+ "note": "Correct rejection, not a gap. We hold this airframe's trace for this date from another archive and none of its positions fall in any circle swept that day \u2014 the aircraft was simply somewhere else. The sweep was right to skip it."
+}

@@ -1,0 +1,17 @@
+{
+ "url": "https://github.com/adsblol/globe_history_2025/releases/tag/v2025.10.10-planes-readsb-prod-0",
+ "http_status": 200,
+ "bytes": 0,
+ "tail": "N872RA",
+ "hex": "abff3c",
+ "date_utc": "2025-10-10",
+ "source": "adsblol-github-backup",
+ "source_key": "adsblol-github-backup",
+ "verdict": "ARCHIVE_HELD_NOTHING",
+ "retrieved_utc": "2026-08-27T01:07:55.835359+00:00",
+ "tool": "apis/public_open_source/code/ingest_sweep_traces.py",
+ "aircraft_in_archive": 74768,
+ "prefilter_replayed_fixed": true,
+ "prefilter_replayed_old": true,
+ "note": "The sweep streamed this whole UTC day and this airframe was not in it. We hold its trace for this date from another archive, and BOTH the fixed and the old pre-filter would have surfaced it. The absence is therefore the backup archive's, not our filter's. It still is not evidence the aircraft was elsewhere: AN ABSENCE IS NOT A FINDING."
+}

@@ -7,5 +7,8 @@
   "bytes": 57818,
   "original_url": "https://www.flightaware.com/live/flight/N55906",
   "live_http_today": 200,
-  "flight_rows_recovered": null
+  "flight_rows_recovered": 2,
+  "flight_rows_extractor": "extract_wayback_flights.py",
+  "flight_rows_corrected_utc": "2026-08-29T02:51:54.110390Z",
+  "table_state": "POPULATED"
 }

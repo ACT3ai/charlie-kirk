@@ -1,0 +1,17 @@
+{
+ "url": "https://github.com/adsblol/globe_history_2024/releases/tag/v2024.03.27-planes-readsb-prod-0",
+ "http_status": 200,
+ "bytes": 0,
+ "tail": "N582MM",
+ "hex": "a77e75",
+ "date_utc": "2024-03-27",
+ "source": "adsblol-github-backup",
+ "source_key": "adsblol-github-backup",
+ "verdict": "LOST_TO_OUR_PREFILTER_BUG",
+ "retrieved_utc": "2026-08-27T07:00:39.479376+00:00",
+ "tool": "apis/public_open_source/code/ingest_sweep_traces.py",
+ "aircraft_in_archive": 50910,
+ "prefilter_replayed_fixed": true,
+ "prefilter_replayed_old": false,
+ "note": "NOT AN ARCHIVE FACT AND NOT AN AIRCRAFT FACT. We hold this airframe's trace for this date from another archive. Replayed against those real positions, the FIXED byte pre-filter surfaces the file and the pre-2026-08-28 filter \u2014 which used math.floor() and so shifted every negative longitude one degree west \u2014 REJECTS it. This aircraft-day was inside a swept circle's reach and the shipped sweep lost it to our own bug. Re-running this date would recover it."
+}

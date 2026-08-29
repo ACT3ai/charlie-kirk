@@ -7,5 +7,8 @@
   "bytes": 468283,
   "original_url": "https://www.flightaware.com/live/flight/N2100L",
   "live_http_today": 200,
-  "flight_rows_recovered": null
+  "flight_rows_recovered": 0,
+  "flight_rows_extractor": "extract_wayback_flights.py",
+  "flight_rows_corrected_utc": "2026-08-29T02:51:54.110390Z",
+  "table_state": "JAVASCRIPT_SHELL_NO_SERVER_RENDERED_ROWS"
 }

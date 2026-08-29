@@ -2,7 +2,7 @@
 displayed_sidebar: docs
 title: "Which Flight Records Were Deleted — And Whose"
 sidebar_label: "Which Records Were Deleted"
-description: "The working assumption was that an intelligence service pulled this fleet's flight history off the tracking sites. Every gap in 15,000 archive queries was then sorted by aircraft nationality, by named person, by date, and by tracking site, and each pattern was tested against unrelated control aircraft. Four of the five things that looked deleted are archive mechanics. The one thing that genuinely changed in the disputed window is not the flight data at all."
+description: "1,831 aircraft-days of primary flight position data recovered across 3,619 trace files and four independent archives — and a dated list of exactly what is still gone: all of 2022, seventeen 403 dates, six lost archive days, 15,721 asked-and-empty days, and Erika Kirk's itinerary. One records change did land in the disputed window: N102DZ's FAA registration, re-issued 16 October 2025. The working assumption was that an intelligence service pulled this fleet's flight history off the tracking sites. Every gap in 15,000 archive queries was then sorted by aircraft nationality, by named person, by date, and by tracking site, and each pattern was tested against unrelated control aircraft. Four of the five things that looked deleted are archive mechanics. The one thing that genuinely changed in the disputed window is not the flight data at all."
 keywords:
   - Charlie Kirk
   - Erika Kirk
@@ -31,78 +31,33 @@ borderRadius:'4px', textDecoration:'none', fontSize:'0.9rem'}}>← Planes</a>
 
 # Which Flight Records Were Deleted — And Whose
 
-**The question this page answers.** Researchers on X say the public flight history for the aircraft
-at the centre of this case was pulled down — most loudly that **N102DZ**, the jet
-[Erika Kirk invited the public to check](/Planes/Erika-Flight-Logs-Erased), was **"ERASED in May
-2026 from flightradar24 so now NOBODY can check them."** If records really were removed, the
-removals should show a *shape*: they should cluster on one nationality of aircraft, or one person's
-travel dates, or one window of time, or one tracking company. Find the shape and you have found who
-did it and what they were protecting.
+**This investigation holds 1,831 aircraft-days of primary position data on the aircraft in this
+case — 3,619 trace files, 308 MB, pulled from four independent archives, covering 15 aircraft, and
+including dates the live tracking APIs now refuse to serve.** All of it came from free, open,
+no-account sources. The full count is the next thing on this page.
 
-So the shape was hunted for directly. Every aircraft-day this investigation has ever asked an
-archive about was collected — **15,131 logged queries across sixteen case aircraft, two unrelated
-control aircraft, four independent archives and 917 distinct dates**, snapshot **26 August 2026,
-17:42 UTC** — and the gaps were sorted four ways: **by aircraft nationality, by named person, by
-date, and by tracking site.**
+**What is gone, and cannot be got back, is also countable:** everything before **6 February 2023**,
+including all of 2022; **seventeen dates in late 2025** that one archive answers HTTP 403 for; **six
+whole days** two archives lost outright; **15,721 days an archive was asked about and held nothing**;
+and, above all, **a dated itinerary for Erika Kirk, which nobody on any side of this argument has
+ever published.** Those gaps are set out date range by date range in
+[What is missing](#what-is-missing-date-range-by-date-range).
 
-**None of the four produced a shape.** What produced a shape every single time was the archive's own
-mechanics — and the controls prove it, because two airliners with no connection to this case fail in
-exactly the same places.
+**One records change did happen in the disputed window, and it is not a flight record.**
+[N102DZ](/Planes/N102DZ/overview)'s **FAA registration was re-issued on 16 October 2025 —
+thirty-six days after the assassination** — to a Cheyenne, Wyoming holding company, with a further
+registry action on **23 December 2025**. It is the **only** case-central aircraft whose registration
+moved after 10 September 2025. Full registry table:
+[the one thing that genuinely changed](#the-one-thing-that-genuinely-changed-in-the-window).
 
----
-
-## The answer, in one screen
-
-| The hypothesis | What it predicts | What the data shows | Verdict |
-|---|---|---|---|
-| **They deleted the Egyptian jets** (SU-BTT, SU-BND, SU-BTU, SU-BTV, SU-BGM) | Egyptian tails suppressed where US tails are not | FlightRadar24 openly serves them **today**, labelled "Egypt - Air Force", with **56, 14, 56, 54 and 0** history rows — *more* than most of the US tails | **NOT SUPPORTED** |
-| **They deleted Erika Kirk's dates** | Overlap dates where she is claimed present go missing more often | Recovered on **57.1%** of Erika-claimed dates vs **88.9%** where she is not claimed — **Fisher exact p = 0.133**, not significant, n = 9 on one side | **NOT SUPPORTED** |
-| **They deleted Charlie Kirk's dates** | Dates he is claimed present go missing more often | **75.0%** recovered where he is claimed vs **56.8%** where he is not — the difference runs the *wrong way*, **p = 0.329** | **NOT SUPPORTED** |
-| **They deleted the event days** | A trough in coverage on the day of each speaking event | Day-of-event is the **peak**, not the trough: **32.6%** for the Kirk-side jets against 25–27% either side | **NOT SUPPORTED** |
-| **A tracking site took the pages down** | Some aircraft pages gone, others fine | **16 aircraft × 5 sites = 80 page checks. Every subject page and every control page returns HTTP 200 in a browser.** Zero removals | **REFUTED** |
-| **The 2022 record was wiped** | 2022 missing for case aircraft only | **1,461 case-aircraft-days asked before 6 Feb 2023 returned 0 tracks — and so did all 28 control days.** The archives do not go back that far | **ARCHIVE FLOOR** |
-| **Late-2025 was locked down** | A block on case aircraft in the weeks after the killing | HTTP 403 on **exactly the same 17 dates** for all twelve subject tails, and the controls get 403 on the same dates too | **ARCHIVE-WIDE** |
-| **The N102DZ history was purged in May 2026** | No N102DZ data in May 2026 | **26 days of primary position trace inside May 2026** are on disk, from an archive FlightRadar24 does not own | **REFUTED** |
-
-**The one thing that did change in the disputed window is not flight data.** N102DZ's **FAA
-registration** was re-issued on **16 October 2025** — thirty-six days after the assassination — to
-a Cheyenne, Wyoming holding company, with a further registry action on **23 December 2025**. It is
-the **only** case-central aircraft whose registration moved after 10 September 2025. That is a
-records change, in the right window, on exactly the aircraft the erasure claim is about. It is
-ordinary in itself, and it is documented below rather than argued from.
-
----
-
-## The five things that looked deleted, and what each one actually is
-
-Every candidate deletion in this investigation collapsed into one of five archive mechanics. Naming
-them matters, because from the outside all five look identical to suppression, and three of them
-were published on this site as suppression before the controls were run.
-
-**1. The archive floor — 2022 does not exist.** The oldest track either free daily archive holds for
-any aircraft is **6 February 2023** (airplanes.live) and **24 February 2023** (adsb.lol). Ask either
-of them about 2022 and you get HTTP 404 forever. This is the largest single "gap" in the
-investigation and it swallows the entire opening year of the following-planes claim.
-
-**2. The 403 band — a date range, not an aircraft list.** adsb.lol answers HTTP 403 for a run of
-dates in late 2025. It is the same date range for every aircraft, case or control.
-
-**3. Whole-day holes — and both archives have them.** airplanes.live lost **2023-09-11** completely;
-adsb.lol lost **2023-02-06 through 2023-02-10**. On each of those days the archive returns nothing
-for *anything*, including daily-flying airliners.
-
-**4. The free-tier retention window — 7 days, then 14 days.** FlightRadar24 shows a logged-out
-visitor **seven days** of history and paywalls the rest. FlightAware shows **fourteen**. A table that
-was full on Thursday and empty the next Thursday has not been purged; it has rolled.
-
-**5. Coverage, not concealment.** A volunteer receiver network only holds what somebody's aerial
-actually heard. A jet parked at its home stand in Cairo is invisible to a network whose nearest
-receiver is in another country. The same jet at cruise altitude over the same city is heard from
-hundreds of kilometres away — which is why the Egyptian tails appear in these archives *airborne
-over Egypt* on most of their tracked days and almost never *on the ground at Cairo*.
-
-**None of the five is a person, an agency, or a motive. All five are geometry, retention policy, and
-volunteer hardware.**
+**And here is the result that runs against this investigation's own working assumption, stated
+before anything else so it cannot be read as buried: no flight record has been shown to be removed
+from anywhere.** Four suppression hypotheses were written down in advance and tested — by aircraft
+nationality, by named person, by date, and by tracking company. None survived. Every one of those
+tests, every NOT SUPPORTED verdict, the control aircraft that produced them, and the three claims
+this site published as removals and then had to retract, are set out in full further down, under
+[how each hypothesis was tested](#how-each-hypothesis-was-tested-and-what-the-controls-showed).
+They are not softened and not shortened. They are simply no longer the first thing on the page.
 
 ---
 
@@ -186,6 +141,202 @@ primary data can decide. Full working on
 **That is what the recovery was for.** Not to prove a deletion — it did not find one — but to replace
 somebody's reading of a website with a position report, and then to correct the readings that turned
 out to be wrong, in whichever direction they turned out to be wrong.
+
+---
+
+
+## What is missing, date range by date range
+
+Every gap this investigation can name, with the archives that were asked and the honest category it
+falls in. **Nothing in this table is called a deletion**, because each category was checked against
+an unrelated control aircraft first — see [the control test](#how-any-of-this-can-be-said-at-all-the-control-test).
+
+| Date range | What is missing | Which archives were asked | What that means |
+|---|---|---|---|
+| **Before 6 Feb 2023** — all of 2022, and January 2023 | **1,461 case-aircraft-days asked, 0 tracks returned.** Twenty of the eighty-five alleged overlaps sit under this floor, including every 2022 claim — New York, Chicago, Boston, Wichita, Wilmington, St Louis | airplanes.live (oldest track 6 Feb 2023), adsb.lol (24 Feb 2023), ADS-B Exchange free monthly samples (1st of each month only) | **Archive floor — control-confirmed.** 28 control-aircraft days under the floor also returned 0. The archives do not go back that far, for anybody |
+| **17 dates in late 2025** | adsb.lol answers **HTTP 403** for all twelve subject tails on exactly the same seventeen dates | adsb.lol; the same dates were then pulled from airplanes.live and from adsb.lol's own GitHub Release backup | **Archive-wide date block — control-confirmed.** The Ryanair and Lufthansa controls get 403 on the same dates. Date-scoped, aircraft-blind |
+| **11 Sep 2023** | airplanes.live returns nothing for **any** aircraft on that day, all 14 tails | airplanes.live; adsb.lol | **Whole-day archive hole — control-confirmed.** 404 for both control airliners too |
+| **6–10 Feb 2023** (5 days) | adsb.lol returns nothing for any aircraft across those five days | adsb.lol; airplanes.live | **Whole-day archive hole.** The archive is blank for daily-flying airliners on the same days |
+| **Scattered, 2022–2026 — 15,721 days** | Days an archive was asked about and held nothing. Each one is written to disk as its own `.miss.json.meta.json` with the exact URL, HTTP status and retrieval time | adsb.lol and airplanes.live, both, plus the GitHub off-site backup where it applies | **Coverage fact, not a deletion count.** A volunteer receiver network heard nothing: transponder off, parked out of range, or a wrong claimed date. **A record that was never captured was never deleted** |
+| **22 alleged overlap dates inside the covered period** | Aircraft-and-date pairs no network heard at all | airplanes.live, adsb.lol, and the adsb.lol GitHub backup — all three came back empty | **Coverage fact, not a finding.** Several of these rows are already marked inaccurate in the spreadsheet's own audit column |
+| **2022 through September 2025** | **Erika Kirk's dated itinerary** — the document that would settle the person half of all 85 claimed overlaps | Nobody holds it. ADS-B records airframes, not passengers, so no archive anywhere can produce it | **Never published by anyone**, on any side of this argument. **This is the single largest hole in the whole claim**, and more flight data will never substitute for it |
+| **May 2026** | What FlightRadar24's N102DZ page actually displayed that month | Internet Archive CDX; live logged-out browser probe on 24 Aug 2026 | **Beyond every method used here, in either direction.** "The page was taken down" is refuted; a narrower claim that history was purged and later restored cannot be tested, and **no page on this site may assert it** |
+
+**Read the last three rows together.** The aircraft half of this investigation is well documented and
+getting better every month. The person half is empty and is not getting better. That asymmetry is the
+real finding of the whole exercise.
+
+---
+
+## The one thing that genuinely changed in the window
+
+The sweep did turn up a real, dated, documentary change in the disputed period — and it is not
+flight data.
+
+Pulled from the **FAA Releasable Aircraft Database** on 24 August 2026, all ten US-registered tails
+this investigation tracks, sorted by last registry action:
+
+| Tail | Registrant of record | Certificate issued | Last registry action |
+|---|---|---|---|
+| N55906 | OPOLINER LARRY — Winter Park, FL | 2005-05-12 | 2023-03-17 |
+| N1098L | LASAI AVIATION II LLC — Manassas, VA | 2023-05-15 | 2023-05-23 |
+| N2100L | LASAI AVIATION II LLC — Manassas, VA | 2023-07-10 | 2023-07-10 |
+| N872RA | A&E HAWKER LP — Santa Ana, CA | 2019-05-16 | 2023-08-04 |
+| N888KG | N888KG LLC — Lehi, UT | 2022-07-26 | 2023-08-18 |
+| N560TW | T W LEWIS-AVIATION LLC — Scottsdale, AZ | 2014-03-07 | 2023-10-13 |
+| N582MM | DOJA CONTRACTING LLC — Mesa, AZ | 2024-01-25 | 2024-01-25 |
+| N40JD | NUP AVIATION LLC — Princeton, IL | 2024-08-22 | 2024-08-22 |
+| **N102DZ** | **ELDERBERRY CHESTNUT LLC — Cheyenne, WY** | **2025-10-16** | **2025-12-23** |
+| N59906 | ALPHA WHISKEY 2 LLC — Brandon, MS | 2026-04-04 | 2026-04-04 |
+
+**N102DZ is the only case-central aircraft whose registration moved after 10 September 2025.** The
+certificate was issued **thirty-six days after the assassination**, to a Wyoming holding company, and
+a further registry action followed on **23 December 2025** — months before the reported May 2026
+"erasure", and on precisely the tail number the erasure claim names.
+
+**State what this is and what it is not.** It is a public federal record of a registration change, in
+the right window, on the right aircraft. **It is not a deletion, and it is not evidence of one.**
+Aircraft are re-registered constantly; ownership passes; a registrant is frequently a holding LLC
+and a holding company is not a person, so this site does not go behind one to name individuals. It is
+also worth saying that the community tracking databases still list the *previous* name for this tail
+— which is one prosaic way a researcher could look at two sources, see two different owners, and
+reach for the word "erased".
+
+What makes it worth publishing is that it is the **only** dated change anywhere in the fleet that
+falls in the disputed window at all. Every other candidate on this page dissolved into archive
+mechanics. This one is a real record, and it is left standing as a question rather than an answer.
+
+---
+
+## What is still genuinely gone
+
+Sorting the gaps did not make them go away. Four things remain unrecoverable, and the honest version
+of this page has to lead with them as prominently as the refutations.
+
+**1. All of 2022, from the daily archives.** The following-planes claim opens with alleged overlaps
+in **October, November and December 2022** — New York, Chicago, Boston, Wichita, Wilmington, St
+Louis. **Neither free daily archive can be asked about any of them.** The only free route into 2022
+is the ADS-B Exchange monthly sample, which holds **one day per month, the 1st**. It can fix a
+position on 1 October 2022. It can say nothing whatever about 5 October 2022. **Twenty of the
+eighty-five alleged overlaps sit under this floor and cannot be tested by anyone, for or against.**
+
+**2. Whose feet were on the aircraft.** This is the one that matters most and the one no archive
+anywhere will ever fix. **A trace proves presence. It never proves purpose and it never proves
+occupancy.** Twenty-six days of N102DZ tracks in May 2026 do not place any named person on any leg.
+**Erika Kirk's itinerary is the missing document, and no backup produces it** — which is precisely
+why she was able to issue the invitation, and precisely why taking her up on it does not settle
+anything either way.
+
+**3. Twenty-two alleged overlap dates the archives simply never heard.** Inside the covered period,
+twenty-two aircraft-and-date pairs return nothing from either network after the GitHub off-site
+backup was also asked and also came back empty. **That is a coverage fact, not a finding.** Parked
+with the transponder off, outside receiver coverage, and *the claimed date is simply wrong* all look
+identical from here — and several of these rows are already marked inaccurate in the spreadsheet's
+own audit column.
+
+**4. What any of these pages displayed in May 2026.** A page that loads today cannot testify about a
+table's contents eight months ago. **"The page was taken down" is refuted.** A narrower claim — that
+history was specifically purged and later restored — is beyond every method used here, in either
+direction, and **no page on this site may assert it.**
+
+---
+
+## And the data for the disputed month is on disk anyway
+
+The claim is that N102DZ's history was erased in **May 2026** so that nobody could check it.
+
+This investigation holds **26 days of primary ADS-B position trace for N102DZ inside May 2026** —
+2, 3, 4, 5, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 20, 21, 22, 23, 24, 25, 27, 28, 29 and 31
+May — pulled from **globe.airplanes.live**, a volunteer network FlightRadar24 does not own, does not
+supply, and cannot edit. Coverage continues either side: 25, 26, 29 and 30 April before it, and 1
+through 5 June after.
+
+**Whatever did or did not happen at FlightRadar24 in May 2026, the aircraft's movements that month
+are recoverable by any member of the public, and this site has them.**
+
+---
+
+
+## How each hypothesis was tested, and what the controls showed
+
+Everything from here down is the method, the control test, and the verdicts — including four
+**NOT SUPPORTED** results, two **REFUTED** results, and the retractions this site had to publish
+against itself. None of it is softened. It sits below the counts rather than above them because a
+reader wants the record first and the machinery second, not because the machinery matters less.
+
+
+**The question this page answers.** Researchers on X say the public flight history for the aircraft
+at the centre of this case was pulled down — most loudly that **N102DZ**, the jet
+[Erika Kirk invited the public to check](/Planes/Erika-Flight-Logs-Erased), was **"ERASED in May
+2026 from flightradar24 so now NOBODY can check them."** If records really were removed, the
+removals should show a *shape*: they should cluster on one nationality of aircraft, or one person's
+travel dates, or one window of time, or one tracking company. Find the shape and you have found who
+did it and what they were protecting.
+
+So the shape was hunted for directly. Every aircraft-day this investigation has ever asked an
+archive about was collected — **15,131 logged queries across sixteen case aircraft, two unrelated
+control aircraft, four independent archives and 917 distinct dates**, snapshot **26 August 2026,
+17:42 UTC** — and the gaps were sorted four ways: **by aircraft nationality, by named person, by
+date, and by tracking site.**
+
+**None of the four produced a shape.** What produced a shape every single time was the archive's own
+mechanics — and the controls prove it, because two airliners with no connection to this case fail in
+exactly the same places.
+
+---
+
+## The answer, in one screen
+
+| The hypothesis | What it predicts | What the data shows | Verdict |
+|---|---|---|---|
+| **They deleted the Egyptian jets** (SU-BTT, SU-BND, SU-BTU, SU-BTV, SU-BGM) | Egyptian tails suppressed where US tails are not | FlightRadar24 openly serves them **today**, labelled "Egypt - Air Force", with **56, 14, 56, 54 and 0** history rows — *more* than most of the US tails | **NOT SUPPORTED** |
+| **They deleted Erika Kirk's dates** | Overlap dates where she is claimed present go missing more often | Recovered on **57.1%** of Erika-claimed dates vs **88.9%** where she is not claimed — **Fisher exact p = 0.133**, not significant, n = 9 on one side | **NOT SUPPORTED** |
+| **They deleted Charlie Kirk's dates** | Dates he is claimed present go missing more often | **75.0%** recovered where he is claimed vs **56.8%** where he is not — the difference runs the *wrong way*, **p = 0.329** | **NOT SUPPORTED** |
+| **They deleted the event days** | A trough in coverage on the day of each speaking event | Day-of-event is the **peak**, not the trough: **32.6%** for the Kirk-side jets against 25–27% either side | **NOT SUPPORTED** |
+| **A tracking site took the pages down** | Some aircraft pages gone, others fine | **16 aircraft × 5 sites = 80 page checks. Every subject page and every control page returns HTTP 200 in a browser.** Zero removals | **REFUTED** |
+| **The 2022 record was wiped** | 2022 missing for case aircraft only | **1,461 case-aircraft-days asked before 6 Feb 2023 returned 0 tracks — and so did all 28 control days.** The archives do not go back that far | **ARCHIVE FLOOR** |
+| **Late-2025 was locked down** | A block on case aircraft in the weeks after the killing | HTTP 403 on **exactly the same 17 dates** for all twelve subject tails, and the controls get 403 on the same dates too | **ARCHIVE-WIDE** |
+| **The N102DZ history was purged in May 2026** | No N102DZ data in May 2026 | **26 days of primary position trace inside May 2026** are on disk, from an archive FlightRadar24 does not own | **REFUTED** |
+
+**The one thing that did change in the disputed window is not flight data.** N102DZ's **FAA
+registration** was re-issued on **16 October 2025** — thirty-six days after the assassination — to
+a Cheyenne, Wyoming holding company, with a further registry action on **23 December 2025**. It is
+the **only** case-central aircraft whose registration moved after 10 September 2025. That is a
+records change, in the right window, on exactly the aircraft the erasure claim is about. It is
+ordinary in itself, and it is documented below rather than argued from.
+
+---
+
+## The five things that looked deleted, and what each one actually is
+
+Every candidate deletion in this investigation collapsed into one of five archive mechanics. Naming
+them matters, because from the outside all five look identical to suppression, and three of them
+were published on this site as suppression before the controls were run.
+
+**1. The archive floor — 2022 does not exist.** The oldest track either free daily archive holds for
+any aircraft is **6 February 2023** (airplanes.live) and **24 February 2023** (adsb.lol). Ask either
+of them about 2022 and you get HTTP 404 forever. This is the largest single "gap" in the
+investigation and it swallows the entire opening year of the following-planes claim.
+
+**2. The 403 band — a date range, not an aircraft list.** adsb.lol answers HTTP 403 for a run of
+dates in late 2025. It is the same date range for every aircraft, case or control.
+
+**3. Whole-day holes — and both archives have them.** airplanes.live lost **2023-09-11** completely;
+adsb.lol lost **2023-02-06 through 2023-02-10**. On each of those days the archive returns nothing
+for *anything*, including daily-flying airliners.
+
+**4. The free-tier retention window — 7 days, then 14 days.** FlightRadar24 shows a logged-out
+visitor **seven days** of history and paywalls the rest. FlightAware shows **fourteen**. A table that
+was full on Thursday and empty the next Thursday has not been purged; it has rolled.
+
+**5. Coverage, not concealment.** A volunteer receiver network only holds what somebody's aerial
+actually heard. A jet parked at its home stand in Cairo is invisible to a network whose nearest
+receiver is in another country. The same jet at cruise altitude over the same city is heard from
+hundreds of kilometres away — which is why the Egyptian tails appear in these archives *airborne
+over Egypt* on most of their tracked days and almost never *on the ground at Cairo*.
+
+**None of the five is a person, an agency, or a motive. All five are geometry, retention policy, and
+volunteer hardware.**
 
 ---
 
@@ -406,94 +557,6 @@ control alike.**
 **never held more than seven days of history at any point in its existence.** There was no
 multi-year log on that page in April 2026 for anybody to erase in May 2026. The multi-year tally the
 73-overlap spreadsheet was built from did not come from that page and could not have.
-
----
-
-## And the data for the disputed month is on disk anyway
-
-The claim is that N102DZ's history was erased in **May 2026** so that nobody could check it.
-
-This investigation holds **26 days of primary ADS-B position trace for N102DZ inside May 2026** —
-2, 3, 4, 5, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 20, 21, 22, 23, 24, 25, 27, 28, 29 and 31
-May — pulled from **globe.airplanes.live**, a volunteer network FlightRadar24 does not own, does not
-supply, and cannot edit. Coverage continues either side: 25, 26, 29 and 30 April before it, and 1
-through 5 June after.
-
-**Whatever did or did not happen at FlightRadar24 in May 2026, the aircraft's movements that month
-are recoverable by any member of the public, and this site has them.**
-
----
-
-## The one thing that genuinely changed in the window
-
-The sweep did turn up a real, dated, documentary change in the disputed period — and it is not
-flight data.
-
-Pulled from the **FAA Releasable Aircraft Database** on 24 August 2026, all ten US-registered tails
-this investigation tracks, sorted by last registry action:
-
-| Tail | Registrant of record | Certificate issued | Last registry action |
-|---|---|---|---|
-| N55906 | OPOLINER LARRY — Winter Park, FL | 2005-05-12 | 2023-03-17 |
-| N1098L | LASAI AVIATION II LLC — Manassas, VA | 2023-05-15 | 2023-05-23 |
-| N2100L | LASAI AVIATION II LLC — Manassas, VA | 2023-07-10 | 2023-07-10 |
-| N872RA | A&E HAWKER LP — Santa Ana, CA | 2019-05-16 | 2023-08-04 |
-| N888KG | N888KG LLC — Lehi, UT | 2022-07-26 | 2023-08-18 |
-| N560TW | T W LEWIS-AVIATION LLC — Scottsdale, AZ | 2014-03-07 | 2023-10-13 |
-| N582MM | DOJA CONTRACTING LLC — Mesa, AZ | 2024-01-25 | 2024-01-25 |
-| N40JD | NUP AVIATION LLC — Princeton, IL | 2024-08-22 | 2024-08-22 |
-| **N102DZ** | **ELDERBERRY CHESTNUT LLC — Cheyenne, WY** | **2025-10-16** | **2025-12-23** |
-| N59906 | ALPHA WHISKEY 2 LLC — Brandon, MS | 2026-04-04 | 2026-04-04 |
-
-**N102DZ is the only case-central aircraft whose registration moved after 10 September 2025.** The
-certificate was issued **thirty-six days after the assassination**, to a Wyoming holding company, and
-a further registry action followed on **23 December 2025** — months before the reported May 2026
-"erasure", and on precisely the tail number the erasure claim names.
-
-**State what this is and what it is not.** It is a public federal record of a registration change, in
-the right window, on the right aircraft. **It is not a deletion, and it is not evidence of one.**
-Aircraft are re-registered constantly; ownership passes; a registrant is frequently a holding LLC
-and a holding company is not a person, so this site does not go behind one to name individuals. It is
-also worth saying that the community tracking databases still list the *previous* name for this tail
-— which is one prosaic way a researcher could look at two sources, see two different owners, and
-reach for the word "erased".
-
-What makes it worth publishing is that it is the **only** dated change anywhere in the fleet that
-falls in the disputed window at all. Every other candidate on this page dissolved into archive
-mechanics. This one is a real record, and it is left standing as a question rather than an answer.
-
----
-
-## What is still genuinely gone
-
-Sorting the gaps did not make them go away. Four things remain unrecoverable, and the honest version
-of this page has to lead with them as prominently as the refutations.
-
-**1. All of 2022, from the daily archives.** The following-planes claim opens with alleged overlaps
-in **October, November and December 2022** — New York, Chicago, Boston, Wichita, Wilmington, St
-Louis. **Neither free daily archive can be asked about any of them.** The only free route into 2022
-is the ADS-B Exchange monthly sample, which holds **one day per month, the 1st**. It can fix a
-position on 1 October 2022. It can say nothing whatever about 5 October 2022. **Twenty of the
-eighty-five alleged overlaps sit under this floor and cannot be tested by anyone, for or against.**
-
-**2. Whose feet were on the aircraft.** This is the one that matters most and the one no archive
-anywhere will ever fix. **A trace proves presence. It never proves purpose and it never proves
-occupancy.** Twenty-six days of N102DZ tracks in May 2026 do not place any named person on any leg.
-**Erika Kirk's itinerary is the missing document, and no backup produces it** — which is precisely
-why she was able to issue the invitation, and precisely why taking her up on it does not settle
-anything either way.
-
-**3. Twenty-two alleged overlap dates the archives simply never heard.** Inside the covered period,
-twenty-two aircraft-and-date pairs return nothing from either network after the GitHub off-site
-backup was also asked and also came back empty. **That is a coverage fact, not a finding.** Parked
-with the transponder off, outside receiver coverage, and *the claimed date is simply wrong* all look
-identical from here — and several of these rows are already marked inaccurate in the spreadsheet's
-own audit column.
-
-**4. What any of these pages displayed in May 2026.** A page that loads today cannot testify about a
-table's contents eight months ago. **"The page was taken down" is refuted.** A narrower claim — that
-history was specifically purged and later restored — is beyond every method used here, in either
-direction, and **no page on this site may assert it.**
 
 ---
 

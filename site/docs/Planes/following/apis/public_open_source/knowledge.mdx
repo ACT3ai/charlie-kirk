@@ -656,6 +656,25 @@ words have been retired from the match list, and the airliner exclusion set was
 missing BCS1/BCS3, B712 and the regional Embraers, which were leaking into the
 recurrence output as if they were business jets.
 
+**5. Four ways evidence was on disk and unreachable — found and fixed.** A full
+integrity audit of 4,523 payloads and 23,954 provenance records found: a
+**corrupt provenance record** that `json.load()` refused, so that ask was
+invisible to every audit (caused by a non-atomic write; every evidence writer now
+goes through `lib/atomic.py`); a **payload holding gzip bytes under a `.json`
+name** that the old extension-based reader silently counted as an empty day
+(`lib/traces.py` now sniffs magic bytes — the fix recovered **558 position
+points**); **six traces carrying positions from the previous UTC day**, which
+mis-dated two ground visits by 24 hours; and **a lane that only ever recorded
+success**, which is now writing an honest four-way verdict for every absence.
+
+**And the pre-filter bug's cost is now measured, not estimated.** Replaying both
+filter versions against real positions shows **14 aircraft-days across 13 UTC
+dates** that the shipped sweep provably lost — including, as a cross-check, the
+SU-BTT 2024-04-23 Provo presence that was found by hand. `plan_sweep_rerun.py`
+writes the ranked manifest: 13 dates to recover those, 36 whose download failed,
+233 for the full re-sweep that turns every sweep-only floor into a total.
+`audit_data_integrity.py` now reports **7 handled, 0 dangerous** and exits 0.
+
 Full accounting, with every derived file and script named:
 [Investigating Deleted Flights](/Planes/investigating_deleted_flights).
 

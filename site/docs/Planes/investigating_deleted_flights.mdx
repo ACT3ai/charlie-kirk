@@ -6,6 +6,48 @@ description: "Working status of the effort to recover flight records that went m
 
 # Investigating Deleted Flights
 
+**2,346 aircraft-days of primary flight position data are held on disk, and every single one of them
+came from a free, open, no-account archive. No proprietary API contributed one aircraft-day.** Asked
+by **geography** rather than by tail number, that data now covers **71.9% of the event-window days,
+and 92–98% of 2024 and 2025**.
+
+### The coverage, and which archive produced it
+
+| The question being asked | Coverage | Which archive produced it |
+|---|---:|---|
+| **"Was anything foreign on the ground near this event?"** — the blind geographic sweep, all years | **71.9%** of 363 event-window days | **adsb.lol's GitHub Release backup** — the operator's whole archive mirrored one release per UTC day, ODbL, no account, including every date the live API refuses |
+| The same question, 2024 | **98.02%** | same |
+| The same question, 2025 | **92.23%** | same |
+| The same question, 2023 | **82.72%** | same |
+| The same question, 2022 | **0.00%** | **nothing free reaches 2022 by geography** |
+| **"Where was this specific tail on this day?"** — foreign fleet, per-tail, event windows | **8.95%**, with **zero never-asked** | globe.airplanes.live, adsb.lol, ADS-B Exchange free monthly samples |
+| The same question, US / Kirk-associated fleet | **22.18%** | same, plus 111 days filed out of the sweep's own downloads |
+
+| Archive | Aircraft-days held | Share of held | Days where it is the **only** source |
+|---|---:|---:|---:|
+| **globe.airplanes.live** | 2,072 | 88.32% | **371** |
+| adsb.lol | 1,702 | 72.55% | 10 |
+| ADS-B Exchange free monthly samples | 207 | 8.82% | **153** |
+| adsb.lol GitHub Release backup | 113 | 4.82% | **111** |
+| **Proprietary / paid APIs** | **0** | **0%** | **0** |
+
+**What that coverage produced.** The blind sweep — which is not told a tail number and cannot be
+steered toward a wanted answer — puts **SU-BND on the ground at Provo Municipal continuously from 5
+to 12 September 2025**, at an unchanged **1.29 km** from the field reference point across eight
+days, and **SU-BTT on the ground at Provo on 10 September 2025**, 13:07–13:13 UTC. Both archives
+agree on every one of those fixes. The full Provo record is §4.6; the sweep result is §4.1.
+
+**Published in the same breath, because it points the other way:** across the 261 usefully swept UTC
+days the sweep does **not** reproduce a "73 times" pattern anywhere else, and **2022 remains at
+zero** — the year the following claim starts is the year no free archive covers at all.
+
+**No trace anywhere places any person aboard any aircraft.** Presence is not occupancy, and Erika
+Kirk's itinerary is the missing document that no archive produces. The limits of every number above
+are in §9.
+
+---
+
+
 **Status file. Updated 2026-08-28.** This is the working record of one effort:
 going back through the enormous volume of flight data already downloaded to this
 repository, and finding out how much of the erased record we actually got back.
@@ -82,13 +124,17 @@ gap between 78% and 9% is mostly *what kind of aircraft this is*, not *who is
 hiding it*. Both controls are airliners, which makes them a weak control for a
 private jet — that limitation is stated here rather than hidden.
 
-**A second warning, this one about our own bookkeeping.** D2 is only meaningful
-where a *miss* was recorded as well as a hit. Three of the four sources —
-the ADS-B Exchange monthly samples, the GitHub backup ingest, and the page
-archive — write a record **only when they succeed**, so their asked-hit rate is
-100% by construction and means nothing. The same defect makes the 2026 row of
-any coverage table read 100%. **Quote D2 only for adsb.lol and airplanes.live,
-which write a `.miss` record when the archive was asked and had nothing.**
+**A second warning, this one about our own bookkeeping — now half fixed.** D2 is
+only meaningful where a *miss* was recorded as well as a hit, and three of the
+four sources used to write a record **only when they succeeded**, making their
+asked-hit rate 100% by construction.
+
+**The GitHub-backup lane no longer does this.** It now writes a record either
+way, with a verdict saying which of four things an absence actually is — see
+§4.18. **The ADS-B Exchange monthly samples and the page archive still do**, so
+their 100% remains an artifact and the 2026 row of any coverage table still
+reads 100% for that reason. **Quote D2 for adsb.lol, airplanes.live and the
+GitHub backup; never for the samples or the page archive.**
 
 ### D3 — Event-window coverage (the number that matters)
 *Restricted to the 363 UTC days that are a sourced Charlie / Erika / TPUSA event
@@ -907,6 +953,155 @@ day where the page names two.**
 **A "0 rows recovered" is not an absence of evidence until the extractor has been
 checked.** That is now a standing rule here.
 
+### 4.18 Data that was on disk and unreachable — found, and now readable
+
+The two caveats this page ended on were not acceptable as caveats, so they were
+worked rather than noted. A full integrity audit of all **4,523 payloads and
+23,954 provenance records** turned up four separate ways evidence was sitting in
+this repository and not reaching any number computed from it.
+
+**1. A corrupt provenance record, invisible to every audit that read it.**
+`SU-BTT_2024-04-07_airplanes-live_trace_full.miss.json.meta.json` held one
+complete JSON object followed by a 49-byte fragment — the tail of an earlier,
+**longer** write that a shorter second write had failed to truncate.
+`json.load()` refused the file, so that ask record simply did not exist as far as
+any tooling was concerned. **Repaired, with the repair recorded inside the file.**
+
+**The root cause is fixed, not just the symptom.** `open(path, "w")` truncates
+and then writes, so an interruption — or any rewrite shorter than the original —
+leaves a splice of old and new. Every evidence writer now goes through
+`lib/atomic.py`, which writes to a temporary file in the same directory and
+`os.replace()`s it into position. A reader now sees either the complete old file
+or the complete new one, never a mixture.
+
+**2. A payload that was gzip under a `.json` name — silently counted as empty.**
+`SU-BTT_2023-04-01_adsblol-github-backup_trace_full.json` holds gzip bytes. The
+old reader chose its decompressor from the **file extension**, handed gzip bytes
+to a plain text reader, caught the exception, and returned a record that was
+**indistinguishable from a genuine empty day**. That is worse than a missing
+file: a missing file gets counted as missing.
+
+`lib/traces.py` now sniffs the magic bytes and ignores the name, and an
+unreadable payload now returns `unreadable: true` instead of quietly looking
+empty. **That one fix recovered 558 position points** that had been on disk and
+uncounted. This is not an exotic case — **files inside the adsb.lol GitHub
+Release tarballs are gzip-compressed despite their `.json` names**, so any reader
+that trusts the extension will keep hitting it.
+
+**3. Six traces carrying positions from the previous UTC day.** When a track
+straddles midnight, readsb writes the earlier positions into the *next* day's
+file with **negative** seconds-after-midnight. One file, SU-BTT's for
+2025-10-12, is **61 of 64 points from 2025-10-11**. The timestamps were always
+computed correctly, but the *day* a visit was filed under came from the file
+name, so a visit could be dated 24 hours wrong.
+
+Every ground visit now carries its own `utc_date`, derived from its first fix,
+alongside the `file_date` it came from. **Two ground visits were mis-dated** —
+N102DZ at Bozeman, filed 2025-08-20, actually 2025-08-19. **Neither changes any
+published claim** (Bozeman is nowhere near a sourced event on either date), and
+both are now correct.
+
+**4. The lane that only ever recorded success.** The GitHub-backup ingest wrote a
+record when it found something and nothing when it did not, which is exactly the
+defect that made its "asked-hit rate" 100% by construction. It now writes a
+record either way — **and the record does not claim more than it can support.**
+
+That last point matters more than it looks. It would be easy to write "the sweep
+streamed this whole day and this aircraft was not in it, therefore the archive
+had nothing." **That would be false**, because the sweep's byte pre-filter
+rejects a file *before* the aircraft is ever identified. So each absence is now
+classified, and where we hold that aircraft-day from another archive the cause is
+**tested** by replaying both filter versions against its real positions:
+
+| Verdict | Count | What it means |
+|---|---:|---|
+| `NOT_SURFACED_BY_SWEEP` | **2,930** | Cause indeterminate — we hold no other trace to test with. **Not "asked and empty" and never to be counted as one** |
+| `NOT_NEAR_ANY_SWEPT_CIRCLE` | **249** | Correct rejection. The aircraft was somewhere else entirely |
+| `ARCHIVE_HELD_NOTHING` | **212** | A genuine archive absence — both filter versions would have surfaced it |
+| **`LOST_TO_OUR_PREFILTER_BUG`** | **14** | **Provably dropped by our own defect. Recoverable** |
+
+The recovery ledger gained a fourth state to match — **`UNRESOLVED_OUR_TOOLING`,
+811 aircraft-days** where we hold nothing and the reason is ours, not the
+archive's. Merging those into "asked and empty" would have inflated our own
+apparent coverage by 811 days.
+
+### 4.19 The pre-filter bug's real cost, measured rather than estimated
+
+The 28.7% blind-area figure in §4.8 is geometry. Here is what it actually cost,
+measured against real positions.
+
+For every aircraft-day the sweep did not surface but that we hold from another
+archive, both filter versions were replayed against the aircraft's true
+positions. **Where the fixed filter surfaces the file and the old one rejects it,
+the shipped sweep provably lost that day to our bug.** That is **14 aircraft-days
+across 13 UTC dates**:
+
+| UTC date | Aircraft |
+|---|---|
+| 2023-03-14 | SU-BTU |
+| 2023-12-15 | N560TW |
+| 2024-03-27 | N582MM |
+| **2024-04-23** | **N888KG, SU-BTT** |
+| 2024-06-15 | N102DZ |
+| 2024-09-29 | N888KG |
+| 2024-10-11 | N102DZ |
+| 2024-12-20 | N560TW |
+| 2025-03-02 | N582MM |
+| **2025-09-09** | **N582MM** |
+| **2025-09-11** | **SU-BTT** |
+| 2025-09-20 | N102DZ |
+| 2025-10-01 | T7-ELL |
+
+**The replay independently rediscovered the known miss.** SU-BTT on 2024-04-23 —
+the Provo ground presence found by hand during verification and written up in
+§4.8 — falls out of this automated test without being told to. That is the
+cross-check that makes the other thirteen credible. Three of the fourteen sit in
+the September 2025 window.
+
+**This is a floor on the bug's cost, and a low one.** It can only detect the loss
+among the **sixteen tracked tails** — aircraft we already knew to look for. The
+sweep exists to find aircraft **nobody named**, and for those the loss cannot be
+measured at all without redoing the day. **That is why every sweep-only count on
+this site remains a floor.**
+
+### 4.20 The re-run is now a manifest, not a caveat
+
+`plan_sweep_rerun.py` writes `sweep_rerun_manifest.json` — the exact work
+outstanding, ranked, with the commands:
+
+| Priority | Dates | Why |
+|---|---:|---|
+| **1 — lost to our bug** | **13** | 14 aircraft-days we can prove were dropped. We know what is there. Highest value per gigabyte |
+| **2 — download failed** | **36** | Truncated or unresolved streams. The CDN reported a full Content-Length on every one, so **the data exists** — we failed to finish reading it. Not deletions |
+| **3 — full re-sweep** | **233** | Every date swept before the fix. **This is the one that turns every sweep-only floor into a total.** ~2–5 GB streamed per date, never stored |
+| Not recoverable | 9 | adsb.lol published no release for those UTC days. A hole in its archive, not ours |
+
+Priority 1 is thirteen dates and can be run in an afternoon:
+
+```
+for d in 2023-03-14 2023-12-15 2024-03-27 2024-04-23 2024-06-15 2024-09-29 \
+         2024-10-11 2024-12-20 2025-03-02 2025-09-09 2025-09-11 2025-09-20 2025-10-01
+do python3 geo_sweep.py --run --date $d; done
+```
+
+**Nothing on that list is a deletion by anyone.** Priorities 1 and 2 are our own
+failures, priority 3 is our own defect, and the nine unrecoverable dates are an
+archive that never published them.
+
+### 4.21 The audit that keeps it honest from here
+
+`audit_data_integrity.py` re-reads every payload and provenance record and checks
+seven failure classes: corrupt provenance, container/extension mismatch,
+unparseable payload, previous-day offsets, orphan payloads, orphan records, and
+empty traces. It distinguishes **HANDLED** — a condition that exists in the
+archive's own files and that our readers demonstrably cope with, proved by
+re-reading the file through the real production reader — from **DANGEROUS**, a
+condition that would silently corrupt a number. It exits 0 only when nothing
+dangerous remains.
+
+It currently reports **7 handled, 0 dangerous.** Run it after any change to the
+recovery tooling.
+
 ---
 
 ## 5. What worked, and what did not
@@ -973,6 +1168,8 @@ Three rules came out of it, and they govern everything above:
 | `al_only_classified.csv` | every one-archive-only aircraft-day, classified against four independent tests |
 | `wayback_trackpoll_legs.json` | the 85 legs re-parsed out of pages scored as empty |
 | `recurrence_hardtest.csv` | the 3,032-aircraft recurrence population and the hard test applied to it |
+| `data_integrity.json` | the current integrity audit result |
+| `sweep_rerun_manifest.json` | exactly which UTC dates still need re-sweeping, ranked |
 
 ### Code that produced it
 `site/docs/Planes/following/apis/public_open_source/code/`
@@ -987,6 +1184,9 @@ Three rules came out of it, and they govern everything above:
 | `ingest_sweep_traces.py` | files sweep-downloaded traces under their aircraft (§2.5) |
 | `union_su_presence.py` | the union of both routes (§4.9) |
 | `test_prefilter.py` | the regression test locking the §4.8 fix |
+| `audit_data_integrity.py` | seven failure classes over every payload and record; HANDLED vs DANGEROUS |
+| `plan_sweep_rerun.py` | the ranked re-run manifest (§4.20) |
+| `lib/atomic.py` | atomic evidence writes — no more spliced files |
 | `build_flight_legs.py` | ground runs → legs, with cross-midnight stitching |
 | `geo_sweep.py` | the sweep itself — streams a whole UTC day, filters by circle |
 | `recover_erased.js` | pulls two archives side by side per aircraft-day and diffs them |
@@ -1021,6 +1221,10 @@ Three rules came out of it, and they govern everything above:
 | **85 flight legs re-parsed out of archived pages scored as empty** | §4.17 |
 | **N708JH at Provo the day after, and at Scottsdale for the memorial** — answering an open question this site had posted | §4.7 |
 | **N59906's complete 10 September survey flight**, takeoff to landing | §4.12 |
+| **558 position points** in a payload our own reader had been silently skipping | §4.18 |
+| **14 aircraft-days provably lost to our pre-filter bug**, named and recoverable | §4.19 |
+| **A corrupt provenance record** repaired, and the non-atomic write that caused it | §4.18 |
+| **2 ground visits mis-dated by 24 hours**, corrected | §4.18 |
 
 ### Not found — and honestly, why
 
@@ -1033,7 +1237,9 @@ Three rules came out of it, and they govern everything above:
 | **Erika Kirk's itinerary** | **Never published by anyone.** No backup produces it. This is the single largest hole in the whole claim |
 | **The original overlap spreadsheet as a file** | Never released |
 | **The 5 unpublished rows** that took the count from 68 to 73 | No dates, no tails. Untestable as published |
-| **36 sweep days** lost to a download failure | **Our own bug** — see below. Not a deletion |
+| **36 sweep days** lost to a download failure | **Our own bug** — see below. Not a deletion. Now priority 2 in the re-run manifest |
+| **2,930 sweep absences whose cause cannot be determined** | **Neither an ask nor a finding.** We hold no other trace to test them against |
+| **811 aircraft-days unresolved by our own tooling** | Ours, not the archive's. Kept as a separate ledger state so they never inflate coverage |
 | **9 UTC days with no adsb.lol release at all**, costing 3 event-days | A hole in **adsb.lol's own archive**, control-confirmed |
 
 **Not one thing on that list is a removal.** Every single gap classified out as a
@@ -1078,7 +1284,7 @@ verified finding behind it.
 | Blocked on | What it would unlock |
 |---|---|
 | **A credential for a proprietary archive** (FlightAware AeroAPI reaches back to 2011; FR24; ADS-B Exchange historical) | **The only remaining way to raise the per-tail percentage.** Everything free has already been asked. AeroAPI is the highest-value unopened door |
-| **A re-run of the geographic sweep** with the fixed pre-filter | Would turn every sweep-only count from a floor into a total, and recover the 36 lost days |
+| **A re-run of the geographic sweep** with the fixed pre-filter | Would turn every sweep-only count from a floor into a total. **No longer a vague need** — `sweep_rerun_manifest.json` names the exact dates in three ranked priorities, and priority 1 is 13 dates that recover 14 provably-lost aircraft-days (§4.19–4.20) |
 | **Erika Kirk's itinerary** | The person half of every overlap claim. **No archive anywhere holds it** |
 | **State public-records requests** at the city-owned airports — landing fees, fuel tickets, ramp assignment, badge access | **Records rather than readings.** The most under-used route in the whole investigation, and it is state law, not federal FOIA — faster and cheaper |
 
