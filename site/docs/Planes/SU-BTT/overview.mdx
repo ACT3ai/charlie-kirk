@@ -64,14 +64,14 @@ Nineteen of the 57 rows naming SU-BTT can be decided from raw ADS-B position tra
 | [2024-04-23](/Planes/following/overlap/20240423_UT_provo_owens_026/overview) | Provo | UT | [KPVU](/Planes/Airports/KPVU) | **0.00 km** | Charlie |
 | [2024-04-23](/Planes/following/overlap/20240423_UT_salt_lake_city/overview) | [Salt Lake City](/Planes/following/speaking/20240423_salt_lake_city) (event) / Provo (aircraft) | UT | [KPVU](/Planes/Airports/KPVU) | **0.00 km** | Charlie |
 | [2025-09-04](/Planes/following/overlap/20250904_UT_provo_owens_040/overview) | Provo | UT | [KPVU](/Planes/Airports/KPVU) | **0.16 km** | Charlie |
-| [2024-02-09](/Planes/following/overlap/20240209_NE_omaha_lincoln_owens_020/overview) | Omaha / Lincoln | NE | KOMA | 0.31 km | TPUSA |
+| [2024-02-09](/Planes/following/overlap/20240209_NE_omaha_lincoln_owens_020/overview) | Omaha / Lincoln | NE | [KOMA](/Planes/Airports/KOMA) | 0.31 km | TPUSA |
 | [2023-04-01](/Planes/following/overlap/20230401_MO_st_louis_owens_010/overview) | St. Louis | MO | [KSTL](/Planes/Airports/KSTL) | 0.41 km | TPUSA |
-| [2025-08-17](/Planes/following/overlap/20250817_NE_omaha_lincoln_owens_039/overview) | Omaha / Lincoln | NE | KOMA | 0.50 km | Erika |
+| [2025-08-17](/Planes/following/overlap/20250817_NE_omaha_lincoln_owens_039/overview) | Omaha / Lincoln | NE | [KOMA](/Planes/Airports/KOMA) | 0.50 km | Erika |
 | [2023-04-20](/Planes/following/overlap/20230420_DE_wilmington_owens_013/overview) | Wilmington | DE | [KILG](/Planes/Airports/KILG) | 0.56 km | Erika |
 | [2024-02-14](/Planes/following/overlap/20240214_DE_wilmington_owens_021/overview) | Wilmington | DE | [KILG](/Planes/Airports/KILG) | 0.82 km | Erika |
 | [**2025-09-10**](/Planes/following/overlap/20250910_UTDE_provo_then_wilmington_owens_041/overview) | **Provo then Wilmington** | UT/DE | [**KPVU**](/Planes/Airports/KPVU) | **1.23 km** | **Both** |
 | [**2025-09-10**](/Planes/following/overlap/20250910_UT_orem/overview) | [**Orem**](/Planes/following/speaking/20250910_orem) **(event) / Provo (aircraft)** | UT | [**KPVU**](/Planes/Airports/KPVU) | **1.23 km** | **Charlie** |
-| [2025-07-20](/Planes/following/overlap/20250720_NE_omaha_lincoln_owens_038/overview) | Omaha / Lincoln | NE | KOMA | 1.33 km | Erika |
+| [2025-07-20](/Planes/following/overlap/20250720_NE_omaha_lincoln_owens_038/overview) | Omaha / Lincoln | NE | [KOMA](/Planes/Airports/KOMA) | 1.33 km | Erika |
 | [2024-04-03](/Planes/following/overlap/20240403_KS_wichita_lawrence_owens_024/overview) | Wichita / Lawrence | KS | [KICT](/Planes/Airports/KICT) | 1.43 km | Charlie |
 | [2024-04-03](/Planes/following/overlap/20240403_KS_lawrence/overview) | [Lawrence](/Planes/following/speaking/20240403_lawrence) (event) / Wichita (aircraft) | KS | [KICT](/Planes/Airports/KICT) | 1.43 km | Charlie |
 | [2024-04-28](/Planes/following/overlap/20240428_DE_wilmington_owens_027/overview) | Wilmington | DE | [KILG](/Planes/Airports/KILG) | 1.56 km | Erika |
@@ -81,7 +81,7 @@ Nineteen of the 57 rows naming SU-BTT can be decided from raw ADS-B position tra
 | [2023-02-25](/Planes/following/overlap/20230225_MO_st_louis_owens_046/overview) | St. Louis | MO | [KSUS](/Planes/Airports/KSUS) | 2.22 km | Erika |
 | [2025-07-20](/Planes/following/overlap/20250720_NE_lincoln_owens_067/overview) | Lincoln | NE | [KLNK](/Planes/Airports/KLNK) | 7.20 km | Erika |
 
-Source: `site/docs/Planes/following/overlaps.csv`, column `adsb_verified_verdict = AT_CLAIMED_AIRPORT`, sorted by `adsb_closest_approach_km`. Omaha (KOMA) has no airport page on this site yet, so that code is not linked.
+Source: `site/docs/Planes/following/overlaps.csv`, column `adsb_verified_verdict = AT_CLAIMED_AIRPORT`, sorted by `adsb_closest_approach_km`. Every airport code opens that field's complete recovered ground-visit and flight-leg record.
 
 **What this table does not show.** It does not show who was aboard, and it does not show that Erika Kirk was in any of these cities — her presence on the Erika rows is a claimed location taken from social media, not from a record. Read [Which planes Charlie flew, which planes Erika flew](/Planes/Charlie-Erika-Aircraft/overview) before drawing anything from the Erika column.
 
@@ -135,6 +135,9 @@ Each date above opens its own page with the full record for that contact — the
 * **Registry / operator:** Egyptian-registered — described as Israel/Egyptian Air Force / Israel/Egyptian Government use
 * **Nickname in coverage:** "The yellow plane" (Candace Owens's color-coded shorthand; SU-BND was "the blue plane")
 * **Home base in Utah window:** Provo Municipal Airport (PVU), ~7 miles from Utah Valley University
+
+
+*On that distance.* The "~7 miles" figure is this site's long-standing description of how far Provo Municipal sits from Utah Valley University. It is not the measured straight-line number. This investigation's own proximity table (`site/docs/Planes/following/apis/public_open_source/data/analysis/master_proximity.csv`, column `miles_to_event_city`) measures from each aircraft's actual parked position to the Orem city centroid and gives **SU-BTT 4.96 miles** and **SU-BND 4.94 miles** on 10 September 2025. Airport-to-campus, aircraft-to-city-centroid and aircraft-to-venue are three different quantities; an unlabelled mileage is the defect.
 
 ## Flight history relevant to the case
 
@@ -1365,6 +1368,7 @@ This investigation keeps one page per airport and one page per recorded ground c
 | [2025-09-10](/Planes/Incidents/SU-BTT-2025-09-10-KPVU) | [SU-BTT](/Planes/SU-BTT/overview) | [KPVU](/Planes/Airports/KPVU) | Provo, UT | Charlie | **Same day** |
 | [2025-09-11](/Planes/Incidents/N102DZ-2025-09-11-KPVU) | [N102DZ](/Planes/N102DZ/overview) | [KPVU](/Planes/Airports/KPVU) | Provo, UT | Charlie | Day after |
 | [2025-09-11](/Planes/Incidents/N582MM-2025-09-11-KPVU) | [N582MM](/Planes/N582MM/overview) | [KPVU](/Planes/Airports/KPVU) | Provo, UT | Charlie | Day after |
+| [2025-09-11](/Planes/Incidents/N708JH-2025-09-11-KPVU) | [N708JH](/Planes/N708JH/overview) | [KPVU](/Planes/Airports/KPVU) | Provo, UT | Charlie | Day after |
 
 **Airports named on this page:**
 

@@ -512,14 +512,14 @@ All data extracted directly from tool results. No external assumptions added.
 
 This investigation keeps one page per airport and one page per recorded ground contact, built directly from the recovered ADS-B traces. These are the ones that fall inside **2025-02-19 to 2025-02-25**, the range this page covers.
 
-**Ground contacts near a sourced Charlie / Erika / TPUSA event:**
+**Ground contacts near a sourced Charlie / Erika / TPUSA event** — the **5** most significant of **7** this page touches, foreign-fleet and same-day first, then most recent. The full set is on [the contacts index](/Planes/Incidents/overview) and on each aircraft's own page.
 
 | Date (UTC) | Aircraft | Airport | City, State | Whose event | When |
 |---|---|---|---|---|---|
 | [2025-02-19](/Planes/Incidents/N560TW-2025-02-19-KSDL) | [N560TW](/Planes/N560TW/overview) | [KSDL](/Planes/Airports/KSDL) | Scottsdale, AZ | Charlie | Day after |
 | [2025-02-19](/Planes/Incidents/N582MM-2025-02-19-KPHX) | [N582MM](/Planes/N582MM/overview) | [KPHX](/Planes/Airports/KPHX) | Phoenix, AZ | Charlie | Day after |
-| [2025-02-20](/Planes/Incidents/N582MM-2025-02-20-KSDL) | [N582MM](/Planes/N582MM/overview) | [KSDL](/Planes/Airports/KSDL) | Scottsdale, AZ | Charlie | Day after |
 | [2025-02-20](/Planes/Incidents/N582MM-2025-02-20-KTPA) | [N582MM](/Planes/N582MM/overview) | [KTPA](/Planes/Airports/KTPA) | Tampa, FL | Charlie | **Same day** |
+| [2025-02-20](/Planes/Incidents/N582MM-2025-02-20-KSDL) | [N582MM](/Planes/N582MM/overview) | [KSDL](/Planes/Airports/KSDL) | Scottsdale, AZ | Charlie | Day after |
 | [2025-02-21](/Planes/Incidents/N582MM-2025-02-21-KLAL) | [N582MM](/Planes/N582MM/overview) | [KLAL](/Planes/Airports/KLAL) | Lakeland, FL | Charlie | Day after |
 
 **The two indexes:**

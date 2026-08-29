@@ -290,10 +290,31 @@ def esc(s):
 
 
 def page_url(page_path):
-    """site/docs/X/Y.mdx -> /X/Y ; .../overview.mdx -> /X"""
+    """site/docs/X/Y.mdx -> /X/Y ; .../overview.mdx -> /X
+
+    A page that declares its own `slug:` in frontmatter wins, because Docusaurus
+    routes it there and nowhere else.  The overlap pages under
+    following/overlap/ do exactly this and their slug KEEPS the /overview
+    segment, so stripping it here emitted a 404 on every airport page that
+    linked a confirmed overlap row.
+    """
     p = (page_path or "").strip()
     if not p.startswith("site/docs/"):
         return ""
+    abs_path = os.path.join(ROOT, p)
+    if os.path.exists(abs_path):
+        try:
+            with open(abs_path, encoding="utf-8") as fh:
+                head = fh.read(2048)
+            m = re.match(r"^---\n(.*?)\n---", head, re.S)
+            if m:
+                s = re.search(r"^slug:\s*(\S+)\s*$", m.group(1), re.M)
+                if s:
+                    slug = s.group(1).strip().strip('"').strip("'")
+                    if slug.startswith("/"):
+                        return slug
+        except OSError:
+            pass
     p = p[len("site/docs/"):]
     p = re.sub(r"\.mdx?$", "", p)
     p = re.sub(r"/overview$", "", p)

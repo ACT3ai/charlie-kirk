@@ -42,6 +42,20 @@ it will show you that the paid trackers will not, where its archives live — an
 investigation built on top of it to stop asking *"was this aircraft here"* and start asking
 **"what was here"**.
 
+## What this network produced, and what it refused
+
+**It produced every trace in this investigation, and on the day itself it found all nine known aircraft without being told any of their names.**
+
+| Question asked | How it was asked | What came back | What that means honestly |
+|---|---|---|---|
+| *Where was this named tail on this UTC day?* | per-tail pull, four free archives | **2,346 aircraft-days** — 100% of the flight data this investigation holds | Structurally incapable of finding an aircraft nobody thought to look for. **8.95%** of the 363 Egyptian-fleet event-window days |
+| *What was inside a 50-mile circle around this city on this day?* | `geo_sweep.py`, whole UTC days streamed and filtered by geography | **10 September 2025: the archive held 74,405 aircraft; 1,113 entered the Orem circle.** Working from geography alone — no tails, no hex codes, no prior list — it recovered **all nine** aircraft already known to this investigation, **timings matching to the second** | **A validation result, not a new discovery.** What is new is **the denominator**: SU-BND was at Provo *and so were 1,112 other aircraft* |
+| *Is that remarkable?* | the same sweep, same days, same code, on six control cities with no connection to this case | Des Moines, Chattanooga, Spokane, Albuquerque, Syracuse, Shreveport — **built into the run, not bolted on** | "Foreign jets were within 50 miles of the event" means **nothing** until you know how many were within 50 miles of Des Moines that day. **This investigation has already retracted a published finding for skipping a control** |
+| *Can 2022 be swept?* | GitHub Release backup | **No. There is no daily archive before 2023** | **35 event-days fall below the archive's 2023 floor and cannot be swept at all.** For 2022 the only free source is the monthly sample — one day in thirty, which can place an aircraft but can never support a rate |
+| *What could not be swept for other reasons?* | the target builder | **42 event-days unswept in total** — 35 below the floor, **2** naming only a month, **5** with no usable city | Every one is **named** in `data/geo_sweep/targets.json` rather than quietly dropped. **A gap named is worth more than a gap hidden** |
+
+**And the limits below are not a technicality.** **A trace proves presence. It never proves purpose, and it never proves occupancy.** A circle is not an airport and a position is not a landing. **An empty swept day is a coverage fact, not an absence** — transponder off, outside receiver coverage and a wrong claimed date all look identical from here.
+
 ## How a position gets from an aircraft to this page
 
 Nothing in this chain is owned by an aviation company. That is the whole point of it.
@@ -223,6 +237,22 @@ every total, and automatically re-swept.
 The shared lesson is the one this section keeps relearning: **an unasked question, an answered
 question, and a question whose answer got lost in transit look identical from the outside, and
 merging any two of them manufactures a finding.**
+
+### UPDATE — 28 August 2026: a third mistake, of exactly the same family
+
+**The status line above — "as of 26 August 2026: the sweep is running" — has moved on, and one of the two mistakes above turned out to have a sibling that did ship.**
+
+**The sweep's byte pre-filter built its longitude tokens with `math.floor()`.** `math.floor(-111.73)` is **−112**, but a trace file *prints* `-111.73`. So **on every negative longitude the band was shifted one degree west, and the eastern edge of every western-hemisphere circle went unexamined** — **28.7% of each event circle's area on average, and 50.9% for Salt Lake City.**
+
+**It cost a real hit: [SU-BTT on the ground at Provo on 23 April 2024](/Planes/following/Williston_KXWA_2024-04-23_to_2024-04-23/overview)** — which the per-tail route holds in full, and which is how the defect was caught rather than shipped. Fixed in `geo_sweep.py` and locked by `code/test_prefilter.py`. Replaying both filter versions against real positions measures the cost exactly: **14 aircraft-days across 13 UTC dates** the shipped sweep provably lost.
+
+**Until the sweep is re-run, every sweep-only count on this site is a floor, not a total.** The bias ran **against** the pattern-supporting side, because event circles were blinder than control circles.
+
+**Two smaller ones in the same pass.** The `government_operator_string` flag was firing on **FEDERAL EXPRESS, EXECUTIVE JET MANAGEMENT and ROYAL AIR**, and those words have been retired from the match list. The airliner exclusion set was missing BCS1/BCS3, B712 and the regional Embraers, which were leaking into the recurrence output as though they were business jets.
+
+**The coverage numbers this section said it would not publish until the run finished are now published**, with their denominators attached: the geographic sweep covers **71.9%** of the Egyptian-fleet event window, and **82.7% / 98.0% / 92.2%** for 2023 / 2024 / 2025. **2022 is 0% swept.** Full accounting at [Investigating Deleted Flights](/Planes/investigating_deleted_flights) and in the [28 August update on the open-data page](/Planes/following/apis/public_open_source/knowledge).
+
+**The shared lesson is the one this section keeps relearning, now for the third time: an unasked question, an answered question, and a question whose answer got lost in transit look identical from the outside, and merging any two of them manufactures a finding.**
 
 ## What the sweep found on the day itself
 

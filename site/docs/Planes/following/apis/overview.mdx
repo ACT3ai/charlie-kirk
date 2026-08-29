@@ -37,6 +37,59 @@ This section replaces that chain with data we pull ourselves, from named sources
 response saved and timestamped. It exists so that a reader who does not believe a word of this site
 can repeat the pulls and get the same answer.
 
+## What each pass was asked, and what came back
+
+| Source | What was asked | What came back | What that means honestly |
+|---|---|---|---|
+| **[Pass 1 — free and open](/Planes/following/apis/public_open_source/knowledge)** — adsb.lol, globe.airplanes.live, ADS-B Exchange monthly samples, adsb.lol's GitHub Release backup | *Where was this airframe on this UTC day?* — and, separately, *what was on the ground inside a 50-mile circle?* | **2,346 aircraft-days.** 100% of every trace this investigation holds. **325 aircraft-days recovered from inside adsb.lol's two archive holes**, 281 of them from the backup network | **The free pass did all the work.** Per-tail coverage is **8.95%** of 363 Egyptian-fleet event-window days; the geographic sweep covers **71.9%** of the same window. **Quote the denominator or the number means nothing** |
+| **[Pass 2 — commercial](/Planes/following/apis/proprietary/knowledge)** — Flightradar24, FlightAware AeroAPI, ADS-B Exchange | *Sell us the deep history the free networks do not hold* | **0 aircraft-days. No credential is held for any vendor.** Flightradar24 returns **HTTP 403** to scripted requests **across its entire site, including its own home page** — identical ~5,877-byte body for 13 case tails and 7 unrelated controls | **Zero is a finding, not an embarrassment.** And **a Flightradar24 403 says nothing about any particular aircraft.** FlightAware's AeroAPI reaches **2011** and is the highest-value unopened door here |
+| **[Pass 3 — government](/Planes/following/apis/government/knowledge)** — FAA registry, FOIA, state public-records law | *Give us a record instead of a reading* | **FAA Releasable Aircraft Database: HTTP 200, 73.1 MB, 10 of 10 tracked N-tails extracted** with registrant, serial, Mode S hex and certificate dates. **Zero FOIA requests and zero state public-records requests have been filed** | **The one result on this site that has needed no correction** — that is what a record looks like beside a reading. It is also **the most under-used route in the whole investigation**: most of these fields are city- or authority-owned, which makes state law the route, and it is faster and cheaper than FOIA |
+| **[Pass 4 — browser capture](/Planes/following/apis/browser_capture/knowledge)** — a real logged-out browser at the tracking sites | *What does the public actually see at this URL today?* | **HTTP 200 on all 20** Flightradar24 pages — 16 subject tails plus 4 unrelated controls — **full identity blocks, nothing marked removed, blocked or restricted.** Reproduced in a second independent session | **It refuted one of this site's own published claims.** "N102DZ was removed from FlightRadar24" is **REFUTED, not merely untested.** **1 site of 8 captured; 112 of 128 targets untouched** |
+
+**Two rules govern every row of that table and they are not softened anywhere in this section.**
+
+**A 403 from a script is not the public's experience.** Anti-bot filters, Cloudflare and consent walls all return 403 or 503 to a script and 200 to a browser. This site published a Flightradar24 403 as a documented removal, and it was not one; the retraction stays published. Confirm in a real browser — that is what Pass 4 exists for.
+
+**Nothing is called a removal until a control aircraft has failed the same way.** Query an airframe with no connection to this case, on the same dates and the same endpoint. If the control fails identically it is the **archive**, not the airframe. adsb.lol's 403 band and its 404 band both looked like suppression and both were failed identically by control airliners. **Neither is suppression, and no page on this site may describe them otherwise.**
+
+## Where the passes stand — 28 August 2026
+
+The four-pass design assumed the passes would each contribute. In practice one of
+them has done all the work, and saying so plainly is more useful than pretending
+otherwise.
+
+| Pass | Aircraft-days produced | Status |
+|---|---:|---|
+| **1 — free and open** | **2,346** | **100% of every trace this investigation holds** |
+| 2 — commercial | **0** | **No credential is held for any vendor.** Nothing was queried |
+| 3 — government records | 0 traces | The FAA registry was pulled; **no records request has been filed anywhere** |
+| 4 — browser capture | 0 traces | Ran, and its result stands: no aircraft page in this investigation has been removed |
+
+**Pass 1's split, by source:** globe.airplanes.live 2,072 aircraft-days (371 of
+them existing nowhere else), adsb.lol 1,702, ADS-B Exchange free monthly samples
+207 (153 unique, and the only free route that reaches 2022), adsb.lol's GitHub
+Release backup 113. Plus 66 archived web-page captures, which are counted in pages
+and not in aircraft-days because a crawler's visit date is not a flight date.
+
+**Pass 2 producing zero is a finding, not an embarrassment.** The credential slots
+exist in the house credential store; an empty string means "not held", and the
+client reports `BLOCKED on credential` by name without ever printing a value.
+**FlightAware's AeroAPI reaches back to 2011 and is the highest-value unopened
+door in the whole investigation.** It is also the only remaining way to raise the
+per-tail coverage figure, because every free archive has now been asked every
+event-window day for every aircraft in the fleet.
+
+**Pass 3 is the genuinely under-used route**, and it is the one that produces
+*records* rather than *readings*. Most of the fields in this case are city-owned
+or run by a public airport authority, which makes **state public-records law** —
+not federal FOIA — the route: landing fees, fuel tickets, ramp assignment, hangar
+and badge-access logs. It is faster and cheaper than FOIA and nobody has filed
+one.
+
+Coverage percentages, the archive holes, and the defects found in this section's
+own code are all accounted for on
+[Investigating Deleted Flights](/Planes/investigating_deleted_flights).
+
 ## The four passes
 
 <div style={{display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem'}}>
@@ -142,44 +195,6 @@ Erika Kirk anywhere. **A confirmed aircraft is not a confirmed overlap.**
   verdicts: `AT_CLAIMED_AIRPORT`, `ELSEWHERE`, `NOT_HEARD`, `NO_ARCHIVE_COVERAGE`, and the rows that
   name no aircraft or no date. **Only `ELSEWHERE` refutes anything**; the two "no data" verdicts say
   nothing in either direction and are named separately so they cannot be counted as denials.
-
-## Where the passes stand — 28 August 2026
-
-The four-pass design assumed the passes would each contribute. In practice one of
-them has done all the work, and saying so plainly is more useful than pretending
-otherwise.
-
-| Pass | Aircraft-days produced | Status |
-|---|---:|---|
-| **1 — free and open** | **2,346** | **100% of every trace this investigation holds** |
-| 2 — commercial | **0** | **No credential is held for any vendor.** Nothing was queried |
-| 3 — government records | 0 traces | The FAA registry was pulled; **no records request has been filed anywhere** |
-| 4 — browser capture | 0 traces | Ran, and its result stands: no aircraft page in this investigation has been removed |
-
-**Pass 1's split, by source:** globe.airplanes.live 2,072 aircraft-days (371 of
-them existing nowhere else), adsb.lol 1,702, ADS-B Exchange free monthly samples
-207 (153 unique, and the only free route that reaches 2022), adsb.lol's GitHub
-Release backup 113. Plus 66 archived web-page captures, which are counted in pages
-and not in aircraft-days because a crawler's visit date is not a flight date.
-
-**Pass 2 producing zero is a finding, not an embarrassment.** The credential slots
-exist in the house credential store; an empty string means "not held", and the
-client reports `BLOCKED on credential` by name without ever printing a value.
-**FlightAware's AeroAPI reaches back to 2011 and is the highest-value unopened
-door in the whole investigation.** It is also the only remaining way to raise the
-per-tail coverage figure, because every free archive has now been asked every
-event-window day for every aircraft in the fleet.
-
-**Pass 3 is the genuinely under-used route**, and it is the one that produces
-*records* rather than *readings*. Most of the fields in this case are city-owned
-or run by a public airport authority, which makes **state public-records law** —
-not federal FOIA — the route: landing fees, fuel tickets, ramp assignment, hangar
-and badge-access logs. It is faster and cheaper than FOIA and nobody has filed
-one.
-
-Coverage percentages, the archive holes, and the defects found in this section's
-own code are all accounted for on
-[Investigating Deleted Flights](/Planes/investigating_deleted_flights).
 
 ## What none of it can do
 

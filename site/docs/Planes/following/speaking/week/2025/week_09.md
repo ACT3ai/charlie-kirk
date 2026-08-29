@@ -376,7 +376,7 @@ No other posts in the searches directly detailed additional Charlie Kirk or TPUS
 
 This investigation keeps one page per airport and one page per recorded ground contact, built directly from the recovered ADS-B traces. These are the ones that fall inside **2025-02-26 to 2025-03-04**, the range this page covers.
 
-**Ground contacts near a sourced Charlie / Erika / TPUSA event:**
+**Ground contacts near a sourced Charlie / Erika / TPUSA event** — the **3** most significant of **4** this page touches, foreign-fleet and same-day first, then most recent. The full set is on [the contacts index](/Planes/Incidents/overview) and on each aircraft's own page.
 
 | Date (UTC) | Aircraft | Airport | City, State | Whose event | When |
 |---|---|---|---|---|---|

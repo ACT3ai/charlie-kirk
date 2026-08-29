@@ -523,7 +523,7 @@ This includes **all data** returned by the tools for the exact date range.
 
 This investigation keeps one page per airport and one page per recorded ground contact, built directly from the recovered ADS-B traces. These are the ones that fall inside **2025-07-09 to 2025-07-15**, the range this page covers.
 
-**Ground contacts near a sourced Charlie / Erika / TPUSA event:**
+**Ground contacts near a sourced Charlie / Erika / TPUSA event** — the **2** most significant of **3** this page touches, foreign-fleet and same-day first, then most recent. The full set is on [the contacts index](/Planes/Incidents/overview) and on each aircraft's own page.
 
 | Date (UTC) | Aircraft | Airport | City, State | Whose event | When |
 |---|---|---|---|---|---|

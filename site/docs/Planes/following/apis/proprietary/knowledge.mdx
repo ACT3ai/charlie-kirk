@@ -33,6 +33,26 @@ The free sources answered a great deal — see [the open-source
 pass](/Planes/following/apis/public_open_source/knowledge) — but they stop dead in two places that
 matter, and commercial vendors are the only way through both.
 
+## What this pass produced, and what it refused
+
+**Zero aircraft-days. Zero credentials held. Every question on this page is open, and the page exists so that stays visible instead of quietly becoming "no comment".**
+
+| Vendor | What was asked | What came back | What that means honestly |
+|---|---|---|---|
+| **Flightradar24** — `fr24api.flightradar24.com` | deep history, by API | **`FR24_API_TOKEN` — not held. Nothing queried** | — |
+| **Flightradar24** — the public site, **by script** | 13 case tails + 7 unrelated controls + its own home page | **HTTP 403 on all of them**, identical ~5,877-byte body | **Site-wide bot protection.** **A Flightradar24 403 says nothing whatsoever about any particular aircraft's record** — and this site published one as a documented removal. That was our error and the retraction stays published |
+| **Flightradar24** — the same pages, **in a real logged-out browser** | 16 subject tails + 4 unrelated controls | **HTTP 200 on all 20**, full identity blocks | **No aircraft page in this investigation has been removed from Flightradar24.** REFUTED, not merely untested |
+| **Flightradar24** free-tier history depth | read from its own error text, confirmed against controls | **7 days** | Explains the N888KG and N102DZ "vanishing tables" completely. **A logged-out free tier is the weakest view the vendor offers** — 90 days on Silver, a year on Gold, three years on Business, and nobody has looked through one |
+| **FlightAware AeroAPI v4** — `aeroapi.flightaware.com` | history to **2011** | **`AEROAPI_KEY` — not held.** Scripted probes of the public site return **HTTP 200**; not blocking | **The highest-value unopened door in the whole investigation**, and the only remaining way to raise the per-tail coverage figure |
+| FlightAware modern pages, as archived | server-rendered flight rows | **Client-side application, no server-rendered rows** | An archived modern page holds no flight data to recover |
+| FlightAware **pre-2017** pages, as archived | server-rendered tables | **109 legs recovered** | The old pages are the ones worth going to the Internet Archive for |
+| **ADS-B Exchange** historical, via RapidAPI | deep history | **`ADSBX_RAPIDAPI_KEY` — not held.** History pages **403 to the public** | Behind a subscription since the site commercialised. **Several of the original screenshots in this case came from here while it was open** |
+| RadarBox, Cirium, OAG, Spire | — | **Not investigated** | — |
+
+**The counterargument to every row of that table, stated at full strength:** each of these is a statement about how a website responds to a client on one day. **None of them is a statement about whether an aircraft flew.**
+
+**A missing credential is reported by NAME, never by value.** The slots exist in the house credential store outside every git repo; an empty string means "not held" and the client exits with `BLOCKED on credential` and the key's name. **No script on this site ever prints a credential value.**
+
 ## Read this before you read anything else on this page
 
 **Flightradar24 returns HTTP 403 to scripted requests across its entire site, including its own home
@@ -269,6 +289,16 @@ responds to a script on one day. None of them is a statement about whether an ai
   the scripted route cannot see even whether a record exists, let alone whether one changed. **A 403
   here must never be quoted as a removal** — the browser pass is what actually sees these pages.
 
+### UPDATE — 28 August 2026: two items above are now partly out of date
+
+**An out-of-date "what we did NOT get" section is worse than none, so the specific sentences are retracted here rather than edited away above.**
+
+**RETRACTED, in part: "The 2022 rows. Blocked on an AeroAPI key."** They are no longer wholly blocked. **ADS-B Exchange's free monthly sample archive reaches back to 2016 and has produced 207 aircraft-days, 153 of them unique — and it is the only free route into 2022 that exists.** It has placed [SU-BTT](/Planes/SU-BTT/overview) **on the ground at [Wichita](/Planes/Airports/KICT) on 1 September 2022** with 159 position fixes at 0.79 km, and at [Wilmington DE](/Planes/Airports/KILG) on 1 June 2022. **The sampling caveat travels with every one of them: one day per month, the 1st.** It establishes that an aircraft was somewhere; it can never establish how often. **The commercial case for AeroAPI still stands — it is just smaller than this page says.** A claim about a specific mid-month 2022 date remains untestable for free, and per-tail coverage of 2022 is **0.43%**.
+
+**NARROWED: "The 52 claimed dates with no free trace."** Every event-window day for every aircraft in the fleet has now been put to **every free archive that exists**, so *never-asked* is zero and the remaining figure is genuinely "asked, and no free archive holds it" rather than "nobody looked". **325 aircraft-days were also recovered from inside adsb.lol's two archive holes**, 281 of them from the backup network. **A commercial subscription is still the only way to test the residue** — and a vendor with dense receiver coverage *also* finding nothing would be a considerably stronger negative than a volunteer network finding nothing.
+
+**UNCHANGED, and it is the important one: no credential is held for any vendor on this page.** `AEROAPI_KEY`, `FR24_API_TOKEN`, `ADSBX_RAPIDAPI_KEY` — **all not held.** **Pass 2 has produced zero aircraft-days.** That is a publishable fact, not a failure to hide, and it remains the cheapest way to raise the per-tail coverage figure.
+
 ## The rule that governs this pass
 
 **Run the free pass first, always.** adsb.lol serves a free historical archive at the same URL shape
@@ -298,6 +328,11 @@ throw out everything else.
 ## Flight-record pages for what is on this page
 
 This investigation keeps one page per airport and one page per recorded ground contact, built directly from the recovered ADS-B traces. These are the ones this page touches.
+
+**Airports named on this page:**
+
+* [KILG — Wilmington Airport / New Castle Airport](/Planes/Airports/KILG), Wilmington, DE — 28 recorded ground visits, 3 tracked aircraft
+* [KICT — Wichita Dwight D. Eisenhower National Airport](/Planes/Airports/KICT), Wichita, KS — 1 recorded ground visit, 1 tracked aircraft
 
 **Aircraft named on this page:**
 

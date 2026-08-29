@@ -37,6 +37,21 @@ That last one has to be done properly or not at all. The claim "they scrubbed it
 thing in the world to say and the easiest thing in the world to disprove, and one bad example
 discredits every good one.
 
+## What this pass produced, and what it refused
+
+**It was run, and it refuted one of this site's own published claims.**
+
+| Target | What was asked | What came back | What that means honestly |
+|---|---|---|---|
+| **Flightradar24**, 16 subject tails + 4 unrelated controls, real logged-out browser, 24 Aug 2026 | *What does the public actually see at this URL today?* | **HTTP 200 on all 20.** Full identity blocks. **Nothing on any page says removed, blocked or restricted.** N102DZ returns title `N102DZ - Gulfstream V [555] - Flightradar24`, MODE S `A00C85`, TYPE CODE `GLF5` | **"N102DZ was removed from FlightRadar24" is REFUTED, not merely untested.** Capture: `fr24_page_availability_2026-08-24.tsv` |
+| **Flightradar24**, independent re-test, 6 probes, different operator | reproduce the first run | **HTTP 200 on all 6** | Two independent sessions agree. Capture: `fr24_n102dz_removal_test_2026-08-24b.tsv` |
+| The **empty history table** on those pages | is emptiness a deletion? | The unrelated control **N628TS prints the identical "could not find data" message at an almost identical byte count** | **An empty table is a paywall until proven otherwise.** It is FR24's seven-day free-tier window, not a purge |
+| **Internet Archive CDX**, 30 tracking-site URLs for the five Egyptian tails and T7-ELL | did anyone archive the evidence? | The most uncomfortable finding on this page — see below | **Never query CDX with `collapse=digest`**: it returns only distinct-content captures, so counts become floors and the "did this page stop changing?" test is impossible by construction. **A CDX query that fails with HTTP 504 is UNKNOWN, not zero** |
+| **globe.adsbexchange.com** Wayback snapshots | per-aircraft data | **Empty JavaScript shells.** Identical content digests across different hex codes | The Archive captured the app frame, not aircraft data. **They must never be cited as per-aircraft evidence** |
+| ADS-B Exchange, FlightAware, RadarBox, Planespotters, JetPhotos, adsb.lol globe, airplanes.live globe | capture the page | **Not captured at all** | **1 site of 8. 112 of 128 targets untouched** |
+
+**The limit of that refutation, and it travels with it everywhere.** **A page that loads today cannot testify about what its table held in May 2026.** "The page was taken down" is refuted. **A narrower purge-and-restore claim is beyond this method in EITHER direction, and no page on this site may assert it.**
+
 ## This pass had one specific job, it was run, and it refuted one of our own claims
 
 This pass used to be a general good idea. Then it acquired exactly one question that no other pass

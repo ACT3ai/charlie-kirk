@@ -37,6 +37,24 @@ and on this site a record outranks every reading and every social-media post abo
 It is also the slowest pass. A download takes a minute. A records request takes weeks, and some of
 them come back refused.
 
+## What this pass produced, and what it refused
+
+**One download answered every registry question in the case. Not one records request has been filed anywhere.**
+
+| Source | What was asked | What came back | What that means honestly |
+|---|---|---|---|
+| **FAA Releasable Aircraft Database** | `registry.faa.gov/database/ReleasableAircraft.zip` — the whole US civil register | **HTTP 200, 73.1 MB, 24 August 2026. 10 of 10 tracked N-tails extracted** with registrant, address, serial, Mode S hex, certificate issue and expiry. Re-checked and unchanged | **The one result on this site that has needed no correction.** Public domain, republishable in full. **The hex codes agree with the community databases; the owner names do not** — the FAA is the record |
+| **OurAirports gazetteer** | `ourairports-data/airports.csv` | **HTTP 200, CC0**, held in the repo | Resolves a trace position to a named field. **Geometry, not a landing record** — it knows nothing about ramps, tenancy or who got out, which is why every distance on this site is in kilometres |
+| FAA NFDC airport and facility files | runway, lighting, ownership class, FBO, customs status | **Not pulled.** Free download | We are leaning on a community dataset for facts a government file publishes |
+| FAA operations counts by airport | **itinerant foreign operations by field** | **Not pulled.** Free download, web UI | **The cheapest unfired shot in this pass.** Without it, "unusual" is an adjective. With it, "unusual" is a number with a denominator |
+| Federal air traffic agency | flight strips, radar, recordings | **FOIA — no request filed** | — |
+| Federal border agency | customs processing of international arrivals | **FOIA — no request filed** | **2025 Provo arrivals cleared customs at [Minot, North Dakota](/Planes/following/Minot_KMOT_2025-04-08_to_2025-09-04/overview), not at Provo.** Anyone looking in Utah is looking in the wrong state |
+| Federal foreign-affairs department | diplomatic clearance for foreign state aircraft | **FOIA — no request filed** | — |
+| **The airports themselves** | landing fees, fuel tickets, ramp assignment, hangar, **badge access** | **STATE public-records law — no request filed** | **The most under-used route in the whole investigation.** Most of these fields are city-owned or run by a public airport authority, which makes state law the route — faster and cheaper than federal FOIA |
+| Egyptian civil aviation registry | the five `SU-` tails at the centre of the claim | **No public equivalent exists** | They cannot be resolved by any free government download, in any country |
+
+**The rule this pass runs on, and it is not softened below:** **an ADS-B record can locate an aircraft. It can never locate a passenger.** A transponder broadcasts an airframe's identity and position and nothing about who is aboard, who chartered it, or who authorised it. **No record produced by this pass places any person on any aircraft in this investigation.**
+
 ## What downloads freely, right now, with no request at all
 
 ### The FAA Releasable Aircraft Database

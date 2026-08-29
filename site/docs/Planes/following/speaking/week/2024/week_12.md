@@ -607,14 +607,14 @@ No additional posts were found in the date range that explicitly announce new up
 
 This investigation keeps one page per airport and one page per recorded ground contact, built directly from the recovered ADS-B traces. These are the ones that fall inside **2024-03-18 to 2024-03-24**, the range this page covers.
 
-**Ground contacts near a sourced Charlie / Erika / TPUSA event:**
+**Ground contacts near a sourced Charlie / Erika / TPUSA event** — the **5** most significant of **7** this page touches, foreign-fleet and same-day first, then most recent. The full set is on [the contacts index](/Planes/Incidents/overview) and on each aircraft's own page.
 
 | Date (UTC) | Aircraft | Airport | City, State | Whose event | When |
 |---|---|---|---|---|---|
 | [2024-03-18](/Planes/Incidents/N560TW-2024-03-18-KSDL) | [N560TW](/Planes/N560TW/overview) | [KSDL](/Planes/Airports/KSDL) | Scottsdale, AZ | Charlie | Day before |
 | [2024-03-19](/Planes/Incidents/N582MM-2024-03-19-KAGC) | [N582MM](/Planes/N582MM/overview) | [KAGC](/Planes/Airports/KAGC) | Pittsburgh, PA | TPUSA | **Same day** |
-| [2024-03-19](/Planes/Incidents/N582MM-2024-03-19-KSAN) | [N582MM](/Planes/N582MM/overview) | [KSAN](/Planes/Airports/KSAN) | San Diego, CA | Charlie | Day after |
 | [2024-03-19](/Planes/Incidents/N582MM-2024-03-19-KSDL) | [N582MM](/Planes/N582MM/overview) | [KSDL](/Planes/Airports/KSDL) | Scottsdale, AZ | Charlie | **Same day** |
+| [2024-03-19](/Planes/Incidents/N582MM-2024-03-19-KSAN) | [N582MM](/Planes/N582MM/overview) | [KSAN](/Planes/Airports/KSAN) | San Diego, CA | Charlie | Day after |
 | [2024-03-21](/Planes/Incidents/N582MM-2024-03-21-KLAS) | [N582MM](/Planes/N582MM/overview) | [KLAS](/Planes/Airports/KLAS) | Las Vegas, NV | Charlie | **Same day** |
 
 **The two indexes:**

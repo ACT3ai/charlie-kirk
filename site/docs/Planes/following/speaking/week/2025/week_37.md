@@ -463,7 +463,7 @@ No additional posts in the results described other confirmed speaking dates/loca
 
 This investigation keeps one page per airport and one page per recorded ground contact, built directly from the recovered ADS-B traces. These are the ones that fall inside **2025-09-10 to 2025-09-16**, the range this page covers.
 
-**Ground contacts near a sourced Charlie / Erika / TPUSA event:**
+**Ground contacts near a sourced Charlie / Erika / TPUSA event** — the **13** most significant of **18** this page touches, foreign-fleet and same-day first, then most recent. The full set is on [the contacts index](/Planes/Incidents/overview) and on each aircraft's own page.
 
 | Date (UTC) | Aircraft | Airport | City, State | Whose event | When |
 |---|---|---|---|---|---|
@@ -477,6 +477,9 @@ This investigation keeps one page per airport and one page per recorded ground c
 | [2025-09-10](/Planes/Incidents/SU-BND-2025-09-10-KPVU) | [SU-BND](/Planes/SU-BND/overview) | [KPVU](/Planes/Airports/KPVU) | Provo, UT | Charlie | **Same day** |
 | [2025-09-10](/Planes/Incidents/SU-BTT-2025-09-10-KPVU) | [SU-BTT](/Planes/SU-BTT/overview) | [KPVU](/Planes/Airports/KPVU) | Provo, UT | Charlie | **Same day** |
 | [2025-09-11](/Planes/Incidents/N102DZ-2025-09-11-KPVU) | [N102DZ](/Planes/N102DZ/overview) | [KPVU](/Planes/Airports/KPVU) | Provo, UT | Charlie | Day after |
+| [2025-09-11](/Planes/Incidents/N582MM-2025-09-11-KPVU) | [N582MM](/Planes/N582MM/overview) | [KPVU](/Planes/Airports/KPVU) | Provo, UT | Charlie | Day after |
+| [2025-09-11](/Planes/Incidents/N708JH-2025-09-11-KPVU) | [N708JH](/Planes/N708JH/overview) | [KPVU](/Planes/Airports/KPVU) | Provo, UT | Charlie | Day after |
+| [2025-09-11](/Planes/Incidents/N872RA-2025-09-11-KSLC) | [N872RA](/Planes/N872RA/overview) | [KSLC](/Planes/Airports/KSLC) | Salt Lake City, UT | Charlie | Day after |
 
 **Airports named on this page:**
 

@@ -44,6 +44,24 @@ endpoint reference; that one is the system.
 **Everything below was retrieved on 24 August 2026.** Anything said about an API without a date on
 it is worthless six months later.
 
+## What this pass produced, and what it refused
+
+**This pass produced 100% of the flight data in this investigation. 2,346 aircraft-days, four archives, no account, no key, no money.**
+
+| Source | What was asked | What came back | What that means honestly |
+|---|---|---|---|
+| **globe.airplanes.live** globe history | `globe_history/YYYY/MM/DD/traces/hh/trace_full_HEX.json` | **2,072 aircraft-days — 371 of them existing nowhere else.** Serves both adsb.lol holes in full | **The backup archive of record.** A different volunteer network, same tar1090 layout, denser on some days and thinner on others |
+| **adsb.lol** globe history | same URL shape | **1,702 aircraft-days.** Then **HTTP 403 for every aircraft from 2025-10-12** through at least 2025-11-05 — 258 of 258 requests across 14 tails **including both control airliners** — and **404 for every aircraft through 2026** | **A retention and serving boundary, not suppression.** The controls failed identically. **Nothing on this site may describe either band as scrubbing** |
+| **samples.adsbexchange.com** monthly sample | `traces/YYYY/MM/DD/hh/trace_full_HEX.json` | **207 aircraft-days, 153 of them unique.** Reaches back to 2016 | **The only free route into 2022.** One day per month, the 1st. **It establishes that an aircraft was somewhere. It can never establish how often** |
+| **adsb.lol GitHub Release backup** | `github.com/adsblol/globe_history_2025`, ~3 GB per UTC day, ODbL | **113 aircraft-days**, including dates the live API refuses | Files inside are **gzip despite the `.json` name** |
+| **Internet Archive CDX** | snapshots of the tracking-site pages | 30 target URLs checked; **66 archived page captures held** | Counted in pages, not aircraft-days — **a crawler's visit date is not a flight date** |
+| **OpenSky** `/api/flights/aircraft` | history by aircraft | **HTTP 403 anonymous** since the 18 Mar 2026 move to OAuth2 | **Not attempted with credentials.** The cheapest remaining gap to close |
+| **airplanes.live v2**, **adsb.fi**, **adsb.lol v2** | live position by hex or registration | 200, and an **empty array when the aircraft is not airborne right now** | **Live-only. An empty result means NOT AIRBORNE NOW** — it is not an absence from history and it is not evidence of suppression |
+
+**Two coverage numbers, and they disagree on purpose.** Asking *"where was this tail on this date"* returns a trace on **8.95%** of the 363 Egyptian-fleet event-window days — and **that number has stopped moving**, because every one of those days has now been put to every free archive that exists, so never-asked is zero. Asking *"what was on the ground inside a fifty-mile circle"* covers **71.9%** of the same window, and **82.7% / 98.0% / 92.2%** for 2023 / 2024 / 2025. **2022 is 0.43% per-tail and 0% swept.** Same investigation, same archives, two different questions. **Quote the denominator or the number means nothing.**
+
+**And the single result that matters most, promoted from further down this page:** of the 29 claimed overlap rows primary position data can actually decide, **25 put the aircraft at the field the claim names and 3 are contradicted.** Split finer: **flight legs verify at 141 of 144 (98%); overlap pairings verify at 30 of 79 (38%).** **The aircraft movements are largely real. The claim that those movements constitute shadowing is where the sheet falls apart.** That flatters neither side of this argument.
+
 ## What APIs they have
 
 ### The single most important thing on this page

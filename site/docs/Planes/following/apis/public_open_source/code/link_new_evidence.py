@@ -33,8 +33,16 @@ END = "{/* CK_NEW_EVIDENCE_LINKS:END */}"
 SKIP_DIRS = {"Airports", "Incidents"}
 SKIP_PARTS = ("/data/", "/code/", "/node_modules/", "/build/")
 
-MAX_AIRPORTS = 14
-MAX_CONTACTS = 14
+MAX_AIRPORTS = 500
+MAX_CONTACTS = 500
+
+def _datekey(d):
+    """YYYY-MM-DD -> sortable int; unparseable dates rank oldest."""
+    try:
+        return int(d.replace("-", ""))
+    except Exception:
+        return 0
+
 
 TAIL_PAGE = {
     "N102DZ": "/Planes/N102DZ/overview", "N1098L": "/Planes/N1098L/overview",
@@ -71,7 +79,7 @@ def visible_pages():
 
 
 def build_block(tails, airports, contacts, airport_meta, counts,
-                window=None, untracked=None):
+                window=None, untracked=None, contacts_total=None):
     L = [START, ""]
     L.append("## Flight-record pages for what is on this page")
     L.append("")
@@ -120,7 +128,17 @@ def build_block(tails, airports, contacts, airport_meta, counts,
     contacts = uniq
 
     if contacts:
-        L.append("**Ground contacts near a sourced Charlie / Erika / TPUSA event:**")
+        if contacts_total and contacts_total > len(contacts):
+            L.append(
+                f"**Ground contacts near a sourced Charlie / Erika / TPUSA "
+                f"event** — the **{len(contacts)}** most significant of "
+                f"**{contacts_total}** this page touches, foreign-fleet and "
+                f"same-day first, then most recent. The full set is on "
+                f"[the contacts index](/Planes/Incidents/overview) and on each "
+                f"aircraft's own page."
+            )
+        else:
+            L.append("**Ground contacts near a sourced Charlie / Erika / TPUSA event:**")
         L.append("")
         L.append("| Date (UTC) | Aircraft | Airport | City, State | Whose event | When |")
         L.append("|---|---|---|---|---|---|")
@@ -252,8 +270,21 @@ def main():
         if not (found_t or found_a or contacts or untracked):
             skipped += 1
 
-        block = build_block(found_t, found_a, contacts[:MAX_CONTACTS],
-                            airport_meta, counts, window, untracked)
+        # Rank BEFORE truncating.  A plain date sort keeps the OLDEST rows, so
+        # as a page gained tail mentions the cap silently discarded the newest
+        # ones -- which is how the 10 September 2025 Provo contacts fell off
+        # this block.  Significance survives the cap; the table is re-sorted
+        # into date order afterwards so the reader still gets a timeline.
+        def crank(c):
+            return (0 if c.get("tail") in FOREIGN else 1,      # foreign fleet first
+                    abs(int(c.get("offset") or 0)),            # same day, then +/-1
+                    -_datekey(c.get("date") or ""))            # most recent first
+        shown = sorted(contacts, key=crank)[:MAX_CONTACTS]
+        shown.sort(key=lambda x: (x["date"], x["tail"]))
+
+        block = build_block(found_t, found_a, shown,
+                            airport_meta, counts, window, untracked,
+                            contacts_total=len(contacts))
         anchor = "{/* CK_PAGE_FOOTER_START */}"
         if pf.splice(path, block, START, END, anchor):
             changed += 1

@@ -70,9 +70,9 @@ Eight of the 16 rows naming SU-BND can be decided from raw position traces; six 
 | [2025-09-13](/Planes/following/overlap/20250913_UT_provo_owens_042/overview) | Provo | UT | [KPVU](/Planes/Airports/KPVU) | 0.62 km | Erika |
 | [**2025-09-10**](/Planes/following/overlap/20250910_UT_orem/overview) | [**Orem**](/Planes/following/speaking/20250910_orem) **(event) / Provo (aircraft)** | UT | [**KPVU**](/Planes/Airports/KPVU) | **1.23 km** | **Charlie** |
 | [**2025-09-10**](/Planes/following/overlap/20250910_UT_provo_extra_006/overview) | **Provo** | UT | [**KPVU**](/Planes/Airports/KPVU) | **1.29 km** | **Charlie** |
-| [2023-05-03](/Planes/following/overlap/20230503_MO_st_louis_owens_014/overview) | St. Louis | MO | KCPS | 2.07 km | Erika |
+| [2023-05-03](/Planes/following/overlap/20230503_MO_st_louis_owens_014/overview) | St. Louis | MO | [KCPS](/Planes/Airports/KCPS) | 2.07 km | Erika |
 
-Source: `site/docs/Planes/following/overlaps.csv`, column `adsb_verified_verdict = AT_CLAIMED_AIRPORT`, sorted by `adsb_closest_approach_km`. St. Louis Downtown (KCPS) has no airport page on this site yet, so that code is not linked.
+Source: `site/docs/Planes/following/overlaps.csv`, column `adsb_verified_verdict = AT_CLAIMED_AIRPORT`, sorted by `adsb_closest_approach_km`. Every airport code opens that field's complete recovered ground-visit and flight-leg record.
 
 **What this table does not show.** It does not show who was aboard. On the Erika rows her presence is a claimed location taken from social media, not from a flight record — see [Which planes Charlie flew, which planes Erika flew](/Planes/Charlie-Erika-Aircraft/overview).
 
@@ -144,6 +144,9 @@ Each date above opens its own page with the full record for that contact — the
 * **Registry / operator:** Egyptian-registered — described as Israel/Egyptian Government / Israel/Egyptian Air Force use
 * **Nickname in coverage:** "The blue plane" (Candace Owens's color-coded shorthand; SU-BTT was "the yellow plane")
 * **Base in Utah window:** Provo Municipal Airport (PVU), ~7 miles from Utah Valley University, where Duncan Aviation runs a full-service maintenance hangar
+
+
+*On that distance.* The "~7 miles" figure is this site's long-standing description of how far Provo Municipal sits from Utah Valley University. It is not the measured straight-line number. This investigation's own proximity table (`site/docs/Planes/following/apis/public_open_source/data/analysis/master_proximity.csv`, column `miles_to_event_city`) measures from each aircraft's actual parked position to the Orem city centroid and gives **SU-BTT 4.96 miles** and **SU-BND 4.94 miles** on 10 September 2025. Airport-to-campus, aircraft-to-city-centroid and aircraft-to-venue are three different quantities; an unlabelled mileage is the defect.
 * **Part of a larger fleet:** Trackers say SU-BND is one of **at least five Israel/Egyptian Air Force jets** (alongside SU-BTT, [SU-BTU](/Planes/SU-BTU/overview), [SU-BTV](/Planes/SU-BTV/overview), and [SU-BGM](/Planes/SU-BGM/overview)) that they allege cycled in and out of Provo around the event — the cluster X researchers call the "Israel/Egyptian Plane Armada". The fleet count is the trackers' claim, not an official tally.
 
 ## Flight history relevant to the case
