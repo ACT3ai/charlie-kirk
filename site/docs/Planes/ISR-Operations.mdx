@@ -34,6 +34,63 @@ borderRadius:'4px', textDecoration:'none', fontSize:'0.9rem'}}>← Planes</a>
 
 # ISR Program Context
 
+**On 10 September 2025 a US Army ISR jet descended to 4,700 feet over Orem, Utah — 203 feet above the elevation of Provo Municipal Airport — at 114 knots, at 9:16:45 a.m. local. It came back over the same ground at 12:48:59 p.m., twenty-five minutes after Charlie Kirk was shot, and bottomed out at 4,750 feet. The aircraft was [N1098L](/Planes/N1098L/overview), callsign AXLE10, a Bombardier Global 6500 operated by LASAI Aviation II LLC under the Army's [HADES](/US_Intelligence/US_Army_HADES) program.**
+
+**Those are not screenshots. They are primary ADS-B position points, recovered from two independent volunteer archives that agree with each other to the second and to within 0.1 km.** For a year this page ended by asking someone to go pull that raw track. It has now been pulled, and the numbers are below.
+
+## What the recovered track actually shows
+
+Both archives were queried for the same UTC day and the same ICAO hex (**a0299e**). [airplanes.live](https://globe.airplanes.live/) returned 4,439 position points; [adsb.lol](https://adsb.lol/) returned 2,872. Every figure in this table appears in both files.
+
+| Pass | Time (UTC) | Time (MDT) | Lowest baro altitude | Above KPVU field elevation (4,497 ft) | Lowest groundspeed | Closest approach to UVU | Ground track |
+|---|---|---|---|---|---|---|---|
+| **First** | 15:16:45–15:16:48 | **9:16 a.m.** | **4,700 ft** | **203 ft** | **114.3 kt** | **4.16 km** | 145.6° |
+| **Second** | 18:48:59–18:49:03 | **12:48 p.m.** | **4,750 ft** | **253 ft** | **123.1 kt** | **4.16 km** | — |
+
+Charlie Kirk was shot at approximately **12:23 p.m. MDT**. The second pass bottoms out **25 minutes later**, over the same point on the ground — 40.238 N, 111.740 W, about 2.4 km northwest of the [Provo Municipal](/Planes/Airports/KPVU) runway complex and 4.7 km from the [UVU campus](/Planes/following/speaking/20250910_orem).
+
+**Three things this settles, and they do not all cut the same way.**
+
+* **The "203 feet" figure that circulates in this investigation is reproducible.** 4,700 ft baro minus Provo's published 4,497 ft field elevation is exactly 203 feet. The arithmetic nobody had published is now checkable line by line.
+* **The 9:16 a.m. and 12:48 p.m. timings are confirmed to the second, from primary data, by two networks that do not share receivers.** The [@pennedpatriot Utah Lake reconstruction](#the-pennedpatriot-utah-lake-telemetry-claim) discussed below put the first descent at 9:15–9:17 a.m. That was right.
+* **"Loitering over Utah Lake near stall speed" is not what the track shows.** The aircraft is descending on a steady 145.6° ground track at 114–121 knots. Provo's main runway 13/31 lies within a few degrees of that bearing. **This profile is what a low approach to Provo Municipal looks like** — approach speed, runway-aligned, levelling at a couple of hundred feet, then climbing away without touching down. It is also exactly what a deliberate low pass over the Orem corridor would look like. **ADS-B cannot separate the two, and this page does not claim it can.**
+
+## The rest of that day, hour by hour
+
+The same recovered trace resolves N1098L's whole 10 September, and it confirms the reported schedule that until now rested on tracking-site screenshots.
+
+| Time (UTC) | Time local | Where | Altitude | What it is |
+|---|---|---|---|---|
+| 01:16 | — | 47.835 N, 114.007 W (NW Montana) | 20,275 ft | First recovered position of the UTC day, already airborne |
+| 03:37 | 9:37 p.m. MDT (9 Sep) | 31.886 N, 106.338 W | 4,550 ft | Arriving [Biggs Army Airfield](/Planes/Airports/KBIF), El Paso |
+| 03:37 → 13:48 | — | — | — | **10 h 11 min on the ground at Biggs** — no positions recorded |
+| **13:48** | **7:48 a.m. MDT** | 31.861 N, 106.367 W | 4,850 ft | **Departing Biggs — matching the 07:48 MDT departure this site has reported** |
+| **15:16** | **9:16 a.m. MDT** | Over Orem / Provo | **4,700 ft** | **First low pass** |
+| 16:18 → 17:33 | — | Near Kalispell, MT | — | 75-minute coverage gap; the reported [Glacier Park](/Planes/Airports/KGPI) turnaround sits inside it |
+| **18:48** | **12:48 p.m. MDT** | Over Orem / Provo | **4,750 ft** | **Second low pass, 25 minutes after the shooting** |
+| 20:29 | 2:29 p.m. MDT | 31.861 N, 106.367 W | 3,825 ft | Back on the ground at Biggs |
+| 21:15 | 3:15 p.m. MDT | 0.43 km from Biggs | 3,850 ft | Departing Biggs again |
+| 23:42 | 4:42 p.m. PDT | 36.663 N, 121.617 W | 275 ft | Landing at **Salinas, California** |
+
+The archives never actually see the aircraft on the ground at Glacier Park — it descends toward Kalispell, drops out of receiver coverage for 75 minutes, and reappears climbing away. **That is a coverage gap, not a missing flight**, and it is the ordinary shape of volunteer-network data over rural Montana.
+
+## How this was tested, and what would disprove it
+
+Each pass was read straight out of the raw trace files rather than off a screenshot. The method, so anyone can repeat it:
+
+* **Query by ICAO hex, not by tail.** N1098L is **a0299e**. That is the join key every ADS-B archive uses.
+* **Pull the same UTC day from two independent networks.** `globe.airplanes.live/globe_history/2025/09/10/traces/9e/trace_full_a0299e.json` and `adsb.lol/globe_history/2025/09/10/traces/9e/trace_full_a0299e.json`. Both returned HTTP 200. The stored copies and their retrieval metadata are in `site/docs/Planes/N1098L/data/recovered/`.
+* **Compute distance to the campus and altitude above field elevation directly from the position rows.** No interpolation, no smoothing.
+* **Require the two archives to agree before publishing a number.** They agree on the minimum altitudes exactly, on the closest approach to 0.01 km, and on the timestamps to within four seconds.
+
+**What would disprove the surveillance reading:** a Provo tower or approach-control tape showing N1098L on a published instrument approach to runway 13, or a LASAI/Army statement placing the aircraft on a training or currency sortie. Neither has been produced, and neither has been asked for on the record.
+
+**What would disprove the training reading:** a tasking order, a sensor product, or a mission log for either pass. Also not produced. **The flight profile alone cannot decide it, and this page will not pretend otherwise.**
+
+**A trace proves presence, never purpose.** No ADS-B record places any person aboard N1098L, names its crew, or says what — if anything — its sensors were doing. Everything below this line is the program context that a reader needs before deciding what the two passes mean.
+
+## What this page is
+
 ISR — **Intelligence, Surveillance, and Reconnaissance** — is the umbrella term for military and contracted aviation missions that collect intelligence in real time over a target area. This page is the **program-level hub** for the aircraft in this section that are tied to active US Army ISR work — chiefly the **LASAI Aviation** fleet of Bombardier Global 6500 business jets flown under the Army's **[HADES](/US_Intelligence/US_Army_HADES)** program. Two of those tail numbers are catalogued individually: the [N1098L spy plane](/Planes/N1098L/overview), documented descending over the Orem / Utah Valley University corridor on September 10, 2025, and its fleet sister ship [N2100L](/Planes/N2100L/overview). Read this page first to understand what ISR capability is and why an Army-tasked ISR jet in the UVU airspace window matters; then read the two aircraft pages for the specific flight data.
 
 ## What ISR aviation does
@@ -168,6 +225,35 @@ Two conclusions follow, and they cut in opposite directions.
 This post is a useful lead and a poor proof, and both halves of that should be said plainly. The 9:15 a.m. corroboration is real and independently arrived at. The drone drop-and-recovery narrative built on top of it is not evidenced by anything in the material — it is an interpretation of what an aircraft flying low over a lake *might* have been doing, presented in the grammar of a finding.
 
 The way to settle it is the same as everywhere else on this page: **pull the raw ADS-B Exchange track for September 10, 2025 over the Utah Lake corridor and read the altitude and groundspeed columns directly.** That is a few minutes of work for anyone with archive access, and it would either establish a genuinely extraordinary flight profile or close the question.
+
+**UPDATE — that track has now been pulled.** The numbers are at the top of this page, and they split the post cleanly in two:
+
+* **Corroborated.** The first descent is real, and its timing was right. The recovered trace bottoms out at **15:16:45 UTC = 9:16:45 a.m. MDT**, inside the 15:15–15:17 UTC group the reconstruction shows. Both archives agree.
+* **Corroborated, and lower than claimed.** The post's "650 feet above" is not what the data says. Minimum baro altitude on the first pass is **4,700 ft**, which is **203 feet** above Provo Municipal's field elevation, not 650.
+* **Still unsupported.** The second descent is at **18:48:59 UTC = 12:48:59 p.m. MDT**, twenty-five minutes after the shooting — not "~3 seconds after the incident." That was already the honest reading on this page and the primary data confirms it.
+* **Still unsupported, and now harder.** Nothing in the position data speaks to drones. A descent and a climb are a descent and a climb. What the recovered track adds is that the profile is **runway-aligned at approach speed**, which is a reading the drop-and-recovery narrative has to account for and does not.
+
+## Related pages
+
+<div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0.5rem 2rem',
+marginTop:'0.5rem'}}>
+<div>
+
+* [Planes — section hub](/Planes/overview)
+* [N1098L — the aircraft, full recovered record](/Planes/N1098L/overview)
+* [N2100L — fleet sister ship](/Planes/N2100L/overview)
+* [US Army HADES program](/US_Intelligence/US_Army_HADES)
+
+</div>
+<div>
+
+* [KPVU — Provo Municipal, every recovered visit](/Planes/Airports/KPVU)
+* [KBIF — Biggs Army Airfield, every recovered visit](/Planes/Airports/KBIF)
+* [KGPI — Glacier Park International](/Planes/Airports/KGPI)
+* [The Orem event this was flown over](/Planes/following/speaking/20250910_orem)
+
+</div>
+</div>
 
 
 {/* CK_INTERESTING_HERE_START */}
@@ -399,11 +485,18 @@ This investigation keeps one page per airport and one page per recorded ground c
 
 | Date (UTC) | Aircraft | Airport | City, State | Whose event | When |
 |---|---|---|---|---|---|
+| [2025-09-10](/Planes/Incidents/N102DZ-2025-09-10-KPVU) | [N102DZ](/Planes/N102DZ/overview) | [KPVU](/Planes/Airports/KPVU) | Provo, UT | Charlie | **Same day** |
+| [2025-09-10](/Planes/Incidents/N40JD-2025-09-10-KPVU) | [N40JD](/Planes/N40JD/overview) | [KPVU](/Planes/Airports/KPVU) | Provo, UT | Charlie | **Same day** |
 | [2025-09-10](/Planes/Incidents/N560TW-2025-09-10-KPVU) | [N560TW](/Planes/N560TW/overview) | [KPVU](/Planes/Airports/KPVU) | Provo, UT | Charlie | **Same day** |
+| [2025-09-10](/Planes/Incidents/N59906-2025-09-10-KPVU) | [N59906](/Planes/N59906/overview) | [KPVU](/Planes/Airports/KPVU) | Provo, UT | Charlie | **Same day** |
+| [2025-09-10](/Planes/Incidents/N872RA-2025-09-10-KPVU) | [N872RA](/Planes/N872RA/overview) | [KPVU](/Planes/Airports/KPVU) | Provo, UT | Charlie | **Same day** |
+| [2025-09-10](/Planes/Incidents/N888KG-2025-09-10-KPVU) | [N888KG](/Planes/N888KG/overview) | [KPVU](/Planes/Airports/KPVU) | Provo, UT | Charlie | **Same day** |
+| [2025-09-10](/Planes/Incidents/SU-BND-2025-09-10-KPVU) | [SU-BND](/Planes/SU-BND/overview) | [KPVU](/Planes/Airports/KPVU) | Provo, UT | Charlie | **Same day** |
 | [2025-09-10](/Planes/Incidents/SU-BTT-2025-09-10-KPVU) | [SU-BTT](/Planes/SU-BTT/overview) | [KPVU](/Planes/Airports/KPVU) | Provo, UT | Charlie | **Same day** |
 
 **Airports named on this page:**
 
+* [KPVU — Provo Municipal Airport](/Planes/Airports/KPVU), Provo, UT — 135 recorded ground visits, 13 tracked aircraft
 * [KBIF — Biggs Army Air Field (Fort Bliss)](/Planes/Airports/KBIF), Fort Bliss/El Paso, TX — 53 recorded ground visits, 2 tracked aircraft
 * [KGPI — Glacier Park International Airport](/Planes/Airports/KGPI), Kalispell, MT — 1 recorded ground visit, 1 tracked aircraft
 

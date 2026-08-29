@@ -223,6 +223,52 @@ def days_between(a, b):
         return None
 
 
+_MONTH = ("January", "February", "March", "April", "May", "June", "July",
+          "August", "September", "October", "November", "December")
+
+
+def pretty_date(iso):
+    """'2025-09-10' -> '10 September 2025'.  Returns the input if it will not parse."""
+    try:
+        d = datetime.date.fromisoformat((iso or "").strip())
+    except (TypeError, ValueError):
+        return iso or "—"
+    return f"{d.day} {_MONTH[d.month - 1]} {d.year}"
+
+
+_LOC_PAGES = None
+_LOC_RE = re.compile(r"^([A-Za-z]+)_([A-Z0-9]{3,4})_(\d{4}-\d{2}-\d{2})_to_(\d{4}-\d{2}-\d{2})$")
+
+
+def following_location_pages():
+    """
+    airport code -> list of (url, label) for the page-per-location follow log
+    under site/docs/Planes/following/, e.g.
+
+        Provo_KPVU_2024-04-19_to_2025-09-13/overview.mdx
+          -> KPVU: /Planes/following/Provo_KPVU_2024-04-19_to_2025-09-13/overview
+
+    Only directories that actually hold an overview.mdx are returned, so a link
+    built from this is never a 404.  The directory names are stable IDs and are
+    never renamed, which is what makes this join safe.
+    """
+    global _LOC_PAGES
+    if _LOC_PAGES is None:
+        _LOC_PAGES = {}
+        if os.path.isdir(FOLLOWING):
+            for d in sorted(os.listdir(FOLLOWING)):
+                m = _LOC_RE.match(d)
+                if not m:
+                    continue
+                if not os.path.exists(os.path.join(FOLLOWING, d, "overview.mdx")):
+                    continue
+                city, code, a, b = m.groups()
+                _LOC_PAGES.setdefault(code, []).append(
+                    (f"/Planes/following/{d}/overview",
+                     f"{city} ({code}), {a} to {b}"))
+    return _LOC_PAGES
+
+
 def when_label(n):
     if n is None:
         return "—"

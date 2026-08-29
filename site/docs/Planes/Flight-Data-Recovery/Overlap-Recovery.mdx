@@ -30,6 +30,156 @@ borderRadius:'4px', textDecoration:'none', fontSize:'0.9rem'}}>← Flight Data R
 
 # Overlap Recovery
 
+**Of the 29 claimed rows that primary ADS-B position data can actually decide, 25 put the aircraft at
+the field the claim names. Three are contradicted. One is in the right metro at the wrong field.**
+That is a wrong-place rate of **10% on decidable rows** — against published audits of the same
+spreadsheet that put roughly two rows in three in the wrong place.
+
+**The marquee row is the day of the assassination.** On **10 September 2025**,
+[SU-BTT](/Planes/SU-BTT/overview) and [SU-BND](/Planes/SU-BND/overview) are both on the ground at
+[Provo Municipal Airport (KPVU)](/Planes/Airports/KPVU) — **1.23 km** and **1.29 km** from the field
+reference point, 5.4 miles from the Utah Valley University courtyard. SU-BTT had been on that ramp
+since [4 September](/Planes/following/overlap/20250904_UT_provo_owens_040/overview) at **0.16 km**;
+SU-BND was still there on [13 September](/Planes/following/overlap/20250913_UT_provo_owens_042/overview).
+
+| | | |
+|---|---:|---|
+| Rows in `following/overlaps.csv` | **85** | every one asked of the archives |
+| **Decidable by primary position data** | **29** | |
+| **AT_CLAIMED_AIRPORT** — inside 15 km of the named field, on the claimed day | **25** | of which **10** carry an on-ground fix |
+| **SAME_METRO_WRONG_FIELD** | **1** | inside the sheet's own 50-mile tolerance |
+| **ELSEWHERE — refuted** | **3** | tracked that day, and somewhere else |
+| NOT_HEARD — archive asked, held nothing | **37** | **not a refutation** |
+| NO_ARCHIVE_COVERAGE — no free archive reaches the date | **10** | says nothing either way |
+| NO_TAIL_CLAIMED / NO_DATE_CLAIMED | **4** / **5** | uncheckable by anyone, including their author |
+
+**And the audit of this sheet gets checked too.** A widely-quoted X audit concluded **66% of the
+sheet's locations were wrong and 60% put the jets on the wrong continent**. Where that audit can be
+tested against primary position data — **5 of its 44 negative verdicts** — **it is wrong on 3 and
+right on 2**. The other 39 remain untested, because the auditor used paid tiers that reach dates no
+free volunteer archive does. *"Wrong where it can be checked"* is what this data supports.
+*"Wrong overall"* is not.
+
+**None of it locates a person.** A row scored at the claimed field confirms the **aircraft** half of
+the pairing and nothing else. Every caveat, every withdrawn refutation, and the full working sits
+below the table.
+
+## Every claimed row, all 85, sorted by what the data decided
+
+**Confirmed rows first, closest approach first inside them.** Every date links to that single
+occurrence's own page; every airport with a page links to its complete recovered ground-visit record;
+every tail links to its full movement record. Nothing is truncated — all 85 rows of
+`site/docs/Planes/following/overlaps.csv` are printed.
+
+| Date | City | State | Airport | Tail | What the data shows | Who was claimed there | Row |
+|---|---|---|---|---|---|---|---|
+| [2024-04-23](/Planes/following/overlap/20240423_UT_provo_owens_026/overview) | Provo | UT | [KPVU](/Planes/Airports/KPVU) | [SU-BTT](/Planes/SU-BTT/overview) | **AT_CLAIMED_AIRPORT** — 0.00 km, **on-ground fix** | **Charlie** — Charlie Kirk Prove Me Wrong — University of Utah (Salt Lake City, ~45 mi) | OWENS-026 |
+| [2024-04-23](/Planes/following/overlap/20240423_UT_salt_lake_city/overview) | Salt Lake City (event) / Provo (aircraft) | UT | [KPVU](/Planes/Airports/KPVU) | [SU-BTT](/Planes/SU-BTT/overview) · [SU-BND](/Planes/SU-BND/overview) | **AT_CLAIMED_AIRPORT** — 0.00 km, **on-ground fix** | **Charlie** — Prove Me Wrong - University of Utah | SITE-004 |
+| [2025-05-23](/Planes/following/overlap/20250523_UT_provo_owens_035/overview) | Provo | UT | [KPVU](/Planes/Airports/KPVU) | [SU-BND](/Planes/SU-BND/overview) | **AT_CLAIMED_AIRPORT** — 0.03 km, **on-ground fix** | **Charlie** — sheet: Lands in Provo, Utah; Charlie Present = Yes on visible extract | OWENS-035 |
+| [2025-05-23](/Planes/following/overlap/20250523_UT_provo_owens_065/overview) | Provo | UT | [KPVU](/Planes/Airports/KPVU) | [SU-BND](/Planes/SU-BND/overview) | **AT_CLAIMED_AIRPORT** — 0.03 km, **on-ground fix** | **Charlie** — Lands in Provo — DOUBLE ENTRY of index 35 | OWENS-065 |
+| [2024-04-19](/Planes/following/overlap/20240419_UT_provo_owens_025/overview) | Provo | UT | [KPVU](/Planes/Airports/KPVU) | [SU-BND](/Planes/SU-BND/overview) | **AT_CLAIMED_AIRPORT** — 0.05 km, **on-ground fix** | **Erika** — claimed Provo→Paris→SLC→Provo; Ep 256: blue plane to Provo via Paris and Salt Lake City | OWENS-025 |
+| [2025-09-04](/Planes/following/overlap/20250904_UT_provo_owens_040/overview) | Provo | UT | [KPVU](/Planes/Airports/KPVU) | [SU-BTT](/Planes/SU-BTT/overview) | **AT_CLAIMED_AIRPORT** — 0.16 km, **on-ground fix** | **Charlie** — six days before UVU; contractors/rental-car claims attach to this arrival | OWENS-040 |
+| [2024-02-09](/Planes/following/overlap/20240209_NE_omaha_lincoln_owens_020/overview) | Omaha / Lincoln | NE | KOMA | [SU-BTT](/Planes/SU-BTT/overview) | **AT_CLAIMED_AIRPORT** — 0.31 km, airborne | **TPUSA** — TPUSA Lincoln chapter opening 2024-02-11 falls inside the 5-day stay | OWENS-020 |
+| [2023-04-01](/Planes/following/overlap/20230401_MO_st_louis_owens_010/overview) | St. Louis | MO | [KSTL](/Planes/Airports/KSTL) | [SU-BTT](/Planes/SU-BTT/overview) | **AT_CLAIMED_AIRPORT** — 0.41 km, airborne | **TPUSA** — day before TPUSA Faith tour launch Jefferson City | OWENS-010 |
+| [2025-08-17](/Planes/following/overlap/20250817_NE_omaha_lincoln_owens_039/overview) | Omaha / Lincoln | NE | KOMA | [SU-BTT](/Planes/SU-BTT/overview) | **AT_CLAIMED_AIRPORT** — 0.50 km, airborne | **Erika** — claimed overlap; first sustained US stay per some compilations | OWENS-039 |
+| [2023-04-20](/Planes/following/overlap/20230420_DE_wilmington_owens_013/overview) | Wilmington | DE | [KILG](/Planes/Airports/KILG) | [SU-BTT](/Planes/SU-BTT/overview) | **AT_CLAIMED_AIRPORT** — 0.56 km, **on-ground fix** | **Erika** — claimed Erika potentially in Giza on the onward leg | OWENS-013 |
+| [2025-09-13](/Planes/following/overlap/20250913_UT_provo_owens_042/overview) | Provo | UT | [KPVU](/Planes/Airports/KPVU) | [SU-BND](/Planes/SU-BND/overview) | **AT_CLAIMED_AIRPORT** — 0.62 km, airborne | **Erika** — SU-BND leaves after 113 days | OWENS-042 |
+| [2024-02-14](/Planes/following/overlap/20240214_DE_wilmington_owens_021/overview) | Wilmington | DE | [KILG](/Planes/Airports/KILG) | [SU-BTT](/Planes/SU-BTT/overview) | **AT_CLAIMED_AIRPORT** — 0.82 km, airborne | **Erika** — claimed Omaha→Wilmington→Cairo | OWENS-021 |
+| [2025-09-10](/Planes/following/overlap/20250910_UTDE_provo_then_wilmington_owens_041/overview) | Provo then Wilmington | UT/DE | [KPVU](/Planes/Airports/KPVU) | [SU-BTT](/Planes/SU-BTT/overview) | **AT_CLAIMED_AIRPORT** — 1.23 km, **on-ground fix** | **Both** — Charlie Kirk assassinated UVU Orem ~7 mi from Provo; SU-BTT departs morning; sheet route said Paris→Lincoln→Wilmington→Cairo | OWENS-041 |
+| [2025-09-10](/Planes/following/overlap/20250910_UT_orem/overview) | Orem (event) / Provo (aircraft) | UT | [KPVU](/Planes/Airports/KPVU) | [SU-BTT](/Planes/SU-BTT/overview) · [SU-BND](/Planes/SU-BND/overview) | **AT_CLAIMED_AIRPORT** — 1.23 km, **on-ground fix** | **Charlie** — The American Comeback Tour - first stop of a fifteen-date fall tour announced for 10 Sept - 29 Oct | SITE-006 |
+| [2025-09-10](/Planes/following/overlap/20250910_UT_provo_extra_006/overview) | Provo | UT | [KPVU](/Planes/Airports/KPVU) | [SU-BND](/Planes/SU-BND/overview) | **AT_CLAIMED_AIRPORT** — 1.29 km, **on-ground fix** | **Charlie** — SU-BND transponder cycles; aircraft does not take off; UVU 7 miles away | EXTRA-006 |
+| [2025-07-20](/Planes/following/overlap/20250720_NE_omaha_lincoln_owens_038/overview) | Omaha / Lincoln | NE | KOMA | [SU-BTT](/Planes/SU-BTT/overview) | **AT_CLAIMED_AIRPORT** — 1.33 km, airborne | **Erika** — trackers call this SU-BTT first-ever US trip; claimed overlap with Erika | OWENS-038 |
+| [2024-04-03](/Planes/following/overlap/20240403_KS_wichita_lawrence_owens_024/overview) | Wichita / Lawrence | KS | [KICT](/Planes/Airports/KICT) | [SU-BTT](/Planes/SU-BTT/overview) | **AT_CLAIMED_AIRPORT** — 1.43 km, airborne | **Charlie** — Charlie Kirk Live Free Tour — University of Kansas | OWENS-024 |
+| [2024-04-03](/Planes/following/overlap/20240403_KS_lawrence/overview) | Lawrence (event) / Wichita (aircraft) | KS | [KICT](/Planes/Airports/KICT) | [SU-BTT](/Planes/SU-BTT/overview) | **AT_CLAIMED_AIRPORT** — 1.43 km, airborne | **Charlie** — Live Free Tour - University of Kansas | SITE-003 |
+| [2024-04-28](/Planes/following/overlap/20240428_DE_wilmington_owens_027/overview) | Wilmington | DE | [KILG](/Planes/Airports/KILG) | [SU-BTT](/Planes/SU-BTT/overview) | **AT_CLAIMED_AIRPORT** — 1.56 km, airborne | **Erika** — claimed Provo→Wilmington→Cairo; Ep 256: 'Charlie's event is over, so we can move on' | OWENS-027 |
+| [2023-04-06](/Planes/following/overlap/20230406_DE_wilmington_owens_011/overview) | Wilmington | DE | [KILG](/Planes/Airports/KILG) | [SU-BTT](/Planes/SU-BTT/overview) | **AT_CLAIMED_AIRPORT** — 1.63 km, airborne | **Erika** — claimed Erika location / outbound from Missouri stay | OWENS-011 |
+| [2025-09-10](/Planes/following/overlap/20250910_DE_wilmington/overview) | Wilmington | DE | [KILG](/Planes/Airports/KILG) | [SU-BTT](/Planes/SU-BTT/overview) | **AT_CLAIMED_AIRPORT** — 1.75 km, airborne | **Erika** — Claimed TPUSA media appearances - location given only as 'Nebraska/Delaware' | SITE-005 |
+| [2024-03-29](/Planes/following/overlap/20240329_KS_wichita_owens_023/overview) | Wichita | KS | [KICT](/Planes/Airports/KICT) | [SU-BTT](/Planes/SU-BTT/overview) | **AT_CLAIMED_AIRPORT** — 1.83 km, airborne | **Charlie** — Ep 256: lands 2:19 pm Wichita; 'guess who was in Kansas that week' | OWENS-023 |
+| [2023-05-03](/Planes/following/overlap/20230503_MO_st_louis_owens_014/overview) | St. Louis | MO | KCPS | [SU-BND](/Planes/SU-BND/overview) | **AT_CLAIMED_AIRPORT** — 2.07 km, airborne | **Erika** — claimed test flight | OWENS-014 |
+| [2023-02-25](/Planes/following/overlap/20230225_MO_st_louis_owens_046/overview) | St. Louis | MO | [KSUS](/Planes/Airports/KSUS) | [SU-BTT](/Planes/SU-BTT/overview) | **AT_CLAIMED_AIRPORT** — 2.22 km, airborne | **Erika** — claimed Cairo→Paris→St. Louis→Wilmington→Cairo | OWENS-046 |
+| [2025-07-20](/Planes/following/overlap/20250720_NE_lincoln_owens_067/overview) | Lincoln | NE | [KLNK](/Planes/Airports/KLNK) | [SU-BTT](/Planes/SU-BTT/overview) | **AT_CLAIMED_AIRPORT** — 7.20 km, airborne | **Erika** — claimed Cairo→Paris→Omaha→Lincoln→Wilmington→Cairo — second copy of index 38 | OWENS-067 |
+| [2023-04-14](/Planes/following/overlap/20230414_KS_wichita_owens_012/overview) | Wichita | KS | [KICT](/Planes/Airports/KICT) | [SU-BTT](/Planes/SU-BTT/overview) | **SAME_METRO_WRONG_FIELD** — 27.58 km | **Erika** — claimed Kansas cluster; Ep 256 ties next week to Topeka Faith tour | OWENS-012 |
+| [2023-05-09](/Planes/following/overlap/20230509_MO_st_louis_then_goose_bay_owens_015/overview) | St. Louis then Goose Bay | MO | CYYR | [SU-BND](/Planes/SU-BND/overview) | **ELSEWHERE — refuted** — 1062.56 km away | **Erika** — claimed Missouri→Cairo | OWENS-015 |
+| [2023-05-12](/Planes/following/overlap/20230512_MO_st_louis_owens_050/overview) | St. Louis | MO | [KSTL](/Planes/Airports/KSTL) | [SU-BND](/Planes/SU-BND/overview) | **ELSEWHERE — refuted** — 7034.48 km away | **Erika** — claimed Missouri→Paris→Cairo | OWENS-050 |
+| [2025-06-18](/Planes/following/overlap/20250618_NE_omaha_lincoln_owens_036/overview) | Omaha / Lincoln | NE | KOMA | [SU-BTT](/Planes/SU-BTT/overview) | **ELSEWHERE — refuted** — 10139.55 km away | **Erika** — claimed Paris→Omaha→Lincoln→Wilmington→Cairo | OWENS-036 |
+| [2022-11-01](/Planes/following/overlap/20221101_MA_boston_owens_003/overview) | Boston | MA | [KBOS](/Planes/Airports/KBOS) | [SU-BTT](/Planes/SU-BTT/overview) | NOT_HEARD — archive asked, held nothing | **Erika** — claimed Erika location | OWENS-003 |
+| [2023-02-10](/Planes/following/overlap/20230210_DE_wilmington_owens_009/overview) | Wilmington | DE | [KILG](/Planes/Airports/KILG) | [SU-BTT](/Planes/SU-BTT/overview) | NOT_HEARD — archive asked, held nothing | **Erika** — claimed Erika location | OWENS-009 |
+| [2023-03-15](/Planes/following/overlap/20230315_NE_omaha_owens_047/overview) | Omaha | NE | KOMA | [SU-BTT](/Planes/SU-BTT/overview) | NOT_HEARD — archive asked, held nothing | **Erika** — claimed Paris→Omaha | OWENS-047 |
+| [2023-03-27](/Planes/following/overlap/20230327_DE_wilmington_owens_048/overview) | Wilmington | DE | [KILG](/Planes/Airports/KILG) | [SU-BTT](/Planes/SU-BTT/overview) | NOT_HEARD — archive asked, held nothing | **Erika** — claimed Omaha→Wilmington→Cairo | OWENS-048 |
+| [2023-04-02](/Planes/following/overlap/20230402_MO_jefferson_city/overview) | Jefferson City (event) / St. Louis (aircraft) | MO | KSTL/KCPS/KSUS | [SU-BTT](/Planes/SU-BTT/overview) · [SU-BND](/Planes/SU-BND/overview) | NOT_HEARD — archive asked, held nothing | **TPUSA** — TPUSA Faith 'Kingdom to the Capitol' tour launch (Sean Feucht; co-chaired by Rob McCoy) | SITE-001 |
+| [2023-04-23](/Planes/following/overlap/20230423_KS_topeka_extra_003/overview) | Topeka | KS | KTOP | [SU-BTT](/Planes/SU-BTT/overview) | NOT_HEARD — archive asked, held nothing | **TPUSA** — TPUSA Faith Kingdom to the Capitol — Topeka | EXTRA-003 |
+| [2023-04-25](/Planes/following/overlap/20230425_KS_wichita_owens_049/overview) | Wichita | KS | [KICT](/Planes/Airports/KICT) | [SU-BTT](/Planes/SU-BTT/overview) | NOT_HEARD — archive asked, held nothing | **TPUSA** — two days after Topeka Faith event; sheet date is 5 days after actual Wichita–Wilmington hop | OWENS-049 |
+| [2023-06-08](/Planes/following/overlap/20230608_KS_wichita_owens_051/overview) | Wichita | KS | [KICT](/Planes/Airports/KICT) | [SU-BTT](/Planes/SU-BTT/overview) | NOT_HEARD — archive asked, held nothing | **Erika** — claimed Paris→Wichita→Cairo | OWENS-051 |
+| [2023-06-12](/Planes/following/overlap/20230612_UT_provo_owens_016/overview) | Provo | UT | [KPVU](/Planes/Airports/KPVU) | [SU-BND](/Planes/SU-BND/overview) | NOT_HEARD — archive asked, held nothing | **Erika** — claimed Provo→Paris→Salt Lake City | OWENS-016 |
+| [2023-06-25](/Planes/following/overlap/20230625_DE_wilmington_owens_052/overview) | Wilmington | DE | [KILG](/Planes/Airports/KILG) | [SU-BND](/Planes/SU-BND/overview) | NOT_HEARD — archive asked, held nothing | **Erika** — claimed Wilmington→Paris→Cairo | OWENS-052 |
+| [2023-07-25](/Planes/following/overlap/20230725_NE_lincoln_owens_017/overview) | Lincoln | NE | [KLNK](/Planes/Airports/KLNK) | [SU-BTT](/Planes/SU-BTT/overview) | NOT_HEARD — archive asked, held nothing | **Erika** — claimed Cairo→Paris→Lincoln | OWENS-017 |
+| [2023-08-25](/Planes/following/overlap/20230825_NE_lincoln_extra_005/overview) | Lincoln | NE | [KLNK](/Planes/Airports/KLNK) | [SU-BTT](/Planes/SU-BTT/overview) | NOT_HEARD — archive asked, held nothing | **Charlie** — Charlie Kirk speaking appearance — Lincoln, Nebraska | EXTRA-005 |
+| [2023-09-03](/Planes/following/overlap/20230903_DE_wilmington_owens_018/overview) | Wilmington | DE | [KILG](/Planes/Airports/KILG) | [SU-BTT](/Planes/SU-BTT/overview) | NOT_HEARD — archive asked, held nothing | **Erika** — claimed Lincoln→Wilmington→Cairo | OWENS-018 |
+| [2024-01-10](/Planes/following/overlap/20240110_CA_sacramento_owens_019/overview) | Sacramento | CA | [KSMF](/Planes/Airports/KSMF) | [SU-BTT](/Planes/SU-BTT/overview) | NOT_HEARD — archive asked, held nothing | **Erika** — claimed Cairo→Paris→Sacramento; mommy sleuth placed Erika in California | OWENS-019 |
+| [2024-02-11](/Planes/following/overlap/20240211_NE_lincoln/overview) | Lincoln | NE | [KLNK](/Planes/Airports/KLNK) | [SU-BTT](/Planes/SU-BTT/overview) | NOT_HEARD — archive asked, held nothing | **TPUSA** — Turning Point USA opens a Lincoln, Nebraska chapter | SITE-002 |
+| [2024-03-10](/Planes/following/overlap/20240310_MO_st_louis_owens_053/overview) | St. Louis | MO | [KSTL](/Planes/Airports/KSTL) | [SU-BTT](/Planes/SU-BTT/overview) | NOT_HEARD — archive asked, held nothing | **Erika** — claimed Paris→St. Louis→Cairo | OWENS-053 |
+| [2024-03-18](/Planes/following/overlap/20240318_KS_wichita_owens_022/overview) | Wichita | KS | [KICT](/Planes/Airports/KICT) | [SU-BTT](/Planes/SU-BTT/overview) | NOT_HEARD — archive asked, held nothing | **Erika** — claimed Paris→Wichita | OWENS-022 |
+| [2024-03-22](/Planes/following/overlap/20240322_KS_wichita_owens_054/overview) | Wichita | KS | [KICT](/Planes/Airports/KICT) | [SU-BTT](/Planes/SU-BTT/overview) | NOT_HEARD — archive asked, held nothing | **Erika** — claimed Wichita→Wilmington→Cairo | OWENS-054 |
+| [2024-04-15](/Planes/following/overlap/20240415_NE_omaha_owens_055/overview) | Omaha | NE | KOMA | [SU-BTT](/Planes/SU-BTT/overview) | NOT_HEARD — archive asked, held nothing | **Erika** — claimed Paris→Omaha→Cairo | OWENS-055 |
+| [2024-05-03](/Planes/following/overlap/20240503_MO_st_louis_owens_056/overview) | St. Louis | MO | [KSTL](/Planes/Airports/KSTL) | [SU-BND](/Planes/SU-BND/overview) | NOT_HEARD — archive asked, held nothing | **Erika** — claimed test flight → Missouri | OWENS-056 |
+| [2024-05-10](/Planes/following/overlap/20240510_MO_st_louis_owens_057/overview) | St. Louis | MO | [KSTL](/Planes/Airports/KSTL) | [SU-BND](/Planes/SU-BND/overview) | NOT_HEARD — archive asked, held nothing | **Erika** — claimed Missouri→Paris→Cairo | OWENS-057 |
+| [2024-06-18](/Planes/following/overlap/20240618_NE_lincoln_owens_058/overview) | Lincoln | NE | [KLNK](/Planes/Airports/KLNK) | [SU-BTT](/Planes/SU-BTT/overview) | NOT_HEARD — archive asked, held nothing | **Erika** — claimed Paris→Lincoln→Wilmington→Cairo | OWENS-058 |
+| [2024-07-05](/Planes/following/overlap/20240705_KS_wichita_owens_059/overview) | Wichita | KS | [KICT](/Planes/Airports/KICT) | [SU-BTT](/Planes/SU-BTT/overview) | NOT_HEARD — archive asked, held nothing | **Erika** — claimed Wichita→Wilmington→Paris | OWENS-059 |
+| [2024-07-20](/Planes/following/overlap/20240720_NE_omaha_lincoln_owens_028/overview) | Omaha / Lincoln | NE | KOMA | [SU-BTT](/Planes/SU-BTT/overview) | NOT_HEARD — archive asked, held nothing | **Erika** — claimed full Omaha→Lincoln→Wilmington→Cairo loop | OWENS-028 |
+| [2024-07-25](/Planes/following/overlap/20240725_NE_omaha_lincoln_owens_060/overview) | Omaha / Lincoln | NE | KOMA | [SU-BTT](/Planes/SU-BTT/overview) | NOT_HEARD — archive asked, held nothing | **Erika** — claimed Paris→Omaha→Lincoln→Wilmington→Cairo | OWENS-060 |
+| [2024-08-17](/Planes/following/overlap/20240817_NE_omaha_lincoln_owens_029/overview) | Omaha / Lincoln | NE | KOMA | [SU-BTT](/Planes/SU-BTT/overview) | NOT_HEARD — archive asked, held nothing | **Erika** — claimed Paris→Omaha→Lincoln→Wilmington→Cairo | OWENS-029 |
+| [2024-12-08](/Planes/following/overlap/20241208_UT_provo_owens_030/overview) | Provo | UT | [KPVU](/Planes/Airports/KPVU) | [SU-BND](/Planes/SU-BND/overview) | NOT_HEARD — archive asked, held nothing | **Erika** — claimed Provo→Paris→Salt Lake City | OWENS-030 |
+| [2025-01-12](/Planes/following/overlap/20250112_KS_wichita_owens_031/overview) | Wichita | KS | [KICT](/Planes/Airports/KICT) | [SU-BTT](/Planes/SU-BTT/overview) | NOT_HEARD — archive asked, held nothing | **Erika** — claimed Paris→Wichita→Cairo | OWENS-031 |
+| [2025-01-12](/Planes/following/overlap/20250112_KS_wichita_owens_061/overview) | Wichita | KS | [KICT](/Planes/Airports/KICT) | [SU-BTT](/Planes/SU-BTT/overview) | NOT_HEARD — archive asked, held nothing | **Erika** — claimed Paris→Wichita→Cairo — DUPLICATE of index 31 | OWENS-061 |
+| [2025-01-17](/Planes/following/overlap/20250117_KS_wichita_owens_032/overview) | Wichita | KS | [KICT](/Planes/Airports/KICT) | [SU-BTT](/Planes/SU-BTT/overview) | NOT_HEARD — archive asked, held nothing | **Erika** — claimed Paris→Wichita | OWENS-032 |
+| [2025-02-08](/Planes/following/overlap/20250208_NE_omaha_owens_062/overview) | Omaha | NE | KOMA | [SU-BTT](/Planes/SU-BTT/overview) | NOT_HEARD — archive asked, held nothing | **Erika** — claimed Paris→Omaha→Cairo | OWENS-062 |
+| [2025-03-15](/Planes/following/overlap/20250315_KS_wichita_owens_033/overview) | Wichita | KS | [KICT](/Planes/Airports/KICT) | [SU-BTT](/Planes/SU-BTT/overview) | NOT_HEARD — archive asked, held nothing | **Charlie** — sheet Charlie Present column reportedly Yes on the last three visible rows including this date | OWENS-033 |
+| [2025-03-15](/Planes/following/overlap/20250315_KS_wichita_owens_063/overview) | Wichita | KS | [KICT](/Planes/Airports/KICT) | [SU-BTT](/Planes/SU-BTT/overview) | NOT_HEARD — archive asked, held nothing | **Charlie** — claimed Wichita→Wilmington→Cairo — DUPLICATE of index 33 | OWENS-063 |
+| [2025-03-22](/Planes/following/overlap/20250322_KS_wichita_owens_034/overview) | Wichita | KS | [KICT](/Planes/Airports/KICT) | [SU-BTT](/Planes/SU-BTT/overview) | NOT_HEARD — archive asked, held nothing | **Charlie** — sheet Charlie Present = Yes | OWENS-034 |
+| [2025-04-19](/Planes/following/overlap/20250419_UT_provo_owens_064/overview) | Provo | UT | [KPVU](/Planes/Airports/KPVU) | [SU-BND](/Planes/SU-BND/overview) | NOT_HEARD — archive asked, held nothing | **Erika** — claimed Provo→Paris→SLC→Provo — year-shifted copy of 2024-04-19 | OWENS-064 |
+| [2025-07-07](/Planes/following/overlap/20250707_UT_provo_owens_037/overview) | Provo | UT | [KPVU](/Planes/Airports/KPVU) | [SU-BND](/Planes/SU-BND/overview) | NOT_HEARD — archive asked, held nothing | **Erika** — claimed Goose Bay→Paris→Cairo departure | OWENS-037 |
+| [2025-07-07](/Planes/following/overlap/20250707_UT_provo_owens_066/overview) | Provo | UT | [KPVU](/Planes/Airports/KPVU) | [SU-BND](/Planes/SU-BND/overview) | NOT_HEARD — archive asked, held nothing | **Erika** — claimed leaves for Cairo via Goose Bay and Paris — same as index 37 | OWENS-066 |
+| [2022-10-05](/Planes/following/overlap/20221005_NY_new_york_owens_001/overview) | New York | NY | KJFK | [SU-BTT](/Planes/SU-BTT/overview) | NO_ARCHIVE_COVERAGE — no free archive reaches the date | **Erika** — claimed Erika location / TPUSA media | OWENS-001 |
+| [2022-10-20](/Planes/following/overlap/20221020_IL_chicago_owens_002/overview) | Chicago | IL | [KORD](/Planes/Airports/KORD) | [SU-BTT](/Planes/SU-BTT/overview) | NO_ARCHIVE_COVERAGE — no free archive reaches the date | **Erika** — claimed Erika location / TPUSA | OWENS-002 |
+| [2022-11-13](/Planes/following/overlap/20221113_KS_wichita_owens_004/overview) | Wichita | KS | [KICT](/Planes/Airports/KICT) | [SU-BTT](/Planes/SU-BTT/overview) | NO_ARCHIVE_COVERAGE — no free archive reaches the date | **Erika** — claimed Erika location / Kansas cluster | OWENS-004 |
+| [2022-11-17](/Planes/following/overlap/20221117_DE_wilmington_owens_005/overview) | Wilmington | DE | [KILG](/Planes/Airports/KILG) | [SU-BTT](/Planes/SU-BTT/overview) | NO_ARCHIVE_COVERAGE — no free archive reaches the date | **Erika** — claimed Erika location / Delaware cluster | OWENS-005 |
+| [2022-11-25](/Planes/following/overlap/20221125_DE_wilmington_owens_043/overview) | Wilmington | DE | [KILG](/Planes/Airports/KILG) | [SU-BTT](/Planes/SU-BTT/overview) | NO_ARCHIVE_COVERAGE — no free archive reaches the date | **Erika** — claimed Paris→Wilmington→Cairo | OWENS-043 |
+| [2022-12-05](/Planes/following/overlap/20221205_IL_chicago_owens_044/overview) | Chicago | IL | [KORD](/Planes/Airports/KORD) | [SU-BTT](/Planes/SU-BTT/overview) | NO_ARCHIVE_COVERAGE — no free archive reaches the date | **Erika** — claimed Paris→Chicago→Cairo | OWENS-044 |
+| [2022-12-20](/Planes/following/overlap/20221220_MO_st_louis_owens_006/overview) | St. Louis | MO | [KSTL](/Planes/Airports/KSTL) | [SU-BTT](/Planes/SU-BTT/overview) | NO_ARCHIVE_COVERAGE — no free archive reaches the date | **Erika** — claimed Erika location / Missouri cluster | OWENS-006 |
+| [2022-12-27](/Planes/following/overlap/20221227_ME_bangor_owens_007/overview) | Bangor | ME | [KBGR](/Planes/Airports/KBGR) | [SU-BTT](/Planes/SU-BTT/overview) | NO_ARCHIVE_COVERAGE — no free archive reaches the date | **Erika** — claimed Erika location | OWENS-007 |
+| [2023-01-12](/Planes/following/overlap/20230112_KS_wichita_owens_045/overview) | Wichita | KS | [KICT](/Planes/Airports/KICT) | [SU-BTT](/Planes/SU-BTT/overview) | NO_ARCHIVE_COVERAGE — no free archive reaches the date | **Erika** — claimed Paris→Wichita→Cairo | OWENS-045 |
+| [2023-01-15](/Planes/following/overlap/20230115_GA_atlanta_owens_008/overview) | Atlanta | GA | [KATL](/Planes/Airports/KATL) | [SU-BTT](/Planes/SU-BTT/overview) | NO_ARCHIVE_COVERAGE — no free archive reaches the date | **Erika** — claimed Erika location | OWENS-008 |
+| [2024-04-09](/Planes/following/overlap/20240409_NE_omaha_extra_002/overview) | Omaha | NE | KOMA | *none named* | NO_TAIL_CLAIMED — row names no aircraft | **Charlie** — Win Every Vote / Winner-Take-All rally — Lord of Hosts Church | EXTRA-002 |
+| [2024-09-14](/Planes/following/overlap/20240914_NE_lincoln_extra_001/overview) | Lincoln | NE | [KLNK](/Planes/Airports/KLNK) | *none named* | NO_TAIL_CLAIMED — row names no aircraft | **Charlie** — Charlie Kirk in Lincoln Nebraska with Mikey McCoy — Owens addendum after Ep 256 | EXTRA-001 |
+| [2025-04-29](/Planes/following/overlap/20250429_NE_lincoln_extra_007/overview) | Lincoln | NE | [KLNK](/Planes/Airports/KLNK) | *none named* | NO_TAIL_CLAIMED — row names no aircraft | **Charlie** — amplifier claim: Tyler Robinson apartment address Google-searched in Hebrew from Egyptian jet parked in Lincoln | EXTRA-007 |
+| [2025-07-11](/Planes/following/overlap/20250711_NE_omaha_extra_004/overview) | Omaha | NE | KOMA | *none named* | NO_TAIL_CLAIMED — row names no aircraft | **Erika** — amplifier claim: Egyptian plane in Omaha with somebody on board Googling Erika Frantze in Hebrew | EXTRA-004 |
+| [*none claimed*](/Planes/following/overlap/unpublished_unpub_001/overview) | — | — | — | [SU-BTT](/Planes/SU-BTT/overview) or [SU-BND](/Planes/SU-BND/overview) | NO_DATE_CLAIMED — row names no date | **Erika** — unpublished extra overlap Owens said she added on 17 Nov 2025 to take the count from 68 to 73 | UNPUB-001 |
+| [*none claimed*](/Planes/following/overlap/unpublished_unpub_002/overview) | — | — | — | [SU-BTT](/Planes/SU-BTT/overview) or [SU-BND](/Planes/SU-BND/overview) | NO_DATE_CLAIMED — row names no date | **Erika** — unpublished extra overlap Owens said she added on 17 Nov 2025 to take the count from 68 to 73 | UNPUB-002 |
+| [*none claimed*](/Planes/following/overlap/unpublished_unpub_003/overview) | — | — | — | [SU-BTT](/Planes/SU-BTT/overview) or [SU-BND](/Planes/SU-BND/overview) | NO_DATE_CLAIMED — row names no date | **Erika** — unpublished extra overlap Owens said she added on 17 Nov 2025 to take the count from 68 to 73 | UNPUB-003 |
+| [*none claimed*](/Planes/following/overlap/unpublished_unpub_004/overview) | — | — | — | [SU-BTT](/Planes/SU-BTT/overview) or [SU-BND](/Planes/SU-BND/overview) | NO_DATE_CLAIMED — row names no date | **Erika** — unpublished extra overlap Owens said she added on 17 Nov 2025 to take the count from 68 to 73 | UNPUB-004 |
+| [*none claimed*](/Planes/following/overlap/unpublished_unpub_005/overview) | — | — | — | [SU-BTT](/Planes/SU-BTT/overview) or [SU-BND](/Planes/SU-BND/overview) | NO_DATE_CLAIMED — row names no date | **Erika** — unpublished extra overlap Owens said she added on 17 Nov 2025 to take the count from 68 to 73 | UNPUB-005 |
+
+**Read the duplicates, because a tally built on this sheet counts them twice.** Six pairs in the
+register are the same event entered a second time, and the source file says so in its own notes
+column: **OWENS-061 duplicates OWENS-031** (Wichita, 12 Jan 2025), **OWENS-063 duplicates OWENS-033**
+(Wichita, 15 Mar 2025), **OWENS-065 duplicates OWENS-035** (Provo, 23 May 2025), **OWENS-066
+duplicates OWENS-037** (Provo, 7 Jul 2025), **OWENS-067 is a second copy of OWENS-038** (Lincoln /
+Omaha, 20 Jul 2025), and **OWENS-056 is a year-advanced duplicate of OWENS-014** — the sheet places
+it in Missouri on 3 May 2024 while the aircraft was at Provo. They are printed separately above
+because they are separate rows in the source spreadsheet. **A count that double-counts is a count to
+check before quoting.**
+
+**Read the Provo rows together, because that is where the confirmations concentrate.** **Ten of the
+twenty-five confirmed rows are at [KPVU](/Planes/Airports/KPVU)**, and **five of those ten fall in
+September 2025** — [4 September](/Planes/following/overlap/20250904_UT_provo_owens_040/overview),
+three separate rows on [10 September](/Planes/following/overlap/20250910_UT_provo_extra_006/overview),
+and [13 September](/Planes/following/overlap/20250913_UT_provo_owens_042/overview). That clustering
+is the strongest thing in this table. It is also exactly what a maintenance rotation at the Duncan
+Aviation plant on that field would look like, and this data cannot separate the two readings — the
+counterargument is set out in full below.
+
+## The claim this page tests, and how it was tested
+
 The [73-overlap claim](/Planes/following/73_overlaps) is a spreadsheet. Each row says: on **this
 date**, **this Egyptian government jet** was at **this American city**, where a Kirk was. Most of
 those rows have never had a primary flight record behind them — they rest on a screenshot of a
@@ -613,9 +763,14 @@ This investigation keeps one page per airport and one page per recorded ground c
 * [KPVU — Provo Municipal Airport](/Planes/Airports/KPVU), Provo, UT — 135 recorded ground visits, 13 tracked aircraft
 * [KILG — Wilmington Airport / New Castle Airport](/Planes/Airports/KILG), Wilmington, DE — 28 recorded ground visits, 3 tracked aircraft
 * [LFPB — Paris-Le Bourget Airport](/Planes/Airports/LFPB), Le Bourget, France — 14 recorded ground visits, 4 tracked aircraft
+* [KORD — Chicago O'Hare International Airport](/Planes/Airports/KORD), Chicago, IL — 3 recorded ground visits, 2 tracked aircraft
+* [KBGR — Bangor International Airport](/Planes/Airports/KBGR), Bangor, ME — 2 recorded ground visits, 1 tracked aircraft
 * [KLNK — Lincoln Airport](/Planes/Airports/KLNK), Lincoln, NE — 2 recorded ground visits, 2 tracked aircraft
 * [HEAL — El Alamein International Airport](/Planes/Airports/HEAL), El Alamein, Egypt — 1 recorded ground visit, 1 tracked aircraft
 * [KICT — Wichita Dwight D. Eisenhower National Airport](/Planes/Airports/KICT), Wichita, KS — 1 recorded ground visit, 1 tracked aircraft
+* [KSMF — Sacramento International Airport](/Planes/Airports/KSMF), Sacramento, CA — 5 recorded ground visits, 2 tracked aircraft
+* [KATL — Hartsfield-Jackson Atlanta International Airport](/Planes/Airports/KATL), Atlanta, GA — 4 recorded ground visits, 2 tracked aircraft
+* [KBOS — Boston Logan International Airport](/Planes/Airports/KBOS), Boston, MA — 4 recorded ground visits, 2 tracked aircraft
 * [KSTL — Lambert-St. Louis International Airport](/Planes/Airports/KSTL), St. Louis, MO — 2 recorded ground visits, 1 tracked aircraft
 * [KSUS — Spirit of St. Louis Airport](/Planes/Airports/KSUS), Chesterfield, MO — 1 recorded ground visit, 1 tracked aircraft
 

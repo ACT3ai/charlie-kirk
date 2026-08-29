@@ -31,6 +31,49 @@ borderRadius:'4px', textDecoration:'none', fontSize:'0.9rem'}}>← Flight Data R
 
 # Per-Aircraft Recovery Status
 
+**Sixteen aircraft. 742 aircraft-days of ADS-B trace recovered from three free archives, 50 archived
+tracking-site pages held on disk, and 153 rows of published flight history pulled back out of them.**
+Every result below is a file under `site/docs/Planes/<TAIL>/data/recovered/` **with the source in the
+filename**, so any line can be checked without trusting this page.
+
+**Ordered by how much was recovered, deepest first — not alphabetically.** Click any tail for its
+full movement record; click any airport for every recorded ground visit at that field.
+
+| # | Aircraft | **Total days** | adsb.lol | airplanes.live | ADSBX samples | Earliest date any source reaches | Wayback page captures held | Flight rows off archived pages | Page removals found | What this tail is |
+|---:|---|---:|---:|---:|---:|---|---:|---:|---|---|
+| 1 | [N872RA](/Planes/N872RA/overview) | **84** | 12 | 48 | **24** | 2022-04-01 | 0 | — | none | Beechjet 400, Kirk side, [Provo](/Planes/Airports/KPVU) arrival. **The most consistently heard airframe on the fleet** and simultaneously one of five with no archived page at all. |
+| 2 | [N1098L](/Planes/N1098L/overview) | **82** | 17 | 46 | 19 | 2023-11-01 | 3 | — | none | Global Express, LASAI Aviation II. Well covered from late 2023 and **completely uncovered before it**. Flying out of Army airfields, [Biggs AAF at Fort Bliss](/Planes/Airports/KBIF) included. |
+| 3 | [N102DZ](/Planes/N102DZ/overview) | **80** | 12 | 50 | 18 | 2022-05-01 | 3 | **13** | none | Gulfstream V, the Kirk family aircraft — **the tail the whole "erased" claim was built on**. 50 airplanes.live days **including throughout May 2026**, the month the history was said to have been erased. |
+| 4 | [SU-BTT](/Planes/SU-BTT/overview) | **72** | **29** | 37 | 6 | 2022-05-01 | 0 | — | none | Falcon 7X, Egyptian registry, **lead tail of the overlap claim**. Deepest adsb.lol coverage on the fleet and the least recovered *page* — the Internet Archive never crawled it. On the ground at [Provo](/Planes/Airports/KPVU) on **10 September 2025**. |
+| 5 | [N582MM](/Planes/N582MM/overview) | **66** | 19 | 24 | 23 | 2022-04-01 | 7 | **40** | none | Learjet 60, TPUSA-associated. **The best hit rate of any archived page on the fleet** — seven FlightAware crawls, seven usable flight tables, no empties. |
+| 6 | [N560TW](/Planes/N560TW/overview) | **59** | 9 | 27 | 23 | **2022-01-01** | 2 | 9 | none | Citation Excel, Kirk side. Flew [Scottsdale](/Planes/Airports/KSDL) → [Provo](/Planes/Airports/KPVU) → Santa Barbara → Scottsdale on 10 September 2025. Joint-earliest reach on the whole fleet. |
+| 7 | [N59906](/Planes/N59906/overview) | **58** | 9 | 26 | 23 | 2022-02-01 | 4 | — | none | Piper Navajo survey aircraft, MARC Inc. Flew the five-pass survey grid out of [Provo](/Planes/Airports/KPVU) that ended 48 minutes before the shooting. |
+| 8 | [N2100L](/Planes/N2100L/overview) | **54** | 8 | 29 | 17 | 2023-11-01 | 3 | — | none | Global Express, same registered owner as N1098L. Same archive floor — **November 2023, and nothing before it**. Heavily flown: 378 rows on its live page. |
+| 9 | [SU-BND](/Planes/SU-BND/overview) | **52** | 19 | 27 | 6 | **2022-01-01** | 2 | **11** | none | Gulfstream IV, Egyptian registry, second lead tail. **Did not move at all on 10 September 2025** — first and last fixes are the same [Provo](/Planes/Airports/KPVU) parking spot. |
+| 10 | [T7-ELL](/Planes/T7ELL-EJM36/overview) | **43** | 5 | 26 | 12 | 2022-02-01 | 0 | — | none | Global Express, **San Marino registry, not Egypt**. Reaches further back than any other following-side tail — and what came back **argues against its grouping**: a Dubai and Van Nuys global charter pattern. |
+| 11 | [N40JD](/Planes/N40JD/overview) | **33** | 10 | 12 | 11 | 2022-06-01 | 1 | — | none | Premier 1, Kirk side, [Provo](/Planes/Airports/KPVU) arrival. Its single Wayback capture is a present-but-empty 2022 page — the seven-day window, three years early. |
+| 12 | [N888KG](/Planes/N888KG/overview) | **29** | 4 | 12 | 13 | 2022-03-01 | **22** | **70** | none | Challenger 300, the Wendover departure thread. **By far the best-archived page on the fleet** — 22 captures across fifteen years and nearly half the fleet's recovered flight rows. |
+| 13 | [SU-BTU](/Planes/SU-BTU/overview) | **12** | **0** | 3 | 9 | 2022-12-01 | 1 | 4 | none | Falcon 7X, Egyptian registry. **Zero adsb.lol days, three on airplanes.live, nine monthly samples** — the clean illustration that two volunteer networks hear different things. |
+| 14 | [SU-BTV](/Planes/SU-BTV/overview) | **10** | 1 | 7 | 2 | 2022-10-01 | 0 | — | none | Falcon 7X, Egyptian registry, Armada tail. Thinnest ADS-B record on the following side; the recovery pushed its documented history back **more than two years**. |
+| 15 | [SU-BGM](/Planes/SU-BGM/overview) | **8** | 2 | 5 | 1 | 2023-08-01 | 1 | 6 | none | Gulfstream IV, Egyptian registry. Its single Wayback capture is **the oldest populated FlightRadar24 table recovered for any following-fleet tail** — May 2020. |
+| 16 | [N55906](/Planes/N55906/overview) | **0** | **0** | **0** | **0** | **none** | 1 | — | none | Piper Cherokee Arrow II, a 1970s light single. **Zero data in every archive** — the only aircraft here with nothing anywhere, and the explanation is the aeroplane. |
+| | **Total** | **742** | **156** | **379** | **207** | — | **50** | **153** | **none** | |
+
+## How to read that table
+
+**Total days** is the sum of the three archive columns — one file per aircraft per day of ADS-B
+trace recovered. "Earliest date any source reaches" is the oldest date on which any free archive
+holds a track for that airframe; **for eleven of the sixteen that is now in 2022**, a year this site
+previously published as untestable. "Wayback page captures held" counts archived copies of the
+tracking-site page itself, **which is the only thing that could ever document a removal** — and the
+last column is empty for all sixteen.
+
+**A zero in the three archive columns means a volunteer network heard nothing on those days.** It
+does not mean the aircraft did not fly and it does not mean a transponder was off. Both free daily
+archives begin in 2023, so every 2022 gap is a limit of the archive by construction.
+
+## Why this page exists
+
 This is the reference page. Pick one tail number and get a complete answer: which archives still hold
 its ADS-B tracks, how far back each one reaches, how many copies of its tracking-site page the
 Internet Archive kept, and how many rows of published flight history were pulled back out of those
@@ -47,7 +90,7 @@ aircraft identically. That correction, with the control test behind it, is on
 Everything below is generated from `fleet_recovery_matrix.json` and the `.meta.json` sidecar written
 beside every payload under `site/docs/Planes/<TAIL>/data/recovered/`. The source is in every filename.
 
-## The whole fleet, one row each
+## The same fleet, in the original per-source layout
 
 | Aircraft | adsb.lol days | airplanes.live days | ADSBX sample days | Earliest date any source reaches | Wayback page captures held | Flight rows off archived pages |
 |---|---|---|---|---|---|---|
@@ -118,7 +161,7 @@ Internet Archive never crawled it. The 2023 reach on adsb.lol exists because the
 deliberately pulled its alleged dates rather than a fixed recent window. `fleet.js` records a
 standing identifier disagreement: api.adsbdb.com returns `0101F0` for this registration, while the
 adsb.lol trace for `0101D3` self-identifies as SU-BTT and carries the 10 September 2025
-Provo-to-Wilmington track. We use `0101D3` and publish the conflict.
+[Provo](/Planes/Airports/KPVU)-to-[Wilmington](/Planes/Airports/KILG) track. We use `0101D3` and publish the conflict.
 
 ### SU-BND
 
@@ -250,7 +293,7 @@ loads HTTP 200 today.
 ### N560TW
 
 ICAO hex `A728A8` · Citation Excel (C56X) · United States registry · **kirk** side · flew
-Scottsdale to Provo to Santa Barbara to Scottsdale on 10 September 2025.
+[Scottsdale](/Planes/Airports/KSDL) to [Provo](/Planes/Airports/KPVU) to Santa Barbara to Scottsdale on 10 September 2025.
 
 * **adsb.lol** — 9 days, 1 Sep 2025 to 9 Oct 2025.
 * **airplanes.live** — 27 days, 1 Sep 2025 to 5 Jun 2026.
@@ -280,7 +323,7 @@ was taken before 2017.** The useful FlightAware captures are the old ones.
 
 ### N872RA
 
-ICAO hex `ABFF3C` · Beechjet 400 (BE40) · United States registry · **kirk** side · Provo arrival ·
+ICAO hex `ABFF3C` · Beechjet 400 (BE40) · United States registry · **kirk** side · [Provo](/Planes/Airports/KPVU) arrival ·
 FlightRadar24 lists the operator as Regency Air.
 
 * **adsb.lol** — 12 days, 1 Sep 2025 to 10 Oct 2025.
@@ -296,7 +339,7 @@ missing; nothing about it was ever captured either.
 
 ### N40JD
 
-ICAO hex `A4AB14` · Premier 1 (PRM1) · United States registry · **kirk** side · Provo arrival.
+ICAO hex `A4AB14` · Premier 1 (PRM1) · United States registry · **kirk** side · [Provo](/Planes/Airports/KPVU) arrival.
 
 * **adsb.lol** — 10 days, 2 Sep 2025 to 16 Sep 2025.
 * **airplanes.live** — 12 days, 2 Sep 2025 to 16 Oct 2025.
@@ -444,6 +487,13 @@ This investigation keeps one page per airport and one page per recorded ground c
 | Date (UTC) | Aircraft | Airport | City, State | Whose event | When |
 |---|---|---|---|---|---|
 | [2022-06-01](/Planes/Incidents/N888KG-2022-06-01-KDAL) | [N888KG](/Planes/N888KG/overview) | [KDAL](/Planes/Airports/KDAL) | Dallas, TX | Charlie | Day before |
+
+**Airports named on this page:**
+
+* [KPVU — Provo Municipal Airport](/Planes/Airports/KPVU), Provo, UT — 135 recorded ground visits, 13 tracked aircraft
+* [KILG — Wilmington Airport / New Castle Airport](/Planes/Airports/KILG), Wilmington, DE — 28 recorded ground visits, 3 tracked aircraft
+* [KSDL — Scottsdale Airport](/Planes/Airports/KSDL), Scottsdale, AZ — 616 recorded ground visits, 6 tracked aircraft
+* [KBIF — Biggs Army Air Field (Fort Bliss)](/Planes/Airports/KBIF), Fort Bliss/El Paso, TX — 53 recorded ground visits, 2 tracked aircraft
 
 **Aircraft named on this page:**
 

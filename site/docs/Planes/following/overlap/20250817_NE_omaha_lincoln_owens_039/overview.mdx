@@ -28,6 +28,44 @@ borderRadius:'4px', textDecoration:'none', fontSize:'0.9rem'}}>← Overlap dates
 
 # 17 August 2025 — Omaha / Lincoln, NE
 
+**Primary ADS-B position data puts [SU-BTT](/Planes/SU-BTT/overview) at Eppley Airfield (KOMA), Omaha, NE, on 17 August 2025 — closest recovered fix 0.50 km from the field, 391 ft above the field.** An arrival, a departure or a low pass; this trace holds no on-ground position at the claimed field.
+
+That corroborates the **aircraft** half of this row, and only the aircraft half. **A trace places an airframe, never a person.** This row is one of [25 of the 85 rows](/Planes/following/cuts/adsb-at-claimed-airport-25) that primary position data puts at the field the claim names.
+
+{/* CK_ADSB_VERDICT:START */}
+
+## What the recovered flight data says about this claim
+
+This page records what somebody **claimed**. This section records what the recovered public ADS-B actually shows, tested independently of the claim.
+
+### Verdict: Aircraft was at the claimed field
+
+| Field | Value |
+|---|---|
+| Claim ID | **OWENS-039** |
+| Claimed date | 2025-08-17 |
+| Claimed aircraft | [SU-BTT](/Planes/SU-BTT/overview) |
+| Claimed airport | **KOMA** Omaha, NE |
+| Claimed location | Omaha / Lincoln, NE |
+| Claimed subject | Erika |
+| **ADS-B verdict** | **AT_CLAIMED_AIRPORT** |
+| Closest recovered approach | 0.50 km |
+| Wheels on the ground? | **No** — airborne fix near the field only (an arrival, a departure, or a low pass) |
+| Independent audit's verdict | partial |
+
+**What that verdict means.** A recovered trace puts this airframe at the claimed airport on the claimed date. **This corroborates the aircraft half of the claim, and only the aircraft half.**
+
+**On this specific row:** CORROBORATED IN THE AIR, NOT ON THE GROUND. Closest recovered position is 0.5 km from KOMA at 391 ft above the field - an arrival, a departure or a low pass. This trace holds no on-ground positions at all, which is ordinary: receiver coverage of a parked aircraft is thin. It places NOBODY aboard.
+
+**Read the wheels-down row carefully.** An airborne fix near a field is not the same as an aircraft parked at it. Fifteen of the rows scored `AT_CLAIMED_AIRPORT` across this investigation are airborne fixes rather than ground presences, and that distinction travels with the number everywhere it is quoted.
+
+**And the person half of this claim is not confirmed by anything here.** No ADS-B record anywhere places any person aboard any aircraft. Across all 85 claimed overlaps the `erika_present` column is `claimed` on 70 rows and `not_claimed` on 15 — **it is never `yes` on any row.** Erika Kirk's flight logs are reported erased and no backup anywhere produces her itinerary. See [Erika Flight Logs Erased](/Planes/Erika-Flight-Logs-Erased).
+
+*Verdicts come from `overlaps.csv`, derived from the recovered traces. See [Investigating Deleted Flights](/Planes/investigating_deleted_flights) §4.13 for how the 85 claims break down as a whole, and [the overlap window definition](/Planes/following/Overlap_Window_Definition) for what counts as an overlap at all.*
+
+{/* CK_ADSB_VERDICT:END */}
+
+
 **This page is one row of the overlap sheet that produced the "73 times" figure — reconstructed, sourced, and checked.** It is not a finding by this site. It records what the compilation claimed for this date, who it says was there, and what an independent audit of the flight archive found when it looked.
 
 ## Who was there, according to the sheet
@@ -301,38 +339,25 @@ This investigation keeps one page per airport and one page per recorded ground c
 
 ---
 
-{/* CK_ADSB_VERDICT:START */}
 
-## What the recovered flight data says about this claim
+## Where this fits
 
-This page records what somebody **claimed**. This section records what the recovered public ADS-B actually shows, tested independently of the claim.
+**Up one level.** This is a single row. The register it belongs to is [the overlap index — all 85 rows](/Planes/following/overlap/overview), and the investigation it belongs to is [planes following Charlie or Erika](/Planes/following/overview).
 
-### Verdict: Aircraft was at the claimed field
+**The aircraft on this row.** [SU-BTT — full recovered movement record](/Planes/SU-BTT/overview)
 
-| Field | Value |
-|---|---|
-| Claim ID | **OWENS-039** |
-| Claimed date | 2025-08-17 |
-| Claimed aircraft | [SU-BTT](/Planes/SU-BTT/overview) |
-| Claimed airport | **KOMA** Omaha, NE |
-| Claimed location | Omaha / Lincoln, NE |
-| Claimed subject | Erika |
-| **ADS-B verdict** | **AT_CLAIMED_AIRPORT** |
-| Closest recovered approach | 0.50 km |
-| Wheels on the ground? | **No** — airborne fix near the field only (an arrival, a departure, or a low pass) |
-| Independent audit's verdict | partial |
+**The airport.** [the full arrival log for Omaha](/Planes/following/Omaha_KOMA_2024-02-09_to_2025-10-05/overview)
 
-**What that verdict means.** A recovered trace puts this airframe at the claimed airport on the claimed date. **This corroborates the aircraft half of the claim, and only the aircraft half.**
+There is no per-airport page for **KOMA** — an airport page is only built where a recovered trace puts a case aircraft on the ground at the field or flying a recovered leg into or out of it.
 
-**On this specific row:** CORROBORATED IN THE AIR, NOT ON THE GROUND. Closest recovered position is 0.5 km from KOMA at 391 ft above the field - an arrival, a departure or a low pass. This trace holds no on-ground positions at all, which is ordinary: receiver coverage of a parked aircraft is thin. It places NOBODY aboard.
+**No ground-contact page exists for this aircraft on this date.** One is built only where a recovered trace puts the aircraft on the ground within 50 miles of a sourced event; see [every recorded ground contact](/Planes/Incidents/overview).
 
-**Read the wheels-down row carefully.** An airborne fix near a field is not the same as an aircraft parked at it. Fifteen of the rows scored `AT_CLAIMED_AIRPORT` across this investigation are airborne fixes rather than ground presences, and that distinction travels with the number everywhere it is quoted.
+**No sourced Charlie Kirk or TPUSA appearance is catalogued for 17 August 2025.** The nearest ones are listed above; the whole catalogue is at [speaking events](/Planes/following/speaking/overview).
 
-**And the person half of this claim is not confirmed by anything here.** No ADS-B record anywhere places any person aboard any aircraft. Across all 85 claimed overlaps the `erika_present` column is `claimed` on 70 rows and `not_claimed` on 15 — **it is never `yes` on any row.** Erika Kirk's flight logs are reported erased and no backup anywhere produces her itinerary. See [Erika Flight Logs Erased](/Planes/Erika-Flight-Logs-Erased).
+**The people counts this row feeds.**
 
-*Verdicts come from `overlaps.csv`, derived from the recovered traces. See [Investigating Deleted Flights](/Planes/investigating_deleted_flights) §4.13 for how the 85 claims break down as a whole, and [the overlap window definition](/Planes/following/Overlap_Window_Definition) for what counts as an overlap at all.*
+* **Erika Kirk** is named on **70 of the 85 rows** of this register, **61 of them without Charlie** — [Erika Kirk's flights](/Planes/following/Erika_Kirk_Flights) and [the 70 rows that name her](/Planes/following/cuts/erika-any-70). Her presence is **established on none of them**: no dated itinerary for her has ever been published and her flight logs are [reported erased](/Planes/Erika-Flight-Logs-Erased).
 
-{/* CK_ADSB_VERDICT:END */}
 
 {/* CK_PAGE_FOOTER_START */}
 

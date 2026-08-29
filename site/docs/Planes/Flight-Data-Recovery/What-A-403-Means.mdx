@@ -29,6 +29,57 @@ borderRadius:'4px', textDecoration:'none', fontSize:'0.9rem'}}>← Flight Data R
 
 # What A 403 Actually Means
 
+**Eight things in this investigation looked like flight records being deleted. Every one of them
+dissolved the moment an unrelated aircraft — or, twice, our own code — was asked the same question.
+One item on the "erased" list does survive that test, and it is not a deletion either: it is an
+absence nobody can restore, because the record was never published in the first place.**
+
+That is what the control test is for. **A status code, a byte count, or an empty table is a
+measurement with no baseline.** It becomes evidence only when the same site, the same archive and the
+same script are pointed at an airframe that has nothing whatever to do with this case — a Ryanair
+737, a Lufthansa A380, Nike's corporate Gulfstream — in the same minute, from the same address. If
+the control fails the same way, the result carries **no information about the subject aircraft**.
+
+**Running that test is what produced the recovery.** Every one of the "removals" below turned out to
+be bot protection, a paywall, an archive retention boundary, or a bug in this investigation's own
+code — and finding that out is what sent the sweep to four archives it had not used, which is where
+the **1,831 aircraft-days of primary position data** on
+[Flight Data Recovery](/Planes/Flight-Data-Recovery/overview) came from. **The test that took a
+headline away is the test that found the data.**
+
+## Every apparent removal, and what the control did to it
+
+| Apparent removal | What it looked like | What the control did | Honest category |
+|---|---|---|---|
+| **[N102DZ](/Planes/N102DZ/overview)'s FlightRadar24 page, asked by script** | HTTP 403 on the tail number at the centre of the case. Published here in bold as *"A REAL REMOVAL, DOCUMENTED."* | **FlightRadar24's own home page returns 403 to a script**, as do its aircraft index, all thirteen case tails, and seven unrelated control aircraft — the same ~5,877-byte body every time. | **Bot block. The method cannot see the question at all.** |
+| **N102DZ's page, asked by browser** | The follow-up test, run in a real logged-out session on 24 Aug 2026 and reproduced independently the same day. | All sixteen case aircraft and all four browser controls returned **HTTP 200**, identity blocks intact. | **REFUTED — not a removal.** |
+| **N102DZ's empty flight table** | The history "gone" from a page that used to show it. | The unrelated control **N628TS prints the identical "could not find data" message at 53,318 bytes against N102DZ's 53,310** — eight bytes apart. **N1KE**, Nike's Gulfstream, is empty on the same day for the same reason. | **Paywall. FlightRadar24's seven-day free window.** |
+| **[N888KG](/Planes/N888KG/overview)'s Wayback capture sequence** | Thirteen archived copies of one page; it gets **7,239 bytes lighter exactly once**, between 13 and 18 September 2025 — the week after the assassination. **The strongest removal candidate this investigation found on its own.** | The lighter captures print FlightRadar24's own subscription sentence where the table used to be. Every capture is HTTP 200. | **The seven-day window closing, captured in slow motion.** |
+| **The `adsb.lol` 403 band from 12 Oct 2025** | The free archive refusing exactly the dates covering the Sharm el-Sheikh tarmac claim. | **403 for every aircraft, controls included**, starting precisely at 2025-10-12 — and adsb.lol publishes those same days in full as Open-Database-Licence releases on GitHub. | **Serving condition. Not suppression.** |
+| **The `adsb.lol` 404 stretch to about 1 Aug 2026** | All of 2026 missing, including May 2026 — the month the erasure was reported. | An unrelated Ryanair airframe and an unrelated Lufthansa airframe **404 identically across the same seven months**. | **Archive-wide retention.** |
+| **39 provenance records reading `0` or `null` flight rows** | Zero is the exact shape a scrub is supposed to leave. | Nothing external was tested — **the bug was ours.** Re-parsing the archived HTML already on disk recovered **153 flight rows**. | **Our own parser, not anybody's deletion.** |
+| **[SU-BTT](/Planes/SU-BTT/overview) recorded as "never archived"** | Zero Wayback snapshots for the most load-bearing aircraft in the case. | Re-running the query without `collapse=digest` and with retries: **30 of 30 succeeded**, and SU-BTT's ADS-B Exchange page has **3 snapshots**. The original zero was an **HTTP 504** written down as an absence. | **A failed query, not a missing page.** |
+
+**Read the last two rows before the first six.** Two of the eight "removals" on this list were
+produced by this investigation's own tooling — a parser that matched the wrong row shape, and a
+timed-out query logged as a fact about somebody else's archive. **A finding you have not tried to
+break is a finding you do not own.**
+
+## The one thing that survives every control test
+
+**Erika Kirk's own itinerary.** It is on the "erased" list, no control test dissolves it, and no
+backup anywhere restores it — because **no dated, published list of her locations has ever existed
+for a backup to hold**. That makes it a different kind of gap from every row in the table above, and
+it must be described as exactly what it is: **an absence, not a demonstrated removal.** It is also
+the weakest point in the entire aircraft angle, because the overlap claim is a pairing and this is
+the half nobody can source. See
+[Erika Flight Logs Erased](/Planes/Erika-Flight-Logs-Erased).
+
+**And the tally that follows from all of the above:
+[zero flight records have been shown to be removed from anywhere](/Planes/Deleted-Flight-Records).**
+That is not the answer this investigation started with. It is the answer the controls produced.
+
+
 ## The mistake
 
 This site published that **N102DZ's FlightRadar24 page was "A REAL REMOVAL, DOCUMENTED."** The

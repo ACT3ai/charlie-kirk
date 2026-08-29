@@ -28,6 +28,41 @@ borderRadius:'4px', textDecoration:'none', fontSize:'0.9rem'}}>← Overlap dates
 
 # 18 June 2025 — Omaha / Lincoln, NE
 
+**The recovered trace contradicts this row. On 18 June 2025 [SU-BTT](/Planes/SU-BTT/overview) was over Egypt — 10139.55 km from KOMA, the field this row claims.**
+
+It is one of only [3 of the 85 rows](/Planes/following/cuts/adsb-elsewhere-3) that primary position data refutes. **The refutation rests on five minutes of coverage**, not on a day of flying, and the section below says so in full.
+
+{/* CK_ADSB_VERDICT:START */}
+
+## What the recovered flight data says about this claim
+
+This page records what somebody **claimed**. This section records what the recovered public ADS-B actually shows, tested independently of the claim.
+
+### Verdict: Aircraft was somewhere else
+
+| Field | Value |
+|---|---|
+| Claim ID | **OWENS-036** |
+| Claimed date | 2025-06-18 |
+| Claimed aircraft | [SU-BTT](/Planes/SU-BTT/overview) |
+| Claimed airport | **KOMA** Omaha, NE |
+| Claimed location | Omaha / Lincoln, NE |
+| Claimed subject | Erika |
+| **ADS-B verdict** | **ELSEWHERE** |
+| Closest recovered approach | 10139.55 km |
+| Independent audit's verdict | inaccurate |
+
+**What that verdict means.** A recovered trace puts this airframe somewhere other than the claimed location on the claimed date. **This is the only verdict that refutes a row**, and it is applied sparingly.
+
+**On this specific row:** REFUTED. The airframe was tracked that day and its closest recovered position is 10,140 km from KOMA.
+
+**And the person half of this claim is not confirmed by anything here.** No ADS-B record anywhere places any person aboard any aircraft. Across all 85 claimed overlaps the `erika_present` column is `claimed` on 70 rows and `not_claimed` on 15 — **it is never `yes` on any row.** Erika Kirk's flight logs are reported erased and no backup anywhere produces her itinerary. See [Erika Flight Logs Erased](/Planes/Erika-Flight-Logs-Erased).
+
+*Verdicts come from `overlaps.csv`, derived from the recovered traces. See [Investigating Deleted Flights](/Planes/investigating_deleted_flights) §4.13 for how the 85 claims break down as a whole, and [the overlap window definition](/Planes/following/Overlap_Window_Definition) for what counts as an overlap at all.*
+
+{/* CK_ADSB_VERDICT:END */}
+
+
 **This page is one row of the overlap sheet that produced the "73 times" figure — reconstructed, sourced, and checked.** It is not a finding by this site. It records what the compilation claimed for this date, who it says was there, and what an independent audit of the flight archive found when it looked.
 
 ## Who was there, according to the sheet
@@ -291,35 +326,25 @@ This investigation keeps one page per airport and one page per recorded ground c
 
 ---
 
-{/* CK_ADSB_VERDICT:START */}
 
-## What the recovered flight data says about this claim
+## Where this fits
 
-This page records what somebody **claimed**. This section records what the recovered public ADS-B actually shows, tested independently of the claim.
+**Up one level.** This is a single row. The register it belongs to is [the overlap index — all 85 rows](/Planes/following/overlap/overview), and the investigation it belongs to is [planes following Charlie or Erika](/Planes/following/overview).
 
-### Verdict: Aircraft was somewhere else
+**The aircraft on this row.** [SU-BTT — full recovered movement record](/Planes/SU-BTT/overview)
 
-| Field | Value |
-|---|---|
-| Claim ID | **OWENS-036** |
-| Claimed date | 2025-06-18 |
-| Claimed aircraft | [SU-BTT](/Planes/SU-BTT/overview) |
-| Claimed airport | **KOMA** Omaha, NE |
-| Claimed location | Omaha / Lincoln, NE |
-| Claimed subject | Erika |
-| **ADS-B verdict** | **ELSEWHERE** |
-| Closest recovered approach | 10139.55 km |
-| Independent audit's verdict | inaccurate |
+**The airport.** [the full arrival log for Omaha](/Planes/following/Omaha_KOMA_2024-02-09_to_2025-10-05/overview)
 
-**What that verdict means.** A recovered trace puts this airframe somewhere other than the claimed location on the claimed date. **This is the only verdict that refutes a row**, and it is applied sparingly.
+There is no per-airport page for **KOMA** — an airport page is only built where a recovered trace puts a case aircraft on the ground at the field or flying a recovered leg into or out of it.
 
-**On this specific row:** REFUTED. The airframe was tracked that day and its closest recovered position is 10,140 km from KOMA.
+**No ground-contact page exists for this aircraft on this date.** One is built only where a recovered trace puts the aircraft on the ground within 50 miles of a sourced event; see [every recorded ground contact](/Planes/Incidents/overview).
 
-**And the person half of this claim is not confirmed by anything here.** No ADS-B record anywhere places any person aboard any aircraft. Across all 85 claimed overlaps the `erika_present` column is `claimed` on 70 rows and `not_claimed` on 15 — **it is never `yes` on any row.** Erika Kirk's flight logs are reported erased and no backup anywhere produces her itinerary. See [Erika Flight Logs Erased](/Planes/Erika-Flight-Logs-Erased).
+**No sourced Charlie Kirk or TPUSA appearance is catalogued for 18 June 2025.** The nearest ones are listed above; the whole catalogue is at [speaking events](/Planes/following/speaking/overview).
 
-*Verdicts come from `overlaps.csv`, derived from the recovered traces. See [Investigating Deleted Flights](/Planes/investigating_deleted_flights) §4.13 for how the 85 claims break down as a whole, and [the overlap window definition](/Planes/following/Overlap_Window_Definition) for what counts as an overlap at all.*
+**The people counts this row feeds.**
 
-{/* CK_ADSB_VERDICT:END */}
+* **Erika Kirk** is named on **70 of the 85 rows** of this register, **61 of them without Charlie** — [Erika Kirk's flights](/Planes/following/Erika_Kirk_Flights) and [the 70 rows that name her](/Planes/following/cuts/erika-any-70). Her presence is **established on none of them**: no dated itinerary for her has ever been published and her flight logs are [reported erased](/Planes/Erika-Flight-Logs-Erased).
+
 
 {/* CK_PAGE_FOOTER_START */}
 

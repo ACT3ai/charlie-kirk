@@ -92,9 +92,93 @@ def incident_url(tail, date, field):
     return f"/Planes/Incidents/{incident_key(tail, date, field)}"
 
 
+# Every (tail, date, field) that WILL have a contact page this run.  Filled in
+# main() before a single page is written, so an airport page can link down into
+# a contact page that does not exist on disk yet.  Same discipline as
+# pf.ap_link(): a link is emitted only when its target is guaranteed.
+INCIDENT_KEYS = set()
+
+
+def incident_link(tail, date, field, label=None):
+    """Link a ground contact ONLY if that contact has a page."""
+    k = incident_key(tail, date, field)
+    lab = label or date
+    return f"[{lab}](/Planes/Incidents/{k})" if k in INCIDENT_KEYS else lab
+
+
 def tail_link(tail):
     u = TAIL_PAGE.get(tail)
     return f"[{tail}]({u})" if u else tail
+
+
+def notability(tail):
+    """
+    0 = foreign-registered, 1 = government / survey / contractor, 2 = Kirk or
+    TPUSA fleet.  Used only to ORDER a table, never to characterise an aircraft:
+    a Kirk-side jet at a Kirk event is the expected thing and says so on its own
+    page.
+    """
+    if tail in FOREIGN:
+        return 0
+    if tail in KIRK or tail in CONTROL:
+        return 2
+    return 1
+
+
+def when_phrase(off):
+    """Prose form of a visit-minus-event day offset.  Negative = before."""
+    if off is None:
+        return "near in time to"
+    if off == 0:
+        return "the **same day** as"
+    if off == -1:
+        return "the **day before**"
+    if off == 1:
+        return "the **day after**"
+    return f"**{abs(off)} days {'before' if off < 0 else 'after'}**"
+
+
+def miles_cell(v):
+    try:
+        return f"{float(v):.1f}"
+    except (TypeError, ValueError):
+        return "—"
+
+
+def event_adjacent(visits):
+    """
+    The recovered ground visits at one field that fall on the day of, the day
+    before, or the day after a sourced event.
+
+    THE OFFSET IS RECOMPUTED FROM THE TWO DATES AND THE CSV'S OWN OFFSET COLUMN
+    IS NEVER READ.  master_proximity.csv stores (event_date - visit_date) and
+    geo_ground_foreign.csv stores (sweep_date - event_date); reading one as the
+    other turns the day BEFORE the assassination into the day AFTER.
+
+    Each row is one continuous run of on-ground positions and stays its own row.
+    Two runs in a day at one field mean the aircraft flew in between — merging
+    them would hide a flight.
+    """
+    out = []
+    for v in visits:
+        if (v.get("within_50mi") or "").strip() != "yes":
+            continue
+        off = pf.days_between(v.get("date"), v.get("nearest_event_date"))
+        out.append((v, off))
+    out.sort(key=lambda x: (
+        notability(x[0]["tail"]),
+        abs(x[1]) if x[1] is not None else 99,
+        float(x[0]["miles_to_event_city"]) if _num(x[0].get("miles_to_event_city")) else 9e9,
+        x[0]["date"], x[0]["tail"]))
+    return out
+
+
+def _num(s):
+    try:
+        float(s)
+        return True
+    except (TypeError, ValueError):
+        return False
 
 
 def fm(title, sidebar, desc, keywords):
@@ -128,37 +212,101 @@ def build_airport_page(code, visits, legs, prox, oa):
             [code, name, where, "ADS-B", "flight records", "Charlie Kirk"])]
 
     L.append(f"# {code} — {name}\n")
-    L.append(f"**{where}.** This page is the complete recovered record for this "
-             f"field: every ground visit and every flight leg by an aircraft "
-             f"this investigation tracks.\n")
 
-    # identity
-    L.append("## The field\n")
-    L.append("| Field | Value |")
-    L.append("|---|---|")
-    L.append(f"| ICAO / ident | **{code}** |")
-    L.append(f"| Name | {pf.esc(name)} |")
-    L.append(f"| Where | {pf.esc(where)} |")
-    if oa:
-        if oa.get("iata_code"):
-            L.append(f"| IATA | {pf.esc(oa['iata_code'])} |")
-        if oa.get("type"):
-            L.append(f"| Type | {pf.esc(oa['type'].replace('_', ' '))} |")
-        if oa.get("elevation_ft"):
-            L.append(f"| Elevation | {pf.esc(oa['elevation_ft'])} ft |")
-        if oa.get("latitude_deg") and oa.get("longitude_deg"):
-            L.append(f"| Coordinates | {oa['latitude_deg']}, {oa['longitude_deg']} |")
-        if oa.get("scheduled_service"):
-            L.append(f"| Scheduled airline service | "
-                     f"{'yes' if oa['scheduled_service'] == 'yes' else 'no'} |")
-    L.append(f"| Aircraft tracked here | {len(case_tails)} |")
-    L.append(f"| Recovered ground visits | {len(visits)} |")
-    L.append(f"| Recovered flight legs | {len(legs)} |")
-    L.append("")
+    # ------------------------------------------------------------------
+    # THE FINDING FIRST.  What was here, how much of it lands on a sourced
+    # event, and the single most striking visit — before any field identity.
+    # ------------------------------------------------------------------
+    adj = event_adjacent(visits)
+    L.append(
+        f"**{len(case_tails)} aircraft** this investigation tracks were recorded "
+        f"on the ground at **{pf.esc(name)}**, {where}, across **{len(visits)} "
+        f"recovered ground visits**. **{len(adj)} of those visits** fall on the "
+        f"day of, the day before, or the day after a sourced Charlie Kirk, Erika "
+        f"Kirk, or TPUSA event.\n"
+    )
+
+    if adj:
+        hv, hoff = adj[0]
+        band = notability(hv["tail"])
+        # Every tail in the same notability band, on the same date, at the same
+        # offset — so a field where two foreign jets sat together on the day of
+        # an event names both rather than picking one.
+        hts = sorted({a[0]["tail"] for a in adj
+                      if a[0]["date"] == hv["date"] and a[1] == hoff
+                      and notability(a[0]["tail"]) == band})
+        # The FURTHEST of the tied rows, not the closest.  Where several tails
+        # share the headline, the conservative number is the one that is true of
+        # all of them; picking the smallest would quietly overstate proximity.
+        hmiles = max((float(a[0]["miles_to_event_city"]) for a in adj
+                      if a[0]["tail"] in hts and a[0]["date"] == hv["date"]
+                      and _num(a[0].get("miles_to_event_city"))), default=None)
+        verb = "were" if len(hts) > 1 else "was"
+        links = [tail_link(t) for t in hts]
+        if len(links) == 1:
+            tls = links[0]
+        elif len(links) == 2:
+            tls = " and ".join(links)
+        else:
+            tls = ", ".join(links[:-1]) + " and " + links[-1]
+        dist = (f", about **{hmiles:.1f} miles** from the event city"
+                if hmiles is not None else "")
+        ev_city = f"{hv.get('nearest_event_city','')}, {hv.get('nearest_event_state','')}".strip(", ")
+        eu = pf.page_url(hv.get("event_page"))
+        ev_txt = f"[{pf.esc(ev_city)}]({eu})" if eu else f"**{pf.esc(ev_city)}**"
+        L.append(
+            f"{tls} {verb} on the ground here on "
+            f"**{pf.pretty_date(hv['date'])}** — {when_phrase(hoff)} a sourced "
+            f"**{pf.esc(hv.get('nearest_event_who') or '—')}** event at "
+            f"{ev_txt}{dist}.\n"
+        )
+    else:
+        L.append(
+            "**No recovered ground visit at this field falls inside the window "
+            "of a sourced Charlie Kirk, Erika Kirk, or TPUSA event.** That is a "
+            "statement about the sourced event list and the recovered archive "
+            "coverage, not a statement that nothing happened here.\n"
+        )
 
     if foreign_here:
         L.append(f"**Foreign-fleet aircraft recorded on the ground here: "
                  f"{', '.join(tail_link(t) for t in foreign_here)}.**\n")
+
+    # the short table: only the event-adjacent visits, most notable first
+    if adj:
+        L.append("## The visits that land on a sourced event\n")
+        L.append(
+            "Foreign-registered aircraft first, then government, survey and "
+            "contractor aircraft, then the Kirk and TPUSA fleet; within each "
+            "band, closest in time to the event first. **Every one of these "
+            "rows also appears, in date order, in the full table below** — "
+            "nothing here is a second sighting.\n"
+        )
+        L.append("| Date (UTC) | Aircraft | What it is | When, against the event "
+                 "| Sourced event | Miles to event city | Ground window (UTC) | "
+                 "Contact page |")
+        L.append("|---|---|---|---|---|---:|---|---|")
+        for v, off in adj:
+            ec = f"{v.get('nearest_event_city','')}, {v.get('nearest_event_state','')}".strip(", ")
+            eu = pf.page_url(v.get("event_page"))
+            ev = f"[{pf.esc(ec)}]({eu})" if eu else pf.esc(ec) or "—"
+            who = pf.esc(v.get("nearest_event_who") or "")
+            L.append(
+                f"| {v['date']} | {tail_link(v['tail'])} "
+                f"| {pf.esc(TAIL_KIND.get(v['tail'], '—'))} "
+                f"| {pf.when_label(off)} "
+                f"| {ev}{(' — ' + who) if who else ''} "
+                f"| {miles_cell(v.get('miles_to_event_city'))} "
+                f"| {pf.window(v.get('first_seen_utc'), v.get('last_seen_utc'))} "
+                f"| {incident_link(v['tail'], v['date'], code, 'open')} |"
+            )
+        L.append("")
+        L.append(
+            "**A row here is an airframe, not a person, and not a purpose.** "
+            "Where the same aircraft has two rows on one date, those are two "
+            "separate runs of on-ground positions with a flight between them — "
+            "not one long wait on the ramp.\n"
+        )
 
     # ground visits
     if visits:
@@ -171,9 +319,10 @@ def build_airport_page(code, visits, legs, prox, oa):
         for v in sorted(visits, key=lambda x: (x["date"], x["tail"])):
             near = "—"
             if v.get("within_50mi") == "yes":
-                near = (f"**Yes** — [{v.get('nearest_event_city','')}, "
-                        f"{v.get('nearest_event_state','')}]"
-                        f"({incident_url(v['tail'], v['date'], code)})")
+                lab = (f"{v.get('nearest_event_city','')}, "
+                       f"{v.get('nearest_event_state','')}").strip(", ")
+                near = ("**Yes** — "
+                        + incident_link(v["tail"], v["date"], code, lab))
             L.append(
                 f"| {v['date']} | {tail_link(v['tail'])} "
                 f"| {pf.esc(TAIL_KIND.get(v['tail'], '—'))} "
@@ -231,9 +380,39 @@ def build_airport_page(code, visits, legs, prox, oa):
                 f"| {r['date']} | {tail_link(r['tail'])} | {pf.esc(r['who'])} "
                 f"| {ev} | {pf.esc(r['event_city'])}, {pf.esc(r['event_state'])} "
                 f"| {mi} | {pf.when_label(r['offset'])} "
-                f"| [open]({incident_url(r['tail'], r['date'], code)}) |"
+                f"| {incident_link(r['tail'], r['date'], code, 'open')} |"
             )
         L.append("")
+
+    # ------------------------------------------------------------------
+    # The field's own identity, below the findings rather than above them.
+    # ------------------------------------------------------------------
+    L.append("## The field\n")
+    L.append(f"**{where}.** This page is the complete recovered record for this "
+             f"field: every ground visit and every flight leg by an aircraft "
+             f"this investigation tracks.\n")
+    L.append("| Field | Value |")
+    L.append("|---|---|")
+    L.append(f"| ICAO / ident | **{code}** |")
+    L.append(f"| Name | {pf.esc(name)} |")
+    L.append(f"| Where | {pf.esc(where)} |")
+    if oa:
+        if oa.get("iata_code"):
+            L.append(f"| IATA | {pf.esc(oa['iata_code'])} |")
+        if oa.get("type"):
+            L.append(f"| Type | {pf.esc(oa['type'].replace('_', ' '))} |")
+        if oa.get("elevation_ft"):
+            L.append(f"| Elevation | {pf.esc(oa['elevation_ft'])} ft |")
+        if oa.get("latitude_deg") and oa.get("longitude_deg"):
+            L.append(f"| Coordinates | {oa['latitude_deg']}, {oa['longitude_deg']} |")
+        if oa.get("scheduled_service"):
+            L.append(f"| Scheduled airline service | "
+                     f"{'yes' if oa['scheduled_service'] == 'yes' else 'no'} |")
+    L.append(f"| Aircraft tracked here | {len(case_tails)} |")
+    L.append(f"| Recovered ground visits | {len(visits)} |")
+    L.append(f"| Visits landing on a sourced event | {len(adj)} |")
+    L.append(f"| Recovered flight legs | {len(legs)} |")
+    L.append("")
 
     L.append("## What this page cannot tell you\n")
     L.append("* **Presence is not purpose, and it is not occupancy.** No ADS-B "
@@ -241,14 +420,42 @@ def build_airport_page(code, visits, legs, prox, oa):
     L.append("* **An absent day is not an absent aircraft.** Volunteer receiver "
              "coverage is uneven, and a jet parked with its transponder off is "
              "invisible. Absence here is a coverage fact.")
+    L.append("* **Every count on this page is a count of the aircraft this "
+             "investigation tracks**, not of everything that used the field. "
+             "Most aircraft at a general-aviation airport are flight-school and "
+             "charter traffic, and many carry the FAA's ordinary Limiting "
+             "Aircraft Data Displayed privacy flag, which is a routine owner "
+             "filing and not a sign of anything.")
     L.append("* **2022 is effectively blank** — no free archive covers it.\n")
+
+    # ------------------------------------------------------------------
+    # Drill-down, both directions.  Every link is gated on its target
+    # actually existing.
+    # ------------------------------------------------------------------
+    contacts = sorted({(r["tail"], r["date"]) for r in prox})
+    contacts = [c for c in contacts
+                if incident_key(c[0], c[1], code) in INCIDENT_KEYS]
+    if contacts:
+        L.append("## Every recorded ground contact at this field, one page each\n")
+        L.append("One page per aircraft-day this field was within 50 miles of a "
+                 "sourced event, with the ground window and the archives that "
+                 "hold it.\n")
+        for tl, dt in contacts:
+            L.append(f"* [{tl} at {code} on {dt}](/Planes/Incidents/"
+                     f"{incident_key(tl, dt, code)}) — "
+                     f"{TAIL_KIND.get(tl, 'aircraft in this investigation')}")
+        L.append("")
 
     L.append("## Related\n")
     for t in case_tails:
         u = TAIL_PAGE.get(t)
         if u:
             L.append(f"* [{t}]({u}) — {TAIL_KIND.get(t, 'aircraft in this investigation')}")
+    for url, label in pf.following_location_pages().get(code, []):
+        L.append(f"* [The follow log for this location: {label}]({url}) — every "
+                 f"claimed pairing at this field, with its counterargument")
     L.append("* [All airports in this investigation](/Planes/Airports/overview)")
+    L.append("* [Every interesting date, all aircraft](/Planes/Incidents/overview)")
     L.append("* [Investigating Deleted Flights](/Planes/investigating_deleted_flights)")
     L.append("* [Planes that followed Charlie and Erika](/Planes/following/overview)\n")
     return "\n".join(L)
@@ -270,19 +477,18 @@ def build_incident_page(group, siblings, same_field):
     tail, date, code = r["tail"], r["date"], r["airport"]
     name, where = pf.place(code)
     ecity = f"{r['event_city']}, {r['event_state']}".strip(", ")
+    # The offset carried in interesting_dates.json is recomputed from the two
+    # dates by build_interesting_dates.py; the source CSVs' own offset columns
+    # hold OPPOSITE signs and are never read.  Negative = the aircraft was here
+    # BEFORE the event.
     off = r["offset"]
     when = pf.when_label(off)
-    if off == 0:
-        when_phrase = "the **same day** as"
-    elif off == -1:
-        when_phrase = "the **day before**"
-    elif off == 1:
-        when_phrase = "the **day after**"
-    elif off is None:
-        when_phrase = "near in time to"
-    else:
-        when_phrase = f"**{abs(off)} days {'before' if off < 0 else 'after'}**"
-    when_txt = re.sub(r"\*\*", "", when_phrase)
+    wp = when_phrase(off)
+    when_txt = re.sub(r"\*\*", "", wp)
+    try:
+        miles_txt = f"{float(r['miles']):.1f}"
+    except (TypeError, ValueError):
+        miles_txt = ""
 
     title = f"{tail} at {code} on {date}"
     desc = (f"{tail} on the ground at {name} ({code}), {where}, on {date} — "
@@ -292,10 +498,12 @@ def build_incident_page(group, siblings, same_field):
 
     L.append(f"# {tail} at {code} on {date}\n")
     kind = TAIL_KIND.get(tail, "an aircraft tracked in this investigation")
+    dist = f", **{miles_txt} miles** from the event city" if miles_txt else ""
     L.append(
         f"**{tail}** — {kind} — was on the ground at **{name}** "
-        f"({airport_link(code)}), {where}, on **{date}** — {when_phrase} "
-        f"a sourced **{r['who']}** event at **{ecity}**.\n"
+        f"({airport_link(code)}), {where}, on **{pf.pretty_date(date)}** — "
+        f"{wp} a sourced **{pf.esc(r['who'])}** event at **{pf.esc(ecity)}**"
+        f"{dist}.\n"
     )
 
     L.append("## The contact, as the archives recorded it\n")
@@ -358,26 +566,28 @@ def build_incident_page(group, siblings, same_field):
             "look for. They agree.\n"
         )
 
-    L.append("## What this establishes, and what it does not\n")
-    L.append(
+    # The limits section stays in full, word for word — it just sits BELOW the
+    # contact and the sibling tables rather than between them.
+    limits = ["## What this establishes, and what it does not\n"]
+    limits.append(
         "**It establishes that the airframe was there.** The positions are "
         "on-ground reports from a volunteer receiver network, held in a public "
         "archive, and recorded here with the exact window they cover.\n"
     )
-    L.append(
+    limits.append(
         "**It does not establish purpose, and it does not establish "
         "occupancy.** No ADS-B record anywhere places any person aboard any "
         "aircraft. An aircraft near an event is an airframe near an event.\n"
     )
     if tail in KIRK:
-        L.append(
+        limits.append(
             "**And for this aircraft, proximity is the expected thing.** This is "
             "a Kirk- or TPUSA-associated airframe. An aircraft that carries the "
             "man showing up where the man is is not surveillance — this row is a "
             "check that the method works, not evidence of anything.\n"
         )
     elif tail in FOREIGN:
-        L.append(
+        limits.append(
             "**Read it against the denominator.** This aircraft is observed on a "
             "small number of days in total, so one contact is an anecdote rather "
             "than a rate. The full per-aircraft base rates are on "
@@ -391,7 +601,7 @@ def build_incident_page(group, siblings, same_field):
         for s in siblings:
             n2, w2 = pf.place(s["airport"])
             L.append(
-                f"| [{s['date']}]({incident_url(s['tail'], s['date'], s['airport'])}) "
+                f"| {incident_link(s['tail'], s['date'], s['airport'])} "
                 f"| {airport_link(s['airport'])} | {pf.esc(w2)} "
                 f"| {pf.esc(s['event_city'])}, {pf.esc(s['event_state'])} "
                 f"| {pf.when_label(s['offset'])} |"
@@ -404,19 +614,27 @@ def build_incident_page(group, siblings, same_field):
         L.append("|---|---|---|---|")
         for s in same_field:
             L.append(
-                f"| [{s['date']}]({incident_url(s['tail'], s['date'], s['airport'])}) "
+                f"| {incident_link(s['tail'], s['date'], s['airport'])} "
                 f"| {tail_link(s['tail'])} | {pf.esc(TAIL_KIND.get(s['tail'],'—'))} "
                 f"| {pf.when_label(s['offset'])} |"
             )
         L.append("")
 
+    L.extend(limits)
+
     L.append("## Related\n")
     L.append(f"* [{tail} — the aircraft's full record]({TAIL_PAGE.get(tail, '/Planes/overview')})")
-    L.append(f"* [{code} — {name}]({airport_url(code)})")
+    L.append(f"* [{code} — {name} — every recovered visit and leg at this field]"
+             f"({airport_url(code)})")
     u = pf.page_url(r["event_page"])
     if u:
         L.append(f"* [The event this is measured against]({u})")
+    for url, label in pf.following_location_pages().get(code, []):
+        L.append(f"* [The follow log for this location: {label}]({url}) — every "
+                 f"claimed pairing at this field, with its counterargument")
+    L.append("* [Planes that followed Charlie and Erika](/Planes/following/overview)")
     L.append("* [Every interesting date, all aircraft](/Planes/Incidents/overview)")
+    L.append("* [Airports in this investigation](/Planes/Airports/overview)")
     L.append("* [Investigating Deleted Flights](/Planes/investigating_deleted_flights)\n")
     return "\n".join(L)
 
@@ -578,6 +796,19 @@ def main():
         if r["airport"]:
             codes.add(r["airport"])
 
+    # ONE PAGE PER (tail, UTC date, field).  Several ground segments on the
+    # same day at the same field are segments of one contact, not separate
+    # contacts, and must not collide on a filename.
+    groups = defaultdict(list)
+    for r in incidents:
+        groups[(r["tail"], r["date"], r["airport"])].append(r)
+
+    # Both link gates are primed BEFORE anything is written, so a page written
+    # early in the run can still link to a page written later in the same run.
+    # Nothing is added here that this run does not go on to create.
+    INCIDENT_KEYS.update(incident_key(*k) for k in groups)
+    pf.known_airports().update(codes)
+
     oa = pf.ourairports()
     written = 0
     index_rows = []
@@ -589,13 +820,6 @@ def main():
         index_rows.append((c, name, where, len(vs), len(ls), tails))
         page = build_airport_page(c, vs, ls, prox.get(c, []), oa.get(c))
         written += write(os.path.join(AIRPORTS_DIR, f"{c}.mdx"), page)
-
-    # ONE PAGE PER (tail, UTC date, field).  Several ground segments on the
-    # same day at the same field are segments of one contact, not separate
-    # contacts, and must not collide on a filename.
-    groups = defaultdict(list)
-    for r in incidents:
-        groups[(r["tail"], r["date"], r["airport"])].append(r)
 
     by_tail = defaultdict(list)
     by_field_event = defaultdict(list)

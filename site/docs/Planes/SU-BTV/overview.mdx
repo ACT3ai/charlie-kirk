@@ -34,6 +34,47 @@ borderRadius:'4px', textDecoration:'none', fontSize:'0.9rem'}}>← Planes</a>
 
 Be honest about the sourcing: **standalone reporting on SU-BTV specifically is thin.** It is rarely discussed on its own; its significance is almost entirely as a member of the fleet pattern. The bulk of the analysis — the timeline, the [TPUSA](/TPUSA/overview)-overlap claims, the maintenance counterpoints — lives on the hub page, **Israel/Egyptian Plane Armada**. This page collects only what public sources say about SU-BTV by name and frames every claim as an open, unverified allegation.
 
+{/* CK_FLIGHT_RECORD:START */}
+
+## Where this aircraft actually went, and when
+
+**9 flight legs recovered, 2023-09-26 to 2025-10-05, touching 6 airports in 4 countries. 1 of the 9 are continuously observed end to end.**
+
+**Read the last column before you read anything else.** A leg marked *gap* means the archives saw this aircraft at one field and then, some number of days later, at another. It is not a claim that the aircraft flew directly between them, and intermediate stops are **not** ruled out. A leg marked *direct* is one the traces actually follow from wheels-up to wheels-down.
+
+### Every airport this aircraft was on the ground at
+
+| Airport | Name | Where | Ground visits | First seen | Last seen |
+|---|---|---|---:|---|---|
+| [**KILG**](/Planes/Airports/KILG) | Wilmington Airport / New Castle Airport | Wilmington, DE | 9 | 2023-02-13 | 2025-10-12 |
+| [**LFPB**](/Planes/Airports/LFPB) | Paris-Le Bourget Airport | Le Bourget, France | 3 | 2025-07-30 | 2025-10-05 |
+| [**EGLF**](/Planes/Airports/EGLF) | Farnborough Airport | Farnborough, Hampshire | 2 | 2023-10-22 | 2023-10-24 |
+| [**HEAR**](/Planes/Airports/HEAR) | El Arish International Airport | El Arish, Egypt | 1 | 2025-04-08 | 2025-04-08 |
+| [**HEGN**](/Planes/Airports/HEGN) | Hurghada International Airport | Hurghada, Egypt | 1 | 2024-05-22 | 2024-05-22 |
+| [**HETR**](/Planes/Airports/HETR) | At Tur Airport | At Tur, Egypt | 1 | 2024-05-22 | 2024-05-22 |
+
+### Every recovered flight leg
+
+| Leg date (UTC) | From | To | Left after (UTC) | Arrived by (UTC) | How well observed |
+|---|---|---|---|---|---|
+| 2023-09-26 | [**KILG**](/Planes/Airports/KILG) Wilmington, DE | [**EGLF**](/Planes/Airports/EGLF) Farnborough, Hampshire | 11:52 | 2023-10-22 07:11 | **gap — unobserved 25 days** |
+| 2023-10-24 | [**EGLF**](/Planes/Airports/EGLF) Farnborough, Hampshire | [**HEGN**](/Planes/Airports/HEGN) Hurghada, Egypt | 13:32 | 2024-05-22 06:32 | **gap — unobserved 210 days** |
+| 2024-05-22 | [**HEGN**](/Planes/Airports/HEGN) Hurghada, Egypt | [**HETR**](/Planes/Airports/HETR) At Tur, Egypt | 06:32 | 08:14 | **direct** — continuous |
+| 2024-05-22 | [**HETR**](/Planes/Airports/HETR) At Tur, Egypt | [**KILG**](/Planes/Airports/KILG) Wilmington, DE | 08:14 | 2024-09-28 16:22 | **gap — unobserved 128 days** |
+| 2025-03-24 | [**KILG**](/Planes/Airports/KILG) Wilmington, DE | [**HEAR**](/Planes/Airports/HEAR) El Arish, Egypt | 11:40 | 2025-04-08 10:39 | **gap — unobserved 14 days** |
+| 2025-04-08 | [**HEAR**](/Planes/Airports/HEAR) El Arish, Egypt | [**LFPB**](/Planes/Airports/LFPB) Le Bourget, France | 10:39 | 2025-07-30 08:57 | **gap — unobserved 112 days** |
+| 2025-07-30 | [**LFPB**](/Planes/Airports/LFPB) Le Bourget, France | [**KILG**](/Planes/Airports/KILG) Wilmington, DE | 08:59 | 2025-08-06 11:55 | **gap — unobserved 6 days** |
+| 2025-08-06 | [**KILG**](/Planes/Airports/KILG) Wilmington, DE | [**LFPB**](/Planes/Airports/LFPB) Le Bourget, France | 11:55 | 2025-10-04 09:47 | **gap — unobserved 58 days** |
+| 2025-10-05 | [**LFPB**](/Planes/Airports/LFPB) Le Bourget, France | [**KILG**](/Planes/Airports/KILG) Wilmington, DE | 06:54 | 2025-10-11 15:09 | **gap — unobserved 5 days** |
+
+Every airport code above opens that field's own page — every recovered ground visit and flight leg there, by every aircraft this investigation tracks. See also [every airport in this investigation](/Planes/Airports/overview).
+
+*Times are UTC as the archives recorded them — the last on-ground position before departure and the first on-ground position after arrival — not filed or scheduled times. Built by `build_flight_record.py`; see [Investigating Deleted Flights](/Planes/investigating_deleted_flights) for how much of the record is missing and why.*
+
+{/* CK_FLIGHT_RECORD:END */}
+
+---
+
 ## Aircraft identification
 
 * **Tail number:** SU-BTV
@@ -547,44 +588,6 @@ Not every claimed SU-BTV flight could be checked against a primary ADS-B trace. 
 
 ---
 
-{/* CK_FLIGHT_RECORD:START */}
-
-## Where this aircraft actually went, and when
-
-**9 flight legs recovered, 2023-09-26 to 2025-10-05, touching 6 airports in 4 countries. 1 of the 9 are continuously observed end to end.**
-
-**Read the last column before you read anything else.** A leg marked *gap* means the archives saw this aircraft at one field and then, some number of days later, at another. It is not a claim that the aircraft flew directly between them, and intermediate stops are **not** ruled out. A leg marked *direct* is one the traces actually follow from wheels-up to wheels-down.
-
-### Every airport this aircraft was on the ground at
-
-| Airport | Name | Where | Ground visits | First seen | Last seen |
-|---|---|---|---:|---|---|
-| [**KILG**](/Planes/Airports/KILG) | Wilmington Airport / New Castle Airport | Wilmington, DE | 9 | 2023-02-13 | 2025-10-12 |
-| [**LFPB**](/Planes/Airports/LFPB) | Paris-Le Bourget Airport | Le Bourget, France | 3 | 2025-07-30 | 2025-10-05 |
-| [**EGLF**](/Planes/Airports/EGLF) | Farnborough Airport | Farnborough, Hampshire | 2 | 2023-10-22 | 2023-10-24 |
-| [**HEAR**](/Planes/Airports/HEAR) | El Arish International Airport | El Arish, Egypt | 1 | 2025-04-08 | 2025-04-08 |
-| [**HEGN**](/Planes/Airports/HEGN) | Hurghada International Airport | Hurghada, Egypt | 1 | 2024-05-22 | 2024-05-22 |
-| [**HETR**](/Planes/Airports/HETR) | At Tur Airport | At Tur, Egypt | 1 | 2024-05-22 | 2024-05-22 |
-
-### Every recovered flight leg
-
-| Leg date (UTC) | From | To | Left after (UTC) | Arrived by (UTC) | How well observed |
-|---|---|---|---|---|---|
-| 2023-09-26 | [**KILG**](/Planes/Airports/KILG) Wilmington, DE | [**EGLF**](/Planes/Airports/EGLF) Farnborough, Hampshire | 11:52 | 2023-10-22 07:11 | **gap — unobserved 25 days** |
-| 2023-10-24 | [**EGLF**](/Planes/Airports/EGLF) Farnborough, Hampshire | [**HEGN**](/Planes/Airports/HEGN) Hurghada, Egypt | 13:32 | 2024-05-22 06:32 | **gap — unobserved 210 days** |
-| 2024-05-22 | [**HEGN**](/Planes/Airports/HEGN) Hurghada, Egypt | [**HETR**](/Planes/Airports/HETR) At Tur, Egypt | 06:32 | 08:14 | **direct** — continuous |
-| 2024-05-22 | [**HETR**](/Planes/Airports/HETR) At Tur, Egypt | [**KILG**](/Planes/Airports/KILG) Wilmington, DE | 08:14 | 2024-09-28 16:22 | **gap — unobserved 128 days** |
-| 2025-03-24 | [**KILG**](/Planes/Airports/KILG) Wilmington, DE | [**HEAR**](/Planes/Airports/HEAR) El Arish, Egypt | 11:40 | 2025-04-08 10:39 | **gap — unobserved 14 days** |
-| 2025-04-08 | [**HEAR**](/Planes/Airports/HEAR) El Arish, Egypt | [**LFPB**](/Planes/Airports/LFPB) Le Bourget, France | 10:39 | 2025-07-30 08:57 | **gap — unobserved 112 days** |
-| 2025-07-30 | [**LFPB**](/Planes/Airports/LFPB) Le Bourget, France | [**KILG**](/Planes/Airports/KILG) Wilmington, DE | 08:59 | 2025-08-06 11:55 | **gap — unobserved 6 days** |
-| 2025-08-06 | [**KILG**](/Planes/Airports/KILG) Wilmington, DE | [**LFPB**](/Planes/Airports/LFPB) Le Bourget, France | 11:55 | 2025-10-04 09:47 | **gap — unobserved 58 days** |
-| 2025-10-05 | [**LFPB**](/Planes/Airports/LFPB) Le Bourget, France | [**KILG**](/Planes/Airports/KILG) Wilmington, DE | 06:54 | 2025-10-11 15:09 | **gap — unobserved 5 days** |
-
-Every airport code above opens that field's own page — every recovered ground visit and flight leg there, by every aircraft this investigation tracks. See also [every airport in this investigation](/Planes/Airports/overview).
-
-*Times are UTC as the archives recorded them — the last on-ground position before departure and the first on-ground position after arrival — not filed or scheduled times. Built by `build_flight_record.py`; see [Investigating Deleted Flights](/Planes/investigating_deleted_flights) for how much of the record is missing and why.*
-
-{/* CK_FLIGHT_RECORD:END */}
 
 
 ---

@@ -32,6 +32,47 @@ borderRadius:'4px', textDecoration:'none', fontSize:'0.9rem'}}>← Planes</a>
 
 **SU-BGM** is an Egyptian-registered **Gulfstream IV** that independent open-source researchers count as the fifth aircraft in what they call the **"Israel/Egyptian Plane Armada"** — a group of Israel/Egyptian government Falcons and Gulfstreams ([SU-BTT](/Planes/SU-BTT/overview), [SU-BND](/Planes/SU-BND/overview), [SU-BTU](/Planes/SU-BTU/overview), [SU-BTV](/Planes/SU-BTV/overview), and SU-BGM) that public flight logs show routing through Provo, Utah during 2025. Standalone reporting on this specific tail is thin: SU-BGM has drawn far less individual attention than the lead jets SU-BTT ("the yellow plane") and SU-BND ("the blue plane"). Its significance in the case is almost entirely as a *member of the fleet pattern*, not as a separately documented aircraft. The full analysis of the armada theory lives on the hub page — see **Israel/Egyptian Plane Armada** — and everything below should be read as one tail within that larger, still-unverified picture.
 
+{/* CK_FLIGHT_RECORD:START */}
+
+## Where this aircraft actually went, and when
+
+**8 flight legs recovered, 2023-03-13 to 2025-04-16, touching 7 airports in 6 countries. 1 of the 8 are continuously observed end to end.**
+
+**Read the last column before you read anything else.** A leg marked *gap* means the archives saw this aircraft at one field and then, some number of days later, at another. It is not a claim that the aircraft flew directly between them, and intermediate stops are **not** ruled out. A leg marked *direct* is one the traces actually follow from wheels-up to wheels-down.
+
+### Every airport this aircraft was on the ground at
+
+| Airport | Name | Where | Ground visits | First seen | Last seen |
+|---|---|---|---:|---|---|
+| [**HEAZ**](/Planes/Airports/HEAZ) | Almaza Air Force Base | El Nozha, Egypt | 3 | 2023-08-01 | 2025-10-22 |
+| [**KPVU**](/Planes/Airports/KPVU) | Provo Municipal Airport | Provo, UT | 3 | 2025-04-10 | 2025-04-16 |
+| [**EDDB**](/Planes/Airports/EDDB) | Berlin Brandenburg Airport | Berlin, Germany | 1 | 2024-06-05 | 2024-06-05 |
+| [**HE45**](/Planes/Airports/HE45) | Ras Sedr Airport | Sudr Cape, Egypt | 1 | 2023-10-25 | 2023-10-25 |
+| [**LBSF**](/Planes/Airports/LBSF) | Sofia Airport | Sofia, Bulgaria | 1 | 2023-12-19 | 2023-12-19 |
+| [**LIRA**](/Planes/Airports/LIRA) | Ciampino–G. B. Pastine International Airport | Rome, Italy | 1 | 2023-03-13 | 2023-03-13 |
+| [**LRBS**](/Planes/Airports/LRBS) | Bucharest Băneasa Aurel Vlaicu International Airport | Bucharest, Romania | 1 | 2024-06-03 | 2024-06-03 |
+
+### Every recovered flight leg
+
+| Leg date (UTC) | From | To | Left after (UTC) | Arrived by (UTC) | How well observed |
+|---|---|---|---|---|---|
+| 2023-03-13 | [**LIRA**](/Planes/Airports/LIRA) Rome, Italy | [**HEAZ**](/Planes/Airports/HEAZ) El Nozha, Egypt | 10:59 | 2023-08-01 06:05 | **gap — unobserved 140 days** |
+| 2023-08-01 | [**HEAZ**](/Planes/Airports/HEAZ) El Nozha, Egypt | [**HE45**](/Planes/Airports/HE45) Sudr Cape, Egypt | 06:06 | 2023-10-25 15:34 | **gap — unobserved 84 days** |
+| 2023-10-25 | [**HE45**](/Planes/Airports/HE45) Sudr Cape, Egypt | [**LBSF**](/Planes/Airports/LBSF) Sofia, Bulgaria | 15:34 | 2023-12-19 10:59 | **gap — unobserved 54 days** |
+| 2023-12-19 | [**LBSF**](/Planes/Airports/LBSF) Sofia, Bulgaria | [**LRBS**](/Planes/Airports/LRBS) Bucharest, Romania | 11:04 | 2024-06-03 07:29 | **gap — unobserved 166 days** |
+| 2024-06-03 | [**LRBS**](/Planes/Airports/LRBS) Bucharest, Romania | [**HEAZ**](/Planes/Airports/HEAZ) El Nozha, Egypt | 07:30 | 2024-06-05 04:48 | **gap — unobserved 1 day** |
+| 2024-06-05 | [**HEAZ**](/Planes/Airports/HEAZ) El Nozha, Egypt | [**EDDB**](/Planes/Airports/EDDB) Berlin, Germany | 04:49 | 08:35 | **direct** — continuous |
+| 2024-06-05 | [**EDDB**](/Planes/Airports/EDDB) Berlin, Germany | [**KPVU**](/Planes/Airports/KPVU) Provo, UT | 08:35 | 2025-04-10 21:13 | **gap — unobserved 308 days** |
+| 2025-04-16 | [**KPVU**](/Planes/Airports/KPVU) Provo, UT | [**HEAZ**](/Planes/Airports/HEAZ) El Nozha, Egypt | 18:14 | 2025-10-22 07:07 | **gap — unobserved 188 days** |
+
+Every airport code above opens that field's own page — every recovered ground visit and flight leg there, by every aircraft this investigation tracks. See also [every airport in this investigation](/Planes/Airports/overview).
+
+*Times are UTC as the archives recorded them — the last on-ground position before departure and the first on-ground position after arrival — not filed or scheduled times. Built by `build_flight_record.py`; see [Investigating Deleted Flights](/Planes/investigating_deleted_flights) for how much of the record is missing and why.*
+
+{/* CK_FLIGHT_RECORD:END */}
+
+---
+
 ## Aircraft identification
 
 * **Tail number:** SU-BGM
@@ -538,44 +579,6 @@ Not every claimed SU-BGM flight could be checked against a primary ADS-B trace. 
 
 ---
 
-{/* CK_FLIGHT_RECORD:START */}
-
-## Where this aircraft actually went, and when
-
-**8 flight legs recovered, 2023-03-13 to 2025-04-16, touching 7 airports in 6 countries. 1 of the 8 are continuously observed end to end.**
-
-**Read the last column before you read anything else.** A leg marked *gap* means the archives saw this aircraft at one field and then, some number of days later, at another. It is not a claim that the aircraft flew directly between them, and intermediate stops are **not** ruled out. A leg marked *direct* is one the traces actually follow from wheels-up to wheels-down.
-
-### Every airport this aircraft was on the ground at
-
-| Airport | Name | Where | Ground visits | First seen | Last seen |
-|---|---|---|---:|---|---|
-| [**HEAZ**](/Planes/Airports/HEAZ) | Almaza Air Force Base | El Nozha, Egypt | 3 | 2023-08-01 | 2025-10-22 |
-| [**KPVU**](/Planes/Airports/KPVU) | Provo Municipal Airport | Provo, UT | 3 | 2025-04-10 | 2025-04-16 |
-| [**EDDB**](/Planes/Airports/EDDB) | Berlin Brandenburg Airport | Berlin, Germany | 1 | 2024-06-05 | 2024-06-05 |
-| [**HE45**](/Planes/Airports/HE45) | Ras Sedr Airport | Sudr Cape, Egypt | 1 | 2023-10-25 | 2023-10-25 |
-| [**LBSF**](/Planes/Airports/LBSF) | Sofia Airport | Sofia, Bulgaria | 1 | 2023-12-19 | 2023-12-19 |
-| [**LIRA**](/Planes/Airports/LIRA) | Ciampino–G. B. Pastine International Airport | Rome, Italy | 1 | 2023-03-13 | 2023-03-13 |
-| [**LRBS**](/Planes/Airports/LRBS) | Bucharest Băneasa Aurel Vlaicu International Airport | Bucharest, Romania | 1 | 2024-06-03 | 2024-06-03 |
-
-### Every recovered flight leg
-
-| Leg date (UTC) | From | To | Left after (UTC) | Arrived by (UTC) | How well observed |
-|---|---|---|---|---|---|
-| 2023-03-13 | [**LIRA**](/Planes/Airports/LIRA) Rome, Italy | [**HEAZ**](/Planes/Airports/HEAZ) El Nozha, Egypt | 10:59 | 2023-08-01 06:05 | **gap — unobserved 140 days** |
-| 2023-08-01 | [**HEAZ**](/Planes/Airports/HEAZ) El Nozha, Egypt | [**HE45**](/Planes/Airports/HE45) Sudr Cape, Egypt | 06:06 | 2023-10-25 15:34 | **gap — unobserved 84 days** |
-| 2023-10-25 | [**HE45**](/Planes/Airports/HE45) Sudr Cape, Egypt | [**LBSF**](/Planes/Airports/LBSF) Sofia, Bulgaria | 15:34 | 2023-12-19 10:59 | **gap — unobserved 54 days** |
-| 2023-12-19 | [**LBSF**](/Planes/Airports/LBSF) Sofia, Bulgaria | [**LRBS**](/Planes/Airports/LRBS) Bucharest, Romania | 11:04 | 2024-06-03 07:29 | **gap — unobserved 166 days** |
-| 2024-06-03 | [**LRBS**](/Planes/Airports/LRBS) Bucharest, Romania | [**HEAZ**](/Planes/Airports/HEAZ) El Nozha, Egypt | 07:30 | 2024-06-05 04:48 | **gap — unobserved 1 day** |
-| 2024-06-05 | [**HEAZ**](/Planes/Airports/HEAZ) El Nozha, Egypt | [**EDDB**](/Planes/Airports/EDDB) Berlin, Germany | 04:49 | 08:35 | **direct** — continuous |
-| 2024-06-05 | [**EDDB**](/Planes/Airports/EDDB) Berlin, Germany | [**KPVU**](/Planes/Airports/KPVU) Provo, UT | 08:35 | 2025-04-10 21:13 | **gap — unobserved 308 days** |
-| 2025-04-16 | [**KPVU**](/Planes/Airports/KPVU) Provo, UT | [**HEAZ**](/Planes/Airports/HEAZ) El Nozha, Egypt | 18:14 | 2025-10-22 07:07 | **gap — unobserved 188 days** |
-
-Every airport code above opens that field's own page — every recovered ground visit and flight leg there, by every aircraft this investigation tracks. See also [every airport in this investigation](/Planes/Airports/overview).
-
-*Times are UTC as the archives recorded them — the last on-ground position before departure and the first on-ground position after arrival — not filed or scheduled times. Built by `build_flight_record.py`; see [Investigating Deleted Flights](/Planes/investigating_deleted_flights) for how much of the record is missing and why.*
-
-{/* CK_FLIGHT_RECORD:END */}
 
 
 ---
