@@ -35,7 +35,6 @@ import glob
 import json
 import os
 import re
-import statistics
 import sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -136,7 +135,11 @@ def runs(marked, date, gap=RUN_GAP_SEC):
             "last": _iso(date, r[-1][0]),
             "n": len(r),
             "min_km": round(min(h[1] for h in r), 2),
-            "median_km": round(statistics.median(h[1] for h in r), 2),
+            # The middle OBSERVED distance, not the average of the two middle
+            # ones: on an even-length window that average is a number no
+            # receiver ever heard. This also keeps the figure identical to the
+            # windows the first run of these graphics published.
+            "median_km": round(sorted(h[1] for h in r)[len(r) // 2], 2),
             "min_alt_ft": int(min(alts)) if alts else None,
             "srcs": sorted({h[3] for h in r}),
         })
