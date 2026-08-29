@@ -7,8 +7,16 @@ so that every row in every flight table is a click into the underlying facts
 rather than a dead cell:
 
   /Planes/Airports/<CODE>          one page per airport a case aircraft was
-                                   ever on the ground at, or flew a recovered
-                                   leg into or out of.  289 fields.
+                                   ever on the ground at, flew a recovered leg
+                                   into or out of, OR which is the claimed field
+                                   of an overlap that primary position data
+                                   scored AT_CLAIMED_AIRPORT or
+                                   SAME_METRO_WRONG_FIELD.  That last reason is
+                                   separate and additive: four confirmed rows
+                                   sit on aircraft that were AIRBORNE over the
+                                   field, so a ground-visit-only rule left their
+                                   field with no page and every table cell
+                                   naming it dead.
 
   /Planes/Incidents/<TAIL>-<DATE>-<FIELD>
                                    one page per ground contact inside 50 miles
@@ -35,6 +43,12 @@ AIRPORTS_DIR = os.path.join(pf.PLANES, "Airports")
 INCIDENTS_DIR = os.path.join(pf.PLANES, "Incidents")
 
 CONTROL = {"CONTROL-LUFTHANSA", "CONTROL-RYANAIR"}
+
+# The overlap verdicts that mean primary position data PUT THE AIRCRAFT THERE.
+# A field carrying one of these earns a page even with no recovered ground
+# visit — an arrival or a departure is an airborne fix, not a parked aircraft,
+# and the old ground-visit-only rule silently dropped four confirmed rows.
+CONFIRMED_VERDICTS = {"AT_CLAIMED_AIRPORT", "SAME_METRO_WRONG_FIELD"}
 FOREIGN = {"SU-BTT", "SU-BND", "SU-BTU", "SU-BTV", "SU-BGM", "T7-ELL"}
 KIRK = {"N582MM", "N560TW", "N872RA", "N102DZ", "N888KG", "N40JD"}
 
@@ -138,6 +152,10 @@ def when_phrase(off):
     return f"**{abs(off)} days {'before' if off < 0 else 'after'}**"
 
 
+def plural(n, one, many=None):
+    return f"{n} {one if n == 1 else (many or one + 's')}"
+
+
 def miles_cell(v):
     try:
         return f"{float(v):.1f}"
@@ -198,16 +216,22 @@ def fm(title, sidebar, desc, keywords):
 # airport pages
 # --------------------------------------------------------------------------
 
-def build_airport_page(code, visits, legs, prox, oa):
+def build_airport_page(code, visits, legs, prox, oa, overlaps=()):
     name, where = pf.place(code)
     tails = sorted({v["tail"] for v in visits} | {l["tail"] for l in legs})
     case_tails = [t for t in tails if t not in CONTROL]
     foreign_here = [t for t in tails if t in FOREIGN]
 
     title = f"{code} — {name}"
-    desc = (f"Every recovered ADS-B ground visit and flight leg at {name} "
-            f"({code}), {where}, by aircraft tracked in the Charlie Kirk "
-            f"investigation.")
+    if visits or legs:
+        desc = (f"Every recovered ADS-B ground visit and flight leg at {name} "
+                f"({code}), {where}, by aircraft tracked in the Charlie Kirk "
+                f"investigation.")
+    else:
+        desc = (f"{name} ({code}), {where} — no recovered ADS-B ground visit by "
+                f"any aircraft tracked in the Charlie Kirk investigation, and "
+                f"the claimed overlaps at this field that primary position data "
+                f"confirms from the air.")
     L = [fm(title, code, desc,
             [code, name, where, "ADS-B", "flight records", "Charlie Kirk"])]
 
@@ -218,13 +242,35 @@ def build_airport_page(code, visits, legs, prox, oa):
     # event, and the single most striking visit — before any field identity.
     # ------------------------------------------------------------------
     adj = event_adjacent(visits)
-    L.append(
-        f"**{len(case_tails)} aircraft** this investigation tracks were recorded "
-        f"on the ground at **{pf.esc(name)}**, {where}, across **{len(visits)} "
-        f"recovered ground visits**. **{len(adj)} of those visits** fall on the "
-        f"day of, the day before, or the day after a sourced Charlie Kirk, Erika "
-        f"Kirk, or TPUSA event.\n"
-    )
+    if visits:
+        L.append(
+            f"**{plural(len(case_tails), 'aircraft', 'aircraft')}** this "
+            f"investigation tracks {'was' if len(case_tails) == 1 else 'were'} "
+            f"recorded on the ground at **{pf.esc(name)}**, {where}, across "
+            f"**{plural(len(visits), 'recovered ground visit')}**."
+            + (f" **{len(adj)} of those visits** fall on the day of, the day "
+               f"before, or the day after a sourced Charlie Kirk, Erika Kirk, "
+               f"or TPUSA event.\n" if adj else "\n")
+        )
+    elif prox:
+        # The blind geographic sweep found a ground contact the per-tail pull
+        # never held.  Saying "no ground visit" flat would be wrong here.
+        L.append(
+            "**The per-tail archive pull holds no ground visit at this field.** "
+            "The blind geographic sweep — which was never given a tail number — "
+            f"recorded **{plural(len(prox), 'ground contact')}** here, near a "
+            f"sourced Charlie Kirk, Erika Kirk, or TPUSA event"
+            + (f", and **{plural(len(legs), 'recovered flight leg')}** start or "
+               f"end here.\n" if legs else ".\n")
+        )
+    else:
+        L.append(
+            "**No aircraft this investigation tracks has a recovered ground "
+            "visit at this field**; what follows are the airborne fixes that "
+            "put a tracked aircraft in this airspace"
+            + (f", and the **{plural(len(legs), 'recovered flight leg')}** that "
+               f"start or end here.\n" if legs else ".\n")
+        )
 
     if adj:
         hv, hoff = adj[0]
@@ -260,7 +306,7 @@ def build_airport_page(code, visits, legs, prox, oa):
             f"**{pf.esc(hv.get('nearest_event_who') or '—')}** event at "
             f"{ev_txt}{dist}.\n"
         )
-    else:
+    elif visits:
         L.append(
             "**No recovered ground visit at this field falls inside the window "
             "of a sourced Charlie Kirk, Erika Kirk, or TPUSA event.** That is a "
@@ -268,6 +314,9 @@ def build_airport_page(code, visits, legs, prox, oa):
             "coverage, not a statement that nothing happened here.\n"
         )
 
+    # Claimed overlaps at this field that primary position data confirms.  This
+    # is the second reason a field has a page at all, and on a field with no
+    # recovered ground visit it is the whole of the case record.
     if foreign_here:
         L.append(f"**Foreign-fleet aircraft recorded on the ground here: "
                  f"{', '.join(tail_link(t) for t in foreign_here)}.**\n")
@@ -306,6 +355,46 @@ def build_airport_page(code, visits, legs, prox, oa):
             "Where the same aircraft has two rows on one date, those are two "
             "separate runs of on-ground positions with a flight between them — "
             "not one long wait on the ramp.\n"
+        )
+
+    if overlaps:
+        L.append("## Claimed overlaps at this field that primary data confirms\n")
+        L.append(
+            "Rows from the published overlap sheet whose claimed field this "
+            "investigation's recovered ADS-B positions **agree with**. A "
+            "closest approach measured with the aircraft airborne is an "
+            "arrival, a departure or a low pass over the field — it is not a "
+            "parked aircraft, and the table says which.\n"
+        )
+        L.append("| Date | Claimed aircraft | Verdict | Closest recovered "
+                 "approach | On the ground? | Whose event | The claim |")
+        L.append("|---|---|---|---:|---|---|---|")
+        for r in sorted(overlaps, key=lambda x: (x.get("date") or "",
+                                                 x.get("overlap_id") or "")):
+            km = (r.get("adsb_closest_approach_km") or "").strip()
+            try:
+                km = f"{float(km):.2f} km"
+            except (TypeError, ValueError):
+                km = "—"
+            gp = (r.get("adsb_ground_position") or "").strip()
+            gp = {"yes": "**on the ground**", "no": "no — airborne fix"}.get(gp, "—")
+            u = pf.page_url(r.get("overlap_page"))
+            oid = pf.esc(r.get("overlap_id") or "")
+            claim = f"[{oid}]({u})" if u else oid
+            ft = (r.get("foreign_tail") or "").strip()
+            L.append(
+                f"| {pf.esc(r.get('date') or '—')} "
+                f"| {tail_link(ft) if ft else '—'} "
+                f"| {pf.esc(r.get('adsb_verified_verdict') or '—')} "
+                f"| {km} | {gp} | {pf.esc(r.get('subject') or '—')} | {claim} |"
+            )
+        L.append("")
+        L.append(
+            "**A confirmed field is not a confirmed pattern, and it places "
+            "nobody aboard.** The verdict says the recovered positions agree "
+            "with the field the claim names. It says nothing about why the "
+            "aircraft was there, and nothing about who was on it. Each row's "
+            "own page carries its counterargument in full.\n"
         )
 
     # ground visits
@@ -388,9 +477,15 @@ def build_airport_page(code, visits, legs, prox, oa):
     # The field's own identity, below the findings rather than above them.
     # ------------------------------------------------------------------
     L.append("## The field\n")
-    L.append(f"**{where}.** This page is the complete recovered record for this "
-             f"field: every ground visit and every flight leg by an aircraft "
-             f"this investigation tracks.\n")
+    if visits or legs:
+        L.append(f"**{where}.** This page is the complete recovered record for "
+                 f"this field: every ground visit and every flight leg by an "
+                 f"aircraft this investigation tracks.\n")
+    else:
+        L.append(f"**{where}.** The recovered record for this field holds no "
+                 f"ground visit and no flight leg by any aircraft this "
+                 f"investigation tracks. That is a coverage fact about what the "
+                 f"archives hold, not a finding that nothing landed here.\n")
     L.append("| Field | Value |")
     L.append("|---|---|")
     L.append(f"| ICAO / ident | **{code}** |")
@@ -667,7 +762,9 @@ def build_airport_index(rows):
     L.append("# Airports In This Investigation\n")
     L.append(f"**{len(rows)} fields.** Every airport at which an aircraft this "
              f"investigation tracks was recorded on the ground, or which a "
-             f"recovered flight leg started or ended at.\n")
+             f"recovered flight leg started or ended at, or which is the "
+             f"claimed field of an overlap that primary position data "
+             f"confirms.\n")
     L.append("Control-airliner-only fields are not listed: the two European "
              "control airframes exist to test whether an archive is failing, "
              "and their route networks are not part of the case record.\n")
@@ -676,20 +773,38 @@ def build_airport_index(rows):
         L.append("## Fields the foreign fleet was on the ground at\n")
         L.append("| Airport | Name | Where | Foreign-fleet aircraft | Ground visits |")
         L.append("|---|---|---|---|---:|")
-        for code, name, where, nv, nl, tails in sorted(
+        for code, name, where, nv, nl, tails, otails in sorted(
                 fr, key=lambda x: (-x[3], x[0])):
             L.append(f"| {airport_link(code)} | {pf.esc(name)} | {pf.esc(where)} "
                      f"| {', '.join(tail_link(t) for t in sorted(tails & FOREIGN))} "
                      f"| {nv} |")
         L.append("")
+    ao = [r for r in rows if r[6] and not r[3]]
+    if ao:
+        L.append("## Fields with no recovered ground visit, reached only by an "
+                 "airborne fix\n")
+        L.append("These fields have a page because a claimed overlap at them was "
+                 "**confirmed by primary position data** — but the confirming "
+                 "positions are an arrival, a departure or a low pass, not a "
+                 "parked aircraft. The distinction is on each page.\n")
+        L.append("| Airport | Name | Where | Claimed aircraft |")
+        L.append("|---|---|---|---|")
+        for code, name, where, nv, nl, tails, otails in sorted(ao, key=lambda x: x[0]):
+            L.append(f"| {airport_link(code)} | {pf.esc(name)} | {pf.esc(where)} "
+                     f"| {', '.join(tail_link(t) for t in sorted(otails))} |")
+        L.append("")
     L.append("## Every field\n")
     L.append("| Airport | Name | Where | Ground visits | Legs | Aircraft |")
     L.append("|---|---|---|---:|---:|---|")
-    for code, name, where, nv, nl, tails in sorted(rows, key=lambda x: (-x[3], x[0])):
+    for code, name, where, nv, nl, tails, otails in sorted(
+            rows, key=lambda x: (-x[3], x[0])):
         ts = sorted(t for t in tails if t not in CONTROL)
         shown = ", ".join(tail_link(t) for t in ts[:6])
         if len(ts) > 6:
             shown += f", +{len(ts) - 6} more"
+        if not ts and otails:
+            shown = (", ".join(tail_link(t) for t in sorted(otails))
+                     + " — airborne fixes only")
         L.append(f"| {airport_link(code)} | {pf.esc(name)} | {pf.esc(where)} "
                  f"| {nv} | {nl} | {shown or '—'} |")
     L.append("")
@@ -796,6 +911,24 @@ def main():
         if r["airport"]:
             codes.add(r["airport"])
 
+    # SECOND, SEPARATE REASON A FIELD EARNS A PAGE: it is the claimed field of
+    # an overlap row that primary position data scored AT_CLAIMED_AIRPORT or
+    # SAME_METRO_WRONG_FIELD.  Four such rows sit on aircraft that were AIRBORNE
+    # over the field — an arrival or a departure, not a parked aircraft — so the
+    # ground-visit rule above skipped their field and every table cell naming it
+    # was a dead link.  This does NOT relax the control rule: a field touched
+    # only by a control airliner still gets no page.
+    confirmed = defaultdict(list)
+    for r in pf.read_csv("overlaps.csv", pf.FOLLOWING):
+        c = (r.get("airport_code") or "").strip()
+        # A cell naming several fields at once ("KSTL/KCPS/KSUS") is not an
+        # airport identifier and never becomes a page.
+        if not c or "/" in c:
+            continue
+        if (r.get("adsb_verified_verdict") or "").strip() in CONFIRMED_VERDICTS:
+            confirmed[c].append(r)
+            codes.add(c)
+
     # ONE PAGE PER (tail, UTC date, field).  Several ground segments on the
     # same day at the same field are segments of one contact, not separate
     # contacts, and must not collide on a filename.
@@ -817,8 +950,13 @@ def main():
         ls = [l for l in legs_by_ap.get(c, []) if l["tail"] not in CONTROL]
         name, where = pf.place(c)
         tails = {v["tail"] for v in vs} | {l["tail"] for l in ls}
-        index_rows.append((c, name, where, len(vs), len(ls), tails))
-        page = build_airport_page(c, vs, ls, prox.get(c, []), oa.get(c))
+        ov = confirmed.get(c, [])
+        # Airborne-fix tails are kept SEPARATE from the ground/leg tails: the
+        # index's foreign-fleet section says "on the ground at", and folding an
+        # arrival into it would make that heading false.
+        otails = {(r.get("foreign_tail") or "").strip() for r in ov} - {""} - tails
+        index_rows.append((c, name, where, len(vs), len(ls), tails, otails))
+        page = build_airport_page(c, vs, ls, prox.get(c, []), oa.get(c), ov)
         written += write(os.path.join(AIRPORTS_DIR, f"{c}.mdx"), page)
 
     by_tail = defaultdict(list)

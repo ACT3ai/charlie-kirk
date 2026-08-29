@@ -35,6 +35,27 @@ This page is the odd one out in this directory. **Nobody claims Charlie Kirk, Er
 
 What it is instead: **the single strongest piece of 2026-era corroboration for one specific sub-claim** — that the aircraft at Provo was a state aircraft from the Egyptian presidential fleet, not a chartered business jet. That is a real narrowing, and it is narrower than what the posts around it say.
 
+## What primary position data says about 13 October 2025
+
+**This investigation holds primary ADS-B position data for [SU-BTT](/Planes/SU-BTT/overview) on the exact date of the claimed sighting — and it does not place the aircraft at Sharm el-Sheikh.** It places it airborne over Egypt, that evening, flying away from Sinai.
+
+| | |
+|---|---|
+| Archive | **globe.airplanes.live**, the independent backup network |
+| Trace pulled | `globe_history/2025/10/13/traces/d3/trace_full_0101d3.json`, HTTP 200, 1,465 bytes, retrieved 24 Aug 2026 |
+| Recovered position fixes that day | **11** |
+| Window | **18:17:30 – 18:19:18 UTC** — one minute and 48 seconds of coverage |
+| First fix | 28.9877° N, 33.0263° E, **22,000 ft**, airborne |
+| Last fix | 29.1244° N, 32.7939° E, **21,350 ft**, airborne |
+| Where that is | over the **Gulf of Suez**, tracking **north-west**, roughly **175 km from Sharm el-Sheikh** and closing on the Cairo area |
+| On the ground at HESH? | **No on-ground fix anywhere in the trace** |
+
+**What that is worth, stated exactly.** It corroborates that SU-BTT was **in Egypt and flying on 13 October 2025**, on a north-westerly track away from the Sinai peninsula — which is consistent with having left Sharm el-Sheikh earlier that day, and also consistent with several other itineraries. **It is not an independent confirmation of the tarmac sighting.** One minute and 48 seconds of coverage over a whole day is what a thin volunteer-receiver picture of Egyptian airspace looks like; the rest of the day is simply not held by anyone.
+
+**The sighting itself still rests on a broadcast video frame**, and in this investigation's evidence ranking `broadcast_video_frame` sits below `adsb_public_history`. **There is no page under [/Planes/Airports](/Planes/Airports/overview) for HESH**, because no tracked aircraft has ever been recorded on the ground there.
+
+**Where the fleet *is* recorded on the ground in Egypt.** Six Egyptian fields hold recovered on-ground contacts by these aircraft, and Sharm el-Sheikh is not one of them: [HEAZ — Almaza Air Force Base](/Planes/Airports/HEAZ) (4 visits, [SU-BGM](/Planes/SU-BGM/overview) and [SU-BND](/Planes/SU-BND/overview)), [HEAR — El Arish](/Planes/Airports/HEAR) (3), [HEAL — El Alamein](/Planes/Airports/HEAL), [HEGN — Hurghada](/Planes/Airports/HEGN), [HETR — At Tur](/Planes/Airports/HETR) and [HE45 — Ras Sedr](/Planes/Airports/HE45). **At Tur and Ras Sedr are both in Sinai.** See [Cairo, the home field](../Cairo_HECA_2022-11-13_to_2025-10-12/overview) for what that record does and does not establish.
+
 ## The location
 
 | | |
@@ -165,14 +186,24 @@ marginTop:'0.5rem'}}>
 
 This investigation keeps one page per airport and one page per recorded ground contact, built directly from the recovered ADS-B traces. These are the ones this page touches.
 
+**Airports named on this page:**
+
+* [HEAZ — Almaza Air Force Base](/Planes/Airports/HEAZ), El Nozha, Egypt — 4 recorded ground visits, 2 tracked aircraft
+* [HEAR — El Arish International Airport](/Planes/Airports/HEAR), El Arish, Egypt — 3 recorded ground visits, 2 tracked aircraft
+* [HEAL — El Alamein International Airport](/Planes/Airports/HEAL), El Alamein, Egypt — 1 recorded ground visit, 1 tracked aircraft
+* [HEGN — Hurghada International Airport](/Planes/Airports/HEGN), Hurghada, Egypt — 1 recorded ground visit, 1 tracked aircraft
+* [HETR — At Tur Airport](/Planes/Airports/HETR), At Tur, Egypt — 1 recorded ground visit, 1 tracked aircraft
+
 **Aircraft named on this page:**
 
+* [SU-BGM](/Planes/SU-BGM/overview) — full recovered movement record, every airport and every leg
+* [SU-BND](/Planes/SU-BND/overview) — full recovered movement record, every airport and every leg
 * [SU-BTT](/Planes/SU-BTT/overview) — full recovered movement record, every airport and every leg
 * [SU-BTU](/Planes/SU-BTU/overview) — full recovered movement record, every airport and every leg
 
 **The two indexes:**
 
-* [Every airport in this investigation](/Planes/Airports/overview) — 290 fields, each with its complete recovered ground-visit and flight-leg record
+* [Every airport in this investigation](/Planes/Airports/overview) — 292 fields, each with its complete recovered ground-visit and flight-leg record
 * [Every interesting date, all aircraft](/Planes/Incidents/overview) — 147 ground contacts near a sourced event, across 110 pages
 * [Investigating Deleted Flights](/Planes/investigating_deleted_flights) — how the data was recovered, how much of it we hold, and where it is still missing
 
