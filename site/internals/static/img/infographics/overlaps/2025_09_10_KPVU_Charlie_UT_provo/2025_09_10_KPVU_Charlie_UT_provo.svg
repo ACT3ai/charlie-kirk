@@ -17,6 +17,18 @@
     .sm { font-weight: 600; stroke-width: 1.6px; }
     .xs { font-size: 20px; font-weight: 500; stroke-width: 1.2px; }
   </style>
+  <defs>
+    <!-- VARIANT B. A near-field pass is HATCHED, never solid: the aircraft was
+         heard close to the field but AIRBORNE, and a solid bar would read as a stay. -->
+    <pattern id="passHatch" width="14" height="14" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="14" height="14" fill="#FFFFFF" fill-opacity="0.55"/>
+      <rect width="7" height="14" fill="#9B1B1E"/>
+    </pattern>
+    <pattern id="passHatchK" width="14" height="14" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="14" height="14" fill="#FFFFFF" fill-opacity="0.55"/>
+      <rect width="7" height="14" fill="#FFE21F"/>
+    </pattern>
+  </defs>
   <!-- title, centred across the whole frame -->
   <text class="t lg" font-size="42" x="960" y="60" text-anchor="middle">Following plane overlaps with Charlie Kirk</text>
   <!-- big name block: frame left, never wider than 15% of the frame -->
@@ -45,20 +57,20 @@
   <!-- upper bar: the following / intelligence aircraft -->
   <text class="t sm" font-size="26" x="260" y="862">Following aircraft — SU-BND (Gulfstream G550) · 2 ground contacts</text>
   <rect x="260" y="872" width="1400" height="60" fill="#D9D9D9" fill-opacity="0.5" stroke="#000000" stroke-width="5"/>
-  <rect x="260.0" y="878" width="340.1" height="48" fill="#9B1B1E"><title>10:05 am to 11:34 am (1 hr 29 min), 100 ground points, adsb-lol|airplanes-live</title></rect>
-  <rect x="1086.7" y="878" width="187.2" height="48" fill="#9B1B1E"><title>1:40 pm to 2:29 pm (49 min), 156 ground points, adsb-lol|airplanes-live</title></rect>
+  <rect x="260.0" y="878" width="340.1" height="48" fill="#9B1B1E"><title>10:05 am to 11:34 am (1 hr 29 min) — heard on the ground, 268 positions, adsb-lol|airplanes-live</title></rect>
+  <rect x="1086.7" y="878" width="187.2" height="48" fill="#9B1B1E"><title>1:40 pm to 2:29 pm (49 min) — heard on the ground, 315 positions, adsb-lol|airplanes-live</title></rect>
   <!-- lower bar: the Charlie Kirk aircraft -->
   <text class="t sm" font-size="26" x="260" y="958">Charlie Kirk aircraft — N102DZ (Gulfstream V) · 1 ground contact</text>
   <rect x="260" y="968" width="1400" height="60" fill="#D9D9D9" fill-opacity="0.5" stroke="#000000" stroke-width="5"/>
-  <rect x="1508.4" y="974" width="151.6" height="48" fill="#FFE21F"><title>3:30 pm to 4:10 pm (39 min), 133 ground points, adsb-lol|airplanes-live</title></rect>
+  <rect x="1508.4" y="974" width="151.6" height="48" fill="#FFE21F"><title>3:30 pm to 4:10 pm (39 min) — heard on the ground, 267 positions, adsb-lol|airplanes-live</title></rect>
   <!-- inner labels: the later first-contact and the earlier last-contact -->
   <line x1="1508" y1="872" x2="1508" y2="1038" stroke="#000000" stroke-width="3"/>
   <line x1="1508" y1="1038" x2="1511" y2="1046" stroke="#000000" stroke-width="2"/>
-  <text class="t xs" x="1511" y="1052" text-anchor="middle">first heard 3:30 pm</text>
+  <text class="t xs" x="1511" y="1046" text-anchor="middle">first heard 3:30 pm</text>
   <line x1="1274" y1="872" x2="1274" y2="1038" stroke="#000000" stroke-width="3"/>
   <line x1="1274" y1="1038" x2="1271" y2="1046" stroke="#000000" stroke-width="2"/>
-  <text class="t xs" x="1271" y="1052" text-anchor="middle">last heard 2:29 pm</text>
+  <text class="t xs" x="1271" y="1046" text-anchor="middle">last heard 2:29 pm</text>
   <!-- required furniture: the claim this picture must not be read as, and the source -->
-  <text class="t xs" font-size="22" x="64" y="630">ADS-B ground contacts heard by volunteer receivers. Presence only — this places no person aboard either aircraft.</text>
-  <text class="t xs" font-size="22" x="64" y="662">Source: master_proximity.csv from recovered adsb-lol + airplanes-live traces, as of 2026-08-29</text>
+  <text class="t xs" font-size="22" x="64" y="622">ADS-B ground contacts heard by volunteer receivers. Presence only — this places no person aboard either aircraft.</text>
+  <text class="t xs" font-size="22" x="64" y="662">Source: recovered ADS-B traces, adsb.lol and airplanes.live, both archives agreeing. Ground contacts only. As of 29 August 2026.</text>
 </svg>

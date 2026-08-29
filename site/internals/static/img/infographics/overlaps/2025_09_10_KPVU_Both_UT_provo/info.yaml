@@ -1,0 +1,48 @@
+overlap_id: OWENS-041
+date: 2025-09-10
+person: both
+dir_name: 2025_09_10_KPVU_Both_UT_provo
+evidence_basis: adsb_ground_contact
+airport:
+  code: KPVU
+  name: Provo Municipal Airport
+  city: Provo
+  state: UT
+  state_name: Utah
+  timezone: America/Denver
+  town_population: 115162
+  town_population_source: US Census 2020
+following_plane:
+  tail: SU-BTT
+  type: Dassault Falcon 7X
+  operator: Egyptian / foreign VIP
+  segments:
+    - from: {utc: 2025-09-10T13:07:53Z, source_zone: UTC}
+      to:   {utc: 2025-09-10T13:13:16Z, source_zone: UTC}
+      ground_points: 125
+      sources: adsb-lol|airplanes-live
+kirk_plane:
+  tail: N102DZ
+  type: Gulfstream V
+  operator: Private / Kirk party
+  segments:
+    - from: {utc: 2025-09-10T21:30:43Z, source_zone: UTC}
+      to:   {utc: 2025-09-10T22:10:12Z, source_zone: UTC}
+      ground_points: 267
+      sources: adsb-lol|airplanes-live
+times_status: complete
+as_of: 2026-08-29
+source_line: "Source: recovered ADS-B traces, adsb.lol and airplanes.live, both archives agreeing. Ground contacts only. As of 29 August 2026."
+sources:
+  - site/docs/Planes/following/overlaps.csv
+  - site/docs/Planes/following/airports.csv
+  - site/docs/Planes/SU-BTT/data/recovered/SU-BTT_2025-09-10_adsb-lol_trace_full.json
+  - site/docs/Planes/SU-BTT/data/recovered/SU-BTT_2025-09-10_airplanes-live_trace_full.json
+  - site/docs/Planes/N102DZ/data/recovered/N102DZ_2025-09-10_adsb-lol_trace_full.json
+  - site/docs/Planes/N102DZ/data/recovered/N102DZ_2025-09-10_airplanes-live_trace_full.json
+notes: >-
+  SU-BTT was heard on the ground at Provo for about five minutes in the morning,
+  local time, and N102DZ was first heard on the ground more than eight hours
+  later. Same field, same day, nowhere near the same moment. Median distance from
+  the field: SU-BTT 1.36 km, N102DZ 0.41 km. Nothing here places any person
+  aboard either aircraft.

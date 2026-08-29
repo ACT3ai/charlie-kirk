@@ -20,7 +20,9 @@ WORK_DIR dir is {PLANES_DIR}/info_graphic
 OUT_ROOT dir is {SITE_DIR}/internals/static/img/infographics/overlaps
 
 GENERATOR is file {WORK_DIR}/code/build_overlap_svg.ts
+YAML_BUILDER is file {WORK_DIR}/code/build_info_yaml.py
 TEMPLATE_SVG is file {WORK_DIR}/template.svg
+TEMPLATE_NO_KIRK_SVG is file {WORK_DIR}/template_no_kirk_aircraft.svg
 
 OVERLAPS_CSV is file {FOLLOWING_DIR}/overlaps.csv
 FLIGHTS_CSV is file {FOLLOWING_DIR}/flights.csv
@@ -78,7 +80,10 @@ STAGE 0 - READ BEFORE DOING ANYTHING
 * Read {PLANES_CHARTER}, the whole "Plane Overlap Infographic Template" section
   of {ROOT_CHARTER}, and the "Recovering Deleted / Unavailable Flight Data"
   section of {ROOT_CHARTER}.
-* Read {TEMPLATE_SVG}. Its header comment is the anatomy of the graphic.
+* Read {TEMPLATE_SVG} and {TEMPLATE_NO_KIRK_SVG}. Their header comments are the
+  anatomy of the graphic and of the two declared variants. The first is the
+  two-bar case; the second is the case where there is no Kirk-side aircraft at
+  all, which is what almost every Erika Kirk row turns out to be.
 * Read the header comment of {GENERATOR}. It states the three things the
   generator refuses to do. Do not try to work around any of them.
 * Confirm both files exist. If either is missing:
@@ -178,11 +183,13 @@ on the picture is furniture.
       N102DZ is the main one.
     - Look for that tail in {PROXIMITY_CSV} at the same airport in the same
       window.
-    - IF THERE IS NO KIRK-SIDE AIRCRAFT IN THE DATA, THERE IS NO SECOND BAR AND
-      THERE IS NO GRAPHIC. Skip the row with skip_reason "no Kirk-side aircraft
-      ground contact in the recovered data". Do NOT substitute the person's
-      claimed presence for an aircraft. The lower bar is an AIRCRAFT, and a
-      claimed itinerary is not one.
+    - IF THERE IS NO KIRK-SIDE AIRCRAFT IN THE DATA, THERE IS STILL NO SECOND
+      BAR. Do NOT substitute the person's claimed presence for an aircraft. The
+      lower bar is an AIRCRAFT, and a claimed itinerary is not one.
+      Since 2026-08-29 there is one declared way to draw that row anyway, and it
+      draws the ABSENCE rather than papering over it - VARIANT A below. Use it
+      only when the following aircraft has a real measured window; with no bar
+      on either row there is nothing to draw and the row is skipped as before.
 
 * TIME ZONES. Write every instant into the yaml as an ABSOLUTE UTC INSTANT
   ending in Z, exactly as the source recorded it, and let the generator convert.
@@ -248,6 +255,83 @@ on the picture is furniture.
 * Every number in that file is traceable to a file in this repo. The sources
   list is not optional and it is not a formality - it is the reason a reader can
   check us.
+
+====================================================================
+STAGE 3B - THE TWO DECLARED VARIANTS
+====================================================================
+
+Added 2026-08-29, after a full run over the twelve field-years where Erika Kirk
+is claimed at one field twice in one calendar year produced this result:
+
+  Of 56 claimed overlaps, exactly ONE DATE has both a following aircraft and a
+  Kirk-party aircraft heard on the ground at the claimed field - 10 September
+  2025 at Provo, the day of the assassination - and it is a Charlie / Both row.
+  NO ERIKA-CLAIMED OVERLAP ANYWHERE IN THE SET HAS A KIRK-SIDE AIRCRAFT.
+
+That is a real finding and it is the most important output of that run. Drawing
+nothing at all would have buried it. These two variants exist so it can be drawn
+honestly. BOTH MUST BE ASKED FOR IN info.yaml. Neither is ever inferred, and
+neither loosens the rule that a bar is only drawn from a measured time.
+
+VARIANT A - no Kirk-side aircraft exists
+
+    kirk_plane:
+      no_aircraft_in_record: true
+      claim: "Erika Kirk claimed present at this field on this date ..."
+      queried_tails: N102DZ, N582MM, N872RA, N40JD, N560TW, N888KG
+
+  The lower bar becomes a HOLLOW DASHED BAND across the whole axis, labelled
+  "NO AIRCRAFT IN THE RECORD", with the claim and the queried tails printed
+  inside it. Rules:
+
+  * NAME EVERY TAIL THAT WAS ASKED FOR, not only the ones an archive held.
+    "we queried one" and "we queried six and five came back empty" are different
+    facts and only the second one is true.
+  * ONLY N102DZ AND N582MM MAY EVER BE THE LOWER BAR. planes.csv puts only
+    N102DZ in "Private / Kirk party"; N582MM is the TPUSA-linked airframe.
+    N888KG is "Private / Transponder anomaly" and lib/fleet.js says of it, in
+    capitals, SEPARATE CLAIM - DO NOT MERGE. N872RA, N40JD and N560TW are
+    "Provo arrival" and donor-linked tails. Drawing any of those as the Kirk bar
+    would silently answer the question the graphic is supposed to ask. Query
+    them, name them in the notes, never promote them to the bar.
+  * no_aircraft_in_record and a segments list are mutually exclusive. The
+    generator refuses a yaml that says both.
+
+VARIANT B - an airborne window near the field
+
+    segments:
+      - from: {utc: 2024-04-19T21:29:50Z, source_zone: UTC}
+        to:   {utc: 2024-04-19T21:33:34Z, source_zone: UTC}
+        basis: near_field_pass
+        min_km: 0.02
+        min_alt_ft: 4375
+
+  The aircraft was heard WITHIN 15 km OF THE FIELD BUT AIRBORNE. A measured
+  window with real endpoints, so it may be drawn - HATCHED, never solid,
+  counted separately in the bar label, with the lowest altitude heard printed
+  in the label. Rules:
+
+  * A HATCHED BAR IS NOT A LANDING and no page may describe one as an arrival.
+  * A GROUND CONTACT IS NEVER DROPPED FOR BEING SHORT. SU-BTT was on the ground
+    at Wilmington for 23 seconds on 20 April 2023 - the only genuine ground
+    contact in the whole Erika set at that field - and a blanket 60-second floor
+    silently discarded it. The generator widens a too-short bar to a visible
+    minimum and WARNS that it did. That warning is the honest outcome; dropping
+    the evidence is not. The floor applies to PASSES only.
+
+WRITING THE YAML - use {YAML_BUILDER}, do not hand-type it
+
+  python3 {YAML_BUILDER}            write every graphic in its BUILD list
+  python3 {YAML_BUILDER} --check    report, write nothing
+
+  It measures the windows point by point out of the recovered traces and writes
+  the yaml mechanically, so a digit cannot be transposed on the way from the
+  archive to the picture. It also writes {LEDGER_FILE} covering EVERY candidate
+  row, drawn or not, with the three skip reasons kept separate:
+    * neither archive holds a trace for that tail on that date
+    * the archives hold it and it was nowhere near the claimed field
+    * the row names no following tail at all
+  Those are different claims and are never collapsed into one.
 
 ====================================================================
 STAGE 4 - RENDER

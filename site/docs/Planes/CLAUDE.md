@@ -288,10 +288,30 @@ carries it, so the identity is visible without opening anything.
         either is missing the prompt stops rather than writing a replacement.
 
   {PLANES_DIR}/info_graphic/template.svg
-        THE PATTERN. A real rendering, annotated. Its header comment is the
-        anatomy of the graphic, top to bottom. Every STRING in it is
-        illustrative; every POSITION in it is authoritative and mirrors the
+        THE PATTERN, two-bar case. A real rendering, annotated. Its header
+        comment is the anatomy of the graphic, top to bottom. Every STRING in it
+        is illustrative; every POSITION in it is authoritative and mirrors the
         LAYOUT block in the generator. Change one, change the other.
+
+  {PLANES_DIR}/info_graphic/template_no_kirk_aircraft.svg
+        THE PATTERN, NO KIRK-SIDE AIRCRAFT. Added 2026-08-29 and it exists
+        because of a measured result, not a design preference: across the twelve
+        field-years where Erika Kirk is claimed at one field twice in one year,
+        56 claimed overlaps produce exactly ONE date with both a following
+        aircraft and a Kirk-party aircraft on the ground - 10 September 2025 at
+        Provo - and that date is a Charlie / Both row. NO ERIKA-CLAIMED OVERLAP
+        HAS A KIRK-SIDE AIRCRAFT AT ALL. Drawing nothing would have hidden that.
+        This template shows both declared variants: the HOLLOW DASHED Kirk band
+        (absence drawn as absence, with the tails actually queried named inside
+        it) and a HATCHED near-field pass (heard within 15 km of the field while
+        AIRBORNE - a measured window, and never a landing).
+
+  {PLANES_DIR}/info_graphic/code/build_info_yaml.py
+        Writes the info.yaml files by MEASURING the windows out of the recovered
+        traces, so a digit cannot be transposed between the archive and the
+        picture, and writes ledger.csv covering every candidate row - drawn or
+        skipped, with the skip reasons kept distinct.
+            python3 build_info_yaml.py [--check]
 
   {PLANES_DIR}/info_graphic/code/build_overlap_svg.ts
         THE GENERATOR. Reads info.yaml, writes the SVG. Node 22+ runs the .ts

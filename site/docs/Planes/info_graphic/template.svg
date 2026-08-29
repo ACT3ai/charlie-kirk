@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-  TEMPLATE — Plane Overlap infographic. 16:9, viewBox 1920 x 1080.
+  TEMPLATE - Plane Overlap infographic, TWO REAL BARS. 16:9, viewBox 1920x1080.
 
   THIS IS THE PATTERN, NOT A FINISHED GRAPHIC, and it is not published anywhere.
   It is a real rendering (overlap EXTRA-006, KPVU, 10 Sep 2025) kept here so the
@@ -20,8 +20,13 @@
   If a constant changes here, change LAYOUT in the generator, and the other way
   round. The generator is what actually ships; this file exists to be read.
 
+  THIS FILE is the two-bar case: a following aircraft AND a Kirk-party aircraft
+  both heard on the ground at the same field on the same date. Across the twelve
+  qualifying field-years that happens on exactly ONE date, 10 September 2025 at
+  Provo, which is why the other template beside this one exists.
+
   THE ANATOMY, top to bottom
-  --------------------------
+  ==========================
   title            y 60, centred across the WHOLE frame, "Following plane
                    overlaps with {Charlie Kirk | Erika Kirk | Charlie and Erika
                    Kirk}".
@@ -31,34 +36,55 @@
   place block      frame RIGHT, x 1856, high up, under the title. NEVER WIDER
                    THAN 50% OF THE FRAME (960px). Four rows, in this order:
                    airport name, state, city, YEAR. The year is the largest
-                   thing in the block — and it is the ONLY place the year
+                   thing in the block - and it is the ONLY place the year
                    appears, which is why no date around the bars carries one.
   town             label rises out of the town centre on a leader line, left of
                    centre, between the frame centre and the top. Town name and
                    population. Population line is omitted when we do not have a
-                   sourced figure — never guessed.
+                   sourced figure - never guessed.
   centre           DELIBERATELY EMPTY. This is where the generated town/airport
                    scene goes. Nothing is laid over the middle.
-  caption + source two left-aligned lines above the axis. The caption is not
-                   decoration: a trace proves presence, never occupancy.
-  axis             ONE shared time axis drawn twice. x 260 to x 1660. Left edge
-                   = the earlier of the two aircraft's first ground contact.
-                   Right edge = the later of the two last contacts. Date over
+  caption + source left-aligned, above the axis, and they WRAP rather than
+                   shrink. The caption is the sentence that stops the picture
+                   being misread, so it is the last thing allowed to clip or to
+                   drop below a readable size. It grows upward from y 662.
+  axis             ONE shared time axis drawn twice. x 260 to x 1660. Date over
                    time, centred on each edge, leader line straight down.
                    ALL TIMES ARE LOCAL TO THE AIRPORT. Never UTC.
   upper bar        the FOLLOWING / intelligence aircraft. Dark red #9B1B1E.
   lower bar        the CHARLIE / ERIKA / BOTH aircraft. Bright yellow #FFE21F.
                    Both sit in a light-grey 50%-transparent rectangle with a
                    thick black pen edge, and BOTH RECTANGLES SHARE THE SAME LEFT
-                   AND RIGHT EDGES — that is what makes the two comparable.
-  segments         EACH GROUND CONTACT IS ITS OWN FILLED BLOCK. Two blocks in a
-                   day are never merged into one: a gap between them is a
-                   FLIGHT, not a wait. The example below shows SU-BND with two.
+                   AND RIGHT EDGES - that is what makes the two comparable.
+  segments         EACH WINDOW IS ITS OWN BLOCK. Two blocks in a day are never
+                   merged into one: a gap between two GROUND CONTACTS is a
+                   FLIGHT, not a wait.
   inner labels     the 5% band under the lower rectangle, and nothing else goes
-                   there. They mark the two events that are NOT the axis ends:
-                   the later first-contact and the earlier last-contact. Time
+                   there. They mark the events that are NOT the axis ends. Time
                    only inside one day; date and time when the window is longer.
-                   Never a year.
+                   Never a year. Multi-line labels grow DOWNWARD.
+
+  THE TWO DECLARED VARIANTS (added 2026-08-29)
+  ============================================
+  Both must be ASKED FOR in info.yaml. Neither is ever inferred, and neither
+  loosens the rule that a bar is only ever drawn from a measured time.
+
+  A  kirk_plane.no_aircraft_in_record: true
+     There is no Kirk-side AIRFRAME in the data at this field on this date. The
+     lower bar becomes a HOLLOW DASHED BAND across the whole axis, labelled
+     "NO AIRCRAFT IN THE RECORD", with the claim and the list of tails actually
+     queried printed inside it. ABSENCE IS DRAWN AS ABSENCE. It is never solid,
+     never carries a time, and must never be read as the person being there. The
+     claim behind almost every Erika Kirk row is A PERSON IN A CITY, and a
+     claimed itinerary is not an aircraft. See template_no_kirk_aircraft.svg.
+
+  B  a segment with basis: near_field_pass
+     The aircraft was heard WITHIN 15 km OF THE FIELD BUT AIRBORNE - an
+     approach, a departure climb, an overflight. A measured window with real
+     endpoints, so it may be drawn - but it is NOT a ground contact and is never
+     coloured as one. HATCHED, never solid, counted separately in the bar label,
+     with the lowest altitude heard printed in the label rather than inside the
+     bar (white-on-hatch was unreadable). A HATCHED BAR IS NOT A LANDING.
 -->
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img">
   <title>Following plane overlaps with Charlie Kirk — Provo Municipal Airport, Provo, Utah, 2025</title>
@@ -75,6 +101,18 @@
     .sm { font-weight: 600; stroke-width: 1.6px; }
     .xs { font-size: 20px; font-weight: 500; stroke-width: 1.2px; }
   </style>
+  <defs>
+    <!-- VARIANT B. A near-field pass is HATCHED, never solid: the aircraft was
+         heard close to the field but AIRBORNE, and a solid bar would read as a stay. -->
+    <pattern id="passHatch" width="14" height="14" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="14" height="14" fill="#FFFFFF" fill-opacity="0.55"/>
+      <rect width="7" height="14" fill="#9B1B1E"/>
+    </pattern>
+    <pattern id="passHatchK" width="14" height="14" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="14" height="14" fill="#FFFFFF" fill-opacity="0.55"/>
+      <rect width="7" height="14" fill="#FFE21F"/>
+    </pattern>
+  </defs>
   <!-- title, centred across the whole frame -->
   <text class="t lg" font-size="42" x="960" y="60" text-anchor="middle">Following plane overlaps with Charlie Kirk</text>
   <!-- big name block: frame left, never wider than 15% of the frame -->
@@ -103,20 +141,20 @@
   <!-- upper bar: the following / intelligence aircraft -->
   <text class="t sm" font-size="26" x="260" y="862">Following aircraft — SU-BND (Gulfstream G550) · 2 ground contacts</text>
   <rect x="260" y="872" width="1400" height="60" fill="#D9D9D9" fill-opacity="0.5" stroke="#000000" stroke-width="5"/>
-  <rect x="260.0" y="878" width="340.1" height="48" fill="#9B1B1E"><title>10:05 am to 11:34 am (1 hr 29 min), 100 ground points, adsb-lol|airplanes-live</title></rect>
-  <rect x="1086.7" y="878" width="187.2" height="48" fill="#9B1B1E"><title>1:40 pm to 2:29 pm (49 min), 156 ground points, adsb-lol|airplanes-live</title></rect>
+  <rect x="260.0" y="878" width="340.1" height="48" fill="#9B1B1E"><title>10:05 am to 11:34 am (1 hr 29 min) — heard on the ground, 268 positions, adsb-lol|airplanes-live</title></rect>
+  <rect x="1086.7" y="878" width="187.2" height="48" fill="#9B1B1E"><title>1:40 pm to 2:29 pm (49 min) — heard on the ground, 315 positions, adsb-lol|airplanes-live</title></rect>
   <!-- lower bar: the Charlie Kirk aircraft -->
   <text class="t sm" font-size="26" x="260" y="958">Charlie Kirk aircraft — N102DZ (Gulfstream V) · 1 ground contact</text>
   <rect x="260" y="968" width="1400" height="60" fill="#D9D9D9" fill-opacity="0.5" stroke="#000000" stroke-width="5"/>
-  <rect x="1508.4" y="974" width="151.6" height="48" fill="#FFE21F"><title>3:30 pm to 4:10 pm (39 min), 133 ground points, adsb-lol|airplanes-live</title></rect>
+  <rect x="1508.4" y="974" width="151.6" height="48" fill="#FFE21F"><title>3:30 pm to 4:10 pm (39 min) — heard on the ground, 267 positions, adsb-lol|airplanes-live</title></rect>
   <!-- inner labels: the later first-contact and the earlier last-contact -->
   <line x1="1508" y1="872" x2="1508" y2="1038" stroke="#000000" stroke-width="3"/>
   <line x1="1508" y1="1038" x2="1511" y2="1046" stroke="#000000" stroke-width="2"/>
-  <text class="t xs" x="1511" y="1052" text-anchor="middle">first heard 3:30 pm</text>
+  <text class="t xs" x="1511" y="1046" text-anchor="middle">first heard 3:30 pm</text>
   <line x1="1274" y1="872" x2="1274" y2="1038" stroke="#000000" stroke-width="3"/>
   <line x1="1274" y1="1038" x2="1271" y2="1046" stroke="#000000" stroke-width="2"/>
-  <text class="t xs" x="1271" y="1052" text-anchor="middle">last heard 2:29 pm</text>
+  <text class="t xs" x="1271" y="1046" text-anchor="middle">last heard 2:29 pm</text>
   <!-- required furniture: the claim this picture must not be read as, and the source -->
-  <text class="t xs" font-size="22" x="64" y="630">ADS-B ground contacts heard by volunteer receivers. Presence only — this places no person aboard either aircraft.</text>
-  <text class="t xs" font-size="22" x="64" y="662">Source: master_proximity.csv from recovered adsb-lol + airplanes-live traces, as of 2026-08-29</text>
+  <text class="t xs" font-size="22" x="64" y="622">ADS-B ground contacts heard by volunteer receivers. Presence only — this places no person aboard either aircraft.</text>
+  <text class="t xs" font-size="22" x="64" y="662">Source: recovered ADS-B traces, adsb.lol and airplanes.live, both archives agreeing. Ground contacts only. As of 29 August 2026.</text>
 </svg>

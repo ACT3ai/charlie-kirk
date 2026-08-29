@@ -22,6 +22,28 @@
  *      HEARD. Set evidence_basis: published_flight_record only when a real
  *      arrival/departure record exists.
  *
+ * TWO DECLARED VARIANTS, added 2026-08-29. Both exist because the alternative
+ * was drawing nothing at all for the Erika Kirk side of this claim, and silence
+ * is not the same as a null result. Each one has to be ASKED FOR in info.yaml —
+ * neither is ever inferred, and neither loosens rule 1 above.
+ *
+ *   A. kirk_plane.no_aircraft_in_record: true
+ *      There is no Kirk-side AIRFRAME in the data at this field on this date.
+ *      The lower bar becomes a HOLLOW DASHED BAND spanning the whole axis,
+ *      labelled "NO AIRCRAFT IN THE RECORD", with the claim printed inside it.
+ *      It draws the ABSENCE as an absence. It is never a solid bar, it never
+ *      carries a time, and it must never be read as the person being there.
+ *      The claim behind most of these rows is a PERSON IN A CITY, and a claimed
+ *      itinerary is not an aircraft.
+ *
+ *   B. a segment with basis: near_field_pass
+ *      The aircraft was heard WITHIN 15 km OF THE FIELD BUT AIRBORNE — a
+ *      departure climb, an approach, an overflight. That is a MEASURED window
+ *      with real endpoints, so it may be drawn, but it is NOT a ground contact
+ *      and is never coloured as one: it is drawn HATCHED, counted separately in
+ *      the bar label, and the lowest altitude heard is printed on the picture.
+ *      A hatched bar does not mean the aircraft landed.
+ *
  * Usage
  *   node build_overlap_svg.ts <dir-or-info.yaml> [more...]
  *   node build_overlap_svg.ts --all <root-dir>
@@ -109,7 +131,7 @@ const L = {
   footCaptionY: 630,
   footSourceY: 662,
   footSize: 22,
-  footMaxW: 1500,
+  footMaxW: 1920 - 64 - 64,   // real usable width; the old 1500 let long captions clip
 };
 
 const C = {
@@ -132,6 +154,12 @@ type Segment = {
   ground_points?: number;
   sources?: string;
   note?: string;
+  /** ground_contact (default) | near_field_pass — see variant B in the header. */
+  basis?: string;
+  /** near_field_pass only: lowest barometric altitude heard inside the window. */
+  min_alt_ft?: number | null;
+  /** near_field_pass only: closest approach to the field, km. */
+  min_km?: number | null;
 };
 
 type Plane = {
@@ -139,6 +167,12 @@ type Plane = {
   type?: string;
   operator?: string;
   segments?: Segment[];
+  /** Variant A. Declared, never inferred. See the header. */
+  no_aircraft_in_record?: boolean;
+  /** Variant A: what WAS claimed, printed inside the hollow band. */
+  claim?: string;
+  /** Variant A: which tails were actually queried, so the absence is auditable. */
+  queried_tails?: string;
 };
 
 type Info = {
@@ -210,7 +244,8 @@ function parseStamp(v: Stamp, what: string, errs: string[]): number | null {
   return t;
 }
 
-type Seg = { a: number; b: number; points?: number; sources?: string };
+type Seg = { a: number; b: number; points?: number; sources?: string;
+             pass?: boolean; minAlt?: number | null; minKm?: number | null };
 
 function readSegments(p: Plane | undefined, who: string, errs: string[]): Seg[] {
   const segs = p?.segments;
@@ -224,7 +259,13 @@ function readSegments(p: Plane | undefined, who: string, errs: string[]): Seg[] 
     const b = parseStamp(s.to, `${who}.segments[${i}].to`, errs);
     if (a === null || b === null) return;
     if (b < a) { errs.push(`${who}.segments[${i}]: ends before it starts`); return; }
-    out.push({ a, b, points: s.ground_points, sources: s.sources });
+    const basis = String(s.basis || "ground_contact");
+    if (!["ground_contact", "near_field_pass"].includes(basis)) {
+      errs.push(`${who}.segments[${i}].basis: "${basis}" is not a basis this generator draws — use ground_contact or near_field_pass`);
+      return;
+    }
+    out.push({ a, b, points: s.ground_points, sources: s.sources,
+               pass: basis === "near_field_pass", minAlt: s.min_alt_ft ?? null, minKm: s.min_km ?? null });
   });
   return out.sort((x, y) => x.a - y.a);
 }
@@ -288,8 +329,16 @@ function build(info: Info, dirName: string): { svg: string; warnings: string[] }
   if (!tz) errs.push("airport.timezone: missing (IANA zone, e.g. America/Denver)");
   else { try { new Intl.DateTimeFormat("en-US", { timeZone: tz }); } catch { errs.push(`airport.timezone: "${tz}" is not an IANA time zone`); } }
 
+  const kpDecl = info.kirk_plane || {};
+  /* VARIANT A. Declared in the yaml, never inferred from an empty segment list —
+     "nobody wrote the segments yet" and "no such aircraft exists in the data"
+     are different facts and only the second one may be drawn. */
+  const kirkAbsent = kpDecl.no_aircraft_in_record === true;
+  if (kirkAbsent && Array.isArray(kpDecl.segments) && kpDecl.segments.length) {
+    errs.push("kirk_plane: no_aircraft_in_record is true AND segments are present — say one or the other");
+  }
   const fSegs = readSegments(info.following_plane, "following_plane", errs);
-  const kSegs = readSegments(info.kirk_plane, "kirk_plane", errs);
+  const kSegs = kirkAbsent ? [] : readSegments(info.kirk_plane, "kirk_plane", errs);
 
   if (errs.length) throw new Error("cannot draw this overlap:\n  " + errs.join("\n  "));
 
@@ -297,8 +346,9 @@ function build(info: Info, dirName: string): { svg: string; warnings: string[] }
   const fp = info.following_plane || {};
   const kp = info.kirk_plane || {};
 
-  const start = Math.min(fSegs[0].a, kSegs[0].a);
-  const end = Math.max(fSegs[fSegs.length - 1].b, kSegs[kSegs.length - 1].b);
+  const start = kirkAbsent ? fSegs[0].a : Math.min(fSegs[0].a, kSegs[0].a);
+  const end = kirkAbsent ? fSegs[fSegs.length - 1].b
+                         : Math.max(fSegs[fSegs.length - 1].b, kSegs[kSegs.length - 1].b);
   const span = end - start;
   if (span <= 0) throw new Error("the time window is zero or negative — nothing to plot");
 
@@ -307,15 +357,29 @@ function build(info: Info, dirName: string): { svg: string; warnings: string[] }
      reader assume it was. */
   let simultaneous = 0;
   for (const f of fSegs) for (const k of kSegs) simultaneous += Math.max(0, Math.min(f.b, k.b) - Math.max(f.a, k.a));
-  if (simultaneous === 0) {
+  if (kirkAbsent) {
+    warn.push("NO KIRK-SIDE AIRCRAFT EXISTS IN THE DATA FOR THIS OVERLAP — the lower band is drawn hollow. There is one bar on this graphic, not two, and the claim it is set against is a person in a city, not an airframe. The page must say so.");
+  } else if (simultaneous === 0) {
     warn.push("THE TWO AIRCRAFT WERE NEVER HEARD ON THE GROUND AT THE SAME MOMENT — same field, same day, different hours. The graphic shows the gap; the page must say so too.");
+  }
+  /* VARIANT B. A hatched bar is a measured window in the air near the field. It
+     is not a landing and the warning says so every time one is drawn. */
+  const fPasses = fSegs.filter((x) => x.pass).length;
+  const kPasses = kSegs.filter((x) => x.pass).length;
+  if (fPasses || kPasses) {
+    const lowest = [...fSegs, ...kSegs].filter((x) => x.pass && typeof x.minAlt === "number")
+      .map((x) => x.minAlt as number).sort((m, n) => m - n)[0];
+    warn.push(`${fPasses + kPasses} of the drawn windows are NEAR-FIELD PASSES, not ground contacts — the aircraft was heard within 15 km of the field while AIRBORNE${typeof lowest === "number" ? `, lowest altitude heard ${commas(lowest)} ft` : ""}. Hatched, never solid. This is NOT evidence the aircraft landed.`);
   }
 
   const heard = (info.evidence_basis || "adsb_ground_contact") === "adsb_ground_contact";
+  const anyPass = (fPasses + kPasses) > 0;
+  const allPass = anyPass && [...fSegs, ...kSegs].every((x) => x.pass);
+  const where = allPass ? "near the field" : anyPass ? "at the field" : "on the ground";
   const vFirst = heard ? "first heard" : "arrived";
   const vLast = heard ? "last heard" : "departed";
-  const axisCapL = heard ? "first heard on the ground" : "first arrival";
-  const axisCapR = heard ? "last heard on the ground" : "last departure";
+  const axisCapL = heard ? `first heard ${where}` : "first arrival";
+  const axisCapR = heard ? `last heard ${where}` : "last departure";
 
   const axisW = L.axisX1 - L.axisX0;
   const xOf = (t: number) => L.axisX0 + ((t - start) / span) * axisW;
@@ -331,26 +395,54 @@ function build(info: Info, dirName: string): { svg: string; warnings: string[] }
   const kBars = place(kSegs);
   if (fBars.some((b) => b.thin)) warn.push(`following aircraft has a ground contact too short to draw to scale (${durationText(Math.min(...fSegs.map((s) => s.b - s.a)))}) — widened to a visible minimum`);
   if (kBars.some((b) => b.thin)) warn.push(`Kirk-side aircraft has a ground contact too short to draw to scale (${durationText(Math.min(...kSegs.map((s) => s.b - s.a)))}) — widened to a visible minimum`);
-  if (fSegs.length > 1) warn.push(`following aircraft has ${fSegs.length} separate ground contacts on this axis — drawn separately, never merged: a gap between two segments is a FLIGHT, not a wait`);
-  if (kSegs.length > 1) warn.push(`Kirk-side aircraft has ${kSegs.length} separate ground contacts on this axis — drawn separately, never merged`);
+  /* "2 separate ground contacts" was WRONG on any graphic whose windows include a
+     near-field pass — the KOMA July 2025 graphic has two passes and no ground
+     contact at all. Count what is actually there. */
+  const windowText = (segs: Seg[]) => {
+    const gc = segs.filter((x) => !x.pass).length, np = segs.filter((x) => x.pass).length;
+    return [gc ? `${gc} ground contact${gc === 1 ? "" : "s"}` : "", np ? `${np} near-field pass${np === 1 ? "" : "es"}` : ""].filter(Boolean).join(" and ");
+  };
+  if (fSegs.length > 1) warn.push(`following aircraft has ${fSegs.length} separate windows on this axis (${windowText(fSegs)}) — drawn separately, never merged: a gap between two ground contacts is a FLIGHT, not a wait`);
+  if (kSegs.length > 1) warn.push(`Kirk-side aircraft has ${kSegs.length} separate windows on this axis (${windowText(kSegs)}) — drawn separately, never merged`);
 
   const multiDay = span >= 24 * 3600 * 1000 || dayKey(start, TZ) !== dayKey(end, TZ);
 
   /* The two events that are NOT the axis ends: the later of the two first-ons,
      and the earlier of the two last-offs. */
-  const laterFirst = fSegs[0].a >= kSegs[0].a ? fSegs[0].a : kSegs[0].a;
-  const earlierLast = fSegs[fSegs.length - 1].b <= kSegs[kSegs.length - 1].b ? fSegs[fSegs.length - 1].b : kSegs[kSegs.length - 1].b;
+  const laterFirst = kirkAbsent ? (fSegs.length > 1 ? fSegs[0].b : start)
+                                : (fSegs[0].a >= kSegs[0].a ? fSegs[0].a : kSegs[0].a);
+  const earlierLast = kirkAbsent ? (fSegs.length > 1 ? fSegs[fSegs.length - 1].a : end)
+                                 : (fSegs[fSegs.length - 1].b <= kSegs[kSegs.length - 1].b ? fSegs[fSegs.length - 1].b : kSegs[kSegs.length - 1].b);
 
   type Inner = { x: number; trueX: number; lines: string[] };
   const inners: Inner[] = [];
   const innerLines = (t: number, verb: string) =>
     multiDay ? [`${verb} ${fmtDate(t, TZ)} ${fmtTime(t, TZ)}`] : [`${verb} ${fmtTime(t, TZ)}`];
-  if (laterFirst > start) inners.push({ x: xOf(laterFirst), trueX: xOf(laterFirst), lines: innerLines(laterFirst, vFirst) });
-  if (earlierLast < end) inners.push({ x: xOf(earlierLast), trueX: xOf(earlierLast), lines: innerLines(earlierLast, vLast) });
+  if (kirkAbsent) {
+    /* One aircraft, so the interior events are its own gaps. Name what each side
+       of a gap actually is: a pass running straight into a ground contact is the
+       aircraft coming down, and printing "last heard 3:33 pm / first heard 3:33
+       pm" twice at the same x said nothing and collided with itself. */
+    const s0 = fSegs[0], sN = fSegs[fSegs.length - 1];
+    const endsAirborne = !!s0.pass, startsAirborne = !!sN.pass;
+    const lblA = `${vLast} ${endsAirborne ? "airborne" : "on the ground"}`;
+    const lblB = `${vFirst} ${startsAirborne ? "airborne" : "on the ground"}`;
+    if (fSegs.length > 1 && Math.abs(earlierLast - laterFirst) <= 60_000) {
+      // The same instant from both sides. One tick, both facts.
+      inners.push({ x: xOf(laterFirst), trueX: xOf(laterFirst),
+                    lines: [...innerLines(laterFirst, lblA), lblB] });
+    } else {
+      if (laterFirst > start) inners.push({ x: xOf(laterFirst), trueX: xOf(laterFirst), lines: innerLines(laterFirst, lblA) });
+      if (earlierLast < end) inners.push({ x: xOf(earlierLast), trueX: xOf(earlierLast), lines: innerLines(earlierLast, lblB) });
+    }
+  } else {
+    if (laterFirst > start) inners.push({ x: xOf(laterFirst), trueX: xOf(laterFirst), lines: innerLines(laterFirst, vFirst) });
+    if (earlierLast < end) inners.push({ x: xOf(earlierLast), trueX: xOf(earlierLast), lines: innerLines(earlierLast, vLast) });
+  }
   // Keep every inner label inside the frame — an early first-contact sits at the
   // far left and a long "first heard Mon 8 Sep 10:20 am" would otherwise clip.
   for (const inner of inners) {
-    const half = textW(inner.lines[0], L.innerLabelSize, 500) / 2 + 8;
+    const half = Math.max(...inner.lines.map((l) => textW(l, L.innerLabelSize, 500))) / 2 + 8;
     inner.x = Math.min(Math.max(inner.x, L.marginL + half), L.W - L.marginR - half);
   }
   if (inners.length === 2 && Math.abs(inners[0].x - inners[1].x) < L.innerLabelMinGap) {
@@ -378,11 +470,37 @@ function build(info: Info, dirName: string): { svg: string; warnings: string[] }
   rightRows.push({ text: year, size: L.rightYearSize });
   for (const r of rightRows) r.size = fitSize([r.text], r.size, L.rightMaxW, 800);
 
-  const contacts = (n: number) => `${n} ground contact${n === 1 ? "" : "s"}`;
-  const planeLabel = (p: Plane, lead: string, n: number) =>
-    `${lead} — ${p.tail || "tail unknown"}${p.type ? ` (${p.type})` : ""} · ${contacts(n)}`;
-  const fLabel = planeLabel(fp, "Following aircraft", fSegs.length);
-  const kLabel = planeLabel(kp, `${kirkBarPerson(person)} aircraft`, kSegs.length);
+  /* Ground contacts and near-field passes are COUNTED SEPARATELY and never
+     added together — they are different claims about the same airframe. */
+  const countText = (segs: Seg[]) => {
+    const g = segs.filter((x) => !x.pass).length, q = segs.filter((x) => x.pass).length;
+    const bits: string[] = [];
+    if (g) bits.push(`${g} ground contact${g === 1 ? "" : "s"}`);
+    if (q) bits.push(`${q} near-field pass${q === 1 ? "" : "es"} (airborne)`);
+    return bits.join(" · ");
+  };
+  /* The lowest altitude heard goes in the LABEL, not inside the bar. Drawn over
+     the hatch it was white-on-red-on-white and unreadable at any size. */
+  const lowestAlt = (segs: Seg[]) => {
+    const a = segs.filter((x) => x.pass && typeof x.minAlt === "number").map((x) => x.minAlt as number);
+    return a.length ? Math.min(...a) : null;
+  };
+  const planeLabel = (p: Plane, lead: string, segs: Seg[]) => {
+    const lo = lowestAlt(segs);
+    return `${lead} — ${p.tail || "tail unknown"}${p.type ? ` (${p.type})` : ""} · ${countText(segs)}` +
+           (lo === null ? "" : `, lowest ${commas(lo)} ft`);
+  };
+  const fLabel = planeLabel(fp, "Following aircraft", fSegs);
+  const kLabel = kirkAbsent
+    ? `${kirkBarPerson(person)} aircraft — NO AIRCRAFT IN THE RECORD`
+    : planeLabel(kp, `${kirkBarPerson(person)} aircraft`, kSegs);
+  /* The line printed INSIDE the hollow band. It states the claim and names what
+     was queried, so a reader can tell an unanswered question from an answered
+     one that came back empty. */
+  const kirkClaimLine = kirkAbsent
+    ? (kpDecl.claim || `${kirkBarPerson(person)} claimed present at this field on this date · no airframe heard`)
+      + (kpDecl.queried_tails ? ` · queried: ${kpDecl.queried_tails}` : "")
+    : "";
   const barLabelSize = fitSize([fLabel, kLabel], L.barLabelSize, axisW, 600);
 
   const pop = ap.town_population;
@@ -392,9 +510,14 @@ function build(info: Info, dirName: string): { svg: string; warnings: string[] }
 
   const sourceLine = info.source_line ||
     `Source: overlaps.csv + recovered ADS-B traces${info.as_of ? `, as of ${info.as_of}` : ""}`;
-  const caption = info.caption || (heard
-    ? "ADS-B ground contacts heard by volunteer receivers. Presence only — this places no person aboard either aircraft."
-    : "Aircraft ground times only. This places no person aboard either aircraft.");
+  const bothPlanes = kirkAbsent ? "any aircraft" : "either aircraft";
+  const caption = info.caption || (!heard
+    ? `Aircraft ground times only. This places no person aboard ${bothPlanes}.`
+    : allPass
+      ? `ADS-B positions heard by volunteer receivers. This aircraft was AIRBORNE near the field, not on the ground here — a hatched bar is not a landing. Presence only: this places no person aboard ${bothPlanes}.`
+      : anyPass
+        ? `ADS-B positions heard by volunteer receivers. Solid = on the ground, hatched = airborne within 15 km of the field. Presence only — this places no person aboard ${bothPlanes}.`
+        : `ADS-B ground contacts heard by volunteer receivers. Presence only — this places no person aboard ${bothPlanes}.`);
 
   /* -------------------------------------------------------------------- svg */
 
@@ -425,6 +548,18 @@ function build(info: Info, dirName: string): { svg: string; warnings: string[] }
   p(`    .sm { font-weight: 600; stroke-width: 1.6px; }`);
   p(`    .xs { font-size: ${L.innerLabelSize}px; font-weight: 500; stroke-width: 1.2px; }`);
   p(`  </style>`);
+  p(`  <defs>`);
+  p(`    <!-- VARIANT B. A near-field pass is HATCHED, never solid: the aircraft was`);
+  p(`         heard close to the field but AIRBORNE, and a solid bar would read as a stay. -->`);
+  p(`    <pattern id="passHatch" width="14" height="14" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">`);
+  p(`      <rect width="14" height="14" fill="${C.paper}" fill-opacity="0.55"/>`);
+  p(`      <rect width="7" height="14" fill="${C.red}"/>`);
+  p(`    </pattern>`);
+  p(`    <pattern id="passHatchK" width="14" height="14" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">`);
+  p(`      <rect width="14" height="14" fill="${C.paper}" fill-opacity="0.55"/>`);
+  p(`      <rect width="7" height="14" fill="${C.yellow}"/>`);
+  p(`    </pattern>`);
+  p(`  </defs>`);
 
   p(`  <!-- title, centred across the whole frame -->`);
   T("lg", L.W / 2, L.titleY, title, "middle", titleSize);
@@ -463,37 +598,73 @@ function build(info: Info, dirName: string): { svg: string; warnings: string[] }
 
   const bg = (y: number) =>
     p(`  <rect x="${L.axisX0}" y="${y}" width="${axisW}" height="${L.rectH}" fill="${C.grey}" fill-opacity="${C.greyOpacity}" stroke="${C.ink}" stroke-width="${L.rectStroke}"/>`);
-  const segRects = (bars: ReturnType<typeof place>, y: number, fill: string) => {
+  const segRects = (bars: ReturnType<typeof place>, y: number, fill: string, hatch: string) => {
     for (const b of bars) {
-      p(`  <rect x="${b.x.toFixed(1)}" y="${y + L.barInset}" width="${b.w.toFixed(1)}" height="${L.rectH - 2 * L.barInset}" fill="${fill}">` +
-        `<title>${esc(`${fmtTime(b.seg.a, TZ)} to ${fmtTime(b.seg.b, TZ)} (${durationText(b.seg.b - b.seg.a)})${b.seg.points ? `, ${b.seg.points} ground points` : ""}${b.seg.sources ? `, ${b.seg.sources}` : ""}`)}</title></rect>`);
+      const isPass = !!b.seg.pass;
+      const what = isPass ? "heard airborne within 15 km of the field — NOT a landing" : "heard on the ground";
+      p(`  <rect x="${b.x.toFixed(1)}" y="${y + L.barInset}" width="${b.w.toFixed(1)}" height="${L.rectH - 2 * L.barInset}" ` +
+        `fill="${isPass ? `url(#${hatch})` : fill}"${isPass ? ` stroke="${C.ink}" stroke-width="2"` : ""}>` +
+        `<title>${esc(`${fmtTime(b.seg.a, TZ)} to ${fmtTime(b.seg.b, TZ)} (${durationText(b.seg.b - b.seg.a)}) — ${what}` +
+          `${typeof b.seg.minKm === "number" ? `, closest ${b.seg.minKm} km` : ""}` +
+          `${typeof b.seg.minAlt === "number" ? `, lowest ${commas(b.seg.minAlt)} ft` : ""}` +
+          `${b.seg.points ? `, ${b.seg.points} positions` : ""}${b.seg.sources ? `, ${b.seg.sources}` : ""}`)}</title></rect>`);
     }
   };
 
   p(`  <!-- upper bar: the following / intelligence aircraft -->`);
   T("sm", L.axisX0, L.upperLabelY, fLabel, undefined, barLabelSize);
   bg(L.upperRectY);
-  segRects(fBars, L.upperRectY, C.red);
+  segRects(fBars, L.upperRectY, C.red, "passHatch");
 
   p(`  <!-- lower bar: the ${esc(kirkBarPerson(person))} aircraft -->`);
   T("sm", L.axisX0, L.lowerLabelY, kLabel, undefined, barLabelSize);
-  bg(L.lowerRectY);
-  segRects(kBars, L.lowerRectY, C.yellow);
+  if (kirkAbsent) {
+    p(`  <!-- VARIANT A: hollow dashed band. There is no aircraft here. Absence drawn as absence. -->`);
+    p(`  <rect x="${L.axisX0}" y="${L.lowerRectY}" width="${axisW}" height="${L.rectH}" fill="none" stroke="${C.ink}" stroke-width="${L.rectStroke}" stroke-dasharray="20 14"/>`);
+    const claimSize = fitSize([kirkClaimLine], 22, axisW - 40, 500);
+    T("xs", L.axisX0 + axisW / 2, L.lowerRectY + L.rectH / 2 + 7, kirkClaimLine, "middle", claimSize);
+  } else {
+    bg(L.lowerRectY);
+    segRects(kBars, L.lowerRectY, C.yellow, "passHatchK");
+  }
 
   if (inners.length) {
     p(`  <!-- inner labels: the later first-contact and the earlier last-contact -->`);
     for (const inner of inners) {
       line(inner.trueX, L.upperRectY, inner.trueX, L.innerTickBottom);
       if (Math.abs(inner.x - inner.trueX) > 1) line(inner.trueX, L.innerTickBottom, inner.x, L.innerTickBottom + 8, 2);
+      /* Multi-line inner labels grow DOWNWARD. Growing upward pushed the first
+         line back through the bottom of the lower band and the two overlapped. */
       inner.lines.forEach((l, i) =>
-        T("xs", inner.x, L.innerLabelY + (i - (inner.lines.length - 1)) * 22, l, "middle"));
+        T("xs", inner.x, L.innerLabelY - 6 + i * 22, l, "middle"));
     }
   }
 
   p(`  <!-- required furniture: the claim this picture must not be read as, and the source -->`);
-  const footSize = fitSize([caption, sourceLine], L.footSize, L.footMaxW, 500);
-  T("xs", L.marginL, L.footCaptionY, caption, undefined, footSize);
-  T("xs", L.marginL, L.footSourceY, sourceLine, undefined, footSize);
+  /* WRAP, do not shrink. The caption is the sentence that stops the picture being
+     misread, so it is the last thing that may run off the right edge or drop to
+     an unreadable size — and it did both before this, on the KOMA July 2025
+     graphic, where "no person aboard any aircraft" was cut to "any aircra". */
+  const wrap = (text: string, size: number, maxW: number): string[] => {
+    const words = text.split(/\s+/);
+    const lines: string[] = [];
+    let cur = "";
+    for (const w of words) {
+      const next = cur ? `${cur} ${w}` : w;
+      if (textW(next, size, 500) > maxW && cur) { lines.push(cur); cur = w; } else cur = next;
+    }
+    if (cur) lines.push(cur);
+    return lines;
+  };
+  const footSize = L.footSize;
+  const capLines = wrap(caption, footSize, L.footMaxW);
+  const srcLines = wrap(sourceLine, footSize, L.footMaxW);
+  const lineStep = footSize * 1.36;
+  // Grow UPWARD from the source line so the block never creeps toward the axis.
+  let fy = L.footSourceY - (srcLines.length - 1 + capLines.length) * lineStep - 10;
+  for (const l of capLines) { T("xs", L.marginL, fy, l, undefined, footSize); fy += lineStep; }
+  fy += 10;
+  for (const l of srcLines) { T("xs", L.marginL, fy, l, undefined, footSize); fy += lineStep; }
   p(`</svg>`);
 
   return { svg: out.join("\n") + "\n", warnings: warn };

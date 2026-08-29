@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  TEMPLATE - Plane Overlap infographic, NO KIRK-SIDE AIRCRAFT. 16:9, 1920x1080.
+
+  THIS IS THE PATTERN, NOT A FINISHED GRAPHIC, and it is not published anywhere.
+  It is a real rendering (overlap OWENS-025, KPVU, 19 Apr 2024) and it shows
+  BOTH declared variants at once: a hollow Kirk band (A) and an airborne
+  near-field pass running into a ground contact (B).
+
+  WHY IT EXISTS. The overlap claim is that Egyptian-registered jets shadowed
+  Charlie and Erika Kirk. Measured against the recovered ADS-B archives, the
+  aircraft half of that claim is often real and the PERSON half is empty: there
+  is no Erika Kirk airframe anywhere in the data, and on the twelve qualifying
+  field-years there is no Kirk-party ground contact on ANY Erika-claimed date.
+  Drawing nothing would have hidden that. This template draws it.
+
+  Every POSITION here is authoritative and mirrors the LAYOUT block in
+  site/docs/Planes/info_graphic/code/build_overlap_svg.ts.
+
+  THE ANATOMY, top to bottom
+  ==========================
+  title            y 60, centred across the WHOLE frame, "Following plane
+                   overlaps with {Charlie Kirk | Erika Kirk | Charlie and Erika
+                   Kirk}".
+  name block       frame LEFT, x 64, under the title. NEVER WIDER THAN 15% OF
+                   THE FRAME (288px). Wraps: 2 rows for one name, 3 for both.
+                   The generator shrinks the type until it fits.
+  place block      frame RIGHT, x 1856, high up, under the title. NEVER WIDER
+                   THAN 50% OF THE FRAME (960px). Four rows, in this order:
+                   airport name, state, city, YEAR. The year is the largest
+                   thing in the block - and it is the ONLY place the year
+                   appears, which is why no date around the bars carries one.
+  town             label rises out of the town centre on a leader line, left of
+                   centre, between the frame centre and the top. Town name and
+                   population. Population line is omitted when we do not have a
+                   sourced figure - never guessed.
+  centre           DELIBERATELY EMPTY. This is where the generated town/airport
+                   scene goes. Nothing is laid over the middle.
+  caption + source left-aligned, above the axis, and they WRAP rather than
+                   shrink. The caption is the sentence that stops the picture
+                   being misread, so it is the last thing allowed to clip or to
+                   drop below a readable size. It grows upward from y 662.
+  axis             ONE shared time axis drawn twice. x 260 to x 1660. Date over
+                   time, centred on each edge, leader line straight down.
+                   ALL TIMES ARE LOCAL TO THE AIRPORT. Never UTC.
+  upper bar        the FOLLOWING / intelligence aircraft. Dark red #9B1B1E.
+  lower bar        the CHARLIE / ERIKA / BOTH aircraft. Bright yellow #FFE21F.
+                   Both sit in a light-grey 50%-transparent rectangle with a
+                   thick black pen edge, and BOTH RECTANGLES SHARE THE SAME LEFT
+                   AND RIGHT EDGES - that is what makes the two comparable.
+  segments         EACH WINDOW IS ITS OWN BLOCK. Two blocks in a day are never
+                   merged into one: a gap between two GROUND CONTACTS is a
+                   FLIGHT, not a wait.
+  inner labels     the 5% band under the lower rectangle, and nothing else goes
+                   there. They mark the events that are NOT the axis ends. Time
+                   only inside one day; date and time when the window is longer.
+                   Never a year. Multi-line labels grow DOWNWARD.
+
+  THE TWO DECLARED VARIANTS (added 2026-08-29)
+  ============================================
+  Both must be ASKED FOR in info.yaml. Neither is ever inferred, and neither
+  loosens the rule that a bar is only ever drawn from a measured time.
+
+  A  kirk_plane.no_aircraft_in_record: true
+     There is no Kirk-side AIRFRAME in the data at this field on this date. The
+     lower bar becomes a HOLLOW DASHED BAND across the whole axis, labelled
+     "NO AIRCRAFT IN THE RECORD", with the claim and the list of tails actually
+     queried printed inside it. ABSENCE IS DRAWN AS ABSENCE. It is never solid,
+     never carries a time, and must never be read as the person being there. The
+     claim behind almost every Erika Kirk row is A PERSON IN A CITY, and a
+     claimed itinerary is not an aircraft. See template_no_kirk_aircraft.svg.
+
+  B  a segment with basis: near_field_pass
+     The aircraft was heard WITHIN 15 km OF THE FIELD BUT AIRBORNE - an
+     approach, a departure climb, an overflight. A measured window with real
+     endpoints, so it may be drawn - but it is NOT a ground contact and is never
+     coloured as one. HATCHED, never solid, counted separately in the bar label,
+     with the lowest altitude heard printed in the label rather than inside the
+     bar (white-on-hatch was unreadable). A HATCHED BAR IS NOT A LANDING.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img">
+  <title>Following plane overlaps with Erika Kirk — Provo Municipal Airport, Provo, Utah, 2024</title>
+  <desc>Following aircraft — SU-BND (Gulfstream G550) · 1 ground contact · 1 near-field pass (airborne), lowest 4,375 ft. Erika Kirk aircraft — NO AIRCRAFT IN THE RECORD. Shared axis runs Fri 19 Apr 3:29 pm to Fri 19 Apr 3:36 pm 2024, airport local time, a window of 7 min. ADS-B positions heard by volunteer receivers. Solid = on the ground, hatched = airborne within 15 km of the field. Presence only — this places no person aboard any aircraft.</desc>
+  <rect x="0" y="0" width="1920" height="1080" fill="#5F9C6C"/>
+  <!-- BACKGROUND IMAGE SLOT — the generated town/airport scene goes here when it exists.
+       <image href="2024_04_19_KPVU_Erika_UT_provo_bg.jpg" x="0" y="0" width="1920" height="1080" preserveAspectRatio="xMidYMid slice"/> -->
+  <style>
+    .t  { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+          fill: #FFFFFF; stroke: #000000; paint-order: stroke; stroke-linejoin: round; }
+    .xl { font-weight: 800; stroke-width: 3.5px; }
+    .lg { font-weight: 600; stroke-width: 2.5px; }
+    .md { font-weight: 700; stroke-width: 2px; }
+    .sm { font-weight: 600; stroke-width: 1.6px; }
+    .xs { font-size: 20px; font-weight: 500; stroke-width: 1.2px; }
+  </style>
+  <defs>
+    <!-- VARIANT B. A near-field pass is HATCHED, never solid: the aircraft was
+         heard close to the field but AIRBORNE, and a solid bar would read as a stay. -->
+    <pattern id="passHatch" width="14" height="14" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="14" height="14" fill="#FFFFFF" fill-opacity="0.55"/>
+      <rect width="7" height="14" fill="#9B1B1E"/>
+    </pattern>
+    <pattern id="passHatchK" width="14" height="14" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="14" height="14" fill="#FFFFFF" fill-opacity="0.55"/>
+      <rect width="7" height="14" fill="#FFE21F"/>
+    </pattern>
+  </defs>
+  <!-- title, centred across the whole frame -->
+  <text class="t lg" font-size="42" x="960" y="60" text-anchor="middle">Following plane overlaps with Erika Kirk</text>
+  <!-- big name block: frame left, never wider than 15% of the frame -->
+  <text class="t xl" font-size="78" x="64" y="156">Erika</text>
+  <text class="t xl" font-size="78" x="64" y="239">Kirk</text>
+  <!-- airport / state / city / year: frame right, high, never wider than 50% -->
+  <text class="t xl" font-size="54" x="1856" y="150" text-anchor="end">Provo Municipal Airport</text>
+  <text class="t xl" font-size="46" x="1856" y="208" text-anchor="end">Utah</text>
+  <text class="t xl" font-size="46" x="1856" y="263" text-anchor="end">Provo</text>
+  <text class="t xl" font-size="88" x="1856" y="354" text-anchor="end">2024</text>
+  <!-- the town behind the field: label rises out of the town centre -->
+  <text class="t sm" font-size="32" x="660" y="224" text-anchor="middle">Provo, Utah</text>
+  <text class="t sm" font-size="26" x="660" y="260" text-anchor="middle">population 115,162</text>
+  <line x1="660" y1="276" x2="660" y2="330" stroke="#000000" stroke-width="3"/>
+  <circle cx="660" cy="330" r="6" fill="#FFFFFF" stroke="#000000" stroke-width="3"/>
+  <!-- shared time axis: left = first heard at the field, right = last heard at the field. Airport local time. -->
+  <text class="t xs" x="260" y="716" text-anchor="middle">first heard at the field</text>
+  <text class="t sm" font-size="26" x="260" y="754" text-anchor="middle">Fri 19 Apr</text>
+  <text class="t md" font-size="34" x="260" y="792" text-anchor="middle">3:29 pm</text>
+  <line x1="260" y1="804" x2="260" y2="1032" stroke="#000000" stroke-width="3"/>
+  <text class="t xs" x="1660" y="716" text-anchor="middle">last heard at the field</text>
+  <text class="t sm" font-size="26" x="1660" y="754" text-anchor="middle">Fri 19 Apr</text>
+  <text class="t md" font-size="34" x="1660" y="792" text-anchor="middle">3:36 pm</text>
+  <line x1="1660" y1="804" x2="1660" y2="1032" stroke="#000000" stroke-width="3"/>
+  <text class="t xs" x="960" y="716" text-anchor="middle">window 7 min · times local to the airport</text>
+  <!-- upper bar: the following / intelligence aircraft -->
+  <text class="t sm" font-size="23" x="260" y="862">Following aircraft — SU-BND (Gulfstream G550) · 1 ground contact · 1 near-field pass (airborne), lowest 4,375 ft</text>
+  <rect x="260" y="872" width="1400" height="60" fill="#D9D9D9" fill-opacity="0.5" stroke="#000000" stroke-width="5"/>
+  <rect x="260.0" y="878" width="793.9" height="48" fill="url(#passHatch)" stroke="#000000" stroke-width="2"><title>3:29 pm to 3:33 pm (4 min) — heard airborne within 15 km of the field — NOT a landing, closest 0.02 km, lowest 4,375 ft, 85 positions, adsb-lol|airplanes-live</title></rect>
+  <rect x="1053.9" y="878" width="606.1" height="48" fill="#9B1B1E"><title>3:33 pm to 3:36 pm (3 min) — heard on the ground, closest 0.05 km, 46 positions, adsb-lol|airplanes-live</title></rect>
+  <!-- lower bar: the Erika Kirk aircraft -->
+  <text class="t sm" font-size="23" x="260" y="958">Erika Kirk aircraft — NO AIRCRAFT IN THE RECORD</text>
+  <!-- VARIANT A: hollow dashed band. There is no aircraft here. Absence drawn as absence. -->
+  <rect x="260" y="968" width="1400" height="60" fill="none" stroke="#000000" stroke-width="5" stroke-dasharray="20 14"/>
+  <text class="t xs" font-size="18" x="960" y="1005" text-anchor="middle">Erika Kirk claimed present at this field on this date · no Kirk-party airframe heard · queried: N102DZ, N582MM, N872RA, N40JD, N560TW, N888KG</text>
+  <!-- inner labels: the later first-contact and the earlier last-contact -->
+  <line x1="1054" y1="872" x2="1054" y2="1038" stroke="#000000" stroke-width="3"/>
+  <text class="t xs" x="1054" y="1046" text-anchor="middle">last heard airborne 3:33 pm</text>
+  <text class="t xs" x="1054" y="1068" text-anchor="middle">first heard on the ground</text>
+  <!-- required furniture: the claim this picture must not be read as, and the source -->
+  <text class="t xs" font-size="22" x="64" y="592">ADS-B positions heard by volunteer receivers. Solid = on the ground, hatched = airborne within 15 km of the field. Presence only — this places no person</text>
+  <text class="t xs" font-size="22" x="64" y="622">aboard any aircraft.</text>
+  <text class="t xs" font-size="22" x="64" y="662">Source: recovered ADS-B traces, adsb.lol and airplanes.live. Ground contacts and near-field passes measured point by point. As of 2026-08-29.</text>
+</svg>
