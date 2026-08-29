@@ -1,0 +1,84 @@
+---
+displayed_sidebar: docs
+title: "Wilmington, Delaware — 2023"
+sidebar_label: "Wilmington 2023"
+description: "6 claimed overlaps at Wilmington Airport / New Castle Airport (KILG) during 2023, 6 of them with Erika Kirk claimed present — with the dates, the clock times measured out of the recovered ADS-B traces, the tail numbers, the town population and how many aircraft operations the field handles in a year."
+keywords:
+  - "Charlie Kirk"
+  - "Erika Kirk"
+  - "Charlie Kirk assassination"
+  - "Wilmington"
+  - "KILG"
+  - "flight tracking"
+  - "ADS-B"
+  - "SU-BND"
+  - "SU-BTT"
+image: "/img/docusaurus-social-card.jpg"
+hide_table_of_contents: true
+---
+
+{/* Full-bleed marker: activates the site-wide full-width + text-wrap
+    layout in custom.css. Scoped via CSS :has(). */}
+<div className="ck-full-bleed" />
+
+<a href="/Planes/example/overview" style={{display:'inline-block', marginBottom:'1rem',
+padding:'0.35rem 0.9rem', background:'#1a73e8', color:'#fff',
+borderRadius:'4px', textDecoration:'none', fontSize:'0.9rem'}}>← All field-years</a>
+
+# Wilmington, Delaware — 2023
+
+**In 2023 the overlap record holds 6 claimed overlaps at [Wilmington Airport / New Castle Airport (KILG)](/Planes/Airports/KILG), on 6 separate dates. Erika Kirk is claimed present on 6 of them — which is why this field-year has a page at all.**
+
+Of those 6 rows, **2 were checked against recovered ADS-B position data and put the airframe at or over this field**, and 2 carry a measured clock time below. The rest were checked and the archives held nothing — which is not the same as the aircraft being elsewhere.
+
+**Nothing here places any person aboard any aircraft.** These are aircraft positions and claimed locations, and the two are different kinds of thing.
+
+## The town and the field
+
+| | |
+|---|---|
+| Town | Wilmington, Delaware |
+| Population | **70,898** (US Census 2020) |
+| Metro served | Delaware Valley DE/PA/NJ |
+| Airport | Wilmington Airport / New Castle Airport ([KILG](/Planes/Airports/KILG)) |
+| Field class | public-use commercial / general aviation |
+| Longest runway | 7,200 ft |
+| **Aircraft operations per year** | **46,057** (12 months ending 22 December 2022) — about 126 a day |
+| Passengers per year | 331,000 (2025) |
+| Based aircraft | 219 |
+| Egyptian-registered stays logged here, all years | 16, over 24 days on the ground |
+
+An **operation** is one takeoff or one landing, so a visiting jet that arrives and departs counts twice. At KILG that works out to roughly **126 operations a day**. Traffic figures: [Wikipedia, citing FAA Form 5010](https://en.wikipedia.org/wiki/Wilmington_Airport_(Delaware)). They are not from this repo, which holds no traffic data.
+
+**Is a foreign state jet unusual here?** NOT unusual. KILG is a standard transatlantic corporate customs-and-fuel stop in the Philadelphia-Baltimore-Washington corridor without the slot pressure of the major hubs. It appears on 15 of the logged legs because it is the outbound customs stop, not because of Delaware.
+
+## The overlaps — dates, times and tail numbers
+
+| Date | Claimed present | Tail | On the ground at this field | Closest recovered position | Sheet audit | ADS-B check | Row |
+|---|---|---|---|---|---|---|---|
+| **10 February 2023** | Erika Kirk | [SU-BTT](/Planes/SU-BTT/overview) | none recovered | nothing recovered | inaccurate | no archive heard this airframe that day | [OWENS-009](/Planes/following/overlap/20230210_DE_wilmington_owens_009/overview) |
+| **27 March 2023** | Erika Kirk | [SU-BTT](/Planes/SU-BTT/overview) | none recovered | nothing recovered | inaccurate | no archive heard this airframe that day | [OWENS-048](/Planes/following/overlap/20230327_DE_wilmington_owens_048/overview) |
+| **6 April 2023** | Erika Kirk | [SU-BTT](/Planes/SU-BTT/overview) | none recovered | SU-BTT **1.63 km** at 11:33:43 EDT (15:33:43 UTC), airborne -25 ft | accurate | aircraft recovered at the claimed field | [OWENS-011](/Planes/following/overlap/20230406_DE_wilmington_owens_011/overview) |
+| **20 April 2023** | Erika Kirk | [SU-BTT](/Planes/SU-BTT/overview) | SU-BTT 13:04:07–13:04:30 EDT (17:04–17:04 UTC) | SU-BTT **0.56 km** at 13:04:07 EDT (17:04:07 UTC), on the ground | accurate | aircraft recovered at the claimed field | [OWENS-013](/Planes/following/overlap/20230420_DE_wilmington_owens_013/overview) |
+| **25 June 2023** | Erika Kirk | [SU-BND](/Planes/SU-BND/overview) | none recovered | nothing recovered | inaccurate | no archive heard this airframe that day | [OWENS-052](/Planes/following/overlap/20230625_DE_wilmington_owens_052/overview) |
+| **3 September 2023** | Erika Kirk | [SU-BTT](/Planes/SU-BTT/overview) | none recovered | nothing recovered | inaccurate | no archive heard this airframe that day | [OWENS-018](/Planes/following/overlap/20230903_DE_wilmington_owens_018/overview) |
+
+## Where the clock times come from
+
+**There is no time column anywhere in the source data.** `overlaps.csv` and `flights.csv` carry dates only. Every time on this page was measured for it, point by point, out of the raw ADS-B traces held in this repo under `<TAIL>/data/recovered/` — the same files the ADS-B verdicts were computed from. Local times are the field's own local clock; UTC is given beside each so nothing turns on a timezone.
+
+**2 of the 6 rows produced a measured time.** The other 4 did not, because no archive holds a trace for that airframe on that date.
+
+A blank is not a finding. Parked with the transponder off, outside volunteer receiver coverage, and a wrong claimed date all look identical from here.
+
+## What this page does and does not show
+
+* **A trace proves presence, never purpose, and never occupancy.** No archive anywhere puts Charlie Kirk, Erika Kirk or anyone else aboard any of these aircraft. Erika Kirk's itinerary is the missing document — see [Erika Kirk flights](/Planes/following/Erika_Kirk_Flights).
+* **"Claimed present" is a claim, not a record.** It is a cell on the reconstructed sheet, and on that sheet the location is often a state rather than a field. See [the overlap window definition](/Planes/following/Overlap_Window_Definition).
+* **4 of these 6 rows were audited inaccurate** and are shown anyway. They are part of the record of what was claimed, and dropping them would misrepresent how much of the claim survived.
+* **2 were audited accurate.** That means the claim matched the aircraft record on checking — not that anybody was aboard.
+* **Repetition at a field is a reason to look, not a conclusion.** Fields host maintenance, customs and fuel stops, and a jet can return to one for entirely ordinary reasons.
+
+Sources: `following/overlaps.csv` and `following/airports.csv` in this repo, as of 28 August 2026; clock times measured from the recovered traces under `Planes/<TAIL>/data/recovered/`; town population from the US Census 2020; annual traffic from [Wikipedia, citing FAA Form 5010](https://en.wikipedia.org/wiki/Wilmington_Airport_(Delaware)).
+
+Back to [every qualifying field-year](/Planes/example/overview).

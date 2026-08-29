@@ -8,7 +8,7 @@ Every number on the generated page comes from one of:
 
 Re-run:  python3 _build_overview.py
 """
-import csv, os
+import csv, os, sys
 from collections import defaultdict
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -16,17 +16,10 @@ FOLLOWING = os.path.normpath(os.path.join(HERE, "..", "following"))
 REPO = os.path.normpath(os.path.join(HERE, "..", "..", "..", ".."))
 OUT = os.path.join(HERE, "overview.mdx")
 
-# US Census 2020 city population, and the metro the field actually serves.
-# Rank tier: 1 = smallest town / least traffic = best match for this page.
-TOWNS = {
-    "KILG": dict(tier=1, city="Wilmington, DE",  pop="70,898",    metro="Delaware Valley DE/PA/NJ"),
-    "KPVU": dict(tier=2, city="Provo, UT",       pop="115,162",   metro="Wasatch Front UT"),
-    "KLNK": dict(tier=3, city="Lincoln, NE",     pop="291,082",   metro="Omaha-Lincoln NE"),
-    "KICT": dict(tier=4, city="Wichita, KS",     pop="397,532",   metro="Wichita KS"),
-    "KOMA": dict(tier=5, city="Omaha, NE",       pop="486,051",   metro="Omaha-Lincoln NE"),
-    "KSTL": dict(tier=6, city="St. Louis, MO",   pop="301,578",   metro="St. Louis metro (~2.8M)"),
-    "KORD": dict(tier=7, city="Chicago, IL",     pop="2,746,388", metro="Chicago IL"),
-}
+# Town, population and traffic all live in _build_pages.py so the table and the
+# per-field-year pages can never quote different numbers at each other.
+sys.path.insert(0, HERE)
+from _build_pages import TOWNS, TRAFFIC   # noqa: E402
 
 overlaps = list(csv.DictReader(open(os.path.join(FOLLOWING, "overlaps.csv"))))
 airports = {r["airport_code"]: r for r in csv.DictReader(open(os.path.join(FOLLOWING, "airports.csv")))}
@@ -46,12 +39,18 @@ for r in overlaps:
         continue
     groups[(r["airport_code"], r["date"][:4])].append(r)
 
-rows = []
+rows, near_misses = [], []
 for (code, year), items in groups.items():
     erika = [r for r in items if r["erika_present"] == "claimed"]
-    # HARD REQUIREMENT: two or more overlaps at this field in this year, and
-    # Erika Kirk claimed at the field in that same year.
-    if len(items) < 2 or not erika:
+    # HARD REQUIREMENT: two or more overlap rows at this field in this year, AND
+    # Erika Kirk claimed present at that field at least TWICE in that year.
+    if len(items) < 2:
+        continue
+    if len(erika) < 2:
+        # Kept, named, and shown below the table. A field-year that just misses
+        # the bar is worth seeing; silently dropping it would hide how narrow
+        # the qualifying set is.
+        near_misses.append(dict(code=code, year=year, n=len(items), n_erika=len(erika)))
         continue
     items.sort(key=lambda r: (r["date"], r["overlap_id"]))
     rows.append(dict(
@@ -111,11 +110,13 @@ w('**A repeat is more interesting than a single visit, and a repeat at a small f
 w('')
 w('Every row below is one **airport in one calendar year** that meets the hard '
   'requirement: **two or more claimed overlaps at that same field inside that same '
-  'year, with Erika Kirk claimed present at that field in that year.** '
-  '%d airport-years out of the %d rows in '
-  '[`overlaps.csv`](/Planes/following/73_overlaps) qualify. '
-  'Each date in the last column links to that overlap\'s own page.'
-  % (len(rows), len(overlaps)))
+  'year, and Erika Kirk claimed present at that field at least twice in that year.** '
+  '%d field-years out of the %d rows in '
+  '[`overlaps.csv`](/Planes/following/73_overlaps) qualify, covering %d fields. '
+  '**Each has its own page** — dates, clock times measured out of the recovered ADS-B '
+  'traces, tail numbers, town population and annual traffic — linked in the second '
+  'column. Each date in the last column links to that single overlap\'s own page.'
+  % (len(rows), len(overlaps), len({r["code"] for r in rows})))
 w('')
 w('**Read the audit columns before the ranking.** Sorting high on this page means '
   '*small town, low traffic, repeated* — it does **not** mean *proven*. Most of these '
@@ -128,16 +129,19 @@ w('')
 # ---- the table --------------------------------------------------------------
 w('## The table')
 w('')
-w('| # | Airport | Town (2020 census) | Field size &amp; traffic | Year | Overlap rows | Distinct dates | Erika | Charlie / TPUSA | Audited accurate | Audited inaccurate | ADS-B at the field | Tails | Overlap dates — each links to its page |')
-w('|---|---|---|---|---|---|---|---|---|---|---|---|---|---|')
+w('| # | Field-year page | Airport | Town (2020 census) | Ops / year | Passengers / year | Year | Overlap rows | Distinct dates | Erika | Charlie / TPUSA | Audited accurate | Audited inaccurate | ADS-B at the field | Tails | Overlap dates — each links to its page |')
+w('|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|')
 for i, d in enumerate(rows, 1):
     a = airports[d["code"]]
     t = TOWNS[d["code"]]
-    field = "%s, %s ft runway" % (a["airport_class"], a["runway_longest_ft"])
     dates = " · ".join(datelink(r) for r in d["items"])
-    w('| %d | [%s](/Planes/Airports/%s)<br/>%s | %s<br/><small>pop %s</small> | %s | %s | **%d** | %s | %d | %d | %s | %s | %s | %s | %s |'
-      % (i, d["code"], d["code"], a["airport_name"].replace("|", "/"),
-         t["city"], t["pop"], field, d["year"], d["n"],
+    tr = TRAFFIC[d["code"]]
+    w('| %d | **[%s %s](/Planes/example/%s_%s)** | [%s](/Planes/Airports/%s)<br/>%s | %s, %s<br/><small>pop %s</small> | %s<br/><small>%s</small> | %s<br/><small>%s</small> | %s | **%d** | %s | %d | %d | %s | %s | %s | %s | %s |'
+      % (i, t["city"], d["year"], t["file"], d["year"],
+         d["code"], d["code"], a["airport_name"].replace("|", "/"),
+         t["city"], t["abbr"], t["pop"],
+         tr["ops"], tr["ops_year"], tr["pax"], tr["pax_year"],
+         d["year"], d["n"],
          ("**%d**" % d["n_dates"]) if d["n_dates"] != d["n"] else str(d["n_dates"]),
          d["n_erika"], d["n_charlie"],
          ("**%d**" % d["n_accurate"]) if d["n_accurate"] else "0",
@@ -162,16 +166,36 @@ w('## How the ranking was built')
 w('')
 w('**The hard requirement, applied first.** A field only appears if, inside one '
   'calendar year, the record holds **two or more overlap rows at that field** and '
-  '**Erika Kirk is claimed present at that field in that year**. One visit is not a '
-  'pattern, and a pair with no Erika claim is a different question than this page asks. '
-  'Airport-years failing either test are absent — that is why fields with a single '
-  'logged overlap are not listed at all.')
+  '**Erika Kirk is claimed present at that field at least twice in that year**. One '
+  'visit is not a pattern, and a single Erika claim beside somebody else\'s is a '
+  'different question than this page asks. Field-years failing either half are absent, '
+  'and the ones that failed only the second half are named below rather than dropped.')
 w('')
-w('**Then smallest first.** Rank is by field tier, and field tier is the town the field '
-  'serves plus how much traffic the field carries, taken from the '
-  '`airport_class` and `runway_longest_ft` columns of '
-  '[`airports.csv`](/Planes/following/overview) and the 2020 US Census city population. '
-  'Ties inside one field go to the year with more overlaps.')
+w('**Then smallest first.** Each of the six fields is ranked three ways — by 2020 census '
+  'city population, by aircraft operations a year, and by passengers a year — and the three '
+  'ranks are averaged. Ties inside one field go to the year with more overlaps. The three '
+  'measures agree closely enough that the averaged order is also the order you get from town '
+  'population alone.')
+w('')
+w('**The one place they disagree is Provo, and it is worth knowing about.** '
+  'KPVU handles **184,395 aircraft operations a year** — MORE than Wichita (117,671) or '
+  'Omaha (107,914), and the second busiest field on this page by movements. It is still a '
+  'small-town field by every other measure: 889,000 passengers against Omaha\'s 5.2 million, '
+  'in a town of 115,162. The movement count is inflated by the flight school and the Duncan '
+  'Aviation maintenance base on the field, which fly circuits rather than journeys. Ranking '
+  'Provo second is a judgment that the town and the passenger traffic describe the place '
+  'better than the circuit count does — but the circuit count is printed in the table so a '
+  'reader can disagree.')
+w('')
+w('**What just missed.** These field-years hold two or more overlaps but only ONE '
+  'with Erika Kirk claimed present, so they fail the second half of the rule and have '
+  'no page: ' + ", ".join(
+      # Near-miss fields need not be in TOWNS at all — TOWNS covers only the
+      # six fields that qualify — so name them out of airports.csv.
+      "**%s %s** (%s, %d rows, %d with Erika)"
+      % (airports[m["code"]]["city"], m["year"], m["code"], m["n"], m["n_erika"])
+      for m in sorted(near_misses, key=lambda m: (m["code"], m["year"]))
+  ) + '. They are listed here so the qualifying set is not mistaken for the whole record.')
 w('')
 w('**One caution about St. Louis.** Ranking uses the field and the metro it serves, not '
   'the city limits. St. Louis city proper is 301,578 people — smaller than Wichita or '
@@ -239,11 +263,45 @@ w('')
 w('Each row cell hyperlinks to that overlap flight page.')
 w('')
 w('get all of this prompt info on bottom of ./overview.mdx')
+w('')
+w('--- follow-up request ---')
+w('')
+w('For each row, for each year.  Create a page')
+w('./{town}_{year}.mdx')
+w('')
+w('They must have Erika overlap twice in one year.')
+w('')
+w('Give dates of overlap.')
+w('Also give times.')
+w('')
+w('give the plane tail number.')
+w('')
+w('Give population of the town.')
+w('')
+w('Give a measurement of how many flights estimated per year in that airport')
+w('')
+w('Enable web search')
+w('')
+w('Build this for every row in that table above.')
+w('')
+w('in ./example/ dir.')
 w('```')
 w('')
-w('The page is generated by `_build_overview.py` in this directory, which reads '
-  '`following/overlaps.csv` and `following/airports.csv` and resolves every link out of '
-  'the target page\'s own frontmatter slug. Re-run it after either CSV changes.')
+w('**The follow-up tightened the rule.** The first version of this table asked only '
+  'that Erika Kirk be claimed at the field once in the year. \"They must have Erika '
+  'overlap twice in one year\" is stricter, and applying it dropped four field-years — '
+  'the three Lincoln years and St. Louis 2023 — from sixteen rows to twelve. Those four '
+  'are named under **What just missed** above rather than deleted, and every remaining '
+  'row has its own page.')
+w('')
+w('Everything in this directory is generated, by three scripts that live beside the '
+  'pages. `_extract_times.py` measures the clock times out of the raw recovered ADS-B '
+  'traces and writes `_times.json`. `_build_pages.py` writes the twelve '
+  '`{Town}_{Year}.mdx` pages. `_build_overview.py` writes this page, and imports its '
+  'town and traffic tables from `_build_pages.py` so the table and the pages can never '
+  'quote different numbers at each other. Every link is resolved out of the target '
+  'page\'s own frontmatter slug rather than guessed. Re-run in that order after any '
+  'change to `following/overlaps.csv` or `following/airports.csv`.')
 
 open(OUT, "w").write("\n".join(L) + "\n")
 print("wrote %s — %d airport-years, %d overlap rows scanned"

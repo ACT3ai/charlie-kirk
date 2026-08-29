@@ -1,0 +1,83 @@
+---
+displayed_sidebar: docs
+title: "Provo, Utah — 2024"
+sidebar_label: "Provo 2024"
+description: "4 claimed overlaps at Provo Municipal Airport (KPVU) during 2024, 3 of them with Erika Kirk claimed present — with the dates, the clock times measured out of the recovered ADS-B traces, the tail numbers, the town population and how many aircraft operations the field handles in a year."
+keywords:
+  - "Charlie Kirk"
+  - "Erika Kirk"
+  - "Charlie Kirk assassination"
+  - "Provo"
+  - "KPVU"
+  - "flight tracking"
+  - "ADS-B"
+  - "SU-BND"
+  - "SU-BTT"
+image: "/img/docusaurus-social-card.jpg"
+hide_table_of_contents: true
+---
+
+{/* Full-bleed marker: activates the site-wide full-width + text-wrap
+    layout in custom.css. Scoped via CSS :has(). */}
+<div className="ck-full-bleed" />
+
+<a href="/Planes/example/overview" style={{display:'inline-block', marginBottom:'1rem',
+padding:'0.35rem 0.9rem', background:'#1a73e8', color:'#fff',
+borderRadius:'4px', textDecoration:'none', fontSize:'0.9rem'}}>← All field-years</a>
+
+# Provo, Utah — 2024
+
+**In 2024 the overlap record holds 4 claimed overlaps at [Provo Municipal Airport (KPVU)](/Planes/Airports/KPVU), on 3 separate dates. Erika Kirk is claimed present on 3 of them — which is why this field-year has a page at all.**
+
+Of those 4 rows, **3 were checked against recovered ADS-B position data and put the airframe at or over this field**, and 3 carry a measured clock time below. The rest were checked and the archives held nothing — which is not the same as the aircraft being elsewhere.
+
+**Nothing here places any person aboard any aircraft.** These are aircraft positions and claimed locations, and the two are different kinds of thing.
+
+## The town and the field
+
+| | |
+|---|---|
+| Town | Provo, Utah |
+| Population | **115,162** (US Census 2020) |
+| Metro served | Wasatch Front UT |
+| Airport | Provo Municipal Airport ([KPVU](/Planes/Airports/KPVU)) |
+| Field class | public-use regional / municipal |
+| Longest runway | 8,600 ft |
+| **Aircraft operations per year** | **184,395** (2024) — about 505 a day |
+| Passengers per year | 889,000 (2024) |
+| Egyptian-registered stays logged here, all years | 8, over 220 days on the ground |
+
+An **operation** is one takeoff or one landing, so a visiting jet that arrives and departs counts twice. At KPVU that works out to roughly **505 operations a day**. Traffic figures: [Wikipedia, citing FAA](https://en.wikipedia.org/wiki/Provo_Municipal_Airport). They are not from this repo, which holds no traffic data.
+
+**Is a foreign state jet unusual here?** GENUINELY UNUSUAL. Runway length is not the issue - it takes a Falcon 7X or a G-IV easily. What Provo lacks is the customs, protocol and handling infrastructure a foreign state aircraft normally needs. Every one of these aircraft entered the US somewhere else and reached Provo on a DOMESTIC leg.
+
+## The overlaps — dates, times and tail numbers
+
+| Date | Claimed present | Tail | On the ground at this field | Closest recovered position | Sheet audit | ADS-B check | Row |
+|---|---|---|---|---|---|---|---|
+| **19 April 2024** | Erika Kirk | [SU-BND](/Planes/SU-BND/overview) | SU-BND 15:33:34–15:36:25 MDT (21:33–21:36 UTC) | SU-BND **0.02 km** at 15:33:34 MDT (21:33:34 UTC), airborne 4375 ft | inaccurate | aircraft recovered at the claimed field | [OWENS-025](/Planes/following/overlap/20240419_UT_provo_owens_025/overview) |
+| **23 April 2024** | Charlie Kirk | [SU-BTT](/Planes/SU-BTT/overview) | SU-BTT 12:12:52–12:18:45 MDT (18:12–18:18 UTC) | SU-BTT **0.00 km** at 12:13:11 MDT (18:13:11 UTC), on the ground | accurate | aircraft recovered at the claimed field | [OWENS-026](/Planes/following/overlap/20240423_UT_provo_owens_026/overview) |
+| **23 April 2024** | Charlie Kirk | [SU-BTT](/Planes/SU-BTT/overview) [SU-BND](/Planes/SU-BND/overview) | SU-BTT 12:12:52–12:18:45 MDT (18:12–18:18 UTC) | SU-BTT **0.00 km** at 12:13:11 MDT (18:13:11 UTC), on the ground | accurate | aircraft recovered at the claimed field | [SITE-004](/Planes/following/overlap/20240423_UT_salt_lake_city/overview) |
+| **8 December 2024** | Erika Kirk | [SU-BND](/Planes/SU-BND/overview) | none recovered | nothing recovered | inaccurate | no archive heard this airframe that day | [OWENS-030](/Planes/following/overlap/20241208_UT_provo_owens_030/overview) |
+
+**4 rows on 3 dates.** Where one date carries two rows, the reconstructed sheet holds the same claim twice — an audit row and a site row, say — not two separate visits. Count the dates for visits and the rows for paperwork.
+
+## Where the clock times come from
+
+**There is no time column anywhere in the source data.** `overlaps.csv` and `flights.csv` carry dates only. Every time on this page was measured for it, point by point, out of the raw ADS-B traces held in this repo under `<TAIL>/data/recovered/` — the same files the ADS-B verdicts were computed from. Local times are the field's own local clock; UTC is given beside each so nothing turns on a timezone.
+
+**3 of the 4 rows produced a measured time.** The other 1 did not, because no archive holds a trace for that airframe on that date.
+
+A blank is not a finding. Parked with the transponder off, outside volunteer receiver coverage, and a wrong claimed date all look identical from here.
+
+## What this page does and does not show
+
+* **A trace proves presence, never purpose, and never occupancy.** No archive anywhere puts Charlie Kirk, Erika Kirk or anyone else aboard any of these aircraft. Erika Kirk's itinerary is the missing document — see [Erika Kirk flights](/Planes/following/Erika_Kirk_Flights).
+* **"Claimed present" is a claim, not a record.** It is a cell on the reconstructed sheet, and on that sheet the location is often a state rather than a field. See [the overlap window definition](/Planes/following/Overlap_Window_Definition).
+* **2 of these 4 rows were audited inaccurate** and are shown anyway. They are part of the record of what was claimed, and dropping them would misrepresent how much of the claim survived.
+* **2 were audited accurate.** That means the claim matched the aircraft record on checking — not that anybody was aboard.
+* **Repetition at a field is a reason to look, not a conclusion.** Fields host maintenance, customs and fuel stops, and a jet can return to one for entirely ordinary reasons.
+
+Sources: `following/overlaps.csv` and `following/airports.csv` in this repo, as of 28 August 2026; clock times measured from the recovered traces under `Planes/<TAIL>/data/recovered/`; town population from the US Census 2020; annual traffic from [Wikipedia, citing FAA](https://en.wikipedia.org/wiki/Provo_Municipal_Airport).
+
+Back to [every qualifying field-year](/Planes/example/overview).

@@ -1,0 +1,1407 @@
+{
+ "EXTRA-002": {
+  "airport": "KOMA",
+  "date": "2024-04-09",
+  "overlap_id": "EXTRA-002",
+  "per_tail": {},
+  "tails": [],
+  "tz": "America/Chicago",
+  "tz_method": "state_table_APPROXIMATE"
+ },
+ "EXTRA-004": {
+  "airport": "KOMA",
+  "date": "2025-07-11",
+  "overlap_id": "EXTRA-004",
+  "per_tail": {},
+  "tails": [],
+  "tz": "America/Chicago",
+  "tz_method": "state_table_APPROXIMATE"
+ },
+ "EXTRA-006": {
+  "airport": "KPVU",
+  "date": "2025-09-10",
+  "overlap_id": "EXTRA-006",
+  "per_tail": {
+   "SU-BND": {
+    "closest": {
+     "alt_ft": null,
+     "km": 1.29,
+     "local": "10:05:35 MDT",
+     "on_ground": true,
+     "source": "adsb-lol",
+     "utc": "2025-09-10T16:05:35.770000Z"
+    },
+    "ground": [
+     {
+      "first": "2025-09-10T16:05:35.760000Z",
+      "first_local": "10:05:35 MDT",
+      "last": "2025-09-10T17:34:09.210000Z",
+      "last_local": "11:34:09 MDT",
+      "median_km": 1.29,
+      "n": 268
+     },
+     {
+      "first": "2025-09-10T19:40:53.450000Z",
+      "first_local": "13:40:53 MDT",
+      "last": "2025-09-10T20:29:38.710000Z",
+      "last_local": "14:29:38 MDT",
+      "median_km": 1.29,
+      "n": 315
+     }
+    ],
+    "points": 585,
+    "sources": [
+     "adsb-lol",
+     "airplanes-live"
+    ],
+    "unreadable": []
+   }
+  },
+  "tails": [
+   "SU-BND"
+  ],
+  "tz": "America/Denver",
+  "tz_method": "state_table_APPROXIMATE"
+ },
+ "OWENS-002": {
+  "airport": "KORD",
+  "date": "2022-10-20",
+  "overlap_id": "OWENS-002",
+  "per_tail": {
+   "SU-BTT": {
+    "closest": null,
+    "ground": [],
+    "points": 0,
+    "sources": [],
+    "unreadable": []
+   }
+  },
+  "tails": [
+   "SU-BTT"
+  ],
+  "tz": "America/Chicago",
+  "tz_method": "state_table_APPROXIMATE"
+ },
+ "OWENS-005": {
+  "airport": "KILG",
+  "date": "2022-11-17",
+  "overlap_id": "OWENS-005",
+  "per_tail": {
+   "SU-BTT": {
+    "closest": null,
+    "ground": [],
+    "points": 0,
+    "sources": [],
+    "unreadable": []
+   }
+  },
+  "tails": [
+   "SU-BTT"
+  ],
+  "tz": "America/New_York",
+  "tz_method": "state_table_APPROXIMATE"
+ },
+ "OWENS-009": {
+  "airport": "KILG",
+  "date": "2023-02-10",
+  "overlap_id": "OWENS-009",
+  "per_tail": {
+   "SU-BTT": {
+    "closest": null,
+    "ground": [],
+    "points": 0,
+    "sources": [],
+    "unreadable": []
+   }
+  },
+  "tails": [
+   "SU-BTT"
+  ],
+  "tz": "America/New_York",
+  "tz_method": "state_table_APPROXIMATE"
+ },
+ "OWENS-011": {
+  "airport": "KILG",
+  "date": "2023-04-06",
+  "overlap_id": "OWENS-011",
+  "per_tail": {
+   "SU-BTT": {
+    "closest": {
+     "alt_ft": -25,
+     "km": 1.63,
+     "local": "11:33:43 EDT",
+     "on_ground": false,
+     "source": "adsb-lol",
+     "utc": "2023-04-06T15:33:43.920000Z"
+    },
+    "ground": [],
+    "points": 1146,
+    "sources": [
+     "adsb-lol",
+     "airplanes-live"
+    ],
+    "unreadable": []
+   }
+  },
+  "tails": [
+   "SU-BTT"
+  ],
+  "tz": "America/New_York",
+  "tz_method": "state_table_APPROXIMATE"
+ },
+ "OWENS-012": {
+  "airport": "KICT",
+  "date": "2023-04-14",
+  "overlap_id": "OWENS-012",
+  "per_tail": {
+   "SU-BTT": {
+    "closest": {
+     "alt_ft": 5050,
+     "km": 27.58,
+     "local": "13:18:17 CDT",
+     "on_ground": false,
+     "source": "airplanes-live",
+     "utc": "2023-04-14T18:18:17.590000Z"
+    },
+    "ground": [],
+    "points": 1292,
+    "sources": [
+     "adsb-lol",
+     "airplanes-live"
+    ],
+    "unreadable": []
+   }
+  },
+  "tails": [
+   "SU-BTT"
+  ],
+  "tz": "America/Chicago",
+  "tz_method": "state_table_APPROXIMATE"
+ },
+ "OWENS-013": {
+  "airport": "KILG",
+  "date": "2023-04-20",
+  "overlap_id": "OWENS-013",
+  "per_tail": {
+   "SU-BTT": {
+    "closest": {
+     "alt_ft": null,
+     "km": 0.56,
+     "local": "13:04:07 EDT",
+     "on_ground": true,
+     "source": "airplanes-live",
+     "utc": "2023-04-20T17:04:07.450000Z"
+    },
+    "ground": [
+     {
+      "first": "2023-04-20T17:04:07.390000Z",
+      "first_local": "13:04:07 EDT",
+      "last": "2023-04-20T17:04:30.240000Z",
+      "last_local": "13:04:30 EDT",
+      "median_km": 0.68,
+      "n": 4
+     }
+    ],
+    "points": 1058,
+    "sources": [
+     "adsb-lol",
+     "airplanes-live"
+    ],
+    "unreadable": []
+   }
+  },
+  "tails": [
+   "SU-BTT"
+  ],
+  "tz": "America/New_York",
+  "tz_method": "state_table_APPROXIMATE"
+ },
+ "OWENS-018": {
+  "airport": "KILG",
+  "date": "2023-09-03",
+  "overlap_id": "OWENS-018",
+  "per_tail": {
+   "SU-BTT": {
+    "closest": null,
+    "ground": [],
+    "points": 0,
+    "sources": [],
+    "unreadable": []
+   }
+  },
+  "tails": [
+   "SU-BTT"
+  ],
+  "tz": "America/New_York",
+  "tz_method": "state_table_APPROXIMATE"
+ },
+ "OWENS-020": {
+  "airport": "KOMA",
+  "date": "2024-02-09",
+  "overlap_id": "OWENS-020",
+  "per_tail": {
+   "SU-BTT": {
+    "closest": {
+     "alt_ft": 1350,
+     "km": 0.31,
+     "local": "12:16:07 CST",
+     "on_ground": false,
+     "source": "adsb-lol",
+     "utc": "2024-02-09T18:16:07.010000Z"
+    },
+    "ground": [],
+    "points": 2103,
+    "sources": [
+     "adsb-lol",
+     "airplanes-live"
+    ],
+    "unreadable": []
+   }
+  },
+  "tails": [
+   "SU-BTT"
+  ],
+  "tz": "America/Chicago",
+  "tz_method": "state_table_APPROXIMATE"
+ },
+ "OWENS-021": {
+  "airport": "KILG",
+  "date": "2024-02-14",
+  "overlap_id": "OWENS-021",
+  "per_tail": {
+   "SU-BTT": {
+    "closest": {
+     "alt_ft": -100,
+     "km": 0.82,
+     "local": "11:38:55 EST",
+     "on_ground": false,
+     "source": "adsb-lol",
+     "utc": "2024-02-14T16:38:55.260000Z"
+    },
+    "ground": [],
+    "points": 1381,
+    "sources": [
+     "adsb-lol",
+     "airplanes-live"
+    ],
+    "unreadable": []
+   }
+  },
+  "tails": [
+   "SU-BTT"
+  ],
+  "tz": "America/New_York",
+  "tz_method": "state_table_APPROXIMATE"
+ },
+ "OWENS-022": {
+  "airport": "KICT",
+  "date": "2024-03-18",
+  "overlap_id": "OWENS-022",
+  "per_tail": {
+   "SU-BTT": {
+    "closest": null,
+    "ground": [],
+    "points": 0,
+    "sources": [],
+    "unreadable": []
+   }
+  },
+  "tails": [
+   "SU-BTT"
+  ],
+  "tz": "America/Chicago",
+  "tz_method": "state_table_APPROXIMATE"
+ },
+ "OWENS-023": {
+  "airport": "KICT",
+  "date": "2024-03-29",
+  "overlap_id": "OWENS-023",
+  "per_tail": {
+   "SU-BTT": {
+    "closest": {
+     "alt_ft": 1600,
+     "km": 1.83,
+     "local": "14:19:09 CDT",
+     "on_ground": false,
+     "source": "airplanes-live",
+     "utc": "2024-03-29T19:19:09.410000Z"
+    },
+    "ground": [],
+    "points": 1711,
+    "sources": [
+     "adsb-lol",
+     "airplanes-live"
+    ],
+    "unreadable": []
+   }
+  },
+  "tails": [
+   "SU-BTT"
+  ],
+  "tz": "America/Chicago",
+  "tz_method": "state_table_APPROXIMATE"
+ },
+ "OWENS-024": {
+  "airport": "KICT",
+  "date": "2024-04-03",
+  "overlap_id": "OWENS-024",
+  "per_tail": {
+   "SU-BTT": {
+    "closest": {
+     "alt_ft": 1675,
+     "km": 1.43,
+     "local": "08:43:30 CDT",
+     "on_ground": false,
+     "source": "airplanes-live",
+     "utc": "2024-04-03T13:43:30.310000Z"
+    },
+    "ground": [],
+    "points": 1126,
+    "sources": [
+     "adsb-lol",
+     "airplanes-live"
+    ],
+    "unreadable": []
+   }
+  },
+  "tails": [
+   "SU-BTT"
+  ],
+  "tz": "America/Chicago",
+  "tz_method": "state_table_APPROXIMATE"
+ },
+ "OWENS-025": {
+  "airport": "KPVU",
+  "date": "2024-04-19",
+  "overlap_id": "OWENS-025",
+  "per_tail": {
+   "SU-BND": {
+    "closest": {
+     "alt_ft": 4375,
+     "km": 0.02,
+     "local": "15:33:34 MDT",
+     "on_ground": false,
+     "source": "adsb-lol",
+     "utc": "2024-04-19T21:33:34.240000Z"
+    },
+    "ground": [
+     {
+      "first": "2024-04-19T21:33:34.670000Z",
+      "first_local": "15:33:34 MDT",
+      "last": "2024-04-19T21:36:25.290000Z",
+      "last_local": "15:36:25 MDT",
+      "median_km": 1.05,
+      "n": 46
+     }
+    ],
+    "points": 2120,
+    "sources": [
+     "adsb-lol",
+     "airplanes-live"
+    ],
+    "unreadable": []
+   }
+  },
+  "tails": [
+   "SU-BND"
+  ],
+  "tz": "America/Denver",
+  "tz_method": "state_table_APPROXIMATE"
+ },
+ "OWENS-026": {
+  "airport": "KPVU",
+  "date": "2024-04-23",
+  "overlap_id": "OWENS-026",
+  "per_tail": {
+   "SU-BTT": {
+    "closest": {
+     "alt_ft": null,
+     "km": 0.0,
+     "local": "12:13:11 MDT",
+     "on_ground": true,
+     "source": "adsb-lol",
+     "utc": "2024-04-23T18:13:11.070000Z"
+    },
+    "ground": [
+     {
+      "first": "2024-04-23T18:12:52.940000Z",
+      "first_local": "12:12:52 MDT",
+      "last": "2024-04-23T18:18:45.150000Z",
+      "last_local": "12:18:45 MDT",
+      "median_km": 0.56,
+      "n": 106
+     }
+    ],
+    "points": 1493,
+    "sources": [
+     "adsb-lol",
+     "airplanes-live"
+    ],
+    "unreadable": []
+   }
+  },
+  "tails": [
+   "SU-BTT"
+  ],
+  "tz": "America/Denver",
+  "tz_method": "state_table_APPROXIMATE"
+ },
+ "OWENS-027": {
+  "airport": "KILG",
+  "date": "2024-04-28",
+  "overlap_id": "OWENS-027",
+  "per_tail": {
+   "SU-BTT": {
+    "closest": {
+     "alt_ft": 0,
+     "km": 1.56,
+     "local": "13:41:20 EDT",
+     "on_ground": false,
+     "source": "adsb-lol",
+     "utc": "2024-04-28T17:41:20.170000Z"
+    },
+    "ground": [],
+    "points": 2015,
+    "sources": [
+     "adsb-lol",
+     "airplanes-live"
+    ],
+    "unreadable": []
+   }
+  },
+  "tails": [
+   "SU-BTT"
+  ],
+  "tz": "America/New_York",
+  "tz_method": "state_table_APPROXIMATE"
+ },
+ "OWENS-028": {
+  "airport": "KOMA",
+  "date": "2024-07-20",
+  "overlap_id": "OWENS-028",
+  "per_tail": {
+   "SU-BTT": {
+    "closest": null,
+    "ground": [],
+    "points": 0,
+    "sources": [],
+    "unreadable": []
+   }
+  },
+  "tails": [
+   "SU-BTT"
+  ],
+  "tz": "America/Chicago",
+  "tz_method": "state_table_APPROXIMATE"
+ },
+ "OWENS-029": {
+  "airport": "KOMA",
+  "date": "2024-08-17",
+  "overlap_id": "OWENS-029",
+  "per_tail": {
+   "SU-BTT": {
+    "closest": null,
+    "ground": [],
+    "points": 0,
+    "sources": [],
+    "unreadable": []
+   }
+  },
+  "tails": [
+   "SU-BTT"
+  ],
+  "tz": "America/Chicago",
+  "tz_method": "state_table_APPROXIMATE"
+ },
+ "OWENS-030": {
+  "airport": "KPVU",
+  "date": "2024-12-08",
+  "overlap_id": "OWENS-030",
+  "per_tail": {
+   "SU-BND": {
+    "closest": null,
+    "ground": [],
+    "points": 0,
+    "sources": [],
+    "unreadable": []
+   }
+  },
+  "tails": [
+   "SU-BND"
+  ],
+  "tz": "America/Denver",
+  "tz_method": "state_table_APPROXIMATE"
+ },
+ "OWENS-031": {
+  "airport": "KICT",
+  "date": "2025-01-12",
+  "overlap_id": "OWENS-031",
+  "per_tail": {
+   "SU-BTT": {
+    "closest": null,
+    "ground": [],
+    "points": 0,
+    "sources": [],
+    "unreadable": []
+   }
+  },
+  "tails": [
+   "SU-BTT"
+  ],
+  "tz": "America/Chicago",
+  "tz_method": "state_table_APPROXIMATE"
+ },
+ "OWENS-032": {
+  "airport": "KICT",
+  "date": "2025-01-17",
+  "overlap_id": "OWENS-032",
+  "per_tail": {
+   "SU-BTT": {
+    "closest": null,
+    "ground": [],
+    "points": 0,
+    "sources": [],
+    "unreadable": []
+   }
+  },
+  "tails": [
+   "SU-BTT"
+  ],
+  "tz": "America/Chicago",
+  "tz_method": "state_table_APPROXIMATE"
+ },
+ "OWENS-033": {
+  "airport": "KICT",
+  "date": "2025-03-15",
+  "overlap_id": "OWENS-033",
+  "per_tail": {
+   "SU-BTT": {
+    "closest": null,
+    "ground": [],
+    "points": 0,
+    "sources": [],
+    "unreadable": []
+   }
+  },
+  "tails": [
+   "SU-BTT"
+  ],
+  "tz": "America/Chicago",
+  "tz_method": "state_table_APPROXIMATE"
+ },
+ "OWENS-034": {
+  "airport": "KICT",
+  "date": "2025-03-22",
+  "overlap_id": "OWENS-034",
+  "per_tail": {
+   "SU-BTT": {
+    "closest": null,
+    "ground": [],
+    "points": 0,
+    "sources": [],
+    "unreadable": []
+   }
+  },
+  "tails": [
+   "SU-BTT"
+  ],
+  "tz": "America/Chicago",
+  "tz_method": "state_table_APPROXIMATE"
+ },
+ "OWENS-035": {
+  "airport": "KPVU",
+  "date": "2025-05-23",
+  "overlap_id": "OWENS-035",
+  "per_tail": {
+   "SU-BND": {
+    "closest": {
+     "alt_ft": null,
+     "km": 0.03,
+     "local": "14:38:06 MDT",
+     "on_ground": true,
+     "source": "airplanes-live",
+     "utc": "2025-05-23T20:38:06.210000Z"
+    },
+    "ground": [
+     {
+      "first": "2025-05-23T20:38:06.210000Z",
+      "first_local": "14:38:06 MDT",
+      "last": "2025-05-23T20:46:42.320000Z",
+      "last_local": "14:46:42 MDT",
+      "median_km": 1.09,
+      "n": 239
+     }
+    ],
+    "points": 3414,
+    "sources": [
+     "adsb-lol",
+     "airplanes-live"
+    ],
+    "unreadable": []
+   }
+  },
+  "tails": [
+   "SU-BND"
+  ],
+  "tz": "America/Denver",
+  "tz_method": "state_table_APPROXIMATE"
+ },
+ "OWENS-036": {
+  "airport": "KOMA",
+  "date": "2025-06-18",
+  "overlap_id": "OWENS-036",
+  "per_tail": {
+   "SU-BTT": {
+    "closest": {
+     "alt_ft": 32000,
+     "km": 10139.55,
+     "local": "01:28:54 CDT",
+     "on_ground": false,
+     "source": "adsb-lol",
+     "utc": "2025-06-18T06:28:54.900000Z"
+    },
+    "ground": [],
+    "points": 16,
+    "sources": [
+     "adsb-lol",
+     "airplanes-live"
+    ],
+    "unreadable": []
+   }
+  },
+  "tails": [
+   "SU-BTT"
+  ],
+  "tz": "America/Chicago",
+  "tz_method": "state_table_APPROXIMATE"
+ },
+ "OWENS-037": {
+  "airport": "KPVU",
+  "date": "2025-07-07",
+  "overlap_id": "OWENS-037",
+  "per_tail": {
+   "SU-BND": {
+    "closest": null,
+    "ground": [],
+    "points": 0,
+    "sources": [],
+    "unreadable": []
+   }
+  },
+  "tails": [
+   "SU-BND"
+  ],
+  "tz": "America/Denver",
+  "tz_method": "state_table_APPROXIMATE"
+ },
+ "OWENS-038": {
+  "airport": "KOMA",
+  "date": "2025-07-20",
+  "overlap_id": "OWENS-038",
+  "per_tail": {
+   "SU-BTT": {
+    "closest": {
+     "alt_ft": 1575,
+     "km": 1.33,
+     "local": "17:06:06 CDT",
+     "on_ground": false,
+     "source": "airplanes-live",
+     "utc": "2025-07-20T22:06:06.050000Z"
+    },
+    "ground": [],
+    "points": 3965,
+    "sources": [
+     "adsb-lol",
+     "airplanes-live"
+    ],
+    "unreadable": []
+   }
+  },
+  "tails": [
+   "SU-BTT"
+  ],
+  "tz": "America/Chicago",
+  "tz_method": "state_table_APPROXIMATE"
+ },
+ "OWENS-039": {
+  "airport": "KOMA",
+  "date": "2025-08-17",
+  "overlap_id": "OWENS-039",
+  "per_tail": {
+   "SU-BTT": {
+    "closest": {
+     "alt_ft": 1375,
+     "km": 0.5,
+     "local": "11:45:16 CDT",
+     "on_ground": false,
+     "source": "airplanes-live",
+     "utc": "2025-08-17T16:45:16.570000Z"
+    },
+    "ground": [],
+    "points": 3413,
+    "sources": [
+     "adsb-lol",
+     "airplanes-live"
+    ],
+    "unreadable": []
+   }
+  },
+  "tails": [
+   "SU-BTT"
+  ],
+  "tz": "America/Chicago",
+  "tz_method": "state_table_APPROXIMATE"
+ },
+ "OWENS-040": {
+  "airport": "KPVU",
+  "date": "2025-09-04",
+  "overlap_id": "OWENS-040",
+  "per_tail": {
+   "SU-BTT": {
+    "closest": {
+     "alt_ft": null,
+     "km": 0.16,
+     "local": "12:49:38 MDT",
+     "on_ground": true,
+     "source": "adsb-lol",
+     "utc": "2025-09-04T18:49:38.010000Z"
+    },
+    "ground": [
+     {
+      "first": "2025-09-04T18:45:52.400000Z",
+      "first_local": "12:45:52 MDT",
+      "last": "2025-09-04T18:54:07.470000Z",
+      "last_local": "12:54:07 MDT",
+      "median_km": 1.09,
+      "n": 258
+     }
+    ],
+    "points": 3127,
+    "sources": [
+     "adsb-lol",
+     "airplanes-live"
+    ],
+    "unreadable": []
+   }
+  },
+  "tails": [
+   "SU-BTT"
+  ],
+  "tz": "America/Denver",
+  "tz_method": "state_table_APPROXIMATE"
+ },
+ "OWENS-041": {
+  "airport": "KPVU",
+  "date": "2025-09-10",
+  "overlap_id": "OWENS-041",
+  "per_tail": {
+   "SU-BTT": {
+    "closest": {
+     "alt_ft": 4550,
+     "km": 0.03,
+     "local": "07:14:06 MDT",
+     "on_ground": false,
+     "source": "airplanes-live",
+     "utc": "2025-09-10T13:14:06.880000Z"
+    },
+    "ground": [
+     {
+      "first": "2025-09-10T13:07:53.650000Z",
+      "first_local": "07:07:53 MDT",
+      "last": "2025-09-10T13:13:16.090000Z",
+      "last_local": "07:13:16 MDT",
+      "median_km": 1.36,
+      "n": 125
+     }
+    ],
+    "points": 3018,
+    "sources": [
+     "adsb-lol",
+     "airplanes-live"
+    ],
+    "unreadable": []
+   }
+  },
+  "tails": [
+   "SU-BTT"
+  ],
+  "tz": "America/Denver",
+  "tz_method": "state_table_APPROXIMATE"
+ },
+ "OWENS-042": {
+  "airport": "KPVU",
+  "date": "2025-09-13",
+  "overlap_id": "OWENS-042",
+  "per_tail": {
+   "SU-BND": {
+    "closest": {
+     "alt_ft": 4500,
+     "km": 0.62,
+     "local": "12:57:40 MDT",
+     "on_ground": false,
+     "source": "airplanes-live",
+     "utc": "2025-09-13T18:57:40.780000Z"
+    },
+    "ground": [],
+    "points": 1903,
+    "sources": [
+     "adsb-lol",
+     "airplanes-live"
+    ],
+    "unreadable": []
+   }
+  },
+  "tails": [
+   "SU-BND"
+  ],
+  "tz": "America/Denver",
+  "tz_method": "state_table_APPROXIMATE"
+ },
+ "OWENS-043": {
+  "airport": "KILG",
+  "date": "2022-11-25",
+  "overlap_id": "OWENS-043",
+  "per_tail": {
+   "SU-BTT": {
+    "closest": null,
+    "ground": [],
+    "points": 0,
+    "sources": [],
+    "unreadable": []
+   }
+  },
+  "tails": [
+   "SU-BTT"
+  ],
+  "tz": "America/New_York",
+  "tz_method": "state_table_APPROXIMATE"
+ },
+ "OWENS-044": {
+  "airport": "KORD",
+  "date": "2022-12-05",
+  "overlap_id": "OWENS-044",
+  "per_tail": {
+   "SU-BTT": {
+    "closest": null,
+    "ground": [],
+    "points": 0,
+    "sources": [],
+    "unreadable": []
+   }
+  },
+  "tails": [
+   "SU-BTT"
+  ],
+  "tz": "America/Chicago",
+  "tz_method": "state_table_APPROXIMATE"
+ },
+ "OWENS-045": {
+  "airport": "KICT",
+  "date": "2023-01-12",
+  "overlap_id": "OWENS-045",
+  "per_tail": {
+   "SU-BTT": {
+    "closest": null,
+    "ground": [],
+    "points": 0,
+    "sources": [],
+    "unreadable": []
+   }
+  },
+  "tails": [
+   "SU-BTT"
+  ],
+  "tz": "America/Chicago",
+  "tz_method": "state_table_APPROXIMATE"
+ },
+ "OWENS-048": {
+  "airport": "KILG",
+  "date": "2023-03-27",
+  "overlap_id": "OWENS-048",
+  "per_tail": {
+   "SU-BTT": {
+    "closest": null,
+    "ground": [],
+    "points": 0,
+    "sources": [],
+    "unreadable": []
+   }
+  },
+  "tails": [
+   "SU-BTT"
+  ],
+  "tz": "America/New_York",
+  "tz_method": "state_table_APPROXIMATE"
+ },
+ "OWENS-049": {
+  "airport": "KICT",
+  "date": "2023-04-25",
+  "overlap_id": "OWENS-049",
+  "per_tail": {
+   "SU-BTT": {
+    "closest": null,
+    "ground": [],
+    "points": 0,
+    "sources": [],
+    "unreadable": []
+   }
+  },
+  "tails": [
+   "SU-BTT"
+  ],
+  "tz": "America/Chicago",
+  "tz_method": "state_table_APPROXIMATE"
+ },
+ "OWENS-051": {
+  "airport": "KICT",
+  "date": "2023-06-08",
+  "overlap_id": "OWENS-051",
+  "per_tail": {
+   "SU-BTT": {
+    "closest": null,
+    "ground": [],
+    "points": 0,
+    "sources": [],
+    "unreadable": []
+   }
+  },
+  "tails": [
+   "SU-BTT"
+  ],
+  "tz": "America/Chicago",
+  "tz_method": "state_table_APPROXIMATE"
+ },
+ "OWENS-052": {
+  "airport": "KILG",
+  "date": "2023-06-25",
+  "overlap_id": "OWENS-052",
+  "per_tail": {
+   "SU-BND": {
+    "closest": null,
+    "ground": [],
+    "points": 0,
+    "sources": [],
+    "unreadable": []
+   }
+  },
+  "tails": [
+   "SU-BND"
+  ],
+  "tz": "America/New_York",
+  "tz_method": "state_table_APPROXIMATE"
+ },
+ "OWENS-053": {
+  "airport": "KSTL",
+  "date": "2024-03-10",
+  "overlap_id": "OWENS-053",
+  "per_tail": {
+   "SU-BTT": {
+    "closest": null,
+    "ground": [],
+    "points": 0,
+    "sources": [],
+    "unreadable": []
+   }
+  },
+  "tails": [
+   "SU-BTT"
+  ],
+  "tz": "America/Chicago",
+  "tz_method": "state_table_APPROXIMATE"
+ },
+ "OWENS-054": {
+  "airport": "KICT",
+  "date": "2024-03-22",
+  "overlap_id": "OWENS-054",
+  "per_tail": {
+   "SU-BTT": {
+    "closest": null,
+    "ground": [],
+    "points": 0,
+    "sources": [],
+    "unreadable": []
+   }
+  },
+  "tails": [
+   "SU-BTT"
+  ],
+  "tz": "America/Chicago",
+  "tz_method": "state_table_APPROXIMATE"
+ },
+ "OWENS-055": {
+  "airport": "KOMA",
+  "date": "2024-04-15",
+  "overlap_id": "OWENS-055",
+  "per_tail": {
+   "SU-BTT": {
+    "closest": null,
+    "ground": [],
+    "points": 0,
+    "sources": [],
+    "unreadable": []
+   }
+  },
+  "tails": [
+   "SU-BTT"
+  ],
+  "tz": "America/Chicago",
+  "tz_method": "state_table_APPROXIMATE"
+ },
+ "OWENS-056": {
+  "airport": "KSTL",
+  "date": "2024-05-03",
+  "overlap_id": "OWENS-056",
+  "per_tail": {
+   "SU-BND": {
+    "closest": null,
+    "ground": [],
+    "points": 0,
+    "sources": [],
+    "unreadable": []
+   }
+  },
+  "tails": [
+   "SU-BND"
+  ],
+  "tz": "America/Chicago",
+  "tz_method": "state_table_APPROXIMATE"
+ },
+ "OWENS-057": {
+  "airport": "KSTL",
+  "date": "2024-05-10",
+  "overlap_id": "OWENS-057",
+  "per_tail": {
+   "SU-BND": {
+    "closest": null,
+    "ground": [],
+    "points": 0,
+    "sources": [],
+    "unreadable": []
+   }
+  },
+  "tails": [
+   "SU-BND"
+  ],
+  "tz": "America/Chicago",
+  "tz_method": "state_table_APPROXIMATE"
+ },
+ "OWENS-059": {
+  "airport": "KICT",
+  "date": "2024-07-05",
+  "overlap_id": "OWENS-059",
+  "per_tail": {
+   "SU-BTT": {
+    "closest": null,
+    "ground": [],
+    "points": 0,
+    "sources": [],
+    "unreadable": []
+   }
+  },
+  "tails": [
+   "SU-BTT"
+  ],
+  "tz": "America/Chicago",
+  "tz_method": "state_table_APPROXIMATE"
+ },
+ "OWENS-060": {
+  "airport": "KOMA",
+  "date": "2024-07-25",
+  "overlap_id": "OWENS-060",
+  "per_tail": {
+   "SU-BTT": {
+    "closest": null,
+    "ground": [],
+    "points": 0,
+    "sources": [],
+    "unreadable": []
+   }
+  },
+  "tails": [
+   "SU-BTT"
+  ],
+  "tz": "America/Chicago",
+  "tz_method": "state_table_APPROXIMATE"
+ },
+ "OWENS-061": {
+  "airport": "KICT",
+  "date": "2025-01-12",
+  "overlap_id": "OWENS-061",
+  "per_tail": {
+   "SU-BTT": {
+    "closest": null,
+    "ground": [],
+    "points": 0,
+    "sources": [],
+    "unreadable": []
+   }
+  },
+  "tails": [
+   "SU-BTT"
+  ],
+  "tz": "America/Chicago",
+  "tz_method": "state_table_APPROXIMATE"
+ },
+ "OWENS-062": {
+  "airport": "KOMA",
+  "date": "2025-02-08",
+  "overlap_id": "OWENS-062",
+  "per_tail": {
+   "SU-BTT": {
+    "closest": null,
+    "ground": [],
+    "points": 0,
+    "sources": [],
+    "unreadable": []
+   }
+  },
+  "tails": [
+   "SU-BTT"
+  ],
+  "tz": "America/Chicago",
+  "tz_method": "state_table_APPROXIMATE"
+ },
+ "OWENS-063": {
+  "airport": "KICT",
+  "date": "2025-03-15",
+  "overlap_id": "OWENS-063",
+  "per_tail": {
+   "SU-BTT": {
+    "closest": null,
+    "ground": [],
+    "points": 0,
+    "sources": [],
+    "unreadable": []
+   }
+  },
+  "tails": [
+   "SU-BTT"
+  ],
+  "tz": "America/Chicago",
+  "tz_method": "state_table_APPROXIMATE"
+ },
+ "OWENS-064": {
+  "airport": "KPVU",
+  "date": "2025-04-19",
+  "overlap_id": "OWENS-064",
+  "per_tail": {
+   "SU-BND": {
+    "closest": null,
+    "ground": [],
+    "points": 0,
+    "sources": [],
+    "unreadable": []
+   }
+  },
+  "tails": [
+   "SU-BND"
+  ],
+  "tz": "America/Denver",
+  "tz_method": "state_table_APPROXIMATE"
+ },
+ "OWENS-065": {
+  "airport": "KPVU",
+  "date": "2025-05-23",
+  "overlap_id": "OWENS-065",
+  "per_tail": {
+   "SU-BND": {
+    "closest": {
+     "alt_ft": null,
+     "km": 0.03,
+     "local": "14:38:06 MDT",
+     "on_ground": true,
+     "source": "airplanes-live",
+     "utc": "2025-05-23T20:38:06.210000Z"
+    },
+    "ground": [
+     {
+      "first": "2025-05-23T20:38:06.210000Z",
+      "first_local": "14:38:06 MDT",
+      "last": "2025-05-23T20:46:42.320000Z",
+      "last_local": "14:46:42 MDT",
+      "median_km": 1.09,
+      "n": 239
+     }
+    ],
+    "points": 3414,
+    "sources": [
+     "adsb-lol",
+     "airplanes-live"
+    ],
+    "unreadable": []
+   }
+  },
+  "tails": [
+   "SU-BND"
+  ],
+  "tz": "America/Denver",
+  "tz_method": "state_table_APPROXIMATE"
+ },
+ "OWENS-066": {
+  "airport": "KPVU",
+  "date": "2025-07-07",
+  "overlap_id": "OWENS-066",
+  "per_tail": {
+   "SU-BND": {
+    "closest": null,
+    "ground": [],
+    "points": 0,
+    "sources": [],
+    "unreadable": []
+   }
+  },
+  "tails": [
+   "SU-BND"
+  ],
+  "tz": "America/Denver",
+  "tz_method": "state_table_APPROXIMATE"
+ },
+ "SITE-003": {
+  "airport": "KICT",
+  "date": "2024-04-03",
+  "overlap_id": "SITE-003",
+  "per_tail": {
+   "SU-BTT": {
+    "closest": {
+     "alt_ft": 1675,
+     "km": 1.43,
+     "local": "08:43:30 CDT",
+     "on_ground": false,
+     "source": "airplanes-live",
+     "utc": "2024-04-03T13:43:30.310000Z"
+    },
+    "ground": [],
+    "points": 1126,
+    "sources": [
+     "adsb-lol",
+     "airplanes-live"
+    ],
+    "unreadable": []
+   }
+  },
+  "tails": [
+   "SU-BTT"
+  ],
+  "tz": "America/Chicago",
+  "tz_method": "state_table_APPROXIMATE"
+ },
+ "SITE-004": {
+  "airport": "KPVU",
+  "date": "2024-04-23",
+  "overlap_id": "SITE-004",
+  "per_tail": {
+   "SU-BND": {
+    "closest": null,
+    "ground": [],
+    "points": 0,
+    "sources": [],
+    "unreadable": []
+   },
+   "SU-BTT": {
+    "closest": {
+     "alt_ft": null,
+     "km": 0.0,
+     "local": "12:13:11 MDT",
+     "on_ground": true,
+     "source": "adsb-lol",
+     "utc": "2024-04-23T18:13:11.070000Z"
+    },
+    "ground": [
+     {
+      "first": "2024-04-23T18:12:52.940000Z",
+      "first_local": "12:12:52 MDT",
+      "last": "2024-04-23T18:18:45.150000Z",
+      "last_local": "12:18:45 MDT",
+      "median_km": 0.56,
+      "n": 106
+     }
+    ],
+    "points": 1493,
+    "sources": [
+     "adsb-lol",
+     "airplanes-live"
+    ],
+    "unreadable": []
+   }
+  },
+  "tails": [
+   "SU-BTT",
+   "SU-BND"
+  ],
+  "tz": "America/Denver",
+  "tz_method": "state_table_APPROXIMATE"
+ },
+ "SITE-006": {
+  "airport": "KPVU",
+  "date": "2025-09-10",
+  "overlap_id": "SITE-006",
+  "per_tail": {
+   "SU-BND": {
+    "closest": {
+     "alt_ft": null,
+     "km": 1.29,
+     "local": "10:05:35 MDT",
+     "on_ground": true,
+     "source": "adsb-lol",
+     "utc": "2025-09-10T16:05:35.770000Z"
+    },
+    "ground": [
+     {
+      "first": "2025-09-10T16:05:35.760000Z",
+      "first_local": "10:05:35 MDT",
+      "last": "2025-09-10T17:34:09.210000Z",
+      "last_local": "11:34:09 MDT",
+      "median_km": 1.29,
+      "n": 268
+     },
+     {
+      "first": "2025-09-10T19:40:53.450000Z",
+      "first_local": "13:40:53 MDT",
+      "last": "2025-09-10T20:29:38.710000Z",
+      "last_local": "14:29:38 MDT",
+      "median_km": 1.29,
+      "n": 315
+     }
+    ],
+    "points": 585,
+    "sources": [
+     "adsb-lol",
+     "airplanes-live"
+    ],
+    "unreadable": []
+   },
+   "SU-BTT": {
+    "closest": {
+     "alt_ft": 4550,
+     "km": 0.03,
+     "local": "07:14:06 MDT",
+     "on_ground": false,
+     "source": "airplanes-live",
+     "utc": "2025-09-10T13:14:06.880000Z"
+    },
+    "ground": [
+     {
+      "first": "2025-09-10T13:07:53.650000Z",
+      "first_local": "07:07:53 MDT",
+      "last": "2025-09-10T13:13:16.090000Z",
+      "last_local": "07:13:16 MDT",
+      "median_km": 1.36,
+      "n": 125
+     }
+    ],
+    "points": 3018,
+    "sources": [
+     "adsb-lol",
+     "airplanes-live"
+    ],
+    "unreadable": []
+   }
+  },
+  "tails": [
+   "SU-BTT",
+   "SU-BND"
+  ],
+  "tz": "America/Denver",
+  "tz_method": "state_table_APPROXIMATE"
+ }
+}

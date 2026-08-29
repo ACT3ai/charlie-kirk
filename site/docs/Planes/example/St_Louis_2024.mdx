@@ -1,0 +1,79 @@
+---
+displayed_sidebar: docs
+title: "St. Louis, Missouri — 2024"
+sidebar_label: "St. Louis 2024"
+description: "3 claimed overlaps at Lambert-St. Louis International Airport (KSTL) during 2024, 3 of them with Erika Kirk claimed present — with the dates, the clock times measured out of the recovered ADS-B traces, the tail numbers, the town population and how many aircraft operations the field handles in a year."
+keywords:
+  - "Charlie Kirk"
+  - "Erika Kirk"
+  - "Charlie Kirk assassination"
+  - "St. Louis"
+  - "KSTL"
+  - "flight tracking"
+  - "ADS-B"
+  - "SU-BND"
+  - "SU-BTT"
+image: "/img/docusaurus-social-card.jpg"
+hide_table_of_contents: true
+---
+
+{/* Full-bleed marker: activates the site-wide full-width + text-wrap
+    layout in custom.css. Scoped via CSS :has(). */}
+<div className="ck-full-bleed" />
+
+<a href="/Planes/example/overview" style={{display:'inline-block', marginBottom:'1rem',
+padding:'0.35rem 0.9rem', background:'#1a73e8', color:'#fff',
+borderRadius:'4px', textDecoration:'none', fontSize:'0.9rem'}}>← All field-years</a>
+
+# St. Louis, Missouri — 2024
+
+**In 2024 the overlap record holds 3 claimed overlaps at [Lambert-St. Louis International Airport (KSTL)](/Planes/Airports/KSTL), on 3 separate dates. Erika Kirk is claimed present on 3 of them — which is why this field-year has a page at all.**
+
+**No row on this page is corroborated by recovered ADS-B position data.** Every one was checked; the free archives either held nothing for the airframe that day or do not cover the date at all. That is an absence of evidence, not evidence of absence — and it is also not corroboration.
+
+**Nothing here places any person aboard any aircraft.** These are aircraft positions and claimed locations, and the two are different kinds of thing.
+
+## The town and the field
+
+| | |
+|---|---|
+| Town | St. Louis, Missouri |
+| Population | **301,578** (US Census 2020) |
+| Metro served | St. Louis metro, about 2.8 million |
+| Airport | Lambert-St. Louis International Airport ([KSTL](/Planes/Airports/KSTL)) |
+| Field class | major commercial service international |
+| Longest runway | 11,000 ft |
+| **Aircraft operations per year** | **161,300** (2025) — about 442 a day |
+| Passengers per year | 15,303,756 (2025) |
+| Egyptian-registered stays logged here, all years | 2, over 6 days on the ground |
+
+An **operation** is one takeoff or one landing, so a visiting jet that arrives and departs counts twice. At KSTL that works out to roughly **442 operations a day**. Traffic figures: [Wikipedia, citing FAA](https://en.wikipedia.org/wiki/St._Louis_Lambert_International_Airport). They are not from this repo, which holds no traffic data.
+
+**Is a foreign state jet unusual here?** NOT unusual. Lambert is the customs port for the St. Louis metro.
+
+## The overlaps — dates, times and tail numbers
+
+| Date | Claimed present | Tail | On the ground at this field | Closest recovered position | Sheet audit | ADS-B check | Row |
+|---|---|---|---|---|---|---|---|
+| **10 March 2024** | Erika Kirk | [SU-BTT](/Planes/SU-BTT/overview) | none recovered | nothing recovered | inaccurate | no archive heard this airframe that day | [OWENS-053](/Planes/following/overlap/20240310_MO_st_louis_owens_053/overview) |
+| **3 May 2024** | Erika Kirk | [SU-BND](/Planes/SU-BND/overview) | none recovered | nothing recovered | inaccurate | no archive heard this airframe that day | [OWENS-056](/Planes/following/overlap/20240503_MO_st_louis_owens_056/overview) |
+| **10 May 2024** | Erika Kirk | [SU-BND](/Planes/SU-BND/overview) | none recovered | nothing recovered | inaccurate | no archive heard this airframe that day | [OWENS-057](/Planes/following/overlap/20240510_MO_st_louis_owens_057/overview) |
+
+## Where the clock times come from
+
+**There is no time column anywhere in the source data.** `overlaps.csv` and `flights.csv` carry dates only. Every time on this page was measured for it, point by point, out of the raw ADS-B traces held in this repo under `<TAIL>/data/recovered/` — the same files the ADS-B verdicts were computed from. Local times are the field's own local clock; UTC is given beside each so nothing turns on a timezone.
+
+**No row here produced a measured time**, because no archive holds a trace for these airframes on these dates. Every "—" in the table above is that, and only that.
+
+A blank is not a finding. Parked with the transponder off, outside volunteer receiver coverage, and a wrong claimed date all look identical from here.
+
+## What this page does and does not show
+
+* **A trace proves presence, never purpose, and never occupancy.** No archive anywhere puts Charlie Kirk, Erika Kirk or anyone else aboard any of these aircraft. Erika Kirk's itinerary is the missing document — see [Erika Kirk flights](/Planes/following/Erika_Kirk_Flights).
+* **"Claimed present" is a claim, not a record.** It is a cell on the reconstructed sheet, and on that sheet the location is often a state rather than a field. See [the overlap window definition](/Planes/following/Overlap_Window_Definition).
+* **3 of these 3 rows were audited inaccurate** and are shown anyway. They are part of the record of what was claimed, and dropping them would misrepresent how much of the claim survived.
+* **Repetition at a field is a reason to look, not a conclusion.** Fields host maintenance, customs and fuel stops, and a jet can return to one for entirely ordinary reasons.
+
+Sources: `following/overlaps.csv` and `following/airports.csv` in this repo, as of 28 August 2026; clock times measured from the recovered traces under `Planes/<TAIL>/data/recovered/`; town population from the US Census 2020; annual traffic from [Wikipedia, citing FAA](https://en.wikipedia.org/wiki/St._Louis_Lambert_International_Airport).
+
+Back to [every qualifying field-year](/Planes/example/overview).

@@ -1,0 +1,80 @@
+---
+displayed_sidebar: docs
+title: "Omaha, Nebraska — 2025"
+sidebar_label: "Omaha 2025"
+description: "5 claimed overlaps at Eppley Airfield (KOMA) during 2025, 5 of them with Erika Kirk claimed present — with the dates, the clock times measured out of the recovered ADS-B traces, the tail numbers, the town population and how many aircraft operations the field handles in a year."
+keywords:
+  - "Charlie Kirk"
+  - "Erika Kirk"
+  - "Charlie Kirk assassination"
+  - "Omaha"
+  - "KOMA"
+  - "flight tracking"
+  - "ADS-B"
+  - "SU-BTT"
+image: "/img/docusaurus-social-card.jpg"
+hide_table_of_contents: true
+---
+
+{/* Full-bleed marker: activates the site-wide full-width + text-wrap
+    layout in custom.css. Scoped via CSS :has(). */}
+<div className="ck-full-bleed" />
+
+<a href="/Planes/example/overview" style={{display:'inline-block', marginBottom:'1rem',
+padding:'0.35rem 0.9rem', background:'#1a73e8', color:'#fff',
+borderRadius:'4px', textDecoration:'none', fontSize:'0.9rem'}}>← All field-years</a>
+
+# Omaha, Nebraska — 2025
+
+**In 2025 the overlap record holds 5 claimed overlaps at [Eppley Airfield (KOMA)](/Planes/Airports/KOMA), on 5 separate dates. Erika Kirk is claimed present on 5 of them — which is why this field-year has a page at all.**
+
+Of those 5 rows, **2 were checked against recovered ADS-B position data and put the airframe at or over this field**, and 3 carry a measured clock time below. The rest were checked and the archives held nothing — which is not the same as the aircraft being elsewhere.
+
+**Nothing here places any person aboard any aircraft.** These are aircraft positions and claimed locations, and the two are different kinds of thing.
+
+## The town and the field
+
+| | |
+|---|---|
+| Town | Omaha, Nebraska |
+| Population | **486,051** (US Census 2020) |
+| Metro served | Omaha-Lincoln NE |
+| Airport | Eppley Airfield ([KOMA](/Planes/Airports/KOMA)) |
+| Field class | commercial service international - largest airport in Nebraska |
+| Longest runway | 9,500 ft |
+| **Aircraft operations per year** | **107,914** (2025) — about 296 a day |
+| Passengers per year | 5,225,232 (2025) |
+| Egyptian-registered stays logged here, all years | 7, over 0 days on the ground |
+
+An **operation** is one takeoff or one landing, so a visiting jet that arrives and departs counts twice. At KOMA that works out to roughly **296 operations a day**. Traffic figures: [Wikipedia, citing FAA and the airport authority](https://en.wikipedia.org/wiki/Eppley_Airfield). They are not from this repo, which holds no traffic data.
+
+**Is a foreign state jet unusual here?** NOT unusual on its own. Eppley is a customs port of entry; it is exactly where an inbound foreign aircraft should clear.
+
+## The overlaps — dates, times and tail numbers
+
+| Date | Claimed present | Tail | On the ground at this field | Closest recovered position | Sheet audit | ADS-B check | Row |
+|---|---|---|---|---|---|---|---|
+| **8 February 2025** | Erika Kirk | [SU-BTT](/Planes/SU-BTT/overview) | none recovered | nothing recovered | inaccurate | no archive heard this airframe that day | [OWENS-062](/Planes/following/overlap/20250208_NE_omaha_owens_062/overview) |
+| **18 June 2025** | Erika Kirk | [SU-BTT](/Planes/SU-BTT/overview) | none recovered | SU-BTT **10139.55 km** at 01:28:54 CDT (06:28:54 UTC), airborne 32000 ft | inaccurate | **refuted — the airframe was somewhere else** | [OWENS-036](/Planes/following/overlap/20250618_NE_omaha_lincoln_owens_036/overview) |
+| **11 July 2025** | Erika Kirk | none claimed | none recovered | nothing recovered | not audited | no tail number was claimed, nothing to test | [EXTRA-004](/Planes/following/overlap/20250711_NE_omaha_extra_004/overview) |
+| **20 July 2025** | Erika Kirk | [SU-BTT](/Planes/SU-BTT/overview) | none recovered | SU-BTT **1.33 km** at 17:06:06 CDT (22:06:06 UTC), airborne 1575 ft | partial | aircraft recovered at the claimed field | [OWENS-038](/Planes/following/overlap/20250720_NE_omaha_lincoln_owens_038/overview) |
+| **17 August 2025** | Erika Kirk | [SU-BTT](/Planes/SU-BTT/overview) | none recovered | SU-BTT **0.50 km** at 11:45:16 CDT (16:45:16 UTC), airborne 1375 ft | partial | aircraft recovered at the claimed field | [OWENS-039](/Planes/following/overlap/20250817_NE_omaha_lincoln_owens_039/overview) |
+
+## Where the clock times come from
+
+**There is no time column anywhere in the source data.** `overlaps.csv` and `flights.csv` carry dates only. Every time on this page was measured for it, point by point, out of the raw ADS-B traces held in this repo under `<TAIL>/data/recovered/` — the same files the ADS-B verdicts were computed from. Local times are the field's own local clock; UTC is given beside each so nothing turns on a timezone.
+
+**3 of the 5 rows produced a measured time.** The other 2 did not, because no archive holds a trace for that airframe on that date.
+
+A blank is not a finding. Parked with the transponder off, outside volunteer receiver coverage, and a wrong claimed date all look identical from here.
+
+## What this page does and does not show
+
+* **A trace proves presence, never purpose, and never occupancy.** No archive anywhere puts Charlie Kirk, Erika Kirk or anyone else aboard any of these aircraft. Erika Kirk's itinerary is the missing document — see [Erika Kirk flights](/Planes/following/Erika_Kirk_Flights).
+* **"Claimed present" is a claim, not a record.** It is a cell on the reconstructed sheet, and on that sheet the location is often a state rather than a field. See [the overlap window definition](/Planes/following/Overlap_Window_Definition).
+* **2 of these 5 rows were audited inaccurate** and are shown anyway. They are part of the record of what was claimed, and dropping them would misrepresent how much of the claim survived.
+* **Repetition at a field is a reason to look, not a conclusion.** Fields host maintenance, customs and fuel stops, and a jet can return to one for entirely ordinary reasons.
+
+Sources: `following/overlaps.csv` and `following/airports.csv` in this repo, as of 28 August 2026; clock times measured from the recovered traces under `Planes/<TAIL>/data/recovered/`; town population from the US Census 2020; annual traffic from [Wikipedia, citing FAA and the airport authority](https://en.wikipedia.org/wiki/Eppley_Airfield).
+
+Back to [every qualifying field-year](/Planes/example/overview).
