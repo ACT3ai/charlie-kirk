@@ -37,7 +37,7 @@ A DIAMOND is the strongest thing on the chart: the jet transmitting from ON THE
 GROUND at the named field. A trace still proves presence, never purpose, and
 never occupancy — it places nobody aboard.
 
-Design spec: ../goals.mdx  (audience, framing, sizing, percentages, on-image text)
+Design spec: goals.mdx (same directory)  (audience, framing, sizing, percentages, on-image text)
 """
 
 import csv, collections, os, sys, html

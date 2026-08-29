@@ -797,10 +797,31 @@ When it comes to the issue of trains, planes, following Charlie Kirk, we have th
 
 
 
-== Infographics (info_graphics/) ==
+== Infographics (site/internals/static/img/infographics/) ==
 
-INFO_GRAPHICS_DIR dir is {ROOT_DIR}/info_graphics/
+INFO_GRAPHICS_DIR dir is {SITE_DIR}/internals/static/img/infographics/
 NANO_BANANA_4K is file ~/BGit/all/tools/Nano_Banana_4K/nb_4k.js
+
+MOVED 2026-08-28. This used to be {ROOT_DIR}/info_graphics/, which sat OUTSIDE
+the site tree and so could not serve its own image — the picture had to be copied
+to a second place before any page could show it. Everything moved whole into
+{SITE_DIR}/internals/static/img/infographics/ and {ROOT_DIR}/info_graphics/ no
+longer exists. Anything still naming the old path is stale. Only the LOCATION
+changed; the goals.mdx and prompt contract below is unchanged.
+
+`docusaurus.config.ts` sets `staticDirectories: ["internals/static"]`, so every
+file under there is copied verbatim into the build and served from the site root:
+
+  file    {SITE_DIR}/internals/static/img/infographics/{topic}/{topic}.jpg
+  URL     /img/infographics/{topic}/{topic}.jpg
+
+That is the only place in this repo where dropping an image in a directory makes
+it fetchable at a stable URL with no import and no copy. An image left under
+{SITE_DIR}/docs/ is NOT served that way — a literal <img src="..."> in MDX is not
+processed by webpack, so it 404s for every real visitor while looking fine
+locally. The goals and prompt files travel with the image and become fetchable
+too; that is intended, so never put anything in one of these directories that is
+not safe to publish.
 
 Infographics are planned here before any image is generated. They are used across
 the whole public site. One directory per infographic topic:
@@ -813,6 +834,15 @@ the whole public site. One directory per infographic topic:
 TOPIC is the directory name and behaves like a page key: one or two words,
 underscores between them, no spaces and no special characters. Examples:
 Following_Planes, Bullet_vs_Explosive, Sept10_Timeline, Erika_Overlaps.
+
+When the infographic is about ONE AIRCRAFT, the directory is {TAIL}_{Type} — the
+tail number plus the infographic type, same rules. There is normally one type per
+plane and a plane may gain more types over time; one directory each, never two
+graphics in one directory. Examples: N1098L_Flight_Record, N102DZ_Erased_Record,
+SU_BTT_Ground_Contacts. Templates to copy from live in
+{SITE_DIR}/docs/Planes/info_graphic/ and the rules for them are in
+{SITE_DIR}/docs/Planes/CLAUDE.md, including the PLOTTED vs MODEL-GENERATED rule
+that a generative model draws a plausible chart, not a real one.
 
 Always 16:9. Always 2K. Every infographic on this site uses that shape so they
 sit together consistently on the pages, and 2K is the readable-but-not-enormous
@@ -1243,12 +1273,22 @@ while building them, and any future work on this data must not reintroduce them:
 === Infographics ===
 
 DIR:
-* info_graphics/{Topic}/: One directory per infographic — goals.mdx (the plan),
-  nana_banana_pro_prompt.txt (the generation prompt written FROM goals.mdx), and
-  the generated .jpg/.png. See the "Infographics" section above.
-* info_graphics/Overlap_Timeline/: Also carries generate_overlap_timeline.py —
-  a deterministic Python renderer, showing an infographic can be CODE-generated
-  rather than model-generated when the data must be exact.
+* site/internals/static/img/infographics/{Topic}/: One directory per infographic
+  — goals.mdx (the plan), nana_banana_pro_prompt.txt (the generation prompt
+  written FROM goals.mdx), and the generated .jpg/.png, served at
+  /img/infographics/{Topic}/. See the "Infographics" section above. MOVED here
+  from {ROOT_DIR}/info_graphics/ on 2026-08-28; that directory is gone.
+* site/internals/static/img/infographics/Overlap_Timeline/: Also carries
+  generate_overlap_timeline.py — a deterministic Python renderer, showing an
+  infographic can be CODE-generated rather than model-generated when the data
+  must be exact. The published artefact is the SVG one level up at
+  /img/infographics/Overlap_Timeline.svg; the .jpg beside the script is a DESIGN
+  REFERENCE ONLY — the 2026-08-26 model render spelled every string correctly and
+  got every bar wrong.
+* site/docs/Planes/info_graphic/: Infographic TEMPLATES for the Planes section —
+  _goals_template.mdx and _nana_banana_pro_prompt_template.txt. Templates only;
+  underscore-prefixed so Docusaurus never publishes them. No finished infographic
+  ever lives under site/docs/ — it cannot be served from there.
 
 
 === Pushing This Repo ===

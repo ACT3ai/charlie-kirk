@@ -1,0 +1,125 @@
+# Infographic Goal — {TAIL}_{Type}
+
+TEMPLATE. Copy this file to
+`site/internals/static/img/infographics/{TAIL}_{Type}/goals.mdx` and fill in
+every section below. Delete these three lines when you do.
+
+Plan the whole graphic HERE, before a single prompt word is written. The
+generation prompt is written FROM this file, after this file is finished.
+
+## Target pages
+
+The FULL PATH to every page this infographic is made for. Primary first, then
+every secondary page that reuses the same image. If it targets more than one
+page, list every one of them.
+
+    Primary:    ~/BGit/Bryan_git/charlie-kirk/site/docs/Planes/{TAIL}/overview.mdx
+    Secondary:  ~/BGit/Bryan_git/charlie-kirk/site/docs/Planes/...
+
+Output image:
+
+    ~/BGit/Bryan_git/charlie-kirk/site/internals/static/img/infographics/{TAIL}_{Type}/{TAIL}_{Type}.jpg
+
+Served at:
+
+    /img/infographics/{TAIL}_{Type}/{TAIL}_{Type}.jpg
+
+Aspect 16:9. Resolution 2K. Both are fixed for every infographic on this site.
+
+## Audience
+
+Who is looking at this. What they already believe, what they already know, and
+what they are scanning for. On the Planes pages this is usually a reader who has
+seen a tail number in an X post and arrived with either "this proves shadowing"
+or "this was debunked" already in their head. Write for both.
+
+## What they should learn
+
+The takeaway, stated as the ONE SENTENCE the reader should be able to say out
+loud after four seconds of looking.
+
+## Conceptual framing
+
+The metaphor, the structure, the shape of the argument the picture makes.
+
+## What we are educating on
+
+The actual content being taught.
+
+## Perspective
+
+What the reader gets perspective ON — what they currently cannot see that this
+image makes visible.
+
+## Polarity and scope
+
+Are we zooming IN on one detail or widening OUT to show scale? Often both, and
+the tension between the two is the graphic. Say how the zoom level is expressed
+visually.
+
+## Numbers
+
+Every number that appears, what it means, and how it is communicated (a big
+numeral, a count of repeated marks, a bar, a ratio). Name the numbers we
+deliberately leave out, and why.
+
+EVIDENCE RULE FOR PLANES INFOGRAPHICS. Every number on a Planes infographic must
+be traceable to a file in this repo — `overlaps.csv`, `flights.csv`,
+`tpusa_events.csv`, `aircraft_costs.csv`, or a recovered trace under
+`site/docs/Planes/{TAIL}/data/recovered/`. Say which file each number came from.
+
+## Sizing
+
+What is bigger and what is smaller, and why. Size carries importance; state the
+importance ranking that drives it.
+
+## Framing and placement
+
+What is frame left, frame right, higher, lower. What sits inside a frame/box/card
+and what is unframed and bleeds. If there is a timeline, say explicitly how time
+is expressed — left-to-right axis, stacked bands, a spiral, converging lines.
+
+## Screen percentages
+
+Roughly what share of the frame each concept takes. Assign these and reconcile
+them against the frame-left / frame-right decision above. General guidance, not
+a pixel constraint.
+
+## Order of understanding
+
+A NUMBERED list, most important first.
+
+1. Introduces the concept and the issue the reader should be trying to understand.
+2. The first thing they should actually understand.
+3. ...
+4. ...
+5. ...
+
+This ordering drives the sizing and placement above: higher priority gets larger
+and lands where the eye goes first.
+
+## On-image text
+
+Every word that appears in the image, written out in its FINAL wording — not a
+description of the wording. The title across the top, the subline, section
+labels, callouts, the source line. People scan; the title alone has to tell them
+what this is about.
+
+## What this image must NOT claim
+
+Required section on this site. A trace proves presence, never purpose, and never
+occupancy — it places nobody aboard. An absence proves that a volunteer network
+heard nothing, not that an aircraft was elsewhere. Name here, explicitly, the
+claim a careless reader might take from the picture that the data does not
+support, and say how the layout or a caption prevents it.
+
+## Model-generated vs plotted
+
+Say which this is:
+
+* PLOTTED — rendered by a script straight out of a CSV. Every mark is real. This
+  is the only kind that may be published as a chart with numbers in it.
+* MODEL-GENERATED — rendered by NanoBanana / GPT Imagine from the prompt. A
+  generative model draws a PLAUSIBLE chart, it does not plot a real one. Fine for
+  a conceptual or diagrammatic graphic; never for one a reader would read values
+  off. See the Overlap_Timeline case in `site/docs/Planes/CLAUDE.md`.

@@ -1,0 +1,59 @@
+TEMPLATE. Copy this file to
+site/internals/static/img/infographics/{TAIL}_{Type}/nana_banana_pro_prompt.txt
+and rewrite it completely from the finished goals.mdx. Delete these three lines
+when you do.
+
+This whole file is sent to the model as the prompt. It is RAW TEXT. No markdown
+syntax, no headers, no bullets with asterisks, no code fences. Prose and plain
+lines only. Anything that looks like markup gets drawn into the picture.
+
+Write it from goals.mdx, after goals.mdx is finished, and carry everything the
+model needs: the layout, the framing and placement, the relative sizing, the
+screen percentages, the visual treatment, the timeline mechanics if there is one,
+and the EXACT text strings to render, each one in quotes so the model spells it
+correctly. State the aspect ratio in the prompt itself as well as passing it on
+the command line.
+
+What follows is the shape to fill in.
+
+A 16:9 infographic titled "{exact title string}" with the subline "{exact
+subline string}".
+
+Overall treatment: {dark ground or light ground, the palette, the type
+character, how dense it is, whether it reads as a chart, a diagram, a map, or a
+poster}.
+
+Layout: {what is frame left, what is frame right, what is upper, what is lower.
+Give the screen percentages from goals.mdx. Say what is inside a card or a box
+and what bleeds to the edge.}
+
+The dominant element is {the number 1 item from the order of understanding},
+occupying roughly {N}% of the frame at {position}. It is the largest thing in the
+picture and the eye must land on it first.
+
+Then {item 2}, at roughly {N}%, {position}, sized clearly smaller than the
+dominant element.
+
+Then {item 3}, {item 4}, {item 5} in decreasing size.
+
+Timeline mechanics, if there is a timeline: {left-to-right axis with the earliest
+date at frame left and the latest at frame right; or stacked bands; or converging
+lines. Say what the axis is labelled with and at what interval. Say what a single
+mark on it represents.}
+
+Numbers to render, exactly as written: "{number}" meaning {what it is},
+"{number}" meaning {what it is}. Do not invent additional numbers, additional
+bars, additional marks, or additional rows. Render only the values listed here.
+
+All text to render, exactly as written and correctly spelled:
+"{title}"
+"{subline}"
+"{section label}"
+"{section label}"
+"{callout}"
+"{source line}"
+
+Do not add any text that is not in the list above. Do not add a logo, a
+watermark, a signature, a URL, or a caption of the model's own.
+
+Aspect ratio 16:9.
