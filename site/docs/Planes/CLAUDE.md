@@ -306,12 +306,44 @@ carries it, so the identity is visible without opening anything.
         it) and a HATCHED near-field pass (heard within 15 km of the field while
         AIRBORNE - a measured window, and never a landing).
 
+  {PLANES_DIR}/info_graphic/code/measure_windows.py
+        MEASURES the windows, and measures ONLY. Walks every row of
+        overlaps.csv, resolves the claimed field out of the OurAirports
+        database, and reports per tail: the ground contacts within 8 km, the
+        airborne windows within 15 km, and the closest position of the day. It
+        applies NO altitude limit and makes no judgement - a tail with no
+        payload comes back with zero points and an empty `queried` list, which
+        is an unheld question and NOT an absence.
+            python3 measure_windows.py [--out PATH] [--verify]
+        Verified against the first run's windows: 610 of 616 tail-records
+        identical, the 6 differing only in point COUNTS where one archive was
+        stored as both .json and .json.gz and the old throwaway script counted
+        it twice. No drawn window changed shape.
+
   {PLANES_DIR}/info_graphic/code/build_info_yaml.py
-        Writes the info.yaml files by MEASURING the windows out of the recovered
-        traces, so a digit cannot be transposed between the archive and the
-        picture, and writes ledger.csv covering every candidate row - drawn or
-        skipped, with the skip reasons kept distinct.
+        Writes the info.yaml files from those measured windows, so a digit
+        cannot be transposed between the archive and the picture, and writes
+        ledger.csv covering every candidate row - drawn or skipped, with the
+        skip reasons kept distinct. Its scope is DATA-DRIVEN: pick_build() walks
+        every measured row, so "all the overlaps" is a property of the code
+        rather than of who remembered to add a line to a list.
             python3 build_info_yaml.py [--check]
+        It is also where a near-field window is JUDGED. Within 15 km is a circle
+        30 km across and a jet at cruise crosses one regularly, so a window is
+        drawn as a pass only when its lowest altitude is within 6,000 ft of the
+        field's own elevation. Measuring and judging live in separate scripts on
+        purpose.
+
+  {PLANES_DIR}/info_graphic/code/embed_overlap_svgs.py
+        Puts each finished SVG on the overlap page a visitor reads, between
+        CK_OVERLAP_SVG markers, at the section boundary NEAREST 30% down the
+        page and never above 18%. NOT at the top: on most of these rows the
+        picture is what WEAKENS the claim, and a reader has to have read the
+        claim first. Idempotent, never writes inside another generator's
+        markers, and it snaps to the nearest boundary rather than the next one
+        because several of these pages carry one 260-line section of embedded X
+        posts that would otherwise push the graphic to 74% down.
+            python3 embed_overlap_svgs.py [--check]
 
   {PLANES_DIR}/info_graphic/code/build_overlap_svg.ts
         THE GENERATOR. Reads info.yaml, writes the SVG. Node 22+ runs the .ts
