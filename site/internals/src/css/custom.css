@@ -554,6 +554,44 @@
 }
 /* CK_PLACED_IMAGES_END */
 
+/* CK_LEAD_IMAGE_START */
+/* The page's LEAD image — the one picture the article itself is about. It sits
+   high on the page (after the intro, above the first table or first ## section)
+   rather than in the bottom gallery, because an article's own evidence must not
+   be ranked below the cards that send a reader somewhere else. Roughly 2.25x
+   the 190px bottom-gallery thumbnail: 430px tall, capped at 760px wide so it
+   never runs the full column. object-fit: contain, so nothing is ever cropped. */
+.ck-lead-figure {
+  margin: 1.25rem 0 1.9rem 0;
+  clear: both;
+}
+.ck-lead-figure > a {
+  display: block;
+  max-width: 760px;
+  background: var(--ifm-background-surface-color, #fff);
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.28);
+  line-height: 0;
+}
+.ck-lead-img {
+  display: block;
+  width: 100%;
+  height: 430px;
+  object-fit: contain;
+  background: var(--ifm-background-surface-color, #fff);
+}
+.ck-lead-caption {
+  font-size: 0.85rem;
+  line-height: 1.4;
+  margin-top: 0.5rem;
+  max-width: 760px;
+  color: var(--ifm-color-emphasis-700);
+}
+@media (max-width: 996px) {
+  .ck-lead-img { height: 260px; }
+}
+/* CK_LEAD_IMAGE_END */
+
+
 /* CK_NAV_GALLERY_START */
 /* Owned by site/inject_nav_gallery.py. The navigation gallery injected onto
    every non-root overview page under Photos/ and Videos/: below the in-body
