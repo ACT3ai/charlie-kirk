@@ -254,3 +254,87 @@ DEAD/MOVED Utah URLs I actually hit:
   https://xchange.utcourts.gov/                                    HTTP 200 but
        a 2,044-byte JS shell only; the real app is apps.utcourts.gov/XchangeWEB
 
+================================================================================
+SECTION 6 — NEWS-HOSTED PRIMARY FILINGS (downloaded, verified, POST-CUTOFF)
+================================================================================
+Fox News hosts filings on static.foxnews.com. I scraped 5 Fox articles for
+static PDF hrefs; two real PDFs exist and BOTH downloaded clean:
+
+(1) STATE'S BINDOVER REPLY -- August 2026, NOT IN INVENTORY, top-priority target
+    https://static.foxnews.com/foxnews.com/content/uploads/2026/08/Prosecutor_Reply.pdf
+    HTTP 200, 277,548 bytes, application/pdf, 19 pages.
+    Verified by reading page 1: "FOURTH JUDICIAL DISTRICT COURT / UTAH COUNTY,
+    STATE OF UTAH ... Reply Memorandum in Support of Preliminary Hearing
+    Bindover ... Case No. 251403576 ... Judge Tony F. Graf, Jr."
+    Signed Jeffrey S. Gray (5852) Utah County Attorney; Grunander, McBride,
+    Hunt, Sturgill, Ballard. Filed 2026-08-18 per reporting.
+    This is one of the three bind-over briefs the task asked for.
+
+(2) DEFENSE BALLISTICS MOTION WITH THE ATF LAB REPORT AS AN EXHIBIT
+    https://static.foxnews.com/foxnews.com/content/uploads/2026/04/tyler-robinson-ballistics-motion.pdf
+    HTTP 200, 1,369,739 bytes, application/pdf, 29 pages.
+    "DEFENDANT'S MOTION FOR AN ORDER PROHIBITING ANY FURTHER ALTERATION OR
+     TESTING OF A BULLET JACKET FRAGMENT ... AND PERMITTING A DEFENSE EXPERT TO
+     EXAMINE AND PHOTOGRAPH THIS EVIDENCE BEFORE IT IS FURTHER ALTERED OR
+     DESTROYED..."  Nester / Novak / Burt / Visser.
+    Filed under seal 2026-01-09; UNSEALED by Judge Graf (no "private or
+    inflammatory information"); reported 2026-04-16.
+    CONTAINS AS ATTACHED EXHIBITS:
+      Exhibit 1 = the State's Notice of Intent to Conduct Non-Destructive Testing
+      Exhibit 2 = THE ATF LABORATORY REPORT ITSELF
+    ATF report language quoted in the body:
+      "The Exhibit 6A bullet jacket fragment could not be identified or excluded
+       as having been fired from the Exhibit 1 rifle based on an agreement of
+       all [discernible class characteristics]..."
+      "The Exhibit 6B through 6E lead fragments are not suitable for microscopic
+       comparison."
+      firearms producing similar general rifling characteristics to 6A "include
+       numerous makes and [models]"
+    FBI was to run a SECOND, more advanced analysis of the same fragment; the
+    motion asks to stop it / observe it / video it.
+    THIS IS THE FEDERAL-AGENCY FORENSIC RECORD IN THIS CASE and it is directly
+    on point for the site's bullet-vs-explosive line of inquiry. NOT IN INVENTORY.
+
+(3) DEFENSE BINDOVER BRIEF -- located but NOT retrievable by script
+    https://www.scribd.com/document/1072917678/Robinson-defense-probable-cause-filing
+    HTTP 200 but body is only 3,038 bytes: "Client Challenge / JavaScript is
+    disabled in your browser." Scribd bot wall. Opens in a browser.
+    Titled "Robinson defense probable cause filing". Filed ~2026-08-11.
+    HUMAN ROUTE (no payment attempted, no account created).
+
+STILL NOT LOCATED AS A FILE (searched, not found hosted anywhere):
+  * State's OPENING bindover memorandum, 28 pages, filed 2026-07-28.
+    Reported by Deseret https://www.deseret.com/utah/2026/07/29/this-is-a-close-case-state-tells-judge-in-tyler-robinson-case/
+    and KSL https://www.ksl.com/article/51603334/this-isnt-a-close-case-state-tells-judge-in-tyler-robinson-case
+    Asks Graf to bind over on ALL SEVEN counts.
+
+BINDOVER BRIEFING SCHEDULE (from KSL, confirms what to hunt for):
+    State's brief          due 2026-07-28   <-- not found as a file
+    Defense reply          due 2026-08-11   <-- Scribd only (human route)
+    State's rebuttal       due 2026-08-18   <-- HAVE IT (Fox static, above)
+    Oral argument          2026-09-01, 10:00 MDT, 4 hours
+    => AS OF TODAY (2026-08-31) THERE IS NO BINDOVER RULING YET. Nothing to find.
+
+OTHER POST-CUTOFF EVENTS CONFIRMED BUT NO DOCUMENT LOCATED:
+  * 2026-06-26 Judge Graf HELD THE PROSECUTION IN CONTEMPT for violating the
+    pretrial publicity/gag order (Deputy County Attorney Christopher Ballard
+    spoke to national media incl. TMZ about the ATF ballistics report);
+    declined to strike the death penalty as a sanction.
+      https://www.abc4.com/news/charlie-kirk-shooting/judge-ruling-tyler-robinsons-prosecution-contempt/
+      https://www.abc4.com/news/charlie-kirk-shooting/tyler-robinson-motion-contempt-prosecutors/
+      https://kjzz.com/news/local/tyler-robinsons-defense-attorneys-request-punishment-for-prosecutors-over-media-tour
+    NOTE: abc4.com (Nexstar) returns HTTP 403 to curl AND to WebFetch. Browser only.
+  * 2026-06-01 Graf ruled the July preliminary hearing STAYS PUBLIC.
+      https://www.heraldextra.com/news/2026/jun/01/judge-rules-tyler-robinsons-july-preliminary-hearing-will-remain-public/
+  * 2026-07-06..10 five-day preliminary hearing. ~50 State exhibits incl. several
+    videos of the shooting, campus surveillance, the alleged Discord confession,
+    a videotaped interview of roommate/partner Lance Twiggs, DNA results, and
+    THE AUTOPSY REPORT as State's Exhibit 11. Graf REFUSED one video exhibit
+    after the defense said it had been altered with no witness to explain the
+    alteration.
+      https://www.cnn.com/2026/07/11/us/charlie-kirk-tyler-robinson-hearing-takeaways
+      https://utahnewsdispatch.com/2026/07/10/week-of-sparring-over-evidence-in-charlie-kirk-case-ends-without-a-ruling/
+      https://www.ksl.com/article/51596294/tyler-robinson-preliminary-hearing
+    THE 50 PRELIM EXHIBITS AND THE 5 DAYS OF TRANSCRIPT ARE THE SINGLE LARGEST
+    UNCOLLECTED BODY OF PRIMARY MATERIAL. Transcript route = TranscriptWEB above.
+
