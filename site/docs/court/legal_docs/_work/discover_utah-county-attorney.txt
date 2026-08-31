@@ -149,3 +149,25 @@ PROBE https://www.utcourts.gov/en/about/media/high-profile.html -> 404|text/html
 PROBE https://www.utcourts.gov/en/about/media.html -> 404|text/html;charset=utf-8|91350
 --- youtube title ---
 <title>Tyler Robinson Trial Pool Feed - YouTube</title>
+
+--- Medical Examiner / autopsy + misc state ---
+PROBE https://health.utah.gov/medical-examiner -> 200|17402
+PROBE https://ome.health.utah.gov/ -> 000|0
+PROBE https://health.utah.gov/office-medical-examiner -> 200|17402
+PROBE https://dpsnews.utah.gov/?s=Robinson -> 200|387267
+PROBE https://www.utahcounty.gov/news/417/ -> 200|59445
+PROBE https://www.utahcounty.gov/news/418/ -> 200|59433
+PROBE https://sheriff.utahcounty.gov/ -> 200|64931
+
+--- archive.today alternate ---
+PROBE https://archive.ph/https://atty.utahcounty.gov/media/ckpr -> 429|55524
+PROBE https://archive.today/https://atty.utahcounty.gov/media/ckpr -> 429|55524
+PROBE https://archive.is/https://atty.utahcounty.gov/media/ckpr -> 429|55524
+--- county news index: robinson/kirk items ---
+
+--- FINAL CMS recheck Mon Aug 31 23:37:58 UTC 2026 ---
+PROBE https://atty.utahcounty.gov/cms/uploads/TJR_Information_49872215e3.pdf -> 503|text/html
+PROBE https://atty.utahcounty.gov/cms/uploads/2025_09_13_Press_Release_Robinson_Arrest_and_Potential_Charges_f526b4de85.pdf -> 503|text/html
+PROBE https://atty.utahcounty.gov/cms/ -> 503|text/html
+--- media/ckpr recheck ---
+ckpr -> 404
