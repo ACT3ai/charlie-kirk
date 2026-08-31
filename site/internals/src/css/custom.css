@@ -638,6 +638,82 @@
 }
 /* CK_NAV_GALLERY_END */
 
+/* CK_MEDIA_WALL_START */
+/* Owned by site/build_plane_media_pages.py — the two-column media walls on
+   /Planes/Plane-Photos and /Planes/Plane-Videos. Each tile carries its own
+   aspect-ratio inline, measured from the real pixels, so nothing is stretched
+   to the column width and nothing is cropped. */
+.ck-media-wall {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem 1.5rem;
+  margin: 1.5rem 0 2rem 0;
+  clear: both;
+  align-items: start;
+}
+.ck-media-cell {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+.ck-media-shot {
+  display: block;
+  line-height: 0;
+  background: var(--ifm-background-surface-color, #fff);
+  box-shadow: 0 2px 14px rgba(0, 0, 0, 0.35);
+  overflow: hidden;
+  transition: box-shadow 0.15s ease, transform 0.15s ease;
+}
+a.ck-media-shot:hover,
+a.ck-media-shot:focus {
+  box-shadow: 0 6px 22px rgba(0, 0, 0, 0.55);
+  transform: translateY(-2px);
+}
+/* width:100% + the inline aspect-ratio is what preserves the true shape; the
+   contain fallback covers any tile whose pixels could not be measured. */
+.ck-media-shot img,
+.ck-media-shot video {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  background: var(--ifm-background-surface-color, #fff);
+}
+.ck-media-shot video {
+  background: #000;
+}
+.ck-media-cap {
+  font-size: 0.88rem;
+  line-height: 1.5;
+  margin-top: 0.6rem;
+  color: var(--ifm-font-color-base);
+}
+.ck-media-cap a {
+  font-weight: 600;
+}
+/* The every-fourth-video interlude. Full page width, set apart from the wall
+   above and below it, and deliberately not styled as a quotation — it is the
+   site speaking, not a source. */
+.ck-media-note {
+  clear: both;
+  margin: 2.25rem 0;
+  padding: 1.1rem 1.35rem;
+  border-left: 4px solid var(--ifm-color-primary);
+  background: var(--ifm-background-surface-color, rgba(127, 127, 127, 0.08));
+  border-radius: 0 4px 4px 0;
+  line-height: 1.65;
+}
+.ck-media-note > :last-child {
+  margin-bottom: 0;
+}
+@media (max-width: 996px) {
+  .ck-media-wall {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+/* CK_MEDIA_WALL_END */
+
 /* CK_VIDEO_LAYOUT_START */
 /* Owned by videos_planning/generator/gen_videos_pages.py. Implements
    videos_planning/layout_guidelines.txt. Do not hand-edit; do not write into
