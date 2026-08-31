@@ -9,6 +9,7 @@ CHARLIE_KIRK_FILE is file ~/Library/CloudStorage/Dropbox/Bryan/Personal/Politics
 CK_INBOX is file {ROOT_DIR}/Charlie_Kirk_AI_Inbox.txt
 
 
+
 "Score Card": Score card: we're going to have a number of these score cards. This is where, when people watch the movie, they can go measure what we're doing and see if they can spot a problem. They can make decisions on these score cards.
 * The idea is we give them a list and an area, and their job is to make decisions on whether there's a problem or not in that score card area. 
 * "legal courtroom with a defense attorney SCORE CARD": 
