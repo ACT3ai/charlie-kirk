@@ -9,6 +9,10 @@ CHARLIE_KIRK_FILE is file ~/Library/CloudStorage/Dropbox/Bryan/Personal/Politics
 CK_INBOX is file {ROOT_DIR}/Charlie_Kirk_AI_Inbox.txt
 
 
+================================================================================
+SCORE CARD
+================================================================================
+
 
 "Score Card": Score card: we're going to have a number of these score cards. This is where, when people watch the movie, they can go measure what we're doing and see if they can spot a problem. They can make decisions on these score cards.
 * The idea is we give them a list and an area, and their job is to make decisions on whether there's a problem or not in that score card area. 
@@ -16,6 +20,39 @@ CK_INBOX is file {ROOT_DIR}/Charlie_Kirk_AI_Inbox.txt
 One could be the legal courtroom with a defense attorney to simulate an ideal defense attorney. Would they do things differently than the existing defense attorney? Is it problematic whether the current defense attorney is doing yes or no? 
 
 * "Fed slop narrative score card": This could be the talking points of the Fed narrative. 
+
+
+================================================================================
+NARRATIVE
+================================================================================
+
+There are two kinds of narratives. 
+
+NARRATIVE #1: "FED NARRATIVE"
+* These are things which generally tend to be true, untrue, a lie, but the government tends to push them. 
+* We want to make a bullet list of the general Fed narrative for Charlie Kirk. 
+* There is a scorecard directory under narrative. This is going to be the fed narrative scorecard. We'll later check online influencers against this scorecard. 
+* One is that Tyler Robinson sent the confession, but when the Miranda or taking him into custody happened at 3:30 or 6:20 on September 11th, that would make it impossible for him to send the confession by Discord. That's one example of one thing that's in the nev feds narrative and then where it ends up being proven to be a lie, or at least the investigation so far seems to prove it a lie. 
+* We need to map out the rest of the points of the most common fed narrative, and then map them to ones that appear to be lies so far, or at least that citizen investigators on x.com are alleging are either lies or factually incorrect. 
+* We want the Overview.mdx and the Narrative directory to have one table of contents. The top table of contents will be:
+1. Level 3 documents under there that don't have links to them otherwise
+2. The Fed narrative table of contents with its own section header there
+Below that, we'll have the score card. Below that will be narrative number 2, which we'll call Chain of Reasoning.
+
+NARRATIVE #2: "CHAINS OF REASONING"
+* There are going to be several of these. The overview.mdx will have a list, a table of contents. Number 2 is really a list of these different chains of reasoning. They go off to a page on each one, and that page will define that list of items in that list of reasoning.
+1. Why it wasn't at 30 at six
+2. Why it was a shape charge in the microphone, and that'll be a separate chain of reasoning
+3. Why were the planes that follow them spy planes, and how can we deduce which country they're from Israel?
+They'll end up being a chain of points, which tend to be facts that tend to be true. By those chains of reasoning, they will prove one of those points to be this. This is about including one or more points at the bottom of a chain of reasoning and showing different facts to go prove that along the way.
+
+
+
+
+~/BGit/Bryan_git/charlie-kirk/site/docs/Narrative> tree -d
+.
+├── fed_narrative
+└── score_card
 
 
 ================================================================================
