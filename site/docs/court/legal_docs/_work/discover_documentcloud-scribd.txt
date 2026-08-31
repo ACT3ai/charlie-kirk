@@ -1,0 +1,75 @@
+# LANE: DocumentCloud / Scribd / public doc-hosting platforms
+# case: State of Utah v. Tyler James Robinson, No. 251403576
+# run started 2026-08-31
+
+=== ACCESS NOTES ===
+curl (any UA/headers) -> HTTP 403 Cloudflare "Attention Required" on:
+  api.www.documentcloud.org, www.documentcloud.org, s3.documentcloud.org
+  => DocumentCloud blocks scripted clients by TLS fingerprint. NOT a missing doc.
+WebFetch DOES get through to api.www.documentcloud.org. Used for all enumeration below.
+
+=== DOCUMENTCLOUD PROJECT 224251 "Charlie Kirk Murder Case and Tyler Robinson" ===
+https://www.documentcloud.org/projects/224251-charlie-kirk-murder-case-and-tyler-robinson/
+46 documents. Uploader: DocumentCloud user 144356 (org 87307). Uploaded 2026-03-15/16.
+Titles carry DOCKET NUMBERS (our local inventory does not) -> valuable metadata even where we hold the PDF.
+API: https://api.www.documentcloud.org/api/documents/search/?q=%2Bproject%3A224251&per_page=100  (HTTP 200 via WebFetch)
+
+=== HIGH-VALUE DOCUMENTCLOUD HITS (post-Apr-2026, NOT in local inventory) ===
+[1] Defendant Tyler James Robinson's Preliminary Hearing Briefing, 8-11-26  (41 pp)
+    id 28551955  org 270  user 109543  created 2026-08-12
+    page:  https://www.documentcloud.org/documents/28551955-defendant-tyler-james-robinsons-preliminary-hearing-briefing-8-11-26/
+    PDF :  https://s3.documentcloud.org/documents/28551955/defendant-tyler-james-robinsons-preliminary-hearing-briefing-8-11-26.pdf
+    VERIFIED: WebFetch got a real 374.3 KB application/pdf; Utah State Courts digital signature
+    dated 2026-08-11; PDF producer "Acrobat PDFMaker 26 for Word", author "Kandice Leonard".
+    (curl on the same URL -> 403 Cloudflare, host-level bot block, not a missing file.)
+[2] Supplemental Notice Concerning Access to Evidence Presented in Open Court re Tyler Robinson (4 pp)
+    id 28443912  org 19290  created 2026-07-09
+    PDF: https://s3.documentcloud.org/documents/28443912/supplemental-notice-concerning-access-to-evidennce-presented-in-open-court-re-tyler-robinson.pdf
+    (note the typo "evidennce" IS in the real slug)
+[3] tyler robinson motion to vacate or continue march 27 2026  (69 pp!) x3 duplicate uploads
+    ids 27998184 / 27998188 / 27998189  org 27875  created 2026-04-02
+    Local inventory holds 3_27_26_Defendant's_Motion_To_Continue_Preliminary_Hearing.pdf
+    -> 69 pages strongly implies THIS COPY CARRIES THE EXHIBITS. Fuller version target.
+    PDF: https://s3.documentcloud.org/documents/27998189/tyler-robinson-motion-to-vacate-or-continue-march-27-2026.pdf
+[4] tyler robinson all docket entries as of 3-15-2026 (13 pp) id 27880533
+    PDF: https://s3.documentcloud.org/documents/27880533/tyler-robinson-all-docket-entries-as-of-3-15-2026.pdf
+[5] tyler robinson case list of all filings and hearings as of 3-15-2026 (31 pp) id 27880531
+    PDF: https://s3.documentcloud.org/documents/27880531/list-of-all-filings-and-hearings-as-of-3-15-2026.pdf
+    NOTE slug != title for this one.
+[6] 12-17-2025 defendant Motion to Disqualify prosecutor and or judge for conflict of interest - docket 250 (48 pp)
+    id 27880873 -- NOT in local inventory (we hold only the 1/12/26 reply)
+[7] 1-5-2026 prosecutor Opposition to Defendant Motion to Disqualify UCAO - docket 289 (33 pp) id 27880888
+[8] 2-13-2026 minute order on ORAL ARGUMENT of EVIDENTIARY HEARING - docket 413 id 27881507
+[9] 12-15-2025 ruling+order granting prosecutor motion to clarify pretrial/trial publicity order - docket 242
+    id 27880866 -- NOT in local inventory
+Ordering "Tyler Robinson" by created_at desc confirms 28551955 (2026-08-12) is the NEWEST
+Tyler Robinson document on DocumentCloud as of 2026-08-31.
+
+=== REV.COM PRELIMINARY HEARING TRANSCRIPTS -- ALL 5 DAYS, FREE, HTTP 200 ===
+(curl with browser UA, no login, no paywall. Full verbatim speaker-labelled transcript in the HTML.)
+ 200  863,451 B  https://www.rev.com/transcripts/ut-v-tyler-robinson---day-1
+ 200  812,482 B  https://www.rev.com/transcripts/ut-v-tyler-robinson-preliminary-hearing-day-2
+ 200  388,655 B  https://www.rev.com/transcripts/ut-v-tyler-robinson-preliminary-hearing-day-3
+ 200  794,260 B  https://www.rev.com/transcripts/ut-v-tyler-robinson-preliminary-hearing-day-4
+ 200  351,772 B  https://www.rev.com/transcripts/ut-v-tyler-robinson-preliminary-hearing-day-5
+ NOTE day 1 uses a DIFFERENT slug shape (---day-1). Guessed day-2/day-3 in that shape -> 404.
+ VERIFIED day 1: 328,256 chars of extracted text, opens
+   "Bayliff (06:57): All rise ... Judge Tony F. Graf, Jr. presiding ... Calling case 251-403-576,
+    State of Utah versus Tyler James Robinson", appearances by Grunander/McBride/Sturgill/Gray/
+    Ballard for the State and Nester/Burt/Novak/Visser for the defense, Erika Kirk present.
+ These are Rev's own ASR/human transcript, NOT the certified court reporter transcript.
+
+=== SCRIBD -> BLOCKED (human route) ===
+ https://www.scribd.com/document/1072917678/Robinson-defense-probable-cause-filing
+ HTTP 200 but body is a 3 KB Fastly "Client Challenge" JS wall. Needs a real browser.
+
+=== UTAH COUNTY ATTORNEY (primary gov host, seen in search results) ===
+ https://atty.utahcounty.gov/media/           200 (Next.js, links render via JS)
+ https://atty.utahcounty.gov/media/ckpr       404  (search result claimed this path)
+ https://atty.utahcounty.gov/cms/uploads/TJR_Information_49872215e3.pdf  503 (WAF/ratelimit)
+
+=== STILL MISSING (known to exist from press reporting) ===
+ * State's bind-over brief filed 2026-07-28
+ * State's rebuttal brief filed 2026-08-18
+ * Sept 1 2026 final-argument hearing record
+ (Deseret 7/29/26 "'This isn't a close case,' state tells judge"; KSL 51596294 confirm the schedule.)

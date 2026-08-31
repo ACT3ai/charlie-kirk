@@ -1,0 +1,126 @@
+================================================================================
+LANE: Utah news outlets that mirror court filings
+CASE: State of Utah v. Tyler James Robinson, No. 251403576
+      4th Judicial District Court, Utah County, Provo Dept. Judge Tony F. Graf Jr.
+RUN DATE: 2026-08-31
+OPERATOR: Claude Code subagent (news-mirrors-utah lane)
+================================================================================
+
+GOAL RECAP
+  (a) anything dated MAY 2026 or later (prelim hearing ~Jul 2026, bind-over briefs
+      ~Aug 2026, contempt rulings, camera/publicity motions, trial-setting orders)
+  (b) UNREDACTED / fuller versions of docs we hold only redacted
+  (c) TRANSCRIPTS of any hearing
+  (d) EXHIBITS attached to filings we hold only as parent motion
+  (e) Sept 2025 - Apr 2026 items NOT in inventory
+
+OUTLETS IN LANE
+  KSL.com / KSL-TV, Salt Lake Tribune (sltrib.com), Deseret News (deseret.com),
+  FOX 13 Salt Lake City (fox13now.com), ABC4/KTVX (abc4.com), KUTV 2News (kutv.com),
+  Daily Herald Provo (heraldextra.com), St George News, Utah News Dispatch,
+  KUER, Salt Lake City Weekly
+
+RAW LOG BELOW — every URL tried and the status actually observed
+================================================================================
+
+--------------------------------------------------------------------------------
+[1] CONFIRMED LIVE PDFs (curl HEAD with browser UA)
+--------------------------------------------------------------------------------
+HTTP 200  application/pdf  1,369,739 B
+  https://static.foxnews.com/foxnews.com/content/uploads/2026/04/tyler-robinson-ballistics-motion.pdf
+  -> Apr 2026 ballistics motion. NOT IN INVENTORY.
+
+HTTP 200  application/pdf  1,060,521 B
+  https://static.foxnews.com/foxnews.com/content/uploads/2025/12/tyler-robinson-redacted-hearing-transcript.pdf
+  -> REDACTED HEARING TRANSCRIPT (Oct 24 2025 hearing, released Dec 2025).
+     TARGET (c) TRANSCRIPT. Inventory has only the ORDER for this transcript
+     (11_13_25_Order_For_Transcript_Of_October_24,_2025_Hearing.pdf), not the
+     transcript itself.
+
+--------------------------------------------------------------------------------
+[2] DOCUMENTCLOUD PROJECT 224251 - "Charlie Kirk Murder Case and Tyler Robinson"
+--------------------------------------------------------------------------------
+Project page: https://www.documentcloud.org/projects/224251-charlie-kirk-murder-case-and-tyler-robinson/
+  curl (browser UA)  -> HTTP 403  (Cloudflare bot block)
+  WebFetch           -> HTTP 200, SPA shell only ("Loading ...")
+
+API (WORKS via WebFetch, Cloudflare-blocked to curl):
+  https://api.www.documentcloud.org/api/documents/search/?q=%2Bproject%3A224251&per_page=100
+  curl     -> Cloudflare "Attention Required!" interstitial
+  WebFetch -> HTTP 200 real JSON.  count = 46 documents.
+
+*** THIS PROJECT INDEXES EVERY DOC BY ITS DOCKET NUMBER. That is the single most
+    valuable thing found in this lane - it gives us the docket-number map that
+    our filename-based inventory lacks. Docket nos seen: 3,4,12,14,24,76,111,
+    116,117,135,137,197,211,213,242,250,289,291,293,346,348,355,366,368,406,413
+
+ASSET / DOWNLOAD HOSTS - ALL Cloudflare-blocked to scripted access:
+  HTTP 403  https://assets.documentcloud.org/documents/26098838/tyler-robinson-indictment.pdf
+  HTTP 403  https://assets.documentcloud.org/documents/26098863/tyler-robinson-tjr-information.pdf
+  HTTP 403  https://assets.documentcloud.org/documents/26090603/robinson-affidavit-of-probable-cause.pdf
+  HTTP 403  https://s3.documentcloud.org/documents/27880869/9-16-2025-bail-order-docket-4.pdf
+  HTTP 403  https://s3.documentcloud.org/documents/27880866/12-15-2025-ruling-and-order-...-docket-242.pdf
+  HTTP 403  https://s3.documentcloud.org/documents/27881507/2-13-2026-minute-order-...-docket-413.pdf
+  => DOWNLOAD OF DOCUMENTCLOUD PDFs NEEDS A HUMAN IN A REAL BROWSER.
+     No login and no payment required - it is purely an anti-bot block.
+
+DOCS IN PROJECT NOT IN OUR INVENTORY (highest value from page 1):
+  * 12-15-2025 Ruling+Order granting prosecutor motion to clarify pretrial/trial
+    publicity order - docket 242        (id 27880866)  <-- the Dec 2025 gag order!
+  * 12-17-2025 Def Motion to Disqualify prosecutor and/or judge - docket 250 (27880873)
+  * 1-5-2026 Prosecutor Opposition to Motion to Disqualify UCAO - docket 289 (27880888)
+  * 1-8-2026 Def Reply to Prosecutor Opposition re Disqualify - docket 293 (27881513)
+  * 2-13-2026 Minute order on oral argument of evidentiary hearing - docket 413 (27881507)
+  * 10-08-2025 Proposed Order Granting Motion to Preserve Evidence - docket 76 (27880875)
+  * 9-12-2025 Public safety assessment report - docket 3 (27880877)
+
+Individual DocumentCloud docs found by search (canonical viewer URLs):
+  https://www.documentcloud.org/documents/26098838-tyler-robinson-indictment/
+  https://www.documentcloud.org/documents/26098863-tyler-robinson-tjr-information/
+  https://www.documentcloud.org/documents/26090603-robinson-affidavit-of-probable-cause/
+
+--------------------------------------------------------------------------------
+[3] *** BREAKTHROUGH: FULL DOCKET TEXT RETRIEVED ***
+--------------------------------------------------------------------------------
+DocumentCloud id 27880533 "tyler robinson all docket entries as of 3-15-2026" (13 pp)
+  Viewer : https://www.documentcloud.org/documents/27880533-tyler-robinson-all-docket-entries-as-of-3-15-2026/
+  PDF    : https://s3.documentcloud.org/documents/27880533/tyler-robinson-all-docket-entries-as-of-3-15-2026.pdf   [curl 403 / needs browser]
+  TXT    : https://assets.documentcloud.org/documents/27880533/tyler-robinson-all-docket-entries-as-of-3-15-2026.txt
+             -> HTTP 302 redirect to:
+           https://s3.documentcloud.org/documents/27880533/tyler-robinson-all-docket-entries-as-of-3-15-2026.txt
+             -> curl: HTTP 403 (Cloudflare)
+             -> WebFetch: HTTP 200, FULL PLAIN TEXT RETURNED.  <== the working route
+
+  ** The .txt sidecar is fetchable where the .pdf is not. Every DocumentCloud doc
+     has one at the same {id}/{slug} path. This is the way to read all 46 docs in
+     the project without a browser. PDFs still need a human. **
+
+Companion doc: id 27880531 "tyler robinson case list of all filings and hearings as of 3-15-2026"
+  https://www.documentcloud.org/documents/27880531-list-of-all-filings-and-hearings-as-of-3-15-2026/
+
+Docket text saved to: docket_251403576_through_2026-03-14.txt (this directory)
+
+KEY DOCKET ENTRIES THAT ARE NOT IN OUR INVENTORY (from that text):
+  10/24/2025  Minutes Sealed/Closed Hearing (SEALED)
+  11/17/2025  TRANSADMIN TRANSCRIPT (10-24-2025) (PROTECTED)
+  11/17/2025  TRANSADMIN TRANSCRIPT (10-27-2025)
+  11/17/2025  Petition For Permission To Appeal (PRIVATE)
+  11/17/2025  Letter From Supreme Court Of Utah
+  12/11/2025  TRANSADMIN TRANSCRIPT (09-16-2025) / (09-29-2025) / (09-30-2025)
+  12/15/2025  Ruling And Order Granting State's Motion [to clarify publicity order]
+  12/19/2025  TRANSADMIN TRANSCRIPT (12-11-2025) (PRIVATE)
+  12/29/2025  Ruling And Order Re Stipulated Motion To Classify Transcript
+  12/29/2025  Order Denying The Media's Request To Intervene
+  12/29/2025  Transcript Of October 24, 2025 Hearing (PRIVATE)
+  12/31/2025  TRANSADMIN TRANSCRIPT (12-29-2025)
+  01/28/2026  TRANSADMIN TRANSCRIPT (01-16-2026)
+  02/10/2026  Notice of Lodging: Redacted Hearing Transcript
+  02/10/2026  Hearing Transcript Redacted (SEALED)
+  02/24/2026  TRANSADMIN TRANSCRIPT (02-03-2026)
+  03/05/2026  Audio Request Completed (Hughes)
+  03/12/2026  TRANSADMIN TRANSCRIPT (12-11-2025) / (10-24-2025)
+  03/13/2026  Rulings And Orders On Classification And Closure Motions
+  => TRANSCRIPTS EXIST ON THE DOCKET FOR: 9/16, 9/29, 9/30, 10/24, 10/27/2025,
+     12/11, 12/29/2025, 1/16, 2/3/2026. We hold NONE of them except the Fox
+     News redacted 10/24 copy. TARGET (c).
+

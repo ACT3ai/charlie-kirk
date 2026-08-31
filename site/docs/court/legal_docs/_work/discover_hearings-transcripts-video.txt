@@ -1,0 +1,129 @@
+# LANE: hearing recordings, video streams, transcripts, audio-recording ordering routes
+# case: State of Utah v. Tyler James Robinson, No. 251403576, 4th Jud. Dist. Utah County (Provo)
+# run date: 2026-08-31
+# tooling: yt-dlp 2025.10.14 present at /Users/bryan/Library/Python/3.9/bin/yt-dlp
+
+
+================================================================
+PASS 1 — WebSearch discovery (candidates, not yet probed)
+================================================================
+KEY FACT ESTABLISHED: preliminary hearing ran Mon 6 July 2026 - Fri 10 July 2026 (5 days),
+4th Dist. Court, Provo, Judge Tony F. Graf. Court-authorized POOL VIDEO FEED existed and was
+rebroadcast by many outlets. Day 4 = Thu 9 July 2026. Day 5 = Fri 10 July 2026.
+
+Search-result candidates (Day/date guessed from title, to be confirmed):
+  https://www.rev.com/transcripts/ut-v-tyler-robinson-preliminary-hearing-day-4   <-- COMMERCIAL TRANSCRIPT
+  https://andreaburkhart.substack.com/p/completing-the-record-of-the-tyler <-- "completing the record"
+  https://www.deseret.com/utah/2026/07/06/live-coverage-tyler-robinson-murder-trial-preliminary-hearing/
+  https://www.youtube.com/watch?v=Eqo3-4YpCWg  "LIVE: Day 5 (Final Day) ... July 10, 2026"
+  https://www.youtube.com/watch?v=i-bSd9D8dnk  "LIVE: Tyler Robinson appears in court for preliminary hearing"
+  https://www.youtube.com/watch?v=kG8PI_xFCRA  "WATCH LIVE: Public Court Hearing Held For ... Tyler Robinson"
+  https://www.youtube.com/watch?v=89ZKQIHaJpM  COURT TV Day 4
+  https://www.youtube.com/watch?v=bFwe5CwDudk  COURT TV Day 5
+  https://www.youtube.com/watch?v=6fq2kCMVMXI  COURT TV Day 1
+  https://www.youtube.com/watch?v=956YAos_AIY  "LIVE: Day 4 of hearing"
+  https://www.youtube.com/watch?v=geI1zeTb0m4  "Tyler Robinson Preliminary Hearing: Day 4 | 7.9.2026"
+  https://www.youtube.com/watch?v=cnn6tiIrK7Q  "LIVE | Day 4 ..."
+  https://www.youtube.com/watch?v=VnGiYAQ28pc  "LIVE: Day 4 ..."
+  https://www.abc4.com/news/charlie-kirk-shooting/tyler-robinson-preliminary-hearing-day-four/
+  https://www.ksl.com/article/51595867/watch-live-more-evidence-expected-in-day-4-of-tyler-robinsons-preliminary-hearing
+  https://www.cnn.com/2026/07/11/us/charlie-kirk-tyler-robinson-hearing-takeaways
+  https://www.yahoo.com/news/articles/judge-orders-release-private-hearing-183353650.html  <-- ORDERED RELEASE OF PRIVATE TRANSCRIPT
+
+================================================================
+PASS 2 — REV.COM TRANSCRIPTS  *** BIGGEST WIN OF THIS LANE ***
+================================================================
+Rev.com publishes FULL free news transcripts of the pool feed. No login, no paywall, whole
+transcript is in the page HTML. Probed each with browser UA, status + body size observed:
+
+ 200  https://www.rev.com/transcripts/ut-v-tyler-robinson---day-1                      (NOTE ODD SLUG: 3 hyphens)
+ 200  https://www.rev.com/transcripts/ut-v-tyler-robinson-preliminary-hearing-day-2
+ 200  https://www.rev.com/transcripts/ut-v-tyler-robinson-preliminary-hearing-day-3
+ 200  https://www.rev.com/transcripts/ut-v-tyler-robinson-preliminary-hearing-day-4
+ 200  https://www.rev.com/transcripts/ut-v-tyler-robinson-preliminary-hearing-day-5
+ 404  https://www.rev.com/transcripts/ut-v-tyler-robinson-preliminary-hearing-day-1     (use the ---day-1 slug)
+ 404  https://www.rev.com/transcripts/ut-v-tyler-robinson---day-2 .. ---day-5
+
+Extracted text measurements (proof they are real full transcripts, not teasers):
+  day1  60,330 words  2,684 timestamps  last ts 07:46:52
+  day2  58,689 words  2,344 timestamps  last ts 08:14:51
+  day3  24,178 words    690 timestamps  last ts 03:30:58   <-- SHORT; likely partial day or partial capture
+  day4  56,781 words  2,288 timestamps  last ts 08:23:59
+  day5  19,142 words    614 timestamps  last ts 02:39:06   <-- SHORT
+  TOTAL ~219,120 words.
+Speaker-labelled, timestamped. Verified opening of day 1: "Calling case 251-403-576, State of
+Utah versus Tyler James Robinson", Judge Tony F. Graf Jr. presiding, appearances by Grunander /
+McBride / Sturgill / Gray / Ballard for the State and Nester / Burt / Novak / Visser for defense;
+Erika Kirk present; KSL's John Wilson identified as the pool camera operator.
+COST: free. Rev's own page carries a fair-use notice. Day3/Day5 shortness is an OPEN GAP -
+cross-check against the video runtimes below.
+
+================================================================
+PASS 3 — OFFICIAL CERTIFIED COURT TRANSCRIPTS, FREE, DIRECT PDF
+================================================================
+Source page: https://andreaburkhart.substack.com/p/completing-the-record-of-the-tyler   HTTP 200
+Author Andrea Burkhart ("Bad Batch"/"Completing the record...") attached two OFFICIAL transcripts
+as Substack file downloads. BOTH DOWNLOADED AND VERIFIED (curl, browser UA):
+
+  HTTP 200  application/pdf  2,095,616 bytes  278 pages
+  https://andreaburkhart.substack.com/api/v1/file/4414a046-37e3-4bec-8284-319788c13cbe.pdf
+  Cover page reads:
+    IN THE FOURTH JUDICIAL DISTRICT COURT - PROVO / IN AND FOR PROVO COUNTY, STATE OF UTAH
+    STATE OF UTAH v. TYLER JAMES ROBINSON   Case No. 251403576
+    TRANSCRIPT OF: PRELIMINARY HEARING - DAY FOUR
+    BEFORE THE HONORABLE TONY GRAF, FOURTH DISTRICT COURT, 137 NORTH FREEDOM BOULEVARD, PROVO, UT 84601
+    JULY 9, 2026
+    Reporter: Phoebe S. Moorhead, RDR, CRR, UT CCR / Certified Court Reporter for the State of Utah
+    NOTEWORTHY REPORTING, LLC
+  (Substack labels this file "070926 State Vs Robinson". Full word index at the back.)
+
+  HTTP 200  application/pdf  1,001,766 bytes   97 pages
+  https://andreaburkhart.substack.com/api/v1/file/e151680b-97d4-40b3-831d-1ce29ee9e43f.pdf
+  Same caption; TRANSCRIPT OF: PRELIMINARY HEARING - DAY FIVE, JULY 10, 2026, same reporter.
+  (Substack labels this file "071026 State Vs Robinson".)
+
+=> This CONFIRMS the court reporter for the July 2026 preliminary hearing is
+   Phoebe S. Moorhead, RDR, CRR, UT CCR, of NOTEWORTHY REPORTING, LLC, and that the
+   official transcripts are being produced day-by-day and can be obtained.
+=> DAYS 1, 2, 3 OFFICIAL TRANSCRIPTS ARE NOT ON THIS POST. Open gap - hunt other Burkhart posts,
+   then fall back to ordering from Noteworthy Reporting / the court.
+
+Burkhart's post also documents what the pool camera did NOT show (muted testimony / unreadable
+exhibits): the reading of a note allegedly left by Robinson, Discord message statements, the
+David Engelhardt affidavit, the burnt-vs-intact note photo comparison, and ATF DNA testimony.
+Judge Graf barred exhibits from being publicly inspected or copied. That is the exhibit gap.
+
+================================================================
+PASS 4 — THE UNSEALED / REDACTED OCT 24 2025 SEALED-HEARING TRANSCRIPT
+================================================================
+Source page: https://andreaburkhart.substack.com/p/takeaways-from-the-unsealed-tyler   HTTP 200
+Three attachments, all downloaded and identified:
+
+ HTTP 200  application/pdf  1,060,521 bytes  97 pages   *** THE PRIZE ***
+ https://andreaburkhart.substack.com/api/v1/file/fb25b527-dd12-4b5b-9194-33ee893ef346.pdf
+   REDACTED TRANSCRIPT OF: SEALED MOTION HEARING
+   BEFORE THE HONORABLE TONY GRAF, FOURTH DISTRICT COURT, 137 N FREEDOM BLVD, PROVO UT 84601
+   OCTOBER 24, 2025
+   Court Reporter: Phoebe S. Moorhead, RDR, CRR, UT CSR - NOTEWORTHY REPORTING, LLC
+   (This is the transcript behind the inventory's 11_13_25_Motion_To_Reclassify_Transcript.pdf,
+    11_13_25_Order_For_Transcript_Of_October_24,_2025_Hearing.pdf, 11_3_25_Stipulated_Motion_To_
+    Classify_Transcript_And_Audio_As_Private.pdf and 12_4_25_Joint_Status_Report_Re_Transcript_
+    Redaction.pdf. We hold the MOTIONS about it; this is the DOCUMENT ITSELF.)
+
+ HTTP 200  application/pdf  214,446 bytes  9 pages
+ https://andreaburkhart.substack.com/api/v1/file/8189bd29-a134-46e7-9985-659715c22cef.pdf
+   State's MOTION TO AMEND OR CLARIFY COURT'S PRE-TRIAL AND TRIAL PUBLICITY ORDER (Dkt. #23),
+   signed Gray / Grunander / McBride / Hunt / Sturgill / Ballard, Utah County Attorney.
+   (matches inventory 11_5_25_Motion_To_Amend_Or_Clarify_Pretrial_Publicity_Order.pdf - dup, low value)
+
+ HTTP 200  application/pdf  415,727 bytes  6 pages - SCANNED IMAGE ONLY, no text layer
+ https://andreaburkhart.substack.com/api/v1/file/6ffe6f26-085b-400a-92f1-f10ad6100f98.pdf
+   (CCITT 300dpi scans; almost certainly the signed order releasing the transcript. Needs OCR.)
+
+OTHER BURKHART ATTACHMENT CACHES OBSERVED (out of this lane but real and free):
+ https://andreaburkhart.substack.com/p/tyler-robinson-search-warrant-affidavits  HTTP 200
+   -> 25 separate /api/v1/file/*.pdf attachments (search warrant affidavits set)
+ https://andreaburkhart.substack.com/p/cameras-out-of-the-tyler-robinson      HTTP 200 -> 2 PDFs
+ https://andreaburkhart.substack.com/p/read-the-tyler-robinson-gag-order      HTTP 200
+ RATE LIMIT NOTE: substack returned HTTP 429 on 7 of 11 post fetches when hit back-to-back.
+ Space requests >= 4s apart. 429 here means throttled, NOT missing.

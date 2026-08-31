@@ -1,0 +1,164 @@
+# LANE: related-dockets-foia  (adjacent legal records, NOT the main criminal docket)
+# case: State of Utah v. Tyler James Robinson, No. 251403576, 4th Jud. Dist. Utah County (Provo)
+# run date: 2026-08-31
+# Every URL below was actually probed. Status = what I actually observed.
+
+================================================================================
+SECTION 0 — SETUP
+================================================================================
+Read inventory_existing.txt: 173 docket PDFs (Sept 2025 - Apr 2026) + 1 search
+warrant affidavit (2025-09_affidavit-for-search-warrant.pdf) + mirandize/misc PDFs.
+Nothing dated May 2026 or later is held. Nothing from federal, civil, probate,
+FOIA, or ME lanes is held.
+
+================================================================================
+SECTION 1 — FEDERAL RECORDS (CourtListener / RECAP)
+================================================================================
+CourtListener SEARCH api works WITHOUT auth. The /dockets/<id>/ api does NOT:
+  https://www.courtlistener.com/api/rest/v4/dockets/73133640/   -> HTTP 401
+     {"detail":"Authentication credentials were not provided."}
+  https://www.courtlistener.com/api/rest/v4/search/?q=...&type=r -> HTTP 200 (works)
+  HTML docket pages -> HTTP 200, no login needed. Use those.
+
+Queries run (all type=r, RECAP dockets):
+  q="Tyler James Robinson"            -> count 1  (unrelated: an attorney named
+                                        Tyler Robinson in CITIZENS FOR
+                                        CONSTITUTIONAL INTEGRITY v. FCC, dcd)
+  q="Tyler Robinson"                  -> count 115 (all unrelated persons/attys)
+  q="Charlie Kirk"                    -> count 399 (aftermath cases: FCC/ABC
+                                        Kimmel, campus speech, employment
+                                        firings. NONE is the Robinson matter.)
+  q="Turning Point USA"               -> count 249 (none arising from 9/10/25)
+  q="Charlie Kirk" court=utd          -> count 5
+  q=Robinson Kirk  court=utd          -> count 30 (all pre-date the shooting
+                                        except Halvorsen)
+
+>>> FINDING: THERE IS NO FEDERAL CRIMINAL CASE AGAINST TYLER ROBINSON IN RECAP.
+    Nothing in RECAP for D. Utah names him as a defendant. The prosecution is
+    purely state. No federal grand jury filing is visible.
+
+The 5 D. Utah hits on "Charlie Kirk", checked one by one:
+  1:26-cv-00044 Smith v. City of Orem   https://www.courtlistener.com/docket/73133640/smith-v-city-of-orem/  HTTP 200
+      Filed 2026-04-02, Judge David Barlow / Cecilia Romero, 42:1983 civil rights.
+      PRO SE (Eric N. Smith) vs City of Orem, Sgt. Michael Locke, Lt. Jamison.
+      Free PDFs (both HTTP 200, downloaded, read):
+        .../recap/gov.uscourts.utd.163389/gov.uscourts.utd.163389.1.0.pdf  (485,376 B) complaint
+        .../recap/gov.uscourts.utd.163389/gov.uscourts.utd.163389.21.0.pdf (164,135 B) opp to MTD 7/8/26
+      Kirk appears ONLY as political context ("...Trump and Charlie Kirk, through
+      selective enforcement..."). NOT a wrongful-death or UVU-security case.
+      VERDICT: not case record. Marginal at best.
+  2:25-cv-00909 Halvorsen v. Cox  https://www.courtlistener.com/docket/71644146/halvorsen-v-cox/  HTTP 200
+      RICO, filed 2025-10-14, TERMINATED 2026-02-17. Pro-se-flavored. Kirk named
+      in an exhibit. Not a shooting-derived suit.
+  2:26-cv-00125 M.M. v. Brown; 2:25-cv-00987 Wilkins v. Parker;
+  2:25-cr-00362 United States v. Proctor  -- Kirk mentioned in passing only.
+
+================================================================================
+SECTION 2 — GRAMA PRODUCTIONS ALREADY PUBLISHED (BEST HIT OF THIS LANE)
+================================================================================
+JUDICIAL WATCH — UVU GRAMA production, filed 2025-11-20, released 2026-07-10.
+This is AFTER our Apr-2026 inventory cutoff and we hold none of it.
+Landing page (HTTP 200):
+  https://www.judicialwatch.org/judicial-watch-university-releases-documents-on-clean-up-of-charlie-kirk-assassination-site/
+Category index (HTTP 200):
+  https://www.judicialwatch.org/documents/categories/uvu/
+DIRECT PDFs — both probed with curl+UA, both HTTP 200, real application/pdf:
+  https://www.judicialwatch.org/wp-content/uploads/2026/06/Utah-Valley-University-Charlie-Kirk-records-prod-1-2026.pdf
+      HTTP 200, 12,084,034 bytes, 11 pages
+  https://www.judicialwatch.org/wp-content/uploads/2026/06/Utah-Valley-University-Charlie-Kirk-records-prod-2-2026.pdf
+      HTTP 200, 47,681,866 bytes, 53 pages
+  (11 + 53 = 64 pages, matches JW's stated "64 pages".)
+Content per JW: emergency cleanup + PAVING of the assassination site; an
+emergency payment request dated 9/11/2025 for $6,090.52 labeled "Clean up for
+shooting incident"; contractor text messages about keeping the work quiet.
+DIRECTLY RELEVANT to the site's evidence-destruction / hauled-away-dirt thread.
+
+Per-page permalinks JW cites in the press release (HTML wrappers, not PDFs):
+  /documents/utah-valley-university-charlie-kirk-records-prod-1-2026-pgs-9-11/
+  /documents/utah-valley-university-charlie-kirk-records-prod-2-2026-pg-41/
+  /documents/utah-valley-university-charlie-kirk-records-prod-2-2026-pg-42/
+  /documents/utah-valley-university-charlie-kirk-records-prod-2-2026-pg-49/
+  /documents/utah-valley-university-charlie-kirk-records-prod-2-2026-pgs-3-10/
+  (all under https://www.judicialwatch.org)
+
+ANDREA BURKHART SUBSTACK — "Charlie Kirk Legal Documents"
+  https://andreaburkhart.substack.com/p/charlie-kirk-legal-documents   HTTP 200
+  A 377+ docket-entry index of THIS case with PDFs rehosted on Substack CDN.
+  Compiled current as of 2025-12-24, archive ENDS EARLY FEB 2026.
+  => Adds nothing past our Apr-2026 inventory. BUT it is useful for two things:
+     (a) it lists ~90+ docket entries marked "Not obtained" -- i.e. a
+         ready-made gap list of filings nobody has bought yet;
+     (b) it names which entries are SEALED/PRIVATE (Affidavit of Indigency
+         9/16/25; Response to Unshackling Motion 10/20/25; Motion to Disqualify
+         Non-Public Information 12/10/25; Motion to Exclude Cameras Non-Public
+         Information 1/16/26; transcripts of the 12/11/25 and 12/29/25 hearings).
+  It also holds a REDACTED TRANSCRIPT OF THE 10-24-25 HEARING (filed 12/29/25)
+  -- a transcript, which our inventory does NOT have.
+
+================================================================================
+SECTION 3 — DOCUMENTCLOUD PROJECT 224251 (46 docs, docket-numbered)
+================================================================================
+  https://www.documentcloud.org/projects/224251-charlie-kirk-murder-case-and-tyler-robinson/
+Project blurb: "official court filings, docket records, and public documents from
+State of Utah v. Tyler James Robinson (Case No. 251403576) ... charging records,
+motions and orders, hearing transcripts, docket records and filings from the
+Fourth Judicial District Court in Provo."  Uploaded 2026-03-16. count = 46.
+
+ACCESS NOTE (important, tested):
+  curl WITH browser UA + Referer + Sec-Fetch-* headers to
+    https://api.www.documentcloud.org/api/documents/search/...  -> HTTP 403
+    https://www.documentcloud.org/api/documents/search/...      -> HTTP 403
+    https://s3.documentcloud.org/documents/<id>/<slug>.pdf      -> HTTP 403
+  Body is the Cloudflare "Attention Required!" interstitial in every case.
+  => Cloudflare blocks ALL scripted access to documentcloud.org and its S3 host.
+  => WebFetch DOES get through the API (it returned full JSON). A HUMAN IN A
+     BROWSER gets the PDFs with no login and no payment. This is a HUMAN ROUTE,
+     not a paywall.
+  PDF URL pattern (works in a browser):
+     https://s3.documentcloud.org/documents/{id}/{slug}.pdf
+  Viewer page pattern:
+     https://www.documentcloud.org/documents/{id}-{slug}/
+
+>>> THE TWO HIGHEST-VALUE ITEMS IN THE WHOLE LANE — they are the DOCKET INDEX,
+>>> which tells us exactly which of the 400+ entries we are missing:
+  id 27880531  "tyler robinson case list of all filings and hearings as of
+               3-15-2026"  -- 31 pages
+     https://www.documentcloud.org/documents/27880531-list-of-all-filings-and-hearings-as-of-3-15-2026/
+     https://s3.documentcloud.org/documents/27880531/list-of-all-filings-and-hearings-as-of-3-15-2026.pdf
+  id 27880533  "tyler robinson all docket entries as of 3-15-2026" -- 13 pages
+     https://www.documentcloud.org/documents/27880533-tyler-robinson-all-docket-entries-as-of-3-15-2026/
+     https://s3.documentcloud.org/documents/27880533/tyler-robinson-all-docket-entries-as-of-3-15-2026.pdf
+
+NOT IN OUR INVENTORY (checked title-by-title against inventory_existing.txt).
+These carry DOCKET NUMBERS, which none of our 173 files do:
+  27880873 12-17-2025 Defendant Motion to Disqualify prosecutor and/or judge for
+           conflict of interest - docket 250 (48 pp)   << we hold only the replies
+  27880888 1-5-2026 Prosecutor Opposition to Motion to Disqualify UCAO - dkt 289 (33 pp)
+  27881513 1-8-2026 Defendant Reply to Opposition to Motion to Disqualify - dkt 293 (7 pp)
+  27881507 2-13-2026 MINUTE ORDER on oral argument of EVIDENTIARY HEARING - dkt 413 (3 pp)
+  27881506 1-30-2026 Attachment A - internal communications at prosecutor's
+           office to cease public statements - docket 355 (5 pp)
+  27880866 12-15-2025 Ruling and order granting motion to clarify pretrial and
+           trial publicity order - docket 242 (3 pp)
+  27880875 10-08-2025 Proposed Order Granting Motion to Preserve Evidence - dkt 76 (3 pp)
+  27880874 12-4-2025 Utah Office for Victims of Crime Restitution Notice
+           Claim #1113665 - docket 211 (1 p)
+  27880877 9-12-2025 Public Safety Assessment report - docket 3 (3 pp)
+  27880862 11-4-2025 Stipulated Order re Motion to Preserve Evidence - dkt 161 (4 pp)
+  27880863 10-13-2025 Stipulated Motion for Discovery Protective Order - dkt 91 (5 pp)
+  27880858 11-10-2025 Defendant Response re Notice of Motion to Close Judicial
+           Proceedings and Records - docket 169 (7 pp)
+  27880859 10-08-2025 Copy of Video-Audio Record completed - docket 74 (2 pp)
+  27880534 Tyler Robinson Utah County Sheriff's Office INMATE CUSTODY BOOKING (1 p)
+           << booking record; bears on the Miranda/OTN timing thread
+  27880543 9-10-2025 Utah County District Attorney press release after shooting
+  27880535 9-22-2025 UCDA press release - Robinson prosecutor trial team
+  27880536-27880541 individual prosecutor biographies (Gray, Grunander, Ballard,
+           Sturgill, Hunt, McBride)
+  27880529 Tyler Robinson case search on Utah State Court "Online XChange" (2 pp)
+           << shows what XChange displays, useful for the subscription question
+
+CAP: this project was built 2026-03-16 and stops at 3-15-2026. It adds NOTHING
+dated May 2026 or later. Its value is (a) the docket index, (b) filling
+Sept-2025..Mar-2026 gaps, (c) docket numbers for everything we already hold.
+

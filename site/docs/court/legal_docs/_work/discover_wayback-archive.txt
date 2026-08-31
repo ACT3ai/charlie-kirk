@@ -1,0 +1,45 @@
+# LANE: Internet Archive / web archives
+# case: State of Utah v. Tyler James Robinson, No. 251403576
+# started 2026-08-31
+
+== STEP 1: archive.org uploaded collections ==
+archive.org/advancedsearch.php q=("Tyler Robinson" OR "Charlie Kirk") AND (court OR docket...) -> HTTP 200, numFound=168, NONE are case filings (all TV/radio/youtube captures + unrelated bankruptcy dockets gov.uscourts.almb.229380 etc.)
+archive.org/advancedsearch.php q=mediatype:texts AND ("Tyler Robinson" OR "Charlie Kirk") -> 200, numFound=68, no court-filing sets
+archive.org/advancedsearch.php q="251403576" -> 200, numFound=0
+CONCLUSION: nobody has uploaded a Robinson court-document collection to archive.org as an item.
+
+== STEP 2: CDX atty.utahcounty.gov ==
+https://web.archive.org/cdx/search/cdx?url=atty.utahcounty.gov*&output=json&... -> 200, 1229 rows, 43 unique PDFs.
+Case-relevant PDFs archived there:
+  https://atty.utahcounty.gov/cms/uploads/TJR_Information_49872215e3.pdf  (ALREADY HELD)
+  https://atty.utahcounty.gov/cms/uploads/2025_09_10_UVU_Shooting_Press_Release_3f9108991f.pdf  (NOT held - press release)
+  https://atty.utahcounty.gov/cms/uploads/2025_09_13_Press_Release_Robinson_Arrest_and_Potential_Charges_f526b4de85.pdf (NOT held - press release)
+No docket filings served from atty.utahcounty.gov. No /media/ckpr* path exists in CDX.
+
+== STEP 3: CDX utcourts.gov ==
+url=www.utcourts.gov* filter robinson -> 200, EMPTY
+url=legacy.utcourts.gov* filter robinson -> 200, EMPTY
+url=utcourts.gov matchType=domain filter urlkey ~ 251403576 -> 200, []
+Utah Courts never published case PDFs on a crawlable path.
+
+== STEP 4: THE BIG FIND (live, not archive, but it is the recovery source) ==
+https://andreaburkhart.substack.com/p/charlie-kirk-legal-documents -> HTTP 200, 788,478 bytes
+Andrea Burkhart (defense attorney / "Boiling Frogs") has RECREATED THE ENTIRE DOCKET,
+867 entries, docket #1 (Information 9-16-25) through #718-equivalent (Order to Transport 8-31-26).
+258 of them have a downloadable PDF hosted at andreaburkhart.substack.com/api/v1/file/<uuid>.pdf
+73 of those 258 are dated MAY 2026 or later == exactly the gap in our inventory.
+Verified bytes: 3 sampled URLs returned HTTP 200 content-type application/pdf starting %PDF-
+  1fea5c3c-9ed6-43fb-b179-5b196740591d.pdf  200 application/pdf 120,849 B  %PDF
+  f0671aeb-00df-4c18-b263-05f45bc33599.pdf  200 application/pdf 157,525 B  %PDF
+  bdc3d47d-c108-4dde-baa8-089f8de0f747.pdf  200 application/pdf 175,790 B  %PDF
+  4th request in a row -> HTTP 429 "Too Many Requests" -> MUST PACE (~1 req / 5-10 s)
+Full mapping written to:
+  _work/burkhart_docket_258_pdfs.tsv     (title -> url, 258 rows)
+  _work/burkhart_docket_full_867.txt     (whole recreated docket incl. "Not obtained" gaps)
+
+== STEP 5: Wayback coverage of the Burkhart PDFs ==
+CDX url=andreaburkhart.substack.com/api/v1/file* -> 200, many rows, BUT every row statuscode=302 mimetype=text/plain.
+Wayback archived the REDIRECT, not the PDF body. Playback attempt:
+  https://web.archive.org/web/20260709185335id_/https://andreaburkhart.substack.com/api/v1/file/057ecd8c-...pdf -> HTTP 503 (IA rate-limit)
+  same without id_ -> HTTP 503
+CDX for the post page itself -> HTTP 504 gateway timeout (IA overloaded); retry later.
