@@ -1,0 +1,11 @@
+FETCH LOG — news-mirrors-utah lane — 2026-08-31T23:36:45Z
+dest: /Users/bryan/BGit/Bryan_git/charlie-kirk/site/internals/static/court/filings/incoming/news-mirrors-utah
+
+[01] OK http=200 bytes=389135  2026-08-11_Defendant_Preliminary_Hearing_Briefing_Strike_Aggravator.pdf
+[02] OK http=200 bytes=319679  2026-07-28_State_Memorandum_Supporting_Preliminary_Hearing_Bindover.pdf
+[03] OK http=200 bytes=277548  2026-08-18_State_Reply_Supporting_Preliminary_Hearing_Bindover.pdf
+[04] OK http=200 bytes=918590  2026-06-26_Ruling_Order_Motion_Order_To_Show_Cause_Contempt_Of_Court.pdf
+[05] OK http=200 bytes=268404  2026-06-01_Ruling_Order_Granting_OSC_Docket_504_Denying_Compel.pdf
+[06] OK http=200 bytes=3601562  2026-04-16_Motion_For_OSC_Contempt_And_Motion_To_Compel.pdf
+[07] FAIL http=404 bytes=62 not-a-pdf magic='{"error":"unable to find file, given fil'  url=https://andreaburkhart.substack.com/api/v1/file/efaa1999-45fe-4327-ae89-cb045c146b41.pdf
+---- batch 1 done ----
