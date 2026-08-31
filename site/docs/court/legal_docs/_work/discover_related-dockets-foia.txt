@@ -162,3 +162,95 @@ CAP: this project was built 2026-03-16 and stops at 3-15-2026. It adds NOTHING
 dated May 2026 or later. Its value is (a) the docket index, (b) filling
 Sept-2025..Mar-2026 gaps, (c) docket numbers for everything we already hold.
 
+================================================================================
+SECTION 4 — SEARCH WARRANTS  (16 of them, UNSEALED APRIL 2026)
+================================================================================
+>>> BIGGEST GAP IN THIS LANE. We hold ONE warrant affidavit. There are SIXTEEN.
+
+Utah law on when a warrant becomes public:
+  URCRP Rule 40  https://legacy.utcourts.gov/rules/view.php?type=urcrp&rule=40  HTTP 200
+    Warrant + application + all affidavits/recorded testimony are PUBLIC once
+    unsealed. Warrant materials stay sealed 20 days after issuance unless that
+    period is extended or shortened.
+  Utah Code 77-23-205: serve within 10 days; return to the court within 3 days.
+  Utah Code 77-23-206: sealing on a showing of good cause.
+  Utah Code Title 77 ch.23 pt.2 (PDF, HTTP 200):
+    https://le.utah.gov/xcode/Title77/Chapter23/C77-23-P2_1800010118000101.pdf
+  UCJA 4-202.02 (which court records are public):
+    https://legacy.utcourts.gov/rules/view.php?type=ucja&rule=4-202.02
+
+WHAT IS OUT THERE, per multiple outlets (all HTTP 200, read):
+  16 search warrant affidavits served by Utah State Bureau of Investigation in
+  Sept 2025 were UNSEALED IN 4TH DISTRICT COURT AND REPORTED ~10 APRIL 2026.
+  Contents reported: the Lance Twiggs letter ("I had the opportunity to take out
+  Charlie Kirk and I took it"), Discord group-chat messages ("Tyler killed
+  Charlie!!!!"), "I left the house this morning on a mission", "It was me at UVU
+  yesterday"; a "burnt note found in trash" seized at the St George residence;
+  a shoe impression, fingerprints and a smeared palm print at the NE rooftop
+  edge of the Losee Center; and an "unknown individual" in the early scramble.
+  Coverage:
+    https://www.deseret.com/utah/2026/04/10/tyler-robinson-unsealed-search-warrant-documents-charlie-kirk-killing-admission-lance-twiggs/  HTTP 200
+    https://www.ksl.com/article/51481672/tyler-killed-charlie-search-warrants-detail-messages-allegedly-sent-after-kirk-killing  HTTP 200
+    https://www.stgeorgeutah.com/news/unsealed-warrants-reveal-unknown-individual-early-investigative-scramble-in-kirk-shooting/article_3b417509-4055-4502-9f2c-89ab91e1a646.html  HTTP 200
+    https://www.eastidahonews.com/2026/04/tyler-killed-charlie-search-warrants-detail-messages-allegedly-sent-after-kirk-killing/
+    https://kutv.com/news/local/search-warrant-reveals-letter-tyler-robinson-wrote-before-charlie-kirks-assassination
+    https://www.abc4.com/news/charlie-kirk-shooting/tyler-robinson-letter-search-warrants/   HTTP 403 to curl (Nexstar bot wall; opens in a browser)
+  I scraped the HTML of the Deseret, KSL, stgeorgeutah and Courthouse News pages
+  for any hosted copy: NO PDF, NO DocumentCloud, NO Scribd embed on any of them.
+  => Nobody republished the warrant PDFs. They exist only in the court record.
+
+>>> ROUTE TO THE 16 WARRANTS: Utah 4th District Court, Provo. Each warrant is
+    its own case number, separate from 251403576. Two ways in, below.
+
+================================================================================
+SECTION 5 — UTAH STATE COURT ACCESS ROUTES (exact, with prices)
+================================================================================
+XCHANGE (the document images live here) -- SUBSCRIPTION / PAY-PER-DOC:
+  Login:  https://apps.utcourts.gov/XchangeWEB          HTTP 200 (JS-only shell)
+  Info:   https://www.utcourts.gov/en/court-records-publications/records/xchange.html  HTTP 200
+  Fees:   https://www.utcourts.gov/en/court-records-publications/records/xchange/subscribe.html  HTTP 200
+  Exact prices as published today:
+    One-Time Use account: $10.00 initial, $0.35/search, $1.00/document. Unused
+      credit is kept if you make an account.
+    Guest account: same rates, no account, unused credit FORFEITED.
+    Monthly Subscription: $25.00 setup + $40.00/month, 500 searches included,
+      $1.00/document, $0.35/search past 500.
+  "Images of public documents filed in district court cases are available for
+   purchase on Xchange."  Governing rule: UCJA 4-202.08.
+  Contact / unsubscribe: xchange@utcourts.gov
+  NOTE: at $1.00/document, buying all ~420 docket entries is ~$420 + $10-25.
+  Buying just the 16 warrants + the 3 bindover briefs is under $30.
+
+REQUEST A COURT RECORD DIRECT FROM THE CLERK -- form, no subscription:
+  https://www.utcourts.gov/content/dam/media/docs/Request_for_Record.pdf
+     HTTP 200, 116,597 bytes, real application/pdf
+  This is the route for anything Xchange will not show, and for certified copies.
+
+TRANSCRIPTS (target (c)) -- statutory pricing, order per hearing:
+  https://pubapps.utcourts.gov/TranscriptWEB/publicrequest.jsp   HTTP 200
+  Statutory rates as published on that page today:
+    $6.00/page  regular, within 30 days  (~$250.00 per court hour)
+    $7.50/page  14 calendar days
+    $9.00/page  7 calendar days
+    $10.50/page 1-3 day
+    $12.00/page 24 hour
+  Same page also offers "Request Audio Copy" -- buy the AUDIO of a hearing from
+  the district court that held it, which is cheaper than a transcript.
+  The 5-day preliminary hearing (6-10 July 2026) is the target here.
+
+APPELLATE DOCKET SEARCH -- FREE:
+  https://apps.utcourts.gov/CourtsPublicWEB/index.jsp   HTTP 200
+  Use for the interlocutory appeal (we hold 1_2_26_Appellate_Order_Denying_
+  Interlocutory_Review and 1_5_26_Appellate_Notice_Of_Decision but no briefs).
+  Appellate opinions: https://legacy.utcourts.gov/opinions/
+  Utah State Archives court records guide:
+    https://archives.utah.gov/research/guides/courts-records.html
+
+DEAD/MOVED Utah URLs I actually hit:
+  https://www.utcourts.gov/en/about/courts/find/case-search.html   HTTP 404
+  https://www.utcourts.gov/en/self-help/records.html               HTTP 404
+  https://www.utcourts.gov/en/records.html                         HTTP 404
+  https://legacy.utcourts.gov/records/                             HTTP 500
+  https://xchange.utcourts.gov/                                    HTTP 200 but
+       a 2,044-byte JS shell only; the real app is apps.utcourts.gov/XchangeWEB
+

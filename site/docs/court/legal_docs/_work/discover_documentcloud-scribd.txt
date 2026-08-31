@@ -73,3 +73,132 @@ Tyler Robinson document on DocumentCloud as of 2026-08-31.
  * State's rebuttal brief filed 2026-08-18
  * Sept 1 2026 final-argument hearing record
  (Deseret 7/29/26 "'This isn't a close case,' state tells judge"; KSL 51596294 confirm the schedule.)
+
+################################################################################
+#  BIGGEST FIND OF THIS LANE: andreaburkhart.substack.com
+#  "Charlie Kirk Legal Documents" -- a 720-entry docket reconstruction with
+#  258 free, direct-download PDFs, current through 8-31-26.
+################################################################################
+Hub page (public post, audience="everyone", post id 176978369, first posted 2025-10-24,
+continuously updated):
+  https://andreaburkhart.substack.com/p/charlie-kirk-legal-documents      HTTP 200, 788,478 B
+Author: Andrea Burkhart (@aburkhartlaw), Washington State public defender. She BUYS the
+filings off Utah XChange and re-posts them free. Items she has not bought are listed by
+name and tagged "(Not obtained)". Items the court sealed are tagged "**** PRIVATE ****".
+
+Parsed to: _work/burkhart_docket_720.tsv   (720 rows: seq, name+date, embed title, size, pdf_url)
+  258 rows carry a PDF URL. 197 docket entries are dated 2026-05-01 or later.
+PDF URL shape:  https://andreaburkhart.substack.com/api/v1/file/<uuid>.pdf
+  curl with a browser UA -> HTTP 200, Content-Type application/pdf, %PDF- magic. No login,
+  no paywall, no Cloudflare. Verified on 14 separate files (see probes below).
+
+--- VERIFIED POST-MAY-2026 PDFs (the exact gap the inventory has) ---
+ 200 319,679 B  #690 Memorandum in Support of Preliminary Hearing Bindover, 7-28-26   (STATE'S BIND-OVER BRIEF)
+                https://andreaburkhart.substack.com/api/v1/file/b751fcf7-c7dd-447b-bfd8-59b76408afc0.pdf
+ 200 389,135 B  #694 Defendant Tyler James Robinson's Preliminary Hearing Briefing, 8-11-26
+                https://andreaburkhart.substack.com/api/v1/file/1d3ce795-67cd-4dcb-bb72-a78e64551a42.pdf
+ 200 277,548 B  #700 State's Reply Supporting Preliminary Hearing Bindover, 8-18-26
+                https://andreaburkhart.substack.com/api/v1/file/6ed59130-62a7-479a-853c-621cde405142.pdf
+ 200 729,039 B  #677 PRELIMINARY HEARING (minute entry), 7-8-26
+                https://andreaburkhart.substack.com/api/v1/file/32bf6f37-4bec-4cd8-93e0-f1a4faa382be.pdf
+ 200 728,371 B  #686 PRELIMINARY HEARING - DAY 2, 7-21-26
+                https://andreaburkhart.substack.com/api/v1/file/8963886b-a070-4372-bfb8-0ccddfe85cdb.pdf
+ 200 572,857 B  #716 Defendant's Discovery Status Report, 8-28-26
+                https://andreaburkhart.substack.com/api/v1/file/cd14df85-2717-490d-b335-9cf408d937d2.pdf
+ 200 268,404 B  #561 Ruling+Order GRANTING Motion for Order to Show Cause (contempt), 6-1-26
+                https://andreaburkhart.substack.com/api/v1/file/984fb5c4-62dc-45c3-9baa-c7148a762768.pdf
+ 200 823,416 B  #657 Ruling+Order on Defendant's Objections to Electronic Media Requests, 6-30-26
+                https://andreaburkhart.substack.com/api/v1/file/60eb1df1-a978-4716-95db-13f04011b4c3.pdf
+ 200 372,832 B  #520 State's Preliminary Hearing Witness and Exhibit List, 5-6-26
+                https://andreaburkhart.substack.com/api/v1/file/59f61407-2811-4027-90d5-a611f4d21098.pdf
+Other May-2026+ entries with PDFs (URLs in burkhart_docket_720.tsv) include #510 Motion in
+Limine to Close Portions of Prelim, #512 Supplemental Notice re State's Evidence, #531 Ruling
+on Motion to Vacate/Continue Prelim, #532 Ruling on Motion to Exclude Cameras, #539 + #623 +
+#660 Rulings on the Record, #554 Opposition to Motion to Preclude Hearsay, #556/#652 Petitions
+for Permission to Appeal, #567 Reply re Hearsay, #592 Utah AG Notice of Intent Not to Respond,
+#601/#609 the death-penalty-as-contempt-sanction exchange, #612 Second Supplemental Request for
+Discovery, #618 Order re Out-of-State Witness, #624 Ruling on Art. I sec.12 / Rule 1102 motion,
+#625 + #710 Minute Entry Orders on electronic devices, #665 Response to 2nd Supp Discovery Req,
+#671 Defendant's Standing Objections to State's Exhibits, #681 Request for Speedy Disposition
+and Prompt Bindover, #678 Supplemental Notice re Access to Evidence, #707/#708 EMC oppositions
+for the 9-1-26 hearing, #711/#718 Standing + Amended Standing Decorum Orders (8-27/8-28-26).
+
+--- SECOND BURKHART PAGE: 25 SEARCH WARRANT AFFIDAVITS ---
+  https://andreaburkhart.substack.com/p/tyler-robinson-search-warrant-affidavits   HTTP 200
+  Posted 2026-07-13, public. Parsed to _work/burkhart_search_warrants_25.tsv
+  We hold ONE search-warrant affidavit locally; this is 25, each with warrant number,
+  target, and return date. Verified 5 of them download as real PDFs. Highlights:
+    3212261  body and effects of Charlie Kirk at Timpanogos Regional Hospital  9/10/25 (ret 9/23/25)
+             https://andreaburkhart.substack.com/api/v1/file/2d8ee534-c65f-49ac-9e72-58a2a18ecb57.pdf
+    3213451  person of Tyler Robinson - trace, prints, DNA, personal effects  9/12/25
+             https://andreaburkhart.substack.com/api/v1/file/68d949c6-1a45-4f73-b63b-135d63e38a73.pdf
+    3212601  anonymized geofence data from Google  9/11/25
+    3212941  cell tower dump - T-Mobile / AT&T / Verizon  9/11/25
+    3212881  electronic device of Omar Najera  9/11/25
+    3214311  Discord names + server IDs "Craftopia", "Gamin", "The Corruption"  9/13/25
+    3229461  Discord "Dufuss & Doobers" (tism time) server  10/6/25
+    3215171  CSAM on George Zinn phone  9/15/25
+    3215391  VANTRUE dash camera VTN2P212969  9/15/25
+    (full list + URLs in the TSV)
+
+--- OTHER BURKHART KIRK POSTS (analysis, no file embeds found) ---
+  /p/are-tyler-robinsons-lawyers-working   /p/cameras-out-of-the-tyler-robinson
+  /p/justice-delayed-is-justice-denied     /p/review-of-new-filings-leading-into
+  /p/surprise-hearing-set-in-charlie-kirk  /p/the-free-speech-battle-lines-are
+  /p/tyler-robinsons-prosecutors-dont
+  Archive search that found them: https://andreaburkhart.substack.com/archive?sort=search&search=Kirk  (200)
+
+=== MUCKROCK / FBI FOIA (public doc host) ===
+ Request "Tyler Robinson Arrest 2", FBI, tracking 1683022-000, submitted 2025-09-23, status REJECTED.
+   page: https://www.muckrock.com/foi/united-states-of-america-10/tyler-robinson-arrest-2-193500/
+         (curl -> 403 Cloudflare; WebFetch got through)
+   Sought UVU PD body-worn camera footage of the 9/11/25 arrest.
+   200 162,689 B application/pdf  https://cdn.muckrock.com/foia_files/2026/08/31/Eac8257af8e4dcf81a18ba2556be41a3300b75df106d65a4607_Q269853_D165943562.pdf
+   200 135,533 B application/pdf  https://cdn.muckrock.com/foia_files/2025/09/29/Eac8257af8e4dcf81a18ba2556be41a3300b75df106d65a4607_Q269853_D165569105.pdf
+   Mirrored on DocumentCloud as 28590642 / 28590638 (source field "FBI FOIA Portal", org 125 = MuckRock).
+   These are FBI determination letters, not the footage.
+
+=== DEAD ENDS ===
+ CourtListener / RECAP  -- API reachable (HTTP 200) and EMPTY for this case, as expected for a state case:
+   /api/rest/v4/search/?q=%22251403576%22&type=r      -> count 0
+   /api/rest/v4/search/?q=%22Tyler+James+Robinson%22&type=r -> count 1, and it is
+       CITIZENS FOR CONSTITUTIONAL INTEGRITY v. FCC (1:26-cv-02018, D.D.C.) -- unrelated
+   /api/rest/v4/search/?q=%22Tyler+James+Robinson%22&type=o -> count 0
+   "Charlie Kirk" opinions -> 5 hits, all unrelated (Starbuck v. Google, Vindman v. Trump, etc.)
+ PacerMonitor "USA v. Robinson" 2:26-cr-00053 D. Utah -- HTTP 200, defendant is JONAH MICHAEL
+   ROBINSON. Unrelated. https://www.pacermonitor.com/public/case/63446620/USA_v_Robinson
+ UniCourt  https://unicourt.com/search?q=Tyler%20Robinson -> HTTP 404 (that search path does not exist)
+ Trellis   https://trellis.law/search?q=Tyler+Robinson -> HTTP 403 Cloudflare
+ Justia dockets https://dockets.justia.com/search?query=Tyler+Robinson&state=utah -> HTTP 403 Cloudflare
+ Scribd    https://www.scribd.com/document/1072917678/Robinson-defense-probable-cause-filing
+           -> HTTP 200 but body is a 3 KB Fastly "Client Challenge" JS wall.
+ DocumentCloud web app + API + s3 asset host -> HTTP 403 Cloudflare to curl under every UA and
+   header combination tried. Reachable via WebFetch. NOT a missing-document result.
+ Utah Courts press notifications (legacy.utcourts.gov) 2026-07-06 and 2026-08-28 -> HTTP 200 but
+   logistics only (parking, 14 public seats, decorum). No filings, no exhibits, no video links.
+ atty.utahcounty.gov/media/ckpr -> 404 ; /cms/uploads/TJR_Information_49872215e3.pdf -> 503
+   (/media/ itself is 200 but is a Next.js app that renders its links client-side)
+
+################################################################################
+# LANE SUMMARY (documentcloud / scribd / public doc-hosting platforms)
+################################################################################
+The lane's own headline platforms were mostly walls: DocumentCloud is Cloudflare-blocked to
+curl (but reachable via WebFetch), Scribd is behind a Fastly JS challenge, Trellis/Justia are
+Cloudflare-blocked, UniCourt has no free search at the path tried, and CourtListener/RECAP has
+literally nothing because this is a Utah STATE case.
+
+What the lane DID produce, in order of value:
+ 1. andreaburkhart.substack.com -- 258 free direct-download PDFs across a 720-entry docket
+    reconstruction current to 8-31-26, PLUS a separate page of 25 search-warrant affidavits.
+    This single source covers essentially the entire May-2026-through-August-2026 gap,
+    including all three bind-over briefs. Verified 14 PDFs at HTTP 200 / application/pdf.
+ 2. rev.com -- all five days of the preliminary-hearing transcript, free, HTTP 200.
+ 3. DocumentCloud project 224251 -- 46 filings whose TITLES CARRY DOCKET NUMBERS, which the
+    local inventory lacks; useful as a docket-number crosswalk even for PDFs we already hold.
+ 4. MuckRock/FBI FOIA -- two determination letters on a rejected request for the UVU PD
+    body-worn camera footage of the 9/11/25 arrest.
+
+Files written by this lane:
+  _work/discover_documentcloud-scribd.txt      these notes
+  _work/burkhart_docket_720.tsv                720 docket rows, 258 with PDF URLs
+  _work/burkhart_search_warrants_25.tsv        25 search-warrant affidavits with URLs

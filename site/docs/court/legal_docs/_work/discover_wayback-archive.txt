@@ -43,3 +43,99 @@ Wayback archived the REDIRECT, not the PDF body. Playback attempt:
   https://web.archive.org/web/20260709185335id_/https://andreaburkhart.substack.com/api/v1/file/057ecd8c-...pdf -> HTTP 503 (IA rate-limit)
   same without id_ -> HTTP 503
 CDX for the post page itself -> HTTP 504 gateway timeout (IA overloaded); retry later.
+
+== STEP 6: Wayback captures of the Burkhart docket page (the backup for the big find) ==
+CDX url=andreaburkhart.substack.com/p/charlie-kirk-legal-documents -> HTTP 200, 13 captures:
+ 20251026224251 200 30523 | 20251027134338 200 30553 | 20251102144403 200 33956
+ 20251104163326 200 45624 | 20251128111041 200 50164 | 20260107162111 200 38291
+ 20260211202227 200 61892 | 20260331074249 200 65382 | 20260411090105 200 69283
+ 20260421080426 200 68489 | 20260601174511 200 71110 | 20260709185314 200 78646  <- LATEST
+The page grows monotonically -> the archive holds successive states of the docket.
+Playback URL pattern (for a human or a paced fetcher):
+ https://web.archive.org/web/20260709185314/https://andreaburkhart.substack.com/p/charlie-kirk-legal-documents
+NOTE: Wayback archived the PDF links only as 302 redirects, NOT the PDF bytes.
+So the PDFs must come from the LIVE substack URLs (they work today); Wayback is the fallback
+for the LIST, not for the documents.
+
+== STEP 7: rev.com court transcripts - FREE, FULL TEXT, HTTP 200 (target (c)) ==
+Found via CDX (rev.com/transcripts* filter robinson) then confirmed against rev's own sitemap.xml
+(https://www.rev.com/sitemap.xml -> 200, gzip, 4,212 locs; 17 Kirk/Robinson entries).
+All six court transcripts probed live with browser UA:
+ https://www.rev.com/transcripts/ut-v-tyler-robinson---day-1                      200  863,451 B  328,254 chars verbatim
+ https://www.rev.com/transcripts/ut-v-tyler-robinson-preliminary-hearing-day-2    200  812,482 B  324,024 chars
+ https://www.rev.com/transcripts/ut-v-tyler-robinson-preliminary-hearing-day-3    200  388,655 B  134,348 chars
+ https://www.rev.com/transcripts/ut-v-tyler-robinson-preliminary-hearing-day-4    200  794,260 B  313,607 chars
+ https://www.rev.com/transcripts/ut-v-tyler-robinson-preliminary-hearing-day-5    200  351,772 B  108,979 chars
+ https://www.rev.com/transcripts/tyler-robinson-comtempt-hearing                  200  210,301 B   44,326 chars  (sic: "comtempt")
+Verified real testimony text, e.g. day 1 opens "All rise. ... Judge Tony F. Graf, Jr., presiding
+... Calling case 251-40[3576]"; contempt transcript has Judge Graf on the order-to-show-cause.
+NOT paywalled. No login. These are the July 2026 preliminary hearing (5 days) transcripts we do not hold.
+Wayback also holds two of them:
+ https://web.archive.org/web/20260824111816/https://www.rev.com/transcripts/ut-v-tyler-robinson-preliminary-hearing-day-2
+ https://web.archive.org/web/20260715055719/https://www.rev.com/transcripts/ut-v-tyler-robinson-preliminary-hearing-day-5
+ https://web.archive.org/web/20260724040041/https://www.rev.com/transcripts/tyler-robinson-comtempt-hearing
+Related non-court rev transcripts (context only): fbi-captures-kirk-shooter, fbi-press-conference-on-kirk-shooting,
+press-conference-on-charlie-kirk-shooting, update-on-charlie-kirk-shooter, erika-kirk-speaks-at-memorial.
+
+== STEP 8: archive.today / archive.ph / archive.is ==
+https://archive.ph/https://andreaburkhart.substack.com/p/charlie-kirk-legal-documents -> HTTP 429
+https://archive.ph/newest/https://www.rev.com/transcripts/ut-v-tyler-robinson---day-1 -> HTTP 429
+https://archive.is/... -> HTTP 429 (both)
+https://archive.today/... -> 301 then 404
+INCONCLUSIVE, rate-limited, not ruled out. Worth a human retry in a browser.
+
+== STEP 9: OTHER BURKHART POSTS carrying documents (found via her archive API) ==
+https://andreaburkhart.substack.com/api/v1/archive?sort=new&limit=50&offset=0 (and offset=50) -> HTTP 200, 73 posts.
+Robinson-related posts with real PDF attachments, ALL VERIFIED %PDF:
+
+ (a) OFFICIAL COURT-REPORTER TRANSCRIPTS of preliminary hearing days 4 & 5 - the two days the
+     court MUTED the public livestream. She ordered them precisely to recover what was cut.
+     post: https://andreaburkhart.substack.com/p/completing-the-record-of-the-tyler  (2026-07-17)
+     "070926 State Vs Robinson" 7-9-26 transcript:
+       https://andreaburkhart.substack.com/api/v1/file/4414a046-37e3-4bec-8284-319788c13cbe.pdf
+       -> HTTP 200 application/pdf 2,095,616 B  %PDF
+     "071026 State Vs Robinson" 7-10-26 transcript:
+       https://andreaburkhart.substack.com/api/v1/file/e151680b-97d4-40b3-831d-1ce29ee9e43f.pdf
+       -> HTTP 200 application/pdf 1,001,766 B  %PDF
+
+ (b) 25 SEARCH WARRANT AFFIDAVITS (we hold ONE). Warrant numbers 3212261..3229461, 9/10/25-10/6/25,
+     each with the item searched and the return date.
+     post: https://andreaburkhart.substack.com/p/tyler-robinson-search-warrant-affidavits (2026-07-13)
+     Full list with descriptions written to _work/search_warrant_affidavits_25.tsv
+     spot check 3212261 (Charlie Kirk's body and effects, Timpanogos Regional Hospital):
+       https://andreaburkhart.substack.com/api/v1/file/2d8ee534-c65f-49ac-9e72-58a2a18ecb57.pdf
+       -> HTTP 200 application/pdf 103,454 B  %PDF
+     Includes warrants for: Kirk's body/effects, hospital surveillance, Google geofence, cell-tower
+     dump (T-Mobile/AT&T/Verizon), Omar Najera's device, George Zinn's phone, the Discord servers
+     "Craftopia"/"Gamin"/"The Corruption" and "Dufuss & Doobers", Lance Twiggs' iCloud, the Dodge
+     Challenger, 894 Cimarron Dr, 3419 S River Rd Unit 73 St George, a VANTRUE dash camera.
+
+ (c) Discovery updates compiled (2026-07-06):
+       https://andreaburkhart.substack.com/api/v1/file/1d45d424-5f3d-4f09-8fa5-21a943e6ac4b.pdf
+       -> HTTP 200 application/pdf 1,060,521 B  %PDF
+     post: https://andreaburkhart.substack.com/p/tyler-robinson-discovery-updates
+
+ (d) INTERLOCUTORY APPEAL BRIEFS (Utah Court of Appeals; we hold only the two 1-page appellate orders)
+     post: https://andreaburkhart.substack.com/p/tyler-robinsons-secret-appeal (2026-03-14)
+     11-17-25 Brief on Petition for Interlocutory Appeal:
+       https://andreaburkhart.substack.com/api/v1/file/9294b1ed-bdcc-437d-a040-9ee78a34ce81.pdf  (4.96MB)
+     12-12-25 Brief Opposing Interlocutory Review:
+       https://andreaburkhart.substack.com/api/v1/file/9e53ef1f-2458-43c0-bbde-06aa0ba01e46.pdf
+       -> HTTP 200 application/pdf 15,279,467 B  %PDF
+
+ (e) https://andreaburkhart.substack.com/p/why-are-the-fbi-and-atf-withholding (2026-04-20) - 2 PDFs
+       .../file/26bc3b24-7536-403d-9a99-f4c48cf2a373.pdf
+       .../file/068f64e9-aae3-4e36-a358-9e542302e47d.pdf
+
+ Posts with NO attachments (text commentary only): read-the-tyler-robinson-gag-order,
+ cameras-out-of-the-tyler-robinson, surprise-hearing-set-in-charlie-kirk,
+ the-missing-evidence-in-tyler-robinsons, tyler-robinsons-prosecutors-and-defense,
+ tyler-robinsons-prosecutors-dont.
+
+PACING WARNING for whoever downloads: substack returns HTTP 429 after ~3 rapid requests.
+Verified working cadence: one request every 8-10 seconds.
+
+== STEP 10: Internet Archive OUTAGE ==
+2026-08-31 ~23:30 UTC every web.archive.org CDX/playback call started returning the
+"Internet Archive: Temporarily Offline" HTML page (and earlier 503/504/429).
+This is an IA-side outage, NOT a sign anything was removed. Retry the CDX queries later.

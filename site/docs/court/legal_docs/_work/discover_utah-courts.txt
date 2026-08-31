@@ -119,3 +119,107 @@ Swept every month 2025/09 through 2026/08. EXACTLY TWO Robinson notices exist:
    This is the COURT-DESIGNATED POOL CAMERA FEED, linked from the Utah Judiciary's own
    press release. Primary-source video of the preliminary hearing. Free, no login.
 
+
+================================================================
+PASS 6 — the Utah Judiciary MEDIA page (found via legacy 404 page footer link)
+================================================================
+https://www.utcourts.gov/en/media/media.html                      200 (95,043 b)
+  MEDIA CONTACT: Tania Mashburn, Administrative Office of the Courts — taniam@utcourts.gov
+  (she is the byline "author/taniam" on both Robinson press notifications)
+  Electronic Media Coverage request form (Adobe Sign, live):
+    https://utsign.na3.documents.adobe.com/public/esignWidget?wid=CBFCIBAA3AAABLblqZhAX5lr2AcOwgVXv5xcRg9DVVP4UxrmBrmqct5sbrljVWXJyA2rxglvW-CVgerEGuvY*
+    200 (51,714 b). THIS is the form that produced the ~15 "Request And Order For
+    Electronic Media Coverage" PDFs already in our 2025/2026 inventory.
+  Rule 4-401.01 electronic media coverage: https://legacy.utcourts.gov/rules/view.php?type=ucja&rule=4-401.01  200
+  Rule 4-401 media in courtroom:           https://legacy.utcourts.gov/rules/view.php?type=ucja&rule=4-401
+  Media protocol for cameras (PDF):        https://www.utcourts.gov/content/dam/media/docs/media_protocol_cameras.pdf   200 (109,076 b)
+  Media Guide to Utah State Courts (PDF):  https://www.utcourts.gov/content/dam/media/media_guide/docs/MediaGuide.pdf  200 (1,715,553 b)
+  Appellate photography policy (PDF):      https://www.utcourts.gov/content/dam/media/docs/AppellateCourtsPhotographyPolicy.pdf
+  Press release archive:                   https://legacy.utcourts.gov/utc/news/     200
+  Media policies/resources page:           https://www.utcourts.gov/en/media/media/Media-Policies-Resources.html  200
+  Media access Q&A:                        https://www.utcourts.gov/en/media/media/access-qa.html                200
+  Records rules: 4-202.02 classification / 4-202.03 access / 4-202.04 requests /
+                 4-202.05 denials / 4-202.08 fees — all at
+                 https://legacy.utcourts.gov/rules/view.php?type=ucja&rule=<n>   (4-202.08 = 200, 22,768 b,
+                 effective 11/1/2025, "Fees for records, information, and services")
+
+================================================================
+PASS 7 — appellate: is there a PUBLISHED order?  NO.
+================================================================
+Utah appellate opinion full-text search (free, works with a plain GET):
+  https://legacy.utcourts.gov/opinions/search/?zoom_query=<q>&type=&zoom_per_page=20&zoom_and=1&zoom_sort=0
+  q="Robinson"        200 — 433 results, ALL unrelated older State v. Robinson cases
+  q="Tyler Robinson"  200 — 24 results, all incidental word matches
+  q="251403576"       200 — "No results found."
+CONCLUSION: the Utah Supreme Court's orders in this case are UNPUBLISHED. Confirmed there are
+TWO of them, both denying petitions for permission to appeal an interlocutory order, signed by
+Associate Chief Justice Jill Pohlman, reported ~2-3 July 2026 (one on cameras in the courtroom
+for the prelim; one on admitting recorded/video testimony of an out-of-state witness). Neither
+has a publicly reported appellate docket number. They are NOT in our inventory (we hold only
+1_2_26_Appellate_Order_Denying_Interlocutory_Review.pdf and 1_5_26_Appellate_Notice_Of_Decision.pdf).
+Route to them: the CAPTCHA-gated appellate docket search, or the appellate clerk's office.
+
+APPELLATE CLERK (from https://www.utcourts.gov/en/courts/court-types/appellate-courts/appellate-hours-location.html, 200):
+  450 South State Street, 5th Floor, Salt Lake City
+  Utah Supreme Court, PO Box 140210, Salt Lake City UT 84114-0210
+  (801) 578-3900 | supremecourt@utcourts.gov | courtofappeals@utcourts.gov | 8-5 M-F
+  Pending-case briefs and Law & Motion files (everything filed that is not a brief),
+  Supreme Court 2009-current, are held here.
+
+================================================================
+PASS 8 — negative results, recorded so nobody re-runs them
+================================================================
+https://www.utcourts.gov/en/media/media/high-profile.html    404
+https://legacy.utcourts.gov/highprofile/                     200 BUT SOFT-404 ("We couldn't find
+                                                             your page"). NOTE: legacy.utcourts.gov
+                                                             serves HTTP 200 for missing pages —
+                                                             never read a 200 from that host as a hit.
+https://legacy.utcourts.gov/utc/robinson/                    404
+https://legacy.utcourts.gov/utc/dist4/                       404
+https://legacy.utcourts.gov/directory/                       200 soft-404
+https://www.utcourts.gov/en/courts/court-types/dist/dist-sites/orders.html   200 — District Court
+   standing orders page carries ONLY 3rd and 6th District administrative orders. Nothing case-specific,
+   nothing for the 4th District, nothing for 251403576.
+Wayback CDX for utcourts.gov URLs matching robinson|kirk:  EMPTY (no such URL ever archived).
+utcourts.gov site search (/content/utcourts/us/en/search-results.html?zoom_query=...) is a JS SPA;
+   scripted fetch returns only the 91 KB shell with zero results embedded. Not usable from curl.
+
+================================================================
+BOTTOM LINE FOR THIS LANE
+================================================================
+The Utah state court system publishes NO case documents for 251403576 anywhere on
+utcourts.gov or legacy.utcourts.gov. There is no notable-case / high-profile-case
+document page. Everything this lane offers is a PAID or IN-PERSON route:
+  1. Xchange subscription  -> every public filing since 7/1/2010, $1 per document. THE route
+     for the May-2026-onward gap (prelim hearing, bind-over briefs, contempt ruling, camera orders).
+  2. Request for Court Record form to the Provo clerk -> copies at $0.25/sheet.
+  3. TranscriptWEB -> the ONLY route to hearing TRANSCRIPTS, $6.00/page regular.
+  4. Audio/video of a hearing -> $15 per half-day of testimony from the Provo court.
+  5. Appellate docket search (free, CAPTCHA) -> the two July 2026 Pohlman orders.
+  6. Free and immediately usable: the court-linked YouTube pool feed of the preliminary hearing.
+
+================================================================
+PASS 9 — verification of the two live assets
+================================================================
+https://www.youtube.com/live/3f3EMabrrFQ    200 (1,254,895 b)
+  title "Tyler Robinson Trial Pool Feed"; ownerChannelName "KUTV 2 News Salt Lake City"
+  "isLiveContent":true  "liveBroadcastDetails":{"isLiveNow":false
+  "startTimestamp":"2026-09-01T14:30:00+00:00"   "publishDate":"2026-08-28T06:48:51-07:00"
+  HONEST STATUS: this is a SCHEDULED live broadcast for 1 Sept 2026, NOT yet an archived
+  video. As of this run (31 Aug 2026) there is no playable recording at that URL yet. It is
+  the court-designated pool camera and is linked from the Utah Judiciary's own press release,
+  so it should become the primary-source recording of the final prelim day once it airs.
+
+Provo District Court official contact, from the State of Utah Public Notice Website
+(https://www.utah.gov/pmn/sitemap/publicbody/4857.html  200, 18,335 b — a state .gov, and
+the entity is listed as "Judicial Council > Administrative Office of the Courts > District
+Court (Fourth District : Utah County)"):
+  Contact name: Debbie Jacobsen
+  Email:  debbiej@utcourts.gov
+  Phone:  (801) 429-1000
+  Address: 137 N Freedom Blvd, Provo, UT 84601
+  (This is the contact of record for the Provo District Court as a public body. The
+  utcourts.gov directory page is a JS search widget and returns nothing to curl.)
+NOTE: that same Public Notice page does publish court-filed PDF ATTACHMENTS for the Provo
+District Court — but only probate/conservatorship "Notice of Petition and Hearing" filings.
+Nothing criminal, nothing for 251403576.

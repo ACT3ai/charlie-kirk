@@ -122,3 +122,30 @@ PROBE https://bci.utah.gov/grama-requests/ -> 200|text/html; charset=UTF-8|53276
 PROBE https://archives.utah.gov/transparency-services/government-records-access/ -> 200|text/html; charset=UTF-8|140778
 PROBE https://orem.gov/police/ -> 200|text/html; charset=UTF-8|149269
 PROBE https://www.uvu.edu/police/ -> 200|text/html; charset=UTF-8|36765
+
+--- Utah Courts (utcourts.gov) ---
+PROBE https://legacy.utcourts.gov/utc/news/2026/07/06/public-information-regarding-the-tyler-robinson-preliminary-hearing/ -> 200|text/html; charset=UTF-8|43188
+PROBE https://legacy.utcourts.gov/utc/news/ -> 200|text/html; charset=UTF-8|66034
+PROBE https://www.utcourts.gov/ -> 200|text/html;charset=utf-8|188373
+--- pdf links on that news page ---
+href="/utc/news/2026/07/06/public-information-regarding-the-tyler-robinson-preliminary-hearing/#respond"
+href="https://legacy.utcourts.gov/utc/news/2026/07/06/public-information-regarding-the-tyler-robinson-preliminary-hearing/"
+href="https://legacy.utcourts.gov/utc/news/2026/07/06/public-information-regarding-the-tyler-robinson-preliminary-hearing/feed/"
+href="https://legacy.utcourts.gov/utc/news/2026/08/28/public-attendance-for-tyler-robinson-preliminary-hearing/"
+href="https://legacy.utcourts.gov/utc/news/wp-json/oembed/1.0/embed?url=https%3A%2F%2Flegacy.utcourts.gov%2Futc%2Fnews%2F2026%2F07%2F06%2Fpublic-information-regarding-the-tyler-robinson-preliminary-hearing%2F"
+href="https://legacy.utcourts.gov/utc/news/wp-json/oembed/1.0/embed?url=https%3A%2F%2Flegacy.utcourts.gov%2Futc%2Fnews%2F2026%2F07%2F06%2Fpublic-information-regarding-the-tyler-robinson-preliminary-hearing%2F&#038;format=xml"
+href="https://legacy.utcourts.gov/utc/news/wp-login.php?redirect_to=https%3A%2F%2Flegacy.utcourts.gov%2Futc%2Fnews%2F2026%2F07%2F06%2Fpublic-information-regarding-the-tyler-robinson-preliminary-hearing%2F"
+
+--- utcourts WP-JSON search: robinson ---
+count 2
+2026-08-28 PUBLIC ATTENDANCE FOR TYLER ROBINSON PRELIMINARY HEARING
+    https://legacy.utcourts.gov/utc/news/2026/08/28/public-attendance-for-tyler-robinson-preliminary-hearing/
+2026-07-06 PUBLIC INFORMATION REGARDING THE TYLER ROBINSON PRELIMINARY HEARING
+    https://legacy.utcourts.gov/utc/news/2026/07/06/public-information-regarding-the-tyler-robinson-preliminary-hearing/
+
+--- official court livestream + utcourts case pages ---
+PROBE https://youtube.com/live/3f3EMabrrFQ -> 200|text/html; charset=utf-8|1213930
+PROBE https://www.utcourts.gov/en/about/media/high-profile.html -> 404|text/html;charset=utf-8|91350
+PROBE https://www.utcourts.gov/en/about/media.html -> 404|text/html;charset=utf-8|91350
+--- youtube title ---
+<title>Tyler Robinson Trial Pool Feed - YouTube</title>
