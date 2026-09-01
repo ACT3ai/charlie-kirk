@@ -171,3 +171,139 @@ PROBE https://atty.utahcounty.gov/cms/uploads/2025_09_13_Press_Release_Robinson_
 PROBE https://atty.utahcounty.gov/cms/ -> 503|text/html
 --- media/ckpr recheck ---
 ckpr -> 404
+
+================================================================================
+== SUMMARY OF LANE: Utah County Attorney + Utah government bodies ==
+== compiled 2026-08-31 ==
+================================================================================
+
+--- HEADLINE FINDING #1: the prosecutor's document repository is DOWN, not deleted ---
+atty.utahcounty.gov is a Next.js front end backed by a Strapi CMS proxied at /cms.
+The FRONT END is healthy (200). The CMS BACKEND returns nginx/1.19.2
+"503 Service Temporarily Unavailable" on EVERY path tested, including /cms/ root.
+Because the front end fetches all content from that backend:
+  * /media renders "No results found" (zero press releases)
+  * /media/ckpr returns a genuine Next.js 404 (__next_error__ marker in body)
+  * every /cms/uploads/*.pdf is unreachable
+CONTROL TEST APPLIED: /cms/ root itself 503s, and the 503 body is an nginx
+upstream-failure page, not a WAF/bot block (a bot block returns 403/406).
+=> This is a SERVER OUTAGE affecting the whole repository. It is NOT targeted
+   removal of Charlie Kirk case documents, and it must not be published as such.
+   Re-probe later; the PDFs will very likely return when the backend comes back.
+
+Our existing 173-file collection came from THIS CMS: inventory file
+TJR_Information_49872215e3.pdf matches /cms/uploads/TJR_Information_49872215e3.pdf
+exactly, hash suffix and all.
+
+--- HEADLINE FINDING #2: the preliminary hearing is STILL RUNNING ---
+The task brief said the prelim "ran roughly July 2026". Actually:
+  * July 6-10, 2026   - five days of preliminary hearing testimony
+  * late July 2026    - State's 28-page memorandum asking bindover on all 7 counts
+  * Aug 28, 2026      - further hearing day (Utah Courts posted public-seating notice)
+  * Sept 1, 2026 10:30 MDT - oral argument on whether probable cause is shown (bindover)
+An OFFICIAL POOL VIDEO FEED exists and is free:
+  https://youtube.com/live/3f3EMabrrFQ  -> HTTP 200, title "Tyler Robinson Trial Pool Feed"
+  scheduled startTimestamp 2026-09-01T14:30:00+00:00 ; hosted on channel
+  UCFVUStJ4azXbWMhFO4yTELg = "KUTV 2 News Salt Lake City" (media outlet carrying
+  the court-authorised pool feed; the court's own notice links to it).
+  This is the closest thing to a transcript of the Sept 1 bindover argument that
+  is obtainable without paying, and it postdates our Apr 2026 inventory cutoff.
+
+--- HEADLINE FINDING #3: Wayback replay is globally down right now ---
+web.archive.org/web/<ts>/<url> returns 503 "No server is available to handle this
+request" FOR AN UNRELATED CONTROL URL TOO (example.com). Tested 4 times across
+~6 minutes of backoff, control each time. archive.org root = 200 and the
+availability API = 200, so only the REPLAY service is out.
+The CDX API separately returns 429 Too Many Requests.
+=> "cannot fetch the archived copy" here means ARCHIVE OUTAGE. It says nothing
+   about the Utah County Attorney. Retry the exact URLs below later.
+WebFetch cannot reach web.archive.org at all ("Claude Code is unable to fetch
+from web.archive.org"), so curl is the only route for these.
+
+--- WAYBACK: 12 mementos of the ckpr document page exist (from timemap, which DID work) ---
+The timemap endpoint https://web.archive.org/web/timemap/link/<url> was reachable
+and returned these snapshot timestamps for atty.utahcounty.gov/media/ckpr:
+  20251114004041  20251213015723  20260106152653  20260123212500
+  20260311110426  20260409104229  20260422123428  20260512101753
+  20260512163015  20260512163153  20260613223424  (latest)
+THE LATEST, 2026-06-13, POSTDATES OUR APRIL 2026 INVENTORY CUTOFF. It should list
+the May 2026 and early-June 2026 case documents we do not hold, including the
+May 8 camera/continuance rulings and the run-up to the June 26 contempt ruling.
+Fetch when Wayback recovers:
+  curl -sL --compressed -A "$UA" \
+    "https://web.archive.org/web/20260613223424id_/https://atty.utahcounty.gov/media/ckpr"
+and the same for 20260512163153 and 20260422123428.
+Then enumerate the archived PDFs themselves:
+  https://web.archive.org/cdx/search/cdx?url=atty.utahcounty.gov/cms/uploads*&output=text&fl=timestamp,original,statuscode,mimetype&collapse=urlkey&limit=500
+(429 on every attempt today.)
+
+--- archive.today: 429 on all three mirrors (archive.ph / .today / .is) ---
+Matches the previously recorded behaviour in the repo CLAUDE.md. INCONCLUSIVE,
+not ruled out. Worth retrying later by hand in a browser.
+
+--- DOCUMENTS THAT EXIST BUT WE COULD NOT PULL TODAY (all 503, CMS outage) ---
+https://atty.utahcounty.gov/cms/uploads/TJR_Information_49872215e3.pdf
+   (charging Information - we ALREADY HOLD this one)
+https://atty.utahcounty.gov/cms/uploads/2025_09_13_Press_Release_Robinson_Arrest_and_Potential_Charges_f526b4de85.pdf
+   (13 Sep 2025 press release, Jeffrey S. Gray - NOT in our inventory)
+
+--- UTAH COURTS (judiciary) - two press notifications, no documents attached ---
+WordPress site; enumerated via its own JSON API, which works:
+  https://legacy.utcourts.gov/utc/news/wp-json/wp/v2/posts?search=Robinson&per_page=50
+  -> exactly 2 posts:
+  2026-08-28 PUBLIC ATTENDANCE FOR TYLER ROBINSON PRELIMINARY HEARING
+  2026-07-06 PUBLIC INFORMATION REGARDING THE TYLER ROBINSON PRELIMINARY HEARING
+Both are logistics notices (seating, parking, decorum). NEITHER links to any
+document, exhibit, transcript, or recording. The 8/28 one carries the pool-feed
+YouTube link. utcourts.gov/en/about/media.html and .../high-profile.html both 404.
+
+--- OTHER UTAH GOVERNMENT BODIES: all reachable, none holding case documents ---
+https://dps.utah.gov/press-releases/updates-on-charlie-kirk-shooting-at-uvu/  200
+   Sept 2025 only. Names George Zinn and Zachariah Qureshi as detained+released.
+   NO downloadable documents. No later DPS release found.
+https://attorneygeneral.utah.gov/  200 - the defense's Jan/Feb 2026 motion to refer
+   the case to the AG was DENIED 24 Feb 2026, so the AG never took the case and
+   holds no case file. Nothing to request.
+https://bci.utah.gov/  200 ; https://le.utah.gov/  200 - nothing case-specific.
+https://www.utahcounty.gov/news/416/arrest-of-tyler-james-robinson-potential-charges  200
+https://www.utahcounty.gov/news/419/news-conference-alert-formal-charges-for-tyler-robinson-in-charlie-kirk-shooting-case  200
+   Both are Sept 2025 county news items. Fully client-rendered - grepping the raw
+   HTML for .pdf and for cms/uploads returned NOTHING on both pages and on /media.
+   No PDF is linked from the county news layer at all.
+
+--- MEDICAL EXAMINER / AUTOPSY ---
+https://health.utah.gov/medical-examiner  200 (also /office-medical-examiner, same page)
+Utah OME records incl. autopsy reports are CONFIDENTIAL by statute and are NOT
+GRAMA-accessible; release is limited to next of kin, law enforcement, legal
+representatives, attending physicians, or by court order.
+BUT: the OME autopsy report on Charlie Kirk WAS ADMITTED AS AN EXHIBIT at the
+July 2026 preliminary hearing. As an admitted court exhibit it is reachable
+through the COURT, not through a GRAMA request to OME. That is the route to use.
+
+--- GRAMA PORTALS (all verified 200) ---
+https://www.utahcounty.gov/onlinegrama.html          county-wide online GRAMA form
+https://atty.utahcounty.gov/administration/grama     prosecutor's own GRAMA page
+https://sheriff.utahcounty.gov/administration/records  sheriff records office
+https://sheriff.utahcounty.gov/forms/Grama_Request.pdf  200 application/pdf 154139 bytes
+     (the sheriff's fillable GRAMA form - a real, working PDF download)
+https://bci.utah.gov/grama-requests/                 state BCI
+https://archives.utah.gov/transparency-services/government-records-access/
+     state archives - also handles GRAMA APPEALS, which is the lever when an
+     agency denies. Relevant because an active-prosecution denial under
+     Utah Code 63G-2-305(10) is near-certain while the case is pending.
+https://orem.gov/police/   200      https://www.uvu.edu/police/  200
+     Orem PD and UVU PD - both agencies were on scene; each takes its own GRAMA.
+
+--- SUBSCRIPTION / HUMAN-ONLY ---
+Utah XChange (https://www.utcourts.gov/en/court-records-publications/records/xchange.html)
+   is the official docket. Paid subscription. NOT attempted - no account created,
+   no payment, per instructions.
+
+--- LEAD WORTH CHASING IN ANOTHER LANE ---
+An ATF ballistics report on the bullet fragment recovered at Kirk's autopsy is
+referenced in a MARCH 2026 DEFENSE MOTION. Deputy Utah County Attorney
+Christopher Ballard was held in CIVIL CONTEMPT on 26 June 2026 for his TMZ /
+USA Today / Politifact / Fox statements about it (31 Mar - 2 Apr 2026).
+The contempt ruling (26 Jun 2026) and the underlying March 2026 defense motion
+are both post-inventory documents. Neither is on any Utah government website we
+could reach; they are court filings, so they belong to the court-docket lane.
