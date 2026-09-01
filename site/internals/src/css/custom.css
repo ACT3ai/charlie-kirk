@@ -1012,3 +1012,35 @@ a.ck-media-shot:focus {
   .ck-4sq { grid-template-columns: 1fr; }
 }
 /* CK_FOUR_SQUARE_END */
+
+/* CK_PEOPLE_ANALYSIS_START */
+/* Owned by site/docs/people_analysis/ (see that directory's CLAUDE.md).
+   The People's Analysis overview re-hosts each person's video below the table
+   of contents, alternating left and right and cascading down the page. These
+   rules only add the right-hand mirror of .ck-video-wrap--wrapped plus the
+   per-entry clearing row; all sizing and the 996px stacking behaviour are
+   inherited from the CK_VIDEO_LAYOUT block above. Do not write generator
+   output into this block. */
+.ck-pa-entry {
+  overflow: hidden;
+  margin: 0 0 3rem 0;
+}
+.ck-pa-entry::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.ck-video-wrap--wrapped.ck-pa-right {
+  float: right;
+  margin: 0 0 1rem 1.75rem;
+}
+@media (max-width: 996px) {
+  .ck-video-wrap--wrapped.ck-pa-right {
+    float: none;
+    margin: 0 0 1.25rem 0;
+  }
+  .ck-pa-entry {
+    margin-bottom: 2rem;
+  }
+}
+/* CK_PEOPLE_ANALYSIS_END */

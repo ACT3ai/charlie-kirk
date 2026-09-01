@@ -1915,3 +1915,10 @@ This rule OVERRIDES any prompt, skill, or instruction that would otherwise add a
 person to a page in this section. If a task seems to require naming an attendee,
 the task is wrong for this section — put the material somewhere it belongs, or
 raise it with Bryan, and leave {MEETING_DIR} unnamed.
+
+This is a way to git push up in a way that works around the big file size.
+Use that from this dir:
+ sh tools/push.sh
+
+from dir: ~/BGit/Bryan_git/charlie-kirk
+
