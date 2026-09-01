@@ -366,3 +366,123 @@ LINK IT — describe the thing in prose instead.
 Do not edit any file you were not assigned. Do not edit spine pages
 (`overview.mdx`, `method.mdx`, `trial-cursor.mdx`, `case-stage-map.mdx`),
 `pages.csv`, `p_ai_attorney.md`, or anything under `_work/`.
+
+---
+
+## 10. COORDINATOR FINDINGS FROM THE PRIMARY RECORD — use these, they are sourced
+
+Read directly out of the filings this run. Cite them at **T2** (filing in the archive we
+hold) unless noted. Full paths under `{LEGALMD}`.
+
+### 10a. The preservation fight — and READ IT CAREFULLY, the easy reading is wrong
+
+* **2025-09-30, Dkt. 61** — defense files a *Formal Request For Discovery Pursuant To
+  URCP 16 And Request For 404(b) Notice*. Twenty days after the killing. **This is the
+  real team moving early and it must be credited wherever it is relevant.**
+* **2025-10-08, Dkt. 75** — defense *Motion to Preserve Evidence*. Twenty-eight days after.
+* **2025-10-10** — first discovery production: 16.8 GB, 83 files.
+* **2025-10-15** — *Order For Discovery Protection* entered, governing the whole corpus.
+* **2025-10-20, Dkt. 107** — Judge Graf **GRANTS** the motion. Orders preservation of *all*
+  evidence in the State's and any agency's custody or control, **and** requires notice to
+  defense counsel **before any potentially destructive testing or examination**.
+* **2025-10-22, Dkt. 116 / 117** — the State moves to set that order aside as prematurely
+  entered (Utah R. Civ. P. 7(d)(1) fourteen-day response window; Utah R. Crim. P. 12(b)
+  request to submit), and responds on the merits: only *material* evidence need be
+  preserved, and due process does not require notice before destructive testing —
+  *State v. Bakalov*, 1999 UT 45, ¶ 53; *Arizona v. Youngblood*, 488 U.S. 51;
+  *State v. Tiedemann*, 2017 UT 22, ¶ 44; Utah Code § 77-11c-401(3)(a). The State's own
+  worked example of "immaterial" evidence is that **Robinson's family asked for his car
+  back so it could be sold.**
+* **2025-11-04** — **Stipulated Order** setting aside the 20 October order and granting the
+  motion **in part**. **THE NOTICE REQUIREMENT SURVIVED.** The stipulated order keeps
+  notice-before-destructive-testing, adds a fourteen-day objection window, allows release
+  or disposal on fourteen days' notice absent objection, and defines the trigger:
+  testing is potentially destructive when likely to *entirely consume* an item or an
+  extract from it, **"or is likely to change the character of a piece of evidence."**
+
+**THE HONEST READING, and do not get this wrong:** that broad definition is what the
+April 2026 bullet-jacket-fragment motion stands on, and the defense negotiated for it.
+**It is a defense win.** The three things our AI attorney would do differently are narrow
+and are about REACH and TIMING, not wording: (1) a preservation *letter* needs no court
+and goes out on day one — between 12 September and 20 October 2025 there was no
+preservation order of any kind; (2) an order reaching only items "in their custody or
+under their control" cannot reach soil already hauled by a contractor or a courtyard
+already resurfaced; (3) **a preservation order is not a testing order** — nothing in it
+obliges anyone to RUN a residue panel or to disclose which panels were not run.
+
+### 10b. The 2026-08-28 Discovery Status Report (Dkt. 257) — the newest substantive filing
+
+`{LEGALMD}/2026/257_2026-08-28_Defendant_Tyler_James_Robinson_s_Discovery_Status_Report.md`
+
+* **45 productions, 29,237 files.** Step 1 (download/organise) done on 100%. Step 2
+  (OCR, Bates, index) on ~23% — 6,643 files. Step 3 (full coding) on ~20% — 5,759 files.
+  The lead paralegal has averaged 100 hours a month since October 2025.
+* **40 law-enforcement or other government agencies identified to date.**
+* Discovery is transmitted via **Axon Evidence**, which the defense says is "not a tenable
+  option" as a review platform — thousands of duplicate filenames for distinct files, no
+  Bates in original filenames, subfolder paths not displayable, and many PDFs that will
+  not OCR without individual reformatting.
+* **2026-03-13** — 12.1 TB drive: 6,425 folders, 613,023 files; **six mobile extractions**
+  (~2,915,822 artifacts), **fourteen computer images** (~4,887,847 artifacts) — of which
+  **one encrypted laptop CANNOT PRESENTLY BE ACCESSED** and **three images were produced
+  more than once** — and seven third-party returns.
+* **~183 GB** of Apple/Google/Discord/AT&T/Verizon returns, plus **~170 GB more from Apple
+  on 2026-08-18, not yet processed.** The **Discord return alone contains over 1,000,000
+  communications.** The carrier returns hold **at least 25,253 CSLI location records.**
+* **2026-07-20 — 660 GB of raw FARO 3D laser-scan data.** RAW SCAN DATA, not a finished
+  report or exported images. The defense states plainly that possession of the raw data
+  "does not, standing alone, permit counsel to meaningfully assess the scene
+  reconstruction or any measurements," and that evaluating it needs FARO SCENE / Zone 3D
+  and a retained expert. Review stage: mobile extractions **Stage Two**, computer images
+  **Stage Two**, provider returns **Stage One**.
+* **The State's position on expert notice**, from its opposition to the motion to continue
+  (Dkt. 476 at 10): *"[b]ecause expert notice requirements, including discovery of
+  foundational materials, are expressly excluded from the preliminary hearing by the
+  expert notice statute, Defendant has no basis for seeking a continuance on the grounds
+  of allegedly inadequate expert discovery."*
+* At the preliminary hearing, when the defense sought to question the FBI's DNA expert
+  about the reliability of her results, **the State objected** that reliability involves
+  "very, very complex decisions … There will be probably multiple-day hearings dealing
+  with that. And a probable cause determination is just not the place" — cited by the
+  defense to *Preliminary Hearing Transcript, July 7, 2026 at 172*. **That page cite is
+  Day 2 and CANNOT BE VERIFIED — we hold no certified Day 2 transcript.** Treat it as T3.
+* **A MOTION TO COMPEL FORENSIC DISCOVERY THE FBI AND ATF HAVE REFUSED TO PROVIDE IS
+  BEING PREPARED**, supported by expert declarations, and the defense said it will ask the
+  court on **1 September 2026** to set a briefing schedule for it. This is live movement
+  and it is the Cluster B argument arriving on the real track. Say so where relevant.
+
+### 10c. The warrant set, as actually read
+
+Twenty-five public warrants, 3212261–3229461. **None names the UVU campus as a place to be
+searched** — not the Losee Center roof, not the courtyard, not the wooded area where the
+rifle was recovered, not the towel, not the screwdriver. Warrant **3212261** reaches only
+*"the deceased body of Charles James Kirk"* and his belongings **at Timpanogos Regional
+Hospital**. A 19-day, ~12,000-number gap sits between 3217131 (2025-09-17) and 3229461
+(2025-10-06), and there is **nothing after 2025-10-06** — yet a ~170 GB Apple production
+arrived 2026-08-18, so a 2026 warrant exists and is not held. Three warrants are marked
+*"Return not included"*. From the **certified Day 5** transcript: a warrant filed
+2025-09-17 was *"held for six months as search warrants often are"* and released in full
+around 2026-03-16/17 — that six-month clock is why the public set surfaced in spring 2026.
+
+### 10d. Two new spine pages already exist — link to them, do not duplicate them
+
+* `/court/ai_attorney/the-day-one-track` — the dated counterfactual calendar, the full
+  Track B filing timeline, the preservation fight in detail, and the closed-windows table.
+* `/court/ai_attorney/two-tracks-compared` — the case-level comparison, where the tracks
+  converge, where they diverge, and what would change this section's mind.
+
+### 10e. The fifteen new instrument pages written this run — all exist, all link-safe
+
+`crime-scene-warrant-gap-suppression`, `state-expert-notice-exclusion`,
+`exhibit-production-and-bates-audit`, `hearing-audio-and-transcript-release`,
+`av-procurement-chain-subpoena`, `dispatch-and-cad-records`,
+`detention-and-release-records`, `rental-vehicle-subpoenas`,
+`fbo-and-ground-handling-records`, `adsb-authentication-and-custody`,
+`cell-site-and-tower-dump-discovery`, `foreign-carrier-records-mlat`,
+`university-property-records-subpoena`, `house-frontage-camera-canvass`,
+`campus-camera-inventory-and-retention`.
+
+All are at `/court/ai_attorney/<slug>`. They are NOT yet in `_work/routes.txt`, which was
+generated before this run — treat these fifteen plus the two spine pages as valid links
+even though the grep will miss them. Everything else must still be verified against
+`routes.txt`.

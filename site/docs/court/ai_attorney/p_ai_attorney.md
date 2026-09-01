@@ -352,6 +352,10 @@ TWENTY-ONE INSTRUMENT PAGES, in four clusters:
 Every one of those 21 pages already carries the same eight H2 sections in the
 same order. That template is settled. Do not invent a new one.
 
+[2026-09-01: the section now holds 6 SPINE pages, 9 THESIS pages and 37 INSTRUMENT
+pages. The paragraph below records the state before that run and is kept because it
+explains why the thesis layer exists.]
+
 WHAT IS MISSING, and what this prompt exists to add: the 21 pages are
 INSTRUMENTS. They are individual motions and subpoenas. There is no page that
 carries ONE THESIS end to end - the chain of reasoning from what we contend, to
@@ -359,11 +363,13 @@ the facts on this site that support it, to every question we would ask to prove
 it, to whether anyone asked. APPENDIX A is that list of theses, and the THESIS
 PAGES are the layer this prompt adds on top of the instruments.
 
-Concrete coverage gap measured at the last run: APPENDIX A theses 5, 6, 7 and 8
-- the two drivers the police were sent after, the aircraft and rental cars, the
-Israeli-registered handsets on campus, and the university-owned house - have NO
-instrument page and NO thesis page anywhere in {AIATT_DIR}. Those are the
-largest holes in the section.
+Concrete coverage gap measured at the run of 2026-08-31: APPENDIX A theses 5, 6, 7
+and 8 - the two drivers the police were sent after, the aircraft and rental cars,
+the Israeli-registered handsets on campus, and the university-owned house - had NO
+instrument page and NO thesis page anywhere in {AIATT_DIR}. THAT GAP WAS CLOSED ON
+2026-09-01: nine thesis pages and sixteen new instrument pages were written, and
+every thesis in APPENDIX A now has both. Re-measure the coverage gap on every run
+and restate it here.
 
 
 ============================
@@ -1123,6 +1129,10 @@ APPENDIX A - THE CONTENTIONS OUR AI DEFENSE ATTORNEY WOULD ADVANCE
 Nine theses. One page each. One agent each. Ids are permanent and are cited by
 {THESIS_MAP_CSV}, by {LEDGER_CSV} and by readers - never renumber them.
 
+STATUS AS OF THE 2026-09-01 RUN: all nine now have a thesis page for the first time.
+The coverage gap recorded above - T5, T6, T7 and T8 with no page of any kind - is
+CLOSED. No thesis was added and none was retired this run.
+
 Every entry below is a POSITION THIS EXERCISE WOULD ATTEMPT TO PROVE, not a
 finding this site asserts, and every thesis page says so in its first paragraph.
 None of them may be written in a way that accuses a living private individual of
@@ -1232,7 +1242,9 @@ T5 | the-diverted-pursuit
                 documentation; and the arrival-order record at the address.
   READ FIRST    After, FBI, CoverUp, Killer, timeline_events
   GATEWAY       -
-  NOTE          NO PAGE EXISTS FOR THIS YET. Write it as a TIMING AND
+  NOTE          [2026-09-01: thesis page and two instruments now written -
+                dispatch-and-cad-records, detention-and-release-records.]
+                Write it as a TIMING AND
                 DIRECTION-OF-EFFORT thesis built on dispatch records. Both
                 individuals are living private people who have not been charged
                 with anything: they are not named, not described into
@@ -1253,7 +1265,9 @@ T6 | aircraft-and-ground-vehicles
                 for the window from the named companies.
   READ FIRST    Planes, Planes/following, Proof_Intel_Services, Israel
   GATEWAY       alternative-perpetrator-notice
-  NOTE          NO PAGE EXISTS FOR THIS YET. This thesis has the best
+  NOTE          [2026-09-01: thesis page and three instruments now written -
+                rental-vehicle-subpoenas, fbo-and-ground-handling-records,
+                adsb-authentication-and-custody.] This thesis has the best
                 evidence-handling behind it of anything on this site - see the
                 flight-data recovery work and its control-aircraft discipline in
                 {ROOT_CHARTER}. CARRY THAT DISCIPLINE ONTO THE PAGE: never call
@@ -1276,7 +1290,9 @@ T7 | foreign-registered-handsets-on-campus
   READ FIRST    Proof_Intel_Services, technology_surveillance, Israel,
                 court/Phone_Extraction, court/Robinson_Phone_Devices
   GATEWAY       alternative-perpetrator-notice
-  NOTE          NO PAGE EXISTS FOR THIS YET, and this is the thesis most likely
+  NOTE          [2026-09-01: thesis page and two instruments now written -
+                cell-site-and-tower-dump-discovery, foreign-carrier-records-mlat.]
+                This is still the thesis most likely
                 to slide into naming people. It must stay a demand for RECORDS
                 and a set of foundational questions about collection and
                 analysis. The genuinely strong and grantable question underneath
@@ -1295,7 +1311,9 @@ T8 | the-university-owned-house
                 records associated with it.
   READ FIRST    After/house, Locations, property_locations, After
   GATEWAY       -
-  NOTE          NO PAGE EXISTS FOR THIS YET. {DOCS_DIR}/After/house has its own
+  NOTE          [2026-09-01: thesis page and two instruments now written -
+                university-property-records-subpoena, house-frontage-camera-canvass.]
+                {DOCS_DIR}/After/house has its own
                 charter - read it before writing. This is one of the most
                 REACHABLE theses in Appendix A: a subpoena duces tecum to a
                 university for its own property records is routine and does not
