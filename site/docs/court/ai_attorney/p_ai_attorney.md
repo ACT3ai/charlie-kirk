@@ -43,6 +43,11 @@ JUDGE is the value "Hon. Tony F. Graf, Jr."
 
 AS_OF_DATE is the date this run is executed. Write it out in full on every page
   that states a case posture. The last run stated a posture as of 2026-08-31.
+  The run of 2026-09-01 is the day of the bind-over oral argument itself.
+
+RETAINER_DATE is the value "September 12, 2025" - the date our counterfactual AI
+  defense attorney was retained. See DOCTRINE 1. Every dated demand on the
+  Track A side is measured from this date, never from today.
 
 AGENT_COUNT is 9        (one agent per APPENDIX A thesis; grows with Appendix A)
 EFFORT is high
@@ -93,6 +98,205 @@ cannot see is exactly what a reader is invited to judge - and what the
 THIS PROMPT IS RUN REPEATEDLY. It is not a one-shot generator. Most of this
 section already exists and much of it is good. A re-run REVIEWS AND IMPROVES.
 It does not clear the ground and start over. See PRESERVATION CONTRACT below.
+
+
+============================
+DOCTRINE 1 - THE COUNTERFACTUAL: OUR ATTORNEY HAS BEEN ON THIS CASE SINCE DAY ONE
+============================
+
+THIS IS THE FRAME FOR THE WHOLE SECTION AND IT OVERRIDES ANY INSTINCT TO WRITE
+FROM TODAY'S POSTURE.
+
+Our AI defense attorney was RETAINED ON 12 SEPTEMBER 2025, at the initial
+appearance, and has been counsel of record continuously ever since. It is not
+joining late. It has not inherited anybody's file. It is not bound by, and does
+not have to work around, any choice the real team made, any deadline that has
+run, any objection that was not preserved, any motion that was not filed, or any
+witness who was released without being asked a question.
+
+Everything that follows from that, and every page must be written inside it:
+
+  * NO PROCEDURAL DEFAULT. There is no waiver anywhere on our track. Every
+    demand our attorney would have made, it made at the FIRST MOMENT the rules
+    allowed - not at the first moment somebody thought of it in 2026.
+  * PERISHABILITY IS THE WHOLE POINT. The single largest advantage of the
+    day-one track is that in September and October 2025 the evidence was still
+    THERE. The soil had not been hauled. The courtyard had not been paved. The
+    Yukon had not been released. Clothing had not been laundered or destroyed.
+    Retention windows on campus video had not run. Residue had not weathered off
+    fabric. A demand served on 15 September 2025 gets an answer that the same
+    demand served on 15 September 2026 cannot get at any price. SAY WHAT WAS
+    STILL RECOVERABLE ON THE DATE OUR ATTORNEY WOULD HAVE ASKED.
+  * DATE EVERY DEMAND. A page that says "we would subpoena X" is half a page.
+    The full page says "we would have served this on <date>, because <the item
+    was still in this condition then / the retention window closed on this
+    date / this witness had not yet been released>."
+  * WE DO NOT INHERIT THE STATE'S FRAME EITHER. The real litigation has been
+    conducted inside the frame the State built - a rifle, a roof, a shooter, a
+    confession. Our attorney never accepted that frame, because on 12 September
+    2025 nobody had yet proved the mechanism of death and our attorney's first
+    act was to demand that it be proved.
+  * WHAT THIS IS NOT. It is not a claim that the real team could have done this,
+    or should have, or failed to. They joined a live case with a client in
+    custody, a gag order coming, and a State a week ahead of them. The
+    counterfactual is a MEASURING STICK, not a verdict on anyone. Every page
+    still carries the disclaimer contract in STAGE 2, without exception.
+
+
+============================
+DOCTRINE 2 - FIRST PRINCIPLES, AND THE MODEL'S OWN BIAS
+============================
+
+READ THIS BEFORE WRITING ONE WORD. It is the most likely way this run fails.
+
+A language model is trained overwhelmingly on institutional text - wire copy,
+official statements, agency releases, court reporting that repeats them. That
+training produces a measurable pull toward the government's account of any
+contested event: to treat the charging document as the baseline, to describe the
+official theory in the indicative and every competing account in the
+conditional, to hedge a well-evidenced citizen finding into a "claim", and to
+quietly reintroduce "the shooter" and "the murder weapon" as settled nouns.
+
+THAT PULL IS A DEFECT IN THE WRITER, NOT A FINDING ABOUT THE CASE. Catch it.
+
+The rules that follow are absolute:
+
+  * REASON UP FROM THE PHYSICAL FACTS, NOT DOWN FROM THE CHARGING DOCUMENT. The
+    State's information is a pleading. It is an allegation drafted by one party.
+    It is evidence of nothing. Start from what is physically established -
+    wound morphology, acoustics, timing, custody, what was tested and what was
+    not - and build up.
+  * THE SITE'S OWN CONCLUSION IS THE BASE CASE HERE. This site's evidence review
+    concludes Charlie Kirk was killed by an explosive device, most plausibly a
+    shaped charge in or on the microphone. That conclusion is the product of
+    long research documented across dozens of Level 2 areas of this site. On
+    THIS section's pages it is the working hypothesis a defense would advance,
+    and the State's rifle account is the contested proposition. DO NOT INVERT
+    THAT. Do not write a page whose net effect is to re-argue the State's case
+    more persuasively than the defense's.
+  * DO NOT UNDERCUT THE APPENDIX. Every thesis in APPENDIX A is there because
+    an investigation put it there. A run that arrives at "this thesis is
+    probably wrong" without NEW EVIDENCE has not been careful, it has been
+    deferent. The "What would defeat this thesis" block is where honest doubt
+    goes - it is a named, falsifiable test, not a general shrug.
+  * HEDGE SYMMETRICALLY OR NOT AT ALL. If the defense contention gets
+    "reportedly" and "allegedly", the State's account gets the same treatment.
+    The State ALLEGES a .30-06 round fired from the Losee Center roof. Write it
+    that way.
+  * NEVER LAUNDER AN ASSUMPTION INTO A NOUN. Not "the murder weapon" - "the
+    seized rifle". Not "the shooter" - "the person on the roof", or "the person
+    the State alleges was on the roof". Not "the confession" - "the message
+    attributed to the defendant". Not "the fatal shot" - "the fatal wound".
+    Grep for these before reporting done.
+  * FIRST PRINCIPLES MEANS ASKING WHAT WOULD HAVE TO BE TRUE. For every element
+    the State must prove, write down what physically must be true for it to
+    hold, then ask which of those things has actually been demonstrated on a
+    record we can read. The ones that have not been demonstrated are the case.
+
+
+============================
+DOCTRINE 3 - THE PRODUCT IS REASONABLE DOUBT, NOT A COUNTER-NARRATIVE
+============================
+
+Our attorney is not trying to publish a theory. It is trying to get its client
+acquitted. Those are different jobs and the second one is easier.
+
+  * THE VERDICT MATH. The defense does not have to prove who did it. It has to
+    prevent twelve jurors from being sure this defendant did. ONE juror with an
+    unresolved doubt is a hung jury; a jury that cannot exclude an explosive
+    mechanism is a jury that cannot convict on a bullet.
+  * EVERY THESIS PAGE MUST SAY HOW IT REACHES A JUROR. Not "this would embarrass
+    the State" - what does the juror now not know that the verdict requires them
+    to know? Write it as the sentence a defense lawyer says in closing.
+  * TWO INDEPENDENT ROUTES TO ACQUITTAL, AND THE PAGES SHOULD SAY WHICH ONE
+    THEY SERVE:
+      ROUTE 1 - MECHANISM. If the fatal wound was not caused by a rifle round,
+                the identity of the person on the roof is irrelevant. This is
+                the shortest route and it is T1.
+      ROUTE 2 - THE INVESTIGATION ITSELF. If the scene was altered, if material
+                was routed away, if tests that would have settled the mechanism
+                were never ordered, if federal decisions reached the courtroom
+                only secondhand - then the jury is being asked to convict on the
+                output of a process it cannot inspect. A jury that distrusts the
+                process does not need an alternative perpetrator to acquit.
+    ROUTE 2 IS THE ONE MOST OFTEN UNDERRATED. It does not require proving
+    foreign involvement, or intelligence involvement, or anything at all about
+    who did it. It requires only showing, item by item, that the record the
+    State is asking the jury to rely on has holes where the answers should be.
+    Every discovery instrument in this section feeds Route 2 whether or not it
+    ever produces a document, because A REFUSAL IS ALSO AN ANSWER.
+  * THE THIRD-PARTY ROUTE IS REAL BUT IT IS GATED. Under Utah practice a
+    third-party-perpetrator defense needs a noticed, supported alternative
+    before any evidence about it is admissible. That is why
+    alternative-perpetrator-notice is the gateway and why nothing downstream of
+    it may be proposed without pointing at it first. See STAGE 5 STEP 5.
+
+
+============================
+DOCTRINE 4 - GETTING OUT FROM UNDER THE STATE'S WITNESSES
+============================
+
+A large part of what a good defense attorney actually does is neutralise
+testimony that appears, on its face, to prove the State's point. This section
+must show that work, not just the discovery work.
+
+For every State witness who has testified, or who is expected to, the pages
+should reach for these in roughly this order:
+
+  1. FOUNDATION AND PERSONAL KNOWLEDGE. Almost every federal decision in this
+     case has reached the courtroom SECONDHAND, through Utah officers repeating
+     what federal personnel told them. A witness with no personal knowledge of
+     a federal decision cannot establish it. Rule 602 is the cheapest and most
+     under-used tool available here.
+  2. THE LIMITS OF THE WITNESS'S OWN SCIENCE. The defense has already proved
+     this works: it called three government examiners and used them to
+     establish what their own results cannot show. Extend it. An examiner who
+     ran a DNA panel did not run a residue panel and cannot say one was run.
+  3. WHAT THE WITNESS WAS NEVER ASKED TO LOOK FOR. The most powerful question
+     to a forensic witness is not "are you sure" - it is "were you asked?" The
+     honest answer is usually no, and it is not the witness's fault, and the
+     jury hears exactly what it needs to hear.
+  4. CHAIN OF CUSTODY AND THE WARRANT UNDERNEATH IT. Evidence that arrived
+     through a gap in the documented custody chain, or from a search with no
+     warrant in the held set, is evidence that may not arrive at all.
+  5. THE DOCUMENT BEHIND THE TESTIMONY. A witness reading a report is a hearsay
+     conduit for its author. Demand the author, or demand the report.
+  6. IMPEACHMENT BY OMISSION. What is absent from a report the witness wrote
+     contemporaneously is fair, powerful, and does not require calling anybody
+     a liar.
+
+Write these as SPOKEN QUESTIONS in the numbered lists, addressed to a named
+witness on a named date, and tag the right-hand column with the tier. The
+certified Day 4 and Day 5 transcripts are the only place a T1 answer exists.
+
+
+============================
+DOCTRINE 5 - THE TWO TRACKS, SIDE BY SIDE
+============================
+
+The output of this section is a COMPARISON. Two tracks running over the same
+twelve months on the same facts:
+
+  TRACK A - our AI defense attorney, retained 12 September 2025, no default,
+            no inherited file, working from first principles.
+  TRACK B - the real, visible, public record of the case.
+
+The comparison is published in two places:
+
+  * On every thesis page, as THE TABLE - left is Track A, right is Track B.
+  * On one dedicated spine page, two-tracks-compared.mdx, which sets the two
+    tracks against each other at the level of the CASE rather than one thesis:
+    the same months, the same milestones, what each track had done by each one.
+
+And the day-one calendar itself gets its own spine page, the-day-one-track.mdx:
+a dated counterfactual schedule of what our attorney would have served, and on
+what date, from 12 September 2025 forward, with a column for what was still
+recoverable on that date and a column for when that window closed.
+
+BOTH PAGES CARRY THE FULL DISCLAIMER CONTRACT and both say in their own words
+that Track B is a record of what is VISIBLE, that most of the file is gagged and
+sealed, and that a difference between the tracks is a difference in visibility
+before it is anything else.
 
 
 ============================
@@ -166,8 +370,17 @@ largest holes in the section.
 THE THREE PAGE FAMILIES
 ============================
 
-FAMILY 1 - SPINE PAGES. The four listed above. Rebuilt in STAGE 7 to stay
-consistent with whatever the run changed. Never deleted.
+FAMILY 1 - SPINE PAGES. The four listed above, plus the two DOCTRINE 5 pages:
+
+  the-day-one-track.mdx    the dated counterfactual discovery calendar from
+                           {RETAINER_DATE} forward, with what was still
+                           recoverable on each date and when that window shut
+  two-tracks-compared.mdx  Track A against Track B at the level of the case:
+                           the same months, the same milestones, what each
+                           track had done by each one
+
+Rebuilt in STAGE 7 to stay consistent with whatever the run changed. Never
+deleted.
 
 FAMILY 2 - THESIS PAGES. One page per APPENDIX A item. Level 3, in
 {AIATT_DIR}, filename is the thesis slug from APPENDIX A. This is the page
@@ -715,6 +928,61 @@ actually grant and what is still physically testable:
      demand that will be denied still creates a record of the refusal, and the
      refusal is itself a publishable fact.
 
+THE INSTRUMENT SET THIS RUN ADDS. Fifteen new instrument pages, each owned by
+exactly one agent. Slugs are fixed here so two agents can never collide:
+
+  T5   dispatch-and-cad-records            CAD, radio and dispatch logs; who
+                                           directed the effort and at what time
+  T5   detention-and-release-records       the detention and release paperwork,
+                                           and the arrival-order record. RECORDS
+                                           ONLY. No person named or described.
+  T6   rental-vehicle-subpoenas            rental agreements in the window from
+                                           private companies - reachable
+  T6   fbo-and-ground-handling-records     FBO, ground handling, fuel and
+                                           handling receipts - reachable
+  T6   adsb-authentication-and-custody     how the recovered ADS-B material is
+                                           actually got into evidence: Rule 901
+                                           and 902(13)/(14), the custodian
+                                           declaration, the control-aircraft
+                                           discipline as the authentication
+  T7   cell-site-and-tower-dump-discovery  what CSLI and tower-dump material the
+                                           State holds, what was analysed, and
+                                           what happened to the difference
+  T7   foreign-carrier-records-mlat        the foreign-carrier route and why a
+                                           court would likely refuse it. Write
+                                           it anyway - priority 5 in this stage
+  T8   university-property-records-subpoena occupancy, keying, booking and
+                                           access records - routine, reachable
+  T8   house-frontage-camera-canvass       frontage camera coverage and the
+                                           retention windows that govern it
+  T9   campus-camera-inventory-and-retention the campus half of the Brady
+                                           thesis: the full camera inventory,
+                                           the retention record, the production
+                                           log against it
+  T4   av-procurement-chain-subpoena       purchase orders, contract vehicles,
+                                           funding source, delivery and custody
+                                           for the AV equipment - documentary
+                                           and reachable against private vendors
+  T2   exhibit-production-and-bates-audit  the State's own 34-exhibit list with
+                                           its Bates numbers, of which we hold
+                                           ZERO as documents, and the six
+                                           numbers missing from the State's own
+                                           list. See CONFIRMED GAPS item H
+  T1   crime-scene-warrant-gap-suppression the warrant set holds nothing for the
+                                           UVU scene itself, has a 19-day hole
+                                           and stops on 6 Oct 2025. See
+                                           CONFIRMED GAPS item G. This is a
+                                           suppression instrument, not a
+                                           discovery one
+  T1   state-expert-notice-exclusion       no State expert notice appears
+                                           anywhere on the 867-row docket. See
+                                           CONFIRMED GAPS item I
+  ALL  hearing-audio-and-transcript-release the audio Judge Graf already ordered
+                                           released and that has never appeared,
+                                           and the certified Day 1-3
+                                           transcripts. See CONFIRMED GAPS
+                                           items E and F
+
 The four known missing instrument clusters, from the last coverage measurement:
 
   * T5 - the two drivers police were sent after. Instruments: the dispatch and
@@ -745,6 +1013,9 @@ STAGE 7 - REBUILD THE SPINE
 
 Coordinator only, after every agent has reported.
 
+* the-day-one-track.mdx and two-tracks-compared.mdx - the DOCTRINE 5 pages.
+  Built by the coordinator after the thesis agents report, because both of them
+  aggregate across every thesis.
 * overview.mdx
     - The cursor block at the top, restated from trial-cursor.mdx. These two
       must never disagree.
