@@ -137,7 +137,10 @@ with open(PAGES_CSV) as f:
         pages_meta[row['file_path']] = (row['page_key'], row['title'])
 
 def norm(s):
-    return re.sub(r'[^a-z0-9]', '', (s or '').lower())
+    # A _key or title of a date-named directory (e.g. 20230207) round-trips out of
+    # images.yaml as an int, not a str, and .lower() then raises. Coerce before
+    # normalising rather than rewriting hundreds of YAML keys.
+    return re.sub(r'[^a-z0-9]', '', str(s if s is not None else '').lower())
 
 def mk_key(seg, parent_key=None):
     base = re.sub(r'[^A-Za-z0-9_]+', '_', seg).strip('_')
