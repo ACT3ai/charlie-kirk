@@ -2482,8 +2482,8 @@ level_3:
       title: "Unfiled Backlog"
       _key: Unfiled_Backlog
       site_level_2: []
-      number_of_images: 181
-      number_of_images_recursive: 186
+      number_of_images: 184
+      number_of_images_recursive: 189
       needs_split: true   # over the 12 ceiling — split on a later pass
       images:
         - image:
@@ -4999,6 +4999,44 @@ level_3:
             sha256: 83322bf23be22f9b32afc48921704474eb5dc7e8ee8f324af9506bf936c1ddc1
             file_path: "~/BGit/Bryan_git/charlie-kirk/images/2093761830225350902_1.jpg"
             ai_description: "A two-panel annotated comparison image. The top panel is a ground-level photograph of a white box truck marked S.W.A.T. with a police-star emblem on its flank, a marked pickup on either side and an operator in fatigues walking past; three roof features are circled in red with arrows drawn up to them - a low dome toward the front, a larger white rectangular housing at the centre, and a small dark protrusion toward the rear. The bottom panel is an overhead frame of a white box truck parked in a lot beside a building with heavy equipment and other white vehicles around it; two roof features are circled in red and labelled in yellow capitals, AC on the rectangular housing and COMS ANTENNA on the small dark protrusion. The yellow labels are the poster annotation, not markings on the vehicle. Published by @DiligentDenizen on 29 August 2026 arguing that the command-center truck parked across from UVU on 10 September 2025 carries the same roof units as a special-operations SWAT vehicle photographed in St George, Utah."
+            ai_description_file: ""
+            ocr_file: ""
+            transcription_file: ""
+            image_page: ""
+            on_pages: []
+            should_be_on_pages: []
+        - image:
+            cid: "QmdrbsEEntu9LU4iX46ctUtPEuD6rGPkMsMr9f4fPGDbGN"
+            ipfs_pinned: true
+            sha256: d0545943296b6347a88147eab33dc12cccd3adc1d796241db2e588e750967307
+            file_path: "~/BGit/Bryan_git/charlie-kirk/images/2095169955520041090_1.jpg"
+            ai_description: "A screenshot of the Google Trends Explore interface. The search term field reads \"Burton Hibbs Calvalry Church\" and is set to Search term; the filter row below it shows the region Tucson (Sierra Vista) AZ, the date range 1/1/25 - 9/9/25, All categories, and Image Search. The Interest over time panel beneath plots a line that sits flat at zero across the whole window from Jan 1 2025 to past Aug 17 2025, then rises in a single narrow vertical spike to the value 100 and falls straight back down. A hover tooltip reads: Sep 7, 2025 - \"Burton Hibbs Calvalry Church\" - 100."
+            ai_description_file: ""
+            ocr_file: ""
+            transcription_file: ""
+            image_page: ""
+            on_pages:
+              - page: "~/BGit/Bryan_git/charlie-kirk/site/docs/GoogleSearches/butch-hibbs-sierra-vista-trends.mdx"
+              - page: "~/BGit/Bryan_git/charlie-kirk/site/docs/People/butch-hibbs.mdx"
+            should_be_on_pages: []
+        - image:
+            cid: "QmSL81LRQ3ZuXqfBLxygWm9a1wDLkmHcNhLFQUfUq1zcxy"
+            ipfs_pinned: true
+            sha256: 6a8650c62f9e1f9686e8ba784683c6c52688a365334b6651b73623f6676e0795
+            file_path: "~/BGit/Bryan_git/charlie-kirk/images/2095205377746866287_1.jpg"
+            ai_description: "Screen capture of page 2 of a six-page discovery exhibit index in State of Utah v. Tyler Robinson, viewed in a PDF reader at 175 percent. Row 15 reads 'Video at WCSO on 9/11/2025' with Bates number 3996-R1 and disclosure date 11/25/2025; the row is highlighted in blue and the Bates cell is outlined in red. Surrounding rows list item 13 doorbell camera surveillance from 9/10/2025, item 14 a written statement of Mike Mitchell, item 16 the recorded 1102 statement of Lance Twiggs, 16.1 text messages between TR and LT, 16.2 Discord chats, 16.3 a photograph of a note, 16.4 FBI press release photographs, and items 19 and 20 photos of rounds from the rifle. The image is used to show that the September 11 Washington County Sheriff's Office video is an indexed, Bates-numbered discovery exhibit rather than an assertion."
+            ai_description_file: ""
+            ocr_file: ""
+            transcription_file: ""
+            image_page: ""
+            on_pages: []
+            should_be_on_pages: []
+        - image:
+            cid: "QmZdh5qSq35yRNM12g6AKQCB1iftU5JyNGQZMq3TNMFSxk"
+            ipfs_pinned: true
+            sha256: a6bd562eb3b4d6f04a74ab031a4dbba953a1c43724c7198f5c069acd0f27be9e
+            file_path: "~/BGit/Bryan_git/charlie-kirk/images/2095205377746866287_2.jpg"
+            ai_description: "Capture of page 70 of a defense filing in State of Utah v. Tyler Robinson, PDF page 79 of 258. The text quotes Discovery Bates 000007 at p.20 stating that on the evening of his arrest 'Tyler Robinson declined to be interviewed without having an attorney present', then reproduces a transcript from the video exhibit at Bates 003996-R2 at internal timestamp 03:36:53. Two red boxes highlight the Bates number 003996-R2 and the line '06:25 PM / 03:36:53', where an officer reads Robinson his Miranda rights. Subsequent entries at 06:26 PM show Robinson asking to speak with legal counsel, naming attorney Doug Terry, saying he thinks the office is closed for the night, and stating he would like to remain silent. The closing paragraph argues that officials who told the media Robinson was refusing to cooperate were describing the exercise of Fifth and Sixth Amendment rights."
             ai_description_file: ""
             ocr_file: ""
             transcription_file: ""
