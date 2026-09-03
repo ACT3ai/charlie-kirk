@@ -1657,6 +1657,28 @@ print('DUPLICATES:',{k:v for k,v in c.items() if v>1} or 'none')"
   A parse failure means the edit corrupted the file — restore it with
   `git checkout -- images/images.yaml` and redo it.
 
+  DO NOT RUN THE PLACEMENT STAGE TO GET YOUR IMAGE ONTO A PAGE. This step's job
+  is finished when the image is embedded on the page YOU wrote (Step 9d) and
+  registered. It is tempting to reach for
+  `image_planning/generator/place_should_be_images.py --apply` to spread it
+  further. Do not, without Bryan asking:
+
+    * It is WHOLE-CORPUS — there is no --page or --only flag. It rewrites the
+      CK_PLACED_IMAGES block on every host page in one go.
+    * It regenerates each block from {IMAGES_YAML}'s should_be_on_pages, and that
+      field has drifted far behind what is actually on the pages. Measured
+      2026-09-03: a dry run reported 662 pages edited and applying it produced
+      5,090 deletions against 359 insertions — a net removal of roughly five
+      thousand existing image placements. Reconciling that drift is its own job.
+    * `plan_should_be.py plan`, which repopulates the field, is a SCRIPTED scorer
+      working off each entry's ai_description. Where a description is wrong the
+      assignment is wrong, and several were: on 2026-09-03 it put a muzzle-energy
+      chart on `surrendering-vs-turning-himself-in` because the manifest
+      description for that image was wrong (it is a portrait of Charlie Kirk).
+
+  For ONE image on ONE topic page, hand-place it as Step 9d already describes and
+  let grow_hierarchy.py record the page in on_site_pages. That is the whole job.
+
   Note the schema differs by node depth: mirrored level_4/level_5 page nodes use
   `on_site_pages: [...]`, while top-level level_3 cluster entries use `on_pages`,
   `should_be_on_pages`, `image_page`, `next_image`, and `banned`. Never invent
