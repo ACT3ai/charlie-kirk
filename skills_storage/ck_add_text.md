@@ -1271,11 +1271,14 @@ the post has no video if yt-dlp itself finds nothing to download.
   step (6B-c4) on 2026-08-12 and its backlog stopped growing that day. The video
   side had no equivalent step at all until this one.
 
-  UNLIKE IMAGES, THERE IS NO BINDER THAT WILL DO THIS FOR YOU. The image binder
-  (`bind_image_pages.py`) CREATES entries from any sha256 it finds embedded on a
-  page. The video equivalent (`bind_video_pages.py`) only records which existing
-  Level 5 page hosts an ALREADY-REGISTERED video — it never creates an entry.
-  Nothing else will notice this video unless you act here.
+  NO BINDER WILL DO THIS FOR YOU — ON EITHER SIDE. `bind_video_pages.py` only
+  records which existing Level 5 page hosts an ALREADY-REGISTERED video; it never
+  creates an entry. Its image counterpart `bind_image_pages.py` is the same: binds
+  only, never creates (the claim that it creates entries was wrong and was removed
+  from step 6B-c4 on 2026-09-03). On the IMAGE side the creating script is
+  `grow_hierarchy.py`'s Stage 6 page sweep; on the VIDEO side there is no page-sweep
+  equivalent at all, which is why this step is manual. Nothing will notice this
+  video unless you act here.
 
   BEWARE THE IDENTIFIER MISMATCH. {VIDEOS_YAML} stores CIDv0 (`Qm...`). Pages embed
   CIDv1 base32 (`bafybei...`) in the gateway URL. Grepping a page's `bafybei...`
@@ -1561,21 +1564,48 @@ print('DUPLICATES:',{k:v for k,v in c.items() if v>1} or 'none')"
   own /Photos page, never appears in a gallery, and is never re-checked. Runs on
   2026-08-10 and 2026-08-12 all skipped this and left their images unregistered.
 
-  KNOW WHO FILLS WHAT. An external binder pass (`image_planning/generator/`, run
-  periodically and by the auto-commit machinery) walks the site and binds any image
-  it finds embedded on a page into {IMAGES_YAML}, keyed by **sha256**. So placement
-  is handled for you — but ONLY if the page embeds the image the durable way:
+  KNOW WHICH SCRIPT DOES WHAT. Three generators touch {IMAGES_YAML} and they are
+  NOT interchangeable. Naming the wrong one is how a run reports an image
+  "registered" when nothing registered it:
+
+    grow_hierarchy.py     THE PAGE SWEEP, and the one this step needs. Its Stage 6
+                          walks every page under site/docs/, resolves each local
+                          <img src> to a file, hashes it, and CREATES an entry for
+                          any sha256 the corpus does not hold — filing it under the
+                          node that MIRRORS THE PAGE IT FOUND IT ON. That last part
+                          is why this script and not another: the page tells it the
+                          topic, so a Mic page embed lands in the Mic cluster.
+    add_orphan_images.py  Disk sweep, a BACKSTOP only. Walks images/ and the served
+                          evidence dir and files anything unknown into
+                          `Unfiled_Backlog`. It has no page context, so everything
+                          it creates is UNFILED — no topic cluster, and no /Photos
+                          page until something files it. Use it for an image that is
+                          deliberately on no page, never as the primary path.
+    bind_image_pages.py   BINDS ONLY. It scans site/docs/Photos/ for Level 5 pages
+                          carrying a `ck_image_sha256:` frontmatter key and records
+                          which page hosts which already-registered image. It walks
+                          the rest of site/docs/ ONLY to collect video CIDs so it can
+                          skip video entries. **It never creates an image entry.**
+                          Running it on a brand-new image does nothing at all.
+
+  This skill said for months that `bind_image_pages.py` "CREATES entries from any
+  sha256 it finds embedded on a page". IT DOES NOT, and never did. On 2026-09-03 a
+  run followed that instruction to the letter, ran the binder, and found no entry;
+  it would have reported the image registered had it not checked. Verified against
+  the source: bind_image_pages.py only ever walks PHOTOS_DIR for frontmatter.
+
+  Placement still depends on embedding the image the durable way:
 
       <img src="/img/evidence/{sha256}.jpg" data-cid="{CID}" />
 
   An image embedded by IPFS gateway URL alone (`src="https://ipfs.io/ipfs/{CID}"`)
-  carries no sha256, so the binder cannot see it and the image never enters
-  {IMAGES_YAML} at all. That is what happened to the 2026-08-10 engraved-bullets
-  image. Always use the `/img/evidence/{sha256}.jpg` src (Step 9d) and keep the CID
-  in `data-cid`.
+  carries no sha256, so the page sweep cannot resolve it to a file and the image
+  never enters {IMAGES_YAML} at all. That is what happened to the 2026-08-10
+  engraved-bullets image. Always use the `/img/evidence/{sha256}.jpg` src (Step 9d)
+  and keep the CID in `data-cid`.
 
-  What the binder CANNOT know, and what this skill MUST supply, is exactly two
-  fields — it leaves both empty every time:
+  What NO generator can know, and what this skill MUST supply, is exactly two
+  fields — every one of them leaves both empty:
 
       cid:              the IPFS CID from 6B-b
       ai_description:   a one-paragraph description of what the image actually
@@ -1583,13 +1613,25 @@ print('DUPLICATES:',{k:v for k,v in c.items() if v>1} or 'none')"
 
   DO NOT hand-append whole nodes to {IMAGES_YAML}. It is a ~36,000-line nested
   hierarchy with per-node `number_of_images` / `number_of_images_recursive`
-  counters, and it is REWRITTEN UNDER YOU by the binder and the auto-commit
+  counters, and it is REWRITTEN UNDER YOU by these generators and the auto-commit
   process — a working-tree edit made at the wrong moment gets reverted silently
   (observed 2026-08-12). Instead:
 
   1. Embed the image on the page first (Step 9d), with the sha256 src.
-  2. Let the binder create the entry, or run it yourself:
-     `python3 image_planning/generator/bind_image_pages.py`
+  2. Run the PAGE SWEEP so the entry is created in the RIGHT cluster:
+     ```bash
+     cd {ROOT_DIR}
+     python3 image_planning/generator/grow_hierarchy.py
+     ```
+     Then CONFIRM it landed — never assume the script did it:
+     ```bash
+     grep -c "sha256: {sha256}" images/images.yaml     # must be 1, not 0
+     ```
+     A 0 means the embed is not in a form the sweep can resolve (wrong src, or the
+     file is missing from site/internals/static/img/evidence/). Fix the embed and
+     re-run. Only for an image deliberately on no page, fall back to
+     `python3 image_planning/generator/add_orphan_images.py`, and then say plainly
+     in the summary that it sits in Unfiled_Backlog with no topic cluster.
   3. Then patch ONLY the two empty fields, matched **by sha256** so the edit
      survives lines moving:
      ```bash
@@ -1805,10 +1847,10 @@ This step uses the Level 2 / Level 3 decisions made in Step 3.
   images do not. Two separate failures come from getting this backwards:
     * A CID-only `src` depends on a gateway finding a provider. With no remote pin
       configured, that provider is only this machine.
-    * A CID-only `src` carries NO sha256, so the images.yaml binder pass cannot see
-      the image and it never enters {IMAGES_YAML} — no /Photos page, no gallery, no
-      verification. This is exactly how the 2026-08-10 engraved-bullets image went
-      unregistered for two days.
+    * A CID-only `src` carries NO sha256, so grow_hierarchy.py's page sweep cannot
+      resolve it to a file and the image never enters {IMAGES_YAML} — no /Photos
+      page, no gallery, no placement, no verification. This is exactly how the
+      2026-08-10 engraved-bullets image went unregistered for two days.
   Keep the CID in `data-cid` so the IPFS copy stays recorded and greppable.
 
   IMAGE EMBEDDING — use half-width, floated right, text flows around it:

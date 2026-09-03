@@ -105,10 +105,25 @@ def build_index():
     # Also drop underscore-prefixed paths (site/docs/laws/_prompts/..., _category_.json
     # siblings): Docusaurus does not publish them, so they are not pages a reader
     # can ever land on and must never become a publishing instruction.
+    #
+    # site/docs/Videos/ is excluded for the SAME reason as site/docs/Photos/: both are
+    # generated per-media trees where each leaf is one video / one image, not a topic a
+    # reader browses for evidence. Putting an unrelated evidence IMAGE onto somebody
+    # else's per-VIDEO page is the identical category error the Photos rule prevents.
+    # This was missed because the video pipeline created that tree on 2026-08-19, the
+    # same day the TBD abort killed this stage — so its output was never seen. With the
+    # abort fixed and Videos still in the index, a plan run proposed 2100 assignments
+    # onto per-video pages (against 6 before). Measured 2026-09-03.
+    #
+    # A '/data/' segment is excluded too: those are raw artifacts (flight CSVs,
+    # MISSING_DATA.md) that Docusaurus happens to publish, not pages to illustrate.
+    # The same run proposed 24 assignments onto them, against 0 before.
     for k in list(meta):
         rel = meta[k]['rel']
         segs = rel.split('/')
-        if (rel.startswith('site/docs/Photos/') or rel.startswith('site/docs/Topics3/')
+        if (rel.startswith('site/docs/Photos/') or rel.startswith('site/docs/Videos/')
+                or rel.startswith('site/docs/Topics3/')
+                or 'data' in segs[2:-1]
                 or any(s.startswith('_') for s in segs)):
             del meta[k]
     return meta, len(meta), from_fs, dropped
@@ -466,12 +481,39 @@ def _structural(chain, index):
             if cand in index and cand not in out: out.append(cand)
     return out
 
+
+def _is_placeholder(p):
+    """True only for a path that is an unfilled TEMPLATE, never for a real page.
+
+    The old test was `'TODO' in p or 'TBD' in p or '...' in p` — a SUBSTRING match.
+    That false-positived on legitimate generated filenames: the real, on-disk page
+    site/docs/Videos/Vid_Ballistics_Gun/Vid_South_Side_Shot/Vid_TBD_mwSLnKH.mdx
+    contains "TBD" in its slug, so every plan run that scored an image onto it
+    aborted the WHOLE stage with "STAGE 11 FAIL (pre-write): 9 invalid paths".
+    Stage 11 has therefore been dead since that page was generated (2026-08-19),
+    which is why should_be_on_pages stopped being populated and newly downloaded
+    images stopped reaching topic pages.
+
+    Match placeholder TOKENS as whole path segments or whole dot-separated stem
+    words instead. A path that survives this still has to be a key of the
+    candidate index AND pass os.path.isfile(), which is the authoritative test.
+    """
+    if '...' in p:
+        return True
+    segs = p.split('/')
+    stem = segs[-1].rsplit('.', 1)[0]
+    # whole-segment equality only: a directory literally named TBD/, or a file
+    # literally named TBD.mdx, is a template. "Vid_TBD_mwSLnKH.mdx" is a real page.
+    return stem.upper() in ('TODO', 'TBD') or any(
+        s.upper() in ('TODO', 'TBD') for s in segs[:-1])
+
+
 def _validate_and_emit(doc, index):
     bad = []
     def check(inner, node, chain):
         for pg in (inner.get('should_be_on_pages') or []):
             p = pg['page']
-            if ('...' in p or 'TODO' in p or 'TBD' in p or '<' in p or '>' in p
+            if (_is_placeholder(p) or '<' in p or '>' in p
                     or not p.startswith('~/') or not p.endswith(('.md', '.mdx'))
                     or '/site/docs/Photos/' in p or '/site/docs/' not in p
                     or p not in index or not os.path.isfile(expu(p))):
@@ -577,7 +619,7 @@ def cmd_write():
     def check(inner, node, chain):
         for pg in (inner.get('should_be_on_pages') or []):
             p = pg['page']
-            if ('...' in p or 'TODO' in p or 'TBD' in p or '<' in p or '>' in p
+            if (_is_placeholder(p) or '<' in p or '>' in p
                     or not p.startswith('~/') or not p.endswith(('.md', '.mdx'))
                     or '/site/docs/Photos/' in p or '/site/docs/' not in p
                     or not os.path.isfile(expu(p))):

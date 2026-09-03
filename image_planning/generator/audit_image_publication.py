@@ -76,7 +76,7 @@ def docs_text():
 
 
 def served_map():
-    """Map every served static image, two ways. Returns (exact, named).
+    """Map every served static image, three ways. Returns (exact, named, byname).
 
       exact — sha256 -> URLs whose BYTES hash to that sha. The
               banned-but-still-served check may use ONLY this one: a ban is
@@ -103,8 +103,20 @@ def served_map():
     two maps together flagged that safe redaction as a privacy breach.
 
     Both false positives were observed on 2026-08-12. Keep the maps separate.
+
+    byname - ORIGINAL-basename -> URLs, for a served copy that keeps the source
+             filename instead of being renamed to <sha>.ext. Used ONLY to rescue
+             the is-it-served check, never for the ban check.
+             site/internals/static/img/Panguitch_Timeline_Infographic.jpg is a
+             recompressed derivative of images/Panguitch_Timeline_Infographic.jpg
+             (929 KB against 9.0 MB, so the bytes differ) and the two pages that
+             show it embed /img/Panguitch_Timeline_Infographic.jpg. It is live for
+             every reader, and both other maps missed it: the bytes differ so
+             `exact` misses, and the stem is not 64 hex chars so `named` misses.
+             The audit called it 'no copy under site/internals/static/' and failed
+             the whole repo on it. False positive observed 2026-09-03.
     """
-    exact, named = {}, {}
+    exact, named, byname = {}, {}, {}
     for root, _, files in os.walk(STATIC):
         for f in files:
             if not f.lower().endswith(IMG_EXT):
@@ -115,7 +127,9 @@ def served_map():
             stem = os.path.splitext(f)[0]
             if re.fullmatch(r'[0-9a-f]{64}', stem):
                 named.setdefault(stem, []).append(url)
-    return exact, named
+            else:
+                byname.setdefault(stem.lower(), []).append(url)
+    return exact, named, byname
 
 
 def gateway_ok(cid):
@@ -129,7 +143,7 @@ def gateway_ok(cid):
 def main():
     probe = '--gateway' in sys.argv
     banned, private = ban_set(), privacy_set()
-    text, (served, named) = docs_text(), served_map()
+    text, (served, named, byname) = docs_text(), served_map()
 
     unserved, unplaced, withheld, ok = [], [], [], []
     for f in sorted(os.listdir(SRC_DIR)):
@@ -143,12 +157,19 @@ def main():
             if h in served:
                 unserved.append((f, h, 'BANNED BUT STILL SERVED: ' + ', '.join(served[h])))
             continue
-        if h not in served:
+        # A served copy may keep the ORIGINAL filename instead of being renamed to
+        # <sha>.ext, and may be recompressed, so its bytes differ. It is still the
+        # copy the reader loads. See byname in served_map().
+        same_name = byname.get(os.path.splitext(f)[0].lower(), [])
+        if h not in served and not same_name:
             unserved.append((f, h, 'no copy under site/internals/static/'))
             continue
-        # Placement counts byte-identical copies AND sha-named derivatives
-        # (gen_photos_pages downscales large images to <sha>.jpg).
-        urls = served[h] + [u for u in named.get(h, []) if u not in served[h]]
+        # Placement counts byte-identical copies, sha-named derivatives
+        # (gen_photos_pages downscales large images to <sha>.jpg), and
+        # original-name derivatives.
+        base = served.get(h, [])
+        urls = (base + [u for u in named.get(h, []) if u not in base]
+                     + [u for u in same_name if u not in base])
         if not any(u in text for u in urls):
             unplaced.append((f, h, urls[0]))
             continue
