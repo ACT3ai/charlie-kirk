@@ -40898,7 +40898,7 @@ level_3:
       site_level_2: ["Charlie"]
       site_page: "site/docs/Charlie/overview.mdx"
       number_of_images: 27
-      number_of_images_recursive: 72
+      number_of_images_recursive: 73
       needs_split: true   # over the 12 ceiling — split on a later pass
       images:
         - image:
@@ -42416,7 +42416,7 @@ level_3:
             _key: Charlie_Text_Messages
             site_page: "site/docs/Charlie/Text_Messages/overview.mdx"
             number_of_images: 0
-            number_of_images_recursive: 8
+            number_of_images_recursive: 9
             images: []
             level_5:
               - level_5:
@@ -42661,9 +42661,18 @@ level_3:
                   title: "Josh Hammer's 6:05 PM Post — A September 9 Timestamp"
                   _key: josh_hammer_6_05pm
                   site_page: "site/docs/Charlie/Text_Messages/josh-hammer-6-05pm-timestamp.mdx"
-                  number_of_images: 0
-                  number_of_images_recursive: 0
-                  images: []
+                  number_of_images: 1
+                  number_of_images_recursive: 1
+                  images:
+                    - image:
+                        cid: "QmWtRUt6V7pW3Ut2ZHyB2rbRNL5YNa4YV4B3yKMNTKeDkA"
+                        sha256: 266513c96ac97557a398efe0082ab9e633363509aa9a2c2a460a32e75097baab
+                        file_path: "~/BGit/Bryan_git/charlie-kirk/site/internals/static/img/evidence/266513c96ac97557a398efe0082ab9e633363509aa9a2c2a460a32e75097baab.jpg"
+                        ai_description: "Two-panel dark-mode screenshot of two posts from the verified @josh_hammer account. The top panel is the single word 'based' quoting an April 19, 2013 Donald Trump post reading 'Should be public execution for all to see-you will end this bullshit fast!', with the footer 18:05 - 9/9/25 - 15K Views. The bottom panel is a standalone post reading only 'Public execution.', with the footer 15:57 - 9/10/25 - 11K Views. The two clock readings straddle the assassination: 18:05 on September 9 falls five minutes into the 6:00 PM Zoom/Discord call the final-day timeline places with Charlie Kirk, Josh Hammer, Frank Turek, a rabbi and two Israeli officials, and 15:57 on September 10 falls after Charlie Kirk was shot at roughly 12:20 PM Mountain."
+                        ai_description_file: ""
+                        ocr_file: ""
+                        transcription_file: ""
+                        on_site_pages: ["site/docs/Charlie/Text_Messages/josh-hammer-6-05pm-timestamp.mdx"]
   - level_3:
       title: "People of the Investigation"
       _key: People
