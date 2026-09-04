@@ -37,7 +37,10 @@ clip goes further: it catches both locations coming out of the same corresponden
 
 <div className="ck-video">
   <video controls preload="metadata">
-    <source src="https://bafybeifpuhmmiieonoga6la5evjvmktxlrxj36oloml2b6qbk5r2gkldfe.ipfs.w3s.link/" type="video/mp4" />
+    {/* Served from this site's own origin. IPFS gateway sources below are an
+        archival fallback only: these CIDs have a single provider, so a gateway
+        must pull the whole file from one machine and a browser stalls. */}
+    <source src="/video/2095784011868020764.mp4" type="video/mp4" />
     <source src="https://bafybeifpuhmmiieonoga6la5evjvmktxlrxj36oloml2b6qbk5r2gkldfe.ipfs.dweb.link/" type="video/mp4" />
     <source src="https://ipfs.io/ipfs/QmaAFCFJyMgTxXA8YMrjBYrmwydzxmwVwyRus2MfQTafYc" type="video/mp4" />
     Your browser does not support the video tag.
@@ -81,7 +84,10 @@ acknowledging that it moved.
 
 <div className="ck-video">
   <video controls preload="metadata">
-    <source src="https://bafybeih7dyjrdm5rhqgy2xqz2pqt47ok3tlr76omo2tt3r5yhpa5sixpo4.ipfs.w3s.link/" type="video/mp4" />
+    {/* Served from this site's own origin. IPFS gateway sources below are an
+        archival fallback only: these CIDs have a single provider, so a gateway
+        must pull the whole file from one machine and a browser stalls. */}
+    <source src="/video/2095734681039696205.mp4" type="video/mp4" />
     <source src="https://bafybeih7dyjrdm5rhqgy2xqz2pqt47ok3tlr76omo2tt3r5yhpa5sixpo4.ipfs.dweb.link/" type="video/mp4" />
     <source src="https://ipfs.io/ipfs/QmfWXGeCvjbMupMerWV8QPjcmwXLFprXiPnx5GiPZ2fQra" type="video/mp4" />
     Your browser does not support the video tag.

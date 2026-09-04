@@ -6771,8 +6771,8 @@ level_3:
       _key: Security_Team
       site_level_2: ["Security_Team"]
       site_page: "site/docs/Security_Team/overview.mdx"
-      number_of_images: 17
-      number_of_images_recursive: 38
+      number_of_images: 18
+      number_of_images_recursive: 39
       needs_split: true   # over the 12 ceiling — split on a later pass
       images:
         - image:
@@ -7053,6 +7053,15 @@ level_3:
             image_page: "~/BGit/Bryan_git/charlie-kirk/site/docs/Photos/Security_Team/Img_cropped_d9e9e5.mdx"
             on_pages: []
             should_be_on_pages: []
+        - image:
+            cid: "QmUyvvDU85oAKwpAbjMhU5VTJL7ZH2Xu6GprXGSUGxmFYd"
+            sha256: cf00a1934dee90c2244a2ffcfc27bcaeb86df287728c905133c7bd00f4af18b4
+            file_path: "~/BGit/Bryan_git/charlie-kirk/site/internals/static/img/evidence/cf00a1934dee90c2244a2ffcfc27bcaeb86df287728c905133c7bd00f4af18b4.jpg"
+            ai_description: "Annotated group photograph of the private protective detail, shown on a Candace Owens broadcast with the CANDACE wordmark visible behind the frame. Thirteen men in casual shirts and sunglasses stand outdoors on a paved walkway, a water feature, a mountain ridge and a campus building behind them. White callout lines label eleven of them by name: Richard Bracey, Chester (Claude) Barnes, Rick Cutler, Justin Davis, Dan Flood, Blake Gibson, Pierce Beck, Blake Harruff, Todd Espy, Alex Faria and Brian Harpole. The overlay identifies who appears in the photograph and asserts nothing further about any of them."
+            ai_description_file: ""
+            ocr_file: ""
+            transcription_file: ""
+            on_site_pages: ["site/docs/Security_Team/overview.mdx"]
       level_4:
         - level_4:
             title: "TBD"
@@ -39194,6 +39203,13 @@ level_3:
             title: "Scope Zero & Pants-Leg Concealment"
             _key: Gun_Scope_Zero_Concealment
             site_page: "site/docs/Gun_Bullet/Scope_Zero_And_Concealment.mdx"
+            number_of_images: 0
+            number_of_images_recursive: 0
+            images: []
+        - level_4:
+            title: "Screwdriver: \"Near the Rifle,\" Then the Roof"
+            _key: GunBullet_Screwdriver_Location_Switch
+            site_page: "site/docs/Gun_Bullet/Screwdriver_Near_Rifle_To_Roof.mdx"
             number_of_images: 0
             number_of_images_recursive: 0
             images: []
