@@ -1044,3 +1044,108 @@ a.ck-media-shot:focus {
   }
 }
 /* CK_PEOPLE_ANALYSIS_END */
+
+/* CK_CITIZEN_NOTICE_START
+   ------------------------------------------------------------------
+   The narrow right-hand rail that replaces the table of contents on the 100
+   pages in internals/src/citizenNoticePages.ts. Rendered by the DocItem/Layout
+   swizzle in internals/src/theme/.
+
+   WIDTH. The requirement is "one third the width of" the homepage's right bar.
+   That bar is Docusaurus's standard TOC column, .col.col--3 — a 3-of-12 grid
+   column, i.e. 25% of the row. One third of that is 8.3333%, which is what
+   .ck-citizen-col is set to. The content column takes the other 16.667% back
+   via .docItemColCitizen in the Layout's own styles.module.css.
+
+   At 8.3333% this rail is roughly 95-110px on a typical desktop container. That
+   is deliberately very narrow, as asked. Everything below exists to keep short
+   text legible in that space: hyphenation and overflow-wrap so long words break
+   instead of overflowing, a smaller type scale, and tight leading.
+   To widen it later, change ONE number: the flex-basis/max-width pair here, and
+   the matching .docItemColCitizen max-width (the two should sum to 100%).
+   ------------------------------------------------------------------ */
+
+@media (min-width: 997px) {
+  .col.ck-citizen-col {
+    /* exactly one third of col--3's 25% */
+    flex: 0 0 8.3333333%;
+    max-width: 8.3333333%;
+  }
+}
+
+.ck-citizen-notice {
+  position: sticky;
+  top: calc(var(--ifm-navbar-height) + 1rem);
+  max-height: calc(100vh - var(--ifm-navbar-height) - 2rem);
+  overflow-y: auto;
+  padding: 0.6rem 0.5rem 0.7rem;
+  border-left: 3px solid var(--ifm-color-primary);
+  border-radius: 0 4px 4px 0;
+  background: var(--ifm-menu-color-background-active, rgba(0, 0, 0, 0.03));
+  font-size: 0.66rem;
+  line-height: 1.35;
+  color: var(--ifm-color-emphasis-800);
+  /* the column is ~100px wide: long words must break rather than overflow */
+  overflow-wrap: break-word;
+  word-break: break-word;
+  hyphens: auto;
+}
+
+.ck-citizen-notice p {
+  margin: 0 0 0.55rem;
+}
+
+.ck-citizen-notice p:last-child {
+  margin-bottom: 0;
+}
+
+.ck-citizen-notice__lead {
+  font-weight: 700;
+  font-size: 0.7rem;
+  line-height: 1.25;
+  color: var(--ifm-color-emphasis-900);
+}
+
+.ck-citizen-notice__cta {
+  font-weight: 600;
+  color: var(--ifm-color-emphasis-900);
+}
+
+.ck-citizen-notice__email a {
+  font-weight: 600;
+  /* an email address has no spaces and is wider than the column */
+  overflow-wrap: anywhere;
+  word-break: break-all;
+}
+
+/* Mobile and tablet: there are no columns, so the rail is rendered inline at the
+   end of the article instead. Hide the in-article copy on desktop, and hide the
+   rail column below the Docusaurus desktop breakpoint. */
+.ck-citizen-notice-mobile {
+  margin: 2rem 0 0;
+}
+
+.ck-citizen-notice-mobile .ck-citizen-notice {
+  position: static;
+  max-height: none;
+  overflow-y: visible;
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
+.ck-citizen-notice-mobile .ck-citizen-notice__lead {
+  font-size: 0.95rem;
+}
+
+@media (min-width: 997px) {
+  .ck-citizen-notice-mobile {
+    display: none;
+  }
+}
+
+@media (max-width: 996px) {
+  .col.ck-citizen-col {
+    display: none;
+  }
+}
+/* CK_CITIZEN_NOTICE_END */

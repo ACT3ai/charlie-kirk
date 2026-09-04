@@ -1,0 +1,29 @@
+/**
+ * Copied verbatim from @docusaurus/theme-classic 3.10.1
+ * lib/theme/DocItem/Layout/styles.module.css, because index.tsx beside this file
+ * is a swizzle of that component and needs the same two rules. Keep in step with
+ * the upstream file on a Docusaurus upgrade.
+ */
+
+.docItemContainer header + *,
+.docItemContainer article > *:first-child {
+  margin-top: 0;
+}
+
+@media (min-width: 997px) {
+  .docItemCol {
+    max-width: 75% !important;
+  }
+}
+
+/**
+ * Ours, not upstream. When the right rail is the narrow citizen notice rather
+ * than a table of contents, the main column takes back the width the rail gives
+ * up: the notice is one third of a col--3, so the content column grows from 75%
+ * to 100% - (25% / 3) = 91.666%.
+ */
+@media (min-width: 997px) {
+  .docItemColCitizen {
+    max-width: 91.6666667% !important;
+  }
+}
