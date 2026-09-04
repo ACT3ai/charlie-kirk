@@ -40882,7 +40882,7 @@ level_3:
       site_level_2: ["Charlie"]
       site_page: "site/docs/Charlie/overview.mdx"
       number_of_images: 27
-      number_of_images_recursive: 71
+      number_of_images_recursive: 72
       needs_split: true   # over the 12 ceiling — split on a later pass
       images:
         - image:
@@ -42400,7 +42400,7 @@ level_3:
             _key: Charlie_Text_Messages
             site_page: "site/docs/Charlie/Text_Messages/overview.mdx"
             number_of_images: 0
-            number_of_images_recursive: 7
+            number_of_images_recursive: 8
             images: []
             level_5:
               - level_5:
@@ -42620,8 +42620,8 @@ level_3:
                   title: "Final-Day Timeline — September 9, Not September 10"
                   _key: final_day_timeline_sept
                   site_page: "site/docs/Charlie/Text_Messages/final-day-timeline-sept-9.mdx"
-                  number_of_images: 1
-                  number_of_images_recursive: 1
+                  number_of_images: 2
+                  number_of_images_recursive: 2
                   images:
                     - image:
                         cid: "QmW11bo6WHJdwwteGbyM37avJTFtEfDNR5Vb1ztXPtBXhV"
@@ -42632,6 +42632,22 @@ level_3:
                         ocr_file: ""
                         transcription_file: ""
                         on_site_pages: ["site/docs/Charlie/Text_Messages/final-day-timeline-sept-9.mdx"]
+                    - image:
+                        cid: "QmVYwR1EejtnRboQfUzDi4hL9QGBP3mvtFY62wBdrQUx6C"
+                        sha256: 8d0fa621f3a2c4c604c0ea8dbde5509e5dab927a2f43fa6dc38c63032d3fcac4
+                        file_path: "~/BGit/Bryan_git/charlie-kirk/site/internals/static/img/evidence/8d0fa621f3a2c4c604c0ea8dbde5509e5dab927a2f43fa6dc38c63032d3fcac4.jpg"
+                        ai_description: "A screenshot of a post from the verified @josh_hammer account on X, consisting of the single word 'based' above an embedded quote card. The quoted post is attributed to Donald J. Trump and dated April 19, 2013, reading 'Should be public execution for all to see-you will end this bullshit fast!' - a date that falls on the Boston Marathon bombing manhunt, so in its own context the quoted post reads as a reaction to that terror attack. The screenshot's footer carries the item of interest: a clock reading of 6:05 PM, Sep 9, 2025, and 27K Views. That timestamp is a public, machine-generated clock reading placing the post five minutes into the 6:00 PM Zoom call listed on the circulated final-day timeline, and it anchors that evening to September 9, 2025 rather than the September 10 label the timeline graphic carries. The screenshot establishes when, not why, and implies nothing about the poster's knowledge or intent."
+                        ai_description_file: ""
+                        ocr_file: ""
+                        transcription_file: ""
+                        on_site_pages: ["site/docs/Charlie/Text_Messages/final-day-timeline-sept-9.mdx", "site/docs/Charlie/Text_Messages/josh-hammer-6-05pm-timestamp.mdx"]
+              - level_5:
+                  title: "Josh Hammer's 6:05 PM Post — A September 9 Timestamp"
+                  _key: josh_hammer_6_05pm
+                  site_page: "site/docs/Charlie/Text_Messages/josh-hammer-6-05pm-timestamp.mdx"
+                  number_of_images: 0
+                  number_of_images_recursive: 0
+                  images: []
   - level_3:
       title: "People of the Investigation"
       _key: People
