@@ -28,78 +28,6 @@ borderRadius:'4px', textDecoration:'none', fontSize:'0.9rem'}}>← Home</a>
 
 # Planes
 
-## What the flight data actually shows
-
-**On 10 September 2025 — the day Charlie Kirk was killed at Utah Valley University — two Egyptian-registered government jets were on the ground at Provo Municipal Airport, about 5 miles from Orem, the event city.** [SU-BTT](./SU-BTT/overview) and [SU-BND](./SU-BND/overview) are put there by **primary ADS-B position data**, not by a reading of a tracking website: closest fixes **1.23 km** and **1.29 km** from [KPVU](/Planes/Airports/KPVU). SU-BTT had been parked on that ramp since **4 September**, six days before, and lifted off at **07:14 MDT** that morning. **SU-BND did not move at all that day** — its first and last fixes are the same Provo position — and it stayed until **13 September**.
-
-**Of the 29 claimed overlap rows that primary position data can actually decide, 25 put the aircraft at the field the claim names. Three are refuted.** A widely-quoted X audit of the same spreadsheet scored two rows in three as wrong and three in five as on the wrong continent. Where that audit can be checked against position data — **5 of its 44 negative verdicts** — it is **wrong on 3 and right on 2**.
-
-**[N102DZ](./N102DZ/overview), the aircraft reported as Charlie Kirk's, had its FAA registration certificate re-issued on 16 October 2025 — 36 days after the assassination** — to a Cheyenne, Wyoming holding company, with a further registry action on 23 December 2025. It is [the only case-central aircraft whose registration moved after 10 September 2025](./Deleted-Flight-Records). Certificate re-issues are ordinary events — sale, transfer between owner LLCs, renewal, address change — and **are not evidence of anything by themselves**.
-
-### The counts, and where each one opens up
-
-| | Count |
-|---|---|
-| Claimed overlap rows reconstructed, each with its own page | **[85](/Planes/following/overlap/overview)** |
-| Rows primary position data can decide either way | **[29](/Planes/Flight-Data-Recovery/Overlap-Recovery)** |
-| Of those, aircraft **at the field the claim names** | **[25](./Following-Charlie-Erika)** |
-| Of those, **refuted** — the aircraft was tracked somewhere else | **[3](./Following-Charlie-Erika)** |
-| Aircraft-days of primary position data recovered | **[1,831](./Deleted-Flight-Records)** |
-| Trace files held on disk, 308 MB, from 4 independent archives | **[3,619](./investigating_deleted_flights)** |
-| Recorded ground visits at Provo (KPVU), all tracked aircraft | **[135](/Planes/Airports/KPVU)** |
-| Days after the assassination N102DZ's registration was re-issued | **[36](./Deleted-Flight-Records)** |
-
-### Every claimed overlap primary position data can decide
-
-One row per occurrence. Confirmed first, closest approach first within that; the same-metro and refuted rows are at the bottom because that is where the evidence puts them, not because they are hidden. The date opens that single occurrence's own page; the airport, the tail and the city each open their own record.
-
-| Date | City | State | Airport | Tail | What the data shows | Who was claimed there |
-|---|---|---|---|---|---|---|
-| [23 Apr 2024](/Planes/following/overlap/20240423_UT_provo_owens_026/overview) | [Provo](/Planes/following/Provo_KPVU_2024-04-19_to_2025-09-13/overview) | UT | [KPVU](/Planes/Airports/KPVU) | [SU-BTT](/Planes/SU-BTT/overview) | **AT_CLAIMED_AIRPORT — transmitting from on the ground**, 0.00 km | Charlie Kirk (unresolved), TPUSA event (unresolved) |
-| [23 Apr 2024](/Planes/following/overlap/20240423_UT_salt_lake_city/overview) | [Salt Lake City (event) / Provo (aircraft)](/Planes/following/speaking/20240423_salt_lake_city) | UT | [KPVU](/Planes/Airports/KPVU) | [SU-BTT](/Planes/SU-BTT/overview), [SU-BND](/Planes/SU-BND/overview) | **AT_CLAIMED_AIRPORT — transmitting from on the ground**, 0.00 km | Charlie Kirk, Erika Kirk, TPUSA event (unresolved) |
-| [23 May 2025](/Planes/following/overlap/20250523_UT_provo_owens_035/overview) | [Provo](/Planes/following/Provo_KPVU_2024-04-19_to_2025-09-13/overview) | UT | [KPVU](/Planes/Airports/KPVU) | [SU-BND](/Planes/SU-BND/overview) | **AT_CLAIMED_AIRPORT — transmitting from on the ground**, 0.03 km | Charlie Kirk, Erika Kirk, TPUSA event (unresolved) |
-| [23 May 2025](/Planes/following/overlap/20250523_UT_provo_owens_065/overview) | [Provo](/Planes/following/Provo_KPVU_2024-04-19_to_2025-09-13/overview) | UT | [KPVU](/Planes/Airports/KPVU) | [SU-BND](/Planes/SU-BND/overview) | **AT_CLAIMED_AIRPORT — transmitting from on the ground**, 0.03 km | Charlie Kirk, Erika Kirk, TPUSA event (unresolved) |
-| [19 Apr 2024](/Planes/following/overlap/20240419_UT_provo_owens_025/overview) | [Provo](/Planes/following/Provo_KPVU_2024-04-19_to_2025-09-13/overview) | UT | [KPVU](/Planes/Airports/KPVU) | [SU-BND](/Planes/SU-BND/overview) | **AT_CLAIMED_AIRPORT — transmitting from on the ground**, 0.05 km | Erika Kirk, TPUSA event (unresolved) |
-| [4 Sep 2025](/Planes/following/overlap/20250904_UT_provo_owens_040/overview) | [Provo](/Planes/following/Provo_KPVU_2024-04-19_to_2025-09-13/overview) | UT | [KPVU](/Planes/Airports/KPVU) | [SU-BTT](/Planes/SU-BTT/overview) | **AT_CLAIMED_AIRPORT — transmitting from on the ground**, 0.16 km | Charlie Kirk, TPUSA event (unresolved) |
-| [9 Feb 2024](/Planes/following/overlap/20240209_NE_omaha_lincoln_owens_020/overview) | [Omaha / Lincoln](/Planes/following/Omaha_KOMA_2024-02-09_to_2025-10-05/overview) | NE | KOMA | [SU-BTT](/Planes/SU-BTT/overview) | **AT_CLAIMED_AIRPORT** — closest approach 0.31 km | TPUSA event |
-| [1 Apr 2023](/Planes/following/overlap/20230401_MO_st_louis_owens_010/overview) | [St. Louis](/Planes/following/StLouis_KSTL_2022-12-20_to_2025-02-23/overview) | MO | [KSTL](/Planes/Airports/KSTL) | [SU-BTT](/Planes/SU-BTT/overview) | **AT_CLAIMED_AIRPORT** — closest approach 0.41 km | TPUSA event |
-| [17 Aug 2025](/Planes/following/overlap/20250817_NE_omaha_lincoln_owens_039/overview) | [Omaha / Lincoln](/Planes/following/Omaha_KOMA_2024-02-09_to_2025-10-05/overview) | NE | KOMA | [SU-BTT](/Planes/SU-BTT/overview) | **AT_CLAIMED_AIRPORT** — closest approach 0.50 km | Erika Kirk, TPUSA event (unresolved) |
-| [20 Apr 2023](/Planes/following/overlap/20230420_DE_wilmington_owens_013/overview) | [Wilmington](/Planes/following/Wilmington_KILG_2022-11-17_to_2025-10-12/overview) | DE | [KILG](/Planes/Airports/KILG) | [SU-BTT](/Planes/SU-BTT/overview) | **AT_CLAIMED_AIRPORT — transmitting from on the ground**, 0.56 km | Erika Kirk, TPUSA event (unresolved) |
-| [13 Sep 2025](/Planes/following/overlap/20250913_UT_provo_owens_042/overview) | [Provo](/Planes/following/Provo_KPVU_2024-04-19_to_2025-09-13/overview) | UT | [KPVU](/Planes/Airports/KPVU) | [SU-BND](/Planes/SU-BND/overview) | **AT_CLAIMED_AIRPORT** — closest approach 0.62 km | Erika Kirk, TPUSA event (unresolved) |
-| [14 Feb 2024](/Planes/following/overlap/20240214_DE_wilmington_owens_021/overview) | [Wilmington](/Planes/following/Wilmington_KILG_2022-11-17_to_2025-10-12/overview) | DE | [KILG](/Planes/Airports/KILG) | [SU-BTT](/Planes/SU-BTT/overview) | **AT_CLAIMED_AIRPORT** — closest approach 0.82 km | Erika Kirk, TPUSA event (unresolved) |
-| [10 Sep 2025](/Planes/following/overlap/20250910_UTDE_provo_then_wilmington_owens_041/overview) | [Provo then Wilmington](/Planes/following/Provo_KPVU_2024-04-19_to_2025-09-13/overview) | UT/DE | [KPVU](/Planes/Airports/KPVU) | [SU-BTT](/Planes/SU-BTT/overview) | **AT_CLAIMED_AIRPORT — transmitting from on the ground**, 1.23 km | Charlie Kirk, Erika Kirk, TPUSA event |
-| [10 Sep 2025](/Planes/following/overlap/20250910_UT_orem/overview) | [Orem (event) / Provo (aircraft)](/Planes/following/speaking/20250910_orem) | UT | [KPVU](/Planes/Airports/KPVU) | [SU-BTT](/Planes/SU-BTT/overview), [SU-BND](/Planes/SU-BND/overview) | **AT_CLAIMED_AIRPORT — transmitting from on the ground**, 1.23 km | Charlie Kirk, Erika Kirk, TPUSA event (unresolved) |
-| [10 Sep 2025](/Planes/following/overlap/20250910_UT_provo_extra_006/overview) | [Provo](/Planes/following/Provo_KPVU_2024-04-19_to_2025-09-13/overview) | UT | [KPVU](/Planes/Airports/KPVU) | [SU-BND](/Planes/SU-BND/overview) | **AT_CLAIMED_AIRPORT — transmitting from on the ground**, 1.29 km | Charlie Kirk, Erika Kirk, TPUSA event (unresolved) |
-| [20 Jul 2025](/Planes/following/overlap/20250720_NE_omaha_lincoln_owens_038/overview) | [Omaha / Lincoln](/Planes/following/Omaha_KOMA_2024-02-09_to_2025-10-05/overview) | NE | KOMA | [SU-BTT](/Planes/SU-BTT/overview) | **AT_CLAIMED_AIRPORT** — closest approach 1.33 km | Erika Kirk, TPUSA event (unresolved) |
-| [3 Apr 2024](/Planes/following/overlap/20240403_KS_wichita_lawrence_owens_024/overview) | [Wichita / Lawrence](/Planes/following/speaking/20240403_lawrence) | KS | [KICT](/Planes/Airports/KICT) | [SU-BTT](/Planes/SU-BTT/overview) | **AT_CLAIMED_AIRPORT** — closest approach 1.43 km | Charlie Kirk (unresolved), TPUSA event (unresolved) |
-| [3 Apr 2024](/Planes/following/overlap/20240403_KS_lawrence/overview) | [Lawrence (event) / Wichita (aircraft)](/Planes/following/speaking/20240403_lawrence) | KS | [KICT](/Planes/Airports/KICT) | [SU-BTT](/Planes/SU-BTT/overview) | **AT_CLAIMED_AIRPORT** — closest approach 1.43 km | Charlie Kirk, TPUSA event (unresolved) |
-| [28 Apr 2024](/Planes/following/overlap/20240428_DE_wilmington_owens_027/overview) | [Wilmington](/Planes/following/Wilmington_KILG_2022-11-17_to_2025-10-12/overview) | DE | [KILG](/Planes/Airports/KILG) | [SU-BTT](/Planes/SU-BTT/overview) | **AT_CLAIMED_AIRPORT** — closest approach 1.56 km | Erika Kirk, TPUSA event (unresolved) |
-| [6 Apr 2023](/Planes/following/overlap/20230406_DE_wilmington_owens_011/overview) | [Wilmington](/Planes/following/Wilmington_KILG_2022-11-17_to_2025-10-12/overview) | DE | [KILG](/Planes/Airports/KILG) | [SU-BTT](/Planes/SU-BTT/overview) | **AT_CLAIMED_AIRPORT** — closest approach 1.63 km | Erika Kirk, TPUSA event (unresolved) |
-| [10 Sep 2025](/Planes/following/overlap/20250910_DE_wilmington/overview) | [Wilmington](/Planes/following/Wilmington_KILG_2022-11-17_to_2025-10-12/overview) | DE | [KILG](/Planes/Airports/KILG) | [SU-BTT](/Planes/SU-BTT/overview) | **AT_CLAIMED_AIRPORT** — closest approach 1.75 km | Erika Kirk, TPUSA event (unresolved) |
-| [29 Mar 2024](/Planes/following/overlap/20240329_KS_wichita_owens_023/overview) | [Wichita](/Planes/following/Wichita_KICT_2022-11-13_to_2025-08-03/overview) | KS | [KICT](/Planes/Airports/KICT) | [SU-BTT](/Planes/SU-BTT/overview) | **AT_CLAIMED_AIRPORT** — closest approach 1.83 km | Charlie Kirk, TPUSA event (unresolved) |
-| [3 May 2023](/Planes/following/overlap/20230503_MO_st_louis_owens_014/overview) | [St. Louis](/Planes/following/StLouis_KSTL_2022-12-20_to_2025-02-23/overview) | MO | KCPS | [SU-BND](/Planes/SU-BND/overview) | **AT_CLAIMED_AIRPORT** — closest approach 2.07 km | Erika Kirk, TPUSA event (unresolved) |
-| [25 Feb 2023](/Planes/following/overlap/20230225_MO_st_louis_owens_046/overview) | [St. Louis](/Planes/following/StLouis_KSTL_2022-12-20_to_2025-02-23/overview) | MO | [KSUS](/Planes/Airports/KSUS) | [SU-BTT](/Planes/SU-BTT/overview) | **AT_CLAIMED_AIRPORT** — closest approach 2.22 km | Erika Kirk, TPUSA event (unresolved) |
-| [20 Jul 2025](/Planes/following/overlap/20250720_NE_lincoln_owens_067/overview) | [Lincoln](/Planes/following/Lincoln_KLNK_2024-02-09_to_2025-10-11/overview) | NE | [KLNK](/Planes/Airports/KLNK) | [SU-BTT](/Planes/SU-BTT/overview) | **AT_CLAIMED_AIRPORT** — closest approach 7.20 km | Erika Kirk, TPUSA event (unresolved) |
-| [14 Apr 2023](/Planes/following/overlap/20230414_KS_wichita_owens_012/overview) | [Wichita](/Planes/following/Wichita_KICT_2022-11-13_to_2025-08-03/overview) | KS | [KICT](/Planes/Airports/KICT) | [SU-BTT](/Planes/SU-BTT/overview) | SAME_METRO_WRONG_FIELD — 27.6 km from the named field | Erika Kirk, TPUSA event (unresolved) |
-| [9 May 2023](/Planes/following/overlap/20230509_MO_st_louis_then_goose_bay_owens_015/overview) | [St. Louis then Goose Bay](/Planes/following/StLouis_KSTL_2022-12-20_to_2025-02-23/overview) | MO | CYYR | [SU-BND](/Planes/SU-BND/overview) | ELSEWHERE — refuted, 1,063 km away | Erika Kirk, TPUSA event (unresolved) |
-| [12 May 2023](/Planes/following/overlap/20230512_MO_st_louis_owens_050/overview) | [St. Louis](/Planes/following/StLouis_KSTL_2022-12-20_to_2025-02-23/overview) | MO | [KSTL](/Planes/Airports/KSTL) | [SU-BND](/Planes/SU-BND/overview) | ELSEWHERE — refuted, 7,034 km away | Erika Kirk, TPUSA event (unresolved) |
-| [18 Jun 2025](/Planes/following/overlap/20250618_NE_omaha_lincoln_owens_036/overview) | [Omaha / Lincoln](/Planes/following/Omaha_KOMA_2024-02-09_to_2025-10-05/overview) | NE | KOMA | [SU-BTT](/Planes/SU-BTT/overview) | ELSEWHERE — refuted, 10,140 km away | Erika Kirk, TPUSA event (unresolved) |
-
-**The limit is the same size as the number, and it belongs right under the table.** Every row above locates an **aircraft**. Not one of them puts Charlie Kirk, Erika Kirk or any other person aboard anything — no manifest for any leg has been published by anyone, and Erika Kirk's [flight logs are reported erased](./Erika-Flight-Logs-Erased). The other 56 rows of the register are **undecidable**, not hidden: an empty archive response means a volunteer network heard nothing that day. Provo and Lincoln are both Duncan Aviation fields and Wichita is a Falcon service centre, and **Duncan has held the Egyptian Air Force's maintenance account since 1999** — a jet on a maintenance ramp is what a maintenance visit looks like. The full argument on both sides is [further down this page](#how-to-check-any-claim-on-these-pages-in-five-minutes) and on [Following Charlie or Erika](./Following-Charlie-Erika).
-
-
-## Best understanding of when this happened
-
-Best understanding: flight-tracking discussions focus on **SEPT 10 daytime** relative to the UVU window (not a multi-month axis).
-
-**Date range (working model):** SEPT 10 daytime flight-tracking window
-
-The chart below is **not** a government finding. Bar height is **relative likelihood** from public claims. Domain is trimmed to non-trivial likelihood.
-
-<div className="ck-km-timeline" style={{margin:'1rem 0 1.5rem', maxWidth:480, overflowX:'auto'}}>
-  <img src="/img/timelines/sept10_flight_activity_daytime.svg" alt="sept10_flight_activity_daytime — likelihood timeline" width="380" height="205" style={{width:'auto', maxWidth:'100%', height:'auto', display:'block'}} />
-</div>
-
 Aircraft and flight-path evidence around UVU on September 10, 2025 — from the
 [N1098L ISR passes](./N1098L/overview) and Egyptian armada to
 [SAM VIP flights](./SAM-99-0404/overview) and [transponder gaps](./N888KG/overview). Start with the
@@ -178,6 +106,122 @@ that matches your question.
 
 </div>
 </div>
+
+## The overlap, in one table
+
+**An "overlap" is one occurrence: a foreign government jet on the ground at the airport nearest a [Charlie Kirk](/People/charlie-kirk), [Erika Kirk](/People/erika-kirk) or [Turning Point](/TPUSA/overview) event, on or around the day of that event.** The compilation behind the "73 times those planes followed them" figure has been reconstructed row by row into **[85 claimed overlaps](/Planes/following/overlap/overview), each with its own page**, and sorted by *whose* presence the compilation actually asserts. Read across this table before reading anything else about the claim — **every cell in it opens the rows behind it.**
+
+| Who the sheet claims was there | Rows | Share | What that means |
+|---|---|---|---|
+| **[Erika Kirk alone](/Planes/following/cuts/erika-only-61)** | **[61](/Planes/following/cuts/erika-only-61)** | **72%** | The overwhelming majority. Charlie Kirk is **not** claimed present on any of these. |
+| **[Charlie Kirk alone](/Planes/following/cuts/charlie-only-9)** | **[9](/Planes/following/cuts/charlie-only-9)** | 11% | Erika is not claimed present on these. |
+| **[Both Kirks together](/Planes/following/cuts/charlie-and-erika-9)** | **[9](/Planes/following/cuts/charlie-and-erika-9)** | 11% | Nine rows across **five dates** claim the two of them in the same place at the same time — [23 Apr 2024](/Planes/following/overlap/20240423_UT_salt_lake_city/overview), 15 and 22 Mar 2025, [23 May 2025](/Planes/following/overlap/20250523_UT_provo_owens_035/overview) and [10 Sep 2025](/Planes/following/overlap/20250910_UT_orem/overview). |
+| **[A TPUSA event, neither Kirk present](/Planes/following/cuts/tpusa-no-kirk-6)** | **[6](/Planes/following/cuts/tpusa-no-kirk-6)** | 7% | Turning Point activity — a chapter opening, a Faith-tour stop — with no Kirk claimed at it. |
+| **[Total claimed overlaps](/Planes/following/cuts/all-85)** | **[85](/Planes/following/cuts/all-85)** | | |
+
+**The number that travels in public — 73, or 77, or "more than 70" — is heard as *seventy-three times foreign jets followed Charlie Kirk*. On the compilation's own attribution it is nothing of the kind.** [Overlaps involving Charlie Kirk at all: **18 of 85**](/Planes/following/cuts/charlie-any-18) — the 9 claiming him alone plus the 9 claiming both Kirks, 21% of the count across 12 dates. [Overlaps involving Erika Kirk at all: **70 of 85**](/Planes/following/cuts/erika-any-70) — 82% of the entire count rests on her, and [her presence is established on **none** of them](/Planes/following/cuts/erika-established-0), because [her flight logs are reported erased](/Planes/Erika-Flight-Logs-Erased) and no dated itinerary for her has ever been published by anyone. That is the sheet's attribution, not a verdict by this site — the verdicts are [what primary position data says about each row](/Planes/following/cuts/overview).
+
+**Full working, and the other 44 drill-downs:** [Planes That Followed Them](/Planes/following/overview) · [every number opened up](/Planes/following/cuts/overview) · [one page per claimed overlap](/Planes/following/overlap/overview) · [what "overlap" was defined to mean](/Planes/following/Overlap_Window_Definition).
+
+### These are foreign military and intelligence aircraft — and they are visible only because they stopped at U.S. airports
+
+**Every aircraft in the overlap register is a foreign *government* airframe, not a charter.** [SU-BTT](./SU-BTT/overview) is a Dassault Falcon 7X on the Egyptian register — the "yellow plane"; [SU-BND](./SU-BND/overview) is a Gulfstream 4SP — the "blue plane"; [SU-BTU](./SU-BTU/overview), [SU-BTV](./SU-BTV/overview) and [SU-BGM](./SU-BGM/overview) complete the group X researchers call the armada. Israeli Channel 12 reported SU-BTT flying Cairo to Israel on 21 October 2025 carrying **Hassan Rashad, the head of Egyptian intelligence** — mainstream reporting that establishes what kind of fleet this is, and supplies an ordinary diplomatic explanation for the routing in the same sentence. That thread is argued in full on **[Israel Planes](./Israel-Planes)**, and the fleet's own pages carry the counter-explanations: Provo and Lincoln are both Duncan Aviation fields, Wichita is a Falcon service centre, and **Duncan has held the Egyptian Air Force's maintenance account since 1999**.
+
+**Nothing on these pages comes from inside those aircraft. It exists because they landed in the United States.** An aircraft on approach and on the ramp broadcasts its own position on ADS-B, which is public, and volunteer receivers near the field record it — so a foreign military jet that stops at a U.S. airport puts itself in a public archive that no one has to be given access to. That is why this investigation is built field by field rather than flight by flight:
+
+* **[Every airport a tracked aircraft was on the ground at](./Airports/overview)** — 292 fields, each with its complete recovered ground-visit and flight-leg record.
+* **[Every date one of them was on the ground within 50 miles of a sourced event](./Incidents/overview)** — 147 ground contacts, one page each.
+* **[Provo (KPVU)](/Planes/Airports/KPVU)** — 135 recorded ground visits, including the 4–13 September 2025 window.
+* **[Minot (KMOT)](./following/Minot_KMOT_2025-04-08_to_2025-09-04/overview)** — every Provo-bound flight entered the U.S. here. **This is where customs happened, and nobody has requested the records.**
+* **[How the data was recovered, and how much of it is missing](./investigating_deleted_flights)** — 1,831 aircraft-days, 3,619 trace files, four independent archives.
+
+**A trace locates an aircraft. It never places a person aboard it.** No manifest for any of these legs has been published by anyone, and nothing on this page asserts intent by any pilot, passenger or official.
+
+### What influencers allege was being searched from those aircraft
+
+**Influencers are documenting what they allege are Hebrew-language Google searches appearing in the same places, on the same dates, that those jets sat on U.S. ramps — searches they argue were typed on a Hebrew keyboard by Hebrew speakers who arrived on the aircraft.** [Stew Peters](/Influencers/overview) is the main publisher of the material. The argument is an analogy: a cruise ship in port produces a burst of the passengers' language in local search data, so a Hebrew burst co-located with a parked [Egyptian jet](./SU-BTT/overview) is read as Hebrew speakers having arrived on it.
+
+* **[Hebrew-Language Searches and the Egyptian Jets](/GoogleSearches/hebrew-searches-erika-kirk-egyptian-jets)** — the claims page: Erika Kirk's maiden name, [Tyler Robinson](/Tyler_Robinson/overview)'s apartment address, the [Losee Center](/Roof/overview), Orem traffic, and preloaded U.S. SIM cards.
+* **[Stew Peters: Tyler Robinson's Address Googled in Hebrew](/Videos/Vid_Google_Searches/Vid_Search_Trend_Evidence/Vid_Stew_Peters_Tyler_Robinson_2084745)** — the interview clip, 29 April 2025, while a jet was parked at Lincoln, Nebraska.
+* **[29 April 2025 — Lincoln, NE](/Planes/following/overlap/20250429_NE_lincoln_extra_007/overview)** — that date's own overlap page. It is **not** one of the 73, no tail number appears in the posts, and the page says so.
+* **[Google Searches](/GoogleSearches/overview)** — the standing caveat that applies to every search-trend claim on this site.
+
+**This is an attributed allegation and it is not established.** Search-trend data reports interest in a term. It does not identify who searched, from what device, in what building, or why — and **being the subject of a search is not participation in anything.** No manifest, device attribution or subscriber record has been produced tying any search to any aircraft or to any person. Both segments are embedded in full, with what they do and do not demonstrate, [further down this page](#video-tyler-robinsons-address-googled-in-hebrew-from-the-egyptian-jet).
+
+
+
+## What the flight data actually shows
+
+**On 10 September 2025 — the day Charlie Kirk was killed at Utah Valley University — two Egyptian-registered government jets were on the ground at Provo Municipal Airport, about 5 miles from Orem, the event city.** [SU-BTT](./SU-BTT/overview) and [SU-BND](./SU-BND/overview) are put there by **primary ADS-B position data**, not by a reading of a tracking website: closest fixes **1.23 km** and **1.29 km** from [KPVU](/Planes/Airports/KPVU). SU-BTT had been parked on that ramp since **4 September**, six days before, and lifted off at **07:14 MDT** that morning. **SU-BND did not move at all that day** — its first and last fixes are the same Provo position — and it stayed until **13 September**.
+
+**Of the 29 claimed overlap rows that primary position data can actually decide, 25 put the aircraft at the field the claim names. Three are refuted.** A widely-quoted X audit of the same spreadsheet scored two rows in three as wrong and three in five as on the wrong continent. Where that audit can be checked against position data — **5 of its 44 negative verdicts** — it is **wrong on 3 and right on 2**.
+
+**[N102DZ](./N102DZ/overview), the aircraft reported as Charlie Kirk's, had its FAA registration certificate re-issued on 16 October 2025 — 36 days after the assassination** — to a Cheyenne, Wyoming holding company, with a further registry action on 23 December 2025. It is [the only case-central aircraft whose registration moved after 10 September 2025](./Deleted-Flight-Records). Certificate re-issues are ordinary events — sale, transfer between owner LLCs, renewal, address change — and **are not evidence of anything by themselves**.
+
+### The counts, and where each one opens up
+
+| | Count |
+|---|---|
+| Claimed overlap rows reconstructed, each with its own page | **[85](/Planes/following/overlap/overview)** |
+| Rows primary position data can decide either way | **[29](/Planes/Flight-Data-Recovery/Overlap-Recovery)** |
+| Of those, aircraft **at the field the claim names** | **[25](./Following-Charlie-Erika)** |
+| Of those, **refuted** — the aircraft was tracked somewhere else | **[3](./Following-Charlie-Erika)** |
+| Aircraft-days of primary position data recovered | **[1,831](./Deleted-Flight-Records)** |
+| Trace files held on disk, 308 MB, from 4 independent archives | **[3,619](./investigating_deleted_flights)** |
+| Recorded ground visits at Provo (KPVU), all tracked aircraft | **[135](/Planes/Airports/KPVU)** |
+| Days after the assassination N102DZ's registration was re-issued | **[36](./Deleted-Flight-Records)** |
+
+### Every claimed overlap primary position data can decide
+
+One row per occurrence. Confirmed first, closest approach first within that; the same-metro and refuted rows are at the bottom because that is where the evidence puts them, not because they are hidden. The date opens that single occurrence's own page; the airport, the tail and the city each open their own record.
+
+| Date | City | State | Airport | Tail | What the data shows | Who was claimed there |
+|---|---|---|---|---|---|---|
+| [23 Apr 2024](/Planes/following/overlap/20240423_UT_provo_owens_026/overview) | [Provo](/Planes/following/Provo_KPVU_2024-04-19_to_2025-09-13/overview) | UT | [KPVU](/Planes/Airports/KPVU) | [SU-BTT](/Planes/SU-BTT/overview) | **AT_CLAIMED_AIRPORT — transmitting from on the ground**, 0.00 km | Charlie Kirk (unresolved), TPUSA event (unresolved) |
+| [23 Apr 2024](/Planes/following/overlap/20240423_UT_salt_lake_city/overview) | [Salt Lake City (event) / Provo (aircraft)](/Planes/following/speaking/20240423_salt_lake_city) | UT | [KPVU](/Planes/Airports/KPVU) | [SU-BTT](/Planes/SU-BTT/overview), [SU-BND](/Planes/SU-BND/overview) | **AT_CLAIMED_AIRPORT — transmitting from on the ground**, 0.00 km | Charlie Kirk, Erika Kirk, TPUSA event (unresolved) |
+| [23 May 2025](/Planes/following/overlap/20250523_UT_provo_owens_035/overview) | [Provo](/Planes/following/Provo_KPVU_2024-04-19_to_2025-09-13/overview) | UT | [KPVU](/Planes/Airports/KPVU) | [SU-BND](/Planes/SU-BND/overview) | **AT_CLAIMED_AIRPORT — transmitting from on the ground**, 0.03 km | Charlie Kirk, Erika Kirk, TPUSA event (unresolved) |
+| [23 May 2025](/Planes/following/overlap/20250523_UT_provo_owens_065/overview) | [Provo](/Planes/following/Provo_KPVU_2024-04-19_to_2025-09-13/overview) | UT | [KPVU](/Planes/Airports/KPVU) | [SU-BND](/Planes/SU-BND/overview) | **AT_CLAIMED_AIRPORT — transmitting from on the ground**, 0.03 km | Charlie Kirk, Erika Kirk, TPUSA event (unresolved) |
+| [19 Apr 2024](/Planes/following/overlap/20240419_UT_provo_owens_025/overview) | [Provo](/Planes/following/Provo_KPVU_2024-04-19_to_2025-09-13/overview) | UT | [KPVU](/Planes/Airports/KPVU) | [SU-BND](/Planes/SU-BND/overview) | **AT_CLAIMED_AIRPORT — transmitting from on the ground**, 0.05 km | Erika Kirk, TPUSA event (unresolved) |
+| [4 Sep 2025](/Planes/following/overlap/20250904_UT_provo_owens_040/overview) | [Provo](/Planes/following/Provo_KPVU_2024-04-19_to_2025-09-13/overview) | UT | [KPVU](/Planes/Airports/KPVU) | [SU-BTT](/Planes/SU-BTT/overview) | **AT_CLAIMED_AIRPORT — transmitting from on the ground**, 0.16 km | Charlie Kirk, TPUSA event (unresolved) |
+| [9 Feb 2024](/Planes/following/overlap/20240209_NE_omaha_lincoln_owens_020/overview) | [Omaha / Lincoln](/Planes/following/Omaha_KOMA_2024-02-09_to_2025-10-05/overview) | NE | KOMA | [SU-BTT](/Planes/SU-BTT/overview) | **AT_CLAIMED_AIRPORT** — closest approach 0.31 km | TPUSA event |
+| [1 Apr 2023](/Planes/following/overlap/20230401_MO_st_louis_owens_010/overview) | [St. Louis](/Planes/following/StLouis_KSTL_2022-12-20_to_2025-02-23/overview) | MO | [KSTL](/Planes/Airports/KSTL) | [SU-BTT](/Planes/SU-BTT/overview) | **AT_CLAIMED_AIRPORT** — closest approach 0.41 km | TPUSA event |
+| [17 Aug 2025](/Planes/following/overlap/20250817_NE_omaha_lincoln_owens_039/overview) | [Omaha / Lincoln](/Planes/following/Omaha_KOMA_2024-02-09_to_2025-10-05/overview) | NE | KOMA | [SU-BTT](/Planes/SU-BTT/overview) | **AT_CLAIMED_AIRPORT** — closest approach 0.50 km | Erika Kirk, TPUSA event (unresolved) |
+| [20 Apr 2023](/Planes/following/overlap/20230420_DE_wilmington_owens_013/overview) | [Wilmington](/Planes/following/Wilmington_KILG_2022-11-17_to_2025-10-12/overview) | DE | [KILG](/Planes/Airports/KILG) | [SU-BTT](/Planes/SU-BTT/overview) | **AT_CLAIMED_AIRPORT — transmitting from on the ground**, 0.56 km | Erika Kirk, TPUSA event (unresolved) |
+| [13 Sep 2025](/Planes/following/overlap/20250913_UT_provo_owens_042/overview) | [Provo](/Planes/following/Provo_KPVU_2024-04-19_to_2025-09-13/overview) | UT | [KPVU](/Planes/Airports/KPVU) | [SU-BND](/Planes/SU-BND/overview) | **AT_CLAIMED_AIRPORT** — closest approach 0.62 km | Erika Kirk, TPUSA event (unresolved) |
+| [14 Feb 2024](/Planes/following/overlap/20240214_DE_wilmington_owens_021/overview) | [Wilmington](/Planes/following/Wilmington_KILG_2022-11-17_to_2025-10-12/overview) | DE | [KILG](/Planes/Airports/KILG) | [SU-BTT](/Planes/SU-BTT/overview) | **AT_CLAIMED_AIRPORT** — closest approach 0.82 km | Erika Kirk, TPUSA event (unresolved) |
+| [10 Sep 2025](/Planes/following/overlap/20250910_UTDE_provo_then_wilmington_owens_041/overview) | [Provo then Wilmington](/Planes/following/Provo_KPVU_2024-04-19_to_2025-09-13/overview) | UT/DE | [KPVU](/Planes/Airports/KPVU) | [SU-BTT](/Planes/SU-BTT/overview) | **AT_CLAIMED_AIRPORT — transmitting from on the ground**, 1.23 km | Charlie Kirk, Erika Kirk, TPUSA event |
+| [10 Sep 2025](/Planes/following/overlap/20250910_UT_orem/overview) | [Orem (event) / Provo (aircraft)](/Planes/following/speaking/20250910_orem) | UT | [KPVU](/Planes/Airports/KPVU) | [SU-BTT](/Planes/SU-BTT/overview), [SU-BND](/Planes/SU-BND/overview) | **AT_CLAIMED_AIRPORT — transmitting from on the ground**, 1.23 km | Charlie Kirk, Erika Kirk, TPUSA event (unresolved) |
+| [10 Sep 2025](/Planes/following/overlap/20250910_UT_provo_extra_006/overview) | [Provo](/Planes/following/Provo_KPVU_2024-04-19_to_2025-09-13/overview) | UT | [KPVU](/Planes/Airports/KPVU) | [SU-BND](/Planes/SU-BND/overview) | **AT_CLAIMED_AIRPORT — transmitting from on the ground**, 1.29 km | Charlie Kirk, Erika Kirk, TPUSA event (unresolved) |
+| [20 Jul 2025](/Planes/following/overlap/20250720_NE_omaha_lincoln_owens_038/overview) | [Omaha / Lincoln](/Planes/following/Omaha_KOMA_2024-02-09_to_2025-10-05/overview) | NE | KOMA | [SU-BTT](/Planes/SU-BTT/overview) | **AT_CLAIMED_AIRPORT** — closest approach 1.33 km | Erika Kirk, TPUSA event (unresolved) |
+| [3 Apr 2024](/Planes/following/overlap/20240403_KS_wichita_lawrence_owens_024/overview) | [Wichita / Lawrence](/Planes/following/speaking/20240403_lawrence) | KS | [KICT](/Planes/Airports/KICT) | [SU-BTT](/Planes/SU-BTT/overview) | **AT_CLAIMED_AIRPORT** — closest approach 1.43 km | Charlie Kirk (unresolved), TPUSA event (unresolved) |
+| [3 Apr 2024](/Planes/following/overlap/20240403_KS_lawrence/overview) | [Lawrence (event) / Wichita (aircraft)](/Planes/following/speaking/20240403_lawrence) | KS | [KICT](/Planes/Airports/KICT) | [SU-BTT](/Planes/SU-BTT/overview) | **AT_CLAIMED_AIRPORT** — closest approach 1.43 km | Charlie Kirk, TPUSA event (unresolved) |
+| [28 Apr 2024](/Planes/following/overlap/20240428_DE_wilmington_owens_027/overview) | [Wilmington](/Planes/following/Wilmington_KILG_2022-11-17_to_2025-10-12/overview) | DE | [KILG](/Planes/Airports/KILG) | [SU-BTT](/Planes/SU-BTT/overview) | **AT_CLAIMED_AIRPORT** — closest approach 1.56 km | Erika Kirk, TPUSA event (unresolved) |
+| [6 Apr 2023](/Planes/following/overlap/20230406_DE_wilmington_owens_011/overview) | [Wilmington](/Planes/following/Wilmington_KILG_2022-11-17_to_2025-10-12/overview) | DE | [KILG](/Planes/Airports/KILG) | [SU-BTT](/Planes/SU-BTT/overview) | **AT_CLAIMED_AIRPORT** — closest approach 1.63 km | Erika Kirk, TPUSA event (unresolved) |
+| [10 Sep 2025](/Planes/following/overlap/20250910_DE_wilmington/overview) | [Wilmington](/Planes/following/Wilmington_KILG_2022-11-17_to_2025-10-12/overview) | DE | [KILG](/Planes/Airports/KILG) | [SU-BTT](/Planes/SU-BTT/overview) | **AT_CLAIMED_AIRPORT** — closest approach 1.75 km | Erika Kirk, TPUSA event (unresolved) |
+| [29 Mar 2024](/Planes/following/overlap/20240329_KS_wichita_owens_023/overview) | [Wichita](/Planes/following/Wichita_KICT_2022-11-13_to_2025-08-03/overview) | KS | [KICT](/Planes/Airports/KICT) | [SU-BTT](/Planes/SU-BTT/overview) | **AT_CLAIMED_AIRPORT** — closest approach 1.83 km | Charlie Kirk, TPUSA event (unresolved) |
+| [3 May 2023](/Planes/following/overlap/20230503_MO_st_louis_owens_014/overview) | [St. Louis](/Planes/following/StLouis_KSTL_2022-12-20_to_2025-02-23/overview) | MO | KCPS | [SU-BND](/Planes/SU-BND/overview) | **AT_CLAIMED_AIRPORT** — closest approach 2.07 km | Erika Kirk, TPUSA event (unresolved) |
+| [25 Feb 2023](/Planes/following/overlap/20230225_MO_st_louis_owens_046/overview) | [St. Louis](/Planes/following/StLouis_KSTL_2022-12-20_to_2025-02-23/overview) | MO | [KSUS](/Planes/Airports/KSUS) | [SU-BTT](/Planes/SU-BTT/overview) | **AT_CLAIMED_AIRPORT** — closest approach 2.22 km | Erika Kirk, TPUSA event (unresolved) |
+| [20 Jul 2025](/Planes/following/overlap/20250720_NE_lincoln_owens_067/overview) | [Lincoln](/Planes/following/Lincoln_KLNK_2024-02-09_to_2025-10-11/overview) | NE | [KLNK](/Planes/Airports/KLNK) | [SU-BTT](/Planes/SU-BTT/overview) | **AT_CLAIMED_AIRPORT** — closest approach 7.20 km | Erika Kirk, TPUSA event (unresolved) |
+| [14 Apr 2023](/Planes/following/overlap/20230414_KS_wichita_owens_012/overview) | [Wichita](/Planes/following/Wichita_KICT_2022-11-13_to_2025-08-03/overview) | KS | [KICT](/Planes/Airports/KICT) | [SU-BTT](/Planes/SU-BTT/overview) | SAME_METRO_WRONG_FIELD — 27.6 km from the named field | Erika Kirk, TPUSA event (unresolved) |
+| [9 May 2023](/Planes/following/overlap/20230509_MO_st_louis_then_goose_bay_owens_015/overview) | [St. Louis then Goose Bay](/Planes/following/StLouis_KSTL_2022-12-20_to_2025-02-23/overview) | MO | CYYR | [SU-BND](/Planes/SU-BND/overview) | ELSEWHERE — refuted, 1,063 km away | Erika Kirk, TPUSA event (unresolved) |
+| [12 May 2023](/Planes/following/overlap/20230512_MO_st_louis_owens_050/overview) | [St. Louis](/Planes/following/StLouis_KSTL_2022-12-20_to_2025-02-23/overview) | MO | [KSTL](/Planes/Airports/KSTL) | [SU-BND](/Planes/SU-BND/overview) | ELSEWHERE — refuted, 7,034 km away | Erika Kirk, TPUSA event (unresolved) |
+| [18 Jun 2025](/Planes/following/overlap/20250618_NE_omaha_lincoln_owens_036/overview) | [Omaha / Lincoln](/Planes/following/Omaha_KOMA_2024-02-09_to_2025-10-05/overview) | NE | KOMA | [SU-BTT](/Planes/SU-BTT/overview) | ELSEWHERE — refuted, 10,140 km away | Erika Kirk, TPUSA event (unresolved) |
+
+**The limit is the same size as the number, and it belongs right under the table.** Every row above locates an **aircraft**. Not one of them puts Charlie Kirk, Erika Kirk or any other person aboard anything — no manifest for any leg has been published by anyone, and Erika Kirk's [flight logs are reported erased](./Erika-Flight-Logs-Erased). The other 56 rows of the register are **undecidable**, not hidden: an empty archive response means a volunteer network heard nothing that day. Provo and Lincoln are both Duncan Aviation fields and Wichita is a Falcon service centre, and **Duncan has held the Egyptian Air Force's maintenance account since 1999** — a jet on a maintenance ramp is what a maintenance visit looks like. The full argument on both sides is [further down this page](#how-to-check-any-claim-on-these-pages-in-five-minutes) and on [Following Charlie or Erika](./Following-Charlie-Erika).
+
+
+## Best understanding of when this happened
+
+Best understanding: flight-tracking discussions focus on **SEPT 10 daytime** relative to the UVU window (not a multi-month axis).
+
+**Date range (working model):** SEPT 10 daytime flight-tracking window
+
+The chart below is **not** a government finding. Bar height is **relative likelihood** from public claims. Domain is trimmed to non-trivial likelihood.
+
+<div className="ck-km-timeline" style={{margin:'1rem 0 1.5rem', maxWidth:480, overflowX:'auto'}}>
+  <img src="/img/timelines/sept10_flight_activity_daytime.svg" alt="sept10_flight_activity_daytime — likelihood timeline" width="380" height="205" style={{width:'auto', maxWidth:'100%', height:'auto', display:'block'}} />
+</div>
+
 
 This section catalogs aircraft whose movements deviate from routine civilian patterns near
 UVU in September 2025: a US Army [HADES](/US_Intelligence/US_Army_HADES) ISR jet making low passes, five Egypt-registered
@@ -270,26 +314,32 @@ sourcing and the counterargument are printed in the chart&rsquo;s own footer. A 
 
 ### The numbers, in one place
 
-Every claimed overlap has been reconstructed from the compilation that produced the "73 times" figure. **78 rows. Each one has [its own page](/Planes/following/overlap/overview).**
+Every claimed overlap has been reconstructed from the compilation that produced the "73 times" figure. **85 rows. Each one has [its own page](/Planes/following/overlap/overview).** This is the same register as [the table at the top of this page](#the-overlap-in-one-table), opened out by aircraft and by audit verdict. Every count links to the rows behind it.
 
 | | Rows |
 |---|---|
-| **Total claimed overlaps with an Egyptian-registered jet** | **78** |
-| Overlaps with **Charlie Kirk, Erika not claimed with him** | **13** |
-| Overlaps claiming **both Kirks** | **1** *(10 Sep 2025 — and it puts them 2,000 miles apart)* |
-| Overlaps involving **Charlie at all** | **14** |
-| Overlaps involving **Erika at all** | **61** |
-| Overlaps at a **TPUSA event with neither Kirk claimed present** | **4** |
-| Attributed to **[SU-BTT](/Planes/SU-BTT/overview)**, the yellow plane | **54** |
-| Attributed to **[SU-BND](/Planes/SU-BND/overview)**, the blue plane | **16** |
-| Rows where even the tail number is unresolved | 8 |
-| Aircraft position **confirmed accurate** by hostile audit | **18** |
-| Aircraft position **found wrong**, usually another continent | **44** |
-| Dates that survive a **same-day test at a shared field** | **6** |
+| **[Total claimed overlaps with an Egyptian-registered jet](/Planes/following/cuts/all-85)** | **[85](/Planes/following/cuts/all-85)** |
+| [Of which carry a date at all](/Planes/following/cuts/dated-80) | [80](/Planes/following/cuts/dated-80) |
+| [Of which were never published — no date, city, airport or tail](/Planes/following/cuts/never-published-5) | [5](/Planes/following/cuts/never-published-5) |
+| Overlaps with **[Charlie Kirk, Erika not claimed with him](/Planes/following/cuts/charlie-only-9)** | **[9](/Planes/following/cuts/charlie-only-9)** |
+| Overlaps claiming **[both Kirks](/Planes/following/cuts/charlie-and-erika-9)** | **[9](/Planes/following/cuts/charlie-and-erika-9)** *(across five dates)* |
+| Overlaps involving **[Charlie at all](/Planes/following/cuts/charlie-any-18)** | **[18](/Planes/following/cuts/charlie-any-18)** |
+| Overlaps involving **[Erika at all](/Planes/following/cuts/erika-any-70)** | **[70](/Planes/following/cuts/erika-any-70)** |
+| Overlaps where **[Erika's presence is actually established](/Planes/following/cuts/erika-established-0)** | **[0](/Planes/following/cuts/erika-established-0)** |
+| Overlaps at a **[TPUSA event with neither Kirk claimed present](/Planes/following/cuts/tpusa-no-kirk-6)** | **[6](/Planes/following/cuts/tpusa-no-kirk-6)** |
+| Attributed to **[SU-BTT](/Planes/SU-BTT/overview)**, the yellow plane | **[57](/Planes/following/cuts/tail-su-btt-57)** |
+| Attributed to **[SU-BND](/Planes/SU-BND/overview)**, the blue plane | **[16](/Planes/following/cuts/tail-su-bnd-16)** |
+| [Rows naming both tails at once](/Planes/following/cuts/tail-both-3) | [3](/Planes/following/cuts/tail-both-3) |
+| [Rows where even the tail number is unresolved](/Planes/following/cuts/tail-unresolved-9) | [9](/Planes/following/cuts/tail-unresolved-9) |
+| Aircraft position **[confirmed accurate](/Planes/following/cuts/audit-accurate)** by hostile audit | **[18](/Planes/following/cuts/audit-accurate)** |
+| Aircraft position **[found wrong](/Planes/following/cuts/audit-inaccurate)**, usually another continent | **[44](/Planes/following/cuts/audit-inaccurate)** |
+| [Dates that survive a same-day test at a shared field](/Planes/following/cuts/same-day-sourced-event-10) | [6](/Planes/following/cuts/same-day-sourced-event-10) |
 
-**Erika Kirk's presence is not established on any of the 61 rows that rest on her.** Her [flight logs are reported erased](/Planes/Erika-Flight-Logs-Erased), no dated itinerary for her has ever been published, and the sheet's *Erika Location* column names a whole US state on 42 rows, two states at once on 11, and nothing at all on 8 — reaching a city or venue on **two rows out of sixty-one**. Applying the ordinary standard used everywhere else on this site — where presence cannot be established, treat the person as not there — leaves **zero** established Erika overlaps, **14** Charlie ones, and **4** Turning Point events with no Kirk at them. Of the six dates that survive at a shared field, **three are Charlie Kirk, two are a TPUSA event with neither Kirk, and two of the three Charlie dates are in Utah.**
+The audit rows are stated against **the 78 rows the auditor worked from**, not the 85 this register now holds — seven later additions were reconstructed here from overlap pages and the auditor never saw them.
 
-That is a narrower claim than the broadcast one and a far harder one to dismiss. Full working: **[Following overview](/Planes/following/overview)**.
+**Erika Kirk's presence is not established on any of the 70 rows that involve her.** Her [flight logs are reported erased](/Planes/Erika-Flight-Logs-Erased), no dated itinerary for her has ever been published, and the sheet's *Erika Location* column names a whole US state on 42 rows, two states at once on 11, and nothing at all on 8 — reaching a city or venue on **two rows out of sixty-one**. Applying the ordinary standard used everywhere else on this site — where presence cannot be established, treat the person as not there — leaves **[zero](/Planes/following/cuts/erika-established-0)** established Erika overlaps, **[18](/Planes/following/cuts/charlie-any-18)** Charlie ones, and **[6](/Planes/following/cuts/tpusa-no-kirk-6)** Turning Point events with no Kirk at them. Of the six dates that survive at a shared field, **three are Charlie Kirk, two are a TPUSA event with neither Kirk, and two of the three Charlie dates are in Utah.**
+
+That is a narrower claim than the broadcast one and a far harder one to dismiss. Full working: **[Following overview](/Planes/following/overview)** · **[every number opened up](/Planes/following/cuts/overview)**.
 
 ### Every claimed overlap has now been tested against primary ADS-B position data
 
