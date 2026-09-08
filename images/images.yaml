@@ -37386,7 +37386,7 @@ level_3:
       site_level_2: ["Gun_Bullet"]
       site_page: "site/docs/Gun_Bullet/overview.mdx"
       number_of_images: 67
-      number_of_images_recursive: 106
+      number_of_images_recursive: 108
       needs_split: true   # over the 12 ceiling — split on a later pass
       images:
         - image:
@@ -39210,9 +39210,28 @@ level_3:
             title: "Screwdriver: \"Near the Rifle,\" Then the Roof"
             _key: GunBullet_Screwdriver_Location_Switch
             site_page: "site/docs/Gun_Bullet/Screwdriver_Near_Rifle_To_Roof.mdx"
-            number_of_images: 0
-            number_of_images_recursive: 0
+            number_of_images: 2
+            number_of_images_recursive: 2
             images: []
+            videos:
+              - video:
+                  cid: ""
+                  sha256: 41ebab5216771e1d3999d68499b65742ea9350c7bf4dbf1892397ce2e6bb954d
+                  file_path: "~/BGit/Bryan_git/charlie-kirk/site/internals/static/video/2095734681039696205.mp4"
+                  ai_description: ""
+                  ai_description_file: ""
+                  ocr_file: ""
+                  transcription_file: ""
+                  on_site_pages: ["site/docs/Gun_Bullet/Screwdriver_Near_Rifle_To_Roof.mdx"]
+              - video:
+                  cid: ""
+                  sha256: 3aba26119be1cd86a9ffda2707fa354a01f85b0439a4b342b5ceba4bf3ec2fbb
+                  file_path: "~/BGit/Bryan_git/charlie-kirk/site/internals/static/video/2095784011868020764.mp4"
+                  ai_description: ""
+                  ai_description_file: ""
+                  ocr_file: ""
+                  transcription_file: ""
+                  on_site_pages: ["site/docs/Gun_Bullet/Screwdriver_Near_Rifle_To_Roof.mdx"]
   - level_3:
       title: "The UVU Venue"
       _key: UVU_Venue
@@ -63338,8 +63357,8 @@ level_3:
       _key: Other_Topics
       site_level_2: ["Other", "other_topics"]
       site_page: "site/docs/Other/overview.mdx"
-      number_of_images: 183
-      number_of_images_recursive: 183
+      number_of_images: 184
+      number_of_images_recursive: 184
       needs_split: true   # over the 12 ceiling — split on a later pass
       images:
         - image:
@@ -65334,6 +65353,15 @@ level_3:
             on_site_pages: ["site/docs/Videos/Vid_UVU_Venue/Vid_Roof_Runner_Clips/overview.mdx"]
             image_page: ""
             should_be_on_pages: []
+        - image:
+            cid: "QmQjgXBS18VL13o8xo74uYyxHDucqTawidU2RrkfN55NQ2"
+            sha256: e695a43697ac9473ecc1f20f80b7075fd11ef30812468f3e4213b3371d69f595
+            file_path: "~/BGit/Bryan_git/charlie-kirk/site/internals/static/img/evidence/e695a43697ac9473ecc1f20f80b7075fd11ef30812468f3e4213b3371d69f595.jpg"
+            ai_description: "A screenshot of a post on X by Derrick Evans (@DerrickEvans4WV), dated September 12, 2025, shown on a black background with the account's profile photo and the X.com watermark at the top right. The visible text reads: 'BREAKING: A Utah Valley University (UVU) student contacted the FBI after the assassination of Charlie Kirk. The student reported seeing a man resembling the person of interest near the roof of the Losee Center twice in the weeks before the assassination.' A hand-drawn red underline runs beneath the final clause, 'twice in the weeks before the assassination', marking the point that roof sightings were reported on days other than September 10, 2025. The screenshot was attached by @realhonestash to a post questioning whether the ground-side roof-jumper video was filmed before September 10 rather than on it."
+            ai_description_file: ""
+            ocr_file: ""
+            transcription_file: ""
+            on_site_pages: ["site/docs/Roof/roof-jumper-video-dating.mdx"]
       videos:
         - video:
             cid: "QmRiWzUfpwFu34KwtxnPTs84NkqVwLtm2RTtcLRRp7m22w"
