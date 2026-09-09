@@ -1,27 +1,46 @@
-# Why this `src/` directory exists
+# site/src/theme — why this directory exists here and nowhere else
 
-Everything else on this site lives under `internals/` — `internals/src/css`,
-`internals/src/pages`, `internals/static`. Those three are relocatable because
-`docusaurus.config.ts` points at them explicitly (`staticDirectories`, the pages
-plugin's `path`, and `theme.customCss`).
+This site keeps its source under `site/internals/src/`, not `site/src/`. There is
+exactly one exception, and it is not a preference: **Docusaurus hardcodes the
+component-swizzle lookup to `<siteDir>/src/theme`.** An override placed anywhere
+else is silently ignored — the build succeeds, warns about nothing, and renders
+nothing. That failure mode has already cost a day once. Do not "tidy" this
+directory back under `internals/`.
 
-Theme component overrides are the exception. Docusaurus resolves `@theme/...`
-overrides from `<siteDir>/src/theme` and that path is **not configurable** — there
-is no preset option for it. So the one swizzled component has to sit here:
+## What is in here
 
-    src/theme/DocItem/Layout/          swizzle of @docusaurus/theme-classic
-                                       DocItem/Layout; renders the citizen notice
-                                       rail on the pages listed in
-                                       internals/src/citizenNoticePages.ts
+    src/theme/Root.tsx     the notice rail, as site chrome, on 100% of pages
 
-Everything it depends on still lives under `internals/`, imported via the `@site`
-alias:
+`Root` is the Docusaurus wrapper that sits at the very top of the app, applied
+constantly and independent of the current route. Declaring the rail there is
+what makes it structural — the same layer as the navbar and the footer. There is
+no page list, no front matter flag, and no generator, so there is no way for a
+new page to miss it.
 
-    internals/src/components/CitizenNotice/   the rail's markup
-    internals/src/citizenNoticePages.ts       the 100 page paths (generated)
-    internals/src/css/custom.css              its width and styling
+Supporting files, which live in the normal place:
 
-Do not move `src/theme` into `internals/`. It was tried on 2026-09-04: the build
-succeeded, reported no error, and simply ignored the override — all 100 pages
-rendered without the notice. A silently-ignored swizzle is the failure mode to
-watch for here.
+    internals/src/components/CitizenNotice/   the rail's markup and copy
+    internals/src/css/custom.css              CK_CITIZEN_NOTICE block: width,
+                                              the reserved gutter, mobile shape
+
+## The rail must never interfere with the table of contents
+
+The rail sits in a gutter reserved at the right edge of the page, outside the
+content area — past the TOC, not in place of it. Every page that has a
+right-hand table of contents keeps it, unchanged.
+
+This replaced an earlier design (commit `635047b1`, 2026-09-04) that swizzled
+`DocItem/Layout` and had the notice *take over* the TOC column on a generated
+list of 100 pages. That approach was wrong twice over: it covered 100 of 5,916
+pages, and where it did appear it removed the table of contents. Both the
+swizzle and its generator (`tools/gen_citizen_pages.py`,
+`internals/src/citizenNoticePages.ts`) were deleted. Do not reintroduce a
+per-page list for this.
+
+## On a Docusaurus upgrade
+
+`Root.tsx` does not copy any upstream implementation — it renders `{children}`
+plus the rail — so it does not drift with upstream and needs no re-diff. The two
+things to re-check are that `.main-wrapper` and `.footer` are still the class
+names carrying the page body and the footer container, since the CSS reserves
+the gutter by padding them.

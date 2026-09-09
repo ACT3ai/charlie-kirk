@@ -1047,37 +1047,69 @@ a.ck-media-shot:focus {
 
 /* CK_CITIZEN_NOTICE_START
    ------------------------------------------------------------------
-   The narrow right-hand rail that replaces the table of contents on the 100
-   pages in internals/src/citizenNoticePages.ts. Rendered by the DocItem/Layout
-   swizzle in internals/src/theme/.
+   THE NOTICE RAIL. Site chrome, on 100% of pages, rendered once by the `Root`
+   swizzle at site/src/theme/Root.tsx. Markup in
+   internals/src/components/CitizenNotice/.
 
-   WIDTH. The requirement is "one third the width of" the homepage's right bar.
-   That bar is Docusaurus's standard TOC column, .col.col--3 — a 3-of-12 grid
-   column, i.e. 25% of the row. One third of that is 8.3333%, which is what
-   .ck-citizen-col is set to. The content column takes the other 16.667% back
-   via .docItemColCitizen in the Layout's own styles.module.css.
+   IT DOES NOT TOUCH THE TABLE OF CONTENTS. This is the whole point of the
+   design and must stay true. The rail is not a column in the docs grid and it
+   never enters that grid. It sits in a gutter reserved at the right EDGE OF THE
+   PAGE, outside the content area entirely — past the TOC, the way the navbar is
+   above it and the footer below it. Every page that has a right-hand table of
+   contents still has it, unchanged, at its normal width.
 
-   At 8.3333% this rail is roughly 95-110px on a typical desktop container. That
-   is deliberately very narrow, as asked. Everything below exists to keep short
-   text legible in that space: hyphenation and overflow-wrap so long words break
-   instead of overflowing, a smaller type scale, and tight leading.
-   To widen it later, change ONE number: the flex-basis/max-width pair here, and
-   the matching .docItemColCitizen max-width (the two should sum to 100%).
+   HOW THE GUTTER IS RESERVED. Two rules, and only two:
+     * `.main-wrapper` gets padding-right     — the page body ends before the rail
+     * `.footer`       gets padding-right     — footer content ends before it too
+   Both are stable Docusaurus global classes (ThemeClassNames.layout.main.container
+   and the footer container). The navbar is deliberately NOT padded: the rail
+   starts below it, so navbar items keep the full width.
+
+   The rail itself is position:fixed inside that gutter, so no amount of page
+   content can push it, and it cannot overlap anything.
+
+   WIDTH IS A HARD CAP: 100px, never wider. That is --ck-rail-width and it is
+   the only number to change. It is stated as an absolute pixel value, not a
+   percentage, precisely so it cannot grow with the viewport. At 100px a line
+   holds roughly 16 characters, so everything below exists to keep short text
+   legible: hyphenation and overflow-wrap so long words break instead of
+   overflowing, a small type scale, and tight leading.
    ------------------------------------------------------------------ */
 
+:root {
+  /* HARD CAP. The rail is never wider than this. */
+  --ck-rail-width: 100px;
+  /* Clear air between the page content (or its TOC) and the rail. */
+  --ck-rail-gap: 14px;
+}
+
+/* ---- Desktop: reserve the gutter, then fix the rail into it ---- */
 @media (min-width: 997px) {
-  .col.ck-citizen-col {
-    /* exactly one third of col--3's 25% */
-    flex: 0 0 8.3333333%;
-    max-width: 8.3333333%;
+  .main-wrapper,
+  .footer {
+    padding-right: calc(var(--ck-rail-width) + var(--ck-rail-gap));
+  }
+
+  .ck-rail {
+    position: fixed;
+    right: 0;
+    top: calc(var(--ifm-navbar-height, 60px) + 1rem);
+    width: var(--ck-rail-width);
+    max-width: var(--ck-rail-width);
+    max-height: calc(100vh - var(--ifm-navbar-height, 60px) - 2rem);
+    overflow-y: auto;
+    z-index: 1;
+  }
+
+  /* The back-to-top button is fixed at right:1.3rem and would land on top of
+     the rail. Move it clear of the gutter. */
+  .theme-back-to-top-button {
+    right: calc(var(--ck-rail-width) + var(--ck-rail-gap) + 1.3rem) !important;
   }
 }
 
-.ck-citizen-notice {
-  position: sticky;
-  top: calc(var(--ifm-navbar-height) + 1rem);
-  max-height: calc(100vh - var(--ifm-navbar-height) - 2rem);
-  overflow-y: auto;
+/* ---- Shared appearance ---- */
+.ck-rail {
   padding: 0.6rem 0.5rem 0.7rem;
   border-left: 3px solid var(--ifm-color-primary);
   border-radius: 0 4px 4px 0;
@@ -1085,67 +1117,61 @@ a.ck-media-shot:focus {
   font-size: 0.66rem;
   line-height: 1.35;
   color: var(--ifm-color-emphasis-800);
-  /* the column is ~100px wide: long words must break rather than overflow */
+  /* the rail is ~100px wide: long words must break rather than overflow */
   overflow-wrap: break-word;
   word-break: break-word;
   hyphens: auto;
 }
 
-.ck-citizen-notice p {
+.ck-rail p {
   margin: 0 0 0.55rem;
 }
 
-.ck-citizen-notice p:last-child {
+.ck-rail p:last-child {
   margin-bottom: 0;
 }
 
-.ck-citizen-notice__lead {
+.ck-rail__lead {
   font-weight: 700;
   font-size: 0.7rem;
   line-height: 1.25;
   color: var(--ifm-color-emphasis-900);
 }
 
-.ck-citizen-notice__cta {
+.ck-rail__cta {
   font-weight: 600;
   color: var(--ifm-color-emphasis-900);
 }
 
-.ck-citizen-notice__email a {
+.ck-rail__email a {
   font-weight: 600;
-  /* an email address has no spaces and is wider than the column */
+  /* an email address has no spaces and is wider than the rail */
   overflow-wrap: anywhere;
   word-break: break-all;
 }
 
-/* Mobile and tablet: there are no columns, so the rail is rendered inline at the
-   end of the article instead. Hide the in-article copy on desktop, and hide the
-   rail column below the Docusaurus desktop breakpoint. */
-.ck-citizen-notice-mobile {
-  margin: 2rem 0 0;
-}
-
-.ck-citizen-notice-mobile .ck-citizen-notice {
-  position: static;
-  max-height: none;
-  overflow-y: visible;
-  font-size: 0.85rem;
-  line-height: 1.5;
-}
-
-.ck-citizen-notice-mobile .ck-citizen-notice__lead {
-  font-size: 0.95rem;
-}
-
-@media (min-width: 997px) {
-  .ck-citizen-notice-mobile {
-    display: none;
-  }
-}
-
+/* ---- Below the desktop breakpoint there is no room for a side gutter ----
+   The rail stops being a rail and becomes a full-width notice band at the end
+   of the page. It is still present on every page — only its shape changes. */
 @media (max-width: 996px) {
-  .col.ck-citizen-col {
-    display: none;
+  .ck-rail {
+    position: static;
+    width: auto;
+    max-width: none;
+    max-height: none;
+    overflow-y: visible;
+    margin: 0;
+    padding: 1rem 1.25rem 1.25rem;
+    border-left: 0;
+    border-top: 3px solid var(--ifm-color-primary);
+    border-radius: 0;
+    font-size: 0.85rem;
+    line-height: 1.5;
+    hyphens: manual;
+  }
+
+  .ck-rail__lead {
+    font-size: 0.95rem;
   }
 }
 /* CK_CITIZEN_NOTICE_END */
