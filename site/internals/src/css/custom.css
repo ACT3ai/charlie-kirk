@@ -1138,16 +1138,46 @@ a.ck-media-shot:focus {
   color: var(--ifm-color-emphasis-900);
 }
 
+/* The rail has two halves: the disclaimer above, the corrections desk below.
+   The rule between them is what makes the bottom half read as an action rather
+   than as more small print. */
+.ck-rail__action {
+  margin-top: 0.55rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid var(--ifm-color-emphasis-300);
+}
+
 .ck-rail__cta {
-  font-weight: 600;
+  font-weight: 700;
   color: var(--ifm-color-emphasis-900);
+  margin-bottom: 0.3rem !important;
+}
+
+.ck-rail__email {
+  margin-top: 0.4rem;
 }
 
 .ck-rail__email a {
+  display: block;
   font-weight: 600;
   /* an email address has no spaces and is wider than the rail */
   overflow-wrap: anywhere;
   word-break: break-all;
+  /* a whole block to aim at, not one line of link text */
+  padding: 0.3rem 0.25rem;
+  border-radius: 3px;
+  background: var(--ifm-color-primary);
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  line-height: 1.25;
+}
+
+.ck-rail__email a:hover,
+.ck-rail__email a:focus-visible {
+  background: var(--ifm-color-primary-dark, var(--ifm-color-primary));
+  color: #fff;
+  text-decoration: underline;
 }
 
 /* ---- Below the desktop breakpoint there is no room for a side gutter ----
@@ -1172,6 +1202,17 @@ a.ck-media-shot:focus {
 
   .ck-rail__lead {
     font-size: 0.95rem;
+  }
+
+  .ck-rail__action {
+    margin-top: 1rem;
+    padding-top: 0.85rem;
+  }
+
+  .ck-rail__email a {
+    display: inline-block;
+    padding: 0.45rem 0.9rem;
+    text-align: left;
   }
 }
 /* CK_CITIZEN_NOTICE_END */
