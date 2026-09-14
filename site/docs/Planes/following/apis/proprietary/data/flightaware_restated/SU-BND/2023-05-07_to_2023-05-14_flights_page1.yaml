@@ -1,0 +1,115 @@
+# Restated from a FlightAware AeroAPI response, in our own layout.
+# The raw response is held privately and is not republished.
+about:
+  aircraft: "SU-BND"
+  question_asked: "Which flights does FlightAware hold for SU-BND between 7 and 14 May 2023 (UTC)?"
+  source: "FlightAware AeroAPI v4 flight history by registration; the raw response is held privately and is not republished."
+  retrieved_utc: "2026-09-14T09:47:05.280Z"
+  vendor_http_status: 200
+  window_utc_from: "2023-05-07T00:00:00Z"
+  window_utc_until_exclusive: "2023-05-14T00:00:00Z"
+  result_page: 1
+  total_pages_reported: 1
+  further_pages_held_by_vendor: false
+flights_recorded: 3
+reading: "FlightAware holds three flights for SU-BND in this window: St Louis Downtown to Goose Bay, Goose Bay to Paris Le Bourget, and a position-only track leaving Paris toward a point near Cairo. The last is a position fix, not a recorded landing, and none of this says who was aboard."
+flights:
+  - number: 1
+    flightaware_id: "SUBND-1683641743-sw-1415p"
+    callsign: "SU-BND"
+    registration: "SU-BND"
+    aircraft_type_code: "GLF4"
+    flight_category: "general aviation"
+    outcome: "Arrived"
+    progress_percent: 100
+    flags: []
+    from:
+      icao: "KCPS"
+      iata: "CPS"
+      faa_lid: "CPS"
+      name: "St Louis Downtown"
+      city: "Cahokia/St Louis"
+      timezone: "America/Chicago"
+    to:
+      icao: "CYYR"
+      iata: "YYR"
+      name: "CFB Goose Bay (Goose Bay)"
+      city: "Goose Bay"
+      timezone: "America/Goose_Bay"
+    takeoff:
+      scheduled: {utc: "2023-05-09T20:00:00Z", local: "2023-05-09 15:00:00-05:00"}
+      estimated: {utc: "2023-05-09T20:02:01Z", local: "2023-05-09 15:02:01-05:00"}
+      actual: {utc: "2023-05-09T20:02:01Z", local: "2023-05-09 15:02:01-05:00"}
+      runway: "12R"
+    landing:
+      scheduled: {utc: "2023-05-09T23:56:00Z", local: "2023-05-09 20:56:00-03:00"}
+      estimated: {utc: "2023-05-09T23:40:11Z", local: "2023-05-09 20:40:11-03:00"}
+      actual: {utc: "2023-05-09T23:40:11Z", local: "2023-05-09 20:40:11-03:00"}
+      runway: "34"
+    departure_versus_schedule: "+0:02:01"
+    arrival_versus_schedule: "-0:15:49"
+    airborne_duration: "3:38:10"
+    flight_plan:
+      planned_time_enroute: "3:56:00"
+      cruise_speed_kt: 384
+  - number: 2
+    flightaware_id: "SUBND-1683675942-sw-755p"
+    callsign: "SU-BND"
+    registration: "SU-BND"
+    flight_category: "general aviation"
+    outcome: "Arrived"
+    progress_percent: 100
+    flags: []
+    from:
+      icao: "CYYR"
+      iata: "YYR"
+      name: "CFB Goose Bay (Goose Bay)"
+      city: "Goose Bay"
+      timezone: "America/Goose_Bay"
+    to:
+      icao: "LFPB"
+      iata: "LBG"
+      name: "Paris Le Bourget"
+      city: "Paris"
+      timezone: "Europe/Paris"
+    takeoff:
+      scheduled: {utc: "2023-05-10T00:20:19Z", local: "2023-05-09 21:20:19-03:00"}
+      estimated: {utc: "2023-05-10T00:45:25Z", local: "2023-05-09 21:45:25-03:00"}
+      actual: {utc: "2023-05-10T00:45:25Z", local: "2023-05-09 21:45:25-03:00"}
+      runway: "34"
+    landing:
+      scheduled: {utc: "2023-05-10T05:34:42Z", local: "2023-05-10 07:34:42+02:00"}
+      estimated: {utc: "2023-05-10T05:59:48Z", local: "2023-05-10 07:59:48+02:00"}
+      actual: {utc: "2023-05-10T05:59:48Z", local: "2023-05-10 07:59:48+02:00"}
+      runway: "27"
+    departure_versus_schedule: "+0:25:06"
+    arrival_versus_schedule: "+0:25:06"
+    airborne_duration: "5:14:23"
+    flight_plan:
+      planned_time_enroute: "5:14:23"
+  - number: 3
+    flightaware_id: "SUBND-1683854208-sw-1117p"
+    callsign: "SU-BND"
+    registration: "SU-BND"
+    flight_category: "general aviation"
+    outcome: "result unknown"
+    flags: ["position_only"]
+    from:
+      icao: "LFPB"
+      iata: "LBG"
+      name: "Paris Le Bourget"
+      city: "Paris"
+      timezone: "Europe/Paris"
+    to:
+      position_only_point: {lat: 29.97221, lon: 31.22665}
+      city: "Cairo"
+      timezone: "Africa/Cairo"
+    takeoff:
+      scheduled: {utc: "2023-05-12T07:30:53Z", local: "2023-05-12 09:30:53+02:00"}
+      estimated: {utc: "2023-05-12T07:24:38Z", local: "2023-05-12 09:24:38+02:00"}
+      actual: {utc: "2023-05-12T07:24:38Z", local: "2023-05-12 09:24:38+02:00"}
+      runway: "25"
+    landing:
+      actual: {utc: "2023-05-12T07:24:38Z", local: "2023-05-12 10:24:38+03:00"}
+    departure_versus_schedule: "-0:06:15"
+    airborne_duration: "0:00:00"

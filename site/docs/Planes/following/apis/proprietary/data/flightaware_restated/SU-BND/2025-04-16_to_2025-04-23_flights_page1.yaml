@@ -1,0 +1,85 @@
+# Restated from a FlightAware AeroAPI response, in our own layout.
+# The raw response is held privately and is not republished.
+about:
+  aircraft: "SU-BND"
+  question_asked: "Which flights does FlightAware hold for SU-BND between 16 and 23 April 2025 (UTC)?"
+  source: "FlightAware AeroAPI v4 flight history by registration; the raw response is held privately and is not republished."
+  retrieved_utc: "2026-09-14T08:55:05.328Z"
+  vendor_http_status: 200
+  window_utc_from: "2025-04-16T00:00:00Z"
+  window_utc_until_exclusive: "2025-04-23T00:00:00Z"
+  result_page: 1
+  total_pages_reported: 1
+  further_pages_held_by_vendor: false
+flights_recorded: 3
+reading: "FlightAware holds three position-only tracks for SU-BND inside Egypt in this window, between the Cairo area and Matrouh Governorate on 16 April 2025 and within the Cairo area on 20 April; each is a single position fix with no recorded airport, landing or flight time. It does not show who was aboard."
+flights:
+  - number: 1
+    flightaware_id: "SUBND-1744789256-adhoc-2094p"
+    callsign: "SU-BND"
+    registration: "SU-BND"
+    flight_category: "general aviation"
+    outcome: "result unknown"
+    flags: ["position_only"]
+    from:
+      position_only_point: {lat: 30.15747, lon: 31.34141}
+      city: "Cairo"
+      timezone: "Africa/Cairo"
+    to:
+      position_only_point: {lat: 31.58821, lon: 28.41452}
+      city: "Matrouh Governorate"
+      timezone: "Africa/Cairo"
+    takeoff:
+      scheduled: {utc: "2025-04-16T07:54:09Z", local: "2025-04-16 09:54:09+02:00"}
+      estimated: {utc: "2025-04-16T07:54:09Z", local: "2025-04-16 09:54:09+02:00"}
+      actual: {utc: "2025-04-16T07:54:09Z", local: "2025-04-16 09:54:09+02:00"}
+    landing:
+      actual: {utc: "2025-04-16T07:54:09Z", local: "2025-04-16 09:54:09+02:00"}
+    departure_versus_schedule: "+0:00:00"
+    airborne_duration: "0:00:00"
+  - number: 2
+    flightaware_id: "SUBND-1744795337-adhoc-960p"
+    callsign: "SU-BND"
+    registration: "SU-BND"
+    flight_category: "general aviation"
+    outcome: "result unknown"
+    flags: ["position_only"]
+    from:
+      position_only_point: {lat: 31.60487, lon: 28.48909}
+      city: "Matrouh Governorate"
+      timezone: "Africa/Cairo"
+    to:
+      position_only_point: {lat: 30.00256, lon: 31.13305}
+      city: "Cairo"
+      timezone: "Africa/Cairo"
+    takeoff:
+      scheduled: {utc: "2025-04-16T09:42:22Z", local: "2025-04-16 11:42:22+02:00"}
+      estimated: {utc: "2025-04-16T09:42:22Z", local: "2025-04-16 11:42:22+02:00"}
+      actual: {utc: "2025-04-16T09:42:22Z", local: "2025-04-16 11:42:22+02:00"}
+    landing:
+      actual: {utc: "2025-04-16T09:42:22Z", local: "2025-04-16 11:42:22+02:00"}
+    departure_versus_schedule: "+0:00:00"
+    airborne_duration: "0:00:00"
+  - number: 3
+    flightaware_id: "SUBND-1745142434-adhoc-1096p"
+    callsign: "SU-BND"
+    registration: "SU-BND"
+    flight_category: "general aviation"
+    outcome: "result unknown"
+    flags: ["position_only"]
+    from:
+      position_only_point: {lat: 30.16370, lon: 31.30231}
+      city: "Cairo"
+      timezone: "Africa/Cairo"
+    to:
+      position_only_point: {lat: 29.86949, lon: 31.19420}
+      city: "Cairo"
+      timezone: "Africa/Cairo"
+    takeoff:
+      scheduled: {utc: "2025-04-20T09:57:11Z", local: "2025-04-20 11:57:11+02:00"}
+      estimated: {utc: "2025-04-20T09:52:02Z", local: "2025-04-20 11:52:02+02:00"}
+      actual: {utc: "2025-04-20T09:52:02Z", local: "2025-04-20 11:52:02+02:00"}
+    landing:
+      actual: {utc: "2025-04-20T09:52:02Z", local: "2025-04-20 11:52:02+02:00"}
+    departure_versus_schedule: "-0:05:09"
+    airborne_duration: "0:00:00"

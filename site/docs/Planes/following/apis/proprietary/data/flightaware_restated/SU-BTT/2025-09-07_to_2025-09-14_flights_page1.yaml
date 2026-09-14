@@ -1,0 +1,96 @@
+# Restated from a FlightAware AeroAPI response, in our own layout.
+# The raw response is held privately and is not republished.
+about:
+  aircraft: "SU-BTT"
+  question_asked: "Which flights does FlightAware hold for the aircraft registered SU-BTT between 7 September 2025 and 14 September 2025 (UTC)?"
+  source: "FlightAware AeroAPI v4 flight history by registration; the raw response is held privately and is not republished."
+  retrieved_utc: "2026-09-14T09:47:27.715Z"
+  vendor_http_status: 200
+  window_utc_from: "2025-09-07T00:00:00Z"
+  window_utc_until_exclusive: "2025-09-14T00:00:00Z"
+  result_page: 1
+  total_pages_reported: 1
+  further_pages_held_by_vendor: false
+flights_recorded: 2
+reading: "FlightAware records two legs for SU-BTT: Provo Municipal, Utah to New Castle, Wilmington, Delaware on 10 September 2025, and New Castle to Almaza Air Base, Cairo on 11 September 2025, both with filed routes. It records where the aircraft went and when, not who was aboard."
+flights:
+  - number: 1
+    flightaware_id: "SUBTT-1757487994-sw-1041p"
+    callsign: "SU-BTT"
+    registration: "SU-BTT"
+    aircraft_type_code: "FA7X"
+    flight_category: "general aviation"
+    outcome: "Arrived"
+    progress_percent: 100
+    flags: []
+    from:
+      icao: "KPVU"
+      iata: "PVU"
+      faa_lid: "PVU"
+      name: "Provo Muni"
+      city: "Provo"
+      timezone: "America/Denver"
+    to:
+      icao: "KILG"
+      iata: "ILG"
+      faa_lid: "ILG"
+      name: "New Castle"
+      city: "Wilmington"
+      timezone: "America/New_York"
+    takeoff:
+      scheduled: {utc: "2025-09-10T13:10:00Z", local: "2025-09-10 07:10:00-06:00"}
+      estimated: {utc: "2025-09-10T13:14:14Z", local: "2025-09-10 07:14:14-06:00"}
+      actual: {utc: "2025-09-10T13:14:14Z", local: "2025-09-10 07:14:14-06:00"}
+      runway: "13"
+    landing:
+      scheduled: {utc: "2025-09-10T16:41:00Z", local: "2025-09-10 12:41:00-04:00"}
+      estimated: {utc: "2025-09-10T16:51:36Z", local: "2025-09-10 12:51:36-04:00"}
+      actual: {utc: "2025-09-10T16:51:36Z", local: "2025-09-10 12:51:36-04:00"}
+      runway: "01"
+    departure_versus_schedule: "+0:04:14"
+    arrival_versus_schedule: "+0:10:36"
+    airborne_duration: "3:37:22"
+    flight_plan:
+      planned_time_enroute: "3:31:00"
+      cruise_speed_kt: 483
+      route_text: "DITTI1 DAHLI EKR JAPTA OVR BYLAW WOCKY EWC PSB BUNTS3"
+      route_distance_mi: 1902
+  - number: 2
+    flightaware_id: "SUBTT-1757566848-sw-194p"
+    callsign: "SU-BTT"
+    registration: "SU-BTT"
+    aircraft_type_code: "FA7X"
+    flight_category: "general aviation"
+    outcome: "Arrived"
+    progress_percent: 100
+    flags: []
+    from:
+      icao: "KILG"
+      iata: "ILG"
+      faa_lid: "ILG"
+      name: "New Castle"
+      city: "Wilmington"
+      timezone: "America/New_York"
+    to:
+      icao: "HEAZ"
+      name: "Almaza Air Base"
+      timezone: "Africa/Cairo"
+    takeoff:
+      scheduled: {utc: "2025-09-11T12:10:00Z", local: "2025-09-11 08:10:00-04:00"}
+      estimated: {utc: "2025-09-11T11:56:26Z", local: "2025-09-11 07:56:26-04:00"}
+      actual: {utc: "2025-09-11T11:56:26Z", local: "2025-09-11 07:56:26-04:00"}
+      runway: "01"
+    landing:
+      scheduled: {utc: "2025-09-11T21:44:00Z", local: "2025-09-12 00:44:00+03:00"}
+      estimated: {utc: "2025-09-11T21:35:21Z", local: "2025-09-12 00:35:21+03:00"}
+      actual: {utc: "2025-09-11T21:36:19Z", local: "2025-09-12 00:36:19+03:00"}
+      runway: "36"
+    departure_versus_schedule: "-0:13:34"
+    arrival_versus_schedule: "-0:07:41"
+    airborne_duration: "9:39:53"
+    flight_plan:
+      planned_time_enroute: "9:34:00"
+      cruise_altitude_ft: 37000
+      cruise_speed_kt: 480
+      route_text: "DITCH LUIGI HNNAH JFK FOXWD TUSKY N179G PORTI 4700N/05000W 4800N/04000W 4800N/03000W 4800N/02000W 4800N/01000W ETIKI UN480 REGHI DEGEX KORER LEMKA BEBIX LERGA TOZOT UT183 OTROT UM728 KOLON RAPUR RATAP BTA DOKAR SUNEV BELIX AMAXI KUMBI L612 BLT A16 CVO"
+      route_distance_mi: 5725

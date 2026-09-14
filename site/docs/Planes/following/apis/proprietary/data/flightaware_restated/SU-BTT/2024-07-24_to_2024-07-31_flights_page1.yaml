@@ -1,0 +1,62 @@
+# Restated from a FlightAware AeroAPI response, in our own layout.
+# The raw response is held privately and is not republished.
+about:
+  aircraft: "SU-BTT"
+  question_asked: "What flights does FlightAware hold for registration SU-BTT between 24 and 31 July 2024 (UTC)?"
+  source: "FlightAware AeroAPI v4 flight history by registration; the raw response is held privately and is not republished."
+  retrieved_utc: "2026-09-14T08:55:46.966Z"
+  vendor_http_status: 200
+  window_utc_from: "2024-07-24T00:00:00Z"
+  window_utc_until_exclusive: "2024-07-31T00:00:00Z"
+  result_page: 1
+  total_pages_reported: 1
+  further_pages_held_by_vendor: false
+flights_recorded: 2
+reading: "FlightAware holds two position-only records for SU-BTT in Egypt on 28 July 2024, one from near Cairo toward Matrouh Governorate and one between two points near Cairo, each with the same time for takeoff and landing. They mark where a signal was heard, not full trips, and place no person aboard."
+flights:
+  - number: 1
+    flightaware_id: "SUBTT-1722143393-adhoc-3184p"
+    callsign: "SU-BTT"
+    registration: "SU-BTT"
+    flight_category: "general aviation"
+    outcome: "result unknown"
+    flags: ["position_only"]
+    from:
+      position_only_point: {lat: 30.10776, lon: 31.35934}
+      city: "Cairo"
+      timezone: "Africa/Cairo"
+    to:
+      position_only_point: {lat: 30.75760, lon: 27.88201}
+      city: "Matrouh Governorate"
+      timezone: "Africa/Cairo"
+    takeoff:
+      scheduled: {utc: "2024-07-28T05:29:54Z", local: "2024-07-28 08:29:54+03:00"}
+      estimated: {utc: "2024-07-28T05:29:54Z", local: "2024-07-28 08:29:54+03:00"}
+      actual: {utc: "2024-07-28T05:29:54Z", local: "2024-07-28 08:29:54+03:00"}
+    landing:
+      actual: {utc: "2024-07-28T05:29:54Z", local: "2024-07-28 08:29:54+03:00"}
+    departure_versus_schedule: "+0:00:00"
+    airborne_duration: "0:00:00"
+  - number: 2
+    flightaware_id: "SUBTT-1722151633-adhoc-658p"
+    callsign: "SU-BTT"
+    registration: "SU-BTT"
+    flight_category: "general aviation"
+    outcome: "result unknown"
+    flags: ["position_only"]
+    from:
+      position_only_point: {lat: 29.74488, lon: 31.62291}
+      city: "Cairo"
+      timezone: "Africa/Cairo"
+    to:
+      position_only_point: {lat: 29.77346, lon: 31.49549}
+      city: "Cairo"
+      timezone: "Africa/Cairo"
+    takeoff:
+      scheduled: {utc: "2024-07-28T08:36:21Z", local: "2024-07-28 11:36:21+03:00"}
+      estimated: {utc: "2024-07-28T08:36:21Z", local: "2024-07-28 11:36:21+03:00"}
+      actual: {utc: "2024-07-28T08:36:21Z", local: "2024-07-28 11:36:21+03:00"}
+    landing:
+      actual: {utc: "2024-07-28T08:36:21Z", local: "2024-07-28 11:36:21+03:00"}
+    departure_versus_schedule: "+0:00:00"
+    airborne_duration: "0:00:00"
