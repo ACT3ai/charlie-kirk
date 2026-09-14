@@ -178,9 +178,16 @@ us — which is precisely why a 403 from it has to be reported as opacity rather
 **History back to 1 January 2011** — deep enough to cover the entire 2022 to 2025 window the
 trackers counted across. That makes it the single most valuable unopened door on this page.
 
-`GET /aircraft/{registration}/flights` with a start and end is the call. Header is `x-apikey`.
-Results are cursor-paginated and **every page is a separately billed query**. Pricing is
-usage-based, advertised from around $0.002 per query.
+`GET /history/flights/{registration}?ident_type=registration` with a start and end is the call,
+and **one call covers at most seven days**. Header is `x-apikey`. Run
+`GET /aircraft/{registration}/blocked` first: a tail in an FAA privacy programme returns no
+history, and that is a lawful filing, not a removal. Results are cursor-paginated and **every page
+is a separately billed result set of up to 15 records**; FlightAware lists history lookups at
+$0.020 per result set.
+
+**CORRECTED 14 September 2026.** This section previously gave `GET /aircraft/{registration}/flights`
+as the call and "around $0.002 per query" as the price. That path is not an AeroAPI v4 resource,
+and the published history price is ten times that figure.
 
 ### ADS-B Exchange, via RapidAPI
 
@@ -202,11 +209,15 @@ mid-Atlantic legs nobody's ground receivers can see.
 Clients are in `apis/proprietary/code/` — `fr24api.js`, `aeroapi.js`,
 `adsbexchange_rapidapi.js`. **None of them run without a credential, and that is deliberate.** Each
 one exits with the reason, and the reason is meant to be copied into this page as a
-blocked-on-credential entry.
+blocked-on-credential entry. Since 14 September 2026 `aeroapi.js` also has a **dry run, and it is
+the default**: without `--run` it prints the exact call and bills nothing, so anyone can see what
+would be asked before paying for it.
 
 ```
 node fr24api.js SU-BTT 2025-09-01 2025-09-15
-node aeroapi.js SU-BTT 2025-09-01 2025-09-15
+node aeroapi.js SU-BTT 2025-09-04 2025-09-11          # dry run - prints the call, bills nothing
+node aeroapi.js SU-BTT 2025-09-04 2025-09-11 --run    # billed; at most 7 days per call
+node aeroapi.js --probe N102DZ --run                  # blocked, last_flight, owner
 node adsbexchange_rapidapi.js SU-BTT
 ```
 
