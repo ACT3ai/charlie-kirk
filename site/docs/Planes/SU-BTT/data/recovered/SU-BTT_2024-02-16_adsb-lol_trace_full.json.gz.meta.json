@@ -1,0 +1,13 @@
+{
+  "url": "https://adsb.lol/globe_history/2024/02/16/traces/d3/trace_full_0101d3.json",
+  "http_status": 200,
+  "bytes": 151272,
+  "stored_gzipped": true,
+  "stored_bytes": 23319,
+  "retrieved_utc": "2026-09-14T08:04:01Z",
+  "tail": "SU-BTT",
+  "date_utc": "2024-02-16",
+  "source_key": "adsb-lol",
+  "tool": "manual curl probe, Claude Code session 2026-09-14",
+  "note": "Pulled by hand on 2026-09-14 to close an open question: SU-BTT was last heard descending to -100 ft at KILG on 2024-02-14 and 2024-02-15 was already recorded as a miss. This day shows the same airframe climbing out of KILG at 13:04:09Z. Control 4ca7b5 (Ryanair) returned HTTP 200 from the same host for the same date. Payload is the response body as decoded by curl --compressed; gzip is lossless."
+}
