@@ -28,6 +28,34 @@ borderRadius:'4px', textDecoration:'none', fontSize:'0.9rem'}}>← Overlap dates
 
 # 12 May 2023 — St. Louis, MO
 
+{/* CK_SHORT_ANSWER:START */}
+
+:::note[The short answer]
+
+| Question | Answer |
+|---|---|
+| **Was SU-BND at St. Louis (KSTL) around 12 May 2023?** | **Nearby, not at KSTL.** FlightAware records it at another airport in the same area: took off from KCPS Cahokia/St Louis on Tue 9 May 2023, 3:02 pm CDT (20:02 UTC), to CYYR Goose Bay. Free ADS-B receivers last heard it 7,034 km away that day. |
+| **Was Erika Kirk there?** | **No dated source says so.** The claim rests on the overlap sheet's location cell. Her itinerary has never been published and her [flight logs are reported erased](/Planes/Erika-Flight-Logs-Erased). |
+| **Was a Kirk-party aircraft there?** | **Not shown by any record.** The Kirk side of this row is a claimed location for a person, not an aircraft. FlightAware hides the tails most often linked to the Kirks (N102DZ and N582MM are on its block list). |
+| **Does this show anyone was being followed?** | **No.** A flight record places an aircraft, never a person, and never a purpose. The counterargument is further down this page. |
+
+:::
+
+### FlightAware timeline, 9 May to 15 May 2023
+
+| # | Aircraft | From | Took off | To | Landed | FlightAware says |
+|---|---|---|---|---|---|---|
+| 1 | SU-BND | KCPS Cahokia/St Louis | Tue 9 May 2023, 3:02 pm CDT (20:02 UTC) | CYYR Goose Bay | Tue 9 May 2023, 8:40 pm ADT (23:40 UTC) | Arrived |
+| 2 | SU-BND | CYYR Goose Bay | Tue 9 May 2023, 9:45 pm ADT (00:45 UTC) | LFPB Paris | Wed 10 May 2023, 7:59 am CEST (05:59 UTC) | Arrived |
+| 3 | SU-BND | LFPB Paris | Fri 12 May 2023, 9:24 am CEST (07:24 UTC) | a point near Cairo (29.97, 31.23) | Fri 12 May 2023, 10:24 am EEST (07:24 UTC) | result unknown, seen by position only, no landing observed |
+| 4 | SU-BND | HECA Cairo | Sun 14 May 2023, 6:15 am EEST (03:15 UTC) | a point near Cairo (29.05, 31.26) | Sun 14 May 2023, 6:15 am EEST (03:15 UTC) | result unknown, seen by position only, no landing observed |
+| 5 | SU-BND | a point near Cairo (29.48, 31.31) | Sun 14 May 2023, 4:33 pm EEST (13:33 UTC) | a point near Cairo (29.82, 31.24) | Sun 14 May 2023, 4:33 pm EEST (13:33 UTC) | result unknown, seen by position only, no landing observed |
+
+*Every flight FlightAware holds for the aircraft from three days before the claimed date to three days after it, the overlap window this site uses. Local time is the time at that airport. Restated from FlightAware's data; the files are listed in the FlightAware section below.*
+
+{/* CK_SHORT_ANSWER:END */}
+
+
 **On 12 May 2023, recovered position data places [SU-BND](/Planes/SU-BND/overview) 7,034 km away from [KSTL](/Planes/Airports/KSTL). This row is refuted by primary data.** It is one of only [3 rows in the 85-row register](/Planes/following/cuts/adsb-elsewhere-3) that position data contradicts.
 
 The sheet claims **Erika Kirk** was in St. Louis, MO on this date. Her position here is a spreadsheet cell, not a record: [her flight logs are reported erased](/Planes/Erika-Flight-Logs-Erased) and no dated itinerary for her has ever been published.
@@ -61,6 +89,38 @@ This page records what somebody **claimed**. This section records what the recov
 *Verdicts come from `overlaps.csv`, derived from the recovered traces. See [Investigating Deleted Flights](/Planes/investigating_deleted_flights) §4.13 for how the 85 claims break down as a whole, and [the overlap window definition](/Planes/following/Overlap_Window_Definition) for what counts as an overlap at all.*
 
 {/* CK_ADSB_VERDICT:END */}
+
+{/* CK_AEROAPI_VERDICT:START */}
+
+## What FlightAware's flight record says
+
+The section above is what free, volunteer ADS-B receivers heard. This section is what **FlightAware**, a commercial flight-tracking service, recorded for the same aircraft over the same days. It is a different source with different gaps, checked on 14 September 2026.
+
+### FlightAware, SU-BND: the aircraft was at another airport in the same area
+
+| Field | Value |
+|---|---|
+| Claim ID | **OWENS-050** |
+| Aircraft | [SU-BND](/Planes/SU-BND/overview) |
+| Days checked | 2023-05-09 to 2023-05-16 UTC, end exclusive |
+| **FlightAware verdict** | **SAME_METRO_OTHER_FIELD** |
+| At the claimed airport | took off 2023-05-09 20:02 UTC (15:02 CDT) on the leg KCPS (St Louis Downtown) [USA] -&gt; CYYR (CFB Goose Bay (Goose Bay)) [Canada], day -3, FlightAware status Arrived |
+| Flights FlightAware holds in those days | 5 |
+| Before and after | last flight before the window landed at KCPS (St Louis Downtown) [USA] 2023-05-03 16:36 UTC; first flight after it took off from HECA (Cairo Int'l) [Egypt] 2023-05-16 16:36 UTC. Only the weeks that were pulled are known - a gap between them was never asked about. |
+
+**What that verdict means.** FlightAware records this aircraft at another airport in the same metro area inside the window, and not at the claimed airport.
+
+**Against the other checks on this row.** Partly disagrees with ADS-B: ADS-B puts it 7,034 km away on the claimed day, and FlightAware agrees it was not in the area that day, but records it at another field in the same metro area inside the ±3-day window.
+
+**The data.** FlightAware does not allow its responses to be republished, so the raw responses are held privately. What is published is every fact in them, restated in our own layout and checked field by field against the raw response by `check_restated.py`:
+
+* [`2023-05-07_to_2023-05-14_flights_page1.yaml`](https://github.com/ACT3ai/charlie-kirk/blob/main/site/docs/Planes/following/apis/proprietary/data/flightaware_restated/SU-BND/2023-05-07_to_2023-05-14_flights_page1.yaml)
+* [`2023-05-14_to_2023-05-21_flights_page1.yaml`](https://github.com/ACT3ai/charlie-kirk/blob/main/site/docs/Planes/following/apis/proprietary/data/flightaware_restated/SU-BND/2023-05-14_to_2023-05-21_flights_page1.yaml)
+
+**This is about the aircraft only.** No flight record places any person aboard any aircraft, and FlightAware's does not either.
+
+{/* CK_AEROAPI_VERDICT:END */}
+
 
 
 **This page is one row of the overlap sheet that produced the "73 times" figure — reconstructed, sourced, and checked.** It is not a finding by this site. It records what the compilation claimed for this date, who it says was there, and what an independent audit of the flight archive found when it looked.
