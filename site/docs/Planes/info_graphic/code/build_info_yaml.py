@@ -372,8 +372,8 @@ def yaml_for(oid, tail, person, dups, rec):
             a("      sources: %s" % "|".join(r["srcs"]))
     else:
         a("  no_aircraft_in_record: true")
-        a("  claim: \"%s claimed present at this field on this date · no Kirk-party airframe heard\""
-          % {"charlie": "Charlie Kirk", "erika": "Erika Kirk", "both": "Charlie and Erika Kirk"}[person])
+        a("  claim: \"%s claimed in %s on this date · no Kirk-party aircraft heard on the ground here\""
+          % ({"charlie": "Charlie Kirk", "erika": "Erika Kirk", "both": "Charlie and Erika Kirk"}[person], ap["city"]))
         # Name EVERY tail that was asked for, not only the ones an archive
         # happened to hold. "we queried one" and "we queried six and five came
         # back empty" are different facts and the second is the true one.
