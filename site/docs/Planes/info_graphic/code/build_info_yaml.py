@@ -60,7 +60,7 @@ NEAR_FIELD_AGL = 6000
 # script silently discarded it under a blanket 60-second floor. The generator
 # widens a too-short bar to a visible minimum and WARNS that it did; that warning
 # is the honest outcome and dropping the evidence is not.
-AS_OF = "2026-08-29"
+AS_OF = "2026-09-14"
 
 # Kirk-party and TPUSA-linked airframes. planes.csv category "Private / Kirk
 # party" is N102DZ alone; the rest are queried too so the absence is a wide one.
@@ -292,6 +292,48 @@ def field_ceiling(code):
     return elev + NEAR_FIELD_AGL
 
 
+# COMING IN TO LAND / CLIMBING OUT. Added 2026-09-14, after six Erika graphics were
+# found drawing landings as "airborne, NOT a landing". SU-BTT almost never sends the
+# ADS-B on-ground flag, so its landings never became ground contacts. A window is
+# final_approach when the day's trace ENDS on it, descending, last heard within
+# APPROACH_KM of the field and within APPROACH_AGL of the field's elevation.
+# climb_out is the mirror image. Neither is a recorded arrival or departure.
+APPROACH_KM = 3.0
+APPROACH_AGL = 300
+
+
+def field_elev(code):
+    ap = airport_by_code(code)
+    try:
+        return float(ap.get("elevation_ft") or 0)
+    except (AttributeError, TypeError, ValueError):
+        return 0.0
+
+
+def pass_kind(code, w):
+    top = field_elev(code) + APPROACH_AGL
+    fa, la = w.get("first_alt_ft"), w.get("last_alt_ft")
+    if (w.get("trace_ends_here") and fa is not None and la is not None and la <= top and la < fa
+            and w.get("last_km") is not None and w["last_km"] <= APPROACH_KM):
+        return "final_approach"
+    if (w.get("trace_starts_here") and fa is not None and la is not None and fa <= top and la > fa
+            and w.get("first_km") is not None and w["first_km"] <= APPROACH_KM):
+        return "climb_out"
+    return "near_field_pass"
+
+
+def at_field(code, heard):
+    """The position heard beyond the day, but ONLY if it was at this field: within
+    APPROACH_KM, and on the ground or within APPROACH_AGL of the field's elevation.
+    Anywhere else and there is no "not heard" bar - the aircraft went somewhere we
+    cannot see, and the gap would claim a stay that the data does not show."""
+    if not heard or heard.get("km") is None or heard["km"] > APPROACH_KM:
+        return None
+    if heard.get("on_ground") or (heard.get("alt_ft") is not None and heard["alt_ft"] <= field_elev(code) + APPROACH_AGL):
+        return heard
+    return None
+
+
 def windows_for(rec, tail):
     per_tail = rec["per_tail"]
     if tail not in per_tail:
@@ -306,7 +348,12 @@ def windows_for(rec, tail):
         alt = r.get("min_alt_ft")
         if alt is None or alt > ceiling:
             continue                    # a transit over the circle, not a pass at the field
-        out.append(dict(kind="near_field_pass", **r))
+        w = dict(kind=pass_kind(rec["airport"], r), **r)
+        if w["kind"] == "final_approach":
+            w["next_at_field"] = at_field(rec["airport"], per_tail[tail].get("next_heard"))
+        if w["kind"] == "climb_out":
+            w["previous_at_field"] = at_field(rec["airport"], per_tail[tail].get("previous_heard"))
+        out.append(w)
     return sorted(out, key=lambda r: r["first"])
 
 
@@ -348,6 +395,14 @@ def yaml_for(oid, tail, person, dups, rec):
     a("  state: %s" % ap["state"])
     a("  state_name: %s" % ap["state_name"])
     a("  timezone: %s" % ap["timezone"])
+    # The field's own elevation, so the generator can say "at runway height" instead
+    # of printing an altimeter reading: 4,500 ft at Provo IS the runway. Omitted, never
+    # guessed, when OurAirports has no elevation for the field.
+    elev = (airport_by_code(code) or {}).get("elevation_ft")
+    try:
+        a("  elevation_ft: %d" % round(float(elev)))
+    except (TypeError, ValueError):
+        pass
     a("  town_population: %s" % ap["town_population"])
     a("  town_population_source: %s" % ap["town_population_source"])
     a("following_plane:")
@@ -361,13 +416,27 @@ def yaml_for(oid, tail, person, dups, rec):
         a("      basis: %s" % w["kind"])
         a("      ground_points: %d" % w["n"])
         a("      min_km: %s" % w["min_km"])
-        if w["kind"] == "near_field_pass" and w.get("min_alt_ft") is not None:
+        if w["kind"] != "ground_contact" and w.get("min_alt_ft") is not None:
             a("      min_alt_ft: %d" % w["min_alt_ft"])
+        if w["kind"] == "final_approach":
+            a("      last_alt_ft: %d" % w["last_alt_ft"])
+            a("      last_km: %s" % w["last_km"])
+        if w["kind"] == "climb_out":
+            a("      first_alt_ft: %d" % w["first_alt_ft"])
+            a("      first_km: %s" % w["first_km"])
+        for key, label in (("next_at_field", "next_heard_at_field"), ("previous_at_field", "previous_heard_at_field")):
+            h = w.get(key)
+            if h:
+                a("      %s: {utc: %s, km: %s, alt_ft: %s, on_ground: %s, source: %s}" % (
+                    label, trim(h["utc"]), h["km"], "null" if h["alt_ft"] is None else h["alt_ft"],
+                    "true" if h["on_ground"] else "false", h["source"]))
         a("      sources: %s" % "|".join(w["srcs"]))
     a("kirk_plane:")
     if kirk_hits:
         t, runs = kirk_hits[0]
         a("  tail: %s" % t)
+        if t in KIRK_LEAD:
+            a("  label_lead: \"%s\"" % KIRK_LEAD[t])
         a("  type: %s" % plane_facts(t)["type"])
         a("  operator: %s" % plane_facts(t)["operator"])
         a("  segments:")
@@ -384,6 +453,8 @@ def yaml_for(oid, tail, person, dups, rec):
         # Name EVERY tail that was asked for, not only the ones an archive
         # happened to hold. "we queried one" and "we queried six and five came
         # back empty" are different facts and the second is the true one.
+        # The generator prints this list in the CAPTION, not inside the band: in
+        # the band it read as six aircraft that were there (Bryan, 14 Sep 2026).
         a("  queried_tails: %s" % ", ".join(KIRK_TAILS))
     a("times_status: complete")
     a("as_of: %s" % AS_OF)
@@ -394,6 +465,11 @@ def yaml_for(oid, tail, person, dups, rec):
     a("  - site/docs/Planes/following/airports.csv")
     for s in sorted({s for w in wins for s in w["srcs"]}):
         a("  - site/docs/Planes/%s/data/recovered/%s_%s_%s_trace_full.json" % (tail, tail, date, s))
+    for w in wins:
+        for key in ("next_at_field", "previous_at_field"):
+            h = w.get(key)
+            if h:
+                a("  - site/docs/Planes/%s/data/recovered/%s_%s_%s_trace_full.json" % (tail, tail, h["date"], h["source"]))
     for t, runs in kirk_hits:
         for s in sorted({s for r in runs for s in r["srcs"]}):
             a("  - site/docs/Planes/%s/data/recovered/%s_%s_%s_trace_full.json" % (t, t, date, s))
@@ -417,7 +493,7 @@ def yaml_for(oid, tail, person, dups, rec):
         note.append("Other tracked private aircraft WERE on the ground at this field on this date "
                     "(%s), but none of them is a Kirk aircraft - they belong to separate claims in "
                     "this investigation and are not drawn as the Kirk bar." % ", ".join(other_hits))
-    if npass:
+    if any(w["kind"] == "near_field_pass" for w in wins):
         # THE DISTANCE IS THE NUMBER THAT MATTERS on a pass and the bar label
         # only carries the altitude, so it is stated here. Within 15 km is a
         # circle 30 km across, and "0.2 km at 4,325 ft" and "7.2 km at 2,100 ft"
@@ -427,6 +503,25 @@ def yaml_for(oid, tail, person, dups, rec):
                     "approach and lowest altitude heard, per pass: "
                     + "; ".join("%s km at %s ft" % (w["min_km"], w.get("min_alt_ft"))
                                 for w in wins if w["kind"] == "near_field_pass") + ".")
+    for w in wins:
+        if w["kind"] == "final_approach":
+            h = w.get("next_at_field")
+            note.append("COMING IN TO LAND: last heard at %s ft, %s km from the field, descending, and the "
+                        "trace ends there - no receiver heard this aircraft again that UTC day. %s"
+                        "That is what a landing no receiver heard on the ground looks like. It is not a "
+                        "recorded arrival." % (w["last_alt_ft"], w["last_km"],
+                        ("It was next heard AT THIS FIELD %.1f hours later (%s, %s km from the field, %s). "
+                         "Nothing was heard in between, and the graphic draws that gap as NOT HEARD. "
+                         % (secs(w["last"], h["utc"]) / 3600, trim(h["utc"]), h["km"],
+                            "on the ground" if h["on_ground"] else "%s ft" % h["alt_ft"])) if h else ""))
+        if w["kind"] == "climb_out":
+            h = w.get("previous_at_field")
+            note.append("CLIMBING OUT: first heard at %s ft, %s km from the field, climbing, with nothing "
+                        "heard earlier that UTC day. %sIt is not a recorded departure." % (
+                        w["first_alt_ft"], w["first_km"],
+                        ("It was last heard AT THIS FIELD %.1f hours earlier (%s, %s km, %s); the gap is "
+                         "drawn as NOT HEARD. " % (secs(h["utc"], w["first"]) / 3600, trim(h["utc"]), h["km"],
+                                                   "on the ground" if h["on_ground"] else "%s ft" % h["alt_ft"])) if h else ""))
     if dups:
         note.append("overlaps.csv holds this same claim more than once: %s. One graphic, not several."
                     % ", ".join([oid] + dups))
@@ -435,8 +530,6 @@ def yaml_for(oid, tail, person, dups, rec):
     a("notes: >-")
     for line in note:
         a("  " + line)
-        if t in KIRK_LEAD:
-            a("  label_lead: \"%s\"" % KIRK_LEAD[t])
     return "\n".join(L) + "\n", dirn, None
 
 
