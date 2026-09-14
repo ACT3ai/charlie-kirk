@@ -152,7 +152,14 @@ def airport_facts(code):
 PLANE = {
     "SU-BTT": dict(type="Dassault Falcon 7X", operator="Egyptian / foreign VIP"),
     "SU-BND": dict(type="Gulfstream G550", operator="Egyptian / foreign VIP"),
-    "N102DZ": dict(type="Gulfstream V", operator="Private / Kirk party"),
+    "N102DZ": dict(type="Gulfstream V", operator="Private / reported as the Kirk family's aircraft"),
+}
+# What the lower bar is CALLED when a Kirk-side airframe is drawn. Erika Kirk named no
+# tail; N102DZ is tied to the family by X posts and trackers, not by any record, so the
+# picture says "reported" rather than "Erika Kirk's aircraft" (Bryan, 14 Sep 2026).
+KIRK_LEAD = {
+    "N102DZ": "Aircraft reported as the Kirk family's",
+    "N582MM": "TPUSA-linked aircraft",
 }
 PLANES_CSV = os.path.normpath(os.path.join(PLANES, "..", "..", "..", "planes.csv"))
 
@@ -428,6 +435,8 @@ def yaml_for(oid, tail, person, dups, rec):
     a("notes: >-")
     for line in note:
         a("  " + line)
+        if t in KIRK_LEAD:
+            a("  label_lead: \"%s\"" % KIRK_LEAD[t])
     return "\n".join(L) + "\n", dirn, None
 
 
