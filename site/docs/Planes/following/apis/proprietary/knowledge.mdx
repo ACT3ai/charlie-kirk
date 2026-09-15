@@ -35,6 +35,8 @@ matter, and commercial vendors are the only way through both.
 
 ## What this pass produced, and what it refused
 
+**Updated 15 September 2026: one credential is now held — `AEROAPI_KEY` — and it has been used. [See the update below](#update--15-september-2026-the-aeroapi-key-is-held-and-it-has-been-used). The next line was true when it was written.**
+
 **Zero aircraft-days. Zero credentials held. Every question on this page is open, and the page exists so that stays visible instead of quietly becoming "no comment".**
 
 | Vendor | What was asked | What came back | What that means honestly |
@@ -43,7 +45,7 @@ matter, and commercial vendors are the only way through both.
 | **Flightradar24** — the public site, **by script** | 13 case tails + 7 unrelated controls + its own home page | **HTTP 403 on all of them**, identical ~5,877-byte body | **Site-wide bot protection.** **A Flightradar24 403 says nothing whatsoever about any particular aircraft's record** — and this site published one as a documented removal. That was our error and the retraction stays published |
 | **Flightradar24** — the same pages, **in a real logged-out browser** | 16 subject tails + 4 unrelated controls | **HTTP 200 on all 20**, full identity blocks | **No aircraft page in this investigation has been removed from Flightradar24.** REFUTED, not merely untested. **Corrected 15 Sep 2026:** no page removed, but N102DZ's and T7-ELL's flights are hidden |
 | **Flightradar24** free-tier history depth | read from its own error text, confirmed against controls | **7 days** | Explains the N888KG September 2025 captures. **Corrected 15 Sep 2026: it does not explain N102DZ's empty table or N888KG's 2 Nov 2025 capture** — both aircraft had flown inside the window. **A logged-out free tier is the weakest view the vendor offers** — 90 days on Silver, a year on Gold, three years on Business, and nobody has looked through one |
-| **FlightAware AeroAPI v4** — `aeroapi.flightaware.com` | history to **2011** | **`AEROAPI_KEY` — not held.** Scripted probes of the public site return **HTTP 200**; not blocking | **The highest-value unopened door in the whole investigation**, and the only remaining way to raise the per-tail coverage figure |
+| **FlightAware AeroAPI v4** — `aeroapi.flightaware.com` | history to **2011** | **`AEROAPI_KEY` — held since 14 September 2026** (updated 15 September 2026): 89 billed calls, every one HTTP 200, about $1.62. Scripted probes of the public site return **HTTP 200**; not blocking | **Opened 14 September 2026** — results in [the update below](#update--15-september-2026-the-aeroapi-key-is-held-and-it-has-been-used) |
 | FlightAware modern pages, as archived | server-rendered flight rows | **Client-side application, no server-rendered rows** | An archived modern page holds no flight data to recover |
 | FlightAware **pre-2017** pages, as archived | server-rendered tables | **109 legs recovered** | The old pages are the ones worth going to the Internet Archive for |
 | **ADS-B Exchange** historical, via RapidAPI | deep history | **`ADSBX_RAPIDAPI_KEY` — not held.** History pages **403 to the public** | Behind a subscription since the site commercialised. **Several of the original screenshots in this case came from here while it was open** |
@@ -180,7 +182,7 @@ us — which is precisely why a 403 from it has to be reported as opacity rather
 ### FlightAware AeroAPI v4
 
 **History back to 1 January 2011** — deep enough to cover the entire 2022 to 2025 window the
-trackers counted across. That makes it the single most valuable unopened door on this page.
+trackers counted across. That made it the single most valuable unopened door on this page, and it was opened on 14 September 2026 ([results](#update--15-september-2026-the-aeroapi-key-is-held-and-it-has-been-used)).
 
 `GET /history/flights/{registration}?ident_type=registration` with a start and end is the call,
 and **one call covers at most seven days**. Header is `x-apikey`. Run
@@ -313,6 +315,25 @@ responds to a script on one day. None of them is a statement about whether an ai
 **NARROWED: "The 52 claimed dates with no free trace."** Every event-window day for every aircraft in the fleet has now been put to **every free archive that exists**, so *never-asked* is zero and the remaining figure is genuinely "asked, and no free archive holds it" rather than "nobody looked". **325 aircraft-days were also recovered from inside adsb.lol's two archive holes**, 281 of them from the backup network. **A commercial subscription is still the only way to test the residue** — and a vendor with dense receiver coverage *also* finding nothing would be a considerably stronger negative than a volunteer network finding nothing.
 
 **UNCHANGED, and it is the important one: no credential is held for any vendor on this page.** `AEROAPI_KEY`, `FR24_API_TOKEN`, `ADSBX_RAPIDAPI_KEY` — **all not held.** **Pass 2 has produced zero aircraft-days.** That is a publishable fact, not a failure to hide, and it remains the cheapest way to raise the per-tail coverage figure.
+
+### UPDATE — 15 September 2026: the AeroAPI key is held, and it has been used
+
+**RETRACTED: "No credential is held for any vendor on this page" and "Pass 2 has produced zero aircraft-days."** `AEROAPI_KEY` has been held since **14 September 2026**, in the credential store outside every repository. `FR24_API_TOKEN` and `ADSBX_RAPIDAPI_KEY` are still **not held**.
+
+**What it has been used for, 14–15 September 2026:** 89 billed calls — 65 seven-day flight-history windows, 15 blocking-status checks and 9 registered-owner lookups. Every one was answered HTTP 200, for about **$1.62** in total. `aeroapi.js` checks the month's spend before every call and refuses any call that would pass $90.
+
+| Question | What FlightAware answered |
+|---|---|
+| The 42 Erika-claimed overlap rows no free archive could decide | The aircraft was at the claimed field on **3**, in the same metro area on **1**, and flying elsewhere on **13**. **25** windows hold no flight, which is not a finding. |
+| The 22 rows free archives had already decided | Agrees on **19**. Changes **3** published verdicts: [OWENS-015](/Planes/following/overlap/20230509_MO_st_louis_then_goose_bay_owens_015/overview), OWENS-012 and [OWENS-050](/Planes/following/overlap/20230512_MO_st_louis_owens_050/overview). |
+| Does it miss flights the free archives hold? | Not in the Erika pull: across its 280 aircraft-days it holds every one of the 12 flight-days the free traces hold, plus 14 they do not. |
+| **Blocking-programme status** — now answered for FlightAware | **Blocked:** N102DZ, N582MM, N888KG, T7-ELL. **Not blocked:** N560TW, N1098L, N59906, N872RA, N40JD, SU-BTT, SU-BND, SU-BTU, SU-BTV, SU-BGM. A blocked tail returns no flight history, so an empty answer for those four is not an absence. |
+| Hidden, or never existed? | N38ZQ, a registration the FAA has never issued, comes back "not blocked", with no owner and no flights, and FlightAware's public page calls it "Unknown Flight". The blocked aircraft keep their type and owner, and only their flights are withheld. |
+| Where did N40JD and N872RA come from on 10 September 2025? | N40JD from Scottsdale, landing at Provo at 2:29 p.m. N872RA from Santa Barbara, landing at 4:36 p.m. |
+
+**The responses themselves are not published.** FlightAware's terms do not allow republishing them, so the raw responses are held privately. This repository holds a restatement of each one instead — 89 files across 15 aircraft in `apis/proprietary/data/flightaware_restated/` — with every fact in our own layout, each checked field by field against the raw response by `code/check_restated.py`. The findings are on [Which Flight Records Were Deleted](/Planes/Deleted-Flight-Records), [Which Planes Charlie Flew, Which Planes Erika Flew](/Planes/Charlie-Erika-Aircraft/overview), and in the FlightAware verdict block on each overlap page.
+
+**Still open:** no FlightAware window before 2023 has been pulled, so the 2022 rows are still untested by any commercial source. Flightradar24's API and ADS-B Exchange's history remain blocked on credentials.
 
 ## The rule that governs this pass
 
