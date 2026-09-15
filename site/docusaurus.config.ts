@@ -26,6 +26,16 @@ const config: Config = {
     v4: true, // Improve compatibility with the upcoming Docusaurus v4
   },
 
+  // future.v4 turns OFF the legacy admonition title form `:::caution Legal Disclaimer`
+  // (space before the title). 742 pages use that form, and with it off they render as
+  // raw ":::caution ..." paragraph text. Keep it on until every page uses
+  // `:::caution[Legal Disclaimer]`.
+  markdown: {
+    mdx1Compat: {
+      admonitions: true,
+    },
+  },
+
   // Set the production url of your site here
   url: siteUrl,
   // Set the /<baseUrl>/ pathname under which your site is served
