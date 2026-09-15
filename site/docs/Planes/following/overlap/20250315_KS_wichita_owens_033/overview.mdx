@@ -61,6 +61,36 @@ This page records what somebody **claimed**. This section records what the recov
 
 {/* CK_ADSB_VERDICT:END */}
 
+{/* CK_AEROAPI_VERDICT:START */}
+
+## What FlightAware's flight record says
+
+The section above is what free, volunteer ADS-B receivers heard. This section is what **FlightAware**, a commercial flight-tracking service, recorded for the same aircraft over the same days. It is a different source with different gaps, checked on 14 September 2026.
+
+### FlightAware, SU-BTT: the aircraft flew, but not to the claimed airport
+
+| Field | Value |
+|---|---|
+| Claim ID | **OWENS-033** |
+| Aircraft | [SU-BTT](/Planes/SU-BTT/overview) |
+| Days checked | 2025-03-12 to 2025-03-19 UTC, end exclusive |
+| **FlightAware verdict** | **FLEW_ELSEWHERE** |
+| Flights FlightAware holds in those days | 1 |
+| Before and after | last flight before the window landed at position 27.81,32.12 2025-02-11 08:29 UTC; no later flight pulled. Only the weeks that were pulled are known - a gap between them was never asked about. |
+
+**What that verdict means.** FlightAware records flights for this aircraft inside the window, and none of them touches the claimed airport. That points away from the claim. FlightAware can miss a leg, so on its own it is not proof.
+
+**Against the other checks on this row.** FlightAware records flights for it in the window, and none touches the claimed field. That points away from the claim; FlightAware can miss a leg, so it is not proof on its own.
+
+**The data.** FlightAware does not allow its responses to be republished, so the raw responses are held privately. What is published is every fact in them, restated in our own layout and checked field by field against the raw response by `check_restated.py`:
+
+* [`2025-03-12_to_2025-03-19_flights_page1.yaml`](https://github.com/ACT3ai/charlie-kirk/blob/main/site/docs/Planes/following/apis/proprietary/data/flightaware_restated/SU-BTT/2025-03-12_to_2025-03-19_flights_page1.yaml)
+
+**This is about the aircraft only.** No flight record places any person aboard any aircraft, and FlightAware's does not either.
+
+{/* CK_AEROAPI_VERDICT:END */}
+
+
 
 **This page is one row of the overlap sheet that produced the "73 times" figure — reconstructed, sourced, and checked.** It is not a finding by this site. It records what the compilation claimed for this date, who it says was there, and what an independent audit of the flight archive found when it looked.
 

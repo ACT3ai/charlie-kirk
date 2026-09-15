@@ -1,0 +1,13 @@
+# Restated from a FlightAware AeroAPI response, in our own layout.
+# The raw response is held privately and is not republished.
+about:
+  aircraft: "N560TW"
+  question_asked: "Who does FlightAware list as the registered owner of N560TW?"
+  source: "FlightAware AeroAPI v4 aircraft owner lookup; the raw response is held privately and is not republished."
+  retrieved_utc: "2026-09-14T09:45:58.699Z"
+  vendor_http_status: 200
+registered_owner:
+  name: "T W LEWIS-AVIATION LLC"
+  address_line: "6720 N SCOTTSDALE RD STE 230"
+  city_state: "SCOTTSDALE AZ"
+reading: "FlightAware lists a limited liability company as the registered owner; a registered owner is often a holding company, it is not a person, and we do not go behind it to name anyone."

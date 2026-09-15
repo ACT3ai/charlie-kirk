@@ -28,6 +28,33 @@ borderRadius:'4px', textDecoration:'none', fontSize:'0.9rem'}}>← Overlap dates
 
 # 20 July 2025 — Omaha / Lincoln, NE
 
+{/* CK_SHORT_ANSWER:START */}
+
+:::note[The short answer]
+
+| Question | Answer |
+|---|---|
+| **Was SU-BTT at Omaha (KOMA) around 20 July 2025?** | **Yes.** FlightAware records it: landed at KOMA Omaha on Sun 20 Jul 2025, 11:37 am CDT (16:37 UTC), from LFPB Paris; took off from KOMA Omaha on Sun 20 Jul 2025, 5:06 pm CDT (22:06 UTC), to KLNK Lincoln. Free ADS-B receivers also heard it there, in the air 1.3 km from the field. |
+| **How long was SU-BTT there?** | **About 5 hours.** Landed Sun 20 Jul 2025, 11:37 am CDT (16:37 UTC); next took off Sun 20 Jul 2025, 5:06 pm CDT (22:06 UTC). |
+| **Was Erika Kirk there?** | **No dated source says so.** The claim rests on the overlap sheet's location cell. Her itinerary has never been published and her [flight logs are reported erased](/Planes/Erika-Flight-Logs-Erased). |
+| **Was a Kirk-party aircraft there?** | **None heard.** No Kirk-party aircraft was heard on the ground at KOMA that day. Checked: N102DZ, N582MM, N872RA, N40JD, N560TW, N888KG. |
+| **Does this show anyone was being followed?** | **No.** A flight record places an aircraft, never a person, and never a purpose. The counterargument is further down this page. |
+
+:::
+
+### FlightAware timeline, 17 Jul to 23 Jul 2025
+
+| # | Aircraft | From | Took off | To | Landed | FlightAware says |
+|---|---|---|---|---|---|---|
+| 1 | SU-BTT | a point near Cairo (30.15, 31.36) | Sat 19 Jul 2025, 9:05 am EEST (06:05 UTC) | LFPB Paris | Sat 19 Jul 2025, 12:14 pm CEST (10:14 UTC) | Arrived, seen by position only |
+| 2 | SU-BTT | LFPB Paris | Sun 20 Jul 2025, 9:28 am CEST (07:28 UTC) | KOMA Omaha | Sun 20 Jul 2025, 11:37 am CDT (16:37 UTC) | Arrived |
+| 3 | SU-BTT | KOMA Omaha | Sun 20 Jul 2025, 5:06 pm CDT (22:06 UTC) | KLNK Lincoln | Sun 20 Jul 2025, 5:20 pm CDT (22:20 UTC) | Arrived |
+
+*Every flight FlightAware holds for the aircraft from three days before the claimed date to three days after it, the overlap window this site uses. Local time is the time at that airport. Restated from FlightAware's data; the files are listed in the FlightAware section below.*
+
+{/* CK_SHORT_ANSWER:END */}
+
+
 **Primary ADS-B position data puts [SU-BTT](/Planes/SU-BTT/overview) at Eppley Airfield (KOMA), Omaha, NE, on 20 July 2025 — closest recovered fix 1.33 km from the field, 591 ft above it.** An arrival, a departure or a low pass; this trace holds no on-ground position at the claimed field.
 
 That corroborates the **aircraft** half of this row, and only the aircraft half. **A trace places an airframe, never a person.** This row is one of [25 of the 85 rows](/Planes/following/cuts/adsb-at-claimed-airport-25) that primary position data puts at the field the claim names.
@@ -64,6 +91,37 @@ This page records what somebody **claimed**. This section records what the recov
 *Verdicts come from `overlaps.csv`, derived from the recovered traces. See [Investigating Deleted Flights](/Planes/investigating_deleted_flights) §4.13 for how the 85 claims break down as a whole, and [the overlap window definition](/Planes/following/Overlap_Window_Definition) for what counts as an overlap at all.*
 
 {/* CK_ADSB_VERDICT:END */}
+
+{/* CK_AEROAPI_VERDICT:START */}
+
+## What FlightAware's flight record says
+
+The section above is what free, volunteer ADS-B receivers heard. This section is what **FlightAware**, a commercial flight-tracking service, recorded for the same aircraft over the same days. It is a different source with different gaps, checked on 14 September 2026.
+
+### FlightAware, SU-BTT: the aircraft was at the claimed airport
+
+| Field | Value |
+|---|---|
+| Claim ID | **OWENS-038** |
+| Aircraft | [SU-BTT](/Planes/SU-BTT/overview) |
+| Days checked | 2025-07-17 to 2025-07-24 UTC, end exclusive |
+| **FlightAware verdict** | **AT_FIELD** |
+| At the claimed airport | landed 2025-07-20 16:37 UTC (11:37 CDT) on the leg LFPB (Paris Le Bourget) [France] -&gt; KOMA (Eppley Airfield) [USA], day +0, FlightAware status Arrived \| took off 2025-07-20 22:06 UTC (17:06 CDT) on the leg KOMA (Eppley Airfield) [USA] -&gt; KLNK (Lincoln) [USA], day +0, FlightAware status Arrived |
+| Flights FlightAware holds in those days | 3 |
+| Before and after | last flight before the window landed at position 29.95,31.36 ~15 km from HE15 Helwan Air Base [Egypt] 2025-06-21 07:50 UTC; first flight after it took off from HEAZ (Almaza Air Base) [Egypt] 2025-08-16 06:07 UTC. Only the weeks that were pulled are known - a gap between them was never asked about. |
+
+**What that verdict means.** FlightAware records this aircraft landing at, or taking off from, the claimed airport inside the window. **That confirms the aircraft half of the claim, and only that half.**
+
+**Against the other checks on this row.** Agrees with ADS-B: both place the aircraft at the claimed field.
+
+**The data.** FlightAware does not allow its responses to be republished, so the raw responses are held privately. What is published is every fact in them, restated in our own layout and checked field by field against the raw response by `check_restated.py`:
+
+* [`2025-07-17_to_2025-07-24_flights_page1.yaml`](https://github.com/ACT3ai/charlie-kirk/blob/main/site/docs/Planes/following/apis/proprietary/data/flightaware_restated/SU-BTT/2025-07-17_to_2025-07-24_flights_page1.yaml)
+
+**This is about the aircraft only.** No flight record places any person aboard any aircraft, and FlightAware's does not either.
+
+{/* CK_AEROAPI_VERDICT:END */}
+
 
 
 **This page is one row of the overlap sheet that produced the "73 times" figure — reconstructed, sourced, and checked.** It is not a finding by this site. It records what the compilation claimed for this date, who it says was there, and what an independent audit of the flight archive found when it looked.

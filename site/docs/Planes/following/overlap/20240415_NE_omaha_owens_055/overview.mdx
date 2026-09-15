@@ -28,6 +28,31 @@ borderRadius:'4px', textDecoration:'none', fontSize:'0.9rem'}}>← Overlap dates
 
 # 15 April 2024 — Omaha, NE
 
+{/* CK_SHORT_ANSWER:START */}
+
+:::note[The short answer]
+
+| Question | Answer |
+|---|---|
+| **Was SU-BTT at Omaha (KOMA) around 15 April 2024?** | **No record of it there.** FlightAware holds 2 flights for it in the window (a point near Cairo (30.11, 31.36) to a point near Cairo (30.18, 31.34); a point near Cairo (30.03, 31.36) to HEAZ Almaza Air Base), and none touches KOMA. The free ADS-B archives did not hear it in the days checked. |
+| **Was Erika Kirk there?** | **No dated source says so.** The claim rests on the overlap sheet's location cell. Her itinerary has never been published and her [flight logs are reported erased](/Planes/Erika-Flight-Logs-Erased). |
+| **Was a Kirk-party aircraft there?** | **Not shown by any record.** The Kirk side of this row is a claimed location for a person, not an aircraft. FlightAware hides the tails most often linked to the Kirks (N102DZ and N582MM are on its block list). |
+| **Does this show anyone was being followed?** | **No.** A flight record places an aircraft, never a person, and never a purpose. The counterargument is further down this page. |
+
+:::
+
+### FlightAware timeline, 12 Apr to 18 Apr 2024
+
+| # | Aircraft | From | Took off | To | Landed | FlightAware says |
+|---|---|---|---|---|---|---|
+| 1 | SU-BTT | a point near Cairo (30.11, 31.36) | Tue 16 Apr 2024, 6:41 pm EET (16:41 UTC) | a point near Cairo (30.18, 31.34) | Tue 16 Apr 2024, 6:41 pm EET (16:41 UTC) | result unknown, seen by position only, no landing observed |
+| 2 | SU-BTT | a point near Cairo (30.03, 31.36) | Tue 16 Apr 2024, 9:21 pm EET (19:21 UTC) | HEAZ Almaza Air Base | Tue 16 Apr 2024, 9:21 pm EET (19:21 UTC) | result unknown, seen by position only, no landing observed |
+
+*Every flight FlightAware holds for the aircraft from three days before the claimed date to three days after it, the overlap window this site uses. Local time is the time at that airport. Restated from FlightAware's data; the files are listed in the FlightAware section below.*
+
+{/* CK_SHORT_ANSWER:END */}
+
+
 **No volunteer ADS-B receiver heard [SU-BTT](/Planes/SU-BTT/overview) on 15 April 2024 or the day either side, so this row is undecided — not refuted.** It is one of [37 rows](/Planes/following/cuts/adsb-not-heard-37) the free archives were asked about and could not decide. An absence is not a finding.
 
 The sheet claims **Erika Kirk** was in Omaha, NE on this date. Her position here is a spreadsheet cell, not a record: [her flight logs are reported erased](/Planes/Erika-Flight-Logs-Erased) and no dated itinerary for her has ever been published.
@@ -60,6 +85,36 @@ This page records what somebody **claimed**. This section records what the recov
 *Verdicts come from `overlaps.csv`, derived from the recovered traces. See [Investigating Deleted Flights](/Planes/investigating_deleted_flights) §4.13 for how the 85 claims break down as a whole, and [the overlap window definition](/Planes/following/Overlap_Window_Definition) for what counts as an overlap at all.*
 
 {/* CK_ADSB_VERDICT:END */}
+
+{/* CK_AEROAPI_VERDICT:START */}
+
+## What FlightAware's flight record says
+
+The section above is what free, volunteer ADS-B receivers heard. This section is what **FlightAware**, a commercial flight-tracking service, recorded for the same aircraft over the same days. It is a different source with different gaps, checked on 14 September 2026.
+
+### FlightAware, SU-BTT: the aircraft flew, but not to the claimed airport
+
+| Field | Value |
+|---|---|
+| Claim ID | **OWENS-055** |
+| Aircraft | [SU-BTT](/Planes/SU-BTT/overview) |
+| Days checked | 2024-04-12 to 2024-04-19 UTC, end exclusive |
+| **FlightAware verdict** | **FLEW_ELSEWHERE** |
+| Flights FlightAware holds in those days | 2 |
+| Before and after | last flight before the window landed at LFPB (Paris Le Bourget) [France] 2024-03-28 12:03 UTC; first flight after it took off from KPVU (Provo Muni) [USA] 2024-04-28 13:55 UTC. Only the weeks that were pulled are known - a gap between them was never asked about. |
+
+**What that verdict means.** FlightAware records flights for this aircraft inside the window, and none of them touches the claimed airport. That points away from the claim. FlightAware can miss a leg, so on its own it is not proof.
+
+**Against the other checks on this row.** FlightAware records flights for it in the window, and none touches the claimed field. That points away from the claim; FlightAware can miss a leg, so it is not proof on its own.
+
+**The data.** FlightAware does not allow its responses to be republished, so the raw responses are held privately. What is published is every fact in them, restated in our own layout and checked field by field against the raw response by `check_restated.py`:
+
+* [`2024-04-12_to_2024-04-19_flights_page1.yaml`](https://github.com/ACT3ai/charlie-kirk/blob/main/site/docs/Planes/following/apis/proprietary/data/flightaware_restated/SU-BTT/2024-04-12_to_2024-04-19_flights_page1.yaml)
+
+**This is about the aircraft only.** No flight record places any person aboard any aircraft, and FlightAware's does not either.
+
+{/* CK_AEROAPI_VERDICT:END */}
+
 
 
 **This page is one row of the overlap sheet that produced the "73 times" figure — reconstructed, sourced, and checked.** It is not a finding by this site. It records what the compilation claimed for this date, who it says was there, and what an independent audit of the flight archive found when it looked.

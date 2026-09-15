@@ -1,0 +1,10 @@
+# Restated from a FlightAware AeroAPI response, in our own layout.
+# The raw response is held privately and is not republished.
+about:
+  aircraft: "SU-BND"
+  question_asked: "Is SU-BND on FlightAware's display block list?"
+  source: "FlightAware AeroAPI v4 aircraft blocked-status lookup; the raw response is held privately and is not republished."
+  retrieved_utc: "2026-09-14T08:52:24.579Z"
+  vendor_http_status: 200
+on_display_block_list: false
+reading: "FlightAware does not list SU-BND as blocked, so it displays the aircraft and returns its flight history; this says nothing about who was aboard any flight."

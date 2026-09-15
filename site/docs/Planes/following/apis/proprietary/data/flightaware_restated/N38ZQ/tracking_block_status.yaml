@@ -1,0 +1,10 @@
+# Restated from a FlightAware AeroAPI response, in our own layout.
+# The raw response is held privately and is not republished.
+about:
+  aircraft: "N38ZQ"
+  question_asked: "Is N38ZQ on FlightAware's display block list?"
+  source: "FlightAware AeroAPI v4 aircraft blocked-status lookup; the raw response is held privately and is not republished."
+  retrieved_utc: "2026-09-15T02:54:44.819Z"
+  vendor_http_status: 200
+on_display_block_list: false
+reading: "FlightAware says N38ZQ is not blocked. N38ZQ is a registration the FAA has never issued, used here as a made-up control, so 'not blocked' is also the answer for an aircraft that does not exist; this lookup alone cannot tell a real aircraft from an invented one."

@@ -236,8 +236,9 @@ on the picture is furniture.
           sources: adsb-lol|airplanes-live
     kirk_plane:
       tail: N102DZ
+      label_lead: "Aircraft reported as the Kirk family's"
       type: Gulfstream V
-      operator: Private / Kirk party
+      operator: Private / reported as the Kirk family's aircraft
       segments:
         - from: {utc: 2025-09-10T21:30:43Z, source_zone: UTC}
           to:   {utc: 2025-09-10T22:10:12Z, source_zone: UTC}
@@ -257,8 +258,13 @@ on the picture is furniture.
   check us.
 
 ====================================================================
-STAGE 3B - THE TWO DECLARED VARIANTS
+STAGE 3B - THE THREE DECLARED VARIANTS
 ====================================================================
+
+WORDING RULE, Bryan 14 Sep 2026: every string on the picture is written for a
+consumer, not an analyst. "coming in to land, last heard at runway height, 1.56
+km out" - not an altimeter reading, not a basis keyword. Plain words, still
+never "arrived" or "departed" for ADS-B data.
 
 Added 2026-08-29, after a full run over the twelve field-years where Erika Kirk
 is claimed at one field twice in one calendar year produced this result:
@@ -277,16 +283,18 @@ VARIANT A - no Kirk-side aircraft exists
 
     kirk_plane:
       no_aircraft_in_record: true
-      claim: "Erika Kirk claimed present at this field on this date ..."
+      claim: "Erika Kirk claimed in Wilmington on this date · no Kirk-party aircraft heard on the ground here"
       queried_tails: N102DZ, N582MM, N872RA, N40JD, N560TW, N888KG
 
   The lower bar becomes a HOLLOW DASHED BAND across the whole axis, labelled
-  "NO AIRCRAFT IN THE RECORD", with the claim and the queried tails printed
-  inside it. Rules:
+  "{person} — no Kirk-party aircraft in the record", with the claim printed
+  inside it. The queried tails are printed in the CAPTION ("Kirk-side aircraft
+  checked: ..."), NOT inside the band - inside the band six tail numbers read as
+  six aircraft that were there (Bryan, 14 Sep 2026). Rules:
 
   * NAME EVERY TAIL THAT WAS ASKED FOR, not only the ones an archive held.
     "we queried one" and "we queried six and five came back empty" are different
-    facts and only the second one is true.
+    facts and only the second one is true. The caption is where they are named.
   * ONLY N102DZ AND N582MM MAY EVER BE THE LOWER BAR. planes.csv puts only
     N102DZ in "Private / Kirk party"; N582MM is the TPUSA-linked airframe.
     N888KG is "Private / Transponder anomaly" and lib/fleet.js says of it, in
@@ -318,6 +326,46 @@ VARIANT B - an airborne window near the field
     silently discarded it. The generator widens a too-short bar to a visible
     minimum and WARNS that it did. That warning is the honest outcome; dropping
     the evidence is not. The floor applies to PASSES only.
+
+VARIANT C - coming in to land / climbing out, and the NOT HEARD gap
+
+  Added 2026-09-14. SU-BTT almost never sends the ADS-B on-ground flag, so its
+  landings were being drawn under variant B as "NOT a landing" - six Erika
+  graphics, including the "only 7 minutes" OWENS-027 one Bryan flagged. FlightAware
+  records every one of those as an arrival.
+
+    segments:
+      - from: {utc: 2024-04-28T17:33:11Z, source_zone: UTC}
+        to:   {utc: 2024-04-28T17:41:20Z, source_zone: UTC}
+        basis: final_approach
+        last_alt_ft: 0
+        last_km: 1.56
+        next_heard_at_field: {utc: 2024-04-30T11:56:41Z, km: 0.6, alt_ft: null, on_ground: true, source: adsb-lol}
+
+  * final_approach  the day's trace ENDS on the window, descending, last heard
+                    within 3 km of the field and within 300 ft of its elevation.
+    climb_out       the mirror image: the trace STARTS on it, climbing. Carries
+                    first_alt_ft / first_km / previous_heard_at_field.
+  * Still HATCHED, still airborne, still never "arrived". The label reads
+    "coming in to land, last heard at runway height, 1.56 km out"; heights are
+    stated against airport.elevation_ft, which the yaml now carries.
+  * next_heard_at_field / previous_heard_at_field is the aircraft's next (or last)
+    position beyond the day, from the nearest day within 4 days that holds any
+    position, and ONLY if that position is within 3 km of the field and on the
+    ground or within 300 ft of it. The generator then draws the gap as a DASHED,
+    UNFILLED "not heard for 42 hr" bar and runs the axis to that position. No
+    position exists inside the gap: it is never solid, never a stay, and the
+    caption says "dashed = not heard".
+  * If the next position is anywhere else, there is no gap bar. The aircraft
+    went somewhere we cannot see.
+  * measure_windows.py records where each window starts and ends and the
+    position beyond the day; build_info_yaml.py judges the three bases. Measuring
+    and judging stay in separate scripts.
+
+THE KIRK-SIDE LABEL. When a Kirk-side airframe IS drawn, the bar is named by
+label_lead, never "Erika Kirk's aircraft". Erika Kirk named no tail; N102DZ is
+tied to the family by X posts and trackers, so it reads "Aircraft reported as the
+Kirk family's" (Bryan, 14 Sep 2026). N582MM reads "TPUSA-linked aircraft".
 
 WRITING THE YAML - use {YAML_BUILDER}, do not hand-type it
 
@@ -363,6 +411,11 @@ STAGE 4 - RENDER
       minimum, so its width is no longer proportional. Say so if the page leans
       on that contact.
     - "pushed apart to stay legible" is cosmetic only.
+    - "COMING IN TO LAND" means a window the trace ends on, low and close - what
+      an unheard landing looks like. Check it against a published flight record
+      (the AeroAPI restated data) before a page calls it anything stronger.
+    - "NOT HEARD for N hr" means a dashed gap bar was drawn to the next position
+      at this field. Say on the page that nothing was heard in between.
 
 * If the generator refuses a directory, DO NOT EDIT THE YAML TO GET PAST IT.
   It refuses missing times, unzoned times, and empty segment lists on purpose.

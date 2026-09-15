@@ -10,6 +10,7 @@ airport:
   state: UT
   state_name: Utah
   timezone: America/Denver
+  elevation_ft: 4497
   town_population: 115162
   town_population_source: US Census 2020
 following_plane:
@@ -32,8 +33,9 @@ following_plane:
       sources: adsb-lol|airplanes-live
 kirk_plane:
   tail: N102DZ
+  label_lead: "Aircraft reported as the Kirk family's"
   type: Gulfstream V
-  operator: Private / Kirk party
+  operator: Private / reported as the Kirk family's aircraft
   segments:
     - from: {utc: 2025-09-10T21:30:43Z, source_zone: UTC}
       to:   {utc: 2025-09-10T22:10:12Z, source_zone: UTC}
@@ -41,8 +43,8 @@ kirk_plane:
       ground_points: 267
       sources: adsb-lol|airplanes-live
 times_status: complete
-as_of: 2026-08-29
-source_line: "Source: recovered ADS-B traces, adsb.lol and airplanes.live. Ground contacts and near-field passes measured point by point. As of 2026-08-29."
+as_of: 2026-09-14
+source_line: "Source: recovered ADS-B traces, adsb.lol and airplanes.live. Ground contacts and near-field passes measured point by point. As of 2026-09-14."
 sources:
   - site/docs/Planes/following/overlaps.csv
   - site/docs/Planes/following/airports.csv

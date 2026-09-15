@@ -63,6 +63,37 @@ This page records what somebody **claimed**. This section records what the recov
 
 {/* CK_ADSB_VERDICT:END */}
 
+{/* CK_AEROAPI_VERDICT:START */}
+
+## What FlightAware's flight record says
+
+The section above is what free, volunteer ADS-B receivers heard. This section is what **FlightAware**, a commercial flight-tracking service, recorded for the same aircraft over the same days. It is a different source with different gaps, checked on 14 September 2026.
+
+### FlightAware, SU-BND: the aircraft was at the claimed airport
+
+| Field | Value |
+|---|---|
+| Claim ID | **OWENS-065** |
+| Aircraft | [SU-BND](/Planes/SU-BND/overview) |
+| Days checked | 2025-05-20 to 2025-05-27 UTC, end exclusive |
+| **FlightAware verdict** | **AT_FIELD** |
+| At the claimed airport | landed 2025-05-23 20:38 UTC (14:38 MDT) on the leg KMOT (Minot Intl) [USA] -&gt; KPVU (Provo Muni) [USA], day +0, FlightAware status Arrived |
+| Flights FlightAware holds in those days | 6 |
+| Before and after | last flight before the window landed at position 29.87,31.19 ~13 km from EG-0058 Sahra' Muhafadhat al-Jeezah Airfield [Egypt] 2025-04-20 09:52 UTC; first flight after it took off from KPVU (Provo Muni) [USA] 2025-09-13 18:57 UTC. Only the weeks that were pulled are known - a gap between them was never asked about. |
+
+**What that verdict means.** FlightAware records this aircraft landing at, or taking off from, the claimed airport inside the window. **That confirms the aircraft half of the claim, and only that half.**
+
+**Against the other checks on this row.** Agrees with ADS-B: both place the aircraft at the claimed field.
+
+**The data.** FlightAware does not allow its responses to be republished, so the raw responses are held privately. What is published is every fact in them, restated in our own layout and checked field by field against the raw response by `check_restated.py`:
+
+* [`2025-05-20_to_2025-05-27_flights_page1.yaml`](https://github.com/ACT3ai/charlie-kirk/blob/main/site/docs/Planes/following/apis/proprietary/data/flightaware_restated/SU-BND/2025-05-20_to_2025-05-27_flights_page1.yaml)
+
+**This is about the aircraft only.** No flight record places any person aboard any aircraft, and FlightAware's does not either.
+
+{/* CK_AEROAPI_VERDICT:END */}
+
+
 
 **This page is one row of the overlap sheet that produced the "73 times" figure — reconstructed, sourced, and checked.** It is not a finding by this site. It records what the compilation claimed for this date, who it says was there, and what an independent audit of the flight archive found when it looked.
 

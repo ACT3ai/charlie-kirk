@@ -28,6 +28,32 @@ borderRadius:'4px', textDecoration:'none', fontSize:'0.9rem'}}>← Overlap dates
 
 # 13 September 2025 — Provo, UT
 
+{/* CK_SHORT_ANSWER:START */}
+
+:::note[The short answer]
+
+| Question | Answer |
+|---|---|
+| **Was SU-BND at Provo (KPVU) around 13 September 2025?** | **Yes.** FlightAware records it: took off from KPVU Provo on Sat 13 Sep 2025, 12:57 pm MDT (18:57 UTC), to CYYR Goose Bay. Free ADS-B receivers also heard it there, in the air 0.6 km from the field. |
+| **Was Erika Kirk there?** | **No dated source says so.** The claim rests on the overlap sheet's location cell. Her itinerary has never been published and her [flight logs are reported erased](/Planes/Erika-Flight-Logs-Erased). |
+| **Was a Kirk-party aircraft there?** | **None heard.** No Kirk-party aircraft was heard on the ground at KPVU that day. Checked: N102DZ, N582MM, N872RA, N40JD, N560TW, N888KG. |
+| **Does this show anyone was being followed?** | **No.** A flight record places an aircraft, never a person, and never a purpose. The counterargument is further down this page. |
+
+:::
+
+### FlightAware timeline, 10 Sep to 16 Sep 2025
+
+| # | Aircraft | From | Took off | To | Landed | FlightAware says |
+|---|---|---|---|---|---|---|
+| 1 | SU-BND | KPVU Provo | Sat 13 Sep 2025, 12:57 pm MDT (18:57 UTC) | CYYR Goose Bay | Sat 13 Sep 2025, 9:07 pm ADT (00:07 UTC) | Arrived |
+| 2 | SU-BND | CYYR Goose Bay | Sat 13 Sep 2025, 9:57 pm ADT (00:57 UTC) | LFPB Paris | Sun 14 Sep 2025, 8:11 am CEST (06:11 UTC) | Arrived |
+| 3 | SU-BND | LFPB Paris | Mon 15 Sep 2025, 10:18 am CEST (08:18 UTC) | a point near Cairo (29.79, 31.03) | Mon 15 Sep 2025, 11:18 am EEST (08:18 UTC) | result unknown, seen by position only, no landing observed |
+
+*Every flight FlightAware holds for the aircraft from three days before the claimed date to three days after it, the overlap window this site uses. Local time is the time at that airport. Restated from FlightAware's data; the files are listed in the FlightAware section below.*
+
+{/* CK_SHORT_ANSWER:END */}
+
+
 **On 13 September 2025, three days after the assassination, primary ADS-B position data has [SU-BND](/Planes/SU-BND/overview) leaving Provo Municipal Airport (KPVU). The closest recovered fix is 0.62 km from the field at 3 ft above it — a departure — and the day's track ends over Canada.**
 
 That closes a **113-day continuous stay** by a foreign-registered jet at Provo, begun on 23 May 2025. The independent audit scored the row **accurate**, and the primary trace agrees. The trace holds no on-ground position at the field, which is ordinary — receiver coverage of a parked aircraft is thin.
@@ -66,6 +92,38 @@ This page records what somebody **claimed**. This section records what the recov
 *Verdicts come from `overlaps.csv`, derived from the recovered traces. See [Investigating Deleted Flights](/Planes/investigating_deleted_flights) §4.13 for how the 85 claims break down as a whole, and [the overlap window definition](/Planes/following/Overlap_Window_Definition) for what counts as an overlap at all.*
 
 {/* CK_ADSB_VERDICT:END */}
+
+{/* CK_AEROAPI_VERDICT:START */}
+
+## What FlightAware's flight record says
+
+The section above is what free, volunteer ADS-B receivers heard. This section is what **FlightAware**, a commercial flight-tracking service, recorded for the same aircraft over the same days. It is a different source with different gaps, checked on 14 September 2026.
+
+### FlightAware, SU-BND: the aircraft was at the claimed airport
+
+| Field | Value |
+|---|---|
+| Claim ID | **OWENS-042** |
+| Aircraft | [SU-BND](/Planes/SU-BND/overview) |
+| Days checked | 2025-09-10 to 2025-09-17 UTC, end exclusive |
+| **FlightAware verdict** | **AT_FIELD** |
+| At the claimed airport | took off 2025-09-13 18:57 UTC (12:57 MDT) on the leg KPVU (Provo Muni) [USA] -&gt; CYYR (CFB Goose Bay (Goose Bay)) [Canada], day +0, FlightAware status Arrived |
+| Flights FlightAware holds in those days | 3 |
+| Before and after | last flight before the window landed at KPVU (Provo Muni) [USA] 2025-05-23 20:38 UTC; no later flight pulled. Only the weeks that were pulled are known - a gap between them was never asked about. |
+
+**What that verdict means.** FlightAware records this aircraft landing at, or taking off from, the claimed airport inside the window. **That confirms the aircraft half of the claim, and only that half.**
+
+**Against the other checks on this row.** Agrees with ADS-B: both place the aircraft at the claimed field.
+
+**The data.** FlightAware does not allow its responses to be republished, so the raw responses are held privately. What is published is every fact in them, restated in our own layout and checked field by field against the raw response by `check_restated.py`:
+
+* [`2025-09-07_to_2025-09-14_flights_page1.yaml`](https://github.com/ACT3ai/charlie-kirk/blob/main/site/docs/Planes/following/apis/proprietary/data/flightaware_restated/SU-BND/2025-09-07_to_2025-09-14_flights_page1.yaml)
+* [`2025-09-14_to_2025-09-21_flights_page1.yaml`](https://github.com/ACT3ai/charlie-kirk/blob/main/site/docs/Planes/following/apis/proprietary/data/flightaware_restated/SU-BND/2025-09-14_to_2025-09-21_flights_page1.yaml)
+
+**This is about the aircraft only.** No flight record places any person aboard any aircraft, and FlightAware's does not either.
+
+{/* CK_AEROAPI_VERDICT:END */}
+
 
 
 **This page is one row of the overlap sheet that produced the "73 times" figure — reconstructed, sourced, and checked.** It is not a finding by this site. It records what the compilation claimed for this date, who it says was there, and what an independent audit of the flight archive found when it looked.

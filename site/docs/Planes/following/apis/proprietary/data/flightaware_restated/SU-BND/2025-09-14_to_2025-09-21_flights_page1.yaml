@@ -1,0 +1,77 @@
+# Restated from a FlightAware AeroAPI response, in our own layout.
+# The raw response is held privately and is not republished.
+about:
+  aircraft: "SU-BND"
+  question_asked: "Which flights does FlightAware hold for SU-BND between 14 and 21 September 2025 (UTC)?"
+  source: "FlightAware AeroAPI v4 flight history by registration; the raw response is held privately and is not republished."
+  retrieved_utc: "2026-09-14T09:47:11.734Z"
+  vendor_http_status: 200
+  window_utc_from: "2025-09-14T00:00:00Z"
+  window_utc_until_exclusive: "2025-09-21T00:00:00Z"
+  result_page: 1
+  total_pages_reported: 1
+  further_pages_held_by_vendor: false
+flights_recorded: 2
+reading: "FlightAware holds two flights for SU-BND in this window: Goose Bay to Paris Le Bourget on 14 September 2025, and a position-only track leaving Paris on 15 September toward a point near Cairo, which is a position fix rather than a recorded landing. Neither says who was aboard."
+flights:
+  - number: 1
+    flightaware_id: "SUBND-1757804830-sw-500p"
+    callsign: "SU-BND"
+    registration: "SU-BND"
+    flight_category: "general aviation"
+    outcome: "Arrived"
+    progress_percent: 100
+    flags: []
+    from:
+      icao: "CYYR"
+      iata: "YYR"
+      name: "CFB Goose Bay (Goose Bay)"
+      city: "Goose Bay"
+      timezone: "America/Goose_Bay"
+    to:
+      icao: "LFPB"
+      iata: "LBG"
+      name: "Paris Le Bourget"
+      city: "Paris"
+      timezone: "Europe/Paris"
+    takeoff:
+      scheduled: {utc: "2025-09-14T00:57:44Z", local: "2025-09-13 21:57:44-03:00"}
+      estimated: {utc: "2025-09-14T00:57:44Z", local: "2025-09-13 21:57:44-03:00"}
+      actual: {utc: "2025-09-14T00:57:44Z", local: "2025-09-13 21:57:44-03:00"}
+      runway: "26"
+    landing:
+      scheduled: {utc: "2025-09-14T06:11:21Z", local: "2025-09-14 08:11:21+02:00"}
+      estimated: {utc: "2025-09-14T06:11:21Z", local: "2025-09-14 08:11:21+02:00"}
+      actual: {utc: "2025-09-14T06:11:21Z", local: "2025-09-14 08:11:21+02:00"}
+      runway: "27"
+    departure_versus_schedule: "+0:00:00"
+    arrival_versus_schedule: "+0:00:00"
+    airborne_duration: "5:13:37"
+    flight_plan:
+      planned_time_enroute: "5:13:37"
+  - number: 2
+    flightaware_id: "SUBND-1757906077-sw-242p"
+    callsign: "SU-BND"
+    registration: "SU-BND"
+    flight_category: "general aviation"
+    outcome: "result unknown"
+    flags: ["position_only"]
+    from:
+      icao: "LFPB"
+      iata: "LBG"
+      name: "Paris Le Bourget"
+      city: "Paris"
+      timezone: "Europe/Paris"
+    to:
+      position_only_point: {lat: 29.79488, lon: 31.02592}
+      city: "Cairo"
+      timezone: "Africa/Cairo"
+    takeoff:
+      scheduled: {utc: "2025-09-15T08:18:24Z", local: "2025-09-15 10:18:24+02:00"}
+      estimated: {utc: "2025-09-15T08:18:42Z", local: "2025-09-15 10:18:42+02:00"}
+      actual: {utc: "2025-09-15T08:18:42Z", local: "2025-09-15 10:18:42+02:00"}
+      runway: "25"
+    landing:
+      actual: {utc: "2025-09-15T08:18:42Z", local: "2025-09-15 11:18:42+03:00"}
+    departure_versus_schedule: "+0:00:18"
+    airborne_duration: "0:00:00"
