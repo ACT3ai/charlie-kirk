@@ -241,7 +241,7 @@ now; re-check and re-date rather than assuming.
 | Vendor | Endpoint | History | Credential | Status |
 |---|---|---|---|---|
 | Flightradar24 | `fr24api.flightradar24.com/api/flight-summary/full` | deep | `FR24_API_TOKEN` | **not held** |
-| FlightAware AeroAPI v4 | `aeroapi.flightaware.com/aeroapi/history/flights/REG?ident_type=registration` — **max 7-day span per call**; run `/aircraft/REG/blocked` first. CORRECTED 2026-09-14: this row used to name `/aircraft/REG/flights`, which is not an AeroAPI v4 resource | **to 2011** | `AEROAPI_KEY` | **not held — highest value unopened door** |
+| FlightAware AeroAPI v4 | `aeroapi.flightaware.com/aeroapi/history/flights/REG?ident_type=registration` — **max 7-day span per call**; run `/aircraft/REG/blocked` first. CORRECTED 2026-09-14: this row used to name `/aircraft/REG/flights`, which is not an AeroAPI v4 resource | **to 2011** | `AEROAPI_KEY` | **held since 2026-09-14.** Raw responses go to the private `all` repo (`proprietary/code/private_store.js`) and are published only as restatements in `proprietary/data/flightaware_restated/`; the client's spend guard refuses past $90/month |
 | ADS-B Exchange | RapidAPI + `globe_history` | deep | `ADSBX_RAPIDAPI_KEY` | **403 to the public.** Several original screenshots came from here while it was open. |
 | RadarBox, Cirium, OAG, Spire | — | — | — | not investigated |
 
