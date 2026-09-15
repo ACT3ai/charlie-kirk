@@ -1,0 +1,665 @@
+# Restated from a FlightAware AeroAPI response, in our own layout.
+# The raw response is held privately and is not republished.
+about:
+  aircraft: N40JD
+  question_asked: Which flights does FlightAware hold for N40JD between 9 and 16 September 2025 (UTC)?
+  source: FlightAware AeroAPI v4 flight history by registration; the raw response is held privately and is not republished.
+  retrieved_utc: '2026-09-15T04:08:38.302Z'
+  vendor_http_status: 200
+  window_utc_from: '2025-09-09T00:00:00Z'
+  window_utc_until_exclusive: '2025-09-16T00:00:00Z'
+  result_page: 1
+  total_pages_reported: 1
+  further_pages_held_by_vendor: false
+flights_recorded: 12
+reading: FlightAware holds 12 flights for N40JD in this window, all of them listed here. On 10 September 2025 it flew Scottsdale to Provo, arriving 20:29 UTC (2:29 pm in Utah), and left Provo for Scottsdale
+  at 21:12 UTC; it did not arrive in Provo at 4:40 pm. Flight records show where an aircraft went, never who was aboard.
+flights:
+- number: 1
+  flightaware_id: N40JD-1757386849-sw-1102p
+  callsign: N40JD
+  registration: N40JD
+  aircraft_type_code: PRM1
+  flight_category: general aviation
+  outcome: Arrived
+  progress_percent: 100
+  flags: []
+  from:
+    icao: KSDL
+    iata: SCF
+    faa_lid: SDL
+    name: Scottsdale
+    city: Scottsdale
+    timezone: America/Phoenix
+  to:
+    icao: KLGB
+    iata: LGB
+    faa_lid: LGB
+    name: Daugherty Field
+    city: Long Beach
+    timezone: America/Los_Angeles
+  left_gate:
+    scheduled:
+      utc: '2025-09-09T15:45:00Z'
+      local: '2025-09-09 08:45:00-07:00'
+    estimated:
+      utc: '2025-09-09T15:45:00Z'
+      local: '2025-09-09 08:45:00-07:00'
+  takeoff:
+    scheduled:
+      utc: '2025-09-09T15:45:00Z'
+      local: '2025-09-09 08:45:00-07:00'
+    estimated:
+      utc: '2025-09-09T16:39:30Z'
+      local: '2025-09-09 09:39:30-07:00'
+    actual:
+      utc: '2025-09-09T16:39:30Z'
+      local: '2025-09-09 09:39:30-07:00'
+    runway: '21'
+  landing:
+    scheduled:
+      utc: '2025-09-09T16:44:00Z'
+      local: '2025-09-09 09:44:00-07:00'
+    estimated:
+      utc: '2025-09-09T17:44:12Z'
+      local: '2025-09-09 10:44:12-07:00'
+    actual:
+      utc: '2025-09-09T17:44:12Z'
+      local: '2025-09-09 10:44:12-07:00'
+    runway: '30'
+  departure_versus_schedule: +0:54:30
+  arrival_versus_schedule: '+1:00:12'
+  airborne_duration: '1:04:42'
+  flight_plan:
+    planned_time_enroute: 0:59:00
+    cruise_altitude_ft: 26000
+    cruise_speed_kt: 439
+    route_text: IZZZO8 HRRBR EMLLD DSNEE6
+    route_distance_mi: 343
+- number: 2
+  flightaware_id: N40JD-1757433834-sw-1440p
+  callsign: N40JD
+  registration: N40JD
+  aircraft_type_code: PRM1
+  flight_category: general aviation
+  outcome: Arrived
+  progress_percent: 100
+  flags: []
+  from:
+    icao: KLGB
+    iata: LGB
+    faa_lid: LGB
+    name: Daugherty Field
+    city: Long Beach
+    timezone: America/Los_Angeles
+  to:
+    icao: KSDL
+    iata: SCF
+    faa_lid: SDL
+    name: Scottsdale
+    city: Scottsdale
+    timezone: America/Phoenix
+  takeoff:
+    scheduled:
+      utc: '2025-09-09T18:10:00Z'
+      local: '2025-09-09 11:10:00-07:00'
+    estimated:
+      utc: '2025-09-09T18:30:16Z'
+      local: '2025-09-09 11:30:16-07:00'
+    actual:
+      utc: '2025-09-09T18:30:16Z'
+      local: '2025-09-09 11:30:16-07:00'
+    runway: '30'
+  landing:
+    scheduled:
+      utc: '2025-09-09T19:07:00Z'
+      local: '2025-09-09 12:07:00-07:00'
+    estimated:
+      utc: '2025-09-09T19:26:43Z'
+      local: '2025-09-09 12:26:43-07:00'
+    actual:
+      utc: '2025-09-09T19:26:43Z'
+      local: '2025-09-09 12:26:43-07:00'
+    runway: '21'
+  departure_versus_schedule: +0:20:16
+  arrival_versus_schedule: +0:19:43
+  airborne_duration: 0:56:27
+  flight_plan:
+    planned_time_enroute: 0:57:00
+    cruise_altitude_ft: 29000
+    cruise_speed_kt: 452
+    route_text: FRITR3 CNERY BLH ARLIN4
+    route_distance_mi: 435
+- number: 3
+  flightaware_id: N40JD-1757455248-sw-788p
+  callsign: N40JD
+  registration: N40JD
+  aircraft_type_code: PRM1
+  flight_category: general aviation
+  outcome: Arrived
+  progress_percent: 100
+  flags: []
+  from:
+    icao: KSDL
+    iata: SCF
+    faa_lid: SDL
+    name: Scottsdale
+    city: Scottsdale
+    timezone: America/Phoenix
+  to:
+    icao: KPVU
+    iata: PVU
+    faa_lid: PVU
+    name: Provo Muni
+    city: Provo
+    timezone: America/Denver
+  left_gate:
+    scheduled:
+      utc: '2025-09-10T17:30:00Z'
+      local: '2025-09-10 10:30:00-07:00'
+    estimated:
+      utc: '2025-09-10T15:00:00Z'
+      local: '2025-09-10 08:00:00-07:00'
+  takeoff:
+    scheduled:
+      utc: '2025-09-10T17:30:00Z'
+      local: '2025-09-10 10:30:00-07:00'
+    estimated:
+      utc: '2025-09-10T19:27:27Z'
+      local: '2025-09-10 12:27:27-07:00'
+    actual:
+      utc: '2025-09-10T19:27:27Z'
+      local: '2025-09-10 12:27:27-07:00'
+    runway: '21'
+  landing:
+    scheduled:
+      utc: '2025-09-10T18:38:00Z'
+      local: '2025-09-10 12:38:00-06:00'
+    estimated:
+      utc: '2025-09-10T20:29:46Z'
+      local: '2025-09-10 14:29:46-06:00'
+    actual:
+      utc: '2025-09-10T20:29:46Z'
+      local: '2025-09-10 14:29:46-06:00'
+    runway: '13'
+  departure_versus_schedule: '+1:57:27'
+  arrival_versus_schedule: '+1:51:46'
+  airborne_duration: '1:02:19'
+  flight_plan:
+    planned_time_enroute: '1:08:00'
+    cruise_altitude_ft: 36000
+    cruise_speed_kt: 443
+    route_text: SNOBL6 GCN BCE J11 NEEBO
+    route_distance_mi: 496
+- number: 4
+  flightaware_id: N40JD-1757473239-sw-1028p
+  callsign: N40JD
+  registration: N40JD
+  aircraft_type_code: PRM1
+  flight_category: general aviation
+  outcome: Arrived
+  progress_percent: 100
+  flags: []
+  from:
+    icao: KPVU
+    iata: PVU
+    faa_lid: PVU
+    name: Provo Muni
+    city: Provo
+    timezone: America/Denver
+  to:
+    icao: KSDL
+    iata: SCF
+    faa_lid: SDL
+    name: Scottsdale
+    city: Scottsdale
+    timezone: America/Phoenix
+  left_gate:
+    scheduled:
+      utc: '2025-09-10T22:30:00Z'
+      local: '2025-09-10 16:30:00-06:00'
+    estimated:
+      utc: '2025-09-10T22:30:00Z'
+      local: '2025-09-10 16:30:00-06:00'
+  takeoff:
+    scheduled:
+      utc: '2025-09-10T22:30:00Z'
+      local: '2025-09-10 16:30:00-06:00'
+    estimated:
+      utc: '2025-09-10T21:12:00Z'
+      local: '2025-09-10 15:12:00-06:00'
+    actual:
+      utc: '2025-09-10T21:12:00Z'
+      local: '2025-09-10 15:12:00-06:00'
+    runway: '13'
+  landing:
+    scheduled:
+      utc: '2025-09-10T23:40:00Z'
+      local: '2025-09-10 16:40:00-07:00'
+    estimated:
+      utc: '2025-09-10T22:27:09Z'
+      local: '2025-09-10 15:27:09-07:00'
+    actual:
+      utc: '2025-09-10T22:27:09Z'
+      local: '2025-09-10 15:27:09-07:00'
+    runway: '21'
+  departure_versus_schedule: '-1:18:00'
+  arrival_versus_schedule: '-1:12:51'
+  airborne_duration: '1:15:09'
+  flight_plan:
+    planned_time_enroute: '1:10:00'
+    cruise_altitude_ft: 35000
+    cruise_speed_kt: 445
+    route_text: DITTI1 DAHLI BCE
+    route_distance_mi: 484
+- number: 5
+  flightaware_id: N40JD-1757538510-adhoc-2303p
+  callsign: N40JD
+  registration: N40JD
+  aircraft_type_code: PRM1
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - cancelled
+  - position_only
+  from:
+    icao: KPVU
+    iata: PVU
+    faa_lid: PVU
+    name: Provo Muni
+    city: Provo
+    timezone: America/Denver
+  takeoff:
+    scheduled:
+      utc: '2025-09-10T21:18:27Z'
+      local: '2025-09-10 15:18:27-06:00'
+    estimated:
+      utc: '2025-09-10T21:12:34Z'
+      local: '2025-09-10 15:12:34-06:00'
+    runway: '13'
+  departure_versus_schedule: not meaningful (FlightAware gave -1757539108 seconds; no actual time recorded)
+- number: 6
+  flightaware_id: N40JD-1757552457-sw-590p
+  callsign: N40JD
+  registration: N40JD
+  aircraft_type_code: PRM1
+  flight_category: general aviation
+  outcome: Arrived
+  progress_percent: 100
+  flags: []
+  from:
+    icao: KSDL
+    iata: SCF
+    faa_lid: SDL
+    name: Scottsdale
+    city: Scottsdale
+    timezone: America/Phoenix
+  to:
+    icao: KONT
+    iata: ONT
+    faa_lid: ONT
+    name: Ontario Intl
+    city: Ontario
+    timezone: America/Los_Angeles
+  left_gate:
+    scheduled:
+      utc: '2025-09-11T20:45:00Z'
+      local: '2025-09-11 13:45:00-07:00'
+    estimated:
+      utc: '2025-09-11T20:45:00Z'
+      local: '2025-09-11 13:45:00-07:00'
+  takeoff:
+    scheduled:
+      utc: '2025-09-11T20:45:00Z'
+      local: '2025-09-11 13:45:00-07:00'
+    estimated:
+      utc: '2025-09-11T21:08:06Z'
+      local: '2025-09-11 14:08:06-07:00'
+    actual:
+      utc: '2025-09-11T21:08:06Z'
+      local: '2025-09-11 14:08:06-07:00'
+    runway: '21'
+  landing:
+    scheduled:
+      utc: '2025-09-11T21:42:00Z'
+      local: '2025-09-11 14:42:00-07:00'
+    estimated:
+      utc: '2025-09-11T22:03:04Z'
+      local: '2025-09-11 15:03:04-07:00'
+    actual:
+      utc: '2025-09-11T22:03:04Z'
+      local: '2025-09-11 15:03:04-07:00'
+    runway: 26L
+  departure_versus_schedule: +0:23:06
+  arrival_versus_schedule: +0:21:04
+  airborne_duration: 0:54:58
+  flight_plan:
+    planned_time_enroute: 0:57:00
+    cruise_altitude_ft: 30000
+    cruise_speed_kt: 452
+    route_text: IZZZO8 HRRBR PHRED SCBBY2
+    route_distance_mi: 354
+- number: 7
+  flightaware_id: N40JD-1757629656-sw-1082p
+  callsign: N40JD
+  registration: N40JD
+  aircraft_type_code: PRM1
+  flight_category: general aviation
+  outcome: Arrived
+  progress_percent: 100
+  flags: []
+  from:
+    icao: KONT
+    iata: ONT
+    faa_lid: ONT
+    name: Ontario Intl
+    city: Ontario
+    timezone: America/Los_Angeles
+  to:
+    icao: KSDL
+    iata: SCF
+    faa_lid: SDL
+    name: Scottsdale
+    city: Scottsdale
+    timezone: America/Phoenix
+  takeoff:
+    scheduled:
+      utc: '2025-09-11T22:44:00Z'
+      local: '2025-09-11 15:44:00-07:00'
+    estimated:
+      utc: '2025-09-11T22:52:09Z'
+      local: '2025-09-11 15:52:09-07:00'
+    actual:
+      utc: '2025-09-11T22:52:09Z'
+      local: '2025-09-11 15:52:09-07:00'
+    runway: 26L
+  landing:
+    scheduled:
+      utc: '2025-09-11T23:36:00Z'
+      local: '2025-09-11 16:36:00-07:00'
+    estimated:
+      utc: '2025-09-11T23:44:15Z'
+      local: '2025-09-11 16:44:15-07:00'
+    actual:
+      utc: '2025-09-11T23:44:15Z'
+      local: '2025-09-11 16:44:15-07:00'
+    runway: '21'
+  departure_versus_schedule: +0:08:09
+  arrival_versus_schedule: +0:08:15
+  airborne_duration: 0:52:06
+  flight_plan:
+    planned_time_enroute: 0:52:00
+    cruise_altitude_ft: 29000
+    cruise_speed_kt: 452
+    route_text: RAJEE4 MTBAL CNERY BLH ARLIN4
+    route_distance_mi: 392
+- number: 8
+  flightaware_id: N40JD-1757793643-sw-1510p
+  callsign: N40JD
+  registration: N40JD
+  aircraft_type_code: PRM1
+  flight_category: general aviation
+  outcome: result unknown
+  progress_percent: 100
+  flags:
+  - cancelled
+  from:
+    icao: KSDL
+    iata: SCF
+    faa_lid: SDL
+    name: Scottsdale
+    city: Scottsdale
+    timezone: America/Phoenix
+  to:
+    icao: KHND
+    faa_lid: HND
+    name: Henderson Exec
+    city: Las Vegas
+    timezone: America/Los_Angeles
+  left_gate:
+    scheduled:
+      utc: '2025-09-14T15:00:00Z'
+      local: '2025-09-14 08:00:00-07:00'
+    estimated:
+      utc: '2025-09-14T15:00:00Z'
+      local: '2025-09-14 08:00:00-07:00'
+  takeoff:
+    scheduled:
+      utc: '2025-09-14T15:00:00Z'
+      local: '2025-09-14 08:00:00-07:00'
+    estimated:
+      utc: '2025-09-14T15:24:00Z'
+      local: '2025-09-14 08:24:00-07:00'
+  landing:
+    scheduled:
+      utc: '2025-09-14T15:42:00Z'
+      local: '2025-09-14 08:42:00-07:00'
+  departure_versus_schedule: +0:00:00
+  arrival_versus_schedule: not meaningful (FlightAware gave -1757864521 seconds; no actual time recorded)
+  flight_plan:
+    planned_time_enroute: 0:42:00
+    cruise_altitude_ft: 22000
+    cruise_speed_kt: 407
+    route_text: MAYSA7 RRSTA GUILE NTNDO1
+    route_distance_mi: 276
+- number: 9
+  flightaware_id: N40JD-1757800838-sw-1505p
+  callsign: N40JD
+  registration: N40JD
+  aircraft_type_code: PRM1
+  flight_category: general aviation
+  outcome: result unknown
+  progress_percent: 100
+  flags:
+  - cancelled
+  from:
+    icao: KHND
+    faa_lid: HND
+    name: Henderson Exec
+    city: Las Vegas
+    timezone: America/Los_Angeles
+  to:
+    icao: KSDL
+    iata: SCF
+    faa_lid: SDL
+    name: Scottsdale
+    city: Scottsdale
+    timezone: America/Phoenix
+  left_gate:
+    scheduled:
+      utc: '2025-09-14T17:00:00Z'
+      local: '2025-09-14 10:00:00-07:00'
+    estimated:
+      utc: '2025-09-14T17:00:00Z'
+      local: '2025-09-14 10:00:00-07:00'
+  takeoff:
+    scheduled:
+      utc: '2025-09-14T17:00:00Z'
+      local: '2025-09-14 10:00:00-07:00'
+    estimated:
+      utc: '2025-09-14T17:36:00Z'
+      local: '2025-09-14 10:36:00-07:00'
+  landing:
+    scheduled:
+      utc: '2025-09-14T17:48:00Z'
+      local: '2025-09-14 10:48:00-07:00'
+  departure_versus_schedule: +0:00:00
+  arrival_versus_schedule: not meaningful (FlightAware gave -1757872081 seconds; no actual time recorded)
+  flight_plan:
+    planned_time_enroute: 0:48:00
+    cruise_altitude_ft: 31000
+    cruise_speed_kt: 432
+    route_text: SCAMR4 ZAYNE KIDDR DSERT2
+    route_distance_mi: 358
+- number: 10
+  flightaware_id: N40JD-1757818837-sw-782p
+  callsign: N40JD
+  registration: N40JD
+  aircraft_type_code: PRM1
+  flight_category: general aviation
+  outcome: Arrived
+  progress_percent: 100
+  flags: []
+  from:
+    icao: KSDL
+    iata: SCF
+    faa_lid: SDL
+    name: Scottsdale
+    city: Scottsdale
+    timezone: America/Phoenix
+  to:
+    icao: KSAN
+    iata: SAN
+    faa_lid: SAN
+    name: San Diego Intl
+    city: San Diego
+    timezone: America/Los_Angeles
+  left_gate:
+    scheduled:
+      utc: '2025-09-14T22:30:00Z'
+      local: '2025-09-14 15:30:00-07:00'
+    estimated:
+      utc: '2025-09-14T22:30:00Z'
+      local: '2025-09-14 15:30:00-07:00'
+  takeoff:
+    scheduled:
+      utc: '2025-09-14T22:30:00Z'
+      local: '2025-09-14 15:30:00-07:00'
+    estimated:
+      utc: '2025-09-14T22:52:33Z'
+      local: '2025-09-14 15:52:33-07:00'
+    actual:
+      utc: '2025-09-14T22:52:33Z'
+      local: '2025-09-14 15:52:33-07:00'
+    runway: '21'
+  landing:
+    scheduled:
+      utc: '2025-09-14T23:22:00Z'
+      local: '2025-09-14 16:22:00-07:00'
+    estimated:
+      utc: '2025-09-14T23:44:09Z'
+      local: '2025-09-14 16:44:09-07:00'
+    actual:
+      utc: '2025-09-14T23:44:09Z'
+      local: '2025-09-14 16:44:09-07:00'
+    runway: '27'
+  departure_versus_schedule: +0:22:33
+  arrival_versus_schedule: +0:22:09
+  airborne_duration: 0:51:36
+  flight_plan:
+    planned_time_enroute: 0:52:00
+    cruise_altitude_ft: 28000
+    cruise_speed_kt: 442
+    route_text: JUDTH7 MOHAK J2 HOGGZ LUCKI1
+    route_distance_mi: 330
+- number: 11
+  flightaware_id: N40JD-1757833227-sw-704p
+  callsign: N40JD
+  registration: N40JD
+  aircraft_type_code: PRM1
+  flight_category: general aviation
+  outcome: Arrived
+  progress_percent: 100
+  flags: []
+  from:
+    icao: KSAN
+    iata: SAN
+    faa_lid: SAN
+    name: San Diego Intl
+    city: San Diego
+    timezone: America/Los_Angeles
+  to:
+    icao: KPHX
+    iata: PHX
+    faa_lid: PHX
+    name: Phoenix Sky Harbor Intl
+    city: Phoenix
+    timezone: America/Phoenix
+  left_gate:
+    scheduled:
+      utc: '2025-09-15T01:00:00Z'
+      local: '2025-09-14 18:00:00-07:00'
+    estimated:
+      utc: '2025-09-15T00:28:00Z'
+      local: '2025-09-14 17:28:00-07:00'
+  takeoff:
+    scheduled:
+      utc: '2025-09-15T01:00:00Z'
+      local: '2025-09-14 18:00:00-07:00'
+    estimated:
+      utc: '2025-09-15T00:56:45Z'
+      local: '2025-09-14 17:56:45-07:00'
+    actual:
+      utc: '2025-09-15T00:56:45Z'
+      local: '2025-09-14 17:56:45-07:00'
+    runway: '27'
+  landing:
+    scheduled:
+      utc: '2025-09-15T01:51:00Z'
+      local: '2025-09-14 18:51:00-07:00'
+    estimated:
+      utc: '2025-09-15T01:50:26Z'
+      local: '2025-09-14 18:50:26-07:00'
+    actual:
+      utc: '2025-09-15T01:50:26Z'
+      local: '2025-09-14 18:50:26-07:00'
+    runway: 25L
+  departure_versus_schedule: -0:03:15
+  arrival_versus_schedule: -0:00:34
+  airborne_duration: 0:53:41
+  flight_plan:
+    planned_time_enroute: 0:51:00
+    cruise_altitude_ft: 29000
+    cruise_speed_kt: 452
+    route_text: ZZOOO4 HOGGZ HYDRR1
+    route_distance_mi: 395
+- number: 12
+  flightaware_id: N40JD-1757902399-adhoc-1110p
+  callsign: N40JD
+  registration: N40JD
+  aircraft_type_code: PRM1
+  flight_category: general aviation
+  outcome: Arrived
+  progress_percent: 100
+  flags: []
+  from:
+    icao: KPHX
+    iata: PHX
+    faa_lid: PHX
+    name: Phoenix Sky Harbor Intl
+    city: Phoenix
+    timezone: America/Phoenix
+  to:
+    icao: KSDL
+    iata: SCF
+    faa_lid: SDL
+    name: Scottsdale
+    city: Scottsdale
+    timezone: America/Phoenix
+  takeoff:
+    scheduled:
+      utc: '2025-09-15T02:26:14Z'
+      local: '2025-09-14 19:26:14-07:00'
+    estimated:
+      utc: '2025-09-15T02:22:44Z'
+      local: '2025-09-14 19:22:44-07:00'
+    actual:
+      utc: '2025-09-15T02:22:44Z'
+      local: '2025-09-14 19:22:44-07:00'
+    runway: 25R
+  landing:
+    scheduled:
+      utc: '2025-09-15T02:36:20Z'
+      local: '2025-09-14 19:36:20-07:00'
+    estimated:
+      utc: '2025-09-15T02:32:50Z'
+      local: '2025-09-14 19:32:50-07:00'
+    actual:
+      utc: '2025-09-15T02:32:50Z'
+      local: '2025-09-14 19:32:50-07:00'
+    runway: '21'
+  departure_versus_schedule: -0:03:30
+  arrival_versus_schedule: -0:03:30
+  airborne_duration: 0:10:06
+  flight_plan:
+    planned_time_enroute: 0:10:06
