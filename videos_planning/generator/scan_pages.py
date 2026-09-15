@@ -50,7 +50,8 @@ for v, r in inv.items():
 
 VIDEO_EXT_RE = r'(?:mp4|mov|m4v|mkv|avi|webm)'
 PATTERNS = [
-    ('ipfs',  re.compile(r'https?://(?:ipfs\.io|dweb\.link|gateway\.pinata\.cloud)'
+    ('ipfs',  re.compile(r'https?://(?:ipfs\.io|dweb\.link|gateway\.pinata\.cloud|ipfs\.orbitor\.dev'
+                         r'|ipfs\.filebase\.io|gw\.ipfs-lens\.dev)'
                          r'/ipfs/([A-Za-z0-9]{40,})')),
     ('ipfs',  re.compile(r'https?://([A-Za-z0-9]{50,})\.ipfs\.(?:dweb\.link|w3s\.link)')),
     ('ipfs',  re.compile(r'ipfs://([A-Za-z0-9]{40,})')),

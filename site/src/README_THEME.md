@@ -19,9 +19,25 @@ new page to miss it.
 
 Supporting files, which live in the normal place:
 
-    internals/src/components/CitizenNotice/   the rail's markup and copy
+    internals/src/components/CitizenNotice/   the rail's markup (no copy)
+    internals/src/data/right_bar.json         the rail's wording, GENERATED
     internals/src/css/custom.css              CK_CITIZEN_NOTICE block: width,
                                               the reserved gutter, mobile shape
+
+## Changing what the rail says
+
+The wording has one source of truth, outside this repo:
+
+    ~/BGit/all/politics/charlie_kirk/ck/docusaurus/right_bar.txt
+
+Edit that file, then from the repo root run
+
+    python3 tools/sync_right_bar.py
+
+which rewrites `internals/src/data/right_bar.json`. Commit the JSON — the Pages
+build cannot see the external file. The script only reads right_bar.txt; it never
+writes to it. The first paragraph becomes the bold lead, the paragraph before the
+email becomes the call to action, and the email becomes a `mailto:` link.
 
 ## The rail must never interfere with the table of contents
 

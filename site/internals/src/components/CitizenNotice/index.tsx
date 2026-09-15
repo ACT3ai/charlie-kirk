@@ -1,75 +1,67 @@
 /**
- * CitizenNotice — the narrow right-hand notice rail.
+ * CitizenNotice — the right-hand notice rail (the "right bar").
  *
  * Rendered once, as site chrome, by the `Root` swizzle at site/src/theme/Root.tsx.
  * It therefore appears on every page of the site. It is NOT page content, it is
  * NOT tied to any page list, and it does NOT replace, hide, move, or compete
  * with the table of contents — the TOC keeps its own column, untouched.
  *
- * WHAT IT SAYS, AND WHY IT IS WORTH SAYING
- * ----------------------------------------
- * Nearly everything on this site is an allegation raised by citizen
- * investigators working in public on X. It is not a finding of fact, and it is
- * not this site claiming that any named person did anything wrong or illegal.
- * Those investigators are working around the fact that almost all of the
- * government's information is withheld from them. Readers deserve to be told
- * that on the page itself rather than in a policy page nobody opens, and they
- * deserve a way to report anything that is wrong.
+ * THE WORDING DOES NOT LIVE HERE
+ * ------------------------------
+ * Every word on the rail comes from internals/src/data/right_bar.json, which is
+ * generated from the master text file
  *
- * IT IS ALSO THE CORRECTIONS DESK. The rail is the only place a reader is told,
- * on the page they are actually reading, that a name or a fact here can be
- * wrong and that writing in fixes it. That channel is not decorative — the
- * hat-and-plaid identification on the September 10 detail was corrected from
- * Chester Barnes to Derek "Pepper" Williams because somebody wrote in. So the
- * rail is split into two halves by a rule: the DISCLAIMER above it, the ACTION
- * below it. A reader who only reads the bottom half still knows what to do.
+ *     ~/BGit/all/politics/charlie_kirk/ck/docusaurus/right_bar.txt
  *
- * WORD COUNT IS A CONSTRAINT, NOT A STYLE CHOICE. The rail is hard-capped at
- * 100px wide, which is roughly 16 characters a line. Every word added here
- * costs about one more line of height. Keep it tight — the copy below is
- * deliberately shorter than the disclaimer it replaced so that adding the
- * corrections half did not make the rail taller.
+ * by `python3 tools/sync_right_bar.py` (run from the repo root). To change the
+ * rail, edit right_bar.txt and re-run the script. Do not type copy into this
+ * component and do not hand-edit the JSON — the next sync overwrites it.
+ *
+ * THE SHAPE
+ * ---------
+ * Two halves split by a rule: the notice above (lead + body), the corrections
+ * desk below (the call to action + the email). A reader who only reads the
+ * bottom half still knows what to do. The email is always a mailto: link.
+ *
+ * The full right_bar.txt wording is taller than a laptop screen at 100px wide,
+ * so on desktop the corrections half is pinned to the bottom of the rail and
+ * only the notice half above it scrolls. The email is never below the fold.
  *
  * Width and placement live in the CK_CITIZEN_NOTICE block of
  * internals/src/css/custom.css, not here.
  */
 import React from 'react';
 
-const CONTACT = 'hollandscitizen@gmail.com';
+import rightBar from '@site/internals/src/data/right_bar.json';
+
+const MAILTO_SUBJECT = 'Correction to whoassassinatedcharliekirk.com';
 
 export default function CitizenNotice(): JSX.Element {
+  const {lead, body, action, email_label: emailLabel, email} = rightBar;
+  const mailto = `mailto:${email}?subject=${encodeURIComponent(MAILTO_SUBJECT)}`;
+
   return (
     <aside
       className="ck-rail"
       role="complementary"
       aria-label="About the information on this site"
     >
-      <p className="ck-rail__lead">Allegations, not findings.</p>
+      <div className="ck-rail__notice">
+        <p className="ck-rail__lead">{lead}</p>
 
-      <p>
-        Nearly all of this is a claim raised by citizen investigators
-        on&nbsp;X.
-      </p>
-
-      <p>We are not saying any person did anything wrong or illegal.</p>
-
-      <p>
-        They work while denied nearly all the information the government holds.
-      </p>
-
-      <p>We aim to be accurate. AI checks it too.</p>
+        {body.map((paragraph) => (
+          <p key={paragraph}>{paragraph}</p>
+        ))}
+      </div>
 
       <div className="ck-rail__action">
-        <p className="ck-rail__cta">Wrong name? Wrong fact?</p>
+        <p className="ck-rail__cta">{action}</p>
 
-        <p>Tell us. We correct on the record.</p>
+        {emailLabel && <p className="ck-rail__email-label">{emailLabel}</p>}
 
         <p className="ck-rail__email">
-          <a
-            href={`mailto:${CONTACT}?subject=Correction%20to%20whoassassinatedcharliekirk.com`}
-            aria-label={`Email a correction to ${CONTACT}`}
-          >
-            {CONTACT}
+          <a href={mailto} aria-label={`Email ${email}`}>
+            {email}
           </a>
         </p>
       </div>

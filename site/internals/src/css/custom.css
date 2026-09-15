@@ -1068,6 +1068,10 @@ a.ck-media-shot:focus {
    The rail itself is position:fixed inside that gutter, so no amount of page
    content can push it, and it cannot overlap anything.
 
+   WORDING is not in CSS or in the component: it is generated from
+   ~/BGit/all/politics/charlie_kirk/ck/docusaurus/right_bar.txt into
+   internals/src/data/right_bar.json by tools/sync_right_bar.py.
+
    WIDTH IS A HARD CAP: 100px, never wider. That is --ck-rail-width and it is
    the only number to change. It is stated as an absolute pixel value, not a
    percentage, precisely so it cannot grow with the viewport. At 100px a line
@@ -1097,8 +1101,23 @@ a.ck-media-shot:focus {
     width: var(--ck-rail-width);
     max-width: var(--ck-rail-width);
     max-height: calc(100vh - var(--ifm-navbar-height, 60px) - 2rem);
-    overflow-y: auto;
     z-index: 1;
+    /* The right_bar.txt wording is taller than a laptop screen at 100px. Pin
+       the corrections half (call to action + email) to the bottom and let only
+       the notice half scroll, so the email link is always on screen. */
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  .ck-rail__notice {
+    min-height: 0;
+    overflow-y: auto;
+    padding-right: 2px;
+  }
+
+  .ck-rail__action {
+    flex-shrink: 0;
   }
 
   /* The back-to-top button is fixed at right:1.3rem and would land on top of
@@ -1127,7 +1146,8 @@ a.ck-media-shot:focus {
   margin: 0 0 0.55rem;
 }
 
-.ck-rail p:last-child {
+.ck-rail p:last-child,
+.ck-rail__notice p:last-child {
   margin-bottom: 0;
 }
 
@@ -1155,6 +1175,13 @@ a.ck-media-shot:focus {
 
 .ck-rail__email {
   margin-top: 0.4rem;
+}
+
+/* "Email me at:" — the label from right_bar.txt, sitting directly on the link */
+.ck-rail__email-label {
+  margin-bottom: 0 !important;
+  font-weight: 600;
+  color: var(--ifm-color-emphasis-900);
 }
 
 .ck-rail__email a {

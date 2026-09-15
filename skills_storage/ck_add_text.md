@@ -1166,7 +1166,7 @@ the post has no video if yt-dlp itself finds nothing to download.
     gateway check:
     ```bash
     curl -s -o /dev/null -w "http=%{http_code} type=%{content_type} t=%{time_total}\n" \
-      --max-time 60 -r 0-1000 "https://ipfs.io/ipfs/{CID}"
+      --max-time 60 -r 0-1000 "https://ipfs.orbitor.dev/ipfs/{CID}"
     ```
     Set VIDEO_PUBLIC_OK = true ONLY if http is 200 or 206 AND content_type is a
     video type (video/mp4, application/octet-stream is acceptable for mp4 bytes).
@@ -1174,13 +1174,14 @@ the post has no video if yt-dlp itself finds nothing to download.
     FAILURE, not a success, even with http 200.
 
     If the first attempt fails, wait 20 seconds and retry once (DHT propagation of
-    a fresh CID is not instant). Also test the dweb.link fallback:
+    a fresh CID is not instant). Also test the second gateway in
+    videos_planning/generator/ipfs_gateways.py:
     ```bash
-    curl -sL -o /dev/null -w "http=%{http_code} type=%{content_type}\n" \
-      --max-time 60 -r 0-1000 "https://dweb.link/ipfs/{CID}"
+    curl -s -o /dev/null -w "http=%{http_code} type=%{content_type}\n" \
+      --max-time 60 -r 0-1000 "https://gateway.pinata.cloud/ipfs/{CID}"
     ```
-    dweb.link redirects path requests to its subdomain form, so use -L there; a 301
-    without -L is not a failure.
+    Do not test ipfs.io or dweb.link — both were retired in September 2026 and
+    return 429/403 for every CID, so a failure there says nothing about ours.
 
   - Record in {RUN_LOG}: the CID, both gateway results verbatim, REMOTE_PIN, and
     the final VIDEO_PUBLIC_OK value.
@@ -1198,13 +1199,13 @@ the post has no video if yt-dlp itself finds nothing to download.
   ```yaml
   - filename: {filename}
     ipfs_cid: {CID}
-    ipfs_gateway_url: https://ipfs.io/ipfs/{CID}
+    ipfs_gateway_url: https://ipfs.orbitor.dev/ipfs/{CID}
     source_url: {source_url}
     source_author: '@{username}'
     description: '{brief description from content}'
     added_date: '{today YYYY-MM-DD}'
     pinned: true
-    public_verified: {true|false}   # from 6b2 — was it fetchable via ipfs.io?
+    public_verified: {true|false}   # from 6b2 — was it fetchable via a public gateway?
     remote_pin: '{service name | none}'
   ```
 
@@ -1339,7 +1340,7 @@ the post has no video if yt-dlp itself finds nothing to download.
   File: {ROOT_DIR}/videos/{filename}
   Size: {file size}
   IPFS CID: {CID}
-  Gateway: https://ipfs.io/ipfs/{CID}
+  Gateway: https://ipfs.orbitor.dev/ipfs/{CID}
   Publicly retrievable: {YES (http {code}, {type}) | NO — {reason}}
   Remote pin: {service + result | NONE CONFIGURED — served only from this machine}
   IPFS commands added to: IPFS/ipfs.txt
@@ -1448,10 +1449,10 @@ NOTE: If Step 2 already downloaded images for OCR from temp paths, those were te
   ```bash
   ipfs routing provide {CID}
   curl -s -o /dev/null -w "%{http_code} %{content_type} %{size_download}\n" \
-    --max-time 60 "https://ipfs.io/ipfs/{CID}"
+    --max-time 60 "https://ipfs.orbitor.dev/ipfs/{CID}"
   ```
   Expect 200, an image/* content type, and a size matching the local file. If it
-  is not 200, retry once against https://dweb.link/ipfs/{CID}. Record both results
+  is not 200, retry once against https://gateway.pinata.cloud/ipfs/{CID}. Record both results
   verbatim in {RUN_LOG}. Set IMAGE_PUBLIC_OK accordingly and set public_verified
   in the manifest row from it — never write `public_verified: true` unhecked.
 
@@ -1467,7 +1468,7 @@ NOTE: If Step 2 already downloaded images for OCR from temp paths, those were te
   ```yaml
   - filename: {filename}
     ipfs_cid: {CID}
-    ipfs_gateway_url: https://ipfs.io/ipfs/{CID}
+    ipfs_gateway_url: https://ipfs.orbitor.dev/ipfs/{CID}
     source_url: {source_url}
     source_author: '@{username}'
     description: '{brief description}'
@@ -1477,7 +1478,7 @@ NOTE: If Step 2 already downloaded images for OCR from temp paths, those were te
     ocr_text_extracted: {true/false}
     added_date: '{today YYYY-MM-DD}'
     pinned: true
-    public_verified: {true|false}   # from 6B-b2 — was it fetchable via ipfs.io?
+    public_verified: {true|false}   # from 6B-b2 — was it fetchable via a public gateway?
     remote_pin: '{service name | none}'
   ```
 
@@ -1919,10 +1920,11 @@ This step uses the Level 2 / Level 3 decisions made in Step 3.
 
   These pages go PUBLIC — never a localhost / 127.0.0.1 URL (a visitor's browser would
   try a gateway on their own machine and fail).
-  For VIDEO use https://ipfs.io/ipfs/{CID} as the primary src and add
-  https://dweb.link/ipfs/{CID} as a second <source> fallback. For IMAGES the src is
+  For VIDEO emit one <source> per gateway in videos_planning/generator/ipfs_gateways.py
+  (orbitor, pinata, filebase, ipfs-lens, in that order) as shown in 9e. dweb.link,
+  ipfs.io and w3s.link were retired in September 2026 — never emit them. For IMAGES the src is
   /img/evidence/{sha256}.jpg as shown above; note the
-  dweb.link fallback URL in a comment. The local daemon is only for pinning, not embeds.
+  CID in data-cid. The local daemon is only for pinning, not embeds.
 
 * 9e. VIDEO EMBEDDING — use half-width, floated right, with text flowing around it.
 
@@ -1943,9 +1945,9 @@ This step uses the Level 2 / Level 3 decisions made in Step 3.
     an MDX comment directly above it so the unverified state is visible in the
     source, plus a caption line pointing at the source post as the working fallback:
     ```
-    {/* CK_VIDEO_UNVERIFIED {CID} — not retrievable via ipfs.io as of {date}.
+    {/* CK_VIDEO_UNVERIFIED {CID} — not retrievable via a public gateway as of {date}.
         Remote-pin this CID, then re-verify:
-        curl -sI -r 0-100 https://ipfs.io/ipfs/{CID} */}
+        curl -sI -r 0-100 https://ipfs.orbitor.dev/ipfs/{CID} */}
     ```
     Caption gains: `If the player does not load, watch the original on <a href="{post_url}">X</a>.`
     Record it in {RUN_LOG} under "## Warnings and unfinished business".
@@ -1967,8 +1969,10 @@ This step uses the Level 2 / Level 3 decisions made in Step 3.
   ```
   <div style={{float: 'right', width: '48%', maxWidth: '480px', marginLeft: '1.5rem', marginBottom: '1rem'}}>
     <video controls style={{width: '100%', height: 'auto', display: 'block', borderRadius: '4px'}}>
-      <source src="https://ipfs.io/ipfs/{CID}" type="video/mp4" />
-      <source src="https://dweb.link/ipfs/{CID}" type="video/mp4" />
+      <source src="https://ipfs.orbitor.dev/ipfs/{CID}" type="video/mp4" />
+      <source src="https://gateway.pinata.cloud/ipfs/{CID}" type="video/mp4" />
+      <source src="https://ipfs.filebase.io/ipfs/{CID}" type="video/mp4" />
+      <source src="https://gw.ipfs-lens.dev/ipfs/{CID}" type="video/mp4" />
       Your browser does not support the video tag.
     </video>
     <p style={{fontSize: '0.85rem', color: '#666', marginTop: '0.5rem'}}>
@@ -1977,6 +1981,7 @@ This step uses the Level 2 / Level 3 decisions made in Step 3.
   </div>
   ```
   NEVER use cloudflare-ipfs.com — that gateway was shut down in 2024.
+  NEVER use ipfs.io, dweb.link or w3s.link — retired September 2026 (429 / redirect to dweb.link).
   NEVER use `width="100%"` as an HTML attribute — use style={{width: '100%'}} only.
 
   If the video or images came from a quoted/linked status (QUOTED_ORIGIN is set), credit
@@ -2088,7 +2093,7 @@ player and the run still says "complete".
   "fixing" it):
 
     - VIDEO  → embedded as an IPFS gateway URL. Grep for the **CID**.
-        <source src="https://ipfs.io/ipfs/{CID}" type="video/mp4" />
+        <source src="https://ipfs.orbitor.dev/ipfs/{CID}" type="video/mp4" />   (one per gateway)
     - IMAGE  → embedded as a locally-served evidence file. Grep for the **sha256**.
         <img src="/img/evidence/{sha256}.jpg" data-cid="{CID}" />
       The CID may appear in `data-cid`, but the src that a reader's browser actually
@@ -2144,7 +2149,7 @@ player and the run still says "complete".
   a pin can be lost between steps and because this is the check whose result the reader
   actually experiences:
   ```bash
-  curl -sI -m 45 "https://ipfs.io/ipfs/{CID}" | head -5
+  curl -sI -m 45 -r 0-100 "https://ipfs.orbitor.dev/ipfs/{CID}" | head -5
   ```
   PASS requires **HTTP 200 AND a content-type of video/* or image/*.**
   A `content-type: text/html` is a gateway error page, not the file — that is a FAIL

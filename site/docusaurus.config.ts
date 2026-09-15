@@ -18,6 +18,8 @@ const config: Config = {
   tagline: siteTagline,
   favicon: "img/favicon.ico",
   staticDirectories: ["internals/static"],
+  // Skips an IPFS video to its next gateway when one stalls instead of erroring.
+  clientModules: ["./internals/src/clientModules/ipfsVideoFallback.js"],
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {

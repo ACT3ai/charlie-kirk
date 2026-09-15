@@ -396,11 +396,19 @@ excludes *.mp4, *.mp3, *.mkv, *.avi, *.mov, *.wav, *.webm), and GitHub Pages is
 not a video host. A Level 5 page plays its video from a PUBLIC IPFS GATEWAY,
 addressed by the entry's cid:
 
-  primary   https://ipfs.io/ipfs/{cid}
-  fallback  https://{cid-as-base32-v1}.ipfs.dweb.link/
+  sources   https://ipfs.orbitor.dev/ipfs/{cid}
+            https://gateway.pinata.cloud/ipfs/{cid}
+            https://ipfs.filebase.io/ipfs/{cid}
+            https://gw.ipfs-lens.dev/ipfs/{cid}
 
-Get the v1 base32 form for the fallback at generation time with
-`ipfs cid base32 <cid>`; do not store it in the YAML, which keeps CIDv0.
+One <source> per gateway, in this order, from the single list in
+videos_planning/generator/ipfs_gateways.py. dweb.link, ipfs.io and w3s.link were
+retired in September 2026 (429 "switching to a service worker gateway only";
+w3s.link just redirects to dweb.link) and must never be emitted again. After
+changing the list, run videos_planning/generator/rewrite_video_gateways.py --write.
+
+{cid} is the v1 base32 form, computed at generation time by ipfs_gateways.base32();
+do not store it in the YAML, which keeps CIDv0.
 
 Rules that follow:
 

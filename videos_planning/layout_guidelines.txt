@@ -87,8 +87,9 @@ THE POINTS
   the site's own static directory.
 
 * THE VIDEO IS NEVER SERVED FROM THE REPO. src is a public IPFS gateway URL
-  built from the entry's cid: https://ipfs.io/ipfs/{cid} primary, with the
-  dweb.link subdomain form as fallback. Video bytes are never copied into
+  built from the entry's cid: one <source> per gateway in
+  videos_planning/generator/ipfs_gateways.py (dweb.link, ipfs.io and w3s.link
+  were retired September 2026 - never emit them). Video bytes are never copied into
   {SITE_DIR}/static — they are gitignored on purpose and GitHub Pages is not a
   video host.
 
