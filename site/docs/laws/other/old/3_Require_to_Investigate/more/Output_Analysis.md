@@ -179,7 +179,7 @@ $10M budget and 20-agent team requires appropriations.
 
 ## Interesting
 
-* Later additions include [an item on a detail member's foreign security background](/laws/other/analysis/Fixed/Any_more_to_Add) and witness suppression.
+* Later additions include [an item on the contracted security detail's records](/laws/other/analysis/Fixed/Any_more_to_Add) and witness suppression.
 * Booking followed [a 250-mile overnight drive ending near 4:00 AM](/Locations/Utah_County_Jail), useful for testing Miranda timing.
 * Kash Patel reportedly said "I'll see you in Valhalla" — and [a real Valhalla house sits nearby](/Locations/Valhalla).
 

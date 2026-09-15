@@ -22,12 +22,13 @@
  *   * `Root` wraps the entire application, including the 404 page. There is no
  *     route that escapes it.
  *
- * THE RAIL NEVER TOUCHES THE TABLE OF CONTENTS
- * --------------------------------------------
+ * THE RAIL IS THE ONLY RIGHT-HAND FURNITURE
+ * -----------------------------------------
  * The rail lives OUTSIDE the content column, in a gutter reserved on the right
- * edge of the page. The table of contents is untouched: every page that had a
- * right-hand TOC still has it, in its normal place and at its normal width. The
- * two are unrelated pieces of furniture and neither can displace the other.
+ * edge of the page. The Docusaurus "On this page" table of contents is removed
+ * site-wide — see src/theme/DocItem/TOC/ (null swizzles), the
+ * `markdown.parseFrontMatter` hook in docusaurus.config.ts, and the CK_NO_TOC
+ * block in custom.css. Nothing else scrolls down the right side of a page.
  *
  * The gutter is reserved in CSS (`--ck-rail-width`, in the CK_CITIZEN_NOTICE
  * block of internals/src/css/custom.css) by padding `.main-wrapper` and

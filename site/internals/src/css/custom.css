@@ -1045,18 +1045,34 @@ a.ck-media-shot:focus {
 }
 /* CK_PEOPLE_ANALYSIS_END */
 
+/* CK_NO_TOC_START
+   ------------------------------------------------------------------
+   NO "ON THIS PAGE" TABLE OF CONTENTS ANYWHERE ON THE SITE. Third and last
+   layer of the removal. Layer 1 is `markdown.parseFrontMatter` in
+   docusaurus.config.ts (forces hide_table_of_contents on every doc, which is
+   what makes the content column full width). Layer 2 is the null swizzles at
+   src/theme/DocItem/TOC/Desktop and Mobile. This layer catches anything that
+   still emits the TOC class names, so a visitor never sees the widget even if
+   the two layers above were ever bypassed.
+   ------------------------------------------------------------------ */
+.theme-doc-toc-desktop,
+.theme-doc-toc-mobile {
+  display: none !important;
+}
+/* CK_NO_TOC_END */
+
 /* CK_CITIZEN_NOTICE_START
    ------------------------------------------------------------------
    THE NOTICE RAIL. Site chrome, on 100% of pages, rendered once by the `Root`
    swizzle at site/src/theme/Root.tsx. Markup in
    internals/src/components/CitizenNotice/.
 
-   IT DOES NOT TOUCH THE TABLE OF CONTENTS. This is the whole point of the
-   design and must stay true. The rail is not a column in the docs grid and it
-   never enters that grid. It sits in a gutter reserved at the right EDGE OF THE
-   PAGE, outside the content area entirely — past the TOC, the way the navbar is
-   above it and the footer below it. Every page that has a right-hand table of
-   contents still has it, unchanged, at its normal width.
+   IT IS NOT PART OF THE DOCS GRID. The rail is not a column in the docs grid
+   and it never enters that grid. It sits in a gutter reserved at the right
+   EDGE OF THE PAGE, outside the content area entirely, the way the navbar is
+   above it and the footer below it. The Docusaurus "On this page" table of
+   contents is removed site-wide (CK_NO_TOC block above, plus the config hook
+   and swizzles it names), so the rail is the ONLY right-hand furniture.
 
    HOW THE GUTTER IS RESERVED. Two rules, and only two:
      * `.main-wrapper` gets padding-right     — the page body ends before the rail
@@ -1083,7 +1099,7 @@ a.ck-media-shot:focus {
 :root {
   /* HARD CAP. The rail is never wider than this. */
   --ck-rail-width: 100px;
-  /* Clear air between the page content (or its TOC) and the rail. */
+  /* Clear air between the page content and the rail. */
   --ck-rail-gap: 14px;
 }
 
