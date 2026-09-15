@@ -1,0 +1,13 @@
+# Restated from a FlightAware AeroAPI response, in our own layout.
+# The raw response is held privately and is not republished.
+about:
+  aircraft: "N40JD"
+  question_asked: "Who does FlightAware list as the registered owner of N40JD?"
+  source: "FlightAware AeroAPI v4 aircraft owner lookup; the raw response is held privately and is not republished."
+  retrieved_utc: "2026-09-15T03:20:10.490Z"
+  vendor_http_status: 200
+registered_owner:
+  name: "NUP AVIATION LLC"
+  address_line: "18333 1600 NORTH AVE"
+  city_state: "PRINCETON IL"
+reading: "FlightAware lists a company as the registered owner; a registered owner is often a holding company, it is not a person, and we do not go behind it to name anyone."
