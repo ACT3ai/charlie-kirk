@@ -28,6 +28,31 @@ borderRadius:'4px', textDecoration:'none', fontSize:'0.9rem'}}>← Overlap dates
 
 # 25 February 2023 — St. Louis, MO
 
+{/* CK_SHORT_ANSWER:START */}
+
+:::note[The short answer]
+
+| Question | Answer |
+|---|---|
+| **Was SU-BTT at Chesterfield (KSUS) around 25 February 2023?** | **Yes.** FlightAware records it: landed at KSUS St Louis on Sat 25 Feb 2023, 12:42 pm CST (18:42 UTC), from LFPB Paris. Free ADS-B receivers also heard it there, in the air 2.2 km from the field. |
+| **Was Erika Kirk there?** | **No dated source says so.** The claim rests on the overlap sheet's location cell. Her itinerary has never been published and her [flight logs are reported erased](/Planes/Erika-Flight-Logs-Erased). |
+| **Was a Kirk-party aircraft there?** | **None heard.** No Kirk-party aircraft was heard on the ground at KSUS that day. Checked: N102DZ, N582MM, N872RA, N40JD, N560TW, N888KG. |
+| **Does this show anyone was being followed?** | **No.** A flight record places an aircraft, never a person, and never a purpose. The counterargument is further down this page. |
+
+:::
+
+### FlightAware timeline, 22 Feb to 28 Feb 2023
+
+| # | Aircraft | From | Took off | To | Landed | FlightAware says |
+|---|---|---|---|---|---|---|
+| 1 | SU-BTT | a point near Amreya (31.11, 30.07) | Fri 24 Feb 2023, 9:08 am EET (07:08 UTC) | LFPB Paris | Fri 24 Feb 2023, 12:05 pm CET (11:05 UTC) | Arrived, seen by position only |
+| 2 | SU-BTT | LFPB Paris | Sat 25 Feb 2023, 11:07 am CET (10:07 UTC) | KSUS St Louis | Sat 25 Feb 2023, 12:42 pm CST (18:42 UTC) | Arrived |
+
+*Every flight FlightAware holds for the aircraft from three days before the claimed date to three days after it, the overlap window this site uses. Local time is the time at that airport. Restated from FlightAware's data; the files are listed in the FlightAware section below.*
+
+{/* CK_SHORT_ANSWER:END */}
+
+
 **On 25 February 2023, primary ADS-B position data puts [SU-BTT](/Planes/SU-BTT/overview) within 2.22 km of [KSUS](/Planes/Airports/KSUS) — St. Louis, MO — the field this row of the sheet names.** The recovered trace holds no on-ground positions, so this is an arrival, a departure or a low pass rather than a parked aircraft. The aircraft half of the claim is corroborated in the air; the data places nobody aboard.
 
 The sheet claims **Erika Kirk** was in St. Louis, MO on this date. Her position here is a spreadsheet cell, not a record: [her flight logs are reported erased](/Planes/Erika-Flight-Logs-Erased) and no dated itinerary for her has ever been published.
@@ -64,6 +89,37 @@ This page records what somebody **claimed**. This section records what the recov
 *Verdicts come from `overlaps.csv`, derived from the recovered traces. See [Investigating Deleted Flights](/Planes/investigating_deleted_flights) §4.13 for how the 85 claims break down as a whole, and [the overlap window definition](/Planes/following/Overlap_Window_Definition) for what counts as an overlap at all.*
 
 {/* CK_ADSB_VERDICT:END */}
+
+{/* CK_AEROAPI_VERDICT:START */}
+
+## What FlightAware's flight record says
+
+The section above is what free, volunteer ADS-B receivers heard. This section is what **FlightAware**, a commercial flight-tracking service, recorded for the same aircraft over the same days. It is a different source with different gaps, checked on 14 September 2026.
+
+### FlightAware, SU-BTT: the aircraft was at the claimed airport
+
+| Field | Value |
+|---|---|
+| Claim ID | **OWENS-046** |
+| Aircraft | [SU-BTT](/Planes/SU-BTT/overview) |
+| Days checked | 2023-02-22 to 2023-03-01 UTC, end exclusive |
+| **FlightAware verdict** | **AT_FIELD** |
+| At the claimed airport | landed 2023-02-25 18:42 UTC (12:42 CST) on the leg LFPB (Paris Le Bourget) [France] -&gt; KSUS (Spirit of St Louis) [USA], day +0, FlightAware status Arrived |
+| Flights FlightAware holds in those days | 2 |
+| Before and after | last flight before the window landed at position 31.43,29.79 ~55 km from HEAX Alexandria International Airport [Egypt] 2022-12-27 12:16 UTC; first flight after it took off from position 29.91,31.56 ~24 km from HE15 Helwan Air Base [Egypt] 2023-03-12 07:20 UTC. Only the weeks that were pulled are known - a gap between them was never asked about. |
+
+**What that verdict means.** FlightAware records this aircraft landing at, or taking off from, the claimed airport inside the window. **That confirms the aircraft half of the claim, and only that half.**
+
+**Against the other checks on this row.** Agrees with ADS-B: both place the aircraft at the claimed field.
+
+**The data.** FlightAware does not allow its responses to be republished, so the raw responses are held privately. What is published is every fact in them, restated in our own layout and checked field by field against the raw response by `check_restated.py`:
+
+* [`2023-02-22_to_2023-03-01_flights_page1.yaml`](https://github.com/ACT3ai/charlie-kirk/blob/main/site/docs/Planes/following/apis/proprietary/data/flightaware_restated/SU-BTT/2023-02-22_to_2023-03-01_flights_page1.yaml)
+
+**This is about the aircraft only.** No flight record places any person aboard any aircraft, and FlightAware's does not either.
+
+{/* CK_AEROAPI_VERDICT:END */}
+
 
 
 **This page is one row of the overlap sheet that produced the "73 times" figure — reconstructed, sourced, and checked.** It is not a finding by this site. It records what the compilation claimed for this date, who it says was there, and what an independent audit of the flight archive found when it looked.

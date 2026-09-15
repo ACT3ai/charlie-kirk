@@ -302,9 +302,13 @@ carries it, so the identity is visible without opening anything.
         Provo - and that date is a Charlie / Both row. NO ERIKA-CLAIMED OVERLAP
         HAS A KIRK-SIDE AIRCRAFT AT ALL. Drawing nothing would have hidden that.
         This template shows both declared variants: the HOLLOW DASHED Kirk band
-        (absence drawn as absence, with the tails actually queried named inside
-        it) and a HATCHED near-field pass (heard within 15 km of the field while
-        AIRBORNE - a measured window, and never a landing).
+        (absence drawn as absence, with the tails actually queried named in the
+        caption - moved out of the band 2026-09-14) and a HATCHED near-field pass
+        (heard within 15 km of the field while AIRBORNE - a measured window, and
+        never a landing). A third variant, added 2026-09-14 and documented in
+        p_create_svgs.md STAGE 3B, draws a window the trace ends on low and close
+        as "coming in to land", with a dashed NOT HEARD bar to the aircraft's next
+        position at the same field.
 
   {PLANES_DIR}/info_graphic/code/measure_windows.py
         MEASURES the windows, and measures ONLY. Walks every row of

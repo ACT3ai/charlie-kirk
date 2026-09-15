@@ -28,6 +28,35 @@ borderRadius:'4px', textDecoration:'none', fontSize:'0.9rem'}}>← Overlap dates
 
 # 8 December 2024 — Provo, UT
 
+{/* CK_SHORT_ANSWER:START */}
+
+:::note[The short answer]
+
+| Question | Answer |
+|---|---|
+| **Was SU-BND at Provo (KPVU) around 8 December 2024?** | **No record of it there.** FlightAware holds 6 flights for it in the window (a point near Cairo (29.71, 31.40) to a point near Sohag (26.52, 32.51); a point near Luxor (26.24, 32.66) to a point near Cairo (29.10, 31.71); a point near Cairo (30.20, 31.35) to a point near Luxor (25.00, 32.51); a point near Luxor (25.50, 32.68) to a point near Cairo (29.15, 31.70); a point near Cairo (30.14, 31.36) to a point near Sohag (25.98, 30.74); a point near Assiut (26.02, 30.70) to a point near Cairo (29.92, 31.29)), and none touches KPVU. The free ADS-B archives did not hear it in the days checked. |
+| **Was Erika Kirk there?** | **No dated source says so.** The claim rests on the overlap sheet's location cell. Her itinerary has never been published and her [flight logs are reported erased](/Planes/Erika-Flight-Logs-Erased). |
+| **Was a Kirk-party aircraft there?** | **Not shown by any record.** The Kirk side of this row is a claimed location for a person, not an aircraft. FlightAware hides the tails most often linked to the Kirks (N102DZ and N582MM are on its block list). |
+| **Does this show anyone was being followed?** | **No.** A flight record places an aircraft, never a person, and never a purpose. The counterargument is further down this page. |
+
+:::
+
+### FlightAware timeline, 5 Dec to 11 Dec 2024
+
+| # | Aircraft | From | Took off | To | Landed | FlightAware says |
+|---|---|---|---|---|---|---|
+| 1 | SU-BND | a point near Cairo (29.71, 31.40) | Sat 7 Dec 2024, 6:15 pm EET (16:15 UTC) | a point near Sohag (26.52, 32.51) | Sat 7 Dec 2024, 6:15 pm EET (16:15 UTC) | result unknown, seen by position only, no landing observed |
+| 2 | SU-BND | a point near Luxor (26.24, 32.66) | Sat 7 Dec 2024, 7:24 pm EET (17:24 UTC) | a point near Cairo (29.10, 31.71) | Sat 7 Dec 2024, 7:24 pm EET (17:24 UTC) | result unknown, seen by position only, no landing observed |
+| 3 | SU-BND | a point near Cairo (30.20, 31.35) | Tue 10 Dec 2024, 11:05 am EET (09:05 UTC) | a point near Luxor (25.00, 32.51) | Tue 10 Dec 2024, 11:05 am EET (09:05 UTC) | result unknown, seen by position only, no landing observed |
+| 4 | SU-BND | a point near Luxor (25.50, 32.68) | Tue 10 Dec 2024, 1:35 pm EET (11:35 UTC) | a point near Cairo (29.15, 31.70) | Tue 10 Dec 2024, 1:35 pm EET (11:35 UTC) | result unknown, seen by position only, no landing observed |
+| 5 | SU-BND | a point near Cairo (30.14, 31.36) | Wed 11 Dec 2024, 11:55 am EET (09:55 UTC) | a point near Sohag (25.98, 30.74) | Wed 11 Dec 2024, 11:55 am EET (09:55 UTC) | result unknown, seen by position only, no landing observed |
+| 6 | SU-BND | a point near Assiut (26.02, 30.70) | Wed 11 Dec 2024, 2:32 pm EET (12:32 UTC) | a point near Cairo (29.92, 31.29) | Wed 11 Dec 2024, 2:32 pm EET (12:32 UTC) | result unknown, seen by position only, no landing observed |
+
+*Every flight FlightAware holds for the aircraft from three days before the claimed date to three days after it, the overlap window this site uses. Local time is the time at that airport. Restated from FlightAware's data; the files are listed in the FlightAware section below.*
+
+{/* CK_SHORT_ANSWER:END */}
+
+
 **The archives cannot decide this row.** Both free ADS-B history archives were asked for [SU-BND](/Planes/SU-BND/overview) on 8 December 2024, and neither holds a single position for it that day — while both served other aircraft on the same date.
 
 **That is a coverage fact, not a deletion and not a refutation.** Parked with the transponder off, outside receiver coverage, and a wrong claimed date all look identical from here. **An absence is not a finding.** This row is one of [37 of the 85 rows](/Planes/following/cuts/adsb-not-heard-37) scored asked-and-empty.
@@ -60,6 +89,36 @@ This page records what somebody **claimed**. This section records what the recov
 *Verdicts come from `overlaps.csv`, derived from the recovered traces. See [Investigating Deleted Flights](/Planes/investigating_deleted_flights) §4.13 for how the 85 claims break down as a whole, and [the overlap window definition](/Planes/following/Overlap_Window_Definition) for what counts as an overlap at all.*
 
 {/* CK_ADSB_VERDICT:END */}
+
+{/* CK_AEROAPI_VERDICT:START */}
+
+## What FlightAware's flight record says
+
+The section above is what free, volunteer ADS-B receivers heard. This section is what **FlightAware**, a commercial flight-tracking service, recorded for the same aircraft over the same days. It is a different source with different gaps, checked on 14 September 2026.
+
+### FlightAware, SU-BND: the aircraft flew, but not to the claimed airport
+
+| Field | Value |
+|---|---|
+| Claim ID | **OWENS-030** |
+| Aircraft | [SU-BND](/Planes/SU-BND/overview) |
+| Days checked | 2024-12-05 to 2024-12-12 UTC, end exclusive |
+| **FlightAware verdict** | **FLEW_ELSEWHERE** |
+| Flights FlightAware holds in those days | 6 |
+| Before and after | last flight before the window landed at position 29.82,31.19 ~10 km from EG-0058 Sahra' Muhafadhat al-Jeezah Airfield [Egypt] 2023-06-24 08:18 UTC; first flight after it took off from position 30.16,31.34 ~7 km from HECA Cairo International Airport [Egypt] 2025-04-16 07:54 UTC. Only the weeks that were pulled are known - a gap between them was never asked about. |
+
+**What that verdict means.** FlightAware records flights for this aircraft inside the window, and none of them touches the claimed airport. That points away from the claim. FlightAware can miss a leg, so on its own it is not proof.
+
+**Against the other checks on this row.** FlightAware records flights for it in the window, and none touches the claimed field. That points away from the claim; FlightAware can miss a leg, so it is not proof on its own.
+
+**The data.** FlightAware does not allow its responses to be republished, so the raw responses are held privately. What is published is every fact in them, restated in our own layout and checked field by field against the raw response by `check_restated.py`:
+
+* [`2024-12-05_to_2024-12-12_flights_page1.yaml`](https://github.com/ACT3ai/charlie-kirk/blob/main/site/docs/Planes/following/apis/proprietary/data/flightaware_restated/SU-BND/2024-12-05_to_2024-12-12_flights_page1.yaml)
+
+**This is about the aircraft only.** No flight record places any person aboard any aircraft, and FlightAware's does not either.
+
+{/* CK_AEROAPI_VERDICT:END */}
+
 
 
 **This page is one row of the overlap sheet that produced the "73 times" figure — reconstructed, sourced, and checked.** It is not a finding by this site. It records what the compilation claimed for this date, who it says was there, and what an independent audit of the flight archive found when it looked.

@@ -43,9 +43,9 @@ discredits every good one.
 
 | Target | What was asked | What came back | What that means honestly |
 |---|---|---|---|
-| **Flightradar24**, 16 subject tails + 4 unrelated controls, real logged-out browser, 24 Aug 2026 | *What does the public actually see at this URL today?* | **HTTP 200 on all 20.** Full identity blocks. **Nothing on any page says removed, blocked or restricted.** N102DZ returns title `N102DZ - Gulfstream V [555] - Flightradar24`, MODE S `A00C85`, TYPE CODE `GLF5` | **"N102DZ was removed from FlightRadar24" is REFUTED, not merely untested.** Capture: `fr24_page_availability_2026-08-24.tsv` |
+| **Flightradar24**, 16 subject tails + 4 unrelated controls, real logged-out browser, 24 Aug 2026 | *What does the public actually see at this URL today?* | **HTTP 200 on all 20.** Full identity blocks. **Nothing on any page says removed, blocked or restricted.** N102DZ returns title `N102DZ - Gulfstream V [555] - Flightradar24`, MODE S `A00C85`, TYPE CODE `GLF5` | **"N102DZ was removed from FlightRadar24" is REFUTED, not merely untested.** Capture: `fr24_page_availability_2026-08-24.tsv`. **Corrected 15 Sep 2026:** the page was not removed, but its flights are hidden |
 | **Flightradar24**, independent re-test, 6 probes, different operator | reproduce the first run | **HTTP 200 on all 6** | Two independent sessions agree. Capture: `fr24_n102dz_removal_test_2026-08-24b.tsv` |
-| The **empty history table** on those pages | is emptiness a deletion? | The unrelated control **N628TS prints the identical "could not find data" message at an almost identical byte count** | **An empty table is a paywall until proven otherwise.** It is FR24's seven-day free-tier window, not a purge |
+| The **empty history table** on those pages | is emptiness a deletion? | The unrelated control **N628TS prints the identical "could not find data" message at an almost identical byte count** | **An empty table is a paywall until proven otherwise.** ~~It is FR24's seven-day free-tier window, not a purge~~ **Corrected 15 Sep 2026:** for N102DZ it was not. N102DZ had flown that week; the control was never shown to have flown. A control must be shown to have flown |
 | **Internet Archive CDX**, 30 tracking-site URLs for the five Egyptian tails and T7-ELL | did anyone archive the evidence? | The most uncomfortable finding on this page — see below | **Never query CDX with `collapse=digest`**: it returns only distinct-content captures, so counts become floors and the "did this page stop changing?" test is impossible by construction. **A CDX query that fails with HTTP 504 is UNKNOWN, not zero** |
 | **globe.adsbexchange.com** Wayback snapshots | per-aircraft data | **Empty JavaScript shells.** Identical content digests across different hex codes | The Archive captured the app frame, not aircraft data. **They must never be cited as per-aircraft evidence** |
 | ADS-B Exchange, FlightAware, RadarBox, Planespotters, JetPhotos, adsb.lol globe, airplanes.live globe | capture the page | **Not captured at all** | **1 site of 8. 112 of 128 targets untouched** |
@@ -100,8 +100,8 @@ window**, and the controls prove it in the same session:
 
 | Aircraft | Bytes | History rows | Reading |
 |---|---|---|---|
-| **N102DZ** (subject) | 53,310 | 0 — "could not find data for specified flight" | Has not flown in seven days |
-| **N628TS** (**unrelated control**) | **53,318** | 0 — **the identical message** | Has not flown in seven days |
+| **N102DZ** (subject) | 53,310 | 0 — "could not find data for specified flight" | ~~Has not flown in seven days~~ **Corrected 15 Sep 2026: flew on seven of those days — flights hidden** |
+| **N628TS** (**unrelated control**) | **53,318** | 0 — **the identical message** | Free receivers heard no flight on any of those days — genuinely idle |
 | N888KG (subject) | 53,338 | 0 — same message | Same state |
 | SU-BTT (subject) | 68,606 | 56 | Flew recently |
 | SU-BND (subject) | 57,612 | 14 | Flew recently |
@@ -113,11 +113,14 @@ the same session on the same day is not a nicety here — it is the entire metho
 N102DZ alone would have proved nothing, whatever it showed, because there would have been nothing to
 compare it against.
 
+**Corrected 15 September 2026 — the empty table was not the seven-day window.** The page was not taken down, and that still stands. But volunteer ADS-B receivers heard N102DZ fly on 16, 17, 18, 19, 20, 21, 22 and 24 August 2026, all inside the seven days before the 24 August browser test, so its empty table cannot have been the free window. The control N628TS was not heard flying by free receivers on any of those days, so its empty table was genuine idleness while N102DZ's was not. We retested on 15 September 2026 with a control that had flown: in the same browser session Flightradar24 listed [N560TW](/Planes/N560TW/overview)'s two flights of 9 September, and showed "could not find data" for N102DZ, which receivers heard fly on 12, 13 and 14 September. **Flightradar24 hides N102DZ's flights while still showing the aircraft. That is hiding, not deletion, and no archived copy of the page dates when it began.** FlightAware hides them too: its own page data marks N102DZ blocked, and already did on 14 January 2026. **From now on a control only counts if free receivers show it flew inside the window.** Full retest: [Which Flight Records Were Deleted](/Planes/Deleted-Flight-Records#updated-15-september-2026--two-tracking-sites-are-hiding-four-of-these-aircrafts-flights).
+
 ### What this does NOT settle, and it travels with the refutation everywhere
 
 **A page that loads today cannot testify about what its table held in May 2026.**
 
 * **"The page was taken down" — REFUTED.**
+* **"Its flights are hidden" — SHOWN, 15 September 2026.** Flightradar24 lists no flights for N102DZ or T7-ELL although both flew inside the window, while the control N560TW's flights show.
 * **"History was specifically purged and later restored" — beyond this method IN EITHER DIRECTION.**
   Not supported, not refuted. **No page on this site may assert it.**
 * **A logged-out free tier is the weakest view Flightradar24 offers.** Silver shows 90 days, Gold a

@@ -1,0 +1,11 @@
+# Restated from a FlightAware AeroAPI response, in our own layout.
+# The raw response is held privately and is not republished.
+about:
+  aircraft: "N38ZQ"
+  question_asked: "Who does FlightAware list as the registered owner of N38ZQ?"
+  source: "FlightAware AeroAPI v4 aircraft owner lookup; the raw response is held privately and is not republished."
+  retrieved_utc: "2026-09-15T02:54:45.801Z"
+  vendor_http_status: 200
+registered_owner:
+  city_state: "United States of America (USA)"
+reading: "FlightAware lists no owner name and no address for N38ZQ, only the country implied by the N prefix; the FAA registry shows the number as not assigned, so there is no owner to list."

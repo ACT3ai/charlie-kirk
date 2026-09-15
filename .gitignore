@@ -150,3 +150,13 @@ Research/NAME_MAPPING.json
 # Python bytecode caches — build artifacts, never committed.
 __pycache__/
 *.pyc
+
+# ============================================================================
+# COMMERCIAL FLIGHT-API RAW RESPONSES — never in this public repo.
+# FlightAware's terms do not allow republishing an AeroAPI response. Raw pulls,
+# the spend ledger, plans and verdicts are checked in to the PRIVATE `all` repo:
+#   ~/BGit/all/politics/charlie_kirk/flights/<vendor>/
+# (proprietary/code/private_store.js). The published form is the restated data
+# in proprietary/data/<vendor>_restated/, which IS tracked. Backstop only.
+# ============================================================================
+site/docs/Planes/following/apis/proprietary/data/flightaware/

@@ -1,0 +1,83 @@
+# Restated from a FlightAware AeroAPI response, in our own layout.
+# The raw response is held privately and is not republished.
+about:
+  aircraft: "SU-BTT"
+  question_asked: "Which flights does FlightAware hold for the aircraft registered SU-BTT between 18 April 2023 and 25 April 2023 (UTC)?"
+  source: "FlightAware AeroAPI v4 flight history, queried by registration; the raw response is held privately and is not republished."
+  retrieved_utc: "2026-09-14T09:47:20.511Z"
+  vendor_http_status: 200
+  window_utc_from: "2023-04-18T00:00:00Z"
+  window_utc_until_exclusive: "2023-04-25T00:00:00Z"
+  result_page: 1
+  total_pages_reported: 1
+  further_pages_held_by_vendor: false
+flights_recorded: 2
+reading: "FlightAware records two legs for SU-BTT, typed as a Falcon 7X (FA7X): on 20 April 2023 from Wichita Eisenhower, Kansas to New Castle, Wilmington, Delaware, then on 21 April 2023 from Wilmington toward a position near Cairo. The second leg's outcome is unknown and FlightAware gives the same time for its takeoff and landing, so its zero airborne duration is not a real flight time; neither leg shows who was aboard."
+flights:
+  - number: 1
+    flightaware_id: "SUBTT-1681974815-3-0-214"
+    callsign: "SU-BTT"
+    registration: "SU-BTT"
+    aircraft_type_code: "FA7X"
+    flight_category: "general aviation"
+    outcome: "Arrived"
+    progress_percent: 100
+    flags: []
+    from:
+      icao: "KICT"
+      iata: "ICT"
+      faa_lid: "ICT"
+      name: "Wichita Eisenhower"
+      city: "Wichita"
+      timezone: "America/Chicago"
+    to:
+      icao: "KILG"
+      iata: "ILG"
+      faa_lid: "ILG"
+      name: "New Castle"
+      city: "Wilmington"
+      timezone: "America/New_York"
+    takeoff:
+      scheduled: {utc: "2023-04-20T15:00:00Z", local: "2023-04-20 10:00:00-05:00"}
+      estimated: {utc: "2023-04-20T14:46:26Z", local: "2023-04-20 09:46:26-05:00"}
+      actual:    {utc: "2023-04-20T14:46:26Z", local: "2023-04-20 09:46:26-05:00"}
+      runway: "01R"
+    landing:
+      scheduled: {utc: "2023-04-20T17:44:00Z", local: "2023-04-20 13:44:00-04:00"}
+      estimated: {utc: "2023-04-20T17:03:36Z", local: "2023-04-20 13:03:36-04:00"}
+      actual:    {utc: "2023-04-20T17:03:36Z", local: "2023-04-20 13:03:36-04:00"}
+      runway: "09"
+    departure_versus_schedule: "-0:13:34"
+    arrival_versus_schedule: "-0:40:24"
+    airborne_duration: "2:17:10"
+    flight_plan:
+      planned_time_enroute: "2:44:00"
+      cruise_speed_kt: 376
+  - number: 2
+    flightaware_id: "SUBTT-1682077907-adhoc-4804"
+    callsign: "SU-BTT"
+    registration: "SU-BTT"
+    aircraft_type_code: "FA7X"
+    flight_category: "general aviation"
+    outcome: "result unknown"
+    flags: ["position_only"]
+    from:
+      icao: "KILG"
+      iata: "ILG"
+      faa_lid: "ILG"
+      name: "New Castle"
+      city: "Wilmington"
+      timezone: "America/New_York"
+    to:
+      position_only_point: {lat: 30.57802, lon: 30.73222}
+      city: "Cairo"
+      timezone: "Africa/Cairo"
+    takeoff:
+      scheduled: {utc: "2023-04-21T12:24:29Z", local: "2023-04-21 08:24:29-04:00"}
+      estimated: {utc: "2023-04-21T11:59:38Z", local: "2023-04-21 07:59:38-04:00"}
+      actual:    {utc: "2023-04-21T11:59:38Z", local: "2023-04-21 07:59:38-04:00"}
+      runway: "01"
+    landing:
+      actual:    {utc: "2023-04-21T11:59:38Z", local: "2023-04-21 13:59:38+02:00"}
+    departure_versus_schedule: "-0:24:51"
+    airborne_duration: "0:00:00"

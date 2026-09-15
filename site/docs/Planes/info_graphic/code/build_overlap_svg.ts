@@ -44,6 +44,17 @@
  *      the bar label, and the lowest altitude heard is printed on the picture.
  *      A hatched bar does not mean the aircraft landed.
  *
+ *   C. basis: final_approach | climb_out, added 2026-09-14
+ *      A near-field window the day's trace ENDS on, descending, last heard low and
+ *      within 3 km (final_approach) — or STARTS on, climbing (climb_out). SU-BTT
+ *      almost never sends the ADS-B on-ground flag, so its landings were being
+ *      drawn under variant B as "NOT a landing". Still hatched, still airborne,
+ *      still never "arrived": the label says it was coming in to land and where
+ *      it was last heard. When the aircraft was next heard AT THIS FIELD
+ *      (next_heard_at_field, within 4 days) the gap is drawn as a dashed, unfilled
+ *      NOT HEARD bar and the axis runs to that position. No position exists in the
+ *      gap, so it is never solid and never counted as a stay.
+ *
  * Usage
  *   node build_overlap_svg.ts <dir-or-info.yaml> [more...]
  *   node build_overlap_svg.ts --all <root-dir>
@@ -160,7 +171,18 @@ type Segment = {
   min_alt_ft?: number | null;
   /** near_field_pass only: closest approach to the field, km. */
   min_km?: number | null;
+  /** Variant C. final_approach: the last position of the window. */
+  last_alt_ft?: number | null;
+  last_km?: number | null;
+  /** Variant C. climb_out: the first position of the window. */
+  first_alt_ft?: number | null;
+  first_km?: number | null;
+  /** Variant C. Where the aircraft was next / last heard at this field, beyond the day. */
+  next_heard_at_field?: HeardAt;
+  previous_heard_at_field?: HeardAt;
 };
+
+type HeardAt = { utc?: string; km?: number | null; alt_ft?: number | null; on_ground?: boolean; source?: string };
 
 type Plane = {
   tail?: string;
@@ -171,8 +193,11 @@ type Plane = {
   no_aircraft_in_record?: boolean;
   /** Variant A: what WAS claimed, printed inside the hollow band. */
   claim?: string;
-  /** Variant A: which tails were actually queried, so the absence is auditable. */
+  /** Variant A: which tails were actually queried, so the absence is auditable.
+      Printed in the CAPTION, not inside the band (Bryan, 14 Sep 2026). */
   queried_tails?: string;
+  /** What the bar is called, e.g. "Aircraft reported as the Kirk family's". */
+  label_lead?: string;
 };
 
 type Info = {
@@ -188,6 +213,8 @@ type Info = {
     state?: string;
     state_name?: string;
     timezone?: string;
+    /** Field elevation, feet. Lets a label say "at runway height". */
+    elevation_ft?: number;
     town_population?: number | string | null;
     town_population_source?: string;
   };
@@ -244,8 +271,16 @@ function parseStamp(v: Stamp, what: string, errs: string[]): number | null {
   return t;
 }
 
+type Heard = { t: number; km: number | null; altFt: number | null; onGround: boolean };
 type Seg = { a: number; b: number; points?: number; sources?: string;
-             pass?: boolean; minAlt?: number | null; minKm?: number | null };
+             pass?: boolean; minAlt?: number | null; minKm?: number | null;
+             approach?: boolean; climb?: boolean;
+             lastAlt?: number | null; lastKm?: number | null;
+             firstAlt?: number | null; firstKm?: number | null;
+             next?: Heard | null; prev?: Heard | null };
+/** Variant C: a stretch with NO position heard, between a window and the aircraft's
+    next (after) or previous (before) position at this field. */
+type Gap = Heard & { a: number; b: number; after: boolean; bar: "f" | "k" };
 
 function readSegments(p: Plane | undefined, who: string, errs: string[]): Seg[] {
   const segs = p?.segments;
@@ -260,12 +295,24 @@ function readSegments(p: Plane | undefined, who: string, errs: string[]): Seg[] 
     if (a === null || b === null) return;
     if (b < a) { errs.push(`${who}.segments[${i}]: ends before it starts`); return; }
     const basis = String(s.basis || "ground_contact");
-    if (!["ground_contact", "near_field_pass"].includes(basis)) {
-      errs.push(`${who}.segments[${i}].basis: "${basis}" is not a basis this generator draws — use ground_contact or near_field_pass`);
+    if (!["ground_contact", "near_field_pass", "final_approach", "climb_out"].includes(basis)) {
+      errs.push(`${who}.segments[${i}].basis: "${basis}" is not a basis this generator draws — use ground_contact, near_field_pass, final_approach or climb_out`);
       return;
     }
+    const heardAt = (h: HeardAt | undefined, what: string): Heard | null => {
+      if (!h) return null;
+      const t = parseStamp(h, what, errs);
+      return t === null ? null : { t, km: h.km ?? null, altFt: h.alt_ft ?? null, onGround: h.on_ground === true };
+    };
+    const next = basis === "final_approach" ? heardAt(s.next_heard_at_field, `${who}.segments[${i}].next_heard_at_field`) : null;
+    const prev = basis === "climb_out" ? heardAt(s.previous_heard_at_field, `${who}.segments[${i}].previous_heard_at_field`) : null;
+    if (next && next.t <= b) { errs.push(`${who}.segments[${i}].next_heard_at_field: is not after the window`); return; }
+    if (prev && prev.t >= a) { errs.push(`${who}.segments[${i}].previous_heard_at_field: is not before the window`); return; }
     out.push({ a, b, points: s.ground_points, sources: s.sources,
-               pass: basis === "near_field_pass", minAlt: s.min_alt_ft ?? null, minKm: s.min_km ?? null });
+               pass: basis !== "ground_contact", approach: basis === "final_approach", climb: basis === "climb_out",
+               minAlt: s.min_alt_ft ?? null, minKm: s.min_km ?? null,
+               lastAlt: s.last_alt_ft ?? null, lastKm: s.last_km ?? null,
+               firstAlt: s.first_alt_ft ?? null, firstKm: s.first_km ?? null, next, prev });
   });
   return out.sort((x, y) => x.a - y.a);
 }
@@ -346,9 +393,21 @@ function build(info: Info, dirName: string): { svg: string; warnings: string[] }
   const fp = info.following_plane || {};
   const kp = info.kirk_plane || {};
 
-  const start = kirkAbsent ? fSegs[0].a : Math.min(fSegs[0].a, kSegs[0].a);
-  const end = kirkAbsent ? fSegs[fSegs.length - 1].b
-                         : Math.max(fSegs[fSegs.length - 1].b, kSegs[kSegs.length - 1].b);
+  /* VARIANT C. The NOT HEARD gaps run from the edge of a window to the aircraft's
+     next / previous position at this field, and the axis widens to hold them. */
+  const gapsFor = (segs: Seg[], bar: "f" | "k"): Gap[] => {
+    const out: Gap[] = [];
+    const last = segs[segs.length - 1], first = segs[0];
+    if (last?.approach && last.next) out.push({ ...last.next, a: last.b, b: last.next.t, after: true, bar });
+    if (first?.climb && first.prev) out.push({ ...first.prev, a: first.prev.t, b: first.a, after: false, bar });
+    return out;
+  };
+  const gaps = [...gapsFor(fSegs, "f"), ...gapsFor(kSegs, "k")];
+
+  let start = kirkAbsent ? fSegs[0].a : Math.min(fSegs[0].a, kSegs[0].a);
+  let end = kirkAbsent ? fSegs[fSegs.length - 1].b
+                       : Math.max(fSegs[fSegs.length - 1].b, kSegs[kSegs.length - 1].b);
+  for (const g of gaps) { start = Math.min(start, g.a); end = Math.max(end, g.b); }
   const span = end - start;
   if (span <= 0) throw new Error("the time window is zero or negative — nothing to plot");
 
@@ -369,7 +428,11 @@ function build(info: Info, dirName: string): { svg: string; warnings: string[] }
   if (fPasses || kPasses) {
     const lowest = [...fSegs, ...kSegs].filter((x) => x.pass && typeof x.minAlt === "number")
       .map((x) => x.minAlt as number).sort((m, n) => m - n)[0];
-    warn.push(`${fPasses + kPasses} of the drawn windows are NEAR-FIELD PASSES, not ground contacts — the aircraft was heard within 15 km of the field while AIRBORNE${typeof lowest === "number" ? `, lowest altitude heard ${commas(lowest)} ft` : ""}. Hatched, never solid. This is NOT evidence the aircraft landed.`);
+    const approaching = [...fSegs, ...kSegs].some((x) => x.approach);
+    warn.push(`${fPasses + kPasses} of the drawn windows are AIRBORNE near the field, not ground contacts${typeof lowest === "number" ? `, lowest altitude heard ${commas(lowest)} ft` : ""}. Hatched, never solid. ${approaching ? "At least one is COMING IN TO LAND: the trace ends on it, low and close — what an unheard landing looks like, and still not a recorded arrival." : "This is NOT evidence the aircraft landed."}`);
+  }
+  for (const g of gaps) {
+    warn.push(`NOT HEARD for ${durationText(g.b - g.a)} ${g.after ? "after the aircraft was last heard coming in to land, until it was next heard" : "before the aircraft was first heard climbing out, since it was last heard"} ${g.onGround ? "on the ground" : `at ${commas(g.altFt ?? 0)} ft`} ${g.km} km from this field — drawn dashed and unfilled, never as a stay.`);
   }
 
   const heard = (info.evidence_basis || "adsb_ground_contact") === "adsb_ground_contact";
@@ -378,8 +441,11 @@ function build(info: Info, dirName: string): { svg: string; warnings: string[] }
   const where = allPass ? "near the field" : anyPass ? "at the field" : "on the ground";
   const vFirst = heard ? "first heard" : "arrived";
   const vLast = heard ? "last heard" : "departed";
-  const axisCapL = heard ? `first heard ${where}` : "first arrival";
-  const axisCapR = heard ? `last heard ${where}` : "last departure";
+  const gapHere = (g: Gap) => g.onGround ? "on the ground here" : "at this airport";
+  const gapEnd = gaps.find((g) => g.after && g.b === end);
+  const gapStart = gaps.find((g) => !g.after && g.a === start);
+  const axisCapL = gapStart ? `last heard ${gapHere(gapStart)}` : heard ? `first heard ${where}` : "first arrival";
+  const axisCapR = gapEnd ? `next heard ${gapHere(gapEnd)}` : heard ? `last heard ${where}` : "last departure";
 
   const axisW = L.axisX1 - L.axisX0;
   const xOf = (t: number) => L.axisX0 + ((t - start) / span) * axisW;
@@ -439,6 +505,14 @@ function build(info: Info, dirName: string): { svg: string; warnings: string[] }
     if (laterFirst > start) inners.push({ x: xOf(laterFirst), trueX: xOf(laterFirst), lines: innerLines(laterFirst, vFirst) });
     if (earlierLast < end) inners.push({ x: xOf(earlierLast), trueX: xOf(earlierLast), lines: innerLines(earlierLast, vLast) });
   }
+  /* VARIANT C. The inside edge of each NOT HEARD gap is the moment the receivers
+     lost (or first found) the aircraft, and it gets its own tick. */
+  for (const g of gaps) {
+    const t = g.after ? g.a : g.b;
+    if (t > start && t < end && !inners.some((i) => Math.abs(i.trueX - xOf(t)) < 2)) {
+      inners.push({ x: xOf(t), trueX: xOf(t), lines: innerLines(t, g.after ? "last heard, coming in to land," : "first heard, climbing out,") });
+    }
+  }
   // Keep every inner label inside the frame — an early first-contact sits at the
   // far left and a long "first heard Mon 8 Sep 10:20 am" would otherwise clip.
   for (const inner of inners) {
@@ -470,19 +544,36 @@ function build(info: Info, dirName: string): { svg: string; warnings: string[] }
   rightRows.push({ text: year, size: L.rightYearSize });
   for (const r of rightRows) r.size = fitSize([r.text], r.size, L.rightMaxW, 800);
 
+  /* An altimeter reading means little to a reader — 4,500 ft at Provo is the runway,
+     and -100 ft at Wilmington is barometric error on the ground. Say it against the
+     field's own elevation when the yaml carries one. */
+  const elev = typeof ap.elevation_ft === "number" ? ap.elevation_ft : null;
+  const heightText = (alt: number | null | undefined) => {
+    if (typeof alt !== "number") return "at an unrecorded height";
+    if (elev === null) return `at ${commas(alt)} ft`;
+    const above = alt - elev;
+    return above <= 150 ? "at runway height" : `about ${commas(Math.round(above / 50) * 50)} ft above the airport`;
+  };
+
   /* Ground contacts and near-field passes are COUNTED SEPARATELY and never
      added together — they are different claims about the same airframe. */
   const countText = (segs: Seg[]) => {
-    const g = segs.filter((x) => !x.pass).length, q = segs.filter((x) => x.pass).length;
+    const g = segs.filter((x) => !x.pass).length;
+    const plain = segs.filter((x) => x.pass && !x.approach && !x.climb).length;
     const bits: string[] = [];
     if (g) bits.push(`${g} ground contact${g === 1 ? "" : "s"}`);
-    if (q) bits.push(`${q} near-field pass${q === 1 ? "" : "es"} (airborne)`);
+    if (plain) bits.push(`${plain} near-field pass${plain === 1 ? "" : "es"} (airborne)`);
+    for (const x of segs) {
+      if (x.approach) bits.push(`coming in to land, last heard ${heightText(x.lastAlt)}, ${x.lastKm} km out`);
+      if (x.climb) bits.push(`climbing out, first heard ${heightText(x.firstAlt)}, ${x.firstKm} km out`);
+    }
     return bits.join(" · ");
   };
   /* The lowest altitude heard goes in the LABEL, not inside the bar. Drawn over
-     the hatch it was white-on-red-on-white and unreadable at any size. */
+     the hatch it was white-on-red-on-white and unreadable at any size. Plain
+     passes only: an approach already carries its own last altitude. */
   const lowestAlt = (segs: Seg[]) => {
-    const a = segs.filter((x) => x.pass && typeof x.minAlt === "number").map((x) => x.minAlt as number);
+    const a = segs.filter((x) => x.pass && !x.approach && !x.climb && typeof x.minAlt === "number").map((x) => x.minAlt as number);
     return a.length ? Math.min(...a) : null;
   };
   const planeLabel = (p: Plane, lead: string, segs: Seg[]) => {
@@ -492,14 +583,13 @@ function build(info: Info, dirName: string): { svg: string; warnings: string[] }
   };
   const fLabel = planeLabel(fp, "Following aircraft", fSegs);
   const kLabel = kirkAbsent
-    ? `${kirkBarPerson(person)} aircraft — NO AIRCRAFT IN THE RECORD`
-    : planeLabel(kp, `${kirkBarPerson(person)} aircraft`, kSegs);
-  /* The line printed INSIDE the hollow band. It states the claim and names what
-     was queried, so a reader can tell an unanswered question from an answered
-     one that came back empty. */
+    ? `${kirkBarPerson(person)} — no Kirk-party aircraft in the record`
+    : planeLabel(kp, kp.label_lead || `${kirkBarPerson(person)} aircraft`, kSegs);
+  /* The line printed INSIDE the hollow band: the claim, and that nothing answered
+     it. The tails that were checked go in the CAPTION — inside the band six tail
+     numbers read as six aircraft that were there. */
   const kirkClaimLine = kirkAbsent
-    ? (kpDecl.claim || `${kirkBarPerson(person)} claimed present at this field on this date · no airframe heard`)
-      + (kpDecl.queried_tails ? ` · queried: ${kpDecl.queried_tails}` : "")
+    ? (kpDecl.claim || `${kirkBarPerson(person)} claimed present at this field on this date · no Kirk-party aircraft heard on the ground here`)
     : "";
   const barLabelSize = fitSize([fLabel, kLabel], L.barLabelSize, axisW, 600);
 
@@ -511,13 +601,31 @@ function build(info: Info, dirName: string): { svg: string; warnings: string[] }
   const sourceLine = info.source_line ||
     `Source: overlaps.csv + recovered ADS-B traces${info.as_of ? `, as of ${info.as_of}` : ""}`;
   const bothPlanes = kirkAbsent ? "any aircraft" : "either aircraft";
+  const checked = kirkAbsent && kpDecl.queried_tails ? ` Kirk-side aircraft checked: ${kpDecl.queried_tails}.` : "";
+  /* VARIANT C. Say in plain words what the receivers heard at each end: where they
+     lost it coming in to land, and where and how much later they heard it next. */
+  const approachSeg = [...fSegs, ...kSegs].find((x) => x.approach);
+  const climbSeg = [...fSegs, ...kSegs].find((x) => x.climb);
+  const gapAfter = gaps.find((g) => g.after), gapBefore = gaps.find((g) => !g.after);
+  const hereWords = (g: Gap) => g.onGround ? "on the ground at this airport" : `at this airport, ${heightText(g.altFt)}`;
+  const landingText = [
+    approachSeg ? `Volunteer receivers lost this aircraft ${approachSeg.lastKm} km from the airport, ${heightText(approachSeg.lastAlt)}, coming in to land${gapAfter ? `. They next heard it ${hereWords(gapAfter)}, ${durationText(gapAfter.b - gapAfter.a)} later` : "; no receiver heard it on the ground"}.` : "",
+    climbSeg ? `Receivers first heard this aircraft ${climbSeg.firstKm} km from the airport, ${heightText(climbSeg.firstAlt)}, climbing out${gapBefore ? `, ${durationText(gapBefore.b - gapBefore.a)} after last hearing it ${hereWords(gapBefore)}` : "; no receiver heard it on the ground first"}.` : "",
+  ].filter(Boolean).join(" ");
+  const legend = [
+    [...fSegs, ...kSegs].some((x) => !x.pass) ? "solid = on the ground" : "",
+    anyPass ? "hatched = airborne" : "",
+    gaps.length ? "dashed = not heard" : "",
+  ].filter(Boolean).join(", ");
   const caption = info.caption || (!heard
-    ? `Aircraft ground times only. This places no person aboard ${bothPlanes}.`
-    : allPass
-      ? `ADS-B positions heard by volunteer receivers. This aircraft was AIRBORNE near the field, not on the ground here — a hatched bar is not a landing. Presence only: this places no person aboard ${bothPlanes}.`
-      : anyPass
-        ? `ADS-B positions heard by volunteer receivers. Solid = on the ground, hatched = airborne within 15 km of the field. Presence only — this places no person aboard ${bothPlanes}.`
-        : `ADS-B ground contacts heard by volunteer receivers. Presence only — this places no person aboard ${bothPlanes}.`);
+    ? `Aircraft ground times only. This places no person aboard ${bothPlanes}.${checked}`
+    : landingText
+      ? `${landingText} ${legend.charAt(0).toUpperCase()}${legend.slice(1)}. Presence only: this places no person aboard ${bothPlanes}.${checked}`
+      : allPass
+        ? `ADS-B positions heard by volunteer receivers. This aircraft was AIRBORNE near the field, not on the ground here — a hatched bar is not a landing. Presence only: this places no person aboard ${bothPlanes}.${checked}`
+        : anyPass
+          ? `ADS-B positions heard by volunteer receivers. Solid = on the ground, hatched = airborne within 15 km of the field. Presence only — this places no person aboard ${bothPlanes}.${checked}`
+          : `ADS-B ground contacts heard by volunteer receivers. Presence only — this places no person aboard ${bothPlanes}.${checked}`);
 
   /* -------------------------------------------------------------------- svg */
 
@@ -601,7 +709,9 @@ function build(info: Info, dirName: string): { svg: string; warnings: string[] }
   const segRects = (bars: ReturnType<typeof place>, y: number, fill: string, hatch: string) => {
     for (const b of bars) {
       const isPass = !!b.seg.pass;
-      const what = isPass ? "heard airborne within 15 km of the field — NOT a landing" : "heard on the ground";
+      const what = b.seg.approach ? "coming in to land — last heard here; no ground position heard"
+        : b.seg.climb ? "climbing out — first heard here; no earlier position heard"
+        : isPass ? "heard airborne within 15 km of the field — NOT a landing" : "heard on the ground";
       p(`  <rect x="${b.x.toFixed(1)}" y="${y + L.barInset}" width="${b.w.toFixed(1)}" height="${L.rectH - 2 * L.barInset}" ` +
         `fill="${isPass ? `url(#${hatch})` : fill}"${isPass ? ` stroke="${C.ink}" stroke-width="2"` : ""}>` +
         `<title>${esc(`${fmtTime(b.seg.a, TZ)} to ${fmtTime(b.seg.b, TZ)} (${durationText(b.seg.b - b.seg.a)}) — ${what}` +
@@ -611,13 +721,31 @@ function build(info: Info, dirName: string): { svg: string; warnings: string[] }
     }
   };
 
+  /* VARIANT C. Drawn BEFORE the segments so a window sits on top of its gap. */
+  const gapRects = (bar: "f" | "k", y: number) => {
+    for (const g of gaps.filter((x) => x.bar === bar)) {
+      const x0 = xOf(g.a), w = Math.max(xOf(g.b) - x0, L.segMinW);
+      const dur = durationText(g.b - g.a);
+      const at = g.after ? g.b : g.a;
+      p(`  <!-- VARIANT C: NOT HEARD. No position exists in this gap. It is not a stay and not a flight. -->`);
+      p(`  <rect x="${x0.toFixed(1)}" y="${y + L.barInset}" width="${w.toFixed(1)}" height="${L.rectH - 2 * L.barInset}" ` +
+        `fill="${C.paper}" fill-opacity="0.3" stroke="${C.ink}" stroke-width="3" stroke-dasharray="12 8">` +
+        `<title>${esc(`${dur} with no position heard — ${g.after ? "next" : "last"} heard ${gapHere(g)} ${fmtDate(at, TZ)} ${fmtTime(at, TZ)}, ${g.km} km from the field`)}</title></rect>`);
+      const label = `not heard for ${dur}`;
+      if (textW(label, 22, 600) + 40 < w) T("sm", x0 + w / 2, y + L.rectH / 2 + 8, label, "middle", 22);
+    }
+  };
+
   p(`  <!-- upper bar: the following / intelligence aircraft -->`);
-  T("sm", L.axisX0, L.upperLabelY, fLabel, undefined, barLabelSize);
+  /* Bar labels sit a little right of the axis rule: an inner tick at the left edge
+     runs down through the lower label and was cutting its first letter off. */
+  T("sm", L.axisX0 + 14, L.upperLabelY, fLabel, undefined, barLabelSize);
   bg(L.upperRectY);
+  gapRects("f", L.upperRectY);
   segRects(fBars, L.upperRectY, C.red, "passHatch");
 
   p(`  <!-- lower bar: the ${esc(kirkBarPerson(person))} aircraft -->`);
-  T("sm", L.axisX0, L.lowerLabelY, kLabel, undefined, barLabelSize);
+  T("sm", L.axisX0 + 14, L.lowerLabelY, kLabel, undefined, barLabelSize);
   if (kirkAbsent) {
     p(`  <!-- VARIANT A: hollow dashed band. There is no aircraft here. Absence drawn as absence. -->`);
     p(`  <rect x="${L.axisX0}" y="${L.lowerRectY}" width="${axisW}" height="${L.rectH}" fill="none" stroke="${C.ink}" stroke-width="${L.rectStroke}" stroke-dasharray="20 14"/>`);
@@ -625,6 +753,7 @@ function build(info: Info, dirName: string): { svg: string; warnings: string[] }
     T("xs", L.axisX0 + axisW / 2, L.lowerRectY + L.rectH / 2 + 7, kirkClaimLine, "middle", claimSize);
   } else {
     bg(L.lowerRectY);
+    gapRects("k", L.lowerRectY);
     segRects(kBars, L.lowerRectY, C.yellow, "passHatchK");
   }
 

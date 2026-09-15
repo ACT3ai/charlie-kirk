@@ -42,9 +42,9 @@ can repeat the pulls and get the same answer.
 | Source | What was asked | What came back | What that means honestly |
 |---|---|---|---|
 | **[Pass 1 — free and open](/Planes/following/apis/public_open_source/knowledge)** — adsb.lol, globe.airplanes.live, ADS-B Exchange monthly samples, adsb.lol's GitHub Release backup | *Where was this airframe on this UTC day?* — and, separately, *what was on the ground inside a 50-mile circle?* | **2,346 aircraft-days.** 100% of every trace this investigation holds. **325 aircraft-days recovered from inside adsb.lol's two archive holes**, 281 of them from the backup network | **The free pass did all the work.** Per-tail coverage is **8.95%** of 363 Egyptian-fleet event-window days; the geographic sweep covers **71.9%** of the same window. **Quote the denominator or the number means nothing** |
-| **[Pass 2 — commercial](/Planes/following/apis/proprietary/knowledge)** — Flightradar24, FlightAware AeroAPI, ADS-B Exchange | *Sell us the deep history the free networks do not hold* | **0 aircraft-days. No credential is held for any vendor.** Flightradar24 returns **HTTP 403** to scripted requests **across its entire site, including its own home page** — identical ~5,877-byte body for 13 case tails and 7 unrelated controls | **Zero is a finding, not an embarrassment.** And **a Flightradar24 403 says nothing about any particular aircraft.** FlightAware's AeroAPI reaches **2011** and is the highest-value unopened door here |
+| **[Pass 2 — commercial](/Planes/following/apis/proprietary/knowledge)** — Flightradar24, FlightAware AeroAPI, ADS-B Exchange | *Sell us the deep history the free networks do not hold* | **0 aircraft-days of trace.** **Updated 15 Sep 2026:** `AEROAPI_KEY` is held — 89 FlightAware calls, 65 seven-day flight-history windows, and blocking status for every tracked tail. No Flightradar24 or ADS-B Exchange credential is held. Flightradar24 returns **HTTP 403** to scripted requests **across its entire site, including its own home page** — identical ~5,877-byte body for 13 case tails and 7 unrelated controls | **Zero is a finding, not an embarrassment.** And **a Flightradar24 403 says nothing about any particular aircraft.** FlightAware's AeroAPI reaches **2011**, and that door was opened on 14 Sep 2026 |
 | **[Pass 3 — government](/Planes/following/apis/government/knowledge)** — FAA registry, FOIA, state public-records law | *Give us a record instead of a reading* | **FAA Releasable Aircraft Database: HTTP 200, 73.1 MB, 10 of 10 tracked N-tails extracted** with registrant, serial, Mode S hex and certificate dates. **Zero FOIA requests and zero state public-records requests have been filed** | **The one result on this site that has needed no correction** — that is what a record looks like beside a reading. It is also **the most under-used route in the whole investigation**: most of these fields are city- or authority-owned, which makes state law the route, and it is faster and cheaper than FOIA |
-| **[Pass 4 — browser capture](/Planes/following/apis/browser_capture/knowledge)** — a real logged-out browser at the tracking sites | *What does the public actually see at this URL today?* | **HTTP 200 on all 20** Flightradar24 pages — 16 subject tails plus 4 unrelated controls — **full identity blocks, nothing marked removed, blocked or restricted.** Reproduced in a second independent session | **It refuted one of this site's own published claims.** "N102DZ was removed from FlightRadar24" is **REFUTED, not merely untested.** **1 site of 8 captured; 112 of 128 targets untouched** |
+| **[Pass 4 — browser capture](/Planes/following/apis/browser_capture/knowledge)** — a real logged-out browser at the tracking sites | *What does the public actually see at this URL today?* | **HTTP 200 on all 20** Flightradar24 pages — 16 subject tails plus 4 unrelated controls — **full identity blocks, nothing marked removed, blocked or restricted.** Reproduced in a second independent session | **It refuted one of this site's own published claims.** "N102DZ was removed from FlightRadar24" is **REFUTED, not merely untested.** **Corrected 15 September 2026:** the page was not removed, but its flights are hidden — see [the retest](/Planes/Deleted-Flight-Records#updated-15-september-2026--two-tracking-sites-are-hiding-four-of-these-aircrafts-flights). **1 site of 8 captured; 112 of 128 targets untouched** |
 
 **Two rules govern every row of that table and they are not softened anywhere in this section.**
 
@@ -61,9 +61,9 @@ otherwise.
 | Pass | Aircraft-days produced | Status |
 |---|---:|---|
 | **1 — free and open** | **2,346** | **100% of every trace this investigation holds** |
-| 2 — commercial | **0** | **No credential is held for any vendor.** Nothing was queried |
+| 2 — commercial | **0** | **Updated 15 Sep 2026:** `AEROAPI_KEY` held; 65 FlightAware flight-history windows queried. These are flight records, not position traces, so this count stays 0 |
 | 3 — government records | 0 traces | The FAA registry was pulled; **no records request has been filed anywhere** |
-| 4 — browser capture | 0 traces | Ran, and its result stands: no aircraft page in this investigation has been removed |
+| 4 — browser capture | 0 traces | Ran, and its result stands: no aircraft page in this investigation has been removed. **But the 15 Sep 2026 retest shows Flightradar24 hiding N102DZ's and T7-ELL's flights** |
 
 **Pass 1's split, by source:** globe.airplanes.live 2,072 aircraft-days (371 of
 them existing nowhere else), adsb.lol 1,702, ADS-B Exchange free monthly samples
@@ -111,7 +111,7 @@ Registries, facility data, FOIA and state public-records law. **Records, not rea
 
 **[2 — Commercial APIs](/Planes/following/apis/proprietary/knowledge)**
 The deep history the free networks do not hold. Costs money; terms restrict republication.
-**Not run.** No credential held for any vendor — reported by name, never by value.
+**Run from 14 September 2026, for FlightAware only.** `AEROAPI_KEY` is held; the Flightradar24 and ADS-B Exchange credentials are not — reported by name, never by value. Results: [the proprietary pass](/Planes/following/apis/proprietary/knowledge).
 
 **[4 — Website capture](/Planes/following/apis/browser_capture/knowledge)**
 Driving a real browser at the tracking sites. How we document that data is gone.
@@ -172,7 +172,7 @@ in every basket, and the controls changed several conclusions — including thre
   tails, 7 unrelated control aircraft **and its own home page**, with the same ~5,877-byte body every
   time. **We had read a 403 as evidence a record was removed. It cannot mean that.** A browser session
   then loaded 20 of those pages — 16 subject tails, 4 controls — **HTTP 200 on every one**, and a
-  second independent session reproduced it. **The claim that N102DZ's page was removed is refuted.**
+  second independent session reproduced it. **The claim that N102DZ's page was removed is refuted.** **Corrected 15 September 2026:** the page was not removed, but its flights are hidden — see [the retest](/Planes/Deleted-Flight-Records#updated-15-september-2026--two-tracking-sites-are-hiding-four-of-these-aircrafts-flights).
   What the page displayed on a past date remains beyond every method we have, and we do not claim it.
 * **The adsb.lol archive has two dead bands and both are site-wide** — 403 from exactly 12 October to
   about 30 December 2025, then 404 to about 1 August 2026, **identical for control aircraft with no
@@ -223,6 +223,8 @@ table is the free tier's seven-day window, and an unrelated control aircraft pri
 holding — the seven-day window means the live page cannot show those legs to a logged-out visitor —
 but **holding a copy is not the same as documenting a removal**, and this site said the second when it
 had only the first.
+
+**Corrected 15 September 2026 — the empty table was not the seven-day window.** The page was not taken down, and that still stands. But volunteer ADS-B receivers heard N102DZ fly on 16, 17, 18, 19, 20, 21, 22 and 24 August 2026, all inside the seven days before the 24 August browser test, so its empty table cannot have been the free window. The control N628TS was not heard flying by free receivers on any of those days, so its empty table was genuine idleness while N102DZ's was not. We retested on 15 September 2026 with a control that had flown: in the same browser session Flightradar24 listed [N560TW](/Planes/N560TW/overview)'s two flights of 9 September, and showed "could not find data" for N102DZ, which receivers heard fly on 12, 13 and 14 September. **Flightradar24 hides N102DZ's flights while still showing the aircraft. That is hiding, not deletion, and no archived copy of the page dates when it began.** FlightAware hides them too: its own page data marks N102DZ blocked, and already did on 14 January 2026. **From now on a control only counts if free receivers show it flew inside the window.** Full retest: [Which Flight Records Were Deleted](/Planes/Deleted-Flight-Records#updated-15-september-2026--two-tracking-sites-are-hiding-four-of-these-aircrafts-flights).
 
 **The other door is still shut, and no backup opens it.** **Erika Kirk's side cannot be checked at
 all.** Every recovery in that pass is about *aircraft*, and an aircraft track never establishes who

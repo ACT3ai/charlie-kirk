@@ -1,0 +1,81 @@
+# Restated from a FlightAware AeroAPI response, in our own layout.
+# The raw response is held privately and is not republished.
+about:
+  aircraft: "SU-BTT"
+  question_asked: "Which flights does FlightAware hold for registration SU-BTT from 17 November 2022 up to 24 November 2022 (UTC)?"
+  source: "FlightAware AeroAPI v4 flight history, searched by registration; the raw response is held privately and is not republished."
+  retrieved_utc: "2026-09-14T08:55:16.793Z"
+  vendor_http_status: 200
+  window_utc_from: "2022-11-17T00:00:00Z"
+  window_utc_until_exclusive: "2022-11-24T00:00:00Z"
+  result_page: 1
+  total_pages_reported: 1
+  further_pages_held_by_vendor: false
+flights_recorded: 2
+reading: "FlightAware records two SU-BTT flights in this window: Wichita to Wilmington (New Castle), then Wilmington to a position near Cairo. The second is only a position record with no known outcome. These are aircraft movements only and place no person aboard."
+flights:
+  - number: 1
+    flightaware_id: "SUBTT-1668660289-3-0-214"
+    callsign: "SU-BTT"
+    registration: "SU-BTT"
+    flight_category: "general aviation"
+    outcome: "Arrived"
+    progress_percent: 100
+    flags: []
+    from:
+      icao: "KICT"
+      iata: "ICT"
+      faa_lid: "ICT"
+      name: "Wichita Eisenhower"
+      city: "Wichita"
+      timezone: "America/Chicago"
+    to:
+      icao: "KILG"
+      iata: "ILG"
+      faa_lid: "ILG"
+      name: "New Castle"
+      city: "Wilmington"
+      timezone: "America/New_York"
+    takeoff:
+      scheduled: {utc: "2022-11-17T15:00:00Z", local: "2022-11-17 09:00:00-06:00"}
+      estimated: {utc: "2022-11-17T14:54:35Z", local: "2022-11-17 08:54:35-06:00"}
+      actual: {utc: "2022-11-17T14:54:35Z", local: "2022-11-17 08:54:35-06:00"}
+      runway: "01R"
+    landing:
+      scheduled: {utc: "2022-11-17T17:44:00Z", local: "2022-11-17 12:44:00-05:00"}
+      estimated: {utc: "2022-11-17T17:03:05Z", local: "2022-11-17 12:03:05-05:00"}
+      actual: {utc: "2022-11-17T17:03:05Z", local: "2022-11-17 12:03:05-05:00"}
+      runway: "27"
+    departure_versus_schedule: "-0:05:25"
+    arrival_versus_schedule: "-0:40:55"
+    airborne_duration: "2:08:30"
+    flight_plan:
+      planned_time_enroute: "2:44:00"
+      cruise_speed_kt: 376
+  - number: 2
+    flightaware_id: "SUBTT-1668947441-adhoc-0"
+    callsign: "SU-BTT"
+    registration: "SU-BTT"
+    flight_category: "general aviation"
+    outcome: "result unknown"
+    flags: ["position_only"]
+    from:
+      icao: "KILG"
+      iata: "ILG"
+      faa_lid: "ILG"
+      name: "New Castle"
+      city: "Wilmington"
+      timezone: "America/New_York"
+    to:
+      position_only_point: {lat: 30.21593, lon: 31.20521}
+      city: "Cairo"
+      timezone: "Africa/Cairo"
+    takeoff:
+      scheduled: {utc: "2022-11-20T13:00:41Z", local: "2022-11-20 08:00:41-05:00"}
+      estimated: {utc: "2022-11-20T12:37:11Z", local: "2022-11-20 07:37:11-05:00"}
+      actual: {utc: "2022-11-20T12:37:11Z", local: "2022-11-20 07:37:11-05:00"}
+      runway: "27"
+    landing:
+      actual: {utc: "2022-11-20T12:37:11Z", local: "2022-11-20 14:37:11+02:00"}
+    departure_versus_schedule: "-0:23:30"
+    airborne_duration: "0:00:00"

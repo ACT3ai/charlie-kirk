@@ -1,0 +1,109 @@
+# Restated from a FlightAware AeroAPI response, in our own layout.
+# The raw response is held privately and is not republished.
+about:
+  aircraft: "SU-BTT"
+  question_asked: "Which flights does FlightAware hold for the aircraft registered SU-BTT between 15 June 2025 and 22 June 2025 (UTC)?"
+  source: "FlightAware AeroAPI v4 flight history by registration; the raw response is held privately and is not republished."
+  retrieved_utc: "2026-09-14T09:47:24.624Z"
+  vendor_http_status: 200
+  window_utc_from: "2025-06-15T00:00:00Z"
+  window_utc_until_exclusive: "2025-06-22T00:00:00Z"
+  result_page: 1
+  total_pages_reported: 1
+  further_pages_held_by_vendor: false
+flights_recorded: 4
+reading: "FlightAware holds four position-only records for SU-BTT in this window, all over northern Egypt on 18 and 21 June 2025; one starts at Almaza Air Base, and every result is unknown. They show where the aircraft was seen, not complete flights, and they say nothing about who was aboard."
+flights:
+  - number: 1
+    flightaware_id: "SUBTT-1750226101-adhoc-774p"
+    callsign: "SU-BTT"
+    registration: "SU-BTT"
+    flight_category: "general aviation"
+    outcome: "result unknown"
+    flags: ["position_only"]
+    from:
+      icao: "HEAZ"
+      name: "Almaza Air Base"
+      timezone: "Africa/Cairo"
+    to:
+      position_only_point: {lat: 31.24232, lon: 29.63710}
+      city: "Amreya"
+      timezone: "Africa/Cairo"
+    takeoff:
+      scheduled: {utc: "2025-06-18T06:05:01Z", local: "2025-06-18 09:05:01+03:00"}
+      estimated: {utc: "2025-06-18T06:05:01Z", local: "2025-06-18 09:05:01+03:00"}
+      actual: {utc: "2025-06-18T06:04:16Z", local: "2025-06-18 09:04:16+03:00"}
+      runway: "36"
+    landing:
+      actual: {utc: "2025-06-18T06:04:16Z", local: "2025-06-18 09:04:16+03:00"}
+    departure_versus_schedule: "-0:00:45"
+    airborne_duration: "0:00:00"
+  - number: 2
+    flightaware_id: "SUBTT-1750232501-adhoc-1011p"
+    callsign: "SU-BTT"
+    registration: "SU-BTT"
+    flight_category: "general aviation"
+    outcome: "result unknown"
+    flags: ["position_only"]
+    from:
+      position_only_point: {lat: 29.40216, lon: 30.14632}
+      city: "Cairo"
+      timezone: "Africa/Cairo"
+    to:
+      position_only_point: {lat: 29.40234, lon: 30.85827}
+      city: "Cairo"
+      timezone: "Africa/Cairo"
+    takeoff:
+      scheduled: {utc: "2025-06-18T08:17:33Z", local: "2025-06-18 11:17:33+03:00"}
+      estimated: {utc: "2025-06-18T08:17:33Z", local: "2025-06-18 11:17:33+03:00"}
+      actual: {utc: "2025-06-18T08:17:33Z", local: "2025-06-18 11:17:33+03:00"}
+    landing:
+      actual: {utc: "2025-06-18T08:17:33Z", local: "2025-06-18 11:17:33+03:00"}
+    departure_versus_schedule: "+0:00:00"
+    airborne_duration: "0:00:00"
+  - number: 3
+    flightaware_id: "SUBTT-1750486410-adhoc-473p"
+    callsign: "SU-BTT"
+    registration: "SU-BTT"
+    flight_category: "general aviation"
+    outcome: "result unknown"
+    flags: ["position_only"]
+    from:
+      position_only_point: {lat: 30.57188, lon: 30.83362}
+      city: "Cairo"
+      timezone: "Africa/Cairo"
+    to:
+      position_only_point: {lat: 31.27770, lon: 29.80695}
+      city: "Amreya"
+      timezone: "Africa/Cairo"
+    takeoff:
+      scheduled: {utc: "2025-06-21T06:31:58Z", local: "2025-06-21 09:31:58+03:00"}
+      estimated: {utc: "2025-06-21T06:31:58Z", local: "2025-06-21 09:31:58+03:00"}
+      actual: {utc: "2025-06-21T06:31:58Z", local: "2025-06-21 09:31:58+03:00"}
+    landing:
+      actual: {utc: "2025-06-21T06:31:58Z", local: "2025-06-21 09:31:58+03:00"}
+    departure_versus_schedule: "+0:00:00"
+    airborne_duration: "0:00:00"
+  - number: 4
+    flightaware_id: "SUBTT-1750491019-adhoc-418p"
+    callsign: "SU-BTT"
+    registration: "SU-BTT"
+    flight_category: "general aviation"
+    outcome: "result unknown"
+    flags: ["position_only"]
+    from:
+      position_only_point: {lat: 30.72826, lon: 28.75219}
+      city: "Matrouh Governorate"
+      timezone: "Africa/Cairo"
+    to:
+      position_only_point: {lat: 29.95331, lon: 31.35730}
+      city: "Cairo"
+      timezone: "Africa/Cairo"
+    takeoff:
+      scheduled: {utc: "2025-06-21T07:50:36Z", local: "2025-06-21 10:50:36+03:00"}
+      estimated: {utc: "2025-06-21T07:50:36Z", local: "2025-06-21 10:50:36+03:00"}
+      actual: {utc: "2025-06-21T07:50:36Z", local: "2025-06-21 10:50:36+03:00"}
+    landing:
+      actual: {utc: "2025-06-21T07:50:36Z", local: "2025-06-21 10:50:36+03:00"}
+    departure_versus_schedule: "+0:00:00"
+    airborne_duration: "0:00:00"

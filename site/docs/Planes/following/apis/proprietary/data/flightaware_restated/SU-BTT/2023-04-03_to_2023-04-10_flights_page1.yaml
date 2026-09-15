@@ -1,0 +1,90 @@
+# Restated from a FlightAware AeroAPI response, in our own layout.
+# The raw response is held privately and is not republished.
+about:
+  aircraft: "SU-BTT"
+  question_asked: "Which flights does FlightAware hold for the aircraft registered SU-BTT between 3 April 2023 and 10 April 2023 (UTC)?"
+  source: "FlightAware AeroAPI v4 flight history, queried by registration; the raw response is held privately and is not republished."
+  retrieved_utc: "2026-09-14T09:47:16.230Z"
+  vendor_http_status: 200
+  window_utc_from: "2023-04-03T00:00:00Z"
+  window_utc_until_exclusive: "2023-04-10T00:00:00Z"
+  result_page: 1
+  total_pages_reported: 1
+  further_pages_held_by_vendor: false
+flights_recorded: 2
+reading: "FlightAware records two legs for SU-BTT, typed as a Falcon 7X (FA7X): on 6 April 2023 from Spirit of St Louis, Missouri to New Castle, Wilmington, Delaware, then on 8 April 2023 from Wilmington to Almaza Air Base, Egypt. The file shows where and when the aircraft was recorded, not who was aboard or why it flew."
+flights:
+  - number: 1
+    flightaware_id: "SUBTT-1680789282-adhoc-0"
+    callsign: "SU-BTT"
+    registration: "SU-BTT"
+    aircraft_type_code: "FA7X"
+    flight_category: "general aviation"
+    outcome: "Arrived"
+    progress_percent: 100
+    flags: []
+    from:
+      icao: "KSUS"
+      iata: "SUS"
+      faa_lid: "SUS"
+      name: "Spirit of St Louis"
+      city: "St Louis"
+      timezone: "America/Chicago"
+    to:
+      icao: "KILG"
+      iata: "ILG"
+      faa_lid: "ILG"
+      name: "New Castle"
+      city: "Wilmington"
+      timezone: "America/New_York"
+    takeoff:
+      scheduled: {utc: "2023-04-06T14:24:42Z", local: "2023-04-06 09:24:42-05:00"}
+      estimated: {utc: "2023-04-06T13:58:18Z", local: "2023-04-06 08:58:18-05:00"}
+      actual:    {utc: "2023-04-06T13:58:18Z", local: "2023-04-06 08:58:18-05:00"}
+      runway: "26L"
+    landing:
+      scheduled: {utc: "2023-04-06T16:01:13Z", local: "2023-04-06 12:01:13-04:00"}
+      estimated: {utc: "2023-04-06T15:34:49Z", local: "2023-04-06 11:34:49-04:00"}
+      actual:    {utc: "2023-04-06T15:34:49Z", local: "2023-04-06 11:34:49-04:00"}
+      runway: "01"
+    departure_versus_schedule: "-0:26:24"
+    arrival_versus_schedule: "-0:26:24"
+    airborne_duration: "1:36:31"
+    flight_plan:
+      planned_time_enroute: "1:36:31"
+  - number: 2
+    flightaware_id: "SUBTT-1680922837-1-0-214"
+    callsign: "SU-BTT"
+    registration: "SU-BTT"
+    aircraft_type_code: "FA7X"
+    flight_category: "general aviation"
+    outcome: "Arrived"
+    progress_percent: 100
+    flags: []
+    from:
+      icao: "KILG"
+      iata: "ILG"
+      faa_lid: "ILG"
+      name: "New Castle"
+      city: "Wilmington"
+      timezone: "America/New_York"
+    to:
+      icao: "HEAZ"
+      name: "Almaza Air Base"
+      timezone: "Africa/Cairo"
+    takeoff:
+      scheduled: {utc: "2023-04-08T12:00:00Z", local: "2023-04-08 08:00:00-04:00"}
+      estimated: {utc: "2023-04-08T11:51:43Z", local: "2023-04-08 07:51:43-04:00"}
+      actual:    {utc: "2023-04-08T11:51:43Z", local: "2023-04-08 07:51:43-04:00"}
+      runway: "01"
+    landing:
+      scheduled: {utc: "2023-04-09T00:36:00Z", local: "2023-04-09 02:36:00+02:00"}
+      estimated: {utc: "2023-04-08T21:45:59Z", local: "2023-04-08 23:45:59+02:00"}
+      actual:    {utc: "2023-04-08T21:45:59Z", local: "2023-04-08 23:45:59+02:00"}
+      runway: "36"
+    departure_versus_schedule: "-0:08:17"
+    arrival_versus_schedule: "-2:50:01"
+    airborne_duration: "9:54:16"
+    flight_plan:
+      planned_time_enroute: "12:36:00"
+      cruise_speed_kt: 395

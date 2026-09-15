@@ -1,0 +1,882 @@
+# Restated from a FlightAware AeroAPI response, in our own layout.
+# The raw response is held privately and is not republished.
+about:
+  aircraft: N872RA
+  question_asked: Which flights does FlightAware hold for N872RA between 9 and 16 September 2025 (UTC)?
+  source: FlightAware AeroAPI v4 flight history by registration; the raw response is held privately and is not republished.
+  retrieved_utc: '2026-09-15T04:08:41.485Z'
+  vendor_http_status: 200
+  window_utc_from: '2025-09-09T00:00:00Z'
+  window_utc_until_exclusive: '2025-09-16T00:00:00Z'
+  result_page: 1
+  total_pages_reported: 1
+  further_pages_held_by_vendor: true
+flights_recorded: 14
+reading: This is the first page of FlightAware's answer for N872RA, flying under the callsign RGY872; FlightAware holds more flights for the window that were not fetched. On 10 September 2025 it flew Santa
+  Barbara to Provo, arriving 22:36 UTC (4:36 pm in Utah), then Provo to Salt Lake City. Flight records show where an aircraft went, never who was aboard.
+flights:
+- number: 1
+  flightaware_id: RGY872-1757532386-sw-1746p
+  callsign: RGY872
+  callsign_icao: RGY872
+  registration: N872RA
+  aircraft_type_code: BE40
+  flight_category: general aviation
+  outcome: Arrived
+  progress_percent: 100
+  flags: []
+  from:
+    icao: KSTS
+    iata: STS
+    faa_lid: STS
+    name: Schulz-Sonoma County
+    city: Santa Rosa
+    timezone: America/Los_Angeles
+  to:
+    icao: KSBA
+    iata: SBA
+    faa_lid: SBA
+    name: Santa Barbara Muni
+    city: Santa Barbara
+    timezone: America/Los_Angeles
+  takeoff:
+    scheduled:
+      utc: '2025-09-10T19:40:00Z'
+      local: '2025-09-10 12:40:00-07:00'
+    estimated:
+      utc: '2025-09-10T19:50:26Z'
+      local: '2025-09-10 12:50:26-07:00'
+    actual:
+      utc: '2025-09-10T19:50:26Z'
+      local: '2025-09-10 12:50:26-07:00'
+    runway: '14'
+  landing:
+    scheduled:
+      utc: '2025-09-10T20:32:00Z'
+      local: '2025-09-10 13:32:00-07:00'
+    estimated:
+      utc: '2025-09-10T20:40:05Z'
+      local: '2025-09-10 13:40:05-07:00'
+    actual:
+      utc: '2025-09-10T20:40:05Z'
+      local: '2025-09-10 13:40:05-07:00'
+    runway: '25'
+  departure_versus_schedule: +0:10:26
+  arrival_versus_schedule: +0:08:05
+  airborne_duration: 0:49:39
+  flight_plan:
+    planned_time_enroute: 0:52:00
+    cruise_altitude_ft: 25000
+    cruise_speed_kt: 445
+    route_text: CHRLY8 ROZZA GVO
+    route_distance_mi: 402
+  operator:
+    name: RGY
+    icao: RGY
+  flight_number: '872'
+- number: 2
+  flightaware_id: RGY872-1757532467-sw-119p
+  callsign: RGY872
+  callsign_icao: RGY872
+  registration: N872RA
+  aircraft_type_code: BE40
+  flight_category: general aviation
+  outcome: Arrived
+  progress_percent: 100
+  flags: []
+  from:
+    icao: KSBA
+    iata: SBA
+    faa_lid: SBA
+    name: Santa Barbara Muni
+    city: Santa Barbara
+    timezone: America/Los_Angeles
+  to:
+    icao: KPVU
+    iata: PVU
+    faa_lid: PVU
+    name: Provo Muni
+    city: Provo
+    timezone: America/Denver
+  takeoff:
+    scheduled:
+      utc: '2025-09-10T20:40:00Z'
+      local: '2025-09-10 13:40:00-07:00'
+    estimated:
+      utc: '2025-09-10T21:19:54Z'
+      local: '2025-09-10 14:19:54-07:00'
+    actual:
+      utc: '2025-09-10T21:19:54Z'
+      local: '2025-09-10 14:19:54-07:00'
+    runway: '25'
+  landing:
+    scheduled:
+      utc: '2025-09-10T22:03:00Z'
+      local: '2025-09-10 16:03:00-06:00'
+    estimated:
+      utc: '2025-09-10T22:36:26Z'
+      local: '2025-09-10 16:36:26-06:00'
+    actual:
+      utc: '2025-09-10T22:36:26Z'
+      local: '2025-09-10 16:36:26-06:00'
+    runway: '13'
+  departure_versus_schedule: +0:39:54
+  arrival_versus_schedule: +0:33:26
+  airborne_duration: '1:16:32'
+  flight_plan:
+    planned_time_enroute: '1:23:00'
+    cruise_altitude_ft: 37000
+    cruise_speed_kt: 440
+    route_text: MISHN4 NNAVY LAS Q70 BLIPP Q842 WINEN MLF JAMMN TAYTR2
+    route_distance_mi: 670
+  operator:
+    name: RGY
+    icao: RGY
+  flight_number: '872'
+- number: 3
+  flightaware_id: RGY872-1757543855-adhoc-1527p
+  callsign: RGY872
+  callsign_icao: RGY872
+  registration: N872RA
+  aircraft_type_code: BE40
+  flight_category: general aviation
+  outcome: Arrived
+  progress_percent: 100
+  flags: []
+  from:
+    icao: KPVU
+    iata: PVU
+    faa_lid: PVU
+    name: Provo Muni
+    city: Provo
+    timezone: America/Denver
+  to:
+    icao: KSLC
+    iata: SLC
+    faa_lid: SLC
+    name: Salt Lake City Intl
+    city: Salt Lake City
+    timezone: America/Denver
+  takeoff:
+    scheduled:
+      utc: '2025-09-10T22:43:30Z'
+      local: '2025-09-10 16:43:30-06:00'
+    estimated:
+      utc: '2025-09-10T23:16:24Z'
+      local: '2025-09-10 17:16:24-06:00'
+    actual:
+      utc: '2025-09-10T23:16:24Z'
+      local: '2025-09-10 17:16:24-06:00'
+    runway: '13'
+  landing:
+    scheduled:
+      utc: '2025-09-10T23:02:30Z'
+      local: '2025-09-10 17:02:30-06:00'
+    estimated:
+      utc: '2025-09-10T23:33:17Z'
+      local: '2025-09-10 17:33:17-06:00'
+    actual:
+      utc: '2025-09-10T23:33:17Z'
+      local: '2025-09-10 17:33:17-06:00'
+    runway: '17'
+  departure_versus_schedule: +0:32:54
+  arrival_versus_schedule: +0:30:47
+  airborne_duration: 0:16:53
+  flight_plan:
+    planned_time_enroute: 0:19:00
+    cruise_altitude_ft: 8000
+    cruise_speed_kt: 281
+    route_text: DITTI1 TCH
+    route_distance_mi: 114
+  operator:
+    name: RGY
+    icao: RGY
+  flight_number: '872'
+- number: 4
+  flightaware_id: RGY872-1757606439-sw-244p
+  callsign: RGY872
+  callsign_icao: RGY872
+  registration: N872RA
+  aircraft_type_code: BE40
+  flight_category: general aviation
+  outcome: Arrived
+  progress_percent: 100
+  flags: []
+  from:
+    icao: KSLC
+    iata: SLC
+    faa_lid: SLC
+    name: Salt Lake City Intl
+    city: Salt Lake City
+    timezone: America/Denver
+  to:
+    icao: KSFO
+    iata: SFO
+    faa_lid: SFO
+    name: San Francisco Int'l
+    city: San Francisco
+    timezone: America/Los_Angeles
+  left_gate:
+    scheduled:
+      utc: '2025-09-11T21:00:00Z'
+      local: '2025-09-11 15:00:00-06:00'
+    estimated:
+      utc: '2025-09-11T21:00:00Z'
+      local: '2025-09-11 15:00:00-06:00'
+  takeoff:
+    scheduled:
+      utc: '2025-09-11T21:00:00Z'
+      local: '2025-09-11 15:00:00-06:00'
+    estimated:
+      utc: '2025-09-11T22:53:44Z'
+      local: '2025-09-11 16:53:44-06:00'
+    actual:
+      utc: '2025-09-11T22:53:44Z'
+      local: '2025-09-11 16:53:44-06:00'
+    runway: '17'
+  landing:
+    scheduled:
+      utc: '2025-09-11T22:35:00Z'
+      local: '2025-09-11 15:35:00-07:00'
+    estimated:
+      utc: '2025-09-12T00:32:00Z'
+      local: '2025-09-11 17:32:00-07:00'
+    actual:
+      utc: '2025-09-12T00:32:00Z'
+      local: '2025-09-11 17:32:00-07:00'
+    runway: 28L
+  departure_versus_schedule: '+1:53:44'
+  arrival_versus_schedule: '+1:57:00'
+  airborne_duration: '1:38:16'
+  flight_plan:
+    planned_time_enroute: '1:35:00'
+    cruise_altitude_ft: 36000
+    cruise_speed_kt: 440
+    route_text: DEZRT2 BAM ANAHO LEGGS BDEGA4
+    route_distance_mi: 598
+  operator:
+    name: RGY
+    icao: RGY
+  flight_number: '872'
+- number: 5
+  flightaware_id: RGY872-1757606440-sw-897p
+  callsign: RGY872
+  callsign_icao: RGY872
+  registration: N872RA
+  aircraft_type_code: BE40
+  flight_category: general aviation
+  outcome: Arrived
+  progress_percent: 100
+  flags: []
+  from:
+    icao: KSFO
+    iata: SFO
+    faa_lid: SFO
+    name: San Francisco Int'l
+    city: San Francisco
+    timezone: America/Los_Angeles
+  to:
+    icao: KMRY
+    iata: MRY
+    faa_lid: MRY
+    name: Monterey Rgnl
+    city: Monterey
+    timezone: America/Los_Angeles
+  left_gate:
+    scheduled:
+      utc: '2025-09-11T23:30:00Z'
+      local: '2025-09-11 16:30:00-07:00'
+    estimated:
+      utc: '2025-09-11T23:30:00Z'
+      local: '2025-09-11 16:30:00-07:00'
+  takeoff:
+    scheduled:
+      utc: '2025-09-11T23:30:00Z'
+      local: '2025-09-11 16:30:00-07:00'
+    estimated:
+      utc: '2025-09-12T01:01:51Z'
+      local: '2025-09-11 18:01:51-07:00'
+    actual:
+      utc: '2025-09-12T01:01:51Z'
+      local: '2025-09-11 18:01:51-07:00'
+    runway: 28R
+  landing:
+    scheduled:
+      utc: '2025-09-11T23:52:00Z'
+      local: '2025-09-11 16:52:00-07:00'
+    estimated:
+      utc: '2025-09-12T01:30:34Z'
+      local: '2025-09-11 18:30:34-07:00'
+    actual:
+      utc: '2025-09-12T01:30:34Z'
+      local: '2025-09-11 18:30:34-07:00'
+    runway: 28L
+  departure_versus_schedule: '+1:31:51'
+  arrival_versus_schedule: '+1:38:34'
+  airborne_duration: 0:28:43
+  flight_plan:
+    planned_time_enroute: 0:22:00
+    cruise_altitude_ft: 11000
+    cruise_speed_kt: 342
+    route_text: GAPP7 SFO EUGEN
+    route_distance_mi: 148
+  operator:
+    name: RGY
+    icao: RGY
+  flight_number: '872'
+- number: 6
+  flightaware_id: RGY872-1757640687-adhoc-4581p
+  callsign: RGY872
+  callsign_icao: RGY872
+  registration: N872RA
+  aircraft_type_code: BE40
+  flight_category: general aviation
+  outcome: Arrived
+  progress_percent: 100
+  flags: []
+  from:
+    icao: KMRY
+    iata: MRY
+    faa_lid: MRY
+    name: Monterey Rgnl
+    city: Monterey
+    timezone: America/Los_Angeles
+  to:
+    icao: KSNA
+    iata: SNA
+    faa_lid: SNA
+    name: John Wayne
+    city: Santa Ana
+    timezone: America/Los_Angeles
+  takeoff:
+    scheduled:
+      utc: '2025-09-12T01:43:22Z'
+      local: '2025-09-11 18:43:22-07:00'
+    estimated:
+      utc: '2025-09-12T02:12:12Z'
+      local: '2025-09-11 19:12:12-07:00'
+    actual:
+      utc: '2025-09-12T02:12:12Z'
+      local: '2025-09-11 19:12:12-07:00'
+    runway: 28L
+  landing:
+    scheduled:
+      utc: '2025-09-12T02:41:22Z'
+      local: '2025-09-11 19:41:22-07:00'
+    estimated:
+      utc: '2025-09-12T03:07:36Z'
+      local: '2025-09-11 20:07:36-07:00'
+    actual:
+      utc: '2025-09-12T03:07:36Z'
+      local: '2025-09-11 20:07:36-07:00'
+    runway: 20R
+  departure_versus_schedule: +0:28:50
+  arrival_versus_schedule: +0:26:14
+  airborne_duration: 0:55:24
+  flight_plan:
+    planned_time_enroute: 0:58:00
+    cruise_altitude_ft: 27000
+    cruise_speed_kt: 459
+    route_text: MRY5 MRY BSR LIBBO TILLT RUKKI1
+    route_distance_mi: 364
+  operator:
+    name: RGY
+    icao: RGY
+  flight_number: '872'
+- number: 7
+  flightaware_id: RGY872-1757642452-sw-188p
+  callsign: RGY872
+  callsign_icao: RGY872
+  registration: N872RA
+  aircraft_type_code: BE40
+  flight_category: general aviation
+  outcome: Arrived
+  progress_percent: 100
+  flags: []
+  from:
+    icao: KSNA
+    iata: SNA
+    faa_lid: SNA
+    name: John Wayne
+    city: Santa Ana
+    timezone: America/Los_Angeles
+  to:
+    icao: KSAN
+    iata: SAN
+    faa_lid: SAN
+    name: San Diego Intl
+    city: San Diego
+    timezone: America/Los_Angeles
+  left_gate:
+    scheduled:
+      utc: '2025-09-12T16:00:00Z'
+      local: '2025-09-12 09:00:00-07:00'
+    estimated:
+      utc: '2025-09-12T16:00:00Z'
+      local: '2025-09-12 09:00:00-07:00'
+  takeoff:
+    scheduled:
+      utc: '2025-09-12T16:00:00Z'
+      local: '2025-09-12 09:00:00-07:00'
+    estimated:
+      utc: '2025-09-12T16:51:31Z'
+      local: '2025-09-12 09:51:31-07:00'
+    actual:
+      utc: '2025-09-12T16:51:31Z'
+      local: '2025-09-12 09:51:31-07:00'
+    runway: 20R
+  landing:
+    scheduled:
+      utc: '2025-09-12T16:17:00Z'
+      local: '2025-09-12 09:17:00-07:00'
+    estimated:
+      utc: '2025-09-12T17:14:32Z'
+      local: '2025-09-12 10:14:32-07:00'
+    actual:
+      utc: '2025-09-12T17:14:32Z'
+      local: '2025-09-12 10:14:32-07:00'
+    runway: '27'
+  departure_versus_schedule: +0:51:31
+  arrival_versus_schedule: +0:57:32
+  airborne_duration: 0:23:01
+  flight_plan:
+    planned_time_enroute: 0:17:00
+    cruise_altitude_ft: 11000
+    cruise_speed_kt: 306
+    route_text: CSTP19
+    route_distance_mi: 87
+  operator:
+    name: RGY
+    icao: RGY
+  flight_number: '872'
+- number: 8
+  flightaware_id: RGY872-1757642456-sw-424p
+  callsign: RGY872
+  callsign_icao: RGY872
+  registration: N872RA
+  aircraft_type_code: BE40
+  flight_category: general aviation
+  outcome: Arrived
+  progress_percent: 100
+  flags: []
+  from:
+    icao: KSAN
+    iata: SAN
+    faa_lid: SAN
+    name: San Diego Intl
+    city: San Diego
+    timezone: America/Los_Angeles
+  to:
+    icao: KSTS
+    iata: STS
+    faa_lid: STS
+    name: Schulz-Sonoma County
+    city: Santa Rosa
+    timezone: America/Los_Angeles
+  left_gate:
+    scheduled:
+      utc: '2025-09-12T17:30:00Z'
+      local: '2025-09-12 10:30:00-07:00'
+    estimated:
+      utc: '2025-09-12T17:30:00Z'
+      local: '2025-09-12 10:30:00-07:00'
+  takeoff:
+    scheduled:
+      utc: '2025-09-12T17:30:00Z'
+      local: '2025-09-12 10:30:00-07:00'
+    estimated:
+      utc: '2025-09-12T17:52:08Z'
+      local: '2025-09-12 10:52:08-07:00'
+    actual:
+      utc: '2025-09-12T17:52:08Z'
+      local: '2025-09-12 10:52:08-07:00'
+    runway: '27'
+  landing:
+    scheduled:
+      utc: '2025-09-12T18:50:00Z'
+      local: '2025-09-12 11:50:00-07:00'
+    estimated:
+      utc: '2025-09-12T19:09:59Z'
+      local: '2025-09-12 12:09:59-07:00'
+    actual:
+      utc: '2025-09-12T19:09:59Z'
+      local: '2025-09-12 12:09:59-07:00'
+    runway: '14'
+  departure_versus_schedule: +0:22:08
+  arrival_versus_schedule: +0:19:59
+  airborne_duration: '1:17:51'
+  flight_plan:
+    planned_time_enroute: '1:20:00'
+    cruise_altitude_ft: 36000
+    cruise_speed_kt: 445
+    route_text: PADRZ2 OROSZ COREZ RGOOD VNYRD1
+    route_distance_mi: 571
+  operator:
+    name: RGY
+    icao: RGY
+  flight_number: '872'
+- number: 9
+  flightaware_id: RGY872-1757642456-sw-430p
+  callsign: RGY872
+  callsign_icao: RGY872
+  registration: N872RA
+  aircraft_type_code: BE40
+  flight_category: general aviation
+  outcome: Arrived
+  progress_percent: 100
+  flags: []
+  from:
+    icao: KSTS
+    iata: STS
+    faa_lid: STS
+    name: Schulz-Sonoma County
+    city: Santa Rosa
+    timezone: America/Los_Angeles
+  to:
+    icao: KCRQ
+    iata: CLD
+    faa_lid: CRQ
+    name: McClellan-Palomar
+    city: Carlsbad
+    timezone: America/Los_Angeles
+  left_gate:
+    scheduled:
+      utc: '2025-09-12T19:23:00Z'
+      local: '2025-09-12 12:23:00-07:00'
+    estimated:
+      utc: '2025-09-12T19:23:00Z'
+      local: '2025-09-12 12:23:00-07:00'
+  takeoff:
+    scheduled:
+      utc: '2025-09-12T19:23:00Z'
+      local: '2025-09-12 12:23:00-07:00'
+    estimated:
+      utc: '2025-09-12T21:02:50Z'
+      local: '2025-09-12 14:02:50-07:00'
+    actual:
+      utc: '2025-09-12T21:02:50Z'
+      local: '2025-09-12 14:02:50-07:00'
+    runway: '14'
+  landing:
+    scheduled:
+      utc: '2025-09-12T20:41:00Z'
+      local: '2025-09-12 13:41:00-07:00'
+    estimated:
+      utc: '2025-09-12T22:18:24Z'
+      local: '2025-09-12 15:18:24-07:00'
+    actual:
+      utc: '2025-09-12T22:18:24Z'
+      local: '2025-09-12 15:18:24-07:00'
+    runway: '24'
+  departure_versus_schedule: '+1:39:50'
+  arrival_versus_schedule: '+1:37:24'
+  airborne_duration: '1:15:34'
+  flight_plan:
+    planned_time_enroute: '1:18:00'
+    cruise_altitude_ft: 37000
+    cruise_speed_kt: 444
+    route_text: RREHD1 HADLY TILLT FLW BLOXX LEGOZ4
+    route_distance_mi: 558
+  operator:
+    name: RGY
+    icao: RGY
+  flight_number: '872'
+- number: 10
+  flightaware_id: RGY872-1757649646-sw-394p
+  callsign: RGY872
+  callsign_icao: RGY872
+  registration: N872RA
+  aircraft_type_code: BE40
+  flight_category: general aviation
+  outcome: Arrived
+  progress_percent: 100
+  flags: []
+  from:
+    icao: KCRQ
+    iata: CLD
+    faa_lid: CRQ
+    name: McClellan-Palomar
+    city: Carlsbad
+    timezone: America/Los_Angeles
+  to:
+    icao: KMHR
+    iata: MHR
+    faa_lid: MHR
+    name: Sacramento Mather
+    city: Sacramento
+    timezone: America/Los_Angeles
+  left_gate:
+    scheduled:
+      utc: '2025-09-12T23:00:00Z'
+      local: '2025-09-12 16:00:00-07:00'
+    estimated:
+      utc: '2025-09-12T23:00:00Z'
+      local: '2025-09-12 16:00:00-07:00'
+  takeoff:
+    scheduled:
+      utc: '2025-09-12T23:00:00Z'
+      local: '2025-09-12 16:00:00-07:00'
+    estimated:
+      utc: '2025-09-12T23:52:40Z'
+      local: '2025-09-12 16:52:40-07:00'
+    actual:
+      utc: '2025-09-12T23:52:40Z'
+      local: '2025-09-12 16:52:40-07:00'
+    runway: '24'
+  landing:
+    scheduled:
+      utc: '2025-09-13T00:11:00Z'
+      local: '2025-09-12 17:11:00-07:00'
+    estimated:
+      utc: '2025-09-13T01:03:23Z'
+      local: '2025-09-12 18:03:23-07:00'
+    actual:
+      utc: '2025-09-13T01:03:23Z'
+      local: '2025-09-12 18:03:23-07:00'
+    runway: 22L
+  departure_versus_schedule: +0:52:40
+  arrival_versus_schedule: +0:52:23
+  airborne_duration: '1:10:43'
+  flight_plan:
+    planned_time_enroute: '1:11:00'
+    cruise_altitude_ft: 36000
+    cruise_speed_kt: 445
+    route_text: PADRZ2 EHF NURAY LIN
+    route_distance_mi: 494
+  operator:
+    name: RGY
+    icao: RGY
+  flight_number: '872'
+- number: 11
+  flightaware_id: RGY872-1757721635-sw-66p
+  callsign: RGY872
+  callsign_icao: RGY872
+  registration: N872RA
+  aircraft_type_code: BE40
+  flight_category: general aviation
+  outcome: Diverted
+  progress_percent: 100
+  flags:
+  - cancelled
+  - diverted
+  from:
+    icao: KMHR
+    iata: MHR
+    faa_lid: MHR
+    name: Sacramento Mather
+    city: Sacramento
+    timezone: America/Los_Angeles
+  to:
+    icao: KEGE
+    iata: EGE
+    faa_lid: EGE
+    name: Eagle County
+    city: Eagle
+    timezone: America/Denver
+  left_gate:
+    scheduled:
+      utc: '2025-09-13T12:45:00Z'
+      local: '2025-09-13 05:45:00-07:00'
+    estimated:
+      utc: '2025-09-13T12:45:00Z'
+      local: '2025-09-13 05:45:00-07:00'
+    actual:
+      utc: '2025-09-13T13:27:08Z'
+      local: '2025-09-13 06:27:08-07:00'
+  takeoff:
+    scheduled:
+      utc: '2025-09-13T12:45:00Z'
+      local: '2025-09-13 05:45:00-07:00'
+    estimated:
+      utc: '2025-09-13T13:27:08Z'
+      local: '2025-09-13 06:27:08-07:00'
+    runway: 22L
+  landing:
+    scheduled:
+      utc: '2025-09-13T14:34:00Z'
+      local: '2025-09-13 08:34:00-06:00'
+  departure_versus_schedule: +0:42:08
+  arrival_versus_schedule: not meaningful (FlightAware gave -1757774041 seconds; no actual time recorded)
+  flight_plan:
+    planned_time_enroute: '1:49:00'
+    cruise_altitude_ft: 37000
+    cruise_speed_kt: 444
+    route_text: DUDES MVA J84 DTA EKR JESIE RLG
+    route_distance_mi: 873
+  operator:
+    name: RGY
+    icao: RGY
+  flight_number: '872'
+- number: 12
+  flightaware_id: RGY872-1757721635-sw-500p
+  callsign: RGY872
+  callsign_icao: RGY872
+  registration: N872RA
+  aircraft_type_code: BE40
+  flight_category: general aviation
+  outcome: result unknown
+  progress_percent: 100
+  flags:
+  - cancelled
+  from:
+    icao: KEGE
+    iata: EGE
+    faa_lid: EGE
+    name: Eagle County
+    city: Eagle
+    timezone: America/Denver
+  to:
+    icao: KVNY
+    iata: VNY
+    faa_lid: VNY
+    name: Van Nuys
+    city: Van Nuys
+    timezone: America/Los_Angeles
+  left_gate:
+    scheduled:
+      utc: '2025-09-13T15:30:00Z'
+      local: '2025-09-13 09:30:00-06:00'
+    estimated:
+      utc: '2025-09-13T15:30:00Z'
+      local: '2025-09-13 09:30:00-06:00'
+  takeoff:
+    scheduled:
+      utc: '2025-09-13T15:30:00Z'
+      local: '2025-09-13 09:30:00-06:00'
+    estimated:
+      utc: '2025-09-13T15:40:00Z'
+      local: '2025-09-13 09:40:00-06:00'
+  landing:
+    scheduled:
+      utc: '2025-09-13T17:20:00Z'
+      local: '2025-09-13 10:20:00-07:00'
+  departure_versus_schedule: +0:00:00
+  arrival_versus_schedule: not meaningful (FlightAware gave -1757784001 seconds; no actual time recorded)
+  flight_plan:
+    planned_time_enroute: '1:50:00'
+    cruise_altitude_ft: 36000
+    cruise_speed_kt: 445
+    route_text: BEVVR1 SPRKT BAWER Q96 PURSE JANNY5
+    route_distance_mi: 827
+  operator:
+    name: RGY
+    icao: RGY
+  flight_number: '872'
+- number: 13
+  flightaware_id: RGY872-1757776589-sw-23p
+  callsign: RGY872
+  callsign_icao: RGY872
+  registration: N872RA
+  aircraft_type_code: BE40
+  flight_category: general aviation
+  outcome: Arrived
+  progress_percent: 100
+  flags: []
+  from:
+    icao: KRIL
+    iata: RIL
+    faa_lid: RIL
+    name: Rifle Garfield County
+    city: Rifle
+    timezone: America/Denver
+  to:
+    icao: KVNY
+    iata: VNY
+    faa_lid: VNY
+    name: Van Nuys
+    city: Van Nuys
+    timezone: America/Los_Angeles
+  takeoff:
+    scheduled:
+      utc: '2025-09-13T16:10:00Z'
+      local: '2025-09-13 10:10:00-06:00'
+    estimated:
+      utc: '2025-09-13T16:36:13Z'
+      local: '2025-09-13 10:36:13-06:00'
+    actual:
+      utc: '2025-09-13T16:36:13Z'
+      local: '2025-09-13 10:36:13-06:00'
+    runway: '26'
+  landing:
+    scheduled:
+      utc: '2025-09-13T17:59:00Z'
+      local: '2025-09-13 10:59:00-07:00'
+    estimated:
+      utc: '2025-09-13T18:20:37Z'
+      local: '2025-09-13 11:20:37-07:00'
+    actual:
+      utc: '2025-09-13T18:20:37Z'
+      local: '2025-09-13 11:20:37-07:00'
+    runway: 16R
+  departure_versus_schedule: +0:26:13
+  arrival_versus_schedule: +0:21:37
+  airborne_duration: '1:44:24'
+  flight_plan:
+    planned_time_enroute: '1:49:00'
+    cruise_altitude_ft: 36000
+    cruise_speed_kt: 445
+    route_text: SQUAT5 SQUAT PROMT Q88 LAKRR PURSE JANNY5
+    route_distance_mi: 699
+  operator:
+    name: RGY
+    icao: RGY
+  flight_number: '872'
+- number: 14
+  flightaware_id: RGY872-1757785747-sw-1499p
+  callsign: RGY872
+  callsign_icao: RGY872
+  registration: N872RA
+  aircraft_type_code: BE40
+  flight_category: general aviation
+  outcome: Arrived
+  progress_percent: 100
+  flags: []
+  from:
+    icao: KVNY
+    iata: VNY
+    faa_lid: VNY
+    name: Van Nuys
+    city: Van Nuys
+    timezone: America/Los_Angeles
+  to:
+    icao: KSNA
+    iata: SNA
+    faa_lid: SNA
+    name: John Wayne
+    city: Santa Ana
+    timezone: America/Los_Angeles
+  takeoff:
+    scheduled:
+      utc: '2025-09-13T18:10:00Z'
+      local: '2025-09-13 11:10:00-07:00'
+    estimated:
+      utc: '2025-09-13T18:38:16Z'
+      local: '2025-09-13 11:38:16-07:00'
+    actual:
+      utc: '2025-09-13T18:38:16Z'
+      local: '2025-09-13 11:38:16-07:00'
+    runway: 16R
+  landing:
+    scheduled:
+      utc: '2025-09-13T18:22:00Z'
+      local: '2025-09-13 11:22:00-07:00'
+    estimated:
+      utc: '2025-09-13T19:00:34Z'
+      local: '2025-09-13 12:00:34-07:00'
+    actual:
+      utc: '2025-09-13T19:00:34Z'
+      local: '2025-09-13 12:00:34-07:00'
+    runway: 20R
+  departure_versus_schedule: +0:28:16
+  arrival_versus_schedule: +0:38:34
+  airborne_duration: 0:22:18
+  flight_plan:
+    planned_time_enroute: 0:12:00
+    cruise_altitude_ft: 9000
+    cruise_speed_kt: 284
+    route_text: BURP21
+    route_distance_mi: 101
+  operator:
+    name: RGY
+    icao: RGY
+  flight_number: '872'

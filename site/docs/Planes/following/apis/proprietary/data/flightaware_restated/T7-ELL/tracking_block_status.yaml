@@ -1,0 +1,10 @@
+# Restated from a FlightAware AeroAPI response, in our own layout.
+# The raw response is held privately and is not republished.
+about:
+  aircraft: "T7-ELL"
+  question_asked: "Is T7-ELL on FlightAware's display block list?"
+  source: "FlightAware AeroAPI v4 aircraft blocked-status lookup; the raw response is held privately and is not republished."
+  retrieved_utc: "2026-09-15T03:20:17.885Z"
+  vendor_http_status: 200
+on_display_block_list: true
+reading: "FlightAware lists T7-ELL as blocked, so it withholds the aircraft's flights from public display; T7-ELL is not a US registration, so the FAA's privacy programmes do not apply and FlightAware does not say who asked or why. That is not a deletion, and the aircraft still broadcasts to volunteer ADS-B receivers."

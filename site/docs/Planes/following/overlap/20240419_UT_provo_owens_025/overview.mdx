@@ -28,6 +28,33 @@ borderRadius:'4px', textDecoration:'none', fontSize:'0.9rem'}}>← Overlap dates
 
 # 19 April 2024 — Provo, UT
 
+{/* CK_SHORT_ANSWER:START */}
+
+:::note[The short answer]
+
+| Question | Answer |
+|---|---|
+| **Was SU-BND at Provo (KPVU) around 19 April 2024?** | **Yes.** FlightAware records it: landed at KPVU Provo on Fri 19 Apr 2024, 3:34 pm MDT (21:34 UTC), from KSLC Salt Lake City. Free ADS-B receivers also heard it there, on the ground. The tracking-site audit scored this row inaccurate; FlightAware's record says otherwise. |
+| **Was Erika Kirk there?** | **No dated source says so.** The claim rests on the overlap sheet's location cell. Her itinerary has never been published and her [flight logs are reported erased](/Planes/Erika-Flight-Logs-Erased). |
+| **Was a Kirk-party aircraft there?** | **None heard.** No Kirk-party aircraft was heard on the ground at KPVU that day. Checked: N102DZ, N582MM, N872RA, N40JD, N560TW, N888KG. |
+| **Does this show anyone was being followed?** | **No.** A flight record places an aircraft, never a person, and never a purpose. The counterargument is further down this page. |
+
+:::
+
+### FlightAware timeline, 16 Apr to 22 Apr 2024
+
+| # | Aircraft | From | Took off | To | Landed | FlightAware says |
+|---|---|---|---|---|---|---|
+| 1 | SU-BND | a point near Cairo (30.27, 31.30) | Thu 18 Apr 2024, 9:04 am EET (07:04 UTC) | LFPB Paris | Thu 18 Apr 2024, 1:33 pm CEST (11:33 UTC) | Arrived |
+| 2 | SU-BND | LFPB Paris | Fri 19 Apr 2024, 9:51 am CEST (07:51 UTC) | CYYR Goose Bay | Fri 19 Apr 2024, 10:32 am ADT (13:32 UTC) | Arrived |
+| 3 | SU-BND | CYYR Goose Bay | Fri 19 Apr 2024, 11:41 am ADT (14:41 UTC) | KSLC Salt Lake City | Fri 19 Apr 2024, 2:02 pm MDT (20:02 UTC) | Arrived |
+| 4 | SU-BND | KSLC Salt Lake City | Fri 19 Apr 2024, 3:10 pm MDT (21:10 UTC) | KPVU Provo | Fri 19 Apr 2024, 3:34 pm MDT (21:34 UTC) | Arrived |
+
+*Every flight FlightAware holds for the aircraft from three days before the claimed date to three days after it, the overlap window this site uses. Local time is the time at that airport. Restated from FlightAware's data; the files are listed in the FlightAware section below.*
+
+{/* CK_SHORT_ANSWER:END */}
+
+
 **Primary ADS-B position data places [SU-BND](/Planes/SU-BND/overview) on the ground at Provo Municipal Airport (KPVU), Provo, UT, on 19 April 2024. The closest recovered fix is 0.05 km from the field.** Both free archives hold the day, and they agree with each other.
 
 That corroborates the **aircraft** half of this row, and only the aircraft half. **A trace places an airframe, never a person.** No archive anywhere puts Charlie Kirk or Erika Kirk aboard anything. This row is one of [25 of the 85 rows](/Planes/following/cuts/adsb-at-claimed-airport-25) that primary position data puts at the field the claim names.
@@ -62,6 +89,37 @@ This page records what somebody **claimed**. This section records what the recov
 *Verdicts come from `overlaps.csv`, derived from the recovered traces. See [Investigating Deleted Flights](/Planes/investigating_deleted_flights) §4.13 for how the 85 claims break down as a whole, and [the overlap window definition](/Planes/following/Overlap_Window_Definition) for what counts as an overlap at all.*
 
 {/* CK_ADSB_VERDICT:END */}
+
+{/* CK_AEROAPI_VERDICT:START */}
+
+## What FlightAware's flight record says
+
+The section above is what free, volunteer ADS-B receivers heard. This section is what **FlightAware**, a commercial flight-tracking service, recorded for the same aircraft over the same days. It is a different source with different gaps, checked on 14 September 2026.
+
+### FlightAware, SU-BND: the aircraft was at the claimed airport
+
+| Field | Value |
+|---|---|
+| Claim ID | **OWENS-025** |
+| Aircraft | [SU-BND](/Planes/SU-BND/overview) |
+| Days checked | 2024-04-16 to 2024-04-23 UTC, end exclusive |
+| **FlightAware verdict** | **AT_FIELD** |
+| At the claimed airport | landed 2024-04-19 21:34 UTC (15:34 MDT) on the leg KSLC (Salt Lake City Intl) [USA] -&gt; KPVU (Provo Muni) [USA], day +0, FlightAware status Arrived |
+| Flights FlightAware holds in those days | 4 |
+| Before and after | last flight before the window landed at position 29.82,31.19 ~10 km from EG-0058 Sahra' Muhafadhat al-Jeezah Airfield [Egypt] 2023-06-24 08:18 UTC; first flight after it took off from position 29.71,31.40 ~14 km from HE15 Helwan Air Base [Egypt] 2024-12-07 16:15 UTC. Only the weeks that were pulled are known - a gap between them was never asked about. |
+
+**What that verdict means.** FlightAware records this aircraft landing at, or taking off from, the claimed airport inside the window. **That confirms the aircraft half of the claim, and only that half.**
+
+**Against the other checks on this row.** Agrees with ADS-B: both place the aircraft at the claimed field. Also disagrees with the tracking-site audit, which scored this row inaccurate.
+
+**The data.** FlightAware does not allow its responses to be republished, so the raw responses are held privately. What is published is every fact in them, restated in our own layout and checked field by field against the raw response by `check_restated.py`:
+
+* [`2024-04-16_to_2024-04-23_flights_page1.yaml`](https://github.com/ACT3ai/charlie-kirk/blob/main/site/docs/Planes/following/apis/proprietary/data/flightaware_restated/SU-BND/2024-04-16_to_2024-04-23_flights_page1.yaml)
+
+**This is about the aircraft only.** No flight record places any person aboard any aircraft, and FlightAware's does not either.
+
+{/* CK_AEROAPI_VERDICT:END */}
+
 
 
 **This page is one row of the overlap sheet that produced the "73 times" figure — reconstructed, sourced, and checked.** It is not a finding by this site. It records what the compilation claimed for this date, who it says was there, and what an independent audit of the flight archive found when it looked.

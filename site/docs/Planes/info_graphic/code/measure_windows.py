@@ -144,8 +144,45 @@ def runs(marked, date, gap=RUN_GAP_SEC):
             "median_km": round(sorted(h[1] for h in r)[len(r) // 2], 2),
             "min_alt_ft": int(min(alts)) if alts else None,
             "srcs": sorted({h[3] for h in r}),
+            # Added 2026-09-14. The two ENDS of the window, not just its extremes:
+            # a window that ends low and close is an approach, and the lowest
+            # altitude alone cannot tell that apart from a low pass that climbed away.
+            "first_km": round(r[0][1], 2),
+            "last_km": round(r[-1][1], 2),
+            "first_alt_ft": None if r[0][2] is None else int(r[0][2]),
+            "last_alt_ft": None if r[-1][2] is None else int(r[-1][2]),
+            "_first_t": r[0][0],
+            "_last_t": r[-1][0],
         })
     return windows
+
+
+# How far either side of the claimed date to look for the aircraft's next (or last)
+# position, when the day's trace ends on an approach or starts on a climb-out.
+LOOK_DAYS = 4
+
+
+def heard_beyond(tail, date, ap, step):
+    """The first position heard AFTER this UTC day (step=+1), or the last one BEFORE it (step=-1).
+
+    Added 2026-09-14. SU-BTT almost never sets the ADS-B on-ground flag, so a landing
+    at a field reads as an airborne window that simply stops, and the aircraft is next
+    heard at the same field a day or two later. This records WHERE that next position
+    was, from the nearest day within LOOK_DAYS that holds any position at all. It does
+    not decide anything - build_info_yaml.py does - and nothing in the gap is invented:
+    the generator draws the gap as NOT HEARD.
+    """
+    d0 = dt.date.fromisoformat(date)
+    for k in range(1, LOOK_DAYS + 1):
+        day = (d0 + dt.timedelta(days=step * k)).isoformat()
+        pts, _ = points_for(tail, day)
+        if not pts:
+            continue
+        t, lat, lon, alt, src = pts[0] if step > 0 else pts[-1]
+        return {"utc": _iso(day, t), "km": round(haversine_km(lat, lon, ap["lat"], ap["lon"]), 2),
+                "on_ground": alt is None, "alt_ft": None if alt is None else int(alt), "source": src,
+                "date": day}
+    return None
 
 
 def measure(tail, date, ap):
@@ -170,6 +207,16 @@ def measure(tail, date, ap):
                       "on_ground": best[2] is None, "source": best[3]}
     rec["ground"] = runs(ground_hits, date)
     rec["near"] = runs(near_hits, date)
+    # Does the whole day's trace START or END inside a window? Nothing heard after
+    # a low, close, descending window that day is what an unheard landing looks like.
+    day_first, day_last = pts[0][0], pts[-1][0]
+    for w in rec["ground"] + rec["near"]:
+        w["trace_starts_here"] = w.pop("_first_t") <= day_first + 1
+        w["trace_ends_here"] = w.pop("_last_t") >= day_last - 1
+    if any(w["trace_ends_here"] for w in rec["near"]):
+        rec["next_heard"] = heard_beyond(tail, date, ap, +1)
+    if any(w["trace_starts_here"] for w in rec["near"]):
+        rec["previous_heard"] = heard_beyond(tail, date, ap, -1)
     return rec
 
 

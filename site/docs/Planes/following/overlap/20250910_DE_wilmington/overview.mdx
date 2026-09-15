@@ -29,6 +29,32 @@ borderRadius:'4px', textDecoration:'none', fontSize:'0.9rem'}}>← Overlap dates
 
 # 10 September 2025 — Wilmington, Delaware
 
+{/* CK_SHORT_ANSWER:START */}
+
+:::note[The short answer]
+
+| Question | Answer |
+|---|---|
+| **Was SU-BTT at Wilmington (KILG) around 10 September 2025?** | **Yes.** FlightAware records it: landed at KILG Wilmington on Wed 10 Sep 2025, 12:51 pm EDT (16:51 UTC), from KPVU Provo; took off from KILG Wilmington on Thu 11 Sep 2025, 7:56 am EDT (11:56 UTC), to HEAZ Almaza Air Base. Free ADS-B receivers also heard it there, in the air 1.8 km from the field. |
+| **How long was SU-BTT there?** | **About 19 hours.** Landed Wed 10 Sep 2025, 12:51 pm EDT (16:51 UTC); next took off Thu 11 Sep 2025, 7:56 am EDT (11:56 UTC). |
+| **Was Erika Kirk there?** | **No dated source says so.** The claim rests on the overlap sheet's location cell. Her itinerary has never been published and her [flight logs are reported erased](/Planes/Erika-Flight-Logs-Erased). |
+| **Was a Kirk-party aircraft there?** | **None heard.** No Kirk-party aircraft was heard on the ground at KILG that day. Checked: N102DZ, N582MM, N872RA, N40JD, N560TW, N888KG. |
+| **Does this show anyone was being followed?** | **No.** A flight record places an aircraft, never a person, and never a purpose. The counterargument is further down this page. |
+
+:::
+
+### FlightAware timeline, 7 Sep to 13 Sep 2025
+
+| # | Aircraft | From | Took off | To | Landed | FlightAware says |
+|---|---|---|---|---|---|---|
+| 1 | SU-BTT | KPVU Provo | Wed 10 Sep 2025, 7:14 am MDT (13:14 UTC) | KILG Wilmington | Wed 10 Sep 2025, 12:51 pm EDT (16:51 UTC) | Arrived |
+| 2 | SU-BTT | KILG Wilmington | Thu 11 Sep 2025, 7:56 am EDT (11:56 UTC) | HEAZ Almaza Air Base | Fri 12 Sep 2025, 12:36 am EEST (21:36 UTC) | Arrived |
+
+*Every flight FlightAware holds for the aircraft from three days before the claimed date to three days after it, the overlap window this site uses. Local time is the time at that airport. Restated from FlightAware's data; the files are listed in the FlightAware section below.*
+
+{/* CK_SHORT_ANSWER:END */}
+
+
 **On 10 September 2025 primary ADS-B position data puts [SU-BTT](/Planes/SU-BTT/overview) at Wilmington Airport / New Castle (KILG), Wilmington, Delaware — closest recovered fix 1.75 km from the field, on the arrival. The only on-ground positions in that day's trace are at Provo, Utah, where the aircraft started the day.**
 
 **The aircraft half of this row is corroborated. The person half is not, and it is the whole claim.** The row exists because one compilation cell places Erika Kirk in "Nebraska/Delaware" for media appearances on the day her husband was killed; **she has said she was at home in Arizona with her mother.** Neither version is independently documented, and [her flight logs are reported erased](/Planes/Erika-Flight-Logs-Erased).
@@ -67,6 +93,37 @@ This page records what somebody **claimed**. This section records what the recov
 *Verdicts come from `overlaps.csv`, derived from the recovered traces. See [Investigating Deleted Flights](/Planes/investigating_deleted_flights) §4.13 for how the 85 claims break down as a whole, and [the overlap window definition](/Planes/following/Overlap_Window_Definition) for what counts as an overlap at all.*
 
 {/* CK_ADSB_VERDICT:END */}
+
+{/* CK_AEROAPI_VERDICT:START */}
+
+## What FlightAware's flight record says
+
+The section above is what free, volunteer ADS-B receivers heard. This section is what **FlightAware**, a commercial flight-tracking service, recorded for the same aircraft over the same days. It is a different source with different gaps, checked on 14 September 2026.
+
+### FlightAware, SU-BTT: the aircraft was at the claimed airport
+
+| Field | Value |
+|---|---|
+| Claim ID | **SITE-005** |
+| Aircraft | [SU-BTT](/Planes/SU-BTT/overview) |
+| Days checked | 2025-09-07 to 2025-09-14 UTC, end exclusive |
+| **FlightAware verdict** | **AT_FIELD** |
+| At the claimed airport | landed 2025-09-10 16:51 UTC (12:51 EDT) on the leg KPVU (Provo Muni) [USA] -&gt; KILG (New Castle) [USA], day +0, FlightAware status Arrived \| took off 2025-09-11 11:56 UTC (07:56 EDT) on the leg KILG (New Castle) [USA] -&gt; HEAZ (Almaza Air Base) [Egypt], day +1, FlightAware status Arrived |
+| Flights FlightAware holds in those days | 2 |
+| Before and after | last flight before the window landed at KLNK (Lincoln) [USA] 2025-08-17 17:00 UTC; no later flight pulled. Only the weeks that were pulled are known - a gap between them was never asked about. |
+
+**What that verdict means.** FlightAware records this aircraft landing at, or taking off from, the claimed airport inside the window. **That confirms the aircraft half of the claim, and only that half.**
+
+**Against the other checks on this row.** Agrees with ADS-B: both place the aircraft at the claimed field.
+
+**The data.** FlightAware does not allow its responses to be republished, so the raw responses are held privately. What is published is every fact in them, restated in our own layout and checked field by field against the raw response by `check_restated.py`:
+
+* [`2025-09-07_to_2025-09-14_flights_page1.yaml`](https://github.com/ACT3ai/charlie-kirk/blob/main/site/docs/Planes/following/apis/proprietary/data/flightaware_restated/SU-BTT/2025-09-07_to_2025-09-14_flights_page1.yaml)
+
+**This is about the aircraft only.** No flight record places any person aboard any aircraft, and FlightAware's does not either.
+
+{/* CK_AEROAPI_VERDICT:END */}
+
 
 
 ## The pairing, in one sentence

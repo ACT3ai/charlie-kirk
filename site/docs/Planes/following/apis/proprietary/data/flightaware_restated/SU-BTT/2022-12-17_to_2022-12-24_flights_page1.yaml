@@ -1,0 +1,80 @@
+# Restated from a FlightAware AeroAPI response, in our own layout.
+# The raw response is held privately and is not republished.
+about:
+  aircraft: "SU-BTT"
+  question_asked: "Which flights does FlightAware hold for registration SU-BTT from 17 December 2022 up to 24 December 2022 (UTC)?"
+  source: "FlightAware AeroAPI v4 flight history, searched by registration; the raw response is held privately and is not republished."
+  retrieved_utc: "2026-09-14T08:55:22.879Z"
+  vendor_http_status: 200
+  window_utc_from: "2022-12-17T00:00:00Z"
+  window_utc_until_exclusive: "2022-12-24T00:00:00Z"
+  result_page: 1
+  total_pages_reported: 1
+  further_pages_held_by_vendor: false
+flights_recorded: 2
+reading: "FlightAware records two SU-BTT flights in this window: from a position near Cairo to Paris Le Bourget, then Paris Le Bourget to Spirit of St Louis. These are aircraft movements only and place no person aboard."
+flights:
+  - number: 1
+    flightaware_id: "SUBTT-1671424476-11-0-214"
+    callsign: "SU-BTT"
+    registration: "SU-BTT"
+    flight_category: "general aviation"
+    outcome: "Arrived"
+    progress_percent: 100
+    flags: []
+    from:
+      position_only_point: {lat: 30.49127, lon: 30.97407}
+      city: "Cairo"
+      timezone: "Africa/Cairo"
+    to:
+      icao: "LFPB"
+      iata: "LBG"
+      name: "Paris Le Bourget"
+      city: "Paris"
+      timezone: "Europe/Paris"
+    takeoff:
+      scheduled: {utc: "2022-12-19T06:09:42Z", local: "2022-12-19 08:09:42+02:00"}
+      estimated: {utc: "2022-12-19T06:09:42Z", local: "2022-12-19 08:09:42+02:00"}
+      actual: {utc: "2022-12-19T06:09:42Z", local: "2022-12-19 08:09:42+02:00"}
+    landing:
+      estimated: {utc: "2022-12-19T10:36:16Z", local: "2022-12-19 11:36:16+01:00"}
+      actual: {utc: "2022-12-19T10:36:16Z", local: "2022-12-19 11:36:16+01:00"}
+      runway: "27"
+    departure_versus_schedule: "+0:00:00"
+    airborne_duration: "4:26:34"
+  - number: 2
+    flightaware_id: "SUBTT-1671523421-11-0-214"
+    callsign: "SU-BTT"
+    registration: "SU-BTT"
+    flight_category: "general aviation"
+    outcome: "Arrived"
+    progress_percent: 100
+    flags: []
+    from:
+      icao: "LFPB"
+      iata: "LBG"
+      name: "Paris Le Bourget"
+      city: "Paris"
+      timezone: "Europe/Paris"
+    to:
+      icao: "KSUS"
+      iata: "SUS"
+      faa_lid: "SUS"
+      name: "Spirit of St Louis"
+      city: "St Louis"
+      timezone: "America/Chicago"
+    takeoff:
+      scheduled: {utc: "2022-12-20T08:58:31Z", local: "2022-12-20 09:58:31+01:00"}
+      estimated: {utc: "2022-12-20T08:56:28Z", local: "2022-12-20 09:56:28+01:00"}
+      actual: {utc: "2022-12-20T08:56:28Z", local: "2022-12-20 09:56:28+01:00"}
+      runway: "25"
+    landing:
+      scheduled: {utc: "2022-12-20T17:41:04Z", local: "2022-12-20 11:41:04-06:00"}
+      estimated: {utc: "2022-12-20T17:39:01Z", local: "2022-12-20 11:39:01-06:00"}
+      actual: {utc: "2022-12-20T17:39:01Z", local: "2022-12-20 11:39:01-06:00"}
+      runway: "08R"
+    departure_versus_schedule: "-0:02:03"
+    arrival_versus_schedule: "-0:02:03"
+    airborne_duration: "8:42:33"
+    flight_plan:
+      planned_time_enroute: "8:42:33"
