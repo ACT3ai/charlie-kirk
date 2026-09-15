@@ -1,0 +1,16 @@
+# Restated from a FlightAware AeroAPI response, in our own layout.
+# The raw response is held privately and is not republished.
+about:
+  aircraft: "N582MM"
+  question_asked: "Which flights does FlightAware hold for N582MM between 9 and 16 September 2025 (UTC)?"
+  source: "FlightAware AeroAPI v4 flight history by registration; the raw response is held privately and is not republished."
+  retrieved_utc: "2026-09-15T02:54:51.429Z"
+  vendor_http_status: 200
+  window_utc_from: "2025-09-09T00:00:00Z"
+  window_utc_until_exclusive: "2025-09-16T00:00:00Z"
+  result_page: 1
+  total_pages_reported: 1
+  further_pages_held_by_vendor: false
+flights_recorded: 0
+reading: "FlightAware holds no flight for N582MM in this window, yet volunteer ADS-B receivers heard it land that week at Broomfield CO, Austin, Provo UT (00:57 UTC on 11 September 2025), Washington Dulles, Chicago Midway and Salt Lake City. FlightAware separately lists this aircraft as blocked, so the flights exist and are hidden from this lookup; this places no person anywhere."
+flights: []
