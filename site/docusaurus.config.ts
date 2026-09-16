@@ -18,10 +18,37 @@ const config: Config = {
   tagline: siteTagline,
   favicon: "img/favicon.ico",
   staticDirectories: ["internals/static"],
+  // Skips an IPFS video to its next gateway when one stalls instead of erroring.
+  clientModules: ["./internals/src/clientModules/ipfsVideoFallback.js"],
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
     v4: true, // Improve compatibility with the upcoming Docusaurus v4
+  },
+
+  // future.v4 turns OFF the legacy admonition title form `:::caution Legal Disclaimer`
+  // (space before the title). 742 pages use that form, and with it off they render as
+  // raw ":::caution ..." paragraph text. Keep it on until every page uses
+  // `:::caution[Legal Disclaimer]`.
+  markdown: {
+    mdx1Compat: {
+      admonitions: true,
+    },
+    // NO RIGHT-HAND TABLE OF CONTENTS, ON ANY PAGE. This site's only right-hand
+    // furniture is the citizen notice rail (site/src/theme/Root.tsx). The
+    // Docusaurus "On this page" TOC used to be hidden per page with
+    // `hide_table_of_contents: true` in front matter — 5,157 pages carried it
+    // and 1,575 did not, so the TOC kept reappearing on whichever pages a
+    // generator or a hand-written file forgot the line. This hook forces the
+    // flag on every doc at parse time, so DocItem/Layout treats every page as
+    // TOC-hidden (no TOC, full-width content column) with no per-page list to
+    // fall out of date. Second and third layers: src/theme/DocItem/TOC/* render
+    // null, and custom.css (CK_NO_TOC) hides the TOC classes.
+    parseFrontMatter: async (params) => {
+      const result = await params.defaultParseFrontMatter(params);
+      result.frontMatter.hide_table_of_contents = true;
+      return result;
+    },
   },
 
   // Set the production url of your site here

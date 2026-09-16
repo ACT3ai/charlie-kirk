@@ -1162,6 +1162,12 @@ FILE:
   build does, so MDX breakage is caught locally. Deliberately does NOT enable
   @slorber/remark-comment — adding it once made every laws/*.md page pass
   locally and fail the deploy. `node site/_ck_mdxcheck.mjs <files...>`.
+* tools/sync_right_bar.py: Generates the wording of the right bar (the notice
+  rail shown on every page by site/src/theme/Root.tsx) from
+  ~/BGit/all/politics/charlie_kirk/ck/docusaurus/right_bar.txt into
+  site/internals/src/data/right_bar.json. READS the txt, never writes it. Edit
+  the txt, run `python3 tools/sync_right_bar.py`, commit the JSON. The email
+  at the end of the txt renders as a mailto: link.
 * site/inject_nav_gallery.py: Idempotently injects two-column nav galleries into
   every non-root overview.mdx under Photos/ and Videos/, between CK_NAV_GALLERY
   markers, above "Related Areas" and below the in-body TOC. Computes real aspect

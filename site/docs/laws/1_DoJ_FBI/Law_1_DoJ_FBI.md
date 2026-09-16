@@ -166,7 +166,7 @@ The Congress finds the following:
    15. All records relating to crime scene alteration, including who authorized paving over the crime scene
    16. All records related to Tyler Robinson's family statements and his claim of knowledge of other perpetrators (Items #177-#180)
    17. All records of witness intimidation including fake therapy sessions and witness suppression (Items #180-#182)
-   18. All records related to Brian Harpole (member of Kirk's security detail with foreign security service background) (Item #183)
+   18. All records related to Brian Harpole and the contracted private security detail (Item #183)
    19. All records related to hospital routing decisions and FBI blocking a surgeon (Items #183-#186)
    20. All TPUSA financial records, including payments to entities alleged to be shell companies and post-assassination board actions, sufficient to permit investigators to determine whether any financial irregularities or possible fraud occurred (Items #186-#188)
    21. All records from Mosaic Pro Events, the Rode Wireless PRO microphone audio, and Mikey McCoy's mic-up video (Items #188-#191)
@@ -709,7 +709,7 @@ Each item in Schedule A is individually mandated for complete disclosure. Partia
 
 ### Security Detail & Foreign Connections (#183)
 
-* #183: Brian Harpole — Foreign Security Background on Kirk Detail: Each covered agency shall produce all records, contracts, and communications related to Brian Harpole, a former police officer who headed the contracted private security detail for Charlie Kirk on September 10, 2025, and whom commentators allege a 2017 photograph places on a foreign head-of-state security detail — an allegation Harpole disputes and that no official record cited here confirms. Each covered agency shall also produce his full employment history with any foreign government or foreign security service, who placed him on Kirk's detail, his communications in the 30 days before and after the assassination, and whether any foreign government entity coordinated his assignment.
+* #183: Brian Harpole — Contracted Security Detail Records: Each covered agency shall produce all records, contracts, and communications related to Brian Harpole, a former police officer who headed the contracted private security detail for Charlie Kirk on September 10, 2025, and whose firm was reportedly engaged shortly before the event. Each covered agency shall also produce the detail's contract, staffing roster, and protection plan for the event, who placed the firm on Kirk's detail, his communications in the 30 days before and after the assassination, and any coordination between the detail and any government agency or third party regarding the event's security.
 
 ### Medical & Hospital Records (#184–#186)
 

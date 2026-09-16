@@ -24,9 +24,9 @@ All items #176 through #201 proposed in this analysis have been incorporated int
 
 ---
 
-## Security Detail & Israeli Connections
+## Security Detail
 
-**#181: Brian Harpole — Netanyahu Bodyguard on Kirk Detail** — ADDED (Law item #182 in all four laws, titled "Brian Harpole — Foreign Security Background on Kirk Detail")
+**#181: Brian Harpole — Contracted Security Detail Records** — ADDED (Law item #183 in all four laws, titled "Brian Harpole — Contracted Security Detail Records")
 
 ---
 
@@ -128,7 +128,7 @@ Related public pages: [Fix overview](/Fix/overview), [laws landing](/laws), Disc
 ## Interesting In This Area
 
 * All twenty-six proposed items were added and renumbered across [all four bills](/laws/other/List_Of_Laws).
-* Item 182 concerns a detail member's reported foreign security background in [Law 1](/laws/DoJ_FBI/Law_1_DoJ_FBI).
+* Item 183 concerns the contracted security detail's records in [Law 1](/laws/DoJ_FBI/Law_1_DoJ_FBI).
 * [Law 4](/laws/Trusted_Investigations/Law_4_Trusted_Investigations) must investigate each of those items individually and report on it.
 * [The remaining challenge](/laws/other/analysis/Challenges) is the count itself, not the content.
 

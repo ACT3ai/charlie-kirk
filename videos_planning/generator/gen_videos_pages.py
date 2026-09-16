@@ -21,6 +21,7 @@ from concurrent.futures import ThreadPoolExecutor
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from sanitize_video import sanitize_prose, sanitize_block, validate_no_invisible
+import ipfs_gateways
 
 HERE     = os.path.dirname(os.path.abspath(__file__))
 ROOT     = os.path.expanduser('~/BGit/Bryan_git/charlie-kirk')
@@ -530,14 +531,12 @@ def player_block(r):
     if r['assumed_ratio'] and r['mode'] == 'ipfs':
         ratio_note = '\n{/* aspect ratio assumed 16:9 - no local copy to measure */}'
     if r['mode'] == 'ipfs':
-        # Subdomain gateways ONLY. The path form - ipfs.io/ipfs/<cid> and
-        # dweb.link/ipfs/<cid> - returns 403 to any request carrying a browser
-        # User-Agent and a third-party Referer, which is every real visitor.
-        # Verified 2026-08-19: path form 403, subdomain form 206 video/mp4.
+        # Gateway list and its measurements live in ipfs_gateways.py - the
+        # same list rewrite_video_gateways.py applies to existing pages.
+        # (dweb.link / ipfs.io / w3s.link retired 2026-09; see that module.)
         b32 = base32(cid)
         if b32:
-            srcs = (f'    <source src="https://{b32}.ipfs.dweb.link/" type="video/mp4" />\n'
-                    f'    <source src="https://{b32}.ipfs.w3s.link/" type="video/mp4" />\n')
+            srcs = ipfs_gateways.video_sources(b32, '    ')
         else:
             srcs = f'    {{/* no base32 for CID {cid} - no playable source emitted */}}\n'
         return (f'{ratio_note}\n<div className="ck-video-wrap {wrap_mod}">\n'

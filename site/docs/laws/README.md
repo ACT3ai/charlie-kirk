@@ -271,7 +271,7 @@ Related public pages: [Fix overview](/Fix/overview), [laws landing](/laws), Disc
 
 ## Interesting
 
-* [Item #182](/laws/other/analysis/Fixed/Any_more_to_Add) concerns a detail member's reported foreign security background.
+* [Item #182](/laws/other/analysis/Fixed/Any_more_to_Add) concerns the contracted security detail's records.
 * A claim alleges the [autopsy was signed off](/Medical/medical_examiner) while still an editable draft.
 * The treating surgeon was reportedly [a pediatric surgeon with a military residency](/Medical/military_backgrounds_hospital_staff).
 
