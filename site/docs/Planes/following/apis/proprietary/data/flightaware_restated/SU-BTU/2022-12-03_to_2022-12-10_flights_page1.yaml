@@ -1,0 +1,103 @@
+# Restated from a FlightAware AeroAPI response, in our own layout.
+# The raw response is held privately and is not republished.
+about:
+  aircraft: SU-BTU
+  question_asked: Which flights does FlightAware hold for SU-BTU between 3 December 2022 and 10 December 2022 (UTC)?
+  source: FlightAware AeroAPI v4 flight history by registration; the raw response is held privately and is not republished.
+  retrieved_utc: '2026-09-16T02:41:14.073Z'
+  vendor_http_status: 200
+  window_utc_from: '2022-12-03T00:00:00Z'
+  window_utc_until_exclusive: '2022-12-10T00:00:00Z'
+  result_page: 1
+  total_pages_reported: 1
+  further_pages_held_by_vendor: false
+flights_recorded: 2
+reading: FlightAware holds 2 flights for SU-BTU in this window, listed here in full with the times it recorded. A flight record shows where an aircraft went; it never shows who was aboard.
+flights:
+- number: 1
+  flightaware_id: SUBTU-1670250397-adhoc-0
+  callsign: SU-BTU
+  registration: SU-BTU
+  flight_category: general aviation
+  outcome: Arrived
+  progress_percent: 100
+  flags: []
+  from:
+    icao: KSUS
+    iata: SUS
+    faa_lid: SUS
+    name: Spirit of St Louis
+    city: St Louis
+    timezone: America/Chicago
+  to:
+    icao: KILG
+    iata: ILG
+    faa_lid: ILG
+    name: New Castle
+    city: Wilmington
+    timezone: America/New_York
+  takeoff:
+    scheduled:
+      utc: '2022-12-05T14:38:09Z'
+      local: '2022-12-05 08:38:09-06:00'
+    estimated:
+      utc: '2022-12-05T14:32:12Z'
+      local: '2022-12-05 08:32:12-06:00'
+    actual:
+      utc: '2022-12-05T14:32:12Z'
+      local: '2022-12-05 08:32:12-06:00'
+    runway: 26L
+  landing:
+    scheduled:
+      utc: '2022-12-05T16:10:08Z'
+      local: '2022-12-05 11:10:08-05:00'
+    estimated:
+      utc: '2022-12-05T16:04:11Z'
+      local: '2022-12-05 11:04:11-05:00'
+    actual:
+      utc: '2022-12-05T16:04:11Z'
+      local: '2022-12-05 11:04:11-05:00'
+    runway: '19'
+  departure_versus_schedule: -0:05:57
+  arrival_versus_schedule: -0:05:57
+  airborne_duration: '1:31:59'
+  flight_plan:
+    planned_time_enroute: '1:31:59'
+- number: 2
+  flightaware_id: SUBTU-1670501742-adhoc-0
+  callsign: SU-BTU
+  registration: SU-BTU
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    icao: KILG
+    iata: ILG
+    faa_lid: ILG
+    name: New Castle
+    city: Wilmington
+    timezone: America/New_York
+  to:
+    position_only_point:
+      lat: 31.31561
+      lon: 29.85852
+    city: Amreya
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2022-12-08T12:31:31Z'
+      local: '2022-12-08 07:31:31-05:00'
+    estimated:
+      utc: '2022-12-08T12:24:46Z'
+      local: '2022-12-08 07:24:46-05:00'
+    actual:
+      utc: '2022-12-08T12:24:46Z'
+      local: '2022-12-08 07:24:46-05:00'
+    runway: '01'
+  landing:
+    actual:
+      utc: '2022-12-08T12:24:46Z'
+      local: '2022-12-08 14:24:46+02:00'
+  departure_versus_schedule: -0:06:45
+  airborne_duration: 0:00:00

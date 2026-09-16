@@ -1,0 +1,104 @@
+# Restated from a FlightAware AeroAPI response, in our own layout.
+# The raw response is held privately and is not republished.
+about:
+  aircraft: SU-BTU
+  question_asked: Which flights does FlightAware hold for SU-BTU between 10 August 2024 and 17 August 2024 (UTC)?
+  source: FlightAware AeroAPI v4 flight history by registration; the raw response is held privately and is not republished.
+  retrieved_utc: '2026-09-16T02:43:19.934Z'
+  vendor_http_status: 200
+  window_utc_from: '2024-08-10T00:00:00Z'
+  window_utc_until_exclusive: '2024-08-17T00:00:00Z'
+  result_page: 1
+  total_pages_reported: 1
+  further_pages_held_by_vendor: false
+flights_recorded: 2
+reading: FlightAware holds 2 flights for SU-BTU in this window, listed here in full with the times it recorded. A flight record shows where an aircraft went; it never shows who was aboard.
+flights:
+- number: 1
+  flightaware_id: SUBTU-1723522609-sw-2394p
+  callsign: SU-BTU
+  registration: SU-BTU
+  flight_category: general aviation
+  outcome: Arrived
+  progress_percent: 100
+  flags: []
+  from:
+    position_only_point:
+      lat: 30.09064
+      lon: 31.35333
+    city: Cairo
+    timezone: Africa/Cairo
+  to:
+    icao: LFPB
+    iata: LBG
+    name: Paris Le Bourget
+    city: Paris
+    timezone: Europe/Paris
+  takeoff:
+    scheduled:
+      utc: '2024-08-13T06:21:04Z'
+      local: '2024-08-13 09:21:04+03:00'
+    estimated:
+      utc: '2024-08-13T06:14:04Z'
+      local: '2024-08-13 09:14:04+03:00'
+    actual:
+      utc: '2024-08-13T06:14:04Z'
+      local: '2024-08-13 09:14:04+03:00'
+  landing:
+    estimated:
+      utc: '2024-08-13T10:12:48Z'
+      local: '2024-08-13 12:12:48+02:00'
+    actual:
+      utc: '2024-08-13T10:12:48Z'
+      local: '2024-08-13 12:12:48+02:00'
+    runway: '27'
+  departure_versus_schedule: -0:07:00
+  airborne_duration: '3:58:44'
+- number: 2
+  flightaware_id: SUBTU-1723601512-sw-1022p
+  callsign: SU-BTU
+  registration: SU-BTU
+  flight_category: general aviation
+  outcome: Arrived
+  progress_percent: 100
+  flags: []
+  from:
+    icao: LFPB
+    iata: LBG
+    name: Paris Le Bourget
+    city: Paris
+    timezone: Europe/Paris
+  to:
+    icao: KICT
+    iata: ICT
+    faa_lid: ICT
+    name: Wichita Eisenhower
+    city: Wichita
+    timezone: America/Chicago
+  takeoff:
+    scheduled:
+      utc: '2024-08-14T08:21:09Z'
+      local: '2024-08-14 10:21:09+02:00'
+    estimated:
+      utc: '2024-08-14T07:58:43Z'
+      local: '2024-08-14 09:58:43+02:00'
+    actual:
+      utc: '2024-08-14T07:58:43Z'
+      local: '2024-08-14 09:58:43+02:00'
+    runway: '25'
+  landing:
+    scheduled:
+      utc: '2024-08-14T17:27:47Z'
+      local: '2024-08-14 12:27:47-05:00'
+    estimated:
+      utc: '2024-08-14T17:05:21Z'
+      local: '2024-08-14 12:05:21-05:00'
+    actual:
+      utc: '2024-08-14T17:05:21Z'
+      local: '2024-08-14 12:05:21-05:00'
+    runway: 19L
+  departure_versus_schedule: -0:22:26
+  arrival_versus_schedule: -0:22:26
+  airborne_duration: '9:06:38'
+  flight_plan:
+    planned_time_enroute: '9:06:38'

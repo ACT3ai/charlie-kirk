@@ -1,0 +1,108 @@
+# Restated from a FlightAware AeroAPI response, in our own layout.
+# The raw response is held privately and is not republished.
+about:
+  aircraft: SU-BGM
+  question_asked: Which flights does FlightAware hold for SU-BGM between 13 August 2022 and 20 August 2022 (UTC)?
+  source: FlightAware AeroAPI v4 flight history by registration; the raw response is held privately and is not republished.
+  retrieved_utc: '2026-09-16T02:50:48.716Z'
+  vendor_http_status: 200
+  window_utc_from: '2022-08-13T00:00:00Z'
+  window_utc_until_exclusive: '2022-08-20T00:00:00Z'
+  result_page: 1
+  total_pages_reported: 1
+  further_pages_held_by_vendor: false
+flights_recorded: 2
+reading: FlightAware holds 2 flights for SU-BGM in this window, listed here in full with the times it recorded. A flight record shows where an aircraft went; it never shows who was aboard.
+flights:
+- number: 1
+  flightaware_id: SUBGM-1660765406-adhoc-0
+  callsign: SU-BGM
+  registration: SU-BGM
+  flight_category: general aviation
+  outcome: Arrived
+  progress_percent: 100
+  flags: []
+  from:
+    faa_lid: 2IL7
+    name: Ben Emge
+    city: Belleville
+    timezone: America/Chicago
+  to:
+    icao: CYYR
+    iata: YYR
+    name: CFB Goose Bay (Goose Bay)
+    city: Goose Bay
+    timezone: America/Goose_Bay
+  takeoff:
+    scheduled:
+      utc: '2022-08-17T19:43:26Z'
+      local: '2022-08-17 14:43:26-05:00'
+    estimated:
+      utc: '2022-08-17T19:43:26Z'
+      local: '2022-08-17 14:43:26-05:00'
+    actual:
+      utc: '2022-08-17T19:43:26Z'
+      local: '2022-08-17 14:43:26-05:00'
+  landing:
+    scheduled:
+      utc: '2022-08-17T23:14:37Z'
+      local: '2022-08-17 20:14:37-03:00'
+    estimated:
+      utc: '2022-08-17T23:14:37Z'
+      local: '2022-08-17 20:14:37-03:00'
+    actual:
+      utc: '2022-08-17T23:14:37Z'
+      local: '2022-08-17 20:14:37-03:00'
+    runway: '26'
+  departure_versus_schedule: +0:00:00
+  arrival_versus_schedule: +0:00:00
+  airborne_duration: '3:31:11'
+  flight_plan:
+    planned_time_enroute: '3:31:11'
+- number: 2
+  flightaware_id: SUBGM-1660780441-35-2-90
+  callsign: SU-BGM
+  registration: SU-BGM
+  flight_category: general aviation
+  outcome: Arrived
+  progress_percent: 100
+  flags: []
+  from:
+    icao: CYYR
+    iata: YYR
+    name: CFB Goose Bay (Goose Bay)
+    city: Goose Bay
+    timezone: America/Goose_Bay
+  to:
+    icao: LFPB
+    iata: LBG
+    name: Paris Le Bourget
+    city: Paris
+    timezone: Europe/Paris
+  takeoff:
+    scheduled:
+      utc: '2022-08-18T01:09:16Z'
+      local: '2022-08-17 22:09:16-03:00'
+    estimated:
+      utc: '2022-08-18T00:43:15Z'
+      local: '2022-08-17 21:43:15-03:00'
+    actual:
+      utc: '2022-08-18T00:43:15Z'
+      local: '2022-08-17 21:43:15-03:00'
+    runway: '26'
+  landing:
+    scheduled:
+      utc: '2022-08-18T06:07:40Z'
+      local: '2022-08-18 08:07:40+02:00'
+    estimated:
+      utc: '2022-08-18T05:41:39Z'
+      local: '2022-08-18 07:41:39+02:00'
+    actual:
+      utc: '2022-08-18T05:41:39Z'
+      local: '2022-08-18 07:41:39+02:00'
+    runway: '27'
+  departure_versus_schedule: -0:26:01
+  arrival_versus_schedule: -0:26:01
+  airborne_duration: '4:58:24'
+  flight_plan:
+    planned_time_enroute: '4:58:24'

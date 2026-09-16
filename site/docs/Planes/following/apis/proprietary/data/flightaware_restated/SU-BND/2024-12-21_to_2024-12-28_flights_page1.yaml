@@ -1,0 +1,160 @@
+# Restated from a FlightAware AeroAPI response, in our own layout.
+# The raw response is held privately and is not republished.
+about:
+  aircraft: SU-BND
+  question_asked: Which flights does FlightAware hold for SU-BND between 21 December 2024 and 28 December 2024 (UTC)?
+  source: FlightAware AeroAPI v4 flight history by registration; the raw response is held privately and is not republished.
+  retrieved_utc: '2026-09-16T02:38:48.888Z'
+  vendor_http_status: 200
+  window_utc_from: '2024-12-21T00:00:00Z'
+  window_utc_until_exclusive: '2024-12-28T00:00:00Z'
+  result_page: 1
+  total_pages_reported: 1
+  further_pages_held_by_vendor: false
+flights_recorded: 4
+reading: FlightAware holds 4 flights for SU-BND in this window, listed here in full with the times it recorded. A flight record shows where an aircraft went; it never shows who was aboard.
+flights:
+- number: 1
+  flightaware_id: SUBND-1734772206-adhoc-1589p
+  callsign: SU-BND
+  registration: SU-BND
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    position_only_point:
+      lat: 27.97673
+      lon: 32.06985
+    city: Assiut
+    timezone: Africa/Cairo
+  to:
+    position_only_point:
+      lat: 27.04359
+      lon: 32.37402
+    city: Sohag
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2024-12-21T09:39:07Z'
+      local: '2024-12-21 11:39:07+02:00'
+    estimated:
+      utc: '2024-12-21T09:39:07Z'
+      local: '2024-12-21 11:39:07+02:00'
+    actual:
+      utc: '2024-12-21T09:39:07Z'
+      local: '2024-12-21 11:39:07+02:00'
+  landing:
+    actual:
+      utc: '2024-12-21T09:39:07Z'
+      local: '2024-12-21 11:39:07+02:00'
+  departure_versus_schedule: +0:00:00
+  airborne_duration: 0:00:00
+- number: 2
+  flightaware_id: SUBND-1734777087-adhoc-1039p
+  callsign: SU-BND
+  registration: SU-BND
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    position_only_point:
+      lat: 26.27962
+      lon: 32.57599
+    city: Luxor
+    timezone: Africa/Cairo
+  to:
+    position_only_point:
+      lat: 28.2805
+      lon: 31.97439
+    city: Assiut
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2024-12-21T10:41:36Z'
+      local: '2024-12-21 12:41:36+02:00'
+    estimated:
+      utc: '2024-12-21T10:41:36Z'
+      local: '2024-12-21 12:41:36+02:00'
+    actual:
+      utc: '2024-12-21T10:41:36Z'
+      local: '2024-12-21 12:41:36+02:00'
+  landing:
+    actual:
+      utc: '2024-12-21T10:41:36Z'
+      local: '2024-12-21 12:41:36+02:00'
+  departure_versus_schedule: +0:00:00
+  airborne_duration: 0:00:00
+- number: 3
+  flightaware_id: SUBND-1735053890-adhoc-2594p
+  callsign: SU-BND
+  registration: SU-BND
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    position_only_point:
+      lat: 28.30032
+      lon: 31.96806
+    city: Assiut
+    timezone: Africa/Cairo
+  to:
+    position_only_point:
+      lat: 26.97805
+      lon: 32.38907
+    city: Sohag
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2024-12-24T16:06:35Z'
+      local: '2024-12-24 18:06:35+02:00'
+    estimated:
+      utc: '2024-12-24T16:06:35Z'
+      local: '2024-12-24 18:06:35+02:00'
+    actual:
+      utc: '2024-12-24T16:06:35Z'
+      local: '2024-12-24 18:06:35+02:00'
+  landing:
+    actual:
+      utc: '2024-12-24T16:06:35Z'
+      local: '2024-12-24 18:06:35+02:00'
+  departure_versus_schedule: +0:00:00
+  airborne_duration: 0:00:00
+- number: 4
+  flightaware_id: SUBND-1735059123-adhoc-2447p
+  callsign: SU-BND
+  registration: SU-BND
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    position_only_point:
+      lat: 26.26167
+      lon: 32.51347
+    city: Luxor
+    timezone: Africa/Cairo
+  to:
+    position_only_point:
+      lat: 28.31447
+      lon: 31.96348
+    city: Assiut
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2024-12-24T16:57:55Z'
+      local: '2024-12-24 18:57:55+02:00'
+    estimated:
+      utc: '2024-12-24T16:57:55Z'
+      local: '2024-12-24 18:57:55+02:00'
+    actual:
+      utc: '2024-12-24T16:57:55Z'
+      local: '2024-12-24 18:57:55+02:00'
+  landing:
+    actual:
+      utc: '2024-12-24T16:57:55Z'
+      local: '2024-12-24 18:57:55+02:00'
+  departure_versus_schedule: +0:00:00
+  airborne_duration: 0:00:00

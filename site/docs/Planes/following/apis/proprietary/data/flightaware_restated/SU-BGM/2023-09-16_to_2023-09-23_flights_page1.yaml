@@ -1,0 +1,163 @@
+# Restated from a FlightAware AeroAPI response, in our own layout.
+# The raw response is held privately and is not republished.
+about:
+  aircraft: SU-BGM
+  question_asked: Which flights does FlightAware hold for SU-BGM between 16 September 2023 and 23 September 2023 (UTC)?
+  source: FlightAware AeroAPI v4 flight history by registration; the raw response is held privately and is not republished.
+  retrieved_utc: '2026-09-16T02:52:04.950Z'
+  vendor_http_status: 200
+  window_utc_from: '2023-09-16T00:00:00Z'
+  window_utc_until_exclusive: '2023-09-23T00:00:00Z'
+  result_page: 1
+  total_pages_reported: 1
+  further_pages_held_by_vendor: false
+flights_recorded: 4
+reading: FlightAware holds 4 flights for SU-BGM in this window, listed here in full with the times it recorded. A flight record shows where an aircraft went; it never shows who was aboard.
+flights:
+- number: 1
+  flightaware_id: SUBGM-1694932518-adhoc-1650p
+  callsign: SU-BGM
+  registration: SU-BGM
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    icao: HECA
+    iata: CAI
+    name: Cairo Int'l
+    city: Cairo
+    timezone: Africa/Cairo
+  to:
+    position_only_point:
+      lat: 28.97905
+      lon: 32.29199
+    city: Cairo
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2023-09-17T06:45:11Z'
+      local: '2023-09-17 09:45:11+03:00'
+    estimated:
+      utc: '2023-09-17T06:44:31Z'
+      local: '2023-09-17 09:44:31+03:00'
+    actual:
+      utc: '2023-09-17T06:44:31Z'
+      local: '2023-09-17 09:44:31+03:00'
+    runway: 23R
+  landing:
+    actual:
+      utc: '2023-09-17T06:44:31Z'
+      local: '2023-09-17 09:44:31+03:00'
+  departure_versus_schedule: -0:00:40
+  airborne_duration: 0:00:00
+- number: 2
+  flightaware_id: SUBGM-1694936582-adhoc-915p
+  callsign: SU-BGM
+  registration: SU-BGM
+  flight_category: general aviation
+  outcome: Arrived
+  flags:
+  - position_only
+  from:
+    position_only_point:
+      lat: 29.25226
+      lon: 32.63284
+    city: Cairo
+    timezone: Africa/Cairo
+  to:
+    icao: HEAZ
+    name: Almaza Air Base
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2023-09-17T08:04:33Z'
+      local: '2023-09-17 11:04:33+03:00'
+    estimated:
+      utc: '2023-09-17T08:04:33Z'
+      local: '2023-09-17 11:04:33+03:00'
+    actual:
+      utc: '2023-09-17T08:04:33Z'
+      local: '2023-09-17 11:04:33+03:00'
+  landing:
+    estimated:
+      utc: '2023-09-17T08:22:01Z'
+      local: '2023-09-17 11:22:01+03:00'
+    actual:
+      utc: '2023-09-17T08:22:01Z'
+      local: '2023-09-17 11:22:01+03:00'
+    runway: '36'
+  departure_versus_schedule: +0:00:00
+  airborne_duration: 0:17:28
+- number: 3
+  flightaware_id: SUBGM-1695106585-adhoc-2672p
+  callsign: SU-BGM
+  registration: SU-BGM
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    position_only_point:
+      lat: 30.07549
+      lon: 31.67622
+    city: Cairo
+    timezone: Africa/Cairo
+  to:
+    position_only_point:
+      lat: 28.37061
+      lon: 34.23588
+    city: Sharm El Sheikh
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2023-09-19T07:08:05Z'
+      local: '2023-09-19 10:08:05+03:00'
+    estimated:
+      utc: '2023-09-19T07:08:05Z'
+      local: '2023-09-19 10:08:05+03:00'
+    actual:
+      utc: '2023-09-19T07:08:05Z'
+      local: '2023-09-19 10:08:05+03:00'
+  landing:
+    actual:
+      utc: '2023-09-19T07:08:05Z'
+      local: '2023-09-19 10:08:05+03:00'
+  departure_versus_schedule: +0:00:00
+  airborne_duration: 0:00:00
+- number: 4
+  flightaware_id: SUBGM-1695111546-adhoc-1092p
+  callsign: SU-BGM
+  registration: SU-BGM
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    position_only_point:
+      lat: 29.85841
+      lon: 31.37764
+    city: Cairo
+    timezone: Africa/Cairo
+  to:
+    position_only_point:
+      lat: 29.86853
+      lon: 31.36866
+    city: Cairo
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2023-09-19T08:55:04Z'
+      local: '2023-09-19 11:55:04+03:00'
+    estimated:
+      utc: '2023-09-19T08:55:04Z'
+      local: '2023-09-19 11:55:04+03:00'
+    actual:
+      utc: '2023-09-19T08:55:04Z'
+      local: '2023-09-19 11:55:04+03:00'
+  landing:
+    actual:
+      utc: '2023-09-19T08:55:04Z'
+      local: '2023-09-19 11:55:04+03:00'
+  departure_versus_schedule: +0:00:00
+  airborne_duration: 0:00:00

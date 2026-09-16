@@ -1,0 +1,88 @@
+# Restated from a FlightAware AeroAPI response, in our own layout.
+# The raw response is held privately and is not republished.
+about:
+  aircraft: SU-BTU
+  question_asked: Which flights does FlightAware hold for SU-BTU between 25 May 2024 and 1 June 2024 (UTC)?
+  source: FlightAware AeroAPI v4 flight history by registration; the raw response is held privately and is not republished.
+  retrieved_utc: '2026-09-16T02:43:09.870Z'
+  vendor_http_status: 200
+  window_utc_from: '2024-05-25T00:00:00Z'
+  window_utc_until_exclusive: '2024-06-01T00:00:00Z'
+  result_page: 1
+  total_pages_reported: 1
+  further_pages_held_by_vendor: false
+flights_recorded: 2
+reading: FlightAware holds 2 flights for SU-BTU in this window, listed here in full with the times it recorded. A flight record shows where an aircraft went; it never shows who was aboard.
+flights:
+- number: 1
+  flightaware_id: SUBTU-1716705092-adhoc-3026p
+  callsign: SU-BTU
+  registration: SU-BTU
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    position_only_point:
+      lat: 30.17093
+      lon: 31.32132
+    city: Cairo
+    timezone: Africa/Cairo
+  to:
+    position_only_point:
+      lat: 29.75798
+      lon: 31.23429
+    city: Cairo
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2024-05-26T06:40:51Z'
+      local: '2024-05-26 09:40:51+03:00'
+    estimated:
+      utc: '2024-05-26T06:40:51Z'
+      local: '2024-05-26 09:40:51+03:00'
+    actual:
+      utc: '2024-05-26T06:40:51Z'
+      local: '2024-05-26 09:40:51+03:00'
+  landing:
+    actual:
+      utc: '2024-05-26T06:40:51Z'
+      local: '2024-05-26 09:40:51+03:00'
+  departure_versus_schedule: +0:00:00
+  airborne_duration: 0:00:00
+- number: 2
+  flightaware_id: SUBTU-1716912484-adhoc-3932p
+  callsign: SU-BTU
+  registration: SU-BTU
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    position_only_point:
+      lat: 29.6804
+      lon: 31.52516
+    city: Cairo
+    timezone: Africa/Cairo
+  to:
+    position_only_point:
+      lat: 29.20031
+      lon: 31.65737
+    city: Cairo
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2024-05-28T16:25:41Z'
+      local: '2024-05-28 19:25:41+03:00'
+    estimated:
+      utc: '2024-05-28T16:25:41Z'
+      local: '2024-05-28 19:25:41+03:00'
+    actual:
+      utc: '2024-05-28T16:25:41Z'
+      local: '2024-05-28 19:25:41+03:00'
+  landing:
+    actual:
+      utc: '2024-05-28T16:25:41Z'
+      local: '2024-05-28 19:25:41+03:00'
+  departure_versus_schedule: +0:00:00
+  airborne_duration: 0:00:00

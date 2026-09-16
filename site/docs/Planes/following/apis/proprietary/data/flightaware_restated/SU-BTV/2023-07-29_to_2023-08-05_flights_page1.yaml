@@ -1,0 +1,62 @@
+# Restated from a FlightAware AeroAPI response, in our own layout.
+# The raw response is held privately and is not republished.
+about:
+  aircraft: SU-BTV
+  question_asked: Which flights does FlightAware hold for SU-BTV between 29 July 2023 and 5 August 2023 (UTC)?
+  source: FlightAware AeroAPI v4 flight history by registration; the raw response is held privately and is not republished.
+  retrieved_utc: '2026-09-16T02:46:59.437Z'
+  vendor_http_status: 200
+  window_utc_from: '2023-07-29T00:00:00Z'
+  window_utc_until_exclusive: '2023-08-05T00:00:00Z'
+  result_page: 1
+  total_pages_reported: 1
+  further_pages_held_by_vendor: false
+flights_recorded: 1
+reading: FlightAware holds 1 flight for SU-BTV in this window, listed here in full with the times it recorded. A flight record shows where an aircraft went; it never shows who was aboard.
+flights:
+- number: 1
+  flightaware_id: SUBTV-1690804847-adhoc-886p
+  callsign: SU-BTV
+  registration: SU-BTV
+  flight_category: general aviation
+  outcome: Arrived
+  progress_percent: 100
+  flags: []
+  from:
+    icao: KILG
+    iata: ILG
+    faa_lid: ILG
+    name: New Castle
+    city: Wilmington
+    timezone: America/New_York
+  to:
+    icao: HEAZ
+    name: Almaza Air Base
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2023-07-31T12:15:44Z'
+      local: '2023-07-31 08:15:44-04:00'
+    estimated:
+      utc: '2023-07-31T12:08:55Z'
+      local: '2023-07-31 08:08:55-04:00'
+    actual:
+      utc: '2023-07-31T12:08:55Z'
+      local: '2023-07-31 08:08:55-04:00'
+    runway: '27'
+  landing:
+    scheduled:
+      utc: '2023-07-31T21:57:00Z'
+      local: '2023-08-01 00:57:00+03:00'
+    estimated:
+      utc: '2023-07-31T21:50:11Z'
+      local: '2023-08-01 00:50:11+03:00'
+    actual:
+      utc: '2023-07-31T21:50:11Z'
+      local: '2023-08-01 00:50:11+03:00'
+    runway: '36'
+  departure_versus_schedule: -0:06:49
+  arrival_versus_schedule: -0:06:49
+  airborne_duration: '9:41:16'
+  flight_plan:
+    planned_time_enroute: '9:41:16'

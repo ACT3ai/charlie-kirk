@@ -1,0 +1,56 @@
+# Restated from a FlightAware AeroAPI response, in our own layout.
+# The raw response is held privately and is not republished.
+about:
+  aircraft: SU-BTU
+  question_asked: Which flights does FlightAware hold for SU-BTU between 13 April 2024 and 20 April 2024 (UTC)?
+  source: FlightAware AeroAPI v4 flight history by registration; the raw response is held privately and is not republished.
+  retrieved_utc: '2026-09-16T02:43:01.093Z'
+  vendor_http_status: 200
+  window_utc_from: '2024-04-13T00:00:00Z'
+  window_utc_until_exclusive: '2024-04-20T00:00:00Z'
+  result_page: 1
+  total_pages_reported: 1
+  further_pages_held_by_vendor: false
+flights_recorded: 1
+reading: FlightAware holds 1 flight for SU-BTU in this window, listed here in full with the times it recorded. A flight record shows where an aircraft went; it never shows who was aboard.
+flights:
+- number: 1
+  flightaware_id: SUBTU-1713068698-sw-1031p
+  callsign: SU-BTU
+  registration: SU-BTU
+  flight_category: general aviation
+  outcome: Arrived
+  progress_percent: 100
+  flags: []
+  from:
+    position_only_point:
+      lat: 30.12302
+      lon: 31.35976
+    city: Cairo
+    timezone: Africa/Cairo
+  to:
+    icao: LFPB
+    iata: LBG
+    name: Paris Le Bourget
+    city: Paris
+    timezone: Europe/Paris
+  takeoff:
+    scheduled:
+      utc: '2024-04-14T05:43:57Z'
+      local: '2024-04-14 07:43:57+02:00'
+    estimated:
+      utc: '2024-04-14T05:43:57Z'
+      local: '2024-04-14 07:43:57+02:00'
+    actual:
+      utc: '2024-04-14T05:43:57Z'
+      local: '2024-04-14 07:43:57+02:00'
+  landing:
+    estimated:
+      utc: '2024-04-14T10:02:05Z'
+      local: '2024-04-14 12:02:05+02:00'
+    actual:
+      utc: '2024-04-14T10:02:05Z'
+      local: '2024-04-14 12:02:05+02:00'
+    runway: '27'
+  departure_versus_schedule: +0:00:00
+  airborne_duration: '4:18:08'

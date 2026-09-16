@@ -1,0 +1,88 @@
+# Restated from a FlightAware AeroAPI response, in our own layout.
+# The raw response is held privately and is not republished.
+about:
+  aircraft: SU-BTV
+  question_asked: Which flights does FlightAware hold for SU-BTV between 2 December 2023 and 9 December 2023 (UTC)?
+  source: FlightAware AeroAPI v4 flight history by registration; the raw response is held privately and is not republished.
+  retrieved_utc: '2026-09-16T02:47:22.827Z'
+  vendor_http_status: 200
+  window_utc_from: '2023-12-02T00:00:00Z'
+  window_utc_until_exclusive: '2023-12-09T00:00:00Z'
+  result_page: 1
+  total_pages_reported: 1
+  further_pages_held_by_vendor: false
+flights_recorded: 2
+reading: FlightAware holds 2 flights for SU-BTV in this window, listed here in full with the times it recorded. A flight record shows where an aircraft went; it never shows who was aboard.
+flights:
+- number: 1
+  flightaware_id: SUBTV-1701503124-adhoc-1223p
+  callsign: SU-BTV
+  registration: SU-BTV
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    position_only_point:
+      lat: 29.62519
+      lon: 31.69335
+    city: Cairo
+    timezone: Africa/Cairo
+  to:
+    position_only_point:
+      lat: 29.5636
+      lon: 32.19236
+    city: Cairo
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2023-12-02T08:13:12Z'
+      local: '2023-12-02 10:13:12+02:00'
+    estimated:
+      utc: '2023-12-02T08:13:12Z'
+      local: '2023-12-02 10:13:12+02:00'
+    actual:
+      utc: '2023-12-02T08:13:12Z'
+      local: '2023-12-02 10:13:12+02:00'
+  landing:
+    actual:
+      utc: '2023-12-02T08:13:12Z'
+      local: '2023-12-02 10:13:12+02:00'
+  departure_versus_schedule: +0:00:00
+  airborne_duration: 0:00:00
+- number: 2
+  flightaware_id: SUBTV-1701859287-adhoc-321p
+  callsign: SU-BTV
+  registration: SU-BTV
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    position_only_point:
+      lat: 29.79855
+      lon: 31.94614
+    city: Cairo
+    timezone: Africa/Cairo
+  to:
+    position_only_point:
+      lat: 28.85046
+      lon: 33.28033
+    city: Sharm El Sheikh
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2023-12-06T10:57:59Z'
+      local: '2023-12-06 12:57:59+02:00'
+    estimated:
+      utc: '2023-12-06T10:57:59Z'
+      local: '2023-12-06 12:57:59+02:00'
+    actual:
+      utc: '2023-12-06T10:57:59Z'
+      local: '2023-12-06 12:57:59+02:00'
+  landing:
+    actual:
+      utc: '2023-12-06T10:57:59Z'
+      local: '2023-12-06 12:57:59+02:00'
+  departure_versus_schedule: +0:00:00
+  airborne_duration: 0:00:00

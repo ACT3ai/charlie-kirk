@@ -1,0 +1,168 @@
+# Restated from a FlightAware AeroAPI response, in our own layout.
+# The raw response is held privately and is not republished.
+about:
+  aircraft: SU-BGM
+  question_asked: Which flights does FlightAware hold for SU-BGM between 21 October 2023 and 28 October 2023 (UTC)?
+  source: FlightAware AeroAPI v4 flight history by registration; the raw response is held privately and is not republished.
+  retrieved_utc: '2026-09-16T02:52:09.860Z'
+  vendor_http_status: 200
+  window_utc_from: '2023-10-21T00:00:00Z'
+  window_utc_until_exclusive: '2023-10-28T00:00:00Z'
+  result_page: 1
+  total_pages_reported: 1
+  further_pages_held_by_vendor: false
+flights_recorded: 4
+reading: FlightAware holds 4 flights for SU-BGM in this window, listed here in full with the times it recorded. A flight record shows where an aircraft went; it never shows who was aboard.
+flights:
+- number: 1
+  flightaware_id: SUBGM-1697874914-adhoc-2427p
+  callsign: SU-BGM
+  registration: SU-BGM
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    position_only_point:
+      lat: 29.10157
+      lon: 32.22602
+    city: Cairo
+    timezone: Africa/Cairo
+  to:
+    position_only_point:
+      lat: 27.08688
+      lon: 33.87805
+    city: Hurghada
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2023-10-21T08:32:08Z'
+      local: '2023-10-21 11:32:08+03:00'
+    estimated:
+      utc: '2023-10-21T08:32:08Z'
+      local: '2023-10-21 11:32:08+03:00'
+    actual:
+      utc: '2023-10-21T08:32:08Z'
+      local: '2023-10-21 11:32:08+03:00'
+  landing:
+    actual:
+      utc: '2023-10-21T08:32:08Z'
+      local: '2023-10-21 11:32:08+03:00'
+  departure_versus_schedule: +0:00:00
+  airborne_duration: 0:00:00
+- number: 2
+  flightaware_id: SUBGM-1697880162-adhoc-1405p
+  callsign: SU-BGM
+  registration: SU-BGM
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    position_only_point:
+      lat: 27.39269
+      lon: 33.76215
+    city: Hurghada
+    timezone: Africa/Cairo
+  to:
+    position_only_point:
+      lat: 29.72273
+      lon: 31.86637
+    city: Cairo
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2023-10-21T09:25:03Z'
+      local: '2023-10-21 12:25:03+03:00'
+    estimated:
+      utc: '2023-10-21T09:25:03Z'
+      local: '2023-10-21 12:25:03+03:00'
+    actual:
+      utc: '2023-10-21T09:25:03Z'
+      local: '2023-10-21 12:25:03+03:00'
+  landing:
+    actual:
+      utc: '2023-10-21T09:25:03Z'
+      local: '2023-10-21 12:25:03+03:00'
+  departure_versus_schedule: +0:00:00
+  airborne_duration: 0:00:00
+- number: 3
+  flightaware_id: SUBGM-1698246709-adhoc-365p
+  callsign: SU-BGM
+  registration: SU-BGM
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    icao: HEAZ
+    name: Almaza Air Base
+    timezone: Africa/Cairo
+  to:
+    position_only_point:
+      lat: 27.90872
+      lon: 34.3205
+    city: Sharm El Sheikh
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2023-10-25T15:20:10Z'
+      local: '2023-10-25 18:20:10+03:00'
+    estimated:
+      utc: '2023-10-25T15:20:10Z'
+      local: '2023-10-25 18:20:10+03:00'
+    actual:
+      utc: '2023-10-25T15:20:10Z'
+      local: '2023-10-25 18:20:10+03:00'
+    runway: '36'
+  landing:
+    actual:
+      utc: '2023-10-25T15:20:10Z'
+      local: '2023-10-25 18:20:10+03:00'
+  departure_versus_schedule: +0:00:00
+  airborne_duration: 0:00:00
+- number: 4
+  flightaware_id: SUBGM-1698250762-adhoc-2363p
+  callsign: SU-BGM
+  registration: SU-BGM
+  flight_category: general aviation
+  outcome: result unknown
+  progress_percent: 100
+  flags: []
+  from:
+    icao: HESH
+    iata: SSH
+    name: Sharm El Sheikh
+    city: Sharm El Sheikh
+    timezone: Africa/Cairo
+  to:
+    icao: HEAZ
+    name: Almaza Air Base
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2023-10-25T16:19:17Z'
+      local: '2023-10-25 19:19:17+03:00'
+    estimated:
+      utc: '2023-10-25T16:19:17Z'
+      local: '2023-10-25 19:19:17+03:00'
+    actual:
+      utc: '2023-10-25T16:19:17Z'
+      local: '2023-10-25 19:19:17+03:00'
+    runway: 04L
+  landing:
+    scheduled:
+      utc: '2023-10-25T16:58:16Z'
+      local: '2023-10-25 19:58:16+03:00'
+    estimated:
+      utc: '2023-10-25T16:58:16Z'
+      local: '2023-10-25 19:58:16+03:00'
+    actual:
+      utc: '2023-10-25T16:19:17Z'
+      local: '2023-10-25 19:19:17+03:00'
+    runway: '36'
+  departure_versus_schedule: +0:00:00
+  arrival_versus_schedule: -0:38:59
+  airborne_duration: 0:00:00
+  flight_plan:
+    planned_time_enroute: 0:38:59

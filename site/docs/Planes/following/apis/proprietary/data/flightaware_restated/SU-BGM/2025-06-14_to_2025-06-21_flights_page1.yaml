@@ -1,0 +1,194 @@
+# Restated from a FlightAware AeroAPI response, in our own layout.
+# The raw response is held privately and is not republished.
+about:
+  aircraft: SU-BGM
+  question_asked: Which flights does FlightAware hold for SU-BGM between 14 June 2025 and 21 June 2025 (UTC)?
+  source: FlightAware AeroAPI v4 flight history by registration; the raw response is held privately and is not republished.
+  retrieved_utc: '2026-09-16T02:54:23.514Z'
+  vendor_http_status: 200
+  window_utc_from: '2025-06-14T00:00:00Z'
+  window_utc_until_exclusive: '2025-06-21T00:00:00Z'
+  result_page: 1
+  total_pages_reported: 1
+  further_pages_held_by_vendor: false
+flights_recorded: 5
+reading: FlightAware holds 5 flights for SU-BGM in this window, listed here in full with the times it recorded. A flight record shows where an aircraft went; it never shows who was aboard.
+flights:
+- number: 1
+  flightaware_id: SUBGM-1749919970-adhoc-2419p
+  callsign: SU-BGM
+  registration: SU-BGM
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    position_only_point:
+      lat: 30.14839
+      lon: 31.36014
+    city: Cairo
+    timezone: Africa/Cairo
+  to:
+    icao: HEAZ
+    name: Almaza Air Base
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2025-06-14T17:02:40Z'
+      local: '2025-06-14 20:02:40+03:00'
+    estimated:
+      utc: '2025-06-14T17:02:40Z'
+      local: '2025-06-14 20:02:40+03:00'
+    actual:
+      utc: '2025-06-14T17:02:40Z'
+      local: '2025-06-14 20:02:40+03:00'
+  landing:
+    actual:
+      utc: '2025-06-14T17:02:40Z'
+      local: '2025-06-14 20:02:40+03:00'
+    runway: '36'
+  departure_versus_schedule: +0:00:00
+  airborne_duration: 0:00:00
+- number: 2
+  flightaware_id: SUBGM-1749923154-adhoc-2676p
+  callsign: SU-BGM
+  registration: SU-BGM
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    position_only_point:
+      lat: 30.1404
+      lon: 31.08678
+    city: Cairo
+    timezone: Africa/Cairo
+  to:
+    icao: HEAZ
+    name: Almaza Air Base
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2025-06-14T18:19:38Z'
+      local: '2025-06-14 21:19:38+03:00'
+    estimated:
+      utc: '2025-06-14T18:19:38Z'
+      local: '2025-06-14 21:19:38+03:00'
+    actual:
+      utc: '2025-06-14T18:19:38Z'
+      local: '2025-06-14 21:19:38+03:00'
+  landing:
+    actual:
+      utc: '2025-06-14T18:19:38Z'
+      local: '2025-06-14 21:19:38+03:00'
+    runway: '36'
+  departure_versus_schedule: +0:00:00
+  airborne_duration: 0:00:00
+- number: 3
+  flightaware_id: SUBGM-1750147989-adhoc-862p
+  callsign: SU-BGM
+  registration: SU-BGM
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    position_only_point:
+      lat: 30.18924
+      lon: 31.35455
+    city: Cairo
+    timezone: Africa/Cairo
+  to:
+    position_only_point:
+      lat: 29.83514
+      lon: 31.35897
+    city: Cairo
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2025-06-17T08:22:58Z'
+      local: '2025-06-17 11:22:58+03:00'
+    estimated:
+      utc: '2025-06-17T08:22:58Z'
+      local: '2025-06-17 11:22:58+03:00'
+    actual:
+      utc: '2025-06-17T08:22:58Z'
+      local: '2025-06-17 11:22:58+03:00'
+  landing:
+    actual:
+      utc: '2025-06-17T08:22:58Z'
+      local: '2025-06-17 11:22:58+03:00'
+  departure_versus_schedule: +0:00:00
+  airborne_duration: 0:00:00
+- number: 4
+  flightaware_id: SUBGM-1750230182-adhoc-1188p
+  callsign: SU-BGM
+  registration: SU-BGM
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    position_only_point:
+      lat: 30.18601
+      lon: 31.35751
+    city: Cairo
+    timezone: Africa/Cairo
+  to:
+    position_only_point:
+      lat: 31.61888
+      lon: 29.28756
+    city: Amreya
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2025-06-18T07:10:04Z'
+      local: '2025-06-18 10:10:04+03:00'
+    estimated:
+      utc: '2025-06-18T07:10:04Z'
+      local: '2025-06-18 10:10:04+03:00'
+    actual:
+      utc: '2025-06-18T07:10:04Z'
+      local: '2025-06-18 10:10:04+03:00'
+  landing:
+    actual:
+      utc: '2025-06-18T07:10:04Z'
+      local: '2025-06-18 10:10:04+03:00'
+  departure_versus_schedule: +0:00:00
+  airborne_duration: 0:00:00
+- number: 5
+  flightaware_id: SUBGM-1750234949-adhoc-1098p
+  callsign: SU-BGM
+  registration: SU-BGM
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    position_only_point:
+      lat: 31.64694
+      lon: 29.14409
+    city: Amreya
+    timezone: Africa/Cairo
+  to:
+    position_only_point:
+      lat: 29.89627
+      lon: 31.06273
+    city: Cairo
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2025-06-18T08:45:36Z'
+      local: '2025-06-18 11:45:36+03:00'
+    estimated:
+      utc: '2025-06-18T08:45:36Z'
+      local: '2025-06-18 11:45:36+03:00'
+    actual:
+      utc: '2025-06-18T08:45:36Z'
+      local: '2025-06-18 11:45:36+03:00'
+  landing:
+    actual:
+      utc: '2025-06-18T08:45:36Z'
+      local: '2025-06-18 11:45:36+03:00'
+  departure_versus_schedule: +0:00:00
+  airborne_duration: 0:00:00

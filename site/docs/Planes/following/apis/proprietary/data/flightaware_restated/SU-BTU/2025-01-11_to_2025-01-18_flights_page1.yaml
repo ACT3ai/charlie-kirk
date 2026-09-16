@@ -1,0 +1,189 @@
+# Restated from a FlightAware AeroAPI response, in our own layout.
+# The raw response is held privately and is not republished.
+about:
+  aircraft: SU-BTU
+  question_asked: Which flights does FlightAware hold for SU-BTU between 11 January 2025 and 18 January 2025 (UTC)?
+  source: FlightAware AeroAPI v4 flight history by registration; the raw response is held privately and is not republished.
+  retrieved_utc: '2026-09-16T02:43:57.873Z'
+  vendor_http_status: 200
+  window_utc_from: '2025-01-11T00:00:00Z'
+  window_utc_until_exclusive: '2025-01-18T00:00:00Z'
+  result_page: 1
+  total_pages_reported: 1
+  further_pages_held_by_vendor: false
+flights_recorded: 4
+reading: FlightAware holds 4 flights for SU-BTU in this window, listed here in full with the times it recorded. A flight record shows where an aircraft went; it never shows who was aboard.
+flights:
+- number: 1
+  flightaware_id: SUBTU-1736677862-adhoc-2596p
+  callsign: SU-BTU
+  registration: SU-BTU
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    position_only_point:
+      lat: 28.38368
+      lon: 31.86727
+    city: Assiut
+    timezone: Africa/Cairo
+  to:
+    position_only_point:
+      lat: 28.27373
+      lon: 31.97635
+    city: Assiut
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2025-01-12T10:50:21Z'
+      local: '2025-01-12 12:50:21+02:00'
+    estimated:
+      utc: '2025-01-12T10:50:21Z'
+      local: '2025-01-12 12:50:21+02:00'
+    actual:
+      utc: '2025-01-12T10:50:21Z'
+      local: '2025-01-12 12:50:21+02:00'
+  landing:
+    actual:
+      utc: '2025-01-12T10:50:21Z'
+      local: '2025-01-12 12:50:21+02:00'
+  departure_versus_schedule: +0:00:00
+  airborne_duration: 0:00:00
+- number: 2
+  flightaware_id: SUBTU-1737004315-sw-848p
+  callsign: SU-BTU
+  registration: SU-BTU
+  flight_category: general aviation
+  outcome: Arrived
+  flags:
+  - position_only
+  from:
+    position_only_point:
+      lat: 30.15091
+      lon: 31.34943
+    city: Cairo
+    timezone: Africa/Cairo
+  to:
+    icao: LFPB
+    iata: LBG
+    name: Paris Le Bourget
+    city: Paris
+    timezone: Europe/Paris
+  takeoff:
+    scheduled:
+      utc: '2025-01-16T07:03:56Z'
+      local: '2025-01-16 09:03:56+02:00'
+    estimated:
+      utc: '2025-01-16T07:03:56Z'
+      local: '2025-01-16 09:03:56+02:00'
+    actual:
+      utc: '2025-01-16T07:03:56Z'
+      local: '2025-01-16 09:03:56+02:00'
+  landing:
+    estimated:
+      utc: '2025-01-16T11:16:22Z'
+      local: '2025-01-16 12:16:22+01:00'
+    actual:
+      utc: '2025-01-16T11:16:22Z'
+      local: '2025-01-16 12:16:22+01:00'
+    runway: '07'
+  departure_versus_schedule: +0:00:00
+  airborne_duration: '4:12:26'
+- number: 3
+  flightaware_id: SUBTU-1737087250-sw-971p
+  callsign: SU-BTU
+  registration: SU-BTU
+  flight_category: general aviation
+  outcome: Arrived
+  progress_percent: 100
+  flags: []
+  from:
+    icao: LFPB
+    iata: LBG
+    name: Paris Le Bourget
+    city: Paris
+    timezone: Europe/Paris
+  to:
+    icao: KOMA
+    iata: OMA
+    faa_lid: OMA
+    name: Eppley Airfield
+    city: Omaha
+    timezone: America/Chicago
+  takeoff:
+    scheduled:
+      utc: '2025-01-17T10:33:23Z'
+      local: '2025-01-17 11:33:23+01:00'
+    estimated:
+      utc: '2025-01-17T10:33:23Z'
+      local: '2025-01-17 11:33:23+01:00'
+    actual:
+      utc: '2025-01-17T10:33:23Z'
+      local: '2025-01-17 11:33:23+01:00'
+    runway: 09
+  landing:
+    scheduled:
+      utc: '2025-01-17T19:48:42Z'
+      local: '2025-01-17 13:48:42-06:00'
+    estimated:
+      utc: '2025-01-17T19:48:42Z'
+      local: '2025-01-17 13:48:42-06:00'
+    actual:
+      utc: '2025-01-17T19:48:42Z'
+      local: '2025-01-17 13:48:42-06:00'
+    runway: 32R
+  departure_versus_schedule: +0:00:00
+  arrival_versus_schedule: +0:00:00
+  airborne_duration: '9:15:19'
+  flight_plan:
+    planned_time_enroute: '9:15:19'
+- number: 4
+  flightaware_id: SUBTU-1737147740-adhoc-1963p
+  callsign: SU-BTU
+  registration: SU-BTU
+  flight_category: general aviation
+  outcome: Arrived
+  progress_percent: 100
+  flags: []
+  from:
+    icao: KOMA
+    iata: OMA
+    faa_lid: OMA
+    name: Eppley Airfield
+    city: Omaha
+    timezone: America/Chicago
+  to:
+    icao: KLNK
+    iata: LNK
+    faa_lid: LNK
+    name: Lincoln
+    city: Lincoln
+    timezone: America/Chicago
+  takeoff:
+    scheduled:
+      utc: '2025-01-17T21:12:15Z'
+      local: '2025-01-17 15:12:15-06:00'
+    estimated:
+      utc: '2025-01-17T21:09:57Z'
+      local: '2025-01-17 15:09:57-06:00'
+    actual:
+      utc: '2025-01-17T21:09:57Z'
+      local: '2025-01-17 15:09:57-06:00'
+    runway: 32R
+  landing:
+    scheduled:
+      utc: '2025-01-17T21:30:52Z'
+      local: '2025-01-17 15:30:52-06:00'
+    estimated:
+      utc: '2025-01-17T21:28:34Z'
+      local: '2025-01-17 15:28:34-06:00'
+    actual:
+      utc: '2025-01-17T21:28:34Z'
+      local: '2025-01-17 15:28:34-06:00'
+    runway: '36'
+  departure_versus_schedule: -0:02:18
+  arrival_versus_schedule: -0:02:18
+  airborne_duration: 0:18:37
+  flight_plan:
+    planned_time_enroute: 0:18:37

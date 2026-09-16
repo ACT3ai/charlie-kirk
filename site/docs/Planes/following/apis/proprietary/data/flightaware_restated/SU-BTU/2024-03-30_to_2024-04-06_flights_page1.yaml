@@ -1,0 +1,230 @@
+# Restated from a FlightAware AeroAPI response, in our own layout.
+# The raw response is held privately and is not republished.
+about:
+  aircraft: SU-BTU
+  question_asked: Which flights does FlightAware hold for SU-BTU between 30 March 2024 and 6 April 2024 (UTC)?
+  source: FlightAware AeroAPI v4 flight history by registration; the raw response is held privately and is not republished.
+  retrieved_utc: '2026-09-16T02:42:56.873Z'
+  vendor_http_status: 200
+  window_utc_from: '2024-03-30T00:00:00Z'
+  window_utc_until_exclusive: '2024-04-06T00:00:00Z'
+  result_page: 1
+  total_pages_reported: 1
+  further_pages_held_by_vendor: false
+flights_recorded: 6
+reading: FlightAware holds 6 flights for SU-BTU in this window, listed here in full with the times it recorded. A flight record shows where an aircraft went; it never shows who was aboard.
+flights:
+- number: 1
+  flightaware_id: SUBTU-1711872313-adhoc-479p
+  callsign: SU-BTU
+  registration: SU-BTU
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    position_only_point:
+      lat: 29.92918
+      lon: 31.89172
+    city: Cairo
+    timezone: Africa/Cairo
+  to:
+    position_only_point:
+      lat: 28.10065
+      lon: 33.96217
+    city: Sharm El Sheikh
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2024-03-31T08:17:40Z'
+      local: '2024-03-31 10:17:40+02:00'
+    estimated:
+      utc: '2024-03-31T08:17:40Z'
+      local: '2024-03-31 10:17:40+02:00'
+    actual:
+      utc: '2024-03-31T08:17:40Z'
+      local: '2024-03-31 10:17:40+02:00'
+  landing:
+    actual:
+      utc: '2024-03-31T08:17:40Z'
+      local: '2024-03-31 10:17:40+02:00'
+  departure_versus_schedule: +0:00:00
+  airborne_duration: 0:00:00
+- number: 2
+  flightaware_id: SUBTU-1711876505-adhoc-3459p
+  callsign: SU-BTU
+  registration: SU-BTU
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    position_only_point:
+      lat: 28.16792
+      lon: 34.15558
+    city: Sharm El Sheikh
+    timezone: Africa/Cairo
+  to:
+    position_only_point:
+      lat: 28.89293
+      lon: 33.15221
+    city: Sharm El Sheikh
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2024-03-31T09:19:04Z'
+      local: '2024-03-31 11:19:04+02:00'
+    estimated:
+      utc: '2024-03-31T09:19:04Z'
+      local: '2024-03-31 11:19:04+02:00'
+    actual:
+      utc: '2024-03-31T09:19:04Z'
+      local: '2024-03-31 11:19:04+02:00'
+  landing:
+    actual:
+      utc: '2024-03-31T09:19:04Z'
+      local: '2024-03-31 11:19:04+02:00'
+  departure_versus_schedule: +0:00:00
+  airborne_duration: 0:00:00
+- number: 3
+  flightaware_id: SUBTU-1711977433-adhoc-1598p
+  callsign: SU-BTU
+  registration: SU-BTU
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    position_only_point:
+      lat: 29.9892
+      lon: 32.25074
+    city: Cairo
+    timezone: Africa/Cairo
+  to:
+    icao: HEAZ
+    name: Almaza Air Base
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2024-04-01T14:15:36Z'
+      local: '2024-04-01 16:15:36+02:00'
+    estimated:
+      utc: '2024-04-01T14:15:36Z'
+      local: '2024-04-01 16:15:36+02:00'
+    actual:
+      utc: '2024-04-01T14:15:36Z'
+      local: '2024-04-01 16:15:36+02:00'
+  landing:
+    actual:
+      utc: '2024-04-01T14:15:36Z'
+      local: '2024-04-01 16:15:36+02:00'
+  departure_versus_schedule: +0:00:00
+  airborne_duration: 0:00:00
+- number: 4
+  flightaware_id: SUBTU-1711991768-adhoc-5700p
+  callsign: SU-BTU
+  registration: SU-BTU
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    icao: OJAM
+    iata: ADJ
+    name: Marka Int'l
+    city: Amman
+    timezone: Asia/Amman
+  to:
+    position_only_point:
+      lat: 31.90928
+      lon: 35.82647
+    city: Amman
+    timezone: Asia/Amman
+  takeoff:
+    scheduled:
+      utc: '2024-04-01T17:26:51Z'
+      local: '2024-04-01 20:26:51+03:00'
+    estimated:
+      utc: '2024-04-01T17:26:51Z'
+      local: '2024-04-01 20:26:51+03:00'
+    actual:
+      utc: '2024-04-01T17:26:51Z'
+      local: '2024-04-01 20:26:51+03:00'
+    runway: '24'
+  landing:
+    actual:
+      utc: '2024-04-01T17:26:51Z'
+      local: '2024-04-01 20:26:51+03:00'
+  departure_versus_schedule: +0:00:00
+  airborne_duration: 0:00:00
+- number: 5
+  flightaware_id: SUBTU-1712171212-adhoc-3350p
+  callsign: SU-BTU
+  registration: SU-BTU
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    position_only_point:
+      lat: 29.67822
+      lon: 31.97345
+    city: Cairo
+    timezone: Africa/Cairo
+  to:
+    position_only_point:
+      lat: 27.83107
+      lon: 33.97315
+    city: Sharm El Sheikh
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2024-04-03T19:23:37Z'
+      local: '2024-04-03 21:23:37+02:00'
+    estimated:
+      utc: '2024-04-03T19:23:37Z'
+      local: '2024-04-03 21:23:37+02:00'
+    actual:
+      utc: '2024-04-03T19:23:37Z'
+      local: '2024-04-03 21:23:37+02:00'
+  landing:
+    actual:
+      utc: '2024-04-03T19:23:37Z'
+      local: '2024-04-03 21:23:37+02:00'
+  departure_versus_schedule: +0:00:00
+  airborne_duration: 0:00:00
+- number: 6
+  flightaware_id: SUBTU-1712174620-adhoc-3479p
+  callsign: SU-BTU
+  registration: SU-BTU
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    position_only_point:
+      lat: 28.21326
+      lon: 34.22579
+    city: Sharm El Sheikh
+    timezone: Africa/Cairo
+  to:
+    icao: HEAZ
+    name: Almaza Air Base
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2024-04-03T20:08:09Z'
+      local: '2024-04-03 22:08:09+02:00'
+    estimated:
+      utc: '2024-04-03T20:08:09Z'
+      local: '2024-04-03 22:08:09+02:00'
+    actual:
+      utc: '2024-04-03T20:08:09Z'
+      local: '2024-04-03 22:08:09+02:00'
+  landing:
+    actual:
+      utc: '2024-04-03T20:08:09Z'
+      local: '2024-04-03 22:08:09+02:00'
+    runway: '36'
+  departure_versus_schedule: +0:00:00
+  airborne_duration: 0:00:00

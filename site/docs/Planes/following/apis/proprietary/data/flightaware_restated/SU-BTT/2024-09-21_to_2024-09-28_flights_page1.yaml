@@ -1,0 +1,234 @@
+# Restated from a FlightAware AeroAPI response, in our own layout.
+# The raw response is held privately and is not republished.
+about:
+  aircraft: SU-BTT
+  question_asked: Which flights does FlightAware hold for SU-BTT between 21 September 2024 and 28 September 2024 (UTC)?
+  source: FlightAware AeroAPI v4 flight history by registration; the raw response is held privately and is not republished.
+  retrieved_utc: '2026-09-16T02:33:23.431Z'
+  vendor_http_status: 200
+  window_utc_from: '2024-09-21T00:00:00Z'
+  window_utc_until_exclusive: '2024-09-28T00:00:00Z'
+  result_page: 1
+  total_pages_reported: 1
+  further_pages_held_by_vendor: false
+flights_recorded: 6
+reading: FlightAware holds 6 flights for SU-BTT in this window, listed here in full with the times it recorded. A flight record shows where an aircraft went; it never shows who was aboard.
+flights:
+- number: 1
+  flightaware_id: SUBTT-1726895562-adhoc-856p
+  callsign: SU-BTT
+  registration: SU-BTT
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    position_only_point:
+      lat: 29.51436
+      lon: 31.68858
+    city: Cairo
+    timezone: Africa/Cairo
+  to:
+    icao: OEJN
+    iata: JED
+    name: King Abdulaziz Int'l
+    city: Jeddah
+    timezone: Asia/Riyadh
+  takeoff:
+    scheduled:
+      utc: '2024-09-21T05:32:27Z'
+      local: '2024-09-21 08:32:27+03:00'
+    estimated:
+      utc: '2024-09-21T05:32:27Z'
+      local: '2024-09-21 08:32:27+03:00'
+    actual:
+      utc: '2024-09-21T05:32:27Z'
+      local: '2024-09-21 08:32:27+03:00'
+  landing:
+    actual:
+      utc: '2024-09-21T05:32:27Z'
+      local: '2024-09-21 08:32:27+03:00'
+    runway: 34L
+  departure_versus_schedule: +0:00:00
+  airborne_duration: 0:00:00
+- number: 2
+  flightaware_id: SUBTT-1726906123-adhoc-1699p
+  callsign: SU-BTT
+  registration: SU-BTT
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    icao: OEJN
+    iata: JED
+    name: King Abdulaziz Int'l
+    city: Jeddah
+    timezone: Asia/Riyadh
+  to:
+    position_only_point:
+      lat: 29.33824
+      lon: 32.34046
+    city: Cairo
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2024-09-21T08:16:37Z'
+      local: '2024-09-21 11:16:37+03:00'
+    estimated:
+      utc: '2024-09-21T08:16:37Z'
+      local: '2024-09-21 11:16:37+03:00'
+    actual:
+      utc: '2024-09-21T08:16:37Z'
+      local: '2024-09-21 11:16:37+03:00'
+    runway: 34L
+  landing:
+    actual:
+      utc: '2024-09-21T08:16:37Z'
+      local: '2024-09-21 11:16:37+03:00'
+  departure_versus_schedule: +0:00:00
+  airborne_duration: 0:00:00
+- number: 3
+  flightaware_id: SUBTT-1727197276-adhoc-1656p
+  callsign: SU-BTT
+  registration: SU-BTT
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    position_only_point:
+      lat: 29.89734
+      lon: 31.62592
+    city: Cairo
+    timezone: Africa/Cairo
+  to:
+    position_only_point:
+      lat: 28.96436
+      lon: 32.26463
+    city: Cairo
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2024-09-24T17:11:56Z'
+      local: '2024-09-24 20:11:56+03:00'
+    estimated:
+      utc: '2024-09-24T17:11:56Z'
+      local: '2024-09-24 20:11:56+03:00'
+    actual:
+      utc: '2024-09-24T17:11:56Z'
+      local: '2024-09-24 20:11:56+03:00'
+  landing:
+    actual:
+      utc: '2024-09-24T17:11:56Z'
+      local: '2024-09-24 20:11:56+03:00'
+  departure_versus_schedule: +0:00:00
+  airborne_duration: 0:00:00
+- number: 4
+  flightaware_id: SUBTT-1727200571-adhoc-1568p
+  callsign: SU-BTT
+  registration: SU-BTT
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    position_only_point:
+      lat: 28.07771
+      lon: 34.43057
+    city: Sharm El Sheikh
+    timezone: Africa/Cairo
+  to:
+    position_only_point:
+      lat: 29.80409
+      lon: 31.4531
+    city: Cairo
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2024-09-24T17:57:45Z'
+      local: '2024-09-24 20:57:45+03:00'
+    estimated:
+      utc: '2024-09-24T17:57:45Z'
+      local: '2024-09-24 20:57:45+03:00'
+    actual:
+      utc: '2024-09-24T17:57:45Z'
+      local: '2024-09-24 20:57:45+03:00'
+  landing:
+    actual:
+      utc: '2024-09-24T17:57:45Z'
+      local: '2024-09-24 20:57:45+03:00'
+  departure_versus_schedule: +0:00:00
+  airborne_duration: 0:00:00
+- number: 5
+  flightaware_id: SUBTT-1727241227-adhoc-495p
+  callsign: SU-BTT
+  registration: SU-BTT
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    position_only_point:
+      lat: 29.55363
+      lon: 31.75487
+    city: Cairo
+    timezone: Africa/Cairo
+  to:
+    position_only_point:
+      lat: 26.71572
+      lon: 34.21528
+    city: Hurghada
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2024-09-25T05:28:07Z'
+      local: '2024-09-25 08:28:07+03:00'
+    estimated:
+      utc: '2024-09-25T05:28:07Z'
+      local: '2024-09-25 08:28:07+03:00'
+    actual:
+      utc: '2024-09-25T05:28:07Z'
+      local: '2024-09-25 08:28:07+03:00'
+  landing:
+    actual:
+      utc: '2024-09-25T05:28:07Z'
+      local: '2024-09-25 08:28:07+03:00'
+  departure_versus_schedule: +0:00:00
+  airborne_duration: 0:00:00
+- number: 6
+  flightaware_id: SUBTT-1727247724-adhoc-366p
+  callsign: SU-BTT
+  registration: SU-BTT
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    position_only_point:
+      lat: 26.61773
+      lon: 34.24613
+    city: Hurghada
+    timezone: Africa/Cairo
+  to:
+    position_only_point:
+      lat: 28.80977
+      lon: 32.93749
+    city: Sharm El Sheikh
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2024-09-25T07:26:35Z'
+      local: '2024-09-25 10:26:35+03:00'
+    estimated:
+      utc: '2024-09-25T07:26:35Z'
+      local: '2024-09-25 10:26:35+03:00'
+    actual:
+      utc: '2024-09-25T07:26:35Z'
+      local: '2024-09-25 10:26:35+03:00'
+  landing:
+    actual:
+      utc: '2024-09-25T07:26:35Z'
+      local: '2024-09-25 10:26:35+03:00'
+  departure_versus_schedule: +0:00:00
+  airborne_duration: 0:00:00

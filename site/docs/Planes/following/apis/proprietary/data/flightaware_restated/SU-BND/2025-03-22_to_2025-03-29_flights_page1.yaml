@@ -1,0 +1,161 @@
+# Restated from a FlightAware AeroAPI response, in our own layout.
+# The raw response is held privately and is not republished.
+about:
+  aircraft: SU-BND
+  question_asked: Which flights does FlightAware hold for SU-BND between 22 March 2025 and 29 March 2025 (UTC)?
+  source: FlightAware AeroAPI v4 flight history by registration; the raw response is held privately and is not republished.
+  retrieved_utc: '2026-09-16T02:39:12.043Z'
+  vendor_http_status: 200
+  window_utc_from: '2025-03-22T00:00:00Z'
+  window_utc_until_exclusive: '2025-03-29T00:00:00Z'
+  result_page: 1
+  total_pages_reported: 1
+  further_pages_held_by_vendor: false
+flights_recorded: 4
+reading: FlightAware holds 4 flights for SU-BND in this window, listed here in full with the times it recorded. A flight record shows where an aircraft went; it never shows who was aboard.
+flights:
+- number: 1
+  flightaware_id: SUBND-1742719870-adhoc-1024p
+  callsign: SU-BND
+  registration: SU-BND
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    position_only_point:
+      lat: 28.4247
+      lon: 32.7455
+    city: Hurghada
+    timezone: Africa/Cairo
+  to:
+    position_only_point:
+      lat: 29.08983
+      lon: 32.79097
+    city: Cairo
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2025-03-23T09:02:41Z'
+      local: '2025-03-23 11:02:41+02:00'
+    estimated:
+      utc: '2025-03-23T09:02:41Z'
+      local: '2025-03-23 11:02:41+02:00'
+    actual:
+      utc: '2025-03-23T09:02:41Z'
+      local: '2025-03-23 11:02:41+02:00'
+  landing:
+    actual:
+      utc: '2025-03-23T09:02:41Z'
+      local: '2025-03-23 11:02:41+02:00'
+  departure_versus_schedule: +0:00:00
+  airborne_duration: 0:00:00
+- number: 2
+  flightaware_id: SUBND-1743061442-adhoc-10p
+  callsign: SU-BND
+  registration: SU-BND
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    position_only_point:
+      lat: 29.47591
+      lon: 31.31764
+    city: Cairo
+    timezone: Africa/Cairo
+  to:
+    position_only_point:
+      lat: 26.71925
+      lon: 32.46792
+    city: Sohag
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2025-03-27T07:59:33Z'
+      local: '2025-03-27 09:59:33+02:00'
+    estimated:
+      utc: '2025-03-27T07:59:33Z'
+      local: '2025-03-27 09:59:33+02:00'
+    actual:
+      utc: '2025-03-27T07:59:33Z'
+      local: '2025-03-27 09:59:33+02:00'
+  landing:
+    actual:
+      utc: '2025-03-27T07:59:33Z'
+      local: '2025-03-27 09:59:33+02:00'
+  departure_versus_schedule: +0:00:00
+  airborne_duration: 0:00:00
+- number: 3
+  flightaware_id: SUBND-1743082306-adhoc-777p
+  callsign: SU-BND
+  registration: SU-BND
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    position_only_point:
+      lat: 26.0007
+      lon: 33.15218
+    city: Luxor
+    timezone: Africa/Cairo
+  to:
+    icao: HEGN
+    iata: HRG
+    name: Hurghada
+    city: Hurghada
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2025-03-27T13:46:28Z'
+      local: '2025-03-27 15:46:28+02:00'
+    estimated:
+      utc: '2025-03-27T13:46:28Z'
+      local: '2025-03-27 15:46:28+02:00'
+    actual:
+      utc: '2025-03-27T13:46:28Z'
+      local: '2025-03-27 15:46:28+02:00'
+  landing:
+    actual:
+      utc: '2025-03-27T13:46:28Z'
+      local: '2025-03-27 15:46:28+02:00'
+    runway: '16'
+  departure_versus_schedule: +0:00:00
+  airborne_duration: 0:00:00
+- number: 4
+  flightaware_id: SUBND-1743085714-adhoc-2356p
+  callsign: SU-BND
+  registration: SU-BND
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    position_only_point:
+      lat: 27.09634
+      lon: 33.81682
+    city: Hurghada
+    timezone: Africa/Cairo
+  to:
+    position_only_point:
+      lat: 29.3925
+      lon: 32.33345
+    city: Cairo
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2025-03-27T14:37:12Z'
+      local: '2025-03-27 16:37:12+02:00'
+    estimated:
+      utc: '2025-03-27T14:37:12Z'
+      local: '2025-03-27 16:37:12+02:00'
+    actual:
+      utc: '2025-03-27T14:37:12Z'
+      local: '2025-03-27 16:37:12+02:00'
+  landing:
+    actual:
+      utc: '2025-03-27T14:37:12Z'
+      local: '2025-03-27 16:37:12+02:00'
+  departure_versus_schedule: +0:00:00
+  airborne_duration: 0:00:00

@@ -1,0 +1,115 @@
+# Restated from a FlightAware AeroAPI response, in our own layout.
+# The raw response is held privately and is not republished.
+about:
+  aircraft: SU-BTT
+  question_asked: Which flights does FlightAware hold for SU-BTT between 25 February 2023 and 4 March 2023 (UTC)?
+  source: FlightAware AeroAPI v4 flight history by registration; the raw response is held privately and is not republished.
+  retrieved_utc: '2026-09-16T02:31:34.840Z'
+  vendor_http_status: 200
+  window_utc_from: '2023-02-25T00:00:00Z'
+  window_utc_until_exclusive: '2023-03-04T00:00:00Z'
+  result_page: 1
+  total_pages_reported: 1
+  further_pages_held_by_vendor: false
+flights_recorded: 2
+reading: FlightAware holds 2 flights for SU-BTT in this window, listed here in full with the times it recorded. A flight record shows where an aircraft went; it never shows who was aboard.
+flights:
+- number: 1
+  flightaware_id: SUBTT-1677298396-1-0-214
+  callsign: SU-BTT
+  registration: SU-BTT
+  flight_category: general aviation
+  outcome: Arrived
+  progress_percent: 100
+  flags: []
+  from:
+    icao: LFPB
+    iata: LBG
+    name: Paris Le Bourget
+    city: Paris
+    timezone: Europe/Paris
+  to:
+    icao: KSUS
+    iata: SUS
+    faa_lid: SUS
+    name: Spirit of St Louis
+    city: St Louis
+    timezone: America/Chicago
+  takeoff:
+    scheduled:
+      utc: '2023-02-25T10:09:48Z'
+      local: '2023-02-25 11:09:48+01:00'
+    estimated:
+      utc: '2023-02-25T10:07:27Z'
+      local: '2023-02-25 11:07:27+01:00'
+    actual:
+      utc: '2023-02-25T10:07:27Z'
+      local: '2023-02-25 11:07:27+01:00'
+    runway: 09
+  landing:
+    scheduled:
+      utc: '2023-02-25T18:45:09Z'
+      local: '2023-02-25 12:45:09-06:00'
+    estimated:
+      utc: '2023-02-25T18:42:48Z'
+      local: '2023-02-25 12:42:48-06:00'
+    actual:
+      utc: '2023-02-25T18:42:48Z'
+      local: '2023-02-25 12:42:48-06:00'
+    runway: 26L
+  departure_versus_schedule: -0:02:21
+  arrival_versus_schedule: -0:02:21
+  airborne_duration: '8:35:21'
+  flight_plan:
+    planned_time_enroute: '8:35:21'
+- number: 2
+  flightaware_id: SUBTT-1677743109-6-0-214
+  callsign: SU-BTT
+  registration: SU-BTT
+  aircraft_type_code: FA7X
+  flight_category: general aviation
+  outcome: Arrived
+  progress_percent: 100
+  flags: []
+  from:
+    icao: KSUS
+    iata: SUS
+    faa_lid: SUS
+    name: Spirit of St Louis
+    city: St Louis
+    timezone: America/Chicago
+  to:
+    icao: KILG
+    iata: ILG
+    faa_lid: ILG
+    name: New Castle
+    city: Wilmington
+    timezone: America/New_York
+  takeoff:
+    scheduled:
+      utc: '2023-03-02T14:00:00Z'
+      local: '2023-03-02 08:00:00-06:00'
+    estimated:
+      utc: '2023-03-02T14:01:58Z'
+      local: '2023-03-02 08:01:58-06:00'
+    actual:
+      utc: '2023-03-02T14:01:58Z'
+      local: '2023-03-02 08:01:58-06:00'
+    runway: 08R
+  landing:
+    scheduled:
+      utc: '2023-03-02T15:55:00Z'
+      local: '2023-03-02 10:55:00-05:00'
+    estimated:
+      utc: '2023-03-02T15:29:44Z'
+      local: '2023-03-02 10:29:44-05:00'
+    actual:
+      utc: '2023-03-02T15:29:44Z'
+      local: '2023-03-02 10:29:44-05:00'
+    runway: '01'
+  departure_versus_schedule: +0:01:58
+  arrival_versus_schedule: -0:25:16
+  airborne_duration: '1:27:46'
+  flight_plan:
+    planned_time_enroute: '1:55:00'
+    cruise_speed_kt: 366

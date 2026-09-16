@@ -1,0 +1,201 @@
+# Restated from a FlightAware AeroAPI response, in our own layout.
+# The raw response is held privately and is not republished.
+about:
+  aircraft: SU-BGM
+  question_asked: Which flights does FlightAware hold for SU-BGM between 6 July 2024 and 13 July 2024 (UTC)?
+  source: FlightAware AeroAPI v4 flight history by registration; the raw response is held privately and is not republished.
+  retrieved_utc: '2026-09-16T02:53:13.760Z'
+  vendor_http_status: 200
+  window_utc_from: '2024-07-06T00:00:00Z'
+  window_utc_until_exclusive: '2024-07-13T00:00:00Z'
+  result_page: 1
+  total_pages_reported: 1
+  further_pages_held_by_vendor: false
+flights_recorded: 4
+reading: FlightAware holds 4 flights for SU-BGM in this window, listed here in full with the times it recorded. A flight record shows where an aircraft went; it never shows who was aboard.
+flights:
+- number: 1
+  flightaware_id: SUBGM-1720325621-sw-69p
+  callsign: SU-BGM
+  registration: SU-BGM
+  flight_category: general aviation
+  outcome: Arrived
+  flags:
+  - position_only
+  from:
+    position_only_point:
+      lat: 30.11199
+      lon: 31.3602
+    city: Cairo
+    timezone: Africa/Cairo
+  to:
+    icao: LFPB
+    iata: LBG
+    name: Paris Le Bourget
+    city: Paris
+    timezone: Europe/Paris
+  takeoff:
+    scheduled:
+      utc: '2024-07-07T05:24:01Z'
+      local: '2024-07-07 08:24:01+03:00'
+    estimated:
+      utc: '2024-07-07T05:24:01Z'
+      local: '2024-07-07 08:24:01+03:00'
+    actual:
+      utc: '2024-07-07T05:24:01Z'
+      local: '2024-07-07 08:24:01+03:00'
+  landing:
+    estimated:
+      utc: '2024-07-07T09:39:28Z'
+      local: '2024-07-07 11:39:28+02:00'
+    actual:
+      utc: '2024-07-07T09:39:28Z'
+      local: '2024-07-07 11:39:28+02:00'
+    runway: '27'
+  departure_versus_schedule: +0:00:00
+  airborne_duration: '4:15:27'
+- number: 2
+  flightaware_id: SUBGM-1720414678-sw-513p
+  callsign: SU-BGM
+  registration: SU-BGM
+  flight_category: general aviation
+  outcome: Arrived
+  progress_percent: 100
+  flags: []
+  from:
+    icao: LFPB
+    iata: LBG
+    name: Paris Le Bourget
+    city: Paris
+    timezone: Europe/Paris
+  to:
+    icao: CYYR
+    iata: YYR
+    name: CFB Goose Bay (Goose Bay)
+    city: Goose Bay
+    timezone: America/Goose_Bay
+  takeoff:
+    scheduled:
+      utc: '2024-07-08T07:48:49Z'
+      local: '2024-07-08 09:48:49+02:00'
+    estimated:
+      utc: '2024-07-08T07:43:51Z'
+      local: '2024-07-08 09:43:51+02:00'
+    actual:
+      utc: '2024-07-08T07:43:51Z'
+      local: '2024-07-08 09:43:51+02:00'
+    runway: 09
+  landing:
+    scheduled:
+      utc: '2024-07-08T13:26:20Z'
+      local: '2024-07-08 10:26:20-03:00'
+    estimated:
+      utc: '2024-07-08T13:21:22Z'
+      local: '2024-07-08 10:21:22-03:00'
+    actual:
+      utc: '2024-07-08T13:21:22Z'
+      local: '2024-07-08 10:21:22-03:00'
+    runway: '34'
+  departure_versus_schedule: -0:04:58
+  arrival_versus_schedule: -0:04:58
+  airborne_duration: '5:37:31'
+  flight_plan:
+    planned_time_enroute: '5:37:31'
+- number: 3
+  flightaware_id: SUBGM-1720448619-adhoc-1336p
+  callsign: SU-BGM
+  registration: SU-BGM
+  flight_category: general aviation
+  outcome: Arrived
+  progress_percent: 100
+  flags: []
+  from:
+    icao: CYYR
+    iata: YYR
+    name: CFB Goose Bay (Goose Bay)
+    city: Goose Bay
+    timezone: America/Goose_Bay
+  to:
+    icao: KMOT
+    iata: MOT
+    faa_lid: MOT
+    name: Minot Intl
+    city: Minot
+    timezone: America/Chicago
+  takeoff:
+    scheduled:
+      utc: '2024-07-08T14:53:34Z'
+      local: '2024-07-08 11:53:34-03:00'
+    estimated:
+      utc: '2024-07-08T14:28:27Z'
+      local: '2024-07-08 11:28:27-03:00'
+    actual:
+      utc: '2024-07-08T14:28:27Z'
+      local: '2024-07-08 11:28:27-03:00'
+    runway: '26'
+  landing:
+    scheduled:
+      utc: '2024-07-08T18:46:35Z'
+      local: '2024-07-08 13:46:35-05:00'
+    estimated:
+      utc: '2024-07-08T18:21:28Z'
+      local: '2024-07-08 13:21:28-05:00'
+    actual:
+      utc: '2024-07-08T18:21:28Z'
+      local: '2024-07-08 13:21:28-05:00'
+    runway: '31'
+  departure_versus_schedule: -0:25:07
+  arrival_versus_schedule: -0:25:07
+  airborne_duration: '3:53:01'
+  flight_plan:
+    planned_time_enroute: '3:53:01'
+- number: 4
+  flightaware_id: SUBGM-1720465068-adhoc-2341p
+  callsign: SU-BGM
+  registration: SU-BGM
+  aircraft_type_code: GLF4
+  flight_category: general aviation
+  outcome: Arrived
+  progress_percent: 100
+  flags: []
+  from:
+    icao: KMOT
+    iata: MOT
+    faa_lid: MOT
+    name: Minot Intl
+    city: Minot
+    timezone: America/Chicago
+  to:
+    icao: KPVU
+    iata: PVU
+    faa_lid: PVU
+    name: Provo Muni
+    city: Provo
+    timezone: America/Denver
+  takeoff:
+    scheduled:
+      utc: '2024-07-08T19:27:53Z'
+      local: '2024-07-08 14:27:53-05:00'
+    estimated:
+      utc: '2024-07-08T19:02:20Z'
+      local: '2024-07-08 14:02:20-05:00'
+    actual:
+      utc: '2024-07-08T19:02:20Z'
+      local: '2024-07-08 14:02:20-05:00'
+    runway: '31'
+  landing:
+    scheduled:
+      utc: '2024-07-08T21:06:37Z'
+      local: '2024-07-08 15:06:37-06:00'
+    estimated:
+      utc: '2024-07-08T20:41:04Z'
+      local: '2024-07-08 14:41:04-06:00'
+    actual:
+      utc: '2024-07-08T20:41:04Z'
+      local: '2024-07-08 14:41:04-06:00'
+    runway: '31'
+  departure_versus_schedule: -0:25:33
+  arrival_versus_schedule: -0:25:33
+  airborne_duration: '1:38:44'
+  flight_plan:
+    planned_time_enroute: '1:38:44'

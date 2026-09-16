@@ -1,0 +1,93 @@
+# Restated from a FlightAware AeroAPI response, in our own layout.
+# The raw response is held privately and is not republished.
+about:
+  aircraft: SU-BGM
+  question_asked: Which flights does FlightAware hold for SU-BGM between 11 March 2023 and 18 March 2023 (UTC)?
+  source: FlightAware AeroAPI v4 flight history by registration; the raw response is held privately and is not republished.
+  retrieved_utc: '2026-09-16T02:51:32.893Z'
+  vendor_http_status: 200
+  window_utc_from: '2023-03-11T00:00:00Z'
+  window_utc_until_exclusive: '2023-03-18T00:00:00Z'
+  result_page: 1
+  total_pages_reported: 1
+  further_pages_held_by_vendor: false
+flights_recorded: 2
+reading: FlightAware holds 2 flights for SU-BGM in this window, listed here in full with the times it recorded. A flight record shows where an aircraft went; it never shows who was aboard.
+flights:
+- number: 1
+  flightaware_id: SUBGM-1678680684-8-2-90
+  callsign: SU-BGM
+  registration: SU-BGM
+  flight_category: general aviation
+  outcome: Arrived
+  flags:
+  - position_only
+  from:
+    position_only_point:
+      lat: 30.79221
+      lon: 30.5798
+    city: Amreya
+    timezone: Africa/Cairo
+  to:
+    icao: LIRA
+    iata: CIA
+    name: Ciampino (Giovan Battista Pastine)
+    city: Rome
+    timezone: Europe/Rome
+  takeoff:
+    scheduled:
+      utc: '2023-03-13T06:59:09Z'
+      local: '2023-03-13 08:59:09+02:00'
+    estimated:
+      utc: '2023-03-13T06:59:09Z'
+      local: '2023-03-13 08:59:09+02:00'
+    actual:
+      utc: '2023-03-13T06:59:09Z'
+      local: '2023-03-13 08:59:09+02:00'
+  landing:
+    estimated:
+      utc: '2023-03-13T09:54:59Z'
+      local: '2023-03-13 10:54:59+01:00'
+    actual:
+      utc: '2023-03-13T09:54:59Z'
+      local: '2023-03-13 10:54:59+01:00'
+    runway: '15'
+  departure_versus_schedule: +0:00:00
+  airborne_duration: '2:55:50'
+- number: 2
+  flightaware_id: SUBGM-1678684458-5-1-90
+  callsign: SU-BGM
+  registration: SU-BGM
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    icao: LIRA
+    iata: CIA
+    name: Ciampino (Giovan Battista Pastine)
+    city: Rome
+    timezone: Europe/Rome
+  to:
+    position_only_point:
+      lat: 33.20549
+      lon: 25.27938
+    city: Heraklion (Iraklion)
+    timezone: Europe/Athens
+  takeoff:
+    scheduled:
+      utc: '2023-03-13T11:27:17Z'
+      local: '2023-03-13 12:27:17+01:00'
+    estimated:
+      utc: '2023-03-13T11:02:09Z'
+      local: '2023-03-13 12:02:09+01:00'
+    actual:
+      utc: '2023-03-13T11:02:09Z'
+      local: '2023-03-13 12:02:09+01:00'
+    runway: '15'
+  landing:
+    actual:
+      utc: '2023-03-13T11:02:09Z'
+      local: '2023-03-13 13:02:09+02:00'
+  departure_versus_schedule: -0:25:08
+  airborne_duration: 0:00:00

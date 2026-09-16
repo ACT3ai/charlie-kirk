@@ -1,0 +1,174 @@
+# Restated from a FlightAware AeroAPI response, in our own layout.
+# The raw response is held privately and is not republished.
+about:
+  aircraft: SU-BTT
+  question_asked: Which flights does FlightAware hold for SU-BTT between 5 July 2025 and 12 July 2025 (UTC)?
+  source: FlightAware AeroAPI v4 flight history by registration; the raw response is held privately and is not republished.
+  retrieved_utc: '2026-09-16T02:34:24.589Z'
+  vendor_http_status: 200
+  window_utc_from: '2025-07-05T00:00:00Z'
+  window_utc_until_exclusive: '2025-07-12T00:00:00Z'
+  result_page: 1
+  total_pages_reported: 1
+  further_pages_held_by_vendor: false
+flights_recorded: 4
+reading: FlightAware holds 4 flights for SU-BTT in this window, listed here in full with the times it recorded. A flight record shows where an aircraft went; it never shows who was aboard.
+flights:
+- number: 1
+  flightaware_id: SUBTT-1751735002-adhoc-1684p
+  callsign: SU-BTT
+  registration: SU-BTT
+  flight_category: general aviation
+  outcome: result unknown
+  progress_percent: 100
+  flags: []
+  from:
+    icao: HEAZ
+    name: Almaza Air Base
+    timezone: Africa/Cairo
+  to:
+    icao: HEAZ
+    name: Almaza Air Base
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2025-07-05T17:13:10Z'
+      local: '2025-07-05 20:13:10+03:00'
+    estimated:
+      utc: '2025-07-05T17:13:10Z'
+      local: '2025-07-05 20:13:10+03:00'
+    actual:
+      utc: '2025-07-05T17:13:10Z'
+      local: '2025-07-05 20:13:10+03:00'
+    runway: '36'
+  landing:
+    scheduled:
+      utc: '2025-07-05T17:43:01Z'
+      local: '2025-07-05 20:43:01+03:00'
+    estimated:
+      utc: '2025-07-05T17:43:01Z'
+      local: '2025-07-05 20:43:01+03:00'
+    actual:
+      utc: '2025-07-05T17:13:10Z'
+      local: '2025-07-05 20:13:10+03:00'
+    runway: '36'
+  departure_versus_schedule: +0:00:00
+  arrival_versus_schedule: -0:29:51
+  airborne_duration: 0:00:00
+  flight_plan:
+    planned_time_enroute: 0:29:51
+- number: 2
+  flightaware_id: SUBTT-1751992697-adhoc-3456p
+  callsign: SU-BTT
+  registration: SU-BTT
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    position_only_point:
+      lat: 30.14616
+      lon: 31.35897
+    city: Cairo
+    timezone: Africa/Cairo
+  to:
+    position_only_point:
+      lat: 28.79539
+      lon: 31.22013
+    city: Cairo
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2025-07-08T16:44:49Z'
+      local: '2025-07-08 19:44:49+03:00'
+    estimated:
+      utc: '2025-07-08T16:44:49Z'
+      local: '2025-07-08 19:44:49+03:00'
+    actual:
+      utc: '2025-07-08T16:44:49Z'
+      local: '2025-07-08 19:44:49+03:00'
+  landing:
+    actual:
+      utc: '2025-07-08T16:44:49Z'
+      local: '2025-07-08 19:44:49+03:00'
+  departure_versus_schedule: +0:00:00
+  airborne_duration: 0:00:00
+- number: 3
+  flightaware_id: SUBTT-1751996153-adhoc-2301p
+  callsign: SU-BTT
+  registration: SU-BTT
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    position_only_point:
+      lat: 28.70178
+      lon: 31.21846
+    city: Cairo
+    timezone: Africa/Cairo
+  to:
+    position_only_point:
+      lat: 29.86768
+      lon: 31.328
+    city: Cairo
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2025-07-08T17:54:53Z'
+      local: '2025-07-08 20:54:53+03:00'
+    estimated:
+      utc: '2025-07-08T17:54:53Z'
+      local: '2025-07-08 20:54:53+03:00'
+    actual:
+      utc: '2025-07-08T17:54:53Z'
+      local: '2025-07-08 20:54:53+03:00'
+  landing:
+    actual:
+      utc: '2025-07-08T17:54:53Z'
+      local: '2025-07-08 20:54:53+03:00'
+  departure_versus_schedule: +0:00:00
+  airborne_duration: 0:00:00
+- number: 4
+  flightaware_id: SUBTT-1752000698-adhoc-743p
+  callsign: SU-BTT
+  registration: SU-BTT
+  flight_category: general aviation
+  outcome: result unknown
+  progress_percent: 100
+  flags: []
+  from:
+    icao: HEAZ
+    name: Almaza Air Base
+    timezone: Africa/Cairo
+  to:
+    icao: HEAZ
+    name: Almaza Air Base
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2025-07-08T18:51:40Z'
+      local: '2025-07-08 21:51:40+03:00'
+    estimated:
+      utc: '2025-07-08T18:51:40Z'
+      local: '2025-07-08 21:51:40+03:00'
+    actual:
+      utc: '2025-07-08T18:51:40Z'
+      local: '2025-07-08 21:51:40+03:00'
+    runway: '36'
+  landing:
+    scheduled:
+      utc: '2025-07-08T19:07:50Z'
+      local: '2025-07-08 22:07:50+03:00'
+    estimated:
+      utc: '2025-07-08T19:07:50Z'
+      local: '2025-07-08 22:07:50+03:00'
+    actual:
+      utc: '2025-07-08T18:51:40Z'
+      local: '2025-07-08 21:51:40+03:00'
+    runway: '36'
+  departure_versus_schedule: +0:00:00
+  arrival_versus_schedule: -0:16:10
+  airborne_duration: 0:00:00
+  flight_plan:
+    planned_time_enroute: 0:16:10

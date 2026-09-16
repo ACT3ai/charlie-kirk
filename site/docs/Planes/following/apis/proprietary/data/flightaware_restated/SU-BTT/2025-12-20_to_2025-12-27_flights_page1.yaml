@@ -1,0 +1,106 @@
+# Restated from a FlightAware AeroAPI response, in our own layout.
+# The raw response is held privately and is not republished.
+about:
+  aircraft: SU-BTT
+  question_asked: Which flights does FlightAware hold for SU-BTT between 20 December 2025 and 27 December 2025 (UTC)?
+  source: FlightAware AeroAPI v4 flight history by registration; the raw response is held privately and is not republished.
+  retrieved_utc: '2026-09-16T02:34:53.957Z'
+  vendor_http_status: 200
+  window_utc_from: '2025-12-20T00:00:00Z'
+  window_utc_until_exclusive: '2025-12-27T00:00:00Z'
+  result_page: 1
+  total_pages_reported: 1
+  further_pages_held_by_vendor: false
+flights_recorded: 2
+reading: FlightAware holds 2 flights for SU-BTT in this window, listed here in full with the times it recorded. A flight record shows where an aircraft went; it never shows who was aboard.
+flights:
+- number: 1
+  flightaware_id: SUBTT-1766313809-adhoc-2652p
+  callsign: SU-BTT
+  registration: SU-BTT
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    position_only_point:
+      lat: 30.78211
+      lon: 30.53194
+    city: Amreya
+    timezone: Africa/Cairo
+  to:
+    position_only_point:
+      lat: 30.66289
+      lon: 28.80703
+    city: Matrouh Governorate
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2025-12-21T11:18:16Z'
+      local: '2025-12-21 13:18:16+02:00'
+    estimated:
+      utc: '2025-12-21T11:18:16Z'
+      local: '2025-12-21 13:18:16+02:00'
+    actual:
+      utc: '2025-12-21T11:18:16Z'
+      local: '2025-12-21 13:18:16+02:00'
+  landing:
+    scheduled:
+      utc: '2025-12-21T11:42:09Z'
+      local: '2025-12-21 13:42:09+02:00'
+    estimated:
+      utc: '2025-12-21T11:42:09Z'
+      local: '2025-12-21 13:42:09+02:00'
+    actual:
+      utc: '2025-12-21T11:18:16Z'
+      local: '2025-12-21 13:18:16+02:00'
+  departure_versus_schedule: +0:00:00
+  arrival_versus_schedule: -0:23:53
+  airborne_duration: 0:00:00
+  flight_plan:
+    planned_time_enroute: 0:23:53
+- number: 2
+  flightaware_id: SUBTT-1766319426-adhoc-437p
+  callsign: SU-BTT
+  registration: SU-BTT
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    position_only_point:
+      lat: 30.63419
+      lon: 28.85263
+    city: Matrouh Governorate
+    timezone: Africa/Cairo
+  to:
+    position_only_point:
+      lat: 30.63419
+      lon: 28.85263
+    city: Matrouh Governorate
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2025-12-21T12:29:54Z'
+      local: '2025-12-21 14:29:54+02:00'
+    estimated:
+      utc: '2025-12-21T12:29:54Z'
+      local: '2025-12-21 14:29:54+02:00'
+    actual:
+      utc: '2025-12-21T12:29:54Z'
+      local: '2025-12-21 14:29:54+02:00'
+  landing:
+    scheduled:
+      utc: '2025-12-21T13:13:25Z'
+      local: '2025-12-21 15:13:25+02:00'
+    estimated:
+      utc: '2025-12-21T13:13:25Z'
+      local: '2025-12-21 15:13:25+02:00'
+    actual:
+      utc: '2025-12-21T12:29:54Z'
+      local: '2025-12-21 14:29:54+02:00'
+  departure_versus_schedule: +0:00:00
+  arrival_versus_schedule: -0:43:31
+  airborne_duration: 0:00:00
+  flight_plan:
+    planned_time_enroute: 0:43:31

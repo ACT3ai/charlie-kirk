@@ -1,0 +1,231 @@
+# Restated from a FlightAware AeroAPI response, in our own layout.
+# The raw response is held privately and is not republished.
+about:
+  aircraft: SU-BTV
+  question_asked: Which flights does FlightAware hold for SU-BTV between 14 June 2025 and 21 June 2025 (UTC)?
+  source: FlightAware AeroAPI v4 flight history by registration; the raw response is held privately and is not republished.
+  retrieved_utc: '2026-09-16T02:49:23.971Z'
+  vendor_http_status: 200
+  window_utc_from: '2025-06-14T00:00:00Z'
+  window_utc_until_exclusive: '2025-06-21T00:00:00Z'
+  result_page: 1
+  total_pages_reported: 1
+  further_pages_held_by_vendor: false
+flights_recorded: 6
+reading: FlightAware holds 6 flights for SU-BTV in this window, listed here in full with the times it recorded. A flight record shows where an aircraft went; it never shows who was aboard.
+flights:
+- number: 1
+  flightaware_id: SUBTV-1749965954-adhoc-1594p
+  callsign: SU-BTV
+  registration: SU-BTV
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    position_only_point:
+      lat: 29.86959
+      lon: 31.6305
+    city: Cairo
+    timezone: Africa/Cairo
+  to:
+    position_only_point:
+      lat: 27.48853
+      lon: 33.55048
+    city: Hurghada
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2025-06-15T05:49:54Z'
+      local: '2025-06-15 08:49:54+03:00'
+    estimated:
+      utc: '2025-06-15T05:49:54Z'
+      local: '2025-06-15 08:49:54+03:00'
+    actual:
+      utc: '2025-06-15T05:49:54Z'
+      local: '2025-06-15 08:49:54+03:00'
+  landing:
+    actual:
+      utc: '2025-06-15T05:49:54Z'
+      local: '2025-06-15 08:49:54+03:00'
+  departure_versus_schedule: +0:00:00
+  airborne_duration: 0:00:00
+- number: 2
+  flightaware_id: SUBTV-1749971043-adhoc-1249p
+  callsign: SU-BTV
+  registration: SU-BTV
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    position_only_point:
+      lat: 29.92941
+      lon: 31.35679
+    city: Cairo
+    timezone: Africa/Cairo
+  to:
+    position_only_point:
+      lat: 29.99995
+      lon: 31.3581
+    city: Cairo
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2025-06-15T08:14:47Z'
+      local: '2025-06-15 11:14:47+03:00'
+    estimated:
+      utc: '2025-06-15T08:14:47Z'
+      local: '2025-06-15 11:14:47+03:00'
+    actual:
+      utc: '2025-06-15T08:14:47Z'
+      local: '2025-06-15 11:14:47+03:00'
+  landing:
+    actual:
+      utc: '2025-06-15T08:14:47Z'
+      local: '2025-06-15 11:14:47+03:00'
+  departure_versus_schedule: +0:00:00
+  airborne_duration: 0:00:00
+- number: 3
+  flightaware_id: SUBTV-1750178869-adhoc-3035p
+  callsign: SU-BTV
+  registration: SU-BTV
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    position_only_point:
+      lat: 30.13173
+      lon: 31.35866
+    city: Cairo
+    timezone: Africa/Cairo
+  to:
+    position_only_point:
+      lat: 30.04482
+      lon: 31.3588
+    city: Cairo
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2025-06-17T16:57:40Z'
+      local: '2025-06-17 19:57:40+03:00'
+    estimated:
+      utc: '2025-06-17T16:57:40Z'
+      local: '2025-06-17 19:57:40+03:00'
+    actual:
+      utc: '2025-06-17T16:56:20Z'
+      local: '2025-06-17 19:56:20+03:00'
+  landing:
+    actual:
+      utc: '2025-06-17T16:56:20Z'
+      local: '2025-06-17 19:56:20+03:00'
+  departure_versus_schedule: -0:01:20
+  airborne_duration: 0:00:00
+- number: 4
+  flightaware_id: SUBTV-1750182310-adhoc-2989p
+  callsign: SU-BTV
+  registration: SU-BTV
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    position_only_point:
+      lat: 30.24197
+      lon: 31.34889
+    city: Cairo
+    timezone: Africa/Cairo
+  to:
+    position_only_point:
+      lat: 29.99767
+      lon: 31.358
+    city: Cairo
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2025-06-17T17:46:56Z'
+      local: '2025-06-17 20:46:56+03:00'
+    estimated:
+      utc: '2025-06-17T17:46:56Z'
+      local: '2025-06-17 20:46:56+03:00'
+    actual:
+      utc: '2025-06-17T17:46:56Z'
+      local: '2025-06-17 20:46:56+03:00'
+  landing:
+    actual:
+      utc: '2025-06-17T17:46:56Z'
+      local: '2025-06-17 20:46:56+03:00'
+  departure_versus_schedule: +0:00:00
+  airborne_duration: 0:00:00
+- number: 5
+  flightaware_id: SUBTV-1750226117-adhoc-2561p
+  callsign: SU-BTV
+  registration: SU-BTV
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    icao: HEAZ
+    name: Almaza Air Base
+    timezone: Africa/Cairo
+  to:
+    position_only_point:
+      lat: 28.5942
+      lon: 31.87516
+    city: Cairo
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2025-06-18T06:04:57Z'
+      local: '2025-06-18 09:04:57+03:00'
+    estimated:
+      utc: '2025-06-18T06:04:57Z'
+      local: '2025-06-18 09:04:57+03:00'
+    actual:
+      utc: '2025-06-18T05:59:57Z'
+      local: '2025-06-18 08:59:57+03:00'
+    runway: '18'
+  landing:
+    actual:
+      utc: '2025-06-18T05:59:57Z'
+      local: '2025-06-18 08:59:57+03:00'
+  departure_versus_schedule: -0:05:00
+  airborne_duration: 0:00:00
+- number: 6
+  flightaware_id: SUBTV-1750231238-adhoc-1276p
+  callsign: SU-BTV
+  registration: SU-BTV
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    position_only_point:
+      lat: 29.66779
+      lon: 31.358
+    city: Cairo
+    timezone: Africa/Cairo
+  to:
+    position_only_point:
+      lat: 29.72975
+      lon: 31.35218
+    city: Cairo
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2025-06-18T08:31:19Z'
+      local: '2025-06-18 11:31:19+03:00'
+    estimated:
+      utc: '2025-06-18T08:31:19Z'
+      local: '2025-06-18 11:31:19+03:00'
+    actual:
+      utc: '2025-06-18T08:31:19Z'
+      local: '2025-06-18 11:31:19+03:00'
+  landing:
+    actual:
+      utc: '2025-06-18T08:31:19Z'
+      local: '2025-06-18 11:31:19+03:00'
+  departure_versus_schedule: +0:00:00
+  airborne_duration: 0:00:00

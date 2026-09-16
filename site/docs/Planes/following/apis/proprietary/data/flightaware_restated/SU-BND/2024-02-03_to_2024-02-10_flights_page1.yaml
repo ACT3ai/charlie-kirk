@@ -1,0 +1,163 @@
+# Restated from a FlightAware AeroAPI response, in our own layout.
+# The raw response is held privately and is not republished.
+about:
+  aircraft: SU-BND
+  question_asked: Which flights does FlightAware hold for SU-BND between 3 February 2024 and 10 February 2024 (UTC)?
+  source: FlightAware AeroAPI v4 flight history by registration; the raw response is held privately and is not republished.
+  retrieved_utc: '2026-09-16T02:37:43.552Z'
+  vendor_http_status: 200
+  window_utc_from: '2024-02-03T00:00:00Z'
+  window_utc_until_exclusive: '2024-02-10T00:00:00Z'
+  result_page: 1
+  total_pages_reported: 1
+  further_pages_held_by_vendor: false
+flights_recorded: 4
+reading: FlightAware holds 4 flights for SU-BND in this window, listed here in full with the times it recorded. A flight record shows where an aircraft went; it never shows who was aboard.
+flights:
+- number: 1
+  flightaware_id: SUBND-1707236420-adhoc-310p
+  callsign: SU-BND
+  registration: SU-BND
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    position_only_point:
+      lat: 30.20599
+      lon: 31.30996
+    city: Cairo
+    timezone: Africa/Cairo
+  to:
+    position_only_point:
+      lat: 30.16306
+      lon: 31.24792
+    city: Cairo
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2024-02-06T16:41:14Z'
+      local: '2024-02-06 18:41:14+02:00'
+    estimated:
+      utc: '2024-02-06T16:41:14Z'
+      local: '2024-02-06 18:41:14+02:00'
+    actual:
+      utc: '2024-02-06T16:41:14Z'
+      local: '2024-02-06 18:41:14+02:00'
+  landing:
+    actual:
+      utc: '2024-02-06T16:41:14Z'
+      local: '2024-02-06 18:41:14+02:00'
+  departure_versus_schedule: +0:00:00
+  airborne_duration: 0:00:00
+- number: 2
+  flightaware_id: SUBND-1707248588-adhoc-5342p
+  callsign: SU-BND
+  registration: SU-BND
+  flight_category: general aviation
+  outcome: Arrived
+  flags:
+  - position_only
+  from:
+    position_only_point:
+      lat: 29.61273
+      lon: 31.89738
+    city: Cairo
+    timezone: Africa/Cairo
+  to:
+    icao: OKKK
+    iata: KWI
+    name: Kuwait Int'l
+    city: Kuwait City
+    timezone: Asia/Kuwait
+  takeoff:
+    scheduled:
+      utc: '2024-02-06T19:55:21Z'
+      local: '2024-02-06 21:55:21+02:00'
+    estimated:
+      utc: '2024-02-06T19:55:21Z'
+      local: '2024-02-06 21:55:21+02:00'
+    actual:
+      utc: '2024-02-06T19:55:21Z'
+      local: '2024-02-06 21:55:21+02:00'
+  landing:
+    estimated:
+      utc: '2024-02-06T22:00:12Z'
+      local: '2024-02-07 01:00:12+03:00'
+    actual:
+      utc: '2024-02-06T22:00:12Z'
+      local: '2024-02-07 01:00:12+03:00'
+  departure_versus_schedule: +0:00:00
+  airborne_duration: '2:04:51'
+- number: 3
+  flightaware_id: SUBND-1707507881-adhoc-2193p
+  callsign: SU-BND
+  registration: SU-BND
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    icao: OKKK
+    iata: KWI
+    name: Kuwait Int'l
+    city: Kuwait City
+    timezone: Asia/Kuwait
+  to:
+    position_only_point:
+      lat: 28.94499
+      lon: 43.86751
+    city: Rafha
+    timezone: Asia/Riyadh
+  takeoff:
+    scheduled:
+      utc: '2024-02-09T20:14:36Z'
+      local: '2024-02-09 23:14:36+03:00'
+    estimated:
+      utc: '2024-02-09T19:53:23Z'
+      local: '2024-02-09 22:53:23+03:00'
+    actual:
+      utc: '2024-02-09T19:53:23Z'
+      local: '2024-02-09 22:53:23+03:00'
+  landing:
+    actual:
+      utc: '2024-02-09T19:53:23Z'
+      local: '2024-02-09 22:53:23+03:00'
+  departure_versus_schedule: -0:21:13
+  airborne_duration: 0:00:00
+- number: 4
+  flightaware_id: SUBND-1707516280-adhoc-1878p
+  callsign: SU-BND
+  registration: SU-BND
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    position_only_point:
+      lat: 29.2576
+      lon: 33.89699
+    city: Eilat
+    timezone: Asia/Jerusalem
+  to:
+    position_only_point:
+      lat: 29.6568
+      lon: 32.31084
+    city: Cairo
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2024-02-09T22:04:24Z'
+      local: '2024-02-10 00:04:24+02:00'
+    estimated:
+      utc: '2024-02-09T22:04:24Z'
+      local: '2024-02-10 00:04:24+02:00'
+    actual:
+      utc: '2024-02-09T22:04:24Z'
+      local: '2024-02-10 00:04:24+02:00'
+  landing:
+    actual:
+      utc: '2024-02-09T22:04:24Z'
+      local: '2024-02-10 00:04:24+02:00'
+  departure_versus_schedule: +0:00:00
+  airborne_duration: 0:00:00

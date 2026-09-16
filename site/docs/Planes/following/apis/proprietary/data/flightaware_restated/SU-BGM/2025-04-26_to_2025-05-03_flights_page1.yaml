@@ -1,0 +1,124 @@
+# Restated from a FlightAware AeroAPI response, in our own layout.
+# The raw response is held privately and is not republished.
+about:
+  aircraft: SU-BGM
+  question_asked: Which flights does FlightAware hold for SU-BGM between 26 April 2025 and 3 May 2025 (UTC)?
+  source: FlightAware AeroAPI v4 flight history by registration; the raw response is held privately and is not republished.
+  retrieved_utc: '2026-09-16T02:54:16.843Z'
+  vendor_http_status: 200
+  window_utc_from: '2025-04-26T00:00:00Z'
+  window_utc_until_exclusive: '2025-05-03T00:00:00Z'
+  result_page: 1
+  total_pages_reported: 1
+  further_pages_held_by_vendor: false
+flights_recorded: 3
+reading: FlightAware holds 3 flights for SU-BGM in this window, listed here in full with the times it recorded. A flight record shows where an aircraft went; it never shows who was aboard.
+flights:
+- number: 1
+  flightaware_id: SUBGM-1745736434-adhoc-748p
+  callsign: SU-BGM
+  registration: SU-BGM
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    position_only_point:
+      lat: 31.4438
+      lon: 29.53965
+    city: Amreya
+    timezone: Africa/Cairo
+  to:
+    position_only_point:
+      lat: 31.52568
+      lon: 28.13082
+    city: Matrouh Governorate
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2025-04-27T07:13:13Z'
+      local: '2025-04-27 10:13:13+03:00'
+    estimated:
+      utc: '2025-04-27T07:13:13Z'
+      local: '2025-04-27 10:13:13+03:00'
+    actual:
+      utc: '2025-04-27T07:13:13Z'
+      local: '2025-04-27 10:13:13+03:00'
+  landing:
+    actual:
+      utc: '2025-04-27T07:13:13Z'
+      local: '2025-04-27 10:13:13+03:00'
+  departure_versus_schedule: +0:00:00
+  airborne_duration: 0:00:00
+- number: 2
+  flightaware_id: SUBGM-1745909108-adhoc-1878p
+  callsign: SU-BGM
+  registration: SU-BGM
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    position_only_point:
+      lat: 29.28763
+      lon: 31.28938
+    city: Cairo
+    timezone: Africa/Cairo
+  to:
+    position_only_point:
+      lat: 27.13027
+      lon: 31.04308
+    city: Assiut
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2025-04-29T07:02:21Z'
+      local: '2025-04-29 10:02:21+03:00'
+    estimated:
+      utc: '2025-04-29T07:02:21Z'
+      local: '2025-04-29 10:02:21+03:00'
+    actual:
+      utc: '2025-04-29T07:02:21Z'
+      local: '2025-04-29 10:02:21+03:00'
+  landing:
+    actual:
+      utc: '2025-04-29T07:02:21Z'
+      local: '2025-04-29 10:02:21+03:00'
+  departure_versus_schedule: +0:00:00
+  airborne_duration: 0:00:00
+- number: 3
+  flightaware_id: SUBGM-1745914868-adhoc-94p
+  callsign: SU-BGM
+  registration: SU-BGM
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    position_only_point:
+      lat: 27.66101
+      lon: 31.05772
+    city: Assiut
+    timezone: Africa/Cairo
+  to:
+    position_only_point:
+      lat: 27.66101
+      lon: 31.05772
+    city: Assiut
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2025-04-29T09:07:11Z'
+      local: '2025-04-29 12:07:11+03:00'
+    estimated:
+      utc: '2025-04-29T09:07:11Z'
+      local: '2025-04-29 12:07:11+03:00'
+    actual:
+      utc: '2025-04-29T09:07:11Z'
+      local: '2025-04-29 12:07:11+03:00'
+  landing:
+    actual:
+      utc: '2025-04-29T09:07:11Z'
+      local: '2025-04-29 12:07:11+03:00'
+  departure_versus_schedule: +0:00:00
+  airborne_duration: 0:00:00

@@ -1,0 +1,111 @@
+# Restated from a FlightAware AeroAPI response, in our own layout.
+# The raw response is held privately and is not republished.
+about:
+  aircraft: SU-BTT
+  question_asked: Which flights does FlightAware hold for SU-BTT between 26 July 2025 and 2 August 2025 (UTC)?
+  source: FlightAware AeroAPI v4 flight history by registration; the raw response is held privately and is not republished.
+  retrieved_utc: '2026-09-16T02:34:27.133Z'
+  vendor_http_status: 200
+  window_utc_from: '2025-07-26T00:00:00Z'
+  window_utc_until_exclusive: '2025-08-02T00:00:00Z'
+  result_page: 1
+  total_pages_reported: 1
+  further_pages_held_by_vendor: false
+flights_recorded: 2
+reading: FlightAware holds 2 flights for SU-BTT in this window, listed here in full with the times it recorded. A flight record shows where an aircraft went; it never shows who was aboard.
+flights:
+- number: 1
+  flightaware_id: SUBTT-1753532626-adhoc-1241p
+  callsign: SU-BTT
+  registration: SU-BTT
+  flight_category: general aviation
+  outcome: Arrived
+  progress_percent: 100
+  flags: []
+  from:
+    icao: KLNK
+    iata: LNK
+    faa_lid: LNK
+    name: Lincoln
+    city: Lincoln
+    timezone: America/Chicago
+  to:
+    icao: KILG
+    iata: ILG
+    faa_lid: ILG
+    name: New Castle
+    city: Wilmington
+    timezone: America/New_York
+  takeoff:
+    scheduled:
+      utc: '2025-07-26T12:28:41Z'
+      local: '2025-07-26 07:28:41-05:00'
+    estimated:
+      utc: '2025-07-26T12:29:48Z'
+      local: '2025-07-26 07:29:48-05:00'
+    actual:
+      utc: '2025-07-26T12:29:48Z'
+      local: '2025-07-26 07:29:48-05:00'
+    runway: '17'
+  landing:
+    scheduled:
+      utc: '2025-07-26T14:36:05Z'
+      local: '2025-07-26 10:36:05-04:00'
+    estimated:
+      utc: '2025-07-26T14:37:12Z'
+      local: '2025-07-26 10:37:12-04:00'
+    actual:
+      utc: '2025-07-26T14:37:12Z'
+      local: '2025-07-26 10:37:12-04:00'
+    runway: 09
+  departure_versus_schedule: +0:01:07
+  arrival_versus_schedule: +0:01:07
+  airborne_duration: '2:07:24'
+  flight_plan:
+    planned_time_enroute: '2:07:24'
+- number: 2
+  flightaware_id: SUBTT-1753617372-adhoc-883p
+  callsign: SU-BTT
+  registration: SU-BTT
+  flight_category: general aviation
+  outcome: Arrived
+  progress_percent: 100
+  flags: []
+  from:
+    icao: KILG
+    iata: ILG
+    faa_lid: ILG
+    name: New Castle
+    city: Wilmington
+    timezone: America/New_York
+  to:
+    icao: HEAZ
+    name: Almaza Air Base
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2025-07-27T12:06:03Z'
+      local: '2025-07-27 08:06:03-04:00'
+    estimated:
+      utc: '2025-07-27T12:02:31Z'
+      local: '2025-07-27 08:02:31-04:00'
+    actual:
+      utc: '2025-07-27T12:02:31Z'
+      local: '2025-07-27 08:02:31-04:00'
+    runway: '19'
+  landing:
+    scheduled:
+      utc: '2025-07-27T22:24:30Z'
+      local: '2025-07-28 01:24:30+03:00'
+    estimated:
+      utc: '2025-07-27T22:20:58Z'
+      local: '2025-07-28 01:20:58+03:00'
+    actual:
+      utc: '2025-07-27T22:20:58Z'
+      local: '2025-07-28 01:20:58+03:00'
+    runway: '36'
+  departure_versus_schedule: -0:03:32
+  arrival_versus_schedule: -0:03:32
+  airborne_duration: '10:18:27'
+  flight_plan:
+    planned_time_enroute: '10:18:27'

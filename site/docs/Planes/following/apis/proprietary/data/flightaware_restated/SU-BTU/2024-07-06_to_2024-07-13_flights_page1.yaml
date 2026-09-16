@@ -1,0 +1,124 @@
+# Restated from a FlightAware AeroAPI response, in our own layout.
+# The raw response is held privately and is not republished.
+about:
+  aircraft: SU-BTU
+  question_asked: Which flights does FlightAware hold for SU-BTU between 6 July 2024 and 13 July 2024 (UTC)?
+  source: FlightAware AeroAPI v4 flight history by registration; the raw response is held privately and is not republished.
+  retrieved_utc: '2026-09-16T02:43:15.401Z'
+  vendor_http_status: 200
+  window_utc_from: '2024-07-06T00:00:00Z'
+  window_utc_until_exclusive: '2024-07-13T00:00:00Z'
+  result_page: 1
+  total_pages_reported: 1
+  further_pages_held_by_vendor: false
+flights_recorded: 3
+reading: FlightAware holds 3 flights for SU-BTU in this window, listed here in full with the times it recorded. A flight record shows where an aircraft went; it never shows who was aboard.
+flights:
+- number: 1
+  flightaware_id: SUBTU-1720283374-adhoc-1794p
+  callsign: SU-BTU
+  registration: SU-BTU
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    position_only_point:
+      lat: 30.15523
+      lon: 31.38094
+    city: Cairo
+    timezone: Africa/Cairo
+  to:
+    position_only_point:
+      lat: 29.72742
+      lon: 31.31965
+    city: Cairo
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2024-07-06T16:35:21Z'
+      local: '2024-07-06 19:35:21+03:00'
+    estimated:
+      utc: '2024-07-06T16:35:21Z'
+      local: '2024-07-06 19:35:21+03:00'
+    actual:
+      utc: '2024-07-06T16:35:21Z'
+      local: '2024-07-06 19:35:21+03:00'
+  landing:
+    actual:
+      utc: '2024-07-06T16:35:21Z'
+      local: '2024-07-06 19:35:21+03:00'
+  departure_versus_schedule: +0:00:00
+  airborne_duration: 0:00:00
+- number: 2
+  flightaware_id: SUBTU-1720543517-adhoc-3816p
+  callsign: SU-BTU
+  registration: SU-BTU
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    position_only_point:
+      lat: 30.12614
+      lon: 31.35959
+    city: Cairo
+    timezone: Africa/Cairo
+  to:
+    position_only_point:
+      lat: 28.71185
+      lon: 32.46819
+    city: Cairo
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2024-07-09T16:50:54Z'
+      local: '2024-07-09 19:50:54+03:00'
+    estimated:
+      utc: '2024-07-09T16:50:54Z'
+      local: '2024-07-09 19:50:54+03:00'
+    actual:
+      utc: '2024-07-09T16:50:54Z'
+      local: '2024-07-09 19:50:54+03:00'
+  landing:
+    actual:
+      utc: '2024-07-09T16:50:54Z'
+      local: '2024-07-09 19:50:54+03:00'
+  departure_versus_schedule: +0:00:00
+  airborne_duration: 0:00:00
+- number: 3
+  flightaware_id: SUBTU-1720546989-adhoc-3874p
+  callsign: SU-BTU
+  registration: SU-BTU
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    position_only_point:
+      lat: 27.68773
+      lon: 33.7668
+    city: Hurghada
+    timezone: Africa/Cairo
+  to:
+    position_only_point:
+      lat: 29.98512
+      lon: 31.35805
+    city: Cairo
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2024-07-09T17:51:10Z'
+      local: '2024-07-09 20:51:10+03:00'
+    estimated:
+      utc: '2024-07-09T17:51:10Z'
+      local: '2024-07-09 20:51:10+03:00'
+    actual:
+      utc: '2024-07-09T17:51:10Z'
+      local: '2024-07-09 20:51:10+03:00'
+  landing:
+    actual:
+      utc: '2024-07-09T17:51:10Z'
+      local: '2024-07-09 20:51:10+03:00'
+  departure_versus_schedule: +0:00:00
+  airborne_duration: 0:00:00

@@ -1,0 +1,151 @@
+# Restated from a FlightAware AeroAPI response, in our own layout.
+# The raw response is held privately and is not republished.
+about:
+  aircraft: SU-BND
+  question_asked: Which flights does FlightAware hold for SU-BND between 27 December 2025 and 1 January 2026 (UTC)?
+  source: FlightAware AeroAPI v4 flight history by registration; the raw response is held privately and is not republished.
+  retrieved_utc: '2026-09-16T02:39:59.426Z'
+  vendor_http_status: 200
+  window_utc_from: '2025-12-27T00:00:00Z'
+  window_utc_until_exclusive: '2026-01-01T00:00:00Z'
+  result_page: 1
+  total_pages_reported: 1
+  further_pages_held_by_vendor: false
+flights_recorded: 3
+reading: FlightAware holds 3 flights for SU-BND in this window, listed here in full with the times it recorded. A flight record shows where an aircraft went; it never shows who was aboard.
+flights:
+- number: 1
+  flightaware_id: SUBND-1766830418-adhoc-187p
+  callsign: SU-BND
+  registration: SU-BND
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    position_only_point:
+      lat: 29.42917
+      lon: 31.76734
+    city: Cairo
+    timezone: Africa/Cairo
+  to:
+    position_only_point:
+      lat: 29.42917
+      lon: 31.76734
+    city: Cairo
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2025-12-27T10:26:21Z'
+      local: '2025-12-27 12:26:21+02:00'
+    estimated:
+      utc: '2025-12-27T10:26:21Z'
+      local: '2025-12-27 12:26:21+02:00'
+    actual:
+      utc: '2025-12-27T10:26:21Z'
+      local: '2025-12-27 12:26:21+02:00'
+  landing:
+    scheduled:
+      utc: '2025-12-27T11:08:58Z'
+      local: '2025-12-27 13:08:58+02:00'
+    estimated:
+      utc: '2025-12-27T11:08:58Z'
+      local: '2025-12-27 13:08:58+02:00'
+    actual:
+      utc: '2025-12-27T10:26:21Z'
+      local: '2025-12-27 12:26:21+02:00'
+  departure_versus_schedule: +0:00:00
+  arrival_versus_schedule: -0:42:37
+  airborne_duration: 0:00:00
+  flight_plan:
+    planned_time_enroute: 0:42:37
+- number: 2
+  flightaware_id: SUBND-1766837170-adhoc-1388p
+  callsign: SU-BND
+  registration: SU-BND
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    position_only_point:
+      lat: 29.01033
+      lon: 32.76441
+    city: Cairo
+    timezone: Africa/Cairo
+  to:
+    position_only_point:
+      lat: 29.17941
+      lon: 32.55233
+    city: Cairo
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2025-12-27T12:42:19Z'
+      local: '2025-12-27 14:42:19+02:00'
+    estimated:
+      utc: '2025-12-27T12:42:19Z'
+      local: '2025-12-27 14:42:19+02:00'
+    actual:
+      utc: '2025-12-27T12:42:19Z'
+      local: '2025-12-27 14:42:19+02:00'
+  landing:
+    scheduled:
+      utc: '2025-12-27T12:44:45Z'
+      local: '2025-12-27 14:44:45+02:00'
+    estimated:
+      utc: '2025-12-27T12:44:45Z'
+      local: '2025-12-27 14:44:45+02:00'
+    actual:
+      utc: '2025-12-27T12:42:19Z'
+      local: '2025-12-27 14:42:19+02:00'
+  departure_versus_schedule: +0:00:00
+  arrival_versus_schedule: -0:02:26
+  airborne_duration: 0:00:00
+  flight_plan:
+    planned_time_enroute: 0:02:26
+- number: 3
+  flightaware_id: SUBND-1767081795-adhoc-1367p
+  callsign: SU-BND
+  registration: SU-BND
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    position_only_point:
+      lat: 29.42702
+      lon: 31.46326
+    city: Cairo
+    timezone: Africa/Cairo
+  to:
+    position_only_point:
+      lat: 29.03073
+      lon: 31.72128
+    city: Cairo
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2025-12-30T08:21:46Z'
+      local: '2025-12-30 10:21:46+02:00'
+    estimated:
+      utc: '2025-12-30T08:21:46Z'
+      local: '2025-12-30 10:21:46+02:00'
+    actual:
+      utc: '2025-12-30T08:21:46Z'
+      local: '2025-12-30 10:21:46+02:00'
+  landing:
+    scheduled:
+      utc: '2025-12-30T08:25:09Z'
+      local: '2025-12-30 10:25:09+02:00'
+    estimated:
+      utc: '2025-12-30T08:25:09Z'
+      local: '2025-12-30 10:25:09+02:00'
+    actual:
+      utc: '2025-12-30T08:21:46Z'
+      local: '2025-12-30 10:21:46+02:00'
+  departure_versus_schedule: +0:00:00
+  arrival_versus_schedule: -0:03:23
+  airborne_duration: 0:00:00
+  flight_plan:
+    planned_time_enroute: 0:03:23

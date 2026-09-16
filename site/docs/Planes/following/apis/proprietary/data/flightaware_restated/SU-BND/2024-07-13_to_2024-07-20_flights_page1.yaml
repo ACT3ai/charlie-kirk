@@ -1,0 +1,113 @@
+# Restated from a FlightAware AeroAPI response, in our own layout.
+# The raw response is held privately and is not republished.
+about:
+  aircraft: SU-BND
+  question_asked: Which flights does FlightAware hold for SU-BND between 13 July 2024 and 20 July 2024 (UTC)?
+  source: FlightAware AeroAPI v4 flight history by registration; the raw response is held privately and is not republished.
+  retrieved_utc: '2026-09-16T02:38:10.056Z'
+  vendor_http_status: 200
+  window_utc_from: '2024-07-13T00:00:00Z'
+  window_utc_until_exclusive: '2024-07-20T00:00:00Z'
+  result_page: 1
+  total_pages_reported: 1
+  further_pages_held_by_vendor: false
+flights_recorded: 2
+reading: FlightAware holds 2 flights for SU-BND in this window, listed here in full with the times it recorded. A flight record shows where an aircraft went; it never shows who was aboard.
+flights:
+- number: 1
+  flightaware_id: SUBND-1721217474-sw-6199p
+  callsign: SU-BND
+  registration: SU-BND
+  aircraft_type_code: GLF4
+  flight_category: general aviation
+  outcome: Arrived
+  progress_percent: 100
+  flags: []
+  from:
+    icao: KPVU
+    iata: PVU
+    faa_lid: PVU
+    name: Provo Muni
+    city: Provo
+    timezone: America/Denver
+  to:
+    icao: CYYR
+    iata: YYR
+    name: CFB Goose Bay (Goose Bay)
+    city: Goose Bay
+    timezone: America/Goose_Bay
+  takeoff:
+    scheduled:
+      utc: '2024-07-17T16:00:00Z'
+      local: '2024-07-17 10:00:00-06:00'
+    estimated:
+      utc: '2024-07-17T15:55:11Z'
+      local: '2024-07-17 09:55:11-06:00'
+    actual:
+      utc: '2024-07-17T15:55:11Z'
+      local: '2024-07-17 09:55:11-06:00'
+    runway: '13'
+  landing:
+    scheduled:
+      utc: '2024-07-17T21:39:00Z'
+      local: '2024-07-17 18:39:00-03:00'
+    estimated:
+      utc: '2024-07-17T20:50:11Z'
+      local: '2024-07-17 17:50:11-03:00'
+    actual:
+      utc: '2024-07-17T20:50:11Z'
+      local: '2024-07-17 17:50:11-03:00'
+    runway: 08
+  departure_versus_schedule: -0:04:49
+  arrival_versus_schedule: -0:48:49
+  airborne_duration: '4:55:00'
+  flight_plan:
+    planned_time_enroute: '5:39:00'
+    cruise_speed_kt: 389
+- number: 2
+  flightaware_id: SUBND-1721258626-adhoc-121p
+  callsign: SU-BND
+  registration: SU-BND
+  flight_category: general aviation
+  outcome: Arrived
+  progress_percent: 100
+  flags: []
+  from:
+    icao: CYYR
+    iata: YYR
+    name: CFB Goose Bay (Goose Bay)
+    city: Goose Bay
+    timezone: America/Goose_Bay
+  to:
+    icao: LFPB
+    iata: LBG
+    name: Paris Le Bourget
+    city: Paris
+    timezone: Europe/Paris
+  takeoff:
+    scheduled:
+      utc: '2024-07-17T23:54:02Z'
+      local: '2024-07-17 20:54:02-03:00'
+    estimated:
+      utc: '2024-07-18T00:10:29Z'
+      local: '2024-07-17 21:10:29-03:00'
+    actual:
+      utc: '2024-07-18T00:10:29Z'
+      local: '2024-07-17 21:10:29-03:00'
+    runway: 08
+  landing:
+    scheduled:
+      utc: '2024-07-18T04:48:45Z'
+      local: '2024-07-18 06:48:45+02:00'
+    estimated:
+      utc: '2024-07-18T05:05:12Z'
+      local: '2024-07-18 07:05:12+02:00'
+    actual:
+      utc: '2024-07-18T05:05:12Z'
+      local: '2024-07-18 07:05:12+02:00'
+    runway: '07'
+  departure_versus_schedule: +0:16:27
+  arrival_versus_schedule: +0:16:27
+  airborne_duration: '4:54:43'
+  flight_plan:
+    planned_time_enroute: '4:54:43'

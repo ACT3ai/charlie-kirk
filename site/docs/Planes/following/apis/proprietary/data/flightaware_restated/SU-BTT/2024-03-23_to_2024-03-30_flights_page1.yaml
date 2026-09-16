@@ -1,0 +1,140 @@
+# Restated from a FlightAware AeroAPI response, in our own layout.
+# The raw response is held privately and is not republished.
+about:
+  aircraft: SU-BTT
+  question_asked: Which flights does FlightAware hold for SU-BTT between 23 March 2024 and 30 March 2024 (UTC)?
+  source: FlightAware AeroAPI v4 flight history by registration; the raw response is held privately and is not republished.
+  retrieved_utc: '2026-09-16T02:32:53.752Z'
+  vendor_http_status: 200
+  window_utc_from: '2024-03-23T00:00:00Z'
+  window_utc_until_exclusive: '2024-03-30T00:00:00Z'
+  result_page: 1
+  total_pages_reported: 1
+  further_pages_held_by_vendor: false
+flights_recorded: 3
+reading: FlightAware holds 3 flights for SU-BTT in this window, listed here in full with the times it recorded. A flight record shows where an aircraft went; it never shows who was aboard.
+flights:
+- number: 1
+  flightaware_id: SUBTT-1711531768-adhoc-3636p
+  callsign: SU-BTT
+  registration: SU-BTT
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    position_only_point:
+      lat: 27.71697
+      lon: 33.71134
+    city: Hurghada
+    timezone: Africa/Cairo
+  to:
+    position_only_point:
+      lat: 28.78473
+      lon: 33.0886
+    city: Sharm El Sheikh
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2024-03-27T09:36:05Z'
+      local: '2024-03-27 11:36:05+02:00'
+    estimated:
+      utc: '2024-03-27T09:36:05Z'
+      local: '2024-03-27 11:36:05+02:00'
+    actual:
+      utc: '2024-03-27T09:36:05Z'
+      local: '2024-03-27 11:36:05+02:00'
+  landing:
+    actual:
+      utc: '2024-03-27T09:36:05Z'
+      local: '2024-03-27 11:36:05+02:00'
+  departure_versus_schedule: +0:00:00
+  airborne_duration: 0:00:00
+- number: 2
+  flightaware_id: SUBTT-1711606561-sw-41p
+  callsign: SU-BTT
+  registration: SU-BTT
+  flight_category: general aviation
+  outcome: Arrived
+  progress_percent: 100
+  flags: []
+  from:
+    position_only_point:
+      lat: 30.16864
+      lon: 31.3566
+    city: Cairo
+    timezone: Africa/Cairo
+  to:
+    icao: LFPB
+    iata: LBG
+    name: Paris Le Bourget
+    city: Paris
+    timezone: Europe/Paris
+  takeoff:
+    scheduled:
+      utc: '2024-03-28T07:52:23Z'
+      local: '2024-03-28 09:52:23+02:00'
+    estimated:
+      utc: '2024-03-28T07:52:23Z'
+      local: '2024-03-28 09:52:23+02:00'
+    actual:
+      utc: '2024-03-28T07:52:23Z'
+      local: '2024-03-28 09:52:23+02:00'
+  landing:
+    estimated:
+      utc: '2024-03-28T12:03:25Z'
+      local: '2024-03-28 13:03:25+01:00'
+    actual:
+      utc: '2024-03-28T12:03:25Z'
+      local: '2024-03-28 13:03:25+01:00'
+    runway: '27'
+  departure_versus_schedule: +0:00:00
+  airborne_duration: '4:11:02'
+- number: 3
+  flightaware_id: SUBTT-1711685605-sw-139p
+  callsign: SU-BTT
+  registration: SU-BTT
+  flight_category: general aviation
+  outcome: Arrived
+  progress_percent: 100
+  flags: []
+  from:
+    icao: LFPB
+    iata: LBG
+    name: Paris Le Bourget
+    city: Paris
+    timezone: Europe/Paris
+  to:
+    icao: KICT
+    iata: ICT
+    faa_lid: ICT
+    name: Wichita Eisenhower
+    city: Wichita
+    timezone: America/Chicago
+  takeoff:
+    scheduled:
+      utc: '2024-03-29T10:08:03Z'
+      local: '2024-03-29 11:08:03+01:00'
+    estimated:
+      utc: '2024-03-29T10:02:06Z'
+      local: '2024-03-29 11:02:06+01:00'
+    actual:
+      utc: '2024-03-29T10:02:06Z'
+      local: '2024-03-29 11:02:06+01:00'
+    runway: '25'
+  landing:
+    scheduled:
+      utc: '2024-03-29T19:26:08Z'
+      local: '2024-03-29 14:26:08-05:00'
+    estimated:
+      utc: '2024-03-29T19:20:11Z'
+      local: '2024-03-29 14:20:11-05:00'
+    actual:
+      utc: '2024-03-29T19:20:11Z'
+      local: '2024-03-29 14:20:11-05:00'
+    runway: 19L
+  departure_versus_schedule: -0:05:57
+  arrival_versus_schedule: -0:05:57
+  airborne_duration: '9:18:05'
+  flight_plan:
+    planned_time_enroute: '9:18:05'

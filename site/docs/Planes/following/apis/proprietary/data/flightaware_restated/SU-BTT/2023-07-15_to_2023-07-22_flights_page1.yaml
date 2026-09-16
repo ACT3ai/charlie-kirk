@@ -1,0 +1,98 @@
+# Restated from a FlightAware AeroAPI response, in our own layout.
+# The raw response is held privately and is not republished.
+about:
+  aircraft: SU-BTT
+  question_asked: Which flights does FlightAware hold for SU-BTT between 15 July 2023 and 22 July 2023 (UTC)?
+  source: FlightAware AeroAPI v4 flight history by registration; the raw response is held privately and is not republished.
+  retrieved_utc: '2026-09-16T02:32:01.104Z'
+  vendor_http_status: 200
+  window_utc_from: '2023-07-15T00:00:00Z'
+  window_utc_until_exclusive: '2023-07-22T00:00:00Z'
+  result_page: 1
+  total_pages_reported: 1
+  further_pages_held_by_vendor: false
+flights_recorded: 2
+reading: FlightAware holds 2 flights for SU-BTT in this window, listed here in full with the times it recorded. A flight record shows where an aircraft went; it never shows who was aboard.
+flights:
+- number: 1
+  flightaware_id: SUBTT-1689583825-adhoc-2136p
+  callsign: SU-BTT
+  registration: SU-BTT
+  flight_category: general aviation
+  outcome: Arrived
+  progress_percent: 100
+  flags: []
+  from:
+    icao: HEAZ
+    name: Almaza Air Base
+    timezone: Africa/Cairo
+  to:
+    icao: HEAL
+    iata: DBB
+    name: El Alamein International Airport
+    city: Matrouh Governorate
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2023-07-17T12:22:16Z'
+      local: '2023-07-17 15:22:16+03:00'
+    estimated:
+      utc: '2023-07-17T11:57:13Z'
+      local: '2023-07-17 14:57:13+03:00'
+    actual:
+      utc: '2023-07-17T11:57:13Z'
+      local: '2023-07-17 14:57:13+03:00'
+    runway: '36'
+  landing:
+    scheduled:
+      utc: '2023-07-17T12:49:36Z'
+      local: '2023-07-17 15:49:36+03:00'
+    estimated:
+      utc: '2023-07-17T12:24:33Z'
+      local: '2023-07-17 15:24:33+03:00'
+    actual:
+      utc: '2023-07-17T12:24:33Z'
+      local: '2023-07-17 15:24:33+03:00'
+    runway: '31'
+  departure_versus_schedule: -0:25:03
+  arrival_versus_schedule: -0:25:03
+  airborne_duration: 0:27:20
+  flight_plan:
+    planned_time_enroute: 0:27:20
+- number: 2
+  flightaware_id: SUBTT-1689600632-adhoc-3270p
+  callsign: SU-BTT
+  registration: SU-BTT
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    icao: HEAL
+    iata: DBB
+    name: El Alamein International Airport
+    city: Matrouh Governorate
+    timezone: Africa/Cairo
+  to:
+    position_only_point:
+      lat: 30.00339
+      lon: 31.32601
+    city: Cairo
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2023-07-17T13:30:27Z'
+      local: '2023-07-17 16:30:27+03:00'
+    estimated:
+      utc: '2023-07-17T13:30:27Z'
+      local: '2023-07-17 16:30:27+03:00'
+    actual:
+      utc: '2023-07-17T13:30:27Z'
+      local: '2023-07-17 16:30:27+03:00'
+    runway: '31'
+  landing:
+    actual:
+      utc: '2023-07-17T13:30:27Z'
+      local: '2023-07-17 16:30:27+03:00'
+  departure_versus_schedule: +0:00:00
+  airborne_duration: 0:00:00
