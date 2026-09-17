@@ -1,0 +1,156 @@
+# Restated from a FlightAware AeroAPI response, in our own layout.
+# The raw response is held privately and is not republished.
+about:
+  aircraft: SU-BTV
+  question_asked: Which flights does FlightAware hold for SU-BTV between 4 October 2025 and 11 October 2025 (UTC)?
+  source: FlightAware AeroAPI v4 flight history by registration; the raw response is held privately and is not republished.
+  retrieved_utc: '2026-09-16T02:49:37.845Z'
+  vendor_http_status: 200
+  window_utc_from: '2025-10-04T00:00:00Z'
+  window_utc_until_exclusive: '2025-10-11T00:00:00Z'
+  result_page: 1
+  total_pages_reported: 1
+  further_pages_held_by_vendor: false
+flights_recorded: 3
+reading: FlightAware holds 3 flights for SU-BTV in this window, listed here in full with the times it recorded. A flight record shows where an aircraft went; it never shows who was aboard.
+flights:
+- number: 1
+  flightaware_id: SUBTV-1759551161-sw-90p
+  callsign: SU-BTV
+  registration: SU-BTV
+  flight_category: general aviation
+  outcome: Arrived
+  flags:
+  - position_only
+  from:
+    position_only_point:
+      lat: 30.53408
+      lon: 30.76562
+    city: Cairo
+    timezone: Africa/Cairo
+  to:
+    icao: LFPB
+    iata: LBG
+    name: Paris Le Bourget
+    city: Paris
+    timezone: Europe/Paris
+  takeoff:
+    scheduled:
+      utc: '2025-10-04T05:41:46Z'
+      local: '2025-10-04 08:41:46+03:00'
+    estimated:
+      utc: '2025-10-04T05:41:46Z'
+      local: '2025-10-04 08:41:46+03:00'
+    actual:
+      utc: '2025-10-04T05:41:46Z'
+      local: '2025-10-04 08:41:46+03:00'
+  landing:
+    estimated:
+      utc: '2025-10-04T09:47:53Z'
+      local: '2025-10-04 11:47:53+02:00'
+    actual:
+      utc: '2025-10-04T09:47:53Z'
+      local: '2025-10-04 11:47:53+02:00'
+    runway: '27'
+  departure_versus_schedule: +0:00:00
+  airborne_duration: '4:06:07'
+- number: 2
+  flightaware_id: SUBTV-1759634786-sw-1562p
+  callsign: SU-BTV
+  registration: SU-BTV
+  flight_category: general aviation
+  outcome: Arrived
+  progress_percent: 100
+  flags: []
+  from:
+    icao: LFPB
+    iata: LBG
+    name: Paris Le Bourget
+    city: Paris
+    timezone: Europe/Paris
+  to:
+    icao: KOMA
+    iata: OMA
+    faa_lid: OMA
+    name: Eppley Airfield
+    city: Omaha
+    timezone: America/Chicago
+  takeoff:
+    scheduled:
+      utc: '2025-10-05T06:49:15Z'
+      local: '2025-10-05 08:49:15+02:00'
+    estimated:
+      utc: '2025-10-05T06:54:50Z'
+      local: '2025-10-05 08:54:50+02:00'
+    actual:
+      utc: '2025-10-05T06:54:50Z'
+      local: '2025-10-05 08:54:50+02:00'
+    runway: '25'
+  landing:
+    scheduled:
+      utc: '2025-10-05T16:10:06Z'
+      local: '2025-10-05 11:10:06-05:00'
+    estimated:
+      utc: '2025-10-05T16:15:41Z'
+      local: '2025-10-05 11:15:41-05:00'
+    actual:
+      utc: '2025-10-05T16:15:41Z'
+      local: '2025-10-05 11:15:41-05:00'
+    runway: 14L
+  departure_versus_schedule: +0:05:35
+  arrival_versus_schedule: +0:05:35
+  airborne_duration: '9:20:51'
+  flight_plan:
+    planned_time_enroute: '9:20:51'
+- number: 3
+  flightaware_id: SUBTV-1759634717-sw-1041p
+  callsign: SU-BTV
+  registration: SU-BTV
+  aircraft_type_code: FA7X
+  flight_category: general aviation
+  outcome: Arrived
+  progress_percent: 100
+  flags: []
+  from:
+    icao: KOMA
+    iata: OMA
+    faa_lid: OMA
+    name: Eppley Airfield
+    city: Omaha
+    timezone: America/Chicago
+  to:
+    icao: KLNK
+    iata: LNK
+    faa_lid: LNK
+    name: Lincoln
+    city: Lincoln
+    timezone: America/Chicago
+  takeoff:
+    scheduled:
+      utc: '2025-10-05T18:10:00Z'
+      local: '2025-10-05 13:10:00-05:00'
+    estimated:
+      utc: '2025-10-05T17:07:46Z'
+      local: '2025-10-05 12:07:46-05:00'
+    actual:
+      utc: '2025-10-05T17:07:46Z'
+      local: '2025-10-05 12:07:46-05:00'
+    runway: '18'
+  landing:
+    scheduled:
+      utc: '2025-10-05T18:25:00Z'
+      local: '2025-10-05 13:25:00-05:00'
+    estimated:
+      utc: '2025-10-05T17:25:53Z'
+      local: '2025-10-05 12:25:53-05:00'
+    actual:
+      utc: '2025-10-05T17:25:53Z'
+      local: '2025-10-05 12:25:53-05:00'
+    runway: '17'
+  departure_versus_schedule: '-1:02:14'
+  arrival_versus_schedule: -0:59:07
+  airborne_duration: 0:18:07
+  flight_plan:
+    planned_time_enroute: 0:15:00
+    cruise_speed_kt: 265
+    route_text: AYARE

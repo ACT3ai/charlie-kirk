@@ -1,0 +1,88 @@
+# Restated from a FlightAware AeroAPI response, in our own layout.
+# The raw response is held privately and is not republished.
+about:
+  aircraft: SU-BTT
+  question_asked: Which flights does FlightAware hold for SU-BTT between 22 February 2025 and 1 March 2025 (UTC)?
+  source: FlightAware AeroAPI v4 flight history by registration; the raw response is held privately and is not republished.
+  retrieved_utc: '2026-09-16T02:34:04.913Z'
+  vendor_http_status: 200
+  window_utc_from: '2025-02-22T00:00:00Z'
+  window_utc_until_exclusive: '2025-03-01T00:00:00Z'
+  result_page: 1
+  total_pages_reported: 1
+  further_pages_held_by_vendor: false
+flights_recorded: 2
+reading: FlightAware holds 2 flights for SU-BTT in this window, listed here in full with the times it recorded. A flight record shows where an aircraft went; it never shows who was aboard.
+flights:
+- number: 1
+  flightaware_id: SUBTT-1740297345-adhoc-441p
+  callsign: SU-BTT
+  registration: SU-BTT
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    position_only_point:
+      lat: 28.0291
+      lon: 32.05235
+    city: Assiut
+    timezone: Africa/Cairo
+  to:
+    position_only_point:
+      lat: 26.74817
+      lon: 32.45879
+    city: Sohag
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2025-02-23T08:30:52Z'
+      local: '2025-02-23 10:30:52+02:00'
+    estimated:
+      utc: '2025-02-23T08:30:52Z'
+      local: '2025-02-23 10:30:52+02:00'
+    actual:
+      utc: '2025-02-23T08:30:52Z'
+      local: '2025-02-23 10:30:52+02:00'
+  landing:
+    actual:
+      utc: '2025-02-23T08:30:52Z'
+      local: '2025-02-23 10:30:52+02:00'
+  departure_versus_schedule: +0:00:00
+  airborne_duration: 0:00:00
+- number: 2
+  flightaware_id: SUBTT-1740302049-adhoc-612p
+  callsign: SU-BTT
+  registration: SU-BTT
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    position_only_point:
+      lat: 26.48245
+      lon: 32.47448
+    city: Sohag
+    timezone: Africa/Cairo
+  to:
+    position_only_point:
+      lat: 28.0139
+      lon: 32.02309
+    city: Assiut
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2025-02-23T09:22:48Z'
+      local: '2025-02-23 11:22:48+02:00'
+    estimated:
+      utc: '2025-02-23T09:22:48Z'
+      local: '2025-02-23 11:22:48+02:00'
+    actual:
+      utc: '2025-02-23T09:22:48Z'
+      local: '2025-02-23 11:22:48+02:00'
+  landing:
+    actual:
+      utc: '2025-02-23T09:22:48Z'
+      local: '2025-02-23 11:22:48+02:00'
+  departure_versus_schedule: +0:00:00
+  airborne_duration: 0:00:00

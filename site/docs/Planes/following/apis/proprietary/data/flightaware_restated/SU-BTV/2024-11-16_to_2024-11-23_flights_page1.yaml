@@ -1,0 +1,88 @@
+# Restated from a FlightAware AeroAPI response, in our own layout.
+# The raw response is held privately and is not republished.
+about:
+  aircraft: SU-BTV
+  question_asked: Which flights does FlightAware hold for SU-BTV between 16 November 2024 and 23 November 2024 (UTC)?
+  source: FlightAware AeroAPI v4 flight history by registration; the raw response is held privately and is not republished.
+  retrieved_utc: '2026-09-16T02:48:40.855Z'
+  vendor_http_status: 200
+  window_utc_from: '2024-11-16T00:00:00Z'
+  window_utc_until_exclusive: '2024-11-23T00:00:00Z'
+  result_page: 1
+  total_pages_reported: 1
+  further_pages_held_by_vendor: false
+flights_recorded: 2
+reading: FlightAware holds 2 flights for SU-BTV in this window, listed here in full with the times it recorded. A flight record shows where an aircraft went; it never shows who was aboard.
+flights:
+- number: 1
+  flightaware_id: SUBTV-1732088240-adhoc-2298p
+  callsign: SU-BTV
+  registration: SU-BTV
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    position_only_point:
+      lat: 28.76477
+      lon: 32.4534
+    city: Cairo
+    timezone: Africa/Cairo
+  to:
+    position_only_point:
+      lat: 24.71352
+      lon: 35.395
+    city: Marsa Alam
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2024-11-20T08:06:30Z'
+      local: '2024-11-20 10:06:30+02:00'
+    estimated:
+      utc: '2024-11-20T08:06:30Z'
+      local: '2024-11-20 10:06:30+02:00'
+    actual:
+      utc: '2024-11-20T08:06:30Z'
+      local: '2024-11-20 10:06:30+02:00'
+  landing:
+    actual:
+      utc: '2024-11-20T08:06:30Z'
+      local: '2024-11-20 10:06:30+02:00'
+  departure_versus_schedule: +0:00:00
+  airborne_duration: 0:00:00
+- number: 2
+  flightaware_id: SUBTV-1732093888-adhoc-2413p
+  callsign: SU-BTV
+  registration: SU-BTV
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    position_only_point:
+      lat: 24.68972
+      lon: 35.12205
+    city: Marsa Alam
+    timezone: Africa/Cairo
+  to:
+    position_only_point:
+      lat: 29.27394
+      lon: 32.63499
+    city: Cairo
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2024-11-20T09:34:53Z'
+      local: '2024-11-20 11:34:53+02:00'
+    estimated:
+      utc: '2024-11-20T09:34:53Z'
+      local: '2024-11-20 11:34:53+02:00'
+    actual:
+      utc: '2024-11-20T09:34:53Z'
+      local: '2024-11-20 11:34:53+02:00'
+  landing:
+    actual:
+      utc: '2024-11-20T09:34:53Z'
+      local: '2024-11-20 11:34:53+02:00'
+  departure_versus_schedule: +0:00:00
+  airborne_duration: 0:00:00

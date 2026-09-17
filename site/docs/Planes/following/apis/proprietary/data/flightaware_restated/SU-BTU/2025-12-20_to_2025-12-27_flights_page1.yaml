@@ -1,0 +1,196 @@
+# Restated from a FlightAware AeroAPI response, in our own layout.
+# The raw response is held privately and is not republished.
+about:
+  aircraft: SU-BTU
+  question_asked: Which flights does FlightAware hold for SU-BTU between 20 December 2025 and 27 December 2025 (UTC)?
+  source: FlightAware AeroAPI v4 flight history by registration; the raw response is held privately and is not republished.
+  retrieved_utc: '2026-09-16T02:44:55.678Z'
+  vendor_http_status: 200
+  window_utc_from: '2025-12-20T00:00:00Z'
+  window_utc_until_exclusive: '2025-12-27T00:00:00Z'
+  result_page: 1
+  total_pages_reported: 1
+  further_pages_held_by_vendor: false
+flights_recorded: 4
+reading: FlightAware holds 4 flights for SU-BTU in this window, listed here in full with the times it recorded. A flight record shows where an aircraft went; it never shows who was aboard.
+flights:
+- number: 1
+  flightaware_id: SUBTU-1766222434-adhoc-4154p
+  callsign: SU-BTU
+  registration: SU-BTU
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    position_only_point:
+      lat: 31.14075
+      lon: 29.96639
+    city: Amreya
+    timezone: Africa/Cairo
+  to:
+    position_only_point:
+      lat: 30.58975
+      lon: 28.7482
+    city: Matrouh Governorate
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2025-12-20T09:50:14Z'
+      local: '2025-12-20 11:50:14+02:00'
+    estimated:
+      utc: '2025-12-20T09:50:14Z'
+      local: '2025-12-20 11:50:14+02:00'
+    actual:
+      utc: '2025-12-20T09:50:14Z'
+      local: '2025-12-20 11:50:14+02:00'
+  landing:
+    scheduled:
+      utc: '2025-12-20T10:04:38Z'
+      local: '2025-12-20 12:04:38+02:00'
+    estimated:
+      utc: '2025-12-20T10:04:38Z'
+      local: '2025-12-20 12:04:38+02:00'
+    actual:
+      utc: '2025-12-20T09:50:14Z'
+      local: '2025-12-20 11:50:14+02:00'
+  departure_versus_schedule: +0:00:00
+  arrival_versus_schedule: -0:14:24
+  airborne_duration: 0:00:00
+  flight_plan:
+    planned_time_enroute: 0:14:24
+- number: 2
+  flightaware_id: SUBTU-1766229618-adhoc-1116p
+  callsign: SU-BTU
+  registration: SU-BTU
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    position_only_point:
+      lat: 30.62814
+      lon: 28.89792
+    city: Matrouh Governorate
+    timezone: Africa/Cairo
+  to:
+    position_only_point:
+      lat: 30.62814
+      lon: 28.89792
+    city: Matrouh Governorate
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2025-12-20T11:25:32Z'
+      local: '2025-12-20 13:25:32+02:00'
+    estimated:
+      utc: '2025-12-20T11:25:32Z'
+      local: '2025-12-20 13:25:32+02:00'
+    actual:
+      utc: '2025-12-20T11:25:32Z'
+      local: '2025-12-20 13:25:32+02:00'
+  landing:
+    scheduled:
+      utc: '2025-12-20T11:58:24Z'
+      local: '2025-12-20 13:58:24+02:00'
+    estimated:
+      utc: '2025-12-20T11:58:24Z'
+      local: '2025-12-20 13:58:24+02:00'
+    actual:
+      utc: '2025-12-20T11:25:32Z'
+      local: '2025-12-20 13:25:32+02:00'
+  departure_versus_schedule: +0:00:00
+  arrival_versus_schedule: -0:32:52
+  airborne_duration: 0:00:00
+  flight_plan:
+    planned_time_enroute: 0:32:52
+- number: 3
+  flightaware_id: SUBTU-1766307106-adhoc-1210p
+  callsign: SU-BTU
+  registration: SU-BTU
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    position_only_point:
+      lat: 30.68044
+      lon: 30.63565
+    city: Cairo
+    timezone: Africa/Cairo
+  to:
+    position_only_point:
+      lat: 30.73604
+      lon: 28.79974
+    city: Matrouh Governorate
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2025-12-21T09:19:59Z'
+      local: '2025-12-21 11:19:59+02:00'
+    estimated:
+      utc: '2025-12-21T09:19:59Z'
+      local: '2025-12-21 11:19:59+02:00'
+    actual:
+      utc: '2025-12-21T09:19:59Z'
+      local: '2025-12-21 11:19:59+02:00'
+  landing:
+    scheduled:
+      utc: '2025-12-21T09:51:22Z'
+      local: '2025-12-21 11:51:22+02:00'
+    estimated:
+      utc: '2025-12-21T09:51:22Z'
+      local: '2025-12-21 11:51:22+02:00'
+    actual:
+      utc: '2025-12-21T09:19:59Z'
+      local: '2025-12-21 11:19:59+02:00'
+  departure_versus_schedule: +0:00:00
+  arrival_versus_schedule: -0:31:23
+  airborne_duration: 0:00:00
+  flight_plan:
+    planned_time_enroute: 0:31:23
+- number: 4
+  flightaware_id: SUBTU-1766312833-adhoc-3986p
+  callsign: SU-BTU
+  registration: SU-BTU
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    position_only_point:
+      lat: 30.84435
+      lon: 29.02491
+    city: Matrouh Governorate
+    timezone: Africa/Cairo
+  to:
+    position_only_point:
+      lat: 30.89183
+      lon: 30.35583
+    city: Amreya
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2025-12-21T10:39:28Z'
+      local: '2025-12-21 12:39:28+02:00'
+    estimated:
+      utc: '2025-12-21T10:39:28Z'
+      local: '2025-12-21 12:39:28+02:00'
+    actual:
+      utc: '2025-12-21T10:39:28Z'
+      local: '2025-12-21 12:39:28+02:00'
+  landing:
+    scheduled:
+      utc: '2025-12-21T10:50:24Z'
+      local: '2025-12-21 12:50:24+02:00'
+    estimated:
+      utc: '2025-12-21T10:50:24Z'
+      local: '2025-12-21 12:50:24+02:00'
+    actual:
+      utc: '2025-12-21T10:39:28Z'
+      local: '2025-12-21 12:39:28+02:00'
+  departure_versus_schedule: +0:00:00
+  arrival_versus_schedule: -0:10:56
+  airborne_duration: 0:00:00
+  flight_plan:
+    planned_time_enroute: 0:10:56

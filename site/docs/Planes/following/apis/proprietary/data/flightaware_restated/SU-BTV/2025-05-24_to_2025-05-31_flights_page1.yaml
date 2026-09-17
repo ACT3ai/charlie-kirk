@@ -1,0 +1,153 @@
+# Restated from a FlightAware AeroAPI response, in our own layout.
+# The raw response is held privately and is not republished.
+about:
+  aircraft: SU-BTV
+  question_asked: Which flights does FlightAware hold for SU-BTV between 24 May 2025 and 31 May 2025 (UTC)?
+  source: FlightAware AeroAPI v4 flight history by registration; the raw response is held privately and is not republished.
+  retrieved_utc: '2026-09-16T02:49:21.115Z'
+  vendor_http_status: 200
+  window_utc_from: '2025-05-24T00:00:00Z'
+  window_utc_until_exclusive: '2025-05-31T00:00:00Z'
+  result_page: 1
+  total_pages_reported: 1
+  further_pages_held_by_vendor: false
+flights_recorded: 3
+reading: FlightAware holds 3 flights for SU-BTV in this window, listed here in full with the times it recorded. A flight record shows where an aircraft went; it never shows who was aboard.
+flights:
+- number: 1
+  flightaware_id: SUBTV-1748233237-sw-10p
+  callsign: SU-BTV
+  registration: SU-BTV
+  flight_category: general aviation
+  outcome: Arrived
+  flags:
+  - position_only
+  from:
+    position_only_point:
+      lat: 30.66531
+      lon: 30.69794
+    city: Cairo
+    timezone: Africa/Cairo
+  to:
+    icao: LFPB
+    iata: LBG
+    name: Paris Le Bourget
+    city: Paris
+    timezone: Europe/Paris
+  takeoff:
+    scheduled:
+      utc: '2025-05-26T05:51:58Z'
+      local: '2025-05-26 08:51:58+03:00'
+    estimated:
+      utc: '2025-05-26T05:51:58Z'
+      local: '2025-05-26 08:51:58+03:00'
+    actual:
+      utc: '2025-05-26T05:51:58Z'
+      local: '2025-05-26 08:51:58+03:00'
+  landing:
+    estimated:
+      utc: '2025-05-26T09:53:47Z'
+      local: '2025-05-26 11:53:47+02:00'
+    actual:
+      utc: '2025-05-26T09:53:47Z'
+      local: '2025-05-26 11:53:47+02:00'
+    runway: '27'
+  departure_versus_schedule: +0:00:00
+  airborne_duration: '4:01:49'
+- number: 2
+  flightaware_id: SUBTV-1748308475-sw-1189p
+  callsign: SU-BTV
+  registration: SU-BTV
+  flight_category: general aviation
+  outcome: Arrived
+  progress_percent: 100
+  flags: []
+  from:
+    icao: LFPB
+    iata: LBG
+    name: Paris Le Bourget
+    city: Paris
+    timezone: Europe/Paris
+  to:
+    icao: KMOT
+    iata: MOT
+    faa_lid: MOT
+    name: Minot Intl
+    city: Minot
+    timezone: America/Chicago
+  takeoff:
+    scheduled:
+      utc: '2025-05-27T07:05:09Z'
+      local: '2025-05-27 09:05:09+02:00'
+    estimated:
+      utc: '2025-05-27T07:13:15Z'
+      local: '2025-05-27 09:13:15+02:00'
+    actual:
+      utc: '2025-05-27T07:13:15Z'
+      local: '2025-05-27 09:13:15+02:00'
+    runway: '25'
+  landing:
+    scheduled:
+      utc: '2025-05-27T15:26:29Z'
+      local: '2025-05-27 10:26:29-05:00'
+    estimated:
+      utc: '2025-05-27T15:34:35Z'
+      local: '2025-05-27 10:34:35-05:00'
+    actual:
+      utc: '2025-05-27T15:34:35Z'
+      local: '2025-05-27 10:34:35-05:00'
+    runway: '13'
+  departure_versus_schedule: +0:08:06
+  arrival_versus_schedule: +0:08:06
+  airborne_duration: '8:21:20'
+  flight_plan:
+    planned_time_enroute: '8:21:20'
+- number: 3
+  flightaware_id: SUBTV-1748362895-adhoc-2654p
+  callsign: SU-BTV
+  registration: SU-BTV
+  flight_category: general aviation
+  outcome: Arrived
+  progress_percent: 100
+  flags: []
+  from:
+    icao: KMOT
+    iata: MOT
+    faa_lid: MOT
+    name: Minot Intl
+    city: Minot
+    timezone: America/Chicago
+  to:
+    icao: KPVU
+    iata: PVU
+    faa_lid: PVU
+    name: Provo Muni
+    city: Provo
+    timezone: America/Denver
+  takeoff:
+    scheduled:
+      utc: '2025-05-27T16:33:30Z'
+      local: '2025-05-27 11:33:30-05:00'
+    estimated:
+      utc: '2025-05-27T16:27:13Z'
+      local: '2025-05-27 11:27:13-05:00'
+    actual:
+      utc: '2025-05-27T16:27:13Z'
+      local: '2025-05-27 11:27:13-05:00'
+    runway: '13'
+  landing:
+    scheduled:
+      utc: '2025-05-27T18:08:25Z'
+      local: '2025-05-27 12:08:25-06:00'
+    estimated:
+      utc: '2025-05-27T18:02:08Z'
+      local: '2025-05-27 12:02:08-06:00'
+    actual:
+      utc: '2025-05-27T18:02:08Z'
+      local: '2025-05-27 12:02:08-06:00'
+    runway: '13'
+  departure_versus_schedule: -0:06:17
+  arrival_versus_schedule: -0:06:17
+  airborne_duration: '1:34:55'
+  flight_plan:
+    planned_time_enroute: '1:34:55'

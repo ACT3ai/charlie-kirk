@@ -1,0 +1,153 @@
+# Restated from a FlightAware AeroAPI response, in our own layout.
+# The raw response is held privately and is not republished.
+about:
+  aircraft: SU-BTV
+  question_asked: Which flights does FlightAware hold for SU-BTV between 4 February 2023 and 11 February 2023 (UTC)?
+  source: FlightAware AeroAPI v4 flight history by registration; the raw response is held privately and is not republished.
+  retrieved_utc: '2026-09-16T02:46:24.086Z'
+  vendor_http_status: 200
+  window_utc_from: '2023-02-04T00:00:00Z'
+  window_utc_until_exclusive: '2023-02-11T00:00:00Z'
+  result_page: 1
+  total_pages_reported: 1
+  further_pages_held_by_vendor: false
+flights_recorded: 3
+reading: FlightAware holds 3 flights for SU-BTV in this window, listed here in full with the times it recorded. A flight record shows where an aircraft went; it never shows who was aboard.
+flights:
+- number: 1
+  flightaware_id: SUBTV-1675574884-1-5-216
+  callsign: SU-BTV
+  registration: SU-BTV
+  flight_category: general aviation
+  outcome: Arrived
+  progress_percent: 100
+  flags: []
+  from:
+    position_only_point:
+      lat: 30.7581
+      lon: 30.55723
+    city: Amreya
+    timezone: Africa/Cairo
+  to:
+    icao: LFPB
+    iata: LBG
+    name: Paris Le Bourget
+    city: Paris
+    timezone: Europe/Paris
+  takeoff:
+    scheduled:
+      utc: '2023-02-05T07:35:43Z'
+      local: '2023-02-05 09:35:43+02:00'
+    estimated:
+      utc: '2023-02-05T07:35:43Z'
+      local: '2023-02-05 09:35:43+02:00'
+    actual:
+      utc: '2023-02-05T07:35:43Z'
+      local: '2023-02-05 09:35:43+02:00'
+  landing:
+    estimated:
+      utc: '2023-02-05T11:50:16Z'
+      local: '2023-02-05 12:50:16+01:00'
+    actual:
+      utc: '2023-02-05T11:50:16Z'
+      local: '2023-02-05 12:50:16+01:00'
+    runway: '07'
+  departure_versus_schedule: +0:00:00
+  airborne_duration: '4:14:33'
+- number: 2
+  flightaware_id: SUBTV-1675744801-1-0-216
+  callsign: SU-BTV
+  registration: SU-BTV
+  flight_category: general aviation
+  outcome: Arrived
+  progress_percent: 100
+  flags: []
+  from:
+    icao: LFPB
+    iata: LBG
+    name: Paris Le Bourget
+    city: Paris
+    timezone: Europe/Paris
+  to:
+    icao: KSUS
+    iata: SUS
+    faa_lid: SUS
+    name: Spirit of St Louis
+    city: St Louis
+    timezone: America/Chicago
+  takeoff:
+    scheduled:
+      utc: '2023-02-07T12:28:29Z'
+      local: '2023-02-07 13:28:29+01:00'
+    estimated:
+      utc: '2023-02-07T12:26:15Z'
+      local: '2023-02-07 13:26:15+01:00'
+    actual:
+      utc: '2023-02-07T12:26:15Z'
+      local: '2023-02-07 13:26:15+01:00'
+    runway: 09
+  landing:
+    scheduled:
+      utc: '2023-02-07T21:56:01Z'
+      local: '2023-02-07 15:56:01-06:00'
+    estimated:
+      utc: '2023-02-07T21:53:47Z'
+      local: '2023-02-07 15:53:47-06:00'
+    actual:
+      utc: '2023-02-07T21:53:47Z'
+      local: '2023-02-07 15:53:47-06:00'
+    runway: 26L
+  departure_versus_schedule: -0:02:14
+  arrival_versus_schedule: -0:02:14
+  airborne_duration: '9:27:32'
+  flight_plan:
+    planned_time_enroute: '9:27:32'
+- number: 3
+  flightaware_id: SUBTV-1676041597-adhoc-0
+  callsign: SU-BTV
+  registration: SU-BTV
+  flight_category: general aviation
+  outcome: Arrived
+  progress_percent: 100
+  flags: []
+  from:
+    icao: KSUS
+    iata: SUS
+    faa_lid: SUS
+    name: Spirit of St Louis
+    city: St Louis
+    timezone: America/Chicago
+  to:
+    icao: KILG
+    iata: ILG
+    faa_lid: ILG
+    name: New Castle
+    city: Wilmington
+    timezone: America/New_York
+  takeoff:
+    scheduled:
+      utc: '2023-02-10T15:36:37Z'
+      local: '2023-02-10 09:36:37-06:00'
+    estimated:
+      utc: '2023-02-10T15:10:13Z'
+      local: '2023-02-10 09:10:13-06:00'
+    actual:
+      utc: '2023-02-10T15:10:13Z'
+      local: '2023-02-10 09:10:13-06:00'
+    runway: 26L
+  landing:
+    scheduled:
+      utc: '2023-02-10T17:11:57Z'
+      local: '2023-02-10 12:11:57-05:00'
+    estimated:
+      utc: '2023-02-10T16:45:33Z'
+      local: '2023-02-10 11:45:33-05:00'
+    actual:
+      utc: '2023-02-10T16:45:33Z'
+      local: '2023-02-10 11:45:33-05:00'
+    runway: '27'
+  departure_versus_schedule: -0:26:24
+  arrival_versus_schedule: -0:26:24
+  airborne_duration: '1:35:20'
+  flight_plan:
+    planned_time_enroute: '1:35:20'

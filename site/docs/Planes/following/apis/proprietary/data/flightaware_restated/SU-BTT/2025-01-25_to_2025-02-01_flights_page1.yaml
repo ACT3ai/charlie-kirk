@@ -1,0 +1,52 @@
+# Restated from a FlightAware AeroAPI response, in our own layout.
+# The raw response is held privately and is not republished.
+about:
+  aircraft: SU-BTT
+  question_asked: Which flights does FlightAware hold for SU-BTT between 25 January 2025 and 1 February 2025 (UTC)?
+  source: FlightAware AeroAPI v4 flight history by registration; the raw response is held privately and is not republished.
+  retrieved_utc: '2026-09-16T02:33:56.678Z'
+  vendor_http_status: 200
+  window_utc_from: '2025-01-25T00:00:00Z'
+  window_utc_until_exclusive: '2025-02-01T00:00:00Z'
+  result_page: 1
+  total_pages_reported: 1
+  further_pages_held_by_vendor: false
+flights_recorded: 1
+reading: FlightAware holds 1 flight for SU-BTT in this window, listed here in full with the times it recorded. A flight record shows where an aircraft went; it never shows who was aboard.
+flights:
+- number: 1
+  flightaware_id: SUBTT-1737886625-adhoc-525p
+  callsign: SU-BTT
+  registration: SU-BTT
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    position_only_point:
+      lat: 29.63059
+      lon: 31.58919
+    city: Cairo
+    timezone: Africa/Cairo
+  to:
+    position_only_point:
+      lat: 29.13972
+      lon: 32.71729
+    city: Cairo
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2025-01-26T10:32:56Z'
+      local: '2025-01-26 12:32:56+02:00'
+    estimated:
+      utc: '2025-01-26T10:32:56Z'
+      local: '2025-01-26 12:32:56+02:00'
+    actual:
+      utc: '2025-01-26T10:32:56Z'
+      local: '2025-01-26 12:32:56+02:00'
+  landing:
+    actual:
+      utc: '2025-01-26T10:32:56Z'
+      local: '2025-01-26 12:32:56+02:00'
+  departure_versus_schedule: +0:00:00
+  airborne_duration: 0:00:00

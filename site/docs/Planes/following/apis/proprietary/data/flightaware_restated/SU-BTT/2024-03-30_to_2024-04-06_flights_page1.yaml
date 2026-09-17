@@ -1,0 +1,115 @@
+# Restated from a FlightAware AeroAPI response, in our own layout.
+# The raw response is held privately and is not republished.
+about:
+  aircraft: SU-BTT
+  question_asked: Which flights does FlightAware hold for SU-BTT between 30 March 2024 and 6 April 2024 (UTC)?
+  source: FlightAware AeroAPI v4 flight history by registration; the raw response is held privately and is not republished.
+  retrieved_utc: '2026-09-16T02:32:55.691Z'
+  vendor_http_status: 200
+  window_utc_from: '2024-03-30T00:00:00Z'
+  window_utc_until_exclusive: '2024-04-06T00:00:00Z'
+  result_page: 1
+  total_pages_reported: 1
+  further_pages_held_by_vendor: false
+flights_recorded: 2
+reading: FlightAware holds 2 flights for SU-BTT in this window, listed here in full with the times it recorded. A flight record shows where an aircraft went; it never shows who was aboard.
+flights:
+- number: 1
+  flightaware_id: SUBTT-1712151426-adhoc-2694p
+  callsign: SU-BTT
+  registration: SU-BTT
+  aircraft_type_code: FA7X
+  flight_category: general aviation
+  outcome: Arrived
+  progress_percent: 100
+  flags: []
+  from:
+    icao: KICT
+    iata: ICT
+    faa_lid: ICT
+    name: Wichita Eisenhower
+    city: Wichita
+    timezone: America/Chicago
+  to:
+    icao: KILG
+    iata: ILG
+    faa_lid: ILG
+    name: New Castle
+    city: Wilmington
+    timezone: America/New_York
+  takeoff:
+    scheduled:
+      utc: '2024-04-03T14:07:01Z'
+      local: '2024-04-03 09:07:01-05:00'
+    estimated:
+      utc: '2024-04-03T13:43:22Z'
+      local: '2024-04-03 08:43:22-05:00'
+    actual:
+      utc: '2024-04-03T13:43:22Z'
+      local: '2024-04-03 08:43:22-05:00'
+    runway: 01R
+  landing:
+    scheduled:
+      utc: '2024-04-03T16:30:01Z'
+      local: '2024-04-03 12:30:01-04:00'
+    estimated:
+      utc: '2024-04-03T16:06:22Z'
+      local: '2024-04-03 12:06:22-04:00'
+    actual:
+      utc: '2024-04-03T16:06:22Z'
+      local: '2024-04-03 12:06:22-04:00'
+    runway: 09
+  departure_versus_schedule: -0:23:39
+  arrival_versus_schedule: -0:23:39
+  airborne_duration: '2:23:00'
+  flight_plan:
+    planned_time_enroute: '2:23:00'
+- number: 2
+  flightaware_id: SUBTT-1712294058-sw-1235p
+  callsign: SU-BTT
+  registration: SU-BTT
+  aircraft_type_code: FA7X
+  flight_category: general aviation
+  outcome: result unknown
+  progress_percent: 100
+  flags: []
+  from:
+    icao: KILG
+    iata: ILG
+    faa_lid: ILG
+    name: New Castle
+    city: Wilmington
+    timezone: America/New_York
+  to:
+    icao: HEMM
+    iata: MUH
+    name: Mersa Matruh
+    city: Mersa Matruh
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2024-04-05T12:00:00Z'
+      local: '2024-04-05 08:00:00-04:00'
+    estimated:
+      utc: '2024-04-05T11:56:31Z'
+      local: '2024-04-05 07:56:31-04:00'
+    actual:
+      utc: '2024-04-05T11:56:31Z'
+      local: '2024-04-05 07:56:31-04:00'
+    runway: '27'
+  landing:
+    scheduled:
+      utc: '2024-04-06T00:04:00Z'
+      local: '2024-04-06 02:04:00+02:00'
+    estimated:
+      utc: '2024-04-05T22:31:10Z'
+      local: '2024-04-06 00:31:10+02:00'
+    actual:
+      utc: '2024-04-05T11:56:31Z'
+      local: '2024-04-05 13:56:31+02:00'
+  departure_versus_schedule: -0:03:29
+  arrival_versus_schedule: '-12:07:29'
+  airborne_duration: 0:00:00
+  flight_plan:
+    planned_time_enroute: '12:04:00'
+    cruise_speed_kt: 395

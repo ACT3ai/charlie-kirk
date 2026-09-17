@@ -1,0 +1,181 @@
+# Restated from a FlightAware AeroAPI response, in our own layout.
+# The raw response is held privately and is not republished.
+about:
+  aircraft: SU-BTU
+  question_asked: Which flights does FlightAware hold for SU-BTU between 30 November 2024 and 7 December 2024 (UTC)?
+  source: FlightAware AeroAPI v4 flight history by registration; the raw response is held privately and is not republished.
+  retrieved_utc: '2026-09-16T02:43:46.452Z'
+  vendor_http_status: 200
+  window_utc_from: '2024-11-30T00:00:00Z'
+  window_utc_until_exclusive: '2024-12-07T00:00:00Z'
+  result_page: 1
+  total_pages_reported: 1
+  further_pages_held_by_vendor: false
+flights_recorded: 4
+reading: FlightAware holds 4 flights for SU-BTU in this window, listed here in full with the times it recorded. A flight record shows where an aircraft went; it never shows who was aboard.
+flights:
+- number: 1
+  flightaware_id: SUBTU-1733062377-adhoc-2500p
+  callsign: SU-BTU
+  registration: SU-BTU
+  flight_category: general aviation
+  outcome: Arrived
+  progress_percent: 100
+  flags: []
+  from:
+    icao: KLNK
+    iata: LNK
+    faa_lid: LNK
+    name: Lincoln
+    city: Lincoln
+    timezone: America/Chicago
+  to:
+    icao: KILG
+    iata: ILG
+    faa_lid: ILG
+    name: New Castle
+    city: Wilmington
+    timezone: America/New_York
+  takeoff:
+    scheduled:
+      utc: '2024-12-01T14:19:52Z'
+      local: '2024-12-01 08:19:52-06:00'
+    estimated:
+      utc: '2024-12-01T14:18:18Z'
+      local: '2024-12-01 08:18:18-06:00'
+    actual:
+      utc: '2024-12-01T14:18:18Z'
+      local: '2024-12-01 08:18:18-06:00'
+    runway: '35'
+  landing:
+    scheduled:
+      utc: '2024-12-01T16:23:22Z'
+      local: '2024-12-01 11:23:22-05:00'
+    estimated:
+      utc: '2024-12-01T16:21:48Z'
+      local: '2024-12-01 11:21:48-05:00'
+    actual:
+      utc: '2024-12-01T16:21:48Z'
+      local: '2024-12-01 11:21:48-05:00'
+    runway: '27'
+  departure_versus_schedule: -0:01:34
+  arrival_versus_schedule: -0:01:34
+  airborne_duration: '2:03:30'
+  flight_plan:
+    planned_time_enroute: '2:03:30'
+- number: 2
+  flightaware_id: SUBTU-1733231310-adhoc-1840p
+  callsign: SU-BTU
+  registration: SU-BTU
+  aircraft_type_code: FA7X
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    icao: KILG
+    iata: ILG
+    faa_lid: ILG
+    name: New Castle
+    city: Wilmington
+    timezone: America/New_York
+  to:
+    position_only_point:
+      lat: 30.87767
+      lon: 31.24404
+    city: Cairo
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2024-12-03T13:19:25Z'
+      local: '2024-12-03 08:19:25-05:00'
+    estimated:
+      utc: '2024-12-03T13:17:28Z'
+      local: '2024-12-03 08:17:28-05:00'
+    actual:
+      utc: '2024-12-03T13:17:28Z'
+      local: '2024-12-03 08:17:28-05:00'
+    runway: '27'
+  landing:
+    actual:
+      utc: '2024-12-03T13:17:28Z'
+      local: '2024-12-03 15:17:28+02:00'
+  departure_versus_schedule: -0:01:57
+  airborne_duration: 0:00:00
+- number: 3
+  flightaware_id: SUBTU-1733464363-adhoc-3627p
+  callsign: SU-BTU
+  registration: SU-BTU
+  flight_category: general aviation
+  outcome: Arrived
+  progress_percent: 100
+  flags: []
+  from:
+    position_only_point:
+      lat: 29.40862
+      lon: 32.03191
+    city: Cairo
+    timezone: Africa/Cairo
+  to:
+    icao: OOMS
+    iata: MCT
+    name: Seeb Int'l
+    city: Muscat
+    timezone: Asia/Muscat
+  takeoff:
+    scheduled:
+      utc: '2024-12-06T08:23:28Z'
+      local: '2024-12-06 10:23:28+02:00'
+    estimated:
+      utc: '2024-12-06T08:23:28Z'
+      local: '2024-12-06 10:23:28+02:00'
+    actual:
+      utc: '2024-12-06T08:23:28Z'
+      local: '2024-12-06 10:23:28+02:00'
+  landing:
+    estimated:
+      utc: '2024-12-06T11:54:22Z'
+      local: '2024-12-06 15:54:22+04:00'
+    actual:
+      utc: '2024-12-06T11:54:22Z'
+      local: '2024-12-06 15:54:22+04:00'
+    runway: 26L
+  departure_versus_schedule: +0:00:00
+  airborne_duration: '3:30:54'
+- number: 4
+  flightaware_id: SUBTU-1733491169-adhoc-2009p
+  callsign: SU-BTU
+  registration: SU-BTU
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    icao: OOMS
+    iata: MCT
+    name: Seeb Int'l
+    city: Muscat
+    timezone: Asia/Muscat
+  to:
+    position_only_point:
+      lat: 29.24437
+      lon: 32.48314
+    city: Cairo
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2024-12-06T13:31:24Z'
+      local: '2024-12-06 17:31:24+04:00'
+    estimated:
+      utc: '2024-12-06T13:31:37Z'
+      local: '2024-12-06 17:31:37+04:00'
+    actual:
+      utc: '2024-12-06T13:31:37Z'
+      local: '2024-12-06 17:31:37+04:00'
+    runway: 26L
+  landing:
+    actual:
+      utc: '2024-12-06T13:31:37Z'
+      local: '2024-12-06 15:31:37+02:00'
+  departure_versus_schedule: +0:00:13
+  airborne_duration: 0:00:00

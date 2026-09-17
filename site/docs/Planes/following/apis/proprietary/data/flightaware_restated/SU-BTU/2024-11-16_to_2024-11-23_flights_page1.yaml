@@ -1,0 +1,91 @@
+# Restated from a FlightAware AeroAPI response, in our own layout.
+# The raw response is held privately and is not republished.
+about:
+  aircraft: SU-BTU
+  question_asked: Which flights does FlightAware hold for SU-BTU between 16 November 2024 and 23 November 2024 (UTC)?
+  source: FlightAware AeroAPI v4 flight history by registration; the raw response is held privately and is not republished.
+  retrieved_utc: '2026-09-16T02:43:42.105Z'
+  vendor_http_status: 200
+  window_utc_from: '2024-11-16T00:00:00Z'
+  window_utc_until_exclusive: '2024-11-23T00:00:00Z'
+  result_page: 1
+  total_pages_reported: 1
+  further_pages_held_by_vendor: false
+flights_recorded: 2
+reading: FlightAware holds 2 flights for SU-BTU in this window, listed here in full with the times it recorded. A flight record shows where an aircraft went; it never shows who was aboard.
+flights:
+- number: 1
+  flightaware_id: SUBTU-1731847789-adhoc-2142p
+  callsign: SU-BTU
+  registration: SU-BTU
+  aircraft_type_code: FA7X
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    icao: KILG
+    iata: ILG
+    faa_lid: ILG
+    name: New Castle
+    city: Wilmington
+    timezone: America/New_York
+  to:
+    position_only_point:
+      lat: 31.08777
+      lon: 31.12537
+    city: Cairo
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2024-11-17T12:53:44Z'
+      local: '2024-11-17 07:53:44-05:00'
+    estimated:
+      utc: '2024-11-17T12:54:05Z'
+      local: '2024-11-17 07:54:05-05:00'
+    actual:
+      utc: '2024-11-17T12:54:05Z'
+      local: '2024-11-17 07:54:05-05:00'
+    runway: '01'
+  landing:
+    actual:
+      utc: '2024-11-17T12:54:05Z'
+      local: '2024-11-17 14:54:05+02:00'
+  departure_versus_schedule: +0:00:21
+  airborne_duration: 0:00:00
+- number: 2
+  flightaware_id: SUBTU-1732003840-adhoc-3638p
+  callsign: SU-BTU
+  registration: SU-BTU
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    position_only_point:
+      lat: 30.58195
+      lon: 30.80986
+    city: Cairo
+    timezone: Africa/Cairo
+  to:
+    position_only_point:
+      lat: 30.95291
+      lon: 30.26239
+    city: Amreya
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2024-11-19T08:19:27Z'
+      local: '2024-11-19 10:19:27+02:00'
+    estimated:
+      utc: '2024-11-19T08:19:27Z'
+      local: '2024-11-19 10:19:27+02:00'
+    actual:
+      utc: '2024-11-19T08:19:27Z'
+      local: '2024-11-19 10:19:27+02:00'
+  landing:
+    actual:
+      utc: '2024-11-19T08:19:27Z'
+      local: '2024-11-19 10:19:27+02:00'
+  departure_versus_schedule: +0:00:00
+  airborne_duration: 0:00:00

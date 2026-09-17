@@ -1,0 +1,250 @@
+# Restated from a FlightAware AeroAPI response, in our own layout.
+# The raw response is held privately and is not republished.
+about:
+  aircraft: SU-BGM
+  question_asked: Which flights does FlightAware hold for SU-BGM between 7 May 2022 and 14 May 2022 (UTC)?
+  source: FlightAware AeroAPI v4 flight history by registration; the raw response is held privately and is not republished.
+  retrieved_utc: '2026-09-16T02:50:31.212Z'
+  vendor_http_status: 200
+  window_utc_from: '2022-05-07T00:00:00Z'
+  window_utc_until_exclusive: '2022-05-14T00:00:00Z'
+  result_page: 1
+  total_pages_reported: 1
+  further_pages_held_by_vendor: false
+flights_recorded: 5
+reading: FlightAware holds 5 flights for SU-BGM in this window, listed here in full with the times it recorded. A flight record shows where an aircraft went; it never shows who was aboard.
+flights:
+- number: 1
+  flightaware_id: SUBGM-1652070229-13-0-90
+  callsign: SU-BGM
+  registration: SU-BGM
+  flight_category: general aviation
+  outcome: Arrived
+  flags:
+  - position_only
+  from:
+    position_only_point:
+      lat: 30.33004
+      lon: 31.20617
+    city: Cairo
+    timezone: Africa/Cairo
+  to:
+    icao: LFPB
+    iata: LBG
+    name: Paris Le Bourget
+    city: Paris
+    timezone: Europe/Paris
+  takeoff:
+    scheduled:
+      utc: '2022-05-09T06:37:53Z'
+      local: '2022-05-09 08:37:53+02:00'
+    estimated:
+      utc: '2022-05-09T06:37:53Z'
+      local: '2022-05-09 08:37:53+02:00'
+    actual:
+      utc: '2022-05-09T06:37:53Z'
+      local: '2022-05-09 08:37:53+02:00'
+  landing:
+    estimated:
+      utc: '2022-05-09T10:55:48Z'
+      local: '2022-05-09 12:55:48+02:00'
+    actual:
+      utc: '2022-05-09T10:55:48Z'
+      local: '2022-05-09 12:55:48+02:00'
+    runway: '07'
+  departure_versus_schedule: +0:00:00
+  airborne_duration: '4:17:55'
+- number: 2
+  flightaware_id: SUBGM-1652148708-2-2-90
+  callsign: SU-BGM
+  registration: SU-BGM
+  flight_category: general aviation
+  outcome: Arrived
+  progress_percent: 100
+  flags: []
+  from:
+    icao: LFPB
+    iata: LBG
+    name: Paris Le Bourget
+    city: Paris
+    timezone: Europe/Paris
+  to:
+    icao: CYYR
+    iata: YYR
+    name: CFB Goose Bay (Goose Bay)
+    city: Goose Bay
+    timezone: America/Goose_Bay
+  takeoff:
+    scheduled:
+      utc: '2022-05-10T07:30:51Z'
+      local: '2022-05-10 09:30:51+02:00'
+    estimated:
+      utc: '2022-05-10T08:36:02Z'
+      local: '2022-05-10 10:36:02+02:00'
+    actual:
+      utc: '2022-05-10T08:36:02Z'
+      local: '2022-05-10 10:36:02+02:00'
+    runway: '25'
+  landing:
+    scheduled:
+      utc: '2022-05-10T13:10:43Z'
+      local: '2022-05-10 10:10:43-03:00'
+    estimated:
+      utc: '2022-05-10T14:15:54Z'
+      local: '2022-05-10 11:15:54-03:00'
+    actual:
+      utc: '2022-05-10T14:15:54Z'
+      local: '2022-05-10 11:15:54-03:00'
+    runway: '26'
+  departure_versus_schedule: '+1:05:11'
+  arrival_versus_schedule: '+1:05:11'
+  airborne_duration: '5:39:52'
+  flight_plan:
+    planned_time_enroute: '5:39:52'
+- number: 3
+  flightaware_id: SUBGM-1652145247-9-0-90
+  callsign: SU-BGM
+  registration: SU-BGM
+  flight_category: general aviation
+  outcome: Arrived
+  progress_percent: 100
+  flags: []
+  from:
+    icao: CYYR
+    iata: YYR
+    name: CFB Goose Bay (Goose Bay)
+    city: Goose Bay
+    timezone: America/Goose_Bay
+  to:
+    icao: KSUS
+    iata: SUS
+    faa_lid: SUS
+    name: Spirit of St Louis
+    city: St Louis
+    timezone: America/Chicago
+  takeoff:
+    scheduled:
+      utc: '2022-05-10T14:30:00Z'
+      local: '2022-05-10 11:30:00-03:00'
+    estimated:
+      utc: '2022-05-10T15:19:13Z'
+      local: '2022-05-10 12:19:13-03:00'
+    actual:
+      utc: '2022-05-10T15:19:13Z'
+      local: '2022-05-10 12:19:13-03:00'
+    runway: '26'
+  landing:
+    scheduled:
+      utc: '2022-05-10T18:28:00Z'
+      local: '2022-05-10 13:28:00-05:00'
+    estimated:
+      utc: '2022-05-10T18:58:53Z'
+      local: '2022-05-10 13:58:53-05:00'
+    actual:
+      utc: '2022-05-10T18:58:53Z'
+      local: '2022-05-10 13:58:53-05:00'
+    runway: 08R
+  departure_versus_schedule: +0:49:13
+  arrival_versus_schedule: +0:30:53
+  airborne_duration: '3:39:40'
+  flight_plan:
+    planned_time_enroute: '3:58:00'
+    cruise_speed_kt: 384
+- number: 4
+  flightaware_id: SUBGM-1652212237-adhoc-0
+  callsign: SU-BGM
+  registration: SU-BGM
+  flight_category: general aviation
+  outcome: Arrived
+  progress_percent: 100
+  flags: []
+  from:
+    icao: KSUS
+    iata: SUS
+    faa_lid: SUS
+    name: Spirit of St Louis
+    city: St Louis
+    timezone: America/Chicago
+  to:
+    icao: KCPS
+    iata: CPS
+    faa_lid: CPS
+    name: St Louis Downtown
+    city: Cahokia/St Louis
+    timezone: America/Chicago
+  takeoff:
+    scheduled:
+      utc: '2022-05-10T20:26:01Z'
+      local: '2022-05-10 15:26:01-05:00'
+    estimated:
+      utc: '2022-05-10T19:59:09Z'
+      local: '2022-05-10 14:59:09-05:00'
+    actual:
+      utc: '2022-05-10T19:59:09Z'
+      local: '2022-05-10 14:59:09-05:00'
+    runway: 08R
+  landing:
+    scheduled:
+      utc: '2022-05-10T20:33:55Z'
+      local: '2022-05-10 15:33:55-05:00'
+    estimated:
+      utc: '2022-05-10T20:07:03Z'
+      local: '2022-05-10 15:07:03-05:00'
+    actual:
+      utc: '2022-05-10T20:07:03Z'
+      local: '2022-05-10 15:07:03-05:00'
+    runway: 12R
+  departure_versus_schedule: -0:26:52
+  arrival_versus_schedule: -0:26:52
+  airborne_duration: 0:07:54
+  flight_plan:
+    planned_time_enroute: 0:07:54
+- number: 5
+  flightaware_id: SUBGM-1652373188-adhoc-0
+  callsign: SU-BGM
+  registration: SU-BGM
+  flight_category: general aviation
+  outcome: Arrived
+  progress_percent: 100
+  flags: []
+  from:
+    icao: KCPS
+    iata: CPS
+    faa_lid: CPS
+    name: St Louis Downtown
+    city: Cahokia/St Louis
+    timezone: America/Chicago
+  to:
+    icao: KCPS
+    iata: CPS
+    faa_lid: CPS
+    name: St Louis Downtown
+    city: Cahokia/St Louis
+    timezone: America/Chicago
+  takeoff:
+    scheduled:
+      utc: '2022-05-12T17:03:08Z'
+      local: '2022-05-12 12:03:08-05:00'
+    estimated:
+      utc: '2022-05-12T16:37:52Z'
+      local: '2022-05-12 11:37:52-05:00'
+    actual:
+      utc: '2022-05-12T16:37:52Z'
+      local: '2022-05-12 11:37:52-05:00'
+    runway: 12R
+  landing:
+    scheduled:
+      utc: '2022-05-12T17:20:22Z'
+      local: '2022-05-12 12:20:22-05:00'
+    estimated:
+      utc: '2022-05-12T16:55:06Z'
+      local: '2022-05-12 11:55:06-05:00'
+    actual:
+      utc: '2022-05-12T16:55:06Z'
+      local: '2022-05-12 11:55:06-05:00'
+    runway: 12R
+  departure_versus_schedule: -0:25:16
+  arrival_versus_schedule: -0:25:16
+  airborne_duration: 0:17:14
+  flight_plan:
+    planned_time_enroute: 0:17:14

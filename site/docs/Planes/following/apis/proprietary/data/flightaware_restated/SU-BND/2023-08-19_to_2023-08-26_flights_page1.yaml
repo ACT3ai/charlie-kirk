@@ -1,0 +1,89 @@
+# Restated from a FlightAware AeroAPI response, in our own layout.
+# The raw response is held privately and is not republished.
+about:
+  aircraft: SU-BND
+  question_asked: Which flights does FlightAware hold for SU-BND between 19 August 2023 and 26 August 2023 (UTC)?
+  source: FlightAware AeroAPI v4 flight history by registration; the raw response is held privately and is not republished.
+  retrieved_utc: '2026-09-16T02:37:05.446Z'
+  vendor_http_status: 200
+  window_utc_from: '2023-08-19T00:00:00Z'
+  window_utc_until_exclusive: '2023-08-26T00:00:00Z'
+  result_page: 1
+  total_pages_reported: 1
+  further_pages_held_by_vendor: false
+flights_recorded: 2
+reading: FlightAware holds 2 flights for SU-BND in this window, listed here in full with the times it recorded. A flight record shows where an aircraft went; it never shows who was aboard.
+flights:
+- number: 1
+  flightaware_id: SUBND-1692689185-adhoc-163p
+  callsign: SU-BND
+  registration: SU-BND
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    icao: HECA
+    iata: CAI
+    name: Cairo Int'l
+    city: Cairo
+    timezone: Africa/Cairo
+  to:
+    position_only_point:
+      lat: 31.54892
+      lon: 28.2369
+    city: Matrouh Governorate
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2023-08-22T07:36:45Z'
+      local: '2023-08-22 10:36:45+03:00'
+    estimated:
+      utc: '2023-08-22T07:36:45Z'
+      local: '2023-08-22 10:36:45+03:00'
+    actual:
+      utc: '2023-08-22T07:36:45Z'
+      local: '2023-08-22 10:36:45+03:00'
+    runway: 23R
+  landing:
+    actual:
+      utc: '2023-08-22T07:36:45Z'
+      local: '2023-08-22 10:36:45+03:00'
+  departure_versus_schedule: +0:00:00
+  airborne_duration: 0:00:00
+- number: 2
+  flightaware_id: SUBND-1692694244-adhoc-4670p
+  callsign: SU-BND
+  registration: SU-BND
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    position_only_point:
+      lat: 29.72035
+      lon: 31.3965
+    city: Cairo
+    timezone: Africa/Cairo
+  to:
+    position_only_point:
+      lat: 30.04188
+      lon: 31.35883
+    city: Cairo
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2023-08-22T09:37:43Z'
+      local: '2023-08-22 12:37:43+03:00'
+    estimated:
+      utc: '2023-08-22T09:37:43Z'
+      local: '2023-08-22 12:37:43+03:00'
+    actual:
+      utc: '2023-08-22T09:37:43Z'
+      local: '2023-08-22 12:37:43+03:00'
+  landing:
+    actual:
+      utc: '2023-08-22T09:37:43Z'
+      local: '2023-08-22 12:37:43+03:00'
+  departure_versus_schedule: +0:00:00
+  airborne_duration: 0:00:00

@@ -1,0 +1,111 @@
+# Restated from a FlightAware AeroAPI response, in our own layout.
+# The raw response is held privately and is not republished.
+about:
+  aircraft: SU-BTU
+  question_asked: Which flights does FlightAware hold for SU-BTU between 12 April 2025 and 19 April 2025 (UTC)?
+  source: FlightAware AeroAPI v4 flight history by registration; the raw response is held privately and is not republished.
+  retrieved_utc: '2026-09-16T02:44:17.718Z'
+  vendor_http_status: 200
+  window_utc_from: '2025-04-12T00:00:00Z'
+  window_utc_until_exclusive: '2025-04-19T00:00:00Z'
+  result_page: 1
+  total_pages_reported: 1
+  further_pages_held_by_vendor: false
+flights_recorded: 2
+reading: FlightAware holds 2 flights for SU-BTU in this window, listed here in full with the times it recorded. A flight record shows where an aircraft went; it never shows who was aboard.
+flights:
+- number: 1
+  flightaware_id: SUBTU-1744631982-adhoc-2950p
+  callsign: SU-BTU
+  registration: SU-BTU
+  aircraft_type_code: FA7X
+  flight_category: general aviation
+  outcome: Arrived
+  progress_percent: 100
+  flags: []
+  from:
+    icao: KPVU
+    iata: PVU
+    faa_lid: PVU
+    name: Provo Muni
+    city: Provo
+    timezone: America/Denver
+  to:
+    icao: KILG
+    iata: ILG
+    faa_lid: ILG
+    name: New Castle
+    city: Wilmington
+    timezone: America/New_York
+  takeoff:
+    scheduled:
+      utc: '2025-04-14T12:15:37Z'
+      local: '2025-04-14 06:15:37-06:00'
+    estimated:
+      utc: '2025-04-14T12:03:37Z'
+      local: '2025-04-14 06:03:37-06:00'
+    actual:
+      utc: '2025-04-14T12:03:37Z'
+      local: '2025-04-14 06:03:37-06:00'
+    runway: '13'
+  landing:
+    scheduled:
+      utc: '2025-04-14T15:35:10Z'
+      local: '2025-04-14 11:35:10-04:00'
+    estimated:
+      utc: '2025-04-14T15:23:10Z'
+      local: '2025-04-14 11:23:10-04:00'
+    actual:
+      utc: '2025-04-14T15:23:10Z'
+      local: '2025-04-14 11:23:10-04:00'
+    runway: '27'
+  departure_versus_schedule: -0:12:00
+  arrival_versus_schedule: -0:12:00
+  airborne_duration: '3:19:33'
+  flight_plan:
+    planned_time_enroute: '3:19:33'
+    route_text: FFU150011 FFU156018 BFF DSM J10 IOW J146 JOT J60 PSB BUNTS3 KILG
+    route_distance_mi: 1902
+- number: 2
+  flightaware_id: SUBTU-1744719826-adhoc-1484p
+  callsign: SU-BTU
+  registration: SU-BTU
+  aircraft_type_code: FA7X
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    icao: KILG
+    iata: ILG
+    faa_lid: ILG
+    name: New Castle
+    city: Wilmington
+    timezone: America/New_York
+  to:
+    position_only_point:
+      lat: 29.94398
+      lon: 31.28423
+    city: Cairo
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2025-04-15T12:30:41Z'
+      local: '2025-04-15 08:30:41-04:00'
+    estimated:
+      utc: '2025-04-15T12:31:09Z'
+      local: '2025-04-15 08:31:09-04:00'
+    actual:
+      utc: '2025-04-15T12:31:09Z'
+      local: '2025-04-15 08:31:09-04:00'
+    runway: '27'
+  landing:
+    actual:
+      utc: '2025-04-15T12:31:09Z'
+      local: '2025-04-15 14:31:09+02:00'
+  departure_versus_schedule: +0:00:28
+  airborne_duration: 0:00:00
+  flight_plan:
+    route_text: DITCH T416 JIMEE WAVEY SHLEP ACK TUSKY N145B PORTI 4700N/05000W 4800N/04000W 4800N/03000W 4800N/02000W UMLER UN734 UMOXA NOVAN GALOF PECNO VALKU TIS UP860 BALSI UY11 ROBEX LAPRI MOGBO EMBOS
+      AMTEL IPGOR TOPNO LATAN TRL MIL UN134 KUPIS UN132 KUMBI L612 BLT A16 CVO HEAZ
+    route_distance_mi: 5725

@@ -1,0 +1,200 @@
+# Restated from a FlightAware AeroAPI response, in our own layout.
+# The raw response is held privately and is not republished.
+about:
+  aircraft: SU-BND
+  question_asked: Which flights does FlightAware hold for SU-BND between 18 February 2023 and 25 February 2023 (UTC)?
+  source: FlightAware AeroAPI v4 flight history by registration; the raw response is held privately and is not republished.
+  retrieved_utc: '2026-09-16T02:36:30.017Z'
+  vendor_http_status: 200
+  window_utc_from: '2023-02-18T00:00:00Z'
+  window_utc_until_exclusive: '2023-02-25T00:00:00Z'
+  result_page: 1
+  total_pages_reported: 1
+  further_pages_held_by_vendor: false
+flights_recorded: 4
+reading: FlightAware holds 4 flights for SU-BND in this window, listed here in full with the times it recorded. A flight record shows where an aircraft went; it never shows who was aboard.
+flights:
+- number: 1
+  flightaware_id: SUBND-1676867538-10-0-144
+  callsign: SU-BND
+  registration: SU-BND
+  flight_category: general aviation
+  outcome: Arrived
+  progress_percent: 100
+  flags: []
+  from:
+    position_only_point:
+      lat: 30.63377
+      lon: 30.83033
+    city: Cairo
+    timezone: Africa/Cairo
+  to:
+    icao: LFPB
+    iata: LBG
+    name: Paris Le Bourget
+    city: Paris
+    timezone: Europe/Paris
+  takeoff:
+    scheduled:
+      utc: '2023-02-20T06:08:13Z'
+      local: '2023-02-20 08:08:13+02:00'
+    estimated:
+      utc: '2023-02-20T06:08:13Z'
+      local: '2023-02-20 08:08:13+02:00'
+    actual:
+      utc: '2023-02-20T06:08:13Z'
+      local: '2023-02-20 08:08:13+02:00'
+  landing:
+    estimated:
+      utc: '2023-02-20T10:29:24Z'
+      local: '2023-02-20 11:29:24+01:00'
+    actual:
+      utc: '2023-02-20T10:29:24Z'
+      local: '2023-02-20 11:29:24+01:00'
+    runway: '27'
+  departure_versus_schedule: +0:00:00
+  airborne_duration: '4:21:11'
+- number: 2
+  flightaware_id: SUBND-1676945604-48-3-144
+  callsign: SU-BND
+  registration: SU-BND
+  flight_category: general aviation
+  outcome: Arrived
+  progress_percent: 100
+  flags: []
+  from:
+    icao: LFPB
+    iata: LBG
+    name: Paris Le Bourget
+    city: Paris
+    timezone: Europe/Paris
+  to:
+    icao: CYYR
+    iata: YYR
+    name: CFB Goose Bay (Goose Bay)
+    city: Goose Bay
+    timezone: America/Goose_Bay
+  takeoff:
+    scheduled:
+      utc: '2023-02-21T07:28:59Z'
+      local: '2023-02-21 08:28:59+01:00'
+    estimated:
+      utc: '2023-02-21T08:01:53Z'
+      local: '2023-02-21 09:01:53+01:00'
+    actual:
+      utc: '2023-02-21T08:01:53Z'
+      local: '2023-02-21 09:01:53+01:00'
+    runway: 09
+  landing:
+    scheduled:
+      utc: '2023-02-21T13:11:56Z'
+      local: '2023-02-21 09:11:56-04:00'
+    estimated:
+      utc: '2023-02-21T13:44:50Z'
+      local: '2023-02-21 09:44:50-04:00'
+    actual:
+      utc: '2023-02-21T13:44:50Z'
+      local: '2023-02-21 09:44:50-04:00'
+    runway: '26'
+  departure_versus_schedule: +0:32:54
+  arrival_versus_schedule: +0:32:54
+  airborne_duration: '5:42:57'
+  flight_plan:
+    planned_time_enroute: '5:42:57'
+- number: 3
+  flightaware_id: SUBND-1676992663-adhoc-0
+  callsign: SU-BND
+  registration: SU-BND
+  flight_category: general aviation
+  outcome: Arrived
+  progress_percent: 100
+  flags: []
+  from:
+    icao: CYYR
+    iata: YYR
+    name: CFB Goose Bay (Goose Bay)
+    city: Goose Bay
+    timezone: America/Goose_Bay
+  to:
+    icao: KSUS
+    iata: SUS
+    faa_lid: SUS
+    name: Spirit of St Louis
+    city: St Louis
+    timezone: America/Chicago
+  takeoff:
+    scheduled:
+      utc: '2023-02-21T15:32:44Z'
+      local: '2023-02-21 11:32:44-04:00'
+    estimated:
+      utc: '2023-02-21T15:44:02Z'
+      local: '2023-02-21 11:44:02-04:00'
+    actual:
+      utc: '2023-02-21T15:44:02Z'
+      local: '2023-02-21 11:44:02-04:00'
+    runway: '26'
+  landing:
+    scheduled:
+      utc: '2023-02-21T19:27:41Z'
+      local: '2023-02-21 13:27:41-06:00'
+    estimated:
+      utc: '2023-02-21T19:38:59Z'
+      local: '2023-02-21 13:38:59-06:00'
+    actual:
+      utc: '2023-02-21T19:38:59Z'
+      local: '2023-02-21 13:38:59-06:00'
+    runway: 08R
+  departure_versus_schedule: +0:11:18
+  arrival_versus_schedule: +0:11:18
+  airborne_duration: '3:54:57'
+  flight_plan:
+    planned_time_enroute: '3:54:57'
+- number: 4
+  flightaware_id: SUBND-1677010919-adhoc-0
+  callsign: SU-BND
+  registration: SU-BND
+  flight_category: general aviation
+  outcome: Arrived
+  progress_percent: 100
+  flags: []
+  from:
+    icao: KSUS
+    iata: SUS
+    faa_lid: SUS
+    name: Spirit of St Louis
+    city: St Louis
+    timezone: America/Chicago
+  to:
+    icao: KCPS
+    iata: CPS
+    faa_lid: CPS
+    name: St Louis Downtown
+    city: Cahokia/St Louis
+    timezone: America/Chicago
+  takeoff:
+    scheduled:
+      utc: '2023-02-21T20:51:59Z'
+      local: '2023-02-21 14:51:59-06:00'
+    estimated:
+      utc: '2023-02-21T20:25:52Z'
+      local: '2023-02-21 14:25:52-06:00'
+    actual:
+      utc: '2023-02-21T20:25:52Z'
+      local: '2023-02-21 14:25:52-06:00'
+    runway: 08R
+  landing:
+    scheduled:
+      utc: '2023-02-21T21:01:43Z'
+      local: '2023-02-21 15:01:43-06:00'
+    estimated:
+      utc: '2023-02-21T20:35:36Z'
+      local: '2023-02-21 14:35:36-06:00'
+    actual:
+      utc: '2023-02-21T20:35:36Z'
+      local: '2023-02-21 14:35:36-06:00'
+    runway: 12R
+  departure_versus_schedule: -0:26:07
+  arrival_versus_schedule: -0:26:07
+  airborne_duration: 0:09:44
+  flight_plan:
+    planned_time_enroute: 0:09:44

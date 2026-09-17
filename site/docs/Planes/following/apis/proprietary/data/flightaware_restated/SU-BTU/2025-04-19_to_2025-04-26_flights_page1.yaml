@@ -1,0 +1,153 @@
+# Restated from a FlightAware AeroAPI response, in our own layout.
+# The raw response is held privately and is not republished.
+about:
+  aircraft: SU-BTU
+  question_asked: Which flights does FlightAware hold for SU-BTU between 19 April 2025 and 26 April 2025 (UTC)?
+  source: FlightAware AeroAPI v4 flight history by registration; the raw response is held privately and is not republished.
+  retrieved_utc: '2026-09-16T02:44:18.507Z'
+  vendor_http_status: 200
+  window_utc_from: '2025-04-19T00:00:00Z'
+  window_utc_until_exclusive: '2025-04-26T00:00:00Z'
+  result_page: 1
+  total_pages_reported: 1
+  further_pages_held_by_vendor: false
+flights_recorded: 3
+reading: FlightAware holds 3 flights for SU-BTU in this window, listed here in full with the times it recorded. A flight record shows where an aircraft went; it never shows who was aboard.
+flights:
+- number: 1
+  flightaware_id: SUBTU-1745385385-sw-1052p
+  callsign: SU-BTU
+  registration: SU-BTU
+  flight_category: general aviation
+  outcome: Arrived
+  flags:
+  - position_only
+  from:
+    position_only_point:
+      lat: 30.33751
+      lon: 30.92678
+    city: Cairo
+    timezone: Africa/Cairo
+  to:
+    icao: LFPB
+    iata: LBG
+    name: Paris Le Bourget
+    city: Paris
+    timezone: Europe/Paris
+  takeoff:
+    scheduled:
+      utc: '2025-04-23T07:14:28Z'
+      local: '2025-04-23 09:14:28+02:00'
+    estimated:
+      utc: '2025-04-23T07:14:28Z'
+      local: '2025-04-23 09:14:28+02:00'
+    actual:
+      utc: '2025-04-23T07:14:28Z'
+      local: '2025-04-23 09:14:28+02:00'
+  landing:
+    estimated:
+      utc: '2025-04-23T11:17:58Z'
+      local: '2025-04-23 13:17:58+02:00'
+    actual:
+      utc: '2025-04-23T11:17:58Z'
+      local: '2025-04-23 13:17:58+02:00'
+    runway: '27'
+  departure_versus_schedule: +0:00:00
+  airborne_duration: '4:03:30'
+- number: 2
+  flightaware_id: SUBTU-1745457285-sw-820p
+  callsign: SU-BTU
+  registration: SU-BTU
+  flight_category: general aviation
+  outcome: Arrived
+  progress_percent: 100
+  flags: []
+  from:
+    icao: LFPB
+    iata: LBG
+    name: Paris Le Bourget
+    city: Paris
+    timezone: Europe/Paris
+  to:
+    icao: KOMA
+    iata: OMA
+    faa_lid: OMA
+    name: Eppley Airfield
+    city: Omaha
+    timezone: America/Chicago
+  takeoff:
+    scheduled:
+      utc: '2025-04-24T06:55:13Z'
+      local: '2025-04-24 08:55:13+02:00'
+    estimated:
+      utc: '2025-04-24T06:58:04Z'
+      local: '2025-04-24 08:58:04+02:00'
+    actual:
+      utc: '2025-04-24T06:58:04Z'
+      local: '2025-04-24 08:58:04+02:00'
+    runway: '25'
+  landing:
+    scheduled:
+      utc: '2025-04-24T15:47:02Z'
+      local: '2025-04-24 10:47:02-05:00'
+    estimated:
+      utc: '2025-04-24T15:49:53Z'
+      local: '2025-04-24 10:49:53-05:00'
+    actual:
+      utc: '2025-04-24T15:49:53Z'
+      local: '2025-04-24 10:49:53-05:00'
+    runway: 14L
+  departure_versus_schedule: +0:02:51
+  arrival_versus_schedule: +0:02:51
+  airborne_duration: '8:51:49'
+  flight_plan:
+    planned_time_enroute: '8:51:49'
+- number: 3
+  flightaware_id: SUBTU-1745513438-adhoc-2145p
+  callsign: SU-BTU
+  registration: SU-BTU
+  flight_category: general aviation
+  outcome: Arrived
+  progress_percent: 100
+  flags: []
+  from:
+    icao: KOMA
+    iata: OMA
+    faa_lid: OMA
+    name: Eppley Airfield
+    city: Omaha
+    timezone: America/Chicago
+  to:
+    icao: KLNK
+    iata: LNK
+    faa_lid: LNK
+    name: Lincoln
+    city: Lincoln
+    timezone: America/Chicago
+  takeoff:
+    scheduled:
+      utc: '2025-04-24T17:00:33Z'
+      local: '2025-04-24 12:00:33-05:00'
+    estimated:
+      utc: '2025-04-24T16:54:55Z'
+      local: '2025-04-24 11:54:55-05:00'
+    actual:
+      utc: '2025-04-24T16:54:55Z'
+      local: '2025-04-24 11:54:55-05:00'
+    runway: '18'
+  landing:
+    scheduled:
+      utc: '2025-04-24T17:16:20Z'
+      local: '2025-04-24 12:16:20-05:00'
+    estimated:
+      utc: '2025-04-24T17:10:42Z'
+      local: '2025-04-24 12:10:42-05:00'
+    actual:
+      utc: '2025-04-24T17:10:42Z'
+      local: '2025-04-24 12:10:42-05:00'
+    runway: '18'
+  departure_versus_schedule: -0:05:38
+  arrival_versus_schedule: -0:05:38
+  airborne_duration: 0:15:47
+  flight_plan:
+    planned_time_enroute: 0:15:47

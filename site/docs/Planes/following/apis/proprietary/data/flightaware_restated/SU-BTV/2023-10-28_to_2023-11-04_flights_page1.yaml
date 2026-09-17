@@ -1,0 +1,254 @@
+# Restated from a FlightAware AeroAPI response, in our own layout.
+# The raw response is held privately and is not republished.
+about:
+  aircraft: SU-BTV
+  question_asked: Which flights does FlightAware hold for SU-BTV between 28 October 2023 and 4 November 2023 (UTC)?
+  source: FlightAware AeroAPI v4 flight history by registration; the raw response is held privately and is not republished.
+  retrieved_utc: '2026-09-16T02:47:15.662Z'
+  vendor_http_status: 200
+  window_utc_from: '2023-10-28T00:00:00Z'
+  window_utc_until_exclusive: '2023-11-04T00:00:00Z'
+  result_page: 1
+  total_pages_reported: 1
+  further_pages_held_by_vendor: false
+flights_recorded: 5
+reading: FlightAware holds 5 flights for SU-BTV in this window, listed here in full with the times it recorded. A flight record shows where an aircraft went; it never shows who was aboard.
+flights:
+- number: 1
+  flightaware_id: SUBTV-1698484495-sw-784p
+  callsign: SU-BTV
+  registration: SU-BTV
+  flight_category: general aviation
+  outcome: Arrived
+  progress_percent: 100
+  flags: []
+  from:
+    icao: HEAZ
+    name: Almaza Air Base
+    timezone: Africa/Cairo
+  to:
+    icao: LFPB
+    iata: LBG
+    name: Paris Le Bourget
+    city: Paris
+    timezone: Europe/Paris
+  takeoff:
+    scheduled:
+      utc: '2023-10-28T17:04:28Z'
+      local: '2023-10-28 19:04:28+02:00'
+    estimated:
+      utc: '2023-10-28T16:35:09Z'
+      local: '2023-10-28 18:35:09+02:00'
+    actual:
+      utc: '2023-10-28T16:35:09Z'
+      local: '2023-10-28 18:35:09+02:00'
+    runway: '36'
+  landing:
+    scheduled:
+      utc: '2023-10-28T21:15:47Z'
+      local: '2023-10-28 23:15:47+02:00'
+    estimated:
+      utc: '2023-10-28T20:46:28Z'
+      local: '2023-10-28 22:46:28+02:00'
+    actual:
+      utc: '2023-10-28T20:46:28Z'
+      local: '2023-10-28 22:46:28+02:00'
+    runway: '27'
+  departure_versus_schedule: -0:29:19
+  arrival_versus_schedule: -0:29:19
+  airborne_duration: '4:11:19'
+  flight_plan:
+    planned_time_enroute: '4:11:19'
+- number: 2
+  flightaware_id: SUBTV-1698600351-sw-57p
+  callsign: SU-BTV
+  registration: SU-BTV
+  flight_category: general aviation
+  outcome: Arrived
+  progress_percent: 100
+  flags: []
+  from:
+    icao: LFPB
+    iata: LBG
+    name: Paris Le Bourget
+    city: Paris
+    timezone: Europe/Paris
+  to:
+    icao: LFPB
+    iata: LBG
+    name: Paris Le Bourget
+    city: Paris
+    timezone: Europe/Paris
+  takeoff:
+    scheduled:
+      utc: '2023-10-29T19:54:40Z'
+      local: '2023-10-29 20:54:40+01:00'
+    estimated:
+      utc: '2023-10-29T19:52:05Z'
+      local: '2023-10-29 20:52:05+01:00'
+    actual:
+      utc: '2023-10-29T19:52:05Z'
+      local: '2023-10-29 20:52:05+01:00'
+    runway: '25'
+  landing:
+    scheduled:
+      utc: '2023-10-29T21:47:51Z'
+      local: '2023-10-29 22:47:51+01:00'
+    estimated:
+      utc: '2023-10-29T21:45:16Z'
+      local: '2023-10-29 22:45:16+01:00'
+    actual:
+      utc: '2023-10-29T21:45:16Z'
+      local: '2023-10-29 22:45:16+01:00'
+    runway: '27'
+  departure_versus_schedule: -0:02:35
+  arrival_versus_schedule: -0:02:35
+  airborne_duration: '1:53:11'
+  flight_plan:
+    planned_time_enroute: '1:53:11'
+- number: 3
+  flightaware_id: SUBTV-1698679916-sw-7p
+  callsign: SU-BTV
+  registration: SU-BTV
+  flight_category: general aviation
+  outcome: Arrived
+  progress_percent: 100
+  flags: []
+  from:
+    icao: LFPB
+    iata: LBG
+    name: Paris Le Bourget
+    city: Paris
+    timezone: Europe/Paris
+  to:
+    icao: KDTW
+    iata: DTW
+    faa_lid: DTW
+    name: Detroit Metro Wayne Co
+    city: Detroit
+    timezone: America/New_York
+  takeoff:
+    scheduled:
+      utc: '2023-10-30T17:12:29Z'
+      local: '2023-10-30 18:12:29+01:00'
+    estimated:
+      utc: '2023-10-30T16:50:14Z'
+      local: '2023-10-30 17:50:14+01:00'
+    actual:
+      utc: '2023-10-30T16:50:14Z'
+      local: '2023-10-30 17:50:14+01:00'
+    runway: '25'
+  landing:
+    scheduled:
+      utc: '2023-10-31T01:27:17Z'
+      local: '2023-10-30 21:27:17-04:00'
+    estimated:
+      utc: '2023-10-31T01:05:02Z'
+      local: '2023-10-30 21:05:02-04:00'
+    actual:
+      utc: '2023-10-31T01:05:02Z'
+      local: '2023-10-30 21:05:02-04:00'
+    runway: 21L
+  departure_versus_schedule: -0:22:15
+  arrival_versus_schedule: -0:22:15
+  airborne_duration: '8:14:48'
+  flight_plan:
+    planned_time_enroute: '8:14:48'
+- number: 4
+  flightaware_id: SUBTV-1698717985-adhoc-1129p
+  callsign: SU-BTV
+  registration: SU-BTV
+  flight_category: general aviation
+  outcome: Arrived
+  progress_percent: 100
+  flags: []
+  from:
+    icao: KDTW
+    iata: DTW
+    faa_lid: DTW
+    name: Detroit Metro Wayne Co
+    city: Detroit
+    timezone: America/New_York
+  to:
+    icao: KSUS
+    iata: SUS
+    faa_lid: SUS
+    name: Spirit of St Louis
+    city: St Louis
+    timezone: America/Chicago
+  takeoff:
+    scheduled:
+      utc: '2023-10-31T02:36:20Z'
+      local: '2023-10-30 22:36:20-04:00'
+    estimated:
+      utc: '2023-10-31T02:10:22Z'
+      local: '2023-10-30 22:10:22-04:00'
+    actual:
+      utc: '2023-10-31T02:10:22Z'
+      local: '2023-10-30 22:10:22-04:00'
+    runway: 21R
+  landing:
+    scheduled:
+      utc: '2023-10-31T03:57:22Z'
+      local: '2023-10-30 22:57:22-05:00'
+    estimated:
+      utc: '2023-10-31T03:31:24Z'
+      local: '2023-10-30 22:31:24-05:00'
+    actual:
+      utc: '2023-10-31T03:31:24Z'
+      local: '2023-10-30 22:31:24-05:00'
+    runway: 26L
+  departure_versus_schedule: -0:25:58
+  arrival_versus_schedule: -0:25:58
+  airborne_duration: '1:21:02'
+  flight_plan:
+    planned_time_enroute: '1:21:02'
+- number: 5
+  flightaware_id: SUBTV-1698935512-adhoc-1172p
+  callsign: SU-BTV
+  registration: SU-BTV
+  flight_category: general aviation
+  outcome: Arrived
+  progress_percent: 100
+  flags: []
+  from:
+    icao: KSUS
+    iata: SUS
+    faa_lid: SUS
+    name: Spirit of St Louis
+    city: St Louis
+    timezone: America/Chicago
+  to:
+    icao: KILG
+    iata: ILG
+    faa_lid: ILG
+    name: New Castle
+    city: Wilmington
+    timezone: America/New_York
+  takeoff:
+    scheduled:
+      utc: '2023-11-02T15:01:47Z'
+      local: '2023-11-02 10:01:47-05:00'
+    estimated:
+      utc: '2023-11-02T14:42:16Z'
+      local: '2023-11-02 09:42:16-05:00'
+    actual:
+      utc: '2023-11-02T14:42:16Z'
+      local: '2023-11-02 09:42:16-05:00'
+    runway: 26L
+  landing:
+    scheduled:
+      utc: '2023-11-02T16:35:29Z'
+      local: '2023-11-02 12:35:29-04:00'
+    estimated:
+      utc: '2023-11-02T16:15:58Z'
+      local: '2023-11-02 12:15:58-04:00'
+    actual:
+      utc: '2023-11-02T16:15:58Z'
+      local: '2023-11-02 12:15:58-04:00'
+    runway: '27'
+  departure_versus_schedule: -0:19:31
+  arrival_versus_schedule: -0:19:31
+  airborne_duration: '1:33:42'
+  flight_plan:
+    planned_time_enroute: '1:33:42'

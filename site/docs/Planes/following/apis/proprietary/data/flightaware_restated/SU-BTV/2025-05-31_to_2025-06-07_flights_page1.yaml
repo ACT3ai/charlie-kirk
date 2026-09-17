@@ -1,0 +1,117 @@
+# Restated from a FlightAware AeroAPI response, in our own layout.
+# The raw response is held privately and is not republished.
+about:
+  aircraft: SU-BTV
+  question_asked: Which flights does FlightAware hold for SU-BTV between 31 May 2025 and 7 June 2025 (UTC)?
+  source: FlightAware AeroAPI v4 flight history by registration; the raw response is held privately and is not republished.
+  retrieved_utc: '2026-09-16T02:49:22.080Z'
+  vendor_http_status: 200
+  window_utc_from: '2025-05-31T00:00:00Z'
+  window_utc_until_exclusive: '2025-06-07T00:00:00Z'
+  result_page: 1
+  total_pages_reported: 1
+  further_pages_held_by_vendor: false
+flights_recorded: 2
+reading: FlightAware holds 2 flights for SU-BTV in this window, listed here in full with the times it recorded. A flight record shows where an aircraft went; it never shows who was aboard.
+flights:
+- number: 1
+  flightaware_id: SUBTV-1748869807-adhoc-1213p
+  callsign: SU-BTV
+  registration: SU-BTV
+  flight_category: general aviation
+  outcome: Arrived
+  progress_percent: 100
+  flags: []
+  from:
+    icao: KPVU
+    iata: PVU
+    faa_lid: PVU
+    name: Provo Muni
+    city: Provo
+    timezone: America/Denver
+  to:
+    icao: KILG
+    iata: ILG
+    faa_lid: ILG
+    name: New Castle
+    city: Wilmington
+    timezone: America/New_York
+  takeoff:
+    scheduled:
+      utc: '2025-06-02T13:21:02Z'
+      local: '2025-06-02 07:21:02-06:00'
+    estimated:
+      utc: '2025-06-02T13:14:55Z'
+      local: '2025-06-02 07:14:55-06:00'
+    actual:
+      utc: '2025-06-02T13:14:55Z'
+      local: '2025-06-02 07:14:55-06:00'
+    runway: '13'
+  landing:
+    scheduled:
+      utc: '2025-06-02T16:57:42Z'
+      local: '2025-06-02 12:57:42-04:00'
+    estimated:
+      utc: '2025-06-02T16:51:35Z'
+      local: '2025-06-02 12:51:35-04:00'
+    actual:
+      utc: '2025-06-02T16:51:35Z'
+      local: '2025-06-02 12:51:35-04:00'
+    runway: '27'
+  departure_versus_schedule: -0:06:07
+  arrival_versus_schedule: -0:06:07
+  airborne_duration: '3:36:40'
+  flight_plan:
+    planned_time_enroute: '3:36:40'
+- number: 2
+  flightaware_id: SUBTV-1748951566-adhoc-2366p
+  callsign: SU-BTV
+  registration: SU-BTV
+  aircraft_type_code: FA7X
+  flight_category: general aviation
+  outcome: result unknown
+  progress_percent: 100
+  flags: []
+  from:
+    icao: KILG
+    iata: ILG
+    faa_lid: ILG
+    name: New Castle
+    city: Wilmington
+    timezone: America/New_York
+  to:
+    icao: HEAZ
+    name: Almaza Air Base
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2025-06-03T12:01:26Z'
+      local: '2025-06-03 08:01:26-04:00'
+    estimated:
+      utc: '2025-06-03T11:58:26Z'
+      local: '2025-06-03 07:58:26-04:00'
+    actual:
+      utc: '2025-06-03T11:58:26Z'
+      local: '2025-06-03 07:58:26-04:00'
+    runway: '27'
+  landing:
+    scheduled:
+      utc: '2025-06-03T22:22:31Z'
+      local: '2025-06-04 01:22:31+03:00'
+    estimated:
+      utc: '2025-06-03T22:19:31Z'
+      local: '2025-06-04 01:19:31+03:00'
+    actual:
+      utc: '2025-06-03T11:58:26Z'
+      local: '2025-06-03 14:58:26+03:00'
+    runway: '36'
+  departure_versus_schedule: -0:03:00
+  arrival_versus_schedule: '-10:24:05'
+  airborne_duration: 0:00:00
+  flight_plan:
+    planned_time_enroute: '10:21:05'
+    cruise_altitude_ft: 39000
+    cruise_speed_kt: 459
+    route_text: DITCH Q437 HNNAH Q450 JFK FOXWD EBONY ELSIR 5000N/05000W 5100N/04000W 5100N/03000W 5000N/02000W KOGAD BIMGO TULTA NOVAN GALOF PECNO VALKU TIS UP860 BALSI UY11 ROBEX LAPRI MOGBO EMBOS DELER
+      APVAR RUTOM BERAP KUMBI L612 BLT A16 CVO HEAZ
+    route_distance_mi: 5725

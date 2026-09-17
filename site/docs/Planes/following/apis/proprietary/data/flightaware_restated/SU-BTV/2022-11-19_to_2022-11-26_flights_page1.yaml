@@ -1,0 +1,104 @@
+# Restated from a FlightAware AeroAPI response, in our own layout.
+# The raw response is held privately and is not republished.
+about:
+  aircraft: SU-BTV
+  question_asked: Which flights does FlightAware hold for SU-BTV between 19 November 2022 and 26 November 2022 (UTC)?
+  source: FlightAware AeroAPI v4 flight history by registration; the raw response is held privately and is not republished.
+  retrieved_utc: '2026-09-16T02:46:06.537Z'
+  vendor_http_status: 200
+  window_utc_from: '2022-11-19T00:00:00Z'
+  window_utc_until_exclusive: '2022-11-26T00:00:00Z'
+  result_page: 1
+  total_pages_reported: 1
+  further_pages_held_by_vendor: false
+flights_recorded: 2
+reading: FlightAware holds 2 flights for SU-BTV in this window, listed here in full with the times it recorded. A flight record shows where an aircraft went; it never shows who was aboard.
+flights:
+- number: 1
+  flightaware_id: SUBTV-1669008905-0-1-216
+  callsign: SU-BTV
+  registration: SU-BTV
+  flight_category: general aviation
+  outcome: Arrived
+  progress_percent: 100
+  flags: []
+  from:
+    position_only_point:
+      lat: 30.47717
+      lon: 31.07127
+    city: Cairo
+    timezone: Africa/Cairo
+  to:
+    icao: LFPB
+    iata: LBG
+    name: Paris Le Bourget
+    city: Paris
+    timezone: Europe/Paris
+  takeoff:
+    scheduled:
+      utc: '2022-11-21T07:08:22Z'
+      local: '2022-11-21 09:08:22+02:00'
+    estimated:
+      utc: '2022-11-21T07:08:22Z'
+      local: '2022-11-21 09:08:22+02:00'
+    actual:
+      utc: '2022-11-21T07:08:22Z'
+      local: '2022-11-21 09:08:22+02:00'
+  landing:
+    estimated:
+      utc: '2022-11-21T11:30:36Z'
+      local: '2022-11-21 12:30:36+01:00'
+    actual:
+      utc: '2022-11-21T11:30:36Z'
+      local: '2022-11-21 12:30:36+01:00'
+    runway: '07'
+  departure_versus_schedule: +0:00:00
+  airborne_duration: '4:22:14'
+- number: 2
+  flightaware_id: SUBTV-1669092651-4-1-216
+  callsign: SU-BTV
+  registration: SU-BTV
+  flight_category: general aviation
+  outcome: Arrived
+  progress_percent: 100
+  flags: []
+  from:
+    icao: LFPB
+    iata: LBG
+    name: Paris Le Bourget
+    city: Paris
+    timezone: Europe/Paris
+  to:
+    icao: KSUS
+    iata: SUS
+    faa_lid: SUS
+    name: Spirit of St Louis
+    city: St Louis
+    timezone: America/Chicago
+  takeoff:
+    scheduled:
+      utc: '2022-11-22T09:01:54Z'
+      local: '2022-11-22 10:01:54+01:00'
+    estimated:
+      utc: '2022-11-22T08:58:07Z'
+      local: '2022-11-22 09:58:07+01:00'
+    actual:
+      utc: '2022-11-22T08:58:07Z'
+      local: '2022-11-22 09:58:07+01:00'
+    runway: '25'
+  landing:
+    scheduled:
+      utc: '2022-11-22T18:20:49Z'
+      local: '2022-11-22 12:20:49-06:00'
+    estimated:
+      utc: '2022-11-22T18:17:02Z'
+      local: '2022-11-22 12:17:02-06:00'
+    actual:
+      utc: '2022-11-22T18:17:02Z'
+      local: '2022-11-22 12:17:02-06:00'
+    runway: 26L
+  departure_versus_schedule: -0:03:47
+  arrival_versus_schedule: -0:03:47
+  airborne_duration: '9:18:55'
+  flight_plan:
+    planned_time_enroute: '9:18:55'

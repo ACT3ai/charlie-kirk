@@ -1,0 +1,66 @@
+# Restated from a FlightAware AeroAPI response, in our own layout.
+# The raw response is held privately and is not republished.
+about:
+  aircraft: SU-BND
+  question_asked: Which flights does FlightAware hold for SU-BND between 29 April 2023 and 6 May 2023 (UTC)?
+  source: FlightAware AeroAPI v4 flight history by registration; the raw response is held privately and is not republished.
+  retrieved_utc: '2026-09-16T02:36:49.532Z'
+  vendor_http_status: 200
+  window_utc_from: '2023-04-29T00:00:00Z'
+  window_utc_until_exclusive: '2023-05-06T00:00:00Z'
+  result_page: 1
+  total_pages_reported: 1
+  further_pages_held_by_vendor: false
+flights_recorded: 1
+reading: FlightAware holds 1 flight for SU-BND in this window, listed here in full with the times it recorded. A flight record shows where an aircraft went; it never shows who was aboard.
+flights:
+- number: 1
+  flightaware_id: SUBND-1683125151-adhoc-875p
+  callsign: SU-BND
+  registration: SU-BND
+  aircraft_type_code: GLF4
+  flight_category: general aviation
+  outcome: Arrived
+  progress_percent: 100
+  flags: []
+  from:
+    icao: KCPS
+    iata: CPS
+    faa_lid: CPS
+    name: St Louis Downtown
+    city: Cahokia/St Louis
+    timezone: America/Chicago
+  to:
+    icao: KCPS
+    iata: CPS
+    faa_lid: CPS
+    name: St Louis Downtown
+    city: Cahokia/St Louis
+    timezone: America/Chicago
+  takeoff:
+    scheduled:
+      utc: '2023-05-03T15:18:32Z'
+      local: '2023-05-03 10:18:32-05:00'
+    estimated:
+      utc: '2023-05-03T15:28:29Z'
+      local: '2023-05-03 10:28:29-05:00'
+    actual:
+      utc: '2023-05-03T15:28:29Z'
+      local: '2023-05-03 10:28:29-05:00'
+    runway: 30L
+  landing:
+    scheduled:
+      utc: '2023-05-03T16:26:33Z'
+      local: '2023-05-03 11:26:33-05:00'
+    estimated:
+      utc: '2023-05-03T16:36:30Z'
+      local: '2023-05-03 11:36:30-05:00'
+    actual:
+      utc: '2023-05-03T16:36:30Z'
+      local: '2023-05-03 11:36:30-05:00'
+    runway: 30L
+  departure_versus_schedule: +0:09:57
+  arrival_versus_schedule: +0:09:57
+  airborne_duration: '1:08:01'
+  flight_plan:
+    planned_time_enroute: '1:08:01'

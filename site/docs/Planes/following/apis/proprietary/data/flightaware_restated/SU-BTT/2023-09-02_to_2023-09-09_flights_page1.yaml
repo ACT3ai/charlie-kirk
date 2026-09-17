@@ -1,0 +1,89 @@
+# Restated from a FlightAware AeroAPI response, in our own layout.
+# The raw response is held privately and is not republished.
+about:
+  aircraft: SU-BTT
+  question_asked: Which flights does FlightAware hold for SU-BTT between 2 September 2023 and 9 September 2023 (UTC)?
+  source: FlightAware AeroAPI v4 flight history by registration; the raw response is held privately and is not republished.
+  retrieved_utc: '2026-09-16T02:32:06.232Z'
+  vendor_http_status: 200
+  window_utc_from: '2023-09-02T00:00:00Z'
+  window_utc_until_exclusive: '2023-09-09T00:00:00Z'
+  result_page: 1
+  total_pages_reported: 1
+  further_pages_held_by_vendor: false
+flights_recorded: 2
+reading: FlightAware holds 2 flights for SU-BTT in this window, listed here in full with the times it recorded. A flight record shows where an aircraft went; it never shows who was aboard.
+flights:
+- number: 1
+  flightaware_id: SUBTT-1694153261-adhoc-4341p
+  callsign: SU-BTT
+  registration: SU-BTT
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    icao: HECA
+    iata: CAI
+    name: Cairo Int'l
+    city: Cairo
+    timezone: Africa/Cairo
+  to:
+    position_only_point:
+      lat: 28.5199
+      lon: 34.09122
+    city: Sharm El Sheikh
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2023-09-08T06:17:57Z'
+      local: '2023-09-08 09:17:57+03:00'
+    estimated:
+      utc: '2023-09-08T06:17:57Z'
+      local: '2023-09-08 09:17:57+03:00'
+    actual:
+      utc: '2023-09-08T06:17:57Z'
+      local: '2023-09-08 09:17:57+03:00'
+    runway: 23R
+  landing:
+    actual:
+      utc: '2023-09-08T06:17:57Z'
+      local: '2023-09-08 09:17:57+03:00'
+  departure_versus_schedule: +0:00:00
+  airborne_duration: 0:00:00
+- number: 2
+  flightaware_id: SUBTT-1694174749-adhoc-3124p
+  callsign: SU-BTT
+  registration: SU-BTT
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    position_only_point:
+      lat: 28.80848
+      lon: 34.02504
+    city: Sharm El Sheikh
+    timezone: Africa/Cairo
+  to:
+    position_only_point:
+      lat: 28.20039
+      lon: 33.84027
+    city: Sharm El Sheikh
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2023-09-08T12:22:00Z'
+      local: '2023-09-08 15:22:00+03:00'
+    estimated:
+      utc: '2023-09-08T12:22:00Z'
+      local: '2023-09-08 15:22:00+03:00'
+    actual:
+      utc: '2023-09-08T12:22:00Z'
+      local: '2023-09-08 15:22:00+03:00'
+  landing:
+    actual:
+      utc: '2023-09-08T12:22:00Z'
+      local: '2023-09-08 15:22:00+03:00'
+  departure_versus_schedule: +0:00:00
+  airborne_duration: 0:00:00
