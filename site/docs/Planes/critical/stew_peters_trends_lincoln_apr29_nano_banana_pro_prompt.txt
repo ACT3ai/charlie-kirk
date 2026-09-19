@@ -1,0 +1,66 @@
+EDIT THE ATTACHED IMAGE. DO NOT CREATE A NEW IMAGE.
+
+This is an image restoration job, not an image generation job. The attached image is a blurry screen capture of a live video broadcast showing a Google Trends chart. Return that same photograph, deblurred and sharpened, at 4K resolution. Nothing else changes.
+
+Think of it as the same screen captured again with a perfect lossless 4K camera. Same pixels in the same places, only sharp.
+
+RESOLUTION
+* Output 4K, 16:9. The input is 3801 x 2150 pixels, which is about 16:9. Scale the whole frame up uniformly.
+* Same framing. Do not crop, extend, zoom, pan or reframe. Every element sits at the same relative position, the same relative size, as in the input.
+
+THE ONLY CHANGES ALLOWED
+* Remove the blur.
+* Remove video compression artifacts: blockiness, smearing, ringing, color noise.
+* Make edges, letters, digits and icons crisp.
+
+FORBIDDEN, WITHOUT EXCEPTION
+* Do not add anything. No new header, no new logo, no new chart lines, no new data points, no new axis labels, no new icons, no scrollbars, no video player controls.
+* Do not remove anything.
+* Do not move, resize, re-wrap or re-layout anything.
+* Do not change the chart DATA. The chart is almost entirely a flat line along the bottom, with ONE thin vertical yellow spike near the middle-right that has a small dark-red dot at its base. Keep exactly one spike, at exactly the same horizontal position, the same height, the same thinness. Do not add bumps, do not smooth it, do not add other lines rising from the baseline.
+* Keep the mouse pointer where it is, beside the spike.
+* Do not redesign any logo, font, icon, color, or the broadcast graphics. Keep the SPN logo, the social icons, the "LIVE+ JakeGTV" badge, and the red-and-white "STEW PETERS SHOW" lower third exactly as they look in the input, just sharper.
+* Do not change, add, drop, translate, re-spell or re-order a single letter, digit, space or punctuation mark, in Hebrew or in English.
+
+EXACT TEXT, TO CONFIRM EXACT LANGUAGE
+These strings are in the input. Keep them exactly, character for character, including every quotation mark, apostrophe (geresh) and ellipsis.
+
+The three Google Trends search-term labels across the top, left to right. Each is Hebrew, right-to-left, inside straight double quotes, and each is TRUNCATED by Google with an ellipsis "..." exactly as in the input. Do not complete the truncated words.
+* Blue dot:   "ילד ג'יימס רובינסון..."
+* Red dot:    "רובינסון סנט ג'ורג..."
+* Yellow dot: "דירה 73, סנט ג'ורג..."
+Under each label, in small grey text: Search term
+
+To the right of the three labels, a light blue box: + Add comparison
+
+The filter row, left to right, each followed by a small down-arrow:
+Lincoln & Hastings-Kearne...     1/1/25 - 9/9/25     All categories     Web Search
+
+The chart heading: Interest over time   followed by a small circled question-mark icon.
+Chart icons at the far right of the heading: a download arrow, a code icon "< >", a share icon.
+
+THE HOVER TOOLTIP (the white card at the lower middle of the chart):
+* Its heading, bold dark text: Apr 29, 2025
+* Below the heading are three faint grey rows, one per search term, each ending with a value at the right. The first two values are 0 and 0. The third row is the yellow term.
+* THESE THREE ROWS ARE TOO BLURRED IN THE INPUT TO READ WITH CERTAINTY. Sharpen them only as far as the input supports. Do NOT invent or "complete" Hebrew words in these rows. Keep their length, their position, their grey color and their faintness. If a letter is not clearly legible in the input, keep it soft rather than guessing a new letter. The third row visibly contains the numbers 73 and 3419; keep those.
+
+The chart's bottom axis labels are faint grey and near-illegible. Keep them faint. Do not invent new date labels.
+
+Top broadcast bar, white bold capitals: SHOWS   SUBSCRIBE   NEWS   SHOP   LIVE
+Badge, upper right: LIVE+   JakeGTV
+Lower third, red band: MAKE YOUR VOICE BE HEARD, DIAL 507-698-7839
+Lower third, white band: CALL NOW  507-698-STEW
+Logo caption, bottom left: STEW PETERS SHOW
+Bottom scrolling ticker: Follow @RealStewPeters on X   Watch Old World Order at StewPeters.com   SUBSCRIBE (partly cut off by the frame edges exactly as in the input)
+
+KNOWN FAILURES FROM A PREVIOUS ATTEMPT. DO NOT REPEAT ANY OF THEM.
+A previous attempt invented content that is NOT in the input. Every one of these is wrong:
+* It added a vertical axis with the numbers 100, 75, 50, 25 and horizontal gridlines. The input has NO axis numbers and NO gridlines inside the chart. The chart area is plain white.
+* It added bottom axis labels "Normay", "Jan 1, 2020" and "Jan 29, 2025". The input has only faint, unreadable grey marks there. Keep them faint and unreadable.
+* It added a small blue-and-red bar at the lower left of the chart. That is not in the input.
+* It wrote the date filter as "111/25 - 9/9/25". The correct text is "1/1/25 - 9/9/25" (one, slash, one, slash, 25).
+* It drew the spike as two lines forming an upside-down V. The input spike is ONE thin straight vertical yellow line.
+* It drew rounded white cards around each search term and around the filters. The input has no card borders there; the terms and filters sit directly on the white page.
+* It wrote new Hebrew words in the tooltip rows (for example שיילד, שרית, דרואת, 2019) and set the third value to 0. Those words were invented. The third value in the input is an unreadable yellow smudge, not a 0. Keep the tooltip rows as faint, soft grey text of the same length. Keep the third value as a faint yellow smudge.
+
+If you are unsure what a blurry mark is, keep its shape as it is and sharpen it. Never replace it with something you invented.

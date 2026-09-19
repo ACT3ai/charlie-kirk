@@ -1,0 +1,51 @@
+EDIT THE ATTACHED IMAGE. DO NOT CREATE A NEW IMAGE.
+
+This is an image restoration job, not an image generation job. The attached image is a blurry screen capture of a live video broadcast. Return that same photograph, deblurred and sharpened, at 4K resolution. Nothing else changes.
+
+Think of it as the same screen captured again with a perfect lossless 4K camera. Same pixels in the same places, only sharp.
+
+RESOLUTION
+* Output 4K, 16:9. The input is 3827 x 2076 pixels, which is about 16:9. Scale the whole frame up uniformly.
+* Same framing. Do not crop, extend, zoom, pan or reframe. Every element sits at the same relative position, the same relative size, as in the input.
+
+THE ONLY CHANGES ALLOWED
+* Remove the blur.
+* Remove video compression artifacts: blockiness, smearing, ringing, color noise.
+* Make edges, letters, digits and icons crisp.
+
+FORBIDDEN, WITHOUT EXCEPTION
+* Do not add anything. No new header, no new logo, no "Google Translate" title bar, no new icons, no new buttons, no new panels, no scrollbars, no video player controls.
+* Do not remove anything.
+* Do not move, resize, re-wrap or re-layout anything. Every line of text stays on ONE line exactly as in the input. The Hebrew stays on one line. The English stays on one line.
+* Do not redesign any logo, font, icon, color, or the broadcast graphics. Keep the SPN logo, the social icons, the "LIVE+ JakeGTV" badge, and the red-and-white "STEW PETERS SHOW" lower third exactly as they look in the input, just sharper.
+* Do not change, add, drop, translate, re-spell or re-order a single letter, digit, space or punctuation mark, in Hebrew or in English.
+
+EXACT TEXT, TO CONFIRM EXACT LANGUAGE
+These strings are in the input. Keep them exactly, character for character, including every quotation mark and every apostrophe (geresh).
+
+The Hebrew source line (right-to-left, inside straight double quotes, one line, 43 characters total):
+"סאות' ריבר רואד 3419, דירה 73, סנט ג'ורג'"
+Word by word, right to left: סאות'   ריבר   רואד   3419,   דירה   73,   סנט   ג'ורג'
+Note ריבר is spelled ר-י-ב-ר (four letters). Note both סאות' and ג'ורג' carry a geresh.
+
+The English translation line (one line, inside straight double quotes):
+"3419 South River Road, Apartment 73, St. George"
+
+The small grey transliteration line under the Hebrew (inside straight double quotes):
+"sauth river ro'ad 3419, dira 73, sant jorg"
+
+The character counter under the Hebrew box: 43
+
+Page labels: Text   Images   Documents   Websites
+Hebrew - Detected   English   Spanish   French
+English   Spanish   Arabic
+History   Saved
+Send feedback  (cut off by the right edge exactly as in the input)
+
+Top broadcast bar: SHOWS   SUBSCRIBE   NEWS   SHOP   LIVE
+Badge: LIVE+   JakeGTV
+Lower third: MAKE YOUR VOICE BE HEARD, DIAL 507-698-7839
+Lower third: CALL NOW  507-698-STEW
+Logo caption: STEW PETERS SHOW
+
+If you are unsure what a blurry mark is, keep its shape as it is and sharpen it. Never replace it with something you invented.
