@@ -77,11 +77,10 @@ To require the Federal Bureau of Investigation, all relevant federal and state l
 
 **Financial Connections:**
    1. Wire transfers to Tyler Robinson (alleged $50K through DSA-linked accounts)
-   2. Payments to [Lance Twiggs](/People/lance-twiggs) (alleged $20K)
-   3. Financial connections between distraction people and any intelligence service or handler
+   2. Financial connections between distraction people and any intelligence service or handler
 
 **Psychological Operations:**
-   1. Any psychological operations or manipulation of Tyler Robinson or Lance Twiggs
+   1. Any psychological operations or manipulation of Tyler Robinson
    2. Communications on Discord, Steam, in-game voice chat that may show handler activity
    3. Electronic equipment installed at or directed at Lance Twiggs' residence
 

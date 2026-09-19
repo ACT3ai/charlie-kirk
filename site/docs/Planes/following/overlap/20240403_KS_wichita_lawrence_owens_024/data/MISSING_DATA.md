@@ -61,7 +61,7 @@ marginTop:'0.5rem'}}>
 
 * [The censorship record](/Censorship/overview)
 * [Cover-up of foreign involvement](/Israel_Main_Suspect/coverup-foreign-involvement)
-* [Suspicious, sorted by actor](/Suspicious/overview)
+* [Open questions, sorted by actor](/Suspicious/overview)
 
 </div>
 </div>

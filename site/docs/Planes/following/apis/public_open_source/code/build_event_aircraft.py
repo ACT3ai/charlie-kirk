@@ -14,7 +14,7 @@ THE LADD TRAP, and why this script exists in this shape.
 flags.  12,889 of its ~16,000 rows carry only `dbflag:LADD` — the FAA's
 Limiting Aircraft Data Displayed privacy program.  At Provo that is mostly
 flight-school Cessna 172s.  Printing the raw "notable" count next to a Kirk
-event would tell a reader that 50 suspicious aircraft were present when 45 of
+event would tell a reader that 50 notable aircraft were present when 45 of
 them are trainers whose owner filed a routine privacy form.
 
 So LADD is broken out, labelled ordinary, and EXCLUDED from the named table.
@@ -161,7 +161,7 @@ def build(stem, ev, circle_rows, ground_rows, control_by_date):
         "Military": "A military serial or a military database flag. Mostly routine — see the note below.",
         "Government operator": "The registered operator string names a government body.",
         "Unregistered / non-ICAO address": "No registration resolved, or a transponder address outside the ICAO block.",
-        "FAA privacy program (LADD)": "**Ordinary and not suspicious.** Thousands of US owners file for this; at a training field it is mostly Cessna 172s.",
+        "FAA privacy program (LADD)": "**Ordinary, and not a finding.** Thousands of US owners file for this; at a training field it is mostly Cessna 172s.",
         "Other database flag": "Another community-database flag.",
         "Already tracked by this investigation": "An aircraft already on this site's list, found here by geography rather than by name.",
     }
@@ -177,7 +177,7 @@ def build(stem, ev, circle_rows, ground_rows, control_by_date):
         L.append(
             f"**{total_ladd} of the flagged aircraft here carry nothing but the "
             f"FAA privacy flag.** They are excluded from the named table below. "
-            f"Counting them as suspicious is the single easiest way to inflate a "
+            f"Counting them as notable is the single easiest way to inflate a "
             f"number on this subject, and this site will not do it."
         )
         L.append("")

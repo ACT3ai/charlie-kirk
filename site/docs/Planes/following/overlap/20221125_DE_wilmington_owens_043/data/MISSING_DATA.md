@@ -62,7 +62,7 @@ marginTop:'0.5rem'}}>
 
 * [Censorship of the investigation](/Censorship/overview)
 * [What AI assistants say about the overlaps](/Planes/following/AI_Assistant_Answers)
-* [Suspicious conduct, sorted by actor](/Suspicious/overview)
+* [Open questions, sorted by actor](/Suspicious/overview)
 
 </div>
 </div>

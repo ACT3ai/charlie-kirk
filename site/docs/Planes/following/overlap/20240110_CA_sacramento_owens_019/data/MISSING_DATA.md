@@ -62,7 +62,7 @@ marginTop:'0.5rem'}}>
 
 * [Foreign intelligence involvement claims](/Theories/Foreign_Intelligence_Claims)
 * [Technology and surveillance](/technology_surveillance/overview)
-* [Suspicious, sorted by actor](/Suspicious/overview)
+* [Open questions, sorted by actor](/Suspicious/overview)
 
 </div>
 </div>
