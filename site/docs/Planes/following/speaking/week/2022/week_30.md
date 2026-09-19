@@ -525,7 +525,7 @@ Posts are listed chronologically by timestamp (newest to oldest within the windo
   Engagement: Likes=2, Reposts=0, Quotes=0, Replies=0  
   Media: Video (URL: https://video.twimg.com/tweet_video/FYx5GMZXEAIfvR3.mp4, duration: 0 ms)  
   Content: 😂History has proven the exact opposite. His lawsuit will be laughed out of court, just like the rest of his frivolous suits.  
-  What a thin skinned man baby snowflake.😂❄️
+  What a thin skinned man baby snowflake.😂❄
 
 - **[post:5]** ID: 1552795470128451585  
   Author: carmino Gazerro (@CarminoGazerro)  

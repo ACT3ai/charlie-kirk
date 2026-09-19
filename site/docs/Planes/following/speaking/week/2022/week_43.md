@@ -483,7 +483,7 @@ All posts are included below in full (as retrieved; timestamps are GMT). Duplica
 - **[post:12]** ID: 1585749742423678977  
   Author: Michaela - @1776MichaelaM  
   Timestamp: Thu, 27 Oct 2022 21:46:15 GMT  
-  Content: What’s spookier than socialism?! Not being on campus with @NikkelleHudak! From witch’s brew to breaking TVs, there’s simply never a dull moment with Nikkelle and @AndrewSypher as we work with our @TPUSA leaders on campus. 🧙‍♀️⚡️💜  
+  Content: What’s spookier than socialism?! Not being on campus with @NikkelleHudak! From witch’s brew to breaking TVs, there’s simply never a dull moment with Nikkelle and @AndrewSypher as we work with our @TPUSA leaders on campus. 🧙‍♀⚡💜  
   (Media: 4 items including photos and video)
 
 - **[post:13]** ID: 1585743958042288128  

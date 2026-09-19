@@ -549,7 +549,7 @@ These posts discuss the **Young Women’s Leadership Summit 2025 (YWLS 2025)** b
   **Engagement**: Likes=10, Reposts=1, Quotes=0, Replies=4, Bookmarks=1, Views=504
 
 - **[post:40]** (2025-06-16 22:15:47 GMT)  
-  **Author**: Teresa Foley☘️US NAVY VETERAN⚓️ (@tresfol7)  
+  **Author**: Teresa Foley☘US NAVY VETERAN⚓ (@tresfol7)  
   **Content**: YWLS 2025 day 3 is LIVE! Hear from Maureen Bannon and More  
   https://gettr.com/post/p3m6b71ff92  
   **Engagement**: Likes=0, Reposts=0, Quotes=0, Replies=0, Bookmarks=0, Views=14
@@ -572,7 +572,7 @@ These posts discuss the **Young Women’s Leadership Summit 2025 (YWLS 2025)** b
   **Author**: Erika Donalds (@ErikaDonalds)  
   **Content**: What a privilege to speak at @TPUSA’s Young Women’s Leadership Summit! 🇺🇸  
   I told the next generation of bold, conservative women:  
-  🛡️ The fight for faith, family & education freedom is ours to win.  
+  🛡 The fight for faith, family & education freedom is ours to win.  
   🔥 You are not too young or too late.  
   📖 “God has placed you here for a purpose.”  
   This movement needs fearless women—and I saw thousands of them in that room. 💪🏼 #YWLS2025  

@@ -500,7 +500,7 @@ Search twitter and x.com posts for where Charlie Kirk or TPUSA has public speaki
 - [post:14] nikki (@pickynikki33) - Sat, 21 Sep 2024 20:20:24 GMT  
   This is what we need on every campus. I love that Charlie Kirk does this! Thank you TPUSA
 
-- [post:15] Tommy Dingo ☀️ (@TommyDingo) - Sat, 21 Sep 2024 19:29:02 GMT  
+- [post:15] Tommy Dingo ☀ (@TommyDingo) - Sat, 21 Sep 2024 19:29:02 GMT  
   Dude, the Trump campaign is outsourcing their GOTV operations to TPUSA.  
   (IE, Charlie Kirk buys another house and GOP gets nothing)  
   You think they’re going to get smart and use the tools of tomorrow to win elections?  
@@ -587,7 +587,7 @@ Search twitter and x.com posts for where Charlie Kirk or TPUSA has public speaki
   (Media: video)
 
 - [post:24] Cornelius (@corneliusjapan) - Tue, 17 Sep 2024 05:33:10 GMT  
-  ⚡️🇺🇸⚡️Soon!!  
+  ⚡🇺🇸⚡Soon!!  
   SEPT. 21ST (SAT)MUSIC BOX -SAN DIEGO  
   SEPT. 22ND (SUN)PAPPY + HARIETT`S - PIONEERTOWN  
   SEPT. 24TH (TUE) THE FONDA THEATRE - LOS ANGELS  
@@ -641,7 +641,7 @@ Search twitter and x.com posts for where Charlie Kirk or TPUSA has public speaki
 
 - [post:45] Honee (@HBFNBR) - Sat, 21 Sep 2024 20:56:15 GMT (duplicate Charlie Kirk events post)
 
-- [post:47] Tommy Dingo ☀️ (@TommyDingo) - Sat, 21 Sep 2024 19:29:02 GMT (duplicate GOTV/TPUSA post)
+- [post:47] Tommy Dingo ☀ (@TommyDingo) - Sat, 21 Sep 2024 19:29:02 GMT (duplicate GOTV/TPUSA post)
 
 - [post:48] It's Me, it's me, it's T.P.G. (@tpg031122) - Sat, 21 Sep 2024 18:40:28 GMT (duplicate TPUSA ground game post)
 

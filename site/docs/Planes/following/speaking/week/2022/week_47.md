@@ -414,7 +414,7 @@ Search twitter and x.com posts for where Charlie Kirk or TPUSA has public speaki
   *Explicitly states Charlie Kirk speaking/appearing at University of New Mexico on November 30, 2022.*
 
 - **Post ID: 1595287327919611910**  
-  Author: NewMexicanCousin🌶️ (@DividedRy)  
+  Author: NewMexicanCousin🌶 (@DividedRy)  
   Timestamp: Wed, 23 Nov 2022 05:25:12 GMT  
   Content: "This is heartbreaking 💔. The only people that should feel unsafe at UNM are cosplay Nazis @charliekirk11 and @TomiLahren."  
   (In reply to prior context about UNM event)  

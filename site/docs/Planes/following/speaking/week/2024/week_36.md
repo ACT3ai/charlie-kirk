@@ -413,7 +413,7 @@ Posts are ordered by approximate recency within the tool results (newest first w
   Content: Tucker Carlson hosted a Nazi apologist and is now a confirmed speaker for Charlie Kirk’s December event.
 
 - **[post:8]** ID: 1832497221708759373  
-  Author: avis prede 🌻🕊️ (@iheartospreys)  
+  Author: avis prede 🌻🕊 (@iheartospreys)  
   Timestamp: Sat, 07 Sep 2024 19:12:38 GMT  
   Engagement: Likes=0, Reposts=1, Quotes=0, Replies=1, Bookmarks=0, Views=28  
   Content: Tell the Monroeville (PA) Convention Center: White Christian nationalism is bad for business - don't host "prophet" Lance Wallnau and TPUSA's Charlie Kirk's "Courage Tour"   👎🏼  

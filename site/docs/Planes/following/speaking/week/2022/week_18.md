@@ -345,7 +345,7 @@ Search twitter and x.com posts for where Charlie Kirk or TPUSA has public speaki
 - **[post:7]** ID: 1522324172277485569  
   Author: Christine Duerr - @ChristineDuerr4  
   Timestamp: Thu, 05 May 2022 21:15:40 GMT  
-  Content: Watch Charlie Kirk at our FIRST EVER EVENT  "RISE UP GENERATION" https://t.co/fLQcYVVxzx via @YouTube Groomers, Don’t Mess with our Children!! You will never win Mommy’s 💕 The only good thing to come out of lockdowns Covid BS, Electile Disfunction is Parents waking up! 🙏🇺🇸❤️🇺🇸  
+  Content: Watch Charlie Kirk at our FIRST EVER EVENT  "RISE UP GENERATION" https://t.co/fLQcYVVxzx via @YouTube Groomers, Don’t Mess with our Children!! You will never win Mommy’s 💕 The only good thing to come out of lockdowns Covid BS, Electile Disfunction is Parents waking up! 🙏🇺🇸❤🇺🇸  
   Engagement: Likes=0, Reposts=0, Quotes=0, Replies=0, Bookmarks=0, Views=N/A
 
 - **[post:8]** ID: 1522322456874303489  
@@ -379,7 +379,7 @@ Search twitter and x.com posts for where Charlie Kirk or TPUSA has public speaki
 - **[post:12]** ID: 1522242612681269248  
   Author: Charlie Kirk - @charliekirk11  
   Timestamp: Thu, 05 May 2022 15:51:35 GMT  
-  Content: Tickets going fast for #YWLS2022 in Dallas, Texas! Reserve your spot NOW for your chance to meet the great @kayleighmcenany this June ⬇️⬇️⬇️  
+  Content: Tickets going fast for #YWLS2022 in Dallas, Texas! Reserve your spot NOW for your chance to meet the great @kayleighmcenany this June ⬇⬇⬇  
   Engagement: Likes=329, Reposts=82, Quotes=1, Replies=32, Bookmarks=1, Views=N/A
 
 - **[post:13]** ID: 1521159490673983488  
@@ -396,7 +396,7 @@ Search twitter and x.com posts for where Charlie Kirk or TPUSA has public speaki
   Engagement: Likes=142, Reposts=41, Quotes=1, Replies=23, Bookmarks=1, Views=N/A
 
 - **[post:15]** ID: 1521788362415353856  
-  Author: Tiwa Savage ⚔️ - @TiwaSavage  
+  Author: Tiwa Savage ⚔ - @TiwaSavage  
   Timestamp: Wed, 04 May 2022 09:46:33 GMT  
   Content: May 15 - New York 🇺🇸 Warsaw 🔗 https://t.co/4sdhzXsYHw May 20 - Edmonton 🇨🇦Union Hall 🔗 https://t.co/uZmwmCOd1p May 22 - Vancouver 🇨🇦Commodore 🔗https://t.co/Xz8SC1eGcQ  
   Engagement: Likes=277, Reposts=70, Quotes=3, Replies=34, Bookmarks=0, Views=N/A

@@ -480,7 +480,7 @@ No results were found for posts strictly within 2023-09-03 to 2023-09-09 that de
 - **[post:14] and [post:47]** (Quote/repost of the above)  
   **Author:** Turning Point USA (@TPUSA)  
   **Timestamp:** Fri, 08 Sep 2023 16:32:26 GMT  
-  **Content:** THE LIVE FREE TOUR IS BACK❗️  
+  **Content:** THE LIVE FREE TOUR IS BACK❗  
   *(Direct quote of Charlie Kirk's post above, confirming the tour/events.)*
 
 - **[post:5] and [post:10]**  

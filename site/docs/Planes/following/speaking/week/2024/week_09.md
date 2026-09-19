@@ -404,7 +404,7 @@ No posts were found announcing or describing new Charlie Kirk personal speaking 
   Content: 🚨🚨🚨  
   @charliekirk11 is coming to University of Washington!  
   Join amazing student patriots as we host the founder of the largest conservative organization Charlie Kirk, May 7th! 🇺🇸  
-  Grab your free tickets here! 🎟️  
+  Grab your free tickets here! 🎟  
   https://t.co/7SeXsaQHmu  
   @TPUSA @tpusastudents   
   #UW #UniversityofWashington #CharlieKirk #LiveFree #Conservatives   

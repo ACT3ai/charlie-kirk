@@ -623,7 +623,7 @@ Search twitter and x.com posts for where Charlie Kirk or TPUSA has public speaki
   Content: Mcafee Here’s one from Qtah17 https://t.co/rki57uvVXg 👆👆👆After I had a bad gout attack during a TPUSA event in Tampa Bay recently, I spent time researching Boron when someone suggested it to me.
 
 - **[post:11]** ID: 1650633977609199616  
-  Author: Lord Captain Evie🏳️‍⚧️🔆(warrant bearer) (@PerpetuallyEvie)  
+  Author: Lord Captain Evie🏳‍⚧🔆(warrant bearer) (@PerpetuallyEvie)  
   Timestamp: Mon, 24 Apr 2023 22:53:02 GMT  
   Content: This helped nothing and no one but I remember during my semester at college before I left due to depression we had a tpusa group on campus and they'd put stickers up and I'd always tear them down when I saw them.
 

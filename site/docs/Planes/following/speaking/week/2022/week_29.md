@@ -649,7 +649,7 @@ Search twitter and x.com posts for where Charlie Kirk or TPUSA has public speaki
 
 - **[post:27]** ID: 1550169712948137984 | Author: @LizWillis_ | Timestamp: Thu, 21 Jul 2022 17:23:54 GMT | Engagement: Likes=60, Reposts=10, Quotes=0, Replies=5, Bookmarks=0, Views=N/A  
   Content: Headed to Tampa for @TPUSA Student Action Summit! Can’t wait to see everyone there!   
-  #SAS2022 🇺🇸 ☀️
+  #SAS2022 🇺🇸 ☀
 
 - **[post:28]** ID: 1550144036576657408 | Author: @fineout | Timestamp: Thu, 21 Jul 2022 15:41:53 GMT | Engagement: Likes=2, Reposts=1, Quotes=0, Replies=0, Bookmarks=0, Views=N/A  
   Content: Lots of Republican action happening over the next few days in Florida....  
@@ -694,7 +694,7 @@ Search twitter and x.com posts for where Charlie Kirk or TPUSA has public speaki
 
 - **[post:39]** ID: 1549891908029202439 | Author: @TPUSA | Timestamp: Wed, 20 Jul 2022 23:00:01 GMT | Engagement: Likes=82, Reposts=39, Quotes=2, Replies=5, Bookmarks=1, Views=N/A | Media: Yes (1 item) - video URL: https://video.twimg.com/amplify_video/1549843967260299264/vid/1280x720/H9GwJMQocKAzUM9S.mp4?tag=14 (duration: 55680 ms)  
   Content: ANTIFA TARGETS WHITE 10 YEAR OLDS: Today on Frontlines, special guest Blaze TV host @ElijahSchaffer will be joining Drew covering a Portland ANTIFA KIDS Summer Camp   
-  Tune into this full episode ⬇️  
+  Tune into this full episode ⬇  
   https://t.co/VwCvgL3R7U
 
 - **[post:40]** ID: 1549889967781920768 | Author: @TPUSA | Timestamp: Wed, 20 Jul 2022 22:52:18 GMT | Engagement: Likes=2, Reposts=0, Quotes=0, Replies=0, Bookmarks=0, Views=N/A  
@@ -703,7 +703,7 @@ Search twitter and x.com posts for where Charlie Kirk or TPUSA has public speaki
 - **[post:41]** ID: 1549882498636603393 | Author: @TPUSA | Timestamp: Wed, 20 Jul 2022 22:22:37 GMT | Engagement: Likes=69, Reposts=13, Quotes=0, Replies=1, Bookmarks=0, Views=N/A | Media: Yes (1 item) - video URL: https://video.twimg.com/ext_tw_video/1549882375512793089/pu/vid/1280x720/daw3OScLAfdZN8Bg.mp4?tag=12 (duration: 117784 ms)  
   Content: The left thought we would remain silent—they were wrong.  
   We are proud to stand alongside the Scottsdale Moms RISING UP against the Scottsdale Unified School District for spying on parents and children.  
-  Watch more ➡️ https://t.co/1MiCJ0xjgm
+  Watch more ➡ https://t.co/1MiCJ0xjgm
 
 - **[post:42]** ID: 1549860914672721920 | Author: @TPUSA | Timestamp: Wed, 20 Jul 2022 20:56:51 GMT | Engagement: Likes=4, Reposts=0, Quotes=0, Replies=0, Bookmarks=0, Views=N/A  
   Content: @STEPHMHAMILL SEE YOU SOON🎉
@@ -767,7 +767,7 @@ Search twitter and x.com posts for where Charlie Kirk or TPUSA has public speaki
 
 - **[post:59]** ID: 1550169712948137984 | Author: @LizWillis_ | Timestamp: Thu, 21 Jul 2022 17:23:54 GMT | Engagement: Likes=60, Reposts=10, Quotes=0, Replies=5, Bookmarks=0, Views=N/A  
   Content: Headed to Tampa for @TPUSA Student Action Summit! Can’t wait to see everyone there!   
-  #SAS2022 🇺🇸 ☀️
+  #SAS2022 🇺🇸 ☀
 
 This exhausts all matching posts returned by the tool calls within the specified date range. The primary event referenced across multiple posts is the TPUSA Student Action Summit (#SAS2022 or SAS 2022) in Tampa, Florida, occurring that weekend (with attendees arriving/traveling on July 21, 2022, and references to Trump speaking there). No additional standalone Charlie Kirk solo speaking events were found in the results for the exact week.
 ```

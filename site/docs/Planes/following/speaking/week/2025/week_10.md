@@ -436,7 +436,7 @@ Search twitter and x.com posts for where Charlie Kirk or TPUSA has public speaki
   **Timestamp:** Mon, 10 Mar 2025 20:11:22 GMT  
   **Content:** Don Jr. & Turning Point's Charlie Kirk are holding an event in Oconomowoc next Monday  
   Here's our story on Turning Point's influence in WI: [link].  
-  **Quoted post:** Megan Wangerin (@MeganWangerin) – “🚨Calling all PATRIOTS in Wisconsin🚨 Here is our chance to take back the WI Supreme Court! 🇺🇸 ➡️ ⚖️ @charliekirk11 and @DonaldJTrumpJr are coming to Oconomowoc this Monday! Don’t wait ‼️ Sign up today👇 [link]” (with photo).  
+  **Quoted post:** Megan Wangerin (@MeganWangerin) – “🚨Calling all PATRIOTS in Wisconsin🚨 Here is our chance to take back the WI Supreme Court! 🇺🇸 ➡ ⚖ @charliekirk11 and @DonaldJTrumpJr are coming to Oconomowoc this Monday! Don’t wait ‼ Sign up today👇 [link]” (with photo).  
   **Engagement:** Likes=0, Reposts=1, Quotes=0, Replies=0, Bookmarks=0, Views=1179.  
   **Relevance:** Confirms Oconomowoc, WI event with Charlie Kirk (and Don Jr.).
 

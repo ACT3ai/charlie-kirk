@@ -376,7 +376,7 @@ Search twitter and x.com posts for where Charlie Kirk or TPUSA has public speaki
 
 **Posts from @TPUSA (Turning Point USA):**
 - [post:30] ID: 1734712136017084851 (Tue, 12 Dec 2023 23:09:37 GMT):  
-  "#AmFest2023 starts THIS SATURDAY! Which speakers are YOU most excited to hear from? ⬇️ Head to https://www.amfest.com/ to register for the nation’s LARGEST celebration of freedom 🇺🇸"  
+  "#AmFest2023 starts THIS SATURDAY! Which speakers are YOU most excited to hear from? ⬇ Head to https://www.amfest.com/ to register for the nation’s LARGEST celebration of freedom 🇺🇸"  
   (Media: Photo.)
 
 **Posts from @TPAction (Turning Point Action):**

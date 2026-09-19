@@ -529,7 +529,7 @@ Here is the complete, unfiltered list of all matching or contextually related po
   (No relation to query.)
 
 - **Post ID: 1819808080009277840** (Quote of unrelated post)  
-  Author: God is King ✝️ • Stand for truth • 🙏 (@hewho_steven)  
+  Author: God is King ✝ • Stand for truth • 🙏 (@hewho_steven)  
   Timestamp: Sat, 03 Aug 2024 18:50:31 GMT  
   Engagement: Likes=0, Reposts=0, Quotes=0, Replies=0, Bookmarks=0, Views=19  
   Content: Too late as #arrestkeirstarmer has f**ked that up and WEF will be drinking champagne 🤬🤬🤬  
@@ -540,7 +540,7 @@ Here is the complete, unfiltered list of all matching or contextually related po
   Timestamp: Tue, 30 Jul 2024 21:55:15 GMT  
   Engagement: Likes=239, Reposts=38, Quotes=0, Replies=6, Bookmarks=2, Views=17657  
   Content: I'll be joining Tucker Carlson on his first-ever nationwide live tour in Milwaukee, WI at the Fiserv Forum on September 16! @tuckercarlson and I will discuss the latest developments in the heart of election season.  
-  🎟️ Grab your tickets while they last at https://t.co/ij0KrBzLft. See you there!  
+  🎟 Grab your tickets while they last at https://t.co/ij0KrBzLft. See you there!  
   ✨ Interested in meeting us before the show? Purchase your VIP tickets at  
   (Unrelated tour; no Charlie Kirk/TPUSA.)
 
@@ -599,7 +599,7 @@ Here is the complete, unfiltered list of all matching or contextually related po
   Media: 4 photos  
   Content: Thank you to Niagara Falls and to Fort Lauderdale, Florida for an amazing weekend filled with laughter and good vibes. I’m loving you. A special shout out to my opener @yamaneika! A little photo collection showing how a tour weekend starts and how it ends. I also finished my new book while sipping a margarita at a buffet. Three of my true passions colliding. Coming out next year.   
   UPCOMING SHOWS!   
-  TICKETS AT https://t.co/TROTaxl5dj FOR ⬇️  
+  TICKETS AT https://t.co/TROTaxl5dj FOR ⬇  
   AUG 1 AUBURN, WA  
   AUG 2 SANTA ROSA, CA  
   AUG 17 SANTA BARBARA BOWL, CA  

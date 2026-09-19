@@ -446,7 +446,7 @@ Search twitter and x.com posts for where Charlie Kirk or TPUSA has public speaki
 - **[post:39]** (Same as post:23 above – duplicate from additional search.)
 
 - **[post:13]** (TPUSA AT FIU @TPUSA_FIU, Mon, 31 Mar 2025 23:18:09 GMT)  
-  Content: "We excited to host Valentina at our Event on April 15 ‼️DALE🔥  
+  Content: "We excited to host Valentina at our Event on April 15 ‼DALE🔥  
   @ValentinaForUSA"  
   (Quotes a post by Valentina Gomez about speaking at FIU on April 15.)  
   Engagement: Likes=2, Reposts=0, Quotes=0, Replies=0, Bookmarks=0, Views=51  
@@ -497,7 +497,7 @@ Search twitter and x.com posts for where Charlie Kirk or TPUSA has public speaki
   (Quotes a post by Montana Tucker; includes 1 video)  
   Engagement: Likes=0, Reposts=0, Quotes=0, Replies=0, Bookmarks=0, Views=38
 
-- **[post:17]** (I_know_your_Passwords 🛡️🦅🔫 🇺🇸 @SunSunshine4u, Mon, 31 Mar 2025 21:40:43 GMT)  
+- **[post:17]** (I_know_your_Passwords 🛡🦅🔫 🇺🇸 @SunSunshine4u, Mon, 31 Mar 2025 21:40:43 GMT)  
   Content: "@realDonaldTrump @JDVance @SpeakerJohnson @charliekirk11 @benshapiro @marklevinshow @RepMTG  https://t.co/7n5avkhMW3  
   'This event was a resounding success and served as a powerful reminder of how the OBiden administration’s open-border policies were strategically designed to expand their voter base in the United States.'"  
   (Quotes a post by @america; includes 1 video)  

@@ -556,7 +556,7 @@ Search twitter and x.com posts for where Charlie Kirk or TPUSA has public speaki
 - **Post ID: 1723081092071145942**  
   Author: Matthew Boedy (@MatthewBoedy)  
   Timestamp: Fri, 10 Nov 2023 20:52:00 GMT  
-  Content: "Charlie Kirk versus Charlie Kirk 🤔🤷🏽‍♂️ Picture 1 is Kirk at a church recently: My political opponents are “evil.” Picture 2 is Kirk on campus recently (from his Instagram): Civil war starts when we think “the other side is so evil.”"  
+  Content: "Charlie Kirk versus Charlie Kirk 🤔🤷🏽‍♂ Picture 1 is Kirk at a church recently: My political opponents are “evil.” Picture 2 is Kirk on campus recently (from his Instagram): Civil war starts when we think “the other side is so evil.”"  
   Engagement: Likes=12, Reposts=10, Quotes=2, Replies=4, Bookmarks=1, Views=1914  
   Media: 2 photos (URLs: https://pbs.twimg.com/media/F-mdHvYWAAA2cs_.jpg and https://pbs.twimg.com/media/F-mdHvZX0AA2qeT.jpg)
 

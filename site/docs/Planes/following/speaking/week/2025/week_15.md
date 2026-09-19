@@ -505,7 +505,7 @@ Search twitter and x.com posts for where Charlie Kirk or TPUSA has public speaki
   **Engagement:** Likes=61298, Reposts=8826, Quotes=256, Replies=901, Bookmarks=727, Views=766114  
 
   **Thread replies (selected relevant):**  
-  - **Post ID: 1911917376385519879** (Author: Tom @sweetNsour2341, Timestamp: Mon, 14 Apr 2025 22:59:58 GMT): 🔥 Massive turnout at Purdue for Charlie Kirk’s American Comeback Tour! Hundreds rally for conservative values at a liberal stronghold. Is this a sign Gen Z is shifting right? Drop your take! 🗣️ #CharlieKirkAtPurdue  
+  - **Post ID: 1911917376385519879** (Author: Tom @sweetNsour2341, Timestamp: Mon, 14 Apr 2025 22:59:58 GMT): 🔥 Massive turnout at Purdue for Charlie Kirk’s American Comeback Tour! Hundreds rally for conservative values at a liberal stronghold. Is this a sign Gen Z is shifting right? Drop your take! 🗣 #CharlieKirkAtPurdue  
   - **Post ID: 1911912516223115392** (Author: GinnyM @PatriotXV11, Timestamp: Mon, 14 Apr 2025 22:40:40 GMT): 🚨🚨🚨 Look at Charlie Kirk’s turnout at Purdue! I do believe a change is overdue.  
   - **Post ID: 1911919883689898135** (Author: Lisa Moser @Boilermaker86, Timestamp: Mon, 14 Apr 2025 23:09:56 GMT): No it’s not. Purdue is very conservative. So is the surrounding area.  
   - **Post ID: 1911919161258762458** (Author: Ftworthfan @ftworthfan, Timestamp: Mon, 14 Apr 2025 23:07:04 GMT): Go Purdue!  

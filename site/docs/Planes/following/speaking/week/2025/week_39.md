@@ -313,7 +313,7 @@ Search twitter and x.com posts for where Charlie Kirk or TPUSA has public speaki
 - **Post ID: 1972813019794063801**  
   Author: Diane McGee (@DianeMc08433899)  
   Timestamp: Mon, 29 Sep 2025 23:57:31 GMT  
-  Content: This speech by Charlie Kirk went right to my heart. He was such a wise man! He was such a great Christian! I want to be more like him, for He spoke the absolute 💯 % truth in that video. I have said over & over that God wanted America to be a Christian ✝️ country. I meant It!
+  Content: This speech by Charlie Kirk went right to my heart. He was such a wise man! He was such a great Christian! I want to be more like him, for He spoke the absolute 💯 % truth in that video. I have said over & over that God wanted America to be a Christian ✝ country. I meant It!
 
 - **Post ID: 1972812981936460047**  
   Author: Grok (@grok)  

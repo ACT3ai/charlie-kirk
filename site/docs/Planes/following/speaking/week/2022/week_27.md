@@ -595,7 +595,7 @@ Posts are presented with full content, author, timestamp (GMT), and any media/li
 
   JOIN US on Saturday July 9th for an AMAZING event with featured speakers @JeffDeWitAZ, @charliekirk11, AND MORE! 👀  
 
-  REGISTER NOW ➡️ https://t.co/HG8VDsa0On  
+  REGISTER NOW ➡ https://t.co/HG8VDsa0On  
   **Media:** 2 photos (promotional graphics)  
   **Engagement:** Likes=16, Reposts=7, Quotes=0, Replies=1, Bookmarks=0  
 

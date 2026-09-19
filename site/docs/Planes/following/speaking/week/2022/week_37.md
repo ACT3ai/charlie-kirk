@@ -688,7 +688,7 @@ All relevant posts mentioning events are listed below **in full, unsummarized**,
 - **[post:27]** (duplicate of post:3) – Same as above.
 
 - **[post:28]** ID: 1570165823347773443 (reply in thread)  
-  Author: Just Meg 🇺🇸🙏🏻❤️ (@Meggiebee59)  
+  Author: Just Meg 🇺🇸🙏🏻❤ (@Meggiebee59)  
   Timestamp: Wed, 14 Sep 2022 21:41:19 GMT  
   Likes: 2, Reposts: 0, Quotes: 0, Replies: 1  
   Content: “Good grief man. You will be arrested for speaking truth!!! 😂😂😂🤭🤭🤭😎😎😎”  
@@ -781,7 +781,7 @@ All relevant posts mentioning events are listed below **in full, unsummarized**,
 
 ### Posts from @TPUSA (all within date range; none mention Charlie Kirk speaking events):
 - **[post:55]** ID: 1570517942374219776 – Thu, 15 Sep 2022 21:00:30 GMT – Video on Israel (@theisabelb).
-- **[post:56]** ID: 1570487656773193735 – Thu, 15 Sep 2022 19:00:10 GMT – “Full article below⬇️”.
+- **[post:56]** ID: 1570487656773193735 – Thu, 15 Sep 2022 19:00:10 GMT – “Full article below⬇”.
 - **[post:57]** ID: 1570487653304532995 – Thu, 15 Sep 2022 19:00:09 GMT – Martha’s Vineyard diversity post (photo).
 - **[post:58]** ID: 1570459894654062592 – Thu, 15 Sep 2022 17:09:51 GMT – Castle Rock chapter.
 - **[post:59]** ID: 1570458854894469122 – Thu, 15 Sep 2022 17:05:43 GMT – Constitution Week celebration.

@@ -555,7 +555,7 @@ Search twitter and x.com posts for where Charlie Kirk or TPUSA has public speaki
 - **[post:44]** ID: 1916899336501268906  
   Author: @WyoPulse (Wyoming Pulse)  
   Timestamp: Mon, 28 Apr 2025 16:56:30 GMT  
-  Content: 🌤️ Good morning, Wyoming! Today’s headlines: Wild weather swings, backwards-driving truck, Charlie Kirk draws crowd at UW + giant orca food truck ⏰ Wyoming’s 60-secondish news roundup: https://t.co/HixQAofJEG Photo by: Gintare K. #Wyoming #Wyo #WY #ThatWy #ThatsWyo  
+  Content: 🌤 Good morning, Wyoming! Today’s headlines: Wild weather swings, backwards-driving truck, Charlie Kirk draws crowd at UW + giant orca food truck ⏰ Wyoming’s 60-secondish news roundup: https://t.co/HixQAofJEG Photo by: Gintare K. #Wyoming #Wyo #WY #ThatWy #ThatsWyo  
   Media: Photo  
   Engagement: Likes=1, Reposts=0, Quotes=0, Replies=0, Bookmarks=0, Views=37
 
@@ -592,7 +592,7 @@ Search twitter and x.com posts for where Charlie Kirk or TPUSA has public speaki
 - **[post:2]** ID: 1916996038885331116  
   Author: @tpusa_sru (TPUSA_SRU)  
   Timestamp: Mon, 28 Apr 2025 23:20:46 GMT  
-  Content: T-Minus 2 days until the panel!! Please remember there was a‼️ROOM CHANGE‼️ Our panel event is now in the Campus Success Center- Second Floor MPR Room!! Tickets still available!! Link in bio!!  
+  Content: T-Minus 2 days until the panel!! Please remember there was a‼ROOM CHANGE‼ Our panel event is now in the Campus Success Center- Second Floor MPR Room!! Tickets still available!! Link in bio!!  
   Media: Photo  
   Engagement: Likes=7, Reposts=2, Quotes=0, Replies=1, Bookmarks=0, Views=382  
   *(Slippery Rock University TPUSA chapter panel event; room change noted, ~April 30 timing implied by post date.)*
@@ -615,7 +615,7 @@ Search twitter and x.com posts for where Charlie Kirk or TPUSA has public speaki
 - **[post:17]** ID: 1916911124680761752  
   Author: @madi_smith1 (Madi Smith)  
   Timestamp: Mon, 28 Apr 2025 17:43:21 GMT  
-  Content: ‼️TONIGHT ‼️ Charlie Kirk is hosting the Secretary of the Treasury Scott Bessent in this @tpusastudents exclusive virtual event!! 🇺🇸 You won’t want to miss this 🫵 Sign up now: https://t.co/Xhth2ccXcp  
+  Content: ‼TONIGHT ‼ Charlie Kirk is hosting the Secretary of the Treasury Scott Bessent in this @tpusastudents exclusive virtual event!! 🇺🇸 You won’t want to miss this 🫵 Sign up now: https://t.co/Xhth2ccXcp  
   Media: Photo  
   Engagement: Likes=0, Reposts=0, Quotes=0, Replies=0, Bookmarks=0, Views=107  
   *(Virtual TPUSA Students event with Charlie Kirk hosting Scott Bessent on ~April 28.)*

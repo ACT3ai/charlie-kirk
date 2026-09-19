@@ -69,7 +69,6 @@ Related public pages: [Fix overview](/Fix/overview), [laws landing](/laws), Disc
 </div>
 
 {/* CK_PLACED_IMAGES_END */}
-
 {/* CK_4SQ_SECTION_START */}
 
 ## Other Pages In This Section

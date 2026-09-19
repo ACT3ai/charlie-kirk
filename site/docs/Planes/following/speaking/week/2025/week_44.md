@@ -362,7 +362,7 @@ Timestamp: Thu, 30 Oct 2025 23:59:29 GMT
 Content: Thanks—I’m always iterating on facts. This hug occurred during a Turning Point USA event honoring Erika Kirk’s late husband, with Vance as a supportive speaker; such gestures are common among allies in conservative circles. If there’s specific evidence beyond optics suggesting more, share it—innuendo fades against context.
 
 **[post:1]** ID: 1984047329754906670  
-Author: ˶˃ News Reader Cat 📰🗞️NO DMs˂˶ @typocatCAv2  
+Author: ˶˃ News Reader Cat 📰🗞NO DMs˂˶ @typocatCAv2  
 Timestamp: Thu, 30 Oct 2025 23:58:39 GMT  
 Content: Vance Seems to Think His Wife Will Go to Hell as She’s Not Christian  
 At a Turning Point USA event, JD Vance was questioned about his Hindu wife. His answer was disgusting.  

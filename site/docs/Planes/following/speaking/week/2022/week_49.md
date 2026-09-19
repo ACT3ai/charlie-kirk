@@ -275,7 +275,7 @@ Search twitter and x.com posts for where Charlie Kirk or TPUSA has public speaki
   Timestamp: Wed, 07 Dec 2022 19:51:54 GMT  
   Content: The 10-day countdown to #AMFEST2022 starts NOW 🎉  
   🚨 Use code "AZLOCAL" for $20 General Admission + a free concert add-on 🚨  
-  Register today to join us at the LARGEST event in the movement ⬇️  
+  Register today to join us at the LARGEST event in the movement ⬇  
   🔗 https://t.co/mKxA4UrNXb  
   Media: 1 photo (https://pbs.twimg.com/media/FjZl_zmUoAEDl6P.jpg)  
   Engagement: Likes=42, Reposts=21, Quotes=1, Replies=5, Bookmarks=0, Views=N/A  

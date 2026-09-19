@@ -157,11 +157,6 @@ Related public pages: [Fix overview](/Fix/overview), [laws landing](/laws), Disc
 </figure>
 
 <figure className="ck-placed-figure">
-  <a href="/Photos/Shot_Position/Real_Shooter/Img_Photo_e2f78b"><img className="ck-placed-img" src="/img/evidence/e2f78b2b21e2bce31e4b5dcb0dbc9a7ee69ad0d34ec5f0dc61b39818e6b52724.jpg" alt="This image is a four-panel collage with an additional small inset panel at the bottom center, depicting a political or public event." data-cid="QmSg1g1bFFYUtLcUVvVEpWHfqjfcYQ1K9V4wFYkT9Zg4YE" loading="lazy" /></a>
-  <figcaption className="ck-placed-caption">This image is a four-panel collage with an additional small inset panel at the bottom center, depicting a political or public event. <a href="/Photos/Shot_Position/Real_Shooter/Img_Photo_e2f78b">Full write-up &rarr;</a></figcaption>
-</figure>
-
-<figure className="ck-placed-figure">
   <a href="/Photos/Patsy/Img_Glove_Suit_Man_fa8211"><img className="ck-placed-img" src="/img/evidence/fa82112c9dc71375bdbe2372bf8bb42420697d6e416161137738c8d7e006576f.jpg" alt="This is a low-resolution vertical screenshot from a mobile phone, likely taken from a social media platform like TikTok, showing a group of young men outdoors on a paved walkway." data-cid="QmY41p2GrwTB9NnD61AFVAouGnAgo7ZCsavn8t2gBmkvBG" loading="lazy" /></a>
   <figcaption className="ck-placed-caption">This is a low-resolution vertical screenshot from a mobile phone, likely taken from a social media platform like TikTok, showing a group of young men outdoors on a paved walkway. <a href="/Photos/Patsy/Img_Glove_Suit_Man_fa8211">Full write-up &rarr;</a></figcaption>
 </figure>
@@ -192,29 +187,13 @@ Related public pages: [Fix overview](/Fix/overview), [laws landing](/laws), Disc
 </figure>
 
 <figure className="ck-placed-figure">
-  <a href="/Photos/UVU_Venue/Img_Photo_eadb7f"><img className="ck-placed-img" src="/img/evidence/eadb7f55947b27d4d0e284a6205007fdcb9e3c74a6439344d67e9c16a94e86e9.jpg" alt="This eye-level, wide-angle daytime photograph captures an outdoor landscaped amphitheater on a university campus with terraced grassy seating in the foreground." data-cid="Qmd5H2mx1BFoXavCx19ui7iwtViSMHNDka3mkUXmvcUKVt" loading="lazy" /></a>
-  <figcaption className="ck-placed-caption">This eye-level, wide-angle daytime photograph captures an outdoor landscaped amphitheater on a university campus with terraced grassy seating in the foreground. <a href="/Photos/UVU_Venue/Img_Photo_eadb7f">Full write-up &rarr;</a></figcaption>
-</figure>
-
-<figure className="ck-placed-figure">
   <a href="/Photos/UVU_Venue/Img_Photo_d5385c"><img className="ck-placed-img" src="/img/evidence/d5385c2f98ec5ea1b8e0388f4942141e356a9fbaa613fb749723a291307df22a.webp" alt="This high-angle, wide-shot photograph captures a section of the Utah Valley University (UVU) campus during the daytime, showcasing a terraced grassy amphitheater in the…" data-cid="QmTZyuYH7esrrh3rbZyMxZ5JjvXQi3aQorWNS6rMJk1T2Q" loading="lazy" /></a>
   <figcaption className="ck-placed-caption">This high-angle, wide-shot photograph captures a section of the Utah Valley University (UVU) campus during the daytime, showcasing a terraced grassy amphitheater in the foreground. <a href="/Photos/UVU_Venue/Img_Photo_d5385c">Full write-up &rarr;</a></figcaption>
-</figure>
-
-<figure className="ck-placed-figure">
-  <a href="/Photos/Charlie_Kirk/Text_Msgs/Img_Candace_7ccdcc"><img className="ck-placed-img" src="/img/evidence/7ccdcce95f47eb2b3dac926436481b3ad67e0e2415e5b24109dbd8aec9eea427.jpg" alt="This is a digital screenshot of an iOS iMessage text conversation on a mobile phone." data-cid="QmX21ve5xxtTLRLNZEQn6TB9ifPWZSHpvh4uMYgq4NMRpP" loading="lazy" /></a>
-  <figcaption className="ck-placed-caption">This is a digital screenshot of an iOS iMessage text conversation on a mobile phone. <a href="/Photos/Charlie_Kirk/Text_Msgs/Img_Candace_7ccdcc">Full write-up &rarr;</a></figcaption>
-</figure>
-
-<figure className="ck-placed-figure">
-  <a href="/Photos/Table_And_Charlie/Table_More/Img_Photo_2d6725"><img className="ck-placed-img" src="/img/evidence/2d6725814b3ca5370a1cbcaaa9fdd676adb5efd5686662296d36356c89189580.jpg" alt="This image is a composite collage of four distinct panes, featuring video stills and close-up photographs from an outdoor event, likely a political rally or public gathering." data-cid="QmPP13euHFf79hh7qPUWjB45r1ZtZ4CJz8qHGX8DCdVC2m" loading="lazy" /></a>
-  <figcaption className="ck-placed-caption">This image is a composite collage of four distinct panes, featuring video stills and close-up photographs from an outdoor event, likely a political rally or public gathering. <a href="/Photos/Table_And_Charlie/Table_More/Img_Photo_2d6725">Full write-up &rarr;</a></figcaption>
 </figure>
 
 </div>
 
 {/* CK_PLACED_IMAGES_END */}
-
 {/* CK_PLACED_VIDEOS_START — generated, do not hand-edit */}
 
 ## Videos

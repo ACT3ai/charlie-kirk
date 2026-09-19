@@ -115,7 +115,6 @@ The dual-track approach:
 <div className="ck-4sq">
 
 <div className="ck-4sq-card ck-4sq-stack">
-  <a className="ck-4sq-thumb" href="/US_Intelligence/cia"><img src="/img/evidence/3819d968746b1713569a595c92c0059aa28e6c48597d68f63af7c38902fc38a0.jpg" data-cid="QmcxZzutKBWaWs9MuZdYVyshsXwtdwp6rqXYs3kngbh3m3" alt="This image is a flat, digital screenshot of the Google Trends user interface, showing search interest data." loading="lazy" /></a>
   <div className="ck-4sq-body">
     <p className="ck-4sq-title"><a href="/US_Intelligence/cia">CIA</a></p>
     <p className="ck-4sq-text">Claims and questions about CIA involvement, including a campus national-security society whose online profiles reportedly came down two weeks after the shooting. Every listing is unverified and nobody on it is accused of anything.</p>

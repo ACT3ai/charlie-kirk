@@ -620,7 +620,7 @@ Posts were retrieved via targeted keyword searches (including terms like "event"
 
 - **Post [post:20]** (2024-02-23):  
   Author: @Amanda_Patriot1  
-  Content: "After nearly getting their event shut down by the school board the students of the Niceville High School @TPUSA Chapter stood tall and fought back! They tabled at their school international night and represented the U.S.A.!!! 🇺🇸 ❤️🤍💙 @tpusastudents @charliekirk11 @morgonn"  
+  Content: "After nearly getting their event shut down by the school board the students of the Niceville High School @TPUSA Chapter stood tall and fought back! They tabled at their school international night and represented the U.S.A.!!! 🇺🇸 ❤🤍💙 @tpusastudents @charliekirk11 @morgonn"  
   (Niceville High School TPUSA chapter event/tabing; photos attached.)
 
 - **Post [post:22]** (2024-02-20):  
@@ -650,12 +650,12 @@ Posts were retrieved via targeted keyword searches (including terms like "event"
 
 - **Post [post:42]** (2024-02-23):  
   Author: @Amanda_Patriot1  
-  Content: "Started off #flagtheclassroom at Niceville High School with the president and vice president of the @TPUSA chapter on campus!! The flag will be hung permanently on their school campus on behalf of @tpusastudents ‼️ Great job ladies 👏 @charliekirk11"  
+  Content: "Started off #flagtheclassroom at Niceville High School with the president and vice president of the @TPUSA chapter on campus!! The flag will be hung permanently on their school campus on behalf of @tpusastudents ‼ Great job ladies 👏 @charliekirk11"  
   (Niceville High TPUSA chapter flagging/campus event; photos attached.)
 
 - **Post [post:43]** (2024-02-23):  
   Author: @Amanda_Patriot1  
-  Content: "After nearly getting their event shut down by the school board the students of the Niceville High School @TPUSA Chapter stood tall and fought back! They tabled at their school international night and represented the U.S.A.!!! 🇺🇸 ❤️🤍💙 @tpusastudents @charliekirk11 @morgonn"  
+  Content: "After nearly getting their event shut down by the school board the students of the Niceville High School @TPUSA Chapter stood tall and fought back! They tabled at their school international night and represented the U.S.A.!!! 🇺🇸 ❤🤍💙 @tpusastudents @charliekirk11 @morgonn"  
   (Duplicate of post [post:20]; Niceville event.)
 
 - **Post [post:45]** (2024-02-23):  

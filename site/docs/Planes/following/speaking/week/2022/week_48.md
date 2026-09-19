@@ -460,7 +460,7 @@ Search twitter and x.com posts for where Charlie Kirk or TPUSA has public speaki
   (Quotes post by @Savsays with video of protestor)  
   Engagement: Likes=1414, Reposts=288, Quotes=27, Replies=180, Bookmarks=10, Views=N/A  
   Thread replies (selected):  
-  - ID: 1598177680444125184 (@fi56153644): The best case for not sending your children to college. That kid is a walking contradiction. Good grief. 🤦‍♀️  
+  - ID: 1598177680444125184 (@fi56153644): The best case for not sending your children to college. That kid is a walking contradiction. Good grief. 🤦‍♀  
   - ID: 1598177535925387264 (@CharlesMar7i): Can we trade these guys for legal immigrants that want to be here?  
   - ID: 1598176868561133568 (@ChrizDDv3): Yet another ‘America would be great’ without ‘all these Americans’. Sure…
 

@@ -231,7 +231,7 @@ Search twitter and x.com posts for where Charlie Kirk or TPUSA has public speaki
 - **Post ID: 1847045642625208570**  
   **Author:** Charlie Kirk (@charliekirk11)  
   **Timestamp:** Thu, 17 Oct 2024 22:42:52 GMT  
-  **Content:** WE ARE TAKING BACK ARIZONA Massive energy today at ASU alongside @GeorgeJanko and @BryceHall This used to be considered a “liberal” campus 🤷‍♂️ Also hosting GOTV events all day with Don Jr. Time to WIN. Let’s roll. 🇺🇸🇺🇸  
+  **Content:** WE ARE TAKING BACK ARIZONA Massive energy today at ASU alongside @GeorgeJanko and @BryceHall This used to be considered a “liberal” campus 🤷‍♂ Also hosting GOTV events all day with Don Jr. Time to WIN. Let’s roll. 🇺🇸🇺🇸  
   **Media:** 1 video (https://video.twimg.com/ext_tw_video/1847044899457454081/pu/vid/avc1/720x1280/dTgkqJ9ZKvcjBsAI.mp4?tag=12, duration: 30866 ms), 2 photos (https://pbs.twimg.com/media/GaIFkVpb0AIDqkN.jpg, https://pbs.twimg.com/media/GaIFldma8AAUB6Y.jpg)  
   **Engagement:** Likes=6342, Reposts=1335, Quotes=25, Replies=162, Bookmarks=65, Views=124791  
   **Context:** Event at Arizona State University (ASU) with Charlie Kirk, including tabling/"Prove Me Wrong" and GOTV activities.

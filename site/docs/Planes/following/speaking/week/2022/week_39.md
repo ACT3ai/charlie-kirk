@@ -580,7 +580,7 @@ Search twitter and x.com posts for where Charlie Kirk or TPUSA has public speaki
   Timestamp: Tue, 27 Sep 2022 17:00:03 GMT  
   Engagement: Likes=265, Reposts=118, Quotes=42, Replies=52, Bookmarks=1, Views=N/A  
   Media: Yes (1 item) — photo URL: https://pbs.twimg.com/media/FdrSkb6VEA08YNV.jpg  
-  Content: The first drop of our AmericaFest lineup is here 🏜️  
+  Content: The first drop of our AmericaFest lineup is here 🏜  
   Who are you most excited to see? 🎉  
   REGISTER FOR #AMFEST2022 TODAY:  
   https://www.amfest.com/

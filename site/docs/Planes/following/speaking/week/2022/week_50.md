@@ -391,9 +391,9 @@ Search twitter and x.com posts for where Charlie Kirk or TPUSA has public speaki
   March  
   1-4: CPAC  
   Priority states include:  
-  ✔️KY & LA (governorships)  
-  ✔️NJ & VA (state legislatures)  
-  ✔️PA & WI (state Supreme Courts)
+  ✔KY & LA (governorships)  
+  ✔NJ & VA (state legislatures)  
+  ✔PA & WI (state Supreme Courts)
 
 - **@CoachTReed** (ID: 1602425701080207360, Timestamp: Mon, 12 Dec 2022 22:10:33 GMT)  
   Content: Come support your JSU Tigers vs Texas Longhorns December 14 @ 11:00a AT JACKSON STATE UNIVERSITY. This will be an unforgettable experience. We will host our local elementary, middle and high schools during this game. Come catch the excitement. WE NEED YOU TO PACK THE HOUSE!  

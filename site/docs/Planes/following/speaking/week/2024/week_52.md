@@ -286,7 +286,7 @@ All retrieved posts (keyword searches for terms like "speaking", "event", "appea
 - [post:17] (ID: 1872618995410739702, @528vibes, Fri 27 Dec 2024 12:22 GMT): Unrelated video post from Highlands Ranch, CO on Dec 25 (2.9k+ likes)
 - [post:18] (ID: 1871359461752963558, @SkrticX, Tue 24 Dec 2024 00:57 GMT): Unrelated post about Cleveland Public Auditorium on Dec 19 (914 likes)
 - [post:19] (ID: 1871272442070806881, @EYakoby, Mon 23 Dec 2024 19:11 GMT): Video clip of Ted Cruz at Turning Point America Fest (653 likes)
-- [post:20] (ID: 1872689260341674078, @charliekirk11, Fri 27 Dec 2024 17:01 GMT): "My exclusive interview with Tucker Carlson — out now⬇️⬇️" (includes podcast link; 590 likes)
+- [post:20] (ID: 1872689260341674078, @charliekirk11, Fri 27 Dec 2024 17:01 GMT): "My exclusive interview with Tucker Carlson — out now⬇⬇" (includes podcast link; 590 likes)
 
 TPUSA account search returned zero results. No posts reference any upcoming, current, or recent (within the week) public speaking by Charlie Kirk or TPUSA events.
 ```

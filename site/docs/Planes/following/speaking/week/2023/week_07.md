@@ -514,7 +514,7 @@ Search twitter and x.com posts for where Charlie Kirk or TPUSA has public speaki
 - **Post ID: 1626699588429139969**  
   Author: Hank Mardukas (@DonaldD48774622)  
   Timestamp: Fri, 17 Feb 2023 21:46:19 GMT  
-  Content: No they aren’t. He looks similar but not exactly the same (look at his eyes and mouth). This isn’t a photoshop (or photto shop 🤷🏻‍♂️?) It’s most likely they are all at the same event, probably some Turning Point USA thing based off the Cruz pic  
+  Content: No they aren’t. He looks similar but not exactly the same (look at his eyes and mouth). This isn’t a photoshop (or photto shop 🤷🏻‍♂?) It’s most likely they are all at the same event, probably some Turning Point USA thing based off the Cruz pic  
   Engagement: Likes=0, Reposts=0, Quotes=0, Replies=0, Bookmarks=0, Views=9
 
 - **Post ID: 1626665607272751123**  

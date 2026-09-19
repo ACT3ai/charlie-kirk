@@ -582,7 +582,7 @@ Search twitter and x.com posts for where Charlie Kirk or TPUSA has public speaki
   (Includes media: photo of related graphic.)
 
 - **Post [post:7]** (Nov 23, 2024, 00:17:40 GMT, @sashareva1776):  
-  "Our @TPUSA Santiago High School has been rocking on campus today with huge 6ft free speech ball! 🇺🇸🎉⚽️  
+  "Our @TPUSA Santiago High School has been rocking on campus today with huge 6ft free speech ball! 🇺🇸🎉⚽  
   Our President Brayden tabled at their local Winterfest and recruited over 40 more students to their club! I am 100% sure they will be shining next semester with possible speaker events! @tpusastudents  
   Get Involved with us! https://t.co/BtLzGzRBvX  
   @CoccaNick @theshu1992 @TPUSA @tpusastudents @AndrewSypher @charliekirk11  
@@ -591,7 +591,7 @@ Search twitter and x.com posts for where Charlie Kirk or TPUSA has public speaki
 - **Post [post:8]** (Nov 22, 2024, 21:31:25 GMT, @RachelA1776):  
   "🚨 BIG FREE EVENT ALERT 🚨  
   🔥 In Pursuit of Liberty with Pastor @russellbjohnson of @thepursuitnw is happening THIS Monday! 🔥  
-  🗓️ When: 11.25 | 🕔 Time: 5 PM  
+  🗓 When: 11.25 | 🕔 Time: 5 PM  
   💻 Where: ZOOM  
   📍 Hosted by TPUSA at Northwest University  
   Don’t miss this 🔥 powerful discussion on liberty, faith, and freedom! 🗽💬  

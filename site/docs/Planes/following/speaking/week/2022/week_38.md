@@ -399,12 +399,12 @@ Thread context (selected replies to quoted post):
 Engagement: Likes=2, Reposts=0, Quotes=0, Replies=0  
 
 **Post [post:29] / [post:43]** (ID: 1572046738512576512, Author: TPUSA Students @tpusastudents, Timestamp: Tue, 20 Sep 2022 02:15:24 GMT)  
-Content: "FIRST EVER HIGH SCHOOL tour stop is in the BOOKS 📚✏️✈️🇺🇸 A HUGE thank you to @bennyjohnson for coming to the Midwest to share why being #MadeInAmerica is so special! Didn’t get to go? There’s 15 more stops to attend this FALL SEMESTER for High School, College & Faith!"  
+Content: "FIRST EVER HIGH SCHOOL tour stop is in the BOOKS 📚✏✈🇺🇸 A HUGE thank you to @bennyjohnson for coming to the Midwest to share why being #MadeInAmerica is so special! Didn’t get to go? There’s 15 more stops to attend this FALL SEMESTER for High School, College & Faith!"  
 Media: 3 photos (https://pbs.twimg.com/media/FdEILNvacAAaqs3.jpg, https://pbs.twimg.com/media/FdEILNragAEcSNF.jpg, https://pbs.twimg.com/media/FdEILNtaUAEGaxC.jpg)  
 Engagement: Likes=29, Reposts=24, Quotes=3, Replies=0, Bookmarks=1  
 
 **Post [post:3] / [post:5] / [post:25] / [post:36] / [post:41]** (ID: 1573059765277757442, Author: Stephanie Robinson @thestephstevens, Timestamp: Thu, 22 Sep 2022 21:20:48 GMT)  
-Content: "Two GREAT events coming up‼️The LIVE FREE Tour at Michigan State University with @RealCandaceO and a @TPUSA national event AMERICAFEST in Phoenix, AZ! Get your tickets for both now!!! 🇺🇸🙌🏽🔥 ➡️https://t.co/1XlG39fH0K ➡️https://t.co/l589CqIG1K"  
+Content: "Two GREAT events coming up‼The LIVE FREE Tour at Michigan State University with @RealCandaceO and a @TPUSA national event AMERICAFEST in Phoenix, AZ! Get your tickets for both now!!! 🇺🇸🙌🏽🔥 ➡https://t.co/1XlG39fH0K ➡https://t.co/l589CqIG1K"  
 Media: Photo (https://pbs.twimg.com/media/FdSheOfXgAEZFG7.jpg)  
 Engagement: Likes=4, Reposts=2, Quotes=1, Replies=0  
 

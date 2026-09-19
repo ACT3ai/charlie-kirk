@@ -563,7 +563,7 @@ Search twitter and x.com posts for where Charlie Kirk or TPUSA has public speaki
 - [post:18] @charliekirk11 (Dec 18, 2023): Quotes @mattgaetz at #AmFest2023 on service members and TPUSA events (includes video)
 - [post:19] @charliekirk11 (Dec 19, 2023): Quotes @TuckerCarlson at #AmFest2023 (includes video)
 - [post:20] @RonFilipkowski (Dec 17, 2023): "Charlie Kirk’s annual four-day Christian nationalist WeirdoFest kicked off last night in AZ, and things started off even crazier than usual. Story … https://meidasnews.com/news/charlie-kirks-weirdofest-day-1"
-- [post:21] @charliekirk11 (Dec 21, 2023): "YOU can watch my exclusive interview with Tucker Carlson HERE 🔥 Become a member TODAY to watch ⬇️ https://t.co/8hadWplg8L" (includes video; from AmFest)
+- [post:21] @charliekirk11 (Dec 21, 2023): "YOU can watch my exclusive interview with Tucker Carlson HERE 🔥 Become a member TODAY to watch ⬇ https://t.co/8hadWplg8L" (includes video; from AmFest)
 - [post:22] @charliekirk11 (Dec 17, 2023): Quotes on young men at #AmFest2023 (includes video)
 - [post:23] @charliekirk11 (Dec 18, 2023): Quotes @KariLake at #AmFest2023 (includes video)
 - [post:24] @RSBNetwork (Dec 19, 2023): "DAY 4 TPUSA's AmFest ft. Senator Ted Cruz, Charlie Kirk, Christian Collins, and MORE - 12/19/23 https://twitter.com/i/broadcasts/1vOGwjWPXbgKB"

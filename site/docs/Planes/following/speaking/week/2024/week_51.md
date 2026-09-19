@@ -602,7 +602,7 @@ Search twitter and x.com posts for where Charlie Kirk or TPUSA has public speaki
   Content: @LauraLoomer @MiloVentimiglia may be entitled to free speech but he appears not to have been entitled to intellectual honesty as his bizarre behavior at AmFest proves.
 
 - **[post:35]** ID: 1870614043343671783 | @ChloeCole | Sat, 21 Dec 2024 23:35:16 GMT | Likes=1643, Reposts=45, Quotes=2, Replies=15, Bookmarks=63, Views=45901 | Media: 1 photo (https://pbs.twimg.com/media/GfXBjqnWwAANM1s.jpg)  
-  Content: .@imbrettcooper knocked it out of the park with her AmFest speech this year!! ❤️ This is the message that our generation needs to hear.
+  Content: .@imbrettcooper knocked it out of the park with her AmFest speech this year!! ❤ This is the message that our generation needs to hear.
 
 - **[post:36]** ID: 1870613796181426661 | @TBakritges | Sat, 21 Dec 2024 23:34:17 GMT | Likes=1, Reposts=0, Quotes=0, Replies=0, Bookmarks=0, Views=28  
   Content: Savvy, must be an awesome Amfest 24 event👍

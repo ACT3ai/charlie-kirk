@@ -462,7 +462,7 @@ Search twitter and x.com posts for where Charlie Kirk or TPUSA has public speaki
   Media: 1 photo (https://pbs.twimg.com/media/GSEJaFsaUAQRWba.jpg)  
   Content: Our Make Arizona Grand Again tour continues with a Meet & Greet in Show Low!  
   Join us at Buffalo Bill's Tavern & Museum at 4:00 pm on July 10th and enjoy the history of the Wild West, a wonderful meal, and meet @KariLake.  
-  Free RSVP⤵️  
+  Free RSVP⤵  
   https://t.co/t8bDTptm6z
 
 - **[post:28]** ID: 1812254848642908667  
@@ -481,7 +481,7 @@ Search twitter and x.com posts for where Charlie Kirk or TPUSA has public speaki
   Timestamp: Fri, 12 Jul 2024 06:57:17 GMT  
   Engagement: Likes=701, Reposts=142, Quotes=5, Replies=139, Bookmarks=7, Views=138518  
   Media: 1 photo (https://pbs.twimg.com/media/GSRLkkLWwAA1cGK.jpg)  
-  Content: So excited to be hitting the road in September with my book tour LIVE & OUTSPOKEN. Looking forward to hearing from all of you about how you believe we can make things better, and I’ll be sharing stores about this wild and wonderful journey I’ve been on. Every ticket includes a copy of my new book NOW WHAT? There will be revelations about the inner workings of government, and no doubt some challenging audience questions in a lively quick-fire Q&A! It will be an absolute privilege to do this show in some of my favourite cites, so please join me for an evening of fun, politics and lively conversation. Get your tickets at https://t.co/g3ID7erIkF or from the link in my bio 🔗❤️
+  Content: So excited to be hitting the road in September with my book tour LIVE & OUTSPOKEN. Looking forward to hearing from all of you about how you believe we can make things better, and I’ll be sharing stores about this wild and wonderful journey I’ve been on. Every ticket includes a copy of my new book NOW WHAT? There will be revelations about the inner workings of government, and no doubt some challenging audience questions in a lively quick-fire Q&A! It will be an absolute privilege to do this show in some of my favourite cites, so please join me for an evening of fun, politics and lively conversation. Get your tickets at https://t.co/g3ID7erIkF or from the link in my bio 🔗❤
 
 - **[post:30]** ID: 1810802164748730488  
   Author: Chaos Coordinator (@idontexistTore)  

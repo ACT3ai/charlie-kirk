@@ -218,7 +218,7 @@ TPUSA’s account yielded **no results** in the searched window.[[7]](https://x.
 ### From semantic search:
 - [post:16] @gary37h (Thu, 04 Jan 2024 21:11:28 GMT): "Tomorrow in Iowa, he has two speeches scheduled. First - 5PM est. Second - 8:30PM est. Both will be streamed on RSBN and Rumble, I'm sure. Possibly on Newsmax?" (refers to unspecified "he," with image; contextually unrelated to Kirk/TPUSA).
 - [post:17] @Marcel4Congress (Thu, 04 Jan 2024 23:20:24 GMT): About Kamala Harris et al. on King Day (Jan 15, unrelated).
-- [post:18] @charliekirk11 (Mon, 01 Jan 2024 16:49:03 GMT): "THE PLOT TO ASSASSINATE TRUMP 🚨 NEW interview with Steve Bannon ⬇️"
+- [post:18] @charliekirk11 (Mon, 01 Jan 2024 16:49:03 GMT): "THE PLOT TO ASSASSINATE TRUMP 🚨 NEW interview with Steve Bannon ⬇"
 - [post:19] @julie_kelly2 (Wed, 03 Jan 2024 20:05:48 GMT): About Biden speech (unrelated).
 - [post:20] @realTuckFrumper (Wed, 03 Jan 2024 14:28:10 GMT): "Biden will target Trump in speech at war site on Jan. 6 anniversary"
 - [post:21] @TrumpDailyPosts (Wed, 03 Jan 2024 14:21:12 GMT): Trump Iowa rally schedule (Jan 5–6 events; no Kirk/TPUSA).

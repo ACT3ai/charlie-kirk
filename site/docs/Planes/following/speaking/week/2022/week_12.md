@@ -530,7 +530,7 @@ Search twitter and x.com posts for where Charlie Kirk or TPUSA has public speaki
 **Additional relevant posts from broader searches (e.g., Berkeley mention, @TPUSA live content, other mentions in range):**
 
 - **Post ID: 1506963555467382795** (from campus-related search)  
-  **Author:** D ☀️ (@BigPapiFinesse)  
+  **Author:** D ☀ (@BigPapiFinesse)  
   **Timestamp:** Thu, 24 Mar 2022 11:58:04 GMT  
   **Content:** @TPUSA was on my college campus tryna get ppl to do surveys.. I can imagine (based on my response alone) that it did not go well for them  
   **Engagement:** Likes=0, Reposts=0, Quotes=0, Replies=0, Bookmarks=0, Views=N/A  
@@ -621,7 +621,7 @@ Search twitter and x.com posts for where Charlie Kirk or TPUSA has public speaki
 - **Post ID: 1506751602866143241**  
   **Author:** Tiwa Savage Facts (@FactsTiwa)  
   **Timestamp:** Wed, 23 Mar 2022 21:55:50 GMT  
-  **Content:** 🏟️🎤|@TiwaSavage's "Water & Garri Tour '22" - North American Leg 🇺🇸🇨🇦  
+  **Content:** 🏟🎤|@TiwaSavage's "Water & Garri Tour '22" - North American Leg 🇺🇸🇨🇦  
   General links for more information  
   -🎤https://t.co/LrjxbnvApy  
   -🎤https://t.co/BpdPCiWc9U  

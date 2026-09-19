@@ -338,7 +338,7 @@ Search twitter and x.com posts for where Charlie Kirk or TPUSA has public speaki
   (No media)
 
 - **[post:3]** ID: 1922066936818483227  
-  Author: 🇮🇹🇫🇷✝️Valérie24 (@v78568915)  
+  Author: 🇮🇹🇫🇷✝Valérie24 (@v78568915)  
   Timestamp: Mon, 12 May 2025 23:10:42 GMT  
   Content: Charlie Kirk Crushes Liberal Student on Campus https://www.youtube.com/shorts/oq3M4dzTUbI?si=BMmluUrTS6613zMB via @YouTube  
   Engagement: Likes=0, Reposts=0, Quotes=0, Replies=0, Bookmarks=0, Views=333  
@@ -382,7 +382,7 @@ Search twitter and x.com posts for where Charlie Kirk or TPUSA has public speaki
 
 ### Additional keyword search results with filter:links (same query):
 - **[post:9]** ID: 1922066936818483227 (duplicate of above)  
-  Author: 🇮🇹🇫🇷✝️Valérie24 (@v78568915)  
+  Author: 🇮🇹🇫🇷✝Valérie24 (@v78568915)  
   Timestamp: Mon, 12 May 2025 23:10:42 GMT  
   Content: Charlie Kirk Crushes Liberal Student on Campus https://www.youtube.com/shorts/oq3M4dzTUbI?si=BMmluUrTS6613zMB via @YouTube  
   Engagement: Likes=0, Reposts=0, Quotes=0, Replies=0, Bookmarks=0, Views=333  
@@ -468,14 +468,14 @@ Search twitter and x.com posts for where Charlie Kirk or TPUSA has public speaki
 - **[post:21]** ID: 1921213320897454362  
   Author: Benny Johnson (@bennyjohnson)  
   Timestamp: Sat, 10 May 2025 14:38:44 GMT  
-  Content: Fired up to speak at @TPUSA’s Student Action Summit this summer—don’t miss this stacked lineup. 📍 Tampa, Florida 🗓️ July 11–13 Grab your tickets: https://www.sas2025.com See you in Tampa!  
+  Content: Fired up to speak at @TPUSA’s Student Action Summit this summer—don’t miss this stacked lineup. 📍 Tampa, Florida 🗓 July 11–13 Grab your tickets: https://www.sas2025.com See you in Tampa!  
   Media: 2 photos (https://pbs.twimg.com/media/GqmFUqeXQAA5R9T.jpg, https://pbs.twimg.com/media/GqmFUqbW4AAuElt.jpg)  
   Engagement: Likes=443, Reposts=41, Quotes=1, Replies=41, Bookmarks=6, Views=68786
 
 - **[post:22]** ID: 1920849117817061477  
   Author: tia51.Official (@tia51_official)  
   Timestamp: Fri, 09 May 2025 14:31:31 GMT  
-  Content: พรุ่งนี้มาเจอกัน! "FRIDAY PLAYGROUND 1st FAN MEET 2025" 🎪 🎠 SAT, 10 MAY 2025 UNION HALL | UNION MALL 🎟️ Tickets for all seats will be available online only at https://www.ticketmelon.com/taman4265/friday-playground 🔴 LIVE STREAMING Tickets on sale at 🔗https://t.co/kWC7Ebc06w #FridayPlayGround #Tia51 #FridayCollege  
+  Content: พรุ่งนี้มาเจอกัน! "FRIDAY PLAYGROUND 1st FAN MEET 2025" 🎪 🎠 SAT, 10 MAY 2025 UNION HALL | UNION MALL 🎟 Tickets for all seats will be available online only at https://www.ticketmelon.com/taman4265/friday-playground 🔴 LIVE STREAMING Tickets on sale at 🔗https://t.co/kWC7Ebc06w #FridayPlayGround #Tia51 #FridayCollege  
   Media: Video (https://video.twimg.com/amplify_video/1920849038670524417/vid/avc1/1080x1920/wRXJ0AyL_vDLeCSF.mp4, duration: 14433 ms)  
   Engagement: Likes=954, Reposts=547, Quotes=11, Replies=3, Bookmarks=25, Views=22843
 
@@ -489,14 +489,14 @@ Search twitter and x.com posts for where Charlie Kirk or TPUSA has public speaki
 - **[post:24]** ID: 1920071116560941553  
   Author: tia51.Official (@tia51_official)  
   Timestamp: Wed, 07 May 2025 11:00:02 GMT  
-  Content: เตรียมนับถอยหลังอีก 3 วันเจอกันในงาน "FRIDAY PLAYGROUND 1st FAN MEET 2025" 🎪 🎠 SAT, 10 MAY 2025 UNION HALL | UNION MALL 🎟️ Tickets for all seats will be available online only at https://www.ticketmelon.com/taman4265/friday-playground 🔴 LIVE STREAMING Tickets on sale at 🔗https://t.co/kWC7Ebc06w #FridayPlayGround #Tia51 #FridayCollege  
+  Content: เตรียมนับถอยหลังอีก 3 วันเจอกันในงาน "FRIDAY PLAYGROUND 1st FAN MEET 2025" 🎪 🎠 SAT, 10 MAY 2025 UNION HALL | UNION MALL 🎟 Tickets for all seats will be available online only at https://www.ticketmelon.com/taman4265/friday-playground 🔴 LIVE STREAMING Tickets on sale at 🔗https://t.co/kWC7Ebc06w #FridayPlayGround #Tia51 #FridayCollege  
   Media: Video (https://video.twimg.com/amplify_video/1919973826869530624/vid/avc1/1080x1920/DMUwIUuS1ojyqdVt.mp4, duration: 18300 ms)  
   Engagement: Likes=535, Reposts=274, Quotes=2, Replies=0, Bookmarks=11, Views=9978
 
 - **[post:25]** ID: 1921087138415997120  
   Author: tia51.Official (@tia51_official)  
   Timestamp: Sat, 10 May 2025 06:17:20 GMT  
-  Content: วันนี้!! แล้วนะ ตื่นเต้นกันไหม หลังเวทีตื่นเต้นกันสุดๆที่จะได้โชว์ให้ทุกคนได้ดูแล้วสนุกสุดเหวี่ยงกันไปเลย🎢 "FRIDAY PLAYGROUND 1st FAN MEET 2025" 🎠 SAT, 10 MAY 2025 UNION HALL | UNION MALL 🎟️Tickets for all seats will be available online only at https://t.co/9Kr0TdBShB 🔴LIVE STREAMING Tickets on sale at https://t.co/kWC7Ebc06w #FridayPlayGround #Tia51 #FridayCollege  
+  Content: วันนี้!! แล้วนะ ตื่นเต้นกันไหม หลังเวทีตื่นเต้นกันสุดๆที่จะได้โชว์ให้ทุกคนได้ดูแล้วสนุกสุดเหวี่ยงกันไปเลย🎢 "FRIDAY PLAYGROUND 1st FAN MEET 2025" 🎠 SAT, 10 MAY 2025 UNION HALL | UNION MALL 🎟Tickets for all seats will be available online only at https://t.co/9Kr0TdBShB 🔴LIVE STREAMING Tickets on sale at https://t.co/kWC7Ebc06w #FridayPlayGround #Tia51 #FridayCollege  
   Media: Photo (https://pbs.twimg.com/media/GqkSkMtWEAATQxJ.jpg)  
   Engagement: Likes=428, Reposts=188, Quotes=1, Replies=0, Bookmarks=5, Views=18124
 
@@ -548,7 +548,7 @@ Search twitter and x.com posts for where Charlie Kirk or TPUSA has public speaki
 - **[post:32]** ID: 1920939875253010503  
   Author: Turning Point USA (@TPUSA)  
   Timestamp: Fri, 09 May 2025 20:32:10 GMT  
-  Content: AMAZING crowd at UC Riverside today for the final stop on the American Comeback Tour with @charliekirk11! Another incredible tour season in the books ✔️ @tpusastudents  
+  Content: AMAZING crowd at UC Riverside today for the final stop on the American Comeback Tour with @charliekirk11! Another incredible tour season in the books ✔ @tpusastudents  
   Media: 3 items (video: https://video.twimg.com/amplify_video/1920939811512135680/vid/avc1/720x1280/ELUJDXHOjiiZBoQ2.mp4 duration 12591 ms; photo: https://pbs.twimg.com/media/GqiMlLhXEAAWCiq.jpg; video: https://video.twimg.com/amplify_video/1920939811466002432/vid/avc1/720x1280/nmzkChsBuX0Cz80U.mp4 duration 4910 ms)  
   Engagement: Likes=368, Reposts=68, Quotes=4, Replies=10, Bookmarks=10, Views=25316
 

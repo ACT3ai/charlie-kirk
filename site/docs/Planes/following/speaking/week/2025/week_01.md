@@ -238,7 +238,7 @@ All relevant posts (including keyword and semantic searches across the exact dat
 - **Post [post:50]**  
   Author: Sasha Reva (@sashareva1776)  
   Timestamp: Thu, 02 Jan 2025 16:05:52 GMT  
-  Content: "🎉WELCOME TO 2025 with @TPUSA High School Pacific Territory! If you want to make a change, you should: 1️⃣ Start or join a chapter at your school. 2️⃣ Participate in our events. 3️⃣ Connect with others to share ideas. http://tpusa.com/getinvolved/ JOIN OUR MOVEMENT NOW! 🇺🇸 #TPUSA"  
+  Content: "🎉WELCOME TO 2025 with @TPUSA High School Pacific Territory! If you want to make a change, you should: 1⃣ Start or join a chapter at your school. 2⃣ Participate in our events. 3⃣ Connect with others to share ideas. http://tpusa.com/getinvolved/ JOIN OUR MOVEMENT NOW! 🇺🇸 #TPUSA"  
   (Promotes joining TPUSA chapters/events in general terms for 2025; no specifics.)
 
 - **Post [post:49]**  

@@ -377,3 +377,24 @@ DATE_RUN: {ISO}
 ---
 {raw Grok output}
 ```
+
+{/* CK_PLACED_VIDEOS_START — generated, do not hand-edit */}
+
+## Videos
+
+Footage related to this page. Each card opens that clip's own page, with the video, the full write-up, and its source.
+
+<div className="ck-placed-videos">
+
+<div className="ck-placed-video" data-cid="QmRKJ3wG65Xqv9A3pFK4faSdYfRSqP5WNWdHDL7EUwQYXe">
+  <a href="/Videos/Vid_Security_Team/Vid_ProjectConstitu_Candace_Owens_Says_2082978"><img src="/img/video_posters/2ed072b08d9412b591d70c38364cbf3421431b53b4fdf4ed3ca4e881f46d8290.jpg" alt="@ProjectConstitu - Candace Owens says the FBI seized clothing from members of" loading="lazy" /></a>
+  <div className="ck-placed-video-body">
+    <a className="ck-placed-video-title" href="/Videos/Vid_Security_Team/Vid_ProjectConstitu_Candace_Owens_Says_2082978">@ProjectConstitu - Candace Owens says the FBI seized clothing from members of</a>
+    <span className="ck-placed-video-caption">In this political commentary and investigative discussion video, host Candace Owens speaks from her studio desk, addressing discrepancies surrounding the narrative and…</span>
+    <div className="ck-placed-video-meta">4:09 · @ProjectConstitu</div>
+  </div>
+</div>
+
+</div>
+
+{/* CK_PLACED_VIDEOS_END */}

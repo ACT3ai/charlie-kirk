@@ -271,7 +271,7 @@ Search twitter and x.com posts for where Charlie Kirk or TPUSA has public speaki
     Content: "We’re celebrating 10 incredible years of the largest conference for conservative women, and you’re invited! Now through June 6, use code '10YEAR' to get 40% off GA tickets to our Women’s Leadership Summit in Dallas, TX 💐 https://www.ywls2025.com?utm_source=social&utm_medium=x&utm_campaign=10year"  
     Media: Photo.  
   - **Post [post:60]**: Author: Rachel Farmer (@rachelfarm04). Timestamp: Sat, 31 May 2025 00:31:14 GMT.  
-    Content: "LADIESSSS, DON’T MISS #YWLS2025! 🎀 Only 2 WEEKS until @TPUSA’s Young Women’s Leadership Summit, the BIGGEST event in the country for conservative ladies! ✨💅 REGISTER NOW ➡️ https://t.co/mwFZyN596O See YOU in Dallas! 🤠"  
+    Content: "LADIESSSS, DON’T MISS #YWLS2025! 🎀 Only 2 WEEKS until @TPUSA’s Young Women’s Leadership Summit, the BIGGEST event in the country for conservative ladies! ✨💅 REGISTER NOW ➡ https://t.co/mwFZyN596O See YOU in Dallas! 🤠"  
     Media: Two photos.  
   - **Post [post:61]**: Author: Jonathan Shanks (@JonathanWShanks). Timestamp: Fri, 30 May 2025 13:12:04 GMT.  
     Content: "The Young Women’s Leadership Summit is TWO WEEKS AWAY! 💅🏻✨ Join hundreds of patriotic @tpusastudents at an exclusive @TPUSAEvents conference in Dallas! 🤠 Ask me how you can get your ticket for 50% off! 🤑 June 13-15 | https://t.co/AAEmvWd1rA @charliekirk11 @TPUSA #YWLS2025"  

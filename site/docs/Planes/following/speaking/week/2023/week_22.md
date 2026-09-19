@@ -454,7 +454,7 @@ No posts were found announcing new upcoming Charlie Kirk/TPUSA campus tours, spe
   Engagement: Likes=2 (main post), Views=473 / 71.
 
 - **Post [post:31] / [post:39]** (TPUSA Faith @tpusafaith, Thu 01 Jun 2023 23:05:41 GMT, quoted in replies):  
-  Content: What is the REAL agenda of TPUSA Faith? Watch the full speech from The Pastor's Summit in Nashville, TN w/ @charliekirk11 - [video link]. ➡️Pastors! Register today for the NEXT Pastor's Summit on September 13th-15th, 2023, in San Diego, CA here: [link]. #tpusafaithsummit #charliekirk  
+  Content: What is the REAL agenda of TPUSA Faith? Watch the full speech from The Pastor's Summit in Nashville, TN w/ @charliekirk11 - [video link]. ➡Pastors! Register today for the NEXT Pastor's Summit on September 13th-15th, 2023, in San Diego, CA here: [link]. #tpusafaithsummit #charliekirk  
   Engagement: Likes=12, Reposts=5, Quotes=3, Replies=0, Bookmarks=0, Views=2212.
 
 ### Other Mentions of TPUSA/Charlie Kirk Events or Speaking (Contextual, Not New Announcements in Date Range):
@@ -464,7 +464,7 @@ No posts were found announcing new upcoming Charlie Kirk/TPUSA campus tours, spe
 - **Post [post:0]** (4Faith @firstchristmas9, Fri 02 Jun 2023 23:43:00 GMT): "Well Charlie Kirk did take 1.5M dollar speaking fee for J6, not show up and never returned the money. Pretty lucrative grift. Plus the controlled opposition fed funding."  
   Engagement: Likes=7, Reposts=0, Quotes=1, Replies=3, Bookmarks=0, Views=1495.
 
-- **Post [post:8]** (Mike Miller @common__scents, Fri 02 Jun 2023 16:21:21 GMT): "Are you a @TPUSA chapter leader? There’s still time to apply to our premier event and receive top notch training to bring back to your campus 👏🏼👏🏼 Apply ▶️ [link]." (Refers to a premier TPUSA event for chapter leaders; media included.)  
+- **Post [post:8]** (Mike Miller @common__scents, Fri 02 Jun 2023 16:21:21 GMT): "Are you a @TPUSA chapter leader? There’s still time to apply to our premier event and receive top notch training to bring back to your campus 👏🏼👏🏼 Apply ▶ [link]." (Refers to a premier TPUSA event for chapter leaders; media included.)  
   Engagement: Likes=8, Reposts=5, Quotes=1, Replies=0, Bookmarks=0, Views=443.
 
 - **Post [post:10]** (Campus Reform @campusreform, Wed 31 May 2023 17:29:59 GMT): "On May 2 at @SJSU, protests erupted against a #prolife event hosted by @TPUSA featuring conservative commentator Allie Beth Stuckey titled 'Protecting the Unborn.'" (Past event reference.)  

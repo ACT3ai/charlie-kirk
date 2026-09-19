@@ -395,7 +395,7 @@ Search twitter and x.com posts for where Charlie Kirk or TPUSA has public speaki
   (Quotes post [post:0] by Nate Morris: "We had 1,300 America First patriots FIRED UP in Shepherdsville this morning to hear @CharlieKirk11 and I talk about my campaign to destroy the McConnell Machine. You can watch the entire rally below!" with video media.)
 
 - **Post [post:5] / [post:8]** (ID: 1939793587849281654, Author: Anthony St.Pierre @astpierre55, Timestamp: Mon, 30 Jun 2025 21:10:05 GMT)  
-  Content: "🚨 New Speakers 🚨 There is still time to join @TPUSA for the biggest event of the summer 🌴☀️ DM for discounts and register at https://t.co/r1LFNd5UcV 🇺🇸 #SAS2025 #SpeakerDrop #ImGoing"  
+  Content: "🚨 New Speakers 🚨 There is still time to join @TPUSA for the biggest event of the summer 🌴☀ DM for discounts and register at https://t.co/r1LFNd5UcV 🇺🇸 #SAS2025 #SpeakerDrop #ImGoing"  
   (Quotes post by @TPUSA: "Russell Brand, Jillian Michaels, and Savannah Chrisley are officially part of the SAS 2025 lineup! 🔥 @rustyrockets @JillianMichaels @_ItsSavannah_ Now until 7/7/25 at 11:59 PM PST, get $20 GA tickets with our Fourth of July sale 🇺🇸 BE THERE: https://t.co/WEJk5lPGNR" with photo media.)
 
 - **Post [post:10]** (ID: 1939716783164051718, Author: Heather LeMire @HeatherLemire1, Timestamp: Mon, 30 Jun 2025 16:04:53 GMT)  
@@ -444,7 +444,7 @@ Search twitter and x.com posts for where Charlie Kirk or TPUSA has public speaki
   (Media: 2 photos.)
 
 - **Post [post:35]** (ID: 1937997603616194586, Author: Berkley Corey @berkenstocks99, Timestamp: Wed, 25 Jun 2025 22:13:29 GMT)  
-  Content: "🌴✈️ “ALEXA, fly me to the @TPUSA STUDENT ACTION SUMMIT!” ✈️🌴 🎟️ Get your ticket for the Student Action Summit ➡️ 🔗 https://t.co/Ew4emkLWwP! 🚨Use code “CHARLIE” to get a percentage off your ticket! 🚨 #sas #studentactionsummit #tpusa #turningpointusa #tampa #tampaflorida #fl #CA #florida #california"  
+  Content: "🌴✈ “ALEXA, fly me to the @TPUSA STUDENT ACTION SUMMIT!” ✈🌴 🎟 Get your ticket for the Student Action Summit ➡ 🔗 https://t.co/Ew4emkLWwP! 🚨Use code “CHARLIE” to get a percentage off your ticket! 🚨 #sas #studentactionsummit #tpusa #turningpointusa #tampa #tampaflorida #fl #CA #florida #california"  
   (Media: 1 video.)
 
 **Additional notes from searches:**  

@@ -247,7 +247,7 @@ Relevant posts are listed chronologically by timestamp (earliest to latest), wit
   Engagement: Likes=860, Reposts=272, Quotes=28, Replies=72, Bookmarks=4, Views=N/A  
   Media: Yes (1 item) – photo URL: https://pbs.twimg.com/media/FZp1z8aVsAA5U89.jpg  
   Content: Excited to announce the first @tpaction "UNITE & WIN Rally" with America's Governor— @RonDeSantisFL in Battleground Phoenix, AZ. Help us boost America-First Candidates @KariLake & @bgmasters next Sunday, Aug. 14th— Be There. Let's WIN.  
-  RSVP Now ⬇️⬇️⬇️  
+  RSVP Now ⬇⬇⬇  
   https://t.co/eGa7dgMe7R  
 
 - **[post:17]** ID: 1556679613329248258  

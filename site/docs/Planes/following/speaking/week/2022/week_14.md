@@ -518,7 +518,7 @@ These were found via targeted keyword and semantic searches for terms like event
 
 - **[post:9] ID: 1511352961498243074** (Tue, 05 Apr 2022 14:40:00 GMT)  
   Author: Turning Point USA - @TPUSA  
-  Content: Are you Ready For It?💅 THE FIRST #YWLS2022 SPEAKER DROP IS HERE ⚡️ Who are you most excited to hear speak? 👇🏼  
+  Content: Are you Ready For It?💅 THE FIRST #YWLS2022 SPEAKER DROP IS HERE ⚡ Who are you most excited to hear speak? 👇🏼  
   Media: Yes (1 item) - video URL: https://video.twimg.com/amplify_video/1511233727044603905/vid/936x720/sSV9nTdrHhtdsSwH.mp4?tag=14 (duration: 5000 ms)  
   Engagement: Likes=112, Reposts=47, Quotes=23, Replies=21, Bookmarks=0, Views=N/A
 
@@ -579,13 +579,13 @@ These were found via targeted keyword and semantic searches for terms like event
 
 - **[post:33] ID: 1511765686598647814** (Wed, 06 Apr 2022 18:00:01 GMT)  
   Author: Turning Point USA - @TPUSA  
-  Content: You want to hear about real racism? Talk to a black conservative. 👇 “They use our names. They use our faces. They use our stories and our history to sell their narrative” @AmalaEkpunobi Give us your thoughts in the comments ⬇️  
+  Content: You want to hear about real racism? Talk to a black conservative. 👇 “They use our names. They use our faces. They use our stories and our history to sell their narrative” @AmalaEkpunobi Give us your thoughts in the comments ⬇  
   Media: Yes (1 item) - video URL: https://video.twimg.com/amplify_video/1511757574525231109/vid/720x720/iPYRjbH2CUQ80a8y.mp4?tag=14 (duration: 64664 ms)  
   Engagement: Likes=80, Reposts=28, Quotes=1, Replies=4, Bookmarks=0, Views=N/A
 
 - **[post:34] ID: 1511666275960987648** (Wed, 06 Apr 2022 11:25:00 GMT)  
   Author: Turning Point USA - @TPUSA  
-  Content: The Radical Left is obsessed with sexualizing children. It's not by accident, it's by design. READ MORE ➡️ https://t.co/NQJbwotQre  
+  Content: The Radical Left is obsessed with sexualizing children. It's not by accident, it's by design. READ MORE ➡ https://t.co/NQJbwotQre  
   Media: Yes (3 items) - photos: https://pbs.twimg.com/media/FPm5mzQVgAAV5eQ.jpg, https://pbs.twimg.com/media/FPm5mzNVIAIoczJ.jpg, https://pbs.twimg.com/media/FPm5m0TVQAAES3R.jpg  
   Engagement: Likes=57, Reposts=34, Quotes=4, Replies=22, Bookmarks=1, Views=N/A
 

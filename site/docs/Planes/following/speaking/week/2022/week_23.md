@@ -582,7 +582,7 @@ Content: LOL "The “Young Women’s Leadership Summit” included dating advice
 Author: £Ʌ ƿɵ§ꝉɅ ↁᵻ ꟻɅ£¢ɵ₪€ (@PostaDiFalcone)  
 Timestamp: Thu, 09 Jun 2022 22:48:22 GMT  
 Engagement: Likes=0, Reposts=0, Quotes=0, Replies=0, Bookmarks=0, Views=N/A  
-Content: Turning Point USA: YWLS 2022 Recap ⚡️ If you went to #YWLS2022, you know that it was 🔥 But in case you couldn’t make it, here is what you missed. 👀 Be a part of the LARGEST youth conservative movement in the country. See you at our next event, #SAS… https://www.youtube.com/watch?v=K2J-kAJiwAI&feature=youtu.be  
+Content: Turning Point USA: YWLS 2022 Recap ⚡ If you went to #YWLS2022, you know that it was 🔥 But in case you couldn’t make it, here is what you missed. 👀 Be a part of the LARGEST youth conservative movement in the country. See you at our next event, #SAS… https://www.youtube.com/watch?v=K2J-kAJiwAI&feature=youtu.be  
 
 [post:8] ID: 1535024266403450880  
 Author: Turning Point USA (@TPUSA)  
@@ -601,7 +601,7 @@ Author: Turning Point USA (@TPUSA)
 Timestamp: Sat, 04 Jun 2022 17:03:16 GMT  
 Engagement: Likes=340, Reposts=106, Quotes=23, Replies=71, Bookmarks=3, Views=N/A  
 Media: Photo (URL: https://pbs.twimg.com/media/FUbHnDwXEAcCU6v.jpg)  
-Content: 🚨BREAKING NEWS🚨 TPUSA Events presents our STAR-studded lineup of #SAS2022 speakers!! 🤩 We are only 4️⃣8️⃣ days away from being in Tampa, FL! Get your tickets TODAY at https://t.co/AaT2v0IQsp 🌴☀️🌊  
+Content: 🚨BREAKING NEWS🚨 TPUSA Events presents our STAR-studded lineup of #SAS2022 speakers!! 🤩 We are only 4⃣8⃣ days away from being in Tampa, FL! Get your tickets TODAY at https://t.co/AaT2v0IQsp 🌴☀🌊  
 
 Thread context (replies):  
 - [post:57 reply] ID: 1533574468735475717 Author: High Impedance Resister (@pifflesquit) Timestamp: Sun, 05 Jun 2022 22:20:20 GMT Content: I cant imagine a worse group of people to talk to students..  
@@ -624,7 +624,7 @@ Content: Charlie Kirk and his rhetoric are going for the kids… so if your a de
 
 - [post:21] ID: 1533928217928617984 (wait, duplicate ref in results; same as above) – recap of YWLS2022 event.  
 
-- [post:22] ID: 1534596119727984640 Author: Turning Point USA (@TPUSA) Timestamp: Wed, 08 Jun 2022 18:00:01 GMT Engagement: Likes=310, Reposts=92, Quotes=12, Replies=30, Bookmarks=1, Views=N/A Content: The anti-American ideology in today’s classroom curricula threatens to destroy our country’s institutions and freedom. To combat this malicious trend, TPUSA is excited to announce our newest initiative⬇️ https://www.foxnews.com/politics/charlie-kirk-launch-turning-point-academy-reject-critical-race-theory-wokeism-schools (Note: This is a school launch announcement, not a speaking event.)  
+- [post:22] ID: 1534596119727984640 Author: Turning Point USA (@TPUSA) Timestamp: Wed, 08 Jun 2022 18:00:01 GMT Engagement: Likes=310, Reposts=92, Quotes=12, Replies=30, Bookmarks=1, Views=N/A Content: The anti-American ideology in today’s classroom curricula threatens to destroy our country’s institutions and freedom. To combat this malicious trend, TPUSA is excited to announce our newest initiative⬇ https://www.foxnews.com/politics/charlie-kirk-launch-turning-point-academy-reject-critical-race-theory-wokeism-schools (Note: This is a school launch announcement, not a speaking event.)  
 
 - [post:23] ID: 1534607792111136768 Author: Charlie Kirk (@charliekirk11) Timestamp: Wed, 08 Jun 2022 18:46:23 GMT Engagement: Likes=15641, Reposts=5197, Quotes=241, Replies=394, Bookmarks=140, Views=N/A Content: An armed man showed up to assassinate Brett Kavanaugh at his home... (no event mention).  
 

@@ -519,9 +519,9 @@ Search twitter and x.com posts for where Charlie Kirk or TPUSA has public speaki
 
 ### Keyword search results (general queries for events/speaking/tour/campus + date range):
 - **[post:0]** ID: 1502059206370897937  
-  Author: Just Meg 🇺🇸🙏🏻❤️ - @Meggiebee59  
+  Author: Just Meg 🇺🇸🙏🏻❤ - @Meggiebee59  
   Timestamp: Thu, 10 Mar 2022 23:09:56 GMT  
-  Content: Gorgeous. 💕💕. It’s just a number. Will be 63 in August. Have enjoyed every minute! ☺️☺️😎😎  
+  Content: Gorgeous. 💕💕. It’s just a number. Will be 63 in August. Have enjoyed every minute! ☺☺😎😎  
   Engagement: Likes=0, Reposts=0, Quotes=0, Replies=0, Bookmarks=0, Views=N/A
 
 - **[post:1]** ID: 1502055717343309832  
@@ -873,7 +873,7 @@ Search twitter and x.com posts for where Charlie Kirk or TPUSA has public speaki
 - **[post:46]** ID: 1501180942173491202  
   Author: FandemicTour - @FandemicTour  
   Timestamp: Tue, 08 Mar 2022 13:00:01 GMT  
-  Content: ⭐️ Join us on our "Official Facebook Page" Wednesday, March 9th at 5 PM EST as we go LIVE talking all things Fandemic, and our special guest Nick Carter talks about how you can see him in person at our show this March 18th-20th!  
+  Content: ⭐ Join us on our "Official Facebook Page" Wednesday, March 9th at 5 PM EST as we go LIVE talking all things Fandemic, and our special guest Nick Carter talks about how you can see him in person at our show this March 18th-20th!  
   🎟 Get your 2022 pass! [link]  
   Engagement: Likes=308, Reposts=45, Quotes=6, Replies=15, Bookmarks=2, Views=N/A  
   Media: 1 photo
@@ -893,7 +893,7 @@ Search twitter and x.com posts for where Charlie Kirk or TPUSA has public speaki
 - **[post:49]** ID: 1501559932881149955  
   Author: iHeartRadio - @iHeartRadio  
   Timestamp: Wed, 09 Mar 2022 14:06:00 GMT  
-  Content: .@charlieputh is performing at our #iHeartAwards on March 22nd and I'm freaking out!!! 💡❤️  
+  Content: .@charlieputh is performing at our #iHeartAwards on March 22nd and I'm freaking out!!! 💡❤  
   Run don't walk and buy your tickets right now: [link]  
   Engagement: Likes=326, Reposts=66, Quotes=19, Replies=22, Bookmarks=3, Views=N/A  
   Media: 1 photo

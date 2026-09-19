@@ -440,14 +440,14 @@ Search twitter and x.com posts for where Charlie Kirk or TPUSA has public speaki
 - **Post ID**: 1954703061664006350  
   **Author**: Jacob Smith (@GovernToChange)  
   **Timestamp**: Mon, 11 Aug 2025 00:35:01 GMT  
-  **Content**: "🙏 @charliekirk11 is in the house @LegacyChurchABQ! Charlie Kirk Freedom Night in the 505 has Begun! The Church is Rocking giving All the Glory to God who made tonight possible! It's time for True Godly Reform in New Mexico for ALL New Mexicans! New Mexico Deserves Better! 🙏❤️🇺🇲"  
+  **Content**: "🙏 @charliekirk11 is in the house @LegacyChurchABQ! Charlie Kirk Freedom Night in the 505 has Begun! The Church is Rocking giving All the Glory to God who made tonight possible! It's time for True Godly Reform in New Mexico for ALL New Mexicans! New Mexico Deserves Better! 🙏❤🇺🇲"  
   **Media**: 1 photo (GyCAEqgXsAAZzZg.jpg)  
   **Engagement**: Likes=147, Reposts=22, Quotes=0, Replies=4, Bookmarks=1, Views=1641  
 
 - **Post ID**: 1954703356917686416  
   **Author**: Joshua James Lawrence (@SheriffJJames)  
   **Timestamp**: Mon, 11 Aug 2025 00:36:11 GMT  
-  **Content**: "@charliekirk11 @ Legacy Church w/ @Stevesmothermon Packed House and we already booted a screaming disrespectful Lib and we prayed for her🙏🏻🇺🇸⚔️"  
+  **Content**: "@charliekirk11 @ Legacy Church w/ @Stevesmothermon Packed House and we already booted a screaming disrespectful Lib and we prayed for her🙏🏻🇺🇸⚔"  
   **Media**: 3 items (2 photos: GyCAPA_WEAAoF0K.jpg, GyCASdCWgAAGI_O.jpg; 1 video duration 16538 ms)  
   **Engagement**: Likes=5, Reposts=2, Quotes=0, Replies=5, Bookmarks=0, Views=184  
 

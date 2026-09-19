@@ -453,7 +453,7 @@ Posts are presented in the order returned by the searches (primarily Latest mode
 - **Post [post:9]** (ID: 1739685715435536420)  
   Author: @charliekirk11 (Charlie Kirk)  
   Timestamp: Tue, 26 Dec 2023 16:32:51 GMT  
-  Content: My interview with Tucker Carlson is OUT NOW 🚨⬇️  
+  Content: My interview with Tucker Carlson is OUT NOW 🚨⬇  
   They hate you because you’re telling the truth.  
   Likes=978, Reposts=192, Quotes=4, Replies=92, Bookmarks=28, Views=80292  
   (No media.)
@@ -471,7 +471,7 @@ Posts are presented in the order returned by the searches (primarily Latest mode
   Author: @TeamTrump  
   Timestamp: Thu, 28 Dec 2023 22:52:22 GMT  
   Content: President Donald J. Trump to Deliver Remarks at Commit to Caucus Rally in Sioux City, Iowa  
-  🗓️ Sat, January 13, 2024  
+  🗓 Sat, January 13, 2024  
   ⏰ 6:00 PM (Central)  
   📍 Orpheum Theatre  
   GET TICKETS: https://event.donaldjtrump.com/events/president-donald-j-trump-to-deliver-remarks-at-commit-to-caucus-rally-in-sioux-city-iowa  
@@ -507,7 +507,7 @@ Posts are presented in the order returned by the searches (primarily Latest mode
   Author: @TeamTrump  
   Timestamp: Thu, 28 Dec 2023 22:50:10 GMT  
   Content: President Donald J. Trump to Deliver Remarks at Commit to Caucus Rally in Atlantic, Iowa  
-  🗓️ Sat, January 13, 2024  
+  🗓 Sat, January 13, 2024  
   ⏰ 2:00 PM (Central)  
   📍Cass Community Center  
   GET TICKETS: https://event.donaldjtrump.com/events/president-donald-j-trump-to-deliver-remarks-at-commit-to-caucus-rally-in-atlantic-iowa?utm_medium=email&utm_source=ncl_amplify&utm_campaign=231227-president_donald_j_trump_to_deliver_remarks_at_commit-to-caucus-rally-in-atlantic-iowa&utm_content=ncl-vJBdRxgzwK&_nlid=vJBdRxgzwK&_nhids=%25recipient.hids%25  
@@ -586,7 +586,7 @@ Posts are presented in the order returned by the searches (primarily Latest mode
 - **Post [post:31]** (ID: 1739845387710771401)  
   Author: @charliekirk11 (Charlie Kirk)  
   Timestamp: Wed, 27 Dec 2023 03:07:19 GMT  
-  Content: WATCH MY EXCLUSIVE INTERVIEW WITH VIVEK RAMASWAMY HERE ⬇️  
+  Content: WATCH MY EXCLUSIVE INTERVIEW WITH VIVEK RAMASWAMY HERE ⬇  
   This is my favorite interview I’ve ever had with Vivek. He’s getting stronger.   
   https://members.charliekirk.com/exclusive-interview-with-vivek-ramaswamy-live-at-amfest/  
   Likes=1118, Reposts=154, Quotes=7, Replies=98, Bookmarks=48, Views=164776  

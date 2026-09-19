@@ -222,7 +222,7 @@ Search twitter and x.com posts for where Charlie Kirk or TPUSA has public speaki
   (Video attached promoting the tour.)[[1]](https://x.com/TPUSA/status/1828525391428100193)
 
 - **August 27, 2024 (Tue), multiple regional TPUSA accounts and users reposting/promoting the same tour** (examples):  
-  - @samtpusa: “📢 BIG NEWS 🇺🇸🔥 @TPUSA has OFFICIALLY launched the “You’re Being Brainwashed Tour” 🧠🧼 @charliekirk11 might be coming to a college campus near you 👀 Click the link below to find out more ⬇️ https://theturningpointtour.com/”  
+  - @samtpusa: “📢 BIG NEWS 🇺🇸🔥 @TPUSA has OFFICIALLY launched the “You’re Being Brainwashed Tour” 🧠🧼 @charliekirk11 might be coming to a college campus near you 👀 Click the link below to find out more ⬇ https://theturningpointtour.com/”  
   - @thestephstevens: “🚨The FALL 2024 TOUR is HERE 🚨 Don’t miss the YOU’RE BEING BRAINWASHED Tour coming to a campus near you🤩 @TPUSA @tpusastudents @charliekirk11 #brainwashedtour #tpusa” (Photos attached.)  
   - @MarissaMahacek (TPUSA Great Lakes Regional Manager): “Don’t miss your opportunity to hear from @charliekirk11 🇺🇸 Get tickets now for the YOU’RE BEING BRAINWASHED TOUR! https://t.co/QX0Jc0kbKn @TPUSA @tpusastudents @TPUSAEvents @TpusaGreatLakes” (Photo attached.)  
   - @MatthewBoedy: “The new Turning Point USA and Charlie Kirk college campus tour made public today. The “You are Being Brainwashed” Tour does *not* mention TPUSA campus tour regular Candace Owens. https://theturningpointtour.com/”  

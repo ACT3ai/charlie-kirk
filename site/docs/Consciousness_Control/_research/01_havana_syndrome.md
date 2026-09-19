@@ -29,3 +29,24 @@ Date: 2026-07-29
 ## UVU / Charlie Kirk
 - No public record evidence of Havana-type attack at UVU Sept 10 2025.
 - Relevance is capability + cover narrative, not established use-of-weapon at the scene.
+
+{/* CK_PLACED_VIDEOS_START — generated, do not hand-edit */}
+
+## Videos
+
+Footage related to this page. Each card opens that clip's own page, with the video, the full write-up, and its source.
+
+<div className="ck-placed-videos">
+
+<div className="ck-placed-video" data-cid="QmVqerMTVvKf62uJAPihgCdiMjHmPQHhuxy8ujdfZnr63Q">
+  <a href="/Videos/Vid_Gov_Mind_Control/Vid_Microwave_Hearing_Claims/Vid_RedactedNews_Redacted_Segment_Havana_2082425"><img src="/img/video_posters/2bbd11ae0680816f44b76fb9b21caf9ccd1be6b5ec02558ab5cfeec0982f1b09.jpg" alt="@RedactedNews - Redacted segment on Havana Syndrome, claimed link to James Woolsey" loading="lazy" /></a>
+  <div className="ck-placed-video-body">
+    <a className="ck-placed-video-title" href="/Videos/Vid_Gov_Mind_Control/Vid_Microwave_Hearing_Claims/Vid_RedactedNews_Redacted_Segment_Havana_2082425">@RedactedNews - Redacted segment on Havana Syndrome, claimed link to James Woolsey</a>
+    <span className="ck-placed-video-caption">This video is a segment from the independent news talk show *Redacted*, hosted by Clayton Morris.</span>
+    <div className="ck-placed-video-meta">1:41 · @RedactedNews</div>
+  </div>
+</div>
+
+</div>
+
+{/* CK_PLACED_VIDEOS_END */}

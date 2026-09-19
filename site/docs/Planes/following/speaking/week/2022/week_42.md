@@ -423,7 +423,7 @@ Search twitter and x.com posts for where Charlie Kirk or TPUSA has public speaki
 - **[post:4]** ID: 1583209800241799169  
   Author: Robert Lusetich (@RobertLusetich)  
   Timestamp: Thu, 20 Oct 2022 21:33:25 GMT  
-  Content: What do parents think about Arizona maga candidate Randy Kaufman, arrested while masturbating in his truck near a school? Or Adam Hageman, a former Trump official & @TPUSA event coordinator who's doing 5 1/2 years prison for possession of child porn? You hire him, Charlie? 👁️  
+  Content: What do parents think about Arizona maga candidate Randy Kaufman, arrested while masturbating in his truck near a school? Or Adam Hageman, a former Trump official & @TPUSA event coordinator who's doing 5 1/2 years prison for possession of child porn? You hire him, Charlie? 👁  
   Engagement: Likes=5, Reposts=0, Quotes=0, Replies=0, Bookmarks=0, Views=N/A
 
 - **[post:5]** ID: 1583204609920638976  
@@ -549,7 +549,7 @@ Search twitter and x.com posts for where Charlie Kirk or TPUSA has public speaki
 - **[post:23]** ID: 1582230651486420993  
   Author: Kari Lake (@KariLake)  
   Timestamp: Tue, 18 Oct 2022 04:42:38 GMT  
-  Content: DO NOT MISS THIS! @TulsiGabbard is joining us TOMORROW in Chandler, AZ! Register for FREE: ⤵️ https://t.co/eTk8qWYebZ  
+  Content: DO NOT MISS THIS! @TulsiGabbard is joining us TOMORROW in Chandler, AZ! Register for FREE: ⤵ https://t.co/eTk8qWYebZ  
   (Included media: photo)  
   Engagement: Likes=1953, Reposts=389, Quotes=27, Replies=199, Bookmarks=7, Views=N/A
 

@@ -282,7 +282,7 @@ No results found in the date range for event/speaking mentions.
 
 ### Posts from @tpusastudents
 - **Post [post:57]** (ID: 1879600138022527341, Author: @tpusastudents, Wed 15 Jan 2025 18:42:48 GMT):  
-  "maximize your chapters impact this semester by tabling consistently on campus! 🎶⚡️🎉"  
+  "maximize your chapters impact this semester by tabling consistently on campus! 🎶⚡🎉"  
   (Includes one media item: photo; general chapter advice, no specific events)
 
 ### Semantic Search Results (Relevant to Charlie Kirk/TPUSA Events in Jan 15-21 2025)

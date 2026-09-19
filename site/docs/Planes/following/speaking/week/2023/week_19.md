@@ -382,7 +382,7 @@ Search twitter and x.com posts for where Charlie Kirk or TPUSA has public speaki
   Timestamp: Thu, 11 May 2023 14:53:10 GMT  
   Likes: 1083, Reposts: 277, Quotes: 14, Replies: 47, Bookmarks: 4, Views: 57233  
   Media: 2 photos (https://pbs.twimg.com/media/Fv2v53JaEAAca09.jpg, https://pbs.twimg.com/media/Fv2v53SaIAURxAo.jpg)  
-  Content: "Turning Point Action is ecstatic to be hosting its FIRST-EVER multi-day conference July 15 & 16 in West Palm Beach, FL! We’ll have the most BASED voices of the conservative movement that you won’t want to miss! ⬇️SPOTS ARE FILLING FAST!⬇️ Register NOW at https://t.co/r0aQDCp7NP"
+  Content: "Turning Point Action is ecstatic to be hosting its FIRST-EVER multi-day conference July 15 & 16 in West Palm Beach, FL! We’ll have the most BASED voices of the conservative movement that you won’t want to miss! ⬇SPOTS ARE FILLING FAST!⬇ Register NOW at https://t.co/r0aQDCp7NP"
 
 - **[post:18]** ID: 1655428322069827589  
   Author: Sawyer Merritt (@SawyerMerritt)  

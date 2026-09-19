@@ -62,15 +62,9 @@ See also: [Law 1 Requirements](/laws/DoJ_FBI/more/Human_Requirements) (law enfor
   <figcaption className="ck-placed-caption">This is a high-resolution photograph or digital scan of a printed document featuring four paragraphs of English text on a white page. <a href="/Photos/Aircraft/Img_Photo_14f90a">Full write-up &rarr;</a></figcaption>
 </figure>
 
-<figure className="ck-placed-figure">
-  <a href="/Photos/Ballistics_Gun/Img_Photo_af997f"><img className="ck-placed-img" src="/img/evidence/af997f70d8e3ffea08d811389de0b4fcc56f6ae11e6c84c08938f7621be0720e.jpg" alt="This image is a digital medical illustration depicting a side-profile view of a human head and neck, focusing on the cervical spine." data-cid="QmdEaqFxfmmuyxUmSBkKRTN3rf67hTZedsT2KpA92xndDR" loading="lazy" /></a>
-  <figcaption className="ck-placed-caption">This image is a digital medical illustration depicting a side-profile view of a human head and neck, focusing on the cervical spine. <a href="/Photos/Ballistics_Gun/Img_Photo_af997f">Full write-up &rarr;</a></figcaption>
-</figure>
-
 </div>
 
 {/* CK_PLACED_IMAGES_END */}
-
 {/* CK_4SQ_SECTION_START */}
 
 ## Other Pages In This Section

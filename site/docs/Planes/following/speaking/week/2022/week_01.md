@@ -638,7 +638,7 @@ All matching or near-matching posts (from keyword searches for terms like "Charl
 - **[post:19]** ID: 1477849982472388610  
   Author: Kari Lake (@KariLake)  
   Timestamp: Mon, 03 Jan 2022 03:51:07 GMT  
-  Content: I’m honored to have President Trump’s endorsement. And I’m thrilled that he’s coming to Florence, Arizona January 15 for his first rally of 2022. Let’s make this his biggest rally yet. I will see you there! Sign up to attend.⤵️ https://t.co/ghob1knZKW  
+  Content: I’m honored to have President Trump’s endorsement. And I’m thrilled that he’s coming to Florence, Arizona January 15 for his first rally of 2022. Let’s make this his biggest rally yet. I will see you there! Sign up to attend.⤵ https://t.co/ghob1knZKW  
   (With photo)
 
 - **[post:20]** ID: 1478527330876215298  
@@ -764,7 +764,7 @@ All matching or near-matching posts (from keyword searches for terms like "Charl
 - **[post:43]** ID: 1477694652665024514  
   Author: Charlie Kirk (@charliekirk11)  
   Timestamp: Sun, 02 Jan 2022 17:33:54 GMT  
-  Content: You can find MTG uncensored and unfiltered on The Charlie Kirk Show Listen to what Twitter’s least favorite congresswoman has to say here ⬇️
+  Content: You can find MTG uncensored and unfiltered on The Charlie Kirk Show Listen to what Twitter’s least favorite congresswoman has to say here ⬇
 
 - **[post:44]** ID: 1477690381781377025  
   Author: Charlie Kirk (@charliekirk11)  
@@ -837,7 +837,7 @@ All matching or near-matching posts (from keyword searches for terms like "Charl
 - **[post:56]** (duplicate of post:19) ID: 1477849982472388610  
   Author: Kari Lake (@KariLake)  
   Timestamp: Mon, 03 Jan 2022 03:51:07 GMT  
-  Content: I’m honored to have President Trump’s endorsement. And I’m thrilled that he’s coming to Florence, Arizona January 15 for his first rally of 2022. Let’s make this his biggest rally yet. I will see you there! Sign up to attend.⤵️ https://t.co/ghob1knZKW  
+  Content: I’m honored to have President Trump’s endorsement. And I’m thrilled that he’s coming to Florence, Arizona January 15 for his first rally of 2022. Let’s make this his biggest rally yet. I will see you there! Sign up to attend.⤵ https://t.co/ghob1knZKW  
   (With photo)
 
 - **[post:57]** (duplicate of post:20) ID: 1478527330876215298  
@@ -876,7 +876,7 @@ All matching or near-matching posts (from keyword searches for terms like "Charl
 - **[post:63]** ID: 1478578977044377605  
   Author: RSBN 🇺🇸 (@RSBNetwork)  
   Timestamp: Wed, 05 Jan 2022 04:07:53 GMT  
-  Content: We will be LIVE on Jan. 6 with two events 🚨 1PM ET - @RepMTG and @RepMattGaetz EXPOSE the truth about Jan. 6 🎥 4PM ET - 'Freedom Rally' in support of President Trump in West Palm Beach! 🇺🇸 MORE INFO ⬇️
+  Content: We will be LIVE on Jan. 6 with two events 🚨 1PM ET - @RepMTG and @RepMattGaetz EXPOSE the truth about Jan. 6 🎥 4PM ET - 'Freedom Rally' in support of President Trump in West Palm Beach! 🇺🇸 MORE INFO ⬇
 
 - **[post:64]** ID: 1479109051950583823  
   Author: Governor Prof. Hillary Barchok (@BarchokHillary)  

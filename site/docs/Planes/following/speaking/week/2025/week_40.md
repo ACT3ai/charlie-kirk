@@ -806,7 +806,7 @@ No posts from @charliekirk11 were found in the range. All direct matches and con
 - **[post:3]** Leah (Little Lulu) @truthoverhate (TPUSA internal issues)  
 - **[post:4]** Rangersgirl57 @rangersgirl57 (AI video reference)  
 - **[post:5]/[post:8]** Jeff Hosterman @JeffHosterman (Candace Owens/Israel context re: events)  
-- **[post:6]** ⚔️🇺🇲RILLA 🇺🇸 ⚔️ @Rick_ATL_ (TPUSA response context)  
+- **[post:6]** ⚔🇺🇲RILLA 🇺🇸 ⚔ @Rick_ATL_ (TPUSA response context)  
 - **[post:13]** Kelly Hansen @KellyHanse1022 (Jeffree Star video)  
 - **[post:14]** Jeannie Hartley @del_jeannie (assassination video reference)  
 - **[post:29–35], [post:55–59]** (Various unrelated or post-assassination references, including Grok responses on Utah Valley University event where Kirk was killed)

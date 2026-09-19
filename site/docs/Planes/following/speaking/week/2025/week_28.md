@@ -392,7 +392,7 @@ Search twitter and x.com posts for where Charlie Kirk or TPUSA has public speaki
   Engagement: Likes=47, Reposts=31, Quotes=2, Replies=4, Bookmarks=18, Views=3884
 
 - **[post:15]** ID: 1944872384118579365  
-  Author: Red haired lass ☘️ Fight the trump criminal mafia (@Smapsley)  
+  Author: Red haired lass ☘ Fight the trump criminal mafia (@Smapsley)  
   Timestamp: Mon, 14 Jul 2025 21:31:25 GMT  
   Content: Trump Wanted Howard Stern To Speak On His Behalf At The RNC https://t.co/r3FK4VOmN1 via @YouTube  
   Engagement: Likes=0, Reposts=0, Quotes=0, Replies=0, Bookmarks=0, Views=36
@@ -419,7 +419,7 @@ Search twitter and x.com posts for where Charlie Kirk or TPUSA has public speaki
   7//18-Red Bank NJ  
   7/19-North Hampton Ma  
   7/20-Concord NH  
-  🎟️Tickets:  
+  🎟Tickets:  
   Engagement: Likes=264, Reposts=48, Quotes=2, Replies=14, Bookmarks=19, Views=47998
 
 - **[post:18]** ID: 1943710240366604584  
@@ -495,7 +495,7 @@ Search twitter and x.com posts for where Charlie Kirk or TPUSA has public speaki
   Author: streamsofjoyinternational (@streamsofjoyHQ)  
   Timestamp: Sat, 12 Jul 2025 13:43:35 GMT  
   Media: 1 video (URL: https://video.twimg.com/amplify_video/1944029682682191872/vid/avc1/720x1280/0l3wnpymrrUWNH5I.mp4?tag=14, duration: 25433 ms)  
-  Content: ATLANTA 2025, DEEP CALLS UNTO DEEP🇺🇸🙏🙌🧎‍♀️🧎‍♂️  
+  Content: ATLANTA 2025, DEEP CALLS UNTO DEEP🇺🇸🙏🙌🧎‍♀🧎‍♂  
   Beyond the miracles, signs and wonders that will be evident of God’s supreme presence, we look forward to realignment of hearts to EL-ROI, deep connection, revival of hearts.  
   EL-ROI says come out for a time of unforgettable fellowship with me. The table is set, the feast is ready, your seat is waiting 🙌🙌  
   WHAT GOD CANNOT DO DOES NOT EXIST!!!🔥🔥  

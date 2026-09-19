@@ -356,7 +356,7 @@ Search twitter and x.com posts for where Charlie Kirk or TPUSA has public speaki
 - **Post ID: 1707812812033241505**  
   Author: Aly (@lilalyp)  
   Timestamp: Fri, 29 Sep 2023 17:41:18 GMT  
-  Content: I attended a phenomenal event put on by @MtnStatesPolicy this week in Spokane at The Gathering House - #TheWomanPanel 👩🏻👩🏼👩🏽👩🏻‍🦰 Hearing women in education and policy speak out about free market principles was SO inspiring! 🗽 Can’t wait for next month! 🗓️ @TPUSA @tpusastudents  
+  Content: I attended a phenomenal event put on by @MtnStatesPolicy this week in Spokane at The Gathering House - #TheWomanPanel 👩🏻👩🏼👩🏽👩🏻‍🦰 Hearing women in education and policy speak out about free market principles was SO inspiring! 🗽 Can’t wait for next month! 🗓 @TPUSA @tpusastudents  
   Media: 4 photos  
   Engagement: Likes=5, Reposts=0, Quotes=0, Replies=0, Bookmarks=0, Views=112
 
@@ -422,7 +422,7 @@ Search twitter and x.com posts for where Charlie Kirk or TPUSA has public speaki
 - **Post ID: 1707496948175941784**  
   Author: Matthew Boedy (@MatthewBoedy)  
   Timestamp: Thu, 28 Sep 2023 20:46:10 GMT  
-  Content: By day Charlie Kirk praises free speech on campus and his college student supporters who gathered at his Arizona State event. (After he was booed at another school) By night, Kirk calls for the state to defund their degree programs. 🤔🤷🏽‍♂️👇🏽  
+  Content: By day Charlie Kirk praises free speech on campus and his college student supporters who gathered at his Arizona State event. (After he was booed at another school) By night, Kirk calls for the state to defund their degree programs. 🤔🤷🏽‍♂👇🏽  
   Media: 3 photos  
   Engagement: Likes=3, Reposts=2, Quotes=1, Replies=0, Bookmarks=1, Views=548
 
@@ -450,7 +450,7 @@ Search twitter and x.com posts for where Charlie Kirk or TPUSA has public speaki
 - **Post ID: 1707142503198081263**  
   Author: Charlie Kirk (@charliekirk11)  
   Timestamp: Wed, 27 Sep 2023 21:17:44 GMT  
-  Content: “Mostly-Peaceful” Philly Looters and Mar-a-Lago is Worth WHAT?? With @DonaldJTrumpJr 🔥⬇️ https://podcasts.apple.com/us/podcast/the-charlie-kirk-show/id1460600818  
+  Content: “Mostly-Peaceful” Philly Looters and Mar-a-Lago is Worth WHAT?? With @DonaldJTrumpJr 🔥⬇ https://podcasts.apple.com/us/podcast/the-charlie-kirk-show/id1460600818  
   Engagement: Likes=234, Reposts=58, Quotes=1, Replies=42, Bookmarks=0, Views=41557
 
 - **Post ID: 1706768003776626792**  

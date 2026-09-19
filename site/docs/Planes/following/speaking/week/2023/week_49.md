@@ -463,7 +463,7 @@ Search twitter and x.com posts for where Charlie Kirk or TPUSA has public speaki
 - **[post:1]** Author: TPUSA Faith (@tpusafaith)  
   Timestamp: Fri, 08 Dec 2023 23:44:04 GMT  
   Likes=5, Reposts=2, Quotes=0, Replies=0, Bookmarks=0, Views=398  
-  Content: ✝️ A friendly reminder from Brandon Tatum! 💯  
+  Content: ✝ A friendly reminder from Brandon Tatum! 💯  
   Brandon will be joining us at AMFEST. Use promo code “FAITH13” for $13 General Admissions 🔗 [link]  
   (Media: 2 photos)
 
@@ -471,7 +471,7 @@ Search twitter and x.com posts for where Charlie Kirk or TPUSA has public speaki
   Timestamp: Fri, 08 Dec 2023 23:25:42 GMT  
   Likes=8, Reposts=6, Quotes=0, Replies=0, Bookmarks=0, Views=639  
   Content: Get ready to boot-scoot and boogie all night at the AmFest concert series! 🤠  
-  What song are you most excited to hear live? ⬇️ 🎸  
+  What song are you most excited to hear live? ⬇ 🎸  
   #AmFest2023 #tpusaevents #tpusa #eventsinphx #conservative #biggovsucks #myphx #Bigandrich #locash #raelynn  
   (Media: 1 photo)
 
@@ -540,7 +540,7 @@ Search twitter and x.com posts for where Charlie Kirk or TPUSA has public speaki
 - **[post:25]** Author: TPUSA Faith (@tpusafaith)  
   Timestamp: Fri, 08 Dec 2023 23:44:04 GMT  
   Likes=5, Reposts=2, Quotes=0, Replies=0, Bookmarks=0, Views=398  
-  Content: ✝️ A friendly reminder from Brandon Tatum! 💯  
+  Content: ✝ A friendly reminder from Brandon Tatum! 💯  
   Brandon will be joining us at AMFEST. Use promo code “FAITH13” for $13 General Admissions 🔗 [link]  
   *(Duplicate of post:1)*
 
@@ -548,7 +548,7 @@ Search twitter and x.com posts for where Charlie Kirk or TPUSA has public speaki
   Timestamp: Fri, 08 Dec 2023 23:25:42 GMT  
   Likes=8, Reposts=6, Quotes=0, Replies=0, Bookmarks=0, Views=639  
   Content: Get ready to boot-scoot and boogie all night at the AmFest concert series! 🤠  
-  What song are you most excited to hear live? ⬇️ 🎸  
+  What song are you most excited to hear live? ⬇ 🎸  
   #AmFest2023 #tpusaevents #tpusa #eventsinphx #conservative #biggovsucks #myphx #Bigandrich #locash #raelynn  
   *(Duplicate of post:2)*
 
@@ -600,7 +600,7 @@ Search twitter and x.com posts for where Charlie Kirk or TPUSA has public speaki
 - **[post:34]** Author: Eva Vlaardingerbroek (@EvaVlaar)  
   Timestamp: Fri, 08 Dec 2023 13:37:56 GMT  
   Likes=2704, Reposts=283, Quotes=13, Replies=75, Bookmarks=29, Views=144812  
-  Content: Let’s gooo! 🇳🇱❤️🇺🇸  
+  Content: Let’s gooo! 🇳🇱❤🇺🇸  
   See you all next week at #AMFEST2023!  
   (Media: 1 photo)
 
@@ -691,7 +691,7 @@ Search twitter and x.com posts for where Charlie Kirk or TPUSA has public speaki
   Timestamp: Fri, 08 Dec 2023 23:25:42 GMT  
   Likes=8, Reposts=6, Quotes=0, Replies=0, Bookmarks=0, Views=639  
   Content: Get ready to boot-scoot and boogie all night at the AmFest concert series! 🤠  
-  What song are you most excited to hear live? ⬇️ 🎸  
+  What song are you most excited to hear live? ⬇ 🎸  
   #AmFest2023 #tpusaevents #tpusa #eventsinphx #conservative #biggovsucks #myphx #Bigandrich #locash #raelynn  
   *(Duplicate of post:2)*
 

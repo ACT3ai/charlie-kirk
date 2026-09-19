@@ -341,7 +341,7 @@ Search twitter and x.com posts for where Charlie Kirk or TPUSA has public speaki
   ID: 1717981987527692493  
   Author: @basednblessed  
   Timestamp: Fri, 27 Oct 2023 19:09:59 GMT  
-  Content: ‼️POV: TPUSA x Dream City Christian School : High School Fearless Leaders edition‼️ 📣Championing faith and freedom on campus every day📣 Special thanks to Mr. Alvarado for supporting our efforts and securing tabling time and morning announcements 🫡  
+  Content: ‼POV: TPUSA x Dream City Christian School : High School Fearless Leaders edition‼ 📣Championing faith and freedom on campus every day📣 Special thanks to Mr. Alvarado for supporting our efforts and securing tabling time and morning announcements 🫡  
   Engagement: Likes=9, Reposts=3, Quotes=0, Replies=1, Bookmarks=0, Views=453  
   Media: Yes (4 items) – photos URLs: https://pbs.twimg.com/media/F9d_gi0bYAAODFL.jpg, https://pbs.twimg.com/media/F9d_gi0bkAA0IC7.jpg, https://pbs.twimg.com/media/F9d_gizbkAEyJiz.jpg, https://pbs.twimg.com/media/F9d_gi2bgAAymqu.jpg  
   (Mentions TPUSA campus event at Dream City Christian School.)
@@ -387,7 +387,7 @@ Search twitter and x.com posts for where Charlie Kirk or TPUSA has public speaki
   ID: 1717697290037788703  
   Author: @charliekirk11 (Charlie Kirk)  
   Timestamp: Fri, 27 Oct 2023 00:18:41 GMT  
-  Content: 🚨 THOUGHTCRIME IS LIVE 🚨 -The UFC/Bud Light Deal: Based or cringe? -Are college sports being ruined by too much money? -Why countries that are richer than ever having fewer kids than ever? -No, really, what the heck is an "Ebony Alert"? Tune in now on Rumble ⬇️  
+  Content: 🚨 THOUGHTCRIME IS LIVE 🚨 -The UFC/Bud Light Deal: Based or cringe? -Are college sports being ruined by too much money? -Why countries that are richer than ever having fewer kids than ever? -No, really, what the heck is an "Ebony Alert"? Tune in now on Rumble ⬇  
   Engagement: Likes=226, Reposts=48, Quotes=2, Replies=64, Bookmarks=0, Views=109252  
   Media: Yes (1 item) – photo URL: https://pbs.twimg.com/media/F9Z8esYbEAActia.jpg  
   (Charlie Kirk live show; no in-person event specified.)
@@ -422,7 +422,7 @@ Search twitter and x.com posts for where Charlie Kirk or TPUSA has public speaki
   ID: 1717580073434255522  
   Author: @RSBNetwork  
   Timestamp: Thu, 26 Oct 2023 16:32:55 GMT  
-  Content: GET READY for a big Trump weekend 🚨 ➡️ 10/28: President Trump headlines the Republican Jewish Coalition Summit in Las Vegas at 3 pm ET https://www.rsbnetwork.com/featured/live-trump-headlines-republican-jewish-coalition-summit-in-las-vegas-nevada-10-28-23/ ➡️ 10/28: Trump holds Nevada Commit to Caucus event in Las Vegas at 9 pm ET https://www.rsbnetwork.com/video/live-president-trump-holds-nevada-commit-to-caucus-event-in-las-vegas-10-28-23/ ➡️ 10/29: Trump to deliver remarks in Sioux City, Iowa, at 4 pm ET  
+  Content: GET READY for a big Trump weekend 🚨 ➡ 10/28: President Trump headlines the Republican Jewish Coalition Summit in Las Vegas at 3 pm ET https://www.rsbnetwork.com/featured/live-trump-headlines-republican-jewish-coalition-summit-in-las-vegas-nevada-10-28-23/ ➡ 10/28: Trump holds Nevada Commit to Caucus event in Las Vegas at 9 pm ET https://www.rsbnetwork.com/video/live-president-trump-holds-nevada-commit-to-caucus-event-in-las-vegas-10-28-23/ ➡ 10/29: Trump to deliver remarks in Sioux City, Iowa, at 4 pm ET  
   Engagement: Likes=1041, Reposts=477, Quotes=29, Replies=102, Bookmarks=12, Views=98552  
   (Trump events; no direct TPUSA/Charlie Kirk.)
 

@@ -426,7 +426,7 @@ Search twitter and x.com posts for where Charlie Kirk or TPUSA has public speaki
 ### Posts from @charliekirk11 (Charlie Kirk):
 - **Post ID: 1764731166777893322** (Mon, 04 Mar 2024 19:14:31 GMT)  
   Content: "Let's go Cal State Fullerton! March 14th I'll see you there!"  
-  (Quoted a @tpusastudents post promoting the event: "‼️California State University - Fullerton‼️we are coming to campus on March 14th!! 🗣🇺🇸 come debate & ask @charliekirk11 your questions, we will be on campus in 10 DAYS 🔥 free admission HERE - [link]".)  
+  (Quoted a @tpusastudents post promoting the event: "‼California State University - Fullerton‼we are coming to campus on March 14th!! 🗣🇺🇸 come debate & ask @charliekirk11 your questions, we will be on campus in 10 DAYS 🔥 free admission HERE - [link]".)  
   Engagement: Likes=296, Reposts=50, Quotes=3, Replies=23, Bookmarks=5, Views=75918.
 
 - **Post ID: 1765527127255093735** (Wed, 06 Mar 2024 23:57:23 GMT)  
@@ -493,7 +493,7 @@ Search twitter and x.com posts for where Charlie Kirk or TPUSA has public speaki
   Engagement: Likes=0, Reposts=0, Quotes=0, Replies=0, Bookmarks=0, Views=54.
 
 - **Post ID: 1766275800762921121** (Sat, 09 Mar 2024 01:32:21 GMT, from @gina_knight)  
-  Content: "🇺🇸🇺🇸🇺🇸❤️CharlieKirk The kids are all right! A massive crowd has turned out at Cal Poly for our Turning Point USA Change My Mind tabling event. In response to some protestors, a large group of students led an impromptu singing of the National Anthem. An incredible moment! 🔥🇺🇸🦅" (With video.)  
+  Content: "🇺🇸🇺🇸🇺🇸❤CharlieKirk The kids are all right! A massive crowd has turned out at Cal Poly for our Turning Point USA Change My Mind tabling event. In response to some protestors, a large group of students led an impromptu singing of the National Anthem. An incredible moment! 🔥🇺🇸🦅" (With video.)  
   Engagement: Likes=0, Reposts=0, Quotes=0, Replies=0, Bookmarks=0, Views=121.
 
 - **Post ID: 1766259991454101512** (Sat, 09 Mar 2024 00:29:32 GMT, from @vanhoa2272)  

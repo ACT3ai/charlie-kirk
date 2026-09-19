@@ -240,7 +240,7 @@ All relevant X posts from the keyword searches (general terms like "Charlie Kirk
   Timestamp: Fri, 31 May 2024 17:59:48 GMT  
   Engagement: Likes=69, Reposts=8, Quotes=1, Replies=18, Bookmarks=3, Views=7649  
   Media: Video (https://video.twimg.com/amplify_video/1796602365765877761/vid/avc1/720x1280/TilrzglpLMivLVL_.mp4)  
-  Content: Any college grads care to chime in? ⬇️
+  Content: Any college grads care to chime in? ⬇
 
 - **[post:9]** ID: 1796239250658353461  
   Author: @TPUSA (Turning Point USA)  

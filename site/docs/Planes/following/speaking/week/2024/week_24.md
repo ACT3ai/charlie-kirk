@@ -307,7 +307,7 @@ Search twitter and x.com posts for where Charlie Kirk or TPUSA has public speaki
   Author: @ArkansasGroyper  
   Timestamp: Sat, 15 Jun 2024 23:51:12 GMT  
   Content: Is it possible that Charlie Kirk/TPUSA could be behind what’s going on with AFPAC? Nick did humiliate Charlie’s event yesterday. Maybe this is his revenge? 🧐  
-  Of course this is just speculation, but you never know. 🤷🏻‍♂️
+  Of course this is just speculation, but you never know. 🤷🏻‍♂
 
 - **Post [post:2]** (and duplicate [post:5]):  
   Author: @JerryXhandle  

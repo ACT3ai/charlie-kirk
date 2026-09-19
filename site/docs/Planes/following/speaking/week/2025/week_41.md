@@ -335,7 +335,7 @@ Search twitter and x.com posts for where Charlie Kirk or TPUSA has public speaki
   Content: @NFL @nflnetwork @ESPNNFL Just needs to stay out of politics and the woke agenda. Let us enjoy football. I will be watching the Turning Point half time show for sure!
 
 - **Post ID: 1977885447734104358**  
-  Author: @justize_4all (One Nation Under God 🇲🇽⚖️🇺🇸)  
+  Author: @justize_4all (One Nation Under God 🇲🇽⚖🇺🇸)  
   Timestamp: Mon, 13 Oct 2025 23:53:32 GMT  
   Content: Celebrating anyone’s death is wrong and inhumane, we also need to recognize that people are free to feel how they feel — even indifference. Freedom of speech and expression doesn’t just protect what we like or agree with; it protects all perspectives, even the uncomfortable ones.
 
@@ -501,14 +501,14 @@ Search twitter and x.com posts for where Charlie Kirk or TPUSA has public speaki
 - **Post ID: 1976055524538929559**  
   Author: @MJTruthUltra (MJTruthUltra)  
   Timestamp: Wed, 08 Oct 2025 22:42:05 GMT  
-  Content: HOLEE SHYT‼️ Candace Owens just dropped a BOMB… 💣 On September 9, 2025, Charlie Kirk joined a Zoom call to prepare for anti-Israel challenges on his college tour. The call included Rabbi Pesach Wolicki, advisor and Israel365 News associate, Josh Hammer, Newsweek editor and commentator, and a few unnamed Turning Point USA producers. They discussed Kirk’s pro-Israel stance amid tensions with donors and conservative critics. Candace said around this same time during the Zoom meeting, Charlie Kirk was texting people telling them, “THEY ARE GOING TO KILL ME” Clip https://t.co/VSVuYduHm9 Full Show  
+  Content: HOLEE SHYT‼ Candace Owens just dropped a BOMB… 💣 On September 9, 2025, Charlie Kirk joined a Zoom call to prepare for anti-Israel challenges on his college tour. The call included Rabbi Pesach Wolicki, advisor and Israel365 News associate, Josh Hammer, Newsweek editor and commentator, and a few unnamed Turning Point USA producers. They discussed Kirk’s pro-Israel stance amid tensions with donors and conservative critics. Candace said around this same time during the Zoom meeting, Charlie Kirk was texting people telling them, “THEY ARE GOING TO KILL ME” Clip https://t.co/VSVuYduHm9 Full Show  
   (Media: video)  
   Engagement: Likes=18016, Reposts=3590, Quotes=86, Replies=306, Bookmarks=3463, Views=2036969
 
 - **Post ID: 1976073295838445958**  
   Author: @DiligentDenizen (Diligent Denizen 🇺🇸)  
   Timestamp: Wed, 08 Oct 2025 23:52:42 GMT  
-  Content: ‼️🇺🇸: Owens reports that on 9/9/2025 Charlie Kirk joined a call to prepare for anti-Israel debates with Rabbi Pesach Wolicki, an advisor and Israel365 News associate Josh Hammer, and a few unnamed Turning Point USA producers. She also said Kirk was texting friends warning "they are going to k1ll me" during the days leading up to his d3ath. 👀  
+  Content: ‼🇺🇸: Owens reports that on 9/9/2025 Charlie Kirk joined a call to prepare for anti-Israel debates with Rabbi Pesach Wolicki, an advisor and Israel365 News associate Josh Hammer, and a few unnamed Turning Point USA producers. She also said Kirk was texting friends warning "they are going to k1ll me" during the days leading up to his d3ath. 👀  
   (Media: video)  
   Engagement: Likes=312, Reposts=80, Quotes=1, Replies=38, Bookmarks=40, Views=18563
 
