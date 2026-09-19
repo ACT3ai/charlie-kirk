@@ -9,7 +9,7 @@
 ## Merrell / Hardscape
 - Paver install Sun Sept 14 into Monday
 - Ordinary: over-excavate for base is normal paving practice
-- Suspicious element: urgency + prior government dig + who authorized
+- Unexplained element: urgency + prior government dig + who authorized
 
 ## Competing contractor names
 - Hardscape Utah (Merrell's account)
@@ -18,7 +18,7 @@
 
 ## X / commentary
 - Alex Jones: re-poured concrete within days = cover-up
-- Brian Harpole (security head) finds rapid repave suspicious; urges FOIA (MJTruthUltra clip Nov 2025)
+- Brian Harpole (security head) questions the rapid repave; urges FOIA (MJTruthUltra clip Nov 2025)
 - Lead investigator David Hull: not consulted; learned from news
 - UVU controls property after release of scene
 
