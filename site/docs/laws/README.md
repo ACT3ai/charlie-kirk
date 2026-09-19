@@ -143,7 +143,7 @@ This includes other information to disclose that may or may not be related.
 * 16 people killed
 * Deadliest above-ground US industrial accident in 34 years
 * All on-site evidence destroyed
-* Was AES explosion intentional? Was it suspicious?
+* Was AES explosion intentional? Has its cause been explained?
 
 Cl
 

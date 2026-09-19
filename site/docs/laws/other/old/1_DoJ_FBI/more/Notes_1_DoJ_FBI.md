@@ -143,7 +143,7 @@ This approach draws from the Epstein Act's enumeration of specific record catego
 <div className="ck-4sq-card ck-4sq-stack">
   <div className="ck-4sq-body">
     <p className="ck-4sq-title"><a href="/Legal/Evidence-Sealing-2026">Evidence Sealing 2026</a></p>
-    <p className="ck-4sq-text">Sealed warrants, gag orders and restricted discovery, and what is scheduled to become public in 2026. A map of the closed doors, which is the precondition for most of the suspicion in this section.</p>
+    <p className="ck-4sq-text">Sealed warrants, gag orders and restricted discovery, and what is scheduled to become public in 2026. A map of the closed doors, which is the precondition for most of the unanswered questions in this section.</p>
     <a className="ck-4sq-btn" href="/Legal/Evidence-Sealing-2026">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
   </div>
 </div>
