@@ -1314,6 +1314,19 @@ for dirpath, _dirs, files in os.walk(PHOTOS):
         except OSError:
             pass
         orphans.append(fp)
+# A protected page's cluster overview must survive with it. When every item in
+# a cluster is a video, the cluster drops out of `nodes`, its overview.mdx looks
+# orphaned, and deleting it leaves the protected pages pointing "up" at a 404.
+protected_dirs = set()
+for fp in protected_video_pages:
+    d = os.path.dirname(fp)
+    while d.startswith(PHOTOS) and d != PHOTOS:
+        protected_dirs.add(d)
+        d = os.path.dirname(d)
+kept_overviews = [fp for fp in orphans
+                  if os.path.basename(fp) == "overview.mdx" and os.path.dirname(fp) in protected_dirs]
+orphans = [fp for fp in orphans if fp not in kept_overviews]
+protected_video_pages += kept_overviews
 for fp in orphans:
     os.remove(fp)
 # prune now-empty dirs
