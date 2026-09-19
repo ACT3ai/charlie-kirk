@@ -104,9 +104,7 @@ There is no video footage of Tyler Robinson taking the shot at Charlie Kirk. [So
 https://x.com/HealthRanger/status/1971085834863382949]
 No physical evidence links Tyler Robinson to the shooting of Charlie Kirk. [Source: X Post. 
 https://x.com/HealthRanger/status/1976161211252105472]
-Key people in Charlie Kirk's security team knew he was going to be shot and were in on it. 
-[Source: X Post. https://x.com/HealthRanger/status/1970914573604806814]
-The assassination was an inside job, with security scrubbing the crime scene. [Source: X Post. 
+The assassination was an inside job. [Source: X Post. 
 https://x.com/HealthRanger/status/1970925799340638354]
 Charlie Kirk was not shot with a 30-06 round, as shown by lack of tissue explosion. [Source: X 
 Post. https://x.com/HealthRanger/status/1971089359660253193]

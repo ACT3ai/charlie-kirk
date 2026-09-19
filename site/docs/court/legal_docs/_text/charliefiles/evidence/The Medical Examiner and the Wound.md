@@ -25,5 +25,5 @@ Forensic commentators call these details **medically plausible**; they are **not
 Because the trajectory and wound specifics are not officially released, the **full autopsy and wound trajectory** remain a legitimate open question — see [[What Is Genuinely Open]]. It does not follow that the neck wound is inconsistent with the rooftop: a shallow ~6° downward shot from 143 yards produces a near-horizontal neck wound. See [[Line of Sight and Shot Geometry]] and [[A Second Shooter from a Lower Angle]].
 
 ---
-**Answers / relates to:** [[The Missing Exit Wound]] · [[A Second Shooter from a Lower Angle]] · [[The Microphone Exploded]] · [[Security Knew It Was Coming]]
+**Answers / relates to:** [[The Missing Exit Wound]] · [[A Second Shooter from a Lower Angle]] · [[The Microphone Exploded]]
 **Sources:** [Salt Lake Tribune — security chief](https://www.sltrib.com/news/2025/11/19/charlie-kirks-security-chief/) · [[2025-09_charging_search-warrant-affidavit.pdf|Search-warrant affidavit]] · [[2026-07-06 - Preliminary Hearing Day 1 Transcript|Day 1 Transcript]] · [[2026-07-07 - Preliminary Hearing Day 2|Day 2 Legal Review]] · [[Sources]]

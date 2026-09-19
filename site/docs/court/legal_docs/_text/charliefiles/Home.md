@@ -56,7 +56,6 @@ This site takes each major claim one at a time, lays out **what fuels it**, **wh
 - [[They Have the Wrong Person]]
 - [[Kirk Team Seized the Security Footage|Kirk's team seized the UVU footage]]
 - [[A Staffer Pulled the SD Cards]]
-- [[Security Knew It Was Coming]]
 - [[The Body Camera Conveniently Failed]]
 - [[No Casing or Rifle on the Roof]]
 - [[The Scene Was Paved Over]]

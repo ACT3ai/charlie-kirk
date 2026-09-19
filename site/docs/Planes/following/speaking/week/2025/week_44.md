@@ -451,7 +451,7 @@ https://www.youtube.com/watch?si=Xjx1GtVehpRoCFgO&v=DP8d5a5nJQQ&feature=youtu.be
 **[post:16]** ID: 1984019287355576729  
 Author: JeffO @JeffOstler1  
 Timestamp: Thu, 30 Oct 2025 22:07:14 GMT  
-Content: These TPUSA events aren’t memorials. They’re campus event that have been scheduled and Erica is the CEO of Turning Point. She was there as CEO—not as the “grieving widow.”  
+Content: These TPUSA events aren’t memorials. They’re campus event that have been scheduled and Erica is the CEO of Turning Point. She was there as CEO.  
 I thought we weren’t supposed to criticize how women dress anyway!
 
 **[post:17]** ID: 1983739807189614938  

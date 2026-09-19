@@ -69,7 +69,7 @@ Autopsy report shows impossible bullet path, no gun/caliber listed. [Source: X P
 https://x.com/TheIntelSCIF/status/1975350580030631994]
 No .30-06 could cause observed damage without exit wound. [Source: X Post. 
 https://x.com/TheIntelSCIF/status/1974589194736431421]
-Security team acted suspiciously, no rifle visible on suspect. [Source: X Post. 
+No rifle visible on suspect. [Source: X Post. 
 https://x.com/TheIntelSCIF/status/1974253021405356037]
 CCTV shows suspect near UVU 20 minutes post-shooting. [Source: X Post. 
 https://x.com/TheIntelSCIF/status/1973977834164002822]

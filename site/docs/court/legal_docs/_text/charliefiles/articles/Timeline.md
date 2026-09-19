@@ -20,7 +20,7 @@ A running chronology of the case, from the shooting through the preliminary hear
 - **Oct 24** — A sealed motion hearing is held before **Judge Tony Graf**. → [[Judge Tony Graf]]
 - **Oct 27–28** — Rulings on courtroom appearance (civilian clothing / restraints) and a standing decorum order; stipulated extension of time. → [[Court Documents Index]]
 - **Nov** — The media-intervenor fight over sealing and publicity of records plays out; the State moves to amend the publicity/gag order.
-- **Nov 19** — Kirk's security chief **Brian Harpole** gives his first interview to the *Salt Lake Tribune*. → [[Security Knew It Was Coming]]
+- **Nov 19** — Kirk's security chief **Brian Harpole** gives his first interview to the *Salt Lake Tribune*.
 - **Dec 11** — In-person review hearing.
 
 ## 2026

@@ -77,7 +77,7 @@ The **defense case-in-chief opened on [[2026-07-09 - Preliminary Hearing Day 4|D
 - **[[Terryl Farnsworth]]** — CEO of Visual Impulse (A/V contractor); Exhibit 8.1.
 - **[[Brian Harpole]]** — **contracted** security lead at UVU (Integrity Security Solutions / Rockhouse); on the ground on 9/10.
 - **[[Dan Flood]]** — **TPUSA's in-house** head of security (former U.S. Marine); Harpole's friend; helped move Kirk to the vehicle. · **Justin Davis** — detail member / driver on 9/10. See [[Kirks Security Detail]].
-- **"Chrissy"** — TPUSA staffer handing out **mints** near the stage (the gesture misread online as a "signal" — see [[Security Knew It Was Coming]]).
+- **"Chrissy"** — TPUSA staffer handing out **mints** near the stage.
 - The **UVU Turning Point USA student chapter** — filed the event host request; the individual student organizer is **not named** in reporting.
 - **[[Greg Shaffer]]** — retired FBI SA; founder of Shaffer Security Group / the Active Shooter Prevention Project; TPUSA / Charlie Kirk's **security director 2015–2022** — the **predecessor** to the current detail. Says Harpole and Dan Flood **"stabbed [him] in the back"** and took the TPUSA contract (a personal/business dispute, *not* case evidence). His Sept. 2025 interview: the ~200-yard shot was *"almost impossible to defend against,"* and he expects blame to fall on the *"private security company."* See [[Kirks Security Detail]] and [[2025-09-12 - Greg Shaffer News Interview]].
 - **Tyler Boyer** — TPUSA figure (replaced as COO by **Justin Strife**, Sept 2, 2025).

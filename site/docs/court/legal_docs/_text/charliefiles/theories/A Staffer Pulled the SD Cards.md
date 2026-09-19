@@ -25,5 +25,5 @@ So: the **act happened**; it was **Kirk's own media team**; the footage **went t
 This is the honest one to sit with. Because the explanation comes from **Kirk-affiliated spokesmen** — not an independent investigator, and not yet sworn testimony on the *card handling* — the **chain of custody is a legitimate thing to test on cross-examination.** That's on the [[What Is Genuinely Open|open list]]. What it is **not** is control of the UVU surveillance — see [[Kirk Team Seized the Security Footage]].
 
 ---
-**Related:** [[The SD Cards]] · [[Kirk Team Seized the Security Footage]] · [[Security Knew It Was Coming]] · [[What Is Genuinely Open]]
+**Related:** [[The SD Cards]] · [[Kirk Team Seized the Security Footage]] · [[What Is Genuinely Open]]
 **Sources (primary):** Farnsworth Voluntary Statement (Exhibit 8.1) · TPUSA (Kolvet / Boyer) on-the-record accounts · [[Sources]]

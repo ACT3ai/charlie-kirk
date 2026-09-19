@@ -95,8 +95,6 @@ According to police audio, the first report of the shooting came in at 12:26 p.m
 
 
 * Questions: How did he get on the roof?
-* Who was Brown shirt (Arm Puller) Sunglasses guy: Setup mechanical issue on the left before the shooting. He took down the camera behind Charlie.  They think his name may be "Rick Cutlery" or Rick Cutler.
-* Rick Cutler IS the arm puller.
 * Rick Cutler: https://www.youtube.com/watch?v=Tx84ViFZkaA
    * Retired police officer 29 years of service.  Irving PD (TX?)
    * After retiring in 2019 he moved to Guatemala to aid in training and equipping first responders there.  
@@ -623,7 +621,7 @@ Founded by former police officer Brian Harpole.
 * Laine Schoneberger: Huskey Square Sunglass Dark Blue Shirt guy: Looks a lot like Laine Schoneberger (Laine Shoneberger), Chief Investment Officer and Managing Partner.  TPUSA sponsor rep from Yrefy. 
 * Dan Flood. Rayban Glasses that recorded. Dark blue button up shirt. (Not bald guy. Not Plaid. Not Dark blue shirt square glasses.)
 
-* Frank Turek: White shirt. White Hat. People think he signaled with touching is hat. Others claim he was Charlie's Close friend. I think interviewed publicly (probably on YouTube)
+* Frank Turek: White shirt. White Hat. Others claim he was Charlie's Close friend. I think interviewed publicly (probably on YouTube)
 
 UVU provided six campus police officers—about a quarter of the department's total force—to assist with crowd control and event oversight. Led by UVU Police Chief Jeff Long, this contingent was responsible for broader perimeter monitoring but reportedly did not conduct thorough inspections of nearby rooftops or buildings, from which the shooter accessed his position undetected. They engaged no drones.
 
@@ -836,9 +834,9 @@ TPUSA's Tyler Bowyer DOUBLY EXPOSED – Birthday Vid DROPS DRONE FOOTAGE They "C
 
 Oh, Tyler, you thought one lie was enough? Nah, fam – TPUSA just torched your "drones banned by uni cops" BS with their OWN birthday tribute vid posted Oct 14 (Charlie's 32nd). Watch: Official TPUSA cams from Sept 10 UVU event... including a CRYSTAL drone shot overhead, crowds swarming an hour pre-hit. Drones FLEW, Tyler – Charlie even reviewed the feed w/ Frank Turek, who warned him: "Too many buildings." You LIED to dodge blame.
 
-But wait – it gets WORSE. They claim FBI "warned" no footage release to "protect the investigation"? LOL. This vid? Straight 4K CLIPS from those "untouchable" cams – the exact stuff we've BEGGED for to ID the shooter(s), planes, & cover-up. If FBI gagged 'em, why drop THIS on his birthday? Selective "tribute" while hiding the red-zone cams, roof angles, & security logs? Smells like protecting insiders – Rick Cutler? Dan Flood? Or deeper?
+But wait – it gets WORSE. They claim FBI "warned" no footage release to "protect the investigation"? LOL. This vid? Straight 4K CLIPS from those "untouchable" cams – the exact stuff we've BEGGED for to ID the shooter(s), planes, & cover-up. If FBI gagged 'em, why drop THIS on his birthday? Selective "tribute" while hiding the red-zone cams, roof angles, & security logs? Smells like protecting someone.
 
-They COULD release it ALL tomorrow – full feeds, no edits – & we'd see the truth: Multiple shots? Palm gun? Spy plane drops? But nah, they cherry-pick to control the narrative. ENOUGH! Demand FULL TRANSPARENCY or it's COMPLICITY.
+They COULD release it ALL tomorrow – full feeds, no edits – & we'd see the truth: Multiple shots? Spy plane drops? But nah, they cherry-pick to control the narrative. ENOUGH! Demand FULL TRANSPARENCY or it's COMPLICITY.
 
 
 
@@ -913,7 +911,7 @@ No autopsy. Utah law (268-8-205) REQUIRES it for gun violence. But police audio 
 A cartridge from a semi-auto ejects INSIDE the tent, rolls down the tarp, and falls out. When I slowed the footage—it's crystal clear. We spotted something else: A scope or barrel poking thru the tent fabric. We debated it for an hour. Shooter was concealed, firing remotely?
 Enter the weapon: Israeli-made CornerShot. Built for corner ambushes—hinges at 90°, with camera feed & IR laser scope. Mount a Glock 9mm, flip it around the barrier, aim via screen. Ejects shells downward—explains the casing drop. IR laser? Bounced off Dr @DrFrankTurek's phone screen right before impact. Visible on display, invisible to eye.
 Ballistics breakdown by Dr. Chris Martenson @peakprosperity confirm High-speed cavitation event—overpressure expands Charlie's neck, snaps his necklace, causes "pugilist pose" (clenched fists from midbrain trauma). Instant death. But not a 30.06—too much energy, would've knocked him flying. It's a 9mm +P Israeli round: 1330 fps, fragments like hell, dumps energy inside.
-Setup was easy: Security blocks views, concrete pillar & AC vent for cover, boxes stacked behind tent. Shooter slips in unseen. Post-shot? Camera guy spins RIGHT (toward tent), not left (toward Tyler). Hand signals, chaos—echo chamber hides the pop. Sound sig analysis: Shooter within 36ft of the person recording.
+Setup was easy: concrete pillar & AC vent for cover, boxes stacked behind tent. Shooter slips in unseen. Post-shot? Camera guy spins RIGHT (toward tent), not left (toward Tyler). Hand signals, chaos—echo chamber hides the pop. Sound sig analysis: Shooter within 36ft of the person recording.
 Motive? Charlie was shifting. Strong pro-Israel TPUSA voice, but lately questioning Oct 7 narrative, stand-down theories. One Middle East power wanted him silenced to keep campus influence intact. "My integrity is being called into question," he told Megyn Kelly. Coincidence?
 Cover-up complete: Site concreted over, tent area repaired (blowback damage?). Blood on the podium—real, not faked. No trail cuz they compressed the wound carrying him out. They've mudded the ceiling too. Crime scene? Destroyed. Demand justice for Charlie—and exonerate Tyler.
 This isn't theory—it's evidence from lasers, casings, ballistics, leaks. @stevendenoon  (ex-CIA Black Op's) & I broke it down. Check his channel on YouTube: https://www.youtube.com/watch?v=zeioeWdmSIw 
@@ -962,27 +960,6 @@ Rapid destruction of a high-profile assassination crime scene is a tell-tale sig
 I'm sure they'll all say they just meant well and wanted to honor Charlie, or maybe they'll say that given the circumstances it wasn't the best choice, in hindsight, to act so soon after. Perhaps they'll say that whoever said it was scheduled maintenance spoke in error. Etc.
 
 If we had a real uncompromised FBI & law enforcement, they'd question Daniel & all involved in this debacle and search their records to see if any clues could be found that lead back to the perps. 
-
-
-=============== Rick Cutler & item under ====================
-EW VIDEO BOMBSHELL: Rick Cutler Seen Concealing Barrel in Hand—Proof He's Charlie Kirk's Second Shooter?! 😱
-
-OMG, you guys myself and 
-@WeAreNotGTM
- Just Uncovered JAW-DROPPING PROOF that the mysterious "brown shirt dude" lurking in the chaos aka RICK CUTLER, one of Charlie's very own bodyguards on that fateful day. We have video proof showing him with gun barrel in hand; allegedly PALMING A TOP-SECRET CIA PALM GUN! Inside job? Deep State drama? Spill the tea, America—we're here for it!
-
-Zoom in on that sketchy CRACK BETWEEN THE CROWD BARRIER VINYL SHEETS (yes, we're talking inches from the action), and BOOM—Cutler's yanking something SLIM-BLACK AND BARREL-LIKE straight outta his pocket... or wait, that suspicious little black case strapped to his hip? As he hoists it up to "brace" across his chest onto his left bicep, it's GLINTING like a villain's secret weapon. Not a fidget spinner, that's A PALM GUN, 100%!
-
-Poof! It disappears into his fist JUST as the fatal BANG echoes. Timing? Suspicious AF. Was he the second shooter playing double agent?
-
-Now, layer on 
-@jimmy_dore
- 's viral clip that's got everyone OBSESSED: A BULLET ZIPPING MID-AIR blasting RIGHT FROM CUTLER'S HAND! Watch his hand JERK FROM THE RECOIL like he just got ghosted, the BARREL sticking out between his knuckles, and that trippy BOW SHOCK SWIRL crowning the top—total supersonic chaos from point-blank range.  I can say with a high probability Rick is our SECOND SHOOTER; this was an UP-CLOSE BETRAYAL!
-
-RT And Tag 
-@RealCandaceO
- And Let's Get This Out There So The FBI Can't Keep Denying Reality!
-
 
 
 ==================. Patsys. ====================

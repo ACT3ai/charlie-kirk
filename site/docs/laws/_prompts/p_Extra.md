@@ -48,7 +48,7 @@ EXTRA LIST:
 14 Presence of a hatch beneath Charlie Kirk’s seat at the event venue, raising questions about access or staging.
 15 The crime scene being rapidly scrubbed, altered, or cleaned up post-incident, potentially to remove evidence.
 16 An autopsy on Charlie Kirk being declined, limiting forensic insights.
-17 Charlie Kirk’s close associates, including Erika Kirk, appearing strangely composed or unaffected immediately after the event.
+17 Charlie Kirk’s close associates appearing strangely composed or unaffected immediately after the event.
 18 FBI admission of possible multiple accomplices, with investigations into Discord chats, text messages, and bullet trajectories, questioning over 20 people.
 19 Theory of a potential "camera gun" or other non-traditional gun or weapon used in the assassination, disguised as event equipment.
 20 Witness Eric’s testimony describing the shot sound as resembling a 9mm or "cherry bomb," not a deep rifle report, suggesting a different weapon type.

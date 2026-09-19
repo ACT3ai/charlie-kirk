@@ -110,7 +110,7 @@ This document compiles all details provided in the uploaded source files regardi
 #### Day of Shooting Events (12:23 PM MT)
 
 * [cite_start]**Shooter Escape:** Tyler Robinson was already **jumping off roof 12:23**[cite: 20].
-* [cite_start]**Brown Shirt/Sunglasses Guy (Rick Cutler):** This person, potentially **"Rick Cutlery" or Rick Cutler** [cite: 25, 26][cite_start], allegedly **set up a mechanical issue** on the left before the shooting [cite: 25] [cite_start]and **took down the camera behind Charlie**[cite: 25].
+* [cite_start]**Brown Shirt/Sunglasses Guy (Rick Cutler):** This person, potentially **"Rick Cutlery" or Rick Cutler** [cite: 25, 26].
     * [cite_start]He is a **Retired police officer** (29 years of service) from Irving PD (TX?)[cite: 27].
 * [cite_start]**Hand-off/Security:** **Laine Schoneberger** (Chief Investment Officer/Managing Partner and **TPUSA sponsor rep from Yrefy**) [cite: 83][cite_start], reportedly looks like the **Huskey Square Sunglass Dark Blue Shirt guy**[cite: 83].
 * [cite_start]**South Door Photographer:** **Andrew Piskadlo** [cite: 159][cite_start], claims to be a photographer and his gloved arm is actually a **prosthetic arm**[cite: 159].

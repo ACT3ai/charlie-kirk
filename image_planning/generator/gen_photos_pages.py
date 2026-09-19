@@ -95,8 +95,21 @@ def _route_for(repo_path, csv_url):
     p = re.sub(r"\.(mdx?|md)$", "", p)
     real = "/" + p
     if csv_url and csv_url != real and not real.endswith("/overview"):
-        return csv_url
-    return real
+        return _url_safe(csv_url)
+    return _url_safe(real)
+
+
+def _url_safe(url):
+    """A few docs directories carry spaces and parentheses ("Topics3/Suspects
+    (List)"). Unescaped, a markdown link ends at the first space and the
+    reader gets a 404 — percent-encode just those characters."""
+    return url.replace(" ", "%20").replace("(", "%28").replace(")", "%29")
+
+
+def page_exists(repo_path):
+    """Hosts and site_page values in images.yaml outlive the pages they name
+    (a page gets deleted or moved); never emit a link to a file that is gone."""
+    return os.path.isfile(os.path.join(ROOT, repo_path))
 
 
 def site_page_link(repo_path):
@@ -118,8 +131,27 @@ def level2_link(dirname):
 
 
 # ---------- load hierarchy ----------
+# Cluster `_key` and `title` values are names, never numbers. YAML 1.1 reads an
+# unquoted key like 10020251215 as an int — and 100_20251215 as the SAME int,
+# because it treats underscores as digit separators — so casting afterwards
+# would lose the underscores. Keep the exact scalar text instead.
+class _NameKeysLoader(yaml.SafeLoader):
+    pass
+
+
+def _construct_mapping_keep_names(loader, node, deep=False):
+    for k, v in node.value:
+        if (isinstance(k, yaml.ScalarNode) and k.value in ("_key", "title")
+                and isinstance(v, yaml.ScalarNode) and v.tag != "tag:yaml.org,2002:null"):
+            v.tag = "tag:yaml.org,2002:str"
+    return yaml.SafeLoader.construct_mapping(loader, node, deep)
+
+
+_NameKeysLoader.add_constructor(
+    yaml.resolver.BaseResolver.DEFAULT_MAPPING_TAG, _construct_mapping_keep_names)
+
 with open(HIER) as f:
-    data = yaml.safe_load(f)
+    data = yaml.load(f, Loader=_NameKeysLoader)
 
 nodes = []          # flat list of included cluster nodes
 all_keys_seen = set()
@@ -131,7 +163,7 @@ MAX_DEPTH = 7
 
 
 def norm_key(k):
-    k = re.sub(r"[^A-Za-z0-9_]", "_", k or "X")
+    k = re.sub(r"[^A-Za-z0-9_]", "_", str(k) if k is not None and k != "" else "X")
     return k
 
 
@@ -890,7 +922,7 @@ for pg in img_pages:
     lines += [body, ""]
     if not src:
         lines += ["*Media pending — the image file for this entry is not yet hosted.*", ""]
-    hosts = host_pages(i)
+    hosts = [hp for hp in host_pages(i) if page_exists(hp)]
     if hosts:
         lines += ["## Where This Image Appears", "",
                   "This image is used on the following investigation page" + ("s" if len(hosts) > 1 else "") + ":", ""]
@@ -943,7 +975,7 @@ for n in nodes:
     # Cross-links out to the written pages this cluster mirrors: the node's
     # site_page first, then each site_level_2 section it covers.
     rel_links, seen_rel = [], set()
-    if n["site_page"]:
+    if n["site_page"] and page_exists(n["site_page"]):
         u, t = site_page_link(n["site_page"])
         rel_links.append((t, u))
         seen_rel.add(u)

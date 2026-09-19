@@ -136,8 +136,8 @@ Only soften claims that are UNVERIFIED, SPECULATIVE, or DISPUTED.
 --- Element 4: "Of and Concerning" a Specific Person ---
 
 Statements about unnamed, unidentified individuals carry much lower risk:
-  * "A member of the security team may have positioned themselves..." — lower risk
-  * "Rick Cutler, the close-protection officer, fired the shot" — high risk (named)
+  * "An unidentified person may have positioned themselves..." — lower risk
+  * "[Named person] fired the shot" — high risk (named)
 
 When a theory refers to unnamed people generically, it is lower priority than
 when it names or clearly identifies a specific living individual.
@@ -370,7 +370,7 @@ Do NOT soften these — they are either true, protected opinion, or low risk:
 * True organizational facts: "TPUSA organized the event," "Erika Kirk became
   CEO of TPUSA," "Tyler Robinson was charged with capital murder"
 * Attribution language already present: "allegedly," "reportedly," "some claim"
-* Generic unnamed references: "a member of the security detail may have..."
+* Generic unnamed references: "an unidentified person may have..."
 * Government agency institutional criticism (FBI, CIA as institutions cannot
   sue for defamation)
 * Clearly labeled theories, hypotheses, or opinion sections

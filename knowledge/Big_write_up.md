@@ -331,7 +331,6 @@ The shot was fired at 12:23 p.m. MDT, when Charlie Kirk was speaking at an event
 According to police audio, the first report of the shooting came in at 12:26 p.m.
 
 * Questions: How did he get on the roof?
-* Who was Brown shirt (Arm Puller) Sunglasses guy: Setup mechanical issue on the left before the shooting. He took down the camera behind Charlie.  They think his name may be "Rick Cutlery" or Rick Cutler.
 * Rick Cutler: https://www.youtube.com/watch?v=Tx84ViFZkaA
    * Retired police officer 29 years of service.  Irving PD (TX?)
    * After retiring in 2019 he moved to Guatemala to aid in training and equipping first responders there.  

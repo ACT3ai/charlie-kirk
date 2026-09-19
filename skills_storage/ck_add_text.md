@@ -2829,7 +2829,6 @@ over time.
 * They were going to kill him TOMORROW
 * Quotes from Charlie
 * Quotes from NON-CHARLIE
-* Rick Cutler : Hand Trigger
 * FBI Cover up
 * Ballistics: FBI CBLA Test
 * Shawn Sipes / Blake
