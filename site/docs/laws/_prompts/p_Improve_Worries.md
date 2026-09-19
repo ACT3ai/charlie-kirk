@@ -13,7 +13,9 @@ WORRIES_FILE is file {ROOT_DIR}/others/Worries_By_Each_4_Laws.md
 
 ORIGINAL_175_FILE is file {ROOT_DIR}/original/README.md
 
-INPUT_INVESTIGATION_FILE is file ~/BGit/Bryan_git/charlie-kirk/Charlie_Kirk.txt
+INPUT_INVESTIGATION_FILE is file ~/BGit/all/politics/charlie_kirk/Charlie_Kirk.txt
+  (Real file. Moved 2026-09-19. ~/BGit/Bryan_git/charlie-kirk/Charlie_Kirk.txt is now a symlink to it —
+   use that only to verify the location; always read and write the real path.)
 
 INPUT_GOALS_FILE is file {ROOT_DIR}/other/List_Of_Laws.md
 

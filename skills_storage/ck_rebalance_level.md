@@ -8,7 +8,9 @@ invocable: true
 !! ABSOLUTE RULE — Charlie_Kirk.txt IS READ-ONLY TO AI. NO EXCEPTIONS. !!
 ================================================================================
 
-PROTECTED_FILE is file ~/BGit/Bryan_git/charlie-kirk/Charlie_Kirk.txt
+PROTECTED_FILE is file ~/BGit/all/politics/charlie_kirk/Charlie_Kirk.txt
+  (Real file. Moved 2026-09-19. ~/BGit/Bryan_git/charlie-kirk/Charlie_Kirk.txt is now a symlink to it —
+   use that only to verify the location; always read and write the real path.)
 
 AI MUST NEVER WRITE TO, EDIT, APPEND TO, RE-ORDER, REFORMAT, OR DELETE ANYTHING
 IN {PROTECTED_FILE}. Not one character. Not even to add new material. Not even
@@ -41,7 +43,9 @@ and a replaced arrest-time header and line (8b967208). All four were restored.
 This rule exists so it never happens again.
 
 WHERE NEW CONTENT GOES INSTEAD:
-  CK_INBOX is file ~/BGit/Bryan_git/charlie-kirk/Charlie_Kirk_AI_Inbox.txt
+  CK_INBOX is file ~/BGit/all/politics/charlie_kirk/Charlie_Kirk_AI_Inbox.txt
+    (Real file. Moved 2026-09-19. ~/BGit/Bryan_git/charlie-kirk/Charlie_Kirk_AI_Inbox.txt is now a symlink to it —
+     use that only to verify the location; always read and write the real path.)
 
   When a mode in this skill would previously have written to {PROTECTED_FILE},
   write to {CK_INBOX} instead, append-only, using the same equal-sign section
@@ -86,7 +90,9 @@ MANDATORY: READ THESE FIRST
 Before doing ANY analysis, read BOTH of these files fully into context:
 
 ASSESS_MANUAL is file {ROOT_DIR}/prompts/Assess_Manual.md
-CK_FILE is file {ROOT_DIR}/Charlie_Kirk.txt
+CK_FILE is file ~/BGit/all/politics/charlie_kirk/Charlie_Kirk.txt
+  (Real file. Moved 2026-09-19. ~/BGit/Bryan_git/charlie-kirk/Charlie_Kirk.txt is now a symlink to it —
+   use that only to verify the location; always read and write the real path.)
 
 The Assessment Manual defines page structure requirements. The master
 investigation file provides the context needed to understand what topics

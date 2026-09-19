@@ -28,7 +28,9 @@ VIDEOS_L2_PAGE is file {VIDEOS_L2_DIR}/overview.mdx
 POSTER_DIR dir is {SITE_DIR}/static/img/video_posters
 HOME_PAGE is file {DOCS_DIR}/index.mdx
 PAGES_CSV is file {ROOT_DIR}/pages.csv
-CK_FILE is file {ROOT_DIR}/Charlie_Kirk.txt
+CK_FILE is file ~/BGit/all/politics/charlie_kirk/Charlie_Kirk.txt
+  (Real file. Moved 2026-09-19. ~/BGit/Bryan_git/charlie-kirk/Charlie_Kirk.txt is now a symlink to it —
+   use that only to verify the location; always read and write the real path.)
 ASSESS_MANUAL is file {ROOT_DIR}/prompts/Assess_Manual.md
 
 IMAGE_PLANNING_DIR dir is {ROOT_DIR}/image_planning

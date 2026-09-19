@@ -28,7 +28,9 @@ ROOT_CHARTER is file {ROOT_DIR}/CLAUDE.md
 
 ASSESS_MANUAL is file {ROOT_DIR}/prompts/Assess_Manual.md
 
-CK_FILE is file {ROOT_DIR}/Charlie_Kirk.txt
+CK_FILE is file ~/BGit/all/politics/charlie_kirk/Charlie_Kirk.txt
+  (Real file. Moved 2026-09-19. ~/BGit/Bryan_git/charlie-kirk/Charlie_Kirk.txt is now a symlink to it —
+   use that only to verify the location; always read and write the real path.)
 
 FLEET_FILE is file {CODE_DIR}/lib/fleet.js
 
@@ -74,7 +76,7 @@ STAGE 0 — READ FIRST, BEFORE TOUCHING ANYTHING
 ====================================================================
 
 * Read {CK_FILE}. It is the most important source there is and it takes precedence over
-  everything else. NEVER write to it. New material goes to {ROOT_DIR}/Charlie_Kirk_AI_Inbox.txt.
+  everything else. NEVER write to it. New material goes to ~/BGit/all/politics/charlie_kirk/Charlie_Kirk_AI_Inbox.txt.
 * Read {ROOT_CHARTER} and {FOLLOWING_CHARTER} in full. The following/ charter governs
   everything in {FOLLOWING_DIR} and the root charter governs the repo. This prompt does
   not repeat their rules; it obeys them.

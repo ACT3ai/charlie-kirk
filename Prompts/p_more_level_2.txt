@@ -29,7 +29,9 @@ PAGES_CSV is file {ROOT_DIR}/pages.csv
   * Master index of every public page. Column "level2_section" tells which
     Level 2 each page belongs to. Column "level" gives the hierarchy number.
 
-CK_FILE is file {ROOT_DIR}/Charlie_Kirk.txt
+CK_FILE is file ~/BGit/all/politics/charlie_kirk/Charlie_Kirk.txt
+  (Real file. Moved 2026-09-19. ~/BGit/Bryan_git/charlie-kirk/Charlie_Kirk.txt is now a symlink to it —
+   use that only to verify the location; always read and write the real path.)
   * Master investigation file (600K+). Raw evidence, quotes, timeline, court data.
 
 ASSESS_MANUAL is file {ROOT_DIR}/prompts/Assess_Manual.md

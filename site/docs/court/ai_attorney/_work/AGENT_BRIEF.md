@@ -173,7 +173,7 @@ Nothing here is legal advice, a criticism of any licensed attorney, or an allega
 
 ## 4. HARD PROHIBITIONS — any one of these is a blocking defect
 
-* **NEVER** write to `{ROOT}/Charlie_Kirk.txt`. Read-only to AI, no exception.
+* **NEVER** write to `~/BGit/all/politics/charlie_kirk/Charlie_Kirk.txt`. Read-only to AI, no exception.
 * **NEVER** touch `{SITE}/sidebars.ts`.
 * **NEVER** use an HTML comment `<!-- -->` in any `.md`/`.mdx` under `docs/`. It
   compiles locally and **fails the GitHub Pages build, freezing the whole live

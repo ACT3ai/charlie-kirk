@@ -20,8 +20,8 @@ better organized.
 |--------|------|
 | `ROOT_DIR` | `~/BGit/Bryan_git/charlie-kirk` |
 | `HOUSE_DIR` | `{ROOT_DIR}/site/docs/After/house/` — **all output pages go here** |
-| `CK_FILE` | `{ROOT_DIR}/Charlie_Kirk.txt` — master investigation file. **READ-ONLY. NEVER WRITE.** |
-| `CK_INBOX` | `{ROOT_DIR}/Charlie_Kirk_AI_Inbox.txt` — append-only inbox for new raw findings |
+| `CK_FILE` | `~/BGit/all/politics/charlie_kirk/Charlie_Kirk.txt` — master investigation file. **READ-ONLY. NEVER WRITE.** |
+| `CK_INBOX` | `~/BGit/all/politics/charlie_kirk/Charlie_Kirk_AI_Inbox.txt` — append-only inbox for new raw findings |
 | `PAGES_CSV` | `{ROOT_DIR}/pages.csv` — master page index; keep in sync |
 | `ASSESS_MANUAL` | `{ROOT_DIR}/prompts/Assess_Manual.md` — read FIRST; governs page writing and layout |
 | `RESEARCH_TOPICS` | `{ROOT_DIR}/Research/Topics/` — private topic files; search for house material |

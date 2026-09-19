@@ -7,8 +7,12 @@
     THIS_DIR dir is {FOLLOWING_DIR}apis/          ← this directory
     OVERLAP_DIR dir is {FOLLOWING_DIR}overlap/
     PAGES_CSV is file {ROOT_DIR}pages.csv
-    CK_FILE is file {ROOT_DIR}Charlie_Kirk.txt    ← READ-ONLY TO AI. NEVER WRITE.
-    CK_INBOX is file {ROOT_DIR}Charlie_Kirk_AI_Inbox.txt
+    CK_FILE is file ~/BGit/all/politics/charlie_kirk/Charlie_Kirk.txt    ← READ-ONLY TO AI. NEVER WRITE.
+      (Real file. Moved 2026-09-19. ~/BGit/Bryan_git/charlie-kirk/Charlie_Kirk.txt is now a symlink to it —
+       use that only to verify the location; always read and write the real path.)
+    CK_INBOX is file ~/BGit/all/politics/charlie_kirk/Charlie_Kirk_AI_Inbox.txt
+      (Real file. Moved 2026-09-19. ~/BGit/Bryan_git/charlie-kirk/Charlie_Kirk_AI_Inbox.txt is now a symlink to it —
+       use that only to verify the location; always read and write the real path.)
     ASSESS_MANUAL is file {ROOT_DIR}prompts/Assess_Manual.md
     FLIGHTS_CSV is file {FOLLOWING_DIR}flights.csv
     OVERLAPS_CSV is file {FOLLOWING_DIR}overlaps.csv

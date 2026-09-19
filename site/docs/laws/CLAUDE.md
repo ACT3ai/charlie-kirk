@@ -1,7 +1,7 @@
 
 ROOT_URL dir is ~/BGit/Bryan_git/Charlie_Kirk_175_Critical_To_Expose
 
-Read this into the context window ~/BGit/Bryan_git/charlie-kirk/Charlie_Kirk.txt
+Read this into the context window ~/BGit/all/politics/charlie_kirk/Charlie_Kirk.txt
 
 
 

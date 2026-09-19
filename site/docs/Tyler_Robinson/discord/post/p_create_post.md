@@ -17,7 +17,9 @@ POST_DIR dir is {ROOT_DIR}/site/docs/Tyler_Robinson/discord/post
 
 DISCORD_DIR dir is {ROOT_DIR}/site/docs/Tyler_Robinson/discord
 TYLER_DIR   dir is {ROOT_DIR}/site/docs/Tyler_Robinson
-CK_FILE     is file {ROOT_DIR}/Charlie_Kirk.txt
+CK_FILE     is file ~/BGit/all/politics/charlie_kirk/Charlie_Kirk.txt
+  (Real file. Moved 2026-09-19. ~/BGit/Bryan_git/charlie-kirk/Charlie_Kirk.txt is now a symlink to it —
+   use that only to verify the location; always read and write the real path.)
   READ ONLY. Never write, edit, append, reorder, or reformat this file.
   That rule is absolute and overrides everything in this prompt.
 

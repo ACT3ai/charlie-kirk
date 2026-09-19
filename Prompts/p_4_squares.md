@@ -101,7 +101,7 @@ WHAT ALREADY EXISTS - DO NOT REBUILD IT
 HARD PROHIBITIONS
 ============================
 
-* NEVER write to {ROOT_DIR}/Charlie_Kirk.txt. Read only. See {ROOT_DIR}/claude.md.
+* NEVER write to ~/BGit/all/politics/charlie_kirk/Charlie_Kirk.txt. Read only. See {ROOT_DIR}/claude.md.
 * NEVER touch {SITE_DIR}/sidebars.ts. Not to add a page, not to reorder one.
 * NEVER edit anything outside {DOCS_DIR} except {PAGES_CSV} and {WORK_DIR}.
 * NEVER use an HTML comment in a .mdx file. A raw <!-- --> compiles locally and

@@ -8,7 +8,9 @@ invocable: true
 !! ABSOLUTE RULE — Charlie_Kirk.txt IS READ-ONLY TO AI. NO EXCEPTIONS. !!
 ================================================================================
 
-PROTECTED_FILE is file ~/BGit/Bryan_git/charlie-kirk/Charlie_Kirk.txt
+PROTECTED_FILE is file ~/BGit/all/politics/charlie_kirk/Charlie_Kirk.txt
+  (Real file. Moved 2026-09-19. ~/BGit/Bryan_git/charlie-kirk/Charlie_Kirk.txt is now a symlink to it —
+   use that only to verify the location; always read and write the real path.)
 
 AI MUST NEVER WRITE TO, EDIT, APPEND TO, RE-ORDER, REFORMAT, OR DELETE ANYTHING
 IN {PROTECTED_FILE}. Not one character. Not even to add new material. Not even
@@ -41,7 +43,9 @@ and a replaced arrest-time header and line (8b967208). All four were restored.
 This rule exists so it never happens again.
 
 WHERE NEW CONTENT GOES INSTEAD:
-  CK_INBOX is file ~/BGit/Bryan_git/charlie-kirk/Charlie_Kirk_AI_Inbox.txt
+  CK_INBOX is file ~/BGit/all/politics/charlie_kirk/Charlie_Kirk_AI_Inbox.txt
+    (Real file. Moved 2026-09-19. ~/BGit/Bryan_git/charlie-kirk/Charlie_Kirk_AI_Inbox.txt is now a symlink to it —
+     use that only to verify the location; always read and write the real path.)
 
   When a mode in this skill would previously have written to {PROTECTED_FILE},
   write to {CK_INBOX} instead, append-only, using the same equal-sign section
@@ -49,6 +53,15 @@ WHERE NEW CONTENT GOES INSTEAD:
   summary, in plain words, exactly what was appended to the inbox and that it
   is waiting for him to merge into Charlie_Kirk.txt by hand if he wants it.
   Never merge it yourself.
+
+FILE LOCATION (moved 2026-09-19): both {PROTECTED_FILE} and {CK_INBOX} now live in
+~/BGit/all/politics/charlie_kirk/. The old paths at the charlie-kirk repo root
+(~/BGit/Bryan_git/charlie-kirk/Charlie_Kirk.txt and .../Charlie_Kirk_AI_Inbox.txt)
+are SYMLINKS to them. Always read and append through the REAL path. Use the symlink
+only to verify the location (`readlink ~/BGit/Bryan_git/charlie-kirk/Charlie_Kirk_AI_Inbox.txt`).
+Editing through the symlink risks an editor replacing the link with a plain file,
+leaving two diverging copies. If the real file is missing or a symlink has become a
+regular file, STOP and tell Bryan — never recreate either file.
 
 READING is always allowed. Read {PROTECTED_FILE} freely for context, quoting,
 section discovery, and analysis. The prohibition is on WRITING only.
@@ -132,8 +145,8 @@ Utah Valley University). It has two layers:
     site published at https://whoassassinatedcharliekirk.com.
 
 Key directories:
-  {ROOT_DIR}/Charlie_Kirk.txt     — Master investigation file. READ-ONLY TO AI.
-  {ROOT_DIR}/Charlie_Kirk_AI_Inbox.txt — where AI appends new text for Bryan to merge
+  ~/BGit/all/politics/charlie_kirk/Charlie_Kirk.txt     — Master investigation file. READ-ONLY TO AI.
+  ~/BGit/all/politics/charlie_kirk/Charlie_Kirk_AI_Inbox.txt — where AI appends new text for Bryan to merge
   {ROOT_DIR}/Details/             — Private people profiles, one subdir per person
   {ROOT_DIR}/Research/            — Raw research (PDFs/, raw/, Topics/)
   {ROOT_DIR}/knowledge/           — Synthesized write-ups and analysis
@@ -146,8 +159,12 @@ Key directories:
   {ROOT_DIR}/IPFS/                — IPFS evidence files and pin scripts
   {ROOT_DIR}/tmp/                 — Batch progress files for multi-URL processing
 
-CK_FILE is file {ROOT_DIR}/Charlie_Kirk.txt   ← READ-ONLY TO AI. NEVER WRITE.
-CK_INBOX is file {ROOT_DIR}/Charlie_Kirk_AI_Inbox.txt   ← AI writes new text HERE
+CK_FILE is file ~/BGit/all/politics/charlie_kirk/Charlie_Kirk.txt   ← READ-ONLY TO AI. NEVER WRITE.
+  (Real file. Moved 2026-09-19. ~/BGit/Bryan_git/charlie-kirk/Charlie_Kirk.txt is now a symlink to it —
+   use that only to verify the location; always read and write the real path.)
+CK_INBOX is file ~/BGit/all/politics/charlie_kirk/Charlie_Kirk_AI_Inbox.txt   ← AI writes new text HERE
+  (Real file. Moved 2026-09-19. ~/BGit/Bryan_git/charlie-kirk/Charlie_Kirk_AI_Inbox.txt is now a symlink to it —
+   use that only to verify the location; always read and write the real path.)
 SITE_DOCS_DIR is dir {ROOT_DIR}/site/docs/
 TRANSCRIBE_JS is file ~/BGit/all/tools/Transcription/Transcribe.js
 TRANSCRIBE_CONFIG is file {ROOT_DIR}/tmp/transcribe_config.yaml
@@ -248,7 +265,7 @@ RULES
 
 * {CK_FILE} (Charlie_Kirk.txt) IS READ-ONLY TO AI. See the ABSOLUTE RULE at the
   top of this skill. Do NOT write to it, not even additively. All new investigation
-  text goes to {CK_INBOX} = ~/BGit/Bryan_git/charlie-kirk/Charlie_Kirk_AI_Inbox.txt
+  text goes to {CK_INBOX} = ~/BGit/all/politics/charlie_kirk/Charlie_Kirk_AI_Inbox.txt
   instead, append-only, and Bryan merges it by hand.
 
 * NEVER remove, delete, or reduce any existing text in {CK_FILE} or {CK_INBOX}.

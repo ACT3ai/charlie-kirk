@@ -1,6 +1,8 @@
 ROOT_DIR dir is ~/BGit/Bryan_git/charlie-kirk/ck/people/Dustin_Bednarz
 
-CK_INVESTIGATION_FILE is file ~/Library/CloudStorage/Dropbox/Bryan/Personal/Politics/Charlie_Kirk/Charlie_Kirk.txt
+CK_INVESTIGATION_FILE is file ~/BGit/all/politics/charlie_kirk/Charlie_Kirk.txt
+  (Real file. Moved 2026-09-19. ~/BGit/Bryan_git/charlie-kirk/Charlie_Kirk.txt is now a symlink to it —
+   use that only to verify the location; always read and write the real path.)
 
 OUTPUT_FILE is file {ROOT_DIR}/Dustin_Bednarz.md
 
