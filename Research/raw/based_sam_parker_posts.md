@@ -190,10 +190,6 @@ MLK: Lone gunman Ray, magic bullet, Jewish involvement via Raul and Jack Ruby as
 [Source: X Post. https://x.com/BasedSamParker/status/1971291600237240562]
 Yitzhak Rabin parallels: Lone gunman, irregularities, crime scene tampered. [Source: X Post. 
 https://x.com/BasedSamParker/status/1971737713587187785]
-Possible muzzle flash in video suggests second shooter from Sorensen Center roof. [Source: X 
-Post. https://x.com/BasedSamParker/status/1977635020828561455]
-Trajectory from Sorensen Center matches wound analysis by Chris Martenson and Baron 
-Coleman. [Source: X Post. https://x.com/BasedSamParker/status/1977635020828561455]
 Google Trends: George Zinn and Beau Mason searched from DC IPs in July 2025. [Source: X 
 Post. https://x.com/BasedSamParker/status/1977044018011029955]
 Hunter Kozak searched from Israeli IPs in early August 2025. [Source: X Post. 
@@ -220,8 +216,6 @@ Robert Bohls possibly moved to Saratoga Springs, UT, near NSA facility in March-
 [Source: X Post. https://x.com/BasedSamParker/status/1974297452464452028]
 Everyone in Kirk's circle suspected Israel killed him. [Source: X Post. 
 https://x.com/BasedSamParker/status/1968647546039115830]
-Possible alternate second shooter scenario from high roof, but unlikely. [Source: X Post. 
-https://x.com/BasedSamParker/status/1969410681276678240]
 Charlie Kirk not wearing body armor or bulletproof vest. [Source: X Post. 
 https://x.com/BasedSamParker/status/1969778022850208068]
 Assassination benefits Israel: pulls Right to MAGA, targets antizionist Left, slows horseshoe 

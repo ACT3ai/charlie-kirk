@@ -66,9 +66,13 @@ The aircraft's maneuvers on September 10, 2025, included descending from 41,000 
 203-204 feet AGL adjacent to the UVU campus, sparking speculation about surveillance or 
 drone operations. [Source: X Post. 
 https://x.com/I_Am_JohnCullen/status/1974815436144365734]
-N1098L is equipped for launching and retrieving drones, and multiple unidentified aerial 
-vehicles (UAVs) were reportedly observed at the UVU scene around the time of the shooting. 
-[Source: X Post. https://x.com/JG_CSTT/status/1966657353891172651]
+Multiple unidentified aerial vehicles (UAVs) were reportedly observed at the UVU scene 
+around the time of the shooting. [Source: X Post. https://x.com/JG_CSTT/status/1966657353891172651]
+[Note: The plane very likely did not launch drones. It very likely may have been a training 
+plane, not built out to be able to launch drones. It may have been there to waste the time of 
+citizen investigators. If the people who planned for it to be there knew the crime would 
+happen, that may be a path to people who had foreknowledge. We do not claim that is true — we 
+claim it is very important to investigate and determine whether it is true.]
 The flight path on September 10, 2025, was a repositioning flight, but the repeated low-
 altitude deviations over the UVU area are considered anomalous and not standard for training 
 or routine operations. [Source: X Post. https://x.com/quaeriteX/status/1977160691091149124]
@@ -84,10 +88,6 @@ the incident. [Source: X Post. https://x.com/AngelaWinn51203/status/197748271743
 N1098L was observed flying over Provo again on October 9, 2025, and then to Salinas, 
 California, a location with drone test facilities. [Source: X Post. 
 https://x.com/diddlezs/status/1976462143529812066]
-The aircraft's presence twice at low altitude near UVU on the day of the shooting has fueled 
-theories of military or CIA involvement in Charlie Kirk's assassination, including potential 
-monitoring, recording, or direct participation. [Source: X Post. 
-https://x.com/I_Am_JohnCullen/status/1971391855901409656]
 N1098L is not an ISR/HADES-equipped spy plane but is used for training future HADES pilots, 
 with noted unusual descent maneuvers possibly related to steep approach certification. 
 [Source: X Post. https://x.com/tjphager/status/1977127706698400020]

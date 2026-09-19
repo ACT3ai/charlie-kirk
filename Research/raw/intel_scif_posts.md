@@ -105,8 +105,6 @@ Exit wound theory, multiple inconsistencies. [Source: X Post.
 https://x.com/TheIntelSCIF/status/1971257161838702944]
 Man in medical attire broke into crime scene. [Source: X Post. 
 https://x.com/TheIntelSCIF/status/1970908298531803481]
-Hand-off seen post-shooting near body. [Source: X Post. 
-https://x.com/TheIntelSCIF/status/1970876453521695073]
 "Snake Eyes" movie parallels assassination. [Source: X Post. 
 https://x.com/TheIntelSCIF/status/1970866165623759185]
 Witness describes shooter in tactical gear, smaller rifle. [Source: X Post. 
@@ -172,20 +170,14 @@ https://x.com/i/grok?conversation=1978510189939863632 5/7
 
 No .30-06 conclusion. [Source: X Post. 
 https://x.com/TheIntelSCIF/status/1974589194736431421]
-2nd shooter possible. [Source: X Post. 
-https://x.com/TheIntelSCIF/status/1977231830123204995]
 Armed man at stadium. [Source: X Post. 
 https://x.com/TheIntelSCIF/status/1969420372459069849]
-Gun flash behind tent. [Source: X Post. 
-https://x.com/TheIntelSCIF/status/1977493617083076867]
 No blood from behind. [Source: X Post. 
 https://x.com/TheIntelSCIF/status/1969193611641426041]
 No exit wound ruined narrative. [Source: X Post. 
 https://x.com/TheIntelSCIF/status/1976431652134949206]
 Kirk noticed truth, rejected control. [Source: X Post. 
 https://x.com/TheIntelSCIF/status/1976082242825867744]
-Handoff post-shooting. [Source: X Post. 
-https://x.com/TheIntelSCIF/status/1970876453521695073]
 Bullet removed pre-autopsy. [Source: X Post. 
 https://x.com/TheIntelSCIF/status/1970167484582920673]
 Pendant impaling theory. [Source: X Post. 

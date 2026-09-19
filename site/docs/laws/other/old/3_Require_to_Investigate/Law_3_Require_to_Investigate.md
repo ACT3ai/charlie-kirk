@@ -21,7 +21,7 @@ To require the Federal Bureau of Investigation, all relevant federal and state l
    - Employs all available investigative tools and resources
    - Does not exclude any suspect, theory, or line of inquiry without documented justification reviewed by the independent monitor
    - Is conducted with the same rigor as any investigation of the death of a prominent public figure
-   - Specifically investigates all leads and theories identified in Schedule A (175 Critical Disclosure Items), including but not limited to: the exploding microphone theory, foreign intelligence service involvement, evidence of cover-up, alternative shooters, evidence planting, and electronic warfare
+   - Specifically investigates all leads and theories identified in Schedule A (175 Critical Disclosure Items), including but not limited to: the exploding microphone theory, foreign intelligence service involvement, evidence of cover-up, evidence planting, and electronic warfare
    - Does not treat any government agency, intelligence service, or foreign government as exempt from suspicion
 
 (d) **"Schedule A"** means the document titled "Charlie Kirk 175 Critical To Expose" as maintained at https://github.com/BryanStarbuck/Charlie_Kirk_175_Critical_To_Expose, incorporated by reference.
@@ -66,7 +66,7 @@ To require the Federal Bureau of Investigation, all relevant federal and state l
    4. FOIA and GRAMA requests related to distraction people that were blocked -- who blocked them, why
    5. Decisions not to charge distraction people -- who made those decisions, any instructions from FBI
 
-**Alternative Shooter / Evidence Planting:**
+**Evidence Chain of Custody / Evidence Planting:**
    1. Chain of custody for the Mauser rifle -- gaps, the K-9 failure to find it, the FBI-directed re-search
    2. DNA and fingerprints on the rifle, trigger, scope, towel, cartridges -- any foreign handler DNA
    3. Clothing discrepancies between the rooftop figure and [Tyler Robinson](/People/tyler-robinson)

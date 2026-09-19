@@ -109,9 +109,6 @@ A van/SUV with an open back hatch was present prior to Charlie Kirk taking the s
 @I_Am_JohnCullen
 No exit wound from a .30-06 round is physically impossible. [Source: X Post. 
 https://x.com/I_Am_JohnCullen/status/1975984621008585034] @I_Am_JohnCullen
-Two shooters may have been involved: one close and one far away, possibly with a .22 pistol 
-with suppressor. [Source: X Post. 
-https://x.com/I_Am_JohnCullen/status/1975982887012057295] @I_Am_JohnCullen
 The police response at UVU after the shooting was analyzed for inconsistencies. [Source: X 
 Post. https://x.com/I_Am_JohnCullen/status/1969866389730324951] @I_Am_JohnCullen
 Skye Valadez was a valid suspect due to uploading tracks like "Charlie Kirk Dead at 31" before 

@@ -100,7 +100,7 @@ To establish independent investigation teams led by designated trusted public fi
    1. **Exploding Microphone Theory:** The DoD contract, the [AES](/Mic/AES) facility, the August 25 flight, the microphone evidence, explosive residue, wound characteristics, and the AES factory explosion
    2. **Foreign Intelligence Involvement:** Israeli cell phones at UVU, Egyptian aircraft and military contractors, surveillance planes, Counter-UAS testing, foreign nationals in the security zone
    3. **FBI Cover-Up Evidence:** FBI requesting video deletion, remotely deleted videos, crime scene paving, blocked FOIAs, decisions not to charge distraction people
-   4. **Alternative Shooter / Evidence Planting:** Rifle chain of custody, K-9 failure, FBI-directed re-search, clothing discrepancies, man in black at construction site, alternative calibers, laser targeting
+   4. **Evidence Chain of Custody / Evidence Planting:** Rifle chain of custody, K-9 failure, FBI-directed re-search, clothing discrepancies, man in black at construction site, alternative calibers, laser targeting
    5. **Financial Connections:** Wire transfers to [Tyler Robinson](/People/tyler-robinson), foreign financial activity in Utah
    6. **Psychological Operations:** Manipulation of Tyler Robinson, and communications via Discord/Steam/in-game chat
    7. **Pre-Planning and Foreknowledge:** [Fort Huachuca](/US_Intelligence/Fort_Huachuca/overview) meetings, One Rodney Square meetings, TPUSA security planning anomalies, Charlie Kirk's death threats, the declined business deal, Hampton meeting

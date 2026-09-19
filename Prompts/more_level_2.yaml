@@ -361,7 +361,7 @@ more_level_2:
       level_3:
         - name: Harpole_Turek_Contradictions
           description: Conflicting accounts of what happened inside the SUV.
-          found_information: Turek reportedly claimed CPR; Harpole reportedly cut off Charlie's "Freedom" shirt at the hospital; Harpole's alibi (Dallas/DFW Sept 8) questioned. All framed as allegations.
+          found_information: Turek reportedly claimed CPR; Harpole reportedly cut off Charlie's "Freedom" shirt at the hospital. All framed as allegations.
           sources:
             - "~/_mai/twitter/ProjectConstitu/2070324804272484598/post.json"
         - name: No_911_CPR_Contradiction
@@ -617,12 +617,6 @@ more_level_2:
       found_information: GRAMA arrest affidavit obtained; alleged "close family"/furry-community links to Lance Twiggs and a "Knudsen" insurance/surname overlap with Twiggs' mother; speculation tying his gun to the case weapon. Unproven.
       sources:
         - "~/_mai/twitter/ProjectConstitu/2072174724327633322/post.json"
-    - name: Bruce_Hibbs
-      under_level_2: Suspects
-      description: Named individual alleged to have delivered an "explosive-laden device."
-      found_information: A post claims a video of Bruce Hibbs in a hot tub in northern Utah and calls him "the man we believe delivered the explosive-laden device." Reported allegation only.
-      sources:
-        - "~/_mai/twitter/ProjectConstitu/2070270203301122558/post.json"
     - name: Lance_Twiggs_Planning_Sketch
       under_level_2: Suspects
       description: Alleged drawing by Lance Twiggs resembling an assassination plan; patsy framing of Tyler.
@@ -715,7 +709,7 @@ more_level_2:
     - name: NCTC_Butler_Link
       under_level_2: Proof_Intel_Services
       description: An NCTC contact reportedly tying the method to the Butler PA attack.
-      found_information: A researcher describes a Sept 18 call with an NCTC contact whose theory was a "rogue CIA faction," citing N1098L HADES maneuvers and stating NCTC believes the same group did Butler ("same drones"). Single-source.
+      found_information: A researcher describes a Sept 18 call with an NCTC contact whose theory was a "rogue CIA faction," stating NCTC believes the same group did Butler ("same drones"). Single-source.
       sources:
         - knowledge/FULL_WRITE_UP.md
     - name: Elbit_Systems_Claim

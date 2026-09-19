@@ -191,7 +191,7 @@ Six independent teams may duplicate effort.
 
 * [Law 2](/laws/US_Intel/Law_2_US_Intel) would force Congress to explain electronic jamming at UVU.
 * UVU runs its own drone program yet reportedly [flew none that day](/Drones/UVU_Security_No_Drones).
-* A [cross-section diagram](/Electrocution/overview) claims a below-grade service cavity sat under the stage.
+* A [cross-section diagram](/Electrocution/overview) claims a below-grade service cavity sat under the stage. The electrocution story built on it appears to be a fed-slop narrative: no burn, arc mark, or current path has been reported, and the evidence points to [an explosive at the microphone](/Mic/overview).
 
 ## Related Areas
 

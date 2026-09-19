@@ -67,7 +67,7 @@ All four drafts exist for one reason: Charlie Kirk was assassinated on September
     - Exploding microphone theory (DoD contract, [AES](/Mic/AES) facility, Heber-Nashville flight, AES explosion, physical evidence)
     - Foreign intelligence involvement (Israeli cell phones, Egyptian aircraft, HADES spy plane, foreign operatives, Counter-UAS testing)
     - Evidence of cover-up (FBI directing video deletion, crime scene paving, FOIA blocks, remote device wiping)
-    - Alternative shooter/weapon planting theories (7 specific leads)
+    - Evidence chain of custody / weapon planting (7 specific leads)
     - Financial connections (TPUSA donors, foreign financial flows, [Scott Lazerson](/People/scott-lazerson))
     - Psychological operations (3 specific leads)
     - Pre-planning/foreknowledge (Kirk's "kill me" texts, Hamptons meeting, [Fort Huachuca](/US_Intelligence/Fort_Huachuca/overview), Jerusalem Post pre-announcement)

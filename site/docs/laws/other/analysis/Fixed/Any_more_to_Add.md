@@ -58,9 +58,9 @@ All items #176 through #201 proposed in this analysis have been incorporated int
 
 ---
 
-## [Butch Hibbs](/People/butch-hibbs) & Exploding Microphone
+## Pocket Object Records & Heber City Flight
 
-**#190: Butch Hibbs at UVU Event** — ADDED (Law item #191 in all four laws)
+**#190: Object in [Butch Hibbs](/People/butch-hibbs)'s Pocket at UVU Event** (records only — no claim that it is a microphone receiver, that he knew anything in advance, or that he was involved) — ADDED (Law item #191 in all four laws)
 
 **#191: Heber City to Nashville Flight (August 25, 2025)** — ADDED (Law item #192 in all four laws)
 
@@ -119,7 +119,7 @@ All items #176 through #201 proposed in this analysis have been incorporated int
 
 Citizen investigators and legislative advocates on X argue that ordinary FOIA and criminal discovery will not force full production in the Charlie Kirk case, citing **JFK Records Act failures** (agencies missing decades of deadlines; reports of large unreviewed FBI caches) and the **Epstein Files Transparency Act** pattern of partial dumps without a Special Master with teeth. Accounts such as **[@HolonCitizen](/Influencers/x/holoncitizen)** have promoted a four-law package (FBI/DOJ disclosure, IC disclosure, mandatory investigation, trusted civilian investigators) and named figures including Candace Owens, Dave Smith, Tucker Carlson, Ian Carroll, and others as proposed **trusted investigators** under Law 4-style designs — a **policy proposal**, not an enacted statute.
 
-Parallel media clips recirculated by accounts such as **[@FurkanGozukara](/Influencers/x/furkangozukara)** claim **Candace Owens** has alleged federal discovery obstruction (FBI/ATF files; director-level blocks). Counter-posts argue the Robinson case already has DNA, video, and confession-note material unlike JFK and therefore needs no special act. This page records both the **demand for forced disclosure** and the **official-narrative pushback** so readers can judge whether Schedule A-style lists (FBI 302s, cell data, aircraft, drones, ballistics, AV SD cards) match what X investigators say remains withheld.
+Parallel media clips recirculated by accounts such as **[@FurkanGozukara](/Influencers/x/furkangozukara)** claim **Candace Owens** has alleged federal discovery obstruction (FBI/ATF files; director-level blocks). Counter-posts argue the Robinson case already has DNA, video, and confession-note material unlike JFK and therefore needs no special act. Investigators answer that none of that material shows how Charlie died: the ATF could not tie the autopsy fragment to the rifle, and the physical evidence points to [an explosive at his microphone](/Mic/overview), not the government's .30-06 account. This page records both the **demand for forced disclosure** and the **official-narrative pushback** so readers can judge whether Schedule A-style lists (FBI 302s, cell data, aircraft, drones, ballistics, AV SD cards) match what X investigators say remains withheld.
 
 Related public pages: [Fix overview](/Fix/overview), [laws landing](/laws), Discovery, [explain all four laws](/laws/explain/all/overview).
 

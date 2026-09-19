@@ -54,10 +54,10 @@ REASONING: His powerful [30-06 Mauser 98 gun] would have destroyed his neck. And
 
 ## Areas of Investigation
 - [FBI]: [(Possible) Cover-up], [Conneticut]
-- [Planes]: [Drone Launching N1098L], [Leadership Plane]
+- [Planes]: [N1098L], [Leadership Plane]
 - [TPUSA]: [Security Team], [Employees], [Donors]
 - [Suspects (List)]: [Tyler Robinson], [CIA], [Israel]
-- [Possible Shootering Locations]: [Close Up], [South Stairs], [Tyler Robinson Shooting], [Drone], [Other]
+- [Possible Shootering Locations]: [Close Up], [Tyler Robinson Shooting], [Other]
 - [Locations]: [UVU Courtyard], [Tent], [Tyler Location]
 - [Maps]
 - [Videos] - [Location]
@@ -267,9 +267,9 @@ Charlie Kirk was assassinated on Sept 10th 2025. The government tries to claim t
 
 The evidence is that Tyler's powerful 30-06 bullet couldn't have killed Charlie Kirk.
 
-There are a long list of indicates that other possible shooter or two could have killed Charlie Kirk.
+There are a long list of indications that something other than that bullet killed Charlie Kirk.
 
-There is also a chance that his lapel mic also possibly exploded.
+There is a chance that his lapel mic possibly exploded.
 
 CHarlie Kirk's TPUSA organization is politically strategically critical in the USA. It is also critical for Israel to control USA republicans and young people and university students think and what they politically support.
 
@@ -331,9 +331,6 @@ The shot was fired at 12:23 p.m. MDT, when Charlie Kirk was speaking at an event
 According to police audio, the first report of the shooting came in at 12:26 p.m.
 
 * Questions: How did he get on the roof?
-* Rick Cutler: https://www.youtube.com/watch?v=Tx84ViFZkaA
-   * Retired police officer 29 years of service.  Irving PD (TX?)
-   * After retiring in 2019 he moved to Guatemala to aid in training and equipping first responders there.  
 * Where did the camera behind Charlie go? Who took it?
 
 =================================
@@ -348,8 +345,9 @@ The Special Agent in Charge (SAIC) of the FBI's Salt Lake City (Utah) field offi
 ### N1098L
 ============ N1098L =================
 Flight N1098L from Spy program HADES (High, Accuracy, Detection & Exploitation, System). 
-* Flew at 41,000 altitude. Except dropped to 203 feet, slowed to stall speed 116 knots to drop off drones before shooting. Looped around. Picked drones up 23 minutes after shooting. Again dropping to 203 feet altitude, 116 knots stall speed. 1 mile from UVU campus when doing the drop off & pick up. Took off from Biggs Army Airfield.
-* 9:16 AM MT drones dropped off. 12:23 MT Assassination. 12:48 MT drones picked up.
+* Flew at 41,000 altitude. Except dropped to 203 feet, slowed to 116 knots before the shooting. Looped around. Low again 23 minutes after the shooting, again at 203 feet altitude, 116 knots. About 1 mile from UVU campus on both low passes. Took off from Biggs Army Airfield.
+* 9:16 AM MT first low pass. 12:23 MT Assassination. 12:48 MT second low pass.
+* The plane very likely did not launch drones. It very likely may have been a training plane, not built out to be able to launch drones. It may have been there to waste the time of citizen investigators. If the people who planned for it to be there knew the crime would happen, that may be a path to people who had foreknowledge. We do not claim that is true — we claim it is very important to investigate and determine whether it is true.
 
 Military Drones flying at Charlie Kirk shooting went 150 mph & were hard to see. But picked up by phone cameras.
 https://thedefensepost.com/2025/09/10/us-hades-spy-plane/amp/
@@ -388,12 +386,6 @@ It was ours.  From either the Pentagon, or Langley.
 
 It did the same thing, 3 hours prior to the shooting.
 
-Weaponized UAV dropoff and pickup?
-
-Drones drop from 650' above and into the water ~3 hours prior to the incident on the initial decent.
-
-Drones are "picked up" from 300' above the water ~3 seconds after the incident on the second decent.
-
 Flight Completed: 
 Departed Robert Gray Army Airfield (BIF/El Paso, TX) at 14:18 local time and arrived at Corpus Christi International Airport (CRP/Corpus Christi, TX) at 15:35 local time. 
 Flight duration: 1 hour 17 minutes.
@@ -410,14 +402,6 @@ Current LocationAs of the latest update on October 6, 2025, N1098L is on the gro
 * We spoke for almost 45 minutes.
 * Their working theory as we wrapped up the discussion:
 * A rogue faction in the CIA killed Charlie.
-* The HADES plane's maneuvers are too damning, when combined with @JG_CSTT's findings, and the crack thump analysis.
-
-* NCTC believes it was the same group behind the Butler attack.  Same drones, apparently.  Highly sophisticated.
-
-* These people have demonstrated the ability to kill using a drone, but blame a local patsy, and no one knows it happened.  * They also don't care about collateral damage.
-
-* We know who really killed Charlie Kirk.
-* They were in that plane, N1098L, that day.
 
 =============================
 https://x.com/BlakeBednarz/status/1968448023354056924

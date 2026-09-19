@@ -12,7 +12,7 @@
 **MET.** Section 1(c) defines "good-faith investigation" to include pursuing all leads from Schedule A. Section 2(d) enumerates 8 mandatory investigation categories with specific leads. Section 6(b) gives the monitor authority to direct pursuit of neglected leads.
 
 ### Requirement: Include the 175 items as mandatory investigation targets
-**MET.** Section 2(d) specifically enumerates leads from the 175 items organized into categories (exploding microphone, foreign intelligence, cover-up evidence, alternative shooter, financial connections, psychological operations, pre-planning, electronic warfare). Section 8(d) requires each report to address all 175 items.
+**MET.** Section 2(d) specifically enumerates leads from the 175 items organized into categories (exploding microphone, foreign intelligence, cover-up evidence, point of origin, financial connections, psychological operations, pre-planning, electronic warfare). Section 8(d) requires each report to address all 175 items.
 
 ### Requirement: Any government employee may send information
 **MET.** Section 5(a) allows any government employee to provide information to investigation teams, Trusted Investigators, or the public.

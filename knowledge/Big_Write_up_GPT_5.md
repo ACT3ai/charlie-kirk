@@ -82,7 +82,7 @@ Kirk’s Turning Point USA (TPUSA) organization is a politically strategic entit
   - Departed Biggs Army Airfield, TX at 7:48 MDT; arrived at Glacier Park, MT at 10:38 MDT.
   - Flew at 41,000 ft but dropped to 203 ft at 116 knots near UVU at 9:16 AM MDT.
   - Returned to low altitude at 12:48 MDT, 25 minutes after the shooting.
-- Claims suggest drone drop-offs and pickups near the UVU campus.
+- The plane very likely did not launch drones — it may have been a training plane, not built out to launch drones, possibly there to waste the time of citizen investigators. If the people who planned for it to be there knew the crime would happen, that may be a path to people who had foreknowledge. We do not claim that is true; it is very important to investigate.
 
 ### SU-BTT Egyptian Plane
 - Egyptian military Gulfstream 4SP.
@@ -94,12 +94,9 @@ Kirk’s Turning Point USA (TPUSA) organization is a politically strategic entit
 - Owned by N888KG LLC (linked to Derek Maxfield, Lehi, Utah).
 - Departed Provo roughly one hour after the assassination.
 - ADS-B transponder disabled mid-flight; reappeared an hour later.
-- Possible covert transport or rendezvous flight.
 
 ### Drone Evidence
 - 16 drones reportedly observed near UVU during the event.
-- Drones similar to DARPA X-65 systems capable of precision targeting.
-- Some theories claim weaponized drones conducted or assisted in the attack.
 
 ---
 

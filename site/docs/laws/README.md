@@ -76,13 +76,13 @@ This includes other information to disclose that may or may not be related.
 * Awarding agency: Department of Defense - Department of the Navy - NSWC Crane
 * Only "MINIATURIZED-XS" or "ANTI PERSONNEL-XS" contract ever in USAspending.gov since 2008
 * Contract purpose stated as "TO SUPPORT SPM" (meaning unknown)
+* The device that killed Charlie appears to have come from this contract; see [the DoD contract](/Mic/DoD_Contract)
 
 ### The Flight - August 25, 2025
 * Private flight departed Heber City, UT to John Tune Airport, Nashville, TN
 * John Tune Airport is closest airport to AES facility (~60km)
 * Heber City population ~17,000; private flights to Nashville are rare
 * No return flight logged
-* PERSON_25_REDACTED (brother of pastor PERSON_26_REDACTED) resides in Heber City
 
 ### The Manufacturer - AES Capabilities
 * AES operated since 1980 (43 years without major incident)
@@ -93,10 +93,7 @@ This includes other information to disclose that may or may not be related.
 
 ### The Event - September 10, 2025
 * Charlie Kirk killed at Utah Valley University
-* PERSON_25_REDACTED present with Kirk before event
-* Photos show square object (~2x2") in PERSON_25_REDACTED's front right pocket matching Rode Wireless GO II mic dimensions
-* PERSON_25_REDACTED photographed standing with sound crew and person who miked up Kirk
-* Post-killing photos show PERSON_25_REDACTED's pocket empty
+* Photos show an object in PERSON_25_REDACTED's front pocket that appears to be about the size of a Rode Wireless GO II receiver (~2x2"). We do not claim that it is one, we do not claim he knew anything ahead of time, and we do not claim he was involved; only that whatever was in his pocket could continue to be investigated
 * Potential involvement of Israeli secret service or [Mossad](/intelligence/Mossad) in orchestrating an inside hit, drawing parallels to 2024 pager bombs in Lebanon (see [Israeli Cell Phones](/laws/DoJ_FBI/Law_1_DoJ_FBI#israeli-cell-phones-8791))
 
 ### The Microphone Type
@@ -154,7 +151,7 @@ Cl
 
 Citizen investigators and legislative advocates on X argue that ordinary FOIA and criminal discovery will not force full production in the Charlie Kirk case, citing **JFK Records Act failures** (agencies missing decades of deadlines; reports of large unreviewed FBI caches) and the **Epstein Files Transparency Act** pattern of partial dumps without a Special Master with teeth. Accounts such as **[@HolonCitizen](/Influencers/x/holoncitizen)** have promoted a four-law package (FBI/DOJ disclosure, IC disclosure, mandatory investigation, trusted civilian investigators) and named figures including Candace Owens, Dave Smith, Tucker Carlson, Ian Carroll, and others as proposed **trusted investigators** under Law 4-style designs — a **policy proposal**, not an enacted statute.
 
-Parallel media clips recirculated by accounts such as **[@FurkanGozukara](/Influencers/x/furkangozukara)** claim **Candace Owens** has alleged federal discovery obstruction (FBI/ATF files; director-level blocks). Counter-posts argue the Robinson case already has DNA, video, and confession-note material unlike JFK and therefore needs no special act. This page records both the **demand for forced disclosure** and the **official-narrative pushback** so readers can judge whether Schedule A-style lists (FBI 302s, cell data, aircraft, drones, ballistics, AV SD cards) match what X investigators say remains withheld.
+Parallel media clips recirculated by accounts such as **[@FurkanGozukara](/Influencers/x/furkangozukara)** claim **Candace Owens** has alleged federal discovery obstruction (FBI/ATF files; director-level blocks). Counter-posts argue the Robinson case already has DNA, video, and confession-note material unlike JFK and therefore needs no special act. Investigators answer that none of that material shows how Charlie died: the ATF could not tie the autopsy fragment to the rifle, and the physical evidence points to [an explosive at his microphone](/Mic/overview), not the government's .30-06 account. This page records both the **demand for forced disclosure** and the **official-narrative pushback** so readers can judge whether Schedule A-style lists (FBI 302s, cell data, aircraft, drones, ballistics, AV SD cards) match what X investigators say remains withheld.
 
 Related public pages: [Fix overview](/Fix/overview), [laws landing](/laws), Discovery, [explain all four laws](/laws/explain/all/overview).
 

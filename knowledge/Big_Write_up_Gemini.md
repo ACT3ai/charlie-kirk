@@ -110,12 +110,8 @@ This document compiles all details provided in the uploaded source files regardi
 #### Day of Shooting Events (12:23 PM MT)
 
 * [cite_start]**Shooter Escape:** Tyler Robinson was already **jumping off roof 12:23**[cite: 20].
-* [cite_start]**Brown Shirt/Sunglasses Guy (Rick Cutler):** This person, potentially **"Rick Cutlery" or Rick Cutler** [cite: 25, 26].
-    * [cite_start]He is a **Retired police officer** (29 years of service) from Irving PD (TX?)[cite: 27].
-* [cite_start]**Hand-off/Security:** **Laine Schoneberger** (Chief Investment Officer/Managing Partner and **TPUSA sponsor rep from Yrefy**) [cite: 83][cite_start], reportedly looks like the **Huskey Square Sunglass Dark Blue Shirt guy**[cite: 83].
-* [cite_start]**South Door Photographer:** **Andrew Piskadlo** [cite: 159][cite_start], claims to be a photographer and his gloved arm is actually a **prosthetic arm**[cite: 159].
 * [cite_start]**The Mic:** There is a question if the **Lapel Mic** may have **exploded**[cite: 344, 174, 190]. [cite_start]This blast may have cut his necklace[cite: 191].
-* [cite_start]**Hunter Kozak:** The student who was **asking Charlie Kirk the last question** [cite: 255] [cite_start]is seen **practicing being surprised** before the event started[cite: 255]. [cite_start]He is the son of Steve Kozak, a director at the Jimmy Kimmel show[cite: 256].
+* [cite_start]**Hunter Kozak:** The student who was **asking Charlie Kirk the last question** [cite: 255]. We do not claim he knew anything in advance or was involved.
 
 #### Strange Events & Question Marks
 
@@ -137,10 +133,11 @@ This document compiles all details provided in the uploaded source files regardi
 
 * [cite_start]**Aircraft:** US Army's **Bombardier Global 6500** [cite: 41][cite_start], tail number **N1098L**[cite: 33, 40]. [cite_start]It is part of the **HADES** (High, Accuracy, Detection & Exploitation, System) [cite: 33, 63] spy program.
 * [cite_start]**Owner/Operator:** Operated by **LASAI Aviation II LLC** [cite: 43, 104][cite_start], a defense contractor[cite: 107]. [cite_start]LASAI Aviation II LLC's address is the same as **Bill Ackman's Pershing Square Capital Management's offices**[cite: 44].
-* **Maneuvers on Sept 10th (Drone Deployment):**
-    * [cite_start]Flew at 41,000 altitude, but **dropped to 203 feet** [cite: 33, 34] [cite_start]and slowed to stall speed **116 knots** [cite: 34, 42] [cite_start]to **drop off drones** before shooting[cite: 33, 37]. [cite_start]This happened at **9:16 AM MT**[cite: 37].
-    * [cite_start]Again dropped to **203 feet altitude, 116 knots** stall speed to **pick drones up 23 minutes after shooting**[cite: 34, 35]. [cite_start]This happened at **12:48 MT**[cite: 37].
+* **Maneuvers on Sept 10th (low passes):**
+    * [cite_start]Flew at 41,000 altitude, but **dropped to 203 feet** [cite: 33, 34] [cite_start]and slowed to **116 knots** [cite: 34, 42] before the shooting. [cite_start]This happened at **9:16 AM MT**[cite: 37].
+    * [cite_start]Again dropped to **203 feet altitude, 116 knots** 23 minutes after the shooting. [cite_start]This happened at **12:48 MT**[cite: 37].
     * [cite_start]The maneuvers were **1 mile from UVU campus** over Lake Utah[cite: 35, 43].
+    * The plane very likely did not launch drones. It very likely may have been a training plane, not built out to be able to launch drones. It may have been there to waste the time of citizen investigators. If the people who planned for it to be there knew the crime would happen, that may be a path to people who had foreknowledge. We do not claim that is true — we claim it is very important to investigate and determine whether it is true.
 * [cite_start]**Drones:** Military Drones flying at the shooting went **150 mph** & were hard to see[cite: 38, 64]. [cite_start]Two types suspected: **Switchblade** and **DARPA**[cite: 66].
 
 #### SU-BTT & Other Flights
@@ -226,10 +223,10 @@ This document compiles all details provided in the uploaded source files regardi
 
 #### Areas of Investigation
 * [FBI]: [(Possible) Cover-up], [Conneticut]
-* [Planes]: [Drone Launching N1098L], [Leadership Plane]
+* [Planes]: [N1098L], [Leadership Plane]
 * [TPUSA]: [Security Team], [Employees], [Donors]
 * [Suspects (List)]: [Tyler Robinson], [CIA], [Israel]
-* [Possible Shootering Locations]: [Close Up], [South Stairs], [Tyler Robinson Shooting], [Drone], [Other]
+* [Possible Shootering Locations]: [Close Up], [Tyler Robinson Shooting], [Other]
 * [Locations]: [UVU Courtyard], [Tent], [Tyler Location]
 * [Medical]: [(Possible) Cover-up], [Which]
 * [Timeline]: [Timeline 2024 & 2025], [Which]

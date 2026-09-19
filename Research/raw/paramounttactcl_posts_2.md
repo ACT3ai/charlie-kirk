@@ -73,9 +73,6 @@ hemorrhage control does not result in blood everywhere. [Source: X Post.
 https://x.com/paramounttactcl/status/1976362186533744727]
 Charlie Kirk was still alive after being shot, as shown in video evidence contradicting claims 
 otherwise. [Source: X Post. https://x.com/paramounttactcl/status/1975233862558167161]
-Theories suggesting a drone shot Charlie Kirk are implausible, as there were no drones 
-involved and the line of sight was clear from the shooter's position. [Source: X Post. 
-https://x.com/paramounttactcl/status/1977477123200696612]
 Claims of "weird flying stuff" being a military-grade drone are likely a bird, not evidence of 
 drone involvement. [Source: X Post. 
 https://x.com/paramounttactcl/status/1977497626334335383]
