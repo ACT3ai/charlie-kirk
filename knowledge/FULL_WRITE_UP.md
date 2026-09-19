@@ -495,10 +495,6 @@ It takes 15 minutes to DRIVE in a CAR to Dairy Queeen
 He was there 12:38 MT.  15 minutes after the shooting. Ignore time getting off roof, walking, hiding gun in forrest, changing close twice.  Disassembling gun.
 
 =================================
-=== South Door Glove Suit Photographer
-Name: Andrew Piskadlo
-He claims to be a photographer. His gloved arm is actually a prosthetic arm.
-https://x.com/AndrewPiskadlo
 
 
 
@@ -699,9 +695,9 @@ Medical Examiner put in place 2 weeks before the July google searches (but confi
 * Timpanogas Regional Hospital, Utah Medical Examinier Deirdre Amaro, TR Hospital Surgeons, George Hodgson Zinn, Beau Mason, Hunter Kozak.
 
 ---------------------
-Can someone explain to me why Hunter Kozak, the guy who was asking Charlie Kirk the last question before he died is seen practicing being surprised before the event started?
+Hunter Kozak asked Charlie Kirk the last question before he died. We do not claim he knew anything in advance or was involved.
 
-I also find it weird Hunter is the son of Steve Kozak, a director at the Jimmy Kimmel show. 
+Hunter is the son of Steve Kozak, a director at the Jimmy Kimmel show. 
 
 Another fun fact about Hunter Kozak, he's an active member and contributor to the Unf#ck America tour, whose organization claims to be The Official Counter Narrative to Turning Point USA.  
 His father is Steve Kozak, who has worked for Jimmy Kimmel for years.
