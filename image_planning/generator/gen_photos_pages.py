@@ -16,7 +16,7 @@ Idempotent: pages are rewritten in full; static copies are skipped when the
 target already exists. Run with --csv-only to refresh pages.csv line counts
 after agents have enriched page bodies.
 """
-import csv, glob, os, re, shutil, subprocess, sys, unicodedata
+import csv, glob, os, re, shutil, subprocess, sys, unicodedata, urllib.parse
 import yaml
 
 ROOT = os.path.expanduser("~/BGit/Bryan_git/charlie-kirk")
@@ -796,6 +796,7 @@ def alt_of(text):
     return m.group(1) if m else None
 
 
+MEDIA_PENDING = "*Media pending — the image file for this entry is not yet hosted.*"
 BASELINE_CLUSTER_MARK = "This cluster collects the still images the investigation has filed under"
 
 
@@ -916,12 +917,16 @@ for pg in img_pages:
     # image_planning/layout_guidelines.txt.
     lines += ["<div className=\"ck-evidence-text\">", ""]
     lines += ["## What This Image Shows", ""]
-    body = section_body(prior, "What This Image Shows") \
-        or (mdx_escape(desc) if desc else
-            "*Description pending — this image has not yet been written up.*")
+    body = section_body(prior, "What This Image Shows")
+    if body:
+        # The carried section already holds the placeholder this function
+        # appends below; drop it so reruns don't stack one more copy each time.
+        body = re.sub(r"(?:^|\n)\*Media pending — [^\n]*\*[ \t]*(?=\n|$)", "", body).strip() or None
+    body = body or (mdx_escape(desc) if desc else
+                    "*Description pending — this image has not yet been written up.*")
     lines += [body, ""]
     if not src:
-        lines += ["*Media pending — the image file for this entry is not yet hosted.*", ""]
+        lines += [MEDIA_PENDING, ""]
     hosts = [hp for hp in host_pages(i) if page_exists(hp)]
     if hosts:
         lines += ["## Where This Image Appears", "",
@@ -1350,6 +1355,9 @@ if bad:
 # doc file's path, plus `slug:` overrides, plus `id:` renames of the last
 # segment, plus the bare form of a /overview page. Anything less produces
 # false alarms (pages.csv records section overviews at their bare path).
+_NUM_PREFIX = re.compile(r"^\d+[-_.]")
+
+
 def _site_routes():
     routes = set()
     for dirpath, _d, files in os.walk(DOCS):
@@ -1357,10 +1365,22 @@ def _site_routes():
             if not fn.endswith((".md", ".mdx")):
                 continue
             full = os.path.join(dirpath, fn)
-            base = "/" + os.path.splitext(os.path.relpath(full, DOCS))[0]
+            rel = os.path.relpath(full, DOCS)
+            # docusaurus.config.ts excludes these from the build — not routes.
+            if (any(seg.startswith("_") for seg in rel.split(os.sep))
+                    or fn == "CLAUDE.md" or re.match(r"p_.*\.mdx?$", fn)
+                    or f"{os.sep}prompts{os.sep}" in os.sep + rel):
+                continue
+            base = "/" + os.path.splitext(rel)[0]
             routes.add(base)
-            if base.endswith("/overview"):
-                routes.add(base[: -len("/overview")])
+            # Docusaurus strips number prefixes from path segments:
+            # laws/1_DoJ_FBI/x.md is served at /laws/DoJ_FBI/x.
+            stripped = "/".join(_NUM_PREFIX.sub("", seg) for seg in base.split("/"))
+            routes.add(stripped)
+            base = stripped
+            for tail in ("/overview", "/README", "/index"):
+                if base.endswith(tail):          # README/index serve at the dir route
+                    routes.add(base[: -len(tail)] or "/")
             with open(full, encoding="utf-8", errors="replace") as fh:
                 head = fh.read(1200)
             m = re.search(r"^slug:\s*(\S+)\s*$", head, re.M)
@@ -1385,7 +1405,7 @@ for p in written:
         for u in link_re.findall(f.read()):
             if u.startswith("/img/") or u.startswith("/pdf"):
                 continue
-            if u.rstrip("/") not in gen_urls:
+            if urllib.parse.unquote(u).rstrip("/") not in gen_urls:
                 missing.add(u)
 
 print("============================")
