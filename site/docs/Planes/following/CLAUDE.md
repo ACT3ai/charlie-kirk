@@ -67,8 +67,8 @@ here, it is misfiled — remove it from this directory rather than working on it
 
 ## The sister directory — learn from it, never write to it
 
-`{SISTER_DIR}` is this directory's **sister directory**. It is the private research and
-movie-beat workspace for the same topic, living in the Charlie Kirk movie repo. Read
+`{SISTER_DIR}` is this directory's **sister directory**. It is the private research
+workspace for the same topic, living in a separate private repo. Read
 `{SISTER_CLAUDE}` in full before doing any work here.
 
 **The relationship, and the direction of flow:**
@@ -411,7 +411,7 @@ here must be re-sourced into `{SISTER_INFO}` with its origin before it is publis
   claimed "US Department of Defense Liaison" badges dropped off and **not** flown back out.
 
 **THE 18-MONTH-VS-2-YEAR-VS-2022 QUESTION IS AN OPEN RESEARCH QUESTION.** The beat title says 18
-months. The filmmaker's framing says 18 months to 2 years. The trackers say 2022 → Sept 2025,
+months. The original framing says 18 months to 2 years. The trackers say 2022 → Sept 2025,
 which is closer to three years. **Resolve it with the overlap data in `{SISTER_OVERLAPS}` — find
 the earliest overlap we can actually source and let the window follow the evidence.** Do not
 silently pick one on a public page; state the range and state who says what.

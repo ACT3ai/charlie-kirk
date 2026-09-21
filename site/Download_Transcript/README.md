@@ -226,14 +226,14 @@ ls -lh transcribed_out/
 cat transcribed_out/charlie_kirk_episode_123.txt
 ```
 
-## Integration with ACT3 AI Pipeline
+## Uses for Transcripts
 
-This tool is part of the ACT3 AI filmmaking pipeline. Transcripts can be used for:
+Transcripts can be used for:
 
-- Script generation and analysis
-- Character dialogue extraction
-- Scene breakdown
-- Story arc development
+- Text search and analysis
+- Quote extraction
+- Topic breakdown
+- Research notes
 - Content classification
 
 ## License
@@ -242,4 +242,4 @@ MIT
 
 ## Support
 
-For issues or questions, contact the ACT3 AI team or file an issue in the repository.
+For issues or questions, file an issue in the repository.

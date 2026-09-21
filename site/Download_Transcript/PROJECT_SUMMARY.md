@@ -150,15 +150,15 @@ choco install ffmpeg
 pip install openai-whisper
 ```
 
-## Integration with ACT3 AI
+## Uses for Transcripts
 
-This tool is designed to integrate with the ACT3 AI filmmaking pipeline:
+Transcripts produced by this tool can be used for:
 
 1. **Content Import**: Transcribe Charlie Kirk episodes
-2. **Script Analysis**: Extract dialogue and topics
-3. **Story Development**: Use transcripts for content planning
-4. **Scene Generation**: Convert spoken content to screenplay format
-5. **Character Development**: Analyze speaking patterns and themes
+2. **Text Analysis**: Extract quotes and topics
+3. **Research**: Use transcripts for investigation notes
+4. **Search**: Make spoken content searchable
+5. **Theme Analysis**: Analyze speaking patterns and themes
 
 ## File Paths (as specified in p_CLI.txt)
 
@@ -234,7 +234,7 @@ MIT License - Free to use and modify
 
 ## Credits
 
-- **Built for:** ACT3 AI / Charlie Kirk Content Pipeline
+- **Built for:** Charlie Kirk Content Pipeline
 - **Technology:** OpenAI Whisper, Node.js, ffmpeg
 - **Created:** December 2025
 

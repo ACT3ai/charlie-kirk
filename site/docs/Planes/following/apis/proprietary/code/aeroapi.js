@@ -51,7 +51,7 @@ import { privateVendorDir } from "./private_store.js";
 // ../data/flightaware/ - this repo is public and the vendor's terms forbid republishing
 // a response. See private_store.js. The published form is ../data/flightaware_restated/.
 // (fileURLToPath, not URL.pathname, inside private_store.js: pathname keeps "%20" for
-// the space in "Act 3", and the first live run wrote into a directory named "Act%203".)
+// a space in a directory name, and the first live run wrote into a path containing "%20".)
 const OUT = privateVendorDir("flightaware");
 const BASE = "https://aeroapi.flightaware.com/aeroapi";
 const MAX_SPAN_DAYS = 7;
@@ -167,7 +167,7 @@ export async function probe(ident, { withLastFlight = false, monthCap, runBudget
 }
 
 // pathToFileURL, not `file://${argv[1]}`: the checkout path can contain a space
-// ("Act 3"), which import.meta.url percent-encodes and argv does not, so the naive
+// (in a directory name), which import.meta.url percent-encodes and argv does not, so the naive
 // comparison is silently false and the CLI never runs.
 if (import.meta.url === pathToFileURL(process.argv[1]).href) {
   const args = process.argv.slice(2);
