@@ -1,0 +1,195 @@
+# Restated from a FlightAware AeroAPI response, in our own layout.
+# The raw response is held privately and is not republished.
+about:
+  aircraft: SU-BTT
+  question_asked: Which flights does FlightAware hold for SU-BTT between 22 June 2024 and 29 June 2024 (UTC)?
+  source: FlightAware AeroAPI v4 flight history by registration; the raw response is held privately and is not republished.
+  retrieved_utc: '2026-09-16T02:33:10.330Z'
+  vendor_http_status: 200
+  window_utc_from: '2024-06-22T00:00:00Z'
+  window_utc_until_exclusive: '2024-06-29T00:00:00Z'
+  result_page: 1
+  total_pages_reported: 1
+  further_pages_held_by_vendor: false
+flights_recorded: 5
+reading: FlightAware holds 5 flights for SU-BTT in this window, listed here in full with the times it recorded. A flight record shows where an aircraft went; it never shows who was aboard.
+flights:
+- number: 1
+  flightaware_id: SUBTT-1719123227-adhoc-3072p
+  callsign: SU-BTT
+  registration: SU-BTT
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    position_only_point:
+      lat: 30.10918
+      lon: 31.35999
+    city: Cairo
+    timezone: Africa/Cairo
+  to:
+    position_only_point:
+      lat: 29.22373
+      lon: 31.26682
+    city: Cairo
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2024-06-23T06:23:22Z'
+      local: '2024-06-23 09:23:22+03:00'
+    estimated:
+      utc: '2024-06-23T06:23:22Z'
+      local: '2024-06-23 09:23:22+03:00'
+    actual:
+      utc: '2024-06-23T06:23:22Z'
+      local: '2024-06-23 09:23:22+03:00'
+  landing:
+    actual:
+      utc: '2024-06-23T06:23:22Z'
+      local: '2024-06-23 09:23:22+03:00'
+  departure_versus_schedule: +0:00:00
+  airborne_duration: 0:00:00
+- number: 2
+  flightaware_id: SUBTT-1719128283-adhoc-3108p
+  callsign: SU-BTT
+  registration: SU-BTT
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    position_only_point:
+      lat: 29.41729
+      lon: 31.22013
+    city: Cairo
+    timezone: Africa/Cairo
+  to:
+    position_only_point:
+      lat: 30.047
+      lon: 31.35894
+    city: Cairo
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2024-06-23T08:02:19Z'
+      local: '2024-06-23 11:02:19+03:00'
+    estimated:
+      utc: '2024-06-23T08:02:19Z'
+      local: '2024-06-23 11:02:19+03:00'
+    actual:
+      utc: '2024-06-23T08:02:19Z'
+      local: '2024-06-23 11:02:19+03:00'
+  landing:
+    actual:
+      utc: '2024-06-23T08:02:19Z'
+      local: '2024-06-23 11:02:19+03:00'
+  departure_versus_schedule: +0:00:00
+  airborne_duration: 0:00:00
+- number: 3
+  flightaware_id: SUBTT-1719335227-adhoc-5063p
+  callsign: SU-BTT
+  registration: SU-BTT
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    position_only_point:
+      lat: 30.1105
+      lon: 31.35945
+    city: Cairo
+    timezone: Africa/Cairo
+  to:
+    icao: HEAZ
+    name: Almaza Air Base
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2024-06-25T17:15:56Z'
+      local: '2024-06-25 20:15:56+03:00'
+    estimated:
+      utc: '2024-06-25T17:15:56Z'
+      local: '2024-06-25 20:15:56+03:00'
+    actual:
+      utc: '2024-06-25T17:15:56Z'
+      local: '2024-06-25 20:15:56+03:00'
+  landing:
+    actual:
+      utc: '2024-06-25T17:15:56Z'
+      local: '2024-06-25 20:15:56+03:00'
+    runway: '36'
+  departure_versus_schedule: +0:00:00
+  airborne_duration: 0:00:00
+- number: 4
+  flightaware_id: SUBTT-1719378954-adhoc-3880p
+  callsign: SU-BTT
+  registration: SU-BTT
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    position_only_point:
+      lat: 29.25179
+      lon: 31.285
+    city: Cairo
+    timezone: Africa/Cairo
+  to:
+    position_only_point:
+      lat: 28.53922
+      lon: 31.2002
+    city: Assiut
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2024-06-26T05:39:01Z'
+      local: '2024-06-26 08:39:01+03:00'
+    estimated:
+      utc: '2024-06-26T05:39:01Z'
+      local: '2024-06-26 08:39:01+03:00'
+    actual:
+      utc: '2024-06-26T05:39:01Z'
+      local: '2024-06-26 08:39:01+03:00'
+  landing:
+    actual:
+      utc: '2024-06-26T05:39:01Z'
+      local: '2024-06-26 08:39:01+03:00'
+  departure_versus_schedule: +0:00:00
+  airborne_duration: 0:00:00
+- number: 5
+  flightaware_id: SUBTT-1719382747-adhoc-3457p
+  callsign: SU-BTT
+  registration: SU-BTT
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    position_only_point:
+      lat: 28.67888
+      lon: 31.21598
+    city: Cairo
+    timezone: Africa/Cairo
+  to:
+    position_only_point:
+      lat: 29.79744
+      lon: 31.20667
+    city: Cairo
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2024-06-26T06:35:23Z'
+      local: '2024-06-26 09:35:23+03:00'
+    estimated:
+      utc: '2024-06-26T06:35:23Z'
+      local: '2024-06-26 09:35:23+03:00'
+    actual:
+      utc: '2024-06-26T06:35:23Z'
+      local: '2024-06-26 09:35:23+03:00'
+  landing:
+    actual:
+      utc: '2024-06-26T06:35:23Z'
+      local: '2024-06-26 09:35:23+03:00'
+  departure_versus_schedule: +0:00:00
+  airborne_duration: 0:00:00

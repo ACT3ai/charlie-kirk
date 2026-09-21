@@ -1,0 +1,345 @@
+# Restated from a FlightAware AeroAPI response, in our own layout.
+# The raw response is held privately and is not republished.
+about:
+  aircraft: SU-BND
+  question_asked: Which flights does FlightAware hold for SU-BND between 17 August 2024 and 24 August 2024 (UTC)?
+  source: FlightAware AeroAPI v4 flight history by registration; the raw response is held privately and is not republished.
+  retrieved_utc: '2026-09-16T02:38:14.878Z'
+  vendor_http_status: 200
+  window_utc_from: '2024-08-17T00:00:00Z'
+  window_utc_until_exclusive: '2024-08-24T00:00:00Z'
+  result_page: 1
+  total_pages_reported: 1
+  further_pages_held_by_vendor: false
+flights_recorded: 9
+reading: FlightAware holds 9 flights for SU-BND in this window, listed here in full with the times it recorded. A flight record shows where an aircraft went; it never shows who was aboard.
+flights:
+- number: 1
+  flightaware_id: SUBND-1723874584-adhoc-1662p
+  callsign: SU-BND
+  registration: SU-BND
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    position_only_point:
+      lat: 30.11545
+      lon: 31.36096
+    city: Cairo
+    timezone: Africa/Cairo
+  to:
+    position_only_point:
+      lat: 25.69949
+      lon: 34.49805
+    city: Marsa Alam
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2024-08-17T06:09:28Z'
+      local: '2024-08-17 09:09:28+03:00'
+    estimated:
+      utc: '2024-08-17T06:09:28Z'
+      local: '2024-08-17 09:09:28+03:00'
+    actual:
+      utc: '2024-08-17T06:09:28Z'
+      local: '2024-08-17 09:09:28+03:00'
+  landing:
+    actual:
+      utc: '2024-08-17T06:09:28Z'
+      local: '2024-08-17 09:09:28+03:00'
+  departure_versus_schedule: +0:00:00
+  airborne_duration: 0:00:00
+- number: 2
+  flightaware_id: SUBND-1723880328-adhoc-769p
+  callsign: SU-BND
+  registration: SU-BND
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    position_only_point:
+      lat: 29.87878
+      lon: 31.35583
+    city: Cairo
+    timezone: Africa/Cairo
+  to:
+    position_only_point:
+      lat: 30.02975
+      lon: 31.35853
+    city: Cairo
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2024-08-17T09:02:50Z'
+      local: '2024-08-17 12:02:50+03:00'
+    estimated:
+      utc: '2024-08-17T09:02:50Z'
+      local: '2024-08-17 12:02:50+03:00'
+    actual:
+      utc: '2024-08-17T09:02:50Z'
+      local: '2024-08-17 12:02:50+03:00'
+  landing:
+    actual:
+      utc: '2024-08-17T09:02:50Z'
+      local: '2024-08-17 12:02:50+03:00'
+  departure_versus_schedule: +0:00:00
+  airborne_duration: 0:00:00
+- number: 3
+  flightaware_id: SUBND-1724076984-adhoc-3435p
+  callsign: SU-BND
+  registration: SU-BND
+  flight_category: general aviation
+  outcome: Arrived
+  flags:
+  - position_only
+  from:
+    position_only_point:
+      lat: 30.14039
+      lon: 31.36091
+    city: Cairo
+    timezone: Africa/Cairo
+  to:
+    icao: HEAL
+    iata: DBB
+    name: El Alamein International Airport
+    city: Matrouh Governorate
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2024-08-19T14:31:40Z'
+      local: '2024-08-19 17:31:40+03:00'
+    estimated:
+      utc: '2024-08-19T14:31:40Z'
+      local: '2024-08-19 17:31:40+03:00'
+    actual:
+      utc: '2024-08-19T14:31:40Z'
+      local: '2024-08-19 17:31:40+03:00'
+  landing:
+    estimated:
+      utc: '2024-08-19T15:16:05Z'
+      local: '2024-08-19 18:16:05+03:00'
+    actual:
+      utc: '2024-08-19T15:16:05Z'
+      local: '2024-08-19 18:16:05+03:00'
+    runway: '31'
+  departure_versus_schedule: +0:00:00
+  airborne_duration: 0:44:25
+- number: 4
+  flightaware_id: SUBND-1724081503-adhoc-1033p
+  callsign: SU-BND
+  registration: SU-BND
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    icao: HEAL
+    iata: DBB
+    name: El Alamein International Airport
+    city: Matrouh Governorate
+    timezone: Africa/Cairo
+  to:
+    position_only_point:
+      lat: 30.03886
+      lon: 31.35875
+    city: Cairo
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2024-08-19T16:01:38Z'
+      local: '2024-08-19 19:01:38+03:00'
+    estimated:
+      utc: '2024-08-19T15:39:06Z'
+      local: '2024-08-19 18:39:06+03:00'
+    actual:
+      utc: '2024-08-19T15:39:06Z'
+      local: '2024-08-19 18:39:06+03:00'
+    runway: '31'
+  landing:
+    actual:
+      utc: '2024-08-19T15:39:06Z'
+      local: '2024-08-19 18:39:06+03:00'
+  departure_versus_schedule: -0:22:32
+  airborne_duration: 0:00:00
+- number: 5
+  flightaware_id: SUBND-1724143592-adhoc-1681p
+  callsign: SU-BND
+  registration: SU-BND
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    position_only_point:
+      lat: 30.09035
+      lon: 31.3535
+    city: Cairo
+    timezone: Africa/Cairo
+  to:
+    position_only_point:
+      lat: 27.89145
+      lon: 34.10985
+    city: Sharm El Sheikh
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2024-08-20T08:56:35Z'
+      local: '2024-08-20 11:56:35+03:00'
+    estimated:
+      utc: '2024-08-20T08:51:10Z'
+      local: '2024-08-20 11:51:10+03:00'
+    actual:
+      utc: '2024-08-20T08:51:10Z'
+      local: '2024-08-20 11:51:10+03:00'
+  landing:
+    actual:
+      utc: '2024-08-20T08:51:10Z'
+      local: '2024-08-20 11:51:10+03:00'
+  departure_versus_schedule: -0:05:25
+  airborne_duration: 0:00:00
+- number: 6
+  flightaware_id: SUBND-1724149977-adhoc-2211p
+  callsign: SU-BND
+  registration: SU-BND
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    position_only_point:
+      lat: 27.96826
+      lon: 34.48218
+    city: Sharm El Sheikh
+    timezone: Africa/Cairo
+  to:
+    position_only_point:
+      lat: 27.28901
+      lon: 34.11979
+    city: Hurghada
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2024-08-20T10:42:25Z'
+      local: '2024-08-20 13:42:25+03:00'
+    estimated:
+      utc: '2024-08-20T10:42:25Z'
+      local: '2024-08-20 13:42:25+03:00'
+    actual:
+      utc: '2024-08-20T10:42:25Z'
+      local: '2024-08-20 13:42:25+03:00'
+  landing:
+    actual:
+      utc: '2024-08-20T10:42:25Z'
+      local: '2024-08-20 13:42:25+03:00'
+  departure_versus_schedule: +0:00:00
+  airborne_duration: 0:00:00
+- number: 7
+  flightaware_id: SUBND-1724169209-adhoc-1088p
+  callsign: SU-BND
+  registration: SU-BND
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    position_only_point:
+      lat: 27.57166
+      lon: 33.733
+    city: Hurghada
+    timezone: Africa/Cairo
+  to:
+    position_only_point:
+      lat: 30.03351
+      lon: 31.35859
+    city: Cairo
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2024-08-20T16:02:41Z'
+      local: '2024-08-20 19:02:41+03:00'
+    estimated:
+      utc: '2024-08-20T16:02:41Z'
+      local: '2024-08-20 19:02:41+03:00'
+    actual:
+      utc: '2024-08-20T16:02:41Z'
+      local: '2024-08-20 19:02:41+03:00'
+  landing:
+    actual:
+      utc: '2024-08-20T16:02:41Z'
+      local: '2024-08-20 19:02:41+03:00'
+  departure_versus_schedule: +0:00:00
+  airborne_duration: 0:00:00
+- number: 8
+  flightaware_id: SUBND-1724320986-adhoc-1495p
+  callsign: SU-BND
+  registration: SU-BND
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    position_only_point:
+      lat: 29.95497
+      lon: 31.01979
+    city: Cairo
+    timezone: Africa/Cairo
+  to:
+    position_only_point:
+      lat: 30.31769
+      lon: 29.45849
+    city: Amreya
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2024-08-22T10:11:12Z'
+      local: '2024-08-22 13:11:12+03:00'
+    estimated:
+      utc: '2024-08-22T10:11:12Z'
+      local: '2024-08-22 13:11:12+03:00'
+    actual:
+      utc: '2024-08-22T10:11:12Z'
+      local: '2024-08-22 13:11:12+03:00'
+  landing:
+    actual:
+      utc: '2024-08-22T10:11:12Z'
+      local: '2024-08-22 13:11:12+03:00'
+  departure_versus_schedule: +0:00:00
+  airborne_duration: 0:00:00
+- number: 9
+  flightaware_id: SUBND-1724327754-adhoc-1752p
+  callsign: SU-BND
+  registration: SU-BND
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    position_only_point:
+      lat: 30.46155
+      lon: 29.41815
+    city: Amreya
+    timezone: Africa/Cairo
+  to:
+    position_only_point:
+      lat: 30.02806
+      lon: 31.12839
+    city: Cairo
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2024-08-22T12:14:12Z'
+      local: '2024-08-22 15:14:12+03:00'
+    estimated:
+      utc: '2024-08-22T12:14:12Z'
+      local: '2024-08-22 15:14:12+03:00'
+    actual:
+      utc: '2024-08-22T12:14:12Z'
+      local: '2024-08-22 15:14:12+03:00'
+  landing:
+    actual:
+      utc: '2024-08-22T12:14:12Z'
+      local: '2024-08-22 15:14:12+03:00'
+  departure_versus_schedule: +0:00:00
+  airborne_duration: 0:00:00

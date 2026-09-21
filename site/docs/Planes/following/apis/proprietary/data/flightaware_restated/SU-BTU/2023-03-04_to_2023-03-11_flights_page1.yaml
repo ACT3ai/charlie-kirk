@@ -1,0 +1,104 @@
+# Restated from a FlightAware AeroAPI response, in our own layout.
+# The raw response is held privately and is not republished.
+about:
+  aircraft: SU-BTU
+  question_asked: Which flights does FlightAware hold for SU-BTU between 4 March 2023 and 11 March 2023 (UTC)?
+  source: FlightAware AeroAPI v4 flight history by registration; the raw response is held privately and is not republished.
+  retrieved_utc: '2026-09-16T02:41:34.952Z'
+  vendor_http_status: 200
+  window_utc_from: '2023-03-04T00:00:00Z'
+  window_utc_until_exclusive: '2023-03-11T00:00:00Z'
+  result_page: 1
+  total_pages_reported: 1
+  further_pages_held_by_vendor: false
+flights_recorded: 2
+reading: FlightAware holds 2 flights for SU-BTU in this window, listed here in full with the times it recorded. A flight record shows where an aircraft went; it never shows who was aboard.
+flights:
+- number: 1
+  flightaware_id: SUBTU-1678080222-12-0-215
+  callsign: SU-BTU
+  registration: SU-BTU
+  flight_category: general aviation
+  outcome: Arrived
+  progress_percent: 100
+  flags: []
+  from:
+    position_only_point:
+      lat: 30.75655
+      lon: 30.6867
+    city: Cairo
+    timezone: Africa/Cairo
+  to:
+    icao: LFPB
+    iata: LBG
+    name: Paris Le Bourget
+    city: Paris
+    timezone: Europe/Paris
+  takeoff:
+    scheduled:
+      utc: '2023-03-06T07:09:58Z'
+      local: '2023-03-06 09:09:58+02:00'
+    estimated:
+      utc: '2023-03-06T07:09:58Z'
+      local: '2023-03-06 09:09:58+02:00'
+    actual:
+      utc: '2023-03-06T07:09:58Z'
+      local: '2023-03-06 09:09:58+02:00'
+  landing:
+    estimated:
+      utc: '2023-03-06T11:35:07Z'
+      local: '2023-03-06 12:35:07+01:00'
+    actual:
+      utc: '2023-03-06T11:35:07Z'
+      local: '2023-03-06 12:35:07+01:00'
+    runway: '27'
+  departure_versus_schedule: +0:00:00
+  airborne_duration: '4:25:09'
+- number: 2
+  flightaware_id: SUBTU-1678166632-5-0-215
+  callsign: SU-BTU
+  registration: SU-BTU
+  flight_category: general aviation
+  outcome: Arrived
+  progress_percent: 100
+  flags: []
+  from:
+    icao: LFPB
+    iata: LBG
+    name: Paris Le Bourget
+    city: Paris
+    timezone: Europe/Paris
+  to:
+    icao: KSUS
+    iata: SUS
+    faa_lid: SUS
+    name: Spirit of St Louis
+    city: St Louis
+    timezone: America/Chicago
+  takeoff:
+    scheduled:
+      utc: '2023-03-07T10:22:35Z'
+      local: '2023-03-07 11:22:35+01:00'
+    estimated:
+      utc: '2023-03-07T10:19:03Z'
+      local: '2023-03-07 11:19:03+01:00'
+    actual:
+      utc: '2023-03-07T10:19:03Z'
+      local: '2023-03-07 11:19:03+01:00'
+    runway: '25'
+  landing:
+    scheduled:
+      utc: '2023-03-07T19:04:36Z'
+      local: '2023-03-07 13:04:36-06:00'
+    estimated:
+      utc: '2023-03-07T19:01:04Z'
+      local: '2023-03-07 13:01:04-06:00'
+    actual:
+      utc: '2023-03-07T19:01:04Z'
+      local: '2023-03-07 13:01:04-06:00'
+    runway: 08R
+  departure_versus_schedule: -0:03:32
+  arrival_versus_schedule: -0:03:32
+  airborne_duration: '8:42:01'
+  flight_plan:
+    planned_time_enroute: '8:42:01'

@@ -1,0 +1,93 @@
+# Restated from a FlightAware AeroAPI response, in our own layout.
+# The raw response is held privately and is not republished.
+about:
+  aircraft: SU-BND
+  question_asked: Which flights does FlightAware hold for SU-BND between 23 December 2023 and 30 December 2023 (UTC)?
+  source: FlightAware AeroAPI v4 flight history by registration; the raw response is held privately and is not republished.
+  retrieved_utc: '2026-09-16T02:37:31.353Z'
+  vendor_http_status: 200
+  window_utc_from: '2023-12-23T00:00:00Z'
+  window_utc_until_exclusive: '2023-12-30T00:00:00Z'
+  result_page: 1
+  total_pages_reported: 1
+  further_pages_held_by_vendor: false
+flights_recorded: 2
+reading: FlightAware holds 2 flights for SU-BND in this window, listed here in full with the times it recorded. A flight record shows where an aircraft went; it never shows who was aboard.
+flights:
+- number: 1
+  flightaware_id: SUBND-1703478052-sw-1467p
+  callsign: SU-BND
+  registration: SU-BND
+  flight_category: general aviation
+  outcome: Arrived
+  progress_percent: 100
+  flags: []
+  from:
+    position_only_point:
+      lat: 30.85657
+      lon: 30.6015
+    city: Amreya
+    timezone: Africa/Cairo
+  to:
+    icao: LHBP
+    iata: BUD
+    name: Budapest Ferenc Liszt International Airport
+    city: Budapest
+    timezone: Europe/Budapest
+  takeoff:
+    scheduled:
+      utc: '2023-12-25T07:12:49Z'
+      local: '2023-12-25 09:12:49+02:00'
+    estimated:
+      utc: '2023-12-25T07:12:49Z'
+      local: '2023-12-25 09:12:49+02:00'
+    actual:
+      utc: '2023-12-25T07:12:49Z'
+      local: '2023-12-25 09:12:49+02:00'
+  landing:
+    estimated:
+      utc: '2023-12-25T10:05:15Z'
+      local: '2023-12-25 11:05:15+01:00'
+    actual:
+      utc: '2023-12-25T10:05:15Z'
+      local: '2023-12-25 11:05:15+01:00'
+    runway: 31L
+  departure_versus_schedule: +0:00:00
+  airborne_duration: '2:52:26'
+- number: 2
+  flightaware_id: SUBND-1703481337-sw-325p
+  callsign: SU-BND
+  registration: SU-BND
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    icao: LHBP
+    iata: BUD
+    name: Budapest Ferenc Liszt International Airport
+    city: Budapest
+    timezone: Europe/Budapest
+  to:
+    position_only_point:
+      lat: 30.85529
+      lon: 31.24841
+    city: Cairo
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2023-12-25T10:59:06Z'
+      local: '2023-12-25 11:59:06+01:00'
+    estimated:
+      utc: '2023-12-25T10:54:58Z'
+      local: '2023-12-25 11:54:58+01:00'
+    actual:
+      utc: '2023-12-25T10:54:58Z'
+      local: '2023-12-25 11:54:58+01:00'
+    runway: 31L
+  landing:
+    actual:
+      utc: '2023-12-25T10:54:58Z'
+      local: '2023-12-25 12:54:58+02:00'
+  departure_versus_schedule: -0:04:08
+  airborne_duration: 0:00:00

@@ -1,0 +1,54 @@
+# Restated from a FlightAware AeroAPI response, in our own layout.
+# The raw response is held privately and is not republished.
+about:
+  aircraft: SU-BTU
+  question_asked: Which flights does FlightAware hold for SU-BTU between 27 May 2023 and 3 June 2023 (UTC)?
+  source: FlightAware AeroAPI v4 flight history by registration; the raw response is held privately and is not republished.
+  retrieved_utc: '2026-09-16T02:41:53.606Z'
+  vendor_http_status: 200
+  window_utc_from: '2023-05-27T00:00:00Z'
+  window_utc_until_exclusive: '2023-06-03T00:00:00Z'
+  result_page: 1
+  total_pages_reported: 1
+  further_pages_held_by_vendor: false
+flights_recorded: 1
+reading: FlightAware holds 1 flight for SU-BTU in this window, listed here in full with the times it recorded. A flight record shows where an aircraft went; it never shows who was aboard.
+flights:
+- number: 1
+  flightaware_id: SUBTU-1685273379-adhoc-1331p
+  callsign: SU-BTU
+  registration: SU-BTU
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    icao: KILG
+    iata: ILG
+    faa_lid: ILG
+    name: New Castle
+    city: Wilmington
+    timezone: America/New_York
+  to:
+    position_only_point:
+      lat: 30.56012
+      lon: 30.92921
+    city: Cairo
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2023-05-28T11:59:34Z'
+      local: '2023-05-28 07:59:34-04:00'
+    estimated:
+      utc: '2023-05-28T11:34:37Z'
+      local: '2023-05-28 07:34:37-04:00'
+    actual:
+      utc: '2023-05-28T11:34:37Z'
+      local: '2023-05-28 07:34:37-04:00'
+    runway: '01'
+  landing:
+    actual:
+      utc: '2023-05-28T11:34:37Z'
+      local: '2023-05-28 14:34:37+03:00'
+  departure_versus_schedule: -0:24:57
+  airborne_duration: 0:00:00

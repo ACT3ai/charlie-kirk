@@ -1,0 +1,159 @@
+# Restated from a FlightAware AeroAPI response, in our own layout.
+# The raw response is held privately and is not republished.
+about:
+  aircraft: SU-BTV
+  question_asked: Which flights does FlightAware hold for SU-BTV between 29 June 2024 and 6 July 2024 (UTC)?
+  source: FlightAware AeroAPI v4 flight history by registration; the raw response is held privately and is not republished.
+  retrieved_utc: '2026-09-16T02:48:12.304Z'
+  vendor_http_status: 200
+  window_utc_from: '2024-06-29T00:00:00Z'
+  window_utc_until_exclusive: '2024-07-06T00:00:00Z'
+  result_page: 1
+  total_pages_reported: 1
+  further_pages_held_by_vendor: false
+flights_recorded: 4
+reading: FlightAware holds 4 flights for SU-BTV in this window, listed here in full with the times it recorded. A flight record shows where an aircraft went; it never shows who was aboard.
+flights:
+- number: 1
+  flightaware_id: SUBTV-1719896765-adhoc-3113p
+  callsign: SU-BTV
+  registration: SU-BTV
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    position_only_point:
+      lat: 30.08527
+      lon: 31.35965
+    city: Cairo
+    timezone: Africa/Cairo
+  to:
+    icao: HEAZ
+    name: Almaza Air Base
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2024-07-02T05:25:44Z'
+      local: '2024-07-02 08:25:44+03:00'
+    estimated:
+      utc: '2024-07-02T05:18:35Z'
+      local: '2024-07-02 08:18:35+03:00'
+    actual:
+      utc: '2024-07-02T05:18:35Z'
+      local: '2024-07-02 08:18:35+03:00'
+  landing:
+    actual:
+      utc: '2024-07-02T05:18:35Z'
+      local: '2024-07-02 08:18:35+03:00'
+    runway: '36'
+  departure_versus_schedule: -0:07:09
+  airborne_duration: 0:00:00
+- number: 2
+  flightaware_id: SUBTV-1719990941-adhoc-3180p
+  callsign: SU-BTV
+  registration: SU-BTV
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    position_only_point:
+      lat: 30.11156
+      lon: 31.35988
+    city: Cairo
+    timezone: Africa/Cairo
+  to:
+    position_only_point:
+      lat: 30.041
+      lon: 31.35883
+    city: Cairo
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2024-07-03T07:26:58Z'
+      local: '2024-07-03 10:26:58+03:00'
+    estimated:
+      utc: '2024-07-03T07:26:58Z'
+      local: '2024-07-03 10:26:58+03:00'
+    actual:
+      utc: '2024-07-03T07:26:58Z'
+      local: '2024-07-03 10:26:58+03:00'
+  landing:
+    actual:
+      utc: '2024-07-03T07:26:58Z'
+      local: '2024-07-03 10:26:58+03:00'
+  departure_versus_schedule: +0:00:00
+  airborne_duration: 0:00:00
+- number: 3
+  flightaware_id: SUBTV-1720024877-adhoc-3981p
+  callsign: SU-BTV
+  registration: SU-BTV
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    position_only_point:
+      lat: 30.13216
+      lon: 31.36074
+    city: Cairo
+    timezone: Africa/Cairo
+  to:
+    position_only_point:
+      lat: 28.67385
+      lon: 32.58588
+    city: Cairo
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2024-07-03T16:49:29Z'
+      local: '2024-07-03 19:49:29+03:00'
+    estimated:
+      utc: '2024-07-03T16:49:29Z'
+      local: '2024-07-03 19:49:29+03:00'
+    actual:
+      utc: '2024-07-03T16:49:29Z'
+      local: '2024-07-03 19:49:29+03:00'
+  landing:
+    actual:
+      utc: '2024-07-03T16:49:29Z'
+      local: '2024-07-03 19:49:29+03:00'
+  departure_versus_schedule: +0:00:00
+  airborne_duration: 0:00:00
+- number: 4
+  flightaware_id: SUBTV-1720028621-adhoc-3030p
+  callsign: SU-BTV
+  registration: SU-BTV
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    position_only_point:
+      lat: 27.71118
+      lon: 33.71357
+    city: Hurghada
+    timezone: Africa/Cairo
+  to:
+    position_only_point:
+      lat: 29.96884
+      lon: 31.35745
+    city: Cairo
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2024-07-03T17:49:43Z'
+      local: '2024-07-03 20:49:43+03:00'
+    estimated:
+      utc: '2024-07-03T17:49:43Z'
+      local: '2024-07-03 20:49:43+03:00'
+    actual:
+      utc: '2024-07-03T17:49:43Z'
+      local: '2024-07-03 20:49:43+03:00'
+  landing:
+    actual:
+      utc: '2024-07-03T17:49:43Z'
+      local: '2024-07-03 20:49:43+03:00'
+  departure_versus_schedule: +0:00:00
+  airborne_duration: 0:00:00

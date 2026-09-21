@@ -1,0 +1,93 @@
+# Restated from a FlightAware AeroAPI response, in our own layout.
+# The raw response is held privately and is not republished.
+about:
+  aircraft: SU-BTT
+  question_asked: Which flights does FlightAware hold for SU-BTT between 7 December 2024 and 14 December 2024 (UTC)?
+  source: FlightAware AeroAPI v4 flight history by registration; the raw response is held privately and is not republished.
+  retrieved_utc: '2026-09-16T02:33:45.763Z'
+  vendor_http_status: 200
+  window_utc_from: '2024-12-07T00:00:00Z'
+  window_utc_until_exclusive: '2024-12-14T00:00:00Z'
+  result_page: 1
+  total_pages_reported: 1
+  further_pages_held_by_vendor: false
+flights_recorded: 2
+reading: FlightAware holds 2 flights for SU-BTT in this window, listed here in full with the times it recorded. A flight record shows where an aircraft went; it never shows who was aboard.
+flights:
+- number: 1
+  flightaware_id: SUBTT-1733853866-adhoc-1647p
+  callsign: SU-BTT
+  registration: SU-BTT
+  flight_category: general aviation
+  outcome: Arrived
+  progress_percent: 100
+  flags: []
+  from:
+    position_only_point:
+      lat: 30.13392
+      lon: 31.35597
+    city: Cairo
+    timezone: Africa/Cairo
+  to:
+    icao: OOMS
+    iata: MCT
+    name: Seeb Int'l
+    city: Muscat
+    timezone: Asia/Muscat
+  takeoff:
+    scheduled:
+      utc: '2024-12-10T18:14:14Z'
+      local: '2024-12-10 20:14:14+02:00'
+    estimated:
+      utc: '2024-12-10T18:14:14Z'
+      local: '2024-12-10 20:14:14+02:00'
+    actual:
+      utc: '2024-12-10T18:09:56Z'
+      local: '2024-12-10 20:09:56+02:00'
+  landing:
+    estimated:
+      utc: '2024-12-10T21:40:28Z'
+      local: '2024-12-11 01:40:28+04:00'
+    actual:
+      utc: '2024-12-10T21:40:28Z'
+      local: '2024-12-11 01:40:28+04:00'
+    runway: 08R
+  departure_versus_schedule: -0:04:18
+  airborne_duration: '3:30:32'
+- number: 2
+  flightaware_id: SUBTT-1733896178-adhoc-1041p
+  callsign: SU-BTT
+  registration: SU-BTT
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    icao: OOMS
+    iata: MCT
+    name: Seeb Int'l
+    city: Muscat
+    timezone: Asia/Muscat
+  to:
+    position_only_point:
+      lat: 30.03299
+      lon: 31.35828
+    city: Cairo
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2024-12-11T06:03:33Z'
+      local: '2024-12-11 10:03:33+04:00'
+    estimated:
+      utc: '2024-12-11T06:08:48Z'
+      local: '2024-12-11 10:08:48+04:00'
+    actual:
+      utc: '2024-12-11T06:08:48Z'
+      local: '2024-12-11 10:08:48+04:00'
+    runway: 08R
+  landing:
+    actual:
+      utc: '2024-12-11T06:08:48Z'
+      local: '2024-12-11 08:08:48+02:00'
+  departure_versus_schedule: +0:05:15
+  airborne_duration: 0:00:00

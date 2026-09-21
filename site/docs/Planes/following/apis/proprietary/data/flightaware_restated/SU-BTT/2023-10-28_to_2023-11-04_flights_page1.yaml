@@ -1,0 +1,53 @@
+# Restated from a FlightAware AeroAPI response, in our own layout.
+# The raw response is held privately and is not republished.
+about:
+  aircraft: SU-BTT
+  question_asked: Which flights does FlightAware hold for SU-BTT between 28 October 2023 and 4 November 2023 (UTC)?
+  source: FlightAware AeroAPI v4 flight history by registration; the raw response is held privately and is not republished.
+  retrieved_utc: '2026-09-16T02:32:14.423Z'
+  vendor_http_status: 200
+  window_utc_from: '2023-10-28T00:00:00Z'
+  window_utc_until_exclusive: '2023-11-04T00:00:00Z'
+  result_page: 1
+  total_pages_reported: 1
+  further_pages_held_by_vendor: false
+flights_recorded: 1
+reading: FlightAware holds 1 flight for SU-BTT in this window, listed here in full with the times it recorded. A flight record shows where an aircraft went; it never shows who was aboard.
+flights:
+- number: 1
+  flightaware_id: SUBTT-1698738364-adhoc-4750p
+  callsign: SU-BTT
+  registration: SU-BTT
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    icao: EGLF
+    iata: FAB
+    name: Farnborough Airfield
+    city: Farnborough
+    timezone: Europe/London
+  to:
+    position_only_point:
+      lat: 30.58086
+      lon: 31.28799
+    city: Cairo
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2023-10-31T08:15:59Z'
+      local: '2023-10-31 08:15:59+00:00'
+    estimated:
+      utc: '2023-10-31T07:53:16Z'
+      local: '2023-10-31 07:53:16+00:00'
+    actual:
+      utc: '2023-10-31T07:53:16Z'
+      local: '2023-10-31 07:53:16+00:00'
+    runway: '24'
+  landing:
+    actual:
+      utc: '2023-10-31T07:53:16Z'
+      local: '2023-10-31 09:53:16+02:00'
+  departure_versus_schedule: -0:22:43
+  airborne_duration: 0:00:00

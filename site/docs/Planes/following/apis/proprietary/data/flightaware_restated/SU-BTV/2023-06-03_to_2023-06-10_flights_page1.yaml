@@ -1,0 +1,161 @@
+# Restated from a FlightAware AeroAPI response, in our own layout.
+# The raw response is held privately and is not republished.
+about:
+  aircraft: SU-BTV
+  question_asked: Which flights does FlightAware hold for SU-BTV between 3 June 2023 and 10 June 2023 (UTC)?
+  source: FlightAware AeroAPI v4 flight history by registration; the raw response is held privately and is not republished.
+  retrieved_utc: '2026-09-16T02:46:51.907Z'
+  vendor_http_status: 200
+  window_utc_from: '2023-06-03T00:00:00Z'
+  window_utc_until_exclusive: '2023-06-10T00:00:00Z'
+  result_page: 1
+  total_pages_reported: 1
+  further_pages_held_by_vendor: false
+flights_recorded: 4
+reading: FlightAware holds 4 flights for SU-BTV in this window, listed here in full with the times it recorded. A flight record shows where an aircraft went; it never shows who was aboard.
+flights:
+- number: 1
+  flightaware_id: SUBTV-1686051339-adhoc-1574p
+  callsign: SU-BTV
+  registration: SU-BTV
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    position_only_point:
+      lat: 29.38994
+      lon: 31.29751
+    city: Cairo
+    timezone: Africa/Cairo
+  to:
+    position_only_point:
+      lat: 28.8858
+      lon: 31.24065
+    city: Cairo
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2023-06-06T11:50:54Z'
+      local: '2023-06-06 14:50:54+03:00'
+    estimated:
+      utc: '2023-06-06T11:50:54Z'
+      local: '2023-06-06 14:50:54+03:00'
+    actual:
+      utc: '2023-06-06T11:50:54Z'
+      local: '2023-06-06 14:50:54+03:00'
+  landing:
+    actual:
+      utc: '2023-06-06T11:50:54Z'
+      local: '2023-06-06 14:50:54+03:00'
+  departure_versus_schedule: +0:00:00
+  airborne_duration: 0:00:00
+- number: 2
+  flightaware_id: SUBTV-1686057019-adhoc-4953p
+  callsign: SU-BTV
+  registration: SU-BTV
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    position_only_point:
+      lat: 29.7014
+      lon: 31.27147
+    city: Cairo
+    timezone: Africa/Cairo
+  to:
+    position_only_point:
+      lat: 29.7989
+      lon: 31.23825
+    city: Cairo
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2023-06-06T13:36:44Z'
+      local: '2023-06-06 16:36:44+03:00'
+    estimated:
+      utc: '2023-06-06T13:36:44Z'
+      local: '2023-06-06 16:36:44+03:00'
+    actual:
+      utc: '2023-06-06T13:36:44Z'
+      local: '2023-06-06 16:36:44+03:00'
+  landing:
+    actual:
+      utc: '2023-06-06T13:36:44Z'
+      local: '2023-06-06 16:36:44+03:00'
+  departure_versus_schedule: +0:00:00
+  airborne_duration: 0:00:00
+- number: 3
+  flightaware_id: SUBTV-1686126139-adhoc-1462p
+  callsign: SU-BTV
+  registration: SU-BTV
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    icao: HECA
+    iata: CAI
+    name: Cairo Int'l
+    city: Cairo
+    timezone: Africa/Cairo
+  to:
+    position_only_point:
+      lat: 29.01544
+      lon: 31.1109
+    city: Cairo
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2023-06-07T08:31:11Z'
+      local: '2023-06-07 11:31:11+03:00'
+    estimated:
+      utc: '2023-06-07T08:31:11Z'
+      local: '2023-06-07 11:31:11+03:00'
+    actual:
+      utc: '2023-06-07T08:31:11Z'
+      local: '2023-06-07 11:31:11+03:00'
+    runway: 23R
+  landing:
+    actual:
+      utc: '2023-06-07T08:31:11Z'
+      local: '2023-06-07 11:31:11+03:00'
+  departure_versus_schedule: +0:00:00
+  airborne_duration: 0:00:00
+- number: 4
+  flightaware_id: SUBTV-1686131259-adhoc-2963p
+  callsign: SU-BTV
+  registration: SU-BTV
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    position_only_point:
+      lat: 29.16903
+      lon: 31.27511
+    city: Cairo
+    timezone: Africa/Cairo
+  to:
+    position_only_point:
+      lat: 29.91541
+      lon: 31.35676
+    city: Cairo
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2023-06-07T10:10:59Z'
+      local: '2023-06-07 13:10:59+03:00'
+    estimated:
+      utc: '2023-06-07T10:10:59Z'
+      local: '2023-06-07 13:10:59+03:00'
+    actual:
+      utc: '2023-06-07T10:10:59Z'
+      local: '2023-06-07 13:10:59+03:00'
+  landing:
+    actual:
+      utc: '2023-06-07T10:10:59Z'
+      local: '2023-06-07 13:10:59+03:00'
+  departure_versus_schedule: +0:00:00
+  airborne_duration: 0:00:00

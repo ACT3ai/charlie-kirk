@@ -1,0 +1,160 @@
+# Restated from a FlightAware AeroAPI response, in our own layout.
+# The raw response is held privately and is not republished.
+about:
+  aircraft: SU-BTV
+  question_asked: Which flights does FlightAware hold for SU-BTV between 16 September 2023 and 23 September 2023 (UTC)?
+  source: FlightAware AeroAPI v4 flight history by registration; the raw response is held privately and is not republished.
+  retrieved_utc: '2026-09-16T02:47:09.105Z'
+  vendor_http_status: 200
+  window_utc_from: '2023-09-16T00:00:00Z'
+  window_utc_until_exclusive: '2023-09-23T00:00:00Z'
+  result_page: 1
+  total_pages_reported: 1
+  further_pages_held_by_vendor: false
+flights_recorded: 3
+reading: FlightAware holds 3 flights for SU-BTV in this window, listed here in full with the times it recorded. A flight record shows where an aircraft went; it never shows who was aboard.
+flights:
+- number: 1
+  flightaware_id: SUBTV-1695010542-sw-6p
+  callsign: SU-BTV
+  registration: SU-BTV
+  flight_category: general aviation
+  outcome: Arrived
+  progress_percent: 100
+  flags: []
+  from:
+    icao: HECA
+    iata: CAI
+    name: Cairo Int'l
+    city: Cairo
+    timezone: Africa/Cairo
+  to:
+    icao: LFPB
+    iata: LBG
+    name: Paris Le Bourget
+    city: Paris
+    timezone: Europe/Paris
+  takeoff:
+    scheduled:
+      utc: '2023-09-18T05:57:22Z'
+      local: '2023-09-18 08:57:22+03:00'
+    estimated:
+      utc: '2023-09-18T05:52:48Z'
+      local: '2023-09-18 08:52:48+03:00'
+    actual:
+      utc: '2023-09-18T05:52:48Z'
+      local: '2023-09-18 08:52:48+03:00'
+    runway: 23R
+  landing:
+    scheduled:
+      utc: '2023-09-18T10:03:04Z'
+      local: '2023-09-18 12:03:04+02:00'
+    estimated:
+      utc: '2023-09-18T09:58:30Z'
+      local: '2023-09-18 11:58:30+02:00'
+    actual:
+      utc: '2023-09-18T09:58:30Z'
+      local: '2023-09-18 11:58:30+02:00'
+    runway: '27'
+  departure_versus_schedule: -0:04:34
+  arrival_versus_schedule: -0:04:34
+  airborne_duration: '4:05:42'
+  flight_plan:
+    planned_time_enroute: '4:05:42'
+- number: 2
+  flightaware_id: SUBTV-1695086019-sw-432p
+  callsign: SU-BTV
+  registration: SU-BTV
+  flight_category: general aviation
+  outcome: Arrived
+  progress_percent: 100
+  flags: []
+  from:
+    icao: LFPB
+    iata: LBG
+    name: Paris Le Bourget
+    city: Paris
+    timezone: Europe/Paris
+  to:
+    icao: KSUS
+    iata: SUS
+    faa_lid: SUS
+    name: Spirit of St Louis
+    city: St Louis
+    timezone: America/Chicago
+  takeoff:
+    scheduled:
+      utc: '2023-09-19T07:02:37Z'
+      local: '2023-09-19 09:02:37+02:00'
+    estimated:
+      utc: '2023-09-19T06:41:19Z'
+      local: '2023-09-19 08:41:19+02:00'
+    actual:
+      utc: '2023-09-19T06:41:19Z'
+      local: '2023-09-19 08:41:19+02:00'
+    runway: '25'
+  landing:
+    scheduled:
+      utc: '2023-09-19T15:54:05Z'
+      local: '2023-09-19 10:54:05-05:00'
+    estimated:
+      utc: '2023-09-19T15:32:47Z'
+      local: '2023-09-19 10:32:47-05:00'
+    actual:
+      utc: '2023-09-19T15:32:47Z'
+      local: '2023-09-19 10:32:47-05:00'
+    runway: 26L
+  departure_versus_schedule: -0:21:18
+  arrival_versus_schedule: -0:21:18
+  airborne_duration: '8:51:28'
+  flight_plan:
+    planned_time_enroute: '8:51:28'
+- number: 3
+  flightaware_id: SUBTV-1695141117-adhoc-4216p
+  callsign: SU-BTV
+  registration: SU-BTV
+  flight_category: general aviation
+  outcome: Arrived
+  progress_percent: 100
+  flags: []
+  from:
+    icao: KSUS
+    iata: SUS
+    faa_lid: SUS
+    name: Spirit of St Louis
+    city: St Louis
+    timezone: America/Chicago
+  to:
+    icao: KICT
+    iata: ICT
+    faa_lid: ICT
+    name: Wichita Eisenhower
+    city: Wichita
+    timezone: America/Chicago
+  takeoff:
+    scheduled:
+      utc: '2023-09-19T16:41:53Z'
+      local: '2023-09-19 11:41:53-05:00'
+    estimated:
+      utc: '2023-09-19T16:38:04Z'
+      local: '2023-09-19 11:38:04-05:00'
+    actual:
+      utc: '2023-09-19T16:38:04Z'
+      local: '2023-09-19 11:38:04-05:00'
+    runway: 26L
+  landing:
+    scheduled:
+      utc: '2023-09-19T17:38:37Z'
+      local: '2023-09-19 12:38:37-05:00'
+    estimated:
+      utc: '2023-09-19T17:34:48Z'
+      local: '2023-09-19 12:34:48-05:00'
+    actual:
+      utc: '2023-09-19T17:34:48Z'
+      local: '2023-09-19 12:34:48-05:00'
+    runway: 19L
+  departure_versus_schedule: -0:03:49
+  arrival_versus_schedule: -0:03:49
+  airborne_duration: 0:56:44
+  flight_plan:
+    planned_time_enroute: 0:56:44

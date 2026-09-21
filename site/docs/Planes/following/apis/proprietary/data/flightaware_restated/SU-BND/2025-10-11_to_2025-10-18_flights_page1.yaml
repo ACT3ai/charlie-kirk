@@ -1,0 +1,56 @@
+# Restated from a FlightAware AeroAPI response, in our own layout.
+# The raw response is held privately and is not republished.
+about:
+  aircraft: SU-BND
+  question_asked: Which flights does FlightAware hold for SU-BND between 11 October 2025 and 18 October 2025 (UTC)?
+  source: FlightAware AeroAPI v4 flight history by registration; the raw response is held privately and is not republished.
+  retrieved_utc: '2026-09-16T02:39:38.641Z'
+  vendor_http_status: 200
+  window_utc_from: '2025-10-11T00:00:00Z'
+  window_utc_until_exclusive: '2025-10-18T00:00:00Z'
+  result_page: 1
+  total_pages_reported: 1
+  further_pages_held_by_vendor: false
+flights_recorded: 1
+reading: FlightAware holds 1 flight for SU-BND in this window, listed here in full with the times it recorded. A flight record shows where an aircraft went; it never shows who was aboard.
+flights:
+- number: 1
+  flightaware_id: SUBND-1760514173-adhoc-1016p
+  callsign: SU-BND
+  registration: SU-BND
+  flight_category: general aviation
+  outcome: Arrived
+  progress_percent: 100
+  flags: []
+  from:
+    position_only_point:
+      lat: 31.41461
+      lon: 29.58624
+    city: Amreya
+    timezone: Africa/Cairo
+  to:
+    icao: LFMN
+    iata: NCE
+    name: Nice Cote d'Azur
+    city: Nice
+    timezone: Europe/Paris
+  takeoff:
+    scheduled:
+      utc: '2025-10-15T08:42:33Z'
+      local: '2025-10-15 11:42:33+03:00'
+    estimated:
+      utc: '2025-10-15T08:42:33Z'
+      local: '2025-10-15 11:42:33+03:00'
+    actual:
+      utc: '2025-10-15T08:42:33Z'
+      local: '2025-10-15 11:42:33+03:00'
+  landing:
+    estimated:
+      utc: '2025-10-15T11:57:49Z'
+      local: '2025-10-15 13:57:49+02:00'
+    actual:
+      utc: '2025-10-15T11:57:49Z'
+      local: '2025-10-15 13:57:49+02:00'
+    runway: 04L
+  departure_versus_schedule: +0:00:00
+  airborne_duration: '3:15:16'

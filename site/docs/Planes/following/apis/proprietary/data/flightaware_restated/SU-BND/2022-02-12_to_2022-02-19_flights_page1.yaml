@@ -1,0 +1,249 @@
+# Restated from a FlightAware AeroAPI response, in our own layout.
+# The raw response is held privately and is not republished.
+about:
+  aircraft: SU-BND
+  question_asked: Which flights does FlightAware hold for SU-BND between 12 February 2022 and 19 February 2022 (UTC)?
+  source: FlightAware AeroAPI v4 flight history by registration; the raw response is held privately and is not republished.
+  retrieved_utc: '2026-09-16T02:35:09.016Z'
+  vendor_http_status: 200
+  window_utc_from: '2022-02-12T00:00:00Z'
+  window_utc_until_exclusive: '2022-02-19T00:00:00Z'
+  result_page: 1
+  total_pages_reported: 1
+  further_pages_held_by_vendor: false
+flights_recorded: 5
+reading: FlightAware holds 5 flights for SU-BND in this window, listed here in full with the times it recorded. A flight record shows where an aircraft went; it never shows who was aboard.
+flights:
+- number: 1
+  flightaware_id: SUBND-1644640078-1-4-144
+  callsign: SU-BND
+  registration: SU-BND
+  flight_category: general aviation
+  outcome: Arrived
+  progress_percent: 100
+  flags: []
+  from:
+    position_only_point:
+      lat: 30.63373
+      lon: 30.84121
+    city: Cairo
+    timezone: Africa/Cairo
+  to:
+    icao: LFPB
+    iata: LBG
+    name: Paris Le Bourget
+    city: Paris
+    timezone: Europe/Paris
+  takeoff:
+    scheduled:
+      utc: '2022-02-12T06:32:00Z'
+      local: '2022-02-12 08:32:00+02:00'
+    estimated:
+      utc: '2022-02-12T06:32:00Z'
+      local: '2022-02-12 08:32:00+02:00'
+    actual:
+      utc: '2022-02-12T06:32:00Z'
+      local: '2022-02-12 08:32:00+02:00'
+  landing:
+    estimated:
+      utc: '2022-02-12T10:44:39Z'
+      local: '2022-02-12 11:44:39+01:00'
+    actual:
+      utc: '2022-02-12T10:44:39Z'
+      local: '2022-02-12 11:44:39+01:00'
+    runway: '07'
+  departure_versus_schedule: +0:00:00
+  airborne_duration: '4:12:39'
+- number: 2
+  flightaware_id: SUBND-1644718438-3-0-144
+  callsign: SU-BND
+  registration: SU-BND
+  flight_category: general aviation
+  outcome: Arrived
+  progress_percent: 100
+  flags: []
+  from:
+    icao: LFPB
+    iata: LBG
+    name: Paris Le Bourget
+    city: Paris
+    timezone: Europe/Paris
+  to:
+    icao: CYYR
+    iata: YYR
+    name: CFB Goose Bay (Goose Bay)
+    city: Goose Bay
+    timezone: America/Goose_Bay
+  takeoff:
+    scheduled:
+      utc: '2022-02-13T08:24:07Z'
+      local: '2022-02-13 09:24:07+01:00'
+    estimated:
+      utc: '2022-02-13T08:02:08Z'
+      local: '2022-02-13 09:02:08+01:00'
+    actual:
+      utc: '2022-02-13T08:02:08Z'
+      local: '2022-02-13 09:02:08+01:00'
+    runway: '27'
+  landing:
+    scheduled:
+      utc: '2022-02-13T14:28:12Z'
+      local: '2022-02-13 10:28:12-04:00'
+    estimated:
+      utc: '2022-02-13T14:06:13Z'
+      local: '2022-02-13 10:06:13-04:00'
+    actual:
+      utc: '2022-02-13T14:06:13Z'
+      local: '2022-02-13 10:06:13-04:00'
+    runway: '26'
+  departure_versus_schedule: -0:21:59
+  arrival_versus_schedule: -0:21:59
+  airborne_duration: '6:04:05'
+  flight_plan:
+    planned_time_enroute: '6:04:05'
+- number: 3
+  flightaware_id: SUBND-1644763834-adhoc-0
+  callsign: SU-BND
+  registration: SU-BND
+  flight_category: general aviation
+  outcome: result unknown
+  progress_percent: 100
+  flags: []
+  from:
+    icao: CYYR
+    iata: YYR
+    name: CFB Goose Bay (Goose Bay)
+    city: Goose Bay
+    timezone: America/Goose_Bay
+  to:
+    icao: KSUS
+    iata: SUS
+    faa_lid: SUS
+    name: Spirit of St Louis
+    city: St Louis
+    timezone: America/Chicago
+  takeoff:
+    scheduled:
+      utc: '2022-02-13T15:20:42Z'
+      local: '2022-02-13 11:20:42-04:00'
+    estimated:
+      utc: '2022-02-13T14:57:35Z'
+      local: '2022-02-13 10:57:35-04:00'
+    actual:
+      utc: '2022-02-13T14:57:35Z'
+      local: '2022-02-13 10:57:35-04:00'
+    runway: '26'
+  landing:
+    scheduled:
+      utc: '2022-02-13T19:19:22Z'
+      local: '2022-02-13 13:19:22-06:00'
+    estimated:
+      utc: '2022-02-13T18:56:15Z'
+      local: '2022-02-13 12:56:15-06:00'
+    actual:
+      utc: '2022-02-13T14:57:35Z'
+      local: '2022-02-13 08:57:35-06:00'
+    runway: 26L
+  departure_versus_schedule: -0:23:07
+  arrival_versus_schedule: '-4:21:47'
+  airborne_duration: 0:00:00
+  flight_plan:
+    planned_time_enroute: '3:58:40'
+- number: 4
+  flightaware_id: SUBND-1644782170-adhoc-0
+  callsign: SU-BND
+  registration: SU-BND
+  flight_category: general aviation
+  outcome: Arrived
+  progress_percent: 100
+  flags: []
+  from:
+    icao: KSUS
+    iata: SUS
+    faa_lid: SUS
+    name: Spirit of St Louis
+    city: St Louis
+    timezone: America/Chicago
+  to:
+    icao: KCPS
+    iata: CPS
+    faa_lid: CPS
+    name: St Louis Downtown
+    city: Cahokia/St Louis
+    timezone: America/Chicago
+  takeoff:
+    scheduled:
+      utc: '2022-02-13T19:57:19Z'
+      local: '2022-02-13 13:57:19-06:00'
+    estimated:
+      utc: '2022-02-13T19:57:19Z'
+      local: '2022-02-13 13:57:19-06:00'
+    actual:
+      utc: '2022-02-13T19:57:19Z'
+      local: '2022-02-13 13:57:19-06:00'
+    runway: 26L
+  landing:
+    scheduled:
+      utc: '2022-02-13T20:25:59Z'
+      local: '2022-02-13 14:25:59-06:00'
+    estimated:
+      utc: '2022-02-13T20:25:59Z'
+      local: '2022-02-13 14:25:59-06:00'
+    actual:
+      utc: '2022-02-13T20:25:59Z'
+      local: '2022-02-13 14:25:59-06:00'
+    runway: 30L
+  departure_versus_schedule: +0:00:00
+  arrival_versus_schedule: +0:00:00
+  airborne_duration: 0:28:40
+  flight_plan:
+    planned_time_enroute: 0:28:40
+- number: 5
+  flightaware_id: SUBND-1644947089-adhoc-0
+  callsign: SU-BND
+  registration: SU-BND
+  flight_category: general aviation
+  outcome: Arrived
+  progress_percent: 100
+  flags: []
+  from:
+    icao: KCPS
+    iata: CPS
+    faa_lid: CPS
+    name: St Louis Downtown
+    city: Cahokia/St Louis
+    timezone: America/Chicago
+  to:
+    icao: KCPS
+    iata: CPS
+    faa_lid: CPS
+    name: St Louis Downtown
+    city: Cahokia/St Louis
+    timezone: America/Chicago
+  takeoff:
+    scheduled:
+      utc: '2022-02-15T18:14:49Z'
+      local: '2022-02-15 12:14:49-06:00'
+    estimated:
+      utc: '2022-02-15T17:49:32Z'
+      local: '2022-02-15 11:49:32-06:00'
+    actual:
+      utc: '2022-02-15T17:49:32Z'
+      local: '2022-02-15 11:49:32-06:00'
+    runway: 12R
+  landing:
+    scheduled:
+      utc: '2022-02-15T18:22:40Z'
+      local: '2022-02-15 12:22:40-06:00'
+    estimated:
+      utc: '2022-02-15T17:57:23Z'
+      local: '2022-02-15 11:57:23-06:00'
+    actual:
+      utc: '2022-02-15T17:57:23Z'
+      local: '2022-02-15 11:57:23-06:00'
+    runway: 12R
+  departure_versus_schedule: -0:25:17
+  arrival_versus_schedule: -0:25:17
+  airborne_duration: 0:07:51
+  flight_plan:
+    planned_time_enroute: 0:07:51

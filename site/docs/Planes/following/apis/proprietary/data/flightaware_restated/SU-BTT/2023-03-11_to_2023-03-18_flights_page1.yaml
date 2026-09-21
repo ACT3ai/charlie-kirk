@@ -1,0 +1,93 @@
+# Restated from a FlightAware AeroAPI response, in our own layout.
+# The raw response is held privately and is not republished.
+about:
+  aircraft: SU-BTT
+  question_asked: Which flights does FlightAware hold for SU-BTT between 11 March 2023 and 18 March 2023 (UTC)?
+  source: FlightAware AeroAPI v4 flight history by registration; the raw response is held privately and is not republished.
+  retrieved_utc: '2026-09-16T02:31:38.516Z'
+  vendor_http_status: 200
+  window_utc_from: '2023-03-11T00:00:00Z'
+  window_utc_until_exclusive: '2023-03-18T00:00:00Z'
+  result_page: 1
+  total_pages_reported: 1
+  further_pages_held_by_vendor: false
+flights_recorded: 2
+reading: FlightAware holds 2 flights for SU-BTT in this window, listed here in full with the times it recorded. A flight record shows where an aircraft went; it never shows who was aboard.
+flights:
+- number: 1
+  flightaware_id: SUBTT-1678604664-adhoc-0
+  callsign: SU-BTT
+  registration: SU-BTT
+  flight_category: general aviation
+  outcome: Arrived
+  progress_percent: 100
+  flags: []
+  from:
+    position_only_point:
+      lat: 29.90921
+      lon: 31.55618
+    city: Cairo
+    timezone: Africa/Cairo
+  to:
+    icao: OJAI
+    iata: AMM
+    name: Queen Alia Int'l
+    city: Amman
+    timezone: Asia/Amman
+  takeoff:
+    scheduled:
+      utc: '2023-03-12T07:20:34Z'
+      local: '2023-03-12 09:20:34+02:00'
+    estimated:
+      utc: '2023-03-12T07:20:34Z'
+      local: '2023-03-12 09:20:34+02:00'
+    actual:
+      utc: '2023-03-12T07:20:34Z'
+      local: '2023-03-12 09:20:34+02:00'
+  landing:
+    estimated:
+      utc: '2023-03-12T08:12:59Z'
+      local: '2023-03-12 11:12:59+03:00'
+    actual:
+      utc: '2023-03-12T08:12:59Z'
+      local: '2023-03-12 11:12:59+03:00'
+    runway: 26L
+  departure_versus_schedule: +0:00:00
+  airborne_duration: 0:52:25
+- number: 2
+  flightaware_id: SUBTT-1678645089-adhoc-0
+  callsign: SU-BTT
+  registration: SU-BTT
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    icao: OJAI
+    iata: AMM
+    name: Queen Alia Int'l
+    city: Amman
+    timezone: Asia/Amman
+  to:
+    position_only_point:
+      lat: 29.66318
+      lon: 32.40681
+    city: Cairo
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2023-03-12T18:48:54Z'
+      local: '2023-03-12 21:48:54+03:00'
+    estimated:
+      utc: '2023-03-12T18:35:14Z'
+      local: '2023-03-12 21:35:14+03:00'
+    actual:
+      utc: '2023-03-12T18:35:14Z'
+      local: '2023-03-12 21:35:14+03:00'
+    runway: 26L
+  landing:
+    actual:
+      utc: '2023-03-12T18:35:14Z'
+      local: '2023-03-12 20:35:14+02:00'
+  departure_versus_schedule: -0:13:40
+  airborne_duration: 0:00:00

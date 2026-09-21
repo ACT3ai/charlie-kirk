@@ -1,0 +1,163 @@
+# Restated from a FlightAware AeroAPI response, in our own layout.
+# The raw response is held privately and is not republished.
+about:
+  aircraft: SU-BTU
+  question_asked: Which flights does FlightAware hold for SU-BTU between 6 January 2024 and 13 January 2024 (UTC)?
+  source: FlightAware AeroAPI v4 flight history by registration; the raw response is held privately and is not republished.
+  retrieved_utc: '2026-09-16T02:42:33.953Z'
+  vendor_http_status: 200
+  window_utc_from: '2024-01-06T00:00:00Z'
+  window_utc_until_exclusive: '2024-01-13T00:00:00Z'
+  result_page: 1
+  total_pages_reported: 1
+  further_pages_held_by_vendor: false
+flights_recorded: 4
+reading: FlightAware holds 4 flights for SU-BTU in this window, listed here in full with the times it recorded. A flight record shows where an aircraft went; it never shows who was aboard.
+flights:
+- number: 1
+  flightaware_id: SUBTU-1704785585-adhoc-1112p
+  callsign: SU-BTU
+  registration: SU-BTU
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    position_only_point:
+      lat: 29.72407
+      lon: 31.67229
+    city: Cairo
+    timezone: Africa/Cairo
+  to:
+    position_only_point:
+      lat: 27.89699
+      lon: 33.78016
+    city: Sharm El Sheikh
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2024-01-09T07:49:02Z'
+      local: '2024-01-09 09:49:02+02:00'
+    estimated:
+      utc: '2024-01-09T07:49:02Z'
+      local: '2024-01-09 09:49:02+02:00'
+    actual:
+      utc: '2024-01-09T07:49:02Z'
+      local: '2024-01-09 09:49:02+02:00'
+  landing:
+    actual:
+      utc: '2024-01-09T07:49:02Z'
+      local: '2024-01-09 09:49:02+02:00'
+  departure_versus_schedule: +0:00:00
+  airborne_duration: 0:00:00
+- number: 2
+  flightaware_id: SUBTU-1704789841-adhoc-183p
+  callsign: SU-BTU
+  registration: SU-BTU
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    position_only_point:
+      lat: 28.26036
+      lon: 34.35351
+    city: Sharm El Sheikh
+    timezone: Africa/Cairo
+  to:
+    position_only_point:
+      lat: 28.90661
+      lon: 33.26079
+    city: Sharm El Sheikh
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2024-01-09T08:47:04Z'
+      local: '2024-01-09 10:47:04+02:00'
+    estimated:
+      utc: '2024-01-09T08:47:04Z'
+      local: '2024-01-09 10:47:04+02:00'
+    actual:
+      utc: '2024-01-09T08:47:04Z'
+      local: '2024-01-09 10:47:04+02:00'
+  landing:
+    actual:
+      utc: '2024-01-09T08:47:04Z'
+      local: '2024-01-09 10:47:04+02:00'
+  departure_versus_schedule: +0:00:00
+  airborne_duration: 0:00:00
+- number: 3
+  flightaware_id: SUBTU-1704884404-adhoc-3023p
+  callsign: SU-BTU
+  registration: SU-BTU
+  flight_category: general aviation
+  outcome: Arrived
+  flags:
+  - position_only
+  from:
+    position_only_point:
+      lat: 29.46043
+      lon: 33.09431
+    city: Cairo
+    timezone: Africa/Cairo
+  to:
+    icao: OJAQ
+    iata: AQJ
+    name: Aqaba Int'l (King Hussein Int'l)
+    city: Aqaba
+    timezone: Asia/Amman
+  takeoff:
+    scheduled:
+      utc: '2024-01-10T13:15:28Z'
+      local: '2024-01-10 15:15:28+02:00'
+    estimated:
+      utc: '2024-01-10T13:15:28Z'
+      local: '2024-01-10 15:15:28+02:00'
+    actual:
+      utc: '2024-01-10T13:15:28Z'
+      local: '2024-01-10 15:15:28+02:00'
+  landing:
+    estimated:
+      utc: '2024-01-10T13:53:11Z'
+      local: '2024-01-10 16:53:11+03:00'
+    actual:
+      utc: '2024-01-10T13:53:11Z'
+      local: '2024-01-10 16:53:11+03:00'
+  departure_versus_schedule: +0:00:00
+  airborne_duration: 0:37:43
+- number: 4
+  flightaware_id: SUBTU-1704903759-adhoc-5119p
+  callsign: SU-BTU
+  registration: SU-BTU
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    position_only_point:
+      lat: 29.52301
+      lon: 33.60332
+    city: Eilat
+    timezone: Asia/Jerusalem
+  to:
+    position_only_point:
+      lat: 29.98728
+      lon: 32.36314
+    city: Cairo
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2024-01-10T16:23:08Z'
+      local: '2024-01-10 18:23:08+02:00'
+    estimated:
+      utc: '2024-01-10T16:23:08Z'
+      local: '2024-01-10 18:23:08+02:00'
+    actual:
+      utc: '2024-01-10T16:23:08Z'
+      local: '2024-01-10 18:23:08+02:00'
+  landing:
+    actual:
+      utc: '2024-01-10T16:23:08Z'
+      local: '2024-01-10 18:23:08+02:00'
+  departure_versus_schedule: +0:00:00
+  airborne_duration: 0:00:00

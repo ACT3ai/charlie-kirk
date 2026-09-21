@@ -1,0 +1,98 @@
+# Restated from a FlightAware AeroAPI response, in our own layout.
+# The raw response is held privately and is not republished.
+about:
+  aircraft: SU-BTU
+  question_asked: Which flights does FlightAware hold for SU-BTU between 29 July 2023 and 5 August 2023 (UTC)?
+  source: FlightAware AeroAPI v4 flight history by registration; the raw response is held privately and is not republished.
+  retrieved_utc: '2026-09-16T02:42:01.232Z'
+  vendor_http_status: 200
+  window_utc_from: '2023-07-29T00:00:00Z'
+  window_utc_until_exclusive: '2023-08-05T00:00:00Z'
+  result_page: 1
+  total_pages_reported: 1
+  further_pages_held_by_vendor: false
+flights_recorded: 2
+reading: FlightAware holds 2 flights for SU-BTU in this window, listed here in full with the times it recorded. A flight record shows where an aircraft went; it never shows who was aboard.
+flights:
+- number: 1
+  flightaware_id: SUBTU-1690702212-adhoc-12401p
+  callsign: SU-BTU
+  registration: SU-BTU
+  flight_category: general aviation
+  outcome: Arrived
+  progress_percent: 100
+  flags: []
+  from:
+    icao: HEAZ
+    name: Almaza Air Base
+    timezone: Africa/Cairo
+  to:
+    icao: HEAL
+    iata: DBB
+    name: El Alamein International Airport
+    city: Matrouh Governorate
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2023-07-30T08:40:04Z'
+      local: '2023-07-30 11:40:04+03:00'
+    estimated:
+      utc: '2023-07-30T08:11:46Z'
+      local: '2023-07-30 11:11:46+03:00'
+    actual:
+      utc: '2023-07-30T08:11:46Z'
+      local: '2023-07-30 11:11:46+03:00'
+    runway: '36'
+  landing:
+    scheduled:
+      utc: '2023-07-30T09:10:38Z'
+      local: '2023-07-30 12:10:38+03:00'
+    estimated:
+      utc: '2023-07-30T08:42:20Z'
+      local: '2023-07-30 11:42:20+03:00'
+    actual:
+      utc: '2023-07-30T08:42:20Z'
+      local: '2023-07-30 11:42:20+03:00'
+    runway: '31'
+  departure_versus_schedule: -0:28:18
+  arrival_versus_schedule: -0:28:18
+  airborne_duration: 0:30:34
+  flight_plan:
+    planned_time_enroute: 0:30:34
+- number: 2
+  flightaware_id: SUBTU-1690711072-adhoc-1408p
+  callsign: SU-BTU
+  registration: SU-BTU
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    icao: HEAL
+    iata: DBB
+    name: El Alamein International Airport
+    city: Matrouh Governorate
+    timezone: Africa/Cairo
+  to:
+    position_only_point:
+      lat: 30.01726
+      lon: 31.35853
+    city: Cairo
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2023-07-30T09:57:47Z'
+      local: '2023-07-30 12:57:47+03:00'
+    estimated:
+      utc: '2023-07-30T09:57:47Z'
+      local: '2023-07-30 12:57:47+03:00'
+    actual:
+      utc: '2023-07-30T09:57:47Z'
+      local: '2023-07-30 12:57:47+03:00'
+    runway: '13'
+  landing:
+    actual:
+      utc: '2023-07-30T09:57:47Z'
+      local: '2023-07-30 12:57:47+03:00'
+  departure_versus_schedule: +0:00:00
+  airborne_duration: 0:00:00

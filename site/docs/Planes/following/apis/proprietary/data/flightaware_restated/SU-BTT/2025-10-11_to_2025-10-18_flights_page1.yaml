@@ -1,0 +1,210 @@
+# Restated from a FlightAware AeroAPI response, in our own layout.
+# The raw response is held privately and is not republished.
+about:
+  aircraft: SU-BTT
+  question_asked: Which flights does FlightAware hold for SU-BTT between 11 October 2025 and 18 October 2025 (UTC)?
+  source: FlightAware AeroAPI v4 flight history by registration; the raw response is held privately and is not republished.
+  retrieved_utc: '2026-09-16T02:34:36.714Z'
+  vendor_http_status: 200
+  window_utc_from: '2025-10-11T00:00:00Z'
+  window_utc_until_exclusive: '2025-10-18T00:00:00Z'
+  result_page: 1
+  total_pages_reported: 1
+  further_pages_held_by_vendor: false
+flights_recorded: 5
+reading: FlightAware holds 5 flights for SU-BTT in this window, listed here in full with the times it recorded. A flight record shows where an aircraft went; it never shows who was aboard.
+flights:
+- number: 1
+  flightaware_id: SUBTT-1760155289-adhoc-397p
+  callsign: SU-BTT
+  registration: SU-BTT
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    position_only_point:
+      lat: 29.6917
+      lon: 31.63703
+    city: Cairo
+    timezone: Africa/Cairo
+  to:
+    position_only_point:
+      lat: 28.74643
+      lon: 31.91614
+    city: Cairo
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2025-10-11T05:22:10Z'
+      local: '2025-10-11 08:22:10+03:00'
+    estimated:
+      utc: '2025-10-11T05:22:10Z'
+      local: '2025-10-11 08:22:10+03:00'
+    actual:
+      utc: '2025-10-11T05:22:10Z'
+      local: '2025-10-11 08:22:10+03:00'
+  landing:
+    estimated:
+      utc: '2025-10-11T05:30:07Z'
+      local: '2025-10-11 08:30:07+03:00'
+    actual:
+      utc: '2025-10-11T05:22:10Z'
+      local: '2025-10-11 08:22:10+03:00'
+  departure_versus_schedule: +0:00:00
+  airborne_duration: 0:00:00
+- number: 2
+  flightaware_id: SUBTT-1760170361-adhoc-670p
+  callsign: SU-BTT
+  registration: SU-BTT
+  flight_category: general aviation
+  outcome: result unknown
+  progress_percent: 100
+  flags: []
+  from:
+    icao: OEJN
+    iata: JED
+    name: King Abdulaziz Int'l
+    city: Jeddah
+    timezone: Asia/Riyadh
+  to:
+    icao: OEJN
+    iata: JED
+    name: King Abdulaziz Int'l
+    city: Jeddah
+    timezone: Asia/Riyadh
+  takeoff:
+    scheduled:
+      utc: '2025-10-11T08:24:32Z'
+      local: '2025-10-11 11:24:32+03:00'
+    estimated:
+      utc: '2025-10-11T08:14:32Z'
+      local: '2025-10-11 11:14:32+03:00'
+    actual:
+      utc: '2025-10-11T08:14:32Z'
+      local: '2025-10-11 11:14:32+03:00'
+    runway: 34L
+  landing:
+    scheduled:
+      utc: '2025-10-11T08:24:32Z'
+      local: '2025-10-11 11:24:32+03:00'
+    estimated:
+      utc: '2025-10-11T08:14:32Z'
+      local: '2025-10-11 11:14:32+03:00'
+    actual:
+      utc: '2025-10-11T08:14:32Z'
+      local: '2025-10-11 11:14:32+03:00'
+    runway: 34L
+  departure_versus_schedule: -0:10:00
+  arrival_versus_schedule: -0:10:00
+  airborne_duration: 0:00:00
+  flight_plan:
+    planned_time_enroute: 0:00:00
+- number: 3
+  flightaware_id: SUBTT-1760260377-adhoc-1213p
+  callsign: SU-BTT
+  registration: SU-BTT
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    position_only_point:
+      lat: 29.60326
+      lon: 31.99145
+    city: Cairo
+    timezone: Africa/Cairo
+  to:
+    position_only_point:
+      lat: 29.60326
+      lon: 31.99145
+    city: Cairo
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2025-10-12T10:23:34Z'
+      local: '2025-10-12 13:23:34+03:00'
+    estimated:
+      utc: '2025-10-12T10:23:34Z'
+      local: '2025-10-12 13:23:34+03:00'
+    actual:
+      utc: '2025-10-12T10:23:34Z'
+      local: '2025-10-12 13:23:34+03:00'
+  landing:
+    actual:
+      utc: '2025-10-12T10:23:34Z'
+      local: '2025-10-12 13:23:34+03:00'
+  departure_versus_schedule: +0:00:00
+  airborne_duration: 0:00:00
+- number: 4
+  flightaware_id: SUBTT-1760614941-adhoc-1879p
+  callsign: SU-BTT
+  registration: SU-BTT
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    position_only_point:
+      lat: 29.66299
+      lon: 31.60999
+    city: Cairo
+    timezone: Africa/Cairo
+  to:
+    position_only_point:
+      lat: 25.55993
+      lon: 37.73425
+    city: Hanak
+    timezone: Asia/Riyadh
+  takeoff:
+    scheduled:
+      utc: '2025-10-16T12:10:17Z'
+      local: '2025-10-16 15:10:17+03:00'
+    estimated:
+      utc: '2025-10-16T12:10:17Z'
+      local: '2025-10-16 15:10:17+03:00'
+    actual:
+      utc: '2025-10-16T12:10:17Z'
+      local: '2025-10-16 15:10:17+03:00'
+  landing:
+    actual:
+      utc: '2025-10-16T12:10:17Z'
+      local: '2025-10-16 15:10:17+03:00'
+  departure_versus_schedule: +0:00:00
+  airborne_duration: 0:00:00
+- number: 5
+  flightaware_id: SUBTT-1760633389-adhoc-3987p
+  callsign: SU-BTT
+  registration: SU-BTT
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    position_only_point:
+      lat: 26.09895
+      lon: 36.98859
+    city: Hanak
+    timezone: Asia/Riyadh
+  to:
+    position_only_point:
+      lat: 29.02257
+      lon: 32.85214
+    city: Cairo
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2025-10-16T17:27:20Z'
+      local: '2025-10-16 20:27:20+03:00'
+    estimated:
+      utc: '2025-10-16T17:27:20Z'
+      local: '2025-10-16 20:27:20+03:00'
+    actual:
+      utc: '2025-10-16T17:27:20Z'
+      local: '2025-10-16 20:27:20+03:00'
+  landing:
+    actual:
+      utc: '2025-10-16T17:27:20Z'
+      local: '2025-10-16 20:27:20+03:00'
+  departure_versus_schedule: +0:00:00
+  airborne_duration: 0:00:00

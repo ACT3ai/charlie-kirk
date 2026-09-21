@@ -1,0 +1,88 @@
+# Restated from a FlightAware AeroAPI response, in our own layout.
+# The raw response is held privately and is not republished.
+about:
+  aircraft: SU-BND
+  question_asked: Which flights does FlightAware hold for SU-BND between 12 October 2024 and 19 October 2024 (UTC)?
+  source: FlightAware AeroAPI v4 flight history by registration; the raw response is held privately and is not republished.
+  retrieved_utc: '2026-09-16T02:38:28.489Z'
+  vendor_http_status: 200
+  window_utc_from: '2024-10-12T00:00:00Z'
+  window_utc_until_exclusive: '2024-10-19T00:00:00Z'
+  result_page: 1
+  total_pages_reported: 1
+  further_pages_held_by_vendor: false
+flights_recorded: 2
+reading: FlightAware holds 2 flights for SU-BND in this window, listed here in full with the times it recorded. A flight record shows where an aircraft went; it never shows who was aboard.
+flights:
+- number: 1
+  flightaware_id: SUBND-1728975341-adhoc-1237p
+  callsign: SU-BND
+  registration: SU-BND
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    position_only_point:
+      lat: 30.75531
+      lon: 30.75924
+    city: Cairo
+    timezone: Africa/Cairo
+  to:
+    position_only_point:
+      lat: 31.50696
+      lon: 29.43706
+    city: Amreya
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2024-10-15T07:09:48Z'
+      local: '2024-10-15 10:09:48+03:00'
+    estimated:
+      utc: '2024-10-15T07:09:48Z'
+      local: '2024-10-15 10:09:48+03:00'
+    actual:
+      utc: '2024-10-15T07:09:48Z'
+      local: '2024-10-15 10:09:48+03:00'
+  landing:
+    actual:
+      utc: '2024-10-15T07:09:48Z'
+      local: '2024-10-15 10:09:48+03:00'
+  departure_versus_schedule: +0:00:00
+  airborne_duration: 0:00:00
+- number: 2
+  flightaware_id: SUBND-1729062253-adhoc-106p
+  callsign: SU-BND
+  registration: SU-BND
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    position_only_point:
+      lat: 27.70035
+      lon: 33.73759
+    city: Hurghada
+    timezone: Africa/Cairo
+  to:
+    position_only_point:
+      lat: 29.22778
+      lon: 32.7321
+    city: Cairo
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2024-10-16T07:09:21Z'
+      local: '2024-10-16 10:09:21+03:00'
+    estimated:
+      utc: '2024-10-16T07:09:21Z'
+      local: '2024-10-16 10:09:21+03:00'
+    actual:
+      utc: '2024-10-16T07:09:21Z'
+      local: '2024-10-16 10:09:21+03:00'
+  landing:
+    actual:
+      utc: '2024-10-16T07:09:21Z'
+      local: '2024-10-16 10:09:21+03:00'
+  departure_versus_schedule: +0:00:00
+  airborne_duration: 0:00:00

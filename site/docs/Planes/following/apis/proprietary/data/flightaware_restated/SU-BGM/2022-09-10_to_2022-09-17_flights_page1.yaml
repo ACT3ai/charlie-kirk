@@ -1,0 +1,88 @@
+# Restated from a FlightAware AeroAPI response, in our own layout.
+# The raw response is held privately and is not republished.
+about:
+  aircraft: SU-BGM
+  question_asked: Which flights does FlightAware hold for SU-BGM between 10 September 2022 and 17 September 2022 (UTC)?
+  source: FlightAware AeroAPI v4 flight history by registration; the raw response is held privately and is not republished.
+  retrieved_utc: '2026-09-16T02:50:52.648Z'
+  vendor_http_status: 200
+  window_utc_from: '2022-09-10T00:00:00Z'
+  window_utc_until_exclusive: '2022-09-17T00:00:00Z'
+  result_page: 1
+  total_pages_reported: 1
+  further_pages_held_by_vendor: false
+flights_recorded: 2
+reading: FlightAware holds 2 flights for SU-BGM in this window, listed here in full with the times it recorded. A flight record shows where an aircraft went; it never shows who was aboard.
+flights:
+- number: 1
+  flightaware_id: SUBGM-1662799420-adhoc-0
+  callsign: SU-BGM
+  registration: SU-BGM
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    position_only_point:
+      lat: 30.19226
+      lon: 31.36651
+    city: Cairo
+    timezone: Africa/Cairo
+  to:
+    position_only_point:
+      lat: 28.83815
+      lon: 31.23767
+    city: Cairo
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2022-09-10T08:49:59Z'
+      local: '2022-09-10 10:49:59+02:00'
+    estimated:
+      utc: '2022-09-10T08:49:59Z'
+      local: '2022-09-10 10:49:59+02:00'
+    actual:
+      utc: '2022-09-10T08:49:59Z'
+      local: '2022-09-10 10:49:59+02:00'
+  landing:
+    actual:
+      utc: '2022-09-10T08:49:59Z'
+      local: '2022-09-10 10:49:59+02:00'
+  departure_versus_schedule: +0:00:00
+  airborne_duration: 0:00:00
+- number: 2
+  flightaware_id: SUBGM-1662805322-adhoc-0
+  callsign: SU-BGM
+  registration: SU-BGM
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    position_only_point:
+      lat: 29.37386
+      lon: 31.30075
+    city: Cairo
+    timezone: Africa/Cairo
+  to:
+    position_only_point:
+      lat: 29.94743
+      lon: 31.32356
+    city: Cairo
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2022-09-10T10:50:12Z'
+      local: '2022-09-10 12:50:12+02:00'
+    estimated:
+      utc: '2022-09-10T10:50:12Z'
+      local: '2022-09-10 12:50:12+02:00'
+    actual:
+      utc: '2022-09-10T10:50:12Z'
+      local: '2022-09-10 12:50:12+02:00'
+  landing:
+    actual:
+      utc: '2022-09-10T10:50:12Z'
+      local: '2022-09-10 12:50:12+02:00'
+  departure_versus_schedule: +0:00:00
+  airborne_duration: 0:00:00

@@ -1,0 +1,203 @@
+# Restated from a FlightAware AeroAPI response, in our own layout.
+# The raw response is held privately and is not republished.
+about:
+  aircraft: SU-BTU
+  question_asked: Which flights does FlightAware hold for SU-BTU between 9 November 2024 and 16 November 2024 (UTC)?
+  source: FlightAware AeroAPI v4 flight history by registration; the raw response is held privately and is not republished.
+  retrieved_utc: '2026-09-16T02:43:40.204Z'
+  vendor_http_status: 200
+  window_utc_from: '2024-11-09T00:00:00Z'
+  window_utc_until_exclusive: '2024-11-16T00:00:00Z'
+  result_page: 1
+  total_pages_reported: 1
+  further_pages_held_by_vendor: false
+flights_recorded: 4
+reading: FlightAware holds 4 flights for SU-BTU in this window, listed here in full with the times it recorded. A flight record shows where an aircraft went; it never shows who was aboard.
+flights:
+- number: 1
+  flightaware_id: SUBTU-1731128866-sw-186p
+  callsign: SU-BTU
+  registration: SU-BTU
+  flight_category: general aviation
+  outcome: Arrived
+  flags:
+  - position_only
+  from:
+    position_only_point:
+      lat: 30.5885
+      lon: 30.66202
+    city: Cairo
+    timezone: Africa/Cairo
+  to:
+    icao: LFPB
+    iata: LBG
+    name: Paris Le Bourget
+    city: Paris
+    timezone: Europe/Paris
+  takeoff:
+    scheduled:
+      utc: '2024-11-09T06:54:49Z'
+      local: '2024-11-09 08:54:49+02:00'
+    estimated:
+      utc: '2024-11-09T06:54:49Z'
+      local: '2024-11-09 08:54:49+02:00'
+    actual:
+      utc: '2024-11-09T06:54:49Z'
+      local: '2024-11-09 08:54:49+02:00'
+  landing:
+    estimated:
+      utc: '2024-11-09T10:50:26Z'
+      local: '2024-11-09 11:50:26+01:00'
+    actual:
+      utc: '2024-11-09T10:50:26Z'
+      local: '2024-11-09 11:50:26+01:00'
+    runway: '07'
+  departure_versus_schedule: +0:00:00
+  airborne_duration: '3:55:37'
+- number: 2
+  flightaware_id: SUBTU-1731201088-sw-546p
+  callsign: SU-BTU
+  registration: SU-BTU
+  flight_category: general aviation
+  outcome: Arrived
+  progress_percent: 100
+  flags: []
+  from:
+    icao: LFPB
+    iata: LBG
+    name: Paris Le Bourget
+    city: Paris
+    timezone: Europe/Paris
+  to:
+    icao: KOMA
+    iata: OMA
+    faa_lid: OMA
+    name: Eppley Airfield
+    city: Omaha
+    timezone: America/Chicago
+  takeoff:
+    scheduled:
+      utc: '2024-11-10T07:30:06Z'
+      local: '2024-11-10 08:30:06+01:00'
+    estimated:
+      utc: '2024-11-10T07:09:23Z'
+      local: '2024-11-10 08:09:23+01:00'
+    actual:
+      utc: '2024-11-10T07:09:23Z'
+      local: '2024-11-10 08:09:23+01:00'
+    runway: 09
+  landing:
+    scheduled:
+      utc: '2024-11-10T17:04:49Z'
+      local: '2024-11-10 11:04:49-06:00'
+    estimated:
+      utc: '2024-11-10T16:44:06Z'
+      local: '2024-11-10 10:44:06-06:00'
+    actual:
+      utc: '2024-11-10T16:44:06Z'
+      local: '2024-11-10 10:44:06-06:00'
+    runway: 32R
+  departure_versus_schedule: -0:20:43
+  arrival_versus_schedule: -0:20:43
+  airborne_duration: '9:34:43'
+  flight_plan:
+    planned_time_enroute: '9:34:43'
+- number: 3
+  flightaware_id: SUBTU-1731260577-adhoc-4224p
+  callsign: SU-BTU
+  registration: SU-BTU
+  flight_category: general aviation
+  outcome: Arrived
+  progress_percent: 100
+  flags: []
+  from:
+    icao: KOMA
+    iata: OMA
+    faa_lid: OMA
+    name: Eppley Airfield
+    city: Omaha
+    timezone: America/Chicago
+  to:
+    icao: KLNK
+    iata: LNK
+    faa_lid: LNK
+    name: Lincoln
+    city: Lincoln
+    timezone: America/Chicago
+  takeoff:
+    scheduled:
+      utc: '2024-11-10T18:12:54Z'
+      local: '2024-11-10 12:12:54-06:00'
+    estimated:
+      utc: '2024-11-10T17:49:25Z'
+      local: '2024-11-10 11:49:25-06:00'
+    actual:
+      utc: '2024-11-10T17:49:25Z'
+      local: '2024-11-10 11:49:25-06:00'
+    runway: 32R
+  landing:
+    scheduled:
+      utc: '2024-11-10T18:34:58Z'
+      local: '2024-11-10 12:34:58-06:00'
+    estimated:
+      utc: '2024-11-10T18:11:29Z'
+      local: '2024-11-10 12:11:29-06:00'
+    actual:
+      utc: '2024-11-10T18:11:29Z'
+      local: '2024-11-10 12:11:29-06:00'
+    runway: '36'
+  departure_versus_schedule: -0:23:29
+  arrival_versus_schedule: -0:23:29
+  airborne_duration: 0:22:04
+  flight_plan:
+    planned_time_enroute: 0:22:04
+- number: 4
+  flightaware_id: SUBTU-1731591460-adhoc-1161p
+  callsign: SU-BTU
+  registration: SU-BTU
+  aircraft_type_code: FA7X
+  flight_category: general aviation
+  outcome: Arrived
+  progress_percent: 100
+  flags: []
+  from:
+    icao: KLNK
+    iata: LNK
+    faa_lid: LNK
+    name: Lincoln
+    city: Lincoln
+    timezone: America/Chicago
+  to:
+    icao: KILG
+    iata: ILG
+    faa_lid: ILG
+    name: New Castle
+    city: Wilmington
+    timezone: America/New_York
+  takeoff:
+    scheduled:
+      utc: '2024-11-14T14:07:34Z'
+      local: '2024-11-14 08:07:34-06:00'
+    estimated:
+      utc: '2024-11-14T13:40:59Z'
+      local: '2024-11-14 07:40:59-06:00'
+    actual:
+      utc: '2024-11-14T13:40:59Z'
+      local: '2024-11-14 07:40:59-06:00'
+    runway: '35'
+  landing:
+    scheduled:
+      utc: '2024-11-14T16:25:54Z'
+      local: '2024-11-14 11:25:54-05:00'
+    estimated:
+      utc: '2024-11-14T15:59:19Z'
+      local: '2024-11-14 10:59:19-05:00'
+    actual:
+      utc: '2024-11-14T15:59:19Z'
+      local: '2024-11-14 10:59:19-05:00'
+    runway: '01'
+  departure_versus_schedule: -0:26:35
+  arrival_versus_schedule: -0:26:35
+  airborne_duration: '2:18:20'
+  flight_plan:
+    planned_time_enroute: '2:18:20'

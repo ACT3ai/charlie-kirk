@@ -1,0 +1,155 @@
+# Restated from a FlightAware AeroAPI response, in our own layout.
+# The raw response is held privately and is not republished.
+about:
+  aircraft: SU-BND
+  question_asked: Which flights does FlightAware hold for SU-BND between 22 July 2023 and 29 July 2023 (UTC)?
+  source: FlightAware AeroAPI v4 flight history by registration; the raw response is held privately and is not republished.
+  retrieved_utc: '2026-09-16T02:37:01.895Z'
+  vendor_http_status: 200
+  window_utc_from: '2023-07-22T00:00:00Z'
+  window_utc_until_exclusive: '2023-07-29T00:00:00Z'
+  result_page: 1
+  total_pages_reported: 1
+  further_pages_held_by_vendor: false
+flights_recorded: 3
+reading: FlightAware holds 3 flights for SU-BND in this window, listed here in full with the times it recorded. A flight record shows where an aircraft went; it never shows who was aboard.
+flights:
+- number: 1
+  flightaware_id: SUBND-1689999220-adhoc-1237p
+  callsign: SU-BND
+  registration: SU-BND
+  flight_category: general aviation
+  outcome: Arrived
+  progress_percent: 100
+  flags: []
+  from:
+    icao: HECA
+    iata: CAI
+    name: Cairo Int'l
+    city: Cairo
+    timezone: Africa/Cairo
+  to:
+    icao: HEAL
+    iata: DBB
+    name: El Alamein International Airport
+    city: Matrouh Governorate
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2023-07-22T04:23:36Z'
+      local: '2023-07-22 07:23:36+03:00'
+    estimated:
+      utc: '2023-07-22T04:18:33Z'
+      local: '2023-07-22 07:18:33+03:00'
+    actual:
+      utc: '2023-07-22T04:18:33Z'
+      local: '2023-07-22 07:18:33+03:00'
+    runway: 23R
+  landing:
+    scheduled:
+      utc: '2023-07-22T04:57:38Z'
+      local: '2023-07-22 07:57:38+03:00'
+    estimated:
+      utc: '2023-07-22T04:52:35Z'
+      local: '2023-07-22 07:52:35+03:00'
+    actual:
+      utc: '2023-07-22T04:52:35Z'
+      local: '2023-07-22 07:52:35+03:00'
+    runway: '31'
+  departure_versus_schedule: -0:05:03
+  arrival_versus_schedule: -0:05:03
+  airborne_duration: 0:34:02
+  flight_plan:
+    planned_time_enroute: 0:34:02
+- number: 2
+  flightaware_id: SUBND-1689998360-sw-254p
+  callsign: SU-BND
+  registration: SU-BND
+  flight_category: general aviation
+  outcome: Arrived
+  progress_percent: 100
+  flags: []
+  from:
+    icao: HEAL
+    iata: DBB
+    name: El Alamein International Airport
+    city: Matrouh Governorate
+    timezone: Africa/Cairo
+  to:
+    icao: LIRA
+    iata: CIA
+    name: Ciampino (Giovan Battista Pastine)
+    city: Rome
+    timezone: Europe/Rome
+  takeoff:
+    scheduled:
+      utc: '2023-07-22T05:22:47Z'
+      local: '2023-07-22 08:22:47+03:00'
+    estimated:
+      utc: '2023-07-22T06:12:35Z'
+      local: '2023-07-22 09:12:35+03:00'
+    actual:
+      utc: '2023-07-22T06:12:35Z'
+      local: '2023-07-22 09:12:35+03:00'
+    runway: '31'
+  landing:
+    scheduled:
+      utc: '2023-07-22T08:01:48Z'
+      local: '2023-07-22 10:01:48+02:00'
+    estimated:
+      utc: '2023-07-22T08:51:36Z'
+      local: '2023-07-22 10:51:36+02:00'
+    actual:
+      utc: '2023-07-22T08:51:36Z'
+      local: '2023-07-22 10:51:36+02:00'
+    runway: '15'
+  departure_versus_schedule: +0:49:48
+  arrival_versus_schedule: +0:49:48
+  airborne_duration: '2:39:01'
+  flight_plan:
+    planned_time_enroute: '2:39:01'
+- number: 3
+  flightaware_id: SUBND-1690301410-sw-9p
+  callsign: SU-BND
+  registration: SU-BND
+  flight_category: general aviation
+  outcome: result unknown
+  progress_percent: 100
+  flags: []
+  from:
+    icao: LIRA
+    iata: CIA
+    name: Ciampino (Giovan Battista Pastine)
+    city: Rome
+    timezone: Europe/Rome
+  to:
+    icao: HEAZ
+    name: Almaza Air Base
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2023-07-25T18:35:45Z'
+      local: '2023-07-25 20:35:45+02:00'
+    estimated:
+      utc: '2023-07-25T18:28:15Z'
+      local: '2023-07-25 20:28:15+02:00'
+    actual:
+      utc: '2023-07-25T18:28:15Z'
+      local: '2023-07-25 20:28:15+02:00'
+    runway: '33'
+  landing:
+    scheduled:
+      utc: '2023-07-25T21:14:44Z'
+      local: '2023-07-26 00:14:44+03:00'
+    estimated:
+      utc: '2023-07-25T21:07:14Z'
+      local: '2023-07-26 00:07:14+03:00'
+    actual:
+      utc: '2023-07-25T18:28:15Z'
+      local: '2023-07-25 21:28:15+03:00'
+    runway: '36'
+  departure_versus_schedule: -0:07:30
+  arrival_versus_schedule: '-2:46:29'
+  airborne_duration: 0:00:00
+  flight_plan:
+    planned_time_enroute: '2:38:59'

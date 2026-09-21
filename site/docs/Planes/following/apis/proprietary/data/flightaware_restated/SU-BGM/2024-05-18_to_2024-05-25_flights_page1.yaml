@@ -1,0 +1,93 @@
+# Restated from a FlightAware AeroAPI response, in our own layout.
+# The raw response is held privately and is not republished.
+about:
+  aircraft: SU-BGM
+  question_asked: Which flights does FlightAware hold for SU-BGM between 18 May 2024 and 25 May 2024 (UTC)?
+  source: FlightAware AeroAPI v4 flight history by registration; the raw response is held privately and is not republished.
+  retrieved_utc: '2026-09-16T02:53:06.040Z'
+  vendor_http_status: 200
+  window_utc_from: '2024-05-18T00:00:00Z'
+  window_utc_until_exclusive: '2024-05-25T00:00:00Z'
+  result_page: 1
+  total_pages_reported: 1
+  further_pages_held_by_vendor: false
+flights_recorded: 2
+reading: FlightAware holds 2 flights for SU-BGM in this window, listed here in full with the times it recorded. A flight record shows where an aircraft went; it never shows who was aboard.
+flights:
+- number: 1
+  flightaware_id: SUBGM-1716174586-sw-245p
+  callsign: SU-BGM
+  registration: SU-BGM
+  flight_category: general aviation
+  outcome: Arrived
+  progress_percent: 100
+  flags: []
+  from:
+    position_only_point:
+      lat: 30.7221
+      lon: 30.70745
+    city: Cairo
+    timezone: Africa/Cairo
+  to:
+    icao: LKPR
+    iata: PRG
+    name: Václav Havel Airport
+    city: Prague
+    timezone: Europe/Prague
+  takeoff:
+    scheduled:
+      utc: '2024-05-20T05:17:51Z'
+      local: '2024-05-20 08:17:51+03:00'
+    estimated:
+      utc: '2024-05-20T05:17:51Z'
+      local: '2024-05-20 08:17:51+03:00'
+    actual:
+      utc: '2024-05-20T05:17:51Z'
+      local: '2024-05-20 08:17:51+03:00'
+  landing:
+    estimated:
+      utc: '2024-05-20T08:52:51Z'
+      local: '2024-05-20 10:52:51+02:00'
+    actual:
+      utc: '2024-05-20T08:52:51Z'
+      local: '2024-05-20 10:52:51+02:00'
+    runway: '06'
+  departure_versus_schedule: +0:00:00
+  airborne_duration: '3:35:00'
+- number: 2
+  flightaware_id: SUBGM-1716179258-sw-31p
+  callsign: SU-BGM
+  registration: SU-BGM
+  flight_category: general aviation
+  outcome: result unknown
+  flags:
+  - position_only
+  from:
+    icao: LKPR
+    iata: PRG
+    name: Václav Havel Airport
+    city: Prague
+    timezone: Europe/Prague
+  to:
+    position_only_point:
+      lat: 30.00878
+      lon: 31.57092
+    city: Cairo
+    timezone: Africa/Cairo
+  takeoff:
+    scheduled:
+      utc: '2024-05-20T09:32:37Z'
+      local: '2024-05-20 11:32:37+02:00'
+    estimated:
+      utc: '2024-05-20T10:11:25Z'
+      local: '2024-05-20 12:11:25+02:00'
+    actual:
+      utc: '2024-05-20T10:11:25Z'
+      local: '2024-05-20 12:11:25+02:00'
+    runway: '31'
+  landing:
+    actual:
+      utc: '2024-05-20T10:11:25Z'
+      local: '2024-05-20 13:11:25+03:00'
+  departure_versus_schedule: +0:38:48
+  airborne_duration: 0:00:00

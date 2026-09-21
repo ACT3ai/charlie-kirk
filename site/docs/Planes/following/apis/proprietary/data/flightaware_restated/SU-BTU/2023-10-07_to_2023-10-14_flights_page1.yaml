@@ -1,0 +1,153 @@
+# Restated from a FlightAware AeroAPI response, in our own layout.
+# The raw response is held privately and is not republished.
+about:
+  aircraft: SU-BTU
+  question_asked: Which flights does FlightAware hold for SU-BTU between 7 October 2023 and 14 October 2023 (UTC)?
+  source: FlightAware AeroAPI v4 flight history by registration; the raw response is held privately and is not republished.
+  retrieved_utc: '2026-09-16T02:42:09.707Z'
+  vendor_http_status: 200
+  window_utc_from: '2023-10-07T00:00:00Z'
+  window_utc_until_exclusive: '2023-10-14T00:00:00Z'
+  result_page: 1
+  total_pages_reported: 1
+  further_pages_held_by_vendor: false
+flights_recorded: 3
+reading: FlightAware holds 3 flights for SU-BTU in this window, listed here in full with the times it recorded. A flight record shows where an aircraft went; it never shows who was aboard.
+flights:
+- number: 1
+  flightaware_id: SUBTU-1696651958-sw-99p
+  callsign: SU-BTU
+  registration: SU-BTU
+  flight_category: general aviation
+  outcome: Arrived
+  flags:
+  - position_only
+  from:
+    position_only_point:
+      lat: 30.57295
+      lon: 30.81473
+    city: Cairo
+    timezone: Africa/Cairo
+  to:
+    icao: LFPB
+    iata: LBG
+    name: Paris Le Bourget
+    city: Paris
+    timezone: Europe/Paris
+  takeoff:
+    scheduled:
+      utc: '2023-10-07T05:58:02Z'
+      local: '2023-10-07 08:58:02+03:00'
+    estimated:
+      utc: '2023-10-07T05:58:02Z'
+      local: '2023-10-07 08:58:02+03:00'
+    actual:
+      utc: '2023-10-07T05:58:02Z'
+      local: '2023-10-07 08:58:02+03:00'
+  landing:
+    estimated:
+      utc: '2023-10-07T09:56:21Z'
+      local: '2023-10-07 11:56:21+02:00'
+    actual:
+      utc: '2023-10-07T09:56:21Z'
+      local: '2023-10-07 11:56:21+02:00'
+    runway: '27'
+  departure_versus_schedule: +0:00:00
+  airborne_duration: '3:58:19'
+- number: 2
+  flightaware_id: SUBTU-1696741462-sw-10p
+  callsign: SU-BTU
+  registration: SU-BTU
+  flight_category: general aviation
+  outcome: Arrived
+  progress_percent: 100
+  flags: []
+  from:
+    icao: LFPB
+    iata: LBG
+    name: Paris Le Bourget
+    city: Paris
+    timezone: Europe/Paris
+  to:
+    icao: KSUS
+    iata: SUS
+    faa_lid: SUS
+    name: Spirit of St Louis
+    city: St Louis
+    timezone: America/Chicago
+  takeoff:
+    scheduled:
+      utc: '2023-10-08T09:32:26Z'
+      local: '2023-10-08 11:32:26+02:00'
+    estimated:
+      utc: '2023-10-08T09:35:13Z'
+      local: '2023-10-08 11:35:13+02:00'
+    actual:
+      utc: '2023-10-08T09:35:13Z'
+      local: '2023-10-08 11:35:13+02:00'
+    runway: 09
+  landing:
+    scheduled:
+      utc: '2023-10-08T18:35:55Z'
+      local: '2023-10-08 13:35:55-05:00'
+    estimated:
+      utc: '2023-10-08T18:38:42Z'
+      local: '2023-10-08 13:38:42-05:00'
+    actual:
+      utc: '2023-10-08T18:38:42Z'
+      local: '2023-10-08 13:38:42-05:00'
+    runway: 26L
+  departure_versus_schedule: +0:02:47
+  arrival_versus_schedule: +0:02:47
+  airborne_duration: '9:03:29'
+  flight_plan:
+    planned_time_enroute: '9:03:29'
+- number: 3
+  flightaware_id: SUBTU-1697208465-adhoc-166p
+  callsign: SU-BTU
+  registration: SU-BTU
+  flight_category: general aviation
+  outcome: Arrived
+  progress_percent: 100
+  flags: []
+  from:
+    icao: KSUS
+    iata: SUS
+    faa_lid: SUS
+    name: Spirit of St Louis
+    city: St Louis
+    timezone: America/Chicago
+  to:
+    icao: KILG
+    iata: ILG
+    faa_lid: ILG
+    name: New Castle
+    city: Wilmington
+    timezone: America/New_York
+  takeoff:
+    scheduled:
+      utc: '2023-10-13T15:17:40Z'
+      local: '2023-10-13 10:17:40-05:00'
+    estimated:
+      utc: '2023-10-13T14:52:59Z'
+      local: '2023-10-13 09:52:59-05:00'
+    actual:
+      utc: '2023-10-13T14:52:59Z'
+      local: '2023-10-13 09:52:59-05:00'
+    runway: 26L
+  landing:
+    scheduled:
+      utc: '2023-10-13T16:51:17Z'
+      local: '2023-10-13 12:51:17-04:00'
+    estimated:
+      utc: '2023-10-13T16:26:36Z'
+      local: '2023-10-13 12:26:36-04:00'
+    actual:
+      utc: '2023-10-13T16:26:36Z'
+      local: '2023-10-13 12:26:36-04:00'
+    runway: '27'
+  departure_versus_schedule: -0:24:41
+  arrival_versus_schedule: -0:24:41
+  airborne_duration: '1:33:37'
+  flight_plan:
+    planned_time_enroute: '1:33:37'
