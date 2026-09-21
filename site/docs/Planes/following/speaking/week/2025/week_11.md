@@ -424,7 +424,7 @@ Search twitter and x.com posts for where Charlie Kirk or TPUSA has public speaki
 
 ### Posts from @TPUSA linking to tour/event info:
 - **Post [post:36]** (Fri, 14 Mar 2025 02:00:55 GMT, @TPUSA):  
-  "See our upcoming stops on the American Comeback Tour ⬇️  
+  "See our upcoming stops on the American Comeback Tour ⬇  
   https://theturningpointtour.com/"
 
 - **Post [post:35]** (Fri, 14 Mar 2025 20:45:00 GMT, @TPUSA):  

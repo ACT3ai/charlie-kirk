@@ -11,13 +11,13 @@ tags: [person, victim]
 **Charlie Kirk**, founder of **Turning Point USA (TPUSA)**, was fatally shot in the neck on **September 10, 2025**, at ~12:23 p.m. while speaking under a canopy at a Turning Point event at **Utah Valley University** in Orem, Utah, with thousands present.
 
 - **Cause of death:** a single **gunshot wound to the neck**; manner, **homicide**. The full autopsy has not been publicly released. See [[The Medical Examiner and the Wound]].
-- Kirk's own organization ran the **event's multi-camera A/V rig** (contractor **Terryl Farnsworth / Visual Impulse**) — the source of the [[The SD Cards|SD-card]] thread — and his own **security detail**, led by **Brian Harpole**. See [[Security Knew It Was Coming]].
+- Kirk's own organization ran the **event's multi-camera A/V rig** (contractor **Terryl Farnsworth / Visual Impulse**) — the source of the [[The SD Cards|SD-card]] thread — and his own **security detail**, led by **Brian Harpole**. See [[Kirks Security Detail]].
 
 ## Where his team intersects the theories
 Several theories turn on the conduct of **Kirk-affiliated people** in the aftermath rather than on the shooter:
 - [[A Staffer Pulled the SD Cards]] — a TPUSA staffer removing event-camera cards (**PARTLY TRUE**; the act is real, cover-up unproven).
 - [[Kirk Team Seized the Security Footage]] — conflates the TPUSA cards with the separate UVU surveillance (**FALSE**).
-- [[Security Knew It Was Coming]] — the "hand signals / didn't flinch" claim (**UNSUPPORTED**), against a backdrop of real security **failures** (an unsecured rooftop) that are negligence, not complicity.
+- [[Kirks Security Detail]] — real security **failures** (an unsecured rooftop), documented as negligence.
 - [[The Missing Exit Wound]] — the spine/no-exit detail traces to Kirk-staff accounts, not an official ME report.
 
 ---

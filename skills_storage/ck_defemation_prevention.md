@@ -8,7 +8,9 @@ invocable: true
 !! ABSOLUTE RULE — Charlie_Kirk.txt IS READ-ONLY TO AI. NO EXCEPTIONS. !!
 ================================================================================
 
-PROTECTED_FILE is file ~/BGit/Bryan_git/charlie-kirk/Charlie_Kirk.txt
+PROTECTED_FILE is file ~/BGit/all/politics/charlie_kirk/Charlie_Kirk.txt
+  (Real file. Moved 2026-09-19. ~/BGit/Bryan_git/charlie-kirk/Charlie_Kirk.txt is now a symlink to it —
+   use that only to verify the location; always read and write the real path.)
 
 AI MUST NEVER WRITE TO, EDIT, APPEND TO, RE-ORDER, REFORMAT, OR DELETE ANYTHING
 IN {PROTECTED_FILE}. Not one character. Not even to add new material. Not even
@@ -41,7 +43,9 @@ and a replaced arrest-time header and line (8b967208). All four were restored.
 This rule exists so it never happens again.
 
 WHERE NEW CONTENT GOES INSTEAD:
-  CK_INBOX is file ~/BGit/Bryan_git/charlie-kirk/Charlie_Kirk_AI_Inbox.txt
+  CK_INBOX is file ~/BGit/all/politics/charlie_kirk/Charlie_Kirk_AI_Inbox.txt
+    (Real file. Moved 2026-09-19. ~/BGit/Bryan_git/charlie-kirk/Charlie_Kirk_AI_Inbox.txt is now a symlink to it —
+     use that only to verify the location; always read and write the real path.)
 
   When a mode in this skill would previously have written to {PROTECTED_FILE},
   write to {CK_INBOX} instead, append-only, using the same equal-sign section
@@ -132,8 +136,8 @@ Only soften claims that are UNVERIFIED, SPECULATIVE, or DISPUTED.
 --- Element 4: "Of and Concerning" a Specific Person ---
 
 Statements about unnamed, unidentified individuals carry much lower risk:
-  * "A member of the security team may have positioned themselves..." — lower risk
-  * "Rick Cutler, the close-protection officer, fired the shot" — high risk (named)
+  * "An unidentified person may have positioned themselves..." — lower risk
+  * "[Named person] fired the shot" — high risk (named)
 
 When a theory refers to unnamed people generically, it is lower priority than
 when it names or clearly identifies a specific living individual.
@@ -366,7 +370,7 @@ Do NOT soften these — they are either true, protected opinion, or low risk:
 * True organizational facts: "TPUSA organized the event," "Erika Kirk became
   CEO of TPUSA," "Tyler Robinson was charged with capital murder"
 * Attribution language already present: "allegedly," "reportedly," "some claim"
-* Generic unnamed references: "a member of the security detail may have..."
+* Generic unnamed references: "an unidentified person may have..."
 * Government agency institutional criticism (FBI, CIA as institutions cannot
   sue for defamation)
 * Clearly labeled theories, hypotheses, or opinion sections

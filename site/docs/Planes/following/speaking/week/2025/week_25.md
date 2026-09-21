@@ -257,7 +257,7 @@ Here is the complete raw data from all returned posts (including full content, a
   Content: These demons need an asylum so the world’s children will be safe.
 
 - **Post ID: 1937290500991541758**  
-  Author: ; 🇺🇸❤️‍🩹🤍💙🦅🐺🥀 (@B7789Quotes)  
+  Author: ; 🇺🇸❤‍🩹🤍💙🦅🐺🥀 (@B7789Quotes)  
   Timestamp: Mon, 23 Jun 2025 23:23:43 GMT  
   Engagement: Likes=4, Reposts=0, Quotes=0, Replies=0, Bookmarks=0, Views=137  
   Content: *pedo friendly event. kids dont belong at such cult groupings
@@ -372,7 +372,7 @@ Here is the complete raw data from all returned posts (including full content, a
   Content: Perfect timing to have a show with the KILTED CHRISTIAN! 7pm ET! This Patriot and follower of Christ is truly a blessing In this movement!  
   We're going to discuss all the rabbit holes, Q OPERATION/COMMS and of course the Israel/Iran situation!  
   ..  
-  Join us in the chat on X, FB, and Rumble! Links on website below! Q&A at the end! Love y'all!🫡✝️  
+  Join us in the chat on X, FB, and Rumble! Links on website below! Q&A at the end! Love y'all!🫡✝  
   👉 https://t.co/7GRcMMHVCt 👈
 
 - **Post ID: 1936483321393123473**  
@@ -381,7 +381,7 @@ Here is the complete raw data from all returned posts (including full content, a
   Engagement: Likes=227, Reposts=26, Quotes=4, Replies=6, Bookmarks=5, Views=14511  
   Media: 1 video (URL: https://video.twimg.com/amplify_video/1936482236473192448/vid/avc1/1080x1920/1GuszdZEUttvMft4.mp4, duration: 46171 ms)  
   Content: SUPERCHARGED WORLDWIDE IN ‘25 with The Offspring, @jimmyeatworld & @newfoundglory ⚡  
-  See you this summer? ☀️🤘  
+  See you this summer? ☀🤘  
   [Full tour list: Jul 11 West Palm Beach FL, Jul 12 Tampa FL, Jul 15 Alpharetta GA, Jul 16 Raleigh NC, Jul 18 Virginia Beach VA, Jul 19 Bristow VA, Jul 20 Scranton PA, Jul 22 Syracuse NY, Jul 23 Toronto ON, Jul 25 Cincinnati OH, Jul 26 Noblesville IN, Jul 27 Clarkston MI, Jul 29 Camden NJ, Jul 30 Mansfield MA, Aug 01 Bethel NY, Aug 02 Holmdel NJ, Aug 03 Wantagh NY, Aug 13 Cuyahoga Falls OH, Aug 15 Minneapolis MN, Aug 16 Tinley Park IL, Aug 17 St. Louis MO, Aug 20 Ridgedale MO, Aug 22 Dallas TX, Aug 23 The Woodlands TX, Aug 24 Austin TX, Aug 26 Albuquerque NM, Aug 27 Phoenix AZ, Aug 29 Inglewood CA, Aug 30 Mountain View CA, Aug 31 Wheatland CA, Sep 03 Auburn WA, Sep 04 Ridgefield WA, Sep 06 West Valley City UT, Sep 07 Denver CO]
 
 - **Post ID: 1937042941190500805**  

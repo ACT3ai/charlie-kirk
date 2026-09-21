@@ -396,10 +396,10 @@ Search twitter and x.com posts for where Charlie Kirk or TPUSA has public speaki
 - [post:5] (May 5, 2023): “We will be streaming Kingdom to The Capitol LIVE today in 30 minutes from Wisconsin. Tune in! Youtube: https://www.youtube.com/@TPUSAFaith/streams Facebook:” (@tpusafaith)
 - [post:36] (May 5, 2023): “We will be streaming Kingdom to The Capitol LIVE today in 30 minutes from Wisconsin. Tune in! Youtube: https://www.youtube.com/@TPUSAFaith/streams Facebook:” (Duplicate.)
 - [post:26] / [post:37] (May 5, 2023): “🚨WISCONSIN! ILLINOIS! INDIANA 🚨 God is doing amazing things on the Kingdom to The Capitol Tour & we want YOU to be a part of it! Don't miss out on this incredible opportunity to come together & pray for our nation's leaders. We WILL be streaming LIVE on Youtube and Facebook! See you there! 🙏🇺🇸 . #KingdomToTheCapitolTour #WorshipAndPrayer” (@tpusafaith)
-- [post:38] (May 5, 2023): “HELLO WISCONSIN! Today we are at the State's Capitol for Kingdom to The Capitol! ⬇️ Comment below on what we should pray for in the state of Wisconsin! . #k2c” (@tpusafaith)
+- [post:38] (May 5, 2023): “HELLO WISCONSIN! Today we are at the State's Capitol for Kingdom to The Capitol! ⬇ Comment below on what we should pray for in the state of Wisconsin! . #k2c” (@tpusafaith)
 
 ### Other posts referencing TPUSA/Charlie Kirk in context of events (no specific dates/locations in range):
-- [post:21] (May 5, 2023): “'I will stand with you to the bitter end — unless you betray the values and principles that we're both speaking for.' @GlennBeck and @CharlieKirk11 discuss how Fox News betrayed conservative viewers by ousting Tucker Carlson. Watch LIVE ➡️ https://t.co/NIv1Ulutwy Watch #TheCharlieKirkShow here:” (@RealAmVoice; references discussion, not a live speaking event.)
+- [post:21] (May 5, 2023): “'I will stand with you to the bitter end — unless you betray the values and principles that we're both speaking for.' @GlennBeck and @CharlieKirk11 discuss how Fox News betrayed conservative viewers by ousting Tucker Carlson. Watch LIVE ➡ https://t.co/NIv1Ulutwy Watch #TheCharlieKirkShow here:” (@RealAmVoice; references discussion, not a live speaking event.)
 - [post:8] / [post:12] (May 1, 2023): Charlie Kirk post about a CNN event on May 10 (Trump town hall) – not TPUSA/Charlie speaking.
 - [post:13] (May 4, 2023): Charlie Kirk post – unrelated to events.
 - [post:31]–[post:34] (May 3–5, 2023): Various Charlie Kirk posts – no event announcements.

@@ -16,7 +16,7 @@ Idempotent: pages are rewritten in full; static copies are skipped when the
 target already exists. Run with --csv-only to refresh pages.csv line counts
 after agents have enriched page bodies.
 """
-import csv, glob, os, re, shutil, subprocess, sys, unicodedata
+import csv, glob, os, re, shutil, subprocess, sys, unicodedata, urllib.parse
 import yaml
 
 ROOT = os.path.expanduser("~/BGit/Bryan_git/charlie-kirk")
@@ -95,8 +95,21 @@ def _route_for(repo_path, csv_url):
     p = re.sub(r"\.(mdx?|md)$", "", p)
     real = "/" + p
     if csv_url and csv_url != real and not real.endswith("/overview"):
-        return csv_url
-    return real
+        return _url_safe(csv_url)
+    return _url_safe(real)
+
+
+def _url_safe(url):
+    """A few docs directories carry spaces and parentheses ("Topics3/Suspects
+    (List)"). Unescaped, a markdown link ends at the first space and the
+    reader gets a 404 — percent-encode just those characters."""
+    return url.replace(" ", "%20").replace("(", "%28").replace(")", "%29")
+
+
+def page_exists(repo_path):
+    """Hosts and site_page values in images.yaml outlive the pages they name
+    (a page gets deleted or moved); never emit a link to a file that is gone."""
+    return os.path.isfile(os.path.join(ROOT, repo_path))
 
 
 def site_page_link(repo_path):
@@ -118,8 +131,27 @@ def level2_link(dirname):
 
 
 # ---------- load hierarchy ----------
+# Cluster `_key` and `title` values are names, never numbers. YAML 1.1 reads an
+# unquoted key like 10020251215 as an int — and 100_20251215 as the SAME int,
+# because it treats underscores as digit separators — so casting afterwards
+# would lose the underscores. Keep the exact scalar text instead.
+class _NameKeysLoader(yaml.SafeLoader):
+    pass
+
+
+def _construct_mapping_keep_names(loader, node, deep=False):
+    for k, v in node.value:
+        if (isinstance(k, yaml.ScalarNode) and k.value in ("_key", "title")
+                and isinstance(v, yaml.ScalarNode) and v.tag != "tag:yaml.org,2002:null"):
+            v.tag = "tag:yaml.org,2002:str"
+    return yaml.SafeLoader.construct_mapping(loader, node, deep)
+
+
+_NameKeysLoader.add_constructor(
+    yaml.resolver.BaseResolver.DEFAULT_MAPPING_TAG, _construct_mapping_keep_names)
+
 with open(HIER) as f:
-    data = yaml.safe_load(f)
+    data = yaml.load(f, Loader=_NameKeysLoader)
 
 nodes = []          # flat list of included cluster nodes
 all_keys_seen = set()
@@ -131,7 +163,7 @@ MAX_DEPTH = 7
 
 
 def norm_key(k):
-    k = re.sub(r"[^A-Za-z0-9_]", "_", k or "X")
+    k = re.sub(r"[^A-Za-z0-9_]", "_", str(k) if k is not None and k != "" else "X")
     return k
 
 
@@ -764,6 +796,7 @@ def alt_of(text):
     return m.group(1) if m else None
 
 
+MEDIA_PENDING = "*Media pending — the image file for this entry is not yet hosted.*"
 BASELINE_CLUSTER_MARK = "This cluster collects the still images the investigation has filed under"
 
 
@@ -884,13 +917,17 @@ for pg in img_pages:
     # image_planning/layout_guidelines.txt.
     lines += ["<div className=\"ck-evidence-text\">", ""]
     lines += ["## What This Image Shows", ""]
-    body = section_body(prior, "What This Image Shows") \
-        or (mdx_escape(desc) if desc else
-            "*Description pending — this image has not yet been written up.*")
+    body = section_body(prior, "What This Image Shows")
+    if body:
+        # The carried section already holds the placeholder this function
+        # appends below; drop it so reruns don't stack one more copy each time.
+        body = re.sub(r"(?:^|\n)\*Media pending — [^\n]*\*[ \t]*(?=\n|$)", "", body).strip() or None
+    body = body or (mdx_escape(desc) if desc else
+                    "*Description pending — this image has not yet been written up.*")
     lines += [body, ""]
     if not src:
-        lines += ["*Media pending — the image file for this entry is not yet hosted.*", ""]
-    hosts = host_pages(i)
+        lines += [MEDIA_PENDING, ""]
+    hosts = [hp for hp in host_pages(i) if page_exists(hp)]
     if hosts:
         lines += ["## Where This Image Appears", "",
                   "This image is used on the following investigation page" + ("s" if len(hosts) > 1 else "") + ":", ""]
@@ -943,7 +980,7 @@ for n in nodes:
     # Cross-links out to the written pages this cluster mirrors: the node's
     # site_page first, then each site_level_2 section it covers.
     rel_links, seen_rel = [], set()
-    if n["site_page"]:
+    if n["site_page"] and page_exists(n["site_page"]):
         u, t = site_page_link(n["site_page"])
         rel_links.append((t, u))
         seen_rel.add(u)
@@ -1233,18 +1270,32 @@ for pg in img_pages:
         pg["key"], n["page_key"], n["depth"] + 1, "image", pg["url"], pg["rel_file"],
         pg["title"], pg["title"][:40], n["rel_dir"], d)
 
-merged, replaced = [], 0
+merged, replaced, dropped_dupes = [], 0, 0
+_seen_rows = set()
 for r in csv_rows:
     if r["page_key"] in new_rows:
         merged.append(new_rows.pop(r["page_key"]))
         replaced += 1
-    else:
-        merged.append(r)
+        continue
+    # Another process on this repo appends rows without checking; a row that is
+    # byte-for-byte identical to one already kept is pure duplication.
+    sig = tuple(r.get(k, "") for k in CSV_FIELDS)
+    if sig in _seen_rows:
+        dropped_dupes += 1
+        continue
+    _seen_rows.add(sig)
+    merged.append(r)
 merged.extend(new_rows.values())
-with open(PAGES_CSV, "w", newline="") as f:
-    w = csv.DictWriter(f, fieldnames=CSV_FIELDS, extrasaction="ignore", restval="")
-    w.writeheader()
-    w.writerows(merged)
+
+
+def write_pages_csv():
+    with open(PAGES_CSV, "w", newline="") as f:
+        w = csv.DictWriter(f, fieldnames=CSV_FIELDS, extrasaction="ignore", restval="")
+        w.writeheader()
+        w.writerows(merged)
+
+
+write_pages_csv()
 
 # ---------- purge any already-published copy of an excluded image ----------
 # Excluding an image after it was published is the common case (the problem is
@@ -1282,6 +1333,19 @@ for dirpath, _dirs, files in os.walk(PHOTOS):
         except OSError:
             pass
         orphans.append(fp)
+# A protected page's cluster overview must survive with it. When every item in
+# a cluster is a video, the cluster drops out of `nodes`, its overview.mdx looks
+# orphaned, and deleting it leaves the protected pages pointing "up" at a 404.
+protected_dirs = set()
+for fp in protected_video_pages:
+    d = os.path.dirname(fp)
+    while d.startswith(PHOTOS) and d != PHOTOS:
+        protected_dirs.add(d)
+        d = os.path.dirname(d)
+kept_overviews = [fp for fp in orphans
+                  if os.path.basename(fp) == "overview.mdx" and os.path.dirname(fp) in protected_dirs]
+orphans = [fp for fp in orphans if fp not in kept_overviews]
+protected_video_pages += kept_overviews
 for fp in orphans:
     os.remove(fp)
 # prune now-empty dirs
@@ -1289,6 +1353,49 @@ for dirpath, dirs, files in sorted(((d, x, f) for d, x, f in os.walk(PHOTOS)),
                                    key=lambda t: -len(t[0])):
     if dirpath != PHOTOS and not os.listdir(dirpath):
         os.rmdir(dirpath)
+
+# ---------- pages.csv rows for protected pages ----------
+# The merge above only knows generated pages, and it drops every other /Photos
+# row, so a protected page would never be indexed. pages.csv is the index of
+# every public page: build its row from the page's own frontmatter.
+def _fm(fp):
+    with open(fp, encoding="utf-8") as f:
+        m = re.match(r"---\n(.*?)\n---", f.read(), re.S)
+    out = {}
+    for line in (m.group(1).splitlines() if m else []):
+        k, _, v = line.partition(":")
+        out[k.strip()] = v.strip().strip('"')
+    return out
+
+
+_by_file = {r["file_path"]: r for r in merged}
+_keys = {r["page_key"] for r in merged}
+added_protected = 0
+for fp in sorted(protected_video_pages, key=lambda x: (x.count(os.sep), x)):
+    rel = os.path.relpath(fp, ROOT)
+    if rel in _by_file:
+        continue
+    fm = _fm(fp)
+    rel_dir = os.path.relpath(os.path.dirname(fp), DOCS)
+    is_overview = os.path.basename(fp) == "overview.mdx"
+    stem = os.path.splitext(os.path.basename(fp))[0]
+    pk = "Photo_" + norm_key(fm.get("ck_node_key") or os.path.basename(rel_dir)) if is_overview else norm_key(stem)
+    base_pk, i = pk, 2
+    while pk in _keys:
+        pk, i = f"{base_pk}_{i}", i + 1
+    up_dir = os.path.dirname(os.path.dirname(fp)) if is_overview else os.path.dirname(fp)
+    parent = _by_file.get(os.path.relpath(os.path.join(up_dir, "overview.mdx"), ROOT))
+    depth = rel_dir.count(os.sep) + (1 if is_overview else 2)
+    url = fm.get("slug") or _route_for(rel, None)
+    r = row(pk, parent["page_key"] if parent else "Photos", depth, "topic" if is_overview else "video",
+            url, rel, fm.get("title", stem), fm.get("sidebar_label") or fm.get("title", stem)[:40],
+            rel_dir.replace(os.sep, "/"), fm.get("description", ""))
+    merged.append(r)
+    _by_file[rel] = r
+    _keys.add(pk)
+    added_protected += 1
+if added_protected:
+    write_pages_csv()
 
 # ---------- invisible-unicode validation ----------
 bad = []
@@ -1305,6 +1412,9 @@ if bad:
 # doc file's path, plus `slug:` overrides, plus `id:` renames of the last
 # segment, plus the bare form of a /overview page. Anything less produces
 # false alarms (pages.csv records section overviews at their bare path).
+_NUM_PREFIX = re.compile(r"^\d+[-_.]")
+
+
 def _site_routes():
     routes = set()
     for dirpath, _d, files in os.walk(DOCS):
@@ -1312,10 +1422,22 @@ def _site_routes():
             if not fn.endswith((".md", ".mdx")):
                 continue
             full = os.path.join(dirpath, fn)
-            base = "/" + os.path.splitext(os.path.relpath(full, DOCS))[0]
+            rel = os.path.relpath(full, DOCS)
+            # docusaurus.config.ts excludes these from the build — not routes.
+            if (any(seg.startswith("_") for seg in rel.split(os.sep))
+                    or fn == "CLAUDE.md" or re.match(r"p_.*\.mdx?$", fn)
+                    or f"{os.sep}prompts{os.sep}" in os.sep + rel):
+                continue
+            base = "/" + os.path.splitext(rel)[0]
             routes.add(base)
-            if base.endswith("/overview"):
-                routes.add(base[: -len("/overview")])
+            # Docusaurus strips number prefixes from path segments:
+            # laws/1_DoJ_FBI/x.md is served at /laws/DoJ_FBI/x.
+            stripped = "/".join(_NUM_PREFIX.sub("", seg) for seg in base.split("/"))
+            routes.add(stripped)
+            base = stripped
+            for tail in ("/overview", "/README", "/index"):
+                if base.endswith(tail):          # README/index serve at the dir route
+                    routes.add(base[: -len(tail)] or "/")
             with open(full, encoding="utf-8", errors="replace") as fh:
                 head = fh.read(1200)
             m = re.search(r"^slug:\s*(\S+)\s*$", head, re.M)
@@ -1340,14 +1462,15 @@ for p in written:
         for u in link_re.findall(f.read()):
             if u.startswith("/img/") or u.startswith("/pdf"):
                 continue
-            if u.rstrip("/") not in gen_urls:
+            if urllib.parse.unquote(u).rstrip("/") not in gen_urls:
                 missing.add(u)
 
 print("============================")
 print("GENERATION COMPLETE")
 print(f"Cluster pages: {len(nodes)}  Image pages: {len(img_pages)}")
 print(f"Static: {copied} copied, {downscaled} downscaled, {skipped} already present")
-print(f"pages.csv: {replaced} rows replaced, {len(merged) - len(csv_rows)} added, total {len(merged)}")
+print(f"pages.csv: {replaced} rows replaced, {len(merged) - len(csv_rows)} added, total {len(merged)}"
+      f"  (exact-duplicate rows dropped: {dropped_dupes}; protected pages indexed: {added_protected})")
 print(f"Orphan generated files removed: {len(orphans)}")
 print(f"Excluded images: {len(EXCLUDED)} (static copies purged: {len(purged_static)})")
 

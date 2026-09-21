@@ -162,9 +162,6 @@ Shooting linked to Kirk's remarks on transgenderism affecting Robinson's trans p
 @notionallyacc [Source: X Post. https://x.com/notionallyacc/status/1977042175511671185]
 Robinson referenced Antifa and had connections to the group. @PeriklesGREAT [Source: X Post. 
 https://x.com/PeriklesGREAT/status/1966998191234314533]
-Theory: Multiple shooters involved, with Lance Twiggs possibly triggering a remote shot. 
-@ProjectConstitu [Source: X Post. 
-https://x.com/ProjectConstitu/status/1976695832297513076]
 Shell casings had inscriptions like "notices bulges OwO what's this?" referencing online 
 trolling. bbc.com [Source: Article. https://www.bbc.com/news/articles/cp8wl2y66p9o]
 Unfired casing inscribed: "If you read this, you are gay lmao." bbc.com [Source: Article. 

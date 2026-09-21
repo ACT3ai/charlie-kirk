@@ -306,7 +306,7 @@ Search twitter and x.com posts for where Charlie Kirk or TPUSA has public speaki
   *(No event or speaking details.)*
 
 - **Post ID: 1807145565610033403**  
-  **Author:** God is King ✝️ • Stand for truth • 🙏 (@hewho_steven)  
+  **Author:** God is King ✝ • Stand for truth • 🙏 (@hewho_steven)  
   **Timestamp:** Sat, 29 Jun 2024 20:14:12 GMT  
   **Content:** If @NazShahBfd can’t speak English in England then pop off back to Pakistan if you want to speak Urdu.  
   *(Quoted post unrelated; no event details.)*  
@@ -393,7 +393,7 @@ No additional unique posts beyond the above (overlap with the first search; same
   Join @TitoOrtiz & @KariLake for a town hall entitled "The Fight For Arizona."  
   Democrats, Independents, & Republicans are welcome to Ask Kari ANYTHING!  
   The event kicks off at The Outlaw Bar and Grill at 6:00 pm.  
-  FREE RSVP⤵️  
+  FREE RSVP⤵  
   https://t.co/HcIcf4JwxT  
   **Engagement:** Likes=576, Reposts=167, Quotes=6, Replies=44, Bookmarks=2, Views=67698  
   **Media:** Photo (URL: https://pbs.twimg.com/media/GRA_AU7b0AE_3lp.jpg)  
@@ -439,7 +439,7 @@ No additional unique posts beyond the above (overlap with the first search; same
   💸All day: We’re holding a money bomb for Bobby! ...  
   🪧3pm-7pm ET: Protests of Kennedy’s exclusion by CNN will be held across the country, including in Atlanta, Boston, DC, Denver, and Miami.  
   🎤7:30p ET: Bobby’s interview with Dr. Phil on Merit. ...  
-  🖥️ 9pm ET: The real debate begins streaming live on 𝕏 and online. ...  
+  🖥 9pm ET: The real debate begins streaming live on 𝕏 and online. ...  
   **Engagement:** Likes=196, Reposts=55, Quotes=6, Replies=5, Bookmarks=3, Views=7934  
   **Media:** Video (URL: https://video.twimg.com/ext_tw_video/1806310976985128962/pu/vid/avc1/720x720/0i2okvueeHvN314h.mp4?tag=12, duration: 5490 ms)  
   *(RFK Jr. debate-related; unrelated to Charlie Kirk/TPUSA.)*

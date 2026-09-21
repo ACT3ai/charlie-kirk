@@ -255,7 +255,7 @@ Search twitter and x.com posts for where Charlie Kirk or TPUSA has public speaki
   Author: Turning Point USA (@TPUSA)  
   Timestamp: Fri, 12 Jan 2024 21:13:35 GMT  
   Media: 1 video  
-  Content: What advice would YOU give him? ⬇️
+  Content: What advice would YOU give him? ⬇
 
 - [post:55] ID: 1745845638602830162  
   Author: Turning Point USA (@TPUSA)  

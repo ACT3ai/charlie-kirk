@@ -589,7 +589,7 @@ No results found.
   Author: Charlie Kirk - @charliekirk11  
   Timestamp: Sun, 29 Oct 2023 20:11:11 GMT  
   Engagement: Likes=345, Reposts=64, Quotes=1, Replies=57, Bookmarks=5, Views=68218  
-  Content: Hamas, BLM, and the Left’s Resentment Culture — LIVE from The University of San Antonio 🚨⬇️
+  Content: Hamas, BLM, and the Left’s Resentment Culture — LIVE from The University of San Antonio 🚨⬇
 
 - **[post:16]** ID: 1719409910054834686 (duplicate of post:11 above)  
   Author: Charlie Kirk - @charliekirk11  
@@ -653,7 +653,7 @@ No results found.
   Timestamp: Mon, 30 Oct 2023 13:14:53 GMT  
   Engagement: Likes=1450, Reposts=226, Quotes=8, Replies=52, Bookmarks=114, Views=190488  
   Media: Yes (1 item) – photo URL: https://pbs.twimg.com/media/F9sLAXEXoAATEk0.jpg  
-  Content: ❤️TOUR DATES  
+  Content: ❤TOUR DATES  
   NOVEMBER  
   📍DALLAS 1-2  
   📍KANSAS CITY 2-3  

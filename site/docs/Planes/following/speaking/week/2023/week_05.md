@@ -304,7 +304,7 @@ Search twitter and x.com posts for where Charlie Kirk or TPUSA has public speaki
 
 **Posts from @TPUSA (Turning Point USA):**
 - [post:6] / [post:26] ID: 1621629958186729472 (Fri, 03 Feb 2023 22:01:25 GMT)  
-  Content: "🚨RIGHT NOW: Charlie Kirk & Brazilian President Jair Bolsonaro speak LIVE from Miami TUNE IN⬇️ https://www.youtube.com/watch?v=jgS6ydhGALw"
+  Content: "🚨RIGHT NOW: Charlie Kirk & Brazilian President Jair Bolsonaro speak LIVE from Miami TUNE IN⬇ https://www.youtube.com/watch?v=jgS6ydhGALw"
 
 - [post:7] / [post:11] / [post:27] ID: 1621601938939973635 (Fri, 03 Feb 2023 20:10:04 GMT)  
   Content: "TONIGHT👀: @jairbolsonaro addresses the people for the FIRST TIME in 2023. He will be speaking with @charliekirk11 LIVE from Miami🌴 at 5ET / 2PT Tickets Available: https://t.co/9uv7f4AB6d"  

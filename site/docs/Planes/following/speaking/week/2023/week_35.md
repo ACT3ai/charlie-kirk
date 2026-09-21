@@ -279,7 +279,7 @@ I performed multiple searches using keyword, advanced operators, semantic releva
   Author: Charlie Kirk (@charliekirk11)  
   Content: "Excited to be back at ASU with Dennis Prager next month!  
   I'm sure the 39 'honors college' professors who demanded that we wouldn't be allowed on campus in February will be delighted we are coming back!  
-  Tickets are going quick! Get yours now!🎟️: https://t.co/HAPe5oK7Rw"  
+  Tickets are going quick! Get yours now!🎟: https://t.co/HAPe5oK7Rw"  
   Media: Photo (promotional image).  
   Engagement: Likes=345, Reposts=61, Quotes=3, Replies=52, Bookmarks=3, Views=68963.  
   **Event details**: Charlie Kirk + Dennis Prager speaking event at Arizona State University (ASU, Tempe, AZ) "next month" (post implies September 2023). Tickets available via link. References prior February 2023 controversy.[[1]](https://x.com/charliekirk11/status/1696594035299979476)[[3]](https://x.com/i/status/1696594035299979476)

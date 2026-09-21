@@ -1,12 +1,40 @@
 ROOT_DIR dir is ~/BGit/Bryan_git/charlie-kirk
 
-CK_FILE is file {ROOT_DIR}/Charlie_Kirk.txt
+CK_FILE is file ~/BGit/all/politics/charlie_kirk/Charlie_Kirk.txt
+  (Real file. Moved 2026-09-19. ~/BGit/Bryan_git/charlie-kirk/Charlie_Kirk.txt is now a symlink to it —
+   use that only to verify the location; always read and write the real path.)
 
 SITE_DIR dir is {ROOT_DIR}/site
 
-CHARLIE_KIRK_FILE is file ~/Library/CloudStorage/Dropbox/Bryan/Personal/Politics/Charlie_Kirk/Charlie_Kirk.txt
+CHARLIE_KIRK_FILE is file ~/BGit/all/politics/charlie_kirk/Charlie_Kirk.txt
+  (Real file. Moved 2026-09-19. ~/BGit/Bryan_git/charlie-kirk/Charlie_Kirk.txt is now a symlink to it —
+   use that only to verify the location; always read and write the real path.)
 
-CK_INBOX is file {ROOT_DIR}/Charlie_Kirk_AI_Inbox.txt
+CK_INBOX is file ~/BGit/all/politics/charlie_kirk/Charlie_Kirk_AI_Inbox.txt
+  (Real file. Moved 2026-09-19. ~/BGit/Bryan_git/charlie-kirk/Charlie_Kirk_AI_Inbox.txt is now a symlink to it —
+   use that only to verify the location; always read and write the real path.)
+
+== Where Charlie_Kirk.txt And The Inbox Live (moved 2026-09-19) ==
+
+Both files now live OUTSIDE this repo, in ~/BGit/all/politics/charlie_kirk/:
+
+  ~/BGit/all/politics/charlie_kirk/Charlie_Kirk.txt            {CK_FILE}, the real file
+  ~/BGit/all/politics/charlie_kirk/Charlie_Kirk_AI_Inbox.txt   {CK_INBOX}, the real file
+
+The old paths at this repo's root are SYMBOLIC LINKS to them:
+
+  {ROOT_DIR}/Charlie_Kirk.txt           -> ~/BGit/all/politics/charlie_kirk/Charlie_Kirk.txt
+  {ROOT_DIR}/Charlie_Kirk_AI_Inbox.txt  -> ~/BGit/all/politics/charlie_kirk/Charlie_Kirk_AI_Inbox.txt
+
+Always read and write the REAL path. Use the symlink only to confirm where the file
+is (`ls -la {ROOT_DIR}/Charlie_Kirk*.txt` or `readlink`). Why it matters: editors
+and AI edit tools often save by writing a new file and renaming it over the old
+one. Done through the symlink, that REPLACES the link with a plain file in this
+repo, and from then on there are two diverging copies. If a symlink is found
+missing or turned into a regular file, stop and tell Bryan — never recreate or
+overwrite either file yourself. Older prompts that say {ROOT_DIR}/Charlie_Kirk.txt
+or a Dropbox path (~/Library/CloudStorage/Dropbox/.../Charlie_Kirk.txt, which no
+longer exists) mean the real file above.
 
 
 ================================================================================
@@ -142,8 +170,10 @@ assassination investigation (September 10, 2025, Utah Valley University).
 == Directory Structure ==
 
 {ROOT_DIR}/
-  Charlie_Kirk.txt            # Master investigation file (400K+). All raw evidence,
-                              # quotes, timeline, court data. Managed by /ck_add_text
+  Charlie_Kirk.txt            # SYMLINK -> ~/BGit/all/politics/charlie_kirk/Charlie_Kirk.txt
+                              # Master investigation file (400K+). All raw evidence,
+                              # quotes, timeline, court data. READ-ONLY TO AI.
+  Charlie_Kirk_AI_Inbox.txt   # SYMLINK -> ~/BGit/all/politics/charlie_kirk/Charlie_Kirk_AI_Inbox.txt
   README.md                   # Docusaurus setup guide for GitHub
   claude.md                   # This file
   pages.csv                   # Master index of all public pages (see == Pages CSV == below)
@@ -1062,7 +1092,7 @@ FILE:
 * 404_Investigation_Report.txt: Google Search Console 404 investigation for
   whoassassinatedcharliekirk.com — which URLs Google has that the site does not.
 * ck_main_progress.txt: Running progress notes on the Level 2 build-out.
-* Charlie_Kirk_AI_Inbox.txt: {CK_INBOX}. Append-only staging file for new
+* Charlie_Kirk_AI_Inbox.txt: SYMLINK to {CK_INBOX}. Append-only staging file for new
   investigation content. AI writes HERE, never to Charlie_Kirk.txt. Bryan merges
   by hand. See the ABSOLUTE RULE at the top of this file.
 * .gitignore: Carries a warning banner at the bottom. If ~1,950 per-image lines

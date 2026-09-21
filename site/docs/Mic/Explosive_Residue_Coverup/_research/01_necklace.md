@@ -25,7 +25,6 @@
 - Erika hung necklace out SUV window during motorcade for cameras (ProjectConstitu compilation)
 - Erika first public appearance clutching necklace at studio podium
 - Jesse Watters segment: Erika explaining why she originally got him the necklace
-- Investigators ask: why necklace became centerpiece narrative so fast
 
 ## Physics / competing mechanisms
 - Chris Martenson (@peakprosperity): high-speed cavitation from bullet snaps necklace, pugilist pose — NO explosive required
@@ -43,9 +42,8 @@
 
 ## X posts (IDs / authors)
 - 2067372027623715212 @ProjectConstitu — Candace rigged mic explains necklace search
-- 2080108801068273973 @ProjectConstitu — Erika builds lore around necklace
 - 2080101268190597281 @ProjectConstitu — origin of medics-ripped narrative
-- 2006731899654516984 @baroncoleman — feds, Turek, Erika hysterically searching
+- 2006731899654516984 @baroncoleman — feds, Turek hysterically searching
 - 2024238574795620714 @alleytopfiles — contradictory articles
 - 2076133928675487954 @DataRepublican — necklace break before impact + Candace shaped charge
 - 2081801708351459608 @BlakeBednarz — pendant explosive livestream claim

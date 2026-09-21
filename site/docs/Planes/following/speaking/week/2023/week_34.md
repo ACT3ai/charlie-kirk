@@ -481,7 +481,7 @@ Search twitter and x.com posts for where Charlie Kirk or TPUSA has public speaki
   Timestamp: Thu, 24 Aug 2023 00:32:39 GMT  
   Content: "🚨LIVE REACTION TO TRUMP/TUCKER & THE GOP DEBATE 🚨  
   THOUGHTCRIME PRIMETIME  
-  EXCLUSIVELY on Rumble ⬇️  
+  EXCLUSIVELY on Rumble ⬇  
   https://rumble.com/v3b01ve-thoughtcrime-special-debate-edition.html"  
   (Livestream reaction show with Charlie Kirk.)  
   Engagement: Likes=322, Reposts=63, Quotes=2, Replies=24, Bookmarks=1, Views=59372

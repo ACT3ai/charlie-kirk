@@ -272,7 +272,7 @@ Search twitter and x.com posts for where Charlie Kirk or TPUSA has public speaki
   Content: You are the perfect person to be California governor! Great spirit. Transparent. Speak truth to power. Excellent communicator!
 
 - **[post:4]** ID: 1919527073208520794  
-  Author: Red haired lass ☘️ Fight the trump criminal mafia (@Smapsley)  
+  Author: Red haired lass ☘ Fight the trump criminal mafia (@Smapsley)  
   Timestamp: Mon, 05 May 2025 22:58:11 GMT  
   Content: I think you might have doxxed me today. I will be reporting you.
 
@@ -335,11 +335,11 @@ Search twitter and x.com posts for where Charlie Kirk or TPUSA has public speaki
   Engagement: Likes=401, Reposts=58, Quotes=3, Replies=26, Bookmarks=4, Views=13041
 
 - **[post:14]** ID: 1917523046614851624  
-  Author: Kathleen Winchell ❤️🤍💙🇺🇸🇺🇸 (@KathleenWinche3)  
+  Author: Kathleen Winchell ❤🤍💙🇺🇸🇺🇸 (@KathleenWinche3)  
   Timestamp: Wed, 30 Apr 2025 10:14:54 GMT  
   Content: Charlie is talking about his tour and they how they were rudely interrupted during this particular event at Texas A&M.  
   Dean and Parker were the instigators! Listen below for more details!  
-  @charliekirk11 keep doing what you’re doing because you and TPUSA our making a HUGE difference. ♥️♥️♥️  
+  @charliekirk11 keep doing what you’re doing because you and TPUSA our making a HUGE difference. ♥♥♥  
   (Media: 1 video)  
   Engagement: Likes=214, Reposts=64, Quotes=0, Replies=2, Bookmarks=8, Views=7057
 
@@ -386,7 +386,7 @@ Search twitter and x.com posts for where Charlie Kirk or TPUSA has public speaki
   https://www.eventbrite.com/e/unite-ie-conservative-summit-tickets-1256853395339  
   2.) Join for for CFPAC after the convention (also May 3rd but at 6pm)  
   https://t.co/V0cbuC52Oe  
-  🐻✝️🇺🇸  
+  🐻✝🇺🇸  
   (Media: 1 video)  
   Engagement: Likes=354, Reposts=31, Quotes=1, Replies=19, Bookmarks=9, Views=19749  
   (Note: About Kyle Langford and Riley Gaines events on May 3, 2025, not Charlie Kirk or TPUSA.)
@@ -414,7 +414,7 @@ Search twitter and x.com posts for where Charlie Kirk or TPUSA has public speaki
   Timestamp: Thu, 01 May 2025 22:10:11 GMT  
   Content: HOLY SH*T 🚨 THOUSANDS of students from UC San Diego showed up for Charlie Kirk in Deep Blue California. MSM will say this isn’t possible 🔥  
   Remarkable to see how energized Gen Z Voters are for the MAGA Party during a non Election Season  
-  The Great Awakening is happening ❤️  
+  The Great Awakening is happening ❤  
   (Media: 1 video)  
   Engagement: Likes=9224, Reposts=2330, Quotes=40, Replies=265, Bookmarks=104, Views=162079
 

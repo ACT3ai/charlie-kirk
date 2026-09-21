@@ -691,7 +691,7 @@ The best is truly yet to come 🎉 🎆
 ### Other relevant posts mentioning Charlie Kirk or TPUSA (no events announced; incidental references):
 - **[post:0]** / **[post:7]**  
   **ID:** 1611494676309200899  
-  **Author:** Becky R.🇺🇸🐶🐾🐾🕊️ (@ro45157094)  
+  **Author:** Becky R.🇺🇸🐶🐾🐾🕊 (@ro45157094)  
   **Timestamp:** Fri, 06 Jan 2023 22:47:25 GMT  
   **Engagement:** Likes=1, Reposts=0, Quotes=0, Replies=0, Bookmarks=0, Views=32  
   **Content:** What about not funding Ukraine ? Didn’t Charlie Kirk teach you anything ! A true conservative doesn’t have to make back room deals ! KM IS FAR FROM CONSERVATIVE ENJOY YOUR TIME THERE YOU WILL BE PRIMARIED !
@@ -750,7 +750,7 @@ In addition I conducted two investigations while in the Army about such matters.
   **Media:** Yes (1 item) – photo URL: https://pbs.twimg.com/media/FlkZRKjaUAAVH7M.jpg  
   **Content:** This event in Wisconsin is going to be 🔥 🔥 
 
- Link ⬇️  
+ Link ⬇  
   *(No direct Kirk/TPUSA mention in content, but included in semantic results)*
 
 ### Additional semantic search results (unrelated events or no direct Kirk/TPUSA events):

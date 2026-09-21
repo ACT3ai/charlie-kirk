@@ -71,9 +71,9 @@ To require all United States Intelligence Community agencies to release all info
    3. All intelligence regarding foreign communications with TPUSA donors within 3 months before the assassination
    4. All intelligence regarding Charlie Kirk's DOGE-equivalent audit of TPUSA financial irregularities
 
-**Psychological Operations and Handler Activity (Items #38-#41):**
-   1. All intelligence regarding psychological operations or manipulation of Tyler Robinson or [Lance Twiggs](/People/lance-twiggs)
-   2. All intelligence regarding any interactions between Tyler Robinson, Lance Twiggs, or their associates with any intelligence service
+**Psychological Operations (Items #38-#41):**
+   1. All intelligence regarding psychological operations or manipulation of Tyler Robinson
+   2. All intelligence regarding any interactions between Tyler Robinson and any intelligence service
    3. All intelligence regarding communications via Discord, Steam, in-game voice chat, or encrypted messaging connected to the case
 
 **DoD Contracts and Weapons (Items related to N0016425PJ538):**

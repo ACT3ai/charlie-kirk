@@ -442,7 +442,7 @@ The search focused strictly on the date range **2024-06-17 to 2024-06-23** (usin
   - Every generation loves America  
   How do we get a strong, courageous movement that doesn't wilt when the left calls us mean names?  
   This book is the most important I've ever written. It's the roadmap for how we do all of those things. It's the answer to our most common question: "Charlie, what can I do to help?"  
-  Get your copy here ➡️  
+  Get your copy here ➡  
   *(Book promo; no speaking event details for the week.)*
 
 - **[post:21]** ID: 1803087908582342800  
@@ -533,7 +533,7 @@ The search focused strictly on the date range **2024-06-17 to 2024-06-23** (usin
   Content: I'm so excited to join my friends at @tpaction for their Presidential Debate Watch Party.  
   Doors open at 4:30 on June 27th.  
   I hope all of you can make it out as we cheer on President Donald J. Trump!  
-  RSVP⤵️  
+  RSVP⤵  
   https://t.co/Y3q9phFQ0T  
   *(TPAction debate watch party; not Charlie Kirk speaking.)*
 
@@ -550,7 +550,7 @@ The search focused strictly on the date range **2024-06-17 to 2024-06-23** (usin
   Author: Renatta Oxendine (@Renatta)  
   Timestamp: Sat, 22 Jun 2024 23:33:34 GMT  
   Engagement: Likes=6, Reposts=0, Quotes=0, Replies=1, Bookmarks=0, Views=2660  
-  Content: An atheist speaking at a “believers summit” 🤦🏽‍♀️ What in the world will he be speaking on?
+  Content: An atheist speaking at a “believers summit” 🤦🏽‍♀ What in the world will he be speaking on?
 
 - **[post:16]** ID: 1804494502196813951  
   Author: Evan Kilgore 🇺🇸 (@EvanAKilgore)  
@@ -561,7 +561,7 @@ The search focused strictly on the date range **2024-06-17 to 2024-06-23** (usin
   Is this a freaking joke? What the heck is going on in Charlie Kirk's brain??
 
 - **[post:52]** ID: 1804222232400376253  
-  Author: Real Campus Conservative ✝️🇺🇬 (@GroyperKing741)  
+  Author: Real Campus Conservative ✝🇺🇬 (@GroyperKing741)  
   Timestamp: Fri, 21 Jun 2024 18:37:55 GMT  
   Engagement: Likes=2, Reposts=0, Quotes=0, Replies=0, Bookmarks=0, Views=52  
   Content: James Lindsay is an atheist. Why is he speaking at a believers summit?
@@ -570,7 +570,7 @@ The search focused strictly on the date range **2024-06-17 to 2024-06-23** (usin
   Author: Faith In America (@NWIPatriots)  
   Timestamp: Sat, 22 Jun 2024 23:17:02 GMT  
   Engagement: Likes=1, Reposts=1, Quotes=0, Replies=1, Bookmarks=0, Views=68  
-  Content: She is!! Did you happen to see her interview at Charlie Kirk’s event?? She’s a lil’ POWER HOUSE!! 😂❤️❤️❤️
+  Content: She is!! Did you happen to see her interview at Charlie Kirk’s event?? She’s a lil’ POWER HOUSE!! 😂❤❤❤
 
 - **[post:4 / post:10 / post:36 / post:51]** ID: 1804647283633672205  
   Author: J.F. Christensen (@pewpewcyborg)  

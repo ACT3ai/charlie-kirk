@@ -446,7 +446,7 @@ Search twitter and x.com posts for where Charlie Kirk or TPUSA has public speaki
 
 - **[post:0]** Author: David J. - @niramlavzed  
   Timestamp: Sat, 20 Jul 2024 22:40:33 GMT  
-  Content: Don’t say that. We need ballot chasers to go out and register Votes ! 🗳️ how could we loose ? Trump voters don’t vote and the Democrats cheat again and America 🇺🇸 will be no more. #BallotChasers #TPUSA  
+  Content: Don’t say that. We need ballot chasers to go out and register Votes ! 🗳 how could we loose ? Trump voters don’t vote and the Democrats cheat again and America 🇺🇸 will be no more. #BallotChasers #TPUSA  
   Engagement: Likes=0, Reposts=0, Quotes=0, Replies=0, Bookmarks=0, Views=5
 
 - **[post:1]** Author: FLASHBACKNANCY - @flashbacknancy  
@@ -523,7 +523,7 @@ Search twitter and x.com posts for where Charlie Kirk or TPUSA has public speaki
   Content: I remember when they kicked out an adult actress from a TPUSA event years ago. There was no outrage.  
   Engagement: Likes=0, Reposts=1, Quotes=0, Replies=0, Bookmarks=0, Views=37
 
-- **[post:15]** Author: We Are Charlie Kirk R.I.P ☦️🙏 - @RogerR54116409  
+- **[post:15]** Author: We Are Charlie Kirk R.I.P ☦🙏 - @RogerR54116409  
   Timestamp: Wed, 17 Jul 2024 12:21:43 GMT  
   Content: Being a registered Republican means 0 when your actions speak the opposite.  
   (Includes 2 photos.)  

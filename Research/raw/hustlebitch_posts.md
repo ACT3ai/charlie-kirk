@@ -169,8 +169,6 @@ https://x.com/i/grok?focus=1&conversation=1978502681603014703 5/9
 
 The ground where Charlie Kirk was assassinated was ripped up and rebuilt. [Source: X Post. 
 https://x.com/HustleBitch_/status/1971797711059136797]
-Quick handoffs and concealment occurred next to Charlie Kirk's body after the shot. [Source: 
-X Post. https://x.com/HustleBitch_/status/1971770398313255071]
 A man resembling Charlie Kirk was seen at the airport after his death. [Source: X Post. 
 https://x.com/HustleBitch_/status/1971710528797265984]
 The first mention of rooftop or rifle in dispatch was 11 minutes after the shot. [Source: X Post. 
@@ -201,8 +199,6 @@ Candace Owens received description of assassin: young, skilled, highly-trained, 
 in all black. [Source: X Post. https://x.com/HustleBitch_/status/1970866912373452989]Expert10/15/25, 9:50 AM Grok
 https://x.com/i/grok?focus=1&conversation=1978502681603014703 6/9
 
-Quick handoffs occurred next to Charlie Kirk's body. [Source: X Post. 
-https://x.com/HustleBitch_/status/1970836311519948878]
 Multiple advanced drones hovered feet from Charlie Kirk's tent during assassination. [Source: 
 X Post. https://x.com/HustleBitch_/status/1970679670912798737]
 Charlie Kirk said “They’re scared everybody. All 5 of them” minutes before shot. [Source: X 

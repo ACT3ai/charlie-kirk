@@ -458,7 +458,7 @@ Search twitter and x.com posts for where Charlie Kirk or TPUSA has public speaki
 - **Post ID: 1632803397949882369**  
   Author: Turning Point USA (@TPUSA)  
   Timestamp: Mon, 06 Mar 2023 18:00:40 GMT  
-  Content: Catch @charliekirk11 on The Live Free Tour at a stop near you ⬇️ @tpusastudents  
+  Content: Catch @charliekirk11 on The Live Free Tour at a stop near you ⬇ @tpusastudents  
   Engagement: Likes=8, Reposts=2, Quotes=0, Replies=0, Bookmarks=0, Views=5677
 
 ### Posts from @charliekirk11 (Charlie Kirk):

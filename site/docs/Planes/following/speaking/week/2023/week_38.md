@@ -402,7 +402,7 @@ Search twitter and x.com posts for where Charlie Kirk or TPUSA has public speaki
 - **Post ID: 1703513598608511327**  
   **Author:** Charlie Kirk (@charliekirk11)  
   **Timestamp:** Sun, 17 Sep 2023 20:57:46 GMT  
-  **Content:** On this Sunday, my speech from TPUSA Faith’s Pastor’s Summit and why we must excommunicate wokeness from the church ⬇️  
+  **Content:** On this Sunday, my speech from TPUSA Faith’s Pastor’s Summit and why we must excommunicate wokeness from the church ⬇  
   **Media:** None listed in main post.  
   **Engagement:** Likes=314, Reposts=62, Quotes=4, Replies=90, Bookmarks=4, Views=63627  
   **Replies (key excerpts):**  
@@ -435,7 +435,7 @@ Search twitter and x.com posts for where Charlie Kirk or TPUSA has public speaki
 - **Post ID: 1704335459282043177**  
   **Author:** Charlie Kirk (@charliekirk11)  
   **Timestamp:** Wed, 20 Sep 2023 03:23:33 GMT  
-  **Content:** Barely a decade ago when TPUSA was born, the national debt was at $12.7 trillion. Now, it's erupted past $33 trillion. Can this ever possibly be paid back? What are the consequences if we don’t stop Washington’s runaway spending? ⬇️  
+  **Content:** Barely a decade ago when TPUSA was born, the national debt was at $12.7 trillion. Now, it's erupted past $33 trillion. Can this ever possibly be paid back? What are the consequences if we don’t stop Washington’s runaway spending? ⬇  
   **Media:** None.  
   **Engagement:** Likes=505, Reposts=98, Quotes=6, Replies=159, Bookmarks=2, Views=64092  
   **Replies (key excerpts):**  
@@ -494,7 +494,7 @@ He is going to be tabling tomorrow on @NAU's campus. Be there.
 - **Post ID: 1704193745548366163**  
   **Author:** Turning Point USA (@TPUSA)  
   **Timestamp:** Tue, 19 Sep 2023 18:00:25 GMT  
-  **Content:** YOU’RE INVITED‼️
+  **Content:** YOU’RE INVITED‼
 
 This fall, join @charliekirk11 & @theisabelb as they speak about American values on the MADE IN AMERICA TOUR, coming to a high school near you!
 

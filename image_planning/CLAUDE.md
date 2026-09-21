@@ -12,7 +12,9 @@ HIERARCHY_FILE is file {IMAGES_DIR}/images.yaml
   Anything that still says "hierarchy_images.yaml" or points at image_planning/
   for the YAML is stale.
 
-CK_FILE is file {ROOT_DIR}/Charlie_Kirk.txt
+CK_FILE is file ~/BGit/all/politics/charlie_kirk/Charlie_Kirk.txt
+  (Real file. Moved 2026-09-19. ~/BGit/Bryan_git/charlie-kirk/Charlie_Kirk.txt is now a symlink to it —
+   use that only to verify the location; always read and write the real path.)
 
 SITE_DIR dir is {ROOT_DIR}/site
 

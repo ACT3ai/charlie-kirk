@@ -392,7 +392,7 @@ Search twitter and x.com posts for where Charlie Kirk or TPUSA has public speaki
   Author: Turning Point USA (@TPUSA)  
   Timestamp: Wed, 22 Mar 2023 23:16:53 GMT  
   Content: TPUSA Presents The LIVE FREE Tour w/ @realcandaceO & @charliekirk11 at Ohio State University.  
-  WATCH LIVE NOW ⬇️  
+  WATCH LIVE NOW ⬇  
   https://www.youtube.com/live/X-8PJhrVWQ8?feature=share  
   (Media: Video)  
   Engagement: Likes=54, Reposts=12, Quotes=0, Replies=1, Bookmarks=2, Views=13078

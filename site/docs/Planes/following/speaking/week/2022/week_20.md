@@ -269,7 +269,7 @@ No other direct announcements of additional Charlie Kirk or TPUSA public speakin
 
 - **Post ID: 1527064679184404480** (Wed, 18 May 2022 23:12:45 GMT)  
   Author: @TPAction  
-  Content: @DanODonnellShow hit it right on the head‼️ People are very passionate about election integrity & @DineshDSouza’s 2000 Mules proves that. Thank you again for speaking in WI!  
+  Content: @DanODonnellShow hit it right on the head‼ People are very passionate about election integrity & @DineshDSouza’s 2000 Mules proves that. Thank you again for speaking in WI!  
   Join us for our next showings👇🏼  
   Arizona 🎟: [link]  
   Georgia 🎟: [link]  
@@ -350,7 +350,7 @@ No other direct announcements of additional Charlie Kirk or TPUSA public speakin
   Author: @charliekirk11  
   Content: Breaking down all the data behind the bombshell film from @DineshDSouza — '2,000 Mules'  
   Join me May 22 in Arizona for an in-depth analysis of the 2020 Election. Get your tickets NOW!  
-  ➡️➡️➡️ [link]  
+  ➡➡➡ [link]  
   (Includes photo media)
 
 - **Post ID: 1526218540692512773** (Mon, 16 May 2022 15:10:30 GMT)  

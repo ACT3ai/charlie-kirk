@@ -89,7 +89,9 @@ SITE_DIR dir is {ROOT_DIR}/site
 SITE_DOCS_DIR dir is {ROOT_DIR}/site/docs
   **Only** this tree is published. Only this tree is edited by default.
 
-CK_FILE is file {ROOT_DIR}/Charlie_Kirk.txt
+CK_FILE is file ~/BGit/all/politics/charlie_kirk/Charlie_Kirk.txt
+  (Real file. Moved 2026-09-19. ~/BGit/Bryan_git/charlie-kirk/Charlie_Kirk.txt is now a symlink to it —
+   use that only to verify the location; always read and write the real path.)
   Master investigation file. Grows only — never delete or rewrite existing
   content. Section headers look like:
 
@@ -1203,7 +1205,7 @@ You are Worker Agent {AGENT_ID} of 12 for WhoAssassinatedCharlieKirk.com.
 
 ROOT_DIR=~/BGit/Bryan_git/charlie-kirk
 PAGES_CSV={ROOT_DIR}/pages.csv
-CK_FILE={ROOT_DIR}/Charlie_Kirk.txt
+CK_FILE=~/BGit/all/politics/charlie_kirk/Charlie_Kirk.txt
 PROMPT={ROOT_DIR}/prompts/grok_twitter_research.md
 GROK_RESEARCH_ROOT=~/T/_ck/grok
 START_ROW={START_ROW}
@@ -1301,7 +1303,7 @@ a murder" as site fact.
 20. KEY REFERENCE FILES
 ====================================================================
 
-  {ROOT_DIR}/Charlie_Kirk.txt
+  ~/BGit/all/politics/charlie_kirk/Charlie_Kirk.txt
   {ROOT_DIR}/pages.csv
   {ROOT_DIR}/Claude.md
   {ROOT_DIR}/prompts/Assess_Manual.md

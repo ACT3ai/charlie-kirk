@@ -497,7 +497,7 @@ Search twitter and x.com posts for where Charlie Kirk or TPUSA has public speaki
   **Content:** BLACK FRIDAY! Don’t miss AmericaFest with the hottest conservative speakers in America!  
   You won’t find a cheaper way to see all the action than this!  
   Register to attend TODAY!  
-  ➡️ https://www.amfest.com/  
+  ➡ https://www.amfest.com/  
   **Media:** 1 photo (https://pbs.twimg.com/media/F_uAcIaacAAX-h4.jpg)  
   **Engagement:** Likes=15, Reposts=2, Quotes=1, Replies=2, Bookmarks=0, Views=1384
 
@@ -534,7 +534,7 @@ Search twitter and x.com posts for where Charlie Kirk or TPUSA has public speaki
   **Timestamp:** Wed, 22 Nov 2023 23:53:38 GMT  
   **Content:** To Phoenix from NYC, at #AMFEST I will be! (See what I did there?)  
   Get your tickets for @TPUSA’s biggest event of the year!   
-  Use the promo code ‘tpusaambassador' for 25% off! ⬇️  
+  Use the promo code ‘tpusaambassador' for 25% off! ⬇  
   https://t.co/yN9LUsYVka  
   **Media:** 1 photo (https://pbs.twimg.com/media/F_k5xZuXoAABHPb.jpg)  
   **Engagement:** Likes=25, Reposts=1, Quotes=0, Replies=2, Bookmarks=1, Views=3100

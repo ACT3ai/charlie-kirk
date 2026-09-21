@@ -487,7 +487,7 @@ Search twitter and x.com posts for where Charlie Kirk or TPUSA has public speaki
   "UofSC University Officials : Shut down Turning Point USA at UofSC - Sign the Petition! https://t.co/rhXSTboi18 via @Change"
 
 - **Post ID: 1496700172902014982** (Feb 24, 2022, ~04:15 GMT) by @TPUSA:  
-  "SHAMEFUL! 🤦‍♀️ The president of Coastal Carolina University gave in to insane leftist outrage and FALSELY ACCUSED TPUSA of "incitement"... ...for a poster that celebrated the legacy of MLK Jr?! READ MORE 👇 https://thepostmillennial.com/university-president-caves-to-outrage-mob-accuses-tpusa-of-incitement-for-poster"
+  "SHAMEFUL! 🤦‍♀ The president of Coastal Carolina University gave in to insane leftist outrage and FALSELY ACCUSED TPUSA of "incitement"... ...for a poster that celebrated the legacy of MLK Jr?! READ MORE 👇 https://thepostmillennial.com/university-president-caves-to-outrage-mob-accuses-tpusa-of-incitement-for-poster"
 
 - **Post ID: 1496663997646524419** (Feb 24, 2022, ~01:51 GMT) by @ChrisGaffrey:  
   "TPUSA in Milan in force to speak at their school board meeting! Over 25 students of all ages came out to speak! #educatedontmandate #TPUSA"  

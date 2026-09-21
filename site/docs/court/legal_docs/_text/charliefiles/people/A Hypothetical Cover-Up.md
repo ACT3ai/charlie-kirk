@@ -27,7 +27,7 @@ Take the **maximal** version of the theories — that Robinson is a [[Robinson I
 - Note the theory has to explain why the State's **annotated** video was **caught and excluded** by the judge, not slipped through. See [[The Surveillance Video Was Doctored]].
 
 **The security & scene**
-- [[Brian Harpole]] and the [[Kirks Security Detail|security detail]] — cast as either foreknowing or foreign-directed ([[Security Knew It Was Coming]], [[The Security Detail Was Israeli]]) — who publicly deny it and, in Harpole's case, are **suing** over the claim.
+- [[Brian Harpole]] and the [[Kirks Security Detail|security detail]] — the subject of online claims ([[The Security Detail Was Israeli]]) that they publicly deny; Harpole is **suing** over one such claim.
 - Whoever "[[The Scene Was Paved Over|paved over]]" the courtyard — though the forensic scenes were the roof and the woods.
 
 **The digital & surrender record**

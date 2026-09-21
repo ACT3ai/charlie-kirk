@@ -545,7 +545,7 @@ Search twitter and x.com posts for where Charlie Kirk or TPUSA has public speaki
 
 ### Key Posts from TPUSA Students Account (@tpusastudents):
 - **Post ID: 1641867964562673664** (Fri, 31 Mar 2023 18:20:01 GMT)  
-  Content: "It's been CONFIRMED! These 6 Influential Women WILL BE SPEAKING at YWLS 2023! Have you registered? You won't want to miss this 💕🎤⚡️⬇️ https://t.co/9ySiDG8Ra0"  
+  Content: "It's been CONFIRMED! These 6 Influential Women WILL BE SPEAKING at YWLS 2023! Have you registered? You won't want to miss this 💕🎤⚡⬇ https://t.co/9ySiDG8Ra0"  
   Media: 1 photo.  
   Engagement: 23 likes, 14 reposts, 0 replies, 3 quotes, 0 bookmarks.  
   *Announcement confirming multiple influential women speaking at YWLS 2023 (TPUSA event).*

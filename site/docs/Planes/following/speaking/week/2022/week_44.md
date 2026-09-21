@@ -458,7 +458,7 @@ Search twitter and x.com posts for where Charlie Kirk or TPUSA has public speaki
   Timestamp: Thu, 03 Nov 2022 17:43:26 GMT  
   Content: Join myself and Turning Point Action in Clearwater, Florida this SATURDAY with Gov. Ron DeSantis and Anna Paulina Luna. SPRINT to the finish line.  
   Engagement: Likes=225, Reposts=52, Quotes=0, Replies=13, Bookmarks=0, Views=N/A  
-  Quoted post: ID 1588216912588201984 (Sydney Clementi @sydmartsal, same day 17:09:54 GMT): Two more days until our @tpaction ‘Unite & Win’ Rally in Clearwater, FL w/ @GovRonDeSantis, @VoteAPL & @charliekirk11! Let’s KEEP Florida RED on November 8th!🐊☀️🇺🇸 To register visit -> [link]  
+  Quoted post: ID 1588216912588201984 (Sydney Clementi @sydmartsal, same day 17:09:54 GMT): Two more days until our @tpaction ‘Unite & Win’ Rally in Clearwater, FL w/ @GovRonDeSantis, @VoteAPL & @charliekirk11! Let’s KEEP Florida RED on November 8th!🐊☀🇺🇸 To register visit -> [link]  
   Thread replies (partial):  
   - Reply ID: 1588229887017746433 (FreeSpeechForAllNow @FreeSpeechForA5, same day 18:01:27 GMT): Groomers union meet. Keep ur children far away..  
   - Reply ID: 1588238778891702272 (Blessed@50 @Blessed5012, same day 18:36:47 GMT): [link]  
@@ -482,8 +482,8 @@ Search twitter and x.com posts for where Charlie Kirk or TPUSA has public speaki
   Content: 🚨RALLY TONIGHT🚨 Join me and @charliekirk11 for an INCREDIBLE Rally in Chandler tonight! We have some great speakers, like @ByronDonalds & @AbrahamHamadeh, lined up that you won’t want to miss! I hope to see you all there! REGISTER: http://karilake.com/events [media: photo of graphic]  
   Engagement: Likes=693, Reposts=173, Quotes=14, Replies=158, Bookmarks=0, Views=N/A  
   Thread replies (partial):  
-  - Reply ID: 1587556859946291200 (Hillary☮️ 🇺🇦 @HillaryHutton, same day 21:27:05 GMT): [link to video]  
-  - Reply ID: 1587563976354803712 (Mike Dodd 🏳️‍🌈🇺🇦 @mikzego, same day 21:55:22 GMT): [media: photo]  
+  - Reply ID: 1587556859946291200 (Hillary☮ 🇺🇦 @HillaryHutton, same day 21:27:05 GMT): [link to video]  
+  - Reply ID: 1587563976354803712 (Mike Dodd 🏳‍🌈🇺🇦 @mikzego, same day 21:55:22 GMT): [media: photo]  
   - Reply ID: 1587565086616469506 (Romy @RomyInMA, same day 21:59:46 GMT): [link to video]
 
 - **Post ID: 1587572769881038850**  

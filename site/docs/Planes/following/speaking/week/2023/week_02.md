@@ -513,7 +513,7 @@ Search twitter and x.com posts for where Charlie Kirk or TPUSA has public speaki
   Media: 1 photo (URL: https://pbs.twimg.com/media/FmXha9hXkAsOSVB.jpg)  
   Content: THE LIVE FREE TOUR is coming to KENTUCKY!! 🙌 Charlie Kirk will be at University of Kentucky on March 8th at 7 PM!! 🔥 and we want to see YOU there!  
   Join Charlie Kirk this semester as he fights America’s culture war 🇺🇸  
-  Get your ticket ➡️ https://t.co/YCwC5oT4aB  
+  Get your ticket ➡ https://t.co/YCwC5oT4aB  
   #LIVEFREETOUR
 
 - **[post:13]** ID: 1613937864361873415  
@@ -632,7 +632,7 @@ Search twitter and x.com posts for where Charlie Kirk or TPUSA has public speaki
   Content: Next week the global elite will meet in a country with closed borders, a homogeneous culture, and the world's smallest government to tell you that you need open borders, no cultural identity, and central planning.
 
 - **[post:31]** ID: 1613394841718882310  
-  Author: The Astute Galoot ™️ 🏴‍☠️ - @TheAstuteGaloot  
+  Author: The Astute Galoot ™ 🏴‍☠ - @TheAstuteGaloot  
   Timestamp: Thu, 12 Jan 2023 04:38:00 GMT  
   Engagement: Likes=154, Reposts=78, Quotes=0, Replies=5, Bookmarks=6, Views=30511  
   Content: BREAKING NEWS: Charlie Kirk’s ‘Student Action Summit’ has got sum serious explaining to do…  

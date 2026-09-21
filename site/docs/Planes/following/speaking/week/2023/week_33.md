@@ -688,7 +688,7 @@ All results are presented without summarization, filtering, or omission. Posts a
   ✅ Attend CLS 2024 🇺🇸  
   #CLS2023 was 🔥🔥🔥  
   Check out our recap video & always remember.. CHAPTERS CHANGE THE WORLD 🌎  
-  JOIN US ➡️ https://t.co/9IYdPwAg8d  
+  JOIN US ➡ https://t.co/9IYdPwAg8d  
   (References CLS 2023 recap and upcoming CLS 2024; general chapter/campus promotion.)
 
 - **[post:68]** ID: 1692220957803663692  

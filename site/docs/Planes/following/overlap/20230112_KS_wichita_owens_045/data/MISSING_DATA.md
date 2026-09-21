@@ -54,7 +54,7 @@ marginTop:'0.5rem'}}>
 <div>
 
 * [Surveillance cameras and footage threads](/cameras/overview)
-* [Suspicious conduct by actor](/Suspicious/overview)
+* [Open questions by actor](/Suspicious/overview)
 * [Other topics with no single home](/other_topics/overview)
 
 </div>

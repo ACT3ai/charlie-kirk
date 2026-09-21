@@ -570,7 +570,7 @@ Search twitter and x.com posts for where Charlie Kirk or TPUSA has public speaki
 - [post:13] ID: 1616243401275449344  
   Author: I AM CHARLIE KIRK 👑I IDENTIFY AS A CHILD OF GOD👑 - @emjay_fl  
   Timestamp: Fri, 20 Jan 2023 01:17:09 GMT  
-  Content: THE THOUGHT POLICE!! 👮‍♂️👮👮‍♂️don’t speak out or speak ur mind the Chinada police will come and arrest you  
+  Content: THE THOUGHT POLICE!! 👮‍♂👮👮‍♂don’t speak out or speak ur mind the Chinada police will come and arrest you  
   (Media: 1 photo)
 
 **Posts from semantic search (Charlie Kirk or TPUSA public speaking events, speeches, campus tours, or where Charlie will speak between January 15-21 2023, date-filtered 2023-01-15 to 2023-01-22):**
@@ -671,15 +671,15 @@ Search twitter and x.com posts for where Charlie Kirk or TPUSA has public speaki
 - [post:49] ID: 1616466250707922950  
   Author: Turning Point USA - @TPUSA  
   Timestamp: Fri, 20 Jan 2023 16:02:41 GMT  
-  Content: #AMFEST2022 was an experience❗️🇺🇸  
+  Content: #AMFEST2022 was an experience❗🇺🇸  
   Now more than ever it’s time to fight for what makes America Great: FREEDOM!  
-  RT if you are joining us this year. 🙋‍♀️🙋‍♂️  
+  RT if you are joining us this year. 🙋‍♀🙋‍♂  
   (Media: 1 video)
 
 - [post:50] ID: 1616210279372845056  
   Author: Turning Point USA - @TPUSA  
   Timestamp: Thu, 19 Jan 2023 23:05:32 GMT  
-  Content: Get our guide on how to stop the Great Reset for a gift of any amount. It’s time. ⬇️
+  Content: Get our guide on how to stop the Great Reset for a gift of any amount. It’s time. ⬇
 
 - [post:51] ID: 1616210273505005570  
   Author: Turning Point USA - @TPUSA  

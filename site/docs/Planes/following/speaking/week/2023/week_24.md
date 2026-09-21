@@ -370,7 +370,7 @@ Search twitter and x.com posts for where Charlie Kirk or TPUSA has public speaki
   **Author:** Turning Point USA (@TPUSA)  
   **Timestamp:** Sun, 11 Jun 2023 16:43:37 GMT  
   **Content:** We are excited that Chaya Raichik (also known as @libsoftiktok) will be joining the team as our newest TPUSA Contributor! We look forward to working with Chaya in the fight to expose leftist corruption, while inspiring generations of young conservatives to speak freely. 🇺🇸  
-  Join us in welcoming @ChayaRaichik10 to the TPUSA family! ⬇️  
+  Join us in welcoming @ChayaRaichik10 to the TPUSA family! ⬇  
   **Engagement:** Likes=2023, Reposts=333, Quotes=22, Replies=86, Bookmarks=18, Views=733021  
   **Media:** Yes (1 item) – Video: https://video.twimg.com/ext_tw_video/1667935486734925825/pu/vid/1080x1920/_82f86RwhgJYdgPW.mp4?tag=14 (duration: 20954 ms)  
   **Conversation ID:** 1667935630205255682  
@@ -520,7 +520,7 @@ Search twitter and x.com posts for where Charlie Kirk or TPUSA has public speaki
 - **Post ID: 1669833362133995520**  
   **Author:** Civics and Civility are essential!😎 (@BeaReno)  
   **Timestamp:** Fri, 16 Jun 2023 22:24:32 GMT  
-  **Content:** Charlie Kirk’s all bent out of shape because his hate event got cancelled.😃🔥⬇️  
+  **Content:** Charlie Kirk’s all bent out of shape because his hate event got cancelled.😃🔥⬇  
   **Engagement:** Likes=1, Reposts=1, Quotes=0, Replies=1, Bookmarks=0, Views=49  
   **Media:** None  
   **Conversation ID:** 1669833362133995520  

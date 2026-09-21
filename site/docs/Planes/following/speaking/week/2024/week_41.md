@@ -404,7 +404,7 @@ Search twitter and x.com posts for where Charlie Kirk or TPUSA has public speaki
   10/16: University of Arizona  
   10/17: Arizona State University   
 
-  Don’t miss the opportunity to see Charlie Kirk on your campus! Visit https://t.co/6au2GYxRvx & get your free ticket today 🎟️  
+  Don’t miss the opportunity to see Charlie Kirk on your campus! Visit https://t.co/6au2GYxRvx & get your free ticket today 🎟  
 
   (Media: Video + photo of tour graphic)
 

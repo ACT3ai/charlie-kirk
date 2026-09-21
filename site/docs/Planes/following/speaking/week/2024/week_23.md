@@ -603,7 +603,7 @@ Search twitter and x.com posts for where Charlie Kirk or TPUSA has public speaki
   Content: Turning Point Action hosts "Chase the Vote - A Town Hall with President Donald J. Trump" with Charlie Kirk at Dream City Church in Phoenix, Arizona. RSBN will have full coverage of this special event on Thursday, June 6, 2024, starting at approximately 2:00 p.m. ET. The event will begin at 4:00 p.m. ET. https://t.co/6jPBsyi8CX  
   Thank you @harris_loving for continuing to fight💥👊 and supporting @MikeGil21446788  
   Media: 1 photo  
-  (Quotes [post:10] from @harris_loving: "Look who’s coming to Arizona this Thursday!!!❤️❤️❤️🇺🇸 https://www.tpaction.com/townhall")
+  (Quotes [post:10] from @harris_loving: "Look who’s coming to Arizona this Thursday!!!❤❤❤🇺🇸 https://www.tpaction.com/townhall")
 
 - **Post [post:8]** (Trump speaking at event):  
   ID: 1798851685055672655  
@@ -720,9 +720,9 @@ Search twitter and x.com posts for where Charlie Kirk or TPUSA has public speaki
 ### 4. The People’s Convention (upcoming, referenced in range; June 15+ but previewed)
 - **Post [post:7]** / **[post:34]** (Tulsi Gabbard speaking):  
   ID: 1799209962016780354  
-  Author: *Heidi*DivineJustice*MissionEarth⚡🙏🇺🇸👼🐺🦁🕊️☄ (@quantify88faith)  
+  Author: *Heidi*DivineJustice*MissionEarth⚡🙏🇺🇸👼🐺🦁🕊☄ (@quantify88faith)  
   Timestamp: Fri, 07 Jun 2024 22:40:57 GMT  
-  Content: 🙏🇺🇸🎖️~Yes, I am voting for Trump, no matter who his VP is... We Patriots should be learning from each other, not just fighting~😔 Tulsi will also be speaking at this @TPUSA Peoples Convention, on June 15th~ ☄️  
+  Content: 🙏🇺🇸🎖~Yes, I am voting for Trump, no matter who his VP is... We Patriots should be learning from each other, not just fighting~😔 Tulsi will also be speaking at this @TPUSA Peoples Convention, on June 15th~ ☄  
   Media: 1 photo  
   (In reply thread to another post)
 

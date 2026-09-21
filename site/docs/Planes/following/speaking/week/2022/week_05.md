@@ -738,7 +738,7 @@ Here is every post returned across all tool calls that matched the criteria (inc
 - **[post:16]** ID: 1487553308881530881  
   Author: Attorney General Ken Paxton (@KenPaxtonTX)  
   Timestamp: Sat, 29 Jan 2022 22:28:40 GMT  
-  Content: I’m speaking LIVE at the #TrumpRallyTX in Conroe, Texas at 5pm CST. Tune in here ⬇️  
+  Content: I’m speaking LIVE at the #TrumpRallyTX in Conroe, Texas at 5pm CST. Tune in here ⬇  
   Engagement: Likes=682, Reposts=114, Quotes=6, Replies=76, Bookmarks=2, Views=N/A  
   (Speaking at Trump rally; unrelated to TPUSA/Charlie Kirk.)
 
@@ -820,7 +820,7 @@ Here is every post returned across all tool calls that matched the criteria (inc
   (Mentions rally/Trump speaking; unrelated to TPUSA/Charlie Kirk in week.)
 
 - **[post:31]** ID: 1489364450930937856  
-  Author: 🐢Mitch McConnells Pirate Turtle™️ 🐢 (@Mitch_Mc_Turtle)  
+  Author: 🐢Mitch McConnells Pirate Turtle™ 🐢 (@Mitch_Mc_Turtle)  
   Timestamp: Thu, 03 Feb 2022 22:25:30 GMT  
   Content: Sexual anarchy for Charlie would be a woman having an orgasm. An event he has never experienced.  
   (Critical mention of Charlie Kirk; no event.)

@@ -291,7 +291,7 @@ Here is every post retrieved (full, unedited content; sorted by tool results for
 
 - [post:10] @charliekirk11 (Thu, 24 Jul 2025 15:54:09 GMT): "Hulk Hogan was a genuine, uniquely American creation. Fearlessly original. Flawed but unbowed. He had the courage to stand on his own principles, and he never stopped fighting for his country. An American icon. He will be missed." (includes video media)
 
-- [post:11] @charliekirk11 (Thu, 24 Jul 2025 14:52:14 GMT): "🚨DNI Tulsi Gabbard will be LIVE on The Charlie Kirk Show today at 12:30PM ET. Watch it here on 𝕏 or Rumble ⬇️ https://rumble.com/CharlieKirk Subscribe to The Charlie Kirk Show ⬇️ https://podcasts.apple.com/us/podcast/the-charlie-kirk-show/id1460600818" (includes photo media)
+- [post:11] @charliekirk11 (Thu, 24 Jul 2025 14:52:14 GMT): "🚨DNI Tulsi Gabbard will be LIVE on The Charlie Kirk Show today at 12:30PM ET. Watch it here on 𝕏 or Rumble ⬇ https://rumble.com/CharlieKirk Subscribe to The Charlie Kirk Show ⬇ https://podcasts.apple.com/us/podcast/the-charlie-kirk-show/id1460600818" (includes photo media)
 
 - [post:12] @charliekirk11 (Thu, 24 Jul 2025 00:10:00 GMT): "These are citical executive orders. This ensures that just like the modern economic order was built upon the US financial system, the future of AI will be built upon American AI models — and they won't be woke. Difficult to overstate just how critical this could prove to the future of humanity." (quoted post about Trump AI executive orders; includes video media)
 

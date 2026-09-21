@@ -457,7 +457,7 @@ Search twitter and x.com posts for where Charlie Kirk or TPUSA has public speaki
   Author: TPUSA Faith (@tpusafaith)  
   Timestamp: Fri, 04 Aug 2023 19:35:57 GMT  
   Engagement: Likes=15, Reposts=1, Quotes=0, Replies=1, Bookmarks=1, Views=754  
-  Quoted Post: Sean Feucht (@seanfeucht) – "It’s was comical to watch these pathetic protestors in the Pacific Northwest squirm while witnessing a church that would not be bullied, silenced or backed into a corner. Thousands upon thousands showed up to worship God with boldness and passion! A new season in America⚡️🔥🙏🏽" (with 3 photos)  
+  Quoted Post: Sean Feucht (@seanfeucht) – "It’s was comical to watch these pathetic protestors in the Pacific Northwest squirm while witnessing a church that would not be bullied, silenced or backed into a corner. Thousands upon thousands showed up to worship God with boldness and passion! A new season in America⚡🔥🙏🏽" (with 3 photos)  
   Content: "Comment below if you have attended any of our Kingdom to The Capitol tour stops & what state it was. 🙌🏼"
 
 - **Post ID: 1687104714004148224** (mentions Kirk Cameron event on 2023-08-05, overlapping TPUSA-adjacent conservative circles)  

@@ -500,8 +500,8 @@ Search twitter and x.com posts for where Charlie Kirk or TPUSA has public speaki
   (Mentions ongoing #KingdomtotheCapitol tour with Sean Feucht.)
 
 - **[post:25]** (2023-07-26, TPUSA Faith @tpusafaith):  
-  "👑 TWO DAYS before our next Kingdom to The Capitol tour stops ✝️  
-  COMING UP! ⬇️  
+  "👑 TWO DAYS before our next Kingdom to The Capitol tour stops ✝  
+  COMING UP! ⬇  
   📍Olympia, Washington (7/28)  
   📍Salem, Oregon (7/29)  
   📍Boise, Idaho (7/30)  

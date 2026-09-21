@@ -306,14 +306,14 @@ I used the exact keyword search criteria across general queries, @charliekirk11,
   Content: Charlie Kirk already has spoken out saying TP USA will be out in full force at every deep red state putting in MAGA senators on the ballots
 
 - **Post ID: 1857912576794931685**  
-  Author: God is King ✝️ • Stand for truth • 🙏 (@hewho_steven)  
+  Author: God is King ✝ • Stand for truth • 🙏 (@hewho_steven)  
   Timestamp: Sat, 16 Nov 2024 22:24:11 GMT  
   Likes: 0 | Reposts: 0 | Quotes: 0 | Replies: 0 | Bookmarks: 0 | Views: 8  
   (Quote of unrelated post)  
   Content: That why @UKLabour will be voted out in next year general election.  They are done, finished.
 
 - **Post ID: 1857908831654760873**  
-  Author: God is King ✝️ • Stand for truth • 🙏 (@hewho_steven)  
+  Author: God is King ✝ • Stand for truth • 🙏 (@hewho_steven)  
   Timestamp: Sat, 16 Nov 2024 22:09:18 GMT  
   Likes: 1 | Reposts: 0 | Quotes: 0 | Replies: 0 | Bookmarks: 0 | Views: 10  
   (Quote of unrelated post)  
@@ -422,7 +422,7 @@ I used the exact keyword search criteria across general queries, @charliekirk11,
   Timestamp: Tue, 12 Nov 2024 21:34:44 GMT  
   Likes: 5909 | Reposts: 1135 | Quotes: 20 | Replies: 176 | Bookmarks: 38 | Views: 167431  
   Media: Yes (1 photo)  
-  Content: ‼️See you Saturday, Luzerne County, PA‼️ While we are taking a victory lap, we’ll also be sharing plans for 2025, 2026, & beyond. November 16: Luzerne County 23: Pike County 24: Northampton County December 11: Long Island, NY 18: Luzerne County Board of Elections 🐘
+  Content: ‼See you Saturday, Luzerne County, PA‼ While we are taking a victory lap, we’ll also be sharing plans for 2025, 2026, & beyond. November 16: Luzerne County 23: Pike County 24: Northampton County December 11: Long Island, NY 18: Luzerne County Board of Elections 🐘
 
 - **Post ID: 1857864954709160263**  
   Author: Mark R. Levin (@marklevinshow)  

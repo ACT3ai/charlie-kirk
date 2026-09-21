@@ -408,7 +408,7 @@ I used keyword searches for terms like "event", "speaking", "speak", "tour", "ap
 
 - **Post [post:15] by @charliekirk11 (Tue, 09 Apr 2024 23:16:48 GMT)**:  
   "🚨It’s less than an hour until our Winner-Take-All rally in Omaha, Nebraska. If you live there, be there: It’s the most important rally you will attend this year.  
-  Everyone else, tune in to watch at 7 pm CT ⬇️⬇️"  
+  Everyone else, tune in to watch at 7 pm CT ⬇⬇"  
   (Media: None in this post; engagement high with replies.)  
   **Thread context [post:30]**: Replies discuss the event positively; no new event details.
 
@@ -442,7 +442,7 @@ I used keyword searches for terms like "event", "speaking", "speak", "tour", "ap
 - **Post [post:16] by @charliekirk11 (Mon, 08 Apr 2024 14:02:42 GMT)**:  
   "🚨🚨BREAKING🚨🚨  
   @tpaction is thrilled to announce PRESIDENT DONALD J. TRUMP as our confirmed headline speaker at THE PEOPLE’S CONVENTION 2024 - the summer convention where everyone is invited.  
-  There is no better time than now to register for the biggest event of the summer! ⬇️⬇️  
+  There is no better time than now to register for the biggest event of the summer! ⬇⬇  
   https://t.co/mtpiEQq9wP  
   #PEOPLES2024"  
   (Media: Promotional graphic.)  

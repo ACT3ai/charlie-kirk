@@ -259,7 +259,7 @@ Search twitter and x.com posts for where Charlie Kirk or TPUSA has public speaki
 
 - [post:12] @RogerR54116409 (Fri, 19 Jan 2024 21:43:24 GMT, with photo): "Similarly to Biden own being afraid to speak out against her abuser @potus." (Conversation ID: 1748041691896897957; Likes=0, Reposts=0, Quotes=0, Replies=1, Bookmarks=0, Views=33)
 
-- [post:13] @unsilencedusa (Fri, 19 Jan 2024 20:34:38 GMT, with 4 photos): "Special thanks to the Broward Young Conservatives for allowing me to speak about @TPUSA ‘s efforts in Broward County and how together we can recruit and create more @tpusastudents chapters across South Florida! 🇺🇸☀️🇺🇸" (Conversation ID: 1748443871514669243; Likes=3, Reposts=3, Quotes=0, Replies=0, Bookmarks=0, Views=147)
+- [post:13] @unsilencedusa (Fri, 19 Jan 2024 20:34:38 GMT, with 4 photos): "Special thanks to the Broward Young Conservatives for allowing me to speak about @TPUSA ‘s efforts in Broward County and how together we can recruit and create more @tpusastudents chapters across South Florida! 🇺🇸☀🇺🇸" (Conversation ID: 1748443871514669243; Likes=3, Reposts=3, Quotes=0, Replies=0, Bookmarks=0, Views=147)
 
 - [post:14] @maggiefuchs9 (Fri, 19 Jan 2024 18:45:08 GMT, with 4 photos): "The spring org fair at UofL was a success!! Can’t wait to see all the TPUSA chapter achieves on campus this year!" (Conversation ID: 1748416317353328711; Likes=0, Reposts=0, Quotes=0, Replies=0, Bookmarks=0, Views=69)
 
@@ -313,7 +313,7 @@ Search twitter and x.com posts for where Charlie Kirk or TPUSA has public speaki
 
 - [post:35] @SteveDeaceShow (Sat, 20 Jan 2024 13:56:37 GMT): "If you're in the Nashville area, or in Tennessee at all and don't mind the drive, I will be speaking at "Freedom First" for Tennessee Stands on February 3rd. Hope to see y'all there." (Conversation ID: 1748706096636699052; Likes=255, Reposts=42, Quotes=1, Replies=16, Bookmarks=1, Views=27058)
 
-- [post:36] @seanfeucht (Mon, 15 Jan 2024 16:50:52 GMT, with video): "From the US Capitol rotunda to every Capitol across the nation! 🇺🇸🙏🏽✈️ It all begins next month gaining “Air Superiority” Feb 3 // Honolulu, Hawaii April 5 // Tallahassee, Florida April 6 // Columbia, South Carolina April 7 // Frankfort, Kentucky May 24 // Charleston, West Virginia May 25 // Boston, Massachusetts May 26 // Augusta, Maine #LetUsWorship #KingdomToTheCapitol" (Conversation ID: 1746938010317304268; Likes=372, Reposts=75, Quotes=2, Replies=10, Bookmarks=2, Views=7201)
+- [post:36] @seanfeucht (Mon, 15 Jan 2024 16:50:52 GMT, with video): "From the US Capitol rotunda to every Capitol across the nation! 🇺🇸🙏🏽✈ It all begins next month gaining “Air Superiority” Feb 3 // Honolulu, Hawaii April 5 // Tallahassee, Florida April 6 // Columbia, South Carolina April 7 // Frankfort, Kentucky May 24 // Charleston, West Virginia May 25 // Boston, Massachusetts May 26 // Augusta, Maine #LetUsWorship #KingdomToTheCapitol" (Conversation ID: 1746938010317304268; Likes=372, Reposts=75, Quotes=2, Replies=10, Bookmarks=2, Views=7201)
 
 - [post:37] (Empty/no text content; no additional details)
 
@@ -329,7 +329,7 @@ Search twitter and x.com posts for where Charlie Kirk or TPUSA has public speaki
 
 - [post:42] @ameribased64702 (Sat, 20 Jan 2024 04:25:23 GMT): "You really are a piece of work. Playing bend over with the Dems in doing another Continuing Resolution with nothing for the border while you demonstrate fake piety at the March for Life event. Like Charlie Kirk said, you’re gutless and phony. And worthless. #LittleJohnson" (Likes=0, Reposts=0, Quotes=0, Replies=0, Bookmarks=0, Views=5)
 
-- [post:43] @MonicaPaigeTV (Fri, 19 Jan 2024 18:59:45 GMT, with photo): "Honored to meet and exclusively interview @KristanHawkins of @StudentsforLife ♥️ What an absolute pleasure!! Thank you for everything you do to protect the unborn, and educate women and girls about the beauty and value of LIFE! @March_for_Life" (Likes=13, Reposts=3, Quotes=0, Replies=1, Bookmarks=0, Views=585)
+- [post:43] @MonicaPaigeTV (Fri, 19 Jan 2024 18:59:45 GMT, with photo): "Honored to meet and exclusively interview @KristanHawkins of @StudentsforLife ♥ What an absolute pleasure!! Thank you for everything you do to protect the unborn, and educate women and girls about the beauty and value of LIFE! @March_for_Life" (Likes=13, Reposts=3, Quotes=0, Replies=1, Bookmarks=0, Views=585)
 
 - [post:44] @charliekirk11 (Fri, 19 Jan 2024 18:37:09 GMT, with photo): "Before speaking at the March for Life..." (Full text as in post 15/27 above)
 

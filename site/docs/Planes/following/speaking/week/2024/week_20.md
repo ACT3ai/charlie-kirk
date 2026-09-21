@@ -563,7 +563,7 @@ All matching or closely related posts are included in full (no summarization or 
   *Note: Related to the same UW campus activity around the May 7 Charlie Kirk event.*
 
 - **[post:46]** (2024-05-13 23:36:42 GMT, @tpusafaith):  
-  "✝️ "The cross has crushed the head and the skull of the serpent." - @Jentezen 👑  
+  "✝ "The cross has crushed the head and the skull of the serpent." - @Jentezen 👑  
   Jentezen Franklin will be speaking at West Palm Beach, FL for THE BELIEVERS SUMMIT on July 26-28th.  
   🎟 $20 Early bird registration ends soon! Don't miss out! 😱 https://www.tpusafaithevents.com/?utm_source=digital+marketing&utm_medium=social+media&utm_campaign=summit_campaign&utm_term=2024"  
   (Media: 1 video + 1 photo. Engagement: 7 likes, 2 reposts, 1 quote, 0 replies, 0 bookmarks, 868 views.)  
@@ -571,9 +571,9 @@ All matching or closely related posts are included in full (no summarization or 
 
 - **[post:47]** (2024-05-13 17:55:56 GMT, @tpusafaith):  
   "🎉 Save the date for THE BELIEVERS SUMMIT, happening in West Palm Beach, FL, on July 26-28th.  
-  ⚡️ The Believers Summit is more than an event; it's a call to action for Christians across America. Our mission is to empower believers to boldly live out their faith in every aspect of life, including the public square.  
-  ⚡️ Attendees will leave with practical knowledge and strategies to live out their faith boldly and counteract prevailing 'woke' narratives with grace, truth, and conviction, rooted in the Gospel.  
-  ⚡️ Get ready for an unforgettable experience with an incredible lineup of speakers! Stay tuned for more announcements.  
+  ⚡ The Believers Summit is more than an event; it's a call to action for Christians across America. Our mission is to empower believers to boldly live out their faith in every aspect of life, including the public square.  
+  ⚡ Attendees will leave with practical knowledge and strategies to live out their faith boldly and counteract prevailing 'woke' narratives with grace, truth, and conviction, rooted in the Gospel.  
+  ⚡ Get ready for an unforgettable experience with an incredible lineup of speakers! Stay tuned for more announcements.  
   🎟 Hurry up and claim an early bird registration for just $20!"  
   (Media: 1 video. Engagement: 128 likes, 32 reposts, 4 quotes, 15 replies, 5 bookmarks, 48,809 views.)  
   *Note: Same July 2024 TPUSA Faith event promotion.*

@@ -636,7 +636,7 @@ Search twitter and x.com posts for where Charlie Kirk or TPUSA has public speaki
 - **[post:38]** ID: 1826810627802767678  
   Author: Rachel Farmer - @rachelfarm04  
   Timestamp: Fri, 23 Aug 2024 02:36:08 GMT  
-  Content: Incredible meeting tonight with a local women’s conservative group 👏 Loved speaking about the impact @TPUSA’s #YWLS2024 had on students alongside @diana_s_here & @faith_knaus 🩷 YWLS is life-changing and has empowered our students to make a difference on campus this fall! ⚡️🎀  
+  Content: Incredible meeting tonight with a local women’s conservative group 👏 Loved speaking about the impact @TPUSA’s #YWLS2024 had on students alongside @diana_s_here & @faith_knaus 🩷 YWLS is life-changing and has empowered our students to make a difference on campus this fall! ⚡🎀  
   (Media: 2 photos)  
   Engagement: Likes=20, Reposts=13, Quotes=0, Replies=0, Bookmarks=0, Views=606
 

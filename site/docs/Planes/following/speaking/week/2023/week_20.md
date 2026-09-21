@@ -690,7 +690,7 @@ Search twitter and x.com posts for where Charlie Kirk or TPUSA has public speaki
   Timestamp: Fri, 19 May 2023 21:44:55 GMT  
   Content: Such an inspiring lineup of women who were born “for such a time as this” 💕  
   There are still a few spots available to hear them speak at #YWLS2023 🪩  
-  Register now ➡️ https://t.co/ukzmjDuffj  
+  Register now ➡ https://t.co/ukzmjDuffj  
   (Media: photo of lineup)  
   Engagement: Likes=8, Reposts=5, Quotes=0, Replies=0, Bookmarks=0, Views=536
 
@@ -705,7 +705,7 @@ Search twitter and x.com posts for where Charlie Kirk or TPUSA has public speaki
   Author: Maggie Fuchs (@maggiefuchs9)  
   Timestamp: Fri, 19 May 2023 20:37:28 GMT  
   Content: Learn how to be a strong woman and look great while doing it at #YWLS2023 💅🏻💪🏼  
-  Learn more ➡️ https://t.co/isrD1TOHCL  
+  Learn more ➡ https://t.co/isrD1TOHCL  
   (Media: photo of promo)  
   Engagement: Likes=4, Reposts=2, Quotes=0, Replies=0, Bookmarks=0, Views=210
 

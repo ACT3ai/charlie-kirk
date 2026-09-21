@@ -631,7 +631,7 @@ Many results reference **past or recent TPUSA chapter events** (e.g., tabling, h
 
 ### Keyword Search Results (Broad event/speaking terms + date filter)
 - **[post:0]** ID: 1578171593033158657  
-  Author: Just Meg 🇺🇸🙏🏻❤️ (@Meggiebee59)  
+  Author: Just Meg 🇺🇸🙏🏻❤ (@Meggiebee59)  
   Timestamp: Thu, 06 Oct 2022 23:53:23 GMT  
   Engagement: Likes=0, Reposts=0, Quotes=0, Replies=0, Bookmarks=0, Views=N/A  
   Content: There will be false prophets. We have to remain vigilant. 🙏🏻🙏🏻🙏🏻🇺🇸🇺🇸🇺🇸

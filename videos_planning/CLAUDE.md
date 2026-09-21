@@ -35,7 +35,9 @@ HIERARCHY_FILE is file {VIDEOS_DIR}/videos.yaml
 VIDEO_MANIFEST is file {VIDEOS_DIR}/manifest.yaml
 VIDEO_INDEX_MD is file {VIDEOS_DIR}/videos.md
 
-CK_FILE is file {ROOT_DIR}/Charlie_Kirk.txt
+CK_FILE is file ~/BGit/all/politics/charlie_kirk/Charlie_Kirk.txt
+  (Real file. Moved 2026-09-19. ~/BGit/Bryan_git/charlie-kirk/Charlie_Kirk.txt is now a symlink to it —
+   use that only to verify the location; always read and write the real path.)
 
 SITE_DIR dir is {ROOT_DIR}/site
 

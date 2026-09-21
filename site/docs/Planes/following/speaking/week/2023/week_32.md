@@ -376,7 +376,7 @@ Search twitter and x.com posts for where Charlie Kirk or TPUSA has public speaki
 - **Post ID: 1690143188194058242**  
   Author: Berkley Corey (@berkenstocks99)  
   Timestamp: Fri, 11 Aug 2023 23:28:32 GMT  
-  Content: Such a phenomenal time tabling at the @TPUSA Young Jewish Leadership Summit and hearing @DennisPrager speak! 🙌🏻✨❤️🇺🇸  
+  Content: Such a phenomenal time tabling at the @TPUSA Young Jewish Leadership Summit and hearing @DennisPrager speak! 🙌🏻✨❤🇺🇸  
   #dennisprager #yjls2023 #tpusa #turningpointusa #yjls #jewishsummit #youngjewishleadershipsummit #prageru #losangeles #charliekirk  
   Engagement: Likes=149, Reposts=26, Quotes=1, Replies=11, Bookmarks=2, Views=47907  
   Media: 4 photos (tabling/event scenes at the summit).  
@@ -450,7 +450,7 @@ Search twitter and x.com posts for where Charlie Kirk or TPUSA has public speaki
 - **Post ID: 1689782188688957441**  
   Author: Justine Brooke Murray (@Justine_Brooke)  
   Timestamp: Thu, 10 Aug 2023 23:34:03 GMT  
-  Content: Looking forward to speaking at @TPUSA’s Young Jewish Leadership Summit tomorrow! See you in Commiefornia! ✈️  
+  Content: Looking forward to speaking at @TPUSA’s Young Jewish Leadership Summit tomorrow! See you in Commiefornia! ✈  
   Engagement: Likes=7, Reposts=0, Quotes=0, Replies=1, Bookmarks=0, Views=517  
   (Pre-event speaker post for YJLS; confirms Aug 11 timing.)
 

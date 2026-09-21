@@ -58,9 +58,9 @@ All items #176 through #201 proposed in this analysis have been incorporated int
 
 ---
 
-## [Butch Hibbs](/People/butch-hibbs) & Exploding Microphone
+## Pocket Object Records & Heber City Flight
 
-**#190: Butch Hibbs at UVU Event** — ADDED (Law item #191 in all four laws)
+**#190: Object in [Butch Hibbs](/People/butch-hibbs)'s Pocket at UVU Event** (records only — no claim that it is a microphone receiver, that he knew anything in advance, or that he was involved) — ADDED (Law item #191 in all four laws)
 
 **#191: Heber City to Nashville Flight (August 25, 2025)** — ADDED (Law item #192 in all four laws)
 
@@ -119,7 +119,7 @@ All items #176 through #201 proposed in this analysis have been incorporated int
 
 Citizen investigators and legislative advocates on X argue that ordinary FOIA and criminal discovery will not force full production in the Charlie Kirk case, citing **JFK Records Act failures** (agencies missing decades of deadlines; reports of large unreviewed FBI caches) and the **Epstein Files Transparency Act** pattern of partial dumps without a Special Master with teeth. Accounts such as **[@HolonCitizen](/Influencers/x/holoncitizen)** have promoted a four-law package (FBI/DOJ disclosure, IC disclosure, mandatory investigation, trusted civilian investigators) and named figures including Candace Owens, Dave Smith, Tucker Carlson, Ian Carroll, and others as proposed **trusted investigators** under Law 4-style designs — a **policy proposal**, not an enacted statute.
 
-Parallel media clips recirculated by accounts such as **[@FurkanGozukara](/Influencers/x/furkangozukara)** claim **Candace Owens** has alleged federal discovery obstruction (FBI/ATF files; director-level blocks). Counter-posts argue the Robinson case already has DNA, video, and confession-note material unlike JFK and therefore needs no special act. This page records both the **demand for forced disclosure** and the **official-narrative pushback** so readers can judge whether Schedule A-style lists (FBI 302s, cell data, aircraft, drones, ballistics, AV SD cards) match what X investigators say remains withheld.
+Parallel media clips recirculated by accounts such as **[@FurkanGozukara](/Influencers/x/furkangozukara)** claim **Candace Owens** has alleged federal discovery obstruction (FBI/ATF files; director-level blocks). Counter-posts argue the Robinson case already has DNA, video, and confession-note material unlike JFK and therefore needs no special act. Investigators answer that none of that material shows how Charlie died: the ATF could not tie the autopsy fragment to the rifle, and the physical evidence points to [an explosive at his microphone](/Mic/overview), not the government's .30-06 account. This page records both the **demand for forced disclosure** and the **official-narrative pushback** so readers can judge whether Schedule A-style lists (FBI 302s, cell data, aircraft, drones, ballistics, AV SD cards) match what X investigators say remains withheld.
 
 Related public pages: [Fix overview](/Fix/overview), [laws landing](/laws), Discovery, [explain all four laws](/laws/explain/all/overview).
 
@@ -157,11 +157,6 @@ Related public pages: [Fix overview](/Fix/overview), [laws landing](/laws), Disc
 </figure>
 
 <figure className="ck-placed-figure">
-  <a href="/Photos/Shot_Position/Real_Shooter/Img_Photo_e2f78b"><img className="ck-placed-img" src="/img/evidence/e2f78b2b21e2bce31e4b5dcb0dbc9a7ee69ad0d34ec5f0dc61b39818e6b52724.jpg" alt="This image is a four-panel collage with an additional small inset panel at the bottom center, depicting a political or public event." data-cid="QmSg1g1bFFYUtLcUVvVEpWHfqjfcYQ1K9V4wFYkT9Zg4YE" loading="lazy" /></a>
-  <figcaption className="ck-placed-caption">This image is a four-panel collage with an additional small inset panel at the bottom center, depicting a political or public event. <a href="/Photos/Shot_Position/Real_Shooter/Img_Photo_e2f78b">Full write-up &rarr;</a></figcaption>
-</figure>
-
-<figure className="ck-placed-figure">
   <a href="/Photos/Patsy/Img_Glove_Suit_Man_fa8211"><img className="ck-placed-img" src="/img/evidence/fa82112c9dc71375bdbe2372bf8bb42420697d6e416161137738c8d7e006576f.jpg" alt="This is a low-resolution vertical screenshot from a mobile phone, likely taken from a social media platform like TikTok, showing a group of young men outdoors on a paved walkway." data-cid="QmY41p2GrwTB9NnD61AFVAouGnAgo7ZCsavn8t2gBmkvBG" loading="lazy" /></a>
   <figcaption className="ck-placed-caption">This is a low-resolution vertical screenshot from a mobile phone, likely taken from a social media platform like TikTok, showing a group of young men outdoors on a paved walkway. <a href="/Photos/Patsy/Img_Glove_Suit_Man_fa8211">Full write-up &rarr;</a></figcaption>
 </figure>
@@ -192,29 +187,13 @@ Related public pages: [Fix overview](/Fix/overview), [laws landing](/laws), Disc
 </figure>
 
 <figure className="ck-placed-figure">
-  <a href="/Photos/UVU_Venue/Img_Photo_eadb7f"><img className="ck-placed-img" src="/img/evidence/eadb7f55947b27d4d0e284a6205007fdcb9e3c74a6439344d67e9c16a94e86e9.jpg" alt="This eye-level, wide-angle daytime photograph captures an outdoor landscaped amphitheater on a university campus with terraced grassy seating in the foreground." data-cid="Qmd5H2mx1BFoXavCx19ui7iwtViSMHNDka3mkUXmvcUKVt" loading="lazy" /></a>
-  <figcaption className="ck-placed-caption">This eye-level, wide-angle daytime photograph captures an outdoor landscaped amphitheater on a university campus with terraced grassy seating in the foreground. <a href="/Photos/UVU_Venue/Img_Photo_eadb7f">Full write-up &rarr;</a></figcaption>
-</figure>
-
-<figure className="ck-placed-figure">
   <a href="/Photos/UVU_Venue/Img_Photo_d5385c"><img className="ck-placed-img" src="/img/evidence/d5385c2f98ec5ea1b8e0388f4942141e356a9fbaa613fb749723a291307df22a.webp" alt="This high-angle, wide-shot photograph captures a section of the Utah Valley University (UVU) campus during the daytime, showcasing a terraced grassy amphitheater in the…" data-cid="QmTZyuYH7esrrh3rbZyMxZ5JjvXQi3aQorWNS6rMJk1T2Q" loading="lazy" /></a>
   <figcaption className="ck-placed-caption">This high-angle, wide-shot photograph captures a section of the Utah Valley University (UVU) campus during the daytime, showcasing a terraced grassy amphitheater in the foreground. <a href="/Photos/UVU_Venue/Img_Photo_d5385c">Full write-up &rarr;</a></figcaption>
-</figure>
-
-<figure className="ck-placed-figure">
-  <a href="/Photos/Charlie_Kirk/Text_Msgs/Img_Candace_7ccdcc"><img className="ck-placed-img" src="/img/evidence/7ccdcce95f47eb2b3dac926436481b3ad67e0e2415e5b24109dbd8aec9eea427.jpg" alt="This is a digital screenshot of an iOS iMessage text conversation on a mobile phone." data-cid="QmX21ve5xxtTLRLNZEQn6TB9ifPWZSHpvh4uMYgq4NMRpP" loading="lazy" /></a>
-  <figcaption className="ck-placed-caption">This is a digital screenshot of an iOS iMessage text conversation on a mobile phone. <a href="/Photos/Charlie_Kirk/Text_Msgs/Img_Candace_7ccdcc">Full write-up &rarr;</a></figcaption>
-</figure>
-
-<figure className="ck-placed-figure">
-  <a href="/Photos/Table_And_Charlie/Table_More/Img_Photo_2d6725"><img className="ck-placed-img" src="/img/evidence/2d6725814b3ca5370a1cbcaaa9fdd676adb5efd5686662296d36356c89189580.jpg" alt="This image is a composite collage of four distinct panes, featuring video stills and close-up photographs from an outdoor event, likely a political rally or public gathering." data-cid="QmPP13euHFf79hh7qPUWjB45r1ZtZ4CJz8qHGX8DCdVC2m" loading="lazy" /></a>
-  <figcaption className="ck-placed-caption">This image is a composite collage of four distinct panes, featuring video stills and close-up photographs from an outdoor event, likely a political rally or public gathering. <a href="/Photos/Table_And_Charlie/Table_More/Img_Photo_2d6725">Full write-up &rarr;</a></figcaption>
 </figure>
 
 </div>
 
 {/* CK_PLACED_IMAGES_END */}
-
 {/* CK_PLACED_VIDEOS_START — generated, do not hand-edit */}
 
 ## Videos

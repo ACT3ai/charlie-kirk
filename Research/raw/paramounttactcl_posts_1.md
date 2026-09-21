@@ -79,8 +79,6 @@ Paramount Tactical is headed to UVU to seek truth for Charlie Kirk. [Source: X P
 https://x.com/paramounttactcl/status/1975917495375777892]
 There is proof that people are being lied to about whether Charlie Kirk was still alive after the 
 shooting. [Source: X Post. https://x.com/paramounttactcl/status/1975233862558167161]
-A live discussion on whether Charlie Kirk's security team was involved featured special guest 
-Bill Harris. [Source: X Post. https://x.com/paramounttactcl/status/1974972912982757497]
 Jason Goodman used tactics and language against Paramount Tactical similar to those that 
 got Charlie Kirk killed, putting the family in danger. [Source: X Post. 
 https://x.com/paramounttactcl/status/1974702583794090056]

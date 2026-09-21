@@ -8,8 +8,12 @@ AIATT_DIR dir is {COURT_DIR}/ai_attorney
 COURT_CHARTER is file {COURT_DIR}/CLAUDE.md
 ROOT_CHARTER is file {ROOT_DIR}/CLAUDE.md
 ASSESS_MANUAL is file {ROOT_DIR}/prompts/Assess_Manual.md
-CK_FILE is file {ROOT_DIR}/Charlie_Kirk.txt
-CK_INBOX is file {ROOT_DIR}/Charlie_Kirk_AI_Inbox.txt
+CK_FILE is file ~/BGit/all/politics/charlie_kirk/Charlie_Kirk.txt
+  (Real file. Moved 2026-09-19. ~/BGit/Bryan_git/charlie-kirk/Charlie_Kirk.txt is now a symlink to it —
+   use that only to verify the location; always read and write the real path.)
+CK_INBOX is file ~/BGit/all/politics/charlie_kirk/Charlie_Kirk_AI_Inbox.txt
+  (Real file. Moved 2026-09-19. ~/BGit/Bryan_git/charlie-kirk/Charlie_Kirk_AI_Inbox.txt is now a symlink to it —
+   use that only to verify the location; always read and write the real path.)
 
 PAGES_CSV is file {ROOT_DIR}/pages.csv
 LEVEL_2_CSV is file {ROOT_DIR}/level_2.csv

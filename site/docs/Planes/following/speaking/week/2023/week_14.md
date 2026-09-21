@@ -517,7 +517,7 @@ Search twitter and x.com posts for where Charlie Kirk or TPUSA has public speaki
   TPUSA is working to identify and hold accountable those responsible.  
   Content (related): Former NCAA champion and women’s rights advocate Riley Gaines was speaking to students at San Francisco State University last night when a mob of violent trans activists flooded the location where the event was taking place and assaulted her @riley_gaines_  
 
-  Read more ⬇️  
+  Read more ⬇  
   (Confirms the SFSU TPUSA event details.)
 
 - **[post:44] and [post:54] (and duplicates)**  

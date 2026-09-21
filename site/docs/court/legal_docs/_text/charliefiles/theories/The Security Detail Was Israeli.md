@@ -13,7 +13,7 @@ tags: [theory, security, israel]
 **Verdict: UNSUPPORTED / FALSE** — **no documented member of the detail is Israeli or ex-Mossad/IDF.** Every named person has a U.S. background, and the security chief denies it flatly.
 
 ## What fuels it
-AI-generated and blog speculation, fused with the day's real security failures and [[Kirk Was Leaving the Pro-Israel Cause|Kirk's donor text]] into an "Israel ordered the hit" narrative. Tellingly, one widely-cited blog **admits it is only "surmising"** and has **no Kirk quote**; the **Grok/AI replies** people cite as proof do **not actually name a single Israeli** on the team.
+AI-generated and blog speculation, fused with the day's real security failures and [[Kirk Was Leaving the Pro-Israel Cause|Kirk's donor text]] into an Israel narrative. Tellingly, one widely-cited blog **admits it is only "surmising"** and has **no Kirk quote**; the **Grok/AI replies** people cite as proof do **not actually name a single Israeli** on the team.
 
 ## Directly: were ANY of them Israeli / ex-Mossad / IDF?
 **No documented member — none named by any source.** The detail and its firm:
@@ -31,11 +31,11 @@ On the **[[2025-11-17 - Brian Harpole on the Shawn Ryan Show|Shawn Ryan Show]] (
 Separately, former **Mossad director Yossi Cohen** publicly denied any Mossad role in the killing.
 
 ## The kernel
-There *was* a private detail with **real, documented failures** — an unsecured rooftop, staffing gaps. That is a **competence** question, not an Israel question. See [[Kirks Security Detail]] and [[Security Knew It Was Coming]].
+There *was* a private detail with **real, documented failures** — an unsecured rooftop, staffing gaps. That is a **competence** question, not an Israel question. See [[Kirks Security Detail]].
 
 ## Bottom line
-Zero documented support, contradicted by the people actually named and the chief's flat denial, and originating in **AI output and blog "surmising"** inside a broader antisemitic narrative. Harpole has now **sued Candace Owens for defamation** over the adjacent "he helped coordinate it" theory — see [[Brian Harpole]].
+Zero documented support, contradicted by the people actually named and the chief's flat denial, and originating in **AI output and blog "surmising"** inside a broader antisemitic narrative. Harpole has now **sued Candace Owens for defamation** — see [[Brian Harpole]].
 
 ---
-**Related:** [[Kirks Security Detail]] · [[Brian Harpole]] · [[Security Knew It Was Coming]] · [[Erika Kirk and the Security Team]] · [[Kirk Was Leaving the Pro-Israel Cause]]
+**Related:** [[Kirks Security Detail]] · [[Brian Harpole]] · [[Erika Kirk and the Security Team]] · [[Kirk Was Leaving the Pro-Israel Cause]]
 **Sources (primary):** [Harpole's on-record denial — Shawn Ryan Show #254 (via IBTimes)](https://www.ibtimes.co.uk/charlie-kirk-security-chief-rejects-outrageous-israel-mossad-claims-i-am-american-1756017) · [Crossroads Report — the team's documented backgrounds](https://crossroadsreport.substack.com/p/focus-on-charlie-kirks-security-team) · [[Brian Harpole]] (the defamation suit) · [[Sources]]

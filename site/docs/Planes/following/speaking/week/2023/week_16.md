@@ -386,7 +386,7 @@ Search twitter and x.com posts for where Charlie Kirk or TPUSA has public speaki
 - **Post ID: 1648475006039658496** (reply in thread)  
   **Author:** Turning Point USA (@TPUSA)  
   **Timestamp:** Tue, 18 Apr 2023 23:54:03 GMT  
-  **Content:** See you there, Lynn❤️🇺🇸  
+  **Content:** See you there, Lynn❤🇺🇸  
   **Engagement:** Likes=12, Reposts=2, Quotes=0, Replies=1, Bookmarks=0, Views=602  
   *(Reply in a thread about the SFSU event; no further context on dates/locations.)*
 

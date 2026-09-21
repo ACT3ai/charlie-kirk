@@ -19,7 +19,9 @@ PHOTOS_DIR dir is {DOCS_DIR}/Photos
 IMAGES_L2_PAGE is file {PHOTOS_DIR}/overview.mdx
 STATIC_IMG_DIR dir is {SITE_DIR}/static/img/evidence
 PAGES_CSV is file {ROOT_DIR}/pages.csv
-CK_FILE is file {ROOT_DIR}/Charlie_Kirk.txt
+CK_FILE is file ~/BGit/all/politics/charlie_kirk/Charlie_Kirk.txt
+  (Real file. Moved 2026-09-19. ~/BGit/Bryan_git/charlie-kirk/Charlie_Kirk.txt is now a symlink to it —
+   use that only to verify the location; always read and write the real path.)
 ASSESS_MANUAL is file {ROOT_DIR}/prompts/Assess_Manual.md
 
 MIRROR_DIR dir is ~/_Mirror/Politics/Charlie_Kirk_Mi
@@ -1260,7 +1262,7 @@ from, so no knowledge is lost even where a stage above already encodes it.
 * This prompt will often run multiple times, so it has to rewrite pages. The
   pages are often pre-existing, written earlier before additional data was
   there, and the run needs to read them in.
-* {CK_FILE} (~/BGit/Bryan_git/charlie-kirk/Charlie_Kirk.txt) is very
+* {CK_FILE} (~/BGit/all/politics/charlie_kirk/Charlie_Kirk.txt) is very
   important and must be read into the context window at the very start of the
   run. It is the knowledge needed to understand the entire Charlie Kirk
   assassination.

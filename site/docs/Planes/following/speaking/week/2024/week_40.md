@@ -584,13 +584,13 @@ I included **every matching post** returned by the searches (no summarization or
   Author: Rachel Farmer - @rachelfarm04  
   Content: 🚨CHAPEL HILL🚨  
   Don’t miss @charliekirk11 & @VivekGRamaswamy at UNC this October for @TPUSA’s You’re Being Brainwashed Tour! 📺🌀  
-  GET YOUR TICKETS ➡️ https://theturningpointtour.com/  
-  See YOU there‼️  
+  GET YOUR TICKETS ➡ https://theturningpointtour.com/  
+  See YOU there‼  
   (Media: photo; announces upcoming UNC event.)
 
 - **[post:60] ID: 1841832718583087423** (Thu, 03 Oct 2024 13:28:34 GMT)  
   Author: Shannon Stover - @sstover_  
-  Content: SO EXCITED to have @VivekGRamaswamy at Penn State University on 10/17!! ⚡️💥  
+  Content: SO EXCITED to have @VivekGRamaswamy at Penn State University on 10/17!! ⚡💥  
   You’re Being Brainwashed Tour Part 3 in Steel😵‍💫🤩  
   @TPUSA | @tpusastudents |@TpusaGreatLakes  
   (Media: photo; announces upcoming Penn State event with Vivek.)

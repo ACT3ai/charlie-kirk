@@ -223,7 +223,7 @@ Search twitter and x.com posts for where Charlie Kirk or TPUSA has public speaki
   **Media:** None
 
 - **Post ID: 1751382323776340003**  
-  **Author:** We Are Charlie Kirk R.I.P ☦️🙏 (@RogerR54116409)  
+  **Author:** We Are Charlie Kirk R.I.P ☦🙏 (@RogerR54116409)  
   **Timestamp:** Sat, 27 Jan 2024 23:10:59 GMT  
   **Content:** Biased court with direct ties to white house and its administration. The ruling will be overturned and EJC will held liable to DJT’s legal fees just as his last accuser.  
   **Engagement:** Likes=0, Reposts=0, Quotes=0, Replies=0, Bookmarks=0, Views=11  
@@ -339,7 +339,7 @@ Search twitter and x.com posts for where Charlie Kirk or TPUSA has public speaki
   **Author:** ✞🎀TrumpGirlOnFire 🔥 (@TrumpGirlOnFire)  
   **Timestamp:** Fri, 26 Jan 2024 15:37:44 GMT  
   **Content:** President Donald J. Trump to Deliver Remarks at Commit to Caucus Rally in Las Vegas, Nevada  
-  💃🕺LETS GO AMERICA 🗳️VOTE TRUMP!  
+  💃🕺LETS GO AMERICA 🗳VOTE TRUMP!  
   📌Sat, January 27, 2024   
           1:00 pm (US/Pacific)  
   #TrumpGirlOnFire 🔥 #Nevadacaucuses  

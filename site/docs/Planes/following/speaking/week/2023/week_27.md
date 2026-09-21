@@ -451,17 +451,17 @@ Search twitter and x.com posts for where Charlie Kirk or TPUSA has public speaki
   “If you will it - & work for it - you can win it.” @ScottPresler   
   @TurningPointACT   
   @TPUSA   
-  SEE THIS🇺🇸🇺🇸🇺🇸‼️⬇️"  
+  SEE THIS🇺🇸🇺🇸🇺🇸‼⬇"  
   (Quotes Scott Presler’s post about speaking at the event next weekend.)
 
 - **[post:2]** (No Longer @MESourceOfTruth, Fri Jul 7, 2023):  
   "I’ll be headed to the @TPUSA @tpusafaith Action Conference a week from today to cover the event for @MESourceOfTruth!  If you know anyone who can chip in to help my travel expenses, please go to https://t.co/TvipIjyQBj   
-  Please watch the video. ✝️🇺🇸"
+  Please watch the video. ✝🇺🇸"
 
 - **[post:6]** (Shawn McBreairty @ShawnMcBreairty, Fri Jul 7, 2023):  
   "I’ll be headed to the @TPUSA @tpusafaith Action Conference a week from today to cover the event for @MESourceOfTruth!  If you know anyone who can chip in to help my travel expenses, please go to https://t.co/42papV4dDk   
   @realDonaldTrump @TuckerCarlson @dbongino @charliekirk11 @VivekGRamaswamy @mtgreenee @pnjaban @laurenboebert @JackPosobiec @mattgaetz @tedcruz @ByronDonalds and more!   
-  Please watch the video. ✝️🇺🇸"
+  Please watch the video. ✝🇺🇸"
 
 - **[post:22]** (Kari Lake @KariLake, Fri Jul 7, 2023):  
   "TODAY!   

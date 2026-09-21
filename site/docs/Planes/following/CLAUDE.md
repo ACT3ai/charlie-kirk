@@ -57,7 +57,9 @@ here, it is misfiled — remove it from this directory rather than working on it
     SISTER_OVERLAPS is file {SISTER_DIR}/docs/overlaps.csv    (THE SPINE — one row per claimed
                                                                overlap event)
     SISTER_RESEARCH dir is {SISTER_DIR}/research/             (raw source dumps)
-    CK_FILE is file {SITE_ROOT}Charlie_Kirk.txt        ← the master investigation file. READ-ONLY.
+    CK_FILE is file ~/BGit/all/politics/charlie_kirk/Charlie_Kirk.txt        ← the master investigation file. READ-ONLY.
+      (Real file. Moved 2026-09-19. ~/BGit/Bryan_git/charlie-kirk/Charlie_Kirk.txt is now a symlink to it —
+       use that only to verify the location; always read and write the real path.)
     PAGES_CSV is file {SITE_ROOT}pages.csv
     ASSESS_MANUAL is file {SITE_ROOT}prompts/Assess_Manual.md
     BAN_IMAGES_CSV is file {SITE_ROOT}images/ban_images.csv
@@ -416,10 +418,10 @@ silently pick one on a public page; state the range and state who says what.
 
 ## Reading order, and what outranks what
 
-* **`{CK_FILE}` — `~/BGit/Bryan_git/charlie-kirk/Charlie_Kirk.txt` — is the most important
+* **`{CK_FILE}` — `~/BGit/all/politics/charlie_kirk/Charlie_Kirk.txt` — is the most important
   source there is. ALWAYS read it in. It takes PRECEDENCE over everything else, and its content
   is what the output must express. NEVER modify it** — it is read-only to AI under an absolute
-  repo rule; new material goes to `{SITE_ROOT}Charlie_Kirk_AI_Inbox.txt` instead.
+  repo rule; new material goes to `~/BGit/all/politics/charlie_kirk/Charlie_Kirk_AI_Inbox.txt` instead.
 * Then `{SISTER_CLAUDE}` and everything under `{SISTER_DOCS}` — including `{SISTER_OVERLAPS}`,
   `{SISTER_INFO}`, and every file under `{SISTER_RESEARCH}`. **Hold the sister directory whole,
   not sampled.**

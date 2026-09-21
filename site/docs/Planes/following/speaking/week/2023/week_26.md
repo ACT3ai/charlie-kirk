@@ -457,7 +457,7 @@ No official posts from @charliekirk11 or @TPUSA directly announced new Charlie K
 - **Post ID: 1674570631374073858** (thread fetched for full context)  
   **Author:** Turning Point USA (@TPUSA)  
   **Timestamp:** Fri, 30 Jun 2023 00:08:45 GMT  
-  **Content:** When @Ann_Atkinson_AZ & the T.W. Lewis Center for Personal Development hosted an event on “Health, Wealth, and Happiness” with @charliekirk11, @DennisPrager, & @theRealKiyosaki, @ASU called the talk ‘hate speech’ and shut down the entire center. Watch more ⬇️  
+  **Content:** When @Ann_Atkinson_AZ & the T.W. Lewis Center for Personal Development hosted an event on “Health, Wealth, and Happiness” with @charliekirk11, @DennisPrager, & @theRealKiyosaki, @ASU called the talk ‘hate speech’ and shut down the entire center. Watch more ⬇  
   **Engagement:** Likes=16, Reposts=5, Quotes=1, Replies=6, Bookmarks=0, Views=8975  
   *(References a past event with Charlie Kirk speaking at ASU/T.W. Lewis Center; replies discuss the event but add no new dates.)*  
   **Replies in thread:**  
@@ -506,7 +506,7 @@ No official posts from @charliekirk11 or @TPUSA directly announced new Charlie K
 - **Post ID: 1674880844303941633**  
   **Author:** Kari Lake (@KariLake)  
   **Timestamp:** Fri, 30 Jun 2023 20:41:25 GMT  
-  **Content:** GREAT group of @yrnf & @TPUSA activists here in Wisconsin. These young patriots put on an incredible event! Thanks guys! ♥️  
+  **Content:** GREAT group of @yrnf & @TPUSA activists here in Wisconsin. These young patriots put on an incredible event! Thanks guys! ♥  
   **Engagement:** Likes=1534, Reposts=223, Quotes=6, Replies=119, Bookmarks=1, Views=45520  
   *(TPUSA/YRNF event in Wisconsin; photo attached.)*
 

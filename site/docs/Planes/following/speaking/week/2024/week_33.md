@@ -542,7 +542,7 @@ Posts are presented in chronological order of discovery across tool results (new
   **Engagement:** Likes=10, Reposts=2, Quotes=0, Replies=1, Bookmarks=0, Views=333  
   **Media:** Yes (1 photo: https://pbs.twimg.com/media/GVKSOVuW4AA8D6S.jpg)  
   **Content:**  
-  Forming a Campus Freedom Alliance between @TPUSA and YAL at IIT was a great way to kick off the semester‼️ 💪🇺🇲  
+  Forming a Campus Freedom Alliance between @TPUSA and YAL at IIT was a great way to kick off the semester‼ 💪🇺🇲  
   #chapterschangetheworld  
 
   *(Announcement of TPUSA campus alliance/activities at Illinois Institute of Technology (IIT) to start the semester. Indicates ongoing TPUSA campus organizing/speaking presence.)*

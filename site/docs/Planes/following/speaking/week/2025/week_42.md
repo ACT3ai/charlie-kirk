@@ -363,7 +363,7 @@ Search twitter and x.com posts for where Charlie Kirk or TPUSA has public speaki
   Author: Turning Point USA - @TPUSA  
   Timestamp: Fri, 17 Oct 2025 01:47:09 GMT  
   Content: “How are we supposed to respond in a loving and Christian way to the sheer amount of slander and libel going towards us right now?”  
-  Russell Brand’s answer ⬇️ @rustyrockets  
+  Russell Brand’s answer ⬇ @rustyrockets  
   (Media: video)
 
 - [post:62] ID: 1978997198604955774 (duplicate of post 22 above)  
@@ -474,7 +474,7 @@ Search twitter and x.com posts for where Charlie Kirk or TPUSA has public speaki
   Timestamp: Fri, 17 Oct 2025 00:15:27 GMT  
   Content: 🚨 BREAKING: Turning Point USA just SMASHED the record for the largest-ever attended political event at the University of Oklahoma - with over 6,000 people in the venue tonight  
   This is incredible. Charlie's momentum isn't slowing down, ONE BIT! 🇺🇸  
-  📽️ @AndrewKolvet  
+  📽 @AndrewKolvet  
   (Media: video)
 
 - [post:76] ID: 1979224937131921831 (duplicate of post 39 above)  

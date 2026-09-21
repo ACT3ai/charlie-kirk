@@ -757,7 +757,7 @@ Search twitter and x.com posts for where Charlie Kirk or TPUSA has public speaki
   ID: 1560370998578274304  
   Author: Turning Point USA - @TPUSA  
   Timestamp: Thu, 18 Aug 2022 21:00:11 GMT  
-  Content: Join thousands of proud Americans as we celebrate our great country this December at #AMFEST2022. Register today to hear more from @charliekirk11 & many other speakers ⬇️  
+  Content: Join thousands of proud Americans as we celebrate our great country this December at #AMFEST2022. Register today to hear more from @charliekirk11 & many other speakers ⬇  
   Engagement: Likes=9, Reposts=2, Quotes=0, Replies=4, Bookmarks=1, Views=N/A
 
 - **Post [post:36]**  
@@ -816,7 +816,7 @@ Search twitter and x.com posts for where Charlie Kirk or TPUSA has public speaki
   ID: 1559314096079548416  
   Author: Turning Point USA - @TPUSA  
   Timestamp: Mon, 15 Aug 2022 23:00:25 GMT  
-  Content: Full article below ⬇️  
+  Content: Full article below ⬇  
   Engagement: Likes=25, Reposts=5, Quotes=0, Replies=1, Bookmarks=0, Views=N/A
 
 ### From @TPAction account search (`from:TPAction since:2022-08-13 until:2022-08-20`): No relevant results (only unrelated local UK posts).

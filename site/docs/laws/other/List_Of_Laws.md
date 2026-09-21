@@ -51,7 +51,7 @@
 
 Citizen investigators and legislative advocates on X argue that ordinary FOIA and criminal discovery will not force full production in the Charlie Kirk case, citing **JFK Records Act failures** (agencies missing decades of deadlines; reports of large unreviewed FBI caches) and the **Epstein Files Transparency Act** pattern of partial dumps without a Special Master with teeth. Accounts such as **[@HolonCitizen](/Influencers/x/holoncitizen)** have promoted a four-law package (FBI/DOJ disclosure, IC disclosure, mandatory investigation, trusted civilian investigators) and named figures including Candace Owens, Dave Smith, Tucker Carlson, Ian Carroll, and others as proposed **trusted investigators** under Law 4-style designs — a **policy proposal**, not an enacted statute.
 
-Parallel media clips recirculated by accounts such as **[@FurkanGozukara](/Influencers/x/furkangozukara)** claim **Candace Owens** has alleged federal discovery obstruction (FBI/ATF files; director-level blocks). Counter-posts argue the Robinson case already has DNA, video, and confession-note material unlike JFK and therefore needs no special act. This page records both the **demand for forced disclosure** and the **official-narrative pushback** so readers can judge whether Schedule A-style lists (FBI 302s, cell data, aircraft, drones, ballistics, AV SD cards) match what X investigators say remains withheld.
+Parallel media clips recirculated by accounts such as **[@FurkanGozukara](/Influencers/x/furkangozukara)** claim **Candace Owens** has alleged federal discovery obstruction (FBI/ATF files; director-level blocks). Counter-posts argue the Robinson case already has DNA, video, and confession-note material unlike JFK and therefore needs no special act. Investigators answer that none of that material shows how Charlie died: the ATF could not tie the autopsy fragment to the rifle, and the physical evidence points to [an explosive at his microphone](/Mic/overview), not the government's .30-06 account. This page records both the **demand for forced disclosure** and the **official-narrative pushback** so readers can judge whether Schedule A-style lists (FBI 302s, cell data, aircraft, drones, ballistics, AV SD cards) match what X investigators say remains withheld.
 
 Related public pages: [Fix overview](/Fix/overview), [laws landing](/laws), Discovery, [explain all four laws](/laws/explain/all/overview).
 
@@ -85,11 +85,6 @@ Related public pages: [Fix overview](/Fix/overview), [laws landing](/laws), Disc
 <div className="ck-placed-gallery">
 
 <figure className="ck-placed-figure">
-  <a href="/Photos/Patsy/Img_Shootings_Distractions_8b74a7"><img className="ck-placed-img" src="/img/evidence/8b74a7acc55ffaca666dfa957f06d89f9f1cbbe5ea405c0a256b707fb3153696.png" alt="This image is a horizontal, close-up digital screenshot of a structured spreadsheet table containing text in English." data-cid="QmT596hXPvEdGLF4swbMBMxVYYkwhwevjARTJYMXBiHcpM" loading="lazy" /></a>
-  <figcaption className="ck-placed-caption">This image is a horizontal, close-up digital screenshot of a structured spreadsheet table containing text in English. <a href="/Photos/Patsy/Img_Shootings_Distractions_8b74a7">Full write-up &rarr;</a></figcaption>
-</figure>
-
-<figure className="ck-placed-figure">
   <a href="/Photos/Court_Legal/Img_Photo_b1f0bc"><img className="ck-placed-img" src="/img/evidence/b1f0bce2408069cc9d3f92e1b07fe0e9270a0cd930df1b3bc68353c12548d5d2.jpg" alt="This image is a digital screenshot of a mobile web browser displaying a page from the LegiScan website." data-cid="QmZVCpjCqhhundUm5FCoLnPH86znxPX6ULXmgsmgQpuvet" loading="lazy" /></a>
   <figcaption className="ck-placed-caption">This image is a digital screenshot of a mobile web browser displaying a page from the LegiScan website. <a href="/Photos/Court_Legal/Img_Photo_b1f0bc">Full write-up &rarr;</a></figcaption>
 </figure>
@@ -97,7 +92,6 @@ Related public pages: [Fix overview](/Fix/overview), [laws landing](/laws), Disc
 </div>
 
 {/* CK_PLACED_IMAGES_END */}
-
 {/* CK_4SQ_SECTION_START */}
 
 ## Other Pages In This Section

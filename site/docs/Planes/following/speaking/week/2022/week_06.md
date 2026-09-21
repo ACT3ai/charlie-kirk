@@ -344,7 +344,7 @@ Here are **all** relevant posts returned from the searches (including any tangen
   **Engagement:** Likes=1, Reposts=0, Quotes=0, Replies=2, Bookmarks=0, Views=N/A
 
 - **[post:27] ID: 1491843512110878720**  
-  **Author:** right 2 know ⚖️ - @metro2truth  
+  **Author:** right 2 know ⚖ - @metro2truth  
   **Timestamp:** Thu, 10 Feb 2022 18:36:25 GMT  
   **Content:** You would think under any normal circumstances that would be important with their scammed over 1/6 planned event!  No, they would rather go after people that question them.  Sad! I wish there was a vote today to replace them all…..  
   **Engagement:** Likes=3, Reposts=1, Quotes=0, Replies=0, Bookmarks=0, Views=N/A

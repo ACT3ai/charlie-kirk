@@ -636,7 +636,7 @@ I retrieved and reviewed all results from the tool calls (keyword searches with 
   Author: Turning Point USA (@TPUSA)  
   Timestamp: Thu, 23 Jan 2025 20:52:00 GMT  
   Engagement: Likes=20, Reposts=4, Quotes=0, Replies=0, Bookmarks=1, Views=1821  
-  Content: READ MORE HERE ⬇️  
+  Content: READ MORE HERE ⬇  
   https://tpusa.com/live/left-wing-activists-force-cancellation-of-tpusa-chapter-event-at-university-of-washington/
 
 - **[post:48]** ID: 1882242647588553113  

@@ -357,7 +357,7 @@ Posts were retrieved via keyword searches (general + from specific accounts) and
 ### From @TPUSA (Turning Point USA official account):
 - **Post ID: 1631399784673341445**  
   Timestamp: Thu, 02 Mar 2023 21:03:13 GMT  
-  Content: Catch @charliekirk11 on The Live Free Tour at a stop near you ⬇️ @tpusastudents  
+  Content: Catch @charliekirk11 on The Live Free Tour at a stop near you ⬇ @tpusastudents  
   http://tpusa.com/livefree  
   Engagement: Likes=15, Reposts=2, Quotes=0, Replies=1, Bookmarks=1, Views=6302  
   **Relevance**: Promotes The Live Free Tour featuring Charlie Kirk speaking at various stops.
@@ -439,7 +439,7 @@ Posts were retrieved via keyword searches (general + from specific accounts) and
 - **Post ID: 1630199630053998601** (Author: @RSBNetwork)  
   Timestamp: Mon, 27 Feb 2023 13:34:14 GMT  
   Content: DON'T MISS: CPAC in Washington, D.C. - March 1-4, 2023 🇺🇸  
-  We will be LIVE in our nation's capital this week covering the top conservative leaders, including President Donald J. Trump ‼️  
+  We will be LIVE in our nation's capital this week covering the top conservative leaders, including President Donald J. Trump ‼  
   https://www.rsbnetwork.com/news/live-cpac-in-washington-d-c-march-1-4-2023/  
   Engagement: Likes=429, Reposts=196, Quotes=14, Replies=55, Bookmarks=4, Views=37316  
   **Relevance**: Coverage of CPAC speaking events (March 1-4, 2023).

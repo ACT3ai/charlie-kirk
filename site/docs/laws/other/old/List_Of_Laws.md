@@ -67,7 +67,7 @@ All four drafts exist for one reason: Charlie Kirk was assassinated on September
     - Exploding microphone theory (DoD contract, [AES](/Mic/AES) facility, Heber-Nashville flight, AES explosion, physical evidence)
     - Foreign intelligence involvement (Israeli cell phones, Egyptian aircraft, HADES spy plane, foreign operatives, Counter-UAS testing)
     - Evidence of cover-up (FBI directing video deletion, crime scene paving, FOIA blocks, remote device wiping)
-    - Alternative shooter/weapon planting theories (7 specific leads)
+    - Evidence chain of custody / weapon planting (7 specific leads)
     - Financial connections (TPUSA donors, foreign financial flows, [Scott Lazerson](/People/scott-lazerson))
     - Psychological operations (3 specific leads)
     - Pre-planning/foreknowledge (Kirk's "kill me" texts, Hamptons meeting, [Fort Huachuca](/US_Intelligence/Fort_Huachuca/overview), Jerusalem Post pre-announcement)
@@ -174,11 +174,6 @@ The named investigators face no financial disclosure requirements, recusal stand
 <div className="ck-placed-gallery">
 
 <figure className="ck-placed-figure">
-  <a href="/Photos/Patsy/Img_Shootings_Distractions_8b74a7"><img className="ck-placed-img" src="/img/evidence/8b74a7acc55ffaca666dfa957f06d89f9f1cbbe5ea405c0a256b707fb3153696.png" alt="This image is a horizontal, close-up digital screenshot of a structured spreadsheet table containing text in English." data-cid="QmT596hXPvEdGLF4swbMBMxVYYkwhwevjARTJYMXBiHcpM" loading="lazy" /></a>
-  <figcaption className="ck-placed-caption">This image is a horizontal, close-up digital screenshot of a structured spreadsheet table containing text in English. <a href="/Photos/Patsy/Img_Shootings_Distractions_8b74a7">Full write-up &rarr;</a></figcaption>
-</figure>
-
-<figure className="ck-placed-figure">
   <a href="/Photos/Court_Legal/Img_Photo_b1f0bc"><img className="ck-placed-img" src="/img/evidence/b1f0bce2408069cc9d3f92e1b07fe0e9270a0cd930df1b3bc68353c12548d5d2.jpg" alt="This image is a digital screenshot of a mobile web browser displaying a page from the LegiScan website." data-cid="QmZVCpjCqhhundUm5FCoLnPH86znxPX6ULXmgsmgQpuvet" loading="lazy" /></a>
   <figcaption className="ck-placed-caption">This image is a digital screenshot of a mobile web browser displaying a page from the LegiScan website. <a href="/Photos/Court_Legal/Img_Photo_b1f0bc">Full write-up &rarr;</a></figcaption>
 </figure>
@@ -186,7 +181,6 @@ The named investigators face no financial disclosure requirements, recusal stand
 </div>
 
 {/* CK_PLACED_IMAGES_END */}
-
 {/* CK_4SQ_SECTION_START */}
 
 ## Other Pages In This Section

@@ -2,9 +2,9 @@ Charlie Kirk was assassinated on Sept 10th 2025. The government tries to claim t
 
 The evidence is that Tyler's powerful 30-06 bullet couldn't have killed Charlie Kirk.
 
-There are a long list of indicates that other possible shooter or two could have killed Charlie Kirk.
+There are a long list of indications that something other than that bullet killed Charlie Kirk.
 
-There is also a chance that his lapel mic also possibly exploded.
+There is a chance that his lapel mic possibly exploded.
 
 CHarlie Kirk's TPUSA organization is politically strategically critical in the USA. It is also critical for Israel to control USA republicans and young people and university students think and what they politically support.
 
@@ -95,11 +95,6 @@ According to police audio, the first report of the shooting came in at 12:26 p.m
 
 
 * Questions: How did he get on the roof?
-* Who was Brown shirt (Arm Puller) Sunglasses guy: Setup mechanical issue on the left before the shooting. He took down the camera behind Charlie.  They think his name may be "Rick Cutlery" or Rick Cutler.
-* Rick Cutler IS the arm puller.
-* Rick Cutler: https://www.youtube.com/watch?v=Tx84ViFZkaA
-   * Retired police officer 29 years of service.  Irving PD (TX?)
-   * After retiring in 2019 he moved to Guatemala to aid in training and equipping first responders there.  
 * Where did the camera behind Charlie go? Who took it?
 
 
@@ -117,8 +112,9 @@ The Special Agent in Charge (SAIC) of the FBI's Salt Lake City (Utah) field offi
 
 ============ N1098L =================
 Flight N1098L from Spy program HADES (High, Accuracy, Detection & Exploitation, System). 
-* Flew at 41,000 altitude. Except dropped to 203 feet, slowed to stall speed 116 knots to drop off drones before shooting. Looped around. Picked drones up 23 minutes after shooting. Again dropping to 203 feet altitude, 116 knots stall speed. 1 mile from UVU campus when doing the drop off & pick up. Took off from Biggs Army Airfield.
-* 9:16 AM MT drones dropped off. 12:23 MT Assassination. 12:48 MT drones picked up.
+* Flew at 41,000 altitude. Except dropped to 203 feet, slowed to 116 knots before the shooting. Looped around. Low again 23 minutes after the shooting, again at 203 feet altitude, 116 knots. About 1 mile from UVU campus on both low passes. Took off from Biggs Army Airfield.
+* 9:16 AM MT first low pass. 12:23 MT Assassination. 12:48 MT second low pass.
+* The plane very likely did not launch drones. It very likely may have been a training plane, not built out to be able to launch drones. It may have been there to waste the time of citizen investigators. If the people who planned for it to be there knew the crime would happen, that may be a path to people who had foreknowledge. We do not claim that is true — we claim it is very important to investigate and determine whether it is true.
 
 Military Drones flying at Charlie Kirk shooting went 150 mph & were hard to see. But picked up by phone cameras.
 https://thedefensepost.com/2025/09/10/us-hades-spy-plane/amp/
@@ -129,13 +125,6 @@ Drones there.
 https://x.com/BlakeBednarz/s
 
 N1098L, ICAO: A0299E, Callsigh: AXEL10. ABS-B Exchange/Flightradar24.
-
-Crew Flew N1098L to Charlie Kirk Sept 10th, 2025: (Employers of Leidos Aviation Services)
-* Pilot in Command: CTP (Ret) Michael R. Harlan
-* Second Pilot: J. "Jax" E. Donovan. Co-pilot from Sep 10; 2,800 hours; certified post-Orem for solo quals. Managed avionics during ground time. 
-* Mission Engineer/Observer: Sgt. (Ret.) Elena Vasquez,  Avionics specialist
-
-* Claimed Goal: “drone retrieval training occurred on Sep 10. It was the primary purpose of N1098L's Orem, Utah low passes. The two maneuvers (600 ft AGL at 11:47 AM MDT; 335 ft AGL at 12:24 PM MDT) were textbook drone drop/recovery simulations.
 
 
 ===========================================
@@ -167,12 +156,6 @@ It was ours.  From either the Pentagon, or Langley.
 
 It did the same thing, 3 hours prior to the shooting.
 
-Weaponized UAV dropoff and pickup?
-
-Drones drop from 650' above and into the water ~3 hours prior to the incident on the initial decent.
-
-Drones are "picked up" from 300' above the water ~3 seconds after the incident on the second decent.
-
 Flight Completed: 
 Departed Robert Gray Army Airfield (BIF/El Paso, TX) at 14:18 local time and arrived at Corpus Christi International Airport (CRP/Corpus Christi, TX) at 15:35 local time. 
 Flight duration: 1 hour 17 minutes.
@@ -190,14 +173,6 @@ Current LocationAs of the latest update on October 6, 2025, N1098L is on the gro
 * We spoke for almost 45 minutes.
 * Their working theory as we wrapped up the discussion:
 * A rogue faction in the CIA killed Charlie.
-* The HADES plane's maneuvers are too damning, when combined with @JG_CSTT's findings, and the crack thump analysis.
-
-* NCTC believes it was the same group behind the Butler attack.  Same drones, apparently.  Highly sophisticated.
-
-* These people have demonstrated the ability to kill using a drone, but blame a local patsy, and no one knows it happened.  * They also don't care about collateral damage.
-
-* We know who really killed Charlie Kirk.
-* They were in that plane, N1098L, that day.
 
 =============================
 https://x.com/BlakeBednarz/status/1968448023354056924
@@ -223,24 +198,12 @@ at 150 mph, ~0.75 seconds.
 
 Both are brief enough to avoid sustained attention.
 Type of Drone:
-* two different types of drones on site one is the switchblade the other is darpa. I believe the DARPA is either the shooter or disguise the shooter on ground. 
-* The DARPA X-65 (2-5 kg) can be airdropped from the Global Express at HUNSU (4,743 ft) on the Provo ILS Runway 13 approach, glide to its mission, and be retrieved at 336 ft AGL (4,897 ft MSL) at 103 knots by a helicopter net or jet arm, guided by ILS. The ~1.05-1.45 kg system (mini-IVAS, micro-suppressor, micro-rifle, and gear) fits the X-65, with testing involving an ILS-simulated drop and pickup, recording the silenced waveform
-* Not Likely: AR-1 Assalt Drones. by DronesVision.
+* Two different types of drones were reported on site: one described as a Switchblade, the other as DARPA.
 
 =============================
 Strange Clothing Change.
 
 Charlie Kirk's shooter wore "one set a clothes to the shooting,"  "changed clothes on the roof before he fled," without being seen on camera changing, and then changed clothes at home after he fled, just before he hanged his clothes again.
-
-
-=============================
-$50,000 in wire transfers flowed through DSA-linked accounts in the months leading to the killing.
-
-Funds allegedly covered Tyler Robinson’s logistics, travel, and even weapon acquisition.
-
-Internal FBI documents reportedly name Rep. Alexandria Ocasio-Cortez (AOC) and NY Assemblymember Zohran Mamdani as figures tied to the DSA’s leadership during this period.
-
-Additional $20,000 deposits were uncovered, linked to Robinson’s live-in partner, with investigators pointing to ideological motives rooted in hatred of conservatives and Christians.
 
 
 =============================
@@ -267,12 +230,6 @@ Are there possible alt explanations? Yes.
 And yes I checked for art schools, there aren’t any. (That’s a joke. Calm down.)
 
 
-=============================
-Table Hand off:
-* Huskey Square Sunglass Dark Blue Shirt guy: Looks a lot like Laine Schoneberger (Laine Shoneberger), Chief Investment Officer and Managing Partner.  TPUSA sponsor rep from Yrefy. 
-https://www.linkedin.com/in/laine-schoneberger-501b4710/
-
-https://www.dropbox.com/scl/fi/ptnuc2zkx92q1r9nng44z/Screenshot-2025-09-24-at-11.39.10-AM.png?rlkey=owhe5e2kidh96udfe7zc2fkjk&dl=0
 =============================
 Bullet: They say a bullet was lodged in the wood stage. And they removed it.
 
@@ -527,7 +484,7 @@ He identifies a private jet with FAA tail number N888KG, a white-liveried aircra
 
 - The jet re-emerged on radar about an hour later (around 8:30-9:00 PM MDT), now reversing course and heading back to PVU, where it landed without incident. No flight plan was filed publicly, classifying it as a "ghost flight" in tracker terminology.
 
-- He suggests it allowed for a covert rendezvous or drop-off, calculating potential distances and ruling out innocent explanations like equipment failure (citing FAA rules). He points to the jet's clean history (e.g., prior flights to Cancun in May 2024) but emphasizes the owner's local Utah ties as suspicious.
+- He suggests it allowed for a covert rendezvous or drop-off, calculating potential distances and ruling out innocent explanations like equipment failure (citing FAA rules). He points to the jet's clean history (e.g., prior flights to Cancun in May 2024). We do not claim the owner, pilots, or any passenger knew of or took part in any crime.
 
 - MonkeyWerx calls for the FBI (Director Kash Patel and Dan Bongino) to seize the aircraft, interview the pilots/owner, and ground it for forensic review.
 =================================
@@ -538,10 +495,6 @@ It takes 15 minutes to DRIVE in a CAR to Dairy Queeen
 He was there 12:38 MT.  15 minutes after the shooting. Ignore time getting off roof, walking, hiding gun in forrest, changing close twice.  Disassembling gun.
 
 =================================
-=== South Door Glove Suit Photographer
-Name: Andrew Piskadlo
-He claims to be a photographer. His gloved arm is actually a prosthetic arm.
-https://x.com/AndrewPiskadlo
 
 
 
@@ -558,11 +511,10 @@ In 1964 "Mississippi Burning" had 150 FBI agents sent in to solve it.  Brilliant
 * Charlie Kirk assassination needs that now.  150 FBI agents.
 * WHY: This is more than one man being assassinated. It is about a likely foreign country assassinating US political leaders on US soil so they retain control. (Epstein files hidden, Gaza critiques, etc.)
 * Here is where they solve big break throughs:
-* Spy Plane N1098L. Who was on it? Who authorized it? Did they launch and pickup drones? US citizens or not? Were they in contact with US or foreign intel? Why 203' & slow for Drone drop off excuse?
-* What drones flew around during the assassination within 50 to 300 feet of Charlie getting shot. (Hard to see at 150 mph but recorded on video).  Did they have bullet firing ability? Did they fire shots?
-* 3 People grabbing device (exploding mic?). What item did they get?  Is his Mic gone? Exploded? And 4th arm trigger man. US Citizens? Were they in contact with US or foreign intel?
-* Possible shots from South stairwell/door. Bullet angle could have come from here. Muzzle blast in video.
-* Teacher's Balcony and Roof above it. Was a mechanical device that elevated during the shot (and ~20 seconds around then).  It lowered right after. What was the device that raised and lowered? Is it gone? Did a bullet come from here?
+* Spy Plane N1098L. Why was it there at 203' and slow? The plane very likely did not launch drones — it may have been a training plane, not built out to launch drones, possibly there to waste the time of citizen investigators. If the people who planned for it to be there knew the crime would happen, that may be a path to people who had foreknowledge. We do not claim that is true; it is very important to investigate. Who authorized it to be there?
+* What drones flew around during the assassination within 50 to 300 feet of Charlie. (Hard to see at 150 mph but recorded on video).
+* Device near the mic (exploding mic?). What item was collected afterward?  Is his Mic gone? Exploded?
+* Teacher's Balcony and Roof above it. Was a mechanical device that elevated during the shot (and ~20 seconds around then).  It lowered right after. What was the device that raised and lowered? Is it gone?
 * Lapel Mic. Did it explode or not? Show photos if it didn't. Was it stolen by table jumpers?
 * What caliber bullet? .30-60 or what? Release direction. (Rules out Tyler)
 * Campus security cameras. Claims of other people in shoting positions. Show Tyler during shot. Release all footage.
@@ -623,7 +575,7 @@ Founded by former police officer Brian Harpole.
 * Laine Schoneberger: Huskey Square Sunglass Dark Blue Shirt guy: Looks a lot like Laine Schoneberger (Laine Shoneberger), Chief Investment Officer and Managing Partner.  TPUSA sponsor rep from Yrefy. 
 * Dan Flood. Rayban Glasses that recorded. Dark blue button up shirt. (Not bald guy. Not Plaid. Not Dark blue shirt square glasses.)
 
-* Frank Turek: White shirt. White Hat. People think he signaled with touching is hat. Others claim he was Charlie's Close friend. I think interviewed publicly (probably on YouTube)
+* Frank Turek: White shirt. White Hat. Others claim he was Charlie's Close friend. I think interviewed publicly (probably on YouTube)
 
 UVU provided six campus police officers—about a quarter of the department's total force—to assist with crowd control and event oversight. Led by UVU Police Chief Jeff Long, this contingent was responsible for broader perimeter monitoring but reportedly did not conduct thorough inspections of nearby rooftops or buildings, from which the shooter accessed his position undetected. They engaged no drones.
 
@@ -743,9 +695,9 @@ Medical Examiner put in place 2 weeks before the July google searches (but confi
 * Timpanogas Regional Hospital, Utah Medical Examinier Deirdre Amaro, TR Hospital Surgeons, George Hodgson Zinn, Beau Mason, Hunter Kozak.
 
 ---------------------
-Can someone explain to me why Hunter Kozak, the guy who was asking Charlie Kirk the last question before he died is seen practicing being surprised before the event started?
+Hunter Kozak asked Charlie Kirk the last question before he died. We do not claim he knew anything in advance or was involved.
 
-I also find it weird Hunter is the son of Steve Kozak, a director at the Jimmy Kimmel show. 
+Hunter is the son of Steve Kozak, a director at the Jimmy Kimmel show. 
 
 Another fun fact about Hunter Kozak, he's an active member and contributor to the Unf#ck America tour, whose organization claims to be The Official Counter Narrative to Turning Point USA.  
 His father is Steve Kozak, who has worked for Jimmy Kimmel for years.
@@ -836,9 +788,9 @@ TPUSA's Tyler Bowyer DOUBLY EXPOSED – Birthday Vid DROPS DRONE FOOTAGE They "C
 
 Oh, Tyler, you thought one lie was enough? Nah, fam – TPUSA just torched your "drones banned by uni cops" BS with their OWN birthday tribute vid posted Oct 14 (Charlie's 32nd). Watch: Official TPUSA cams from Sept 10 UVU event... including a CRYSTAL drone shot overhead, crowds swarming an hour pre-hit. Drones FLEW, Tyler – Charlie even reviewed the feed w/ Frank Turek, who warned him: "Too many buildings." You LIED to dodge blame.
 
-But wait – it gets WORSE. They claim FBI "warned" no footage release to "protect the investigation"? LOL. This vid? Straight 4K CLIPS from those "untouchable" cams – the exact stuff we've BEGGED for to ID the shooter(s), planes, & cover-up. If FBI gagged 'em, why drop THIS on his birthday? Selective "tribute" while hiding the red-zone cams, roof angles, & security logs? Smells like protecting insiders – Rick Cutler? Dan Flood? Or deeper?
+But wait – it gets WORSE. They claim FBI "warned" no footage release to "protect the investigation"? LOL. This vid? Straight 4K CLIPS from those "untouchable" cams – the exact stuff we've BEGGED for to ID the shooter, planes, & cover-up. If FBI gagged 'em, why drop THIS on his birthday? Selective "tribute" while hiding the red-zone cams, roof angles, & security logs? Smells like protecting someone.
 
-They COULD release it ALL tomorrow – full feeds, no edits – & we'd see the truth: Multiple shots? Palm gun? Spy plane drops? But nah, they cherry-pick to control the narrative. ENOUGH! Demand FULL TRANSPARENCY or it's COMPLICITY.
+They COULD release it ALL tomorrow – full feeds, no edits – & we'd see the truth. But nah, they cherry-pick to control the narrative. ENOUGH! Demand FULL TRANSPARENCY or it's COMPLICITY.
 
 
 
@@ -860,7 +812,7 @@ You won't believe this... Right after conservative firebrand Charlie Kirk was gu
 
 🚔 Utah DPS Commissioner Beau Mason: Appointed July 17 (replacing Jess Anderson). DC searches July 16—right in that July 20 window. New sheriff in town... convenient?
 
-🛩️ Spy Plane N1098L (Bombardier Global 6500): This US-contracted jet—capable of deploying DRONES—drops from 50k ft to just 204 ft (stall speed!) over Utah Valley campus TWICE on shooting day: once en route to Montana, once 25 mins AFTER Kirk's death. Flies within 2 miles of the site. ISRAEL searches it Aug 8—32 days pre-hit. Drone strike setup? Videos don't lie.
+🛩️ Spy Plane N1098L (Bombardier Global 6500): This US-contracted jet drops from 50k ft to just 204 ft (stall speed!) over Utah Valley campus TWICE on shooting day: once en route to Montana, once 25 mins AFTER Kirk's death. Flies within 2 miles of the site. ISRAEL searches it Aug 8—32 days pre-hit. [Note: The plane very likely did not launch drones — it may have been a training plane, not built out to launch drones, possibly there to waste the time of citizen investigators. If the people who planned for it to be there knew the crime would happen, that may be a path to people who had foreknowledge. We do not claim that is true; it is very important to investigate.]
 
 🕵️ FBI Salt Lake SACs: Old boss Mehtab Syed? Israel hits July 9. New guy Robert Bohls? Sept 1 from Israel. Left blamed Trump/Patel for "firing" Syed— but someone KNEW the switcheroo early.
 
@@ -913,7 +865,7 @@ No autopsy. Utah law (268-8-205) REQUIRES it for gun violence. But police audio 
 A cartridge from a semi-auto ejects INSIDE the tent, rolls down the tarp, and falls out. When I slowed the footage—it's crystal clear. We spotted something else: A scope or barrel poking thru the tent fabric. We debated it for an hour. Shooter was concealed, firing remotely?
 Enter the weapon: Israeli-made CornerShot. Built for corner ambushes—hinges at 90°, with camera feed & IR laser scope. Mount a Glock 9mm, flip it around the barrier, aim via screen. Ejects shells downward—explains the casing drop. IR laser? Bounced off Dr @DrFrankTurek's phone screen right before impact. Visible on display, invisible to eye.
 Ballistics breakdown by Dr. Chris Martenson @peakprosperity confirm High-speed cavitation event—overpressure expands Charlie's neck, snaps his necklace, causes "pugilist pose" (clenched fists from midbrain trauma). Instant death. But not a 30.06—too much energy, would've knocked him flying. It's a 9mm +P Israeli round: 1330 fps, fragments like hell, dumps energy inside.
-Setup was easy: Security blocks views, concrete pillar & AC vent for cover, boxes stacked behind tent. Shooter slips in unseen. Post-shot? Camera guy spins RIGHT (toward tent), not left (toward Tyler). Hand signals, chaos—echo chamber hides the pop. Sound sig analysis: Shooter within 36ft of the person recording.
+Setup was easy: concrete pillar & AC vent for cover, boxes stacked behind tent. Shooter slips in unseen. Post-shot? Camera guy spins RIGHT (toward tent), not left (toward Tyler). Hand signals, chaos—echo chamber hides the pop. Sound sig analysis: Shooter within 36ft of the person recording.
 Motive? Charlie was shifting. Strong pro-Israel TPUSA voice, but lately questioning Oct 7 narrative, stand-down theories. One Middle East power wanted him silenced to keep campus influence intact. "My integrity is being called into question," he told Megyn Kelly. Coincidence?
 Cover-up complete: Site concreted over, tent area repaired (blowback damage?). Blood on the podium—real, not faked. No trail cuz they compressed the wound carrying him out. They've mudded the ceiling too. Crime scene? Destroyed. Demand justice for Charlie—and exonerate Tyler.
 This isn't theory—it's evidence from lasers, casings, ballistics, leaks. @stevendenoon  (ex-CIA Black Op's) & I broke it down. Check his channel on YouTube: https://www.youtube.com/watch?v=zeioeWdmSIw 
@@ -964,48 +916,6 @@ I'm sure they'll all say they just meant well and wanted to honor Charlie, or ma
 If we had a real uncompromised FBI & law enforcement, they'd question Daniel & all involved in this debacle and search their records to see if any clues could be found that lead back to the perps. 
 
 
-=============== Rick Cutler & item under ====================
-EW VIDEO BOMBSHELL: Rick Cutler Seen Concealing Barrel in Hand—Proof He's Charlie Kirk's Second Shooter?! 😱
-
-OMG, you guys myself and 
-@WeAreNotGTM
- Just Uncovered JAW-DROPPING PROOF that the mysterious "brown shirt dude" lurking in the chaos aka RICK CUTLER, one of Charlie's very own bodyguards on that fateful day. We have video proof showing him with gun barrel in hand; allegedly PALMING A TOP-SECRET CIA PALM GUN! Inside job? Deep State drama? Spill the tea, America—we're here for it!
-
-Zoom in on that sketchy CRACK BETWEEN THE CROWD BARRIER VINYL SHEETS (yes, we're talking inches from the action), and BOOM—Cutler's yanking something SLIM-BLACK AND BARREL-LIKE straight outta his pocket... or wait, that suspicious little black case strapped to his hip? As he hoists it up to "brace" across his chest onto his left bicep, it's GLINTING like a villain's secret weapon. Not a fidget spinner, that's A PALM GUN, 100%!
-
-Poof! It disappears into his fist JUST as the fatal BANG echoes. Timing? Suspicious AF. Was he the second shooter playing double agent?
-
-Now, layer on 
-@jimmy_dore
- 's viral clip that's got everyone OBSESSED: A BULLET ZIPPING MID-AIR blasting RIGHT FROM CUTLER'S HAND! Watch his hand JERK FROM THE RECOIL like he just got ghosted, the BARREL sticking out between his knuckles, and that trippy BOW SHOCK SWIRL crowning the top—total supersonic chaos from point-blank range.  I can say with a high probability Rick is our SECOND SHOOTER; this was an UP-CLOSE BETRAYAL!
-
-RT And Tag 
-@RealCandaceO
- And Let's Get This Out There So The FBI Can't Keep Denying Reality!
-
-
-
-==================. Patsys. ====================
-
-In my "Charlie Kirk: Operation 322" series I cover Phil Lyman as one of the DISTRACTIONS for the operation. Phil's job was to manipulate the media into believing a narrative that was not true; Tyler Robinson shot Charlie Kirk from the LC Phil just happened to be right next to.
-
-Phil was the FIRST person to suggest where a shot came from even though he was INSIDE the building. IMMEDIATELY, the two young ladies, who were already outside, DISAGREED with Phil Lyman and said there were TWO SHOTS, and they were from "over there"... Seems like he got it all wrong to me... Intentionally.
-
-Phil Lyman was also PARDONED by DJT. Let that sink in. Phil Lyman is a "character" on the stage. Someone is writing his script. And THAT is why he is connected to George Zinn too. Let that sink in as well. Coincidence + Coincidence = Collusion ... 
-
-I'll be doing a video later... ~Tai 🫡
-
-@ProjectConstitu
- is who you need to follow if you want to stay up to date with ALL the latest and best information in the Charlie Kirk Assassination Investigation. PERIOD. 
-
-Check out "Charlie Kirk: Operation 322" so you can see the infrared beam from the sniper on the BA building that shot Charlie FIRST. My 2 hour series also unveils something for the FIRST TIME.... Charlie's SECOND front center mass shot! 
-
-I, Tai Norman, uncovered the location of the FIRST shooter(BA Sniper) and the EXACT entry point of the SECOND shot that everyone missed. 🙋🏾‍♂️⬅️ This guy did that. 💪🏾🫡🪖🇺🇸 
-
-But I didn't do it without help! I was able to piece together this entire operation puzzle by crowdsourcing CRUCIAL pieces of CRITICAL data. And still, so much more is coming out! But guess what.... NOTHING can refute my work. It's that solid. 
-
-
-
 ======================= CIA / Israel =====================
 ICYMI: This CIA-linked program hiding in plain sight at Utah State Could Hold The Key To The 4 Missing Years Of Tyler Robinson's Past That Are Missing
 
@@ -1024,9 +934,6 @@ Too many coincidences? Or just timing?
 ==================== Security Blocked from Attending ============
 There had to have been almost no security at UVU because Hunter Kozak & all of his affiliates of “UN-Eff America”  had their credentials revoked to ever enter Charlie’s events. He shouldn’t even have been there let alone ask a question. He knew that. Who let him in line? 
 
-His question, I believe was the trigger to set the plan into motion. 
-It had to be a trans/gun violence question because that’s the package they had tied up in a bow and ready for delivery to Steven Crowder the next morning.  
-It’s all choreographed. Some of these people are useful idiots. 
 
 This is a fun video I saw about who Kozak really is. 
 https://youtu.be/BJMCHFhztRc
@@ -1071,7 +978,7 @@ HOLY SH*T: DEEP STATE In PANIC MODE – Google Trends DATA VANISHING In Real Tim
 
 You thought the Mossad-CIA plot to whack Charlie Kirk was wild? Buckle up – NOW they're SCRUBBING THE INTERNET LIVE to bury the smoking gun! Remember those eerie Google Trends spikes from ISRAEL & DC IPs, 2 WHOLE MONTHS before the UVU bloodbath? Searches for the MEDICAL EXAMINER, PHIL LYMAN, THE HOSPITAL, HUNTER KOZAK (the kid grilling on trans shooters RIGHT BEFORE the shot), TYLER ROBINSON... ALL pre-planned hits from Tel Aviv & Foggy Bottom. Proves the swamp scripted this frame-job on patsy Tyler to silence Kirk's anti-globalist fire!
 
-But here's the BOMBSHELL follow-up that sent the censors into OVERDRIVE: Enter PRECISION MARBLE & GRANITE LLC – the shady outfit that swooped in DAYS after Charlie's neck got ventilated, slapping concrete pads over shattered glass, remuddling the sniper's tunnel ROOF like a bad mob cleanup. And get this – business records scream it's OWNED by none other than TYLER ROBINSON'S DAD, MATT ROBINSON! Coincidence? Or daddy's firm sealing the escape route for the real BA Building ghost?
+But here's the BOMBSHELL follow-up that sent the censors into OVERDRIVE: Enter PRECISION MARBLE & GRANITE LLC – the shady outfit that swooped in DAYS after Charlie's neck got ventilated, slapping concrete pads over shattered glass, remuddling the sniper's tunnel ROOF like a bad mob cleanup. (Ownership of the company is unconfirmed; we do not claim any family member was involved.)
 
 I dove in: Fired up Google Trends for "Precision Marble & Granite LLC" – BAM! Massive US spike RIGHT AROUND JUNE 20TH, syncing PERFECT with the Israel/DC recon blitz. Snapped a mobile screenshot – IRONCLAD evidence of foreknowledge. Switched to desktop for that clean side-by-side like all my other dumps? POOF! ZERO RESULTS. ZILCH. Tried phone again? GONE. Had a 3RD-PARTY BUDDY verify on THEIR device? Same black hole – "No data."
 
@@ -1144,7 +1051,7 @@ You won't believe this... Right after conservative firebrand Charlie Kirk was gu
 
 🚔 Utah DPS Commissioner Beau Mason: Appointed July 17 (replacing Jess Anderson). DC searches July 16—right in that July 20 window. New sheriff in town... convenient?
 
-🛩️ Spy Plane N1098L (Bombardier Global 6500): This US-contracted jet—capable of deploying DRONES—drops from 50k ft to just 204 ft (stall speed!) over Utah Valley campus TWICE on shooting day: once en route to Montana, once 25 mins AFTER Kirk's death. Flies within 2 miles of the site. ISRAEL searches it Aug 8—32 days pre-hit. Drone strike setup? Videos don't lie.
+🛩️ Spy Plane N1098L (Bombardier Global 6500): This US-contracted jet drops from 50k ft to just 204 ft (stall speed!) over Utah Valley campus TWICE on shooting day: once en route to Montana, once 25 mins AFTER Kirk's death. Flies within 2 miles of the site. ISRAEL searches it Aug 8—32 days pre-hit. [Note: The plane very likely did not launch drones — it may have been a training plane, not built out to launch drones, possibly there to waste the time of citizen investigators. If the people who planned for it to be there knew the crime would happen, that may be a path to people who had foreknowledge. We do not claim that is true; it is very important to investigate.]
 
 🕵️ FBI Salt Lake SACs: Old boss Mehtab Syed? Israel hits July 9. New guy Robert Bohls? Sept 1 from Israel. Left blamed Trump/Patel for "firing" Syed— but someone KNEW the switcheroo early.
 
@@ -1166,7 +1073,7 @@ Shoutout to BaronColeman  On Youtube Who BROKE This Story. I'll link his FULL Vi
 
 You thought the Mossad-CIA plot to whack Charlie Kirk was wild? Buckle up – NOW they're SCRUBBING THE INTERNET LIVE to bury the smoking gun! Remember those eerie Google Trends spikes from ISRAEL & DC IPs, 2 WHOLE MONTHS before the UVU bloodbath? Searches for the MEDICAL EXAMINER, PHIL LYMAN, THE HOSPITAL, HUNTER KOZAK (the kid grilling on trans shooters RIGHT BEFORE the shot), TYLER ROBINSON... ALL pre-planned hits from Tel Aviv & Foggy Bottom. Proves the swamp scripted this frame-job on patsy Tyler to silence Kirk's anti-globalist fire!
 
-But here's the BOMBSHELL follow-up that sent the censors into OVERDRIVE: Enter PRECISION MARBLE & GRANITE LLC – the shady outfit that swooped in DAYS after Charlie's neck got ventilated, slapping concrete pads over shattered glass, remuddling the sniper's tunnel ROOF like a bad mob cleanup. And get this – business records scream it's OWNED by none other than TYLER ROBINSON'S DAD, MATT ROBINSON! Coincidence? Or daddy's firm sealing the escape route for the real BA Building ghost?
+But here's the BOMBSHELL follow-up that sent the censors into OVERDRIVE: Enter PRECISION MARBLE & GRANITE LLC – the shady outfit that swooped in DAYS after Charlie's neck got ventilated, slapping concrete pads over shattered glass, remuddling the sniper's tunnel ROOF like a bad mob cleanup. (Ownership of the company is unconfirmed; we do not claim any family member was involved.)
 
 I dove in: Fired up Google Trends for "Precision Marble & Granite LLC" – BAM! Massive US spike RIGHT AROUND JUNE 20TH, syncing PERFECT with the Israel/DC recon blitz. Snapped a mobile screenshot – IRONCLAD evidence of foreknowledge. Switched to desktop for that clean side-by-side like all my other dumps? POOF! ZERO RESULTS. ZILCH. Tried phone again? GONE. Had a 3RD-PARTY BUDDY verify on THEIR device? Same black hole – "No data."
 
@@ -1266,7 +1173,7 @@ Kirk’s Turning Point USA (TPUSA) organization is a politically strategic entit
   - Departed Biggs Army Airfield, TX at 7:48 MDT; arrived at Glacier Park, MT at 10:38 MDT.
   - Flew at 41,000 ft but dropped to 203 ft at 116 knots near UVU at 9:16 AM MDT.
   - Returned to low altitude at 12:48 MDT, 25 minutes after the shooting.
-- Claims suggest drone drop-offs and pickups near the UVU campus.
+- The plane very likely did not launch drones — it may have been a training plane, not built out to launch drones, possibly there to waste the time of citizen investigators. If the people who planned for it to be there knew the crime would happen, that may be a path to people who had foreknowledge. We do not claim that is true; it is very important to investigate.
 
 ### SU-BTT Egyptian Plane
 - Egyptian military Gulfstream 4SP.
@@ -1278,12 +1185,9 @@ Kirk’s Turning Point USA (TPUSA) organization is a politically strategic entit
 - Owned by N888KG LLC (linked to Derek Maxfield, Lehi, Utah).
 - Departed Provo roughly one hour after the assassination.
 - ADS-B transponder disabled mid-flight; reappeared an hour later.
-- Possible covert transport or rendezvous flight.
 
 ### Drone Evidence
 - 16 drones reportedly observed near UVU during the event.
-- Drones similar to DARPA X-65 systems capable of precision targeting.
-- Some theories claim weaponized drones conducted or assisted in the attack.
 
 ---
 

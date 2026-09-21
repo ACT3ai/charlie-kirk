@@ -548,7 +548,7 @@ Search twitter and x.com posts for where Charlie Kirk or TPUSA has public speaki
 - [post:22] ID: 1623034360290222080  
   Author: Kari Lake - @KariLake  
   Timestamp: Tue, 07 Feb 2023 19:02:50 GMT  
-  Content: #CPAC is back from March 1-4! I’m excited to announce that I will be speaking at CPAC this year! I can’t wait to see you all there for another incredible conference! TICKETS ⤵️ https://t.co/Kyc9ejBmWG  
+  Content: #CPAC is back from March 1-4! I’m excited to announce that I will be speaking at CPAC this year! I can’t wait to see you all there for another incredible conference! TICKETS ⤵ https://t.co/Kyc9ejBmWG  
   (Media: 1 video; future event)
 
 - [post:23] ID: 1623720885575200768  

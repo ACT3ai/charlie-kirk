@@ -409,7 +409,7 @@ No results found.
 - **[post:4]** ID: 1541887429635805184  
   Author: Turning Point USA (@TPUSA)  
   Timestamp: Tue, 28 Jun 2022 20:53:04 GMT  
-  Content: Ready for the GREATEST conservative event in the nation? @Stephend1776 Join us for #SAS2022 ⬇️ http://tpusa.com/SAS  
+  Content: Ready for the GREATEST conservative event in the nation? @Stephend1776 Join us for #SAS2022 ⬇ http://tpusa.com/SAS  
   Engagement: Likes=50, Reposts=9, Quotes=1, Replies=4, Bookmarks=0, Views=N/A  
   Media: Yes (1 item) – video URL: https://video.twimg.com/ext_tw_video/1541887380306759681/pu/vid/504x960/8cP7ny7TCwT5LQME.mp4?tag=12 (duration: 15001 ms)
 
@@ -450,7 +450,7 @@ No results found.
 - **[post:11]** ID: 1542568003912359936  
   Author: Charlie Kirk (@charliekirk11)  
   Timestamp: Thu, 30 Jun 2022 17:57:26 GMT  
-  Content: EXCLUSIVE — Texas Attorney General @KenPaxtonTX joined me on The Charlie Kirk Show to give his first on-air reaction to the Supreme Court's Immigration Ruling this morning WATCH ⬇️⬇️⬇️ https://rumble.com/v1algit-scoop-texas-ag-ken-paxton-responds-to-scotus-immigration-ruling.html?mref=4pvd7&mc=b2gay
+  Content: EXCLUSIVE — Texas Attorney General @KenPaxtonTX joined me on The Charlie Kirk Show to give his first on-air reaction to the Supreme Court's Immigration Ruling this morning WATCH ⬇⬇⬇ https://rumble.com/v1algit-scoop-texas-ag-ken-paxton-responds-to-scotus-immigration-ruling.html?mref=4pvd7&mc=b2gay
 
 - **[post:12]** ID: 1542563794970222592  
   Author: Charlie Kirk (@charliekirk11)  
@@ -483,7 +483,7 @@ No results found.
 - **[post:21]** ID: 1542214300621672448  
   Author: Turning Point USA (@TPUSA)  
   Timestamp: Wed, 29 Jun 2022 18:31:56 GMT  
-  Content: ONE MONTH until @tpaction hosts President Donald J. Trump at #SAS2022! 🏝 ☀️ 🇺🇸 Get your tickets TODAY ⬇️ (Quoted post from @TPAction: Turning Point Action is proud to host President Donald J. Trump at #SAS2022‼️ Register now at https://t.co/t3XoLb3TpR for discounted priority tickets 🎟 Join us as we launch into this election year supporting a new generation of REAL conservative leaders across the nation 🇺🇸🇺🇸)  
+  Content: ONE MONTH until @tpaction hosts President Donald J. Trump at #SAS2022! 🏝 ☀ 🇺🇸 Get your tickets TODAY ⬇ (Quoted post from @TPAction: Turning Point Action is proud to host President Donald J. Trump at #SAS2022‼ Register now at https://t.co/t3XoLb3TpR for discounted priority tickets 🎟 Join us as we launch into this election year supporting a new generation of REAL conservative leaders across the nation 🇺🇸🇺🇸)  
   Engagement: Likes=49, Reposts=20, Quotes=1, Replies=11, Bookmarks=0, Views=N/A
 
 - **[post:22]** ID: 1542190404790931456  
@@ -510,7 +510,7 @@ No results found.
 - **[post:25]** ID: 1541498291551993856  
   Author: Turning Point USA (@TPUSA)  
   Timestamp: Mon, 27 Jun 2022 19:06:47 GMT  
-  Content: Are YOU ready for a mind-blowing, life-changing experience unlike anything you’ve ever seen? Look no further than #SAS2022! Get your tickets TODAY with discount code PATRIOT for 25% off VIP tickets & 50% off GA tickets ⬇️ http://tpusa.com/SAS  
+  Content: Are YOU ready for a mind-blowing, life-changing experience unlike anything you’ve ever seen? Look no further than #SAS2022! Get your tickets TODAY with discount code PATRIOT for 25% off VIP tickets & 50% off GA tickets ⬇ http://tpusa.com/SAS  
   Engagement: Likes=177, Reposts=50, Quotes=1, Replies=26, Bookmarks=2, Views=N/A  
   Media: Yes (1 item) – video URL: https://video.twimg.com/ext_tw_video/1541498215886770178/pu/vid/720x1280/wCrqo_Z5YJNnwUZv.mp4?tag=12 (duration: 64008 ms)
 

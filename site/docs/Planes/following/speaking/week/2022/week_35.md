@@ -392,7 +392,7 @@ Search twitter and x.com posts for where Charlie Kirk or TPUSA has public speaki
   Engagement: Likes=0, Reposts=0, Quotes=0, Replies=0, Bookmarks=0, Views=N/A
 
 - **Post [post:28]** (ID: 1565050133082820608, Author: Berkley Corey @berkenstocks99, Timestamp: Wed, 31 Aug 2022 18:53:23 GMT)  
-  Content: The LIVE FREE Tour dates are out!!! Check it out!!! Go see Charlie Kirk and Candace Owens speak!!! 🙌🏻🤩🇺🇸🎉🗽🪩❤️‍🔥 #TPUSA #LiveFreeTour #Freedom #FreeSpeech #TurningPointUSA  
+  Content: The LIVE FREE Tour dates are out!!! Check it out!!! Go see Charlie Kirk and Candace Owens speak!!! 🙌🏻🤩🇺🇸🎉🗽🪩❤‍🔥 #TPUSA #LiveFreeTour #Freedom #FreeSpeech #TurningPointUSA  
   Media: Photos (https://pbs.twimg.com/media/FbgszKcUIAA6ubc.jpg and https://pbs.twimg.com/media/FbgszJrUEAAo4Ux.jpg)  
   Engagement: Likes=9, Reposts=2, Quotes=0, Replies=0, Bookmarks=0, Views=N/A
 

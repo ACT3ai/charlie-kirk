@@ -24,5 +24,5 @@ The conspiracy ecosystem — including **Candace Owens**, who has cast suspicion
 There's a real detail here — she has security and defers to it — inflated into a false claim that she is tied to the UVU firm or to Israeli intelligence. No evidence supports either; the ethnic-intelligence version is a debunked, and often antisemitic, narrative. See [[The Security Detail Was Israeli]] and [[AI and Deepfake Evidence]].
 
 ---
-**Related:** [[The Security Detail Was Israeli]] · [[Kirks Security Detail]] · [[Erika Kirk]] · [[Security Knew It Was Coming]] · [[AI and Deepfake Evidence]]
+**Related:** [[The Security Detail Was Israeli]] · [[Kirks Security Detail]] · [[Erika Kirk]] · [[AI and Deepfake Evidence]]
 **Sources:** [CNN — Owens won't retract after meeting Erika Kirk](https://www.cnn.com/2025/12/16/politics/candace-owens-erika-kirk-podcast) · [AOL — Erika Kirk defers to her own security team](https://www.aol.com/articles/erika-kirks-security-team-couldnt-190000020.html) · [[Kirks Security Detail]] · [[Sources]]

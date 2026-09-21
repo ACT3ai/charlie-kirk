@@ -104,7 +104,6 @@ X and court-watchers repeatedly cite **withheld FBI/ATF raw files**, sealed digi
 </div>
 
 {/* CK_PLACED_IMAGES_END */}
-
 {/* CK_4SQ_SECTION_START */}
 
 ## Other Pages In This Section

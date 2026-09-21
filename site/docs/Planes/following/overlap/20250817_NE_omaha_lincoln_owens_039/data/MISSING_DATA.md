@@ -60,7 +60,7 @@ marginTop:'0.5rem'}}>
 
 * [Heightened political tension before UVU](/Before/Heightened-Political-Tensions)
 * [The chronological hub for the whole case](/Timeline/overview)
-* [Everything flagged suspicious, sorted by actor](/Suspicious/overview)
+* [Every open question, sorted by actor](/Suspicious/overview)
 
 </div>
 </div>

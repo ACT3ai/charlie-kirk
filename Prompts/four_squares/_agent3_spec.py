@@ -9,7 +9,6 @@ TEASERS = {
 S+'atf-fragment-class-only': "The ATF&apos;s September 17 lab report reportedly could neither identify nor exclude the Mauser 98 as the source of the recovered jacket fragment. It is the only item in this section resting on a document rather than a thread &mdash; and both camps overclaim it.",
 S+'burnt-object-transmitter': "Proponents zoom into a charred mass photographed in the SUV and read a melted audio jack and a warning symbol into it. The imagery cannot carry that weight, and the theory&apos;s own advocates cannot agree which <a href=\"/Mic/rode-wireless-mic\">RØDE model</a> it was.",
 S+'canon-audio-detonation': "An unnamed analyst says uncompressed <a href=\"/cameras/Canon_XA55_Broadcast\">Canon XA55</a> audio holds three low-frequency arrivals, the loudest a detonation at the tent. It is the acoustic backbone of every device theory here &mdash; and reflections off campus buildings produce the same pattern.",
-S+'cutler-hand-device': "Recorded as a specimen of what is circulating, not as a claim this site advances. Anonymous accounts read a dark object in a named private citizen&apos;s hand as a trigger; he has been charged with nothing and no evidence supports it.",
 S+'energy-mismatch': "The most-repeated suspicion in the case: a .30-06 carrying roughly <a href=\"/Gun_Bullet/Thirty_06_Energy_Mismatch\">3,950 joules</a> should have blown through the neck and sprayed the tent. The counterargument is strong &mdash; and the physics error inside the claim undercuts the analysts making it.",
 S+'entrance-or-exit': "Proponents agree the front neck wound is an exit, then contradict each other completely about where the shot came from &mdash; high and behind, or from inside the tent. None has produced medical documentation, and video cannot settle a wound margin.",
 S+'mic-under-shirt': "The <a href=\"/Mic/rode-wireless-mic\">RØDE transmitter</a> was reportedly worn under Kirk&apos;s shirt, magnetically clasped through the fabric. That one detail is the precondition every contact-device theory needs &mdash; and it is also routine professional audio practice.",
@@ -84,8 +83,7 @@ T+'plea-versus-confession': "Candace Owens argues no sworn written confession ex
 '/CoverUp/Joe_Kent_Halt': "Reported claims that the FBI directed the counterterrorism review to stop pursuing leads pointing to a possible foreign nexus. The most consequential thing anyone alleges was stopped.",
 '/Tent/Dirt_Removed_Before_Pavers': "An unidentified crew reportedly took roughly ten inches of soil out of the tent courtyard before the landscaping contractor arrived on September 14. The ground under the chair is the one surface nobody can re-test.",
 '/Narrative/Shot_in_the_heart': "A catalogue of the posts, TV clips and threads claiming Charlie was shot in the heart or chest, set against the absence of any visible chest wound. The pattern is real even when every individual claim is soft.",
-'/Suspects/Rick_Cutler_POI': "What citizen investigators have alleged about a named private citizen at the UVU event, recorded with the counterweight attached. No agency has named him a person of interest and no criminal allegation is made here.",
-'/distraction_people/Rick_Cutler': "Where the &quot;arm puller&quot; label came from, and how a TPUSA crew figure in citizen footage became a thread subject. Attributed speculation only; no wrongdoing is alleged against him anywhere on this site.",
+'/distraction_people/Rick_Cutler': "How a TPUSA crew figure in citizen footage became a thread subject. No wrongdoing is alleged against him anywhere on this site.",
 '/Tyler_Robinson_Not_Assassin/explosive-mic-killed-charlie': "The argument that a concealed shaped charge fits the wound better than a rooftop rifle shot &mdash; the pillar of the case that Tyler Robinson is not the assassin. It stands or falls on the wound, not the roof.",
 '/court/mirandize/custody-timeline-fake-confession': "If Robinson was in custody with his phone seized at 6:25 PM on September 11, who typed the 7:57 PM Discord message? The whole confession narrative turns on which clock is right.",
 '/court/gag-orders-sealing': "The December 2025 publicity order, the closed hearings, the March 2026 seal motion over the inconclusive ATF report, and the media coalition that opposed it. Everything the public is not allowed to see, in one place.",
@@ -174,25 +172,8 @@ SPECS[D+'canon-audio-detonation'] = {
   "[No muzzle flash or recoil](/Roof/no-muzzle-flash-or-recoil) appears in the roof frames citizen reviewers examined.",
   "The [exploding-mic hub](/Mic/overview) collects the hardware, the procurement and the audio in one place.",
  ],
- 'section': [S+'cutler-hand-device', S+'overview', T+'kent-probe-defense-ammunition', T+'plea-versus-confession'],
+ 'section': [S+'mic-under-shirt', S+'overview', T+'kent-probe-defense-ammunition', T+'plea-versus-confession'],
  'sitewide': ['/cameras/Canon_XA55_Broadcast', '/Proof_Not_Tyler/Acoustic_Two_Event_Split', '/Mic/Canon_XA55_Audio', '/Roof/no-muzzle-flash-or-recoil'],
-}
-
-SPECS[D+'cutler-hand-device'] = {
- 'here': [
-  "The same person appears in [the venue treatment](/Suspicious/UVU_9_10/rick-cutler-hand-device) of this identical claim.",
-  "[SUV interior photos](/Suspicious/Law_Enforcement/suv-blurred-windows) circulated with windows blurred, which fed the annotation threads.",
-  "An [executive reportedly collected SD cards](/Suspicious/TPUSA_Peripheral/executive-sd-cards), a separate and far better-sourced item.",
-  "The [burnt object](/Suspicious/Cause_of_Death/burnt-object-transmitter) claim comes from the same photograph set.",
- ],
- 'other': [
-  "[Citizen claims about the same man](/Suspects/Rick_Cutler_POI) are recorded with the counterweight attached.",
-  "No agency has named him a person of interest &mdash; see [the label&apos;s origin](/distraction_people/Rick_Cutler).",
-  "People reached the stage within seconds, and [a device may have left with one](/Mic/Table_Jumpers_Device).",
-  "[Cameras and SD cards](/CoverUp/SD_Cards_And_Cameras_Removed) reportedly left the scene before investigators catalogued them.",
- ],
- 'section': [S+'energy-mismatch', S+'shirt-before-blood', T+'miranda-defense-filing', '/Suspicious/FBI/bomb-dogs-kept-away'],
- 'sitewide': ['/Suspects/Rick_Cutler_POI', '/distraction_people/Rick_Cutler', '/Mic/Table_Jumpers_Device', '/CoverUp/SD_Cards_And_Cameras_Removed'],
 }
 
 SPECS[D+'electrocution-trigger'] = {

@@ -176,7 +176,6 @@ X and court-watchers repeatedly cite **withheld FBI/ATF raw files**, sealed digi
 ## Interesting
 
 * [Law 1's findings](/laws/DoJ_FBI/Law_1_DoJ_FBI) cite roughly a dozen foreign phones at the site.
-* Analysis argues [the neck injury](/Tent/Tent_Shooter_Theories) fits blast, not a distant rifle round.
 * The [tunnel ceiling was reportedly re-mudded](/Tent/Site_Alteration_Evidence), erasing surfaces that carry blast residue.
 
 ## Related Areas
