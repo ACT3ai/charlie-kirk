@@ -128,8 +128,7 @@ Six independent teams may duplicate effort.
     <a className="ck-4sq-btn" href="/laws/other/analysis/Fixed/Any_Problems">Read this <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg></a>
   </div>
 </div>
-<div className="ck-4sq-card ck-4sq-side">
-  <a className="ck-4sq-thumb" href="/laws/other/analysis/Laws_Not_Complying"><img src="/img/evidence/301e311eeb333bb6c53ff2de0f68d6e7d8976a2a279c84aeee07b31adc89f0ef.jpg" data-cid="QmQLEqHtDVEsm9tfvJq6Da7ijgmPbmfcKWAvJhwkbWTKGq" alt="This is a high-resolution, long-form vertical screenshot of a web-based user dashboard for a domain name registrar or management portal." loading="lazy" /></a>
+<div className="ck-4sq-card ck-4sq-stack">
   <div className="ck-4sq-body">
     <p className="ck-4sq-title"><a href="/laws/other/analysis/Laws_Not_Complying">Laws Not Complying with Charter (List_Of_Laws.md) -- Comprehensive Analysis</a></p>
     <p className="ck-4sq-text">Every place the four drafts drift from their own charter, item by item: counts that do not match, a Definitions section buried behind Schedule A, and a required disclaimer Law 1 never carries. A charter is only worth something if somebody audits against it.</p>

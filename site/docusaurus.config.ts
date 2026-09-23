@@ -89,13 +89,6 @@ const config: Config = {
     {
       tagName: "meta",
       attributes: {
-        name: "author",
-        content: "ACT 3 AI, Inc.",
-      },
-    },
-    {
-      tagName: "meta",
-      attributes: {
         property: "og:site_name",
         content: siteTitle,
       },
@@ -133,8 +126,8 @@ const config: Config = {
       },
       innerHTML: JSON.stringify({
         "@context": "https://schema.org",
-        "@type": "Organization",
-        name: "ACT 3 AI, Inc.",
+        "@type": "WebSite",
+        name: "Who Assassinated Charlie Kirk",
         url: siteUrl,
         logo: `${siteUrl}/img/Header_Charlie.jpeg`,
       }),
@@ -324,7 +317,7 @@ const config: Config = {
     },
     footer: {
       style: "dark",
-      copyright: `Copyright © ${new Date().getFullYear()} ACT 3 AI, Inc. All rights reserved.`,
+      copyright: `Copyright © ${new Date().getFullYear()}. All rights reserved.`,
     },
     prism: {
       theme: prismThemes.github,

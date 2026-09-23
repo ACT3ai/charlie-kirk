@@ -56,7 +56,7 @@ settings_2
 
 add_2 page_info<sup>Tools</sup> 
 
-Your WhiteHat Engineering, Inc. chats aren’t used to improve our models. Gemini can make mistakes, so doublecheck it. <u>Your privacy & Gemini</u> 
+Your chats aren’t used to improve our models. Gemini can make mistakes, so doublecheck it. <u>Your privacy & Gemini</u> 
 
 https://gemini.google.com/u/3/app/0bd10e25aaf262c9?pageId=none 
 
